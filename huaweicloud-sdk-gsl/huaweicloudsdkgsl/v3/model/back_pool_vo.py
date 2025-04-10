@@ -57,7 +57,7 @@ class BackPoolVO:
     }
 
     def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, pool_status=None, flow_used=None, status_time=None, quantity=None, modify_time=None, order_id=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None):
-        """BackPoolVO
+        r"""BackPoolVO
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class BackPoolVO:
 
     @property
     def id(self):
-        """Gets the id of this BackPoolVO.
+        r"""Gets the id of this BackPoolVO.
 
         流量池标识
 
@@ -166,7 +166,7 @@ class BackPoolVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackPoolVO.
+        r"""Sets the id of this BackPoolVO.
 
         流量池标识
 
@@ -177,7 +177,7 @@ class BackPoolVO:
 
     @property
     def pool_name(self):
-        """Gets the pool_name of this BackPoolVO.
+        r"""Gets the pool_name of this BackPoolVO.
 
         流量池名称
 
@@ -188,7 +188,7 @@ class BackPoolVO:
 
     @pool_name.setter
     def pool_name(self, pool_name):
-        """Sets the pool_name of this BackPoolVO.
+        r"""Sets the pool_name of this BackPoolVO.
 
         流量池名称
 
@@ -199,7 +199,7 @@ class BackPoolVO:
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this BackPoolVO.
+        r"""Gets the price_plan_name of this BackPoolVO.
 
         套餐名称
 
@@ -210,7 +210,7 @@ class BackPoolVO:
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this BackPoolVO.
+        r"""Sets the price_plan_name of this BackPoolVO.
 
         套餐名称
 
@@ -221,7 +221,7 @@ class BackPoolVO:
 
     @property
     def price_plan_id(self):
-        """Gets the price_plan_id of this BackPoolVO.
+        r"""Gets the price_plan_id of this BackPoolVO.
 
         套餐标识
 
@@ -232,7 +232,7 @@ class BackPoolVO:
 
     @price_plan_id.setter
     def price_plan_id(self, price_plan_id):
-        """Sets the price_plan_id of this BackPoolVO.
+        r"""Sets the price_plan_id of this BackPoolVO.
 
         套餐标识
 
@@ -243,7 +243,7 @@ class BackPoolVO:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this BackPoolVO.
+        r"""Gets the effective_time of this BackPoolVO.
 
         生效时间
 
@@ -254,7 +254,7 @@ class BackPoolVO:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this BackPoolVO.
+        r"""Sets the effective_time of this BackPoolVO.
 
         生效时间
 
@@ -265,7 +265,7 @@ class BackPoolVO:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this BackPoolVO.
+        r"""Gets the expired_time of this BackPoolVO.
 
         失效时间
 
@@ -276,7 +276,7 @@ class BackPoolVO:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this BackPoolVO.
+        r"""Sets the expired_time of this BackPoolVO.
 
         失效时间
 
@@ -287,7 +287,7 @@ class BackPoolVO:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this BackPoolVO.
+        r"""Gets the billing_cycle of this BackPoolVO.
 
         账期
 
@@ -298,7 +298,7 @@ class BackPoolVO:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this BackPoolVO.
+        r"""Sets the billing_cycle of this BackPoolVO.
 
         账期
 
@@ -309,7 +309,7 @@ class BackPoolVO:
 
     @property
     def pool_status(self):
-        """Gets the pool_status of this BackPoolVO.
+        r"""Gets the pool_status of this BackPoolVO.
 
         流量池状态: 2-在用,-1-已停用,-2已废弃
 
@@ -320,7 +320,7 @@ class BackPoolVO:
 
     @pool_status.setter
     def pool_status(self, pool_status):
-        """Sets the pool_status of this BackPoolVO.
+        r"""Sets the pool_status of this BackPoolVO.
 
         流量池状态: 2-在用,-1-已停用,-2已废弃
 
@@ -331,7 +331,7 @@ class BackPoolVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this BackPoolVO.
+        r"""Gets the flow_used of this BackPoolVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -342,7 +342,7 @@ class BackPoolVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this BackPoolVO.
+        r"""Sets the flow_used of this BackPoolVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -353,7 +353,7 @@ class BackPoolVO:
 
     @property
     def status_time(self):
-        """Gets the status_time of this BackPoolVO.
+        r"""Gets the status_time of this BackPoolVO.
 
         状态变更时间
 
@@ -364,7 +364,7 @@ class BackPoolVO:
 
     @status_time.setter
     def status_time(self, status_time):
-        """Sets the status_time of this BackPoolVO.
+        r"""Sets the status_time of this BackPoolVO.
 
         状态变更时间
 
@@ -375,7 +375,7 @@ class BackPoolVO:
 
     @property
     def quantity(self):
-        """Gets the quantity of this BackPoolVO.
+        r"""Gets the quantity of this BackPoolVO.
 
         流量池成员数量
 
@@ -386,7 +386,7 @@ class BackPoolVO:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this BackPoolVO.
+        r"""Sets the quantity of this BackPoolVO.
 
         流量池成员数量
 
@@ -397,7 +397,7 @@ class BackPoolVO:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this BackPoolVO.
+        r"""Gets the modify_time of this BackPoolVO.
 
         更新时间
 
@@ -408,7 +408,7 @@ class BackPoolVO:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this BackPoolVO.
+        r"""Sets the modify_time of this BackPoolVO.
 
         更新时间
 
@@ -419,7 +419,7 @@ class BackPoolVO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this BackPoolVO.
+        r"""Gets the order_id of this BackPoolVO.
 
         批次号
 
@@ -430,7 +430,7 @@ class BackPoolVO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this BackPoolVO.
+        r"""Sets the order_id of this BackPoolVO.
 
         批次号
 
@@ -441,7 +441,7 @@ class BackPoolVO:
 
     @property
     def activated_sim_quantity(self):
-        """Gets the activated_sim_quantity of this BackPoolVO.
+        r"""Gets the activated_sim_quantity of this BackPoolVO.
 
         已激活成员数量
 
@@ -452,7 +452,7 @@ class BackPoolVO:
 
     @activated_sim_quantity.setter
     def activated_sim_quantity(self, activated_sim_quantity):
-        """Sets the activated_sim_quantity of this BackPoolVO.
+        r"""Sets the activated_sim_quantity of this BackPoolVO.
 
         已激活成员数量
 
@@ -463,7 +463,7 @@ class BackPoolVO:
 
     @property
     def inactive_sim_quantity(self):
-        """Gets the inactive_sim_quantity of this BackPoolVO.
+        r"""Gets the inactive_sim_quantity of this BackPoolVO.
 
         未激活成员数量
 
@@ -474,7 +474,7 @@ class BackPoolVO:
 
     @inactive_sim_quantity.setter
     def inactive_sim_quantity(self, inactive_sim_quantity):
-        """Sets the inactive_sim_quantity of this BackPoolVO.
+        r"""Sets the inactive_sim_quantity of this BackPoolVO.
 
         未激活成员数量
 
@@ -485,7 +485,7 @@ class BackPoolVO:
 
     @property
     def disassembled_sim_quantity(self):
-        """Gets the disassembled_sim_quantity of this BackPoolVO.
+        r"""Gets the disassembled_sim_quantity of this BackPoolVO.
 
         已拆机成员数量
 
@@ -496,7 +496,7 @@ class BackPoolVO:
 
     @disassembled_sim_quantity.setter
     def disassembled_sim_quantity(self, disassembled_sim_quantity):
-        """Sets the disassembled_sim_quantity of this BackPoolVO.
+        r"""Sets the disassembled_sim_quantity of this BackPoolVO.
 
         已拆机成员数量
 
@@ -507,7 +507,7 @@ class BackPoolVO:
 
     @property
     def order_ids(self):
-        """Gets the order_ids of this BackPoolVO.
+        r"""Gets the order_ids of this BackPoolVO.
 
         组成流量池的批次号列表
 
@@ -518,7 +518,7 @@ class BackPoolVO:
 
     @order_ids.setter
     def order_ids(self, order_ids):
-        """Sets the order_ids of this BackPoolVO.
+        r"""Sets the order_ids of this BackPoolVO.
 
         组成流量池的批次号列表
 

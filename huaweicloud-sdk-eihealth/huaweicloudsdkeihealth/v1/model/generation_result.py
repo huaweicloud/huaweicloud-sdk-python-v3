@@ -47,7 +47,7 @@ class GenerationResult:
     }
 
     def __init__(self, name=None, num_rounds=None, num_expected=None, num_strong_constraints=None, num_weak_constraints=None, prop_names=None, result=None, initial_dataset_size=None, strong_constraints=None, weak_constraints=None, binding_site=None, custom_props=None):
-        """GenerationResult
+        r"""GenerationResult
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class GenerationResult:
 
     @property
     def name(self):
-        """Gets the name of this GenerationResult.
+        r"""Gets the name of this GenerationResult.
 
         任务名
 
@@ -124,7 +124,7 @@ class GenerationResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GenerationResult.
+        r"""Sets the name of this GenerationResult.
 
         任务名
 
@@ -135,7 +135,7 @@ class GenerationResult:
 
     @property
     def num_rounds(self):
-        """Gets the num_rounds of this GenerationResult.
+        r"""Gets the num_rounds of this GenerationResult.
 
         总生成轮数
 
@@ -146,7 +146,7 @@ class GenerationResult:
 
     @num_rounds.setter
     def num_rounds(self, num_rounds):
-        """Sets the num_rounds of this GenerationResult.
+        r"""Sets the num_rounds of this GenerationResult.
 
         总生成轮数
 
@@ -157,7 +157,7 @@ class GenerationResult:
 
     @property
     def num_expected(self):
-        """Gets the num_expected of this GenerationResult.
+        r"""Gets the num_expected of this GenerationResult.
 
         期望条目数
 
@@ -168,7 +168,7 @@ class GenerationResult:
 
     @num_expected.setter
     def num_expected(self, num_expected):
-        """Sets the num_expected of this GenerationResult.
+        r"""Sets the num_expected of this GenerationResult.
 
         期望条目数
 
@@ -179,7 +179,7 @@ class GenerationResult:
 
     @property
     def num_strong_constraints(self):
-        """Gets the num_strong_constraints of this GenerationResult.
+        r"""Gets the num_strong_constraints of this GenerationResult.
 
         强约束数量
 
@@ -190,7 +190,7 @@ class GenerationResult:
 
     @num_strong_constraints.setter
     def num_strong_constraints(self, num_strong_constraints):
-        """Sets the num_strong_constraints of this GenerationResult.
+        r"""Sets the num_strong_constraints of this GenerationResult.
 
         强约束数量
 
@@ -201,7 +201,7 @@ class GenerationResult:
 
     @property
     def num_weak_constraints(self):
-        """Gets the num_weak_constraints of this GenerationResult.
+        r"""Gets the num_weak_constraints of this GenerationResult.
 
         弱约束数量
 
@@ -212,7 +212,7 @@ class GenerationResult:
 
     @num_weak_constraints.setter
     def num_weak_constraints(self, num_weak_constraints):
-        """Sets the num_weak_constraints of this GenerationResult.
+        r"""Sets the num_weak_constraints of this GenerationResult.
 
         弱约束数量
 
@@ -223,7 +223,7 @@ class GenerationResult:
 
     @property
     def prop_names(self):
-        """Gets the prop_names of this GenerationResult.
+        r"""Gets the prop_names of this GenerationResult.
 
         分子ADMET属性名列表
 
@@ -234,7 +234,7 @@ class GenerationResult:
 
     @prop_names.setter
     def prop_names(self, prop_names):
-        """Sets the prop_names of this GenerationResult.
+        r"""Sets the prop_names of this GenerationResult.
 
         分子ADMET属性名列表
 
@@ -245,7 +245,7 @@ class GenerationResult:
 
     @property
     def result(self):
-        """Gets the result of this GenerationResult.
+        r"""Gets the result of this GenerationResult.
 
         分子生成结果条目
 
@@ -256,7 +256,7 @@ class GenerationResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this GenerationResult.
+        r"""Sets the result of this GenerationResult.
 
         分子生成结果条目
 
@@ -267,7 +267,7 @@ class GenerationResult:
 
     @property
     def initial_dataset_size(self):
-        """Gets the initial_dataset_size of this GenerationResult.
+        r"""Gets the initial_dataset_size of this GenerationResult.
 
         初始化数据集的分子条目数
 
@@ -278,7 +278,7 @@ class GenerationResult:
 
     @initial_dataset_size.setter
     def initial_dataset_size(self, initial_dataset_size):
-        """Sets the initial_dataset_size of this GenerationResult.
+        r"""Sets the initial_dataset_size of this GenerationResult.
 
         初始化数据集的分子条目数
 
@@ -289,7 +289,7 @@ class GenerationResult:
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this GenerationResult.
+        r"""Gets the strong_constraints of this GenerationResult.
 
         强约束集合
 
@@ -300,7 +300,7 @@ class GenerationResult:
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this GenerationResult.
+        r"""Sets the strong_constraints of this GenerationResult.
 
         强约束集合
 
@@ -311,7 +311,7 @@ class GenerationResult:
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this GenerationResult.
+        r"""Gets the weak_constraints of this GenerationResult.
 
         弱约束集合
 
@@ -322,7 +322,7 @@ class GenerationResult:
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this GenerationResult.
+        r"""Sets the weak_constraints of this GenerationResult.
 
         弱约束集合
 
@@ -333,7 +333,7 @@ class GenerationResult:
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this GenerationResult.
+        r"""Gets the binding_site of this GenerationResult.
 
         :return: The binding_site of this GenerationResult.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -342,7 +342,7 @@ class GenerationResult:
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this GenerationResult.
+        r"""Sets the binding_site of this GenerationResult.
 
         :param binding_site: The binding_site of this GenerationResult.
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -351,7 +351,7 @@ class GenerationResult:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this GenerationResult.
+        r"""Gets the custom_props of this GenerationResult.
 
         用户已开启的自定义属性集合
 
@@ -362,7 +362,7 @@ class GenerationResult:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this GenerationResult.
+        r"""Sets the custom_props of this GenerationResult.
 
         用户已开启的自定义属性集合
 

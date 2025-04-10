@@ -25,7 +25,7 @@ class ShowSyncIamUserRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowSyncIamUserRequest
+        r"""ShowSyncIamUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSyncIamUserRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowSyncIamUserRequest.
+        r"""Gets the cluster_id of this ShowSyncIamUserRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class ShowSyncIamUserRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowSyncIamUserRequest.
+        r"""Sets the cluster_id of this ShowSyncIamUserRequest.
 
         集群ID
 

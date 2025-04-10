@@ -34,7 +34,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None):
-        """UpdatePolicyRuleStatusResponse
+        r"""UpdatePolicyRuleStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePolicyRuleStatusResponse.
+        r"""Gets the id of this UpdatePolicyRuleStatusResponse.
 
         规则id
 
@@ -83,7 +83,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePolicyRuleStatusResponse.
+        r"""Sets the id of this UpdatePolicyRuleStatusResponse.
 
         规则id
 
@@ -94,7 +94,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdatePolicyRuleStatusResponse.
+        r"""Gets the policyid of this UpdatePolicyRuleStatusResponse.
 
         策略id
 
@@ -105,7 +105,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdatePolicyRuleStatusResponse.
+        r"""Sets the policyid of this UpdatePolicyRuleStatusResponse.
 
         策略id
 
@@ -116,7 +116,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdatePolicyRuleStatusResponse.
+        r"""Gets the timestamp of this UpdatePolicyRuleStatusResponse.
 
         规则创建时间
 
@@ -127,7 +127,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdatePolicyRuleStatusResponse.
+        r"""Sets the timestamp of this UpdatePolicyRuleStatusResponse.
 
         规则创建时间
 
@@ -138,7 +138,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdatePolicyRuleStatusResponse.
+        r"""Gets the description of this UpdatePolicyRuleStatusResponse.
 
         规则描述
 
@@ -149,7 +149,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePolicyRuleStatusResponse.
+        r"""Sets the description of this UpdatePolicyRuleStatusResponse.
 
         规则描述
 
@@ -160,7 +160,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePolicyRuleStatusResponse.
+        r"""Gets the status of this UpdatePolicyRuleStatusResponse.
 
         状态（开启：1，关闭：0）
 
@@ -171,7 +171,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePolicyRuleStatusResponse.
+        r"""Sets the status of this UpdatePolicyRuleStatusResponse.
 
         状态（开启：1，关闭：0）
 

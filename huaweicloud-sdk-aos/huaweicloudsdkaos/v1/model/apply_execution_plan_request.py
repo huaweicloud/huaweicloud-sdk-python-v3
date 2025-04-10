@@ -31,7 +31,7 @@ class ApplyExecutionPlanRequest:
     }
 
     def __init__(self, client_request_id=None, stack_name=None, execution_plan_name=None, body=None):
-        """ApplyExecutionPlanRequest
+        r"""ApplyExecutionPlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ApplyExecutionPlanRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ApplyExecutionPlanRequest.
+        r"""Gets the client_request_id of this ApplyExecutionPlanRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -72,7 +72,7 @@ class ApplyExecutionPlanRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ApplyExecutionPlanRequest.
+        r"""Sets the client_request_id of this ApplyExecutionPlanRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -83,7 +83,7 @@ class ApplyExecutionPlanRequest:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this ApplyExecutionPlanRequest.
+        r"""Gets the stack_name of this ApplyExecutionPlanRequest.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -94,7 +94,7 @@ class ApplyExecutionPlanRequest:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this ApplyExecutionPlanRequest.
+        r"""Sets the stack_name of this ApplyExecutionPlanRequest.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -105,7 +105,7 @@ class ApplyExecutionPlanRequest:
 
     @property
     def execution_plan_name(self):
-        """Gets the execution_plan_name of this ApplyExecutionPlanRequest.
+        r"""Gets the execution_plan_name of this ApplyExecutionPlanRequest.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -116,7 +116,7 @@ class ApplyExecutionPlanRequest:
 
     @execution_plan_name.setter
     def execution_plan_name(self, execution_plan_name):
-        """Sets the execution_plan_name of this ApplyExecutionPlanRequest.
+        r"""Sets the execution_plan_name of this ApplyExecutionPlanRequest.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -127,7 +127,7 @@ class ApplyExecutionPlanRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyExecutionPlanRequest.
+        r"""Gets the body of this ApplyExecutionPlanRequest.
 
         :return: The body of this ApplyExecutionPlanRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanRequestBody`
@@ -136,7 +136,7 @@ class ApplyExecutionPlanRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyExecutionPlanRequest.
+        r"""Sets the body of this ApplyExecutionPlanRequest.
 
         :param body: The body of this ApplyExecutionPlanRequest.
         :type body: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanRequestBody`

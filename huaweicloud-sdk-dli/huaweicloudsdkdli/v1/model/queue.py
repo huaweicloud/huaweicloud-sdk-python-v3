@@ -85,7 +85,7 @@ class Queue:
     }
 
     def __init__(self, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None, support_spark_versions=None, default_spark_version=None, support_hetu_engine_versions=None, default_hetu_engine_version=None, support_flink_sql_versions=None, default_flink_sql_version=None, support_flink_jar_versions=None, default_flink_jar_version=None):
-        """Queue
+        r"""Queue
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class Queue:
 
     @property
     def queue_id(self):
-        """Gets the queue_id of this Queue.
+        r"""Gets the queue_id of this Queue.
 
         队列ID。
 
@@ -264,7 +264,7 @@ class Queue:
 
     @queue_id.setter
     def queue_id(self, queue_id):
-        """Sets the queue_id of this Queue.
+        r"""Sets the queue_id of this Queue.
 
         队列ID。
 
@@ -275,7 +275,7 @@ class Queue:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this Queue.
+        r"""Gets the queue_name of this Queue.
 
         队列名称。
 
@@ -286,7 +286,7 @@ class Queue:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this Queue.
+        r"""Sets the queue_name of this Queue.
 
         队列名称。
 
@@ -297,7 +297,7 @@ class Queue:
 
     @property
     def description(self):
-        """Gets the description of this Queue.
+        r"""Gets the description of this Queue.
 
         队列描述信息。
 
@@ -308,7 +308,7 @@ class Queue:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Queue.
+        r"""Sets the description of this Queue.
 
         队列描述信息。
 
@@ -319,7 +319,7 @@ class Queue:
 
     @property
     def owner(self):
-        """Gets the owner of this Queue.
+        r"""Gets the owner of this Queue.
 
         创建队列的用户。
 
@@ -330,7 +330,7 @@ class Queue:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Queue.
+        r"""Sets the owner of this Queue.
 
         创建队列的用户。
 
@@ -341,7 +341,7 @@ class Queue:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Queue.
+        r"""Gets the create_time of this Queue.
 
         创建队列的时间。是单位为“毫秒”的时间戳。
 
@@ -352,7 +352,7 @@ class Queue:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Queue.
+        r"""Sets the create_time of this Queue.
 
         创建队列的时间。是单位为“毫秒”的时间戳。
 
@@ -363,7 +363,7 @@ class Queue:
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this Queue.
+        r"""Gets the queue_type of this Queue.
 
         队列的类型。： sql general all 如果不指定，默认为“sql”。
 
@@ -374,7 +374,7 @@ class Queue:
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this Queue.
+        r"""Sets the queue_type of this Queue.
 
         队列的类型。： sql general all 如果不指定，默认为“sql”。
 
@@ -385,7 +385,7 @@ class Queue:
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this Queue.
+        r"""Gets the cu_count of this Queue.
 
         队列的实际CU。
 
@@ -396,7 +396,7 @@ class Queue:
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this Queue.
+        r"""Sets the cu_count of this Queue.
 
         队列的实际CU。
 
@@ -407,7 +407,7 @@ class Queue:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this Queue.
+        r"""Gets the charging_mode of this Queue.
 
         队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
 
@@ -418,7 +418,7 @@ class Queue:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this Queue.
+        r"""Sets the charging_mode of this Queue.
 
         队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
 
@@ -429,7 +429,7 @@ class Queue:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Queue.
+        r"""Gets the resource_id of this Queue.
 
         队列的资源ID。
 
@@ -440,7 +440,7 @@ class Queue:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Queue.
+        r"""Sets the resource_id of this Queue.
 
         队列的资源ID。
 
@@ -451,7 +451,7 @@ class Queue:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Queue.
+        r"""Gets the enterprise_project_id of this Queue.
 
         企业项目ID。0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -462,7 +462,7 @@ class Queue:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Queue.
+        r"""Sets the enterprise_project_id of this Queue.
 
         企业项目ID。0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -473,7 +473,7 @@ class Queue:
 
     @property
     def cidr_in_vpc(self):
-        """Gets the cidr_in_vpc of this Queue.
+        r"""Gets the cidr_in_vpc of this Queue.
 
         队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28。
 
@@ -484,7 +484,7 @@ class Queue:
 
     @cidr_in_vpc.setter
     def cidr_in_vpc(self, cidr_in_vpc):
-        """Sets the cidr_in_vpc of this Queue.
+        r"""Sets the cidr_in_vpc of this Queue.
 
         队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28。
 
@@ -495,7 +495,7 @@ class Queue:
 
     @property
     def cidr_in_mgntsubnet(self):
-        """Gets the cidr_in_mgntsubnet of this Queue.
+        r"""Gets the cidr_in_mgntsubnet of this Queue.
 
         管理子网的网段。
 
@@ -506,7 +506,7 @@ class Queue:
 
     @cidr_in_mgntsubnet.setter
     def cidr_in_mgntsubnet(self, cidr_in_mgntsubnet):
-        """Sets the cidr_in_mgntsubnet of this Queue.
+        r"""Sets the cidr_in_mgntsubnet of this Queue.
 
         管理子网的网段。
 
@@ -517,7 +517,7 @@ class Queue:
 
     @property
     def cidr_in_subnet(self):
-        """Gets the cidr_in_subnet of this Queue.
+        r"""Gets the cidr_in_subnet of this Queue.
 
         子网网段。
 
@@ -528,7 +528,7 @@ class Queue:
 
     @cidr_in_subnet.setter
     def cidr_in_subnet(self, cidr_in_subnet):
-        """Sets the cidr_in_subnet of this Queue.
+        r"""Sets the cidr_in_subnet of this Queue.
 
         子网网段。
 
@@ -539,7 +539,7 @@ class Queue:
 
     @property
     def resource_mode(self):
-        """Gets the resource_mode of this Queue.
+        r"""Gets the resource_mode of this Queue.
 
         队列类型。 0：共享队列 1：专属队列
 
@@ -550,7 +550,7 @@ class Queue:
 
     @resource_mode.setter
     def resource_mode(self, resource_mode):
-        """Sets the resource_mode of this Queue.
+        r"""Sets the resource_mode of this Queue.
 
         队列类型。 0：共享队列 1：专属队列
 
@@ -561,7 +561,7 @@ class Queue:
 
     @property
     def platform(self):
-        """Gets the platform of this Queue.
+        r"""Gets the platform of this Queue.
 
         队列计算资源的cpu架构。
 
@@ -572,7 +572,7 @@ class Queue:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this Queue.
+        r"""Sets the platform of this Queue.
 
         队列计算资源的cpu架构。
 
@@ -583,7 +583,7 @@ class Queue:
 
     @property
     def is_restarting(self):
-        """Gets the is_restarting of this Queue.
+        r"""Gets the is_restarting of this Queue.
 
         是否在重启状态。默认值为“false”。
 
@@ -594,7 +594,7 @@ class Queue:
 
     @is_restarting.setter
     def is_restarting(self, is_restarting):
-        """Sets the is_restarting of this Queue.
+        r"""Sets the is_restarting of this Queue.
 
         是否在重启状态。默认值为“false”。
 
@@ -605,7 +605,7 @@ class Queue:
 
     @property
     def labels(self):
-        """Gets the labels of this Queue.
+        r"""Gets the labels of this Queue.
 
         队列的标签信息，目前只支持设置跨az配置，multi_az=2
 
@@ -616,7 +616,7 @@ class Queue:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this Queue.
+        r"""Sets the labels of this Queue.
 
         队列的标签信息，目前只支持设置跨az配置，multi_az=2
 
@@ -627,7 +627,7 @@ class Queue:
 
     @property
     def feature(self):
-        """Gets the feature of this Queue.
+        r"""Gets the feature of this Queue.
 
         队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
 
@@ -638,7 +638,7 @@ class Queue:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this Queue.
+        r"""Sets the feature of this Queue.
 
         队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
 
@@ -649,7 +649,7 @@ class Queue:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Queue.
+        r"""Gets the resource_type of this Queue.
 
         队列所属资源类型, vm或container。
 
@@ -660,7 +660,7 @@ class Queue:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Queue.
+        r"""Sets the resource_type of this Queue.
 
         队列所属资源类型, vm或container。
 
@@ -671,7 +671,7 @@ class Queue:
 
     @property
     def cu_spec(self):
-        """Gets the cu_spec of this Queue.
+        r"""Gets the cu_spec of this Queue.
 
         队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
 
@@ -682,7 +682,7 @@ class Queue:
 
     @cu_spec.setter
     def cu_spec(self, cu_spec):
-        """Sets the cu_spec of this Queue.
+        r"""Sets the cu_spec of this Queue.
 
         队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
 
@@ -693,7 +693,7 @@ class Queue:
 
     @property
     def cu_scale_out_limit(self):
-        """Gets the cu_scale_out_limit of this Queue.
+        r"""Gets the cu_scale_out_limit of this Queue.
 
         当前队列弹性扩缩容的CU值上限。
 
@@ -704,7 +704,7 @@ class Queue:
 
     @cu_scale_out_limit.setter
     def cu_scale_out_limit(self, cu_scale_out_limit):
-        """Sets the cu_scale_out_limit of this Queue.
+        r"""Sets the cu_scale_out_limit of this Queue.
 
         当前队列弹性扩缩容的CU值上限。
 
@@ -715,7 +715,7 @@ class Queue:
 
     @property
     def cu_scale_in_limit(self):
-        """Gets the cu_scale_in_limit of this Queue.
+        r"""Gets the cu_scale_in_limit of this Queue.
 
         当前队列弹性扩缩容的CU值下限。
 
@@ -726,7 +726,7 @@ class Queue:
 
     @cu_scale_in_limit.setter
     def cu_scale_in_limit(self, cu_scale_in_limit):
-        """Sets the cu_scale_in_limit of this Queue.
+        r"""Sets the cu_scale_in_limit of this Queue.
 
         当前队列弹性扩缩容的CU值下限。
 
@@ -737,7 +737,7 @@ class Queue:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this Queue.
+        r"""Gets the elastic_resource_pool_name of this Queue.
 
         弹性资源池名称。
 
@@ -748,7 +748,7 @@ class Queue:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this Queue.
+        r"""Sets the elastic_resource_pool_name of this Queue.
 
         弹性资源池名称。
 
@@ -759,7 +759,7 @@ class Queue:
 
     @property
     def support_spark_versions(self):
-        """Gets the support_spark_versions of this Queue.
+        r"""Gets the support_spark_versions of this Queue.
 
         队列支持的Spark版本。
 
@@ -770,7 +770,7 @@ class Queue:
 
     @support_spark_versions.setter
     def support_spark_versions(self, support_spark_versions):
-        """Sets the support_spark_versions of this Queue.
+        r"""Sets the support_spark_versions of this Queue.
 
         队列支持的Spark版本。
 
@@ -781,7 +781,7 @@ class Queue:
 
     @property
     def default_spark_version(self):
-        """Gets the default_spark_version of this Queue.
+        r"""Gets the default_spark_version of this Queue.
 
         队列默认的Spark版本。
 
@@ -792,7 +792,7 @@ class Queue:
 
     @default_spark_version.setter
     def default_spark_version(self, default_spark_version):
-        """Sets the default_spark_version of this Queue.
+        r"""Sets the default_spark_version of this Queue.
 
         队列默认的Spark版本。
 
@@ -803,7 +803,7 @@ class Queue:
 
     @property
     def support_hetu_engine_versions(self):
-        """Gets the support_hetu_engine_versions of this Queue.
+        r"""Gets the support_hetu_engine_versions of this Queue.
 
         队列支持的HetuEngine版本。
 
@@ -814,7 +814,7 @@ class Queue:
 
     @support_hetu_engine_versions.setter
     def support_hetu_engine_versions(self, support_hetu_engine_versions):
-        """Sets the support_hetu_engine_versions of this Queue.
+        r"""Sets the support_hetu_engine_versions of this Queue.
 
         队列支持的HetuEngine版本。
 
@@ -825,7 +825,7 @@ class Queue:
 
     @property
     def default_hetu_engine_version(self):
-        """Gets the default_hetu_engine_version of this Queue.
+        r"""Gets the default_hetu_engine_version of this Queue.
 
         队列默认的HetuEngine版本。
 
@@ -836,7 +836,7 @@ class Queue:
 
     @default_hetu_engine_version.setter
     def default_hetu_engine_version(self, default_hetu_engine_version):
-        """Sets the default_hetu_engine_version of this Queue.
+        r"""Sets the default_hetu_engine_version of this Queue.
 
         队列默认的HetuEngine版本。
 
@@ -847,7 +847,7 @@ class Queue:
 
     @property
     def support_flink_sql_versions(self):
-        """Gets the support_flink_sql_versions of this Queue.
+        r"""Gets the support_flink_sql_versions of this Queue.
 
         队列支持的Flink SQL版本。
 
@@ -858,7 +858,7 @@ class Queue:
 
     @support_flink_sql_versions.setter
     def support_flink_sql_versions(self, support_flink_sql_versions):
-        """Sets the support_flink_sql_versions of this Queue.
+        r"""Sets the support_flink_sql_versions of this Queue.
 
         队列支持的Flink SQL版本。
 
@@ -869,7 +869,7 @@ class Queue:
 
     @property
     def default_flink_sql_version(self):
-        """Gets the default_flink_sql_version of this Queue.
+        r"""Gets the default_flink_sql_version of this Queue.
 
         队列默认的Flink SQL版本。
 
@@ -880,7 +880,7 @@ class Queue:
 
     @default_flink_sql_version.setter
     def default_flink_sql_version(self, default_flink_sql_version):
-        """Sets the default_flink_sql_version of this Queue.
+        r"""Sets the default_flink_sql_version of this Queue.
 
         队列默认的Flink SQL版本。
 
@@ -891,7 +891,7 @@ class Queue:
 
     @property
     def support_flink_jar_versions(self):
-        """Gets the support_flink_jar_versions of this Queue.
+        r"""Gets the support_flink_jar_versions of this Queue.
 
         队列支持的Flink JAR版本。
 
@@ -902,7 +902,7 @@ class Queue:
 
     @support_flink_jar_versions.setter
     def support_flink_jar_versions(self, support_flink_jar_versions):
-        """Sets the support_flink_jar_versions of this Queue.
+        r"""Sets the support_flink_jar_versions of this Queue.
 
         队列支持的Flink JAR版本。
 
@@ -913,7 +913,7 @@ class Queue:
 
     @property
     def default_flink_jar_version(self):
-        """Gets the default_flink_jar_version of this Queue.
+        r"""Gets the default_flink_jar_version of this Queue.
 
         队列默认的Flink JAR版本。
 
@@ -924,7 +924,7 @@ class Queue:
 
     @default_flink_jar_version.setter
     def default_flink_jar_version(self, default_flink_jar_version):
-        """Sets the default_flink_jar_version of this Queue.
+        r"""Sets the default_flink_jar_version of this Queue.
 
         队列默认的Flink JAR版本。
 

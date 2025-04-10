@@ -27,7 +27,7 @@ class MigrateServerRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """MigrateServerRequest
+        r"""MigrateServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MigrateServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this MigrateServerRequest.
+        r"""Gets the server_id of this MigrateServerRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class MigrateServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this MigrateServerRequest.
+        r"""Sets the server_id of this MigrateServerRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class MigrateServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateServerRequest.
+        r"""Gets the body of this MigrateServerRequest.
 
         :return: The body of this MigrateServerRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.MigrateServerRequestBody`
@@ -80,7 +80,7 @@ class MigrateServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateServerRequest.
+        r"""Sets the body of this MigrateServerRequest.
 
         :param body: The body of this MigrateServerRequest.
         :type body: :class:`huaweicloudsdkecs.v2.MigrateServerRequestBody`

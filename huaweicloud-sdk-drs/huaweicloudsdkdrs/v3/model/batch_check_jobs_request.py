@@ -27,7 +27,7 @@ class BatchCheckJobsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchCheckJobsRequest
+        r"""BatchCheckJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchCheckJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchCheckJobsRequest.
+        r"""Gets the x_language of this BatchCheckJobsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchCheckJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchCheckJobsRequest.
+        r"""Sets the x_language of this BatchCheckJobsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchCheckJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckJobsRequest.
+        r"""Gets the body of this BatchCheckJobsRequest.
 
         :return: The body of this BatchCheckJobsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchPrecheckReq`
@@ -81,7 +81,7 @@ class BatchCheckJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckJobsRequest.
+        r"""Sets the body of this BatchCheckJobsRequest.
 
         :param body: The body of this BatchCheckJobsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchPrecheckReq`

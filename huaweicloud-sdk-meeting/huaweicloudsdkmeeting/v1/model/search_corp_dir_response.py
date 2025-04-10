@@ -32,7 +32,7 @@ class SearchCorpDirResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCorpDirResponse
+        r"""SearchCorpDirResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpDirResponse.
+        r"""Gets the offset of this SearchCorpDirResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpDirResponse.
+        r"""Sets the offset of this SearchCorpDirResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpDirResponse.
+        r"""Gets the limit of this SearchCorpDirResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpDirResponse.
+        r"""Sets the limit of this SearchCorpDirResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchCorpDirResponse.
+        r"""Gets the count of this SearchCorpDirResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchCorpDirResponse.
+        r"""Sets the count of this SearchCorpDirResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchCorpDirResponse.
+        r"""Gets the data of this SearchCorpDirResponse.
 
         分页查询企业用户信息。
 
@@ -142,7 +142,7 @@ class SearchCorpDirResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchCorpDirResponse.
+        r"""Sets the data of this SearchCorpDirResponse.
 
         分页查询企业用户信息。
 

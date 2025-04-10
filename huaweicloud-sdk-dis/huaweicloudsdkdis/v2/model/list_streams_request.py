@@ -27,7 +27,7 @@ class ListStreamsRequest:
     }
 
     def __init__(self, limit=None, start_stream_name=None):
-        """ListStreamsRequest
+        r"""ListStreamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListStreamsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStreamsRequest.
+        r"""Gets the limit of this ListStreamsRequest.
 
         单次请求返回通道列表的最大数量。
 
@@ -61,7 +61,7 @@ class ListStreamsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStreamsRequest.
+        r"""Sets the limit of this ListStreamsRequest.
 
         单次请求返回通道列表的最大数量。
 
@@ -72,7 +72,7 @@ class ListStreamsRequest:
 
     @property
     def start_stream_name(self):
-        """Gets the start_stream_name of this ListStreamsRequest.
+        r"""Gets the start_stream_name of this ListStreamsRequest.
 
         从该通道开始返回通道列表，返回的通道列表不包括此通道名称。  如果需要分页查询，第一页查询时不传该字段。返回结果has_more_streams为true时，进行下一页查询，start_stream_name传入第一页查询结果的最后一条通道名称。
 
@@ -83,7 +83,7 @@ class ListStreamsRequest:
 
     @start_stream_name.setter
     def start_stream_name(self, start_stream_name):
-        """Sets the start_stream_name of this ListStreamsRequest.
+        r"""Sets the start_stream_name of this ListStreamsRequest.
 
         从该通道开始返回通道列表，返回的通道列表不包括此通道名称。  如果需要分页查询，第一页查询时不传该字段。返回结果has_more_streams为true时，进行下一页查询，start_stream_name传入第一页查询结果的最后一条通道名称。
 

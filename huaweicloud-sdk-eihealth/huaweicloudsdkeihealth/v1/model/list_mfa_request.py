@@ -25,7 +25,7 @@ class ListMfaRequest:
     }
 
     def __init__(self, user_id=None):
-        """ListMfaRequest
+        r"""ListMfaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListMfaRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListMfaRequest.
+        r"""Gets the user_id of this ListMfaRequest.
 
         用户id
 
@@ -53,7 +53,7 @@ class ListMfaRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListMfaRequest.
+        r"""Sets the user_id of this ListMfaRequest.
 
         用户id
 

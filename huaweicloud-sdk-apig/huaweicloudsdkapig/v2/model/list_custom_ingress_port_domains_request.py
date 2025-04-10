@@ -33,7 +33,7 @@ class ListCustomIngressPortDomainsRequest:
     }
 
     def __init__(self, instance_id=None, ingress_port_id=None, offset=None, limit=None, domain_name=None):
-        """ListCustomIngressPortDomainsRequest
+        r"""ListCustomIngressPortDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCustomIngressPortDomainsRequest.
+        r"""Gets the instance_id of this ListCustomIngressPortDomainsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -80,7 +80,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCustomIngressPortDomainsRequest.
+        r"""Sets the instance_id of this ListCustomIngressPortDomainsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -91,7 +91,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @property
     def ingress_port_id(self):
-        """Gets the ingress_port_id of this ListCustomIngressPortDomainsRequest.
+        r"""Gets the ingress_port_id of this ListCustomIngressPortDomainsRequest.
 
         实例自定义入方向端口ID。
 
@@ -102,7 +102,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @ingress_port_id.setter
     def ingress_port_id(self, ingress_port_id):
-        """Sets the ingress_port_id of this ListCustomIngressPortDomainsRequest.
+        r"""Sets the ingress_port_id of this ListCustomIngressPortDomainsRequest.
 
         实例自定义入方向端口ID。
 
@@ -113,7 +113,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomIngressPortDomainsRequest.
+        r"""Gets the offset of this ListCustomIngressPortDomainsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -124,7 +124,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomIngressPortDomainsRequest.
+        r"""Sets the offset of this ListCustomIngressPortDomainsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -135,7 +135,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomIngressPortDomainsRequest.
+        r"""Gets the limit of this ListCustomIngressPortDomainsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -146,7 +146,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomIngressPortDomainsRequest.
+        r"""Sets the limit of this ListCustomIngressPortDomainsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -157,7 +157,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListCustomIngressPortDomainsRequest.
+        r"""Gets the domain_name of this ListCustomIngressPortDomainsRequest.
 
         使用入方向端口的域名。
 
@@ -168,7 +168,7 @@ class ListCustomIngressPortDomainsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListCustomIngressPortDomainsRequest.
+        r"""Sets the domain_name of this ListCustomIngressPortDomainsRequest.
 
         使用入方向端口的域名。
 

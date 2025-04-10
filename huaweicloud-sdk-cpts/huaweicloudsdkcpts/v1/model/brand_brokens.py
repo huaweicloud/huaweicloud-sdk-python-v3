@@ -27,7 +27,7 @@ class BrandBrokens:
     }
 
     def __init__(self, rec_bytes=None, sent_bytes=None):
-        """BrandBrokens
+        r"""BrandBrokens
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BrandBrokens:
 
     @property
     def rec_bytes(self):
-        """Gets the rec_bytes of this BrandBrokens.
+        r"""Gets the rec_bytes of this BrandBrokens.
 
         接收字节数
 
@@ -61,7 +61,7 @@ class BrandBrokens:
 
     @rec_bytes.setter
     def rec_bytes(self, rec_bytes):
-        """Sets the rec_bytes of this BrandBrokens.
+        r"""Sets the rec_bytes of this BrandBrokens.
 
         接收字节数
 
@@ -72,7 +72,7 @@ class BrandBrokens:
 
     @property
     def sent_bytes(self):
-        """Gets the sent_bytes of this BrandBrokens.
+        r"""Gets the sent_bytes of this BrandBrokens.
 
         发送字节数
 
@@ -83,7 +83,7 @@ class BrandBrokens:
 
     @sent_bytes.setter
     def sent_bytes(self, sent_bytes):
-        """Sets the sent_bytes of this BrandBrokens.
+        r"""Sets the sent_bytes of this BrandBrokens.
 
         发送字节数
 

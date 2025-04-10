@@ -27,7 +27,7 @@ class CertItem:
     }
 
     def __init__(self, metadata=None, spec=None):
-        """CertItem
+        r"""CertItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CertItem:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CertItem.
+        r"""Gets the metadata of this CertItem.
 
         :return: The metadata of this CertItem.
         :rtype: :class:`huaweicloudsdkcae.v1.MetaCert`
@@ -59,7 +59,7 @@ class CertItem:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CertItem.
+        r"""Sets the metadata of this CertItem.
 
         :param metadata: The metadata of this CertItem.
         :type metadata: :class:`huaweicloudsdkcae.v1.MetaCert`
@@ -68,7 +68,7 @@ class CertItem:
 
     @property
     def spec(self):
-        """Gets the spec of this CertItem.
+        r"""Gets the spec of this CertItem.
 
         :return: The spec of this CertItem.
         :rtype: :class:`huaweicloudsdkcae.v1.SpecCert`
@@ -77,7 +77,7 @@ class CertItem:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CertItem.
+        r"""Sets the spec of this CertItem.
 
         :param spec: The spec of this CertItem.
         :type spec: :class:`huaweicloudsdkcae.v1.SpecCert`

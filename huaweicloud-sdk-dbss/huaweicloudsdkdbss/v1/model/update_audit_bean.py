@@ -27,7 +27,7 @@ class UpdateAuditBean:
     }
 
     def __init__(self, name=None, comment=None):
-        """UpdateAuditBean
+        r"""UpdateAuditBean
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAuditBean:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAuditBean.
+        r"""Gets the name of this UpdateAuditBean.
 
         实例名称。只能由中文字符,英文字母,数字,下划线,中划线组成的字符串,长度小于等于64。不能为空字符串。
 
@@ -61,7 +61,7 @@ class UpdateAuditBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAuditBean.
+        r"""Sets the name of this UpdateAuditBean.
 
         实例名称。只能由中文字符,英文字母,数字,下划线,中划线组成的字符串,长度小于等于64。不能为空字符串。
 
@@ -72,7 +72,7 @@ class UpdateAuditBean:
 
     @property
     def comment(self):
-        """Gets the comment of this UpdateAuditBean.
+        r"""Gets the comment of this UpdateAuditBean.
 
         实例描述信息，只能由中文字符,英文字母,数字,下划线,中划线,空格组成的字符串，长度小于等于255。可以为空字符串。
 
@@ -83,7 +83,7 @@ class UpdateAuditBean:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UpdateAuditBean.
+        r"""Sets the comment of this UpdateAuditBean.
 
         实例描述信息，只能由中文字符,英文字母,数字,下划线,中划线,空格组成的字符串，长度小于等于255。可以为空字符串。
 

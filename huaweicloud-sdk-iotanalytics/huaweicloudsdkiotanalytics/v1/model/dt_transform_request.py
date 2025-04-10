@@ -27,7 +27,7 @@ class DTTransformRequest:
     }
 
     def __init__(self, inputs=None, outputs=None):
-        """DTTransformRequest
+        r"""DTTransformRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DTTransformRequest:
 
     @property
     def inputs(self):
-        """Gets the inputs of this DTTransformRequest.
+        r"""Gets the inputs of this DTTransformRequest.
 
         输入参数，最多支持10个
 
@@ -61,7 +61,7 @@ class DTTransformRequest:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this DTTransformRequest.
+        r"""Sets the inputs of this DTTransformRequest.
 
         输入参数，最多支持10个
 
@@ -72,7 +72,7 @@ class DTTransformRequest:
 
     @property
     def outputs(self):
-        """Gets the outputs of this DTTransformRequest.
+        r"""Gets the outputs of this DTTransformRequest.
 
         :return: The outputs of this DTTransformRequest.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
@@ -81,7 +81,7 @@ class DTTransformRequest:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this DTTransformRequest.
+        r"""Sets the outputs of this DTTransformRequest.
 
         :param outputs: The outputs of this DTTransformRequest.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]

@@ -25,7 +25,7 @@ class DeleteStreamRequest:
     }
 
     def __init__(self, stream_name=None):
-        """DeleteStreamRequest
+        r"""DeleteStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteStreamRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DeleteStreamRequest.
+        r"""Gets the stream_name of this DeleteStreamRequest.
 
         需要删除的通道名称。
 
@@ -53,7 +53,7 @@ class DeleteStreamRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DeleteStreamRequest.
+        r"""Sets the stream_name of this DeleteStreamRequest.
 
         需要删除的通道名称。
 

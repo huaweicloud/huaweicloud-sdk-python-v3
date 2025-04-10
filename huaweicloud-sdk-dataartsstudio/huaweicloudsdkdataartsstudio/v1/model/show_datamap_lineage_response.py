@@ -34,7 +34,7 @@ class ShowDatamapLineageResponse(SdkResponse):
     }
 
     def __init__(self, total=None, relationships=None, relationship_types=None, entities=None, entity_types=None):
-        """ShowDatamapLineageResponse
+        r"""ShowDatamapLineageResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowDatamapLineageResponse.
+        r"""Gets the total of this ShowDatamapLineageResponse.
 
         查询命中总条数
 
@@ -83,7 +83,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowDatamapLineageResponse.
+        r"""Sets the total of this ShowDatamapLineageResponse.
 
         查询命中总条数
 
@@ -94,7 +94,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @property
     def relationships(self):
-        """Gets the relationships of this ShowDatamapLineageResponse.
+        r"""Gets the relationships of this ShowDatamapLineageResponse.
 
         关系列表
 
@@ -105,7 +105,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @relationships.setter
     def relationships(self, relationships):
-        """Sets the relationships of this ShowDatamapLineageResponse.
+        r"""Sets the relationships of this ShowDatamapLineageResponse.
 
         关系列表
 
@@ -116,7 +116,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @property
     def relationship_types(self):
-        """Gets the relationship_types of this ShowDatamapLineageResponse.
+        r"""Gets the relationship_types of this ShowDatamapLineageResponse.
 
         关系类型
 
@@ -127,7 +127,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @relationship_types.setter
     def relationship_types(self, relationship_types):
-        """Sets the relationship_types of this ShowDatamapLineageResponse.
+        r"""Sets the relationship_types of this ShowDatamapLineageResponse.
 
         关系类型
 
@@ -138,7 +138,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowDatamapLineageResponse.
+        r"""Gets the entities of this ShowDatamapLineageResponse.
 
         资产信息
 
@@ -149,7 +149,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowDatamapLineageResponse.
+        r"""Sets the entities of this ShowDatamapLineageResponse.
 
         资产信息
 
@@ -160,7 +160,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @property
     def entity_types(self):
-        """Gets the entity_types of this ShowDatamapLineageResponse.
+        r"""Gets the entity_types of this ShowDatamapLineageResponse.
 
         实体类型
 
@@ -171,7 +171,7 @@ class ShowDatamapLineageResponse(SdkResponse):
 
     @entity_types.setter
     def entity_types(self, entity_types):
-        """Sets the entity_types of this ShowDatamapLineageResponse.
+        r"""Sets the entity_types of this ShowDatamapLineageResponse.
 
         实体类型
 

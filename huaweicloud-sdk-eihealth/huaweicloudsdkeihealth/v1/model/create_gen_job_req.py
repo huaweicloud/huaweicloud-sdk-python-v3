@@ -41,7 +41,7 @@ class CreateGenJobReq:
     }
 
     def __init__(self, basic_info=None, smiles_list=None, molecule_file=None, binding_sites=None, weak_constraints=None, strong_constraints=None, base_model_id=None, model_ids=None, num_trials=None):
-        """CreateGenJobReq
+        r"""CreateGenJobReq
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CreateGenJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateGenJobReq.
+        r"""Gets the basic_info of this CreateGenJobReq.
 
         :return: The basic_info of this CreateGenJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -107,7 +107,7 @@ class CreateGenJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateGenJobReq.
+        r"""Sets the basic_info of this CreateGenJobReq.
 
         :param basic_info: The basic_info of this CreateGenJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -116,7 +116,7 @@ class CreateGenJobReq:
 
     @property
     def smiles_list(self):
-        """Gets the smiles_list of this CreateGenJobReq.
+        r"""Gets the smiles_list of this CreateGenJobReq.
 
         分子表达式列表
 
@@ -127,7 +127,7 @@ class CreateGenJobReq:
 
     @smiles_list.setter
     def smiles_list(self, smiles_list):
-        """Sets the smiles_list of this CreateGenJobReq.
+        r"""Sets the smiles_list of this CreateGenJobReq.
 
         分子表达式列表
 
@@ -138,7 +138,7 @@ class CreateGenJobReq:
 
     @property
     def molecule_file(self):
-        """Gets the molecule_file of this CreateGenJobReq.
+        r"""Gets the molecule_file of this CreateGenJobReq.
 
         :return: The molecule_file of this CreateGenJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -147,7 +147,7 @@ class CreateGenJobReq:
 
     @molecule_file.setter
     def molecule_file(self, molecule_file):
-        """Sets the molecule_file of this CreateGenJobReq.
+        r"""Sets the molecule_file of this CreateGenJobReq.
 
         :param molecule_file: The molecule_file of this CreateGenJobReq.
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -156,7 +156,7 @@ class CreateGenJobReq:
 
     @property
     def binding_sites(self):
-        """Gets the binding_sites of this CreateGenJobReq.
+        r"""Gets the binding_sites of this CreateGenJobReq.
 
         靶点列表
 
@@ -167,7 +167,7 @@ class CreateGenJobReq:
 
     @binding_sites.setter
     def binding_sites(self, binding_sites):
-        """Sets the binding_sites of this CreateGenJobReq.
+        r"""Sets the binding_sites of this CreateGenJobReq.
 
         靶点列表
 
@@ -178,7 +178,7 @@ class CreateGenJobReq:
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this CreateGenJobReq.
+        r"""Gets the weak_constraints of this CreateGenJobReq.
 
         弱约束集合
 
@@ -189,7 +189,7 @@ class CreateGenJobReq:
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this CreateGenJobReq.
+        r"""Sets the weak_constraints of this CreateGenJobReq.
 
         弱约束集合
 
@@ -200,7 +200,7 @@ class CreateGenJobReq:
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this CreateGenJobReq.
+        r"""Gets the strong_constraints of this CreateGenJobReq.
 
         强约束集合
 
@@ -211,7 +211,7 @@ class CreateGenJobReq:
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this CreateGenJobReq.
+        r"""Sets the strong_constraints of this CreateGenJobReq.
 
         强约束集合
 
@@ -222,7 +222,7 @@ class CreateGenJobReq:
 
     @property
     def base_model_id(self):
-        """Gets the base_model_id of this CreateGenJobReq.
+        r"""Gets the base_model_id of this CreateGenJobReq.
 
         基模型id
 
@@ -233,7 +233,7 @@ class CreateGenJobReq:
 
     @base_model_id.setter
     def base_model_id(self, base_model_id):
-        """Sets the base_model_id of this CreateGenJobReq.
+        r"""Sets the base_model_id of this CreateGenJobReq.
 
         基模型id
 
@@ -244,7 +244,7 @@ class CreateGenJobReq:
 
     @property
     def model_ids(self):
-        """Gets the model_ids of this CreateGenJobReq.
+        r"""Gets the model_ids of this CreateGenJobReq.
 
         模型id列表
 
@@ -255,7 +255,7 @@ class CreateGenJobReq:
 
     @model_ids.setter
     def model_ids(self, model_ids):
-        """Sets the model_ids of this CreateGenJobReq.
+        r"""Sets the model_ids of this CreateGenJobReq.
 
         模型id列表
 
@@ -266,7 +266,7 @@ class CreateGenJobReq:
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this CreateGenJobReq.
+        r"""Gets the num_trials of this CreateGenJobReq.
 
         生成分子数量
 
@@ -277,7 +277,7 @@ class CreateGenJobReq:
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this CreateGenJobReq.
+        r"""Sets the num_trials of this CreateGenJobReq.
 
         生成分子数量
 

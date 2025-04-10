@@ -27,7 +27,7 @@ class CreateConfigurationTemplateRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateConfigurationTemplateRequest
+        r"""CreateConfigurationTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateConfigurationTemplateRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateConfigurationTemplateRequest.
+        r"""Gets the x_language of this CreateConfigurationTemplateRequest.
 
         语言。默认值：en-us。
 
@@ -61,7 +61,7 @@ class CreateConfigurationTemplateRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateConfigurationTemplateRequest.
+        r"""Sets the x_language of this CreateConfigurationTemplateRequest.
 
         语言。默认值：en-us。
 
@@ -72,7 +72,7 @@ class CreateConfigurationTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConfigurationTemplateRequest.
+        r"""Gets the body of this CreateConfigurationTemplateRequest.
 
         :return: The body of this CreateConfigurationTemplateRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateConfigurationTemplateRequestBody`
@@ -81,7 +81,7 @@ class CreateConfigurationTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConfigurationTemplateRequest.
+        r"""Sets the body of this CreateConfigurationTemplateRequest.
 
         :param body: The body of this CreateConfigurationTemplateRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateConfigurationTemplateRequestBody`

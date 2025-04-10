@@ -29,7 +29,7 @@ class ExpandClusterComponentRequest:
     }
 
     def __init__(self, cluster_id=None, x_language=None, body=None):
-        """ExpandClusterComponentRequest
+        r"""ExpandClusterComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExpandClusterComponentRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExpandClusterComponentRequest.
+        r"""Gets the cluster_id of this ExpandClusterComponentRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class ExpandClusterComponentRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExpandClusterComponentRequest.
+        r"""Sets the cluster_id of this ExpandClusterComponentRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class ExpandClusterComponentRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExpandClusterComponentRequest.
+        r"""Gets the x_language of this ExpandClusterComponentRequest.
 
         语言类型
 
@@ -88,7 +88,7 @@ class ExpandClusterComponentRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExpandClusterComponentRequest.
+        r"""Sets the x_language of this ExpandClusterComponentRequest.
 
         语言类型
 
@@ -99,7 +99,7 @@ class ExpandClusterComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandClusterComponentRequest.
+        r"""Gets the body of this ExpandClusterComponentRequest.
 
         :return: The body of this ExpandClusterComponentRequest.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.GrowNodeReq`
@@ -108,7 +108,7 @@ class ExpandClusterComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandClusterComponentRequest.
+        r"""Sets the body of this ExpandClusterComponentRequest.
 
         :param body: The body of this ExpandClusterComponentRequest.
         :type body: :class:`huaweicloudsdkcloudtable.v2.GrowNodeReq`

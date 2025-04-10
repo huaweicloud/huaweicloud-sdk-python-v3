@@ -25,7 +25,7 @@ class RemovePipelineRequest:
     }
 
     def __init__(self, pipeline_id=None):
-        """RemovePipelineRequest
+        r"""RemovePipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemovePipelineRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this RemovePipelineRequest.
+        r"""Gets the pipeline_id of this RemovePipelineRequest.
 
         要删除的流水线ID
 
@@ -53,7 +53,7 @@ class RemovePipelineRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this RemovePipelineRequest.
+        r"""Sets the pipeline_id of this RemovePipelineRequest.
 
         要删除的流水线ID
 

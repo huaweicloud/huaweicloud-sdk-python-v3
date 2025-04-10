@@ -27,7 +27,7 @@ class UpdateLakeFormationInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateLakeFormationInstanceRequest
+        r"""UpdateLakeFormationInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLakeFormationInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateLakeFormationInstanceRequest.
+        r"""Gets the instance_id of this UpdateLakeFormationInstanceRequest.
 
         LakeFormation实例ID
 
@@ -60,7 +60,7 @@ class UpdateLakeFormationInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateLakeFormationInstanceRequest.
+        r"""Sets the instance_id of this UpdateLakeFormationInstanceRequest.
 
         LakeFormation实例ID
 
@@ -71,7 +71,7 @@ class UpdateLakeFormationInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLakeFormationInstanceRequest.
+        r"""Gets the body of this UpdateLakeFormationInstanceRequest.
 
         :return: The body of this UpdateLakeFormationInstanceRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstance`
@@ -80,7 +80,7 @@ class UpdateLakeFormationInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLakeFormationInstanceRequest.
+        r"""Sets the body of this UpdateLakeFormationInstanceRequest.
 
         :param body: The body of this UpdateLakeFormationInstanceRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstance`

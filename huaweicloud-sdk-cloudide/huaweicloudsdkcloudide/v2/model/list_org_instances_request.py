@@ -33,7 +33,7 @@ class ListOrgInstancesRequest:
     }
 
     def __init__(self, is_temporary=None, limit=None, offset=None, org_id=None, search=None):
-        """ListOrgInstancesRequest
+        r"""ListOrgInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListOrgInstancesRequest:
 
     @property
     def is_temporary(self):
-        """Gets the is_temporary of this ListOrgInstancesRequest.
+        r"""Gets the is_temporary of this ListOrgInstancesRequest.
 
         是否页面显示（以标签配置为准）
 
@@ -81,7 +81,7 @@ class ListOrgInstancesRequest:
 
     @is_temporary.setter
     def is_temporary(self, is_temporary):
-        """Sets the is_temporary of this ListOrgInstancesRequest.
+        r"""Sets the is_temporary of this ListOrgInstancesRequest.
 
         是否页面显示（以标签配置为准）
 
@@ -92,7 +92,7 @@ class ListOrgInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrgInstancesRequest.
+        r"""Gets the limit of this ListOrgInstancesRequest.
 
         每页显示的条目数量 10/15/30
 
@@ -103,7 +103,7 @@ class ListOrgInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrgInstancesRequest.
+        r"""Sets the limit of this ListOrgInstancesRequest.
 
         每页显示的条目数量 10/15/30
 
@@ -114,7 +114,7 @@ class ListOrgInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOrgInstancesRequest.
+        r"""Gets the offset of this ListOrgInstancesRequest.
 
         偏移量，表示从此偏移量开始查询
 
@@ -125,7 +125,7 @@ class ListOrgInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOrgInstancesRequest.
+        r"""Sets the offset of this ListOrgInstancesRequest.
 
         偏移量，表示从此偏移量开始查询
 
@@ -136,7 +136,7 @@ class ListOrgInstancesRequest:
 
     @property
     def org_id(self):
-        """Gets the org_id of this ListOrgInstancesRequest.
+        r"""Gets the org_id of this ListOrgInstancesRequest.
 
         租户id（对应华为云帐号的domainId）
 
@@ -147,7 +147,7 @@ class ListOrgInstancesRequest:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this ListOrgInstancesRequest.
+        r"""Sets the org_id of this ListOrgInstancesRequest.
 
         租户id（对应华为云帐号的domainId）
 
@@ -158,7 +158,7 @@ class ListOrgInstancesRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListOrgInstancesRequest.
+        r"""Gets the search of this ListOrgInstancesRequest.
 
         关键字查询(根据实例名，描述模糊查询)
 
@@ -169,7 +169,7 @@ class ListOrgInstancesRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListOrgInstancesRequest.
+        r"""Sets the search of this ListOrgInstancesRequest.
 
         关键字查询(根据实例名，描述模糊查询)
 

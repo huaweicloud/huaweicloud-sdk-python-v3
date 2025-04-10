@@ -25,7 +25,7 @@ class CreateFunctionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFunctionRequest
+        r"""CreateFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFunctionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFunctionRequest.
+        r"""Gets the body of this CreateFunctionRequest.
 
         :return: The body of this CreateFunctionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequestBody`
@@ -52,7 +52,7 @@ class CreateFunctionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFunctionRequest.
+        r"""Sets the body of this CreateFunctionRequest.
 
         :param body: The body of this CreateFunctionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequestBody`

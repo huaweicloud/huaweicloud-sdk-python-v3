@@ -26,7 +26,7 @@ class UpdateConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration=None):
-        """UpdateConfigurationResponse
+        r"""UpdateConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateConfigurationResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this UpdateConfigurationResponse.
+        r"""Gets the configuration of this UpdateConfigurationResponse.
 
         :return: The configuration of this UpdateConfigurationResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRspConfiguration`
@@ -53,7 +53,7 @@ class UpdateConfigurationResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this UpdateConfigurationResponse.
+        r"""Sets the configuration of this UpdateConfigurationResponse.
 
         :param configuration: The configuration of this UpdateConfigurationResponse.
         :type configuration: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRspConfiguration`

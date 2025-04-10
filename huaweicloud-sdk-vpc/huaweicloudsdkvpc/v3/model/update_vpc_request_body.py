@@ -27,7 +27,7 @@ class UpdateVpcRequestBody:
     }
 
     def __init__(self, dry_run=None, vpc=None):
-        """UpdateVpcRequestBody
+        r"""UpdateVpcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVpcRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this UpdateVpcRequestBody.
+        r"""Gets the dry_run of this UpdateVpcRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新VPC。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新VPC。
 
@@ -60,7 +60,7 @@ class UpdateVpcRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this UpdateVpcRequestBody.
+        r"""Sets the dry_run of this UpdateVpcRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新VPC。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新VPC。
 
@@ -71,7 +71,7 @@ class UpdateVpcRequestBody:
 
     @property
     def vpc(self):
-        """Gets the vpc of this UpdateVpcRequestBody.
+        r"""Gets the vpc of this UpdateVpcRequestBody.
 
         :return: The vpc of this UpdateVpcRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVpcOption`
@@ -80,7 +80,7 @@ class UpdateVpcRequestBody:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this UpdateVpcRequestBody.
+        r"""Sets the vpc of this UpdateVpcRequestBody.
 
         :param vpc: The vpc of this UpdateVpcRequestBody.
         :type vpc: :class:`huaweicloudsdkvpc.v3.UpdateVpcOption`

@@ -67,7 +67,7 @@ class AwVariable:
     }
 
     def __init__(self, by_order=None, current_permission=None, description=None, dynamic_param=None, dynamic_param_flag=None, function_params=None, function_arg=None, function_type=None, is_sensitive_info=None, is_sensitive_modified=None, is_out_put=None, name=None, node_id=None, node_type=None, old_name=None, parent_node_id=None, _property=None, regex=None, sensitive_info_setter_time=None, sensitive_info_setter_user=None, type=None, variable_type=None):
-        """AwVariable
+        r"""AwVariable
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class AwVariable:
 
     @property
     def by_order(self):
-        """Gets the by_order of this AwVariable.
+        r"""Gets the by_order of this AwVariable.
 
         节点顺序
 
@@ -201,7 +201,7 @@ class AwVariable:
 
     @by_order.setter
     def by_order(self, by_order):
-        """Sets the by_order of this AwVariable.
+        r"""Sets the by_order of this AwVariable.
 
         节点顺序
 
@@ -212,7 +212,7 @@ class AwVariable:
 
     @property
     def current_permission(self):
-        """Gets the current_permission of this AwVariable.
+        r"""Gets the current_permission of this AwVariable.
 
         当前人员权限
 
@@ -223,7 +223,7 @@ class AwVariable:
 
     @current_permission.setter
     def current_permission(self, current_permission):
-        """Sets the current_permission of this AwVariable.
+        r"""Sets the current_permission of this AwVariable.
 
         当前人员权限
 
@@ -234,7 +234,7 @@ class AwVariable:
 
     @property
     def description(self):
-        """Gets the description of this AwVariable.
+        r"""Gets the description of this AwVariable.
 
         参数描述
 
@@ -245,7 +245,7 @@ class AwVariable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AwVariable.
+        r"""Sets the description of this AwVariable.
 
         参数描述
 
@@ -256,7 +256,7 @@ class AwVariable:
 
     @property
     def dynamic_param(self):
-        """Gets the dynamic_param of this AwVariable.
+        r"""Gets the dynamic_param of this AwVariable.
 
         动态参数名称
 
@@ -267,7 +267,7 @@ class AwVariable:
 
     @dynamic_param.setter
     def dynamic_param(self, dynamic_param):
-        """Sets the dynamic_param of this AwVariable.
+        r"""Sets the dynamic_param of this AwVariable.
 
         动态参数名称
 
@@ -278,7 +278,7 @@ class AwVariable:
 
     @property
     def dynamic_param_flag(self):
-        """Gets the dynamic_param_flag of this AwVariable.
+        r"""Gets the dynamic_param_flag of this AwVariable.
 
         动态参数标志,默认为false:true代表动态参数；false代表非动态参数
 
@@ -289,7 +289,7 @@ class AwVariable:
 
     @dynamic_param_flag.setter
     def dynamic_param_flag(self, dynamic_param_flag):
-        """Sets the dynamic_param_flag of this AwVariable.
+        r"""Sets the dynamic_param_flag of this AwVariable.
 
         动态参数标志,默认为false:true代表动态参数；false代表非动态参数
 
@@ -300,7 +300,7 @@ class AwVariable:
 
     @property
     def function_params(self):
-        """Gets the function_params of this AwVariable.
+        r"""Gets the function_params of this AwVariable.
 
         变量参数（[]:空参、[a]:一参，[a,b]:两参）
 
@@ -311,7 +311,7 @@ class AwVariable:
 
     @function_params.setter
     def function_params(self, function_params):
-        """Sets the function_params of this AwVariable.
+        r"""Sets the function_params of this AwVariable.
 
         变量参数（[]:空参、[a]:一参，[a,b]:两参）
 
@@ -322,7 +322,7 @@ class AwVariable:
 
     @property
     def function_arg(self):
-        """Gets the function_arg of this AwVariable.
+        r"""Gets the function_arg of this AwVariable.
 
         响应提取时要使用什么方法处理参数
 
@@ -333,7 +333,7 @@ class AwVariable:
 
     @function_arg.setter
     def function_arg(self, function_arg):
-        """Sets the function_arg of this AwVariable.
+        r"""Sets the function_arg of this AwVariable.
 
         响应提取时要使用什么方法处理参数
 
@@ -344,7 +344,7 @@ class AwVariable:
 
     @property
     def function_type(self):
-        """Gets the function_type of this AwVariable.
+        r"""Gets the function_type of this AwVariable.
 
         响应提取时要使用什么方法处理参数
 
@@ -355,7 +355,7 @@ class AwVariable:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this AwVariable.
+        r"""Sets the function_type of this AwVariable.
 
         响应提取时要使用什么方法处理参数
 
@@ -366,7 +366,7 @@ class AwVariable:
 
     @property
     def is_sensitive_info(self):
-        """Gets the is_sensitive_info of this AwVariable.
+        r"""Gets the is_sensitive_info of this AwVariable.
 
         是否是敏感字段
 
@@ -377,7 +377,7 @@ class AwVariable:
 
     @is_sensitive_info.setter
     def is_sensitive_info(self, is_sensitive_info):
-        """Sets the is_sensitive_info of this AwVariable.
+        r"""Sets the is_sensitive_info of this AwVariable.
 
         是否是敏感字段
 
@@ -388,7 +388,7 @@ class AwVariable:
 
     @property
     def is_sensitive_modified(self):
-        """Gets the is_sensitive_modified of this AwVariable.
+        r"""Gets the is_sensitive_modified of this AwVariable.
 
         敏感字段是否被修改，不敏感字段不关注此值
 
@@ -399,7 +399,7 @@ class AwVariable:
 
     @is_sensitive_modified.setter
     def is_sensitive_modified(self, is_sensitive_modified):
-        """Sets the is_sensitive_modified of this AwVariable.
+        r"""Sets the is_sensitive_modified of this AwVariable.
 
         敏感字段是否被修改，不敏感字段不关注此值
 
@@ -410,7 +410,7 @@ class AwVariable:
 
     @property
     def is_out_put(self):
-        """Gets the is_out_put of this AwVariable.
+        r"""Gets the is_out_put of this AwVariable.
 
         是否是组合aw的输出参数，只有组合aw下awInstance的aw变量有该字段
 
@@ -421,7 +421,7 @@ class AwVariable:
 
     @is_out_put.setter
     def is_out_put(self, is_out_put):
-        """Sets the is_out_put of this AwVariable.
+        r"""Sets the is_out_put of this AwVariable.
 
         是否是组合aw的输出参数，只有组合aw下awInstance的aw变量有该字段
 
@@ -432,7 +432,7 @@ class AwVariable:
 
     @property
     def name(self):
-        """Gets the name of this AwVariable.
+        r"""Gets the name of this AwVariable.
 
         参数名称
 
@@ -443,7 +443,7 @@ class AwVariable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AwVariable.
+        r"""Sets the name of this AwVariable.
 
         参数名称
 
@@ -454,7 +454,7 @@ class AwVariable:
 
     @property
     def node_id(self):
-        """Gets the node_id of this AwVariable.
+        r"""Gets the node_id of this AwVariable.
 
         节点id
 
@@ -465,7 +465,7 @@ class AwVariable:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AwVariable.
+        r"""Sets the node_id of this AwVariable.
 
         节点id
 
@@ -476,7 +476,7 @@ class AwVariable:
 
     @property
     def node_type(self):
-        """Gets the node_type of this AwVariable.
+        r"""Gets the node_type of this AwVariable.
 
         0/null-变量节点;1-目录节点
 
@@ -487,7 +487,7 @@ class AwVariable:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this AwVariable.
+        r"""Sets the node_type of this AwVariable.
 
         0/null-变量节点;1-目录节点
 
@@ -498,7 +498,7 @@ class AwVariable:
 
     @property
     def old_name(self):
-        """Gets the old_name of this AwVariable.
+        r"""Gets the old_name of this AwVariable.
 
         旧名称
 
@@ -509,7 +509,7 @@ class AwVariable:
 
     @old_name.setter
     def old_name(self, old_name):
-        """Sets the old_name of this AwVariable.
+        r"""Sets the old_name of this AwVariable.
 
         旧名称
 
@@ -520,7 +520,7 @@ class AwVariable:
 
     @property
     def parent_node_id(self):
-        """Gets the parent_node_id of this AwVariable.
+        r"""Gets the parent_node_id of this AwVariable.
 
         父节点id
 
@@ -531,7 +531,7 @@ class AwVariable:
 
     @parent_node_id.setter
     def parent_node_id(self, parent_node_id):
-        """Sets the parent_node_id of this AwVariable.
+        r"""Sets the parent_node_id of this AwVariable.
 
         父节点id
 
@@ -542,7 +542,7 @@ class AwVariable:
 
     @property
     def _property(self):
-        """Gets the _property of this AwVariable.
+        r"""Gets the _property of this AwVariable.
 
         属性
 
@@ -553,7 +553,7 @@ class AwVariable:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this AwVariable.
+        r"""Sets the _property of this AwVariable.
 
         属性
 
@@ -564,7 +564,7 @@ class AwVariable:
 
     @property
     def regex(self):
-        """Gets the regex of this AwVariable.
+        r"""Gets the regex of this AwVariable.
 
         内置函数枚举
 
@@ -575,7 +575,7 @@ class AwVariable:
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this AwVariable.
+        r"""Sets the regex of this AwVariable.
 
         内置函数枚举
 
@@ -586,7 +586,7 @@ class AwVariable:
 
     @property
     def sensitive_info_setter_time(self):
-        """Gets the sensitive_info_setter_time of this AwVariable.
+        r"""Gets the sensitive_info_setter_time of this AwVariable.
 
         敏感参数设置时间
 
@@ -597,7 +597,7 @@ class AwVariable:
 
     @sensitive_info_setter_time.setter
     def sensitive_info_setter_time(self, sensitive_info_setter_time):
-        """Sets the sensitive_info_setter_time of this AwVariable.
+        r"""Sets the sensitive_info_setter_time of this AwVariable.
 
         敏感参数设置时间
 
@@ -608,7 +608,7 @@ class AwVariable:
 
     @property
     def sensitive_info_setter_user(self):
-        """Gets the sensitive_info_setter_user of this AwVariable.
+        r"""Gets the sensitive_info_setter_user of this AwVariable.
 
         敏感参数设置者名称
 
@@ -619,7 +619,7 @@ class AwVariable:
 
     @sensitive_info_setter_user.setter
     def sensitive_info_setter_user(self, sensitive_info_setter_user):
-        """Sets the sensitive_info_setter_user of this AwVariable.
+        r"""Sets the sensitive_info_setter_user of this AwVariable.
 
         敏感参数设置者名称
 
@@ -630,7 +630,7 @@ class AwVariable:
 
     @property
     def type(self):
-        """Gets the type of this AwVariable.
+        r"""Gets the type of this AwVariable.
 
         类型
 
@@ -641,7 +641,7 @@ class AwVariable:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AwVariable.
+        r"""Sets the type of this AwVariable.
 
         类型
 
@@ -652,7 +652,7 @@ class AwVariable:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this AwVariable.
+        r"""Gets the variable_type of this AwVariable.
 
         变量类型（0：text，10-16：7个内置函数）
 
@@ -663,7 +663,7 @@ class AwVariable:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this AwVariable.
+        r"""Sets the variable_type of this AwVariable.
 
         变量类型（0：text，10-16：7个内置函数）
 

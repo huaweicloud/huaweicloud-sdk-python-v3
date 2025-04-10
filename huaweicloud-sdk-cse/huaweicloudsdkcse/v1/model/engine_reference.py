@@ -43,7 +43,7 @@ class EngineReference:
     }
 
     def __init__(self, vpc=None, az_list=None, network_id=None, subnet_cidr=None, subnet_cidr_v6=None, subnet_gateway=None, public_ip_id=None, service_limit=None, instance_limit=None, inputs=None):
-        """EngineReference
+        r"""EngineReference
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class EngineReference:
 
     @property
     def vpc(self):
-        """Gets the vpc of this EngineReference.
+        r"""Gets the vpc of this EngineReference.
 
         vpc名称
 
@@ -117,7 +117,7 @@ class EngineReference:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this EngineReference.
+        r"""Sets the vpc of this EngineReference.
 
         vpc名称
 
@@ -128,7 +128,7 @@ class EngineReference:
 
     @property
     def az_list(self):
-        """Gets the az_list of this EngineReference.
+        r"""Gets the az_list of this EngineReference.
 
         微服务引擎部署的可用区列表
 
@@ -139,7 +139,7 @@ class EngineReference:
 
     @az_list.setter
     def az_list(self, az_list):
-        """Sets the az_list of this EngineReference.
+        r"""Sets the az_list of this EngineReference.
 
         微服务引擎部署的可用区列表
 
@@ -150,7 +150,7 @@ class EngineReference:
 
     @property
     def network_id(self):
-        """Gets the network_id of this EngineReference.
+        r"""Gets the network_id of this EngineReference.
 
         微服务引擎子网网络ID
 
@@ -161,7 +161,7 @@ class EngineReference:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this EngineReference.
+        r"""Sets the network_id of this EngineReference.
 
         微服务引擎子网网络ID
 
@@ -172,7 +172,7 @@ class EngineReference:
 
     @property
     def subnet_cidr(self):
-        """Gets the subnet_cidr of this EngineReference.
+        r"""Gets the subnet_cidr of this EngineReference.
 
         微服务引擎ipv4子网划分
 
@@ -183,7 +183,7 @@ class EngineReference:
 
     @subnet_cidr.setter
     def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this EngineReference.
+        r"""Sets the subnet_cidr of this EngineReference.
 
         微服务引擎ipv4子网划分
 
@@ -194,7 +194,7 @@ class EngineReference:
 
     @property
     def subnet_cidr_v6(self):
-        """Gets the subnet_cidr_v6 of this EngineReference.
+        r"""Gets the subnet_cidr_v6 of this EngineReference.
 
         微服务引擎ipv6子网划分
 
@@ -205,7 +205,7 @@ class EngineReference:
 
     @subnet_cidr_v6.setter
     def subnet_cidr_v6(self, subnet_cidr_v6):
-        """Sets the subnet_cidr_v6 of this EngineReference.
+        r"""Sets the subnet_cidr_v6 of this EngineReference.
 
         微服务引擎ipv6子网划分
 
@@ -216,7 +216,7 @@ class EngineReference:
 
     @property
     def subnet_gateway(self):
-        """Gets the subnet_gateway of this EngineReference.
+        r"""Gets the subnet_gateway of this EngineReference.
 
         微服务引擎子网网关
 
@@ -227,7 +227,7 @@ class EngineReference:
 
     @subnet_gateway.setter
     def subnet_gateway(self, subnet_gateway):
-        """Sets the subnet_gateway of this EngineReference.
+        r"""Sets the subnet_gateway of this EngineReference.
 
         微服务引擎子网网关
 
@@ -238,7 +238,7 @@ class EngineReference:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this EngineReference.
+        r"""Gets the public_ip_id of this EngineReference.
 
         微服务引擎公网地址ID
 
@@ -249,7 +249,7 @@ class EngineReference:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this EngineReference.
+        r"""Sets the public_ip_id of this EngineReference.
 
         微服务引擎公网地址ID
 
@@ -260,7 +260,7 @@ class EngineReference:
 
     @property
     def service_limit(self):
-        """Gets the service_limit of this EngineReference.
+        r"""Gets the service_limit of this EngineReference.
 
         微服务引擎可支持的微服务总数
 
@@ -271,7 +271,7 @@ class EngineReference:
 
     @service_limit.setter
     def service_limit(self, service_limit):
-        """Sets the service_limit of this EngineReference.
+        r"""Sets the service_limit of this EngineReference.
 
         微服务引擎可支持的微服务总数
 
@@ -282,7 +282,7 @@ class EngineReference:
 
     @property
     def instance_limit(self):
-        """Gets the instance_limit of this EngineReference.
+        r"""Gets the instance_limit of this EngineReference.
 
         微服务引擎可支持的实例总数
 
@@ -293,7 +293,7 @@ class EngineReference:
 
     @instance_limit.setter
     def instance_limit(self, instance_limit):
-        """Sets the instance_limit of this EngineReference.
+        r"""Sets the instance_limit of this EngineReference.
 
         微服务引擎可支持的实例总数
 
@@ -304,7 +304,7 @@ class EngineReference:
 
     @property
     def inputs(self):
-        """Gets the inputs of this EngineReference.
+        r"""Gets the inputs of this EngineReference.
 
         微服务引擎附加参数
 
@@ -315,7 +315,7 @@ class EngineReference:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this EngineReference.
+        r"""Sets the inputs of this EngineReference.
 
         微服务引擎附加参数
 

@@ -29,7 +29,7 @@ class ListProductsRespHourly:
     }
 
     def __init__(self, name=None, version=None, values=None):
-        """ListProductsRespHourly
+        r"""ListProductsRespHourly
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListProductsRespHourly:
 
     @property
     def name(self):
-        """Gets the name of this ListProductsRespHourly.
+        r"""Gets the name of this ListProductsRespHourly.
 
         消息引擎的名称，该字段显示为kafka。
 
@@ -68,7 +68,7 @@ class ListProductsRespHourly:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProductsRespHourly.
+        r"""Sets the name of this ListProductsRespHourly.
 
         消息引擎的名称，该字段显示为kafka。
 
@@ -79,7 +79,7 @@ class ListProductsRespHourly:
 
     @property
     def version(self):
-        """Gets the version of this ListProductsRespHourly.
+        r"""Gets the version of this ListProductsRespHourly.
 
         消息引擎的版本，当前支持1.1.0、2.3.0和2.7。
 
@@ -90,7 +90,7 @@ class ListProductsRespHourly:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListProductsRespHourly.
+        r"""Sets the version of this ListProductsRespHourly.
 
         消息引擎的版本，当前支持1.1.0、2.3.0和2.7。
 
@@ -101,7 +101,7 @@ class ListProductsRespHourly:
 
     @property
     def values(self):
-        """Gets the values of this ListProductsRespHourly.
+        r"""Gets the values of this ListProductsRespHourly.
 
         产品规格列表。
 
@@ -112,7 +112,7 @@ class ListProductsRespHourly:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ListProductsRespHourly.
+        r"""Sets the values of this ListProductsRespHourly.
 
         产品规格列表。
 

@@ -39,7 +39,7 @@ class ListAllStandardsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, directory_id=None, begin_time=None, end_time=None, need_path=None, limit=None, offset=None):
-        """ListAllStandardsRequest
+        r"""ListAllStandardsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListAllStandardsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListAllStandardsRequest.
+        r"""Gets the workspace of this ListAllStandardsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -102,7 +102,7 @@ class ListAllStandardsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListAllStandardsRequest.
+        r"""Sets the workspace of this ListAllStandardsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -113,7 +113,7 @@ class ListAllStandardsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListAllStandardsRequest.
+        r"""Gets the x_project_id of this ListAllStandardsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -124,7 +124,7 @@ class ListAllStandardsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListAllStandardsRequest.
+        r"""Sets the x_project_id of this ListAllStandardsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -135,7 +135,7 @@ class ListAllStandardsRequest:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this ListAllStandardsRequest.
+        r"""Gets the directory_id of this ListAllStandardsRequest.
 
         目录ID。获取该目录下的数据标准，如果有子目录，同时获取所有子目录的数据标准。
 
@@ -146,7 +146,7 @@ class ListAllStandardsRequest:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this ListAllStandardsRequest.
+        r"""Sets the directory_id of this ListAllStandardsRequest.
 
         目录ID。获取该目录下的数据标准，如果有子目录，同时获取所有子目录的数据标准。
 
@@ -157,7 +157,7 @@ class ListAllStandardsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAllStandardsRequest.
+        r"""Gets the begin_time of this ListAllStandardsRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -168,7 +168,7 @@ class ListAllStandardsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAllStandardsRequest.
+        r"""Sets the begin_time of this ListAllStandardsRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -179,7 +179,7 @@ class ListAllStandardsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAllStandardsRequest.
+        r"""Gets the end_time of this ListAllStandardsRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -190,7 +190,7 @@ class ListAllStandardsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAllStandardsRequest.
+        r"""Sets the end_time of this ListAllStandardsRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -201,7 +201,7 @@ class ListAllStandardsRequest:
 
     @property
     def need_path(self):
-        """Gets the need_path of this ListAllStandardsRequest.
+        r"""Gets the need_path of this ListAllStandardsRequest.
 
         查询数据标准目录时，是否查询数据标准目录信息。
 
@@ -212,7 +212,7 @@ class ListAllStandardsRequest:
 
     @need_path.setter
     def need_path(self, need_path):
-        """Sets the need_path of this ListAllStandardsRequest.
+        r"""Sets the need_path of this ListAllStandardsRequest.
 
         查询数据标准目录时，是否查询数据标准目录信息。
 
@@ -223,7 +223,7 @@ class ListAllStandardsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAllStandardsRequest.
+        r"""Gets the limit of this ListAllStandardsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -234,7 +234,7 @@ class ListAllStandardsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAllStandardsRequest.
+        r"""Sets the limit of this ListAllStandardsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -245,7 +245,7 @@ class ListAllStandardsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAllStandardsRequest.
+        r"""Gets the offset of this ListAllStandardsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -256,7 +256,7 @@ class ListAllStandardsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAllStandardsRequest.
+        r"""Sets the offset of this ListAllStandardsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 

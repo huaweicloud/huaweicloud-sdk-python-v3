@@ -27,7 +27,7 @@ class NeutronCreateSecurityGroupOption:
     }
 
     def __init__(self, description=None, name=None):
-        """NeutronCreateSecurityGroupOption
+        r"""NeutronCreateSecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NeutronCreateSecurityGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronCreateSecurityGroupOption.
+        r"""Gets the description of this NeutronCreateSecurityGroupOption.
 
         功能说明：安全组描述 取值范围：0-255个字符
 
@@ -61,7 +61,7 @@ class NeutronCreateSecurityGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronCreateSecurityGroupOption.
+        r"""Sets the description of this NeutronCreateSecurityGroupOption.
 
         功能说明：安全组描述 取值范围：0-255个字符
 
@@ -72,7 +72,7 @@ class NeutronCreateSecurityGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreateSecurityGroupOption.
+        r"""Gets the name of this NeutronCreateSecurityGroupOption.
 
         功能说明：安全组名称 取值范围：0-255个字符 约束：不允许为“default”
 
@@ -83,7 +83,7 @@ class NeutronCreateSecurityGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreateSecurityGroupOption.
+        r"""Sets the name of this NeutronCreateSecurityGroupOption.
 
         功能说明：安全组名称 取值范围：0-255个字符 约束：不允许为“default”
 

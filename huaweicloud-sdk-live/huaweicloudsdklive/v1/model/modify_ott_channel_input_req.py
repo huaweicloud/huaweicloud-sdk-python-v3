@@ -31,7 +31,7 @@ class ModifyOttChannelInputReq:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, input=None):
-        """ModifyOttChannelInputReq
+        r"""ModifyOttChannelInputReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ModifyOttChannelInputReq:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelInputReq.
+        r"""Gets the domain of this ModifyOttChannelInputReq.
 
         频道推流域名
 
@@ -72,7 +72,7 @@ class ModifyOttChannelInputReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelInputReq.
+        r"""Sets the domain of this ModifyOttChannelInputReq.
 
         频道推流域名
 
@@ -83,7 +83,7 @@ class ModifyOttChannelInputReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelInputReq.
+        r"""Gets the app_name of this ModifyOttChannelInputReq.
 
         组名或应用名
 
@@ -94,7 +94,7 @@ class ModifyOttChannelInputReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelInputReq.
+        r"""Sets the app_name of this ModifyOttChannelInputReq.
 
         组名或应用名
 
@@ -105,7 +105,7 @@ class ModifyOttChannelInputReq:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelInputReq.
+        r"""Gets the id of this ModifyOttChannelInputReq.
 
         频道ID。频道唯一标识，为必填项
 
@@ -116,7 +116,7 @@ class ModifyOttChannelInputReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelInputReq.
+        r"""Sets the id of this ModifyOttChannelInputReq.
 
         频道ID。频道唯一标识，为必填项
 
@@ -127,7 +127,7 @@ class ModifyOttChannelInputReq:
 
     @property
     def input(self):
-        """Gets the input of this ModifyOttChannelInputReq.
+        r"""Gets the input of this ModifyOttChannelInputReq.
 
         :return: The input of this ModifyOttChannelInputReq.
         :rtype: :class:`huaweicloudsdklive.v1.InputStreamInfo`
@@ -136,7 +136,7 @@ class ModifyOttChannelInputReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this ModifyOttChannelInputReq.
+        r"""Sets the input of this ModifyOttChannelInputReq.
 
         :param input: The input of this ModifyOttChannelInputReq.
         :type input: :class:`huaweicloudsdklive.v1.InputStreamInfo`

@@ -29,7 +29,7 @@ class ListTopoRingsRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None):
-        """ListTopoRingsRequest
+        r"""ListTopoRingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTopoRingsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListTopoRingsRequest.
+        r"""Gets the cluster_id of this ListTopoRingsRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class ListTopoRingsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListTopoRingsRequest.
+        r"""Sets the cluster_id of this ListTopoRingsRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class ListTopoRingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTopoRingsRequest.
+        r"""Gets the offset of this ListTopoRingsRequest.
 
         分页查询，偏移
 
@@ -89,7 +89,7 @@ class ListTopoRingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTopoRingsRequest.
+        r"""Sets the offset of this ListTopoRingsRequest.
 
         分页查询，偏移
 
@@ -100,7 +100,7 @@ class ListTopoRingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTopoRingsRequest.
+        r"""Gets the limit of this ListTopoRingsRequest.
 
         分页查询，每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ListTopoRingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTopoRingsRequest.
+        r"""Sets the limit of this ListTopoRingsRequest.
 
         分页查询，每页显示的条目数量
 

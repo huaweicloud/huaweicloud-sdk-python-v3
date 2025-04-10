@@ -28,7 +28,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
     }
 
     def __init__(self, agents_condition=None, total_count=None):
-        """ListAgentsInstallConditionResponse
+        r"""ListAgentsInstallConditionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
 
     @property
     def agents_condition(self):
-        """Gets the agents_condition of this ListAgentsInstallConditionResponse.
+        r"""Gets the agents_condition of this ListAgentsInstallConditionResponse.
 
         桌面agent安装情况
 
@@ -62,7 +62,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
 
     @agents_condition.setter
     def agents_condition(self, agents_condition):
-        """Sets the agents_condition of this ListAgentsInstallConditionResponse.
+        r"""Sets the agents_condition of this ListAgentsInstallConditionResponse.
 
         桌面agent安装情况
 
@@ -73,7 +73,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAgentsInstallConditionResponse.
+        r"""Gets the total_count of this ListAgentsInstallConditionResponse.
 
         总共条数。
 
@@ -84,7 +84,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAgentsInstallConditionResponse.
+        r"""Sets the total_count of this ListAgentsInstallConditionResponse.
 
         总共条数。
 

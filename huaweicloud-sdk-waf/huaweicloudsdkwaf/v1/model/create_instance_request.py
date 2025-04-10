@@ -27,7 +27,7 @@ class CreateInstanceRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateInstanceRequest
+        r"""CreateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceRequest.
+        r"""Gets the enterprise_project_id of this CreateInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -61,7 +61,7 @@ class CreateInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceRequest.
+        r"""Sets the enterprise_project_id of this CreateInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -72,7 +72,7 @@ class CreateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceRequest.
+        r"""Gets the body of this CreateInstanceRequest.
 
         :return: The body of this CreateInstanceRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateInstanceRequestBody`
@@ -81,7 +81,7 @@ class CreateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceRequest.
+        r"""Sets the body of this CreateInstanceRequest.
 
         :param body: The body of this CreateInstanceRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateInstanceRequestBody`

@@ -37,7 +37,7 @@ class ListMetricDataRequest:
     }
 
     def __init__(self, instance_id=None, dim=None, metric_name=None, _from=None, to=None, period=None, filter=None):
-        """ListMetricDataRequest
+        r"""ListMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListMetricDataRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMetricDataRequest.
+        r"""Gets the instance_id of this ListMetricDataRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -89,7 +89,7 @@ class ListMetricDataRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMetricDataRequest.
+        r"""Sets the instance_id of this ListMetricDataRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -100,7 +100,7 @@ class ListMetricDataRequest:
 
     @property
     def dim(self):
-        """Gets the dim of this ListMetricDataRequest.
+        r"""Gets the dim of this ListMetricDataRequest.
 
         指标维度 - inbound_eip：入口公网带宽，仅ELB类型实例支持 - outbound_eip：出口公网带宽
 
@@ -111,7 +111,7 @@ class ListMetricDataRequest:
 
     @dim.setter
     def dim(self, dim):
-        """Sets the dim of this ListMetricDataRequest.
+        r"""Sets the dim of this ListMetricDataRequest.
 
         指标维度 - inbound_eip：入口公网带宽，仅ELB类型实例支持 - outbound_eip：出口公网带宽
 
@@ -122,7 +122,7 @@ class ListMetricDataRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListMetricDataRequest.
+        r"""Gets the metric_name of this ListMetricDataRequest.
 
         指标名称 - upstream_bandwidth：出网带宽 - downstream_bandwidth：入网带宽 - upstream_bandwidth_usage：出网带宽使用率 - downstream_bandwidth_usage：入网带宽使用率 - up_stream：出网流量 - down_stream：入网流量
 
@@ -133,7 +133,7 @@ class ListMetricDataRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListMetricDataRequest.
+        r"""Sets the metric_name of this ListMetricDataRequest.
 
         指标名称 - upstream_bandwidth：出网带宽 - downstream_bandwidth：入网带宽 - upstream_bandwidth_usage：出网带宽使用率 - downstream_bandwidth_usage：入网带宽使用率 - up_stream：出网流量 - down_stream：入网流量
 
@@ -144,7 +144,7 @@ class ListMetricDataRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListMetricDataRequest.
+        r"""Gets the _from of this ListMetricDataRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒。
 
@@ -155,7 +155,7 @@ class ListMetricDataRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListMetricDataRequest.
+        r"""Sets the _from of this ListMetricDataRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒。
 
@@ -166,7 +166,7 @@ class ListMetricDataRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListMetricDataRequest.
+        r"""Gets the to of this ListMetricDataRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to。
 
@@ -177,7 +177,7 @@ class ListMetricDataRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListMetricDataRequest.
+        r"""Sets the to of this ListMetricDataRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to。
 
@@ -188,7 +188,7 @@ class ListMetricDataRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListMetricDataRequest.
+        r"""Gets the period of this ListMetricDataRequest.
 
         监控数据粒度。 - 1：实时数据 - 300：5分钟粒度 - 1200：20分钟粒度 - 3600：1小时粒度 - 14400：4小时粒度 - 86400：1天粒度
 
@@ -199,7 +199,7 @@ class ListMetricDataRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListMetricDataRequest.
+        r"""Sets the period of this ListMetricDataRequest.
 
         监控数据粒度。 - 1：实时数据 - 300：5分钟粒度 - 1200：20分钟粒度 - 3600：1小时粒度 - 14400：4小时粒度 - 86400：1天粒度
 
@@ -210,7 +210,7 @@ class ListMetricDataRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListMetricDataRequest.
+        r"""Gets the filter of this ListMetricDataRequest.
 
         数据聚合方式。 - average：聚合周期内指标数据的平均值。 - max：聚合周期内指标数据的最大值。 - min：聚合周期内指标数据的最小值。 - sum：聚合周期内指标数据的求和值。 - variance：聚合周期内指标数据的方差。
 
@@ -221,7 +221,7 @@ class ListMetricDataRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListMetricDataRequest.
+        r"""Sets the filter of this ListMetricDataRequest.
 
         数据聚合方式。 - average：聚合周期内指标数据的平均值。 - max：聚合周期内指标数据的最大值。 - min：聚合周期内指标数据的最小值。 - sum：聚合周期内指标数据的求和值。 - variance：聚合周期内指标数据的方差。
 

@@ -30,7 +30,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, quota=None, configurations=None):
-        """ListConfigurationTemplatesResponse
+        r"""ListConfigurationTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListConfigurationTemplatesResponse.
+        r"""Gets the count of this ListConfigurationTemplatesResponse.
 
         总记录数。
 
@@ -69,7 +69,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListConfigurationTemplatesResponse.
+        r"""Sets the count of this ListConfigurationTemplatesResponse.
 
         总记录数。
 
@@ -80,7 +80,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ListConfigurationTemplatesResponse.
+        r"""Gets the quota of this ListConfigurationTemplatesResponse.
 
         用户可创建的自定义参数模板最大数量。
 
@@ -91,7 +91,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ListConfigurationTemplatesResponse.
+        r"""Sets the quota of this ListConfigurationTemplatesResponse.
 
         用户可创建的自定义参数模板最大数量。
 
@@ -102,7 +102,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListConfigurationTemplatesResponse.
+        r"""Gets the configurations of this ListConfigurationTemplatesResponse.
 
         :return: The configurations of this ListConfigurationTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResult`]
@@ -111,7 +111,7 @@ class ListConfigurationTemplatesResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListConfigurationTemplatesResponse.
+        r"""Sets the configurations of this ListConfigurationTemplatesResponse.
 
         :param configurations: The configurations of this ListConfigurationTemplatesResponse.
         :type configurations: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResult`]

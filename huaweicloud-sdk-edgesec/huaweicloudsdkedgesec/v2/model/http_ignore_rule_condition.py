@@ -37,7 +37,7 @@ class HttpIgnoreRuleCondition:
     }
 
     def __init__(self, category=None, index=None, contents=None, logic_operation=None, value_list_id=None, size=None, check_all_indexes_logic=None):
-        """HttpIgnoreRuleCondition
+        r"""HttpIgnoreRuleCondition
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def category(self):
-        """Gets the category of this HttpIgnoreRuleCondition.
+        r"""Gets the category of this HttpIgnoreRuleCondition.
 
         字段类型，可选值有ip、url、params、cookie、header
 
@@ -93,7 +93,7 @@ class HttpIgnoreRuleCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this HttpIgnoreRuleCondition.
+        r"""Sets the category of this HttpIgnoreRuleCondition.
 
         字段类型，可选值有ip、url、params、cookie、header
 
@@ -104,7 +104,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def index(self):
-        """Gets the index of this HttpIgnoreRuleCondition.
+        r"""Gets the index of this HttpIgnoreRuleCondition.
 
         字段类型为ip且子字段为客户端ip时，不需要传index参数；子字段类型为X-Forwarded-For时，值为x-forwarded-for；字段类型为params、header、cookie并且子字段为自定义时，index的值为自定义子字段
 
@@ -115,7 +115,7 @@ class HttpIgnoreRuleCondition:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this HttpIgnoreRuleCondition.
+        r"""Sets the index of this HttpIgnoreRuleCondition.
 
         字段类型为ip且子字段为客户端ip时，不需要传index参数；子字段类型为X-Forwarded-For时，值为x-forwarded-for；字段类型为params、header、cookie并且子字段为自定义时，index的值为自定义子字段
 
@@ -126,7 +126,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this HttpIgnoreRuleCondition.
+        r"""Gets the contents of this HttpIgnoreRuleCondition.
 
         内容列表
 
@@ -137,7 +137,7 @@ class HttpIgnoreRuleCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this HttpIgnoreRuleCondition.
+        r"""Sets the contents of this HttpIgnoreRuleCondition.
 
         内容列表
 
@@ -148,7 +148,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def logic_operation(self):
-        """Gets the logic_operation of this HttpIgnoreRuleCondition.
+        r"""Gets the logic_operation of this HttpIgnoreRuleCondition.
 
         匹配逻辑，匹配逻辑根据字段类型变化，字段类型为ip时，匹配逻辑支持（equal：等于，not_equal：不等于），字段类型为url、header、params、cookie时，匹配逻辑支持（equal：等于，not_equal：不等于，contain：包含，not_contain：不包含，prefix：前缀为，not_prefix：前缀不为，suffix：后缀为，not_suffix：后缀不为，regular_match：正则匹配，regular_not_match：正则不匹配）
 
@@ -159,7 +159,7 @@ class HttpIgnoreRuleCondition:
 
     @logic_operation.setter
     def logic_operation(self, logic_operation):
-        """Sets the logic_operation of this HttpIgnoreRuleCondition.
+        r"""Sets the logic_operation of this HttpIgnoreRuleCondition.
 
         匹配逻辑，匹配逻辑根据字段类型变化，字段类型为ip时，匹配逻辑支持（equal：等于，not_equal：不等于），字段类型为url、header、params、cookie时，匹配逻辑支持（equal：等于，not_equal：不等于，contain：包含，not_contain：不包含，prefix：前缀为，not_prefix：前缀不为，suffix：后缀为，not_suffix：后缀不为，regular_match：正则匹配，regular_not_match：正则不匹配）
 
@@ -170,7 +170,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def value_list_id(self):
-        """Gets the value_list_id of this HttpIgnoreRuleCondition.
+        r"""Gets the value_list_id of this HttpIgnoreRuleCondition.
 
         引用表id
 
@@ -181,7 +181,7 @@ class HttpIgnoreRuleCondition:
 
     @value_list_id.setter
     def value_list_id(self, value_list_id):
-        """Sets the value_list_id of this HttpIgnoreRuleCondition.
+        r"""Sets the value_list_id of this HttpIgnoreRuleCondition.
 
         引用表id
 
@@ -192,7 +192,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def size(self):
-        """Gets the size of this HttpIgnoreRuleCondition.
+        r"""Gets the size of this HttpIgnoreRuleCondition.
 
         若防护规则涉及阈值，即使用该字段
 
@@ -203,7 +203,7 @@ class HttpIgnoreRuleCondition:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this HttpIgnoreRuleCondition.
+        r"""Sets the size of this HttpIgnoreRuleCondition.
 
         若防护规则涉及阈值，即使用该字段
 
@@ -214,7 +214,7 @@ class HttpIgnoreRuleCondition:
 
     @property
     def check_all_indexes_logic(self):
-        """Gets the check_all_indexes_logic of this HttpIgnoreRuleCondition.
+        r"""Gets the check_all_indexes_logic of this HttpIgnoreRuleCondition.
 
         1.所有子字段/2.任意子字段
 
@@ -225,7 +225,7 @@ class HttpIgnoreRuleCondition:
 
     @check_all_indexes_logic.setter
     def check_all_indexes_logic(self, check_all_indexes_logic):
-        """Sets the check_all_indexes_logic of this HttpIgnoreRuleCondition.
+        r"""Sets the check_all_indexes_logic of this HttpIgnoreRuleCondition.
 
         1.所有子字段/2.任意子字段
 

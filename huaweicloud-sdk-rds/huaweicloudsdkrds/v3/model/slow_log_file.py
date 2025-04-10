@@ -27,7 +27,7 @@ class SlowLogFile:
     }
 
     def __init__(self, file_name=None, file_size=None):
-        """SlowLogFile
+        r"""SlowLogFile
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SlowLogFile:
 
     @property
     def file_name(self):
-        """Gets the file_name of this SlowLogFile.
+        r"""Gets the file_name of this SlowLogFile.
 
         文件名。
 
@@ -59,7 +59,7 @@ class SlowLogFile:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this SlowLogFile.
+        r"""Sets the file_name of this SlowLogFile.
 
         文件名。
 
@@ -70,7 +70,7 @@ class SlowLogFile:
 
     @property
     def file_size(self):
-        """Gets the file_size of this SlowLogFile.
+        r"""Gets the file_size of this SlowLogFile.
 
         文件大小（单位Byte）
 
@@ -81,7 +81,7 @@ class SlowLogFile:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this SlowLogFile.
+        r"""Sets the file_size of this SlowLogFile.
 
         文件大小（单位Byte）
 

@@ -39,7 +39,7 @@ class EventParticipant:
     }
 
     def __init__(self, ptc_type=None, plate_no=None, speed=None, vehicle_class=None, gat_vehicle_class=None, track_id=None, lane_no=None, target_rects=None):
-        """EventParticipant
+        r"""EventParticipant
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class EventParticipant:
 
     @property
     def ptc_type(self):
-        """Gets the ptc_type of this EventParticipant.
+        r"""Gets the ptc_type of this EventParticipant.
 
         **参数说明**：交通参与者的具体类型描述。  **取值范围**：  - unknown：未知  - motor：机动车  - non-motor：非机动车  - pedestrian：行人 
 
@@ -103,7 +103,7 @@ class EventParticipant:
 
     @ptc_type.setter
     def ptc_type(self, ptc_type):
-        """Sets the ptc_type of this EventParticipant.
+        r"""Sets the ptc_type of this EventParticipant.
 
         **参数说明**：交通参与者的具体类型描述。  **取值范围**：  - unknown：未知  - motor：机动车  - non-motor：非机动车  - pedestrian：行人 
 
@@ -114,7 +114,7 @@ class EventParticipant:
 
     @property
     def plate_no(self):
-        """Gets the plate_no of this EventParticipant.
+        r"""Gets the plate_no of this EventParticipant.
 
         **参数说明**：车牌号。
 
@@ -125,7 +125,7 @@ class EventParticipant:
 
     @plate_no.setter
     def plate_no(self, plate_no):
-        """Sets the plate_no of this EventParticipant.
+        r"""Sets the plate_no of this EventParticipant.
 
         **参数说明**：车牌号。
 
@@ -136,7 +136,7 @@ class EventParticipant:
 
     @property
     def speed(self):
-        """Gets the speed of this EventParticipant.
+        r"""Gets the speed of this EventParticipant.
 
         **参数说明**：对应车辆被检测到超速或者慢行时的速度小。单位为0.02米每秒。值为8191时代表无效数值。
 
@@ -147,7 +147,7 @@ class EventParticipant:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this EventParticipant.
+        r"""Sets the speed of this EventParticipant.
 
         **参数说明**：对应车辆被检测到超速或者慢行时的速度小。单位为0.02米每秒。值为8191时代表无效数值。
 
@@ -158,7 +158,7 @@ class EventParticipant:
 
     @property
     def vehicle_class(self):
-        """Gets the vehicle_class of this EventParticipant.
+        r"""Gets the vehicle_class of this EventParticipant.
 
         **参数说明**：车辆类型。参考 [车辆基本类型参数说明](https://support.huaweicloud.com/api-v2x/v2x_04_0162.html)。
 
@@ -169,7 +169,7 @@ class EventParticipant:
 
     @vehicle_class.setter
     def vehicle_class(self, vehicle_class):
-        """Sets the vehicle_class of this EventParticipant.
+        r"""Sets the vehicle_class of this EventParticipant.
 
         **参数说明**：车辆类型。参考 [车辆基本类型参数说明](https://support.huaweicloud.com/api-v2x/v2x_04_0162.html)。
 
@@ -180,7 +180,7 @@ class EventParticipant:
 
     @property
     def gat_vehicle_class(self):
-        """Gets the gat_vehicle_class of this EventParticipant.
+        r"""Gets the gat_vehicle_class of this EventParticipant.
 
         **参数说明**：机动车车辆类型。参考[机动车车辆类型](https://support.huaweicloud.com/api-v2x/v2x_04_0179.html)。
 
@@ -191,7 +191,7 @@ class EventParticipant:
 
     @gat_vehicle_class.setter
     def gat_vehicle_class(self, gat_vehicle_class):
-        """Sets the gat_vehicle_class of this EventParticipant.
+        r"""Sets the gat_vehicle_class of this EventParticipant.
 
         **参数说明**：机动车车辆类型。参考[机动车车辆类型](https://support.huaweicloud.com/api-v2x/v2x_04_0179.html)。
 
@@ -202,7 +202,7 @@ class EventParticipant:
 
     @property
     def track_id(self):
-        """Gets the track_id of this EventParticipant.
+        r"""Gets the track_id of this EventParticipant.
 
         **参数说明**：感知设备识别的id，具体表示为机动车轨迹ID。
 
@@ -213,7 +213,7 @@ class EventParticipant:
 
     @track_id.setter
     def track_id(self, track_id):
-        """Sets the track_id of this EventParticipant.
+        r"""Sets the track_id of this EventParticipant.
 
         **参数说明**：感知设备识别的id，具体表示为机动车轨迹ID。
 
@@ -224,7 +224,7 @@ class EventParticipant:
 
     @property
     def lane_no(self):
-        """Gets the lane_no of this EventParticipant.
+        r"""Gets the lane_no of this EventParticipant.
 
         **参数说明**：事件发生的所在车道
 
@@ -235,7 +235,7 @@ class EventParticipant:
 
     @lane_no.setter
     def lane_no(self, lane_no):
-        """Sets the lane_no of this EventParticipant.
+        r"""Sets the lane_no of this EventParticipant.
 
         **参数说明**：事件发生的所在车道
 
@@ -246,7 +246,7 @@ class EventParticipant:
 
     @property
     def target_rects(self):
-        """Gets the target_rects of this EventParticipant.
+        r"""Gets the target_rects of this EventParticipant.
 
         **参数说明**：目标检测框信息列表。
 
@@ -257,7 +257,7 @@ class EventParticipant:
 
     @target_rects.setter
     def target_rects(self, target_rects):
-        """Sets the target_rects of this EventParticipant.
+        r"""Sets the target_rects of this EventParticipant.
 
         **参数说明**：目标检测框信息列表。
 

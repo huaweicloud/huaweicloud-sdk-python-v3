@@ -31,7 +31,7 @@ class UpdateKvRequestBody:
     }
 
     def __init__(self, table_name=None, primary_key=None, condition_expression=None, update_fields=None):
-        """UpdateKvRequestBody
+        r"""UpdateKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateKvRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this UpdateKvRequestBody.
+        r"""Gets the table_name of this UpdateKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -73,7 +73,7 @@ class UpdateKvRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this UpdateKvRequestBody.
+        r"""Sets the table_name of this UpdateKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -84,7 +84,7 @@ class UpdateKvRequestBody:
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this UpdateKvRequestBody.
+        r"""Gets the primary_key of this UpdateKvRequestBody.
 
         用户自定义的主键名及值。 > 内容字段：主键字段名和值，组合索引多个元素。
 
@@ -95,7 +95,7 @@ class UpdateKvRequestBody:
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this UpdateKvRequestBody.
+        r"""Sets the primary_key of this UpdateKvRequestBody.
 
         用户自定义的主键名及值。 > 内容字段：主键字段名和值，组合索引多个元素。
 
@@ -106,7 +106,7 @@ class UpdateKvRequestBody:
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this UpdateKvRequestBody.
+        r"""Gets the condition_expression of this UpdateKvRequestBody.
 
         :return: The condition_expression of this UpdateKvRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -115,7 +115,7 @@ class UpdateKvRequestBody:
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this UpdateKvRequestBody.
+        r"""Sets the condition_expression of this UpdateKvRequestBody.
 
         :param condition_expression: The condition_expression of this UpdateKvRequestBody.
         :type condition_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -124,7 +124,7 @@ class UpdateKvRequestBody:
 
     @property
     def update_fields(self):
-        """Gets the update_fields of this UpdateKvRequestBody.
+        r"""Gets the update_fields of this UpdateKvRequestBody.
 
         :return: The update_fields of this UpdateKvRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.UpdateFields`
@@ -133,7 +133,7 @@ class UpdateKvRequestBody:
 
     @update_fields.setter
     def update_fields(self, update_fields):
-        """Sets the update_fields of this UpdateKvRequestBody.
+        r"""Sets the update_fields of this UpdateKvRequestBody.
 
         :param update_fields: The update_fields of this UpdateKvRequestBody.
         :type update_fields: :class:`huaweicloudsdkkvs.v1.UpdateFields`

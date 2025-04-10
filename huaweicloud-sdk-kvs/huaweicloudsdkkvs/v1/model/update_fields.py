@@ -33,7 +33,7 @@ class UpdateFields:
     }
 
     def __init__(self, upsert=None, set=None, add=None, rmv=None, insert=None):
-        """UpdateFields
+        r"""UpdateFields
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateFields:
 
     @property
     def upsert(self):
-        """Gets the upsert of this UpdateFields.
+        r"""Gets the upsert of this UpdateFields.
 
         文档不存在时，插入该完整文档。
 
@@ -82,7 +82,7 @@ class UpdateFields:
 
     @upsert.setter
     def upsert(self, upsert):
-        """Sets the upsert of this UpdateFields.
+        r"""Sets the upsert of this UpdateFields.
 
         文档不存在时，插入该完整文档。
 
@@ -93,7 +93,7 @@ class UpdateFields:
 
     @property
     def set(self):
-        """Gets the set of this UpdateFields.
+        r"""Gets the set of this UpdateFields.
 
         新增或覆盖更新1个或多个字段的值。 > 禁止修改sortkey的字段。
 
@@ -104,7 +104,7 @@ class UpdateFields:
 
     @set.setter
     def set(self, set):
-        """Sets the set of this UpdateFields.
+        r"""Sets the set of this UpdateFields.
 
         新增或覆盖更新1个或多个字段的值。 > 禁止修改sortkey的字段。
 
@@ -115,7 +115,7 @@ class UpdateFields:
 
     @property
     def add(self):
-        """Gets the add of this UpdateFields.
+        r"""Gets the add of this UpdateFields.
 
         对1个或多个字段做加法运算，并更新为运算后的值。
 
@@ -126,7 +126,7 @@ class UpdateFields:
 
     @add.setter
     def add(self, add):
-        """Sets the add of this UpdateFields.
+        r"""Sets the add of this UpdateFields.
 
         对1个或多个字段做加法运算，并更新为运算后的值。
 
@@ -137,7 +137,7 @@ class UpdateFields:
 
     @property
     def rmv(self):
-        """Gets the rmv of this UpdateFields.
+        r"""Gets the rmv of this UpdateFields.
 
         删除1个或多个字段。 - 数组元素为待删除字段名。
 
@@ -148,7 +148,7 @@ class UpdateFields:
 
     @rmv.setter
     def rmv(self, rmv):
-        """Sets the rmv of this UpdateFields.
+        r"""Sets the rmv of this UpdateFields.
 
         删除1个或多个字段。 - 数组元素为待删除字段名。
 
@@ -159,7 +159,7 @@ class UpdateFields:
 
     @property
     def insert(self):
-        """Gets the insert of this UpdateFields.
+        r"""Gets the insert of this UpdateFields.
 
         插入元素到数组中 > 非数组返回失败。
 
@@ -170,7 +170,7 @@ class UpdateFields:
 
     @insert.setter
     def insert(self, insert):
-        """Sets the insert of this UpdateFields.
+        r"""Sets the insert of this UpdateFields.
 
         插入元素到数组中 > 非数组返回失败。
 

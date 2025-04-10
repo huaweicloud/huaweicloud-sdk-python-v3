@@ -28,7 +28,7 @@ class ListBandwidthPackageLinesResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth_package_lines=None, request_id=None):
-        """ListBandwidthPackageLinesResponse
+        r"""ListBandwidthPackageLinesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBandwidthPackageLinesResponse(SdkResponse):
 
     @property
     def bandwidth_package_lines(self):
-        """Gets the bandwidth_package_lines of this ListBandwidthPackageLinesResponse.
+        r"""Gets the bandwidth_package_lines of this ListBandwidthPackageLinesResponse.
 
         带宽包线路列表。
 
@@ -62,7 +62,7 @@ class ListBandwidthPackageLinesResponse(SdkResponse):
 
     @bandwidth_package_lines.setter
     def bandwidth_package_lines(self, bandwidth_package_lines):
-        """Sets the bandwidth_package_lines of this ListBandwidthPackageLinesResponse.
+        r"""Sets the bandwidth_package_lines of this ListBandwidthPackageLinesResponse.
 
         带宽包线路列表。
 
@@ -73,7 +73,7 @@ class ListBandwidthPackageLinesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListBandwidthPackageLinesResponse.
+        r"""Gets the request_id of this ListBandwidthPackageLinesResponse.
 
         请求ID。
 
@@ -84,7 +84,7 @@ class ListBandwidthPackageLinesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthPackageLinesResponse.
+        r"""Sets the request_id of this ListBandwidthPackageLinesResponse.
 
         请求ID。
 

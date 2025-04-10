@@ -29,7 +29,7 @@ class StatusDetail:
     }
 
     def __init__(self, carrier=None, status=None, desc=None):
-        """StatusDetail
+        r"""StatusDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StatusDetail:
 
     @property
     def carrier(self):
-        """Gets the carrier of this StatusDetail.
+        r"""Gets the carrier of this StatusDetail.
 
         运营商类型。  - cmcc：中国移动 - cucc：中国联通 - ctcc：中国电信 - oversea：港澳台及国外 - unknown：未知 
 
@@ -68,7 +68,7 @@ class StatusDetail:
 
     @carrier.setter
     def carrier(self, carrier):
-        """Sets the carrier of this StatusDetail.
+        r"""Sets the carrier of this StatusDetail.
 
         运营商类型。  - cmcc：中国移动 - cucc：中国联通 - ctcc：中国电信 - oversea：港澳台及国外 - unknown：未知 
 
@@ -79,7 +79,7 @@ class StatusDetail:
 
     @property
     def status(self):
-        """Gets the status of this StatusDetail.
+        r"""Gets the status of this StatusDetail.
 
         模板状态： - 0：正常可用  - 1：审核中  - 2：审核不通过  - 3：模板已禁用  - 4：模板不存在  - 5：模板已过期 
 
@@ -90,7 +90,7 @@ class StatusDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StatusDetail.
+        r"""Sets the status of this StatusDetail.
 
         模板状态： - 0：正常可用  - 1：审核中  - 2：审核不通过  - 3：模板已禁用  - 4：模板不存在  - 5：模板已过期 
 
@@ -101,7 +101,7 @@ class StatusDetail:
 
     @property
     def desc(self):
-        """Gets the desc of this StatusDetail.
+        r"""Gets the desc of this StatusDetail.
 
         对模板状态的描述。  > 若状态是审核不通过或被禁用，描述表示的是不通过或禁用的原因。 
 
@@ -112,7 +112,7 @@ class StatusDetail:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this StatusDetail.
+        r"""Sets the desc of this StatusDetail.
 
         对模板状态的描述。  > 若状态是审核不通过或被禁用，描述表示的是不通过或禁用的原因。 
 

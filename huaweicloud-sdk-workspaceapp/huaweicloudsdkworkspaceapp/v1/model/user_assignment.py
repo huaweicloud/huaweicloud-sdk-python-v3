@@ -27,7 +27,7 @@ class UserAssignment:
     }
 
     def __init__(self, attach=None, policy_statement_id=None):
-        """UserAssignment
+        r"""UserAssignment
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UserAssignment:
 
     @property
     def attach(self):
-        """Gets the attach of this UserAssignment.
+        r"""Gets the attach of this UserAssignment.
 
         目标用户。
 
@@ -59,7 +59,7 @@ class UserAssignment:
 
     @attach.setter
     def attach(self, attach):
-        """Sets the attach of this UserAssignment.
+        r"""Sets the attach of this UserAssignment.
 
         目标用户。
 
@@ -70,7 +70,7 @@ class UserAssignment:
 
     @property
     def policy_statement_id(self):
-        """Gets the policy_statement_id of this UserAssignment.
+        r"""Gets the policy_statement_id of this UserAssignment.
 
         策略ID。
 
@@ -81,7 +81,7 @@ class UserAssignment:
 
     @policy_statement_id.setter
     def policy_statement_id(self, policy_statement_id):
-        """Sets the policy_statement_id of this UserAssignment.
+        r"""Sets the policy_statement_id of this UserAssignment.
 
         策略ID。
 

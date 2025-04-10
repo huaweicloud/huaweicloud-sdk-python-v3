@@ -35,7 +35,7 @@ class DeliverItem:
     }
 
     def __init__(self, subscription_id=None, subscription_name=None, success_counts=None, fail_counts=None, all_deliver_times=None, deliver_target_list=None):
-        """DeliverItem
+        r"""DeliverItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DeliverItem:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this DeliverItem.
+        r"""Gets the subscription_id of this DeliverItem.
 
         订阅ID，全局唯一
 
@@ -89,7 +89,7 @@ class DeliverItem:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this DeliverItem.
+        r"""Sets the subscription_id of this DeliverItem.
 
         订阅ID，全局唯一
 
@@ -100,7 +100,7 @@ class DeliverItem:
 
     @property
     def subscription_name(self):
-        """Gets the subscription_name of this DeliverItem.
+        r"""Gets the subscription_name of this DeliverItem.
 
         订阅名称
 
@@ -111,7 +111,7 @@ class DeliverItem:
 
     @subscription_name.setter
     def subscription_name(self, subscription_name):
-        """Sets the subscription_name of this DeliverItem.
+        r"""Sets the subscription_name of this DeliverItem.
 
         订阅名称
 
@@ -122,7 +122,7 @@ class DeliverItem:
 
     @property
     def success_counts(self):
-        """Gets the success_counts of this DeliverItem.
+        r"""Gets the success_counts of this DeliverItem.
 
         成功目标个数
 
@@ -133,7 +133,7 @@ class DeliverItem:
 
     @success_counts.setter
     def success_counts(self, success_counts):
-        """Sets the success_counts of this DeliverItem.
+        r"""Sets the success_counts of this DeliverItem.
 
         成功目标个数
 
@@ -144,7 +144,7 @@ class DeliverItem:
 
     @property
     def fail_counts(self):
-        """Gets the fail_counts of this DeliverItem.
+        r"""Gets the fail_counts of this DeliverItem.
 
         失败目标个数
 
@@ -155,7 +155,7 @@ class DeliverItem:
 
     @fail_counts.setter
     def fail_counts(self, fail_counts):
-        """Sets the fail_counts of this DeliverItem.
+        r"""Sets the fail_counts of this DeliverItem.
 
         失败目标个数
 
@@ -166,7 +166,7 @@ class DeliverItem:
 
     @property
     def all_deliver_times(self):
-        """Gets the all_deliver_times of this DeliverItem.
+        r"""Gets the all_deliver_times of this DeliverItem.
 
         共投递次数
 
@@ -177,7 +177,7 @@ class DeliverItem:
 
     @all_deliver_times.setter
     def all_deliver_times(self, all_deliver_times):
-        """Sets the all_deliver_times of this DeliverItem.
+        r"""Sets the all_deliver_times of this DeliverItem.
 
         共投递次数
 
@@ -188,7 +188,7 @@ class DeliverItem:
 
     @property
     def deliver_target_list(self):
-        """Gets the deliver_target_list of this DeliverItem.
+        r"""Gets the deliver_target_list of this DeliverItem.
 
         投递详情
 
@@ -199,7 +199,7 @@ class DeliverItem:
 
     @deliver_target_list.setter
     def deliver_target_list(self, deliver_target_list):
-        """Sets the deliver_target_list of this DeliverItem.
+        r"""Sets the deliver_target_list of this DeliverItem.
 
         投递详情
 

@@ -25,7 +25,7 @@ class BillingMode:
     }
 
     def __init__(self, billing_mode=None):
-        """BillingMode
+        r"""BillingMode
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BillingMode:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this BillingMode.
+        r"""Gets the billing_mode of this BillingMode.
 
         :return: The billing_mode of this BillingMode.
         :rtype: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
@@ -51,7 +51,7 @@ class BillingMode:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this BillingMode.
+        r"""Sets the billing_mode of this BillingMode.
 
         :param billing_mode: The billing_mode of this BillingMode.
         :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`

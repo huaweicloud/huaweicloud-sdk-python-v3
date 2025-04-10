@@ -31,7 +31,7 @@ class Authentification:
     }
 
     def __init__(self, record_name=None, record_type=None, record_value=None, domain=None):
-        """Authentification
+        r"""Authentification
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Authentification:
 
     @property
     def record_name(self):
-        """Gets the record_name of this Authentification.
+        r"""Gets the record_name of this Authentification.
 
         域名校验值名字。
 
@@ -75,7 +75,7 @@ class Authentification:
 
     @record_name.setter
     def record_name(self, record_name):
-        """Sets the record_name of this Authentification.
+        r"""Sets the record_name of this Authentification.
 
         域名校验值名字。
 
@@ -86,7 +86,7 @@ class Authentification:
 
     @property
     def record_type(self):
-        """Gets the record_type of this Authentification.
+        r"""Gets the record_type of this Authentification.
 
         域名校验值类型。
 
@@ -97,7 +97,7 @@ class Authentification:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this Authentification.
+        r"""Sets the record_type of this Authentification.
 
         域名校验值类型。
 
@@ -108,7 +108,7 @@ class Authentification:
 
     @property
     def record_value(self):
-        """Gets the record_value of this Authentification.
+        r"""Gets the record_value of this Authentification.
 
         域名校验值。
 
@@ -119,7 +119,7 @@ class Authentification:
 
     @record_value.setter
     def record_value(self, record_value):
-        """Sets the record_value of this Authentification.
+        r"""Sets the record_value of this Authentification.
 
         域名校验值。
 
@@ -130,7 +130,7 @@ class Authentification:
 
     @property
     def domain(self):
-        """Gets the domain of this Authentification.
+        r"""Gets the domain of this Authentification.
 
         校验值对应的域名。
 
@@ -141,7 +141,7 @@ class Authentification:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this Authentification.
+        r"""Sets the domain of this Authentification.
 
         校验值对应的域名。
 

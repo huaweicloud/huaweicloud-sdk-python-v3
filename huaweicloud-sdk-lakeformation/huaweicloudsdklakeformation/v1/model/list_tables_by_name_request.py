@@ -31,7 +31,7 @@ class ListTablesByNameRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, body=None):
-        """ListTablesByNameRequest
+        r"""ListTablesByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListTablesByNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTablesByNameRequest.
+        r"""Gets the instance_id of this ListTablesByNameRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class ListTablesByNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTablesByNameRequest.
+        r"""Sets the instance_id of this ListTablesByNameRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class ListTablesByNameRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListTablesByNameRequest.
+        r"""Gets the catalog_name of this ListTablesByNameRequest.
 
         catalog名字
 
@@ -94,7 +94,7 @@ class ListTablesByNameRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListTablesByNameRequest.
+        r"""Sets the catalog_name of this ListTablesByNameRequest.
 
         catalog名字
 
@@ -105,7 +105,7 @@ class ListTablesByNameRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTablesByNameRequest.
+        r"""Gets the database_name of this ListTablesByNameRequest.
 
         数据库名字
 
@@ -116,7 +116,7 @@ class ListTablesByNameRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTablesByNameRequest.
+        r"""Sets the database_name of this ListTablesByNameRequest.
 
         数据库名字
 
@@ -127,7 +127,7 @@ class ListTablesByNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTablesByNameRequest.
+        r"""Gets the body of this ListTablesByNameRequest.
 
         :return: The body of this ListTablesByNameRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableByNameInput`
@@ -136,7 +136,7 @@ class ListTablesByNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTablesByNameRequest.
+        r"""Sets the body of this ListTablesByNameRequest.
 
         :param body: The body of this ListTablesByNameRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.ListTableByNameInput`

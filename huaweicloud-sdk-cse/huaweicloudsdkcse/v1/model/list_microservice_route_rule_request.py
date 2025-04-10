@@ -33,7 +33,7 @@ class ListMicroserviceRouteRuleRequest:
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, service_name=None, environment=None, app_id=None):
-        """ListMicroserviceRouteRuleRequest
+        r"""ListMicroserviceRouteRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this ListMicroserviceRouteRuleRequest.
+        r"""Gets the x_engine_id of this ListMicroserviceRouteRuleRequest.
 
         微服务引擎的实例ID
 
@@ -79,7 +79,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this ListMicroserviceRouteRuleRequest.
+        r"""Sets the x_engine_id of this ListMicroserviceRouteRuleRequest.
 
         微服务引擎的实例ID
 
@@ -90,7 +90,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListMicroserviceRouteRuleRequest.
+        r"""Gets the x_enterprise_project_id of this ListMicroserviceRouteRuleRequest.
 
         企业项目ID
 
@@ -101,7 +101,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListMicroserviceRouteRuleRequest.
+        r"""Sets the x_enterprise_project_id of this ListMicroserviceRouteRuleRequest.
 
         企业项目ID
 
@@ -112,7 +112,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ListMicroserviceRouteRuleRequest.
+        r"""Gets the service_name of this ListMicroserviceRouteRuleRequest.
 
         微服务名称
 
@@ -123,7 +123,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ListMicroserviceRouteRuleRequest.
+        r"""Sets the service_name of this ListMicroserviceRouteRuleRequest.
 
         微服务名称
 
@@ -134,7 +134,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @property
     def environment(self):
-        """Gets the environment of this ListMicroserviceRouteRuleRequest.
+        r"""Gets the environment of this ListMicroserviceRouteRuleRequest.
 
         所属环境，不填表示<空>环境
 
@@ -145,7 +145,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ListMicroserviceRouteRuleRequest.
+        r"""Sets the environment of this ListMicroserviceRouteRuleRequest.
 
         所属环境，不填表示<空>环境
 
@@ -156,7 +156,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListMicroserviceRouteRuleRequest.
+        r"""Gets the app_id of this ListMicroserviceRouteRuleRequest.
 
         所属应用，不填默认为default应用
 
@@ -167,7 +167,7 @@ class ListMicroserviceRouteRuleRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListMicroserviceRouteRuleRequest.
+        r"""Sets the app_id of this ListMicroserviceRouteRuleRequest.
 
         所属应用，不填默认为default应用
 

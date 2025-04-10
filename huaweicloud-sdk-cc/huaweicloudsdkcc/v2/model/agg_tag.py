@@ -27,7 +27,7 @@ class AggTag:
     }
 
     def __init__(self, key=None, values=None):
-        """AggTag
+        r"""AggTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AggTag:
 
     @property
     def key(self):
-        """Gets the key of this AggTag.
+        r"""Gets the key of this AggTag.
 
         键
 
@@ -61,7 +61,7 @@ class AggTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AggTag.
+        r"""Sets the key of this AggTag.
 
         键
 
@@ -72,7 +72,7 @@ class AggTag:
 
     @property
     def values(self):
-        """Gets the values of this AggTag.
+        r"""Gets the values of this AggTag.
 
         相同键的值列表
 
@@ -83,7 +83,7 @@ class AggTag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this AggTag.
+        r"""Sets the values of this AggTag.
 
         相同键的值列表
 

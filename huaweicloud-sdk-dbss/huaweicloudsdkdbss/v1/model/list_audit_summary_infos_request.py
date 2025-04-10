@@ -27,7 +27,7 @@ class ListAuditSummaryInfosRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListAuditSummaryInfosRequest
+        r"""ListAuditSummaryInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAuditSummaryInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuditSummaryInfosRequest.
+        r"""Gets the offset of this ListAuditSummaryInfosRequest.
 
         偏移量
 
@@ -61,7 +61,7 @@ class ListAuditSummaryInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuditSummaryInfosRequest.
+        r"""Sets the offset of this ListAuditSummaryInfosRequest.
 
         偏移量
 
@@ -72,7 +72,7 @@ class ListAuditSummaryInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditSummaryInfosRequest.
+        r"""Gets the limit of this ListAuditSummaryInfosRequest.
 
         查询记录数
 
@@ -83,7 +83,7 @@ class ListAuditSummaryInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditSummaryInfosRequest.
+        r"""Sets the limit of this ListAuditSummaryInfosRequest.
 
         查询记录数
 

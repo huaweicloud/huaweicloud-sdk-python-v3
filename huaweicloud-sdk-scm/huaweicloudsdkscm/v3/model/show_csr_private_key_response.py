@@ -26,7 +26,7 @@ class ShowCsrPrivateKeyResponse(SdkResponse):
     }
 
     def __init__(self, private_key=None):
-        """ShowCsrPrivateKeyResponse
+        r"""ShowCsrPrivateKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCsrPrivateKeyResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this ShowCsrPrivateKeyResponse.
+        r"""Gets the private_key of this ShowCsrPrivateKeyResponse.
 
         私钥。
 
@@ -55,7 +55,7 @@ class ShowCsrPrivateKeyResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ShowCsrPrivateKeyResponse.
+        r"""Sets the private_key of this ShowCsrPrivateKeyResponse.
 
         私钥。
 

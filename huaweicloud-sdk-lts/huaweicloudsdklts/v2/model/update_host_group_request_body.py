@@ -31,7 +31,7 @@ class UpdateHostGroupRequestBody:
     }
 
     def __init__(self, host_group_id=None, host_group_name=None, host_id_list=None, host_group_tag=None):
-        """UpdateHostGroupRequestBody
+        r"""UpdateHostGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateHostGroupRequestBody:
 
     @property
     def host_group_id(self):
-        """Gets the host_group_id of this UpdateHostGroupRequestBody.
+        r"""Gets the host_group_id of this UpdateHostGroupRequestBody.
 
         主机组ID
 
@@ -74,7 +74,7 @@ class UpdateHostGroupRequestBody:
 
     @host_group_id.setter
     def host_group_id(self, host_group_id):
-        """Sets the host_group_id of this UpdateHostGroupRequestBody.
+        r"""Sets the host_group_id of this UpdateHostGroupRequestBody.
 
         主机组ID
 
@@ -85,7 +85,7 @@ class UpdateHostGroupRequestBody:
 
     @property
     def host_group_name(self):
-        """Gets the host_group_name of this UpdateHostGroupRequestBody.
+        r"""Gets the host_group_name of this UpdateHostGroupRequestBody.
 
         主机组名称
 
@@ -96,7 +96,7 @@ class UpdateHostGroupRequestBody:
 
     @host_group_name.setter
     def host_group_name(self, host_group_name):
-        """Sets the host_group_name of this UpdateHostGroupRequestBody.
+        r"""Sets the host_group_name of this UpdateHostGroupRequestBody.
 
         主机组名称
 
@@ -107,7 +107,7 @@ class UpdateHostGroupRequestBody:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this UpdateHostGroupRequestBody.
+        r"""Gets the host_id_list of this UpdateHostGroupRequestBody.
 
         主机ID列表。主机类型必须与主机组类型一致
 
@@ -118,7 +118,7 @@ class UpdateHostGroupRequestBody:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this UpdateHostGroupRequestBody.
+        r"""Sets the host_id_list of this UpdateHostGroupRequestBody.
 
         主机ID列表。主机类型必须与主机组类型一致
 
@@ -129,7 +129,7 @@ class UpdateHostGroupRequestBody:
 
     @property
     def host_group_tag(self):
-        """Gets the host_group_tag of this UpdateHostGroupRequestBody.
+        r"""Gets the host_group_tag of this UpdateHostGroupRequestBody.
 
         主机组标签。KEY不能重复
 
@@ -140,7 +140,7 @@ class UpdateHostGroupRequestBody:
 
     @host_group_tag.setter
     def host_group_tag(self, host_group_tag):
-        """Sets the host_group_tag of this UpdateHostGroupRequestBody.
+        r"""Sets the host_group_tag of this UpdateHostGroupRequestBody.
 
         主机组标签。KEY不能重复
 

@@ -26,7 +26,7 @@ class ModifyCustomizedFieldsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ModifyCustomizedFieldsResponse
+        r"""ModifyCustomizedFieldsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifyCustomizedFieldsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ModifyCustomizedFieldsResponse.
+        r"""Gets the data of this ModifyCustomizedFieldsResponse.
 
         :return: The data of this ModifyCustomizedFieldsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModifyCustomizedFieldsResultData`
@@ -53,7 +53,7 @@ class ModifyCustomizedFieldsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ModifyCustomizedFieldsResponse.
+        r"""Sets the data of this ModifyCustomizedFieldsResponse.
 
         :param data: The data of this ModifyCustomizedFieldsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ModifyCustomizedFieldsResultData`

@@ -26,7 +26,7 @@ class ListActiveActiveDomainsResponse(SdkResponse):
     }
 
     def __init__(self, domains=None):
-        """ListActiveActiveDomainsResponse
+        r"""ListActiveActiveDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListActiveActiveDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this ListActiveActiveDomainsResponse.
+        r"""Gets the domains of this ListActiveActiveDomainsResponse.
 
         双活域列表信息。
 
@@ -55,7 +55,7 @@ class ListActiveActiveDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListActiveActiveDomainsResponse.
+        r"""Sets the domains of this ListActiveActiveDomainsResponse.
 
         双活域列表信息。
 

@@ -31,7 +31,7 @@ class ListSqlserverDbUsersRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
-        """ListSqlserverDbUsersRequest
+        r"""ListSqlserverDbUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListSqlserverDbUsersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSqlserverDbUsersRequest.
+        r"""Gets the x_language of this ListSqlserverDbUsersRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ListSqlserverDbUsersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSqlserverDbUsersRequest.
+        r"""Sets the x_language of this ListSqlserverDbUsersRequest.
 
         语言
 
@@ -83,7 +83,7 @@ class ListSqlserverDbUsersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSqlserverDbUsersRequest.
+        r"""Gets the instance_id of this ListSqlserverDbUsersRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ListSqlserverDbUsersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSqlserverDbUsersRequest.
+        r"""Sets the instance_id of this ListSqlserverDbUsersRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ListSqlserverDbUsersRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListSqlserverDbUsersRequest.
+        r"""Gets the page of this ListSqlserverDbUsersRequest.
 
         分页页码，从1开始。
 
@@ -116,7 +116,7 @@ class ListSqlserverDbUsersRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListSqlserverDbUsersRequest.
+        r"""Sets the page of this ListSqlserverDbUsersRequest.
 
         分页页码，从1开始。
 
@@ -127,7 +127,7 @@ class ListSqlserverDbUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSqlserverDbUsersRequest.
+        r"""Gets the limit of this ListSqlserverDbUsersRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -138,7 +138,7 @@ class ListSqlserverDbUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSqlserverDbUsersRequest.
+        r"""Sets the limit of this ListSqlserverDbUsersRequest.
 
         每页数据条数。取值范围[1, 100]。
 

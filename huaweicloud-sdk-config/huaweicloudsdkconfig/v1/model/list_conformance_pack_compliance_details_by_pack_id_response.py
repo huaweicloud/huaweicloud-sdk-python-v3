@@ -28,7 +28,7 @@ class ListConformancePackComplianceDetailsByPackIdResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListConformancePackComplianceDetailsByPackIdResponse
+        r"""ListConformancePackComplianceDetailsByPackIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConformancePackComplianceDetailsByPackIdResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListConformancePackComplianceDetailsByPackIdResponse.
+        r"""Gets the value of this ListConformancePackComplianceDetailsByPackIdResponse.
 
         合规规则包的合规规则评估结果详情列表。
 
@@ -62,7 +62,7 @@ class ListConformancePackComplianceDetailsByPackIdResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListConformancePackComplianceDetailsByPackIdResponse.
+        r"""Sets the value of this ListConformancePackComplianceDetailsByPackIdResponse.
 
         合规规则包的合规规则评估结果详情列表。
 
@@ -73,7 +73,7 @@ class ListConformancePackComplianceDetailsByPackIdResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListConformancePackComplianceDetailsByPackIdResponse.
+        r"""Gets the page_info of this ListConformancePackComplianceDetailsByPackIdResponse.
 
         :return: The page_info of this ListConformancePackComplianceDetailsByPackIdResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListConformancePackComplianceDetailsByPackIdResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListConformancePackComplianceDetailsByPackIdResponse.
+        r"""Sets the page_info of this ListConformancePackComplianceDetailsByPackIdResponse.
 
         :param page_info: The page_info of this ListConformancePackComplianceDetailsByPackIdResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

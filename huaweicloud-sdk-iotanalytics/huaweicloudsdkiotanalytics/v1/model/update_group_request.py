@@ -27,7 +27,7 @@ class UpdateGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """UpdateGroupRequest
+        r"""UpdateGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateGroupRequest.
+        r"""Gets the group_id of this UpdateGroupRequest.
 
         存储组 ID
 
@@ -60,7 +60,7 @@ class UpdateGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateGroupRequest.
+        r"""Sets the group_id of this UpdateGroupRequest.
 
         存储组 ID
 
@@ -71,7 +71,7 @@ class UpdateGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGroupRequest.
+        r"""Gets the body of this UpdateGroupRequest.
 
         :return: The body of this UpdateGroupRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StorageGroup`
@@ -80,7 +80,7 @@ class UpdateGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGroupRequest.
+        r"""Sets the body of this UpdateGroupRequest.
 
         :param body: The body of this UpdateGroupRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.StorageGroup`

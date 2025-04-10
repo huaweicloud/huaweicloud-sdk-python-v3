@@ -30,7 +30,7 @@ class ShowQueryDetailResponse(SdkResponse):
     }
 
     def __init__(self, code=None, msg=None, data=None):
-        """ShowQueryDetailResponse
+        r"""ShowQueryDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowQueryDetailResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowQueryDetailResponse.
+        r"""Gets the code of this ShowQueryDetailResponse.
 
         响应码。
 
@@ -69,7 +69,7 @@ class ShowQueryDetailResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowQueryDetailResponse.
+        r"""Sets the code of this ShowQueryDetailResponse.
 
         响应码。
 
@@ -80,7 +80,7 @@ class ShowQueryDetailResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ShowQueryDetailResponse.
+        r"""Gets the msg of this ShowQueryDetailResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class ShowQueryDetailResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ShowQueryDetailResponse.
+        r"""Sets the msg of this ShowQueryDetailResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class ShowQueryDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowQueryDetailResponse.
+        r"""Gets the data of this ShowQueryDetailResponse.
 
         :return: The data of this ShowQueryDetailResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.ListQueriesDto`
@@ -111,7 +111,7 @@ class ShowQueryDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowQueryDetailResponse.
+        r"""Sets the data of this ShowQueryDetailResponse.
 
         :param data: The data of this ShowQueryDetailResponse.
         :type data: :class:`huaweicloudsdkdws.v2.ListQueriesDto`

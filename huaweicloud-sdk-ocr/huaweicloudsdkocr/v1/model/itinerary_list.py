@@ -45,7 +45,7 @@ class ItineraryList:
     }
 
     def __init__(self, departure_station=None, destination_station=None, carrier=None, flight=None, cabin_class=None, date=None, time=None, fare_basis=None, effective_date=None, expiry_date=None, baggage_allowance=None):
-        """ItineraryList
+        r"""ItineraryList
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ItineraryList:
 
     @property
     def departure_station(self):
-        """Gets the departure_station of this ItineraryList.
+        r"""Gets the departure_station of this ItineraryList.
 
         始发站。 
 
@@ -124,7 +124,7 @@ class ItineraryList:
 
     @departure_station.setter
     def departure_station(self, departure_station):
-        """Sets the departure_station of this ItineraryList.
+        r"""Sets the departure_station of this ItineraryList.
 
         始发站。 
 
@@ -135,7 +135,7 @@ class ItineraryList:
 
     @property
     def destination_station(self):
-        """Gets the destination_station of this ItineraryList.
+        r"""Gets the destination_station of this ItineraryList.
 
         目的站。 
 
@@ -146,7 +146,7 @@ class ItineraryList:
 
     @destination_station.setter
     def destination_station(self, destination_station):
-        """Sets the destination_station of this ItineraryList.
+        r"""Sets the destination_station of this ItineraryList.
 
         目的站。 
 
@@ -157,7 +157,7 @@ class ItineraryList:
 
     @property
     def carrier(self):
-        """Gets the carrier of this ItineraryList.
+        r"""Gets the carrier of this ItineraryList.
 
         承运人。 
 
@@ -168,7 +168,7 @@ class ItineraryList:
 
     @carrier.setter
     def carrier(self, carrier):
-        """Sets the carrier of this ItineraryList.
+        r"""Sets the carrier of this ItineraryList.
 
         承运人。 
 
@@ -179,7 +179,7 @@ class ItineraryList:
 
     @property
     def flight(self):
-        """Gets the flight of this ItineraryList.
+        r"""Gets the flight of this ItineraryList.
 
         航班号。 
 
@@ -190,7 +190,7 @@ class ItineraryList:
 
     @flight.setter
     def flight(self, flight):
-        """Sets the flight of this ItineraryList.
+        r"""Sets the flight of this ItineraryList.
 
         航班号。 
 
@@ -201,7 +201,7 @@ class ItineraryList:
 
     @property
     def cabin_class(self):
-        """Gets the cabin_class of this ItineraryList.
+        r"""Gets the cabin_class of this ItineraryList.
 
         座位等级。 
 
@@ -212,7 +212,7 @@ class ItineraryList:
 
     @cabin_class.setter
     def cabin_class(self, cabin_class):
-        """Sets the cabin_class of this ItineraryList.
+        r"""Sets the cabin_class of this ItineraryList.
 
         座位等级。 
 
@@ -223,7 +223,7 @@ class ItineraryList:
 
     @property
     def date(self):
-        """Gets the date of this ItineraryList.
+        r"""Gets the date of this ItineraryList.
 
         日期。 
 
@@ -234,7 +234,7 @@ class ItineraryList:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ItineraryList.
+        r"""Sets the date of this ItineraryList.
 
         日期。 
 
@@ -245,7 +245,7 @@ class ItineraryList:
 
     @property
     def time(self):
-        """Gets the time of this ItineraryList.
+        r"""Gets the time of this ItineraryList.
 
         时间。 
 
@@ -256,7 +256,7 @@ class ItineraryList:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ItineraryList.
+        r"""Sets the time of this ItineraryList.
 
         时间。 
 
@@ -267,7 +267,7 @@ class ItineraryList:
 
     @property
     def fare_basis(self):
-        """Gets the fare_basis of this ItineraryList.
+        r"""Gets the fare_basis of this ItineraryList.
 
         客票类别。 
 
@@ -278,7 +278,7 @@ class ItineraryList:
 
     @fare_basis.setter
     def fare_basis(self, fare_basis):
-        """Sets the fare_basis of this ItineraryList.
+        r"""Sets the fare_basis of this ItineraryList.
 
         客票类别。 
 
@@ -289,7 +289,7 @@ class ItineraryList:
 
     @property
     def effective_date(self):
-        """Gets the effective_date of this ItineraryList.
+        r"""Gets the effective_date of this ItineraryList.
 
         客票生效日期。 
 
@@ -300,7 +300,7 @@ class ItineraryList:
 
     @effective_date.setter
     def effective_date(self, effective_date):
-        """Sets the effective_date of this ItineraryList.
+        r"""Sets the effective_date of this ItineraryList.
 
         客票生效日期。 
 
@@ -311,7 +311,7 @@ class ItineraryList:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this ItineraryList.
+        r"""Gets the expiry_date of this ItineraryList.
 
         有效截止日期。 
 
@@ -322,7 +322,7 @@ class ItineraryList:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this ItineraryList.
+        r"""Sets the expiry_date of this ItineraryList.
 
         有效截止日期。 
 
@@ -333,7 +333,7 @@ class ItineraryList:
 
     @property
     def baggage_allowance(self):
-        """Gets the baggage_allowance of this ItineraryList.
+        r"""Gets the baggage_allowance of this ItineraryList.
 
         免费行李。 
 
@@ -344,7 +344,7 @@ class ItineraryList:
 
     @baggage_allowance.setter
     def baggage_allowance(self, baggage_allowance):
-        """Sets the baggage_allowance of this ItineraryList.
+        r"""Sets the baggage_allowance of this ItineraryList.
 
         免费行李。 
 

@@ -33,7 +33,7 @@ class ShowDcPointRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, point_id=None, device_id=None, _property=None):
-        """ShowDcPointRequest
+        r"""ShowDcPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowDcPointRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ShowDcPointRequest.
+        r"""Gets the edge_node_id of this ShowDcPointRequest.
 
         边缘节点ID
 
@@ -79,7 +79,7 @@ class ShowDcPointRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ShowDcPointRequest.
+        r"""Sets the edge_node_id of this ShowDcPointRequest.
 
         边缘节点ID
 
@@ -90,7 +90,7 @@ class ShowDcPointRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this ShowDcPointRequest.
+        r"""Gets the ds_id of this ShowDcPointRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -101,7 +101,7 @@ class ShowDcPointRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this ShowDcPointRequest.
+        r"""Sets the ds_id of this ShowDcPointRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -112,7 +112,7 @@ class ShowDcPointRequest:
 
     @property
     def point_id(self):
-        """Gets the point_id of this ShowDcPointRequest.
+        r"""Gets the point_id of this ShowDcPointRequest.
 
         采集点位表id，创建点位表时设置，数据源下唯一。
 
@@ -123,7 +123,7 @@ class ShowDcPointRequest:
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this ShowDcPointRequest.
+        r"""Sets the point_id of this ShowDcPointRequest.
 
         采集点位表id，创建点位表时设置，数据源下唯一。
 
@@ -134,7 +134,7 @@ class ShowDcPointRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowDcPointRequest.
+        r"""Gets the device_id of this ShowDcPointRequest.
 
         设备id
 
@@ -145,7 +145,7 @@ class ShowDcPointRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowDcPointRequest.
+        r"""Sets the device_id of this ShowDcPointRequest.
 
         设备id
 
@@ -156,7 +156,7 @@ class ShowDcPointRequest:
 
     @property
     def _property(self):
-        """Gets the _property of this ShowDcPointRequest.
+        r"""Gets the _property of this ShowDcPointRequest.
 
         设备服务属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -167,7 +167,7 @@ class ShowDcPointRequest:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ShowDcPointRequest.
+        r"""Sets the _property of this ShowDcPointRequest.
 
         设备服务属性，允许中、数字、英文大小写、下划线、中划线
 

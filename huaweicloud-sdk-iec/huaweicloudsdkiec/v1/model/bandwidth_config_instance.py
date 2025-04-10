@@ -31,7 +31,7 @@ class BandwidthConfigInstance:
     }
 
     def __init__(self, sharetype=None, size=None, ids=None, bandwidth_types=None):
-        """BandwidthConfigInstance
+        r"""BandwidthConfigInstance
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BandwidthConfigInstance:
 
     @property
     def sharetype(self):
-        """Gets the sharetype of this BandwidthConfigInstance.
+        r"""Gets the sharetype of this BandwidthConfigInstance.
 
         带宽类型，现支持WHOLE类型，即共享带宽，其他类型不支持。
 
@@ -74,7 +74,7 @@ class BandwidthConfigInstance:
 
     @sharetype.setter
     def sharetype(self, sharetype):
-        """Sets the sharetype of this BandwidthConfigInstance.
+        r"""Sets the sharetype of this BandwidthConfigInstance.
 
         带宽类型，现支持WHOLE类型，即共享带宽，其他类型不支持。
 
@@ -85,7 +85,7 @@ class BandwidthConfigInstance:
 
     @property
     def size(self):
-        """Gets the size of this BandwidthConfigInstance.
+        r"""Gets the size of this BandwidthConfigInstance.
 
         带宽（Mbit/s）。 
 
@@ -96,7 +96,7 @@ class BandwidthConfigInstance:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandwidthConfigInstance.
+        r"""Sets the size of this BandwidthConfigInstance.
 
         带宽（Mbit/s）。 
 
@@ -107,7 +107,7 @@ class BandwidthConfigInstance:
 
     @property
     def ids(self):
-        """Gets the ids of this BandwidthConfigInstance.
+        r"""Gets the ids of this BandwidthConfigInstance.
 
         :return: The ids of this BandwidthConfigInstance.
         :rtype: list[str]
@@ -116,7 +116,7 @@ class BandwidthConfigInstance:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BandwidthConfigInstance.
+        r"""Sets the ids of this BandwidthConfigInstance.
 
         :param ids: The ids of this BandwidthConfigInstance.
         :type ids: list[str]
@@ -125,7 +125,7 @@ class BandwidthConfigInstance:
 
     @property
     def bandwidth_types(self):
-        """Gets the bandwidth_types of this BandwidthConfigInstance.
+        r"""Gets the bandwidth_types of this BandwidthConfigInstance.
 
         :return: The bandwidth_types of this BandwidthConfigInstance.
         :rtype: list[str]
@@ -134,7 +134,7 @@ class BandwidthConfigInstance:
 
     @bandwidth_types.setter
     def bandwidth_types(self, bandwidth_types):
-        """Sets the bandwidth_types of this BandwidthConfigInstance.
+        r"""Sets the bandwidth_types of this BandwidthConfigInstance.
 
         :param bandwidth_types: The bandwidth_types of this BandwidthConfigInstance.
         :type bandwidth_types: list[str]

@@ -27,7 +27,7 @@ class CreateSupplementdataRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateSupplementdataRequest
+        r"""CreateSupplementdataRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSupplementdataRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSupplementdataRequest.
+        r"""Gets the workspace of this CreateSupplementdataRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class CreateSupplementdataRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSupplementdataRequest.
+        r"""Sets the workspace of this CreateSupplementdataRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class CreateSupplementdataRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSupplementdataRequest.
+        r"""Gets the body of this CreateSupplementdataRequest.
 
         :return: The body of this CreateSupplementdataRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.SupplementDataInfo`
@@ -81,7 +81,7 @@ class CreateSupplementdataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSupplementdataRequest.
+        r"""Sets the body of this CreateSupplementdataRequest.
 
         :param body: The body of this CreateSupplementdataRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.SupplementDataInfo`

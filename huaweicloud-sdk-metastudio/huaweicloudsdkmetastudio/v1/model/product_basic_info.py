@@ -35,7 +35,7 @@ class ProductBasicInfo:
     }
 
     def __init__(self, name=None, description=None, tags=None, cover=None, text_list=None, asset_list=None):
-        """ProductBasicInfo
+        r"""ProductBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ProductBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this ProductBasicInfo.
+        r"""Gets the name of this ProductBasicInfo.
 
         商品名称
 
@@ -88,7 +88,7 @@ class ProductBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProductBasicInfo.
+        r"""Sets the name of this ProductBasicInfo.
 
         商品名称
 
@@ -99,7 +99,7 @@ class ProductBasicInfo:
 
     @property
     def description(self):
-        """Gets the description of this ProductBasicInfo.
+        r"""Gets the description of this ProductBasicInfo.
 
         商品描述
 
@@ -110,7 +110,7 @@ class ProductBasicInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProductBasicInfo.
+        r"""Sets the description of this ProductBasicInfo.
 
         商品描述
 
@@ -121,7 +121,7 @@ class ProductBasicInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this ProductBasicInfo.
+        r"""Gets the tags of this ProductBasicInfo.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -132,7 +132,7 @@ class ProductBasicInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProductBasicInfo.
+        r"""Sets the tags of this ProductBasicInfo.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -143,7 +143,7 @@ class ProductBasicInfo:
 
     @property
     def cover(self):
-        """Gets the cover of this ProductBasicInfo.
+        r"""Gets the cover of this ProductBasicInfo.
 
         :return: The cover of this ProductBasicInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
@@ -152,7 +152,7 @@ class ProductBasicInfo:
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this ProductBasicInfo.
+        r"""Sets the cover of this ProductBasicInfo.
 
         :param cover: The cover of this ProductBasicInfo.
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
@@ -161,7 +161,7 @@ class ProductBasicInfo:
 
     @property
     def text_list(self):
-        """Gets the text_list of this ProductBasicInfo.
+        r"""Gets the text_list of this ProductBasicInfo.
 
         文本列表
 
@@ -172,7 +172,7 @@ class ProductBasicInfo:
 
     @text_list.setter
     def text_list(self, text_list):
-        """Sets the text_list of this ProductBasicInfo.
+        r"""Sets the text_list of this ProductBasicInfo.
 
         文本列表
 
@@ -183,7 +183,7 @@ class ProductBasicInfo:
 
     @property
     def asset_list(self):
-        """Gets the asset_list of this ProductBasicInfo.
+        r"""Gets the asset_list of this ProductBasicInfo.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -194,7 +194,7 @@ class ProductBasicInfo:
 
     @asset_list.setter
     def asset_list(self, asset_list):
-        """Sets the asset_list of this ProductBasicInfo.
+        r"""Sets the asset_list of this ProductBasicInfo.
 
         资产列表,仅支持图片、视频、音频资产
 

@@ -27,7 +27,7 @@ class ListQueriesData:
     }
 
     def __init__(self, queries=None, status=None):
-        """ListQueriesData
+        r"""ListQueriesData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListQueriesData:
 
     @property
     def queries(self):
-        """Gets the queries of this ListQueriesData.
+        r"""Gets the queries of this ListQueriesData.
 
         查询数据列表。
 
@@ -61,7 +61,7 @@ class ListQueriesData:
 
     @queries.setter
     def queries(self, queries):
-        """Sets the queries of this ListQueriesData.
+        r"""Sets the queries of this ListQueriesData.
 
         查询数据列表。
 
@@ -72,7 +72,7 @@ class ListQueriesData:
 
     @property
     def status(self):
-        """Gets the status of this ListQueriesData.
+        r"""Gets the status of this ListQueriesData.
 
         :return: The status of this ListQueriesData.
         :rtype: :class:`huaweicloudsdkdws.v2.ListQueriesStatus`
@@ -81,7 +81,7 @@ class ListQueriesData:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListQueriesData.
+        r"""Sets the status of this ListQueriesData.
 
         :param status: The status of this ListQueriesData.
         :type status: :class:`huaweicloudsdkdws.v2.ListQueriesStatus`

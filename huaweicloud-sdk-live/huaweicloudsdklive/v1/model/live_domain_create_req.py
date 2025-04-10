@@ -35,7 +35,7 @@ class LiveDomainCreateReq:
     }
 
     def __init__(self, domain=None, domain_type=None, region=None, service_area=None, enterprise_project_id=None, pull_protocol=None):
-        """LiveDomainCreateReq
+        r"""LiveDomainCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class LiveDomainCreateReq:
 
     @property
     def domain(self):
-        """Gets the domain of this LiveDomainCreateReq.
+        r"""Gets the domain of this LiveDomainCreateReq.
 
         直播域名
 
@@ -86,7 +86,7 @@ class LiveDomainCreateReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this LiveDomainCreateReq.
+        r"""Sets the domain of this LiveDomainCreateReq.
 
         直播域名
 
@@ -97,7 +97,7 @@ class LiveDomainCreateReq:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this LiveDomainCreateReq.
+        r"""Gets the domain_type of this LiveDomainCreateReq.
 
         域名类型 - pull表示播放域名 - push表示推流域名 
 
@@ -108,7 +108,7 @@ class LiveDomainCreateReq:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this LiveDomainCreateReq.
+        r"""Sets the domain_type of this LiveDomainCreateReq.
 
         域名类型 - pull表示播放域名 - push表示推流域名 
 
@@ -119,7 +119,7 @@ class LiveDomainCreateReq:
 
     @property
     def region(self):
-        """Gets the region of this LiveDomainCreateReq.
+        r"""Gets the region of this LiveDomainCreateReq.
 
         直播所属的直播中心
 
@@ -130,7 +130,7 @@ class LiveDomainCreateReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this LiveDomainCreateReq.
+        r"""Sets the region of this LiveDomainCreateReq.
 
         直播所属的直播中心
 
@@ -141,7 +141,7 @@ class LiveDomainCreateReq:
 
     @property
     def service_area(self):
-        """Gets the service_area of this LiveDomainCreateReq.
+        r"""Gets the service_area of this LiveDomainCreateReq.
 
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
@@ -152,7 +152,7 @@ class LiveDomainCreateReq:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this LiveDomainCreateReq.
+        r"""Sets the service_area of this LiveDomainCreateReq.
 
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
@@ -163,7 +163,7 @@ class LiveDomainCreateReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this LiveDomainCreateReq.
+        r"""Gets the enterprise_project_id of this LiveDomainCreateReq.
 
         企业项目ID
 
@@ -174,7 +174,7 @@ class LiveDomainCreateReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this LiveDomainCreateReq.
+        r"""Sets the enterprise_project_id of this LiveDomainCreateReq.
 
         企业项目ID
 
@@ -185,7 +185,7 @@ class LiveDomainCreateReq:
 
     @property
     def pull_protocol(self):
-        """Gets the pull_protocol of this LiveDomainCreateReq.
+        r"""Gets the pull_protocol of this LiveDomainCreateReq.
 
         域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
 
@@ -196,7 +196,7 @@ class LiveDomainCreateReq:
 
     @pull_protocol.setter
     def pull_protocol(self, pull_protocol):
-        """Sets the pull_protocol of this LiveDomainCreateReq.
+        r"""Sets the pull_protocol of this LiveDomainCreateReq.
 
         域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
 

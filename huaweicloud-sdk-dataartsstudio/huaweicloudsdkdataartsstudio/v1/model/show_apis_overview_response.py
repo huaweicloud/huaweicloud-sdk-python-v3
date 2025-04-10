@@ -40,7 +40,7 @@ class ShowApisOverviewResponse(SdkResponse):
     }
 
     def __init__(self, publish_num=None, developing_num=None, apply_num=None, call_num=None, success_num=None, fail_num=None, legal_num=None, illegal_num=None):
-        """ShowApisOverviewResponse
+        r"""ShowApisOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def publish_num(self):
-        """Gets the publish_num of this ShowApisOverviewResponse.
+        r"""Gets the publish_num of this ShowApisOverviewResponse.
 
         已发布API量
 
@@ -104,7 +104,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @publish_num.setter
     def publish_num(self, publish_num):
-        """Sets the publish_num of this ShowApisOverviewResponse.
+        r"""Sets the publish_num of this ShowApisOverviewResponse.
 
         已发布API量
 
@@ -115,7 +115,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def developing_num(self):
-        """Gets the developing_num of this ShowApisOverviewResponse.
+        r"""Gets the developing_num of this ShowApisOverviewResponse.
 
         开发中API量
 
@@ -126,7 +126,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @developing_num.setter
     def developing_num(self, developing_num):
-        """Sets the developing_num of this ShowApisOverviewResponse.
+        r"""Sets the developing_num of this ShowApisOverviewResponse.
 
         开发中API量
 
@@ -137,7 +137,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def apply_num(self):
-        """Gets the apply_num of this ShowApisOverviewResponse.
+        r"""Gets the apply_num of this ShowApisOverviewResponse.
 
         申请量
 
@@ -148,7 +148,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @apply_num.setter
     def apply_num(self, apply_num):
-        """Sets the apply_num of this ShowApisOverviewResponse.
+        r"""Sets the apply_num of this ShowApisOverviewResponse.
 
         申请量
 
@@ -159,7 +159,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def call_num(self):
-        """Gets the call_num of this ShowApisOverviewResponse.
+        r"""Gets the call_num of this ShowApisOverviewResponse.
 
         调用总量
 
@@ -170,7 +170,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this ShowApisOverviewResponse.
+        r"""Sets the call_num of this ShowApisOverviewResponse.
 
         调用总量
 
@@ -181,7 +181,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def success_num(self):
-        """Gets the success_num of this ShowApisOverviewResponse.
+        r"""Gets the success_num of this ShowApisOverviewResponse.
 
         成功调用量(取数成功)
 
@@ -192,7 +192,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ShowApisOverviewResponse.
+        r"""Sets the success_num of this ShowApisOverviewResponse.
 
         成功调用量(取数成功)
 
@@ -203,7 +203,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this ShowApisOverviewResponse.
+        r"""Gets the fail_num of this ShowApisOverviewResponse.
 
         失败调用量(取数失败)
 
@@ -214,7 +214,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this ShowApisOverviewResponse.
+        r"""Sets the fail_num of this ShowApisOverviewResponse.
 
         失败调用量(取数失败)
 
@@ -225,7 +225,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def legal_num(self):
-        """Gets the legal_num of this ShowApisOverviewResponse.
+        r"""Gets the legal_num of this ShowApisOverviewResponse.
 
         合法调用量(通过校验)
 
@@ -236,7 +236,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @legal_num.setter
     def legal_num(self, legal_num):
-        """Sets the legal_num of this ShowApisOverviewResponse.
+        r"""Sets the legal_num of this ShowApisOverviewResponse.
 
         合法调用量(通过校验)
 
@@ -247,7 +247,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @property
     def illegal_num(self):
-        """Gets the illegal_num of this ShowApisOverviewResponse.
+        r"""Gets the illegal_num of this ShowApisOverviewResponse.
 
         非法调用量(无法通过校验)
 
@@ -258,7 +258,7 @@ class ShowApisOverviewResponse(SdkResponse):
 
     @illegal_num.setter
     def illegal_num(self, illegal_num):
-        """Sets the illegal_num of this ShowApisOverviewResponse.
+        r"""Sets the illegal_num of this ShowApisOverviewResponse.
 
         非法调用量(无法通过校验)
 

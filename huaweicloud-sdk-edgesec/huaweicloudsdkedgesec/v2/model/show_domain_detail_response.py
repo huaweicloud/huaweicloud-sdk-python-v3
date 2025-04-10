@@ -40,7 +40,7 @@ class ShowDomainDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, domain_name=None, enterprise_project_id=None, description=None, policy_id=None, protect_status=None, create_time=None, update_time=None):
-        """ShowDomainDetailResponse
+        r"""ShowDomainDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDomainDetailResponse.
+        r"""Gets the id of this ShowDomainDetailResponse.
 
         域名id
 
@@ -104,7 +104,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDomainDetailResponse.
+        r"""Sets the id of this ShowDomainDetailResponse.
 
         域名id
 
@@ -115,7 +115,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainDetailResponse.
+        r"""Gets the domain_name of this ShowDomainDetailResponse.
 
         域名
 
@@ -126,7 +126,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainDetailResponse.
+        r"""Sets the domain_name of this ShowDomainDetailResponse.
 
         域名
 
@@ -137,7 +137,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainDetailResponse.
+        r"""Gets the enterprise_project_id of this ShowDomainDetailResponse.
 
         企业项目id
 
@@ -148,7 +148,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainDetailResponse.
+        r"""Sets the enterprise_project_id of this ShowDomainDetailResponse.
 
         企业项目id
 
@@ -159,7 +159,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDomainDetailResponse.
+        r"""Gets the description of this ShowDomainDetailResponse.
 
         域名描述
 
@@ -170,7 +170,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDomainDetailResponse.
+        r"""Sets the description of this ShowDomainDetailResponse.
 
         域名描述
 
@@ -181,7 +181,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowDomainDetailResponse.
+        r"""Gets the policy_id of this ShowDomainDetailResponse.
 
         策略id
 
@@ -192,7 +192,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowDomainDetailResponse.
+        r"""Sets the policy_id of this ShowDomainDetailResponse.
 
         策略id
 
@@ -203,7 +203,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ShowDomainDetailResponse.
+        r"""Gets the protect_status of this ShowDomainDetailResponse.
 
         - 防护状态: - 防护中：on - 未防护：off
 
@@ -214,7 +214,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ShowDomainDetailResponse.
+        r"""Sets the protect_status of this ShowDomainDetailResponse.
 
         - 防护状态: - 防护中：on - 未防护：off
 
@@ -225,7 +225,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDomainDetailResponse.
+        r"""Gets the create_time of this ShowDomainDetailResponse.
 
         创建域名的时间
 
@@ -236,7 +236,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDomainDetailResponse.
+        r"""Sets the create_time of this ShowDomainDetailResponse.
 
         创建域名的时间
 
@@ -247,7 +247,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDomainDetailResponse.
+        r"""Gets the update_time of this ShowDomainDetailResponse.
 
         更新域名的时间
 
@@ -258,7 +258,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDomainDetailResponse.
+        r"""Sets the update_time of this ShowDomainDetailResponse.
 
         更新域名的时间
 

@@ -27,7 +27,7 @@ class PlatformTypeEnum:
     }
 
     def __init__(self):
-        """PlatformTypeEnum
+        r"""PlatformTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class DeleteVpcRouteRequest:
     }
 
     def __init__(self, route_id=None):
-        """DeleteVpcRouteRequest
+        r"""DeleteVpcRouteRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVpcRouteRequest:
 
     @property
     def route_id(self):
-        """Gets the route_id of this DeleteVpcRouteRequest.
+        r"""Gets the route_id of this DeleteVpcRouteRequest.
 
         路由ID
 
@@ -53,7 +53,7 @@ class DeleteVpcRouteRequest:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this DeleteVpcRouteRequest.
+        r"""Sets the route_id of this DeleteVpcRouteRequest.
 
         路由ID
 

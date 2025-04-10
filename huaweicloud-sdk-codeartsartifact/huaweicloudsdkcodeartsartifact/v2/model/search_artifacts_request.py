@@ -25,7 +25,7 @@ class SearchArtifactsRequest:
     }
 
     def __init__(self, body=None):
-        """SearchArtifactsRequest
+        r"""SearchArtifactsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SearchArtifactsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchArtifactsRequest.
+        r"""Gets the body of this SearchArtifactsRequest.
 
         :return: The body of this SearchArtifactsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepoSearchDO`
@@ -52,7 +52,7 @@ class SearchArtifactsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchArtifactsRequest.
+        r"""Sets the body of this SearchArtifactsRequest.
 
         :param body: The body of this SearchArtifactsRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepoSearchDO`

@@ -27,7 +27,7 @@ class Attachment:
     }
 
     def __init__(self, attach=None, attach_type=None):
-        """Attachment
+        r"""Attachment
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Attachment:
 
     @property
     def attach(self):
-        """Gets the attach of this Attachment.
+        r"""Gets the attach of this Attachment.
 
         目标。
 
@@ -59,7 +59,7 @@ class Attachment:
 
     @attach.setter
     def attach(self, attach):
-        """Sets the attach of this Attachment.
+        r"""Sets the attach of this Attachment.
 
         目标。
 
@@ -70,7 +70,7 @@ class Attachment:
 
     @property
     def attach_type(self):
-        """Gets the attach_type of this Attachment.
+        r"""Gets the attach_type of this Attachment.
 
         :return: The attach_type of this Attachment.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
@@ -79,7 +79,7 @@ class Attachment:
 
     @attach_type.setter
     def attach_type(self, attach_type):
-        """Sets the attach_type of this Attachment.
+        r"""Sets the attach_type of this Attachment.
 
         :param attach_type: The attach_type of this Attachment.
         :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`

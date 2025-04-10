@@ -25,7 +25,7 @@ class StopCbhRequestBody:
     }
 
     def __init__(self, instance_id=None):
-        """StopCbhRequestBody
+        r"""StopCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopCbhRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StopCbhRequestBody.
+        r"""Gets the instance_id of this StopCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式。
 
@@ -53,7 +53,7 @@ class StopCbhRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StopCbhRequestBody.
+        r"""Sets the instance_id of this StopCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式。
 

@@ -27,7 +27,7 @@ class DeleteRoleRequest:
     }
 
     def __init__(self, instance_id=None, role_name=None):
-        """DeleteRoleRequest
+        r"""DeleteRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRoleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteRoleRequest.
+        r"""Gets the instance_id of this DeleteRoleRequest.
 
         实例Id
 
@@ -59,7 +59,7 @@ class DeleteRoleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteRoleRequest.
+        r"""Sets the instance_id of this DeleteRoleRequest.
 
         实例Id
 
@@ -70,7 +70,7 @@ class DeleteRoleRequest:
 
     @property
     def role_name(self):
-        """Gets the role_name of this DeleteRoleRequest.
+        r"""Gets the role_name of this DeleteRoleRequest.
 
         角色名称
 
@@ -81,7 +81,7 @@ class DeleteRoleRequest:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this DeleteRoleRequest.
+        r"""Sets the role_name of this DeleteRoleRequest.
 
         角色名称
 

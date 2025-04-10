@@ -29,7 +29,7 @@ class BatchDeleteProgramsRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, body=None):
-        """BatchDeleteProgramsRequest
+        r"""BatchDeleteProgramsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchDeleteProgramsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchDeleteProgramsRequest.
+        r"""Gets the x_request_id of this BatchDeleteProgramsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -68,7 +68,7 @@ class BatchDeleteProgramsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchDeleteProgramsRequest.
+        r"""Sets the x_request_id of this BatchDeleteProgramsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -79,7 +79,7 @@ class BatchDeleteProgramsRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this BatchDeleteProgramsRequest.
+        r"""Gets the accept_language of this BatchDeleteProgramsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -90,7 +90,7 @@ class BatchDeleteProgramsRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this BatchDeleteProgramsRequest.
+        r"""Sets the accept_language of this BatchDeleteProgramsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -101,7 +101,7 @@ class BatchDeleteProgramsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteProgramsRequest.
+        r"""Gets the body of this BatchDeleteProgramsRequest.
 
         :return: The body of this BatchDeleteProgramsRequest.
         :rtype: list[str]
@@ -110,7 +110,7 @@ class BatchDeleteProgramsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteProgramsRequest.
+        r"""Sets the body of this BatchDeleteProgramsRequest.
 
         :param body: The body of this BatchDeleteProgramsRequest.
         :type body: list[str]

@@ -24,7 +24,7 @@ class DeleteVpcChannelV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVpcChannelV2Response
+        r"""DeleteVpcChannelV2Response
 
         The model defined in huaweicloud sdk
 

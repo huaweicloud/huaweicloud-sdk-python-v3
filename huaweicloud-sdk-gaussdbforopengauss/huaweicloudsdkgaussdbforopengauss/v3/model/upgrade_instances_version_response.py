@@ -34,7 +34,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
     }
 
     def __init__(self, job_ids=None, succeeded_num=None, failed_num=None, failed_instance_ids=None, error_messages=None):
-        """UpgradeInstancesVersionResponse
+        r"""UpgradeInstancesVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this UpgradeInstancesVersionResponse.
+        r"""Gets the job_ids of this UpgradeInstancesVersionResponse.
 
         任务id。
 
@@ -83,7 +83,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this UpgradeInstancesVersionResponse.
+        r"""Sets the job_ids of this UpgradeInstancesVersionResponse.
 
         任务id。
 
@@ -94,7 +94,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @property
     def succeeded_num(self):
-        """Gets the succeeded_num of this UpgradeInstancesVersionResponse.
+        r"""Gets the succeeded_num of this UpgradeInstancesVersionResponse.
 
         下发成功的实例数量。
 
@@ -105,7 +105,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @succeeded_num.setter
     def succeeded_num(self, succeeded_num):
-        """Sets the succeeded_num of this UpgradeInstancesVersionResponse.
+        r"""Sets the succeeded_num of this UpgradeInstancesVersionResponse.
 
         下发成功的实例数量。
 
@@ -116,7 +116,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this UpgradeInstancesVersionResponse.
+        r"""Gets the failed_num of this UpgradeInstancesVersionResponse.
 
         下发失败的实例数量。
 
@@ -127,7 +127,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this UpgradeInstancesVersionResponse.
+        r"""Sets the failed_num of this UpgradeInstancesVersionResponse.
 
         下发失败的实例数量。
 
@@ -138,7 +138,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @property
     def failed_instance_ids(self):
-        """Gets the failed_instance_ids of this UpgradeInstancesVersionResponse.
+        r"""Gets the failed_instance_ids of this UpgradeInstancesVersionResponse.
 
         下发失败的实例ID列表。
 
@@ -149,7 +149,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @failed_instance_ids.setter
     def failed_instance_ids(self, failed_instance_ids):
-        """Sets the failed_instance_ids of this UpgradeInstancesVersionResponse.
+        r"""Sets the failed_instance_ids of this UpgradeInstancesVersionResponse.
 
         下发失败的实例ID列表。
 
@@ -160,7 +160,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @property
     def error_messages(self):
-        """Gets the error_messages of this UpgradeInstancesVersionResponse.
+        r"""Gets the error_messages of this UpgradeInstancesVersionResponse.
 
         下发失败错误信息列表。
 
@@ -171,7 +171,7 @@ class UpgradeInstancesVersionResponse(SdkResponse):
 
     @error_messages.setter
     def error_messages(self, error_messages):
-        """Sets the error_messages of this UpgradeInstancesVersionResponse.
+        r"""Sets the error_messages of this UpgradeInstancesVersionResponse.
 
         下发失败错误信息列表。
 

@@ -67,7 +67,7 @@ class ClientSpanInfo:
     }
 
     def __init__(self, global_trace_id=None, global_path=None, trace_id=None, span_id=None, env_id=None, instance_id=None, app_id=None, biz_id=None, domain_id=None, source=None, real_source=None, start_time=None, time_used=None, code=None, class_name=None, is_async=None, tags=None, has_error=None, error_reasons=None, type=None, http_method=None, biz_code=None):
-        """ClientSpanInfo
+        r"""ClientSpanInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ClientSpanInfo:
 
     @property
     def global_trace_id(self):
-        """Gets the global_trace_id of this ClientSpanInfo.
+        r"""Gets the global_trace_id of this ClientSpanInfo.
 
         vTraceId，虚拟traceI。
 
@@ -201,7 +201,7 @@ class ClientSpanInfo:
 
     @global_trace_id.setter
     def global_trace_id(self, global_trace_id):
-        """Sets the global_trace_id of this ClientSpanInfo.
+        r"""Sets the global_trace_id of this ClientSpanInfo.
 
         vTraceId，虚拟traceI。
 
@@ -212,7 +212,7 @@ class ClientSpanInfo:
 
     @property
     def global_path(self):
-        """Gets the global_path of this ClientSpanInfo.
+        r"""Gets the global_path of this ClientSpanInfo.
 
         虚拟traceId经过的path路径。
 
@@ -223,7 +223,7 @@ class ClientSpanInfo:
 
     @global_path.setter
     def global_path(self, global_path):
-        """Sets the global_path of this ClientSpanInfo.
+        r"""Sets the global_path of this ClientSpanInfo.
 
         虚拟traceId经过的path路径。
 
@@ -234,7 +234,7 @@ class ClientSpanInfo:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ClientSpanInfo.
+        r"""Gets the trace_id of this ClientSpanInfo.
 
         traceId。
 
@@ -245,7 +245,7 @@ class ClientSpanInfo:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ClientSpanInfo.
+        r"""Sets the trace_id of this ClientSpanInfo.
 
         traceId。
 
@@ -256,7 +256,7 @@ class ClientSpanInfo:
 
     @property
     def span_id(self):
-        """Gets the span_id of this ClientSpanInfo.
+        r"""Gets the span_id of this ClientSpanInfo.
 
         span id。
 
@@ -267,7 +267,7 @@ class ClientSpanInfo:
 
     @span_id.setter
     def span_id(self, span_id):
-        """Sets the span_id of this ClientSpanInfo.
+        r"""Sets the span_id of this ClientSpanInfo.
 
         span id。
 
@@ -278,7 +278,7 @@ class ClientSpanInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ClientSpanInfo.
+        r"""Gets the env_id of this ClientSpanInfo.
 
         环境Iid。
 
@@ -289,7 +289,7 @@ class ClientSpanInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ClientSpanInfo.
+        r"""Sets the env_id of this ClientSpanInfo.
 
         环境Iid。
 
@@ -300,7 +300,7 @@ class ClientSpanInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ClientSpanInfo.
+        r"""Gets the instance_id of this ClientSpanInfo.
 
         实例id。
 
@@ -311,7 +311,7 @@ class ClientSpanInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ClientSpanInfo.
+        r"""Sets the instance_id of this ClientSpanInfo.
 
         实例id。
 
@@ -322,7 +322,7 @@ class ClientSpanInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ClientSpanInfo.
+        r"""Gets the app_id of this ClientSpanInfo.
 
         组件id。
 
@@ -333,7 +333,7 @@ class ClientSpanInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ClientSpanInfo.
+        r"""Sets the app_id of this ClientSpanInfo.
 
         组件id。
 
@@ -344,7 +344,7 @@ class ClientSpanInfo:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this ClientSpanInfo.
+        r"""Gets the biz_id of this ClientSpanInfo.
 
         应用id。
 
@@ -355,7 +355,7 @@ class ClientSpanInfo:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this ClientSpanInfo.
+        r"""Sets the biz_id of this ClientSpanInfo.
 
         应用id。
 
@@ -366,7 +366,7 @@ class ClientSpanInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ClientSpanInfo.
+        r"""Gets the domain_id of this ClientSpanInfo.
 
         租户id。
 
@@ -377,7 +377,7 @@ class ClientSpanInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ClientSpanInfo.
+        r"""Sets the domain_id of this ClientSpanInfo.
 
         租户id。
 
@@ -388,7 +388,7 @@ class ClientSpanInfo:
 
     @property
     def source(self):
-        """Gets the source of this ClientSpanInfo.
+        r"""Gets the source of this ClientSpanInfo.
 
         只有是根event也就是span的时候有值。
 
@@ -399,7 +399,7 @@ class ClientSpanInfo:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ClientSpanInfo.
+        r"""Sets the source of this ClientSpanInfo.
 
         只有是根event也就是span的时候有值。
 
@@ -410,7 +410,7 @@ class ClientSpanInfo:
 
     @property
     def real_source(self):
-        """Gets the real_source of this ClientSpanInfo.
+        r"""Gets the real_source of this ClientSpanInfo.
 
         根event 的时候存在，实际调用的url。
 
@@ -421,7 +421,7 @@ class ClientSpanInfo:
 
     @real_source.setter
     def real_source(self, real_source):
-        """Sets the real_source of this ClientSpanInfo.
+        r"""Sets the real_source of this ClientSpanInfo.
 
         根event 的时候存在，实际调用的url。
 
@@ -432,7 +432,7 @@ class ClientSpanInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ClientSpanInfo.
+        r"""Gets the start_time of this ClientSpanInfo.
 
         开始时间。
 
@@ -443,7 +443,7 @@ class ClientSpanInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ClientSpanInfo.
+        r"""Sets the start_time of this ClientSpanInfo.
 
         开始时间。
 
@@ -454,7 +454,7 @@ class ClientSpanInfo:
 
     @property
     def time_used(self):
-        """Gets the time_used of this ClientSpanInfo.
+        r"""Gets the time_used of this ClientSpanInfo.
 
         耗时。
 
@@ -465,7 +465,7 @@ class ClientSpanInfo:
 
     @time_used.setter
     def time_used(self, time_used):
-        """Sets the time_used of this ClientSpanInfo.
+        r"""Sets the time_used of this ClientSpanInfo.
 
         耗时。
 
@@ -476,7 +476,7 @@ class ClientSpanInfo:
 
     @property
     def code(self):
-        """Gets the code of this ClientSpanInfo.
+        r"""Gets the code of this ClientSpanInfo.
 
         状态码，针对http的调用有效。
 
@@ -487,7 +487,7 @@ class ClientSpanInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ClientSpanInfo.
+        r"""Sets the code of this ClientSpanInfo.
 
         状态码，针对http的调用有效。
 
@@ -498,7 +498,7 @@ class ClientSpanInfo:
 
     @property
     def class_name(self):
-        """Gets the class_name of this ClientSpanInfo.
+        r"""Gets the class_name of this ClientSpanInfo.
 
         类名。
 
@@ -509,7 +509,7 @@ class ClientSpanInfo:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this ClientSpanInfo.
+        r"""Sets the class_name of this ClientSpanInfo.
 
         类名。
 
@@ -520,7 +520,7 @@ class ClientSpanInfo:
 
     @property
     def is_async(self):
-        """Gets the is_async of this ClientSpanInfo.
+        r"""Gets the is_async of this ClientSpanInfo.
 
         是否异步。
 
@@ -531,7 +531,7 @@ class ClientSpanInfo:
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this ClientSpanInfo.
+        r"""Sets the is_async of this ClientSpanInfo.
 
         是否异步。
 
@@ -542,7 +542,7 @@ class ClientSpanInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this ClientSpanInfo.
+        r"""Gets the tags of this ClientSpanInfo.
 
         包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
@@ -553,7 +553,7 @@ class ClientSpanInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClientSpanInfo.
+        r"""Sets the tags of this ClientSpanInfo.
 
         包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
@@ -564,7 +564,7 @@ class ClientSpanInfo:
 
     @property
     def has_error(self):
-        """Gets the has_error of this ClientSpanInfo.
+        r"""Gets the has_error of this ClientSpanInfo.
 
         是否报错。
 
@@ -575,7 +575,7 @@ class ClientSpanInfo:
 
     @has_error.setter
     def has_error(self, has_error):
-        """Sets the has_error of this ClientSpanInfo.
+        r"""Sets the has_error of this ClientSpanInfo.
 
         是否报错。
 
@@ -586,7 +586,7 @@ class ClientSpanInfo:
 
     @property
     def error_reasons(self):
-        """Gets the error_reasons of this ClientSpanInfo.
+        r"""Gets the error_reasons of this ClientSpanInfo.
 
         报错原因。
 
@@ -597,7 +597,7 @@ class ClientSpanInfo:
 
     @error_reasons.setter
     def error_reasons(self, error_reasons):
-        """Sets the error_reasons of this ClientSpanInfo.
+        r"""Sets the error_reasons of this ClientSpanInfo.
 
         报错原因。
 
@@ -608,7 +608,7 @@ class ClientSpanInfo:
 
     @property
     def type(self):
-        """Gets the type of this ClientSpanInfo.
+        r"""Gets the type of this ClientSpanInfo.
 
         类型，mysql，kafka等。
 
@@ -619,7 +619,7 @@ class ClientSpanInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClientSpanInfo.
+        r"""Sets the type of this ClientSpanInfo.
 
         类型，mysql，kafka等。
 
@@ -630,7 +630,7 @@ class ClientSpanInfo:
 
     @property
     def http_method(self):
-        """Gets the http_method of this ClientSpanInfo.
+        r"""Gets the http_method of this ClientSpanInfo.
 
         这里的method实际上是tags里面的http_method，只有url监控项才有。
 
@@ -641,7 +641,7 @@ class ClientSpanInfo:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this ClientSpanInfo.
+        r"""Sets the http_method of this ClientSpanInfo.
 
         这里的method实际上是tags里面的http_method，只有url监控项才有。
 
@@ -652,7 +652,7 @@ class ClientSpanInfo:
 
     @property
     def biz_code(self):
-        """Gets the biz_code of this ClientSpanInfo.
+        r"""Gets the biz_code of this ClientSpanInfo.
 
         业务状态码的采集。
 
@@ -663,7 +663,7 @@ class ClientSpanInfo:
 
     @biz_code.setter
     def biz_code(self, biz_code):
-        """Sets the biz_code of this ClientSpanInfo.
+        r"""Sets the biz_code of this ClientSpanInfo.
 
         业务状态码的采集。
 

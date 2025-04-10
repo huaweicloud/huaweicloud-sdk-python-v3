@@ -28,7 +28,7 @@ class ShowConfigMapResponse(SdkResponse):
     }
 
     def __init__(self, configmap=None, workspace_id=None):
-        """ShowConfigMapResponse
+        r"""ShowConfigMapResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowConfigMapResponse(SdkResponse):
 
     @property
     def configmap(self):
-        """Gets the configmap of this ShowConfigMapResponse.
+        r"""Gets the configmap of this ShowConfigMapResponse.
 
         :return: The configmap of this ShowConfigMapResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.ConfigMap`
@@ -60,7 +60,7 @@ class ShowConfigMapResponse(SdkResponse):
 
     @configmap.setter
     def configmap(self, configmap):
-        """Sets the configmap of this ShowConfigMapResponse.
+        r"""Sets the configmap of this ShowConfigMapResponse.
 
         :param configmap: The configmap of this ShowConfigMapResponse.
         :type configmap: :class:`huaweicloudsdkhilens.v3.ConfigMap`
@@ -69,7 +69,7 @@ class ShowConfigMapResponse(SdkResponse):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowConfigMapResponse.
+        r"""Gets the workspace_id of this ShowConfigMapResponse.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -80,7 +80,7 @@ class ShowConfigMapResponse(SdkResponse):
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowConfigMapResponse.
+        r"""Sets the workspace_id of this ShowConfigMapResponse.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 

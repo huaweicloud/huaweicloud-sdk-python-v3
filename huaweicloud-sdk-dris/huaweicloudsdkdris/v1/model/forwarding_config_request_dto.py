@@ -27,7 +27,7 @@ class ForwardingConfigRequestDTO:
     }
 
     def __init__(self, kafka_config=None, mrs_kafka_config=None):
-        """ForwardingConfigRequestDTO
+        r"""ForwardingConfigRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ForwardingConfigRequestDTO:
 
     @property
     def kafka_config(self):
-        """Gets the kafka_config of this ForwardingConfigRequestDTO.
+        r"""Gets the kafka_config of this ForwardingConfigRequestDTO.
 
         :return: The kafka_config of this ForwardingConfigRequestDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.KafkaConfigRequestDTO`
@@ -59,7 +59,7 @@ class ForwardingConfigRequestDTO:
 
     @kafka_config.setter
     def kafka_config(self, kafka_config):
-        """Sets the kafka_config of this ForwardingConfigRequestDTO.
+        r"""Sets the kafka_config of this ForwardingConfigRequestDTO.
 
         :param kafka_config: The kafka_config of this ForwardingConfigRequestDTO.
         :type kafka_config: :class:`huaweicloudsdkdris.v1.KafkaConfigRequestDTO`
@@ -68,7 +68,7 @@ class ForwardingConfigRequestDTO:
 
     @property
     def mrs_kafka_config(self):
-        """Gets the mrs_kafka_config of this ForwardingConfigRequestDTO.
+        r"""Gets the mrs_kafka_config of this ForwardingConfigRequestDTO.
 
         :return: The mrs_kafka_config of this ForwardingConfigRequestDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.MrsKafkaConfigRequestDTO`
@@ -77,7 +77,7 @@ class ForwardingConfigRequestDTO:
 
     @mrs_kafka_config.setter
     def mrs_kafka_config(self, mrs_kafka_config):
-        """Sets the mrs_kafka_config of this ForwardingConfigRequestDTO.
+        r"""Sets the mrs_kafka_config of this ForwardingConfigRequestDTO.
 
         :param mrs_kafka_config: The mrs_kafka_config of this ForwardingConfigRequestDTO.
         :type mrs_kafka_config: :class:`huaweicloudsdkdris.v1.MrsKafkaConfigRequestDTO`

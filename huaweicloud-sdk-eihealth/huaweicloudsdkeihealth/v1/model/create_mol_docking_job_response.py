@@ -28,7 +28,7 @@ class CreateMolDockingJobResponse(SdkResponse):
     }
 
     def __init__(self, vina_score=None, pose=None):
-        """CreateMolDockingJobResponse
+        r"""CreateMolDockingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateMolDockingJobResponse(SdkResponse):
 
     @property
     def vina_score(self):
-        """Gets the vina_score of this CreateMolDockingJobResponse.
+        r"""Gets the vina_score of this CreateMolDockingJobResponse.
 
         对接打分结果。
 
@@ -62,7 +62,7 @@ class CreateMolDockingJobResponse(SdkResponse):
 
     @vina_score.setter
     def vina_score(self, vina_score):
-        """Sets the vina_score of this CreateMolDockingJobResponse.
+        r"""Sets the vina_score of this CreateMolDockingJobResponse.
 
         对接打分结果。
 
@@ -73,7 +73,7 @@ class CreateMolDockingJobResponse(SdkResponse):
 
     @property
     def pose(self):
-        """Gets the pose of this CreateMolDockingJobResponse.
+        r"""Gets the pose of this CreateMolDockingJobResponse.
 
         对接构象。
 
@@ -84,7 +84,7 @@ class CreateMolDockingJobResponse(SdkResponse):
 
     @pose.setter
     def pose(self, pose):
-        """Sets the pose of this CreateMolDockingJobResponse.
+        r"""Sets the pose of this CreateMolDockingJobResponse.
 
         对接构象。
 

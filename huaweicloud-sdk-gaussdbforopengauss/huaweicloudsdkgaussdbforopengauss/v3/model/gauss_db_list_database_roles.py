@@ -31,7 +31,7 @@ class GaussDBListDatabaseRoles:
     }
 
     def __init__(self, name=None, memberof=None, lock_status=None, attribute=None):
-        """GaussDBListDatabaseRoles
+        r"""GaussDBListDatabaseRoles
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class GaussDBListDatabaseRoles:
 
     @property
     def name(self):
-        """Gets the name of this GaussDBListDatabaseRoles.
+        r"""Gets the name of this GaussDBListDatabaseRoles.
 
         数据库用户/角色名。
 
@@ -74,7 +74,7 @@ class GaussDBListDatabaseRoles:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussDBListDatabaseRoles.
+        r"""Sets the name of this GaussDBListDatabaseRoles.
 
         数据库用户/角色名。
 
@@ -85,7 +85,7 @@ class GaussDBListDatabaseRoles:
 
     @property
     def memberof(self):
-        """Gets the memberof of this GaussDBListDatabaseRoles.
+        r"""Gets the memberof of this GaussDBListDatabaseRoles.
 
         用户/角色的默认权限。
 
@@ -96,7 +96,7 @@ class GaussDBListDatabaseRoles:
 
     @memberof.setter
     def memberof(self, memberof):
-        """Sets the memberof of this GaussDBListDatabaseRoles.
+        r"""Sets the memberof of this GaussDBListDatabaseRoles.
 
         用户/角色的默认权限。
 
@@ -107,7 +107,7 @@ class GaussDBListDatabaseRoles:
 
     @property
     def lock_status(self):
-        """Gets the lock_status of this GaussDBListDatabaseRoles.
+        r"""Gets the lock_status of this GaussDBListDatabaseRoles.
 
         用户/角色是否被锁。
 
@@ -118,7 +118,7 @@ class GaussDBListDatabaseRoles:
 
     @lock_status.setter
     def lock_status(self, lock_status):
-        """Sets the lock_status of this GaussDBListDatabaseRoles.
+        r"""Sets the lock_status of this GaussDBListDatabaseRoles.
 
         用户/角色是否被锁。
 
@@ -129,7 +129,7 @@ class GaussDBListDatabaseRoles:
 
     @property
     def attribute(self):
-        """Gets the attribute of this GaussDBListDatabaseRoles.
+        r"""Gets the attribute of this GaussDBListDatabaseRoles.
 
         :return: The attribute of this GaussDBListDatabaseRoles.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBListDatabaseRolesPriv`
@@ -138,7 +138,7 @@ class GaussDBListDatabaseRoles:
 
     @attribute.setter
     def attribute(self, attribute):
-        """Sets the attribute of this GaussDBListDatabaseRoles.
+        r"""Sets the attribute of this GaussDBListDatabaseRoles.
 
         :param attribute: The attribute of this GaussDBListDatabaseRoles.
         :type attribute: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBListDatabaseRolesPriv`

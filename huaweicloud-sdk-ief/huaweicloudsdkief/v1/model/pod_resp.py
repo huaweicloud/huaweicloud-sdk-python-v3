@@ -47,7 +47,7 @@ class PodResp:
     }
 
     def __init__(self, id=None, name=None, configs=None, init_containers=None, containers=None, node_id=None, deployment_id=None, project_id=None, reason=None, message=None, created_at=None, state=None):
-        """PodResp
+        r"""PodResp
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class PodResp:
 
     @property
     def id(self):
-        """Gets the id of this PodResp.
+        r"""Gets the id of this PodResp.
 
         应用实例uuid
 
@@ -120,7 +120,7 @@ class PodResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PodResp.
+        r"""Sets the id of this PodResp.
 
         应用实例uuid
 
@@ -131,7 +131,7 @@ class PodResp:
 
     @property
     def name(self):
-        """Gets the name of this PodResp.
+        r"""Gets the name of this PodResp.
 
         应用实例名称
 
@@ -142,7 +142,7 @@ class PodResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PodResp.
+        r"""Sets the name of this PodResp.
 
         应用实例名称
 
@@ -153,7 +153,7 @@ class PodResp:
 
     @property
     def configs(self):
-        """Gets the configs of this PodResp.
+        r"""Gets the configs of this PodResp.
 
         :return: The configs of this PodResp.
         :rtype: :class:`huaweicloudsdkief.v1.PodConfigs`
@@ -162,7 +162,7 @@ class PodResp:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this PodResp.
+        r"""Sets the configs of this PodResp.
 
         :param configs: The configs of this PodResp.
         :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
@@ -171,7 +171,7 @@ class PodResp:
 
     @property
     def init_containers(self):
-        """Gets the init_containers of this PodResp.
+        r"""Gets the init_containers of this PodResp.
 
         应用实例init容器
 
@@ -182,7 +182,7 @@ class PodResp:
 
     @init_containers.setter
     def init_containers(self, init_containers):
-        """Sets the init_containers of this PodResp.
+        r"""Sets the init_containers of this PodResp.
 
         应用实例init容器
 
@@ -193,7 +193,7 @@ class PodResp:
 
     @property
     def containers(self):
-        """Gets the containers of this PodResp.
+        r"""Gets the containers of this PodResp.
 
         应用实例业务容器
 
@@ -204,7 +204,7 @@ class PodResp:
 
     @containers.setter
     def containers(self, containers):
-        """Sets the containers of this PodResp.
+        r"""Sets the containers of this PodResp.
 
         应用实例业务容器
 
@@ -215,7 +215,7 @@ class PodResp:
 
     @property
     def node_id(self):
-        """Gets the node_id of this PodResp.
+        r"""Gets the node_id of this PodResp.
 
         应用实例所在节点
 
@@ -226,7 +226,7 @@ class PodResp:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this PodResp.
+        r"""Sets the node_id of this PodResp.
 
         应用实例所在节点
 
@@ -237,7 +237,7 @@ class PodResp:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this PodResp.
+        r"""Gets the deployment_id of this PodResp.
 
         应用ID
 
@@ -248,7 +248,7 @@ class PodResp:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this PodResp.
+        r"""Sets the deployment_id of this PodResp.
 
         应用ID
 
@@ -259,7 +259,7 @@ class PodResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PodResp.
+        r"""Gets the project_id of this PodResp.
 
         项目ID
 
@@ -270,7 +270,7 @@ class PodResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PodResp.
+        r"""Sets the project_id of this PodResp.
 
         项目ID
 
@@ -281,7 +281,7 @@ class PodResp:
 
     @property
     def reason(self):
-        """Gets the reason of this PodResp.
+        r"""Gets the reason of this PodResp.
 
         应用实例故障原因
 
@@ -292,7 +292,7 @@ class PodResp:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this PodResp.
+        r"""Sets the reason of this PodResp.
 
         应用实例故障原因
 
@@ -303,7 +303,7 @@ class PodResp:
 
     @property
     def message(self):
-        """Gets the message of this PodResp.
+        r"""Gets the message of this PodResp.
 
         应用实例故障详情
 
@@ -314,7 +314,7 @@ class PodResp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PodResp.
+        r"""Sets the message of this PodResp.
 
         应用实例故障详情
 
@@ -325,7 +325,7 @@ class PodResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PodResp.
+        r"""Gets the created_at of this PodResp.
 
         应用实例创建时间
 
@@ -336,7 +336,7 @@ class PodResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PodResp.
+        r"""Sets the created_at of this PodResp.
 
         应用实例创建时间
 
@@ -347,7 +347,7 @@ class PodResp:
 
     @property
     def state(self):
-        """Gets the state of this PodResp.
+        r"""Gets the state of this PodResp.
 
         应用实例状态： - RUNNING：实例运行中 - PENDING：实例等待创建 - SUCCEEDED：实例执行成功 - FAILED：实例运行失败 - CREATE_FAIL：实例创建失败 - TERMINATING：实例终止中 - PENDING_DELETE：实例等待删除 - DELETE_FAILED：实例删除失败 - FREEZE：实例冻结 - UNKNOWN：实例状态未知
 
@@ -358,7 +358,7 @@ class PodResp:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PodResp.
+        r"""Sets the state of this PodResp.
 
         应用实例状态： - RUNNING：实例运行中 - PENDING：实例等待创建 - SUCCEEDED：实例执行成功 - FAILED：实例运行失败 - CREATE_FAIL：实例创建失败 - TERMINATING：实例终止中 - PENDING_DELETE：实例等待删除 - DELETE_FAILED：实例删除失败 - FREEZE：实例冻结 - UNKNOWN：实例状态未知
 

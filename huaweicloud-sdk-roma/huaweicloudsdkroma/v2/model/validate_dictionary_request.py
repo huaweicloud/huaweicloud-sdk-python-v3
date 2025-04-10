@@ -29,7 +29,7 @@ class ValidateDictionaryRequest:
     }
 
     def __init__(self, instance_id=None, name=None, code=None):
-        """ValidateDictionaryRequest
+        r"""ValidateDictionaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ValidateDictionaryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ValidateDictionaryRequest.
+        r"""Gets the instance_id of this ValidateDictionaryRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ValidateDictionaryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ValidateDictionaryRequest.
+        r"""Sets the instance_id of this ValidateDictionaryRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ValidateDictionaryRequest:
 
     @property
     def name(self):
-        """Gets the name of this ValidateDictionaryRequest.
+        r"""Gets the name of this ValidateDictionaryRequest.
 
         待校验是否重复的字典名称，精确匹配
 
@@ -89,7 +89,7 @@ class ValidateDictionaryRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValidateDictionaryRequest.
+        r"""Sets the name of this ValidateDictionaryRequest.
 
         待校验是否重复的字典名称，精确匹配
 
@@ -100,7 +100,7 @@ class ValidateDictionaryRequest:
 
     @property
     def code(self):
-        """Gets the code of this ValidateDictionaryRequest.
+        r"""Gets the code of this ValidateDictionaryRequest.
 
         待校验是否重复的字典编码，精确匹配
 
@@ -111,7 +111,7 @@ class ValidateDictionaryRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ValidateDictionaryRequest.
+        r"""Sets the code of this ValidateDictionaryRequest.
 
         待校验是否重复的字典编码，精确匹配
 

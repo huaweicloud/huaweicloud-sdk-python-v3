@@ -29,7 +29,7 @@ class CollectColumnsRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """CollectColumnsRequest
+        r"""CollectColumnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CollectColumnsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectColumnsRequest.
+        r"""Gets the job_id of this CollectColumnsRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class CollectColumnsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectColumnsRequest.
+        r"""Sets the job_id of this CollectColumnsRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class CollectColumnsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CollectColumnsRequest.
+        r"""Gets the x_language of this CollectColumnsRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CollectColumnsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CollectColumnsRequest.
+        r"""Sets the x_language of this CollectColumnsRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CollectColumnsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CollectColumnsRequest.
+        r"""Gets the body of this CollectColumnsRequest.
 
         :return: The body of this CollectColumnsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryColumnReq`
@@ -109,7 +109,7 @@ class CollectColumnsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectColumnsRequest.
+        r"""Sets the body of this CollectColumnsRequest.
 
         :param body: The body of this CollectColumnsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.QueryColumnReq`

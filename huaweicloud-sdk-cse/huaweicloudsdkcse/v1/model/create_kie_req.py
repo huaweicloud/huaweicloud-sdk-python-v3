@@ -35,7 +35,7 @@ class CreateKieReq:
     }
 
     def __init__(self, id=None, key=None, labels=None, value=None, value_type=None, status=None):
-        """CreateKieReq
+        r"""CreateKieReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateKieReq:
 
     @property
     def id(self):
-        """Gets the id of this CreateKieReq.
+        r"""Gets the id of this CreateKieReq.
 
         配置项的id。
 
@@ -89,7 +89,7 @@ class CreateKieReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateKieReq.
+        r"""Sets the id of this CreateKieReq.
 
         配置项的id。
 
@@ -100,7 +100,7 @@ class CreateKieReq:
 
     @property
     def key(self):
-        """Gets the key of this CreateKieReq.
+        r"""Gets the key of this CreateKieReq.
 
         配置项的key。
 
@@ -111,7 +111,7 @@ class CreateKieReq:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateKieReq.
+        r"""Sets the key of this CreateKieReq.
 
         配置项的key。
 
@@ -122,7 +122,7 @@ class CreateKieReq:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateKieReq.
+        r"""Gets the labels of this CreateKieReq.
 
         配置项的标签
 
@@ -133,7 +133,7 @@ class CreateKieReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateKieReq.
+        r"""Sets the labels of this CreateKieReq.
 
         配置项的标签
 
@@ -144,7 +144,7 @@ class CreateKieReq:
 
     @property
     def value(self):
-        """Gets the value of this CreateKieReq.
+        r"""Gets the value of this CreateKieReq.
 
         配置项的值。
 
@@ -155,7 +155,7 @@ class CreateKieReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateKieReq.
+        r"""Sets the value of this CreateKieReq.
 
         配置项的值。
 
@@ -166,7 +166,7 @@ class CreateKieReq:
 
     @property
     def value_type(self):
-        """Gets the value_type of this CreateKieReq.
+        r"""Gets the value_type of this CreateKieReq.
 
         配置项value的类型。
 
@@ -177,7 +177,7 @@ class CreateKieReq:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this CreateKieReq.
+        r"""Sets the value_type of this CreateKieReq.
 
         配置项value的类型。
 
@@ -188,7 +188,7 @@ class CreateKieReq:
 
     @property
     def status(self):
-        """Gets the status of this CreateKieReq.
+        r"""Gets the status of this CreateKieReq.
 
         配置项的状态。
 
@@ -199,7 +199,7 @@ class CreateKieReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateKieReq.
+        r"""Sets the status of this CreateKieReq.
 
         配置项的状态。
 

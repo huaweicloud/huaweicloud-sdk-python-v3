@@ -26,7 +26,7 @@ class SwitchSslResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SwitchSslResponse
+        r"""SwitchSslResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchSslResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SwitchSslResponse.
+        r"""Gets the body of this SwitchSslResponse.
 
         :return: The body of this SwitchSslResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class SwitchSslResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchSslResponse.
+        r"""Sets the body of this SwitchSslResponse.
 
         :param body: The body of this SwitchSslResponse.
         :type body: object

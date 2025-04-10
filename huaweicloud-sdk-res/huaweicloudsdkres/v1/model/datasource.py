@@ -33,7 +33,7 @@ class Datasource:
     }
 
     def __init__(self, datasource_name=None, workspace_id=None, datasource_id=None, status=None, created_at=None):
-        """Datasource
+        r"""Datasource
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class Datasource:
 
     @property
     def datasource_name(self):
-        """Gets the datasource_name of this Datasource.
+        r"""Gets the datasource_name of this Datasource.
 
         数据源名称。
 
@@ -80,7 +80,7 @@ class Datasource:
 
     @datasource_name.setter
     def datasource_name(self, datasource_name):
-        """Sets the datasource_name of this Datasource.
+        r"""Sets the datasource_name of this Datasource.
 
         数据源名称。
 
@@ -91,7 +91,7 @@ class Datasource:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this Datasource.
+        r"""Gets the workspace_id of this Datasource.
 
         工作空间id。
 
@@ -102,7 +102,7 @@ class Datasource:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this Datasource.
+        r"""Sets the workspace_id of this Datasource.
 
         工作空间id。
 
@@ -113,7 +113,7 @@ class Datasource:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this Datasource.
+        r"""Gets the datasource_id of this Datasource.
 
         数据源id。
 
@@ -124,7 +124,7 @@ class Datasource:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this Datasource.
+        r"""Sets the datasource_id of this Datasource.
 
         数据源id。
 
@@ -135,7 +135,7 @@ class Datasource:
 
     @property
     def status(self):
-        """Gets the status of this Datasource.
+        r"""Gets the status of this Datasource.
 
         状态。
 
@@ -146,7 +146,7 @@ class Datasource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Datasource.
+        r"""Sets the status of this Datasource.
 
         状态。
 
@@ -157,7 +157,7 @@ class Datasource:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Datasource.
+        r"""Gets the created_at of this Datasource.
 
         创建时间。
 
@@ -168,7 +168,7 @@ class Datasource:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Datasource.
+        r"""Sets the created_at of this Datasource.
 
         创建时间。
 

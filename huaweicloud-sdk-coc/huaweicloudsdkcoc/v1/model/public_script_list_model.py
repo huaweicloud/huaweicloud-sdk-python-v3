@@ -37,7 +37,7 @@ class PublicScriptListModel:
     }
 
     def __init__(self, id=None, script_uuid=None, name=None, type=None, gmt_created=None, description=None, properties=None):
-        """PublicScriptListModel
+        r"""PublicScriptListModel
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PublicScriptListModel:
 
     @property
     def id(self):
-        """Gets the id of this PublicScriptListModel.
+        r"""Gets the id of this PublicScriptListModel.
 
         脚本自增id
 
@@ -89,7 +89,7 @@ class PublicScriptListModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicScriptListModel.
+        r"""Sets the id of this PublicScriptListModel.
 
         脚本自增id
 
@@ -100,7 +100,7 @@ class PublicScriptListModel:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this PublicScriptListModel.
+        r"""Gets the script_uuid of this PublicScriptListModel.
 
         脚本uuid
 
@@ -111,7 +111,7 @@ class PublicScriptListModel:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this PublicScriptListModel.
+        r"""Sets the script_uuid of this PublicScriptListModel.
 
         脚本uuid
 
@@ -122,7 +122,7 @@ class PublicScriptListModel:
 
     @property
     def name(self):
-        """Gets the name of this PublicScriptListModel.
+        r"""Gets the name of this PublicScriptListModel.
 
         脚本名称
 
@@ -133,7 +133,7 @@ class PublicScriptListModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicScriptListModel.
+        r"""Sets the name of this PublicScriptListModel.
 
         脚本名称
 
@@ -144,7 +144,7 @@ class PublicScriptListModel:
 
     @property
     def type(self):
-        """Gets the type of this PublicScriptListModel.
+        r"""Gets the type of this PublicScriptListModel.
 
         脚本类型 SHELL:shell脚本 PYTHON:python脚本 BAT:bat脚本
 
@@ -155,7 +155,7 @@ class PublicScriptListModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicScriptListModel.
+        r"""Sets the type of this PublicScriptListModel.
 
         脚本类型 SHELL:shell脚本 PYTHON:python脚本 BAT:bat脚本
 
@@ -166,7 +166,7 @@ class PublicScriptListModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this PublicScriptListModel.
+        r"""Gets the gmt_created of this PublicScriptListModel.
 
         创建时间
 
@@ -177,7 +177,7 @@ class PublicScriptListModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this PublicScriptListModel.
+        r"""Sets the gmt_created of this PublicScriptListModel.
 
         创建时间
 
@@ -188,7 +188,7 @@ class PublicScriptListModel:
 
     @property
     def description(self):
-        """Gets the description of this PublicScriptListModel.
+        r"""Gets the description of this PublicScriptListModel.
 
         脚本描述： 根据X-Language(X-Language) 进行国际化
 
@@ -199,7 +199,7 @@ class PublicScriptListModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublicScriptListModel.
+        r"""Sets the description of this PublicScriptListModel.
 
         脚本描述： 根据X-Language(X-Language) 进行国际化
 
@@ -210,7 +210,7 @@ class PublicScriptListModel:
 
     @property
     def properties(self):
-        """Gets the properties of this PublicScriptListModel.
+        r"""Gets the properties of this PublicScriptListModel.
 
         :return: The properties of this PublicScriptListModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.PublicScriptPropertiesModel`
@@ -219,7 +219,7 @@ class PublicScriptListModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this PublicScriptListModel.
+        r"""Sets the properties of this PublicScriptListModel.
 
         :param properties: The properties of this PublicScriptListModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.PublicScriptPropertiesModel`

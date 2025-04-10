@@ -35,7 +35,7 @@ class PictureReviewRet:
     }
 
     def __init__(self, suggestion=None, offset=None, url=None, politics=None, terrorism=None, porn=None):
-        """PictureReviewRet
+        r"""PictureReviewRet
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class PictureReviewRet:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this PictureReviewRet.
+        r"""Gets the suggestion of this PictureReviewRet.
 
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
@@ -88,7 +88,7 @@ class PictureReviewRet:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this PictureReviewRet.
+        r"""Sets the suggestion of this PictureReviewRet.
 
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
@@ -99,7 +99,7 @@ class PictureReviewRet:
 
     @property
     def offset(self):
-        """Gets the offset of this PictureReviewRet.
+        r"""Gets the offset of this PictureReviewRet.
 
         截图在视频中的时间偏移值。封面不涉及此字段  单位：秒。
 
@@ -110,7 +110,7 @@ class PictureReviewRet:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this PictureReviewRet.
+        r"""Sets the offset of this PictureReviewRet.
 
         截图在视频中的时间偏移值。封面不涉及此字段  单位：秒。
 
@@ -121,7 +121,7 @@ class PictureReviewRet:
 
     @property
     def url(self):
-        """Gets the url of this PictureReviewRet.
+        r"""Gets the url of this PictureReviewRet.
 
         对应截图/封面的访问URL。
 
@@ -132,7 +132,7 @@ class PictureReviewRet:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PictureReviewRet.
+        r"""Sets the url of this PictureReviewRet.
 
         对应截图/封面的访问URL。
 
@@ -143,7 +143,7 @@ class PictureReviewRet:
 
     @property
     def politics(self):
-        """Gets the politics of this PictureReviewRet.
+        r"""Gets the politics of this PictureReviewRet.
 
         政治因素审核结果。
 
@@ -154,7 +154,7 @@ class PictureReviewRet:
 
     @politics.setter
     def politics(self, politics):
-        """Sets the politics of this PictureReviewRet.
+        r"""Sets the politics of this PictureReviewRet.
 
         政治因素审核结果。
 
@@ -165,7 +165,7 @@ class PictureReviewRet:
 
     @property
     def terrorism(self):
-        """Gets the terrorism of this PictureReviewRet.
+        r"""Gets the terrorism of this PictureReviewRet.
 
         暴恐元素审核结果。
 
@@ -176,7 +176,7 @@ class PictureReviewRet:
 
     @terrorism.setter
     def terrorism(self, terrorism):
-        """Sets the terrorism of this PictureReviewRet.
+        r"""Sets the terrorism of this PictureReviewRet.
 
         暴恐元素审核结果。
 
@@ -187,7 +187,7 @@ class PictureReviewRet:
 
     @property
     def porn(self):
-        """Gets the porn of this PictureReviewRet.
+        r"""Gets the porn of this PictureReviewRet.
 
         涉黄内容审核结果。
 
@@ -198,7 +198,7 @@ class PictureReviewRet:
 
     @porn.setter
     def porn(self, porn):
-        """Sets the porn of this PictureReviewRet.
+        r"""Sets the porn of this PictureReviewRet.
 
         涉黄内容审核结果。
 

@@ -31,7 +31,7 @@ class ShowPublicActionListRequest:
     }
 
     def __init__(self, prefix=None, category=None, offset=None, limit=None):
-        """ShowPublicActionListRequest
+        r"""ShowPublicActionListRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowPublicActionListRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ShowPublicActionListRequest.
+        r"""Gets the prefix of this ShowPublicActionListRequest.
 
         模板名前缀。
 
@@ -75,7 +75,7 @@ class ShowPublicActionListRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ShowPublicActionListRequest.
+        r"""Sets the prefix of this ShowPublicActionListRequest.
 
         模板名前缀。
 
@@ -86,7 +86,7 @@ class ShowPublicActionListRequest:
 
     @property
     def category(self):
-        """Gets the category of this ShowPublicActionListRequest.
+        r"""Gets the category of this ShowPublicActionListRequest.
 
         Action模板的分类。
 
@@ -97,7 +97,7 @@ class ShowPublicActionListRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowPublicActionListRequest.
+        r"""Sets the category of this ShowPublicActionListRequest.
 
         Action模板的分类。
 
@@ -108,7 +108,7 @@ class ShowPublicActionListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPublicActionListRequest.
+        r"""Gets the offset of this ShowPublicActionListRequest.
 
         查询的起始位置
 
@@ -119,7 +119,7 @@ class ShowPublicActionListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPublicActionListRequest.
+        r"""Sets the offset of this ShowPublicActionListRequest.
 
         查询的起始位置
 
@@ -130,7 +130,7 @@ class ShowPublicActionListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPublicActionListRequest.
+        r"""Gets the limit of this ShowPublicActionListRequest.
 
         一次查询返回的最大条数
 
@@ -141,7 +141,7 @@ class ShowPublicActionListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPublicActionListRequest.
+        r"""Sets the limit of this ShowPublicActionListRequest.
 
         一次查询返回的最大条数
 

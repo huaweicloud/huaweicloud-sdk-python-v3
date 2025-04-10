@@ -25,7 +25,7 @@ class CancelSelfGrantRequest:
     }
 
     def __init__(self, body=None):
-        """CancelSelfGrantRequest
+        r"""CancelSelfGrantRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CancelSelfGrantRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelSelfGrantRequest.
+        r"""Gets the body of this CancelSelfGrantRequest.
 
         :return: The body of this CancelSelfGrantRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`
@@ -52,7 +52,7 @@ class CancelSelfGrantRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelSelfGrantRequest.
+        r"""Sets the body of this CancelSelfGrantRequest.
 
         :param body: The body of this CancelSelfGrantRequest.
         :type body: :class:`huaweicloudsdkkms.v2.RevokeGrantRequestBody`

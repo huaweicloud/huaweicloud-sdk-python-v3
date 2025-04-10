@@ -30,7 +30,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
     }
 
     def __init__(self, config_name=None, config_value=None, if_show_share_space=None):
-        """ShowShareSpaceConfigResponse
+        r"""ShowShareSpaceConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     @property
     def config_name(self):
-        """Gets the config_name of this ShowShareSpaceConfigResponse.
+        r"""Gets the config_name of this ShowShareSpaceConfigResponse.
 
         配置名称
 
@@ -69,7 +69,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this ShowShareSpaceConfigResponse.
+        r"""Sets the config_name of this ShowShareSpaceConfigResponse.
 
         配置名称
 
@@ -80,7 +80,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     @property
     def config_value(self):
-        """Gets the config_value of this ShowShareSpaceConfigResponse.
+        r"""Gets the config_value of this ShowShareSpaceConfigResponse.
 
         配置值，使用Json字符串,'{\"share_space_name\":“协同空间”, \"use_share_password\":是否使用协同密码：true/false, \"allow_anonymous\":是否匿名加入协同:true/false, \"audio_and_video\":是否使用音频,\"AUDIO\"/\"NONE\"/\"AUDIO_AND_VIDEO\",\"keyboard_mouse_ctl\":云桌面是否可用键鼠true/false,\"anonymous_input_ctrl\":是否开启匿名用户键鼠输入权限true/false, \"is_user_confirm_enabled\":是否需要用户应答true/false,\"wait_confirm_time\":等待时间30-180s}'
 
@@ -91,7 +91,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this ShowShareSpaceConfigResponse.
+        r"""Sets the config_value of this ShowShareSpaceConfigResponse.
 
         配置值，使用Json字符串,'{\"share_space_name\":“协同空间”, \"use_share_password\":是否使用协同密码：true/false, \"allow_anonymous\":是否匿名加入协同:true/false, \"audio_and_video\":是否使用音频,\"AUDIO\"/\"NONE\"/\"AUDIO_AND_VIDEO\",\"keyboard_mouse_ctl\":云桌面是否可用键鼠true/false,\"anonymous_input_ctrl\":是否开启匿名用户键鼠输入权限true/false, \"is_user_confirm_enabled\":是否需要用户应答true/false,\"wait_confirm_time\":等待时间30-180s}'
 
@@ -102,7 +102,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     @property
     def if_show_share_space(self):
-        """Gets the if_show_share_space of this ShowShareSpaceConfigResponse.
+        r"""Gets the if_show_share_space of this ShowShareSpaceConfigResponse.
 
         根据Apollo白名单去控制是否显示远程协助
 
@@ -113,7 +113,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     @if_show_share_space.setter
     def if_show_share_space(self, if_show_share_space):
-        """Sets the if_show_share_space of this ShowShareSpaceConfigResponse.
+        r"""Sets the if_show_share_space of this ShowShareSpaceConfigResponse.
 
         根据Apollo白名单去控制是否显示远程协助
 

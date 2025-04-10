@@ -35,7 +35,7 @@ class OrganizationPolicyUpdate:
     }
 
     def __init__(self, name=None, description=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None):
-        """OrganizationPolicyUpdate
+        r"""OrganizationPolicyUpdate
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OrganizationPolicyUpdate:
 
     @property
     def name(self):
-        """Gets the name of this OrganizationPolicyUpdate.
+        r"""Gets the name of this OrganizationPolicyUpdate.
 
         组织策略名称
 
@@ -89,7 +89,7 @@ class OrganizationPolicyUpdate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrganizationPolicyUpdate.
+        r"""Sets the name of this OrganizationPolicyUpdate.
 
         组织策略名称
 
@@ -100,7 +100,7 @@ class OrganizationPolicyUpdate:
 
     @property
     def description(self):
-        """Gets the description of this OrganizationPolicyUpdate.
+        r"""Gets the description of this OrganizationPolicyUpdate.
 
         组织策略描述
 
@@ -111,7 +111,7 @@ class OrganizationPolicyUpdate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OrganizationPolicyUpdate.
+        r"""Sets the description of this OrganizationPolicyUpdate.
 
         组织策略描述
 
@@ -122,7 +122,7 @@ class OrganizationPolicyUpdate:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this OrganizationPolicyUpdate.
+        r"""Gets the policy_name of this OrganizationPolicyUpdate.
 
         策略名称
 
@@ -133,7 +133,7 @@ class OrganizationPolicyUpdate:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this OrganizationPolicyUpdate.
+        r"""Sets the policy_name of this OrganizationPolicyUpdate.
 
         策略名称
 
@@ -144,7 +144,7 @@ class OrganizationPolicyUpdate:
 
     @property
     def policy_enabled(self):
-        """Gets the policy_enabled of this OrganizationPolicyUpdate.
+        r"""Gets the policy_enabled of this OrganizationPolicyUpdate.
 
         策略是否开启
 
@@ -155,7 +155,7 @@ class OrganizationPolicyUpdate:
 
     @policy_enabled.setter
     def policy_enabled(self, policy_enabled):
-        """Sets the policy_enabled of this OrganizationPolicyUpdate.
+        r"""Sets the policy_enabled of this OrganizationPolicyUpdate.
 
         策略是否开启
 
@@ -166,7 +166,7 @@ class OrganizationPolicyUpdate:
 
     @property
     def policy_operation_definition(self):
-        """Gets the policy_operation_definition of this OrganizationPolicyUpdate.
+        r"""Gets the policy_operation_definition of this OrganizationPolicyUpdate.
 
         :return: The policy_operation_definition of this OrganizationPolicyUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -175,7 +175,7 @@ class OrganizationPolicyUpdate:
 
     @policy_operation_definition.setter
     def policy_operation_definition(self, policy_operation_definition):
-        """Sets the policy_operation_definition of this OrganizationPolicyUpdate.
+        r"""Sets the policy_operation_definition of this OrganizationPolicyUpdate.
 
         :param policy_operation_definition: The policy_operation_definition of this OrganizationPolicyUpdate.
         :type policy_operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -184,7 +184,7 @@ class OrganizationPolicyUpdate:
 
     @property
     def policy_trigger(self):
-        """Gets the policy_trigger of this OrganizationPolicyUpdate.
+        r"""Gets the policy_trigger of this OrganizationPolicyUpdate.
 
         :return: The policy_trigger of this OrganizationPolicyUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
@@ -193,7 +193,7 @@ class OrganizationPolicyUpdate:
 
     @policy_trigger.setter
     def policy_trigger(self, policy_trigger):
-        """Sets the policy_trigger of this OrganizationPolicyUpdate.
+        r"""Sets the policy_trigger of this OrganizationPolicyUpdate.
 
         :param policy_trigger: The policy_trigger of this OrganizationPolicyUpdate.
         :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`

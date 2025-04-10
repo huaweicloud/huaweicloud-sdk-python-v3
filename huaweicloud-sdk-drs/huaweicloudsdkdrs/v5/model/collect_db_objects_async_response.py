@@ -30,7 +30,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, job_id=None):
-        """CollectDbObjectsAsyncResponse
+        r"""CollectDbObjectsAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CollectDbObjectsAsyncResponse.
+        r"""Gets the id of this CollectDbObjectsAsyncResponse.
 
         查询结果id
 
@@ -69,7 +69,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CollectDbObjectsAsyncResponse.
+        r"""Sets the id of this CollectDbObjectsAsyncResponse.
 
         查询结果id
 
@@ -80,7 +80,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CollectDbObjectsAsyncResponse.
+        r"""Gets the status of this CollectDbObjectsAsyncResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -91,7 +91,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CollectDbObjectsAsyncResponse.
+        r"""Sets the status of this CollectDbObjectsAsyncResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -102,7 +102,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectDbObjectsAsyncResponse.
+        r"""Gets the job_id of this CollectDbObjectsAsyncResponse.
 
         任务ID
 
@@ -113,7 +113,7 @@ class CollectDbObjectsAsyncResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectDbObjectsAsyncResponse.
+        r"""Sets the job_id of this CollectDbObjectsAsyncResponse.
 
         任务ID
 

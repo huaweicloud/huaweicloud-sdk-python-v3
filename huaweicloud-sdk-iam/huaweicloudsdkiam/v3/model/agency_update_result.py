@@ -37,7 +37,7 @@ class AgencyUpdateResult:
     }
 
     def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None):
-        """AgencyUpdateResult
+        r"""AgencyUpdateResult
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AgencyUpdateResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AgencyUpdateResult.
+        r"""Gets the create_time of this AgencyUpdateResult.
 
         委托创建时间。
 
@@ -91,7 +91,7 @@ class AgencyUpdateResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AgencyUpdateResult.
+        r"""Sets the create_time of this AgencyUpdateResult.
 
         委托创建时间。
 
@@ -102,7 +102,7 @@ class AgencyUpdateResult:
 
     @property
     def description(self):
-        """Gets the description of this AgencyUpdateResult.
+        r"""Gets the description of this AgencyUpdateResult.
 
         委托描述信息。
 
@@ -113,7 +113,7 @@ class AgencyUpdateResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyUpdateResult.
+        r"""Sets the description of this AgencyUpdateResult.
 
         委托描述信息。
 
@@ -124,7 +124,7 @@ class AgencyUpdateResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AgencyUpdateResult.
+        r"""Gets the domain_id of this AgencyUpdateResult.
 
         委托方账号ID。
 
@@ -135,7 +135,7 @@ class AgencyUpdateResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AgencyUpdateResult.
+        r"""Sets the domain_id of this AgencyUpdateResult.
 
         委托方账号ID。
 
@@ -146,7 +146,7 @@ class AgencyUpdateResult:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AgencyUpdateResult.
+        r"""Gets the expire_time of this AgencyUpdateResult.
 
         委托过期时间。“null”表示不过期。
 
@@ -157,7 +157,7 @@ class AgencyUpdateResult:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AgencyUpdateResult.
+        r"""Sets the expire_time of this AgencyUpdateResult.
 
         委托过期时间。“null”表示不过期。
 
@@ -168,7 +168,7 @@ class AgencyUpdateResult:
 
     @property
     def id(self):
-        """Gets the id of this AgencyUpdateResult.
+        r"""Gets the id of this AgencyUpdateResult.
 
         委托ID。
 
@@ -179,7 +179,7 @@ class AgencyUpdateResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyUpdateResult.
+        r"""Sets the id of this AgencyUpdateResult.
 
         委托ID。
 
@@ -190,7 +190,7 @@ class AgencyUpdateResult:
 
     @property
     def name(self):
-        """Gets the name of this AgencyUpdateResult.
+        r"""Gets the name of this AgencyUpdateResult.
 
         委托名。
 
@@ -201,7 +201,7 @@ class AgencyUpdateResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyUpdateResult.
+        r"""Sets the name of this AgencyUpdateResult.
 
         委托名。
 
@@ -212,7 +212,7 @@ class AgencyUpdateResult:
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this AgencyUpdateResult.
+        r"""Gets the trust_domain_id of this AgencyUpdateResult.
 
         被委托方账号ID。
 
@@ -223,7 +223,7 @@ class AgencyUpdateResult:
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this AgencyUpdateResult.
+        r"""Sets the trust_domain_id of this AgencyUpdateResult.
 
         被委托方账号ID。
 

@@ -31,7 +31,7 @@ class DeleteFunctionRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, function_name=None):
-        """DeleteFunctionRequest
+        r"""DeleteFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeleteFunctionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteFunctionRequest.
+        r"""Gets the instance_id of this DeleteFunctionRequest.
 
         实例Id
 
@@ -71,7 +71,7 @@ class DeleteFunctionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteFunctionRequest.
+        r"""Sets the instance_id of this DeleteFunctionRequest.
 
         实例Id
 
@@ -82,7 +82,7 @@ class DeleteFunctionRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeleteFunctionRequest.
+        r"""Gets the catalog_name of this DeleteFunctionRequest.
 
         catalog名字
 
@@ -93,7 +93,7 @@ class DeleteFunctionRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeleteFunctionRequest.
+        r"""Sets the catalog_name of this DeleteFunctionRequest.
 
         catalog名字
 
@@ -104,7 +104,7 @@ class DeleteFunctionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteFunctionRequest.
+        r"""Gets the database_name of this DeleteFunctionRequest.
 
         数据库名字
 
@@ -115,7 +115,7 @@ class DeleteFunctionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteFunctionRequest.
+        r"""Sets the database_name of this DeleteFunctionRequest.
 
         数据库名字
 
@@ -126,7 +126,7 @@ class DeleteFunctionRequest:
 
     @property
     def function_name(self):
-        """Gets the function_name of this DeleteFunctionRequest.
+        r"""Gets the function_name of this DeleteFunctionRequest.
 
         函数名字
 
@@ -137,7 +137,7 @@ class DeleteFunctionRequest:
 
     @function_name.setter
     def function_name(self, function_name):
-        """Sets the function_name of this DeleteFunctionRequest.
+        r"""Sets the function_name of this DeleteFunctionRequest.
 
         函数名字
 

@@ -27,7 +27,7 @@ class ListSecurityRoleActionsRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ListSecurityRoleActionsRequest
+        r"""ListSecurityRoleActionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSecurityRoleActionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityRoleActionsRequest.
+        r"""Gets the workspace of this ListSecurityRoleActionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ListSecurityRoleActionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityRoleActionsRequest.
+        r"""Sets the workspace of this ListSecurityRoleActionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ListSecurityRoleActionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSecurityRoleActionsRequest.
+        r"""Gets the body of this ListSecurityRoleActionsRequest.
 
         :return: The body of this ListSecurityRoleActionsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RoleActionQueryDTO`
@@ -80,7 +80,7 @@ class ListSecurityRoleActionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSecurityRoleActionsRequest.
+        r"""Sets the body of this ListSecurityRoleActionsRequest.
 
         :param body: The body of this ListSecurityRoleActionsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.RoleActionQueryDTO`

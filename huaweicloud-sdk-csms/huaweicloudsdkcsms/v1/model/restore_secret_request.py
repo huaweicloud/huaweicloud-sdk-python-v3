@@ -25,7 +25,7 @@ class RestoreSecretRequest:
     }
 
     def __init__(self, secret_name=None):
-        """RestoreSecretRequest
+        r"""RestoreSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestoreSecretRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this RestoreSecretRequest.
+        r"""Gets the secret_name of this RestoreSecretRequest.
 
         凭据名称。
 
@@ -53,7 +53,7 @@ class RestoreSecretRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this RestoreSecretRequest.
+        r"""Sets the secret_name of this RestoreSecretRequest.
 
         凭据名称。
 

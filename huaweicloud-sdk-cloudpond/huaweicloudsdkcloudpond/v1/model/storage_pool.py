@@ -49,7 +49,7 @@ class StoragePool:
     }
 
     def __init__(self, id=None, name=None, edge_site_id=None, storage_type=None, status=None, assigned_size=None, resource_spec_code=None, product_info=None, capacity=None, market_options=None, created_at=None, updated_at=None, effected_at=None):
-        """StoragePool
+        r"""StoragePool
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class StoragePool:
 
     @property
     def id(self):
-        """Gets the id of this StoragePool.
+        r"""Gets the id of this StoragePool.
 
         机柜ID
 
@@ -138,7 +138,7 @@ class StoragePool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StoragePool.
+        r"""Sets the id of this StoragePool.
 
         机柜ID
 
@@ -149,7 +149,7 @@ class StoragePool:
 
     @property
     def name(self):
-        """Gets the name of this StoragePool.
+        r"""Gets the name of this StoragePool.
 
         存储池名称
 
@@ -160,7 +160,7 @@ class StoragePool:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StoragePool.
+        r"""Sets the name of this StoragePool.
 
         存储池名称
 
@@ -171,7 +171,7 @@ class StoragePool:
 
     @property
     def edge_site_id(self):
-        """Gets the edge_site_id of this StoragePool.
+        r"""Gets the edge_site_id of this StoragePool.
 
         边缘小站ID
 
@@ -182,7 +182,7 @@ class StoragePool:
 
     @edge_site_id.setter
     def edge_site_id(self, edge_site_id):
-        """Sets the edge_site_id of this StoragePool.
+        r"""Sets the edge_site_id of this StoragePool.
 
         边缘小站ID
 
@@ -193,7 +193,7 @@ class StoragePool:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this StoragePool.
+        r"""Gets the storage_type of this StoragePool.
 
         :return: The storage_type of this StoragePool.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.StorageType`
@@ -202,7 +202,7 @@ class StoragePool:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this StoragePool.
+        r"""Sets the storage_type of this StoragePool.
 
         :param storage_type: The storage_type of this StoragePool.
         :type storage_type: :class:`huaweicloudsdkcloudpond.v1.StorageType`
@@ -211,7 +211,7 @@ class StoragePool:
 
     @property
     def status(self):
-        """Gets the status of this StoragePool.
+        r"""Gets the status of this StoragePool.
 
         :return: The status of this StoragePool.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.StoragePoolStatus`
@@ -220,7 +220,7 @@ class StoragePool:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StoragePool.
+        r"""Sets the status of this StoragePool.
 
         :param status: The status of this StoragePool.
         :type status: :class:`huaweicloudsdkcloudpond.v1.StoragePoolStatus`
@@ -229,7 +229,7 @@ class StoragePool:
 
     @property
     def assigned_size(self):
-        """Gets the assigned_size of this StoragePool.
+        r"""Gets the assigned_size of this StoragePool.
 
         存储池大小。 当前购买的存储容量。
 
@@ -240,7 +240,7 @@ class StoragePool:
 
     @assigned_size.setter
     def assigned_size(self, assigned_size):
-        """Sets the assigned_size of this StoragePool.
+        r"""Sets the assigned_size of this StoragePool.
 
         存储池大小。 当前购买的存储容量。
 
@@ -251,7 +251,7 @@ class StoragePool:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this StoragePool.
+        r"""Gets the resource_spec_code of this StoragePool.
 
         资源规格编码
 
@@ -262,7 +262,7 @@ class StoragePool:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this StoragePool.
+        r"""Sets the resource_spec_code of this StoragePool.
 
         资源规格编码
 
@@ -273,7 +273,7 @@ class StoragePool:
 
     @property
     def product_info(self):
-        """Gets the product_info of this StoragePool.
+        r"""Gets the product_info of this StoragePool.
 
         :return: The product_info of this StoragePool.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
@@ -282,7 +282,7 @@ class StoragePool:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this StoragePool.
+        r"""Sets the product_info of this StoragePool.
 
         :param product_info: The product_info of this StoragePool.
         :type product_info: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
@@ -291,7 +291,7 @@ class StoragePool:
 
     @property
     def capacity(self):
-        """Gets the capacity of this StoragePool.
+        r"""Gets the capacity of this StoragePool.
 
         总容量
 
@@ -302,7 +302,7 @@ class StoragePool:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this StoragePool.
+        r"""Sets the capacity of this StoragePool.
 
         总容量
 
@@ -313,7 +313,7 @@ class StoragePool:
 
     @property
     def market_options(self):
-        """Gets the market_options of this StoragePool.
+        r"""Gets the market_options of this StoragePool.
 
         :return: The market_options of this StoragePool.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.MarketOptions`
@@ -322,7 +322,7 @@ class StoragePool:
 
     @market_options.setter
     def market_options(self, market_options):
-        """Sets the market_options of this StoragePool.
+        r"""Sets the market_options of this StoragePool.
 
         :param market_options: The market_options of this StoragePool.
         :type market_options: :class:`huaweicloudsdkcloudpond.v1.MarketOptions`
@@ -331,7 +331,7 @@ class StoragePool:
 
     @property
     def created_at(self):
-        """Gets the created_at of this StoragePool.
+        r"""Gets the created_at of this StoragePool.
 
         创建时间
 
@@ -342,7 +342,7 @@ class StoragePool:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this StoragePool.
+        r"""Sets the created_at of this StoragePool.
 
         创建时间
 
@@ -353,7 +353,7 @@ class StoragePool:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this StoragePool.
+        r"""Gets the updated_at of this StoragePool.
 
         更新时间
 
@@ -364,7 +364,7 @@ class StoragePool:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this StoragePool.
+        r"""Sets the updated_at of this StoragePool.
 
         更新时间
 
@@ -375,7 +375,7 @@ class StoragePool:
 
     @property
     def effected_at(self):
-        """Gets the effected_at of this StoragePool.
+        r"""Gets the effected_at of this StoragePool.
 
         生效时间
 
@@ -386,7 +386,7 @@ class StoragePool:
 
     @effected_at.setter
     def effected_at(self, effected_at):
-        """Sets the effected_at of this StoragePool.
+        r"""Sets the effected_at of this StoragePool.
 
         生效时间
 

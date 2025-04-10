@@ -25,7 +25,7 @@ class ListPrivateNatsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListPrivateNatsByTagsRequest
+        r"""ListPrivateNatsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPrivateNatsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPrivateNatsByTagsRequest.
+        r"""Gets the body of this ListPrivateNatsByTagsRequest.
 
         :return: The body of this ListPrivateNatsByTagsRequest.
         :rtype: :class:`huaweicloudsdknat.v2.ListTagResourceInstancesRequestBody`
@@ -52,7 +52,7 @@ class ListPrivateNatsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPrivateNatsByTagsRequest.
+        r"""Sets the body of this ListPrivateNatsByTagsRequest.
 
         :param body: The body of this ListPrivateNatsByTagsRequest.
         :type body: :class:`huaweicloudsdknat.v2.ListTagResourceInstancesRequestBody`

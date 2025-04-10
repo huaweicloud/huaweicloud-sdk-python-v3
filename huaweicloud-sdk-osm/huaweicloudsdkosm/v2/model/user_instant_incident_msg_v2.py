@@ -27,7 +27,7 @@ class UserInstantIncidentMsgV2:
     }
 
     def __init__(self, incident_id=None, message_list=None):
-        """UserInstantIncidentMsgV2
+        r"""UserInstantIncidentMsgV2
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserInstantIncidentMsgV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this UserInstantIncidentMsgV2.
+        r"""Gets the incident_id of this UserInstantIncidentMsgV2.
 
         工单id
 
@@ -61,7 +61,7 @@ class UserInstantIncidentMsgV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this UserInstantIncidentMsgV2.
+        r"""Sets the incident_id of this UserInstantIncidentMsgV2.
 
         工单id
 
@@ -72,7 +72,7 @@ class UserInstantIncidentMsgV2:
 
     @property
     def message_list(self):
-        """Gets the message_list of this UserInstantIncidentMsgV2.
+        r"""Gets the message_list of this UserInstantIncidentMsgV2.
 
         留言列表
 
@@ -83,7 +83,7 @@ class UserInstantIncidentMsgV2:
 
     @message_list.setter
     def message_list(self, message_list):
-        """Sets the message_list of this UserInstantIncidentMsgV2.
+        r"""Sets the message_list of this UserInstantIncidentMsgV2.
 
         留言列表
 

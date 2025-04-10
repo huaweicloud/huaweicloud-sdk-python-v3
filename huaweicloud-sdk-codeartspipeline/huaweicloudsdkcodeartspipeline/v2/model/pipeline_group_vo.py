@@ -47,7 +47,7 @@ class PipelineGroupVo:
     }
 
     def __init__(self, id=None, domain_id=None, project_id=None, name=None, parent_id=None, path_id=None, ordinal=None, creator=None, updater=None, create_time=None, update_time=None, children=None):
-        """PipelineGroupVo
+        r"""PipelineGroupVo
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class PipelineGroupVo:
 
     @property
     def id(self):
-        """Gets the id of this PipelineGroupVo.
+        r"""Gets the id of this PipelineGroupVo.
 
         分组ID
 
@@ -125,7 +125,7 @@ class PipelineGroupVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineGroupVo.
+        r"""Sets the id of this PipelineGroupVo.
 
         分组ID
 
@@ -136,7 +136,7 @@ class PipelineGroupVo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PipelineGroupVo.
+        r"""Gets the domain_id of this PipelineGroupVo.
 
         租户ID
 
@@ -147,7 +147,7 @@ class PipelineGroupVo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PipelineGroupVo.
+        r"""Sets the domain_id of this PipelineGroupVo.
 
         租户ID
 
@@ -158,7 +158,7 @@ class PipelineGroupVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PipelineGroupVo.
+        r"""Gets the project_id of this PipelineGroupVo.
 
         项目ID
 
@@ -169,7 +169,7 @@ class PipelineGroupVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PipelineGroupVo.
+        r"""Sets the project_id of this PipelineGroupVo.
 
         项目ID
 
@@ -180,7 +180,7 @@ class PipelineGroupVo:
 
     @property
     def name(self):
-        """Gets the name of this PipelineGroupVo.
+        r"""Gets the name of this PipelineGroupVo.
 
         分组名
 
@@ -191,7 +191,7 @@ class PipelineGroupVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineGroupVo.
+        r"""Sets the name of this PipelineGroupVo.
 
         分组名
 
@@ -202,7 +202,7 @@ class PipelineGroupVo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this PipelineGroupVo.
+        r"""Gets the parent_id of this PipelineGroupVo.
 
         父分组ID
 
@@ -213,7 +213,7 @@ class PipelineGroupVo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this PipelineGroupVo.
+        r"""Sets the parent_id of this PipelineGroupVo.
 
         父分组ID
 
@@ -224,7 +224,7 @@ class PipelineGroupVo:
 
     @property
     def path_id(self):
-        """Gets the path_id of this PipelineGroupVo.
+        r"""Gets the path_id of this PipelineGroupVo.
 
         分组路径ID
 
@@ -235,7 +235,7 @@ class PipelineGroupVo:
 
     @path_id.setter
     def path_id(self, path_id):
-        """Sets the path_id of this PipelineGroupVo.
+        r"""Sets the path_id of this PipelineGroupVo.
 
         分组路径ID
 
@@ -246,7 +246,7 @@ class PipelineGroupVo:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this PipelineGroupVo.
+        r"""Gets the ordinal of this PipelineGroupVo.
 
         序号
 
@@ -257,7 +257,7 @@ class PipelineGroupVo:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this PipelineGroupVo.
+        r"""Sets the ordinal of this PipelineGroupVo.
 
         序号
 
@@ -268,7 +268,7 @@ class PipelineGroupVo:
 
     @property
     def creator(self):
-        """Gets the creator of this PipelineGroupVo.
+        r"""Gets the creator of this PipelineGroupVo.
 
         创建用户ID
 
@@ -279,7 +279,7 @@ class PipelineGroupVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PipelineGroupVo.
+        r"""Sets the creator of this PipelineGroupVo.
 
         创建用户ID
 
@@ -290,7 +290,7 @@ class PipelineGroupVo:
 
     @property
     def updater(self):
-        """Gets the updater of this PipelineGroupVo.
+        r"""Gets the updater of this PipelineGroupVo.
 
         更新用户ID
 
@@ -301,7 +301,7 @@ class PipelineGroupVo:
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this PipelineGroupVo.
+        r"""Sets the updater of this PipelineGroupVo.
 
         更新用户ID
 
@@ -312,7 +312,7 @@ class PipelineGroupVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PipelineGroupVo.
+        r"""Gets the create_time of this PipelineGroupVo.
 
         创建时间
 
@@ -323,7 +323,7 @@ class PipelineGroupVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PipelineGroupVo.
+        r"""Sets the create_time of this PipelineGroupVo.
 
         创建时间
 
@@ -334,7 +334,7 @@ class PipelineGroupVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PipelineGroupVo.
+        r"""Gets the update_time of this PipelineGroupVo.
 
         更新时间
 
@@ -345,7 +345,7 @@ class PipelineGroupVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PipelineGroupVo.
+        r"""Sets the update_time of this PipelineGroupVo.
 
         更新时间
 
@@ -356,7 +356,7 @@ class PipelineGroupVo:
 
     @property
     def children(self):
-        """Gets the children of this PipelineGroupVo.
+        r"""Gets the children of this PipelineGroupVo.
 
         子分组列表
 
@@ -367,7 +367,7 @@ class PipelineGroupVo:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this PipelineGroupVo.
+        r"""Sets the children of this PipelineGroupVo.
 
         子分组列表
 

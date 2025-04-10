@@ -25,7 +25,7 @@ class PageResp:
     }
 
     def __init__(self, count=None):
-        """PageResp
+        r"""PageResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PageResp:
 
     @property
     def count(self):
-        """Gets the count of this PageResp.
+        r"""Gets the count of this PageResp.
 
         总数。
 
@@ -54,7 +54,7 @@ class PageResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this PageResp.
+        r"""Sets the count of this PageResp.
 
         总数。
 

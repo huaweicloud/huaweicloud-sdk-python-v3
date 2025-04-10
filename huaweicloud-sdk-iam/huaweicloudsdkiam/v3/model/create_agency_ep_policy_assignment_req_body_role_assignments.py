@@ -29,7 +29,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
     }
 
     def __init__(self, agency_id=None, enterprise_project_id=None, role_id=None):
-        """CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments
+        r"""CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
+        r"""Gets the agency_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
 
         委托id
 
@@ -65,7 +65,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
+        r"""Sets the agency_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
 
         委托id
 
@@ -76,7 +76,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
+        r"""Gets the enterprise_project_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
 
         企业项目id
 
@@ -87,7 +87,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
+        r"""Sets the enterprise_project_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
 
         企业项目id
 
@@ -98,7 +98,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
 
     @property
     def role_id(self):
-        """Gets the role_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
+        r"""Gets the role_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
 
         策略id
 
@@ -109,7 +109,7 @@ class CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
+        r"""Sets the role_id of this CreateAgencyEpPolicyAssignmentReqBodyRoleAssignments.
 
         策略id
 

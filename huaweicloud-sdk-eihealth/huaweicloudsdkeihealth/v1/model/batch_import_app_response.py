@@ -26,7 +26,7 @@ class BatchImportAppResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchImportAppResponse
+        r"""BatchImportAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchImportAppResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchImportAppResponse.
+        r"""Gets the body of this BatchImportAppResponse.
 
         :return: The body of this BatchImportAppResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.ImportAppRsp`]
@@ -53,7 +53,7 @@ class BatchImportAppResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchImportAppResponse.
+        r"""Sets the body of this BatchImportAppResponse.
 
         :param body: The body of this BatchImportAppResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.ImportAppRsp`]

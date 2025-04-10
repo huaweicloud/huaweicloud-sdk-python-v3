@@ -31,7 +31,7 @@ class RuntimeTypeView:
     }
 
     def __init__(self, type_name=None, display_name=None, container_default_port=None, type_desc=None):
-        """RuntimeTypeView
+        r"""RuntimeTypeView
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RuntimeTypeView:
 
     @property
     def type_name(self):
-        """Gets the type_name of this RuntimeTypeView.
+        r"""Gets the type_name of this RuntimeTypeView.
 
         类型名称。
 
@@ -75,7 +75,7 @@ class RuntimeTypeView:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this RuntimeTypeView.
+        r"""Sets the type_name of this RuntimeTypeView.
 
         类型名称。
 
@@ -86,7 +86,7 @@ class RuntimeTypeView:
 
     @property
     def display_name(self):
-        """Gets the display_name of this RuntimeTypeView.
+        r"""Gets the display_name of this RuntimeTypeView.
 
         显示名称。
 
@@ -97,7 +97,7 @@ class RuntimeTypeView:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this RuntimeTypeView.
+        r"""Sets the display_name of this RuntimeTypeView.
 
         显示名称。
 
@@ -108,7 +108,7 @@ class RuntimeTypeView:
 
     @property
     def container_default_port(self):
-        """Gets the container_default_port of this RuntimeTypeView.
+        r"""Gets the container_default_port of this RuntimeTypeView.
 
         容器默认端口。
 
@@ -119,7 +119,7 @@ class RuntimeTypeView:
 
     @container_default_port.setter
     def container_default_port(self, container_default_port):
-        """Sets the container_default_port of this RuntimeTypeView.
+        r"""Sets the container_default_port of this RuntimeTypeView.
 
         容器默认端口。
 
@@ -130,7 +130,7 @@ class RuntimeTypeView:
 
     @property
     def type_desc(self):
-        """Gets the type_desc of this RuntimeTypeView.
+        r"""Gets the type_desc of this RuntimeTypeView.
 
         类型描述。
 
@@ -141,7 +141,7 @@ class RuntimeTypeView:
 
     @type_desc.setter
     def type_desc(self, type_desc):
-        """Sets the type_desc of this RuntimeTypeView.
+        r"""Sets the type_desc of this RuntimeTypeView.
 
         类型描述。
 

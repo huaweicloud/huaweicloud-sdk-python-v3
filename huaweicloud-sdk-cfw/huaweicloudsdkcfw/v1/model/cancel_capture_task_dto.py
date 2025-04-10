@@ -25,7 +25,7 @@ class CancelCaptureTaskDto:
     }
 
     def __init__(self, task_id=None):
-        """CancelCaptureTaskDto
+        r"""CancelCaptureTaskDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelCaptureTaskDto:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CancelCaptureTaskDto.
+        r"""Gets the task_id of this CancelCaptureTaskDto.
 
         抓包任务id，可通过[查询抓包任务接口](ListCaptureTask.xml)查询获得，通过返回值中的data.records.task_id（.表示各对象之间层级的区分）获得。
 
@@ -53,7 +53,7 @@ class CancelCaptureTaskDto:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CancelCaptureTaskDto.
+        r"""Sets the task_id of this CancelCaptureTaskDto.
 
         抓包任务id，可通过[查询抓包任务接口](ListCaptureTask.xml)查询获得，通过返回值中的data.records.task_id（.表示各对象之间层级的区分）获得。
 

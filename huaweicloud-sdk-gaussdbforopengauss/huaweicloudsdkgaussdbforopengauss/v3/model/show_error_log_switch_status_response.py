@@ -26,7 +26,7 @@ class ShowErrorLogSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ShowErrorLogSwitchStatusResponse
+        r"""ShowErrorLogSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowErrorLogSwitchStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowErrorLogSwitchStatusResponse.
+        r"""Gets the status of this ShowErrorLogSwitchStatusResponse.
 
         采集状态
 
@@ -55,7 +55,7 @@ class ShowErrorLogSwitchStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowErrorLogSwitchStatusResponse.
+        r"""Sets the status of this ShowErrorLogSwitchStatusResponse.
 
         采集状态
 

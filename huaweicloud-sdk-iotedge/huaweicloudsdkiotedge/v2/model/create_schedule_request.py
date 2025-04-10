@@ -27,7 +27,7 @@ class CreateScheduleRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """CreateScheduleRequest
+        r"""CreateScheduleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateScheduleRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateScheduleRequest.
+        r"""Gets the edge_node_id of this CreateScheduleRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class CreateScheduleRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateScheduleRequest.
+        r"""Sets the edge_node_id of this CreateScheduleRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class CreateScheduleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScheduleRequest.
+        r"""Gets the body of this CreateScheduleRequest.
 
         :return: The body of this CreateScheduleRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateScheduleReqDTO`
@@ -80,7 +80,7 @@ class CreateScheduleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScheduleRequest.
+        r"""Sets the body of this CreateScheduleRequest.
 
         :param body: The body of this CreateScheduleRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateScheduleReqDTO`

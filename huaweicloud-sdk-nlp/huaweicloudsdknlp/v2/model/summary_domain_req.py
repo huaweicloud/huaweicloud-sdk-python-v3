@@ -33,7 +33,7 @@ class SummaryDomainReq:
     }
 
     def __init__(self, length_limit=None, title=None, lang=None, content=None, type=None):
-        """SummaryDomainReq
+        r"""SummaryDomainReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class SummaryDomainReq:
 
     @property
     def length_limit(self):
-        """Gets the length_limit of this SummaryDomainReq.
+        r"""Gets the length_limit of this SummaryDomainReq.
 
         生成摘要的长度限制。length_limit > 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 <= length_limit <= 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。
 
@@ -81,7 +81,7 @@ class SummaryDomainReq:
 
     @length_limit.setter
     def length_limit(self, length_limit):
-        """Sets the length_limit of this SummaryDomainReq.
+        r"""Sets the length_limit of this SummaryDomainReq.
 
         生成摘要的长度限制。length_limit > 1，则返回结果为字数不小于该值且最接近该值的摘要。 0 <= length_limit <= 1，则返回结果为长度百分比不小于该值且最接近该值的摘要。
 
@@ -92,7 +92,7 @@ class SummaryDomainReq:
 
     @property
     def title(self):
-        """Gets the title of this SummaryDomainReq.
+        r"""Gets the title of this SummaryDomainReq.
 
         文本标题（目前仅支持UTF-8编码），长度不超过1000字。
 
@@ -103,7 +103,7 @@ class SummaryDomainReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this SummaryDomainReq.
+        r"""Sets the title of this SummaryDomainReq.
 
         文本标题（目前仅支持UTF-8编码），长度不超过1000字。
 
@@ -114,7 +114,7 @@ class SummaryDomainReq:
 
     @property
     def lang(self):
-        """Gets the lang of this SummaryDomainReq.
+        r"""Gets the lang of this SummaryDomainReq.
 
         支持的文本语言类型，目前支持中文（zh）。
 
@@ -125,7 +125,7 @@ class SummaryDomainReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this SummaryDomainReq.
+        r"""Sets the lang of this SummaryDomainReq.
 
         支持的文本语言类型，目前支持中文（zh）。
 
@@ -136,7 +136,7 @@ class SummaryDomainReq:
 
     @property
     def content(self):
-        """Gets the content of this SummaryDomainReq.
+        r"""Gets the content of this SummaryDomainReq.
 
         文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
@@ -147,7 +147,7 @@ class SummaryDomainReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this SummaryDomainReq.
+        r"""Sets the content of this SummaryDomainReq.
 
         文本正文（目前仅支持UTF-8编码），长度不超过10000字。
 
@@ -158,7 +158,7 @@ class SummaryDomainReq:
 
     @property
     def type(self):
-        """Gets the type of this SummaryDomainReq.
+        r"""Gets the type of this SummaryDomainReq.
 
         支持的领域类型，取值如下（目前只支持通用领域），默认为通用领域： 0：通用领域
 
@@ -169,7 +169,7 @@ class SummaryDomainReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SummaryDomainReq.
+        r"""Sets the type of this SummaryDomainReq.
 
         支持的领域类型，取值如下（目前只支持通用领域），默认为通用领域： 0：通用领域
 

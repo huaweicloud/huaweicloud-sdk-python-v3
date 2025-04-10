@@ -25,7 +25,7 @@ class DeleteRepositoryRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteRepositoryRequest
+        r"""DeleteRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteRepositoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRepositoryRequest.
+        r"""Gets the body of this DeleteRepositoryRequest.
 
         :return: The body of this DeleteRepositoryRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepoRevisionModel`
@@ -52,7 +52,7 @@ class DeleteRepositoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRepositoryRequest.
+        r"""Sets the body of this DeleteRepositoryRequest.
 
         :param body: The body of this DeleteRepositoryRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.IDERepoRevisionModel`

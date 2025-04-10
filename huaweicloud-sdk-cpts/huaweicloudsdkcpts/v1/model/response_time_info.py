@@ -33,7 +33,7 @@ class ResponseTimeInfo:
     }
 
     def __init__(self, avg_response_time=None, avg_tp50=None, avg_tp90=None, max_response_time=None, min_response_time=None):
-        """ResponseTimeInfo
+        r"""ResponseTimeInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResponseTimeInfo:
 
     @property
     def avg_response_time(self):
-        """Gets the avg_response_time of this ResponseTimeInfo.
+        r"""Gets the avg_response_time of this ResponseTimeInfo.
 
         平均响应时间
 
@@ -82,7 +82,7 @@ class ResponseTimeInfo:
 
     @avg_response_time.setter
     def avg_response_time(self, avg_response_time):
-        """Sets the avg_response_time of this ResponseTimeInfo.
+        r"""Sets the avg_response_time of this ResponseTimeInfo.
 
         平均响应时间
 
@@ -93,7 +93,7 @@ class ResponseTimeInfo:
 
     @property
     def avg_tp50(self):
-        """Gets the avg_tp50 of this ResponseTimeInfo.
+        r"""Gets the avg_tp50 of this ResponseTimeInfo.
 
         TP50
 
@@ -104,7 +104,7 @@ class ResponseTimeInfo:
 
     @avg_tp50.setter
     def avg_tp50(self, avg_tp50):
-        """Sets the avg_tp50 of this ResponseTimeInfo.
+        r"""Sets the avg_tp50 of this ResponseTimeInfo.
 
         TP50
 
@@ -115,7 +115,7 @@ class ResponseTimeInfo:
 
     @property
     def avg_tp90(self):
-        """Gets the avg_tp90 of this ResponseTimeInfo.
+        r"""Gets the avg_tp90 of this ResponseTimeInfo.
 
         TP90
 
@@ -126,7 +126,7 @@ class ResponseTimeInfo:
 
     @avg_tp90.setter
     def avg_tp90(self, avg_tp90):
-        """Sets the avg_tp90 of this ResponseTimeInfo.
+        r"""Sets the avg_tp90 of this ResponseTimeInfo.
 
         TP90
 
@@ -137,7 +137,7 @@ class ResponseTimeInfo:
 
     @property
     def max_response_time(self):
-        """Gets the max_response_time of this ResponseTimeInfo.
+        r"""Gets the max_response_time of this ResponseTimeInfo.
 
         最大响应时间
 
@@ -148,7 +148,7 @@ class ResponseTimeInfo:
 
     @max_response_time.setter
     def max_response_time(self, max_response_time):
-        """Sets the max_response_time of this ResponseTimeInfo.
+        r"""Sets the max_response_time of this ResponseTimeInfo.
 
         最大响应时间
 
@@ -159,7 +159,7 @@ class ResponseTimeInfo:
 
     @property
     def min_response_time(self):
-        """Gets the min_response_time of this ResponseTimeInfo.
+        r"""Gets the min_response_time of this ResponseTimeInfo.
 
         最小响应时间
 
@@ -170,7 +170,7 @@ class ResponseTimeInfo:
 
     @min_response_time.setter
     def min_response_time(self, min_response_time):
-        """Sets the min_response_time of this ResponseTimeInfo.
+        r"""Sets the min_response_time of this ResponseTimeInfo.
 
         最小响应时间
 

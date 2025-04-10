@@ -26,7 +26,7 @@ class DeletePipelineResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None):
-        """DeletePipelineResponse
+        r"""DeletePipelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePipelineResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this DeletePipelineResponse.
+        r"""Gets the pipeline_id of this DeletePipelineResponse.
 
         流水线ID
 
@@ -55,7 +55,7 @@ class DeletePipelineResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this DeletePipelineResponse.
+        r"""Sets the pipeline_id of this DeletePipelineResponse.
 
         流水线ID
 

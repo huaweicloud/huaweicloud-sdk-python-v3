@@ -29,7 +29,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
     }
 
     def __init__(self, limit=None, marker=None, body=None):
-        """ShowAggregateComplianceDetailsByPolicyAssignmentRequest
+        r"""ShowAggregateComplianceDetailsByPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
+        r"""Gets the limit of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
 
         最大的返回数量
 
@@ -68,7 +68,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
+        r"""Sets the limit of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
 
         最大的返回数量
 
@@ -79,7 +79,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
+        r"""Gets the marker of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -90,7 +90,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
+        r"""Sets the marker of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -101,7 +101,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
+        r"""Gets the body of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
 
         :return: The body of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.AggregateComplianceDetailRequest`
@@ -110,7 +110,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
+        r"""Sets the body of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
 
         :param body: The body of this ShowAggregateComplianceDetailsByPolicyAssignmentRequest.
         :type body: :class:`huaweicloudsdkrms.v1.AggregateComplianceDetailRequest`

@@ -26,7 +26,7 @@ class CreateNotebookResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateNotebookResponse
+        r"""CreateNotebookResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateNotebookResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateNotebookResponse.
+        r"""Gets the id of this CreateNotebookResponse.
 
         notebook ID
 
@@ -55,7 +55,7 @@ class CreateNotebookResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateNotebookResponse.
+        r"""Sets the id of this CreateNotebookResponse.
 
         notebook ID
 

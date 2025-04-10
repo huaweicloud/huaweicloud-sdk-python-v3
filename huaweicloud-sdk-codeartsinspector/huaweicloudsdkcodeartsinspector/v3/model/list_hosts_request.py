@@ -29,7 +29,7 @@ class ListHostsRequest:
     }
 
     def __init__(self, group_id=None, offset=None, limit=None):
-        """ListHostsRequest
+        r"""ListHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListHostsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListHostsRequest.
+        r"""Gets the group_id of this ListHostsRequest.
 
         主机组id
 
@@ -68,7 +68,7 @@ class ListHostsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListHostsRequest.
+        r"""Sets the group_id of this ListHostsRequest.
 
         主机组id
 
@@ -79,7 +79,7 @@ class ListHostsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostsRequest.
+        r"""Gets the offset of this ListHostsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -90,7 +90,7 @@ class ListHostsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostsRequest.
+        r"""Sets the offset of this ListHostsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -101,7 +101,7 @@ class ListHostsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostsRequest.
+        r"""Gets the limit of this ListHostsRequest.
 
         分页查询，每页显示的条目数量
 
@@ -112,7 +112,7 @@ class ListHostsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostsRequest.
+        r"""Sets the limit of this ListHostsRequest.
 
         分页查询，每页显示的条目数量
 

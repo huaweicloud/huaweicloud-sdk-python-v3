@@ -31,7 +31,7 @@ class IflytekAiuiConfig:
     }
 
     def __init__(self, app_id=None, app_key=None, api_secret=None, is_production=None):
-        """IflytekAiuiConfig
+        r"""IflytekAiuiConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IflytekAiuiConfig:
 
     @property
     def app_id(self):
-        """Gets the app_id of this IflytekAiuiConfig.
+        r"""Gets the app_id of this IflytekAiuiConfig.
 
         AIUI应用ID。
 
@@ -75,7 +75,7 @@ class IflytekAiuiConfig:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this IflytekAiuiConfig.
+        r"""Sets the app_id of this IflytekAiuiConfig.
 
         AIUI应用ID。
 
@@ -86,7 +86,7 @@ class IflytekAiuiConfig:
 
     @property
     def app_key(self):
-        """Gets the app_key of this IflytekAiuiConfig.
+        r"""Gets the app_key of this IflytekAiuiConfig.
 
         AIUI应用密钥。
 
@@ -97,7 +97,7 @@ class IflytekAiuiConfig:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this IflytekAiuiConfig.
+        r"""Sets the app_key of this IflytekAiuiConfig.
 
         AIUI应用密钥。
 
@@ -108,7 +108,7 @@ class IflytekAiuiConfig:
 
     @property
     def api_secret(self):
-        """Gets the api_secret of this IflytekAiuiConfig.
+        r"""Gets the api_secret of this IflytekAiuiConfig.
 
         AIUI API密钥。
 
@@ -119,7 +119,7 @@ class IflytekAiuiConfig:
 
     @api_secret.setter
     def api_secret(self, api_secret):
-        """Sets the api_secret of this IflytekAiuiConfig.
+        r"""Sets the api_secret of this IflytekAiuiConfig.
 
         AIUI API密钥。
 
@@ -130,7 +130,7 @@ class IflytekAiuiConfig:
 
     @property
     def is_production(self):
-        """Gets the is_production of this IflytekAiuiConfig.
+        r"""Gets the is_production of this IflytekAiuiConfig.
 
         是否为正式环境
 
@@ -141,7 +141,7 @@ class IflytekAiuiConfig:
 
     @is_production.setter
     def is_production(self, is_production):
-        """Sets the is_production of this IflytekAiuiConfig.
+        r"""Sets the is_production of this IflytekAiuiConfig.
 
         是否为正式环境
 

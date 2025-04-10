@@ -25,7 +25,7 @@ class EsListenersResource:
     }
 
     def __init__(self, id=None):
-        """EsListenersResource
+        r"""EsListenersResource
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EsListenersResource:
 
     @property
     def id(self):
-        """Gets the id of this EsListenersResource.
+        r"""Gets the id of this EsListenersResource.
 
         监听器ID。
 
@@ -54,7 +54,7 @@ class EsListenersResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EsListenersResource.
+        r"""Sets the id of this EsListenersResource.
 
         监听器ID。
 

@@ -49,7 +49,7 @@ class SlowLogDownloadInfo:
     }
 
     def __init__(self, id=None, instance_id=None, node_id=None, workflow_id=None, file_name=None, file_size=None, file_link=None, bucket_name=None, created_at=None, updated_at=None, version=None, status=None, message=None):
-        """SlowLogDownloadInfo
+        r"""SlowLogDownloadInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class SlowLogDownloadInfo:
 
     @property
     def id(self):
-        """Gets the id of this SlowLogDownloadInfo.
+        r"""Gets the id of this SlowLogDownloadInfo.
 
         慢日志ID
 
@@ -138,7 +138,7 @@ class SlowLogDownloadInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SlowLogDownloadInfo.
+        r"""Sets the id of this SlowLogDownloadInfo.
 
         慢日志ID
 
@@ -149,7 +149,7 @@ class SlowLogDownloadInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SlowLogDownloadInfo.
+        r"""Gets the instance_id of this SlowLogDownloadInfo.
 
         实例ID
 
@@ -160,7 +160,7 @@ class SlowLogDownloadInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SlowLogDownloadInfo.
+        r"""Sets the instance_id of this SlowLogDownloadInfo.
 
         实例ID
 
@@ -171,7 +171,7 @@ class SlowLogDownloadInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SlowLogDownloadInfo.
+        r"""Gets the node_id of this SlowLogDownloadInfo.
 
         节点ID
 
@@ -182,7 +182,7 @@ class SlowLogDownloadInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SlowLogDownloadInfo.
+        r"""Sets the node_id of this SlowLogDownloadInfo.
 
         节点ID
 
@@ -193,7 +193,7 @@ class SlowLogDownloadInfo:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this SlowLogDownloadInfo.
+        r"""Gets the workflow_id of this SlowLogDownloadInfo.
 
         工作流ID
 
@@ -204,7 +204,7 @@ class SlowLogDownloadInfo:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this SlowLogDownloadInfo.
+        r"""Sets the workflow_id of this SlowLogDownloadInfo.
 
         工作流ID
 
@@ -215,7 +215,7 @@ class SlowLogDownloadInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this SlowLogDownloadInfo.
+        r"""Gets the file_name of this SlowLogDownloadInfo.
 
         文件名
 
@@ -226,7 +226,7 @@ class SlowLogDownloadInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this SlowLogDownloadInfo.
+        r"""Sets the file_name of this SlowLogDownloadInfo.
 
         文件名
 
@@ -237,7 +237,7 @@ class SlowLogDownloadInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this SlowLogDownloadInfo.
+        r"""Gets the file_size of this SlowLogDownloadInfo.
 
         文件大小, 单位：Byte
 
@@ -248,7 +248,7 @@ class SlowLogDownloadInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this SlowLogDownloadInfo.
+        r"""Sets the file_size of this SlowLogDownloadInfo.
 
         文件大小, 单位：Byte
 
@@ -259,7 +259,7 @@ class SlowLogDownloadInfo:
 
     @property
     def file_link(self):
-        """Gets the file_link of this SlowLogDownloadInfo.
+        r"""Gets the file_link of this SlowLogDownloadInfo.
 
         文件下载链接
 
@@ -270,7 +270,7 @@ class SlowLogDownloadInfo:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this SlowLogDownloadInfo.
+        r"""Sets the file_link of this SlowLogDownloadInfo.
 
         文件下载链接
 
@@ -281,7 +281,7 @@ class SlowLogDownloadInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this SlowLogDownloadInfo.
+        r"""Gets the bucket_name of this SlowLogDownloadInfo.
 
         桶名称
 
@@ -292,7 +292,7 @@ class SlowLogDownloadInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this SlowLogDownloadInfo.
+        r"""Sets the bucket_name of this SlowLogDownloadInfo.
 
         桶名称
 
@@ -303,7 +303,7 @@ class SlowLogDownloadInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SlowLogDownloadInfo.
+        r"""Gets the created_at of this SlowLogDownloadInfo.
 
         创建时间
 
@@ -314,7 +314,7 @@ class SlowLogDownloadInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SlowLogDownloadInfo.
+        r"""Sets the created_at of this SlowLogDownloadInfo.
 
         创建时间
 
@@ -325,7 +325,7 @@ class SlowLogDownloadInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SlowLogDownloadInfo.
+        r"""Gets the updated_at of this SlowLogDownloadInfo.
 
         更新时间
 
@@ -336,7 +336,7 @@ class SlowLogDownloadInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SlowLogDownloadInfo.
+        r"""Sets the updated_at of this SlowLogDownloadInfo.
 
         更新时间
 
@@ -347,7 +347,7 @@ class SlowLogDownloadInfo:
 
     @property
     def version(self):
-        """Gets the version of this SlowLogDownloadInfo.
+        r"""Gets the version of this SlowLogDownloadInfo.
 
         版本
 
@@ -358,7 +358,7 @@ class SlowLogDownloadInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SlowLogDownloadInfo.
+        r"""Sets the version of this SlowLogDownloadInfo.
 
         版本
 
@@ -369,7 +369,7 @@ class SlowLogDownloadInfo:
 
     @property
     def status(self):
-        """Gets the status of this SlowLogDownloadInfo.
+        r"""Gets the status of this SlowLogDownloadInfo.
 
         状态
 
@@ -380,7 +380,7 @@ class SlowLogDownloadInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SlowLogDownloadInfo.
+        r"""Sets the status of this SlowLogDownloadInfo.
 
         状态
 
@@ -391,7 +391,7 @@ class SlowLogDownloadInfo:
 
     @property
     def message(self):
-        """Gets the message of this SlowLogDownloadInfo.
+        r"""Gets the message of this SlowLogDownloadInfo.
 
         消息
 
@@ -402,7 +402,7 @@ class SlowLogDownloadInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SlowLogDownloadInfo.
+        r"""Sets the message of this SlowLogDownloadInfo.
 
         消息
 

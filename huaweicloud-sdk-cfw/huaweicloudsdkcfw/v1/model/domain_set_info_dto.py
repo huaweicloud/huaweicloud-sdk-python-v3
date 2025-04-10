@@ -27,7 +27,7 @@ class DomainSetInfoDto:
     }
 
     def __init__(self, domain_name=None, description=None):
-        """DomainSetInfoDto
+        r"""DomainSetInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DomainSetInfoDto:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainSetInfoDto.
+        r"""Gets the domain_name of this DomainSetInfoDto.
 
         域名，如www.test.com
 
@@ -60,7 +60,7 @@ class DomainSetInfoDto:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainSetInfoDto.
+        r"""Sets the domain_name of this DomainSetInfoDto.
 
         域名，如www.test.com
 
@@ -71,7 +71,7 @@ class DomainSetInfoDto:
 
     @property
     def description(self):
-        """Gets the description of this DomainSetInfoDto.
+        r"""Gets the description of this DomainSetInfoDto.
 
         域名描述
 
@@ -82,7 +82,7 @@ class DomainSetInfoDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DomainSetInfoDto.
+        r"""Sets the description of this DomainSetInfoDto.
 
         域名描述
 

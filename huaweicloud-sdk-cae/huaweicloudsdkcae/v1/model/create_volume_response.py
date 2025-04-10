@@ -24,7 +24,7 @@ class CreateVolumeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateVolumeResponse
+        r"""CreateVolumeResponse
 
         The model defined in huaweicloud sdk
 

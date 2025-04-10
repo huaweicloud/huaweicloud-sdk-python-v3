@@ -33,7 +33,7 @@ class MigrateNodesSpec:
     }
 
     def __init__(self, os=None, extend_param=None, login=None, runtime=None, nodes=None):
-        """MigrateNodesSpec
+        r"""MigrateNodesSpec
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class MigrateNodesSpec:
 
     @property
     def os(self):
-        """Gets the os of this MigrateNodesSpec.
+        r"""Gets the os of this MigrateNodesSpec.
 
         操作系统类型，须精确到版本号。 当指定“alpha.cce/NodeImageID”参数时，“os”参数必须和用户自定义镜像的操作系统一致。 
 
@@ -79,7 +79,7 @@ class MigrateNodesSpec:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this MigrateNodesSpec.
+        r"""Sets the os of this MigrateNodesSpec.
 
         操作系统类型，须精确到版本号。 当指定“alpha.cce/NodeImageID”参数时，“os”参数必须和用户自定义镜像的操作系统一致。 
 
@@ -90,7 +90,7 @@ class MigrateNodesSpec:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this MigrateNodesSpec.
+        r"""Gets the extend_param of this MigrateNodesSpec.
 
         :return: The extend_param of this MigrateNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
@@ -99,7 +99,7 @@ class MigrateNodesSpec:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this MigrateNodesSpec.
+        r"""Sets the extend_param of this MigrateNodesSpec.
 
         :param extend_param: The extend_param of this MigrateNodesSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
@@ -108,7 +108,7 @@ class MigrateNodesSpec:
 
     @property
     def login(self):
-        """Gets the login of this MigrateNodesSpec.
+        r"""Gets the login of this MigrateNodesSpec.
 
         :return: The login of this MigrateNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
@@ -117,7 +117,7 @@ class MigrateNodesSpec:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this MigrateNodesSpec.
+        r"""Sets the login of this MigrateNodesSpec.
 
         :param login: The login of this MigrateNodesSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -126,7 +126,7 @@ class MigrateNodesSpec:
 
     @property
     def runtime(self):
-        """Gets the runtime of this MigrateNodesSpec.
+        r"""Gets the runtime of this MigrateNodesSpec.
 
         :return: The runtime of this MigrateNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -135,7 +135,7 @@ class MigrateNodesSpec:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this MigrateNodesSpec.
+        r"""Sets the runtime of this MigrateNodesSpec.
 
         :param runtime: The runtime of this MigrateNodesSpec.
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -144,7 +144,7 @@ class MigrateNodesSpec:
 
     @property
     def nodes(self):
-        """Gets the nodes of this MigrateNodesSpec.
+        r"""Gets the nodes of this MigrateNodesSpec.
 
         待操作节点列表
 
@@ -155,7 +155,7 @@ class MigrateNodesSpec:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this MigrateNodesSpec.
+        r"""Sets the nodes of this MigrateNodesSpec.
 
         待操作节点列表
 

@@ -25,7 +25,7 @@ class Action:
     }
 
     def __init__(self, category=None):
-        """Action
+        r"""Action
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Action:
 
     @property
     def category(self):
-        """Gets the category of this Action.
+        r"""Gets the category of this Action.
 
         特征反爬虫中防护动作信息   - log：仅记录   - block：拦截
 
@@ -54,7 +54,7 @@ class Action:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this Action.
+        r"""Sets the category of this Action.
 
         特征反爬虫中防护动作信息   - log：仅记录   - block：拦截
 

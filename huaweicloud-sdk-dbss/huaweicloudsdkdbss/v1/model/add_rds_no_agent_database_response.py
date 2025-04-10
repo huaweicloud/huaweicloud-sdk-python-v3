@@ -28,7 +28,7 @@ class AddRdsNoAgentDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, illegal_db_id=None, legal_db_id=None):
-        """AddRdsNoAgentDatabaseResponse
+        r"""AddRdsNoAgentDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddRdsNoAgentDatabaseResponse(SdkResponse):
 
     @property
     def illegal_db_id(self):
-        """Gets the illegal_db_id of this AddRdsNoAgentDatabaseResponse.
+        r"""Gets the illegal_db_id of this AddRdsNoAgentDatabaseResponse.
 
         添加失败的数据库实例id
 
@@ -62,7 +62,7 @@ class AddRdsNoAgentDatabaseResponse(SdkResponse):
 
     @illegal_db_id.setter
     def illegal_db_id(self, illegal_db_id):
-        """Sets the illegal_db_id of this AddRdsNoAgentDatabaseResponse.
+        r"""Sets the illegal_db_id of this AddRdsNoAgentDatabaseResponse.
 
         添加失败的数据库实例id
 
@@ -73,7 +73,7 @@ class AddRdsNoAgentDatabaseResponse(SdkResponse):
 
     @property
     def legal_db_id(self):
-        """Gets the legal_db_id of this AddRdsNoAgentDatabaseResponse.
+        r"""Gets the legal_db_id of this AddRdsNoAgentDatabaseResponse.
 
         添加成功的数据库实例id
 
@@ -84,7 +84,7 @@ class AddRdsNoAgentDatabaseResponse(SdkResponse):
 
     @legal_db_id.setter
     def legal_db_id(self, legal_db_id):
-        """Sets the legal_db_id of this AddRdsNoAgentDatabaseResponse.
+        r"""Sets the legal_db_id of this AddRdsNoAgentDatabaseResponse.
 
         添加成功的数据库实例id
 

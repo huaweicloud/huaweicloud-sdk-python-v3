@@ -35,7 +35,7 @@ class PolicyFilterDefinition:
     }
 
     def __init__(self, region_id=None, resource_provider=None, resource_type=None, resource_id=None, tag_key=None, tag_value=None):
-        """PolicyFilterDefinition
+        r"""PolicyFilterDefinition
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PolicyFilterDefinition:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PolicyFilterDefinition.
+        r"""Gets the region_id of this PolicyFilterDefinition.
 
         区域ID
 
@@ -89,7 +89,7 @@ class PolicyFilterDefinition:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PolicyFilterDefinition.
+        r"""Sets the region_id of this PolicyFilterDefinition.
 
         区域ID
 
@@ -100,7 +100,7 @@ class PolicyFilterDefinition:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this PolicyFilterDefinition.
+        r"""Gets the resource_provider of this PolicyFilterDefinition.
 
         云服务名称
 
@@ -111,7 +111,7 @@ class PolicyFilterDefinition:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this PolicyFilterDefinition.
+        r"""Sets the resource_provider of this PolicyFilterDefinition.
 
         云服务名称
 
@@ -122,7 +122,7 @@ class PolicyFilterDefinition:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PolicyFilterDefinition.
+        r"""Gets the resource_type of this PolicyFilterDefinition.
 
         资源类型
 
@@ -133,7 +133,7 @@ class PolicyFilterDefinition:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PolicyFilterDefinition.
+        r"""Sets the resource_type of this PolicyFilterDefinition.
 
         资源类型
 
@@ -144,7 +144,7 @@ class PolicyFilterDefinition:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PolicyFilterDefinition.
+        r"""Gets the resource_id of this PolicyFilterDefinition.
 
         资源ID
 
@@ -155,7 +155,7 @@ class PolicyFilterDefinition:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PolicyFilterDefinition.
+        r"""Sets the resource_id of this PolicyFilterDefinition.
 
         资源ID
 
@@ -166,7 +166,7 @@ class PolicyFilterDefinition:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this PolicyFilterDefinition.
+        r"""Gets the tag_key of this PolicyFilterDefinition.
 
         标签键
 
@@ -177,7 +177,7 @@ class PolicyFilterDefinition:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this PolicyFilterDefinition.
+        r"""Sets the tag_key of this PolicyFilterDefinition.
 
         标签键
 
@@ -188,7 +188,7 @@ class PolicyFilterDefinition:
 
     @property
     def tag_value(self):
-        """Gets the tag_value of this PolicyFilterDefinition.
+        r"""Gets the tag_value of this PolicyFilterDefinition.
 
         标签值
 
@@ -199,7 +199,7 @@ class PolicyFilterDefinition:
 
     @tag_value.setter
     def tag_value(self, tag_value):
-        """Sets the tag_value of this PolicyFilterDefinition.
+        r"""Sets the tag_value of this PolicyFilterDefinition.
 
         标签值
 

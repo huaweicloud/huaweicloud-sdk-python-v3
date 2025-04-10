@@ -27,7 +27,7 @@ class AclApiBindingCreate:
     }
 
     def __init__(self, acl_id=None, publish_ids=None):
-        """AclApiBindingCreate
+        r"""AclApiBindingCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AclApiBindingCreate:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this AclApiBindingCreate.
+        r"""Gets the acl_id of this AclApiBindingCreate.
 
         ACL策略编号
 
@@ -59,7 +59,7 @@ class AclApiBindingCreate:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this AclApiBindingCreate.
+        r"""Sets the acl_id of this AclApiBindingCreate.
 
         ACL策略编号
 
@@ -70,7 +70,7 @@ class AclApiBindingCreate:
 
     @property
     def publish_ids(self):
-        """Gets the publish_ids of this AclApiBindingCreate.
+        r"""Gets the publish_ids of this AclApiBindingCreate.
 
         API发布记录编号
 
@@ -81,7 +81,7 @@ class AclApiBindingCreate:
 
     @publish_ids.setter
     def publish_ids(self, publish_ids):
-        """Sets the publish_ids of this AclApiBindingCreate.
+        r"""Sets the publish_ids of this AclApiBindingCreate.
 
         API发布记录编号
 

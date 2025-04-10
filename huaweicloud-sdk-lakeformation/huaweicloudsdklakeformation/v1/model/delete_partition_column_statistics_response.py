@@ -24,7 +24,7 @@ class DeletePartitionColumnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePartitionColumnStatisticsResponse
+        r"""DeletePartitionColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 

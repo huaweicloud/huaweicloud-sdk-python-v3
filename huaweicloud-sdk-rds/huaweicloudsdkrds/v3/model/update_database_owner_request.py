@@ -27,7 +27,7 @@ class UpdateDatabaseOwnerRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateDatabaseOwnerRequest
+        r"""UpdateDatabaseOwnerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDatabaseOwnerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDatabaseOwnerRequest.
+        r"""Gets the instance_id of this UpdateDatabaseOwnerRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class UpdateDatabaseOwnerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDatabaseOwnerRequest.
+        r"""Sets the instance_id of this UpdateDatabaseOwnerRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class UpdateDatabaseOwnerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatabaseOwnerRequest.
+        r"""Gets the body of this UpdateDatabaseOwnerRequest.
 
         :return: The body of this UpdateDatabaseOwnerRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDatabaseOwnerRequestBody`
@@ -80,7 +80,7 @@ class UpdateDatabaseOwnerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatabaseOwnerRequest.
+        r"""Sets the body of this UpdateDatabaseOwnerRequest.
 
         :param body: The body of this UpdateDatabaseOwnerRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateDatabaseOwnerRequestBody`

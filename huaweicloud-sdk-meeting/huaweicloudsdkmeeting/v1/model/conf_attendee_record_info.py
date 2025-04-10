@@ -37,7 +37,7 @@ class ConfAttendeeRecordInfo:
     }
 
     def __init__(self, display_name=None, call_number=None, device_type=None, join_time=None, left_time=None, media_type=None, dept_name=None):
-        """ConfAttendeeRecordInfo
+        r"""ConfAttendeeRecordInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ConfAttendeeRecordInfo.
+        r"""Gets the display_name of this ConfAttendeeRecordInfo.
 
         与会者名称。
 
@@ -96,7 +96,7 @@ class ConfAttendeeRecordInfo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ConfAttendeeRecordInfo.
+        r"""Sets the display_name of this ConfAttendeeRecordInfo.
 
         与会者名称。
 
@@ -107,7 +107,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def call_number(self):
-        """Gets the call_number of this ConfAttendeeRecordInfo.
+        r"""Gets the call_number of this ConfAttendeeRecordInfo.
 
         号码。
 
@@ -118,7 +118,7 @@ class ConfAttendeeRecordInfo:
 
     @call_number.setter
     def call_number(self, call_number):
-        """Sets the call_number of this ConfAttendeeRecordInfo.
+        r"""Sets the call_number of this ConfAttendeeRecordInfo.
 
         号码。
 
@@ -129,7 +129,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def device_type(self):
-        """Gets the device_type of this ConfAttendeeRecordInfo.
+        r"""Gets the device_type of this ConfAttendeeRecordInfo.
 
         设备类型。
 
@@ -140,7 +140,7 @@ class ConfAttendeeRecordInfo:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ConfAttendeeRecordInfo.
+        r"""Sets the device_type of this ConfAttendeeRecordInfo.
 
         设备类型。
 
@@ -151,7 +151,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def join_time(self):
-        """Gets the join_time of this ConfAttendeeRecordInfo.
+        r"""Gets the join_time of this ConfAttendeeRecordInfo.
 
         入会时间（UTC时间，单位毫秒）。
 
@@ -162,7 +162,7 @@ class ConfAttendeeRecordInfo:
 
     @join_time.setter
     def join_time(self, join_time):
-        """Sets the join_time of this ConfAttendeeRecordInfo.
+        r"""Sets the join_time of this ConfAttendeeRecordInfo.
 
         入会时间（UTC时间，单位毫秒）。
 
@@ -173,7 +173,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def left_time(self):
-        """Gets the left_time of this ConfAttendeeRecordInfo.
+        r"""Gets the left_time of this ConfAttendeeRecordInfo.
 
         离会时间（UTC时间，单位毫秒）。
 
@@ -184,7 +184,7 @@ class ConfAttendeeRecordInfo:
 
     @left_time.setter
     def left_time(self, left_time):
-        """Sets the left_time of this ConfAttendeeRecordInfo.
+        r"""Sets the left_time of this ConfAttendeeRecordInfo.
 
         离会时间（UTC时间，单位毫秒）。
 
@@ -195,7 +195,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def media_type(self):
-        """Gets the media_type of this ConfAttendeeRecordInfo.
+        r"""Gets the media_type of this ConfAttendeeRecordInfo.
 
         媒体类型。
 
@@ -206,7 +206,7 @@ class ConfAttendeeRecordInfo:
 
     @media_type.setter
     def media_type(self, media_type):
-        """Sets the media_type of this ConfAttendeeRecordInfo.
+        r"""Sets the media_type of this ConfAttendeeRecordInfo.
 
         媒体类型。
 
@@ -217,7 +217,7 @@ class ConfAttendeeRecordInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ConfAttendeeRecordInfo.
+        r"""Gets the dept_name of this ConfAttendeeRecordInfo.
 
         部门名称。
 
@@ -228,7 +228,7 @@ class ConfAttendeeRecordInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ConfAttendeeRecordInfo.
+        r"""Sets the dept_name of this ConfAttendeeRecordInfo.
 
         部门名称。
 

@@ -36,7 +36,7 @@ class CreateProductTopicResponse(SdkResponse):
     }
 
     def __init__(self, product_id=None, topic_id=None, permission=None, topic_name=None, version=None, description=None):
-        """CreateProductTopicResponse
+        r"""CreateProductTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateProductTopicResponse.
+        r"""Gets the product_id of this CreateProductTopicResponse.
 
         归属产品ID
 
@@ -90,7 +90,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateProductTopicResponse.
+        r"""Sets the product_id of this CreateProductTopicResponse.
 
         归属产品ID
 
@@ -101,7 +101,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this CreateProductTopicResponse.
+        r"""Gets the topic_id of this CreateProductTopicResponse.
 
         产品主题ID
 
@@ -112,7 +112,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this CreateProductTopicResponse.
+        r"""Sets the topic_id of this CreateProductTopicResponse.
 
         产品主题ID
 
@@ -123,7 +123,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @property
     def permission(self):
-        """Gets the permission of this CreateProductTopicResponse.
+        r"""Gets the permission of this CreateProductTopicResponse.
 
         主题权限 0-发布 1-订阅
 
@@ -134,7 +134,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this CreateProductTopicResponse.
+        r"""Sets the permission of this CreateProductTopicResponse.
 
         主题权限 0-发布 1-订阅
 
@@ -145,7 +145,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this CreateProductTopicResponse.
+        r"""Gets the topic_name of this CreateProductTopicResponse.
 
         主题名称
 
@@ -156,7 +156,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this CreateProductTopicResponse.
+        r"""Sets the topic_name of this CreateProductTopicResponse.
 
         主题名称
 
@@ -167,7 +167,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateProductTopicResponse.
+        r"""Gets the version of this CreateProductTopicResponse.
 
         版本号
 
@@ -178,7 +178,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateProductTopicResponse.
+        r"""Sets the version of this CreateProductTopicResponse.
 
         版本号
 
@@ -189,7 +189,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateProductTopicResponse.
+        r"""Gets the description of this CreateProductTopicResponse.
 
         描述
 
@@ -200,7 +200,7 @@ class CreateProductTopicResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProductTopicResponse.
+        r"""Sets the description of this CreateProductTopicResponse.
 
         描述
 

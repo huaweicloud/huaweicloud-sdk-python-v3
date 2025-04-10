@@ -29,7 +29,7 @@ class CreateClusterJobReq:
     }
 
     def __init__(self, method=None, file=None, output_dir=None):
-        """CreateClusterJobReq
+        r"""CreateClusterJobReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateClusterJobReq:
 
     @property
     def method(self):
-        """Gets the method of this CreateClusterJobReq.
+        r"""Gets the method of this CreateClusterJobReq.
 
         聚类方法,当前仅支持hiq_mc
 
@@ -65,7 +65,7 @@ class CreateClusterJobReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this CreateClusterJobReq.
+        r"""Sets the method of this CreateClusterJobReq.
 
         聚类方法,当前仅支持hiq_mc
 
@@ -76,7 +76,7 @@ class CreateClusterJobReq:
 
     @property
     def file(self):
-        """Gets the file of this CreateClusterJobReq.
+        r"""Gets the file of this CreateClusterJobReq.
 
         分子聚类源数据
 
@@ -87,7 +87,7 @@ class CreateClusterJobReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateClusterJobReq.
+        r"""Sets the file of this CreateClusterJobReq.
 
         分子聚类源数据
 
@@ -98,7 +98,7 @@ class CreateClusterJobReq:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this CreateClusterJobReq.
+        r"""Gets the output_dir of this CreateClusterJobReq.
 
         分子聚类输出结果
 
@@ -109,7 +109,7 @@ class CreateClusterJobReq:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this CreateClusterJobReq.
+        r"""Sets the output_dir of this CreateClusterJobReq.
 
         分子聚类输出结果
 

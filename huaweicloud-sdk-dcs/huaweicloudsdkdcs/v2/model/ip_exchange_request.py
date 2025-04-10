@@ -27,7 +27,7 @@ class IpExchangeRequest:
     }
 
     def __init__(self, exchanged_ip=None, is_exchange_domain=None):
-        """IpExchangeRequest
+        r"""IpExchangeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpExchangeRequest:
 
     @property
     def exchanged_ip(self):
-        """Gets the exchanged_ip of this IpExchangeRequest.
+        r"""Gets the exchanged_ip of this IpExchangeRequest.
 
         待交换的ip地址
 
@@ -59,7 +59,7 @@ class IpExchangeRequest:
 
     @exchanged_ip.setter
     def exchanged_ip(self, exchanged_ip):
-        """Sets the exchanged_ip of this IpExchangeRequest.
+        r"""Sets the exchanged_ip of this IpExchangeRequest.
 
         待交换的ip地址
 
@@ -70,7 +70,7 @@ class IpExchangeRequest:
 
     @property
     def is_exchange_domain(self):
-        """Gets the is_exchange_domain of this IpExchangeRequest.
+        r"""Gets the is_exchange_domain of this IpExchangeRequest.
 
         是否交换domain
 
@@ -81,7 +81,7 @@ class IpExchangeRequest:
 
     @is_exchange_domain.setter
     def is_exchange_domain(self, is_exchange_domain):
-        """Sets the is_exchange_domain of this IpExchangeRequest.
+        r"""Sets the is_exchange_domain of this IpExchangeRequest.
 
         是否交换domain
 

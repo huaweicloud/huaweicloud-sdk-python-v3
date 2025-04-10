@@ -24,7 +24,7 @@ class DeleteLimitTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteLimitTaskResponse
+        r"""DeleteLimitTaskResponse
 
         The model defined in huaweicloud sdk
 

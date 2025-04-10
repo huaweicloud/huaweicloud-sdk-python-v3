@@ -32,7 +32,7 @@ class ShowDomainResponse(SdkResponse):
     }
 
     def __init__(self, project_name=None, project_id=None, domain_id=None, domain_name=None):
-        """ShowDomainResponse
+        r"""ShowDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDomainResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowDomainResponse.
+        r"""Gets the project_name of this ShowDomainResponse.
 
         
 
@@ -76,7 +76,7 @@ class ShowDomainResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowDomainResponse.
+        r"""Sets the project_name of this ShowDomainResponse.
 
         
 
@@ -87,7 +87,7 @@ class ShowDomainResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowDomainResponse.
+        r"""Gets the project_id of this ShowDomainResponse.
 
         
 
@@ -98,7 +98,7 @@ class ShowDomainResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowDomainResponse.
+        r"""Sets the project_id of this ShowDomainResponse.
 
         
 
@@ -109,7 +109,7 @@ class ShowDomainResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainResponse.
+        r"""Gets the domain_id of this ShowDomainResponse.
 
         
 
@@ -120,7 +120,7 @@ class ShowDomainResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainResponse.
+        r"""Sets the domain_id of this ShowDomainResponse.
 
         
 
@@ -131,7 +131,7 @@ class ShowDomainResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainResponse.
+        r"""Gets the domain_name of this ShowDomainResponse.
 
         
 
@@ -142,7 +142,7 @@ class ShowDomainResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainResponse.
+        r"""Sets the domain_name of this ShowDomainResponse.
 
         
 

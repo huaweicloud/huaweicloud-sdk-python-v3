@@ -29,7 +29,7 @@ class ParamGroupParameterDifferences:
     }
 
     def __init__(self, parameter_name=None, source_value=None, target_value=None):
-        """ParamGroupParameterDifferences
+        r"""ParamGroupParameterDifferences
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ParamGroupParameterDifferences:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ParamGroupParameterDifferences.
+        r"""Gets the parameter_name of this ParamGroupParameterDifferences.
 
         参数名称。
 
@@ -68,7 +68,7 @@ class ParamGroupParameterDifferences:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ParamGroupParameterDifferences.
+        r"""Sets the parameter_name of this ParamGroupParameterDifferences.
 
         参数名称。
 
@@ -79,7 +79,7 @@ class ParamGroupParameterDifferences:
 
     @property
     def source_value(self):
-        """Gets the source_value of this ParamGroupParameterDifferences.
+        r"""Gets the source_value of this ParamGroupParameterDifferences.
 
         源参数模板中的参数值。
 
@@ -90,7 +90,7 @@ class ParamGroupParameterDifferences:
 
     @source_value.setter
     def source_value(self, source_value):
-        """Sets the source_value of this ParamGroupParameterDifferences.
+        r"""Sets the source_value of this ParamGroupParameterDifferences.
 
         源参数模板中的参数值。
 
@@ -101,7 +101,7 @@ class ParamGroupParameterDifferences:
 
     @property
     def target_value(self):
-        """Gets the target_value of this ParamGroupParameterDifferences.
+        r"""Gets the target_value of this ParamGroupParameterDifferences.
 
         目标参数模板中的参数值。
 
@@ -112,7 +112,7 @@ class ParamGroupParameterDifferences:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this ParamGroupParameterDifferences.
+        r"""Sets the target_value of this ParamGroupParameterDifferences.
 
         目标参数模板中的参数值。
 

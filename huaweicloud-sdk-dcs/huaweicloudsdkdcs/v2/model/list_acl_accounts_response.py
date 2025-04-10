@@ -26,7 +26,7 @@ class ListAclAccountsResponse(SdkResponse):
     }
 
     def __init__(self, accounts=None):
-        """ListAclAccountsResponse
+        r"""ListAclAccountsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAclAccountsResponse(SdkResponse):
 
     @property
     def accounts(self):
-        """Gets the accounts of this ListAclAccountsResponse.
+        r"""Gets the accounts of this ListAclAccountsResponse.
 
         ACL账号列表
 
@@ -55,7 +55,7 @@ class ListAclAccountsResponse(SdkResponse):
 
     @accounts.setter
     def accounts(self, accounts):
-        """Sets the accounts of this ListAclAccountsResponse.
+        r"""Sets the accounts of this ListAclAccountsResponse.
 
         ACL账号列表
 

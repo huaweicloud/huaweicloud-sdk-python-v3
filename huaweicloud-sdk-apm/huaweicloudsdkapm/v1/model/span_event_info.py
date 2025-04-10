@@ -99,7 +99,7 @@ class SpanEventInfo:
     }
 
     def __init__(self, env_name=None, app_name=None, indent=None, region=None, host_name=None, ip_address=None, instance_name=None, event_id=None, next_span_id=None, source_event_id=None, method=None, children_event_count=None, discard=None, argument=None, attachment=None, global_trace_id=None, global_path=None, trace_id=None, span_id=None, env_id=None, instance_id=None, app_id=None, biz_id=None, domain_id=None, source=None, real_source=None, start_time=None, time_used=None, code=None, class_name=None, is_async=None, tags=None, has_error=None, error_reasons=None, type=None, http_method=None, biz_code=None, id=None):
-        """SpanEventInfo
+        r"""SpanEventInfo
 
         The model defined in huaweicloud sdk
 
@@ -302,7 +302,7 @@ class SpanEventInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this SpanEventInfo.
+        r"""Gets the env_name of this SpanEventInfo.
 
         环境名称。
 
@@ -313,7 +313,7 @@ class SpanEventInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this SpanEventInfo.
+        r"""Sets the env_name of this SpanEventInfo.
 
         环境名称。
 
@@ -324,7 +324,7 @@ class SpanEventInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SpanEventInfo.
+        r"""Gets the app_name of this SpanEventInfo.
 
         组件名称。
 
@@ -335,7 +335,7 @@ class SpanEventInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SpanEventInfo.
+        r"""Sets the app_name of this SpanEventInfo.
 
         组件名称。
 
@@ -346,7 +346,7 @@ class SpanEventInfo:
 
     @property
     def indent(self):
-        """Gets the indent of this SpanEventInfo.
+        r"""Gets the indent of this SpanEventInfo.
 
         缩进。
 
@@ -357,7 +357,7 @@ class SpanEventInfo:
 
     @indent.setter
     def indent(self, indent):
-        """Sets the indent of this SpanEventInfo.
+        r"""Sets the indent of this SpanEventInfo.
 
         缩进。
 
@@ -368,7 +368,7 @@ class SpanEventInfo:
 
     @property
     def region(self):
-        """Gets the region of this SpanEventInfo.
+        r"""Gets the region of this SpanEventInfo.
 
         区域。
 
@@ -379,7 +379,7 @@ class SpanEventInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SpanEventInfo.
+        r"""Sets the region of this SpanEventInfo.
 
         区域。
 
@@ -390,7 +390,7 @@ class SpanEventInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this SpanEventInfo.
+        r"""Gets the host_name of this SpanEventInfo.
 
         主机名称。
 
@@ -401,7 +401,7 @@ class SpanEventInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this SpanEventInfo.
+        r"""Sets the host_name of this SpanEventInfo.
 
         主机名称。
 
@@ -412,7 +412,7 @@ class SpanEventInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this SpanEventInfo.
+        r"""Gets the ip_address of this SpanEventInfo.
 
         ip地址。
 
@@ -423,7 +423,7 @@ class SpanEventInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this SpanEventInfo.
+        r"""Sets the ip_address of this SpanEventInfo.
 
         ip地址。
 
@@ -434,7 +434,7 @@ class SpanEventInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this SpanEventInfo.
+        r"""Gets the instance_name of this SpanEventInfo.
 
         实例名称。
 
@@ -445,7 +445,7 @@ class SpanEventInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this SpanEventInfo.
+        r"""Sets the instance_name of this SpanEventInfo.
 
         实例名称。
 
@@ -456,7 +456,7 @@ class SpanEventInfo:
 
     @property
     def event_id(self):
-        """Gets the event_id of this SpanEventInfo.
+        r"""Gets the event_id of this SpanEventInfo.
 
         event的ID，在一个具体的span下面event的编号，一般是1-1-2这种格式。
 
@@ -467,7 +467,7 @@ class SpanEventInfo:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this SpanEventInfo.
+        r"""Sets the event_id of this SpanEventInfo.
 
         event的ID，在一个具体的span下面event的编号，一般是1-1-2这种格式。
 
@@ -478,7 +478,7 @@ class SpanEventInfo:
 
     @property
     def next_span_id(self):
-        """Gets the next_span_id of this SpanEventInfo.
+        r"""Gets the next_span_id of this SpanEventInfo.
 
         产生下一个span的源的eventId。
 
@@ -489,7 +489,7 @@ class SpanEventInfo:
 
     @next_span_id.setter
     def next_span_id(self, next_span_id):
-        """Sets the next_span_id of this SpanEventInfo.
+        r"""Sets the next_span_id of this SpanEventInfo.
 
         产生下一个span的源的eventId。
 
@@ -500,7 +500,7 @@ class SpanEventInfo:
 
     @property
     def source_event_id(self):
-        """Gets the source_event_id of this SpanEventInfo.
+        r"""Gets the source_event_id of this SpanEventInfo.
 
         调用方的eventid。
 
@@ -511,7 +511,7 @@ class SpanEventInfo:
 
     @source_event_id.setter
     def source_event_id(self, source_event_id):
-        """Sets the source_event_id of this SpanEventInfo.
+        r"""Sets the source_event_id of this SpanEventInfo.
 
         调用方的eventid。
 
@@ -522,7 +522,7 @@ class SpanEventInfo:
 
     @property
     def method(self):
-        """Gets the method of this SpanEventInfo.
+        r"""Gets the method of this SpanEventInfo.
 
         方法名。
 
@@ -533,7 +533,7 @@ class SpanEventInfo:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this SpanEventInfo.
+        r"""Sets the method of this SpanEventInfo.
 
         方法名。
 
@@ -544,7 +544,7 @@ class SpanEventInfo:
 
     @property
     def children_event_count(self):
-        """Gets the children_event_count of this SpanEventInfo.
+        r"""Gets the children_event_count of this SpanEventInfo.
 
         子event的个数。
 
@@ -555,7 +555,7 @@ class SpanEventInfo:
 
     @children_event_count.setter
     def children_event_count(self, children_event_count):
-        """Sets the children_event_count of this SpanEventInfo.
+        r"""Sets the children_event_count of this SpanEventInfo.
 
         子event的个数。
 
@@ -566,7 +566,7 @@ class SpanEventInfo:
 
     @property
     def discard(self):
-        """Gets the discard of this SpanEventInfo.
+        r"""Gets the discard of this SpanEventInfo.
 
         丢弃的子event个数，key是类型。
 
@@ -577,7 +577,7 @@ class SpanEventInfo:
 
     @discard.setter
     def discard(self, discard):
-        """Sets the discard of this SpanEventInfo.
+        r"""Sets the discard of this SpanEventInfo.
 
         丢弃的子event个数，key是类型。
 
@@ -588,7 +588,7 @@ class SpanEventInfo:
 
     @property
     def argument(self):
-        """Gets the argument of this SpanEventInfo.
+        r"""Gets the argument of this SpanEventInfo.
 
         界面展示的参数，每个类型的event自己来实现。
 
@@ -599,7 +599,7 @@ class SpanEventInfo:
 
     @argument.setter
     def argument(self, argument):
-        """Sets the argument of this SpanEventInfo.
+        r"""Sets the argument of this SpanEventInfo.
 
         界面展示的参数，每个类型的event自己来实现。
 
@@ -610,7 +610,7 @@ class SpanEventInfo:
 
     @property
     def attachment(self):
-        """Gets the attachment of this SpanEventInfo.
+        r"""Gets the attachment of this SpanEventInfo.
 
         注册信息里面的attachment。
 
@@ -621,7 +621,7 @@ class SpanEventInfo:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this SpanEventInfo.
+        r"""Sets the attachment of this SpanEventInfo.
 
         注册信息里面的attachment。
 
@@ -632,7 +632,7 @@ class SpanEventInfo:
 
     @property
     def global_trace_id(self):
-        """Gets the global_trace_id of this SpanEventInfo.
+        r"""Gets the global_trace_id of this SpanEventInfo.
 
         vTraceId，虚拟traceId。
 
@@ -643,7 +643,7 @@ class SpanEventInfo:
 
     @global_trace_id.setter
     def global_trace_id(self, global_trace_id):
-        """Sets the global_trace_id of this SpanEventInfo.
+        r"""Sets the global_trace_id of this SpanEventInfo.
 
         vTraceId，虚拟traceId。
 
@@ -654,7 +654,7 @@ class SpanEventInfo:
 
     @property
     def global_path(self):
-        """Gets the global_path of this SpanEventInfo.
+        r"""Gets the global_path of this SpanEventInfo.
 
         虚拟traceId经过的path路径。
 
@@ -665,7 +665,7 @@ class SpanEventInfo:
 
     @global_path.setter
     def global_path(self, global_path):
-        """Sets the global_path of this SpanEventInfo.
+        r"""Sets the global_path of this SpanEventInfo.
 
         虚拟traceId经过的path路径。
 
@@ -676,7 +676,7 @@ class SpanEventInfo:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this SpanEventInfo.
+        r"""Gets the trace_id of this SpanEventInfo.
 
         traceId。
 
@@ -687,7 +687,7 @@ class SpanEventInfo:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this SpanEventInfo.
+        r"""Sets the trace_id of this SpanEventInfo.
 
         traceId。
 
@@ -698,7 +698,7 @@ class SpanEventInfo:
 
     @property
     def span_id(self):
-        """Gets the span_id of this SpanEventInfo.
+        r"""Gets the span_id of this SpanEventInfo.
 
         span id。
 
@@ -709,7 +709,7 @@ class SpanEventInfo:
 
     @span_id.setter
     def span_id(self, span_id):
-        """Sets the span_id of this SpanEventInfo.
+        r"""Sets the span_id of this SpanEventInfo.
 
         span id。
 
@@ -720,7 +720,7 @@ class SpanEventInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this SpanEventInfo.
+        r"""Gets the env_id of this SpanEventInfo.
 
         环境id。
 
@@ -731,7 +731,7 @@ class SpanEventInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this SpanEventInfo.
+        r"""Sets the env_id of this SpanEventInfo.
 
         环境id。
 
@@ -742,7 +742,7 @@ class SpanEventInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SpanEventInfo.
+        r"""Gets the instance_id of this SpanEventInfo.
 
         实例id。
 
@@ -753,7 +753,7 @@ class SpanEventInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SpanEventInfo.
+        r"""Sets the instance_id of this SpanEventInfo.
 
         实例id。
 
@@ -764,7 +764,7 @@ class SpanEventInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SpanEventInfo.
+        r"""Gets the app_id of this SpanEventInfo.
 
         组件id。
 
@@ -775,7 +775,7 @@ class SpanEventInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SpanEventInfo.
+        r"""Sets the app_id of this SpanEventInfo.
 
         组件id。
 
@@ -786,7 +786,7 @@ class SpanEventInfo:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this SpanEventInfo.
+        r"""Gets the biz_id of this SpanEventInfo.
 
         应用id。
 
@@ -797,7 +797,7 @@ class SpanEventInfo:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this SpanEventInfo.
+        r"""Sets the biz_id of this SpanEventInfo.
 
         应用id。
 
@@ -808,7 +808,7 @@ class SpanEventInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SpanEventInfo.
+        r"""Gets the domain_id of this SpanEventInfo.
 
         租户id。
 
@@ -819,7 +819,7 @@ class SpanEventInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SpanEventInfo.
+        r"""Sets the domain_id of this SpanEventInfo.
 
         租户id。
 
@@ -830,7 +830,7 @@ class SpanEventInfo:
 
     @property
     def source(self):
-        """Gets the source of this SpanEventInfo.
+        r"""Gets the source of this SpanEventInfo.
 
         只有是根event也就是span的时候有值。
 
@@ -841,7 +841,7 @@ class SpanEventInfo:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this SpanEventInfo.
+        r"""Sets the source of this SpanEventInfo.
 
         只有是根event也就是span的时候有值。
 
@@ -852,7 +852,7 @@ class SpanEventInfo:
 
     @property
     def real_source(self):
-        """Gets the real_source of this SpanEventInfo.
+        r"""Gets the real_source of this SpanEventInfo.
 
         根event的时候存在，实际调用的url。
 
@@ -863,7 +863,7 @@ class SpanEventInfo:
 
     @real_source.setter
     def real_source(self, real_source):
-        """Sets the real_source of this SpanEventInfo.
+        r"""Sets the real_source of this SpanEventInfo.
 
         根event的时候存在，实际调用的url。
 
@@ -874,7 +874,7 @@ class SpanEventInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SpanEventInfo.
+        r"""Gets the start_time of this SpanEventInfo.
 
         开始时间。
 
@@ -885,7 +885,7 @@ class SpanEventInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SpanEventInfo.
+        r"""Sets the start_time of this SpanEventInfo.
 
         开始时间。
 
@@ -896,7 +896,7 @@ class SpanEventInfo:
 
     @property
     def time_used(self):
-        """Gets the time_used of this SpanEventInfo.
+        r"""Gets the time_used of this SpanEventInfo.
 
         耗时。
 
@@ -907,7 +907,7 @@ class SpanEventInfo:
 
     @time_used.setter
     def time_used(self, time_used):
-        """Sets the time_used of this SpanEventInfo.
+        r"""Sets the time_used of this SpanEventInfo.
 
         耗时。
 
@@ -918,7 +918,7 @@ class SpanEventInfo:
 
     @property
     def code(self):
-        """Gets the code of this SpanEventInfo.
+        r"""Gets the code of this SpanEventInfo.
 
         状态码，针对http的调用有效。
 
@@ -929,7 +929,7 @@ class SpanEventInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SpanEventInfo.
+        r"""Sets the code of this SpanEventInfo.
 
         状态码，针对http的调用有效。
 
@@ -940,7 +940,7 @@ class SpanEventInfo:
 
     @property
     def class_name(self):
-        """Gets the class_name of this SpanEventInfo.
+        r"""Gets the class_name of this SpanEventInfo.
 
         类名。
 
@@ -951,7 +951,7 @@ class SpanEventInfo:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this SpanEventInfo.
+        r"""Sets the class_name of this SpanEventInfo.
 
         类名。
 
@@ -962,7 +962,7 @@ class SpanEventInfo:
 
     @property
     def is_async(self):
-        """Gets the is_async of this SpanEventInfo.
+        r"""Gets the is_async of this SpanEventInfo.
 
         是否异步的event。
 
@@ -973,7 +973,7 @@ class SpanEventInfo:
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this SpanEventInfo.
+        r"""Sets the is_async of this SpanEventInfo.
 
         是否异步的event。
 
@@ -984,7 +984,7 @@ class SpanEventInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this SpanEventInfo.
+        r"""Gets the tags of this SpanEventInfo.
 
         包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
@@ -995,7 +995,7 @@ class SpanEventInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SpanEventInfo.
+        r"""Sets the tags of this SpanEventInfo.
 
         包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
@@ -1006,7 +1006,7 @@ class SpanEventInfo:
 
     @property
     def has_error(self):
-        """Gets the has_error of this SpanEventInfo.
+        r"""Gets the has_error of this SpanEventInfo.
 
         是否有错误，主要用在span的场景。
 
@@ -1017,7 +1017,7 @@ class SpanEventInfo:
 
     @has_error.setter
     def has_error(self, has_error):
-        """Sets the has_error of this SpanEventInfo.
+        r"""Sets the has_error of this SpanEventInfo.
 
         是否有错误，主要用在span的场景。
 
@@ -1028,7 +1028,7 @@ class SpanEventInfo:
 
     @property
     def error_reasons(self):
-        """Gets the error_reasons of this SpanEventInfo.
+        r"""Gets the error_reasons of this SpanEventInfo.
 
         错误原因。
 
@@ -1039,7 +1039,7 @@ class SpanEventInfo:
 
     @error_reasons.setter
     def error_reasons(self, error_reasons):
-        """Sets the error_reasons of this SpanEventInfo.
+        r"""Sets the error_reasons of this SpanEventInfo.
 
         错误原因。
 
@@ -1050,7 +1050,7 @@ class SpanEventInfo:
 
     @property
     def type(self):
-        """Gets the type of this SpanEventInfo.
+        r"""Gets the type of this SpanEventInfo.
 
         类型，mysql，kafka等。
 
@@ -1061,7 +1061,7 @@ class SpanEventInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SpanEventInfo.
+        r"""Sets the type of this SpanEventInfo.
 
         类型，mysql，kafka等。
 
@@ -1072,7 +1072,7 @@ class SpanEventInfo:
 
     @property
     def http_method(self):
-        """Gets the http_method of this SpanEventInfo.
+        r"""Gets the http_method of this SpanEventInfo.
 
         这里的method实际上是tags里面的http_method，只有url监控项才有。
 
@@ -1083,7 +1083,7 @@ class SpanEventInfo:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this SpanEventInfo.
+        r"""Sets the http_method of this SpanEventInfo.
 
         这里的method实际上是tags里面的http_method，只有url监控项才有。
 
@@ -1094,7 +1094,7 @@ class SpanEventInfo:
 
     @property
     def biz_code(self):
-        """Gets the biz_code of this SpanEventInfo.
+        r"""Gets the biz_code of this SpanEventInfo.
 
         业务状态码的采集。
 
@@ -1105,7 +1105,7 @@ class SpanEventInfo:
 
     @biz_code.setter
     def biz_code(self, biz_code):
-        """Sets the biz_code of this SpanEventInfo.
+        r"""Sets the biz_code of this SpanEventInfo.
 
         业务状态码的采集。
 
@@ -1116,7 +1116,7 @@ class SpanEventInfo:
 
     @property
     def id(self):
-        """Gets the id of this SpanEventInfo.
+        r"""Gets the id of this SpanEventInfo.
 
         spanId。
 
@@ -1127,7 +1127,7 @@ class SpanEventInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SpanEventInfo.
+        r"""Sets the id of this SpanEventInfo.
 
         spanId。
 

@@ -29,7 +29,7 @@ class SetDatabaseUserPrivilegeRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """SetDatabaseUserPrivilegeRequest
+        r"""SetDatabaseUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetDatabaseUserPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetDatabaseUserPrivilegeRequest.
+        r"""Gets the instance_id of this SetDatabaseUserPrivilegeRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class SetDatabaseUserPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetDatabaseUserPrivilegeRequest.
+        r"""Sets the instance_id of this SetDatabaseUserPrivilegeRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class SetDatabaseUserPrivilegeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetDatabaseUserPrivilegeRequest.
+        r"""Gets the x_language of this SetDatabaseUserPrivilegeRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class SetDatabaseUserPrivilegeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetDatabaseUserPrivilegeRequest.
+        r"""Sets the x_language of this SetDatabaseUserPrivilegeRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class SetDatabaseUserPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetDatabaseUserPrivilegeRequest.
+        r"""Gets the body of this SetDatabaseUserPrivilegeRequest.
 
         :return: The body of this SetDatabaseUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeReqV3`
@@ -109,7 +109,7 @@ class SetDatabaseUserPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetDatabaseUserPrivilegeRequest.
+        r"""Sets the body of this SetDatabaseUserPrivilegeRequest.
 
         :param body: The body of this SetDatabaseUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeReqV3`

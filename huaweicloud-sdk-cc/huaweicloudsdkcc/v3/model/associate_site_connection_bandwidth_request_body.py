@@ -25,7 +25,7 @@ class AssociateSiteConnectionBandwidthRequestBody:
     }
 
     def __init__(self, site_connection=None):
-        """AssociateSiteConnectionBandwidthRequestBody
+        r"""AssociateSiteConnectionBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssociateSiteConnectionBandwidthRequestBody:
 
     @property
     def site_connection(self):
-        """Gets the site_connection of this AssociateSiteConnectionBandwidthRequestBody.
+        r"""Gets the site_connection of this AssociateSiteConnectionBandwidthRequestBody.
 
         :return: The site_connection of this AssociateSiteConnectionBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidth`
@@ -51,7 +51,7 @@ class AssociateSiteConnectionBandwidthRequestBody:
 
     @site_connection.setter
     def site_connection(self, site_connection):
-        """Sets the site_connection of this AssociateSiteConnectionBandwidthRequestBody.
+        r"""Sets the site_connection of this AssociateSiteConnectionBandwidthRequestBody.
 
         :param site_connection: The site_connection of this AssociateSiteConnectionBandwidthRequestBody.
         :type site_connection: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidth`

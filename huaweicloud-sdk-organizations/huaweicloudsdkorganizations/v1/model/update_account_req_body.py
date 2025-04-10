@@ -25,7 +25,7 @@ class UpdateAccountReqBody:
     }
 
     def __init__(self, description=None):
-        """UpdateAccountReqBody
+        r"""UpdateAccountReqBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAccountReqBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAccountReqBody.
+        r"""Gets the description of this UpdateAccountReqBody.
 
         描述信息。如果为空字符串，则表示把描述信息设置为空。如果为NULL，则不做任何处理。
 
@@ -54,7 +54,7 @@ class UpdateAccountReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAccountReqBody.
+        r"""Sets the description of this UpdateAccountReqBody.
 
         描述信息。如果为空字符串，则表示把描述信息设置为空。如果为NULL，则不做任何处理。
 

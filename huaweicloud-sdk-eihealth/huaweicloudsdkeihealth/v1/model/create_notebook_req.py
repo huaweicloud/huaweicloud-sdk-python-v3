@@ -33,7 +33,7 @@ class CreateNotebookReq:
     }
 
     def __init__(self, description=None, storages=None, flavor=None, image=None, name=None):
-        """CreateNotebookReq
+        r"""CreateNotebookReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateNotebookReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateNotebookReq.
+        r"""Gets the description of this CreateNotebookReq.
 
         描述信息，取值范围[0,1024]
 
@@ -78,7 +78,7 @@ class CreateNotebookReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNotebookReq.
+        r"""Sets the description of this CreateNotebookReq.
 
         描述信息，取值范围[0,1024]
 
@@ -89,7 +89,7 @@ class CreateNotebookReq:
 
     @property
     def storages(self):
-        """Gets the storages of this CreateNotebookReq.
+        r"""Gets the storages of this CreateNotebookReq.
 
         挂载信息
 
@@ -100,7 +100,7 @@ class CreateNotebookReq:
 
     @storages.setter
     def storages(self, storages):
-        """Sets the storages of this CreateNotebookReq.
+        r"""Sets the storages of this CreateNotebookReq.
 
         挂载信息
 
@@ -111,7 +111,7 @@ class CreateNotebookReq:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateNotebookReq.
+        r"""Gets the flavor of this CreateNotebookReq.
 
         :return: The flavor of this CreateNotebookReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -120,7 +120,7 @@ class CreateNotebookReq:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateNotebookReq.
+        r"""Sets the flavor of this CreateNotebookReq.
 
         :param flavor: The flavor of this CreateNotebookReq.
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -129,7 +129,7 @@ class CreateNotebookReq:
 
     @property
     def image(self):
-        """Gets the image of this CreateNotebookReq.
+        r"""Gets the image of this CreateNotebookReq.
 
         :return: The image of this CreateNotebookReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
@@ -138,7 +138,7 @@ class CreateNotebookReq:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CreateNotebookReq.
+        r"""Sets the image of this CreateNotebookReq.
 
         :param image: The image of this CreateNotebookReq.
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
@@ -147,7 +147,7 @@ class CreateNotebookReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateNotebookReq.
+        r"""Gets the name of this CreateNotebookReq.
 
         notebook名称，取值范围[1,63],仅支持小写字母、数字、中划线(-),开始只能是小写字母，结束只能是小写字母或数字
 
@@ -158,7 +158,7 @@ class CreateNotebookReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNotebookReq.
+        r"""Sets the name of this CreateNotebookReq.
 
         notebook名称，取值范围[1,63],仅支持小写字母、数字、中划线(-),开始只能是小写字母，结束只能是小写字母或数字
 

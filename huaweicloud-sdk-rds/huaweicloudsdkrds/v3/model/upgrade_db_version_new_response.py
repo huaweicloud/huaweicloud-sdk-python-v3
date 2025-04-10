@@ -26,7 +26,7 @@ class UpgradeDbVersionNewResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpgradeDbVersionNewResponse
+        r"""UpgradeDbVersionNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeDbVersionNewResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpgradeDbVersionNewResponse.
+        r"""Gets the job_id of this UpgradeDbVersionNewResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class UpgradeDbVersionNewResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpgradeDbVersionNewResponse.
+        r"""Sets the job_id of this UpgradeDbVersionNewResponse.
 
         任务ID。
 

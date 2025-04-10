@@ -31,7 +31,7 @@ class ListVolumeRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None):
-        """ListVolumeRequest
+        r"""ListVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListVolumeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVolumeRequest.
+        r"""Gets the limit of this ListVolumeRequest.
 
         查询硬盘列表当前页面的数量。 取值范围：0~1000
 
@@ -75,7 +75,7 @@ class ListVolumeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVolumeRequest.
+        r"""Sets the limit of this ListVolumeRequest.
 
         查询硬盘列表当前页面的数量。 取值范围：0~1000
 
@@ -86,7 +86,7 @@ class ListVolumeRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVolumeRequest.
+        r"""Gets the name of this ListVolumeRequest.
 
         根据名称查询硬盘列表。
 
@@ -97,7 +97,7 @@ class ListVolumeRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVolumeRequest.
+        r"""Sets the name of this ListVolumeRequest.
 
         根据名称查询硬盘列表。
 
@@ -108,7 +108,7 @@ class ListVolumeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVolumeRequest.
+        r"""Gets the offset of this ListVolumeRequest.
 
         查询的偏移量。默认为0
 
@@ -119,7 +119,7 @@ class ListVolumeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVolumeRequest.
+        r"""Sets the offset of this ListVolumeRequest.
 
         查询的偏移量。默认为0
 
@@ -130,7 +130,7 @@ class ListVolumeRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVolumeRequest.
+        r"""Gets the status of this ListVolumeRequest.
 
         根据状态查询硬盘列表。
 
@@ -141,7 +141,7 @@ class ListVolumeRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVolumeRequest.
+        r"""Sets the status of this ListVolumeRequest.
 
         根据状态查询硬盘列表。
 

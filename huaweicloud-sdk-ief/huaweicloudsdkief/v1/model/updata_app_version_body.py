@@ -25,7 +25,7 @@ class UpdataAppVersionBody:
     }
 
     def __init__(self, version=None):
-        """UpdataAppVersionBody
+        r"""UpdataAppVersionBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdataAppVersionBody:
 
     @property
     def version(self):
-        """Gets the version of this UpdataAppVersionBody.
+        r"""Gets the version of this UpdataAppVersionBody.
 
         :return: The version of this UpdataAppVersionBody.
         :rtype: :class:`huaweicloudsdkief.v1.VersionUpdate`
@@ -51,7 +51,7 @@ class UpdataAppVersionBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdataAppVersionBody.
+        r"""Sets the version of this UpdataAppVersionBody.
 
         :param version: The version of this UpdataAppVersionBody.
         :type version: :class:`huaweicloudsdkief.v1.VersionUpdate`

@@ -29,7 +29,7 @@ class UpdateDeviceRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, body=None):
-        """UpdateDeviceRequest
+        r"""UpdateDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDeviceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDeviceRequest.
+        r"""Gets the instance_id of this UpdateDeviceRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -67,7 +67,7 @@ class UpdateDeviceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDeviceRequest.
+        r"""Sets the instance_id of this UpdateDeviceRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -78,7 +78,7 @@ class UpdateDeviceRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateDeviceRequest.
+        r"""Gets the device_id of this UpdateDeviceRequest.
 
         **参数说明**：设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -89,7 +89,7 @@ class UpdateDeviceRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateDeviceRequest.
+        r"""Sets the device_id of this UpdateDeviceRequest.
 
         **参数说明**：设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -100,7 +100,7 @@ class UpdateDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceRequest.
+        r"""Gets the body of this UpdateDeviceRequest.
 
         :return: The body of this UpdateDeviceRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDevice`
@@ -109,7 +109,7 @@ class UpdateDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceRequest.
+        r"""Sets the body of this UpdateDeviceRequest.
 
         :param body: The body of this UpdateDeviceRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.UpdateDevice`

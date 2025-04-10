@@ -40,7 +40,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, version=None, description=None, created_time=None, last_modified_time=None, state=None, publish_time=None, off_shelf_time=None):
-        """UpdateEdgeApplicationVersionStateResponse
+        r"""UpdateEdgeApplicationVersionStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the edge_app_id of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：用户自定义应用唯一ID。
 
@@ -104,7 +104,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the edge_app_id of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：用户自定义应用唯一ID。
 
@@ -115,7 +115,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the version of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：应用版本。
 
@@ -126,7 +126,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the version of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：应用版本。
 
@@ -137,7 +137,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the description of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -148,7 +148,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the description of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -159,7 +159,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the created_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：创建时间。
 
@@ -170,7 +170,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the created_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：创建时间。
 
@@ -181,7 +181,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the last_modified_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：最后一次修改时间。
 
@@ -192,7 +192,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the last_modified_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：最后一次修改时间。
 
@@ -203,7 +203,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the state of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：应用版本状态。  **取值范围**：  - DRAFT：草稿  - PUBLISHED：发布  - OFF_SHELF：下线
 
@@ -214,7 +214,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the state of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：应用版本状态。  **取值范围**：  - DRAFT：草稿  - PUBLISHED：发布  - OFF_SHELF：下线
 
@@ -225,7 +225,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the publish_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：发布时间。
 
@@ -236,7 +236,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the publish_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：发布时间。
 
@@ -247,7 +247,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @property
     def off_shelf_time(self):
-        """Gets the off_shelf_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Gets the off_shelf_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：下线时间。
 
@@ -258,7 +258,7 @@ class UpdateEdgeApplicationVersionStateResponse(SdkResponse):
 
     @off_shelf_time.setter
     def off_shelf_time(self, off_shelf_time):
-        """Sets the off_shelf_time of this UpdateEdgeApplicationVersionStateResponse.
+        r"""Sets the off_shelf_time of this UpdateEdgeApplicationVersionStateResponse.
 
         **参数说明**：下线时间。
 

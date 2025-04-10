@@ -26,7 +26,7 @@ class CreateCustomPropsTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateCustomPropsTaskResponse
+        r"""CreateCustomPropsTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCustomPropsTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomPropsTaskResponse.
+        r"""Gets the body of this CreateCustomPropsTaskResponse.
 
         自定义属性ID
 
@@ -55,7 +55,7 @@ class CreateCustomPropsTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomPropsTaskResponse.
+        r"""Sets the body of this CreateCustomPropsTaskResponse.
 
         自定义属性ID
 

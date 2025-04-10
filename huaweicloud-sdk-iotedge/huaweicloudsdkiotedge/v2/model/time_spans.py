@@ -27,7 +27,7 @@ class TimeSpans:
     }
 
     def __init__(self, start=None, end=None):
-        """TimeSpans
+        r"""TimeSpans
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TimeSpans:
 
     @property
     def start(self):
-        """Gets the start of this TimeSpans.
+        r"""Gets the start of this TimeSpans.
 
         开始时间；不包含日期，为本地时刻，根据网关侧的本地时间进行调度
 
@@ -59,7 +59,7 @@ class TimeSpans:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this TimeSpans.
+        r"""Sets the start of this TimeSpans.
 
         开始时间；不包含日期，为本地时刻，根据网关侧的本地时间进行调度
 
@@ -70,7 +70,7 @@ class TimeSpans:
 
     @property
     def end(self):
-        """Gets the end of this TimeSpans.
+        r"""Gets the end of this TimeSpans.
 
         结束时间，不包含日期，为本地时刻，根据网关侧的本地时间进行调度
 
@@ -81,7 +81,7 @@ class TimeSpans:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this TimeSpans.
+        r"""Sets the end of this TimeSpans.
 
         结束时间，不包含日期，为本地时刻，根据网关侧的本地时间进行调度
 

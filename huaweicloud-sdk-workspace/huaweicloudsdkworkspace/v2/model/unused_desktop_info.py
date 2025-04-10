@@ -31,7 +31,7 @@ class UnusedDesktopInfo:
     }
 
     def __init__(self, desktop_id=None, compute_name=None, create_time=None, disconnect_time=None):
-        """UnusedDesktopInfo
+        r"""UnusedDesktopInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UnusedDesktopInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this UnusedDesktopInfo.
+        r"""Gets the desktop_id of this UnusedDesktopInfo.
 
         桌面id。
 
@@ -75,7 +75,7 @@ class UnusedDesktopInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this UnusedDesktopInfo.
+        r"""Sets the desktop_id of this UnusedDesktopInfo.
 
         桌面id。
 
@@ -86,7 +86,7 @@ class UnusedDesktopInfo:
 
     @property
     def compute_name(self):
-        """Gets the compute_name of this UnusedDesktopInfo.
+        r"""Gets the compute_name of this UnusedDesktopInfo.
 
         桌面名称。
 
@@ -97,7 +97,7 @@ class UnusedDesktopInfo:
 
     @compute_name.setter
     def compute_name(self, compute_name):
-        """Sets the compute_name of this UnusedDesktopInfo.
+        r"""Sets the compute_name of this UnusedDesktopInfo.
 
         桌面名称。
 
@@ -108,7 +108,7 @@ class UnusedDesktopInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UnusedDesktopInfo.
+        r"""Gets the create_time of this UnusedDesktopInfo.
 
         桌面创建时间。
 
@@ -119,7 +119,7 @@ class UnusedDesktopInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UnusedDesktopInfo.
+        r"""Sets the create_time of this UnusedDesktopInfo.
 
         桌面创建时间。
 
@@ -130,7 +130,7 @@ class UnusedDesktopInfo:
 
     @property
     def disconnect_time(self):
-        """Gets the disconnect_time of this UnusedDesktopInfo.
+        r"""Gets the disconnect_time of this UnusedDesktopInfo.
 
         最近一次断连时间。
 
@@ -141,7 +141,7 @@ class UnusedDesktopInfo:
 
     @disconnect_time.setter
     def disconnect_time(self, disconnect_time):
-        """Sets the disconnect_time of this UnusedDesktopInfo.
+        r"""Sets the disconnect_time of this UnusedDesktopInfo.
 
         最近一次断连时间。
 

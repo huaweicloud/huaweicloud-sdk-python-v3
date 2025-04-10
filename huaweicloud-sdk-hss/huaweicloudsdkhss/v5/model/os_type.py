@@ -23,7 +23,7 @@ class OsType:
     }
 
     def __init__(self):
-        """OsType
+        r"""OsType
 
         The model defined in huaweicloud sdk
 

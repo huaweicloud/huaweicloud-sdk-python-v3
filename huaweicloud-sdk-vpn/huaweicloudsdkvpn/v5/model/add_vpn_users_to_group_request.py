@@ -29,7 +29,7 @@ class AddVpnUsersToGroupRequest:
     }
 
     def __init__(self, vpn_server_id=None, group_id=None, body=None):
-        """AddVpnUsersToGroupRequest
+        r"""AddVpnUsersToGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddVpnUsersToGroupRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this AddVpnUsersToGroupRequest.
+        r"""Gets the vpn_server_id of this AddVpnUsersToGroupRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class AddVpnUsersToGroupRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this AddVpnUsersToGroupRequest.
+        r"""Sets the vpn_server_id of this AddVpnUsersToGroupRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class AddVpnUsersToGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this AddVpnUsersToGroupRequest.
+        r"""Gets the group_id of this AddVpnUsersToGroupRequest.
 
         用户组ID
 
@@ -88,7 +88,7 @@ class AddVpnUsersToGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this AddVpnUsersToGroupRequest.
+        r"""Sets the group_id of this AddVpnUsersToGroupRequest.
 
         用户组ID
 
@@ -99,7 +99,7 @@ class AddVpnUsersToGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddVpnUsersToGroupRequest.
+        r"""Gets the body of this AddVpnUsersToGroupRequest.
 
         :return: The body of this AddVpnUsersToGroupRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.AddVpnUserToGroupRequestBody`
@@ -108,7 +108,7 @@ class AddVpnUsersToGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddVpnUsersToGroupRequest.
+        r"""Sets the body of this AddVpnUsersToGroupRequest.
 
         :param body: The body of this AddVpnUsersToGroupRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.AddVpnUserToGroupRequestBody`

@@ -55,7 +55,7 @@ class StatisticInfo:
     }
 
     def __init__(self, atomic_index=None, derivative_index=None, compound_metric=None, biz_index=None, dimension=None, condition_group=None, time_condition=None, common_condition=None, dimension_logic_table=None, fact_logic_table=None, aggregation_logic_table=None, data_standard=None, table_model=None, lookup_table=None, pending_review=None, my_applications=None):
-        """StatisticInfo
+        r"""StatisticInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class StatisticInfo:
 
     @property
     def atomic_index(self):
-        """Gets the atomic_index of this StatisticInfo.
+        r"""Gets the atomic_index of this StatisticInfo.
 
         :return: The atomic_index of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -157,7 +157,7 @@ class StatisticInfo:
 
     @atomic_index.setter
     def atomic_index(self, atomic_index):
-        """Sets the atomic_index of this StatisticInfo.
+        r"""Sets the atomic_index of this StatisticInfo.
 
         :param atomic_index: The atomic_index of this StatisticInfo.
         :type atomic_index: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -166,7 +166,7 @@ class StatisticInfo:
 
     @property
     def derivative_index(self):
-        """Gets the derivative_index of this StatisticInfo.
+        r"""Gets the derivative_index of this StatisticInfo.
 
         :return: The derivative_index of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -175,7 +175,7 @@ class StatisticInfo:
 
     @derivative_index.setter
     def derivative_index(self, derivative_index):
-        """Sets the derivative_index of this StatisticInfo.
+        r"""Sets the derivative_index of this StatisticInfo.
 
         :param derivative_index: The derivative_index of this StatisticInfo.
         :type derivative_index: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -184,7 +184,7 @@ class StatisticInfo:
 
     @property
     def compound_metric(self):
-        """Gets the compound_metric of this StatisticInfo.
+        r"""Gets the compound_metric of this StatisticInfo.
 
         :return: The compound_metric of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -193,7 +193,7 @@ class StatisticInfo:
 
     @compound_metric.setter
     def compound_metric(self, compound_metric):
-        """Sets the compound_metric of this StatisticInfo.
+        r"""Sets the compound_metric of this StatisticInfo.
 
         :param compound_metric: The compound_metric of this StatisticInfo.
         :type compound_metric: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -202,7 +202,7 @@ class StatisticInfo:
 
     @property
     def biz_index(self):
-        """Gets the biz_index of this StatisticInfo.
+        r"""Gets the biz_index of this StatisticInfo.
 
         :return: The biz_index of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -211,7 +211,7 @@ class StatisticInfo:
 
     @biz_index.setter
     def biz_index(self, biz_index):
-        """Sets the biz_index of this StatisticInfo.
+        r"""Sets the biz_index of this StatisticInfo.
 
         :param biz_index: The biz_index of this StatisticInfo.
         :type biz_index: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -220,7 +220,7 @@ class StatisticInfo:
 
     @property
     def dimension(self):
-        """Gets the dimension of this StatisticInfo.
+        r"""Gets the dimension of this StatisticInfo.
 
         :return: The dimension of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -229,7 +229,7 @@ class StatisticInfo:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this StatisticInfo.
+        r"""Sets the dimension of this StatisticInfo.
 
         :param dimension: The dimension of this StatisticInfo.
         :type dimension: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -238,7 +238,7 @@ class StatisticInfo:
 
     @property
     def condition_group(self):
-        """Gets the condition_group of this StatisticInfo.
+        r"""Gets the condition_group of this StatisticInfo.
 
         :return: The condition_group of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -247,7 +247,7 @@ class StatisticInfo:
 
     @condition_group.setter
     def condition_group(self, condition_group):
-        """Sets the condition_group of this StatisticInfo.
+        r"""Sets the condition_group of this StatisticInfo.
 
         :param condition_group: The condition_group of this StatisticInfo.
         :type condition_group: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -256,7 +256,7 @@ class StatisticInfo:
 
     @property
     def time_condition(self):
-        """Gets the time_condition of this StatisticInfo.
+        r"""Gets the time_condition of this StatisticInfo.
 
         :return: The time_condition of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -265,7 +265,7 @@ class StatisticInfo:
 
     @time_condition.setter
     def time_condition(self, time_condition):
-        """Sets the time_condition of this StatisticInfo.
+        r"""Sets the time_condition of this StatisticInfo.
 
         :param time_condition: The time_condition of this StatisticInfo.
         :type time_condition: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -274,7 +274,7 @@ class StatisticInfo:
 
     @property
     def common_condition(self):
-        """Gets the common_condition of this StatisticInfo.
+        r"""Gets the common_condition of this StatisticInfo.
 
         :return: The common_condition of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -283,7 +283,7 @@ class StatisticInfo:
 
     @common_condition.setter
     def common_condition(self, common_condition):
-        """Sets the common_condition of this StatisticInfo.
+        r"""Sets the common_condition of this StatisticInfo.
 
         :param common_condition: The common_condition of this StatisticInfo.
         :type common_condition: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -292,7 +292,7 @@ class StatisticInfo:
 
     @property
     def dimension_logic_table(self):
-        """Gets the dimension_logic_table of this StatisticInfo.
+        r"""Gets the dimension_logic_table of this StatisticInfo.
 
         :return: The dimension_logic_table of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -301,7 +301,7 @@ class StatisticInfo:
 
     @dimension_logic_table.setter
     def dimension_logic_table(self, dimension_logic_table):
-        """Sets the dimension_logic_table of this StatisticInfo.
+        r"""Sets the dimension_logic_table of this StatisticInfo.
 
         :param dimension_logic_table: The dimension_logic_table of this StatisticInfo.
         :type dimension_logic_table: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -310,7 +310,7 @@ class StatisticInfo:
 
     @property
     def fact_logic_table(self):
-        """Gets the fact_logic_table of this StatisticInfo.
+        r"""Gets the fact_logic_table of this StatisticInfo.
 
         :return: The fact_logic_table of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -319,7 +319,7 @@ class StatisticInfo:
 
     @fact_logic_table.setter
     def fact_logic_table(self, fact_logic_table):
-        """Sets the fact_logic_table of this StatisticInfo.
+        r"""Sets the fact_logic_table of this StatisticInfo.
 
         :param fact_logic_table: The fact_logic_table of this StatisticInfo.
         :type fact_logic_table: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -328,7 +328,7 @@ class StatisticInfo:
 
     @property
     def aggregation_logic_table(self):
-        """Gets the aggregation_logic_table of this StatisticInfo.
+        r"""Gets the aggregation_logic_table of this StatisticInfo.
 
         :return: The aggregation_logic_table of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -337,7 +337,7 @@ class StatisticInfo:
 
     @aggregation_logic_table.setter
     def aggregation_logic_table(self, aggregation_logic_table):
-        """Sets the aggregation_logic_table of this StatisticInfo.
+        r"""Sets the aggregation_logic_table of this StatisticInfo.
 
         :param aggregation_logic_table: The aggregation_logic_table of this StatisticInfo.
         :type aggregation_logic_table: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -346,7 +346,7 @@ class StatisticInfo:
 
     @property
     def data_standard(self):
-        """Gets the data_standard of this StatisticInfo.
+        r"""Gets the data_standard of this StatisticInfo.
 
         :return: The data_standard of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -355,7 +355,7 @@ class StatisticInfo:
 
     @data_standard.setter
     def data_standard(self, data_standard):
-        """Sets the data_standard of this StatisticInfo.
+        r"""Sets the data_standard of this StatisticInfo.
 
         :param data_standard: The data_standard of this StatisticInfo.
         :type data_standard: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -364,7 +364,7 @@ class StatisticInfo:
 
     @property
     def table_model(self):
-        """Gets the table_model of this StatisticInfo.
+        r"""Gets the table_model of this StatisticInfo.
 
         :return: The table_model of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -373,7 +373,7 @@ class StatisticInfo:
 
     @table_model.setter
     def table_model(self, table_model):
-        """Sets the table_model of this StatisticInfo.
+        r"""Sets the table_model of this StatisticInfo.
 
         :param table_model: The table_model of this StatisticInfo.
         :type table_model: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -382,7 +382,7 @@ class StatisticInfo:
 
     @property
     def lookup_table(self):
-        """Gets the lookup_table of this StatisticInfo.
+        r"""Gets the lookup_table of this StatisticInfo.
 
         :return: The lookup_table of this StatisticInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -391,7 +391,7 @@ class StatisticInfo:
 
     @lookup_table.setter
     def lookup_table(self, lookup_table):
-        """Sets the lookup_table of this StatisticInfo.
+        r"""Sets the lookup_table of this StatisticInfo.
 
         :param lookup_table: The lookup_table of this StatisticInfo.
         :type lookup_table: :class:`huaweicloudsdkdataartsstudio.v1.StatisticSchema`
@@ -400,7 +400,7 @@ class StatisticInfo:
 
     @property
     def pending_review(self):
-        """Gets the pending_review of this StatisticInfo.
+        r"""Gets the pending_review of this StatisticInfo.
 
         待我审核。
 
@@ -411,7 +411,7 @@ class StatisticInfo:
 
     @pending_review.setter
     def pending_review(self, pending_review):
-        """Sets the pending_review of this StatisticInfo.
+        r"""Sets the pending_review of this StatisticInfo.
 
         待我审核。
 
@@ -422,7 +422,7 @@ class StatisticInfo:
 
     @property
     def my_applications(self):
-        """Gets the my_applications of this StatisticInfo.
+        r"""Gets the my_applications of this StatisticInfo.
 
         我的申请。
 
@@ -433,7 +433,7 @@ class StatisticInfo:
 
     @my_applications.setter
     def my_applications(self, my_applications):
-        """Sets the my_applications of this StatisticInfo.
+        r"""Sets the my_applications of this StatisticInfo.
 
         我的申请。
 

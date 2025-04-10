@@ -25,7 +25,7 @@ class CentralNetworkId:
     }
 
     def __init__(self, central_network_id=None):
-        """CentralNetworkId
+        r"""CentralNetworkId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CentralNetworkId:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CentralNetworkId.
+        r"""Gets the central_network_id of this CentralNetworkId.
 
         中心网络ID。
 
@@ -53,7 +53,7 @@ class CentralNetworkId:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CentralNetworkId.
+        r"""Sets the central_network_id of this CentralNetworkId.
 
         中心网络ID。
 

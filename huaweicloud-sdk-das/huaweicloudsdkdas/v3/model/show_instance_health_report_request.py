@@ -29,7 +29,7 @@ class ShowInstanceHealthReportRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, x_language=None):
-        """ShowInstanceHealthReportRequest
+        r"""ShowInstanceHealthReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowInstanceHealthReportRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceHealthReportRequest.
+        r"""Gets the instance_id of this ShowInstanceHealthReportRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ShowInstanceHealthReportRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceHealthReportRequest.
+        r"""Sets the instance_id of this ShowInstanceHealthReportRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ShowInstanceHealthReportRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowInstanceHealthReportRequest.
+        r"""Gets the task_id of this ShowInstanceHealthReportRequest.
 
         任务ID。
 
@@ -88,7 +88,7 @@ class ShowInstanceHealthReportRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowInstanceHealthReportRequest.
+        r"""Sets the task_id of this ShowInstanceHealthReportRequest.
 
         任务ID。
 
@@ -99,7 +99,7 @@ class ShowInstanceHealthReportRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowInstanceHealthReportRequest.
+        r"""Gets the x_language of this ShowInstanceHealthReportRequest.
 
         请求语言类型。
 
@@ -110,7 +110,7 @@ class ShowInstanceHealthReportRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceHealthReportRequest.
+        r"""Sets the x_language of this ShowInstanceHealthReportRequest.
 
         请求语言类型。
 

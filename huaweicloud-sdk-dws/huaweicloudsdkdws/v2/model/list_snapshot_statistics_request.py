@@ -25,7 +25,7 @@ class ListSnapshotStatisticsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListSnapshotStatisticsRequest
+        r"""ListSnapshotStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSnapshotStatisticsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSnapshotStatisticsRequest.
+        r"""Gets the cluster_id of this ListSnapshotStatisticsRequest.
 
         集群的ID。
 
@@ -53,7 +53,7 @@ class ListSnapshotStatisticsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSnapshotStatisticsRequest.
+        r"""Sets the cluster_id of this ListSnapshotStatisticsRequest.
 
         集群的ID。
 

@@ -44,7 +44,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, rule=None, mode=None, conditions=None, advanced=None, domain=None):
-        """CreateIgnoreRuleResponse
+        r"""CreateIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateIgnoreRuleResponse.
+        r"""Gets the id of this CreateIgnoreRuleResponse.
 
         规则id
 
@@ -118,7 +118,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIgnoreRuleResponse.
+        r"""Sets the id of this CreateIgnoreRuleResponse.
 
         规则id
 
@@ -129,7 +129,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreateIgnoreRuleResponse.
+        r"""Gets the policyid of this CreateIgnoreRuleResponse.
 
         策略id
 
@@ -140,7 +140,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreateIgnoreRuleResponse.
+        r"""Sets the policyid of this CreateIgnoreRuleResponse.
 
         策略id
 
@@ -151,7 +151,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateIgnoreRuleResponse.
+        r"""Gets the timestamp of this CreateIgnoreRuleResponse.
 
         创建规则的时间戳
 
@@ -162,7 +162,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateIgnoreRuleResponse.
+        r"""Sets the timestamp of this CreateIgnoreRuleResponse.
 
         创建规则的时间戳
 
@@ -173,7 +173,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateIgnoreRuleResponse.
+        r"""Gets the description of this CreateIgnoreRuleResponse.
 
         规则描述
 
@@ -184,7 +184,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIgnoreRuleResponse.
+        r"""Sets the description of this CreateIgnoreRuleResponse.
 
         规则描述
 
@@ -195,7 +195,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateIgnoreRuleResponse.
+        r"""Gets the status of this CreateIgnoreRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -206,7 +206,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateIgnoreRuleResponse.
+        r"""Sets the status of this CreateIgnoreRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -217,7 +217,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this CreateIgnoreRuleResponse.
+        r"""Gets the rule of this CreateIgnoreRuleResponse.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -228,7 +228,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateIgnoreRuleResponse.
+        r"""Sets the rule of this CreateIgnoreRuleResponse.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -239,7 +239,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this CreateIgnoreRuleResponse.
+        r"""Gets the mode of this CreateIgnoreRuleResponse.
 
         版本号固定值为1,代表v2版本误报屏蔽规则，v1版本仅支持兼容旧版本，不支持创建
 
@@ -250,7 +250,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateIgnoreRuleResponse.
+        r"""Sets the mode of this CreateIgnoreRuleResponse.
 
         版本号固定值为1,代表v2版本误报屏蔽规则，v1版本仅支持兼容旧版本，不支持创建
 
@@ -261,7 +261,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateIgnoreRuleResponse.
+        r"""Gets the conditions of this CreateIgnoreRuleResponse.
 
         条件列表
 
@@ -272,7 +272,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateIgnoreRuleResponse.
+        r"""Sets the conditions of this CreateIgnoreRuleResponse.
 
         条件列表
 
@@ -283,7 +283,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def advanced(self):
-        """Gets the advanced of this CreateIgnoreRuleResponse.
+        r"""Gets the advanced of this CreateIgnoreRuleResponse.
 
         :return: The advanced of this CreateIgnoreRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -292,7 +292,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this CreateIgnoreRuleResponse.
+        r"""Sets the advanced of this CreateIgnoreRuleResponse.
 
         :param advanced: The advanced of this CreateIgnoreRuleResponse.
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -301,7 +301,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this CreateIgnoreRuleResponse.
+        r"""Gets the domain of this CreateIgnoreRuleResponse.
 
         防护域名或防护网站
 
@@ -312,7 +312,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateIgnoreRuleResponse.
+        r"""Sets the domain of this CreateIgnoreRuleResponse.
 
         防护域名或防护网站
 

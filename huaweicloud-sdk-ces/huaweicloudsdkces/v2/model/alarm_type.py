@@ -31,7 +31,7 @@ class AlarmType:
     }
 
     def __init__(self):
-        """AlarmType
+        r"""AlarmType
 
         The model defined in huaweicloud sdk
 

@@ -40,7 +40,7 @@ class ListAlertsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
-        """ListAlertsResponse
+        r"""ListAlertsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListAlertsResponse.
+        r"""Gets the code of this ListAlertsResponse.
 
         Id value
 
@@ -104,7 +104,7 @@ class ListAlertsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListAlertsResponse.
+        r"""Sets the code of this ListAlertsResponse.
 
         Id value
 
@@ -115,7 +115,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListAlertsResponse.
+        r"""Gets the message of this ListAlertsResponse.
 
         Error message
 
@@ -126,7 +126,7 @@ class ListAlertsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListAlertsResponse.
+        r"""Sets the message of this ListAlertsResponse.
 
         Error message
 
@@ -137,7 +137,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAlertsResponse.
+        r"""Gets the total of this ListAlertsResponse.
 
         tatal count
 
@@ -148,7 +148,7 @@ class ListAlertsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAlertsResponse.
+        r"""Sets the total of this ListAlertsResponse.
 
         tatal count
 
@@ -159,7 +159,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlertsResponse.
+        r"""Gets the limit of this ListAlertsResponse.
 
         当前页大小
 
@@ -170,7 +170,7 @@ class ListAlertsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlertsResponse.
+        r"""Sets the limit of this ListAlertsResponse.
 
         当前页大小
 
@@ -181,7 +181,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlertsResponse.
+        r"""Gets the offset of this ListAlertsResponse.
 
         当前页码
 
@@ -192,7 +192,7 @@ class ListAlertsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlertsResponse.
+        r"""Sets the offset of this ListAlertsResponse.
 
         当前页码
 
@@ -203,7 +203,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ListAlertsResponse.
+        r"""Gets the success of this ListAlertsResponse.
 
         success
 
@@ -214,7 +214,7 @@ class ListAlertsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ListAlertsResponse.
+        r"""Sets the success of this ListAlertsResponse.
 
         success
 
@@ -225,7 +225,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAlertsResponse.
+        r"""Gets the data of this ListAlertsResponse.
 
         告警列表
 
@@ -236,7 +236,7 @@ class ListAlertsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAlertsResponse.
+        r"""Sets the data of this ListAlertsResponse.
 
         告警列表
 
@@ -247,7 +247,7 @@ class ListAlertsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAlertsResponse.
+        r"""Gets the x_request_id of this ListAlertsResponse.
 
         :return: The x_request_id of this ListAlertsResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class ListAlertsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAlertsResponse.
+        r"""Sets the x_request_id of this ListAlertsResponse.
 
         :param x_request_id: The x_request_id of this ListAlertsResponse.
         :type x_request_id: str

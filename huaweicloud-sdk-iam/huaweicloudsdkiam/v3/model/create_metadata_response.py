@@ -26,7 +26,7 @@ class CreateMetadataResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """CreateMetadataResponse
+        r"""CreateMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateMetadataResponse.
+        r"""Gets the message of this CreateMetadataResponse.
 
         导入结果信息。
 
@@ -55,7 +55,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateMetadataResponse.
+        r"""Sets the message of this CreateMetadataResponse.
 
         导入结果信息。
 

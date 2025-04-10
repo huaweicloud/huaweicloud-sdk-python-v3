@@ -26,7 +26,7 @@ class ShowPolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self, policy_group=None):
-        """ShowPolicyGroupResponse
+        r"""ShowPolicyGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPolicyGroupResponse(SdkResponse):
 
     @property
     def policy_group(self):
-        """Gets the policy_group of this ShowPolicyGroupResponse.
+        r"""Gets the policy_group of this ShowPolicyGroupResponse.
 
         :return: The policy_group of this ShowPolicyGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PolicyGroup`
@@ -53,7 +53,7 @@ class ShowPolicyGroupResponse(SdkResponse):
 
     @policy_group.setter
     def policy_group(self, policy_group):
-        """Sets the policy_group of this ShowPolicyGroupResponse.
+        r"""Sets the policy_group of this ShowPolicyGroupResponse.
 
         :param policy_group: The policy_group of this ShowPolicyGroupResponse.
         :type policy_group: :class:`huaweicloudsdkworkspaceapp.v1.PolicyGroup`

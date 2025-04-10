@@ -24,7 +24,7 @@ class ChangeMasterStandbyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeMasterStandbyResponse
+        r"""ChangeMasterStandbyResponse
 
         The model defined in huaweicloud sdk
 

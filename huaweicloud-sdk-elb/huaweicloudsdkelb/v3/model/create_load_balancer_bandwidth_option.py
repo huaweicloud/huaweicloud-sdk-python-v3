@@ -35,7 +35,7 @@ class CreateLoadBalancerBandwidthOption:
     }
 
     def __init__(self, name=None, size=None, charge_mode=None, share_type=None, billing_info=None, id=None):
-        """CreateLoadBalancerBandwidthOption
+        r"""CreateLoadBalancerBandwidthOption
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateLoadBalancerBandwidthOption.
+        r"""Gets the name of this CreateLoadBalancerBandwidthOption.
 
         参数解释：带宽名称。  约束限制： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -89,7 +89,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLoadBalancerBandwidthOption.
+        r"""Sets the name of this CreateLoadBalancerBandwidthOption.
 
         参数解释：带宽名称。  约束限制： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -100,7 +100,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @property
     def size(self):
-        """Gets the size of this CreateLoadBalancerBandwidthOption.
+        r"""Gets the size of this CreateLoadBalancerBandwidthOption.
 
         参数解释：带宽大小。  约束限制：当id字段为null时，size是必须的。 注意，调整带宽时的最小单位会根据带宽范围不同存在差异。 - 小于等于300Mbit/s: 默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s: 默认最小单位为50Mbit/s。 - 大于1000Mbit/s: 默认最小单位为500Mbit/s。  取值范围：默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。
 
@@ -111,7 +111,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateLoadBalancerBandwidthOption.
+        r"""Sets the size of this CreateLoadBalancerBandwidthOption.
 
         参数解释：带宽大小。  约束限制：当id字段为null时，size是必须的。 注意，调整带宽时的最小单位会根据带宽范围不同存在差异。 - 小于等于300Mbit/s: 默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s: 默认最小单位为50Mbit/s。 - 大于1000Mbit/s: 默认最小单位为500Mbit/s。  取值范围：默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。
 
@@ -122,7 +122,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateLoadBalancerBandwidthOption.
+        r"""Gets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
         参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
 
@@ -133,7 +133,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateLoadBalancerBandwidthOption.
+        r"""Sets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
         参数解释：计费模式。bandwidth 按带宽计费；traffic 按流量计费。  约束限制：当id字段为null时，charge_mode是必须的。  [当前仅支持traffic按流量计费。](tag:hws_eu,g42,hk_g42,dt,hcso_dt)  取值范围：  - bandwidth：按带宽计费。  - traffic： 按流量计费。
 
@@ -144,7 +144,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @property
     def share_type(self):
-        """Gets the share_type of this CreateLoadBalancerBandwidthOption.
+        r"""Gets the share_type of this CreateLoadBalancerBandwidthOption.
 
         参数解释：带宽类型。  约束限制： - 当id字段为null时，share_type是必须的。当id不为null时，该字段被忽略。 - 该字段为WHOLE时,必须指定带宽ID。 - IPv6的EIP不支持WHOLE类型带宽。  取值范围： - PER：独享带宽。 - WHOLE：共享带宽。
 
@@ -155,7 +155,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this CreateLoadBalancerBandwidthOption.
+        r"""Sets the share_type of this CreateLoadBalancerBandwidthOption.
 
         参数解释：带宽类型。  约束限制： - 当id字段为null时，share_type是必须的。当id不为null时，该字段被忽略。 - 该字段为WHOLE时,必须指定带宽ID。 - IPv6的EIP不支持WHOLE类型带宽。  取值范围： - PER：独享带宽。 - WHOLE：共享带宽。
 
@@ -166,7 +166,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this CreateLoadBalancerBandwidthOption.
+        r"""Gets the billing_info of this CreateLoadBalancerBandwidthOption.
 
         参数解释：资源计费信息。  约束限制： [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽。](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -177,7 +177,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this CreateLoadBalancerBandwidthOption.
+        r"""Sets the billing_info of this CreateLoadBalancerBandwidthOption.
 
         参数解释：资源计费信息。  约束限制： [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽。](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -188,7 +188,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @property
     def id(self):
-        """Gets the id of this CreateLoadBalancerBandwidthOption.
+        r"""Gets the id of this CreateLoadBalancerBandwidthOption.
 
         参数解释：共享带宽ID。使用已存在的共享带宽。  约束限制：必须是已存在共享带宽ID。在预付费的情况下，不填该字段。该字段取空字符串时，会被忽略。
 
@@ -199,7 +199,7 @@ class CreateLoadBalancerBandwidthOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateLoadBalancerBandwidthOption.
+        r"""Sets the id of this CreateLoadBalancerBandwidthOption.
 
         参数解释：共享带宽ID。使用已存在的共享带宽。  约束限制：必须是已存在共享带宽ID。在预付费的情况下，不填该字段。该字段取空字符串时，会被忽略。
 

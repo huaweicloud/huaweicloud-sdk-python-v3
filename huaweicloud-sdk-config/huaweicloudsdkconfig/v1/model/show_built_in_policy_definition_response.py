@@ -46,7 +46,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, display_name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, trigger_type=None, keywords=None, default_resource_types=None, parameters=None):
-        """ShowBuiltInPolicyDefinitionResponse
+        r"""ShowBuiltInPolicyDefinitionResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the id of this ShowBuiltInPolicyDefinitionResponse.
 
         策略id
 
@@ -125,7 +125,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the id of this ShowBuiltInPolicyDefinitionResponse.
 
         策略id
 
@@ -136,7 +136,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the name of this ShowBuiltInPolicyDefinitionResponse.
 
         策略名字
 
@@ -147,7 +147,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the name of this ShowBuiltInPolicyDefinitionResponse.
 
         策略名字
 
@@ -158,7 +158,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the display_name of this ShowBuiltInPolicyDefinitionResponse.
 
         策略展示名
 
@@ -169,7 +169,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the display_name of this ShowBuiltInPolicyDefinitionResponse.
 
         策略展示名
 
@@ -180,7 +180,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the policy_type of this ShowBuiltInPolicyDefinitionResponse.
 
         策略类型
 
@@ -191,7 +191,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the policy_type of this ShowBuiltInPolicyDefinitionResponse.
 
         策略类型
 
@@ -202,7 +202,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the description of this ShowBuiltInPolicyDefinitionResponse.
 
         策略描述
 
@@ -213,7 +213,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the description of this ShowBuiltInPolicyDefinitionResponse.
 
         策略描述
 
@@ -224,7 +224,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def policy_rule_type(self):
-        """Gets the policy_rule_type of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the policy_rule_type of this ShowBuiltInPolicyDefinitionResponse.
 
         策略语法类型
 
@@ -235,7 +235,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @policy_rule_type.setter
     def policy_rule_type(self, policy_rule_type):
-        """Sets the policy_rule_type of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the policy_rule_type of this ShowBuiltInPolicyDefinitionResponse.
 
         策略语法类型
 
@@ -246,7 +246,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def policy_rule(self):
-        """Gets the policy_rule of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the policy_rule of this ShowBuiltInPolicyDefinitionResponse.
 
         策略规则
 
@@ -257,7 +257,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @policy_rule.setter
     def policy_rule(self, policy_rule):
-        """Sets the policy_rule of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the policy_rule of this ShowBuiltInPolicyDefinitionResponse.
 
         策略规则
 
@@ -268,7 +268,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the trigger_type of this ShowBuiltInPolicyDefinitionResponse.
 
         触发器类型，可选值：resource, period
 
@@ -279,7 +279,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the trigger_type of this ShowBuiltInPolicyDefinitionResponse.
 
         触发器类型，可选值：resource, period
 
@@ -290,7 +290,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def keywords(self):
-        """Gets the keywords of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the keywords of this ShowBuiltInPolicyDefinitionResponse.
 
         关键词列表
 
@@ -301,7 +301,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the keywords of this ShowBuiltInPolicyDefinitionResponse.
 
         关键词列表
 
@@ -312,7 +312,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def default_resource_types(self):
-        """Gets the default_resource_types of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the default_resource_types of this ShowBuiltInPolicyDefinitionResponse.
 
         默认资源类型列表
 
@@ -323,7 +323,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @default_resource_types.setter
     def default_resource_types(self, default_resource_types):
-        """Sets the default_resource_types of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the default_resource_types of this ShowBuiltInPolicyDefinitionResponse.
 
         默认资源类型列表
 
@@ -334,7 +334,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Gets the parameters of this ShowBuiltInPolicyDefinitionResponse.
 
         策略参数
 
@@ -345,7 +345,7 @@ class ShowBuiltInPolicyDefinitionResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowBuiltInPolicyDefinitionResponse.
+        r"""Sets the parameters of this ShowBuiltInPolicyDefinitionResponse.
 
         策略参数
 

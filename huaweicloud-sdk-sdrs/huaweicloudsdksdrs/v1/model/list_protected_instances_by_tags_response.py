@@ -28,7 +28,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListProtectedInstancesByTagsResponse
+        r"""ListProtectedInstancesByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListProtectedInstancesByTagsResponse.
+        r"""Gets the resources of this ListProtectedInstancesByTagsResponse.
 
         返回的保护实例列表。
 
@@ -62,7 +62,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListProtectedInstancesByTagsResponse.
+        r"""Sets the resources of this ListProtectedInstancesByTagsResponse.
 
         返回的保护实例列表。
 
@@ -73,7 +73,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListProtectedInstancesByTagsResponse.
+        r"""Gets the total_count of this ListProtectedInstancesByTagsResponse.
 
         总记录数。该值不受过滤条件的影响。
 
@@ -84,7 +84,7 @@ class ListProtectedInstancesByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListProtectedInstancesByTagsResponse.
+        r"""Sets the total_count of this ListProtectedInstancesByTagsResponse.
 
         总记录数。该值不受过滤条件的影响。
 

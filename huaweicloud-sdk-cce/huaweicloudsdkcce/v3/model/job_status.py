@@ -27,7 +27,7 @@ class JobStatus:
     }
 
     def __init__(self, phase=None, reason=None):
-        """JobStatus
+        r"""JobStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this JobStatus.
+        r"""Gets the phase of this JobStatus.
 
         任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
 
@@ -61,7 +61,7 @@ class JobStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this JobStatus.
+        r"""Sets the phase of this JobStatus.
 
         任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
 
@@ -72,7 +72,7 @@ class JobStatus:
 
     @property
     def reason(self):
-        """Gets the reason of this JobStatus.
+        r"""Gets the reason of this JobStatus.
 
         任务变为当前状态的原因
 
@@ -83,7 +83,7 @@ class JobStatus:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this JobStatus.
+        r"""Sets the reason of this JobStatus.
 
         任务变为当前状态的原因
 

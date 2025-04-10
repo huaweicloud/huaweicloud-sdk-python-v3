@@ -29,7 +29,7 @@ class ResourceSelector:
     }
 
     def __init__(self, key=None, values=None, operator=None):
-        """ResourceSelector
+        r"""ResourceSelector
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResourceSelector:
 
     @property
     def key(self):
-        """Gets the key of this ResourceSelector.
+        r"""Gets the key of this ResourceSelector.
 
         标签键值，取值如下 - node.uid：节点UID。
 
@@ -66,7 +66,7 @@ class ResourceSelector:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceSelector.
+        r"""Sets the key of this ResourceSelector.
 
         标签键值，取值如下 - node.uid：节点UID。
 
@@ -77,7 +77,7 @@ class ResourceSelector:
 
     @property
     def values(self):
-        """Gets the values of this ResourceSelector.
+        r"""Gets the values of this ResourceSelector.
 
         标签值列表
 
@@ -88,7 +88,7 @@ class ResourceSelector:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ResourceSelector.
+        r"""Sets the values of this ResourceSelector.
 
         标签值列表
 
@@ -99,7 +99,7 @@ class ResourceSelector:
 
     @property
     def operator(self):
-        """Gets the operator of this ResourceSelector.
+        r"""Gets the operator of this ResourceSelector.
 
         标签逻辑运算符，当前支持如下取值 - In
 
@@ -110,7 +110,7 @@ class ResourceSelector:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ResourceSelector.
+        r"""Sets the operator of this ResourceSelector.
 
         标签逻辑运算符，当前支持如下取值 - In
 

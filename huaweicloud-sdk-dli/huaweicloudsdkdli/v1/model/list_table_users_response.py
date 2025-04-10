@@ -30,7 +30,7 @@ class ListTableUsersResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, privileges=None):
-        """ListTableUsersResponse
+        r"""ListTableUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTableUsersResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListTableUsersResponse.
+        r"""Gets the is_success of this ListTableUsersResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ListTableUsersResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListTableUsersResponse.
+        r"""Sets the is_success of this ListTableUsersResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ListTableUsersResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListTableUsersResponse.
+        r"""Gets the message of this ListTableUsersResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class ListTableUsersResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListTableUsersResponse.
+        r"""Sets the message of this ListTableUsersResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class ListTableUsersResponse(SdkResponse):
 
     @property
     def privileges(self):
-        """Gets the privileges of this ListTableUsersResponse.
+        r"""Gets the privileges of this ListTableUsersResponse.
 
         权限信息。
 
@@ -113,7 +113,7 @@ class ListTableUsersResponse(SdkResponse):
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this ListTableUsersResponse.
+        r"""Sets the privileges of this ListTableUsersResponse.
 
         权限信息。
 

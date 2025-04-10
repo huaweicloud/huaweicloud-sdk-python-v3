@@ -24,7 +24,7 @@ class AssociateVmrResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateVmrResponse
+        r"""AssociateVmrResponse
 
         The model defined in huaweicloud sdk
 

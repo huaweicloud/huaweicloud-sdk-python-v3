@@ -28,7 +28,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """CreateTokenWithIdTokenResponse
+        r"""CreateTokenWithIdTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this CreateTokenWithIdTokenResponse.
+        r"""Gets the token of this CreateTokenWithIdTokenResponse.
 
         :return: The token of this CreateTokenWithIdTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenInfo`
@@ -60,7 +60,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CreateTokenWithIdTokenResponse.
+        r"""Sets the token of this CreateTokenWithIdTokenResponse.
 
         :param token: The token of this CreateTokenWithIdTokenResponse.
         :type token: :class:`huaweicloudsdkiam.v3.ScopedTokenInfo`
@@ -69,7 +69,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
     @property
     def x_subject_token(self):
-        """Gets the x_subject_token of this CreateTokenWithIdTokenResponse.
+        r"""Gets the x_subject_token of this CreateTokenWithIdTokenResponse.
 
         :return: The x_subject_token of this CreateTokenWithIdTokenResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateTokenWithIdTokenResponse(SdkResponse):
 
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
-        """Sets the x_subject_token of this CreateTokenWithIdTokenResponse.
+        r"""Sets the x_subject_token of this CreateTokenWithIdTokenResponse.
 
         :param x_subject_token: The x_subject_token of this CreateTokenWithIdTokenResponse.
         :type x_subject_token: str

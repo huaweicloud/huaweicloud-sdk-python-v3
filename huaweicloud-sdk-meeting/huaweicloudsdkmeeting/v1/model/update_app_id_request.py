@@ -31,7 +31,7 @@ class UpdateAppIdRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, app_id=None, body=None):
-        """UpdateAppIdRequest
+        r"""UpdateAppIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateAppIdRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateAppIdRequest.
+        r"""Gets the x_request_id of this UpdateAppIdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class UpdateAppIdRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateAppIdRequest.
+        r"""Sets the x_request_id of this UpdateAppIdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class UpdateAppIdRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this UpdateAppIdRequest.
+        r"""Gets the accept_language of this UpdateAppIdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class UpdateAppIdRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this UpdateAppIdRequest.
+        r"""Sets the accept_language of this UpdateAppIdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class UpdateAppIdRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppIdRequest.
+        r"""Gets the app_id of this UpdateAppIdRequest.
 
         企业应用ID
 
@@ -118,7 +118,7 @@ class UpdateAppIdRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppIdRequest.
+        r"""Sets the app_id of this UpdateAppIdRequest.
 
         企业应用ID
 
@@ -129,7 +129,7 @@ class UpdateAppIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppIdRequest.
+        r"""Gets the body of this UpdateAppIdRequest.
 
         :return: The body of this UpdateAppIdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateAppIdRequestBody`
@@ -138,7 +138,7 @@ class UpdateAppIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppIdRequest.
+        r"""Sets the body of this UpdateAppIdRequest.
 
         :param body: The body of this UpdateAppIdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.UpdateAppIdRequestBody`

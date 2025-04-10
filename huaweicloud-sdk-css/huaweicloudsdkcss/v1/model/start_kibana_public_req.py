@@ -29,7 +29,7 @@ class StartKibanaPublicReq:
     }
 
     def __init__(self, eip_size=None, elb_white_list=None, is_auto_pay=None):
-        """StartKibanaPublicReq
+        r"""StartKibanaPublicReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StartKibanaPublicReq:
 
     @property
     def eip_size(self):
-        """Gets the eip_size of this StartKibanaPublicReq.
+        r"""Gets the eip_size of this StartKibanaPublicReq.
 
         带宽。单位：Mbit/s
 
@@ -66,7 +66,7 @@ class StartKibanaPublicReq:
 
     @eip_size.setter
     def eip_size(self, eip_size):
-        """Sets the eip_size of this StartKibanaPublicReq.
+        r"""Sets the eip_size of this StartKibanaPublicReq.
 
         带宽。单位：Mbit/s
 
@@ -77,7 +77,7 @@ class StartKibanaPublicReq:
 
     @property
     def elb_white_list(self):
-        """Gets the elb_white_list of this StartKibanaPublicReq.
+        r"""Gets the elb_white_list of this StartKibanaPublicReq.
 
         :return: The elb_white_list of this StartKibanaPublicReq.
         :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
@@ -86,7 +86,7 @@ class StartKibanaPublicReq:
 
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
-        """Sets the elb_white_list of this StartKibanaPublicReq.
+        r"""Sets the elb_white_list of this StartKibanaPublicReq.
 
         :param elb_white_list: The elb_white_list of this StartKibanaPublicReq.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
@@ -95,7 +95,7 @@ class StartKibanaPublicReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this StartKibanaPublicReq.
+        r"""Gets the is_auto_pay of this StartKibanaPublicReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
@@ -106,7 +106,7 @@ class StartKibanaPublicReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this StartKibanaPublicReq.
+        r"""Sets the is_auto_pay of this StartKibanaPublicReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 

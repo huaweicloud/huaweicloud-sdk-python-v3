@@ -26,7 +26,7 @@ class ListExecutionPlansResponse(SdkResponse):
     }
 
     def __init__(self, execution_plans=None):
-        """ListExecutionPlansResponse
+        r"""ListExecutionPlansResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListExecutionPlansResponse(SdkResponse):
 
     @property
     def execution_plans(self):
-        """Gets the execution_plans of this ListExecutionPlansResponse.
+        r"""Gets the execution_plans of this ListExecutionPlansResponse.
 
         执行计划列表。默认按照生成时间降序排序，最新生成的在最前
 
@@ -55,7 +55,7 @@ class ListExecutionPlansResponse(SdkResponse):
 
     @execution_plans.setter
     def execution_plans(self, execution_plans):
-        """Sets the execution_plans of this ListExecutionPlansResponse.
+        r"""Sets the execution_plans of this ListExecutionPlansResponse.
 
         执行计划列表。默认按照生成时间降序排序，最新生成的在最前
 

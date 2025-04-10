@@ -27,7 +27,7 @@ class BatchDeleteGroupRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchDeleteGroupRequest
+        r"""BatchDeleteGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeleteGroupRequest.
+        r"""Gets the instance_id of this BatchDeleteGroupRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeleteGroupRequest.
+        r"""Sets the instance_id of this BatchDeleteGroupRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteGroupRequest.
+        r"""Gets the body of this BatchDeleteGroupRequest.
 
         :return: The body of this BatchDeleteGroupRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteGroupReq`
@@ -80,7 +80,7 @@ class BatchDeleteGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteGroupRequest.
+        r"""Sets the body of this BatchDeleteGroupRequest.
 
         :param body: The body of this BatchDeleteGroupRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.BatchDeleteGroupReq`

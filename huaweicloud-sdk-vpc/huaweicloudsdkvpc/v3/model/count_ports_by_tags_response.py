@@ -28,7 +28,7 @@ class CountPortsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None):
-        """CountPortsByTagsResponse
+        r"""CountPortsByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CountPortsByTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CountPortsByTagsResponse.
+        r"""Gets the request_id of this CountPortsByTagsResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class CountPortsByTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CountPortsByTagsResponse.
+        r"""Sets the request_id of this CountPortsByTagsResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class CountPortsByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this CountPortsByTagsResponse.
+        r"""Gets the total_count of this CountPortsByTagsResponse.
 
         资源数量
 
@@ -84,7 +84,7 @@ class CountPortsByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this CountPortsByTagsResponse.
+        r"""Sets the total_count of this CountPortsByTagsResponse.
 
         资源数量
 

@@ -27,7 +27,7 @@ class RestParticipantViewReqBody:
     }
 
     def __init__(self, view_type=None, participant_id=None):
-        """RestParticipantViewReqBody
+        r"""RestParticipantViewReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestParticipantViewReqBody:
 
     @property
     def view_type(self):
-        """Gets the view_type of this RestParticipantViewReqBody.
+        r"""Gets the view_type of this RestParticipantViewReqBody.
 
         选看类型。 - 2: 选看会场
 
@@ -59,7 +59,7 @@ class RestParticipantViewReqBody:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this RestParticipantViewReqBody.
+        r"""Sets the view_type of this RestParticipantViewReqBody.
 
         选看类型。 - 2: 选看会场
 
@@ -70,7 +70,7 @@ class RestParticipantViewReqBody:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RestParticipantViewReqBody.
+        r"""Gets the participant_id of this RestParticipantViewReqBody.
 
         被选看的与会者标识。
 
@@ -81,7 +81,7 @@ class RestParticipantViewReqBody:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RestParticipantViewReqBody.
+        r"""Sets the participant_id of this RestParticipantViewReqBody.
 
         被选看的与会者标识。
 

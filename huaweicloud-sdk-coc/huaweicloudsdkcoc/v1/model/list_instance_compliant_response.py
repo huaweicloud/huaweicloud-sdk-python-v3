@@ -28,7 +28,7 @@ class ListInstanceCompliantResponse(SdkResponse):
     }
 
     def __init__(self, count=None, instance_compliant=None):
-        """ListInstanceCompliantResponse
+        r"""ListInstanceCompliantResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceCompliantResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInstanceCompliantResponse.
+        r"""Gets the count of this ListInstanceCompliantResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListInstanceCompliantResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInstanceCompliantResponse.
+        r"""Sets the count of this ListInstanceCompliantResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListInstanceCompliantResponse(SdkResponse):
 
     @property
     def instance_compliant(self):
-        """Gets the instance_compliant of this ListInstanceCompliantResponse.
+        r"""Gets the instance_compliant of this ListInstanceCompliantResponse.
 
         节点合规报告
 
@@ -84,7 +84,7 @@ class ListInstanceCompliantResponse(SdkResponse):
 
     @instance_compliant.setter
     def instance_compliant(self, instance_compliant):
-        """Sets the instance_compliant of this ListInstanceCompliantResponse.
+        r"""Sets the instance_compliant of this ListInstanceCompliantResponse.
 
         节点合规报告
 

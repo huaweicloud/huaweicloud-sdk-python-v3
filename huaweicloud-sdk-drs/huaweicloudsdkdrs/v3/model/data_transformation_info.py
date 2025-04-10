@@ -29,7 +29,7 @@ class DataTransformationInfo:
     }
 
     def __init__(self, transformation_info=None, config_transformation=None, data_transformation_object_infos=None):
-        """DataTransformationInfo
+        r"""DataTransformationInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DataTransformationInfo:
 
     @property
     def transformation_info(self):
-        """Gets the transformation_info of this DataTransformationInfo.
+        r"""Gets the transformation_info of this DataTransformationInfo.
 
         :return: The transformation_info of this DataTransformationInfo.
         :rtype: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
@@ -66,7 +66,7 @@ class DataTransformationInfo:
 
     @transformation_info.setter
     def transformation_info(self, transformation_info):
-        """Sets the transformation_info of this DataTransformationInfo.
+        r"""Sets the transformation_info of this DataTransformationInfo.
 
         :param transformation_info: The transformation_info of this DataTransformationInfo.
         :type transformation_info: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
@@ -75,7 +75,7 @@ class DataTransformationInfo:
 
     @property
     def config_transformation(self):
-        """Gets the config_transformation of this DataTransformationInfo.
+        r"""Gets the config_transformation of this DataTransformationInfo.
 
         :return: The config_transformation of this DataTransformationInfo.
         :rtype: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
@@ -84,7 +84,7 @@ class DataTransformationInfo:
 
     @config_transformation.setter
     def config_transformation(self, config_transformation):
-        """Sets the config_transformation of this DataTransformationInfo.
+        r"""Sets the config_transformation of this DataTransformationInfo.
 
         :param config_transformation: The config_transformation of this DataTransformationInfo.
         :type config_transformation: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
@@ -93,7 +93,7 @@ class DataTransformationInfo:
 
     @property
     def data_transformation_object_infos(self):
-        """Gets the data_transformation_object_infos of this DataTransformationInfo.
+        r"""Gets the data_transformation_object_infos of this DataTransformationInfo.
 
         数据加工对象。
 
@@ -104,7 +104,7 @@ class DataTransformationInfo:
 
     @data_transformation_object_infos.setter
     def data_transformation_object_infos(self, data_transformation_object_infos):
-        """Sets the data_transformation_object_infos of this DataTransformationInfo.
+        r"""Sets the data_transformation_object_infos of this DataTransformationInfo.
 
         数据加工对象。
 

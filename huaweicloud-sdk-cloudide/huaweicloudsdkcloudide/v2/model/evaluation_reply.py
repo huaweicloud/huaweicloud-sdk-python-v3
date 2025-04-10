@@ -29,7 +29,7 @@ class EvaluationReply:
     }
 
     def __init__(self, evaluation_id=None, reply_id=None, text=None):
-        """EvaluationReply
+        r"""EvaluationReply
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EvaluationReply:
 
     @property
     def evaluation_id(self):
-        """Gets the evaluation_id of this EvaluationReply.
+        r"""Gets the evaluation_id of this EvaluationReply.
 
         所在评论id
 
@@ -67,7 +67,7 @@ class EvaluationReply:
 
     @evaluation_id.setter
     def evaluation_id(self, evaluation_id):
-        """Sets the evaluation_id of this EvaluationReply.
+        r"""Sets the evaluation_id of this EvaluationReply.
 
         所在评论id
 
@@ -78,7 +78,7 @@ class EvaluationReply:
 
     @property
     def reply_id(self):
-        """Gets the reply_id of this EvaluationReply.
+        r"""Gets the reply_id of this EvaluationReply.
 
         回复评论的id 空表示回复主评论
 
@@ -89,7 +89,7 @@ class EvaluationReply:
 
     @reply_id.setter
     def reply_id(self, reply_id):
-        """Sets the reply_id of this EvaluationReply.
+        r"""Sets the reply_id of this EvaluationReply.
 
         回复评论的id 空表示回复主评论
 
@@ -100,7 +100,7 @@ class EvaluationReply:
 
     @property
     def text(self):
-        """Gets the text of this EvaluationReply.
+        r"""Gets the text of this EvaluationReply.
 
         评论或回复内容
 
@@ -111,7 +111,7 @@ class EvaluationReply:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this EvaluationReply.
+        r"""Sets the text of this EvaluationReply.
 
         评论或回复内容
 

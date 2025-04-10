@@ -25,7 +25,7 @@ class PoliciesSeamlessOptions:
     }
 
     def __init__(self, seamless_apply_path=None):
-        """PoliciesSeamlessOptions
+        r"""PoliciesSeamlessOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesSeamlessOptions:
 
     @property
     def seamless_apply_path(self):
-        """Gets the seamless_apply_path of this PoliciesSeamlessOptions.
+        r"""Gets the seamless_apply_path of this PoliciesSeamlessOptions.
 
         软件路径。
 
@@ -54,7 +54,7 @@ class PoliciesSeamlessOptions:
 
     @seamless_apply_path.setter
     def seamless_apply_path(self, seamless_apply_path):
-        """Sets the seamless_apply_path of this PoliciesSeamlessOptions.
+        r"""Sets the seamless_apply_path of this PoliciesSeamlessOptions.
 
         软件路径。
 

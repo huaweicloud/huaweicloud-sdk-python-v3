@@ -31,7 +31,7 @@ class ListInstanceMultiNodesSingleMetric:
     }
 
     def __init__(self, metric_name=None, start_at=None, end_at=None, instance_infos=None):
-        """ListInstanceMultiNodesSingleMetric
+        r"""ListInstanceMultiNodesSingleMetric
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListInstanceMultiNodesSingleMetric.
+        r"""Gets the metric_name of this ListInstanceMultiNodesSingleMetric.
 
         指标名称
 
@@ -71,7 +71,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListInstanceMultiNodesSingleMetric.
+        r"""Sets the metric_name of this ListInstanceMultiNodesSingleMetric.
 
         指标名称
 
@@ -82,7 +82,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ListInstanceMultiNodesSingleMetric.
+        r"""Gets the start_at of this ListInstanceMultiNodesSingleMetric.
 
         开始时间
 
@@ -93,7 +93,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ListInstanceMultiNodesSingleMetric.
+        r"""Sets the start_at of this ListInstanceMultiNodesSingleMetric.
 
         开始时间
 
@@ -104,7 +104,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ListInstanceMultiNodesSingleMetric.
+        r"""Gets the end_at of this ListInstanceMultiNodesSingleMetric.
 
         结束时间
 
@@ -115,7 +115,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ListInstanceMultiNodesSingleMetric.
+        r"""Sets the end_at of this ListInstanceMultiNodesSingleMetric.
 
         结束时间
 
@@ -126,7 +126,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @property
     def instance_infos(self):
-        """Gets the instance_infos of this ListInstanceMultiNodesSingleMetric.
+        r"""Gets the instance_infos of this ListInstanceMultiNodesSingleMetric.
 
         实例信息列表
 
@@ -137,7 +137,7 @@ class ListInstanceMultiNodesSingleMetric:
 
     @instance_infos.setter
     def instance_infos(self, instance_infos):
-        """Sets the instance_infos of this ListInstanceMultiNodesSingleMetric.
+        r"""Sets the instance_infos of this ListInstanceMultiNodesSingleMetric.
 
         实例信息列表
 

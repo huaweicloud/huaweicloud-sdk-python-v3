@@ -25,7 +25,7 @@ class NotebookActionReq:
     }
 
     def __init__(self, action=None):
-        """NotebookActionReq
+        r"""NotebookActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NotebookActionReq:
 
     @property
     def action(self):
-        """Gets the action of this NotebookActionReq.
+        r"""Gets the action of this NotebookActionReq.
 
         :return: The action of this NotebookActionReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ActionType`
@@ -51,7 +51,7 @@ class NotebookActionReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this NotebookActionReq.
+        r"""Sets the action of this NotebookActionReq.
 
         :param action: The action of this NotebookActionReq.
         :type action: :class:`huaweicloudsdkeihealth.v1.ActionType`

@@ -33,7 +33,7 @@ class SetOnlineMigrationTaskBody:
     }
 
     def __init__(self, migration_method=None, resume_mode=None, bandwidth_limit_mb=None, source_instance=None, target_instance=None):
-        """SetOnlineMigrationTaskBody
+        r"""SetOnlineMigrationTaskBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class SetOnlineMigrationTaskBody:
 
     @property
     def migration_method(self):
-        """Gets the migration_method of this SetOnlineMigrationTaskBody.
+        r"""Gets the migration_method of this SetOnlineMigrationTaskBody.
 
         迁移方式，包括全量迁移和增量迁移两种类型。 - 全量迁移：该模式为Redis的一次性迁移，适用于可中断业务的迁移场景。   全量迁移过程中，如果源Redis有数据更新，这部分更新数据不会被迁移到目标Redis。 - 增量迁移：该模式为Redis的持续性迁移，适用于对业务中断敏感的迁移场景。   增量迁移阶段通过解析日志等技术， 持续保持源Redis和目标端Redis的数据一致。 取值范围： - full_amount_migration：表示全量迁移。 - incremental_migration：表示增量迁移。 
 
@@ -78,7 +78,7 @@ class SetOnlineMigrationTaskBody:
 
     @migration_method.setter
     def migration_method(self, migration_method):
-        """Sets the migration_method of this SetOnlineMigrationTaskBody.
+        r"""Sets the migration_method of this SetOnlineMigrationTaskBody.
 
         迁移方式，包括全量迁移和增量迁移两种类型。 - 全量迁移：该模式为Redis的一次性迁移，适用于可中断业务的迁移场景。   全量迁移过程中，如果源Redis有数据更新，这部分更新数据不会被迁移到目标Redis。 - 增量迁移：该模式为Redis的持续性迁移，适用于对业务中断敏感的迁移场景。   增量迁移阶段通过解析日志等技术， 持续保持源Redis和目标端Redis的数据一致。 取值范围： - full_amount_migration：表示全量迁移。 - incremental_migration：表示增量迁移。 
 
@@ -89,7 +89,7 @@ class SetOnlineMigrationTaskBody:
 
     @property
     def resume_mode(self):
-        """Gets the resume_mode of this SetOnlineMigrationTaskBody.
+        r"""Gets the resume_mode of this SetOnlineMigrationTaskBody.
 
         自动重连，根据参数决定是否自动重连。 自动重连模式在遇到网络等异常情况时，会无限自动重试。 自动重连模式在无法进行增量同步时，会触发全量同步，增加带宽占用，请谨慎选择。 取值范围： - auto：自动重连。 - manual：手动重连。 
 
@@ -100,7 +100,7 @@ class SetOnlineMigrationTaskBody:
 
     @resume_mode.setter
     def resume_mode(self, resume_mode):
-        """Sets the resume_mode of this SetOnlineMigrationTaskBody.
+        r"""Sets the resume_mode of this SetOnlineMigrationTaskBody.
 
         自动重连，根据参数决定是否自动重连。 自动重连模式在遇到网络等异常情况时，会无限自动重试。 自动重连模式在无法进行增量同步时，会触发全量同步，增加带宽占用，请谨慎选择。 取值范围： - auto：自动重连。 - manual：手动重连。 
 
@@ -111,7 +111,7 @@ class SetOnlineMigrationTaskBody:
 
     @property
     def bandwidth_limit_mb(self):
-        """Gets the bandwidth_limit_mb of this SetOnlineMigrationTaskBody.
+        r"""Gets the bandwidth_limit_mb of this SetOnlineMigrationTaskBody.
 
         带宽限制，当迁移方式为增量迁移时，为保证业务正常运行，您可以启用带宽限制功能，当数据同步速度达到带宽限制时，将限制同步速度的继续增长。 -限制为MB/s -取值范围：1-10,241(大于0小于10,241的整数)
 
@@ -122,7 +122,7 @@ class SetOnlineMigrationTaskBody:
 
     @bandwidth_limit_mb.setter
     def bandwidth_limit_mb(self, bandwidth_limit_mb):
-        """Sets the bandwidth_limit_mb of this SetOnlineMigrationTaskBody.
+        r"""Sets the bandwidth_limit_mb of this SetOnlineMigrationTaskBody.
 
         带宽限制，当迁移方式为增量迁移时，为保证业务正常运行，您可以启用带宽限制功能，当数据同步速度达到带宽限制时，将限制同步速度的继续增长。 -限制为MB/s -取值范围：1-10,241(大于0小于10,241的整数)
 
@@ -133,7 +133,7 @@ class SetOnlineMigrationTaskBody:
 
     @property
     def source_instance(self):
-        """Gets the source_instance of this SetOnlineMigrationTaskBody.
+        r"""Gets the source_instance of this SetOnlineMigrationTaskBody.
 
         :return: The source_instance of this SetOnlineMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
@@ -142,7 +142,7 @@ class SetOnlineMigrationTaskBody:
 
     @source_instance.setter
     def source_instance(self, source_instance):
-        """Sets the source_instance of this SetOnlineMigrationTaskBody.
+        r"""Sets the source_instance of this SetOnlineMigrationTaskBody.
 
         :param source_instance: The source_instance of this SetOnlineMigrationTaskBody.
         :type source_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
@@ -151,7 +151,7 @@ class SetOnlineMigrationTaskBody:
 
     @property
     def target_instance(self):
-        """Gets the target_instance of this SetOnlineMigrationTaskBody.
+        r"""Gets the target_instance of this SetOnlineMigrationTaskBody.
 
         :return: The target_instance of this SetOnlineMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
@@ -160,7 +160,7 @@ class SetOnlineMigrationTaskBody:
 
     @target_instance.setter
     def target_instance(self, target_instance):
-        """Sets the target_instance of this SetOnlineMigrationTaskBody.
+        r"""Sets the target_instance of this SetOnlineMigrationTaskBody.
 
         :param target_instance: The target_instance of this SetOnlineMigrationTaskBody.
         :type target_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`

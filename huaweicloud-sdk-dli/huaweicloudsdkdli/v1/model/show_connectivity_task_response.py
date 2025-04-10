@@ -30,7 +30,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, connectivity=None):
-        """ShowConnectivityTaskResponse
+        r"""ShowConnectivityTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowConnectivityTaskResponse.
+        r"""Gets the is_success of this ShowConnectivityTaskResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -69,7 +69,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowConnectivityTaskResponse.
+        r"""Sets the is_success of this ShowConnectivityTaskResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -80,7 +80,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowConnectivityTaskResponse.
+        r"""Gets the message of this ShowConnectivityTaskResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowConnectivityTaskResponse.
+        r"""Sets the message of this ShowConnectivityTaskResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
 
     @property
     def connectivity(self):
-        """Gets the connectivity of this ShowConnectivityTaskResponse.
+        r"""Gets the connectivity of this ShowConnectivityTaskResponse.
 
         连通性测试结果
 
@@ -113,7 +113,7 @@ class ShowConnectivityTaskResponse(SdkResponse):
 
     @connectivity.setter
     def connectivity(self, connectivity):
-        """Sets the connectivity of this ShowConnectivityTaskResponse.
+        r"""Sets the connectivity of this ShowConnectivityTaskResponse.
 
         连通性测试结果
 

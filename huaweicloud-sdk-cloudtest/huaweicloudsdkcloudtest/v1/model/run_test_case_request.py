@@ -27,7 +27,7 @@ class RunTestCaseRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """RunTestCaseRequest
+        r"""RunTestCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunTestCaseRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RunTestCaseRequest.
+        r"""Gets the project_id of this RunTestCaseRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -60,7 +60,7 @@ class RunTestCaseRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RunTestCaseRequest.
+        r"""Sets the project_id of this RunTestCaseRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -71,7 +71,7 @@ class RunTestCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunTestCaseRequest.
+        r"""Gets the body of this RunTestCaseRequest.
 
         :return: The body of this RunTestCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseRequestBody`
@@ -80,7 +80,7 @@ class RunTestCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunTestCaseRequest.
+        r"""Sets the body of this RunTestCaseRequest.
 
         :param body: The body of this RunTestCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseRequestBody`

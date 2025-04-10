@@ -32,7 +32,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
     }
 
     def __init__(self, async_job_id=None, import_error_messages=None, error_code=None, error_msg=None):
-        """ImportBatchCreateJobsResponse
+        r"""ImportBatchCreateJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this ImportBatchCreateJobsResponse.
+        r"""Gets the async_job_id of this ImportBatchCreateJobsResponse.
 
         批量导入任务id。
 
@@ -76,7 +76,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this ImportBatchCreateJobsResponse.
+        r"""Sets the async_job_id of this ImportBatchCreateJobsResponse.
 
         批量导入任务id。
 
@@ -87,7 +87,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @property
     def import_error_messages(self):
-        """Gets the import_error_messages of this ImportBatchCreateJobsResponse.
+        r"""Gets the import_error_messages of this ImportBatchCreateJobsResponse.
 
         导入失败的错误信息。
 
@@ -98,7 +98,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @import_error_messages.setter
     def import_error_messages(self, import_error_messages):
-        """Sets the import_error_messages of this ImportBatchCreateJobsResponse.
+        r"""Sets the import_error_messages of this ImportBatchCreateJobsResponse.
 
         导入失败的错误信息。
 
@@ -109,7 +109,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ImportBatchCreateJobsResponse.
+        r"""Gets the error_code of this ImportBatchCreateJobsResponse.
 
         错误码。
 
@@ -120,7 +120,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ImportBatchCreateJobsResponse.
+        r"""Sets the error_code of this ImportBatchCreateJobsResponse.
 
         错误码。
 
@@ -131,7 +131,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ImportBatchCreateJobsResponse.
+        r"""Gets the error_msg of this ImportBatchCreateJobsResponse.
 
         错误描述。
 
@@ -142,7 +142,7 @@ class ImportBatchCreateJobsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ImportBatchCreateJobsResponse.
+        r"""Sets the error_msg of this ImportBatchCreateJobsResponse.
 
         错误描述。
 

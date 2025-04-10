@@ -23,7 +23,7 @@ class LoginType:
     }
 
     def __init__(self):
-        """LoginType
+        r"""LoginType
 
         The model defined in huaweicloud sdk
 

@@ -35,7 +35,7 @@ class BandwidthResp:
     }
 
     def __init__(self, id=None, size=None, share_type=None, charge_mode=None, name=None, billing_info=None):
-        """BandwidthResp
+        r"""BandwidthResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BandwidthResp:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthResp.
+        r"""Gets the id of this BandwidthResp.
 
         - 功能说明：带宽ID
 
@@ -89,7 +89,7 @@ class BandwidthResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthResp.
+        r"""Sets the id of this BandwidthResp.
 
         - 功能说明：带宽ID
 
@@ -100,7 +100,7 @@ class BandwidthResp:
 
     @property
     def size(self):
-        """Gets the size of this BandwidthResp.
+        r"""Gets the size of this BandwidthResp.
 
         - 功能说明：带宽大小
 
@@ -111,7 +111,7 @@ class BandwidthResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandwidthResp.
+        r"""Sets the size of this BandwidthResp.
 
         - 功能说明：带宽大小
 
@@ -122,7 +122,7 @@ class BandwidthResp:
 
     @property
     def share_type(self):
-        """Gets the share_type of this BandwidthResp.
+        r"""Gets the share_type of this BandwidthResp.
 
         - 功能说明：类型  \"WHOLE\"为共享带宽，\"PER\"为独占带宽
 
@@ -133,7 +133,7 @@ class BandwidthResp:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this BandwidthResp.
+        r"""Sets the share_type of this BandwidthResp.
 
         - 功能说明：类型  \"WHOLE\"为共享带宽，\"PER\"为独占带宽
 
@@ -144,7 +144,7 @@ class BandwidthResp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BandwidthResp.
+        r"""Gets the charge_mode of this BandwidthResp.
 
         - 功能说明：带宽计费模式
 
@@ -155,7 +155,7 @@ class BandwidthResp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BandwidthResp.
+        r"""Sets the charge_mode of this BandwidthResp.
 
         - 功能说明：带宽计费模式
 
@@ -166,7 +166,7 @@ class BandwidthResp:
 
     @property
     def name(self):
-        """Gets the name of this BandwidthResp.
+        r"""Gets the name of this BandwidthResp.
 
         - 功能说明：带宽名称
 
@@ -177,7 +177,7 @@ class BandwidthResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BandwidthResp.
+        r"""Sets the name of this BandwidthResp.
 
         - 功能说明：带宽名称
 
@@ -188,7 +188,7 @@ class BandwidthResp:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this BandwidthResp.
+        r"""Gets the billing_info of this BandwidthResp.
 
         - 功能说明：带宽的订单信息
 
@@ -199,7 +199,7 @@ class BandwidthResp:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this BandwidthResp.
+        r"""Sets the billing_info of this BandwidthResp.
 
         - 功能说明：带宽的订单信息
 

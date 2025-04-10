@@ -25,7 +25,7 @@ class CountTagFabricWorkspacesRequest:
     }
 
     def __init__(self, body=None):
-        """CountTagFabricWorkspacesRequest
+        r"""CountTagFabricWorkspacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountTagFabricWorkspacesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountTagFabricWorkspacesRequest.
+        r"""Gets the body of this CountTagFabricWorkspacesRequest.
 
         :return: The body of this CountTagFabricWorkspacesRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ListTagWorkspacesRequestBody`
@@ -52,7 +52,7 @@ class CountTagFabricWorkspacesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountTagFabricWorkspacesRequest.
+        r"""Sets the body of this CountTagFabricWorkspacesRequest.
 
         :param body: The body of this CountTagFabricWorkspacesRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.ListTagWorkspacesRequestBody`

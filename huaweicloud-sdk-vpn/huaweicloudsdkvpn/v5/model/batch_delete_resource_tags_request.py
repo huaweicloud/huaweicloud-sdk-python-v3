@@ -29,7 +29,7 @@ class BatchDeleteResourceTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchDeleteResourceTagsRequest
+        r"""BatchDeleteResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchDeleteResourceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchDeleteResourceTagsRequest.
+        r"""Gets the resource_type of this BatchDeleteResourceTagsRequest.
 
         资源类型
 
@@ -66,7 +66,7 @@ class BatchDeleteResourceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchDeleteResourceTagsRequest.
+        r"""Sets the resource_type of this BatchDeleteResourceTagsRequest.
 
         资源类型
 
@@ -77,7 +77,7 @@ class BatchDeleteResourceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteResourceTagsRequest.
+        r"""Gets the resource_id of this BatchDeleteResourceTagsRequest.
 
         资源ID
 
@@ -88,7 +88,7 @@ class BatchDeleteResourceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteResourceTagsRequest.
+        r"""Sets the resource_id of this BatchDeleteResourceTagsRequest.
 
         资源ID
 
@@ -99,7 +99,7 @@ class BatchDeleteResourceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteResourceTagsRequest.
+        r"""Gets the body of this BatchDeleteResourceTagsRequest.
 
         :return: The body of this BatchDeleteResourceTagsRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.DeleteResourcesTagsRequestBody`
@@ -108,7 +108,7 @@ class BatchDeleteResourceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteResourceTagsRequest.
+        r"""Sets the body of this BatchDeleteResourceTagsRequest.
 
         :param body: The body of this BatchDeleteResourceTagsRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.DeleteResourcesTagsRequestBody`

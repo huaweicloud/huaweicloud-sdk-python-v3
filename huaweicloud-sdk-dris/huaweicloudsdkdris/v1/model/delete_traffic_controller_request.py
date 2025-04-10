@@ -27,7 +27,7 @@ class DeleteTrafficControllerRequest:
     }
 
     def __init__(self, instance_id=None, traffic_controller_id=None):
-        """DeleteTrafficControllerRequest
+        r"""DeleteTrafficControllerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteTrafficControllerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteTrafficControllerRequest.
+        r"""Gets the instance_id of this DeleteTrafficControllerRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -60,7 +60,7 @@ class DeleteTrafficControllerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteTrafficControllerRequest.
+        r"""Sets the instance_id of this DeleteTrafficControllerRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -71,7 +71,7 @@ class DeleteTrafficControllerRequest:
 
     @property
     def traffic_controller_id(self):
-        """Gets the traffic_controller_id of this DeleteTrafficControllerRequest.
+        r"""Gets the traffic_controller_id of this DeleteTrafficControllerRequest.
 
         traffic_controller_id
 
@@ -82,7 +82,7 @@ class DeleteTrafficControllerRequest:
 
     @traffic_controller_id.setter
     def traffic_controller_id(self, traffic_controller_id):
-        """Sets the traffic_controller_id of this DeleteTrafficControllerRequest.
+        r"""Sets the traffic_controller_id of this DeleteTrafficControllerRequest.
 
         traffic_controller_id
 

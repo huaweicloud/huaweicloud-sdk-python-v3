@@ -24,7 +24,7 @@ class PauseConnectorTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PauseConnectorTaskResponse
+        r"""PauseConnectorTaskResponse
 
         The model defined in huaweicloud sdk
 

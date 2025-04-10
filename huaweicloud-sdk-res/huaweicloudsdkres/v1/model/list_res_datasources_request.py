@@ -27,7 +27,7 @@ class ListResDatasourcesRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None):
-        """ListResDatasourcesRequest
+        r"""ListResDatasourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListResDatasourcesRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListResDatasourcesRequest.
+        r"""Gets the content_type of this ListResDatasourcesRequest.
 
         内容类型，取值为application/json。
 
@@ -59,7 +59,7 @@ class ListResDatasourcesRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListResDatasourcesRequest.
+        r"""Sets the content_type of this ListResDatasourcesRequest.
 
         内容类型，取值为application/json。
 
@@ -70,7 +70,7 @@ class ListResDatasourcesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListResDatasourcesRequest.
+        r"""Gets the workspace_id of this ListResDatasourcesRequest.
 
         工作空间id。
 
@@ -81,7 +81,7 @@ class ListResDatasourcesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListResDatasourcesRequest.
+        r"""Sets the workspace_id of this ListResDatasourcesRequest.
 
         工作空间id。
 

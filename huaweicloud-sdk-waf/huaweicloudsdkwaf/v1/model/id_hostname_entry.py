@@ -27,7 +27,7 @@ class IdHostnameEntry:
     }
 
     def __init__(self, id=None, hostname=None):
-        """IdHostnameEntry
+        r"""IdHostnameEntry
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IdHostnameEntry:
 
     @property
     def id(self):
-        """Gets the id of this IdHostnameEntry.
+        r"""Gets the id of this IdHostnameEntry.
 
         防护域名ID
 
@@ -59,7 +59,7 @@ class IdHostnameEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IdHostnameEntry.
+        r"""Sets the id of this IdHostnameEntry.
 
         防护域名ID
 
@@ -70,7 +70,7 @@ class IdHostnameEntry:
 
     @property
     def hostname(self):
-        """Gets the hostname of this IdHostnameEntry.
+        r"""Gets the hostname of this IdHostnameEntry.
 
         防护域名
 
@@ -81,7 +81,7 @@ class IdHostnameEntry:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this IdHostnameEntry.
+        r"""Sets the hostname of this IdHostnameEntry.
 
         防护域名
 

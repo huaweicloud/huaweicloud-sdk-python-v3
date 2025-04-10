@@ -29,7 +29,7 @@ class ShowEventRequest:
     }
 
     def __init__(self, x_language=None, enterprise_project_id=None, eventid=None):
-        """ShowEventRequest
+        r"""ShowEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowEventRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowEventRequest.
+        r"""Gets the x_language of this ShowEventRequest.
 
         语言，默认值为en-us。zh-cn（中文）/en-us（英文）
 
@@ -67,7 +67,7 @@ class ShowEventRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowEventRequest.
+        r"""Sets the x_language of this ShowEventRequest.
 
         语言，默认值为en-us。zh-cn（中文）/en-us（英文）
 
@@ -78,7 +78,7 @@ class ShowEventRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowEventRequest.
+        r"""Gets the enterprise_project_id of this ShowEventRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -89,7 +89,7 @@ class ShowEventRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowEventRequest.
+        r"""Sets the enterprise_project_id of this ShowEventRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -100,7 +100,7 @@ class ShowEventRequest:
 
     @property
     def eventid(self):
-        """Gets the eventid of this ShowEventRequest.
+        r"""Gets the eventid of this ShowEventRequest.
 
         防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
 
@@ -111,7 +111,7 @@ class ShowEventRequest:
 
     @eventid.setter
     def eventid(self, eventid):
-        """Sets the eventid of this ShowEventRequest.
+        r"""Sets the eventid of this ShowEventRequest.
 
         防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
 

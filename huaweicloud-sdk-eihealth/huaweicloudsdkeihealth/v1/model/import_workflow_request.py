@@ -27,7 +27,7 @@ class ImportWorkflowRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """ImportWorkflowRequest
+        r"""ImportWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ImportWorkflowRequest.
+        r"""Gets the eihealth_project_id of this ImportWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class ImportWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ImportWorkflowRequest.
+        r"""Sets the eihealth_project_id of this ImportWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class ImportWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportWorkflowRequest.
+        r"""Gets the body of this ImportWorkflowRequest.
 
         :return: The body of this ImportWorkflowRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowReq`
@@ -80,7 +80,7 @@ class ImportWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportWorkflowRequest.
+        r"""Sets the body of this ImportWorkflowRequest.
 
         :param body: The body of this ImportWorkflowRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowReq`

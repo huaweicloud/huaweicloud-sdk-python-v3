@@ -37,7 +37,7 @@ class QueryLogKeyWordCountRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None, step_interval=None, group_id=None, stream_id=None, key_word=None, is_iterative=None):
-        """QueryLogKeyWordCountRequestBody
+        r"""QueryLogKeyWordCountRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the start_time of this QueryLogKeyWordCountRequestBody.
 
         开始时间
 
@@ -90,7 +90,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the start_time of this QueryLogKeyWordCountRequestBody.
 
         开始时间
 
@@ -101,7 +101,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the end_time of this QueryLogKeyWordCountRequestBody.
 
         结束时间
 
@@ -112,7 +112,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the end_time of this QueryLogKeyWordCountRequestBody.
 
         结束时间
 
@@ -123,7 +123,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def step_interval(self):
-        """Gets the step_interval of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the step_interval of this QueryLogKeyWordCountRequestBody.
 
         步长间隔
 
@@ -134,7 +134,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @step_interval.setter
     def step_interval(self, step_interval):
-        """Sets the step_interval of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the step_interval of this QueryLogKeyWordCountRequestBody.
 
         步长间隔
 
@@ -145,7 +145,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the group_id of this QueryLogKeyWordCountRequestBody.
 
         日志组ID
 
@@ -156,7 +156,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the group_id of this QueryLogKeyWordCountRequestBody.
 
         日志组ID
 
@@ -167,7 +167,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the stream_id of this QueryLogKeyWordCountRequestBody.
 
         日志流ID
 
@@ -178,7 +178,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the stream_id of this QueryLogKeyWordCountRequestBody.
 
         日志流ID
 
@@ -189,7 +189,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def key_word(self):
-        """Gets the key_word of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the key_word of this QueryLogKeyWordCountRequestBody.
 
         关键词
 
@@ -200,7 +200,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the key_word of this QueryLogKeyWordCountRequestBody.
 
         关键词
 
@@ -211,7 +211,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @property
     def is_iterative(self):
-        """Gets the is_iterative of this QueryLogKeyWordCountRequestBody.
+        r"""Gets the is_iterative of this QueryLogKeyWordCountRequestBody.
 
         日志迭代查询，默认为false（不开启迭代），true为开启迭代。
 
@@ -222,7 +222,7 @@ class QueryLogKeyWordCountRequestBody:
 
     @is_iterative.setter
     def is_iterative(self, is_iterative):
-        """Sets the is_iterative of this QueryLogKeyWordCountRequestBody.
+        r"""Sets the is_iterative of this QueryLogKeyWordCountRequestBody.
 
         日志迭代查询，默认为false（不开启迭代），true为开启迭代。
 

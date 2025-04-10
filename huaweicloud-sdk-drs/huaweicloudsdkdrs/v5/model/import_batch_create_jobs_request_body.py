@@ -25,7 +25,7 @@ class ImportBatchCreateJobsRequestBody:
     }
 
     def __init__(self, file=None):
-        """ImportBatchCreateJobsRequestBody
+        r"""ImportBatchCreateJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportBatchCreateJobsRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ImportBatchCreateJobsRequestBody.
+        r"""Gets the file of this ImportBatchCreateJobsRequestBody.
 
         待上传的模板文件。
 
@@ -53,7 +53,7 @@ class ImportBatchCreateJobsRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ImportBatchCreateJobsRequestBody.
+        r"""Sets the file of this ImportBatchCreateJobsRequestBody.
 
         待上传的模板文件。
 

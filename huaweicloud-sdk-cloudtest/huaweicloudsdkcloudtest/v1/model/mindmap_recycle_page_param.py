@@ -33,7 +33,7 @@ class MindmapRecyclePageParam:
     }
 
     def __init__(self, creator_num=None, limit=None, offset=None, project_id=None, text=None):
-        """MindmapRecyclePageParam
+        r"""MindmapRecyclePageParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MindmapRecyclePageParam:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this MindmapRecyclePageParam.
+        r"""Gets the creator_num of this MindmapRecyclePageParam.
 
         创建人工号
 
@@ -82,7 +82,7 @@ class MindmapRecyclePageParam:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this MindmapRecyclePageParam.
+        r"""Sets the creator_num of this MindmapRecyclePageParam.
 
         创建人工号
 
@@ -93,7 +93,7 @@ class MindmapRecyclePageParam:
 
     @property
     def limit(self):
-        """Gets the limit of this MindmapRecyclePageParam.
+        r"""Gets the limit of this MindmapRecyclePageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -104,7 +104,7 @@ class MindmapRecyclePageParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this MindmapRecyclePageParam.
+        r"""Sets the limit of this MindmapRecyclePageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -115,7 +115,7 @@ class MindmapRecyclePageParam:
 
     @property
     def offset(self):
-        """Gets the offset of this MindmapRecyclePageParam.
+        r"""Gets the offset of this MindmapRecyclePageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -126,7 +126,7 @@ class MindmapRecyclePageParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this MindmapRecyclePageParam.
+        r"""Sets the offset of this MindmapRecyclePageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -137,7 +137,7 @@ class MindmapRecyclePageParam:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MindmapRecyclePageParam.
+        r"""Gets the project_id of this MindmapRecyclePageParam.
 
         项目ID
 
@@ -148,7 +148,7 @@ class MindmapRecyclePageParam:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MindmapRecyclePageParam.
+        r"""Sets the project_id of this MindmapRecyclePageParam.
 
         项目ID
 
@@ -159,7 +159,7 @@ class MindmapRecyclePageParam:
 
     @property
     def text(self):
-        """Gets the text of this MindmapRecyclePageParam.
+        r"""Gets the text of this MindmapRecyclePageParam.
 
         过滤用字段
 
@@ -170,7 +170,7 @@ class MindmapRecyclePageParam:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this MindmapRecyclePageParam.
+        r"""Sets the text of this MindmapRecyclePageParam.
 
         过滤用字段
 

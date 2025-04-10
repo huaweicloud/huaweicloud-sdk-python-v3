@@ -63,7 +63,7 @@ class TaskMonitorInfo:
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, last_execute_time=None, use_quartz_cron=None, cron=None, period=None, dispatch_interval=None, position=None, execute_status=None, source_app_id=None, source_app_name=None, source_instance_id=None, target_app_id=None, target_app_name=None, target_instance_id=None, ext_type=None, enterprise_project_id=None, task_tag=None):
-        """TaskMonitorInfo
+        r"""TaskMonitorInfo
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class TaskMonitorInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskMonitorInfo.
+        r"""Gets the task_id of this TaskMonitorInfo.
 
         任务ID
 
@@ -187,7 +187,7 @@ class TaskMonitorInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskMonitorInfo.
+        r"""Sets the task_id of this TaskMonitorInfo.
 
         任务ID
 
@@ -198,7 +198,7 @@ class TaskMonitorInfo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskMonitorInfo.
+        r"""Gets the task_name of this TaskMonitorInfo.
 
         任务名称
 
@@ -209,7 +209,7 @@ class TaskMonitorInfo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskMonitorInfo.
+        r"""Sets the task_name of this TaskMonitorInfo.
 
         任务名称
 
@@ -220,7 +220,7 @@ class TaskMonitorInfo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TaskMonitorInfo.
+        r"""Gets the task_type of this TaskMonitorInfo.
 
         任务类型, 只允许两种类型:TIMING-定时任务, REALTIME-实时任务
 
@@ -231,7 +231,7 @@ class TaskMonitorInfo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TaskMonitorInfo.
+        r"""Sets the task_type of this TaskMonitorInfo.
 
         任务类型, 只允许两种类型:TIMING-定时任务, REALTIME-实时任务
 
@@ -242,7 +242,7 @@ class TaskMonitorInfo:
 
     @property
     def status(self):
-        """Gets the status of this TaskMonitorInfo.
+        r"""Gets the status of this TaskMonitorInfo.
 
         任务状态, 只允许两种类型:0-停止, 1-运行中
 
@@ -253,7 +253,7 @@ class TaskMonitorInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskMonitorInfo.
+        r"""Sets the status of this TaskMonitorInfo.
 
         任务状态, 只允许两种类型:0-停止, 1-运行中
 
@@ -264,7 +264,7 @@ class TaskMonitorInfo:
 
     @property
     def last_execute_time(self):
-        """Gets the last_execute_time of this TaskMonitorInfo.
+        r"""Gets the last_execute_time of this TaskMonitorInfo.
 
         任务最近一次执行时间，格式timestamp(ms)，使用UTC时区
 
@@ -275,7 +275,7 @@ class TaskMonitorInfo:
 
     @last_execute_time.setter
     def last_execute_time(self, last_execute_time):
-        """Sets the last_execute_time of this TaskMonitorInfo.
+        r"""Sets the last_execute_time of this TaskMonitorInfo.
 
         任务最近一次执行时间，格式timestamp(ms)，使用UTC时区
 
@@ -286,7 +286,7 @@ class TaskMonitorInfo:
 
     @property
     def use_quartz_cron(self):
-        """Gets the use_quartz_cron of this TaskMonitorInfo.
+        r"""Gets the use_quartz_cron of this TaskMonitorInfo.
 
         任务是否使用Quartz表达式，只有定时任务才有该属性
 
@@ -297,7 +297,7 @@ class TaskMonitorInfo:
 
     @use_quartz_cron.setter
     def use_quartz_cron(self, use_quartz_cron):
-        """Sets the use_quartz_cron of this TaskMonitorInfo.
+        r"""Sets the use_quartz_cron of this TaskMonitorInfo.
 
         任务是否使用Quartz表达式，只有定时任务才有该属性
 
@@ -308,7 +308,7 @@ class TaskMonitorInfo:
 
     @property
     def cron(self):
-        """Gets the cron of this TaskMonitorInfo.
+        r"""Gets the cron of this TaskMonitorInfo.
 
         CRON表达式，只有定时任务且use_quartz_cron为true时才有该属性
 
@@ -319,7 +319,7 @@ class TaskMonitorInfo:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this TaskMonitorInfo.
+        r"""Sets the cron of this TaskMonitorInfo.
 
         CRON表达式，只有定时任务且use_quartz_cron为true时才有该属性
 
@@ -330,7 +330,7 @@ class TaskMonitorInfo:
 
     @property
     def period(self):
-        """Gets the period of this TaskMonitorInfo.
+        r"""Gets the period of this TaskMonitorInfo.
 
         调度周期的单位，如天，小时等，只有定时任务且use_quartz_cron为false时才有该属性，当前仅允许如下类型：MIN-分钟, HOUR-小时, DAY-天, WEEK-周, MON-月
 
@@ -341,7 +341,7 @@ class TaskMonitorInfo:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this TaskMonitorInfo.
+        r"""Sets the period of this TaskMonitorInfo.
 
         调度周期的单位，如天，小时等，只有定时任务且use_quartz_cron为false时才有该属性，当前仅允许如下类型：MIN-分钟, HOUR-小时, DAY-天, WEEK-周, MON-月
 
@@ -352,7 +352,7 @@ class TaskMonitorInfo:
 
     @property
     def dispatch_interval(self):
-        """Gets the dispatch_interval of this TaskMonitorInfo.
+        r"""Gets the dispatch_interval of this TaskMonitorInfo.
 
         调度周期，和period字段一起可以确定每隔多长时间调度一次，只有定时任务且use_quartz_cron为false时才有该属性
 
@@ -363,7 +363,7 @@ class TaskMonitorInfo:
 
     @dispatch_interval.setter
     def dispatch_interval(self, dispatch_interval):
-        """Sets the dispatch_interval of this TaskMonitorInfo.
+        r"""Sets the dispatch_interval of this TaskMonitorInfo.
 
         调度周期，和period字段一起可以确定每隔多长时间调度一次，只有定时任务且use_quartz_cron为false时才有该属性
 
@@ -374,7 +374,7 @@ class TaskMonitorInfo:
 
     @property
     def position(self):
-        """Gets the position of this TaskMonitorInfo.
+        r"""Gets the position of this TaskMonitorInfo.
 
         标识最近一次任务执行到哪一个阶段，允许如下值：ADAPTER-任务处于初始化阶段, READER-任务正在执行Reader读操作, WRITER-任务正在执行Writer写操作
 
@@ -385,7 +385,7 @@ class TaskMonitorInfo:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this TaskMonitorInfo.
+        r"""Sets the position of this TaskMonitorInfo.
 
         标识最近一次任务执行到哪一个阶段，允许如下值：ADAPTER-任务处于初始化阶段, READER-任务正在执行Reader读操作, WRITER-任务正在执行Writer写操作
 
@@ -396,7 +396,7 @@ class TaskMonitorInfo:
 
     @property
     def execute_status(self):
-        """Gets the execute_status of this TaskMonitorInfo.
+        r"""Gets the execute_status of this TaskMonitorInfo.
 
         任务最近一次执行状态，允许如下值：UNSTARTED-未启动, WAITING-等待调度中, RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常
 
@@ -407,7 +407,7 @@ class TaskMonitorInfo:
 
     @execute_status.setter
     def execute_status(self, execute_status):
-        """Sets the execute_status of this TaskMonitorInfo.
+        r"""Sets the execute_status of this TaskMonitorInfo.
 
         任务最近一次执行状态，允许如下值：UNSTARTED-未启动, WAITING-等待调度中, RUNNING-执行中, SUCCESS-执行成功, CANCELLED-任务取消, ERROR-执行异常
 
@@ -418,7 +418,7 @@ class TaskMonitorInfo:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this TaskMonitorInfo.
+        r"""Gets the source_app_id of this TaskMonitorInfo.
 
         任务源端数据源所属应用ID
 
@@ -429,7 +429,7 @@ class TaskMonitorInfo:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this TaskMonitorInfo.
+        r"""Sets the source_app_id of this TaskMonitorInfo.
 
         任务源端数据源所属应用ID
 
@@ -440,7 +440,7 @@ class TaskMonitorInfo:
 
     @property
     def source_app_name(self):
-        """Gets the source_app_name of this TaskMonitorInfo.
+        r"""Gets the source_app_name of this TaskMonitorInfo.
 
         任务源端数据源所属应用名称
 
@@ -451,7 +451,7 @@ class TaskMonitorInfo:
 
     @source_app_name.setter
     def source_app_name(self, source_app_name):
-        """Sets the source_app_name of this TaskMonitorInfo.
+        r"""Sets the source_app_name of this TaskMonitorInfo.
 
         任务源端数据源所属应用名称
 
@@ -462,7 +462,7 @@ class TaskMonitorInfo:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this TaskMonitorInfo.
+        r"""Gets the source_instance_id of this TaskMonitorInfo.
 
         任务源端数据源所属实例ID
 
@@ -473,7 +473,7 @@ class TaskMonitorInfo:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this TaskMonitorInfo.
+        r"""Sets the source_instance_id of this TaskMonitorInfo.
 
         任务源端数据源所属实例ID
 
@@ -484,7 +484,7 @@ class TaskMonitorInfo:
 
     @property
     def target_app_id(self):
-        """Gets the target_app_id of this TaskMonitorInfo.
+        r"""Gets the target_app_id of this TaskMonitorInfo.
 
         任务目标端数据源所属应用ID
 
@@ -495,7 +495,7 @@ class TaskMonitorInfo:
 
     @target_app_id.setter
     def target_app_id(self, target_app_id):
-        """Sets the target_app_id of this TaskMonitorInfo.
+        r"""Sets the target_app_id of this TaskMonitorInfo.
 
         任务目标端数据源所属应用ID
 
@@ -506,7 +506,7 @@ class TaskMonitorInfo:
 
     @property
     def target_app_name(self):
-        """Gets the target_app_name of this TaskMonitorInfo.
+        r"""Gets the target_app_name of this TaskMonitorInfo.
 
         任务目标端数据源所属应用名称
 
@@ -517,7 +517,7 @@ class TaskMonitorInfo:
 
     @target_app_name.setter
     def target_app_name(self, target_app_name):
-        """Sets the target_app_name of this TaskMonitorInfo.
+        r"""Sets the target_app_name of this TaskMonitorInfo.
 
         任务目标端数据源所属应用名称
 
@@ -528,7 +528,7 @@ class TaskMonitorInfo:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this TaskMonitorInfo.
+        r"""Gets the target_instance_id of this TaskMonitorInfo.
 
         任务目标端数据源所属实例ID
 
@@ -539,7 +539,7 @@ class TaskMonitorInfo:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this TaskMonitorInfo.
+        r"""Sets the target_instance_id of this TaskMonitorInfo.
 
         任务目标端数据源所属实例ID
 
@@ -550,7 +550,7 @@ class TaskMonitorInfo:
 
     @property
     def ext_type(self):
-        """Gets the ext_type of this TaskMonitorInfo.
+        r"""Gets the ext_type of this TaskMonitorInfo.
 
         任务扩展类型，当前如果是CDC组合任务，该字段为CDC，否则为null
 
@@ -561,7 +561,7 @@ class TaskMonitorInfo:
 
     @ext_type.setter
     def ext_type(self, ext_type):
-        """Sets the ext_type of this TaskMonitorInfo.
+        r"""Sets the ext_type of this TaskMonitorInfo.
 
         任务扩展类型，当前如果是CDC组合任务，该字段为CDC，否则为null
 
@@ -572,7 +572,7 @@ class TaskMonitorInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this TaskMonitorInfo.
+        r"""Gets the enterprise_project_id of this TaskMonitorInfo.
 
         任务所属企业项目ID，默认为0
 
@@ -583,7 +583,7 @@ class TaskMonitorInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this TaskMonitorInfo.
+        r"""Sets the enterprise_project_id of this TaskMonitorInfo.
 
         任务所属企业项目ID，默认为0
 
@@ -594,7 +594,7 @@ class TaskMonitorInfo:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this TaskMonitorInfo.
+        r"""Gets the task_tag of this TaskMonitorInfo.
 
         任务标签
 
@@ -605,7 +605,7 @@ class TaskMonitorInfo:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this TaskMonitorInfo.
+        r"""Sets the task_tag of this TaskMonitorInfo.
 
         任务标签
 

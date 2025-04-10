@@ -37,7 +37,7 @@ class StackSet:
     }
 
     def __init__(self, stack_set_id=None, stack_set_name=None, stack_set_description=None, permission_model=None, status=None, create_time=None, update_time=None):
-        """StackSet
+        r"""StackSet
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class StackSet:
 
     @property
     def stack_set_id(self):
-        """Gets the stack_set_id of this StackSet.
+        r"""Gets the stack_set_id of this StackSet.
 
         资源栈集（stack_set）的唯一ID。  此ID由资源编排服务在生成资源栈集的时候生成，为UUID。  由于资源栈集名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈集，删除，再重新创建一个同名资源栈集。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈集就是我以为的那个，而不是被其他队友删除后创建的同名资源栈集。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈集所对应的ID都不相同，更新不会影响ID。如果给予的stack_set_id和当前资源栈集的ID不一致，则返回400
 
@@ -95,7 +95,7 @@ class StackSet:
 
     @stack_set_id.setter
     def stack_set_id(self, stack_set_id):
-        """Sets the stack_set_id of this StackSet.
+        r"""Sets the stack_set_id of this StackSet.
 
         资源栈集（stack_set）的唯一ID。  此ID由资源编排服务在生成资源栈集的时候生成，为UUID。  由于资源栈集名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈集，删除，再重新创建一个同名资源栈集。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈集就是我以为的那个，而不是被其他队友删除后创建的同名资源栈集。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈集所对应的ID都不相同，更新不会影响ID。如果给予的stack_set_id和当前资源栈集的ID不一致，则返回400
 
@@ -106,7 +106,7 @@ class StackSet:
 
     @property
     def stack_set_name(self):
-        """Gets the stack_set_name of this StackSet.
+        r"""Gets the stack_set_name of this StackSet.
 
         资源栈集（stack_set）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -117,7 +117,7 @@ class StackSet:
 
     @stack_set_name.setter
     def stack_set_name(self, stack_set_name):
-        """Sets the stack_set_name of this StackSet.
+        r"""Sets the stack_set_name of this StackSet.
 
         资源栈集（stack_set）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -128,7 +128,7 @@ class StackSet:
 
     @property
     def stack_set_description(self):
-        """Gets the stack_set_description of this StackSet.
+        r"""Gets the stack_set_description of this StackSet.
 
         资源栈集的描述。可用于客户识别自己的资源栈集。
 
@@ -139,7 +139,7 @@ class StackSet:
 
     @stack_set_description.setter
     def stack_set_description(self, stack_set_description):
-        """Sets the stack_set_description of this StackSet.
+        r"""Sets the stack_set_description of this StackSet.
 
         资源栈集的描述。可用于客户识别自己的资源栈集。
 
@@ -150,7 +150,7 @@ class StackSet:
 
     @property
     def permission_model(self):
-        """Gets the permission_model of this StackSet.
+        r"""Gets the permission_model of this StackSet.
 
         权限模型，定义了RFS操作资源栈集时所需委托的创建方式，枚举值，默认为SELF_MANAGED。用户可以使用创建资源栈集（CreateStackSet）API 指定该参数。该参数暂不支持更新。用户如果想要更新权限模型，可以通过先删除再创建同名资源栈集实现。   * `SELF_MANAGED` - 自我管理，基于部署需求，用户需要提前手动创建委托，既包含管理账号授权给RFS的委托，也包含成员账号授权给管理账号的委托。如果委托不存在或权限不足，创建资源栈集不会失败，创建资源栈实例时才会报错。   * `SERVICE_MANAGED` - 服务管理，基于Organization服务，RFS会自动创建部署Organization 成员账号时所需的全部 IAM 委托。用户需要提前在Organization可信服务列表中将”资源编排资源栈集服务“启用，且只有Organization的管理账号或”资源编排资源栈集服务“的委托管理员，才允许指定SERVICE_MANAGED创建资源栈集，否则会报错。
 
@@ -161,7 +161,7 @@ class StackSet:
 
     @permission_model.setter
     def permission_model(self, permission_model):
-        """Sets the permission_model of this StackSet.
+        r"""Sets the permission_model of this StackSet.
 
         权限模型，定义了RFS操作资源栈集时所需委托的创建方式，枚举值，默认为SELF_MANAGED。用户可以使用创建资源栈集（CreateStackSet）API 指定该参数。该参数暂不支持更新。用户如果想要更新权限模型，可以通过先删除再创建同名资源栈集实现。   * `SELF_MANAGED` - 自我管理，基于部署需求，用户需要提前手动创建委托，既包含管理账号授权给RFS的委托，也包含成员账号授权给管理账号的委托。如果委托不存在或权限不足，创建资源栈集不会失败，创建资源栈实例时才会报错。   * `SERVICE_MANAGED` - 服务管理，基于Organization服务，RFS会自动创建部署Organization 成员账号时所需的全部 IAM 委托。用户需要提前在Organization可信服务列表中将”资源编排资源栈集服务“启用，且只有Organization的管理账号或”资源编排资源栈集服务“的委托管理员，才允许指定SERVICE_MANAGED创建资源栈集，否则会报错。
 
@@ -172,7 +172,7 @@ class StackSet:
 
     @property
     def status(self):
-        """Gets the status of this StackSet.
+        r"""Gets the status of this StackSet.
 
         资源栈集的状态     * `IDLE` - 资源栈集空闲 * `OPERATION_IN_PROGRESS` - 资源栈集操作中 * `DEACTIVATED` - 资源栈集禁用
 
@@ -183,7 +183,7 @@ class StackSet:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StackSet.
+        r"""Sets the status of this StackSet.
 
         资源栈集的状态     * `IDLE` - 资源栈集空闲 * `OPERATION_IN_PROGRESS` - 资源栈集操作中 * `DEACTIVATED` - 资源栈集禁用
 
@@ -194,7 +194,7 @@ class StackSet:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StackSet.
+        r"""Gets the create_time of this StackSet.
 
         资源栈集的创建时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -205,7 +205,7 @@ class StackSet:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StackSet.
+        r"""Sets the create_time of this StackSet.
 
         资源栈集的创建时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -216,7 +216,7 @@ class StackSet:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StackSet.
+        r"""Gets the update_time of this StackSet.
 
         资源栈集的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -227,7 +227,7 @@ class StackSet:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StackSet.
+        r"""Sets the update_time of this StackSet.
 
         资源栈集的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

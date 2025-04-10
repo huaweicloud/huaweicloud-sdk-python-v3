@@ -35,7 +35,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
     }
 
     def __init__(self, name=None, region_id=None, parent_name=None, sync_mode=None, cmdb_resource_id_list=None, sync_rules=None):
-        """BatchCreateApplicationViewRequestBodyGroupList
+        r"""BatchCreateApplicationViewRequestBodyGroupList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Gets the name of this BatchCreateApplicationViewRequestBodyGroupList.
 
         名称
 
@@ -89,7 +89,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Sets the name of this BatchCreateApplicationViewRequestBodyGroupList.
 
         名称
 
@@ -100,7 +100,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @property
     def region_id(self):
-        """Gets the region_id of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Gets the region_id of this BatchCreateApplicationViewRequestBodyGroupList.
 
         region id
 
@@ -111,7 +111,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Sets the region_id of this BatchCreateApplicationViewRequestBodyGroupList.
 
         region id
 
@@ -122,7 +122,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @property
     def parent_name(self):
-        """Gets the parent_name of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Gets the parent_name of this BatchCreateApplicationViewRequestBodyGroupList.
 
         父节点code
 
@@ -133,7 +133,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @parent_name.setter
     def parent_name(self, parent_name):
-        """Sets the parent_name of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Sets the parent_name of this BatchCreateApplicationViewRequestBodyGroupList.
 
         父节点code
 
@@ -144,7 +144,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @property
     def sync_mode(self):
-        """Gets the sync_mode of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Gets the sync_mode of this BatchCreateApplicationViewRequestBodyGroupList.
 
         同步模式
 
@@ -155,7 +155,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @sync_mode.setter
     def sync_mode(self, sync_mode):
-        """Sets the sync_mode of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Sets the sync_mode of this BatchCreateApplicationViewRequestBodyGroupList.
 
         同步模式
 
@@ -166,7 +166,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @property
     def cmdb_resource_id_list(self):
-        """Gets the cmdb_resource_id_list of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Gets the cmdb_resource_id_list of this BatchCreateApplicationViewRequestBodyGroupList.
 
         关联的资源id列表
 
@@ -177,7 +177,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @cmdb_resource_id_list.setter
     def cmdb_resource_id_list(self, cmdb_resource_id_list):
-        """Sets the cmdb_resource_id_list of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Sets the cmdb_resource_id_list of this BatchCreateApplicationViewRequestBodyGroupList.
 
         关联的资源id列表
 
@@ -188,7 +188,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @property
     def sync_rules(self):
-        """Gets the sync_rules of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Gets the sync_rules of this BatchCreateApplicationViewRequestBodyGroupList.
 
         智能关联规则
 
@@ -199,7 +199,7 @@ class BatchCreateApplicationViewRequestBodyGroupList:
 
     @sync_rules.setter
     def sync_rules(self, sync_rules):
-        """Sets the sync_rules of this BatchCreateApplicationViewRequestBodyGroupList.
+        r"""Sets the sync_rules of this BatchCreateApplicationViewRequestBodyGroupList.
 
         智能关联规则
 

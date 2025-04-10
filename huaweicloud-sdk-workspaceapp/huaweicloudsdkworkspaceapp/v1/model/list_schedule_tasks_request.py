@@ -31,7 +31,7 @@ class ListScheduleTasksRequest:
     }
 
     def __init__(self, offset=None, limit=None, task_name=None, task_type=None):
-        """ListScheduleTasksRequest
+        r"""ListScheduleTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListScheduleTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduleTasksRequest.
+        r"""Gets the offset of this ListScheduleTasksRequest.
 
         查询的偏移量。
 
@@ -75,7 +75,7 @@ class ListScheduleTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduleTasksRequest.
+        r"""Sets the offset of this ListScheduleTasksRequest.
 
         查询的偏移量。
 
@@ -86,7 +86,7 @@ class ListScheduleTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduleTasksRequest.
+        r"""Gets the limit of this ListScheduleTasksRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -97,7 +97,7 @@ class ListScheduleTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduleTasksRequest.
+        r"""Sets the limit of this ListScheduleTasksRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -108,7 +108,7 @@ class ListScheduleTasksRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListScheduleTasksRequest.
+        r"""Gets the task_name of this ListScheduleTasksRequest.
 
         定时任务名称
 
@@ -119,7 +119,7 @@ class ListScheduleTasksRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListScheduleTasksRequest.
+        r"""Sets the task_name of this ListScheduleTasksRequest.
 
         定时任务名称
 
@@ -130,7 +130,7 @@ class ListScheduleTasksRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListScheduleTasksRequest.
+        r"""Gets the task_type of this ListScheduleTasksRequest.
 
         任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
 
@@ -141,7 +141,7 @@ class ListScheduleTasksRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListScheduleTasksRequest.
+        r"""Sets the task_type of this ListScheduleTasksRequest.
 
         任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
 

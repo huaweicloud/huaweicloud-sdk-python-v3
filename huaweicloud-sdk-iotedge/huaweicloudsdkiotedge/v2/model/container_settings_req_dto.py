@@ -25,7 +25,7 @@ class ContainerSettingsReqDTO:
     }
 
     def __init__(self, configs=None):
-        """ContainerSettingsReqDTO
+        r"""ContainerSettingsReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ContainerSettingsReqDTO:
 
     @property
     def configs(self):
-        """Gets the configs of this ContainerSettingsReqDTO.
+        r"""Gets the configs of this ContainerSettingsReqDTO.
 
         :return: The configs of this ContainerSettingsReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsReqDTO`
@@ -52,7 +52,7 @@ class ContainerSettingsReqDTO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ContainerSettingsReqDTO.
+        r"""Sets the configs of this ContainerSettingsReqDTO.
 
         :param configs: The configs of this ContainerSettingsReqDTO.
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsReqDTO`

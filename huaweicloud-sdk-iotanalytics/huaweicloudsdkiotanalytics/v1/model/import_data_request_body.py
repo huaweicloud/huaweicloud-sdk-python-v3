@@ -45,7 +45,7 @@ class ImportDataRequestBody:
     }
 
     def __init__(self, data_path=None, data_type=None, table_id=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, bad_records_path=None, timestamp_format=None, computing_resource_id=None):
-        """ImportDataRequestBody
+        r"""ImportDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class ImportDataRequestBody:
 
     @property
     def data_path(self):
-        """Gets the data_path of this ImportDataRequestBody.
+        r"""Gets the data_path of this ImportDataRequestBody.
 
         导入的数据路径（当前仅支持导入OBS上的数据，且OBS路径须以s3a开头）。必须先把该OBS桶添加到离线数据源。
 
@@ -120,7 +120,7 @@ class ImportDataRequestBody:
 
     @data_path.setter
     def data_path(self, data_path):
-        """Sets the data_path of this ImportDataRequestBody.
+        r"""Sets the data_path of this ImportDataRequestBody.
 
         导入的数据路径（当前仅支持导入OBS上的数据，且OBS路径须以s3a开头）。必须先把该OBS桶添加到离线数据源。
 
@@ -131,7 +131,7 @@ class ImportDataRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ImportDataRequestBody.
+        r"""Gets the data_type of this ImportDataRequestBody.
 
         导入的数据类型（当前支持csv、parquet、orc、json、avro数据类型）。
 
@@ -142,7 +142,7 @@ class ImportDataRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ImportDataRequestBody.
+        r"""Sets the data_type of this ImportDataRequestBody.
 
         导入的数据类型（当前支持csv、parquet、orc、json、avro数据类型）。
 
@@ -153,7 +153,7 @@ class ImportDataRequestBody:
 
     @property
     def table_id(self):
-        """Gets the table_id of this ImportDataRequestBody.
+        r"""Gets the table_id of this ImportDataRequestBody.
 
         表ID。
 
@@ -164,7 +164,7 @@ class ImportDataRequestBody:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this ImportDataRequestBody.
+        r"""Sets the table_id of this ImportDataRequestBody.
 
         表ID。
 
@@ -175,7 +175,7 @@ class ImportDataRequestBody:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this ImportDataRequestBody.
+        r"""Gets the with_column_header of this ImportDataRequestBody.
 
         导入数据中的第一行数据是否包括列名，即表头。默认为“false”，表示不包括列名。导入CSV类型数据时可指定。
 
@@ -186,7 +186,7 @@ class ImportDataRequestBody:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this ImportDataRequestBody.
+        r"""Sets the with_column_header of this ImportDataRequestBody.
 
         导入数据中的第一行数据是否包括列名，即表头。默认为“false”，表示不包括列名。导入CSV类型数据时可指定。
 
@@ -197,7 +197,7 @@ class ImportDataRequestBody:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ImportDataRequestBody.
+        r"""Gets the delimiter of this ImportDataRequestBody.
 
         用户自定义数据分隔符，默认为逗号。导入CSV类型数据时可指定。
 
@@ -208,7 +208,7 @@ class ImportDataRequestBody:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ImportDataRequestBody.
+        r"""Sets the delimiter of this ImportDataRequestBody.
 
         用户自定义数据分隔符，默认为逗号。导入CSV类型数据时可指定。
 
@@ -219,7 +219,7 @@ class ImportDataRequestBody:
 
     @property
     def quote_char(self):
-        """Gets the quote_char of this ImportDataRequestBody.
+        r"""Gets the quote_char of this ImportDataRequestBody.
 
         用户自定义引用字符，默认为双引号。导入CSV类型数据时可指定。
 
@@ -230,7 +230,7 @@ class ImportDataRequestBody:
 
     @quote_char.setter
     def quote_char(self, quote_char):
-        """Sets the quote_char of this ImportDataRequestBody.
+        r"""Sets the quote_char of this ImportDataRequestBody.
 
         用户自定义引用字符，默认为双引号。导入CSV类型数据时可指定。
 
@@ -241,7 +241,7 @@ class ImportDataRequestBody:
 
     @property
     def escape_char(self):
-        """Gets the escape_char of this ImportDataRequestBody.
+        r"""Gets the escape_char of this ImportDataRequestBody.
 
         用户自定义转义字符，默认为反斜杠。导入CSV类型数据时可指定。
 
@@ -252,7 +252,7 @@ class ImportDataRequestBody:
 
     @escape_char.setter
     def escape_char(self, escape_char):
-        """Sets the escape_char of this ImportDataRequestBody.
+        r"""Sets the escape_char of this ImportDataRequestBody.
 
         用户自定义转义字符，默认为反斜杠。导入CSV类型数据时可指定。
 
@@ -263,7 +263,7 @@ class ImportDataRequestBody:
 
     @property
     def date_format(self):
-        """Gets the date_format of this ImportDataRequestBody.
+        r"""Gets the date_format of this ImportDataRequestBody.
 
         指定特定的日期格式，默认为“yyyy-MM-dd”。日期格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -274,7 +274,7 @@ class ImportDataRequestBody:
 
     @date_format.setter
     def date_format(self, date_format):
-        """Sets the date_format of this ImportDataRequestBody.
+        r"""Sets the date_format of this ImportDataRequestBody.
 
         指定特定的日期格式，默认为“yyyy-MM-dd”。日期格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -285,7 +285,7 @@ class ImportDataRequestBody:
 
     @property
     def bad_records_path(self):
-        """Gets the bad_records_path of this ImportDataRequestBody.
+        r"""Gets the bad_records_path of this ImportDataRequestBody.
 
         作业执行过程中的bad records存储目录。设置该配置项后，bad records不会导入到目标表。
 
@@ -296,7 +296,7 @@ class ImportDataRequestBody:
 
     @bad_records_path.setter
     def bad_records_path(self, bad_records_path):
-        """Sets the bad_records_path of this ImportDataRequestBody.
+        r"""Sets the bad_records_path of this ImportDataRequestBody.
 
         作业执行过程中的bad records存储目录。设置该配置项后，bad records不会导入到目标表。
 
@@ -307,7 +307,7 @@ class ImportDataRequestBody:
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this ImportDataRequestBody.
+        r"""Gets the timestamp_format of this ImportDataRequestBody.
 
         指定特定的时间格式，默认为“yyyy-MM-dd HH:mm:ss”。时间格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -318,7 +318,7 @@ class ImportDataRequestBody:
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this ImportDataRequestBody.
+        r"""Sets the timestamp_format of this ImportDataRequestBody.
 
         指定特定的时间格式，默认为“yyyy-MM-dd HH:mm:ss”。时间格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -329,7 +329,7 @@ class ImportDataRequestBody:
 
     @property
     def computing_resource_id(self):
-        """Gets the computing_resource_id of this ImportDataRequestBody.
+        r"""Gets the computing_resource_id of this ImportDataRequestBody.
 
         计算资源ID。
 
@@ -340,7 +340,7 @@ class ImportDataRequestBody:
 
     @computing_resource_id.setter
     def computing_resource_id(self, computing_resource_id):
-        """Sets the computing_resource_id of this ImportDataRequestBody.
+        r"""Sets the computing_resource_id of this ImportDataRequestBody.
 
         计算资源ID。
 

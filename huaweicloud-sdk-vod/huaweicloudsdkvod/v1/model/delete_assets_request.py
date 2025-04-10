@@ -27,7 +27,7 @@ class DeleteAssetsRequest:
     }
 
     def __init__(self, asset_id=None, delete_type=None):
-        """DeleteAssetsRequest
+        r"""DeleteAssetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteAssetsRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteAssetsRequest.
+        r"""Gets the asset_id of this DeleteAssetsRequest.
 
         媒资ID，支持一次删除多个媒资，批量删除时以逗号分隔。
 
@@ -60,7 +60,7 @@ class DeleteAssetsRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteAssetsRequest.
+        r"""Sets the asset_id of this DeleteAssetsRequest.
 
         媒资ID，支持一次删除多个媒资，批量删除时以逗号分隔。
 
@@ -71,7 +71,7 @@ class DeleteAssetsRequest:
 
     @property
     def delete_type(self):
-        """Gets the delete_type of this DeleteAssetsRequest.
+        r"""Gets the delete_type of this DeleteAssetsRequest.
 
         删除类型，当值为origin时只删除源文件，保留转码后文件。
 
@@ -82,7 +82,7 @@ class DeleteAssetsRequest:
 
     @delete_type.setter
     def delete_type(self, delete_type):
-        """Sets the delete_type of this DeleteAssetsRequest.
+        r"""Sets the delete_type of this DeleteAssetsRequest.
 
         删除类型，当值为origin时只删除源文件，保留转码后文件。
 

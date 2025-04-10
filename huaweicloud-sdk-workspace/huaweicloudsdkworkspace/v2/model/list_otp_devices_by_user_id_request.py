@@ -25,7 +25,7 @@ class ListOtpDevicesByUserIdRequest:
     }
 
     def __init__(self, user_id=None):
-        """ListOtpDevicesByUserIdRequest
+        r"""ListOtpDevicesByUserIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListOtpDevicesByUserIdRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListOtpDevicesByUserIdRequest.
+        r"""Gets the user_id of this ListOtpDevicesByUserIdRequest.
 
         用户ID。
 
@@ -53,7 +53,7 @@ class ListOtpDevicesByUserIdRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListOtpDevicesByUserIdRequest.
+        r"""Sets the user_id of this ListOtpDevicesByUserIdRequest.
 
         用户ID。
 

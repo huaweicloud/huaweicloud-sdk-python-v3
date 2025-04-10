@@ -26,7 +26,7 @@ class ListBcsEventsStatisticResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None):
-        """ListBcsEventsStatisticResponse
+        r"""ListBcsEventsStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBcsEventsStatisticResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ListBcsEventsStatisticResponse.
+        r"""Gets the metrics of this ListBcsEventsStatisticResponse.
 
         指标对象列表。
 
@@ -55,7 +55,7 @@ class ListBcsEventsStatisticResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ListBcsEventsStatisticResponse.
+        r"""Sets the metrics of this ListBcsEventsStatisticResponse.
 
         指标对象列表。
 

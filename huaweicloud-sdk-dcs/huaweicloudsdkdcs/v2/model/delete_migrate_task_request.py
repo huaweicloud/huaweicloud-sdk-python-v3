@@ -25,7 +25,7 @@ class DeleteMigrateTaskRequest:
     }
 
     def __init__(self, task_id_list=None):
-        """DeleteMigrateTaskRequest
+        r"""DeleteMigrateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMigrateTaskRequest:
 
     @property
     def task_id_list(self):
-        """Gets the task_id_list of this DeleteMigrateTaskRequest.
+        r"""Gets the task_id_list of this DeleteMigrateTaskRequest.
 
         删除的迁移任务ID列表。
 
@@ -53,7 +53,7 @@ class DeleteMigrateTaskRequest:
 
     @task_id_list.setter
     def task_id_list(self, task_id_list):
-        """Sets the task_id_list of this DeleteMigrateTaskRequest.
+        r"""Sets the task_id_list of this DeleteMigrateTaskRequest.
 
         删除的迁移任务ID列表。
 

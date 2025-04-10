@@ -26,7 +26,7 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster_id=None):
-        """CreateClusterResponse
+        r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterResponse.
+        r"""Gets the cluster_id of this CreateClusterResponse.
 
         集群创建成功后系统返回的集群ID值。
 
@@ -55,7 +55,7 @@ class CreateClusterResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterResponse.
+        r"""Sets the cluster_id of this CreateClusterResponse.
 
         集群创建成功后系统返回的集群ID值。
 

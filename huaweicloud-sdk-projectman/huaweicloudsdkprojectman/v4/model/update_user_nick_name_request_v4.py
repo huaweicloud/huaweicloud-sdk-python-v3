@@ -25,7 +25,7 @@ class UpdateUserNickNameRequestV4:
     }
 
     def __init__(self, nick_name=None):
-        """UpdateUserNickNameRequestV4
+        r"""UpdateUserNickNameRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateUserNickNameRequestV4:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this UpdateUserNickNameRequestV4.
+        r"""Gets the nick_name of this UpdateUserNickNameRequestV4.
 
         用户昵称
 
@@ -53,7 +53,7 @@ class UpdateUserNickNameRequestV4:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this UpdateUserNickNameRequestV4.
+        r"""Sets the nick_name of this UpdateUserNickNameRequestV4.
 
         用户昵称
 

@@ -25,7 +25,7 @@ class BatchDeleteServerNicsRequestBody:
     }
 
     def __init__(self, nics=None):
-        """BatchDeleteServerNicsRequestBody
+        r"""BatchDeleteServerNicsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteServerNicsRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this BatchDeleteServerNicsRequestBody.
+        r"""Gets the nics of this BatchDeleteServerNicsRequestBody.
 
         需要删除的网卡列表信息。  说明： 主网卡是弹性云服务器上配置了路由规则的网卡，不可删除。
 
@@ -53,7 +53,7 @@ class BatchDeleteServerNicsRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this BatchDeleteServerNicsRequestBody.
+        r"""Sets the nics of this BatchDeleteServerNicsRequestBody.
 
         需要删除的网卡列表信息。  说明： 主网卡是弹性云服务器上配置了路由规则的网卡，不可删除。
 

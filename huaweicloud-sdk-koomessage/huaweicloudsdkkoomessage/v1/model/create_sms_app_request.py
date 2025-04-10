@@ -25,7 +25,7 @@ class CreateSmsAppRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSmsAppRequest
+        r"""CreateSmsAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSmsAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSmsAppRequest.
+        r"""Gets the body of this CreateSmsAppRequest.
 
         :return: The body of this CreateSmsAppRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.MsgAppRequest`
@@ -52,7 +52,7 @@ class CreateSmsAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSmsAppRequest.
+        r"""Sets the body of this CreateSmsAppRequest.
 
         :param body: The body of this CreateSmsAppRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.MsgAppRequest`

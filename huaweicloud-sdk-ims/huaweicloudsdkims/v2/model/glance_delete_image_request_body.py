@@ -25,7 +25,7 @@ class GlanceDeleteImageRequestBody:
     }
 
     def __init__(self, delete_backup=None):
-        """GlanceDeleteImageRequestBody
+        r"""GlanceDeleteImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GlanceDeleteImageRequestBody:
 
     @property
     def delete_backup(self):
-        """Gets the delete_backup of this GlanceDeleteImageRequestBody.
+        r"""Gets the delete_backup of this GlanceDeleteImageRequestBody.
 
         取值为：true和false true：表示删除整机镜像时，同时删除其关联的云服务器备份。 false：表示只删除整机镜像，不删除其关联的云服务器备份。
 
@@ -54,7 +54,7 @@ class GlanceDeleteImageRequestBody:
 
     @delete_backup.setter
     def delete_backup(self, delete_backup):
-        """Sets the delete_backup of this GlanceDeleteImageRequestBody.
+        r"""Sets the delete_backup of this GlanceDeleteImageRequestBody.
 
         取值为：true和false true：表示删除整机镜像时，同时删除其关联的云服务器备份。 false：表示只删除整机镜像，不删除其关联的云服务器备份。
 

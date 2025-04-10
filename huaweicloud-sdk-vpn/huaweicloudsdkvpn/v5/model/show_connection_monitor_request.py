@@ -25,7 +25,7 @@ class ShowConnectionMonitorRequest:
     }
 
     def __init__(self, connection_monitor_id=None):
-        """ShowConnectionMonitorRequest
+        r"""ShowConnectionMonitorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConnectionMonitorRequest:
 
     @property
     def connection_monitor_id(self):
-        """Gets the connection_monitor_id of this ShowConnectionMonitorRequest.
+        r"""Gets the connection_monitor_id of this ShowConnectionMonitorRequest.
 
         VPN连接监控的ID
 
@@ -53,7 +53,7 @@ class ShowConnectionMonitorRequest:
 
     @connection_monitor_id.setter
     def connection_monitor_id(self, connection_monitor_id):
-        """Sets the connection_monitor_id of this ShowConnectionMonitorRequest.
+        r"""Sets the connection_monitor_id of this ShowConnectionMonitorRequest.
 
         VPN连接监控的ID
 

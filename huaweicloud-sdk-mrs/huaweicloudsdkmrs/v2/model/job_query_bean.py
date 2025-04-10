@@ -57,7 +57,7 @@ class JobQueryBean:
     }
 
     def __init__(self, job_id=None, user=None, job_name=None, job_result=None, job_state=None, job_progress=None, job_type=None, started_time=None, submitted_time=None, finished_time=None, elapsed_time=None, arguments=None, launcher_id=None, properties=None, app_id=None, tracking_url=None, queue=None):
-        """JobQueryBean
+        r"""JobQueryBean
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class JobQueryBean:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobQueryBean.
+        r"""Gets the job_id of this JobQueryBean.
 
         作业ID。
 
@@ -166,7 +166,7 @@ class JobQueryBean:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobQueryBean.
+        r"""Sets the job_id of this JobQueryBean.
 
         作业ID。
 
@@ -177,7 +177,7 @@ class JobQueryBean:
 
     @property
     def user(self):
-        """Gets the user of this JobQueryBean.
+        r"""Gets the user of this JobQueryBean.
 
         提交作业的用户名称。
 
@@ -188,7 +188,7 @@ class JobQueryBean:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this JobQueryBean.
+        r"""Sets the user of this JobQueryBean.
 
         提交作业的用户名称。
 
@@ -199,7 +199,7 @@ class JobQueryBean:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobQueryBean.
+        r"""Gets the job_name of this JobQueryBean.
 
         作业名称。
 
@@ -210,7 +210,7 @@ class JobQueryBean:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobQueryBean.
+        r"""Sets the job_name of this JobQueryBean.
 
         作业名称。
 
@@ -221,7 +221,7 @@ class JobQueryBean:
 
     @property
     def job_result(self):
-        """Gets the job_result of this JobQueryBean.
+        r"""Gets the job_result of this JobQueryBean.
 
         作业最终结果。 - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
@@ -232,7 +232,7 @@ class JobQueryBean:
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this JobQueryBean.
+        r"""Sets the job_result of this JobQueryBean.
 
         作业最终结果。 - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
@@ -243,7 +243,7 @@ class JobQueryBean:
 
     @property
     def job_state(self):
-        """Gets the job_state of this JobQueryBean.
+        r"""Gets the job_state of this JobQueryBean.
 
         作业执行状态。  - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
 
@@ -254,7 +254,7 @@ class JobQueryBean:
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this JobQueryBean.
+        r"""Sets the job_state of this JobQueryBean.
 
         作业执行状态。  - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
 
@@ -265,7 +265,7 @@ class JobQueryBean:
 
     @property
     def job_progress(self):
-        """Gets the job_progress of this JobQueryBean.
+        r"""Gets the job_progress of this JobQueryBean.
 
         作业执行进度。
 
@@ -276,7 +276,7 @@ class JobQueryBean:
 
     @job_progress.setter
     def job_progress(self, job_progress):
-        """Sets the job_progress of this JobQueryBean.
+        r"""Sets the job_progress of this JobQueryBean.
 
         作业执行进度。
 
@@ -287,7 +287,7 @@ class JobQueryBean:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobQueryBean.
+        r"""Gets the job_type of this JobQueryBean.
 
         作业类型。 - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
@@ -298,7 +298,7 @@ class JobQueryBean:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobQueryBean.
+        r"""Sets the job_type of this JobQueryBean.
 
         作业类型。 - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
@@ -309,7 +309,7 @@ class JobQueryBean:
 
     @property
     def started_time(self):
-        """Gets the started_time of this JobQueryBean.
+        r"""Gets the started_time of this JobQueryBean.
 
         作业开始执行时间。单位：毫秒。
 
@@ -320,7 +320,7 @@ class JobQueryBean:
 
     @started_time.setter
     def started_time(self, started_time):
-        """Sets the started_time of this JobQueryBean.
+        r"""Sets the started_time of this JobQueryBean.
 
         作业开始执行时间。单位：毫秒。
 
@@ -331,7 +331,7 @@ class JobQueryBean:
 
     @property
     def submitted_time(self):
-        """Gets the submitted_time of this JobQueryBean.
+        r"""Gets the submitted_time of this JobQueryBean.
 
         作业提交时间。单位：毫秒。
 
@@ -342,7 +342,7 @@ class JobQueryBean:
 
     @submitted_time.setter
     def submitted_time(self, submitted_time):
-        """Sets the submitted_time of this JobQueryBean.
+        r"""Sets the submitted_time of this JobQueryBean.
 
         作业提交时间。单位：毫秒。
 
@@ -353,7 +353,7 @@ class JobQueryBean:
 
     @property
     def finished_time(self):
-        """Gets the finished_time of this JobQueryBean.
+        r"""Gets the finished_time of this JobQueryBean.
 
         作业完成时间。单位：毫秒。
 
@@ -364,7 +364,7 @@ class JobQueryBean:
 
     @finished_time.setter
     def finished_time(self, finished_time):
-        """Sets the finished_time of this JobQueryBean.
+        r"""Sets the finished_time of this JobQueryBean.
 
         作业完成时间。单位：毫秒。
 
@@ -375,7 +375,7 @@ class JobQueryBean:
 
     @property
     def elapsed_time(self):
-        """Gets the elapsed_time of this JobQueryBean.
+        r"""Gets the elapsed_time of this JobQueryBean.
 
         作业执行时长。单位：毫秒。
 
@@ -386,7 +386,7 @@ class JobQueryBean:
 
     @elapsed_time.setter
     def elapsed_time(self, elapsed_time):
-        """Sets the elapsed_time of this JobQueryBean.
+        r"""Sets the elapsed_time of this JobQueryBean.
 
         作业执行时长。单位：毫秒。
 
@@ -397,7 +397,7 @@ class JobQueryBean:
 
     @property
     def arguments(self):
-        """Gets the arguments of this JobQueryBean.
+        r"""Gets the arguments of this JobQueryBean.
 
         运行参数。
 
@@ -408,7 +408,7 @@ class JobQueryBean:
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this JobQueryBean.
+        r"""Sets the arguments of this JobQueryBean.
 
         运行参数。
 
@@ -419,7 +419,7 @@ class JobQueryBean:
 
     @property
     def launcher_id(self):
-        """Gets the launcher_id of this JobQueryBean.
+        r"""Gets the launcher_id of this JobQueryBean.
 
         实际作业编号。
 
@@ -430,7 +430,7 @@ class JobQueryBean:
 
     @launcher_id.setter
     def launcher_id(self, launcher_id):
-        """Sets the launcher_id of this JobQueryBean.
+        r"""Sets the launcher_id of this JobQueryBean.
 
         实际作业编号。
 
@@ -441,7 +441,7 @@ class JobQueryBean:
 
     @property
     def properties(self):
-        """Gets the properties of this JobQueryBean.
+        r"""Gets the properties of this JobQueryBean.
 
         配置参数，用于传-d参数。最多为2048字符，不能包含><|'`&!\\特殊字符，可为空。
 
@@ -452,7 +452,7 @@ class JobQueryBean:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this JobQueryBean.
+        r"""Sets the properties of this JobQueryBean.
 
         配置参数，用于传-d参数。最多为2048字符，不能包含><|'`&!\\特殊字符，可为空。
 
@@ -463,7 +463,7 @@ class JobQueryBean:
 
     @property
     def app_id(self):
-        """Gets the app_id of this JobQueryBean.
+        r"""Gets the app_id of this JobQueryBean.
 
         实际作业编号。
 
@@ -474,7 +474,7 @@ class JobQueryBean:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this JobQueryBean.
+        r"""Sets the app_id of this JobQueryBean.
 
         实际作业编号。
 
@@ -485,7 +485,7 @@ class JobQueryBean:
 
     @property
     def tracking_url(self):
-        """Gets the tracking_url of this JobQueryBean.
+        r"""Gets the tracking_url of this JobQueryBean.
 
          日志链接地址。当前仅SparkSubmit作业支持该参数。 该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
 
@@ -496,7 +496,7 @@ class JobQueryBean:
 
     @tracking_url.setter
     def tracking_url(self, tracking_url):
-        """Sets the tracking_url of this JobQueryBean.
+        r"""Sets the tracking_url of this JobQueryBean.
 
          日志链接地址。当前仅SparkSubmit作业支持该参数。 该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
 
@@ -507,7 +507,7 @@ class JobQueryBean:
 
     @property
     def queue(self):
-        """Gets the queue of this JobQueryBean.
+        r"""Gets the queue of this JobQueryBean.
 
         作业的资源对列类型。
 
@@ -518,7 +518,7 @@ class JobQueryBean:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this JobQueryBean.
+        r"""Sets the queue of this JobQueryBean.
 
         作业的资源对列类型。
 

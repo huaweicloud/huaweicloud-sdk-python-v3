@@ -23,7 +23,7 @@ class RouteDestination:
     }
 
     def __init__(self):
-        """RouteDestination
+        r"""RouteDestination
 
         The model defined in huaweicloud sdk
 

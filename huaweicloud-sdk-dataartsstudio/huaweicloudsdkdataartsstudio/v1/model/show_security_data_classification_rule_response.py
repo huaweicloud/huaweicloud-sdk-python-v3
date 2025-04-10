@@ -68,7 +68,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
     }
 
     def __init__(self, uuid=None, rule_type=None, secrecy_level=None, secrecy_level_num=None, name=None, guid=None, enable=None, method=None, content_expression=None, column_expression=None, commit_expression=None, combine_expression=None, project_id=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, builtin_rule_id=None, category_id=None, instance_id=None, match_type=None):
-        """ShowSecurityDataClassificationRuleResponse
+        r"""ShowSecurityDataClassificationRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def uuid(self):
-        """Gets the uuid of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the uuid of this ShowSecurityDataClassificationRuleResponse.
 
         规则ID
 
@@ -202,7 +202,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the uuid of this ShowSecurityDataClassificationRuleResponse.
 
         规则ID
 
@@ -213,7 +213,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the rule_type of this ShowSecurityDataClassificationRuleResponse.
 
         规则类型, CUSTOM, BUILTIN
 
@@ -224,7 +224,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the rule_type of this ShowSecurityDataClassificationRuleResponse.
 
         规则类型, CUSTOM, BUILTIN
 
@@ -235,7 +235,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def secrecy_level(self):
-        """Gets the secrecy_level of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the secrecy_level of this ShowSecurityDataClassificationRuleResponse.
 
         密级
 
@@ -246,7 +246,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @secrecy_level.setter
     def secrecy_level(self, secrecy_level):
-        """Sets the secrecy_level of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the secrecy_level of this ShowSecurityDataClassificationRuleResponse.
 
         密级
 
@@ -257,7 +257,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def secrecy_level_num(self):
-        """Gets the secrecy_level_num of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the secrecy_level_num of this ShowSecurityDataClassificationRuleResponse.
 
         密级层级
 
@@ -268,7 +268,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @secrecy_level_num.setter
     def secrecy_level_num(self, secrecy_level_num):
-        """Sets the secrecy_level_num of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the secrecy_level_num of this ShowSecurityDataClassificationRuleResponse.
 
         密级层级
 
@@ -279,7 +279,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the name of this ShowSecurityDataClassificationRuleResponse.
 
         规则名称
 
@@ -290,7 +290,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the name of this ShowSecurityDataClassificationRuleResponse.
 
         规则名称
 
@@ -301,7 +301,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def guid(self):
-        """Gets the guid of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the guid of this ShowSecurityDataClassificationRuleResponse.
 
         guid
 
@@ -312,7 +312,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the guid of this ShowSecurityDataClassificationRuleResponse.
 
         guid
 
@@ -323,7 +323,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the enable of this ShowSecurityDataClassificationRuleResponse.
 
         规则是否开启
 
@@ -334,7 +334,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the enable of this ShowSecurityDataClassificationRuleResponse.
 
         规则是否开启
 
@@ -345,7 +345,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def method(self):
-        """Gets the method of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the method of this ShowSecurityDataClassificationRuleResponse.
 
         规则方式, REGULAR, NONE, DEFAULT, COMBINE
 
@@ -356,7 +356,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the method of this ShowSecurityDataClassificationRuleResponse.
 
         规则方式, REGULAR, NONE, DEFAULT, COMBINE
 
@@ -367,7 +367,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def content_expression(self):
-        """Gets the content_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the content_expression of this ShowSecurityDataClassificationRuleResponse.
 
         内容表达式
 
@@ -378,7 +378,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @content_expression.setter
     def content_expression(self, content_expression):
-        """Sets the content_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the content_expression of this ShowSecurityDataClassificationRuleResponse.
 
         内容表达式
 
@@ -389,7 +389,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def column_expression(self):
-        """Gets the column_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the column_expression of this ShowSecurityDataClassificationRuleResponse.
 
         列表达式
 
@@ -400,7 +400,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @column_expression.setter
     def column_expression(self, column_expression):
-        """Sets the column_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the column_expression of this ShowSecurityDataClassificationRuleResponse.
 
         列表达式
 
@@ -411,7 +411,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def commit_expression(self):
-        """Gets the commit_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the commit_expression of this ShowSecurityDataClassificationRuleResponse.
 
         备注表达式
 
@@ -422,7 +422,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @commit_expression.setter
     def commit_expression(self, commit_expression):
-        """Sets the commit_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the commit_expression of this ShowSecurityDataClassificationRuleResponse.
 
         备注表达式
 
@@ -433,7 +433,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def combine_expression(self):
-        """Gets the combine_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the combine_expression of this ShowSecurityDataClassificationRuleResponse.
 
         条件表达式
 
@@ -444,7 +444,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @combine_expression.setter
     def combine_expression(self, combine_expression):
-        """Sets the combine_expression of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the combine_expression of this ShowSecurityDataClassificationRuleResponse.
 
         条件表达式
 
@@ -455,7 +455,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the project_id of this ShowSecurityDataClassificationRuleResponse.
 
         项目ID
 
@@ -466,7 +466,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the project_id of this ShowSecurityDataClassificationRuleResponse.
 
         项目ID
 
@@ -477,7 +477,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the description of this ShowSecurityDataClassificationRuleResponse.
 
         规则描述
 
@@ -488,7 +488,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the description of this ShowSecurityDataClassificationRuleResponse.
 
         规则描述
 
@@ -499,7 +499,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the created_by of this ShowSecurityDataClassificationRuleResponse.
 
         策略创建人
 
@@ -510,7 +510,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the created_by of this ShowSecurityDataClassificationRuleResponse.
 
         策略创建人
 
@@ -521,7 +521,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the created_at of this ShowSecurityDataClassificationRuleResponse.
 
         策略创建时间
 
@@ -532,7 +532,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the created_at of this ShowSecurityDataClassificationRuleResponse.
 
         策略创建时间
 
@@ -543,7 +543,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the updated_by of this ShowSecurityDataClassificationRuleResponse.
 
         策略更新人
 
@@ -554,7 +554,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the updated_by of this ShowSecurityDataClassificationRuleResponse.
 
         策略更新人
 
@@ -565,7 +565,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the updated_at of this ShowSecurityDataClassificationRuleResponse.
 
         策略更新时间
 
@@ -576,7 +576,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the updated_at of this ShowSecurityDataClassificationRuleResponse.
 
         策略更新时间
 
@@ -587,7 +587,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def builtin_rule_id(self):
-        """Gets the builtin_rule_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the builtin_rule_id of this ShowSecurityDataClassificationRuleResponse.
 
         内置规则ID
 
@@ -598,7 +598,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @builtin_rule_id.setter
     def builtin_rule_id(self, builtin_rule_id):
-        """Sets the builtin_rule_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the builtin_rule_id of this ShowSecurityDataClassificationRuleResponse.
 
         内置规则ID
 
@@ -609,7 +609,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def category_id(self):
-        """Gets the category_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the category_id of this ShowSecurityDataClassificationRuleResponse.
 
         分类ID
 
@@ -620,7 +620,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the category_id of this ShowSecurityDataClassificationRuleResponse.
 
         分类ID
 
@@ -631,7 +631,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the instance_id of this ShowSecurityDataClassificationRuleResponse.
 
         实例ID
 
@@ -642,7 +642,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the instance_id of this ShowSecurityDataClassificationRuleResponse.
 
         实例ID
 
@@ -653,7 +653,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @property
     def match_type(self):
-        """Gets the match_type of this ShowSecurityDataClassificationRuleResponse.
+        r"""Gets the match_type of this ShowSecurityDataClassificationRuleResponse.
 
         匹配类型
 
@@ -664,7 +664,7 @@ class ShowSecurityDataClassificationRuleResponse(SdkResponse):
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this ShowSecurityDataClassificationRuleResponse.
+        r"""Sets the match_type of this ShowSecurityDataClassificationRuleResponse.
 
         匹配类型
 

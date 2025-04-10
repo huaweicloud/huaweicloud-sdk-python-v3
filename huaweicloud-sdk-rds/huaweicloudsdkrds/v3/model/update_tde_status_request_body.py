@@ -31,7 +31,7 @@ class UpdateTdeStatusRequestBody:
     }
 
     def __init__(self, rotate_day=None, secret_id=None, secret_name=None, secret_version=None):
-        """UpdateTdeStatusRequestBody
+        r"""UpdateTdeStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateTdeStatusRequestBody:
 
     @property
     def rotate_day(self):
-        """Gets the rotate_day of this UpdateTdeStatusRequestBody.
+        r"""Gets the rotate_day of this UpdateTdeStatusRequestBody.
 
         轮转天数
 
@@ -75,7 +75,7 @@ class UpdateTdeStatusRequestBody:
 
     @rotate_day.setter
     def rotate_day(self, rotate_day):
-        """Sets the rotate_day of this UpdateTdeStatusRequestBody.
+        r"""Sets the rotate_day of this UpdateTdeStatusRequestBody.
 
         轮转天数
 
@@ -86,7 +86,7 @@ class UpdateTdeStatusRequestBody:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this UpdateTdeStatusRequestBody.
+        r"""Gets the secret_id of this UpdateTdeStatusRequestBody.
 
         密钥ID
 
@@ -97,7 +97,7 @@ class UpdateTdeStatusRequestBody:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this UpdateTdeStatusRequestBody.
+        r"""Sets the secret_id of this UpdateTdeStatusRequestBody.
 
         密钥ID
 
@@ -108,7 +108,7 @@ class UpdateTdeStatusRequestBody:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this UpdateTdeStatusRequestBody.
+        r"""Gets the secret_name of this UpdateTdeStatusRequestBody.
 
         密钥名称
 
@@ -119,7 +119,7 @@ class UpdateTdeStatusRequestBody:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this UpdateTdeStatusRequestBody.
+        r"""Sets the secret_name of this UpdateTdeStatusRequestBody.
 
         密钥名称
 
@@ -130,7 +130,7 @@ class UpdateTdeStatusRequestBody:
 
     @property
     def secret_version(self):
-        """Gets the secret_version of this UpdateTdeStatusRequestBody.
+        r"""Gets the secret_version of this UpdateTdeStatusRequestBody.
 
         密钥版本
 
@@ -141,7 +141,7 @@ class UpdateTdeStatusRequestBody:
 
     @secret_version.setter
     def secret_version(self, secret_version):
-        """Sets the secret_version of this UpdateTdeStatusRequestBody.
+        r"""Sets the secret_version of this UpdateTdeStatusRequestBody.
 
         密钥版本
 

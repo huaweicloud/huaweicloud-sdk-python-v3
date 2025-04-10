@@ -29,7 +29,7 @@ class AggregationAuthorizationResp:
     }
 
     def __init__(self, aggregation_authorization_urn=None, authorized_account_id=None, created_at=None):
-        """AggregationAuthorizationResp
+        r"""AggregationAuthorizationResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AggregationAuthorizationResp:
 
     @property
     def aggregation_authorization_urn(self):
-        """Gets the aggregation_authorization_urn of this AggregationAuthorizationResp.
+        r"""Gets the aggregation_authorization_urn of this AggregationAuthorizationResp.
 
         资源聚合器授权标识符。
 
@@ -68,7 +68,7 @@ class AggregationAuthorizationResp:
 
     @aggregation_authorization_urn.setter
     def aggregation_authorization_urn(self, aggregation_authorization_urn):
-        """Sets the aggregation_authorization_urn of this AggregationAuthorizationResp.
+        r"""Sets the aggregation_authorization_urn of this AggregationAuthorizationResp.
 
         资源聚合器授权标识符。
 
@@ -79,7 +79,7 @@ class AggregationAuthorizationResp:
 
     @property
     def authorized_account_id(self):
-        """Gets the authorized_account_id of this AggregationAuthorizationResp.
+        r"""Gets the authorized_account_id of this AggregationAuthorizationResp.
 
         授权的资源聚合器的帐号ID。
 
@@ -90,7 +90,7 @@ class AggregationAuthorizationResp:
 
     @authorized_account_id.setter
     def authorized_account_id(self, authorized_account_id):
-        """Sets the authorized_account_id of this AggregationAuthorizationResp.
+        r"""Sets the authorized_account_id of this AggregationAuthorizationResp.
 
         授权的资源聚合器的帐号ID。
 
@@ -101,7 +101,7 @@ class AggregationAuthorizationResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AggregationAuthorizationResp.
+        r"""Gets the created_at of this AggregationAuthorizationResp.
 
         资源聚合器授权的创建时间。
 
@@ -112,7 +112,7 @@ class AggregationAuthorizationResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AggregationAuthorizationResp.
+        r"""Sets the created_at of this AggregationAuthorizationResp.
 
         资源聚合器授权的创建时间。
 

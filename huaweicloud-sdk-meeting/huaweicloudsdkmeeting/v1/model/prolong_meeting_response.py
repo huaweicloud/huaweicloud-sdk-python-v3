@@ -24,7 +24,7 @@ class ProlongMeetingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ProlongMeetingResponse
+        r"""ProlongMeetingResponse
 
         The model defined in huaweicloud sdk
 

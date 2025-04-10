@@ -28,7 +28,7 @@ class ListAuditlogsResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, audit_logs=None):
-        """ListAuditlogsResponse
+        r"""ListAuditlogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListAuditlogsResponse.
+        r"""Gets the total_record of this ListAuditlogsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListAuditlogsResponse.
+        r"""Sets the total_record of this ListAuditlogsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @property
     def audit_logs(self):
-        """Gets the audit_logs of this ListAuditlogsResponse.
+        r"""Gets the audit_logs of this ListAuditlogsResponse.
 
         审计日志具体信息。
 
@@ -84,7 +84,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @audit_logs.setter
     def audit_logs(self, audit_logs):
-        """Sets the audit_logs of this ListAuditlogsResponse.
+        r"""Sets the audit_logs of this ListAuditlogsResponse.
 
         审计日志具体信息。
 

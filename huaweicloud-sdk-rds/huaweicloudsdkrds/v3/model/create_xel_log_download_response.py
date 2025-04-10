@@ -28,7 +28,7 @@ class CreateXelLogDownloadResponse(SdkResponse):
     }
 
     def __init__(self, list=None, count=None):
-        """CreateXelLogDownloadResponse
+        r"""CreateXelLogDownloadResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateXelLogDownloadResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this CreateXelLogDownloadResponse.
+        r"""Gets the list of this CreateXelLogDownloadResponse.
 
         扩展日志文件返回实体
 
@@ -62,7 +62,7 @@ class CreateXelLogDownloadResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this CreateXelLogDownloadResponse.
+        r"""Sets the list of this CreateXelLogDownloadResponse.
 
         扩展日志文件返回实体
 
@@ -73,7 +73,7 @@ class CreateXelLogDownloadResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this CreateXelLogDownloadResponse.
+        r"""Gets the count of this CreateXelLogDownloadResponse.
 
         扩展日志文件信息数量。
 
@@ -84,7 +84,7 @@ class CreateXelLogDownloadResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateXelLogDownloadResponse.
+        r"""Sets the count of this CreateXelLogDownloadResponse.
 
         扩展日志文件信息数量。
 

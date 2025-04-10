@@ -24,7 +24,7 @@ class RollcallParticipantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RollcallParticipantResponse
+        r"""RollcallParticipantResponse
 
         The model defined in huaweicloud sdk
 

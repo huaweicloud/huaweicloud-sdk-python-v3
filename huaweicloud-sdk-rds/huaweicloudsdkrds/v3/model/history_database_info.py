@@ -27,7 +27,7 @@ class HistoryDatabaseInfo:
     }
 
     def __init__(self, name=None, total_tables=None):
-        """HistoryDatabaseInfo
+        r"""HistoryDatabaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HistoryDatabaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this HistoryDatabaseInfo.
+        r"""Gets the name of this HistoryDatabaseInfo.
 
         数据库名
 
@@ -61,7 +61,7 @@ class HistoryDatabaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HistoryDatabaseInfo.
+        r"""Sets the name of this HistoryDatabaseInfo.
 
         数据库名
 
@@ -72,7 +72,7 @@ class HistoryDatabaseInfo:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this HistoryDatabaseInfo.
+        r"""Gets the total_tables of this HistoryDatabaseInfo.
 
         表的个数
 
@@ -83,7 +83,7 @@ class HistoryDatabaseInfo:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this HistoryDatabaseInfo.
+        r"""Sets the total_tables of this HistoryDatabaseInfo.
 
         表的个数
 

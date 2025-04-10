@@ -25,7 +25,7 @@ class UpdateWorkflowBody:
     }
 
     def __init__(self, parameters=None):
-        """UpdateWorkflowBody
+        r"""UpdateWorkflowBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateWorkflowBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this UpdateWorkflowBody.
+        r"""Gets the parameters of this UpdateWorkflowBody.
 
         工作流中每个算子待修改参数与待更新的值。
 
@@ -54,7 +54,7 @@ class UpdateWorkflowBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this UpdateWorkflowBody.
+        r"""Sets the parameters of this UpdateWorkflowBody.
 
         工作流中每个算子待修改参数与待更新的值。
 

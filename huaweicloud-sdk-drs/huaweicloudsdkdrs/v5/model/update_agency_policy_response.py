@@ -26,7 +26,7 @@ class UpdateAgencyPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateAgencyPolicyResponse
+        r"""UpdateAgencyPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAgencyPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgencyPolicyResponse.
+        r"""Gets the body of this UpdateAgencyPolicyResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class UpdateAgencyPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgencyPolicyResponse.
+        r"""Sets the body of this UpdateAgencyPolicyResponse.
 
         空响应体。
 

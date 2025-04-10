@@ -29,7 +29,7 @@ class ShowAccessPointRequest:
     }
 
     def __init__(self, business_id=None, x_business_id=None, body=None):
-        """ShowAccessPointRequest
+        r"""ShowAccessPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowAccessPointRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this ShowAccessPointRequest.
+        r"""Gets the business_id of this ShowAccessPointRequest.
 
         应用id。
 
@@ -66,7 +66,7 @@ class ShowAccessPointRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this ShowAccessPointRequest.
+        r"""Sets the business_id of this ShowAccessPointRequest.
 
         应用id。
 
@@ -77,7 +77,7 @@ class ShowAccessPointRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowAccessPointRequest.
+        r"""Gets the x_business_id of this ShowAccessPointRequest.
 
         应用id。
 
@@ -88,7 +88,7 @@ class ShowAccessPointRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowAccessPointRequest.
+        r"""Sets the x_business_id of this ShowAccessPointRequest.
 
         应用id。
 
@@ -99,7 +99,7 @@ class ShowAccessPointRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAccessPointRequest.
+        r"""Gets the body of this ShowAccessPointRequest.
 
         :return: The body of this ShowAccessPointRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.AccessPointModel`
@@ -108,7 +108,7 @@ class ShowAccessPointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAccessPointRequest.
+        r"""Sets the body of this ShowAccessPointRequest.
 
         :param body: The body of this ShowAccessPointRequest.
         :type body: :class:`huaweicloudsdkapm.v1.AccessPointModel`

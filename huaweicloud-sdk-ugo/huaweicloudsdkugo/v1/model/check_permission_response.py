@@ -24,7 +24,7 @@ class CheckPermissionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckPermissionResponse
+        r"""CheckPermissionResponse
 
         The model defined in huaweicloud sdk
 

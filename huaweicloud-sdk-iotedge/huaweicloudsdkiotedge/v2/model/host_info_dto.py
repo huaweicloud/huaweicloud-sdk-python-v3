@@ -39,7 +39,7 @@ class HostInfoDTO:
     }
 
     def __init__(self, host_tag=None, host_status=None, os_name=None, host_name=None, container_version=None, nics=None, specification=None, npu_details=None):
-        """HostInfoDTO
+        r"""HostInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HostInfoDTO:
 
     @property
     def host_tag(self):
-        """Gets the host_tag of this HostInfoDTO.
+        r"""Gets the host_tag of this HostInfoDTO.
 
         主机标签DEFAULT|MASTER|SLAVE
 
@@ -103,7 +103,7 @@ class HostInfoDTO:
 
     @host_tag.setter
     def host_tag(self, host_tag):
-        """Sets the host_tag of this HostInfoDTO.
+        r"""Sets the host_tag of this HostInfoDTO.
 
         主机标签DEFAULT|MASTER|SLAVE
 
@@ -114,7 +114,7 @@ class HostInfoDTO:
 
     @property
     def host_status(self):
-        """Gets the host_status of this HostInfoDTO.
+        r"""Gets the host_status of this HostInfoDTO.
 
         主机工作状态(ONLINE|OFFLINE)
 
@@ -125,7 +125,7 @@ class HostInfoDTO:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this HostInfoDTO.
+        r"""Sets the host_status of this HostInfoDTO.
 
         主机工作状态(ONLINE|OFFLINE)
 
@@ -136,7 +136,7 @@ class HostInfoDTO:
 
     @property
     def os_name(self):
-        """Gets the os_name of this HostInfoDTO.
+        r"""Gets the os_name of this HostInfoDTO.
 
         边缘节点操作系统。例如：Ubuntu 20.04；CentOS 7.9。不同于os_type边缘节点系统类型。
 
@@ -147,7 +147,7 @@ class HostInfoDTO:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this HostInfoDTO.
+        r"""Sets the os_name of this HostInfoDTO.
 
         边缘节点操作系统。例如：Ubuntu 20.04；CentOS 7.9。不同于os_type边缘节点系统类型。
 
@@ -158,7 +158,7 @@ class HostInfoDTO:
 
     @property
     def host_name(self):
-        """Gets the host_name of this HostInfoDTO.
+        r"""Gets the host_name of this HostInfoDTO.
 
         边缘节点主机名
 
@@ -169,7 +169,7 @@ class HostInfoDTO:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this HostInfoDTO.
+        r"""Sets the host_name of this HostInfoDTO.
 
         边缘节点主机名
 
@@ -180,7 +180,7 @@ class HostInfoDTO:
 
     @property
     def container_version(self):
-        """Gets the container_version of this HostInfoDTO.
+        r"""Gets the container_version of this HostInfoDTO.
 
         容器运行时版本
 
@@ -191,7 +191,7 @@ class HostInfoDTO:
 
     @container_version.setter
     def container_version(self, container_version):
-        """Sets the container_version of this HostInfoDTO.
+        r"""Sets the container_version of this HostInfoDTO.
 
         容器运行时版本
 
@@ -202,7 +202,7 @@ class HostInfoDTO:
 
     @property
     def nics(self):
-        """Gets the nics of this HostInfoDTO.
+        r"""Gets the nics of this HostInfoDTO.
 
         边缘节点网络网卡信息
 
@@ -213,7 +213,7 @@ class HostInfoDTO:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this HostInfoDTO.
+        r"""Sets the nics of this HostInfoDTO.
 
         边缘节点网络网卡信息
 
@@ -224,7 +224,7 @@ class HostInfoDTO:
 
     @property
     def specification(self):
-        """Gets the specification of this HostInfoDTO.
+        r"""Gets the specification of this HostInfoDTO.
 
         网络规格，如4 cores | 3867 MB
 
@@ -235,7 +235,7 @@ class HostInfoDTO:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this HostInfoDTO.
+        r"""Sets the specification of this HostInfoDTO.
 
         网络规格，如4 cores | 3867 MB
 
@@ -246,7 +246,7 @@ class HostInfoDTO:
 
     @property
     def npu_details(self):
-        """Gets the npu_details of this HostInfoDTO.
+        r"""Gets the npu_details of this HostInfoDTO.
 
         NPU设备详细信息，包括硬件信息和使用情况。
 
@@ -257,7 +257,7 @@ class HostInfoDTO:
 
     @npu_details.setter
     def npu_details(self, npu_details):
-        """Sets the npu_details of this HostInfoDTO.
+        r"""Sets the npu_details of this HostInfoDTO.
 
         NPU设备详细信息，包括硬件信息和使用情况。
 

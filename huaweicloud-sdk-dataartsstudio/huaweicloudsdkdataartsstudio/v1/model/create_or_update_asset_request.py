@@ -27,7 +27,7 @@ class CreateOrUpdateAssetRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateOrUpdateAssetRequest
+        r"""CreateOrUpdateAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOrUpdateAssetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateOrUpdateAssetRequest.
+        r"""Gets the workspace of this CreateOrUpdateAssetRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateOrUpdateAssetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateOrUpdateAssetRequest.
+        r"""Sets the workspace of this CreateOrUpdateAssetRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateOrUpdateAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrUpdateAssetRequest.
+        r"""Gets the body of this CreateOrUpdateAssetRequest.
 
         :return: The body of this CreateOrUpdateAssetRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EntityWithExtInfo`
@@ -80,7 +80,7 @@ class CreateOrUpdateAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrUpdateAssetRequest.
+        r"""Sets the body of this CreateOrUpdateAssetRequest.
 
         :param body: The body of this CreateOrUpdateAssetRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.EntityWithExtInfo`

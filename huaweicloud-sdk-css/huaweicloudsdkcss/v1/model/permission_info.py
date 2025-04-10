@@ -31,7 +31,7 @@ class PermissionInfo:
     }
 
     def __init__(self, id=None, permission=None, permission_type=None, created_at=None):
-        """PermissionInfo
+        r"""PermissionInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PermissionInfo:
 
     @property
     def id(self):
-        """Gets the id of this PermissionInfo.
+        r"""Gets the id of this PermissionInfo.
 
         permission的ID。
 
@@ -75,7 +75,7 @@ class PermissionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionInfo.
+        r"""Sets the id of this PermissionInfo.
 
         permission的ID。
 
@@ -86,7 +86,7 @@ class PermissionInfo:
 
     @property
     def permission(self):
-        """Gets the permission of this PermissionInfo.
+        r"""Gets the permission of this PermissionInfo.
 
         permission详情。
 
@@ -97,7 +97,7 @@ class PermissionInfo:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this PermissionInfo.
+        r"""Sets the permission of this PermissionInfo.
 
         permission详情。
 
@@ -108,7 +108,7 @@ class PermissionInfo:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this PermissionInfo.
+        r"""Gets the permission_type of this PermissionInfo.
 
         终端节点服务白名单类型。
 
@@ -119,7 +119,7 @@ class PermissionInfo:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this PermissionInfo.
+        r"""Sets the permission_type of this PermissionInfo.
 
         终端节点服务白名单类型。
 
@@ -130,7 +130,7 @@ class PermissionInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PermissionInfo.
+        r"""Gets the created_at of this PermissionInfo.
 
         白名单的添加时间。
 
@@ -141,7 +141,7 @@ class PermissionInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PermissionInfo.
+        r"""Sets the created_at of this PermissionInfo.
 
         白名单的添加时间。
 

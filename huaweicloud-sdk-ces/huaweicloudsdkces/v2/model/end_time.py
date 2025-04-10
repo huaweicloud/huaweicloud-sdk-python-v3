@@ -23,7 +23,7 @@ class EndTime:
     }
 
     def __init__(self):
-        """EndTime
+        r"""EndTime
 
         The model defined in huaweicloud sdk
 

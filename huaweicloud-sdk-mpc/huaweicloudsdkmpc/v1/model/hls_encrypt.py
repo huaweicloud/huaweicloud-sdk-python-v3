@@ -31,7 +31,7 @@ class HlsEncrypt:
     }
 
     def __init__(self, key=None, url=None, iv=None, algorithm=None):
-        """HlsEncrypt
+        r"""HlsEncrypt
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class HlsEncrypt:
 
     @property
     def key(self):
-        """Gets the key of this HlsEncrypt.
+        r"""Gets the key of this HlsEncrypt.
 
         内容加密秘钥 
 
@@ -73,7 +73,7 @@ class HlsEncrypt:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this HlsEncrypt.
+        r"""Sets the key of this HlsEncrypt.
 
         内容加密秘钥 
 
@@ -84,7 +84,7 @@ class HlsEncrypt:
 
     @property
     def url(self):
-        """Gets the url of this HlsEncrypt.
+        r"""Gets the url of this HlsEncrypt.
 
         秘钥获取服务的地址 
 
@@ -95,7 +95,7 @@ class HlsEncrypt:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this HlsEncrypt.
+        r"""Sets the url of this HlsEncrypt.
 
         秘钥获取服务的地址 
 
@@ -106,7 +106,7 @@ class HlsEncrypt:
 
     @property
     def iv(self):
-        """Gets the iv of this HlsEncrypt.
+        r"""Gets the iv of this HlsEncrypt.
 
         初始向量，base64binary，随机数 
 
@@ -117,7 +117,7 @@ class HlsEncrypt:
 
     @iv.setter
     def iv(self, iv):
-        """Sets the iv of this HlsEncrypt.
+        r"""Sets the iv of this HlsEncrypt.
 
         初始向量，base64binary，随机数 
 
@@ -128,7 +128,7 @@ class HlsEncrypt:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this HlsEncrypt.
+        r"""Gets the algorithm of this HlsEncrypt.
 
         加密算法。 - AES-128-CTR - AES-128-CBC - SM4CBC  默认值：AES-128-CTR 
 
@@ -139,7 +139,7 @@ class HlsEncrypt:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this HlsEncrypt.
+        r"""Sets the algorithm of this HlsEncrypt.
 
         加密算法。 - AES-128-CTR - AES-128-CBC - SM4CBC  默认值：AES-128-CTR 
 

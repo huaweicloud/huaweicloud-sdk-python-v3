@@ -30,7 +30,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, database_limit=None, bucket_name=None):
-        """ShowDatabaseLevelDatabaseResponse
+        r"""ShowDatabaseLevelDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ShowDatabaseLevelDatabaseResponse.
+        r"""Gets the databases of this ShowDatabaseLevelDatabaseResponse.
 
         库信息列表
 
@@ -69,7 +69,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ShowDatabaseLevelDatabaseResponse.
+        r"""Sets the databases of this ShowDatabaseLevelDatabaseResponse.
 
         库信息列表
 
@@ -80,7 +80,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
 
     @property
     def database_limit(self):
-        """Gets the database_limit of this ShowDatabaseLevelDatabaseResponse.
+        r"""Gets the database_limit of this ShowDatabaseLevelDatabaseResponse.
 
         可恢复库的个数
 
@@ -91,7 +91,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
 
     @database_limit.setter
     def database_limit(self, database_limit):
-        """Sets the database_limit of this ShowDatabaseLevelDatabaseResponse.
+        r"""Sets the database_limit of this ShowDatabaseLevelDatabaseResponse.
 
         可恢复库的个数
 
@@ -102,7 +102,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ShowDatabaseLevelDatabaseResponse.
+        r"""Gets the bucket_name of this ShowDatabaseLevelDatabaseResponse.
 
         obs桶名
 
@@ -113,7 +113,7 @@ class ShowDatabaseLevelDatabaseResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ShowDatabaseLevelDatabaseResponse.
+        r"""Sets the bucket_name of this ShowDatabaseLevelDatabaseResponse.
 
         obs桶名
 

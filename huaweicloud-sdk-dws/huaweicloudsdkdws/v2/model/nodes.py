@@ -27,7 +27,7 @@ class Nodes:
     }
 
     def __init__(self, id=None, status=None):
-        """Nodes
+        r"""Nodes
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Nodes:
 
     @property
     def id(self):
-        """Gets the id of this Nodes.
+        r"""Gets the id of this Nodes.
 
         集群实例ID
 
@@ -59,7 +59,7 @@ class Nodes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Nodes.
+        r"""Sets the id of this Nodes.
 
         集群实例ID
 
@@ -70,7 +70,7 @@ class Nodes:
 
     @property
     def status(self):
-        """Gets the status of this Nodes.
+        r"""Gets the status of this Nodes.
 
         集群实例状态 - 100：创建中 - 199：空闲 - 200：可用 - 300：不可用 - 303：创建失败 - 304：删除中 - 305：删除失败 - 400：已删除
 
@@ -81,7 +81,7 @@ class Nodes:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Nodes.
+        r"""Sets the status of this Nodes.
 
         集群实例状态 - 100：创建中 - 199：空闲 - 200：可用 - 300：不可用 - 303：创建失败 - 304：删除中 - 305：删除失败 - 400：已删除
 

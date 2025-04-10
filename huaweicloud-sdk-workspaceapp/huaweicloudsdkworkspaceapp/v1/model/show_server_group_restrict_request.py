@@ -23,7 +23,7 @@ class ShowServerGroupRestrictRequest:
     }
 
     def __init__(self):
-        """ShowServerGroupRestrictRequest
+        r"""ShowServerGroupRestrictRequest
 
         The model defined in huaweicloud sdk
 

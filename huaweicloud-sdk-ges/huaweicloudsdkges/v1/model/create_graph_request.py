@@ -25,7 +25,7 @@ class CreateGraphRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGraphRequest
+        r"""CreateGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGraphRequest.
+        r"""Gets the body of this CreateGraphRequest.
 
         :return: The body of this CreateGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.CreateGraphReq`
@@ -52,7 +52,7 @@ class CreateGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGraphRequest.
+        r"""Sets the body of this CreateGraphRequest.
 
         :param body: The body of this CreateGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.CreateGraphReq`

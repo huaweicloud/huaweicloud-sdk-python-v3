@@ -27,7 +27,7 @@ class CorpConfigInfo:
     }
 
     def __init__(self, config_key=None, config_value=None):
-        """CorpConfigInfo
+        r"""CorpConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CorpConfigInfo:
 
     @property
     def config_key(self):
-        """Gets the config_key of this CorpConfigInfo.
+        r"""Gets the config_key of this CorpConfigInfo.
 
         查询的配置configKey。
 
@@ -61,7 +61,7 @@ class CorpConfigInfo:
 
     @config_key.setter
     def config_key(self, config_key):
-        """Sets the config_key of this CorpConfigInfo.
+        r"""Sets the config_key of this CorpConfigInfo.
 
         查询的配置configKey。
 
@@ -72,7 +72,7 @@ class CorpConfigInfo:
 
     @property
     def config_value(self):
-        """Gets the config_value of this CorpConfigInfo.
+        r"""Gets the config_value of this CorpConfigInfo.
 
         根据configKey查到的configValue。
 
@@ -83,7 +83,7 @@ class CorpConfigInfo:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this CorpConfigInfo.
+        r"""Sets the config_value of this CorpConfigInfo.
 
         根据configKey查到的configValue。
 

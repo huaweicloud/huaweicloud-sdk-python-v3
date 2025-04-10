@@ -35,7 +35,7 @@ class MappingSourceTableVO:
     }
 
     def __init__(self, table1_id=None, table2_id=None, table1_name=None, table2_name=None, join_type=None, join_fields=None):
-        """MappingSourceTableVO
+        r"""MappingSourceTableVO
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class MappingSourceTableVO:
 
     @property
     def table1_id(self):
-        """Gets the table1_id of this MappingSourceTableVO.
+        r"""Gets the table1_id of this MappingSourceTableVO.
 
         表1ID，ID字符串。
 
@@ -85,7 +85,7 @@ class MappingSourceTableVO:
 
     @table1_id.setter
     def table1_id(self, table1_id):
-        """Sets the table1_id of this MappingSourceTableVO.
+        r"""Sets the table1_id of this MappingSourceTableVO.
 
         表1ID，ID字符串。
 
@@ -96,7 +96,7 @@ class MappingSourceTableVO:
 
     @property
     def table2_id(self):
-        """Gets the table2_id of this MappingSourceTableVO.
+        r"""Gets the table2_id of this MappingSourceTableVO.
 
         表2ID，ID字符串。
 
@@ -107,7 +107,7 @@ class MappingSourceTableVO:
 
     @table2_id.setter
     def table2_id(self, table2_id):
-        """Sets the table2_id of this MappingSourceTableVO.
+        r"""Sets the table2_id of this MappingSourceTableVO.
 
         表2ID，ID字符串。
 
@@ -118,7 +118,7 @@ class MappingSourceTableVO:
 
     @property
     def table1_name(self):
-        """Gets the table1_name of this MappingSourceTableVO.
+        r"""Gets the table1_name of this MappingSourceTableVO.
 
         表1名称。
 
@@ -129,7 +129,7 @@ class MappingSourceTableVO:
 
     @table1_name.setter
     def table1_name(self, table1_name):
-        """Sets the table1_name of this MappingSourceTableVO.
+        r"""Sets the table1_name of this MappingSourceTableVO.
 
         表1名称。
 
@@ -140,7 +140,7 @@ class MappingSourceTableVO:
 
     @property
     def table2_name(self):
-        """Gets the table2_name of this MappingSourceTableVO.
+        r"""Gets the table2_name of this MappingSourceTableVO.
 
         表2名称。
 
@@ -151,7 +151,7 @@ class MappingSourceTableVO:
 
     @table2_name.setter
     def table2_name(self, table2_name):
-        """Sets the table2_name of this MappingSourceTableVO.
+        r"""Sets the table2_name of this MappingSourceTableVO.
 
         表2名称。
 
@@ -162,7 +162,7 @@ class MappingSourceTableVO:
 
     @property
     def join_type(self):
-        """Gets the join_type of this MappingSourceTableVO.
+        r"""Gets the join_type of this MappingSourceTableVO.
 
         关联类型。 枚举值：   - LEFT: 左外连接   - RIGHT: 右外连接   - INNER: 内连接   - FULL: 全连接 
 
@@ -173,7 +173,7 @@ class MappingSourceTableVO:
 
     @join_type.setter
     def join_type(self, join_type):
-        """Sets the join_type of this MappingSourceTableVO.
+        r"""Sets the join_type of this MappingSourceTableVO.
 
         关联类型。 枚举值：   - LEFT: 左外连接   - RIGHT: 右外连接   - INNER: 内连接   - FULL: 全连接 
 
@@ -184,7 +184,7 @@ class MappingSourceTableVO:
 
     @property
     def join_fields(self):
-        """Gets the join_fields of this MappingSourceTableVO.
+        r"""Gets the join_fields of this MappingSourceTableVO.
 
         on条件。
 
@@ -195,7 +195,7 @@ class MappingSourceTableVO:
 
     @join_fields.setter
     def join_fields(self, join_fields):
-        """Sets the join_fields of this MappingSourceTableVO.
+        r"""Sets the join_fields of this MappingSourceTableVO.
 
         on条件。
 

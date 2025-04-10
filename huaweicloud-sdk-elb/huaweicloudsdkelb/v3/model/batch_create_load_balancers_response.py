@@ -32,7 +32,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer_ids=None, job_id=None, order_id=None, request_id=None):
-        """BatchCreateLoadBalancersResponse
+        r"""BatchCreateLoadBalancersResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @property
     def loadbalancer_ids(self):
-        """Gets the loadbalancer_ids of this BatchCreateLoadBalancersResponse.
+        r"""Gets the loadbalancer_ids of this BatchCreateLoadBalancersResponse.
 
         批创负载均衡器ID（UUID）的列表。
 
@@ -76,7 +76,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @loadbalancer_ids.setter
     def loadbalancer_ids(self, loadbalancer_ids):
-        """Sets the loadbalancer_ids of this BatchCreateLoadBalancersResponse.
+        r"""Sets the loadbalancer_ids of this BatchCreateLoadBalancersResponse.
 
         批创负载均衡器ID（UUID）的列表。
 
@@ -87,7 +87,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchCreateLoadBalancersResponse.
+        r"""Gets the job_id of this BatchCreateLoadBalancersResponse.
 
         批量创建负载均衡器的job ID。
 
@@ -98,7 +98,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchCreateLoadBalancersResponse.
+        r"""Sets the job_id of this BatchCreateLoadBalancersResponse.
 
         批量创建负载均衡器的job ID。
 
@@ -109,7 +109,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this BatchCreateLoadBalancersResponse.
+        r"""Gets the order_id of this BatchCreateLoadBalancersResponse.
 
         订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -120,7 +120,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this BatchCreateLoadBalancersResponse.
+        r"""Sets the order_id of this BatchCreateLoadBalancersResponse.
 
         订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -131,7 +131,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCreateLoadBalancersResponse.
+        r"""Gets the request_id of this BatchCreateLoadBalancersResponse.
 
         请求ID。 注：自动生成 。
 
@@ -142,7 +142,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCreateLoadBalancersResponse.
+        r"""Sets the request_id of this BatchCreateLoadBalancersResponse.
 
         请求ID。 注：自动生成 。
 

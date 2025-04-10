@@ -43,7 +43,7 @@ class LdApiScript:
     }
 
     def __init__(self, ds_id=None, ds_name=None, ds_type=None, type=None, object_name=None, content=None, enable_result_paging=None, enable_preparestatement=None, created_time=None, modified_time=None):
-        """LdApiScript
+        r"""LdApiScript
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class LdApiScript:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this LdApiScript.
+        r"""Gets the ds_id of this LdApiScript.
 
         数据源编号，当api_type = data时，必选
 
@@ -115,7 +115,7 @@ class LdApiScript:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this LdApiScript.
+        r"""Sets the ds_id of this LdApiScript.
 
         数据源编号，当api_type = data时，必选
 
@@ -126,7 +126,7 @@ class LdApiScript:
 
     @property
     def ds_name(self):
-        """Gets the ds_name of this LdApiScript.
+        r"""Gets the ds_name of this LdApiScript.
 
         数据源名称
 
@@ -137,7 +137,7 @@ class LdApiScript:
 
     @ds_name.setter
     def ds_name(self, ds_name):
-        """Sets the ds_name of this LdApiScript.
+        r"""Sets the ds_name of this LdApiScript.
 
         数据源名称
 
@@ -148,7 +148,7 @@ class LdApiScript:
 
     @property
     def ds_type(self):
-        """Gets the ds_type of this LdApiScript.
+        r"""Gets the ds_type of this LdApiScript.
 
         数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
@@ -159,7 +159,7 @@ class LdApiScript:
 
     @ds_type.setter
     def ds_type(self, ds_type):
-        """Sets the ds_type of this LdApiScript.
+        r"""Sets the ds_type of this LdApiScript.
 
         数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
@@ -170,7 +170,7 @@ class LdApiScript:
 
     @property
     def type(self):
-        """Gets the type of this LdApiScript.
+        r"""Gets the type of this LdApiScript.
 
         脚本类型 - SQL：sql语句 - SP：存储过程 
 
@@ -181,7 +181,7 @@ class LdApiScript:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LdApiScript.
+        r"""Sets the type of this LdApiScript.
 
         脚本类型 - SQL：sql语句 - SP：存储过程 
 
@@ -192,7 +192,7 @@ class LdApiScript:
 
     @property
     def object_name(self):
-        """Gets the object_name of this LdApiScript.
+        r"""Gets the object_name of this LdApiScript.
 
         返回对象。
 
@@ -203,7 +203,7 @@ class LdApiScript:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this LdApiScript.
+        r"""Sets the object_name of this LdApiScript.
 
         返回对象。
 
@@ -214,7 +214,7 @@ class LdApiScript:
 
     @property
     def content(self):
-        """Gets the content of this LdApiScript.
+        r"""Gets the content of this LdApiScript.
 
         API脚本内容  请对脚本进行base64编码
 
@@ -225,7 +225,7 @@ class LdApiScript:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this LdApiScript.
+        r"""Sets the content of this LdApiScript.
 
         API脚本内容  请对脚本进行base64编码
 
@@ -236,7 +236,7 @@ class LdApiScript:
 
     @property
     def enable_result_paging(self):
-        """Gets the enable_result_paging of this LdApiScript.
+        r"""Gets the enable_result_paging of this LdApiScript.
 
         数据脚本是否结果分页，当api_type = data时有效
 
@@ -247,7 +247,7 @@ class LdApiScript:
 
     @enable_result_paging.setter
     def enable_result_paging(self, enable_result_paging):
-        """Sets the enable_result_paging of this LdApiScript.
+        r"""Sets the enable_result_paging of this LdApiScript.
 
         数据脚本是否结果分页，当api_type = data时有效
 
@@ -258,7 +258,7 @@ class LdApiScript:
 
     @property
     def enable_preparestatement(self):
-        """Gets the enable_preparestatement of this LdApiScript.
+        r"""Gets the enable_preparestatement of this LdApiScript.
 
         数据脚本是否预编译，当api_type = data时有效
 
@@ -269,7 +269,7 @@ class LdApiScript:
 
     @enable_preparestatement.setter
     def enable_preparestatement(self, enable_preparestatement):
-        """Sets the enable_preparestatement of this LdApiScript.
+        r"""Sets the enable_preparestatement of this LdApiScript.
 
         数据脚本是否预编译，当api_type = data时有效
 
@@ -280,7 +280,7 @@ class LdApiScript:
 
     @property
     def created_time(self):
-        """Gets the created_time of this LdApiScript.
+        r"""Gets the created_time of this LdApiScript.
 
         后端API脚本创建时间
 
@@ -291,7 +291,7 @@ class LdApiScript:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this LdApiScript.
+        r"""Sets the created_time of this LdApiScript.
 
         后端API脚本创建时间
 
@@ -302,7 +302,7 @@ class LdApiScript:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this LdApiScript.
+        r"""Gets the modified_time of this LdApiScript.
 
         后端API脚本修改时间
 
@@ -313,7 +313,7 @@ class LdApiScript:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this LdApiScript.
+        r"""Sets the modified_time of this LdApiScript.
 
         后端API脚本修改时间
 

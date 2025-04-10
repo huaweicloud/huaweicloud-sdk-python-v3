@@ -25,7 +25,7 @@ class NovaSecurityGroupCommonIpRange:
     }
 
     def __init__(self, cidr=None):
-        """NovaSecurityGroupCommonIpRange
+        r"""NovaSecurityGroupCommonIpRange
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NovaSecurityGroupCommonIpRange:
 
     @property
     def cidr(self):
-        """Gets the cidr of this NovaSecurityGroupCommonIpRange.
+        r"""Gets the cidr of this NovaSecurityGroupCommonIpRange.
 
         对端IP网段，cidr格式。
 
@@ -54,7 +54,7 @@ class NovaSecurityGroupCommonIpRange:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this NovaSecurityGroupCommonIpRange.
+        r"""Sets the cidr of this NovaSecurityGroupCommonIpRange.
 
         对端IP网段，cidr格式。
 

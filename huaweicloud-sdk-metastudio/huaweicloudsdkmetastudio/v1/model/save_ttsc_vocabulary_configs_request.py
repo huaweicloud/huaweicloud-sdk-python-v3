@@ -31,7 +31,7 @@ class SaveTtscVocabularyConfigsRequest:
     }
 
     def __init__(self, x_request_id=None, x_app_user_id=None, vocabulary_id=None, body=None):
-        """SaveTtscVocabularyConfigsRequest
+        r"""SaveTtscVocabularyConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SaveTtscVocabularyConfigsRequest.
+        r"""Gets the x_request_id of this SaveTtscVocabularyConfigsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -74,7 +74,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SaveTtscVocabularyConfigsRequest.
+        r"""Sets the x_request_id of this SaveTtscVocabularyConfigsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -85,7 +85,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this SaveTtscVocabularyConfigsRequest.
+        r"""Gets the x_app_user_id of this SaveTtscVocabularyConfigsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -96,7 +96,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this SaveTtscVocabularyConfigsRequest.
+        r"""Sets the x_app_user_id of this SaveTtscVocabularyConfigsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -107,7 +107,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this SaveTtscVocabularyConfigsRequest.
+        r"""Gets the vocabulary_id of this SaveTtscVocabularyConfigsRequest.
 
         自定义读法id
 
@@ -118,7 +118,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this SaveTtscVocabularyConfigsRequest.
+        r"""Sets the vocabulary_id of this SaveTtscVocabularyConfigsRequest.
 
         自定义读法id
 
@@ -129,7 +129,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SaveTtscVocabularyConfigsRequest.
+        r"""Gets the body of this SaveTtscVocabularyConfigsRequest.
 
         :return: The body of this SaveTtscVocabularyConfigsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SaveTtscVocabularyConfigsRequestBody`
@@ -138,7 +138,7 @@ class SaveTtscVocabularyConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SaveTtscVocabularyConfigsRequest.
+        r"""Sets the body of this SaveTtscVocabularyConfigsRequest.
 
         :param body: The body of this SaveTtscVocabularyConfigsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.SaveTtscVocabularyConfigsRequestBody`

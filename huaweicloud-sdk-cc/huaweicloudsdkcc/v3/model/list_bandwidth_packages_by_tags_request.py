@@ -25,7 +25,7 @@ class ListBandwidthPackagesByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListBandwidthPackagesByTagsRequest
+        r"""ListBandwidthPackagesByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListBandwidthPackagesByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListBandwidthPackagesByTagsRequest.
+        r"""Gets the body of this ListBandwidthPackagesByTagsRequest.
 
         :return: The body of this ListBandwidthPackagesByTagsRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListBandwidthPackagesByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBandwidthPackagesByTagsRequest.
+        r"""Sets the body of this ListBandwidthPackagesByTagsRequest.
 
         :param body: The body of this ListBandwidthPackagesByTagsRequest.
         :type body: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesByTagsRequestBody`

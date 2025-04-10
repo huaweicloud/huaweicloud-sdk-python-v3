@@ -31,7 +31,7 @@ class ListServerHdaDetailsRequest:
     }
 
     def __init__(self, offset=None, limit=None, server_group_id=None, server_name=None):
-        """ListServerHdaDetailsRequest
+        r"""ListServerHdaDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListServerHdaDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServerHdaDetailsRequest.
+        r"""Gets the offset of this ListServerHdaDetailsRequest.
 
         查询的偏移量。
 
@@ -75,7 +75,7 @@ class ListServerHdaDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServerHdaDetailsRequest.
+        r"""Sets the offset of this ListServerHdaDetailsRequest.
 
         查询的偏移量。
 
@@ -86,7 +86,7 @@ class ListServerHdaDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServerHdaDetailsRequest.
+        r"""Gets the limit of this ListServerHdaDetailsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -97,7 +97,7 @@ class ListServerHdaDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServerHdaDetailsRequest.
+        r"""Sets the limit of this ListServerHdaDetailsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -108,7 +108,7 @@ class ListServerHdaDetailsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListServerHdaDetailsRequest.
+        r"""Gets the server_group_id of this ListServerHdaDetailsRequest.
 
         服务器组id。
 
@@ -119,7 +119,7 @@ class ListServerHdaDetailsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListServerHdaDetailsRequest.
+        r"""Sets the server_group_id of this ListServerHdaDetailsRequest.
 
         服务器组id。
 
@@ -130,7 +130,7 @@ class ListServerHdaDetailsRequest:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ListServerHdaDetailsRequest.
+        r"""Gets the server_name of this ListServerHdaDetailsRequest.
 
         服务器名称。
 
@@ -141,7 +141,7 @@ class ListServerHdaDetailsRequest:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ListServerHdaDetailsRequest.
+        r"""Sets the server_name of this ListServerHdaDetailsRequest.
 
         服务器名称。
 

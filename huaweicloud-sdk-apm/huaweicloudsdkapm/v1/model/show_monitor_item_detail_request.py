@@ -29,7 +29,7 @@ class ShowMonitorItemDetailRequest:
     }
 
     def __init__(self, monitor_item_id=None, env_id=None, x_business_id=None):
-        """ShowMonitorItemDetailRequest
+        r"""ShowMonitorItemDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowMonitorItemDetailRequest:
 
     @property
     def monitor_item_id(self):
-        """Gets the monitor_item_id of this ShowMonitorItemDetailRequest.
+        r"""Gets the monitor_item_id of this ShowMonitorItemDetailRequest.
 
         监控项ID
 
@@ -65,7 +65,7 @@ class ShowMonitorItemDetailRequest:
 
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
-        """Sets the monitor_item_id of this ShowMonitorItemDetailRequest.
+        r"""Sets the monitor_item_id of this ShowMonitorItemDetailRequest.
 
         监控项ID
 
@@ -76,7 +76,7 @@ class ShowMonitorItemDetailRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ShowMonitorItemDetailRequest.
+        r"""Gets the env_id of this ShowMonitorItemDetailRequest.
 
         环境ID
 
@@ -87,7 +87,7 @@ class ShowMonitorItemDetailRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ShowMonitorItemDetailRequest.
+        r"""Sets the env_id of this ShowMonitorItemDetailRequest.
 
         环境ID
 
@@ -98,7 +98,7 @@ class ShowMonitorItemDetailRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowMonitorItemDetailRequest.
+        r"""Gets the x_business_id of this ShowMonitorItemDetailRequest.
 
         :return: The x_business_id of this ShowMonitorItemDetailRequest.
         :rtype: int
@@ -107,7 +107,7 @@ class ShowMonitorItemDetailRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowMonitorItemDetailRequest.
+        r"""Sets the x_business_id of this ShowMonitorItemDetailRequest.
 
         :param x_business_id: The x_business_id of this ShowMonitorItemDetailRequest.
         :type x_business_id: int

@@ -27,7 +27,7 @@ class RulesLocal:
     }
 
     def __init__(self, user=None, group=None):
-        """RulesLocal
+        r"""RulesLocal
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RulesLocal:
 
     @property
     def user(self):
-        """Gets the user of this RulesLocal.
+        r"""Gets the user of this RulesLocal.
 
         :return: The user of this RulesLocal.
         :rtype: :class:`huaweicloudsdkiam.v3.RulesLocalUser`
@@ -59,7 +59,7 @@ class RulesLocal:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this RulesLocal.
+        r"""Sets the user of this RulesLocal.
 
         :param user: The user of this RulesLocal.
         :type user: :class:`huaweicloudsdkiam.v3.RulesLocalUser`
@@ -68,7 +68,7 @@ class RulesLocal:
 
     @property
     def group(self):
-        """Gets the group of this RulesLocal.
+        r"""Gets the group of this RulesLocal.
 
         :return: The group of this RulesLocal.
         :rtype: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`
@@ -77,7 +77,7 @@ class RulesLocal:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this RulesLocal.
+        r"""Sets the group of this RulesLocal.
 
         :param group: The group of this RulesLocal.
         :type group: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`

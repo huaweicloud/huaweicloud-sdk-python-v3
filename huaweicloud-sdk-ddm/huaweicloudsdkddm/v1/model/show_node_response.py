@@ -44,7 +44,7 @@ class ShowNodeResponse(SdkResponse):
     }
 
     def __init__(self, status=None, name=None, node_id=None, private_ip=None, floating_ip=None, server_id=None, subnet_name=None, datavolume_id=None, res_subnet_ip=None, systemvolume_id=None):
-        """ShowNodeResponse
+        r"""ShowNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNodeResponse.
+        r"""Gets the status of this ShowNodeResponse.
 
         节点状态。
 
@@ -118,7 +118,7 @@ class ShowNodeResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNodeResponse.
+        r"""Sets the status of this ShowNodeResponse.
 
         节点状态。
 
@@ -129,7 +129,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNodeResponse.
+        r"""Gets the name of this ShowNodeResponse.
 
         节点名称。
 
@@ -140,7 +140,7 @@ class ShowNodeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNodeResponse.
+        r"""Sets the name of this ShowNodeResponse.
 
         节点名称。
 
@@ -151,7 +151,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowNodeResponse.
+        r"""Gets the node_id of this ShowNodeResponse.
 
         节点id。
 
@@ -162,7 +162,7 @@ class ShowNodeResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowNodeResponse.
+        r"""Sets the node_id of this ShowNodeResponse.
 
         节点id。
 
@@ -173,7 +173,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ShowNodeResponse.
+        r"""Gets the private_ip of this ShowNodeResponse.
 
         节点私有ip。
 
@@ -184,7 +184,7 @@ class ShowNodeResponse(SdkResponse):
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ShowNodeResponse.
+        r"""Sets the private_ip of this ShowNodeResponse.
 
         节点私有ip。
 
@@ -195,7 +195,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def floating_ip(self):
-        """Gets the floating_ip of this ShowNodeResponse.
+        r"""Gets the floating_ip of this ShowNodeResponse.
 
         节点浮动ip。
 
@@ -206,7 +206,7 @@ class ShowNodeResponse(SdkResponse):
 
     @floating_ip.setter
     def floating_ip(self, floating_ip):
-        """Sets the floating_ip of this ShowNodeResponse.
+        r"""Sets the floating_ip of this ShowNodeResponse.
 
         节点浮动ip。
 
@@ -217,7 +217,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowNodeResponse.
+        r"""Gets the server_id of this ShowNodeResponse.
 
         虚机id。
 
@@ -228,7 +228,7 @@ class ShowNodeResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowNodeResponse.
+        r"""Sets the server_id of this ShowNodeResponse.
 
         虚机id。
 
@@ -239,7 +239,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this ShowNodeResponse.
+        r"""Gets the subnet_name of this ShowNodeResponse.
 
         子网名称。
 
@@ -250,7 +250,7 @@ class ShowNodeResponse(SdkResponse):
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ShowNodeResponse.
+        r"""Sets the subnet_name of this ShowNodeResponse.
 
         子网名称。
 
@@ -261,7 +261,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def datavolume_id(self):
-        """Gets the datavolume_id of this ShowNodeResponse.
+        r"""Gets the datavolume_id of this ShowNodeResponse.
 
         数据盘id。
 
@@ -272,7 +272,7 @@ class ShowNodeResponse(SdkResponse):
 
     @datavolume_id.setter
     def datavolume_id(self, datavolume_id):
-        """Sets the datavolume_id of this ShowNodeResponse.
+        r"""Sets the datavolume_id of this ShowNodeResponse.
 
         数据盘id。
 
@@ -283,7 +283,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def res_subnet_ip(self):
-        """Gets the res_subnet_ip of this ShowNodeResponse.
+        r"""Gets the res_subnet_ip of this ShowNodeResponse.
 
         资源子网ip。
 
@@ -294,7 +294,7 @@ class ShowNodeResponse(SdkResponse):
 
     @res_subnet_ip.setter
     def res_subnet_ip(self, res_subnet_ip):
-        """Sets the res_subnet_ip of this ShowNodeResponse.
+        r"""Sets the res_subnet_ip of this ShowNodeResponse.
 
         资源子网ip。
 
@@ -305,7 +305,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def systemvolume_id(self):
-        """Gets the systemvolume_id of this ShowNodeResponse.
+        r"""Gets the systemvolume_id of this ShowNodeResponse.
 
         系统盘id。
 
@@ -316,7 +316,7 @@ class ShowNodeResponse(SdkResponse):
 
     @systemvolume_id.setter
     def systemvolume_id(self, systemvolume_id):
-        """Sets the systemvolume_id of this ShowNodeResponse.
+        r"""Sets the systemvolume_id of this ShowNodeResponse.
 
         系统盘id。
 

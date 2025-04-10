@@ -28,7 +28,7 @@ class AddDeviceResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, password=None):
-        """AddDeviceResponse
+        r"""AddDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddDeviceResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this AddDeviceResponse.
+        r"""Gets the device_id of this AddDeviceResponse.
 
         设备ID
 
@@ -62,7 +62,7 @@ class AddDeviceResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this AddDeviceResponse.
+        r"""Sets the device_id of this AddDeviceResponse.
 
         设备ID
 
@@ -73,7 +73,7 @@ class AddDeviceResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this AddDeviceResponse.
+        r"""Gets the password of this AddDeviceResponse.
 
         设备密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；修改设备、查询设备及查询设备列表接口不返回该参数。
 
@@ -84,7 +84,7 @@ class AddDeviceResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this AddDeviceResponse.
+        r"""Sets the password of this AddDeviceResponse.
 
         设备密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；修改设备、查询设备及查询设备列表接口不返回该参数。
 

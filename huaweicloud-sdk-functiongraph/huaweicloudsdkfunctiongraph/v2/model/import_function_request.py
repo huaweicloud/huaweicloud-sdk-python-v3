@@ -25,7 +25,7 @@ class ImportFunctionRequest:
     }
 
     def __init__(self, body=None):
-        """ImportFunctionRequest
+        r"""ImportFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportFunctionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportFunctionRequest.
+        r"""Gets the body of this ImportFunctionRequest.
 
         :return: The body of this ImportFunctionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequestBody`
@@ -52,7 +52,7 @@ class ImportFunctionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportFunctionRequest.
+        r"""Sets the body of this ImportFunctionRequest.
 
         :param body: The body of this ImportFunctionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequestBody`

@@ -25,7 +25,7 @@ class ShowControlOperateRequest:
     }
 
     def __init__(self, operation_control_status_id=None):
-        """ShowControlOperateRequest
+        r"""ShowControlOperateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowControlOperateRequest:
 
     @property
     def operation_control_status_id(self):
-        """Gets the operation_control_status_id of this ShowControlOperateRequest.
+        r"""Gets the operation_control_status_id of this ShowControlOperateRequest.
 
         操作控制策略的请求ID。
 
@@ -53,7 +53,7 @@ class ShowControlOperateRequest:
 
     @operation_control_status_id.setter
     def operation_control_status_id(self, operation_control_status_id):
-        """Sets the operation_control_status_id of this ShowControlOperateRequest.
+        r"""Sets the operation_control_status_id of this ShowControlOperateRequest.
 
         操作控制策略的请求ID。
 

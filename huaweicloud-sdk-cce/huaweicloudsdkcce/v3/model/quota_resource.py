@@ -35,7 +35,7 @@ class QuotaResource:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None, region_id=None, availability_zone_id=None):
-        """QuotaResource
+        r"""QuotaResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QuotaResource:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this QuotaResource.
+        r"""Gets the quota_key of this QuotaResource.
 
         资源类型
 
@@ -89,7 +89,7 @@ class QuotaResource:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this QuotaResource.
+        r"""Sets the quota_key of this QuotaResource.
 
         资源类型
 
@@ -100,7 +100,7 @@ class QuotaResource:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this QuotaResource.
+        r"""Gets the quota_limit of this QuotaResource.
 
         配额值
 
@@ -111,7 +111,7 @@ class QuotaResource:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this QuotaResource.
+        r"""Sets the quota_limit of this QuotaResource.
 
         配额值
 
@@ -122,7 +122,7 @@ class QuotaResource:
 
     @property
     def used(self):
-        """Gets the used of this QuotaResource.
+        r"""Gets the used of this QuotaResource.
 
         已创建的资源个数
 
@@ -133,7 +133,7 @@ class QuotaResource:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaResource.
+        r"""Sets the used of this QuotaResource.
 
         已创建的资源个数
 
@@ -144,7 +144,7 @@ class QuotaResource:
 
     @property
     def unit(self):
-        """Gets the unit of this QuotaResource.
+        r"""Gets the unit of this QuotaResource.
 
         单位
 
@@ -155,7 +155,7 @@ class QuotaResource:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QuotaResource.
+        r"""Sets the unit of this QuotaResource.
 
         单位
 
@@ -166,7 +166,7 @@ class QuotaResource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this QuotaResource.
+        r"""Gets the region_id of this QuotaResource.
 
         局点ID。若资源不涉及此参数，则不返回该参数。
 
@@ -177,7 +177,7 @@ class QuotaResource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this QuotaResource.
+        r"""Sets the region_id of this QuotaResource.
 
         局点ID。若资源不涉及此参数，则不返回该参数。
 
@@ -188,7 +188,7 @@ class QuotaResource:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this QuotaResource.
+        r"""Gets the availability_zone_id of this QuotaResource.
 
         可用区ID。若资源不涉及此参数，则不返回该参数。
 
@@ -199,7 +199,7 @@ class QuotaResource:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this QuotaResource.
+        r"""Sets the availability_zone_id of this QuotaResource.
 
         可用区ID。若资源不涉及此参数，则不返回该参数。
 

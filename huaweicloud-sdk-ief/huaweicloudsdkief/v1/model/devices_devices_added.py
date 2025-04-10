@@ -29,7 +29,7 @@ class DevicesDevicesAdded:
     }
 
     def __init__(self, relation=None, comment=None, device_ids=None):
-        """DevicesDevicesAdded
+        r"""DevicesDevicesAdded
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DevicesDevicesAdded:
 
     @property
     def relation(self):
-        """Gets the relation of this DevicesDevicesAdded.
+        r"""Gets the relation of this DevicesDevicesAdded.
 
         终端设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -67,7 +67,7 @@ class DevicesDevicesAdded:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this DevicesDevicesAdded.
+        r"""Sets the relation of this DevicesDevicesAdded.
 
         终端设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -78,7 +78,7 @@ class DevicesDevicesAdded:
 
     @property
     def comment(self):
-        """Gets the comment of this DevicesDevicesAdded.
+        r"""Gets the comment of this DevicesDevicesAdded.
 
         终端设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -89,7 +89,7 @@ class DevicesDevicesAdded:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this DevicesDevicesAdded.
+        r"""Sets the comment of this DevicesDevicesAdded.
 
         终端设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -100,7 +100,7 @@ class DevicesDevicesAdded:
 
     @property
     def device_ids(self):
-        """Gets the device_ids of this DevicesDevicesAdded.
+        r"""Gets the device_ids of this DevicesDevicesAdded.
 
         终端设备ID列表
 
@@ -111,7 +111,7 @@ class DevicesDevicesAdded:
 
     @device_ids.setter
     def device_ids(self, device_ids):
-        """Sets the device_ids of this DevicesDevicesAdded.
+        r"""Sets the device_ids of this DevicesDevicesAdded.
 
         终端设备ID列表
 

@@ -45,7 +45,7 @@ class NodeContentCompareDetailResult:
     }
 
     def __init__(self, source_db=None, target_db=None, source_table_name=None, target_table_name=None, source_row_num=None, target_row_num=None, difference_row_num=None, line_compare_result=None, content_compare_result=None, message=None, compare_line_config_filter=None):
-        """NodeContentCompareDetailResult
+        r"""NodeContentCompareDetailResult
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def source_db(self):
-        """Gets the source_db of this NodeContentCompareDetailResult.
+        r"""Gets the source_db of this NodeContentCompareDetailResult.
 
         源库名称。
 
@@ -124,7 +124,7 @@ class NodeContentCompareDetailResult:
 
     @source_db.setter
     def source_db(self, source_db):
-        """Sets the source_db of this NodeContentCompareDetailResult.
+        r"""Sets the source_db of this NodeContentCompareDetailResult.
 
         源库名称。
 
@@ -135,7 +135,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def target_db(self):
-        """Gets the target_db of this NodeContentCompareDetailResult.
+        r"""Gets the target_db of this NodeContentCompareDetailResult.
 
         目标库名称。
 
@@ -146,7 +146,7 @@ class NodeContentCompareDetailResult:
 
     @target_db.setter
     def target_db(self, target_db):
-        """Sets the target_db of this NodeContentCompareDetailResult.
+        r"""Sets the target_db of this NodeContentCompareDetailResult.
 
         目标库名称。
 
@@ -157,7 +157,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this NodeContentCompareDetailResult.
+        r"""Gets the source_table_name of this NodeContentCompareDetailResult.
 
         源库的表名称。
 
@@ -168,7 +168,7 @@ class NodeContentCompareDetailResult:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this NodeContentCompareDetailResult.
+        r"""Sets the source_table_name of this NodeContentCompareDetailResult.
 
         源库的表名称。
 
@@ -179,7 +179,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this NodeContentCompareDetailResult.
+        r"""Gets the target_table_name of this NodeContentCompareDetailResult.
 
         目标库名称。
 
@@ -190,7 +190,7 @@ class NodeContentCompareDetailResult:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this NodeContentCompareDetailResult.
+        r"""Sets the target_table_name of this NodeContentCompareDetailResult.
 
         目标库名称。
 
@@ -201,7 +201,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def source_row_num(self):
-        """Gets the source_row_num of this NodeContentCompareDetailResult.
+        r"""Gets the source_row_num of this NodeContentCompareDetailResult.
 
         源库表行数。
 
@@ -212,7 +212,7 @@ class NodeContentCompareDetailResult:
 
     @source_row_num.setter
     def source_row_num(self, source_row_num):
-        """Sets the source_row_num of this NodeContentCompareDetailResult.
+        r"""Sets the source_row_num of this NodeContentCompareDetailResult.
 
         源库表行数。
 
@@ -223,7 +223,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def target_row_num(self):
-        """Gets the target_row_num of this NodeContentCompareDetailResult.
+        r"""Gets the target_row_num of this NodeContentCompareDetailResult.
 
         目标库表行数。
 
@@ -234,7 +234,7 @@ class NodeContentCompareDetailResult:
 
     @target_row_num.setter
     def target_row_num(self, target_row_num):
-        """Sets the target_row_num of this NodeContentCompareDetailResult.
+        r"""Sets the target_row_num of this NodeContentCompareDetailResult.
 
         目标库表行数。
 
@@ -245,7 +245,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def difference_row_num(self):
-        """Gets the difference_row_num of this NodeContentCompareDetailResult.
+        r"""Gets the difference_row_num of this NodeContentCompareDetailResult.
 
         源库的表和目标库的表的差异值。
 
@@ -256,7 +256,7 @@ class NodeContentCompareDetailResult:
 
     @difference_row_num.setter
     def difference_row_num(self, difference_row_num):
-        """Sets the difference_row_num of this NodeContentCompareDetailResult.
+        r"""Sets the difference_row_num of this NodeContentCompareDetailResult.
 
         源库的表和目标库的表的差异值。
 
@@ -267,7 +267,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def line_compare_result(self):
-        """Gets the line_compare_result of this NodeContentCompareDetailResult.
+        r"""Gets the line_compare_result of this NodeContentCompareDetailResult.
 
         行对比结果。 - true：一致 - false：不一致
 
@@ -278,7 +278,7 @@ class NodeContentCompareDetailResult:
 
     @line_compare_result.setter
     def line_compare_result(self, line_compare_result):
-        """Sets the line_compare_result of this NodeContentCompareDetailResult.
+        r"""Sets the line_compare_result of this NodeContentCompareDetailResult.
 
         行对比结果。 - true：一致 - false：不一致
 
@@ -289,7 +289,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def content_compare_result(self):
-        """Gets the content_compare_result of this NodeContentCompareDetailResult.
+        r"""Gets the content_compare_result of this NodeContentCompareDetailResult.
 
         内容对比结果。 - true：一致 - false：不一致
 
@@ -300,7 +300,7 @@ class NodeContentCompareDetailResult:
 
     @content_compare_result.setter
     def content_compare_result(self, content_compare_result):
-        """Sets the content_compare_result of this NodeContentCompareDetailResult.
+        r"""Sets the content_compare_result of this NodeContentCompareDetailResult.
 
         内容对比结果。 - true：一致 - false：不一致
 
@@ -311,7 +311,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def message(self):
-        """Gets the message of this NodeContentCompareDetailResult.
+        r"""Gets the message of this NodeContentCompareDetailResult.
 
         附加信息。
 
@@ -322,7 +322,7 @@ class NodeContentCompareDetailResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this NodeContentCompareDetailResult.
+        r"""Sets the message of this NodeContentCompareDetailResult.
 
         附加信息。
 
@@ -333,7 +333,7 @@ class NodeContentCompareDetailResult:
 
     @property
     def compare_line_config_filter(self):
-        """Gets the compare_line_config_filter of this NodeContentCompareDetailResult.
+        r"""Gets the compare_line_config_filter of this NodeContentCompareDetailResult.
 
         行过滤配置条件
 
@@ -344,7 +344,7 @@ class NodeContentCompareDetailResult:
 
     @compare_line_config_filter.setter
     def compare_line_config_filter(self, compare_line_config_filter):
-        """Sets the compare_line_config_filter of this NodeContentCompareDetailResult.
+        r"""Sets the compare_line_config_filter of this NodeContentCompareDetailResult.
 
         行过滤配置条件
 

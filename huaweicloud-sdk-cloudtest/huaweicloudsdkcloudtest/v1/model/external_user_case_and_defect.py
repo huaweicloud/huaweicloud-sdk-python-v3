@@ -33,7 +33,7 @@ class ExternalUserCaseAndDefect:
     }
 
     def __init__(self, creator=None, defect_count=None, defect_ids=None, testcase_id=None, branch_id=None):
-        """ExternalUserCaseAndDefect
+        r"""ExternalUserCaseAndDefect
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExternalUserCaseAndDefect:
 
     @property
     def creator(self):
-        """Gets the creator of this ExternalUserCaseAndDefect.
+        r"""Gets the creator of this ExternalUserCaseAndDefect.
 
         :return: The creator of this ExternalUserCaseAndDefect.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -80,7 +80,7 @@ class ExternalUserCaseAndDefect:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ExternalUserCaseAndDefect.
+        r"""Sets the creator of this ExternalUserCaseAndDefect.
 
         :param creator: The creator of this ExternalUserCaseAndDefect.
         :type creator: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -89,7 +89,7 @@ class ExternalUserCaseAndDefect:
 
     @property
     def defect_count(self):
-        """Gets the defect_count of this ExternalUserCaseAndDefect.
+        r"""Gets the defect_count of this ExternalUserCaseAndDefect.
 
         缺陷数
 
@@ -100,7 +100,7 @@ class ExternalUserCaseAndDefect:
 
     @defect_count.setter
     def defect_count(self, defect_count):
-        """Sets the defect_count of this ExternalUserCaseAndDefect.
+        r"""Sets the defect_count of this ExternalUserCaseAndDefect.
 
         缺陷数
 
@@ -111,7 +111,7 @@ class ExternalUserCaseAndDefect:
 
     @property
     def defect_ids(self):
-        """Gets the defect_ids of this ExternalUserCaseAndDefect.
+        r"""Gets the defect_ids of this ExternalUserCaseAndDefect.
 
         缺陷ID列表
 
@@ -122,7 +122,7 @@ class ExternalUserCaseAndDefect:
 
     @defect_ids.setter
     def defect_ids(self, defect_ids):
-        """Sets the defect_ids of this ExternalUserCaseAndDefect.
+        r"""Sets the defect_ids of this ExternalUserCaseAndDefect.
 
         缺陷ID列表
 
@@ -133,7 +133,7 @@ class ExternalUserCaseAndDefect:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ExternalUserCaseAndDefect.
+        r"""Gets the testcase_id of this ExternalUserCaseAndDefect.
 
         用例ID
 
@@ -144,7 +144,7 @@ class ExternalUserCaseAndDefect:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ExternalUserCaseAndDefect.
+        r"""Sets the testcase_id of this ExternalUserCaseAndDefect.
 
         用例ID
 
@@ -155,7 +155,7 @@ class ExternalUserCaseAndDefect:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this ExternalUserCaseAndDefect.
+        r"""Gets the branch_id of this ExternalUserCaseAndDefect.
 
         分支ID
 
@@ -166,7 +166,7 @@ class ExternalUserCaseAndDefect:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this ExternalUserCaseAndDefect.
+        r"""Sets the branch_id of this ExternalUserCaseAndDefect.
 
         分支ID
 

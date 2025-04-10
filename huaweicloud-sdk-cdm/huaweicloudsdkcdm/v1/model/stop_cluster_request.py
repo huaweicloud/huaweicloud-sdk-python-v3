@@ -27,7 +27,7 @@ class StopClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StopClusterRequest
+        r"""StopClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopClusterRequest.
+        r"""Gets the cluster_id of this StopClusterRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class StopClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopClusterRequest.
+        r"""Sets the cluster_id of this StopClusterRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class StopClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopClusterRequest.
+        r"""Gets the body of this StopClusterRequest.
 
         :return: The body of this StopClusterRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReq`
@@ -80,7 +80,7 @@ class StopClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopClusterRequest.
+        r"""Sets the body of this StopClusterRequest.
 
         :param body: The body of this StopClusterRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReq`

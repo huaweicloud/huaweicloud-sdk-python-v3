@@ -33,7 +33,7 @@ class NodePoolNodeAutoscaling:
     }
 
     def __init__(self, enable=None, min_node_count=None, max_node_count=None, scale_down_cooldown_time=None, priority=None):
-        """NodePoolNodeAutoscaling
+        r"""NodePoolNodeAutoscaling
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NodePoolNodeAutoscaling:
 
     @property
     def enable(self):
-        """Gets the enable of this NodePoolNodeAutoscaling.
+        r"""Gets the enable of this NodePoolNodeAutoscaling.
 
         是否开启自动扩缩容
 
@@ -82,7 +82,7 @@ class NodePoolNodeAutoscaling:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this NodePoolNodeAutoscaling.
+        r"""Sets the enable of this NodePoolNodeAutoscaling.
 
         是否开启自动扩缩容
 
@@ -93,7 +93,7 @@ class NodePoolNodeAutoscaling:
 
     @property
     def min_node_count(self):
-        """Gets the min_node_count of this NodePoolNodeAutoscaling.
+        r"""Gets the min_node_count of this NodePoolNodeAutoscaling.
 
         若开启自动扩缩容，最小能缩容的节点个数。不可大于集群规格所允许的节点上限
 
@@ -104,7 +104,7 @@ class NodePoolNodeAutoscaling:
 
     @min_node_count.setter
     def min_node_count(self, min_node_count):
-        """Sets the min_node_count of this NodePoolNodeAutoscaling.
+        r"""Sets the min_node_count of this NodePoolNodeAutoscaling.
 
         若开启自动扩缩容，最小能缩容的节点个数。不可大于集群规格所允许的节点上限
 
@@ -115,7 +115,7 @@ class NodePoolNodeAutoscaling:
 
     @property
     def max_node_count(self):
-        """Gets the max_node_count of this NodePoolNodeAutoscaling.
+        r"""Gets the max_node_count of this NodePoolNodeAutoscaling.
 
         若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
 
@@ -126,7 +126,7 @@ class NodePoolNodeAutoscaling:
 
     @max_node_count.setter
     def max_node_count(self, max_node_count):
-        """Sets the max_node_count of this NodePoolNodeAutoscaling.
+        r"""Sets the max_node_count of this NodePoolNodeAutoscaling.
 
         若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
 
@@ -137,7 +137,7 @@ class NodePoolNodeAutoscaling:
 
     @property
     def scale_down_cooldown_time(self):
-        """Gets the scale_down_cooldown_time of this NodePoolNodeAutoscaling.
+        r"""Gets the scale_down_cooldown_time of this NodePoolNodeAutoscaling.
 
         节点保留时间，单位为分钟，扩容出来的节点在这个时间内不会被缩掉
 
@@ -148,7 +148,7 @@ class NodePoolNodeAutoscaling:
 
     @scale_down_cooldown_time.setter
     def scale_down_cooldown_time(self, scale_down_cooldown_time):
-        """Sets the scale_down_cooldown_time of this NodePoolNodeAutoscaling.
+        r"""Sets the scale_down_cooldown_time of this NodePoolNodeAutoscaling.
 
         节点保留时间，单位为分钟，扩容出来的节点在这个时间内不会被缩掉
 
@@ -159,7 +159,7 @@ class NodePoolNodeAutoscaling:
 
     @property
     def priority(self):
-        """Gets the priority of this NodePoolNodeAutoscaling.
+        r"""Gets the priority of this NodePoolNodeAutoscaling.
 
         节点池权重，更高的权重在扩容时拥有更高的优先级
 
@@ -170,7 +170,7 @@ class NodePoolNodeAutoscaling:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this NodePoolNodeAutoscaling.
+        r"""Sets the priority of this NodePoolNodeAutoscaling.
 
         节点池权重，更高的权重在扩容时拥有更高的优先级
 

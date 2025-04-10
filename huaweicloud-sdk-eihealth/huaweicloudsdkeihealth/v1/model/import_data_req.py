@@ -31,7 +31,7 @@ class ImportDataReq:
     }
 
     def __init__(self, overwrite=None, source_project_id=None, sub_paths=None, target_folder=None):
-        """ImportDataReq
+        r"""ImportDataReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ImportDataReq:
 
     @property
     def overwrite(self):
-        """Gets the overwrite of this ImportDataReq.
+        r"""Gets the overwrite of this ImportDataReq.
 
         执行策略（true：全部覆盖，false：全部跳过，默认为true）
 
@@ -73,7 +73,7 @@ class ImportDataReq:
 
     @overwrite.setter
     def overwrite(self, overwrite):
-        """Sets the overwrite of this ImportDataReq.
+        r"""Sets the overwrite of this ImportDataReq.
 
         执行策略（true：全部覆盖，false：全部跳过，默认为true）
 
@@ -84,7 +84,7 @@ class ImportDataReq:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ImportDataReq.
+        r"""Gets the source_project_id of this ImportDataReq.
 
         源项目ID
 
@@ -95,7 +95,7 @@ class ImportDataReq:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ImportDataReq.
+        r"""Sets the source_project_id of this ImportDataReq.
 
         源项目ID
 
@@ -106,7 +106,7 @@ class ImportDataReq:
 
     @property
     def sub_paths(self):
-        """Gets the sub_paths of this ImportDataReq.
+        r"""Gets the sub_paths of this ImportDataReq.
 
         导入路径集
 
@@ -117,7 +117,7 @@ class ImportDataReq:
 
     @sub_paths.setter
     def sub_paths(self, sub_paths):
-        """Sets the sub_paths of this ImportDataReq.
+        r"""Sets the sub_paths of this ImportDataReq.
 
         导入路径集
 
@@ -128,7 +128,7 @@ class ImportDataReq:
 
     @property
     def target_folder(self):
-        """Gets the target_folder of this ImportDataReq.
+        r"""Gets the target_folder of this ImportDataReq.
 
         目标文件夹
 
@@ -139,7 +139,7 @@ class ImportDataReq:
 
     @target_folder.setter
     def target_folder(self, target_folder):
-        """Sets the target_folder of this ImportDataReq.
+        r"""Sets the target_folder of this ImportDataReq.
 
         目标文件夹
 

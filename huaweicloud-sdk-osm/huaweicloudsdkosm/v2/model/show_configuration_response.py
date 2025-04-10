@@ -32,7 +32,7 @@ class ShowConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, config_key=None, config_value=None, error_code=None, error_msg=None):
-        """ShowConfigurationResponse
+        r"""ShowConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @property
     def config_key(self):
-        """Gets the config_key of this ShowConfigurationResponse.
+        r"""Gets the config_key of this ShowConfigurationResponse.
 
         配置项键
 
@@ -76,7 +76,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @config_key.setter
     def config_key(self, config_key):
-        """Sets the config_key of this ShowConfigurationResponse.
+        r"""Sets the config_key of this ShowConfigurationResponse.
 
         配置项键
 
@@ -87,7 +87,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @property
     def config_value(self):
-        """Gets the config_value of this ShowConfigurationResponse.
+        r"""Gets the config_value of this ShowConfigurationResponse.
 
         配置项值
 
@@ -98,7 +98,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this ShowConfigurationResponse.
+        r"""Sets the config_value of this ShowConfigurationResponse.
 
         配置项值
 
@@ -109,7 +109,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowConfigurationResponse.
+        r"""Gets the error_code of this ShowConfigurationResponse.
 
         错误码
 
@@ -120,7 +120,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowConfigurationResponse.
+        r"""Sets the error_code of this ShowConfigurationResponse.
 
         错误码
 
@@ -131,7 +131,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowConfigurationResponse.
+        r"""Gets the error_msg of this ShowConfigurationResponse.
 
         错误描述
 
@@ -142,7 +142,7 @@ class ShowConfigurationResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowConfigurationResponse.
+        r"""Sets the error_msg of this ShowConfigurationResponse.
 
         错误描述
 

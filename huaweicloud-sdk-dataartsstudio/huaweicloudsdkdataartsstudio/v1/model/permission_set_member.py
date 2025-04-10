@@ -53,7 +53,7 @@ class PermissionSetMember:
     }
 
     def __init__(self, id=None, permission_set_id=None, project_id=None, instance_id=None, member_type=None, member_id=None, member_name=None, member_status=None, workspace=None, cluster_type=None, cluster_id=None, cluster_name=None, create_time=None, create_user=None, deadline=None):
-        """PermissionSetMember
+        r"""PermissionSetMember
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class PermissionSetMember:
 
     @property
     def id(self):
-        """Gets the id of this PermissionSetMember.
+        r"""Gets the id of this PermissionSetMember.
 
         id
 
@@ -152,7 +152,7 @@ class PermissionSetMember:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionSetMember.
+        r"""Sets the id of this PermissionSetMember.
 
         id
 
@@ -163,7 +163,7 @@ class PermissionSetMember:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PermissionSetMember.
+        r"""Gets the permission_set_id of this PermissionSetMember.
 
         权限集id
 
@@ -174,7 +174,7 @@ class PermissionSetMember:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PermissionSetMember.
+        r"""Sets the permission_set_id of this PermissionSetMember.
 
         权限集id
 
@@ -185,7 +185,7 @@ class PermissionSetMember:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PermissionSetMember.
+        r"""Gets the project_id of this PermissionSetMember.
 
         项目id
 
@@ -196,7 +196,7 @@ class PermissionSetMember:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PermissionSetMember.
+        r"""Sets the project_id of this PermissionSetMember.
 
         项目id
 
@@ -207,7 +207,7 @@ class PermissionSetMember:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PermissionSetMember.
+        r"""Gets the instance_id of this PermissionSetMember.
 
         实例id
 
@@ -218,7 +218,7 @@ class PermissionSetMember:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PermissionSetMember.
+        r"""Sets the instance_id of this PermissionSetMember.
 
         实例id
 
@@ -229,7 +229,7 @@ class PermissionSetMember:
 
     @property
     def member_type(self):
-        """Gets the member_type of this PermissionSetMember.
+        r"""Gets the member_type of this PermissionSetMember.
 
         成员类型, 用户/用户组/工作空间角色(废弃)/集群角色, USER, USER_GROUP, WORKSPACE_ROLE, CLUSTER_ROLE
 
@@ -240,7 +240,7 @@ class PermissionSetMember:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this PermissionSetMember.
+        r"""Sets the member_type of this PermissionSetMember.
 
         成员类型, 用户/用户组/工作空间角色(废弃)/集群角色, USER, USER_GROUP, WORKSPACE_ROLE, CLUSTER_ROLE
 
@@ -251,7 +251,7 @@ class PermissionSetMember:
 
     @property
     def member_id(self):
-        """Gets the member_id of this PermissionSetMember.
+        r"""Gets the member_id of this PermissionSetMember.
 
         成员id
 
@@ -262,7 +262,7 @@ class PermissionSetMember:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this PermissionSetMember.
+        r"""Sets the member_id of this PermissionSetMember.
 
         成员id
 
@@ -273,7 +273,7 @@ class PermissionSetMember:
 
     @property
     def member_name(self):
-        """Gets the member_name of this PermissionSetMember.
+        r"""Gets the member_name of this PermissionSetMember.
 
         成员名称
 
@@ -284,7 +284,7 @@ class PermissionSetMember:
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this PermissionSetMember.
+        r"""Sets the member_name of this PermissionSetMember.
 
         成员名称
 
@@ -295,7 +295,7 @@ class PermissionSetMember:
 
     @property
     def member_status(self):
-        """Gets the member_status of this PermissionSetMember.
+        r"""Gets the member_status of this PermissionSetMember.
 
         成员状态, NORMAL, UNFINISHED
 
@@ -306,7 +306,7 @@ class PermissionSetMember:
 
     @member_status.setter
     def member_status(self, member_status):
-        """Sets the member_status of this PermissionSetMember.
+        r"""Sets the member_status of this PermissionSetMember.
 
         成员状态, NORMAL, UNFINISHED
 
@@ -317,7 +317,7 @@ class PermissionSetMember:
 
     @property
     def workspace(self):
-        """Gets the workspace of this PermissionSetMember.
+        r"""Gets the workspace of this PermissionSetMember.
 
         工作空间(仅工作空间角色需要)
 
@@ -328,7 +328,7 @@ class PermissionSetMember:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this PermissionSetMember.
+        r"""Sets the workspace of this PermissionSetMember.
 
         工作空间(仅工作空间角色需要)
 
@@ -339,7 +339,7 @@ class PermissionSetMember:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this PermissionSetMember.
+        r"""Gets the cluster_type of this PermissionSetMember.
 
         集群类型(仅集群角色需要), MRS, DWS, DLI
 
@@ -350,7 +350,7 @@ class PermissionSetMember:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this PermissionSetMember.
+        r"""Sets the cluster_type of this PermissionSetMember.
 
         集群类型(仅集群角色需要), MRS, DWS, DLI
 
@@ -361,7 +361,7 @@ class PermissionSetMember:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PermissionSetMember.
+        r"""Gets the cluster_id of this PermissionSetMember.
 
         集群id(仅集群角色需要)
 
@@ -372,7 +372,7 @@ class PermissionSetMember:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PermissionSetMember.
+        r"""Sets the cluster_id of this PermissionSetMember.
 
         集群id(仅集群角色需要)
 
@@ -383,7 +383,7 @@ class PermissionSetMember:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this PermissionSetMember.
+        r"""Gets the cluster_name of this PermissionSetMember.
 
         集群名称(仅集群角色需要)
 
@@ -394,7 +394,7 @@ class PermissionSetMember:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this PermissionSetMember.
+        r"""Sets the cluster_name of this PermissionSetMember.
 
         集群名称(仅集群角色需要)
 
@@ -405,7 +405,7 @@ class PermissionSetMember:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PermissionSetMember.
+        r"""Gets the create_time of this PermissionSetMember.
 
         创建时间
 
@@ -416,7 +416,7 @@ class PermissionSetMember:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PermissionSetMember.
+        r"""Sets the create_time of this PermissionSetMember.
 
         创建时间
 
@@ -427,7 +427,7 @@ class PermissionSetMember:
 
     @property
     def create_user(self):
-        """Gets the create_user of this PermissionSetMember.
+        r"""Gets the create_user of this PermissionSetMember.
 
         创建者
 
@@ -438,7 +438,7 @@ class PermissionSetMember:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this PermissionSetMember.
+        r"""Sets the create_user of this PermissionSetMember.
 
         创建者
 
@@ -449,7 +449,7 @@ class PermissionSetMember:
 
     @property
     def deadline(self):
-        """Gets the deadline of this PermissionSetMember.
+        r"""Gets the deadline of this PermissionSetMember.
 
         到期时间
 
@@ -460,7 +460,7 @@ class PermissionSetMember:
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this PermissionSetMember.
+        r"""Sets the deadline of this PermissionSetMember.
 
         到期时间
 

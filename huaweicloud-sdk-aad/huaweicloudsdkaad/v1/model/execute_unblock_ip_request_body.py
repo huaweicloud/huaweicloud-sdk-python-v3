@@ -27,7 +27,7 @@ class ExecuteUnblockIpRequestBody:
     }
 
     def __init__(self, ip=None, blocking_time=None):
-        """ExecuteUnblockIpRequestBody
+        r"""ExecuteUnblockIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteUnblockIpRequestBody:
 
     @property
     def ip(self):
-        """Gets the ip of this ExecuteUnblockIpRequestBody.
+        r"""Gets the ip of this ExecuteUnblockIpRequestBody.
 
         ip地址
 
@@ -60,7 +60,7 @@ class ExecuteUnblockIpRequestBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ExecuteUnblockIpRequestBody.
+        r"""Sets the ip of this ExecuteUnblockIpRequestBody.
 
         ip地址
 
@@ -71,7 +71,7 @@ class ExecuteUnblockIpRequestBody:
 
     @property
     def blocking_time(self):
-        """Gets the blocking_time of this ExecuteUnblockIpRequestBody.
+        r"""Gets the blocking_time of this ExecuteUnblockIpRequestBody.
 
         用于查询IP的封堵时间
 
@@ -82,7 +82,7 @@ class ExecuteUnblockIpRequestBody:
 
     @blocking_time.setter
     def blocking_time(self, blocking_time):
-        """Sets the blocking_time of this ExecuteUnblockIpRequestBody.
+        r"""Sets the blocking_time of this ExecuteUnblockIpRequestBody.
 
         用于查询IP的封堵时间
 

@@ -25,7 +25,7 @@ class CreateRoutetableRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRoutetableRequest
+        r"""CreateRoutetableRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRoutetableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRoutetableRequest.
+        r"""Gets the body of this CreateRoutetableRequest.
 
         :return: The body of this CreateRoutetableRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutetableRequestBody`
@@ -52,7 +52,7 @@ class CreateRoutetableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRoutetableRequest.
+        r"""Sets the body of this CreateRoutetableRequest.
 
         :param body: The body of this CreateRoutetableRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateRoutetableRequestBody`

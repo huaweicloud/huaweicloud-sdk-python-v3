@@ -25,7 +25,7 @@ class QueryDcDeviceRespDTO:
     }
 
     def __init__(self, device_id=None):
-        """QueryDcDeviceRespDTO
+        r"""QueryDcDeviceRespDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QueryDcDeviceRespDTO:
 
     @property
     def device_id(self):
-        """Gets the device_id of this QueryDcDeviceRespDTO.
+        r"""Gets the device_id of this QueryDcDeviceRespDTO.
 
         设备id
 
@@ -54,7 +54,7 @@ class QueryDcDeviceRespDTO:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this QueryDcDeviceRespDTO.
+        r"""Sets the device_id of this QueryDcDeviceRespDTO.
 
         设备id
 

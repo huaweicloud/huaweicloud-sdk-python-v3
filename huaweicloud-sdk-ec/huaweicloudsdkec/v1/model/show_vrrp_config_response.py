@@ -26,7 +26,7 @@ class ShowVrrpConfigResponse(SdkResponse):
     }
 
     def __init__(self, vrrp_configs=None):
-        """ShowVrrpConfigResponse
+        r"""ShowVrrpConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVrrpConfigResponse(SdkResponse):
 
     @property
     def vrrp_configs(self):
-        """Gets the vrrp_configs of this ShowVrrpConfigResponse.
+        r"""Gets the vrrp_configs of this ShowVrrpConfigResponse.
 
         :return: The vrrp_configs of this ShowVrrpConfigResponse.
         :rtype: list[:class:`huaweicloudsdkec.v1.VrrpConfigItem`]
@@ -53,7 +53,7 @@ class ShowVrrpConfigResponse(SdkResponse):
 
     @vrrp_configs.setter
     def vrrp_configs(self, vrrp_configs):
-        """Sets the vrrp_configs of this ShowVrrpConfigResponse.
+        r"""Sets the vrrp_configs of this ShowVrrpConfigResponse.
 
         :param vrrp_configs: The vrrp_configs of this ShowVrrpConfigResponse.
         :type vrrp_configs: list[:class:`huaweicloudsdkec.v1.VrrpConfigItem`]

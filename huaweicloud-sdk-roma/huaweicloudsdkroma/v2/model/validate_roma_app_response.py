@@ -30,7 +30,7 @@ class ValidateRomaAppResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None):
-        """ValidateRomaAppResponse
+        r"""ValidateRomaAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ValidateRomaAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ValidateRomaAppResponse.
+        r"""Gets the id of this ValidateRomaAppResponse.
 
         应用ID
 
@@ -69,7 +69,7 @@ class ValidateRomaAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ValidateRomaAppResponse.
+        r"""Sets the id of this ValidateRomaAppResponse.
 
         应用ID
 
@@ -80,7 +80,7 @@ class ValidateRomaAppResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ValidateRomaAppResponse.
+        r"""Gets the name of this ValidateRomaAppResponse.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -91,7 +91,7 @@ class ValidateRomaAppResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValidateRomaAppResponse.
+        r"""Sets the name of this ValidateRomaAppResponse.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -102,7 +102,7 @@ class ValidateRomaAppResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this ValidateRomaAppResponse.
+        r"""Gets the remark of this ValidateRomaAppResponse.
 
         应用描述
 
@@ -113,7 +113,7 @@ class ValidateRomaAppResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ValidateRomaAppResponse.
+        r"""Sets the remark of this ValidateRomaAppResponse.
 
         应用描述
 

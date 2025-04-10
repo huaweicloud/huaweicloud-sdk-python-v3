@@ -49,7 +49,7 @@ class StandElementValueVOList:
     }
 
     def __init__(self, values=None, id=None, directory_id=None, directory_path=None, row_id=None, status=None, approval_info=None, new_biz=None, from_public=None, create_by=None, update_by=None, create_time=None, update_time=None):
-        """StandElementValueVOList
+        r"""StandElementValueVOList
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class StandElementValueVOList:
 
     @property
     def values(self):
-        """Gets the values of this StandElementValueVOList.
+        r"""Gets the values of this StandElementValueVOList.
 
         属性信息。
 
@@ -136,7 +136,7 @@ class StandElementValueVOList:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this StandElementValueVOList.
+        r"""Sets the values of this StandElementValueVOList.
 
         属性信息。
 
@@ -147,7 +147,7 @@ class StandElementValueVOList:
 
     @property
     def id(self):
-        """Gets the id of this StandElementValueVOList.
+        r"""Gets the id of this StandElementValueVOList.
 
         数据标准的ID，ID字符串。
 
@@ -158,7 +158,7 @@ class StandElementValueVOList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StandElementValueVOList.
+        r"""Sets the id of this StandElementValueVOList.
 
         数据标准的ID，ID字符串。
 
@@ -169,7 +169,7 @@ class StandElementValueVOList:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this StandElementValueVOList.
+        r"""Gets the directory_id of this StandElementValueVOList.
 
         标准所属目录，ID字符串。
 
@@ -180,7 +180,7 @@ class StandElementValueVOList:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this StandElementValueVOList.
+        r"""Sets the directory_id of this StandElementValueVOList.
 
         标准所属目录，ID字符串。
 
@@ -191,7 +191,7 @@ class StandElementValueVOList:
 
     @property
     def directory_path(self):
-        """Gets the directory_path of this StandElementValueVOList.
+        r"""Gets the directory_path of this StandElementValueVOList.
 
         目录树。
 
@@ -202,7 +202,7 @@ class StandElementValueVOList:
 
     @directory_path.setter
     def directory_path(self, directory_path):
-        """Sets the directory_path of this StandElementValueVOList.
+        r"""Sets the directory_path of this StandElementValueVOList.
 
         目录树。
 
@@ -213,7 +213,7 @@ class StandElementValueVOList:
 
     @property
     def row_id(self):
-        """Gets the row_id of this StandElementValueVOList.
+        r"""Gets the row_id of this StandElementValueVOList.
 
         标准行的ID，ID字符串。
 
@@ -224,7 +224,7 @@ class StandElementValueVOList:
 
     @row_id.setter
     def row_id(self, row_id):
-        """Sets the row_id of this StandElementValueVOList.
+        r"""Sets the row_id of this StandElementValueVOList.
 
         标准行的ID，ID字符串。
 
@@ -235,7 +235,7 @@ class StandElementValueVOList:
 
     @property
     def status(self):
-        """Gets the status of this StandElementValueVOList.
+        r"""Gets the status of this StandElementValueVOList.
 
         :return: The status of this StandElementValueVOList.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -244,7 +244,7 @@ class StandElementValueVOList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StandElementValueVOList.
+        r"""Sets the status of this StandElementValueVOList.
 
         :param status: The status of this StandElementValueVOList.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -253,7 +253,7 @@ class StandElementValueVOList:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this StandElementValueVOList.
+        r"""Gets the approval_info of this StandElementValueVOList.
 
         :return: The approval_info of this StandElementValueVOList.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -262,7 +262,7 @@ class StandElementValueVOList:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this StandElementValueVOList.
+        r"""Sets the approval_info of this StandElementValueVOList.
 
         :param approval_info: The approval_info of this StandElementValueVOList.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -271,7 +271,7 @@ class StandElementValueVOList:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this StandElementValueVOList.
+        r"""Gets the new_biz of this StandElementValueVOList.
 
         :return: The new_biz of this StandElementValueVOList.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -280,7 +280,7 @@ class StandElementValueVOList:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this StandElementValueVOList.
+        r"""Sets the new_biz of this StandElementValueVOList.
 
         :param new_biz: The new_biz of this StandElementValueVOList.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -289,7 +289,7 @@ class StandElementValueVOList:
 
     @property
     def from_public(self):
-        """Gets the from_public of this StandElementValueVOList.
+        r"""Gets the from_public of this StandElementValueVOList.
 
         是否来自公共层。
 
@@ -300,7 +300,7 @@ class StandElementValueVOList:
 
     @from_public.setter
     def from_public(self, from_public):
-        """Sets the from_public of this StandElementValueVOList.
+        r"""Sets the from_public of this StandElementValueVOList.
 
         是否来自公共层。
 
@@ -311,7 +311,7 @@ class StandElementValueVOList:
 
     @property
     def create_by(self):
-        """Gets the create_by of this StandElementValueVOList.
+        r"""Gets the create_by of this StandElementValueVOList.
 
         创建人。
 
@@ -322,7 +322,7 @@ class StandElementValueVOList:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this StandElementValueVOList.
+        r"""Sets the create_by of this StandElementValueVOList.
 
         创建人。
 
@@ -333,7 +333,7 @@ class StandElementValueVOList:
 
     @property
     def update_by(self):
-        """Gets the update_by of this StandElementValueVOList.
+        r"""Gets the update_by of this StandElementValueVOList.
 
         更新人。
 
@@ -344,7 +344,7 @@ class StandElementValueVOList:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this StandElementValueVOList.
+        r"""Sets the update_by of this StandElementValueVOList.
 
         更新人。
 
@@ -355,7 +355,7 @@ class StandElementValueVOList:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StandElementValueVOList.
+        r"""Gets the create_time of this StandElementValueVOList.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -366,7 +366,7 @@ class StandElementValueVOList:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StandElementValueVOList.
+        r"""Sets the create_time of this StandElementValueVOList.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -377,7 +377,7 @@ class StandElementValueVOList:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StandElementValueVOList.
+        r"""Gets the update_time of this StandElementValueVOList.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -388,7 +388,7 @@ class StandElementValueVOList:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StandElementValueVOList.
+        r"""Sets the update_time of this StandElementValueVOList.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

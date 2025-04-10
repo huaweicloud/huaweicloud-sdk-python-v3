@@ -33,7 +33,7 @@ class NewCustomerV2:
     }
 
     def __init__(self, customer_name=None, mobile_phone=None, use_pri_mobile_phone=None, password=None, verification_code=None):
-        """NewCustomerV2
+        r"""NewCustomerV2
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class NewCustomerV2:
 
     @property
     def customer_name(self):
-        """Gets the customer_name of this NewCustomerV2.
+        r"""Gets the customer_name of this NewCustomerV2.
 
         企业子账号登录名。
 
@@ -80,7 +80,7 @@ class NewCustomerV2:
 
     @customer_name.setter
     def customer_name(self, customer_name):
-        """Sets the customer_name of this NewCustomerV2.
+        r"""Sets the customer_name of this NewCustomerV2.
 
         企业子账号登录名。
 
@@ -91,7 +91,7 @@ class NewCustomerV2:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this NewCustomerV2.
+        r"""Gets the mobile_phone of this NewCustomerV2.
 
         企业管理员的手机号码。如果use_pri_mobile_phone取值为Y，则这个参数无效，否则必选。
 
@@ -102,7 +102,7 @@ class NewCustomerV2:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this NewCustomerV2.
+        r"""Sets the mobile_phone of this NewCustomerV2.
 
         企业管理员的手机号码。如果use_pri_mobile_phone取值为Y，则这个参数无效，否则必选。
 
@@ -113,7 +113,7 @@ class NewCustomerV2:
 
     @property
     def use_pri_mobile_phone(self):
-        """Gets the use_pri_mobile_phone of this NewCustomerV2.
+        r"""Gets the use_pri_mobile_phone of this NewCustomerV2.
 
         是否使用企业主账号手机号码作为子账号手机号码： Y：是N：否（默认值） 当为Y时，mobile_phone输入无效。
 
@@ -124,7 +124,7 @@ class NewCustomerV2:
 
     @use_pri_mobile_phone.setter
     def use_pri_mobile_phone(self, use_pri_mobile_phone):
-        """Sets the use_pri_mobile_phone of this NewCustomerV2.
+        r"""Sets the use_pri_mobile_phone of this NewCustomerV2.
 
         是否使用企业主账号手机号码作为子账号手机号码： Y：是N：否（默认值） 当为Y时，mobile_phone输入无效。
 
@@ -135,7 +135,7 @@ class NewCustomerV2:
 
     @property
     def password(self):
-        """Gets the password of this NewCustomerV2.
+        r"""Gets the password of this NewCustomerV2.
 
         企业子账号的登录密码。
 
@@ -146,7 +146,7 @@ class NewCustomerV2:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this NewCustomerV2.
+        r"""Sets the password of this NewCustomerV2.
 
         企业子账号的登录密码。
 
@@ -157,7 +157,7 @@ class NewCustomerV2:
 
     @property
     def verification_code(self):
-        """Gets the verification_code of this NewCustomerV2.
+        r"""Gets the verification_code of this NewCustomerV2.
 
         验证码，只有输入企业子账号的手机号的情况下，才需要填写该字段。 具体请参见发送短信验证码。
 
@@ -168,7 +168,7 @@ class NewCustomerV2:
 
     @verification_code.setter
     def verification_code(self, verification_code):
-        """Sets the verification_code of this NewCustomerV2.
+        r"""Sets the verification_code of this NewCustomerV2.
 
         验证码，只有输入企业子账号的手机号的情况下，才需要填写该字段。 具体请参见发送短信验证码。
 

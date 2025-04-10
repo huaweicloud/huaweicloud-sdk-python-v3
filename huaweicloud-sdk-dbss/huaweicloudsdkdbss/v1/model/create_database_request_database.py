@@ -41,7 +41,7 @@ class CreateDatabaseRequestDatabase:
     }
 
     def __init__(self, db_classification=None, name=None, type=None, version=None, charset=None, ip=None, port=None, os=None, instance_name=None):
-        """CreateDatabaseRequestDatabase
+        r"""CreateDatabaseRequestDatabase
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def db_classification(self):
-        """Gets the db_classification of this CreateDatabaseRequestDatabase.
+        r"""Gets the db_classification of this CreateDatabaseRequestDatabase.
 
         数据库分类 - ECS:自建数据库
 
@@ -102,7 +102,7 @@ class CreateDatabaseRequestDatabase:
 
     @db_classification.setter
     def db_classification(self, db_classification):
-        """Sets the db_classification of this CreateDatabaseRequestDatabase.
+        r"""Sets the db_classification of this CreateDatabaseRequestDatabase.
 
         数据库分类 - ECS:自建数据库
 
@@ -113,7 +113,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseRequestDatabase.
+        r"""Gets the name of this CreateDatabaseRequestDatabase.
 
         数据库名称
 
@@ -124,7 +124,7 @@ class CreateDatabaseRequestDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseRequestDatabase.
+        r"""Sets the name of this CreateDatabaseRequestDatabase.
 
         数据库名称
 
@@ -135,7 +135,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def type(self):
-        """Gets the type of this CreateDatabaseRequestDatabase.
+        r"""Gets the type of this CreateDatabaseRequestDatabase.
 
         数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
 
@@ -146,7 +146,7 @@ class CreateDatabaseRequestDatabase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateDatabaseRequestDatabase.
+        r"""Sets the type of this CreateDatabaseRequestDatabase.
 
         数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
 
@@ -157,7 +157,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def version(self):
-        """Gets the version of this CreateDatabaseRequestDatabase.
+        r"""Gets the version of this CreateDatabaseRequestDatabase.
 
         数据库版本
 
@@ -168,7 +168,7 @@ class CreateDatabaseRequestDatabase:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateDatabaseRequestDatabase.
+        r"""Sets the version of this CreateDatabaseRequestDatabase.
 
         数据库版本
 
@@ -179,7 +179,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def charset(self):
-        """Gets the charset of this CreateDatabaseRequestDatabase.
+        r"""Gets the charset of this CreateDatabaseRequestDatabase.
 
         字符集。 - GBK - UTF8
 
@@ -190,7 +190,7 @@ class CreateDatabaseRequestDatabase:
 
     @charset.setter
     def charset(self, charset):
-        """Sets the charset of this CreateDatabaseRequestDatabase.
+        r"""Sets the charset of this CreateDatabaseRequestDatabase.
 
         字符集。 - GBK - UTF8
 
@@ -201,7 +201,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def ip(self):
-        """Gets the ip of this CreateDatabaseRequestDatabase.
+        r"""Gets the ip of this CreateDatabaseRequestDatabase.
 
         数据库IP
 
@@ -212,7 +212,7 @@ class CreateDatabaseRequestDatabase:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CreateDatabaseRequestDatabase.
+        r"""Sets the ip of this CreateDatabaseRequestDatabase.
 
         数据库IP
 
@@ -223,7 +223,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def port(self):
-        """Gets the port of this CreateDatabaseRequestDatabase.
+        r"""Gets the port of this CreateDatabaseRequestDatabase.
 
         数据库端口
 
@@ -234,7 +234,7 @@ class CreateDatabaseRequestDatabase:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateDatabaseRequestDatabase.
+        r"""Sets the port of this CreateDatabaseRequestDatabase.
 
         数据库端口
 
@@ -245,7 +245,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def os(self):
-        """Gets the os of this CreateDatabaseRequestDatabase.
+        r"""Gets the os of this CreateDatabaseRequestDatabase.
 
         数据库操作系统 - LINUX64 - WINDOWS64 - UNIX
 
@@ -256,7 +256,7 @@ class CreateDatabaseRequestDatabase:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this CreateDatabaseRequestDatabase.
+        r"""Sets the os of this CreateDatabaseRequestDatabase.
 
         数据库操作系统 - LINUX64 - WINDOWS64 - UNIX
 
@@ -267,7 +267,7 @@ class CreateDatabaseRequestDatabase:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this CreateDatabaseRequestDatabase.
+        r"""Gets the instance_name of this CreateDatabaseRequestDatabase.
 
         数据库实例名称
 
@@ -278,7 +278,7 @@ class CreateDatabaseRequestDatabase:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this CreateDatabaseRequestDatabase.
+        r"""Sets the instance_name of this CreateDatabaseRequestDatabase.
 
         数据库实例名称
 

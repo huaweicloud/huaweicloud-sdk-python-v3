@@ -33,7 +33,7 @@ class ModifyOttChannelEncoderSettings:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, encoder_settings=None, encoder_settings_expand=None):
-        """ModifyOttChannelEncoderSettings
+        r"""ModifyOttChannelEncoderSettings
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ModifyOttChannelEncoderSettings:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelEncoderSettings.
+        r"""Gets the domain of this ModifyOttChannelEncoderSettings.
 
         频道推流域名
 
@@ -79,7 +79,7 @@ class ModifyOttChannelEncoderSettings:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelEncoderSettings.
+        r"""Sets the domain of this ModifyOttChannelEncoderSettings.
 
         频道推流域名
 
@@ -90,7 +90,7 @@ class ModifyOttChannelEncoderSettings:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelEncoderSettings.
+        r"""Gets the app_name of this ModifyOttChannelEncoderSettings.
 
         组名或应用名
 
@@ -101,7 +101,7 @@ class ModifyOttChannelEncoderSettings:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelEncoderSettings.
+        r"""Sets the app_name of this ModifyOttChannelEncoderSettings.
 
         组名或应用名
 
@@ -112,7 +112,7 @@ class ModifyOttChannelEncoderSettings:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelEncoderSettings.
+        r"""Gets the id of this ModifyOttChannelEncoderSettings.
 
         频道ID。频道唯一标识，为必填项
 
@@ -123,7 +123,7 @@ class ModifyOttChannelEncoderSettings:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelEncoderSettings.
+        r"""Sets the id of this ModifyOttChannelEncoderSettings.
 
         频道ID。频道唯一标识，为必填项
 
@@ -134,7 +134,7 @@ class ModifyOttChannelEncoderSettings:
 
     @property
     def encoder_settings(self):
-        """Gets the encoder_settings of this ModifyOttChannelEncoderSettings.
+        r"""Gets the encoder_settings of this ModifyOttChannelEncoderSettings.
 
         转码模板配置
 
@@ -145,7 +145,7 @@ class ModifyOttChannelEncoderSettings:
 
     @encoder_settings.setter
     def encoder_settings(self, encoder_settings):
-        """Sets the encoder_settings of this ModifyOttChannelEncoderSettings.
+        r"""Sets the encoder_settings of this ModifyOttChannelEncoderSettings.
 
         转码模板配置
 
@@ -156,7 +156,7 @@ class ModifyOttChannelEncoderSettings:
 
     @property
     def encoder_settings_expand(self):
-        """Gets the encoder_settings_expand of this ModifyOttChannelEncoderSettings.
+        r"""Gets the encoder_settings_expand of this ModifyOttChannelEncoderSettings.
 
         :return: The encoder_settings_expand of this ModifyOttChannelEncoderSettings.
         :rtype: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`
@@ -165,7 +165,7 @@ class ModifyOttChannelEncoderSettings:
 
     @encoder_settings_expand.setter
     def encoder_settings_expand(self, encoder_settings_expand):
-        """Sets the encoder_settings_expand of this ModifyOttChannelEncoderSettings.
+        r"""Sets the encoder_settings_expand of this ModifyOttChannelEncoderSettings.
 
         :param encoder_settings_expand: The encoder_settings_expand of this ModifyOttChannelEncoderSettings.
         :type encoder_settings_expand: :class:`huaweicloudsdklive.v1.EncoderSettingsExpand`

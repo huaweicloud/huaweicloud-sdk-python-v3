@@ -28,7 +28,7 @@ class ListWorkSpacesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, workspaces=None):
-        """ListWorkSpacesResponse
+        r"""ListWorkSpacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWorkSpacesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkSpacesResponse.
+        r"""Gets the count of this ListWorkSpacesResponse.
 
         返回总条目数
 
@@ -62,7 +62,7 @@ class ListWorkSpacesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkSpacesResponse.
+        r"""Sets the count of this ListWorkSpacesResponse.
 
         返回总条目数
 
@@ -73,7 +73,7 @@ class ListWorkSpacesResponse(SdkResponse):
 
     @property
     def workspaces(self):
-        """Gets the workspaces of this ListWorkSpacesResponse.
+        r"""Gets the workspaces of this ListWorkSpacesResponse.
 
         工作空间列表
 
@@ -84,7 +84,7 @@ class ListWorkSpacesResponse(SdkResponse):
 
     @workspaces.setter
     def workspaces(self, workspaces):
-        """Sets the workspaces of this ListWorkSpacesResponse.
+        r"""Sets the workspaces of this ListWorkSpacesResponse.
 
         工作空间列表
 

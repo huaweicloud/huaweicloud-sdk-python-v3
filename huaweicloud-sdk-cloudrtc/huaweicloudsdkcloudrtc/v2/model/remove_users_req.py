@@ -25,7 +25,7 @@ class RemoveUsersReq:
     }
 
     def __init__(self, user_ids=None):
-        """RemoveUsersReq
+        r"""RemoveUsersReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveUsersReq:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this RemoveUsersReq.
+        r"""Gets the user_ids of this RemoveUsersReq.
 
         用户ID列表
 
@@ -53,7 +53,7 @@ class RemoveUsersReq:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this RemoveUsersReq.
+        r"""Sets the user_ids of this RemoveUsersReq.
 
         用户ID列表
 

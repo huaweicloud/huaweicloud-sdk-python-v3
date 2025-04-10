@@ -25,7 +25,7 @@ class TaskModelMarketPlace:
     }
 
     def __init__(self, type=None):
-        """TaskModelMarketPlace
+        r"""TaskModelMarketPlace
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TaskModelMarketPlace:
 
     @property
     def type(self):
-        """Gets the type of this TaskModelMarketPlace.
+        r"""Gets the type of this TaskModelMarketPlace.
 
         任务类型
 
@@ -53,7 +53,7 @@ class TaskModelMarketPlace:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskModelMarketPlace.
+        r"""Sets the type of this TaskModelMarketPlace.
 
         任务类型
 

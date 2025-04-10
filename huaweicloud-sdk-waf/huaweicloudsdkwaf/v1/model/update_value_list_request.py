@@ -29,7 +29,7 @@ class UpdateValueListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, valuelistid=None, body=None):
-        """UpdateValueListRequest
+        r"""UpdateValueListRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateValueListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateValueListRequest.
+        r"""Gets the enterprise_project_id of this UpdateValueListRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class UpdateValueListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateValueListRequest.
+        r"""Sets the enterprise_project_id of this UpdateValueListRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class UpdateValueListRequest:
 
     @property
     def valuelistid(self):
-        """Gets the valuelistid of this UpdateValueListRequest.
+        r"""Gets the valuelistid of this UpdateValueListRequest.
 
         引用表id，通过查询引用表列表（ListValueList）接口获取
 
@@ -89,7 +89,7 @@ class UpdateValueListRequest:
 
     @valuelistid.setter
     def valuelistid(self, valuelistid):
-        """Sets the valuelistid of this UpdateValueListRequest.
+        r"""Sets the valuelistid of this UpdateValueListRequest.
 
         引用表id，通过查询引用表列表（ListValueList）接口获取
 
@@ -100,7 +100,7 @@ class UpdateValueListRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateValueListRequest.
+        r"""Gets the body of this UpdateValueListRequest.
 
         :return: The body of this UpdateValueListRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequestBody`
@@ -109,7 +109,7 @@ class UpdateValueListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateValueListRequest.
+        r"""Sets the body of this UpdateValueListRequest.
 
         :param body: The body of this UpdateValueListRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequestBody`

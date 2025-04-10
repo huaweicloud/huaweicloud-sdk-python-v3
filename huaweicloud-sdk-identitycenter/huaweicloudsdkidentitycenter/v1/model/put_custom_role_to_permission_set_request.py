@@ -32,7 +32,7 @@ class PutCustomRoleToPermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None, body=None):
-        """PutCustomRoleToPermissionSetRequest
+        r"""PutCustomRoleToPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this PutCustomRoleToPermissionSetRequest.
+        r"""Gets the x_security_token of this PutCustomRoleToPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -74,7 +74,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this PutCustomRoleToPermissionSetRequest.
+        r"""Sets the x_security_token of this PutCustomRoleToPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -85,7 +85,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PutCustomRoleToPermissionSetRequest.
+        r"""Gets the instance_id of this PutCustomRoleToPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -96,7 +96,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PutCustomRoleToPermissionSetRequest.
+        r"""Sets the instance_id of this PutCustomRoleToPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -107,7 +107,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PutCustomRoleToPermissionSetRequest.
+        r"""Gets the permission_set_id of this PutCustomRoleToPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -118,7 +118,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PutCustomRoleToPermissionSetRequest.
+        r"""Sets the permission_set_id of this PutCustomRoleToPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -129,7 +129,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this PutCustomRoleToPermissionSetRequest.
+        r"""Gets the body of this PutCustomRoleToPermissionSetRequest.
 
         :return: The body of this PutCustomRoleToPermissionSetRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PutCustomRoleToPermissionSetReqBody`
@@ -138,7 +138,7 @@ class PutCustomRoleToPermissionSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PutCustomRoleToPermissionSetRequest.
+        r"""Sets the body of this PutCustomRoleToPermissionSetRequest.
 
         :param body: The body of this PutCustomRoleToPermissionSetRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.PutCustomRoleToPermissionSetReqBody`

@@ -25,7 +25,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Request:
     }
 
     def __init__(self, deletion_task_id=None):
-        """GetServiceLinkedAgencyDeletionStatusV5Request
+        r"""GetServiceLinkedAgencyDeletionStatusV5Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Request:
 
     @property
     def deletion_task_id(self):
-        """Gets the deletion_task_id of this GetServiceLinkedAgencyDeletionStatusV5Request.
+        r"""Gets the deletion_task_id of this GetServiceLinkedAgencyDeletionStatusV5Request.
 
         删除任务ID。
 
@@ -53,7 +53,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Request:
 
     @deletion_task_id.setter
     def deletion_task_id(self, deletion_task_id):
-        """Sets the deletion_task_id of this GetServiceLinkedAgencyDeletionStatusV5Request.
+        r"""Sets the deletion_task_id of this GetServiceLinkedAgencyDeletionStatusV5Request.
 
         删除任务ID。
 

@@ -25,7 +25,7 @@ class ReduceVolumeRequestBody:
     }
 
     def __init__(self, reduce_volume=None):
-        """ReduceVolumeRequestBody
+        r"""ReduceVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReduceVolumeRequestBody:
 
     @property
     def reduce_volume(self):
-        """Gets the reduce_volume of this ReduceVolumeRequestBody.
+        r"""Gets the reduce_volume of this ReduceVolumeRequestBody.
 
         :return: The reduce_volume of this ReduceVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.ReduceVolumeObject`
@@ -51,7 +51,7 @@ class ReduceVolumeRequestBody:
 
     @reduce_volume.setter
     def reduce_volume(self, reduce_volume):
-        """Sets the reduce_volume of this ReduceVolumeRequestBody.
+        r"""Sets the reduce_volume of this ReduceVolumeRequestBody.
 
         :param reduce_volume: The reduce_volume of this ReduceVolumeRequestBody.
         :type reduce_volume: :class:`huaweicloudsdkrds.v3.ReduceVolumeObject`

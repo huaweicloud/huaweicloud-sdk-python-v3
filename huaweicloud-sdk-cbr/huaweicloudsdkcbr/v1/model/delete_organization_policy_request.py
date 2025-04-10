@@ -25,7 +25,7 @@ class DeleteOrganizationPolicyRequest:
     }
 
     def __init__(self, organization_policy_id=None):
-        """DeleteOrganizationPolicyRequest
+        r"""DeleteOrganizationPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteOrganizationPolicyRequest:
 
     @property
     def organization_policy_id(self):
-        """Gets the organization_policy_id of this DeleteOrganizationPolicyRequest.
+        r"""Gets the organization_policy_id of this DeleteOrganizationPolicyRequest.
 
         组织策略ID
 
@@ -53,7 +53,7 @@ class DeleteOrganizationPolicyRequest:
 
     @organization_policy_id.setter
     def organization_policy_id(self, organization_policy_id):
-        """Sets the organization_policy_id of this DeleteOrganizationPolicyRequest.
+        r"""Sets the organization_policy_id of this DeleteOrganizationPolicyRequest.
 
         组织策略ID
 

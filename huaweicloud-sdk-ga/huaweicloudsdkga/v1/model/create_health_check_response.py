@@ -28,7 +28,7 @@ class CreateHealthCheckResponse(SdkResponse):
     }
 
     def __init__(self, health_check=None, request_id=None):
-        """CreateHealthCheckResponse
+        r"""CreateHealthCheckResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateHealthCheckResponse(SdkResponse):
 
     @property
     def health_check(self):
-        """Gets the health_check of this CreateHealthCheckResponse.
+        r"""Gets the health_check of this CreateHealthCheckResponse.
 
         :return: The health_check of this CreateHealthCheckResponse.
         :rtype: :class:`huaweicloudsdkga.v1.HealthCheckDetail`
@@ -60,7 +60,7 @@ class CreateHealthCheckResponse(SdkResponse):
 
     @health_check.setter
     def health_check(self, health_check):
-        """Sets the health_check of this CreateHealthCheckResponse.
+        r"""Sets the health_check of this CreateHealthCheckResponse.
 
         :param health_check: The health_check of this CreateHealthCheckResponse.
         :type health_check: :class:`huaweicloudsdkga.v1.HealthCheckDetail`
@@ -69,7 +69,7 @@ class CreateHealthCheckResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateHealthCheckResponse.
+        r"""Gets the request_id of this CreateHealthCheckResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class CreateHealthCheckResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateHealthCheckResponse.
+        r"""Sets the request_id of this CreateHealthCheckResponse.
 
         请求ID。
 

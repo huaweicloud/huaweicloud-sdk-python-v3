@@ -27,7 +27,7 @@ class WarRoomTenantInfoImpactedApplication:
     }
 
     def __init__(self, id=None, name=None):
-        """WarRoomTenantInfoImpactedApplication
+        r"""WarRoomTenantInfoImpactedApplication
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WarRoomTenantInfoImpactedApplication:
 
     @property
     def id(self):
-        """Gets the id of this WarRoomTenantInfoImpactedApplication.
+        r"""Gets the id of this WarRoomTenantInfoImpactedApplication.
 
         主键
 
@@ -61,7 +61,7 @@ class WarRoomTenantInfoImpactedApplication:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WarRoomTenantInfoImpactedApplication.
+        r"""Sets the id of this WarRoomTenantInfoImpactedApplication.
 
         主键
 
@@ -72,7 +72,7 @@ class WarRoomTenantInfoImpactedApplication:
 
     @property
     def name(self):
-        """Gets the name of this WarRoomTenantInfoImpactedApplication.
+        r"""Gets the name of this WarRoomTenantInfoImpactedApplication.
 
         名字
 
@@ -83,7 +83,7 @@ class WarRoomTenantInfoImpactedApplication:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WarRoomTenantInfoImpactedApplication.
+        r"""Sets the name of this WarRoomTenantInfoImpactedApplication.
 
         名字
 

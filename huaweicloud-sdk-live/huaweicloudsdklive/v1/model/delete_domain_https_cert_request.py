@@ -25,7 +25,7 @@ class DeleteDomainHttpsCertRequest:
     }
 
     def __init__(self, domain=None):
-        """DeleteDomainHttpsCertRequest
+        r"""DeleteDomainHttpsCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDomainHttpsCertRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteDomainHttpsCertRequest.
+        r"""Gets the domain of this DeleteDomainHttpsCertRequest.
 
         直播播放域名
 
@@ -53,7 +53,7 @@ class DeleteDomainHttpsCertRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteDomainHttpsCertRequest.
+        r"""Sets the domain of this DeleteDomainHttpsCertRequest.
 
         直播播放域名
 

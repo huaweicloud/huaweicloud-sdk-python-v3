@@ -33,7 +33,7 @@ class BasicInfo:
     }
 
     def __init__(self, owner=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None):
-        """BasicInfo
+        r"""BasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BasicInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this BasicInfo.
+        r"""Gets the owner of this BasicInfo.
 
         作业责任人
 
@@ -82,7 +82,7 @@ class BasicInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this BasicInfo.
+        r"""Sets the owner of this BasicInfo.
 
         作业责任人
 
@@ -93,7 +93,7 @@ class BasicInfo:
 
     @property
     def priority(self):
-        """Gets the priority of this BasicInfo.
+        r"""Gets the priority of this BasicInfo.
 
         作业优先级，0代表高优先级，1代表中优先级，2代表低优先级。
 
@@ -104,7 +104,7 @@ class BasicInfo:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this BasicInfo.
+        r"""Sets the priority of this BasicInfo.
 
         作业优先级，0代表高优先级，1代表中优先级，2代表低优先级。
 
@@ -115,7 +115,7 @@ class BasicInfo:
 
     @property
     def execute_user(self):
-        """Gets the execute_user of this BasicInfo.
+        r"""Gets the execute_user of this BasicInfo.
 
         作业执行用户，必须是已存在的用户名。
 
@@ -126,7 +126,7 @@ class BasicInfo:
 
     @execute_user.setter
     def execute_user(self, execute_user):
-        """Sets the execute_user of this BasicInfo.
+        r"""Sets the execute_user of this BasicInfo.
 
         作业执行用户，必须是已存在的用户名。
 
@@ -137,7 +137,7 @@ class BasicInfo:
 
     @property
     def instance_timeout(self):
-        """Gets the instance_timeout of this BasicInfo.
+        r"""Gets the instance_timeout of this BasicInfo.
 
         实例超时时间，单位是分钟。
 
@@ -148,7 +148,7 @@ class BasicInfo:
 
     @instance_timeout.setter
     def instance_timeout(self, instance_timeout):
-        """Sets the instance_timeout of this BasicInfo.
+        r"""Sets the instance_timeout of this BasicInfo.
 
         实例超时时间，单位是分钟。
 
@@ -159,7 +159,7 @@ class BasicInfo:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this BasicInfo.
+        r"""Gets the custom_fields of this BasicInfo.
 
         用户自定义属性字段
 
@@ -170,7 +170,7 @@ class BasicInfo:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this BasicInfo.
+        r"""Sets the custom_fields of this BasicInfo.
 
         用户自定义属性字段
 

@@ -29,7 +29,7 @@ class ShowInstanceTagsRequest:
     }
 
     def __init__(self, resource_type=None, job_id=None, x_language=None):
-        """ShowInstanceTagsRequest
+        r"""ShowInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowInstanceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowInstanceTagsRequest.
+        r"""Gets the resource_type of this ShowInstanceTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：仿真回放
 
@@ -66,7 +66,7 @@ class ShowInstanceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowInstanceTagsRequest.
+        r"""Sets the resource_type of this ShowInstanceTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：仿真回放
 
@@ -77,7 +77,7 @@ class ShowInstanceTagsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowInstanceTagsRequest.
+        r"""Gets the job_id of this ShowInstanceTagsRequest.
 
         任务ID。
 
@@ -88,7 +88,7 @@ class ShowInstanceTagsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowInstanceTagsRequest.
+        r"""Sets the job_id of this ShowInstanceTagsRequest.
 
         任务ID。
 
@@ -99,7 +99,7 @@ class ShowInstanceTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowInstanceTagsRequest.
+        r"""Gets the x_language of this ShowInstanceTagsRequest.
 
         请求语言类型。
 
@@ -110,7 +110,7 @@ class ShowInstanceTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceTagsRequest.
+        r"""Sets the x_language of this ShowInstanceTagsRequest.
 
         请求语言类型。
 

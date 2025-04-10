@@ -25,7 +25,7 @@ class AsscoiateReq:
     }
 
     def __init__(self, subnets=None):
-        """AsscoiateReq
+        r"""AsscoiateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AsscoiateReq:
 
     @property
     def subnets(self):
-        """Gets the subnets of this AsscoiateReq.
+        r"""Gets the subnets of this AsscoiateReq.
 
         :return: The subnets of this AsscoiateReq.
         :rtype: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`
@@ -51,7 +51,7 @@ class AsscoiateReq:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this AsscoiateReq.
+        r"""Sets the subnets of this AsscoiateReq.
 
         :param subnets: The subnets of this AsscoiateReq.
         :type subnets: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`

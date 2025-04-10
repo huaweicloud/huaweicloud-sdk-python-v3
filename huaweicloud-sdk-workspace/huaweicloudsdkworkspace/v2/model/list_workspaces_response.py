@@ -108,7 +108,7 @@ class ListWorkspacesResponse(SdkResponse):
     }
 
     def __init__(self, id=None, auth_type=None, ad_domains=None, third_gateway_info=None, vpc_id=None, vpc_name=None, access_mode=None, adn_conflict_network=None, dedicated_subnets=None, dedicated_access_address=None, dedicated_access_address_ipv6=None, internet_access_address=None, internet_access_address_ipv6=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, vpc_config_infos=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, enterprise_project_id=None, project_resource_type=None, assist_auth_config_info=None, is_send_email=None, authorized_collect_log=None, authorized_hda_upgrade=None, site_configs=None, is_multi_vpc=None, is_config_nat_mapping=None, dc_vnc_ip=None, dc_vnc_vpcep_id=None, is_authorized_install_agent=None, is_support_ipv6=None, enable_user_create_snapshot=None):
-        """ListWorkspacesResponse
+        r"""ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -331,7 +331,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListWorkspacesResponse.
+        r"""Gets the id of this ListWorkspacesResponse.
 
         唯一标识ID。
 
@@ -342,7 +342,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListWorkspacesResponse.
+        r"""Sets the id of this ListWorkspacesResponse.
 
         唯一标识ID。
 
@@ -353,7 +353,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ListWorkspacesResponse.
+        r"""Gets the auth_type of this ListWorkspacesResponse.
 
         主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
 
@@ -364,7 +364,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ListWorkspacesResponse.
+        r"""Sets the auth_type of this ListWorkspacesResponse.
 
         主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
 
@@ -375,7 +375,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def ad_domains(self):
-        """Gets the ad_domains of this ListWorkspacesResponse.
+        r"""Gets the ad_domains of this ListWorkspacesResponse.
 
         :return: The ad_domains of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdInfo`
@@ -384,7 +384,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @ad_domains.setter
     def ad_domains(self, ad_domains):
-        """Sets the ad_domains of this ListWorkspacesResponse.
+        r"""Sets the ad_domains of this ListWorkspacesResponse.
 
         :param ad_domains: The ad_domains of this ListWorkspacesResponse.
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdInfo`
@@ -393,7 +393,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def third_gateway_info(self):
-        """Gets the third_gateway_info of this ListWorkspacesResponse.
+        r"""Gets the third_gateway_info of this ListWorkspacesResponse.
 
         :return: The third_gateway_info of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayInfo`
@@ -402,7 +402,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @third_gateway_info.setter
     def third_gateway_info(self, third_gateway_info):
-        """Sets the third_gateway_info of this ListWorkspacesResponse.
+        r"""Sets the third_gateway_info of this ListWorkspacesResponse.
 
         :param third_gateway_info: The third_gateway_info of this ListWorkspacesResponse.
         :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayInfo`
@@ -411,7 +411,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListWorkspacesResponse.
+        r"""Gets the vpc_id of this ListWorkspacesResponse.
 
         VPC ID。
 
@@ -422,7 +422,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListWorkspacesResponse.
+        r"""Sets the vpc_id of this ListWorkspacesResponse.
 
         VPC ID。
 
@@ -433,7 +433,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this ListWorkspacesResponse.
+        r"""Gets the vpc_name of this ListWorkspacesResponse.
 
         VPC名称。
 
@@ -444,7 +444,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this ListWorkspacesResponse.
+        r"""Sets the vpc_name of this ListWorkspacesResponse.
 
         VPC名称。
 
@@ -455,7 +455,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this ListWorkspacesResponse.
+        r"""Gets the access_mode of this ListWorkspacesResponse.
 
         接入方式。 - INTERNET：表示互联网接入。 - DEDICATED：表示专线接入。 - BOTH：表示同时支持互联网接入和专线接入。
 
@@ -466,7 +466,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this ListWorkspacesResponse.
+        r"""Sets the access_mode of this ListWorkspacesResponse.
 
         接入方式。 - INTERNET：表示互联网接入。 - DEDICATED：表示专线接入。 - BOTH：表示同时支持互联网接入和专线接入。
 
@@ -477,7 +477,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def adn_conflict_network(self):
-        """Gets the adn_conflict_network of this ListWorkspacesResponse.
+        r"""Gets the adn_conflict_network of this ListWorkspacesResponse.
 
         ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
 
@@ -488,7 +488,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @adn_conflict_network.setter
     def adn_conflict_network(self, adn_conflict_network):
-        """Sets the adn_conflict_network of this ListWorkspacesResponse.
+        r"""Sets the adn_conflict_network of this ListWorkspacesResponse.
 
         ADN上网冲突网段列表，多个网段信息用分号隔开，列表长度不超过50。
 
@@ -499,7 +499,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def dedicated_subnets(self):
-        """Gets the dedicated_subnets of this ListWorkspacesResponse.
+        r"""Gets the dedicated_subnets of this ListWorkspacesResponse.
 
         专线接入网段，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
@@ -510,7 +510,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @dedicated_subnets.setter
     def dedicated_subnets(self, dedicated_subnets):
-        """Sets the dedicated_subnets of this ListWorkspacesResponse.
+        r"""Sets the dedicated_subnets of this ListWorkspacesResponse.
 
         专线接入网段，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
@@ -521,7 +521,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def dedicated_access_address(self):
-        """Gets the dedicated_access_address of this ListWorkspacesResponse.
+        r"""Gets the dedicated_access_address of this ListWorkspacesResponse.
 
         专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
@@ -532,7 +532,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @dedicated_access_address.setter
     def dedicated_access_address(self, dedicated_access_address):
-        """Sets the dedicated_access_address of this ListWorkspacesResponse.
+        r"""Sets the dedicated_access_address of this ListWorkspacesResponse.
 
         专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
@@ -543,7 +543,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def dedicated_access_address_ipv6(self):
-        """Gets the dedicated_access_address_ipv6 of this ListWorkspacesResponse.
+        r"""Gets the dedicated_access_address_ipv6 of this ListWorkspacesResponse.
 
         专线接入ipv6地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
@@ -554,7 +554,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @dedicated_access_address_ipv6.setter
     def dedicated_access_address_ipv6(self, dedicated_access_address_ipv6):
-        """Sets the dedicated_access_address_ipv6 of this ListWorkspacesResponse.
+        r"""Sets the dedicated_access_address_ipv6 of this ListWorkspacesResponse.
 
         专线接入ipv6地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
@@ -565,7 +565,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def internet_access_address(self):
-        """Gets the internet_access_address of this ListWorkspacesResponse.
+        r"""Gets the internet_access_address of this ListWorkspacesResponse.
 
         互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
 
@@ -576,7 +576,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @internet_access_address.setter
     def internet_access_address(self, internet_access_address):
-        """Sets the internet_access_address of this ListWorkspacesResponse.
+        r"""Sets the internet_access_address of this ListWorkspacesResponse.
 
         互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
 
@@ -587,7 +587,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def internet_access_address_ipv6(self):
-        """Gets the internet_access_address_ipv6 of this ListWorkspacesResponse.
+        r"""Gets the internet_access_address_ipv6 of this ListWorkspacesResponse.
 
         互联网接入ipv6地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
 
@@ -598,7 +598,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @internet_access_address_ipv6.setter
     def internet_access_address_ipv6(self, internet_access_address_ipv6):
-        """Sets the internet_access_address_ipv6 of this ListWorkspacesResponse.
+        r"""Sets the internet_access_address_ipv6 of this ListWorkspacesResponse.
 
         互联网接入ipv6地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
 
@@ -609,7 +609,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def internet_access_port(self):
-        """Gets the internet_access_port of this ListWorkspacesResponse.
+        r"""Gets the internet_access_port of this ListWorkspacesResponse.
 
         互联网接入端口。
 
@@ -620,7 +620,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @internet_access_port.setter
     def internet_access_port(self, internet_access_port):
-        """Sets the internet_access_port of this ListWorkspacesResponse.
+        r"""Sets the internet_access_port of this ListWorkspacesResponse.
 
         互联网接入端口。
 
@@ -631,7 +631,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListWorkspacesResponse.
+        r"""Gets the status of this ListWorkspacesResponse.
 
         云办公服务的状态。 - PREPARING：准备开通。 - SUBSCRIBING：开通中。 - SUBSCRIBED：已开通。 - SUBSCRIPTION_FAILED：开通失败。 - DEREGISTERING：销户中。 - DEREGISTRATION_FAILED：销户失败。 - RECYCLING：清理资源中。 - RECYCLED：清理资源成功。 - RECYCLE_FAILED：清理资源失败。 - CLOSED：已销户未开通。
 
@@ -642,7 +642,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListWorkspacesResponse.
+        r"""Sets the status of this ListWorkspacesResponse.
 
         云办公服务的状态。 - PREPARING：准备开通。 - SUBSCRIBING：开通中。 - SUBSCRIBED：已开通。 - SUBSCRIPTION_FAILED：开通失败。 - DEREGISTERING：销户中。 - DEREGISTRATION_FAILED：销户失败。 - RECYCLING：清理资源中。 - RECYCLED：清理资源成功。 - RECYCLE_FAILED：清理资源失败。 - CLOSED：已销户未开通。
 
@@ -653,7 +653,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this ListWorkspacesResponse.
+        r"""Gets the access_status of this ListWorkspacesResponse.
 
         互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通接入方式成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
 
@@ -664,7 +664,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this ListWorkspacesResponse.
+        r"""Sets the access_status of this ListWorkspacesResponse.
 
         互联网和专线切换任务的状态。 - init： 初始化 - 开通服务后的初始状态。 - available： 可用 - 执行过任务且成功后恢复的正常状态。 - internetOpening： 开启中 - 开通互联网接入开启中。 - dedicatedOpening： 开启中 - 开通专线接入开启中。 - internetOpenFailed： 开启失败 - 开通互联网接入开启失败。 - dedicatedOpenFailed： 开启失败 - 开通专线接入开启失败。 - openSuccess： 开启成功 - 开通接入方式成功。 - internetClosing： 关闭中 - 关闭互联网接入关闭中。 - dedicatedClosing： 关闭中 - 关闭专线接入关闭中。 - internetCloseFailed： 关闭失败 - 关闭互联网接入方式失败。 - dedicatedCloseFailed： 关闭失败 - 关闭专线接入方式失败。 - closeSuccess： 关闭成功 - 关闭接入方式成功。 - internetAccessPortModifying： 互联网接入端口修改中。 - internetAccessPortModifyFailed： 端口修改失败。
 
@@ -675,7 +675,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this ListWorkspacesResponse.
+        r"""Gets the subnet_ids of this ListWorkspacesResponse.
 
         业务子网，可以指定返回的网络ID订购桌面。
 
@@ -686,7 +686,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this ListWorkspacesResponse.
+        r"""Sets the subnet_ids of this ListWorkspacesResponse.
 
         业务子网，可以指定返回的网络ID订购桌面。
 
@@ -697,7 +697,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def vpc_config_infos(self):
-        """Gets the vpc_config_infos of this ListWorkspacesResponse.
+        r"""Gets the vpc_config_infos of this ListWorkspacesResponse.
 
         VPC配置信息列表。
 
@@ -708,7 +708,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @vpc_config_infos.setter
     def vpc_config_infos(self, vpc_config_infos):
-        """Sets the vpc_config_infos of this ListWorkspacesResponse.
+        r"""Sets the vpc_config_infos of this ListWorkspacesResponse.
 
         VPC配置信息列表。
 
@@ -719,7 +719,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def management_subnet_cidr(self):
-        """Gets the management_subnet_cidr of this ListWorkspacesResponse.
+        r"""Gets the management_subnet_cidr of this ListWorkspacesResponse.
 
         管理组件的子网网段。
 
@@ -730,7 +730,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @management_subnet_cidr.setter
     def management_subnet_cidr(self, management_subnet_cidr):
-        """Sets the management_subnet_cidr of this ListWorkspacesResponse.
+        r"""Sets the management_subnet_cidr of this ListWorkspacesResponse.
 
         管理组件的子网网段。
 
@@ -741,7 +741,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def infrastructure_security_group(self):
-        """Gets the infrastructure_security_group of this ListWorkspacesResponse.
+        r"""Gets the infrastructure_security_group of this ListWorkspacesResponse.
 
         :return: The infrastructure_security_group of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
@@ -750,7 +750,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @infrastructure_security_group.setter
     def infrastructure_security_group(self, infrastructure_security_group):
-        """Sets the infrastructure_security_group of this ListWorkspacesResponse.
+        r"""Sets the infrastructure_security_group of this ListWorkspacesResponse.
 
         :param infrastructure_security_group: The infrastructure_security_group of this ListWorkspacesResponse.
         :type infrastructure_security_group: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
@@ -759,7 +759,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def desktop_security_group(self):
-        """Gets the desktop_security_group of this ListWorkspacesResponse.
+        r"""Gets the desktop_security_group of this ListWorkspacesResponse.
 
         :return: The desktop_security_group of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
@@ -768,7 +768,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @desktop_security_group.setter
     def desktop_security_group(self, desktop_security_group):
-        """Sets the desktop_security_group of this ListWorkspacesResponse.
+        r"""Sets the desktop_security_group of this ListWorkspacesResponse.
 
         :param desktop_security_group: The desktop_security_group of this ListWorkspacesResponse.
         :type desktop_security_group: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
@@ -777,7 +777,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def closable(self):
-        """Gets the closable of this ListWorkspacesResponse.
+        r"""Gets the closable of this ListWorkspacesResponse.
 
         是否可以取消服务。
 
@@ -788,7 +788,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @closable.setter
     def closable(self, closable):
-        """Sets the closable of this ListWorkspacesResponse.
+        r"""Sets the closable of this ListWorkspacesResponse.
 
         是否可以取消服务。
 
@@ -799,7 +799,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def config_status(self):
-        """Gets the config_status of this ListWorkspacesResponse.
+        r"""Gets the config_status of this ListWorkspacesResponse.
 
         配置状态。 - \"0\"： 开通服务成功，且对接AD成功。 - \"1\"： 开通服务成功，但AD配置失败。 - \"2\"： 开通服务成功，但AD配置失败后存在其他错误。 - \"3\"： 开通服务成功，AD未开启对接。
 
@@ -810,7 +810,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ListWorkspacesResponse.
+        r"""Sets the config_status of this ListWorkspacesResponse.
 
         配置状态。 - \"0\"： 开通服务成功，且对接AD成功。 - \"1\"： 开通服务成功，但AD配置失败。 - \"2\"： 开通服务成功，但AD配置失败后存在其他错误。 - \"3\"： 开通服务成功，AD未开启对接。
 
@@ -821,7 +821,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ListWorkspacesResponse.
+        r"""Gets the progress of this ListWorkspacesResponse.
 
         开通服务或注销服务的进度，格式为百分比，如：100%。
 
@@ -832,7 +832,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ListWorkspacesResponse.
+        r"""Sets the progress of this ListWorkspacesResponse.
 
         开通服务或注销服务的进度，格式为百分比，如：100%。
 
@@ -843,7 +843,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListWorkspacesResponse.
+        r"""Gets the job_id of this ListWorkspacesResponse.
 
         开通服务或取消服务的任务ID。
 
@@ -854,7 +854,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListWorkspacesResponse.
+        r"""Sets the job_id of this ListWorkspacesResponse.
 
         开通服务或取消服务的任务ID。
 
@@ -865,7 +865,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def fail_code(self):
-        """Gets the fail_code of this ListWorkspacesResponse.
+        r"""Gets the fail_code of this ListWorkspacesResponse.
 
         失败错误码。
 
@@ -876,7 +876,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @fail_code.setter
     def fail_code(self, fail_code):
-        """Sets the fail_code of this ListWorkspacesResponse.
+        r"""Sets the fail_code of this ListWorkspacesResponse.
 
         失败错误码。
 
@@ -887,7 +887,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ListWorkspacesResponse.
+        r"""Gets the fail_reason of this ListWorkspacesResponse.
 
         失败原因。
 
@@ -898,7 +898,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ListWorkspacesResponse.
+        r"""Sets the fail_reason of this ListWorkspacesResponse.
 
         失败原因。
 
@@ -909,7 +909,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this ListWorkspacesResponse.
+        r"""Gets the enterprise_id of this ListWorkspacesResponse.
 
         企业ID。
 
@@ -920,7 +920,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this ListWorkspacesResponse.
+        r"""Sets the enterprise_id of this ListWorkspacesResponse.
 
         企业ID。
 
@@ -931,7 +931,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListWorkspacesResponse.
+        r"""Gets the enterprise_project_id of this ListWorkspacesResponse.
 
         企业项目ID。
 
@@ -942,7 +942,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListWorkspacesResponse.
+        r"""Sets the enterprise_project_id of this ListWorkspacesResponse.
 
         企业项目ID。
 
@@ -953,7 +953,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def project_resource_type(self):
-        """Gets the project_resource_type of this ListWorkspacesResponse.
+        r"""Gets the project_resource_type of this ListWorkspacesResponse.
 
         资源池类型。 - \"public\"： 私有资源池 - \"private\"： 公有资源池
 
@@ -964,7 +964,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @project_resource_type.setter
     def project_resource_type(self, project_resource_type):
-        """Sets the project_resource_type of this ListWorkspacesResponse.
+        r"""Sets the project_resource_type of this ListWorkspacesResponse.
 
         资源池类型。 - \"public\"： 私有资源池 - \"private\"： 公有资源池
 
@@ -975,7 +975,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def assist_auth_config_info(self):
-        """Gets the assist_auth_config_info of this ListWorkspacesResponse.
+        r"""Gets the assist_auth_config_info of this ListWorkspacesResponse.
 
         :return: The assist_auth_config_info of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssistAuthConfigInfo`
@@ -984,7 +984,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @assist_auth_config_info.setter
     def assist_auth_config_info(self, assist_auth_config_info):
-        """Sets the assist_auth_config_info of this ListWorkspacesResponse.
+        r"""Sets the assist_auth_config_info of this ListWorkspacesResponse.
 
         :param assist_auth_config_info: The assist_auth_config_info of this ListWorkspacesResponse.
         :type assist_auth_config_info: :class:`huaweicloudsdkworkspace.v2.AssistAuthConfigInfo`
@@ -993,7 +993,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def is_send_email(self):
-        """Gets the is_send_email of this ListWorkspacesResponse.
+        r"""Gets the is_send_email of this ListWorkspacesResponse.
 
         桌面退订是否发送邮件通知。
 
@@ -1004,7 +1004,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @is_send_email.setter
     def is_send_email(self, is_send_email):
-        """Sets the is_send_email of this ListWorkspacesResponse.
+        r"""Sets the is_send_email of this ListWorkspacesResponse.
 
         桌面退订是否发送邮件通知。
 
@@ -1015,7 +1015,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def authorized_collect_log(self):
-        """Gets the authorized_collect_log of this ListWorkspacesResponse.
+        r"""Gets the authorized_collect_log of this ListWorkspacesResponse.
 
         是否授权收集日志。
 
@@ -1026,7 +1026,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @authorized_collect_log.setter
     def authorized_collect_log(self, authorized_collect_log):
-        """Sets the authorized_collect_log of this ListWorkspacesResponse.
+        r"""Sets the authorized_collect_log of this ListWorkspacesResponse.
 
         是否授权收集日志。
 
@@ -1037,7 +1037,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def authorized_hda_upgrade(self):
-        """Gets the authorized_hda_upgrade of this ListWorkspacesResponse.
+        r"""Gets the authorized_hda_upgrade of this ListWorkspacesResponse.
 
         是否授权hda升级。
 
@@ -1048,7 +1048,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @authorized_hda_upgrade.setter
     def authorized_hda_upgrade(self, authorized_hda_upgrade):
-        """Sets the authorized_hda_upgrade of this ListWorkspacesResponse.
+        r"""Sets the authorized_hda_upgrade of this ListWorkspacesResponse.
 
         是否授权hda升级。
 
@@ -1059,7 +1059,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def site_configs(self):
-        """Gets the site_configs of this ListWorkspacesResponse.
+        r"""Gets the site_configs of this ListWorkspacesResponse.
 
         站点配置
 
@@ -1070,7 +1070,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @site_configs.setter
     def site_configs(self, site_configs):
-        """Sets the site_configs of this ListWorkspacesResponse.
+        r"""Sets the site_configs of this ListWorkspacesResponse.
 
         站点配置
 
@@ -1081,7 +1081,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def is_multi_vpc(self):
-        """Gets the is_multi_vpc of this ListWorkspacesResponse.
+        r"""Gets the is_multi_vpc of this ListWorkspacesResponse.
 
         是否支持多VPC。
 
@@ -1092,7 +1092,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @is_multi_vpc.setter
     def is_multi_vpc(self, is_multi_vpc):
-        """Sets the is_multi_vpc of this ListWorkspacesResponse.
+        r"""Sets the is_multi_vpc of this ListWorkspacesResponse.
 
         是否支持多VPC。
 
@@ -1103,7 +1103,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def is_config_nat_mapping(self):
-        """Gets the is_config_nat_mapping of this ListWorkspacesResponse.
+        r"""Gets the is_config_nat_mapping of this ListWorkspacesResponse.
 
         是否支持配置nat映射。
 
@@ -1114,7 +1114,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @is_config_nat_mapping.setter
     def is_config_nat_mapping(self, is_config_nat_mapping):
-        """Sets the is_config_nat_mapping of this ListWorkspacesResponse.
+        r"""Sets the is_config_nat_mapping of this ListWorkspacesResponse.
 
         是否支持配置nat映射。
 
@@ -1125,7 +1125,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def dc_vnc_ip(self):
-        """Gets the dc_vnc_ip of this ListWorkspacesResponse.
+        r"""Gets the dc_vnc_ip of this ListWorkspacesResponse.
 
         自定义的专线VNC地址
 
@@ -1136,7 +1136,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @dc_vnc_ip.setter
     def dc_vnc_ip(self, dc_vnc_ip):
-        """Sets the dc_vnc_ip of this ListWorkspacesResponse.
+        r"""Sets the dc_vnc_ip of this ListWorkspacesResponse.
 
         自定义的专线VNC地址
 
@@ -1147,7 +1147,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def dc_vnc_vpcep_id(self):
-        """Gets the dc_vnc_vpcep_id of this ListWorkspacesResponse.
+        r"""Gets the dc_vnc_vpcep_id of this ListWorkspacesResponse.
 
         专线VNC VPC终端节点ID
 
@@ -1158,7 +1158,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @dc_vnc_vpcep_id.setter
     def dc_vnc_vpcep_id(self, dc_vnc_vpcep_id):
-        """Sets the dc_vnc_vpcep_id of this ListWorkspacesResponse.
+        r"""Sets the dc_vnc_vpcep_id of this ListWorkspacesResponse.
 
         专线VNC VPC终端节点ID
 
@@ -1169,7 +1169,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def is_authorized_install_agent(self):
-        """Gets the is_authorized_install_agent of this ListWorkspacesResponse.
+        r"""Gets the is_authorized_install_agent of this ListWorkspacesResponse.
 
         是否授权桌面自动安装agent插件。
 
@@ -1180,7 +1180,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @is_authorized_install_agent.setter
     def is_authorized_install_agent(self, is_authorized_install_agent):
-        """Sets the is_authorized_install_agent of this ListWorkspacesResponse.
+        r"""Sets the is_authorized_install_agent of this ListWorkspacesResponse.
 
         是否授权桌面自动安装agent插件。
 
@@ -1191,7 +1191,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def is_support_ipv6(self):
-        """Gets the is_support_ipv6 of this ListWorkspacesResponse.
+        r"""Gets the is_support_ipv6 of this ListWorkspacesResponse.
 
         是否支持ipv6。
 
@@ -1202,7 +1202,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @is_support_ipv6.setter
     def is_support_ipv6(self, is_support_ipv6):
-        """Sets the is_support_ipv6 of this ListWorkspacesResponse.
+        r"""Sets the is_support_ipv6 of this ListWorkspacesResponse.
 
         是否支持ipv6。
 
@@ -1213,7 +1213,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def enable_user_create_snapshot(self):
-        """Gets the enable_user_create_snapshot of this ListWorkspacesResponse.
+        r"""Gets the enable_user_create_snapshot of this ListWorkspacesResponse.
 
         是否授权最终租户创建快照。
 
@@ -1224,7 +1224,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @enable_user_create_snapshot.setter
     def enable_user_create_snapshot(self, enable_user_create_snapshot):
-        """Sets the enable_user_create_snapshot of this ListWorkspacesResponse.
+        r"""Sets the enable_user_create_snapshot of this ListWorkspacesResponse.
 
         是否授权最终租户创建快照。
 

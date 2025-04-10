@@ -25,7 +25,7 @@ class UserMigrationRole:
     }
 
     def __init__(self, role=None):
-        """UserMigrationRole
+        r"""UserMigrationRole
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UserMigrationRole:
 
     @property
     def role(self):
-        """Gets the role of this UserMigrationRole.
+        r"""Gets the role of this UserMigrationRole.
 
         角色。
 
@@ -53,7 +53,7 @@ class UserMigrationRole:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this UserMigrationRole.
+        r"""Sets the role of this UserMigrationRole.
 
         角色。
 

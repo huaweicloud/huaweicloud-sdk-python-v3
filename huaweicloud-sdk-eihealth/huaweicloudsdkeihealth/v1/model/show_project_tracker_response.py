@@ -28,7 +28,7 @@ class ShowProjectTrackerResponse(SdkResponse):
     }
 
     def __init__(self, bucket_lifecycle=None, data_event=None):
-        """ShowProjectTrackerResponse
+        r"""ShowProjectTrackerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowProjectTrackerResponse(SdkResponse):
 
     @property
     def bucket_lifecycle(self):
-        """Gets the bucket_lifecycle of this ShowProjectTrackerResponse.
+        r"""Gets the bucket_lifecycle of this ShowProjectTrackerResponse.
 
         追踪器配置转储生命周期
 
@@ -62,7 +62,7 @@ class ShowProjectTrackerResponse(SdkResponse):
 
     @bucket_lifecycle.setter
     def bucket_lifecycle(self, bucket_lifecycle):
-        """Sets the bucket_lifecycle of this ShowProjectTrackerResponse.
+        r"""Sets the bucket_lifecycle of this ShowProjectTrackerResponse.
 
         追踪器配置转储生命周期
 
@@ -73,7 +73,7 @@ class ShowProjectTrackerResponse(SdkResponse):
 
     @property
     def data_event(self):
-        """Gets the data_event of this ShowProjectTrackerResponse.
+        r"""Gets the data_event of this ShowProjectTrackerResponse.
 
         追踪器配置监听事件
 
@@ -84,7 +84,7 @@ class ShowProjectTrackerResponse(SdkResponse):
 
     @data_event.setter
     def data_event(self, data_event):
-        """Sets the data_event of this ShowProjectTrackerResponse.
+        r"""Sets the data_event of this ShowProjectTrackerResponse.
 
         追踪器配置监听事件
 

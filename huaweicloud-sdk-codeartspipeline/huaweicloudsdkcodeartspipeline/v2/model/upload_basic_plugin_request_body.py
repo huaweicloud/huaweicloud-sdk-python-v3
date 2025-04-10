@@ -25,7 +25,7 @@ class UploadBasicPluginRequestBody:
     }
 
     def __init__(self, upload_file=None):
-        """UploadBasicPluginRequestBody
+        r"""UploadBasicPluginRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadBasicPluginRequestBody:
 
     @property
     def upload_file(self):
-        """Gets the upload_file of this UploadBasicPluginRequestBody.
+        r"""Gets the upload_file of this UploadBasicPluginRequestBody.
 
         :return: The upload_file of this UploadBasicPluginRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -51,7 +51,7 @@ class UploadBasicPluginRequestBody:
 
     @upload_file.setter
     def upload_file(self, upload_file):
-        """Sets the upload_file of this UploadBasicPluginRequestBody.
+        r"""Sets the upload_file of this UploadBasicPluginRequestBody.
 
         :param upload_file: The upload_file of this UploadBasicPluginRequestBody.
         :type upload_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

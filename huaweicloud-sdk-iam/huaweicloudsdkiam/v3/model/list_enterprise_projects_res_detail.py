@@ -25,7 +25,7 @@ class ListEnterpriseProjectsResDetail:
     }
 
     def __init__(self, project_id=None):
-        """ListEnterpriseProjectsResDetail
+        r"""ListEnterpriseProjectsResDetail
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEnterpriseProjectsResDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListEnterpriseProjectsResDetail.
+        r"""Gets the project_id of this ListEnterpriseProjectsResDetail.
 
         项目Id。
 
@@ -53,7 +53,7 @@ class ListEnterpriseProjectsResDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListEnterpriseProjectsResDetail.
+        r"""Sets the project_id of this ListEnterpriseProjectsResDetail.
 
         项目Id。
 

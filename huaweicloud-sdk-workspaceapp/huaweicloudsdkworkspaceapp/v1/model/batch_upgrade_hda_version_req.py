@@ -25,7 +25,7 @@ class BatchUpgradeHdaVersionReq:
     }
 
     def __init__(self, items=None):
-        """BatchUpgradeHdaVersionReq
+        r"""BatchUpgradeHdaVersionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpgradeHdaVersionReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchUpgradeHdaVersionReq.
+        r"""Gets the items of this BatchUpgradeHdaVersionReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 
@@ -53,7 +53,7 @@ class BatchUpgradeHdaVersionReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchUpgradeHdaVersionReq.
+        r"""Sets the items of this BatchUpgradeHdaVersionReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 

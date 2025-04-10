@@ -26,7 +26,7 @@ class ParseTemplateVariablesResponse(SdkResponse):
     }
 
     def __init__(self, variables=None):
-        """ParseTemplateVariablesResponse
+        r"""ParseTemplateVariablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ParseTemplateVariablesResponse(SdkResponse):
 
     @property
     def variables(self):
-        """Gets the variables of this ParseTemplateVariablesResponse.
+        r"""Gets the variables of this ParseTemplateVariablesResponse.
 
         解析模板得到的参数列表
 
@@ -55,7 +55,7 @@ class ParseTemplateVariablesResponse(SdkResponse):
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this ParseTemplateVariablesResponse.
+        r"""Sets the variables of this ParseTemplateVariablesResponse.
 
         解析模板得到的参数列表
 

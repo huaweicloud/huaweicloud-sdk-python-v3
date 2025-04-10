@@ -26,7 +26,7 @@ class ListEquipmentInterfaceNameResponse(SdkResponse):
     }
 
     def __init__(self, interface_names=None):
-        """ListEquipmentInterfaceNameResponse
+        r"""ListEquipmentInterfaceNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEquipmentInterfaceNameResponse(SdkResponse):
 
     @property
     def interface_names(self):
-        """Gets the interface_names of this ListEquipmentInterfaceNameResponse.
+        r"""Gets the interface_names of this ListEquipmentInterfaceNameResponse.
 
         设备接口名字列表
 
@@ -55,7 +55,7 @@ class ListEquipmentInterfaceNameResponse(SdkResponse):
 
     @interface_names.setter
     def interface_names(self, interface_names):
-        """Sets the interface_names of this ListEquipmentInterfaceNameResponse.
+        r"""Sets the interface_names of this ListEquipmentInterfaceNameResponse.
 
         设备接口名字列表
 

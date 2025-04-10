@@ -27,7 +27,7 @@ class ImageModerationResult:
     }
 
     def __init__(self, suggestion=None, category_suggestions=None):
-        """ImageModerationResult
+        r"""ImageModerationResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageModerationResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ImageModerationResult.
+        r"""Gets the suggestion of this ImageModerationResult.
 
         审核情况。
 
@@ -61,7 +61,7 @@ class ImageModerationResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ImageModerationResult.
+        r"""Sets the suggestion of this ImageModerationResult.
 
         审核情况。
 
@@ -72,7 +72,7 @@ class ImageModerationResult:
 
     @property
     def category_suggestions(self):
-        """Gets the category_suggestions of this ImageModerationResult.
+        r"""Gets the category_suggestions of this ImageModerationResult.
 
         :return: The category_suggestions of this ImageModerationResult.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`
@@ -81,7 +81,7 @@ class ImageModerationResult:
 
     @category_suggestions.setter
     def category_suggestions(self, category_suggestions):
-        """Sets the category_suggestions of this ImageModerationResult.
+        r"""Sets the category_suggestions of this ImageModerationResult.
 
         :param category_suggestions: The category_suggestions of this ImageModerationResult.
         :type category_suggestions: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`

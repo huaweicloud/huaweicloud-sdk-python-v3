@@ -29,7 +29,7 @@ class SqlserverDatabaseForDetail:
     }
 
     def __init__(self, name=None, character_set=None, state=None):
-        """SqlserverDatabaseForDetail
+        r"""SqlserverDatabaseForDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SqlserverDatabaseForDetail:
 
     @property
     def name(self):
-        """Gets the name of this SqlserverDatabaseForDetail.
+        r"""Gets the name of this SqlserverDatabaseForDetail.
 
         数据库名称。
 
@@ -65,7 +65,7 @@ class SqlserverDatabaseForDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SqlserverDatabaseForDetail.
+        r"""Sets the name of this SqlserverDatabaseForDetail.
 
         数据库名称。
 
@@ -76,7 +76,7 @@ class SqlserverDatabaseForDetail:
 
     @property
     def character_set(self):
-        """Gets the character_set of this SqlserverDatabaseForDetail.
+        r"""Gets the character_set of this SqlserverDatabaseForDetail.
 
         数据库使用的字符集，例如Chinese_PRC_CI_AS等。
 
@@ -87,7 +87,7 @@ class SqlserverDatabaseForDetail:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this SqlserverDatabaseForDetail.
+        r"""Sets the character_set of this SqlserverDatabaseForDetail.
 
         数据库使用的字符集，例如Chinese_PRC_CI_AS等。
 
@@ -98,7 +98,7 @@ class SqlserverDatabaseForDetail:
 
     @property
     def state(self):
-        """Gets the state of this SqlserverDatabaseForDetail.
+        r"""Gets the state of this SqlserverDatabaseForDetail.
 
         数据库状态。取值如下:  Creating:表示创建中。 Running:表示使用中。 Deleting:表示删除中。 NotExists:表示不存在。
 
@@ -109,7 +109,7 @@ class SqlserverDatabaseForDetail:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SqlserverDatabaseForDetail.
+        r"""Sets the state of this SqlserverDatabaseForDetail.
 
         数据库状态。取值如下:  Creating:表示创建中。 Running:表示使用中。 Deleting:表示删除中。 NotExists:表示不存在。
 

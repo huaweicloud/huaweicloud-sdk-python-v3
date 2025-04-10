@@ -32,7 +32,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, request_id=None, x_request_id=None):
-        """ListInternetBandwidthFilterTagsResponse
+        r"""ListInternetBandwidthFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListInternetBandwidthFilterTagsResponse.
+        r"""Gets the resources of this ListInternetBandwidthFilterTagsResponse.
 
         资源列表
 
@@ -76,7 +76,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListInternetBandwidthFilterTagsResponse.
+        r"""Sets the resources of this ListInternetBandwidthFilterTagsResponse.
 
         资源列表
 
@@ -87,7 +87,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInternetBandwidthFilterTagsResponse.
+        r"""Gets the total_count of this ListInternetBandwidthFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -98,7 +98,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInternetBandwidthFilterTagsResponse.
+        r"""Sets the total_count of this ListInternetBandwidthFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -109,7 +109,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListInternetBandwidthFilterTagsResponse.
+        r"""Gets the request_id of this ListInternetBandwidthFilterTagsResponse.
 
         本次请求的编号
 
@@ -120,7 +120,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListInternetBandwidthFilterTagsResponse.
+        r"""Sets the request_id of this ListInternetBandwidthFilterTagsResponse.
 
         本次请求的编号
 
@@ -131,7 +131,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListInternetBandwidthFilterTagsResponse.
+        r"""Gets the x_request_id of this ListInternetBandwidthFilterTagsResponse.
 
         :return: The x_request_id of this ListInternetBandwidthFilterTagsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListInternetBandwidthFilterTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListInternetBandwidthFilterTagsResponse.
+        r"""Sets the x_request_id of this ListInternetBandwidthFilterTagsResponse.
 
         :param x_request_id: The x_request_id of this ListInternetBandwidthFilterTagsResponse.
         :type x_request_id: str

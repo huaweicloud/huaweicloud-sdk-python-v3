@@ -39,7 +39,7 @@ class ListOffSiteBackupsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ListOffSiteBackupsRequest
+        r"""ListOffSiteBackupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListOffSiteBackupsRequest.
+        r"""Gets the x_language of this ListOffSiteBackupsRequest.
 
         语言
 
@@ -102,7 +102,7 @@ class ListOffSiteBackupsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListOffSiteBackupsRequest.
+        r"""Sets the x_language of this ListOffSiteBackupsRequest.
 
         语言
 
@@ -113,7 +113,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListOffSiteBackupsRequest.
+        r"""Gets the instance_id of this ListOffSiteBackupsRequest.
 
         实例ID。
 
@@ -124,7 +124,7 @@ class ListOffSiteBackupsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListOffSiteBackupsRequest.
+        r"""Sets the instance_id of this ListOffSiteBackupsRequest.
 
         实例ID。
 
@@ -135,7 +135,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ListOffSiteBackupsRequest.
+        r"""Gets the backup_id of this ListOffSiteBackupsRequest.
 
         备份ID。
 
@@ -146,7 +146,7 @@ class ListOffSiteBackupsRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ListOffSiteBackupsRequest.
+        r"""Sets the backup_id of this ListOffSiteBackupsRequest.
 
         备份ID。
 
@@ -157,7 +157,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this ListOffSiteBackupsRequest.
+        r"""Gets the backup_type of this ListOffSiteBackupsRequest.
 
         备份类型，取值： - “auto”: 自动全量备份。SQL Server仅支持查询备份类型为“auto”的备份列表 - “incremental”: 自动增量备份
 
@@ -168,7 +168,7 @@ class ListOffSiteBackupsRequest:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this ListOffSiteBackupsRequest.
+        r"""Sets the backup_type of this ListOffSiteBackupsRequest.
 
         备份类型，取值： - “auto”: 自动全量备份。SQL Server仅支持查询备份类型为“auto”的备份列表 - “incremental”: 自动增量备份
 
@@ -179,7 +179,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOffSiteBackupsRequest.
+        r"""Gets the offset of this ListOffSiteBackupsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -190,7 +190,7 @@ class ListOffSiteBackupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOffSiteBackupsRequest.
+        r"""Sets the offset of this ListOffSiteBackupsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -201,7 +201,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOffSiteBackupsRequest.
+        r"""Gets the limit of this ListOffSiteBackupsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -212,7 +212,7 @@ class ListOffSiteBackupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOffSiteBackupsRequest.
+        r"""Sets the limit of this ListOffSiteBackupsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -223,7 +223,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListOffSiteBackupsRequest.
+        r"""Gets the begin_time of this ListOffSiteBackupsRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与end_time必须同时使用。
 
@@ -234,7 +234,7 @@ class ListOffSiteBackupsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListOffSiteBackupsRequest.
+        r"""Sets the begin_time of this ListOffSiteBackupsRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与end_time必须同时使用。
 
@@ -245,7 +245,7 @@ class ListOffSiteBackupsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListOffSiteBackupsRequest.
+        r"""Gets the end_time of this ListOffSiteBackupsRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与begin_time必须同时使用。
 
@@ -256,7 +256,7 @@ class ListOffSiteBackupsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListOffSiteBackupsRequest.
+        r"""Sets the end_time of this ListOffSiteBackupsRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与begin_time必须同时使用。
 

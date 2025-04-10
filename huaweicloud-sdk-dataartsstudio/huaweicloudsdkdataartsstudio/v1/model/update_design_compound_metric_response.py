@@ -26,7 +26,7 @@ class UpdateDesignCompoundMetricResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateDesignCompoundMetricResponse
+        r"""UpdateDesignCompoundMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDesignCompoundMetricResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateDesignCompoundMetricResponse.
+        r"""Gets the data of this UpdateDesignCompoundMetricResponse.
 
         :return: The data of this UpdateDesignCompoundMetricResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignCompoundMetricResultData`
@@ -53,7 +53,7 @@ class UpdateDesignCompoundMetricResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateDesignCompoundMetricResponse.
+        r"""Sets the data of this UpdateDesignCompoundMetricResponse.
 
         :param data: The data of this UpdateDesignCompoundMetricResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignCompoundMetricResultData`

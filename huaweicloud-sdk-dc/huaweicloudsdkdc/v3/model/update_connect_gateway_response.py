@@ -28,7 +28,7 @@ class UpdateConnectGatewayResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, connect_gateway=None):
-        """UpdateConnectGatewayResponse
+        r"""UpdateConnectGatewayResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateConnectGatewayResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateConnectGatewayResponse.
+        r"""Gets the request_id of this UpdateConnectGatewayResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class UpdateConnectGatewayResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateConnectGatewayResponse.
+        r"""Sets the request_id of this UpdateConnectGatewayResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class UpdateConnectGatewayResponse(SdkResponse):
 
     @property
     def connect_gateway(self):
-        """Gets the connect_gateway of this UpdateConnectGatewayResponse.
+        r"""Gets the connect_gateway of this UpdateConnectGatewayResponse.
 
         :return: The connect_gateway of this UpdateConnectGatewayResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`
@@ -82,7 +82,7 @@ class UpdateConnectGatewayResponse(SdkResponse):
 
     @connect_gateway.setter
     def connect_gateway(self, connect_gateway):
-        """Sets the connect_gateway of this UpdateConnectGatewayResponse.
+        r"""Sets the connect_gateway of this UpdateConnectGatewayResponse.
 
         :param connect_gateway: The connect_gateway of this UpdateConnectGatewayResponse.
         :type connect_gateway: :class:`huaweicloudsdkdc.v3.ConnectGatewayResponse`

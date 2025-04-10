@@ -41,7 +41,7 @@ class RepoStatistics:
     }
 
     def __init__(self, add_lines=None, branch=None, commit_count=None, created_at=None, delete_lines=None, id=None, project_id=None, updated_at=None, user_name=None):
-        """RepoStatistics
+        r"""RepoStatistics
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class RepoStatistics:
 
     @property
     def add_lines(self):
-        """Gets the add_lines of this RepoStatistics.
+        r"""Gets the add_lines of this RepoStatistics.
 
         添加代码行
 
@@ -110,7 +110,7 @@ class RepoStatistics:
 
     @add_lines.setter
     def add_lines(self, add_lines):
-        """Sets the add_lines of this RepoStatistics.
+        r"""Sets the add_lines of this RepoStatistics.
 
         添加代码行
 
@@ -121,7 +121,7 @@ class RepoStatistics:
 
     @property
     def branch(self):
-        """Gets the branch of this RepoStatistics.
+        r"""Gets the branch of this RepoStatistics.
 
         分支名
 
@@ -132,7 +132,7 @@ class RepoStatistics:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this RepoStatistics.
+        r"""Sets the branch of this RepoStatistics.
 
         分支名
 
@@ -143,7 +143,7 @@ class RepoStatistics:
 
     @property
     def commit_count(self):
-        """Gets the commit_count of this RepoStatistics.
+        r"""Gets the commit_count of this RepoStatistics.
 
         提交次数
 
@@ -154,7 +154,7 @@ class RepoStatistics:
 
     @commit_count.setter
     def commit_count(self, commit_count):
-        """Sets the commit_count of this RepoStatistics.
+        r"""Sets the commit_count of this RepoStatistics.
 
         提交次数
 
@@ -165,7 +165,7 @@ class RepoStatistics:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RepoStatistics.
+        r"""Gets the created_at of this RepoStatistics.
 
         仓库统计创建的时间
 
@@ -176,7 +176,7 @@ class RepoStatistics:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RepoStatistics.
+        r"""Sets the created_at of this RepoStatistics.
 
         仓库统计创建的时间
 
@@ -187,7 +187,7 @@ class RepoStatistics:
 
     @property
     def delete_lines(self):
-        """Gets the delete_lines of this RepoStatistics.
+        r"""Gets the delete_lines of this RepoStatistics.
 
         删除代码行
 
@@ -198,7 +198,7 @@ class RepoStatistics:
 
     @delete_lines.setter
     def delete_lines(self, delete_lines):
-        """Sets the delete_lines of this RepoStatistics.
+        r"""Sets the delete_lines of this RepoStatistics.
 
         删除代码行
 
@@ -209,7 +209,7 @@ class RepoStatistics:
 
     @property
     def id(self):
-        """Gets the id of this RepoStatistics.
+        r"""Gets the id of this RepoStatistics.
 
         仓库统计记录id
 
@@ -220,7 +220,7 @@ class RepoStatistics:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RepoStatistics.
+        r"""Sets the id of this RepoStatistics.
 
         仓库统计记录id
 
@@ -231,7 +231,7 @@ class RepoStatistics:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RepoStatistics.
+        r"""Gets the project_id of this RepoStatistics.
 
         仓库id
 
@@ -242,7 +242,7 @@ class RepoStatistics:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RepoStatistics.
+        r"""Sets the project_id of this RepoStatistics.
 
         仓库id
 
@@ -253,7 +253,7 @@ class RepoStatistics:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RepoStatistics.
+        r"""Gets the updated_at of this RepoStatistics.
 
         仓库统计更新的时间
 
@@ -264,7 +264,7 @@ class RepoStatistics:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RepoStatistics.
+        r"""Sets the updated_at of this RepoStatistics.
 
         仓库统计更新的时间
 
@@ -275,7 +275,7 @@ class RepoStatistics:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RepoStatistics.
+        r"""Gets the user_name of this RepoStatistics.
 
         用户名
 
@@ -286,7 +286,7 @@ class RepoStatistics:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RepoStatistics.
+        r"""Sets the user_name of this RepoStatistics.
 
         用户名
 

@@ -27,7 +27,7 @@ class WorkNodeResourceDemand:
     }
 
     def __init__(self, name=None, resource=None):
-        """WorkNodeResourceDemand
+        r"""WorkNodeResourceDemand
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class WorkNodeResourceDemand:
 
     @property
     def name(self):
-        """Gets the name of this WorkNodeResourceDemand.
+        r"""Gets the name of this WorkNodeResourceDemand.
 
         资源配置名称
 
@@ -59,7 +59,7 @@ class WorkNodeResourceDemand:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkNodeResourceDemand.
+        r"""Sets the name of this WorkNodeResourceDemand.
 
         资源配置名称
 
@@ -70,7 +70,7 @@ class WorkNodeResourceDemand:
 
     @property
     def resource(self):
-        """Gets the resource of this WorkNodeResourceDemand.
+        r"""Gets the resource of this WorkNodeResourceDemand.
 
         :return: The resource of this WorkNodeResourceDemand.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDemand`
@@ -79,7 +79,7 @@ class WorkNodeResourceDemand:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this WorkNodeResourceDemand.
+        r"""Sets the resource of this WorkNodeResourceDemand.
 
         :param resource: The resource of this WorkNodeResourceDemand.
         :type resource: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDemand`

@@ -25,7 +25,7 @@ class GcbBorderCross:
     }
 
     def __init__(self, bordercross=None):
-        """GcbBorderCross
+        r"""GcbBorderCross
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GcbBorderCross:
 
     @property
     def bordercross(self):
-        """Gets the bordercross of this GcbBorderCross.
+        r"""Gets the bordercross of this GcbBorderCross.
 
         功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
 
@@ -53,7 +53,7 @@ class GcbBorderCross:
 
     @bordercross.setter
     def bordercross(self, bordercross):
-        """Sets the bordercross of this GcbBorderCross.
+        r"""Sets the bordercross of this GcbBorderCross.
 
         功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
 

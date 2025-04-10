@@ -25,7 +25,7 @@ class UpdateProtectedInstanceNameRequestBody:
     }
 
     def __init__(self, protected_instance=None):
-        """UpdateProtectedInstanceNameRequestBody
+        r"""UpdateProtectedInstanceNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateProtectedInstanceNameRequestBody:
 
     @property
     def protected_instance(self):
-        """Gets the protected_instance of this UpdateProtectedInstanceNameRequestBody.
+        r"""Gets the protected_instance of this UpdateProtectedInstanceNameRequestBody.
 
         :return: The protected_instance of this UpdateProtectedInstanceNameRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestParams`
@@ -51,7 +51,7 @@ class UpdateProtectedInstanceNameRequestBody:
 
     @protected_instance.setter
     def protected_instance(self, protected_instance):
-        """Sets the protected_instance of this UpdateProtectedInstanceNameRequestBody.
+        r"""Sets the protected_instance of this UpdateProtectedInstanceNameRequestBody.
 
         :param protected_instance: The protected_instance of this UpdateProtectedInstanceNameRequestBody.
         :type protected_instance: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestParams`

@@ -57,7 +57,7 @@ class Phone:
     }
 
     def __init__(self, phone_name=None, server_id=None, phone_id=None, phone_model_name=None, image_id=None, image_version=None, vnc_enable=None, status=None, type=None, imei=None, traffic_type=None, volume_mode=None, availability_zone=None, metadata=None, has_encrypt=None, create_time=None, update_time=None):
-        """Phone
+        r"""Phone
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class Phone:
 
     @property
     def phone_name(self):
-        """Gets the phone_name of this Phone.
+        r"""Gets the phone_name of this Phone.
 
         云手机的名称，不超过65个字符。
 
@@ -166,7 +166,7 @@ class Phone:
 
     @phone_name.setter
     def phone_name(self, phone_name):
-        """Sets the phone_name of this Phone.
+        r"""Sets the phone_name of this Phone.
 
         云手机的名称，不超过65个字符。
 
@@ -177,7 +177,7 @@ class Phone:
 
     @property
     def server_id(self):
-        """Gets the server_id of this Phone.
+        r"""Gets the server_id of this Phone.
 
         云手机所在的服务器ID，不超过32个字节。
 
@@ -188,7 +188,7 @@ class Phone:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this Phone.
+        r"""Sets the server_id of this Phone.
 
         云手机所在的服务器ID，不超过32个字节。
 
@@ -199,7 +199,7 @@ class Phone:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this Phone.
+        r"""Gets the phone_id of this Phone.
 
         云手机的唯一标识，不超过32个字节。
 
@@ -210,7 +210,7 @@ class Phone:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this Phone.
+        r"""Sets the phone_id of this Phone.
 
         云手机的唯一标识，不超过32个字节。
 
@@ -221,7 +221,7 @@ class Phone:
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this Phone.
+        r"""Gets the phone_model_name of this Phone.
 
         云手机规格名称，不超过64个字节。
 
@@ -232,7 +232,7 @@ class Phone:
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this Phone.
+        r"""Sets the phone_model_name of this Phone.
 
         云手机规格名称，不超过64个字节。
 
@@ -243,7 +243,7 @@ class Phone:
 
     @property
     def image_id(self):
-        """Gets the image_id of this Phone.
+        r"""Gets the image_id of this Phone.
 
         云手机镜像ID，不超过32个字节。
 
@@ -254,7 +254,7 @@ class Phone:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this Phone.
+        r"""Sets the image_id of this Phone.
 
         云手机镜像ID，不超过32个字节。
 
@@ -265,7 +265,7 @@ class Phone:
 
     @property
     def image_version(self):
-        """Gets the image_version of this Phone.
+        r"""Gets the image_version of this Phone.
 
         镜像版本。
 
@@ -276,7 +276,7 @@ class Phone:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this Phone.
+        r"""Sets the image_version of this Phone.
 
         镜像版本。
 
@@ -287,7 +287,7 @@ class Phone:
 
     @property
     def vnc_enable(self):
-        """Gets the vnc_enable of this Phone.
+        r"""Gets the vnc_enable of this Phone.
 
         云手机是否开启VNC服务。 - true：开启 - false：不开启
 
@@ -298,7 +298,7 @@ class Phone:
 
     @vnc_enable.setter
     def vnc_enable(self, vnc_enable):
-        """Sets the vnc_enable of this Phone.
+        r"""Sets the vnc_enable of this Phone.
 
         云手机是否开启VNC服务。 - true：开启 - false：不开启
 
@@ -309,7 +309,7 @@ class Phone:
 
     @property
     def status(self):
-        """Gets the status of this Phone.
+        r"""Gets the status of this Phone.
 
         云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
@@ -320,7 +320,7 @@ class Phone:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Phone.
+        r"""Sets the status of this Phone.
 
         云手机状态。 - 1：创建中 - 2：运行中 - 3：重置中 - 4：重启中 - 6：冻结 - 7：正在关机 - 8：已关机 - -5：重置失败 - -6：重启失败 - -7：手机异常 - -8：创建失败 - -9：关机失败
 
@@ -331,7 +331,7 @@ class Phone:
 
     @property
     def type(self):
-        """Gets the type of this Phone.
+        r"""Gets the type of this Phone.
 
         云手机类型。 - 0：普通云手机 - 1：试玩云手机
 
@@ -342,7 +342,7 @@ class Phone:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Phone.
+        r"""Sets the type of this Phone.
 
         云手机类型。 - 0：普通云手机 - 1：试玩云手机
 
@@ -353,7 +353,7 @@ class Phone:
 
     @property
     def imei(self):
-        """Gets the imei of this Phone.
+        r"""Gets the imei of this Phone.
 
         imei码。
 
@@ -364,7 +364,7 @@ class Phone:
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this Phone.
+        r"""Sets the imei of this Phone.
 
         imei码。
 
@@ -375,7 +375,7 @@ class Phone:
 
     @property
     def traffic_type(self):
-        """Gets the traffic_type of this Phone.
+        r"""Gets the traffic_type of this Phone.
 
         手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
@@ -386,7 +386,7 @@ class Phone:
 
     @traffic_type.setter
     def traffic_type(self, traffic_type):
-        """Sets the traffic_type of this Phone.
+        r"""Sets the traffic_type of this Phone.
 
         手机路由类型。 - direct：默认路由 - routing：路由到编码容器
 
@@ -397,7 +397,7 @@ class Phone:
 
     @property
     def volume_mode(self):
-        """Gets the volume_mode of this Phone.
+        r"""Gets the volume_mode of this Phone.
 
         手机物理磁盘是否独立。 - 0：不独立 - 1：独立
 
@@ -408,7 +408,7 @@ class Phone:
 
     @volume_mode.setter
     def volume_mode(self, volume_mode):
-        """Sets the volume_mode of this Phone.
+        r"""Sets the volume_mode of this Phone.
 
         手机物理磁盘是否独立。 - 0：不独立 - 1：独立
 
@@ -419,7 +419,7 @@ class Phone:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Phone.
+        r"""Gets the availability_zone of this Phone.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -430,7 +430,7 @@ class Phone:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Phone.
+        r"""Sets the availability_zone of this Phone.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -441,7 +441,7 @@ class Phone:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Phone.
+        r"""Gets the metadata of this Phone.
 
         :return: The metadata of this Phone.
         :rtype: :class:`huaweicloudsdkcph.v1.PhoneMetadata`
@@ -450,7 +450,7 @@ class Phone:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Phone.
+        r"""Sets the metadata of this Phone.
 
         :param metadata: The metadata of this Phone.
         :type metadata: :class:`huaweicloudsdkcph.v1.PhoneMetadata`
@@ -459,7 +459,7 @@ class Phone:
 
     @property
     def has_encrypt(self):
-        """Gets the has_encrypt of this Phone.
+        r"""Gets the has_encrypt of this Phone.
 
         当前手机是否开启文件级加密
 
@@ -470,7 +470,7 @@ class Phone:
 
     @has_encrypt.setter
     def has_encrypt(self, has_encrypt):
-        """Sets the has_encrypt of this Phone.
+        r"""Sets the has_encrypt of this Phone.
 
         当前手机是否开启文件级加密
 
@@ -481,7 +481,7 @@ class Phone:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Phone.
+        r"""Gets the create_time of this Phone.
 
         创建时间， 时间格式为UTC。
 
@@ -492,7 +492,7 @@ class Phone:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Phone.
+        r"""Sets the create_time of this Phone.
 
         创建时间， 时间格式为UTC。
 
@@ -503,7 +503,7 @@ class Phone:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Phone.
+        r"""Gets the update_time of this Phone.
 
         更新时间， 时间格式为UTC。
 
@@ -514,7 +514,7 @@ class Phone:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Phone.
+        r"""Sets the update_time of this Phone.
 
         更新时间， 时间格式为UTC。
 

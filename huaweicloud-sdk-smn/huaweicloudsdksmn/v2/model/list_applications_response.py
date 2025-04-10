@@ -30,7 +30,7 @@ class ListApplicationsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, application_count=None, applications=None):
-        """ListApplicationsResponse
+        r"""ListApplicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListApplicationsResponse.
+        r"""Gets the request_id of this ListApplicationsResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListApplicationsResponse.
+        r"""Sets the request_id of this ListApplicationsResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @property
     def application_count(self):
-        """Gets the application_count of this ListApplicationsResponse.
+        r"""Gets the application_count of this ListApplicationsResponse.
 
         返回的Application个数。该参数不受offset和limit影响，即返回的是您账户下所有的Application个数。
 
@@ -91,7 +91,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @application_count.setter
     def application_count(self, application_count):
-        """Sets the application_count of this ListApplicationsResponse.
+        r"""Sets the application_count of this ListApplicationsResponse.
 
         返回的Application个数。该参数不受offset和limit影响，即返回的是您账户下所有的Application个数。
 
@@ -102,7 +102,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @property
     def applications(self):
-        """Gets the applications of this ListApplicationsResponse.
+        r"""Gets the applications of this ListApplicationsResponse.
 
         Application列表。
 
@@ -113,7 +113,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this ListApplicationsResponse.
+        r"""Sets the applications of this ListApplicationsResponse.
 
         Application列表。
 

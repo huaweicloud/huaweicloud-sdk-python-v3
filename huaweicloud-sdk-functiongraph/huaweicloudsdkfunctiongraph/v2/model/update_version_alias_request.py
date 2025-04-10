@@ -29,7 +29,7 @@ class UpdateVersionAliasRequest:
     }
 
     def __init__(self, function_urn=None, alias_name=None, body=None):
-        """UpdateVersionAliasRequest
+        r"""UpdateVersionAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVersionAliasRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateVersionAliasRequest.
+        r"""Gets the function_urn of this UpdateVersionAliasRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -66,7 +66,7 @@ class UpdateVersionAliasRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateVersionAliasRequest.
+        r"""Sets the function_urn of this UpdateVersionAliasRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -77,7 +77,7 @@ class UpdateVersionAliasRequest:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this UpdateVersionAliasRequest.
+        r"""Gets the alias_name of this UpdateVersionAliasRequest.
 
         要更新的别名名称。
 
@@ -88,7 +88,7 @@ class UpdateVersionAliasRequest:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this UpdateVersionAliasRequest.
+        r"""Sets the alias_name of this UpdateVersionAliasRequest.
 
         要更新的别名名称。
 
@@ -99,7 +99,7 @@ class UpdateVersionAliasRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVersionAliasRequest.
+        r"""Gets the body of this UpdateVersionAliasRequest.
 
         :return: The body of this UpdateVersionAliasRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`
@@ -108,7 +108,7 @@ class UpdateVersionAliasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVersionAliasRequest.
+        r"""Sets the body of this UpdateVersionAliasRequest.
 
         :param body: The body of this UpdateVersionAliasRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`

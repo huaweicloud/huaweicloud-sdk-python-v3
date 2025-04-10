@@ -45,7 +45,7 @@ class GroupInfo:
     }
 
     def __init__(self, id=None, name=None, role=None, endpoint=None, ipv6_endpoint=None, is_load_balance=None, is_default_group=None, cpu_num_per_node=None, mem_num_per_node=None, architecture=None, node_list=None):
-        """GroupInfo
+        r"""GroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class GroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this GroupInfo.
+        r"""Gets the id of this GroupInfo.
 
         组ID。
 
@@ -114,7 +114,7 @@ class GroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupInfo.
+        r"""Sets the id of this GroupInfo.
 
         组ID。
 
@@ -125,7 +125,7 @@ class GroupInfo:
 
     @property
     def name(self):
-        """Gets the name of this GroupInfo.
+        r"""Gets the name of this GroupInfo.
 
         组名称。
 
@@ -136,7 +136,7 @@ class GroupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupInfo.
+        r"""Sets the name of this GroupInfo.
 
         组名称。
 
@@ -147,7 +147,7 @@ class GroupInfo:
 
     @property
     def role(self):
-        """Gets the role of this GroupInfo.
+        r"""Gets the role of this GroupInfo.
 
         组角色类型。
 
@@ -158,7 +158,7 @@ class GroupInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this GroupInfo.
+        r"""Sets the role of this GroupInfo.
 
         组角色类型。
 
@@ -169,7 +169,7 @@ class GroupInfo:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this GroupInfo.
+        r"""Gets the endpoint of this GroupInfo.
 
         组连接地址，如未开启负载均衡，则返回的是组内节点连接地址串。
 
@@ -180,7 +180,7 @@ class GroupInfo:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this GroupInfo.
+        r"""Sets the endpoint of this GroupInfo.
 
         组连接地址，如未开启负载均衡，则返回的是组内节点连接地址串。
 
@@ -191,7 +191,7 @@ class GroupInfo:
 
     @property
     def ipv6_endpoint(self):
-        """Gets the ipv6_endpoint of this GroupInfo.
+        r"""Gets the ipv6_endpoint of this GroupInfo.
 
         组ipv6连接地址。
 
@@ -202,7 +202,7 @@ class GroupInfo:
 
     @ipv6_endpoint.setter
     def ipv6_endpoint(self, ipv6_endpoint):
-        """Sets the ipv6_endpoint of this GroupInfo.
+        r"""Sets the ipv6_endpoint of this GroupInfo.
 
         组ipv6连接地址。
 
@@ -213,7 +213,7 @@ class GroupInfo:
 
     @property
     def is_load_balance(self):
-        """Gets the is_load_balance of this GroupInfo.
+        r"""Gets the is_load_balance of this GroupInfo.
 
         是否开启负载均衡。
 
@@ -224,7 +224,7 @@ class GroupInfo:
 
     @is_load_balance.setter
     def is_load_balance(self, is_load_balance):
-        """Sets the is_load_balance of this GroupInfo.
+        r"""Sets the is_load_balance of this GroupInfo.
 
         是否开启负载均衡。
 
@@ -235,7 +235,7 @@ class GroupInfo:
 
     @property
     def is_default_group(self):
-        """Gets the is_default_group of this GroupInfo.
+        r"""Gets the is_default_group of this GroupInfo.
 
         是否默认组。
 
@@ -246,7 +246,7 @@ class GroupInfo:
 
     @is_default_group.setter
     def is_default_group(self, is_default_group):
-        """Sets the is_default_group of this GroupInfo.
+        r"""Sets the is_default_group of this GroupInfo.
 
         是否默认组。
 
@@ -257,7 +257,7 @@ class GroupInfo:
 
     @property
     def cpu_num_per_node(self):
-        """Gets the cpu_num_per_node of this GroupInfo.
+        r"""Gets the cpu_num_per_node of this GroupInfo.
 
         单节点CPU核数。
 
@@ -268,7 +268,7 @@ class GroupInfo:
 
     @cpu_num_per_node.setter
     def cpu_num_per_node(self, cpu_num_per_node):
-        """Sets the cpu_num_per_node of this GroupInfo.
+        r"""Sets the cpu_num_per_node of this GroupInfo.
 
         单节点CPU核数。
 
@@ -279,7 +279,7 @@ class GroupInfo:
 
     @property
     def mem_num_per_node(self):
-        """Gets the mem_num_per_node of this GroupInfo.
+        r"""Gets the mem_num_per_node of this GroupInfo.
 
         单节点内存大小,单位G。
 
@@ -290,7 +290,7 @@ class GroupInfo:
 
     @mem_num_per_node.setter
     def mem_num_per_node(self, mem_num_per_node):
-        """Sets the mem_num_per_node of this GroupInfo.
+        r"""Sets the mem_num_per_node of this GroupInfo.
 
         单节点内存大小,单位G。
 
@@ -301,7 +301,7 @@ class GroupInfo:
 
     @property
     def architecture(self):
-        """Gets the architecture of this GroupInfo.
+        r"""Gets the architecture of this GroupInfo.
 
         CPU架构。
 
@@ -312,7 +312,7 @@ class GroupInfo:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this GroupInfo.
+        r"""Sets the architecture of this GroupInfo.
 
         CPU架构。
 
@@ -323,7 +323,7 @@ class GroupInfo:
 
     @property
     def node_list(self):
-        """Gets the node_list of this GroupInfo.
+        r"""Gets the node_list of this GroupInfo.
 
         节点信息列表。
 
@@ -334,7 +334,7 @@ class GroupInfo:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this GroupInfo.
+        r"""Sets the node_list of this GroupInfo.
 
         节点信息列表。
 

@@ -33,7 +33,7 @@ class ListAllFunctionsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, limit=None, marker=None, reverse_page=None):
-        """ListAllFunctionsRequest
+        r"""ListAllFunctionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListAllFunctionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAllFunctionsRequest.
+        r"""Gets the instance_id of this ListAllFunctionsRequest.
 
         实例Id
 
@@ -80,7 +80,7 @@ class ListAllFunctionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAllFunctionsRequest.
+        r"""Sets the instance_id of this ListAllFunctionsRequest.
 
         实例Id
 
@@ -91,7 +91,7 @@ class ListAllFunctionsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListAllFunctionsRequest.
+        r"""Gets the catalog_name of this ListAllFunctionsRequest.
 
         catalog名字
 
@@ -102,7 +102,7 @@ class ListAllFunctionsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListAllFunctionsRequest.
+        r"""Sets the catalog_name of this ListAllFunctionsRequest.
 
         catalog名字
 
@@ -113,7 +113,7 @@ class ListAllFunctionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAllFunctionsRequest.
+        r"""Gets the limit of this ListAllFunctionsRequest.
 
         查询返回条数
 
@@ -124,7 +124,7 @@ class ListAllFunctionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAllFunctionsRequest.
+        r"""Sets the limit of this ListAllFunctionsRequest.
 
         查询返回条数
 
@@ -135,7 +135,7 @@ class ListAllFunctionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAllFunctionsRequest.
+        r"""Gets the marker of this ListAllFunctionsRequest.
 
         查询的起始记录ID
 
@@ -146,7 +146,7 @@ class ListAllFunctionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAllFunctionsRequest.
+        r"""Sets the marker of this ListAllFunctionsRequest.
 
         查询的起始记录ID
 
@@ -157,7 +157,7 @@ class ListAllFunctionsRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListAllFunctionsRequest.
+        r"""Gets the reverse_page of this ListAllFunctionsRequest.
 
         是否查询上一页
 
@@ -168,7 +168,7 @@ class ListAllFunctionsRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListAllFunctionsRequest.
+        r"""Sets the reverse_page of this ListAllFunctionsRequest.
 
         是否查询上一页
 

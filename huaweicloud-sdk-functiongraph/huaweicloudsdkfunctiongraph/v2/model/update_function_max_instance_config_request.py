@@ -27,7 +27,7 @@ class UpdateFunctionMaxInstanceConfigRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateFunctionMaxInstanceConfigRequest
+        r"""UpdateFunctionMaxInstanceConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFunctionMaxInstanceConfigRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateFunctionMaxInstanceConfigRequest.
+        r"""Gets the function_urn of this UpdateFunctionMaxInstanceConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class UpdateFunctionMaxInstanceConfigRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateFunctionMaxInstanceConfigRequest.
+        r"""Sets the function_urn of this UpdateFunctionMaxInstanceConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class UpdateFunctionMaxInstanceConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFunctionMaxInstanceConfigRequest.
+        r"""Gets the body of this UpdateFunctionMaxInstanceConfigRequest.
 
         :return: The body of this UpdateFunctionMaxInstanceConfigRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequestBody`
@@ -80,7 +80,7 @@ class UpdateFunctionMaxInstanceConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFunctionMaxInstanceConfigRequest.
+        r"""Sets the body of this UpdateFunctionMaxInstanceConfigRequest.
 
         :param body: The body of this UpdateFunctionMaxInstanceConfigRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequestBody`

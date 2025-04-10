@@ -34,7 +34,7 @@ class IoTEdgeAsyncClient(Client):
         return client_builder
 
     def create_edge_node_async(self, request):
-        """创建边缘节点
+        r"""创建边缘节点
 
         创建边缘节点
         
@@ -99,7 +99,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_install_cmd_async(self, request):
-        """生成边缘节点安装命令
+        r"""生成边缘节点安装命令
 
         生成边缘节点安装命令，命令有效时间30分钟，超过后需要重新生成
         
@@ -168,7 +168,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_edge_node_async(self, request):
-        """删除边缘节点
+        r"""删除边缘节点
 
         删除指定边缘节点
         
@@ -235,7 +235,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_edge_nodes_async(self, request):
-        """查询边缘节点列表
+        r"""查询边缘节点列表
 
         查询边缘节点列表
         
@@ -315,7 +315,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_edge_node_async(self, request):
-        """查询边缘节点详情
+        r"""查询边缘节点详情
 
         查询边缘节点详情
         
@@ -380,7 +380,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_edge_node_hosts_info_async(self, request):
-        """查询边缘节点下的主机详情
+        r"""查询边缘节点下的主机详情
 
         查询边缘节点下的主机详情
         
@@ -445,7 +445,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_edge_node_async(self, request):
-        """修改边缘节点
+        r"""修改边缘节点
 
         修改边缘节点
         
@@ -512,7 +512,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def execute_device_controls_release_async(self, request):
-        """设备控制释放
+        r"""设备控制释放
 
         设备控制释放
         
@@ -581,7 +581,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def execute_device_controls_set_async(self, request):
-        """设备控制设置
+        r"""设备控制设置
 
         设备控制设置
         
@@ -650,7 +650,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_property_active_controls_async(self, request):
-        """获取属性执行中的控制
+        r"""获取属性执行中的控制
 
         获取属性执行中的控制
         
@@ -721,7 +721,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def set_device_control_default_values_async(self, request):
-        """设备控制默认值
+        r"""设备控制默认值
 
         设备控制默认值
         
@@ -788,7 +788,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def add_device_async(self, request):
-        """添加设备
+        r"""添加设备
 
         添加设备
         
@@ -855,7 +855,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_device_async(self, request):
-        """删除设备
+        r"""删除设备
 
         删除设备
         
@@ -922,7 +922,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_devices_async(self, request):
-        """查询设备列表
+        r"""查询设备列表
 
         查询设备列表
         
@@ -995,7 +995,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_product_config_async(self, request):
-        """获取协议配置
+        r"""获取协议配置
 
         获取协议配置
         
@@ -1060,7 +1060,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_device_async(self, request):
-        """修改设备
+        r"""修改设备
 
         修改设备
         
@@ -1129,7 +1129,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def add_app_configs_templates_async(self, request):
-        """添加应用配置模板
+        r"""添加应用配置模板
 
         添加应用配置模板
         
@@ -1194,7 +1194,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def add_general_app_configs_template_async(self, request):
-        """导入标准应用配置模板
+        r"""导入标准应用配置模板
 
         导入标准应用配置模板
         
@@ -1257,7 +1257,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_app_configs_templates_async(self, request):
-        """查询应用配置模板列表
+        r"""查询应用配置模板列表
 
         查询应用配置模板列表
         
@@ -1324,7 +1324,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_app_configs_template_async(self, request):
-        """删除应用配置模板
+        r"""删除应用配置模板
 
         删除应用配置模板
         
@@ -1389,7 +1389,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_app_configs_template_async(self, request):
-        """查询应用配置模板详情
+        r"""查询应用配置模板详情
 
         查询应用配置模板详情
         
@@ -1454,7 +1454,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_edge_apps_async(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         查询应用列表
         
@@ -1527,7 +1527,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_edge_app_async(self, request):
-        """创建应用
+        r"""创建应用
 
         创建应用
         
@@ -1592,7 +1592,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_edge_app_async(self, request):
-        """删除应用
+        r"""删除应用
 
         删除应用
         
@@ -1657,7 +1657,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_edge_app_async(self, request):
-        """查询应用
+        r"""查询应用
 
         查询应用
         
@@ -1722,7 +1722,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_edge_app_versions_async(self, request):
-        """查询应用版本列表
+        r"""查询应用版本列表
 
         查询应用版本列表
         
@@ -1799,7 +1799,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_edge_application_version_async(self, request):
-        """创建应用版本
+        r"""创建应用版本
 
         创建应用版本
         
@@ -1866,7 +1866,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_edge_application_version_async(self, request):
-        """删除应用版本
+        r"""删除应用版本
 
         删除应用版本
         
@@ -1933,7 +1933,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_edge_application_version_async(self, request):
-        """查询应用版本详情
+        r"""查询应用版本详情
 
         查询应用版本详情
         
@@ -2000,7 +2000,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_edge_application_version_async(self, request):
-        """修改应用版本
+        r"""修改应用版本
 
         修改应用版本
         
@@ -2069,7 +2069,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_edge_application_version_state_async(self, request):
-        """更新应用版本状态
+        r"""更新应用版本状态
 
         更新应用版本状态。
         
@@ -2138,7 +2138,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_dc_ds_async(self, request):
-        """查询数据源配置列表
+        r"""查询数据源配置列表
 
         查询数据源配置列表
         
@@ -2209,7 +2209,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_ds_async(self, request):
-        """创建数据源配置
+        r"""创建数据源配置
 
         用户通过Console接口在指定边缘节点上创建数据源配置
         
@@ -2276,7 +2276,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_dc_ds_async(self, request):
-        """删除数据源配置
+        r"""删除数据源配置
 
         删除数据源配置
         
@@ -2343,7 +2343,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_dc_ds_async(self, request):
-        """查询数据源配置
+        r"""查询数据源配置
 
         查询数据源配置
         
@@ -2410,7 +2410,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def synchronize_dc_configs_async(self, request):
-        """下发数采配置
+        r"""下发数采配置
 
         下发数采配置
         
@@ -2477,7 +2477,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_dc_ds_async(self, request):
-        """修改数据源配置
+        r"""修改数据源配置
 
         修改数据源配置
         
@@ -2546,7 +2546,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_dc_devices_async(self, request):
-        """查数采连接子设备列表
+        r"""查数采连接子设备列表
 
         查询数采连接下子设备列表
         
@@ -2619,7 +2619,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_dc_points_async(self, request):
-        """查询点位表配置列表
+        r"""查询点位表配置列表
 
         查询点位表配置列表
         
@@ -2698,7 +2698,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_dc_point_async(self, request):
-        """创建点位表配置
+        r"""创建点位表配置
 
         用户通过Console接口在指定边缘节点上点位表配置
         
@@ -2767,7 +2767,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_dc_point_async(self, request):
-        """删除点位表配置
+        r"""删除点位表配置
 
         删除点位表配置
         
@@ -2840,7 +2840,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_dc_points_async(self, request):
-        """批量删除点位表配置
+        r"""批量删除点位表配置
 
         批量删除点位表配置
         
@@ -2909,7 +2909,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_dc_point_async(self, request):
-        """查询点位表配置详情
+        r"""查询点位表配置详情
 
         查询点位表配置详情
         
@@ -2982,7 +2982,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_dc_point_async(self, request):
-        """修改点位表配置
+        r"""修改点位表配置
 
         修改点位表配置
         
@@ -3053,7 +3053,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_external_entity_async(self, request):
-        """在指定节点上创建外部实体
+        r"""在指定节点上创建外部实体
 
         用户通过在指定边缘节点上设置外部实体的接入信息
         
@@ -3120,7 +3120,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_external_entity_async(self, request):
-        """删除指定节点下外部实体
+        r"""删除指定节点下外部实体
 
         删除节点下外部实体
         
@@ -3187,7 +3187,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_external_entity_async(self, request):
-        """查询指定边缘节点下的外部实体
+        r"""查询指定边缘节点下的外部实体
 
         用户在指定边缘节点上查询外部实体列表
         
@@ -3256,7 +3256,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_external_entity_async(self, request):
-        """修改节点下指定的外部实体信息
+        r"""修改节点下指定的外部实体信息
 
         用户通过在指定边缘节点上修改指定外部实体的接入信息
         
@@ -3325,7 +3325,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_modules_async(self, request):
-        """查询边缘模块列表
+        r"""查询边缘模块列表
 
         用户通过Console接口查询指定边缘节点上边缘模块列表
         
@@ -3398,7 +3398,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_module_async(self, request):
-        """创建边缘模块
+        r"""创建边缘模块
 
         用户通过Console接口在指定边缘节点上创建边缘模块
         
@@ -3465,7 +3465,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_module_async(self, request):
-        """删除边缘模块
+        r"""删除边缘模块
 
         用户通过过Console接口在指定边缘节点上删除边缘模块
         
@@ -3532,7 +3532,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def invoke_module_msg_async(self, request):
-        """代理边缘模块消息
+        r"""代理边缘模块消息
 
         iotedge通过该接口透明代理用户到模块的请求
         
@@ -3601,7 +3601,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_module_async(self, request):
-        """查询边缘模块
+        r"""查询边缘模块
 
         用户通过Console接口查询指定边缘节点上指定边缘模块
         
@@ -3668,7 +3668,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_module_async(self, request):
-        """修改边缘模块
+        r"""修改边缘模块
 
         用户通过Console接口查询指定边缘节点上指定边缘模块
         
@@ -3737,7 +3737,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_module_state_async(self, request):
-        """修改边缘模块状态
+        r"""修改边缘模块状态
 
         用户通过Console接口启停数采连接
         
@@ -3806,7 +3806,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_module_shadow_async(self, request):
-        """获取模块影子
+        r"""获取模块影子
 
         获取模块影子信息
         
@@ -3873,7 +3873,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_module_shadow_async(self, request):
-        """更新模块影子
+        r"""更新模块影子
 
         更新模块影子信息
         
@@ -3942,7 +3942,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_routes_async(self, request):
-        """查询边缘路由列表
+        r"""查询边缘路由列表
 
         用户在指定边缘节点上查询边缘路由列表
         
@@ -4009,7 +4009,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_routes_async(self, request):
-        """设置边缘路由
+        r"""设置边缘路由
 
         用户通过在指定边缘节点上设置边缘路由
         
@@ -4076,7 +4076,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def add_general_ot_template_async(self, request):
-        """导入标准数采模板
+        r"""导入标准数采模板
 
         导入标准数采模板
         
@@ -4139,7 +4139,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def add_ot_templates_async(self, request):
-        """添加数采模板
+        r"""添加数采模板
 
         添加数采模板
         
@@ -4204,7 +4204,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_list_ot_templates_async(self, request):
-        """查询数采模板列表
+        r"""查询数采模板列表
 
         查询数采模板列表
         
@@ -4271,7 +4271,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_ot_template_async(self, request):
-        """删除数采模板
+        r"""删除数采模板
 
         删除数采模板
         
@@ -4336,7 +4336,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_ot_template_async(self, request):
-        """查询数采模板详情
+        r"""查询数采模板详情
 
         查询数采模板详情
         
@@ -4401,7 +4401,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def import_points_async(self, request):
-        """批量导入点位表
+        r"""批量导入点位表
 
         用户通过Console接口在指定边缘节点上点位表配置
         
@@ -4474,7 +4474,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_point_template_async(self, request):
-        """查询点位表模板文件
+        r"""查询点位表模板文件
 
         查询点位表模板文件
         
@@ -4541,7 +4541,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_points_async(self, request):
-        """查询点位表模板文件
+        r"""查询点位表模板文件
 
         查询点位表模板文件
         
@@ -4608,7 +4608,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_schedule_async(self, request):
-        """创建调度计划
+        r"""创建调度计划
 
         用户通过北向接口在指定边缘节点上创建调度计划
         
@@ -4675,7 +4675,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_schedule_async(self, request):
-        """删除调度计划
+        r"""删除调度计划
 
         用户通过北向接口删除边缘节点上调度计划
         
@@ -4742,7 +4742,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_schedule_async(self, request):
-        """更新调度计划，机机接口，全量更新字段
+        r"""更新调度计划，机机接口，全量更新字段
 
         用户通过北向接口修改边缘节点上调度计划
         
@@ -4811,7 +4811,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_confirm_configs_new_async(self, request):
-        """批量确认南向3rdIA配置项
+        r"""批量确认南向3rdIA配置项
 
         南向3rdIA对下发的配置项进行批量确认
         
@@ -4880,7 +4880,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_import_configs_async(self, request):
-        """批量导入南向3rdIA配置项
+        r"""批量导入南向3rdIA配置项
 
         批量导入南向3rdIA配置项
         
@@ -4949,7 +4949,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_ia_config_async(self, request):
-        """删除南向3rdIA配置项
+        r"""删除南向3rdIA配置项
 
         删除南向3rdIA配置项
         
@@ -5018,7 +5018,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_ia_configs_async(self, request):
-        """查询南向3rdIA配置项列表
+        r"""查询南向3rdIA配置项列表
 
         查询南向3rdIA配置项列表
         
@@ -5089,7 +5089,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_ia_config_async(self, request):
-        """查询南向3rdIA配置项详情
+        r"""查询南向3rdIA配置项详情
 
         查询南向3rdIA配置项详情
         
@@ -5158,7 +5158,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_ia_config_async(self, request):
-        """创建&更新南向3rdIA配置项信息
+        r"""创建&更新南向3rdIA配置项信息
 
         创建&amp;更新南向3rdIA配置项信息
         
@@ -5229,7 +5229,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def batch_associate_na_to_nodes_async(self, request):
-        """授权北向NA信息到边缘节点
+        r"""授权北向NA信息到边缘节点
 
         批量授权北向NA信息到边缘节点。
         已授权的边缘节点上的南向IA应用，可以通过部署在边缘节点上的api网关访问北向NA提供的接口。
@@ -5299,7 +5299,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_na_async(self, request):
-        """删除北向NA信息
+        r"""删除北向NA信息
 
         删除北向NA信息，如果有边缘节点已分配该NA信息，会通知到该边缘节点。
         
@@ -5364,7 +5364,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_na_authorized_nodes_async(self, request):
-        """查询该北向NA信息的已分配节点
+        r"""查询该北向NA信息的已分配节点
 
         查询该北向NA信息的已分配节点
         
@@ -5433,7 +5433,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_nas_async(self, request):
-        """查询北向NA信息列表
+        r"""查询北向NA信息列表
 
         查询北向NA信息列表
         
@@ -5502,7 +5502,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_na_async(self, request):
-        """查询北向NA信息详情
+        r"""查询北向NA信息详情
 
         查询北向NA信息详情
         
@@ -5567,7 +5567,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_na_async(self, request):
-        """创建&更新北向NA信息
+        r"""创建&更新北向NA信息
 
         创建&amp;更新北向NA信息，当更新北向NA信息时，会通知到已分配该北向NA的所有边缘节点。
         

@@ -34,7 +34,7 @@ class SisAsyncClient(Client):
         return client_builder
 
     def collect_transcriber_job_async(self, request):
-        """获取录音文件识别结果
+        r"""获取录音文件识别结果
 
         该接口用于获取录音文件识别结果及识别状态。
         
@@ -99,7 +99,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def create_vocabulary_async(self, request):
-        """创建热词表
+        r"""创建热词表
 
         新建一个热词表，创建成功返回id。每个用户限制创建10个热词表。
         
@@ -164,7 +164,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def delete_vocabulary_async(self, request):
-        """删除热词表
+        r"""删除热词表
 
         通过热词表id删除热词表。
         
@@ -229,7 +229,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def push_transcriber_jobs_async(self, request):
-        """提交录音文件识别任务
+        r"""提交录音文件识别任务
 
         **录音文件识别**
         录音文件识别接口，用于识别长录音文件，录音文件放在华为云OBS（对象存储服务）上。
@@ -305,7 +305,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def recognize_flash_asr_async(self, request):
-        """录音文件识别极速版
+        r"""录音文件识别极速版
 
         极速版ASR(Restful API 接口, 适用于音频(文件大小&lt;&#x3D;100M,语音时长&lt;&#x3D;30分钟)文件的同步识别。
         此接口以POST方式一次性上传整个音频或从华为OBS中下载音频， 识别结果将在请求响应中即刻返回，用于语音文件极速转写，质检分析的离线场景。
@@ -387,7 +387,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def recognize_short_audio_async(self, request):
-        """一句话识别
+        r"""一句话识别
 
         一句话识别接口，用于短语音的同步识别。一次性上传整个音频，响应中即返回识别结果。
         
@@ -452,7 +452,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def run_tts_async(self, request):
-        """语音合成
+        r"""语音合成
 
         语音合成，是一种将文本转换成逼真语音的服务。用户通过实时访问和调用API获取语音合成结果，将用户输入的文字合成为音频。通过音色选择、自定义音量、语速，为企业和个人提供个性化的发音服务
         
@@ -517,7 +517,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def show_vocabularies_async(self, request):
-        """查询热词表列表
+        r"""查询热词表列表
 
         查询用户所有热词表列表。
         
@@ -586,7 +586,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def show_vocabulary_async(self, request):
-        """查询热词表信息
+        r"""查询热词表信息
 
         通过热词表id查询热词表的信息和内容。
         
@@ -651,7 +651,7 @@ class SisAsyncClient(Client):
         return http_info
 
     def update_vocabulary_async(self, request):
-        """更新热词表
+        r"""更新热词表
 
         更新一个热词表，更新成功返回id。
         

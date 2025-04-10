@@ -27,7 +27,7 @@ class RebootNodeRequest:
     }
 
     def __init__(self, id=None, force=None):
-        """RebootNodeRequest
+        r"""RebootNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RebootNodeRequest:
 
     @property
     def id(self):
-        """Gets the id of this RebootNodeRequest.
+        r"""Gets the id of this RebootNodeRequest.
 
         计算资源id
 
@@ -60,7 +60,7 @@ class RebootNodeRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RebootNodeRequest.
+        r"""Sets the id of this RebootNodeRequest.
 
         计算资源id
 
@@ -71,7 +71,7 @@ class RebootNodeRequest:
 
     @property
     def force(self):
-        """Gets the force of this RebootNodeRequest.
+        r"""Gets the force of this RebootNodeRequest.
 
         是否强制重启，默认为false
 
@@ -82,7 +82,7 @@ class RebootNodeRequest:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this RebootNodeRequest.
+        r"""Sets the force of this RebootNodeRequest.
 
         是否强制重启，默认为false
 

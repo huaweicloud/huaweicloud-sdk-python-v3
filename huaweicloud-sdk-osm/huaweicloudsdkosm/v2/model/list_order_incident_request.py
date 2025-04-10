@@ -55,7 +55,7 @@ class ListOrderIncidentRequest:
     }
 
     def __init__(self, version=None, search_key=None, label_id_list=None, app_key=None, incident_id=None, query_start_time=None, query_end_time=None, status=None, incident_status=None, x_customer_name=None, group_id=None, product_category_id=None, business_type_id=None, page_no=None, page_size=None, x_customer_id=None):
-        """ListOrderIncidentRequest
+        r"""ListOrderIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListOrderIncidentRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListOrderIncidentRequest.
+        r"""Gets the version of this ListOrderIncidentRequest.
 
         版本号
 
@@ -159,7 +159,7 @@ class ListOrderIncidentRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListOrderIncidentRequest.
+        r"""Sets the version of this ListOrderIncidentRequest.
 
         版本号
 
@@ -170,7 +170,7 @@ class ListOrderIncidentRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListOrderIncidentRequest.
+        r"""Gets the search_key of this ListOrderIncidentRequest.
 
         关键字
 
@@ -181,7 +181,7 @@ class ListOrderIncidentRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListOrderIncidentRequest.
+        r"""Sets the search_key of this ListOrderIncidentRequest.
 
         关键字
 
@@ -192,7 +192,7 @@ class ListOrderIncidentRequest:
 
     @property
     def label_id_list(self):
-        """Gets the label_id_list of this ListOrderIncidentRequest.
+        r"""Gets the label_id_list of this ListOrderIncidentRequest.
 
         标签列表
 
@@ -203,7 +203,7 @@ class ListOrderIncidentRequest:
 
     @label_id_list.setter
     def label_id_list(self, label_id_list):
-        """Sets the label_id_list of this ListOrderIncidentRequest.
+        r"""Sets the label_id_list of this ListOrderIncidentRequest.
 
         标签列表
 
@@ -214,7 +214,7 @@ class ListOrderIncidentRequest:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ListOrderIncidentRequest.
+        r"""Gets the app_key of this ListOrderIncidentRequest.
 
         appKey
 
@@ -225,7 +225,7 @@ class ListOrderIncidentRequest:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ListOrderIncidentRequest.
+        r"""Sets the app_key of this ListOrderIncidentRequest.
 
         appKey
 
@@ -236,7 +236,7 @@ class ListOrderIncidentRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ListOrderIncidentRequest.
+        r"""Gets the incident_id of this ListOrderIncidentRequest.
 
         incidentId
 
@@ -247,7 +247,7 @@ class ListOrderIncidentRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ListOrderIncidentRequest.
+        r"""Sets the incident_id of this ListOrderIncidentRequest.
 
         incidentId
 
@@ -258,7 +258,7 @@ class ListOrderIncidentRequest:
 
     @property
     def query_start_time(self):
-        """Gets the query_start_time of this ListOrderIncidentRequest.
+        r"""Gets the query_start_time of this ListOrderIncidentRequest.
 
         查询开始时间
 
@@ -269,7 +269,7 @@ class ListOrderIncidentRequest:
 
     @query_start_time.setter
     def query_start_time(self, query_start_time):
-        """Sets the query_start_time of this ListOrderIncidentRequest.
+        r"""Sets the query_start_time of this ListOrderIncidentRequest.
 
         查询开始时间
 
@@ -280,7 +280,7 @@ class ListOrderIncidentRequest:
 
     @property
     def query_end_time(self):
-        """Gets the query_end_time of this ListOrderIncidentRequest.
+        r"""Gets the query_end_time of this ListOrderIncidentRequest.
 
         查询结束时间
 
@@ -291,7 +291,7 @@ class ListOrderIncidentRequest:
 
     @query_end_time.setter
     def query_end_time(self, query_end_time):
-        """Sets the query_end_time of this ListOrderIncidentRequest.
+        r"""Sets the query_end_time of this ListOrderIncidentRequest.
 
         查询结束时间
 
@@ -302,7 +302,7 @@ class ListOrderIncidentRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListOrderIncidentRequest.
+        r"""Gets the status of this ListOrderIncidentRequest.
 
         状态
 
@@ -313,7 +313,7 @@ class ListOrderIncidentRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListOrderIncidentRequest.
+        r"""Sets the status of this ListOrderIncidentRequest.
 
         状态
 
@@ -324,7 +324,7 @@ class ListOrderIncidentRequest:
 
     @property
     def incident_status(self):
-        """Gets the incident_status of this ListOrderIncidentRequest.
+        r"""Gets the incident_status of this ListOrderIncidentRequest.
 
         工单状态
 
@@ -335,7 +335,7 @@ class ListOrderIncidentRequest:
 
     @incident_status.setter
     def incident_status(self, incident_status):
-        """Sets the incident_status of this ListOrderIncidentRequest.
+        r"""Sets the incident_status of this ListOrderIncidentRequest.
 
         工单状态
 
@@ -346,7 +346,7 @@ class ListOrderIncidentRequest:
 
     @property
     def x_customer_name(self):
-        """Gets the x_customer_name of this ListOrderIncidentRequest.
+        r"""Gets the x_customer_name of this ListOrderIncidentRequest.
 
         用户名称
 
@@ -357,7 +357,7 @@ class ListOrderIncidentRequest:
 
     @x_customer_name.setter
     def x_customer_name(self, x_customer_name):
-        """Sets the x_customer_name of this ListOrderIncidentRequest.
+        r"""Sets the x_customer_name of this ListOrderIncidentRequest.
 
         用户名称
 
@@ -368,7 +368,7 @@ class ListOrderIncidentRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListOrderIncidentRequest.
+        r"""Gets the group_id of this ListOrderIncidentRequest.
 
         分组
 
@@ -379,7 +379,7 @@ class ListOrderIncidentRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListOrderIncidentRequest.
+        r"""Sets the group_id of this ListOrderIncidentRequest.
 
         分组
 
@@ -390,7 +390,7 @@ class ListOrderIncidentRequest:
 
     @property
     def product_category_id(self):
-        """Gets the product_category_id of this ListOrderIncidentRequest.
+        r"""Gets the product_category_id of this ListOrderIncidentRequest.
 
         产品分类
 
@@ -401,7 +401,7 @@ class ListOrderIncidentRequest:
 
     @product_category_id.setter
     def product_category_id(self, product_category_id):
-        """Sets the product_category_id of this ListOrderIncidentRequest.
+        r"""Sets the product_category_id of this ListOrderIncidentRequest.
 
         产品分类
 
@@ -412,7 +412,7 @@ class ListOrderIncidentRequest:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this ListOrderIncidentRequest.
+        r"""Gets the business_type_id of this ListOrderIncidentRequest.
 
         类型
 
@@ -423,7 +423,7 @@ class ListOrderIncidentRequest:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this ListOrderIncidentRequest.
+        r"""Sets the business_type_id of this ListOrderIncidentRequest.
 
         类型
 
@@ -434,7 +434,7 @@ class ListOrderIncidentRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListOrderIncidentRequest.
+        r"""Gets the page_no of this ListOrderIncidentRequest.
 
         页码
 
@@ -445,7 +445,7 @@ class ListOrderIncidentRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListOrderIncidentRequest.
+        r"""Sets the page_no of this ListOrderIncidentRequest.
 
         页码
 
@@ -456,7 +456,7 @@ class ListOrderIncidentRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListOrderIncidentRequest.
+        r"""Gets the page_size of this ListOrderIncidentRequest.
 
         分页大小
 
@@ -467,7 +467,7 @@ class ListOrderIncidentRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListOrderIncidentRequest.
+        r"""Sets the page_size of this ListOrderIncidentRequest.
 
         分页大小
 
@@ -478,7 +478,7 @@ class ListOrderIncidentRequest:
 
     @property
     def x_customer_id(self):
-        """Gets the x_customer_id of this ListOrderIncidentRequest.
+        r"""Gets the x_customer_id of this ListOrderIncidentRequest.
 
         客户id
 
@@ -489,7 +489,7 @@ class ListOrderIncidentRequest:
 
     @x_customer_id.setter
     def x_customer_id(self, x_customer_id):
-        """Sets the x_customer_id of this ListOrderIncidentRequest.
+        r"""Sets the x_customer_id of this ListOrderIncidentRequest.
 
         客户id
 

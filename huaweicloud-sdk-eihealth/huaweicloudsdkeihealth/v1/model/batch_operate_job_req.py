@@ -25,7 +25,7 @@ class BatchOperateJobReq:
     }
 
     def __init__(self, ids=None):
-        """BatchOperateJobReq
+        r"""BatchOperateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchOperateJobReq:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchOperateJobReq.
+        r"""Gets the ids of this BatchOperateJobReq.
 
         批量操作作业id列表
 
@@ -53,7 +53,7 @@ class BatchOperateJobReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchOperateJobReq.
+        r"""Sets the ids of this BatchOperateJobReq.
 
         批量操作作业id列表
 

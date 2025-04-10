@@ -23,7 +23,7 @@ class ShowTenantDurationCfgRequest:
     }
 
     def __init__(self):
-        """ShowTenantDurationCfgRequest
+        r"""ShowTenantDurationCfgRequest
 
         The model defined in huaweicloud sdk
 

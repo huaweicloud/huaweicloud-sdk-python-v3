@@ -26,7 +26,7 @@ class ExportDlqMessageResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ExportDlqMessageResponse
+        r"""ExportDlqMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExportDlqMessageResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ExportDlqMessageResponse.
+        r"""Gets the body of this ExportDlqMessageResponse.
 
         :return: The body of this ExportDlqMessageResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Message`]
@@ -53,7 +53,7 @@ class ExportDlqMessageResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportDlqMessageResponse.
+        r"""Sets the body of this ExportDlqMessageResponse.
 
         :param body: The body of this ExportDlqMessageResponse.
         :type body: list[:class:`huaweicloudsdkrocketmq.v2.Message`]

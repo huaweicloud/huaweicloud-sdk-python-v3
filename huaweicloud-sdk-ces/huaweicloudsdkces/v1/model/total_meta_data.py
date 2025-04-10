@@ -25,7 +25,7 @@ class TotalMetaData:
     }
 
     def __init__(self, total=None):
-        """TotalMetaData
+        r"""TotalMetaData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TotalMetaData:
 
     @property
     def total(self):
-        """Gets the total of this TotalMetaData.
+        r"""Gets the total of this TotalMetaData.
 
         总条数。
 
@@ -54,7 +54,7 @@ class TotalMetaData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TotalMetaData.
+        r"""Sets the total of this TotalMetaData.
 
         总条数。
 

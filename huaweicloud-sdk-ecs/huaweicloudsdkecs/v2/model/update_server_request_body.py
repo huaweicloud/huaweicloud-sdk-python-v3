@@ -25,7 +25,7 @@ class UpdateServerRequestBody:
     }
 
     def __init__(self, server=None):
-        """UpdateServerRequestBody
+        r"""UpdateServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateServerRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this UpdateServerRequestBody.
+        r"""Gets the server of this UpdateServerRequestBody.
 
         :return: The server of this UpdateServerRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerOption`
@@ -51,7 +51,7 @@ class UpdateServerRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this UpdateServerRequestBody.
+        r"""Sets the server of this UpdateServerRequestBody.
 
         :param server: The server of this UpdateServerRequestBody.
         :type server: :class:`huaweicloudsdkecs.v2.UpdateServerOption`

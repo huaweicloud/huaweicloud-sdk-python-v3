@@ -29,7 +29,7 @@ class UpdateDrugJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None, body=None):
-        """UpdateDrugJobRequest
+        r"""UpdateDrugJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDrugJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateDrugJobRequest.
+        r"""Gets the eihealth_project_id of this UpdateDrugJobRequest.
 
         平台项目ID。
 
@@ -66,7 +66,7 @@ class UpdateDrugJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateDrugJobRequest.
+        r"""Sets the eihealth_project_id of this UpdateDrugJobRequest.
 
         平台项目ID。
 
@@ -77,7 +77,7 @@ class UpdateDrugJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateDrugJobRequest.
+        r"""Gets the job_id of this UpdateDrugJobRequest.
 
         作业id
 
@@ -88,7 +88,7 @@ class UpdateDrugJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateDrugJobRequest.
+        r"""Sets the job_id of this UpdateDrugJobRequest.
 
         作业id
 
@@ -99,7 +99,7 @@ class UpdateDrugJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDrugJobRequest.
+        r"""Gets the body of this UpdateDrugJobRequest.
 
         :return: The body of this UpdateDrugJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDrugJobReq`
@@ -108,7 +108,7 @@ class UpdateDrugJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDrugJobRequest.
+        r"""Sets the body of this UpdateDrugJobRequest.
 
         :param body: The body of this UpdateDrugJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateDrugJobReq`

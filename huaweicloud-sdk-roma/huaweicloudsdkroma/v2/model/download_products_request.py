@@ -27,7 +27,7 @@ class DownloadProductsRequest:
     }
 
     def __init__(self, instance_id=None, product_ids=None):
-        """DownloadProductsRequest
+        r"""DownloadProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DownloadProductsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DownloadProductsRequest.
+        r"""Gets the instance_id of this DownloadProductsRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class DownloadProductsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DownloadProductsRequest.
+        r"""Sets the instance_id of this DownloadProductsRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class DownloadProductsRequest:
 
     @property
     def product_ids(self):
-        """Gets the product_ids of this DownloadProductsRequest.
+        r"""Gets the product_ids of this DownloadProductsRequest.
 
         待导出产品ID列表
 
@@ -82,7 +82,7 @@ class DownloadProductsRequest:
 
     @product_ids.setter
     def product_ids(self, product_ids):
-        """Sets the product_ids of this DownloadProductsRequest.
+        r"""Sets the product_ids of this DownloadProductsRequest.
 
         待导出产品ID列表
 

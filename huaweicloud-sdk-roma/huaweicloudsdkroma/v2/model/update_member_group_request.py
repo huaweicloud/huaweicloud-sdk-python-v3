@@ -31,7 +31,7 @@ class UpdateMemberGroupRequest:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, member_group_id=None, body=None):
-        """UpdateMemberGroupRequest
+        r"""UpdateMemberGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateMemberGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateMemberGroupRequest.
+        r"""Gets the instance_id of this UpdateMemberGroupRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class UpdateMemberGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateMemberGroupRequest.
+        r"""Sets the instance_id of this UpdateMemberGroupRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class UpdateMemberGroupRequest:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this UpdateMemberGroupRequest.
+        r"""Gets the vpc_channel_id of this UpdateMemberGroupRequest.
 
         VPC通道的编号
 
@@ -94,7 +94,7 @@ class UpdateMemberGroupRequest:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this UpdateMemberGroupRequest.
+        r"""Sets the vpc_channel_id of this UpdateMemberGroupRequest.
 
         VPC通道的编号
 
@@ -105,7 +105,7 @@ class UpdateMemberGroupRequest:
 
     @property
     def member_group_id(self):
-        """Gets the member_group_id of this UpdateMemberGroupRequest.
+        r"""Gets the member_group_id of this UpdateMemberGroupRequest.
 
         VPC通道后端服务器组编号
 
@@ -116,7 +116,7 @@ class UpdateMemberGroupRequest:
 
     @member_group_id.setter
     def member_group_id(self, member_group_id):
-        """Sets the member_group_id of this UpdateMemberGroupRequest.
+        r"""Sets the member_group_id of this UpdateMemberGroupRequest.
 
         VPC通道后端服务器组编号
 
@@ -127,7 +127,7 @@ class UpdateMemberGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMemberGroupRequest.
+        r"""Gets the body of this UpdateMemberGroupRequest.
 
         :return: The body of this UpdateMemberGroupRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.MemberGroupCreate`
@@ -136,7 +136,7 @@ class UpdateMemberGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMemberGroupRequest.
+        r"""Sets the body of this UpdateMemberGroupRequest.
 
         :param body: The body of this UpdateMemberGroupRequest.
         :type body: :class:`huaweicloudsdkroma.v2.MemberGroupCreate`

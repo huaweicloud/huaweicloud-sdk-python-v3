@@ -24,7 +24,7 @@ class DeleteGlobalConnectionBandwidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteGlobalConnectionBandwidthResponse
+        r"""DeleteGlobalConnectionBandwidthResponse
 
         The model defined in huaweicloud sdk
 

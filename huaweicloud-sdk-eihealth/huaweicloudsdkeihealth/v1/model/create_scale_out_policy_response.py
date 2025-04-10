@@ -26,7 +26,7 @@ class CreateScaleOutPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateScaleOutPolicyResponse
+        r"""CreateScaleOutPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateScaleOutPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateScaleOutPolicyResponse.
+        r"""Gets the id of this CreateScaleOutPolicyResponse.
 
         扩容策略id
 
@@ -55,7 +55,7 @@ class CreateScaleOutPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateScaleOutPolicyResponse.
+        r"""Sets the id of this CreateScaleOutPolicyResponse.
 
         扩容策略id
 

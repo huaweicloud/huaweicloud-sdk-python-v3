@@ -53,7 +53,7 @@ class PluginDTO:
     }
 
     def __init__(self, unique_id=None, icon_url=None, runtime_attribution=None, plugin_name=None, display_name=None, business_type=None, business_type_display_name=None, description=None, is_private=None, region=None, maintainers=None, version=None, version_description=None, execution_info=None, input_info=None):
-        """PluginDTO
+        r"""PluginDTO
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class PluginDTO:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PluginDTO.
+        r"""Gets the unique_id of this PluginDTO.
 
         唯一ID
 
@@ -144,7 +144,7 @@ class PluginDTO:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PluginDTO.
+        r"""Sets the unique_id of this PluginDTO.
 
         唯一ID
 
@@ -155,7 +155,7 @@ class PluginDTO:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this PluginDTO.
+        r"""Gets the icon_url of this PluginDTO.
 
         图标URL
 
@@ -166,7 +166,7 @@ class PluginDTO:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this PluginDTO.
+        r"""Sets the icon_url of this PluginDTO.
 
         图标URL
 
@@ -177,7 +177,7 @@ class PluginDTO:
 
     @property
     def runtime_attribution(self):
-        """Gets the runtime_attribution of this PluginDTO.
+        r"""Gets the runtime_attribution of this PluginDTO.
 
         运行属性
 
@@ -188,7 +188,7 @@ class PluginDTO:
 
     @runtime_attribution.setter
     def runtime_attribution(self, runtime_attribution):
-        """Sets the runtime_attribution of this PluginDTO.
+        r"""Sets the runtime_attribution of this PluginDTO.
 
         运行属性
 
@@ -199,7 +199,7 @@ class PluginDTO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginDTO.
+        r"""Gets the plugin_name of this PluginDTO.
 
         插件名
 
@@ -210,7 +210,7 @@ class PluginDTO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginDTO.
+        r"""Sets the plugin_name of this PluginDTO.
 
         插件名
 
@@ -221,7 +221,7 @@ class PluginDTO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PluginDTO.
+        r"""Gets the display_name of this PluginDTO.
 
         展示名
 
@@ -232,7 +232,7 @@ class PluginDTO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PluginDTO.
+        r"""Sets the display_name of this PluginDTO.
 
         展示名
 
@@ -243,7 +243,7 @@ class PluginDTO:
 
     @property
     def business_type(self):
-        """Gets the business_type of this PluginDTO.
+        r"""Gets the business_type of this PluginDTO.
 
         业务类型
 
@@ -254,7 +254,7 @@ class PluginDTO:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this PluginDTO.
+        r"""Sets the business_type of this PluginDTO.
 
         业务类型
 
@@ -265,7 +265,7 @@ class PluginDTO:
 
     @property
     def business_type_display_name(self):
-        """Gets the business_type_display_name of this PluginDTO.
+        r"""Gets the business_type_display_name of this PluginDTO.
 
         业务类型展示名
 
@@ -276,7 +276,7 @@ class PluginDTO:
 
     @business_type_display_name.setter
     def business_type_display_name(self, business_type_display_name):
-        """Sets the business_type_display_name of this PluginDTO.
+        r"""Sets the business_type_display_name of this PluginDTO.
 
         业务类型展示名
 
@@ -287,7 +287,7 @@ class PluginDTO:
 
     @property
     def description(self):
-        """Gets the description of this PluginDTO.
+        r"""Gets the description of this PluginDTO.
 
         描述
 
@@ -298,7 +298,7 @@ class PluginDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PluginDTO.
+        r"""Sets the description of this PluginDTO.
 
         描述
 
@@ -309,7 +309,7 @@ class PluginDTO:
 
     @property
     def is_private(self):
-        """Gets the is_private of this PluginDTO.
+        r"""Gets the is_private of this PluginDTO.
 
         是否私有
 
@@ -320,7 +320,7 @@ class PluginDTO:
 
     @is_private.setter
     def is_private(self, is_private):
-        """Sets the is_private of this PluginDTO.
+        r"""Sets the is_private of this PluginDTO.
 
         是否私有
 
@@ -331,7 +331,7 @@ class PluginDTO:
 
     @property
     def region(self):
-        """Gets the region of this PluginDTO.
+        r"""Gets the region of this PluginDTO.
 
         局点
 
@@ -342,7 +342,7 @@ class PluginDTO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this PluginDTO.
+        r"""Sets the region of this PluginDTO.
 
         局点
 
@@ -353,7 +353,7 @@ class PluginDTO:
 
     @property
     def maintainers(self):
-        """Gets the maintainers of this PluginDTO.
+        r"""Gets the maintainers of this PluginDTO.
 
         维护者
 
@@ -364,7 +364,7 @@ class PluginDTO:
 
     @maintainers.setter
     def maintainers(self, maintainers):
-        """Sets the maintainers of this PluginDTO.
+        r"""Sets the maintainers of this PluginDTO.
 
         维护者
 
@@ -375,7 +375,7 @@ class PluginDTO:
 
     @property
     def version(self):
-        """Gets the version of this PluginDTO.
+        r"""Gets the version of this PluginDTO.
 
         版本号
 
@@ -386,7 +386,7 @@ class PluginDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PluginDTO.
+        r"""Sets the version of this PluginDTO.
 
         版本号
 
@@ -397,7 +397,7 @@ class PluginDTO:
 
     @property
     def version_description(self):
-        """Gets the version_description of this PluginDTO.
+        r"""Gets the version_description of this PluginDTO.
 
         版本号说明
 
@@ -408,7 +408,7 @@ class PluginDTO:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this PluginDTO.
+        r"""Sets the version_description of this PluginDTO.
 
         版本号说明
 
@@ -419,7 +419,7 @@ class PluginDTO:
 
     @property
     def execution_info(self):
-        """Gets the execution_info of this PluginDTO.
+        r"""Gets the execution_info of this PluginDTO.
 
         :return: The execution_info of this PluginDTO.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTOExecutionInfo`
@@ -428,7 +428,7 @@ class PluginDTO:
 
     @execution_info.setter
     def execution_info(self, execution_info):
-        """Sets the execution_info of this PluginDTO.
+        r"""Sets the execution_info of this PluginDTO.
 
         :param execution_info: The execution_info of this PluginDTO.
         :type execution_info: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTOExecutionInfo`
@@ -437,7 +437,7 @@ class PluginDTO:
 
     @property
     def input_info(self):
-        """Gets the input_info of this PluginDTO.
+        r"""Gets the input_info of this PluginDTO.
 
         输入信息
 
@@ -448,7 +448,7 @@ class PluginDTO:
 
     @input_info.setter
     def input_info(self, input_info):
-        """Sets the input_info of this PluginDTO.
+        r"""Sets the input_info of this PluginDTO.
 
         输入信息
 

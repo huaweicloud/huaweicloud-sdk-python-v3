@@ -47,7 +47,7 @@ class QueryJobsReq:
     }
 
     def __init__(self, cur_page=None, per_page=None, db_use_type=None, engine_type=None, enterprise_project_id=None, name=None, net_type=None, service_name=None, status=None, tags=None, instance_ids=None, instance_ip=None):
-        """QueryJobsReq
+        r"""QueryJobsReq
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class QueryJobsReq:
 
     @property
     def cur_page(self):
-        """Gets the cur_page of this QueryJobsReq.
+        r"""Gets the cur_page of this QueryJobsReq.
 
         第几页
 
@@ -128,7 +128,7 @@ class QueryJobsReq:
 
     @cur_page.setter
     def cur_page(self, cur_page):
-        """Sets the cur_page of this QueryJobsReq.
+        r"""Sets the cur_page of this QueryJobsReq.
 
         第几页
 
@@ -139,7 +139,7 @@ class QueryJobsReq:
 
     @property
     def per_page(self):
-        """Gets the per_page of this QueryJobsReq.
+        r"""Gets the per_page of this QueryJobsReq.
 
         每页记录数
 
@@ -150,7 +150,7 @@ class QueryJobsReq:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this QueryJobsReq.
+        r"""Sets the per_page of this QueryJobsReq.
 
         每页记录数
 
@@ -161,7 +161,7 @@ class QueryJobsReq:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this QueryJobsReq.
+        r"""Gets the db_use_type of this QueryJobsReq.
 
         迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
 
@@ -172,7 +172,7 @@ class QueryJobsReq:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this QueryJobsReq.
+        r"""Sets the db_use_type of this QueryJobsReq.
 
         迁移场景，migration:实时迁移,sync:实时同步,cloudDataGuard:实时灾备
 
@@ -183,7 +183,7 @@ class QueryJobsReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this QueryJobsReq.
+        r"""Gets the engine_type of this QueryJobsReq.
 
         引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
 
@@ -194,7 +194,7 @@ class QueryJobsReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this QueryJobsReq.
+        r"""Sets the engine_type of this QueryJobsReq.
 
         引擎类型,mysql：迁移，同步使用。mongodb：迁移使用。cloudDataGuard-mysql：灾备使用。
 
@@ -205,7 +205,7 @@ class QueryJobsReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QueryJobsReq.
+        r"""Gets the enterprise_project_id of this QueryJobsReq.
 
         企业项目
 
@@ -216,7 +216,7 @@ class QueryJobsReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QueryJobsReq.
+        r"""Sets the enterprise_project_id of this QueryJobsReq.
 
         企业项目
 
@@ -227,7 +227,7 @@ class QueryJobsReq:
 
     @property
     def name(self):
-        """Gets the name of this QueryJobsReq.
+        r"""Gets the name of this QueryJobsReq.
 
         Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
 
@@ -238,7 +238,7 @@ class QueryJobsReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryJobsReq.
+        r"""Sets the name of this QueryJobsReq.
 
         Name或ID。支持传入多个任务ID，逗号分隔，最多100个。
 
@@ -249,7 +249,7 @@ class QueryJobsReq:
 
     @property
     def net_type(self):
-        """Gets the net_type of this QueryJobsReq.
+        r"""Gets the net_type of this QueryJobsReq.
 
         网络类型
 
@@ -260,7 +260,7 @@ class QueryJobsReq:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this QueryJobsReq.
+        r"""Sets the net_type of this QueryJobsReq.
 
         网络类型
 
@@ -271,7 +271,7 @@ class QueryJobsReq:
 
     @property
     def service_name(self):
-        """Gets the service_name of this QueryJobsReq.
+        r"""Gets the service_name of this QueryJobsReq.
 
         开启EPS时使用，值为eps
 
@@ -282,7 +282,7 @@ class QueryJobsReq:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this QueryJobsReq.
+        r"""Sets the service_name of this QueryJobsReq.
 
         开启EPS时使用，值为eps
 
@@ -293,7 +293,7 @@ class QueryJobsReq:
 
     @property
     def status(self):
-        """Gets the status of this QueryJobsReq.
+        r"""Gets the status of this QueryJobsReq.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -304,7 +304,7 @@ class QueryJobsReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryJobsReq.
+        r"""Sets the status of this QueryJobsReq.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -315,7 +315,7 @@ class QueryJobsReq:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryJobsReq.
+        r"""Gets the tags of this QueryJobsReq.
 
         标签
 
@@ -326,7 +326,7 @@ class QueryJobsReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryJobsReq.
+        r"""Sets the tags of this QueryJobsReq.
 
         标签
 
@@ -337,7 +337,7 @@ class QueryJobsReq:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this QueryJobsReq.
+        r"""Gets the instance_ids of this QueryJobsReq.
 
         数据库实例ID列表，最多支持10个
 
@@ -348,7 +348,7 @@ class QueryJobsReq:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this QueryJobsReq.
+        r"""Sets the instance_ids of this QueryJobsReq.
 
         数据库实例ID列表，最多支持10个
 
@@ -359,7 +359,7 @@ class QueryJobsReq:
 
     @property
     def instance_ip(self):
-        """Gets the instance_ip of this QueryJobsReq.
+        r"""Gets the instance_ip of this QueryJobsReq.
 
         DRS绑定数据库实例IP
 
@@ -370,7 +370,7 @@ class QueryJobsReq:
 
     @instance_ip.setter
     def instance_ip(self, instance_ip):
-        """Sets the instance_ip of this QueryJobsReq.
+        r"""Sets the instance_ip of this QueryJobsReq.
 
         DRS绑定数据库实例IP
 

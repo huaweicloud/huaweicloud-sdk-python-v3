@@ -35,7 +35,7 @@ class QueryRoleDetailResp:
     }
 
     def __init__(self, role=None, comment=None, is_transfer=None, privileges=None, inherits_roles=None, selected=None):
-        """QueryRoleDetailResp
+        r"""QueryRoleDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryRoleDetailResp:
 
     @property
     def role(self):
-        """Gets the role of this QueryRoleDetailResp.
+        r"""Gets the role of this QueryRoleDetailResp.
 
         角色。
 
@@ -89,7 +89,7 @@ class QueryRoleDetailResp:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this QueryRoleDetailResp.
+        r"""Sets the role of this QueryRoleDetailResp.
 
         角色。
 
@@ -100,7 +100,7 @@ class QueryRoleDetailResp:
 
     @property
     def comment(self):
-        """Gets the comment of this QueryRoleDetailResp.
+        r"""Gets the comment of this QueryRoleDetailResp.
 
         说明。
 
@@ -111,7 +111,7 @@ class QueryRoleDetailResp:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this QueryRoleDetailResp.
+        r"""Sets the comment of this QueryRoleDetailResp.
 
         说明。
 
@@ -122,7 +122,7 @@ class QueryRoleDetailResp:
 
     @property
     def is_transfer(self):
-        """Gets the is_transfer of this QueryRoleDetailResp.
+        r"""Gets the is_transfer of this QueryRoleDetailResp.
 
         是否支持迁移。
 
@@ -133,7 +133,7 @@ class QueryRoleDetailResp:
 
     @is_transfer.setter
     def is_transfer(self, is_transfer):
-        """Sets the is_transfer of this QueryRoleDetailResp.
+        r"""Sets the is_transfer of this QueryRoleDetailResp.
 
         是否支持迁移。
 
@@ -144,7 +144,7 @@ class QueryRoleDetailResp:
 
     @property
     def privileges(self):
-        """Gets the privileges of this QueryRoleDetailResp.
+        r"""Gets the privileges of this QueryRoleDetailResp.
 
         角色权限。
 
@@ -155,7 +155,7 @@ class QueryRoleDetailResp:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this QueryRoleDetailResp.
+        r"""Sets the privileges of this QueryRoleDetailResp.
 
         角色权限。
 
@@ -166,7 +166,7 @@ class QueryRoleDetailResp:
 
     @property
     def inherits_roles(self):
-        """Gets the inherits_roles of this QueryRoleDetailResp.
+        r"""Gets the inherits_roles of this QueryRoleDetailResp.
 
         继承的角色。
 
@@ -177,7 +177,7 @@ class QueryRoleDetailResp:
 
     @inherits_roles.setter
     def inherits_roles(self, inherits_roles):
-        """Sets the inherits_roles of this QueryRoleDetailResp.
+        r"""Sets the inherits_roles of this QueryRoleDetailResp.
 
         继承的角色。
 
@@ -188,7 +188,7 @@ class QueryRoleDetailResp:
 
     @property
     def selected(self):
-        """Gets the selected of this QueryRoleDetailResp.
+        r"""Gets the selected of this QueryRoleDetailResp.
 
         是否选择。
 
@@ -199,7 +199,7 @@ class QueryRoleDetailResp:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this QueryRoleDetailResp.
+        r"""Sets the selected of this QueryRoleDetailResp.
 
         是否选择。
 

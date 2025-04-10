@@ -43,7 +43,7 @@ class CdmCreateClusterReqCluster:
     }
 
     def __init__(self, schedule_boot_time=None, is_schedule_boot_off=None, instances=None, datastore=None, extended_properties=None, schedule_off_time=None, vpc_id=None, name=None, sys_tags=None, is_auto_off=None):
-        """CdmCreateClusterReqCluster
+        r"""CdmCreateClusterReqCluster
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def schedule_boot_time(self):
-        """Gets the schedule_boot_time of this CdmCreateClusterReqCluster.
+        r"""Gets the schedule_boot_time of this CdmCreateClusterReqCluster.
 
         定时开机的时间，CDM集群会在每天这个时间开机
 
@@ -117,7 +117,7 @@ class CdmCreateClusterReqCluster:
 
     @schedule_boot_time.setter
     def schedule_boot_time(self, schedule_boot_time):
-        """Sets the schedule_boot_time of this CdmCreateClusterReqCluster.
+        r"""Sets the schedule_boot_time of this CdmCreateClusterReqCluster.
 
         定时开机的时间，CDM集群会在每天这个时间开机
 
@@ -128,7 +128,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def is_schedule_boot_off(self):
-        """Gets the is_schedule_boot_off of this CdmCreateClusterReqCluster.
+        r"""Gets the is_schedule_boot_off of this CdmCreateClusterReqCluster.
 
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
@@ -139,7 +139,7 @@ class CdmCreateClusterReqCluster:
 
     @is_schedule_boot_off.setter
     def is_schedule_boot_off(self, is_schedule_boot_off):
-        """Sets the is_schedule_boot_off of this CdmCreateClusterReqCluster.
+        r"""Sets the is_schedule_boot_off of this CdmCreateClusterReqCluster.
 
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
@@ -150,7 +150,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def instances(self):
-        """Gets the instances of this CdmCreateClusterReqCluster.
+        r"""Gets the instances of this CdmCreateClusterReqCluster.
 
         节点列表，请参见instances参数说明
 
@@ -161,7 +161,7 @@ class CdmCreateClusterReqCluster:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this CdmCreateClusterReqCluster.
+        r"""Sets the instances of this CdmCreateClusterReqCluster.
 
         节点列表，请参见instances参数说明
 
@@ -172,7 +172,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CdmCreateClusterReqCluster.
+        r"""Gets the datastore of this CdmCreateClusterReqCluster.
 
         :return: The datastore of this CdmCreateClusterReqCluster.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -181,7 +181,7 @@ class CdmCreateClusterReqCluster:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CdmCreateClusterReqCluster.
+        r"""Sets the datastore of this CdmCreateClusterReqCluster.
 
         :param datastore: The datastore of this CdmCreateClusterReqCluster.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -190,7 +190,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def extended_properties(self):
-        """Gets the extended_properties of this CdmCreateClusterReqCluster.
+        r"""Gets the extended_properties of this CdmCreateClusterReqCluster.
 
         :return: The extended_properties of this CdmCreateClusterReqCluster.
         :rtype: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`
@@ -199,7 +199,7 @@ class CdmCreateClusterReqCluster:
 
     @extended_properties.setter
     def extended_properties(self, extended_properties):
-        """Sets the extended_properties of this CdmCreateClusterReqCluster.
+        r"""Sets the extended_properties of this CdmCreateClusterReqCluster.
 
         :param extended_properties: The extended_properties of this CdmCreateClusterReqCluster.
         :type extended_properties: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`
@@ -208,7 +208,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def schedule_off_time(self):
-        """Gets the schedule_off_time of this CdmCreateClusterReqCluster.
+        r"""Gets the schedule_off_time of this CdmCreateClusterReqCluster.
 
         定时关机的时间，定时关机时系统不会等待未完成的作业执行完成
 
@@ -219,7 +219,7 @@ class CdmCreateClusterReqCluster:
 
     @schedule_off_time.setter
     def schedule_off_time(self, schedule_off_time):
-        """Sets the schedule_off_time of this CdmCreateClusterReqCluster.
+        r"""Sets the schedule_off_time of this CdmCreateClusterReqCluster.
 
         定时关机的时间，定时关机时系统不会等待未完成的作业执行完成
 
@@ -230,7 +230,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CdmCreateClusterReqCluster.
+        r"""Gets the vpc_id of this CdmCreateClusterReqCluster.
 
         指定虚拟私有云ID，用于集群网络配置
 
@@ -241,7 +241,7 @@ class CdmCreateClusterReqCluster:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CdmCreateClusterReqCluster.
+        r"""Sets the vpc_id of this CdmCreateClusterReqCluster.
 
         指定虚拟私有云ID，用于集群网络配置
 
@@ -252,7 +252,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def name(self):
-        """Gets the name of this CdmCreateClusterReqCluster.
+        r"""Gets the name of this CdmCreateClusterReqCluster.
 
         集群名称
 
@@ -263,7 +263,7 @@ class CdmCreateClusterReqCluster:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdmCreateClusterReqCluster.
+        r"""Sets the name of this CdmCreateClusterReqCluster.
 
         集群名称
 
@@ -274,7 +274,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CdmCreateClusterReqCluster.
+        r"""Gets the sys_tags of this CdmCreateClusterReqCluster.
 
         企业项目信息，请参见•sys_tags参数说明
 
@@ -285,7 +285,7 @@ class CdmCreateClusterReqCluster:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CdmCreateClusterReqCluster.
+        r"""Sets the sys_tags of this CdmCreateClusterReqCluster.
 
         企业项目信息，请参见•sys_tags参数说明
 
@@ -296,7 +296,7 @@ class CdmCreateClusterReqCluster:
 
     @property
     def is_auto_off(self):
-        """Gets the is_auto_off of this CdmCreateClusterReqCluster.
+        r"""Gets the is_auto_off of this CdmCreateClusterReqCluster.
 
         选择是否启用自动关机功能，自动关机功能和定时开关机功能不可同时开启。如果选择自动关机，则当集群中无作业运行且无定时作业时，等待15分钟后集群将自动关机来帮您节约成本
 
@@ -307,7 +307,7 @@ class CdmCreateClusterReqCluster:
 
     @is_auto_off.setter
     def is_auto_off(self, is_auto_off):
-        """Sets the is_auto_off of this CdmCreateClusterReqCluster.
+        r"""Sets the is_auto_off of this CdmCreateClusterReqCluster.
 
         选择是否启用自动关机功能，自动关机功能和定时开关机功能不可同时开启。如果选择自动关机，则当集群中无作业运行且无定时作业时，等待15分钟后集群将自动关机来帮您节约成本
 

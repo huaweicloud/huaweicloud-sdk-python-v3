@@ -29,7 +29,7 @@ class ListQueryExportTaskRequest:
     }
 
     def __init__(self, task_id=None, region=None, enterprise_project_id=None):
-        """ListQueryExportTaskRequest
+        r"""ListQueryExportTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -37,7 +37,7 @@ class ListQueryExportTaskRequest:
         :type task_id: str
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         """
         
@@ -55,7 +55,7 @@ class ListQueryExportTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListQueryExportTaskRequest.
+        r"""Gets the task_id of this ListQueryExportTaskRequest.
 
         任务id
 
@@ -66,7 +66,7 @@ class ListQueryExportTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListQueryExportTaskRequest.
+        r"""Sets the task_id of this ListQueryExportTaskRequest.
 
         任务id
 
@@ -77,7 +77,7 @@ class ListQueryExportTaskRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListQueryExportTaskRequest.
+        r"""Gets the region of this ListQueryExportTaskRequest.
 
         Region Id
 
@@ -88,7 +88,7 @@ class ListQueryExportTaskRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListQueryExportTaskRequest.
+        r"""Sets the region of this ListQueryExportTaskRequest.
 
         Region Id
 
@@ -99,9 +99,9 @@ class ListQueryExportTaskRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListQueryExportTaskRequest.
+        r"""Gets the enterprise_project_id of this ListQueryExportTaskRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListQueryExportTaskRequest.
         :rtype: str
@@ -110,9 +110,9 @@ class ListQueryExportTaskRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListQueryExportTaskRequest.
+        r"""Sets the enterprise_project_id of this ListQueryExportTaskRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListQueryExportTaskRequest.
         :type enterprise_project_id: str

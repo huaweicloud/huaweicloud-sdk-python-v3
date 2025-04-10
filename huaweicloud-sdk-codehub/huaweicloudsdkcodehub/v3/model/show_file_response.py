@@ -30,7 +30,7 @@ class ShowFileResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowFileResponse
+        r"""ShowFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFileResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowFileResponse.
+        r"""Gets the error of this ShowFileResponse.
 
         :return: The error of this ShowFileResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowFileResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowFileResponse.
+        r"""Sets the error of this ShowFileResponse.
 
         :param error: The error of this ShowFileResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowFileResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowFileResponse.
+        r"""Gets the result of this ShowFileResponse.
 
         :return: The result of this ShowFileResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
@@ -85,7 +85,7 @@ class ShowFileResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowFileResponse.
+        r"""Sets the result of this ShowFileResponse.
 
         :param result: The result of this ShowFileResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
@@ -94,7 +94,7 @@ class ShowFileResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowFileResponse.
+        r"""Gets the status of this ShowFileResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowFileResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowFileResponse.
+        r"""Sets the status of this ShowFileResponse.
 
         响应状态
 

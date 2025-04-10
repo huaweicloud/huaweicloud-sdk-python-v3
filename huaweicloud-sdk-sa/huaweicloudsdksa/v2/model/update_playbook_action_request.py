@@ -33,7 +33,7 @@ class UpdatePlaybookActionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, action_id=None, body=None):
-        """UpdatePlaybookActionRequest
+        r"""UpdatePlaybookActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdatePlaybookActionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdatePlaybookActionRequest.
+        r"""Gets the project_id of this UpdatePlaybookActionRequest.
 
         ID of project
 
@@ -78,7 +78,7 @@ class UpdatePlaybookActionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdatePlaybookActionRequest.
+        r"""Sets the project_id of this UpdatePlaybookActionRequest.
 
         ID of project
 
@@ -89,7 +89,7 @@ class UpdatePlaybookActionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdatePlaybookActionRequest.
+        r"""Gets the workspace_id of this UpdatePlaybookActionRequest.
 
         ID of workspace
 
@@ -100,7 +100,7 @@ class UpdatePlaybookActionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdatePlaybookActionRequest.
+        r"""Sets the workspace_id of this UpdatePlaybookActionRequest.
 
         ID of workspace
 
@@ -111,7 +111,7 @@ class UpdatePlaybookActionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this UpdatePlaybookActionRequest.
+        r"""Gets the version_id of this UpdatePlaybookActionRequest.
 
         version Id value
 
@@ -122,7 +122,7 @@ class UpdatePlaybookActionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this UpdatePlaybookActionRequest.
+        r"""Sets the version_id of this UpdatePlaybookActionRequest.
 
         version Id value
 
@@ -133,7 +133,7 @@ class UpdatePlaybookActionRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this UpdatePlaybookActionRequest.
+        r"""Gets the action_id of this UpdatePlaybookActionRequest.
 
         ID of action
 
@@ -144,7 +144,7 @@ class UpdatePlaybookActionRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this UpdatePlaybookActionRequest.
+        r"""Sets the action_id of this UpdatePlaybookActionRequest.
 
         ID of action
 
@@ -155,7 +155,7 @@ class UpdatePlaybookActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePlaybookActionRequest.
+        r"""Gets the body of this UpdatePlaybookActionRequest.
 
         :return: The body of this UpdatePlaybookActionRequest.
         :rtype: :class:`huaweicloudsdksa.v2.ModifyActionInfo`
@@ -164,7 +164,7 @@ class UpdatePlaybookActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePlaybookActionRequest.
+        r"""Sets the body of this UpdatePlaybookActionRequest.
 
         :param body: The body of this UpdatePlaybookActionRequest.
         :type body: :class:`huaweicloudsdksa.v2.ModifyActionInfo`

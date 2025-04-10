@@ -54,7 +54,7 @@ class ShowMeetingFileResponse(SdkResponse):
     }
 
     def __init__(self, file_code=None, topic=None, file_id=None, file_name=None, file_size=None, thumbnail_file_id=None, thumbnail_file_name=None, thumbnail_file_size=None, pdf_file_id=None, pdf_file_name=None, pdf_file_size=None, file_url=None, thumbnail_url=None, pdf_url=None, creation_timestamp=None):
-        """ShowMeetingFileResponse
+        r"""ShowMeetingFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def file_code(self):
-        """Gets the file_code of this ShowMeetingFileResponse.
+        r"""Gets the file_code of this ShowMeetingFileResponse.
 
         会议纪要文件码。
 
@@ -153,7 +153,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @file_code.setter
     def file_code(self, file_code):
-        """Sets the file_code of this ShowMeetingFileResponse.
+        r"""Sets the file_code of this ShowMeetingFileResponse.
 
         会议纪要文件码。
 
@@ -164,7 +164,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this ShowMeetingFileResponse.
+        r"""Gets the topic of this ShowMeetingFileResponse.
 
         文件主题。
 
@@ -175,7 +175,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowMeetingFileResponse.
+        r"""Sets the topic of this ShowMeetingFileResponse.
 
         文件主题。
 
@@ -186,7 +186,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowMeetingFileResponse.
+        r"""Gets the file_id of this ShowMeetingFileResponse.
 
         文件Id。
 
@@ -197,7 +197,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowMeetingFileResponse.
+        r"""Sets the file_id of this ShowMeetingFileResponse.
 
         文件Id。
 
@@ -208,7 +208,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this ShowMeetingFileResponse.
+        r"""Gets the file_name of this ShowMeetingFileResponse.
 
         文件名。
 
@@ -219,7 +219,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ShowMeetingFileResponse.
+        r"""Sets the file_name of this ShowMeetingFileResponse.
 
         文件名。
 
@@ -230,7 +230,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def file_size(self):
-        """Gets the file_size of this ShowMeetingFileResponse.
+        r"""Gets the file_size of this ShowMeetingFileResponse.
 
         文件大小，单位字节。
 
@@ -241,7 +241,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ShowMeetingFileResponse.
+        r"""Sets the file_size of this ShowMeetingFileResponse.
 
         文件大小，单位字节。
 
@@ -252,7 +252,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def thumbnail_file_id(self):
-        """Gets the thumbnail_file_id of this ShowMeetingFileResponse.
+        r"""Gets the thumbnail_file_id of this ShowMeetingFileResponse.
 
         缩略图文件Id。
 
@@ -263,7 +263,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @thumbnail_file_id.setter
     def thumbnail_file_id(self, thumbnail_file_id):
-        """Sets the thumbnail_file_id of this ShowMeetingFileResponse.
+        r"""Sets the thumbnail_file_id of this ShowMeetingFileResponse.
 
         缩略图文件Id。
 
@@ -274,7 +274,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def thumbnail_file_name(self):
-        """Gets the thumbnail_file_name of this ShowMeetingFileResponse.
+        r"""Gets the thumbnail_file_name of this ShowMeetingFileResponse.
 
         缩略图文件名。
 
@@ -285,7 +285,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @thumbnail_file_name.setter
     def thumbnail_file_name(self, thumbnail_file_name):
-        """Sets the thumbnail_file_name of this ShowMeetingFileResponse.
+        r"""Sets the thumbnail_file_name of this ShowMeetingFileResponse.
 
         缩略图文件名。
 
@@ -296,7 +296,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def thumbnail_file_size(self):
-        """Gets the thumbnail_file_size of this ShowMeetingFileResponse.
+        r"""Gets the thumbnail_file_size of this ShowMeetingFileResponse.
 
         缩略图文件大小，单位字节。
 
@@ -307,7 +307,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @thumbnail_file_size.setter
     def thumbnail_file_size(self, thumbnail_file_size):
-        """Sets the thumbnail_file_size of this ShowMeetingFileResponse.
+        r"""Sets the thumbnail_file_size of this ShowMeetingFileResponse.
 
         缩略图文件大小，单位字节。
 
@@ -318,7 +318,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def pdf_file_id(self):
-        """Gets the pdf_file_id of this ShowMeetingFileResponse.
+        r"""Gets the pdf_file_id of this ShowMeetingFileResponse.
 
         pdf文件Id。
 
@@ -329,7 +329,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @pdf_file_id.setter
     def pdf_file_id(self, pdf_file_id):
-        """Sets the pdf_file_id of this ShowMeetingFileResponse.
+        r"""Sets the pdf_file_id of this ShowMeetingFileResponse.
 
         pdf文件Id。
 
@@ -340,7 +340,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def pdf_file_name(self):
-        """Gets the pdf_file_name of this ShowMeetingFileResponse.
+        r"""Gets the pdf_file_name of this ShowMeetingFileResponse.
 
         pdf文件名。
 
@@ -351,7 +351,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @pdf_file_name.setter
     def pdf_file_name(self, pdf_file_name):
-        """Sets the pdf_file_name of this ShowMeetingFileResponse.
+        r"""Sets the pdf_file_name of this ShowMeetingFileResponse.
 
         pdf文件名。
 
@@ -362,7 +362,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def pdf_file_size(self):
-        """Gets the pdf_file_size of this ShowMeetingFileResponse.
+        r"""Gets the pdf_file_size of this ShowMeetingFileResponse.
 
         pdf文件大小，单位字节。
 
@@ -373,7 +373,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @pdf_file_size.setter
     def pdf_file_size(self, pdf_file_size):
-        """Sets the pdf_file_size of this ShowMeetingFileResponse.
+        r"""Sets the pdf_file_size of this ShowMeetingFileResponse.
 
         pdf文件大小，单位字节。
 
@@ -384,7 +384,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def file_url(self):
-        """Gets the file_url of this ShowMeetingFileResponse.
+        r"""Gets the file_url of this ShowMeetingFileResponse.
 
         文件url。
 
@@ -395,7 +395,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @file_url.setter
     def file_url(self, file_url):
-        """Sets the file_url of this ShowMeetingFileResponse.
+        r"""Sets the file_url of this ShowMeetingFileResponse.
 
         文件url。
 
@@ -406,7 +406,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def thumbnail_url(self):
-        """Gets the thumbnail_url of this ShowMeetingFileResponse.
+        r"""Gets the thumbnail_url of this ShowMeetingFileResponse.
 
         缩略图文件url。
 
@@ -417,7 +417,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @thumbnail_url.setter
     def thumbnail_url(self, thumbnail_url):
-        """Sets the thumbnail_url of this ShowMeetingFileResponse.
+        r"""Sets the thumbnail_url of this ShowMeetingFileResponse.
 
         缩略图文件url。
 
@@ -428,7 +428,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def pdf_url(self):
-        """Gets the pdf_url of this ShowMeetingFileResponse.
+        r"""Gets the pdf_url of this ShowMeetingFileResponse.
 
         pdf文件url。
 
@@ -439,7 +439,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @pdf_url.setter
     def pdf_url(self, pdf_url):
-        """Sets the pdf_url of this ShowMeetingFileResponse.
+        r"""Sets the pdf_url of this ShowMeetingFileResponse.
 
         pdf文件url。
 
@@ -450,7 +450,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this ShowMeetingFileResponse.
+        r"""Gets the creation_timestamp of this ShowMeetingFileResponse.
 
         文件创建时间戳。
 
@@ -461,7 +461,7 @@ class ShowMeetingFileResponse(SdkResponse):
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this ShowMeetingFileResponse.
+        r"""Sets the creation_timestamp of this ShowMeetingFileResponse.
 
         文件创建时间戳。
 

@@ -41,7 +41,7 @@ class AddResourceInfo:
     }
 
     def __init__(self, project_uuid=None, iterator_uri=None, type=None, is_all_issues=None, all_import=None, feature_uri=None, simple_resourceinfo_list=None, invert_simple_resourceinfo_list=None, add_to_iterator=None):
-        """AddResourceInfo
+        r"""AddResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AddResourceInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this AddResourceInfo.
+        r"""Gets the project_uuid of this AddResourceInfo.
 
         项目id
 
@@ -110,7 +110,7 @@ class AddResourceInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this AddResourceInfo.
+        r"""Sets the project_uuid of this AddResourceInfo.
 
         项目id
 
@@ -121,7 +121,7 @@ class AddResourceInfo:
 
     @property
     def iterator_uri(self):
-        """Gets the iterator_uri of this AddResourceInfo.
+        r"""Gets the iterator_uri of this AddResourceInfo.
 
         迭代uri
 
@@ -132,7 +132,7 @@ class AddResourceInfo:
 
     @iterator_uri.setter
     def iterator_uri(self, iterator_uri):
-        """Sets the iterator_uri of this AddResourceInfo.
+        r"""Sets the iterator_uri of this AddResourceInfo.
 
         迭代uri
 
@@ -143,7 +143,7 @@ class AddResourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this AddResourceInfo.
+        r"""Gets the type of this AddResourceInfo.
 
         资源类型, 对应serviceType
 
@@ -154,7 +154,7 @@ class AddResourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddResourceInfo.
+        r"""Sets the type of this AddResourceInfo.
 
         资源类型, 对应serviceType
 
@@ -165,7 +165,7 @@ class AddResourceInfo:
 
     @property
     def is_all_issues(self):
-        """Gets the is_all_issues of this AddResourceInfo.
+        r"""Gets the is_all_issues of this AddResourceInfo.
 
         是否选择issues
 
@@ -176,7 +176,7 @@ class AddResourceInfo:
 
     @is_all_issues.setter
     def is_all_issues(self, is_all_issues):
-        """Sets the is_all_issues of this AddResourceInfo.
+        r"""Sets the is_all_issues of this AddResourceInfo.
 
         是否选择issues
 
@@ -187,7 +187,7 @@ class AddResourceInfo:
 
     @property
     def all_import(self):
-        """Gets the all_import of this AddResourceInfo.
+        r"""Gets the all_import of this AddResourceInfo.
 
         是否选择所有用例
 
@@ -198,7 +198,7 @@ class AddResourceInfo:
 
     @all_import.setter
     def all_import(self, all_import):
-        """Sets the all_import of this AddResourceInfo.
+        r"""Sets the all_import of this AddResourceInfo.
 
         是否选择所有用例
 
@@ -209,7 +209,7 @@ class AddResourceInfo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this AddResourceInfo.
+        r"""Gets the feature_uri of this AddResourceInfo.
 
         按照目录引入用例
 
@@ -220,7 +220,7 @@ class AddResourceInfo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this AddResourceInfo.
+        r"""Sets the feature_uri of this AddResourceInfo.
 
         按照目录引入用例
 
@@ -231,7 +231,7 @@ class AddResourceInfo:
 
     @property
     def simple_resourceinfo_list(self):
-        """Gets the simple_resourceinfo_list of this AddResourceInfo.
+        r"""Gets the simple_resourceinfo_list of this AddResourceInfo.
 
         选择的资源列表, 对应sourceCaseUris
 
@@ -242,7 +242,7 @@ class AddResourceInfo:
 
     @simple_resourceinfo_list.setter
     def simple_resourceinfo_list(self, simple_resourceinfo_list):
-        """Sets the simple_resourceinfo_list of this AddResourceInfo.
+        r"""Sets the simple_resourceinfo_list of this AddResourceInfo.
 
         选择的资源列表, 对应sourceCaseUris
 
@@ -253,7 +253,7 @@ class AddResourceInfo:
 
     @property
     def invert_simple_resourceinfo_list(self):
-        """Gets the invert_simple_resourceinfo_list of this AddResourceInfo.
+        r"""Gets the invert_simple_resourceinfo_list of this AddResourceInfo.
 
         反选的资源列表
 
@@ -264,7 +264,7 @@ class AddResourceInfo:
 
     @invert_simple_resourceinfo_list.setter
     def invert_simple_resourceinfo_list(self, invert_simple_resourceinfo_list):
-        """Sets the invert_simple_resourceinfo_list of this AddResourceInfo.
+        r"""Sets the invert_simple_resourceinfo_list of this AddResourceInfo.
 
         反选的资源列表
 
@@ -275,7 +275,7 @@ class AddResourceInfo:
 
     @property
     def add_to_iterator(self):
-        """Gets the add_to_iterator of this AddResourceInfo.
+        r"""Gets the add_to_iterator of this AddResourceInfo.
 
         是否将需求添加到测试计划（不传或者true添加需求到测试计划，false就不添加）
 
@@ -286,7 +286,7 @@ class AddResourceInfo:
 
     @add_to_iterator.setter
     def add_to_iterator(self, add_to_iterator):
-        """Sets the add_to_iterator of this AddResourceInfo.
+        r"""Sets the add_to_iterator of this AddResourceInfo.
 
         是否将需求添加到测试计划（不传或者true添加需求到测试计划，false就不添加）
 

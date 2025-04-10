@@ -37,7 +37,7 @@ class TaskTiming:
     }
 
     def __init__(self, type=None, timezone=None, days_of_week=None, days_of_month=None, date=None, periods=None, frequency=None):
-        """TaskTiming
+        r"""TaskTiming
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class TaskTiming:
 
     @property
     def type(self):
-        """Gets the type of this TaskTiming.
+        r"""Gets the type of this TaskTiming.
 
         计划任务的类型，使用计划任务时必填。可选类型分别为once（仅执行一次），daily（每日执行），weekly（每周执行），monthly（每月执行）。
 
@@ -94,7 +94,7 @@ class TaskTiming:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskTiming.
+        r"""Sets the type of this TaskTiming.
 
         计划任务的类型，使用计划任务时必填。可选类型分别为once（仅执行一次），daily（每日执行），weekly（每周执行），monthly（每月执行）。
 
@@ -105,7 +105,7 @@ class TaskTiming:
 
     @property
     def timezone(self):
-        """Gets the timezone of this TaskTiming.
+        r"""Gets the timezone of this TaskTiming.
 
         用户所处的时区，使用计划任务时必填。精确到分钟。
 
@@ -116,7 +116,7 @@ class TaskTiming:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this TaskTiming.
+        r"""Sets the timezone of this TaskTiming.
 
         用户所处的时区，使用计划任务时必填。精确到分钟。
 
@@ -127,7 +127,7 @@ class TaskTiming:
 
     @property
     def days_of_week(self):
-        """Gets the days_of_week of this TaskTiming.
+        r"""Gets the days_of_week of this TaskTiming.
 
         作业会在一周的哪几天执行，当且仅当计划任务类型为weekly时，该字段需填且必填。1~7分别指代星期一至星期日。
 
@@ -138,7 +138,7 @@ class TaskTiming:
 
     @days_of_week.setter
     def days_of_week(self, days_of_week):
-        """Sets the days_of_week of this TaskTiming.
+        r"""Sets the days_of_week of this TaskTiming.
 
         作业会在一周的哪几天执行，当且仅当计划任务类型为weekly时，该字段需填且必填。1~7分别指代星期一至星期日。
 
@@ -149,7 +149,7 @@ class TaskTiming:
 
     @property
     def days_of_month(self):
-        """Gets the days_of_month of this TaskTiming.
+        r"""Gets the days_of_month of this TaskTiming.
 
         作业会在一个月的哪几天执行，当且仅当计划任务类型为monthly时，该字段需填且必填。1~31分别指代一个月中的1日至31日。
 
@@ -160,7 +160,7 @@ class TaskTiming:
 
     @days_of_month.setter
     def days_of_month(self, days_of_month):
-        """Sets the days_of_month of this TaskTiming.
+        r"""Sets the days_of_month of this TaskTiming.
 
         作业会在一个月的哪几天执行，当且仅当计划任务类型为monthly时，该字段需填且必填。1~31分别指代一个月中的1日至31日。
 
@@ -171,7 +171,7 @@ class TaskTiming:
 
     @property
     def date(self):
-        """Gets the date of this TaskTiming.
+        r"""Gets the date of this TaskTiming.
 
         作业的执行日。当且仅当计划任务类型为once且为频率模式时，该字段需填且必填。格式形如yyyy-MM-dd。
 
@@ -182,7 +182,7 @@ class TaskTiming:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this TaskTiming.
+        r"""Sets the date of this TaskTiming.
 
         作业的执行日。当且仅当计划任务类型为once且为频率模式时，该字段需填且必填。格式形如yyyy-MM-dd。
 
@@ -193,7 +193,7 @@ class TaskTiming:
 
     @property
     def periods(self):
-        """Gets the periods of this TaskTiming.
+        r"""Gets the periods of this TaskTiming.
 
         时间段模式配置。和frequency字段二选一，不可共存。时间段模式下，至少需指定一个时间段。
 
@@ -204,7 +204,7 @@ class TaskTiming:
 
     @periods.setter
     def periods(self, periods):
-        """Sets the periods of this TaskTiming.
+        r"""Sets the periods of this TaskTiming.
 
         时间段模式配置。和frequency字段二选一，不可共存。时间段模式下，至少需指定一个时间段。
 
@@ -215,7 +215,7 @@ class TaskTiming:
 
     @property
     def frequency(self):
-        """Gets the frequency of this TaskTiming.
+        r"""Gets the frequency of this TaskTiming.
 
         :return: The frequency of this TaskTiming.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`
@@ -224,7 +224,7 @@ class TaskTiming:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this TaskTiming.
+        r"""Sets the frequency of this TaskTiming.
 
         :param frequency: The frequency of this TaskTiming.
         :type frequency: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`

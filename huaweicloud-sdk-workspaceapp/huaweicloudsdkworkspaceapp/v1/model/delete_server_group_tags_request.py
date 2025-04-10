@@ -27,7 +27,7 @@ class DeleteServerGroupTagsRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """DeleteServerGroupTagsRequest
+        r"""DeleteServerGroupTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteServerGroupTagsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DeleteServerGroupTagsRequest.
+        r"""Gets the server_group_id of this DeleteServerGroupTagsRequest.
 
         服务器组唯一标识。
 
@@ -60,7 +60,7 @@ class DeleteServerGroupTagsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DeleteServerGroupTagsRequest.
+        r"""Sets the server_group_id of this DeleteServerGroupTagsRequest.
 
         服务器组唯一标识。
 
@@ -71,7 +71,7 @@ class DeleteServerGroupTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteServerGroupTagsRequest.
+        r"""Gets the body of this DeleteServerGroupTagsRequest.
 
         :return: The body of this DeleteServerGroupTagsRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeleteResourceTagReq`
@@ -80,7 +80,7 @@ class DeleteServerGroupTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteServerGroupTagsRequest.
+        r"""Sets the body of this DeleteServerGroupTagsRequest.
 
         :param body: The body of this DeleteServerGroupTagsRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.DeleteResourceTagReq`

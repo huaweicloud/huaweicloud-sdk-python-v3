@@ -27,7 +27,7 @@ class PeerChannelInfo:
     }
 
     def __init__(self, channel_name=None, peers=None):
-        """PeerChannelInfo
+        r"""PeerChannelInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PeerChannelInfo:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this PeerChannelInfo.
+        r"""Gets the channel_name of this PeerChannelInfo.
 
         peer加入的通道名称
 
@@ -59,7 +59,7 @@ class PeerChannelInfo:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this PeerChannelInfo.
+        r"""Sets the channel_name of this PeerChannelInfo.
 
         peer加入的通道名称
 
@@ -70,7 +70,7 @@ class PeerChannelInfo:
 
     @property
     def peers(self):
-        """Gets the peers of this PeerChannelInfo.
+        r"""Gets the peers of this PeerChannelInfo.
 
         加入通道peer名称和数量，key为组织名称，value为peer数量
 
@@ -81,7 +81,7 @@ class PeerChannelInfo:
 
     @peers.setter
     def peers(self, peers):
-        """Sets the peers of this PeerChannelInfo.
+        r"""Sets the peers of this PeerChannelInfo.
 
         加入通道peer名称和数量，key为组织名称，value为peer数量
 

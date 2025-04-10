@@ -35,7 +35,7 @@ class GetGroupResp:
     }
 
     def __init__(self, id=None, external_id=None, meta=None, schemas=None, display_name=None, members=None):
-        """GetGroupResp
+        r"""GetGroupResp
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class GetGroupResp:
 
     @property
     def id(self):
-        """Gets the id of this GetGroupResp.
+        r"""Gets the id of this GetGroupResp.
 
         用户组的全局唯一标识符（ID）
 
@@ -88,7 +88,7 @@ class GetGroupResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetGroupResp.
+        r"""Sets the id of this GetGroupResp.
 
         用户组的全局唯一标识符（ID）
 
@@ -99,7 +99,7 @@ class GetGroupResp:
 
     @property
     def external_id(self):
-        """Gets the external_id of this GetGroupResp.
+        r"""Gets the external_id of this GetGroupResp.
 
         外部标识符
 
@@ -110,7 +110,7 @@ class GetGroupResp:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this GetGroupResp.
+        r"""Sets the external_id of this GetGroupResp.
 
         外部标识符
 
@@ -121,7 +121,7 @@ class GetGroupResp:
 
     @property
     def meta(self):
-        """Gets the meta of this GetGroupResp.
+        r"""Gets the meta of this GetGroupResp.
 
         :return: The meta of this GetGroupResp.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -130,7 +130,7 @@ class GetGroupResp:
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this GetGroupResp.
+        r"""Sets the meta of this GetGroupResp.
 
         :param meta: The meta of this GetGroupResp.
         :type meta: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -139,7 +139,7 @@ class GetGroupResp:
 
     @property
     def schemas(self):
-        """Gets the schemas of this GetGroupResp.
+        r"""Gets the schemas of this GetGroupResp.
 
         概要
 
@@ -150,7 +150,7 @@ class GetGroupResp:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this GetGroupResp.
+        r"""Sets the schemas of this GetGroupResp.
 
         概要
 
@@ -161,7 +161,7 @@ class GetGroupResp:
 
     @property
     def display_name(self):
-        """Gets the display_name of this GetGroupResp.
+        r"""Gets the display_name of this GetGroupResp.
 
         包含用户显示名称的字符串
 
@@ -172,7 +172,7 @@ class GetGroupResp:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this GetGroupResp.
+        r"""Sets the display_name of this GetGroupResp.
 
         包含用户显示名称的字符串
 
@@ -183,7 +183,7 @@ class GetGroupResp:
 
     @property
     def members(self):
-        """Gets the members of this GetGroupResp.
+        r"""Gets the members of this GetGroupResp.
 
         用户组中的成员对象列表
 
@@ -194,7 +194,7 @@ class GetGroupResp:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this GetGroupResp.
+        r"""Sets the members of this GetGroupResp.
 
         用户组中的成员对象列表
 

@@ -80,7 +80,7 @@ class ShowTemplateV3Response(SdkResponse):
     }
 
     def __init__(self, id=None, title=None, description=None, creator_id=None, creator=None, nickname=None, score=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, maintainers=None, platform_source=None, properties=None, dependencies=None, dependency_type=None, store=None, store_info=None, file_size=None, deployment=None, is_static=None, update_id=None, topic=None, tags=None, dependents=None):
-        """ShowTemplateV3Response
+        r"""ShowTemplateV3Response
 
         The model defined in huaweicloud sdk
 
@@ -233,7 +233,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTemplateV3Response.
+        r"""Gets the id of this ShowTemplateV3Response.
 
         模板id。
 
@@ -244,7 +244,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTemplateV3Response.
+        r"""Sets the id of this ShowTemplateV3Response.
 
         模板id。
 
@@ -255,7 +255,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ShowTemplateV3Response.
+        r"""Gets the title of this ShowTemplateV3Response.
 
         模板名称。
 
@@ -266,7 +266,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowTemplateV3Response.
+        r"""Sets the title of this ShowTemplateV3Response.
 
         模板名称。
 
@@ -277,7 +277,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowTemplateV3Response.
+        r"""Gets the description of this ShowTemplateV3Response.
 
         模板描述。
 
@@ -288,7 +288,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowTemplateV3Response.
+        r"""Sets the description of this ShowTemplateV3Response.
 
         模板描述。
 
@@ -299,7 +299,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowTemplateV3Response.
+        r"""Gets the creator_id of this ShowTemplateV3Response.
 
         模板创建者id。
 
@@ -310,7 +310,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowTemplateV3Response.
+        r"""Sets the creator_id of this ShowTemplateV3Response.
 
         模板创建者id。
 
@@ -321,7 +321,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowTemplateV3Response.
+        r"""Gets the creator of this ShowTemplateV3Response.
 
         模板创建者，有别名返回别名。
 
@@ -332,7 +332,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowTemplateV3Response.
+        r"""Sets the creator of this ShowTemplateV3Response.
 
         模板创建者，有别名返回别名。
 
@@ -343,7 +343,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def nickname(self):
-        """Gets the nickname of this ShowTemplateV3Response.
+        r"""Gets the nickname of this ShowTemplateV3Response.
 
         模板创建者，有别名返回别名。
 
@@ -354,7 +354,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @nickname.setter
     def nickname(self, nickname):
-        """Sets the nickname of this ShowTemplateV3Response.
+        r"""Sets the nickname of this ShowTemplateV3Response.
 
         模板创建者，有别名返回别名。
 
@@ -365,7 +365,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def score(self):
-        """Gets the score of this ShowTemplateV3Response.
+        r"""Gets the score of this ShowTemplateV3Response.
 
         模板评分（点赞数）。
 
@@ -376,7 +376,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @score.setter
     def score(self, score):
-        """Sets the score of this ShowTemplateV3Response.
+        r"""Sets the score of this ShowTemplateV3Response.
 
         模板评分（点赞数）。
 
@@ -387,7 +387,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTemplateV3Response.
+        r"""Gets the status of this ShowTemplateV3Response.
 
         模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
@@ -398,7 +398,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTemplateV3Response.
+        r"""Sets the status of this ShowTemplateV3Response.
 
         模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
@@ -409,7 +409,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def view_count(self):
-        """Gets the view_count of this ShowTemplateV3Response.
+        r"""Gets the view_count of this ShowTemplateV3Response.
 
         访问量。
 
@@ -420,7 +420,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @view_count.setter
     def view_count(self, view_count):
-        """Sets the view_count of this ShowTemplateV3Response.
+        r"""Sets the view_count of this ShowTemplateV3Response.
 
         访问量。
 
@@ -431,7 +431,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def usage_count(self):
-        """Gets the usage_count of this ShowTemplateV3Response.
+        r"""Gets the usage_count of this ShowTemplateV3Response.
 
         引用量。
 
@@ -442,7 +442,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @usage_count.setter
     def usage_count(self, usage_count):
-        """Sets the usage_count of this ShowTemplateV3Response.
+        r"""Sets the usage_count of this ShowTemplateV3Response.
 
         引用量。
 
@@ -453,7 +453,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowTemplateV3Response.
+        r"""Gets the created_at of this ShowTemplateV3Response.
 
         创建时间。
 
@@ -464,7 +464,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowTemplateV3Response.
+        r"""Sets the created_at of this ShowTemplateV3Response.
 
         创建时间。
 
@@ -475,7 +475,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowTemplateV3Response.
+        r"""Gets the updated_at of this ShowTemplateV3Response.
 
         更新时间。
 
@@ -486,7 +486,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowTemplateV3Response.
+        r"""Sets the updated_at of this ShowTemplateV3Response.
 
         更新时间。
 
@@ -497,7 +497,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def published_at(self):
-        """Gets the published_at of this ShowTemplateV3Response.
+        r"""Gets the published_at of this ShowTemplateV3Response.
 
         上架时间。
 
@@ -508,7 +508,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @published_at.setter
     def published_at(self, published_at):
-        """Sets the published_at of this ShowTemplateV3Response.
+        r"""Sets the published_at of this ShowTemplateV3Response.
 
         上架时间。
 
@@ -519,7 +519,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def favorite_state(self):
-        """Gets the favorite_state of this ShowTemplateV3Response.
+        r"""Gets the favorite_state of this ShowTemplateV3Response.
 
         点赞状态： - 1：点赞 - 0：未点赞 
 
@@ -530,7 +530,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @favorite_state.setter
     def favorite_state(self, favorite_state):
-        """Sets the favorite_state of this ShowTemplateV3Response.
+        r"""Sets the favorite_state of this ShowTemplateV3Response.
 
         点赞状态： - 1：点赞 - 0：未点赞 
 
@@ -541,7 +541,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def maintainers(self):
-        """Gets the maintainers of this ShowTemplateV3Response.
+        r"""Gets the maintainers of this ShowTemplateV3Response.
 
         模板相关联的所有维护人账号名称。
 
@@ -552,7 +552,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @maintainers.setter
     def maintainers(self, maintainers):
-        """Sets the maintainers of this ShowTemplateV3Response.
+        r"""Sets the maintainers of this ShowTemplateV3Response.
 
         模板相关联的所有维护人账号名称。
 
@@ -563,7 +563,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def platform_source(self):
-        """Gets the platform_source of this ShowTemplateV3Response.
+        r"""Gets the platform_source of this ShowTemplateV3Response.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -574,7 +574,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @platform_source.setter
     def platform_source(self, platform_source):
-        """Sets the platform_source of this ShowTemplateV3Response.
+        r"""Sets the platform_source of this ShowTemplateV3Response.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -585,7 +585,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowTemplateV3Response.
+        r"""Gets the properties of this ShowTemplateV3Response.
 
         模板自定义参数列表。
 
@@ -596,7 +596,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowTemplateV3Response.
+        r"""Sets the properties of this ShowTemplateV3Response.
 
         模板自定义参数列表。
 
@@ -607,7 +607,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this ShowTemplateV3Response.
+        r"""Gets the dependencies of this ShowTemplateV3Response.
 
         dependency信息。
 
@@ -618,7 +618,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this ShowTemplateV3Response.
+        r"""Sets the dependencies of this ShowTemplateV3Response.
 
         dependency信息。
 
@@ -629,7 +629,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def dependency_type(self):
-        """Gets the dependency_type of this ShowTemplateV3Response.
+        r"""Gets the dependency_type of this ShowTemplateV3Response.
 
         dependency类型： - '0'：非分组的依赖类型 - '1'：分组依赖类型 
 
@@ -640,7 +640,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @dependency_type.setter
     def dependency_type(self, dependency_type):
-        """Sets the dependency_type of this ShowTemplateV3Response.
+        r"""Sets the dependency_type of this ShowTemplateV3Response.
 
         dependency类型： - '0'：非分组的依赖类型 - '1'：分组依赖类型 
 
@@ -651,7 +651,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def store(self):
-        """Gets the store of this ShowTemplateV3Response.
+        r"""Gets the store of this ShowTemplateV3Response.
 
         代码存储位置： - 0：codehub - 1：Obs - 2：efs - 3：网络公开代码仓 
 
@@ -662,7 +662,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @store.setter
     def store(self, store):
-        """Sets the store of this ShowTemplateV3Response.
+        r"""Sets the store of this ShowTemplateV3Response.
 
         代码存储位置： - 0：codehub - 1：Obs - 2：efs - 3：网络公开代码仓 
 
@@ -673,7 +673,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def store_info(self):
-        """Gets the store_info of this ShowTemplateV3Response.
+        r"""Gets the store_info of this ShowTemplateV3Response.
 
         获取代码模版所需的信息。
 
@@ -684,7 +684,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @store_info.setter
     def store_info(self, store_info):
-        """Sets the store_info of this ShowTemplateV3Response.
+        r"""Sets the store_info of this ShowTemplateV3Response.
 
         获取代码模版所需的信息。
 
@@ -695,7 +695,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def file_size(self):
-        """Gets the file_size of this ShowTemplateV3Response.
+        r"""Gets the file_size of this ShowTemplateV3Response.
 
         模板文件解压缩之后的大小(单位:KB)。
 
@@ -706,7 +706,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ShowTemplateV3Response.
+        r"""Sets the file_size of this ShowTemplateV3Response.
 
         模板文件解压缩之后的大小(单位:KB)。
 
@@ -717,7 +717,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def deployment(self):
-        """Gets the deployment of this ShowTemplateV3Response.
+        r"""Gets the deployment of this ShowTemplateV3Response.
 
         部署信息。
 
@@ -728,7 +728,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @deployment.setter
     def deployment(self, deployment):
-        """Sets the deployment of this ShowTemplateV3Response.
+        r"""Sets the deployment of this ShowTemplateV3Response.
 
         部署信息。
 
@@ -739,7 +739,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def is_static(self):
-        """Gets the is_static of this ShowTemplateV3Response.
+        r"""Gets the is_static of this ShowTemplateV3Response.
 
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
@@ -750,7 +750,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @is_static.setter
     def is_static(self, is_static):
-        """Sets the is_static of this ShowTemplateV3Response.
+        r"""Sets the is_static of this ShowTemplateV3Response.
 
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
@@ -761,7 +761,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def update_id(self):
-        """Gets the update_id of this ShowTemplateV3Response.
+        r"""Gets the update_id of this ShowTemplateV3Response.
 
         模板关联更新态Id。
 
@@ -772,7 +772,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @update_id.setter
     def update_id(self, update_id):
-        """Sets the update_id of this ShowTemplateV3Response.
+        r"""Sets the update_id of this ShowTemplateV3Response.
 
         模板关联更新态Id。
 
@@ -783,7 +783,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this ShowTemplateV3Response.
+        r"""Gets the topic of this ShowTemplateV3Response.
 
         模板标签。
 
@@ -794,7 +794,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowTemplateV3Response.
+        r"""Sets the topic of this ShowTemplateV3Response.
 
         模板标签。
 
@@ -805,7 +805,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowTemplateV3Response.
+        r"""Gets the tags of this ShowTemplateV3Response.
 
         自定义标签。
 
@@ -816,7 +816,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowTemplateV3Response.
+        r"""Sets the tags of this ShowTemplateV3Response.
 
         自定义标签。
 
@@ -827,7 +827,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @property
     def dependents(self):
-        """Gets the dependents of this ShowTemplateV3Response.
+        r"""Gets the dependents of this ShowTemplateV3Response.
 
         模板部署支持方式信息
 
@@ -838,7 +838,7 @@ class ShowTemplateV3Response(SdkResponse):
 
     @dependents.setter
     def dependents(self, dependents):
-        """Sets the dependents of this ShowTemplateV3Response.
+        r"""Sets the dependents of this ShowTemplateV3Response.
 
         模板部署支持方式信息
 

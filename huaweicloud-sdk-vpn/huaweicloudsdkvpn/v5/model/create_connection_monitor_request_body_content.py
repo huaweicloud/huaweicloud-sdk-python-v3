@@ -25,7 +25,7 @@ class CreateConnectionMonitorRequestBodyContent:
     }
 
     def __init__(self, vpn_connection_id=None):
-        """CreateConnectionMonitorRequestBodyContent
+        r"""CreateConnectionMonitorRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateConnectionMonitorRequestBodyContent:
 
     @property
     def vpn_connection_id(self):
-        """Gets the vpn_connection_id of this CreateConnectionMonitorRequestBodyContent.
+        r"""Gets the vpn_connection_id of this CreateConnectionMonitorRequestBodyContent.
 
         VPN连接监控对应的VPN连接ID
 
@@ -53,7 +53,7 @@ class CreateConnectionMonitorRequestBodyContent:
 
     @vpn_connection_id.setter
     def vpn_connection_id(self, vpn_connection_id):
-        """Sets the vpn_connection_id of this CreateConnectionMonitorRequestBodyContent.
+        r"""Sets the vpn_connection_id of this CreateConnectionMonitorRequestBodyContent.
 
         VPN连接监控对应的VPN连接ID
 

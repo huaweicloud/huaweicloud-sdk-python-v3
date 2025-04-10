@@ -27,7 +27,7 @@ class UpdatePublicKibanaBandwidthReq:
     }
 
     def __init__(self, band_width=None, is_auto_pay=None):
-        """UpdatePublicKibanaBandwidthReq
+        r"""UpdatePublicKibanaBandwidthReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePublicKibanaBandwidthReq:
 
     @property
     def band_width(self):
-        """Gets the band_width of this UpdatePublicKibanaBandwidthReq.
+        r"""Gets the band_width of this UpdatePublicKibanaBandwidthReq.
 
         :return: The band_width of this UpdatePublicKibanaBandwidthReq.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReqBandWidth`
@@ -58,7 +58,7 @@ class UpdatePublicKibanaBandwidthReq:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this UpdatePublicKibanaBandwidthReq.
+        r"""Sets the band_width of this UpdatePublicKibanaBandwidthReq.
 
         :param band_width: The band_width of this UpdatePublicKibanaBandwidthReq.
         :type band_width: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReqBandWidth`
@@ -67,7 +67,7 @@ class UpdatePublicKibanaBandwidthReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this UpdatePublicKibanaBandwidthReq.
+        r"""Gets the is_auto_pay of this UpdatePublicKibanaBandwidthReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
@@ -78,7 +78,7 @@ class UpdatePublicKibanaBandwidthReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this UpdatePublicKibanaBandwidthReq.
+        r"""Sets the is_auto_pay of this UpdatePublicKibanaBandwidthReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 

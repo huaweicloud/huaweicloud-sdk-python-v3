@@ -26,7 +26,7 @@ class ShowDomainSetDetailResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowDomainSetDetailResponse
+        r"""ShowDomainSetDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainSetDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowDomainSetDetailResponse.
+        r"""Gets the data of this ShowDomainSetDetailResponse.
 
         :return: The data of this ShowDomainSetDetailResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.DomainSetVo`
@@ -53,7 +53,7 @@ class ShowDomainSetDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowDomainSetDetailResponse.
+        r"""Sets the data of this ShowDomainSetDetailResponse.
 
         :param data: The data of this ShowDomainSetDetailResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.DomainSetVo`

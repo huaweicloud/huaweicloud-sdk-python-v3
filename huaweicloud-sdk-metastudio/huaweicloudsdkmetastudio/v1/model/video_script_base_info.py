@@ -43,7 +43,7 @@ class VideoScriptBaseInfo:
     }
 
     def __init__(self, script_id=None, script_name=None, script_description=None, model_asset_id=None, model_asset_type=None, script_cover_url=None, script_type=None, text=None, create_time=None, update_time=None):
-        """VideoScriptBaseInfo
+        r"""VideoScriptBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class VideoScriptBaseInfo:
 
     @property
     def script_id(self):
-        """Gets the script_id of this VideoScriptBaseInfo.
+        r"""Gets the script_id of this VideoScriptBaseInfo.
 
         剧本ID。
 
@@ -115,7 +115,7 @@ class VideoScriptBaseInfo:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this VideoScriptBaseInfo.
+        r"""Sets the script_id of this VideoScriptBaseInfo.
 
         剧本ID。
 
@@ -126,7 +126,7 @@ class VideoScriptBaseInfo:
 
     @property
     def script_name(self):
-        """Gets the script_name of this VideoScriptBaseInfo.
+        r"""Gets the script_name of this VideoScriptBaseInfo.
 
         剧本名称。
 
@@ -137,7 +137,7 @@ class VideoScriptBaseInfo:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this VideoScriptBaseInfo.
+        r"""Sets the script_name of this VideoScriptBaseInfo.
 
         剧本名称。
 
@@ -148,7 +148,7 @@ class VideoScriptBaseInfo:
 
     @property
     def script_description(self):
-        """Gets the script_description of this VideoScriptBaseInfo.
+        r"""Gets the script_description of this VideoScriptBaseInfo.
 
         剧本描述。
 
@@ -159,7 +159,7 @@ class VideoScriptBaseInfo:
 
     @script_description.setter
     def script_description(self, script_description):
-        """Sets the script_description of this VideoScriptBaseInfo.
+        r"""Sets the script_description of this VideoScriptBaseInfo.
 
         剧本描述。
 
@@ -170,7 +170,7 @@ class VideoScriptBaseInfo:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this VideoScriptBaseInfo.
+        r"""Gets the model_asset_id of this VideoScriptBaseInfo.
 
         数字人模型资产ID，可以从资产库中查询。
 
@@ -181,7 +181,7 @@ class VideoScriptBaseInfo:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this VideoScriptBaseInfo.
+        r"""Sets the model_asset_id of this VideoScriptBaseInfo.
 
         数字人模型资产ID，可以从资产库中查询。
 
@@ -192,7 +192,7 @@ class VideoScriptBaseInfo:
 
     @property
     def model_asset_type(self):
-        """Gets the model_asset_type of this VideoScriptBaseInfo.
+        r"""Gets the model_asset_type of this VideoScriptBaseInfo.
 
         数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
 
@@ -203,7 +203,7 @@ class VideoScriptBaseInfo:
 
     @model_asset_type.setter
     def model_asset_type(self, model_asset_type):
-        """Sets the model_asset_type of this VideoScriptBaseInfo.
+        r"""Sets the model_asset_type of this VideoScriptBaseInfo.
 
         数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
 
@@ -214,7 +214,7 @@ class VideoScriptBaseInfo:
 
     @property
     def script_cover_url(self):
-        """Gets the script_cover_url of this VideoScriptBaseInfo.
+        r"""Gets the script_cover_url of this VideoScriptBaseInfo.
 
         剧本封面下载url。
 
@@ -225,7 +225,7 @@ class VideoScriptBaseInfo:
 
     @script_cover_url.setter
     def script_cover_url(self, script_cover_url):
-        """Sets the script_cover_url of this VideoScriptBaseInfo.
+        r"""Sets the script_cover_url of this VideoScriptBaseInfo.
 
         剧本封面下载url。
 
@@ -236,7 +236,7 @@ class VideoScriptBaseInfo:
 
     @property
     def script_type(self):
-        """Gets the script_type of this VideoScriptBaseInfo.
+        r"""Gets the script_type of this VideoScriptBaseInfo.
 
         脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
@@ -247,7 +247,7 @@ class VideoScriptBaseInfo:
 
     @script_type.setter
     def script_type(self, script_type):
-        """Sets the script_type of this VideoScriptBaseInfo.
+        r"""Sets the script_type of this VideoScriptBaseInfo.
 
         脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
@@ -258,7 +258,7 @@ class VideoScriptBaseInfo:
 
     @property
     def text(self):
-        """Gets the text of this VideoScriptBaseInfo.
+        r"""Gets the text of this VideoScriptBaseInfo.
 
         台词脚本。
 
@@ -269,7 +269,7 @@ class VideoScriptBaseInfo:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this VideoScriptBaseInfo.
+        r"""Sets the text of this VideoScriptBaseInfo.
 
         台词脚本。
 
@@ -280,7 +280,7 @@ class VideoScriptBaseInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VideoScriptBaseInfo.
+        r"""Gets the create_time of this VideoScriptBaseInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -291,7 +291,7 @@ class VideoScriptBaseInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VideoScriptBaseInfo.
+        r"""Sets the create_time of this VideoScriptBaseInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -302,7 +302,7 @@ class VideoScriptBaseInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this VideoScriptBaseInfo.
+        r"""Gets the update_time of this VideoScriptBaseInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -313,7 +313,7 @@ class VideoScriptBaseInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this VideoScriptBaseInfo.
+        r"""Sets the update_time of this VideoScriptBaseInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

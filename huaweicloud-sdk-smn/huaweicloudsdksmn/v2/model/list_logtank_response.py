@@ -30,7 +30,7 @@ class ListLogtankResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, count=None, logtanks=None):
-        """ListLogtankResponse
+        r"""ListLogtankResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLogtankResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListLogtankResponse.
+        r"""Gets the request_id of this ListLogtankResponse.
 
         请求的唯一标识
 
@@ -69,7 +69,7 @@ class ListLogtankResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListLogtankResponse.
+        r"""Sets the request_id of this ListLogtankResponse.
 
         请求的唯一标识
 
@@ -80,7 +80,7 @@ class ListLogtankResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLogtankResponse.
+        r"""Gets the count of this ListLogtankResponse.
 
         云日志信息数量
 
@@ -91,7 +91,7 @@ class ListLogtankResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLogtankResponse.
+        r"""Sets the count of this ListLogtankResponse.
 
         云日志信息数量
 
@@ -102,7 +102,7 @@ class ListLogtankResponse(SdkResponse):
 
     @property
     def logtanks(self):
-        """Gets the logtanks of this ListLogtankResponse.
+        r"""Gets the logtanks of this ListLogtankResponse.
 
         云日志信息列表
 
@@ -113,7 +113,7 @@ class ListLogtankResponse(SdkResponse):
 
     @logtanks.setter
     def logtanks(self, logtanks):
-        """Sets the logtanks of this ListLogtankResponse.
+        r"""Sets the logtanks of this ListLogtankResponse.
 
         云日志信息列表
 

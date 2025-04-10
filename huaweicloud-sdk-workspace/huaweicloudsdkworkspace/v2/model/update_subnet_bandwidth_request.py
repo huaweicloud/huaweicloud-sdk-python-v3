@@ -29,7 +29,7 @@ class UpdateSubnetBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None, service_transaction_id=None, body=None):
-        """UpdateSubnetBandwidthRequest
+        r"""UpdateSubnetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateSubnetBandwidthRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this UpdateSubnetBandwidthRequest.
+        r"""Gets the bandwidth_id of this UpdateSubnetBandwidthRequest.
 
         云办公带宽id。
 
@@ -67,7 +67,7 @@ class UpdateSubnetBandwidthRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this UpdateSubnetBandwidthRequest.
+        r"""Sets the bandwidth_id of this UpdateSubnetBandwidthRequest.
 
         云办公带宽id。
 
@@ -78,7 +78,7 @@ class UpdateSubnetBandwidthRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this UpdateSubnetBandwidthRequest.
+        r"""Gets the service_transaction_id of this UpdateSubnetBandwidthRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -89,7 +89,7 @@ class UpdateSubnetBandwidthRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this UpdateSubnetBandwidthRequest.
+        r"""Sets the service_transaction_id of this UpdateSubnetBandwidthRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -100,7 +100,7 @@ class UpdateSubnetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubnetBandwidthRequest.
+        r"""Gets the body of this UpdateSubnetBandwidthRequest.
 
         :return: The body of this UpdateSubnetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateSubnetBandwidthReq`
@@ -109,7 +109,7 @@ class UpdateSubnetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubnetBandwidthRequest.
+        r"""Sets the body of this UpdateSubnetBandwidthRequest.
 
         :param body: The body of this UpdateSubnetBandwidthRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateSubnetBandwidthReq`

@@ -29,7 +29,7 @@ class IssuePassDetailsVo:
     }
 
     def __init__(self, testing=None, finished=None, not_tested=None):
-        """IssuePassDetailsVo
+        r"""IssuePassDetailsVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IssuePassDetailsVo:
 
     @property
     def testing(self):
-        """Gets the testing of this IssuePassDetailsVo.
+        r"""Gets the testing of this IssuePassDetailsVo.
 
         统计测试中的需求
 
@@ -68,7 +68,7 @@ class IssuePassDetailsVo:
 
     @testing.setter
     def testing(self, testing):
-        """Sets the testing of this IssuePassDetailsVo.
+        r"""Sets the testing of this IssuePassDetailsVo.
 
         统计测试中的需求
 
@@ -79,7 +79,7 @@ class IssuePassDetailsVo:
 
     @property
     def finished(self):
-        """Gets the finished of this IssuePassDetailsVo.
+        r"""Gets the finished of this IssuePassDetailsVo.
 
         统计已完成的需求
 
@@ -90,7 +90,7 @@ class IssuePassDetailsVo:
 
     @finished.setter
     def finished(self, finished):
-        """Sets the finished of this IssuePassDetailsVo.
+        r"""Sets the finished of this IssuePassDetailsVo.
 
         统计已完成的需求
 
@@ -101,7 +101,7 @@ class IssuePassDetailsVo:
 
     @property
     def not_tested(self):
-        """Gets the not_tested of this IssuePassDetailsVo.
+        r"""Gets the not_tested of this IssuePassDetailsVo.
 
         统计未完成的需求
 
@@ -112,7 +112,7 @@ class IssuePassDetailsVo:
 
     @not_tested.setter
     def not_tested(self, not_tested):
-        """Sets the not_tested of this IssuePassDetailsVo.
+        r"""Sets the not_tested of this IssuePassDetailsVo.
 
         统计未完成的需求
 

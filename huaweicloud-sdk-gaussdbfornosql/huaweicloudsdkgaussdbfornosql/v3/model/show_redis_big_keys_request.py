@@ -27,7 +27,7 @@ class ShowRedisBigKeysRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ShowRedisBigKeysRequest
+        r"""ShowRedisBigKeysRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRedisBigKeysRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRedisBigKeysRequest.
+        r"""Gets the instance_id of this ShowRedisBigKeysRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ShowRedisBigKeysRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRedisBigKeysRequest.
+        r"""Sets the instance_id of this ShowRedisBigKeysRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ShowRedisBigKeysRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowRedisBigKeysRequest.
+        r"""Gets the body of this ShowRedisBigKeysRequest.
 
         :return: The body of this ShowRedisBigKeysRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisBigKeysRequestBody`
@@ -80,7 +80,7 @@ class ShowRedisBigKeysRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowRedisBigKeysRequest.
+        r"""Sets the body of this ShowRedisBigKeysRequest.
 
         :param body: The body of this ShowRedisBigKeysRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRedisBigKeysRequestBody`

@@ -29,7 +29,7 @@ class InstanceResult:
     }
 
     def __init__(self, instance_id=None, instance_name=None, tags=None):
-        """InstanceResult
+        r"""InstanceResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class InstanceResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceResult.
+        r"""Gets the instance_id of this InstanceResult.
 
         实例ID。
 
@@ -65,7 +65,7 @@ class InstanceResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceResult.
+        r"""Sets the instance_id of this InstanceResult.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class InstanceResult:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceResult.
+        r"""Gets the instance_name of this InstanceResult.
 
         实例名称。
 
@@ -87,7 +87,7 @@ class InstanceResult:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceResult.
+        r"""Sets the instance_name of this InstanceResult.
 
         实例名称。
 
@@ -98,7 +98,7 @@ class InstanceResult:
 
     @property
     def tags(self):
-        """Gets the tags of this InstanceResult.
+        r"""Gets the tags of this InstanceResult.
 
         标签列表。如果没有标签，默认为空数组。
 
@@ -109,7 +109,7 @@ class InstanceResult:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this InstanceResult.
+        r"""Sets the tags of this InstanceResult.
 
         标签列表。如果没有标签，默认为空数组。
 

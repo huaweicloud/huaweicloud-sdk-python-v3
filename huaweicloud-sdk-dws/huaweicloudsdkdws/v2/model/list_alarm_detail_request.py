@@ -29,7 +29,7 @@ class ListAlarmDetailRequest:
     }
 
     def __init__(self, time_zone=None, offset=None, limit=None):
-        """ListAlarmDetailRequest
+        r"""ListAlarmDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAlarmDetailRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ListAlarmDetailRequest.
+        r"""Gets the time_zone of this ListAlarmDetailRequest.
 
         时区
 
@@ -67,7 +67,7 @@ class ListAlarmDetailRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ListAlarmDetailRequest.
+        r"""Sets the time_zone of this ListAlarmDetailRequest.
 
         时区
 
@@ -78,7 +78,7 @@ class ListAlarmDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmDetailRequest.
+        r"""Gets the offset of this ListAlarmDetailRequest.
 
         当前页
 
@@ -89,7 +89,7 @@ class ListAlarmDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmDetailRequest.
+        r"""Sets the offset of this ListAlarmDetailRequest.
 
         当前页
 
@@ -100,7 +100,7 @@ class ListAlarmDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmDetailRequest.
+        r"""Gets the limit of this ListAlarmDetailRequest.
 
         总页数
 
@@ -111,7 +111,7 @@ class ListAlarmDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmDetailRequest.
+        r"""Sets the limit of this ListAlarmDetailRequest.
 
         总页数
 

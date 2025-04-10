@@ -25,7 +25,7 @@ class DeleteSqlAlarmRuleRequest:
     }
 
     def __init__(self, sql_alarm_rule_id=None):
-        """DeleteSqlAlarmRuleRequest
+        r"""DeleteSqlAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSqlAlarmRuleRequest:
 
     @property
     def sql_alarm_rule_id(self):
-        """Gets the sql_alarm_rule_id of this DeleteSqlAlarmRuleRequest.
+        r"""Gets the sql_alarm_rule_id of this DeleteSqlAlarmRuleRequest.
 
         Sql告警规则id
 
@@ -53,7 +53,7 @@ class DeleteSqlAlarmRuleRequest:
 
     @sql_alarm_rule_id.setter
     def sql_alarm_rule_id(self, sql_alarm_rule_id):
-        """Sets the sql_alarm_rule_id of this DeleteSqlAlarmRuleRequest.
+        r"""Sets the sql_alarm_rule_id of this DeleteSqlAlarmRuleRequest.
 
         Sql告警规则id
 

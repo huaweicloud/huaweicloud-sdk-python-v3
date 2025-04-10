@@ -28,7 +28,7 @@ class ShowSpanSearchResponse(SdkResponse):
     }
 
     def __init__(self, total=None, span_info_list=None):
-        """ShowSpanSearchResponse
+        r"""ShowSpanSearchResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSpanSearchResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowSpanSearchResponse.
+        r"""Gets the total of this ShowSpanSearchResponse.
 
         返回的总数。
 
@@ -62,7 +62,7 @@ class ShowSpanSearchResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowSpanSearchResponse.
+        r"""Sets the total of this ShowSpanSearchResponse.
 
         返回的总数。
 
@@ -73,7 +73,7 @@ class ShowSpanSearchResponse(SdkResponse):
 
     @property
     def span_info_list(self):
-        """Gets the span_info_list of this ShowSpanSearchResponse.
+        r"""Gets the span_info_list of this ShowSpanSearchResponse.
 
         span信息。
 
@@ -84,7 +84,7 @@ class ShowSpanSearchResponse(SdkResponse):
 
     @span_info_list.setter
     def span_info_list(self, span_info_list):
-        """Sets the span_info_list of this ShowSpanSearchResponse.
+        r"""Sets the span_info_list of this ShowSpanSearchResponse.
 
         span信息。
 

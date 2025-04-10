@@ -53,7 +53,7 @@ class ListRecordSetsWithTags:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None, tags=None):
-        """ListRecordSetsWithTags
+        r"""ListRecordSetsWithTags
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListRecordSetsWithTags:
 
     @property
     def id(self):
-        """Gets the id of this ListRecordSetsWithTags.
+        r"""Gets the id of this ListRecordSetsWithTags.
 
         Record Set的ID。
 
@@ -152,7 +152,7 @@ class ListRecordSetsWithTags:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRecordSetsWithTags.
+        r"""Sets the id of this ListRecordSetsWithTags.
 
         Record Set的ID。
 
@@ -163,7 +163,7 @@ class ListRecordSetsWithTags:
 
     @property
     def name(self):
-        """Gets the name of this ListRecordSetsWithTags.
+        r"""Gets the name of this ListRecordSetsWithTags.
 
         Record Set的名称。
 
@@ -174,7 +174,7 @@ class ListRecordSetsWithTags:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRecordSetsWithTags.
+        r"""Sets the name of this ListRecordSetsWithTags.
 
         Record Set的名称。
 
@@ -185,7 +185,7 @@ class ListRecordSetsWithTags:
 
     @property
     def description(self):
-        """Gets the description of this ListRecordSetsWithTags.
+        r"""Gets the description of this ListRecordSetsWithTags.
 
         Record Set的描述信息。
 
@@ -196,7 +196,7 @@ class ListRecordSetsWithTags:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListRecordSetsWithTags.
+        r"""Sets the description of this ListRecordSetsWithTags.
 
         Record Set的描述信息。
 
@@ -207,7 +207,7 @@ class ListRecordSetsWithTags:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ListRecordSetsWithTags.
+        r"""Gets the zone_id of this ListRecordSetsWithTags.
 
         托管该记录的zone_id。
 
@@ -218,7 +218,7 @@ class ListRecordSetsWithTags:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ListRecordSetsWithTags.
+        r"""Sets the zone_id of this ListRecordSetsWithTags.
 
         托管该记录的zone_id。
 
@@ -229,7 +229,7 @@ class ListRecordSetsWithTags:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this ListRecordSetsWithTags.
+        r"""Gets the zone_name of this ListRecordSetsWithTags.
 
         托管该记录的zone_name。
 
@@ -240,7 +240,7 @@ class ListRecordSetsWithTags:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this ListRecordSetsWithTags.
+        r"""Sets the zone_name of this ListRecordSetsWithTags.
 
         托管该记录的zone_name。
 
@@ -251,7 +251,7 @@ class ListRecordSetsWithTags:
 
     @property
     def type(self):
-        """Gets the type of this ListRecordSetsWithTags.
+        r"""Gets the type of this ListRecordSetsWithTags.
 
         记录类型。
 
@@ -262,7 +262,7 @@ class ListRecordSetsWithTags:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRecordSetsWithTags.
+        r"""Sets the type of this ListRecordSetsWithTags.
 
         记录类型。
 
@@ -273,7 +273,7 @@ class ListRecordSetsWithTags:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ListRecordSetsWithTags.
+        r"""Gets the ttl of this ListRecordSetsWithTags.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -284,7 +284,7 @@ class ListRecordSetsWithTags:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ListRecordSetsWithTags.
+        r"""Sets the ttl of this ListRecordSetsWithTags.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -295,7 +295,7 @@ class ListRecordSetsWithTags:
 
     @property
     def records(self):
-        """Gets the records of this ListRecordSetsWithTags.
+        r"""Gets the records of this ListRecordSetsWithTags.
 
         域名解析后的值。
 
@@ -306,7 +306,7 @@ class ListRecordSetsWithTags:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListRecordSetsWithTags.
+        r"""Sets the records of this ListRecordSetsWithTags.
 
         域名解析后的值。
 
@@ -317,7 +317,7 @@ class ListRecordSetsWithTags:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ListRecordSetsWithTags.
+        r"""Gets the create_at of this ListRecordSetsWithTags.
 
         创建时间。
 
@@ -328,7 +328,7 @@ class ListRecordSetsWithTags:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ListRecordSetsWithTags.
+        r"""Sets the create_at of this ListRecordSetsWithTags.
 
         创建时间。
 
@@ -339,7 +339,7 @@ class ListRecordSetsWithTags:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ListRecordSetsWithTags.
+        r"""Gets the update_at of this ListRecordSetsWithTags.
 
         更新时间。
 
@@ -350,7 +350,7 @@ class ListRecordSetsWithTags:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ListRecordSetsWithTags.
+        r"""Sets the update_at of this ListRecordSetsWithTags.
 
         更新时间。
 
@@ -361,7 +361,7 @@ class ListRecordSetsWithTags:
 
     @property
     def status(self):
-        """Gets the status of this ListRecordSetsWithTags.
+        r"""Gets the status of this ListRecordSetsWithTags.
 
         资源状态。
 
@@ -372,7 +372,7 @@ class ListRecordSetsWithTags:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRecordSetsWithTags.
+        r"""Sets the status of this ListRecordSetsWithTags.
 
         资源状态。
 
@@ -383,7 +383,7 @@ class ListRecordSetsWithTags:
 
     @property
     def default(self):
-        """Gets the default of this ListRecordSetsWithTags.
+        r"""Gets the default of this ListRecordSetsWithTags.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -394,7 +394,7 @@ class ListRecordSetsWithTags:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ListRecordSetsWithTags.
+        r"""Sets the default of this ListRecordSetsWithTags.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -405,7 +405,7 @@ class ListRecordSetsWithTags:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRecordSetsWithTags.
+        r"""Gets the project_id of this ListRecordSetsWithTags.
 
         该Record Set所属的项目ID。
 
@@ -416,7 +416,7 @@ class ListRecordSetsWithTags:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRecordSetsWithTags.
+        r"""Sets the project_id of this ListRecordSetsWithTags.
 
         该Record Set所属的项目ID。
 
@@ -427,7 +427,7 @@ class ListRecordSetsWithTags:
 
     @property
     def links(self):
-        """Gets the links of this ListRecordSetsWithTags.
+        r"""Gets the links of this ListRecordSetsWithTags.
 
         :return: The links of this ListRecordSetsWithTags.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -436,7 +436,7 @@ class ListRecordSetsWithTags:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListRecordSetsWithTags.
+        r"""Sets the links of this ListRecordSetsWithTags.
 
         :param links: The links of this ListRecordSetsWithTags.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -445,7 +445,7 @@ class ListRecordSetsWithTags:
 
     @property
     def tags(self):
-        """Gets the tags of this ListRecordSetsWithTags.
+        r"""Gets the tags of this ListRecordSetsWithTags.
 
         资源标签。
 
@@ -456,7 +456,7 @@ class ListRecordSetsWithTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListRecordSetsWithTags.
+        r"""Sets the tags of this ListRecordSetsWithTags.
 
         资源标签。
 

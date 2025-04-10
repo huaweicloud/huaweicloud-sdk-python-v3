@@ -33,7 +33,7 @@ class L2Statistic:
     }
 
     def __init__(self, subject_area_name=None, subject_area_guid=None, ordinal=None, business_object_count=None, logic_entity_count=None):
-        """L2Statistic
+        r"""L2Statistic
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class L2Statistic:
 
     @property
     def subject_area_name(self):
-        """Gets the subject_area_name of this L2Statistic.
+        r"""Gets the subject_area_name of this L2Statistic.
 
         主题名称
 
@@ -82,7 +82,7 @@ class L2Statistic:
 
     @subject_area_name.setter
     def subject_area_name(self, subject_area_name):
-        """Sets the subject_area_name of this L2Statistic.
+        r"""Sets the subject_area_name of this L2Statistic.
 
         主题名称
 
@@ -93,7 +93,7 @@ class L2Statistic:
 
     @property
     def subject_area_guid(self):
-        """Gets the subject_area_guid of this L2Statistic.
+        r"""Gets the subject_area_guid of this L2Statistic.
 
         主题的guid
 
@@ -104,7 +104,7 @@ class L2Statistic:
 
     @subject_area_guid.setter
     def subject_area_guid(self, subject_area_guid):
-        """Sets the subject_area_guid of this L2Statistic.
+        r"""Sets the subject_area_guid of this L2Statistic.
 
         主题的guid
 
@@ -115,7 +115,7 @@ class L2Statistic:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this L2Statistic.
+        r"""Gets the ordinal of this L2Statistic.
 
         主题序号
 
@@ -126,7 +126,7 @@ class L2Statistic:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this L2Statistic.
+        r"""Sets the ordinal of this L2Statistic.
 
         主题序号
 
@@ -137,7 +137,7 @@ class L2Statistic:
 
     @property
     def business_object_count(self):
-        """Gets the business_object_count of this L2Statistic.
+        r"""Gets the business_object_count of this L2Statistic.
 
         业务对象总数
 
@@ -148,7 +148,7 @@ class L2Statistic:
 
     @business_object_count.setter
     def business_object_count(self, business_object_count):
-        """Sets the business_object_count of this L2Statistic.
+        r"""Sets the business_object_count of this L2Statistic.
 
         业务对象总数
 
@@ -159,7 +159,7 @@ class L2Statistic:
 
     @property
     def logic_entity_count(self):
-        """Gets the logic_entity_count of this L2Statistic.
+        r"""Gets the logic_entity_count of this L2Statistic.
 
         逻辑实体总数
 
@@ -170,7 +170,7 @@ class L2Statistic:
 
     @logic_entity_count.setter
     def logic_entity_count(self, logic_entity_count):
-        """Sets the logic_entity_count of this L2Statistic.
+        r"""Sets the logic_entity_count of this L2Statistic.
 
         逻辑实体总数
 

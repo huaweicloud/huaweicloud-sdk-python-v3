@@ -73,7 +73,7 @@ class SmartConnectTaskReqSourceConfig:
     }
 
     def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, redis_password=None, sync_mode=None, full_sync_wait_ms=None, full_sync_max_retry=None, ratelimit=None, current_cluster_name=None, cluster_name=None, user_name=None, password=None, sasl_mechanism=None, instance_id=None, bootstrap_servers=None, security_protocol=None, direction=None, sync_consumer_offsets_enabled=None, replication_factor=None, task_num=None, rename_topic_enabled=None, provenance_header_enabled=None, consumer_strategy=None, compression_type=None, topics_mapping=None):
-        """SmartConnectTaskReqSourceConfig
+        r"""SmartConnectTaskReqSourceConfig
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def redis_address(self):
-        """Gets the redis_address of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the redis_address of this SmartConnectTaskReqSourceConfig.
 
         Redis实例地址。（仅源端类型为Redis时需要填写）
 
@@ -222,7 +222,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @redis_address.setter
     def redis_address(self, redis_address):
-        """Sets the redis_address of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the redis_address of this SmartConnectTaskReqSourceConfig.
 
         Redis实例地址。（仅源端类型为Redis时需要填写）
 
@@ -233,7 +233,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def redis_type(self):
-        """Gets the redis_type of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the redis_type of this SmartConnectTaskReqSourceConfig.
 
         Redis实例类型。（仅源端类型为Redis时需要填写）
 
@@ -244,7 +244,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @redis_type.setter
     def redis_type(self, redis_type):
-        """Sets the redis_type of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the redis_type of this SmartConnectTaskReqSourceConfig.
 
         Redis实例类型。（仅源端类型为Redis时需要填写）
 
@@ -255,7 +255,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def dcs_instance_id(self):
-        """Gets the dcs_instance_id of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the dcs_instance_id of this SmartConnectTaskReqSourceConfig.
 
         DCS实例ID。（仅源端类型为Redis时需要填写）
 
@@ -266,7 +266,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @dcs_instance_id.setter
     def dcs_instance_id(self, dcs_instance_id):
-        """Sets the dcs_instance_id of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the dcs_instance_id of this SmartConnectTaskReqSourceConfig.
 
         DCS实例ID。（仅源端类型为Redis时需要填写）
 
@@ -277,7 +277,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def redis_password(self):
-        """Gets the redis_password of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the redis_password of this SmartConnectTaskReqSourceConfig.
 
         Redis密码。（仅源端类型为Redis时需要填写）
 
@@ -288,7 +288,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @redis_password.setter
     def redis_password(self, redis_password):
-        """Sets the redis_password of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the redis_password of this SmartConnectTaskReqSourceConfig.
 
         Redis密码。（仅源端类型为Redis时需要填写）
 
@@ -299,7 +299,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def sync_mode(self):
-        """Gets the sync_mode of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the sync_mode of this SmartConnectTaskReqSourceConfig.
 
         同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时需要填写）
 
@@ -310,7 +310,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @sync_mode.setter
     def sync_mode(self, sync_mode):
-        """Sets the sync_mode of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the sync_mode of this SmartConnectTaskReqSourceConfig.
 
         同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时需要填写）
 
@@ -321,7 +321,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def full_sync_wait_ms(self):
-        """Gets the full_sync_wait_ms of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the full_sync_wait_ms of this SmartConnectTaskReqSourceConfig.
 
         全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时需要填写）
 
@@ -332,7 +332,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @full_sync_wait_ms.setter
     def full_sync_wait_ms(self, full_sync_wait_ms):
-        """Sets the full_sync_wait_ms of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the full_sync_wait_ms of this SmartConnectTaskReqSourceConfig.
 
         全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时需要填写）
 
@@ -343,7 +343,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def full_sync_max_retry(self):
-        """Gets the full_sync_max_retry of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the full_sync_max_retry of this SmartConnectTaskReqSourceConfig.
 
         全量同步最大重试次数。（仅源端类型为Redis时需要填写）
 
@@ -354,7 +354,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @full_sync_max_retry.setter
     def full_sync_max_retry(self, full_sync_max_retry):
-        """Sets the full_sync_max_retry of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the full_sync_max_retry of this SmartConnectTaskReqSourceConfig.
 
         全量同步最大重试次数。（仅源端类型为Redis时需要填写）
 
@@ -365,7 +365,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def ratelimit(self):
-        """Gets the ratelimit of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the ratelimit of this SmartConnectTaskReqSourceConfig.
 
         限速，单位为KB/s。-1表示不限速。（仅源端类型为Redis时需要填写）
 
@@ -376,7 +376,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @ratelimit.setter
     def ratelimit(self, ratelimit):
-        """Sets the ratelimit of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the ratelimit of this SmartConnectTaskReqSourceConfig.
 
         限速，单位为KB/s。-1表示不限速。（仅源端类型为Redis时需要填写）
 
@@ -387,7 +387,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def current_cluster_name(self):
-        """Gets the current_cluster_name of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the current_cluster_name of this SmartConnectTaskReqSourceConfig.
 
         当前Kafka实例别名。（仅源端类型为Kafka时需要填写）
 
@@ -398,7 +398,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @current_cluster_name.setter
     def current_cluster_name(self, current_cluster_name):
-        """Sets the current_cluster_name of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the current_cluster_name of this SmartConnectTaskReqSourceConfig.
 
         当前Kafka实例别名。（仅源端类型为Kafka时需要填写）
 
@@ -409,7 +409,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the cluster_name of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka实例别名。（仅源端类型为Kafka时需要填写）
 
@@ -420,7 +420,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the cluster_name of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka实例别名。（仅源端类型为Kafka时需要填写）
 
@@ -431,7 +431,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the user_name of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka开启SASL_SSL时设置的用户名，或者创建SASL_SSL用户时设置的用户名。（仅源端类型为Kafka且对端Kafka认证方式为“SASL_SSL”时需要填写）
 
@@ -442,7 +442,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the user_name of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka开启SASL_SSL时设置的用户名，或者创建SASL_SSL用户时设置的用户名。（仅源端类型为Kafka且对端Kafka认证方式为“SASL_SSL”时需要填写）
 
@@ -453,7 +453,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def password(self):
-        """Gets the password of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the password of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka开启SASL_SSL时设置的密码，或者创建SASL_SSL用户时设置的密码。（仅源端类型为Kafka且对端Kafka认证方式为“SASL_SSL”时需要填写）
 
@@ -464,7 +464,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the password of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka开启SASL_SSL时设置的密码，或者创建SASL_SSL用户时设置的密码。（仅源端类型为Kafka且对端Kafka认证方式为“SASL_SSL”时需要填写）
 
@@ -475,7 +475,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def sasl_mechanism(self):
-        """Gets the sasl_mechanism of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the sasl_mechanism of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka认证机制。（仅源端类型为Kafka且“认证方式”为“SASL_SSL”时需要填写）
 
@@ -486,7 +486,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @sasl_mechanism.setter
     def sasl_mechanism(self, sasl_mechanism):
-        """Sets the sasl_mechanism of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the sasl_mechanism of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka认证机制。（仅源端类型为Kafka且“认证方式”为“SASL_SSL”时需要填写）
 
@@ -497,7 +497,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the instance_id of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka实例ID。（仅源端类型为Kafka时需要填写，instance_id和bootstrap_servers仅需要填写其中一个）
 
@@ -508,7 +508,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the instance_id of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka实例ID。（仅源端类型为Kafka时需要填写，instance_id和bootstrap_servers仅需要填写其中一个）
 
@@ -519,7 +519,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def bootstrap_servers(self):
-        """Gets the bootstrap_servers of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the bootstrap_servers of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka实例地址。（仅源端类型为Kafka时需要填写，instance_id和bootstrap_servers仅需要填写其中一个）
 
@@ -530,7 +530,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @bootstrap_servers.setter
     def bootstrap_servers(self, bootstrap_servers):
-        """Sets the bootstrap_servers of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the bootstrap_servers of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka实例地址。（仅源端类型为Kafka时需要填写，instance_id和bootstrap_servers仅需要填写其中一个）
 
@@ -541,7 +541,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def security_protocol(self):
-        """Gets the security_protocol of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the security_protocol of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka认证方式。（仅源端类型为Kafka需要填写） 支持以下两种认证方式：   - SASL_SSL：表示实例已开启SASL_SSL。   - PLAINTEXT：表示实例未开启SASL_SSL。 
 
@@ -552,7 +552,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @security_protocol.setter
     def security_protocol(self, security_protocol):
-        """Sets the security_protocol of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the security_protocol of this SmartConnectTaskReqSourceConfig.
 
         对端Kafka认证方式。（仅源端类型为Kafka需要填写） 支持以下两种认证方式：   - SASL_SSL：表示实例已开启SASL_SSL。   - PLAINTEXT：表示实例未开启SASL_SSL。 
 
@@ -563,7 +563,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def direction(self):
-        """Gets the direction of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the direction of this SmartConnectTaskReqSourceConfig.
 
         同步方向；pull为把对端Kafka实例数据复制到当前Kafka实例中，push为把当前Kafka实例数据复制到对端Kafka实例中，two-way为对两端Kafka实例数据进行双向复制。（仅源端类型为Kafka时需要填写）
 
@@ -574,7 +574,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the direction of this SmartConnectTaskReqSourceConfig.
 
         同步方向；pull为把对端Kafka实例数据复制到当前Kafka实例中，push为把当前Kafka实例数据复制到对端Kafka实例中，two-way为对两端Kafka实例数据进行双向复制。（仅源端类型为Kafka时需要填写）
 
@@ -585,7 +585,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def sync_consumer_offsets_enabled(self):
-        """Gets the sync_consumer_offsets_enabled of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the sync_consumer_offsets_enabled of this SmartConnectTaskReqSourceConfig.
 
         是否同步消费进度。（仅源端类型为Kafka时需要填写）
 
@@ -596,7 +596,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @sync_consumer_offsets_enabled.setter
     def sync_consumer_offsets_enabled(self, sync_consumer_offsets_enabled):
-        """Sets the sync_consumer_offsets_enabled of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the sync_consumer_offsets_enabled of this SmartConnectTaskReqSourceConfig.
 
         是否同步消费进度。（仅源端类型为Kafka时需要填写）
 
@@ -607,7 +607,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def replication_factor(self):
-        """Gets the replication_factor of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the replication_factor of this SmartConnectTaskReqSourceConfig.
 
         在对端实例中自动创建Topic时，指定Topic的副本数，此参数值不能超过对端实例的代理数。如果对端实例中设置了“default.replication.factor”，此参数的优先级高于“default.replication.factor”。（仅源端类型为Kafka时需要填写）
 
@@ -618,7 +618,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @replication_factor.setter
     def replication_factor(self, replication_factor):
-        """Sets the replication_factor of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the replication_factor of this SmartConnectTaskReqSourceConfig.
 
         在对端实例中自动创建Topic时，指定Topic的副本数，此参数值不能超过对端实例的代理数。如果对端实例中设置了“default.replication.factor”，此参数的优先级高于“default.replication.factor”。（仅源端类型为Kafka时需要填写）
 
@@ -629,7 +629,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def task_num(self):
-        """Gets the task_num of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the task_num of this SmartConnectTaskReqSourceConfig.
 
         数据复制的任务数。默认值为2，建议保持默认值。如果“同步方式”为“双向”，实际任务数=设置的任务数*2。（仅源端类型为Kafka时需要填写）
 
@@ -640,7 +640,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @task_num.setter
     def task_num(self, task_num):
-        """Sets the task_num of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the task_num of this SmartConnectTaskReqSourceConfig.
 
         数据复制的任务数。默认值为2，建议保持默认值。如果“同步方式”为“双向”，实际任务数=设置的任务数*2。（仅源端类型为Kafka时需要填写）
 
@@ -651,7 +651,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def rename_topic_enabled(self):
-        """Gets the rename_topic_enabled of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the rename_topic_enabled of this SmartConnectTaskReqSourceConfig.
 
         是否重命名Topic，在目标Topic名称前添加源端Kafka实例的别名，形成目标Topic新的名称。（仅源端类型为Kafka时需要填写）
 
@@ -662,7 +662,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @rename_topic_enabled.setter
     def rename_topic_enabled(self, rename_topic_enabled):
-        """Sets the rename_topic_enabled of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the rename_topic_enabled of this SmartConnectTaskReqSourceConfig.
 
         是否重命名Topic，在目标Topic名称前添加源端Kafka实例的别名，形成目标Topic新的名称。（仅源端类型为Kafka时需要填写）
 
@@ -673,7 +673,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def provenance_header_enabled(self):
-        """Gets the provenance_header_enabled of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the provenance_header_enabled of this SmartConnectTaskReqSourceConfig.
 
         目标Topic接收复制的消息，此消息header中包含消息来源。两端实例数据双向复制时，请开启“添加来源header”，防止循环复制。（仅源端类型为Kafka时需要填写）
 
@@ -684,7 +684,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @provenance_header_enabled.setter
     def provenance_header_enabled(self, provenance_header_enabled):
-        """Sets the provenance_header_enabled of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the provenance_header_enabled of this SmartConnectTaskReqSourceConfig.
 
         目标Topic接收复制的消息，此消息header中包含消息来源。两端实例数据双向复制时，请开启“添加来源header”，防止循环复制。（仅源端类型为Kafka时需要填写）
 
@@ -695,7 +695,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the consumer_strategy of this SmartConnectTaskReqSourceConfig.
 
         启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时需要填写）
 
@@ -706,7 +706,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the consumer_strategy of this SmartConnectTaskReqSourceConfig.
 
         启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时需要填写）
 
@@ -717,7 +717,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def compression_type(self):
-        """Gets the compression_type of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the compression_type of this SmartConnectTaskReqSourceConfig.
 
         复制消息所使用的压缩算法。（仅源端类型为Kafka时需要填写） - none - gzip - snappy - lz4 - zstd 
 
@@ -728,7 +728,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @compression_type.setter
     def compression_type(self, compression_type):
-        """Sets the compression_type of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the compression_type of this SmartConnectTaskReqSourceConfig.
 
         复制消息所使用的压缩算法。（仅源端类型为Kafka时需要填写） - none - gzip - snappy - lz4 - zstd 
 
@@ -739,7 +739,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @property
     def topics_mapping(self):
-        """Gets the topics_mapping of this SmartConnectTaskReqSourceConfig.
+        r"""Gets the topics_mapping of this SmartConnectTaskReqSourceConfig.
 
         topic映射，用于自定义目标端Topic名称。不能同时设置“重命名Topic”和“topic映射”。topic映射请按照“源端topic:目的端topic”的格式填写，如涉及多个topic映射，请用“,”分隔开，例如：topic-sc-1:topic-sc-2,topic-sc-3:topic-sc-4。（仅源端类型为Kafka时需要填写）
 
@@ -750,7 +750,7 @@ class SmartConnectTaskReqSourceConfig:
 
     @topics_mapping.setter
     def topics_mapping(self, topics_mapping):
-        """Sets the topics_mapping of this SmartConnectTaskReqSourceConfig.
+        r"""Sets the topics_mapping of this SmartConnectTaskReqSourceConfig.
 
         topic映射，用于自定义目标端Topic名称。不能同时设置“重命名Topic”和“topic映射”。topic映射请按照“源端topic:目的端topic”的格式填写，如涉及多个topic映射，请用“,”分隔开，例如：topic-sc-1:topic-sc-2,topic-sc-3:topic-sc-4。（仅源端类型为Kafka时需要填写）
 

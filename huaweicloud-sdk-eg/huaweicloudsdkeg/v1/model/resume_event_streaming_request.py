@@ -27,7 +27,7 @@ class ResumeEventStreamingRequest:
     }
 
     def __init__(self, eventstreaming_id=None, body=None):
-        """ResumeEventStreamingRequest
+        r"""ResumeEventStreamingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResumeEventStreamingRequest:
 
     @property
     def eventstreaming_id(self):
-        """Gets the eventstreaming_id of this ResumeEventStreamingRequest.
+        r"""Gets the eventstreaming_id of this ResumeEventStreamingRequest.
 
         事件流ID
 
@@ -60,7 +60,7 @@ class ResumeEventStreamingRequest:
 
     @eventstreaming_id.setter
     def eventstreaming_id(self, eventstreaming_id):
-        """Sets the eventstreaming_id of this ResumeEventStreamingRequest.
+        r"""Sets the eventstreaming_id of this ResumeEventStreamingRequest.
 
         事件流ID
 
@@ -71,7 +71,7 @@ class ResumeEventStreamingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResumeEventStreamingRequest.
+        r"""Gets the body of this ResumeEventStreamingRequest.
 
         :return: The body of this ResumeEventStreamingRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingOperateReq`
@@ -80,7 +80,7 @@ class ResumeEventStreamingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResumeEventStreamingRequest.
+        r"""Sets the body of this ResumeEventStreamingRequest.
 
         :param body: The body of this ResumeEventStreamingRequest.
         :type body: :class:`huaweicloudsdkeg.v1.EventStreamingOperateReq`

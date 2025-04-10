@@ -29,7 +29,7 @@ class ChartConfig:
     }
 
     def __init__(self, can_sort=None, can_search=None, page_size=None):
-        """ChartConfig
+        r"""ChartConfig
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ChartConfig:
 
     @property
     def can_sort(self):
-        """Gets the can_sort of this ChartConfig.
+        r"""Gets the can_sort of this ChartConfig.
 
         是否开启排序
 
@@ -65,7 +65,7 @@ class ChartConfig:
 
     @can_sort.setter
     def can_sort(self, can_sort):
-        """Sets the can_sort of this ChartConfig.
+        r"""Sets the can_sort of this ChartConfig.
 
         是否开启排序
 
@@ -76,7 +76,7 @@ class ChartConfig:
 
     @property
     def can_search(self):
-        """Gets the can_search of this ChartConfig.
+        r"""Gets the can_search of this ChartConfig.
 
         是否开启搜索
 
@@ -87,7 +87,7 @@ class ChartConfig:
 
     @can_search.setter
     def can_search(self, can_search):
-        """Sets the can_search of this ChartConfig.
+        r"""Sets the can_search of this ChartConfig.
 
         是否开启搜索
 
@@ -98,7 +98,7 @@ class ChartConfig:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ChartConfig.
+        r"""Gets the page_size of this ChartConfig.
 
         每页显示数量
 
@@ -109,7 +109,7 @@ class ChartConfig:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ChartConfig.
+        r"""Sets the page_size of this ChartConfig.
 
         每页显示数量
 

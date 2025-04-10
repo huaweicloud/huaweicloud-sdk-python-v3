@@ -31,7 +31,7 @@ class ShowAssociatedQuestionsRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, body=None):
-        """ShowAssociatedQuestionsRequest
+        r"""ShowAssociatedQuestionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowAssociatedQuestionsRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ShowAssociatedQuestionsRequest.
+        r"""Gets the x_service_key of this ShowAssociatedQuestionsRequest.
 
         调用智能客服服务标志。
 
@@ -74,7 +74,7 @@ class ShowAssociatedQuestionsRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ShowAssociatedQuestionsRequest.
+        r"""Sets the x_service_key of this ShowAssociatedQuestionsRequest.
 
         调用智能客服服务标志。
 
@@ -85,7 +85,7 @@ class ShowAssociatedQuestionsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowAssociatedQuestionsRequest.
+        r"""Gets the x_site of this ShowAssociatedQuestionsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -96,7 +96,7 @@ class ShowAssociatedQuestionsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowAssociatedQuestionsRequest.
+        r"""Sets the x_site of this ShowAssociatedQuestionsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -107,7 +107,7 @@ class ShowAssociatedQuestionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowAssociatedQuestionsRequest.
+        r"""Gets the x_language of this ShowAssociatedQuestionsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -118,7 +118,7 @@ class ShowAssociatedQuestionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowAssociatedQuestionsRequest.
+        r"""Sets the x_language of this ShowAssociatedQuestionsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -129,7 +129,7 @@ class ShowAssociatedQuestionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAssociatedQuestionsRequest.
+        r"""Gets the body of this ShowAssociatedQuestionsRequest.
 
         :return: The body of this ShowAssociatedQuestionsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.QueryAssociatedQuestionReq`
@@ -138,7 +138,7 @@ class ShowAssociatedQuestionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAssociatedQuestionsRequest.
+        r"""Sets the body of this ShowAssociatedQuestionsRequest.
 
         :param body: The body of this ShowAssociatedQuestionsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.QueryAssociatedQuestionReq`

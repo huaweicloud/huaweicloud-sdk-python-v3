@@ -25,7 +25,7 @@ class QuotaUnit:
     }
 
     def __init__(self, unit=None):
-        """QuotaUnit
+        r"""QuotaUnit
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QuotaUnit:
 
     @property
     def unit(self):
-        """Gets the unit of this QuotaUnit.
+        r"""Gets the unit of this QuotaUnit.
 
         配额值的单位。
 
@@ -53,7 +53,7 @@ class QuotaUnit:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QuotaUnit.
+        r"""Sets the unit of this QuotaUnit.
 
         配额值的单位。
 

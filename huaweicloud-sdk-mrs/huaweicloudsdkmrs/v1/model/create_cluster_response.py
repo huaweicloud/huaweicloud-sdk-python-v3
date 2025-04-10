@@ -30,7 +30,7 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, result=None, msg=None, cluster_id=None):
-        """CreateClusterResponse
+        r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateClusterResponse.
+        r"""Gets the result of this CreateClusterResponse.
 
         操作结果。 - true：操作成功 - false：操作失败
 
@@ -69,7 +69,7 @@ class CreateClusterResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateClusterResponse.
+        r"""Sets the result of this CreateClusterResponse.
 
         操作结果。 - true：操作成功 - false：操作失败
 
@@ -80,7 +80,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this CreateClusterResponse.
+        r"""Gets the msg of this CreateClusterResponse.
 
         系统提示信息，可为空。
 
@@ -91,7 +91,7 @@ class CreateClusterResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this CreateClusterResponse.
+        r"""Sets the msg of this CreateClusterResponse.
 
         系统提示信息，可为空。
 
@@ -102,7 +102,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateClusterResponse.
+        r"""Gets the cluster_id of this CreateClusterResponse.
 
         集群创建成功后系统返回的集群ID值。
 
@@ -113,7 +113,7 @@ class CreateClusterResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateClusterResponse.
+        r"""Sets the cluster_id of this CreateClusterResponse.
 
         集群创建成功后系统返回的集群ID值。
 

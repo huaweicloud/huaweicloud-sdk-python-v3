@@ -29,7 +29,7 @@ class Statement:
     }
 
     def __init__(self, effect=None, actions=None, resources=None):
-        """Statement
+        r"""Statement
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Statement:
 
     @property
     def effect(self):
-        """Gets the effect of this Statement.
+        r"""Gets the effect of this Statement.
 
         指定是允许还是拒绝该操作。既有允许（ALLOW）又有拒绝（DENY）的授权语句时，遵循拒绝（DENY）优先的原则。 - ALLOW：允许。 - DENY：拒绝。 
 
@@ -65,7 +65,7 @@ class Statement:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this Statement.
+        r"""Sets the effect of this Statement.
 
         指定是允许还是拒绝该操作。既有允许（ALLOW）又有拒绝（DENY）的授权语句时，遵循拒绝（DENY）优先的原则。 - ALLOW：允许。 - DENY：拒绝。 
 
@@ -76,7 +76,7 @@ class Statement:
 
     @property
     def actions(self):
-        """Gets the actions of this Statement.
+        r"""Gets the actions of this Statement.
 
         用于指定策略允许或拒绝的操作。格式为：服务名:资源:操作。当前支持的操作类型如下： - iotda:devices:publish：设备使用MQTT协议发布消息。 - iotda:devices:subscribe：设备使用MQTT协议订阅消息。 
 
@@ -87,7 +87,7 @@ class Statement:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this Statement.
+        r"""Sets the actions of this Statement.
 
         用于指定策略允许或拒绝的操作。格式为：服务名:资源:操作。当前支持的操作类型如下： - iotda:devices:publish：设备使用MQTT协议发布消息。 - iotda:devices:subscribe：设备使用MQTT协议订阅消息。 
 
@@ -98,7 +98,7 @@ class Statement:
 
     @property
     def resources(self):
-        """Gets the resources of this Statement.
+        r"""Gets the resources of this Statement.
 
         用于指定允许或拒绝对其执行操作的资源。格式为：资源类型:资源名称。如设备订阅的资源为：topic:/v1/${devices.deviceId}/test/hello。  **取值范围**：资源列表长度最小为1，最大为10，列表中的资源取值范围：仅支持字母，数字，以及/{}$=+#?*:._-组合。 
 
@@ -109,7 +109,7 @@ class Statement:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this Statement.
+        r"""Sets the resources of this Statement.
 
         用于指定允许或拒绝对其执行操作的资源。格式为：资源类型:资源名称。如设备订阅的资源为：topic:/v1/${devices.deviceId}/test/hello。  **取值范围**：资源列表长度最小为1，最大为10，列表中的资源取值范围：仅支持字母，数字，以及/{}$=+#?*:._-组合。 
 

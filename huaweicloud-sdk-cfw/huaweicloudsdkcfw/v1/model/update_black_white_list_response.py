@@ -26,7 +26,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateBlackWhiteListResponse
+        r"""UpdateBlackWhiteListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateBlackWhiteListResponse.
+        r"""Gets the data of this UpdateBlackWhiteListResponse.
 
         :return: The data of this UpdateBlackWhiteListResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.BlackWhiteListId`
@@ -53,7 +53,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateBlackWhiteListResponse.
+        r"""Sets the data of this UpdateBlackWhiteListResponse.
 
         :param data: The data of this UpdateBlackWhiteListResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.BlackWhiteListId`

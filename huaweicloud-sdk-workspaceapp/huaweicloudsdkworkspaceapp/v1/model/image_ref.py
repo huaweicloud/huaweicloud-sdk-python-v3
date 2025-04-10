@@ -31,7 +31,7 @@ class ImageRef:
     }
 
     def __init__(self, id=None, image_type=None, spce_code=None, product_id=None):
-        """ImageRef
+        r"""ImageRef
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ImageRef:
 
     @property
     def id(self):
-        """Gets the id of this ImageRef.
+        r"""Gets the id of this ImageRef.
 
         镜像源的唯一标识。
 
@@ -73,7 +73,7 @@ class ImageRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageRef.
+        r"""Sets the id of this ImageRef.
 
         镜像源的唯一标识。
 
@@ -84,7 +84,7 @@ class ImageRef:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ImageRef.
+        r"""Gets the image_type of this ImageRef.
 
         镜像源的镜像类型: * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
 
@@ -95,7 +95,7 @@ class ImageRef:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ImageRef.
+        r"""Sets the image_type of this ImageRef.
 
         镜像源的镜像类型: * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
 
@@ -106,7 +106,7 @@ class ImageRef:
 
     @property
     def spce_code(self):
-        """Gets the spce_code of this ImageRef.
+        r"""Gets the spce_code of this ImageRef.
 
         镜像源的规格编码，对于`gold`镜像类型，这个值是的必须项。
 
@@ -117,7 +117,7 @@ class ImageRef:
 
     @spce_code.setter
     def spce_code(self, spce_code):
-        """Sets the spce_code of this ImageRef.
+        r"""Sets the spce_code of this ImageRef.
 
         镜像源的规格编码，对于`gold`镜像类型，这个值是的必须项。
 
@@ -128,7 +128,7 @@ class ImageRef:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ImageRef.
+        r"""Gets the product_id of this ImageRef.
 
         镜像源的产品ID，对于`gold`镜像类型，这个值是的必须项。
 
@@ -139,7 +139,7 @@ class ImageRef:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ImageRef.
+        r"""Sets the product_id of this ImageRef.
 
         镜像源的产品ID，对于`gold`镜像类型，这个值是的必须项。
 

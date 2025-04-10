@@ -29,7 +29,7 @@ class ShowDataDetailRequest:
     }
 
     def __init__(self, instance=None, guid=None, ignore_relationships=None):
-        """ShowDataDetailRequest
+        r"""ShowDataDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDataDetailRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowDataDetailRequest.
+        r"""Gets the instance of this ShowDataDetailRequest.
 
         实例id
 
@@ -66,7 +66,7 @@ class ShowDataDetailRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowDataDetailRequest.
+        r"""Sets the instance of this ShowDataDetailRequest.
 
         实例id
 
@@ -77,7 +77,7 @@ class ShowDataDetailRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowDataDetailRequest.
+        r"""Gets the guid of this ShowDataDetailRequest.
 
         资产guid
 
@@ -88,7 +88,7 @@ class ShowDataDetailRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowDataDetailRequest.
+        r"""Sets the guid of this ShowDataDetailRequest.
 
         资产guid
 
@@ -99,7 +99,7 @@ class ShowDataDetailRequest:
 
     @property
     def ignore_relationships(self):
-        """Gets the ignore_relationships of this ShowDataDetailRequest.
+        r"""Gets the ignore_relationships of this ShowDataDetailRequest.
 
         是否忽略关联资产 缺省值：false
 
@@ -110,7 +110,7 @@ class ShowDataDetailRequest:
 
     @ignore_relationships.setter
     def ignore_relationships(self, ignore_relationships):
-        """Sets the ignore_relationships of this ShowDataDetailRequest.
+        r"""Sets the ignore_relationships of this ShowDataDetailRequest.
 
         是否忽略关联资产 缺省值：false
 

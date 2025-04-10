@@ -25,7 +25,7 @@ class CreateDiagnoseJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDiagnoseJobRequest
+        r"""CreateDiagnoseJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDiagnoseJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDiagnoseJobRequest.
+        r"""Gets the body of this CreateDiagnoseJobRequest.
 
         :return: The body of this CreateDiagnoseJobRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SubmitDiagnoseJobReq`
@@ -52,7 +52,7 @@ class CreateDiagnoseJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDiagnoseJobRequest.
+        r"""Sets the body of this CreateDiagnoseJobRequest.
 
         :param body: The body of this CreateDiagnoseJobRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SubmitDiagnoseJobReq`

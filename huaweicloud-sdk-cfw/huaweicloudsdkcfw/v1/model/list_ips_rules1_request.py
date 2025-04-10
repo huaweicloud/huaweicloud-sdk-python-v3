@@ -53,7 +53,7 @@ class ListIpsRules1Request:
     }
 
     def __init__(self, affected_application_like=None, create_time=None, fw_instance_id=None, ips_cve_like=None, ips_group=None, ips_id=None, ips_level=None, ips_name_like=None, ips_rules_type_like=None, ips_status=None, is_updated_ips_rule_queried=None, limit=None, object_id=None, offset=None, enterprise_project_id=None):
-        """ListIpsRules1Request
+        r"""ListIpsRules1Request
 
         The model defined in huaweicloud sdk
 
@@ -138,7 +138,7 @@ class ListIpsRules1Request:
 
     @property
     def affected_application_like(self):
-        """Gets the affected_application_like of this ListIpsRules1Request.
+        r"""Gets the affected_application_like of this ListIpsRules1Request.
 
         攻击对象
 
@@ -149,7 +149,7 @@ class ListIpsRules1Request:
 
     @affected_application_like.setter
     def affected_application_like(self, affected_application_like):
-        """Sets the affected_application_like of this ListIpsRules1Request.
+        r"""Sets the affected_application_like of this ListIpsRules1Request.
 
         攻击对象
 
@@ -160,7 +160,7 @@ class ListIpsRules1Request:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListIpsRules1Request.
+        r"""Gets the create_time of this ListIpsRules1Request.
 
         创建时间
 
@@ -171,7 +171,7 @@ class ListIpsRules1Request:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListIpsRules1Request.
+        r"""Sets the create_time of this ListIpsRules1Request.
 
         创建时间
 
@@ -182,7 +182,7 @@ class ListIpsRules1Request:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListIpsRules1Request.
+        r"""Gets the fw_instance_id of this ListIpsRules1Request.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -193,7 +193,7 @@ class ListIpsRules1Request:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListIpsRules1Request.
+        r"""Sets the fw_instance_id of this ListIpsRules1Request.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -204,7 +204,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_cve_like(self):
-        """Gets the ips_cve_like of this ListIpsRules1Request.
+        r"""Gets the ips_cve_like of this ListIpsRules1Request.
 
         cve
 
@@ -215,7 +215,7 @@ class ListIpsRules1Request:
 
     @ips_cve_like.setter
     def ips_cve_like(self, ips_cve_like):
-        """Sets the ips_cve_like of this ListIpsRules1Request.
+        r"""Sets the ips_cve_like of this ListIpsRules1Request.
 
         cve
 
@@ -226,7 +226,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_group(self):
-        """Gets the ips_group of this ListIpsRules1Request.
+        r"""Gets the ips_group of this ListIpsRules1Request.
 
         ips组
 
@@ -237,7 +237,7 @@ class ListIpsRules1Request:
 
     @ips_group.setter
     def ips_group(self, ips_group):
-        """Sets the ips_group of this ListIpsRules1Request.
+        r"""Sets the ips_group of this ListIpsRules1Request.
 
         ips组
 
@@ -248,7 +248,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_id(self):
-        """Gets the ips_id of this ListIpsRules1Request.
+        r"""Gets the ips_id of this ListIpsRules1Request.
 
         ips规则id
 
@@ -259,7 +259,7 @@ class ListIpsRules1Request:
 
     @ips_id.setter
     def ips_id(self, ips_id):
-        """Sets the ips_id of this ListIpsRules1Request.
+        r"""Sets the ips_id of this ListIpsRules1Request.
 
         ips规则id
 
@@ -270,7 +270,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_level(self):
-        """Gets the ips_level of this ListIpsRules1Request.
+        r"""Gets the ips_level of this ListIpsRules1Request.
 
         ips等级
 
@@ -281,7 +281,7 @@ class ListIpsRules1Request:
 
     @ips_level.setter
     def ips_level(self, ips_level):
-        """Sets the ips_level of this ListIpsRules1Request.
+        r"""Sets the ips_level of this ListIpsRules1Request.
 
         ips等级
 
@@ -292,7 +292,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_name_like(self):
-        """Gets the ips_name_like of this ListIpsRules1Request.
+        r"""Gets the ips_name_like of this ListIpsRules1Request.
 
         ips规则名称
 
@@ -303,7 +303,7 @@ class ListIpsRules1Request:
 
     @ips_name_like.setter
     def ips_name_like(self, ips_name_like):
-        """Sets the ips_name_like of this ListIpsRules1Request.
+        r"""Sets the ips_name_like of this ListIpsRules1Request.
 
         ips规则名称
 
@@ -314,7 +314,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_rules_type_like(self):
-        """Gets the ips_rules_type_like of this ListIpsRules1Request.
+        r"""Gets the ips_rules_type_like of this ListIpsRules1Request.
 
         ips规则类型
 
@@ -325,7 +325,7 @@ class ListIpsRules1Request:
 
     @ips_rules_type_like.setter
     def ips_rules_type_like(self, ips_rules_type_like):
-        """Sets the ips_rules_type_like of this ListIpsRules1Request.
+        r"""Sets the ips_rules_type_like of this ListIpsRules1Request.
 
         ips规则类型
 
@@ -336,7 +336,7 @@ class ListIpsRules1Request:
 
     @property
     def ips_status(self):
-        """Gets the ips_status of this ListIpsRules1Request.
+        r"""Gets the ips_status of this ListIpsRules1Request.
 
         ips规则状态
 
@@ -347,7 +347,7 @@ class ListIpsRules1Request:
 
     @ips_status.setter
     def ips_status(self, ips_status):
-        """Sets the ips_status of this ListIpsRules1Request.
+        r"""Sets the ips_status of this ListIpsRules1Request.
 
         ips规则状态
 
@@ -358,7 +358,7 @@ class ListIpsRules1Request:
 
     @property
     def is_updated_ips_rule_queried(self):
-        """Gets the is_updated_ips_rule_queried of this ListIpsRules1Request.
+        r"""Gets the is_updated_ips_rule_queried of this ListIpsRules1Request.
 
         是否查新更新规则
 
@@ -369,7 +369,7 @@ class ListIpsRules1Request:
 
     @is_updated_ips_rule_queried.setter
     def is_updated_ips_rule_queried(self, is_updated_ips_rule_queried):
-        """Sets the is_updated_ips_rule_queried of this ListIpsRules1Request.
+        r"""Sets the is_updated_ips_rule_queried of this ListIpsRules1Request.
 
         是否查新更新规则
 
@@ -380,7 +380,7 @@ class ListIpsRules1Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIpsRules1Request.
+        r"""Gets the limit of this ListIpsRules1Request.
 
         分页查询数据量限制
 
@@ -391,7 +391,7 @@ class ListIpsRules1Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIpsRules1Request.
+        r"""Sets the limit of this ListIpsRules1Request.
 
         分页查询数据量限制
 
@@ -402,7 +402,7 @@ class ListIpsRules1Request:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListIpsRules1Request.
+        r"""Gets the object_id of this ListIpsRules1Request.
 
         防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -413,7 +413,7 @@ class ListIpsRules1Request:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListIpsRules1Request.
+        r"""Sets the object_id of this ListIpsRules1Request.
 
         防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -424,7 +424,7 @@ class ListIpsRules1Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIpsRules1Request.
+        r"""Gets the offset of this ListIpsRules1Request.
 
         查询偏移量
 
@@ -435,7 +435,7 @@ class ListIpsRules1Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIpsRules1Request.
+        r"""Sets the offset of this ListIpsRules1Request.
 
         查询偏移量
 
@@ -446,7 +446,7 @@ class ListIpsRules1Request:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListIpsRules1Request.
+        r"""Gets the enterprise_project_id of this ListIpsRules1Request.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -457,7 +457,7 @@ class ListIpsRules1Request:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListIpsRules1Request.
+        r"""Sets the enterprise_project_id of this ListIpsRules1Request.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

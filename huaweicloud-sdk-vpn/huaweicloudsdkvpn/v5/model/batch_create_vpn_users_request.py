@@ -30,7 +30,7 @@ class BatchCreateVpnUsersRequest:
     }
 
     def __init__(self, vpn_server_id=None, x_client_token=None, body=None):
-        """BatchCreateVpnUsersRequest
+        r"""BatchCreateVpnUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchCreateVpnUsersRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this BatchCreateVpnUsersRequest.
+        r"""Gets the vpn_server_id of this BatchCreateVpnUsersRequest.
 
         VPN服务端 ID
 
@@ -68,7 +68,7 @@ class BatchCreateVpnUsersRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this BatchCreateVpnUsersRequest.
+        r"""Sets the vpn_server_id of this BatchCreateVpnUsersRequest.
 
         VPN服务端 ID
 
@@ -79,7 +79,7 @@ class BatchCreateVpnUsersRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this BatchCreateVpnUsersRequest.
+        r"""Gets the x_client_token of this BatchCreateVpnUsersRequest.
 
         幂等性标识
 
@@ -90,7 +90,7 @@ class BatchCreateVpnUsersRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this BatchCreateVpnUsersRequest.
+        r"""Sets the x_client_token of this BatchCreateVpnUsersRequest.
 
         幂等性标识
 
@@ -101,7 +101,7 @@ class BatchCreateVpnUsersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateVpnUsersRequest.
+        r"""Gets the body of this BatchCreateVpnUsersRequest.
 
         :return: The body of this BatchCreateVpnUsersRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.BatchCreateVpnUsersRequestBody`
@@ -110,7 +110,7 @@ class BatchCreateVpnUsersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateVpnUsersRequest.
+        r"""Sets the body of this BatchCreateVpnUsersRequest.
 
         :param body: The body of this BatchCreateVpnUsersRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.BatchCreateVpnUsersRequestBody`

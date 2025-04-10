@@ -39,7 +39,7 @@ class UploadAssetReq:
     }
 
     def __init__(self, asset_id=None, video_md5=None, video_name=None, video_type=None, cover_id=None, cover_type=None, cover_md5=None, subtitles=None):
-        """UploadAssetReq
+        r"""UploadAssetReq
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class UploadAssetReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UploadAssetReq.
+        r"""Gets the asset_id of this UploadAssetReq.
 
         媒资ID。
 
@@ -102,7 +102,7 @@ class UploadAssetReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UploadAssetReq.
+        r"""Sets the asset_id of this UploadAssetReq.
 
         媒资ID。
 
@@ -113,7 +113,7 @@ class UploadAssetReq:
 
     @property
     def video_md5(self):
-        """Gets the video_md5 of this UploadAssetReq.
+        r"""Gets the video_md5 of this UploadAssetReq.
 
         视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
@@ -124,7 +124,7 @@ class UploadAssetReq:
 
     @video_md5.setter
     def video_md5(self, video_md5):
-        """Sets the video_md5 of this UploadAssetReq.
+        r"""Sets the video_md5 of this UploadAssetReq.
 
         视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
@@ -135,7 +135,7 @@ class UploadAssetReq:
 
     @property
     def video_name(self):
-        """Gets the video_name of this UploadAssetReq.
+        r"""Gets the video_name of this UploadAssetReq.
 
         视频文件名。  文件名后缀为可选。
 
@@ -146,7 +146,7 @@ class UploadAssetReq:
 
     @video_name.setter
     def video_name(self, video_name):
-        """Sets the video_name of this UploadAssetReq.
+        r"""Sets the video_name of this UploadAssetReq.
 
         视频文件名。  文件名后缀为可选。
 
@@ -157,7 +157,7 @@ class UploadAssetReq:
 
     @property
     def video_type(self):
-        """Gets the video_type of this UploadAssetReq.
+        r"""Gets the video_type of this UploadAssetReq.
 
         视频文件类型。 取值为MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV
 
@@ -168,7 +168,7 @@ class UploadAssetReq:
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this UploadAssetReq.
+        r"""Sets the video_type of this UploadAssetReq.
 
         视频文件类型。 取值为MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV
 
@@ -179,7 +179,7 @@ class UploadAssetReq:
 
     @property
     def cover_id(self):
-        """Gets the cover_id of this UploadAssetReq.
+        r"""Gets the cover_id of this UploadAssetReq.
 
         封面ID。  取值范围：[0,7]。  当前只支持一张封面，只能设置为0。
 
@@ -190,7 +190,7 @@ class UploadAssetReq:
 
     @cover_id.setter
     def cover_id(self, cover_id):
-        """Sets the cover_id of this UploadAssetReq.
+        r"""Sets the cover_id of this UploadAssetReq.
 
         封面ID。  取值范围：[0,7]。  当前只支持一张封面，只能设置为0。
 
@@ -201,7 +201,7 @@ class UploadAssetReq:
 
     @property
     def cover_type(self):
-        """Gets the cover_type of this UploadAssetReq.
+        r"""Gets the cover_type of this UploadAssetReq.
 
         封面图片格式类型。  取值如下： - JPG - PNG
 
@@ -212,7 +212,7 @@ class UploadAssetReq:
 
     @cover_type.setter
     def cover_type(self, cover_type):
-        """Sets the cover_type of this UploadAssetReq.
+        r"""Sets the cover_type of this UploadAssetReq.
 
         封面图片格式类型。  取值如下： - JPG - PNG
 
@@ -223,7 +223,7 @@ class UploadAssetReq:
 
     @property
     def cover_md5(self):
-        """Gets the cover_md5 of this UploadAssetReq.
+        r"""Gets the cover_md5 of this UploadAssetReq.
 
         封面文件的MD5值。
 
@@ -234,7 +234,7 @@ class UploadAssetReq:
 
     @cover_md5.setter
     def cover_md5(self, cover_md5):
-        """Sets the cover_md5 of this UploadAssetReq.
+        r"""Sets the cover_md5 of this UploadAssetReq.
 
         封面文件的MD5值。
 
@@ -245,7 +245,7 @@ class UploadAssetReq:
 
     @property
     def subtitles(self):
-        """Gets the subtitles of this UploadAssetReq.
+        r"""Gets the subtitles of this UploadAssetReq.
 
         字幕文件信息
 
@@ -256,7 +256,7 @@ class UploadAssetReq:
 
     @subtitles.setter
     def subtitles(self, subtitles):
-        """Sets the subtitles of this UploadAssetReq.
+        r"""Sets the subtitles of this UploadAssetReq.
 
         字幕文件信息
 

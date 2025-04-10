@@ -29,7 +29,7 @@ class UpdateProjectDomainRequest:
     }
 
     def __init__(self, project_id=None, domain_id=None, body=None):
-        """UpdateProjectDomainRequest
+        r"""UpdateProjectDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateProjectDomainRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateProjectDomainRequest.
+        r"""Gets the project_id of this UpdateProjectDomainRequest.
 
         devcloud项目的32位id
 
@@ -66,7 +66,7 @@ class UpdateProjectDomainRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateProjectDomainRequest.
+        r"""Sets the project_id of this UpdateProjectDomainRequest.
 
         devcloud项目的32位id
 
@@ -77,7 +77,7 @@ class UpdateProjectDomainRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateProjectDomainRequest.
+        r"""Gets the domain_id of this UpdateProjectDomainRequest.
 
         领域id
 
@@ -88,7 +88,7 @@ class UpdateProjectDomainRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateProjectDomainRequest.
+        r"""Sets the domain_id of this UpdateProjectDomainRequest.
 
         领域id
 
@@ -99,7 +99,7 @@ class UpdateProjectDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProjectDomainRequest.
+        r"""Gets the body of this UpdateProjectDomainRequest.
 
         :return: The body of this UpdateProjectDomainRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequestBody`
@@ -108,7 +108,7 @@ class UpdateProjectDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProjectDomainRequest.
+        r"""Sets the body of this UpdateProjectDomainRequest.
 
         :param body: The body of this UpdateProjectDomainRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequestBody`

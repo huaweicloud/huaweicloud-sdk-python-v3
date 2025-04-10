@@ -33,7 +33,7 @@ class JobReportPartnerVo:
     }
 
     def __init__(self, agent_name=None, data_output_cnt=None, dataset_name=None, partner_domain_alias=None, partner_domain_name=None):
-        """JobReportPartnerVo
+        r"""JobReportPartnerVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class JobReportPartnerVo:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this JobReportPartnerVo.
+        r"""Gets the agent_name of this JobReportPartnerVo.
 
         数据集所在代理
 
@@ -82,7 +82,7 @@ class JobReportPartnerVo:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this JobReportPartnerVo.
+        r"""Sets the agent_name of this JobReportPartnerVo.
 
         数据集所在代理
 
@@ -93,7 +93,7 @@ class JobReportPartnerVo:
 
     @property
     def data_output_cnt(self):
-        """Gets the data_output_cnt of this JobReportPartnerVo.
+        r"""Gets the data_output_cnt of this JobReportPartnerVo.
 
         代理输出数据总量
 
@@ -104,7 +104,7 @@ class JobReportPartnerVo:
 
     @data_output_cnt.setter
     def data_output_cnt(self, data_output_cnt):
-        """Sets the data_output_cnt of this JobReportPartnerVo.
+        r"""Sets the data_output_cnt of this JobReportPartnerVo.
 
         代理输出数据总量
 
@@ -115,7 +115,7 @@ class JobReportPartnerVo:
 
     @property
     def dataset_name(self):
-        """Gets the dataset_name of this JobReportPartnerVo.
+        r"""Gets the dataset_name of this JobReportPartnerVo.
 
         数据集名
 
@@ -126,7 +126,7 @@ class JobReportPartnerVo:
 
     @dataset_name.setter
     def dataset_name(self, dataset_name):
-        """Sets the dataset_name of this JobReportPartnerVo.
+        r"""Sets the dataset_name of this JobReportPartnerVo.
 
         数据集名
 
@@ -137,7 +137,7 @@ class JobReportPartnerVo:
 
     @property
     def partner_domain_alias(self):
-        """Gets the partner_domain_alias of this JobReportPartnerVo.
+        r"""Gets the partner_domain_alias of this JobReportPartnerVo.
 
         租户别名
 
@@ -148,7 +148,7 @@ class JobReportPartnerVo:
 
     @partner_domain_alias.setter
     def partner_domain_alias(self, partner_domain_alias):
-        """Sets the partner_domain_alias of this JobReportPartnerVo.
+        r"""Sets the partner_domain_alias of this JobReportPartnerVo.
 
         租户别名
 
@@ -159,7 +159,7 @@ class JobReportPartnerVo:
 
     @property
     def partner_domain_name(self):
-        """Gets the partner_domain_name of this JobReportPartnerVo.
+        r"""Gets the partner_domain_name of this JobReportPartnerVo.
 
         租户名
 
@@ -170,7 +170,7 @@ class JobReportPartnerVo:
 
     @partner_domain_name.setter
     def partner_domain_name(self, partner_domain_name):
-        """Sets the partner_domain_name of this JobReportPartnerVo.
+        r"""Sets the partner_domain_name of this JobReportPartnerVo.
 
         租户名
 

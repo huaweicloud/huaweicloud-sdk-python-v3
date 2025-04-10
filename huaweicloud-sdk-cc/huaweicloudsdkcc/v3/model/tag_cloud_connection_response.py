@@ -26,7 +26,7 @@ class TagCloudConnectionResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """TagCloudConnectionResponse
+        r"""TagCloudConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class TagCloudConnectionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this TagCloudConnectionResponse.
+        r"""Gets the x_request_id of this TagCloudConnectionResponse.
 
         :return: The x_request_id of this TagCloudConnectionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class TagCloudConnectionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this TagCloudConnectionResponse.
+        r"""Sets the x_request_id of this TagCloudConnectionResponse.
 
         :param x_request_id: The x_request_id of this TagCloudConnectionResponse.
         :type x_request_id: str

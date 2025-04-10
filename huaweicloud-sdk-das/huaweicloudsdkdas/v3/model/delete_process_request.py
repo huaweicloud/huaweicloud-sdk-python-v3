@@ -29,7 +29,7 @@ class DeleteProcessRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """DeleteProcessRequest
+        r"""DeleteProcessRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteProcessRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteProcessRequest.
+        r"""Gets the instance_id of this DeleteProcessRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class DeleteProcessRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteProcessRequest.
+        r"""Sets the instance_id of this DeleteProcessRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class DeleteProcessRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteProcessRequest.
+        r"""Gets the x_language of this DeleteProcessRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class DeleteProcessRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteProcessRequest.
+        r"""Sets the x_language of this DeleteProcessRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class DeleteProcessRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteProcessRequest.
+        r"""Gets the body of this DeleteProcessRequest.
 
         :return: The body of this DeleteProcessRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`
@@ -109,7 +109,7 @@ class DeleteProcessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteProcessRequest.
+        r"""Sets the body of this DeleteProcessRequest.
 
         :param body: The body of this DeleteProcessRequest.
         :type body: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`

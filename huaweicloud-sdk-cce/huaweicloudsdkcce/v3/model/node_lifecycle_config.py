@@ -27,7 +27,7 @@ class NodeLifecycleConfig:
     }
 
     def __init__(self, pre_install=None, post_install=None):
-        """NodeLifecycleConfig
+        r"""NodeLifecycleConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeLifecycleConfig:
 
     @property
     def pre_install(self):
-        """Gets the pre_install of this NodeLifecycleConfig.
+        r"""Gets the pre_install of this NodeLifecycleConfig.
 
         安装前执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
 
@@ -61,7 +61,7 @@ class NodeLifecycleConfig:
 
     @pre_install.setter
     def pre_install(self, pre_install):
-        """Sets the pre_install of this NodeLifecycleConfig.
+        r"""Sets the pre_install of this NodeLifecycleConfig.
 
         安装前执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
 
@@ -72,7 +72,7 @@ class NodeLifecycleConfig:
 
     @property
     def post_install(self):
-        """Gets the post_install of this NodeLifecycleConfig.
+        r"""Gets the post_install of this NodeLifecycleConfig.
 
         安装后执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
 
@@ -83,7 +83,7 @@ class NodeLifecycleConfig:
 
     @post_install.setter
     def post_install(self, post_install):
-        """Sets the post_install of this NodeLifecycleConfig.
+        r"""Sets the post_install of this NodeLifecycleConfig.
 
         安装后执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
 

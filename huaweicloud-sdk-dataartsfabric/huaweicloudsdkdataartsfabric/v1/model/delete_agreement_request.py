@@ -23,7 +23,7 @@ class DeleteAgreementRequest:
     }
 
     def __init__(self):
-        """DeleteAgreementRequest
+        r"""DeleteAgreementRequest
 
         The model defined in huaweicloud sdk
 

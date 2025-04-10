@@ -26,7 +26,7 @@ class UpdateHostPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UpdateHostPrivilegeResponse
+        r"""UpdateHostPrivilegeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateHostPrivilegeResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this UpdateHostPrivilegeResponse.
+        r"""Gets the resp of this UpdateHostPrivilegeResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class UpdateHostPrivilegeResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this UpdateHostPrivilegeResponse.
+        r"""Sets the resp of this UpdateHostPrivilegeResponse.
 
         操作结果。
 

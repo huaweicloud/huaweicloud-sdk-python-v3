@@ -47,7 +47,7 @@ class BackupDto:
     }
 
     def __init__(self, id=None, name=None, type=None, storage_type=None, region=None, paths=None, start_time=None, end_time=None, archive_days=None, size=None, description=None, operator_name=None):
-        """BackupDto
+        r"""BackupDto
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class BackupDto:
 
     @property
     def id(self):
-        """Gets the id of this BackupDto.
+        r"""Gets the id of this BackupDto.
 
         id
 
@@ -131,7 +131,7 @@ class BackupDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupDto.
+        r"""Sets the id of this BackupDto.
 
         id
 
@@ -142,7 +142,7 @@ class BackupDto:
 
     @property
     def name(self):
-        """Gets the name of this BackupDto.
+        r"""Gets the name of this BackupDto.
 
         归档名称
 
@@ -153,7 +153,7 @@ class BackupDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupDto.
+        r"""Sets the name of this BackupDto.
 
         归档名称
 
@@ -164,7 +164,7 @@ class BackupDto:
 
     @property
     def type(self):
-        """Gets the type of this BackupDto.
+        r"""Gets the type of this BackupDto.
 
         类型
 
@@ -175,7 +175,7 @@ class BackupDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupDto.
+        r"""Sets the type of this BackupDto.
 
         类型
 
@@ -186,7 +186,7 @@ class BackupDto:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this BackupDto.
+        r"""Gets the storage_type of this BackupDto.
 
         存储类型
 
@@ -197,7 +197,7 @@ class BackupDto:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this BackupDto.
+        r"""Sets the storage_type of this BackupDto.
 
         存储类型
 
@@ -208,7 +208,7 @@ class BackupDto:
 
     @property
     def region(self):
-        """Gets the region of this BackupDto.
+        r"""Gets the region of this BackupDto.
 
         区域
 
@@ -219,7 +219,7 @@ class BackupDto:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BackupDto.
+        r"""Sets the region of this BackupDto.
 
         区域
 
@@ -230,7 +230,7 @@ class BackupDto:
 
     @property
     def paths(self):
-        """Gets the paths of this BackupDto.
+        r"""Gets the paths of this BackupDto.
 
         归档数据路径集
 
@@ -241,7 +241,7 @@ class BackupDto:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this BackupDto.
+        r"""Sets the paths of this BackupDto.
 
         归档数据路径集
 
@@ -252,7 +252,7 @@ class BackupDto:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BackupDto.
+        r"""Gets the start_time of this BackupDto.
 
         归档开始时间
 
@@ -263,7 +263,7 @@ class BackupDto:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BackupDto.
+        r"""Sets the start_time of this BackupDto.
 
         归档开始时间
 
@@ -274,7 +274,7 @@ class BackupDto:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BackupDto.
+        r"""Gets the end_time of this BackupDto.
 
         归档结束时间
 
@@ -285,7 +285,7 @@ class BackupDto:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BackupDto.
+        r"""Sets the end_time of this BackupDto.
 
         归档结束时间
 
@@ -296,7 +296,7 @@ class BackupDto:
 
     @property
     def archive_days(self):
-        """Gets the archive_days of this BackupDto.
+        r"""Gets the archive_days of this BackupDto.
 
         已归档天数
 
@@ -307,7 +307,7 @@ class BackupDto:
 
     @archive_days.setter
     def archive_days(self, archive_days):
-        """Sets the archive_days of this BackupDto.
+        r"""Sets the archive_days of this BackupDto.
 
         已归档天数
 
@@ -318,7 +318,7 @@ class BackupDto:
 
     @property
     def size(self):
-        """Gets the size of this BackupDto.
+        r"""Gets the size of this BackupDto.
 
         大小
 
@@ -329,7 +329,7 @@ class BackupDto:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BackupDto.
+        r"""Sets the size of this BackupDto.
 
         大小
 
@@ -340,7 +340,7 @@ class BackupDto:
 
     @property
     def description(self):
-        """Gets the description of this BackupDto.
+        r"""Gets the description of this BackupDto.
 
         归档描述
 
@@ -351,7 +351,7 @@ class BackupDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupDto.
+        r"""Sets the description of this BackupDto.
 
         归档描述
 
@@ -362,7 +362,7 @@ class BackupDto:
 
     @property
     def operator_name(self):
-        """Gets the operator_name of this BackupDto.
+        r"""Gets the operator_name of this BackupDto.
 
         归档人员姓名
 
@@ -373,7 +373,7 @@ class BackupDto:
 
     @operator_name.setter
     def operator_name(self, operator_name):
-        """Sets the operator_name of this BackupDto.
+        r"""Sets the operator_name of this BackupDto.
 
         归档人员姓名
 

@@ -31,7 +31,7 @@ class ListStarRocksDataReplicationsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, limit=None, offset=None):
-        """ListStarRocksDataReplicationsRequest
+        r"""ListStarRocksDataReplicationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStarRocksDataReplicationsRequest.
+        r"""Gets the instance_id of this ListStarRocksDataReplicationsRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -73,7 +73,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStarRocksDataReplicationsRequest.
+        r"""Sets the instance_id of this ListStarRocksDataReplicationsRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -84,7 +84,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStarRocksDataReplicationsRequest.
+        r"""Gets the x_language of this ListStarRocksDataReplicationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -95,7 +95,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStarRocksDataReplicationsRequest.
+        r"""Sets the x_language of this ListStarRocksDataReplicationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -106,7 +106,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStarRocksDataReplicationsRequest.
+        r"""Gets the limit of this ListStarRocksDataReplicationsRequest.
 
         查询记录数。每页查询数据同步任务的数量。
 
@@ -117,7 +117,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStarRocksDataReplicationsRequest.
+        r"""Sets the limit of this ListStarRocksDataReplicationsRequest.
 
         查询记录数。每页查询数据同步任务的数量。
 
@@ -128,7 +128,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStarRocksDataReplicationsRequest.
+        r"""Gets the offset of this ListStarRocksDataReplicationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -139,7 +139,7 @@ class ListStarRocksDataReplicationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStarRocksDataReplicationsRequest.
+        r"""Sets the offset of this ListStarRocksDataReplicationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 

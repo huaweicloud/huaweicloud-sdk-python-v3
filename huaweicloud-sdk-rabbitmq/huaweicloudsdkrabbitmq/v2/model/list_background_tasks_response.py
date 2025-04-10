@@ -28,7 +28,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     }
 
     def __init__(self, task_count=None, tasks=None):
-        """ListBackgroundTasksResponse
+        r"""ListBackgroundTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBackgroundTasksResponse(SdkResponse):
 
     @property
     def task_count(self):
-        """Gets the task_count of this ListBackgroundTasksResponse.
+        r"""Gets the task_count of this ListBackgroundTasksResponse.
 
         任务数量。
 
@@ -62,7 +62,7 @@ class ListBackgroundTasksResponse(SdkResponse):
 
     @task_count.setter
     def task_count(self, task_count):
-        """Sets the task_count of this ListBackgroundTasksResponse.
+        r"""Sets the task_count of this ListBackgroundTasksResponse.
 
         任务数量。
 
@@ -73,7 +73,7 @@ class ListBackgroundTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListBackgroundTasksResponse.
+        r"""Gets the tasks of this ListBackgroundTasksResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class ListBackgroundTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListBackgroundTasksResponse.
+        r"""Sets the tasks of this ListBackgroundTasksResponse.
 
         任务列表。
 

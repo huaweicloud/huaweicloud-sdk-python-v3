@@ -25,7 +25,7 @@ class CancelAssetTranscodeTaskRequest:
     }
 
     def __init__(self, asset_id=None):
-        """CancelAssetTranscodeTaskRequest
+        r"""CancelAssetTranscodeTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelAssetTranscodeTaskRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CancelAssetTranscodeTaskRequest.
+        r"""Gets the asset_id of this CancelAssetTranscodeTaskRequest.
 
         媒资ID。
 
@@ -53,7 +53,7 @@ class CancelAssetTranscodeTaskRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CancelAssetTranscodeTaskRequest.
+        r"""Sets the asset_id of this CancelAssetTranscodeTaskRequest.
 
         媒资ID。
 

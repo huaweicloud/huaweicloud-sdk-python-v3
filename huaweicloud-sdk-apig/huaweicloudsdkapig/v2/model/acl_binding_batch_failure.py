@@ -33,7 +33,7 @@ class AclBindingBatchFailure:
     }
 
     def __init__(self, bind_id=None, error_code=None, error_msg=None, api_id=None, api_name=None):
-        """AclBindingBatchFailure
+        r"""AclBindingBatchFailure
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AclBindingBatchFailure:
 
     @property
     def bind_id(self):
-        """Gets the bind_id of this AclBindingBatchFailure.
+        r"""Gets the bind_id of this AclBindingBatchFailure.
 
         解除绑定失败的API和ACL绑定关系ID
 
@@ -82,7 +82,7 @@ class AclBindingBatchFailure:
 
     @bind_id.setter
     def bind_id(self, bind_id):
-        """Sets the bind_id of this AclBindingBatchFailure.
+        r"""Sets the bind_id of this AclBindingBatchFailure.
 
         解除绑定失败的API和ACL绑定关系ID
 
@@ -93,7 +93,7 @@ class AclBindingBatchFailure:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AclBindingBatchFailure.
+        r"""Gets the error_code of this AclBindingBatchFailure.
 
         解除绑定失败的错误码
 
@@ -104,7 +104,7 @@ class AclBindingBatchFailure:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AclBindingBatchFailure.
+        r"""Sets the error_code of this AclBindingBatchFailure.
 
         解除绑定失败的错误码
 
@@ -115,7 +115,7 @@ class AclBindingBatchFailure:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AclBindingBatchFailure.
+        r"""Gets the error_msg of this AclBindingBatchFailure.
 
         解除绑定失败的错误信息
 
@@ -126,7 +126,7 @@ class AclBindingBatchFailure:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AclBindingBatchFailure.
+        r"""Sets the error_msg of this AclBindingBatchFailure.
 
         解除绑定失败的错误信息
 
@@ -137,7 +137,7 @@ class AclBindingBatchFailure:
 
     @property
     def api_id(self):
-        """Gets the api_id of this AclBindingBatchFailure.
+        r"""Gets the api_id of this AclBindingBatchFailure.
 
         解除绑定失败的API的ID
 
@@ -148,7 +148,7 @@ class AclBindingBatchFailure:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this AclBindingBatchFailure.
+        r"""Sets the api_id of this AclBindingBatchFailure.
 
         解除绑定失败的API的ID
 
@@ -159,7 +159,7 @@ class AclBindingBatchFailure:
 
     @property
     def api_name(self):
-        """Gets the api_name of this AclBindingBatchFailure.
+        r"""Gets the api_name of this AclBindingBatchFailure.
 
         解除绑定失败的API的名称
 
@@ -170,7 +170,7 @@ class AclBindingBatchFailure:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this AclBindingBatchFailure.
+        r"""Sets the api_name of this AclBindingBatchFailure.
 
         解除绑定失败的API的名称
 

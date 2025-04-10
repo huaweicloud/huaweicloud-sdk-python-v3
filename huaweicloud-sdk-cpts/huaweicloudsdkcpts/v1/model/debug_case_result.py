@@ -43,7 +43,7 @@ class DebugCaseResult:
     }
 
     def __init__(self, body=None, error_reason=None, header=None, name=None, response_time=None, result=None, return_body=None, return_header=None, status_code=None, url=None):
-        """DebugCaseResult
+        r"""DebugCaseResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class DebugCaseResult:
 
     @property
     def body(self):
-        """Gets the body of this DebugCaseResult.
+        r"""Gets the body of this DebugCaseResult.
 
         响应内容
 
@@ -117,7 +117,7 @@ class DebugCaseResult:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DebugCaseResult.
+        r"""Sets the body of this DebugCaseResult.
 
         响应内容
 
@@ -128,7 +128,7 @@ class DebugCaseResult:
 
     @property
     def error_reason(self):
-        """Gets the error_reason of this DebugCaseResult.
+        r"""Gets the error_reason of this DebugCaseResult.
 
         错误原因
 
@@ -139,7 +139,7 @@ class DebugCaseResult:
 
     @error_reason.setter
     def error_reason(self, error_reason):
-        """Sets the error_reason of this DebugCaseResult.
+        r"""Sets the error_reason of this DebugCaseResult.
 
         错误原因
 
@@ -150,7 +150,7 @@ class DebugCaseResult:
 
     @property
     def header(self):
-        """Gets the header of this DebugCaseResult.
+        r"""Gets the header of this DebugCaseResult.
 
         :return: The header of this DebugCaseResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
@@ -159,7 +159,7 @@ class DebugCaseResult:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this DebugCaseResult.
+        r"""Sets the header of this DebugCaseResult.
 
         :param header: The header of this DebugCaseResult.
         :type header: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
@@ -168,7 +168,7 @@ class DebugCaseResult:
 
     @property
     def name(self):
-        """Gets the name of this DebugCaseResult.
+        r"""Gets the name of this DebugCaseResult.
 
         请求名称
 
@@ -179,7 +179,7 @@ class DebugCaseResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DebugCaseResult.
+        r"""Sets the name of this DebugCaseResult.
 
         请求名称
 
@@ -190,7 +190,7 @@ class DebugCaseResult:
 
     @property
     def response_time(self):
-        """Gets the response_time of this DebugCaseResult.
+        r"""Gets the response_time of this DebugCaseResult.
 
         响应时间
 
@@ -201,7 +201,7 @@ class DebugCaseResult:
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this DebugCaseResult.
+        r"""Sets the response_time of this DebugCaseResult.
 
         响应时间
 
@@ -212,7 +212,7 @@ class DebugCaseResult:
 
     @property
     def result(self):
-        """Gets the result of this DebugCaseResult.
+        r"""Gets the result of this DebugCaseResult.
 
         调试结果（1：成功；）
 
@@ -223,7 +223,7 @@ class DebugCaseResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DebugCaseResult.
+        r"""Sets the result of this DebugCaseResult.
 
         调试结果（1：成功；）
 
@@ -234,7 +234,7 @@ class DebugCaseResult:
 
     @property
     def return_body(self):
-        """Gets the return_body of this DebugCaseResult.
+        r"""Gets the return_body of this DebugCaseResult.
 
         响应正文
 
@@ -245,7 +245,7 @@ class DebugCaseResult:
 
     @return_body.setter
     def return_body(self, return_body):
-        """Sets the return_body of this DebugCaseResult.
+        r"""Sets the return_body of this DebugCaseResult.
 
         响应正文
 
@@ -256,7 +256,7 @@ class DebugCaseResult:
 
     @property
     def return_header(self):
-        """Gets the return_header of this DebugCaseResult.
+        r"""Gets the return_header of this DebugCaseResult.
 
         :return: The return_header of this DebugCaseResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
@@ -265,7 +265,7 @@ class DebugCaseResult:
 
     @return_header.setter
     def return_header(self, return_header):
-        """Sets the return_header of this DebugCaseResult.
+        r"""Sets the return_header of this DebugCaseResult.
 
         :param return_header: The return_header of this DebugCaseResult.
         :type return_header: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
@@ -274,7 +274,7 @@ class DebugCaseResult:
 
     @property
     def status_code(self):
-        """Gets the status_code of this DebugCaseResult.
+        r"""Gets the status_code of this DebugCaseResult.
 
         响应状态码
 
@@ -285,7 +285,7 @@ class DebugCaseResult:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this DebugCaseResult.
+        r"""Sets the status_code of this DebugCaseResult.
 
         响应状态码
 
@@ -296,7 +296,7 @@ class DebugCaseResult:
 
     @property
     def url(self):
-        """Gets the url of this DebugCaseResult.
+        r"""Gets the url of this DebugCaseResult.
 
         请求地址
 
@@ -307,7 +307,7 @@ class DebugCaseResult:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DebugCaseResult.
+        r"""Sets the url of this DebugCaseResult.
 
         请求地址
 

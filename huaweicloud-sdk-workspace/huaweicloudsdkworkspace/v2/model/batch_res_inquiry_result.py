@@ -39,7 +39,7 @@ class BatchResInquiryResult:
     }
 
     def __init__(self, id=None, product_id=None, amount=None, coupon_results=None, discount_amount=None, original_amount=None, measure_id=None, extend_params=None):
-        """BatchResInquiryResult
+        r"""BatchResInquiryResult
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BatchResInquiryResult:
 
     @property
     def id(self):
-        """Gets the id of this BatchResInquiryResult.
+        r"""Gets the id of this BatchResInquiryResult.
 
         ID标识,同一次询价中不能重复
 
@@ -103,7 +103,7 @@ class BatchResInquiryResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchResInquiryResult.
+        r"""Sets the id of this BatchResInquiryResult.
 
         ID标识,同一次询价中不能重复
 
@@ -114,7 +114,7 @@ class BatchResInquiryResult:
 
     @property
     def product_id(self):
-        """Gets the product_id of this BatchResInquiryResult.
+        r"""Gets the product_id of this BatchResInquiryResult.
 
         变更后的产品ID
 
@@ -125,7 +125,7 @@ class BatchResInquiryResult:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this BatchResInquiryResult.
+        r"""Sets the product_id of this BatchResInquiryResult.
 
         变更后的产品ID
 
@@ -136,7 +136,7 @@ class BatchResInquiryResult:
 
     @property
     def amount(self):
-        """Gets the amount of this BatchResInquiryResult.
+        r"""Gets the amount of this BatchResInquiryResult.
 
         总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
 
@@ -147,7 +147,7 @@ class BatchResInquiryResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this BatchResInquiryResult.
+        r"""Sets the amount of this BatchResInquiryResult.
 
         总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
 
@@ -158,7 +158,7 @@ class BatchResInquiryResult:
 
     @property
     def coupon_results(self):
-        """Gets the coupon_results of this BatchResInquiryResult.
+        r"""Gets the coupon_results of this BatchResInquiryResult.
 
         券的退订金额（降配存在）
 
@@ -169,7 +169,7 @@ class BatchResInquiryResult:
 
     @coupon_results.setter
     def coupon_results(self, coupon_results):
-        """Sets the coupon_results of this BatchResInquiryResult.
+        r"""Sets the coupon_results of this BatchResInquiryResult.
 
         券的退订金额（降配存在）
 
@@ -180,7 +180,7 @@ class BatchResInquiryResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this BatchResInquiryResult.
+        r"""Gets the discount_amount of this BatchResInquiryResult.
 
         优惠额
 
@@ -191,7 +191,7 @@ class BatchResInquiryResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this BatchResInquiryResult.
+        r"""Sets the discount_amount of this BatchResInquiryResult.
 
         优惠额
 
@@ -202,7 +202,7 @@ class BatchResInquiryResult:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this BatchResInquiryResult.
+        r"""Gets the original_amount of this BatchResInquiryResult.
 
         原总额，即优惠前总额
 
@@ -213,7 +213,7 @@ class BatchResInquiryResult:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this BatchResInquiryResult.
+        r"""Sets the original_amount of this BatchResInquiryResult.
 
         原总额，即优惠前总额
 
@@ -224,7 +224,7 @@ class BatchResInquiryResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this BatchResInquiryResult.
+        r"""Gets the measure_id of this BatchResInquiryResult.
 
         度量单位标识
 
@@ -235,7 +235,7 @@ class BatchResInquiryResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this BatchResInquiryResult.
+        r"""Sets the measure_id of this BatchResInquiryResult.
 
         度量单位标识
 
@@ -246,7 +246,7 @@ class BatchResInquiryResult:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this BatchResInquiryResult.
+        r"""Gets the extend_params of this BatchResInquiryResult.
 
         扩展参数
 
@@ -257,7 +257,7 @@ class BatchResInquiryResult:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this BatchResInquiryResult.
+        r"""Sets the extend_params of this BatchResInquiryResult.
 
         扩展参数
 

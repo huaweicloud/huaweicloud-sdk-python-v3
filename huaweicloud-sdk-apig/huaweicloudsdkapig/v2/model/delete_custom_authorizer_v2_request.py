@@ -27,7 +27,7 @@ class DeleteCustomAuthorizerV2Request:
     }
 
     def __init__(self, instance_id=None, authorizer_id=None):
-        """DeleteCustomAuthorizerV2Request
+        r"""DeleteCustomAuthorizerV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteCustomAuthorizerV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteCustomAuthorizerV2Request.
+        r"""Gets the instance_id of this DeleteCustomAuthorizerV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DeleteCustomAuthorizerV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteCustomAuthorizerV2Request.
+        r"""Sets the instance_id of this DeleteCustomAuthorizerV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DeleteCustomAuthorizerV2Request:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this DeleteCustomAuthorizerV2Request.
+        r"""Gets the authorizer_id of this DeleteCustomAuthorizerV2Request.
 
         自定义认证的编号
 
@@ -81,7 +81,7 @@ class DeleteCustomAuthorizerV2Request:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this DeleteCustomAuthorizerV2Request.
+        r"""Sets the authorizer_id of this DeleteCustomAuthorizerV2Request.
 
         自定义认证的编号
 

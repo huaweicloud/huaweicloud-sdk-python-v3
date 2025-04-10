@@ -34,7 +34,7 @@ class OmsClient(Client):
         return client_builder
 
     def batch_update_tasks(self, request):
-        """批量更新任务
+        r"""批量更新任务
 
         批量更新迁移任务，可指定单个迁移任务组下所有的迁移任务或通过迁移任务ID来执行。
         
@@ -99,7 +99,7 @@ class OmsClient(Client):
         return http_info
 
     def check_prefix(self, request):
-        """检查前缀是否在源端桶中存在
+        r"""检查前缀是否在源端桶中存在
 
         检查前缀是否在源端桶中存在
         
@@ -164,7 +164,7 @@ class OmsClient(Client):
         return http_info
 
     def create_sync_events(self, request):
-        """创建同步事件
+        r"""创建同步事件
 
         源端有对象需要进行同步时，调用该接口创建一个同步事件，系统将根据同步事件中包含的对象名称进行同步(目前只支持华北-北京四、华东-上海一地区)。
         
@@ -231,7 +231,7 @@ class OmsClient(Client):
         return http_info
 
     def create_sync_task(self, request):
-        """创建同步任务
+        r"""创建同步任务
 
         创建同步任务，创建成功后，任务会被自动启动，不需要额外调用启动任务命令。
         
@@ -296,7 +296,7 @@ class OmsClient(Client):
         return http_info
 
     def create_task(self, request):
-        """创建迁移任务
+        r"""创建迁移任务
 
         创建迁移任务，创建成功后，任务会被自动启动，不需要额外调用启动任务命令。
         
@@ -361,7 +361,7 @@ class OmsClient(Client):
         return http_info
 
     def create_task_group(self, request):
-        """创建迁移任务组
+        r"""创建迁移任务组
 
         创建迁移任务组，创建成功后，迁移任务组会自动创建迁移任务，不需要额外调用启动任务命令。
         
@@ -426,7 +426,7 @@ class OmsClient(Client):
         return http_info
 
     def delete_sync_task(self, request):
-        """删除同步任务
+        r"""删除同步任务
 
         调用该接口删除同步任务。
         正在同步的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
@@ -492,7 +492,7 @@ class OmsClient(Client):
         return http_info
 
     def delete_task(self, request):
-        """删除迁移任务
+        r"""删除迁移任务
 
         调用该接口删除迁移任务。
         正在运行的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
@@ -558,7 +558,7 @@ class OmsClient(Client):
         return http_info
 
     def delete_task_group(self, request):
-        """删除指定id的迁移任务组
+        r"""删除指定id的迁移任务组
 
         删除指定的迁移任务组.
         创建任务中、监控中、暂停中状态的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
@@ -624,7 +624,7 @@ class OmsClient(Client):
         return http_info
 
     def list_sync_task_statistic(self, request):
-        """查询指定ID的同步任务统计数据
+        r"""查询指定ID的同步任务统计数据
 
         查询指定ID同步任务的接收同步请求对象数、同步成功对象数、同步失败对象数、同步跳过对象数、同步成功对象容量统计数据(目前只支持华北-北京四、华东-上海一地区)。
         
@@ -695,7 +695,7 @@ class OmsClient(Client):
         return http_info
 
     def list_sync_tasks(self, request):
-        """查询同步任务列表
+        r"""查询同步任务列表
 
         查询用户名下所有同步任务信息
         
@@ -764,7 +764,7 @@ class OmsClient(Client):
         return http_info
 
     def list_task_group(self, request):
-        """查询迁移任务组列表
+        r"""查询迁移任务组列表
 
         查询用户账户下的任务组信息
         
@@ -833,7 +833,7 @@ class OmsClient(Client):
         return http_info
 
     def list_tasks(self, request):
-        """查询迁移任务列表
+        r"""查询迁移任务列表
 
         查询用户账户下的所有任务信息。
         
@@ -904,7 +904,7 @@ class OmsClient(Client):
         return http_info
 
     def retry_task_group(self, request):
-        """对已经失败的指定id迁移任务组进行重启
+        r"""对已经失败的指定id迁移任务组进行重启
 
         当迁移任务组处于迁移失败状态时，调用该接口重启指定id的迁移任务组。
         
@@ -971,7 +971,7 @@ class OmsClient(Client):
         return http_info
 
     def show_bucket_list(self, request):
-        """查询桶列表
+        r"""查询桶列表
 
         查询桶列表
         
@@ -1036,7 +1036,7 @@ class OmsClient(Client):
         return http_info
 
     def show_bucket_objects(self, request):
-        """查询桶对象列表
+        r"""查询桶对象列表
 
         查询桶对象列表
         
@@ -1101,7 +1101,7 @@ class OmsClient(Client):
         return http_info
 
     def show_bucket_region(self, request):
-        """查询桶对应的region
+        r"""查询桶对应的region
 
         查询桶对应的region
         
@@ -1166,7 +1166,7 @@ class OmsClient(Client):
         return http_info
 
     def show_cdn_info(self, request):
-        """查桶对应的CDN信息
+        r"""查桶对应的CDN信息
 
         查桶对应的CDN信息
         
@@ -1231,7 +1231,7 @@ class OmsClient(Client):
         return http_info
 
     def show_cloud_type(self, request):
-        """查询所有支持的云厂商
+        r"""查询所有支持的云厂商
 
         查询所有支持的云厂商
         
@@ -1296,7 +1296,7 @@ class OmsClient(Client):
         return http_info
 
     def show_region_info(self, request):
-        """查询云厂商支持的reigon
+        r"""查询云厂商支持的reigon
 
         查询云厂商支持的reigon
         
@@ -1359,7 +1359,7 @@ class OmsClient(Client):
         return http_info
 
     def show_sync_task(self, request):
-        """查询指定ID的同步任务详情
+        r"""查询指定ID的同步任务详情
 
         查询指定ID的同步任务详情。
         
@@ -1426,7 +1426,7 @@ class OmsClient(Client):
         return http_info
 
     def show_task(self, request):
-        """查询指定ID的任务详情
+        r"""查询指定ID的任务详情
 
         查询指定ID的任务详情。
         
@@ -1491,7 +1491,7 @@ class OmsClient(Client):
         return http_info
 
     def show_task_group(self, request):
-        """获取指定id的taskgroup信息
+        r"""获取指定id的taskgroup信息
 
         获取指定id的taskgroup信息
         
@@ -1556,7 +1556,7 @@ class OmsClient(Client):
         return http_info
 
     def start_sync_task(self, request):
-        """启动同步任务
+        r"""启动同步任务
 
         同步任务停止后，调用该接口以启动同步任务(目前只支持华北-北京四、华东-上海一地区)。
         
@@ -1623,7 +1623,7 @@ class OmsClient(Client):
         return http_info
 
     def start_task(self, request):
-        """启动迁移任务
+        r"""启动迁移任务
 
         迁移任务暂停或失败后，调用该接口以启动任务。
         
@@ -1690,7 +1690,7 @@ class OmsClient(Client):
         return http_info
 
     def start_task_group(self, request):
-        """恢复指定id的迁移任务组
+        r"""恢复指定id的迁移任务组
 
         当迁移任务组处于暂停状态时，调用该接口启动指定id的迁移任务组。
         
@@ -1757,7 +1757,7 @@ class OmsClient(Client):
         return http_info
 
     def stop_sync_task(self, request):
-        """暂停同步任务
+        r"""暂停同步任务
 
         当同步任务处于同步中时，调用该接口停止任务(目前只支持华北-北京四、华东-上海一地区)。
         
@@ -1822,7 +1822,7 @@ class OmsClient(Client):
         return http_info
 
     def stop_task(self, request):
-        """暂停迁移任务
+        r"""暂停迁移任务
 
         当迁移任务处于迁移中时，调用该接口停止任务。
         
@@ -1887,7 +1887,7 @@ class OmsClient(Client):
         return http_info
 
     def stop_task_group(self, request):
-        """暂停指定id的迁移任务组
+        r"""暂停指定id的迁移任务组
 
         当迁移任务组处于创建任务中或监控中时，调用该接口暂停指定迁移任务组。
         
@@ -1952,7 +1952,7 @@ class OmsClient(Client):
         return http_info
 
     def update_bandwidth_policy(self, request):
-        """更新任务带宽策略
+        r"""更新任务带宽策略
 
         当迁移任务未执行完成时，修改迁移任务的流量控制策略。
         
@@ -2019,7 +2019,7 @@ class OmsClient(Client):
         return http_info
 
     def update_task_group(self, request):
-        """更新指定id的迁移任务组的流控策略
+        r"""更新指定id的迁移任务组的流控策略
 
         当迁移任务组未执行完成时，修改迁移任务组的流量控制策略。
         
@@ -2086,7 +2086,7 @@ class OmsClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询API版本信息列表
+        r"""查询API版本信息列表
 
         查询对象存储迁移服务的API版本信息。
         
@@ -2149,7 +2149,7 @@ class OmsClient(Client):
         return http_info
 
     def show_api_info(self, request):
-        """查询指定API版本信息
+        r"""查询指定API版本信息
 
         查询对象存储迁移服务指定API版本信息。
         

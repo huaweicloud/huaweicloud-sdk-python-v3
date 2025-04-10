@@ -25,7 +25,7 @@ class ExpandGraphReq:
     }
 
     def __init__(self, expand=None):
-        """ExpandGraphReq
+        r"""ExpandGraphReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExpandGraphReq:
 
     @property
     def expand(self):
-        """Gets the expand of this ExpandGraphReq.
+        r"""Gets the expand of this ExpandGraphReq.
 
         :return: The expand of this ExpandGraphReq.
         :rtype: :class:`huaweicloudsdkges.v1.ReplicationReq`
@@ -51,7 +51,7 @@ class ExpandGraphReq:
 
     @expand.setter
     def expand(self, expand):
-        """Sets the expand of this ExpandGraphReq.
+        r"""Sets the expand of this ExpandGraphReq.
 
         :param expand: The expand of this ExpandGraphReq.
         :type expand: :class:`huaweicloudsdkges.v1.ReplicationReq`

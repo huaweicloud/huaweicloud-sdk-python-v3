@@ -27,7 +27,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
     }
 
     def __init__(self, name=None, value=None):
-        """LinksLinkconfigvaluesExtendedconfigs
+        r"""LinksLinkconfigvaluesExtendedconfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
 
     @property
     def name(self):
-        """Gets the name of this LinksLinkconfigvaluesExtendedconfigs.
+        r"""Gets the name of this LinksLinkconfigvaluesExtendedconfigs.
 
         名称
 
@@ -61,7 +61,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LinksLinkconfigvaluesExtendedconfigs.
+        r"""Sets the name of this LinksLinkconfigvaluesExtendedconfigs.
 
         名称
 
@@ -72,7 +72,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
 
     @property
     def value(self):
-        """Gets the value of this LinksLinkconfigvaluesExtendedconfigs.
+        r"""Gets the value of this LinksLinkconfigvaluesExtendedconfigs.
 
         值
 
@@ -83,7 +83,7 @@ class LinksLinkconfigvaluesExtendedconfigs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this LinksLinkconfigvaluesExtendedconfigs.
+        r"""Sets the value of this LinksLinkconfigvaluesExtendedconfigs.
 
         值
 

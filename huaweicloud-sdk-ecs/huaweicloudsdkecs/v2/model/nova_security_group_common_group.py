@@ -27,7 +27,7 @@ class NovaSecurityGroupCommonGroup:
     }
 
     def __init__(self, name=None, tenant_id=None):
-        """NovaSecurityGroupCommonGroup
+        r"""NovaSecurityGroupCommonGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NovaSecurityGroupCommonGroup:
 
     @property
     def name(self):
-        """Gets the name of this NovaSecurityGroupCommonGroup.
+        r"""Gets the name of this NovaSecurityGroupCommonGroup.
 
         对端安全组的名称
 
@@ -61,7 +61,7 @@ class NovaSecurityGroupCommonGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaSecurityGroupCommonGroup.
+        r"""Sets the name of this NovaSecurityGroupCommonGroup.
 
         对端安全组的名称
 
@@ -72,7 +72,7 @@ class NovaSecurityGroupCommonGroup:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NovaSecurityGroupCommonGroup.
+        r"""Gets the tenant_id of this NovaSecurityGroupCommonGroup.
 
         对端安全组所属租户的租户ID
 
@@ -83,7 +83,7 @@ class NovaSecurityGroupCommonGroup:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NovaSecurityGroupCommonGroup.
+        r"""Sets the tenant_id of this NovaSecurityGroupCommonGroup.
 
         对端安全组所属租户的租户ID
 

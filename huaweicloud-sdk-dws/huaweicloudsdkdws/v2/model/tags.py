@@ -27,7 +27,7 @@ class Tags:
     }
 
     def __init__(self, key=None, value=None):
-        """Tags
+        r"""Tags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Tags:
 
     @property
     def key(self):
-        """Gets the key of this Tags.
+        r"""Gets the key of this Tags.
 
         键。输入标签键的最大长度为128个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
 
@@ -59,7 +59,7 @@ class Tags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tags.
+        r"""Sets the key of this Tags.
 
         键。输入标签键的最大长度为128个unicode字符，不能为空字符串，且首尾字符不能为空格。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
 
@@ -70,7 +70,7 @@ class Tags:
 
     @property
     def value(self):
-        """Gets the value of this Tags.
+        r"""Gets the value of this Tags.
 
         值。输入标签值的最大长度为256个字符，首尾字符不能为空格，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
 
@@ -81,7 +81,7 @@ class Tags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Tags.
+        r"""Sets the value of this Tags.
 
         值。输入标签值的最大长度为256个字符，首尾字符不能为空格，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 只能包含大写字母（A-Z）、小写字母（a-z）、数字（0-9）和特殊字符（中划线-、下划线_）以及中文字符。
 

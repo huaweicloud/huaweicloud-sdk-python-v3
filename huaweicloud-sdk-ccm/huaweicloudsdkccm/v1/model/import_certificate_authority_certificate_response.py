@@ -24,7 +24,7 @@ class ImportCertificateAuthorityCertificateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ImportCertificateAuthorityCertificateResponse
+        r"""ImportCertificateAuthorityCertificateResponse
 
         The model defined in huaweicloud sdk
 

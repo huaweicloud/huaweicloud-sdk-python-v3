@@ -24,7 +24,7 @@ class UpdateInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateInstanceAccessControlAttributeConfigurationResponse
+        r"""UpdateInstanceAccessControlAttributeConfigurationResponse
 
         The model defined in huaweicloud sdk
 

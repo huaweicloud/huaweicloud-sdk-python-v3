@@ -53,7 +53,7 @@ class VideoParameters:
     }
 
     def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None, stream_name=None):
-        """VideoParameters
+        r"""VideoParameters
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class VideoParameters:
 
     @property
     def output_policy(self):
-        """Gets the output_policy of this VideoParameters.
+        r"""Gets the output_policy of this VideoParameters.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -152,7 +152,7 @@ class VideoParameters:
 
     @output_policy.setter
     def output_policy(self, output_policy):
-        """Sets the output_policy of this VideoParameters.
+        r"""Sets the output_policy of this VideoParameters.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -163,7 +163,7 @@ class VideoParameters:
 
     @property
     def codec(self):
-        """Gets the codec of this VideoParameters.
+        r"""Gets the codec of this VideoParameters.
 
         视频编码格式。  取值如下： - 1：VIDEO_CODEC_H264 - 2：VIDEO_CODEC_H265 
 
@@ -174,7 +174,7 @@ class VideoParameters:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this VideoParameters.
+        r"""Sets the codec of this VideoParameters.
 
         视频编码格式。  取值如下： - 1：VIDEO_CODEC_H264 - 2：VIDEO_CODEC_H265 
 
@@ -185,7 +185,7 @@ class VideoParameters:
 
     @property
     def crf(self):
-        """Gets the crf of this VideoParameters.
+        r"""Gets the crf of this VideoParameters.
 
         视频恒定码率控制因子。  取值范围为[0, 51] 
 
@@ -196,7 +196,7 @@ class VideoParameters:
 
     @crf.setter
     def crf(self, crf):
-        """Sets the crf of this VideoParameters.
+        r"""Sets the crf of this VideoParameters.
 
         视频恒定码率控制因子。  取值范围为[0, 51] 
 
@@ -207,7 +207,7 @@ class VideoParameters:
 
     @property
     def max_bitrate(self):
-        """Gets the max_bitrate of this VideoParameters.
+        r"""Gets the max_bitrate of this VideoParameters.
 
         输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
 
@@ -218,7 +218,7 @@ class VideoParameters:
 
     @max_bitrate.setter
     def max_bitrate(self, max_bitrate):
-        """Sets the max_bitrate of this VideoParameters.
+        r"""Sets the max_bitrate of this VideoParameters.
 
         输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
 
@@ -229,7 +229,7 @@ class VideoParameters:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoParameters.
+        r"""Gets the bitrate of this VideoParameters.
 
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
@@ -240,7 +240,7 @@ class VideoParameters:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoParameters.
+        r"""Sets the bitrate of this VideoParameters.
 
         输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
@@ -251,7 +251,7 @@ class VideoParameters:
 
     @property
     def profile(self):
-        """Gets the profile of this VideoParameters.
+        r"""Gets the profile of this VideoParameters.
 
         编码档次  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
 
@@ -262,7 +262,7 @@ class VideoParameters:
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this VideoParameters.
+        r"""Sets the profile of this VideoParameters.
 
         编码档次  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
 
@@ -273,7 +273,7 @@ class VideoParameters:
 
     @property
     def level(self):
-        """Gets the level of this VideoParameters.
+        r"""Gets the level of this VideoParameters.
 
         编码级别  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 - 16：VIDEO_LEVEL_x_x 
 
@@ -284,7 +284,7 @@ class VideoParameters:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this VideoParameters.
+        r"""Sets the level of this VideoParameters.
 
         编码级别  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 - 16：VIDEO_LEVEL_x_x 
 
@@ -295,7 +295,7 @@ class VideoParameters:
 
     @property
     def preset(self):
-        """Gets the preset of this VideoParameters.
+        r"""Gets the preset of this VideoParameters.
 
         编码质量等级  取值如下： - 1：VIDEO_PRESET_HSPEED2 (只用于h.265, h.265 default) - 2：VIDEO_PRESET_HSPEED (只用于h.265) - 3：VIDEO_PRESET_NORMAL (h264/h.265可用，h.264 default) 
 
@@ -306,7 +306,7 @@ class VideoParameters:
 
     @preset.setter
     def preset(self, preset):
-        """Sets the preset of this VideoParameters.
+        r"""Sets the preset of this VideoParameters.
 
         编码质量等级  取值如下： - 1：VIDEO_PRESET_HSPEED2 (只用于h.265, h.265 default) - 2：VIDEO_PRESET_HSPEED (只用于h.265) - 3：VIDEO_PRESET_NORMAL (h264/h.265可用，h.264 default) 
 
@@ -317,7 +317,7 @@ class VideoParameters:
 
     @property
     def max_iframes_interval(self):
-        """Gets the max_iframes_interval of this VideoParameters.
+        r"""Gets the max_iframes_interval of this VideoParameters.
 
         I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
 
@@ -328,7 +328,7 @@ class VideoParameters:
 
     @max_iframes_interval.setter
     def max_iframes_interval(self, max_iframes_interval):
-        """Sets the max_iframes_interval of this VideoParameters.
+        r"""Sets the max_iframes_interval of this VideoParameters.
 
         I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
 
@@ -339,7 +339,7 @@ class VideoParameters:
 
     @property
     def bframes_count(self):
-        """Gets the bframes_count of this VideoParameters.
+        r"""Gets the bframes_count of this VideoParameters.
 
         最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
 
@@ -350,7 +350,7 @@ class VideoParameters:
 
     @bframes_count.setter
     def bframes_count(self, bframes_count):
-        """Sets the bframes_count of this VideoParameters.
+        r"""Sets the bframes_count of this VideoParameters.
 
         最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
 
@@ -361,7 +361,7 @@ class VideoParameters:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoParameters.
+        r"""Gets the frame_rate of this VideoParameters.
 
         帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
@@ -372,7 +372,7 @@ class VideoParameters:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoParameters.
+        r"""Sets the frame_rate of this VideoParameters.
 
         帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
@@ -383,7 +383,7 @@ class VideoParameters:
 
     @property
     def width(self):
-        """Gets the width of this VideoParameters.
+        r"""Gets the width of this VideoParameters.
 
         视频宽度（单位：像素）  - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
@@ -394,7 +394,7 @@ class VideoParameters:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoParameters.
+        r"""Sets the width of this VideoParameters.
 
         视频宽度（单位：像素）  - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
 
@@ -405,7 +405,7 @@ class VideoParameters:
 
     @property
     def height(self):
-        """Gets the height of this VideoParameters.
+        r"""Gets the height of this VideoParameters.
 
         视频高度（单位：像素）  - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880] ，必须是4的倍数 
 
@@ -416,7 +416,7 @@ class VideoParameters:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoParameters.
+        r"""Sets the height of this VideoParameters.
 
         视频高度（单位：像素）  - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880] ，必须是4的倍数 
 
@@ -427,7 +427,7 @@ class VideoParameters:
 
     @property
     def black_cut(self):
-        """Gets the black_cut of this VideoParameters.
+        r"""Gets the black_cut of this VideoParameters.
 
         黑边剪裁类型  - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（>5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（<=5分钟） 
 
@@ -438,7 +438,7 @@ class VideoParameters:
 
     @black_cut.setter
     def black_cut(self, black_cut):
-        """Sets the black_cut of this VideoParameters.
+        r"""Sets the black_cut of this VideoParameters.
 
         黑边剪裁类型  - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（>5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（<=5分钟） 
 
@@ -449,7 +449,7 @@ class VideoParameters:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this VideoParameters.
+        r"""Gets the stream_name of this VideoParameters.
 
         流名称 
 
@@ -460,7 +460,7 @@ class VideoParameters:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this VideoParameters.
+        r"""Sets the stream_name of this VideoParameters.
 
         流名称 
 

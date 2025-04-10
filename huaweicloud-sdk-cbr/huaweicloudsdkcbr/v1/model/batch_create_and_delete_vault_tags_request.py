@@ -27,7 +27,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """BatchCreateAndDeleteVaultTagsRequest
+        r"""BatchCreateAndDeleteVaultTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this BatchCreateAndDeleteVaultTagsRequest.
+        r"""Gets the vault_id of this BatchCreateAndDeleteVaultTagsRequest.
 
         资源id
 
@@ -60,7 +60,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this BatchCreateAndDeleteVaultTagsRequest.
+        r"""Sets the vault_id of this BatchCreateAndDeleteVaultTagsRequest.
 
         资源id
 
@@ -71,7 +71,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateAndDeleteVaultTagsRequest.
+        r"""Gets the body of this BatchCreateAndDeleteVaultTagsRequest.
 
         :return: The body of this BatchCreateAndDeleteVaultTagsRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`
@@ -80,7 +80,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateAndDeleteVaultTagsRequest.
+        r"""Sets the body of this BatchCreateAndDeleteVaultTagsRequest.
 
         :param body: The body of this BatchCreateAndDeleteVaultTagsRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`

@@ -27,7 +27,7 @@ class BankReceiptKvPair:
     }
 
     def __init__(self, key=None, value=None):
-        """BankReceiptKvPair
+        r"""BankReceiptKvPair
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BankReceiptKvPair:
 
     @property
     def key(self):
-        """Gets the key of this BankReceiptKvPair.
+        r"""Gets the key of this BankReceiptKvPair.
 
         key-value对（键值对）中的key，例如\"币别：人民币\"中的\"币别\"。 
 
@@ -61,7 +61,7 @@ class BankReceiptKvPair:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BankReceiptKvPair.
+        r"""Sets the key of this BankReceiptKvPair.
 
         key-value对（键值对）中的key，例如\"币别：人民币\"中的\"币别\"。 
 
@@ -72,7 +72,7 @@ class BankReceiptKvPair:
 
     @property
     def value(self):
-        """Gets the value of this BankReceiptKvPair.
+        r"""Gets the value of this BankReceiptKvPair.
 
         key-value对（键值对）中的value，例如\"币别：人民币\"中的“人民币” 
 
@@ -83,7 +83,7 @@ class BankReceiptKvPair:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BankReceiptKvPair.
+        r"""Sets the value of this BankReceiptKvPair.
 
         key-value对（键值对）中的value，例如\"币别：人民币\"中的“人民币” 
 

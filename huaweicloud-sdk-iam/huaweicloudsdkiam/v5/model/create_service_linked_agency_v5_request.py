@@ -25,7 +25,7 @@ class CreateServiceLinkedAgencyV5Request:
     }
 
     def __init__(self, body=None):
-        """CreateServiceLinkedAgencyV5Request
+        r"""CreateServiceLinkedAgencyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateServiceLinkedAgencyV5Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateServiceLinkedAgencyV5Request.
+        r"""Gets the body of this CreateServiceLinkedAgencyV5Request.
 
         :return: The body of this CreateServiceLinkedAgencyV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.CreateServiceLinkedAgencyReqBody`
@@ -52,7 +52,7 @@ class CreateServiceLinkedAgencyV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateServiceLinkedAgencyV5Request.
+        r"""Sets the body of this CreateServiceLinkedAgencyV5Request.
 
         :param body: The body of this CreateServiceLinkedAgencyV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.CreateServiceLinkedAgencyReqBody`

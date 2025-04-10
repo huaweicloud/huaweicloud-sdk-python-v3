@@ -37,7 +37,7 @@ class CheckCertificateRequest:
     }
 
     def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, certificate_id=None, action_id=None, body=None):
-        """CheckCertificateRequest
+        r"""CheckCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CheckCertificateRequest:
 
     @property
     def sp_auth_token(self):
-        """Gets the sp_auth_token of this CheckCertificateRequest.
+        r"""Gets the sp_auth_token of this CheckCertificateRequest.
 
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
@@ -89,7 +89,7 @@ class CheckCertificateRequest:
 
     @sp_auth_token.setter
     def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this CheckCertificateRequest.
+        r"""Sets the sp_auth_token of this CheckCertificateRequest.
 
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
@@ -100,7 +100,7 @@ class CheckCertificateRequest:
 
     @property
     def stage_auth_token(self):
-        """Gets the stage_auth_token of this CheckCertificateRequest.
+        r"""Gets the stage_auth_token of this CheckCertificateRequest.
 
         Stage用户的Token, 仅提供给IoStage服务使用
 
@@ -111,7 +111,7 @@ class CheckCertificateRequest:
 
     @stage_auth_token.setter
     def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this CheckCertificateRequest.
+        r"""Sets the stage_auth_token of this CheckCertificateRequest.
 
         Stage用户的Token, 仅提供给IoStage服务使用
 
@@ -122,7 +122,7 @@ class CheckCertificateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckCertificateRequest.
+        r"""Gets the instance_id of this CheckCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -133,7 +133,7 @@ class CheckCertificateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckCertificateRequest.
+        r"""Sets the instance_id of this CheckCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -144,7 +144,7 @@ class CheckCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this CheckCertificateRequest.
+        r"""Gets the certificate_id of this CheckCertificateRequest.
 
         设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
@@ -155,7 +155,7 @@ class CheckCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this CheckCertificateRequest.
+        r"""Sets the certificate_id of this CheckCertificateRequest.
 
         设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
@@ -166,7 +166,7 @@ class CheckCertificateRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this CheckCertificateRequest.
+        r"""Gets the action_id of this CheckCertificateRequest.
 
         对证书执行的操作，当前仅支持verify:校验证书
 
@@ -177,7 +177,7 @@ class CheckCertificateRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this CheckCertificateRequest.
+        r"""Sets the action_id of this CheckCertificateRequest.
 
         对证书执行的操作，当前仅支持verify:校验证书
 
@@ -188,7 +188,7 @@ class CheckCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckCertificateRequest.
+        r"""Gets the body of this CheckCertificateRequest.
 
         :return: The body of this CheckCertificateRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.VerifyCertificateDTO`
@@ -197,7 +197,7 @@ class CheckCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckCertificateRequest.
+        r"""Sets the body of this CheckCertificateRequest.
 
         :param body: The body of this CheckCertificateRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.VerifyCertificateDTO`

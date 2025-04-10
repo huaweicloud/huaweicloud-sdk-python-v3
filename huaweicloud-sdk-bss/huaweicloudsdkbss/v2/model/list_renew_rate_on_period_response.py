@@ -34,7 +34,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     }
 
     def __init__(self, currency=None, renew_inquiry_results=None, official_website_rating_result=None, optional_discount_rating_results=None, fail_resource_infos=None):
-        """ListRenewRateOnPeriodResponse
+        r"""ListRenewRateOnPeriodResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListRenewRateOnPeriodResponse.
+        r"""Gets the currency of this ListRenewRateOnPeriodResponse.
 
         |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
 
@@ -83,7 +83,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListRenewRateOnPeriodResponse.
+        r"""Sets the currency of this ListRenewRateOnPeriodResponse.
 
         |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
 
@@ -94,7 +94,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @property
     def renew_inquiry_results(self):
-        """Gets the renew_inquiry_results of this ListRenewRateOnPeriodResponse.
+        r"""Gets the renew_inquiry_results of this ListRenewRateOnPeriodResponse.
 
         |参数名称：主资源（包含从资源）询价结果| |参数约束以及描述：主资源（包含从资源）询价结果|
 
@@ -105,7 +105,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @renew_inquiry_results.setter
     def renew_inquiry_results(self, renew_inquiry_results):
-        """Sets the renew_inquiry_results of this ListRenewRateOnPeriodResponse.
+        r"""Sets the renew_inquiry_results of this ListRenewRateOnPeriodResponse.
 
         |参数名称：主资源（包含从资源）询价结果| |参数约束以及描述：主资源（包含从资源）询价结果|
 
@@ -116,7 +116,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @property
     def official_website_rating_result(self):
-        """Gets the official_website_rating_result of this ListRenewRateOnPeriodResponse.
+        r"""Gets the official_website_rating_result of this ListRenewRateOnPeriodResponse.
 
         :return: The official_website_rating_result of this ListRenewRateOnPeriodResponse.
         :rtype: :class:`huaweicloudsdkbss.v2.OfficialWebsiteRatingResultV2`
@@ -125,7 +125,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @official_website_rating_result.setter
     def official_website_rating_result(self, official_website_rating_result):
-        """Sets the official_website_rating_result of this ListRenewRateOnPeriodResponse.
+        r"""Sets the official_website_rating_result of this ListRenewRateOnPeriodResponse.
 
         :param official_website_rating_result: The official_website_rating_result of this ListRenewRateOnPeriodResponse.
         :type official_website_rating_result: :class:`huaweicloudsdkbss.v2.OfficialWebsiteRatingResultV2`
@@ -134,7 +134,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @property
     def optional_discount_rating_results(self):
-        """Gets the optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
+        r"""Gets the optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
 
         |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数约束以及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
 
@@ -145,7 +145,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @optional_discount_rating_results.setter
     def optional_discount_rating_results(self, optional_discount_rating_results):
-        """Sets the optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
+        r"""Sets the optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
 
         |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数约束以及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
 
@@ -156,7 +156,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @property
     def fail_resource_infos(self):
-        """Gets the fail_resource_infos of this ListRenewRateOnPeriodResponse.
+        r"""Gets the fail_resource_infos of this ListRenewRateOnPeriodResponse.
 
         |参数名称：失败的资源信息列表| |参数约束以及描述：失败的资源信息列表|
 
@@ -167,7 +167,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
     @fail_resource_infos.setter
     def fail_resource_infos(self, fail_resource_infos):
-        """Sets the fail_resource_infos of this ListRenewRateOnPeriodResponse.
+        r"""Sets the fail_resource_infos of this ListRenewRateOnPeriodResponse.
 
         |参数名称：失败的资源信息列表| |参数约束以及描述：失败的资源信息列表|
 

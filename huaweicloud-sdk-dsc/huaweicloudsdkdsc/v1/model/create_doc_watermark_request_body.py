@@ -47,7 +47,7 @@ class CreateDocWatermarkRequestBody:
     }
 
     def __init__(self, doc_type=None, file_password=None, marked_file_password=None, readonly_password=None, visible_watermark=None, font_size=None, rotation=None, opacity=None, blind_watermark=None, file=None, image_mark=None, visible_type=None):
-        """CreateDocWatermarkRequestBody
+        r"""CreateDocWatermarkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def doc_type(self):
-        """Gets the doc_type of this CreateDocWatermarkRequestBody.
+        r"""Gets the doc_type of this CreateDocWatermarkRequestBody.
 
         要嵌入水印的文档类型
 
@@ -129,7 +129,7 @@ class CreateDocWatermarkRequestBody:
 
     @doc_type.setter
     def doc_type(self, doc_type):
-        """Sets the doc_type of this CreateDocWatermarkRequestBody.
+        r"""Sets the doc_type of this CreateDocWatermarkRequestBody.
 
         要嵌入水印的文档类型
 
@@ -140,7 +140,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def file_password(self):
-        """Gets the file_password of this CreateDocWatermarkRequestBody.
+        r"""Gets the file_password of this CreateDocWatermarkRequestBody.
 
         输入文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -151,7 +151,7 @@ class CreateDocWatermarkRequestBody:
 
     @file_password.setter
     def file_password(self, file_password):
-        """Sets the file_password of this CreateDocWatermarkRequestBody.
+        r"""Sets the file_password of this CreateDocWatermarkRequestBody.
 
         输入文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -162,7 +162,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def marked_file_password(self):
-        """Gets the marked_file_password of this CreateDocWatermarkRequestBody.
+        r"""Gets the marked_file_password of this CreateDocWatermarkRequestBody.
 
         添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
@@ -173,7 +173,7 @@ class CreateDocWatermarkRequestBody:
 
     @marked_file_password.setter
     def marked_file_password(self, marked_file_password):
-        """Sets the marked_file_password of this CreateDocWatermarkRequestBody.
+        r"""Sets the marked_file_password of this CreateDocWatermarkRequestBody.
 
         添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
@@ -184,7 +184,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def readonly_password(self):
-        """Gets the readonly_password of this CreateDocWatermarkRequestBody.
+        r"""Gets the readonly_password of this CreateDocWatermarkRequestBody.
 
         添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
@@ -195,7 +195,7 @@ class CreateDocWatermarkRequestBody:
 
     @readonly_password.setter
     def readonly_password(self, readonly_password):
-        """Sets the readonly_password of this CreateDocWatermarkRequestBody.
+        r"""Sets the readonly_password of this CreateDocWatermarkRequestBody.
 
         添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
@@ -206,7 +206,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def visible_watermark(self):
-        """Gets the visible_watermark of this CreateDocWatermarkRequestBody.
+        r"""Gets the visible_watermark of this CreateDocWatermarkRequestBody.
 
         明水印内容，与“blind_watermark”字段至少有一个不为空
 
@@ -217,7 +217,7 @@ class CreateDocWatermarkRequestBody:
 
     @visible_watermark.setter
     def visible_watermark(self, visible_watermark):
-        """Sets the visible_watermark of this CreateDocWatermarkRequestBody.
+        r"""Sets the visible_watermark of this CreateDocWatermarkRequestBody.
 
         明水印内容，与“blind_watermark”字段至少有一个不为空
 
@@ -228,7 +228,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def font_size(self):
-        """Gets the font_size of this CreateDocWatermarkRequestBody.
+        r"""Gets the font_size of this CreateDocWatermarkRequestBody.
 
         明水印字体大小，取值为[1,100]，默认值50
 
@@ -239,7 +239,7 @@ class CreateDocWatermarkRequestBody:
 
     @font_size.setter
     def font_size(self, font_size):
-        """Sets the font_size of this CreateDocWatermarkRequestBody.
+        r"""Sets the font_size of this CreateDocWatermarkRequestBody.
 
         明水印字体大小，取值为[1,100]，默认值50
 
@@ -250,7 +250,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def rotation(self):
-        """Gets the rotation of this CreateDocWatermarkRequestBody.
+        r"""Gets the rotation of this CreateDocWatermarkRequestBody.
 
         明水印旋转角度，逆时针方向，取值为[0,90]，默认值45
 
@@ -261,7 +261,7 @@ class CreateDocWatermarkRequestBody:
 
     @rotation.setter
     def rotation(self, rotation):
-        """Sets the rotation of this CreateDocWatermarkRequestBody.
+        r"""Sets the rotation of this CreateDocWatermarkRequestBody.
 
         明水印旋转角度，逆时针方向，取值为[0,90]，默认值45
 
@@ -272,7 +272,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def opacity(self):
-        """Gets the opacity of this CreateDocWatermarkRequestBody.
+        r"""Gets the opacity of this CreateDocWatermarkRequestBody.
 
         明水印的透明度，取值[0,1]，默认值为0.3；
 
@@ -283,7 +283,7 @@ class CreateDocWatermarkRequestBody:
 
     @opacity.setter
     def opacity(self, opacity):
-        """Sets the opacity of this CreateDocWatermarkRequestBody.
+        r"""Sets the opacity of this CreateDocWatermarkRequestBody.
 
         明水印的透明度，取值[0,1]，默认值为0.3；
 
@@ -294,7 +294,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def blind_watermark(self):
-        """Gets the blind_watermark of this CreateDocWatermarkRequestBody.
+        r"""Gets the blind_watermark of this CreateDocWatermarkRequestBody.
 
         暗水印内容，与“visible_watermark”字段至少有一个不为空
 
@@ -305,7 +305,7 @@ class CreateDocWatermarkRequestBody:
 
     @blind_watermark.setter
     def blind_watermark(self, blind_watermark):
-        """Sets the blind_watermark of this CreateDocWatermarkRequestBody.
+        r"""Sets the blind_watermark of this CreateDocWatermarkRequestBody.
 
         暗水印内容，与“visible_watermark”字段至少有一个不为空
 
@@ -316,7 +316,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this CreateDocWatermarkRequestBody.
+        r"""Gets the file of this CreateDocWatermarkRequestBody.
 
         要添加水印的文档
 
@@ -327,7 +327,7 @@ class CreateDocWatermarkRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateDocWatermarkRequestBody.
+        r"""Sets the file of this CreateDocWatermarkRequestBody.
 
         要添加水印的文档
 
@@ -338,7 +338,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def image_mark(self):
-        """Gets the image_mark of this CreateDocWatermarkRequestBody.
+        r"""Gets the image_mark of this CreateDocWatermarkRequestBody.
 
         图形水印的字节流。图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB；在分段的请求体“Content-Disposition”部分，参数“name”的值必须为“image_mark”。
 
@@ -349,7 +349,7 @@ class CreateDocWatermarkRequestBody:
 
     @image_mark.setter
     def image_mark(self, image_mark):
-        """Sets the image_mark of this CreateDocWatermarkRequestBody.
+        r"""Sets the image_mark of this CreateDocWatermarkRequestBody.
 
         图形水印的字节流。图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB；在分段的请求体“Content-Disposition”部分，参数“name”的值必须为“image_mark”。
 
@@ -360,7 +360,7 @@ class CreateDocWatermarkRequestBody:
 
     @property
     def visible_type(self):
-        """Gets the visible_type of this CreateDocWatermarkRequestBody.
+        r"""Gets the visible_type of this CreateDocWatermarkRequestBody.
 
         该字段为空时，默认为**TEXT**类型。  当该字段为**IMAGE**时: - 请求的表单中必须包含名为“image”的图像文件，图像格式必须为“png”或“jpg”，否则返回参数错误； - 图像文件大小不超过1MB； - “visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
 
@@ -371,7 +371,7 @@ class CreateDocWatermarkRequestBody:
 
     @visible_type.setter
     def visible_type(self, visible_type):
-        """Sets the visible_type of this CreateDocWatermarkRequestBody.
+        r"""Sets the visible_type of this CreateDocWatermarkRequestBody.
 
         该字段为空时，默认为**TEXT**类型。  当该字段为**IMAGE**时: - 请求的表单中必须包含名为“image”的图像文件，图像格式必须为“png”或“jpg”，否则返回参数错误； - 图像文件大小不超过1MB； - “visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
 

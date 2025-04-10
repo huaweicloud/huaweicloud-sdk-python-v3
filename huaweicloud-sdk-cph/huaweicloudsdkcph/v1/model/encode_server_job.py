@@ -31,7 +31,7 @@ class EncodeServerJob:
     }
 
     def __init__(self, encode_server_id=None, job_id=None, error_code=None, error_msg=None):
-        """EncodeServerJob
+        r"""EncodeServerJob
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EncodeServerJob:
 
     @property
     def encode_server_id(self):
-        """Gets the encode_server_id of this EncodeServerJob.
+        r"""Gets the encode_server_id of this EncodeServerJob.
 
         编码服务的唯一标识ID，编码服务相关任务包含此字段。
 
@@ -75,7 +75,7 @@ class EncodeServerJob:
 
     @encode_server_id.setter
     def encode_server_id(self, encode_server_id):
-        """Sets the encode_server_id of this EncodeServerJob.
+        r"""Sets the encode_server_id of this EncodeServerJob.
 
         编码服务的唯一标识ID，编码服务相关任务包含此字段。
 
@@ -86,7 +86,7 @@ class EncodeServerJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this EncodeServerJob.
+        r"""Gets the job_id of this EncodeServerJob.
 
         任务的唯一标识。
 
@@ -97,7 +97,7 @@ class EncodeServerJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this EncodeServerJob.
+        r"""Sets the job_id of this EncodeServerJob.
 
         任务的唯一标识。
 
@@ -108,7 +108,7 @@ class EncodeServerJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this EncodeServerJob.
+        r"""Gets the error_code of this EncodeServerJob.
 
         错误码。
 
@@ -119,7 +119,7 @@ class EncodeServerJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this EncodeServerJob.
+        r"""Sets the error_code of this EncodeServerJob.
 
         错误码。
 
@@ -130,7 +130,7 @@ class EncodeServerJob:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this EncodeServerJob.
+        r"""Gets the error_msg of this EncodeServerJob.
 
         错误说明。
 
@@ -141,7 +141,7 @@ class EncodeServerJob:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this EncodeServerJob.
+        r"""Sets the error_msg of this EncodeServerJob.
 
         错误说明。
 

@@ -29,7 +29,7 @@ class SkewedInfo:
     }
 
     def __init__(self, skewed_column_names=None, skewed_column_value_location_maps=None, skewed_column_values=None):
-        """SkewedInfo
+        r"""SkewedInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SkewedInfo:
 
     @property
     def skewed_column_names(self):
-        """Gets the skewed_column_names of this SkewedInfo.
+        r"""Gets the skewed_column_names of this SkewedInfo.
 
         数据偏移列的列表
 
@@ -65,7 +65,7 @@ class SkewedInfo:
 
     @skewed_column_names.setter
     def skewed_column_names(self, skewed_column_names):
-        """Sets the skewed_column_names of this SkewedInfo.
+        r"""Sets the skewed_column_names of this SkewedInfo.
 
         数据偏移列的列表
 
@@ -76,7 +76,7 @@ class SkewedInfo:
 
     @property
     def skewed_column_value_location_maps(self):
-        """Gets the skewed_column_value_location_maps of this SkewedInfo.
+        r"""Gets the skewed_column_value_location_maps of this SkewedInfo.
 
         偏斜值和地址的映射关系.
 
@@ -87,7 +87,7 @@ class SkewedInfo:
 
     @skewed_column_value_location_maps.setter
     def skewed_column_value_location_maps(self, skewed_column_value_location_maps):
-        """Sets the skewed_column_value_location_maps of this SkewedInfo.
+        r"""Sets the skewed_column_value_location_maps of this SkewedInfo.
 
         偏斜值和地址的映射关系.
 
@@ -98,7 +98,7 @@ class SkewedInfo:
 
     @property
     def skewed_column_values(self):
-        """Gets the skewed_column_values of this SkewedInfo.
+        r"""Gets the skewed_column_values of this SkewedInfo.
 
         偏斜值的列表.
 
@@ -109,7 +109,7 @@ class SkewedInfo:
 
     @skewed_column_values.setter
     def skewed_column_values(self, skewed_column_values):
-        """Sets the skewed_column_values of this SkewedInfo.
+        r"""Sets the skewed_column_values of this SkewedInfo.
 
         偏斜值的列表.
 

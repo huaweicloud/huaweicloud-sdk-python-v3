@@ -41,7 +41,7 @@ class DiagnoseRecordVo:
     }
 
     def __init__(self, id=None, status=None, params=None, domain_id=None, create_time=None, job_id=None, abnormal_items=None, red_count=None, region=None):
-        """DiagnoseRecordVo
+        r"""DiagnoseRecordVo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DiagnoseRecordVo:
 
     @property
     def id(self):
-        """Gets the id of this DiagnoseRecordVo.
+        r"""Gets the id of this DiagnoseRecordVo.
 
         ID 
 
@@ -110,7 +110,7 @@ class DiagnoseRecordVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DiagnoseRecordVo.
+        r"""Sets the id of this DiagnoseRecordVo.
 
         ID 
 
@@ -121,7 +121,7 @@ class DiagnoseRecordVo:
 
     @property
     def status(self):
-        """Gets the status of this DiagnoseRecordVo.
+        r"""Gets the status of this DiagnoseRecordVo.
 
         状态
 
@@ -132,7 +132,7 @@ class DiagnoseRecordVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DiagnoseRecordVo.
+        r"""Sets the status of this DiagnoseRecordVo.
 
         状态
 
@@ -143,7 +143,7 @@ class DiagnoseRecordVo:
 
     @property
     def params(self):
-        """Gets the params of this DiagnoseRecordVo.
+        r"""Gets the params of this DiagnoseRecordVo.
 
         不同诊断定独有的属性
 
@@ -154,7 +154,7 @@ class DiagnoseRecordVo:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this DiagnoseRecordVo.
+        r"""Sets the params of this DiagnoseRecordVo.
 
         不同诊断定独有的属性
 
@@ -165,7 +165,7 @@ class DiagnoseRecordVo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DiagnoseRecordVo.
+        r"""Gets the domain_id of this DiagnoseRecordVo.
 
         创建人
 
@@ -176,7 +176,7 @@ class DiagnoseRecordVo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DiagnoseRecordVo.
+        r"""Sets the domain_id of this DiagnoseRecordVo.
 
         创建人
 
@@ -187,7 +187,7 @@ class DiagnoseRecordVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DiagnoseRecordVo.
+        r"""Gets the create_time of this DiagnoseRecordVo.
 
         创建时间戳
 
@@ -198,7 +198,7 @@ class DiagnoseRecordVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DiagnoseRecordVo.
+        r"""Sets the create_time of this DiagnoseRecordVo.
 
         创建时间戳
 
@@ -209,7 +209,7 @@ class DiagnoseRecordVo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DiagnoseRecordVo.
+        r"""Gets the job_id of this DiagnoseRecordVo.
 
         任务ID 
 
@@ -220,7 +220,7 @@ class DiagnoseRecordVo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DiagnoseRecordVo.
+        r"""Sets the job_id of this DiagnoseRecordVo.
 
         任务ID 
 
@@ -231,7 +231,7 @@ class DiagnoseRecordVo:
 
     @property
     def abnormal_items(self):
-        """Gets the abnormal_items of this DiagnoseRecordVo.
+        r"""Gets the abnormal_items of this DiagnoseRecordVo.
 
         异常项id列表
 
@@ -242,7 +242,7 @@ class DiagnoseRecordVo:
 
     @abnormal_items.setter
     def abnormal_items(self, abnormal_items):
-        """Sets the abnormal_items of this DiagnoseRecordVo.
+        r"""Sets the abnormal_items of this DiagnoseRecordVo.
 
         异常项id列表
 
@@ -253,7 +253,7 @@ class DiagnoseRecordVo:
 
     @property
     def red_count(self):
-        """Gets the red_count of this DiagnoseRecordVo.
+        r"""Gets the red_count of this DiagnoseRecordVo.
 
         异常项数量
 
@@ -264,7 +264,7 @@ class DiagnoseRecordVo:
 
     @red_count.setter
     def red_count(self, red_count):
-        """Sets the red_count of this DiagnoseRecordVo.
+        r"""Sets the red_count of this DiagnoseRecordVo.
 
         异常项数量
 
@@ -275,7 +275,7 @@ class DiagnoseRecordVo:
 
     @property
     def region(self):
-        """Gets the region of this DiagnoseRecordVo.
+        r"""Gets the region of this DiagnoseRecordVo.
 
         区域
 
@@ -286,7 +286,7 @@ class DiagnoseRecordVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DiagnoseRecordVo.
+        r"""Sets the region of this DiagnoseRecordVo.
 
         区域
 

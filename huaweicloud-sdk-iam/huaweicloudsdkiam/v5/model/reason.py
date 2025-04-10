@@ -23,7 +23,7 @@ class Reason:
     }
 
     def __init__(self):
-        """Reason
+        r"""Reason
 
         The model defined in huaweicloud sdk
 

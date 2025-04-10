@@ -26,7 +26,7 @@ class ShowIpGroupRelatedListenersResponse(SdkResponse):
     }
 
     def __init__(self, listeners=None):
-        """ShowIpGroupRelatedListenersResponse
+        r"""ShowIpGroupRelatedListenersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowIpGroupRelatedListenersResponse(SdkResponse):
 
     @property
     def listeners(self):
-        """Gets the listeners of this ShowIpGroupRelatedListenersResponse.
+        r"""Gets the listeners of this ShowIpGroupRelatedListenersResponse.
 
         IP地址组关联的所有监听器ID列表
 
@@ -55,7 +55,7 @@ class ShowIpGroupRelatedListenersResponse(SdkResponse):
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this ShowIpGroupRelatedListenersResponse.
+        r"""Sets the listeners of this ShowIpGroupRelatedListenersResponse.
 
         IP地址组关联的所有监听器ID列表
 

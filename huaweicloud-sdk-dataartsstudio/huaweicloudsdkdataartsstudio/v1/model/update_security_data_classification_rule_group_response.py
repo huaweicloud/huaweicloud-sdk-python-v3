@@ -42,7 +42,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
     }
 
     def __init__(self, uuid=None, name=None, rules=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, project_id=None):
-        """UpdateSecurityDataClassificationRuleGroupResponse
+        r"""UpdateSecurityDataClassificationRuleGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def uuid(self):
-        """Gets the uuid of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the uuid of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组ID
 
@@ -111,7 +111,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the uuid of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组ID
 
@@ -122,7 +122,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the name of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组名称
 
@@ -133,7 +133,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the name of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组名称
 
@@ -144,7 +144,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the rules of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则实体
 
@@ -155,7 +155,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the rules of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则实体
 
@@ -166,7 +166,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the description of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组描述
 
@@ -177,7 +177,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the description of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组描述
 
@@ -188,7 +188,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the created_by of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组创建人
 
@@ -199,7 +199,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the created_by of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组创建人
 
@@ -210,7 +210,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the created_at of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组创建时间
 
@@ -221,7 +221,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the created_at of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组创建时间
 
@@ -232,7 +232,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the updated_by of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组更新人
 
@@ -243,7 +243,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the updated_by of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组更新人
 
@@ -254,7 +254,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the updated_at of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组更新时间
 
@@ -265,7 +265,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the updated_at of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         规则组更新时间
 
@@ -276,7 +276,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Gets the project_id of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         项目ID
 
@@ -287,7 +287,7 @@ class UpdateSecurityDataClassificationRuleGroupResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateSecurityDataClassificationRuleGroupResponse.
+        r"""Sets the project_id of this UpdateSecurityDataClassificationRuleGroupResponse.
 
         项目ID
 

@@ -33,7 +33,7 @@ class ShowPlansRequest:
     }
 
     def __init__(self, project_id=None, name=None, current_stage=None, offset=None, limit=None):
-        """ShowPlansRequest
+        r"""ShowPlansRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowPlansRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlansRequest.
+        r"""Gets the project_id of this ShowPlansRequest.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -79,7 +79,7 @@ class ShowPlansRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlansRequest.
+        r"""Sets the project_id of this ShowPlansRequest.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -90,7 +90,7 @@ class ShowPlansRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowPlansRequest.
+        r"""Gets the name of this ShowPlansRequest.
 
         模糊查询使用(针对测试计划名称)
 
@@ -101,7 +101,7 @@ class ShowPlansRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPlansRequest.
+        r"""Sets the name of this ShowPlansRequest.
 
         模糊查询使用(针对测试计划名称)
 
@@ -112,7 +112,7 @@ class ShowPlansRequest:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this ShowPlansRequest.
+        r"""Gets the current_stage of this ShowPlansRequest.
 
         测试计划所处阶段（create,design,execute,report）
 
@@ -123,7 +123,7 @@ class ShowPlansRequest:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this ShowPlansRequest.
+        r"""Sets the current_stage of this ShowPlansRequest.
 
         测试计划所处阶段（create,design,execute,report）
 
@@ -134,7 +134,7 @@ class ShowPlansRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPlansRequest.
+        r"""Gets the offset of this ShowPlansRequest.
 
         页号，取值范围为1-20000
 
@@ -145,7 +145,7 @@ class ShowPlansRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPlansRequest.
+        r"""Sets the offset of this ShowPlansRequest.
 
         页号，取值范围为1-20000
 
@@ -156,7 +156,7 @@ class ShowPlansRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPlansRequest.
+        r"""Gets the limit of this ShowPlansRequest.
 
         每页显示的条目数量，取值范围为1-200
 
@@ -167,7 +167,7 @@ class ShowPlansRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPlansRequest.
+        r"""Sets the limit of this ShowPlansRequest.
 
         每页显示的条目数量，取值范围为1-200
 

@@ -45,7 +45,7 @@ class NodeReqDetail:
     }
 
     def __init__(self, batch=None, description=None, enable_gpu=None, enable_npu=None, iam_user_id=None, log_configs=None, name=None, npu_type=None, tags=None, workspace_id=None, event_validity_period=None):
-        """NodeReqDetail
+        r"""NodeReqDetail
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class NodeReqDetail:
 
     @property
     def batch(self):
-        """Gets the batch of this NodeReqDetail.
+        r"""Gets the batch of this NodeReqDetail.
 
         批量注册数量。默认为单设备注册，即batch=1，如果大于1即为批量注册的最大数量。最大上限数量为100000
 
@@ -123,7 +123,7 @@ class NodeReqDetail:
 
     @batch.setter
     def batch(self, batch):
-        """Sets the batch of this NodeReqDetail.
+        r"""Sets the batch of this NodeReqDetail.
 
         批量注册数量。默认为单设备注册，即batch=1，如果大于1即为批量注册的最大数量。最大上限数量为100000
 
@@ -134,7 +134,7 @@ class NodeReqDetail:
 
     @property
     def description(self):
-        """Gets the description of this NodeReqDetail.
+        r"""Gets the description of this NodeReqDetail.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -145,7 +145,7 @@ class NodeReqDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NodeReqDetail.
+        r"""Sets the description of this NodeReqDetail.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -156,7 +156,7 @@ class NodeReqDetail:
 
     @property
     def enable_gpu(self):
-        """Gets the enable_gpu of this NodeReqDetail.
+        r"""Gets the enable_gpu of this NodeReqDetail.
 
         是否开启GPU，true表示开启，false表示不开启，默认为false
 
@@ -167,7 +167,7 @@ class NodeReqDetail:
 
     @enable_gpu.setter
     def enable_gpu(self, enable_gpu):
-        """Sets the enable_gpu of this NodeReqDetail.
+        r"""Sets the enable_gpu of this NodeReqDetail.
 
         是否开启GPU，true表示开启，false表示不开启，默认为false
 
@@ -178,7 +178,7 @@ class NodeReqDetail:
 
     @property
     def enable_npu(self):
-        """Gets the enable_npu of this NodeReqDetail.
+        r"""Gets the enable_npu of this NodeReqDetail.
 
         是否开启NPU，true表示开启，false表示不开启，默认为false
 
@@ -189,7 +189,7 @@ class NodeReqDetail:
 
     @enable_npu.setter
     def enable_npu(self, enable_npu):
-        """Sets the enable_npu of this NodeReqDetail.
+        r"""Sets the enable_npu of this NodeReqDetail.
 
         是否开启NPU，true表示开启，false表示不开启，默认为false
 
@@ -200,7 +200,7 @@ class NodeReqDetail:
 
     @property
     def iam_user_id(self):
-        """Gets the iam_user_id of this NodeReqDetail.
+        r"""Gets the iam_user_id of this NodeReqDetail.
 
         子账号ID。当主账号注册设备时，可以指定将设备注册到指定的子账号下面。不填默认为该发起注册行为用户的user_id
 
@@ -211,7 +211,7 @@ class NodeReqDetail:
 
     @iam_user_id.setter
     def iam_user_id(self, iam_user_id):
-        """Sets the iam_user_id of this NodeReqDetail.
+        r"""Sets the iam_user_id of this NodeReqDetail.
 
         子账号ID。当主账号注册设备时，可以指定将设备注册到指定的子账号下面。不填默认为该发起注册行为用户的user_id
 
@@ -222,7 +222,7 @@ class NodeReqDetail:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this NodeReqDetail.
+        r"""Gets the log_configs of this NodeReqDetail.
 
         设备日志配置
 
@@ -233,7 +233,7 @@ class NodeReqDetail:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this NodeReqDetail.
+        r"""Sets the log_configs of this NodeReqDetail.
 
         设备日志配置
 
@@ -244,7 +244,7 @@ class NodeReqDetail:
 
     @property
     def name(self):
-        """Gets the name of this NodeReqDetail.
+        r"""Gets the name of this NodeReqDetail.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -255,7 +255,7 @@ class NodeReqDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeReqDetail.
+        r"""Sets the name of this NodeReqDetail.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -266,7 +266,7 @@ class NodeReqDetail:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this NodeReqDetail.
+        r"""Gets the npu_type of this NodeReqDetail.
 
         NPU类型，D310/D910。不填表示为D310类型。
 
@@ -277,7 +277,7 @@ class NodeReqDetail:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this NodeReqDetail.
+        r"""Sets the npu_type of this NodeReqDetail.
 
         NPU类型，D310/D910。不填表示为D310类型。
 
@@ -288,7 +288,7 @@ class NodeReqDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this NodeReqDetail.
+        r"""Gets the tags of this NodeReqDetail.
 
         设备标签，标签个数最多为20个
 
@@ -299,7 +299,7 @@ class NodeReqDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this NodeReqDetail.
+        r"""Sets the tags of this NodeReqDetail.
 
         设备标签，标签个数最多为20个
 
@@ -310,7 +310,7 @@ class NodeReqDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this NodeReqDetail.
+        r"""Gets the workspace_id of this NodeReqDetail.
 
         工作空间ID，不填为为主账号/子账号的默认工作空间
 
@@ -321,7 +321,7 @@ class NodeReqDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this NodeReqDetail.
+        r"""Sets the workspace_id of this NodeReqDetail.
 
         工作空间ID，不填为为主账号/子账号的默认工作空间
 
@@ -332,7 +332,7 @@ class NodeReqDetail:
 
     @property
     def event_validity_period(self):
-        """Gets the event_validity_period of this NodeReqDetail.
+        r"""Gets the event_validity_period of this NodeReqDetail.
 
         事件有效时间（单位：分钟）
 
@@ -343,7 +343,7 @@ class NodeReqDetail:
 
     @event_validity_period.setter
     def event_validity_period(self, event_validity_period):
-        """Sets the event_validity_period of this NodeReqDetail.
+        r"""Sets the event_validity_period of this NodeReqDetail.
 
         事件有效时间（单位：分钟）
 

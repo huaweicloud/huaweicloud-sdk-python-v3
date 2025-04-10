@@ -27,7 +27,7 @@ class UpdateDataPolicyRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """UpdateDataPolicyRequest
+        r"""UpdateDataPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDataPolicyRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateDataPolicyRequest.
+        r"""Gets the eihealth_project_id of this UpdateDataPolicyRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class UpdateDataPolicyRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateDataPolicyRequest.
+        r"""Sets the eihealth_project_id of this UpdateDataPolicyRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class UpdateDataPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataPolicyRequest.
+        r"""Gets the body of this UpdateDataPolicyRequest.
 
         :return: The body of this UpdateDataPolicyRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyReq`
@@ -80,7 +80,7 @@ class UpdateDataPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataPolicyRequest.
+        r"""Sets the body of this UpdateDataPolicyRequest.
 
         :param body: The body of this UpdateDataPolicyRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyReq`

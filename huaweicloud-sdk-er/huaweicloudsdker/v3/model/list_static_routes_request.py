@@ -39,7 +39,7 @@ class ListStaticRoutesRequest:
     }
 
     def __init__(self, route_table_id=None, limit=None, marker=None, destination=None, attachment_id=None, resource_type=None, sort_key=None, sort_dir=None):
-        """ListStaticRoutesRequest
+        r"""ListStaticRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListStaticRoutesRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this ListStaticRoutesRequest.
+        r"""Gets the route_table_id of this ListStaticRoutesRequest.
 
         路由表ID
 
@@ -102,7 +102,7 @@ class ListStaticRoutesRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this ListStaticRoutesRequest.
+        r"""Sets the route_table_id of this ListStaticRoutesRequest.
 
         路由表ID
 
@@ -113,7 +113,7 @@ class ListStaticRoutesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStaticRoutesRequest.
+        r"""Gets the limit of this ListStaticRoutesRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -124,7 +124,7 @@ class ListStaticRoutesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStaticRoutesRequest.
+        r"""Sets the limit of this ListStaticRoutesRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -135,7 +135,7 @@ class ListStaticRoutesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListStaticRoutesRequest.
+        r"""Gets the marker of this ListStaticRoutesRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -146,7 +146,7 @@ class ListStaticRoutesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListStaticRoutesRequest.
+        r"""Sets the marker of this ListStaticRoutesRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -157,7 +157,7 @@ class ListStaticRoutesRequest:
 
     @property
     def destination(self):
-        """Gets the destination of this ListStaticRoutesRequest.
+        r"""Gets the destination of this ListStaticRoutesRequest.
 
         路由目的地址
 
@@ -168,7 +168,7 @@ class ListStaticRoutesRequest:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ListStaticRoutesRequest.
+        r"""Sets the destination of this ListStaticRoutesRequest.
 
         路由目的地址
 
@@ -179,7 +179,7 @@ class ListStaticRoutesRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this ListStaticRoutesRequest.
+        r"""Gets the attachment_id of this ListStaticRoutesRequest.
 
         连接ID
 
@@ -190,7 +190,7 @@ class ListStaticRoutesRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this ListStaticRoutesRequest.
+        r"""Sets the attachment_id of this ListStaticRoutesRequest.
 
         连接ID
 
@@ -201,7 +201,7 @@ class ListStaticRoutesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListStaticRoutesRequest.
+        r"""Gets the resource_type of this ListStaticRoutesRequest.
 
         - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
@@ -212,7 +212,7 @@ class ListStaticRoutesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListStaticRoutesRequest.
+        r"""Sets the resource_type of this ListStaticRoutesRequest.
 
         - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
@@ -223,7 +223,7 @@ class ListStaticRoutesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListStaticRoutesRequest.
+        r"""Gets the sort_key of this ListStaticRoutesRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -234,7 +234,7 @@ class ListStaticRoutesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListStaticRoutesRequest.
+        r"""Sets the sort_key of this ListStaticRoutesRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -245,7 +245,7 @@ class ListStaticRoutesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListStaticRoutesRequest.
+        r"""Gets the sort_dir of this ListStaticRoutesRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -256,7 +256,7 @@ class ListStaticRoutesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListStaticRoutesRequest.
+        r"""Sets the sort_dir of this ListStaticRoutesRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 

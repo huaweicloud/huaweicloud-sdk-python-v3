@@ -29,7 +29,7 @@ class ComponentEnvironment:
     }
 
     def __init__(self, name=None, value=None, value_from=None):
-        """ComponentEnvironment
+        r"""ComponentEnvironment
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ComponentEnvironment:
 
     @property
     def name(self):
-        """Gets the name of this ComponentEnvironment.
+        r"""Gets the name of this ComponentEnvironment.
 
         :return: The name of this ComponentEnvironment.
         :rtype: str
@@ -65,7 +65,7 @@ class ComponentEnvironment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentEnvironment.
+        r"""Sets the name of this ComponentEnvironment.
 
         :param name: The name of this ComponentEnvironment.
         :type name: str
@@ -74,7 +74,7 @@ class ComponentEnvironment:
 
     @property
     def value(self):
-        """Gets the value of this ComponentEnvironment.
+        r"""Gets the value of this ComponentEnvironment.
 
         :return: The value of this ComponentEnvironment.
         :rtype: str
@@ -83,7 +83,7 @@ class ComponentEnvironment:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ComponentEnvironment.
+        r"""Sets the value of this ComponentEnvironment.
 
         :param value: The value of this ComponentEnvironment.
         :type value: str
@@ -92,7 +92,7 @@ class ComponentEnvironment:
 
     @property
     def value_from(self):
-        """Gets the value_from of this ComponentEnvironment.
+        r"""Gets the value_from of this ComponentEnvironment.
 
         :return: The value_from of this ComponentEnvironment.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentEnvironmentValueFrom`
@@ -101,7 +101,7 @@ class ComponentEnvironment:
 
     @value_from.setter
     def value_from(self, value_from):
-        """Sets the value_from of this ComponentEnvironment.
+        r"""Sets the value_from of this ComponentEnvironment.
 
         :param value_from: The value_from of this ComponentEnvironment.
         :type value_from: :class:`huaweicloudsdkservicestage.v3.ComponentEnvironmentValueFrom`

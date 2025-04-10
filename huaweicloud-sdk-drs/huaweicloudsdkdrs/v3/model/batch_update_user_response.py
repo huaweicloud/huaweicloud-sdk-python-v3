@@ -28,7 +28,7 @@ class BatchUpdateUserResponse(SdkResponse):
     }
 
     def __init__(self, all_counts=None, results=None):
-        """BatchUpdateUserResponse
+        r"""BatchUpdateUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchUpdateUserResponse(SdkResponse):
 
     @property
     def all_counts(self):
-        """Gets the all_counts of this BatchUpdateUserResponse.
+        r"""Gets the all_counts of this BatchUpdateUserResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class BatchUpdateUserResponse(SdkResponse):
 
     @all_counts.setter
     def all_counts(self, all_counts):
-        """Sets the all_counts of this BatchUpdateUserResponse.
+        r"""Sets the all_counts of this BatchUpdateUserResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class BatchUpdateUserResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchUpdateUserResponse.
+        r"""Gets the results of this BatchUpdateUserResponse.
 
         迁移用户信息
 
@@ -84,7 +84,7 @@ class BatchUpdateUserResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchUpdateUserResponse.
+        r"""Sets the results of this BatchUpdateUserResponse.
 
         迁移用户信息
 

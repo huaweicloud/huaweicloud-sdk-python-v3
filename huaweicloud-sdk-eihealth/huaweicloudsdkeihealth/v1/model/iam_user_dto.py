@@ -27,7 +27,7 @@ class IamUserDto:
     }
 
     def __init__(self, id=None, name=None):
-        """IamUserDto
+        r"""IamUserDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IamUserDto:
 
     @property
     def id(self):
-        """Gets the id of this IamUserDto.
+        r"""Gets the id of this IamUserDto.
 
         IAM用户id
 
@@ -61,7 +61,7 @@ class IamUserDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IamUserDto.
+        r"""Sets the id of this IamUserDto.
 
         IAM用户id
 
@@ -72,7 +72,7 @@ class IamUserDto:
 
     @property
     def name(self):
-        """Gets the name of this IamUserDto.
+        r"""Gets the name of this IamUserDto.
 
         IAM用户名
 
@@ -83,7 +83,7 @@ class IamUserDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IamUserDto.
+        r"""Sets the name of this IamUserDto.
 
         IAM用户名
 

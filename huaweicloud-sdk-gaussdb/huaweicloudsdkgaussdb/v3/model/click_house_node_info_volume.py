@@ -31,7 +31,7 @@ class ClickHouseNodeInfoVolume:
     }
 
     def __init__(self, type=None, size=None, used=None, iops=None):
-        """ClickHouseNodeInfoVolume
+        r"""ClickHouseNodeInfoVolume
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ClickHouseNodeInfoVolume:
 
     @property
     def type(self):
-        """Gets the type of this ClickHouseNodeInfoVolume.
+        r"""Gets the type of this ClickHouseNodeInfoVolume.
 
         实例节点存储类型。 取值范围： - SSD：超高IO - ESSD：极速型SSD
 
@@ -73,7 +73,7 @@ class ClickHouseNodeInfoVolume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClickHouseNodeInfoVolume.
+        r"""Sets the type of this ClickHouseNodeInfoVolume.
 
         实例节点存储类型。 取值范围： - SSD：超高IO - ESSD：极速型SSD
 
@@ -84,7 +84,7 @@ class ClickHouseNodeInfoVolume:
 
     @property
     def size(self):
-        """Gets the size of this ClickHouseNodeInfoVolume.
+        r"""Gets the size of this ClickHouseNodeInfoVolume.
 
         实例节点存储大小。
 
@@ -95,7 +95,7 @@ class ClickHouseNodeInfoVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ClickHouseNodeInfoVolume.
+        r"""Sets the size of this ClickHouseNodeInfoVolume.
 
         实例节点存储大小。
 
@@ -106,7 +106,7 @@ class ClickHouseNodeInfoVolume:
 
     @property
     def used(self):
-        """Gets the used of this ClickHouseNodeInfoVolume.
+        r"""Gets the used of this ClickHouseNodeInfoVolume.
 
         实例节点存储使用大小。
 
@@ -117,7 +117,7 @@ class ClickHouseNodeInfoVolume:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ClickHouseNodeInfoVolume.
+        r"""Sets the used of this ClickHouseNodeInfoVolume.
 
         实例节点存储使用大小。
 
@@ -128,7 +128,7 @@ class ClickHouseNodeInfoVolume:
 
     @property
     def iops(self):
-        """Gets the iops of this ClickHouseNodeInfoVolume.
+        r"""Gets the iops of this ClickHouseNodeInfoVolume.
 
         实例节点存储IOPS大小。
 
@@ -139,7 +139,7 @@ class ClickHouseNodeInfoVolume:
 
     @iops.setter
     def iops(self, iops):
-        """Sets the iops of this ClickHouseNodeInfoVolume.
+        r"""Sets the iops of this ClickHouseNodeInfoVolume.
 
         实例节点存储IOPS大小。
 

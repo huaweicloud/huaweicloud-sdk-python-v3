@@ -31,7 +31,7 @@ class SubAudioFile:
     }
 
     def __init__(self, tracks_info=None, input=None, output=None, output_filename=None):
-        """SubAudioFile
+        r"""SubAudioFile
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SubAudioFile:
 
     @property
     def tracks_info(self):
-        """Gets the tracks_info of this SubAudioFile.
+        r"""Gets the tracks_info of this SubAudioFile.
 
         音轨信息
 
@@ -75,7 +75,7 @@ class SubAudioFile:
 
     @tracks_info.setter
     def tracks_info(self, tracks_info):
-        """Sets the tracks_info of this SubAudioFile.
+        r"""Sets the tracks_info of this SubAudioFile.
 
         音轨信息
 
@@ -86,7 +86,7 @@ class SubAudioFile:
 
     @property
     def input(self):
-        """Gets the input of this SubAudioFile.
+        r"""Gets the input of this SubAudioFile.
 
         :return: The input of this SubAudioFile.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -95,7 +95,7 @@ class SubAudioFile:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this SubAudioFile.
+        r"""Sets the input of this SubAudioFile.
 
         :param input: The input of this SubAudioFile.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -104,7 +104,7 @@ class SubAudioFile:
 
     @property
     def output(self):
-        """Gets the output of this SubAudioFile.
+        r"""Gets the output of this SubAudioFile.
 
         :return: The output of this SubAudioFile.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -113,7 +113,7 @@ class SubAudioFile:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this SubAudioFile.
+        r"""Sets the output of this SubAudioFile.
 
         :param output: The output of this SubAudioFile.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -122,7 +122,7 @@ class SubAudioFile:
 
     @property
     def output_filename(self):
-        """Gets the output_filename of this SubAudioFile.
+        r"""Gets the output_filename of this SubAudioFile.
 
         输出文件名。 
 
@@ -133,7 +133,7 @@ class SubAudioFile:
 
     @output_filename.setter
     def output_filename(self, output_filename):
-        """Sets the output_filename of this SubAudioFile.
+        r"""Sets the output_filename of this SubAudioFile.
 
         输出文件名。 
 

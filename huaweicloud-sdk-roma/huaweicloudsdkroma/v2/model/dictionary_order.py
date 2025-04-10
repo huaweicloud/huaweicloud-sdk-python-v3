@@ -23,7 +23,7 @@ class DictionaryOrder:
     }
 
     def __init__(self):
-        """DictionaryOrder
+        r"""DictionaryOrder
 
         The model defined in huaweicloud sdk
 

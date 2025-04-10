@@ -31,7 +31,7 @@ class DeleteSqlserverDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, body=None):
-        """DeleteSqlserverDatabaseRequest
+        r"""DeleteSqlserverDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteSqlserverDatabaseRequest.
+        r"""Gets the x_language of this DeleteSqlserverDatabaseRequest.
 
         语言
 
@@ -73,7 +73,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteSqlserverDatabaseRequest.
+        r"""Sets the x_language of this DeleteSqlserverDatabaseRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSqlserverDatabaseRequest.
+        r"""Gets the instance_id of this DeleteSqlserverDatabaseRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSqlserverDatabaseRequest.
+        r"""Sets the instance_id of this DeleteSqlserverDatabaseRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeleteSqlserverDatabaseRequest.
+        r"""Gets the db_name of this DeleteSqlserverDatabaseRequest.
 
         需要删除的数据库名。
 
@@ -117,7 +117,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeleteSqlserverDatabaseRequest.
+        r"""Sets the db_name of this DeleteSqlserverDatabaseRequest.
 
         需要删除的数据库名。
 
@@ -128,7 +128,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSqlserverDatabaseRequest.
+        r"""Gets the body of this DeleteSqlserverDatabaseRequest.
 
         :return: The body of this DeleteSqlserverDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`
@@ -137,7 +137,7 @@ class DeleteSqlserverDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSqlserverDatabaseRequest.
+        r"""Sets the body of this DeleteSqlserverDatabaseRequest.
 
         :param body: The body of this DeleteSqlserverDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`

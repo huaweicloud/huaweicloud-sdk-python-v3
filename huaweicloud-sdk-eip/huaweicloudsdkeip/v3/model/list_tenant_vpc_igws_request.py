@@ -41,7 +41,7 @@ class ListTenantVpcIgwsRequest:
     }
 
     def __init__(self, fields=None, id=None, vpc_id=None, name=None, sort_key=None, sort_dir=None, limit=None, offset=None, marker=None):
-        """ListTenantVpcIgwsRequest
+        r"""ListTenantVpcIgwsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListTenantVpcIgwsRequest.
+        r"""Gets the fields of this ListTenantVpcIgwsRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
@@ -110,7 +110,7 @@ class ListTenantVpcIgwsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListTenantVpcIgwsRequest.
+        r"""Sets the fields of this ListTenantVpcIgwsRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
@@ -121,7 +121,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTenantVpcIgwsRequest.
+        r"""Gets the id of this ListTenantVpcIgwsRequest.
 
         虚拟IGW的uuid
 
@@ -132,7 +132,7 @@ class ListTenantVpcIgwsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTenantVpcIgwsRequest.
+        r"""Sets the id of this ListTenantVpcIgwsRequest.
 
         虚拟IGW的uuid
 
@@ -143,7 +143,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListTenantVpcIgwsRequest.
+        r"""Gets the vpc_id of this ListTenantVpcIgwsRequest.
 
         虚拟igw所在的vpcid
 
@@ -154,7 +154,7 @@ class ListTenantVpcIgwsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListTenantVpcIgwsRequest.
+        r"""Sets the vpc_id of this ListTenantVpcIgwsRequest.
 
         虚拟igw所在的vpcid
 
@@ -165,7 +165,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTenantVpcIgwsRequest.
+        r"""Gets the name of this ListTenantVpcIgwsRequest.
 
         虚拟igw的名称
 
@@ -176,7 +176,7 @@ class ListTenantVpcIgwsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTenantVpcIgwsRequest.
+        r"""Sets the name of this ListTenantVpcIgwsRequest.
 
         虚拟igw的名称
 
@@ -187,7 +187,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListTenantVpcIgwsRequest.
+        r"""Gets the sort_key of this ListTenantVpcIgwsRequest.
 
         排序，形式为\"sort_key=i2a_id&sort_dir=asc\"  支持字段：id/created_at/updated_at
 
@@ -198,7 +198,7 @@ class ListTenantVpcIgwsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListTenantVpcIgwsRequest.
+        r"""Sets the sort_key of this ListTenantVpcIgwsRequest.
 
         排序，形式为\"sort_key=i2a_id&sort_dir=asc\"  支持字段：id/created_at/updated_at
 
@@ -209,7 +209,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListTenantVpcIgwsRequest.
+        r"""Gets the sort_dir of this ListTenantVpcIgwsRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -220,7 +220,7 @@ class ListTenantVpcIgwsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListTenantVpcIgwsRequest.
+        r"""Sets the sort_dir of this ListTenantVpcIgwsRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -231,7 +231,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTenantVpcIgwsRequest.
+        r"""Gets the limit of this ListTenantVpcIgwsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -242,7 +242,7 @@ class ListTenantVpcIgwsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTenantVpcIgwsRequest.
+        r"""Sets the limit of this ListTenantVpcIgwsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -253,7 +253,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTenantVpcIgwsRequest.
+        r"""Gets the offset of this ListTenantVpcIgwsRequest.
 
         分页起始点
 
@@ -264,7 +264,7 @@ class ListTenantVpcIgwsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTenantVpcIgwsRequest.
+        r"""Sets the offset of this ListTenantVpcIgwsRequest.
 
         分页起始点
 
@@ -275,7 +275,7 @@ class ListTenantVpcIgwsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTenantVpcIgwsRequest.
+        r"""Gets the marker of this ListTenantVpcIgwsRequest.
 
         分页起始点
 
@@ -286,7 +286,7 @@ class ListTenantVpcIgwsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTenantVpcIgwsRequest.
+        r"""Sets the marker of this ListTenantVpcIgwsRequest.
 
         分页起始点
 

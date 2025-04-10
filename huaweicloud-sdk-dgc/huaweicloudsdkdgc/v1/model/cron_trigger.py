@@ -39,7 +39,7 @@ class CronTrigger:
     }
 
     def __init__(self, start_time=None, end_time=None, expression=None, expression_time_zone=None, period=None, depend_pre_period=None, depend_jobs=None, concurrent=None):
-        """CronTrigger
+        r"""CronTrigger
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class CronTrigger:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CronTrigger.
+        r"""Gets the start_time of this CronTrigger.
 
         调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。
 
@@ -100,7 +100,7 @@ class CronTrigger:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CronTrigger.
+        r"""Sets the start_time of this CronTrigger.
 
         调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。
 
@@ -111,7 +111,7 @@ class CronTrigger:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CronTrigger.
+        r"""Gets the end_time of this CronTrigger.
 
         调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去。
 
@@ -122,7 +122,7 @@ class CronTrigger:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CronTrigger.
+        r"""Sets the end_time of this CronTrigger.
 
         调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去。
 
@@ -133,7 +133,7 @@ class CronTrigger:
 
     @property
     def expression(self):
-        """Gets the expression of this CronTrigger.
+        r"""Gets the expression of this CronTrigger.
 
         Cron表达式
 
@@ -144,7 +144,7 @@ class CronTrigger:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this CronTrigger.
+        r"""Sets the expression of this CronTrigger.
 
         Cron表达式
 
@@ -155,7 +155,7 @@ class CronTrigger:
 
     @property
     def expression_time_zone(self):
-        """Gets the expression_time_zone of this CronTrigger.
+        r"""Gets the expression_time_zone of this CronTrigger.
 
         时区
 
@@ -166,7 +166,7 @@ class CronTrigger:
 
     @expression_time_zone.setter
     def expression_time_zone(self, expression_time_zone):
-        """Sets the expression_time_zone of this CronTrigger.
+        r"""Sets the expression_time_zone of this CronTrigger.
 
         时区
 
@@ -177,7 +177,7 @@ class CronTrigger:
 
     @property
     def period(self):
-        """Gets the period of this CronTrigger.
+        r"""Gets the period of this CronTrigger.
 
         用于描述运行的间隔时间，格式为时间+时间单位。需要与expression中的表达式对应
 
@@ -188,7 +188,7 @@ class CronTrigger:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this CronTrigger.
+        r"""Sets the period of this CronTrigger.
 
         用于描述运行的间隔时间，格式为时间+时间单位。需要与expression中的表达式对应
 
@@ -199,7 +199,7 @@ class CronTrigger:
 
     @property
     def depend_pre_period(self):
-        """Gets the depend_pre_period of this CronTrigger.
+        r"""Gets the depend_pre_period of this CronTrigger.
 
         是否依赖本作业上一个运行周期任务的执行结果
 
@@ -210,7 +210,7 @@ class CronTrigger:
 
     @depend_pre_period.setter
     def depend_pre_period(self, depend_pre_period):
-        """Sets the depend_pre_period of this CronTrigger.
+        r"""Sets the depend_pre_period of this CronTrigger.
 
         是否依赖本作业上一个运行周期任务的执行结果
 
@@ -221,7 +221,7 @@ class CronTrigger:
 
     @property
     def depend_jobs(self):
-        """Gets the depend_jobs of this CronTrigger.
+        r"""Gets the depend_jobs of this CronTrigger.
 
         :return: The depend_jobs of this CronTrigger.
         :rtype: :class:`huaweicloudsdkdgc.v1.DependJob`
@@ -230,7 +230,7 @@ class CronTrigger:
 
     @depend_jobs.setter
     def depend_jobs(self, depend_jobs):
-        """Sets the depend_jobs of this CronTrigger.
+        r"""Sets the depend_jobs of this CronTrigger.
 
         :param depend_jobs: The depend_jobs of this CronTrigger.
         :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`
@@ -239,7 +239,7 @@ class CronTrigger:
 
     @property
     def concurrent(self):
-        """Gets the concurrent of this CronTrigger.
+        r"""Gets the concurrent of this CronTrigger.
 
         并发调用数
 
@@ -250,7 +250,7 @@ class CronTrigger:
 
     @concurrent.setter
     def concurrent(self, concurrent):
-        """Sets the concurrent of this CronTrigger.
+        r"""Sets the concurrent of this CronTrigger.
 
         并发调用数
 

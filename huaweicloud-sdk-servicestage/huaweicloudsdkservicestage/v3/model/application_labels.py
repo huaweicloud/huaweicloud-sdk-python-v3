@@ -27,7 +27,7 @@ class ApplicationLabels:
     }
 
     def __init__(self, key=None, value=None):
-        """ApplicationLabels
+        r"""ApplicationLabels
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApplicationLabels:
 
     @property
     def key(self):
-        """Gets the key of this ApplicationLabels.
+        r"""Gets the key of this ApplicationLabels.
 
         标签名称。
 
@@ -61,7 +61,7 @@ class ApplicationLabels:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ApplicationLabels.
+        r"""Sets the key of this ApplicationLabels.
 
         标签名称。
 
@@ -72,7 +72,7 @@ class ApplicationLabels:
 
     @property
     def value(self):
-        """Gets the value of this ApplicationLabels.
+        r"""Gets the value of this ApplicationLabels.
 
         标签值。
 
@@ -83,7 +83,7 @@ class ApplicationLabels:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ApplicationLabels.
+        r"""Sets the value of this ApplicationLabels.
 
         标签值。
 

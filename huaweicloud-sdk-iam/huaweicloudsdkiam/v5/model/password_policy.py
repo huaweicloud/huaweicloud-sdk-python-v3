@@ -43,7 +43,7 @@ class PasswordPolicy:
     }
 
     def __init__(self, maximum_consecutive_identical_chars=None, maximum_password_length=None, minimum_password_age=None, minimum_password_length=None, password_reuse_prevention=None, password_not_username_or_invert=None, password_requirements=None, password_validity_period=None, password_char_combination=None, allow_user_to_change_password=None):
-        """PasswordPolicy
+        r"""PasswordPolicy
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class PasswordPolicy:
 
     @property
     def maximum_consecutive_identical_chars(self):
-        """Gets the maximum_consecutive_identical_chars of this PasswordPolicy.
+        r"""Gets the maximum_consecutive_identical_chars of this PasswordPolicy.
 
         同一字符连续出现的最大次数。
 
@@ -107,7 +107,7 @@ class PasswordPolicy:
 
     @maximum_consecutive_identical_chars.setter
     def maximum_consecutive_identical_chars(self, maximum_consecutive_identical_chars):
-        """Sets the maximum_consecutive_identical_chars of this PasswordPolicy.
+        r"""Sets the maximum_consecutive_identical_chars of this PasswordPolicy.
 
         同一字符连续出现的最大次数。
 
@@ -118,7 +118,7 @@ class PasswordPolicy:
 
     @property
     def maximum_password_length(self):
-        """Gets the maximum_password_length of this PasswordPolicy.
+        r"""Gets the maximum_password_length of this PasswordPolicy.
 
         密码最大字符数。
 
@@ -129,7 +129,7 @@ class PasswordPolicy:
 
     @maximum_password_length.setter
     def maximum_password_length(self, maximum_password_length):
-        """Sets the maximum_password_length of this PasswordPolicy.
+        r"""Sets the maximum_password_length of this PasswordPolicy.
 
         密码最大字符数。
 
@@ -140,7 +140,7 @@ class PasswordPolicy:
 
     @property
     def minimum_password_age(self):
-        """Gets the minimum_password_age of this PasswordPolicy.
+        r"""Gets the minimum_password_age of this PasswordPolicy.
 
         密码最短使用时间（分钟）。
 
@@ -151,7 +151,7 @@ class PasswordPolicy:
 
     @minimum_password_age.setter
     def minimum_password_age(self, minimum_password_age):
-        """Sets the minimum_password_age of this PasswordPolicy.
+        r"""Sets the minimum_password_age of this PasswordPolicy.
 
         密码最短使用时间（分钟）。
 
@@ -162,7 +162,7 @@ class PasswordPolicy:
 
     @property
     def minimum_password_length(self):
-        """Gets the minimum_password_length of this PasswordPolicy.
+        r"""Gets the minimum_password_length of this PasswordPolicy.
 
         密码最小字符数。
 
@@ -173,7 +173,7 @@ class PasswordPolicy:
 
     @minimum_password_length.setter
     def minimum_password_length(self, minimum_password_length):
-        """Sets the minimum_password_length of this PasswordPolicy.
+        r"""Sets the minimum_password_length of this PasswordPolicy.
 
         密码最小字符数。
 
@@ -184,7 +184,7 @@ class PasswordPolicy:
 
     @property
     def password_reuse_prevention(self):
-        """Gets the password_reuse_prevention of this PasswordPolicy.
+        r"""Gets the password_reuse_prevention of this PasswordPolicy.
 
         密码不能与历史密码重复次数。
 
@@ -195,7 +195,7 @@ class PasswordPolicy:
 
     @password_reuse_prevention.setter
     def password_reuse_prevention(self, password_reuse_prevention):
-        """Sets the password_reuse_prevention of this PasswordPolicy.
+        r"""Sets the password_reuse_prevention of this PasswordPolicy.
 
         密码不能与历史密码重复次数。
 
@@ -206,7 +206,7 @@ class PasswordPolicy:
 
     @property
     def password_not_username_or_invert(self):
-        """Gets the password_not_username_or_invert of this PasswordPolicy.
+        r"""Gets the password_not_username_or_invert of this PasswordPolicy.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -217,7 +217,7 @@ class PasswordPolicy:
 
     @password_not_username_or_invert.setter
     def password_not_username_or_invert(self, password_not_username_or_invert):
-        """Sets the password_not_username_or_invert of this PasswordPolicy.
+        r"""Sets the password_not_username_or_invert of this PasswordPolicy.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -228,7 +228,7 @@ class PasswordPolicy:
 
     @property
     def password_requirements(self):
-        """Gets the password_requirements of this PasswordPolicy.
+        r"""Gets the password_requirements of this PasswordPolicy.
 
         设置密码必须包含的字符要求。
 
@@ -239,7 +239,7 @@ class PasswordPolicy:
 
     @password_requirements.setter
     def password_requirements(self, password_requirements):
-        """Sets the password_requirements of this PasswordPolicy.
+        r"""Sets the password_requirements of this PasswordPolicy.
 
         设置密码必须包含的字符要求。
 
@@ -250,7 +250,7 @@ class PasswordPolicy:
 
     @property
     def password_validity_period(self):
-        """Gets the password_validity_period of this PasswordPolicy.
+        r"""Gets the password_validity_period of this PasswordPolicy.
 
         密码有效期（天）。
 
@@ -261,7 +261,7 @@ class PasswordPolicy:
 
     @password_validity_period.setter
     def password_validity_period(self, password_validity_period):
-        """Sets the password_validity_period of this PasswordPolicy.
+        r"""Sets the password_validity_period of this PasswordPolicy.
 
         密码有效期（天）。
 
@@ -272,7 +272,7 @@ class PasswordPolicy:
 
     @property
     def password_char_combination(self):
-        """Gets the password_char_combination of this PasswordPolicy.
+        r"""Gets the password_char_combination of this PasswordPolicy.
 
         至少包含字符种类的个数。
 
@@ -283,7 +283,7 @@ class PasswordPolicy:
 
     @password_char_combination.setter
     def password_char_combination(self, password_char_combination):
-        """Sets the password_char_combination of this PasswordPolicy.
+        r"""Sets the password_char_combination of this PasswordPolicy.
 
         至少包含字符种类的个数。
 
@@ -294,7 +294,7 @@ class PasswordPolicy:
 
     @property
     def allow_user_to_change_password(self):
-        """Gets the allow_user_to_change_password of this PasswordPolicy.
+        r"""Gets the allow_user_to_change_password of this PasswordPolicy.
 
         是否允许IAM用户修改自己的密码，不适用于根用户。
 
@@ -305,7 +305,7 @@ class PasswordPolicy:
 
     @allow_user_to_change_password.setter
     def allow_user_to_change_password(self, allow_user_to_change_password):
-        """Sets the allow_user_to_change_password of this PasswordPolicy.
+        r"""Sets the allow_user_to_change_password of this PasswordPolicy.
 
         是否允许IAM用户修改自己的密码，不适用于根用户。
 

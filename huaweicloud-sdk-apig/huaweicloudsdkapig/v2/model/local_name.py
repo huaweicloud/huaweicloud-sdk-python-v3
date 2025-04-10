@@ -27,7 +27,7 @@ class LocalName:
     }
 
     def __init__(self, en_us=None, zh_cn=None):
-        """LocalName
+        r"""LocalName
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LocalName:
 
     @property
     def en_us(self):
-        """Gets the en_us of this LocalName.
+        r"""Gets the en_us of this LocalName.
 
         可用区英文名称。
 
@@ -61,7 +61,7 @@ class LocalName:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this LocalName.
+        r"""Sets the en_us of this LocalName.
 
         可用区英文名称。
 
@@ -72,7 +72,7 @@ class LocalName:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this LocalName.
+        r"""Gets the zh_cn of this LocalName.
 
         可用区中文名称。
 
@@ -83,7 +83,7 @@ class LocalName:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this LocalName.
+        r"""Sets the zh_cn of this LocalName.
 
         可用区中文名称。
 

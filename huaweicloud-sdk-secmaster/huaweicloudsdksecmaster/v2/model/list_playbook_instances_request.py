@@ -47,7 +47,7 @@ class ListPlaybookInstancesRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, status=None, name=None, playbook_name=None, dataclass_name=None, dataobject_name=None, trigger_type=None, from_date=None, to_date=None, limit=None, offset=None):
-        """ListPlaybookInstancesRequest
+        r"""ListPlaybookInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookInstancesRequest.
+        r"""Gets the project_id of this ListPlaybookInstancesRequest.
 
         项目ID
 
@@ -127,7 +127,7 @@ class ListPlaybookInstancesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookInstancesRequest.
+        r"""Sets the project_id of this ListPlaybookInstancesRequest.
 
         项目ID
 
@@ -138,7 +138,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookInstancesRequest.
+        r"""Gets the workspace_id of this ListPlaybookInstancesRequest.
 
         工作空间ID
 
@@ -149,7 +149,7 @@ class ListPlaybookInstancesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookInstancesRequest.
+        r"""Sets the workspace_id of this ListPlaybookInstancesRequest.
 
         工作空间ID
 
@@ -160,7 +160,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPlaybookInstancesRequest.
+        r"""Gets the status of this ListPlaybookInstancesRequest.
 
         剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
@@ -171,7 +171,7 @@ class ListPlaybookInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPlaybookInstancesRequest.
+        r"""Sets the status of this ListPlaybookInstancesRequest.
 
         剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
@@ -182,7 +182,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPlaybookInstancesRequest.
+        r"""Gets the name of this ListPlaybookInstancesRequest.
 
         实例名称
 
@@ -193,7 +193,7 @@ class ListPlaybookInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPlaybookInstancesRequest.
+        r"""Sets the name of this ListPlaybookInstancesRequest.
 
         实例名称
 
@@ -204,7 +204,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def playbook_name(self):
-        """Gets the playbook_name of this ListPlaybookInstancesRequest.
+        r"""Gets the playbook_name of this ListPlaybookInstancesRequest.
 
         剧本名称
 
@@ -215,7 +215,7 @@ class ListPlaybookInstancesRequest:
 
     @playbook_name.setter
     def playbook_name(self, playbook_name):
-        """Sets the playbook_name of this ListPlaybookInstancesRequest.
+        r"""Sets the playbook_name of this ListPlaybookInstancesRequest.
 
         剧本名称
 
@@ -226,7 +226,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this ListPlaybookInstancesRequest.
+        r"""Gets the dataclass_name of this ListPlaybookInstancesRequest.
 
         数据类名称
 
@@ -237,7 +237,7 @@ class ListPlaybookInstancesRequest:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this ListPlaybookInstancesRequest.
+        r"""Sets the dataclass_name of this ListPlaybookInstancesRequest.
 
         数据类名称
 
@@ -248,7 +248,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def dataobject_name(self):
-        """Gets the dataobject_name of this ListPlaybookInstancesRequest.
+        r"""Gets the dataobject_name of this ListPlaybookInstancesRequest.
 
         数据对象名称
 
@@ -259,7 +259,7 @@ class ListPlaybookInstancesRequest:
 
     @dataobject_name.setter
     def dataobject_name(self, dataobject_name):
-        """Sets the dataobject_name of this ListPlaybookInstancesRequest.
+        r"""Sets the dataobject_name of this ListPlaybookInstancesRequest.
 
         数据对象名称
 
@@ -270,7 +270,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ListPlaybookInstancesRequest.
+        r"""Gets the trigger_type of this ListPlaybookInstancesRequest.
 
         触发类型. TIMER--定时触发, EVENT--事件触发
 
@@ -281,7 +281,7 @@ class ListPlaybookInstancesRequest:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ListPlaybookInstancesRequest.
+        r"""Sets the trigger_type of this ListPlaybookInstancesRequest.
 
         触发类型. TIMER--定时触发, EVENT--事件触发
 
@@ -292,7 +292,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def from_date(self):
-        """Gets the from_date of this ListPlaybookInstancesRequest.
+        r"""Gets the from_date of this ListPlaybookInstancesRequest.
 
         查询起始时间
 
@@ -303,7 +303,7 @@ class ListPlaybookInstancesRequest:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this ListPlaybookInstancesRequest.
+        r"""Sets the from_date of this ListPlaybookInstancesRequest.
 
         查询起始时间
 
@@ -314,7 +314,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def to_date(self):
-        """Gets the to_date of this ListPlaybookInstancesRequest.
+        r"""Gets the to_date of this ListPlaybookInstancesRequest.
 
         查询结束时间
 
@@ -325,7 +325,7 @@ class ListPlaybookInstancesRequest:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this ListPlaybookInstancesRequest.
+        r"""Sets the to_date of this ListPlaybookInstancesRequest.
 
         查询结束时间
 
@@ -336,7 +336,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybookInstancesRequest.
+        r"""Gets the limit of this ListPlaybookInstancesRequest.
 
         分页查询参数，用于指定一次查询最多的结果数，从1开始
 
@@ -347,7 +347,7 @@ class ListPlaybookInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybookInstancesRequest.
+        r"""Sets the limit of this ListPlaybookInstancesRequest.
 
         分页查询参数，用于指定一次查询最多的结果数，从1开始
 
@@ -358,7 +358,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybookInstancesRequest.
+        r"""Gets the offset of this ListPlaybookInstancesRequest.
 
         分页查询参数。用于指定查询结果的起始位置，从0开始
 
@@ -369,7 +369,7 @@ class ListPlaybookInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybookInstancesRequest.
+        r"""Sets the offset of this ListPlaybookInstancesRequest.
 
         分页查询参数。用于指定查询结果的起始位置，从0开始
 

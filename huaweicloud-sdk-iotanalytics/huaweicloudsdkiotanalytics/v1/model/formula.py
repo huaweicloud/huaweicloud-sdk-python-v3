@@ -27,7 +27,7 @@ class Formula:
     }
 
     def __init__(self, formula=None, formulas=None):
-        """Formula
+        r"""Formula
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Formula:
 
     @property
     def formula(self):
-        """Gets the formula of this Formula.
+        r"""Gets the formula of this Formula.
 
         公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
 
@@ -61,7 +61,7 @@ class Formula:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this Formula.
+        r"""Sets the formula of this Formula.
 
         公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
 
@@ -72,7 +72,7 @@ class Formula:
 
     @property
     def formulas(self):
-        """Gets the formulas of this Formula.
+        r"""Gets the formulas of this Formula.
 
         带名称的公式
 
@@ -83,7 +83,7 @@ class Formula:
 
     @formulas.setter
     def formulas(self, formulas):
-        """Sets the formulas of this Formula.
+        r"""Sets the formulas of this Formula.
 
         带名称的公式
 

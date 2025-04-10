@@ -35,7 +35,7 @@ class EventTriggerCondition:
     }
 
     def __init__(self, event_name=None, trigger_type=None, aggregation_window=None, operator=None, thresholds=None, frequency=None):
-        """EventTriggerCondition
+        r"""EventTriggerCondition
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EventTriggerCondition:
 
     @property
     def event_name(self):
-        """Gets the event_name of this EventTriggerCondition.
+        r"""Gets the event_name of this EventTriggerCondition.
 
         事件名称。
 
@@ -89,7 +89,7 @@ class EventTriggerCondition:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this EventTriggerCondition.
+        r"""Sets the event_name of this EventTriggerCondition.
 
         事件名称。
 
@@ -100,7 +100,7 @@ class EventTriggerCondition:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this EventTriggerCondition.
+        r"""Gets the trigger_type of this EventTriggerCondition.
 
         触发方式： - “immediately”：立即触发 - “accumulative”：累计触发
 
@@ -111,7 +111,7 @@ class EventTriggerCondition:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this EventTriggerCondition.
+        r"""Sets the trigger_type of this EventTriggerCondition.
 
         触发方式： - “immediately”：立即触发 - “accumulative”：累计触发
 
@@ -122,7 +122,7 @@ class EventTriggerCondition:
 
     @property
     def aggregation_window(self):
-        """Gets the aggregation_window of this EventTriggerCondition.
+        r"""Gets the aggregation_window of this EventTriggerCondition.
 
         统计周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 不填。
 
@@ -133,7 +133,7 @@ class EventTriggerCondition:
 
     @aggregation_window.setter
     def aggregation_window(self, aggregation_window):
-        """Sets the aggregation_window of this EventTriggerCondition.
+        r"""Sets the aggregation_window of this EventTriggerCondition.
 
         统计周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 不填。
 
@@ -144,7 +144,7 @@ class EventTriggerCondition:
 
     @property
     def operator(self):
-        """Gets the operator of this EventTriggerCondition.
+        r"""Gets the operator of this EventTriggerCondition.
 
         判断条件：“>”,“<”,“=”,“>=”,“<=”，当trigger_type为“immediately”时 不填。
 
@@ -155,7 +155,7 @@ class EventTriggerCondition:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this EventTriggerCondition.
+        r"""Sets the operator of this EventTriggerCondition.
 
         判断条件：“>”,“<”,“=”,“>=”,“<=”，当trigger_type为“immediately”时 不填。
 
@@ -166,7 +166,7 @@ class EventTriggerCondition:
 
     @property
     def thresholds(self):
-        """Gets the thresholds of this EventTriggerCondition.
+        r"""Gets the thresholds of this EventTriggerCondition.
 
         键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 值为空。
 
@@ -177,7 +177,7 @@ class EventTriggerCondition:
 
     @thresholds.setter
     def thresholds(self, thresholds):
-        """Sets the thresholds of this EventTriggerCondition.
+        r"""Sets the thresholds of this EventTriggerCondition.
 
         键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 值为空。
 
@@ -188,7 +188,7 @@ class EventTriggerCondition:
 
     @property
     def frequency(self):
-        """Gets the frequency of this EventTriggerCondition.
+        r"""Gets the frequency of this EventTriggerCondition.
 
         事件类告警频率。当trigger_type为“immediately”时 不填。 - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
 
@@ -199,7 +199,7 @@ class EventTriggerCondition:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this EventTriggerCondition.
+        r"""Sets the frequency of this EventTriggerCondition.
 
         事件类告警频率。当trigger_type为“immediately”时 不填。 - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
 

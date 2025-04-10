@@ -27,7 +27,7 @@ class CreateRedislogDownloadLinkRequest:
     }
 
     def __init__(self, instance_id=None, id=None):
-        """CreateRedislogDownloadLinkRequest
+        r"""CreateRedislogDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateRedislogDownloadLinkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRedislogDownloadLinkRequest.
+        r"""Gets the instance_id of this CreateRedislogDownloadLinkRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class CreateRedislogDownloadLinkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRedislogDownloadLinkRequest.
+        r"""Sets the instance_id of this CreateRedislogDownloadLinkRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class CreateRedislogDownloadLinkRequest:
 
     @property
     def id(self):
-        """Gets the id of this CreateRedislogDownloadLinkRequest.
+        r"""Gets the id of this CreateRedislogDownloadLinkRequest.
 
         日志的唯一ID，来自于查询运行日志查询接口
 
@@ -81,7 +81,7 @@ class CreateRedislogDownloadLinkRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRedislogDownloadLinkRequest.
+        r"""Sets the id of this CreateRedislogDownloadLinkRequest.
 
         日志的唯一ID，来自于查询运行日志查询接口
 

@@ -25,7 +25,7 @@ class DeleteTerminalsBindingDesktopsRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteTerminalsBindingDesktopsRequest
+        r"""DeleteTerminalsBindingDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTerminalsBindingDesktopsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTerminalsBindingDesktopsRequest.
+        r"""Gets the body of this DeleteTerminalsBindingDesktopsRequest.
 
         :return: The body of this DeleteTerminalsBindingDesktopsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsRequestBody`
@@ -52,7 +52,7 @@ class DeleteTerminalsBindingDesktopsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTerminalsBindingDesktopsRequest.
+        r"""Sets the body of this DeleteTerminalsBindingDesktopsRequest.
 
         :param body: The body of this DeleteTerminalsBindingDesktopsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsRequestBody`

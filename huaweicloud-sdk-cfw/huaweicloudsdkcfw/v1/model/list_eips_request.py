@@ -49,7 +49,7 @@ class ListEipsRequest:
     }
 
     def __init__(self, object_id=None, key_word=None, status=None, sync=None, limit=None, offset=None, enterprise_project_id=None, device_key=None, address_type=None, fw_instance_id=None, fw_key_word=None, eps_id=None, tags=None):
-        """ListEipsRequest
+        r"""ListEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class ListEipsRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListEipsRequest.
+        r"""Gets the object_id of this ListEipsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -135,7 +135,7 @@ class ListEipsRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListEipsRequest.
+        r"""Sets the object_id of this ListEipsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -146,7 +146,7 @@ class ListEipsRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListEipsRequest.
+        r"""Gets the key_word of this ListEipsRequest.
 
         查询防护EIP列表关键字，可选用弹性公网ID和弹性公网IP
 
@@ -157,7 +157,7 @@ class ListEipsRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListEipsRequest.
+        r"""Sets the key_word of this ListEipsRequest.
 
         查询防护EIP列表关键字，可选用弹性公网ID和弹性公网IP
 
@@ -168,7 +168,7 @@ class ListEipsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEipsRequest.
+        r"""Gets the status of this ListEipsRequest.
 
         防护状态 null-全部 0-开启防护 1-关闭防护
 
@@ -179,7 +179,7 @@ class ListEipsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEipsRequest.
+        r"""Sets the status of this ListEipsRequest.
 
         防护状态 null-全部 0-开启防护 1-关闭防护
 
@@ -190,7 +190,7 @@ class ListEipsRequest:
 
     @property
     def sync(self):
-        """Gets the sync of this ListEipsRequest.
+        r"""Gets the sync of this ListEipsRequest.
 
         是否同步租户EIP数据 0-不同步 1-同步
 
@@ -201,7 +201,7 @@ class ListEipsRequest:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this ListEipsRequest.
+        r"""Sets the sync of this ListEipsRequest.
 
         是否同步租户EIP数据 0-不同步 1-同步
 
@@ -212,7 +212,7 @@ class ListEipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEipsRequest.
+        r"""Gets the limit of this ListEipsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -223,7 +223,7 @@ class ListEipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEipsRequest.
+        r"""Sets the limit of this ListEipsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -234,7 +234,7 @@ class ListEipsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEipsRequest.
+        r"""Gets the offset of this ListEipsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -245,7 +245,7 @@ class ListEipsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEipsRequest.
+        r"""Sets the offset of this ListEipsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -256,7 +256,7 @@ class ListEipsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEipsRequest.
+        r"""Gets the enterprise_project_id of this ListEipsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -267,7 +267,7 @@ class ListEipsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEipsRequest.
+        r"""Sets the enterprise_project_id of this ListEipsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -278,7 +278,7 @@ class ListEipsRequest:
 
     @property
     def device_key(self):
-        """Gets the device_key of this ListEipsRequest.
+        r"""Gets the device_key of this ListEipsRequest.
 
         设备关键字，是eip绑定的资产的名称或id
 
@@ -289,7 +289,7 @@ class ListEipsRequest:
 
     @device_key.setter
     def device_key(self, device_key):
-        """Sets the device_key of this ListEipsRequest.
+        r"""Sets the device_key of this ListEipsRequest.
 
         设备关键字，是eip绑定的资产的名称或id
 
@@ -300,7 +300,7 @@ class ListEipsRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this ListEipsRequest.
+        r"""Gets the address_type of this ListEipsRequest.
 
         地址类型0 ipv4，1 ipv6
 
@@ -311,7 +311,7 @@ class ListEipsRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this ListEipsRequest.
+        r"""Sets the address_type of this ListEipsRequest.
 
         地址类型0 ipv4，1 ipv6
 
@@ -322,7 +322,7 @@ class ListEipsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListEipsRequest.
+        r"""Gets the fw_instance_id of this ListEipsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -333,7 +333,7 @@ class ListEipsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListEipsRequest.
+        r"""Sets the fw_instance_id of this ListEipsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -344,7 +344,7 @@ class ListEipsRequest:
 
     @property
     def fw_key_word(self):
-        """Gets the fw_key_word of this ListEipsRequest.
+        r"""Gets the fw_key_word of this ListEipsRequest.
 
         防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
 
@@ -355,7 +355,7 @@ class ListEipsRequest:
 
     @fw_key_word.setter
     def fw_key_word(self, fw_key_word):
-        """Sets the fw_key_word of this ListEipsRequest.
+        r"""Sets the fw_key_word of this ListEipsRequest.
 
         防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
 
@@ -366,7 +366,7 @@ class ListEipsRequest:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this ListEipsRequest.
+        r"""Gets the eps_id of this ListEipsRequest.
 
         弹性公网ip的企业项目id，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，租户未开启企业项目时为0
 
@@ -377,7 +377,7 @@ class ListEipsRequest:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this ListEipsRequest.
+        r"""Sets the eps_id of this ListEipsRequest.
 
         弹性公网ip的企业项目id，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，租户未开启企业项目时为0
 
@@ -388,7 +388,7 @@ class ListEipsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListEipsRequest.
+        r"""Gets the tags of this ListEipsRequest.
 
         标签列表信息可通过查询EIP服务界面列表标签页签获得
 
@@ -399,7 +399,7 @@ class ListEipsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListEipsRequest.
+        r"""Sets the tags of this ListEipsRequest.
 
         标签列表信息可通过查询EIP服务界面列表标签页签获得
 

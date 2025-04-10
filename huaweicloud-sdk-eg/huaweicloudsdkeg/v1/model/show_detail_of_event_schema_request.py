@@ -25,7 +25,7 @@ class ShowDetailOfEventSchemaRequest:
     }
 
     def __init__(self, schema_id=None):
-        """ShowDetailOfEventSchemaRequest
+        r"""ShowDetailOfEventSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDetailOfEventSchemaRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this ShowDetailOfEventSchemaRequest.
+        r"""Gets the schema_id of this ShowDetailOfEventSchemaRequest.
 
         指定查询的事件模型ID
 
@@ -53,7 +53,7 @@ class ShowDetailOfEventSchemaRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this ShowDetailOfEventSchemaRequest.
+        r"""Sets the schema_id of this ShowDetailOfEventSchemaRequest.
 
         指定查询的事件模型ID
 

@@ -28,7 +28,7 @@ class ListTaskExecuteHistoryResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListTaskExecuteHistoryResponse
+        r"""ListTaskExecuteHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTaskExecuteHistoryResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTaskExecuteHistoryResponse.
+        r"""Gets the count of this ListTaskExecuteHistoryResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListTaskExecuteHistoryResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTaskExecuteHistoryResponse.
+        r"""Sets the count of this ListTaskExecuteHistoryResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListTaskExecuteHistoryResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListTaskExecuteHistoryResponse.
+        r"""Gets the items of this ListTaskExecuteHistoryResponse.
 
         定时任务执行记录列表，返回列表条目数量上限为分页的最大上限值。
 
@@ -84,7 +84,7 @@ class ListTaskExecuteHistoryResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListTaskExecuteHistoryResponse.
+        r"""Sets the items of this ListTaskExecuteHistoryResponse.
 
         定时任务执行记录列表，返回列表条目数量上限为分页的最大上限值。
 

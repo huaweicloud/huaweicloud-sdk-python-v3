@@ -27,7 +27,7 @@ class NodeSqlFilterRule:
     }
 
     def __init__(self, sql_type=None, patterns=None):
-        """NodeSqlFilterRule
+        r"""NodeSqlFilterRule
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeSqlFilterRule:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this NodeSqlFilterRule.
+        r"""Gets the sql_type of this NodeSqlFilterRule.
 
         Sql限流类型。  取值范围： - SELECT - UPDATE - DELETE
 
@@ -59,7 +59,7 @@ class NodeSqlFilterRule:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this NodeSqlFilterRule.
+        r"""Sets the sql_type of this NodeSqlFilterRule.
 
         Sql限流类型。  取值范围： - SELECT - UPDATE - DELETE
 
@@ -70,7 +70,7 @@ class NodeSqlFilterRule:
 
     @property
     def patterns(self):
-        """Gets the patterns of this NodeSqlFilterRule.
+        r"""Gets the patterns of this NodeSqlFilterRule.
 
         SQL限流具体规则。
 
@@ -81,7 +81,7 @@ class NodeSqlFilterRule:
 
     @patterns.setter
     def patterns(self, patterns):
-        """Sets the patterns of this NodeSqlFilterRule.
+        r"""Sets the patterns of this NodeSqlFilterRule.
 
         SQL限流具体规则。
 

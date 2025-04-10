@@ -27,7 +27,7 @@ class CreateInteractionRuleGroupRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateInteractionRuleGroupRequest
+        r"""CreateInteractionRuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateInteractionRuleGroupRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateInteractionRuleGroupRequest.
+        r"""Gets the x_app_user_id of this CreateInteractionRuleGroupRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateInteractionRuleGroupRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateInteractionRuleGroupRequest.
+        r"""Sets the x_app_user_id of this CreateInteractionRuleGroupRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateInteractionRuleGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInteractionRuleGroupRequest.
+        r"""Gets the body of this CreateInteractionRuleGroupRequest.
 
         :return: The body of this CreateInteractionRuleGroupRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InteractionRuleGroup`
@@ -81,7 +81,7 @@ class CreateInteractionRuleGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInteractionRuleGroupRequest.
+        r"""Sets the body of this CreateInteractionRuleGroupRequest.
 
         :param body: The body of this CreateInteractionRuleGroupRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.InteractionRuleGroup`

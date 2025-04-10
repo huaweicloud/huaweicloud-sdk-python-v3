@@ -27,7 +27,7 @@ class ShowAutopilotUpgradeClusterTaskRequest:
     }
 
     def __init__(self, cluster_id=None, task_id=None):
-        """ShowAutopilotUpgradeClusterTaskRequest
+        r"""ShowAutopilotUpgradeClusterTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAutopilotUpgradeClusterTaskRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowAutopilotUpgradeClusterTaskRequest.
+        r"""Gets the cluster_id of this ShowAutopilotUpgradeClusterTaskRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -59,7 +59,7 @@ class ShowAutopilotUpgradeClusterTaskRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowAutopilotUpgradeClusterTaskRequest.
+        r"""Sets the cluster_id of this ShowAutopilotUpgradeClusterTaskRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -70,7 +70,7 @@ class ShowAutopilotUpgradeClusterTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowAutopilotUpgradeClusterTaskRequest.
+        r"""Gets the task_id of this ShowAutopilotUpgradeClusterTaskRequest.
 
         升级任务ID，调用集群升级API后从响应体中uid字段获取。
 
@@ -81,7 +81,7 @@ class ShowAutopilotUpgradeClusterTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowAutopilotUpgradeClusterTaskRequest.
+        r"""Sets the task_id of this ShowAutopilotUpgradeClusterTaskRequest.
 
         升级任务ID，调用集群升级API后从响应体中uid字段获取。
 

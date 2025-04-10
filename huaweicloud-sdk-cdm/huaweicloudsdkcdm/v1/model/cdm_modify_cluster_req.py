@@ -37,7 +37,7 @@ class CdmModifyClusterReq:
     }
 
     def __init__(self, auto_off=None, schedule_boot_off=None, schedule_boot_time=None, schedule_off_time=None, auto_remind=None, phone_num=None, email=None):
-        """CdmModifyClusterReq
+        r"""CdmModifyClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CdmModifyClusterReq:
 
     @property
     def auto_off(self):
-        """Gets the auto_off of this CdmModifyClusterReq.
+        r"""Gets the auto_off of this CdmModifyClusterReq.
 
         自动关机。
 
@@ -96,7 +96,7 @@ class CdmModifyClusterReq:
 
     @auto_off.setter
     def auto_off(self, auto_off):
-        """Sets the auto_off of this CdmModifyClusterReq.
+        r"""Sets the auto_off of this CdmModifyClusterReq.
 
         自动关机。
 
@@ -107,7 +107,7 @@ class CdmModifyClusterReq:
 
     @property
     def schedule_boot_off(self):
-        """Gets the schedule_boot_off of this CdmModifyClusterReq.
+        r"""Gets the schedule_boot_off of this CdmModifyClusterReq.
 
         定时关机。
 
@@ -118,7 +118,7 @@ class CdmModifyClusterReq:
 
     @schedule_boot_off.setter
     def schedule_boot_off(self, schedule_boot_off):
-        """Sets the schedule_boot_off of this CdmModifyClusterReq.
+        r"""Sets the schedule_boot_off of this CdmModifyClusterReq.
 
         定时关机。
 
@@ -129,7 +129,7 @@ class CdmModifyClusterReq:
 
     @property
     def schedule_boot_time(self):
-        """Gets the schedule_boot_time of this CdmModifyClusterReq.
+        r"""Gets the schedule_boot_time of this CdmModifyClusterReq.
 
         定时开机。
 
@@ -140,7 +140,7 @@ class CdmModifyClusterReq:
 
     @schedule_boot_time.setter
     def schedule_boot_time(self, schedule_boot_time):
-        """Sets the schedule_boot_time of this CdmModifyClusterReq.
+        r"""Sets the schedule_boot_time of this CdmModifyClusterReq.
 
         定时开机。
 
@@ -151,7 +151,7 @@ class CdmModifyClusterReq:
 
     @property
     def schedule_off_time(self):
-        """Gets the schedule_off_time of this CdmModifyClusterReq.
+        r"""Gets the schedule_off_time of this CdmModifyClusterReq.
 
         定时关机时间。
 
@@ -162,7 +162,7 @@ class CdmModifyClusterReq:
 
     @schedule_off_time.setter
     def schedule_off_time(self, schedule_off_time):
-        """Sets the schedule_off_time of this CdmModifyClusterReq.
+        r"""Sets the schedule_off_time of this CdmModifyClusterReq.
 
         定时关机时间。
 
@@ -173,7 +173,7 @@ class CdmModifyClusterReq:
 
     @property
     def auto_remind(self):
-        """Gets the auto_remind of this CdmModifyClusterReq.
+        r"""Gets the auto_remind of this CdmModifyClusterReq.
 
         消息通知。
 
@@ -184,7 +184,7 @@ class CdmModifyClusterReq:
 
     @auto_remind.setter
     def auto_remind(self, auto_remind):
-        """Sets the auto_remind of this CdmModifyClusterReq.
+        r"""Sets the auto_remind of this CdmModifyClusterReq.
 
         消息通知。
 
@@ -195,7 +195,7 @@ class CdmModifyClusterReq:
 
     @property
     def phone_num(self):
-        """Gets the phone_num of this CdmModifyClusterReq.
+        r"""Gets the phone_num of this CdmModifyClusterReq.
 
         手机号码，最多填写20个，以英文逗号分隔。
 
@@ -206,7 +206,7 @@ class CdmModifyClusterReq:
 
     @phone_num.setter
     def phone_num(self, phone_num):
-        """Sets the phone_num of this CdmModifyClusterReq.
+        r"""Sets the phone_num of this CdmModifyClusterReq.
 
         手机号码，最多填写20个，以英文逗号分隔。
 
@@ -217,7 +217,7 @@ class CdmModifyClusterReq:
 
     @property
     def email(self):
-        """Gets the email of this CdmModifyClusterReq.
+        r"""Gets the email of this CdmModifyClusterReq.
 
         邮箱地址，最多填写20个，以英文逗号分隔。
 
@@ -228,7 +228,7 @@ class CdmModifyClusterReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CdmModifyClusterReq.
+        r"""Sets the email of this CdmModifyClusterReq.
 
         邮箱地址，最多填写20个，以英文逗号分隔。
 

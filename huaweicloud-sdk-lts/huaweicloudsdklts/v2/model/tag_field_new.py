@@ -33,7 +33,7 @@ class TagFieldNew:
     }
 
     def __init__(self, field_name=None, content=None, type=None, is_analysis=None, index=None):
-        """TagFieldNew
+        r"""TagFieldNew
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class TagFieldNew:
 
     @property
     def field_name(self):
-        """Gets the field_name of this TagFieldNew.
+        r"""Gets the field_name of this TagFieldNew.
 
         字段名称
 
@@ -80,7 +80,7 @@ class TagFieldNew:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this TagFieldNew.
+        r"""Sets the field_name of this TagFieldNew.
 
         字段名称
 
@@ -91,7 +91,7 @@ class TagFieldNew:
 
     @property
     def content(self):
-        """Gets the content of this TagFieldNew.
+        r"""Gets the content of this TagFieldNew.
 
         字段示例内容
 
@@ -102,7 +102,7 @@ class TagFieldNew:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this TagFieldNew.
+        r"""Sets the content of this TagFieldNew.
 
         字段示例内容
 
@@ -113,7 +113,7 @@ class TagFieldNew:
 
     @property
     def type(self):
-        """Gets the type of this TagFieldNew.
+        r"""Gets the type of this TagFieldNew.
 
         字段数据类型。 可选范围：string、long、float
 
@@ -124,7 +124,7 @@ class TagFieldNew:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TagFieldNew.
+        r"""Sets the type of this TagFieldNew.
 
         字段数据类型。 可选范围：string、long、float
 
@@ -135,7 +135,7 @@ class TagFieldNew:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this TagFieldNew.
+        r"""Gets the is_analysis of this TagFieldNew.
 
         是否开启快速分析
 
@@ -146,7 +146,7 @@ class TagFieldNew:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this TagFieldNew.
+        r"""Sets the is_analysis of this TagFieldNew.
 
         是否开启快速分析
 
@@ -157,7 +157,7 @@ class TagFieldNew:
 
     @property
     def index(self):
-        """Gets the index of this TagFieldNew.
+        r"""Gets the index of this TagFieldNew.
 
         序号，从0开始
 
@@ -168,7 +168,7 @@ class TagFieldNew:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TagFieldNew.
+        r"""Sets the index of this TagFieldNew.
 
         序号，从0开始
 

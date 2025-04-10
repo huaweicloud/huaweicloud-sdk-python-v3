@@ -27,7 +27,7 @@ class BatchCreateChannelsRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """BatchCreateChannelsRequest
+        r"""BatchCreateChannelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateChannelsRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this BatchCreateChannelsRequest.
+        r"""Gets the blockchain_id of this BatchCreateChannelsRequest.
 
         bcs 服务id
 
@@ -60,7 +60,7 @@ class BatchCreateChannelsRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this BatchCreateChannelsRequest.
+        r"""Sets the blockchain_id of this BatchCreateChannelsRequest.
 
         bcs 服务id
 
@@ -71,7 +71,7 @@ class BatchCreateChannelsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateChannelsRequest.
+        r"""Gets the body of this BatchCreateChannelsRequest.
 
         :return: The body of this BatchCreateChannelsRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateChannelsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateChannelsRequest.
+        r"""Sets the body of this BatchCreateChannelsRequest.
 
         :param body: The body of this BatchCreateChannelsRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`

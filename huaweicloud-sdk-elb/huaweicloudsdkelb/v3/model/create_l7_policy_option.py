@@ -57,7 +57,7 @@ class CreateL7PolicyOption:
     }
 
     def __init__(self, action=None, admin_state_up=None, description=None, listener_id=None, name=None, position=None, priority=None, project_id=None, redirect_listener_id=None, redirect_pool_id=None, redirect_url=None, redirect_url_config=None, redirect_pools_config=None, redirect_pools_sticky_session_config=None, fixed_response_config=None, redirect_pools_extend_config=None, rules=None):
-        """CreateL7PolicyOption
+        r"""CreateL7PolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -153,7 +153,7 @@ class CreateL7PolicyOption:
 
     @property
     def action(self):
-        """Gets the action of this CreateL7PolicyOption.
+        r"""Gets the action of this CreateL7PolicyOption.
 
         参数解释：转发策略的转发动作。  约束限制： - REDIRECT_TO_LISTENER的优先级最高，配置了以后，该监听器下的其他policy会失效。 - 当action为REDIRECT_TO_POOL时， 只支持创建在PROTOCOL为HTTP、HTTPS、TERMINATED_HTTPS的listener上。 - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。  取值范围： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
 
@@ -164,7 +164,7 @@ class CreateL7PolicyOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateL7PolicyOption.
+        r"""Sets the action of this CreateL7PolicyOption.
 
         参数解释：转发策略的转发动作。  约束限制： - REDIRECT_TO_LISTENER的优先级最高，配置了以后，该监听器下的其他policy会失效。 - 当action为REDIRECT_TO_POOL时， 只支持创建在PROTOCOL为HTTP、HTTPS、TERMINATED_HTTPS的listener上。 - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。  取值范围： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：重定向到监听器。 - REDIRECT_TO_URL：重定向到URL。 - FIXED_RESPONSE：返回固定响应体。  [不支持REDIRECT_TO_URL和FIXED_RESPONSE](tag:hcso_dt)
 
@@ -175,7 +175,7 @@ class CreateL7PolicyOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateL7PolicyOption.
+        r"""Gets the admin_state_up of this CreateL7PolicyOption.
 
         参数解释：转发策略的管理状态。  约束限制：只支持设置为true。
 
@@ -186,7 +186,7 @@ class CreateL7PolicyOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateL7PolicyOption.
+        r"""Sets the admin_state_up of this CreateL7PolicyOption.
 
         参数解释：转发策略的管理状态。  约束限制：只支持设置为true。
 
@@ -197,7 +197,7 @@ class CreateL7PolicyOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateL7PolicyOption.
+        r"""Gets the description of this CreateL7PolicyOption.
 
         参数解释：转发策略描述信息。
 
@@ -208,7 +208,7 @@ class CreateL7PolicyOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateL7PolicyOption.
+        r"""Sets the description of this CreateL7PolicyOption.
 
         参数解释：转发策略描述信息。
 
@@ -219,7 +219,7 @@ class CreateL7PolicyOption:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreateL7PolicyOption.
+        r"""Gets the listener_id of this CreateL7PolicyOption.
 
         参数解释：转发策略对应的监听器ID。  约束限制： - 当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或HTTPS的listener上。 - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
@@ -230,7 +230,7 @@ class CreateL7PolicyOption:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreateL7PolicyOption.
+        r"""Sets the listener_id of this CreateL7PolicyOption.
 
         参数解释：转发策略对应的监听器ID。  约束限制： - 当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或HTTPS的listener上。 - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
@@ -241,7 +241,7 @@ class CreateL7PolicyOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateL7PolicyOption.
+        r"""Gets the name of this CreateL7PolicyOption.
 
         参数解释：转发策略名称。
 
@@ -252,7 +252,7 @@ class CreateL7PolicyOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateL7PolicyOption.
+        r"""Sets the name of this CreateL7PolicyOption.
 
         参数解释：转发策略名称。
 
@@ -263,7 +263,7 @@ class CreateL7PolicyOption:
 
     @property
     def position(self):
-        """Gets the position of this CreateL7PolicyOption.
+        r"""Gets the position of this CreateL7PolicyOption.
 
         参数解释：转发策略的优先级。  约束限制：不支持更新。  不支持该字段，请勿使用。
 
@@ -274,7 +274,7 @@ class CreateL7PolicyOption:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this CreateL7PolicyOption.
+        r"""Sets the position of this CreateL7PolicyOption.
 
         参数解释：转发策略的优先级。  约束限制：不支持更新。  不支持该字段，请勿使用。
 
@@ -285,7 +285,7 @@ class CreateL7PolicyOption:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateL7PolicyOption.
+        r"""Gets the priority of this CreateL7PolicyOption.
 
         参数解释：转发策略的优先级。数字越小表示优先级越高。  约束限制： - 同一个监听器下不同转发策略之间不允许重复的优先级数值。  - 当关联的监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效，未开启传入该字段会报错。 - 当关联的监听器的高级转发策略功能（enhance_l7policy_enable）未开启，按原有policy的排序逻辑，自动排序。 不同域名优先级独立。相同域名下，按path的compare_type排序， 精确>前缀>正则，匹配类型相同时，path的长度越长优先级越高。 若policy下只有域名rule，没有路径rule，默认path为前缀匹配/。  [- 共享型负载均衡器下的转发策略不支持该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)  取值范围： - 当action为REDIRECT_TO_LISTENER时，支持指定为0-10000。 - 其它action取值，支持指定为1-10000。  默认取值： - 若关联的监听器的高级转发策略功能（enhance_l7policy_enable）未开启，且不传入该字段，则新创建的转发策略的优先级的值为1。 - 当action为REDIRECT_TO_LISTENER时，则新创建的转发策略的优先级的值为0。 - 其它action取值，新创建的转发策略的优先级的值为同一监听器下已有转发策略的优先级的最大值+1。   + 若监听器下没有转发策略，则新建的转发策略的优先级为1。   + 若当前已有转发策略的优先级的最大值是10000，则新创建的转发策略会因超出取值范围10000而失败。此时可通过传入指定priority，或调整原有policy的优先级来避免错误。  [不支持该字段，请勿使用。](tag:hcso_dt)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -296,7 +296,7 @@ class CreateL7PolicyOption:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateL7PolicyOption.
+        r"""Sets the priority of this CreateL7PolicyOption.
 
         参数解释：转发策略的优先级。数字越小表示优先级越高。  约束限制： - 同一个监听器下不同转发策略之间不允许重复的优先级数值。  - 当关联的监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效，未开启传入该字段会报错。 - 当关联的监听器的高级转发策略功能（enhance_l7policy_enable）未开启，按原有policy的排序逻辑，自动排序。 不同域名优先级独立。相同域名下，按path的compare_type排序， 精确>前缀>正则，匹配类型相同时，path的长度越长优先级越高。 若policy下只有域名rule，没有路径rule，默认path为前缀匹配/。  [- 共享型负载均衡器下的转发策略不支持该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)  取值范围： - 当action为REDIRECT_TO_LISTENER时，支持指定为0-10000。 - 其它action取值，支持指定为1-10000。  默认取值： - 若关联的监听器的高级转发策略功能（enhance_l7policy_enable）未开启，且不传入该字段，则新创建的转发策略的优先级的值为1。 - 当action为REDIRECT_TO_LISTENER时，则新创建的转发策略的优先级的值为0。 - 其它action取值，新创建的转发策略的优先级的值为同一监听器下已有转发策略的优先级的最大值+1。   + 若监听器下没有转发策略，则新建的转发策略的优先级为1。   + 若当前已有转发策略的优先级的最大值是10000，则新创建的转发策略会因超出取值范围10000而失败。此时可通过传入指定priority，或调整原有policy的优先级来避免错误。  [不支持该字段，请勿使用。](tag:hcso_dt)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -307,7 +307,7 @@ class CreateL7PolicyOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateL7PolicyOption.
+        r"""Gets the project_id of this CreateL7PolicyOption.
 
         参数解释：转发策略所在的项目ID。
 
@@ -318,7 +318,7 @@ class CreateL7PolicyOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateL7PolicyOption.
+        r"""Sets the project_id of this CreateL7PolicyOption.
 
         参数解释：转发策略所在的项目ID。
 
@@ -329,7 +329,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this CreateL7PolicyOption.
+        r"""Gets the redirect_listener_id of this CreateL7PolicyOption.
 
         参数解释：转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  约束限制： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。 [- 共享型负载均衡器下的转发策略不支持该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -340,7 +340,7 @@ class CreateL7PolicyOption:
 
     @redirect_listener_id.setter
     def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this CreateL7PolicyOption.
+        r"""Sets the redirect_listener_id of this CreateL7PolicyOption.
 
         参数解释：转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  约束限制： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。 [- 共享型负载均衡器下的转发策略不支持该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -351,7 +351,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_pool_id(self):
-        """Gets the redirect_pool_id of this CreateL7PolicyOption.
+        r"""Gets the redirect_pool_id of this CreateL7PolicyOption.
 
         参数解释：转发到pool的ID。  约束限制： - 当action为REDIRECT_TO_POOL时生效。 - 当action为REDIRECT_TO_LISTENER时，传入会报错。
 
@@ -362,7 +362,7 @@ class CreateL7PolicyOption:
 
     @redirect_pool_id.setter
     def redirect_pool_id(self, redirect_pool_id):
-        """Sets the redirect_pool_id of this CreateL7PolicyOption.
+        r"""Sets the redirect_pool_id of this CreateL7PolicyOption.
 
         参数解释：转发到pool的ID。  约束限制： - 当action为REDIRECT_TO_POOL时生效。 - 当action为REDIRECT_TO_LISTENER时，传入会报错。
 
@@ -373,7 +373,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this CreateL7PolicyOption.
+        r"""Gets the redirect_url of this CreateL7PolicyOption.
 
         参数解释：转发到的url。  约束限制：必须满足格式: protocol://host:port/path?query。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -384,7 +384,7 @@ class CreateL7PolicyOption:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this CreateL7PolicyOption.
+        r"""Sets the redirect_url of this CreateL7PolicyOption.
 
         参数解释：转发到的url。  约束限制：必须满足格式: protocol://host:port/path?query。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
@@ -395,7 +395,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_url_config(self):
-        """Gets the redirect_url_config of this CreateL7PolicyOption.
+        r"""Gets the redirect_url_config of this CreateL7PolicyOption.
 
         :return: The redirect_url_config of this CreateL7PolicyOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateRedirectUrlConfig`
@@ -404,7 +404,7 @@ class CreateL7PolicyOption:
 
     @redirect_url_config.setter
     def redirect_url_config(self, redirect_url_config):
-        """Sets the redirect_url_config of this CreateL7PolicyOption.
+        r"""Sets the redirect_url_config of this CreateL7PolicyOption.
 
         :param redirect_url_config: The redirect_url_config of this CreateL7PolicyOption.
         :type redirect_url_config: :class:`huaweicloudsdkelb.v3.CreateRedirectUrlConfig`
@@ -413,7 +413,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_pools_config(self):
-        """Gets the redirect_pools_config of this CreateL7PolicyOption.
+        r"""Gets the redirect_pools_config of this CreateL7PolicyOption.
 
         参数解释：转发到多个主机组列表。  约束限制：一个policy最多配置5个pool。
 
@@ -424,7 +424,7 @@ class CreateL7PolicyOption:
 
     @redirect_pools_config.setter
     def redirect_pools_config(self, redirect_pools_config):
-        """Sets the redirect_pools_config of this CreateL7PolicyOption.
+        r"""Sets the redirect_pools_config of this CreateL7PolicyOption.
 
         参数解释：转发到多个主机组列表。  约束限制：一个policy最多配置5个pool。
 
@@ -435,7 +435,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_pools_sticky_session_config(self):
-        """Gets the redirect_pools_sticky_session_config of this CreateL7PolicyOption.
+        r"""Gets the redirect_pools_sticky_session_config of this CreateL7PolicyOption.
 
         :return: The redirect_pools_sticky_session_config of this CreateL7PolicyOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateRedirectPoolsStickySessionConfig`
@@ -444,7 +444,7 @@ class CreateL7PolicyOption:
 
     @redirect_pools_sticky_session_config.setter
     def redirect_pools_sticky_session_config(self, redirect_pools_sticky_session_config):
-        """Sets the redirect_pools_sticky_session_config of this CreateL7PolicyOption.
+        r"""Sets the redirect_pools_sticky_session_config of this CreateL7PolicyOption.
 
         :param redirect_pools_sticky_session_config: The redirect_pools_sticky_session_config of this CreateL7PolicyOption.
         :type redirect_pools_sticky_session_config: :class:`huaweicloudsdkelb.v3.CreateRedirectPoolsStickySessionConfig`
@@ -453,7 +453,7 @@ class CreateL7PolicyOption:
 
     @property
     def fixed_response_config(self):
-        """Gets the fixed_response_config of this CreateL7PolicyOption.
+        r"""Gets the fixed_response_config of this CreateL7PolicyOption.
 
         :return: The fixed_response_config of this CreateL7PolicyOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateFixtedResponseConfig`
@@ -462,7 +462,7 @@ class CreateL7PolicyOption:
 
     @fixed_response_config.setter
     def fixed_response_config(self, fixed_response_config):
-        """Sets the fixed_response_config of this CreateL7PolicyOption.
+        r"""Sets the fixed_response_config of this CreateL7PolicyOption.
 
         :param fixed_response_config: The fixed_response_config of this CreateL7PolicyOption.
         :type fixed_response_config: :class:`huaweicloudsdkelb.v3.CreateFixtedResponseConfig`
@@ -471,7 +471,7 @@ class CreateL7PolicyOption:
 
     @property
     def redirect_pools_extend_config(self):
-        """Gets the redirect_pools_extend_config of this CreateL7PolicyOption.
+        r"""Gets the redirect_pools_extend_config of this CreateL7PolicyOption.
 
         :return: The redirect_pools_extend_config of this CreateL7PolicyOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateRedirectPoolsExtendConfig`
@@ -480,7 +480,7 @@ class CreateL7PolicyOption:
 
     @redirect_pools_extend_config.setter
     def redirect_pools_extend_config(self, redirect_pools_extend_config):
-        """Sets the redirect_pools_extend_config of this CreateL7PolicyOption.
+        r"""Sets the redirect_pools_extend_config of this CreateL7PolicyOption.
 
         :param redirect_pools_extend_config: The redirect_pools_extend_config of this CreateL7PolicyOption.
         :type redirect_pools_extend_config: :class:`huaweicloudsdkelb.v3.CreateRedirectPoolsExtendConfig`
@@ -489,7 +489,7 @@ class CreateL7PolicyOption:
 
     @property
     def rules(self):
-        """Gets the rules of this CreateL7PolicyOption.
+        r"""Gets the rules of this CreateL7PolicyOption.
 
         参数解释：转发策略关联的转发规则对象。  约束限制： - rules列表中最多含有10个rule规则 （若rule中包含conditions字段，一条condition算一个规则）， 且列表中type为HOST_NAME，PATH，METHOD，SOURCE_IP的rule不能重复，至多指定一条。 - 仅支持全量替换。 - 如果l7policy 是重定向到listener的话，不允许创建l7rule。
 
@@ -500,7 +500,7 @@ class CreateL7PolicyOption:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CreateL7PolicyOption.
+        r"""Sets the rules of this CreateL7PolicyOption.
 
         参数解释：转发策略关联的转发规则对象。  约束限制： - rules列表中最多含有10个rule规则 （若rule中包含conditions字段，一条condition算一个规则）， 且列表中type为HOST_NAME，PATH，METHOD，SOURCE_IP的rule不能重复，至多指定一条。 - 仅支持全量替换。 - 如果l7policy 是重定向到listener的话，不允许创建l7rule。
 

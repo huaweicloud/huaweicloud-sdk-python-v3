@@ -31,7 +31,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
     }
 
     def __init__(self, aggregator_id=None, update_status=None, limit=None, marker=None):
-        """ShowConfigurationAggregatorSourcesStatusRequest
+        r"""ShowConfigurationAggregatorSourcesStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Gets the aggregator_id of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         资源聚合器ID。
 
@@ -74,7 +74,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Sets the aggregator_id of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         资源聚合器ID。
 
@@ -85,7 +85,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @property
     def update_status(self):
-        """Gets the update_status of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Gets the update_status of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         聚合帐号的状态。
 
@@ -96,7 +96,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @update_status.setter
     def update_status(self, update_status):
-        """Sets the update_status of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Sets the update_status of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         聚合帐号的状态。
 
@@ -107,7 +107,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Gets the limit of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         最大的返回数量
 
@@ -118,7 +118,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Sets the limit of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         最大的返回数量
 
@@ -129,7 +129,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Gets the marker of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -140,7 +140,7 @@ class ShowConfigurationAggregatorSourcesStatusRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowConfigurationAggregatorSourcesStatusRequest.
+        r"""Sets the marker of this ShowConfigurationAggregatorSourcesStatusRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

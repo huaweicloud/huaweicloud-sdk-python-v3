@@ -44,7 +44,7 @@ class ShowForwardingConfigResponse(SdkResponse):
     }
 
     def __init__(self, forwarding_type=None, kafka_config_id=None, kafka_topics=None, brokers=None, username=None, topic_prefix=None, status=None, authentication=None, created_time=None, last_modified_time=None):
-        """ShowForwardingConfigResponse
+        r"""ShowForwardingConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def forwarding_type(self):
-        """Gets the forwarding_type of this ShowForwardingConfigResponse.
+        r"""Gets the forwarding_type of this ShowForwardingConfigResponse.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka、mrskafka”。
 
@@ -118,7 +118,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @forwarding_type.setter
     def forwarding_type(self, forwarding_type):
-        """Sets the forwarding_type of this ShowForwardingConfigResponse.
+        r"""Sets the forwarding_type of this ShowForwardingConfigResponse.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka、mrskafka”。
 
@@ -129,7 +129,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def kafka_config_id(self):
-        """Gets the kafka_config_id of this ShowForwardingConfigResponse.
+        r"""Gets the kafka_config_id of this ShowForwardingConfigResponse.
 
         **参数说明**：每一套Kafka配置的唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -140,7 +140,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @kafka_config_id.setter
     def kafka_config_id(self, kafka_config_id):
-        """Sets the kafka_config_id of this ShowForwardingConfigResponse.
+        r"""Sets the kafka_config_id of this ShowForwardingConfigResponse.
 
         **参数说明**：每一套Kafka配置的唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -151,7 +151,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def kafka_topics(self):
-        """Gets the kafka_topics of this ShowForwardingConfigResponse.
+        r"""Gets the kafka_topics of this ShowForwardingConfigResponse.
 
         **参数说明**：kafka的主题列表。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -162,7 +162,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @kafka_topics.setter
     def kafka_topics(self, kafka_topics):
-        """Sets the kafka_topics of this ShowForwardingConfigResponse.
+        r"""Sets the kafka_topics of this ShowForwardingConfigResponse.
 
         **参数说明**：kafka的主题列表。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -173,7 +173,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def brokers(self):
-        """Gets the brokers of this ShowForwardingConfigResponse.
+        r"""Gets the brokers of this ShowForwardingConfigResponse.
 
         **参数说明**：Kafka broker列表。
 
@@ -184,7 +184,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ShowForwardingConfigResponse.
+        r"""Sets the brokers of this ShowForwardingConfigResponse.
 
         **参数说明**：Kafka broker列表。
 
@@ -195,7 +195,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def username(self):
-        """Gets the username of this ShowForwardingConfigResponse.
+        r"""Gets the username of this ShowForwardingConfigResponse.
 
         **参数说明**：kafka用户名。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -206,7 +206,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ShowForwardingConfigResponse.
+        r"""Sets the username of this ShowForwardingConfigResponse.
 
         **参数说明**：kafka用户名。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -217,7 +217,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def topic_prefix(self):
-        """Gets the topic_prefix of this ShowForwardingConfigResponse.
+        r"""Gets the topic_prefix of this ShowForwardingConfigResponse.
 
         **参数说明**：Topic前缀。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -228,7 +228,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @topic_prefix.setter
     def topic_prefix(self, topic_prefix):
-        """Sets the topic_prefix of this ShowForwardingConfigResponse.
+        r"""Sets the topic_prefix of this ShowForwardingConfigResponse.
 
         **参数说明**：Topic前缀。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -239,7 +239,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowForwardingConfigResponse.
+        r"""Gets the status of this ShowForwardingConfigResponse.
 
         **参数说明**：一套kafka的连接状态。  **取值范围**：  - OFFLINE：离线  - ONLINE：在线
 
@@ -250,7 +250,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowForwardingConfigResponse.
+        r"""Sets the status of this ShowForwardingConfigResponse.
 
         **参数说明**：一套kafka的连接状态。  **取值范围**：  - OFFLINE：离线  - ONLINE：在线
 
@@ -261,7 +261,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def authentication(self):
-        """Gets the authentication of this ShowForwardingConfigResponse.
+        r"""Gets the authentication of this ShowForwardingConfigResponse.
 
         **参数说明**：是否开启kerberos安全认证的开关。若开启安全认证则需要先上传kerberos安全认证的凭证。
 
@@ -272,7 +272,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this ShowForwardingConfigResponse.
+        r"""Sets the authentication of this ShowForwardingConfigResponse.
 
         **参数说明**：是否开启kerberos安全认证的开关。若开启安全认证则需要先上传kerberos安全认证的凭证。
 
@@ -283,7 +283,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowForwardingConfigResponse.
+        r"""Gets the created_time of this ShowForwardingConfigResponse.
 
         **参数说明**：创建时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 
@@ -294,7 +294,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowForwardingConfigResponse.
+        r"""Sets the created_time of this ShowForwardingConfigResponse.
 
         **参数说明**：创建时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 
@@ -305,7 +305,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ShowForwardingConfigResponse.
+        r"""Gets the last_modified_time of this ShowForwardingConfigResponse.
 
         **参数说明**：修改时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 
@@ -316,7 +316,7 @@ class ShowForwardingConfigResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ShowForwardingConfigResponse.
+        r"""Sets the last_modified_time of this ShowForwardingConfigResponse.
 
         **参数说明**：修改时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 

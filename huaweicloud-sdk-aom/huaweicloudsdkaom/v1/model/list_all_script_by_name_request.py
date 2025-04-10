@@ -25,7 +25,7 @@ class ListAllScriptByNameRequest:
     }
 
     def __init__(self, body=None):
-        """ListAllScriptByNameRequest
+        r"""ListAllScriptByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAllScriptByNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAllScriptByNameRequest.
+        r"""Gets the body of this ListAllScriptByNameRequest.
 
         :return: The body of this ListAllScriptByNameRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.SearchScriptsRequestBody`
@@ -52,7 +52,7 @@ class ListAllScriptByNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAllScriptByNameRequest.
+        r"""Sets the body of this ListAllScriptByNameRequest.
 
         :param body: The body of this ListAllScriptByNameRequest.
         :type body: :class:`huaweicloudsdkaom.v1.SearchScriptsRequestBody`

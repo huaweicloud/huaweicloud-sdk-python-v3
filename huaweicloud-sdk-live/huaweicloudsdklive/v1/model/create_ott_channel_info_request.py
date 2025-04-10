@@ -29,7 +29,7 @@ class CreateOttChannelInfoRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, body=None):
-        """CreateOttChannelInfoRequest
+        r"""CreateOttChannelInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateOttChannelInfoRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this CreateOttChannelInfoRequest.
+        r"""Gets the access_control_allow_internal of this CreateOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -68,7 +68,7 @@ class CreateOttChannelInfoRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this CreateOttChannelInfoRequest.
+        r"""Sets the access_control_allow_internal of this CreateOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -79,7 +79,7 @@ class CreateOttChannelInfoRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this CreateOttChannelInfoRequest.
+        r"""Gets the access_control_allow_external of this CreateOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -90,7 +90,7 @@ class CreateOttChannelInfoRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this CreateOttChannelInfoRequest.
+        r"""Sets the access_control_allow_external of this CreateOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -101,7 +101,7 @@ class CreateOttChannelInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOttChannelInfoRequest.
+        r"""Gets the body of this CreateOttChannelInfoRequest.
 
         :return: The body of this CreateOttChannelInfoRequest.
         :rtype: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoReq`
@@ -110,7 +110,7 @@ class CreateOttChannelInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOttChannelInfoRequest.
+        r"""Sets the body of this CreateOttChannelInfoRequest.
 
         :param body: The body of this CreateOttChannelInfoRequest.
         :type body: :class:`huaweicloudsdklive.v1.CreateOttChannelInfoReq`

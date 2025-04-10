@@ -35,7 +35,7 @@ class ListConnectionsRequest:
     }
 
     def __init__(self, offset=None, limit=None, sort=None, name=None, fuzzy_name=None, instance_id=None):
-        """ListConnectionsRequest
+        r"""ListConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConnectionsRequest.
+        r"""Gets the offset of this ListConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -89,7 +89,7 @@ class ListConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConnectionsRequest.
+        r"""Sets the offset of this ListConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -100,7 +100,7 @@ class ListConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConnectionsRequest.
+        r"""Gets the limit of this ListConnectionsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -111,7 +111,7 @@ class ListConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConnectionsRequest.
+        r"""Sets the limit of this ListConnectionsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -122,7 +122,7 @@ class ListConnectionsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListConnectionsRequest.
+        r"""Gets the sort of this ListConnectionsRequest.
 
         指定查询排序
 
@@ -133,7 +133,7 @@ class ListConnectionsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListConnectionsRequest.
+        r"""Sets the sort of this ListConnectionsRequest.
 
         指定查询排序
 
@@ -144,7 +144,7 @@ class ListConnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListConnectionsRequest.
+        r"""Gets the name of this ListConnectionsRequest.
 
         指定查询的目标连接名称，精准匹配
 
@@ -155,7 +155,7 @@ class ListConnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConnectionsRequest.
+        r"""Sets the name of this ListConnectionsRequest.
 
         指定查询的目标连接名称，精准匹配
 
@@ -166,7 +166,7 @@ class ListConnectionsRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListConnectionsRequest.
+        r"""Gets the fuzzy_name of this ListConnectionsRequest.
 
         指定查询的目标连接名称，模糊匹配
 
@@ -177,7 +177,7 @@ class ListConnectionsRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListConnectionsRequest.
+        r"""Sets the fuzzy_name of this ListConnectionsRequest.
 
         指定查询的目标连接名称，模糊匹配
 
@@ -188,7 +188,7 @@ class ListConnectionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConnectionsRequest.
+        r"""Gets the instance_id of this ListConnectionsRequest.
 
         指定查询的目标连接，队列的实例id
 
@@ -199,7 +199,7 @@ class ListConnectionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConnectionsRequest.
+        r"""Sets the instance_id of this ListConnectionsRequest.
 
         指定查询的目标连接，队列的实例id
 

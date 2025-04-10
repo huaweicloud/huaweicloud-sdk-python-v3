@@ -26,7 +26,7 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListStructuredLogsWithTimeRangeResponse
+        r"""ListStructuredLogsWithTimeRangeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListStructuredLogsWithTimeRangeResponse.
+        r"""Gets the body of this ListStructuredLogsWithTimeRangeResponse.
 
         :return: The body of this ListStructuredLogsWithTimeRangeResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListStructuredLogsWithTimeRangeResponse.
+        r"""Sets the body of this ListStructuredLogsWithTimeRangeResponse.
 
         :param body: The body of this ListStructuredLogsWithTimeRangeResponse.
         :type body: object

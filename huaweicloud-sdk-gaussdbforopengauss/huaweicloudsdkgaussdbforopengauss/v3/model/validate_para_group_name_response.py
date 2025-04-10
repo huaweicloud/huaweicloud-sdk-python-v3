@@ -26,7 +26,7 @@ class ValidateParaGroupNameResponse(SdkResponse):
     }
 
     def __init__(self, exist=None):
-        """ValidateParaGroupNameResponse
+        r"""ValidateParaGroupNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateParaGroupNameResponse(SdkResponse):
 
     @property
     def exist(self):
-        """Gets the exist of this ValidateParaGroupNameResponse.
+        r"""Gets the exist of this ValidateParaGroupNameResponse.
 
         校验结果。true为已存在，false为不存在。
 
@@ -55,7 +55,7 @@ class ValidateParaGroupNameResponse(SdkResponse):
 
     @exist.setter
     def exist(self, exist):
-        """Sets the exist of this ValidateParaGroupNameResponse.
+        r"""Sets the exist of this ValidateParaGroupNameResponse.
 
         校验结果。true为已存在，false为不存在。
 

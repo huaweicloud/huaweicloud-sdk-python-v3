@@ -26,7 +26,7 @@ class ListL7rulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None):
-        """ListL7rulesResponse
+        r"""ListL7rulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListL7rulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListL7rulesResponse.
+        r"""Gets the rules of this ListL7rulesResponse.
 
         转发规则对象的列表
 
@@ -55,7 +55,7 @@ class ListL7rulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListL7rulesResponse.
+        r"""Sets the rules of this ListL7rulesResponse.
 
         转发规则对象的列表
 

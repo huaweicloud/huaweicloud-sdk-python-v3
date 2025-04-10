@@ -34,7 +34,7 @@ class ServiceStageAsyncClient(Client):
         return client_builder
 
     def create_application_async(self, request):
-        """创建应用
+        r"""创建应用
 
         应用是一个功能相对完备的业务系统，由一个或多个特性相关的组件组成。
         
@@ -101,7 +101,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def delete_application_async(self, request):
-        """根据应用ID删除应用
+        r"""根据应用ID删除应用
 
         此API通过应用ID删除应用。
         
@@ -166,7 +166,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def delete_application_configuration_async(self, request):
-        """根据应用ID删除应用配置
+        r"""根据应用ID删除应用配置
 
         此API通过应用ID删除应用配置。
         
@@ -233,7 +233,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def modify_application_async(self, request):
-        """根据应用ID修改应用信息
+        r"""根据应用ID修改应用信息
 
         此API通过应用ID修改应用信息。
         
@@ -300,7 +300,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def modify_application_configuration_async(self, request):
-        """根据应用ID修改应用配置
+        r"""根据应用ID修改应用配置
 
         此API通过应用ID修改应用配置。
         
@@ -367,7 +367,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_application_configuration_async(self, request):
-        """根据应用ID获取应用配置
+        r"""根据应用ID获取应用配置
 
         此API通过应用ID获取应用配置信息。
         
@@ -434,7 +434,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_application_info_async(self, request):
-        """根据应用ID获取应用详细信息
+        r"""根据应用ID获取应用详细信息
 
         此API通过应用ID获取应用详细信息。
         
@@ -499,7 +499,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_applications_async(self, request):
-        """获取所用应用
+        r"""获取所用应用
 
         获取所有应用信息。
         
@@ -570,7 +570,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def create_component_async(self, request):
-        """应用中创建组件
+        r"""应用中创建组件
 
         此API用来在应用中创建组件。
         
@@ -637,7 +637,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def delete_component_async(self, request):
-        """根据组件ID删除组件
+        r"""根据组件ID删除组件
 
         此API通过组件ID删除组件。
         
@@ -704,7 +704,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def modify_component_async(self, request):
-        """根据组件ID修改组件信息
+        r"""根据组件ID修改组件信息
 
         此API通过组件ID修改组件信息。
         
@@ -773,7 +773,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_component_info_async(self, request):
-        """根据组件ID获取组件信息
+        r"""根据组件ID获取组件信息
 
         通过组件ID获取组件信息。
         
@@ -842,7 +842,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_component_records_async(self, request):
-        """通过组件ID获取记录
+        r"""通过组件ID获取记录
 
         此API用来通过组件ID获取记录
         
@@ -917,7 +917,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_components_async(self, request):
-        """获取所有组件
+        r"""获取所有组件
 
         此API用来获取所有组件
         
@@ -992,7 +992,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_components_in_application_async(self, request):
-        """获取应用所有组件
+        r"""获取应用所有组件
 
         通过此API获取应用下所有应用组件。
         
@@ -1065,7 +1065,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def update_component_action_async(self, request):
-        """根据组件ID下发组件任务
+        r"""根据组件ID下发组件任务
 
         通过组件ID下发组件任务。
         
@@ -1134,7 +1134,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def create_environment_async(self, request):
-        """创建环境
+        r"""创建环境
 
         环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。
         
@@ -1201,7 +1201,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def delete_environment_async(self, request):
-        """根据环境ID删除环境
+        r"""根据环境ID删除环境
 
         此API通过环境ID删除环境。
         
@@ -1266,7 +1266,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def modify_environment_async(self, request):
-        """根据环境ID修改环境
+        r"""根据环境ID修改环境
 
         此API通过环境ID修改环境。
         
@@ -1333,7 +1333,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def modify_resource_in_environment_async(self, request):
-        """根据环境ID修改环境资源
+        r"""根据环境ID修改环境资源
 
         此API用来通过环境ID修改环境资源。
         
@@ -1400,7 +1400,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_environment_info_async(self, request):
-        """根据环境ID获取环境详细信息
+        r"""根据环境ID获取环境详细信息
 
         此API通过环境ID获取环境详细信息。
         
@@ -1465,7 +1465,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_environment_resources_async(self, request):
-        """根据环境ID查询环境资源
+        r"""根据环境ID查询环境资源
 
         此API用来根据环境ID查询环境资源。
         
@@ -1530,7 +1530,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_environments_async(self, request):
-        """获取所有环境
+        r"""获取所有环境
 
         此API用来获取所有已经创建环境。
         
@@ -1607,7 +1607,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_job_info_async(self, request):
-        """get cas job infomation
+        r"""get cas job infomation
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1679,7 +1679,7 @@ class ServiceStageAsyncClient(Client):
         return http_info
 
     def show_runtime_stacks_async(self, request):
-        """查询运行时栈
+        r"""查询运行时栈
 
         获取运行时信息。
         

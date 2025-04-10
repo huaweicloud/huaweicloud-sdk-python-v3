@@ -85,7 +85,7 @@ class BasicInfo:
     }
 
     def __init__(self, id=None, name=None, version=None, service_type=None, purchase_type=None, sign_algorithm=None, consensus=None, charging_mode=None, version_type=None, database_type=None, cluster_id=None, cluster_name=None, cluster_type=None, cluster_az=None, created_time=None, deploy_type=None, order_fade_enabled=None, is_cross_region=None, is_support_rollback=None, is_support_restful=None, is_support_tc3=None, is_old_service=None, old_service_version=None, agent_portal_addrs=None, status=None, process_status=None, order_status=None, order_fade_cache=None, deploy_status=None, block_info=None, cluster_platform_type=None):
-        """BasicInfo
+        r"""BasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class BasicInfo:
 
     @property
     def id(self):
-        """Gets the id of this BasicInfo.
+        r"""Gets the id of this BasicInfo.
 
         BCS服务ID
 
@@ -264,7 +264,7 @@ class BasicInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BasicInfo.
+        r"""Sets the id of this BasicInfo.
 
         BCS服务ID
 
@@ -275,7 +275,7 @@ class BasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this BasicInfo.
+        r"""Gets the name of this BasicInfo.
 
         区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
@@ -286,7 +286,7 @@ class BasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BasicInfo.
+        r"""Sets the name of this BasicInfo.
 
         区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
@@ -297,7 +297,7 @@ class BasicInfo:
 
     @property
     def version(self):
-        """Gets the version of this BasicInfo.
+        r"""Gets the version of this BasicInfo.
 
         BCS服务版本信息
 
@@ -308,7 +308,7 @@ class BasicInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BasicInfo.
+        r"""Sets the version of this BasicInfo.
 
         BCS服务版本信息
 
@@ -319,7 +319,7 @@ class BasicInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this BasicInfo.
+        r"""Gets the service_type of this BasicInfo.
 
         BCS服务的类型，分为：联盟链（union），私有链（private）
 
@@ -330,7 +330,7 @@ class BasicInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this BasicInfo.
+        r"""Sets the service_type of this BasicInfo.
 
         BCS服务的类型，分为：联盟链（union），私有链（private）
 
@@ -341,7 +341,7 @@ class BasicInfo:
 
     @property
     def purchase_type(self):
-        """Gets the purchase_type of this BasicInfo.
+        r"""Gets the purchase_type of this BasicInfo.
 
         BCS服务部署类型，一键部署（onestep），普通部署（normal）
 
@@ -352,7 +352,7 @@ class BasicInfo:
 
     @purchase_type.setter
     def purchase_type(self, purchase_type):
-        """Sets the purchase_type of this BasicInfo.
+        r"""Sets the purchase_type of this BasicInfo.
 
         BCS服务部署类型，一键部署（onestep），普通部署（normal）
 
@@ -363,7 +363,7 @@ class BasicInfo:
 
     @property
     def sign_algorithm(self):
-        """Gets the sign_algorithm of this BasicInfo.
+        r"""Gets the sign_algorithm of this BasicInfo.
 
         BCS服务安全机制，分为ECDSA（ECDSA），国密算法（sm2）
 
@@ -374,7 +374,7 @@ class BasicInfo:
 
     @sign_algorithm.setter
     def sign_algorithm(self, sign_algorithm):
-        """Sets the sign_algorithm of this BasicInfo.
+        r"""Sets the sign_algorithm of this BasicInfo.
 
         BCS服务安全机制，分为ECDSA（ECDSA），国密算法（sm2）
 
@@ -385,7 +385,7 @@ class BasicInfo:
 
     @property
     def consensus(self):
-        """Gets the consensus of this BasicInfo.
+        r"""Gets the consensus of this BasicInfo.
 
         BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)，raft共识算法（etcdraft）
 
@@ -396,7 +396,7 @@ class BasicInfo:
 
     @consensus.setter
     def consensus(self, consensus):
-        """Sets the consensus of this BasicInfo.
+        r"""Sets the consensus of this BasicInfo.
 
         BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)，raft共识算法（etcdraft）
 
@@ -407,7 +407,7 @@ class BasicInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BasicInfo.
+        r"""Gets the charging_mode of this BasicInfo.
 
         BCS服务付费模式，分为按需（1）[包周期（0）](tag:onorder)
 
@@ -418,7 +418,7 @@ class BasicInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BasicInfo.
+        r"""Sets the charging_mode of this BasicInfo.
 
         BCS服务付费模式，分为按需（1）[包周期（0）](tag:onorder)
 
@@ -429,7 +429,7 @@ class BasicInfo:
 
     @property
     def version_type(self):
-        """Gets the version_type of this BasicInfo.
+        r"""Gets the version_type of this BasicInfo.
 
         BCS服务版本类型
 
@@ -440,7 +440,7 @@ class BasicInfo:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this BasicInfo.
+        r"""Sets the version_type of this BasicInfo.
 
         BCS服务版本类型
 
@@ -451,7 +451,7 @@ class BasicInfo:
 
     @property
     def database_type(self):
-        """Gets the database_type of this BasicInfo.
+        r"""Gets the database_type of this BasicInfo.
 
         BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
 
@@ -462,7 +462,7 @@ class BasicInfo:
 
     @database_type.setter
     def database_type(self, database_type):
-        """Sets the database_type of this BasicInfo.
+        r"""Sets the database_type of this BasicInfo.
 
         BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
 
@@ -473,7 +473,7 @@ class BasicInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BasicInfo.
+        r"""Gets the cluster_id of this BasicInfo.
 
         BCS服务所在集群ID
 
@@ -484,7 +484,7 @@ class BasicInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BasicInfo.
+        r"""Sets the cluster_id of this BasicInfo.
 
         BCS服务所在集群ID
 
@@ -495,7 +495,7 @@ class BasicInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this BasicInfo.
+        r"""Gets the cluster_name of this BasicInfo.
 
         BCS服务所在集群名称
 
@@ -506,7 +506,7 @@ class BasicInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this BasicInfo.
+        r"""Sets the cluster_name of this BasicInfo.
 
         BCS服务所在集群名称
 
@@ -517,7 +517,7 @@ class BasicInfo:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this BasicInfo.
+        r"""Gets the cluster_type of this BasicInfo.
 
         BCS服务的集群类型，分为CCE集群（CCE），IEF集群（ief）
 
@@ -528,7 +528,7 @@ class BasicInfo:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this BasicInfo.
+        r"""Sets the cluster_type of this BasicInfo.
 
         BCS服务的集群类型，分为CCE集群（CCE），IEF集群（ief）
 
@@ -539,7 +539,7 @@ class BasicInfo:
 
     @property
     def cluster_az(self):
-        """Gets the cluster_az of this BasicInfo.
+        r"""Gets the cluster_az of this BasicInfo.
 
         BCS多可用区标示，分为：多可用区（yes），非多可用区（no）
 
@@ -550,7 +550,7 @@ class BasicInfo:
 
     @cluster_az.setter
     def cluster_az(self, cluster_az):
-        """Sets the cluster_az of this BasicInfo.
+        r"""Sets the cluster_az of this BasicInfo.
 
         BCS多可用区标示，分为：多可用区（yes），非多可用区（no）
 
@@ -561,7 +561,7 @@ class BasicInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this BasicInfo.
+        r"""Gets the created_time of this BasicInfo.
 
         BCS服务创建时间
 
@@ -572,7 +572,7 @@ class BasicInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this BasicInfo.
+        r"""Sets the created_time of this BasicInfo.
 
         BCS服务创建时间
 
@@ -583,7 +583,7 @@ class BasicInfo:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this BasicInfo.
+        r"""Gets the deploy_type of this BasicInfo.
 
         BCS服务联盟链下生效，分为邀请方（create），被邀请方（invite）
 
@@ -594,7 +594,7 @@ class BasicInfo:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this BasicInfo.
+        r"""Sets the deploy_type of this BasicInfo.
 
         BCS服务联盟链下生效，分为邀请方（create），被邀请方（invite）
 
@@ -605,7 +605,7 @@ class BasicInfo:
 
     @property
     def order_fade_enabled(self):
-        """Gets the order_fade_enabled of this BasicInfo.
+        r"""Gets the order_fade_enabled of this BasicInfo.
 
         是否允许order老化
 
@@ -616,7 +616,7 @@ class BasicInfo:
 
     @order_fade_enabled.setter
     def order_fade_enabled(self, order_fade_enabled):
-        """Sets the order_fade_enabled of this BasicInfo.
+        r"""Sets the order_fade_enabled of this BasicInfo.
 
         是否允许order老化
 
@@ -627,7 +627,7 @@ class BasicInfo:
 
     @property
     def is_cross_region(self):
-        """Gets the is_cross_region of this BasicInfo.
+        r"""Gets the is_cross_region of this BasicInfo.
 
         BCS服务是否跨region
 
@@ -638,7 +638,7 @@ class BasicInfo:
 
     @is_cross_region.setter
     def is_cross_region(self, is_cross_region):
-        """Sets the is_cross_region of this BasicInfo.
+        r"""Sets the is_cross_region of this BasicInfo.
 
         BCS服务是否跨region
 
@@ -649,7 +649,7 @@ class BasicInfo:
 
     @property
     def is_support_rollback(self):
-        """Gets the is_support_rollback of this BasicInfo.
+        r"""Gets the is_support_rollback of this BasicInfo.
 
         BCS服务升级失败，是否支持回滚
 
@@ -660,7 +660,7 @@ class BasicInfo:
 
     @is_support_rollback.setter
     def is_support_rollback(self, is_support_rollback):
-        """Sets the is_support_rollback of this BasicInfo.
+        r"""Sets the is_support_rollback of this BasicInfo.
 
         BCS服务升级失败，是否支持回滚
 
@@ -671,7 +671,7 @@ class BasicInfo:
 
     @property
     def is_support_restful(self):
-        """Gets the is_support_restful of this BasicInfo.
+        r"""Gets the is_support_restful of this BasicInfo.
 
         BCS服务是否添加RESTful APIs支持，分为支持（true），不支持（false）
 
@@ -682,7 +682,7 @@ class BasicInfo:
 
     @is_support_restful.setter
     def is_support_restful(self, is_support_restful):
-        """Sets the is_support_restful of this BasicInfo.
+        r"""Sets the is_support_restful of this BasicInfo.
 
         BCS服务是否添加RESTful APIs支持，分为支持（true），不支持（false）
 
@@ -693,7 +693,7 @@ class BasicInfo:
 
     @property
     def is_support_tc3(self):
-        """Gets the is_support_tc3 of this BasicInfo.
+        r"""Gets the is_support_tc3 of this BasicInfo.
 
         BCS服务是否支持可信计算平台，分为支持（true），不支持（false）
 
@@ -704,7 +704,7 @@ class BasicInfo:
 
     @is_support_tc3.setter
     def is_support_tc3(self, is_support_tc3):
-        """Sets the is_support_tc3 of this BasicInfo.
+        r"""Sets the is_support_tc3 of this BasicInfo.
 
         BCS服务是否支持可信计算平台，分为支持（true），不支持（false）
 
@@ -715,7 +715,7 @@ class BasicInfo:
 
     @property
     def is_old_service(self):
-        """Gets the is_old_service of this BasicInfo.
+        r"""Gets the is_old_service of this BasicInfo.
 
         区分BCS是否新服务，分为老服务（true），新服务（false）
 
@@ -726,7 +726,7 @@ class BasicInfo:
 
     @is_old_service.setter
     def is_old_service(self, is_old_service):
-        """Sets the is_old_service of this BasicInfo.
+        r"""Sets the is_old_service of this BasicInfo.
 
         区分BCS是否新服务，分为老服务（true），新服务（false）
 
@@ -737,7 +737,7 @@ class BasicInfo:
 
     @property
     def old_service_version(self):
-        """Gets the old_service_version of this BasicInfo.
+        r"""Gets the old_service_version of this BasicInfo.
 
         BCS服务为老服务时，此字段为老服务版本号
 
@@ -748,7 +748,7 @@ class BasicInfo:
 
     @old_service_version.setter
     def old_service_version(self, old_service_version):
-        """Sets the old_service_version of this BasicInfo.
+        r"""Sets the old_service_version of this BasicInfo.
 
         BCS服务为老服务时，此字段为老服务版本号
 
@@ -759,7 +759,7 @@ class BasicInfo:
 
     @property
     def agent_portal_addrs(self):
-        """Gets the agent_portal_addrs of this BasicInfo.
+        r"""Gets the agent_portal_addrs of this BasicInfo.
 
         BCS服务用户数据面agent地址端口列表
 
@@ -770,7 +770,7 @@ class BasicInfo:
 
     @agent_portal_addrs.setter
     def agent_portal_addrs(self, agent_portal_addrs):
-        """Sets the agent_portal_addrs of this BasicInfo.
+        r"""Sets the agent_portal_addrs of this BasicInfo.
 
         BCS服务用户数据面agent地址端口列表
 
@@ -781,7 +781,7 @@ class BasicInfo:
 
     @property
     def status(self):
-        """Gets the status of this BasicInfo.
+        r"""Gets the status of this BasicInfo.
 
         BCS服务状态，分为正常（Normal），异常（Abnormal），弹性IP异常（EipAbnormal），已冻结（Freeze），休眠中（Hibernation），未知（其余值）
 
@@ -792,7 +792,7 @@ class BasicInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BasicInfo.
+        r"""Sets the status of this BasicInfo.
 
         BCS服务状态，分为正常（Normal），异常（Abnormal），弹性IP异常（EipAbnormal），已冻结（Freeze），休眠中（Hibernation），未知（其余值）
 
@@ -803,7 +803,7 @@ class BasicInfo:
 
     @property
     def process_status(self):
-        """Gets the process_status of this BasicInfo.
+        r"""Gets the process_status of this BasicInfo.
 
         BCS服务处理状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（IsScaling），删除中（IsDeleting），添加中（IsAdding）
 
@@ -814,7 +814,7 @@ class BasicInfo:
 
     @process_status.setter
     def process_status(self, process_status):
-        """Sets the process_status of this BasicInfo.
+        r"""Sets the process_status of this BasicInfo.
 
         BCS服务处理状态，分为创建中（IsCreating），升级中（IsUpgrading），扩缩容中（IsScaling），删除中（IsDeleting），添加中（IsAdding）
 
@@ -825,7 +825,7 @@ class BasicInfo:
 
     @property
     def order_status(self):
-        """Gets the order_status of this BasicInfo.
+        r"""Gets the order_status of this BasicInfo.
 
         BCS服务为包周期模式时，返回值为0（订单未成功）,1（订单异常）,2（订单正常）
 
@@ -836,7 +836,7 @@ class BasicInfo:
 
     @order_status.setter
     def order_status(self, order_status):
-        """Sets the order_status of this BasicInfo.
+        r"""Sets the order_status of this BasicInfo.
 
         BCS服务为包周期模式时，返回值为0（订单未成功）,1（订单异常）,2（订单正常）
 
@@ -847,7 +847,7 @@ class BasicInfo:
 
     @property
     def order_fade_cache(self):
-        """Gets the order_fade_cache of this BasicInfo.
+        r"""Gets the order_fade_cache of this BasicInfo.
 
         共识节点的老化阈值
 
@@ -858,7 +858,7 @@ class BasicInfo:
 
     @order_fade_cache.setter
     def order_fade_cache(self, order_fade_cache):
-        """Sets the order_fade_cache of this BasicInfo.
+        r"""Sets the order_fade_cache of this BasicInfo.
 
         共识节点的老化阈值
 
@@ -869,7 +869,7 @@ class BasicInfo:
 
     @property
     def deploy_status(self):
-        """Gets the deploy_status of this BasicInfo.
+        r"""Gets the deploy_status of this BasicInfo.
 
         BCS服务部署状态，分为进行中（0），成功（1），失败（2），结束（3）
 
@@ -880,7 +880,7 @@ class BasicInfo:
 
     @deploy_status.setter
     def deploy_status(self, deploy_status):
-        """Sets the deploy_status of this BasicInfo.
+        r"""Sets the deploy_status of this BasicInfo.
 
         BCS服务部署状态，分为进行中（0），成功（1），失败（2），结束（3）
 
@@ -891,7 +891,7 @@ class BasicInfo:
 
     @property
     def block_info(self):
-        """Gets the block_info of this BasicInfo.
+        r"""Gets the block_info of this BasicInfo.
 
         :return: The block_info of this BasicInfo.
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
@@ -900,7 +900,7 @@ class BasicInfo:
 
     @block_info.setter
     def block_info(self, block_info):
-        """Sets the block_info of this BasicInfo.
+        r"""Sets the block_info of this BasicInfo.
 
         :param block_info: The block_info of this BasicInfo.
         :type block_info: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
@@ -909,7 +909,7 @@ class BasicInfo:
 
     @property
     def cluster_platform_type(self):
-        """Gets the cluster_platform_type of this BasicInfo.
+        r"""Gets the cluster_platform_type of this BasicInfo.
 
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 
@@ -920,7 +920,7 @@ class BasicInfo:
 
     @cluster_platform_type.setter
     def cluster_platform_type(self, cluster_platform_type):
-        """Sets the cluster_platform_type of this BasicInfo.
+        r"""Sets the cluster_platform_type of this BasicInfo.
 
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 

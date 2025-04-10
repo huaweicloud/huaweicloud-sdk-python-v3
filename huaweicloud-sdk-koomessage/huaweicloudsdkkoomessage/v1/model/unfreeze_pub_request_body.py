@@ -25,7 +25,7 @@ class UnfreezePubRequestBody:
     }
 
     def __init__(self, change_reason=None):
-        """UnfreezePubRequestBody
+        r"""UnfreezePubRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnfreezePubRequestBody:
 
     @property
     def change_reason(self):
-        """Gets the change_reason of this UnfreezePubRequestBody.
+        r"""Gets the change_reason of this UnfreezePubRequestBody.
 
         解冻原因。
 
@@ -53,7 +53,7 @@ class UnfreezePubRequestBody:
 
     @change_reason.setter
     def change_reason(self, change_reason):
-        """Sets the change_reason of this UnfreezePubRequestBody.
+        r"""Sets the change_reason of this UnfreezePubRequestBody.
 
         解冻原因。
 

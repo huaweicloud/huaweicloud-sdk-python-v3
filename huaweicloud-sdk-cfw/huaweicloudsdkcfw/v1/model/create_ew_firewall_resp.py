@@ -29,7 +29,7 @@ class CreateEWFirewallResp:
     }
 
     def __init__(self, id=None, er=None, inspertion_vpc=None):
-        """CreateEWFirewallResp
+        r"""CreateEWFirewallResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateEWFirewallResp:
 
     @property
     def id(self):
-        """Gets the id of this CreateEWFirewallResp.
+        r"""Gets the id of this CreateEWFirewallResp.
 
         东西向防护id，对应object_id字段
 
@@ -68,7 +68,7 @@ class CreateEWFirewallResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEWFirewallResp.
+        r"""Sets the id of this CreateEWFirewallResp.
 
         东西向防护id，对应object_id字段
 
@@ -79,7 +79,7 @@ class CreateEWFirewallResp:
 
     @property
     def er(self):
-        """Gets the er of this CreateEWFirewallResp.
+        r"""Gets the er of this CreateEWFirewallResp.
 
         :return: The er of this CreateEWFirewallResp.
         :rtype: :class:`huaweicloudsdkcfw.v1.Er`
@@ -88,7 +88,7 @@ class CreateEWFirewallResp:
 
     @er.setter
     def er(self, er):
-        """Sets the er of this CreateEWFirewallResp.
+        r"""Sets the er of this CreateEWFirewallResp.
 
         :param er: The er of this CreateEWFirewallResp.
         :type er: :class:`huaweicloudsdkcfw.v1.Er`
@@ -97,7 +97,7 @@ class CreateEWFirewallResp:
 
     @property
     def inspertion_vpc(self):
-        """Gets the inspertion_vpc of this CreateEWFirewallResp.
+        r"""Gets the inspertion_vpc of this CreateEWFirewallResp.
 
         :return: The inspertion_vpc of this CreateEWFirewallResp.
         :rtype: :class:`huaweicloudsdkcfw.v1.CreateEWFirewallInspectVpcResp`
@@ -106,7 +106,7 @@ class CreateEWFirewallResp:
 
     @inspertion_vpc.setter
     def inspertion_vpc(self, inspertion_vpc):
-        """Sets the inspertion_vpc of this CreateEWFirewallResp.
+        r"""Sets the inspertion_vpc of this CreateEWFirewallResp.
 
         :param inspertion_vpc: The inspertion_vpc of this CreateEWFirewallResp.
         :type inspertion_vpc: :class:`huaweicloudsdkcfw.v1.CreateEWFirewallInspectVpcResp`

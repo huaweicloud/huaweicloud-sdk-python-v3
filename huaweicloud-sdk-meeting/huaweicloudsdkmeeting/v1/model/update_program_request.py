@@ -31,7 +31,7 @@ class UpdateProgramRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, id=None, body=None):
-        """UpdateProgramRequest
+        r"""UpdateProgramRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateProgramRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateProgramRequest.
+        r"""Gets the x_request_id of this UpdateProgramRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class UpdateProgramRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateProgramRequest.
+        r"""Sets the x_request_id of this UpdateProgramRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class UpdateProgramRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this UpdateProgramRequest.
+        r"""Gets the accept_language of this UpdateProgramRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class UpdateProgramRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this UpdateProgramRequest.
+        r"""Sets the accept_language of this UpdateProgramRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class UpdateProgramRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateProgramRequest.
+        r"""Gets the id of this UpdateProgramRequest.
 
         节目ID。
 
@@ -118,7 +118,7 @@ class UpdateProgramRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateProgramRequest.
+        r"""Sets the id of this UpdateProgramRequest.
 
         节目ID。
 
@@ -129,7 +129,7 @@ class UpdateProgramRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProgramRequest.
+        r"""Gets the body of this UpdateProgramRequest.
 
         :return: The body of this UpdateProgramRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequestDTO`
@@ -138,7 +138,7 @@ class UpdateProgramRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProgramRequest.
+        r"""Sets the body of this UpdateProgramRequest.
 
         :param body: The body of this UpdateProgramRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequestDTO`

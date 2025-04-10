@@ -30,7 +30,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None, request_id=None, page_info=None):
-        """ListEffectiveRoutesResponse
+        r"""ListEffectiveRoutesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
 
     @property
     def routes(self):
-        """Gets the routes of this ListEffectiveRoutesResponse.
+        r"""Gets the routes of this ListEffectiveRoutesResponse.
 
         路由列表
 
@@ -69,7 +69,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this ListEffectiveRoutesResponse.
+        r"""Sets the routes of this ListEffectiveRoutesResponse.
 
         路由列表
 
@@ -80,7 +80,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListEffectiveRoutesResponse.
+        r"""Gets the request_id of this ListEffectiveRoutesResponse.
 
         请求ID
 
@@ -91,7 +91,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListEffectiveRoutesResponse.
+        r"""Sets the request_id of this ListEffectiveRoutesResponse.
 
         请求ID
 
@@ -102,7 +102,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEffectiveRoutesResponse.
+        r"""Gets the page_info of this ListEffectiveRoutesResponse.
 
         :return: The page_info of this ListEffectiveRoutesResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListEffectiveRoutesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEffectiveRoutesResponse.
+        r"""Sets the page_info of this ListEffectiveRoutesResponse.
 
         :param page_info: The page_info of this ListEffectiveRoutesResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`

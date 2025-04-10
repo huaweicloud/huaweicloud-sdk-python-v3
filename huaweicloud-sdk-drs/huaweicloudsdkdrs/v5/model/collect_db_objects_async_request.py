@@ -37,7 +37,7 @@ class CollectDbObjectsAsyncRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, offset=None, limit=None, type=None, is_refresh=None, db_names=None):
-        """CollectDbObjectsAsyncRequest
+        r"""CollectDbObjectsAsyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CollectDbObjectsAsyncRequest.
+        r"""Gets the job_id of this CollectDbObjectsAsyncRequest.
 
         任务ID。
 
@@ -94,7 +94,7 @@ class CollectDbObjectsAsyncRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CollectDbObjectsAsyncRequest.
+        r"""Sets the job_id of this CollectDbObjectsAsyncRequest.
 
         任务ID。
 
@@ -105,7 +105,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CollectDbObjectsAsyncRequest.
+        r"""Gets the x_language of this CollectDbObjectsAsyncRequest.
 
         请求语言类型。
 
@@ -116,7 +116,7 @@ class CollectDbObjectsAsyncRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CollectDbObjectsAsyncRequest.
+        r"""Sets the x_language of this CollectDbObjectsAsyncRequest.
 
         请求语言类型。
 
@@ -127,7 +127,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this CollectDbObjectsAsyncRequest.
+        r"""Gets the offset of this CollectDbObjectsAsyncRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -138,7 +138,7 @@ class CollectDbObjectsAsyncRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CollectDbObjectsAsyncRequest.
+        r"""Sets the offset of this CollectDbObjectsAsyncRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -149,7 +149,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CollectDbObjectsAsyncRequest.
+        r"""Gets the limit of this CollectDbObjectsAsyncRequest.
 
         查询返回记录的数量限制。
 
@@ -160,7 +160,7 @@ class CollectDbObjectsAsyncRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CollectDbObjectsAsyncRequest.
+        r"""Sets the limit of this CollectDbObjectsAsyncRequest.
 
         查询返回记录的数量限制。
 
@@ -171,7 +171,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def type(self):
-        """Gets the type of this CollectDbObjectsAsyncRequest.
+        r"""Gets the type of this CollectDbObjectsAsyncRequest.
 
         查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
@@ -182,7 +182,7 @@ class CollectDbObjectsAsyncRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CollectDbObjectsAsyncRequest.
+        r"""Sets the type of this CollectDbObjectsAsyncRequest.
 
         查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
@@ -193,7 +193,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def is_refresh(self):
-        """Gets the is_refresh of this CollectDbObjectsAsyncRequest.
+        r"""Gets the is_refresh of this CollectDbObjectsAsyncRequest.
 
         是否强制刷新。 取值： - true：是，表示从源库重新查询。    - false：否，表示从已缓存中数据查询。
 
@@ -204,7 +204,7 @@ class CollectDbObjectsAsyncRequest:
 
     @is_refresh.setter
     def is_refresh(self, is_refresh):
-        """Sets the is_refresh of this CollectDbObjectsAsyncRequest.
+        r"""Sets the is_refresh of this CollectDbObjectsAsyncRequest.
 
         是否强制刷新。 取值： - true：是，表示从源库重新查询。    - false：否，表示从已缓存中数据查询。
 
@@ -215,7 +215,7 @@ class CollectDbObjectsAsyncRequest:
 
     @property
     def db_names(self):
-        """Gets the db_names of this CollectDbObjectsAsyncRequest.
+        r"""Gets the db_names of this CollectDbObjectsAsyncRequest.
 
         查询指定库的信息。
 
@@ -226,7 +226,7 @@ class CollectDbObjectsAsyncRequest:
 
     @db_names.setter
     def db_names(self, db_names):
-        """Sets the db_names of this CollectDbObjectsAsyncRequest.
+        r"""Sets the db_names of this CollectDbObjectsAsyncRequest.
 
         查询指定库的信息。
 

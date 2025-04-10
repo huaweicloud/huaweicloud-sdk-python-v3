@@ -31,7 +31,7 @@ class BillingModeEnum:
     }
 
     def __init__(self):
-        """BillingModeEnum
+        r"""BillingModeEnum
 
         The model defined in huaweicloud sdk
 

@@ -30,7 +30,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
     }
 
     def __init__(self, room_id=None, data=None, x_request_id=None):
-        """ListRtcClientQosDetailsResponse
+        r"""ListRtcClientQosDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcClientQosDetailsResponse.
+        r"""Gets the room_id of this ListRtcClientQosDetailsResponse.
 
         房间ID
 
@@ -69,7 +69,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcClientQosDetailsResponse.
+        r"""Sets the room_id of this ListRtcClientQosDetailsResponse.
 
         房间ID
 
@@ -80,7 +80,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListRtcClientQosDetailsResponse.
+        r"""Gets the data of this ListRtcClientQosDetailsResponse.
 
         QoS质量数据
 
@@ -91,7 +91,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListRtcClientQosDetailsResponse.
+        r"""Sets the data of this ListRtcClientQosDetailsResponse.
 
         QoS质量数据
 
@@ -102,7 +102,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcClientQosDetailsResponse.
+        r"""Gets the x_request_id of this ListRtcClientQosDetailsResponse.
 
         :return: The x_request_id of this ListRtcClientQosDetailsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListRtcClientQosDetailsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcClientQosDetailsResponse.
+        r"""Sets the x_request_id of this ListRtcClientQosDetailsResponse.
 
         :param x_request_id: The x_request_id of this ListRtcClientQosDetailsResponse.
         :type x_request_id: str

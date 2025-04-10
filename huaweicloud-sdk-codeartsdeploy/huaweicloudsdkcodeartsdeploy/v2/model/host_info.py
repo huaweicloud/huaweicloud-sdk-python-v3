@@ -63,7 +63,7 @@ class HostInfo:
     }
 
     def __init__(self, uuid=None, ip=None, os=None, port=None, authorization=None, permission=None, host_name=None, as_proxy=None, group_id=None, proxy_host_id=None, owner_id=None, owner_name=None, proxy_host=None, connection_status=None, create_time=None, lastest_connection_time=None, connection_result=None, nick_name=None, import_status=None, env_count=None):
-        """HostInfo
+        r"""HostInfo
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class HostInfo:
 
     @property
     def uuid(self):
-        """Gets the uuid of this HostInfo.
+        r"""Gets the uuid of this HostInfo.
 
         主机id
 
@@ -187,7 +187,7 @@ class HostInfo:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this HostInfo.
+        r"""Sets the uuid of this HostInfo.
 
         主机id
 
@@ -198,7 +198,7 @@ class HostInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this HostInfo.
+        r"""Gets the ip of this HostInfo.
 
         主机IP
 
@@ -209,7 +209,7 @@ class HostInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this HostInfo.
+        r"""Sets the ip of this HostInfo.
 
         主机IP
 
@@ -220,7 +220,7 @@ class HostInfo:
 
     @property
     def os(self):
-        """Gets the os of this HostInfo.
+        r"""Gets the os of this HostInfo.
 
         主机操作系统
 
@@ -231,7 +231,7 @@ class HostInfo:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this HostInfo.
+        r"""Sets the os of this HostInfo.
 
         主机操作系统
 
@@ -242,7 +242,7 @@ class HostInfo:
 
     @property
     def port(self):
-        """Gets the port of this HostInfo.
+        r"""Gets the port of this HostInfo.
 
         端口
 
@@ -253,7 +253,7 @@ class HostInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HostInfo.
+        r"""Sets the port of this HostInfo.
 
         端口
 
@@ -264,7 +264,7 @@ class HostInfo:
 
     @property
     def authorization(self):
-        """Gets the authorization of this HostInfo.
+        r"""Gets the authorization of this HostInfo.
 
         :return: The authorization of this HostInfo.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.HostAuthorizationBody`
@@ -273,7 +273,7 @@ class HostInfo:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this HostInfo.
+        r"""Sets the authorization of this HostInfo.
 
         :param authorization: The authorization of this HostInfo.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.HostAuthorizationBody`
@@ -282,7 +282,7 @@ class HostInfo:
 
     @property
     def permission(self):
-        """Gets the permission of this HostInfo.
+        r"""Gets the permission of this HostInfo.
 
         :return: The permission of this HostInfo.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
@@ -291,7 +291,7 @@ class HostInfo:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this HostInfo.
+        r"""Sets the permission of this HostInfo.
 
         :param permission: The permission of this HostInfo.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetailNew`
@@ -300,7 +300,7 @@ class HostInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this HostInfo.
+        r"""Gets the host_name of this HostInfo.
 
         主机名称
 
@@ -311,7 +311,7 @@ class HostInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this HostInfo.
+        r"""Sets the host_name of this HostInfo.
 
         主机名称
 
@@ -322,7 +322,7 @@ class HostInfo:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this HostInfo.
+        r"""Gets the as_proxy of this HostInfo.
 
         是否为代理机
 
@@ -333,7 +333,7 @@ class HostInfo:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this HostInfo.
+        r"""Sets the as_proxy of this HostInfo.
 
         是否为代理机
 
@@ -344,7 +344,7 @@ class HostInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this HostInfo.
+        r"""Gets the group_id of this HostInfo.
 
         主机集群id
 
@@ -355,7 +355,7 @@ class HostInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this HostInfo.
+        r"""Sets the group_id of this HostInfo.
 
         主机集群id
 
@@ -366,7 +366,7 @@ class HostInfo:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this HostInfo.
+        r"""Gets the proxy_host_id of this HostInfo.
 
         代理机id
 
@@ -377,7 +377,7 @@ class HostInfo:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this HostInfo.
+        r"""Sets the proxy_host_id of this HostInfo.
 
         代理机id
 
@@ -388,7 +388,7 @@ class HostInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this HostInfo.
+        r"""Gets the owner_id of this HostInfo.
 
         主机所属人id
 
@@ -399,7 +399,7 @@ class HostInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this HostInfo.
+        r"""Sets the owner_id of this HostInfo.
 
         主机所属人id
 
@@ -410,7 +410,7 @@ class HostInfo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this HostInfo.
+        r"""Gets the owner_name of this HostInfo.
 
         主机所属人名称
 
@@ -421,7 +421,7 @@ class HostInfo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this HostInfo.
+        r"""Sets the owner_name of this HostInfo.
 
         主机所属人名称
 
@@ -432,7 +432,7 @@ class HostInfo:
 
     @property
     def proxy_host(self):
-        """Gets the proxy_host of this HostInfo.
+        r"""Gets the proxy_host of this HostInfo.
 
         :return: The proxy_host of this HostInfo.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.HostInfo`
@@ -441,7 +441,7 @@ class HostInfo:
 
     @proxy_host.setter
     def proxy_host(self, proxy_host):
-        """Sets the proxy_host of this HostInfo.
+        r"""Sets the proxy_host of this HostInfo.
 
         :param proxy_host: The proxy_host of this HostInfo.
         :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.HostInfo`
@@ -450,7 +450,7 @@ class HostInfo:
 
     @property
     def connection_status(self):
-        """Gets the connection_status of this HostInfo.
+        r"""Gets the connection_status of this HostInfo.
 
         连通性状态
 
@@ -461,7 +461,7 @@ class HostInfo:
 
     @connection_status.setter
     def connection_status(self, connection_status):
-        """Sets the connection_status of this HostInfo.
+        r"""Sets the connection_status of this HostInfo.
 
         连通性状态
 
@@ -472,7 +472,7 @@ class HostInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this HostInfo.
+        r"""Gets the create_time of this HostInfo.
 
         创建时间
 
@@ -483,7 +483,7 @@ class HostInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this HostInfo.
+        r"""Sets the create_time of this HostInfo.
 
         创建时间
 
@@ -494,7 +494,7 @@ class HostInfo:
 
     @property
     def lastest_connection_time(self):
-        """Gets the lastest_connection_time of this HostInfo.
+        r"""Gets the lastest_connection_time of this HostInfo.
 
         上次连通时间
 
@@ -505,7 +505,7 @@ class HostInfo:
 
     @lastest_connection_time.setter
     def lastest_connection_time(self, lastest_connection_time):
-        """Sets the lastest_connection_time of this HostInfo.
+        r"""Sets the lastest_connection_time of this HostInfo.
 
         上次连通时间
 
@@ -516,7 +516,7 @@ class HostInfo:
 
     @property
     def connection_result(self):
-        """Gets the connection_result of this HostInfo.
+        r"""Gets the connection_result of this HostInfo.
 
         连通性验证结果
 
@@ -527,7 +527,7 @@ class HostInfo:
 
     @connection_result.setter
     def connection_result(self, connection_result):
-        """Sets the connection_result of this HostInfo.
+        r"""Sets the connection_result of this HostInfo.
 
         连通性验证结果
 
@@ -538,7 +538,7 @@ class HostInfo:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this HostInfo.
+        r"""Gets the nick_name of this HostInfo.
 
         主机所属人昵称
 
@@ -549,7 +549,7 @@ class HostInfo:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this HostInfo.
+        r"""Sets the nick_name of this HostInfo.
 
         主机所属人昵称
 
@@ -560,7 +560,7 @@ class HostInfo:
 
     @property
     def import_status(self):
-        """Gets the import_status of this HostInfo.
+        r"""Gets the import_status of this HostInfo.
 
         导入状态
 
@@ -571,7 +571,7 @@ class HostInfo:
 
     @import_status.setter
     def import_status(self, import_status):
-        """Sets the import_status of this HostInfo.
+        r"""Sets the import_status of this HostInfo.
 
         导入状态
 
@@ -582,7 +582,7 @@ class HostInfo:
 
     @property
     def env_count(self):
-        """Gets the env_count of this HostInfo.
+        r"""Gets the env_count of this HostInfo.
 
         关联环境数量
 
@@ -593,7 +593,7 @@ class HostInfo:
 
     @env_count.setter
     def env_count(self, env_count):
-        """Sets the env_count of this HostInfo.
+        r"""Sets the env_count of this HostInfo.
 
         关联环境数量
 

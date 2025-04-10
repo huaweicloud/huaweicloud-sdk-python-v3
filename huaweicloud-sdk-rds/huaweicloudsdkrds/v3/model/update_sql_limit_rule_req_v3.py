@@ -31,7 +31,7 @@ class UpdateSqlLimitRuleReqV3:
     }
 
     def __init__(self, db_name=None, id=None, max_concurrency=None, max_waiting=None):
-        """UpdateSqlLimitRuleReqV3
+        r"""UpdateSqlLimitRuleReqV3
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @property
     def db_name(self):
-        """Gets the db_name of this UpdateSqlLimitRuleReqV3.
+        r"""Gets the db_name of this UpdateSqlLimitRuleReqV3.
 
         数据库名称。
 
@@ -71,7 +71,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this UpdateSqlLimitRuleReqV3.
+        r"""Sets the db_name of this UpdateSqlLimitRuleReqV3.
 
         数据库名称。
 
@@ -82,7 +82,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSqlLimitRuleReqV3.
+        r"""Gets the id of this UpdateSqlLimitRuleReqV3.
 
         SQL限流ID。
 
@@ -93,7 +93,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSqlLimitRuleReqV3.
+        r"""Sets the id of this UpdateSqlLimitRuleReqV3.
 
         SQL限流ID。
 
@@ -104,7 +104,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this UpdateSqlLimitRuleReqV3.
+        r"""Gets the max_concurrency of this UpdateSqlLimitRuleReqV3.
 
         同时执行的sql数量，小于等于0表示不限制，默认为0，取值范围（-1~50000）。
 
@@ -115,7 +115,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this UpdateSqlLimitRuleReqV3.
+        r"""Sets the max_concurrency of this UpdateSqlLimitRuleReqV3.
 
         同时执行的sql数量，小于等于0表示不限制，默认为0，取值范围（-1~50000）。
 
@@ -126,7 +126,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @property
     def max_waiting(self):
-        """Gets the max_waiting of this UpdateSqlLimitRuleReqV3.
+        r"""Gets the max_waiting of this UpdateSqlLimitRuleReqV3.
 
         最大等待时间，单位为秒。
 
@@ -137,7 +137,7 @@ class UpdateSqlLimitRuleReqV3:
 
     @max_waiting.setter
     def max_waiting(self, max_waiting):
-        """Sets the max_waiting of this UpdateSqlLimitRuleReqV3.
+        r"""Sets the max_waiting of this UpdateSqlLimitRuleReqV3.
 
         最大等待时间，单位为秒。
 

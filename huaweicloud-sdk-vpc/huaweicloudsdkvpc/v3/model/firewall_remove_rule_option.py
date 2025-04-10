@@ -27,7 +27,7 @@ class FirewallRemoveRuleOption:
     }
 
     def __init__(self, ingress_rules=None, egress_rules=None):
-        """FirewallRemoveRuleOption
+        r"""FirewallRemoveRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FirewallRemoveRuleOption:
 
     @property
     def ingress_rules(self):
-        """Gets the ingress_rules of this FirewallRemoveRuleOption.
+        r"""Gets the ingress_rules of this FirewallRemoveRuleOption.
 
         功能说明：ACL删除入方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个
 
@@ -61,7 +61,7 @@ class FirewallRemoveRuleOption:
 
     @ingress_rules.setter
     def ingress_rules(self, ingress_rules):
-        """Sets the ingress_rules of this FirewallRemoveRuleOption.
+        r"""Sets the ingress_rules of this FirewallRemoveRuleOption.
 
         功能说明：ACL删除入方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个
 
@@ -72,7 +72,7 @@ class FirewallRemoveRuleOption:
 
     @property
     def egress_rules(self):
-        """Gets the egress_rules of this FirewallRemoveRuleOption.
+        r"""Gets the egress_rules of this FirewallRemoveRuleOption.
 
         功能说明：ACL删除出方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个
 
@@ -83,7 +83,7 @@ class FirewallRemoveRuleOption:
 
     @egress_rules.setter
     def egress_rules(self, egress_rules):
-        """Sets the egress_rules of this FirewallRemoveRuleOption.
+        r"""Sets the egress_rules of this FirewallRemoveRuleOption.
 
         功能说明：ACL删除出方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个
 

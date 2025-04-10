@@ -29,7 +29,7 @@ class AccessPassword:
     }
 
     def __init__(self, name=None, user=None, password=None):
-        """AccessPassword
+        r"""AccessPassword
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AccessPassword:
 
     @property
     def name(self):
-        """Gets the name of this AccessPassword.
+        r"""Gets the name of this AccessPassword.
 
         授权名称。
 
@@ -65,7 +65,7 @@ class AccessPassword:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccessPassword.
+        r"""Sets the name of this AccessPassword.
 
         授权名称。
 
@@ -76,7 +76,7 @@ class AccessPassword:
 
     @property
     def user(self):
-        """Gets the user of this AccessPassword.
+        r"""Gets the user of this AccessPassword.
 
         仓库用户名。
 
@@ -87,7 +87,7 @@ class AccessPassword:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this AccessPassword.
+        r"""Sets the user of this AccessPassword.
 
         仓库用户名。
 
@@ -98,7 +98,7 @@ class AccessPassword:
 
     @property
     def password(self):
-        """Gets the password of this AccessPassword.
+        r"""Gets the password of this AccessPassword.
 
         仓库密码。
 
@@ -109,7 +109,7 @@ class AccessPassword:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this AccessPassword.
+        r"""Sets the password of this AccessPassword.
 
         仓库密码。
 

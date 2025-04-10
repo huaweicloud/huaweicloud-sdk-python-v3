@@ -29,7 +29,7 @@ class AppQuotaAppBinding:
     }
 
     def __init__(self, app_quota_id=None, app_id=None, bound_time=None):
-        """AppQuotaAppBinding
+        r"""AppQuotaAppBinding
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AppQuotaAppBinding:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this AppQuotaAppBinding.
+        r"""Gets the app_quota_id of this AppQuotaAppBinding.
 
         客户端配额编号
 
@@ -68,7 +68,7 @@ class AppQuotaAppBinding:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this AppQuotaAppBinding.
+        r"""Sets the app_quota_id of this AppQuotaAppBinding.
 
         客户端配额编号
 
@@ -79,7 +79,7 @@ class AppQuotaAppBinding:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppQuotaAppBinding.
+        r"""Gets the app_id of this AppQuotaAppBinding.
 
         客户端应用编号
 
@@ -90,7 +90,7 @@ class AppQuotaAppBinding:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppQuotaAppBinding.
+        r"""Sets the app_id of this AppQuotaAppBinding.
 
         客户端应用编号
 
@@ -101,7 +101,7 @@ class AppQuotaAppBinding:
 
     @property
     def bound_time(self):
-        """Gets the bound_time of this AppQuotaAppBinding.
+        r"""Gets the bound_time of this AppQuotaAppBinding.
 
         绑定时间
 
@@ -112,7 +112,7 @@ class AppQuotaAppBinding:
 
     @bound_time.setter
     def bound_time(self, bound_time):
-        """Sets the bound_time of this AppQuotaAppBinding.
+        r"""Sets the bound_time of this AppQuotaAppBinding.
 
         绑定时间
 

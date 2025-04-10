@@ -45,7 +45,7 @@ class QueryOrgVmrResultDTO:
     }
 
     def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_name=None, vmr_pkg_parties=None, max_audience_parties=None, member=None, device=None, status=None, expire_date=None, commercial_max_audience_parties=None):
-        """QueryOrgVmrResultDTO
+        r"""QueryOrgVmrResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryOrgVmrResultDTO.
+        r"""Gets the id of this QueryOrgVmrResultDTO.
 
         云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
@@ -124,7 +124,7 @@ class QueryOrgVmrResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryOrgVmrResultDTO.
+        r"""Sets the id of this QueryOrgVmrResultDTO.
 
         云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
@@ -135,7 +135,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this QueryOrgVmrResultDTO.
+        r"""Gets the vmr_id of this QueryOrgVmrResultDTO.
 
         云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
 
@@ -146,7 +146,7 @@ class QueryOrgVmrResultDTO:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this QueryOrgVmrResultDTO.
+        r"""Sets the vmr_id of this QueryOrgVmrResultDTO.
 
         云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
 
@@ -157,7 +157,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def vmr_name(self):
-        """Gets the vmr_name of this QueryOrgVmrResultDTO.
+        r"""Gets the vmr_name of this QueryOrgVmrResultDTO.
 
         云会议室名称。
 
@@ -168,7 +168,7 @@ class QueryOrgVmrResultDTO:
 
     @vmr_name.setter
     def vmr_name(self, vmr_name):
-        """Sets the vmr_name of this QueryOrgVmrResultDTO.
+        r"""Sets the vmr_name of this QueryOrgVmrResultDTO.
 
         云会议室名称。
 
@@ -179,7 +179,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def vmr_pkg_name(self):
-        """Gets the vmr_pkg_name of this QueryOrgVmrResultDTO.
+        r"""Gets the vmr_pkg_name of this QueryOrgVmrResultDTO.
 
         云会议室套餐名称。
 
@@ -190,7 +190,7 @@ class QueryOrgVmrResultDTO:
 
     @vmr_pkg_name.setter
     def vmr_pkg_name(self, vmr_pkg_name):
-        """Sets the vmr_pkg_name of this QueryOrgVmrResultDTO.
+        r"""Sets the vmr_pkg_name of this QueryOrgVmrResultDTO.
 
         云会议室套餐名称。
 
@@ -201,7 +201,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def vmr_pkg_parties(self):
-        """Gets the vmr_pkg_parties of this QueryOrgVmrResultDTO.
+        r"""Gets the vmr_pkg_parties of this QueryOrgVmrResultDTO.
 
         云会议室套餐会议并发方数。
 
@@ -212,7 +212,7 @@ class QueryOrgVmrResultDTO:
 
     @vmr_pkg_parties.setter
     def vmr_pkg_parties(self, vmr_pkg_parties):
-        """Sets the vmr_pkg_parties of this QueryOrgVmrResultDTO.
+        r"""Sets the vmr_pkg_parties of this QueryOrgVmrResultDTO.
 
         云会议室套餐会议并发方数。
 
@@ -223,7 +223,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def max_audience_parties(self):
-        """Gets the max_audience_parties of this QueryOrgVmrResultDTO.
+        r"""Gets the max_audience_parties of this QueryOrgVmrResultDTO.
 
         最大观众与会方数（仅网络研讨会有效）。
 
@@ -234,7 +234,7 @@ class QueryOrgVmrResultDTO:
 
     @max_audience_parties.setter
     def max_audience_parties(self, max_audience_parties):
-        """Sets the max_audience_parties of this QueryOrgVmrResultDTO.
+        r"""Sets the max_audience_parties of this QueryOrgVmrResultDTO.
 
         最大观众与会方数（仅网络研讨会有效）。
 
@@ -245,7 +245,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def member(self):
-        """Gets the member of this QueryOrgVmrResultDTO.
+        r"""Gets the member of this QueryOrgVmrResultDTO.
 
         :return: The member of this QueryOrgVmrResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
@@ -254,7 +254,7 @@ class QueryOrgVmrResultDTO:
 
     @member.setter
     def member(self, member):
-        """Sets the member of this QueryOrgVmrResultDTO.
+        r"""Sets the member of this QueryOrgVmrResultDTO.
 
         :param member: The member of this QueryOrgVmrResultDTO.
         :type member: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
@@ -263,7 +263,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def device(self):
-        """Gets the device of this QueryOrgVmrResultDTO.
+        r"""Gets the device of this QueryOrgVmrResultDTO.
 
         :return: The device of this QueryOrgVmrResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
@@ -272,7 +272,7 @@ class QueryOrgVmrResultDTO:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this QueryOrgVmrResultDTO.
+        r"""Sets the device of this QueryOrgVmrResultDTO.
 
         :param device: The device of this QueryOrgVmrResultDTO.
         :type device: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
@@ -281,7 +281,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def status(self):
-        """Gets the status of this QueryOrgVmrResultDTO.
+        r"""Gets the status of this QueryOrgVmrResultDTO.
 
         云会议室状态。 * 0：正常 * 1：冻结 * 2：未分配 
 
@@ -292,7 +292,7 @@ class QueryOrgVmrResultDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryOrgVmrResultDTO.
+        r"""Sets the status of this QueryOrgVmrResultDTO.
 
         云会议室状态。 * 0：正常 * 1：冻结 * 2：未分配 
 
@@ -303,7 +303,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this QueryOrgVmrResultDTO.
+        r"""Gets the expire_date of this QueryOrgVmrResultDTO.
 
         到期时间的时间戳，单位毫秒。
 
@@ -314,7 +314,7 @@ class QueryOrgVmrResultDTO:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this QueryOrgVmrResultDTO.
+        r"""Sets the expire_date of this QueryOrgVmrResultDTO.
 
         到期时间的时间戳，单位毫秒。
 
@@ -325,7 +325,7 @@ class QueryOrgVmrResultDTO:
 
     @property
     def commercial_max_audience_parties(self):
-        """Gets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
+        r"""Gets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
 
         按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）。
 
@@ -336,7 +336,7 @@ class QueryOrgVmrResultDTO:
 
     @commercial_max_audience_parties.setter
     def commercial_max_audience_parties(self, commercial_max_audience_parties):
-        """Sets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
+        r"""Sets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
 
         按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）。
 

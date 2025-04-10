@@ -33,7 +33,7 @@ class ReqDataByIdCardImage:
     }
 
     def __init__(self, idcard_image1=None, idcard_image2=None, face_image=None, detail=None, crop=None):
-        """ReqDataByIdCardImage
+        r"""ReqDataByIdCardImage
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ReqDataByIdCardImage:
 
     @property
     def idcard_image1(self):
-        """Gets the idcard_image1 of this ReqDataByIdCardImage.
+        r"""Gets the idcard_image1 of this ReqDataByIdCardImage.
 
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -80,7 +80,7 @@ class ReqDataByIdCardImage:
 
     @idcard_image1.setter
     def idcard_image1(self, idcard_image1):
-        """Sets the idcard_image1 of this ReqDataByIdCardImage.
+        r"""Sets the idcard_image1 of this ReqDataByIdCardImage.
 
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -91,7 +91,7 @@ class ReqDataByIdCardImage:
 
     @property
     def idcard_image2(self):
-        """Gets the idcard_image2 of this ReqDataByIdCardImage.
+        r"""Gets the idcard_image2 of this ReqDataByIdCardImage.
 
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -102,7 +102,7 @@ class ReqDataByIdCardImage:
 
     @idcard_image2.setter
     def idcard_image2(self, idcard_image2):
-        """Sets the idcard_image2 of this ReqDataByIdCardImage.
+        r"""Sets the idcard_image2 of this ReqDataByIdCardImage.
 
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -113,7 +113,7 @@ class ReqDataByIdCardImage:
 
     @property
     def face_image(self):
-        """Gets the face_image of this ReqDataByIdCardImage.
+        r"""Gets the face_image of this ReqDataByIdCardImage.
 
         现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -124,7 +124,7 @@ class ReqDataByIdCardImage:
 
     @face_image.setter
     def face_image(self, face_image):
-        """Sets the face_image of this ReqDataByIdCardImage.
+        r"""Sets the face_image of this ReqDataByIdCardImage.
 
         现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -135,7 +135,7 @@ class ReqDataByIdCardImage:
 
     @property
     def detail(self):
-        """Gets the detail of this ReqDataByIdCardImage.
+        r"""Gets the detail of this ReqDataByIdCardImage.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 
@@ -146,7 +146,7 @@ class ReqDataByIdCardImage:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ReqDataByIdCardImage.
+        r"""Sets the detail of this ReqDataByIdCardImage.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 
@@ -157,7 +157,7 @@ class ReqDataByIdCardImage:
 
     @property
     def crop(self):
-        """Gets the crop of this ReqDataByIdCardImage.
+        r"""Gets the crop of this ReqDataByIdCardImage.
 
         是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
 
@@ -168,7 +168,7 @@ class ReqDataByIdCardImage:
 
     @crop.setter
     def crop(self, crop):
-        """Sets the crop of this ReqDataByIdCardImage.
+        r"""Sets the crop of this ReqDataByIdCardImage.
 
         是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
 

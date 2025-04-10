@@ -29,7 +29,7 @@ class ExtLimitPojo:
     }
 
     def __init__(self, min_ingress_size=None, max_ingress_size=None, ratio_95peak=None):
-        """ExtLimitPojo
+        r"""ExtLimitPojo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExtLimitPojo:
 
     @property
     def min_ingress_size(self):
-        """Gets the min_ingress_size of this ExtLimitPojo.
+        r"""Gets the min_ingress_size of this ExtLimitPojo.
 
         - 最小入云限速
 
@@ -68,7 +68,7 @@ class ExtLimitPojo:
 
     @min_ingress_size.setter
     def min_ingress_size(self, min_ingress_size):
-        """Sets the min_ingress_size of this ExtLimitPojo.
+        r"""Sets the min_ingress_size of this ExtLimitPojo.
 
         - 最小入云限速
 
@@ -79,7 +79,7 @@ class ExtLimitPojo:
 
     @property
     def max_ingress_size(self):
-        """Gets the max_ingress_size of this ExtLimitPojo.
+        r"""Gets the max_ingress_size of this ExtLimitPojo.
 
         - 最大入云限速
 
@@ -90,7 +90,7 @@ class ExtLimitPojo:
 
     @max_ingress_size.setter
     def max_ingress_size(self, max_ingress_size):
-        """Sets the max_ingress_size of this ExtLimitPojo.
+        r"""Sets the max_ingress_size of this ExtLimitPojo.
 
         - 最大入云限速
 
@@ -101,7 +101,7 @@ class ExtLimitPojo:
 
     @property
     def ratio_95peak(self):
-        """Gets the ratio_95peak of this ExtLimitPojo.
+        r"""Gets the ratio_95peak of this ExtLimitPojo.
 
         95计费保底率
 
@@ -112,7 +112,7 @@ class ExtLimitPojo:
 
     @ratio_95peak.setter
     def ratio_95peak(self, ratio_95peak):
-        """Sets the ratio_95peak of this ExtLimitPojo.
+        r"""Sets the ratio_95peak of this ExtLimitPojo.
 
         95计费保底率
 

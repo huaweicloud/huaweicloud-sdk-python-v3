@@ -27,7 +27,7 @@ class CreateHostRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """CreateHostRequest
+        r"""CreateHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHostRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateHostRequest.
+        r"""Gets the group_id of this CreateHostRequest.
 
         主机集群id
 
@@ -60,7 +60,7 @@ class CreateHostRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateHostRequest.
+        r"""Sets the group_id of this CreateHostRequest.
 
         主机集群id
 
@@ -71,7 +71,7 @@ class CreateHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHostRequest.
+        r"""Gets the body of this CreateHostRequest.
 
         :return: The body of this CreateHostRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostRequestBody`
@@ -80,7 +80,7 @@ class CreateHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHostRequest.
+        r"""Sets the body of this CreateHostRequest.
 
         :param body: The body of this CreateHostRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostRequestBody`

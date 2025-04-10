@@ -25,7 +25,7 @@ class BatchListMetricDataRequest:
     }
 
     def __init__(self, body=None):
-        """BatchListMetricDataRequest
+        r"""BatchListMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchListMetricDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchListMetricDataRequest.
+        r"""Gets the body of this BatchListMetricDataRequest.
 
         :return: The body of this BatchListMetricDataRequest.
         :rtype: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`
@@ -52,7 +52,7 @@ class BatchListMetricDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListMetricDataRequest.
+        r"""Sets the body of this BatchListMetricDataRequest.
 
         :param body: The body of this BatchListMetricDataRequest.
         :type body: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`

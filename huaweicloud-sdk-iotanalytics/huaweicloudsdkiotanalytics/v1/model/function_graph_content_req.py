@@ -37,7 +37,7 @@ class FunctionGraphContentReq:
     }
 
     def __init__(self, function_name=None, orig_url=None, final_url=None, verify_body=None, ak=None, sk=None, project_id=None):
-        """FunctionGraphContentReq
+        r"""FunctionGraphContentReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FunctionGraphContentReq:
 
     @property
     def function_name(self):
-        """Gets the function_name of this FunctionGraphContentReq.
+        r"""Gets the function_name of this FunctionGraphContentReq.
 
         名称
 
@@ -89,7 +89,7 @@ class FunctionGraphContentReq:
 
     @function_name.setter
     def function_name(self, function_name):
-        """Sets the function_name of this FunctionGraphContentReq.
+        r"""Sets the function_name of this FunctionGraphContentReq.
 
         名称
 
@@ -100,7 +100,7 @@ class FunctionGraphContentReq:
 
     @property
     def orig_url(self):
-        """Gets the orig_url of this FunctionGraphContentReq.
+        r"""Gets the orig_url of this FunctionGraphContentReq.
 
         原始URL
 
@@ -111,7 +111,7 @@ class FunctionGraphContentReq:
 
     @orig_url.setter
     def orig_url(self, orig_url):
-        """Sets the orig_url of this FunctionGraphContentReq.
+        r"""Sets the orig_url of this FunctionGraphContentReq.
 
         原始URL
 
@@ -122,7 +122,7 @@ class FunctionGraphContentReq:
 
     @property
     def final_url(self):
-        """Gets the final_url of this FunctionGraphContentReq.
+        r"""Gets the final_url of this FunctionGraphContentReq.
 
         转换后的URL
 
@@ -133,7 +133,7 @@ class FunctionGraphContentReq:
 
     @final_url.setter
     def final_url(self, final_url):
-        """Sets the final_url of this FunctionGraphContentReq.
+        r"""Sets the final_url of this FunctionGraphContentReq.
 
         转换后的URL
 
@@ -144,7 +144,7 @@ class FunctionGraphContentReq:
 
     @property
     def verify_body(self):
-        """Gets the verify_body of this FunctionGraphContentReq.
+        r"""Gets the verify_body of this FunctionGraphContentReq.
 
         校验参数
 
@@ -155,7 +155,7 @@ class FunctionGraphContentReq:
 
     @verify_body.setter
     def verify_body(self, verify_body):
-        """Sets the verify_body of this FunctionGraphContentReq.
+        r"""Sets the verify_body of this FunctionGraphContentReq.
 
         校验参数
 
@@ -166,7 +166,7 @@ class FunctionGraphContentReq:
 
     @property
     def ak(self):
-        """Gets the ak of this FunctionGraphContentReq.
+        r"""Gets the ak of this FunctionGraphContentReq.
 
         租户的AK
 
@@ -177,7 +177,7 @@ class FunctionGraphContentReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this FunctionGraphContentReq.
+        r"""Sets the ak of this FunctionGraphContentReq.
 
         租户的AK
 
@@ -188,7 +188,7 @@ class FunctionGraphContentReq:
 
     @property
     def sk(self):
-        """Gets the sk of this FunctionGraphContentReq.
+        r"""Gets the sk of this FunctionGraphContentReq.
 
         租户的SK
 
@@ -199,7 +199,7 @@ class FunctionGraphContentReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this FunctionGraphContentReq.
+        r"""Sets the sk of this FunctionGraphContentReq.
 
         租户的SK
 
@@ -210,7 +210,7 @@ class FunctionGraphContentReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FunctionGraphContentReq.
+        r"""Gets the project_id of this FunctionGraphContentReq.
 
         项目id
 
@@ -221,7 +221,7 @@ class FunctionGraphContentReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FunctionGraphContentReq.
+        r"""Sets the project_id of this FunctionGraphContentReq.
 
         项目id
 

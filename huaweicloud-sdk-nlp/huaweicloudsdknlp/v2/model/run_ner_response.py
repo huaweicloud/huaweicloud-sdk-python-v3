@@ -30,7 +30,7 @@ class RunNerResponse(SdkResponse):
     }
 
     def __init__(self, named_entities=None, error_code=None, error_msg=None):
-        """RunNerResponse
+        r"""RunNerResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunNerResponse(SdkResponse):
 
     @property
     def named_entities(self):
-        """Gets the named_entities of this RunNerResponse.
+        r"""Gets the named_entities of this RunNerResponse.
 
         命名实体识别结果。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunNerResponse(SdkResponse):
 
     @named_entities.setter
     def named_entities(self, named_entities):
-        """Sets the named_entities of this RunNerResponse.
+        r"""Sets the named_entities of this RunNerResponse.
 
         命名实体识别结果。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunNerResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunNerResponse.
+        r"""Gets the error_code of this RunNerResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunNerResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunNerResponse.
+        r"""Sets the error_code of this RunNerResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunNerResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunNerResponse.
+        r"""Gets the error_msg of this RunNerResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunNerResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunNerResponse.
+        r"""Sets the error_msg of this RunNerResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

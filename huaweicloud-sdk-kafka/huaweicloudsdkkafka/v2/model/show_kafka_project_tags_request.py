@@ -23,7 +23,7 @@ class ShowKafkaProjectTagsRequest:
     }
 
     def __init__(self):
-        """ShowKafkaProjectTagsRequest
+        r"""ShowKafkaProjectTagsRequest
 
         The model defined in huaweicloud sdk
 

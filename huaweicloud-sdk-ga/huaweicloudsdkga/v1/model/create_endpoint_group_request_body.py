@@ -25,7 +25,7 @@ class CreateEndpointGroupRequestBody:
     }
 
     def __init__(self, endpoint_group=None):
-        """CreateEndpointGroupRequestBody
+        r"""CreateEndpointGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateEndpointGroupRequestBody:
 
     @property
     def endpoint_group(self):
-        """Gets the endpoint_group of this CreateEndpointGroupRequestBody.
+        r"""Gets the endpoint_group of this CreateEndpointGroupRequestBody.
 
         :return: The endpoint_group of this CreateEndpointGroupRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointGroupOption`
@@ -51,7 +51,7 @@ class CreateEndpointGroupRequestBody:
 
     @endpoint_group.setter
     def endpoint_group(self, endpoint_group):
-        """Sets the endpoint_group of this CreateEndpointGroupRequestBody.
+        r"""Sets the endpoint_group of this CreateEndpointGroupRequestBody.
 
         :param endpoint_group: The endpoint_group of this CreateEndpointGroupRequestBody.
         :type endpoint_group: :class:`huaweicloudsdkga.v1.CreateEndpointGroupOption`

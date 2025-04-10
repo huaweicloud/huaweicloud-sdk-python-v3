@@ -33,7 +33,7 @@ class WidgetMetric:
     }
 
     def __init__(self, namespace=None, dimensions=None, metric_name=None, alias=None, extra_info=None):
-        """WidgetMetric
+        r"""WidgetMetric
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class WidgetMetric:
 
     @property
     def namespace(self):
-        """Gets the namespace of this WidgetMetric.
+        r"""Gets the namespace of this WidgetMetric.
 
         服务维度
 
@@ -79,7 +79,7 @@ class WidgetMetric:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this WidgetMetric.
+        r"""Sets the namespace of this WidgetMetric.
 
         服务维度
 
@@ -90,7 +90,7 @@ class WidgetMetric:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this WidgetMetric.
+        r"""Gets the dimensions of this WidgetMetric.
 
         :return: The dimensions of this WidgetMetric.
         :rtype: :class:`huaweicloudsdkces.v2.DimensionInfo`
@@ -99,7 +99,7 @@ class WidgetMetric:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this WidgetMetric.
+        r"""Sets the dimensions of this WidgetMetric.
 
         :param dimensions: The dimensions of this WidgetMetric.
         :type dimensions: :class:`huaweicloudsdkces.v2.DimensionInfo`
@@ -108,7 +108,7 @@ class WidgetMetric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this WidgetMetric.
+        r"""Gets the metric_name of this WidgetMetric.
 
         指标名称
 
@@ -119,7 +119,7 @@ class WidgetMetric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this WidgetMetric.
+        r"""Sets the metric_name of this WidgetMetric.
 
         指标名称
 
@@ -130,7 +130,7 @@ class WidgetMetric:
 
     @property
     def alias(self):
-        """Gets the alias of this WidgetMetric.
+        r"""Gets the alias of this WidgetMetric.
 
         监控视图的指标别名列表
 
@@ -141,7 +141,7 @@ class WidgetMetric:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this WidgetMetric.
+        r"""Sets the alias of this WidgetMetric.
 
         监控视图的指标别名列表
 
@@ -152,7 +152,7 @@ class WidgetMetric:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this WidgetMetric.
+        r"""Gets the extra_info of this WidgetMetric.
 
         :return: The extra_info of this WidgetMetric.
         :rtype: :class:`huaweicloudsdkces.v2.ExtraInfo`
@@ -161,7 +161,7 @@ class WidgetMetric:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this WidgetMetric.
+        r"""Sets the extra_info of this WidgetMetric.
 
         :param extra_info: The extra_info of this WidgetMetric.
         :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfo`

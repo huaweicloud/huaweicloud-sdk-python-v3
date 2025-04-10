@@ -39,7 +39,7 @@ class ListAllResourcesRequest:
     }
 
     def __init__(self, region_id=None, ep_id=None, type=None, limit=None, marker=None, id=None, name=None, tags=None):
-        """ListAllResourcesRequest
+        r"""ListAllResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListAllResourcesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListAllResourcesRequest.
+        r"""Gets the region_id of this ListAllResourcesRequest.
 
         区域ID
 
@@ -103,7 +103,7 @@ class ListAllResourcesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListAllResourcesRequest.
+        r"""Sets the region_id of this ListAllResourcesRequest.
 
         区域ID
 
@@ -114,7 +114,7 @@ class ListAllResourcesRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ListAllResourcesRequest.
+        r"""Gets the ep_id of this ListAllResourcesRequest.
 
         企业项目ID
 
@@ -125,7 +125,7 @@ class ListAllResourcesRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ListAllResourcesRequest.
+        r"""Sets the ep_id of this ListAllResourcesRequest.
 
         企业项目ID
 
@@ -136,7 +136,7 @@ class ListAllResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAllResourcesRequest.
+        r"""Gets the type of this ListAllResourcesRequest.
 
         资源类型（provider.type）
 
@@ -147,7 +147,7 @@ class ListAllResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAllResourcesRequest.
+        r"""Sets the type of this ListAllResourcesRequest.
 
         资源类型（provider.type）
 
@@ -158,7 +158,7 @@ class ListAllResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAllResourcesRequest.
+        r"""Gets the limit of this ListAllResourcesRequest.
 
         最大的返回数量。
 
@@ -169,7 +169,7 @@ class ListAllResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAllResourcesRequest.
+        r"""Sets the limit of this ListAllResourcesRequest.
 
         最大的返回数量。
 
@@ -180,7 +180,7 @@ class ListAllResourcesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAllResourcesRequest.
+        r"""Gets the marker of this ListAllResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -191,7 +191,7 @@ class ListAllResourcesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAllResourcesRequest.
+        r"""Sets the marker of this ListAllResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -202,7 +202,7 @@ class ListAllResourcesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListAllResourcesRequest.
+        r"""Gets the id of this ListAllResourcesRequest.
 
         资源ID
 
@@ -213,7 +213,7 @@ class ListAllResourcesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAllResourcesRequest.
+        r"""Sets the id of this ListAllResourcesRequest.
 
         资源ID
 
@@ -224,7 +224,7 @@ class ListAllResourcesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAllResourcesRequest.
+        r"""Gets the name of this ListAllResourcesRequest.
 
         资源名称
 
@@ -235,7 +235,7 @@ class ListAllResourcesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAllResourcesRequest.
+        r"""Sets the name of this ListAllResourcesRequest.
 
         资源名称
 
@@ -246,7 +246,7 @@ class ListAllResourcesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListAllResourcesRequest.
+        r"""Gets the tags of this ListAllResourcesRequest.
 
         标签列表
 
@@ -257,7 +257,7 @@ class ListAllResourcesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListAllResourcesRequest.
+        r"""Sets the tags of this ListAllResourcesRequest.
 
         标签列表
 

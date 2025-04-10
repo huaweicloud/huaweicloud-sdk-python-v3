@@ -29,7 +29,7 @@ class MetricDataPoints:
     }
 
     def __init__(self, timestamp=None, unit=None, statistics=None):
-        """MetricDataPoints
+        r"""MetricDataPoints
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MetricDataPoints:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this MetricDataPoints.
+        r"""Gets the timestamp of this MetricDataPoints.
 
         时间戳。
 
@@ -68,7 +68,7 @@ class MetricDataPoints:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this MetricDataPoints.
+        r"""Sets the timestamp of this MetricDataPoints.
 
         时间戳。
 
@@ -79,7 +79,7 @@ class MetricDataPoints:
 
     @property
     def unit(self):
-        """Gets the unit of this MetricDataPoints.
+        r"""Gets the unit of this MetricDataPoints.
 
         指标单位。
 
@@ -90,7 +90,7 @@ class MetricDataPoints:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this MetricDataPoints.
+        r"""Sets the unit of this MetricDataPoints.
 
         指标单位。
 
@@ -101,7 +101,7 @@ class MetricDataPoints:
 
     @property
     def statistics(self):
-        """Gets the statistics of this MetricDataPoints.
+        r"""Gets the statistics of this MetricDataPoints.
 
         统计方式。
 
@@ -112,7 +112,7 @@ class MetricDataPoints:
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this MetricDataPoints.
+        r"""Sets the statistics of this MetricDataPoints.
 
         统计方式。
 

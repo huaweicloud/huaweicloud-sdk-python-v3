@@ -27,7 +27,7 @@ class UpdateConsistencyResultRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateConsistencyResultRequest
+        r"""UpdateConsistencyResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConsistencyResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateConsistencyResultRequest.
+        r"""Gets the task_id of this UpdateConsistencyResultRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class UpdateConsistencyResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateConsistencyResultRequest.
+        r"""Sets the task_id of this UpdateConsistencyResultRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class UpdateConsistencyResultRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConsistencyResultRequest.
+        r"""Gets the body of this UpdateConsistencyResultRequest.
 
         :return: The body of this UpdateConsistencyResultRequest.
         :rtype: :class:`huaweicloudsdksms.v3.SetConsistencyResultRequestBody`
@@ -80,7 +80,7 @@ class UpdateConsistencyResultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConsistencyResultRequest.
+        r"""Sets the body of this UpdateConsistencyResultRequest.
 
         :param body: The body of this UpdateConsistencyResultRequest.
         :type body: :class:`huaweicloudsdksms.v3.SetConsistencyResultRequestBody`

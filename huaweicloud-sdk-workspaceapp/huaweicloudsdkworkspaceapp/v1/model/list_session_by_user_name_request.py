@@ -25,7 +25,7 @@ class ListSessionByUserNameRequest:
     }
 
     def __init__(self, user_name=None):
-        """ListSessionByUserNameRequest
+        r"""ListSessionByUserNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSessionByUserNameRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListSessionByUserNameRequest.
+        r"""Gets the user_name of this ListSessionByUserNameRequest.
 
         用户名。
 
@@ -53,7 +53,7 @@ class ListSessionByUserNameRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListSessionByUserNameRequest.
+        r"""Sets the user_name of this ListSessionByUserNameRequest.
 
         用户名。
 

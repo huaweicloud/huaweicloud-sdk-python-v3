@@ -27,7 +27,7 @@ class GaussDBforOpenGaussDatabaseSchemaReq:
     }
 
     def __init__(self, db_name=None, schemas=None):
-        """GaussDBforOpenGaussDatabaseSchemaReq
+        r"""GaussDBforOpenGaussDatabaseSchemaReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GaussDBforOpenGaussDatabaseSchemaReq:
 
     @property
     def db_name(self):
-        """Gets the db_name of this GaussDBforOpenGaussDatabaseSchemaReq.
+        r"""Gets the db_name of this GaussDBforOpenGaussDatabaseSchemaReq.
 
         数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。  GaussDB 模板库包括postgres， template0 ，template1。
 
@@ -59,7 +59,7 @@ class GaussDBforOpenGaussDatabaseSchemaReq:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this GaussDBforOpenGaussDatabaseSchemaReq.
+        r"""Sets the db_name of this GaussDBforOpenGaussDatabaseSchemaReq.
 
         数据库名称。  数据库名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库重名。  GaussDB 模板库包括postgres， template0 ，template1。
 
@@ -70,7 +70,7 @@ class GaussDBforOpenGaussDatabaseSchemaReq:
 
     @property
     def schemas(self):
-        """Gets the schemas of this GaussDBforOpenGaussDatabaseSchemaReq.
+        r"""Gets the schemas of this GaussDBforOpenGaussDatabaseSchemaReq.
 
         每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
 
@@ -81,7 +81,7 @@ class GaussDBforOpenGaussDatabaseSchemaReq:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this GaussDBforOpenGaussDatabaseSchemaReq.
+        r"""Sets the schemas of this GaussDBforOpenGaussDatabaseSchemaReq.
 
         每个元素都是与数据库相关联的schmea信息。单次请求最多支持20个元素。
 

@@ -35,7 +35,7 @@ class ListDbObjectsRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, offset=None, limit=None, type=None, db_names=None):
-        """ListDbObjectsRequest
+        r"""ListDbObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListDbObjectsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListDbObjectsRequest.
+        r"""Gets the job_id of this ListDbObjectsRequest.
 
         任务ID。
 
@@ -87,7 +87,7 @@ class ListDbObjectsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListDbObjectsRequest.
+        r"""Sets the job_id of this ListDbObjectsRequest.
 
         任务ID。
 
@@ -98,7 +98,7 @@ class ListDbObjectsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDbObjectsRequest.
+        r"""Gets the x_language of this ListDbObjectsRequest.
 
         请求语言类型。
 
@@ -109,7 +109,7 @@ class ListDbObjectsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDbObjectsRequest.
+        r"""Sets the x_language of this ListDbObjectsRequest.
 
         请求语言类型。
 
@@ -120,7 +120,7 @@ class ListDbObjectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDbObjectsRequest.
+        r"""Gets the offset of this ListDbObjectsRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -131,7 +131,7 @@ class ListDbObjectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDbObjectsRequest.
+        r"""Sets the offset of this ListDbObjectsRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -142,7 +142,7 @@ class ListDbObjectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDbObjectsRequest.
+        r"""Gets the limit of this ListDbObjectsRequest.
 
         查询返回记录的数量限制。
 
@@ -153,7 +153,7 @@ class ListDbObjectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDbObjectsRequest.
+        r"""Sets the limit of this ListDbObjectsRequest.
 
         查询返回记录的数量限制。
 
@@ -164,7 +164,7 @@ class ListDbObjectsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDbObjectsRequest.
+        r"""Gets the type of this ListDbObjectsRequest.
 
         查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
@@ -175,7 +175,7 @@ class ListDbObjectsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDbObjectsRequest.
+        r"""Sets the type of this ListDbObjectsRequest.
 
         查询对象信息类型。 取值： - source：查询源库对象信息。 - modified：查询已选择的（已同步的和未下发的）对象信息。 - synchronized：查询已同步的（已下发的）对象信息 ， 使用场景在任务处于全量中或者增量中。
 
@@ -186,7 +186,7 @@ class ListDbObjectsRequest:
 
     @property
     def db_names(self):
-        """Gets the db_names of this ListDbObjectsRequest.
+        r"""Gets the db_names of this ListDbObjectsRequest.
 
         查询指定库的信息。
 
@@ -197,7 +197,7 @@ class ListDbObjectsRequest:
 
     @db_names.setter
     def db_names(self, db_names):
-        """Sets the db_names of this ListDbObjectsRequest.
+        r"""Sets the db_names of this ListDbObjectsRequest.
 
         查询指定库的信息。
 

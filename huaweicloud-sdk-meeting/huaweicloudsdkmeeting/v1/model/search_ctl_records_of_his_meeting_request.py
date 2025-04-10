@@ -37,7 +37,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     }
 
     def __init__(self, conf_uuid=None, offset=None, limit=None, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language=None):
-        """SearchCtlRecordsOfHisMeetingRequest
+        r"""SearchCtlRecordsOfHisMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
         会议UUID。
 
@@ -95,7 +95,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
         会议UUID。
 
@@ -106,7 +106,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the offset of this SearchCtlRecordsOfHisMeetingRequest.
 
         查询偏移量。默认为0。
 
@@ -117,7 +117,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the offset of this SearchCtlRecordsOfHisMeetingRequest.
 
         查询偏移量。默认为0。
 
@@ -128,7 +128,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the limit of this SearchCtlRecordsOfHisMeetingRequest.
 
         查询数量。默认值20，最大500条。
 
@@ -139,7 +139,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the limit of this SearchCtlRecordsOfHisMeetingRequest.
 
         查询数量。默认值20，最大500条。
 
@@ -150,7 +150,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -161,7 +161,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -172,7 +172,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -183,7 +183,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -194,7 +194,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -205,7 +205,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -216,7 +216,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Gets the accept_language of this SearchCtlRecordsOfHisMeetingRequest.
 
         语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
@@ -227,7 +227,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchCtlRecordsOfHisMeetingRequest.
+        r"""Sets the accept_language of this SearchCtlRecordsOfHisMeetingRequest.
 
         语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 

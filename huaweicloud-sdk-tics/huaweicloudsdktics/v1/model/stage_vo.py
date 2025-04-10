@@ -31,7 +31,7 @@ class StageVo:
     }
 
     def __init__(self, id=None, last_step_stage_id=None, processors=None, stage_name=None):
-        """StageVo
+        r"""StageVo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class StageVo:
 
     @property
     def id(self):
-        """Gets the id of this StageVo.
+        r"""Gets the id of this StageVo.
 
         执行阶段id
 
@@ -74,7 +74,7 @@ class StageVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StageVo.
+        r"""Sets the id of this StageVo.
 
         执行阶段id
 
@@ -85,7 +85,7 @@ class StageVo:
 
     @property
     def last_step_stage_id(self):
-        """Gets the last_step_stage_id of this StageVo.
+        r"""Gets the last_step_stage_id of this StageVo.
 
         上游的stageId
 
@@ -96,7 +96,7 @@ class StageVo:
 
     @last_step_stage_id.setter
     def last_step_stage_id(self, last_step_stage_id):
-        """Sets the last_step_stage_id of this StageVo.
+        r"""Sets the last_step_stage_id of this StageVo.
 
         上游的stageId
 
@@ -107,7 +107,7 @@ class StageVo:
 
     @property
     def processors(self):
-        """Gets the processors of this StageVo.
+        r"""Gets the processors of this StageVo.
 
         执行过程
 
@@ -118,7 +118,7 @@ class StageVo:
 
     @processors.setter
     def processors(self, processors):
-        """Sets the processors of this StageVo.
+        r"""Sets the processors of this StageVo.
 
         执行过程
 
@@ -129,7 +129,7 @@ class StageVo:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this StageVo.
+        r"""Gets the stage_name of this StageVo.
 
         执行阶段名称
 
@@ -140,7 +140,7 @@ class StageVo:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this StageVo.
+        r"""Sets the stage_name of this StageVo.
 
         执行阶段名称
 

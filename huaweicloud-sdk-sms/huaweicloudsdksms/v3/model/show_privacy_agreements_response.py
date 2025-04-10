@@ -26,7 +26,7 @@ class ShowPrivacyAgreementsResponse(SdkResponse):
     }
 
     def __init__(self, flag=None):
-        """ShowPrivacyAgreementsResponse
+        r"""ShowPrivacyAgreementsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPrivacyAgreementsResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this ShowPrivacyAgreementsResponse.
+        r"""Gets the flag of this ShowPrivacyAgreementsResponse.
 
         查询用户是否同意隐私协议
 
@@ -55,7 +55,7 @@ class ShowPrivacyAgreementsResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this ShowPrivacyAgreementsResponse.
+        r"""Sets the flag of this ShowPrivacyAgreementsResponse.
 
         查询用户是否同意隐私协议
 

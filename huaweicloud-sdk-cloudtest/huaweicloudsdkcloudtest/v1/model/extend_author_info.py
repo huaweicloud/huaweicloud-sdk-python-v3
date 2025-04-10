@@ -29,7 +29,7 @@ class ExtendAuthorInfo:
     }
 
     def __init__(self, id=None, name=None, time=None):
-        """ExtendAuthorInfo
+        r"""ExtendAuthorInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExtendAuthorInfo:
 
     @property
     def id(self):
-        """Gets the id of this ExtendAuthorInfo.
+        r"""Gets the id of this ExtendAuthorInfo.
 
         id信息
 
@@ -68,7 +68,7 @@ class ExtendAuthorInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExtendAuthorInfo.
+        r"""Sets the id of this ExtendAuthorInfo.
 
         id信息
 
@@ -79,7 +79,7 @@ class ExtendAuthorInfo:
 
     @property
     def name(self):
-        """Gets the name of this ExtendAuthorInfo.
+        r"""Gets the name of this ExtendAuthorInfo.
 
         名称信息
 
@@ -90,7 +90,7 @@ class ExtendAuthorInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtendAuthorInfo.
+        r"""Sets the name of this ExtendAuthorInfo.
 
         名称信息
 
@@ -101,7 +101,7 @@ class ExtendAuthorInfo:
 
     @property
     def time(self):
-        """Gets the time of this ExtendAuthorInfo.
+        r"""Gets the time of this ExtendAuthorInfo.
 
         时间信息
 
@@ -112,7 +112,7 @@ class ExtendAuthorInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ExtendAuthorInfo.
+        r"""Sets the time of this ExtendAuthorInfo.
 
         时间信息
 

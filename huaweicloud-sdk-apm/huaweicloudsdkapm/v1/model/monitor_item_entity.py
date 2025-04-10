@@ -41,7 +41,7 @@ class MonitorItemEntity:
     }
 
     def __init__(self, category_id=None, collector_name=None, display_name=None, show_in_total=None, monitor_item_id=None, disabled=None, collector_id=None, sequence=None, collect_interval=None):
-        """MonitorItemEntity
+        r"""MonitorItemEntity
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class MonitorItemEntity:
 
     @property
     def category_id(self):
-        """Gets the category_id of this MonitorItemEntity.
+        r"""Gets the category_id of this MonitorItemEntity.
 
         采集器类别id。
 
@@ -110,7 +110,7 @@ class MonitorItemEntity:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this MonitorItemEntity.
+        r"""Sets the category_id of this MonitorItemEntity.
 
         采集器类别id。
 
@@ -121,7 +121,7 @@ class MonitorItemEntity:
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this MonitorItemEntity.
+        r"""Gets the collector_name of this MonitorItemEntity.
 
         采集器名称。
 
@@ -132,7 +132,7 @@ class MonitorItemEntity:
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this MonitorItemEntity.
+        r"""Sets the collector_name of this MonitorItemEntity.
 
         采集器名称。
 
@@ -143,7 +143,7 @@ class MonitorItemEntity:
 
     @property
     def display_name(self):
-        """Gets the display_name of this MonitorItemEntity.
+        r"""Gets the display_name of this MonitorItemEntity.
 
         采集器类别展示名称。
 
@@ -154,7 +154,7 @@ class MonitorItemEntity:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this MonitorItemEntity.
+        r"""Sets the display_name of this MonitorItemEntity.
 
         采集器类别展示名称。
 
@@ -165,7 +165,7 @@ class MonitorItemEntity:
 
     @property
     def show_in_total(self):
-        """Gets the show_in_total of this MonitorItemEntity.
+        r"""Gets the show_in_total of this MonitorItemEntity.
 
         是否展示标题。
 
@@ -176,7 +176,7 @@ class MonitorItemEntity:
 
     @show_in_total.setter
     def show_in_total(self, show_in_total):
-        """Sets the show_in_total of this MonitorItemEntity.
+        r"""Sets the show_in_total of this MonitorItemEntity.
 
         是否展示标题。
 
@@ -187,7 +187,7 @@ class MonitorItemEntity:
 
     @property
     def monitor_item_id(self):
-        """Gets the monitor_item_id of this MonitorItemEntity.
+        r"""Gets the monitor_item_id of this MonitorItemEntity.
 
         监控项id。
 
@@ -198,7 +198,7 @@ class MonitorItemEntity:
 
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
-        """Sets the monitor_item_id of this MonitorItemEntity.
+        r"""Sets the monitor_item_id of this MonitorItemEntity.
 
         监控项id。
 
@@ -209,7 +209,7 @@ class MonitorItemEntity:
 
     @property
     def disabled(self):
-        """Gets the disabled of this MonitorItemEntity.
+        r"""Gets the disabled of this MonitorItemEntity.
 
         是否禁用。
 
@@ -220,7 +220,7 @@ class MonitorItemEntity:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this MonitorItemEntity.
+        r"""Sets the disabled of this MonitorItemEntity.
 
         是否禁用。
 
@@ -231,7 +231,7 @@ class MonitorItemEntity:
 
     @property
     def collector_id(self):
-        """Gets the collector_id of this MonitorItemEntity.
+        r"""Gets the collector_id of this MonitorItemEntity.
 
         采集器id。
 
@@ -242,7 +242,7 @@ class MonitorItemEntity:
 
     @collector_id.setter
     def collector_id(self, collector_id):
-        """Sets the collector_id of this MonitorItemEntity.
+        r"""Sets the collector_id of this MonitorItemEntity.
 
         采集器id。
 
@@ -253,7 +253,7 @@ class MonitorItemEntity:
 
     @property
     def sequence(self):
-        """Gets the sequence of this MonitorItemEntity.
+        r"""Gets the sequence of this MonitorItemEntity.
 
         序列号。
 
@@ -264,7 +264,7 @@ class MonitorItemEntity:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this MonitorItemEntity.
+        r"""Sets the sequence of this MonitorItemEntity.
 
         序列号。
 
@@ -275,7 +275,7 @@ class MonitorItemEntity:
 
     @property
     def collect_interval(self):
-        """Gets the collect_interval of this MonitorItemEntity.
+        r"""Gets the collect_interval of this MonitorItemEntity.
 
         默认数据采集间隔。
 
@@ -286,7 +286,7 @@ class MonitorItemEntity:
 
     @collect_interval.setter
     def collect_interval(self, collect_interval):
-        """Sets the collect_interval of this MonitorItemEntity.
+        r"""Sets the collect_interval of this MonitorItemEntity.
 
         默认数据采集间隔。
 

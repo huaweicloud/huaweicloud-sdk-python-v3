@@ -27,7 +27,7 @@ class BatchStartOrStopTasksRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchStartOrStopTasksRequest
+        r"""BatchStartOrStopTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchStartOrStopTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchStartOrStopTasksRequest.
+        r"""Gets the instance_id of this BatchStartOrStopTasksRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class BatchStartOrStopTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchStartOrStopTasksRequest.
+        r"""Sets the instance_id of this BatchStartOrStopTasksRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class BatchStartOrStopTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStartOrStopTasksRequest.
+        r"""Gets the body of this BatchStartOrStopTasksRequest.
 
         :return: The body of this BatchStartOrStopTasksRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.OperateTasksBean`
@@ -80,7 +80,7 @@ class BatchStartOrStopTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStartOrStopTasksRequest.
+        r"""Sets the body of this BatchStartOrStopTasksRequest.
 
         :param body: The body of this BatchStartOrStopTasksRequest.
         :type body: :class:`huaweicloudsdkroma.v2.OperateTasksBean`

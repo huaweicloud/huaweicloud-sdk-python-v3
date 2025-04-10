@@ -25,7 +25,7 @@ class CreateRulesetRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRulesetRequest
+        r"""CreateRulesetRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRulesetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRulesetRequest.
+        r"""Gets the body of this CreateRulesetRequest.
 
         :return: The body of this CreateRulesetRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.Ruleset`
@@ -52,7 +52,7 @@ class CreateRulesetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRulesetRequest.
+        r"""Sets the body of this CreateRulesetRequest.
 
         :param body: The body of this CreateRulesetRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.Ruleset`

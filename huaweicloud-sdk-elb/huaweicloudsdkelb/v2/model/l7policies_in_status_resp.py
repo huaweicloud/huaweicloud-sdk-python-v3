@@ -33,7 +33,7 @@ class L7policiesInStatusResp:
     }
 
     def __init__(self, id=None, name=None, rules=None, action=None, provisioning_status=None):
-        """L7policiesInStatusResp
+        r"""L7policiesInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class L7policiesInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this L7policiesInStatusResp.
+        r"""Gets the id of this L7policiesInStatusResp.
 
         转发策略ID
 
@@ -77,7 +77,7 @@ class L7policiesInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this L7policiesInStatusResp.
+        r"""Sets the id of this L7policiesInStatusResp.
 
         转发策略ID
 
@@ -88,7 +88,7 @@ class L7policiesInStatusResp:
 
     @property
     def name(self):
-        """Gets the name of this L7policiesInStatusResp.
+        r"""Gets the name of this L7policiesInStatusResp.
 
         转发策略名称
 
@@ -99,7 +99,7 @@ class L7policiesInStatusResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this L7policiesInStatusResp.
+        r"""Sets the name of this L7policiesInStatusResp.
 
         转发策略名称
 
@@ -110,7 +110,7 @@ class L7policiesInStatusResp:
 
     @property
     def rules(self):
-        """Gets the rules of this L7policiesInStatusResp.
+        r"""Gets the rules of this L7policiesInStatusResp.
 
         转发策略关联的转发规则列表
 
@@ -121,7 +121,7 @@ class L7policiesInStatusResp:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this L7policiesInStatusResp.
+        r"""Sets the rules of this L7policiesInStatusResp.
 
         转发策略关联的转发规则列表
 
@@ -132,7 +132,7 @@ class L7policiesInStatusResp:
 
     @property
     def action(self):
-        """Gets the action of this L7policiesInStatusResp.
+        r"""Gets the action of this L7policiesInStatusResp.
 
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
@@ -143,7 +143,7 @@ class L7policiesInStatusResp:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this L7policiesInStatusResp.
+        r"""Sets the action of this L7policiesInStatusResp.
 
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
@@ -154,7 +154,7 @@ class L7policiesInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this L7policiesInStatusResp.
+        r"""Gets the provisioning_status of this L7policiesInStatusResp.
 
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -165,7 +165,7 @@ class L7policiesInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this L7policiesInStatusResp.
+        r"""Sets the provisioning_status of this L7policiesInStatusResp.
 
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 

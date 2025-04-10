@@ -61,7 +61,7 @@ class AttachmentVo:
     }
 
     def __init__(self, uri=None, creator=None, updator=None, region=None, doc_id=None, parent_uri=None, parent_type=None, file_name=None, store_file_name=None, file_path=None, file_size=None, file_type=None, system_type=None, create_time=None, create_time_timestamp=None, update_time=None, update_time_timestamp=None, project_uuid=None, related_type=None):
-        """AttachmentVo
+        r"""AttachmentVo
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class AttachmentVo:
 
     @property
     def uri(self):
-        """Gets the uri of this AttachmentVo.
+        r"""Gets the uri of this AttachmentVo.
 
         附件Uri
 
@@ -180,7 +180,7 @@ class AttachmentVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this AttachmentVo.
+        r"""Sets the uri of this AttachmentVo.
 
         附件Uri
 
@@ -191,7 +191,7 @@ class AttachmentVo:
 
     @property
     def creator(self):
-        """Gets the creator of this AttachmentVo.
+        r"""Gets the creator of this AttachmentVo.
 
         创建人
 
@@ -202,7 +202,7 @@ class AttachmentVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this AttachmentVo.
+        r"""Sets the creator of this AttachmentVo.
 
         创建人
 
@@ -213,7 +213,7 @@ class AttachmentVo:
 
     @property
     def updator(self):
-        """Gets the updator of this AttachmentVo.
+        r"""Gets the updator of this AttachmentVo.
 
         更新人
 
@@ -224,7 +224,7 @@ class AttachmentVo:
 
     @updator.setter
     def updator(self, updator):
-        """Sets the updator of this AttachmentVo.
+        r"""Sets the updator of this AttachmentVo.
 
         更新人
 
@@ -235,7 +235,7 @@ class AttachmentVo:
 
     @property
     def region(self):
-        """Gets the region of this AttachmentVo.
+        r"""Gets the region of this AttachmentVo.
 
         逻辑region
 
@@ -246,7 +246,7 @@ class AttachmentVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AttachmentVo.
+        r"""Sets the region of this AttachmentVo.
 
         逻辑region
 
@@ -257,7 +257,7 @@ class AttachmentVo:
 
     @property
     def doc_id(self):
-        """Gets the doc_id of this AttachmentVo.
+        r"""Gets the doc_id of this AttachmentVo.
 
         文档id
 
@@ -268,7 +268,7 @@ class AttachmentVo:
 
     @doc_id.setter
     def doc_id(self, doc_id):
-        """Sets the doc_id of this AttachmentVo.
+        r"""Sets the doc_id of this AttachmentVo.
 
         文档id
 
@@ -279,7 +279,7 @@ class AttachmentVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this AttachmentVo.
+        r"""Gets the parent_uri of this AttachmentVo.
 
         父节点Uri
 
@@ -290,7 +290,7 @@ class AttachmentVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this AttachmentVo.
+        r"""Sets the parent_uri of this AttachmentVo.
 
         父节点Uri
 
@@ -301,7 +301,7 @@ class AttachmentVo:
 
     @property
     def parent_type(self):
-        """Gets the parent_type of this AttachmentVo.
+        r"""Gets the parent_type of this AttachmentVo.
 
         父节点类型
 
@@ -312,7 +312,7 @@ class AttachmentVo:
 
     @parent_type.setter
     def parent_type(self, parent_type):
-        """Sets the parent_type of this AttachmentVo.
+        r"""Sets the parent_type of this AttachmentVo.
 
         父节点类型
 
@@ -323,7 +323,7 @@ class AttachmentVo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this AttachmentVo.
+        r"""Gets the file_name of this AttachmentVo.
 
         文件名
 
@@ -334,7 +334,7 @@ class AttachmentVo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this AttachmentVo.
+        r"""Sets the file_name of this AttachmentVo.
 
         文件名
 
@@ -345,7 +345,7 @@ class AttachmentVo:
 
     @property
     def store_file_name(self):
-        """Gets the store_file_name of this AttachmentVo.
+        r"""Gets the store_file_name of this AttachmentVo.
 
         保存文件名
 
@@ -356,7 +356,7 @@ class AttachmentVo:
 
     @store_file_name.setter
     def store_file_name(self, store_file_name):
-        """Sets the store_file_name of this AttachmentVo.
+        r"""Sets the store_file_name of this AttachmentVo.
 
         保存文件名
 
@@ -367,7 +367,7 @@ class AttachmentVo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this AttachmentVo.
+        r"""Gets the file_path of this AttachmentVo.
 
         文件路径
 
@@ -378,7 +378,7 @@ class AttachmentVo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this AttachmentVo.
+        r"""Sets the file_path of this AttachmentVo.
 
         文件路径
 
@@ -389,7 +389,7 @@ class AttachmentVo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this AttachmentVo.
+        r"""Gets the file_size of this AttachmentVo.
 
         文件大小
 
@@ -400,7 +400,7 @@ class AttachmentVo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this AttachmentVo.
+        r"""Sets the file_size of this AttachmentVo.
 
         文件大小
 
@@ -411,7 +411,7 @@ class AttachmentVo:
 
     @property
     def file_type(self):
-        """Gets the file_type of this AttachmentVo.
+        r"""Gets the file_type of this AttachmentVo.
 
         文件类型
 
@@ -422,7 +422,7 @@ class AttachmentVo:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this AttachmentVo.
+        r"""Sets the file_type of this AttachmentVo.
 
         文件类型
 
@@ -433,7 +433,7 @@ class AttachmentVo:
 
     @property
     def system_type(self):
-        """Gets the system_type of this AttachmentVo.
+        r"""Gets the system_type of this AttachmentVo.
 
         系统区分：docman或testman
 
@@ -444,7 +444,7 @@ class AttachmentVo:
 
     @system_type.setter
     def system_type(self, system_type):
-        """Sets the system_type of this AttachmentVo.
+        r"""Sets the system_type of this AttachmentVo.
 
         系统区分：docman或testman
 
@@ -455,7 +455,7 @@ class AttachmentVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AttachmentVo.
+        r"""Gets the create_time of this AttachmentVo.
 
         创建时间
 
@@ -466,7 +466,7 @@ class AttachmentVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AttachmentVo.
+        r"""Sets the create_time of this AttachmentVo.
 
         创建时间
 
@@ -477,7 +477,7 @@ class AttachmentVo:
 
     @property
     def create_time_timestamp(self):
-        """Gets the create_time_timestamp of this AttachmentVo.
+        r"""Gets the create_time_timestamp of this AttachmentVo.
 
         创建时间时间戳
 
@@ -488,7 +488,7 @@ class AttachmentVo:
 
     @create_time_timestamp.setter
     def create_time_timestamp(self, create_time_timestamp):
-        """Sets the create_time_timestamp of this AttachmentVo.
+        r"""Sets the create_time_timestamp of this AttachmentVo.
 
         创建时间时间戳
 
@@ -499,7 +499,7 @@ class AttachmentVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AttachmentVo.
+        r"""Gets the update_time of this AttachmentVo.
 
         更新时间
 
@@ -510,7 +510,7 @@ class AttachmentVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AttachmentVo.
+        r"""Sets the update_time of this AttachmentVo.
 
         更新时间
 
@@ -521,7 +521,7 @@ class AttachmentVo:
 
     @property
     def update_time_timestamp(self):
-        """Gets the update_time_timestamp of this AttachmentVo.
+        r"""Gets the update_time_timestamp of this AttachmentVo.
 
         更新时间时间戳
 
@@ -532,7 +532,7 @@ class AttachmentVo:
 
     @update_time_timestamp.setter
     def update_time_timestamp(self, update_time_timestamp):
-        """Sets the update_time_timestamp of this AttachmentVo.
+        r"""Sets the update_time_timestamp of this AttachmentVo.
 
         更新时间时间戳
 
@@ -543,7 +543,7 @@ class AttachmentVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this AttachmentVo.
+        r"""Gets the project_uuid of this AttachmentVo.
 
         项目id
 
@@ -554,7 +554,7 @@ class AttachmentVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this AttachmentVo.
+        r"""Sets the project_uuid of this AttachmentVo.
 
         项目id
 
@@ -565,7 +565,7 @@ class AttachmentVo:
 
     @property
     def related_type(self):
-        """Gets the related_type of this AttachmentVo.
+        r"""Gets the related_type of this AttachmentVo.
 
         附件类型 0 本地上传  other 关联文档
 
@@ -576,7 +576,7 @@ class AttachmentVo:
 
     @related_type.setter
     def related_type(self, related_type):
-        """Sets the related_type of this AttachmentVo.
+        r"""Sets the related_type of this AttachmentVo.
 
         附件类型 0 本地上传  other 关联文档
 

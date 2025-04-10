@@ -30,7 +30,7 @@ class CheckDataFilterResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, job_id=None):
-        """CheckDataFilterResponse
+        r"""CheckDataFilterResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckDataFilterResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CheckDataFilterResponse.
+        r"""Gets the id of this CheckDataFilterResponse.
 
         查询结果id
 
@@ -69,7 +69,7 @@ class CheckDataFilterResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckDataFilterResponse.
+        r"""Sets the id of this CheckDataFilterResponse.
 
         查询结果id
 
@@ -80,7 +80,7 @@ class CheckDataFilterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CheckDataFilterResponse.
+        r"""Gets the status of this CheckDataFilterResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -91,7 +91,7 @@ class CheckDataFilterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckDataFilterResponse.
+        r"""Sets the status of this CheckDataFilterResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -102,7 +102,7 @@ class CheckDataFilterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CheckDataFilterResponse.
+        r"""Gets the job_id of this CheckDataFilterResponse.
 
         任务ID
 
@@ -113,7 +113,7 @@ class CheckDataFilterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CheckDataFilterResponse.
+        r"""Sets the job_id of this CheckDataFilterResponse.
 
         任务ID
 

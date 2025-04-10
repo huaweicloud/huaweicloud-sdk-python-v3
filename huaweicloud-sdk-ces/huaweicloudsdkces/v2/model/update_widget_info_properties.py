@@ -29,7 +29,7 @@ class UpdateWidgetInfoProperties:
     }
 
     def __init__(self, filter=None, top_n=None, order=None):
-        """UpdateWidgetInfoProperties
+        r"""UpdateWidgetInfoProperties
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateWidgetInfoProperties:
 
     @property
     def filter(self):
-        """Gets the filter of this UpdateWidgetInfoProperties.
+        r"""Gets the filter of this UpdateWidgetInfoProperties.
 
         聚合类型，目前只有TopN这一种类型
 
@@ -68,7 +68,7 @@ class UpdateWidgetInfoProperties:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this UpdateWidgetInfoProperties.
+        r"""Sets the filter of this UpdateWidgetInfoProperties.
 
         聚合类型，目前只有TopN这一种类型
 
@@ -79,7 +79,7 @@ class UpdateWidgetInfoProperties:
 
     @property
     def top_n(self):
-        """Gets the top_n of this UpdateWidgetInfoProperties.
+        r"""Gets the top_n of this UpdateWidgetInfoProperties.
 
         Top值前N个
 
@@ -90,7 +90,7 @@ class UpdateWidgetInfoProperties:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this UpdateWidgetInfoProperties.
+        r"""Sets the top_n of this UpdateWidgetInfoProperties.
 
         Top值前N个
 
@@ -101,7 +101,7 @@ class UpdateWidgetInfoProperties:
 
     @property
     def order(self):
-        """Gets the order of this UpdateWidgetInfoProperties.
+        r"""Gets the order of this UpdateWidgetInfoProperties.
 
         排序字段，asc正序，desc倒序
 
@@ -112,7 +112,7 @@ class UpdateWidgetInfoProperties:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this UpdateWidgetInfoProperties.
+        r"""Sets the order of this UpdateWidgetInfoProperties.
 
         排序字段，asc正序，desc倒序
 

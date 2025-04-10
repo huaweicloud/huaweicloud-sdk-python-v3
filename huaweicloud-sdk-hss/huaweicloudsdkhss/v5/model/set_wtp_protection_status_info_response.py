@@ -24,7 +24,7 @@ class SetWtpProtectionStatusInfoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetWtpProtectionStatusInfoResponse
+        r"""SetWtpProtectionStatusInfoResponse
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class MetricDataDetail:
     }
 
     def __init__(self, name=None, value=None, read_at=None, dimension=None):
-        """MetricDataDetail
+        r"""MetricDataDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MetricDataDetail:
 
     @property
     def name(self):
-        """Gets the name of this MetricDataDetail.
+        r"""Gets the name of this MetricDataDetail.
 
         监控指标名称，当前包含指标： - cpu_used：该维度vCPU已使用核数，单位：个，支持维度：site_id，flavor - cpu_available_total：用户可使用该维度vCPU总核数，单位：个，支持维度：site_id，flavor - cpu_total：该维度vCPU总核数（包含HA等预留核数），单位：个，支持维度：site_id，flavor - memory_used：该维度内存已使用量，单位：Gb，支持维度：site_id，flavor - memory_available_total：用户可使用该维度内存总量，单位：Gb，支持维度：site_id，flavor - memory_total：该维度内存总量（包含HA等预留内存量），单位：Gb，支持维度：site_id，flavor - capacity_used：该维度块存储资源已使用量，单位：GiB，支持维度：site_id，storage - capacity_available_total：用户可使用该维度块存储资源总容量（用户订购开通的存储容量），单位：GiB，支持维度：site_id，storage - capacity_total：当前已订购的资源场景下该维度块存储资源最大容量（订购资源包含的存储容量可能大于用户已开通容量），单位：GiB，支持维度：site_id，storage - available：该维度对应规格剩余可发放数量，单位：台，支持维度：flavor_capacity
 
@@ -75,7 +75,7 @@ class MetricDataDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetricDataDetail.
+        r"""Sets the name of this MetricDataDetail.
 
         监控指标名称，当前包含指标： - cpu_used：该维度vCPU已使用核数，单位：个，支持维度：site_id，flavor - cpu_available_total：用户可使用该维度vCPU总核数，单位：个，支持维度：site_id，flavor - cpu_total：该维度vCPU总核数（包含HA等预留核数），单位：个，支持维度：site_id，flavor - memory_used：该维度内存已使用量，单位：Gb，支持维度：site_id，flavor - memory_available_total：用户可使用该维度内存总量，单位：Gb，支持维度：site_id，flavor - memory_total：该维度内存总量（包含HA等预留内存量），单位：Gb，支持维度：site_id，flavor - capacity_used：该维度块存储资源已使用量，单位：GiB，支持维度：site_id，storage - capacity_available_total：用户可使用该维度块存储资源总容量（用户订购开通的存储容量），单位：GiB，支持维度：site_id，storage - capacity_total：当前已订购的资源场景下该维度块存储资源最大容量（订购资源包含的存储容量可能大于用户已开通容量），单位：GiB，支持维度：site_id，storage - available：该维度对应规格剩余可发放数量，单位：台，支持维度：flavor_capacity
 
@@ -86,7 +86,7 @@ class MetricDataDetail:
 
     @property
     def value(self):
-        """Gets the value of this MetricDataDetail.
+        r"""Gets the value of this MetricDataDetail.
 
         监控值
 
@@ -97,7 +97,7 @@ class MetricDataDetail:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MetricDataDetail.
+        r"""Sets the value of this MetricDataDetail.
 
         监控值
 
@@ -108,7 +108,7 @@ class MetricDataDetail:
 
     @property
     def read_at(self):
-        """Gets the read_at of this MetricDataDetail.
+        r"""Gets the read_at of this MetricDataDetail.
 
         记录更新时间
 
@@ -119,7 +119,7 @@ class MetricDataDetail:
 
     @read_at.setter
     def read_at(self, read_at):
-        """Sets the read_at of this MetricDataDetail.
+        r"""Sets the read_at of this MetricDataDetail.
 
         记录更新时间
 
@@ -130,7 +130,7 @@ class MetricDataDetail:
 
     @property
     def dimension(self):
-        """Gets the dimension of this MetricDataDetail.
+        r"""Gets the dimension of this MetricDataDetail.
 
         :return: The dimension of this MetricDataDetail.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.MetricDataDetailDimension`
@@ -139,7 +139,7 @@ class MetricDataDetail:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this MetricDataDetail.
+        r"""Sets the dimension of this MetricDataDetail.
 
         :param dimension: The dimension of this MetricDataDetail.
         :type dimension: :class:`huaweicloudsdkcloudpond.v1.MetricDataDetailDimension`

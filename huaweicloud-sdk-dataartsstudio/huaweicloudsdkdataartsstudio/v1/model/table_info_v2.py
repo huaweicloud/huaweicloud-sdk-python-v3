@@ -31,7 +31,7 @@ class TableInfoV2:
     }
 
     def __init__(self, catalog=None, database=None, schema=None, table=None):
-        """TableInfoV2
+        r"""TableInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TableInfoV2:
 
     @property
     def catalog(self):
-        """Gets the catalog of this TableInfoV2.
+        r"""Gets the catalog of this TableInfoV2.
 
         目录名称
 
@@ -75,7 +75,7 @@ class TableInfoV2:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this TableInfoV2.
+        r"""Sets the catalog of this TableInfoV2.
 
         目录名称
 
@@ -86,7 +86,7 @@ class TableInfoV2:
 
     @property
     def database(self):
-        """Gets the database of this TableInfoV2.
+        r"""Gets the database of this TableInfoV2.
 
         数据库名称
 
@@ -97,7 +97,7 @@ class TableInfoV2:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this TableInfoV2.
+        r"""Sets the database of this TableInfoV2.
 
         数据库名称
 
@@ -108,7 +108,7 @@ class TableInfoV2:
 
     @property
     def schema(self):
-        """Gets the schema of this TableInfoV2.
+        r"""Gets the schema of this TableInfoV2.
 
         逻辑库名称
 
@@ -119,7 +119,7 @@ class TableInfoV2:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this TableInfoV2.
+        r"""Sets the schema of this TableInfoV2.
 
         逻辑库名称
 
@@ -130,7 +130,7 @@ class TableInfoV2:
 
     @property
     def table(self):
-        """Gets the table of this TableInfoV2.
+        r"""Gets the table of this TableInfoV2.
 
         表名称
 
@@ -141,7 +141,7 @@ class TableInfoV2:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this TableInfoV2.
+        r"""Sets the table of this TableInfoV2.
 
         表名称
 

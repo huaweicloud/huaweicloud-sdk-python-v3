@@ -25,7 +25,7 @@ class ShowOperationRequest:
     }
 
     def __init__(self, operation_id=None):
-        """ShowOperationRequest
+        r"""ShowOperationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowOperationRequest:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this ShowOperationRequest.
+        r"""Gets the operation_id of this ShowOperationRequest.
 
         操作ID。
 
@@ -53,7 +53,7 @@ class ShowOperationRequest:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this ShowOperationRequest.
+        r"""Sets the operation_id of this ShowOperationRequest.
 
         操作ID。
 

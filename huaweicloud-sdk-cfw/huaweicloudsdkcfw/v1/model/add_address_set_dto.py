@@ -31,7 +31,7 @@ class AddAddressSetDto:
     }
 
     def __init__(self, object_id=None, name=None, description=None, address_type=None):
-        """AddAddressSetDto
+        r"""AddAddressSetDto
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class AddAddressSetDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AddAddressSetDto.
+        r"""Gets the object_id of this AddAddressSetDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -73,7 +73,7 @@ class AddAddressSetDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AddAddressSetDto.
+        r"""Sets the object_id of this AddAddressSetDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -84,7 +84,7 @@ class AddAddressSetDto:
 
     @property
     def name(self):
-        """Gets the name of this AddAddressSetDto.
+        r"""Gets the name of this AddAddressSetDto.
 
         地址组名称
 
@@ -95,7 +95,7 @@ class AddAddressSetDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddAddressSetDto.
+        r"""Sets the name of this AddAddressSetDto.
 
         地址组名称
 
@@ -106,7 +106,7 @@ class AddAddressSetDto:
 
     @property
     def description(self):
-        """Gets the description of this AddAddressSetDto.
+        r"""Gets the description of this AddAddressSetDto.
 
         地址组描述
 
@@ -117,7 +117,7 @@ class AddAddressSetDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddAddressSetDto.
+        r"""Sets the description of this AddAddressSetDto.
 
         地址组描述
 
@@ -128,7 +128,7 @@ class AddAddressSetDto:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddAddressSetDto.
+        r"""Gets the address_type of this AddAddressSetDto.
 
         地址类型0 ipv4，1 ipv6
 
@@ -139,7 +139,7 @@ class AddAddressSetDto:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddAddressSetDto.
+        r"""Sets the address_type of this AddAddressSetDto.
 
         地址类型0 ipv4，1 ipv6
 

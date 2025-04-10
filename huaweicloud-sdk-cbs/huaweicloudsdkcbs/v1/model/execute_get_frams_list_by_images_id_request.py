@@ -29,7 +29,7 @@ class ExecuteGetFramsListByImagesIdRequest:
     }
 
     def __init__(self, image_id=None, offset=None, limit=None):
-        """ExecuteGetFramsListByImagesIdRequest
+        r"""ExecuteGetFramsListByImagesIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExecuteGetFramsListByImagesIdRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ExecuteGetFramsListByImagesIdRequest.
+        r"""Gets the image_id of this ExecuteGetFramsListByImagesIdRequest.
 
         图片id
 
@@ -67,7 +67,7 @@ class ExecuteGetFramsListByImagesIdRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ExecuteGetFramsListByImagesIdRequest.
+        r"""Sets the image_id of this ExecuteGetFramsListByImagesIdRequest.
 
         图片id
 
@@ -78,7 +78,7 @@ class ExecuteGetFramsListByImagesIdRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetFramsListByImagesIdRequest.
+        r"""Gets the offset of this ExecuteGetFramsListByImagesIdRequest.
 
         偏移量，默认为零
 
@@ -89,7 +89,7 @@ class ExecuteGetFramsListByImagesIdRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetFramsListByImagesIdRequest.
+        r"""Sets the offset of this ExecuteGetFramsListByImagesIdRequest.
 
         偏移量，默认为零
 
@@ -100,7 +100,7 @@ class ExecuteGetFramsListByImagesIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExecuteGetFramsListByImagesIdRequest.
+        r"""Gets the limit of this ExecuteGetFramsListByImagesIdRequest.
 
         分页限制数
 
@@ -111,7 +111,7 @@ class ExecuteGetFramsListByImagesIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExecuteGetFramsListByImagesIdRequest.
+        r"""Sets the limit of this ExecuteGetFramsListByImagesIdRequest.
 
         分页限制数
 

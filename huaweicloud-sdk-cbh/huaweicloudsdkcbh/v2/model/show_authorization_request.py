@@ -23,7 +23,7 @@ class ShowAuthorizationRequest:
     }
 
     def __init__(self):
-        """ShowAuthorizationRequest
+        r"""ShowAuthorizationRequest
 
         The model defined in huaweicloud sdk
 

@@ -59,7 +59,7 @@ class Image:
     }
 
     def __init__(self, image_id=None, min_disk=None, created_at=None, image_size=None, updated_at=None, product_code=None, max_ram=None, market_resource_type_code=None, min_ram=None, os_type=None, image_type=None, tags=None, platform=None, os_bit=None, os_version=None, name=None, market_service_type_code=None, status=None):
-        """Image
+        r"""Image
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class Image:
 
     @property
     def image_id(self):
-        """Gets the image_id of this Image.
+        r"""Gets the image_id of this Image.
 
         镜像id。
 
@@ -173,7 +173,7 @@ class Image:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this Image.
+        r"""Sets the image_id of this Image.
 
         镜像id。
 
@@ -184,7 +184,7 @@ class Image:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this Image.
+        r"""Gets the min_disk of this Image.
 
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。。
 
@@ -195,7 +195,7 @@ class Image:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this Image.
+        r"""Sets the min_disk of this Image.
 
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。。
 
@@ -206,7 +206,7 @@ class Image:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Image.
+        r"""Gets the created_at of this Image.
 
         创建时间，格式为UTC时间，yyyy-MM-ddTHH:mm:ssZ。
 
@@ -217,7 +217,7 @@ class Image:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Image.
+        r"""Sets the created_at of this Image.
 
         创建时间，格式为UTC时间，yyyy-MM-ddTHH:mm:ssZ。
 
@@ -228,7 +228,7 @@ class Image:
 
     @property
     def image_size(self):
-        """Gets the image_size of this Image.
+        r"""Gets the image_size of this Image.
 
         镜像文件的大小，单位为字节。
 
@@ -239,7 +239,7 @@ class Image:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this Image.
+        r"""Sets the image_size of this Image.
 
         镜像文件的大小，单位为字节。
 
@@ -250,7 +250,7 @@ class Image:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Image.
+        r"""Gets the updated_at of this Image.
 
         更新时间，格式为UTC时间，yyyy-MM-ddTHH:mm:ssZ。
 
@@ -261,7 +261,7 @@ class Image:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Image.
+        r"""Sets the updated_at of this Image.
 
         更新时间，格式为UTC时间，yyyy-MM-ddTHH:mm:ssZ。
 
@@ -272,7 +272,7 @@ class Image:
 
     @property
     def product_code(self):
-        """Gets the product_code of this Image.
+        r"""Gets the product_code of this Image.
 
         市场镜像的产品ID。
 
@@ -283,7 +283,7 @@ class Image:
 
     @product_code.setter
     def product_code(self, product_code):
-        """Sets the product_code of this Image.
+        r"""Sets the product_code of this Image.
 
         市场镜像的产品ID。
 
@@ -294,7 +294,7 @@ class Image:
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this Image.
+        r"""Gets the max_ram of this Image.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -305,7 +305,7 @@ class Image:
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this Image.
+        r"""Sets the max_ram of this Image.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -316,7 +316,7 @@ class Image:
 
     @property
     def market_resource_type_code(self):
-        """Gets the market_resource_type_code of this Image.
+        r"""Gets the market_resource_type_code of this Image.
 
         云市场资源类型编码。
 
@@ -327,7 +327,7 @@ class Image:
 
     @market_resource_type_code.setter
     def market_resource_type_code(self, market_resource_type_code):
-        """Sets the market_resource_type_code of this Image.
+        r"""Sets the market_resource_type_code of this Image.
 
         云市场资源类型编码。
 
@@ -338,7 +338,7 @@ class Image:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this Image.
+        r"""Gets the min_ram of this Image.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0。
 
@@ -349,7 +349,7 @@ class Image:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this Image.
+        r"""Sets the min_ram of this Image.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0。
 
@@ -360,7 +360,7 @@ class Image:
 
     @property
     def os_type(self):
-        """Gets the os_type of this Image.
+        r"""Gets the os_type of this Image.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
@@ -371,7 +371,7 @@ class Image:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this Image.
+        r"""Sets the os_type of this Image.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
@@ -382,7 +382,7 @@ class Image:
 
     @property
     def image_type(self):
-        """Gets the image_type of this Image.
+        r"""Gets the image_type of this Image.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared。
 
@@ -393,7 +393,7 @@ class Image:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this Image.
+        r"""Sets the image_type of this Image.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared。
 
@@ -404,7 +404,7 @@ class Image:
 
     @property
     def tags(self):
-        """Gets the tags of this Image.
+        r"""Gets the tags of this Image.
 
         镜像标签列表。
 
@@ -415,7 +415,7 @@ class Image:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Image.
+        r"""Sets the tags of this Image.
 
         镜像标签列表。
 
@@ -426,7 +426,7 @@ class Image:
 
     @property
     def platform(self):
-        """Gets the platform of this Image.
+        r"""Gets the platform of this Image.
 
         镜像平台分类。
 
@@ -437,7 +437,7 @@ class Image:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this Image.
+        r"""Sets the platform of this Image.
 
         镜像平台分类。
 
@@ -448,7 +448,7 @@ class Image:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this Image.
+        r"""Gets the os_bit of this Image.
 
         操作系统位数，一般取值为“32”或者“64”。
 
@@ -459,7 +459,7 @@ class Image:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this Image.
+        r"""Sets the os_bit of this Image.
 
         操作系统位数，一般取值为“32”或者“64”。
 
@@ -470,7 +470,7 @@ class Image:
 
     @property
     def os_version(self):
-        """Gets the os_version of this Image.
+        r"""Gets the os_version of this Image.
 
         操作系统具体版本。
 
@@ -481,7 +481,7 @@ class Image:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this Image.
+        r"""Sets the os_version of this Image.
 
         操作系统具体版本。
 
@@ -492,7 +492,7 @@ class Image:
 
     @property
     def name(self):
-        """Gets the name of this Image.
+        r"""Gets the name of this Image.
 
         镜像名称。
 
@@ -503,7 +503,7 @@ class Image:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Image.
+        r"""Sets the name of this Image.
 
         镜像名称。
 
@@ -514,7 +514,7 @@ class Image:
 
     @property
     def market_service_type_code(self):
-        """Gets the market_service_type_code of this Image.
+        r"""Gets the market_service_type_code of this Image.
 
         云市场服务类型编码。
 
@@ -525,7 +525,7 @@ class Image:
 
     @market_service_type_code.setter
     def market_service_type_code(self, market_service_type_code):
-        """Sets the market_service_type_code of this Image.
+        r"""Sets the market_service_type_code of this Image.
 
         云市场服务类型编码。
 
@@ -536,7 +536,7 @@ class Image:
 
     @property
     def status(self):
-        """Gets the status of this Image.
+        r"""Gets the status of this Image.
 
         镜像状态。
 
@@ -547,7 +547,7 @@ class Image:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Image.
+        r"""Sets the status of this Image.
 
         镜像状态。
 

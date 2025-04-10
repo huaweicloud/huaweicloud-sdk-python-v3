@@ -33,7 +33,7 @@ class Reference:
     }
 
     def __init__(self, title=None, url=None, type=None, productshort=None, is_valid=None):
-        """Reference
+        r"""Reference
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Reference:
 
     @property
     def title(self):
-        """Gets the title of this Reference.
+        r"""Gets the title of this Reference.
 
         标题名称。
 
@@ -82,7 +82,7 @@ class Reference:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this Reference.
+        r"""Sets the title of this Reference.
 
         标题名称。
 
@@ -93,7 +93,7 @@ class Reference:
 
     @property
     def url(self):
-        """Gets the url of this Reference.
+        r"""Gets the url of this Reference.
 
         链接地址。
 
@@ -104,7 +104,7 @@ class Reference:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Reference.
+        r"""Sets the url of this Reference.
 
         链接地址。
 
@@ -115,7 +115,7 @@ class Reference:
 
     @property
     def type(self):
-        """Gets the type of this Reference.
+        r"""Gets the type of this Reference.
 
         关联类型。
 
@@ -126,7 +126,7 @@ class Reference:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Reference.
+        r"""Sets the type of this Reference.
 
         关联类型。
 
@@ -137,7 +137,7 @@ class Reference:
 
     @property
     def productshort(self):
-        """Gets the productshort of this Reference.
+        r"""Gets the productshort of this Reference.
 
         产品短名。
 
@@ -148,7 +148,7 @@ class Reference:
 
     @productshort.setter
     def productshort(self, productshort):
-        """Sets the productshort of this Reference.
+        r"""Sets the productshort of this Reference.
 
         产品短名。
 
@@ -159,7 +159,7 @@ class Reference:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this Reference.
+        r"""Gets the is_valid of this Reference.
 
         是否有效
 
@@ -170,7 +170,7 @@ class Reference:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this Reference.
+        r"""Sets the is_valid of this Reference.
 
         是否有效
 

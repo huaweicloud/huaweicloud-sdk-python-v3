@@ -49,7 +49,7 @@ class OsExtraSpecs:
     }
 
     def __init__(self, resource_type=None, capabilitiescpu_arch=None, baremetaldisk_detail=None, capabilitieshypervisor_type=None, baremetal__support_evs=None, baremetalext_boot_type=None, capabilitiesboard_type=None, baremetalnet_num=None, baremetalnetcard_detail=None, baremetalcpu_detail=None, baremetalmemory_detail=None, condoperationstatus=None, condoperationaz=None):
-        """OsExtraSpecs
+        r"""OsExtraSpecs
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class OsExtraSpecs:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this OsExtraSpecs.
+        r"""Gets the resource_type of this OsExtraSpecs.
 
         识该规格对应的资源类型，取值范围为“ironic”。
 
@@ -129,7 +129,7 @@ class OsExtraSpecs:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this OsExtraSpecs.
+        r"""Sets the resource_type of this OsExtraSpecs.
 
         识该规格对应的资源类型，取值范围为“ironic”。
 
@@ -140,7 +140,7 @@ class OsExtraSpecs:
 
     @property
     def capabilitiescpu_arch(self):
-        """Gets the capabilitiescpu_arch of this OsExtraSpecs.
+        r"""Gets the capabilitiescpu_arch of this OsExtraSpecs.
 
         裸金属服务器的CPU架构类型，取值为：x86_64（适用于x86机型）aarch64（适用于ARM机型）
 
@@ -151,7 +151,7 @@ class OsExtraSpecs:
 
     @capabilitiescpu_arch.setter
     def capabilitiescpu_arch(self, capabilitiescpu_arch):
-        """Sets the capabilitiescpu_arch of this OsExtraSpecs.
+        r"""Sets the capabilitiescpu_arch of this OsExtraSpecs.
 
         裸金属服务器的CPU架构类型，取值为：x86_64（适用于x86机型）aarch64（适用于ARM机型）
 
@@ -162,7 +162,7 @@ class OsExtraSpecs:
 
     @property
     def baremetaldisk_detail(self):
-        """Gets the baremetaldisk_detail of this OsExtraSpecs.
+        r"""Gets the baremetaldisk_detail of this OsExtraSpecs.
 
         磁盘物理规格描述信息。
 
@@ -173,7 +173,7 @@ class OsExtraSpecs:
 
     @baremetaldisk_detail.setter
     def baremetaldisk_detail(self, baremetaldisk_detail):
-        """Sets the baremetaldisk_detail of this OsExtraSpecs.
+        r"""Sets the baremetaldisk_detail of this OsExtraSpecs.
 
         磁盘物理规格描述信息。
 
@@ -184,7 +184,7 @@ class OsExtraSpecs:
 
     @property
     def capabilitieshypervisor_type(self):
-        """Gets the capabilitieshypervisor_type of this OsExtraSpecs.
+        r"""Gets the capabilitieshypervisor_type of this OsExtraSpecs.
 
         标示ironic类型的规格。
 
@@ -195,7 +195,7 @@ class OsExtraSpecs:
 
     @capabilitieshypervisor_type.setter
     def capabilitieshypervisor_type(self, capabilitieshypervisor_type):
-        """Sets the capabilitieshypervisor_type of this OsExtraSpecs.
+        r"""Sets the capabilitieshypervisor_type of this OsExtraSpecs.
 
         标示ironic类型的规格。
 
@@ -206,7 +206,7 @@ class OsExtraSpecs:
 
     @property
     def baremetal__support_evs(self):
-        """Gets the baremetal__support_evs of this OsExtraSpecs.
+        r"""Gets the baremetal__support_evs of this OsExtraSpecs.
 
         标识当前的规格是否支持挂载EVS卷。truefalse
 
@@ -217,7 +217,7 @@ class OsExtraSpecs:
 
     @baremetal__support_evs.setter
     def baremetal__support_evs(self, baremetal__support_evs):
-        """Sets the baremetal__support_evs of this OsExtraSpecs.
+        r"""Sets the baremetal__support_evs of this OsExtraSpecs.
 
         标识当前的规格是否支持挂载EVS卷。truefalse
 
@@ -228,7 +228,7 @@ class OsExtraSpecs:
 
     @property
     def baremetalext_boot_type(self):
-        """Gets the baremetalext_boot_type of this OsExtraSpecs.
+        r"""Gets the baremetalext_boot_type of this OsExtraSpecs.
 
         裸金属服务器启动源。LocalDisk：本地盘Volume：云硬盘（快速发放）
 
@@ -239,7 +239,7 @@ class OsExtraSpecs:
 
     @baremetalext_boot_type.setter
     def baremetalext_boot_type(self, baremetalext_boot_type):
-        """Sets the baremetalext_boot_type of this OsExtraSpecs.
+        r"""Sets the baremetalext_boot_type of this OsExtraSpecs.
 
         裸金属服务器启动源。LocalDisk：本地盘Volume：云硬盘（快速发放）
 
@@ -250,7 +250,7 @@ class OsExtraSpecs:
 
     @property
     def capabilitiesboard_type(self):
-        """Gets the capabilitiesboard_type of this OsExtraSpecs.
+        r"""Gets the capabilitiesboard_type of this OsExtraSpecs.
 
         裸金属服务器的规格类型。格式为规格的缩写，例如规格名称为“physical.o2.medium”，则规格类型为“o2m”。
 
@@ -261,7 +261,7 @@ class OsExtraSpecs:
 
     @capabilitiesboard_type.setter
     def capabilitiesboard_type(self, capabilitiesboard_type):
-        """Sets the capabilitiesboard_type of this OsExtraSpecs.
+        r"""Sets the capabilitiesboard_type of this OsExtraSpecs.
 
         裸金属服务器的规格类型。格式为规格的缩写，例如规格名称为“physical.o2.medium”，则规格类型为“o2m”。
 
@@ -272,7 +272,7 @@ class OsExtraSpecs:
 
     @property
     def baremetalnet_num(self):
-        """Gets the baremetalnet_num of this OsExtraSpecs.
+        r"""Gets the baremetalnet_num of this OsExtraSpecs.
 
         实际可挂载网络数量。
 
@@ -283,7 +283,7 @@ class OsExtraSpecs:
 
     @baremetalnet_num.setter
     def baremetalnet_num(self, baremetalnet_num):
-        """Sets the baremetalnet_num of this OsExtraSpecs.
+        r"""Sets the baremetalnet_num of this OsExtraSpecs.
 
         实际可挂载网络数量。
 
@@ -294,7 +294,7 @@ class OsExtraSpecs:
 
     @property
     def baremetalnetcard_detail(self):
-        """Gets the baremetalnetcard_detail of this OsExtraSpecs.
+        r"""Gets the baremetalnetcard_detail of this OsExtraSpecs.
 
         网卡物理规格描述信息。
 
@@ -305,7 +305,7 @@ class OsExtraSpecs:
 
     @baremetalnetcard_detail.setter
     def baremetalnetcard_detail(self, baremetalnetcard_detail):
-        """Sets the baremetalnetcard_detail of this OsExtraSpecs.
+        r"""Sets the baremetalnetcard_detail of this OsExtraSpecs.
 
         网卡物理规格描述信息。
 
@@ -316,7 +316,7 @@ class OsExtraSpecs:
 
     @property
     def baremetalcpu_detail(self):
-        """Gets the baremetalcpu_detail of this OsExtraSpecs.
+        r"""Gets the baremetalcpu_detail of this OsExtraSpecs.
 
         CPU物理规格描述信息。
 
@@ -327,7 +327,7 @@ class OsExtraSpecs:
 
     @baremetalcpu_detail.setter
     def baremetalcpu_detail(self, baremetalcpu_detail):
-        """Sets the baremetalcpu_detail of this OsExtraSpecs.
+        r"""Sets the baremetalcpu_detail of this OsExtraSpecs.
 
         CPU物理规格描述信息。
 
@@ -338,7 +338,7 @@ class OsExtraSpecs:
 
     @property
     def baremetalmemory_detail(self):
-        """Gets the baremetalmemory_detail of this OsExtraSpecs.
+        r"""Gets the baremetalmemory_detail of this OsExtraSpecs.
 
         内存物理规格描述信息
 
@@ -349,7 +349,7 @@ class OsExtraSpecs:
 
     @baremetalmemory_detail.setter
     def baremetalmemory_detail(self, baremetalmemory_detail):
-        """Sets the baremetalmemory_detail of this OsExtraSpecs.
+        r"""Sets the baremetalmemory_detail of this OsExtraSpecs.
 
         内存物理规格描述信息
 
@@ -360,7 +360,7 @@ class OsExtraSpecs:
 
     @property
     def condoperationstatus(self):
-        """Gets the condoperationstatus of this OsExtraSpecs.
+        r"""Gets the condoperationstatus of this OsExtraSpecs.
 
         裸金属服务器规格状态。不配置时等同于normal。normal：正常商用abandon：下线（即不显示）sellout：售罄obt：公测promotion：推荐（等同normal，也是商用）
 
@@ -371,7 +371,7 @@ class OsExtraSpecs:
 
     @condoperationstatus.setter
     def condoperationstatus(self, condoperationstatus):
-        """Sets the condoperationstatus of this OsExtraSpecs.
+        r"""Sets the condoperationstatus of this OsExtraSpecs.
 
         裸金属服务器规格状态。不配置时等同于normal。normal：正常商用abandon：下线（即不显示）sellout：售罄obt：公测promotion：推荐（等同normal，也是商用）
 
@@ -382,7 +382,7 @@ class OsExtraSpecs:
 
     @property
     def condoperationaz(self):
-        """Gets the condoperationaz of this OsExtraSpecs.
+        r"""Gets the condoperationaz of this OsExtraSpecs.
 
         在某个AZ的裸金属服务器规格状态。此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。格式：az(xx)。()内为某个AZ下的裸金属服务器规格状态，()内必须填写状态，不填为无效配置。例如：规格在某个区域的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：“cond:operation:status”设置为“abandon”“cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(promotion)” 说明：如果规格在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
 
@@ -393,7 +393,7 @@ class OsExtraSpecs:
 
     @condoperationaz.setter
     def condoperationaz(self, condoperationaz):
-        """Sets the condoperationaz of this OsExtraSpecs.
+        r"""Sets the condoperationaz of this OsExtraSpecs.
 
         在某个AZ的裸金属服务器规格状态。此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。格式：az(xx)。()内为某个AZ下的裸金属服务器规格状态，()内必须填写状态，不填为无效配置。例如：规格在某个区域的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：“cond:operation:status”设置为“abandon”“cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(promotion)” 说明：如果规格在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
 

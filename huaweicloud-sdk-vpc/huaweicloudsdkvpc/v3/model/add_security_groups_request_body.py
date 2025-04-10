@@ -25,7 +25,7 @@ class AddSecurityGroupsRequestBody:
     }
 
     def __init__(self, port=None):
-        """AddSecurityGroupsRequestBody
+        r"""AddSecurityGroupsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddSecurityGroupsRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this AddSecurityGroupsRequestBody.
+        r"""Gets the port of this AddSecurityGroupsRequestBody.
 
         :return: The port of this AddSecurityGroupsRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.InsertSecurityGroupOption`
@@ -51,7 +51,7 @@ class AddSecurityGroupsRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AddSecurityGroupsRequestBody.
+        r"""Sets the port of this AddSecurityGroupsRequestBody.
 
         :param port: The port of this AddSecurityGroupsRequestBody.
         :type port: :class:`huaweicloudsdkvpc.v3.InsertSecurityGroupOption`

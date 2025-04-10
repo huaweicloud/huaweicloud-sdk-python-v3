@@ -26,7 +26,7 @@ class UploadSpecialConfigurationSettingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UploadSpecialConfigurationSettingResponse
+        r"""UploadSpecialConfigurationSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadSpecialConfigurationSettingResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UploadSpecialConfigurationSettingResponse.
+        r"""Gets the body of this UploadSpecialConfigurationSettingResponse.
 
         上传相关配置成功
 
@@ -55,7 +55,7 @@ class UploadSpecialConfigurationSettingResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadSpecialConfigurationSettingResponse.
+        r"""Sets the body of this UploadSpecialConfigurationSettingResponse.
 
         上传相关配置成功
 

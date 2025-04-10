@@ -29,7 +29,7 @@ class CdmClusterDatastoreVersion:
     }
 
     def __init__(self, id=None, name=None, flavors=None):
-        """CdmClusterDatastoreVersion
+        r"""CdmClusterDatastoreVersion
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CdmClusterDatastoreVersion:
 
     @property
     def id(self):
-        """Gets the id of this CdmClusterDatastoreVersion.
+        r"""Gets the id of this CdmClusterDatastoreVersion.
 
         版本ID。
 
@@ -68,7 +68,7 @@ class CdmClusterDatastoreVersion:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CdmClusterDatastoreVersion.
+        r"""Sets the id of this CdmClusterDatastoreVersion.
 
         版本ID。
 
@@ -79,7 +79,7 @@ class CdmClusterDatastoreVersion:
 
     @property
     def name(self):
-        """Gets the name of this CdmClusterDatastoreVersion.
+        r"""Gets the name of this CdmClusterDatastoreVersion.
 
         版本名称。
 
@@ -90,7 +90,7 @@ class CdmClusterDatastoreVersion:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdmClusterDatastoreVersion.
+        r"""Sets the name of this CdmClusterDatastoreVersion.
 
         版本名称。
 
@@ -101,7 +101,7 @@ class CdmClusterDatastoreVersion:
 
     @property
     def flavors(self):
-        """Gets the flavors of this CdmClusterDatastoreVersion.
+        r"""Gets the flavors of this CdmClusterDatastoreVersion.
 
         规格信息。
 
@@ -112,7 +112,7 @@ class CdmClusterDatastoreVersion:
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this CdmClusterDatastoreVersion.
+        r"""Sets the flavors of this CdmClusterDatastoreVersion.
 
         规格信息。
 

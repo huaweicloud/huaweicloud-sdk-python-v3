@@ -25,7 +25,7 @@ class CdmStopClusterReq:
     }
 
     def __init__(self, stop=None):
-        """CdmStopClusterReq
+        r"""CdmStopClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CdmStopClusterReq:
 
     @property
     def stop(self):
-        """Gets the stop of this CdmStopClusterReq.
+        r"""Gets the stop of this CdmStopClusterReq.
 
         :return: The stop of this CdmStopClusterReq.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`
@@ -51,7 +51,7 @@ class CdmStopClusterReq:
 
     @stop.setter
     def stop(self, stop):
-        """Sets the stop of this CdmStopClusterReq.
+        r"""Sets the stop of this CdmStopClusterReq.
 
         :param stop: The stop of this CdmStopClusterReq.
         :type stop: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`

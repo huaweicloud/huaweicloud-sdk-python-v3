@@ -31,7 +31,7 @@ class ShowSqlSwitchStatusRequest:
     }
 
     def __init__(self, instance_id=None, type=None, datastore_type=None, x_language=None):
-        """ShowSqlSwitchStatusRequest
+        r"""ShowSqlSwitchStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowSqlSwitchStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSqlSwitchStatusRequest.
+        r"""Gets the instance_id of this ShowSqlSwitchStatusRequest.
 
         实例ID。
 
@@ -72,7 +72,7 @@ class ShowSqlSwitchStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSqlSwitchStatusRequest.
+        r"""Sets the instance_id of this ShowSqlSwitchStatusRequest.
 
         实例ID。
 
@@ -83,7 +83,7 @@ class ShowSqlSwitchStatusRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowSqlSwitchStatusRequest.
+        r"""Gets the type of this ShowSqlSwitchStatusRequest.
 
         开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
 
@@ -94,7 +94,7 @@ class ShowSqlSwitchStatusRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSqlSwitchStatusRequest.
+        r"""Sets the type of this ShowSqlSwitchStatusRequest.
 
         开关类型。取值DAS SQL Explorer和DAS Slow Query Log，分别表示DAS收集全量SQL开关和DAS收集慢SQL开关。
 
@@ -105,7 +105,7 @@ class ShowSqlSwitchStatusRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ShowSqlSwitchStatusRequest.
+        r"""Gets the datastore_type of this ShowSqlSwitchStatusRequest.
 
         数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
 
@@ -116,7 +116,7 @@ class ShowSqlSwitchStatusRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ShowSqlSwitchStatusRequest.
+        r"""Sets the datastore_type of this ShowSqlSwitchStatusRequest.
 
         数据库类型。当前全量SQL支持的数据库类型包括MySQL和GaussDB(for MySQL)，慢SQL支持的类型：MySQL、GaussDB(for MySQL)、PostgreSQL。
 
@@ -127,7 +127,7 @@ class ShowSqlSwitchStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSqlSwitchStatusRequest.
+        r"""Gets the x_language of this ShowSqlSwitchStatusRequest.
 
         请求语言类型。
 
@@ -138,7 +138,7 @@ class ShowSqlSwitchStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSqlSwitchStatusRequest.
+        r"""Sets the x_language of this ShowSqlSwitchStatusRequest.
 
         请求语言类型。
 

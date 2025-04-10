@@ -67,7 +67,7 @@ class ListInstance:
     }
 
     def __init__(self, id=None, instancename=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, security_group_ids=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, hosts=None, server_id=None, create_time=None, instance_name=None):
-        """ListInstance
+        r"""ListInstance
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ListInstance:
 
     @property
     def id(self):
-        """Gets the id of this ListInstance.
+        r"""Gets the id of this ListInstance.
 
         独享引擎实例ID
 
@@ -201,7 +201,7 @@ class ListInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstance.
+        r"""Sets the id of this ListInstance.
 
         独享引擎实例ID
 
@@ -212,7 +212,7 @@ class ListInstance:
 
     @property
     def instancename(self):
-        """Gets the instancename of this ListInstance.
+        r"""Gets the instancename of this ListInstance.
 
         独享引擎实例名称
 
@@ -223,7 +223,7 @@ class ListInstance:
 
     @instancename.setter
     def instancename(self, instancename):
-        """Sets the instancename of this ListInstance.
+        r"""Sets the instancename of this ListInstance.
 
         独享引擎实例名称
 
@@ -234,7 +234,7 @@ class ListInstance:
 
     @property
     def region(self):
-        """Gets the region of this ListInstance.
+        r"""Gets the region of this ListInstance.
 
         独享引擎实例Region ID
 
@@ -245,7 +245,7 @@ class ListInstance:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListInstance.
+        r"""Sets the region of this ListInstance.
 
         独享引擎实例Region ID
 
@@ -256,7 +256,7 @@ class ListInstance:
 
     @property
     def zone(self):
-        """Gets the zone of this ListInstance.
+        r"""Gets the zone of this ListInstance.
 
         可用区ID
 
@@ -267,7 +267,7 @@ class ListInstance:
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this ListInstance.
+        r"""Sets the zone of this ListInstance.
 
         可用区ID
 
@@ -278,7 +278,7 @@ class ListInstance:
 
     @property
     def arch(self):
-        """Gets the arch of this ListInstance.
+        r"""Gets the arch of this ListInstance.
 
         CPU架构
 
@@ -289,7 +289,7 @@ class ListInstance:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ListInstance.
+        r"""Sets the arch of this ListInstance.
 
         CPU架构
 
@@ -300,7 +300,7 @@ class ListInstance:
 
     @property
     def cpu_flavor(self):
-        """Gets the cpu_flavor of this ListInstance.
+        r"""Gets the cpu_flavor of this ListInstance.
 
         ECS规格
 
@@ -311,7 +311,7 @@ class ListInstance:
 
     @cpu_flavor.setter
     def cpu_flavor(self, cpu_flavor):
-        """Sets the cpu_flavor of this ListInstance.
+        r"""Sets the cpu_flavor of this ListInstance.
 
         ECS规格
 
@@ -322,7 +322,7 @@ class ListInstance:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListInstance.
+        r"""Gets the vpc_id of this ListInstance.
 
         独享引擎实例所在VPC ID
 
@@ -333,7 +333,7 @@ class ListInstance:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListInstance.
+        r"""Sets the vpc_id of this ListInstance.
 
         独享引擎实例所在VPC ID
 
@@ -344,7 +344,7 @@ class ListInstance:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListInstance.
+        r"""Gets the subnet_id of this ListInstance.
 
         独享引擎实例所在VPC的子网ID
 
@@ -355,7 +355,7 @@ class ListInstance:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListInstance.
+        r"""Sets the subnet_id of this ListInstance.
 
         独享引擎实例所在VPC的子网ID
 
@@ -366,7 +366,7 @@ class ListInstance:
 
     @property
     def service_ip(self):
-        """Gets the service_ip of this ListInstance.
+        r"""Gets the service_ip of this ListInstance.
 
         独享引擎实例的业务面IP
 
@@ -377,7 +377,7 @@ class ListInstance:
 
     @service_ip.setter
     def service_ip(self, service_ip):
-        """Sets the service_ip of this ListInstance.
+        r"""Sets the service_ip of this ListInstance.
 
         独享引擎实例的业务面IP
 
@@ -388,7 +388,7 @@ class ListInstance:
 
     @property
     def security_group_ids(self):
-        """Gets the security_group_ids of this ListInstance.
+        r"""Gets the security_group_ids of this ListInstance.
 
         独享引擎绑定的安全组
 
@@ -399,7 +399,7 @@ class ListInstance:
 
     @security_group_ids.setter
     def security_group_ids(self, security_group_ids):
-        """Sets the security_group_ids of this ListInstance.
+        r"""Sets the security_group_ids of this ListInstance.
 
         独享引擎绑定的安全组
 
@@ -410,7 +410,7 @@ class ListInstance:
 
     @property
     def status(self):
-        """Gets the status of this ListInstance.
+        r"""Gets the status of this ListInstance.
 
         独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
@@ -421,7 +421,7 @@ class ListInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstance.
+        r"""Sets the status of this ListInstance.
 
         独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
@@ -432,7 +432,7 @@ class ListInstance:
 
     @property
     def run_status(self):
-        """Gets the run_status of this ListInstance.
+        r"""Gets the run_status of this ListInstance.
 
         独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
@@ -443,7 +443,7 @@ class ListInstance:
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this ListInstance.
+        r"""Sets the run_status of this ListInstance.
 
         独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
@@ -454,7 +454,7 @@ class ListInstance:
 
     @property
     def access_status(self):
-        """Gets the access_status of this ListInstance.
+        r"""Gets the access_status of this ListInstance.
 
         独享引擎接入状态（0：未接入，1：已接入）
 
@@ -465,7 +465,7 @@ class ListInstance:
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this ListInstance.
+        r"""Sets the access_status of this ListInstance.
 
         独享引擎接入状态（0：未接入，1：已接入）
 
@@ -476,7 +476,7 @@ class ListInstance:
 
     @property
     def upgradable(self):
-        """Gets the upgradable of this ListInstance.
+        r"""Gets the upgradable of this ListInstance.
 
         独享引擎是否可升级（0：不可升级，1：可升级）
 
@@ -487,7 +487,7 @@ class ListInstance:
 
     @upgradable.setter
     def upgradable(self, upgradable):
-        """Sets the upgradable of this ListInstance.
+        r"""Sets the upgradable of this ListInstance.
 
         独享引擎是否可升级（0：不可升级，1：可升级）
 
@@ -498,7 +498,7 @@ class ListInstance:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ListInstance.
+        r"""Gets the cloud_service_type of this ListInstance.
 
         云服务代码。 仅作为标记，用户可忽略。
 
@@ -509,7 +509,7 @@ class ListInstance:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ListInstance.
+        r"""Sets the cloud_service_type of this ListInstance.
 
         云服务代码。 仅作为标记，用户可忽略。
 
@@ -520,7 +520,7 @@ class ListInstance:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListInstance.
+        r"""Gets the resource_type of this ListInstance.
 
         云服务资源类型，仅作为标记，用户可忽略。
 
@@ -531,7 +531,7 @@ class ListInstance:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListInstance.
+        r"""Sets the resource_type of this ListInstance.
 
         云服务资源类型，仅作为标记，用户可忽略。
 
@@ -542,7 +542,7 @@ class ListInstance:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ListInstance.
+        r"""Gets the resource_spec_code of this ListInstance.
 
         云服务资源代码。仅作为标记，用户可忽略。
 
@@ -553,7 +553,7 @@ class ListInstance:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ListInstance.
+        r"""Sets the resource_spec_code of this ListInstance.
 
         云服务资源代码。仅作为标记，用户可忽略。
 
@@ -564,7 +564,7 @@ class ListInstance:
 
     @property
     def specification(self):
-        """Gets the specification of this ListInstance.
+        r"""Gets the specification of this ListInstance.
 
         独享引擎ECS规格，如\"8vCPUs | 16GB\"
 
@@ -575,7 +575,7 @@ class ListInstance:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ListInstance.
+        r"""Sets the specification of this ListInstance.
 
         独享引擎ECS规格，如\"8vCPUs | 16GB\"
 
@@ -586,7 +586,7 @@ class ListInstance:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListInstance.
+        r"""Gets the hosts of this ListInstance.
 
         独享引擎防护的域名
 
@@ -597,7 +597,7 @@ class ListInstance:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListInstance.
+        r"""Sets the hosts of this ListInstance.
 
         独享引擎防护的域名
 
@@ -608,7 +608,7 @@ class ListInstance:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListInstance.
+        r"""Gets the server_id of this ListInstance.
 
         独享引擎ECS ID
 
@@ -619,7 +619,7 @@ class ListInstance:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListInstance.
+        r"""Sets the server_id of this ListInstance.
 
         独享引擎ECS ID
 
@@ -630,7 +630,7 @@ class ListInstance:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListInstance.
+        r"""Gets the create_time of this ListInstance.
 
         引擎实例创建时间
 
@@ -641,7 +641,7 @@ class ListInstance:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListInstance.
+        r"""Sets the create_time of this ListInstance.
 
         引擎实例创建时间
 
@@ -652,7 +652,7 @@ class ListInstance:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListInstance.
+        r"""Gets the instance_name of this ListInstance.
 
         独享引擎实例名称
 
@@ -663,7 +663,7 @@ class ListInstance:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListInstance.
+        r"""Sets the instance_name of this ListInstance.
 
         独享引擎实例名称
 

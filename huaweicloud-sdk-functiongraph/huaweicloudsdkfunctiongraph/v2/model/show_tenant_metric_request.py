@@ -31,7 +31,7 @@ class ShowTenantMetricRequest:
     }
 
     def __init__(self, period=None, start_time=None, end_time=None, metric_type=None):
-        """ShowTenantMetricRequest
+        r"""ShowTenantMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowTenantMetricRequest:
 
     @property
     def period(self):
-        """Gets the period of this ShowTenantMetricRequest.
+        r"""Gets the period of this ShowTenantMetricRequest.
 
         时间段，单位为分钟
 
@@ -75,7 +75,7 @@ class ShowTenantMetricRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowTenantMetricRequest.
+        r"""Sets the period of this ShowTenantMetricRequest.
 
         时间段，单位为分钟
 
@@ -86,7 +86,7 @@ class ShowTenantMetricRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTenantMetricRequest.
+        r"""Gets the start_time of this ShowTenantMetricRequest.
 
         开始时间，精确到ms的时间戳
 
@@ -97,7 +97,7 @@ class ShowTenantMetricRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTenantMetricRequest.
+        r"""Sets the start_time of this ShowTenantMetricRequest.
 
         开始时间，精确到ms的时间戳
 
@@ -108,7 +108,7 @@ class ShowTenantMetricRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTenantMetricRequest.
+        r"""Gets the end_time of this ShowTenantMetricRequest.
 
         结束时间，精确到ms的时间戳
 
@@ -119,7 +119,7 @@ class ShowTenantMetricRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTenantMetricRequest.
+        r"""Sets the end_time of this ShowTenantMetricRequest.
 
         结束时间，精确到ms的时间戳
 
@@ -130,7 +130,7 @@ class ShowTenantMetricRequest:
 
     @property
     def metric_type(self):
-        """Gets the metric_type of this ShowTenantMetricRequest.
+        r"""Gets the metric_type of this ShowTenantMetricRequest.
 
         指标类型，为空或不在取值范围内时，查询所有指标。取值范围：totalCount 调用次数；errorCount 错误次数； averageDuration 运行时间；running 运行中个数；rejectCount  拒绝个数。
 
@@ -141,7 +141,7 @@ class ShowTenantMetricRequest:
 
     @metric_type.setter
     def metric_type(self, metric_type):
-        """Sets the metric_type of this ShowTenantMetricRequest.
+        r"""Sets the metric_type of this ShowTenantMetricRequest.
 
         指标类型，为空或不在取值范围内时，查询所有指标。取值范围：totalCount 调用次数；errorCount 错误次数； averageDuration 运行时间；running 运行中个数；rejectCount  拒绝个数。
 

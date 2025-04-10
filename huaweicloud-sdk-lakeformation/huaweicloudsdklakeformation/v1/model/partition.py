@@ -39,7 +39,7 @@ class Partition:
     }
 
     def __init__(self, catalog_name=None, database_name=None, table_name=None, partition_values=None, create_time=None, last_access_time=None, parameters=None, storage_descriptor=None):
-        """Partition
+        r"""Partition
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class Partition:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this Partition.
+        r"""Gets the catalog_name of this Partition.
 
         catalog名字
 
@@ -95,7 +95,7 @@ class Partition:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this Partition.
+        r"""Sets the catalog_name of this Partition.
 
         catalog名字
 
@@ -106,7 +106,7 @@ class Partition:
 
     @property
     def database_name(self):
-        """Gets the database_name of this Partition.
+        r"""Gets the database_name of this Partition.
 
         数据库名字
 
@@ -117,7 +117,7 @@ class Partition:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this Partition.
+        r"""Sets the database_name of this Partition.
 
         数据库名字
 
@@ -128,7 +128,7 @@ class Partition:
 
     @property
     def table_name(self):
-        """Gets the table_name of this Partition.
+        r"""Gets the table_name of this Partition.
 
         表名字
 
@@ -139,7 +139,7 @@ class Partition:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this Partition.
+        r"""Sets the table_name of this Partition.
 
         表名字
 
@@ -150,7 +150,7 @@ class Partition:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this Partition.
+        r"""Gets the partition_values of this Partition.
 
         分区值的列表
 
@@ -161,7 +161,7 @@ class Partition:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this Partition.
+        r"""Sets the partition_values of this Partition.
 
         分区值的列表
 
@@ -172,7 +172,7 @@ class Partition:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Partition.
+        r"""Gets the create_time of this Partition.
 
         创建时间
 
@@ -183,7 +183,7 @@ class Partition:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Partition.
+        r"""Sets the create_time of this Partition.
 
         创建时间
 
@@ -194,7 +194,7 @@ class Partition:
 
     @property
     def last_access_time(self):
-        """Gets the last_access_time of this Partition.
+        r"""Gets the last_access_time of this Partition.
 
         最后访问时间
 
@@ -205,7 +205,7 @@ class Partition:
 
     @last_access_time.setter
     def last_access_time(self, last_access_time):
-        """Sets the last_access_time of this Partition.
+        r"""Sets the last_access_time of this Partition.
 
         最后访问时间
 
@@ -216,7 +216,7 @@ class Partition:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Partition.
+        r"""Gets the parameters of this Partition.
 
         参数表
 
@@ -227,7 +227,7 @@ class Partition:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Partition.
+        r"""Sets the parameters of this Partition.
 
         参数表
 
@@ -238,7 +238,7 @@ class Partition:
 
     @property
     def storage_descriptor(self):
-        """Gets the storage_descriptor of this Partition.
+        r"""Gets the storage_descriptor of this Partition.
 
         :return: The storage_descriptor of this Partition.
         :rtype: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
@@ -247,7 +247,7 @@ class Partition:
 
     @storage_descriptor.setter
     def storage_descriptor(self, storage_descriptor):
-        """Sets the storage_descriptor of this Partition.
+        r"""Sets the storage_descriptor of this Partition.
 
         :param storage_descriptor: The storage_descriptor of this Partition.
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`

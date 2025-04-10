@@ -33,7 +33,7 @@ class AtlasClassificationInfo:
     }
 
     def __init__(self, entity_guid=None, propagate=None, validity_periods=None, type_name=None, attributes=None):
-        """AtlasClassificationInfo
+        r"""AtlasClassificationInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AtlasClassificationInfo:
 
     @property
     def entity_guid(self):
-        """Gets the entity_guid of this AtlasClassificationInfo.
+        r"""Gets the entity_guid of this AtlasClassificationInfo.
 
         guid
 
@@ -82,7 +82,7 @@ class AtlasClassificationInfo:
 
     @entity_guid.setter
     def entity_guid(self, entity_guid):
-        """Sets the entity_guid of this AtlasClassificationInfo.
+        r"""Sets the entity_guid of this AtlasClassificationInfo.
 
         guid
 
@@ -93,7 +93,7 @@ class AtlasClassificationInfo:
 
     @property
     def propagate(self):
-        """Gets the propagate of this AtlasClassificationInfo.
+        r"""Gets the propagate of this AtlasClassificationInfo.
 
         是否传播
 
@@ -104,7 +104,7 @@ class AtlasClassificationInfo:
 
     @propagate.setter
     def propagate(self, propagate):
-        """Sets the propagate of this AtlasClassificationInfo.
+        r"""Sets the propagate of this AtlasClassificationInfo.
 
         是否传播
 
@@ -115,7 +115,7 @@ class AtlasClassificationInfo:
 
     @property
     def validity_periods(self):
-        """Gets the validity_periods of this AtlasClassificationInfo.
+        r"""Gets the validity_periods of this AtlasClassificationInfo.
 
         时间信息
 
@@ -126,7 +126,7 @@ class AtlasClassificationInfo:
 
     @validity_periods.setter
     def validity_periods(self, validity_periods):
-        """Sets the validity_periods of this AtlasClassificationInfo.
+        r"""Sets the validity_periods of this AtlasClassificationInfo.
 
         时间信息
 
@@ -137,7 +137,7 @@ class AtlasClassificationInfo:
 
     @property
     def type_name(self):
-        """Gets the type_name of this AtlasClassificationInfo.
+        r"""Gets the type_name of this AtlasClassificationInfo.
 
         类型名称
 
@@ -148,7 +148,7 @@ class AtlasClassificationInfo:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this AtlasClassificationInfo.
+        r"""Sets the type_name of this AtlasClassificationInfo.
 
         类型名称
 
@@ -159,7 +159,7 @@ class AtlasClassificationInfo:
 
     @property
     def attributes(self):
-        """Gets the attributes of this AtlasClassificationInfo.
+        r"""Gets the attributes of this AtlasClassificationInfo.
 
         实体map Map<String, Object>
 
@@ -170,7 +170,7 @@ class AtlasClassificationInfo:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this AtlasClassificationInfo.
+        r"""Sets the attributes of this AtlasClassificationInfo.
 
         实体map Map<String, Object>
 

@@ -27,7 +27,7 @@ class RemoveAgentPathRequest:
     }
 
     def __init__(self, agent_id=None, body=None):
-        """RemoveAgentPathRequest
+        r"""RemoveAgentPathRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveAgentPathRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this RemoveAgentPathRequest.
+        r"""Gets the agent_id of this RemoveAgentPathRequest.
 
         客户端ID
 
@@ -60,7 +60,7 @@ class RemoveAgentPathRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this RemoveAgentPathRequest.
+        r"""Sets the agent_id of this RemoveAgentPathRequest.
 
         客户端ID
 
@@ -71,7 +71,7 @@ class RemoveAgentPathRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveAgentPathRequest.
+        r"""Gets the body of this RemoveAgentPathRequest.
 
         :return: The body of this RemoveAgentPathRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.AgentRemovePathReq`
@@ -80,7 +80,7 @@ class RemoveAgentPathRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveAgentPathRequest.
+        r"""Sets the body of this RemoveAgentPathRequest.
 
         :param body: The body of this RemoveAgentPathRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.AgentRemovePathReq`

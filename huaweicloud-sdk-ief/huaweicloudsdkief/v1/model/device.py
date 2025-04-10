@@ -47,7 +47,7 @@ class Device:
     }
 
     def __init__(self, id=None, name=None, access_protocol=None, description=None, project_id=None, created_at=None, updated_at=None, attributes=None, connection_type=None, twin=None, access_config=None, property_visitors=None):
-        """Device
+        r"""Device
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class Device:
 
     @property
     def id(self):
-        """Gets the id of this Device.
+        r"""Gets the id of this Device.
 
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
@@ -119,7 +119,7 @@ class Device:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Device.
+        r"""Sets the id of this Device.
 
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
@@ -130,7 +130,7 @@ class Device:
 
     @property
     def name(self):
-        """Gets the name of this Device.
+        r"""Gets the name of this Device.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -141,7 +141,7 @@ class Device:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Device.
+        r"""Sets the name of this Device.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -152,7 +152,7 @@ class Device:
 
     @property
     def access_protocol(self):
-        """Gets the access_protocol of this Device.
+        r"""Gets the access_protocol of this Device.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -163,7 +163,7 @@ class Device:
 
     @access_protocol.setter
     def access_protocol(self, access_protocol):
-        """Sets the access_protocol of this Device.
+        r"""Sets the access_protocol of this Device.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -174,7 +174,7 @@ class Device:
 
     @property
     def description(self):
-        """Gets the description of this Device.
+        r"""Gets the description of this Device.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -185,7 +185,7 @@ class Device:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Device.
+        r"""Sets the description of this Device.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -196,7 +196,7 @@ class Device:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Device.
+        r"""Gets the project_id of this Device.
 
         项目ID
 
@@ -207,7 +207,7 @@ class Device:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Device.
+        r"""Sets the project_id of this Device.
 
         项目ID
 
@@ -218,7 +218,7 @@ class Device:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Device.
+        r"""Gets the created_at of this Device.
 
         创建时间
 
@@ -229,7 +229,7 @@ class Device:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Device.
+        r"""Sets the created_at of this Device.
 
         创建时间
 
@@ -240,7 +240,7 @@ class Device:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Device.
+        r"""Gets the updated_at of this Device.
 
         更新时间
 
@@ -251,7 +251,7 @@ class Device:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Device.
+        r"""Sets the updated_at of this Device.
 
         更新时间
 
@@ -262,7 +262,7 @@ class Device:
 
     @property
     def attributes(self):
-        """Gets the attributes of this Device.
+        r"""Gets the attributes of this Device.
 
         终端设备静态属性信息
 
@@ -273,7 +273,7 @@ class Device:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this Device.
+        r"""Sets the attributes of this Device.
 
         终端设备静态属性信息
 
@@ -284,7 +284,7 @@ class Device:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this Device.
+        r"""Gets the connection_type of this Device.
 
         连接类型，默认为edge
 
@@ -295,7 +295,7 @@ class Device:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this Device.
+        r"""Sets the connection_type of this Device.
 
         连接类型，默认为edge
 
@@ -306,7 +306,7 @@ class Device:
 
     @property
     def twin(self):
-        """Gets the twin of this Device.
+        r"""Gets the twin of this Device.
 
         终端设备孪生属性信息
 
@@ -317,7 +317,7 @@ class Device:
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this Device.
+        r"""Sets the twin of this Device.
 
         终端设备孪生属性信息
 
@@ -328,7 +328,7 @@ class Device:
 
     @property
     def access_config(self):
-        """Gets the access_config of this Device.
+        r"""Gets the access_config of this Device.
 
         :return: The access_config of this Device.
         :rtype: :class:`huaweicloudsdkief.v1.AccessConfig`
@@ -337,7 +337,7 @@ class Device:
 
     @access_config.setter
     def access_config(self, access_config):
-        """Sets the access_config of this Device.
+        r"""Sets the access_config of this Device.
 
         :param access_config: The access_config of this Device.
         :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`
@@ -346,7 +346,7 @@ class Device:
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this Device.
+        r"""Gets the property_visitors of this Device.
 
         孪生属性配置
 
@@ -357,7 +357,7 @@ class Device:
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this Device.
+        r"""Sets the property_visitors of this Device.
 
         孪生属性配置
 

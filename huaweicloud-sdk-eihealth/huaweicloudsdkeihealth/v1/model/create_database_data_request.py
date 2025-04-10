@@ -29,7 +29,7 @@ class CreateDatabaseDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, database_id=None, body=None):
-        """CreateDatabaseDataRequest
+        r"""CreateDatabaseDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDatabaseDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateDatabaseDataRequest.
+        r"""Gets the eihealth_project_id of this CreateDatabaseDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class CreateDatabaseDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateDatabaseDataRequest.
+        r"""Sets the eihealth_project_id of this CreateDatabaseDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class CreateDatabaseDataRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this CreateDatabaseDataRequest.
+        r"""Gets the database_id of this CreateDatabaseDataRequest.
 
         数据库实例id
 
@@ -88,7 +88,7 @@ class CreateDatabaseDataRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this CreateDatabaseDataRequest.
+        r"""Sets the database_id of this CreateDatabaseDataRequest.
 
         数据库实例id
 
@@ -99,7 +99,7 @@ class CreateDatabaseDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatabaseDataRequest.
+        r"""Gets the body of this CreateDatabaseDataRequest.
 
         :return: The body of this CreateDatabaseDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RowDataReq`
@@ -108,7 +108,7 @@ class CreateDatabaseDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatabaseDataRequest.
+        r"""Sets the body of this CreateDatabaseDataRequest.
 
         :param body: The body of this CreateDatabaseDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.RowDataReq`

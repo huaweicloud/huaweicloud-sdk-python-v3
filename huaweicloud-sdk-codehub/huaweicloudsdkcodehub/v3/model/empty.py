@@ -23,7 +23,7 @@ class Empty:
     }
 
     def __init__(self):
-        """Empty
+        r"""Empty
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class ListRecycleInstancesDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, instances=None):
-        """ListRecycleInstancesDetailsResponse
+        r"""ListRecycleInstancesDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRecycleInstancesDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRecycleInstancesDetailsResponse.
+        r"""Gets the total_count of this ListRecycleInstancesDetailsResponse.
 
         回收站所有引擎实例总数。
 
@@ -62,7 +62,7 @@ class ListRecycleInstancesDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRecycleInstancesDetailsResponse.
+        r"""Sets the total_count of this ListRecycleInstancesDetailsResponse.
 
         回收站所有引擎实例总数。
 
@@ -73,7 +73,7 @@ class ListRecycleInstancesDetailsResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListRecycleInstancesDetailsResponse.
+        r"""Gets the instances of this ListRecycleInstancesDetailsResponse.
 
         回收站所有引擎实例信息。
 
@@ -84,7 +84,7 @@ class ListRecycleInstancesDetailsResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListRecycleInstancesDetailsResponse.
+        r"""Sets the instances of this ListRecycleInstancesDetailsResponse.
 
         回收站所有引擎实例信息。
 

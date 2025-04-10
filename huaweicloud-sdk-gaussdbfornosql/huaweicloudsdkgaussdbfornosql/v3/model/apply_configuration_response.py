@@ -28,7 +28,7 @@ class ApplyConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, success=None):
-        """ApplyConfigurationResponse
+        r"""ApplyConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ApplyConfigurationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ApplyConfigurationResponse.
+        r"""Gets the job_id of this ApplyConfigurationResponse.
 
         应用参数模板的异步任务ID。
 
@@ -62,7 +62,7 @@ class ApplyConfigurationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ApplyConfigurationResponse.
+        r"""Sets the job_id of this ApplyConfigurationResponse.
 
         应用参数模板的异步任务ID。
 
@@ -73,7 +73,7 @@ class ApplyConfigurationResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ApplyConfigurationResponse.
+        r"""Gets the success of this ApplyConfigurationResponse.
 
         应用参数模板任务是否提交成功。 - 取值为“true”，表示任务提交成功。 - 取值为“false”，表示任务提交失败。
 
@@ -84,7 +84,7 @@ class ApplyConfigurationResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ApplyConfigurationResponse.
+        r"""Sets the success of this ApplyConfigurationResponse.
 
         应用参数模板任务是否提交成功。 - 取值为“true”，表示任务提交成功。 - 取值为“false”，表示任务提交失败。
 

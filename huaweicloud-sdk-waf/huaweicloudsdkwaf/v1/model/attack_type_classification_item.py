@@ -27,7 +27,7 @@ class AttackTypeClassificationItem:
     }
 
     def __init__(self, total=None, items=None):
-        """AttackTypeClassificationItem
+        r"""AttackTypeClassificationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttackTypeClassificationItem:
 
     @property
     def total(self):
-        """Gets the total of this AttackTypeClassificationItem.
+        r"""Gets the total of this AttackTypeClassificationItem.
 
         AttackTypeItem的总数量
 
@@ -61,7 +61,7 @@ class AttackTypeClassificationItem:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AttackTypeClassificationItem.
+        r"""Sets the total of this AttackTypeClassificationItem.
 
         AttackTypeItem的总数量
 
@@ -72,7 +72,7 @@ class AttackTypeClassificationItem:
 
     @property
     def items(self):
-        """Gets the items of this AttackTypeClassificationItem.
+        r"""Gets the items of this AttackTypeClassificationItem.
 
         AttackTypeItem详细信息
 
@@ -83,7 +83,7 @@ class AttackTypeClassificationItem:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this AttackTypeClassificationItem.
+        r"""Sets the items of this AttackTypeClassificationItem.
 
         AttackTypeItem详细信息
 

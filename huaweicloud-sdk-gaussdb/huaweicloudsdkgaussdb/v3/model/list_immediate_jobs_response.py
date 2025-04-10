@@ -28,7 +28,7 @@ class ListImmediateJobsResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None, total_count=None):
-        """ListImmediateJobsResponse
+        r"""ListImmediateJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImmediateJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListImmediateJobsResponse.
+        r"""Gets the jobs of this ListImmediateJobsResponse.
 
         任务详情。
 
@@ -62,7 +62,7 @@ class ListImmediateJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListImmediateJobsResponse.
+        r"""Sets the jobs of this ListImmediateJobsResponse.
 
         任务详情。
 
@@ -73,7 +73,7 @@ class ListImmediateJobsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListImmediateJobsResponse.
+        r"""Gets the total_count of this ListImmediateJobsResponse.
 
         任务总数。
 
@@ -84,7 +84,7 @@ class ListImmediateJobsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListImmediateJobsResponse.
+        r"""Sets the total_count of this ListImmediateJobsResponse.
 
         任务总数。
 

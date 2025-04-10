@@ -27,7 +27,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, key=None, value=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTagRequest.
+        r"""Gets the key of this DeleteTagRequest.
 
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -60,7 +60,7 @@ class DeleteTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTagRequest.
+        r"""Sets the key of this DeleteTagRequest.
 
           键。 最大长度36个字符。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -71,7 +71,7 @@ class DeleteTagRequest:
 
     @property
     def value(self):
-        """Gets the value of this DeleteTagRequest.
+        r"""Gets the value of this DeleteTagRequest.
 
           值。 最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -82,7 +82,7 @@ class DeleteTagRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeleteTagRequest.
+        r"""Sets the value of this DeleteTagRequest.
 
           值。 最大长度43个字符，可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 

@@ -29,7 +29,7 @@ class ListPrivateipsRequest:
     }
 
     def __init__(self, subnet_id=None, limit=None, marker=None):
-        """ListPrivateipsRequest
+        r"""ListPrivateipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPrivateipsRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListPrivateipsRequest.
+        r"""Gets the subnet_id of this ListPrivateipsRequest.
 
         私有IP所在子网的唯一标识
 
@@ -67,7 +67,7 @@ class ListPrivateipsRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListPrivateipsRequest.
+        r"""Sets the subnet_id of this ListPrivateipsRequest.
 
         私有IP所在子网的唯一标识
 
@@ -78,7 +78,7 @@ class ListPrivateipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPrivateipsRequest.
+        r"""Gets the limit of this ListPrivateipsRequest.
 
         每页返回的个数
 
@@ -89,7 +89,7 @@ class ListPrivateipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPrivateipsRequest.
+        r"""Sets the limit of this ListPrivateipsRequest.
 
         每页返回的个数
 
@@ -100,7 +100,7 @@ class ListPrivateipsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPrivateipsRequest.
+        r"""Gets the marker of this ListPrivateipsRequest.
 
         分页查询起始的资源id，为空时查询第一页
 
@@ -111,7 +111,7 @@ class ListPrivateipsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPrivateipsRequest.
+        r"""Sets the marker of this ListPrivateipsRequest.
 
         分页查询起始的资源id，为空时查询第一页
 

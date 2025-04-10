@@ -25,7 +25,7 @@ class DeleteConnectGatewayRequest:
     }
 
     def __init__(self, connect_gateway_id=None):
-        """DeleteConnectGatewayRequest
+        r"""DeleteConnectGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConnectGatewayRequest:
 
     @property
     def connect_gateway_id(self):
-        """Gets the connect_gateway_id of this DeleteConnectGatewayRequest.
+        r"""Gets the connect_gateway_id of this DeleteConnectGatewayRequest.
 
         互联网关ID
 
@@ -53,7 +53,7 @@ class DeleteConnectGatewayRequest:
 
     @connect_gateway_id.setter
     def connect_gateway_id(self, connect_gateway_id):
-        """Sets the connect_gateway_id of this DeleteConnectGatewayRequest.
+        r"""Sets the connect_gateway_id of this DeleteConnectGatewayRequest.
 
         互联网关ID
 

@@ -24,7 +24,7 @@ class AuthorizeApiToInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AuthorizeApiToInstanceResponse
+        r"""AuthorizeApiToInstanceResponse
 
         The model defined in huaweicloud sdk
 

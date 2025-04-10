@@ -31,7 +31,7 @@ class SynthesisTaskData:
     }
 
     def __init__(self, smiles=None, top_n=None, max_search_depth=None, max_prediction_per_product=None):
-        """SynthesisTaskData
+        r"""SynthesisTaskData
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SynthesisTaskData:
 
     @property
     def smiles(self):
-        """Gets the smiles of this SynthesisTaskData.
+        r"""Gets the smiles of this SynthesisTaskData.
 
         分子SMILES表达式
 
@@ -71,7 +71,7 @@ class SynthesisTaskData:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this SynthesisTaskData.
+        r"""Sets the smiles of this SynthesisTaskData.
 
         分子SMILES表达式
 
@@ -82,7 +82,7 @@ class SynthesisTaskData:
 
     @property
     def top_n(self):
-        """Gets the top_n of this SynthesisTaskData.
+        r"""Gets the top_n of this SynthesisTaskData.
 
         期望最大返回条目数（排序后取TopN）
 
@@ -93,7 +93,7 @@ class SynthesisTaskData:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this SynthesisTaskData.
+        r"""Sets the top_n of this SynthesisTaskData.
 
         期望最大返回条目数（排序后取TopN）
 
@@ -104,7 +104,7 @@ class SynthesisTaskData:
 
     @property
     def max_search_depth(self):
-        """Gets the max_search_depth of this SynthesisTaskData.
+        r"""Gets the max_search_depth of this SynthesisTaskData.
 
         预测路径的最大深度
 
@@ -115,7 +115,7 @@ class SynthesisTaskData:
 
     @max_search_depth.setter
     def max_search_depth(self, max_search_depth):
-        """Sets the max_search_depth of this SynthesisTaskData.
+        r"""Sets the max_search_depth of this SynthesisTaskData.
 
         预测路径的最大深度
 
@@ -126,7 +126,7 @@ class SynthesisTaskData:
 
     @property
     def max_prediction_per_product(self):
-        """Gets the max_prediction_per_product of this SynthesisTaskData.
+        r"""Gets the max_prediction_per_product of this SynthesisTaskData.
 
         每个产物的最大反应数量
 
@@ -137,7 +137,7 @@ class SynthesisTaskData:
 
     @max_prediction_per_product.setter
     def max_prediction_per_product(self, max_prediction_per_product):
-        """Sets the max_prediction_per_product of this SynthesisTaskData.
+        r"""Sets the max_prediction_per_product of this SynthesisTaskData.
 
         每个产物的最大反应数量
 

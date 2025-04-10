@@ -25,7 +25,7 @@ class CreatePublicIpRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePublicIpRequest
+        r"""CreatePublicIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePublicIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePublicIpRequest.
+        r"""Gets the body of this CreatePublicIpRequest.
 
         :return: The body of this CreatePublicIpRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePublicIpRequestBody`
@@ -52,7 +52,7 @@ class CreatePublicIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePublicIpRequest.
+        r"""Sets the body of this CreatePublicIpRequest.
 
         :param body: The body of this CreatePublicIpRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreatePublicIpRequestBody`

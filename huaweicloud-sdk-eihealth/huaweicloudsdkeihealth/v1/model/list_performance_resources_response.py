@@ -28,7 +28,7 @@ class ListPerformanceResourcesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, resources=None):
-        """ListPerformanceResourcesResponse
+        r"""ListPerformanceResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPerformanceResourcesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPerformanceResourcesResponse.
+        r"""Gets the count of this ListPerformanceResourcesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListPerformanceResourcesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPerformanceResourcesResponse.
+        r"""Sets the count of this ListPerformanceResourcesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListPerformanceResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListPerformanceResourcesResponse.
+        r"""Gets the resources of this ListPerformanceResourcesResponse.
 
         性能加速资源列表
 
@@ -84,7 +84,7 @@ class ListPerformanceResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListPerformanceResourcesResponse.
+        r"""Sets the resources of this ListPerformanceResourcesResponse.
 
         性能加速资源列表
 

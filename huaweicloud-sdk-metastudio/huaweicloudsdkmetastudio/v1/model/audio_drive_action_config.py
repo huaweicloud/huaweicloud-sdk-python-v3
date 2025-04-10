@@ -29,7 +29,7 @@ class AudioDriveActionConfig:
     }
 
     def __init__(self, action_tag=None, action_name=None, action_start_time=None):
-        """AudioDriveActionConfig
+        r"""AudioDriveActionConfig
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AudioDriveActionConfig:
 
     @property
     def action_tag(self):
-        """Gets the action_tag of this AudioDriveActionConfig.
+        r"""Gets the action_tag of this AudioDriveActionConfig.
 
         动作标签
 
@@ -66,7 +66,7 @@ class AudioDriveActionConfig:
 
     @action_tag.setter
     def action_tag(self, action_tag):
-        """Sets the action_tag of this AudioDriveActionConfig.
+        r"""Sets the action_tag of this AudioDriveActionConfig.
 
         动作标签
 
@@ -77,7 +77,7 @@ class AudioDriveActionConfig:
 
     @property
     def action_name(self):
-        """Gets the action_name of this AudioDriveActionConfig.
+        r"""Gets the action_name of this AudioDriveActionConfig.
 
         动作名称
 
@@ -88,7 +88,7 @@ class AudioDriveActionConfig:
 
     @action_name.setter
     def action_name(self, action_name):
-        """Sets the action_name of this AudioDriveActionConfig.
+        r"""Sets the action_name of this AudioDriveActionConfig.
 
         动作名称
 
@@ -99,7 +99,7 @@ class AudioDriveActionConfig:
 
     @property
     def action_start_time(self):
-        """Gets the action_start_time of this AudioDriveActionConfig.
+        r"""Gets the action_start_time of this AudioDriveActionConfig.
 
         动作开始时间
 
@@ -110,7 +110,7 @@ class AudioDriveActionConfig:
 
     @action_start_time.setter
     def action_start_time(self, action_start_time):
-        """Sets the action_start_time of this AudioDriveActionConfig.
+        r"""Sets the action_start_time of this AudioDriveActionConfig.
 
         动作开始时间
 

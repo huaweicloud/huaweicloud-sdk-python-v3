@@ -31,7 +31,7 @@ class CreateVpcPeeringOption:
     }
 
     def __init__(self, name=None, description=None, request_vpc_info=None, accept_vpc_info=None):
-        """CreateVpcPeeringOption
+        r"""CreateVpcPeeringOption
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateVpcPeeringOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpcPeeringOption.
+        r"""Gets the name of this CreateVpcPeeringOption.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -72,7 +72,7 @@ class CreateVpcPeeringOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpcPeeringOption.
+        r"""Sets the name of this CreateVpcPeeringOption.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -83,7 +83,7 @@ class CreateVpcPeeringOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateVpcPeeringOption.
+        r"""Gets the description of this CreateVpcPeeringOption.
 
         功能说明：对等连接的描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -94,7 +94,7 @@ class CreateVpcPeeringOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVpcPeeringOption.
+        r"""Sets the description of this CreateVpcPeeringOption.
 
         功能说明：对等连接的描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -105,7 +105,7 @@ class CreateVpcPeeringOption:
 
     @property
     def request_vpc_info(self):
-        """Gets the request_vpc_info of this CreateVpcPeeringOption.
+        r"""Gets the request_vpc_info of this CreateVpcPeeringOption.
 
         :return: The request_vpc_info of this CreateVpcPeeringOption.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -114,7 +114,7 @@ class CreateVpcPeeringOption:
 
     @request_vpc_info.setter
     def request_vpc_info(self, request_vpc_info):
-        """Sets the request_vpc_info of this CreateVpcPeeringOption.
+        r"""Sets the request_vpc_info of this CreateVpcPeeringOption.
 
         :param request_vpc_info: The request_vpc_info of this CreateVpcPeeringOption.
         :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -123,7 +123,7 @@ class CreateVpcPeeringOption:
 
     @property
     def accept_vpc_info(self):
-        """Gets the accept_vpc_info of this CreateVpcPeeringOption.
+        r"""Gets the accept_vpc_info of this CreateVpcPeeringOption.
 
         :return: The accept_vpc_info of this CreateVpcPeeringOption.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -132,7 +132,7 @@ class CreateVpcPeeringOption:
 
     @accept_vpc_info.setter
     def accept_vpc_info(self, accept_vpc_info):
-        """Sets the accept_vpc_info of this CreateVpcPeeringOption.
+        r"""Sets the accept_vpc_info of this CreateVpcPeeringOption.
 
         :param accept_vpc_info: The accept_vpc_info of this CreateVpcPeeringOption.
         :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`

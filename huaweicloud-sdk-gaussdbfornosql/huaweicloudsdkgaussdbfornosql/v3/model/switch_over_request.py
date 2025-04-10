@@ -25,7 +25,7 @@ class SwitchOverRequest:
     }
 
     def __init__(self, instance_id=None):
-        """SwitchOverRequest
+        r"""SwitchOverRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchOverRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchOverRequest.
+        r"""Gets the instance_id of this SwitchOverRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class SwitchOverRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchOverRequest.
+        r"""Sets the instance_id of this SwitchOverRequest.
 
         实例ID。
 

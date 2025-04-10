@@ -49,7 +49,7 @@ class MonitorItem:
     }
 
     def __init__(self, id=None, env_id=None, collector_id=None, collector_name=None, display_name=None, collect_interval=None, disabled=None, status_change_user_id=None, status_change_user_name=None, status_change_time=None, config_change_user_id=None, config_change_user_name=None, config_change_time=None):
-        """MonitorItem
+        r"""MonitorItem
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class MonitorItem:
 
     @property
     def id(self):
-        """Gets the id of this MonitorItem.
+        r"""Gets the id of this MonitorItem.
 
         监控项id。
 
@@ -138,7 +138,7 @@ class MonitorItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MonitorItem.
+        r"""Sets the id of this MonitorItem.
 
         监控项id。
 
@@ -149,7 +149,7 @@ class MonitorItem:
 
     @property
     def env_id(self):
-        """Gets the env_id of this MonitorItem.
+        r"""Gets the env_id of this MonitorItem.
 
         环境id。
 
@@ -160,7 +160,7 @@ class MonitorItem:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this MonitorItem.
+        r"""Sets the env_id of this MonitorItem.
 
         环境id。
 
@@ -171,7 +171,7 @@ class MonitorItem:
 
     @property
     def collector_id(self):
-        """Gets the collector_id of this MonitorItem.
+        r"""Gets the collector_id of this MonitorItem.
 
         采集器id。
 
@@ -182,7 +182,7 @@ class MonitorItem:
 
     @collector_id.setter
     def collector_id(self, collector_id):
-        """Sets the collector_id of this MonitorItem.
+        r"""Sets the collector_id of this MonitorItem.
 
         采集器id。
 
@@ -193,7 +193,7 @@ class MonitorItem:
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this MonitorItem.
+        r"""Gets the collector_name of this MonitorItem.
 
         采集器名称。
 
@@ -204,7 +204,7 @@ class MonitorItem:
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this MonitorItem.
+        r"""Sets the collector_name of this MonitorItem.
 
         采集器名称。
 
@@ -215,7 +215,7 @@ class MonitorItem:
 
     @property
     def display_name(self):
-        """Gets the display_name of this MonitorItem.
+        r"""Gets the display_name of this MonitorItem.
 
         采集器展示名称。
 
@@ -226,7 +226,7 @@ class MonitorItem:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this MonitorItem.
+        r"""Sets the display_name of this MonitorItem.
 
         采集器展示名称。
 
@@ -237,7 +237,7 @@ class MonitorItem:
 
     @property
     def collect_interval(self):
-        """Gets the collect_interval of this MonitorItem.
+        r"""Gets the collect_interval of this MonitorItem.
 
         采集间隔。
 
@@ -248,7 +248,7 @@ class MonitorItem:
 
     @collect_interval.setter
     def collect_interval(self, collect_interval):
-        """Sets the collect_interval of this MonitorItem.
+        r"""Sets the collect_interval of this MonitorItem.
 
         采集间隔。
 
@@ -259,7 +259,7 @@ class MonitorItem:
 
     @property
     def disabled(self):
-        """Gets the disabled of this MonitorItem.
+        r"""Gets the disabled of this MonitorItem.
 
         是否禁用。
 
@@ -270,7 +270,7 @@ class MonitorItem:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this MonitorItem.
+        r"""Sets the disabled of this MonitorItem.
 
         是否禁用。
 
@@ -281,7 +281,7 @@ class MonitorItem:
 
     @property
     def status_change_user_id(self):
-        """Gets the status_change_user_id of this MonitorItem.
+        r"""Gets the status_change_user_id of this MonitorItem.
 
         修改采集状态用户id。
 
@@ -292,7 +292,7 @@ class MonitorItem:
 
     @status_change_user_id.setter
     def status_change_user_id(self, status_change_user_id):
-        """Sets the status_change_user_id of this MonitorItem.
+        r"""Sets the status_change_user_id of this MonitorItem.
 
         修改采集状态用户id。
 
@@ -303,7 +303,7 @@ class MonitorItem:
 
     @property
     def status_change_user_name(self):
-        """Gets the status_change_user_name of this MonitorItem.
+        r"""Gets the status_change_user_name of this MonitorItem.
 
         修改采集状态用户名称。
 
@@ -314,7 +314,7 @@ class MonitorItem:
 
     @status_change_user_name.setter
     def status_change_user_name(self, status_change_user_name):
-        """Sets the status_change_user_name of this MonitorItem.
+        r"""Sets the status_change_user_name of this MonitorItem.
 
         修改采集状态用户名称。
 
@@ -325,7 +325,7 @@ class MonitorItem:
 
     @property
     def status_change_time(self):
-        """Gets the status_change_time of this MonitorItem.
+        r"""Gets the status_change_time of this MonitorItem.
 
         修改采集状态时间。
 
@@ -336,7 +336,7 @@ class MonitorItem:
 
     @status_change_time.setter
     def status_change_time(self, status_change_time):
-        """Sets the status_change_time of this MonitorItem.
+        r"""Sets the status_change_time of this MonitorItem.
 
         修改采集状态时间。
 
@@ -347,7 +347,7 @@ class MonitorItem:
 
     @property
     def config_change_user_id(self):
-        """Gets the config_change_user_id of this MonitorItem.
+        r"""Gets the config_change_user_id of this MonitorItem.
 
         修改采集配置用户id。
 
@@ -358,7 +358,7 @@ class MonitorItem:
 
     @config_change_user_id.setter
     def config_change_user_id(self, config_change_user_id):
-        """Sets the config_change_user_id of this MonitorItem.
+        r"""Sets the config_change_user_id of this MonitorItem.
 
         修改采集配置用户id。
 
@@ -369,7 +369,7 @@ class MonitorItem:
 
     @property
     def config_change_user_name(self):
-        """Gets the config_change_user_name of this MonitorItem.
+        r"""Gets the config_change_user_name of this MonitorItem.
 
         修改采集配置用户名称。
 
@@ -380,7 +380,7 @@ class MonitorItem:
 
     @config_change_user_name.setter
     def config_change_user_name(self, config_change_user_name):
-        """Sets the config_change_user_name of this MonitorItem.
+        r"""Sets the config_change_user_name of this MonitorItem.
 
         修改采集配置用户名称。
 
@@ -391,7 +391,7 @@ class MonitorItem:
 
     @property
     def config_change_time(self):
-        """Gets the config_change_time of this MonitorItem.
+        r"""Gets the config_change_time of this MonitorItem.
 
         修改采集配置时间。
 
@@ -402,7 +402,7 @@ class MonitorItem:
 
     @config_change_time.setter
     def config_change_time(self, config_change_time):
-        """Sets the config_change_time of this MonitorItem.
+        r"""Sets the config_change_time of this MonitorItem.
 
         修改采集配置时间。
 

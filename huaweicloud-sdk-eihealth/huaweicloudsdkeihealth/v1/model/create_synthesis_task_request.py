@@ -25,7 +25,7 @@ class CreateSynthesisTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSynthesisTaskRequest
+        r"""CreateSynthesisTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSynthesisTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSynthesisTaskRequest.
+        r"""Gets the body of this CreateSynthesisTaskRequest.
 
         :return: The body of this CreateSynthesisTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SynthesisTaskData`
@@ -52,7 +52,7 @@ class CreateSynthesisTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSynthesisTaskRequest.
+        r"""Sets the body of this CreateSynthesisTaskRequest.
 
         :param body: The body of this CreateSynthesisTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SynthesisTaskData`

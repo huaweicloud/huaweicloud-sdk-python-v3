@@ -29,7 +29,7 @@ class RefererConfig:
     }
 
     def __init__(self, type=None, value=None, include_empty=None):
-        """RefererConfig
+        r"""RefererConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RefererConfig:
 
     @property
     def type(self):
-        """Gets the type of this RefererConfig.
+        r"""Gets the type of this RefererConfig.
 
         Referer黑白名单类型，off：关闭Referer黑白名单，black：Referer黑名单，white：Referer白名单。
 
@@ -67,7 +67,7 @@ class RefererConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RefererConfig.
+        r"""Sets the type of this RefererConfig.
 
         Referer黑白名单类型，off：关闭Referer黑白名单，black：Referer黑名单，white：Referer白名单。
 
@@ -78,7 +78,7 @@ class RefererConfig:
 
     @property
     def value(self):
-        """Gets the value of this RefererConfig.
+        r"""Gets the value of this RefererConfig.
 
         域名或IP地址，以“,”进行分割，域名、IP地址可以混合输入，支持泛域名和带端口的域名。域名、IP地址总数不超过400个，端口取值范围1-65535。
 
@@ -89,7 +89,7 @@ class RefererConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RefererConfig.
+        r"""Sets the value of this RefererConfig.
 
         域名或IP地址，以“,”进行分割，域名、IP地址可以混合输入，支持泛域名和带端口的域名。域名、IP地址总数不超过400个，端口取值范围1-65535。
 
@@ -100,7 +100,7 @@ class RefererConfig:
 
     @property
     def include_empty(self):
-        """Gets the include_empty of this RefererConfig.
+        r"""Gets the include_empty of this RefererConfig.
 
         是否包含空Referer，如果是黑名单并开启该选项，则表示无referer不允许访问，如果是白名单并开启该选项，则表示无referer允许访问，true:包含空，false：不包含空，默认值false。
 
@@ -111,7 +111,7 @@ class RefererConfig:
 
     @include_empty.setter
     def include_empty(self, include_empty):
-        """Sets the include_empty of this RefererConfig.
+        r"""Sets the include_empty of this RefererConfig.
 
         是否包含空Referer，如果是黑名单并开启该选项，则表示无referer不允许访问，如果是白名单并开启该选项，则表示无referer允许访问，true:包含空，false：不包含空，默认值false。
 

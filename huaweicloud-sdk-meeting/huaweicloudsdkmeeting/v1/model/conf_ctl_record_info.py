@@ -37,7 +37,7 @@ class ConfCtlRecordInfo:
     }
 
     def __init__(self, operate_time=None, operate_source=None, operator=None, operate_code=None, operation_object=None, operate_result=None, detail=None):
-        """ConfCtlRecordInfo
+        r"""ConfCtlRecordInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfCtlRecordInfo:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this ConfCtlRecordInfo.
+        r"""Gets the operate_time of this ConfCtlRecordInfo.
 
         操作时间（UTC时间，单位毫秒）。
 
@@ -96,7 +96,7 @@ class ConfCtlRecordInfo:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this ConfCtlRecordInfo.
+        r"""Sets the operate_time of this ConfCtlRecordInfo.
 
         操作时间（UTC时间，单位毫秒）。
 
@@ -107,7 +107,7 @@ class ConfCtlRecordInfo:
 
     @property
     def operate_source(self):
-        """Gets the operate_source of this ConfCtlRecordInfo.
+        r"""Gets the operate_source of this ConfCtlRecordInfo.
 
         操作来源。
 
@@ -118,7 +118,7 @@ class ConfCtlRecordInfo:
 
     @operate_source.setter
     def operate_source(self, operate_source):
-        """Sets the operate_source of this ConfCtlRecordInfo.
+        r"""Sets the operate_source of this ConfCtlRecordInfo.
 
         操作来源。
 
@@ -129,7 +129,7 @@ class ConfCtlRecordInfo:
 
     @property
     def operator(self):
-        """Gets the operator of this ConfCtlRecordInfo.
+        r"""Gets the operator of this ConfCtlRecordInfo.
 
         操作者。
 
@@ -140,7 +140,7 @@ class ConfCtlRecordInfo:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ConfCtlRecordInfo.
+        r"""Sets the operator of this ConfCtlRecordInfo.
 
         操作者。
 
@@ -151,7 +151,7 @@ class ConfCtlRecordInfo:
 
     @property
     def operate_code(self):
-        """Gets the operate_code of this ConfCtlRecordInfo.
+        r"""Gets the operate_code of this ConfCtlRecordInfo.
 
         操作描述。
 
@@ -162,7 +162,7 @@ class ConfCtlRecordInfo:
 
     @operate_code.setter
     def operate_code(self, operate_code):
-        """Sets the operate_code of this ConfCtlRecordInfo.
+        r"""Sets the operate_code of this ConfCtlRecordInfo.
 
         操作描述。
 
@@ -173,7 +173,7 @@ class ConfCtlRecordInfo:
 
     @property
     def operation_object(self):
-        """Gets the operation_object of this ConfCtlRecordInfo.
+        r"""Gets the operation_object of this ConfCtlRecordInfo.
 
         被操作对象。
 
@@ -184,7 +184,7 @@ class ConfCtlRecordInfo:
 
     @operation_object.setter
     def operation_object(self, operation_object):
-        """Sets the operation_object of this ConfCtlRecordInfo.
+        r"""Sets the operation_object of this ConfCtlRecordInfo.
 
         被操作对象。
 
@@ -195,7 +195,7 @@ class ConfCtlRecordInfo:
 
     @property
     def operate_result(self):
-        """Gets the operate_result of this ConfCtlRecordInfo.
+        r"""Gets the operate_result of this ConfCtlRecordInfo.
 
         操作结果。
 
@@ -206,7 +206,7 @@ class ConfCtlRecordInfo:
 
     @operate_result.setter
     def operate_result(self, operate_result):
-        """Sets the operate_result of this ConfCtlRecordInfo.
+        r"""Sets the operate_result of this ConfCtlRecordInfo.
 
         操作结果。
 
@@ -217,7 +217,7 @@ class ConfCtlRecordInfo:
 
     @property
     def detail(self):
-        """Gets the detail of this ConfCtlRecordInfo.
+        r"""Gets the detail of this ConfCtlRecordInfo.
 
         详情。
 
@@ -228,7 +228,7 @@ class ConfCtlRecordInfo:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ConfCtlRecordInfo.
+        r"""Sets the detail of this ConfCtlRecordInfo.
 
         详情。
 

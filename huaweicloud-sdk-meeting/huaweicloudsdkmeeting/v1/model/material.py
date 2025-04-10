@@ -37,7 +37,7 @@ class Material:
     }
 
     def __init__(self, id=None, last_updated_by=None, update_time=None, material_name=None, material_resolution=None, material_size_str=None, file_path=None):
-        """Material
+        r"""Material
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Material:
 
     @property
     def id(self):
-        """Gets the id of this Material.
+        r"""Gets the id of this Material.
 
         素材ID。
 
@@ -96,7 +96,7 @@ class Material:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Material.
+        r"""Sets the id of this Material.
 
         素材ID。
 
@@ -107,7 +107,7 @@ class Material:
 
     @property
     def last_updated_by(self):
-        """Gets the last_updated_by of this Material.
+        r"""Gets the last_updated_by of this Material.
 
         更新者。
 
@@ -118,7 +118,7 @@ class Material:
 
     @last_updated_by.setter
     def last_updated_by(self, last_updated_by):
-        """Sets the last_updated_by of this Material.
+        r"""Sets the last_updated_by of this Material.
 
         更新者。
 
@@ -129,7 +129,7 @@ class Material:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Material.
+        r"""Gets the update_time of this Material.
 
         更新时间。
 
@@ -140,7 +140,7 @@ class Material:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Material.
+        r"""Sets the update_time of this Material.
 
         更新时间。
 
@@ -151,7 +151,7 @@ class Material:
 
     @property
     def material_name(self):
-        """Gets the material_name of this Material.
+        r"""Gets the material_name of this Material.
 
         素材名称。
 
@@ -162,7 +162,7 @@ class Material:
 
     @material_name.setter
     def material_name(self, material_name):
-        """Sets the material_name of this Material.
+        r"""Sets the material_name of this Material.
 
         素材名称。
 
@@ -173,7 +173,7 @@ class Material:
 
     @property
     def material_resolution(self):
-        """Gets the material_resolution of this Material.
+        r"""Gets the material_resolution of this Material.
 
         素材分辨率。
 
@@ -184,7 +184,7 @@ class Material:
 
     @material_resolution.setter
     def material_resolution(self, material_resolution):
-        """Sets the material_resolution of this Material.
+        r"""Sets the material_resolution of this Material.
 
         素材分辨率。
 
@@ -195,7 +195,7 @@ class Material:
 
     @property
     def material_size_str(self):
-        """Gets the material_size_str of this Material.
+        r"""Gets the material_size_str of this Material.
 
         素材大小（含单位）。
 
@@ -206,7 +206,7 @@ class Material:
 
     @material_size_str.setter
     def material_size_str(self, material_size_str):
-        """Sets the material_size_str of this Material.
+        r"""Sets the material_size_str of this Material.
 
         素材大小（含单位）。
 
@@ -217,7 +217,7 @@ class Material:
 
     @property
     def file_path(self):
-        """Gets the file_path of this Material.
+        r"""Gets the file_path of this Material.
 
         素材云盘存储文件下载地址。
 
@@ -228,7 +228,7 @@ class Material:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this Material.
+        r"""Sets the file_path of this Material.
 
         素材云盘存储文件下载地址。
 

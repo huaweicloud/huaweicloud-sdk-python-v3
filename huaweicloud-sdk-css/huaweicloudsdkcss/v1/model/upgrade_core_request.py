@@ -29,7 +29,7 @@ class UpgradeCoreRequest:
     }
 
     def __init__(self, cluster_id=None, inst_type=None, body=None):
-        """UpgradeCoreRequest
+        r"""UpgradeCoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpgradeCoreRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpgradeCoreRequest.
+        r"""Gets the cluster_id of this UpgradeCoreRequest.
 
         指定待升级的集群ID。
 
@@ -66,7 +66,7 @@ class UpgradeCoreRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpgradeCoreRequest.
+        r"""Sets the cluster_id of this UpgradeCoreRequest.
 
         指定待升级的集群ID。
 
@@ -77,7 +77,7 @@ class UpgradeCoreRequest:
 
     @property
     def inst_type(self):
-        """Gets the inst_type of this UpgradeCoreRequest.
+        r"""Gets the inst_type of this UpgradeCoreRequest.
 
         指定待升级的节点类型，当前仅支持all。
 
@@ -88,7 +88,7 @@ class UpgradeCoreRequest:
 
     @inst_type.setter
     def inst_type(self, inst_type):
-        """Sets the inst_type of this UpgradeCoreRequest.
+        r"""Sets the inst_type of this UpgradeCoreRequest.
 
         指定待升级的节点类型，当前仅支持all。
 
@@ -99,7 +99,7 @@ class UpgradeCoreRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeCoreRequest.
+        r"""Gets the body of this UpgradeCoreRequest.
 
         :return: The body of this UpgradeCoreRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpgradingTheKernelBody`
@@ -108,7 +108,7 @@ class UpgradeCoreRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeCoreRequest.
+        r"""Sets the body of this UpgradeCoreRequest.
 
         :param body: The body of this UpgradeCoreRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpgradingTheKernelBody`

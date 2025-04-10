@@ -33,7 +33,7 @@ class PostgresqlHbaHistory:
     }
 
     def __init__(self, status=None, time=None, fail_reason=None, before_confs=None, after_confs=None):
-        """PostgresqlHbaHistory
+        r"""PostgresqlHbaHistory
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PostgresqlHbaHistory:
 
     @property
     def status(self):
-        """Gets the status of this PostgresqlHbaHistory.
+        r"""Gets the status of this PostgresqlHbaHistory.
 
         修改结果，    success：已生效     failed：未生效     setting：设置中\",
 
@@ -82,7 +82,7 @@ class PostgresqlHbaHistory:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PostgresqlHbaHistory.
+        r"""Sets the status of this PostgresqlHbaHistory.
 
         修改结果，    success：已生效     failed：未生效     setting：设置中\",
 
@@ -93,7 +93,7 @@ class PostgresqlHbaHistory:
 
     @property
     def time(self):
-        """Gets the time of this PostgresqlHbaHistory.
+        r"""Gets the time of this PostgresqlHbaHistory.
 
         修改时间
 
@@ -104,7 +104,7 @@ class PostgresqlHbaHistory:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this PostgresqlHbaHistory.
+        r"""Sets the time of this PostgresqlHbaHistory.
 
         修改时间
 
@@ -115,7 +115,7 @@ class PostgresqlHbaHistory:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this PostgresqlHbaHistory.
+        r"""Gets the fail_reason of this PostgresqlHbaHistory.
 
         修改失败原因
 
@@ -126,7 +126,7 @@ class PostgresqlHbaHistory:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this PostgresqlHbaHistory.
+        r"""Sets the fail_reason of this PostgresqlHbaHistory.
 
         修改失败原因
 
@@ -137,7 +137,7 @@ class PostgresqlHbaHistory:
 
     @property
     def before_confs(self):
-        """Gets the before_confs of this PostgresqlHbaHistory.
+        r"""Gets the before_confs of this PostgresqlHbaHistory.
 
         修改之前的值
 
@@ -148,7 +148,7 @@ class PostgresqlHbaHistory:
 
     @before_confs.setter
     def before_confs(self, before_confs):
-        """Sets the before_confs of this PostgresqlHbaHistory.
+        r"""Sets the before_confs of this PostgresqlHbaHistory.
 
         修改之前的值
 
@@ -159,7 +159,7 @@ class PostgresqlHbaHistory:
 
     @property
     def after_confs(self):
-        """Gets the after_confs of this PostgresqlHbaHistory.
+        r"""Gets the after_confs of this PostgresqlHbaHistory.
 
         修改之后的值
 
@@ -170,7 +170,7 @@ class PostgresqlHbaHistory:
 
     @after_confs.setter
     def after_confs(self, after_confs):
-        """Sets the after_confs of this PostgresqlHbaHistory.
+        r"""Sets the after_confs of this PostgresqlHbaHistory.
 
         修改之后的值
 

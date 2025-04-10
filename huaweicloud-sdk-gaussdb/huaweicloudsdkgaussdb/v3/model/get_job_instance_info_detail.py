@@ -27,7 +27,7 @@ class GetJobInstanceInfoDetail:
     }
 
     def __init__(self, id=None, name=None):
-        """GetJobInstanceInfoDetail
+        r"""GetJobInstanceInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetJobInstanceInfoDetail:
 
     @property
     def id(self):
-        """Gets the id of this GetJobInstanceInfoDetail.
+        r"""Gets the id of this GetJobInstanceInfoDetail.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class GetJobInstanceInfoDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetJobInstanceInfoDetail.
+        r"""Sets the id of this GetJobInstanceInfoDetail.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class GetJobInstanceInfoDetail:
 
     @property
     def name(self):
-        """Gets the name of this GetJobInstanceInfoDetail.
+        r"""Gets the name of this GetJobInstanceInfoDetail.
 
         实例名称。
 
@@ -81,7 +81,7 @@ class GetJobInstanceInfoDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetJobInstanceInfoDetail.
+        r"""Sets the name of this GetJobInstanceInfoDetail.
 
         实例名称。
 

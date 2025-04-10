@@ -27,7 +27,7 @@ class ChangePasswordRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """ChangePasswordRequest
+        r"""ChangePasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangePasswordRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ChangePasswordRequest.
+        r"""Gets the user_id of this ChangePasswordRequest.
 
         用户id
 
@@ -60,7 +60,7 @@ class ChangePasswordRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ChangePasswordRequest.
+        r"""Sets the user_id of this ChangePasswordRequest.
 
         用户id
 
@@ -71,7 +71,7 @@ class ChangePasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangePasswordRequest.
+        r"""Gets the body of this ChangePasswordRequest.
 
         :return: The body of this ChangePasswordRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ChangePasswordReq`
@@ -80,7 +80,7 @@ class ChangePasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangePasswordRequest.
+        r"""Sets the body of this ChangePasswordRequest.
 
         :param body: The body of this ChangePasswordRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ChangePasswordReq`

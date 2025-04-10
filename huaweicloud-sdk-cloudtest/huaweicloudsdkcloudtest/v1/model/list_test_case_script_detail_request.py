@@ -29,7 +29,7 @@ class ListTestCaseScriptDetailRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, tmss_case_uri=None):
-        """ListTestCaseScriptDetailRequest
+        r"""ListTestCaseScriptDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListTestCaseScriptDetailRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestCaseScriptDetailRequest.
+        r"""Gets the project_id of this ListTestCaseScriptDetailRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ListTestCaseScriptDetailRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestCaseScriptDetailRequest.
+        r"""Sets the project_id of this ListTestCaseScriptDetailRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ListTestCaseScriptDetailRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTestCaseScriptDetailRequest.
+        r"""Gets the task_id of this ListTestCaseScriptDetailRequest.
 
         执行任务id
 
@@ -88,7 +88,7 @@ class ListTestCaseScriptDetailRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTestCaseScriptDetailRequest.
+        r"""Sets the task_id of this ListTestCaseScriptDetailRequest.
 
         执行任务id
 
@@ -99,7 +99,7 @@ class ListTestCaseScriptDetailRequest:
 
     @property
     def tmss_case_uri(self):
-        """Gets the tmss_case_uri of this ListTestCaseScriptDetailRequest.
+        r"""Gets the tmss_case_uri of this ListTestCaseScriptDetailRequest.
 
         TMSS用例uri
 
@@ -110,7 +110,7 @@ class ListTestCaseScriptDetailRequest:
 
     @tmss_case_uri.setter
     def tmss_case_uri(self, tmss_case_uri):
-        """Sets the tmss_case_uri of this ListTestCaseScriptDetailRequest.
+        r"""Sets the tmss_case_uri of this ListTestCaseScriptDetailRequest.
 
         TMSS用例uri
 

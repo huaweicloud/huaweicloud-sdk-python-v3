@@ -30,7 +30,7 @@ class CreateFlowLogResponse(SdkResponse):
     }
 
     def __init__(self, flow_log=None, request_id=None, x_client_token=None):
-        """CreateFlowLogResponse
+        r"""CreateFlowLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateFlowLogResponse(SdkResponse):
 
     @property
     def flow_log(self):
-        """Gets the flow_log of this CreateFlowLogResponse.
+        r"""Gets the flow_log of this CreateFlowLogResponse.
 
         :return: The flow_log of this CreateFlowLogResponse.
         :rtype: :class:`huaweicloudsdker.v3.FlowLog`
@@ -67,7 +67,7 @@ class CreateFlowLogResponse(SdkResponse):
 
     @flow_log.setter
     def flow_log(self, flow_log):
-        """Sets the flow_log of this CreateFlowLogResponse.
+        r"""Sets the flow_log of this CreateFlowLogResponse.
 
         :param flow_log: The flow_log of this CreateFlowLogResponse.
         :type flow_log: :class:`huaweicloudsdker.v3.FlowLog`
@@ -76,7 +76,7 @@ class CreateFlowLogResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateFlowLogResponse.
+        r"""Gets the request_id of this CreateFlowLogResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class CreateFlowLogResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateFlowLogResponse.
+        r"""Sets the request_id of this CreateFlowLogResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class CreateFlowLogResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateFlowLogResponse.
+        r"""Gets the x_client_token of this CreateFlowLogResponse.
 
         :return: The x_client_token of this CreateFlowLogResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateFlowLogResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateFlowLogResponse.
+        r"""Sets the x_client_token of this CreateFlowLogResponse.
 
         :param x_client_token: The x_client_token of this CreateFlowLogResponse.
         :type x_client_token: str

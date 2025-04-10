@@ -24,7 +24,7 @@ class StartPipelineResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartPipelineResponse
+        r"""StartPipelineResponse
 
         The model defined in huaweicloud sdk
 

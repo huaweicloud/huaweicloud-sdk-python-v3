@@ -57,7 +57,7 @@ class Secret:
     }
 
     def __init__(self, id=None, name=None, state=None, kms_key_id=None, description=None, create_time=None, update_time=None, scheduled_delete_time=None, secret_type=None, auto_rotation=None, rotation_period=None, rotation_config=None, rotation_time=None, next_rotation_time=None, event_subscriptions=None, enterprise_project_id=None, rotation_func_urn=None):
-        """Secret
+        r"""Secret
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class Secret:
 
     @property
     def id(self):
-        """Gets the id of this Secret.
+        r"""Gets the id of this Secret.
 
         凭据的资源标识符。
 
@@ -166,7 +166,7 @@ class Secret:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Secret.
+        r"""Sets the id of this Secret.
 
         凭据的资源标识符。
 
@@ -177,7 +177,7 @@ class Secret:
 
     @property
     def name(self):
-        """Gets the name of this Secret.
+        r"""Gets the name of this Secret.
 
         凭据名称。
 
@@ -188,7 +188,7 @@ class Secret:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Secret.
+        r"""Sets the name of this Secret.
 
         凭据名称。
 
@@ -199,7 +199,7 @@ class Secret:
 
     @property
     def state(self):
-        """Gets the state of this Secret.
+        r"""Gets the state of this Secret.
 
         凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态
 
@@ -210,7 +210,7 @@ class Secret:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Secret.
+        r"""Sets the state of this Secret.
 
         凭据状态，取值如下：  ENABLED：表示启用状态  DISABLED：表示禁用状态  PENDING_DELETE：表示待删除状态  FROZEN：表示冻结状态
 
@@ -221,7 +221,7 @@ class Secret:
 
     @property
     def kms_key_id(self):
-        """Gets the kms_key_id of this Secret.
+        r"""Gets the kms_key_id of this Secret.
 
         用于加密凭据值的KMS主密钥的ID值。
 
@@ -232,7 +232,7 @@ class Secret:
 
     @kms_key_id.setter
     def kms_key_id(self, kms_key_id):
-        """Sets the kms_key_id of this Secret.
+        r"""Sets the kms_key_id of this Secret.
 
         用于加密凭据值的KMS主密钥的ID值。
 
@@ -243,7 +243,7 @@ class Secret:
 
     @property
     def description(self):
-        """Gets the description of this Secret.
+        r"""Gets the description of this Secret.
 
         凭据的描述信息。
 
@@ -254,7 +254,7 @@ class Secret:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Secret.
+        r"""Sets the description of this Secret.
 
         凭据的描述信息。
 
@@ -265,7 +265,7 @@ class Secret:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Secret.
+        r"""Gets the create_time of this Secret.
 
         凭据创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -276,7 +276,7 @@ class Secret:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Secret.
+        r"""Sets the create_time of this Secret.
 
         凭据创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -287,7 +287,7 @@ class Secret:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Secret.
+        r"""Gets the update_time of this Secret.
 
         凭据上次更新时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -298,7 +298,7 @@ class Secret:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Secret.
+        r"""Sets the update_time of this Secret.
 
         凭据上次更新时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -309,7 +309,7 @@ class Secret:
 
     @property
     def scheduled_delete_time(self):
-        """Gets the scheduled_delete_time of this Secret.
+        r"""Gets the scheduled_delete_time of this Secret.
 
         凭据计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。  凭据不在删除计划中时，本项值为null。
 
@@ -320,7 +320,7 @@ class Secret:
 
     @scheduled_delete_time.setter
     def scheduled_delete_time(self, scheduled_delete_time):
-        """Sets the scheduled_delete_time of this Secret.
+        r"""Sets the scheduled_delete_time of this Secret.
 
         凭据计划删除时间，时间戳，即从1970年1月1日至该时间的总秒数。  凭据不在删除计划中时，本项值为null。
 
@@ -331,7 +331,7 @@ class Secret:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this Secret.
+        r"""Gets the secret_type of this Secret.
 
         凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：TaurusDB凭据。专门针对TaurusDB的凭据，用于存储TaurusDB的账号信息。
 
@@ -342,7 +342,7 @@ class Secret:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this Secret.
+        r"""Sets the secret_type of this Secret.
 
         凭据类型  - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。 - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代） - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。 - GaussDB-FG：TaurusDB凭据。专门针对TaurusDB的凭据，用于存储TaurusDB的账号信息。
 
@@ -353,7 +353,7 @@ class Secret:
 
     @property
     def auto_rotation(self):
-        """Gets the auto_rotation of this Secret.
+        r"""Gets the auto_rotation of this Secret.
 
         自动轮转  取值：true 开启, false 关闭(默认)
 
@@ -364,7 +364,7 @@ class Secret:
 
     @auto_rotation.setter
     def auto_rotation(self, auto_rotation):
-        """Sets the auto_rotation of this Secret.
+        r"""Sets the auto_rotation of this Secret.
 
         自动轮转  取值：true 开启, false 关闭(默认)
 
@@ -375,7 +375,7 @@ class Secret:
 
     @property
     def rotation_period(self):
-        """Gets the rotation_period of this Secret.
+        r"""Gets the rotation_period of this Secret.
 
         轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
@@ -386,7 +386,7 @@ class Secret:
 
     @rotation_period.setter
     def rotation_period(self, rotation_period):
-        """Sets the rotation_period of this Secret.
+        r"""Sets the rotation_period of this Secret.
 
         轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
@@ -397,7 +397,7 @@ class Secret:
 
     @property
     def rotation_config(self):
-        """Gets the rotation_config of this Secret.
+        r"""Gets the rotation_config of this Secret.
 
         轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
@@ -408,7 +408,7 @@ class Secret:
 
     @rotation_config.setter
     def rotation_config(self, rotation_config):
-        """Sets the rotation_config of this Secret.
+        r"""Sets the rotation_config of this Secret.
 
         轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，配置为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  说明：当secret_type为RDS-FG、GaussDB-FG时，必须填写该值  InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
@@ -419,7 +419,7 @@ class Secret:
 
     @property
     def rotation_time(self):
-        """Gets the rotation_time of this Secret.
+        r"""Gets the rotation_time of this Secret.
 
         轮转时间戳
 
@@ -430,7 +430,7 @@ class Secret:
 
     @rotation_time.setter
     def rotation_time(self, rotation_time):
-        """Sets the rotation_time of this Secret.
+        r"""Sets the rotation_time of this Secret.
 
         轮转时间戳
 
@@ -441,7 +441,7 @@ class Secret:
 
     @property
     def next_rotation_time(self):
-        """Gets the next_rotation_time of this Secret.
+        r"""Gets the next_rotation_time of this Secret.
 
         下一次轮转时间戳
 
@@ -452,7 +452,7 @@ class Secret:
 
     @next_rotation_time.setter
     def next_rotation_time(self, next_rotation_time):
-        """Sets the next_rotation_time of this Secret.
+        r"""Sets the next_rotation_time of this Secret.
 
         下一次轮转时间戳
 
@@ -463,7 +463,7 @@ class Secret:
 
     @property
     def event_subscriptions(self):
-        """Gets the event_subscriptions of this Secret.
+        r"""Gets the event_subscriptions of this Secret.
 
         凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
@@ -474,7 +474,7 @@ class Secret:
 
     @event_subscriptions.setter
     def event_subscriptions(self, event_subscriptions):
-        """Sets the event_subscriptions of this Secret.
+        r"""Sets the event_subscriptions of this Secret.
 
         凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
@@ -485,7 +485,7 @@ class Secret:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Secret.
+        r"""Gets the enterprise_project_id of this Secret.
 
         企业项目ID
 
@@ -496,7 +496,7 @@ class Secret:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Secret.
+        r"""Sets the enterprise_project_id of this Secret.
 
         企业项目ID
 
@@ -507,7 +507,7 @@ class Secret:
 
     @property
     def rotation_func_urn(self):
-        """Gets the rotation_func_urn of this Secret.
+        r"""Gets the rotation_func_urn of this Secret.
 
         FunctionGraph函数的urn。
 
@@ -518,7 +518,7 @@ class Secret:
 
     @rotation_func_urn.setter
     def rotation_func_urn(self, rotation_func_urn):
-        """Sets the rotation_func_urn of this Secret.
+        r"""Sets the rotation_func_urn of this Secret.
 
         FunctionGraph函数的urn。
 

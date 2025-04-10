@@ -28,7 +28,7 @@ class AddAgentPathResponse(SdkResponse):
     }
 
     def __init__(self, added=None, existed=None):
-        """AddAgentPathResponse
+        r"""AddAgentPathResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddAgentPathResponse(SdkResponse):
 
     @property
     def added(self):
-        """Gets the added of this AddAgentPathResponse.
+        r"""Gets the added of this AddAgentPathResponse.
 
         新添加成功的路径列表
 
@@ -62,7 +62,7 @@ class AddAgentPathResponse(SdkResponse):
 
     @added.setter
     def added(self, added):
-        """Sets the added of this AddAgentPathResponse.
+        r"""Sets the added of this AddAgentPathResponse.
 
         新添加成功的路径列表
 
@@ -73,7 +73,7 @@ class AddAgentPathResponse(SdkResponse):
 
     @property
     def existed(self):
-        """Gets the existed of this AddAgentPathResponse.
+        r"""Gets the existed of this AddAgentPathResponse.
 
         已经存在的路径列表
 
@@ -84,7 +84,7 @@ class AddAgentPathResponse(SdkResponse):
 
     @existed.setter
     def existed(self, existed):
-        """Sets the existed of this AddAgentPathResponse.
+        r"""Sets the existed of this AddAgentPathResponse.
 
         已经存在的路径列表
 

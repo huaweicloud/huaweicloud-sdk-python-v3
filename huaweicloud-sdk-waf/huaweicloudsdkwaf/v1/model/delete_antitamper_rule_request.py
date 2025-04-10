@@ -29,7 +29,7 @@ class DeleteAntitamperRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """DeleteAntitamperRuleRequest
+        r"""DeleteAntitamperRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteAntitamperRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteAntitamperRuleRequest.
+        r"""Gets the enterprise_project_id of this DeleteAntitamperRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -66,7 +66,7 @@ class DeleteAntitamperRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteAntitamperRuleRequest.
+        r"""Sets the enterprise_project_id of this DeleteAntitamperRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -77,7 +77,7 @@ class DeleteAntitamperRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteAntitamperRuleRequest.
+        r"""Gets the policy_id of this DeleteAntitamperRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -88,7 +88,7 @@ class DeleteAntitamperRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteAntitamperRuleRequest.
+        r"""Sets the policy_id of this DeleteAntitamperRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -99,7 +99,7 @@ class DeleteAntitamperRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteAntitamperRuleRequest.
+        r"""Gets the rule_id of this DeleteAntitamperRuleRequest.
 
         防篡改规则id，通过查询防篡改规则列表接口（ListAntitamperRule）获取
 
@@ -110,7 +110,7 @@ class DeleteAntitamperRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteAntitamperRuleRequest.
+        r"""Sets the rule_id of this DeleteAntitamperRuleRequest.
 
         防篡改规则id，通过查询防篡改规则列表接口（ListAntitamperRule）获取
 

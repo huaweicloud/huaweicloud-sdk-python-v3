@@ -29,7 +29,7 @@ class PolicyStatement:
     }
 
     def __init__(self, effect=None, action=None, resource=None):
-        """PolicyStatement
+        r"""PolicyStatement
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PolicyStatement:
 
     @property
     def effect(self):
-        """Gets the effect of this PolicyStatement.
+        r"""Gets the effect of this PolicyStatement.
 
         - Allow，允许控制访问权限 - Deny，拒绝控制访问权限
 
@@ -65,7 +65,7 @@ class PolicyStatement:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this PolicyStatement.
+        r"""Sets the effect of this PolicyStatement.
 
         - Allow，允许控制访问权限 - Deny，拒绝控制访问权限
 
@@ -76,7 +76,7 @@ class PolicyStatement:
 
     @property
     def action(self):
-        """Gets the action of this PolicyStatement.
+        r"""Gets the action of this PolicyStatement.
 
         obs访问权限
 
@@ -87,7 +87,7 @@ class PolicyStatement:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PolicyStatement.
+        r"""Sets the action of this PolicyStatement.
 
         obs访问权限
 
@@ -98,7 +98,7 @@ class PolicyStatement:
 
     @property
     def resource(self):
-        """Gets the resource of this PolicyStatement.
+        r"""Gets the resource of this PolicyStatement.
 
         obs对象
 
@@ -109,7 +109,7 @@ class PolicyStatement:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this PolicyStatement.
+        r"""Sets the resource of this PolicyStatement.
 
         obs对象
 

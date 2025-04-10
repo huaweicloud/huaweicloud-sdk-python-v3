@@ -25,7 +25,7 @@ class ShowLeagueRequest:
     }
 
     def __init__(self, league_id=None):
-        """ShowLeagueRequest
+        r"""ShowLeagueRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLeagueRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ShowLeagueRequest.
+        r"""Gets the league_id of this ShowLeagueRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -53,7 +53,7 @@ class ShowLeagueRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ShowLeagueRequest.
+        r"""Sets the league_id of this ShowLeagueRequest.
 
         联盟id，最大32位，字母和数字组成
 

@@ -35,7 +35,7 @@ class VehicleLicenseRequestBody:
     }
 
     def __init__(self, image=None, url=None, side=None, return_issuing_authority=None, return_text_location=None, recognize_electronic_license=None):
-        """VehicleLicenseRequestBody
+        r"""VehicleLicenseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VehicleLicenseRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this VehicleLicenseRequestBody.
+        r"""Gets the image of this VehicleLicenseRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -89,7 +89,7 @@ class VehicleLicenseRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this VehicleLicenseRequestBody.
+        r"""Sets the image of this VehicleLicenseRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -100,7 +100,7 @@ class VehicleLicenseRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this VehicleLicenseRequestBody.
+        r"""Gets the url of this VehicleLicenseRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -111,7 +111,7 @@ class VehicleLicenseRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this VehicleLicenseRequestBody.
+        r"""Sets the url of this VehicleLicenseRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -122,7 +122,7 @@ class VehicleLicenseRequestBody:
 
     @property
     def side(self):
-        """Gets the side of this VehicleLicenseRequestBody.
+        r"""Gets the side of this VehicleLicenseRequestBody.
 
          - front：行驶证主页  - back：行驶证副页  - double_side：行驶证双页信息  > 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
 
@@ -133,7 +133,7 @@ class VehicleLicenseRequestBody:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this VehicleLicenseRequestBody.
+        r"""Sets the side of this VehicleLicenseRequestBody.
 
          - front：行驶证主页  - back：行驶证副页  - double_side：行驶证双页信息  > 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
 
@@ -144,7 +144,7 @@ class VehicleLicenseRequestBody:
 
     @property
     def return_issuing_authority(self):
-        """Gets the return_issuing_authority of this VehicleLicenseRequestBody.
+        r"""Gets the return_issuing_authority of this VehicleLicenseRequestBody.
 
         是否返回发证机关的开关，可选值包括： - true：返回发证机关 - false：不返回发证机关  > 说明： - 如果无该参数，系统默认不返回发证机关。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -155,7 +155,7 @@ class VehicleLicenseRequestBody:
 
     @return_issuing_authority.setter
     def return_issuing_authority(self, return_issuing_authority):
-        """Sets the return_issuing_authority of this VehicleLicenseRequestBody.
+        r"""Sets the return_issuing_authority of this VehicleLicenseRequestBody.
 
         是否返回发证机关的开关，可选值包括： - true：返回发证机关 - false：不返回发证机关  > 说明： - 如果无该参数，系统默认不返回发证机关。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -166,7 +166,7 @@ class VehicleLicenseRequestBody:
 
     @property
     def return_text_location(self):
-        """Gets the return_text_location of this VehicleLicenseRequestBody.
+        r"""Gets the return_text_location of this VehicleLicenseRequestBody.
 
         识别到的文字块的区域位置信息。取值范围：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -177,7 +177,7 @@ class VehicleLicenseRequestBody:
 
     @return_text_location.setter
     def return_text_location(self, return_text_location):
-        """Sets the return_text_location of this VehicleLicenseRequestBody.
+        r"""Sets the return_text_location of this VehicleLicenseRequestBody.
 
         识别到的文字块的区域位置信息。取值范围：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -188,7 +188,7 @@ class VehicleLicenseRequestBody:
 
     @property
     def recognize_electronic_license(self):
-        """Gets the recognize_electronic_license of this VehicleLicenseRequestBody.
+        r"""Gets the recognize_electronic_license of this VehicleLicenseRequestBody.
 
         是否支持识别电子行驶证，取值范围：  - true：支持识别电子行驶证  - false：不支持识别电子行驶证  默认不支持识别电子行驶证。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -199,7 +199,7 @@ class VehicleLicenseRequestBody:
 
     @recognize_electronic_license.setter
     def recognize_electronic_license(self, recognize_electronic_license):
-        """Sets the recognize_electronic_license of this VehicleLicenseRequestBody.
+        r"""Sets the recognize_electronic_license of this VehicleLicenseRequestBody.
 
         是否支持识别电子行驶证，取值范围：  - true：支持识别电子行驶证  - false：不支持识别电子行驶证  默认不支持识别电子行驶证。如果输入参数不是Boolean类型，则会报非法参数错误。 
 

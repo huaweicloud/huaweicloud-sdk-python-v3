@@ -31,7 +31,7 @@ class GetPublicScriptRequest:
     }
 
     def __init__(self, script_uuid=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """GetPublicScriptRequest
+        r"""GetPublicScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class GetPublicScriptRequest:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this GetPublicScriptRequest.
+        r"""Gets the script_uuid of this GetPublicScriptRequest.
 
         公共脚本Uuid
 
@@ -74,7 +74,7 @@ class GetPublicScriptRequest:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this GetPublicScriptRequest.
+        r"""Sets the script_uuid of this GetPublicScriptRequest.
 
         公共脚本Uuid
 
@@ -85,7 +85,7 @@ class GetPublicScriptRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this GetPublicScriptRequest.
+        r"""Gets the x_language of this GetPublicScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -96,7 +96,7 @@ class GetPublicScriptRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this GetPublicScriptRequest.
+        r"""Sets the x_language of this GetPublicScriptRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -107,7 +107,7 @@ class GetPublicScriptRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this GetPublicScriptRequest.
+        r"""Gets the x_project_id of this GetPublicScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -118,7 +118,7 @@ class GetPublicScriptRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this GetPublicScriptRequest.
+        r"""Sets the x_project_id of this GetPublicScriptRequest.
 
         项目ID，一个项目对应一个region
 
@@ -129,7 +129,7 @@ class GetPublicScriptRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this GetPublicScriptRequest.
+        r"""Gets the x_user_profile of this GetPublicScriptRequest.
 
         IAM5.0用户信息
 
@@ -140,7 +140,7 @@ class GetPublicScriptRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this GetPublicScriptRequest.
+        r"""Sets the x_user_profile of this GetPublicScriptRequest.
 
         IAM5.0用户信息
 

@@ -25,7 +25,7 @@ class ImportFactorRequestBody:
     }
 
     def __init__(self, excel_file=None):
-        """ImportFactorRequestBody
+        r"""ImportFactorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportFactorRequestBody:
 
     @property
     def excel_file(self):
-        """Gets the excel_file of this ImportFactorRequestBody.
+        r"""Gets the excel_file of this ImportFactorRequestBody.
 
         待导入文件
 
@@ -53,7 +53,7 @@ class ImportFactorRequestBody:
 
     @excel_file.setter
     def excel_file(self, excel_file):
-        """Sets the excel_file of this ImportFactorRequestBody.
+        r"""Sets the excel_file of this ImportFactorRequestBody.
 
         待导入文件
 

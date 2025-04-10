@@ -31,7 +31,7 @@ class VolumeTransferSummary:
     }
 
     def __init__(self, id=None, links=None, name=None, volume_id=None):
-        """VolumeTransferSummary
+        r"""VolumeTransferSummary
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class VolumeTransferSummary:
 
     @property
     def id(self):
-        """Gets the id of this VolumeTransferSummary.
+        r"""Gets the id of this VolumeTransferSummary.
 
         云硬盘过户记录的ID。
 
@@ -71,7 +71,7 @@ class VolumeTransferSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeTransferSummary.
+        r"""Sets the id of this VolumeTransferSummary.
 
         云硬盘过户记录的ID。
 
@@ -82,7 +82,7 @@ class VolumeTransferSummary:
 
     @property
     def links(self):
-        """Gets the links of this VolumeTransferSummary.
+        r"""Gets the links of this VolumeTransferSummary.
 
         云硬盘过户记录的链接
 
@@ -93,7 +93,7 @@ class VolumeTransferSummary:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VolumeTransferSummary.
+        r"""Sets the links of this VolumeTransferSummary.
 
         云硬盘过户记录的链接
 
@@ -104,7 +104,7 @@ class VolumeTransferSummary:
 
     @property
     def name(self):
-        """Gets the name of this VolumeTransferSummary.
+        r"""Gets the name of this VolumeTransferSummary.
 
         云硬盘过户记录的名称
 
@@ -115,7 +115,7 @@ class VolumeTransferSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeTransferSummary.
+        r"""Sets the name of this VolumeTransferSummary.
 
         云硬盘过户记录的名称
 
@@ -126,7 +126,7 @@ class VolumeTransferSummary:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this VolumeTransferSummary.
+        r"""Gets the volume_id of this VolumeTransferSummary.
 
         云硬盘ID。
 
@@ -137,7 +137,7 @@ class VolumeTransferSummary:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this VolumeTransferSummary.
+        r"""Sets the volume_id of this VolumeTransferSummary.
 
         云硬盘ID。
 

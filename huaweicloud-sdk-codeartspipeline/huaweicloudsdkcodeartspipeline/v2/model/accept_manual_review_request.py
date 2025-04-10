@@ -33,7 +33,7 @@ class AcceptManualReviewRequest:
     }
 
     def __init__(self, job_run_id=None, project_id=None, pipeline_id=None, pipeline_run_id=None, step_run_id=None):
-        """AcceptManualReviewRequest
+        r"""AcceptManualReviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AcceptManualReviewRequest:
 
     @property
     def job_run_id(self):
-        """Gets the job_run_id of this AcceptManualReviewRequest.
+        r"""Gets the job_run_id of this AcceptManualReviewRequest.
 
         流水线任务ID
 
@@ -77,7 +77,7 @@ class AcceptManualReviewRequest:
 
     @job_run_id.setter
     def job_run_id(self, job_run_id):
-        """Sets the job_run_id of this AcceptManualReviewRequest.
+        r"""Sets the job_run_id of this AcceptManualReviewRequest.
 
         流水线任务ID
 
@@ -88,7 +88,7 @@ class AcceptManualReviewRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AcceptManualReviewRequest.
+        r"""Gets the project_id of this AcceptManualReviewRequest.
 
         项目ID
 
@@ -99,7 +99,7 @@ class AcceptManualReviewRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AcceptManualReviewRequest.
+        r"""Sets the project_id of this AcceptManualReviewRequest.
 
         项目ID
 
@@ -110,7 +110,7 @@ class AcceptManualReviewRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this AcceptManualReviewRequest.
+        r"""Gets the pipeline_id of this AcceptManualReviewRequest.
 
         流水线ID
 
@@ -121,7 +121,7 @@ class AcceptManualReviewRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this AcceptManualReviewRequest.
+        r"""Sets the pipeline_id of this AcceptManualReviewRequest.
 
         流水线ID
 
@@ -132,7 +132,7 @@ class AcceptManualReviewRequest:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this AcceptManualReviewRequest.
+        r"""Gets the pipeline_run_id of this AcceptManualReviewRequest.
 
         流水线运行实例ID
 
@@ -143,7 +143,7 @@ class AcceptManualReviewRequest:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this AcceptManualReviewRequest.
+        r"""Sets the pipeline_run_id of this AcceptManualReviewRequest.
 
         流水线运行实例ID
 
@@ -154,7 +154,7 @@ class AcceptManualReviewRequest:
 
     @property
     def step_run_id(self):
-        """Gets the step_run_id of this AcceptManualReviewRequest.
+        r"""Gets the step_run_id of this AcceptManualReviewRequest.
 
         流水线步骤ID
 
@@ -165,7 +165,7 @@ class AcceptManualReviewRequest:
 
     @step_run_id.setter
     def step_run_id(self, step_run_id):
-        """Sets the step_run_id of this AcceptManualReviewRequest.
+        r"""Sets the step_run_id of this AcceptManualReviewRequest.
 
         流水线步骤ID
 

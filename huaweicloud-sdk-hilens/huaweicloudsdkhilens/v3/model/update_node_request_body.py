@@ -25,7 +25,7 @@ class UpdateNodeRequestBody:
     }
 
     def __init__(self, node=None):
-        """UpdateNodeRequestBody
+        r"""UpdateNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNodeRequestBody:
 
     @property
     def node(self):
-        """Gets the node of this UpdateNodeRequestBody.
+        r"""Gets the node of this UpdateNodeRequestBody.
 
         :return: The node of this UpdateNodeRequestBody.
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeReqDetail`
@@ -51,7 +51,7 @@ class UpdateNodeRequestBody:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this UpdateNodeRequestBody.
+        r"""Sets the node of this UpdateNodeRequestBody.
 
         :param node: The node of this UpdateNodeRequestBody.
         :type node: :class:`huaweicloudsdkhilens.v3.UpdateNodeReqDetail`

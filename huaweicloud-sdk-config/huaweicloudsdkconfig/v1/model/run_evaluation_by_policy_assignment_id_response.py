@@ -24,7 +24,7 @@ class RunEvaluationByPolicyAssignmentIdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RunEvaluationByPolicyAssignmentIdResponse
+        r"""RunEvaluationByPolicyAssignmentIdResponse
 
         The model defined in huaweicloud sdk
 

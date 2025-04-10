@@ -31,7 +31,7 @@ class Notification:
     }
 
     def __init__(self, event_name=None, status=None, topic=None, msg_type=None):
-        """Notification
+        r"""Notification
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Notification:
 
     @property
     def event_name(self):
-        """Gets the event_name of this Notification.
+        r"""Gets the event_name of this Notification.
 
         消息事件的名称. 
 
@@ -75,7 +75,7 @@ class Notification:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this Notification.
+        r"""Sets the event_name of this Notification.
 
         消息事件的名称. 
 
@@ -86,7 +86,7 @@ class Notification:
 
     @property
     def status(self):
-        """Gets the status of this Notification.
+        r"""Gets the status of this Notification.
 
         事件通知模板选中状态 
 
@@ -97,7 +97,7 @@ class Notification:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Notification.
+        r"""Sets the status of this Notification.
 
         事件通知模板选中状态 
 
@@ -108,7 +108,7 @@ class Notification:
 
     @property
     def topic(self):
-        """Gets the topic of this Notification.
+        r"""Gets the topic of this Notification.
 
         事件通知主题的URN. 
 
@@ -119,7 +119,7 @@ class Notification:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this Notification.
+        r"""Sets the topic of this Notification.
 
         事件通知主题的URN. 
 
@@ -130,7 +130,7 @@ class Notification:
 
     @property
     def msg_type(self):
-        """Gets the msg_type of this Notification.
+        r"""Gets the msg_type of this Notification.
 
         订阅消息类型. 
 
@@ -141,7 +141,7 @@ class Notification:
 
     @msg_type.setter
     def msg_type(self, msg_type):
-        """Sets the msg_type of this Notification.
+        r"""Sets the msg_type of this Notification.
 
         订阅消息类型. 
 

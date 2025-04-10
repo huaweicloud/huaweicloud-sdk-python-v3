@@ -27,7 +27,7 @@ class ListPortInfosResponseModel:
     }
 
     def __init__(self, page_info=None, data=None):
-        """ListPortInfosResponseModel
+        r"""ListPortInfosResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListPortInfosResponseModel:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPortInfosResponseModel.
+        r"""Gets the page_info of this ListPortInfosResponseModel.
 
         :return: The page_info of this ListPortInfosResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PageOffSet`
@@ -59,7 +59,7 @@ class ListPortInfosResponseModel:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPortInfosResponseModel.
+        r"""Sets the page_info of this ListPortInfosResponseModel.
 
         :param page_info: The page_info of this ListPortInfosResponseModel.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.PageOffSet`
@@ -68,7 +68,7 @@ class ListPortInfosResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this ListPortInfosResponseModel.
+        r"""Gets the data of this ListPortInfosResponseModel.
 
         请求成功返回的数据。
 
@@ -79,7 +79,7 @@ class ListPortInfosResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPortInfosResponseModel.
+        r"""Sets the data of this ListPortInfosResponseModel.
 
         请求成功返回的数据。
 

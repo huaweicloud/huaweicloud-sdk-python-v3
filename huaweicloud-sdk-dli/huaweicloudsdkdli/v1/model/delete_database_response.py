@@ -34,7 +34,7 @@ class DeleteDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, job_mode=None, job_type=None):
-        """DeleteDatabaseResponse
+        r"""DeleteDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this DeleteDatabaseResponse.
+        r"""Gets the is_success of this DeleteDatabaseResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -83,7 +83,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this DeleteDatabaseResponse.
+        r"""Sets the is_success of this DeleteDatabaseResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -94,7 +94,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteDatabaseResponse.
+        r"""Gets the message of this DeleteDatabaseResponse.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -105,7 +105,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteDatabaseResponse.
+        r"""Sets the message of this DeleteDatabaseResponse.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -116,7 +116,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDatabaseResponse.
+        r"""Gets the job_id of this DeleteDatabaseResponse.
 
         异步删除数据库的时候返回的删除作业ID
 
@@ -127,7 +127,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDatabaseResponse.
+        r"""Sets the job_id of this DeleteDatabaseResponse.
 
         异步删除数据库的时候返回的删除作业ID
 
@@ -138,7 +138,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this DeleteDatabaseResponse.
+        r"""Gets the job_mode of this DeleteDatabaseResponse.
 
         删除数据库的时候的方式，是同步删除还是异步删除
 
@@ -149,7 +149,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this DeleteDatabaseResponse.
+        r"""Sets the job_mode of this DeleteDatabaseResponse.
 
         删除数据库的时候的方式，是同步删除还是异步删除
 
@@ -160,7 +160,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this DeleteDatabaseResponse.
+        r"""Gets the job_type of this DeleteDatabaseResponse.
 
         异步执行作业时返回执行删除作业类型
 
@@ -171,7 +171,7 @@ class DeleteDatabaseResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this DeleteDatabaseResponse.
+        r"""Sets the job_type of this DeleteDatabaseResponse.
 
         异步执行作业时返回执行删除作业类型
 

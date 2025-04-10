@@ -36,7 +36,7 @@ class ExportCertificateResponse(SdkResponse):
     }
 
     def __init__(self, entire_certificate=None, certificate=None, certificate_chain=None, private_key=None, enc_certificate=None, enc_private_key=None):
-        """ExportCertificateResponse
+        r"""ExportCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def entire_certificate(self):
-        """Gets the entire_certificate of this ExportCertificateResponse.
+        r"""Gets the entire_certificate of this ExportCertificateResponse.
 
         证书及证书链。
 
@@ -90,7 +90,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @entire_certificate.setter
     def entire_certificate(self, entire_certificate):
-        """Sets the entire_certificate of this ExportCertificateResponse.
+        r"""Sets the entire_certificate of this ExportCertificateResponse.
 
         证书及证书链。
 
@@ -101,7 +101,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this ExportCertificateResponse.
+        r"""Gets the certificate of this ExportCertificateResponse.
 
         证书内容，不包含证书链。
 
@@ -112,7 +112,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ExportCertificateResponse.
+        r"""Sets the certificate of this ExportCertificateResponse.
 
         证书内容，不包含证书链。
 
@@ -123,7 +123,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this ExportCertificateResponse.
+        r"""Gets the certificate_chain of this ExportCertificateResponse.
 
         证书链。
 
@@ -134,7 +134,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this ExportCertificateResponse.
+        r"""Sets the certificate_chain of this ExportCertificateResponse.
 
         证书链。
 
@@ -145,7 +145,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this ExportCertificateResponse.
+        r"""Gets the private_key of this ExportCertificateResponse.
 
         证书私钥。
 
@@ -156,7 +156,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ExportCertificateResponse.
+        r"""Sets the private_key of this ExportCertificateResponse.
 
         证书私钥。
 
@@ -167,7 +167,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this ExportCertificateResponse.
+        r"""Gets the enc_certificate of this ExportCertificateResponse.
 
         国密证书返回，加密证书内容。
 
@@ -178,7 +178,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this ExportCertificateResponse.
+        r"""Sets the enc_certificate of this ExportCertificateResponse.
 
         国密证书返回，加密证书内容。
 
@@ -189,7 +189,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this ExportCertificateResponse.
+        r"""Gets the enc_private_key of this ExportCertificateResponse.
 
         国密证书返回，加密证书私钥。 - 自己生成csr的方式：该字段是加密状态，需要解密。   解密思路如下:    1、从数字信封中获取“对称密钥密文”和“加密私钥密文”；   2、使用签名私钥解密“对称密钥密文”，得到“对称密钥明文”；   3、使用对称密钥解密“加密私钥密文”，得到“加密私钥明文”。 - 非自己生成csr的方式：该字段不需要解密。
 
@@ -200,7 +200,7 @@ class ExportCertificateResponse(SdkResponse):
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this ExportCertificateResponse.
+        r"""Sets the enc_private_key of this ExportCertificateResponse.
 
         国密证书返回，加密证书私钥。 - 自己生成csr的方式：该字段是加密状态，需要解密。   解密思路如下:    1、从数字信封中获取“对称密钥密文”和“加密私钥密文”；   2、使用签名私钥解密“对称密钥密文”，得到“对称密钥明文”；   3、使用对称密钥解密“加密私钥密文”，得到“加密私钥明文”。 - 非自己生成csr的方式：该字段不需要解密。
 

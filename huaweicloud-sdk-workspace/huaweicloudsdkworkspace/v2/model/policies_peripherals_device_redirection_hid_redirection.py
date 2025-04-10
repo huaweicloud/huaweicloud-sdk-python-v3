@@ -27,7 +27,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirection:
     }
 
     def __init__(self, hid_redirection_enable=None, options=None):
-        """PoliciesPeripheralsDeviceRedirectionHidRedirection
+        r"""PoliciesPeripheralsDeviceRedirectionHidRedirection
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirection:
 
     @property
     def hid_redirection_enable(self):
-        """Gets the hid_redirection_enable of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
+        r"""Gets the hid_redirection_enable of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
 
         是否开启HID（人体学设备）重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirection:
 
     @hid_redirection_enable.setter
     def hid_redirection_enable(self, hid_redirection_enable):
-        """Sets the hid_redirection_enable of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
+        r"""Sets the hid_redirection_enable of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
 
         是否开启HID（人体学设备）重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirection:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
+        r"""Gets the options of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirection:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
+        r"""Sets the options of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionHidRedirection.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions`

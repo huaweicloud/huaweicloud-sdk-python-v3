@@ -27,7 +27,7 @@ class BatchOperateAlertResult:
     }
 
     def __init__(self, error_ids=None, success_ids=None):
-        """BatchOperateAlertResult
+        r"""BatchOperateAlertResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchOperateAlertResult:
 
     @property
     def error_ids(self):
-        """Gets the error_ids of this BatchOperateAlertResult.
+        r"""Gets the error_ids of this BatchOperateAlertResult.
 
         失败id
 
@@ -61,7 +61,7 @@ class BatchOperateAlertResult:
 
     @error_ids.setter
     def error_ids(self, error_ids):
-        """Sets the error_ids of this BatchOperateAlertResult.
+        r"""Sets the error_ids of this BatchOperateAlertResult.
 
         失败id
 
@@ -72,7 +72,7 @@ class BatchOperateAlertResult:
 
     @property
     def success_ids(self):
-        """Gets the success_ids of this BatchOperateAlertResult.
+        r"""Gets the success_ids of this BatchOperateAlertResult.
 
         成功id
 
@@ -83,7 +83,7 @@ class BatchOperateAlertResult:
 
     @success_ids.setter
     def success_ids(self, success_ids):
-        """Sets the success_ids of this BatchOperateAlertResult.
+        r"""Sets the success_ids of this BatchOperateAlertResult.
 
         成功id
 

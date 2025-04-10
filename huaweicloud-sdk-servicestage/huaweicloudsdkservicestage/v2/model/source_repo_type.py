@@ -29,7 +29,7 @@ class SourceRepoType:
     }
 
     def __init__(self):
-        """SourceRepoType
+        r"""SourceRepoType
 
         The model defined in huaweicloud sdk
 

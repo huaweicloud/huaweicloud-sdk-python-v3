@@ -39,7 +39,7 @@ class Node:
     }
 
     def __init__(self, parent_node=None, category=None, description=None, id=None, ignore_error=None, metadata=None, name=None, task_name=None):
-        """Node
+        r"""Node
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Node:
 
     @property
     def parent_node(self):
-        """Gets the parent_node of this Node.
+        r"""Gets the parent_node of this Node.
 
         父亲节点的名称。
 
@@ -103,7 +103,7 @@ class Node:
 
     @parent_node.setter
     def parent_node(self, parent_node):
-        """Sets the parent_node of this Node.
+        r"""Sets the parent_node of this Node.
 
         父亲节点的名称。
 
@@ -114,7 +114,7 @@ class Node:
 
     @property
     def category(self):
-        """Gets the category of this Node.
+        r"""Gets the category of this Node.
 
         节点类型。
 
@@ -125,7 +125,7 @@ class Node:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this Node.
+        r"""Sets the category of this Node.
 
         节点类型。
 
@@ -136,7 +136,7 @@ class Node:
 
     @property
     def description(self):
-        """Gets the description of this Node.
+        r"""Gets the description of this Node.
 
         节点描述。
 
@@ -147,7 +147,7 @@ class Node:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Node.
+        r"""Sets the description of this Node.
 
         节点描述。
 
@@ -158,7 +158,7 @@ class Node:
 
     @property
     def id(self):
-        """Gets the id of this Node.
+        r"""Gets the id of this Node.
 
         节点id
 
@@ -169,7 +169,7 @@ class Node:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Node.
+        r"""Sets the id of this Node.
 
         节点id
 
@@ -180,7 +180,7 @@ class Node:
 
     @property
     def ignore_error(self):
-        """Gets the ignore_error of this Node.
+        r"""Gets the ignore_error of this Node.
 
         是否忽略错误
 
@@ -191,7 +191,7 @@ class Node:
 
     @ignore_error.setter
     def ignore_error(self, ignore_error):
-        """Sets the ignore_error of this Node.
+        r"""Sets the ignore_error of this Node.
 
         是否忽略错误
 
@@ -202,7 +202,7 @@ class Node:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Node.
+        r"""Gets the metadata of this Node.
 
         :return: The metadata of this Node.
         :rtype: :class:`huaweicloudsdkaom.v1.Metadata`
@@ -211,7 +211,7 @@ class Node:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Node.
+        r"""Sets the metadata of this Node.
 
         :param metadata: The metadata of this Node.
         :type metadata: :class:`huaweicloudsdkaom.v1.Metadata`
@@ -220,7 +220,7 @@ class Node:
 
     @property
     def name(self):
-        """Gets the name of this Node.
+        r"""Gets the name of this Node.
 
         节点名称,比如是Node。
 
@@ -231,7 +231,7 @@ class Node:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Node.
+        r"""Sets the name of this Node.
 
         节点名称,比如是Node。
 
@@ -242,7 +242,7 @@ class Node:
 
     @property
     def task_name(self):
-        """Gets the task_name of this Node.
+        r"""Gets the task_name of this Node.
 
         任务名称，节点上任务的名称。
 
@@ -253,7 +253,7 @@ class Node:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this Node.
+        r"""Sets the task_name of this Node.
 
         任务名称，节点上任务的名称。
 

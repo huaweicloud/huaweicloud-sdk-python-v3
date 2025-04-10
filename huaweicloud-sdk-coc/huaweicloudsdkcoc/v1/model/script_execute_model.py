@@ -27,7 +27,7 @@ class ScriptExecuteModel:
     }
 
     def __init__(self, execute_param=None, execute_batches=None):
-        """ScriptExecuteModel
+        r"""ScriptExecuteModel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScriptExecuteModel:
 
     @property
     def execute_param(self):
-        """Gets the execute_param of this ScriptExecuteModel.
+        r"""Gets the execute_param of this ScriptExecuteModel.
 
         :return: The execute_param of this ScriptExecuteModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptExecuteParam`
@@ -57,7 +57,7 @@ class ScriptExecuteModel:
 
     @execute_param.setter
     def execute_param(self, execute_param):
-        """Sets the execute_param of this ScriptExecuteModel.
+        r"""Sets the execute_param of this ScriptExecuteModel.
 
         :param execute_param: The execute_param of this ScriptExecuteModel.
         :type execute_param: :class:`huaweicloudsdkcoc.v1.ScriptExecuteParam`
@@ -66,7 +66,7 @@ class ScriptExecuteModel:
 
     @property
     def execute_batches(self):
-        """Gets the execute_batches of this ScriptExecuteModel.
+        r"""Gets the execute_batches of this ScriptExecuteModel.
 
         目标实例分批信息
 
@@ -77,7 +77,7 @@ class ScriptExecuteModel:
 
     @execute_batches.setter
     def execute_batches(self, execute_batches):
-        """Sets the execute_batches of this ScriptExecuteModel.
+        r"""Sets the execute_batches of this ScriptExecuteModel.
 
         目标实例分批信息
 

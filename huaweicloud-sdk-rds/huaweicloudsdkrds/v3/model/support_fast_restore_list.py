@@ -29,7 +29,7 @@ class SupportFastRestoreList:
     }
 
     def __init__(self, instance_id=None, is_support_fast_table_restore=None, is_support_fast_database_restore=None):
-        """SupportFastRestoreList
+        r"""SupportFastRestoreList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SupportFastRestoreList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SupportFastRestoreList.
+        r"""Gets the instance_id of this SupportFastRestoreList.
 
         实例id。
 
@@ -68,7 +68,7 @@ class SupportFastRestoreList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SupportFastRestoreList.
+        r"""Sets the instance_id of this SupportFastRestoreList.
 
         实例id。
 
@@ -79,7 +79,7 @@ class SupportFastRestoreList:
 
     @property
     def is_support_fast_table_restore(self):
-        """Gets the is_support_fast_table_restore of this SupportFastRestoreList.
+        r"""Gets the is_support_fast_table_restore of this SupportFastRestoreList.
 
         表级恢复是否支持极速恢复。
 
@@ -90,7 +90,7 @@ class SupportFastRestoreList:
 
     @is_support_fast_table_restore.setter
     def is_support_fast_table_restore(self, is_support_fast_table_restore):
-        """Sets the is_support_fast_table_restore of this SupportFastRestoreList.
+        r"""Sets the is_support_fast_table_restore of this SupportFastRestoreList.
 
         表级恢复是否支持极速恢复。
 
@@ -101,7 +101,7 @@ class SupportFastRestoreList:
 
     @property
     def is_support_fast_database_restore(self):
-        """Gets the is_support_fast_database_restore of this SupportFastRestoreList.
+        r"""Gets the is_support_fast_database_restore of this SupportFastRestoreList.
 
         库级恢复是否支持极速恢复。
 
@@ -112,7 +112,7 @@ class SupportFastRestoreList:
 
     @is_support_fast_database_restore.setter
     def is_support_fast_database_restore(self, is_support_fast_database_restore):
-        """Sets the is_support_fast_database_restore of this SupportFastRestoreList.
+        r"""Sets the is_support_fast_database_restore of this SupportFastRestoreList.
 
         库级恢复是否支持极速恢复。
 

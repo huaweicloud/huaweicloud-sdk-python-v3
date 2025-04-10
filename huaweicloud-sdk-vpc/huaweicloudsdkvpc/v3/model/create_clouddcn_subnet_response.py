@@ -26,7 +26,7 @@ class CreateClouddcnSubnetResponse(SdkResponse):
     }
 
     def __init__(self, clouddcn_subnet=None):
-        """CreateClouddcnSubnetResponse
+        r"""CreateClouddcnSubnetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateClouddcnSubnetResponse(SdkResponse):
 
     @property
     def clouddcn_subnet(self):
-        """Gets the clouddcn_subnet of this CreateClouddcnSubnetResponse.
+        r"""Gets the clouddcn_subnet of this CreateClouddcnSubnetResponse.
 
         :return: The clouddcn_subnet of this CreateClouddcnSubnetResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.ClouddcnSubnet`
@@ -53,7 +53,7 @@ class CreateClouddcnSubnetResponse(SdkResponse):
 
     @clouddcn_subnet.setter
     def clouddcn_subnet(self, clouddcn_subnet):
-        """Sets the clouddcn_subnet of this CreateClouddcnSubnetResponse.
+        r"""Sets the clouddcn_subnet of this CreateClouddcnSubnetResponse.
 
         :param clouddcn_subnet: The clouddcn_subnet of this CreateClouddcnSubnetResponse.
         :type clouddcn_subnet: :class:`huaweicloudsdkvpc.v3.ClouddcnSubnet`

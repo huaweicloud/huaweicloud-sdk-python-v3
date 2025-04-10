@@ -30,7 +30,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
     }
 
     def __init__(self, success_count=None, failed_count=None, db_object_filtering_result=None):
-        """ShowDataFilteringResultResponse
+        r"""ShowDataFilteringResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this ShowDataFilteringResultResponse.
+        r"""Gets the success_count of this ShowDataFilteringResultResponse.
 
         数据过滤规则校验成功的数量
 
@@ -69,7 +69,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this ShowDataFilteringResultResponse.
+        r"""Sets the success_count of this ShowDataFilteringResultResponse.
 
         数据过滤规则校验成功的数量
 
@@ -80,7 +80,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this ShowDataFilteringResultResponse.
+        r"""Gets the failed_count of this ShowDataFilteringResultResponse.
 
         数据过滤规则校验失败的数量
 
@@ -91,7 +91,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this ShowDataFilteringResultResponse.
+        r"""Sets the failed_count of this ShowDataFilteringResultResponse.
 
         数据过滤规则校验失败的数量
 
@@ -102,7 +102,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
 
     @property
     def db_object_filtering_result(self):
-        """Gets the db_object_filtering_result of this ShowDataFilteringResultResponse.
+        r"""Gets the db_object_filtering_result of this ShowDataFilteringResultResponse.
 
         库表过滤规则校验结果
 
@@ -113,7 +113,7 @@ class ShowDataFilteringResultResponse(SdkResponse):
 
     @db_object_filtering_result.setter
     def db_object_filtering_result(self, db_object_filtering_result):
-        """Sets the db_object_filtering_result of this ShowDataFilteringResultResponse.
+        r"""Sets the db_object_filtering_result of this ShowDataFilteringResultResponse.
 
         库表过滤规则校验结果
 

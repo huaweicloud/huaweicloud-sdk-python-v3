@@ -41,7 +41,7 @@ class HttpGetBody:
     }
 
     def __init__(self, https_status=None, certificate_name=None, certificate_value=None, expire_time=None, certificate_source=None, certificate_type=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
-        """HttpGetBody
+        r"""HttpGetBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class HttpGetBody:
 
     @property
     def https_status(self):
-        """Gets the https_status of this HttpGetBody.
+        r"""Gets the https_status of this HttpGetBody.
 
         HTTPS证书是否启用，on：开启，off：关闭。
 
@@ -110,7 +110,7 @@ class HttpGetBody:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this HttpGetBody.
+        r"""Sets the https_status of this HttpGetBody.
 
         HTTPS证书是否启用，on：开启，off：关闭。
 
@@ -121,7 +121,7 @@ class HttpGetBody:
 
     @property
     def certificate_name(self):
-        """Gets the certificate_name of this HttpGetBody.
+        r"""Gets the certificate_name of this HttpGetBody.
 
         证书名字。
 
@@ -132,7 +132,7 @@ class HttpGetBody:
 
     @certificate_name.setter
     def certificate_name(self, certificate_name):
-        """Sets the certificate_name of this HttpGetBody.
+        r"""Sets the certificate_name of this HttpGetBody.
 
         证书名字。
 
@@ -143,7 +143,7 @@ class HttpGetBody:
 
     @property
     def certificate_value(self):
-        """Gets the certificate_value of this HttpGetBody.
+        r"""Gets the certificate_value of this HttpGetBody.
 
         HTTPS协议使用的证书内容，PEM编码格式。
 
@@ -154,7 +154,7 @@ class HttpGetBody:
 
     @certificate_value.setter
     def certificate_value(self, certificate_value):
-        """Sets the certificate_value of this HttpGetBody.
+        r"""Sets the certificate_value of this HttpGetBody.
 
         HTTPS协议使用的证书内容，PEM编码格式。
 
@@ -165,7 +165,7 @@ class HttpGetBody:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this HttpGetBody.
+        r"""Gets the expire_time of this HttpGetBody.
 
         证书过期时间。  > UTC时间。
 
@@ -176,7 +176,7 @@ class HttpGetBody:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this HttpGetBody.
+        r"""Sets the expire_time of this HttpGetBody.
 
         证书过期时间。  > UTC时间。
 
@@ -187,7 +187,7 @@ class HttpGetBody:
 
     @property
     def certificate_source(self):
-        """Gets the certificate_source of this HttpGetBody.
+        r"""Gets the certificate_source of this HttpGetBody.
 
         证书来源,1：华为云托管证书,0：自有证书。
 
@@ -198,7 +198,7 @@ class HttpGetBody:
 
     @certificate_source.setter
     def certificate_source(self, certificate_source):
-        """Sets the certificate_source of this HttpGetBody.
+        r"""Sets the certificate_source of this HttpGetBody.
 
         证书来源,1：华为云托管证书,0：自有证书。
 
@@ -209,7 +209,7 @@ class HttpGetBody:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this HttpGetBody.
+        r"""Gets the certificate_type of this HttpGetBody.
 
         证书类型。server：国际证书；server_sm：国密证书。
 
@@ -220,7 +220,7 @@ class HttpGetBody:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this HttpGetBody.
+        r"""Sets the certificate_type of this HttpGetBody.
 
         证书类型。server：国际证书；server_sm：国密证书。
 
@@ -231,7 +231,7 @@ class HttpGetBody:
 
     @property
     def http2_status(self):
-        """Gets the http2_status of this HttpGetBody.
+        r"""Gets the http2_status of this HttpGetBody.
 
         是否使用HTTP2.0，on：是，off：否。
 
@@ -242,7 +242,7 @@ class HttpGetBody:
 
     @http2_status.setter
     def http2_status(self, http2_status):
-        """Sets the http2_status of this HttpGetBody.
+        r"""Sets the http2_status of this HttpGetBody.
 
         是否使用HTTP2.0，on：是，off：否。
 
@@ -253,7 +253,7 @@ class HttpGetBody:
 
     @property
     def tls_version(self):
-        """Gets the tls_version of this HttpGetBody.
+        r"""Gets the tls_version of this HttpGetBody.
 
         传输层安全性协议。
 
@@ -264,7 +264,7 @@ class HttpGetBody:
 
     @tls_version.setter
     def tls_version(self, tls_version):
-        """Sets the tls_version of this HttpGetBody.
+        r"""Sets the tls_version of this HttpGetBody.
 
         传输层安全性协议。
 
@@ -275,7 +275,7 @@ class HttpGetBody:
 
     @property
     def ocsp_stapling_status(self):
-        """Gets the ocsp_stapling_status of this HttpGetBody.
+        r"""Gets the ocsp_stapling_status of this HttpGetBody.
 
         是否开启ocsp stapling,on：是，off：否。
 
@@ -286,7 +286,7 @@ class HttpGetBody:
 
     @ocsp_stapling_status.setter
     def ocsp_stapling_status(self, ocsp_stapling_status):
-        """Sets the ocsp_stapling_status of this HttpGetBody.
+        r"""Sets the ocsp_stapling_status of this HttpGetBody.
 
         是否开启ocsp stapling,on：是，off：否。
 

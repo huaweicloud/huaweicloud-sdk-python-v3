@@ -29,7 +29,7 @@ class FLVRecordConfig:
     }
 
     def __init__(self, record_cycle=None, record_prefix=None, record_max_duration_to_merge_file=None):
-        """FLVRecordConfig
+        r"""FLVRecordConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class FLVRecordConfig:
 
     @property
     def record_cycle(self):
-        """Gets the record_cycle of this FLVRecordConfig.
+        r"""Gets the record_cycle of this FLVRecordConfig.
 
         单位为秒，周期录制时长，最小1分钟，最大12小时。如果为0则整个流录制一个文件。
 
@@ -67,7 +67,7 @@ class FLVRecordConfig:
 
     @record_cycle.setter
     def record_cycle(self, record_cycle):
-        """Sets the record_cycle of this FLVRecordConfig.
+        r"""Sets the record_cycle of this FLVRecordConfig.
 
         单位为秒，周期录制时长，最小1分钟，最大12小时。如果为0则整个流录制一个文件。
 
@@ -78,7 +78,7 @@ class FLVRecordConfig:
 
     @property
     def record_prefix(self):
-        """Gets the record_prefix of this FLVRecordConfig.
+        r"""Gets the record_prefix of this FLVRecordConfig.
 
         录制FLV文件含路径和文件名的前缀， 默认Record/{publish_domain}/{app}/{record_type}/{record_format}/{stream}_{file_start_time}/{file_start_time}
 
@@ -89,7 +89,7 @@ class FLVRecordConfig:
 
     @record_prefix.setter
     def record_prefix(self, record_prefix):
-        """Sets the record_prefix of this FLVRecordConfig.
+        r"""Sets the record_prefix of this FLVRecordConfig.
 
         录制FLV文件含路径和文件名的前缀， 默认Record/{publish_domain}/{app}/{record_type}/{record_format}/{stream}_{file_start_time}/{file_start_time}
 
@@ -100,7 +100,7 @@ class FLVRecordConfig:
 
     @property
     def record_max_duration_to_merge_file(self):
-        """Gets the record_max_duration_to_merge_file of this FLVRecordConfig.
+        r"""Gets the record_max_duration_to_merge_file of this FLVRecordConfig.
 
         录制flv拼接时长，如果流中断超过该时间，则生成新文件。单位秒。如果为0表示流中断就生成新文件。默认为0。
 
@@ -111,7 +111,7 @@ class FLVRecordConfig:
 
     @record_max_duration_to_merge_file.setter
     def record_max_duration_to_merge_file(self, record_max_duration_to_merge_file):
-        """Sets the record_max_duration_to_merge_file of this FLVRecordConfig.
+        r"""Sets the record_max_duration_to_merge_file of this FLVRecordConfig.
 
         录制flv拼接时长，如果流中断超过该时间，则生成新文件。单位秒。如果为0表示流中断就生成新文件。默认为0。
 

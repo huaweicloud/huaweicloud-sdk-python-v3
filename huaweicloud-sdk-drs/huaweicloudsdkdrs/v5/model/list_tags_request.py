@@ -27,7 +27,7 @@ class ListTagsRequest:
     }
 
     def __init__(self, resource_type=None, x_language=None):
-        """ListTagsRequest
+        r"""ListTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagsRequest.
+        r"""Gets the resource_type of this ListTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -60,7 +60,7 @@ class ListTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagsRequest.
+        r"""Sets the resource_type of this ListTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -71,7 +71,7 @@ class ListTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTagsRequest.
+        r"""Gets the x_language of this ListTagsRequest.
 
         请求语言类型。
 
@@ -82,7 +82,7 @@ class ListTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTagsRequest.
+        r"""Sets the x_language of this ListTagsRequest.
 
         请求语言类型。
 

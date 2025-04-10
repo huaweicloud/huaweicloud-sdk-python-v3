@@ -29,7 +29,7 @@ class ShowSqlExplainRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ShowSqlExplainRequest
+        r"""ShowSqlExplainRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowSqlExplainRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSqlExplainRequest.
+        r"""Gets the instance_id of this ShowSqlExplainRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ShowSqlExplainRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSqlExplainRequest.
+        r"""Sets the instance_id of this ShowSqlExplainRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ShowSqlExplainRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSqlExplainRequest.
+        r"""Gets the x_language of this ShowSqlExplainRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ShowSqlExplainRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSqlExplainRequest.
+        r"""Sets the x_language of this ShowSqlExplainRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ShowSqlExplainRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowSqlExplainRequest.
+        r"""Gets the body of this ShowSqlExplainRequest.
 
         :return: The body of this ShowSqlExplainRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.QuerySqlPlanBody`
@@ -109,7 +109,7 @@ class ShowSqlExplainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSqlExplainRequest.
+        r"""Sets the body of this ShowSqlExplainRequest.
 
         :param body: The body of this ShowSqlExplainRequest.
         :type body: :class:`huaweicloudsdkdas.v3.QuerySqlPlanBody`

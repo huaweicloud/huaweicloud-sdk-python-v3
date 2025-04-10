@@ -29,7 +29,7 @@ class NameServersResp:
     }
 
     def __init__(self, type=None, region=None, ns_records=None):
-        """NameServersResp
+        r"""NameServersResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NameServersResp:
 
     @property
     def type(self):
-        """Gets the type of this NameServersResp.
+        r"""Gets the type of this NameServersResp.
 
         待查询名称服务器的类型。  取值范围: public, private。  如果为空，表示查询所有类型的名称服务器。 如果为public，表示查询公网的名称服务器。  如果为private，表示查询内网的名称服务器。
 
@@ -68,7 +68,7 @@ class NameServersResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NameServersResp.
+        r"""Sets the type of this NameServersResp.
 
         待查询名称服务器的类型。  取值范围: public, private。  如果为空，表示查询所有类型的名称服务器。 如果为public，表示查询公网的名称服务器。  如果为private，表示查询内网的名称服务器。
 
@@ -79,7 +79,7 @@ class NameServersResp:
 
     @property
     def region(self):
-        """Gets the region of this NameServersResp.
+        r"""Gets the region of this NameServersResp.
 
         待查询的region ID。  当查询公网的名称服务器时，此处不填。
 
@@ -90,7 +90,7 @@ class NameServersResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this NameServersResp.
+        r"""Sets the region of this NameServersResp.
 
         待查询的region ID。  当查询公网的名称服务器时，此处不填。
 
@@ -101,7 +101,7 @@ class NameServersResp:
 
     @property
     def ns_records(self):
-        """Gets the ns_records of this NameServersResp.
+        r"""Gets the ns_records of this NameServersResp.
 
         名称服务器列表。
 
@@ -112,7 +112,7 @@ class NameServersResp:
 
     @ns_records.setter
     def ns_records(self, ns_records):
-        """Sets the ns_records of this NameServersResp.
+        r"""Sets the ns_records of this NameServersResp.
 
         名称服务器列表。
 

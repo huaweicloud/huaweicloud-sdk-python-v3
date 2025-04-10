@@ -29,7 +29,7 @@ class CreateTransferRequestBody:
     }
 
     def __init__(self, log_group_id=None, log_streams=None, log_transfer_info=None):
-        """CreateTransferRequestBody
+        r"""CreateTransferRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateTransferRequestBody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateTransferRequestBody.
+        r"""Gets the log_group_id of this CreateTransferRequestBody.
 
         日志组ID
 
@@ -65,7 +65,7 @@ class CreateTransferRequestBody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateTransferRequestBody.
+        r"""Sets the log_group_id of this CreateTransferRequestBody.
 
         日志组ID
 
@@ -76,7 +76,7 @@ class CreateTransferRequestBody:
 
     @property
     def log_streams(self):
-        """Gets the log_streams of this CreateTransferRequestBody.
+        r"""Gets the log_streams of this CreateTransferRequestBody.
 
         日志流ID集合
 
@@ -87,7 +87,7 @@ class CreateTransferRequestBody:
 
     @log_streams.setter
     def log_streams(self, log_streams):
-        """Sets the log_streams of this CreateTransferRequestBody.
+        r"""Sets the log_streams of this CreateTransferRequestBody.
 
         日志流ID集合
 
@@ -98,7 +98,7 @@ class CreateTransferRequestBody:
 
     @property
     def log_transfer_info(self):
-        """Gets the log_transfer_info of this CreateTransferRequestBody.
+        r"""Gets the log_transfer_info of this CreateTransferRequestBody.
 
         :return: The log_transfer_info of this CreateTransferRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfo`
@@ -107,7 +107,7 @@ class CreateTransferRequestBody:
 
     @log_transfer_info.setter
     def log_transfer_info(self, log_transfer_info):
-        """Sets the log_transfer_info of this CreateTransferRequestBody.
+        r"""Sets the log_transfer_info of this CreateTransferRequestBody.
 
         :param log_transfer_info: The log_transfer_info of this CreateTransferRequestBody.
         :type log_transfer_info: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfo`

@@ -27,7 +27,7 @@ class BatchFreezeDevicesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchFreezeDevicesRequest
+        r"""BatchFreezeDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchFreezeDevicesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchFreezeDevicesRequest.
+        r"""Gets the instance_id of this BatchFreezeDevicesRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class BatchFreezeDevicesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchFreezeDevicesRequest.
+        r"""Sets the instance_id of this BatchFreezeDevicesRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class BatchFreezeDevicesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchFreezeDevicesRequest.
+        r"""Gets the body of this BatchFreezeDevicesRequest.
 
         :return: The body of this BatchFreezeDevicesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`
@@ -80,7 +80,7 @@ class BatchFreezeDevicesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchFreezeDevicesRequest.
+        r"""Sets the body of this BatchFreezeDevicesRequest.
 
         :param body: The body of this BatchFreezeDevicesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`

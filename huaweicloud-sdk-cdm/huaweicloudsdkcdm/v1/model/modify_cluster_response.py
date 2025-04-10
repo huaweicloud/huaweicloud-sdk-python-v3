@@ -24,7 +24,7 @@ class ModifyClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ModifyClusterResponse
+        r"""ModifyClusterResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class PoliciesCustom:
     }
 
     def __init__(self, custom_configuration1_enable=None, options=None):
-        """PoliciesCustom
+        r"""PoliciesCustom
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesCustom:
 
     @property
     def custom_configuration1_enable(self):
-        """Gets the custom_configuration1_enable of this PoliciesCustom.
+        r"""Gets the custom_configuration1_enable of this PoliciesCustom.
 
         自定义配置启用
 
@@ -61,7 +61,7 @@ class PoliciesCustom:
 
     @custom_configuration1_enable.setter
     def custom_configuration1_enable(self, custom_configuration1_enable):
-        """Sets the custom_configuration1_enable of this PoliciesCustom.
+        r"""Sets the custom_configuration1_enable of this PoliciesCustom.
 
         自定义配置启用
 
@@ -72,7 +72,7 @@ class PoliciesCustom:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesCustom.
+        r"""Gets the options of this PoliciesCustom.
 
         :return: The options of this PoliciesCustom.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesCustomOptions`
@@ -81,7 +81,7 @@ class PoliciesCustom:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesCustom.
+        r"""Sets the options of this PoliciesCustom.
 
         :param options: The options of this PoliciesCustom.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesCustomOptions`

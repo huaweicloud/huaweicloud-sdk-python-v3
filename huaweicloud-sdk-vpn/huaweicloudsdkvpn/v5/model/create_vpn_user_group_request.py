@@ -30,7 +30,7 @@ class CreateVpnUserGroupRequest:
     }
 
     def __init__(self, vpn_server_id=None, x_client_token=None, body=None):
-        """CreateVpnUserGroupRequest
+        r"""CreateVpnUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVpnUserGroupRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this CreateVpnUserGroupRequest.
+        r"""Gets the vpn_server_id of this CreateVpnUserGroupRequest.
 
         VPN服务端 ID
 
@@ -68,7 +68,7 @@ class CreateVpnUserGroupRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this CreateVpnUserGroupRequest.
+        r"""Sets the vpn_server_id of this CreateVpnUserGroupRequest.
 
         VPN服务端 ID
 
@@ -79,7 +79,7 @@ class CreateVpnUserGroupRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVpnUserGroupRequest.
+        r"""Gets the x_client_token of this CreateVpnUserGroupRequest.
 
         幂等性标识
 
@@ -90,7 +90,7 @@ class CreateVpnUserGroupRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVpnUserGroupRequest.
+        r"""Sets the x_client_token of this CreateVpnUserGroupRequest.
 
         幂等性标识
 
@@ -101,7 +101,7 @@ class CreateVpnUserGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpnUserGroupRequest.
+        r"""Gets the body of this CreateVpnUserGroupRequest.
 
         :return: The body of this CreateVpnUserGroupRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserGroupRequestBody`
@@ -110,7 +110,7 @@ class CreateVpnUserGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpnUserGroupRequest.
+        r"""Sets the body of this CreateVpnUserGroupRequest.
 
         :param body: The body of this CreateVpnUserGroupRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateVpnUserGroupRequestBody`

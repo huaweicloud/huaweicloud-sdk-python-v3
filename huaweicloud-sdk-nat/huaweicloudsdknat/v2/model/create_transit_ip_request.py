@@ -25,7 +25,7 @@ class CreateTransitIpRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTransitIpRequest
+        r"""CreateTransitIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTransitIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTransitIpRequest.
+        r"""Gets the body of this CreateTransitIpRequest.
 
         :return: The body of this CreateTransitIpRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreateTransitIpRequestBody`
@@ -52,7 +52,7 @@ class CreateTransitIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTransitIpRequest.
+        r"""Sets the body of this CreateTransitIpRequest.
 
         :param body: The body of this CreateTransitIpRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreateTransitIpRequestBody`

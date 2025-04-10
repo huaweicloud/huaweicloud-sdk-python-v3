@@ -31,7 +31,7 @@ class DisForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, stream_name=None, stream_id=None):
-        """DisForwarding
+        r"""DisForwarding
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DisForwarding:
 
     @property
     def region_name(self):
-        """Gets the region_name of this DisForwarding.
+        r"""Gets the region_name of this DisForwarding.
 
         **参数说明**：DIS服务对应的region区域
 
@@ -73,7 +73,7 @@ class DisForwarding:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this DisForwarding.
+        r"""Sets the region_name of this DisForwarding.
 
         **参数说明**：DIS服务对应的region区域
 
@@ -84,7 +84,7 @@ class DisForwarding:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DisForwarding.
+        r"""Gets the project_id of this DisForwarding.
 
         **参数说明**：DIS服务对应的projectId信息
 
@@ -95,7 +95,7 @@ class DisForwarding:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DisForwarding.
+        r"""Sets the project_id of this DisForwarding.
 
         **参数说明**：DIS服务对应的projectId信息
 
@@ -106,7 +106,7 @@ class DisForwarding:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DisForwarding.
+        r"""Gets the stream_name of this DisForwarding.
 
         **参数说明**：DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
@@ -117,7 +117,7 @@ class DisForwarding:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DisForwarding.
+        r"""Sets the stream_name of this DisForwarding.
 
         **参数说明**：DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
@@ -128,7 +128,7 @@ class DisForwarding:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this DisForwarding.
+        r"""Gets the stream_id of this DisForwarding.
 
         **参数说明**：DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
@@ -139,7 +139,7 @@ class DisForwarding:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this DisForwarding.
+        r"""Sets the stream_id of this DisForwarding.
 
         **参数说明**：DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 

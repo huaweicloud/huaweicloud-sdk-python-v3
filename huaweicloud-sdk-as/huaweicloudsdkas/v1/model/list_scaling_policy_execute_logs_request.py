@@ -41,7 +41,7 @@ class ListScalingPolicyExecuteLogsRequest:
     }
 
     def __init__(self, scaling_policy_id=None, log_id=None, scaling_resource_type=None, scaling_resource_id=None, execute_type=None, start_time=None, end_time=None, start_number=None, limit=None):
-        """ListScalingPolicyExecuteLogsRequest
+        r"""ListScalingPolicyExecuteLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
 
         伸缩策略ID。
 
@@ -109,7 +109,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
 
         伸缩策略ID。
 
@@ -120,7 +120,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def log_id(self):
-        """Gets the log_id of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the log_id of this ListScalingPolicyExecuteLogsRequest.
 
         日志ID。
 
@@ -131,7 +131,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the log_id of this ListScalingPolicyExecuteLogsRequest.
 
         日志ID。
 
@@ -142,7 +142,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def scaling_resource_type(self):
-        """Gets the scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
 
         伸缩资源类型：伸缩组：SCALING_GROUP。带宽：BANDWIDTH
 
@@ -153,7 +153,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @scaling_resource_type.setter
     def scaling_resource_type(self, scaling_resource_type):
-        """Sets the scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
 
         伸缩资源类型：伸缩组：SCALING_GROUP。带宽：BANDWIDTH
 
@@ -164,7 +164,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def scaling_resource_id(self):
-        """Gets the scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
 
         伸缩资源ID。
 
@@ -175,7 +175,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @scaling_resource_id.setter
     def scaling_resource_id(self, scaling_resource_id):
-        """Sets the scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
 
         伸缩资源ID。
 
@@ -186,7 +186,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def execute_type(self):
-        """Gets the execute_type of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the execute_type of this ListScalingPolicyExecuteLogsRequest.
 
         策略执行类型：SCHEDULED：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动触发（告警）。MANUAL：手动触发。
 
@@ -197,7 +197,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @execute_type.setter
     def execute_type(self, execute_type):
-        """Sets the execute_type of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the execute_type of this ListScalingPolicyExecuteLogsRequest.
 
         策略执行类型：SCHEDULED：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动触发（告警）。MANUAL：手动触发。
 
@@ -208,7 +208,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the start_time of this ListScalingPolicyExecuteLogsRequest.
 
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -219,7 +219,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the start_time of this ListScalingPolicyExecuteLogsRequest.
 
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -230,7 +230,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the end_time of this ListScalingPolicyExecuteLogsRequest.
 
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -241,7 +241,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the end_time of this ListScalingPolicyExecuteLogsRequest.
 
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -252,7 +252,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the start_number of this ListScalingPolicyExecuteLogsRequest.
 
         查询的起始行号，默认为0。
 
@@ -263,7 +263,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the start_number of this ListScalingPolicyExecuteLogsRequest.
 
         查询的起始行号，默认为0。
 
@@ -274,7 +274,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingPolicyExecuteLogsRequest.
+        r"""Gets the limit of this ListScalingPolicyExecuteLogsRequest.
 
         查询记录数，默认20，最大100。
 
@@ -285,7 +285,7 @@ class ListScalingPolicyExecuteLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingPolicyExecuteLogsRequest.
+        r"""Sets the limit of this ListScalingPolicyExecuteLogsRequest.
 
         查询记录数，默认20，最大100。
 

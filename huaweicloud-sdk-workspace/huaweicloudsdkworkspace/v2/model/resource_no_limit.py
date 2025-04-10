@@ -31,7 +31,7 @@ class ResourceNoLimit:
     }
 
     def __init__(self, type=None, quota=None, used=None, unit=None):
-        """ResourceNoLimit
+        r"""ResourceNoLimit
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceNoLimit:
 
     @property
     def type(self):
-        """Gets the type of this ResourceNoLimit.
+        r"""Gets the type of this ResourceNoLimit.
 
         资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
@@ -75,7 +75,7 @@ class ResourceNoLimit:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceNoLimit.
+        r"""Sets the type of this ResourceNoLimit.
 
         资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
@@ -86,7 +86,7 @@ class ResourceNoLimit:
 
     @property
     def quota(self):
-        """Gets the quota of this ResourceNoLimit.
+        r"""Gets the quota of this ResourceNoLimit.
 
         配额数
 
@@ -97,7 +97,7 @@ class ResourceNoLimit:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ResourceNoLimit.
+        r"""Sets the quota of this ResourceNoLimit.
 
         配额数
 
@@ -108,7 +108,7 @@ class ResourceNoLimit:
 
     @property
     def used(self):
-        """Gets the used of this ResourceNoLimit.
+        r"""Gets the used of this ResourceNoLimit.
 
         配额已用值
 
@@ -119,7 +119,7 @@ class ResourceNoLimit:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ResourceNoLimit.
+        r"""Sets the used of this ResourceNoLimit.
 
         配额已用值
 
@@ -130,7 +130,7 @@ class ResourceNoLimit:
 
     @property
     def unit(self):
-        """Gets the unit of this ResourceNoLimit.
+        r"""Gets the unit of this ResourceNoLimit.
 
         配额单位
 
@@ -141,7 +141,7 @@ class ResourceNoLimit:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ResourceNoLimit.
+        r"""Sets the unit of this ResourceNoLimit.
 
         配额单位
 

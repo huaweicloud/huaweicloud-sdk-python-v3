@@ -49,7 +49,7 @@ class CreateLimitTaskRequestBody:
     }
 
     def __init__(self, task_scope=None, start_time=None, end_time=None, limit_type=None, limit_type_value=None, key_words=None, task_name=None, sql_model=None, parallel_size=None, cpu_utilization=None, memory_utilization=None, databases=None, node_infos=None):
-        """CreateLimitTaskRequestBody
+        r"""CreateLimitTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -122,7 +122,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def task_scope(self):
-        """Gets the task_scope of this CreateLimitTaskRequestBody.
+        r"""Gets the task_scope of this CreateLimitTaskRequestBody.
 
         限流任务范围，目前支持SQL,SESSION级别范围。
 
@@ -133,7 +133,7 @@ class CreateLimitTaskRequestBody:
 
     @task_scope.setter
     def task_scope(self, task_scope):
-        """Sets the task_scope of this CreateLimitTaskRequestBody.
+        r"""Sets the task_scope of this CreateLimitTaskRequestBody.
 
         限流任务范围，目前支持SQL,SESSION级别范围。
 
@@ -144,7 +144,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateLimitTaskRequestBody.
+        r"""Gets the start_time of this CreateLimitTaskRequestBody.
 
         任务开始时间,取值范围：非空且大于等于当前时间的前俩分钟，格式必须为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间，SQL范围必传。
 
@@ -155,7 +155,7 @@ class CreateLimitTaskRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateLimitTaskRequestBody.
+        r"""Sets the start_time of this CreateLimitTaskRequestBody.
 
         任务开始时间,取值范围：非空且大于等于当前时间的前俩分钟，格式必须为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间，SQL范围必传。
 
@@ -166,7 +166,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateLimitTaskRequestBody.
+        r"""Gets the end_time of this CreateLimitTaskRequestBody.
 
         任务结束时间,取值范围：非空且大于任务开始时间，格式必须为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间，SQL范围必传。
 
@@ -177,7 +177,7 @@ class CreateLimitTaskRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateLimitTaskRequestBody.
+        r"""Sets the end_time of this CreateLimitTaskRequestBody.
 
         任务结束时间,取值范围：非空且大于任务开始时间，格式必须为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间，SQL范围必传。
 
@@ -188,7 +188,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def limit_type(self):
-        """Gets the limit_type of this CreateLimitTaskRequestBody.
+        r"""Gets the limit_type of this CreateLimitTaskRequestBody.
 
         限流类型：当限流范围为SQL级别时，可选SQL_ID、SQL_TYPE类型，当限流范围为SESSION级别时，可选SESSION_ACTIVE_MAX_COUNT类型。
 
@@ -199,7 +199,7 @@ class CreateLimitTaskRequestBody:
 
     @limit_type.setter
     def limit_type(self, limit_type):
-        """Sets the limit_type of this CreateLimitTaskRequestBody.
+        r"""Sets the limit_type of this CreateLimitTaskRequestBody.
 
         限流类型：当限流范围为SQL级别时，可选SQL_ID、SQL_TYPE类型，当限流范围为SESSION级别时，可选SESSION_ACTIVE_MAX_COUNT类型。
 
@@ -210,7 +210,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def limit_type_value(self):
-        """Gets the limit_type_value of this CreateLimitTaskRequestBody.
+        r"""Gets the limit_type_value of this CreateLimitTaskRequestBody.
 
         限流类型，当限流类型为SQL_ID类型时，该值为选中模板的sqlId，当限流类型为SQL_TYPE类型时，值为SQL类型，目前支持select，update，insert，delete，meger五种值，当限流类型为SESSION_ACTIVE_MAX_COUNT类型时，只支持CPU_OR_MEMORY一种值。
 
@@ -221,7 +221,7 @@ class CreateLimitTaskRequestBody:
 
     @limit_type_value.setter
     def limit_type_value(self, limit_type_value):
-        """Sets the limit_type_value of this CreateLimitTaskRequestBody.
+        r"""Sets the limit_type_value of this CreateLimitTaskRequestBody.
 
         限流类型，当限流类型为SQL_ID类型时，该值为选中模板的sqlId，当限流类型为SQL_TYPE类型时，值为SQL类型，目前支持select，update，insert，delete，meger五种值，当限流类型为SESSION_ACTIVE_MAX_COUNT类型时，只支持CPU_OR_MEMORY一种值。
 
@@ -232,7 +232,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def key_words(self):
-        """Gets the key_words of this CreateLimitTaskRequestBody.
+        r"""Gets the key_words of this CreateLimitTaskRequestBody.
 
         关键词，当且仅当类型为SQL_TYPE，必传，多个关键词以逗号隔开，数量范围为[2，100]个，每个关键词长度范围[2，64]位，关键词不允许包含 \" 或 \\ 或 {} 或 null值 以及非首尾的空格符。
 
@@ -243,7 +243,7 @@ class CreateLimitTaskRequestBody:
 
     @key_words.setter
     def key_words(self, key_words):
-        """Sets the key_words of this CreateLimitTaskRequestBody.
+        r"""Sets the key_words of this CreateLimitTaskRequestBody.
 
         关键词，当且仅当类型为SQL_TYPE，必传，多个关键词以逗号隔开，数量范围为[2，100]个，每个关键词长度范围[2，64]位，关键词不允许包含 \" 或 \\ 或 {} 或 null值 以及非首尾的空格符。
 
@@ -254,7 +254,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateLimitTaskRequestBody.
+        r"""Gets the task_name of this CreateLimitTaskRequestBody.
 
         限流任务名，必传，只能为英文字母大小写，下划线，数字和$符，最大长度为100个字符。
 
@@ -265,7 +265,7 @@ class CreateLimitTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateLimitTaskRequestBody.
+        r"""Sets the task_name of this CreateLimitTaskRequestBody.
 
         限流任务名，必传，只能为英文字母大小写，下划线，数字和$符，最大长度为100个字符。
 
@@ -276,7 +276,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def sql_model(self):
-        """Gets the sql_model of this CreateLimitTaskRequestBody.
+        r"""Gets the sql_model of this CreateLimitTaskRequestBody.
 
         CN节点执行过的SQL模板,如果类型为SQLID，则为必传。
 
@@ -287,7 +287,7 @@ class CreateLimitTaskRequestBody:
 
     @sql_model.setter
     def sql_model(self, sql_model):
-        """Sets the sql_model of this CreateLimitTaskRequestBody.
+        r"""Sets the sql_model of this CreateLimitTaskRequestBody.
 
         CN节点执行过的SQL模板,如果类型为SQLID，则为必传。
 
@@ -298,7 +298,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def parallel_size(self):
-        """Gets the parallel_size of this CreateLimitTaskRequestBody.
+        r"""Gets the parallel_size of this CreateLimitTaskRequestBody.
 
         并发数，大于等于零的正整数，取值范围[0, 2147483647]。
 
@@ -309,7 +309,7 @@ class CreateLimitTaskRequestBody:
 
     @parallel_size.setter
     def parallel_size(self, parallel_size):
-        """Sets the parallel_size of this CreateLimitTaskRequestBody.
+        r"""Sets the parallel_size of this CreateLimitTaskRequestBody.
 
         并发数，大于等于零的正整数，取值范围[0, 2147483647]。
 
@@ -320,7 +320,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def cpu_utilization(self):
-        """Gets the cpu_utilization of this CreateLimitTaskRequestBody.
+        r"""Gets the cpu_utilization of this CreateLimitTaskRequestBody.
 
         cpu利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和内存利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -331,7 +331,7 @@ class CreateLimitTaskRequestBody:
 
     @cpu_utilization.setter
     def cpu_utilization(self, cpu_utilization):
-        """Sets the cpu_utilization of this CreateLimitTaskRequestBody.
+        r"""Sets the cpu_utilization of this CreateLimitTaskRequestBody.
 
         cpu利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和内存利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -342,7 +342,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def memory_utilization(self):
-        """Gets the memory_utilization of this CreateLimitTaskRequestBody.
+        r"""Gets the memory_utilization of this CreateLimitTaskRequestBody.
 
         内存利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和cpu利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -353,7 +353,7 @@ class CreateLimitTaskRequestBody:
 
     @memory_utilization.setter
     def memory_utilization(self, memory_utilization):
-        """Sets the memory_utilization of this CreateLimitTaskRequestBody.
+        r"""Sets the memory_utilization of this CreateLimitTaskRequestBody.
 
         内存利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和cpu利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -364,7 +364,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def databases(self):
-        """Gets the databases of this CreateLimitTaskRequestBody.
+        r"""Gets the databases of this CreateLimitTaskRequestBody.
 
         CN节点数据库组,每个数据库字符串以逗号形式隔,如果类型为SQL_TYPE，则为必传。
 
@@ -375,7 +375,7 @@ class CreateLimitTaskRequestBody:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateLimitTaskRequestBody.
+        r"""Sets the databases of this CreateLimitTaskRequestBody.
 
         CN节点数据库组,每个数据库字符串以逗号形式隔,如果类型为SQL_TYPE，则为必传。
 
@@ -386,7 +386,7 @@ class CreateLimitTaskRequestBody:
 
     @property
     def node_infos(self):
-        """Gets the node_infos of this CreateLimitTaskRequestBody.
+        r"""Gets the node_infos of this CreateLimitTaskRequestBody.
 
         CN节点信息列表，如果类型为SQL_ID，则为必传
 
@@ -397,7 +397,7 @@ class CreateLimitTaskRequestBody:
 
     @node_infos.setter
     def node_infos(self, node_infos):
-        """Sets the node_infos of this CreateLimitTaskRequestBody.
+        r"""Sets the node_infos of this CreateLimitTaskRequestBody.
 
         CN节点信息列表，如果类型为SQL_ID，则为必传
 

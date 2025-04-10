@@ -27,7 +27,7 @@ class AttachInternalIpRequestBody:
     }
 
     def __init__(self, node_id=None, new_ip=None):
-        """AttachInternalIpRequestBody
+        r"""AttachInternalIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AttachInternalIpRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this AttachInternalIpRequestBody.
+        r"""Gets the node_id of this AttachInternalIpRequestBody.
 
         节点ID。
 
@@ -59,7 +59,7 @@ class AttachInternalIpRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AttachInternalIpRequestBody.
+        r"""Sets the node_id of this AttachInternalIpRequestBody.
 
         节点ID。
 
@@ -70,7 +70,7 @@ class AttachInternalIpRequestBody:
 
     @property
     def new_ip(self):
-        """Gets the new_ip of this AttachInternalIpRequestBody.
+        r"""Gets the new_ip of this AttachInternalIpRequestBody.
 
         新的Ip需要为用户可用vpc中的网段。只支持IPV4。
 
@@ -81,7 +81,7 @@ class AttachInternalIpRequestBody:
 
     @new_ip.setter
     def new_ip(self, new_ip):
-        """Sets the new_ip of this AttachInternalIpRequestBody.
+        r"""Sets the new_ip of this AttachInternalIpRequestBody.
 
         新的Ip需要为用户可用vpc中的网段。只支持IPV4。
 

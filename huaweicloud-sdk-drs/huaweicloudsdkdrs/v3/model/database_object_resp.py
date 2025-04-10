@@ -31,7 +31,7 @@ class DatabaseObjectResp:
     }
 
     def __init__(self, job_id=None, status=None, error_code=None, error_msg=None):
-        """DatabaseObjectResp
+        r"""DatabaseObjectResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DatabaseObjectResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DatabaseObjectResp.
+        r"""Gets the job_id of this DatabaseObjectResp.
 
         任务ID
 
@@ -75,7 +75,7 @@ class DatabaseObjectResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DatabaseObjectResp.
+        r"""Sets the job_id of this DatabaseObjectResp.
 
         任务ID
 
@@ -86,7 +86,7 @@ class DatabaseObjectResp:
 
     @property
     def status(self):
-        """Gets the status of this DatabaseObjectResp.
+        r"""Gets the status of this DatabaseObjectResp.
 
         选择对象任务成功标志
 
@@ -97,7 +97,7 @@ class DatabaseObjectResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DatabaseObjectResp.
+        r"""Sets the status of this DatabaseObjectResp.
 
         选择对象任务成功标志
 
@@ -108,7 +108,7 @@ class DatabaseObjectResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DatabaseObjectResp.
+        r"""Gets the error_code of this DatabaseObjectResp.
 
         错误码
 
@@ -119,7 +119,7 @@ class DatabaseObjectResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DatabaseObjectResp.
+        r"""Sets the error_code of this DatabaseObjectResp.
 
         错误码
 
@@ -130,7 +130,7 @@ class DatabaseObjectResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DatabaseObjectResp.
+        r"""Gets the error_msg of this DatabaseObjectResp.
 
         错误信息
 
@@ -141,7 +141,7 @@ class DatabaseObjectResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DatabaseObjectResp.
+        r"""Sets the error_msg of this DatabaseObjectResp.
 
         错误信息
 

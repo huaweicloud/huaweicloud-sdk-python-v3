@@ -26,7 +26,7 @@ class ImportDatabaseDataResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """ImportDatabaseDataResponse
+        r"""ImportDatabaseDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportDatabaseDataResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ImportDatabaseDataResponse.
+        r"""Gets the id of this ImportDatabaseDataResponse.
 
         数据作业ID
 
@@ -55,7 +55,7 @@ class ImportDatabaseDataResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportDatabaseDataResponse.
+        r"""Sets the id of this ImportDatabaseDataResponse.
 
         数据作业ID
 

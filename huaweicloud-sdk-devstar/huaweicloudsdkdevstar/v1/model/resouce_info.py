@@ -41,7 +41,7 @@ class ResouceInfo:
     }
 
     def __init__(self, name=None, description=None, home_link=None, subscribe_link=None, subscribe_guide=None, type=None, reference_price=None, price_details_link=None, specifications=None):
-        """ResouceInfo
+        r"""ResouceInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResouceInfo:
 
     @property
     def name(self):
-        """Gets the name of this ResouceInfo.
+        r"""Gets the name of this ResouceInfo.
 
         云服务名称。
 
@@ -110,7 +110,7 @@ class ResouceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResouceInfo.
+        r"""Sets the name of this ResouceInfo.
 
         云服务名称。
 
@@ -121,7 +121,7 @@ class ResouceInfo:
 
     @property
     def description(self):
-        """Gets the description of this ResouceInfo.
+        r"""Gets the description of this ResouceInfo.
 
         描述。
 
@@ -132,7 +132,7 @@ class ResouceInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ResouceInfo.
+        r"""Sets the description of this ResouceInfo.
 
         描述。
 
@@ -143,7 +143,7 @@ class ResouceInfo:
 
     @property
     def home_link(self):
-        """Gets the home_link of this ResouceInfo.
+        r"""Gets the home_link of this ResouceInfo.
 
         首页链接。
 
@@ -154,7 +154,7 @@ class ResouceInfo:
 
     @home_link.setter
     def home_link(self, home_link):
-        """Sets the home_link of this ResouceInfo.
+        r"""Sets the home_link of this ResouceInfo.
 
         首页链接。
 
@@ -165,7 +165,7 @@ class ResouceInfo:
 
     @property
     def subscribe_link(self):
-        """Gets the subscribe_link of this ResouceInfo.
+        r"""Gets the subscribe_link of this ResouceInfo.
 
         开通链接。
 
@@ -176,7 +176,7 @@ class ResouceInfo:
 
     @subscribe_link.setter
     def subscribe_link(self, subscribe_link):
-        """Sets the subscribe_link of this ResouceInfo.
+        r"""Sets the subscribe_link of this ResouceInfo.
 
         开通链接。
 
@@ -187,7 +187,7 @@ class ResouceInfo:
 
     @property
     def subscribe_guide(self):
-        """Gets the subscribe_guide of this ResouceInfo.
+        r"""Gets the subscribe_guide of this ResouceInfo.
 
         开通指导。
 
@@ -198,7 +198,7 @@ class ResouceInfo:
 
     @subscribe_guide.setter
     def subscribe_guide(self, subscribe_guide):
-        """Sets the subscribe_guide of this ResouceInfo.
+        r"""Sets the subscribe_guide of this ResouceInfo.
 
         开通指导。
 
@@ -209,7 +209,7 @@ class ResouceInfo:
 
     @property
     def type(self):
-        """Gets the type of this ResouceInfo.
+        r"""Gets the type of this ResouceInfo.
 
         服务类型。
 
@@ -220,7 +220,7 @@ class ResouceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResouceInfo.
+        r"""Sets the type of this ResouceInfo.
 
         服务类型。
 
@@ -231,7 +231,7 @@ class ResouceInfo:
 
     @property
     def reference_price(self):
-        """Gets the reference_price of this ResouceInfo.
+        r"""Gets the reference_price of this ResouceInfo.
 
         参考价格。
 
@@ -242,7 +242,7 @@ class ResouceInfo:
 
     @reference_price.setter
     def reference_price(self, reference_price):
-        """Sets the reference_price of this ResouceInfo.
+        r"""Sets the reference_price of this ResouceInfo.
 
         参考价格。
 
@@ -253,7 +253,7 @@ class ResouceInfo:
 
     @property
     def price_details_link(self):
-        """Gets the price_details_link of this ResouceInfo.
+        r"""Gets the price_details_link of this ResouceInfo.
 
         价格详情链接。
 
@@ -264,7 +264,7 @@ class ResouceInfo:
 
     @price_details_link.setter
     def price_details_link(self, price_details_link):
-        """Sets the price_details_link of this ResouceInfo.
+        r"""Sets the price_details_link of this ResouceInfo.
 
         价格详情链接。
 
@@ -275,7 +275,7 @@ class ResouceInfo:
 
     @property
     def specifications(self):
-        """Gets the specifications of this ResouceInfo.
+        r"""Gets the specifications of this ResouceInfo.
 
         规格,例如: {\"cpu\" : \"0.5\",\"ram\" : 1GB}。
 
@@ -286,7 +286,7 @@ class ResouceInfo:
 
     @specifications.setter
     def specifications(self, specifications):
-        """Sets the specifications of this ResouceInfo.
+        r"""Sets the specifications of this ResouceInfo.
 
         规格,例如: {\"cpu\" : \"0.5\",\"ram\" : 1GB}。
 

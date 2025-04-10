@@ -34,7 +34,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """ShowAutopilotUpgradeClusterTaskResponse
+        r"""ShowAutopilotUpgradeClusterTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Gets the api_version of this ShowAutopilotUpgradeClusterTaskResponse.
 
         api版本，默认为v3
 
@@ -83,7 +83,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Sets the api_version of this ShowAutopilotUpgradeClusterTaskResponse.
 
         api版本，默认为v3
 
@@ -94,7 +94,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Gets the kind of this ShowAutopilotUpgradeClusterTaskResponse.
 
         资源类型，默认为UpgradeTask
 
@@ -105,7 +105,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Sets the kind of this ShowAutopilotUpgradeClusterTaskResponse.
 
         资源类型，默认为UpgradeTask
 
@@ -116,7 +116,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Gets the metadata of this ShowAutopilotUpgradeClusterTaskResponse.
 
         :return: The metadata of this ShowAutopilotUpgradeClusterTaskResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskMetadata`
@@ -125,7 +125,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Sets the metadata of this ShowAutopilotUpgradeClusterTaskResponse.
 
         :param metadata: The metadata of this ShowAutopilotUpgradeClusterTaskResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeTaskMetadata`
@@ -134,7 +134,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Gets the spec of this ShowAutopilotUpgradeClusterTaskResponse.
 
         :return: The spec of this ShowAutopilotUpgradeClusterTaskResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskSpec`
@@ -143,7 +143,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Sets the spec of this ShowAutopilotUpgradeClusterTaskResponse.
 
         :param spec: The spec of this ShowAutopilotUpgradeClusterTaskResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradeTaskSpec`
@@ -152,7 +152,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Gets the status of this ShowAutopilotUpgradeClusterTaskResponse.
 
         :return: The status of this ShowAutopilotUpgradeClusterTaskResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskStatus`
@@ -161,7 +161,7 @@ class ShowAutopilotUpgradeClusterTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAutopilotUpgradeClusterTaskResponse.
+        r"""Sets the status of this ShowAutopilotUpgradeClusterTaskResponse.
 
         :param status: The status of this ShowAutopilotUpgradeClusterTaskResponse.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeTaskStatus`

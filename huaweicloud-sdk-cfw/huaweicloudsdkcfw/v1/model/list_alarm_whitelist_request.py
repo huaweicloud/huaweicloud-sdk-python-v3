@@ -33,7 +33,7 @@ class ListAlarmWhitelistRequest:
     }
 
     def __init__(self, fw_instance_id=None, ip_address=None, limit=None, offset=None, enterprise_project_id=None):
-        """ListAlarmWhitelistRequest
+        r"""ListAlarmWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListAlarmWhitelistRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListAlarmWhitelistRequest.
+        r"""Gets the fw_instance_id of this ListAlarmWhitelistRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -79,7 +79,7 @@ class ListAlarmWhitelistRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListAlarmWhitelistRequest.
+        r"""Sets the fw_instance_id of this ListAlarmWhitelistRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -90,7 +90,7 @@ class ListAlarmWhitelistRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ListAlarmWhitelistRequest.
+        r"""Gets the ip_address of this ListAlarmWhitelistRequest.
 
         IP地址
 
@@ -101,7 +101,7 @@ class ListAlarmWhitelistRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ListAlarmWhitelistRequest.
+        r"""Sets the ip_address of this ListAlarmWhitelistRequest.
 
         IP地址
 
@@ -112,7 +112,7 @@ class ListAlarmWhitelistRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmWhitelistRequest.
+        r"""Gets the limit of this ListAlarmWhitelistRequest.
 
         分页查询数据量限制
 
@@ -123,7 +123,7 @@ class ListAlarmWhitelistRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmWhitelistRequest.
+        r"""Sets the limit of this ListAlarmWhitelistRequest.
 
         分页查询数据量限制
 
@@ -134,7 +134,7 @@ class ListAlarmWhitelistRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmWhitelistRequest.
+        r"""Gets the offset of this ListAlarmWhitelistRequest.
 
         查询偏移量
 
@@ -145,7 +145,7 @@ class ListAlarmWhitelistRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmWhitelistRequest.
+        r"""Sets the offset of this ListAlarmWhitelistRequest.
 
         查询偏移量
 
@@ -156,7 +156,7 @@ class ListAlarmWhitelistRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAlarmWhitelistRequest.
+        r"""Gets the enterprise_project_id of this ListAlarmWhitelistRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -167,7 +167,7 @@ class ListAlarmWhitelistRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAlarmWhitelistRequest.
+        r"""Sets the enterprise_project_id of this ListAlarmWhitelistRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

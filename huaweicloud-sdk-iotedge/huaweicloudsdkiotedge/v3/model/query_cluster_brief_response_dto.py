@@ -39,7 +39,7 @@ class QueryClusterBriefResponseDTO:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, create_time=None, update_time=None, is_upgradeable=None):
-        """QueryClusterBriefResponseDTO
+        r"""QueryClusterBriefResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this QueryClusterBriefResponseDTO.
+        r"""Gets the cluster_id of this QueryClusterBriefResponseDTO.
 
         集群ID
 
@@ -103,7 +103,7 @@ class QueryClusterBriefResponseDTO:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this QueryClusterBriefResponseDTO.
+        r"""Sets the cluster_id of this QueryClusterBriefResponseDTO.
 
         集群ID
 
@@ -114,7 +114,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this QueryClusterBriefResponseDTO.
+        r"""Gets the cluster_name of this QueryClusterBriefResponseDTO.
 
         集群名称
 
@@ -125,7 +125,7 @@ class QueryClusterBriefResponseDTO:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this QueryClusterBriefResponseDTO.
+        r"""Sets the cluster_name of this QueryClusterBriefResponseDTO.
 
         集群名称
 
@@ -136,7 +136,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryClusterBriefResponseDTO.
+        r"""Gets the description of this QueryClusterBriefResponseDTO.
 
         集群描述
 
@@ -147,7 +147,7 @@ class QueryClusterBriefResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryClusterBriefResponseDTO.
+        r"""Sets the description of this QueryClusterBriefResponseDTO.
 
         集群描述
 
@@ -158,7 +158,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def version(self):
-        """Gets the version of this QueryClusterBriefResponseDTO.
+        r"""Gets the version of this QueryClusterBriefResponseDTO.
 
         边缘集群版本
 
@@ -169,7 +169,7 @@ class QueryClusterBriefResponseDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QueryClusterBriefResponseDTO.
+        r"""Sets the version of this QueryClusterBriefResponseDTO.
 
         边缘集群版本
 
@@ -180,7 +180,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def state(self):
-        """Gets the state of this QueryClusterBriefResponseDTO.
+        r"""Gets the state of this QueryClusterBriefResponseDTO.
 
         边缘集群状态
 
@@ -191,7 +191,7 @@ class QueryClusterBriefResponseDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this QueryClusterBriefResponseDTO.
+        r"""Sets the state of this QueryClusterBriefResponseDTO.
 
         边缘集群状态
 
@@ -202,7 +202,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryClusterBriefResponseDTO.
+        r"""Gets the create_time of this QueryClusterBriefResponseDTO.
 
         创建时间
 
@@ -213,7 +213,7 @@ class QueryClusterBriefResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryClusterBriefResponseDTO.
+        r"""Sets the create_time of this QueryClusterBriefResponseDTO.
 
         创建时间
 
@@ -224,7 +224,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryClusterBriefResponseDTO.
+        r"""Gets the update_time of this QueryClusterBriefResponseDTO.
 
         最后一次修改时间
 
@@ -235,7 +235,7 @@ class QueryClusterBriefResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryClusterBriefResponseDTO.
+        r"""Sets the update_time of this QueryClusterBriefResponseDTO.
 
         最后一次修改时间
 
@@ -246,7 +246,7 @@ class QueryClusterBriefResponseDTO:
 
     @property
     def is_upgradeable(self):
-        """Gets the is_upgradeable of this QueryClusterBriefResponseDTO.
+        r"""Gets the is_upgradeable of this QueryClusterBriefResponseDTO.
 
         是否可升级
 
@@ -257,7 +257,7 @@ class QueryClusterBriefResponseDTO:
 
     @is_upgradeable.setter
     def is_upgradeable(self, is_upgradeable):
-        """Sets the is_upgradeable of this QueryClusterBriefResponseDTO.
+        r"""Sets the is_upgradeable of this QueryClusterBriefResponseDTO.
 
         是否可升级
 

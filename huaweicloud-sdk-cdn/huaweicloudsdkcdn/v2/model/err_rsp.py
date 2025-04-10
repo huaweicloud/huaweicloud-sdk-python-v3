@@ -25,7 +25,7 @@ class ErrRsp:
     }
 
     def __init__(self, error=None):
-        """ErrRsp
+        r"""ErrRsp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ErrRsp:
 
     @property
     def error(self):
-        """Gets the error of this ErrRsp.
+        r"""Gets the error of this ErrRsp.
 
         :return: The error of this ErrRsp.
         :rtype: :class:`huaweicloudsdkcdn.v2.ErrMsg`
@@ -51,7 +51,7 @@ class ErrRsp:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ErrRsp.
+        r"""Sets the error of this ErrRsp.
 
         :param error: The error of this ErrRsp.
         :type error: :class:`huaweicloudsdkcdn.v2.ErrMsg`

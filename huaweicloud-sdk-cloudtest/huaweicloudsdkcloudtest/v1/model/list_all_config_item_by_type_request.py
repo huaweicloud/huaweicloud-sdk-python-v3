@@ -27,7 +27,7 @@ class ListAllConfigItemByTypeRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """ListAllConfigItemByTypeRequest
+        r"""ListAllConfigItemByTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAllConfigItemByTypeRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListAllConfigItemByTypeRequest.
+        r"""Gets the service_id of this ListAllConfigItemByTypeRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ListAllConfigItemByTypeRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListAllConfigItemByTypeRequest.
+        r"""Sets the service_id of this ListAllConfigItemByTypeRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ListAllConfigItemByTypeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAllConfigItemByTypeRequest.
+        r"""Gets the body of this ListAllConfigItemByTypeRequest.
 
         :return: The body of this ListAllConfigItemByTypeRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ListAllConfigItemByTypeRequestBody`
@@ -80,7 +80,7 @@ class ListAllConfigItemByTypeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAllConfigItemByTypeRequest.
+        r"""Sets the body of this ListAllConfigItemByTypeRequest.
 
         :param body: The body of this ListAllConfigItemByTypeRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ListAllConfigItemByTypeRequestBody`

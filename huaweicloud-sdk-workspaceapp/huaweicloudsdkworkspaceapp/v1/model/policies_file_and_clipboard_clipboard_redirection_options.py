@@ -39,7 +39,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
     }
 
     def __init__(self, rich_text_redirection_enable=None, rich_text_clipboard_redirection=None, clipboard_file_redirection_enable=None, file_clipboard_redirection=None, clipboard_length_limit_cts_enable=None, clipboard_length_limit_cts=None, clipboard_length_limit_stc_enable=None, clipboard_length_limit_stc=None):
-        """PoliciesFileAndClipboardClipboardRedirectionOptions
+        r"""PoliciesFileAndClipboardClipboardRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def rich_text_redirection_enable(self):
-        """Gets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板富文本重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -103,7 +103,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @rich_text_redirection_enable.setter
     def rich_text_redirection_enable(self, rich_text_redirection_enable):
-        """Sets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板富文本重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -114,7 +114,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def rich_text_clipboard_redirection(self):
-        """Gets the rich_text_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the rich_text_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         剪切板富文本重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -125,7 +125,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @rich_text_clipboard_redirection.setter
     def rich_text_clipboard_redirection(self, rich_text_clipboard_redirection):
-        """Sets the rich_text_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the rich_text_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         剪切板富文本重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -136,7 +136,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def clipboard_file_redirection_enable(self):
-        """Gets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板文件重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -147,7 +147,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @clipboard_file_redirection_enable.setter
     def clipboard_file_redirection_enable(self, clipboard_file_redirection_enable):
-        """Sets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板文件重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -158,7 +158,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def file_clipboard_redirection(self):
-        """Gets the file_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the file_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         剪切板文件重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -169,7 +169,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @file_clipboard_redirection.setter
     def file_clipboard_redirection(self, file_clipboard_redirection):
-        """Sets the file_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the file_clipboard_redirection of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         剪切板文件重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -180,7 +180,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def clipboard_length_limit_cts_enable(self):
-        """Gets the clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         本地到虚拟机长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
 
@@ -191,7 +191,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @clipboard_length_limit_cts_enable.setter
     def clipboard_length_limit_cts_enable(self, clipboard_length_limit_cts_enable):
-        """Sets the clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the clipboard_length_limit_cts_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         本地到虚拟机长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
 
@@ -202,7 +202,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def clipboard_length_limit_cts(self):
-        """Gets the clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         本地到虚拟机长度限制。
 
@@ -213,7 +213,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @clipboard_length_limit_cts.setter
     def clipboard_length_limit_cts(self, clipboard_length_limit_cts):
-        """Sets the clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the clipboard_length_limit_cts of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         本地到虚拟机长度限制。
 
@@ -224,7 +224,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def clipboard_length_limit_stc_enable(self):
-        """Gets the clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         虚拟机到本地到长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
 
@@ -235,7 +235,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @clipboard_length_limit_stc_enable.setter
     def clipboard_length_limit_stc_enable(self, clipboard_length_limit_stc_enable):
-        """Sets the clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the clipboard_length_limit_stc_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         虚拟机到本地到长度限制开关。取值为： false: 标识关闭。 ture: 标识开启。
 
@@ -246,7 +246,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def clipboard_length_limit_stc(self):
-        """Gets the clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         虚拟机到本地长度限制。
 
@@ -257,7 +257,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @clipboard_length_limit_stc.setter
     def clipboard_length_limit_stc(self, clipboard_length_limit_stc):
-        """Sets the clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the clipboard_length_limit_stc of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         虚拟机到本地长度限制。
 

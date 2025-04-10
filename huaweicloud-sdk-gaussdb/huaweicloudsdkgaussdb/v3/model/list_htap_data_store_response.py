@@ -26,7 +26,7 @@ class ListHtapDataStoreResponse(SdkResponse):
     }
 
     def __init__(self, datastores=None):
-        """ListHtapDataStoreResponse
+        r"""ListHtapDataStoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHtapDataStoreResponse(SdkResponse):
 
     @property
     def datastores(self):
-        """Gets the datastores of this ListHtapDataStoreResponse.
+        r"""Gets the datastores of this ListHtapDataStoreResponse.
 
         数据库信息列表。
 
@@ -55,7 +55,7 @@ class ListHtapDataStoreResponse(SdkResponse):
 
     @datastores.setter
     def datastores(self, datastores):
-        """Sets the datastores of this ListHtapDataStoreResponse.
+        r"""Sets the datastores of this ListHtapDataStoreResponse.
 
         数据库信息列表。
 

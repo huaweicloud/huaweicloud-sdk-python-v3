@@ -27,7 +27,7 @@ class DeleteHttpBlockTrustIpRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None):
-        """DeleteHttpBlockTrustIpRuleRequest
+        r"""DeleteHttpBlockTrustIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteHttpBlockTrustIpRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteHttpBlockTrustIpRuleRequest.
+        r"""Gets the policy_id of this DeleteHttpBlockTrustIpRuleRequest.
 
         策略id
 
@@ -59,7 +59,7 @@ class DeleteHttpBlockTrustIpRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteHttpBlockTrustIpRuleRequest.
+        r"""Sets the policy_id of this DeleteHttpBlockTrustIpRuleRequest.
 
         策略id
 
@@ -70,7 +70,7 @@ class DeleteHttpBlockTrustIpRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteHttpBlockTrustIpRuleRequest.
+        r"""Gets the rule_id of this DeleteHttpBlockTrustIpRuleRequest.
 
         防护规则id
 
@@ -81,7 +81,7 @@ class DeleteHttpBlockTrustIpRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteHttpBlockTrustIpRuleRequest.
+        r"""Sets the rule_id of this DeleteHttpBlockTrustIpRuleRequest.
 
         防护规则id
 

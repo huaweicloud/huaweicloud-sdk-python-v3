@@ -25,7 +25,7 @@ class CreateCamInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCamInstanceRequest
+        r"""CreateCamInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCamInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCamInstanceRequest.
+        r"""Gets the body of this CreateCamInstanceRequest.
 
         :return: The body of this CreateCamInstanceRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceCreation`
@@ -52,7 +52,7 @@ class CreateCamInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCamInstanceRequest.
+        r"""Sets the body of this CreateCamInstanceRequest.
 
         :param body: The body of this CreateCamInstanceRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.InstanceCreation`

@@ -59,7 +59,7 @@ class ShowReposResp:
     }
 
     def __init__(self, name=None, category=None, description=None, size=None, is_public=None, num_images=None, num_download=None, created_at=None, updated_at=None, logo=None, url=None, path=None, internal_path=None, domain_name=None, namespace=None, tags=None, status=None, total_range=None):
-        """ShowReposResp
+        r"""ShowReposResp
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class ShowReposResp:
 
     @property
     def name(self):
-        """Gets the name of this ShowReposResp.
+        r"""Gets the name of this ShowReposResp.
 
         仓库名称
 
@@ -155,7 +155,7 @@ class ShowReposResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowReposResp.
+        r"""Sets the name of this ShowReposResp.
 
         仓库名称
 
@@ -166,7 +166,7 @@ class ShowReposResp:
 
     @property
     def category(self):
-        """Gets the category of this ShowReposResp.
+        r"""Gets the category of this ShowReposResp.
 
         仓库类型（计划改造，每个镜像会有多个lable标示）
 
@@ -177,7 +177,7 @@ class ShowReposResp:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowReposResp.
+        r"""Sets the category of this ShowReposResp.
 
         仓库类型（计划改造，每个镜像会有多个lable标示）
 
@@ -188,7 +188,7 @@ class ShowReposResp:
 
     @property
     def description(self):
-        """Gets the description of this ShowReposResp.
+        r"""Gets the description of this ShowReposResp.
 
         仓库描述信息
 
@@ -199,7 +199,7 @@ class ShowReposResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowReposResp.
+        r"""Sets the description of this ShowReposResp.
 
         仓库描述信息
 
@@ -210,7 +210,7 @@ class ShowReposResp:
 
     @property
     def size(self):
-        """Gets the size of this ShowReposResp.
+        r"""Gets the size of this ShowReposResp.
 
         仓库大小 
 
@@ -221,7 +221,7 @@ class ShowReposResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowReposResp.
+        r"""Sets the size of this ShowReposResp.
 
         仓库大小 
 
@@ -232,7 +232,7 @@ class ShowReposResp:
 
     @property
     def is_public(self):
-        """Gets the is_public of this ShowReposResp.
+        r"""Gets the is_public of this ShowReposResp.
 
         仓库是否为公共仓库，值为true或false
 
@@ -243,7 +243,7 @@ class ShowReposResp:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this ShowReposResp.
+        r"""Sets the is_public of this ShowReposResp.
 
         仓库是否为公共仓库，值为true或false
 
@@ -254,7 +254,7 @@ class ShowReposResp:
 
     @property
     def num_images(self):
-        """Gets the num_images of this ShowReposResp.
+        r"""Gets the num_images of this ShowReposResp.
 
         仓库中镜像个数，0 ~ 9223372036854775807
 
@@ -265,7 +265,7 @@ class ShowReposResp:
 
     @num_images.setter
     def num_images(self, num_images):
-        """Sets the num_images of this ShowReposResp.
+        r"""Sets the num_images of this ShowReposResp.
 
         仓库中镜像个数，0 ~ 9223372036854775807
 
@@ -276,7 +276,7 @@ class ShowReposResp:
 
     @property
     def num_download(self):
-        """Gets the num_download of this ShowReposResp.
+        r"""Gets the num_download of this ShowReposResp.
 
         仓库下载次数
 
@@ -287,7 +287,7 @@ class ShowReposResp:
 
     @num_download.setter
     def num_download(self, num_download):
-        """Sets the num_download of this ShowReposResp.
+        r"""Sets the num_download of this ShowReposResp.
 
         仓库下载次数
 
@@ -298,7 +298,7 @@ class ShowReposResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowReposResp.
+        r"""Gets the created_at of this ShowReposResp.
 
         仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -309,7 +309,7 @@ class ShowReposResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowReposResp.
+        r"""Sets the created_at of this ShowReposResp.
 
         仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -320,7 +320,7 @@ class ShowReposResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowReposResp.
+        r"""Gets the updated_at of this ShowReposResp.
 
         仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -331,7 +331,7 @@ class ShowReposResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowReposResp.
+        r"""Sets the updated_at of this ShowReposResp.
 
         仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -342,7 +342,7 @@ class ShowReposResp:
 
     @property
     def logo(self):
-        """Gets the logo of this ShowReposResp.
+        r"""Gets the logo of this ShowReposResp.
 
         仓库logo地址（暂时未用）
 
@@ -353,7 +353,7 @@ class ShowReposResp:
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this ShowReposResp.
+        r"""Sets the logo of this ShowReposResp.
 
         仓库logo地址（暂时未用）
 
@@ -364,7 +364,7 @@ class ShowReposResp:
 
     @property
     def url(self):
-        """Gets the url of this ShowReposResp.
+        r"""Gets the url of this ShowReposResp.
 
         仓库logo图片的URL，URL格式。（暂时未用）
 
@@ -375,7 +375,7 @@ class ShowReposResp:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowReposResp.
+        r"""Sets the url of this ShowReposResp.
 
         仓库logo图片的URL，URL格式。（暂时未用）
 
@@ -386,7 +386,7 @@ class ShowReposResp:
 
     @property
     def path(self):
-        """Gets the path of this ShowReposResp.
+        r"""Gets the path of this ShowReposResp.
 
         镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
 
@@ -397,7 +397,7 @@ class ShowReposResp:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowReposResp.
+        r"""Sets the path of this ShowReposResp.
 
         镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
 
@@ -408,7 +408,7 @@ class ShowReposResp:
 
     @property
     def internal_path(self):
-        """Gets the internal_path of this ShowReposResp.
+        r"""Gets the internal_path of this ShowReposResp.
 
         镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
 
@@ -419,7 +419,7 @@ class ShowReposResp:
 
     @internal_path.setter
     def internal_path(self, internal_path):
-        """Sets the internal_path of this ShowReposResp.
+        r"""Sets the internal_path of this ShowReposResp.
 
         镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
 
@@ -430,7 +430,7 @@ class ShowReposResp:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowReposResp.
+        r"""Gets the domain_name of this ShowReposResp.
 
         租户名
 
@@ -441,7 +441,7 @@ class ShowReposResp:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowReposResp.
+        r"""Sets the domain_name of this ShowReposResp.
 
         租户名
 
@@ -452,7 +452,7 @@ class ShowReposResp:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowReposResp.
+        r"""Gets the namespace of this ShowReposResp.
 
         租户的组织名称
 
@@ -463,7 +463,7 @@ class ShowReposResp:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowReposResp.
+        r"""Sets the namespace of this ShowReposResp.
 
         租户的组织名称
 
@@ -474,7 +474,7 @@ class ShowReposResp:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowReposResp.
+        r"""Gets the tags of this ShowReposResp.
 
         镜像版本列表
 
@@ -485,7 +485,7 @@ class ShowReposResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowReposResp.
+        r"""Sets the tags of this ShowReposResp.
 
         镜像版本列表
 
@@ -496,7 +496,7 @@ class ShowReposResp:
 
     @property
     def status(self):
-        """Gets the status of this ShowReposResp.
+        r"""Gets the status of this ShowReposResp.
 
         查询他人共享镜像：共享是否过期 查询我共享的镜像：默认为false,无意义
 
@@ -507,7 +507,7 @@ class ShowReposResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowReposResp.
+        r"""Sets the status of this ShowReposResp.
 
         查询他人共享镜像：共享是否过期 查询我共享的镜像：默认为false,无意义
 
@@ -518,7 +518,7 @@ class ShowReposResp:
 
     @property
     def total_range(self):
-        """Gets the total_range of this ShowReposResp.
+        r"""Gets the total_range of this ShowReposResp.
 
         总记录条数
 
@@ -529,7 +529,7 @@ class ShowReposResp:
 
     @total_range.setter
     def total_range(self, total_range):
-        """Sets the total_range of this ShowReposResp.
+        r"""Sets the total_range of this ShowReposResp.
 
         总记录条数
 

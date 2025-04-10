@@ -33,7 +33,7 @@ class UserProcessAuditLog:
     }
 
     def __init__(self, instance_id=None, instance_name=None, process_id=None, execute_user_name=None, execute_time=None):
-        """UserProcessAuditLog
+        r"""UserProcessAuditLog
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UserProcessAuditLog:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UserProcessAuditLog.
+        r"""Gets the instance_id of this UserProcessAuditLog.
 
         实例id
 
@@ -82,7 +82,7 @@ class UserProcessAuditLog:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UserProcessAuditLog.
+        r"""Sets the instance_id of this UserProcessAuditLog.
 
         实例id
 
@@ -93,7 +93,7 @@ class UserProcessAuditLog:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this UserProcessAuditLog.
+        r"""Gets the instance_name of this UserProcessAuditLog.
 
         实例名
 
@@ -104,7 +104,7 @@ class UserProcessAuditLog:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this UserProcessAuditLog.
+        r"""Sets the instance_name of this UserProcessAuditLog.
 
         实例名
 
@@ -115,7 +115,7 @@ class UserProcessAuditLog:
 
     @property
     def process_id(self):
-        """Gets the process_id of this UserProcessAuditLog.
+        r"""Gets the process_id of this UserProcessAuditLog.
 
         会话id
 
@@ -126,7 +126,7 @@ class UserProcessAuditLog:
 
     @process_id.setter
     def process_id(self, process_id):
-        """Sets the process_id of this UserProcessAuditLog.
+        r"""Sets the process_id of this UserProcessAuditLog.
 
         会话id
 
@@ -137,7 +137,7 @@ class UserProcessAuditLog:
 
     @property
     def execute_user_name(self):
-        """Gets the execute_user_name of this UserProcessAuditLog.
+        r"""Gets the execute_user_name of this UserProcessAuditLog.
 
         执行用户名
 
@@ -148,7 +148,7 @@ class UserProcessAuditLog:
 
     @execute_user_name.setter
     def execute_user_name(self, execute_user_name):
-        """Sets the execute_user_name of this UserProcessAuditLog.
+        r"""Sets the execute_user_name of this UserProcessAuditLog.
 
         执行用户名
 
@@ -159,7 +159,7 @@ class UserProcessAuditLog:
 
     @property
     def execute_time(self):
-        """Gets the execute_time of this UserProcessAuditLog.
+        r"""Gets the execute_time of this UserProcessAuditLog.
 
         发生时间，UTC时间
 
@@ -170,7 +170,7 @@ class UserProcessAuditLog:
 
     @execute_time.setter
     def execute_time(self, execute_time):
-        """Sets the execute_time of this UserProcessAuditLog.
+        r"""Sets the execute_time of this UserProcessAuditLog.
 
         发生时间，UTC时间
 

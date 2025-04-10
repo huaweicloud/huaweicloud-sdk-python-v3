@@ -24,7 +24,7 @@ class DeleteVpcRouteResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVpcRouteResponse
+        r"""DeleteVpcRouteResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class ResetRandomPasswordResponse(SdkResponse):
     }
 
     def __init__(self, password=None):
-        """ResetRandomPasswordResponse
+        r"""ResetRandomPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetRandomPasswordResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this ResetRandomPasswordResponse.
+        r"""Gets the password of this ResetRandomPasswordResponse.
 
         密码。
 
@@ -55,7 +55,7 @@ class ResetRandomPasswordResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ResetRandomPasswordResponse.
+        r"""Sets the password of this ResetRandomPasswordResponse.
 
         密码。
 

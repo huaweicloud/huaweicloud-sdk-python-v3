@@ -59,7 +59,7 @@ class PolicyOption:
     }
 
     def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, modulex_enabled=None):
-        """PolicyOption
+        r"""PolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class PolicyOption:
 
     @property
     def webattack(self):
-        """Gets the webattack of this PolicyOption.
+        r"""Gets the webattack of this PolicyOption.
 
         基础防护是否开启
 
@@ -173,7 +173,7 @@ class PolicyOption:
 
     @webattack.setter
     def webattack(self, webattack):
-        """Sets the webattack of this PolicyOption.
+        r"""Sets the webattack of this PolicyOption.
 
         基础防护是否开启
 
@@ -184,7 +184,7 @@ class PolicyOption:
 
     @property
     def common(self):
-        """Gets the common of this PolicyOption.
+        r"""Gets the common of this PolicyOption.
 
         常规检测是否开启
 
@@ -195,7 +195,7 @@ class PolicyOption:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this PolicyOption.
+        r"""Sets the common of this PolicyOption.
 
         常规检测是否开启
 
@@ -206,7 +206,7 @@ class PolicyOption:
 
     @property
     def crawler(self):
-        """Gets the crawler of this PolicyOption.
+        r"""Gets the crawler of this PolicyOption.
 
         预留参数，该参数值一直为true，用户可忽略该参数值
 
@@ -217,7 +217,7 @@ class PolicyOption:
 
     @crawler.setter
     def crawler(self, crawler):
-        """Sets the crawler of this PolicyOption.
+        r"""Sets the crawler of this PolicyOption.
 
         预留参数，该参数值一直为true，用户可忽略该参数值
 
@@ -228,7 +228,7 @@ class PolicyOption:
 
     @property
     def crawler_engine(self):
-        """Gets the crawler_engine of this PolicyOption.
+        r"""Gets the crawler_engine of this PolicyOption.
 
         搜索engine是否开启
 
@@ -239,7 +239,7 @@ class PolicyOption:
 
     @crawler_engine.setter
     def crawler_engine(self, crawler_engine):
-        """Sets the crawler_engine of this PolicyOption.
+        r"""Sets the crawler_engine of this PolicyOption.
 
         搜索engine是否开启
 
@@ -250,7 +250,7 @@ class PolicyOption:
 
     @property
     def crawler_scanner(self):
-        """Gets the crawler_scanner of this PolicyOption.
+        r"""Gets the crawler_scanner of this PolicyOption.
 
         反爬虫检测是否开启
 
@@ -261,7 +261,7 @@ class PolicyOption:
 
     @crawler_scanner.setter
     def crawler_scanner(self, crawler_scanner):
-        """Sets the crawler_scanner of this PolicyOption.
+        r"""Sets the crawler_scanner of this PolicyOption.
 
         反爬虫检测是否开启
 
@@ -272,7 +272,7 @@ class PolicyOption:
 
     @property
     def crawler_script(self):
-        """Gets the crawler_script of this PolicyOption.
+        r"""Gets the crawler_script of this PolicyOption.
 
         脚本反爬虫是否开启
 
@@ -283,7 +283,7 @@ class PolicyOption:
 
     @crawler_script.setter
     def crawler_script(self, crawler_script):
-        """Sets the crawler_script of this PolicyOption.
+        r"""Sets the crawler_script of this PolicyOption.
 
         脚本反爬虫是否开启
 
@@ -294,7 +294,7 @@ class PolicyOption:
 
     @property
     def crawler_other(self):
-        """Gets the crawler_other of this PolicyOption.
+        r"""Gets the crawler_other of this PolicyOption.
 
         其他爬虫是否开启
 
@@ -305,7 +305,7 @@ class PolicyOption:
 
     @crawler_other.setter
     def crawler_other(self, crawler_other):
-        """Sets the crawler_other of this PolicyOption.
+        r"""Sets the crawler_other of this PolicyOption.
 
         其他爬虫是否开启
 
@@ -316,7 +316,7 @@ class PolicyOption:
 
     @property
     def webshell(self):
-        """Gets the webshell of this PolicyOption.
+        r"""Gets the webshell of this PolicyOption.
 
         Webshell检测是否开启
 
@@ -327,7 +327,7 @@ class PolicyOption:
 
     @webshell.setter
     def webshell(self, webshell):
-        """Sets the webshell of this PolicyOption.
+        r"""Sets the webshell of this PolicyOption.
 
         Webshell检测是否开启
 
@@ -338,7 +338,7 @@ class PolicyOption:
 
     @property
     def cc(self):
-        """Gets the cc of this PolicyOption.
+        r"""Gets the cc of this PolicyOption.
 
         cc规则是否开启
 
@@ -349,7 +349,7 @@ class PolicyOption:
 
     @cc.setter
     def cc(self, cc):
-        """Sets the cc of this PolicyOption.
+        r"""Sets the cc of this PolicyOption.
 
         cc规则是否开启
 
@@ -360,7 +360,7 @@ class PolicyOption:
 
     @property
     def custom(self):
-        """Gets the custom of this PolicyOption.
+        r"""Gets the custom of this PolicyOption.
 
         精准防护是否开启
 
@@ -371,7 +371,7 @@ class PolicyOption:
 
     @custom.setter
     def custom(self, custom):
-        """Sets the custom of this PolicyOption.
+        r"""Sets the custom of this PolicyOption.
 
         精准防护是否开启
 
@@ -382,7 +382,7 @@ class PolicyOption:
 
     @property
     def whiteblackip(self):
-        """Gets the whiteblackip of this PolicyOption.
+        r"""Gets the whiteblackip of this PolicyOption.
 
         黑白名单防护是否开启
 
@@ -393,7 +393,7 @@ class PolicyOption:
 
     @whiteblackip.setter
     def whiteblackip(self, whiteblackip):
-        """Sets the whiteblackip of this PolicyOption.
+        r"""Sets the whiteblackip of this PolicyOption.
 
         黑白名单防护是否开启
 
@@ -404,7 +404,7 @@ class PolicyOption:
 
     @property
     def geoip(self):
-        """Gets the geoip of this PolicyOption.
+        r"""Gets the geoip of this PolicyOption.
 
         地理位置访问控制规则是否开启
 
@@ -415,7 +415,7 @@ class PolicyOption:
 
     @geoip.setter
     def geoip(self, geoip):
-        """Sets the geoip of this PolicyOption.
+        r"""Sets the geoip of this PolicyOption.
 
         地理位置访问控制规则是否开启
 
@@ -426,7 +426,7 @@ class PolicyOption:
 
     @property
     def ignore(self):
-        """Gets the ignore of this PolicyOption.
+        r"""Gets the ignore of this PolicyOption.
 
         误报屏蔽是否开启
 
@@ -437,7 +437,7 @@ class PolicyOption:
 
     @ignore.setter
     def ignore(self, ignore):
-        """Sets the ignore of this PolicyOption.
+        r"""Sets the ignore of this PolicyOption.
 
         误报屏蔽是否开启
 
@@ -448,7 +448,7 @@ class PolicyOption:
 
     @property
     def privacy(self):
-        """Gets the privacy of this PolicyOption.
+        r"""Gets the privacy of this PolicyOption.
 
         隐私屏蔽是否开启
 
@@ -459,7 +459,7 @@ class PolicyOption:
 
     @privacy.setter
     def privacy(self, privacy):
-        """Sets the privacy of this PolicyOption.
+        r"""Sets the privacy of this PolicyOption.
 
         隐私屏蔽是否开启
 
@@ -470,7 +470,7 @@ class PolicyOption:
 
     @property
     def antitamper(self):
-        """Gets the antitamper of this PolicyOption.
+        r"""Gets the antitamper of this PolicyOption.
 
         网页防篡改规则是否开启
 
@@ -481,7 +481,7 @@ class PolicyOption:
 
     @antitamper.setter
     def antitamper(self, antitamper):
-        """Sets the antitamper of this PolicyOption.
+        r"""Sets the antitamper of this PolicyOption.
 
         网页防篡改规则是否开启
 
@@ -492,7 +492,7 @@ class PolicyOption:
 
     @property
     def antileakage(self):
-        """Gets the antileakage of this PolicyOption.
+        r"""Gets the antileakage of this PolicyOption.
 
         防敏感信息泄露规则是否开启
 
@@ -503,7 +503,7 @@ class PolicyOption:
 
     @antileakage.setter
     def antileakage(self, antileakage):
-        """Sets the antileakage of this PolicyOption.
+        r"""Sets the antileakage of this PolicyOption.
 
         防敏感信息泄露规则是否开启
 
@@ -514,7 +514,7 @@ class PolicyOption:
 
     @property
     def bot_enable(self):
-        """Gets the bot_enable of this PolicyOption.
+        r"""Gets the bot_enable of this PolicyOption.
 
         网站反爬虫总开关是否开启
 
@@ -525,7 +525,7 @@ class PolicyOption:
 
     @bot_enable.setter
     def bot_enable(self, bot_enable):
-        """Sets the bot_enable of this PolicyOption.
+        r"""Sets the bot_enable of this PolicyOption.
 
         网站反爬虫总开关是否开启
 
@@ -536,7 +536,7 @@ class PolicyOption:
 
     @property
     def modulex_enabled(self):
-        """Gets the modulex_enabled of this PolicyOption.
+        r"""Gets the modulex_enabled of this PolicyOption.
 
         modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
 
@@ -547,7 +547,7 @@ class PolicyOption:
 
     @modulex_enabled.setter
     def modulex_enabled(self, modulex_enabled):
-        """Sets the modulex_enabled of this PolicyOption.
+        r"""Sets the modulex_enabled of this PolicyOption.
 
         modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
 

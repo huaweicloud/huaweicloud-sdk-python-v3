@@ -35,7 +35,7 @@ class CreateConnectionMonitorInfo:
     }
 
     def __init__(self, id=None, vpn_connection_id=None, type=None, source_ip=None, destination_ip=None, proto_type=None):
-        """CreateConnectionMonitorInfo
+        r"""CreateConnectionMonitorInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateConnectionMonitorInfo:
 
     @property
     def id(self):
-        """Gets the id of this CreateConnectionMonitorInfo.
+        r"""Gets the id of this CreateConnectionMonitorInfo.
 
         VPN连接监控ID
 
@@ -89,7 +89,7 @@ class CreateConnectionMonitorInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateConnectionMonitorInfo.
+        r"""Sets the id of this CreateConnectionMonitorInfo.
 
         VPN连接监控ID
 
@@ -100,7 +100,7 @@ class CreateConnectionMonitorInfo:
 
     @property
     def vpn_connection_id(self):
-        """Gets the vpn_connection_id of this CreateConnectionMonitorInfo.
+        r"""Gets the vpn_connection_id of this CreateConnectionMonitorInfo.
 
         VPN连接监控对应的VPN连接ID
 
@@ -111,7 +111,7 @@ class CreateConnectionMonitorInfo:
 
     @vpn_connection_id.setter
     def vpn_connection_id(self, vpn_connection_id):
-        """Sets the vpn_connection_id of this CreateConnectionMonitorInfo.
+        r"""Sets the vpn_connection_id of this CreateConnectionMonitorInfo.
 
         VPN连接监控对应的VPN连接ID
 
@@ -122,7 +122,7 @@ class CreateConnectionMonitorInfo:
 
     @property
     def type(self):
-        """Gets the type of this CreateConnectionMonitorInfo.
+        r"""Gets the type of this CreateConnectionMonitorInfo.
 
         监控类型，取值范围：gateway
 
@@ -133,7 +133,7 @@ class CreateConnectionMonitorInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateConnectionMonitorInfo.
+        r"""Sets the type of this CreateConnectionMonitorInfo.
 
         监控类型，取值范围：gateway
 
@@ -144,7 +144,7 @@ class CreateConnectionMonitorInfo:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this CreateConnectionMonitorInfo.
+        r"""Gets the source_ip of this CreateConnectionMonitorInfo.
 
         VPN连接监控的源地址
 
@@ -155,7 +155,7 @@ class CreateConnectionMonitorInfo:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this CreateConnectionMonitorInfo.
+        r"""Sets the source_ip of this CreateConnectionMonitorInfo.
 
         VPN连接监控的源地址
 
@@ -166,7 +166,7 @@ class CreateConnectionMonitorInfo:
 
     @property
     def destination_ip(self):
-        """Gets the destination_ip of this CreateConnectionMonitorInfo.
+        r"""Gets the destination_ip of this CreateConnectionMonitorInfo.
 
         VPN连接监控的目的地址
 
@@ -177,7 +177,7 @@ class CreateConnectionMonitorInfo:
 
     @destination_ip.setter
     def destination_ip(self, destination_ip):
-        """Sets the destination_ip of this CreateConnectionMonitorInfo.
+        r"""Sets the destination_ip of this CreateConnectionMonitorInfo.
 
         VPN连接监控的目的地址
 
@@ -188,7 +188,7 @@ class CreateConnectionMonitorInfo:
 
     @property
     def proto_type(self):
-        """Gets the proto_type of this CreateConnectionMonitorInfo.
+        r"""Gets the proto_type of this CreateConnectionMonitorInfo.
 
         预留字段，nqa使用的协议类型，目前使用默认值ICMP
 
@@ -199,7 +199,7 @@ class CreateConnectionMonitorInfo:
 
     @proto_type.setter
     def proto_type(self, proto_type):
-        """Sets the proto_type of this CreateConnectionMonitorInfo.
+        r"""Sets the proto_type of this CreateConnectionMonitorInfo.
 
         预留字段，nqa使用的协议类型，目前使用默认值ICMP
 

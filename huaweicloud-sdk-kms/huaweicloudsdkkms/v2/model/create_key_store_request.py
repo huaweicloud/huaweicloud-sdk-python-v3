@@ -25,7 +25,7 @@ class CreateKeyStoreRequest:
     }
 
     def __init__(self, body=None):
-        """CreateKeyStoreRequest
+        r"""CreateKeyStoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateKeyStoreRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateKeyStoreRequest.
+        r"""Gets the body of this CreateKeyStoreRequest.
 
         :return: The body of this CreateKeyStoreRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequestBody`
@@ -52,7 +52,7 @@ class CreateKeyStoreRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateKeyStoreRequest.
+        r"""Sets the body of this CreateKeyStoreRequest.
 
         :param body: The body of this CreateKeyStoreRequest.
         :type body: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequestBody`

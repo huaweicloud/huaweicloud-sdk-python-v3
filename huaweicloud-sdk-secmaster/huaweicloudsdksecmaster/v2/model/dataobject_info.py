@@ -37,7 +37,7 @@ class DataobjectInfo:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, project_id=None, dataclass_id=None, name=None, content=None):
-        """DataobjectInfo
+        r"""DataobjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DataobjectInfo:
 
     @property
     def id(self):
-        """Gets the id of this DataobjectInfo.
+        r"""Gets the id of this DataobjectInfo.
 
         ID值
 
@@ -96,7 +96,7 @@ class DataobjectInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataobjectInfo.
+        r"""Sets the id of this DataobjectInfo.
 
         ID值
 
@@ -107,7 +107,7 @@ class DataobjectInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataobjectInfo.
+        r"""Gets the create_time of this DataobjectInfo.
 
         创建时间
 
@@ -118,7 +118,7 @@ class DataobjectInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataobjectInfo.
+        r"""Sets the create_time of this DataobjectInfo.
 
         创建时间
 
@@ -129,7 +129,7 @@ class DataobjectInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DataobjectInfo.
+        r"""Gets the update_time of this DataobjectInfo.
 
         更新时间
 
@@ -140,7 +140,7 @@ class DataobjectInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DataobjectInfo.
+        r"""Sets the update_time of this DataobjectInfo.
 
         更新时间
 
@@ -151,7 +151,7 @@ class DataobjectInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataobjectInfo.
+        r"""Gets the project_id of this DataobjectInfo.
 
         项目ID
 
@@ -162,7 +162,7 @@ class DataobjectInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataobjectInfo.
+        r"""Sets the project_id of this DataobjectInfo.
 
         项目ID
 
@@ -173,7 +173,7 @@ class DataobjectInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this DataobjectInfo.
+        r"""Gets the dataclass_id of this DataobjectInfo.
 
         数据类ID
 
@@ -184,7 +184,7 @@ class DataobjectInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this DataobjectInfo.
+        r"""Sets the dataclass_id of this DataobjectInfo.
 
         数据类ID
 
@@ -195,7 +195,7 @@ class DataobjectInfo:
 
     @property
     def name(self):
-        """Gets the name of this DataobjectInfo.
+        r"""Gets the name of this DataobjectInfo.
 
         名称
 
@@ -206,7 +206,7 @@ class DataobjectInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataobjectInfo.
+        r"""Sets the name of this DataobjectInfo.
 
         名称
 
@@ -217,7 +217,7 @@ class DataobjectInfo:
 
     @property
     def content(self):
-        """Gets the content of this DataobjectInfo.
+        r"""Gets the content of this DataobjectInfo.
 
         数据内容
 
@@ -228,7 +228,7 @@ class DataobjectInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DataobjectInfo.
+        r"""Sets the content of this DataobjectInfo.
 
         数据内容
 

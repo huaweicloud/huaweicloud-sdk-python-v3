@@ -28,7 +28,7 @@ class ListFactoryJobInstancesByNameResponse(SdkResponse):
     }
 
     def __init__(self, total=None, instances=None):
-        """ListFactoryJobInstancesByNameResponse
+        r"""ListFactoryJobInstancesByNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFactoryJobInstancesByNameResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFactoryJobInstancesByNameResponse.
+        r"""Gets the total of this ListFactoryJobInstancesByNameResponse.
 
         总记录数
 
@@ -62,7 +62,7 @@ class ListFactoryJobInstancesByNameResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFactoryJobInstancesByNameResponse.
+        r"""Sets the total of this ListFactoryJobInstancesByNameResponse.
 
         总记录数
 
@@ -73,7 +73,7 @@ class ListFactoryJobInstancesByNameResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListFactoryJobInstancesByNameResponse.
+        r"""Gets the instances of this ListFactoryJobInstancesByNameResponse.
 
         作业实例状态
 
@@ -84,7 +84,7 @@ class ListFactoryJobInstancesByNameResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListFactoryJobInstancesByNameResponse.
+        r"""Sets the instances of this ListFactoryJobInstancesByNameResponse.
 
         作业实例状态
 

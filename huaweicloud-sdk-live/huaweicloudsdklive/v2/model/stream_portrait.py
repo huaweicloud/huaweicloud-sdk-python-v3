@@ -39,7 +39,7 @@ class StreamPortrait:
     }
 
     def __init__(self, time=None, flow=None, play_duration=None, request_count=None, user_count=None, peak_user_count=None, peak_bandwidth=None, push_duration=None):
-        """StreamPortrait
+        r"""StreamPortrait
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class StreamPortrait:
 
     @property
     def time(self):
-        """Gets the time of this StreamPortrait.
+        r"""Gets the time of this StreamPortrait.
 
         统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。统计该统计日期00:00-23:59时段的播放画像信息。
 
@@ -103,7 +103,7 @@ class StreamPortrait:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this StreamPortrait.
+        r"""Sets the time of this StreamPortrait.
 
         统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。统计该统计日期00:00-23:59时段的播放画像信息。
 
@@ -114,7 +114,7 @@ class StreamPortrait:
 
     @property
     def flow(self):
-        """Gets the flow of this StreamPortrait.
+        r"""Gets the flow of this StreamPortrait.
 
         累计流量，单位为byte。
 
@@ -125,7 +125,7 @@ class StreamPortrait:
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this StreamPortrait.
+        r"""Sets the flow of this StreamPortrait.
 
         累计流量，单位为byte。
 
@@ -136,7 +136,7 @@ class StreamPortrait:
 
     @property
     def play_duration(self):
-        """Gets the play_duration of this StreamPortrait.
+        r"""Gets the play_duration of this StreamPortrait.
 
         累计播放时长,单位为秒。
 
@@ -147,7 +147,7 @@ class StreamPortrait:
 
     @play_duration.setter
     def play_duration(self, play_duration):
-        """Sets the play_duration of this StreamPortrait.
+        r"""Sets the play_duration of this StreamPortrait.
 
         累计播放时长,单位为秒。
 
@@ -158,7 +158,7 @@ class StreamPortrait:
 
     @property
     def request_count(self):
-        """Gets the request_count of this StreamPortrait.
+        r"""Gets the request_count of this StreamPortrait.
 
         累计请求次数。
 
@@ -169,7 +169,7 @@ class StreamPortrait:
 
     @request_count.setter
     def request_count(self, request_count):
-        """Sets the request_count of this StreamPortrait.
+        r"""Sets the request_count of this StreamPortrait.
 
         累计请求次数。
 
@@ -180,7 +180,7 @@ class StreamPortrait:
 
     @property
     def user_count(self):
-        """Gets the user_count of this StreamPortrait.
+        r"""Gets the user_count of this StreamPortrait.
 
         累计观看人数,根据IP去重。
 
@@ -191,7 +191,7 @@ class StreamPortrait:
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this StreamPortrait.
+        r"""Sets the user_count of this StreamPortrait.
 
         累计观看人数,根据IP去重。
 
@@ -202,7 +202,7 @@ class StreamPortrait:
 
     @property
     def peak_user_count(self):
-        """Gets the peak_user_count of this StreamPortrait.
+        r"""Gets the peak_user_count of this StreamPortrait.
 
         峰值观看人数,flv/rtmp协议是统计Session会话ID，其它协议统计IP,1分钟的采样数据。
 
@@ -213,7 +213,7 @@ class StreamPortrait:
 
     @peak_user_count.setter
     def peak_user_count(self, peak_user_count):
-        """Sets the peak_user_count of this StreamPortrait.
+        r"""Sets the peak_user_count of this StreamPortrait.
 
         峰值观看人数,flv/rtmp协议是统计Session会话ID，其它协议统计IP,1分钟的采样数据。
 
@@ -224,7 +224,7 @@ class StreamPortrait:
 
     @property
     def peak_bandwidth(self):
-        """Gets the peak_bandwidth of this StreamPortrait.
+        r"""Gets the peak_bandwidth of this StreamPortrait.
 
         峰值带宽，单位bps,5分钟的采样数据。
 
@@ -235,7 +235,7 @@ class StreamPortrait:
 
     @peak_bandwidth.setter
     def peak_bandwidth(self, peak_bandwidth):
-        """Sets the peak_bandwidth of this StreamPortrait.
+        r"""Sets the peak_bandwidth of this StreamPortrait.
 
         峰值带宽，单位bps,5分钟的采样数据。
 
@@ -246,7 +246,7 @@ class StreamPortrait:
 
     @property
     def push_duration(self):
-        """Gets the push_duration of this StreamPortrait.
+        r"""Gets the push_duration of this StreamPortrait.
 
         累计直播(推流)时长,单位为秒。
 
@@ -257,7 +257,7 @@ class StreamPortrait:
 
     @push_duration.setter
     def push_duration(self, push_duration):
-        """Sets the push_duration of this StreamPortrait.
+        r"""Sets the push_duration of this StreamPortrait.
 
         累计直播(推流)时长,单位为秒。
 

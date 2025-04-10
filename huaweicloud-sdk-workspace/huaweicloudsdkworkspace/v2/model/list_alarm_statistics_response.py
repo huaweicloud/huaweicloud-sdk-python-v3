@@ -34,7 +34,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, critical_count=None, major_count=None, minor_count=None, info_count=None, total=None):
-        """ListAlarmStatisticsResponse
+        r"""ListAlarmStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @property
     def critical_count(self):
-        """Gets the critical_count of this ListAlarmStatisticsResponse.
+        r"""Gets the critical_count of this ListAlarmStatisticsResponse.
 
         紧急告警记录列表总数
 
@@ -83,7 +83,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @critical_count.setter
     def critical_count(self, critical_count):
-        """Sets the critical_count of this ListAlarmStatisticsResponse.
+        r"""Sets the critical_count of this ListAlarmStatisticsResponse.
 
         紧急告警记录列表总数
 
@@ -94,7 +94,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @property
     def major_count(self):
-        """Gets the major_count of this ListAlarmStatisticsResponse.
+        r"""Gets the major_count of this ListAlarmStatisticsResponse.
 
         重要告警记录列表总数
 
@@ -105,7 +105,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @major_count.setter
     def major_count(self, major_count):
-        """Sets the major_count of this ListAlarmStatisticsResponse.
+        r"""Sets the major_count of this ListAlarmStatisticsResponse.
 
         重要告警记录列表总数
 
@@ -116,7 +116,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @property
     def minor_count(self):
-        """Gets the minor_count of this ListAlarmStatisticsResponse.
+        r"""Gets the minor_count of this ListAlarmStatisticsResponse.
 
         次要告警记录列表总数
 
@@ -127,7 +127,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @minor_count.setter
     def minor_count(self, minor_count):
-        """Sets the minor_count of this ListAlarmStatisticsResponse.
+        r"""Sets the minor_count of this ListAlarmStatisticsResponse.
 
         次要告警记录列表总数
 
@@ -138,7 +138,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @property
     def info_count(self):
-        """Gets the info_count of this ListAlarmStatisticsResponse.
+        r"""Gets the info_count of this ListAlarmStatisticsResponse.
 
         提示告警记录列表总数
 
@@ -149,7 +149,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @info_count.setter
     def info_count(self, info_count):
-        """Sets the info_count of this ListAlarmStatisticsResponse.
+        r"""Sets the info_count of this ListAlarmStatisticsResponse.
 
         提示告警记录列表总数
 
@@ -160,7 +160,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAlarmStatisticsResponse.
+        r"""Gets the total of this ListAlarmStatisticsResponse.
 
         告警记录列表总数
 
@@ -171,7 +171,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAlarmStatisticsResponse.
+        r"""Sets the total of this ListAlarmStatisticsResponse.
 
         告警记录列表总数
 

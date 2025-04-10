@@ -27,7 +27,7 @@ class DelAttendInfo:
     }
 
     def __init__(self, number=None, participant_id=None):
-        """DelAttendInfo
+        r"""DelAttendInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DelAttendInfo:
 
     @property
     def number(self):
-        """Gets the number of this DelAttendInfo.
+        r"""Gets the number of this DelAttendInfo.
 
         会场号码。
 
@@ -60,7 +60,7 @@ class DelAttendInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this DelAttendInfo.
+        r"""Sets the number of this DelAttendInfo.
 
         会场号码。
 
@@ -71,7 +71,7 @@ class DelAttendInfo:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this DelAttendInfo.
+        r"""Gets the participant_id of this DelAttendInfo.
 
         与会者标识，已入会的必须填写该字段。
 
@@ -82,7 +82,7 @@ class DelAttendInfo:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this DelAttendInfo.
+        r"""Sets the participant_id of this DelAttendInfo.
 
         与会者标识，已入会的必须填写该字段。
 

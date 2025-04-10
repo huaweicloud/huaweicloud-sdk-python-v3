@@ -27,7 +27,7 @@ class BatchCreateDeleteNatGatewayTagRequest:
     }
 
     def __init__(self, nat_gateway_id=None, body=None):
-        """BatchCreateDeleteNatGatewayTagRequest
+        r"""BatchCreateDeleteNatGatewayTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateDeleteNatGatewayTagRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this BatchCreateDeleteNatGatewayTagRequest.
+        r"""Gets the nat_gateway_id of this BatchCreateDeleteNatGatewayTagRequest.
 
         公网NAT网关ID。
 
@@ -60,7 +60,7 @@ class BatchCreateDeleteNatGatewayTagRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this BatchCreateDeleteNatGatewayTagRequest.
+        r"""Sets the nat_gateway_id of this BatchCreateDeleteNatGatewayTagRequest.
 
         公网NAT网关ID。
 
@@ -71,7 +71,7 @@ class BatchCreateDeleteNatGatewayTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateDeleteNatGatewayTagRequest.
+        r"""Gets the body of this BatchCreateDeleteNatGatewayTagRequest.
 
         :return: The body of this BatchCreateDeleteNatGatewayTagRequest.
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeleteNatTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateDeleteNatGatewayTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateDeleteNatGatewayTagRequest.
+        r"""Sets the body of this BatchCreateDeleteNatGatewayTagRequest.
 
         :param body: The body of this BatchCreateDeleteNatGatewayTagRequest.
         :type body: :class:`huaweicloudsdknat.v2.BatchCreateDeleteNatTagsRequestBody`

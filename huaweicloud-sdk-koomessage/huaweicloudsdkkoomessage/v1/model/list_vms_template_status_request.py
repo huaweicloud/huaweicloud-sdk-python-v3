@@ -39,7 +39,7 @@ class ListVmsTemplateStatusRequest:
     }
 
     def __init__(self, tpl_id=None, tpl_name=None, tpl_type=None, has_param=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ListVmsTemplateStatusRequest
+        r"""ListVmsTemplateStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListVmsTemplateStatusRequest.
+        r"""Gets the tpl_id of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板ID。
 
@@ -103,7 +103,7 @@ class ListVmsTemplateStatusRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListVmsTemplateStatusRequest.
+        r"""Sets the tpl_id of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板ID。
 
@@ -114,7 +114,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListVmsTemplateStatusRequest.
+        r"""Gets the tpl_name of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板名称。
 
@@ -125,7 +125,7 @@ class ListVmsTemplateStatusRequest:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListVmsTemplateStatusRequest.
+        r"""Sets the tpl_name of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板名称。
 
@@ -136,7 +136,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def tpl_type(self):
-        """Gets the tpl_type of this ListVmsTemplateStatusRequest.
+        r"""Gets the tpl_type of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板分类。 - public：公共模板 - private：个人模板
 
@@ -147,7 +147,7 @@ class ListVmsTemplateStatusRequest:
 
     @tpl_type.setter
     def tpl_type(self, tpl_type):
-        """Sets the tpl_type of this ListVmsTemplateStatusRequest.
+        r"""Sets the tpl_type of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板分类。 - public：公共模板 - private：个人模板
 
@@ -158,7 +158,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def has_param(self):
-        """Gets the has_param of this ListVmsTemplateStatusRequest.
+        r"""Gets the has_param of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板是否携带参数，不传查全部模板。
 
@@ -169,7 +169,7 @@ class ListVmsTemplateStatusRequest:
 
     @has_param.setter
     def has_param(self, has_param):
-        """Sets the has_param of this ListVmsTemplateStatusRequest.
+        r"""Sets the has_param of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板是否携带参数，不传查全部模板。
 
@@ -180,7 +180,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListVmsTemplateStatusRequest.
+        r"""Gets the begin_time of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板创建开始时间。 样例为：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -191,7 +191,7 @@ class ListVmsTemplateStatusRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListVmsTemplateStatusRequest.
+        r"""Sets the begin_time of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板创建开始时间。 样例为：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -202,7 +202,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListVmsTemplateStatusRequest.
+        r"""Gets the end_time of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板创建结束时间。 样例为：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -213,7 +213,7 @@ class ListVmsTemplateStatusRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListVmsTemplateStatusRequest.
+        r"""Sets the end_time of this ListVmsTemplateStatusRequest.
 
         智能信息基础版模板创建结束时间。 样例为：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -224,7 +224,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVmsTemplateStatusRequest.
+        r"""Gets the offset of this ListVmsTemplateStatusRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -235,7 +235,7 @@ class ListVmsTemplateStatusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVmsTemplateStatusRequest.
+        r"""Sets the offset of this ListVmsTemplateStatusRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -246,7 +246,7 @@ class ListVmsTemplateStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVmsTemplateStatusRequest.
+        r"""Gets the limit of this ListVmsTemplateStatusRequest.
 
         每页显示的条目数量。
 
@@ -257,7 +257,7 @@ class ListVmsTemplateStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVmsTemplateStatusRequest.
+        r"""Sets the limit of this ListVmsTemplateStatusRequest.
 
         每页显示的条目数量。
 

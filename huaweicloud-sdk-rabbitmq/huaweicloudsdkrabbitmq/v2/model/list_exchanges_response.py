@@ -30,7 +30,7 @@ class ListExchangesResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, items=None):
-        """ListExchangesResponse
+        r"""ListExchangesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListExchangesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListExchangesResponse.
+        r"""Gets the size of this ListExchangesResponse.
 
         当前显示数量
 
@@ -69,7 +69,7 @@ class ListExchangesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListExchangesResponse.
+        r"""Sets the size of this ListExchangesResponse.
 
         当前显示数量
 
@@ -80,7 +80,7 @@ class ListExchangesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListExchangesResponse.
+        r"""Gets the total of this ListExchangesResponse.
 
         查询结果总数
 
@@ -91,7 +91,7 @@ class ListExchangesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListExchangesResponse.
+        r"""Sets the total of this ListExchangesResponse.
 
         查询结果总数
 
@@ -102,7 +102,7 @@ class ListExchangesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListExchangesResponse.
+        r"""Gets the items of this ListExchangesResponse.
 
         Exchange信息列表
 
@@ -113,7 +113,7 @@ class ListExchangesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListExchangesResponse.
+        r"""Sets the items of this ListExchangesResponse.
 
         Exchange信息列表
 

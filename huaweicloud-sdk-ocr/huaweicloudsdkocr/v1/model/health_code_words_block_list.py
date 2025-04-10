@@ -29,7 +29,7 @@ class HealthCodeWordsBlockList:
     }
 
     def __init__(self, words=None, location=None, confidence=None):
-        """HealthCodeWordsBlockList
+        r"""HealthCodeWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HealthCodeWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this HealthCodeWordsBlockList.
+        r"""Gets the words of this HealthCodeWordsBlockList.
 
         文字块识别结果。 
 
@@ -68,7 +68,7 @@ class HealthCodeWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this HealthCodeWordsBlockList.
+        r"""Sets the words of this HealthCodeWordsBlockList.
 
         文字块识别结果。 
 
@@ -79,7 +79,7 @@ class HealthCodeWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this HealthCodeWordsBlockList.
+        r"""Gets the location of this HealthCodeWordsBlockList.
 
         识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标。采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -90,7 +90,7 @@ class HealthCodeWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this HealthCodeWordsBlockList.
+        r"""Sets the location of this HealthCodeWordsBlockList.
 
         识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标。采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -101,7 +101,7 @@ class HealthCodeWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this HealthCodeWordsBlockList.
+        r"""Gets the confidence of this HealthCodeWordsBlockList.
 
         各个字段的置信度 
 
@@ -112,7 +112,7 @@ class HealthCodeWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this HealthCodeWordsBlockList.
+        r"""Sets the confidence of this HealthCodeWordsBlockList.
 
         各个字段的置信度 
 

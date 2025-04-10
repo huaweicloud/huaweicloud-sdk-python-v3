@@ -29,7 +29,7 @@ class AreaDetail:
     }
 
     def __init__(self, area=None, summary=None, detail=None):
-        """AreaDetail
+        r"""AreaDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AreaDetail:
 
     @property
     def area(self):
-        """Gets the area of this AreaDetail.
+        r"""Gets the area of this AreaDetail.
 
         各个计费大区名称，例如CN
 
@@ -65,7 +65,7 @@ class AreaDetail:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this AreaDetail.
+        r"""Sets the area of this AreaDetail.
 
         各个计费大区名称，例如CN
 
@@ -76,7 +76,7 @@ class AreaDetail:
 
     @property
     def summary(self):
-        """Gets the summary of this AreaDetail.
+        r"""Gets the summary of this AreaDetail.
 
         时间戳及相应时间的指标数值
 
@@ -87,7 +87,7 @@ class AreaDetail:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this AreaDetail.
+        r"""Sets the summary of this AreaDetail.
 
         时间戳及相应时间的指标数值
 
@@ -98,7 +98,7 @@ class AreaDetail:
 
     @property
     def detail(self):
-        """Gets the detail of this AreaDetail.
+        r"""Gets the detail of this AreaDetail.
 
         各个大区下的具体省份、区域、国家的时间戳及相应时间的指标数值
 
@@ -109,7 +109,7 @@ class AreaDetail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this AreaDetail.
+        r"""Sets the detail of this AreaDetail.
 
         各个大区下的具体省份、区域、国家的时间戳及相应时间的指标数值
 

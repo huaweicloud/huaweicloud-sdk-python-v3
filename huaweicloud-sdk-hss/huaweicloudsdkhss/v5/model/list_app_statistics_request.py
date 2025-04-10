@@ -33,13 +33,13 @@ class ListAppStatisticsRequest:
     }
 
     def __init__(self, app_name=None, enterprise_project_id=None, limit=None, offset=None, category=None):
-        """ListAppStatisticsRequest
+        r"""ListAppStatisticsRequest
 
         The model defined in huaweicloud sdk
 
         :param app_name: 软件名称
         :type app_name: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示数量
         :type limit: int
@@ -71,7 +71,7 @@ class ListAppStatisticsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppStatisticsRequest.
+        r"""Gets the app_name of this ListAppStatisticsRequest.
 
         软件名称
 
@@ -82,7 +82,7 @@ class ListAppStatisticsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppStatisticsRequest.
+        r"""Sets the app_name of this ListAppStatisticsRequest.
 
         软件名称
 
@@ -93,9 +93,9 @@ class ListAppStatisticsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAppStatisticsRequest.
+        r"""Gets the enterprise_project_id of this ListAppStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAppStatisticsRequest.
         :rtype: str
@@ -104,9 +104,9 @@ class ListAppStatisticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAppStatisticsRequest.
+        r"""Sets the enterprise_project_id of this ListAppStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAppStatisticsRequest.
         :type enterprise_project_id: str
@@ -115,7 +115,7 @@ class ListAppStatisticsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppStatisticsRequest.
+        r"""Gets the limit of this ListAppStatisticsRequest.
 
         每页显示数量
 
@@ -126,7 +126,7 @@ class ListAppStatisticsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppStatisticsRequest.
+        r"""Sets the limit of this ListAppStatisticsRequest.
 
         每页显示数量
 
@@ -137,7 +137,7 @@ class ListAppStatisticsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppStatisticsRequest.
+        r"""Gets the offset of this ListAppStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -148,7 +148,7 @@ class ListAppStatisticsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppStatisticsRequest.
+        r"""Sets the offset of this ListAppStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -159,7 +159,7 @@ class ListAppStatisticsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListAppStatisticsRequest.
+        r"""Gets the category of this ListAppStatisticsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -170,7 +170,7 @@ class ListAppStatisticsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListAppStatisticsRequest.
+        r"""Sets the category of this ListAppStatisticsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 

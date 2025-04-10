@@ -27,7 +27,7 @@ class PolicyUser:
     }
 
     def __init__(self, user_id=None, attached_at=None):
-        """PolicyUser
+        r"""PolicyUser
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PolicyUser.
+        r"""Gets the user_id of this PolicyUser.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class PolicyUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PolicyUser.
+        r"""Sets the user_id of this PolicyUser.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class PolicyUser:
 
     @property
     def attached_at(self):
-        """Gets the attached_at of this PolicyUser.
+        r"""Gets the attached_at of this PolicyUser.
 
         身份策略的附加时间。
 
@@ -81,7 +81,7 @@ class PolicyUser:
 
     @attached_at.setter
     def attached_at(self, attached_at):
-        """Sets the attached_at of this PolicyUser.
+        r"""Sets the attached_at of this PolicyUser.
 
         身份策略的附加时间。
 

@@ -46,7 +46,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, project_id=None, playbook=None, dataclass=None, dataobject=None, status=None, trigger_type=None, start_time=None, end_time=None, x_request_id=None):
-        """ChangePlaybookInstanceResponse
+        r"""ChangePlaybookInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ChangePlaybookInstanceResponse.
+        r"""Gets the id of this ChangePlaybookInstanceResponse.
 
         Id value
 
@@ -125,7 +125,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChangePlaybookInstanceResponse.
+        r"""Sets the id of this ChangePlaybookInstanceResponse.
 
         Id value
 
@@ -136,7 +136,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ChangePlaybookInstanceResponse.
+        r"""Gets the name of this ChangePlaybookInstanceResponse.
 
         The name, display only
 
@@ -147,7 +147,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChangePlaybookInstanceResponse.
+        r"""Sets the name of this ChangePlaybookInstanceResponse.
 
         The name, display only
 
@@ -158,7 +158,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ChangePlaybookInstanceResponse.
+        r"""Gets the project_id of this ChangePlaybookInstanceResponse.
 
         Project id value
 
@@ -169,7 +169,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ChangePlaybookInstanceResponse.
+        r"""Sets the project_id of this ChangePlaybookInstanceResponse.
 
         Project id value
 
@@ -180,7 +180,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def playbook(self):
-        """Gets the playbook of this ChangePlaybookInstanceResponse.
+        r"""Gets the playbook of this ChangePlaybookInstanceResponse.
 
         :return: The playbook of this ChangePlaybookInstanceResponse.
         :rtype: :class:`huaweicloudsdksa.v2.PlaybookInfoRef`
@@ -189,7 +189,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @playbook.setter
     def playbook(self, playbook):
-        """Sets the playbook of this ChangePlaybookInstanceResponse.
+        r"""Sets the playbook of this ChangePlaybookInstanceResponse.
 
         :param playbook: The playbook of this ChangePlaybookInstanceResponse.
         :type playbook: :class:`huaweicloudsdksa.v2.PlaybookInfoRef`
@@ -198,7 +198,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def dataclass(self):
-        """Gets the dataclass of this ChangePlaybookInstanceResponse.
+        r"""Gets the dataclass of this ChangePlaybookInstanceResponse.
 
         :return: The dataclass of this ChangePlaybookInstanceResponse.
         :rtype: :class:`huaweicloudsdksa.v2.DataclassInfoRef`
@@ -207,7 +207,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @dataclass.setter
     def dataclass(self, dataclass):
-        """Sets the dataclass of this ChangePlaybookInstanceResponse.
+        r"""Sets the dataclass of this ChangePlaybookInstanceResponse.
 
         :param dataclass: The dataclass of this ChangePlaybookInstanceResponse.
         :type dataclass: :class:`huaweicloudsdksa.v2.DataclassInfoRef`
@@ -216,7 +216,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def dataobject(self):
-        """Gets the dataobject of this ChangePlaybookInstanceResponse.
+        r"""Gets the dataobject of this ChangePlaybookInstanceResponse.
 
         :return: The dataobject of this ChangePlaybookInstanceResponse.
         :rtype: :class:`huaweicloudsdksa.v2.DataclassInfoRef`
@@ -225,7 +225,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @dataobject.setter
     def dataobject(self, dataobject):
-        """Sets the dataobject of this ChangePlaybookInstanceResponse.
+        r"""Sets the dataobject of this ChangePlaybookInstanceResponse.
 
         :param dataobject: The dataobject of this ChangePlaybookInstanceResponse.
         :type dataobject: :class:`huaweicloudsdksa.v2.DataclassInfoRef`
@@ -234,7 +234,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ChangePlaybookInstanceResponse.
+        r"""Gets the status of this ChangePlaybookInstanceResponse.
 
         Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
 
@@ -245,7 +245,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangePlaybookInstanceResponse.
+        r"""Sets the status of this ChangePlaybookInstanceResponse.
 
         Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
 
@@ -256,7 +256,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ChangePlaybookInstanceResponse.
+        r"""Gets the trigger_type of this ChangePlaybookInstanceResponse.
 
         trigger type. DEBUG, TIMER, EVENT, MANUAL
 
@@ -267,7 +267,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ChangePlaybookInstanceResponse.
+        r"""Sets the trigger_type of this ChangePlaybookInstanceResponse.
 
         trigger type. DEBUG, TIMER, EVENT, MANUAL
 
@@ -278,7 +278,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ChangePlaybookInstanceResponse.
+        r"""Gets the start_time of this ChangePlaybookInstanceResponse.
 
         Create time
 
@@ -289,7 +289,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ChangePlaybookInstanceResponse.
+        r"""Sets the start_time of this ChangePlaybookInstanceResponse.
 
         Create time
 
@@ -300,7 +300,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ChangePlaybookInstanceResponse.
+        r"""Gets the end_time of this ChangePlaybookInstanceResponse.
 
         Update time
 
@@ -311,7 +311,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ChangePlaybookInstanceResponse.
+        r"""Sets the end_time of this ChangePlaybookInstanceResponse.
 
         Update time
 
@@ -322,7 +322,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ChangePlaybookInstanceResponse.
+        r"""Gets the x_request_id of this ChangePlaybookInstanceResponse.
 
         :return: The x_request_id of this ChangePlaybookInstanceResponse.
         :rtype: str
@@ -331,7 +331,7 @@ class ChangePlaybookInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ChangePlaybookInstanceResponse.
+        r"""Sets the x_request_id of this ChangePlaybookInstanceResponse.
 
         :param x_request_id: The x_request_id of this ChangePlaybookInstanceResponse.
         :type x_request_id: str

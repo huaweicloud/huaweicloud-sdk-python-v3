@@ -33,7 +33,7 @@ class Topic:
     }
 
     def __init__(self, id=None, name=None, description=None, permission=None, is_private=None):
-        """Topic
+        r"""Topic
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Topic:
 
     @property
     def id(self):
-        """Gets the id of this Topic.
+        r"""Gets the id of this Topic.
 
         TOPIC的ID
 
@@ -82,7 +82,7 @@ class Topic:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Topic.
+        r"""Sets the id of this Topic.
 
         TOPIC的ID
 
@@ -93,7 +93,7 @@ class Topic:
 
     @property
     def name(self):
-        """Gets the name of this Topic.
+        r"""Gets the name of this Topic.
 
         TOPIC的名称
 
@@ -104,7 +104,7 @@ class Topic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Topic.
+        r"""Sets the name of this Topic.
 
         TOPIC的名称
 
@@ -115,7 +115,7 @@ class Topic:
 
     @property
     def description(self):
-        """Gets the description of this Topic.
+        r"""Gets the description of this Topic.
 
         TOPIC描述
 
@@ -126,7 +126,7 @@ class Topic:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Topic.
+        r"""Sets the description of this Topic.
 
         TOPIC描述
 
@@ -137,7 +137,7 @@ class Topic:
 
     @property
     def permission(self):
-        """Gets the permission of this Topic.
+        r"""Gets the permission of this Topic.
 
         TOPIC权限, 主题权限 0-发布 1-订阅
 
@@ -148,7 +148,7 @@ class Topic:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this Topic.
+        r"""Sets the permission of this Topic.
 
         TOPIC权限, 主题权限 0-发布 1-订阅
 
@@ -159,7 +159,7 @@ class Topic:
 
     @property
     def is_private(self):
-        """Gets the is_private of this Topic.
+        r"""Gets the is_private of this Topic.
 
         TOPIC类型 0-基础TOPIC 1-用户自定义TOPIC
 
@@ -170,7 +170,7 @@ class Topic:
 
     @is_private.setter
     def is_private(self, is_private):
-        """Sets the is_private of this Topic.
+        r"""Sets the is_private of this Topic.
 
         TOPIC类型 0-基础TOPIC 1-用户自定义TOPIC
 

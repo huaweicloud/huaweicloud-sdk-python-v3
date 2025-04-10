@@ -39,7 +39,7 @@ class VpcPeering:
     }
 
     def __init__(self, id=None, name=None, status=None, request_vpc_info=None, accept_vpc_info=None, created_at=None, updated_at=None, description=None):
-        """VpcPeering
+        r"""VpcPeering
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class VpcPeering:
 
     @property
     def id(self):
-        """Gets the id of this VpcPeering.
+        r"""Gets the id of this VpcPeering.
 
         对等连接ID
 
@@ -95,7 +95,7 @@ class VpcPeering:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpcPeering.
+        r"""Sets the id of this VpcPeering.
 
         对等连接ID
 
@@ -106,7 +106,7 @@ class VpcPeering:
 
     @property
     def name(self):
-        """Gets the name of this VpcPeering.
+        r"""Gets the name of this VpcPeering.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -117,7 +117,7 @@ class VpcPeering:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcPeering.
+        r"""Sets the name of this VpcPeering.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -128,7 +128,7 @@ class VpcPeering:
 
     @property
     def status(self):
-        """Gets the status of this VpcPeering.
+        r"""Gets the status of this VpcPeering.
 
         功能说明：对等连接状态 取值范围： - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
@@ -139,7 +139,7 @@ class VpcPeering:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VpcPeering.
+        r"""Sets the status of this VpcPeering.
 
         功能说明：对等连接状态 取值范围： - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
@@ -150,7 +150,7 @@ class VpcPeering:
 
     @property
     def request_vpc_info(self):
-        """Gets the request_vpc_info of this VpcPeering.
+        r"""Gets the request_vpc_info of this VpcPeering.
 
         :return: The request_vpc_info of this VpcPeering.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -159,7 +159,7 @@ class VpcPeering:
 
     @request_vpc_info.setter
     def request_vpc_info(self, request_vpc_info):
-        """Sets the request_vpc_info of this VpcPeering.
+        r"""Sets the request_vpc_info of this VpcPeering.
 
         :param request_vpc_info: The request_vpc_info of this VpcPeering.
         :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -168,7 +168,7 @@ class VpcPeering:
 
     @property
     def accept_vpc_info(self):
-        """Gets the accept_vpc_info of this VpcPeering.
+        r"""Gets the accept_vpc_info of this VpcPeering.
 
         :return: The accept_vpc_info of this VpcPeering.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -177,7 +177,7 @@ class VpcPeering:
 
     @accept_vpc_info.setter
     def accept_vpc_info(self, accept_vpc_info):
-        """Sets the accept_vpc_info of this VpcPeering.
+        r"""Sets the accept_vpc_info of this VpcPeering.
 
         :param accept_vpc_info: The accept_vpc_info of this VpcPeering.
         :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -186,7 +186,7 @@ class VpcPeering:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpcPeering.
+        r"""Gets the created_at of this VpcPeering.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -197,7 +197,7 @@ class VpcPeering:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpcPeering.
+        r"""Sets the created_at of this VpcPeering.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -208,7 +208,7 @@ class VpcPeering:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VpcPeering.
+        r"""Gets the updated_at of this VpcPeering.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -219,7 +219,7 @@ class VpcPeering:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VpcPeering.
+        r"""Sets the updated_at of this VpcPeering.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -230,7 +230,7 @@ class VpcPeering:
 
     @property
     def description(self):
-        """Gets the description of this VpcPeering.
+        r"""Gets the description of this VpcPeering.
 
         对等连接描述
 
@@ -241,7 +241,7 @@ class VpcPeering:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpcPeering.
+        r"""Sets the description of this VpcPeering.
 
         对等连接描述
 

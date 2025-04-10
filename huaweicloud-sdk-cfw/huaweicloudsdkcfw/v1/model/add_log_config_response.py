@@ -26,7 +26,7 @@ class AddLogConfigResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """AddLogConfigResponse
+        r"""AddLogConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddLogConfigResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this AddLogConfigResponse.
+        r"""Gets the data of this AddLogConfigResponse.
 
         添加日志配置返回值，为防火墙id
 
@@ -55,7 +55,7 @@ class AddLogConfigResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AddLogConfigResponse.
+        r"""Sets the data of this AddLogConfigResponse.
 
         添加日志配置返回值，为防火墙id
 

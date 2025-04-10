@@ -27,7 +27,7 @@ class DeleteQueuePropertyRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """DeleteQueuePropertyRequest
+        r"""DeleteQueuePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteQueuePropertyRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this DeleteQueuePropertyRequest.
+        r"""Gets the queue_name of this DeleteQueuePropertyRequest.
 
         队列名称
 
@@ -60,7 +60,7 @@ class DeleteQueuePropertyRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this DeleteQueuePropertyRequest.
+        r"""Sets the queue_name of this DeleteQueuePropertyRequest.
 
         队列名称
 
@@ -71,7 +71,7 @@ class DeleteQueuePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteQueuePropertyRequest.
+        r"""Gets the body of this DeleteQueuePropertyRequest.
 
         :return: The body of this DeleteQueuePropertyRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequestBody`
@@ -80,7 +80,7 @@ class DeleteQueuePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteQueuePropertyRequest.
+        r"""Sets the body of this DeleteQueuePropertyRequest.
 
         :param body: The body of this DeleteQueuePropertyRequest.
         :type body: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequestBody`

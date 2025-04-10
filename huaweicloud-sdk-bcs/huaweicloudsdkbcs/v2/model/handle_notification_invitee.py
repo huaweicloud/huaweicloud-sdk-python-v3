@@ -31,7 +31,7 @@ class HandleNotificationInvitee:
     }
 
     def __init__(self, invitee_bcs_id=None, invitee_bcs_name=None, invitee_project_id=None, invitee_user_id=None):
-        """HandleNotificationInvitee
+        r"""HandleNotificationInvitee
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class HandleNotificationInvitee:
 
     @property
     def invitee_bcs_id(self):
-        """Gets the invitee_bcs_id of this HandleNotificationInvitee.
+        r"""Gets the invitee_bcs_id of this HandleNotificationInvitee.
 
         被邀请方BCS服务实例ID
 
@@ -71,7 +71,7 @@ class HandleNotificationInvitee:
 
     @invitee_bcs_id.setter
     def invitee_bcs_id(self, invitee_bcs_id):
-        """Sets the invitee_bcs_id of this HandleNotificationInvitee.
+        r"""Sets the invitee_bcs_id of this HandleNotificationInvitee.
 
         被邀请方BCS服务实例ID
 
@@ -82,7 +82,7 @@ class HandleNotificationInvitee:
 
     @property
     def invitee_bcs_name(self):
-        """Gets the invitee_bcs_name of this HandleNotificationInvitee.
+        r"""Gets the invitee_bcs_name of this HandleNotificationInvitee.
 
         被邀请方BCS服务实例名称，同意联盟邀请时必填
 
@@ -93,7 +93,7 @@ class HandleNotificationInvitee:
 
     @invitee_bcs_name.setter
     def invitee_bcs_name(self, invitee_bcs_name):
-        """Sets the invitee_bcs_name of this HandleNotificationInvitee.
+        r"""Sets the invitee_bcs_name of this HandleNotificationInvitee.
 
         被邀请方BCS服务实例名称，同意联盟邀请时必填
 
@@ -104,7 +104,7 @@ class HandleNotificationInvitee:
 
     @property
     def invitee_project_id(self):
-        """Gets the invitee_project_id of this HandleNotificationInvitee.
+        r"""Gets the invitee_project_id of this HandleNotificationInvitee.
 
         被邀请方project id
 
@@ -115,7 +115,7 @@ class HandleNotificationInvitee:
 
     @invitee_project_id.setter
     def invitee_project_id(self, invitee_project_id):
-        """Sets the invitee_project_id of this HandleNotificationInvitee.
+        r"""Sets the invitee_project_id of this HandleNotificationInvitee.
 
         被邀请方project id
 
@@ -126,7 +126,7 @@ class HandleNotificationInvitee:
 
     @property
     def invitee_user_id(self):
-        """Gets the invitee_user_id of this HandleNotificationInvitee.
+        r"""Gets the invitee_user_id of this HandleNotificationInvitee.
 
         被邀请方租户id。控制台->被邀请方帐号->我的凭证->API凭证->帐号ID
 
@@ -137,7 +137,7 @@ class HandleNotificationInvitee:
 
     @invitee_user_id.setter
     def invitee_user_id(self, invitee_user_id):
-        """Sets the invitee_user_id of this HandleNotificationInvitee.
+        r"""Sets the invitee_user_id of this HandleNotificationInvitee.
 
         被邀请方租户id。控制台->被邀请方帐号->我的凭证->API凭证->帐号ID
 

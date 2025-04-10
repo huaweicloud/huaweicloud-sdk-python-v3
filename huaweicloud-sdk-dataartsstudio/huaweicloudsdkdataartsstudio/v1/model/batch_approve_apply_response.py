@@ -24,7 +24,7 @@ class BatchApproveApplyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchApproveApplyResponse
+        r"""BatchApproveApplyResponse
 
         The model defined in huaweicloud sdk
 

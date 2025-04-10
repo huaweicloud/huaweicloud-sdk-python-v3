@@ -27,7 +27,7 @@ class ShowMetricAssetsRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ShowMetricAssetsRequest
+        r"""ShowMetricAssetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowMetricAssetsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowMetricAssetsRequest.
+        r"""Gets the workspace of this ShowMetricAssetsRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ShowMetricAssetsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowMetricAssetsRequest.
+        r"""Sets the workspace of this ShowMetricAssetsRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ShowMetricAssetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowMetricAssetsRequest.
+        r"""Gets the body of this ShowMetricAssetsRequest.
 
         :return: The body of this ShowMetricAssetsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MetricOpenSearchParams`
@@ -80,7 +80,7 @@ class ShowMetricAssetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowMetricAssetsRequest.
+        r"""Sets the body of this ShowMetricAssetsRequest.
 
         :param body: The body of this ShowMetricAssetsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.MetricOpenSearchParams`

@@ -65,7 +65,7 @@ class RestScheduleConfDTO:
     }
 
     def __init__(self, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None, support_simultaneous_interpretation=None):
-        """RestScheduleConfDTO
+        r"""RestScheduleConfDTO
 
         The model defined in huaweicloud sdk
 
@@ -182,7 +182,7 @@ class RestScheduleConfDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RestScheduleConfDTO.
+        r"""Gets the start_time of this RestScheduleConfDTO.
 
         会议开始时间（UTC时间）。格式：yyyy-MM-dd HH:mm。 > * 创建预约会议时，如果没有指定开始时间或填空串，则表示会议马上开始 > * 时间是UTC时间，即0时区的时间
 
@@ -193,7 +193,7 @@ class RestScheduleConfDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RestScheduleConfDTO.
+        r"""Sets the start_time of this RestScheduleConfDTO.
 
         会议开始时间（UTC时间）。格式：yyyy-MM-dd HH:mm。 > * 创建预约会议时，如果没有指定开始时间或填空串，则表示会议马上开始 > * 时间是UTC时间，即0时区的时间
 
@@ -204,7 +204,7 @@ class RestScheduleConfDTO:
 
     @property
     def length(self):
-        """Gets the length of this RestScheduleConfDTO.
+        r"""Gets the length of this RestScheduleConfDTO.
 
         会议持续时长，单位分钟。默认30分钟。最大1440分钟（24小时），最小15分钟。
 
@@ -215,7 +215,7 @@ class RestScheduleConfDTO:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this RestScheduleConfDTO.
+        r"""Sets the length of this RestScheduleConfDTO.
 
         会议持续时长，单位分钟。默认30分钟。最大1440分钟（24小时），最小15分钟。
 
@@ -226,7 +226,7 @@ class RestScheduleConfDTO:
 
     @property
     def subject(self):
-        """Gets the subject of this RestScheduleConfDTO.
+        r"""Gets the subject of this RestScheduleConfDTO.
 
         会议主题。最多128个字符。
 
@@ -237,7 +237,7 @@ class RestScheduleConfDTO:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this RestScheduleConfDTO.
+        r"""Sets the subject of this RestScheduleConfDTO.
 
         会议主题。最多128个字符。
 
@@ -248,7 +248,7 @@ class RestScheduleConfDTO:
 
     @property
     def media_types(self):
-        """Gets the media_types of this RestScheduleConfDTO.
+        r"""Gets the media_types of this RestScheduleConfDTO.
 
         会议的媒体类型。 - Voice: 语音会议 - HDVideo: 视频会议
 
@@ -259,7 +259,7 @@ class RestScheduleConfDTO:
 
     @media_types.setter
     def media_types(self, media_types):
-        """Sets the media_types of this RestScheduleConfDTO.
+        r"""Sets the media_types of this RestScheduleConfDTO.
 
         会议的媒体类型。 - Voice: 语音会议 - HDVideo: 视频会议
 
@@ -270,7 +270,7 @@ class RestScheduleConfDTO:
 
     @property
     def groupuri(self):
-        """Gets the groupuri of this RestScheduleConfDTO.
+        r"""Gets the groupuri of this RestScheduleConfDTO.
 
         软终端创建即时会议时在当前字段带临时群组ID，由服务器在邀请其他与会者时在或者conference-info头域中携带。长度限制为31个字符。
 
@@ -281,7 +281,7 @@ class RestScheduleConfDTO:
 
     @groupuri.setter
     def groupuri(self, groupuri):
-        """Sets the groupuri of this RestScheduleConfDTO.
+        r"""Sets the groupuri of this RestScheduleConfDTO.
 
         软终端创建即时会议时在当前字段带临时群组ID，由服务器在邀请其他与会者时在或者conference-info头域中携带。长度限制为31个字符。
 
@@ -292,7 +292,7 @@ class RestScheduleConfDTO:
 
     @property
     def attendees(self):
-        """Gets the attendees of this RestScheduleConfDTO.
+        r"""Gets the attendees of this RestScheduleConfDTO.
 
         与会者列表。
 
@@ -303,7 +303,7 @@ class RestScheduleConfDTO:
 
     @attendees.setter
     def attendees(self, attendees):
-        """Sets the attendees of this RestScheduleConfDTO.
+        r"""Sets the attendees of this RestScheduleConfDTO.
 
         与会者列表。
 
@@ -314,7 +314,7 @@ class RestScheduleConfDTO:
 
     @property
     def is_auto_record(self):
-        """Gets the is_auto_record of this RestScheduleConfDTO.
+        r"""Gets the is_auto_record of this RestScheduleConfDTO.
 
         会议是否自动启动录制，在录播类型为:录播、直播+录播时有效。默认为不自动启动。 - 0: 不自动启动录制 - 1: 自动启动录制
 
@@ -325,7 +325,7 @@ class RestScheduleConfDTO:
 
     @is_auto_record.setter
     def is_auto_record(self, is_auto_record):
-        """Sets the is_auto_record of this RestScheduleConfDTO.
+        r"""Sets the is_auto_record of this RestScheduleConfDTO.
 
         会议是否自动启动录制，在录播类型为:录播、直播+录播时有效。默认为不自动启动。 - 0: 不自动启动录制 - 1: 自动启动录制
 
@@ -336,7 +336,7 @@ class RestScheduleConfDTO:
 
     @property
     def encrypt_mode(self):
-        """Gets the encrypt_mode of this RestScheduleConfDTO.
+        r"""Gets the encrypt_mode of this RestScheduleConfDTO.
 
         会议媒体加密模式。默认值由企业级的配置填充。 - 0: 自适应加密 - 1: 强制加密 - 2: 不加密
 
@@ -347,7 +347,7 @@ class RestScheduleConfDTO:
 
     @encrypt_mode.setter
     def encrypt_mode(self, encrypt_mode):
-        """Sets the encrypt_mode of this RestScheduleConfDTO.
+        r"""Sets the encrypt_mode of this RestScheduleConfDTO.
 
         会议媒体加密模式。默认值由企业级的配置填充。 - 0: 自适应加密 - 1: 强制加密 - 2: 不加密
 
@@ -358,7 +358,7 @@ class RestScheduleConfDTO:
 
     @property
     def language(self):
-        """Gets the language of this RestScheduleConfDTO.
+        r"""Gets the language of this RestScheduleConfDTO.
 
         会议通知短信或邮件的语言。默认中文。 - zh-CN: 简体中文 - en-US: 美国英文
 
@@ -369,7 +369,7 @@ class RestScheduleConfDTO:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this RestScheduleConfDTO.
+        r"""Sets the language of this RestScheduleConfDTO.
 
         会议通知短信或邮件的语言。默认中文。 - zh-CN: 简体中文 - en-US: 美国英文
 
@@ -380,7 +380,7 @@ class RestScheduleConfDTO:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this RestScheduleConfDTO.
+        r"""Gets the time_zone_id of this RestScheduleConfDTO.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 > * 非周期会议，如果会议通知是通过第三方系统发送，则这个字段不用填写。
 
@@ -391,7 +391,7 @@ class RestScheduleConfDTO:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this RestScheduleConfDTO.
+        r"""Sets the time_zone_id of this RestScheduleConfDTO.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 > * 非周期会议，如果会议通知是通过第三方系统发送，则这个字段不用填写。
 
@@ -402,7 +402,7 @@ class RestScheduleConfDTO:
 
     @property
     def record_type(self):
-        """Gets the record_type of this RestScheduleConfDTO.
+        r"""Gets the record_type of this RestScheduleConfDTO.
 
         录播类型。默认为禁用。 - 0: 禁用 - 1: 直播 - 2: 录播 - 3: 直播+录播
 
@@ -413,7 +413,7 @@ class RestScheduleConfDTO:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this RestScheduleConfDTO.
+        r"""Sets the record_type of this RestScheduleConfDTO.
 
         录播类型。默认为禁用。 - 0: 禁用 - 1: 直播 - 2: 录播 - 3: 直播+录播
 
@@ -424,7 +424,7 @@ class RestScheduleConfDTO:
 
     @property
     def live_address(self):
-        """Gets the live_address of this RestScheduleConfDTO.
+        r"""Gets the live_address of this RestScheduleConfDTO.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -435,7 +435,7 @@ class RestScheduleConfDTO:
 
     @live_address.setter
     def live_address(self, live_address):
-        """Sets the live_address of this RestScheduleConfDTO.
+        r"""Sets the live_address of this RestScheduleConfDTO.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -446,7 +446,7 @@ class RestScheduleConfDTO:
 
     @property
     def aux_address(self):
-        """Gets the aux_address of this RestScheduleConfDTO.
+        r"""Gets the aux_address of this RestScheduleConfDTO.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -457,7 +457,7 @@ class RestScheduleConfDTO:
 
     @aux_address.setter
     def aux_address(self, aux_address):
-        """Sets the aux_address of this RestScheduleConfDTO.
+        r"""Sets the aux_address of this RestScheduleConfDTO.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -468,7 +468,7 @@ class RestScheduleConfDTO:
 
     @property
     def record_aux_stream(self):
-        """Gets the record_aux_stream of this RestScheduleConfDTO.
+        r"""Gets the record_aux_stream of this RestScheduleConfDTO.
 
         是否录制辅流，在录播类型为：录播、录播+直播时有效。默认只录制视频主流，不录制辅流。  - 0: 不录制  - 1: 录制
 
@@ -479,7 +479,7 @@ class RestScheduleConfDTO:
 
     @record_aux_stream.setter
     def record_aux_stream(self, record_aux_stream):
-        """Sets the record_aux_stream of this RestScheduleConfDTO.
+        r"""Sets the record_aux_stream of this RestScheduleConfDTO.
 
         是否录制辅流，在录播类型为：录播、录播+直播时有效。默认只录制视频主流，不录制辅流。  - 0: 不录制  - 1: 录制
 
@@ -490,7 +490,7 @@ class RestScheduleConfDTO:
 
     @property
     def conf_config_info(self):
-        """Gets the conf_config_info of this RestScheduleConfDTO.
+        r"""Gets the conf_config_info of this RestScheduleConfDTO.
 
         :return: The conf_config_info of this RestScheduleConfDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
@@ -499,7 +499,7 @@ class RestScheduleConfDTO:
 
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
-        """Sets the conf_config_info of this RestScheduleConfDTO.
+        r"""Sets the conf_config_info of this RestScheduleConfDTO.
 
         :param conf_config_info: The conf_config_info of this RestScheduleConfDTO.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
@@ -508,7 +508,7 @@ class RestScheduleConfDTO:
 
     @property
     def record_auth_type(self):
-        """Gets the record_auth_type of this RestScheduleConfDTO.
+        r"""Gets the record_auth_type of this RestScheduleConfDTO.
 
         录播观看鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
 
@@ -519,7 +519,7 @@ class RestScheduleConfDTO:
 
     @record_auth_type.setter
     def record_auth_type(self, record_auth_type):
-        """Sets the record_auth_type of this RestScheduleConfDTO.
+        r"""Sets the record_auth_type of this RestScheduleConfDTO.
 
         录播观看鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
 
@@ -530,7 +530,7 @@ class RestScheduleConfDTO:
 
     @property
     def vmr_flag(self):
-        """Gets the vmr_flag of this RestScheduleConfDTO.
+        r"""Gets the vmr_flag of this RestScheduleConfDTO.
 
         是否使用云会议室或者个人会议ID召开预约会议。默认0。 - 0: 不使用云会议室或者个人会议ID - 1: 使用云会议室或者个人会议ID
 
@@ -541,7 +541,7 @@ class RestScheduleConfDTO:
 
     @vmr_flag.setter
     def vmr_flag(self, vmr_flag):
-        """Sets the vmr_flag of this RestScheduleConfDTO.
+        r"""Sets the vmr_flag of this RestScheduleConfDTO.
 
         是否使用云会议室或者个人会议ID召开预约会议。默认0。 - 0: 不使用云会议室或者个人会议ID - 1: 使用云会议室或者个人会议ID
 
@@ -552,7 +552,7 @@ class RestScheduleConfDTO:
 
     @property
     def cycle_params(self):
-        """Gets the cycle_params of this RestScheduleConfDTO.
+        r"""Gets the cycle_params of this RestScheduleConfDTO.
 
         :return: The cycle_params of this RestScheduleConfDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleParams`
@@ -561,7 +561,7 @@ class RestScheduleConfDTO:
 
     @cycle_params.setter
     def cycle_params(self, cycle_params):
-        """Sets the cycle_params of this RestScheduleConfDTO.
+        r"""Sets the cycle_params of this RestScheduleConfDTO.
 
         :param cycle_params: The cycle_params of this RestScheduleConfDTO.
         :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
@@ -570,7 +570,7 @@ class RestScheduleConfDTO:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this RestScheduleConfDTO.
+        r"""Gets the vmr_id of this RestScheduleConfDTO.
 
         绑定给当前创会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 > * vmrID取上述查询接口中返回的id，不是vmrId > * 创建个人会议ID的会议时，使用vmrMode=0的VMR；创建云会议室的会议时，使用vmrMode=1的VMR
 
@@ -581,7 +581,7 @@ class RestScheduleConfDTO:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this RestScheduleConfDTO.
+        r"""Sets the vmr_id of this RestScheduleConfDTO.
 
         绑定给当前创会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 > * vmrID取上述查询接口中返回的id，不是vmrId > * 创建个人会议ID的会议时，使用vmrMode=0的VMR；创建云会议室的会议时，使用vmrMode=1的VMR
 
@@ -592,7 +592,7 @@ class RestScheduleConfDTO:
 
     @property
     def concurrent_participants(self):
-        """Gets the concurrent_participants of this RestScheduleConfDTO.
+        r"""Gets the concurrent_participants of this RestScheduleConfDTO.
 
         会议最大与会人数。默认值0。 * 0：无限制 * 大于0：会议最大与会人数 
 
@@ -603,7 +603,7 @@ class RestScheduleConfDTO:
 
     @concurrent_participants.setter
     def concurrent_participants(self, concurrent_participants):
-        """Sets the concurrent_participants of this RestScheduleConfDTO.
+        r"""Sets the concurrent_participants of this RestScheduleConfDTO.
 
         会议最大与会人数。默认值0。 * 0：无限制 * 大于0：会议最大与会人数 
 
@@ -614,7 +614,7 @@ class RestScheduleConfDTO:
 
     @property
     def support_simultaneous_interpretation(self):
-        """Gets the support_simultaneous_interpretation of this RestScheduleConfDTO.
+        r"""Gets the support_simultaneous_interpretation of this RestScheduleConfDTO.
 
         会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
 
@@ -625,7 +625,7 @@ class RestScheduleConfDTO:
 
     @support_simultaneous_interpretation.setter
     def support_simultaneous_interpretation(self, support_simultaneous_interpretation):
-        """Sets the support_simultaneous_interpretation of this RestScheduleConfDTO.
+        r"""Sets the support_simultaneous_interpretation of this RestScheduleConfDTO.
 
         会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
 

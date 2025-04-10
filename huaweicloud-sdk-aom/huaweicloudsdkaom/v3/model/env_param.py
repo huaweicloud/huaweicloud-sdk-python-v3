@@ -37,7 +37,7 @@ class EnvParam:
     }
 
     def __init__(self, component_id=None, description=None, env_name=None, env_type=None, os_type=None, region=None, register_type=None):
-        """EnvParam
+        r"""EnvParam
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class EnvParam:
 
     @property
     def component_id(self):
-        """Gets the component_id of this EnvParam.
+        r"""Gets the component_id of this EnvParam.
 
         环境关联组件id；id长度不能超过36位，由大小写字母、数字组成。创建环境必传，修改环境时非必选
 
@@ -92,7 +92,7 @@ class EnvParam:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this EnvParam.
+        r"""Sets the component_id of this EnvParam.
 
         环境关联组件id；id长度不能超过36位，由大小写字母、数字组成。创建环境必传，修改环境时非必选
 
@@ -103,7 +103,7 @@ class EnvParam:
 
     @property
     def description(self):
-        """Gets the description of this EnvParam.
+        r"""Gets the description of this EnvParam.
 
         描述
 
@@ -114,7 +114,7 @@ class EnvParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvParam.
+        r"""Sets the description of this EnvParam.
 
         描述
 
@@ -125,7 +125,7 @@ class EnvParam:
 
     @property
     def env_name(self):
-        """Gets the env_name of this EnvParam.
+        r"""Gets the env_name of this EnvParam.
 
         环境名称
 
@@ -136,7 +136,7 @@ class EnvParam:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this EnvParam.
+        r"""Sets the env_name of this EnvParam.
 
         环境名称
 
@@ -147,7 +147,7 @@ class EnvParam:
 
     @property
     def env_type(self):
-        """Gets the env_type of this EnvParam.
+        r"""Gets the env_type of this EnvParam.
 
         环境类型，取值：DEV、TEST、PRE、ONLINE，不区分大小写
 
@@ -158,7 +158,7 @@ class EnvParam:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this EnvParam.
+        r"""Sets the env_type of this EnvParam.
 
         环境类型，取值：DEV、TEST、PRE、ONLINE，不区分大小写
 
@@ -169,7 +169,7 @@ class EnvParam:
 
     @property
     def os_type(self):
-        """Gets the os_type of this EnvParam.
+        r"""Gets the os_type of this EnvParam.
 
         OS类型，取值：LINUX、WINDOWS。创建环境必传，不可修改
 
@@ -180,7 +180,7 @@ class EnvParam:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this EnvParam.
+        r"""Sets the os_type of this EnvParam.
 
         OS类型，取值：LINUX、WINDOWS。创建环境必传，不可修改
 
@@ -191,7 +191,7 @@ class EnvParam:
 
     @property
     def region(self):
-        """Gets the region of this EnvParam.
+        r"""Gets the region of this EnvParam.
 
         环境关联region。创建环境必传，不可修改
 
@@ -202,7 +202,7 @@ class EnvParam:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this EnvParam.
+        r"""Sets the region of this EnvParam.
 
         环境关联region。创建环境必传，不可修改
 
@@ -213,7 +213,7 @@ class EnvParam:
 
     @property
     def register_type(self):
-        """Gets the register_type of this EnvParam.
+        r"""Gets the register_type of this EnvParam.
 
         注册类型，取值：API、SERVICE_DISCOVERY、CONSOLE，默认值：API
 
@@ -224,7 +224,7 @@ class EnvParam:
 
     @register_type.setter
     def register_type(self, register_type):
-        """Sets the register_type of this EnvParam.
+        r"""Sets the register_type of this EnvParam.
 
         注册类型，取值：API、SERVICE_DISCOVERY、CONSOLE，默认值：API
 

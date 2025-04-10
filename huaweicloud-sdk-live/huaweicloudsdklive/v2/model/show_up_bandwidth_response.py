@@ -28,7 +28,7 @@ class ShowUpBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ShowUpBandwidthResponse
+        r"""ShowUpBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowUpBandwidthResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ShowUpBandwidthResponse.
+        r"""Gets the data_list of this ShowUpBandwidthResponse.
 
         采样数据列表
 
@@ -62,7 +62,7 @@ class ShowUpBandwidthResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ShowUpBandwidthResponse.
+        r"""Sets the data_list of this ShowUpBandwidthResponse.
 
         采样数据列表
 
@@ -73,7 +73,7 @@ class ShowUpBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowUpBandwidthResponse.
+        r"""Gets the x_request_id of this ShowUpBandwidthResponse.
 
         :return: The x_request_id of this ShowUpBandwidthResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowUpBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowUpBandwidthResponse.
+        r"""Sets the x_request_id of this ShowUpBandwidthResponse.
 
         :param x_request_id: The x_request_id of this ShowUpBandwidthResponse.
         :type x_request_id: str

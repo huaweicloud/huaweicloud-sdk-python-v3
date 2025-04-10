@@ -29,7 +29,7 @@ class UpdatePluginRequest:
     }
 
     def __init__(self, instance_id=None, plugin_id=None, body=None):
-        """UpdatePluginRequest
+        r"""UpdatePluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePluginRequest.
+        r"""Gets the instance_id of this UpdatePluginRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -66,7 +66,7 @@ class UpdatePluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePluginRequest.
+        r"""Sets the instance_id of this UpdatePluginRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -77,7 +77,7 @@ class UpdatePluginRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this UpdatePluginRequest.
+        r"""Gets the plugin_id of this UpdatePluginRequest.
 
         插件编号
 
@@ -88,7 +88,7 @@ class UpdatePluginRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this UpdatePluginRequest.
+        r"""Sets the plugin_id of this UpdatePluginRequest.
 
         插件编号
 
@@ -99,7 +99,7 @@ class UpdatePluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePluginRequest.
+        r"""Gets the body of this UpdatePluginRequest.
 
         :return: The body of this UpdatePluginRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.PluginCreate`
@@ -108,7 +108,7 @@ class UpdatePluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePluginRequest.
+        r"""Sets the body of this UpdatePluginRequest.
 
         :param body: The body of this UpdatePluginRequest.
         :type body: :class:`huaweicloudsdkapig.v2.PluginCreate`

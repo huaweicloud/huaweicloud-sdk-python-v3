@@ -30,7 +30,7 @@ class ListClustersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, clusters=None):
-        """ListClustersResponse
+        r"""ListClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClustersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListClustersResponse.
+        r"""Gets the count of this ListClustersResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class ListClustersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListClustersResponse.
+        r"""Sets the count of this ListClustersResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class ListClustersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListClustersResponse.
+        r"""Gets the page_info of this ListClustersResponse.
 
         :return: The page_info of this ListClustersResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v3.PageInfoDTO`
@@ -89,7 +89,7 @@ class ListClustersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListClustersResponse.
+        r"""Sets the page_info of this ListClustersResponse.
 
         :param page_info: The page_info of this ListClustersResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v3.PageInfoDTO`
@@ -98,7 +98,7 @@ class ListClustersResponse(SdkResponse):
 
     @property
     def clusters(self):
-        """Gets the clusters of this ListClustersResponse.
+        r"""Gets the clusters of this ListClustersResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class ListClustersResponse(SdkResponse):
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this ListClustersResponse.
+        r"""Sets the clusters of this ListClustersResponse.
 
         每页记录数
 

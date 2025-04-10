@@ -24,7 +24,7 @@ class ConfirmMessageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ConfirmMessageResponse
+        r"""ConfirmMessageResponse
 
         The model defined in huaweicloud sdk
 

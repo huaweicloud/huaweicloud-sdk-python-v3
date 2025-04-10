@@ -26,7 +26,7 @@ class BatchStopMigrationTasksResponse(SdkResponse):
     }
 
     def __init__(self, migration_tasks=None):
-        """BatchStopMigrationTasksResponse
+        r"""BatchStopMigrationTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStopMigrationTasksResponse(SdkResponse):
 
     @property
     def migration_tasks(self):
-        """Gets the migration_tasks of this BatchStopMigrationTasksResponse.
+        r"""Gets the migration_tasks of this BatchStopMigrationTasksResponse.
 
         数据迁移任务列表。
 
@@ -55,7 +55,7 @@ class BatchStopMigrationTasksResponse(SdkResponse):
 
     @migration_tasks.setter
     def migration_tasks(self, migration_tasks):
-        """Sets the migration_tasks of this BatchStopMigrationTasksResponse.
+        r"""Sets the migration_tasks of this BatchStopMigrationTasksResponse.
 
         数据迁移任务列表。
 

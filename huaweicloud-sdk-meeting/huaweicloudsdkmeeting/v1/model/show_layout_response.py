@@ -30,7 +30,7 @@ class ShowLayoutResponse(SdkResponse):
     }
 
     def __init__(self, return_code=None, return_desc=None, pic_layouts=None):
-        """ShowLayoutResponse
+        r"""ShowLayoutResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowLayoutResponse(SdkResponse):
 
     @property
     def return_code(self):
-        """Gets the return_code of this ShowLayoutResponse.
+        r"""Gets the return_code of this ShowLayoutResponse.
 
         结果码。 * 0：成功 * 非0：失败 
 
@@ -69,7 +69,7 @@ class ShowLayoutResponse(SdkResponse):
 
     @return_code.setter
     def return_code(self, return_code):
-        """Sets the return_code of this ShowLayoutResponse.
+        r"""Sets the return_code of this ShowLayoutResponse.
 
         结果码。 * 0：成功 * 非0：失败 
 
@@ -80,7 +80,7 @@ class ShowLayoutResponse(SdkResponse):
 
     @property
     def return_desc(self):
-        """Gets the return_desc of this ShowLayoutResponse.
+        r"""Gets the return_desc of this ShowLayoutResponse.
 
         结果描述。 * Success：成功 * 其他：失败原因 
 
@@ -91,7 +91,7 @@ class ShowLayoutResponse(SdkResponse):
 
     @return_desc.setter
     def return_desc(self, return_desc):
-        """Sets the return_desc of this ShowLayoutResponse.
+        r"""Sets the return_desc of this ShowLayoutResponse.
 
         结果描述。 * Success：成功 * 其他：失败原因 
 
@@ -102,7 +102,7 @@ class ShowLayoutResponse(SdkResponse):
 
     @property
     def pic_layouts(self):
-        """Gets the pic_layouts of this ShowLayoutResponse.
+        r"""Gets the pic_layouts of this ShowLayoutResponse.
 
         多画面布局。
 
@@ -113,7 +113,7 @@ class ShowLayoutResponse(SdkResponse):
 
     @pic_layouts.setter
     def pic_layouts(self, pic_layouts):
-        """Sets the pic_layouts of this ShowLayoutResponse.
+        r"""Sets the pic_layouts of this ShowLayoutResponse.
 
         多画面布局。
 

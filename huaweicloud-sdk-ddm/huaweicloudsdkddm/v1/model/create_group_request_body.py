@@ -31,7 +31,7 @@ class CreateGroupRequestBody:
     }
 
     def __init__(self, name=None, type=None, flavor_id=None, nodes=None):
-        """CreateGroupRequestBody
+        r"""CreateGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateGroupRequestBody.
+        r"""Gets the name of this CreateGroupRequestBody.
 
         组名称
 
@@ -71,7 +71,7 @@ class CreateGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGroupRequestBody.
+        r"""Sets the name of this CreateGroupRequestBody.
 
         组名称
 
@@ -82,7 +82,7 @@ class CreateGroupRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateGroupRequestBody.
+        r"""Gets the type of this CreateGroupRequestBody.
 
         组类型，type：rw读写、r只读
 
@@ -93,7 +93,7 @@ class CreateGroupRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateGroupRequestBody.
+        r"""Sets the type of this CreateGroupRequestBody.
 
         组类型，type：rw读写、r只读
 
@@ -104,7 +104,7 @@ class CreateGroupRequestBody:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateGroupRequestBody.
+        r"""Gets the flavor_id of this CreateGroupRequestBody.
 
         节点规格ID。
 
@@ -115,7 +115,7 @@ class CreateGroupRequestBody:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateGroupRequestBody.
+        r"""Sets the flavor_id of this CreateGroupRequestBody.
 
         节点规格ID。
 
@@ -126,7 +126,7 @@ class CreateGroupRequestBody:
 
     @property
     def nodes(self):
-        """Gets the nodes of this CreateGroupRequestBody.
+        r"""Gets the nodes of this CreateGroupRequestBody.
 
         节点信息列表
 
@@ -137,7 +137,7 @@ class CreateGroupRequestBody:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this CreateGroupRequestBody.
+        r"""Sets the nodes of this CreateGroupRequestBody.
 
         节点信息列表
 

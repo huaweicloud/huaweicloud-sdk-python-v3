@@ -27,7 +27,7 @@ class ShowConfigHistoryDetailRequest:
     }
 
     def __init__(self, instance_id=None, history_id=None):
-        """ShowConfigHistoryDetailRequest
+        r"""ShowConfigHistoryDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowConfigHistoryDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowConfigHistoryDetailRequest.
+        r"""Gets the instance_id of this ShowConfigHistoryDetailRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowConfigHistoryDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowConfigHistoryDetailRequest.
+        r"""Sets the instance_id of this ShowConfigHistoryDetailRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowConfigHistoryDetailRequest:
 
     @property
     def history_id(self):
-        """Gets the history_id of this ShowConfigHistoryDetailRequest.
+        r"""Gets the history_id of this ShowConfigHistoryDetailRequest.
 
         历史实例ID
 
@@ -81,7 +81,7 @@ class ShowConfigHistoryDetailRequest:
 
     @history_id.setter
     def history_id(self, history_id):
-        """Sets the history_id of this ShowConfigHistoryDetailRequest.
+        r"""Sets the history_id of this ShowConfigHistoryDetailRequest.
 
         历史实例ID
 

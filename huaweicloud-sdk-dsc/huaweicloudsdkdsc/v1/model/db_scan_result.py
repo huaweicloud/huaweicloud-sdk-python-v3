@@ -27,7 +27,7 @@ class DbScanResult:
     }
 
     def __init__(self, total=None, db_scan_results=None):
-        """DbScanResult
+        r"""DbScanResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DbScanResult:
 
     @property
     def total(self):
-        """Gets the total of this DbScanResult.
+        r"""Gets the total of this DbScanResult.
 
         扫描结果总数
 
@@ -61,7 +61,7 @@ class DbScanResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DbScanResult.
+        r"""Sets the total of this DbScanResult.
 
         扫描结果总数
 
@@ -72,7 +72,7 @@ class DbScanResult:
 
     @property
     def db_scan_results(self):
-        """Gets the db_scan_results of this DbScanResult.
+        r"""Gets the db_scan_results of this DbScanResult.
 
         数据库扫描结果列表
 
@@ -83,7 +83,7 @@ class DbScanResult:
 
     @db_scan_results.setter
     def db_scan_results(self, db_scan_results):
-        """Sets the db_scan_results of this DbScanResult.
+        r"""Sets the db_scan_results of this DbScanResult.
 
         数据库扫描结果列表
 

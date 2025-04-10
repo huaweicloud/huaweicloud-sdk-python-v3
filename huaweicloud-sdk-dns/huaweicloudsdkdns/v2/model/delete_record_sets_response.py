@@ -60,7 +60,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
-        """DeleteRecordSetsResponse
+        r"""DeleteRecordSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteRecordSetsResponse.
+        r"""Gets the id of this DeleteRecordSetsResponse.
 
         Record Set的ID。
 
@@ -174,7 +174,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteRecordSetsResponse.
+        r"""Sets the id of this DeleteRecordSetsResponse.
 
         Record Set的ID。
 
@@ -185,7 +185,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteRecordSetsResponse.
+        r"""Gets the name of this DeleteRecordSetsResponse.
 
         Record Set的名称。
 
@@ -196,7 +196,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteRecordSetsResponse.
+        r"""Sets the name of this DeleteRecordSetsResponse.
 
         Record Set的名称。
 
@@ -207,7 +207,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeleteRecordSetsResponse.
+        r"""Gets the description of this DeleteRecordSetsResponse.
 
         Record Set的描述信息。
 
@@ -218,7 +218,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeleteRecordSetsResponse.
+        r"""Sets the description of this DeleteRecordSetsResponse.
 
         Record Set的描述信息。
 
@@ -229,7 +229,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this DeleteRecordSetsResponse.
+        r"""Gets the zone_id of this DeleteRecordSetsResponse.
 
         托管该记录的zone_id。
 
@@ -240,7 +240,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this DeleteRecordSetsResponse.
+        r"""Sets the zone_id of this DeleteRecordSetsResponse.
 
         托管该记录的zone_id。
 
@@ -251,7 +251,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this DeleteRecordSetsResponse.
+        r"""Gets the zone_name of this DeleteRecordSetsResponse.
 
         托管该记录的zone_name。
 
@@ -262,7 +262,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this DeleteRecordSetsResponse.
+        r"""Sets the zone_name of this DeleteRecordSetsResponse.
 
         托管该记录的zone_name。
 
@@ -273,7 +273,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this DeleteRecordSetsResponse.
+        r"""Gets the type of this DeleteRecordSetsResponse.
 
         记录类型。
 
@@ -284,7 +284,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteRecordSetsResponse.
+        r"""Sets the type of this DeleteRecordSetsResponse.
 
         记录类型。
 
@@ -295,7 +295,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this DeleteRecordSetsResponse.
+        r"""Gets the ttl of this DeleteRecordSetsResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -306,7 +306,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this DeleteRecordSetsResponse.
+        r"""Sets the ttl of this DeleteRecordSetsResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -317,7 +317,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this DeleteRecordSetsResponse.
+        r"""Gets the records of this DeleteRecordSetsResponse.
 
         域名解析后的值。
 
@@ -328,7 +328,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this DeleteRecordSetsResponse.
+        r"""Sets the records of this DeleteRecordSetsResponse.
 
         域名解析后的值。
 
@@ -339,7 +339,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DeleteRecordSetsResponse.
+        r"""Gets the created_at of this DeleteRecordSetsResponse.
 
         创建时间。
 
@@ -350,7 +350,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DeleteRecordSetsResponse.
+        r"""Sets the created_at of this DeleteRecordSetsResponse.
 
         创建时间。
 
@@ -361,7 +361,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DeleteRecordSetsResponse.
+        r"""Gets the updated_at of this DeleteRecordSetsResponse.
 
         更新时间。
 
@@ -372,7 +372,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DeleteRecordSetsResponse.
+        r"""Sets the updated_at of this DeleteRecordSetsResponse.
 
         更新时间。
 
@@ -383,7 +383,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteRecordSetsResponse.
+        r"""Gets the status of this DeleteRecordSetsResponse.
 
         资源状态。
 
@@ -394,7 +394,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteRecordSetsResponse.
+        r"""Sets the status of this DeleteRecordSetsResponse.
 
         资源状态。
 
@@ -405,7 +405,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def default(self):
-        """Gets the default of this DeleteRecordSetsResponse.
+        r"""Gets the default of this DeleteRecordSetsResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -416,7 +416,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @default.setter
     def default(self, default):
-        """Sets the default of this DeleteRecordSetsResponse.
+        r"""Sets the default of this DeleteRecordSetsResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -427,7 +427,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteRecordSetsResponse.
+        r"""Gets the project_id of this DeleteRecordSetsResponse.
 
         该Record Set所属的项目ID。
 
@@ -438,7 +438,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteRecordSetsResponse.
+        r"""Sets the project_id of this DeleteRecordSetsResponse.
 
         该Record Set所属的项目ID。
 
@@ -449,7 +449,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this DeleteRecordSetsResponse.
+        r"""Gets the links of this DeleteRecordSetsResponse.
 
         :return: The links of this DeleteRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -458,7 +458,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this DeleteRecordSetsResponse.
+        r"""Sets the links of this DeleteRecordSetsResponse.
 
         :param links: The links of this DeleteRecordSetsResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -467,7 +467,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def line(self):
-        """Gets the line of this DeleteRecordSetsResponse.
+        r"""Gets the line of this DeleteRecordSetsResponse.
 
         解析线路ID。
 
@@ -478,7 +478,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @line.setter
     def line(self, line):
-        """Sets the line of this DeleteRecordSetsResponse.
+        r"""Sets the line of this DeleteRecordSetsResponse.
 
         解析线路ID。
 
@@ -489,7 +489,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def weight(self):
-        """Gets the weight of this DeleteRecordSetsResponse.
+        r"""Gets the weight of this DeleteRecordSetsResponse.
 
         解析记录的权重。
 
@@ -500,7 +500,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this DeleteRecordSetsResponse.
+        r"""Sets the weight of this DeleteRecordSetsResponse.
 
         解析记录的权重。
 
@@ -511,7 +511,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this DeleteRecordSetsResponse.
+        r"""Gets the health_check_id of this DeleteRecordSetsResponse.
 
         健康检查ID。
 
@@ -522,7 +522,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this DeleteRecordSetsResponse.
+        r"""Sets the health_check_id of this DeleteRecordSetsResponse.
 
         健康检查ID。
 
@@ -533,7 +533,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this DeleteRecordSetsResponse.
+        r"""Gets the alias_target of this DeleteRecordSetsResponse.
 
         :return: The alias_target of this DeleteRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -542,7 +542,7 @@ class DeleteRecordSetsResponse(SdkResponse):
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this DeleteRecordSetsResponse.
+        r"""Sets the alias_target of this DeleteRecordSetsResponse.
 
         :param alias_target: The alias_target of this DeleteRecordSetsResponse.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

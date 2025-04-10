@@ -31,7 +31,7 @@ class Source:
     }
 
     def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None):
-        """Source
+        r"""Source
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class Source:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Source.
+        r"""Gets the instance_id of this Source.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -74,7 +74,7 @@ class Source:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Source.
+        r"""Sets the instance_id of this Source.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -85,7 +85,7 @@ class Source:
 
     @property
     def type(self):
-        """Gets the type of this Source.
+        r"""Gets the type of this Source.
 
         表示恢复方式，枚举值： - “backup”，表示使用备份文件恢复，按照此方式恢复时，“type”字段为非必选，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，“type”字段必选，“restore_time”必选。
 
@@ -96,7 +96,7 @@ class Source:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Source.
+        r"""Sets the type of this Source.
 
         表示恢复方式，枚举值： - “backup”，表示使用备份文件恢复，按照此方式恢复时，“type”字段为非必选，“backup_id”必选。 - “timestamp”，表示按时间点恢复，按照此方式恢复时，“type”字段必选，“restore_time”必选。
 
@@ -107,7 +107,7 @@ class Source:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this Source.
+        r"""Gets the backup_id of this Source.
 
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
 
@@ -118,7 +118,7 @@ class Source:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this Source.
+        r"""Sets the backup_id of this Source.
 
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
 
@@ -129,7 +129,7 @@ class Source:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this Source.
+        r"""Gets the restore_time of this Source.
 
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
 
@@ -140,7 +140,7 @@ class Source:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this Source.
+        r"""Sets the restore_time of this Source.
 
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
 

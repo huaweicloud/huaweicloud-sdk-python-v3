@@ -25,7 +25,7 @@ class SyncLimitDataRequest:
     }
 
     def __init__(self, instance_id=None):
-        """SyncLimitDataRequest
+        r"""SyncLimitDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SyncLimitDataRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SyncLimitDataRequest.
+        r"""Gets the instance_id of this SyncLimitDataRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class SyncLimitDataRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SyncLimitDataRequest.
+        r"""Sets the instance_id of this SyncLimitDataRequest.
 
         实例ID。
 

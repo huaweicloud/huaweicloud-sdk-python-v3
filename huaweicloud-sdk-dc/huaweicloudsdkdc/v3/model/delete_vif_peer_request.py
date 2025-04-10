@@ -25,7 +25,7 @@ class DeleteVifPeerRequest:
     }
 
     def __init__(self, vif_peer_id=None):
-        """DeleteVifPeerRequest
+        r"""DeleteVifPeerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVifPeerRequest:
 
     @property
     def vif_peer_id(self):
-        """Gets the vif_peer_id of this DeleteVifPeerRequest.
+        r"""Gets the vif_peer_id of this DeleteVifPeerRequest.
 
         虚拟接口对等体ID
 
@@ -53,7 +53,7 @@ class DeleteVifPeerRequest:
 
     @vif_peer_id.setter
     def vif_peer_id(self, vif_peer_id):
-        """Sets the vif_peer_id of this DeleteVifPeerRequest.
+        r"""Sets the vif_peer_id of this DeleteVifPeerRequest.
 
         虚拟接口对等体ID
 

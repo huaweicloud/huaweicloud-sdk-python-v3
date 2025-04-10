@@ -35,7 +35,7 @@ class MappingSourceFieldVO:
     }
 
     def __init__(self, target_field_id=None, target_field_name=None, field_ids=None, transform_expression=None, field_names=None, changed=None):
-        """MappingSourceFieldVO
+        r"""MappingSourceFieldVO
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class MappingSourceFieldVO:
 
     @property
     def target_field_id(self):
-        """Gets the target_field_id of this MappingSourceFieldVO.
+        r"""Gets the target_field_id of this MappingSourceFieldVO.
 
         目标字段ID，当前表的某个字段，ID字符串。
 
@@ -88,7 +88,7 @@ class MappingSourceFieldVO:
 
     @target_field_id.setter
     def target_field_id(self, target_field_id):
-        """Sets the target_field_id of this MappingSourceFieldVO.
+        r"""Sets the target_field_id of this MappingSourceFieldVO.
 
         目标字段ID，当前表的某个字段，ID字符串。
 
@@ -99,7 +99,7 @@ class MappingSourceFieldVO:
 
     @property
     def target_field_name(self):
-        """Gets the target_field_name of this MappingSourceFieldVO.
+        r"""Gets the target_field_name of this MappingSourceFieldVO.
 
         目标字段编码。
 
@@ -110,7 +110,7 @@ class MappingSourceFieldVO:
 
     @target_field_name.setter
     def target_field_name(self, target_field_name):
-        """Sets the target_field_name of this MappingSourceFieldVO.
+        r"""Sets the target_field_name of this MappingSourceFieldVO.
 
         目标字段编码。
 
@@ -121,7 +121,7 @@ class MappingSourceFieldVO:
 
     @property
     def field_ids(self):
-        """Gets the field_ids of this MappingSourceFieldVO.
+        r"""Gets the field_ids of this MappingSourceFieldVO.
 
         来源字段ID，多个ID以逗号分隔。
 
@@ -132,7 +132,7 @@ class MappingSourceFieldVO:
 
     @field_ids.setter
     def field_ids(self, field_ids):
-        """Sets the field_ids of this MappingSourceFieldVO.
+        r"""Sets the field_ids of this MappingSourceFieldVO.
 
         来源字段ID，多个ID以逗号分隔。
 
@@ -143,7 +143,7 @@ class MappingSourceFieldVO:
 
     @property
     def transform_expression(self):
-        """Gets the transform_expression of this MappingSourceFieldVO.
+        r"""Gets the transform_expression of this MappingSourceFieldVO.
 
         转换表达式。
 
@@ -154,7 +154,7 @@ class MappingSourceFieldVO:
 
     @transform_expression.setter
     def transform_expression(self, transform_expression):
-        """Sets the transform_expression of this MappingSourceFieldVO.
+        r"""Sets the transform_expression of this MappingSourceFieldVO.
 
         转换表达式。
 
@@ -165,7 +165,7 @@ class MappingSourceFieldVO:
 
     @property
     def field_names(self):
-        """Gets the field_names of this MappingSourceFieldVO.
+        r"""Gets the field_names of this MappingSourceFieldVO.
 
         来源字段名称列表。
 
@@ -176,7 +176,7 @@ class MappingSourceFieldVO:
 
     @field_names.setter
     def field_names(self, field_names):
-        """Sets the field_names of this MappingSourceFieldVO.
+        r"""Sets the field_names of this MappingSourceFieldVO.
 
         来源字段名称列表。
 
@@ -187,7 +187,7 @@ class MappingSourceFieldVO:
 
     @property
     def changed(self):
-        """Gets the changed of this MappingSourceFieldVO.
+        r"""Gets the changed of this MappingSourceFieldVO.
 
         字段是否发生变化。
 
@@ -198,7 +198,7 @@ class MappingSourceFieldVO:
 
     @changed.setter
     def changed(self, changed):
-        """Sets the changed of this MappingSourceFieldVO.
+        r"""Sets the changed of this MappingSourceFieldVO.
 
         字段是否发生变化。
 

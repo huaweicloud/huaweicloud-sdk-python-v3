@@ -29,7 +29,7 @@ class MicroServiceInfoCSECreate:
     }
 
     def __init__(self, engine_id=None, service_id=None, version=None):
-        """MicroServiceInfoCSECreate
+        r"""MicroServiceInfoCSECreate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MicroServiceInfoCSECreate:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this MicroServiceInfoCSECreate.
+        r"""Gets the engine_id of this MicroServiceInfoCSECreate.
 
         微服务引擎编号
 
@@ -65,7 +65,7 @@ class MicroServiceInfoCSECreate:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this MicroServiceInfoCSECreate.
+        r"""Sets the engine_id of this MicroServiceInfoCSECreate.
 
         微服务引擎编号
 
@@ -76,7 +76,7 @@ class MicroServiceInfoCSECreate:
 
     @property
     def service_id(self):
-        """Gets the service_id of this MicroServiceInfoCSECreate.
+        r"""Gets the service_id of this MicroServiceInfoCSECreate.
 
         微服务编号
 
@@ -87,7 +87,7 @@ class MicroServiceInfoCSECreate:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this MicroServiceInfoCSECreate.
+        r"""Sets the service_id of this MicroServiceInfoCSECreate.
 
         微服务编号
 
@@ -98,7 +98,7 @@ class MicroServiceInfoCSECreate:
 
     @property
     def version(self):
-        """Gets the version of this MicroServiceInfoCSECreate.
+        r"""Gets the version of this MicroServiceInfoCSECreate.
 
         微服务版本
 
@@ -109,7 +109,7 @@ class MicroServiceInfoCSECreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MicroServiceInfoCSECreate.
+        r"""Sets the version of this MicroServiceInfoCSECreate.
 
         微服务版本
 

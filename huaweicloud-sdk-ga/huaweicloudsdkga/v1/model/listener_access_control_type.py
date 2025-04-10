@@ -27,7 +27,7 @@ class ListenerAccessControlType:
     }
 
     def __init__(self):
-        """ListenerAccessControlType
+        r"""ListenerAccessControlType
 
         The model defined in huaweicloud sdk
 

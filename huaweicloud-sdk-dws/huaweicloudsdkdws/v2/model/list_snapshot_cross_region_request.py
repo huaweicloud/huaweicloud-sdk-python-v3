@@ -27,7 +27,7 @@ class ListSnapshotCrossRegionRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListSnapshotCrossRegionRequest
+        r"""ListSnapshotCrossRegionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSnapshotCrossRegionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSnapshotCrossRegionRequest.
+        r"""Gets the offset of this ListSnapshotCrossRegionRequest.
 
         分页偏移，默认0
 
@@ -61,7 +61,7 @@ class ListSnapshotCrossRegionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSnapshotCrossRegionRequest.
+        r"""Sets the offset of this ListSnapshotCrossRegionRequest.
 
         分页偏移，默认0
 
@@ -72,7 +72,7 @@ class ListSnapshotCrossRegionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSnapshotCrossRegionRequest.
+        r"""Gets the limit of this ListSnapshotCrossRegionRequest.
 
         分页大小，默认10
 
@@ -83,7 +83,7 @@ class ListSnapshotCrossRegionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSnapshotCrossRegionRequest.
+        r"""Sets the limit of this ListSnapshotCrossRegionRequest.
 
         分页大小，默认10
 

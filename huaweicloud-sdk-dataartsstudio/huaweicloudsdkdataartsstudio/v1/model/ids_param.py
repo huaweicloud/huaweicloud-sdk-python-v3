@@ -27,7 +27,7 @@ class IdsParam:
     }
 
     def __init__(self, ids=None, del_types=None):
-        """IdsParam
+        r"""IdsParam
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IdsParam:
 
     @property
     def ids(self):
-        """Gets the ids of this IdsParam.
+        r"""Gets the ids of this IdsParam.
 
         ID列表，ID字符串。
 
@@ -60,7 +60,7 @@ class IdsParam:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this IdsParam.
+        r"""Sets the ids of this IdsParam.
 
         ID列表，ID字符串。
 
@@ -71,7 +71,7 @@ class IdsParam:
 
     @property
     def del_types(self):
-        """Gets the del_types of this IdsParam.
+        r"""Gets the del_types of this IdsParam.
 
         删除物理表。 枚举值：   - PHYSICAL_TABLE: 关系建模 
 
@@ -82,7 +82,7 @@ class IdsParam:
 
     @del_types.setter
     def del_types(self, del_types):
-        """Sets the del_types of this IdsParam.
+        r"""Sets the del_types of this IdsParam.
 
         删除物理表。 枚举值：   - PHYSICAL_TABLE: 关系建模 
 

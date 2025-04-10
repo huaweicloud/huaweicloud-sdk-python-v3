@@ -26,7 +26,7 @@ class ShowDomainStatsResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ShowDomainStatsResponse
+        r"""ShowDomainStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainStatsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowDomainStatsResponse.
+        r"""Gets the result of this ShowDomainStatsResponse.
 
         按指定的分组方式组织的数据
 
@@ -55,7 +55,7 @@ class ShowDomainStatsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowDomainStatsResponse.
+        r"""Sets the result of this ShowDomainStatsResponse.
 
         按指定的分组方式组织的数据
 

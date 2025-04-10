@@ -27,7 +27,7 @@ class DeployFactoryPackagesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """DeployFactoryPackagesRequest
+        r"""DeployFactoryPackagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeployFactoryPackagesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeployFactoryPackagesRequest.
+        r"""Gets the workspace of this DeployFactoryPackagesRequest.
 
         工作空间ID
 
@@ -61,7 +61,7 @@ class DeployFactoryPackagesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeployFactoryPackagesRequest.
+        r"""Sets the workspace of this DeployFactoryPackagesRequest.
 
         工作空间ID
 
@@ -72,7 +72,7 @@ class DeployFactoryPackagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeployFactoryPackagesRequest.
+        r"""Gets the body of this DeployFactoryPackagesRequest.
 
         :return: The body of this DeployFactoryPackagesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeployFactoryPackagesRequestBody`
@@ -81,7 +81,7 @@ class DeployFactoryPackagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeployFactoryPackagesRequest.
+        r"""Sets the body of this DeployFactoryPackagesRequest.
 
         :param body: The body of this DeployFactoryPackagesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DeployFactoryPackagesRequestBody`

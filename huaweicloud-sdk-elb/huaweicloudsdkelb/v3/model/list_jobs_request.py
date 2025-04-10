@@ -35,7 +35,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, job_id=None, job_type=None, status=None, error_code=None, resource_id=None, begin_time=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobsRequest.
+        r"""Gets the job_id of this ListJobsRequest.
 
         参数解释：任务ID。
 
@@ -89,7 +89,7 @@ class ListJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobsRequest.
+        r"""Sets the job_id of this ListJobsRequest.
 
         参数解释：任务ID。
 
@@ -100,7 +100,7 @@ class ListJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListJobsRequest.
+        r"""Gets the job_type of this ListJobsRequest.
 
         参数解释：任务类型。
 
@@ -111,7 +111,7 @@ class ListJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListJobsRequest.
+        r"""Sets the job_type of this ListJobsRequest.
 
         参数解释：任务类型。
 
@@ -122,7 +122,7 @@ class ListJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobsRequest.
+        r"""Gets the status of this ListJobsRequest.
 
         参数解释：任务状态。  取值范围：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL
 
@@ -133,7 +133,7 @@ class ListJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobsRequest.
+        r"""Sets the status of this ListJobsRequest.
 
         参数解释：任务状态。  取值范围：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL
 
@@ -144,7 +144,7 @@ class ListJobsRequest:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListJobsRequest.
+        r"""Gets the error_code of this ListJobsRequest.
 
         参数解释： 任务的错误码。
 
@@ -155,7 +155,7 @@ class ListJobsRequest:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListJobsRequest.
+        r"""Sets the error_code of this ListJobsRequest.
 
         参数解释： 任务的错误码。
 
@@ -166,7 +166,7 @@ class ListJobsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListJobsRequest.
+        r"""Gets the resource_id of this ListJobsRequest.
 
         参数解释：资源ID。
 
@@ -177,7 +177,7 @@ class ListJobsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListJobsRequest.
+        r"""Sets the resource_id of this ListJobsRequest.
 
         参数解释：资源ID。
 
@@ -188,7 +188,7 @@ class ListJobsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListJobsRequest.
+        r"""Gets the begin_time of this ListJobsRequest.
 
         参数解释：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd'T'HH:mm:ss
 
@@ -199,7 +199,7 @@ class ListJobsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListJobsRequest.
+        r"""Sets the begin_time of this ListJobsRequest.
 
         参数解释：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd'T'HH:mm:ss
 

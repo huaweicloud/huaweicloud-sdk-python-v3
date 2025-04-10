@@ -29,7 +29,7 @@ class SetBucketNotificationRequestBody:
     }
 
     def __init__(self, topic_configuration=None, function_stage_configuration=None):
-        """SetBucketNotificationRequestBody
+        r"""SetBucketNotificationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class SetBucketNotificationRequestBody:
 
     @property
     def topic_configuration(self):
-        """Gets the topic_configuration of this SetBucketNotificationRequestBody.
+        r"""Gets the topic_configuration of this SetBucketNotificationRequestBody.
 
         :return: The topic_configuration of this SetBucketNotificationRequestBody.
         :rtype: list[:class:`huaweicloudsdkobs.v1.TopicConfiguration`]
@@ -61,7 +61,7 @@ class SetBucketNotificationRequestBody:
 
     @topic_configuration.setter
     def topic_configuration(self, topic_configuration):
-        """Sets the topic_configuration of this SetBucketNotificationRequestBody.
+        r"""Sets the topic_configuration of this SetBucketNotificationRequestBody.
 
         :param topic_configuration: The topic_configuration of this SetBucketNotificationRequestBody.
         :type topic_configuration: list[:class:`huaweicloudsdkobs.v1.TopicConfiguration`]
@@ -70,7 +70,7 @@ class SetBucketNotificationRequestBody:
 
     @property
     def function_stage_configuration(self):
-        """Gets the function_stage_configuration of this SetBucketNotificationRequestBody.
+        r"""Gets the function_stage_configuration of this SetBucketNotificationRequestBody.
 
         :return: The function_stage_configuration of this SetBucketNotificationRequestBody.
         :rtype: list[:class:`huaweicloudsdkobs.v1.FunctionStageConfiguration`]
@@ -79,7 +79,7 @@ class SetBucketNotificationRequestBody:
 
     @function_stage_configuration.setter
     def function_stage_configuration(self, function_stage_configuration):
-        """Sets the function_stage_configuration of this SetBucketNotificationRequestBody.
+        r"""Sets the function_stage_configuration of this SetBucketNotificationRequestBody.
 
         :param function_stage_configuration: The function_stage_configuration of this SetBucketNotificationRequestBody.
         :type function_stage_configuration: list[:class:`huaweicloudsdkobs.v1.FunctionStageConfiguration`]

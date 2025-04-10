@@ -26,7 +26,7 @@ class CopyCheckpointResponse(SdkResponse):
     }
 
     def __init__(self, replication=None):
-        """CopyCheckpointResponse
+        r"""CopyCheckpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyCheckpointResponse(SdkResponse):
 
     @property
     def replication(self):
-        """Gets the replication of this CopyCheckpointResponse.
+        r"""Gets the replication of this CopyCheckpointResponse.
 
         :return: The replication of this CopyCheckpointResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespBody`
@@ -53,7 +53,7 @@ class CopyCheckpointResponse(SdkResponse):
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this CopyCheckpointResponse.
+        r"""Sets the replication of this CopyCheckpointResponse.
 
         :param replication: The replication of this CopyCheckpointResponse.
         :type replication: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespBody`

@@ -25,7 +25,7 @@ class ShowWhitelistRequest:
     }
 
     def __init__(self, whitelist_id=None):
-        """ShowWhitelistRequest
+        r"""ShowWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowWhitelistRequest:
 
     @property
     def whitelist_id(self):
-        """Gets the whitelist_id of this ShowWhitelistRequest.
+        r"""Gets the whitelist_id of this ShowWhitelistRequest.
 
         白名单的id
 
@@ -53,7 +53,7 @@ class ShowWhitelistRequest:
 
     @whitelist_id.setter
     def whitelist_id(self, whitelist_id):
-        """Sets the whitelist_id of this ShowWhitelistRequest.
+        r"""Sets the whitelist_id of this ShowWhitelistRequest.
 
         白名单的id
 

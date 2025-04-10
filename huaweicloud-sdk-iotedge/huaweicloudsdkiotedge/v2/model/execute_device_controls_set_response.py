@@ -28,7 +28,7 @@ class ExecuteDeviceControlsSetResponse(SdkResponse):
     }
 
     def __init__(self, result_code=None, result_desc=None):
-        """ExecuteDeviceControlsSetResponse
+        r"""ExecuteDeviceControlsSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExecuteDeviceControlsSetResponse(SdkResponse):
 
     @property
     def result_code(self):
-        """Gets the result_code of this ExecuteDeviceControlsSetResponse.
+        r"""Gets the result_code of this ExecuteDeviceControlsSetResponse.
 
         属性设置的响应码，具体为实际设备返回的响应码
 
@@ -62,7 +62,7 @@ class ExecuteDeviceControlsSetResponse(SdkResponse):
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ExecuteDeviceControlsSetResponse.
+        r"""Sets the result_code of this ExecuteDeviceControlsSetResponse.
 
         属性设置的响应码，具体为实际设备返回的响应码
 
@@ -73,7 +73,7 @@ class ExecuteDeviceControlsSetResponse(SdkResponse):
 
     @property
     def result_desc(self):
-        """Gets the result_desc of this ExecuteDeviceControlsSetResponse.
+        r"""Gets the result_desc of this ExecuteDeviceControlsSetResponse.
 
         属性设置的描述，具体为实际设备返回的描述
 
@@ -84,7 +84,7 @@ class ExecuteDeviceControlsSetResponse(SdkResponse):
 
     @result_desc.setter
     def result_desc(self, result_desc):
-        """Sets the result_desc of this ExecuteDeviceControlsSetResponse.
+        r"""Sets the result_desc of this ExecuteDeviceControlsSetResponse.
 
         属性设置的描述，具体为实际设备返回的描述
 

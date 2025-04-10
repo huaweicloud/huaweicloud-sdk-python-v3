@@ -24,7 +24,7 @@ class IssueCertificateAuthorityCertificateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """IssueCertificateAuthorityCertificateResponse
+        r"""IssueCertificateAuthorityCertificateResponse
 
         The model defined in huaweicloud sdk
 

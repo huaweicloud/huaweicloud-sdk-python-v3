@@ -24,7 +24,7 @@ class CreateMbTasksReportResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateMbTasksReportResponse
+        r"""CreateMbTasksReportResponse
 
         The model defined in huaweicloud sdk
 

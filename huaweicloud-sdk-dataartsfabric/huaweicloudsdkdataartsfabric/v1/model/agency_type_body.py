@@ -25,7 +25,7 @@ class AgencyTypeBody:
     }
 
     def __init__(self, policy_types=None):
-        """AgencyTypeBody
+        r"""AgencyTypeBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AgencyTypeBody:
 
     @property
     def policy_types(self):
-        """Gets the policy_types of this AgencyTypeBody.
+        r"""Gets the policy_types of this AgencyTypeBody.
 
         权限类型列表，使用Fabric的功能，可能需要授权一些权限策略，可以在policy_types中加入策略类型来授权权限。FABRIC_COMMON_POLICY：基础通用服务权限策略，是委托必需的权限策略；FABRIC_SMN_POLICY：消息通知功能相关权限策略，用来将系统通知消息转发到SMN；FABRIC_LAKEFORMATION_POLICY：LakeFormation功能相关权限策略；FABRIC_AOM_POLICY：AOM功能相关权限策略。
 
@@ -54,7 +54,7 @@ class AgencyTypeBody:
 
     @policy_types.setter
     def policy_types(self, policy_types):
-        """Sets the policy_types of this AgencyTypeBody.
+        r"""Sets the policy_types of this AgencyTypeBody.
 
         权限类型列表，使用Fabric的功能，可能需要授权一些权限策略，可以在policy_types中加入策略类型来授权权限。FABRIC_COMMON_POLICY：基础通用服务权限策略，是委托必需的权限策略；FABRIC_SMN_POLICY：消息通知功能相关权限策略，用来将系统通知消息转发到SMN；FABRIC_LAKEFORMATION_POLICY：LakeFormation功能相关权限策略；FABRIC_AOM_POLICY：AOM功能相关权限策略。
 

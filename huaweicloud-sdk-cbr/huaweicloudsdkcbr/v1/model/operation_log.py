@@ -53,7 +53,7 @@ class OperationLog:
     }
 
     def __init__(self, checkpoint_id=None, created_at=None, ended_at=None, error_info=None, extra_info=None, id=None, operation_type=None, policy_id=None, project_id=None, provider_id=None, started_at=None, status=None, updated_at=None, vault_id=None, vault_name=None):
-        """OperationLog
+        r"""OperationLog
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class OperationLog:
 
     @property
     def checkpoint_id(self):
-        """Gets the checkpoint_id of this OperationLog.
+        r"""Gets the checkpoint_id of this OperationLog.
 
         备份记录id
 
@@ -145,7 +145,7 @@ class OperationLog:
 
     @checkpoint_id.setter
     def checkpoint_id(self, checkpoint_id):
-        """Sets the checkpoint_id of this OperationLog.
+        r"""Sets the checkpoint_id of this OperationLog.
 
         备份记录id
 
@@ -156,7 +156,7 @@ class OperationLog:
 
     @property
     def created_at(self):
-        """Gets the created_at of this OperationLog.
+        r"""Gets the created_at of this OperationLog.
 
         创建时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -167,7 +167,7 @@ class OperationLog:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OperationLog.
+        r"""Sets the created_at of this OperationLog.
 
         创建时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -178,7 +178,7 @@ class OperationLog:
 
     @property
     def ended_at(self):
-        """Gets the ended_at of this OperationLog.
+        r"""Gets the ended_at of this OperationLog.
 
         任务结束时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -189,7 +189,7 @@ class OperationLog:
 
     @ended_at.setter
     def ended_at(self, ended_at):
-        """Sets the ended_at of this OperationLog.
+        r"""Sets the ended_at of this OperationLog.
 
         任务结束时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -200,7 +200,7 @@ class OperationLog:
 
     @property
     def error_info(self):
-        """Gets the error_info of this OperationLog.
+        r"""Gets the error_info of this OperationLog.
 
         :return: The error_info of this OperationLog.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
@@ -209,7 +209,7 @@ class OperationLog:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this OperationLog.
+        r"""Sets the error_info of this OperationLog.
 
         :param error_info: The error_info of this OperationLog.
         :type error_info: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
@@ -218,7 +218,7 @@ class OperationLog:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this OperationLog.
+        r"""Gets the extra_info of this OperationLog.
 
         :return: The extra_info of this OperationLog.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`
@@ -227,7 +227,7 @@ class OperationLog:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this OperationLog.
+        r"""Sets the extra_info of this OperationLog.
 
         :param extra_info: The extra_info of this OperationLog.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`
@@ -236,7 +236,7 @@ class OperationLog:
 
     @property
     def id(self):
-        """Gets the id of this OperationLog.
+        r"""Gets the id of this OperationLog.
 
         任务id
 
@@ -247,7 +247,7 @@ class OperationLog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OperationLog.
+        r"""Sets the id of this OperationLog.
 
         任务id
 
@@ -258,7 +258,7 @@ class OperationLog:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this OperationLog.
+        r"""Gets the operation_type of this OperationLog.
 
         任务类型
 
@@ -269,7 +269,7 @@ class OperationLog:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this OperationLog.
+        r"""Sets the operation_type of this OperationLog.
 
         任务类型
 
@@ -280,7 +280,7 @@ class OperationLog:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this OperationLog.
+        r"""Gets the policy_id of this OperationLog.
 
         策略ID
 
@@ -291,7 +291,7 @@ class OperationLog:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this OperationLog.
+        r"""Sets the policy_id of this OperationLog.
 
         策略ID
 
@@ -302,7 +302,7 @@ class OperationLog:
 
     @property
     def project_id(self):
-        """Gets the project_id of this OperationLog.
+        r"""Gets the project_id of this OperationLog.
 
         项目ID
 
@@ -313,7 +313,7 @@ class OperationLog:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this OperationLog.
+        r"""Sets the project_id of this OperationLog.
 
         项目ID
 
@@ -324,7 +324,7 @@ class OperationLog:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this OperationLog.
+        r"""Gets the provider_id of this OperationLog.
 
         备份提供商ID。用于区分备份对象。
 
@@ -335,7 +335,7 @@ class OperationLog:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this OperationLog.
+        r"""Sets the provider_id of this OperationLog.
 
         备份提供商ID。用于区分备份对象。
 
@@ -346,7 +346,7 @@ class OperationLog:
 
     @property
     def started_at(self):
-        """Gets the started_at of this OperationLog.
+        r"""Gets the started_at of this OperationLog.
 
         任务开始时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -357,7 +357,7 @@ class OperationLog:
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this OperationLog.
+        r"""Sets the started_at of this OperationLog.
 
         任务开始时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -368,7 +368,7 @@ class OperationLog:
 
     @property
     def status(self):
-        """Gets the status of this OperationLog.
+        r"""Gets the status of this OperationLog.
 
         任务状态
 
@@ -379,7 +379,7 @@ class OperationLog:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OperationLog.
+        r"""Sets the status of this OperationLog.
 
         任务状态
 
@@ -390,7 +390,7 @@ class OperationLog:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this OperationLog.
+        r"""Gets the updated_at of this OperationLog.
 
         修改时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -401,7 +401,7 @@ class OperationLog:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this OperationLog.
+        r"""Sets the updated_at of this OperationLog.
 
         修改时间,例如: \"2020-02-23T01:00:32Z\"
 
@@ -412,7 +412,7 @@ class OperationLog:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this OperationLog.
+        r"""Gets the vault_id of this OperationLog.
 
         任务操作资源所属存储库ID
 
@@ -423,7 +423,7 @@ class OperationLog:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this OperationLog.
+        r"""Sets the vault_id of this OperationLog.
 
         任务操作资源所属存储库ID
 
@@ -434,7 +434,7 @@ class OperationLog:
 
     @property
     def vault_name(self):
-        """Gets the vault_name of this OperationLog.
+        r"""Gets the vault_name of this OperationLog.
 
         任务操作资源所属存储库名称
 
@@ -445,7 +445,7 @@ class OperationLog:
 
     @vault_name.setter
     def vault_name(self, vault_name):
-        """Sets the vault_name of this OperationLog.
+        r"""Sets the vault_name of this OperationLog.
 
         任务操作资源所属存储库名称
 

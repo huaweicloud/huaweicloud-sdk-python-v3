@@ -32,7 +32,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, connection_id=None, privileges=None):
-        """ShowEnhancedConnectionPrivilegeResponse
+        r"""ShowEnhancedConnectionPrivilegeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Gets the is_success of this ShowEnhancedConnectionPrivilegeResponse.
 
         行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Sets the is_success of this ShowEnhancedConnectionPrivilegeResponse.
 
         行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Gets the message of this ShowEnhancedConnectionPrivilegeResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Sets the message of this ShowEnhancedConnectionPrivilegeResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Gets the connection_id of this ShowEnhancedConnectionPrivilegeResponse.
 
         增强型跨源连接ID，用于标识跨源连接的UUID。
 
@@ -120,7 +120,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Sets the connection_id of this ShowEnhancedConnectionPrivilegeResponse.
 
         增强型跨源连接ID，用于标识跨源连接的UUID。
 
@@ -131,7 +131,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @property
     def privileges(self):
-        """Gets the privileges of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Gets the privileges of this ShowEnhancedConnectionPrivilegeResponse.
 
         跨源连接各个授权项目的信息。
 
@@ -142,7 +142,7 @@ class ShowEnhancedConnectionPrivilegeResponse(SdkResponse):
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this ShowEnhancedConnectionPrivilegeResponse.
+        r"""Sets the privileges of this ShowEnhancedConnectionPrivilegeResponse.
 
         跨源连接各个授权项目的信息。
 

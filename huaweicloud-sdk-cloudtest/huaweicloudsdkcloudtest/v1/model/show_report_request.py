@@ -29,7 +29,7 @@ class ShowReportRequest:
     }
 
     def __init__(self, project_id=None, plan_id=None, body=None):
-        """ShowReportRequest
+        r"""ShowReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowReportRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowReportRequest.
+        r"""Gets the project_id of this ShowReportRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class ShowReportRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowReportRequest.
+        r"""Sets the project_id of this ShowReportRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class ShowReportRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ShowReportRequest.
+        r"""Gets the plan_id of this ShowReportRequest.
 
         分支/计划id
 
@@ -88,7 +88,7 @@ class ShowReportRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ShowReportRequest.
+        r"""Sets the plan_id of this ShowReportRequest.
 
         分支/计划id
 
@@ -99,7 +99,7 @@ class ShowReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowReportRequest.
+        r"""Gets the body of this ShowReportRequest.
 
         :return: The body of this ShowReportRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.GenerateReportInfo`
@@ -108,7 +108,7 @@ class ShowReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowReportRequest.
+        r"""Sets the body of this ShowReportRequest.
 
         :param body: The body of this ShowReportRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.GenerateReportInfo`

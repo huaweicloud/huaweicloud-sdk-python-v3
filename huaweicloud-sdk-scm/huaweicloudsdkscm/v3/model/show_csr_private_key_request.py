@@ -25,7 +25,7 @@ class ShowCsrPrivateKeyRequest:
     }
 
     def __init__(self, id=None):
-        """ShowCsrPrivateKeyRequest
+        r"""ShowCsrPrivateKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCsrPrivateKeyRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowCsrPrivateKeyRequest.
+        r"""Gets the id of this ShowCsrPrivateKeyRequest.
 
         CSR的ID。
 
@@ -53,7 +53,7 @@ class ShowCsrPrivateKeyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCsrPrivateKeyRequest.
+        r"""Sets the id of this ShowCsrPrivateKeyRequest.
 
         CSR的ID。
 

@@ -29,7 +29,7 @@ class UpdateIterationV4Request:
     }
 
     def __init__(self, project_id=None, iteration_id=None, body=None):
-        """UpdateIterationV4Request
+        r"""UpdateIterationV4Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateIterationV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateIterationV4Request.
+        r"""Gets the project_id of this UpdateIterationV4Request.
 
         devcloud项目的32位id
 
@@ -66,7 +66,7 @@ class UpdateIterationV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateIterationV4Request.
+        r"""Sets the project_id of this UpdateIterationV4Request.
 
         devcloud项目的32位id
 
@@ -77,7 +77,7 @@ class UpdateIterationV4Request:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this UpdateIterationV4Request.
+        r"""Gets the iteration_id of this UpdateIterationV4Request.
 
         迭代id
 
@@ -88,7 +88,7 @@ class UpdateIterationV4Request:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this UpdateIterationV4Request.
+        r"""Sets the iteration_id of this UpdateIterationV4Request.
 
         迭代id
 
@@ -99,7 +99,7 @@ class UpdateIterationV4Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIterationV4Request.
+        r"""Gets the body of this UpdateIterationV4Request.
 
         :return: The body of this UpdateIterationV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIterationRequestV4`
@@ -108,7 +108,7 @@ class UpdateIterationV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIterationV4Request.
+        r"""Sets the body of this UpdateIterationV4Request.
 
         :param body: The body of this UpdateIterationV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.UpdateIterationRequestV4`

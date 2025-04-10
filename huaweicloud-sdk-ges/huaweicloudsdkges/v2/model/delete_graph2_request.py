@@ -29,7 +29,7 @@ class DeleteGraph2Request:
     }
 
     def __init__(self, graph_id=None, keep_backup=None, delete_eip=None):
-        """DeleteGraph2Request
+        r"""DeleteGraph2Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteGraph2Request:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this DeleteGraph2Request.
+        r"""Gets the graph_id of this DeleteGraph2Request.
 
         图ID。
 
@@ -67,7 +67,7 @@ class DeleteGraph2Request:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this DeleteGraph2Request.
+        r"""Sets the graph_id of this DeleteGraph2Request.
 
         图ID。
 
@@ -78,7 +78,7 @@ class DeleteGraph2Request:
 
     @property
     def keep_backup(self):
-        """Gets the keep_backup of this DeleteGraph2Request.
+        r"""Gets the keep_backup of this DeleteGraph2Request.
 
         删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
 
@@ -89,7 +89,7 @@ class DeleteGraph2Request:
 
     @keep_backup.setter
     def keep_backup(self, keep_backup):
-        """Sets the keep_backup of this DeleteGraph2Request.
+        r"""Sets the keep_backup of this DeleteGraph2Request.
 
         删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
 
@@ -100,7 +100,7 @@ class DeleteGraph2Request:
 
     @property
     def delete_eip(self):
-        """Gets the delete_eip of this DeleteGraph2Request.
+        r"""Gets the delete_eip of this DeleteGraph2Request.
 
         是否同时删除EIP。
 
@@ -111,7 +111,7 @@ class DeleteGraph2Request:
 
     @delete_eip.setter
     def delete_eip(self, delete_eip):
-        """Sets the delete_eip of this DeleteGraph2Request.
+        r"""Sets the delete_eip of this DeleteGraph2Request.
 
         是否同时删除EIP。
 

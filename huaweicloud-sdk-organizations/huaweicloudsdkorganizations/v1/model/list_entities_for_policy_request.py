@@ -32,7 +32,7 @@ class ListEntitiesForPolicyRequest:
     }
 
     def __init__(self, x_security_token=None, policy_id=None, limit=None, marker=None):
-        """ListEntitiesForPolicyRequest
+        r"""ListEntitiesForPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEntitiesForPolicyRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListEntitiesForPolicyRequest.
+        r"""Gets the x_security_token of this ListEntitiesForPolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -75,7 +75,7 @@ class ListEntitiesForPolicyRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListEntitiesForPolicyRequest.
+        r"""Sets the x_security_token of this ListEntitiesForPolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -86,7 +86,7 @@ class ListEntitiesForPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListEntitiesForPolicyRequest.
+        r"""Gets the policy_id of this ListEntitiesForPolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -97,7 +97,7 @@ class ListEntitiesForPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListEntitiesForPolicyRequest.
+        r"""Sets the policy_id of this ListEntitiesForPolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -108,7 +108,7 @@ class ListEntitiesForPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEntitiesForPolicyRequest.
+        r"""Gets the limit of this ListEntitiesForPolicyRequest.
 
         页面中最大结果数量。
 
@@ -119,7 +119,7 @@ class ListEntitiesForPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEntitiesForPolicyRequest.
+        r"""Sets the limit of this ListEntitiesForPolicyRequest.
 
         页面中最大结果数量。
 
@@ -130,7 +130,7 @@ class ListEntitiesForPolicyRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEntitiesForPolicyRequest.
+        r"""Gets the marker of this ListEntitiesForPolicyRequest.
 
         分页标记。
 
@@ -141,7 +141,7 @@ class ListEntitiesForPolicyRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEntitiesForPolicyRequest.
+        r"""Sets the marker of this ListEntitiesForPolicyRequest.
 
         分页标记。
 

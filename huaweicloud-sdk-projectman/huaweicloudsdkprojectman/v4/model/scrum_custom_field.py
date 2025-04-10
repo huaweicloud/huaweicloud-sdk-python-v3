@@ -27,7 +27,7 @@ class ScrumCustomField:
     }
 
     def __init__(self, name=None, value=None):
-        """ScrumCustomField
+        r"""ScrumCustomField
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScrumCustomField:
 
     @property
     def name(self):
-        """Gets the name of this ScrumCustomField.
+        r"""Gets the name of this ScrumCustomField.
 
         自定义字段
 
@@ -61,7 +61,7 @@ class ScrumCustomField:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScrumCustomField.
+        r"""Sets the name of this ScrumCustomField.
 
         自定义字段
 
@@ -72,7 +72,7 @@ class ScrumCustomField:
 
     @property
     def value(self):
-        """Gets the value of this ScrumCustomField.
+        r"""Gets the value of this ScrumCustomField.
 
         自定义字段值
 
@@ -83,7 +83,7 @@ class ScrumCustomField:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ScrumCustomField.
+        r"""Sets the value of this ScrumCustomField.
 
         自定义字段值
 

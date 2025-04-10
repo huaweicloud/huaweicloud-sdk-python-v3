@@ -25,7 +25,7 @@ class ShowSecurityPermissionManagementDiagnoseResultRequest:
     }
 
     def __init__(self, workspace=None):
-        """ShowSecurityPermissionManagementDiagnoseResultRequest
+        r"""ShowSecurityPermissionManagementDiagnoseResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecurityPermissionManagementDiagnoseResultRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityPermissionManagementDiagnoseResultRequest.
+        r"""Gets the workspace of this ShowSecurityPermissionManagementDiagnoseResultRequest.
 
         DataArts Studio工作空间ID
 
@@ -53,7 +53,7 @@ class ShowSecurityPermissionManagementDiagnoseResultRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityPermissionManagementDiagnoseResultRequest.
+        r"""Sets the workspace of this ShowSecurityPermissionManagementDiagnoseResultRequest.
 
         DataArts Studio工作空间ID
 

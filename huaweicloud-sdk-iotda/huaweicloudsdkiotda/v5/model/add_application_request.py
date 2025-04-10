@@ -27,7 +27,7 @@ class AddApplicationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddApplicationRequest
+        r"""AddApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddApplicationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddApplicationRequest.
+        r"""Gets the instance_id of this AddApplicationRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -61,7 +61,7 @@ class AddApplicationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddApplicationRequest.
+        r"""Sets the instance_id of this AddApplicationRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -72,7 +72,7 @@ class AddApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddApplicationRequest.
+        r"""Gets the body of this AddApplicationRequest.
 
         :return: The body of this AddApplicationRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.AddApplication`
@@ -81,7 +81,7 @@ class AddApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddApplicationRequest.
+        r"""Sets the body of this AddApplicationRequest.
 
         :param body: The body of this AddApplicationRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.AddApplication`

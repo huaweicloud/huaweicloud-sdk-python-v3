@@ -31,7 +31,7 @@ class ListRangeQueryAomPromGetRequest:
     }
 
     def __init__(self, query=None, start=None, end=None, step=None):
-        """ListRangeQueryAomPromGetRequest
+        r"""ListRangeQueryAomPromGetRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @property
     def query(self):
-        """Gets the query of this ListRangeQueryAomPromGetRequest.
+        r"""Gets the query of this ListRangeQueryAomPromGetRequest.
 
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
@@ -71,7 +71,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ListRangeQueryAomPromGetRequest.
+        r"""Sets the query of this ListRangeQueryAomPromGetRequest.
 
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
@@ -82,7 +82,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListRangeQueryAomPromGetRequest.
+        r"""Gets the start of this ListRangeQueryAomPromGetRequest.
 
         起始时间戳(Unix时间戳格式，单位：秒）。
 
@@ -93,7 +93,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListRangeQueryAomPromGetRequest.
+        r"""Sets the start of this ListRangeQueryAomPromGetRequest.
 
         起始时间戳(Unix时间戳格式，单位：秒）。
 
@@ -104,7 +104,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @property
     def end(self):
-        """Gets the end of this ListRangeQueryAomPromGetRequest.
+        r"""Gets the end of this ListRangeQueryAomPromGetRequest.
 
         结束时间戳(Unix时间戳格式，单位：秒）。
 
@@ -115,7 +115,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this ListRangeQueryAomPromGetRequest.
+        r"""Sets the end of this ListRangeQueryAomPromGetRequest.
 
         结束时间戳(Unix时间戳格式，单位：秒）。
 
@@ -126,7 +126,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @property
     def step(self):
-        """Gets the step of this ListRangeQueryAomPromGetRequest.
+        r"""Gets the step of this ListRangeQueryAomPromGetRequest.
 
         查询时间步长，时间区内每step秒执行一次。
 
@@ -137,7 +137,7 @@ class ListRangeQueryAomPromGetRequest:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ListRangeQueryAomPromGetRequest.
+        r"""Sets the step of this ListRangeQueryAomPromGetRequest.
 
         查询时间步长，时间区内每step秒执行一次。
 

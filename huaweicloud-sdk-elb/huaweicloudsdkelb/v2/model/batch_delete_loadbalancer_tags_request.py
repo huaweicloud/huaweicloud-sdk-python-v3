@@ -27,7 +27,7 @@ class BatchDeleteLoadbalancerTagsRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """BatchDeleteLoadbalancerTagsRequest
+        r"""BatchDeleteLoadbalancerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteLoadbalancerTagsRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this BatchDeleteLoadbalancerTagsRequest.
+        r"""Gets the loadbalancer_id of this BatchDeleteLoadbalancerTagsRequest.
 
         负载均衡器ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteLoadbalancerTagsRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this BatchDeleteLoadbalancerTagsRequest.
+        r"""Sets the loadbalancer_id of this BatchDeleteLoadbalancerTagsRequest.
 
         负载均衡器ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteLoadbalancerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteLoadbalancerTagsRequest.
+        r"""Gets the body of this BatchDeleteLoadbalancerTagsRequest.
 
         :return: The body of this BatchDeleteLoadbalancerTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteLoadbalancerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteLoadbalancerTagsRequest.
+        r"""Sets the body of this BatchDeleteLoadbalancerTagsRequest.
 
         :param body: The body of this BatchDeleteLoadbalancerTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`

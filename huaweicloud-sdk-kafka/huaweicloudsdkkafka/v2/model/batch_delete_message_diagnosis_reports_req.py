@@ -25,7 +25,7 @@ class BatchDeleteMessageDiagnosisReportsReq:
     }
 
     def __init__(self, report_id_list=None):
-        """BatchDeleteMessageDiagnosisReportsReq
+        r"""BatchDeleteMessageDiagnosisReportsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteMessageDiagnosisReportsReq:
 
     @property
     def report_id_list(self):
-        """Gets the report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
+        r"""Gets the report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
 
         待删除report id列表
 
@@ -53,7 +53,7 @@ class BatchDeleteMessageDiagnosisReportsReq:
 
     @report_id_list.setter
     def report_id_list(self, report_id_list):
-        """Sets the report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
+        r"""Sets the report_id_list of this BatchDeleteMessageDiagnosisReportsReq.
 
         待删除report id列表
 

@@ -55,7 +55,7 @@ class JobInfoRequest:
     }
 
     def __init__(self, name=None, nodes=None, schedule=None, params=None, log_path=None, directory=None, process_type=None, single_node_job_flag=None, single_node_job_type=None, create_user=None, owner=None, priority=None, last_update_user=None, target_status=None, approvers=None, basic_config=None):
-        """JobInfoRequest
+        r"""JobInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class JobInfoRequest:
 
     @property
     def name(self):
-        """Gets the name of this JobInfoRequest.
+        r"""Gets the name of this JobInfoRequest.
 
         作业名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号。作业名称不能重复。
 
@@ -155,7 +155,7 @@ class JobInfoRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobInfoRequest.
+        r"""Sets the name of this JobInfoRequest.
 
         作业名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号。作业名称不能重复。
 
@@ -166,7 +166,7 @@ class JobInfoRequest:
 
     @property
     def nodes(self):
-        """Gets the nodes of this JobInfoRequest.
+        r"""Gets the nodes of this JobInfoRequest.
 
         节点清单
 
@@ -177,7 +177,7 @@ class JobInfoRequest:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this JobInfoRequest.
+        r"""Sets the nodes of this JobInfoRequest.
 
         节点清单
 
@@ -188,7 +188,7 @@ class JobInfoRequest:
 
     @property
     def schedule(self):
-        """Gets the schedule of this JobInfoRequest.
+        r"""Gets the schedule of this JobInfoRequest.
 
         :return: The schedule of this JobInfoRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Schedule`
@@ -197,7 +197,7 @@ class JobInfoRequest:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this JobInfoRequest.
+        r"""Sets the schedule of this JobInfoRequest.
 
         :param schedule: The schedule of this JobInfoRequest.
         :type schedule: :class:`huaweicloudsdkdataartsstudio.v1.Schedule`
@@ -206,7 +206,7 @@ class JobInfoRequest:
 
     @property
     def params(self):
-        """Gets the params of this JobInfoRequest.
+        r"""Gets the params of this JobInfoRequest.
 
         作业参数清单
 
@@ -217,7 +217,7 @@ class JobInfoRequest:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this JobInfoRequest.
+        r"""Sets the params of this JobInfoRequest.
 
         作业参数清单
 
@@ -228,7 +228,7 @@ class JobInfoRequest:
 
     @property
     def log_path(self):
-        """Gets the log_path of this JobInfoRequest.
+        r"""Gets the log_path of this JobInfoRequest.
 
         日志路径
 
@@ -239,7 +239,7 @@ class JobInfoRequest:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this JobInfoRequest.
+        r"""Sets the log_path of this JobInfoRequest.
 
         日志路径
 
@@ -250,7 +250,7 @@ class JobInfoRequest:
 
     @property
     def directory(self):
-        """Gets the directory of this JobInfoRequest.
+        r"""Gets the directory of this JobInfoRequest.
 
         目录路径
 
@@ -261,7 +261,7 @@ class JobInfoRequest:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this JobInfoRequest.
+        r"""Sets the directory of this JobInfoRequest.
 
         目录路径
 
@@ -272,7 +272,7 @@ class JobInfoRequest:
 
     @property
     def process_type(self):
-        """Gets the process_type of this JobInfoRequest.
+        r"""Gets the process_type of this JobInfoRequest.
 
         作业类型:  - REAL_TIME: 实时处理  - BATCH: 批处理
 
@@ -283,7 +283,7 @@ class JobInfoRequest:
 
     @process_type.setter
     def process_type(self, process_type):
-        """Sets the process_type of this JobInfoRequest.
+        r"""Sets the process_type of this JobInfoRequest.
 
         作业类型:  - REAL_TIME: 实时处理  - BATCH: 批处理
 
@@ -294,7 +294,7 @@ class JobInfoRequest:
 
     @property
     def single_node_job_flag(self):
-        """Gets the single_node_job_flag of this JobInfoRequest.
+        r"""Gets the single_node_job_flag of this JobInfoRequest.
 
         是否选择单任务，默认为false
 
@@ -305,7 +305,7 @@ class JobInfoRequest:
 
     @single_node_job_flag.setter
     def single_node_job_flag(self, single_node_job_flag):
-        """Sets the single_node_job_flag of this JobInfoRequest.
+        r"""Sets the single_node_job_flag of this JobInfoRequest.
 
         是否选择单任务，默认为false
 
@@ -316,7 +316,7 @@ class JobInfoRequest:
 
     @property
     def single_node_job_type(self):
-        """Gets the single_node_job_type of this JobInfoRequest.
+        r"""Gets the single_node_job_type of this JobInfoRequest.
 
         单任务类型
 
@@ -327,7 +327,7 @@ class JobInfoRequest:
 
     @single_node_job_type.setter
     def single_node_job_type(self, single_node_job_type):
-        """Sets the single_node_job_type of this JobInfoRequest.
+        r"""Sets the single_node_job_type of this JobInfoRequest.
 
         单任务类型
 
@@ -338,7 +338,7 @@ class JobInfoRequest:
 
     @property
     def create_user(self):
-        """Gets the create_user of this JobInfoRequest.
+        r"""Gets the create_user of this JobInfoRequest.
 
         创建用户
 
@@ -349,7 +349,7 @@ class JobInfoRequest:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this JobInfoRequest.
+        r"""Sets the create_user of this JobInfoRequest.
 
         创建用户
 
@@ -360,7 +360,7 @@ class JobInfoRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this JobInfoRequest.
+        r"""Gets the owner of this JobInfoRequest.
 
         责任人
 
@@ -371,7 +371,7 @@ class JobInfoRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this JobInfoRequest.
+        r"""Sets the owner of this JobInfoRequest.
 
         责任人
 
@@ -382,7 +382,7 @@ class JobInfoRequest:
 
     @property
     def priority(self):
-        """Gets the priority of this JobInfoRequest.
+        r"""Gets the priority of this JobInfoRequest.
 
         优先级
 
@@ -393,7 +393,7 @@ class JobInfoRequest:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this JobInfoRequest.
+        r"""Sets the priority of this JobInfoRequest.
 
         优先级
 
@@ -404,7 +404,7 @@ class JobInfoRequest:
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this JobInfoRequest.
+        r"""Gets the last_update_user of this JobInfoRequest.
 
         作业最后修改人
 
@@ -415,7 +415,7 @@ class JobInfoRequest:
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this JobInfoRequest.
+        r"""Sets the last_update_user of this JobInfoRequest.
 
         作业最后修改人
 
@@ -426,7 +426,7 @@ class JobInfoRequest:
 
     @property
     def target_status(self):
-        """Gets the target_status of this JobInfoRequest.
+        r"""Gets the target_status of this JobInfoRequest.
 
         在开启审批开关后，需要填写该字段。表示创建作业的目标状态。  - SAVED: 保存态，表示作业仅保存，无法调度运行，需要提交并审核通过后才能运行。  - SUBMITTED: 提交态，表示作业保存后会自动提交，需要审核通过才能运行。  - PRODUCTION: 生产态，表示作业跳过审批环节，创建后可以直接运行。注意：只有工作空间的管理员用户才能创建生产态的作业。
 
@@ -437,7 +437,7 @@ class JobInfoRequest:
 
     @target_status.setter
     def target_status(self, target_status):
-        """Sets the target_status of this JobInfoRequest.
+        r"""Sets the target_status of this JobInfoRequest.
 
         在开启审批开关后，需要填写该字段。表示创建作业的目标状态。  - SAVED: 保存态，表示作业仅保存，无法调度运行，需要提交并审核通过后才能运行。  - SUBMITTED: 提交态，表示作业保存后会自动提交，需要审核通过才能运行。  - PRODUCTION: 生产态，表示作业跳过审批环节，创建后可以直接运行。注意：只有工作空间的管理员用户才能创建生产态的作业。
 
@@ -448,7 +448,7 @@ class JobInfoRequest:
 
     @property
     def approvers(self):
-        """Gets the approvers of this JobInfoRequest.
+        r"""Gets the approvers of this JobInfoRequest.
 
         作业审批人
 
@@ -459,7 +459,7 @@ class JobInfoRequest:
 
     @approvers.setter
     def approvers(self, approvers):
-        """Sets the approvers of this JobInfoRequest.
+        r"""Sets the approvers of this JobInfoRequest.
 
         作业审批人
 
@@ -470,7 +470,7 @@ class JobInfoRequest:
 
     @property
     def basic_config(self):
-        """Gets the basic_config of this JobInfoRequest.
+        r"""Gets the basic_config of this JobInfoRequest.
 
         :return: The basic_config of this JobInfoRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BasicInfo`
@@ -479,7 +479,7 @@ class JobInfoRequest:
 
     @basic_config.setter
     def basic_config(self, basic_config):
-        """Sets the basic_config of this JobInfoRequest.
+        r"""Sets the basic_config of this JobInfoRequest.
 
         :param basic_config: The basic_config of this JobInfoRequest.
         :type basic_config: :class:`huaweicloudsdkdataartsstudio.v1.BasicInfo`

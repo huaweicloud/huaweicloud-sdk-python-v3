@@ -29,7 +29,7 @@ class ClusterVolumeRsp:
     }
 
     def __init__(self, type=None, size=None, resource_ids=None):
-        """ClusterVolumeRsp
+        r"""ClusterVolumeRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ClusterVolumeRsp:
 
     @property
     def type(self):
-        """Gets the type of this ClusterVolumeRsp.
+        r"""Gets the type of this ClusterVolumeRsp.
 
         实例磁盘类型。
 
@@ -68,7 +68,7 @@ class ClusterVolumeRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterVolumeRsp.
+        r"""Sets the type of this ClusterVolumeRsp.
 
         实例磁盘类型。
 
@@ -79,7 +79,7 @@ class ClusterVolumeRsp:
 
     @property
     def size(self):
-        """Gets the size of this ClusterVolumeRsp.
+        r"""Gets the size of this ClusterVolumeRsp.
 
         实例磁盘大小。
 
@@ -90,7 +90,7 @@ class ClusterVolumeRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ClusterVolumeRsp.
+        r"""Sets the size of this ClusterVolumeRsp.
 
         实例磁盘大小。
 
@@ -101,7 +101,7 @@ class ClusterVolumeRsp:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ClusterVolumeRsp.
+        r"""Gets the resource_ids of this ClusterVolumeRsp.
 
         该实例拥有的磁盘对应的资源Id。
 
@@ -112,7 +112,7 @@ class ClusterVolumeRsp:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ClusterVolumeRsp.
+        r"""Sets the resource_ids of this ClusterVolumeRsp.
 
         该实例拥有的磁盘对应的资源Id。
 

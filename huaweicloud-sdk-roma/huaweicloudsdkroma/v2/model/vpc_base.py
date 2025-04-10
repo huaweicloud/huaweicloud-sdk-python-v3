@@ -35,7 +35,7 @@ class VpcBase:
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None):
-        """VpcBase
+        r"""VpcBase
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class VpcBase:
 
     @property
     def name(self):
-        """Gets the name of this VpcBase.
+        r"""Gets the name of this VpcBase.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -85,7 +85,7 @@ class VpcBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcBase.
+        r"""Sets the name of this VpcBase.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -96,7 +96,7 @@ class VpcBase:
 
     @property
     def port(self):
-        """Gets the port of this VpcBase.
+        r"""Gets the port of this VpcBase.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -107,7 +107,7 @@ class VpcBase:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this VpcBase.
+        r"""Sets the port of this VpcBase.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -118,7 +118,7 @@ class VpcBase:
 
     @property
     def balance_strategy(self):
-        """Gets the balance_strategy of this VpcBase.
+        r"""Gets the balance_strategy of this VpcBase.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -129,7 +129,7 @@ class VpcBase:
 
     @balance_strategy.setter
     def balance_strategy(self, balance_strategy):
-        """Sets the balance_strategy of this VpcBase.
+        r"""Sets the balance_strategy of this VpcBase.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -140,7 +140,7 @@ class VpcBase:
 
     @property
     def member_type(self):
-        """Gets the member_type of this VpcBase.
+        r"""Gets the member_type of this VpcBase.
 
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
@@ -151,7 +151,7 @@ class VpcBase:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this VpcBase.
+        r"""Sets the member_type of this VpcBase.
 
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
@@ -162,7 +162,7 @@ class VpcBase:
 
     @property
     def type(self):
-        """Gets the type of this VpcBase.
+        r"""Gets the type of this VpcBase.
 
         vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
 
@@ -173,7 +173,7 @@ class VpcBase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VpcBase.
+        r"""Sets the type of this VpcBase.
 
         vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
 
@@ -184,7 +184,7 @@ class VpcBase:
 
     @property
     def dict_code(self):
-        """Gets the dict_code of this VpcBase.
+        r"""Gets the dict_code of this VpcBase.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -195,7 +195,7 @@ class VpcBase:
 
     @dict_code.setter
     def dict_code(self, dict_code):
-        """Sets the dict_code of this VpcBase.
+        r"""Sets the dict_code of this VpcBase.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 

@@ -30,7 +30,7 @@ class RotateSecretResponse(SdkResponse):
     }
 
     def __init__(self, version_id=None, secret_name=None, rotation_task_id=None):
-        """RotateSecretResponse
+        r"""RotateSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RotateSecretResponse(SdkResponse):
 
     @property
     def version_id(self):
-        """Gets the version_id of this RotateSecretResponse.
+        r"""Gets the version_id of this RotateSecretResponse.
 
         凭据的版本号标识符。
 
@@ -69,7 +69,7 @@ class RotateSecretResponse(SdkResponse):
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this RotateSecretResponse.
+        r"""Sets the version_id of this RotateSecretResponse.
 
         凭据的版本号标识符。
 
@@ -80,7 +80,7 @@ class RotateSecretResponse(SdkResponse):
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this RotateSecretResponse.
+        r"""Gets the secret_name of this RotateSecretResponse.
 
         凭据的名称。
 
@@ -91,7 +91,7 @@ class RotateSecretResponse(SdkResponse):
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this RotateSecretResponse.
+        r"""Sets the secret_name of this RotateSecretResponse.
 
         凭据的名称。
 
@@ -102,7 +102,7 @@ class RotateSecretResponse(SdkResponse):
 
     @property
     def rotation_task_id(self):
-        """Gets the rotation_task_id of this RotateSecretResponse.
+        r"""Gets the rotation_task_id of this RotateSecretResponse.
 
         凭据轮转任务ID。
 
@@ -113,7 +113,7 @@ class RotateSecretResponse(SdkResponse):
 
     @rotation_task_id.setter
     def rotation_task_id(self, rotation_task_id):
-        """Sets the rotation_task_id of this RotateSecretResponse.
+        r"""Sets the rotation_task_id of this RotateSecretResponse.
 
         凭据轮转任务ID。
 

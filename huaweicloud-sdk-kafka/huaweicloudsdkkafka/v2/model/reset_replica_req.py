@@ -25,7 +25,7 @@ class ResetReplicaReq:
     }
 
     def __init__(self, partitions=None):
-        """ResetReplicaReq
+        r"""ResetReplicaReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetReplicaReq:
 
     @property
     def partitions(self):
-        """Gets the partitions of this ResetReplicaReq.
+        r"""Gets the partitions of this ResetReplicaReq.
 
         期望调整的分区副本分配情况。
 
@@ -54,7 +54,7 @@ class ResetReplicaReq:
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ResetReplicaReq.
+        r"""Sets the partitions of this ResetReplicaReq.
 
         期望调整的分区副本分配情况。
 

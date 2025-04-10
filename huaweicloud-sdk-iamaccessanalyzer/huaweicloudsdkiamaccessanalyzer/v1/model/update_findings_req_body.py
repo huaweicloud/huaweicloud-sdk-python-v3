@@ -29,7 +29,7 @@ class UpdateFindingsReqBody:
     }
 
     def __init__(self, ids=None, resource_urn=None, status=None):
-        """UpdateFindingsReqBody
+        r"""UpdateFindingsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateFindingsReqBody:
 
     @property
     def ids(self):
-        """Gets the ids of this UpdateFindingsReqBody.
+        r"""Gets the ids of this UpdateFindingsReqBody.
 
         要更新的访问分析结果唯一标识符数组。
 
@@ -67,7 +67,7 @@ class UpdateFindingsReqBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this UpdateFindingsReqBody.
+        r"""Sets the ids of this UpdateFindingsReqBody.
 
         要更新的访问分析结果唯一标识符数组。
 
@@ -78,7 +78,7 @@ class UpdateFindingsReqBody:
 
     @property
     def resource_urn(self):
-        """Gets the resource_urn of this UpdateFindingsReqBody.
+        r"""Gets the resource_urn of this UpdateFindingsReqBody.
 
         资源的唯一资源标识符。
 
@@ -89,7 +89,7 @@ class UpdateFindingsReqBody:
 
     @resource_urn.setter
     def resource_urn(self, resource_urn):
-        """Sets the resource_urn of this UpdateFindingsReqBody.
+        r"""Sets the resource_urn of this UpdateFindingsReqBody.
 
         资源的唯一资源标识符。
 
@@ -100,7 +100,7 @@ class UpdateFindingsReqBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateFindingsReqBody.
+        r"""Gets the status of this UpdateFindingsReqBody.
 
         要更新的访问分析结果状态。
 
@@ -111,7 +111,7 @@ class UpdateFindingsReqBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateFindingsReqBody.
+        r"""Sets the status of this UpdateFindingsReqBody.
 
         要更新的访问分析结果状态。
 

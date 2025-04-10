@@ -28,7 +28,7 @@ class ListScriptsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, scripts=None):
-        """ListScriptsResponse
+        r"""ListScriptsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScriptsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListScriptsResponse.
+        r"""Gets the total of this ListScriptsResponse.
 
         :return: The total of this ListScriptsResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListScriptsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListScriptsResponse.
+        r"""Sets the total of this ListScriptsResponse.
 
         :param total: The total of this ListScriptsResponse.
         :type total: int
@@ -69,7 +69,7 @@ class ListScriptsResponse(SdkResponse):
 
     @property
     def scripts(self):
-        """Gets the scripts of this ListScriptsResponse.
+        r"""Gets the scripts of this ListScriptsResponse.
 
         :return: The scripts of this ListScriptsResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.ScriptInfo`]
@@ -78,7 +78,7 @@ class ListScriptsResponse(SdkResponse):
 
     @scripts.setter
     def scripts(self, scripts):
-        """Sets the scripts of this ListScriptsResponse.
+        r"""Sets the scripts of this ListScriptsResponse.
 
         :param scripts: The scripts of this ListScriptsResponse.
         :type scripts: list[:class:`huaweicloudsdkdgc.v1.ScriptInfo`]

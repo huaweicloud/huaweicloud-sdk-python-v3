@@ -35,7 +35,7 @@ class MosaicInfo:
     }
 
     def __init__(self, timeline_start=None, timeline_duration=None, dx=None, dy=None, width=None, height=None):
-        """MosaicInfo
+        r"""MosaicInfo
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class MosaicInfo:
 
     @property
     def timeline_start(self):
-        """Gets the timeline_start of this MosaicInfo.
+        r"""Gets the timeline_start of this MosaicInfo.
 
         马赛克开始时间，与“timeline_duration”配合使用。  取值范围：数字。  单位：秒。 
 
@@ -87,7 +87,7 @@ class MosaicInfo:
 
     @timeline_start.setter
     def timeline_start(self, timeline_start):
-        """Sets the timeline_start of this MosaicInfo.
+        r"""Sets the timeline_start of this MosaicInfo.
 
         马赛克开始时间，与“timeline_duration”配合使用。  取值范围：数字。  单位：秒。 
 
@@ -98,7 +98,7 @@ class MosaicInfo:
 
     @property
     def timeline_duration(self):
-        """Gets the timeline_duration of this MosaicInfo.
+        r"""Gets the timeline_duration of this MosaicInfo.
 
         马赛克持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
 
@@ -109,7 +109,7 @@ class MosaicInfo:
 
     @timeline_duration.setter
     def timeline_duration(self, timeline_duration):
-        """Sets the timeline_duration of this MosaicInfo.
+        r"""Sets the timeline_duration of this MosaicInfo.
 
         马赛克持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
 
@@ -120,7 +120,7 @@ class MosaicInfo:
 
     @property
     def dx(self):
-        """Gets the dx of this MosaicInfo.
+        r"""Gets the dx of this MosaicInfo.
 
         马赛克起点相对输出视频顶点的水平偏移量。  设置方法有如下两种：  - 整数型：表示马赛克起点水平偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示马赛克起点相对于视频分辨率宽的水平偏移比率。取值范围：(0，1)，支持4位小数，如0.9999。  示例：输出视频分辨率宽1920，设置“dx”为“0.1”，“referpos”为“TopRight”（右上角），则马赛克右上角到视频右顶点在水平方向上偏移距离为192。 
 
@@ -131,7 +131,7 @@ class MosaicInfo:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this MosaicInfo.
+        r"""Sets the dx of this MosaicInfo.
 
         马赛克起点相对输出视频顶点的水平偏移量。  设置方法有如下两种：  - 整数型：表示马赛克起点水平偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示马赛克起点相对于视频分辨率宽的水平偏移比率。取值范围：(0，1)，支持4位小数，如0.9999。  示例：输出视频分辨率宽1920，设置“dx”为“0.1”，“referpos”为“TopRight”（右上角），则马赛克右上角到视频右顶点在水平方向上偏移距离为192。 
 
@@ -142,7 +142,7 @@ class MosaicInfo:
 
     @property
     def dy(self):
-        """Gets the dy of this MosaicInfo.
+        r"""Gets the dy of this MosaicInfo.
 
         马赛克起点相对输出视频顶点的垂直偏移量。  - 设置方法有如下两种：整数型：表示马赛克起点垂直偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示马赛克起点相对于视频分辨率高的垂直偏移比率。取值范围：(0，1)，支持4位小数，如0.9999。  示例：输出视频分辨率高1080，设置“dy”为“0.1”，“referpos”为“TopRight”（右上角），则马赛克右上角到视频右顶点在垂直方向上的偏移距离为108。 
 
@@ -153,7 +153,7 @@ class MosaicInfo:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this MosaicInfo.
+        r"""Sets the dy of this MosaicInfo.
 
         马赛克起点相对输出视频顶点的垂直偏移量。  - 设置方法有如下两种：整数型：表示马赛克起点垂直偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示马赛克起点相对于视频分辨率高的垂直偏移比率。取值范围：(0，1)，支持4位小数，如0.9999。  示例：输出视频分辨率高1080，设置“dy”为“0.1”，“referpos”为“TopRight”（右上角），则马赛克右上角到视频右顶点在垂直方向上的偏移距离为108。 
 
@@ -164,7 +164,7 @@ class MosaicInfo:
 
     @property
     def width(self):
-        """Gets the width of this MosaicInfo.
+        r"""Gets the width of this MosaicInfo.
 
         马赛克宽，值有两种形式： - 整数型代马赛克宽的像素值，范围[8，4096]，单位px。 - 小数型代表相对输出视频分辨率宽的比率，范围(0,1)，支持4位小数，如0.9999。 
 
@@ -175,7 +175,7 @@ class MosaicInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this MosaicInfo.
+        r"""Sets the width of this MosaicInfo.
 
         马赛克宽，值有两种形式： - 整数型代马赛克宽的像素值，范围[8，4096]，单位px。 - 小数型代表相对输出视频分辨率宽的比率，范围(0,1)，支持4位小数，如0.9999。 
 
@@ -186,7 +186,7 @@ class MosaicInfo:
 
     @property
     def height(self):
-        """Gets the height of this MosaicInfo.
+        r"""Gets the height of this MosaicInfo.
 
         马赛克高，值有两种形式： - 整数型代表马赛克的像素值，范围[8，4096]，单位px。 - 小数型代表相对输出视频分辨率高的比率，范围(0，1)，支持4位小数，如0.9999。 
 
@@ -197,7 +197,7 @@ class MosaicInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MosaicInfo.
+        r"""Sets the height of this MosaicInfo.
 
         马赛克高，值有两种形式： - 整数型代表马赛克的像素值，范围[8，4096]，单位px。 - 小数型代表相对输出视频分辨率高的比率，范围(0，1)，支持4位小数，如0.9999。 
 

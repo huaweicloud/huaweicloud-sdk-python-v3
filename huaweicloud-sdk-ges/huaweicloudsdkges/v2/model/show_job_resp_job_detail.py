@@ -29,7 +29,7 @@ class ShowJobRespJobDetail:
     }
 
     def __init__(self, schema_path=None, edgeset_path=None, vertexset_path=None):
-        """ShowJobRespJobDetail
+        r"""ShowJobRespJobDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowJobRespJobDetail:
 
     @property
     def schema_path(self):
-        """Gets the schema_path of this ShowJobRespJobDetail.
+        r"""Gets the schema_path of this ShowJobRespJobDetail.
 
         元数据路径。
 
@@ -68,7 +68,7 @@ class ShowJobRespJobDetail:
 
     @schema_path.setter
     def schema_path(self, schema_path):
-        """Sets the schema_path of this ShowJobRespJobDetail.
+        r"""Sets the schema_path of this ShowJobRespJobDetail.
 
         元数据路径。
 
@@ -79,7 +79,7 @@ class ShowJobRespJobDetail:
 
     @property
     def edgeset_path(self):
-        """Gets the edgeset_path of this ShowJobRespJobDetail.
+        r"""Gets the edgeset_path of this ShowJobRespJobDetail.
 
         边数据集路径。
 
@@ -90,7 +90,7 @@ class ShowJobRespJobDetail:
 
     @edgeset_path.setter
     def edgeset_path(self, edgeset_path):
-        """Sets the edgeset_path of this ShowJobRespJobDetail.
+        r"""Sets the edgeset_path of this ShowJobRespJobDetail.
 
         边数据集路径。
 
@@ -101,7 +101,7 @@ class ShowJobRespJobDetail:
 
     @property
     def vertexset_path(self):
-        """Gets the vertexset_path of this ShowJobRespJobDetail.
+        r"""Gets the vertexset_path of this ShowJobRespJobDetail.
 
         点数据集路径。
 
@@ -112,7 +112,7 @@ class ShowJobRespJobDetail:
 
     @vertexset_path.setter
     def vertexset_path(self, vertexset_path):
-        """Sets the vertexset_path of this ShowJobRespJobDetail.
+        r"""Sets the vertexset_path of this ShowJobRespJobDetail.
 
         点数据集路径。
 

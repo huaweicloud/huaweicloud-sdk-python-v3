@@ -25,7 +25,7 @@ class ListSecurityGroupsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListSecurityGroupsByTagsRequest
+        r"""ListSecurityGroupsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSecurityGroupsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSecurityGroupsByTagsRequest.
+        r"""Gets the body of this ListSecurityGroupsByTagsRequest.
 
         :return: The body of this ListSecurityGroupsByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListSecurityGroupsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSecurityGroupsByTagsRequest.
+        r"""Sets the body of this ListSecurityGroupsByTagsRequest.
 
         :param body: The body of this ListSecurityGroupsByTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsByTagsRequestBody`

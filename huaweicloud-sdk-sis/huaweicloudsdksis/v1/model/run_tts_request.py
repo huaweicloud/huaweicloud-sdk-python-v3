@@ -25,7 +25,7 @@ class RunTtsRequest:
     }
 
     def __init__(self, body=None):
-        """RunTtsRequest
+        r"""RunTtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunTtsRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunTtsRequest.
+        r"""Gets the body of this RunTtsRequest.
 
         :return: The body of this RunTtsRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PostCustomTTSReq`
@@ -52,7 +52,7 @@ class RunTtsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunTtsRequest.
+        r"""Sets the body of this RunTtsRequest.
 
         :param body: The body of this RunTtsRequest.
         :type body: :class:`huaweicloudsdksis.v1.PostCustomTTSReq`

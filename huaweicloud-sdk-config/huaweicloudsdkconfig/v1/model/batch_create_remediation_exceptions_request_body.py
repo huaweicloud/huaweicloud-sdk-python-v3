@@ -25,7 +25,7 @@ class BatchCreateRemediationExceptionsRequestBody:
     }
 
     def __init__(self, exceptions=None):
-        """BatchCreateRemediationExceptionsRequestBody
+        r"""BatchCreateRemediationExceptionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateRemediationExceptionsRequestBody:
 
     @property
     def exceptions(self):
-        """Gets the exceptions of this BatchCreateRemediationExceptionsRequestBody.
+        r"""Gets the exceptions of this BatchCreateRemediationExceptionsRequestBody.
 
         批量创建合规规则修正例外的详情。
 
@@ -53,7 +53,7 @@ class BatchCreateRemediationExceptionsRequestBody:
 
     @exceptions.setter
     def exceptions(self, exceptions):
-        """Sets the exceptions of this BatchCreateRemediationExceptionsRequestBody.
+        r"""Sets the exceptions of this BatchCreateRemediationExceptionsRequestBody.
 
         批量创建合规规则修正例外的详情。
 

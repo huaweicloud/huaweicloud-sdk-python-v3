@@ -28,7 +28,7 @@ class SearchResourceShareAssociationsResponse(SdkResponse):
     }
 
     def __init__(self, resource_share_associations=None, page_info=None):
-        """SearchResourceShareAssociationsResponse
+        r"""SearchResourceShareAssociationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchResourceShareAssociationsResponse(SdkResponse):
 
     @property
     def resource_share_associations(self):
-        """Gets the resource_share_associations of this SearchResourceShareAssociationsResponse.
+        r"""Gets the resource_share_associations of this SearchResourceShareAssociationsResponse.
 
         绑定的详细信息列表。
 
@@ -62,7 +62,7 @@ class SearchResourceShareAssociationsResponse(SdkResponse):
 
     @resource_share_associations.setter
     def resource_share_associations(self, resource_share_associations):
-        """Sets the resource_share_associations of this SearchResourceShareAssociationsResponse.
+        r"""Sets the resource_share_associations of this SearchResourceShareAssociationsResponse.
 
         绑定的详细信息列表。
 
@@ -73,7 +73,7 @@ class SearchResourceShareAssociationsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this SearchResourceShareAssociationsResponse.
+        r"""Gets the page_info of this SearchResourceShareAssociationsResponse.
 
         :return: The page_info of this SearchResourceShareAssociationsResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -82,7 +82,7 @@ class SearchResourceShareAssociationsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this SearchResourceShareAssociationsResponse.
+        r"""Sets the page_info of this SearchResourceShareAssociationsResponse.
 
         :param page_info: The page_info of this SearchResourceShareAssociationsResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

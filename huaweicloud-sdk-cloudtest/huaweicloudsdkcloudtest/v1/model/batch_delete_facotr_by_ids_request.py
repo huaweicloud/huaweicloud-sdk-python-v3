@@ -27,7 +27,7 @@ class BatchDeleteFacotrByIdsRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchDeleteFacotrByIdsRequest
+        r"""BatchDeleteFacotrByIdsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteFacotrByIdsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchDeleteFacotrByIdsRequest.
+        r"""Gets the project_id of this BatchDeleteFacotrByIdsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class BatchDeleteFacotrByIdsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchDeleteFacotrByIdsRequest.
+        r"""Sets the project_id of this BatchDeleteFacotrByIdsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class BatchDeleteFacotrByIdsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteFacotrByIdsRequest.
+        r"""Gets the body of this BatchDeleteFacotrByIdsRequest.
 
         :return: The body of this BatchDeleteFacotrByIdsRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestListString`
@@ -80,7 +80,7 @@ class BatchDeleteFacotrByIdsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteFacotrByIdsRequest.
+        r"""Sets the body of this BatchDeleteFacotrByIdsRequest.
 
         :param body: The body of this BatchDeleteFacotrByIdsRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestListString`

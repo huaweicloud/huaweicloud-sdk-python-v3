@@ -26,7 +26,7 @@ class RestoreExistingInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestoreExistingInstanceResponse
+        r"""RestoreExistingInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestoreExistingInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestoreExistingInstanceResponse.
+        r"""Gets the job_id of this RestoreExistingInstanceResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class RestoreExistingInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestoreExistingInstanceResponse.
+        r"""Sets the job_id of this RestoreExistingInstanceResponse.
 
         任务ID。
 

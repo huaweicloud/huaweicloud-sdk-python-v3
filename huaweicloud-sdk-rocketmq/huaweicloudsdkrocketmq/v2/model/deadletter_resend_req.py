@@ -27,7 +27,7 @@ class DeadletterResendReq:
     }
 
     def __init__(self, topic=None, msg_id_list=None):
-        """DeadletterResendReq
+        r"""DeadletterResendReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeadletterResendReq:
 
     @property
     def topic(self):
-        """Gets the topic of this DeadletterResendReq.
+        r"""Gets the topic of this DeadletterResendReq.
 
         Topic名称。
 
@@ -61,7 +61,7 @@ class DeadletterResendReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this DeadletterResendReq.
+        r"""Sets the topic of this DeadletterResendReq.
 
         Topic名称。
 
@@ -72,7 +72,7 @@ class DeadletterResendReq:
 
     @property
     def msg_id_list(self):
-        """Gets the msg_id_list of this DeadletterResendReq.
+        r"""Gets the msg_id_list of this DeadletterResendReq.
 
         消息列表。
 
@@ -83,7 +83,7 @@ class DeadletterResendReq:
 
     @msg_id_list.setter
     def msg_id_list(self, msg_id_list):
-        """Sets the msg_id_list of this DeadletterResendReq.
+        r"""Sets the msg_id_list of this DeadletterResendReq.
 
         消息列表。
 

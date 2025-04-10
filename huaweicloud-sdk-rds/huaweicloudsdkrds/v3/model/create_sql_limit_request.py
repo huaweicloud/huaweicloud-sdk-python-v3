@@ -27,7 +27,7 @@ class CreateSqlLimitRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateSqlLimitRequest
+        r"""CreateSqlLimitRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSqlLimitRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSqlLimitRequest.
+        r"""Gets the instance_id of this CreateSqlLimitRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateSqlLimitRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSqlLimitRequest.
+        r"""Sets the instance_id of this CreateSqlLimitRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateSqlLimitRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSqlLimitRequest.
+        r"""Gets the body of this CreateSqlLimitRequest.
 
         :return: The body of this CreateSqlLimitRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlLimitRuleReqV3`
@@ -80,7 +80,7 @@ class CreateSqlLimitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSqlLimitRequest.
+        r"""Sets the body of this CreateSqlLimitRequest.
 
         :param body: The body of this CreateSqlLimitRequest.
         :type body: :class:`huaweicloudsdkrds.v3.CreateSqlLimitRuleReqV3`

@@ -25,7 +25,7 @@ class ExtendReplicationRequestBody:
     }
 
     def __init__(self, extend_replication=None):
-        """ExtendReplicationRequestBody
+        r"""ExtendReplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExtendReplicationRequestBody:
 
     @property
     def extend_replication(self):
-        """Gets the extend_replication of this ExtendReplicationRequestBody.
+        r"""Gets the extend_replication of this ExtendReplicationRequestBody.
 
         :return: The extend_replication of this ExtendReplicationRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestParams`
@@ -51,7 +51,7 @@ class ExtendReplicationRequestBody:
 
     @extend_replication.setter
     def extend_replication(self, extend_replication):
-        """Sets the extend_replication of this ExtendReplicationRequestBody.
+        r"""Sets the extend_replication of this ExtendReplicationRequestBody.
 
         :param extend_replication: The extend_replication of this ExtendReplicationRequestBody.
         :type extend_replication: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestParams`

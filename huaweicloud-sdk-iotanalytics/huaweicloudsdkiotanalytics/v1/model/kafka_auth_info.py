@@ -27,7 +27,7 @@ class KafkaAuthInfo:
     }
 
     def __init__(self, security_protocol=None, sasl_plain_auth_info=None):
-        """KafkaAuthInfo
+        r"""KafkaAuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KafkaAuthInfo:
 
     @property
     def security_protocol(self):
-        """Gets the security_protocol of this KafkaAuthInfo.
+        r"""Gets the security_protocol of this KafkaAuthInfo.
 
         安全协议
 
@@ -60,7 +60,7 @@ class KafkaAuthInfo:
 
     @security_protocol.setter
     def security_protocol(self, security_protocol):
-        """Sets the security_protocol of this KafkaAuthInfo.
+        r"""Sets the security_protocol of this KafkaAuthInfo.
 
         安全协议
 
@@ -71,7 +71,7 @@ class KafkaAuthInfo:
 
     @property
     def sasl_plain_auth_info(self):
-        """Gets the sasl_plain_auth_info of this KafkaAuthInfo.
+        r"""Gets the sasl_plain_auth_info of this KafkaAuthInfo.
 
         :return: The sasl_plain_auth_info of this KafkaAuthInfo.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`
@@ -80,7 +80,7 @@ class KafkaAuthInfo:
 
     @sasl_plain_auth_info.setter
     def sasl_plain_auth_info(self, sasl_plain_auth_info):
-        """Sets the sasl_plain_auth_info of this KafkaAuthInfo.
+        r"""Sets the sasl_plain_auth_info of this KafkaAuthInfo.
 
         :param sasl_plain_auth_info: The sasl_plain_auth_info of this KafkaAuthInfo.
         :type sasl_plain_auth_info: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`

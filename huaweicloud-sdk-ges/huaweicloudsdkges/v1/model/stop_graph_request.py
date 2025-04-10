@@ -27,7 +27,7 @@ class StopGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None):
-        """StopGraphRequest
+        r"""StopGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StopGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this StopGraphRequest.
+        r"""Gets the graph_id of this StopGraphRequest.
 
         图ID。
 
@@ -59,7 +59,7 @@ class StopGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this StopGraphRequest.
+        r"""Sets the graph_id of this StopGraphRequest.
 
         图ID。
 
@@ -70,7 +70,7 @@ class StopGraphRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this StopGraphRequest.
+        r"""Gets the action_id of this StopGraphRequest.
 
         图actionId
 
@@ -81,7 +81,7 @@ class StopGraphRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this StopGraphRequest.
+        r"""Sets the action_id of this StopGraphRequest.
 
         图actionId
 

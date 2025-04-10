@@ -27,7 +27,7 @@ class DiskDto:
     }
 
     def __init__(self, type=None, space=None):
-        """DiskDto
+        r"""DiskDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DiskDto:
 
     @property
     def type(self):
-        """Gets the type of this DiskDto.
+        r"""Gets the type of this DiskDto.
 
         磁盘类型
 
@@ -61,7 +61,7 @@ class DiskDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DiskDto.
+        r"""Sets the type of this DiskDto.
 
         磁盘类型
 
@@ -72,7 +72,7 @@ class DiskDto:
 
     @property
     def space(self):
-        """Gets the space of this DiskDto.
+        r"""Gets the space of this DiskDto.
 
         磁盘大小
 
@@ -83,7 +83,7 @@ class DiskDto:
 
     @space.setter
     def space(self, space):
-        """Sets the space of this DiskDto.
+        r"""Sets the space of this DiskDto.
 
         磁盘大小
 

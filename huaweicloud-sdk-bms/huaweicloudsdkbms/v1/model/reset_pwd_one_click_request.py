@@ -27,7 +27,7 @@ class ResetPwdOneClickRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ResetPwdOneClickRequest
+        r"""ResetPwdOneClickRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetPwdOneClickRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ResetPwdOneClickRequest.
+        r"""Gets the server_id of this ResetPwdOneClickRequest.
 
         裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
 
@@ -60,7 +60,7 @@ class ResetPwdOneClickRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ResetPwdOneClickRequest.
+        r"""Sets the server_id of this ResetPwdOneClickRequest.
 
         裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
 
@@ -71,7 +71,7 @@ class ResetPwdOneClickRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetPwdOneClickRequest.
+        r"""Gets the body of this ResetPwdOneClickRequest.
 
         :return: The body of this ResetPwdOneClickRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.ResetPasswordBody`
@@ -80,7 +80,7 @@ class ResetPwdOneClickRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetPwdOneClickRequest.
+        r"""Sets the body of this ResetPwdOneClickRequest.
 
         :param body: The body of this ResetPwdOneClickRequest.
         :type body: :class:`huaweicloudsdkbms.v1.ResetPasswordBody`

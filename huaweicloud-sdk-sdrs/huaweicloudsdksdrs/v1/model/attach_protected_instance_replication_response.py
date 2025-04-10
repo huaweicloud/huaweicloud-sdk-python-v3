@@ -26,7 +26,7 @@ class AttachProtectedInstanceReplicationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """AttachProtectedInstanceReplicationResponse
+        r"""AttachProtectedInstanceReplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AttachProtectedInstanceReplicationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AttachProtectedInstanceReplicationResponse.
+        r"""Gets the job_id of this AttachProtectedInstanceReplicationResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class AttachProtectedInstanceReplicationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AttachProtectedInstanceReplicationResponse.
+        r"""Sets the job_id of this AttachProtectedInstanceReplicationResponse.
 
         成功返回jobId信息
 

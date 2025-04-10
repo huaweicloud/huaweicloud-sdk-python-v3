@@ -25,7 +25,7 @@ class DeleteDrugDatabaseRequest:
     }
 
     def __init__(self, database_id=None):
-        """DeleteDrugDatabaseRequest
+        r"""DeleteDrugDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDrugDatabaseRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this DeleteDrugDatabaseRequest.
+        r"""Gets the database_id of this DeleteDrugDatabaseRequest.
 
         数据库id
 
@@ -53,7 +53,7 @@ class DeleteDrugDatabaseRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this DeleteDrugDatabaseRequest.
+        r"""Sets the database_id of this DeleteDrugDatabaseRequest.
 
         数据库id
 

@@ -29,7 +29,7 @@ class AttributeInfo:
     }
 
     def __init__(self, rank_feature_pairs=None, numerical_attrs=None, num_statistics_type=None):
-        """AttributeInfo
+        r"""AttributeInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AttributeInfo:
 
     @property
     def rank_feature_pairs(self):
-        """Gets the rank_feature_pairs of this AttributeInfo.
+        r"""Gets the rank_feature_pairs of this AttributeInfo.
 
         属性匹配对。
 
@@ -68,7 +68,7 @@ class AttributeInfo:
 
     @rank_feature_pairs.setter
     def rank_feature_pairs(self, rank_feature_pairs):
-        """Sets the rank_feature_pairs of this AttributeInfo.
+        r"""Sets the rank_feature_pairs of this AttributeInfo.
 
         属性匹配对。
 
@@ -79,7 +79,7 @@ class AttributeInfo:
 
     @property
     def numerical_attrs(self):
-        """Gets the numerical_attrs of this AttributeInfo.
+        r"""Gets the numerical_attrs of this AttributeInfo.
 
         属性权重。
 
@@ -90,7 +90,7 @@ class AttributeInfo:
 
     @numerical_attrs.setter
     def numerical_attrs(self, numerical_attrs):
-        """Sets the numerical_attrs of this AttributeInfo.
+        r"""Sets the numerical_attrs of this AttributeInfo.
 
         属性权重。
 
@@ -101,7 +101,7 @@ class AttributeInfo:
 
     @property
     def num_statistics_type(self):
-        """Gets the num_statistics_type of this AttributeInfo.
+        r"""Gets the num_statistics_type of this AttributeInfo.
 
         统计方式： - ORDER，顺序 - ABS，绝对值
 
@@ -112,7 +112,7 @@ class AttributeInfo:
 
     @num_statistics_type.setter
     def num_statistics_type(self, num_statistics_type):
-        """Sets the num_statistics_type of this AttributeInfo.
+        r"""Sets the num_statistics_type of this AttributeInfo.
 
         统计方式： - ORDER，顺序 - ABS，绝对值
 

@@ -29,7 +29,7 @@ class Expression:
     }
 
     def __init__(self, single_field_expression=None, multi_field_expression=None, composed_expression=None):
-        """Expression
+        r"""Expression
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Expression:
 
     @property
     def single_field_expression(self):
-        """Gets the single_field_expression of this Expression.
+        r"""Gets the single_field_expression of this Expression.
 
         :return: The single_field_expression of this Expression.
         :rtype: :class:`huaweicloudsdkkvs.v1.SingleFieldExpression`
@@ -66,7 +66,7 @@ class Expression:
 
     @single_field_expression.setter
     def single_field_expression(self, single_field_expression):
-        """Sets the single_field_expression of this Expression.
+        r"""Sets the single_field_expression of this Expression.
 
         :param single_field_expression: The single_field_expression of this Expression.
         :type single_field_expression: :class:`huaweicloudsdkkvs.v1.SingleFieldExpression`
@@ -75,7 +75,7 @@ class Expression:
 
     @property
     def multi_field_expression(self):
-        """Gets the multi_field_expression of this Expression.
+        r"""Gets the multi_field_expression of this Expression.
 
         :return: The multi_field_expression of this Expression.
         :rtype: :class:`huaweicloudsdkkvs.v1.MultiFieldExpression`
@@ -84,7 +84,7 @@ class Expression:
 
     @multi_field_expression.setter
     def multi_field_expression(self, multi_field_expression):
-        """Sets the multi_field_expression of this Expression.
+        r"""Sets the multi_field_expression of this Expression.
 
         :param multi_field_expression: The multi_field_expression of this Expression.
         :type multi_field_expression: :class:`huaweicloudsdkkvs.v1.MultiFieldExpression`
@@ -93,7 +93,7 @@ class Expression:
 
     @property
     def composed_expression(self):
-        """Gets the composed_expression of this Expression.
+        r"""Gets the composed_expression of this Expression.
 
         :return: The composed_expression of this Expression.
         :rtype: :class:`huaweicloudsdkkvs.v1.ComposedExpression`
@@ -102,7 +102,7 @@ class Expression:
 
     @composed_expression.setter
     def composed_expression(self, composed_expression):
-        """Sets the composed_expression of this Expression.
+        r"""Sets the composed_expression of this Expression.
 
         :param composed_expression: The composed_expression of this Expression.
         :type composed_expression: :class:`huaweicloudsdkkvs.v1.ComposedExpression`

@@ -37,7 +37,7 @@ class AlarmCondition:
     }
 
     def __init__(self, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, suppress_duration=None):
-        """AlarmCondition
+        r"""AlarmCondition
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AlarmCondition:
 
     @property
     def period(self):
-        """Gets the period of this AlarmCondition.
+        r"""Gets the period of this AlarmCondition.
 
         指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；如想了解各个云服务的指标原始周期可以参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)， 300代表指标按5分钟聚合周期为一个数据点参与告警计算。
 
@@ -91,7 +91,7 @@ class AlarmCondition:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this AlarmCondition.
+        r"""Sets the period of this AlarmCondition.
 
         指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；如想了解各个云服务的指标原始周期可以参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)， 300代表指标按5分钟聚合周期为一个数据点参与告警计算。
 
@@ -102,7 +102,7 @@ class AlarmCondition:
 
     @property
     def filter(self):
-        """Gets the filter of this AlarmCondition.
+        r"""Gets the filter of this AlarmCondition.
 
         聚合方式, 支持的值为(average|min|max|sum)
 
@@ -113,7 +113,7 @@ class AlarmCondition:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this AlarmCondition.
+        r"""Sets the filter of this AlarmCondition.
 
         聚合方式, 支持的值为(average|min|max|sum)
 
@@ -124,7 +124,7 @@ class AlarmCondition:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this AlarmCondition.
+        r"""Gets the comparison_operator of this AlarmCondition.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -135,7 +135,7 @@ class AlarmCondition:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this AlarmCondition.
+        r"""Sets the comparison_operator of this AlarmCondition.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -146,7 +146,7 @@ class AlarmCondition:
 
     @property
     def value(self):
-        """Gets the value of this AlarmCondition.
+        r"""Gets the value of this AlarmCondition.
 
         告警阈值，取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。
 
@@ -157,7 +157,7 @@ class AlarmCondition:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AlarmCondition.
+        r"""Sets the value of this AlarmCondition.
 
         告警阈值，取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。
 
@@ -168,7 +168,7 @@ class AlarmCondition:
 
     @property
     def unit(self):
-        """Gets the unit of this AlarmCondition.
+        r"""Gets the unit of this AlarmCondition.
 
         数据的单位，最大长度为32位。
 
@@ -179,7 +179,7 @@ class AlarmCondition:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this AlarmCondition.
+        r"""Sets the unit of this AlarmCondition.
 
         数据的单位，最大长度为32位。
 
@@ -190,7 +190,7 @@ class AlarmCondition:
 
     @property
     def count(self):
-        """Gets the count of this AlarmCondition.
+        r"""Gets the count of this AlarmCondition.
 
         次数
 
@@ -201,7 +201,7 @@ class AlarmCondition:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this AlarmCondition.
+        r"""Sets the count of this AlarmCondition.
 
         次数
 
@@ -212,7 +212,7 @@ class AlarmCondition:
 
     @property
     def suppress_duration(self):
-        """Gets the suppress_duration of this AlarmCondition.
+        r"""Gets the suppress_duration of this AlarmCondition.
 
         告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
 
@@ -223,7 +223,7 @@ class AlarmCondition:
 
     @suppress_duration.setter
     def suppress_duration(self, suppress_duration):
-        """Sets the suppress_duration of this AlarmCondition.
+        r"""Sets the suppress_duration of this AlarmCondition.
 
         告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
 

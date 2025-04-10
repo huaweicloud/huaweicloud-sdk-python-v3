@@ -31,7 +31,7 @@ class NamedEntity:
     }
 
     def __init__(self, word=None, tag=None, offset=None, len=None):
-        """NamedEntity
+        r"""NamedEntity
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class NamedEntity:
 
     @property
     def word(self):
-        """Gets the word of this NamedEntity.
+        r"""Gets the word of this NamedEntity.
 
         实体文本。
 
@@ -71,7 +71,7 @@ class NamedEntity:
 
     @word.setter
     def word(self, word):
-        """Sets the word of this NamedEntity.
+        r"""Sets the word of this NamedEntity.
 
         实体文本。
 
@@ -82,7 +82,7 @@ class NamedEntity:
 
     @property
     def tag(self):
-        """Gets the tag of this NamedEntity.
+        r"""Gets the tag of this NamedEntity.
 
         实体类型，枚举类型。 中文支持人名“nr”，地名“ns”，机构名“nt”，时间“t”。 英文支持人名“per”，地名“loc”，机构名“org”，时间“t”。 西班牙文支持人名“per”，地名“loc”，机构名“org”，时间“t”。
 
@@ -93,7 +93,7 @@ class NamedEntity:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this NamedEntity.
+        r"""Sets the tag of this NamedEntity.
 
         实体类型，枚举类型。 中文支持人名“nr”，地名“ns”，机构名“nt”，时间“t”。 英文支持人名“per”，地名“loc”，机构名“org”，时间“t”。 西班牙文支持人名“per”，地名“loc”，机构名“org”，时间“t”。
 
@@ -104,7 +104,7 @@ class NamedEntity:
 
     @property
     def offset(self):
-        """Gets the offset of this NamedEntity.
+        r"""Gets the offset of this NamedEntity.
 
         实体文本在待分析文本中的起始位置。
 
@@ -115,7 +115,7 @@ class NamedEntity:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this NamedEntity.
+        r"""Sets the offset of this NamedEntity.
 
         实体文本在待分析文本中的起始位置。
 
@@ -126,7 +126,7 @@ class NamedEntity:
 
     @property
     def len(self):
-        """Gets the len of this NamedEntity.
+        r"""Gets the len of this NamedEntity.
 
         实体文本长度。
 
@@ -137,7 +137,7 @@ class NamedEntity:
 
     @len.setter
     def len(self, len):
-        """Sets the len of this NamedEntity.
+        r"""Sets the len of this NamedEntity.
 
         实体文本长度。
 

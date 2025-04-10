@@ -31,7 +31,7 @@ class RestChairViewReqBody:
     }
 
     def __init__(self, view_type=None, participant_id=None, switch_time=None, status=None):
-        """RestChairViewReqBody
+        r"""RestChairViewReqBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class RestChairViewReqBody:
 
     @property
     def view_type(self):
-        """Gets the view_type of this RestChairViewReqBody.
+        r"""Gets the view_type of this RestChairViewReqBody.
 
         主持人观看的画面类型。 - 0: 主持人轮询 - 1: 主持人观看多画面 - 2: 主持人选看会场
 
@@ -74,7 +74,7 @@ class RestChairViewReqBody:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this RestChairViewReqBody.
+        r"""Sets the view_type of this RestChairViewReqBody.
 
         主持人观看的画面类型。 - 0: 主持人轮询 - 1: 主持人观看多画面 - 2: 主持人选看会场
 
@@ -85,7 +85,7 @@ class RestChairViewReqBody:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RestChairViewReqBody.
+        r"""Gets the participant_id of this RestChairViewReqBody.
 
         被主持人选看的会场。 当为主持人选看会场时为必填参数。
 
@@ -96,7 +96,7 @@ class RestChairViewReqBody:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RestChairViewReqBody.
+        r"""Sets the participant_id of this RestChairViewReqBody.
 
         被主持人选看的会场。 当为主持人选看会场时为必填参数。
 
@@ -107,7 +107,7 @@ class RestChairViewReqBody:
 
     @property
     def switch_time(self):
-        """Gets the switch_time of this RestChairViewReqBody.
+        r"""Gets the switch_time of this RestChairViewReqBody.
 
         轮询间隔，单位：秒。 主持人轮询时，必填字段。 范围:[10-120]，默认值：10。
 
@@ -118,7 +118,7 @@ class RestChairViewReqBody:
 
     @switch_time.setter
     def switch_time(self, switch_time):
-        """Sets the switch_time of this RestChairViewReqBody.
+        r"""Sets the switch_time of this RestChairViewReqBody.
 
         轮询间隔，单位：秒。 主持人轮询时，必填字段。 范围:[10-120]，默认值：10。
 
@@ -129,7 +129,7 @@ class RestChairViewReqBody:
 
     @property
     def status(self):
-        """Gets the status of this RestChairViewReqBody.
+        r"""Gets the status of this RestChairViewReqBody.
 
         启动/停止轮询。 主持人轮询时，必填字段。 - 0: 停止轮询 - 1: 启动轮询
 
@@ -140,7 +140,7 @@ class RestChairViewReqBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RestChairViewReqBody.
+        r"""Sets the status of this RestChairViewReqBody.
 
         启动/停止轮询。 主持人轮询时，必填字段。 - 0: 停止轮询 - 1: 启动轮询
 

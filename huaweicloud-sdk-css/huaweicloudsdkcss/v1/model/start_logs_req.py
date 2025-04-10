@@ -35,7 +35,7 @@ class StartLogsReq:
     }
 
     def __init__(self, agency=None, log_base_path=None, log_bucket=None, index_prefix=None, keep_days=None, target_cluster_id=None):
-        """StartLogsReq
+        r"""StartLogsReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class StartLogsReq:
 
     @property
     def agency(self):
-        """Gets the agency of this StartLogsReq.
+        r"""Gets the agency of this StartLogsReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -86,7 +86,7 @@ class StartLogsReq:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this StartLogsReq.
+        r"""Sets the agency of this StartLogsReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -97,7 +97,7 @@ class StartLogsReq:
 
     @property
     def log_base_path(self):
-        """Gets the log_base_path of this StartLogsReq.
+        r"""Gets the log_base_path of this StartLogsReq.
 
         日志在OBS桶中的备份路径。
 
@@ -108,7 +108,7 @@ class StartLogsReq:
 
     @log_base_path.setter
     def log_base_path(self, log_base_path):
-        """Sets the log_base_path of this StartLogsReq.
+        r"""Sets the log_base_path of this StartLogsReq.
 
         日志在OBS桶中的备份路径。
 
@@ -119,7 +119,7 @@ class StartLogsReq:
 
     @property
     def log_bucket(self):
-        """Gets the log_bucket of this StartLogsReq.
+        r"""Gets the log_bucket of this StartLogsReq.
 
         用于存储日志的OBS桶的桶名。
 
@@ -130,7 +130,7 @@ class StartLogsReq:
 
     @log_bucket.setter
     def log_bucket(self, log_bucket):
-        """Sets the log_bucket of this StartLogsReq.
+        r"""Sets the log_bucket of this StartLogsReq.
 
         用于存储日志的OBS桶的桶名。
 
@@ -141,7 +141,7 @@ class StartLogsReq:
 
     @property
     def index_prefix(self):
-        """Gets the index_prefix of this StartLogsReq.
+        r"""Gets the index_prefix of this StartLogsReq.
 
         保存日志的索引前缀。action等于real_time_log_collect时必选
 
@@ -152,7 +152,7 @@ class StartLogsReq:
 
     @index_prefix.setter
     def index_prefix(self, index_prefix):
-        """Sets the index_prefix of this StartLogsReq.
+        r"""Sets the index_prefix of this StartLogsReq.
 
         保存日志的索引前缀。action等于real_time_log_collect时必选
 
@@ -163,7 +163,7 @@ class StartLogsReq:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this StartLogsReq.
+        r"""Gets the keep_days of this StartLogsReq.
 
         日志保存时间。action等于real_time_log_collect时必选
 
@@ -174,7 +174,7 @@ class StartLogsReq:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this StartLogsReq.
+        r"""Sets the keep_days of this StartLogsReq.
 
         日志保存时间。action等于real_time_log_collect时必选
 
@@ -185,7 +185,7 @@ class StartLogsReq:
 
     @property
     def target_cluster_id(self):
-        """Gets the target_cluster_id of this StartLogsReq.
+        r"""Gets the target_cluster_id of this StartLogsReq.
 
         保存日志的目标集群。action等于real_time_log_collect时必选
 
@@ -196,7 +196,7 @@ class StartLogsReq:
 
     @target_cluster_id.setter
     def target_cluster_id(self, target_cluster_id):
-        """Sets the target_cluster_id of this StartLogsReq.
+        r"""Sets the target_cluster_id of this StartLogsReq.
 
         保存日志的目标集群。action等于real_time_log_collect时必选
 

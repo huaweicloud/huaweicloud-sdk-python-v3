@@ -63,7 +63,7 @@ class DataSource:
     }
 
     def __init__(self, datasource_name=None, datasource_type=None, datasource_guid=None, datasource_qualified_name=None, obs_folder_count=None, obs_file_count=None, css_index_count=None, css_index_field_count=None, namespace_count=None, ges_vertex_count=None, ges_edge_count=None, database_count=None, stream_count=None, table_count=None, data_size=None, databases=None, folders=None, css_indices=None, namespaces=None, dis_streams=None):
-        """DataSource
+        r"""DataSource
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class DataSource:
 
     @property
     def datasource_name(self):
-        """Gets the datasource_name of this DataSource.
+        r"""Gets the datasource_name of this DataSource.
 
         数据连接名称
 
@@ -187,7 +187,7 @@ class DataSource:
 
     @datasource_name.setter
     def datasource_name(self, datasource_name):
-        """Sets the datasource_name of this DataSource.
+        r"""Sets the datasource_name of this DataSource.
 
         数据连接名称
 
@@ -198,7 +198,7 @@ class DataSource:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DataSource.
+        r"""Gets the datasource_type of this DataSource.
 
         数据连接类型
 
@@ -209,7 +209,7 @@ class DataSource:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DataSource.
+        r"""Sets the datasource_type of this DataSource.
 
         数据连接类型
 
@@ -220,7 +220,7 @@ class DataSource:
 
     @property
     def datasource_guid(self):
-        """Gets the datasource_guid of this DataSource.
+        r"""Gets the datasource_guid of this DataSource.
 
         数据连接guid
 
@@ -231,7 +231,7 @@ class DataSource:
 
     @datasource_guid.setter
     def datasource_guid(self, datasource_guid):
-        """Sets the datasource_guid of this DataSource.
+        r"""Sets the datasource_guid of this DataSource.
 
         数据连接guid
 
@@ -242,7 +242,7 @@ class DataSource:
 
     @property
     def datasource_qualified_name(self):
-        """Gets the datasource_qualified_name of this DataSource.
+        r"""Gets the datasource_qualified_name of this DataSource.
 
         数据连接唯一标识名称
 
@@ -253,7 +253,7 @@ class DataSource:
 
     @datasource_qualified_name.setter
     def datasource_qualified_name(self, datasource_qualified_name):
-        """Sets the datasource_qualified_name of this DataSource.
+        r"""Sets the datasource_qualified_name of this DataSource.
 
         数据连接唯一标识名称
 
@@ -264,7 +264,7 @@ class DataSource:
 
     @property
     def obs_folder_count(self):
-        """Gets the obs_folder_count of this DataSource.
+        r"""Gets the obs_folder_count of this DataSource.
 
         obs目录数
 
@@ -275,7 +275,7 @@ class DataSource:
 
     @obs_folder_count.setter
     def obs_folder_count(self, obs_folder_count):
-        """Sets the obs_folder_count of this DataSource.
+        r"""Sets the obs_folder_count of this DataSource.
 
         obs目录数
 
@@ -286,7 +286,7 @@ class DataSource:
 
     @property
     def obs_file_count(self):
-        """Gets the obs_file_count of this DataSource.
+        r"""Gets the obs_file_count of this DataSource.
 
         obs文件数
 
@@ -297,7 +297,7 @@ class DataSource:
 
     @obs_file_count.setter
     def obs_file_count(self, obs_file_count):
-        """Sets the obs_file_count of this DataSource.
+        r"""Sets the obs_file_count of this DataSource.
 
         obs文件数
 
@@ -308,7 +308,7 @@ class DataSource:
 
     @property
     def css_index_count(self):
-        """Gets the css_index_count of this DataSource.
+        r"""Gets the css_index_count of this DataSource.
 
         css索引数
 
@@ -319,7 +319,7 @@ class DataSource:
 
     @css_index_count.setter
     def css_index_count(self, css_index_count):
-        """Sets the css_index_count of this DataSource.
+        r"""Sets the css_index_count of this DataSource.
 
         css索引数
 
@@ -330,7 +330,7 @@ class DataSource:
 
     @property
     def css_index_field_count(self):
-        """Gets the css_index_field_count of this DataSource.
+        r"""Gets the css_index_field_count of this DataSource.
 
         css 索引字段数目
 
@@ -341,7 +341,7 @@ class DataSource:
 
     @css_index_field_count.setter
     def css_index_field_count(self, css_index_field_count):
-        """Sets the css_index_field_count of this DataSource.
+        r"""Sets the css_index_field_count of this DataSource.
 
         css 索引字段数目
 
@@ -352,7 +352,7 @@ class DataSource:
 
     @property
     def namespace_count(self):
-        """Gets the namespace_count of this DataSource.
+        r"""Gets the namespace_count of this DataSource.
 
         命名空间数
 
@@ -363,7 +363,7 @@ class DataSource:
 
     @namespace_count.setter
     def namespace_count(self, namespace_count):
-        """Sets the namespace_count of this DataSource.
+        r"""Sets the namespace_count of this DataSource.
 
         命名空间数
 
@@ -374,7 +374,7 @@ class DataSource:
 
     @property
     def ges_vertex_count(self):
-        """Gets the ges_vertex_count of this DataSource.
+        r"""Gets the ges_vertex_count of this DataSource.
 
         ges点的总数
 
@@ -385,7 +385,7 @@ class DataSource:
 
     @ges_vertex_count.setter
     def ges_vertex_count(self, ges_vertex_count):
-        """Sets the ges_vertex_count of this DataSource.
+        r"""Sets the ges_vertex_count of this DataSource.
 
         ges点的总数
 
@@ -396,7 +396,7 @@ class DataSource:
 
     @property
     def ges_edge_count(self):
-        """Gets the ges_edge_count of this DataSource.
+        r"""Gets the ges_edge_count of this DataSource.
 
         ges边的总数
 
@@ -407,7 +407,7 @@ class DataSource:
 
     @ges_edge_count.setter
     def ges_edge_count(self, ges_edge_count):
-        """Sets the ges_edge_count of this DataSource.
+        r"""Sets the ges_edge_count of this DataSource.
 
         ges边的总数
 
@@ -418,7 +418,7 @@ class DataSource:
 
     @property
     def database_count(self):
-        """Gets the database_count of this DataSource.
+        r"""Gets the database_count of this DataSource.
 
         数据库总数
 
@@ -429,7 +429,7 @@ class DataSource:
 
     @database_count.setter
     def database_count(self, database_count):
-        """Sets the database_count of this DataSource.
+        r"""Sets the database_count of this DataSource.
 
         数据库总数
 
@@ -440,7 +440,7 @@ class DataSource:
 
     @property
     def stream_count(self):
-        """Gets the stream_count of this DataSource.
+        r"""Gets the stream_count of this DataSource.
 
         通道总数
 
@@ -451,7 +451,7 @@ class DataSource:
 
     @stream_count.setter
     def stream_count(self, stream_count):
-        """Sets the stream_count of this DataSource.
+        r"""Sets the stream_count of this DataSource.
 
         通道总数
 
@@ -462,7 +462,7 @@ class DataSource:
 
     @property
     def table_count(self):
-        """Gets the table_count of this DataSource.
+        r"""Gets the table_count of this DataSource.
 
         表总数
 
@@ -473,7 +473,7 @@ class DataSource:
 
     @table_count.setter
     def table_count(self, table_count):
-        """Sets the table_count of this DataSource.
+        r"""Sets the table_count of this DataSource.
 
         表总数
 
@@ -484,7 +484,7 @@ class DataSource:
 
     @property
     def data_size(self):
-        """Gets the data_size of this DataSource.
+        r"""Gets the data_size of this DataSource.
 
         数据大小
 
@@ -495,7 +495,7 @@ class DataSource:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this DataSource.
+        r"""Sets the data_size of this DataSource.
 
         数据大小
 
@@ -506,7 +506,7 @@ class DataSource:
 
     @property
     def databases(self):
-        """Gets the databases of this DataSource.
+        r"""Gets the databases of this DataSource.
 
         数据库统计信息
 
@@ -517,7 +517,7 @@ class DataSource:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this DataSource.
+        r"""Sets the databases of this DataSource.
 
         数据库统计信息
 
@@ -528,7 +528,7 @@ class DataSource:
 
     @property
     def folders(self):
-        """Gets the folders of this DataSource.
+        r"""Gets the folders of this DataSource.
 
         顶层目录统计信息
 
@@ -539,7 +539,7 @@ class DataSource:
 
     @folders.setter
     def folders(self, folders):
-        """Sets the folders of this DataSource.
+        r"""Sets the folders of this DataSource.
 
         顶层目录统计信息
 
@@ -550,7 +550,7 @@ class DataSource:
 
     @property
     def css_indices(self):
-        """Gets the css_indices of this DataSource.
+        r"""Gets the css_indices of this DataSource.
 
         css索引统计信息
 
@@ -561,7 +561,7 @@ class DataSource:
 
     @css_indices.setter
     def css_indices(self, css_indices):
-        """Sets the css_indices of this DataSource.
+        r"""Sets the css_indices of this DataSource.
 
         css索引统计信息
 
@@ -572,7 +572,7 @@ class DataSource:
 
     @property
     def namespaces(self):
-        """Gets the namespaces of this DataSource.
+        r"""Gets the namespaces of this DataSource.
 
         命名空间统计信息
 
@@ -583,7 +583,7 @@ class DataSource:
 
     @namespaces.setter
     def namespaces(self, namespaces):
-        """Sets the namespaces of this DataSource.
+        r"""Sets the namespaces of this DataSource.
 
         命名空间统计信息
 
@@ -594,7 +594,7 @@ class DataSource:
 
     @property
     def dis_streams(self):
-        """Gets the dis_streams of this DataSource.
+        r"""Gets the dis_streams of this DataSource.
 
         通道统计信息
 
@@ -605,7 +605,7 @@ class DataSource:
 
     @dis_streams.setter
     def dis_streams(self, dis_streams):
-        """Sets the dis_streams of this DataSource.
+        r"""Sets the dis_streams of this DataSource.
 
         通道统计信息
 

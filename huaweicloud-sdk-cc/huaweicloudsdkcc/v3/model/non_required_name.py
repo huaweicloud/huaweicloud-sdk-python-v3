@@ -25,7 +25,7 @@ class NonRequiredName:
     }
 
     def __init__(self, name=None):
-        """NonRequiredName
+        r"""NonRequiredName
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NonRequiredName:
 
     @property
     def name(self):
-        """Gets the name of this NonRequiredName.
+        r"""Gets the name of this NonRequiredName.
 
         实例名字。
 
@@ -54,7 +54,7 @@ class NonRequiredName:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NonRequiredName.
+        r"""Sets the name of this NonRequiredName.
 
         实例名字。
 

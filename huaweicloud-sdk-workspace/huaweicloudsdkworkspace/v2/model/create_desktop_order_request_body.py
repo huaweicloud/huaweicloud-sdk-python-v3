@@ -37,7 +37,7 @@ class CreateDesktopOrderRequestBody:
     }
 
     def __init__(self, enterprise_project_id=None, hour_package_resources=None, order_id=None, promotion_id=None, promotion_plan_id=None, promotion_info=None, extend_param=None):
-        """CreateDesktopOrderRequestBody
+        r"""CreateDesktopOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDesktopOrderRequestBody.
+        r"""Gets the enterprise_project_id of this CreateDesktopOrderRequestBody.
 
         企业项目ID，默认\"0\"
 
@@ -95,7 +95,7 @@ class CreateDesktopOrderRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDesktopOrderRequestBody.
+        r"""Sets the enterprise_project_id of this CreateDesktopOrderRequestBody.
 
         企业项目ID，默认\"0\"
 
@@ -106,7 +106,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def hour_package_resources(self):
-        """Gets the hour_package_resources of this CreateDesktopOrderRequestBody.
+        r"""Gets the hour_package_resources of this CreateDesktopOrderRequestBody.
 
         小时包资源
 
@@ -117,7 +117,7 @@ class CreateDesktopOrderRequestBody:
 
     @hour_package_resources.setter
     def hour_package_resources(self, hour_package_resources):
-        """Sets the hour_package_resources of this CreateDesktopOrderRequestBody.
+        r"""Sets the hour_package_resources of this CreateDesktopOrderRequestBody.
 
         小时包资源
 
@@ -128,7 +128,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateDesktopOrderRequestBody.
+        r"""Gets the order_id of this CreateDesktopOrderRequestBody.
 
         组合购订单ID
 
@@ -139,7 +139,7 @@ class CreateDesktopOrderRequestBody:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateDesktopOrderRequestBody.
+        r"""Sets the order_id of this CreateDesktopOrderRequestBody.
 
         组合购订单ID
 
@@ -150,7 +150,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def promotion_id(self):
-        """Gets the promotion_id of this CreateDesktopOrderRequestBody.
+        r"""Gets the promotion_id of this CreateDesktopOrderRequestBody.
 
         促销ID
 
@@ -161,7 +161,7 @@ class CreateDesktopOrderRequestBody:
 
     @promotion_id.setter
     def promotion_id(self, promotion_id):
-        """Sets the promotion_id of this CreateDesktopOrderRequestBody.
+        r"""Sets the promotion_id of this CreateDesktopOrderRequestBody.
 
         促销ID
 
@@ -172,7 +172,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this CreateDesktopOrderRequestBody.
+        r"""Gets the promotion_plan_id of this CreateDesktopOrderRequestBody.
 
         促销计划ID
 
@@ -183,7 +183,7 @@ class CreateDesktopOrderRequestBody:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this CreateDesktopOrderRequestBody.
+        r"""Sets the promotion_plan_id of this CreateDesktopOrderRequestBody.
 
         促销计划ID
 
@@ -194,7 +194,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CreateDesktopOrderRequestBody.
+        r"""Gets the promotion_info of this CreateDesktopOrderRequestBody.
 
         促销信息
 
@@ -205,7 +205,7 @@ class CreateDesktopOrderRequestBody:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CreateDesktopOrderRequestBody.
+        r"""Sets the promotion_info of this CreateDesktopOrderRequestBody.
 
         促销信息
 
@@ -216,7 +216,7 @@ class CreateDesktopOrderRequestBody:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this CreateDesktopOrderRequestBody.
+        r"""Gets the extend_param of this CreateDesktopOrderRequestBody.
 
         :return: The extend_param of this CreateDesktopOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`
@@ -225,7 +225,7 @@ class CreateDesktopOrderRequestBody:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this CreateDesktopOrderRequestBody.
+        r"""Sets the extend_param of this CreateDesktopOrderRequestBody.
 
         :param extend_param: The extend_param of this CreateDesktopOrderRequestBody.
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`

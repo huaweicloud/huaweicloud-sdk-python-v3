@@ -30,7 +30,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, cloud_connections=None):
-        """ListCloudConnectionsByTagsResponse
+        r"""ListCloudConnectionsByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudConnectionsByTagsResponse.
+        r"""Gets the request_id of this ListCloudConnectionsByTagsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudConnectionsByTagsResponse.
+        r"""Sets the request_id of this ListCloudConnectionsByTagsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCloudConnectionsByTagsResponse.
+        r"""Gets the page_info of this ListCloudConnectionsByTagsResponse.
 
         :return: The page_info of this ListCloudConnectionsByTagsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCloudConnectionsByTagsResponse.
+        r"""Sets the page_info of this ListCloudConnectionsByTagsResponse.
 
         :param page_info: The page_info of this ListCloudConnectionsByTagsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
 
     @property
     def cloud_connections(self):
-        """Gets the cloud_connections of this ListCloudConnectionsByTagsResponse.
+        r"""Gets the cloud_connections of this ListCloudConnectionsByTagsResponse.
 
         云连接实例列表。
 
@@ -107,7 +107,7 @@ class ListCloudConnectionsByTagsResponse(SdkResponse):
 
     @cloud_connections.setter
     def cloud_connections(self, cloud_connections):
-        """Sets the cloud_connections of this ListCloudConnectionsByTagsResponse.
+        r"""Sets the cloud_connections of this ListCloudConnectionsByTagsResponse.
 
         云连接实例列表。
 

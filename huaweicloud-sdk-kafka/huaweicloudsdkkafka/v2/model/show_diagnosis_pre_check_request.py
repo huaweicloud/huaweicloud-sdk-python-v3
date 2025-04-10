@@ -29,7 +29,7 @@ class ShowDiagnosisPreCheckRequest:
     }
 
     def __init__(self, instance_id=None, group=None, topic=None):
-        """ShowDiagnosisPreCheckRequest
+        r"""ShowDiagnosisPreCheckRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowDiagnosisPreCheckRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDiagnosisPreCheckRequest.
+        r"""Gets the instance_id of this ShowDiagnosisPreCheckRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ShowDiagnosisPreCheckRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDiagnosisPreCheckRequest.
+        r"""Sets the instance_id of this ShowDiagnosisPreCheckRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ShowDiagnosisPreCheckRequest:
 
     @property
     def group(self):
-        """Gets the group of this ShowDiagnosisPreCheckRequest.
+        r"""Gets the group of this ShowDiagnosisPreCheckRequest.
 
         消费组名称
 
@@ -87,7 +87,7 @@ class ShowDiagnosisPreCheckRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowDiagnosisPreCheckRequest.
+        r"""Sets the group of this ShowDiagnosisPreCheckRequest.
 
         消费组名称
 
@@ -98,7 +98,7 @@ class ShowDiagnosisPreCheckRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowDiagnosisPreCheckRequest.
+        r"""Gets the topic of this ShowDiagnosisPreCheckRequest.
 
         主题名称
 
@@ -109,7 +109,7 @@ class ShowDiagnosisPreCheckRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowDiagnosisPreCheckRequest.
+        r"""Sets the topic of this ShowDiagnosisPreCheckRequest.
 
         主题名称
 

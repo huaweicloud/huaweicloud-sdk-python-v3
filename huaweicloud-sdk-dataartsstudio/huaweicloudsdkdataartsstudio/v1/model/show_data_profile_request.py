@@ -33,7 +33,7 @@ class ShowDataProfileRequest:
     }
 
     def __init__(self, workspace=None, dw_id=None, db_type=None, database_name=None, table_name=None):
-        """ShowDataProfileRequest
+        r"""ShowDataProfileRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ShowDataProfileRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowDataProfileRequest.
+        r"""Gets the workspace of this ShowDataProfileRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class ShowDataProfileRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowDataProfileRequest.
+        r"""Sets the workspace of this ShowDataProfileRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class ShowDataProfileRequest:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this ShowDataProfileRequest.
+        r"""Gets the dw_id of this ShowDataProfileRequest.
 
         数据连接ID
 
@@ -99,7 +99,7 @@ class ShowDataProfileRequest:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this ShowDataProfileRequest.
+        r"""Sets the dw_id of this ShowDataProfileRequest.
 
         数据连接ID
 
@@ -110,7 +110,7 @@ class ShowDataProfileRequest:
 
     @property
     def db_type(self):
-        """Gets the db_type of this ShowDataProfileRequest.
+        r"""Gets the db_type of this ShowDataProfileRequest.
 
         数据库类型
 
@@ -121,7 +121,7 @@ class ShowDataProfileRequest:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this ShowDataProfileRequest.
+        r"""Sets the db_type of this ShowDataProfileRequest.
 
         数据库类型
 
@@ -132,7 +132,7 @@ class ShowDataProfileRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowDataProfileRequest.
+        r"""Gets the database_name of this ShowDataProfileRequest.
 
         数据库名称
 
@@ -143,7 +143,7 @@ class ShowDataProfileRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowDataProfileRequest.
+        r"""Sets the database_name of this ShowDataProfileRequest.
 
         数据库名称
 
@@ -154,7 +154,7 @@ class ShowDataProfileRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowDataProfileRequest.
+        r"""Gets the table_name of this ShowDataProfileRequest.
 
         表名
 
@@ -165,7 +165,7 @@ class ShowDataProfileRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowDataProfileRequest.
+        r"""Sets the table_name of this ShowDataProfileRequest.
 
         表名
 

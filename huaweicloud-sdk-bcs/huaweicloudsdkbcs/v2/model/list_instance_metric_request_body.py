@@ -29,7 +29,7 @@ class ListInstanceMetricRequestBody:
     }
 
     def __init__(self, type=None, entity_name=None, instance_name=None):
-        """ListInstanceMetricRequestBody
+        r"""ListInstanceMetricRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListInstanceMetricRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this ListInstanceMetricRequestBody.
+        r"""Gets the type of this ListInstanceMetricRequestBody.
 
         实体类型，[可选值如下: org(包括代理节点baas-agent、共识节点orderer、记账节点peer), plugin(插件)] 默认为org 
 
@@ -65,7 +65,7 @@ class ListInstanceMetricRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInstanceMetricRequestBody.
+        r"""Sets the type of this ListInstanceMetricRequestBody.
 
         实体类型，[可选值如下: org(包括代理节点baas-agent、共识节点orderer、记账节点peer), plugin(插件)] 默认为org 
 
@@ -76,7 +76,7 @@ class ListInstanceMetricRequestBody:
 
     @property
     def entity_name(self):
-        """Gets the entity_name of this ListInstanceMetricRequestBody.
+        r"""Gets the entity_name of this ListInstanceMetricRequestBody.
 
         所属实体的名称，即区块链服务详情页面的“区块链实例”中各节点的名称（代理节点、共识节点、记账节点）
 
@@ -87,7 +87,7 @@ class ListInstanceMetricRequestBody:
 
     @entity_name.setter
     def entity_name(self, entity_name):
-        """Sets the entity_name of this ListInstanceMetricRequestBody.
+        r"""Sets the entity_name of this ListInstanceMetricRequestBody.
 
         所属实体的名称，即区块链服务详情页面的“区块链实例”中各节点的名称（代理节点、共识节点、记账节点）
 
@@ -98,7 +98,7 @@ class ListInstanceMetricRequestBody:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListInstanceMetricRequestBody.
+        r"""Gets the instance_name of this ListInstanceMetricRequestBody.
 
         具体实例的名称。若当前区块链服务部署在CCE集群上，该名称为各节点对应的负载（pod）名称；若当前区块链服务部署在IEF集群上，可进入“智能边缘平台”服务，进入“边缘应用”->“容器应用”，查询负载名称。
 
@@ -109,7 +109,7 @@ class ListInstanceMetricRequestBody:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListInstanceMetricRequestBody.
+        r"""Sets the instance_name of this ListInstanceMetricRequestBody.
 
         具体实例的名称。若当前区块链服务部署在CCE集群上，该名称为各节点对应的负载（pod）名称；若当前区块链服务部署在IEF集群上，可进入“智能边缘平台”服务，进入“边缘应用”->“容器应用”，查询负载名称。
 

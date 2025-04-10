@@ -29,7 +29,7 @@ class UpdateRoute:
     }
 
     def __init__(self, attachment_id=None, is_blackhole=None, description=None):
-        """UpdateRoute
+        r"""UpdateRoute
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateRoute:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this UpdateRoute.
+        r"""Gets the attachment_id of this UpdateRoute.
 
         路由下一跳
 
@@ -68,7 +68,7 @@ class UpdateRoute:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this UpdateRoute.
+        r"""Sets the attachment_id of this UpdateRoute.
 
         路由下一跳
 
@@ -79,7 +79,7 @@ class UpdateRoute:
 
     @property
     def is_blackhole(self):
-        """Gets the is_blackhole of this UpdateRoute.
+        r"""Gets the is_blackhole of this UpdateRoute.
 
         是否为黑洞路由
 
@@ -90,7 +90,7 @@ class UpdateRoute:
 
     @is_blackhole.setter
     def is_blackhole(self, is_blackhole):
-        """Sets the is_blackhole of this UpdateRoute.
+        r"""Sets the is_blackhole of this UpdateRoute.
 
         是否为黑洞路由
 
@@ -101,7 +101,7 @@ class UpdateRoute:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRoute.
+        r"""Gets the description of this UpdateRoute.
 
         路由描述信息
 
@@ -112,7 +112,7 @@ class UpdateRoute:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRoute.
+        r"""Sets the description of this UpdateRoute.
 
         路由描述信息
 

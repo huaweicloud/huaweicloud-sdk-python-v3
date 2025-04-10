@@ -30,7 +30,7 @@ class DeleteCedentialRequest:
     }
 
     def __init__(self, clientid=None, x_auth_token=None, content_type=None):
-        """DeleteCedentialRequest
+        r"""DeleteCedentialRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteCedentialRequest:
 
     @property
     def clientid(self):
-        """Gets the clientid of this DeleteCedentialRequest.
+        r"""Gets the clientid of this DeleteCedentialRequest.
 
         待删除的key的id。
 
@@ -66,7 +66,7 @@ class DeleteCedentialRequest:
 
     @clientid.setter
     def clientid(self, clientid):
-        """Sets the clientid of this DeleteCedentialRequest.
+        r"""Sets the clientid of this DeleteCedentialRequest.
 
         待删除的key的id。
 
@@ -77,7 +77,7 @@ class DeleteCedentialRequest:
 
     @property
     def x_auth_token(self):
-        """Gets the x_auth_token of this DeleteCedentialRequest.
+        r"""Gets the x_auth_token of this DeleteCedentialRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -88,7 +88,7 @@ class DeleteCedentialRequest:
 
     @x_auth_token.setter
     def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this DeleteCedentialRequest.
+        r"""Sets the x_auth_token of this DeleteCedentialRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -99,7 +99,7 @@ class DeleteCedentialRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteCedentialRequest.
+        r"""Gets the content_type of this DeleteCedentialRequest.
 
         该字段填为“application/json;charset=utf8”。
 
@@ -110,7 +110,7 @@ class DeleteCedentialRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteCedentialRequest.
+        r"""Sets the content_type of this DeleteCedentialRequest.
 
         该字段填为“application/json;charset=utf8”。
 

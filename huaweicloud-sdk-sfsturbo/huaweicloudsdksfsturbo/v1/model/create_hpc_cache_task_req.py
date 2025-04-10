@@ -35,7 +35,7 @@ class CreateHpcCacheTaskReq:
     }
 
     def __init__(self, type=None, src_target=None, src_prefix=None, dest_target=None, dest_prefix=None, attributes=None):
-        """CreateHpcCacheTaskReq
+        r"""CreateHpcCacheTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateHpcCacheTaskReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateHpcCacheTaskReq.
+        r"""Gets the type of this CreateHpcCacheTaskReq.
 
         任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。  附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo 导出时的附加元数据（如uid、gid、mode）。  快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据。  数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。  数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。 
 
@@ -86,7 +86,7 @@ class CreateHpcCacheTaskReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateHpcCacheTaskReq.
+        r"""Sets the type of this CreateHpcCacheTaskReq.
 
         任务类型，当前支持import(附加元数据导入)，import_metadata(快速导入)，preload(数据预热)，export(导出)。  附加元数据导入方式会导入OBS对象的元数据（名称、大小、最后修改时间）以及来源于SFS Turbo 导出时的附加元数据（如uid、gid、mode）。  快速导入方式仅会导入OBS对象的元数据（名称、大小、最后修改时间），不会导入其它附加元数据（如uid、gid、mode），SFS Turbo会生成默认的附加元数据。  数据预热功能会同时导入元数据和数据内容，数据预热中的元数据导入采用快速导入方式，不会导入其它附加元数据（如uid、gid、mode）。  数据导出功能会将您在联动目录里创建的文件，以及对从OBS导入后又做过修改的文件导出存储到OBS桶里。 
 
@@ -97,7 +97,7 @@ class CreateHpcCacheTaskReq:
 
     @property
     def src_target(self):
-        """Gets the src_target of this CreateHpcCacheTaskReq.
+        r"""Gets the src_target of this CreateHpcCacheTaskReq.
 
         联动目录名称
 
@@ -108,7 +108,7 @@ class CreateHpcCacheTaskReq:
 
     @src_target.setter
     def src_target(self, src_target):
-        """Sets the src_target of this CreateHpcCacheTaskReq.
+        r"""Sets the src_target of this CreateHpcCacheTaskReq.
 
         联动目录名称
 
@@ -119,7 +119,7 @@ class CreateHpcCacheTaskReq:
 
     @property
     def src_prefix(self):
-        """Gets the src_prefix of this CreateHpcCacheTaskReq.
+        r"""Gets the src_prefix of this CreateHpcCacheTaskReq.
 
         导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
 
@@ -130,7 +130,7 @@ class CreateHpcCacheTaskReq:
 
     @src_prefix.setter
     def src_prefix(self, src_prefix):
-        """Sets the src_prefix of this CreateHpcCacheTaskReq.
+        r"""Sets the src_prefix of this CreateHpcCacheTaskReq.
 
         导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
 
@@ -141,7 +141,7 @@ class CreateHpcCacheTaskReq:
 
     @property
     def dest_target(self):
-        """Gets the dest_target of this CreateHpcCacheTaskReq.
+        r"""Gets the dest_target of this CreateHpcCacheTaskReq.
 
         目前只支持和src_target保持一致
 
@@ -152,7 +152,7 @@ class CreateHpcCacheTaskReq:
 
     @dest_target.setter
     def dest_target(self, dest_target):
-        """Sets the dest_target of this CreateHpcCacheTaskReq.
+        r"""Sets the dest_target of this CreateHpcCacheTaskReq.
 
         目前只支持和src_target保持一致
 
@@ -163,7 +163,7 @@ class CreateHpcCacheTaskReq:
 
     @property
     def dest_prefix(self):
-        """Gets the dest_prefix of this CreateHpcCacheTaskReq.
+        r"""Gets the dest_prefix of this CreateHpcCacheTaskReq.
 
         目前只支持和src_prefix保持一致
 
@@ -174,7 +174,7 @@ class CreateHpcCacheTaskReq:
 
     @dest_prefix.setter
     def dest_prefix(self, dest_prefix):
-        """Sets the dest_prefix of this CreateHpcCacheTaskReq.
+        r"""Sets the dest_prefix of this CreateHpcCacheTaskReq.
 
         目前只支持和src_prefix保持一致
 
@@ -185,7 +185,7 @@ class CreateHpcCacheTaskReq:
 
     @property
     def attributes(self):
-        """Gets the attributes of this CreateHpcCacheTaskReq.
+        r"""Gets the attributes of this CreateHpcCacheTaskReq.
 
         :return: The attributes of this CreateHpcCacheTaskReq.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
@@ -194,7 +194,7 @@ class CreateHpcCacheTaskReq:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this CreateHpcCacheTaskReq.
+        r"""Sets the attributes of this CreateHpcCacheTaskReq.
 
         :param attributes: The attributes of this CreateHpcCacheTaskReq.
         :type attributes: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`

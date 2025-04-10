@@ -27,7 +27,7 @@ class RegisterScenesReqScenes:
     }
 
     def __init__(self, name=None, applications=None):
-        """RegisterScenesReqScenes
+        r"""RegisterScenesReqScenes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RegisterScenesReqScenes:
 
     @property
     def name(self):
-        """Gets the name of this RegisterScenesReqScenes.
+        r"""Gets the name of this RegisterScenesReqScenes.
 
         场景名称。
 
@@ -61,7 +61,7 @@ class RegisterScenesReqScenes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RegisterScenesReqScenes.
+        r"""Sets the name of this RegisterScenesReqScenes.
 
         场景名称。
 
@@ -72,7 +72,7 @@ class RegisterScenesReqScenes:
 
     @property
     def applications(self):
-        """Gets the applications of this RegisterScenesReqScenes.
+        r"""Gets the applications of this RegisterScenesReqScenes.
 
         要订阅的application名字列表(当前不支持)。
 
@@ -83,7 +83,7 @@ class RegisterScenesReqScenes:
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this RegisterScenesReqScenes.
+        r"""Sets the applications of this RegisterScenesReqScenes.
 
         要订阅的application名字列表(当前不支持)。
 

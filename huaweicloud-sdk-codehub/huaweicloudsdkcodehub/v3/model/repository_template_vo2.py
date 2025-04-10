@@ -37,7 +37,7 @@ class RepositoryTemplateVO2:
     }
 
     def __init__(self, template_type=None, code_title=None, creator_name=None, code_description=None, languages=None, plateform=None, entertype=None):
-        """RepositoryTemplateVO2
+        r"""RepositoryTemplateVO2
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class RepositoryTemplateVO2:
 
     @property
     def template_type(self):
-        """Gets the template_type of this RepositoryTemplateVO2.
+        r"""Gets the template_type of this RepositoryTemplateVO2.
 
         模板类型
 
@@ -95,7 +95,7 @@ class RepositoryTemplateVO2:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this RepositoryTemplateVO2.
+        r"""Sets the template_type of this RepositoryTemplateVO2.
 
         模板类型
 
@@ -106,7 +106,7 @@ class RepositoryTemplateVO2:
 
     @property
     def code_title(self):
-        """Gets the code_title of this RepositoryTemplateVO2.
+        r"""Gets the code_title of this RepositoryTemplateVO2.
 
         代码模板名称
 
@@ -117,7 +117,7 @@ class RepositoryTemplateVO2:
 
     @code_title.setter
     def code_title(self, code_title):
-        """Sets the code_title of this RepositoryTemplateVO2.
+        r"""Sets the code_title of this RepositoryTemplateVO2.
 
         代码模板名称
 
@@ -128,7 +128,7 @@ class RepositoryTemplateVO2:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this RepositoryTemplateVO2.
+        r"""Gets the creator_name of this RepositoryTemplateVO2.
 
         创建者名称
 
@@ -139,7 +139,7 @@ class RepositoryTemplateVO2:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this RepositoryTemplateVO2.
+        r"""Sets the creator_name of this RepositoryTemplateVO2.
 
         创建者名称
 
@@ -150,7 +150,7 @@ class RepositoryTemplateVO2:
 
     @property
     def code_description(self):
-        """Gets the code_description of this RepositoryTemplateVO2.
+        r"""Gets the code_description of this RepositoryTemplateVO2.
 
         代码模板描述
 
@@ -161,7 +161,7 @@ class RepositoryTemplateVO2:
 
     @code_description.setter
     def code_description(self, code_description):
-        """Sets the code_description of this RepositoryTemplateVO2.
+        r"""Sets the code_description of this RepositoryTemplateVO2.
 
         代码模板描述
 
@@ -172,7 +172,7 @@ class RepositoryTemplateVO2:
 
     @property
     def languages(self):
-        """Gets the languages of this RepositoryTemplateVO2.
+        r"""Gets the languages of this RepositoryTemplateVO2.
 
         模板语言
 
@@ -183,7 +183,7 @@ class RepositoryTemplateVO2:
 
     @languages.setter
     def languages(self, languages):
-        """Sets the languages of this RepositoryTemplateVO2.
+        r"""Sets the languages of this RepositoryTemplateVO2.
 
         模板语言
 
@@ -194,7 +194,7 @@ class RepositoryTemplateVO2:
 
     @property
     def plateform(self):
-        """Gets the plateform of this RepositoryTemplateVO2.
+        r"""Gets the plateform of this RepositoryTemplateVO2.
 
         模板平台
 
@@ -205,7 +205,7 @@ class RepositoryTemplateVO2:
 
     @plateform.setter
     def plateform(self, plateform):
-        """Sets the plateform of this RepositoryTemplateVO2.
+        r"""Sets the plateform of this RepositoryTemplateVO2.
 
         模板平台
 
@@ -216,7 +216,7 @@ class RepositoryTemplateVO2:
 
     @property
     def entertype(self):
-        """Gets the entertype of this RepositoryTemplateVO2.
+        r"""Gets the entertype of this RepositoryTemplateVO2.
 
         模板类型
 
@@ -227,7 +227,7 @@ class RepositoryTemplateVO2:
 
     @entertype.setter
     def entertype(self, entertype):
-        """Sets the entertype of this RepositoryTemplateVO2.
+        r"""Sets the entertype of this RepositoryTemplateVO2.
 
         模板类型
 

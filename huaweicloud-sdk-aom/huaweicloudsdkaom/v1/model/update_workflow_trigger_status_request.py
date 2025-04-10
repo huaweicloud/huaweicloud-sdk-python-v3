@@ -27,7 +27,7 @@ class UpdateWorkflowTriggerStatusRequest:
     }
 
     def __init__(self, workflow_id=None, action=None):
-        """UpdateWorkflowTriggerStatusRequest
+        r"""UpdateWorkflowTriggerStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateWorkflowTriggerStatusRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this UpdateWorkflowTriggerStatusRequest.
+        r"""Gets the workflow_id of this UpdateWorkflowTriggerStatusRequest.
 
         任务id，待修改任务的id。
 
@@ -59,7 +59,7 @@ class UpdateWorkflowTriggerStatusRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this UpdateWorkflowTriggerStatusRequest.
+        r"""Sets the workflow_id of this UpdateWorkflowTriggerStatusRequest.
 
         任务id，待修改任务的id。
 
@@ -70,7 +70,7 @@ class UpdateWorkflowTriggerStatusRequest:
 
     @property
     def action(self):
-        """Gets the action of this UpdateWorkflowTriggerStatusRequest.
+        r"""Gets the action of this UpdateWorkflowTriggerStatusRequest.
 
         启动或暂停任务的定时执行。enable为开启定时任务，disable为关闭定时任务
 
@@ -81,7 +81,7 @@ class UpdateWorkflowTriggerStatusRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateWorkflowTriggerStatusRequest.
+        r"""Sets the action of this UpdateWorkflowTriggerStatusRequest.
 
         启动或暂停任务的定时执行。enable为开启定时任务，disable为关闭定时任务
 

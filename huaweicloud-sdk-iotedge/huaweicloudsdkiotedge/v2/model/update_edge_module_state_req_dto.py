@@ -25,7 +25,7 @@ class UpdateEdgeModuleStateReqDTO:
     }
 
     def __init__(self, state=None):
-        """UpdateEdgeModuleStateReqDTO
+        r"""UpdateEdgeModuleStateReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateEdgeModuleStateReqDTO:
 
     @property
     def state(self):
-        """Gets the state of this UpdateEdgeModuleStateReqDTO.
+        r"""Gets the state of this UpdateEdgeModuleStateReqDTO.
 
         模块状态
 
@@ -54,7 +54,7 @@ class UpdateEdgeModuleStateReqDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateEdgeModuleStateReqDTO.
+        r"""Sets the state of this UpdateEdgeModuleStateReqDTO.
 
         模块状态
 

@@ -26,7 +26,7 @@ class UpgradeEdgeNodeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpgradeEdgeNodeResponse
+        r"""UpgradeEdgeNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeEdgeNodeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpgradeEdgeNodeResponse.
+        r"""Gets the body of this UpgradeEdgeNodeResponse.
 
         :return: The body of this UpgradeEdgeNodeResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpgradeEdgeNodeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeEdgeNodeResponse.
+        r"""Sets the body of this UpgradeEdgeNodeResponse.
 
         :param body: The body of this UpgradeEdgeNodeResponse.
         :type body: str

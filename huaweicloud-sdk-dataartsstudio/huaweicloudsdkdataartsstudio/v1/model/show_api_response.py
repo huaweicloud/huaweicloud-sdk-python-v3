@@ -68,7 +68,7 @@ class ShowApiResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, group_id=None, description=None, protocol=None, publish_type=None, log_flag=None, path=None, host=None, hosts=None, request_type=None, create_user=None, create_time=None, update_time=None, manager=None, status=None, type=None, debug_status=None, publish_messages=None, request_paras=None, datasource_config=None, backend_config=None):
-        """ShowApiResponse
+        r"""ShowApiResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApiResponse.
+        r"""Gets the id of this ShowApiResponse.
 
         API的ID
 
@@ -202,7 +202,7 @@ class ShowApiResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApiResponse.
+        r"""Sets the id of this ShowApiResponse.
 
         API的ID
 
@@ -213,7 +213,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowApiResponse.
+        r"""Gets the name of this ShowApiResponse.
 
         API名称
 
@@ -224,7 +224,7 @@ class ShowApiResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowApiResponse.
+        r"""Sets the name of this ShowApiResponse.
 
         API名称
 
@@ -235,7 +235,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowApiResponse.
+        r"""Gets the group_id of this ShowApiResponse.
 
         API所属分组的ID（共享版）
 
@@ -246,7 +246,7 @@ class ShowApiResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowApiResponse.
+        r"""Sets the group_id of this ShowApiResponse.
 
         API所属分组的ID（共享版）
 
@@ -257,7 +257,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowApiResponse.
+        r"""Gets the description of this ShowApiResponse.
 
         API 描述
 
@@ -268,7 +268,7 @@ class ShowApiResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowApiResponse.
+        r"""Sets the description of this ShowApiResponse.
 
         API 描述
 
@@ -279,7 +279,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this ShowApiResponse.
+        r"""Gets the protocol of this ShowApiResponse.
 
         API 访问协议
 
@@ -290,7 +290,7 @@ class ShowApiResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ShowApiResponse.
+        r"""Sets the protocol of this ShowApiResponse.
 
         API 访问协议
 
@@ -301,7 +301,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def publish_type(self):
-        """Gets the publish_type of this ShowApiResponse.
+        r"""Gets the publish_type of this ShowApiResponse.
 
         发布类型，公开或者私有
 
@@ -312,7 +312,7 @@ class ShowApiResponse(SdkResponse):
 
     @publish_type.setter
     def publish_type(self, publish_type):
-        """Sets the publish_type of this ShowApiResponse.
+        r"""Sets the publish_type of this ShowApiResponse.
 
         发布类型，公开或者私有
 
@@ -323,7 +323,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def log_flag(self):
-        """Gets the log_flag of this ShowApiResponse.
+        r"""Gets the log_flag of this ShowApiResponse.
 
         是否开启日志记录
 
@@ -334,7 +334,7 @@ class ShowApiResponse(SdkResponse):
 
     @log_flag.setter
     def log_flag(self, log_flag):
-        """Sets the log_flag of this ShowApiResponse.
+        r"""Sets the log_flag of this ShowApiResponse.
 
         是否开启日志记录
 
@@ -345,7 +345,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowApiResponse.
+        r"""Gets the path of this ShowApiResponse.
 
         API的访问路径
 
@@ -356,7 +356,7 @@ class ShowApiResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowApiResponse.
+        r"""Sets the path of this ShowApiResponse.
 
         API的访问路径
 
@@ -367,7 +367,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def host(self):
-        """Gets the host of this ShowApiResponse.
+        r"""Gets the host of this ShowApiResponse.
 
         共享版域名
 
@@ -378,7 +378,7 @@ class ShowApiResponse(SdkResponse):
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ShowApiResponse.
+        r"""Sets the host of this ShowApiResponse.
 
         共享版域名
 
@@ -389,7 +389,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def hosts(self):
-        """Gets the hosts of this ShowApiResponse.
+        r"""Gets the hosts of this ShowApiResponse.
 
         :return: The hosts of this ShowApiResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.InstanceHostDTO`
@@ -398,7 +398,7 @@ class ShowApiResponse(SdkResponse):
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ShowApiResponse.
+        r"""Sets the hosts of this ShowApiResponse.
 
         :param hosts: The hosts of this ShowApiResponse.
         :type hosts: :class:`huaweicloudsdkdataartsstudio.v1.InstanceHostDTO`
@@ -407,7 +407,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def request_type(self):
-        """Gets the request_type of this ShowApiResponse.
+        r"""Gets the request_type of this ShowApiResponse.
 
         API访问方式
 
@@ -418,7 +418,7 @@ class ShowApiResponse(SdkResponse):
 
     @request_type.setter
     def request_type(self, request_type):
-        """Sets the request_type of this ShowApiResponse.
+        r"""Sets the request_type of this ShowApiResponse.
 
         API访问方式
 
@@ -429,7 +429,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowApiResponse.
+        r"""Gets the create_user of this ShowApiResponse.
 
         API创建者
 
@@ -440,7 +440,7 @@ class ShowApiResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowApiResponse.
+        r"""Sets the create_user of this ShowApiResponse.
 
         API创建者
 
@@ -451,7 +451,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowApiResponse.
+        r"""Gets the create_time of this ShowApiResponse.
 
         创建时间
 
@@ -462,7 +462,7 @@ class ShowApiResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowApiResponse.
+        r"""Sets the create_time of this ShowApiResponse.
 
         创建时间
 
@@ -473,7 +473,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowApiResponse.
+        r"""Gets the update_time of this ShowApiResponse.
 
         更新时间
 
@@ -484,7 +484,7 @@ class ShowApiResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowApiResponse.
+        r"""Sets the update_time of this ShowApiResponse.
 
         更新时间
 
@@ -495,7 +495,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def manager(self):
-        """Gets the manager of this ShowApiResponse.
+        r"""Gets the manager of this ShowApiResponse.
 
         API 审核人名称
 
@@ -506,7 +506,7 @@ class ShowApiResponse(SdkResponse):
 
     @manager.setter
     def manager(self, manager):
-        """Sets the manager of this ShowApiResponse.
+        r"""Sets the manager of this ShowApiResponse.
 
         API 审核人名称
 
@@ -517,7 +517,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowApiResponse.
+        r"""Gets the status of this ShowApiResponse.
 
         API的状态（共享版）
 
@@ -528,7 +528,7 @@ class ShowApiResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowApiResponse.
+        r"""Sets the status of this ShowApiResponse.
 
         API的状态（共享版）
 
@@ -539,7 +539,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowApiResponse.
+        r"""Gets the type of this ShowApiResponse.
 
         API 类型
 
@@ -550,7 +550,7 @@ class ShowApiResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowApiResponse.
+        r"""Sets the type of this ShowApiResponse.
 
         API 类型
 
@@ -561,7 +561,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def debug_status(self):
-        """Gets the debug_status of this ShowApiResponse.
+        r"""Gets the debug_status of this ShowApiResponse.
 
         API调试状态（共享版）
 
@@ -572,7 +572,7 @@ class ShowApiResponse(SdkResponse):
 
     @debug_status.setter
     def debug_status(self, debug_status):
-        """Sets the debug_status of this ShowApiResponse.
+        r"""Sets the debug_status of this ShowApiResponse.
 
         API调试状态（共享版）
 
@@ -583,7 +583,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def publish_messages(self):
-        """Gets the publish_messages of this ShowApiResponse.
+        r"""Gets the publish_messages of this ShowApiResponse.
 
         发布信息列表（专享版）
 
@@ -594,7 +594,7 @@ class ShowApiResponse(SdkResponse):
 
     @publish_messages.setter
     def publish_messages(self, publish_messages):
-        """Sets the publish_messages of this ShowApiResponse.
+        r"""Sets the publish_messages of this ShowApiResponse.
 
         发布信息列表（专享版）
 
@@ -605,7 +605,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def request_paras(self):
-        """Gets the request_paras of this ShowApiResponse.
+        r"""Gets the request_paras of this ShowApiResponse.
 
         API请求参数
 
@@ -616,7 +616,7 @@ class ShowApiResponse(SdkResponse):
 
     @request_paras.setter
     def request_paras(self, request_paras):
-        """Sets the request_paras of this ShowApiResponse.
+        r"""Sets the request_paras of this ShowApiResponse.
 
         API请求参数
 
@@ -627,7 +627,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def datasource_config(self):
-        """Gets the datasource_config of this ShowApiResponse.
+        r"""Gets the datasource_config of this ShowApiResponse.
 
         :return: The datasource_config of this ShowApiResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`
@@ -636,7 +636,7 @@ class ShowApiResponse(SdkResponse):
 
     @datasource_config.setter
     def datasource_config(self, datasource_config):
-        """Sets the datasource_config of this ShowApiResponse.
+        r"""Sets the datasource_config of this ShowApiResponse.
 
         :param datasource_config: The datasource_config of this ShowApiResponse.
         :type datasource_config: :class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`
@@ -645,7 +645,7 @@ class ShowApiResponse(SdkResponse):
 
     @property
     def backend_config(self):
-        """Gets the backend_config of this ShowApiResponse.
+        r"""Gets the backend_config of this ShowApiResponse.
 
         :return: The backend_config of this ShowApiResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BackendConfig`
@@ -654,7 +654,7 @@ class ShowApiResponse(SdkResponse):
 
     @backend_config.setter
     def backend_config(self, backend_config):
-        """Sets the backend_config of this ShowApiResponse.
+        r"""Sets the backend_config of this ShowApiResponse.
 
         :param backend_config: The backend_config of this ShowApiResponse.
         :type backend_config: :class:`huaweicloudsdkdataartsstudio.v1.BackendConfig`

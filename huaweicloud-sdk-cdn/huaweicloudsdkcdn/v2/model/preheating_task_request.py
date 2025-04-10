@@ -25,7 +25,7 @@ class PreheatingTaskRequest:
     }
 
     def __init__(self, preheating_task=None):
-        """PreheatingTaskRequest
+        r"""PreheatingTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PreheatingTaskRequest:
 
     @property
     def preheating_task(self):
-        """Gets the preheating_task of this PreheatingTaskRequest.
+        r"""Gets the preheating_task of this PreheatingTaskRequest.
 
         :return: The preheating_task of this PreheatingTaskRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.PreheatingTaskRequestBody`
@@ -51,7 +51,7 @@ class PreheatingTaskRequest:
 
     @preheating_task.setter
     def preheating_task(self, preheating_task):
-        """Sets the preheating_task of this PreheatingTaskRequest.
+        r"""Sets the preheating_task of this PreheatingTaskRequest.
 
         :param preheating_task: The preheating_task of this PreheatingTaskRequest.
         :type preheating_task: :class:`huaweicloudsdkcdn.v2.PreheatingTaskRequestBody`

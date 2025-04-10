@@ -25,7 +25,7 @@ class BatchTransferTask:
     }
 
     def __init__(self, id=None):
-        """BatchTransferTask
+        r"""BatchTransferTask
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchTransferTask:
 
     @property
     def id(self):
-        """Gets the id of this BatchTransferTask.
+        r"""Gets the id of this BatchTransferTask.
 
         转储任务ID
 
@@ -53,7 +53,7 @@ class BatchTransferTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchTransferTask.
+        r"""Sets the id of this BatchTransferTask.
 
         转储任务ID
 

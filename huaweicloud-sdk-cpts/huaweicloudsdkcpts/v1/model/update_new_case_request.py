@@ -27,7 +27,7 @@ class UpdateNewCaseRequest:
     }
 
     def __init__(self, case_id=None, body=None):
-        """UpdateNewCaseRequest
+        r"""UpdateNewCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNewCaseRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this UpdateNewCaseRequest.
+        r"""Gets the case_id of this UpdateNewCaseRequest.
 
         用例id
 
@@ -60,7 +60,7 @@ class UpdateNewCaseRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this UpdateNewCaseRequest.
+        r"""Sets the case_id of this UpdateNewCaseRequest.
 
         用例id
 
@@ -71,7 +71,7 @@ class UpdateNewCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNewCaseRequest.
+        r"""Gets the body of this UpdateNewCaseRequest.
 
         :return: The body of this UpdateNewCaseRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
@@ -80,7 +80,7 @@ class UpdateNewCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNewCaseRequest.
+        r"""Sets the body of this UpdateNewCaseRequest.
 
         :param body: The body of this UpdateNewCaseRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`

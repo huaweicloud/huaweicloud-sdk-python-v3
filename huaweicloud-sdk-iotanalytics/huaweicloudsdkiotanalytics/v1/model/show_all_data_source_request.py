@@ -31,7 +31,7 @@ class ShowAllDataSourceRequest:
     }
 
     def __init__(self, name=None, type=None, limit=None, offset=None):
-        """ShowAllDataSourceRequest
+        r"""ShowAllDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowAllDataSourceRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowAllDataSourceRequest.
+        r"""Gets the name of this ShowAllDataSourceRequest.
 
         filter
 
@@ -75,7 +75,7 @@ class ShowAllDataSourceRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAllDataSourceRequest.
+        r"""Sets the name of this ShowAllDataSourceRequest.
 
         filter
 
@@ -86,7 +86,7 @@ class ShowAllDataSourceRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowAllDataSourceRequest.
+        r"""Gets the type of this ShowAllDataSourceRequest.
 
         数据源类型, 包括：OBS、DIS、IOTDA、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA、API
 
@@ -97,7 +97,7 @@ class ShowAllDataSourceRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAllDataSourceRequest.
+        r"""Sets the type of this ShowAllDataSourceRequest.
 
         数据源类型, 包括：OBS、DIS、IOTDA、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA、API
 
@@ -108,7 +108,7 @@ class ShowAllDataSourceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowAllDataSourceRequest.
+        r"""Gets the limit of this ShowAllDataSourceRequest.
 
         每次查询返回元素的上限
 
@@ -119,7 +119,7 @@ class ShowAllDataSourceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowAllDataSourceRequest.
+        r"""Sets the limit of this ShowAllDataSourceRequest.
 
         每次查询返回元素的上限
 
@@ -130,7 +130,7 @@ class ShowAllDataSourceRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowAllDataSourceRequest.
+        r"""Gets the offset of this ShowAllDataSourceRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -141,7 +141,7 @@ class ShowAllDataSourceRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowAllDataSourceRequest.
+        r"""Sets the offset of this ShowAllDataSourceRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 

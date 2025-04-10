@@ -26,7 +26,7 @@ class DeleteRunResponse(SdkResponse):
     }
 
     def __init__(self, run_id=None):
-        """DeleteRunResponse
+        r"""DeleteRunResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteRunResponse(SdkResponse):
 
     @property
     def run_id(self):
-        """Gets the run_id of this DeleteRunResponse.
+        r"""Gets the run_id of this DeleteRunResponse.
 
         被取消作业运行ID
 
@@ -55,7 +55,7 @@ class DeleteRunResponse(SdkResponse):
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this DeleteRunResponse.
+        r"""Sets the run_id of this DeleteRunResponse.
 
         被取消作业运行ID
 

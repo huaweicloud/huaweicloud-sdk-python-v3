@@ -27,7 +27,7 @@ class UpdateRocketMqConfigsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateRocketMqConfigsRequest
+        r"""UpdateRocketMqConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateRocketMqConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateRocketMqConfigsRequest.
+        r"""Gets the instance_id of this UpdateRocketMqConfigsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateRocketMqConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateRocketMqConfigsRequest.
+        r"""Sets the instance_id of this UpdateRocketMqConfigsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateRocketMqConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRocketMqConfigsRequest.
+        r"""Gets the body of this UpdateRocketMqConfigsRequest.
 
         :return: The body of this UpdateRocketMqConfigsRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ModifyConfigReq`
@@ -80,7 +80,7 @@ class UpdateRocketMqConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRocketMqConfigsRequest.
+        r"""Sets the body of this UpdateRocketMqConfigsRequest.
 
         :param body: The body of this UpdateRocketMqConfigsRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.ModifyConfigReq`

@@ -28,7 +28,7 @@ class ListTopicPartitionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, partitions=None):
-        """ListTopicPartitionsResponse
+        r"""ListTopicPartitionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTopicPartitionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTopicPartitionsResponse.
+        r"""Gets the total of this ListTopicPartitionsResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListTopicPartitionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTopicPartitionsResponse.
+        r"""Sets the total of this ListTopicPartitionsResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListTopicPartitionsResponse(SdkResponse):
 
     @property
     def partitions(self):
-        """Gets the partitions of this ListTopicPartitionsResponse.
+        r"""Gets the partitions of this ListTopicPartitionsResponse.
 
         分区数组
 
@@ -84,7 +84,7 @@ class ListTopicPartitionsResponse(SdkResponse):
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ListTopicPartitionsResponse.
+        r"""Sets the partitions of this ListTopicPartitionsResponse.
 
         分区数组
 

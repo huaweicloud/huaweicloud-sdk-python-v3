@@ -25,7 +25,7 @@ class CheckPermissionInput:
     }
 
     def __init__(self, access_request=None):
-        """CheckPermissionInput
+        r"""CheckPermissionInput
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckPermissionInput:
 
     @property
     def access_request(self):
-        """Gets the access_request of this CheckPermissionInput.
+        r"""Gets the access_request of this CheckPermissionInput.
 
         主体信息
 
@@ -53,7 +53,7 @@ class CheckPermissionInput:
 
     @access_request.setter
     def access_request(self, access_request):
-        """Sets the access_request of this CheckPermissionInput.
+        r"""Sets the access_request of this CheckPermissionInput.
 
         主体信息
 

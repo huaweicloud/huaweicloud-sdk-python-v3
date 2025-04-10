@@ -29,7 +29,7 @@ class RegisterResult:
     }
 
     def __init__(self, port=None, port_type=None, sign=None):
-        """RegisterResult
+        r"""RegisterResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RegisterResult:
 
     @property
     def port(self):
-        """Gets the port of this RegisterResult.
+        r"""Gets the port of this RegisterResult.
 
         通道号。 
 
@@ -68,7 +68,7 @@ class RegisterResult:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RegisterResult.
+        r"""Sets the port of this RegisterResult.
 
         通道号。 
 
@@ -79,7 +79,7 @@ class RegisterResult:
 
     @property
     def port_type(self):
-        """Gets the port_type of this RegisterResult.
+        r"""Gets the port_type of this RegisterResult.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段 
 
@@ -90,7 +90,7 @@ class RegisterResult:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this RegisterResult.
+        r"""Sets the port_type of this RegisterResult.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段 
 
@@ -101,7 +101,7 @@ class RegisterResult:
 
     @property
     def sign(self):
-        """Gets the sign of this RegisterResult.
+        r"""Gets the sign of this RegisterResult.
 
         签名列表，最大长度为5。
 
@@ -112,7 +112,7 @@ class RegisterResult:
 
     @sign.setter
     def sign(self, sign):
-        """Sets the sign of this RegisterResult.
+        r"""Sets the sign of this RegisterResult.
 
         签名列表，最大长度为5。
 

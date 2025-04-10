@@ -29,7 +29,7 @@ class RunOnceRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, body=None):
-        """RunOnceRequest
+        r"""RunOnceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunOnceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this RunOnceRequest.
+        r"""Gets the workspace of this RunOnceRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class RunOnceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this RunOnceRequest.
+        r"""Sets the workspace of this RunOnceRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class RunOnceRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this RunOnceRequest.
+        r"""Gets the job_name of this RunOnceRequest.
 
         作业名称.
 
@@ -89,7 +89,7 @@ class RunOnceRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this RunOnceRequest.
+        r"""Sets the job_name of this RunOnceRequest.
 
         作业名称.
 
@@ -100,7 +100,7 @@ class RunOnceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunOnceRequest.
+        r"""Gets the body of this RunOnceRequest.
 
         :return: The body of this RunOnceRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.StartJobReq`
@@ -109,7 +109,7 @@ class RunOnceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunOnceRequest.
+        r"""Sets the body of this RunOnceRequest.
 
         :param body: The body of this RunOnceRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.StartJobReq`

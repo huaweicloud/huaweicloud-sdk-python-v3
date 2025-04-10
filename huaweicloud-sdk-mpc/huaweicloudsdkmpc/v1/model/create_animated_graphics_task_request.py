@@ -25,7 +25,7 @@ class CreateAnimatedGraphicsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAnimatedGraphicsTaskRequest
+        r"""CreateAnimatedGraphicsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAnimatedGraphicsTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAnimatedGraphicsTaskRequest.
+        r"""Gets the body of this CreateAnimatedGraphicsTaskRequest.
 
         :return: The body of this CreateAnimatedGraphicsTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`
@@ -52,7 +52,7 @@ class CreateAnimatedGraphicsTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAnimatedGraphicsTaskRequest.
+        r"""Sets the body of this CreateAnimatedGraphicsTaskRequest.
 
         :param body: The body of this CreateAnimatedGraphicsTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`

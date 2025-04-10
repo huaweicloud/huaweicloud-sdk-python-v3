@@ -25,7 +25,7 @@ class ListFlowBySimCardsRequest:
     }
 
     def __init__(self, body=None):
-        """ListFlowBySimCardsRequest
+        r"""ListFlowBySimCardsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListFlowBySimCardsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListFlowBySimCardsRequest.
+        r"""Gets the body of this ListFlowBySimCardsRequest.
 
         :return: The body of this ListFlowBySimCardsRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsReq`
@@ -52,7 +52,7 @@ class ListFlowBySimCardsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFlowBySimCardsRequest.
+        r"""Sets the body of this ListFlowBySimCardsRequest.
 
         :param body: The body of this ListFlowBySimCardsRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsReq`

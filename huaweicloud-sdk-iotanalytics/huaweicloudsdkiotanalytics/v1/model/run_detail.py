@@ -29,7 +29,7 @@ class RunDetail:
     }
 
     def __init__(self, detail_id=None, status=None, sql_job=None):
-        """RunDetail
+        r"""RunDetail
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunDetail:
 
     @property
     def detail_id(self):
-        """Gets the detail_id of this RunDetail.
+        r"""Gets the detail_id of this RunDetail.
 
         作业运行详情ID。
 
@@ -67,7 +67,7 @@ class RunDetail:
 
     @detail_id.setter
     def detail_id(self, detail_id):
-        """Sets the detail_id of this RunDetail.
+        r"""Sets the detail_id of this RunDetail.
 
         作业运行详情ID。
 
@@ -78,7 +78,7 @@ class RunDetail:
 
     @property
     def status(self):
-        """Gets the status of this RunDetail.
+        r"""Gets the status of this RunDetail.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -89,7 +89,7 @@ class RunDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RunDetail.
+        r"""Sets the status of this RunDetail.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -100,7 +100,7 @@ class RunDetail:
 
     @property
     def sql_job(self):
-        """Gets the sql_job of this RunDetail.
+        r"""Gets the sql_job of this RunDetail.
 
         :return: The sql_job of this RunDetail.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`
@@ -109,7 +109,7 @@ class RunDetail:
 
     @sql_job.setter
     def sql_job(self, sql_job):
-        """Sets the sql_job of this RunDetail.
+        r"""Sets the sql_job of this RunDetail.
 
         :param sql_job: The sql_job of this RunDetail.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`

@@ -37,11 +37,11 @@ class ListVulScanTaskRequest:
     }
 
     def __init__(self, enterprise_project_id=None, limit=None, offset=None, scan_type=None, task_id=None, min_start_time=None, max_start_time=None):
-        """ListVulScanTaskRequest
+        r"""ListVulScanTaskRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示个数
         :type limit: int
@@ -85,9 +85,9 @@ class ListVulScanTaskRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVulScanTaskRequest.
+        r"""Gets the enterprise_project_id of this ListVulScanTaskRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListVulScanTaskRequest.
         :rtype: str
@@ -96,9 +96,9 @@ class ListVulScanTaskRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVulScanTaskRequest.
+        r"""Sets the enterprise_project_id of this ListVulScanTaskRequest.
 
-        租户企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulScanTaskRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class ListVulScanTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVulScanTaskRequest.
+        r"""Gets the limit of this ListVulScanTaskRequest.
 
         每页显示个数
 
@@ -118,7 +118,7 @@ class ListVulScanTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVulScanTaskRequest.
+        r"""Sets the limit of this ListVulScanTaskRequest.
 
         每页显示个数
 
@@ -129,7 +129,7 @@ class ListVulScanTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVulScanTaskRequest.
+        r"""Gets the offset of this ListVulScanTaskRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -140,7 +140,7 @@ class ListVulScanTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVulScanTaskRequest.
+        r"""Sets the offset of this ListVulScanTaskRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -151,7 +151,7 @@ class ListVulScanTaskRequest:
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this ListVulScanTaskRequest.
+        r"""Gets the scan_type of this ListVulScanTaskRequest.
 
         扫描任务的类型，包含如下：   -manual : 手动扫描任务   -schedule : 定时扫描任务
 
@@ -162,7 +162,7 @@ class ListVulScanTaskRequest:
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this ListVulScanTaskRequest.
+        r"""Sets the scan_type of this ListVulScanTaskRequest.
 
         扫描任务的类型，包含如下：   -manual : 手动扫描任务   -schedule : 定时扫描任务
 
@@ -173,7 +173,7 @@ class ListVulScanTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListVulScanTaskRequest.
+        r"""Gets the task_id of this ListVulScanTaskRequest.
 
         扫描任务ID
 
@@ -184,7 +184,7 @@ class ListVulScanTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListVulScanTaskRequest.
+        r"""Sets the task_id of this ListVulScanTaskRequest.
 
         扫描任务ID
 
@@ -195,7 +195,7 @@ class ListVulScanTaskRequest:
 
     @property
     def min_start_time(self):
-        """Gets the min_start_time of this ListVulScanTaskRequest.
+        r"""Gets the min_start_time of this ListVulScanTaskRequest.
 
         扫描任务开始时间的最小值
 
@@ -206,7 +206,7 @@ class ListVulScanTaskRequest:
 
     @min_start_time.setter
     def min_start_time(self, min_start_time):
-        """Sets the min_start_time of this ListVulScanTaskRequest.
+        r"""Sets the min_start_time of this ListVulScanTaskRequest.
 
         扫描任务开始时间的最小值
 
@@ -217,7 +217,7 @@ class ListVulScanTaskRequest:
 
     @property
     def max_start_time(self):
-        """Gets the max_start_time of this ListVulScanTaskRequest.
+        r"""Gets the max_start_time of this ListVulScanTaskRequest.
 
         扫描任务开始时间的最大值
 
@@ -228,7 +228,7 @@ class ListVulScanTaskRequest:
 
     @max_start_time.setter
     def max_start_time(self, max_start_time):
-        """Sets the max_start_time of this ListVulScanTaskRequest.
+        r"""Sets the max_start_time of this ListVulScanTaskRequest.
 
         扫描任务开始时间的最大值
 

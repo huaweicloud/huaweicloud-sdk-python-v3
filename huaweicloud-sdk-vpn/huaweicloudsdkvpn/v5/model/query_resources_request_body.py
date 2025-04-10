@@ -29,7 +29,7 @@ class QueryResourcesRequestBody:
     }
 
     def __init__(self, without_any_tag=None, tags=None, matches=None):
-        """QueryResourcesRequestBody
+        r"""QueryResourcesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryResourcesRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this QueryResourcesRequestBody.
+        r"""Gets the without_any_tag of this QueryResourcesRequestBody.
 
         :return: The without_any_tag of this QueryResourcesRequestBody.
         :rtype: bool
@@ -66,7 +66,7 @@ class QueryResourcesRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this QueryResourcesRequestBody.
+        r"""Sets the without_any_tag of this QueryResourcesRequestBody.
 
         :param without_any_tag: The without_any_tag of this QueryResourcesRequestBody.
         :type without_any_tag: bool
@@ -75,7 +75,7 @@ class QueryResourcesRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryResourcesRequestBody.
+        r"""Gets the tags of this QueryResourcesRequestBody.
 
         :return: The tags of this QueryResourcesRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Tag`]
@@ -84,7 +84,7 @@ class QueryResourcesRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryResourcesRequestBody.
+        r"""Sets the tags of this QueryResourcesRequestBody.
 
         :param tags: The tags of this QueryResourcesRequestBody.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.Tag`]
@@ -93,7 +93,7 @@ class QueryResourcesRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this QueryResourcesRequestBody.
+        r"""Gets the matches of this QueryResourcesRequestBody.
 
         :return: The matches of this QueryResourcesRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Match`]
@@ -102,7 +102,7 @@ class QueryResourcesRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this QueryResourcesRequestBody.
+        r"""Sets the matches of this QueryResourcesRequestBody.
 
         :param matches: The matches of this QueryResourcesRequestBody.
         :type matches: list[:class:`huaweicloudsdkvpn.v5.Match`]

@@ -27,7 +27,7 @@ class CreateMessageDiagnosisTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateMessageDiagnosisTaskRequest
+        r"""CreateMessageDiagnosisTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMessageDiagnosisTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateMessageDiagnosisTaskRequest.
+        r"""Gets the instance_id of this CreateMessageDiagnosisTaskRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateMessageDiagnosisTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateMessageDiagnosisTaskRequest.
+        r"""Sets the instance_id of this CreateMessageDiagnosisTaskRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateMessageDiagnosisTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMessageDiagnosisTaskRequest.
+        r"""Gets the body of this CreateMessageDiagnosisTaskRequest.
 
         :return: The body of this CreateMessageDiagnosisTaskRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateMessageDiagnosisTaskReq`
@@ -80,7 +80,7 @@ class CreateMessageDiagnosisTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMessageDiagnosisTaskRequest.
+        r"""Sets the body of this CreateMessageDiagnosisTaskRequest.
 
         :param body: The body of this CreateMessageDiagnosisTaskRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateMessageDiagnosisTaskReq`

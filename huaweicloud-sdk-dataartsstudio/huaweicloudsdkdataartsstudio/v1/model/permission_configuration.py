@@ -29,7 +29,7 @@ class PermissionConfiguration:
     }
 
     def __init__(self, datasource_type=None, permission_types=None, permission_actions=None):
-        """PermissionConfiguration
+        r"""PermissionConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PermissionConfiguration:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this PermissionConfiguration.
+        r"""Gets the datasource_type of this PermissionConfiguration.
 
         数据源类型
 
@@ -68,7 +68,7 @@ class PermissionConfiguration:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this PermissionConfiguration.
+        r"""Sets the datasource_type of this PermissionConfiguration.
 
         数据源类型
 
@@ -79,7 +79,7 @@ class PermissionConfiguration:
 
     @property
     def permission_types(self):
-        """Gets the permission_types of this PermissionConfiguration.
+        r"""Gets the permission_types of this PermissionConfiguration.
 
         数据源操作权限类型
 
@@ -90,7 +90,7 @@ class PermissionConfiguration:
 
     @permission_types.setter
     def permission_types(self, permission_types):
-        """Sets the permission_types of this PermissionConfiguration.
+        r"""Sets the permission_types of this PermissionConfiguration.
 
         数据源操作权限类型
 
@@ -101,7 +101,7 @@ class PermissionConfiguration:
 
     @property
     def permission_actions(self):
-        """Gets the permission_actions of this PermissionConfiguration.
+        r"""Gets the permission_actions of this PermissionConfiguration.
 
         数据源支持的权限操作列表
 
@@ -112,7 +112,7 @@ class PermissionConfiguration:
 
     @permission_actions.setter
     def permission_actions(self, permission_actions):
-        """Sets the permission_actions of this PermissionConfiguration.
+        r"""Sets the permission_actions of this PermissionConfiguration.
 
         数据源支持的权限操作列表
 

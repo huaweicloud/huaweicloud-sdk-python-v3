@@ -27,7 +27,7 @@ class RestAllowWaitingParticipantReqBody:
     }
 
     def __init__(self, participant_id=None, allow_all=None):
-        """RestAllowWaitingParticipantReqBody
+        r"""RestAllowWaitingParticipantReqBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RestAllowWaitingParticipantReqBody:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RestAllowWaitingParticipantReqBody.
+        r"""Gets the participant_id of this RestAllowWaitingParticipantReqBody.
 
         等候室成员标志。通过监听[[会议级事件推送中的“等候室成员列表信息”](https://support.huaweicloud.com/api-meeting/meeting_21_1507.html)](tag:hws)[[会议级事件推送中的“等候室成员列表信息”](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1507.html)](tag:hk)事件获得。 
 
@@ -61,7 +61,7 @@ class RestAllowWaitingParticipantReqBody:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RestAllowWaitingParticipantReqBody.
+        r"""Sets the participant_id of this RestAllowWaitingParticipantReqBody.
 
         等候室成员标志。通过监听[[会议级事件推送中的“等候室成员列表信息”](https://support.huaweicloud.com/api-meeting/meeting_21_1507.html)](tag:hws)[[会议级事件推送中的“等候室成员列表信息”](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1507.html)](tag:hk)事件获得。 
 
@@ -72,7 +72,7 @@ class RestAllowWaitingParticipantReqBody:
 
     @property
     def allow_all(self):
-        """Gets the allow_all of this RestAllowWaitingParticipantReqBody.
+        r"""Gets the allow_all of this RestAllowWaitingParticipantReqBody.
 
         允许所有等候者入会。 * false：指定等候者 * true：所有等候者入会 
 
@@ -83,7 +83,7 @@ class RestAllowWaitingParticipantReqBody:
 
     @allow_all.setter
     def allow_all(self, allow_all):
-        """Sets the allow_all of this RestAllowWaitingParticipantReqBody.
+        r"""Sets the allow_all of this RestAllowWaitingParticipantReqBody.
 
         允许所有等候者入会。 * false：指定等候者 * true：所有等候者入会 
 

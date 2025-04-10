@@ -27,7 +27,7 @@ class TransactionSwitchReq:
     }
 
     def __init__(self, switch_status=None, datastore_type=None):
-        """TransactionSwitchReq
+        r"""TransactionSwitchReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TransactionSwitchReq:
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this TransactionSwitchReq.
+        r"""Gets the switch_status of this TransactionSwitchReq.
 
         开关状态
 
@@ -59,7 +59,7 @@ class TransactionSwitchReq:
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this TransactionSwitchReq.
+        r"""Sets the switch_status of this TransactionSwitchReq.
 
         开关状态
 
@@ -70,7 +70,7 @@ class TransactionSwitchReq:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this TransactionSwitchReq.
+        r"""Gets the datastore_type of this TransactionSwitchReq.
 
         数据库类型。仅支持MySQL
 
@@ -81,7 +81,7 @@ class TransactionSwitchReq:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this TransactionSwitchReq.
+        r"""Sets the datastore_type of this TransactionSwitchReq.
 
         数据库类型。仅支持MySQL
 

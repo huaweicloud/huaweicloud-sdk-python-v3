@@ -31,7 +31,7 @@ class UpdateCatalogRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None, body=None):
-        """UpdateCatalogRequest
+        r"""UpdateCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateCatalogRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateCatalogRequest.
+        r"""Gets the workspace of this UpdateCatalogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class UpdateCatalogRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateCatalogRequest.
+        r"""Sets the workspace of this UpdateCatalogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class UpdateCatalogRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this UpdateCatalogRequest.
+        r"""Gets the dlm_type of this UpdateCatalogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -95,7 +95,7 @@ class UpdateCatalogRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this UpdateCatalogRequest.
+        r"""Sets the dlm_type of this UpdateCatalogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -106,7 +106,7 @@ class UpdateCatalogRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this UpdateCatalogRequest.
+        r"""Gets the catalog_id of this UpdateCatalogRequest.
 
         目录编号。
 
@@ -117,7 +117,7 @@ class UpdateCatalogRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this UpdateCatalogRequest.
+        r"""Sets the catalog_id of this UpdateCatalogRequest.
 
         目录编号。
 
@@ -128,7 +128,7 @@ class UpdateCatalogRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCatalogRequest.
+        r"""Gets the body of this UpdateCatalogRequest.
 
         :return: The body of this UpdateCatalogRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiCatalogUpdateParaDTO`
@@ -137,7 +137,7 @@ class UpdateCatalogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCatalogRequest.
+        r"""Sets the body of this UpdateCatalogRequest.
 
         :param body: The body of this UpdateCatalogRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiCatalogUpdateParaDTO`

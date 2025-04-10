@@ -31,7 +31,7 @@ class IpRegionDto:
     }
 
     def __init__(self, region_id=None, description_cn=None, description_en=None, region_type=None):
-        """IpRegionDto
+        r"""IpRegionDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IpRegionDto:
 
     @property
     def region_id(self):
-        """Gets the region_id of this IpRegionDto.
+        r"""Gets the region_id of this IpRegionDto.
 
         区域id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
@@ -75,7 +75,7 @@ class IpRegionDto:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this IpRegionDto.
+        r"""Sets the region_id of this IpRegionDto.
 
         区域id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
@@ -86,7 +86,7 @@ class IpRegionDto:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this IpRegionDto.
+        r"""Gets the description_cn of this IpRegionDto.
 
         区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
@@ -97,7 +97,7 @@ class IpRegionDto:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this IpRegionDto.
+        r"""Sets the description_cn of this IpRegionDto.
 
         区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
@@ -108,7 +108,7 @@ class IpRegionDto:
 
     @property
     def description_en(self):
-        """Gets the description_en of this IpRegionDto.
+        r"""Gets the description_en of this IpRegionDto.
 
         区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
@@ -119,7 +119,7 @@ class IpRegionDto:
 
     @description_en.setter
     def description_en(self, description_en):
-        """Sets the description_en of this IpRegionDto.
+        r"""Sets the description_en of this IpRegionDto.
 
         区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。
 
@@ -130,7 +130,7 @@ class IpRegionDto:
 
     @property
     def region_type(self):
-        """Gets the region_type of this IpRegionDto.
+        r"""Gets the region_type of this IpRegionDto.
 
         区域类型，0表示国家，1表示省份，2表示大洲，可通过[地域信息表](cfw_02_0031.xml)获取。
 
@@ -141,7 +141,7 @@ class IpRegionDto:
 
     @region_type.setter
     def region_type(self, region_type):
-        """Sets the region_type of this IpRegionDto.
+        r"""Sets the region_type of this IpRegionDto.
 
         区域类型，0表示国家，1表示省份，2表示大洲，可通过[地域信息表](cfw_02_0031.xml)获取。
 

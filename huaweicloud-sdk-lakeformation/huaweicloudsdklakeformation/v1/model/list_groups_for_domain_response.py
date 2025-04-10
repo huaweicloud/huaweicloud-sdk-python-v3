@@ -28,7 +28,7 @@ class ListGroupsForDomainResponse(SdkResponse):
     }
 
     def __init__(self, user_group=None, page_info=None):
-        """ListGroupsForDomainResponse
+        r"""ListGroupsForDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupsForDomainResponse(SdkResponse):
 
     @property
     def user_group(self):
-        """Gets the user_group of this ListGroupsForDomainResponse.
+        r"""Gets the user_group of this ListGroupsForDomainResponse.
 
         :return: The user_group of this ListGroupsForDomainResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.UserGroup`]
@@ -60,7 +60,7 @@ class ListGroupsForDomainResponse(SdkResponse):
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this ListGroupsForDomainResponse.
+        r"""Sets the user_group of this ListGroupsForDomainResponse.
 
         :param user_group: The user_group of this ListGroupsForDomainResponse.
         :type user_group: list[:class:`huaweicloudsdklakeformation.v1.UserGroup`]
@@ -69,7 +69,7 @@ class ListGroupsForDomainResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGroupsForDomainResponse.
+        r"""Gets the page_info of this ListGroupsForDomainResponse.
 
         :return: The page_info of this ListGroupsForDomainResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -78,7 +78,7 @@ class ListGroupsForDomainResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGroupsForDomainResponse.
+        r"""Sets the page_info of this ListGroupsForDomainResponse.
 
         :param page_info: The page_info of this ListGroupsForDomainResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

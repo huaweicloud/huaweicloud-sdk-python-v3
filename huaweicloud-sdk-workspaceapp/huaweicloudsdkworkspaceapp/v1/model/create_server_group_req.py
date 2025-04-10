@@ -73,7 +73,7 @@ class CreateServerGroupReq:
     }
 
     def __init__(self, name=None, image_id=None, image_product_id=None, image_type=None, os_type=None, description=None, route_policy=None, product_id=None, flavor_id=None, vpc_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, ou_name=None, cluster_id=None, availability_zone=None, ip_virtual=None, is_vdi=None, app_type=None, extra_session_type=None, extra_session_size=None, tags=None, enterprise_project_id=None, primary_server_group_id=None, server_group_status=None):
-        """CreateServerGroupReq
+        r"""CreateServerGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -202,7 +202,7 @@ class CreateServerGroupReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateServerGroupReq.
+        r"""Gets the name of this CreateServerGroupReq.
 
         服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -213,7 +213,7 @@ class CreateServerGroupReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateServerGroupReq.
+        r"""Sets the name of this CreateServerGroupReq.
 
         服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -224,7 +224,7 @@ class CreateServerGroupReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CreateServerGroupReq.
+        r"""Gets the image_id of this CreateServerGroupReq.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -235,7 +235,7 @@ class CreateServerGroupReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CreateServerGroupReq.
+        r"""Sets the image_id of this CreateServerGroupReq.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -246,7 +246,7 @@ class CreateServerGroupReq:
 
     @property
     def image_product_id(self):
-        """Gets the image_product_id of this CreateServerGroupReq.
+        r"""Gets the image_product_id of this CreateServerGroupReq.
 
         服务器组的镜像产品ID，当镜像为云市场镜像时，该字段必填。
 
@@ -257,7 +257,7 @@ class CreateServerGroupReq:
 
     @image_product_id.setter
     def image_product_id(self, image_product_id):
-        """Sets the image_product_id of this CreateServerGroupReq.
+        r"""Sets the image_product_id of this CreateServerGroupReq.
 
         服务器组的镜像产品ID，当镜像为云市场镜像时，该字段必填。
 
@@ -268,7 +268,7 @@ class CreateServerGroupReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this CreateServerGroupReq.
+        r"""Gets the image_type of this CreateServerGroupReq.
 
         :return: The image_type of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -277,7 +277,7 @@ class CreateServerGroupReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this CreateServerGroupReq.
+        r"""Sets the image_type of this CreateServerGroupReq.
 
         :param image_type: The image_type of this CreateServerGroupReq.
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -286,7 +286,7 @@ class CreateServerGroupReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this CreateServerGroupReq.
+        r"""Gets the os_type of this CreateServerGroupReq.
 
         :return: The os_type of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -295,7 +295,7 @@ class CreateServerGroupReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this CreateServerGroupReq.
+        r"""Sets the os_type of this CreateServerGroupReq.
 
         :param os_type: The os_type of this CreateServerGroupReq.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -304,7 +304,7 @@ class CreateServerGroupReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateServerGroupReq.
+        r"""Gets the description of this CreateServerGroupReq.
 
         服务器组描述。
 
@@ -315,7 +315,7 @@ class CreateServerGroupReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateServerGroupReq.
+        r"""Sets the description of this CreateServerGroupReq.
 
         服务器组描述。
 
@@ -326,7 +326,7 @@ class CreateServerGroupReq:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this CreateServerGroupReq.
+        r"""Gets the route_policy of this CreateServerGroupReq.
 
         :return: The route_policy of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -335,7 +335,7 @@ class CreateServerGroupReq:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this CreateServerGroupReq.
+        r"""Sets the route_policy of this CreateServerGroupReq.
 
         :param route_policy: The route_policy of this CreateServerGroupReq.
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -344,7 +344,7 @@ class CreateServerGroupReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateServerGroupReq.
+        r"""Gets the product_id of this CreateServerGroupReq.
 
         产品ID。 > - 获取方式详见产品套餐管理ListProduct：\"GET  /v1/{project_id}/product\"。
 
@@ -355,7 +355,7 @@ class CreateServerGroupReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateServerGroupReq.
+        r"""Sets the product_id of this CreateServerGroupReq.
 
         产品ID。 > - 获取方式详见产品套餐管理ListProduct：\"GET  /v1/{project_id}/product\"。
 
@@ -366,7 +366,7 @@ class CreateServerGroupReq:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateServerGroupReq.
+        r"""Gets the flavor_id of this CreateServerGroupReq.
 
         规格ID。
 
@@ -377,7 +377,7 @@ class CreateServerGroupReq:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateServerGroupReq.
+        r"""Sets the flavor_id of this CreateServerGroupReq.
 
         规格ID。
 
@@ -388,7 +388,7 @@ class CreateServerGroupReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateServerGroupReq.
+        r"""Gets the vpc_id of this CreateServerGroupReq.
 
         虚拟私有云ID。
 
@@ -399,7 +399,7 @@ class CreateServerGroupReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateServerGroupReq.
+        r"""Sets the vpc_id of this CreateServerGroupReq.
 
         虚拟私有云ID。
 
@@ -410,7 +410,7 @@ class CreateServerGroupReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateServerGroupReq.
+        r"""Gets the subnet_id of this CreateServerGroupReq.
 
         网卡对应的子网ID。
 
@@ -421,7 +421,7 @@ class CreateServerGroupReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateServerGroupReq.
+        r"""Sets the subnet_id of this CreateServerGroupReq.
 
         网卡对应的子网ID。
 
@@ -432,7 +432,7 @@ class CreateServerGroupReq:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this CreateServerGroupReq.
+        r"""Gets the system_disk_type of this CreateServerGroupReq.
 
         :return: The system_disk_type of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -441,7 +441,7 @@ class CreateServerGroupReq:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this CreateServerGroupReq.
+        r"""Sets the system_disk_type of this CreateServerGroupReq.
 
         :param system_disk_type: The system_disk_type of this CreateServerGroupReq.
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -450,7 +450,7 @@ class CreateServerGroupReq:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this CreateServerGroupReq.
+        r"""Gets the system_disk_size of this CreateServerGroupReq.
 
         磁盘容量，单位GB。
 
@@ -461,7 +461,7 @@ class CreateServerGroupReq:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this CreateServerGroupReq.
+        r"""Sets the system_disk_size of this CreateServerGroupReq.
 
         磁盘容量，单位GB。
 
@@ -472,7 +472,7 @@ class CreateServerGroupReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this CreateServerGroupReq.
+        r"""Gets the ou_name of this CreateServerGroupReq.
 
         默认组织名称。
 
@@ -483,7 +483,7 @@ class CreateServerGroupReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this CreateServerGroupReq.
+        r"""Sets the ou_name of this CreateServerGroupReq.
 
         默认组织名称。
 
@@ -494,7 +494,7 @@ class CreateServerGroupReq:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateServerGroupReq.
+        r"""Gets the cluster_id of this CreateServerGroupReq.
 
         云服务器系统盘对应的存储池的ID。
 
@@ -505,7 +505,7 @@ class CreateServerGroupReq:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateServerGroupReq.
+        r"""Sets the cluster_id of this CreateServerGroupReq.
 
         云服务器系统盘对应的存储池的ID。
 
@@ -516,7 +516,7 @@ class CreateServerGroupReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateServerGroupReq.
+        r"""Gets the availability_zone of this CreateServerGroupReq.
 
         可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -527,7 +527,7 @@ class CreateServerGroupReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateServerGroupReq.
+        r"""Sets the availability_zone of this CreateServerGroupReq.
 
         可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -538,7 +538,7 @@ class CreateServerGroupReq:
 
     @property
     def ip_virtual(self):
-        """Gets the ip_virtual of this CreateServerGroupReq.
+        r"""Gets the ip_virtual of this CreateServerGroupReq.
 
         :return: The ip_virtual of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
@@ -547,7 +547,7 @@ class CreateServerGroupReq:
 
     @ip_virtual.setter
     def ip_virtual(self, ip_virtual):
-        """Sets the ip_virtual of this CreateServerGroupReq.
+        r"""Sets the ip_virtual of this CreateServerGroupReq.
 
         :param ip_virtual: The ip_virtual of this CreateServerGroupReq.
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
@@ -556,7 +556,7 @@ class CreateServerGroupReq:
 
     @property
     def is_vdi(self):
-        """Gets the is_vdi of this CreateServerGroupReq.
+        r"""Gets the is_vdi of this CreateServerGroupReq.
 
         是否为vdi单会话模式。
 
@@ -567,7 +567,7 @@ class CreateServerGroupReq:
 
     @is_vdi.setter
     def is_vdi(self, is_vdi):
-        """Sets the is_vdi of this CreateServerGroupReq.
+        r"""Sets the is_vdi of this CreateServerGroupReq.
 
         是否为vdi单会话模式。
 
@@ -578,7 +578,7 @@ class CreateServerGroupReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateServerGroupReq.
+        r"""Gets the app_type of this CreateServerGroupReq.
 
         :return: The app_type of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -587,7 +587,7 @@ class CreateServerGroupReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateServerGroupReq.
+        r"""Sets the app_type of this CreateServerGroupReq.
 
         :param app_type: The app_type of this CreateServerGroupReq.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -596,7 +596,7 @@ class CreateServerGroupReq:
 
     @property
     def extra_session_type(self):
-        """Gets the extra_session_type of this CreateServerGroupReq.
+        r"""Gets the extra_session_type of this CreateServerGroupReq.
 
         :return: The extra_session_type of this CreateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -605,7 +605,7 @@ class CreateServerGroupReq:
 
     @extra_session_type.setter
     def extra_session_type(self, extra_session_type):
-        """Sets the extra_session_type of this CreateServerGroupReq.
+        r"""Sets the extra_session_type of this CreateServerGroupReq.
 
         :param extra_session_type: The extra_session_type of this CreateServerGroupReq.
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -614,7 +614,7 @@ class CreateServerGroupReq:
 
     @property
     def extra_session_size(self):
-        """Gets the extra_session_size of this CreateServerGroupReq.
+        r"""Gets the extra_session_size of this CreateServerGroupReq.
 
         付费会话数，单位/个。
 
@@ -625,7 +625,7 @@ class CreateServerGroupReq:
 
     @extra_session_size.setter
     def extra_session_size(self, extra_session_size):
-        """Sets the extra_session_size of this CreateServerGroupReq.
+        r"""Sets the extra_session_size of this CreateServerGroupReq.
 
         付费会话数，单位/个。
 
@@ -636,7 +636,7 @@ class CreateServerGroupReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateServerGroupReq.
+        r"""Gets the tags of this CreateServerGroupReq.
 
         标签信息，最多包含20个key,不允许重复
 
@@ -647,7 +647,7 @@ class CreateServerGroupReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateServerGroupReq.
+        r"""Sets the tags of this CreateServerGroupReq.
 
         标签信息，最多包含20个key,不允许重复
 
@@ -658,7 +658,7 @@ class CreateServerGroupReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateServerGroupReq.
+        r"""Gets the enterprise_project_id of this CreateServerGroupReq.
 
         企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
 
@@ -669,7 +669,7 @@ class CreateServerGroupReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateServerGroupReq.
+        r"""Sets the enterprise_project_id of this CreateServerGroupReq.
 
         企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
 
@@ -680,7 +680,7 @@ class CreateServerGroupReq:
 
     @property
     def primary_server_group_id(self):
-        """Gets the primary_server_group_id of this CreateServerGroupReq.
+        r"""Gets the primary_server_group_id of this CreateServerGroupReq.
 
         主服务器组id,绑定主服务器组，则创建的是备服务器。
 
@@ -691,7 +691,7 @@ class CreateServerGroupReq:
 
     @primary_server_group_id.setter
     def primary_server_group_id(self, primary_server_group_id):
-        """Sets the primary_server_group_id of this CreateServerGroupReq.
+        r"""Sets the primary_server_group_id of this CreateServerGroupReq.
 
         主服务器组id,绑定主服务器组，则创建的是备服务器。
 
@@ -702,7 +702,7 @@ class CreateServerGroupReq:
 
     @property
     def server_group_status(self):
-        """Gets the server_group_status of this CreateServerGroupReq.
+        r"""Gets the server_group_status of this CreateServerGroupReq.
 
         是否启用服务器组。
 
@@ -713,7 +713,7 @@ class CreateServerGroupReq:
 
     @server_group_status.setter
     def server_group_status(self, server_group_status):
-        """Sets the server_group_status of this CreateServerGroupReq.
+        r"""Sets the server_group_status of this CreateServerGroupReq.
 
         是否启用服务器组。
 

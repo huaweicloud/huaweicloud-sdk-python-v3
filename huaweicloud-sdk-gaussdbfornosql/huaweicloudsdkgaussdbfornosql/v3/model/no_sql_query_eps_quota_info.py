@@ -31,7 +31,7 @@ class NoSqlQueryEpsQuotaInfo:
     }
 
     def __init__(self, enterprise_project_id=None, enterprise_project_name=None, quota=None, used=None):
-        """NoSqlQueryEpsQuotaInfo
+        r"""NoSqlQueryEpsQuotaInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NoSqlQueryEpsQuotaInfo.
+        r"""Gets the enterprise_project_id of this NoSqlQueryEpsQuotaInfo.
 
         企业项目ID。
 
@@ -71,7 +71,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NoSqlQueryEpsQuotaInfo.
+        r"""Sets the enterprise_project_id of this NoSqlQueryEpsQuotaInfo.
 
         企业项目ID。
 
@@ -82,7 +82,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this NoSqlQueryEpsQuotaInfo.
+        r"""Gets the enterprise_project_name of this NoSqlQueryEpsQuotaInfo.
 
         企业项目名称。
 
@@ -93,7 +93,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this NoSqlQueryEpsQuotaInfo.
+        r"""Sets the enterprise_project_name of this NoSqlQueryEpsQuotaInfo.
 
         企业项目名称。
 
@@ -104,7 +104,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @property
     def quota(self):
-        """Gets the quota of this NoSqlQueryEpsQuotaInfo.
+        r"""Gets the quota of this NoSqlQueryEpsQuotaInfo.
 
         :return: The quota of this NoSqlQueryEpsQuotaInfo.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaTotal`
@@ -113,7 +113,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this NoSqlQueryEpsQuotaInfo.
+        r"""Sets the quota of this NoSqlQueryEpsQuotaInfo.
 
         :param quota: The quota of this NoSqlQueryEpsQuotaInfo.
         :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaTotal`
@@ -122,7 +122,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @property
     def used(self):
-        """Gets the used of this NoSqlQueryEpsQuotaInfo.
+        r"""Gets the used of this NoSqlQueryEpsQuotaInfo.
 
         :return: The used of this NoSqlQueryEpsQuotaInfo.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaUsed`
@@ -131,7 +131,7 @@ class NoSqlQueryEpsQuotaInfo:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this NoSqlQueryEpsQuotaInfo.
+        r"""Sets the used of this NoSqlQueryEpsQuotaInfo.
 
         :param used: The used of this NoSqlQueryEpsQuotaInfo.
         :type used: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaUsed`

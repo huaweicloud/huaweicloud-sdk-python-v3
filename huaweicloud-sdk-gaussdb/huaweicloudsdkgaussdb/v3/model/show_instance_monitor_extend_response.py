@@ -28,7 +28,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
     }
 
     def __init__(self, monitor_switch=None, period=None):
-        """ShowInstanceMonitorExtendResponse
+        r"""ShowInstanceMonitorExtendResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
     @property
     def monitor_switch(self):
-        """Gets the monitor_switch of this ShowInstanceMonitorExtendResponse.
+        r"""Gets the monitor_switch of this ShowInstanceMonitorExtendResponse.
 
         实例秒级监控开关。  - true，表示开启。 - false，表示关闭。
 
@@ -62,7 +62,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
     @monitor_switch.setter
     def monitor_switch(self, monitor_switch):
-        """Sets the monitor_switch of this ShowInstanceMonitorExtendResponse.
+        r"""Sets the monitor_switch of this ShowInstanceMonitorExtendResponse.
 
         实例秒级监控开关。  - true，表示开启。 - false，表示关闭。
 
@@ -73,7 +73,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this ShowInstanceMonitorExtendResponse.
+        r"""Gets the period of this ShowInstanceMonitorExtendResponse.
 
         采集周期，仅在monitor_switch为true时返回。  - 1：采集周期为1s。 - 5：采集周期为5s。
 
@@ -84,7 +84,7 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowInstanceMonitorExtendResponse.
+        r"""Sets the period of this ShowInstanceMonitorExtendResponse.
 
         采集周期，仅在monitor_switch为true时返回。  - 1：采集周期为1s。 - 5：采集周期为5s。
 

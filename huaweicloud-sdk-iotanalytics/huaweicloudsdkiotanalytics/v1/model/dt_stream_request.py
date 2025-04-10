@@ -25,7 +25,7 @@ class DTStreamRequest:
     }
 
     def __init__(self, inputs=None):
-        """DTStreamRequest
+        r"""DTStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DTStreamRequest:
 
     @property
     def inputs(self):
-        """Gets the inputs of this DTStreamRequest.
+        r"""Gets the inputs of this DTStreamRequest.
 
         输入参数，最多支持10个
 
@@ -53,7 +53,7 @@ class DTStreamRequest:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this DTStreamRequest.
+        r"""Sets the inputs of this DTStreamRequest.
 
         输入参数，最多支持10个
 

@@ -49,7 +49,7 @@ class ShowPackageDetailRespReleasePackage:
     }
 
     def __init__(self, apply_timestamp=None, apply_user_id=None, apply_user_name=None, delete_flag=None, deploy_status=None, deploy_timestamp=None, deploy_user_id=None, deploy_user_name=None, package_approvers=None, package_id=None, package_name=None, project_id=None, workspace_id=None):
-        """ShowPackageDetailRespReleasePackage
+        r"""ShowPackageDetailRespReleasePackage
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def apply_timestamp(self):
-        """Gets the apply_timestamp of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the apply_timestamp of this ShowPackageDetailRespReleasePackage.
 
         申请时间，13位时间戳
 
@@ -137,7 +137,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @apply_timestamp.setter
     def apply_timestamp(self, apply_timestamp):
-        """Sets the apply_timestamp of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the apply_timestamp of this ShowPackageDetailRespReleasePackage.
 
         申请时间，13位时间戳
 
@@ -148,7 +148,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def apply_user_id(self):
-        """Gets the apply_user_id of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the apply_user_id of this ShowPackageDetailRespReleasePackage.
 
         申请id
 
@@ -159,7 +159,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @apply_user_id.setter
     def apply_user_id(self, apply_user_id):
-        """Sets the apply_user_id of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the apply_user_id of this ShowPackageDetailRespReleasePackage.
 
         申请id
 
@@ -170,7 +170,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def apply_user_name(self):
-        """Gets the apply_user_name of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the apply_user_name of this ShowPackageDetailRespReleasePackage.
 
         申请人名称
 
@@ -181,7 +181,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @apply_user_name.setter
     def apply_user_name(self, apply_user_name):
-        """Sets the apply_user_name of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the apply_user_name of this ShowPackageDetailRespReleasePackage.
 
         申请人名称
 
@@ -192,7 +192,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def delete_flag(self):
-        """Gets the delete_flag of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the delete_flag of this ShowPackageDetailRespReleasePackage.
 
         是否删除，0:不删除，1:不删除
 
@@ -203,7 +203,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @delete_flag.setter
     def delete_flag(self, delete_flag):
-        """Sets the delete_flag of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the delete_flag of this ShowPackageDetailRespReleasePackage.
 
         是否删除，0:不删除，1:不删除
 
@@ -214,7 +214,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def deploy_status(self):
-        """Gets the deploy_status of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the deploy_status of this ShowPackageDetailRespReleasePackage.
 
         发布状态，1:待审批,2:成功,3:失败, 5:发布中
 
@@ -225,7 +225,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @deploy_status.setter
     def deploy_status(self, deploy_status):
-        """Sets the deploy_status of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the deploy_status of this ShowPackageDetailRespReleasePackage.
 
         发布状态，1:待审批,2:成功,3:失败, 5:发布中
 
@@ -236,7 +236,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def deploy_timestamp(self):
-        """Gets the deploy_timestamp of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the deploy_timestamp of this ShowPackageDetailRespReleasePackage.
 
         发布时间，13位时间戳
 
@@ -247,7 +247,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @deploy_timestamp.setter
     def deploy_timestamp(self, deploy_timestamp):
-        """Sets the deploy_timestamp of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the deploy_timestamp of this ShowPackageDetailRespReleasePackage.
 
         发布时间，13位时间戳
 
@@ -258,7 +258,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def deploy_user_id(self):
-        """Gets the deploy_user_id of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the deploy_user_id of this ShowPackageDetailRespReleasePackage.
 
         发布人id
 
@@ -269,7 +269,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @deploy_user_id.setter
     def deploy_user_id(self, deploy_user_id):
-        """Sets the deploy_user_id of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the deploy_user_id of this ShowPackageDetailRespReleasePackage.
 
         发布人id
 
@@ -280,7 +280,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def deploy_user_name(self):
-        """Gets the deploy_user_name of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the deploy_user_name of this ShowPackageDetailRespReleasePackage.
 
         发布人名称
 
@@ -291,7 +291,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @deploy_user_name.setter
     def deploy_user_name(self, deploy_user_name):
-        """Sets the deploy_user_name of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the deploy_user_name of this ShowPackageDetailRespReleasePackage.
 
         发布人名称
 
@@ -302,7 +302,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def package_approvers(self):
-        """Gets the package_approvers of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the package_approvers of this ShowPackageDetailRespReleasePackage.
 
         发布包审批信息
 
@@ -313,7 +313,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @package_approvers.setter
     def package_approvers(self, package_approvers):
-        """Sets the package_approvers of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the package_approvers of this ShowPackageDetailRespReleasePackage.
 
         发布包审批信息
 
@@ -324,7 +324,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the package_id of this ShowPackageDetailRespReleasePackage.
 
         发布包id
 
@@ -335,7 +335,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the package_id of this ShowPackageDetailRespReleasePackage.
 
         发布包id
 
@@ -346,7 +346,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def package_name(self):
-        """Gets the package_name of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the package_name of this ShowPackageDetailRespReleasePackage.
 
         发布包名称
 
@@ -357,7 +357,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the package_name of this ShowPackageDetailRespReleasePackage.
 
         发布包名称
 
@@ -368,7 +368,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the project_id of this ShowPackageDetailRespReleasePackage.
 
         项目ID+workspace+workspaceId
 
@@ -379,7 +379,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the project_id of this ShowPackageDetailRespReleasePackage.
 
         项目ID+workspace+workspaceId
 
@@ -390,7 +390,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowPackageDetailRespReleasePackage.
+        r"""Gets the workspace_id of this ShowPackageDetailRespReleasePackage.
 
         工作空间ID
 
@@ -401,7 +401,7 @@ class ShowPackageDetailRespReleasePackage:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowPackageDetailRespReleasePackage.
+        r"""Sets the workspace_id of this ShowPackageDetailRespReleasePackage.
 
         工作空间ID
 

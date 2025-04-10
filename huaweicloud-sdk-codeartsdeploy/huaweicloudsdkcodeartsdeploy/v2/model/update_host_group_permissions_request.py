@@ -27,7 +27,7 @@ class UpdateHostGroupPermissionsRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """UpdateHostGroupPermissionsRequest
+        r"""UpdateHostGroupPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHostGroupPermissionsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateHostGroupPermissionsRequest.
+        r"""Gets the group_id of this UpdateHostGroupPermissionsRequest.
 
         主机集群id
 
@@ -60,7 +60,7 @@ class UpdateHostGroupPermissionsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateHostGroupPermissionsRequest.
+        r"""Sets the group_id of this UpdateHostGroupPermissionsRequest.
 
         主机集群id
 
@@ -71,7 +71,7 @@ class UpdateHostGroupPermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHostGroupPermissionsRequest.
+        r"""Gets the body of this UpdateHostGroupPermissionsRequest.
 
         :return: The body of this UpdateHostGroupPermissionsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionUpdateV2Body`
@@ -80,7 +80,7 @@ class UpdateHostGroupPermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHostGroupPermissionsRequest.
+        r"""Sets the body of this UpdateHostGroupPermissionsRequest.
 
         :param body: The body of this UpdateHostGroupPermissionsRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionUpdateV2Body`

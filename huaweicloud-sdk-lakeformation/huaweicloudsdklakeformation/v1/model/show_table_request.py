@@ -31,7 +31,7 @@ class ShowTableRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None):
-        """ShowTableRequest
+        r"""ShowTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowTableRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowTableRequest.
+        r"""Gets the instance_id of this ShowTableRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ShowTableRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowTableRequest.
+        r"""Sets the instance_id of this ShowTableRequest.
 
         实例ID
 
@@ -82,7 +82,7 @@ class ShowTableRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowTableRequest.
+        r"""Gets the catalog_name of this ShowTableRequest.
 
         catalog名字
 
@@ -93,7 +93,7 @@ class ShowTableRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowTableRequest.
+        r"""Sets the catalog_name of this ShowTableRequest.
 
         catalog名字
 
@@ -104,7 +104,7 @@ class ShowTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowTableRequest.
+        r"""Gets the database_name of this ShowTableRequest.
 
         数据库名字
 
@@ -115,7 +115,7 @@ class ShowTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowTableRequest.
+        r"""Sets the database_name of this ShowTableRequest.
 
         数据库名字
 
@@ -126,7 +126,7 @@ class ShowTableRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowTableRequest.
+        r"""Gets the table_name of this ShowTableRequest.
 
         表名称
 
@@ -137,7 +137,7 @@ class ShowTableRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowTableRequest.
+        r"""Sets the table_name of this ShowTableRequest.
 
         表名称
 

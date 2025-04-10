@@ -29,7 +29,7 @@ class UpdatePrivateNatOption:
     }
 
     def __init__(self, name=None, description=None, spec=None):
-        """UpdatePrivateNatOption
+        r"""UpdatePrivateNatOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePrivateNatOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePrivateNatOption.
+        r"""Gets the name of this UpdatePrivateNatOption.
 
         私网NAT网关实例的名字。 私网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
@@ -68,7 +68,7 @@ class UpdatePrivateNatOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePrivateNatOption.
+        r"""Sets the name of this UpdatePrivateNatOption.
 
         私网NAT网关实例的名字。 私网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
@@ -79,7 +79,7 @@ class UpdatePrivateNatOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePrivateNatOption.
+        r"""Gets the description of this UpdatePrivateNatOption.
 
         私网NAT网关的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -90,7 +90,7 @@ class UpdatePrivateNatOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePrivateNatOption.
+        r"""Sets the description of this UpdatePrivateNatOption.
 
         私网NAT网关的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -101,7 +101,7 @@ class UpdatePrivateNatOption:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdatePrivateNatOption.
+        r"""Gets the spec of this UpdatePrivateNatOption.
 
         私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 
@@ -112,7 +112,7 @@ class UpdatePrivateNatOption:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdatePrivateNatOption.
+        r"""Sets the spec of this UpdatePrivateNatOption.
 
         私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 

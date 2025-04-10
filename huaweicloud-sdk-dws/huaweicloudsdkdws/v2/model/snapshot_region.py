@@ -25,7 +25,7 @@ class SnapshotRegion:
     }
 
     def __init__(self, region_id=None):
-        """SnapshotRegion
+        r"""SnapshotRegion
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SnapshotRegion:
 
     @property
     def region_id(self):
-        """Gets the region_id of this SnapshotRegion.
+        r"""Gets the region_id of this SnapshotRegion.
 
         区域ID
 
@@ -54,7 +54,7 @@ class SnapshotRegion:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this SnapshotRegion.
+        r"""Sets the region_id of this SnapshotRegion.
 
         区域ID
 

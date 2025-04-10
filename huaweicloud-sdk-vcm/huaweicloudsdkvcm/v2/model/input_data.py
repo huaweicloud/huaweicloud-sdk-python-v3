@@ -41,7 +41,7 @@ class InputData:
     }
 
     def __init__(self, bucket=None, path=None, url=None, id=None, stream_name=None, node_id=None, certificate_check=None, rtsp_path_in_response=None, device_id=None):
-        """InputData
+        r"""InputData
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InputData:
 
     @property
     def bucket(self):
-        """Gets the bucket of this InputData.
+        r"""Gets the bucket of this InputData.
 
         type为obs时输入参数  OBS桶名称。 
 
@@ -110,7 +110,7 @@ class InputData:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this InputData.
+        r"""Sets the bucket of this InputData.
 
         type为obs时输入参数  OBS桶名称。 
 
@@ -121,7 +121,7 @@ class InputData:
 
     @property
     def path(self):
-        """Gets the path of this InputData.
+        r"""Gets the path of this InputData.
 
         type为obs时输入参数  OBS桶内的路径，例如“output/c1.mp4”。 
 
@@ -132,7 +132,7 @@ class InputData:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this InputData.
+        r"""Sets the path of this InputData.
 
         type为obs时输入参数  OBS桶内的路径，例如“output/c1.mp4”。 
 
@@ -143,7 +143,7 @@ class InputData:
 
     @property
     def url(self):
-        """Gets the url of this InputData.
+        r"""Gets the url of this InputData.
 
         type为url或edgerestful时输入参数  type为url时表示视频数据的URL，目前支持OBS URL，且需要设置该URL对匿名用户可读权限。 type为edgerestful时表示容器获取EDGERESTFUL流的rest请求。格式：http(s):ip:port/xxx。 
 
@@ -154,7 +154,7 @@ class InputData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this InputData.
+        r"""Sets the url of this InputData.
 
         type为url或edgerestful时输入参数  type为url时表示视频数据的URL，目前支持OBS URL，且需要设置该URL对匿名用户可读权限。 type为edgerestful时表示容器获取EDGERESTFUL流的rest请求。格式：http(s):ip:port/xxx。 
 
@@ -165,7 +165,7 @@ class InputData:
 
     @property
     def id(self):
-        """Gets the id of this InputData.
+        r"""Gets the id of this InputData.
 
         type为edgecamera时输入参数  边缘摄像头id。 
 
@@ -176,7 +176,7 @@ class InputData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InputData.
+        r"""Sets the id of this InputData.
 
         type为edgecamera时输入参数  边缘摄像头id。 
 
@@ -187,7 +187,7 @@ class InputData:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this InputData.
+        r"""Gets the stream_name of this InputData.
 
         type为vis时输入参数  视频接入服务中的视频流名称。 
 
@@ -198,7 +198,7 @@ class InputData:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this InputData.
+        r"""Sets the stream_name of this InputData.
 
         type为vis时输入参数  视频接入服务中的视频流名称。 
 
@@ -209,7 +209,7 @@ class InputData:
 
     @property
     def node_id(self):
-        """Gets the node_id of this InputData.
+        r"""Gets the node_id of this InputData.
 
         type为edgerestful或vcn时输入参数  用于运行的边缘节点id, 下发边缘多任务作业时该字段不填写。 
 
@@ -220,7 +220,7 @@ class InputData:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this InputData.
+        r"""Sets the node_id of this InputData.
 
         type为edgerestful或vcn时输入参数  用于运行的边缘节点id, 下发边缘多任务作业时该字段不填写。 
 
@@ -231,7 +231,7 @@ class InputData:
 
     @property
     def certificate_check(self):
-        """Gets the certificate_check of this InputData.
+        r"""Gets the certificate_check of this InputData.
 
         type为edgerestful时输入参数  true：算法侧需要对https请求进行证书校验。 false：算法侧无需证书校验。 默认值：false。 平台侧仅对齐进行输入校验，不涉及业务逻辑。 
 
@@ -242,7 +242,7 @@ class InputData:
 
     @certificate_check.setter
     def certificate_check(self, certificate_check):
-        """Sets the certificate_check of this InputData.
+        r"""Sets the certificate_check of this InputData.
 
         type为edgerestful时输入参数  true：算法侧需要对https请求进行证书校验。 false：算法侧无需证书校验。 默认值：false。 平台侧仅对齐进行输入校验，不涉及业务逻辑。 
 
@@ -253,7 +253,7 @@ class InputData:
 
     @property
     def rtsp_path_in_response(self):
-        """Gets the rtsp_path_in_response of this InputData.
+        r"""Gets the rtsp_path_in_response of this InputData.
 
         type为edgerestful时输入参数  返回body体中edgerestful流地址的路径，不能以/开头。例如：data/url。 
 
@@ -264,7 +264,7 @@ class InputData:
 
     @rtsp_path_in_response.setter
     def rtsp_path_in_response(self, rtsp_path_in_response):
-        """Sets the rtsp_path_in_response of this InputData.
+        r"""Sets the rtsp_path_in_response of this InputData.
 
         type为edgerestful时输入参数  返回body体中edgerestful流地址的路径，不能以/开头。例如：data/url。 
 
@@ -275,7 +275,7 @@ class InputData:
 
     @property
     def device_id(self):
-        """Gets the device_id of this InputData.
+        r"""Gets the device_id of this InputData.
 
         type为vcn时输入参数  设备id号，符合正则表达式：^([0-9]{20}[#]{1}[a-zA-Z0-9]{32})|([0-9]{20}[#]{1}[0-9]{1,10}[#]{1}[a-zA-Z0-9]{32})$。 
 
@@ -286,7 +286,7 @@ class InputData:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this InputData.
+        r"""Sets the device_id of this InputData.
 
         type为vcn时输入参数  设备id号，符合正则表达式：^([0-9]{20}[#]{1}[a-zA-Z0-9]{32})|([0-9]{20}[#]{1}[0-9]{1,10}[#]{1}[a-zA-Z0-9]{32})$。 
 

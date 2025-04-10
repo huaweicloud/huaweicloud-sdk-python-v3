@@ -29,7 +29,7 @@ class ShowUserDisclaimerRecord:
     }
 
     def __init__(self, domain_id=None, created_at=None, updated_at=None):
-        """ShowUserDisclaimerRecord
+        r"""ShowUserDisclaimerRecord
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowUserDisclaimerRecord:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowUserDisclaimerRecord.
+        r"""Gets the domain_id of this ShowUserDisclaimerRecord.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -68,7 +68,7 @@ class ShowUserDisclaimerRecord:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowUserDisclaimerRecord.
+        r"""Sets the domain_id of this ShowUserDisclaimerRecord.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -79,7 +79,7 @@ class ShowUserDisclaimerRecord:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowUserDisclaimerRecord.
+        r"""Gets the created_at of this ShowUserDisclaimerRecord.
 
         创建时间
 
@@ -90,7 +90,7 @@ class ShowUserDisclaimerRecord:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowUserDisclaimerRecord.
+        r"""Sets the created_at of this ShowUserDisclaimerRecord.
 
         创建时间
 
@@ -101,7 +101,7 @@ class ShowUserDisclaimerRecord:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowUserDisclaimerRecord.
+        r"""Gets the updated_at of this ShowUserDisclaimerRecord.
 
         更新时间
 
@@ -112,7 +112,7 @@ class ShowUserDisclaimerRecord:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowUserDisclaimerRecord.
+        r"""Sets the updated_at of this ShowUserDisclaimerRecord.
 
         更新时间
 

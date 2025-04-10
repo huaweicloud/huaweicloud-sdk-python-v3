@@ -28,7 +28,7 @@ class ShowDataDetailResponse(SdkResponse):
     }
 
     def __init__(self, entity=None, referred_entities=None):
-        """ShowDataDetailResponse
+        r"""ShowDataDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDataDetailResponse(SdkResponse):
 
     @property
     def entity(self):
-        """Gets the entity of this ShowDataDetailResponse.
+        r"""Gets the entity of this ShowDataDetailResponse.
 
         :return: The entity of this ShowDataDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -60,7 +60,7 @@ class ShowDataDetailResponse(SdkResponse):
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this ShowDataDetailResponse.
+        r"""Sets the entity of this ShowDataDetailResponse.
 
         :param entity: The entity of this ShowDataDetailResponse.
         :type entity: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -69,7 +69,7 @@ class ShowDataDetailResponse(SdkResponse):
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this ShowDataDetailResponse.
+        r"""Gets the referred_entities of this ShowDataDetailResponse.
 
         关联资产信息，结构体Map<String, Entity>
 
@@ -80,7 +80,7 @@ class ShowDataDetailResponse(SdkResponse):
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this ShowDataDetailResponse.
+        r"""Sets the referred_entities of this ShowDataDetailResponse.
 
         关联资产信息，结构体Map<String, Entity>
 

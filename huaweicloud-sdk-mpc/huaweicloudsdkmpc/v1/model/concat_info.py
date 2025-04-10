@@ -25,7 +25,7 @@ class ConcatInfo:
     }
 
     def __init__(self, inputs=None):
-        """ConcatInfo
+        r"""ConcatInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConcatInfo:
 
     @property
     def inputs(self):
-        """Gets the inputs of this ConcatInfo.
+        r"""Gets the inputs of this ConcatInfo.
 
         拼接任务输入源地址。
 
@@ -54,7 +54,7 @@ class ConcatInfo:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ConcatInfo.
+        r"""Sets the inputs of this ConcatInfo.
 
         拼接任务输入源地址。
 

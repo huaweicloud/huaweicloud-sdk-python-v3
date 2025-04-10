@@ -23,7 +23,7 @@ class ListInternetBandwidthDomainTagsRequest:
     }
 
     def __init__(self):
-        """ListInternetBandwidthDomainTagsRequest
+        r"""ListInternetBandwidthDomainTagsRequest
 
         The model defined in huaweicloud sdk
 

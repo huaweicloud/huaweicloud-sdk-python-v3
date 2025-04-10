@@ -27,7 +27,7 @@ class ImageTaggingItemBodyI18nTag:
     }
 
     def __init__(self, zh=None, en=None):
-        """ImageTaggingItemBodyI18nTag
+        r"""ImageTaggingItemBodyI18nTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageTaggingItemBodyI18nTag:
 
     @property
     def zh(self):
-        """Gets the zh of this ImageTaggingItemBodyI18nTag.
+        r"""Gets the zh of this ImageTaggingItemBodyI18nTag.
 
         中文标签
 
@@ -61,7 +61,7 @@ class ImageTaggingItemBodyI18nTag:
 
     @zh.setter
     def zh(self, zh):
-        """Sets the zh of this ImageTaggingItemBodyI18nTag.
+        r"""Sets the zh of this ImageTaggingItemBodyI18nTag.
 
         中文标签
 
@@ -72,7 +72,7 @@ class ImageTaggingItemBodyI18nTag:
 
     @property
     def en(self):
-        """Gets the en of this ImageTaggingItemBodyI18nTag.
+        r"""Gets the en of this ImageTaggingItemBodyI18nTag.
 
         英文标签
 
@@ -83,7 +83,7 @@ class ImageTaggingItemBodyI18nTag:
 
     @en.setter
     def en(self, en):
-        """Sets the en of this ImageTaggingItemBodyI18nTag.
+        r"""Sets the en of this ImageTaggingItemBodyI18nTag.
 
         英文标签
 

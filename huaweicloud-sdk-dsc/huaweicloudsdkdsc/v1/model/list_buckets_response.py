@@ -28,7 +28,7 @@ class ListBucketsResponse(SdkResponse):
     }
 
     def __init__(self, buckets=None, total=None):
-        """ListBucketsResponse
+        r"""ListBucketsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this ListBucketsResponse.
+        r"""Gets the buckets of this ListBucketsResponse.
 
         OBS桶列表
 
@@ -62,7 +62,7 @@ class ListBucketsResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this ListBucketsResponse.
+        r"""Sets the buckets of this ListBucketsResponse.
 
         OBS桶列表
 
@@ -73,7 +73,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListBucketsResponse.
+        r"""Gets the total of this ListBucketsResponse.
 
         OBS桶总数
 
@@ -84,7 +84,7 @@ class ListBucketsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBucketsResponse.
+        r"""Sets the total of this ListBucketsResponse.
 
         OBS桶总数
 

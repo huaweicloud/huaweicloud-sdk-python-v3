@@ -28,7 +28,7 @@ class BatchCopyDomainResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """BatchCopyDomainResponse
+        r"""BatchCopyDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCopyDomainResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchCopyDomainResponse.
+        r"""Gets the result of this BatchCopyDomainResponse.
 
         复制配置结果。
 
@@ -62,7 +62,7 @@ class BatchCopyDomainResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchCopyDomainResponse.
+        r"""Sets the result of this BatchCopyDomainResponse.
 
         复制配置结果。
 
@@ -73,7 +73,7 @@ class BatchCopyDomainResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchCopyDomainResponse.
+        r"""Gets the x_request_id of this BatchCopyDomainResponse.
 
         :return: The x_request_id of this BatchCopyDomainResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchCopyDomainResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchCopyDomainResponse.
+        r"""Sets the x_request_id of this BatchCopyDomainResponse.
 
         :param x_request_id: The x_request_id of this BatchCopyDomainResponse.
         :type x_request_id: str

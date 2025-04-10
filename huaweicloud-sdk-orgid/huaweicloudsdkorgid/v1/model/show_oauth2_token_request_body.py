@@ -35,7 +35,7 @@ class ShowOauth2TokenRequestBody:
     }
 
     def __init__(self, grant_type=None, code=None, client_id=None, client_secret=None, redirect_uri=None, access_type=None):
-        """ShowOauth2TokenRequestBody
+        r"""ShowOauth2TokenRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ShowOauth2TokenRequestBody:
 
     @property
     def grant_type(self):
-        """Gets the grant_type of this ShowOauth2TokenRequestBody.
+        r"""Gets the grant_type of this ShowOauth2TokenRequestBody.
 
         固定值authorization_code
 
@@ -84,7 +84,7 @@ class ShowOauth2TokenRequestBody:
 
     @grant_type.setter
     def grant_type(self, grant_type):
-        """Sets the grant_type of this ShowOauth2TokenRequestBody.
+        r"""Sets the grant_type of this ShowOauth2TokenRequestBody.
 
         固定值authorization_code
 
@@ -95,7 +95,7 @@ class ShowOauth2TokenRequestBody:
 
     @property
     def code(self):
-        """Gets the code of this ShowOauth2TokenRequestBody.
+        r"""Gets the code of this ShowOauth2TokenRequestBody.
 
         授权码
 
@@ -106,7 +106,7 @@ class ShowOauth2TokenRequestBody:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowOauth2TokenRequestBody.
+        r"""Sets the code of this ShowOauth2TokenRequestBody.
 
         授权码
 
@@ -117,7 +117,7 @@ class ShowOauth2TokenRequestBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ShowOauth2TokenRequestBody.
+        r"""Gets the client_id of this ShowOauth2TokenRequestBody.
 
         客户端应用注册ID
 
@@ -128,7 +128,7 @@ class ShowOauth2TokenRequestBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ShowOauth2TokenRequestBody.
+        r"""Sets the client_id of this ShowOauth2TokenRequestBody.
 
         客户端应用注册ID
 
@@ -139,7 +139,7 @@ class ShowOauth2TokenRequestBody:
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this ShowOauth2TokenRequestBody.
+        r"""Gets the client_secret of this ShowOauth2TokenRequestBody.
 
         客户端应用注册密钥
 
@@ -150,7 +150,7 @@ class ShowOauth2TokenRequestBody:
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this ShowOauth2TokenRequestBody.
+        r"""Sets the client_secret of this ShowOauth2TokenRequestBody.
 
         客户端应用注册密钥
 
@@ -161,7 +161,7 @@ class ShowOauth2TokenRequestBody:
 
     @property
     def redirect_uri(self):
-        """Gets the redirect_uri of this ShowOauth2TokenRequestBody.
+        r"""Gets the redirect_uri of this ShowOauth2TokenRequestBody.
 
         重定向地址，与授权码重定向地址一直，与应用注册是配置的回调地址校验需要一致
 
@@ -172,7 +172,7 @@ class ShowOauth2TokenRequestBody:
 
     @redirect_uri.setter
     def redirect_uri(self, redirect_uri):
-        """Sets the redirect_uri of this ShowOauth2TokenRequestBody.
+        r"""Sets the redirect_uri of this ShowOauth2TokenRequestBody.
 
         重定向地址，与授权码重定向地址一直，与应用注册是配置的回调地址校验需要一致
 
@@ -183,7 +183,7 @@ class ShowOauth2TokenRequestBody:
 
     @property
     def access_type(self):
-        """Gets the access_type of this ShowOauth2TokenRequestBody.
+        r"""Gets the access_type of this ShowOauth2TokenRequestBody.
 
         接入模式，默认在线模式，可不填，值为离线模式时，设置为offline会返回refresh_token
 
@@ -194,7 +194,7 @@ class ShowOauth2TokenRequestBody:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this ShowOauth2TokenRequestBody.
+        r"""Sets the access_type of this ShowOauth2TokenRequestBody.
 
         接入模式，默认在线模式，可不填，值为离线模式时，设置为offline会返回refresh_token
 

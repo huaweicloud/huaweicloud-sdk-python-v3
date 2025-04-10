@@ -29,7 +29,7 @@ class ShowReportRequest:
     }
 
     def __init__(self, task_run_id=None, case_run_id=None, brokens_limit_count=None):
-        """ShowReportRequest
+        r"""ShowReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowReportRequest:
 
     @property
     def task_run_id(self):
-        """Gets the task_run_id of this ShowReportRequest.
+        r"""Gets the task_run_id of this ShowReportRequest.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -65,7 +65,7 @@ class ShowReportRequest:
 
     @task_run_id.setter
     def task_run_id(self, task_run_id):
-        """Sets the task_run_id of this ShowReportRequest.
+        r"""Sets the task_run_id of this ShowReportRequest.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -76,7 +76,7 @@ class ShowReportRequest:
 
     @property
     def case_run_id(self):
-        """Gets the case_run_id of this ShowReportRequest.
+        r"""Gets the case_run_id of this ShowReportRequest.
 
         运行用例id，报告管理中的“内外融合当前任务用例列表”接口，使用任务运行id（task_run_id）作为路径参数，可以查询到该报告关联的用例运行id集合，即返回结构体中result.case_aw_info_list[index].case_uri_i为索引为index的运行用例id（case_run_id）。
 
@@ -87,7 +87,7 @@ class ShowReportRequest:
 
     @case_run_id.setter
     def case_run_id(self, case_run_id):
-        """Sets the case_run_id of this ShowReportRequest.
+        r"""Sets the case_run_id of this ShowReportRequest.
 
         运行用例id，报告管理中的“内外融合当前任务用例列表”接口，使用任务运行id（task_run_id）作为路径参数，可以查询到该报告关联的用例运行id集合，即返回结构体中result.case_aw_info_list[index].case_uri_i为索引为index的运行用例id（case_run_id）。
 
@@ -98,7 +98,7 @@ class ShowReportRequest:
 
     @property
     def brokens_limit_count(self):
-        """Gets the brokens_limit_count of this ShowReportRequest.
+        r"""Gets the brokens_limit_count of this ShowReportRequest.
 
         曲线图点数
 
@@ -109,7 +109,7 @@ class ShowReportRequest:
 
     @brokens_limit_count.setter
     def brokens_limit_count(self, brokens_limit_count):
-        """Sets the brokens_limit_count of this ShowReportRequest.
+        r"""Sets the brokens_limit_count of this ShowReportRequest.
 
         曲线图点数
 

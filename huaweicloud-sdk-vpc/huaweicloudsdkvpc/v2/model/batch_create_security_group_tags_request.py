@@ -27,7 +27,7 @@ class BatchCreateSecurityGroupTagsRequest:
     }
 
     def __init__(self, security_group_id=None, body=None):
-        """BatchCreateSecurityGroupTagsRequest
+        r"""BatchCreateSecurityGroupTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateSecurityGroupTagsRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this BatchCreateSecurityGroupTagsRequest.
+        r"""Gets the security_group_id of this BatchCreateSecurityGroupTagsRequest.
 
         安全组资源ID
 
@@ -60,7 +60,7 @@ class BatchCreateSecurityGroupTagsRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this BatchCreateSecurityGroupTagsRequest.
+        r"""Sets the security_group_id of this BatchCreateSecurityGroupTagsRequest.
 
         安全组资源ID
 
@@ -71,7 +71,7 @@ class BatchCreateSecurityGroupTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateSecurityGroupTagsRequest.
+        r"""Gets the body of this BatchCreateSecurityGroupTagsRequest.
 
         :return: The body of this BatchCreateSecurityGroupTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateSecurityGroupTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateSecurityGroupTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateSecurityGroupTagsRequest.
+        r"""Sets the body of this BatchCreateSecurityGroupTagsRequest.
 
         :param body: The body of this BatchCreateSecurityGroupTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.BatchCreateSecurityGroupTagsRequestBody`

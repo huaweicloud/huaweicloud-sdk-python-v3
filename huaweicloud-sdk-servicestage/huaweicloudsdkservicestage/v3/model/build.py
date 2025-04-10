@@ -25,7 +25,7 @@ class Build:
     }
 
     def __init__(self, parameters=None):
-        """Build
+        r"""Build
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Build:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Build.
+        r"""Gets the parameters of this Build.
 
         :return: The parameters of this Build.
         :rtype: :class:`huaweicloudsdkservicestage.v3.BuildParameters`
@@ -52,7 +52,7 @@ class Build:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Build.
+        r"""Sets the parameters of this Build.
 
         :param parameters: The parameters of this Build.
         :type parameters: :class:`huaweicloudsdkservicestage.v3.BuildParameters`

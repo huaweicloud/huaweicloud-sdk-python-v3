@@ -27,7 +27,7 @@ class CreateExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """CreateExternalEntityRequest
+        r"""CreateExternalEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateExternalEntityRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateExternalEntityRequest.
+        r"""Gets the edge_node_id of this CreateExternalEntityRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class CreateExternalEntityRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateExternalEntityRequest.
+        r"""Sets the edge_node_id of this CreateExternalEntityRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class CreateExternalEntityRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateExternalEntityRequest.
+        r"""Gets the body of this CreateExternalEntityRequest.
 
         :return: The body of this CreateExternalEntityRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityReqDTO`
@@ -80,7 +80,7 @@ class CreateExternalEntityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateExternalEntityRequest.
+        r"""Sets the body of this CreateExternalEntityRequest.
 
         :param body: The body of this CreateExternalEntityRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityReqDTO`

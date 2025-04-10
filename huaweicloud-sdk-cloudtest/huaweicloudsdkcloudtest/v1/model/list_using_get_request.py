@@ -31,7 +31,7 @@ class ListUsingGetRequest:
     }
 
     def __init__(self, service_id=None, name=None, page_number=None, page_size=None):
-        """ListUsingGetRequest
+        r"""ListUsingGetRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListUsingGetRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListUsingGetRequest.
+        r"""Gets the service_id of this ListUsingGetRequest.
 
         服务id
 
@@ -74,7 +74,7 @@ class ListUsingGetRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListUsingGetRequest.
+        r"""Sets the service_id of this ListUsingGetRequest.
 
         服务id
 
@@ -85,7 +85,7 @@ class ListUsingGetRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListUsingGetRequest.
+        r"""Gets the name of this ListUsingGetRequest.
 
         看板名称，精确匹配
 
@@ -96,7 +96,7 @@ class ListUsingGetRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListUsingGetRequest.
+        r"""Sets the name of this ListUsingGetRequest.
 
         看板名称，精确匹配
 
@@ -107,7 +107,7 @@ class ListUsingGetRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ListUsingGetRequest.
+        r"""Gets the page_number of this ListUsingGetRequest.
 
         页码
 
@@ -118,7 +118,7 @@ class ListUsingGetRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ListUsingGetRequest.
+        r"""Sets the page_number of this ListUsingGetRequest.
 
         页码
 
@@ -129,7 +129,7 @@ class ListUsingGetRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListUsingGetRequest.
+        r"""Gets the page_size of this ListUsingGetRequest.
 
         每页数量
 
@@ -140,7 +140,7 @@ class ListUsingGetRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListUsingGetRequest.
+        r"""Sets the page_size of this ListUsingGetRequest.
 
         每页数量
 

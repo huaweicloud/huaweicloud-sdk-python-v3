@@ -29,7 +29,7 @@ class IpInfo:
     }
 
     def __init__(self, cidr=None, description=None, created_at=None):
-        """IpInfo
+        r"""IpInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IpInfo:
 
     @property
     def cidr(self):
-        """Gets the cidr of this IpInfo.
+        r"""Gets the cidr of this IpInfo.
 
         IP地址组中的IP网段，cidr格式。
 
@@ -68,7 +68,7 @@ class IpInfo:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this IpInfo.
+        r"""Sets the cidr of this IpInfo.
 
         IP地址组中的IP网段，cidr格式。
 
@@ -79,7 +79,7 @@ class IpInfo:
 
     @property
     def description(self):
-        """Gets the description of this IpInfo.
+        r"""Gets the description of this IpInfo.
 
         IP地址组中的IP网段描述。
 
@@ -90,7 +90,7 @@ class IpInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpInfo.
+        r"""Sets the description of this IpInfo.
 
         IP地址组中的IP网段描述。
 
@@ -101,7 +101,7 @@ class IpInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this IpInfo.
+        r"""Gets the created_at of this IpInfo.
 
         创建时间。
 
@@ -112,7 +112,7 @@ class IpInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this IpInfo.
+        r"""Sets the created_at of this IpInfo.
 
         创建时间。
 

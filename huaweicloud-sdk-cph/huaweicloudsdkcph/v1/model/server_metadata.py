@@ -29,7 +29,7 @@ class ServerMetadata:
     }
 
     def __init__(self, product_id=None, order_id=None, charging_mode=None):
-        """ServerMetadata
+        r"""ServerMetadata
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ServerMetadata:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ServerMetadata.
+        r"""Gets the product_id of this ServerMetadata.
 
         订单ID，不超过64个字节。
 
@@ -68,7 +68,7 @@ class ServerMetadata:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ServerMetadata.
+        r"""Sets the product_id of this ServerMetadata.
 
         订单ID，不超过64个字节。
 
@@ -79,7 +79,7 @@ class ServerMetadata:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ServerMetadata.
+        r"""Gets the order_id of this ServerMetadata.
 
         产品ID，不超过64个字节。
 
@@ -90,7 +90,7 @@ class ServerMetadata:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ServerMetadata.
+        r"""Sets the order_id of this ServerMetadata.
 
         产品ID，不超过64个字节。
 
@@ -101,7 +101,7 @@ class ServerMetadata:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ServerMetadata.
+        r"""Gets the charging_mode of this ServerMetadata.
 
         计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
 
@@ -112,7 +112,7 @@ class ServerMetadata:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ServerMetadata.
+        r"""Sets the charging_mode of this ServerMetadata.
 
         计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
 

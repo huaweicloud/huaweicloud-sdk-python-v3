@@ -39,7 +39,7 @@ class VideoModerationImageDetailList:
     }
 
     def __init__(self, confidence=None, category=None, suggestion=None, label=None, face_location=None, qr_location=None, qr_content=None, segments=None):
-        """VideoModerationImageDetailList
+        r"""VideoModerationImageDetailList
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VideoModerationImageDetailList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this VideoModerationImageDetailList.
+        r"""Gets the confidence of this VideoModerationImageDetailList.
 
         置信度，可选值在0-1之间，值越大，可信度越高。
 
@@ -103,7 +103,7 @@ class VideoModerationImageDetailList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this VideoModerationImageDetailList.
+        r"""Sets the confidence of this VideoModerationImageDetailList.
 
         置信度，可选值在0-1之间，值越大，可信度越高。
 
@@ -114,7 +114,7 @@ class VideoModerationImageDetailList:
 
     @property
     def category(self):
-        """Gets the category of this VideoModerationImageDetailList.
+        r"""Gets the category of this VideoModerationImageDetailList.
 
         检测结果的一级标签。 支持category列表如下： politics: 涉政  terrorism: 暴恐  porn: 色情  image_text: 图文审核
 
@@ -125,7 +125,7 @@ class VideoModerationImageDetailList:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this VideoModerationImageDetailList.
+        r"""Sets the category of this VideoModerationImageDetailList.
 
         检测结果的一级标签。 支持category列表如下： politics: 涉政  terrorism: 暴恐  porn: 色情  image_text: 图文审核
 
@@ -136,7 +136,7 @@ class VideoModerationImageDetailList:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this VideoModerationImageDetailList.
+        r"""Gets the suggestion of this VideoModerationImageDetailList.
 
         审核结果是否通过。  block：包含敏感信息，不通过  review：需要人工复检
 
@@ -147,7 +147,7 @@ class VideoModerationImageDetailList:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this VideoModerationImageDetailList.
+        r"""Sets the suggestion of this VideoModerationImageDetailList.
 
         审核结果是否通过。  block：包含敏感信息，不通过  review：需要人工复检
 
@@ -158,7 +158,7 @@ class VideoModerationImageDetailList:
 
     @property
     def label(self):
-        """Gets the label of this VideoModerationImageDetailList.
+        r"""Gets the label of this VideoModerationImageDetailList.
 
         识别的详细标签。
 
@@ -169,7 +169,7 @@ class VideoModerationImageDetailList:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this VideoModerationImageDetailList.
+        r"""Sets the label of this VideoModerationImageDetailList.
 
         识别的详细标签。
 
@@ -180,7 +180,7 @@ class VideoModerationImageDetailList:
 
     @property
     def face_location(self):
-        """Gets the face_location of this VideoModerationImageDetailList.
+        r"""Gets the face_location of this VideoModerationImageDetailList.
 
         :return: The face_location of this VideoModerationImageDetailList.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListFaceLocation`
@@ -189,7 +189,7 @@ class VideoModerationImageDetailList:
 
     @face_location.setter
     def face_location(self, face_location):
-        """Sets the face_location of this VideoModerationImageDetailList.
+        r"""Sets the face_location of this VideoModerationImageDetailList.
 
         :param face_location: The face_location of this VideoModerationImageDetailList.
         :type face_location: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListFaceLocation`
@@ -198,7 +198,7 @@ class VideoModerationImageDetailList:
 
     @property
     def qr_location(self):
-        """Gets the qr_location of this VideoModerationImageDetailList.
+        r"""Gets the qr_location of this VideoModerationImageDetailList.
 
         :return: The qr_location of this VideoModerationImageDetailList.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListQrLocation`
@@ -207,7 +207,7 @@ class VideoModerationImageDetailList:
 
     @qr_location.setter
     def qr_location(self, qr_location):
-        """Sets the qr_location of this VideoModerationImageDetailList.
+        r"""Sets the qr_location of this VideoModerationImageDetailList.
 
         :param qr_location: The qr_location of this VideoModerationImageDetailList.
         :type qr_location: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListQrLocation`
@@ -216,7 +216,7 @@ class VideoModerationImageDetailList:
 
     @property
     def qr_content(self):
-        """Gets the qr_content of this VideoModerationImageDetailList.
+        r"""Gets the qr_content of this VideoModerationImageDetailList.
 
         图片中二维码指向的链接，当请求参数categories中包含image_text时存在。
 
@@ -227,7 +227,7 @@ class VideoModerationImageDetailList:
 
     @qr_content.setter
     def qr_content(self, qr_content):
-        """Sets the qr_content of this VideoModerationImageDetailList.
+        r"""Sets the qr_content of this VideoModerationImageDetailList.
 
         图片中二维码指向的链接，当请求参数categories中包含image_text时存在。
 
@@ -238,7 +238,7 @@ class VideoModerationImageDetailList:
 
     @property
     def segments(self):
-        """Gets the segments of this VideoModerationImageDetailList.
+        r"""Gets the segments of this VideoModerationImageDetailList.
 
         image_text场景下命中的文本片段。
 
@@ -249,7 +249,7 @@ class VideoModerationImageDetailList:
 
     @segments.setter
     def segments(self, segments):
-        """Sets the segments of this VideoModerationImageDetailList.
+        r"""Sets the segments of this VideoModerationImageDetailList.
 
         image_text场景下命中的文本片段。
 

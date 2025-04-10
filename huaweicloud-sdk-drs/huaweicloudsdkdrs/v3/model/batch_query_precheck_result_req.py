@@ -25,7 +25,7 @@ class BatchQueryPrecheckResultReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchQueryPrecheckResultReq
+        r"""BatchQueryPrecheckResultReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchQueryPrecheckResultReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchQueryPrecheckResultReq.
+        r"""Gets the jobs of this BatchQueryPrecheckResultReq.
 
         批量查询预检查结果请求列表。 约束：不能包含空对象。集合中的元素取值严格匹配UUID规则。任务id不能重复。
 
@@ -53,7 +53,7 @@ class BatchQueryPrecheckResultReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchQueryPrecheckResultReq.
+        r"""Sets the jobs of this BatchQueryPrecheckResultReq.
 
         批量查询预检查结果请求列表。 约束：不能包含空对象。集合中的元素取值严格匹配UUID规则。任务id不能重复。
 

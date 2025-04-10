@@ -27,7 +27,7 @@ class UpdateSqlJobTemplateRequest:
     }
 
     def __init__(self, sql_id=None, body=None):
-        """UpdateSqlJobTemplateRequest
+        r"""UpdateSqlJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSqlJobTemplateRequest:
 
     @property
     def sql_id(self):
-        """Gets the sql_id of this UpdateSqlJobTemplateRequest.
+        r"""Gets the sql_id of this UpdateSqlJobTemplateRequest.
 
         :return: The sql_id of this UpdateSqlJobTemplateRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class UpdateSqlJobTemplateRequest:
 
     @sql_id.setter
     def sql_id(self, sql_id):
-        """Sets the sql_id of this UpdateSqlJobTemplateRequest.
+        r"""Sets the sql_id of this UpdateSqlJobTemplateRequest.
 
         :param sql_id: The sql_id of this UpdateSqlJobTemplateRequest.
         :type sql_id: str
@@ -67,7 +67,7 @@ class UpdateSqlJobTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSqlJobTemplateRequest.
+        r"""Gets the body of this UpdateSqlJobTemplateRequest.
 
         :return: The body of this UpdateSqlJobTemplateRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequestBody`
@@ -76,7 +76,7 @@ class UpdateSqlJobTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSqlJobTemplateRequest.
+        r"""Sets the body of this UpdateSqlJobTemplateRequest.
 
         :param body: The body of this UpdateSqlJobTemplateRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateSqlJobTemplateRequestBody`

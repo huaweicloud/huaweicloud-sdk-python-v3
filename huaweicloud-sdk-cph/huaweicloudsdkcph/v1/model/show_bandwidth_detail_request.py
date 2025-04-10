@@ -27,7 +27,7 @@ class ShowBandwidthDetailRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ShowBandwidthDetailRequest
+        r"""ShowBandwidthDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowBandwidthDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowBandwidthDetailRequest.
+        r"""Gets the offset of this ShowBandwidthDetailRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -61,7 +61,7 @@ class ShowBandwidthDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowBandwidthDetailRequest.
+        r"""Sets the offset of this ShowBandwidthDetailRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -72,7 +72,7 @@ class ShowBandwidthDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowBandwidthDetailRequest.
+        r"""Gets the limit of this ShowBandwidthDetailRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -83,7 +83,7 @@ class ShowBandwidthDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowBandwidthDetailRequest.
+        r"""Sets the limit of this ShowBandwidthDetailRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 

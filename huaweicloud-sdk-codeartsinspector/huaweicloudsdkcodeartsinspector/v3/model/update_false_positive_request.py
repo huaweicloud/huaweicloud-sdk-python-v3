@@ -25,7 +25,7 @@ class UpdateFalsePositiveRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateFalsePositiveRequest
+        r"""UpdateFalsePositiveRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateFalsePositiveRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFalsePositiveRequest.
+        r"""Gets the body of this UpdateFalsePositiveRequest.
 
         :return: The body of this UpdateFalsePositiveRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.UpdateFalsePositiveRequestBody`
@@ -52,7 +52,7 @@ class UpdateFalsePositiveRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFalsePositiveRequest.
+        r"""Sets the body of this UpdateFalsePositiveRequest.
 
         :param body: The body of this UpdateFalsePositiveRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.UpdateFalsePositiveRequestBody`

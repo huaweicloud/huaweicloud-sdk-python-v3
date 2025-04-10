@@ -43,7 +43,7 @@ class ImportDefaultRuleResultDto:
     }
 
     def __init__(self, import_status=None, import_error_message=None, uuid=None, import_data_classification_rule=None, rule_name=None, rule_type=None, rule_desc=None, rule_name_en=None, rule_desc_en=None, country=None):
-        """ImportDefaultRuleResultDto
+        r"""ImportDefaultRuleResultDto
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def import_status(self):
-        """Gets the import_status of this ImportDefaultRuleResultDto.
+        r"""Gets the import_status of this ImportDefaultRuleResultDto.
 
         导入状态 * success 导入成功 * failed 导入失败
 
@@ -117,7 +117,7 @@ class ImportDefaultRuleResultDto:
 
     @import_status.setter
     def import_status(self, import_status):
-        """Sets the import_status of this ImportDefaultRuleResultDto.
+        r"""Sets the import_status of this ImportDefaultRuleResultDto.
 
         导入状态 * success 导入成功 * failed 导入失败
 
@@ -128,7 +128,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def import_error_message(self):
-        """Gets the import_error_message of this ImportDefaultRuleResultDto.
+        r"""Gets the import_error_message of this ImportDefaultRuleResultDto.
 
         导入错误原因。
 
@@ -139,7 +139,7 @@ class ImportDefaultRuleResultDto:
 
     @import_error_message.setter
     def import_error_message(self, import_error_message):
-        """Sets the import_error_message of this ImportDefaultRuleResultDto.
+        r"""Sets the import_error_message of this ImportDefaultRuleResultDto.
 
         导入错误原因。
 
@@ -150,7 +150,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def uuid(self):
-        """Gets the uuid of this ImportDefaultRuleResultDto.
+        r"""Gets the uuid of this ImportDefaultRuleResultDto.
 
         内置规则模板id。
 
@@ -161,7 +161,7 @@ class ImportDefaultRuleResultDto:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ImportDefaultRuleResultDto.
+        r"""Sets the uuid of this ImportDefaultRuleResultDto.
 
         内置规则模板id。
 
@@ -172,7 +172,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def import_data_classification_rule(self):
-        """Gets the import_data_classification_rule of this ImportDefaultRuleResultDto.
+        r"""Gets the import_data_classification_rule of this ImportDefaultRuleResultDto.
 
         :return: The import_data_classification_rule of this ImportDefaultRuleResultDto.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportDataClassificationRuleDto`
@@ -181,7 +181,7 @@ class ImportDefaultRuleResultDto:
 
     @import_data_classification_rule.setter
     def import_data_classification_rule(self, import_data_classification_rule):
-        """Sets the import_data_classification_rule of this ImportDefaultRuleResultDto.
+        r"""Sets the import_data_classification_rule of this ImportDefaultRuleResultDto.
 
         :param import_data_classification_rule: The import_data_classification_rule of this ImportDefaultRuleResultDto.
         :type import_data_classification_rule: :class:`huaweicloudsdkdataartsstudio.v1.ImportDataClassificationRuleDto`
@@ -190,7 +190,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ImportDefaultRuleResultDto.
+        r"""Gets the rule_name of this ImportDefaultRuleResultDto.
 
         数据识别规则名称。
 
@@ -201,7 +201,7 @@ class ImportDefaultRuleResultDto:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ImportDefaultRuleResultDto.
+        r"""Sets the rule_name of this ImportDefaultRuleResultDto.
 
         数据识别规则名称。
 
@@ -212,7 +212,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this ImportDefaultRuleResultDto.
+        r"""Gets the rule_type of this ImportDefaultRuleResultDto.
 
         数据识别规则类型 * REGEX 正则表达式 * KEYWORD 关键字
 
@@ -223,7 +223,7 @@ class ImportDefaultRuleResultDto:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this ImportDefaultRuleResultDto.
+        r"""Sets the rule_type of this ImportDefaultRuleResultDto.
 
         数据识别规则类型 * REGEX 正则表达式 * KEYWORD 关键字
 
@@ -234,7 +234,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def rule_desc(self):
-        """Gets the rule_desc of this ImportDefaultRuleResultDto.
+        r"""Gets the rule_desc of this ImportDefaultRuleResultDto.
 
         规则描述。
 
@@ -245,7 +245,7 @@ class ImportDefaultRuleResultDto:
 
     @rule_desc.setter
     def rule_desc(self, rule_desc):
-        """Sets the rule_desc of this ImportDefaultRuleResultDto.
+        r"""Sets the rule_desc of this ImportDefaultRuleResultDto.
 
         规则描述。
 
@@ -256,7 +256,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def rule_name_en(self):
-        """Gets the rule_name_en of this ImportDefaultRuleResultDto.
+        r"""Gets the rule_name_en of this ImportDefaultRuleResultDto.
 
         英文名称。
 
@@ -267,7 +267,7 @@ class ImportDefaultRuleResultDto:
 
     @rule_name_en.setter
     def rule_name_en(self, rule_name_en):
-        """Sets the rule_name_en of this ImportDefaultRuleResultDto.
+        r"""Sets the rule_name_en of this ImportDefaultRuleResultDto.
 
         英文名称。
 
@@ -278,7 +278,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def rule_desc_en(self):
-        """Gets the rule_desc_en of this ImportDefaultRuleResultDto.
+        r"""Gets the rule_desc_en of this ImportDefaultRuleResultDto.
 
         英文描述。
 
@@ -289,7 +289,7 @@ class ImportDefaultRuleResultDto:
 
     @rule_desc_en.setter
     def rule_desc_en(self, rule_desc_en):
-        """Sets the rule_desc_en of this ImportDefaultRuleResultDto.
+        r"""Sets the rule_desc_en of this ImportDefaultRuleResultDto.
 
         英文描述。
 
@@ -300,7 +300,7 @@ class ImportDefaultRuleResultDto:
 
     @property
     def country(self):
-        """Gets the country of this ImportDefaultRuleResultDto.
+        r"""Gets the country of this ImportDefaultRuleResultDto.
 
         规则所属地区。
 
@@ -311,7 +311,7 @@ class ImportDefaultRuleResultDto:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ImportDefaultRuleResultDto.
+        r"""Sets the country of this ImportDefaultRuleResultDto.
 
         规则所属地区。
 

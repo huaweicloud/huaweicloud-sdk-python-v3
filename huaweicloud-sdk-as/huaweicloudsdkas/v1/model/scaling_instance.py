@@ -33,7 +33,7 @@ class ScalingInstance:
     }
 
     def __init__(self, instance_name=None, instance_id=None, failed_reason=None, failed_details=None, instance_config=None):
-        """ScalingInstance
+        r"""ScalingInstance
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ScalingInstance:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ScalingInstance.
+        r"""Gets the instance_name of this ScalingInstance.
 
         云服务器名称。
 
@@ -82,7 +82,7 @@ class ScalingInstance:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ScalingInstance.
+        r"""Sets the instance_name of this ScalingInstance.
 
         云服务器名称。
 
@@ -93,7 +93,7 @@ class ScalingInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScalingInstance.
+        r"""Gets the instance_id of this ScalingInstance.
 
         云服务器id。
 
@@ -104,7 +104,7 @@ class ScalingInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScalingInstance.
+        r"""Sets the instance_id of this ScalingInstance.
 
         云服务器id。
 
@@ -115,7 +115,7 @@ class ScalingInstance:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ScalingInstance.
+        r"""Gets the failed_reason of this ScalingInstance.
 
         实例伸缩失败原因。
 
@@ -126,7 +126,7 @@ class ScalingInstance:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ScalingInstance.
+        r"""Sets the failed_reason of this ScalingInstance.
 
         实例伸缩失败原因。
 
@@ -137,7 +137,7 @@ class ScalingInstance:
 
     @property
     def failed_details(self):
-        """Gets the failed_details of this ScalingInstance.
+        r"""Gets the failed_details of this ScalingInstance.
 
         实例伸缩失败详情。
 
@@ -148,7 +148,7 @@ class ScalingInstance:
 
     @failed_details.setter
     def failed_details(self, failed_details):
-        """Sets the failed_details of this ScalingInstance.
+        r"""Sets the failed_details of this ScalingInstance.
 
         实例伸缩失败详情。
 
@@ -159,7 +159,7 @@ class ScalingInstance:
 
     @property
     def instance_config(self):
-        """Gets the instance_config of this ScalingInstance.
+        r"""Gets the instance_config of this ScalingInstance.
 
         实例配置信息。
 
@@ -170,7 +170,7 @@ class ScalingInstance:
 
     @instance_config.setter
     def instance_config(self, instance_config):
-        """Sets the instance_config of this ScalingInstance.
+        r"""Sets the instance_config of this ScalingInstance.
 
         实例配置信息。
 

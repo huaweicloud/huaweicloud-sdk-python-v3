@@ -33,7 +33,7 @@ class MvsInvoiceRequestBody:
     }
 
     def __init__(self, image=None, url=None, return_text_location=None, return_confidence=None, type=None):
-        """MvsInvoiceRequestBody
+        r"""MvsInvoiceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MvsInvoiceRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this MvsInvoiceRequestBody.
+        r"""Gets the image of this MvsInvoiceRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -82,7 +82,7 @@ class MvsInvoiceRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this MvsInvoiceRequestBody.
+        r"""Sets the image of this MvsInvoiceRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -93,7 +93,7 @@ class MvsInvoiceRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this MvsInvoiceRequestBody.
+        r"""Gets the url of this MvsInvoiceRequestBody.
 
         与image二选一  要求base64编码后大小不超过10MB。 图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -104,7 +104,7 @@ class MvsInvoiceRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this MvsInvoiceRequestBody.
+        r"""Sets the url of this MvsInvoiceRequestBody.
 
         与image二选一  要求base64编码后大小不超过10MB。 图片最小边不小于100px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -115,7 +115,7 @@ class MvsInvoiceRequestBody:
 
     @property
     def return_text_location(self):
-        """Gets the return_text_location of this MvsInvoiceRequestBody.
+        r"""Gets the return_text_location of this MvsInvoiceRequestBody.
 
         如果为True，返回体中会包含text_location对象，内容是各字段的检测框四点坐标。如果是False或者没有这个key，则返回体中不包含text_location对象。 
 
@@ -126,7 +126,7 @@ class MvsInvoiceRequestBody:
 
     @return_text_location.setter
     def return_text_location(self, return_text_location):
-        """Sets the return_text_location of this MvsInvoiceRequestBody.
+        r"""Sets the return_text_location of this MvsInvoiceRequestBody.
 
         如果为True，返回体中会包含text_location对象，内容是各字段的检测框四点坐标。如果是False或者没有这个key，则返回体中不包含text_location对象。 
 
@@ -137,7 +137,7 @@ class MvsInvoiceRequestBody:
 
     @property
     def return_confidence(self):
-        """Gets the return_confidence of this MvsInvoiceRequestBody.
+        r"""Gets the return_confidence of this MvsInvoiceRequestBody.
 
         如果为True，返回体中会包含confidence对象，内容是各字段的置信度。如果是False或者没有这个key，则返回体中不包含confidence对象。 
 
@@ -148,7 +148,7 @@ class MvsInvoiceRequestBody:
 
     @return_confidence.setter
     def return_confidence(self, return_confidence):
-        """Sets the return_confidence of this MvsInvoiceRequestBody.
+        r"""Sets the return_confidence of this MvsInvoiceRequestBody.
 
         如果为True，返回体中会包含confidence对象，内容是各字段的置信度。如果是False或者没有这个key，则返回体中不包含confidence对象。 
 
@@ -159,7 +159,7 @@ class MvsInvoiceRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this MvsInvoiceRequestBody.
+        r"""Gets the type of this MvsInvoiceRequestBody.
 
         如果没有type字段则默认返回原机动车销售发票出参； 若存在type字段但是不属于 auto、new或者used三个枚举值，API返回AIS.0101入参错误； 如果type为auto，API自动判断发票类型，并在返回参数中添加type出参以指明发票类型； 如果type为new，API在检测出的类型为机动车发票时返回原版机动车发票出参并添加type出参（机动车销售统一发票），不一致时报错AIS.0104图像质量差； 如果type为used，API在检测出的类型为二手车时返回二手车发票出参，并添加type出参（二手车销售统一发票），不一致时报错AIS.0104图像质量差。 
 
@@ -170,7 +170,7 @@ class MvsInvoiceRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MvsInvoiceRequestBody.
+        r"""Sets the type of this MvsInvoiceRequestBody.
 
         如果没有type字段则默认返回原机动车销售发票出参； 若存在type字段但是不属于 auto、new或者used三个枚举值，API返回AIS.0101入参错误； 如果type为auto，API自动判断发票类型，并在返回参数中添加type出参以指明发票类型； 如果type为new，API在检测出的类型为机动车发票时返回原版机动车发票出参并添加type出参（机动车销售统一发票），不一致时报错AIS.0104图像质量差； 如果type为used，API在检测出的类型为二手车时返回二手车发票出参，并添加type出参（二手车销售统一发票），不一致时报错AIS.0104图像质量差。 
 

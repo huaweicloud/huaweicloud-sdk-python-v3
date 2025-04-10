@@ -43,7 +43,7 @@ class Commit:
     }
 
     def __init__(self, author_email=None, author_name=None, authored_date=None, committed_date=None, committer_email=None, committer_name=None, format=None, id=None, message=None, parent_ids=None):
-        """Commit
+        r"""Commit
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Commit:
 
     @property
     def author_email(self):
-        """Gets the author_email of this Commit.
+        r"""Gets the author_email of this Commit.
 
         作者邮箱
 
@@ -117,7 +117,7 @@ class Commit:
 
     @author_email.setter
     def author_email(self, author_email):
-        """Sets the author_email of this Commit.
+        r"""Sets the author_email of this Commit.
 
         作者邮箱
 
@@ -128,7 +128,7 @@ class Commit:
 
     @property
     def author_name(self):
-        """Gets the author_name of this Commit.
+        r"""Gets the author_name of this Commit.
 
         作者
 
@@ -139,7 +139,7 @@ class Commit:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this Commit.
+        r"""Sets the author_name of this Commit.
 
         作者
 
@@ -150,7 +150,7 @@ class Commit:
 
     @property
     def authored_date(self):
-        """Gets the authored_date of this Commit.
+        r"""Gets the authored_date of this Commit.
 
         作者提交时间
 
@@ -161,7 +161,7 @@ class Commit:
 
     @authored_date.setter
     def authored_date(self, authored_date):
-        """Sets the authored_date of this Commit.
+        r"""Sets the authored_date of this Commit.
 
         作者提交时间
 
@@ -172,7 +172,7 @@ class Commit:
 
     @property
     def committed_date(self):
-        """Gets the committed_date of this Commit.
+        r"""Gets the committed_date of this Commit.
 
         提交时间
 
@@ -183,7 +183,7 @@ class Commit:
 
     @committed_date.setter
     def committed_date(self, committed_date):
-        """Sets the committed_date of this Commit.
+        r"""Sets the committed_date of this Commit.
 
         提交时间
 
@@ -194,7 +194,7 @@ class Commit:
 
     @property
     def committer_email(self):
-        """Gets the committer_email of this Commit.
+        r"""Gets the committer_email of this Commit.
 
         提交作者邮箱
 
@@ -205,7 +205,7 @@ class Commit:
 
     @committer_email.setter
     def committer_email(self, committer_email):
-        """Sets the committer_email of this Commit.
+        r"""Sets the committer_email of this Commit.
 
         提交作者邮箱
 
@@ -216,7 +216,7 @@ class Commit:
 
     @property
     def committer_name(self):
-        """Gets the committer_name of this Commit.
+        r"""Gets the committer_name of this Commit.
 
         提交作者
 
@@ -227,7 +227,7 @@ class Commit:
 
     @committer_name.setter
     def committer_name(self, committer_name):
-        """Sets the committer_name of this Commit.
+        r"""Sets the committer_name of this Commit.
 
         提交作者
 
@@ -238,7 +238,7 @@ class Commit:
 
     @property
     def format(self):
-        """Gets the format of this Commit.
+        r"""Gets the format of this Commit.
 
         文件变更的详情信息，其格式由请求查询参数 stat_format 决定
 
@@ -249,7 +249,7 @@ class Commit:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this Commit.
+        r"""Sets the format of this Commit.
 
         文件变更的详情信息，其格式由请求查询参数 stat_format 决定
 
@@ -260,7 +260,7 @@ class Commit:
 
     @property
     def id(self):
-        """Gets the id of this Commit.
+        r"""Gets the id of this Commit.
 
         提交对应的SHA id
 
@@ -271,7 +271,7 @@ class Commit:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Commit.
+        r"""Sets the id of this Commit.
 
         提交对应的SHA id
 
@@ -282,7 +282,7 @@ class Commit:
 
     @property
     def message(self):
-        """Gets the message of this Commit.
+        r"""Gets the message of this Commit.
 
         提交的信息
 
@@ -293,7 +293,7 @@ class Commit:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Commit.
+        r"""Sets the message of this Commit.
 
         提交的信息
 
@@ -304,7 +304,7 @@ class Commit:
 
     @property
     def parent_ids(self):
-        """Gets the parent_ids of this Commit.
+        r"""Gets the parent_ids of this Commit.
 
         父提交id
 
@@ -315,7 +315,7 @@ class Commit:
 
     @parent_ids.setter
     def parent_ids(self, parent_ids):
-        """Sets the parent_ids of this Commit.
+        r"""Sets the parent_ids of this Commit.
 
         父提交id
 

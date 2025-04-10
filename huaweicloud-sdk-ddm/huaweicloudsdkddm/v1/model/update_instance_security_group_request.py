@@ -27,7 +27,7 @@ class UpdateInstanceSecurityGroupRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceSecurityGroupRequest
+        r"""UpdateInstanceSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceSecurityGroupRequest.
+        r"""Gets the instance_id of this UpdateInstanceSecurityGroupRequest.
 
         DDM实例ID
 
@@ -60,7 +60,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceSecurityGroupRequest.
+        r"""Sets the instance_id of this UpdateInstanceSecurityGroupRequest.
 
         DDM实例ID
 
@@ -71,7 +71,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceSecurityGroupRequest.
+        r"""Gets the body of this UpdateInstanceSecurityGroupRequest.
 
         :return: The body of this UpdateInstanceSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.ModifyInstanceSecurityGroupReq`
@@ -80,7 +80,7 @@ class UpdateInstanceSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceSecurityGroupRequest.
+        r"""Sets the body of this UpdateInstanceSecurityGroupRequest.
 
         :param body: The body of this UpdateInstanceSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkddm.v1.ModifyInstanceSecurityGroupReq`

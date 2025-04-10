@@ -25,7 +25,7 @@ class AzCodeInfo:
     }
 
     def __init__(self, az_code=None):
-        """AzCodeInfo
+        r"""AzCodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AzCodeInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this AzCodeInfo.
+        r"""Gets the az_code of this AzCodeInfo.
 
         可用区编码。
 
@@ -54,7 +54,7 @@ class AzCodeInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this AzCodeInfo.
+        r"""Sets the az_code of this AzCodeInfo.
 
         可用区编码。
 

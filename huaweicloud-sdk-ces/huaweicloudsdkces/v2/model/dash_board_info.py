@@ -37,7 +37,7 @@ class DashBoardInfo:
     }
 
     def __init__(self, dashboard_id=None, dashboard_name=None, enterprise_id=None, row_widget_num=None, is_favorite=None, creator_name=None, create_time=None):
-        """DashBoardInfo
+        r"""DashBoardInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DashBoardInfo:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this DashBoardInfo.
+        r"""Gets the dashboard_id of this DashBoardInfo.
 
         监控看板id
 
@@ -96,7 +96,7 @@ class DashBoardInfo:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this DashBoardInfo.
+        r"""Sets the dashboard_id of this DashBoardInfo.
 
         监控看板id
 
@@ -107,7 +107,7 @@ class DashBoardInfo:
 
     @property
     def dashboard_name(self):
-        """Gets the dashboard_name of this DashBoardInfo.
+        r"""Gets the dashboard_name of this DashBoardInfo.
 
         自定义监控看板名称
 
@@ -118,7 +118,7 @@ class DashBoardInfo:
 
     @dashboard_name.setter
     def dashboard_name(self, dashboard_name):
-        """Sets the dashboard_name of this DashBoardInfo.
+        r"""Sets the dashboard_name of this DashBoardInfo.
 
         自定义监控看板名称
 
@@ -129,7 +129,7 @@ class DashBoardInfo:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this DashBoardInfo.
+        r"""Gets the enterprise_id of this DashBoardInfo.
 
         企业项目Id
 
@@ -140,7 +140,7 @@ class DashBoardInfo:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this DashBoardInfo.
+        r"""Sets the enterprise_id of this DashBoardInfo.
 
         企业项目Id
 
@@ -151,7 +151,7 @@ class DashBoardInfo:
 
     @property
     def row_widget_num(self):
-        """Gets the row_widget_num of this DashBoardInfo.
+        r"""Gets the row_widget_num of this DashBoardInfo.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 
@@ -162,7 +162,7 @@ class DashBoardInfo:
 
     @row_widget_num.setter
     def row_widget_num(self, row_widget_num):
-        """Sets the row_widget_num of this DashBoardInfo.
+        r"""Sets the row_widget_num of this DashBoardInfo.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 
@@ -173,7 +173,7 @@ class DashBoardInfo:
 
     @property
     def is_favorite(self):
-        """Gets the is_favorite of this DashBoardInfo.
+        r"""Gets the is_favorite of this DashBoardInfo.
 
         监控看板是否标记收藏, true: 收藏, false: 未收藏
 
@@ -184,7 +184,7 @@ class DashBoardInfo:
 
     @is_favorite.setter
     def is_favorite(self, is_favorite):
-        """Sets the is_favorite of this DashBoardInfo.
+        r"""Sets the is_favorite of this DashBoardInfo.
 
         监控看板是否标记收藏, true: 收藏, false: 未收藏
 
@@ -195,7 +195,7 @@ class DashBoardInfo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this DashBoardInfo.
+        r"""Gets the creator_name of this DashBoardInfo.
 
         监控看板的创建用户名
 
@@ -206,7 +206,7 @@ class DashBoardInfo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this DashBoardInfo.
+        r"""Sets the creator_name of this DashBoardInfo.
 
         监控看板的创建用户名
 
@@ -217,7 +217,7 @@ class DashBoardInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DashBoardInfo.
+        r"""Gets the create_time of this DashBoardInfo.
 
         监控看板创建时间
 
@@ -228,7 +228,7 @@ class DashBoardInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DashBoardInfo.
+        r"""Sets the create_time of this DashBoardInfo.
 
         监控看板创建时间
 

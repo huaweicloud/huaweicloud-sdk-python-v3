@@ -34,7 +34,7 @@ class SMSApiClient(Client):
         return client_builder
 
     def batch_send_diff_sms(self, request):
-        """发送分批短信
+        r"""发送分批短信
 
         发送分批短信
         
@@ -99,7 +99,7 @@ class SMSApiClient(Client):
         return http_info
 
     def batch_send_sms(self, request):
-        """发送短信
+        r"""发送短信
 
         ## 典型场景 ##
          SP调用此接口发送短信。

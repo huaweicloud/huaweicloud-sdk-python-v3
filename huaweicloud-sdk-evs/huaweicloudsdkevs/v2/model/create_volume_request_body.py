@@ -31,7 +31,7 @@ class CreateVolumeRequestBody:
     }
 
     def __init__(self, bss_param=None, volume=None, server_id=None, os_sch_hn_tscheduler_hints=None):
-        """CreateVolumeRequestBody
+        r"""CreateVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateVolumeRequestBody:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this CreateVolumeRequestBody.
+        r"""Gets the bss_param of this CreateVolumeRequestBody.
 
         :return: The bss_param of this CreateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.BssParamForCreateVolume`
@@ -72,7 +72,7 @@ class CreateVolumeRequestBody:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this CreateVolumeRequestBody.
+        r"""Sets the bss_param of this CreateVolumeRequestBody.
 
         :param bss_param: The bss_param of this CreateVolumeRequestBody.
         :type bss_param: :class:`huaweicloudsdkevs.v2.BssParamForCreateVolume`
@@ -81,7 +81,7 @@ class CreateVolumeRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateVolumeRequestBody.
+        r"""Gets the volume of this CreateVolumeRequestBody.
 
         :return: The volume of this CreateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeOption`
@@ -90,7 +90,7 @@ class CreateVolumeRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateVolumeRequestBody.
+        r"""Sets the volume of this CreateVolumeRequestBody.
 
         :param volume: The volume of this CreateVolumeRequestBody.
         :type volume: :class:`huaweicloudsdkevs.v2.CreateVolumeOption`
@@ -99,7 +99,7 @@ class CreateVolumeRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this CreateVolumeRequestBody.
+        r"""Gets the server_id of this CreateVolumeRequestBody.
 
         创建云硬盘并挂载到目标虚拟机。 创建的云硬盘的计费模式会与虚拟机的计费模式保持一致。 目前只支持ECS服务的虚拟机，暂不支持BMS的裸金属服务器。
 
@@ -110,7 +110,7 @@ class CreateVolumeRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this CreateVolumeRequestBody.
+        r"""Sets the server_id of this CreateVolumeRequestBody.
 
         创建云硬盘并挂载到目标虚拟机。 创建的云硬盘的计费模式会与虚拟机的计费模式保持一致。 目前只支持ECS服务的虚拟机，暂不支持BMS的裸金属服务器。
 
@@ -121,7 +121,7 @@ class CreateVolumeRequestBody:
 
     @property
     def os_sch_hn_tscheduler_hints(self):
-        """Gets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
+        r"""Gets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
 
         :return: The os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeSchedulerHints`
@@ -130,7 +130,7 @@ class CreateVolumeRequestBody:
 
     @os_sch_hn_tscheduler_hints.setter
     def os_sch_hn_tscheduler_hints(self, os_sch_hn_tscheduler_hints):
-        """Sets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
+        r"""Sets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
 
         :param os_sch_hn_tscheduler_hints: The os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
         :type os_sch_hn_tscheduler_hints: :class:`huaweicloudsdkevs.v2.CreateVolumeSchedulerHints`

@@ -31,7 +31,7 @@ class SecretObjectInSecretRequestBody:
     }
 
     def __init__(self, name=None, description=None, secrets=None, tags=None):
-        """SecretObjectInSecretRequestBody
+        r"""SecretObjectInSecretRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class SecretObjectInSecretRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this SecretObjectInSecretRequestBody.
+        r"""Gets the name of this SecretObjectInSecretRequestBody.
 
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾。
 
@@ -72,7 +72,7 @@ class SecretObjectInSecretRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecretObjectInSecretRequestBody.
+        r"""Sets the name of this SecretObjectInSecretRequestBody.
 
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾。
 
@@ -83,7 +83,7 @@ class SecretObjectInSecretRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this SecretObjectInSecretRequestBody.
+        r"""Gets the description of this SecretObjectInSecretRequestBody.
 
         密钥描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\。
 
@@ -94,7 +94,7 @@ class SecretObjectInSecretRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecretObjectInSecretRequestBody.
+        r"""Sets the description of this SecretObjectInSecretRequestBody.
 
         密钥描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\。
 
@@ -105,7 +105,7 @@ class SecretObjectInSecretRequestBody:
 
     @property
     def secrets(self):
-        """Gets the secrets of this SecretObjectInSecretRequestBody.
+        r"""Gets the secrets of this SecretObjectInSecretRequestBody.
 
         secrets是一个列表，由多个字典组成，数量上限为100个。字典的key和value均为字符串。key由大小写字母，中划线（`-`）开头，由数字、大小写字母、点号（`.`）、中划线（`-`）、下划线（`_`）组成，最小长度为1，最大长度63个字符, value不能含有字符不允许^ ~ # $ \\|% & < > ( ) [ ] { } ' \" \\，最大长度10000个字符。
 
@@ -116,7 +116,7 @@ class SecretObjectInSecretRequestBody:
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this SecretObjectInSecretRequestBody.
+        r"""Sets the secrets of this SecretObjectInSecretRequestBody.
 
         secrets是一个列表，由多个字典组成，数量上限为100个。字典的key和value均为字符串。key由大小写字母，中划线（`-`）开头，由数字、大小写字母、点号（`.`）、中划线（`-`）、下划线（`_`）组成，最小长度为1，最大长度63个字符, value不能含有字符不允许^ ~ # $ \\|% & < > ( ) [ ] { } ' \" \\，最大长度10000个字符。
 
@@ -127,7 +127,7 @@ class SecretObjectInSecretRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this SecretObjectInSecretRequestBody.
+        r"""Gets the tags of this SecretObjectInSecretRequestBody.
 
         tags是一个列表，由多个字典组成，数量上限为20个。字典的key和value均为字符串。key由数字、大小写字母、点号（`.`）、中划线（`-`）、下划线（`_`）组成，最小长度为1，最大长度36个字符, value由数字、大小写字母、点号（`.`）、中划线（`-`）、下划线（`_`）, 斜线（`\\`）组成，最小长度为0，最大长度43个字符。
 
@@ -138,7 +138,7 @@ class SecretObjectInSecretRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SecretObjectInSecretRequestBody.
+        r"""Sets the tags of this SecretObjectInSecretRequestBody.
 
         tags是一个列表，由多个字典组成，数量上限为20个。字典的key和value均为字符串。key由数字、大小写字母、点号（`.`）、中划线（`-`）、下划线（`_`）组成，最小长度为1，最大长度36个字符, value由数字、大小写字母、点号（`.`）、中划线（`-`）、下划线（`_`）, 斜线（`\\`）组成，最小长度为0，最大长度43个字符。
 

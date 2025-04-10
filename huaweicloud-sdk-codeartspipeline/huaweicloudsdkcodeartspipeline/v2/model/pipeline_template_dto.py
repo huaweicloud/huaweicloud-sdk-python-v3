@@ -39,7 +39,7 @@ class PipelineTemplateDTO:
     }
 
     def __init__(self, name=None, description=None, language=None, variables=None, definition=None, is_system=None, domain_id=None, is_show_source=None):
-        """PipelineTemplateDTO
+        r"""PipelineTemplateDTO
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class PipelineTemplateDTO:
 
     @property
     def name(self):
-        """Gets the name of this PipelineTemplateDTO.
+        r"""Gets the name of this PipelineTemplateDTO.
 
         模板名称
 
@@ -97,7 +97,7 @@ class PipelineTemplateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineTemplateDTO.
+        r"""Sets the name of this PipelineTemplateDTO.
 
         模板名称
 
@@ -108,7 +108,7 @@ class PipelineTemplateDTO:
 
     @property
     def description(self):
-        """Gets the description of this PipelineTemplateDTO.
+        r"""Gets the description of this PipelineTemplateDTO.
 
         模板描述
 
@@ -119,7 +119,7 @@ class PipelineTemplateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineTemplateDTO.
+        r"""Sets the description of this PipelineTemplateDTO.
 
         模板描述
 
@@ -130,7 +130,7 @@ class PipelineTemplateDTO:
 
     @property
     def language(self):
-        """Gets the language of this PipelineTemplateDTO.
+        r"""Gets the language of this PipelineTemplateDTO.
 
         模板语言
 
@@ -141,7 +141,7 @@ class PipelineTemplateDTO:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this PipelineTemplateDTO.
+        r"""Sets the language of this PipelineTemplateDTO.
 
         模板语言
 
@@ -152,7 +152,7 @@ class PipelineTemplateDTO:
 
     @property
     def variables(self):
-        """Gets the variables of this PipelineTemplateDTO.
+        r"""Gets the variables of this PipelineTemplateDTO.
 
         :return: The variables of this PipelineTemplateDTO.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`
@@ -161,7 +161,7 @@ class PipelineTemplateDTO:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this PipelineTemplateDTO.
+        r"""Sets the variables of this PipelineTemplateDTO.
 
         :param variables: The variables of this PipelineTemplateDTO.
         :type variables: :class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`
@@ -170,7 +170,7 @@ class PipelineTemplateDTO:
 
     @property
     def definition(self):
-        """Gets the definition of this PipelineTemplateDTO.
+        r"""Gets the definition of this PipelineTemplateDTO.
 
         模板编排json，包含stages
 
@@ -181,7 +181,7 @@ class PipelineTemplateDTO:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this PipelineTemplateDTO.
+        r"""Sets the definition of this PipelineTemplateDTO.
 
         模板编排json，包含stages
 
@@ -192,7 +192,7 @@ class PipelineTemplateDTO:
 
     @property
     def is_system(self):
-        """Gets the is_system of this PipelineTemplateDTO.
+        r"""Gets the is_system of this PipelineTemplateDTO.
 
         是否系统模板
 
@@ -203,7 +203,7 @@ class PipelineTemplateDTO:
 
     @is_system.setter
     def is_system(self, is_system):
-        """Sets the is_system of this PipelineTemplateDTO.
+        r"""Sets the is_system of this PipelineTemplateDTO.
 
         是否系统模板
 
@@ -214,7 +214,7 @@ class PipelineTemplateDTO:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PipelineTemplateDTO.
+        r"""Gets the domain_id of this PipelineTemplateDTO.
 
         所属租户ID
 
@@ -225,7 +225,7 @@ class PipelineTemplateDTO:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PipelineTemplateDTO.
+        r"""Sets the domain_id of this PipelineTemplateDTO.
 
         所属租户ID
 
@@ -236,7 +236,7 @@ class PipelineTemplateDTO:
 
     @property
     def is_show_source(self):
-        """Gets the is_show_source of this PipelineTemplateDTO.
+        r"""Gets the is_show_source of this PipelineTemplateDTO.
 
         是否显示流水线源
 
@@ -247,7 +247,7 @@ class PipelineTemplateDTO:
 
     @is_show_source.setter
     def is_show_source(self, is_show_source):
-        """Sets the is_show_source of this PipelineTemplateDTO.
+        r"""Sets the is_show_source of this PipelineTemplateDTO.
 
         是否显示流水线源
 

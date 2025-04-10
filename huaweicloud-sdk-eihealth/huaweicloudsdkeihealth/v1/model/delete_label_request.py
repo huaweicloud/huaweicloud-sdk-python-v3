@@ -25,7 +25,7 @@ class DeleteLabelRequest:
     }
 
     def __init__(self, label_id=None):
-        """DeleteLabelRequest
+        r"""DeleteLabelRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLabelRequest:
 
     @property
     def label_id(self):
-        """Gets the label_id of this DeleteLabelRequest.
+        r"""Gets the label_id of this DeleteLabelRequest.
 
         标签id
 
@@ -53,7 +53,7 @@ class DeleteLabelRequest:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this DeleteLabelRequest.
+        r"""Sets the label_id of this DeleteLabelRequest.
 
         标签id
 

@@ -30,7 +30,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, rule_commands=None, x_request_id=None):
-        """ListSmartLiveRuleCommandsResponse
+        r"""ListSmartLiveRuleCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSmartLiveRuleCommandsResponse.
+        r"""Gets the count of this ListSmartLiveRuleCommandsResponse.
 
         数字人直播任务互动规则未确认命令总数。
 
@@ -69,7 +69,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSmartLiveRuleCommandsResponse.
+        r"""Sets the count of this ListSmartLiveRuleCommandsResponse.
 
         数字人直播任务互动规则未确认命令总数。
 
@@ -80,7 +80,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
 
     @property
     def rule_commands(self):
-        """Gets the rule_commands of this ListSmartLiveRuleCommandsResponse.
+        r"""Gets the rule_commands of this ListSmartLiveRuleCommandsResponse.
 
         数字人互动规则命令列表。
 
@@ -91,7 +91,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
 
     @rule_commands.setter
     def rule_commands(self, rule_commands):
-        """Sets the rule_commands of this ListSmartLiveRuleCommandsResponse.
+        r"""Sets the rule_commands of this ListSmartLiveRuleCommandsResponse.
 
         数字人互动规则命令列表。
 
@@ -102,7 +102,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSmartLiveRuleCommandsResponse.
+        r"""Gets the x_request_id of this ListSmartLiveRuleCommandsResponse.
 
         :return: The x_request_id of this ListSmartLiveRuleCommandsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSmartLiveRuleCommandsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSmartLiveRuleCommandsResponse.
+        r"""Sets the x_request_id of this ListSmartLiveRuleCommandsResponse.
 
         :param x_request_id: The x_request_id of this ListSmartLiveRuleCommandsResponse.
         :type x_request_id: str

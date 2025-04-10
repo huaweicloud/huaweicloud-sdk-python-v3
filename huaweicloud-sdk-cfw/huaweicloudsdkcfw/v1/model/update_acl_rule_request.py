@@ -31,7 +31,7 @@ class UpdateAclRuleRequest:
     }
 
     def __init__(self, acl_rule_id=None, enterprise_project_id=None, fw_instance_id=None, body=None):
-        """UpdateAclRuleRequest
+        r"""UpdateAclRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateAclRuleRequest:
 
     @property
     def acl_rule_id(self):
-        """Gets the acl_rule_id of this UpdateAclRuleRequest.
+        r"""Gets the acl_rule_id of this UpdateAclRuleRequest.
 
         规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
@@ -74,7 +74,7 @@ class UpdateAclRuleRequest:
 
     @acl_rule_id.setter
     def acl_rule_id(self, acl_rule_id):
-        """Sets the acl_rule_id of this UpdateAclRuleRequest.
+        r"""Sets the acl_rule_id of this UpdateAclRuleRequest.
 
         规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
@@ -85,7 +85,7 @@ class UpdateAclRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateAclRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateAclRuleRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -96,7 +96,7 @@ class UpdateAclRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateAclRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateAclRuleRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -107,7 +107,7 @@ class UpdateAclRuleRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this UpdateAclRuleRequest.
+        r"""Gets the fw_instance_id of this UpdateAclRuleRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -118,7 +118,7 @@ class UpdateAclRuleRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this UpdateAclRuleRequest.
+        r"""Sets the fw_instance_id of this UpdateAclRuleRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -129,7 +129,7 @@ class UpdateAclRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAclRuleRequest.
+        r"""Gets the body of this UpdateAclRuleRequest.
 
         :return: The body of this UpdateAclRuleRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateRuleAclDto`
@@ -138,7 +138,7 @@ class UpdateAclRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAclRuleRequest.
+        r"""Sets the body of this UpdateAclRuleRequest.
 
         :param body: The body of this UpdateAclRuleRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.UpdateRuleAclDto`

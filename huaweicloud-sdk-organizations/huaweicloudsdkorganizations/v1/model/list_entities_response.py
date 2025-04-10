@@ -28,7 +28,7 @@ class ListEntitiesResponse(SdkResponse):
     }
 
     def __init__(self, entities=None, page_info=None):
-        """ListEntitiesResponse
+        r"""ListEntitiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEntitiesResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ListEntitiesResponse.
+        r"""Gets the entities of this ListEntitiesResponse.
 
         组织中的根、组织单元和账号的列表。
 
@@ -62,7 +62,7 @@ class ListEntitiesResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ListEntitiesResponse.
+        r"""Sets the entities of this ListEntitiesResponse.
 
         组织中的根、组织单元和账号的列表。
 
@@ -73,7 +73,7 @@ class ListEntitiesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEntitiesResponse.
+        r"""Gets the page_info of this ListEntitiesResponse.
 
         :return: The page_info of this ListEntitiesResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListEntitiesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEntitiesResponse.
+        r"""Sets the page_info of this ListEntitiesResponse.
 
         :param page_info: The page_info of this ListEntitiesResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

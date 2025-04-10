@@ -24,7 +24,7 @@ class BatchCreateDedicatedHostTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateDedicatedHostTagsResponse
+        r"""BatchCreateDedicatedHostTagsResponse
 
         The model defined in huaweicloud sdk
 

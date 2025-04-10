@@ -37,7 +37,7 @@ class User:
     }
 
     def __init__(self, description=None, user_name=None, is_root_user=None, created_at=None, user_id=None, urn=None, enabled=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class User:
 
     @property
     def description(self):
-        """Gets the description of this User.
+        r"""Gets the description of this User.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -90,7 +90,7 @@ class User:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this User.
+        r"""Sets the description of this User.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -101,7 +101,7 @@ class User:
 
     @property
     def user_name(self):
-        """Gets the user_name of this User.
+        r"""Gets the user_name of this User.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -112,7 +112,7 @@ class User:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this User.
+        r"""Sets the user_name of this User.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -123,7 +123,7 @@ class User:
 
     @property
     def is_root_user(self):
-        """Gets the is_root_user of this User.
+        r"""Gets the is_root_user of this User.
 
         IAM用户是否为根用户。
 
@@ -134,7 +134,7 @@ class User:
 
     @is_root_user.setter
     def is_root_user(self, is_root_user):
-        """Sets the is_root_user of this User.
+        r"""Sets the is_root_user of this User.
 
         IAM用户是否为根用户。
 
@@ -145,7 +145,7 @@ class User:
 
     @property
     def created_at(self):
-        """Gets the created_at of this User.
+        r"""Gets the created_at of this User.
 
         IAM用户创建时间。
 
@@ -156,7 +156,7 @@ class User:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this User.
+        r"""Sets the created_at of this User.
 
         IAM用户创建时间。
 
@@ -167,7 +167,7 @@ class User:
 
     @property
     def user_id(self):
-        """Gets the user_id of this User.
+        r"""Gets the user_id of this User.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -178,7 +178,7 @@ class User:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this User.
+        r"""Sets the user_id of this User.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -189,7 +189,7 @@ class User:
 
     @property
     def urn(self):
-        """Gets the urn of this User.
+        r"""Gets the urn of this User.
 
         统一资源名称。
 
@@ -200,7 +200,7 @@ class User:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this User.
+        r"""Sets the urn of this User.
 
         统一资源名称。
 
@@ -211,7 +211,7 @@ class User:
 
     @property
     def enabled(self):
-        """Gets the enabled of this User.
+        r"""Gets the enabled of this User.
 
         IAM用户是否启用。
 
@@ -222,7 +222,7 @@ class User:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this User.
+        r"""Sets the enabled of this User.
 
         IAM用户是否启用。
 

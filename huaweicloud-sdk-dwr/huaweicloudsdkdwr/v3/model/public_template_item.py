@@ -37,7 +37,7 @@ class PublicTemplateItem:
     }
 
     def __init__(self, name=None, category=None, register_status=None, provider_name=None, description=None, create_time=None, last_modify_time=None):
-        """PublicTemplateItem
+        r"""PublicTemplateItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PublicTemplateItem:
 
     @property
     def name(self):
-        """Gets the name of this PublicTemplateItem.
+        r"""Gets the name of this PublicTemplateItem.
 
         名称。
 
@@ -96,7 +96,7 @@ class PublicTemplateItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicTemplateItem.
+        r"""Sets the name of this PublicTemplateItem.
 
         名称。
 
@@ -107,7 +107,7 @@ class PublicTemplateItem:
 
     @property
     def category(self):
-        """Gets the category of this PublicTemplateItem.
+        r"""Gets the category of this PublicTemplateItem.
 
         分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -118,7 +118,7 @@ class PublicTemplateItem:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this PublicTemplateItem.
+        r"""Sets the category of this PublicTemplateItem.
 
         分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -129,7 +129,7 @@ class PublicTemplateItem:
 
     @property
     def register_status(self):
-        """Gets the register_status of this PublicTemplateItem.
+        r"""Gets the register_status of this PublicTemplateItem.
 
         :return: The register_status of this PublicTemplateItem.
         :rtype: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
@@ -138,7 +138,7 @@ class PublicTemplateItem:
 
     @register_status.setter
     def register_status(self, register_status):
-        """Sets the register_status of this PublicTemplateItem.
+        r"""Sets the register_status of this PublicTemplateItem.
 
         :param register_status: The register_status of this PublicTemplateItem.
         :type register_status: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
@@ -147,7 +147,7 @@ class PublicTemplateItem:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this PublicTemplateItem.
+        r"""Gets the provider_name of this PublicTemplateItem.
 
         提供方
 
@@ -158,7 +158,7 @@ class PublicTemplateItem:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this PublicTemplateItem.
+        r"""Sets the provider_name of this PublicTemplateItem.
 
         提供方
 
@@ -169,7 +169,7 @@ class PublicTemplateItem:
 
     @property
     def description(self):
-        """Gets the description of this PublicTemplateItem.
+        r"""Gets the description of this PublicTemplateItem.
 
         描述
 
@@ -180,7 +180,7 @@ class PublicTemplateItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublicTemplateItem.
+        r"""Sets the description of this PublicTemplateItem.
 
         描述
 
@@ -191,7 +191,7 @@ class PublicTemplateItem:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublicTemplateItem.
+        r"""Gets the create_time of this PublicTemplateItem.
 
         创建时间
 
@@ -202,7 +202,7 @@ class PublicTemplateItem:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublicTemplateItem.
+        r"""Sets the create_time of this PublicTemplateItem.
 
         创建时间
 
@@ -213,7 +213,7 @@ class PublicTemplateItem:
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this PublicTemplateItem.
+        r"""Gets the last_modify_time of this PublicTemplateItem.
 
         最后修改时间
 
@@ -224,7 +224,7 @@ class PublicTemplateItem:
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this PublicTemplateItem.
+        r"""Sets the last_modify_time of this PublicTemplateItem.
 
         最后修改时间
 

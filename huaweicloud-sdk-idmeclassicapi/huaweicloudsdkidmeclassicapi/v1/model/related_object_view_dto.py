@@ -29,7 +29,7 @@ class RelatedObjectViewDTO:
     }
 
     def __init__(self, object_id=None, related_list=None, related_entity_list=None):
-        """RelatedObjectViewDTO
+        r"""RelatedObjectViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RelatedObjectViewDTO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this RelatedObjectViewDTO.
+        r"""Gets the object_id of this RelatedObjectViewDTO.
 
         **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -68,7 +68,7 @@ class RelatedObjectViewDTO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this RelatedObjectViewDTO.
+        r"""Sets the object_id of this RelatedObjectViewDTO.
 
         **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -79,7 +79,7 @@ class RelatedObjectViewDTO:
 
     @property
     def related_list(self):
-        """Gets the related_list of this RelatedObjectViewDTO.
+        r"""Gets the related_list of this RelatedObjectViewDTO.
 
         **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -90,7 +90,7 @@ class RelatedObjectViewDTO:
 
     @related_list.setter
     def related_list(self, related_list):
-        """Sets the related_list of this RelatedObjectViewDTO.
+        r"""Sets the related_list of this RelatedObjectViewDTO.
 
         **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -101,7 +101,7 @@ class RelatedObjectViewDTO:
 
     @property
     def related_entity_list(self):
-        """Gets the related_entity_list of this RelatedObjectViewDTO.
+        r"""Gets the related_entity_list of this RelatedObjectViewDTO.
 
         **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -112,7 +112,7 @@ class RelatedObjectViewDTO:
 
     @related_entity_list.setter
     def related_entity_list(self, related_entity_list):
-        """Sets the related_entity_list of this RelatedObjectViewDTO.
+        r"""Sets the related_entity_list of this RelatedObjectViewDTO.
 
         **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

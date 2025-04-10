@@ -35,7 +35,7 @@ class CertDistinguishedName:
     }
 
     def __init__(self, common_name=None, country=None, state=None, locality=None, organization=None, organizational_unit=None):
-        """CertDistinguishedName
+        r"""CertDistinguishedName
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CertDistinguishedName:
 
     @property
     def common_name(self):
-        """Gets the common_name of this CertDistinguishedName.
+        r"""Gets the common_name of this CertDistinguishedName.
 
         证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -88,7 +88,7 @@ class CertDistinguishedName:
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this CertDistinguishedName.
+        r"""Sets the common_name of this CertDistinguishedName.
 
         证书通用名称（CN），名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、\"*\"、字母、数字、汉字组成，长度不能超过64位字符。
 
@@ -99,7 +99,7 @@ class CertDistinguishedName:
 
     @property
     def country(self):
-        """Gets the country of this CertDistinguishedName.
+        r"""Gets the country of this CertDistinguishedName.
 
         国家编码，只能由英文组成，长度为2位字符。若不传入，则默认继承父CA对应的值。
 
@@ -110,7 +110,7 @@ class CertDistinguishedName:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this CertDistinguishedName.
+        r"""Sets the country of this CertDistinguishedName.
 
         国家编码，只能由英文组成，长度为2位字符。若不传入，则默认继承父CA对应的值。
 
@@ -121,7 +121,7 @@ class CertDistinguishedName:
 
     @property
     def state(self):
-        """Gets the state of this CertDistinguishedName.
+        r"""Gets the state of this CertDistinguishedName.
 
         省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
@@ -132,7 +132,7 @@ class CertDistinguishedName:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CertDistinguishedName.
+        r"""Sets the state of this CertDistinguishedName.
 
         省市名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
@@ -143,7 +143,7 @@ class CertDistinguishedName:
 
     @property
     def locality(self):
-        """Gets the locality of this CertDistinguishedName.
+        r"""Gets the locality of this CertDistinguishedName.
 
         地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
@@ -154,7 +154,7 @@ class CertDistinguishedName:
 
     @locality.setter
     def locality(self, locality):
-        """Sets the locality of this CertDistinguishedName.
+        r"""Sets the locality of this CertDistinguishedName.
 
         地区名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过128位字符。若不传入，则默认继承父CA对应的值。
 
@@ -165,7 +165,7 @@ class CertDistinguishedName:
 
     @property
     def organization(self):
-        """Gets the organization of this CertDistinguishedName.
+        r"""Gets the organization of this CertDistinguishedName.
 
         组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
@@ -176,7 +176,7 @@ class CertDistinguishedName:
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this CertDistinguishedName.
+        r"""Sets the organization of this CertDistinguishedName.
 
         组织名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
@@ -187,7 +187,7 @@ class CertDistinguishedName:
 
     @property
     def organizational_unit(self):
-        """Gets the organizational_unit of this CertDistinguishedName.
+        r"""Gets the organizational_unit of this CertDistinguishedName.
 
         组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 
@@ -198,7 +198,7 @@ class CertDistinguishedName:
 
     @organizational_unit.setter
     def organizational_unit(self, organizational_unit):
-        """Sets the organizational_unit of this CertDistinguishedName.
+        r"""Sets the organizational_unit of this CertDistinguishedName.
 
         组织单元名称，名称只能由\"-\"、\"_\"、\" \"、\".\"、\",\"、字母、数字、汉字组成，长度不能超过64位字符。若不传入，则默认继承父CA对应的值。
 

@@ -39,7 +39,7 @@ class CceAsyncClient(Client):
         return client_builder
 
     def add_node_async(self, request):
-        """纳管节点
+        r"""纳管节点
 
         该API用于在指定集群下纳管节点。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -107,7 +107,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def add_nodes_to_node_pool_async(self, request):
-        """自定义节点池纳管节点
+        r"""自定义节点池纳管节点
 
         该API用于在指定集群自定义节点池下纳管节点。竞价实例不支持纳管。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -177,7 +177,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def awake_cluster_async(self, request):
-        """集群唤醒
+        r"""集群唤醒
 
         集群唤醒用于唤醒已休眠的集群，唤醒后，将继续收取控制节点资源费用。
         
@@ -242,7 +242,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def batch_create_cluster_tags_async(self, request):
-        """批量添加指定集群的资源标签
+        r"""批量添加指定集群的资源标签
 
         该API用于批量添加指定集群的资源标签。
         &gt; - 每个集群支持最多20个资源标签。
@@ -311,7 +311,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def batch_delete_cluster_tags_async(self, request):
-        """批量删除指定集群的资源标签
+        r"""批量删除指定集群的资源标签
 
         该API用于批量删除指定集群的资源标签。
         &gt; - 此接口为幂等接口：删除时，如果删除的标签key不存在，默认处理成功。
@@ -379,7 +379,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def batch_sync_nodes_async(self, request):
-        """批量同步节点
+        r"""批量同步节点
 
         该API用于批量同步节点。
         
@@ -444,7 +444,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def continue_upgrade_cluster_task_async(self, request):
-        """继续执行集群升级任务
+        r"""继续执行集群升级任务
 
         继续执行被暂停的集群升级任务。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -511,7 +511,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_addon_instance_async(self, request):
-        """创建AddonInstance
+        r"""创建AddonInstance
 
         根据提供的插件模板，安装插件实例。
         
@@ -576,7 +576,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_cloud_persistent_volume_claims_async(self, request):
-        """创建PVC（待废弃）
+        r"""创建PVC（待废弃）
 
         该API用于在指定的Namespace下通过云存储服务中的云存储（EVS、SFS、OBS）去创建PVC（PersistentVolumeClaim）。该API待废弃，请使用Kubernetes PVC相关接口。
         
@@ -648,7 +648,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建集群
+        r"""创建集群
 
         该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[创建节点](cce_02_0242.xml)添加节点。
         
@@ -717,7 +717,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_cluster_master_snapshot_async(self, request):
-        """集群备份
+        r"""集群备份
 
         集群备份
         
@@ -782,7 +782,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_kubernetes_cluster_cert_async(self, request):
-        """获取集群证书
+        r"""获取集群证书
 
         该API用于获取指定集群的证书信息。
         
@@ -849,7 +849,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_node_async(self, request):
-        """创建节点
+        r"""创建节点
 
         该API用于在指定集群下创建节点。
         &gt; - 若无集群，请先[创建集群](cce_02_0236.xml)。
@@ -920,7 +920,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_node_pool_async(self, request):
-        """创建节点池
+        r"""创建节点池
 
         该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。
         
@@ -994,7 +994,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_partition_async(self, request):
-        """创建分区
+        r"""创建分区
 
         创建分区
         
@@ -1061,7 +1061,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_post_check_async(self, request):
-        """集群升级后确认
+        r"""集群升级后确认
 
         集群升级后确认，该接口建议配合Console使用，主要用于升级步骤完成后，客户确认集群状态和业务正常后做反馈。
         
@@ -1128,7 +1128,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_pre_check_async(self, request):
-        """集群升级前检查
+        r"""集群升级前检查
 
         集群升级前检查
         
@@ -1195,7 +1195,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_release_async(self, request):
-        """创建模板实例
+        r"""创建模板实例
 
         创建模板实例
         
@@ -1262,7 +1262,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_upgrade_work_flow_async(self, request):
-        """开启集群升级流程引导任务
+        r"""开启集群升级流程引导任务
 
         该API用于创建一个集群升级流程引导任务。请在调用本接口完成引导任务创建之后，通过集群升级前检查开始检查任务。
         升级流程任务用于控制集群升级任务的执行流程，执行流程为 升级前检查 &#x3D;&gt; 集群升级 &#x3D;&gt; 升级后检查。
@@ -1330,7 +1330,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_addon_instance_async(self, request):
-        """删除AddonInstance
+        r"""删除AddonInstance
 
         删除插件实例的功能。
         
@@ -1397,7 +1397,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_chart_async(self, request):
-        """删除模板
+        r"""删除模板
 
         删除模板
         
@@ -1462,7 +1462,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_cloud_persistent_volume_claims_async(self, request):
-        """删除PVC（待废弃）
+        r"""删除PVC（待废弃）
 
         该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。该API待废弃，请使用Kubernetes PVC相关接口。
         &gt;存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。
@@ -1536,7 +1536,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_cluster_async(self, request):
-        """删除集群
+        r"""删除集群
 
         该API用于删除一个指定的集群。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -1624,7 +1624,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_node_async(self, request):
-        """删除节点
+        r"""删除节点
 
         该API用于删除指定的节点。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -1694,7 +1694,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_node_pool_async(self, request):
-        """删除节点池
+        r"""删除节点池
 
         该API用于删除指定的节点池。
         &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -1762,7 +1762,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_release_async(self, request):
-        """删除指定模板实例
+        r"""删除指定模板实例
 
         删除指定模板实例
         
@@ -1831,7 +1831,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def download_chart_async(self, request):
-        """下载模板
+        r"""下载模板
 
         下载模板
         
@@ -1896,7 +1896,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def hibernate_cluster_async(self, request):
-        """集群休眠
+        r"""集群休眠
 
         集群休眠用于将运行中的集群置于休眠状态，休眠后，将不再收取控制节点资源费用。
         
@@ -1961,7 +1961,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_addon_instances_async(self, request):
-        """获取AddonInstance列表
+        r"""获取AddonInstance列表
 
         获取集群所有已安装插件实例
         
@@ -2026,7 +2026,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_addon_templates_async(self, request):
-        """查询AddonTemplates列表
+        r"""查询AddonTemplates列表
 
         插件模板查询接口，查询插件信息。
         
@@ -2091,7 +2091,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_charts_async(self, request):
-        """获取模板列表
+        r"""获取模板列表
 
         获取模板列表
         
@@ -2154,7 +2154,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_cluster_master_snapshot_tasks_async(self, request):
-        """获取集群备份任务详情列表
+        r"""获取集群备份任务详情列表
 
         获取集群备份任务详情列表
         
@@ -2219,7 +2219,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_cluster_upgrade_feature_gates_async(self, request):
-        """获取集群升级特性开关配置
+        r"""获取集群升级特性开关配置
 
         获取集群升级特性开关配置
         
@@ -2282,7 +2282,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_cluster_upgrade_paths_async(self, request):
-        """获取集群升级路径
+        r"""获取集群升级路径
 
         获取集群升级路径
         
@@ -2345,7 +2345,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_clusters_async(self, request):
-        """获取指定项目下的集群
+        r"""获取指定项目下的集群
 
         该API用于获取指定项目下所有集群的详细信息。
         
@@ -2416,7 +2416,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_node_pools_async(self, request):
-        """获取集群下所有节点池
+        r"""获取集群下所有节点池
 
         该API用于获取集群下所有节点池。
         &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -2485,7 +2485,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_nodes_async(self, request):
-        """获取集群下所有节点
+        r"""获取集群下所有节点
 
         该API用于通过集群ID获取指定集群下所有节点的详细信息。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -2551,7 +2551,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_partitions_async(self, request):
-        """获取分区列表
+        r"""获取分区列表
 
         获取分区列表
         
@@ -2616,7 +2616,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_pre_check_tasks_async(self, request):
-        """获取集群升级前检查任务详情列表
+        r"""获取集群升级前检查任务详情列表
 
         获取集群升级前检查任务详情列表
         
@@ -2681,7 +2681,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_releases_async(self, request):
-        """获取模板实例列表
+        r"""获取模板实例列表
 
         获取模板实例列表
         
@@ -2750,7 +2750,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_upgrade_cluster_tasks_async(self, request):
-        """获取集群升级任务详情列表
+        r"""获取集群升级任务详情列表
 
         获取集群升级任务详情列表
         
@@ -2815,7 +2815,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_upgrade_work_flows_async(self, request):
-        """获取UpgradeWorkFlows列表
+        r"""获取UpgradeWorkFlows列表
 
         获取历史集群升级引导任务列表
         
@@ -2880,7 +2880,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def migrate_node_async(self, request):
-        """节点迁移
+        r"""节点迁移
 
         该API用于在指定集群下迁移节点到另一集群。
         
@@ -2951,7 +2951,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def pause_upgrade_cluster_task_async(self, request):
-        """暂停集群升级任务
+        r"""暂停集群升级任务
 
         暂停集群升级任务。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -3018,7 +3018,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def remove_node_async(self, request):
-        """节点移除
+        r"""节点移除
 
         该API用于在指定集群下移除节点。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -3086,7 +3086,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def reset_node_async(self, request):
-        """重置节点
+        r"""重置节点
 
         该API用于在指定集群下重置节点。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -3154,7 +3154,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def resize_cluster_async(self, request):
-        """变更集群规格
+        r"""变更集群规格
 
         该API用于变更一个指定集群的规格。
         
@@ -3225,7 +3225,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def retry_upgrade_cluster_task_async(self, request):
-        """重试集群升级任务
+        r"""重试集群升级任务
 
         重新执行失败的集群升级任务。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -3292,7 +3292,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def revoke_kubernetes_cluster_cert_async(self, request):
-        """吊销用户的集群证书
+        r"""吊销用户的集群证书
 
         该API用于吊销指定集群的用户证书
         
@@ -3361,7 +3361,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def rollback_addon_instance_async(self, request):
-        """回滚AddonInstance
+        r"""回滚AddonInstance
 
         将插件实例回滚到升级前的版本。只有在当前插件实例版本支持回滚到升级前的版本（status.isRollbackable为true），且插件实例状态为running（运行中）、available（可用）、abnormal（不可用）、upgradeFailed（升级失败）、rollbackFailed（回滚失败）时支持回滚。
         
@@ -3428,7 +3428,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def scale_node_pool_async(self, request):
-        """伸缩节点池
+        r"""伸缩节点池
 
         该API用于伸缩指定的节点池
         &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -3498,7 +3498,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_addon_instance_async(self, request):
-        """获取AddonInstance详情
+        r"""获取AddonInstance详情
 
         获取插件实例详情。
         
@@ -3565,7 +3565,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_chart_async(self, request):
-        """获取模板
+        r"""获取模板
 
         获取模板
         
@@ -3630,7 +3630,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_chart_values_async(self, request):
-        """获取模板Values
+        r"""获取模板Values
 
         获取模板Values
         
@@ -3695,7 +3695,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_cluster_async(self, request):
-        """获取指定的集群
+        r"""获取指定的集群
 
         该API用于获取指定集群的详细信息。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -3763,7 +3763,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_cluster_config_async(self, request):
-        """查询集群日志配置信息
+        r"""查询集群日志配置信息
 
         获取集群组件上报的LTS的配置信息
         
@@ -3830,7 +3830,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_cluster_configuration_details_async(self, request):
-        """查询指定集群支持配置的参数列表
+        r"""查询指定集群支持配置的参数列表
 
         该API用于查询CCE服务下指定集群支持配置的参数列表。
         
@@ -3895,7 +3895,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_cluster_endpoints_async(self, request):
-        """获取集群访问的地址
+        r"""获取集群访问的地址
 
         该API用于通过集群ID获取集群访问的地址，包括PrivateIP(HA集群返回VIP)与PublicIP
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -3961,7 +3961,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_cluster_support_configuration_async(self, request):
-        """根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定
+        r"""根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定
 
         该API用于根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定。
         
@@ -4032,7 +4032,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_cluster_upgrade_info_async(self, request):
-        """获取集群升级相关信息
+        r"""获取集群升级相关信息
 
         获取集群升级相关信息
         
@@ -4097,7 +4097,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_job_async(self, request):
-        """获取任务信息
+        r"""获取任务信息
 
         该API用于获取任务信息。通过某一任务请求下发后返回的jobID来查询指定任务的进度。
         &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -4166,7 +4166,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_node_async(self, request):
-        """获取指定的节点
+        r"""获取指定的节点
 
         该API用于通过节点ID获取指定节点的详细信息。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -4234,7 +4234,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_node_pool_async(self, request):
-        """获取指定的节点池
+        r"""获取指定的节点池
 
         该API用于获取指定节点池的详细信息。
         &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -4302,7 +4302,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_node_pool_configuration_details_async(self, request):
-        """查询指定节点池支持配置的参数列表
+        r"""查询指定节点池支持配置的参数列表
 
         该API用于查询CCE服务下指定节点池支持配置的参数列表。
         
@@ -4369,7 +4369,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_node_pool_configurations_async(self, request):
-        """查询指定节点池支持配置的参数内容
+        r"""查询指定节点池支持配置的参数内容
 
         该API用于查询指定节点池支持配置的参数内容。
         
@@ -4436,7 +4436,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_partition_async(self, request):
-        """获取分区详情
+        r"""获取分区详情
 
         获取分区详情
         
@@ -4503,7 +4503,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_pre_check_async(self, request):
-        """获取集群升级前检查任务详情
+        r"""获取集群升级前检查任务详情
 
         获取集群升级前检查任务详情，任务ID由调用集群检查API后从响应体中uid字段获取。
         
@@ -4570,7 +4570,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_quotas_async(self, request):
-        """查询CCE服务下的资源配额
+        r"""查询CCE服务下的资源配额
 
         该API用于查询CCE服务下的资源配额。
         
@@ -4633,7 +4633,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_release_async(self, request):
-        """获取指定模板实例
+        r"""获取指定模板实例
 
         获取指定模板实例
         
@@ -4702,7 +4702,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_release_history_async(self, request):
-        """查询指定模板实例历史记录
+        r"""查询指定模板实例历史记录
 
         查询指定模板实例历史记录
         
@@ -4771,7 +4771,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_upgrade_cluster_task_async(self, request):
-        """获取集群升级任务详情
+        r"""获取集群升级任务详情
 
         获取集群升级任务详情，任务ID由调用集群升级API后从响应体中uid字段获取。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -4840,7 +4840,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_upgrade_work_flow_async(self, request):
-        """获取指定集群升级引导任务详情
+        r"""获取指定集群升级引导任务详情
 
         该API用于通过升级引导任务ID获取任务的详细信息。
         
@@ -4907,7 +4907,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_user_charts_quotas_async(self, request):
-        """获取用户模板配额
+        r"""获取用户模板配额
 
         获取用户模板配额
         
@@ -4970,7 +4970,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def sync_node_async(self, request):
-        """同步节点
+        r"""同步节点
 
         该API用于同步节点。
         
@@ -5037,7 +5037,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_addon_instance_async(self, request):
-        """更新AddonInstance
+        r"""更新AddonInstance
 
         更新插件实例的功能。
         
@@ -5104,7 +5104,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_chart_async(self, request):
-        """更新模板
+        r"""更新模板
 
         更新模板
         
@@ -5175,7 +5175,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_cluster_async(self, request):
-        """更新指定的集群
+        r"""更新指定的集群
 
         该API用于更新指定的集群。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -5243,7 +5243,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_cluster_eip_async(self, request):
-        """绑定、解绑集群公网apiserver地址
+        r"""绑定、解绑集群公网apiserver地址
 
         该API用于通过集群ID绑定、解绑集群公网apiserver地址
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -5311,7 +5311,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_cluster_log_config_async(self, request):
-        """配置集群日志
+        r"""配置集群日志
 
         用户可以选择集群管理节点上哪些组件的日志上报LTS
         
@@ -5378,7 +5378,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_node_async(self, request):
-        """更新指定的节点
+        r"""更新指定的节点
 
         该API用于更新指定的节点。
         &gt; - 当前仅支持更新metadata下的name字段，即节点的名字。
@@ -5449,7 +5449,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_node_pool_async(self, request):
-        """更新指定节点池
+        r"""更新指定节点池
 
         该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。
         
@@ -5523,7 +5523,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_node_pool_configuration_async(self, request):
-        """修改指定节点池配置参数的值
+        r"""修改指定节点池配置参数的值
 
         该API用于修改CCE服务下指定节点池配置参数的值。
         
@@ -5592,7 +5592,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_partition_async(self, request):
-        """更新分区
+        r"""更新分区
 
         更新分区
         
@@ -5661,7 +5661,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_release_async(self, request):
-        """更新指定模板实例
+        r"""更新指定模板实例
 
         更新指定模板实例
         
@@ -5732,7 +5732,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upgrade_cluster_async(self, request):
-        """集群升级
+        r"""集群升级
 
         集群升级。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -5801,7 +5801,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upgrade_node_pool_async(self, request):
-        """同步节点池
+        r"""同步节点池
 
         该API用于同步节点池中已有节点的配置
         
@@ -5870,7 +5870,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upgrade_work_flow_update_async(self, request):
-        """更新指定集群升级引导任务状态
+        r"""更新指定集群升级引导任务状态
 
         该API用于更新指定集群升级引导任务状态，当前仅适用于取消升级流程
         调用该API时升级流程引导任务状态不能为进行中(running) 已完成(success) 已取消(cancel),升级子任务状态不能为running(进行中) init(已初始化) pause(任务被暂停) queue(队列中)
@@ -5940,7 +5940,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upload_chart_async(self, request):
-        """上传模板
+        r"""上传模板
 
         上传模板
         
@@ -6009,7 +6009,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_version_async(self, request):
-        """查询API版本信息列表
+        r"""查询API版本信息列表
 
         该API用于查询CCE服务当前支持的API版本信息列表。
         
@@ -6072,7 +6072,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def batch_create_autopilot_cluster_tags_async(self, request):
-        """批量添加指定集群的资源标签
+        r"""批量添加指定集群的资源标签
 
         该API用于批量添加指定集群的资源标签。
         &gt; - 每个集群支持最多20个资源标签。
@@ -6141,7 +6141,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def batch_delete_autopilot_cluster_tags_async(self, request):
-        """批量删除指定集群的资源标签
+        r"""批量删除指定集群的资源标签
 
         该API用于批量删除指定集群的资源标签。
         &gt; - 此接口为幂等接口：删除时，如果删除的标签key不存在，默认处理成功。
@@ -6209,7 +6209,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_addon_instance_async(self, request):
-        """创建AddonInstance
+        r"""创建AddonInstance
 
         根据提供的插件模板，安装插件实例。
         
@@ -6274,7 +6274,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_cluster_async(self, request):
-        """创建集群
+        r"""创建集群
 
         该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。
         
@@ -6343,7 +6343,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_cluster_master_snapshot_async(self, request):
-        """集群备份
+        r"""集群备份
 
         集群备份
         
@@ -6408,7 +6408,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_kubernetes_cluster_cert_async(self, request):
-        """获取集群证书
+        r"""获取集群证书
 
         该API用于获取指定集群的证书信息。
         
@@ -6475,7 +6475,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_maintenance_window_async(self, request):
-        """创建集群维护窗口
+        r"""创建集群维护窗口
 
         该API用于创建集群维护窗口。
         
@@ -6542,7 +6542,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_post_check_async(self, request):
-        """集群升级后确认
+        r"""集群升级后确认
 
         集群升级后确认，该接口建议配合Console使用，主要用于升级步骤完成后，客户确认集群状态和业务正常后做反馈。
         
@@ -6609,7 +6609,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_pre_check_async(self, request):
-        """集群升级前检查
+        r"""集群升级前检查
 
         集群升级前检查
         
@@ -6676,7 +6676,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_release_async(self, request):
-        """创建模板实例
+        r"""创建模板实例
 
         创建模板实例
         
@@ -6743,7 +6743,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def create_autopilot_upgrade_work_flow_async(self, request):
-        """开启集群升级流程引导任务
+        r"""开启集群升级流程引导任务
 
         该API用于创建一个集群升级流程引导任务。请在调用本接口完成引导任务创建之后，通过集群升级前检查开始检查任务。
         升级流程任务用于控制集群升级任务的执行流程，执行流程为 升级前检查 &#x3D;&gt; 集群升级 &#x3D;&gt; 升级后检查。
@@ -6811,7 +6811,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_autopilot_addon_instance_async(self, request):
-        """删除AddonInstance
+        r"""删除AddonInstance
 
         删除插件实例的功能。
         
@@ -6878,7 +6878,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_autopilot_chart_async(self, request):
-        """删除模板
+        r"""删除模板
 
         删除模板
         
@@ -6943,7 +6943,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_autopilot_cluster_async(self, request):
-        """删除集群
+        r"""删除集群
 
         该API用于删除一个指定的集群。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -7021,7 +7021,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_autopilot_maintenance_window_async(self, request):
-        """删除集群维护窗口
+        r"""删除集群维护窗口
 
         该API用于删除集群维护窗口。
         
@@ -7086,7 +7086,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def delete_autopilot_release_async(self, request):
-        """删除指定模板实例
+        r"""删除指定模板实例
 
         删除指定模板实例
         
@@ -7155,7 +7155,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def download_autopilot_chart_async(self, request):
-        """下载模板
+        r"""下载模板
 
         下载模板
         
@@ -7220,7 +7220,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_addon_instances_async(self, request):
-        """获取AddonInstance列表
+        r"""获取AddonInstance列表
 
         获取集群所有已安装插件实例
         
@@ -7285,7 +7285,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_addon_templates_async(self, request):
-        """查询AddonTemplates列表
+        r"""查询AddonTemplates列表
 
         插件模板查询接口，查询插件信息。
         
@@ -7350,7 +7350,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_charts_async(self, request):
-        """获取模板列表
+        r"""获取模板列表
 
         获取模板列表
         
@@ -7413,7 +7413,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_cluster_master_snapshot_tasks_async(self, request):
-        """获取集群备份任务详情列表
+        r"""获取集群备份任务详情列表
 
         获取集群备份任务详情列表
         
@@ -7478,7 +7478,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_cluster_upgrade_feature_gates_async(self, request):
-        """获取集群升级特性开关配置
+        r"""获取集群升级特性开关配置
 
         获取集群升级特性开关配置
         
@@ -7541,7 +7541,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_cluster_upgrade_paths_async(self, request):
-        """获取集群升级路径
+        r"""获取集群升级路径
 
         获取集群升级路径
         
@@ -7604,7 +7604,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_clusters_async(self, request):
-        """获取指定项目下的集群
+        r"""获取指定项目下的集群
 
         该API用于获取指定项目下所有集群的详细信息。
         
@@ -7675,7 +7675,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_pre_check_tasks_async(self, request):
-        """获取集群升级前检查任务详情列表
+        r"""获取集群升级前检查任务详情列表
 
         获取集群升级前检查任务详情列表
         
@@ -7740,7 +7740,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_releases_async(self, request):
-        """获取模板实例列表
+        r"""获取模板实例列表
 
         获取模板实例列表
         
@@ -7809,7 +7809,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_upgrade_cluster_tasks_async(self, request):
-        """获取集群升级任务详情列表
+        r"""获取集群升级任务详情列表
 
         获取集群升级任务详情列表
         
@@ -7874,7 +7874,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_upgrade_plans_async(self, request):
-        """获取自动升级计划
+        r"""获取自动升级计划
 
         该API用于获取集群自动升级计划。
         
@@ -7939,7 +7939,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def list_autopilot_upgrade_work_flows_async(self, request):
-        """获取UpgradeWorkFlows列表
+        r"""获取UpgradeWorkFlows列表
 
         获取历史集群升级引导任务列表
         
@@ -8004,7 +8004,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def retry_autopilot_upgrade_cluster_task_async(self, request):
-        """重试集群升级任务
+        r"""重试集群升级任务
 
         重新执行失败的集群升级任务。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -8071,7 +8071,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def rollback_autopilot_addon_instance_async(self, request):
-        """回滚AddonInstance
+        r"""回滚AddonInstance
 
         将插件实例回滚到升级前的版本。只有在当前插件实例版本支持回滚到升级前的版本（status.isRollbackable为true），且插件实例状态为running（运行中）、available（可用）、abnormal（不可用）、upgradeFailed（升级失败）、rollbackFailed（回滚失败）时支持回滚。
         
@@ -8138,7 +8138,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_addon_instance_async(self, request):
-        """获取AddonInstance详情
+        r"""获取AddonInstance详情
 
         获取插件实例详情。
         
@@ -8205,7 +8205,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_chart_async(self, request):
-        """获取模板
+        r"""获取模板
 
         获取模板
         
@@ -8270,7 +8270,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_chart_values_async(self, request):
-        """获取模板Values
+        r"""获取模板Values
 
         获取模板Values
         
@@ -8335,7 +8335,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_cluster_async(self, request):
-        """获取指定的集群
+        r"""获取指定的集群
 
         该API用于获取指定集群的详细信息。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -8403,7 +8403,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_cluster_endpoints_async(self, request):
-        """获取集群访问的地址
+        r"""获取集群访问的地址
 
         该API用于通过集群ID获取集群访问的地址，包括PrivateIP(HA集群返回VIP)与PublicIP
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -8469,7 +8469,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_cluster_upgrade_info_async(self, request):
-        """获取集群升级相关信息
+        r"""获取集群升级相关信息
 
         获取集群升级相关信息
         
@@ -8534,7 +8534,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_job_async(self, request):
-        """获取任务信息
+        r"""获取任务信息
 
         该API用于获取任务信息。通过某一任务请求下发后返回的jobID来查询指定任务的进度。
         &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
@@ -8603,7 +8603,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_maintenance_window_async(self, request):
-        """获取集群维护窗口
+        r"""获取集群维护窗口
 
         该API用于获取集群维护窗口。
         
@@ -8668,7 +8668,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_pre_check_async(self, request):
-        """获取集群升级前检查任务详情
+        r"""获取集群升级前检查任务详情
 
         获取集群升级前检查任务详情，任务ID由调用集群检查API后从响应体中uid字段获取。
         
@@ -8735,7 +8735,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_quotas_async(self, request):
-        """查询CCE服务下的资源配额
+        r"""查询CCE服务下的资源配额
 
         该API用于查询CCE服务下的资源配额。
         
@@ -8798,7 +8798,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_release_async(self, request):
-        """获取指定模板实例
+        r"""获取指定模板实例
 
         获取指定模板实例
         
@@ -8867,7 +8867,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_release_history_async(self, request):
-        """查询指定模板实例历史记录
+        r"""查询指定模板实例历史记录
 
         查询指定模板实例历史记录
         
@@ -8936,7 +8936,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_upgrade_cluster_task_async(self, request):
-        """获取集群升级任务详情
+        r"""获取集群升级任务详情
 
         获取集群升级任务详情，任务ID由调用集群升级API后从响应体中uid字段获取。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -9005,7 +9005,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_upgrade_work_flow_async(self, request):
-        """获取指定集群升级引导任务详情
+        r"""获取指定集群升级引导任务详情
 
         该API用于通过升级引导任务ID获取任务的详细信息。
         
@@ -9072,7 +9072,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def show_autopilot_user_charts_quotas_async(self, request):
-        """获取用户模板配额
+        r"""获取用户模板配额
 
         获取用户模板配额
         
@@ -9135,7 +9135,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_addon_instance_async(self, request):
-        """更新AddonInstance
+        r"""更新AddonInstance
 
         更新插件实例的功能。
         
@@ -9202,7 +9202,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_chart_async(self, request):
-        """更新模板
+        r"""更新模板
 
         更新模板
         
@@ -9273,7 +9273,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_cluster_async(self, request):
-        """更新指定的集群
+        r"""更新指定的集群
 
         该API用于更新指定的集群。
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -9341,7 +9341,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_cluster_eip_async(self, request):
-        """绑定、解绑集群公网apiserver地址
+        r"""绑定、解绑集群公网apiserver地址
 
         该API用于通过集群ID绑定、解绑集群公网apiserver地址
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
@@ -9409,7 +9409,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_maintenance_window_async(self, request):
-        """更新集群维护窗口
+        r"""更新集群维护窗口
 
         该API用于更新集群维护窗口。
         
@@ -9476,7 +9476,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_release_async(self, request):
-        """更新指定模板实例
+        r"""更新指定模板实例
 
         更新指定模板实例
         
@@ -9547,7 +9547,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def update_autopilot_upgrade_plan_async(self, request):
-        """延期自动升级计划
+        r"""延期自动升级计划
 
         该API用于延期集群自动升级计划。
         
@@ -9616,7 +9616,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upgrade_autopilot_cluster_async(self, request):
-        """集群升级
+        r"""集群升级
 
         集群升级。
         &gt; - 集群升级涉及多维度的组件升级操作，强烈建议统一通过CCE控制台执行交互式升级，降低集群升级过程的业务意外受损风险；
@@ -9685,7 +9685,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upgrade_autopilot_work_flow_update_async(self, request):
-        """更新指定集群升级引导任务状态
+        r"""更新指定集群升级引导任务状态
 
         该API用于更新指定集群升级引导任务状态，当前仅适用于取消升级流程
         调用该API时升级流程引导任务状态不能为进行中(running) 已完成(success) 已取消(cancel),升级子任务状态不能为running(进行中) init(已初始化) pause(任务被暂停) queue(队列中)
@@ -9755,7 +9755,7 @@ class CceAsyncClient(Client):
         return http_info
 
     def upload_autopilot_chart_async(self, request):
-        """上传模板
+        r"""上传模板
 
         上传模板
         

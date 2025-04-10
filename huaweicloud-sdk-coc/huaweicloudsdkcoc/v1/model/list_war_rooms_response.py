@@ -32,7 +32,7 @@ class ListWarRoomsResponse(SdkResponse):
     }
 
     def __init__(self, provider_code=None, error_code=None, error_msg=None, data=None):
-        """ListWarRoomsResponse
+        r"""ListWarRoomsResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @property
     def provider_code(self):
-        """Gets the provider_code of this ListWarRoomsResponse.
+        r"""Gets the provider_code of this ListWarRoomsResponse.
 
         服务标识
 
@@ -75,7 +75,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @provider_code.setter
     def provider_code(self, provider_code):
-        """Sets the provider_code of this ListWarRoomsResponse.
+        r"""Sets the provider_code of this ListWarRoomsResponse.
 
         服务标识
 
@@ -86,7 +86,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListWarRoomsResponse.
+        r"""Gets the error_code of this ListWarRoomsResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -97,7 +97,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListWarRoomsResponse.
+        r"""Sets the error_code of this ListWarRoomsResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -108,7 +108,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListWarRoomsResponse.
+        r"""Gets the error_msg of this ListWarRoomsResponse.
 
         请求响应描述
 
@@ -119,7 +119,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListWarRoomsResponse.
+        r"""Sets the error_msg of this ListWarRoomsResponse.
 
         请求响应描述
 
@@ -130,7 +130,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListWarRoomsResponse.
+        r"""Gets the data of this ListWarRoomsResponse.
 
         响应数据
 
@@ -141,7 +141,7 @@ class ListWarRoomsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListWarRoomsResponse.
+        r"""Sets the data of this ListWarRoomsResponse.
 
         响应数据
 

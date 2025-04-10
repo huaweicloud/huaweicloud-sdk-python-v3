@@ -49,7 +49,7 @@ class ListThumbnail:
     }
 
     def __init__(self, id=None, created_at=None, is_primary=None, file_name=None, aim_resource_id=None, obs_object_key=None, image_rate=None, is_auto_gen=None, description=None, obs_bucket_name=None, domain_id=None, size=None, obs_file_url=None):
-        """ListThumbnail
+        r"""ListThumbnail
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ListThumbnail:
 
     @property
     def id(self):
-        """Gets the id of this ListThumbnail.
+        r"""Gets the id of this ListThumbnail.
 
         视频封面图ID。
 
@@ -132,7 +132,7 @@ class ListThumbnail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListThumbnail.
+        r"""Sets the id of this ListThumbnail.
 
         视频封面图ID。
 
@@ -143,7 +143,7 @@ class ListThumbnail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListThumbnail.
+        r"""Gets the created_at of this ListThumbnail.
 
         创建时间。
 
@@ -154,7 +154,7 @@ class ListThumbnail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListThumbnail.
+        r"""Sets the created_at of this ListThumbnail.
 
         创建时间。
 
@@ -165,7 +165,7 @@ class ListThumbnail:
 
     @property
     def is_primary(self):
-        """Gets the is_primary of this ListThumbnail.
+        r"""Gets the is_primary of this ListThumbnail.
 
         是否作为视频素材封面。 - 0：否 - 1：是 
 
@@ -176,7 +176,7 @@ class ListThumbnail:
 
     @is_primary.setter
     def is_primary(self, is_primary):
-        """Sets the is_primary of this ListThumbnail.
+        r"""Sets the is_primary of this ListThumbnail.
 
         是否作为视频素材封面。 - 0：否 - 1：是 
 
@@ -187,7 +187,7 @@ class ListThumbnail:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListThumbnail.
+        r"""Gets the file_name of this ListThumbnail.
 
         文件名称。
 
@@ -198,7 +198,7 @@ class ListThumbnail:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListThumbnail.
+        r"""Sets the file_name of this ListThumbnail.
 
         文件名称。
 
@@ -209,7 +209,7 @@ class ListThumbnail:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this ListThumbnail.
+        r"""Gets the aim_resource_id of this ListThumbnail.
 
         资源ID。
 
@@ -220,7 +220,7 @@ class ListThumbnail:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this ListThumbnail.
+        r"""Sets the aim_resource_id of this ListThumbnail.
 
         资源ID。
 
@@ -231,7 +231,7 @@ class ListThumbnail:
 
     @property
     def obs_object_key(self):
-        """Gets the obs_object_key of this ListThumbnail.
+        r"""Gets the obs_object_key of this ListThumbnail.
 
         从OBS返回的文件Key。
 
@@ -242,7 +242,7 @@ class ListThumbnail:
 
     @obs_object_key.setter
     def obs_object_key(self, obs_object_key):
-        """Sets the obs_object_key of this ListThumbnail.
+        r"""Sets the obs_object_key of this ListThumbnail.
 
         从OBS返回的文件Key。
 
@@ -253,7 +253,7 @@ class ListThumbnail:
 
     @property
     def image_rate(self):
-        """Gets the image_rate of this ListThumbnail.
+        r"""Gets the image_rate of this ListThumbnail.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
@@ -264,7 +264,7 @@ class ListThumbnail:
 
     @image_rate.setter
     def image_rate(self, image_rate):
-        """Sets the image_rate of this ListThumbnail.
+        r"""Sets the image_rate of this ListThumbnail.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例 
 
@@ -275,7 +275,7 @@ class ListThumbnail:
 
     @property
     def is_auto_gen(self):
-        """Gets the is_auto_gen of this ListThumbnail.
+        r"""Gets the is_auto_gen of this ListThumbnail.
 
         视频封面图是否自动从系统生成。 - 0：系统自动生成 - 1：上传自定义 
 
@@ -286,7 +286,7 @@ class ListThumbnail:
 
     @is_auto_gen.setter
     def is_auto_gen(self, is_auto_gen):
-        """Sets the is_auto_gen of this ListThumbnail.
+        r"""Sets the is_auto_gen of this ListThumbnail.
 
         视频封面图是否自动从系统生成。 - 0：系统自动生成 - 1：上传自定义 
 
@@ -297,7 +297,7 @@ class ListThumbnail:
 
     @property
     def description(self):
-        """Gets the description of this ListThumbnail.
+        r"""Gets the description of this ListThumbnail.
 
         视频封面图的详细描述。
 
@@ -308,7 +308,7 @@ class ListThumbnail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListThumbnail.
+        r"""Sets the description of this ListThumbnail.
 
         视频封面图的详细描述。
 
@@ -319,7 +319,7 @@ class ListThumbnail:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this ListThumbnail.
+        r"""Gets the obs_bucket_name of this ListThumbnail.
 
         OBS桶名称。
 
@@ -330,7 +330,7 @@ class ListThumbnail:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this ListThumbnail.
+        r"""Sets the obs_bucket_name of this ListThumbnail.
 
         OBS桶名称。
 
@@ -341,7 +341,7 @@ class ListThumbnail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListThumbnail.
+        r"""Gets the domain_id of this ListThumbnail.
 
         租户ID。
 
@@ -352,7 +352,7 @@ class ListThumbnail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListThumbnail.
+        r"""Sets the domain_id of this ListThumbnail.
 
         租户ID。
 
@@ -363,7 +363,7 @@ class ListThumbnail:
 
     @property
     def size(self):
-        """Gets the size of this ListThumbnail.
+        r"""Gets the size of this ListThumbnail.
 
         素材所占空间大小。
 
@@ -374,7 +374,7 @@ class ListThumbnail:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListThumbnail.
+        r"""Sets the size of this ListThumbnail.
 
         素材所占空间大小。
 
@@ -385,7 +385,7 @@ class ListThumbnail:
 
     @property
     def obs_file_url(self):
-        """Gets the obs_file_url of this ListThumbnail.
+        r"""Gets the obs_file_url of this ListThumbnail.
 
         文件访问路径。
 
@@ -396,7 +396,7 @@ class ListThumbnail:
 
     @obs_file_url.setter
     def obs_file_url(self, obs_file_url):
-        """Sets the obs_file_url of this ListThumbnail.
+        r"""Sets the obs_file_url of this ListThumbnail.
 
         文件访问路径。
 

@@ -37,7 +37,7 @@ class ListAuditLogDownloadLinkRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None, last_file_name=None, limit=None, start_time=None, end_time=None):
-        """ListAuditLogDownloadLinkRequest
+        r"""ListAuditLogDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the x_language of this ListAuditLogDownloadLinkRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -93,7 +93,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the x_language of this ListAuditLogDownloadLinkRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -104,7 +104,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the instance_id of this ListAuditLogDownloadLinkRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -115,7 +115,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the instance_id of this ListAuditLogDownloadLinkRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -126,7 +126,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the node_id of this ListAuditLogDownloadLinkRequest.
 
         节点ID。 - 若输入，则只获取该节点的全量SQL下载链接。 - 若不输入，则获取该实例所有节点的全量SQL下载链接。
 
@@ -137,7 +137,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the node_id of this ListAuditLogDownloadLinkRequest.
 
         节点ID。 - 若输入，则只获取该节点的全量SQL下载链接。 - 若不输入，则获取该实例所有节点的全量SQL下载链接。
 
@@ -148,7 +148,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def last_file_name(self):
-        """Gets the last_file_name of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the last_file_name of this ListAuditLogDownloadLinkRequest.
 
         上次查询的最后一个文件的文件名。 - 若输入，则从该文件名以后按字典顺序开始查询。 - 若不输入，则从第一个文件开始查询。
 
@@ -159,7 +159,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @last_file_name.setter
     def last_file_name(self, last_file_name):
-        """Sets the last_file_name of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the last_file_name of this ListAuditLogDownloadLinkRequest.
 
         上次查询的最后一个文件的文件名。 - 若输入，则从该文件名以后按字典顺序开始查询。 - 若不输入，则从第一个文件开始查询。
 
@@ -170,7 +170,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the limit of this ListAuditLogDownloadLinkRequest.
 
         一次查询返回的文件数量。  默认值为10，取值范围：1~50之间的整数值。
 
@@ -181,7 +181,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the limit of this ListAuditLogDownloadLinkRequest.
 
         一次查询返回的文件数量。  默认值为10，取值范围：1~50之间的整数值。
 
@@ -192,7 +192,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the start_time of this ListAuditLogDownloadLinkRequest.
 
         开始时间，不得早于实例创建时间。格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -203,7 +203,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the start_time of this ListAuditLogDownloadLinkRequest.
 
         开始时间，不得早于实例创建时间。格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -214,7 +214,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAuditLogDownloadLinkRequest.
+        r"""Gets the end_time of this ListAuditLogDownloadLinkRequest.
 
         结束时间，不得晚于当前时间。格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -225,7 +225,7 @@ class ListAuditLogDownloadLinkRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAuditLogDownloadLinkRequest.
+        r"""Sets the end_time of this ListAuditLogDownloadLinkRequest.
 
         结束时间，不得晚于当前时间。格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 

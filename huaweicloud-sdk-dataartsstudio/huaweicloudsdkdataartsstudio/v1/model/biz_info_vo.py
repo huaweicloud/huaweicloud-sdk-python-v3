@@ -29,7 +29,7 @@ class BizInfoVO:
     }
 
     def __init__(self, biz_id=None, biz_type=None, env_type=None):
-        """BizInfoVO
+        r"""BizInfoVO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BizInfoVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this BizInfoVO.
+        r"""Gets the biz_id of this BizInfoVO.
 
         业务ID，ID字符串。
 
@@ -66,7 +66,7 @@ class BizInfoVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this BizInfoVO.
+        r"""Sets the biz_id of this BizInfoVO.
 
         业务ID，ID字符串。
 
@@ -77,7 +77,7 @@ class BizInfoVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this BizInfoVO.
+        r"""Gets the biz_type of this BizInfoVO.
 
         :return: The biz_type of this BizInfoVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -86,7 +86,7 @@ class BizInfoVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this BizInfoVO.
+        r"""Sets the biz_type of this BizInfoVO.
 
         :param biz_type: The biz_type of this BizInfoVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -95,7 +95,7 @@ class BizInfoVO:
 
     @property
     def env_type(self):
-        """Gets the env_type of this BizInfoVO.
+        r"""Gets the env_type of this BizInfoVO.
 
         :return: The env_type of this BizInfoVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -104,7 +104,7 @@ class BizInfoVO:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this BizInfoVO.
+        r"""Sets the env_type of this BizInfoVO.
 
         :param env_type: The env_type of this BizInfoVO.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`

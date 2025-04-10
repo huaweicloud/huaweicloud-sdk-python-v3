@@ -25,7 +25,7 @@ class AddSiteReq:
     }
 
     def __init__(self, site_configs=None):
-        """AddSiteReq
+        r"""AddSiteReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddSiteReq:
 
     @property
     def site_configs(self):
-        """Gets the site_configs of this AddSiteReq.
+        r"""Gets the site_configs of this AddSiteReq.
 
         站点配置信息。
 
@@ -53,7 +53,7 @@ class AddSiteReq:
 
     @site_configs.setter
     def site_configs(self, site_configs):
-        """Sets the site_configs of this AddSiteReq.
+        r"""Sets the site_configs of this AddSiteReq.
 
         站点配置信息。
 

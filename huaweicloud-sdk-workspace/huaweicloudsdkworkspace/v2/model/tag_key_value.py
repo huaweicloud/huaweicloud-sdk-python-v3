@@ -27,7 +27,7 @@ class TagKeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """TagKeyValue
+        r"""TagKeyValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagKeyValue:
 
     @property
     def key(self):
-        """Gets the key of this TagKeyValue.
+        r"""Gets the key of this TagKeyValue.
 
         标签的键。
 
@@ -61,7 +61,7 @@ class TagKeyValue:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagKeyValue.
+        r"""Sets the key of this TagKeyValue.
 
         标签的键。
 
@@ -72,7 +72,7 @@ class TagKeyValue:
 
     @property
     def value(self):
-        """Gets the value of this TagKeyValue.
+        r"""Gets the value of this TagKeyValue.
 
         标签的值。
 
@@ -83,7 +83,7 @@ class TagKeyValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagKeyValue.
+        r"""Sets the value of this TagKeyValue.
 
         标签的值。
 

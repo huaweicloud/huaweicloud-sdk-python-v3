@@ -25,7 +25,7 @@ class DeleteUserStorageAttachmentReq:
     }
 
     def __init__(self, items=None):
-        """DeleteUserStorageAttachmentReq
+        r"""DeleteUserStorageAttachmentReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteUserStorageAttachmentReq:
 
     @property
     def items(self):
-        """Gets the items of this DeleteUserStorageAttachmentReq.
+        r"""Gets the items of this DeleteUserStorageAttachmentReq.
 
         用户名，请求数量区间 [1, 200]。
 
@@ -54,7 +54,7 @@ class DeleteUserStorageAttachmentReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this DeleteUserStorageAttachmentReq.
+        r"""Sets the items of this DeleteUserStorageAttachmentReq.
 
         用户名，请求数量区间 [1, 200]。
 

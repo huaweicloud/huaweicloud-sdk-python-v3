@@ -24,7 +24,7 @@ class BatchCreateSecurityPermissionSetMembersResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateSecurityPermissionSetMembersResponse
+        r"""BatchCreateSecurityPermissionSetMembersResponse
 
         The model defined in huaweicloud sdk
 

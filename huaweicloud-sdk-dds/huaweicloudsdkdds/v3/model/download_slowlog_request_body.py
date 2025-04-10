@@ -27,7 +27,7 @@ class DownloadSlowlogRequestBody:
     }
 
     def __init__(self, file_name_list=None, node_id_list=None):
-        """DownloadSlowlogRequestBody
+        r"""DownloadSlowlogRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DownloadSlowlogRequestBody:
 
     @property
     def file_name_list(self):
-        """Gets the file_name_list of this DownloadSlowlogRequestBody.
+        r"""Gets the file_name_list of this DownloadSlowlogRequestBody.
 
         - 需要下载的文件的文件名列表。
 
@@ -61,7 +61,7 @@ class DownloadSlowlogRequestBody:
 
     @file_name_list.setter
     def file_name_list(self, file_name_list):
-        """Sets the file_name_list of this DownloadSlowlogRequestBody.
+        r"""Sets the file_name_list of this DownloadSlowlogRequestBody.
 
         - 需要下载的文件的文件名列表。
 
@@ -72,7 +72,7 @@ class DownloadSlowlogRequestBody:
 
     @property
     def node_id_list(self):
-        """Gets the node_id_list of this DownloadSlowlogRequestBody.
+        r"""Gets the node_id_list of this DownloadSlowlogRequestBody.
 
         节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的 shard节点 - 副本集、单节点下面的所有节点
 
@@ -83,7 +83,7 @@ class DownloadSlowlogRequestBody:
 
     @node_id_list.setter
     def node_id_list(self, node_id_list):
-        """Sets the node_id_list of this DownloadSlowlogRequestBody.
+        r"""Sets the node_id_list of this DownloadSlowlogRequestBody.
 
         节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的 shard节点 - 副本集、单节点下面的所有节点
 

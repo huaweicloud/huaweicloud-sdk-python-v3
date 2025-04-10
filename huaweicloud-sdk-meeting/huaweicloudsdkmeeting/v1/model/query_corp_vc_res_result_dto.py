@@ -45,7 +45,7 @@ class QueryCorpVcResResultDTO:
     }
 
     def __init__(self, vmr_pkg_list=None, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None):
-        """QueryCorpVcResResultDTO
+        r"""QueryCorpVcResResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def vmr_pkg_list(self):
-        """Gets the vmr_pkg_list of this QueryCorpVcResResultDTO.
+        r"""Gets the vmr_pkg_list of this QueryCorpVcResResultDTO.
 
         云会议室类型列表。
 
@@ -124,7 +124,7 @@ class QueryCorpVcResResultDTO:
 
     @vmr_pkg_list.setter
     def vmr_pkg_list(self, vmr_pkg_list):
-        """Sets the vmr_pkg_list of this QueryCorpVcResResultDTO.
+        r"""Sets the vmr_pkg_list of this QueryCorpVcResResultDTO.
 
         云会议室类型列表。
 
@@ -135,7 +135,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def te1080p_hard_count(self):
-        """Gets the te1080p_hard_count of this QueryCorpVcResResultDTO.
+        r"""Gets the te1080p_hard_count of this QueryCorpVcResResultDTO.
 
         1080P硬终端接入帐号数量。
 
@@ -146,7 +146,7 @@ class QueryCorpVcResResultDTO:
 
     @te1080p_hard_count.setter
     def te1080p_hard_count(self, te1080p_hard_count):
-        """Sets the te1080p_hard_count of this QueryCorpVcResResultDTO.
+        r"""Sets the te1080p_hard_count of this QueryCorpVcResResultDTO.
 
         1080P硬终端接入帐号数量。
 
@@ -157,7 +157,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def te720p_hard_count(self):
-        """Gets the te720p_hard_count of this QueryCorpVcResResultDTO.
+        r"""Gets the te720p_hard_count of this QueryCorpVcResResultDTO.
 
         720P硬终端接入帐号数量。
 
@@ -168,7 +168,7 @@ class QueryCorpVcResResultDTO:
 
     @te720p_hard_count.setter
     def te720p_hard_count(self, te720p_hard_count):
-        """Sets the te720p_hard_count of this QueryCorpVcResResultDTO.
+        r"""Sets the te720p_hard_count of this QueryCorpVcResResultDTO.
 
         720P硬终端接入帐号数量。
 
@@ -179,7 +179,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def te_soft_count(self):
-        """Gets the te_soft_count of this QueryCorpVcResResultDTO.
+        r"""Gets the te_soft_count of this QueryCorpVcResResultDTO.
 
         软终端账户数量。
 
@@ -190,7 +190,7 @@ class QueryCorpVcResResultDTO:
 
     @te_soft_count.setter
     def te_soft_count(self, te_soft_count):
-        """Sets the te_soft_count of this QueryCorpVcResResultDTO.
+        r"""Sets the te_soft_count of this QueryCorpVcResResultDTO.
 
         软终端账户数量。
 
@@ -201,7 +201,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def room_count(self):
-        """Gets the room_count of this QueryCorpVcResResultDTO.
+        r"""Gets the room_count of this QueryCorpVcResResultDTO.
 
         电子白板（SmartRooms）接入帐号数量。
 
@@ -212,7 +212,7 @@ class QueryCorpVcResResultDTO:
 
     @room_count.setter
     def room_count(self, room_count):
-        """Sets the room_count of this QueryCorpVcResResultDTO.
+        r"""Sets the room_count of this QueryCorpVcResResultDTO.
 
         电子白板（SmartRooms）接入帐号数量。
 
@@ -223,7 +223,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def record_capability(self):
-        """Gets the record_capability of this QueryCorpVcResResultDTO.
+        r"""Gets the record_capability of this QueryCorpVcResResultDTO.
 
         录播存储空间 (单位:G)。
 
@@ -234,7 +234,7 @@ class QueryCorpVcResResultDTO:
 
     @record_capability.setter
     def record_capability(self, record_capability):
-        """Sets the record_capability of this QueryCorpVcResResultDTO.
+        r"""Sets the record_capability of this QueryCorpVcResResultDTO.
 
         录播存储空间 (单位:G)。
 
@@ -245,7 +245,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def conf_call_count(self):
-        """Gets the conf_call_count of this QueryCorpVcResResultDTO.
+        r"""Gets the conf_call_count of this QueryCorpVcResResultDTO.
 
         会议并发方数量。
 
@@ -256,7 +256,7 @@ class QueryCorpVcResResultDTO:
 
     @conf_call_count.setter
     def conf_call_count(self, conf_call_count):
-        """Sets the conf_call_count of this QueryCorpVcResResultDTO.
+        r"""Sets the conf_call_count of this QueryCorpVcResResultDTO.
 
         会议并发方数量。
 
@@ -267,7 +267,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def live_count(self):
-        """Gets the live_count of this QueryCorpVcResResultDTO.
+        r"""Gets the live_count of this QueryCorpVcResResultDTO.
 
         直播端口数量。
 
@@ -278,7 +278,7 @@ class QueryCorpVcResResultDTO:
 
     @live_count.setter
     def live_count(self, live_count):
-        """Sets the live_count of this QueryCorpVcResResultDTO.
+        r"""Sets the live_count of this QueryCorpVcResResultDTO.
 
         直播端口数量。
 
@@ -289,7 +289,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def third_party_hard_count(self):
-        """Gets the third_party_hard_count of this QueryCorpVcResResultDTO.
+        r"""Gets the third_party_hard_count of this QueryCorpVcResResultDTO.
 
         第三方硬终端接入帐号数量。
 
@@ -300,7 +300,7 @@ class QueryCorpVcResResultDTO:
 
     @third_party_hard_count.setter
     def third_party_hard_count(self, third_party_hard_count):
-        """Sets the third_party_hard_count of this QueryCorpVcResResultDTO.
+        r"""Sets the third_party_hard_count of this QueryCorpVcResResultDTO.
 
         第三方硬终端接入帐号数量。
 
@@ -311,7 +311,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def hw_vision_count(self):
-        """Gets the hw_vision_count of this QueryCorpVcResResultDTO.
+        r"""Gets the hw_vision_count of this QueryCorpVcResResultDTO.
 
         智慧屏终端接入帐号数量。
 
@@ -322,7 +322,7 @@ class QueryCorpVcResResultDTO:
 
     @hw_vision_count.setter
     def hw_vision_count(self, hw_vision_count):
-        """Sets the hw_vision_count of this QueryCorpVcResResultDTO.
+        r"""Sets the hw_vision_count of this QueryCorpVcResResultDTO.
 
         智慧屏终端接入帐号数量。
 
@@ -333,7 +333,7 @@ class QueryCorpVcResResultDTO:
 
     @property
     def idea_hub_count(self):
-        """Gets the idea_hub_count of this QueryCorpVcResResultDTO.
+        r"""Gets the idea_hub_count of this QueryCorpVcResResultDTO.
 
         IdeaHub终端接入帐号数量。
 
@@ -344,7 +344,7 @@ class QueryCorpVcResResultDTO:
 
     @idea_hub_count.setter
     def idea_hub_count(self, idea_hub_count):
-        """Sets the idea_hub_count of this QueryCorpVcResResultDTO.
+        r"""Sets the idea_hub_count of this QueryCorpVcResResultDTO.
 
         IdeaHub终端接入帐号数量。
 

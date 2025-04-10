@@ -29,7 +29,7 @@ class UpdateDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, body=None):
-        """UpdateDeviceGroupRequest
+        r"""UpdateDeviceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDeviceGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDeviceGroupRequest.
+        r"""Gets the instance_id of this UpdateDeviceGroupRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -67,7 +67,7 @@ class UpdateDeviceGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDeviceGroupRequest.
+        r"""Sets the instance_id of this UpdateDeviceGroupRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -78,7 +78,7 @@ class UpdateDeviceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDeviceGroupRequest.
+        r"""Gets the group_id of this UpdateDeviceGroupRequest.
 
         **参数说明**：设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 
@@ -89,7 +89,7 @@ class UpdateDeviceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDeviceGroupRequest.
+        r"""Sets the group_id of this UpdateDeviceGroupRequest.
 
         **参数说明**：设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 
@@ -100,7 +100,7 @@ class UpdateDeviceGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceGroupRequest.
+        r"""Gets the body of this UpdateDeviceGroupRequest.
 
         :return: The body of this UpdateDeviceGroupRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupDTO`
@@ -109,7 +109,7 @@ class UpdateDeviceGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceGroupRequest.
+        r"""Sets the body of this UpdateDeviceGroupRequest.
 
         :param body: The body of this UpdateDeviceGroupRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupDTO`

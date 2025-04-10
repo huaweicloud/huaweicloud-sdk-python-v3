@@ -33,7 +33,7 @@ class ListPipleineBuildResultRequest:
     }
 
     def __init__(self, project_id=None, start_date=None, end_date=None, offset=None, limit=None):
-        """ListPipleineBuildResultRequest
+        r"""ListPipleineBuildResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListPipleineBuildResultRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPipleineBuildResultRequest.
+        r"""Gets the project_id of this ListPipleineBuildResultRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class ListPipleineBuildResultRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPipleineBuildResultRequest.
+        r"""Sets the project_id of this ListPipleineBuildResultRequest.
 
         项目id
 
@@ -88,7 +88,7 @@ class ListPipleineBuildResultRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListPipleineBuildResultRequest.
+        r"""Gets the start_date of this ListPipleineBuildResultRequest.
 
         起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
 
@@ -99,7 +99,7 @@ class ListPipleineBuildResultRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListPipleineBuildResultRequest.
+        r"""Sets the start_date of this ListPipleineBuildResultRequest.
 
         起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
 
@@ -110,7 +110,7 @@ class ListPipleineBuildResultRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListPipleineBuildResultRequest.
+        r"""Gets the end_date of this ListPipleineBuildResultRequest.
 
         结束日期，起始日期和结束日期间隔不超过一个月，查询包含结束日期
 
@@ -121,7 +121,7 @@ class ListPipleineBuildResultRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListPipleineBuildResultRequest.
+        r"""Sets the end_date of this ListPipleineBuildResultRequest.
 
         结束日期，起始日期和结束日期间隔不超过一个月，查询包含结束日期
 
@@ -132,7 +132,7 @@ class ListPipleineBuildResultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipleineBuildResultRequest.
+        r"""Gets the offset of this ListPipleineBuildResultRequest.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -143,7 +143,7 @@ class ListPipleineBuildResultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipleineBuildResultRequest.
+        r"""Sets the offset of this ListPipleineBuildResultRequest.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -154,7 +154,7 @@ class ListPipleineBuildResultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipleineBuildResultRequest.
+        r"""Gets the limit of this ListPipleineBuildResultRequest.
 
         每次查询的条目数量
 
@@ -165,7 +165,7 @@ class ListPipleineBuildResultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipleineBuildResultRequest.
+        r"""Sets the limit of this ListPipleineBuildResultRequest.
 
         每次查询的条目数量
 

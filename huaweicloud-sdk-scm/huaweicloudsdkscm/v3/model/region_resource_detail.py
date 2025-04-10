@@ -29,7 +29,7 @@ class RegionResourceDetail:
     }
 
     def __init__(self, region_id=None, is_error=None, resources=None):
-        """RegionResourceDetail
+        r"""RegionResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RegionResourceDetail:
 
     @property
     def region_id(self):
-        """Gets the region_id of this RegionResourceDetail.
+        r"""Gets the region_id of this RegionResourceDetail.
 
         局点ID。当服务为全局服务时，region_id为global，其余按照IAM的标准命名。
 
@@ -65,7 +65,7 @@ class RegionResourceDetail:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this RegionResourceDetail.
+        r"""Sets the region_id of this RegionResourceDetail.
 
         局点ID。当服务为全局服务时，region_id为global，其余按照IAM的标准命名。
 
@@ -76,7 +76,7 @@ class RegionResourceDetail:
 
     @property
     def is_error(self):
-        """Gets the is_error of this RegionResourceDetail.
+        r"""Gets the is_error of this RegionResourceDetail.
 
         请求当前region资源信息过程中，响应是否存在异常的标志。 - true : 存在异常，当前region所统计数据不准确 - false: 无异常，当前region所统计数据准确 
 
@@ -87,7 +87,7 @@ class RegionResourceDetail:
 
     @is_error.setter
     def is_error(self, is_error):
-        """Sets the is_error of this RegionResourceDetail.
+        r"""Sets the is_error of this RegionResourceDetail.
 
         请求当前region资源信息过程中，响应是否存在异常的标志。 - true : 存在异常，当前region所统计数据不准确 - false: 无异常，当前region所统计数据准确 
 
@@ -98,7 +98,7 @@ class RegionResourceDetail:
 
     @property
     def resources(self):
-        """Gets the resources of this RegionResourceDetail.
+        r"""Gets the resources of this RegionResourceDetail.
 
         资源集合，每个资源的标识：资源ID + “:” + 资源名称，详情请参见ResourceDetail字段数据结构说明。
 
@@ -109,7 +109,7 @@ class RegionResourceDetail:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this RegionResourceDetail.
+        r"""Sets the resources of this RegionResourceDetail.
 
         资源集合，每个资源的标识：资源ID + “:” + 资源名称，详情请参见ResourceDetail字段数据结构说明。
 

@@ -31,7 +31,7 @@ class ModifyOttChannelState:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, state=None):
-        """ModifyOttChannelState
+        r"""ModifyOttChannelState
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ModifyOttChannelState:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelState.
+        r"""Gets the domain of this ModifyOttChannelState.
 
         频道推流域名
 
@@ -71,7 +71,7 @@ class ModifyOttChannelState:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelState.
+        r"""Sets the domain of this ModifyOttChannelState.
 
         频道推流域名
 
@@ -82,7 +82,7 @@ class ModifyOttChannelState:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelState.
+        r"""Gets the app_name of this ModifyOttChannelState.
 
         组名或应用名
 
@@ -93,7 +93,7 @@ class ModifyOttChannelState:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelState.
+        r"""Sets the app_name of this ModifyOttChannelState.
 
         组名或应用名
 
@@ -104,7 +104,7 @@ class ModifyOttChannelState:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelState.
+        r"""Gets the id of this ModifyOttChannelState.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -115,7 +115,7 @@ class ModifyOttChannelState:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelState.
+        r"""Sets the id of this ModifyOttChannelState.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -126,7 +126,7 @@ class ModifyOttChannelState:
 
     @property
     def state(self):
-        """Gets the state of this ModifyOttChannelState.
+        r"""Gets the state of this ModifyOttChannelState.
 
         频道状态 - ON：频道下发成功后，自动启动拉流、转码、录制等功能 - OFF：仅保存频道信息，不启动频道
 
@@ -137,7 +137,7 @@ class ModifyOttChannelState:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ModifyOttChannelState.
+        r"""Sets the state of this ModifyOttChannelState.
 
         频道状态 - ON：频道下发成功后，自动启动拉流、转码、录制等功能 - OFF：仅保存频道信息，不启动频道
 

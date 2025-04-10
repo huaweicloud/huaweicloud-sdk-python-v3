@@ -26,7 +26,7 @@ class CancelPhotoDigitalHumanVideoResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """CancelPhotoDigitalHumanVideoResponse
+        r"""CancelPhotoDigitalHumanVideoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CancelPhotoDigitalHumanVideoResponse.
+        r"""Gets the x_request_id of this CancelPhotoDigitalHumanVideoResponse.
 
         :return: The x_request_id of this CancelPhotoDigitalHumanVideoResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CancelPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CancelPhotoDigitalHumanVideoResponse.
+        r"""Sets the x_request_id of this CancelPhotoDigitalHumanVideoResponse.
 
         :param x_request_id: The x_request_id of this CancelPhotoDigitalHumanVideoResponse.
         :type x_request_id: str

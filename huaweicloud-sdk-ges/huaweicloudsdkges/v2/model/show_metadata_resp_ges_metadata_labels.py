@@ -27,7 +27,7 @@ class ShowMetadataRespGesMetadataLabels:
     }
 
     def __init__(self, name=None, properties=None):
-        """ShowMetadataRespGesMetadataLabels
+        r"""ShowMetadataRespGesMetadataLabels
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowMetadataRespGesMetadataLabels:
 
     @property
     def name(self):
-        """Gets the name of this ShowMetadataRespGesMetadataLabels.
+        r"""Gets the name of this ShowMetadataRespGesMetadataLabels.
 
         Label名称。
 
@@ -61,7 +61,7 @@ class ShowMetadataRespGesMetadataLabels:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowMetadataRespGesMetadataLabels.
+        r"""Sets the name of this ShowMetadataRespGesMetadataLabels.
 
         Label名称。
 
@@ -72,7 +72,7 @@ class ShowMetadataRespGesMetadataLabels:
 
     @property
     def properties(self):
-        """Gets the properties of this ShowMetadataRespGesMetadataLabels.
+        r"""Gets the properties of this ShowMetadataRespGesMetadataLabels.
 
         属性Map
 
@@ -83,7 +83,7 @@ class ShowMetadataRespGesMetadataLabels:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowMetadataRespGesMetadataLabels.
+        r"""Sets the properties of this ShowMetadataRespGesMetadataLabels.
 
         属性Map
 

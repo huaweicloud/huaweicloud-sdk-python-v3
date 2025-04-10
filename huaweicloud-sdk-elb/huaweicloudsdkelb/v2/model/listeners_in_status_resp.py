@@ -35,7 +35,7 @@ class ListenersInStatusResp:
     }
 
     def __init__(self, id=None, name=None, pools=None, l7policies=None, operating_status=None, provisioning_status=None):
-        """ListenersInStatusResp
+        r"""ListenersInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListenersInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this ListenersInStatusResp.
+        r"""Gets the id of this ListenersInStatusResp.
 
         监听器ID
 
@@ -83,7 +83,7 @@ class ListenersInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListenersInStatusResp.
+        r"""Sets the id of this ListenersInStatusResp.
 
         监听器ID
 
@@ -94,7 +94,7 @@ class ListenersInStatusResp:
 
     @property
     def name(self):
-        """Gets the name of this ListenersInStatusResp.
+        r"""Gets the name of this ListenersInStatusResp.
 
         监听器名称
 
@@ -105,7 +105,7 @@ class ListenersInStatusResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListenersInStatusResp.
+        r"""Sets the name of this ListenersInStatusResp.
 
         监听器名称
 
@@ -116,7 +116,7 @@ class ListenersInStatusResp:
 
     @property
     def pools(self):
-        """Gets the pools of this ListenersInStatusResp.
+        r"""Gets the pools of this ListenersInStatusResp.
 
         监听器关联的后端云服务器组列表
 
@@ -127,7 +127,7 @@ class ListenersInStatusResp:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this ListenersInStatusResp.
+        r"""Sets the pools of this ListenersInStatusResp.
 
         监听器关联的后端云服务器组列表
 
@@ -138,7 +138,7 @@ class ListenersInStatusResp:
 
     @property
     def l7policies(self):
-        """Gets the l7policies of this ListenersInStatusResp.
+        r"""Gets the l7policies of this ListenersInStatusResp.
 
         监听器关联的转发策略列表
 
@@ -149,7 +149,7 @@ class ListenersInStatusResp:
 
     @l7policies.setter
     def l7policies(self, l7policies):
-        """Sets the l7policies of this ListenersInStatusResp.
+        r"""Sets the l7policies of this ListenersInStatusResp.
 
         监听器关联的转发策略列表
 
@@ -160,7 +160,7 @@ class ListenersInStatusResp:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this ListenersInStatusResp.
+        r"""Gets the operating_status of this ListenersInStatusResp.
 
         监听器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
@@ -171,7 +171,7 @@ class ListenersInStatusResp:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this ListenersInStatusResp.
+        r"""Sets the operating_status of this ListenersInStatusResp.
 
         监听器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
@@ -182,7 +182,7 @@ class ListenersInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListenersInStatusResp.
+        r"""Gets the provisioning_status of this ListenersInStatusResp.
 
         监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -193,7 +193,7 @@ class ListenersInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListenersInStatusResp.
+        r"""Sets the provisioning_status of this ListenersInStatusResp.
 
         监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 

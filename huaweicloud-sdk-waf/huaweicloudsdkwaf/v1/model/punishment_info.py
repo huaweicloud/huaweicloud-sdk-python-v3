@@ -35,7 +35,7 @@ class PunishmentInfo:
     }
 
     def __init__(self, id=None, policyid=None, block_time=None, category=None, description=None, timestamp=None):
-        """PunishmentInfo
+        r"""PunishmentInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PunishmentInfo:
 
     @property
     def id(self):
-        """Gets the id of this PunishmentInfo.
+        r"""Gets the id of this PunishmentInfo.
 
         规则id
 
@@ -89,7 +89,7 @@ class PunishmentInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PunishmentInfo.
+        r"""Sets the id of this PunishmentInfo.
 
         规则id
 
@@ -100,7 +100,7 @@ class PunishmentInfo:
 
     @property
     def policyid(self):
-        """Gets the policyid of this PunishmentInfo.
+        r"""Gets the policyid of this PunishmentInfo.
 
         所属策略id
 
@@ -111,7 +111,7 @@ class PunishmentInfo:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this PunishmentInfo.
+        r"""Sets the policyid of this PunishmentInfo.
 
         所属策略id
 
@@ -122,7 +122,7 @@ class PunishmentInfo:
 
     @property
     def block_time(self):
-        """Gets the block_time of this PunishmentInfo.
+        r"""Gets the block_time of this PunishmentInfo.
 
         拦截时间
 
@@ -133,7 +133,7 @@ class PunishmentInfo:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this PunishmentInfo.
+        r"""Sets the block_time of this PunishmentInfo.
 
         拦截时间
 
@@ -144,7 +144,7 @@ class PunishmentInfo:
 
     @property
     def category(self):
-        """Gets the category of this PunishmentInfo.
+        r"""Gets the category of this PunishmentInfo.
 
         攻击惩罚类别
 
@@ -155,7 +155,7 @@ class PunishmentInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this PunishmentInfo.
+        r"""Sets the category of this PunishmentInfo.
 
         攻击惩罚类别
 
@@ -166,7 +166,7 @@ class PunishmentInfo:
 
     @property
     def description(self):
-        """Gets the description of this PunishmentInfo.
+        r"""Gets the description of this PunishmentInfo.
 
         规则描述
 
@@ -177,7 +177,7 @@ class PunishmentInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PunishmentInfo.
+        r"""Sets the description of this PunishmentInfo.
 
         规则描述
 
@@ -188,7 +188,7 @@ class PunishmentInfo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this PunishmentInfo.
+        r"""Gets the timestamp of this PunishmentInfo.
 
         创建规则时间戳
 
@@ -199,7 +199,7 @@ class PunishmentInfo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this PunishmentInfo.
+        r"""Sets the timestamp of this PunishmentInfo.
 
         创建规则时间戳
 

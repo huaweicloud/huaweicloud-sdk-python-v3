@@ -33,7 +33,7 @@ class SubPicLayoutInfo:
     }
 
     def __init__(self, id=None, left=None, top=None, x_size=None, y_size=None):
-        """SubPicLayoutInfo
+        r"""SubPicLayoutInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SubPicLayoutInfo:
 
     @property
     def id(self):
-        """Gets the id of this SubPicLayoutInfo.
+        r"""Gets the id of this SubPicLayoutInfo.
 
         多画面信息。
 
@@ -82,7 +82,7 @@ class SubPicLayoutInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubPicLayoutInfo.
+        r"""Sets the id of this SubPicLayoutInfo.
 
         多画面信息。
 
@@ -93,7 +93,7 @@ class SubPicLayoutInfo:
 
     @property
     def left(self):
-        """Gets the left of this SubPicLayoutInfo.
+        r"""Gets the left of this SubPicLayoutInfo.
 
         子画面从左到右的索引。
 
@@ -104,7 +104,7 @@ class SubPicLayoutInfo:
 
     @left.setter
     def left(self, left):
-        """Sets the left of this SubPicLayoutInfo.
+        r"""Sets the left of this SubPicLayoutInfo.
 
         子画面从左到右的索引。
 
@@ -115,7 +115,7 @@ class SubPicLayoutInfo:
 
     @property
     def top(self):
-        """Gets the top of this SubPicLayoutInfo.
+        r"""Gets the top of this SubPicLayoutInfo.
 
         子画面从上到下的索引。
 
@@ -126,7 +126,7 @@ class SubPicLayoutInfo:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this SubPicLayoutInfo.
+        r"""Sets the top of this SubPicLayoutInfo.
 
         子画面从上到下的索引。
 
@@ -137,7 +137,7 @@ class SubPicLayoutInfo:
 
     @property
     def x_size(self):
-        """Gets the x_size of this SubPicLayoutInfo.
+        r"""Gets the x_size of this SubPicLayoutInfo.
 
         子画面横向尺寸。
 
@@ -148,7 +148,7 @@ class SubPicLayoutInfo:
 
     @x_size.setter
     def x_size(self, x_size):
-        """Sets the x_size of this SubPicLayoutInfo.
+        r"""Sets the x_size of this SubPicLayoutInfo.
 
         子画面横向尺寸。
 
@@ -159,7 +159,7 @@ class SubPicLayoutInfo:
 
     @property
     def y_size(self):
-        """Gets the y_size of this SubPicLayoutInfo.
+        r"""Gets the y_size of this SubPicLayoutInfo.
 
         子画面横向尺寸。
 
@@ -170,7 +170,7 @@ class SubPicLayoutInfo:
 
     @y_size.setter
     def y_size(self, y_size):
-        """Sets the y_size of this SubPicLayoutInfo.
+        r"""Sets the y_size of this SubPicLayoutInfo.
 
         子画面横向尺寸。
 

@@ -32,7 +32,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
     }
 
     def __init__(self, create_time=None, name=None, remark=None, id=None):
-        """UpdateEnvironmentV2Response
+        r"""UpdateEnvironmentV2Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateEnvironmentV2Response.
+        r"""Gets the create_time of this UpdateEnvironmentV2Response.
 
         创建时间
 
@@ -76,7 +76,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateEnvironmentV2Response.
+        r"""Sets the create_time of this UpdateEnvironmentV2Response.
 
         创建时间
 
@@ -87,7 +87,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEnvironmentV2Response.
+        r"""Gets the name of this UpdateEnvironmentV2Response.
 
         环境名称
 
@@ -98,7 +98,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEnvironmentV2Response.
+        r"""Sets the name of this UpdateEnvironmentV2Response.
 
         环境名称
 
@@ -109,7 +109,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateEnvironmentV2Response.
+        r"""Gets the remark of this UpdateEnvironmentV2Response.
 
         描述信息
 
@@ -120,7 +120,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateEnvironmentV2Response.
+        r"""Sets the remark of this UpdateEnvironmentV2Response.
 
         描述信息
 
@@ -131,7 +131,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEnvironmentV2Response.
+        r"""Gets the id of this UpdateEnvironmentV2Response.
 
         环境id
 
@@ -142,7 +142,7 @@ class UpdateEnvironmentV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEnvironmentV2Response.
+        r"""Sets the id of this UpdateEnvironmentV2Response.
 
         环境id
 

@@ -26,7 +26,7 @@ class RunImageMainObjectDetectionResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunImageMainObjectDetectionResponse
+        r"""RunImageMainObjectDetectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunImageMainObjectDetectionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunImageMainObjectDetectionResponse.
+        r"""Gets the result of this RunImageMainObjectDetectionResponse.
 
         主体列表集合。
 
@@ -55,7 +55,7 @@ class RunImageMainObjectDetectionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunImageMainObjectDetectionResponse.
+        r"""Sets the result of this RunImageMainObjectDetectionResponse.
 
         主体列表集合。
 

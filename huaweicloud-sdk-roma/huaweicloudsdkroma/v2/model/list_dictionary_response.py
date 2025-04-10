@@ -30,7 +30,7 @@ class ListDictionaryResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, dictionaries=None):
-        """ListDictionaryResponse
+        r"""ListDictionaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDictionaryResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDictionaryResponse.
+        r"""Gets the total of this ListDictionaryResponse.
 
         总数，与分页无关
 
@@ -69,7 +69,7 @@ class ListDictionaryResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDictionaryResponse.
+        r"""Sets the total of this ListDictionaryResponse.
 
         总数，与分页无关
 
@@ -80,7 +80,7 @@ class ListDictionaryResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListDictionaryResponse.
+        r"""Gets the size of this ListDictionaryResponse.
 
         当前页的数量，小于等于请求里指定的limit
 
@@ -91,7 +91,7 @@ class ListDictionaryResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDictionaryResponse.
+        r"""Sets the size of this ListDictionaryResponse.
 
         当前页的数量，小于等于请求里指定的limit
 
@@ -102,7 +102,7 @@ class ListDictionaryResponse(SdkResponse):
 
     @property
     def dictionaries(self):
-        """Gets the dictionaries of this ListDictionaryResponse.
+        r"""Gets the dictionaries of this ListDictionaryResponse.
 
         字典列表
 
@@ -113,7 +113,7 @@ class ListDictionaryResponse(SdkResponse):
 
     @dictionaries.setter
     def dictionaries(self, dictionaries):
-        """Sets the dictionaries of this ListDictionaryResponse.
+        r"""Sets the dictionaries of this ListDictionaryResponse.
 
         字典列表
 

@@ -29,7 +29,7 @@ class WordsRegionList:
     }
 
     def __init__(self, type=None, words_block_count=None, words_block_list=None):
-        """WordsRegionList
+        r"""WordsRegionList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class WordsRegionList:
 
     @property
     def type(self):
-        """Gets the type of this WordsRegionList.
+        r"""Gets the type of this WordsRegionList.
 
         文字识别区域类型。 - text：文本识别区域; - table：表格识别区域。 
 
@@ -65,7 +65,7 @@ class WordsRegionList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WordsRegionList.
+        r"""Sets the type of this WordsRegionList.
 
         文字识别区域类型。 - text：文本识别区域; - table：表格识别区域。 
 
@@ -76,7 +76,7 @@ class WordsRegionList:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this WordsRegionList.
+        r"""Gets the words_block_count of this WordsRegionList.
 
         子区域识别文字块数目。 
 
@@ -87,7 +87,7 @@ class WordsRegionList:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this WordsRegionList.
+        r"""Sets the words_block_count of this WordsRegionList.
 
         子区域识别文字块数目。 
 
@@ -98,7 +98,7 @@ class WordsRegionList:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this WordsRegionList.
+        r"""Gets the words_block_list of this WordsRegionList.
 
         子区域识别文字块列表，输出顺序从左到右，先上后下。 
 
@@ -109,7 +109,7 @@ class WordsRegionList:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this WordsRegionList.
+        r"""Sets the words_block_list of this WordsRegionList.
 
         子区域识别文字块列表，输出顺序从左到右，先上后下。 
 

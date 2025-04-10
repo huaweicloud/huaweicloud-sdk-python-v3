@@ -27,7 +27,7 @@ class UpdateQueueCidrRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """UpdateQueueCidrRequest
+        r"""UpdateQueueCidrRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateQueueCidrRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateQueueCidrRequest.
+        r"""Gets the queue_name of this UpdateQueueCidrRequest.
 
         指定删除的队列名称。
 
@@ -60,7 +60,7 @@ class UpdateQueueCidrRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateQueueCidrRequest.
+        r"""Sets the queue_name of this UpdateQueueCidrRequest.
 
         指定删除的队列名称。
 
@@ -71,7 +71,7 @@ class UpdateQueueCidrRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateQueueCidrRequest.
+        r"""Gets the body of this UpdateQueueCidrRequest.
 
         :return: The body of this UpdateQueueCidrRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequestBody`
@@ -80,7 +80,7 @@ class UpdateQueueCidrRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateQueueCidrRequest.
+        r"""Sets the body of this UpdateQueueCidrRequest.
 
         :param body: The body of this UpdateQueueCidrRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequestBody`

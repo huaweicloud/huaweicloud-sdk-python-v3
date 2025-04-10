@@ -29,7 +29,7 @@ class ConformancePackScore:
     }
 
     def __init__(self, id=None, name=None, score=None):
-        """ConformancePackScore
+        r"""ConformancePackScore
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConformancePackScore:
 
     @property
     def id(self):
-        """Gets the id of this ConformancePackScore.
+        r"""Gets the id of this ConformancePackScore.
 
         合规规则包ID。
 
@@ -68,7 +68,7 @@ class ConformancePackScore:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConformancePackScore.
+        r"""Sets the id of this ConformancePackScore.
 
         合规规则包ID。
 
@@ -79,7 +79,7 @@ class ConformancePackScore:
 
     @property
     def name(self):
-        """Gets the name of this ConformancePackScore.
+        r"""Gets the name of this ConformancePackScore.
 
         合规规则包名称。
 
@@ -90,7 +90,7 @@ class ConformancePackScore:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConformancePackScore.
+        r"""Sets the name of this ConformancePackScore.
 
         合规规则包名称。
 
@@ -101,7 +101,7 @@ class ConformancePackScore:
 
     @property
     def score(self):
-        """Gets the score of this ConformancePackScore.
+        r"""Gets the score of this ConformancePackScore.
 
         合规规则包分数。
 
@@ -112,7 +112,7 @@ class ConformancePackScore:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this ConformancePackScore.
+        r"""Sets the score of this ConformancePackScore.
 
         合规规则包分数。
 

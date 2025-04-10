@@ -170,7 +170,7 @@ class ShowMqsInstanceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, mqs_connector_enable=None, mqs_connector_address=None, plugin_enable=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, node_num=None, publicip_address=None, listeners=None, public_access_enabled=None, public_boundwidth=None, access_user=None, agent_enable=None):
-        """ShowMqsInstanceResponse
+        r"""ShowMqsInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -548,7 +548,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowMqsInstanceResponse.
+        r"""Gets the name of this ShowMqsInstanceResponse.
 
         实例名称。
 
@@ -559,7 +559,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowMqsInstanceResponse.
+        r"""Sets the name of this ShowMqsInstanceResponse.
 
         实例名称。
 
@@ -570,7 +570,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowMqsInstanceResponse.
+        r"""Gets the description of this ShowMqsInstanceResponse.
 
         描述信息。
 
@@ -581,7 +581,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowMqsInstanceResponse.
+        r"""Sets the description of this ShowMqsInstanceResponse.
 
         描述信息。
 
@@ -592,7 +592,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def engine(self):
-        """Gets the engine of this ShowMqsInstanceResponse.
+        r"""Gets the engine of this ShowMqsInstanceResponse.
 
         引擎。
 
@@ -603,7 +603,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowMqsInstanceResponse.
+        r"""Sets the engine of this ShowMqsInstanceResponse.
 
         引擎。
 
@@ -614,7 +614,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowMqsInstanceResponse.
+        r"""Gets the engine_version of this ShowMqsInstanceResponse.
 
         版本。
 
@@ -625,7 +625,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowMqsInstanceResponse.
+        r"""Sets the engine_version of this ShowMqsInstanceResponse.
 
         版本。
 
@@ -636,7 +636,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def specification(self):
-        """Gets the specification of this ShowMqsInstanceResponse.
+        r"""Gets the specification of this ShowMqsInstanceResponse.
 
         实例规格。
 
@@ -647,7 +647,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ShowMqsInstanceResponse.
+        r"""Sets the specification of this ShowMqsInstanceResponse.
 
         实例规格。
 
@@ -658,7 +658,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def storage_space(self):
-        """Gets the storage_space of this ShowMqsInstanceResponse.
+        r"""Gets the storage_space of this ShowMqsInstanceResponse.
 
         消息存储空间，单位：GB。
 
@@ -669,7 +669,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @storage_space.setter
     def storage_space(self, storage_space):
-        """Sets the storage_space of this ShowMqsInstanceResponse.
+        r"""Sets the storage_space of this ShowMqsInstanceResponse.
 
         消息存储空间，单位：GB。
 
@@ -680,7 +680,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def partition_num(self):
-        """Gets the partition_num of this ShowMqsInstanceResponse.
+        r"""Gets the partition_num of this ShowMqsInstanceResponse.
 
         最大分区数。不同规格的ROMA Connect实例的最大分区数不相同。
 
@@ -691,7 +691,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @partition_num.setter
     def partition_num(self, partition_num):
-        """Sets the partition_num of this ShowMqsInstanceResponse.
+        r"""Sets the partition_num of this ShowMqsInstanceResponse.
 
         最大分区数。不同规格的ROMA Connect实例的最大分区数不相同。
 
@@ -702,7 +702,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def used_storage_space(self):
-        """Gets the used_storage_space of this ShowMqsInstanceResponse.
+        r"""Gets the used_storage_space of this ShowMqsInstanceResponse.
 
         已使用的消息存储空间，单位：GB。
 
@@ -713,7 +713,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @used_storage_space.setter
     def used_storage_space(self, used_storage_space):
-        """Sets the used_storage_space of this ShowMqsInstanceResponse.
+        r"""Sets the used_storage_space of this ShowMqsInstanceResponse.
 
         已使用的消息存储空间，单位：GB。
 
@@ -724,7 +724,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def connect_address(self):
-        """Gets the connect_address of this ShowMqsInstanceResponse.
+        r"""Gets the connect_address of this ShowMqsInstanceResponse.
 
         实例连接IP地址。
 
@@ -735,7 +735,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @connect_address.setter
     def connect_address(self, connect_address):
-        """Sets the connect_address of this ShowMqsInstanceResponse.
+        r"""Sets the connect_address of this ShowMqsInstanceResponse.
 
         实例连接IP地址。
 
@@ -746,7 +746,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this ShowMqsInstanceResponse.
+        r"""Gets the port of this ShowMqsInstanceResponse.
 
         实例连接端口。
 
@@ -757,7 +757,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowMqsInstanceResponse.
+        r"""Sets the port of this ShowMqsInstanceResponse.
 
         实例连接端口。
 
@@ -768,7 +768,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowMqsInstanceResponse.
+        r"""Gets the status of this ShowMqsInstanceResponse.
 
         实例的状态。   - CREATING: 申请实例后，在实例状态进入运行中之前的状态。   - RUNNING: 实例正常运行状态。在这个状态的实例可以运行您的业务。
 
@@ -779,7 +779,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMqsInstanceResponse.
+        r"""Sets the status of this ShowMqsInstanceResponse.
 
         实例的状态。   - CREATING: 申请实例后，在实例状态进入运行中之前的状态。   - RUNNING: 实例正常运行状态。在这个状态的实例可以运行您的业务。
 
@@ -790,7 +790,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowMqsInstanceResponse.
+        r"""Gets the instance_id of this ShowMqsInstanceResponse.
 
         实例ID。
 
@@ -801,7 +801,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowMqsInstanceResponse.
+        r"""Sets the instance_id of this ShowMqsInstanceResponse.
 
         实例ID。
 
@@ -812,7 +812,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowMqsInstanceResponse.
+        r"""Gets the resource_spec_code of this ShowMqsInstanceResponse.
 
         资源规格标识。  - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。  - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。  - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。  - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
 
@@ -823,7 +823,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowMqsInstanceResponse.
+        r"""Sets the resource_spec_code of this ShowMqsInstanceResponse.
 
         资源规格标识。  - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。  - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。  - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。  - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
 
@@ -834,7 +834,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowMqsInstanceResponse.
+        r"""Gets the charging_mode of this ShowMqsInstanceResponse.
 
         付费模式，1表示按需计费，0表示包周期计费。
 
@@ -845,7 +845,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowMqsInstanceResponse.
+        r"""Sets the charging_mode of this ShowMqsInstanceResponse.
 
         付费模式，1表示按需计费，0表示包周期计费。
 
@@ -856,7 +856,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowMqsInstanceResponse.
+        r"""Gets the vpc_id of this ShowMqsInstanceResponse.
 
         VPC ID。
 
@@ -867,7 +867,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowMqsInstanceResponse.
+        r"""Sets the vpc_id of this ShowMqsInstanceResponse.
 
         VPC ID。
 
@@ -878,7 +878,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this ShowMqsInstanceResponse.
+        r"""Gets the vpc_name of this ShowMqsInstanceResponse.
 
         VPC的名称。
 
@@ -889,7 +889,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this ShowMqsInstanceResponse.
+        r"""Sets the vpc_name of this ShowMqsInstanceResponse.
 
         VPC的名称。
 
@@ -900,7 +900,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowMqsInstanceResponse.
+        r"""Gets the created_at of this ShowMqsInstanceResponse.
 
         完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
@@ -911,7 +911,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowMqsInstanceResponse.
+        r"""Sets the created_at of this ShowMqsInstanceResponse.
 
         完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
@@ -922,7 +922,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowMqsInstanceResponse.
+        r"""Gets the user_id of this ShowMqsInstanceResponse.
 
         用户ID。
 
@@ -933,7 +933,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowMqsInstanceResponse.
+        r"""Sets the user_id of this ShowMqsInstanceResponse.
 
         用户ID。
 
@@ -944,7 +944,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowMqsInstanceResponse.
+        r"""Gets the user_name of this ShowMqsInstanceResponse.
 
         用户名。
 
@@ -955,7 +955,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowMqsInstanceResponse.
+        r"""Sets the user_name of this ShowMqsInstanceResponse.
 
         用户名。
 
@@ -966,7 +966,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowMqsInstanceResponse.
+        r"""Gets the order_id of this ShowMqsInstanceResponse.
 
         订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
 
@@ -977,7 +977,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowMqsInstanceResponse.
+        r"""Sets the order_id of this ShowMqsInstanceResponse.
 
         订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
 
@@ -988,7 +988,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this ShowMqsInstanceResponse.
+        r"""Gets the maintain_begin of this ShowMqsInstanceResponse.
 
         维护时间窗开始时间，格式为HH:mm:ss。
 
@@ -999,7 +999,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this ShowMqsInstanceResponse.
+        r"""Sets the maintain_begin of this ShowMqsInstanceResponse.
 
         维护时间窗开始时间，格式为HH:mm:ss。
 
@@ -1010,7 +1010,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this ShowMqsInstanceResponse.
+        r"""Gets the maintain_end of this ShowMqsInstanceResponse.
 
         维护时间窗结束时间，格式为HH:mm:ss。
 
@@ -1021,7 +1021,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this ShowMqsInstanceResponse.
+        r"""Sets the maintain_end of this ShowMqsInstanceResponse.
 
         维护时间窗结束时间，格式为HH:mm:ss。
 
@@ -1032,7 +1032,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this ShowMqsInstanceResponse.
+        r"""Gets the enable_publicip of this ShowMqsInstanceResponse.
 
         实例是否开启公网访问功能。  - true：开启  - false：未开启 
 
@@ -1043,7 +1043,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this ShowMqsInstanceResponse.
+        r"""Sets the enable_publicip of this ShowMqsInstanceResponse.
 
         实例是否开启公网访问功能。  - true：开启  - false：未开启 
 
@@ -1054,7 +1054,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def management_connect_address(self):
-        """Gets the management_connect_address of this ShowMqsInstanceResponse.
+        r"""Gets the management_connect_address of this ShowMqsInstanceResponse.
 
         Kafka实例的KafkaManager连接地址。
 
@@ -1065,7 +1065,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @management_connect_address.setter
     def management_connect_address(self, management_connect_address):
-        """Sets the management_connect_address of this ShowMqsInstanceResponse.
+        r"""Sets the management_connect_address of this ShowMqsInstanceResponse.
 
         Kafka实例的KafkaManager连接地址。
 
@@ -1076,7 +1076,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this ShowMqsInstanceResponse.
+        r"""Gets the ssl_enable of this ShowMqsInstanceResponse.
 
         是否开启安全认证。 - true：开启 - false：未开启
 
@@ -1087,7 +1087,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this ShowMqsInstanceResponse.
+        r"""Sets the ssl_enable of this ShowMqsInstanceResponse.
 
         是否开启安全认证。 - true：开启 - false：未开启
 
@@ -1098,7 +1098,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowMqsInstanceResponse.
+        r"""Gets the enterprise_project_id of this ShowMqsInstanceResponse.
 
         企业项目ID。
 
@@ -1109,7 +1109,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowMqsInstanceResponse.
+        r"""Sets the enterprise_project_id of this ShowMqsInstanceResponse.
 
         企业项目ID。
 
@@ -1120,7 +1120,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def is_logical_volume(self):
-        """Gets the is_logical_volume of this ShowMqsInstanceResponse.
+        r"""Gets the is_logical_volume of this ShowMqsInstanceResponse.
 
         实例扩容时用于区分老实例与新实例。  - true：新创建的实例，允许磁盘动态扩容不需要重启。  - false：老实例
 
@@ -1131,7 +1131,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @is_logical_volume.setter
     def is_logical_volume(self, is_logical_volume):
-        """Sets the is_logical_volume of this ShowMqsInstanceResponse.
+        r"""Sets the is_logical_volume of this ShowMqsInstanceResponse.
 
         实例扩容时用于区分老实例与新实例。  - true：新创建的实例，允许磁盘动态扩容不需要重启。  - false：老实例
 
@@ -1142,7 +1142,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def extend_times(self):
-        """Gets the extend_times of this ShowMqsInstanceResponse.
+        r"""Gets the extend_times of this ShowMqsInstanceResponse.
 
         实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
 
@@ -1153,7 +1153,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @extend_times.setter
     def extend_times(self, extend_times):
-        """Sets the extend_times of this ShowMqsInstanceResponse.
+        r"""Sets the extend_times of this ShowMqsInstanceResponse.
 
         实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
 
@@ -1164,7 +1164,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def enable_auto_topic(self):
-        """Gets the enable_auto_topic of this ShowMqsInstanceResponse.
+        r"""Gets the enable_auto_topic of this ShowMqsInstanceResponse.
 
         是否打开kafka自动创建topic功能。  - true：开启  - false：关闭
 
@@ -1175,7 +1175,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @enable_auto_topic.setter
     def enable_auto_topic(self, enable_auto_topic):
-        """Sets the enable_auto_topic of this ShowMqsInstanceResponse.
+        r"""Sets the enable_auto_topic of this ShowMqsInstanceResponse.
 
         是否打开kafka自动创建topic功能。  - true：开启  - false：关闭
 
@@ -1186,7 +1186,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowMqsInstanceResponse.
+        r"""Gets the type of this ShowMqsInstanceResponse.
 
         实例类型：集群，cluster。
 
@@ -1197,7 +1197,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowMqsInstanceResponse.
+        r"""Sets the type of this ShowMqsInstanceResponse.
 
         实例类型：集群，cluster。
 
@@ -1208,7 +1208,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowMqsInstanceResponse.
+        r"""Gets the product_id of this ShowMqsInstanceResponse.
 
         产品标识。
 
@@ -1219,7 +1219,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowMqsInstanceResponse.
+        r"""Sets the product_id of this ShowMqsInstanceResponse.
 
         产品标识。
 
@@ -1230,7 +1230,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowMqsInstanceResponse.
+        r"""Gets the security_group_id of this ShowMqsInstanceResponse.
 
         安全组ID。
 
@@ -1241,7 +1241,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowMqsInstanceResponse.
+        r"""Sets the security_group_id of this ShowMqsInstanceResponse.
 
         安全组ID。
 
@@ -1252,7 +1252,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def security_group_name(self):
-        """Gets the security_group_name of this ShowMqsInstanceResponse.
+        r"""Gets the security_group_name of this ShowMqsInstanceResponse.
 
         租户安全组名称。
 
@@ -1263,7 +1263,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @security_group_name.setter
     def security_group_name(self, security_group_name):
-        """Sets the security_group_name of this ShowMqsInstanceResponse.
+        r"""Sets the security_group_name of this ShowMqsInstanceResponse.
 
         租户安全组名称。
 
@@ -1274,7 +1274,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowMqsInstanceResponse.
+        r"""Gets the subnet_id of this ShowMqsInstanceResponse.
 
         子网ID。
 
@@ -1285,7 +1285,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowMqsInstanceResponse.
+        r"""Sets the subnet_id of this ShowMqsInstanceResponse.
 
         子网ID。
 
@@ -1296,7 +1296,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this ShowMqsInstanceResponse.
+        r"""Gets the subnet_name of this ShowMqsInstanceResponse.
 
         子网名称。
 
@@ -1307,7 +1307,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ShowMqsInstanceResponse.
+        r"""Sets the subnet_name of this ShowMqsInstanceResponse.
 
         子网名称。
 
@@ -1318,7 +1318,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def subnet_cidr(self):
-        """Gets the subnet_cidr of this ShowMqsInstanceResponse.
+        r"""Gets the subnet_cidr of this ShowMqsInstanceResponse.
 
         子网网段。
 
@@ -1329,7 +1329,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @subnet_cidr.setter
     def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this ShowMqsInstanceResponse.
+        r"""Sets the subnet_cidr of this ShowMqsInstanceResponse.
 
         子网网段。
 
@@ -1340,7 +1340,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ShowMqsInstanceResponse.
+        r"""Gets the available_zones of this ShowMqsInstanceResponse.
 
         实例节点所在的可用区，返回“可用区ID”。
 
@@ -1351,7 +1351,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ShowMqsInstanceResponse.
+        r"""Sets the available_zones of this ShowMqsInstanceResponse.
 
         实例节点所在的可用区，返回“可用区ID”。
 
@@ -1362,7 +1362,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def total_storage_space(self):
-        """Gets the total_storage_space of this ShowMqsInstanceResponse.
+        r"""Gets the total_storage_space of this ShowMqsInstanceResponse.
 
         总共消息存储空间，单位：GB。
 
@@ -1373,7 +1373,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @total_storage_space.setter
     def total_storage_space(self, total_storage_space):
-        """Sets the total_storage_space of this ShowMqsInstanceResponse.
+        r"""Sets the total_storage_space of this ShowMqsInstanceResponse.
 
         总共消息存储空间，单位：GB。
 
@@ -1384,7 +1384,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def public_connect_address(self):
-        """Gets the public_connect_address of this ShowMqsInstanceResponse.
+        r"""Gets the public_connect_address of this ShowMqsInstanceResponse.
 
         实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
 
@@ -1395,7 +1395,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @public_connect_address.setter
     def public_connect_address(self, public_connect_address):
-        """Sets the public_connect_address of this ShowMqsInstanceResponse.
+        r"""Sets the public_connect_address of this ShowMqsInstanceResponse.
 
         实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
 
@@ -1406,7 +1406,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def storage_resource_id(self):
-        """Gets the storage_resource_id of this ShowMqsInstanceResponse.
+        r"""Gets the storage_resource_id of this ShowMqsInstanceResponse.
 
         存储资源ID。
 
@@ -1417,7 +1417,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @storage_resource_id.setter
     def storage_resource_id(self, storage_resource_id):
-        """Sets the storage_resource_id of this ShowMqsInstanceResponse.
+        r"""Sets the storage_resource_id of this ShowMqsInstanceResponse.
 
         存储资源ID。
 
@@ -1428,7 +1428,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def storage_spec_code(self):
-        """Gets the storage_spec_code of this ShowMqsInstanceResponse.
+        r"""Gets the storage_spec_code of this ShowMqsInstanceResponse.
 
         IO规格。
 
@@ -1439,7 +1439,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @storage_spec_code.setter
     def storage_spec_code(self, storage_spec_code):
-        """Sets the storage_spec_code of this ShowMqsInstanceResponse.
+        r"""Sets the storage_spec_code of this ShowMqsInstanceResponse.
 
         IO规格。
 
@@ -1450,7 +1450,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def service_type(self):
-        """Gets the service_type of this ShowMqsInstanceResponse.
+        r"""Gets the service_type of this ShowMqsInstanceResponse.
 
         服务类型。
 
@@ -1461,7 +1461,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ShowMqsInstanceResponse.
+        r"""Sets the service_type of this ShowMqsInstanceResponse.
 
         服务类型。
 
@@ -1472,7 +1472,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ShowMqsInstanceResponse.
+        r"""Gets the storage_type of this ShowMqsInstanceResponse.
 
         存储类型。
 
@@ -1483,7 +1483,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ShowMqsInstanceResponse.
+        r"""Sets the storage_type of this ShowMqsInstanceResponse.
 
         存储类型。
 
@@ -1494,7 +1494,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def retention_policy(self):
-        """Gets the retention_policy of this ShowMqsInstanceResponse.
+        r"""Gets the retention_policy of this ShowMqsInstanceResponse.
 
         消息老化策略。
 
@@ -1505,7 +1505,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @retention_policy.setter
     def retention_policy(self, retention_policy):
-        """Sets the retention_policy of this ShowMqsInstanceResponse.
+        r"""Sets the retention_policy of this ShowMqsInstanceResponse.
 
         消息老化策略。
 
@@ -1516,7 +1516,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def kafka_public_status(self):
-        """Gets the kafka_public_status of this ShowMqsInstanceResponse.
+        r"""Gets the kafka_public_status of this ShowMqsInstanceResponse.
 
         Kafka公网开启状态。
 
@@ -1527,7 +1527,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @kafka_public_status.setter
     def kafka_public_status(self, kafka_public_status):
-        """Sets the kafka_public_status of this ShowMqsInstanceResponse.
+        r"""Sets the kafka_public_status of this ShowMqsInstanceResponse.
 
         Kafka公网开启状态。
 
@@ -1538,7 +1538,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def public_bandwidth(self):
-        """Gets the public_bandwidth of this ShowMqsInstanceResponse.
+        r"""Gets the public_bandwidth of this ShowMqsInstanceResponse.
 
         公网带宽。
 
@@ -1549,7 +1549,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @public_bandwidth.setter
     def public_bandwidth(self, public_bandwidth):
-        """Sets the public_bandwidth of this ShowMqsInstanceResponse.
+        r"""Sets the public_bandwidth of this ShowMqsInstanceResponse.
 
         公网带宽。
 
@@ -1560,7 +1560,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def kafka_manager_user(self):
-        """Gets the kafka_manager_user of this ShowMqsInstanceResponse.
+        r"""Gets the kafka_manager_user of this ShowMqsInstanceResponse.
 
         登录Kafka Manager的用户名。
 
@@ -1571,7 +1571,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @kafka_manager_user.setter
     def kafka_manager_user(self, kafka_manager_user):
-        """Sets the kafka_manager_user of this ShowMqsInstanceResponse.
+        r"""Sets the kafka_manager_user of this ShowMqsInstanceResponse.
 
         登录Kafka Manager的用户名。
 
@@ -1582,7 +1582,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def enable_log_collection(self):
-        """Gets the enable_log_collection of this ShowMqsInstanceResponse.
+        r"""Gets the enable_log_collection of this ShowMqsInstanceResponse.
 
         是否开启消息收集功能。
 
@@ -1593,7 +1593,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @enable_log_collection.setter
     def enable_log_collection(self, enable_log_collection):
-        """Sets the enable_log_collection of this ShowMqsInstanceResponse.
+        r"""Sets the enable_log_collection of this ShowMqsInstanceResponse.
 
         是否开启消息收集功能。
 
@@ -1604,7 +1604,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def cross_vpc_info(self):
-        """Gets the cross_vpc_info of this ShowMqsInstanceResponse.
+        r"""Gets the cross_vpc_info of this ShowMqsInstanceResponse.
 
         跨VPC访问信息。
 
@@ -1615,7 +1615,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @cross_vpc_info.setter
     def cross_vpc_info(self, cross_vpc_info):
-        """Sets the cross_vpc_info of this ShowMqsInstanceResponse.
+        r"""Sets the cross_vpc_info of this ShowMqsInstanceResponse.
 
         跨VPC访问信息。
 
@@ -1626,7 +1626,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this ShowMqsInstanceResponse.
+        r"""Gets the ipv6_enable of this ShowMqsInstanceResponse.
 
         是否开启ipv6。
 
@@ -1637,7 +1637,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this ShowMqsInstanceResponse.
+        r"""Sets the ipv6_enable of this ShowMqsInstanceResponse.
 
         是否开启ipv6。
 
@@ -1648,7 +1648,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def ipv6_connect_addresses(self):
-        """Gets the ipv6_connect_addresses of this ShowMqsInstanceResponse.
+        r"""Gets the ipv6_connect_addresses of this ShowMqsInstanceResponse.
 
         IPv6的连接地址。
 
@@ -1659,7 +1659,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @ipv6_connect_addresses.setter
     def ipv6_connect_addresses(self, ipv6_connect_addresses):
-        """Sets the ipv6_connect_addresses of this ShowMqsInstanceResponse.
+        r"""Sets the ipv6_connect_addresses of this ShowMqsInstanceResponse.
 
         IPv6的连接地址。
 
@@ -1670,7 +1670,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def connector_enable(self):
-        """Gets the connector_enable of this ShowMqsInstanceResponse.
+        r"""Gets the connector_enable of this ShowMqsInstanceResponse.
 
         是否开启转储。
 
@@ -1681,7 +1681,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @connector_enable.setter
     def connector_enable(self, connector_enable):
-        """Sets the connector_enable of this ShowMqsInstanceResponse.
+        r"""Sets the connector_enable of this ShowMqsInstanceResponse.
 
         是否开启转储。
 
@@ -1692,7 +1692,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ShowMqsInstanceResponse.
+        r"""Gets the connector_id of this ShowMqsInstanceResponse.
 
         转储任务ID。
 
@@ -1703,7 +1703,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ShowMqsInstanceResponse.
+        r"""Sets the connector_id of this ShowMqsInstanceResponse.
 
         转储任务ID。
 
@@ -1714,7 +1714,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def mqs_connector_enable(self):
-        """Gets the mqs_connector_enable of this ShowMqsInstanceResponse.
+        r"""Gets the mqs_connector_enable of this ShowMqsInstanceResponse.
 
         是否开启MQS connector。
 
@@ -1725,7 +1725,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @mqs_connector_enable.setter
     def mqs_connector_enable(self, mqs_connector_enable):
-        """Sets the mqs_connector_enable of this ShowMqsInstanceResponse.
+        r"""Sets the mqs_connector_enable of this ShowMqsInstanceResponse.
 
         是否开启MQS connector。
 
@@ -1736,7 +1736,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def mqs_connector_address(self):
-        """Gets the mqs_connector_address of this ShowMqsInstanceResponse.
+        r"""Gets the mqs_connector_address of this ShowMqsInstanceResponse.
 
         MQS connector地址。
 
@@ -1747,7 +1747,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @mqs_connector_address.setter
     def mqs_connector_address(self, mqs_connector_address):
-        """Sets the mqs_connector_address of this ShowMqsInstanceResponse.
+        r"""Sets the mqs_connector_address of this ShowMqsInstanceResponse.
 
         MQS connector地址。
 
@@ -1758,7 +1758,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def plugin_enable(self):
-        """Gets the plugin_enable of this ShowMqsInstanceResponse.
+        r"""Gets the plugin_enable of this ShowMqsInstanceResponse.
 
         是否开启插件功能。
 
@@ -1769,7 +1769,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @plugin_enable.setter
     def plugin_enable(self, plugin_enable):
-        """Sets the plugin_enable of this ShowMqsInstanceResponse.
+        r"""Sets the plugin_enable of this ShowMqsInstanceResponse.
 
         是否开启插件功能。
 
@@ -1780,7 +1780,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def rest_enable(self):
-        """Gets the rest_enable of this ShowMqsInstanceResponse.
+        r"""Gets the rest_enable of this ShowMqsInstanceResponse.
 
         是否开启Kafka rest功能。
 
@@ -1791,7 +1791,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @rest_enable.setter
     def rest_enable(self, rest_enable):
-        """Sets the rest_enable of this ShowMqsInstanceResponse.
+        r"""Sets the rest_enable of this ShowMqsInstanceResponse.
 
         是否开启Kafka rest功能。
 
@@ -1802,7 +1802,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def rest_connect_address(self):
-        """Gets the rest_connect_address of this ShowMqsInstanceResponse.
+        r"""Gets the rest_connect_address of this ShowMqsInstanceResponse.
 
         Kafka rest地址。
 
@@ -1813,7 +1813,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @rest_connect_address.setter
     def rest_connect_address(self, rest_connect_address):
-        """Sets the rest_connect_address of this ShowMqsInstanceResponse.
+        r"""Sets the rest_connect_address of this ShowMqsInstanceResponse.
 
         Kafka rest地址。
 
@@ -1824,7 +1824,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def message_query_inst_enable(self):
-        """Gets the message_query_inst_enable of this ShowMqsInstanceResponse.
+        r"""Gets the message_query_inst_enable of this ShowMqsInstanceResponse.
 
         是否开启消息查询功能。
 
@@ -1835,7 +1835,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @message_query_inst_enable.setter
     def message_query_inst_enable(self, message_query_inst_enable):
-        """Sets the message_query_inst_enable of this ShowMqsInstanceResponse.
+        r"""Sets the message_query_inst_enable of this ShowMqsInstanceResponse.
 
         是否开启消息查询功能。
 
@@ -1846,7 +1846,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def vpc_client_plain(self):
-        """Gets the vpc_client_plain of this ShowMqsInstanceResponse.
+        r"""Gets the vpc_client_plain of this ShowMqsInstanceResponse.
 
         是否开启VPC明文访问。
 
@@ -1857,7 +1857,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @vpc_client_plain.setter
     def vpc_client_plain(self, vpc_client_plain):
-        """Sets the vpc_client_plain of this ShowMqsInstanceResponse.
+        r"""Sets the vpc_client_plain of this ShowMqsInstanceResponse.
 
         是否开启VPC明文访问。
 
@@ -1868,7 +1868,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def support_features(self):
-        """Gets the support_features of this ShowMqsInstanceResponse.
+        r"""Gets the support_features of this ShowMqsInstanceResponse.
 
         Kafka实例支持的特性功能。
 
@@ -1879,7 +1879,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this ShowMqsInstanceResponse.
+        r"""Sets the support_features of this ShowMqsInstanceResponse.
 
         Kafka实例支持的特性功能。
 
@@ -1890,7 +1890,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def trace_enable(self):
-        """Gets the trace_enable of this ShowMqsInstanceResponse.
+        r"""Gets the trace_enable of this ShowMqsInstanceResponse.
 
         是否开启消息轨迹功能。
 
@@ -1901,7 +1901,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @trace_enable.setter
     def trace_enable(self, trace_enable):
-        """Sets the trace_enable of this ShowMqsInstanceResponse.
+        r"""Sets the trace_enable of this ShowMqsInstanceResponse.
 
         是否开启消息轨迹功能。
 
@@ -1912,7 +1912,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def pod_connect_address(self):
-        """Gets the pod_connect_address of this ShowMqsInstanceResponse.
+        r"""Gets the pod_connect_address of this ShowMqsInstanceResponse.
 
         租户侧连接地址。
 
@@ -1923,7 +1923,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @pod_connect_address.setter
     def pod_connect_address(self, pod_connect_address):
-        """Sets the pod_connect_address of this ShowMqsInstanceResponse.
+        r"""Sets the pod_connect_address of this ShowMqsInstanceResponse.
 
         租户侧连接地址。
 
@@ -1934,7 +1934,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def disk_encrypted(self):
-        """Gets the disk_encrypted of this ShowMqsInstanceResponse.
+        r"""Gets the disk_encrypted of this ShowMqsInstanceResponse.
 
         是否开启磁盘加密。
 
@@ -1945,7 +1945,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @disk_encrypted.setter
     def disk_encrypted(self, disk_encrypted):
-        """Sets the disk_encrypted of this ShowMqsInstanceResponse.
+        r"""Sets the disk_encrypted of this ShowMqsInstanceResponse.
 
         是否开启磁盘加密。
 
@@ -1956,7 +1956,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def kafka_private_connect_address(self):
-        """Gets the kafka_private_connect_address of this ShowMqsInstanceResponse.
+        r"""Gets the kafka_private_connect_address of this ShowMqsInstanceResponse.
 
         Kafka实例私有连接地址。
 
@@ -1967,7 +1967,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @kafka_private_connect_address.setter
     def kafka_private_connect_address(self, kafka_private_connect_address):
-        """Sets the kafka_private_connect_address of this ShowMqsInstanceResponse.
+        r"""Sets the kafka_private_connect_address of this ShowMqsInstanceResponse.
 
         Kafka实例私有连接地址。
 
@@ -1978,7 +1978,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def ces_version(self):
-        """Gets the ces_version of this ShowMqsInstanceResponse.
+        r"""Gets the ces_version of this ShowMqsInstanceResponse.
 
         云监控版本。
 
@@ -1989,7 +1989,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @ces_version.setter
     def ces_version(self, ces_version):
-        """Sets the ces_version of this ShowMqsInstanceResponse.
+        r"""Sets the ces_version of this ShowMqsInstanceResponse.
 
         云监控版本。
 
@@ -2000,7 +2000,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def node_num(self):
-        """Gets the node_num of this ShowMqsInstanceResponse.
+        r"""Gets the node_num of this ShowMqsInstanceResponse.
 
         节点数量。
 
@@ -2011,7 +2011,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ShowMqsInstanceResponse.
+        r"""Sets the node_num of this ShowMqsInstanceResponse.
 
         节点数量。
 
@@ -2022,7 +2022,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this ShowMqsInstanceResponse.
+        r"""Gets the publicip_address of this ShowMqsInstanceResponse.
 
         公网连接地址。
 
@@ -2033,7 +2033,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this ShowMqsInstanceResponse.
+        r"""Sets the publicip_address of this ShowMqsInstanceResponse.
 
         公网连接地址。
 
@@ -2044,7 +2044,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def listeners(self):
-        """Gets the listeners of this ShowMqsInstanceResponse.
+        r"""Gets the listeners of this ShowMqsInstanceResponse.
 
         监听信息。
 
@@ -2055,7 +2055,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this ShowMqsInstanceResponse.
+        r"""Sets the listeners of this ShowMqsInstanceResponse.
 
         监听信息。
 
@@ -2066,7 +2066,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def public_access_enabled(self):
-        """Gets the public_access_enabled of this ShowMqsInstanceResponse.
+        r"""Gets the public_access_enabled of this ShowMqsInstanceResponse.
 
         是否开启公网访问。用于区分何时开启的公网访问。
 
@@ -2077,7 +2077,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @public_access_enabled.setter
     def public_access_enabled(self, public_access_enabled):
-        """Sets the public_access_enabled of this ShowMqsInstanceResponse.
+        r"""Sets the public_access_enabled of this ShowMqsInstanceResponse.
 
         是否开启公网访问。用于区分何时开启的公网访问。
 
@@ -2088,7 +2088,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def public_boundwidth(self):
-        """Gets the public_boundwidth of this ShowMqsInstanceResponse.
+        r"""Gets the public_boundwidth of this ShowMqsInstanceResponse.
 
         公网访问带宽。
 
@@ -2099,7 +2099,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @public_boundwidth.setter
     def public_boundwidth(self, public_boundwidth):
-        """Sets the public_boundwidth of this ShowMqsInstanceResponse.
+        r"""Sets the public_boundwidth of this ShowMqsInstanceResponse.
 
         公网访问带宽。
 
@@ -2110,7 +2110,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def access_user(self):
-        """Gets the access_user of this ShowMqsInstanceResponse.
+        r"""Gets the access_user of this ShowMqsInstanceResponse.
 
         认证用户名。
 
@@ -2121,7 +2121,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @access_user.setter
     def access_user(self, access_user):
-        """Sets the access_user of this ShowMqsInstanceResponse.
+        r"""Sets the access_user of this ShowMqsInstanceResponse.
 
         认证用户名。
 
@@ -2132,7 +2132,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @property
     def agent_enable(self):
-        """Gets the agent_enable of this ShowMqsInstanceResponse.
+        r"""Gets the agent_enable of this ShowMqsInstanceResponse.
 
         是否开启代理。
 
@@ -2143,7 +2143,7 @@ class ShowMqsInstanceResponse(SdkResponse):
 
     @agent_enable.setter
     def agent_enable(self, agent_enable):
-        """Sets the agent_enable of this ShowMqsInstanceResponse.
+        r"""Sets the agent_enable of this ShowMqsInstanceResponse.
 
         是否开启代理。
 

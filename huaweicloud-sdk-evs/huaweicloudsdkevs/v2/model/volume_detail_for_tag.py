@@ -89,7 +89,7 @@ class VolumeDetailForTag:
     }
 
     def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None):
-        """VolumeDetailForTag
+        r"""VolumeDetailForTag
 
         The model defined in huaweicloud sdk
 
@@ -241,7 +241,7 @@ class VolumeDetailForTag:
 
     @property
     def id(self):
-        """Gets the id of this VolumeDetailForTag.
+        r"""Gets the id of this VolumeDetailForTag.
 
         云硬盘的ID。
 
@@ -252,7 +252,7 @@ class VolumeDetailForTag:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeDetailForTag.
+        r"""Sets the id of this VolumeDetailForTag.
 
         云硬盘的ID。
 
@@ -263,7 +263,7 @@ class VolumeDetailForTag:
 
     @property
     def links(self):
-        """Gets the links of this VolumeDetailForTag.
+        r"""Gets the links of this VolumeDetailForTag.
 
         云硬盘URI自描述信息。请参见 [links参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li1077125119136)。
 
@@ -274,7 +274,7 @@ class VolumeDetailForTag:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VolumeDetailForTag.
+        r"""Sets the links of this VolumeDetailForTag.
 
         云硬盘URI自描述信息。请参见 [links参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li1077125119136)。
 
@@ -285,7 +285,7 @@ class VolumeDetailForTag:
 
     @property
     def name(self):
-        """Gets the name of this VolumeDetailForTag.
+        r"""Gets the name of this VolumeDetailForTag.
 
         云硬盘名称。
 
@@ -296,7 +296,7 @@ class VolumeDetailForTag:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeDetailForTag.
+        r"""Sets the name of this VolumeDetailForTag.
 
         云硬盘名称。
 
@@ -307,7 +307,7 @@ class VolumeDetailForTag:
 
     @property
     def status(self):
-        """Gets the status of this VolumeDetailForTag.
+        r"""Gets the status of this VolumeDetailForTag.
 
         云硬盘状态，请参见[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)。
 
@@ -318,7 +318,7 @@ class VolumeDetailForTag:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VolumeDetailForTag.
+        r"""Sets the status of this VolumeDetailForTag.
 
         云硬盘状态，请参见[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)。
 
@@ -329,7 +329,7 @@ class VolumeDetailForTag:
 
     @property
     def attachments(self):
-        """Gets the attachments of this VolumeDetailForTag.
+        r"""Gets the attachments of this VolumeDetailForTag.
 
         云硬盘的挂载信息，请参见•[attachments参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li12430153610291)。
 
@@ -340,7 +340,7 @@ class VolumeDetailForTag:
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this VolumeDetailForTag.
+        r"""Sets the attachments of this VolumeDetailForTag.
 
         云硬盘的挂载信息，请参见•[attachments参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li12430153610291)。
 
@@ -351,7 +351,7 @@ class VolumeDetailForTag:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this VolumeDetailForTag.
+        r"""Gets the availability_zone of this VolumeDetailForTag.
 
         云硬盘所属的AZ信息。
 
@@ -362,7 +362,7 @@ class VolumeDetailForTag:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this VolumeDetailForTag.
+        r"""Sets the availability_zone of this VolumeDetailForTag.
 
         云硬盘所属的AZ信息。
 
@@ -373,7 +373,7 @@ class VolumeDetailForTag:
 
     @property
     def os_vol_host_attrhost(self):
-        """Gets the os_vol_host_attrhost of this VolumeDetailForTag.
+        r"""Gets the os_vol_host_attrhost of this VolumeDetailForTag.
 
         预留属性。
 
@@ -384,7 +384,7 @@ class VolumeDetailForTag:
 
     @os_vol_host_attrhost.setter
     def os_vol_host_attrhost(self, os_vol_host_attrhost):
-        """Sets the os_vol_host_attrhost of this VolumeDetailForTag.
+        r"""Sets the os_vol_host_attrhost of this VolumeDetailForTag.
 
         预留属性。
 
@@ -395,7 +395,7 @@ class VolumeDetailForTag:
 
     @property
     def source_volid(self):
-        """Gets the source_volid of this VolumeDetailForTag.
+        r"""Gets the source_volid of this VolumeDetailForTag.
 
         源云硬盘ID，如果是从源云硬盘创建，则有值。  当前云硬盘服务不支持该字段。
 
@@ -406,7 +406,7 @@ class VolumeDetailForTag:
 
     @source_volid.setter
     def source_volid(self, source_volid):
-        """Sets the source_volid of this VolumeDetailForTag.
+        r"""Sets the source_volid of this VolumeDetailForTag.
 
         源云硬盘ID，如果是从源云硬盘创建，则有值。  当前云硬盘服务不支持该字段。
 
@@ -417,7 +417,7 @@ class VolumeDetailForTag:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this VolumeDetailForTag.
+        r"""Gets the snapshot_id of this VolumeDetailForTag.
 
         快照ID，如果是从快照创建，则有值。
 
@@ -428,7 +428,7 @@ class VolumeDetailForTag:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this VolumeDetailForTag.
+        r"""Sets the snapshot_id of this VolumeDetailForTag.
 
         快照ID，如果是从快照创建，则有值。
 
@@ -439,7 +439,7 @@ class VolumeDetailForTag:
 
     @property
     def description(self):
-        """Gets the description of this VolumeDetailForTag.
+        r"""Gets the description of this VolumeDetailForTag.
 
         云硬盘描述。
 
@@ -450,7 +450,7 @@ class VolumeDetailForTag:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VolumeDetailForTag.
+        r"""Sets the description of this VolumeDetailForTag.
 
         云硬盘描述。
 
@@ -461,7 +461,7 @@ class VolumeDetailForTag:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VolumeDetailForTag.
+        r"""Gets the created_at of this VolumeDetailForTag.
 
         云硬盘创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -472,7 +472,7 @@ class VolumeDetailForTag:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VolumeDetailForTag.
+        r"""Sets the created_at of this VolumeDetailForTag.
 
         云硬盘创建时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -483,7 +483,7 @@ class VolumeDetailForTag:
 
     @property
     def os_vol_tenant_attrtenant_id(self):
-        """Gets the os_vol_tenant_attrtenant_id of this VolumeDetailForTag.
+        r"""Gets the os_vol_tenant_attrtenant_id of this VolumeDetailForTag.
 
         云硬盘所属的租户ID。租户ID就是项目ID。
 
@@ -494,7 +494,7 @@ class VolumeDetailForTag:
 
     @os_vol_tenant_attrtenant_id.setter
     def os_vol_tenant_attrtenant_id(self, os_vol_tenant_attrtenant_id):
-        """Sets the os_vol_tenant_attrtenant_id of this VolumeDetailForTag.
+        r"""Sets the os_vol_tenant_attrtenant_id of this VolumeDetailForTag.
 
         云硬盘所属的租户ID。租户ID就是项目ID。
 
@@ -505,7 +505,7 @@ class VolumeDetailForTag:
 
     @property
     def volume_image_metadata(self):
-        """Gets the volume_image_metadata of this VolumeDetailForTag.
+        r"""Gets the volume_image_metadata of this VolumeDetailForTag.
 
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
@@ -516,7 +516,7 @@ class VolumeDetailForTag:
 
     @volume_image_metadata.setter
     def volume_image_metadata(self, volume_image_metadata):
-        """Sets the volume_image_metadata of this VolumeDetailForTag.
+        r"""Sets the volume_image_metadata of this VolumeDetailForTag.
 
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
@@ -527,7 +527,7 @@ class VolumeDetailForTag:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this VolumeDetailForTag.
+        r"""Gets the volume_type of this VolumeDetailForTag.
 
         云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
@@ -538,7 +538,7 @@ class VolumeDetailForTag:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this VolumeDetailForTag.
+        r"""Sets the volume_type of this VolumeDetailForTag.
 
         云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
@@ -549,7 +549,7 @@ class VolumeDetailForTag:
 
     @property
     def size(self):
-        """Gets the size of this VolumeDetailForTag.
+        r"""Gets the size of this VolumeDetailForTag.
 
         云硬盘大小，单位为GB。
 
@@ -560,7 +560,7 @@ class VolumeDetailForTag:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeDetailForTag.
+        r"""Sets the size of this VolumeDetailForTag.
 
         云硬盘大小，单位为GB。
 
@@ -571,7 +571,7 @@ class VolumeDetailForTag:
 
     @property
     def consistencygroup_id(self):
-        """Gets the consistencygroup_id of this VolumeDetailForTag.
+        r"""Gets the consistencygroup_id of this VolumeDetailForTag.
 
         预留属性。
 
@@ -582,7 +582,7 @@ class VolumeDetailForTag:
 
     @consistencygroup_id.setter
     def consistencygroup_id(self, consistencygroup_id):
-        """Sets the consistencygroup_id of this VolumeDetailForTag.
+        r"""Sets the consistencygroup_id of this VolumeDetailForTag.
 
         预留属性。
 
@@ -593,7 +593,7 @@ class VolumeDetailForTag:
 
     @property
     def bootable(self):
-        """Gets the bootable of this VolumeDetailForTag.
+        r"""Gets the bootable of this VolumeDetailForTag.
 
         是否为启动云硬盘。 true：表示为启动云硬盘。 false：表示为非启动云硬盘。
 
@@ -604,7 +604,7 @@ class VolumeDetailForTag:
 
     @bootable.setter
     def bootable(self, bootable):
-        """Sets the bootable of this VolumeDetailForTag.
+        r"""Sets the bootable of this VolumeDetailForTag.
 
         是否为启动云硬盘。 true：表示为启动云硬盘。 false：表示为非启动云硬盘。
 
@@ -615,7 +615,7 @@ class VolumeDetailForTag:
 
     @property
     def metadata(self):
-        """Gets the metadata of this VolumeDetailForTag.
+        r"""Gets the metadata of this VolumeDetailForTag.
 
         :return: The metadata of this VolumeDetailForTag.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
@@ -624,7 +624,7 @@ class VolumeDetailForTag:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this VolumeDetailForTag.
+        r"""Sets the metadata of this VolumeDetailForTag.
 
         :param metadata: The metadata of this VolumeDetailForTag.
         :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
@@ -633,7 +633,7 @@ class VolumeDetailForTag:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VolumeDetailForTag.
+        r"""Gets the updated_at of this VolumeDetailForTag.
 
         云硬盘更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -644,7 +644,7 @@ class VolumeDetailForTag:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VolumeDetailForTag.
+        r"""Sets the updated_at of this VolumeDetailForTag.
 
         云硬盘更新时间。 时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -655,7 +655,7 @@ class VolumeDetailForTag:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this VolumeDetailForTag.
+        r"""Gets the encrypted of this VolumeDetailForTag.
 
         当前云硬盘服务不支持该字段。
 
@@ -666,7 +666,7 @@ class VolumeDetailForTag:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this VolumeDetailForTag.
+        r"""Sets the encrypted of this VolumeDetailForTag.
 
         当前云硬盘服务不支持该字段。
 
@@ -677,7 +677,7 @@ class VolumeDetailForTag:
 
     @property
     def replication_status(self):
-        """Gets the replication_status of this VolumeDetailForTag.
+        r"""Gets the replication_status of this VolumeDetailForTag.
 
         预留属性。
 
@@ -688,7 +688,7 @@ class VolumeDetailForTag:
 
     @replication_status.setter
     def replication_status(self, replication_status):
-        """Sets the replication_status of this VolumeDetailForTag.
+        r"""Sets the replication_status of this VolumeDetailForTag.
 
         预留属性。
 
@@ -699,7 +699,7 @@ class VolumeDetailForTag:
 
     @property
     def os_volume_replicationextended_status(self):
-        """Gets the os_volume_replicationextended_status of this VolumeDetailForTag.
+        r"""Gets the os_volume_replicationextended_status of this VolumeDetailForTag.
 
         预留属性。
 
@@ -710,7 +710,7 @@ class VolumeDetailForTag:
 
     @os_volume_replicationextended_status.setter
     def os_volume_replicationextended_status(self, os_volume_replicationextended_status):
-        """Sets the os_volume_replicationextended_status of this VolumeDetailForTag.
+        r"""Sets the os_volume_replicationextended_status of this VolumeDetailForTag.
 
         预留属性。
 
@@ -721,7 +721,7 @@ class VolumeDetailForTag:
 
     @property
     def os_vol_mig_status_attrmigstat(self):
-        """Gets the os_vol_mig_status_attrmigstat of this VolumeDetailForTag.
+        r"""Gets the os_vol_mig_status_attrmigstat of this VolumeDetailForTag.
 
         预留属性。
 
@@ -732,7 +732,7 @@ class VolumeDetailForTag:
 
     @os_vol_mig_status_attrmigstat.setter
     def os_vol_mig_status_attrmigstat(self, os_vol_mig_status_attrmigstat):
-        """Sets the os_vol_mig_status_attrmigstat of this VolumeDetailForTag.
+        r"""Sets the os_vol_mig_status_attrmigstat of this VolumeDetailForTag.
 
         预留属性。
 
@@ -743,7 +743,7 @@ class VolumeDetailForTag:
 
     @property
     def os_vol_mig_status_attrname_id(self):
-        """Gets the os_vol_mig_status_attrname_id of this VolumeDetailForTag.
+        r"""Gets the os_vol_mig_status_attrname_id of this VolumeDetailForTag.
 
         预留属性。
 
@@ -754,7 +754,7 @@ class VolumeDetailForTag:
 
     @os_vol_mig_status_attrname_id.setter
     def os_vol_mig_status_attrname_id(self, os_vol_mig_status_attrname_id):
-        """Sets the os_vol_mig_status_attrname_id of this VolumeDetailForTag.
+        r"""Sets the os_vol_mig_status_attrname_id of this VolumeDetailForTag.
 
         预留属性。
 
@@ -765,7 +765,7 @@ class VolumeDetailForTag:
 
     @property
     def shareable(self):
-        """Gets the shareable of this VolumeDetailForTag.
+        r"""Gets the shareable of this VolumeDetailForTag.
 
         是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
 
@@ -776,7 +776,7 @@ class VolumeDetailForTag:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this VolumeDetailForTag.
+        r"""Sets the shareable of this VolumeDetailForTag.
 
         是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
 
@@ -787,7 +787,7 @@ class VolumeDetailForTag:
 
     @property
     def user_id(self):
-        """Gets the user_id of this VolumeDetailForTag.
+        r"""Gets the user_id of this VolumeDetailForTag.
 
         预留属性。
 
@@ -798,7 +798,7 @@ class VolumeDetailForTag:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this VolumeDetailForTag.
+        r"""Sets the user_id of this VolumeDetailForTag.
 
         预留属性。
 
@@ -809,7 +809,7 @@ class VolumeDetailForTag:
 
     @property
     def service_type(self):
-        """Gets the service_type of this VolumeDetailForTag.
+        r"""Gets the service_type of this VolumeDetailForTag.
 
         服务类型，结果为EVS、DSS、DESS。
 
@@ -820,7 +820,7 @@ class VolumeDetailForTag:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this VolumeDetailForTag.
+        r"""Sets the service_type of this VolumeDetailForTag.
 
         服务类型，结果为EVS、DSS、DESS。
 
@@ -831,7 +831,7 @@ class VolumeDetailForTag:
 
     @property
     def multiattach(self):
-        """Gets the multiattach of this VolumeDetailForTag.
+        r"""Gets the multiattach of this VolumeDetailForTag.
 
         是否为共享云硬盘。
 
@@ -842,7 +842,7 @@ class VolumeDetailForTag:
 
     @multiattach.setter
     def multiattach(self, multiattach):
-        """Sets the multiattach of this VolumeDetailForTag.
+        r"""Sets the multiattach of this VolumeDetailForTag.
 
         是否为共享云硬盘。
 
@@ -853,7 +853,7 @@ class VolumeDetailForTag:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this VolumeDetailForTag.
+        r"""Gets the dedicated_storage_id of this VolumeDetailForTag.
 
         云硬盘所属的专属存储池ID。
 
@@ -864,7 +864,7 @@ class VolumeDetailForTag:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this VolumeDetailForTag.
+        r"""Sets the dedicated_storage_id of this VolumeDetailForTag.
 
         云硬盘所属的专属存储池ID。
 
@@ -875,7 +875,7 @@ class VolumeDetailForTag:
 
     @property
     def dedicated_storage_name(self):
-        """Gets the dedicated_storage_name of this VolumeDetailForTag.
+        r"""Gets the dedicated_storage_name of this VolumeDetailForTag.
 
         云硬盘所属的专属存储池的名称。
 
@@ -886,7 +886,7 @@ class VolumeDetailForTag:
 
     @dedicated_storage_name.setter
     def dedicated_storage_name(self, dedicated_storage_name):
-        """Sets the dedicated_storage_name of this VolumeDetailForTag.
+        r"""Sets the dedicated_storage_name of this VolumeDetailForTag.
 
         云硬盘所属的专属存储池的名称。
 
@@ -897,7 +897,7 @@ class VolumeDetailForTag:
 
     @property
     def tags(self):
-        """Gets the tags of this VolumeDetailForTag.
+        r"""Gets the tags of this VolumeDetailForTag.
 
         云硬盘的标签。 如果云硬盘有标签，则会有该字段，否则该字段为空。
 
@@ -908,7 +908,7 @@ class VolumeDetailForTag:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VolumeDetailForTag.
+        r"""Sets the tags of this VolumeDetailForTag.
 
         云硬盘的标签。 如果云硬盘有标签，则会有该字段，否则该字段为空。
 
@@ -919,7 +919,7 @@ class VolumeDetailForTag:
 
     @property
     def wwn(self):
-        """Gets the wwn of this VolumeDetailForTag.
+        r"""Gets the wwn of this VolumeDetailForTag.
 
         云硬盘挂载时的唯一标识。
 
@@ -930,7 +930,7 @@ class VolumeDetailForTag:
 
     @wwn.setter
     def wwn(self, wwn):
-        """Sets the wwn of this VolumeDetailForTag.
+        r"""Sets the wwn of this VolumeDetailForTag.
 
         云硬盘挂载时的唯一标识。
 
@@ -941,7 +941,7 @@ class VolumeDetailForTag:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this VolumeDetailForTag.
+        r"""Gets the enterprise_project_id of this VolumeDetailForTag.
 
         云硬盘上绑定的企业项目ID。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
@@ -952,7 +952,7 @@ class VolumeDetailForTag:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this VolumeDetailForTag.
+        r"""Sets the enterprise_project_id of this VolumeDetailForTag.
 
         云硬盘上绑定的企业项目ID。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 

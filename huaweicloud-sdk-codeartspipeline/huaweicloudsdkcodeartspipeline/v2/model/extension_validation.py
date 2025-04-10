@@ -33,7 +33,7 @@ class ExtensionValidation:
     }
 
     def __init__(self, required_message=None, regex=None, regex_message=None, max_length=None, min_length=None):
-        """ExtensionValidation
+        r"""ExtensionValidation
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExtensionValidation:
 
     @property
     def required_message(self):
-        """Gets the required_message of this ExtensionValidation.
+        r"""Gets the required_message of this ExtensionValidation.
 
         消息
 
@@ -82,7 +82,7 @@ class ExtensionValidation:
 
     @required_message.setter
     def required_message(self, required_message):
-        """Sets the required_message of this ExtensionValidation.
+        r"""Sets the required_message of this ExtensionValidation.
 
         消息
 
@@ -93,7 +93,7 @@ class ExtensionValidation:
 
     @property
     def regex(self):
-        """Gets the regex of this ExtensionValidation.
+        r"""Gets the regex of this ExtensionValidation.
 
         正则
 
@@ -104,7 +104,7 @@ class ExtensionValidation:
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this ExtensionValidation.
+        r"""Sets the regex of this ExtensionValidation.
 
         正则
 
@@ -115,7 +115,7 @@ class ExtensionValidation:
 
     @property
     def regex_message(self):
-        """Gets the regex_message of this ExtensionValidation.
+        r"""Gets the regex_message of this ExtensionValidation.
 
         正则消息
 
@@ -126,7 +126,7 @@ class ExtensionValidation:
 
     @regex_message.setter
     def regex_message(self, regex_message):
-        """Sets the regex_message of this ExtensionValidation.
+        r"""Sets the regex_message of this ExtensionValidation.
 
         正则消息
 
@@ -137,7 +137,7 @@ class ExtensionValidation:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ExtensionValidation.
+        r"""Gets the max_length of this ExtensionValidation.
 
         最大长度
 
@@ -148,7 +148,7 @@ class ExtensionValidation:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ExtensionValidation.
+        r"""Sets the max_length of this ExtensionValidation.
 
         最大长度
 
@@ -159,7 +159,7 @@ class ExtensionValidation:
 
     @property
     def min_length(self):
-        """Gets the min_length of this ExtensionValidation.
+        r"""Gets the min_length of this ExtensionValidation.
 
         最小长度
 
@@ -170,7 +170,7 @@ class ExtensionValidation:
 
     @min_length.setter
     def min_length(self, min_length):
-        """Sets the min_length of this ExtensionValidation.
+        r"""Sets the min_length of this ExtensionValidation.
 
         最小长度
 

@@ -31,7 +31,7 @@ class DeleteResJobRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, job_id=None):
-        """DeleteResJobRequest
+        r"""DeleteResJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeleteResJobRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteResJobRequest.
+        r"""Gets the content_type of this DeleteResJobRequest.
 
         内容类型，取值为application/json
 
@@ -71,7 +71,7 @@ class DeleteResJobRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteResJobRequest.
+        r"""Sets the content_type of this DeleteResJobRequest.
 
         内容类型，取值为application/json
 
@@ -82,7 +82,7 @@ class DeleteResJobRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteResJobRequest.
+        r"""Gets the workspace_id of this DeleteResJobRequest.
 
         工作空间id
 
@@ -93,7 +93,7 @@ class DeleteResJobRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteResJobRequest.
+        r"""Sets the workspace_id of this DeleteResJobRequest.
 
         工作空间id
 
@@ -104,7 +104,7 @@ class DeleteResJobRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResJobRequest.
+        r"""Gets the resource_id of this DeleteResJobRequest.
 
         资源id（数据源id或场景id）
 
@@ -115,7 +115,7 @@ class DeleteResJobRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResJobRequest.
+        r"""Sets the resource_id of this DeleteResJobRequest.
 
         资源id（数据源id或场景id）
 
@@ -126,7 +126,7 @@ class DeleteResJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteResJobRequest.
+        r"""Gets the job_id of this DeleteResJobRequest.
 
         作业id
 
@@ -137,7 +137,7 @@ class DeleteResJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteResJobRequest.
+        r"""Sets the job_id of this DeleteResJobRequest.
 
         作业id
 

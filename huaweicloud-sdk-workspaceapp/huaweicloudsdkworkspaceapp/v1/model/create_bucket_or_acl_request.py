@@ -23,7 +23,7 @@ class CreateBucketOrAclRequest:
     }
 
     def __init__(self):
-        """CreateBucketOrAclRequest
+        r"""CreateBucketOrAclRequest
 
         The model defined in huaweicloud sdk
 

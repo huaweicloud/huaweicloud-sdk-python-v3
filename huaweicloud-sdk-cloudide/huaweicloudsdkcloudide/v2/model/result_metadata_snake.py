@@ -27,7 +27,7 @@ class ResultMetadataSnake:
     }
 
     def __init__(self, metadata_type=None, metadata_items=None):
-        """ResultMetadataSnake
+        r"""ResultMetadataSnake
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResultMetadataSnake:
 
     @property
     def metadata_type(self):
-        """Gets the metadata_type of this ResultMetadataSnake.
+        r"""Gets the metadata_type of this ResultMetadataSnake.
 
         元数据类型
 
@@ -61,7 +61,7 @@ class ResultMetadataSnake:
 
     @metadata_type.setter
     def metadata_type(self, metadata_type):
-        """Sets the metadata_type of this ResultMetadataSnake.
+        r"""Sets the metadata_type of this ResultMetadataSnake.
 
         元数据类型
 
@@ -72,7 +72,7 @@ class ResultMetadataSnake:
 
     @property
     def metadata_items(self):
-        """Gets the metadata_items of this ResultMetadataSnake.
+        r"""Gets the metadata_items of this ResultMetadataSnake.
 
         元数据列表
 
@@ -83,7 +83,7 @@ class ResultMetadataSnake:
 
     @metadata_items.setter
     def metadata_items(self, metadata_items):
-        """Sets the metadata_items of this ResultMetadataSnake.
+        r"""Sets the metadata_items of this ResultMetadataSnake.
 
         元数据列表
 

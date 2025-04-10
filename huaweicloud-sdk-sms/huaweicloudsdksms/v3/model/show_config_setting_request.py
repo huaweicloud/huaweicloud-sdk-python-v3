@@ -27,7 +27,7 @@ class ShowConfigSettingRequest:
     }
 
     def __init__(self, task_id=None, config_key=None):
-        """ShowConfigSettingRequest
+        r"""ShowConfigSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowConfigSettingRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowConfigSettingRequest.
+        r"""Gets the task_id of this ShowConfigSettingRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class ShowConfigSettingRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowConfigSettingRequest.
+        r"""Sets the task_id of this ShowConfigSettingRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class ShowConfigSettingRequest:
 
     @property
     def config_key(self):
-        """Gets the config_key of this ShowConfigSettingRequest.
+        r"""Gets the config_key of this ShowConfigSettingRequest.
 
         具体请求配置项
 
@@ -82,7 +82,7 @@ class ShowConfigSettingRequest:
 
     @config_key.setter
     def config_key(self, config_key):
-        """Sets the config_key of this ShowConfigSettingRequest.
+        r"""Sets the config_key of this ShowConfigSettingRequest.
 
         具体请求配置项
 

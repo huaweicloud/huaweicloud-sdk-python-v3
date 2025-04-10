@@ -32,7 +32,7 @@ class ShowDliAgencyResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, version=None, current_roles=None):
-        """ShowDliAgencyResponse
+        r"""ShowDliAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowDliAgencyResponse.
+        r"""Gets the is_success of this ShowDliAgencyResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowDliAgencyResponse.
+        r"""Sets the is_success of this ShowDliAgencyResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowDliAgencyResponse.
+        r"""Gets the message of this ShowDliAgencyResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowDliAgencyResponse.
+        r"""Sets the message of this ShowDliAgencyResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowDliAgencyResponse.
+        r"""Gets the version of this ShowDliAgencyResponse.
 
         版本号
 
@@ -120,7 +120,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowDliAgencyResponse.
+        r"""Sets the version of this ShowDliAgencyResponse.
 
         版本号
 
@@ -131,7 +131,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @property
     def current_roles(self):
-        """Gets the current_roles of this ShowDliAgencyResponse.
+        r"""Gets the current_roles of this ShowDliAgencyResponse.
 
         当前已有委托
 
@@ -142,7 +142,7 @@ class ShowDliAgencyResponse(SdkResponse):
 
     @current_roles.setter
     def current_roles(self, current_roles):
-        """Sets the current_roles of this ShowDliAgencyResponse.
+        r"""Sets the current_roles of this ShowDliAgencyResponse.
 
         当前已有委托
 

@@ -31,7 +31,7 @@ class UpdateResSceneRequest:
     }
 
     def __init__(self, content_type=None, scene_id=None, workspace_id=None, body=None):
-        """UpdateResSceneRequest
+        r"""UpdateResSceneRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateResSceneRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateResSceneRequest.
+        r"""Gets the content_type of this UpdateResSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -72,7 +72,7 @@ class UpdateResSceneRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateResSceneRequest.
+        r"""Sets the content_type of this UpdateResSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -83,7 +83,7 @@ class UpdateResSceneRequest:
 
     @property
     def scene_id(self):
-        """Gets the scene_id of this UpdateResSceneRequest.
+        r"""Gets the scene_id of this UpdateResSceneRequest.
 
         场景id。
 
@@ -94,7 +94,7 @@ class UpdateResSceneRequest:
 
     @scene_id.setter
     def scene_id(self, scene_id):
-        """Sets the scene_id of this UpdateResSceneRequest.
+        r"""Sets the scene_id of this UpdateResSceneRequest.
 
         场景id。
 
@@ -105,7 +105,7 @@ class UpdateResSceneRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateResSceneRequest.
+        r"""Gets the workspace_id of this UpdateResSceneRequest.
 
         工作空间id。
 
@@ -116,7 +116,7 @@ class UpdateResSceneRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateResSceneRequest.
+        r"""Sets the workspace_id of this UpdateResSceneRequest.
 
         工作空间id。
 
@@ -127,7 +127,7 @@ class UpdateResSceneRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResSceneRequest.
+        r"""Gets the body of this UpdateResSceneRequest.
 
         :return: The body of this UpdateResSceneRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`
@@ -136,7 +136,7 @@ class UpdateResSceneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResSceneRequest.
+        r"""Sets the body of this UpdateResSceneRequest.
 
         :param body: The body of this UpdateResSceneRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`

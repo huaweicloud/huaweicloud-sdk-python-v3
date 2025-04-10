@@ -69,7 +69,7 @@ class MysqlInstanceRequest:
     }
 
     def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None, restore_point=None, tde_info=None):
-        """MysqlInstanceRequest
+        r"""MysqlInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -185,7 +185,7 @@ class MysqlInstanceRequest:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this MysqlInstanceRequest.
+        r"""Gets the charge_info of this MysqlInstanceRequest.
 
         :return: The charge_info of this MysqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
@@ -194,7 +194,7 @@ class MysqlInstanceRequest:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this MysqlInstanceRequest.
+        r"""Sets the charge_info of this MysqlInstanceRequest.
 
         :param charge_info: The charge_info of this MysqlInstanceRequest.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
@@ -203,7 +203,7 @@ class MysqlInstanceRequest:
 
     @property
     def region(self):
-        """Gets the region of this MysqlInstanceRequest.
+        r"""Gets the region of this MysqlInstanceRequest.
 
         区域ID。
 
@@ -214,7 +214,7 @@ class MysqlInstanceRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MysqlInstanceRequest.
+        r"""Sets the region of this MysqlInstanceRequest.
 
         区域ID。
 
@@ -225,7 +225,7 @@ class MysqlInstanceRequest:
 
     @property
     def name(self):
-        """Gets the name of this MysqlInstanceRequest.
+        r"""Gets the name of this MysqlInstanceRequest.
 
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -236,7 +236,7 @@ class MysqlInstanceRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlInstanceRequest.
+        r"""Sets the name of this MysqlInstanceRequest.
 
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -247,7 +247,7 @@ class MysqlInstanceRequest:
 
     @property
     def datastore(self):
-        """Gets the datastore of this MysqlInstanceRequest.
+        r"""Gets the datastore of this MysqlInstanceRequest.
 
         :return: The datastore of this MysqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInReq`
@@ -256,7 +256,7 @@ class MysqlInstanceRequest:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this MysqlInstanceRequest.
+        r"""Sets the datastore of this MysqlInstanceRequest.
 
         :param datastore: The datastore of this MysqlInstanceRequest.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInReq`
@@ -265,7 +265,7 @@ class MysqlInstanceRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this MysqlInstanceRequest.
+        r"""Gets the mode of this MysqlInstanceRequest.
 
         实例类型，目前仅支持Cluster。
 
@@ -276,7 +276,7 @@ class MysqlInstanceRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this MysqlInstanceRequest.
+        r"""Sets the mode of this MysqlInstanceRequest.
 
         实例类型，目前仅支持Cluster。
 
@@ -287,7 +287,7 @@ class MysqlInstanceRequest:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this MysqlInstanceRequest.
+        r"""Gets the flavor_ref of this MysqlInstanceRequest.
 
         规格码。
 
@@ -298,7 +298,7 @@ class MysqlInstanceRequest:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this MysqlInstanceRequest.
+        r"""Sets the flavor_ref of this MysqlInstanceRequest.
 
         规格码。
 
@@ -309,7 +309,7 @@ class MysqlInstanceRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this MysqlInstanceRequest.
+        r"""Gets the vpc_id of this MysqlInstanceRequest.
 
         虚拟私有云ID。
 
@@ -320,7 +320,7 @@ class MysqlInstanceRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this MysqlInstanceRequest.
+        r"""Sets the vpc_id of this MysqlInstanceRequest.
 
         虚拟私有云ID。
 
@@ -331,7 +331,7 @@ class MysqlInstanceRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this MysqlInstanceRequest.
+        r"""Gets the subnet_id of this MysqlInstanceRequest.
 
         子网的网络ID。
 
@@ -342,7 +342,7 @@ class MysqlInstanceRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this MysqlInstanceRequest.
+        r"""Sets the subnet_id of this MysqlInstanceRequest.
 
         子网的网络ID。
 
@@ -353,7 +353,7 @@ class MysqlInstanceRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this MysqlInstanceRequest.
+        r"""Gets the security_group_id of this MysqlInstanceRequest.
 
         安全组ID。如果实例所选用的子网开启网络ACL进行访问控制，则该参数非必选。如果未开启ACL进行访问控制，则该参数必选。
 
@@ -364,7 +364,7 @@ class MysqlInstanceRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this MysqlInstanceRequest.
+        r"""Sets the security_group_id of this MysqlInstanceRequest.
 
         安全组ID。如果实例所选用的子网开启网络ACL进行访问控制，则该参数非必选。如果未开启ACL进行访问控制，则该参数必选。
 
@@ -375,7 +375,7 @@ class MysqlInstanceRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this MysqlInstanceRequest.
+        r"""Gets the configuration_id of this MysqlInstanceRequest.
 
         参数模板ID。
 
@@ -386,7 +386,7 @@ class MysqlInstanceRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this MysqlInstanceRequest.
+        r"""Sets the configuration_id of this MysqlInstanceRequest.
 
         参数模板ID。
 
@@ -397,7 +397,7 @@ class MysqlInstanceRequest:
 
     @property
     def password(self):
-        """Gets the password of this MysqlInstanceRequest.
+        r"""Gets the password of this MysqlInstanceRequest.
 
         数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
@@ -408,7 +408,7 @@ class MysqlInstanceRequest:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this MysqlInstanceRequest.
+        r"""Sets the password of this MysqlInstanceRequest.
 
         数据库密码。  取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
@@ -419,7 +419,7 @@ class MysqlInstanceRequest:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this MysqlInstanceRequest.
+        r"""Gets the backup_strategy of this MysqlInstanceRequest.
 
         :return: The backup_strategy of this MysqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -428,7 +428,7 @@ class MysqlInstanceRequest:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this MysqlInstanceRequest.
+        r"""Sets the backup_strategy of this MysqlInstanceRequest.
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceRequest.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -437,7 +437,7 @@ class MysqlInstanceRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this MysqlInstanceRequest.
+        r"""Gets the time_zone of this MysqlInstanceRequest.
 
         时区。默认时区为UTC。
 
@@ -448,7 +448,7 @@ class MysqlInstanceRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this MysqlInstanceRequest.
+        r"""Sets the time_zone of this MysqlInstanceRequest.
 
         时区。默认时区为UTC。
 
@@ -459,7 +459,7 @@ class MysqlInstanceRequest:
 
     @property
     def availability_zone_mode(self):
-        """Gets the availability_zone_mode of this MysqlInstanceRequest.
+        r"""Gets the availability_zone_mode of this MysqlInstanceRequest.
 
         可用区类型,单可用区single或多可用区multi。
 
@@ -470,7 +470,7 @@ class MysqlInstanceRequest:
 
     @availability_zone_mode.setter
     def availability_zone_mode(self, availability_zone_mode):
-        """Sets the availability_zone_mode of this MysqlInstanceRequest.
+        r"""Sets the availability_zone_mode of this MysqlInstanceRequest.
 
         可用区类型,单可用区single或多可用区multi。
 
@@ -481,7 +481,7 @@ class MysqlInstanceRequest:
 
     @property
     def master_availability_zone(self):
-        """Gets the master_availability_zone of this MysqlInstanceRequest.
+        r"""Gets the master_availability_zone of this MysqlInstanceRequest.
 
         主可用区。
 
@@ -492,7 +492,7 @@ class MysqlInstanceRequest:
 
     @master_availability_zone.setter
     def master_availability_zone(self, master_availability_zone):
-        """Sets the master_availability_zone of this MysqlInstanceRequest.
+        r"""Sets the master_availability_zone of this MysqlInstanceRequest.
 
         主可用区。
 
@@ -503,7 +503,7 @@ class MysqlInstanceRequest:
 
     @property
     def slave_count(self):
-        """Gets the slave_count of this MysqlInstanceRequest.
+        r"""Gets the slave_count of this MysqlInstanceRequest.
 
         只读节点个数。单次接口调用最多支持创建9个只读节点。
 
@@ -514,7 +514,7 @@ class MysqlInstanceRequest:
 
     @slave_count.setter
     def slave_count(self, slave_count):
-        """Sets the slave_count of this MysqlInstanceRequest.
+        r"""Sets the slave_count of this MysqlInstanceRequest.
 
         只读节点个数。单次接口调用最多支持创建9个只读节点。
 
@@ -525,7 +525,7 @@ class MysqlInstanceRequest:
 
     @property
     def volume(self):
-        """Gets the volume of this MysqlInstanceRequest.
+        r"""Gets the volume of this MysqlInstanceRequest.
 
         :return: The volume of this MysqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
@@ -534,7 +534,7 @@ class MysqlInstanceRequest:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this MysqlInstanceRequest.
+        r"""Sets the volume of this MysqlInstanceRequest.
 
         :param volume: The volume of this MysqlInstanceRequest.
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
@@ -543,7 +543,7 @@ class MysqlInstanceRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this MysqlInstanceRequest.
+        r"""Gets the tags of this MysqlInstanceRequest.
 
         :return: The tags of this MysqlInstanceRequest.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
@@ -552,7 +552,7 @@ class MysqlInstanceRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this MysqlInstanceRequest.
+        r"""Sets the tags of this MysqlInstanceRequest.
 
         :param tags: The tags of this MysqlInstanceRequest.
         :type tags: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
@@ -561,7 +561,7 @@ class MysqlInstanceRequest:
 
     @property
     def lower_case_table_names(self):
-        """Gets the lower_case_table_names of this MysqlInstanceRequest.
+        r"""Gets the lower_case_table_names of this MysqlInstanceRequest.
 
         表名大小写是否敏感，默认值是“1”。  取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
 
@@ -572,7 +572,7 @@ class MysqlInstanceRequest:
 
     @lower_case_table_names.setter
     def lower_case_table_names(self, lower_case_table_names):
-        """Sets the lower_case_table_names of this MysqlInstanceRequest.
+        r"""Sets the lower_case_table_names of this MysqlInstanceRequest.
 
         表名大小写是否敏感，默认值是“1”。  取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
 
@@ -583,7 +583,7 @@ class MysqlInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MysqlInstanceRequest.
+        r"""Gets the enterprise_project_id of this MysqlInstanceRequest.
 
         企业项目ID。如果账户开通企业项目服务则该参数必选，未开启该参数不可选。
 
@@ -594,7 +594,7 @@ class MysqlInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MysqlInstanceRequest.
+        r"""Sets the enterprise_project_id of this MysqlInstanceRequest.
 
         企业项目ID。如果账户开通企业项目服务则该参数必选，未开启该参数不可选。
 
@@ -605,7 +605,7 @@ class MysqlInstanceRequest:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this MysqlInstanceRequest.
+        r"""Gets the dedicated_resource_id of this MysqlInstanceRequest.
 
         专属资源池ID，只有开通专属资源池后才可以下发此参数。
 
@@ -616,7 +616,7 @@ class MysqlInstanceRequest:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this MysqlInstanceRequest.
+        r"""Sets the dedicated_resource_id of this MysqlInstanceRequest.
 
         专属资源池ID，只有开通专属资源池后才可以下发此参数。
 
@@ -627,7 +627,7 @@ class MysqlInstanceRequest:
 
     @property
     def restore_point(self):
-        """Gets the restore_point of this MysqlInstanceRequest.
+        r"""Gets the restore_point of this MysqlInstanceRequest.
 
         :return: The restore_point of this MysqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
@@ -636,7 +636,7 @@ class MysqlInstanceRequest:
 
     @restore_point.setter
     def restore_point(self, restore_point):
-        """Sets the restore_point of this MysqlInstanceRequest.
+        r"""Sets the restore_point of this MysqlInstanceRequest.
 
         :param restore_point: The restore_point of this MysqlInstanceRequest.
         :type restore_point: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
@@ -645,7 +645,7 @@ class MysqlInstanceRequest:
 
     @property
     def tde_info(self):
-        """Gets the tde_info of this MysqlInstanceRequest.
+        r"""Gets the tde_info of this MysqlInstanceRequest.
 
         :return: The tde_info of this MysqlInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
@@ -654,7 +654,7 @@ class MysqlInstanceRequest:
 
     @tde_info.setter
     def tde_info(self, tde_info):
-        """Sets the tde_info of this MysqlInstanceRequest.
+        r"""Sets the tde_info of this MysqlInstanceRequest.
 
         :param tde_info: The tde_info of this MysqlInstanceRequest.
         :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`

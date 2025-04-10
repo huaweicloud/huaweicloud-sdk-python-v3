@@ -51,7 +51,7 @@ class CreateInstanceOption:
     }
 
     def __init__(self, name=None, with_prefix=None, image_ref=None, flavor_ref=None, admin_pass=None, key_name=None, net_config=None, bandwidth=None, root_volume=None, data_volumes=None, count=None, security_groups=None, coverage=None, user_data=None):
-        """CreateInstanceOption
+        r"""CreateInstanceOption
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class CreateInstanceOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceOption.
+        r"""Gets the name of this CreateInstanceOption.
 
         边缘资源名称，与边缘实例一一对应。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-48]个字符。
 
@@ -138,7 +138,7 @@ class CreateInstanceOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceOption.
+        r"""Sets the name of this CreateInstanceOption.
 
         边缘资源名称，与边缘实例一一对应。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-48]个字符。
 
@@ -149,7 +149,7 @@ class CreateInstanceOption:
 
     @property
     def with_prefix(self):
-        """Gets the with_prefix of this CreateInstanceOption.
+        r"""Gets the with_prefix of this CreateInstanceOption.
 
         是否自动添加前缀。 - with_prefix为false时不拼接IEC前缀 - with_prefix不传或者传true时拼自动IEC前缀  以name为iec为例： 不添加前缀时实例名称为：iec 自动添加前缀实例名称为：IEC-ZS01-iec
 
@@ -160,7 +160,7 @@ class CreateInstanceOption:
 
     @with_prefix.setter
     def with_prefix(self, with_prefix):
-        """Sets the with_prefix of this CreateInstanceOption.
+        r"""Sets the with_prefix of this CreateInstanceOption.
 
         是否自动添加前缀。 - with_prefix为false时不拼接IEC前缀 - with_prefix不传或者传true时拼自动IEC前缀  以name为iec为例： 不添加前缀时实例名称为：iec 自动添加前缀实例名称为：IEC-ZS01-iec
 
@@ -171,7 +171,7 @@ class CreateInstanceOption:
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this CreateInstanceOption.
+        r"""Gets the image_ref of this CreateInstanceOption.
 
         边缘实例的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。 镜像的ID可以从控制台或者参考本文档的“查询边镜像列表”的章节获取。
 
@@ -182,7 +182,7 @@ class CreateInstanceOption:
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this CreateInstanceOption.
+        r"""Sets the image_ref of this CreateInstanceOption.
 
         边缘实例的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。 镜像的ID可以从控制台或者参考本文档的“查询边镜像列表”的章节获取。
 
@@ -193,7 +193,7 @@ class CreateInstanceOption:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateInstanceOption.
+        r"""Gets the flavor_ref of this CreateInstanceOption.
 
         边缘实例的系统规格的ID。 已上线的规格请使用接口 “查询边缘实例规格列表“ 进行查询。
 
@@ -204,7 +204,7 @@ class CreateInstanceOption:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateInstanceOption.
+        r"""Sets the flavor_ref of this CreateInstanceOption.
 
         边缘实例的系统规格的ID。 已上线的规格请使用接口 “查询边缘实例规格列表“ 进行查询。
 
@@ -215,7 +215,7 @@ class CreateInstanceOption:
 
     @property
     def admin_pass(self):
-        """Gets the admin_pass of this CreateInstanceOption.
+        r"""Gets the admin_pass of this CreateInstanceOption.
 
         如果需要使用密码方式登录边缘实例，可使用adminPass字段指定边缘实例管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。 密码复杂度要求： 1. 长度为8-26位。 2. 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。 3. 密码不能包含用户名或用户名的逆序。 4. Windows系统密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。 说明 目前边缘实例不支持创建后设置密码，不设置此参数会导致实例创建后无法登录。
 
@@ -226,7 +226,7 @@ class CreateInstanceOption:
 
     @admin_pass.setter
     def admin_pass(self, admin_pass):
-        """Sets the admin_pass of this CreateInstanceOption.
+        r"""Sets the admin_pass of this CreateInstanceOption.
 
         如果需要使用密码方式登录边缘实例，可使用adminPass字段指定边缘实例管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。 密码复杂度要求： 1. 长度为8-26位。 2. 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。 3. 密码不能包含用户名或用户名的逆序。 4. Windows系统密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。 说明 目前边缘实例不支持创建后设置密码，不设置此参数会导致实例创建后无法登录。
 
@@ -237,7 +237,7 @@ class CreateInstanceOption:
 
     @property
     def key_name(self):
-        """Gets the key_name of this CreateInstanceOption.
+        r"""Gets the key_name of this CreateInstanceOption.
 
         密钥对名称。
 
@@ -248,7 +248,7 @@ class CreateInstanceOption:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this CreateInstanceOption.
+        r"""Sets the key_name of this CreateInstanceOption.
 
         密钥对名称。
 
@@ -259,7 +259,7 @@ class CreateInstanceOption:
 
     @property
     def net_config(self):
-        """Gets the net_config of this CreateInstanceOption.
+        r"""Gets the net_config of this CreateInstanceOption.
 
         :return: The net_config of this CreateInstanceOption.
         :rtype: :class:`huaweicloudsdkiec.v1.NetConfigInstance`
@@ -268,7 +268,7 @@ class CreateInstanceOption:
 
     @net_config.setter
     def net_config(self, net_config):
-        """Sets the net_config of this CreateInstanceOption.
+        r"""Sets the net_config of this CreateInstanceOption.
 
         :param net_config: The net_config of this CreateInstanceOption.
         :type net_config: :class:`huaweicloudsdkiec.v1.NetConfigInstance`
@@ -277,7 +277,7 @@ class CreateInstanceOption:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreateInstanceOption.
+        r"""Gets the bandwidth of this CreateInstanceOption.
 
         :return: The bandwidth of this CreateInstanceOption.
         :rtype: :class:`huaweicloudsdkiec.v1.BandwidthConfigInstance`
@@ -286,7 +286,7 @@ class CreateInstanceOption:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreateInstanceOption.
+        r"""Sets the bandwidth of this CreateInstanceOption.
 
         :param bandwidth: The bandwidth of this CreateInstanceOption.
         :type bandwidth: :class:`huaweicloudsdkiec.v1.BandwidthConfigInstance`
@@ -295,7 +295,7 @@ class CreateInstanceOption:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateInstanceOption.
+        r"""Gets the root_volume of this CreateInstanceOption.
 
         :return: The root_volume of this CreateInstanceOption.
         :rtype: :class:`huaweicloudsdkiec.v1.RootVolume`
@@ -304,7 +304,7 @@ class CreateInstanceOption:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateInstanceOption.
+        r"""Sets the root_volume of this CreateInstanceOption.
 
         :param root_volume: The root_volume of this CreateInstanceOption.
         :type root_volume: :class:`huaweicloudsdkiec.v1.RootVolume`
@@ -313,7 +313,7 @@ class CreateInstanceOption:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this CreateInstanceOption.
+        r"""Gets the data_volumes of this CreateInstanceOption.
 
         边缘实例对应数据盘相关配置。每一个数据结构代表一块待创建的数据盘。 约束：目前边缘实例最多可挂载2块数据盘
 
@@ -324,7 +324,7 @@ class CreateInstanceOption:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this CreateInstanceOption.
+        r"""Sets the data_volumes of this CreateInstanceOption.
 
         边缘实例对应数据盘相关配置。每一个数据结构代表一块待创建的数据盘。 约束：目前边缘实例最多可挂载2块数据盘
 
@@ -335,7 +335,7 @@ class CreateInstanceOption:
 
     @property
     def count(self):
-        """Gets the count of this CreateInstanceOption.
+        r"""Gets the count of this CreateInstanceOption.
 
         边缘实例数量。
 
@@ -346,7 +346,7 @@ class CreateInstanceOption:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateInstanceOption.
+        r"""Sets the count of this CreateInstanceOption.
 
         边缘实例数量。
 
@@ -357,7 +357,7 @@ class CreateInstanceOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateInstanceOption.
+        r"""Gets the security_groups of this CreateInstanceOption.
 
         边缘业务对应安全组信息。
 
@@ -368,7 +368,7 @@ class CreateInstanceOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateInstanceOption.
+        r"""Sets the security_groups of this CreateInstanceOption.
 
         边缘业务对应安全组信息。
 
@@ -379,7 +379,7 @@ class CreateInstanceOption:
 
     @property
     def coverage(self):
-        """Gets the coverage of this CreateInstanceOption.
+        r"""Gets the coverage of this CreateInstanceOption.
 
         :return: The coverage of this CreateInstanceOption.
         :rtype: :class:`huaweicloudsdkiec.v1.CoverageInstance`
@@ -388,7 +388,7 @@ class CreateInstanceOption:
 
     @coverage.setter
     def coverage(self, coverage):
-        """Sets the coverage of this CreateInstanceOption.
+        r"""Sets the coverage of this CreateInstanceOption.
 
         :param coverage: The coverage of this CreateInstanceOption.
         :type coverage: :class:`huaweicloudsdkiec.v1.CoverageInstance`
@@ -397,7 +397,7 @@ class CreateInstanceOption:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateInstanceOption.
+        r"""Gets the user_data of this CreateInstanceOption.
 
         创建边缘实例过程中注入用户数据。支持注入文本、文本文件或gzip文件。 更多关于待注入用户数据的信息，请参见《弹性云服务器用户指南 》的“[用户数据注入](https://support.huaweicloud.com/usermanual-ecs/zh-cn_topic_0032380449.html)”章节。    
 
@@ -408,7 +408,7 @@ class CreateInstanceOption:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateInstanceOption.
+        r"""Sets the user_data of this CreateInstanceOption.
 
         创建边缘实例过程中注入用户数据。支持注入文本、文本文件或gzip文件。 更多关于待注入用户数据的信息，请参见《弹性云服务器用户指南 》的“[用户数据注入](https://support.huaweicloud.com/usermanual-ecs/zh-cn_topic_0032380449.html)”章节。    
 

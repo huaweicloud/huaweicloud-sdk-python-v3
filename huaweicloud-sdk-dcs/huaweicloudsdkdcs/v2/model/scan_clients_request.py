@@ -27,7 +27,7 @@ class ScanClientsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ScanClientsRequest
+        r"""ScanClientsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ScanClientsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScanClientsRequest.
+        r"""Gets the instance_id of this ScanClientsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ScanClientsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScanClientsRequest.
+        r"""Sets the instance_id of this ScanClientsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ScanClientsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ScanClientsRequest.
+        r"""Gets the body of this ScanClientsRequest.
 
         :return: The body of this ScanClientsRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.ScanClientsRequestBody`
@@ -80,7 +80,7 @@ class ScanClientsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ScanClientsRequest.
+        r"""Sets the body of this ScanClientsRequest.
 
         :param body: The body of this ScanClientsRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.ScanClientsRequestBody`

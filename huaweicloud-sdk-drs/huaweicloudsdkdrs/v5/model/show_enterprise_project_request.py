@@ -33,7 +33,7 @@ class ShowEnterpriseProjectRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, name=None, domain_id=None):
-        """ShowEnterpriseProjectRequest
+        r"""ShowEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowEnterpriseProjectRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowEnterpriseProjectRequest.
+        r"""Gets the x_language of this ShowEnterpriseProjectRequest.
 
         请求语言类型。
 
@@ -82,7 +82,7 @@ class ShowEnterpriseProjectRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowEnterpriseProjectRequest.
+        r"""Sets the x_language of this ShowEnterpriseProjectRequest.
 
         请求语言类型。
 
@@ -93,7 +93,7 @@ class ShowEnterpriseProjectRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowEnterpriseProjectRequest.
+        r"""Gets the offset of this ShowEnterpriseProjectRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -104,7 +104,7 @@ class ShowEnterpriseProjectRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowEnterpriseProjectRequest.
+        r"""Sets the offset of this ShowEnterpriseProjectRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -115,7 +115,7 @@ class ShowEnterpriseProjectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowEnterpriseProjectRequest.
+        r"""Gets the limit of this ShowEnterpriseProjectRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -126,7 +126,7 @@ class ShowEnterpriseProjectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowEnterpriseProjectRequest.
+        r"""Sets the limit of this ShowEnterpriseProjectRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -137,7 +137,7 @@ class ShowEnterpriseProjectRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowEnterpriseProjectRequest.
+        r"""Gets the name of this ShowEnterpriseProjectRequest.
 
         企业项目名称，支持模糊搜索。
 
@@ -148,7 +148,7 @@ class ShowEnterpriseProjectRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEnterpriseProjectRequest.
+        r"""Sets the name of this ShowEnterpriseProjectRequest.
 
         企业项目名称，支持模糊搜索。
 
@@ -159,7 +159,7 @@ class ShowEnterpriseProjectRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowEnterpriseProjectRequest.
+        r"""Gets the domain_id of this ShowEnterpriseProjectRequest.
 
         IAM用户所属帐号ID。op_service权限必须携带此参数，非op_service权限可不携带此参数。
 
@@ -170,7 +170,7 @@ class ShowEnterpriseProjectRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowEnterpriseProjectRequest.
+        r"""Sets the domain_id of this ShowEnterpriseProjectRequest.
 
         IAM用户所属帐号ID。op_service权限必须携带此参数，非op_service权限可不携带此参数。
 

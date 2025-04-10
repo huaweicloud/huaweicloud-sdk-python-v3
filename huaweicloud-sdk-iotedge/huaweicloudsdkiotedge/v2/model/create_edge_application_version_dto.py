@@ -55,7 +55,7 @@ class CreateEdgeApplicationVersionDTO:
     }
 
     def __init__(self, version=None, description=None, sdk_version=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None, supplier=None, tpl_id=None):
-        """CreateEdgeApplicationVersionDTO
+        r"""CreateEdgeApplicationVersionDTO
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def version(self):
-        """Gets the version of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the version of this CreateEdgeApplicationVersionDTO.
 
         应用版本
 
@@ -156,7 +156,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the version of this CreateEdgeApplicationVersionDTO.
 
         应用版本
 
@@ -167,7 +167,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the description of this CreateEdgeApplicationVersionDTO.
 
         应用描述
 
@@ -178,7 +178,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the description of this CreateEdgeApplicationVersionDTO.
 
         应用描述
 
@@ -189,7 +189,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def sdk_version(self):
-        """Gets the sdk_version of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the sdk_version of this CreateEdgeApplicationVersionDTO.
 
         应用集成的边缘SDK版本
 
@@ -200,7 +200,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @sdk_version.setter
     def sdk_version(self, sdk_version):
-        """Sets the sdk_version of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the sdk_version of this CreateEdgeApplicationVersionDTO.
 
         应用集成的边缘SDK版本
 
@@ -211,7 +211,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the deploy_type of this CreateEdgeApplicationVersionDTO.
 
         应用部署类型，分为docker容器部署类型和process进程部署类型，兼容之前数据，此字段可以为空，为空情况为docker类型
 
@@ -222,7 +222,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the deploy_type of this CreateEdgeApplicationVersionDTO.
 
         应用部署类型，分为docker容器部署类型和process进程部署类型，兼容之前数据，此字段可以为空，为空情况为docker类型
 
@@ -233,7 +233,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def deploy_multi_instance(self):
-        """Gets the deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
 
         是否允许部署多实例
 
@@ -244,7 +244,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @deploy_multi_instance.setter
     def deploy_multi_instance(self, deploy_multi_instance):
-        """Sets the deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
 
         是否允许部署多实例
 
@@ -255,7 +255,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the container_settings of this CreateEdgeApplicationVersionDTO.
 
         :return: The container_settings of this CreateEdgeApplicationVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -264,7 +264,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the container_settings of this CreateEdgeApplicationVersionDTO.
 
         :param container_settings: The container_settings of this CreateEdgeApplicationVersionDTO.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -273,7 +273,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the liveness_probe of this CreateEdgeApplicationVersionDTO.
 
         :return: The liveness_probe of this CreateEdgeApplicationVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -282,7 +282,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the liveness_probe of this CreateEdgeApplicationVersionDTO.
 
         :param liveness_probe: The liveness_probe of this CreateEdgeApplicationVersionDTO.
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -291,7 +291,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the readiness_probe of this CreateEdgeApplicationVersionDTO.
 
         :return: The readiness_probe of this CreateEdgeApplicationVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -300,7 +300,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the readiness_probe of this CreateEdgeApplicationVersionDTO.
 
         :param readiness_probe: The readiness_probe of this CreateEdgeApplicationVersionDTO.
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -309,7 +309,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def arch(self):
-        """Gets the arch of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the arch of this CreateEdgeApplicationVersionDTO.
 
         架构
 
@@ -320,7 +320,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the arch of this CreateEdgeApplicationVersionDTO.
 
         架构
 
@@ -331,7 +331,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def command(self):
-        """Gets the command of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the command of this CreateEdgeApplicationVersionDTO.
 
         启动命令
 
@@ -342,7 +342,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the command of this CreateEdgeApplicationVersionDTO.
 
         启动命令
 
@@ -353,7 +353,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def args(self):
-        """Gets the args of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the args of this CreateEdgeApplicationVersionDTO.
 
         启动参数
 
@@ -364,7 +364,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the args of this CreateEdgeApplicationVersionDTO.
 
         启动参数
 
@@ -375,7 +375,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def outputs(self):
-        """Gets the outputs of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the outputs of this CreateEdgeApplicationVersionDTO.
 
         应用输出路由端点
 
@@ -386,7 +386,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the outputs of this CreateEdgeApplicationVersionDTO.
 
         应用输出路由端点
 
@@ -397,7 +397,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def inputs(self):
-        """Gets the inputs of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the inputs of this CreateEdgeApplicationVersionDTO.
 
         应用输入路由
 
@@ -408,7 +408,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the inputs of this CreateEdgeApplicationVersionDTO.
 
         应用输入路由
 
@@ -419,7 +419,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def services(self):
-        """Gets the services of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the services of this CreateEdgeApplicationVersionDTO.
 
         应用实现的服务列表
 
@@ -430,7 +430,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @services.setter
     def services(self, services):
-        """Sets the services of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the services of this CreateEdgeApplicationVersionDTO.
 
         应用实现的服务列表
 
@@ -441,7 +441,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def supplier(self):
-        """Gets the supplier of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the supplier of this CreateEdgeApplicationVersionDTO.
 
         驱动厂商
 
@@ -452,7 +452,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @supplier.setter
     def supplier(self, supplier):
-        """Sets the supplier of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the supplier of this CreateEdgeApplicationVersionDTO.
 
         驱动厂商
 
@@ -463,7 +463,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the tpl_id of this CreateEdgeApplicationVersionDTO.
 
         模板id
 
@@ -474,7 +474,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the tpl_id of this CreateEdgeApplicationVersionDTO.
 
         模板id
 

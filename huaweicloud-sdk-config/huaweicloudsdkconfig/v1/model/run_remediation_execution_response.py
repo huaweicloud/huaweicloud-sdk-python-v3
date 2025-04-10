@@ -24,7 +24,7 @@ class RunRemediationExecutionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RunRemediationExecutionResponse
+        r"""RunRemediationExecutionResponse
 
         The model defined in huaweicloud sdk
 

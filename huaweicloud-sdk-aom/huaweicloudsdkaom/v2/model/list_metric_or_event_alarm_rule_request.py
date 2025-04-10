@@ -47,7 +47,7 @@ class ListMetricOrEventAlarmRuleRequest:
     }
 
     def __init__(self, name=None, limit=None, offset=None, sort_by=None, event_source=None, event_severity=None, alarm_rule_status=None, alarm_rule_type=None, prom_instance_id=None, bind_notification_rule_id=None, related_cce_clusters=None, enterprise_project_id=None):
-        """ListMetricOrEventAlarmRuleRequest
+        r"""ListMetricOrEventAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the name of this ListMetricOrEventAlarmRuleRequest.
 
         告警规则名称。
 
@@ -131,7 +131,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the name of this ListMetricOrEventAlarmRuleRequest.
 
         告警规则名称。
 
@@ -142,7 +142,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the limit of this ListMetricOrEventAlarmRuleRequest.
 
         用于限制本次返回的结果数据条数。
 
@@ -153,7 +153,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the limit of this ListMetricOrEventAlarmRuleRequest.
 
         用于限制本次返回的结果数据条数。
 
@@ -164,7 +164,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the offset of this ListMetricOrEventAlarmRuleRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -175,7 +175,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the offset of this ListMetricOrEventAlarmRuleRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -186,7 +186,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the sort_by of this ListMetricOrEventAlarmRuleRequest.
 
         根据告警规则名称或者告警创建时间排序。 - alarm_rule_name.asc - alarm_create_time.desc
 
@@ -197,7 +197,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the sort_by of this ListMetricOrEventAlarmRuleRequest.
 
         根据告警规则名称或者告警创建时间排序。 - alarm_rule_name.asc - alarm_create_time.desc
 
@@ -208,7 +208,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def event_source(self):
-        """Gets the event_source of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the event_source of this ListMetricOrEventAlarmRuleRequest.
 
         事件告警规则事件来源。 - “RDS” - “EVS” - “CCE” - “LTS” - “AOM”
 
@@ -219,7 +219,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the event_source of this ListMetricOrEventAlarmRuleRequest.
 
         事件告警规则事件来源。 - “RDS” - “EVS” - “CCE” - “LTS” - “AOM”
 
@@ -230,7 +230,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def event_severity(self):
-        """Gets the event_severity of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the event_severity of this ListMetricOrEventAlarmRuleRequest.
 
         事件告警级别。 - “Critical\" - “Major” - “Minor” - “Info”
 
@@ -241,7 +241,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @event_severity.setter
     def event_severity(self, event_severity):
-        """Sets the event_severity of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the event_severity of this ListMetricOrEventAlarmRuleRequest.
 
         事件告警级别。 - “Critical\" - “Major” - “Minor” - “Info”
 
@@ -252,7 +252,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def alarm_rule_status(self):
-        """Gets the alarm_rule_status of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the alarm_rule_status of this ListMetricOrEventAlarmRuleRequest.
 
         告警规则状态。 - “OK”：正常 - “alarm”：超限阈值 - “Effective”：生效中 - “Invalid”：停用中
 
@@ -263,7 +263,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @alarm_rule_status.setter
     def alarm_rule_status(self, alarm_rule_status):
-        """Sets the alarm_rule_status of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the alarm_rule_status of this ListMetricOrEventAlarmRuleRequest.
 
         告警规则状态。 - “OK”：正常 - “alarm”：超限阈值 - “Effective”：生效中 - “Invalid”：停用中
 
@@ -274,7 +274,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def alarm_rule_type(self):
-        """Gets the alarm_rule_type of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the alarm_rule_type of this ListMetricOrEventAlarmRuleRequest.
 
         告警规则类型。 - “metric”：指标告警规则 - “event”：事件告警规则
 
@@ -285,7 +285,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @alarm_rule_type.setter
     def alarm_rule_type(self, alarm_rule_type):
-        """Sets the alarm_rule_type of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the alarm_rule_type of this ListMetricOrEventAlarmRuleRequest.
 
         告警规则类型。 - “metric”：指标告警规则 - “event”：事件告警规则
 
@@ -296,7 +296,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def prom_instance_id(self):
-        """Gets the prom_instance_id of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the prom_instance_id of this ListMetricOrEventAlarmRuleRequest.
 
         Prometheus实例id。
 
@@ -307,7 +307,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @prom_instance_id.setter
     def prom_instance_id(self, prom_instance_id):
-        """Sets the prom_instance_id of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the prom_instance_id of this ListMetricOrEventAlarmRuleRequest.
 
         Prometheus实例id。
 
@@ -318,7 +318,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def bind_notification_rule_id(self):
-        """Gets the bind_notification_rule_id of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the bind_notification_rule_id of this ListMetricOrEventAlarmRuleRequest.
 
         绑定的告警行动规则名称。
 
@@ -329,7 +329,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @bind_notification_rule_id.setter
     def bind_notification_rule_id(self, bind_notification_rule_id):
-        """Sets the bind_notification_rule_id of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the bind_notification_rule_id of this ListMetricOrEventAlarmRuleRequest.
 
         绑定的告警行动规则名称。
 
@@ -340,7 +340,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def related_cce_clusters(self):
-        """Gets the related_cce_clusters of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the related_cce_clusters of this ListMetricOrEventAlarmRuleRequest.
 
         CCE集群id。
 
@@ -351,7 +351,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @related_cce_clusters.setter
     def related_cce_clusters(self, related_cce_clusters):
-        """Sets the related_cce_clusters of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the related_cce_clusters of this ListMetricOrEventAlarmRuleRequest.
 
         CCE集群id。
 
@@ -362,7 +362,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
+        r"""Gets the enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
 
         企业项目id。  - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
@@ -373,7 +373,7 @@ class ListMetricOrEventAlarmRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
+        r"""Sets the enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
 
         企业项目id。  - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 

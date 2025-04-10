@@ -49,7 +49,7 @@ class Resource:
     }
 
     def __init__(self, name=None, with_prefix=None, image_ref=None, flavor_ref=None, admin_pass=None, key_name=None, net_config=None, bandwidth=None, root_volume=None, data_volumes=None, count=None, security_groups=None, user_data=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -122,7 +122,7 @@ class Resource:
 
     @property
     def name(self):
-        """Gets the name of this Resource.
+        r"""Gets the name of this Resource.
 
         边缘实例名称。 取值范围： 只能由中文字符、英文字母 (大小写)、数字及“_”、“-”、“.” 组成。 创建的边缘实例数量（count字段对应的值）大于1时，为区分不同边缘实例，创建过程中系统会自动在名称后加“-000x”的类似标记。  >  华为云边缘实例内部主机名 （hostname）命名规则遵循RFC 952和RFC 1123命名规范，建议使用a-zA-z或0-9以及中划线'-'组成的名称命名，' _' 将在边缘实例内部默认转化为'-'。 
 
@@ -133,7 +133,7 @@ class Resource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Resource.
+        r"""Sets the name of this Resource.
 
         边缘实例名称。 取值范围： 只能由中文字符、英文字母 (大小写)、数字及“_”、“-”、“.” 组成。 创建的边缘实例数量（count字段对应的值）大于1时，为区分不同边缘实例，创建过程中系统会自动在名称后加“-000x”的类似标记。  >  华为云边缘实例内部主机名 （hostname）命名规则遵循RFC 952和RFC 1123命名规范，建议使用a-zA-z或0-9以及中划线'-'组成的名称命名，' _' 将在边缘实例内部默认转化为'-'。 
 
@@ -144,7 +144,7 @@ class Resource:
 
     @property
     def with_prefix(self):
-        """Gets the with_prefix of this Resource.
+        r"""Gets the with_prefix of this Resource.
 
         是否自动添加名称前缀。 - with_prefix为false时不拼接IEC前缀 - with_prefix不传或者传true时拼自动IEC前缀  以name为iec为例： 不添加前缀时实例名称为：iec-0001 自动添加前缀实例名称为：IEC-ZS01-iec-0001 0001为创建边缘业务时根据实例个数自动添加的编号
 
@@ -155,7 +155,7 @@ class Resource:
 
     @with_prefix.setter
     def with_prefix(self, with_prefix):
-        """Sets the with_prefix of this Resource.
+        r"""Sets the with_prefix of this Resource.
 
         是否自动添加名称前缀。 - with_prefix为false时不拼接IEC前缀 - with_prefix不传或者传true时拼自动IEC前缀  以name为iec为例： 不添加前缀时实例名称为：iec-0001 自动添加前缀实例名称为：IEC-ZS01-iec-0001 0001为创建边缘业务时根据实例个数自动添加的编号
 
@@ -166,7 +166,7 @@ class Resource:
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this Resource.
+        r"""Gets the image_ref of this Resource.
 
         待发放边缘实例的系统镜像，需要指定已创建镜像的ID。 > 镜像的ID可以从控制台或者参考本文档的“查询边镜像列表”的章节获取。
 
@@ -177,7 +177,7 @@ class Resource:
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this Resource.
+        r"""Sets the image_ref of this Resource.
 
         待发放边缘实例的系统镜像，需要指定已创建镜像的ID。 > 镜像的ID可以从控制台或者参考本文档的“查询边镜像列表”的章节获取。
 
@@ -188,7 +188,7 @@ class Resource:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this Resource.
+        r"""Gets the flavor_ref of this Resource.
 
         边缘实例的系统规格的ID。
 
@@ -199,7 +199,7 @@ class Resource:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this Resource.
+        r"""Sets the flavor_ref of this Resource.
 
         边缘实例的系统规格的ID。
 
@@ -210,7 +210,7 @@ class Resource:
 
     @property
     def admin_pass(self):
-        """Gets the admin_pass of this Resource.
+        r"""Gets the admin_pass of this Resource.
 
         如果需要使用密码方式登录边缘实例，可使用admin_pass字段指定边缘实例管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。  密码复杂度要求： - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。 - 密码不能包含用户名或用户名的逆序。 - Windows系统密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。  >   目前边缘实例不支持创建后设置密码，不设置此参数会导致实例无法登录。
 
@@ -221,7 +221,7 @@ class Resource:
 
     @admin_pass.setter
     def admin_pass(self, admin_pass):
-        """Sets the admin_pass of this Resource.
+        r"""Sets the admin_pass of this Resource.
 
         如果需要使用密码方式登录边缘实例，可使用admin_pass字段指定边缘实例管理员帐户初始登录密码。其中，Linux管理员帐户为root，Windows管理员帐户为Administrator。  密码复杂度要求： - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?）中的三种。 - 密码不能包含用户名或用户名的逆序。 - Windows系统密码不能包含用户名或用户名的逆序，不能包含用户名中超过两个连续字符的部分。  >   目前边缘实例不支持创建后设置密码，不设置此参数会导致实例无法登录。
 
@@ -232,7 +232,7 @@ class Resource:
 
     @property
     def key_name(self):
-        """Gets the key_name of this Resource.
+        r"""Gets the key_name of this Resource.
 
         密钥对名称。
 
@@ -243,7 +243,7 @@ class Resource:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this Resource.
+        r"""Sets the key_name of this Resource.
 
         密钥对名称。
 
@@ -254,7 +254,7 @@ class Resource:
 
     @property
     def net_config(self):
-        """Gets the net_config of this Resource.
+        r"""Gets the net_config of this Resource.
 
         :return: The net_config of this Resource.
         :rtype: :class:`huaweicloudsdkiec.v1.NetConfig`
@@ -263,7 +263,7 @@ class Resource:
 
     @net_config.setter
     def net_config(self, net_config):
-        """Sets the net_config of this Resource.
+        r"""Sets the net_config of this Resource.
 
         :param net_config: The net_config of this Resource.
         :type net_config: :class:`huaweicloudsdkiec.v1.NetConfig`
@@ -272,7 +272,7 @@ class Resource:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this Resource.
+        r"""Gets the bandwidth of this Resource.
 
         :return: The bandwidth of this Resource.
         :rtype: :class:`huaweicloudsdkiec.v1.BandwidthConfig`
@@ -281,7 +281,7 @@ class Resource:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this Resource.
+        r"""Sets the bandwidth of this Resource.
 
         :param bandwidth: The bandwidth of this Resource.
         :type bandwidth: :class:`huaweicloudsdkiec.v1.BandwidthConfig`
@@ -290,7 +290,7 @@ class Resource:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this Resource.
+        r"""Gets the root_volume of this Resource.
 
         :return: The root_volume of this Resource.
         :rtype: :class:`huaweicloudsdkiec.v1.RootVolume`
@@ -299,7 +299,7 @@ class Resource:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this Resource.
+        r"""Sets the root_volume of this Resource.
 
         :param root_volume: The root_volume of this Resource.
         :type root_volume: :class:`huaweicloudsdkiec.v1.RootVolume`
@@ -308,7 +308,7 @@ class Resource:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this Resource.
+        r"""Gets the data_volumes of this Resource.
 
         边缘实例对应数据盘相关配置。每一个数据结构代表一块待创建的数据盘。  约束：目前边缘实例最多可挂载2块数据盘
 
@@ -319,7 +319,7 @@ class Resource:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this Resource.
+        r"""Sets the data_volumes of this Resource.
 
         边缘实例对应数据盘相关配置。每一个数据结构代表一块待创建的数据盘。  约束：目前边缘实例最多可挂载2块数据盘
 
@@ -330,7 +330,7 @@ class Resource:
 
     @property
     def count(self):
-        """Gets the count of this Resource.
+        r"""Gets the count of this Resource.
 
         边缘实例数量。 不传该字段时默认取值为1。
 
@@ -341,7 +341,7 @@ class Resource:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this Resource.
+        r"""Sets the count of this Resource.
 
         边缘实例数量。 不传该字段时默认取值为1。
 
@@ -352,7 +352,7 @@ class Resource:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this Resource.
+        r"""Gets the security_groups of this Resource.
 
         边缘业务对应安全组信息。
 
@@ -363,7 +363,7 @@ class Resource:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this Resource.
+        r"""Sets the security_groups of this Resource.
 
         边缘业务对应安全组信息。
 
@@ -374,7 +374,7 @@ class Resource:
 
     @property
     def user_data(self):
-        """Gets the user_data of this Resource.
+        r"""Gets the user_data of this Resource.
 
         创建边缘实例过程中注入用户数据。支持注入文本、文本文件或gzip文件。 更多关于待注入用户数据的信息，请参见《弹性云服务器用户指南 》的“[用户数据注入](https://support.huaweicloud.com/usermanual-ecs/zh-cn_topic_0032380449.html)”章节。
 
@@ -385,7 +385,7 @@ class Resource:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this Resource.
+        r"""Sets the user_data of this Resource.
 
         创建边缘实例过程中注入用户数据。支持注入文本、文本文件或gzip文件。 更多关于待注入用户数据的信息，请参见《弹性云服务器用户指南 》的“[用户数据注入](https://support.huaweicloud.com/usermanual-ecs/zh-cn_topic_0032380449.html)”章节。
 

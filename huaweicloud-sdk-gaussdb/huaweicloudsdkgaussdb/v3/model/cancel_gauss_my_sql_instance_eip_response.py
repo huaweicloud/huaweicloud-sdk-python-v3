@@ -26,7 +26,7 @@ class CancelGaussMySqlInstanceEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CancelGaussMySqlInstanceEipResponse
+        r"""CancelGaussMySqlInstanceEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelGaussMySqlInstanceEipResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CancelGaussMySqlInstanceEipResponse.
+        r"""Gets the job_id of this CancelGaussMySqlInstanceEipResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class CancelGaussMySqlInstanceEipResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CancelGaussMySqlInstanceEipResponse.
+        r"""Sets the job_id of this CancelGaussMySqlInstanceEipResponse.
 
         任务ID。
 

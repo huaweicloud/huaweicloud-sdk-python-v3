@@ -43,7 +43,7 @@ class UserQos:
     }
 
     def __init__(self, participant_id=None, net_rate=None, band_width_up=None, band_width_down=None, lost_packet_rate_up=None, lost_packet_rate_down=None, delay=None, video_qos=None, audio_qos=None, aux_qos=None):
-        """UserQos
+        r"""UserQos
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UserQos:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this UserQos.
+        r"""Gets the participant_id of this UserQos.
 
         会场ID
 
@@ -117,7 +117,7 @@ class UserQos:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this UserQos.
+        r"""Sets the participant_id of this UserQos.
 
         会场ID
 
@@ -128,7 +128,7 @@ class UserQos:
 
     @property
     def net_rate(self):
-        """Gets the net_rate of this UserQos.
+        r"""Gets the net_rate of this UserQos.
 
         网络质量评级
 
@@ -139,7 +139,7 @@ class UserQos:
 
     @net_rate.setter
     def net_rate(self, net_rate):
-        """Sets the net_rate of this UserQos.
+        r"""Sets the net_rate of this UserQos.
 
         网络质量评级
 
@@ -150,7 +150,7 @@ class UserQos:
 
     @property
     def band_width_up(self):
-        """Gets the band_width_up of this UserQos.
+        r"""Gets the band_width_up of this UserQos.
 
         上行总带宽(kbit/s)
 
@@ -161,7 +161,7 @@ class UserQos:
 
     @band_width_up.setter
     def band_width_up(self, band_width_up):
-        """Sets the band_width_up of this UserQos.
+        r"""Sets the band_width_up of this UserQos.
 
         上行总带宽(kbit/s)
 
@@ -172,7 +172,7 @@ class UserQos:
 
     @property
     def band_width_down(self):
-        """Gets the band_width_down of this UserQos.
+        r"""Gets the band_width_down of this UserQos.
 
         下行总带宽(kbit/s)
 
@@ -183,7 +183,7 @@ class UserQos:
 
     @band_width_down.setter
     def band_width_down(self, band_width_down):
-        """Sets the band_width_down of this UserQos.
+        r"""Sets the band_width_down of this UserQos.
 
         下行总带宽(kbit/s)
 
@@ -194,7 +194,7 @@ class UserQos:
 
     @property
     def lost_packet_rate_up(self):
-        """Gets the lost_packet_rate_up of this UserQos.
+        r"""Gets the lost_packet_rate_up of this UserQos.
 
         上行丢包率（千分数）
 
@@ -205,7 +205,7 @@ class UserQos:
 
     @lost_packet_rate_up.setter
     def lost_packet_rate_up(self, lost_packet_rate_up):
-        """Sets the lost_packet_rate_up of this UserQos.
+        r"""Sets the lost_packet_rate_up of this UserQos.
 
         上行丢包率（千分数）
 
@@ -216,7 +216,7 @@ class UserQos:
 
     @property
     def lost_packet_rate_down(self):
-        """Gets the lost_packet_rate_down of this UserQos.
+        r"""Gets the lost_packet_rate_down of this UserQos.
 
         下行丢包率（千分数）
 
@@ -227,7 +227,7 @@ class UserQos:
 
     @lost_packet_rate_down.setter
     def lost_packet_rate_down(self, lost_packet_rate_down):
-        """Sets the lost_packet_rate_down of this UserQos.
+        r"""Sets the lost_packet_rate_down of this UserQos.
 
         下行丢包率（千分数）
 
@@ -238,7 +238,7 @@ class UserQos:
 
     @property
     def delay(self):
-        """Gets the delay of this UserQos.
+        r"""Gets the delay of this UserQos.
 
         时延(ms)
 
@@ -249,7 +249,7 @@ class UserQos:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this UserQos.
+        r"""Sets the delay of this UserQos.
 
         时延(ms)
 
@@ -260,7 +260,7 @@ class UserQos:
 
     @property
     def video_qos(self):
-        """Gets the video_qos of this UserQos.
+        r"""Gets the video_qos of this UserQos.
 
         :return: The video_qos of this UserQos.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MediaQos`
@@ -269,7 +269,7 @@ class UserQos:
 
     @video_qos.setter
     def video_qos(self, video_qos):
-        """Sets the video_qos of this UserQos.
+        r"""Sets the video_qos of this UserQos.
 
         :param video_qos: The video_qos of this UserQos.
         :type video_qos: :class:`huaweicloudsdkmeeting.v1.MediaQos`
@@ -278,7 +278,7 @@ class UserQos:
 
     @property
     def audio_qos(self):
-        """Gets the audio_qos of this UserQos.
+        r"""Gets the audio_qos of this UserQos.
 
         :return: The audio_qos of this UserQos.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MediaQos`
@@ -287,7 +287,7 @@ class UserQos:
 
     @audio_qos.setter
     def audio_qos(self, audio_qos):
-        """Sets the audio_qos of this UserQos.
+        r"""Sets the audio_qos of this UserQos.
 
         :param audio_qos: The audio_qos of this UserQos.
         :type audio_qos: :class:`huaweicloudsdkmeeting.v1.MediaQos`
@@ -296,7 +296,7 @@ class UserQos:
 
     @property
     def aux_qos(self):
-        """Gets the aux_qos of this UserQos.
+        r"""Gets the aux_qos of this UserQos.
 
         :return: The aux_qos of this UserQos.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MediaQos`
@@ -305,7 +305,7 @@ class UserQos:
 
     @aux_qos.setter
     def aux_qos(self, aux_qos):
-        """Sets the aux_qos of this UserQos.
+        r"""Sets the aux_qos of this UserQos.
 
         :param aux_qos: The aux_qos of this UserQos.
         :type aux_qos: :class:`huaweicloudsdkmeeting.v1.MediaQos`

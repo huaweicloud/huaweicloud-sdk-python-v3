@@ -34,7 +34,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     }
 
     def __init__(self, datastore_version=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
-        """ShowInstanceParamGroupDetailResponse
+        r"""ShowInstanceParamGroupDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ShowInstanceParamGroupDetailResponse.
+        r"""Gets the datastore_version of this ShowInstanceParamGroupDetailResponse.
 
         引擎版本。
 
@@ -83,7 +83,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ShowInstanceParamGroupDetailResponse.
+        r"""Sets the datastore_version of this ShowInstanceParamGroupDetailResponse.
 
         引擎版本。
 
@@ -94,7 +94,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ShowInstanceParamGroupDetailResponse.
+        r"""Gets the datastore_name of this ShowInstanceParamGroupDetailResponse.
 
         引擎名称。
 
@@ -105,7 +105,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ShowInstanceParamGroupDetailResponse.
+        r"""Sets the datastore_name of this ShowInstanceParamGroupDetailResponse.
 
         引擎名称。
 
@@ -116,7 +116,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowInstanceParamGroupDetailResponse.
+        r"""Gets the created of this ShowInstanceParamGroupDetailResponse.
 
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -127,7 +127,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowInstanceParamGroupDetailResponse.
+        r"""Sets the created of this ShowInstanceParamGroupDetailResponse.
 
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -138,7 +138,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowInstanceParamGroupDetailResponse.
+        r"""Gets the updated of this ShowInstanceParamGroupDetailResponse.
 
         更新时间，格式为\"yyyy-MM-ddHH:mm:ss\"。
 
@@ -149,7 +149,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowInstanceParamGroupDetailResponse.
+        r"""Sets the updated of this ShowInstanceParamGroupDetailResponse.
 
         更新时间，格式为\"yyyy-MM-ddHH:mm:ss\"。
 
@@ -160,7 +160,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @property
     def configuration_parameters(self):
-        """Gets the configuration_parameters of this ShowInstanceParamGroupDetailResponse.
+        r"""Gets the configuration_parameters of this ShowInstanceParamGroupDetailResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 
@@ -171,7 +171,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
 
     @configuration_parameters.setter
     def configuration_parameters(self, configuration_parameters):
-        """Sets the configuration_parameters of this ShowInstanceParamGroupDetailResponse.
+        r"""Sets the configuration_parameters of this ShowInstanceParamGroupDetailResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 

@@ -24,7 +24,7 @@ class UpdateDbCacheRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDbCacheRuleResponse
+        r"""UpdateDbCacheRuleResponse
 
         The model defined in huaweicloud sdk
 

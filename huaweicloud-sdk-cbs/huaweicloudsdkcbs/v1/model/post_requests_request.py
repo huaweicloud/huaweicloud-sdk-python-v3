@@ -27,7 +27,7 @@ class PostRequestsRequest:
     }
 
     def __init__(self, qabot_id=None, body=None):
-        """PostRequestsRequest
+        r"""PostRequestsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PostRequestsRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this PostRequestsRequest.
+        r"""Gets the qabot_id of this PostRequestsRequest.
 
         qabot编号，UUID格式，如：303a0a00-c88a-43e3-aa2f-d5b8b9832b02。
 
@@ -60,7 +60,7 @@ class PostRequestsRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this PostRequestsRequest.
+        r"""Sets the qabot_id of this PostRequestsRequest.
 
         qabot编号，UUID格式，如：303a0a00-c88a-43e3-aa2f-d5b8b9832b02。
 
@@ -71,7 +71,7 @@ class PostRequestsRequest:
 
     @property
     def body(self):
-        """Gets the body of this PostRequestsRequest.
+        r"""Gets the body of this PostRequestsRequest.
 
         :return: The body of this PostRequestsRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostOldRequestsReq`
@@ -80,7 +80,7 @@ class PostRequestsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PostRequestsRequest.
+        r"""Sets the body of this PostRequestsRequest.
 
         :param body: The body of this PostRequestsRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostOldRequestsReq`

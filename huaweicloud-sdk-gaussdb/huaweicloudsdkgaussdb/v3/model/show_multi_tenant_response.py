@@ -26,7 +26,7 @@ class ShowMultiTenantResponse(SdkResponse):
     }
 
     def __init__(self, multi_tenant_switch=None):
-        """ShowMultiTenantResponse
+        r"""ShowMultiTenantResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMultiTenantResponse(SdkResponse):
 
     @property
     def multi_tenant_switch(self):
-        """Gets the multi_tenant_switch of this ShowMultiTenantResponse.
+        r"""Gets the multi_tenant_switch of this ShowMultiTenantResponse.
 
         实例多租特性开关。 - true:开启 - false:关闭。
 
@@ -55,7 +55,7 @@ class ShowMultiTenantResponse(SdkResponse):
 
     @multi_tenant_switch.setter
     def multi_tenant_switch(self, multi_tenant_switch):
-        """Sets the multi_tenant_switch of this ShowMultiTenantResponse.
+        r"""Sets the multi_tenant_switch of this ShowMultiTenantResponse.
 
         实例多租特性开关。 - true:开启 - false:关闭。
 

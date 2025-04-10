@@ -26,7 +26,7 @@ class ListAvailableDisasterClustersResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery_clusters=None):
-        """ListAvailableDisasterClustersResponse
+        r"""ListAvailableDisasterClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAvailableDisasterClustersResponse(SdkResponse):
 
     @property
     def disaster_recovery_clusters(self):
-        """Gets the disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
+        r"""Gets the disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
 
         容灾可用集群列表
 
@@ -55,7 +55,7 @@ class ListAvailableDisasterClustersResponse(SdkResponse):
 
     @disaster_recovery_clusters.setter
     def disaster_recovery_clusters(self, disaster_recovery_clusters):
-        """Sets the disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
+        r"""Sets the disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
 
         容灾可用集群列表
 

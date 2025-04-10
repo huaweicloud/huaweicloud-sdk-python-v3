@@ -29,7 +29,7 @@ class CreateResDatasourceRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, body=None):
-        """CreateResDatasourceRequest
+        r"""CreateResDatasourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResDatasourceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateResDatasourceRequest.
+        r"""Gets the content_type of this CreateResDatasourceRequest.
 
         内容类型，取值为application/json。
 
@@ -66,7 +66,7 @@ class CreateResDatasourceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateResDatasourceRequest.
+        r"""Sets the content_type of this CreateResDatasourceRequest.
 
         内容类型，取值为application/json。
 
@@ -77,7 +77,7 @@ class CreateResDatasourceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateResDatasourceRequest.
+        r"""Gets the workspace_id of this CreateResDatasourceRequest.
 
         工作空间id。
 
@@ -88,7 +88,7 @@ class CreateResDatasourceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateResDatasourceRequest.
+        r"""Sets the workspace_id of this CreateResDatasourceRequest.
 
         工作空间id。
 
@@ -99,7 +99,7 @@ class CreateResDatasourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResDatasourceRequest.
+        r"""Gets the body of this CreateResDatasourceRequest.
 
         :return: The body of this CreateResDatasourceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResDatasourceRequestBody`
@@ -108,7 +108,7 @@ class CreateResDatasourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResDatasourceRequest.
+        r"""Sets the body of this CreateResDatasourceRequest.
 
         :param body: The body of this CreateResDatasourceRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResDatasourceRequestBody`

@@ -33,7 +33,7 @@ class Vpc:
     }
 
     def __init__(self, id=None, name=None, cidr=None, mode=None, subnet_num=None):
-        """Vpc
+        r"""Vpc
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Vpc:
 
     @property
     def id(self):
-        """Gets the id of this Vpc.
+        r"""Gets the id of this Vpc.
 
         虚拟私有云的ID。
 
@@ -82,7 +82,7 @@ class Vpc:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Vpc.
+        r"""Sets the id of this Vpc.
 
         虚拟私有云的ID。
 
@@ -93,7 +93,7 @@ class Vpc:
 
     @property
     def name(self):
-        """Gets the name of this Vpc.
+        r"""Gets the name of this Vpc.
 
         虚拟私有云名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的名称不能重复
 
@@ -104,7 +104,7 @@ class Vpc:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Vpc.
+        r"""Sets the name of this Vpc.
 
         虚拟私有云名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的名称不能重复
 
@@ -115,7 +115,7 @@ class Vpc:
 
     @property
     def cidr(self):
-        """Gets the cidr of this Vpc.
+        r"""Gets the cidr of this Vpc.
 
         虚拟私有云下可用子网的范围  取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24  约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -126,7 +126,7 @@ class Vpc:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this Vpc.
+        r"""Sets the cidr of this Vpc.
 
         虚拟私有云下可用子网的范围  取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24  约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -137,7 +137,7 @@ class Vpc:
 
     @property
     def mode(self):
-        """Gets the mode of this Vpc.
+        r"""Gets the mode of this Vpc.
 
         虚拟私有云的模式。
 
@@ -148,7 +148,7 @@ class Vpc:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this Vpc.
+        r"""Sets the mode of this Vpc.
 
         虚拟私有云的模式。
 
@@ -159,7 +159,7 @@ class Vpc:
 
     @property
     def subnet_num(self):
-        """Gets the subnet_num of this Vpc.
+        r"""Gets the subnet_num of this Vpc.
 
         子网的数目。
 
@@ -170,7 +170,7 @@ class Vpc:
 
     @subnet_num.setter
     def subnet_num(self, subnet_num):
-        """Sets the subnet_num of this Vpc.
+        r"""Sets the subnet_num of this Vpc.
 
         子网的数目。
 

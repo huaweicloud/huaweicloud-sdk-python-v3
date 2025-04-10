@@ -27,7 +27,7 @@ class DeleteAlarmRuleResourcesRequest:
     }
 
     def __init__(self, alarm_id=None, body=None):
-        """DeleteAlarmRuleResourcesRequest
+        r"""DeleteAlarmRuleResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteAlarmRuleResourcesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this DeleteAlarmRuleResourcesRequest.
+        r"""Gets the alarm_id of this DeleteAlarmRuleResourcesRequest.
 
         Alarm实例ID
 
@@ -60,7 +60,7 @@ class DeleteAlarmRuleResourcesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this DeleteAlarmRuleResourcesRequest.
+        r"""Sets the alarm_id of this DeleteAlarmRuleResourcesRequest.
 
         Alarm实例ID
 
@@ -71,7 +71,7 @@ class DeleteAlarmRuleResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAlarmRuleResourcesRequest.
+        r"""Gets the body of this DeleteAlarmRuleResourcesRequest.
 
         :return: The body of this DeleteAlarmRuleResourcesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.ResourcesReqV2`
@@ -80,7 +80,7 @@ class DeleteAlarmRuleResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAlarmRuleResourcesRequest.
+        r"""Sets the body of this DeleteAlarmRuleResourcesRequest.
 
         :param body: The body of this DeleteAlarmRuleResourcesRequest.
         :type body: :class:`huaweicloudsdkces.v2.ResourcesReqV2`

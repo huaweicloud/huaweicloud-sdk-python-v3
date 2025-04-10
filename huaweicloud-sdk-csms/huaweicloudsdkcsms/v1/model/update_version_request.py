@@ -29,7 +29,7 @@ class UpdateVersionRequest:
     }
 
     def __init__(self, secret_name=None, version_id=None, body=None):
-        """UpdateVersionRequest
+        r"""UpdateVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVersionRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this UpdateVersionRequest.
+        r"""Gets the secret_name of this UpdateVersionRequest.
 
         凭据名称。
 
@@ -66,7 +66,7 @@ class UpdateVersionRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this UpdateVersionRequest.
+        r"""Sets the secret_name of this UpdateVersionRequest.
 
         凭据名称。
 
@@ -77,7 +77,7 @@ class UpdateVersionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this UpdateVersionRequest.
+        r"""Gets the version_id of this UpdateVersionRequest.
 
         凭据的版本标识符。
 
@@ -88,7 +88,7 @@ class UpdateVersionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this UpdateVersionRequest.
+        r"""Sets the version_id of this UpdateVersionRequest.
 
         凭据的版本标识符。
 
@@ -99,7 +99,7 @@ class UpdateVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVersionRequest.
+        r"""Gets the body of this UpdateVersionRequest.
 
         :return: The body of this UpdateVersionRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateVersionRequestBody`
@@ -108,7 +108,7 @@ class UpdateVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVersionRequest.
+        r"""Sets the body of this UpdateVersionRequest.
 
         :param body: The body of this UpdateVersionRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.UpdateVersionRequestBody`

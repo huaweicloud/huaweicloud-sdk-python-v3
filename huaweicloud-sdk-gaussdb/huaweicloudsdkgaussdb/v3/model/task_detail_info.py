@@ -45,7 +45,7 @@ class TaskDetailInfo:
     }
 
     def __init__(self, instance_id=None, instance_name=None, instance_status=None, job_id=None, order_id=None, job_name=None, status=None, process=None, created_time=None, ended_time=None, fail_reason=None):
-        """TaskDetailInfo
+        r"""TaskDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TaskDetailInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TaskDetailInfo.
+        r"""Gets the instance_id of this TaskDetailInfo.
 
         实例ID。
 
@@ -124,7 +124,7 @@ class TaskDetailInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TaskDetailInfo.
+        r"""Sets the instance_id of this TaskDetailInfo.
 
         实例ID。
 
@@ -135,7 +135,7 @@ class TaskDetailInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this TaskDetailInfo.
+        r"""Gets the instance_name of this TaskDetailInfo.
 
         实例名称。
 
@@ -146,7 +146,7 @@ class TaskDetailInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this TaskDetailInfo.
+        r"""Sets the instance_name of this TaskDetailInfo.
 
         实例名称。
 
@@ -157,7 +157,7 @@ class TaskDetailInfo:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this TaskDetailInfo.
+        r"""Gets the instance_status of this TaskDetailInfo.
 
         实例状态。 取值： - 值为“createfail”，表示实例创建失败。 - 值为“creating”，表示实例创建中。 - 值为“normal”，表示实例正常。 - 值为“abnormal”，表示实例异常。 - 值为“deleted”，表示实例已删除。
 
@@ -168,7 +168,7 @@ class TaskDetailInfo:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this TaskDetailInfo.
+        r"""Sets the instance_status of this TaskDetailInfo.
 
         实例状态。 取值： - 值为“createfail”，表示实例创建失败。 - 值为“creating”，表示实例创建中。 - 值为“normal”，表示实例正常。 - 值为“abnormal”，表示实例异常。 - 值为“deleted”，表示实例已删除。
 
@@ -179,7 +179,7 @@ class TaskDetailInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this TaskDetailInfo.
+        r"""Gets the job_id of this TaskDetailInfo.
 
         任务ID。
 
@@ -190,7 +190,7 @@ class TaskDetailInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this TaskDetailInfo.
+        r"""Sets the job_id of this TaskDetailInfo.
 
         任务ID。
 
@@ -201,7 +201,7 @@ class TaskDetailInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this TaskDetailInfo.
+        r"""Gets the order_id of this TaskDetailInfo.
 
         订单ID。
 
@@ -212,7 +212,7 @@ class TaskDetailInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this TaskDetailInfo.
+        r"""Sets the order_id of this TaskDetailInfo.
 
         订单ID。
 
@@ -223,7 +223,7 @@ class TaskDetailInfo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this TaskDetailInfo.
+        r"""Gets the job_name of this TaskDetailInfo.
 
         任务名称。取值有：    - \"CreateGaussDBforMySQLInstance\"表示创建实例。    - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。    - \"AddGaussDBforMySQLNodes\"表示添加节点。    - \"DeleteGaussDBforMySQLNode\"表示删除节点。    - \"RebootGaussDBforMySQLInstance\"表示重启实例。    - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。    - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。    - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。    - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。    - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。    - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。    - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。    - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。    - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。    - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。    - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。    - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。    - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。    - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。    - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。    - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。    - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。    - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。    - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
 
@@ -234,7 +234,7 @@ class TaskDetailInfo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this TaskDetailInfo.
+        r"""Sets the job_name of this TaskDetailInfo.
 
         任务名称。取值有：    - \"CreateGaussDBforMySQLInstance\"表示创建实例。    - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。    - \"AddGaussDBforMySQLNodes\"表示添加节点。    - \"DeleteGaussDBforMySQLNode\"表示删除节点。    - \"RebootGaussDBforMySQLInstance\"表示重启实例。    - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。    - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。    - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。    - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。    - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。    - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。    - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。    - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。    - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。    - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。    - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。    - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。    - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。    - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。    - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。    - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。    - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。    - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。    - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
 
@@ -245,7 +245,7 @@ class TaskDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this TaskDetailInfo.
+        r"""Gets the status of this TaskDetailInfo.
 
         任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -256,7 +256,7 @@ class TaskDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskDetailInfo.
+        r"""Sets the status of this TaskDetailInfo.
 
         任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -267,7 +267,7 @@ class TaskDetailInfo:
 
     @property
     def process(self):
-        """Gets the process of this TaskDetailInfo.
+        r"""Gets the process of this TaskDetailInfo.
 
         任务进度。
 
@@ -278,7 +278,7 @@ class TaskDetailInfo:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this TaskDetailInfo.
+        r"""Sets the process of this TaskDetailInfo.
 
         任务进度。
 
@@ -289,7 +289,7 @@ class TaskDetailInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this TaskDetailInfo.
+        r"""Gets the created_time of this TaskDetailInfo.
 
         任务创建时间。格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -300,7 +300,7 @@ class TaskDetailInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this TaskDetailInfo.
+        r"""Sets the created_time of this TaskDetailInfo.
 
         任务创建时间。格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -311,7 +311,7 @@ class TaskDetailInfo:
 
     @property
     def ended_time(self):
-        """Gets the ended_time of this TaskDetailInfo.
+        r"""Gets the ended_time of this TaskDetailInfo.
 
         任务结束时间。格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -322,7 +322,7 @@ class TaskDetailInfo:
 
     @ended_time.setter
     def ended_time(self, ended_time):
-        """Sets the ended_time of this TaskDetailInfo.
+        r"""Sets the ended_time of this TaskDetailInfo.
 
         任务结束时间。格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -333,7 +333,7 @@ class TaskDetailInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this TaskDetailInfo.
+        r"""Gets the fail_reason of this TaskDetailInfo.
 
         任务失败原因。
 
@@ -344,7 +344,7 @@ class TaskDetailInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this TaskDetailInfo.
+        r"""Sets the fail_reason of this TaskDetailInfo.
 
         任务失败原因。
 

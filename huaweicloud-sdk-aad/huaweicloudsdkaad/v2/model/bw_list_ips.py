@@ -27,7 +27,7 @@ class BwListIps:
     }
 
     def __init__(self, ip=None, desc=None):
-        """BwListIps
+        r"""BwListIps
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BwListIps:
 
     @property
     def ip(self):
-        """Gets the ip of this BwListIps.
+        r"""Gets the ip of this BwListIps.
 
         黑白名单ip
 
@@ -61,7 +61,7 @@ class BwListIps:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BwListIps.
+        r"""Sets the ip of this BwListIps.
 
         黑白名单ip
 
@@ -72,7 +72,7 @@ class BwListIps:
 
     @property
     def desc(self):
-        """Gets the desc of this BwListIps.
+        r"""Gets the desc of this BwListIps.
 
         描述
 
@@ -83,7 +83,7 @@ class BwListIps:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this BwListIps.
+        r"""Sets the desc of this BwListIps.
 
         描述
 

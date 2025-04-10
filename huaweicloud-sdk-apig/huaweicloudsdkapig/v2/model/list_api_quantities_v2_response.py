@@ -30,7 +30,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
     }
 
     def __init__(self, instance_num=None, nums_on_release=None, nums_off_release=None):
-        """ListApiQuantitiesV2Response
+        r"""ListApiQuantitiesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ListApiQuantitiesV2Response.
+        r"""Gets the instance_num of this ListApiQuantitiesV2Response.
 
         API总个数
 
@@ -69,7 +69,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ListApiQuantitiesV2Response.
+        r"""Sets the instance_num of this ListApiQuantitiesV2Response.
 
         API总个数
 
@@ -80,7 +80,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
 
     @property
     def nums_on_release(self):
-        """Gets the nums_on_release of this ListApiQuantitiesV2Response.
+        r"""Gets the nums_on_release of this ListApiQuantitiesV2Response.
 
         已发布到release环境的API个数
 
@@ -91,7 +91,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
 
     @nums_on_release.setter
     def nums_on_release(self, nums_on_release):
-        """Sets the nums_on_release of this ListApiQuantitiesV2Response.
+        r"""Sets the nums_on_release of this ListApiQuantitiesV2Response.
 
         已发布到release环境的API个数
 
@@ -102,7 +102,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
 
     @property
     def nums_off_release(self):
-        """Gets the nums_off_release of this ListApiQuantitiesV2Response.
+        r"""Gets the nums_off_release of this ListApiQuantitiesV2Response.
 
         未发布到release环境的API个数
 
@@ -113,7 +113,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
 
     @nums_off_release.setter
     def nums_off_release(self, nums_off_release):
-        """Sets the nums_off_release of this ListApiQuantitiesV2Response.
+        r"""Sets the nums_off_release of this ListApiQuantitiesV2Response.
 
         未发布到release环境的API个数
 

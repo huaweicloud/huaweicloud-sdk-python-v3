@@ -29,7 +29,7 @@ class Links:
     }
 
     def __init__(self, _self=None, previous=None, next=None):
-        """Links
+        r"""Links
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Links:
 
     @property
     def _self(self):
-        """Gets the _self of this Links.
+        r"""Gets the _self of this Links.
 
         资源链接地址。
 
@@ -65,7 +65,7 @@ class Links:
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this Links.
+        r"""Sets the _self of this Links.
 
         资源链接地址。
 
@@ -76,7 +76,7 @@ class Links:
 
     @property
     def previous(self):
-        """Gets the previous of this Links.
+        r"""Gets the previous of this Links.
 
         前一邻接资源链接地址。
 
@@ -87,7 +87,7 @@ class Links:
 
     @previous.setter
     def previous(self, previous):
-        """Sets the previous of this Links.
+        r"""Sets the previous of this Links.
 
         前一邻接资源链接地址。
 
@@ -98,7 +98,7 @@ class Links:
 
     @property
     def next(self):
-        """Gets the next of this Links.
+        r"""Gets the next of this Links.
 
         后一邻接资源链接地址。
 
@@ -109,7 +109,7 @@ class Links:
 
     @next.setter
     def next(self, next):
-        """Sets the next of this Links.
+        r"""Sets the next of this Links.
 
         后一邻接资源链接地址。
 

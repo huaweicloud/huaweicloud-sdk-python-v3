@@ -33,7 +33,7 @@ class ListRtcEventRequest:
     }
 
     def __init__(self, project_id=None, app_id=None, room_id=None, start_time=None, end_time=None):
-        """ListRtcEventRequest
+        r"""ListRtcEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListRtcEventRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcEventRequest.
+        r"""Gets the project_id of this ListRtcEventRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。
 
@@ -78,7 +78,7 @@ class ListRtcEventRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcEventRequest.
+        r"""Sets the project_id of this ListRtcEventRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。
 
@@ -89,7 +89,7 @@ class ListRtcEventRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListRtcEventRequest.
+        r"""Gets the app_id of this ListRtcEventRequest.
 
         应用id
 
@@ -100,7 +100,7 @@ class ListRtcEventRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListRtcEventRequest.
+        r"""Sets the app_id of this ListRtcEventRequest.
 
         应用id
 
@@ -111,7 +111,7 @@ class ListRtcEventRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcEventRequest.
+        r"""Gets the room_id of this ListRtcEventRequest.
 
         房间id
 
@@ -122,7 +122,7 @@ class ListRtcEventRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcEventRequest.
+        r"""Sets the room_id of this ListRtcEventRequest.
 
         房间id
 
@@ -133,7 +133,7 @@ class ListRtcEventRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcEventRequest.
+        r"""Gets the start_time of this ListRtcEventRequest.
 
         起始时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T06:00:00Z。查询起止时间不超过1个小时，每次查询单个用户时，支持跨天查询，最长1天。 
 
@@ -144,7 +144,7 @@ class ListRtcEventRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcEventRequest.
+        r"""Sets the start_time of this ListRtcEventRequest.
 
         起始时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T06:00:00Z。查询起止时间不超过1个小时，每次查询单个用户时，支持跨天查询，最长1天。 
 
@@ -155,7 +155,7 @@ class ListRtcEventRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcEventRequest.
+        r"""Gets the end_time of this ListRtcEventRequest.
 
         结束时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T06:00:00Z。查询起止时间不超过1个小时，每次查询单个用户时，支持跨天查询，最长1天。 
 
@@ -166,7 +166,7 @@ class ListRtcEventRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcEventRequest.
+        r"""Sets the end_time of this ListRtcEventRequest.
 
         结束时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T06:00:00Z。查询起止时间不超过1个小时，每次查询单个用户时，支持跨天查询，最长1天。 
 

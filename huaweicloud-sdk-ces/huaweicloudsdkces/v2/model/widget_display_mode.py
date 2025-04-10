@@ -25,7 +25,7 @@ class WidgetDisplayMode:
     }
 
     def __init__(self, row_widget_num=None):
-        """WidgetDisplayMode
+        r"""WidgetDisplayMode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class WidgetDisplayMode:
 
     @property
     def row_widget_num(self):
-        """Gets the row_widget_num of this WidgetDisplayMode.
+        r"""Gets the row_widget_num of this WidgetDisplayMode.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 
@@ -54,7 +54,7 @@ class WidgetDisplayMode:
 
     @row_widget_num.setter
     def row_widget_num(self, row_widget_num):
-        """Sets the row_widget_num of this WidgetDisplayMode.
+        r"""Sets the row_widget_num of this WidgetDisplayMode.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 

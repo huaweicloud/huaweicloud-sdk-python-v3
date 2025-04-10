@@ -29,7 +29,7 @@ class CreateInstanceUserReq:
     }
 
     def __init__(self, user_name=None, user_desc=None, user_passwd=None):
-        """CreateInstanceUserReq
+        r"""CreateInstanceUserReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateInstanceUserReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateInstanceUserReq.
+        r"""Gets the user_name of this CreateInstanceUserReq.
 
         用户名称。  创建用户时，为必选参数。
 
@@ -68,7 +68,7 @@ class CreateInstanceUserReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateInstanceUserReq.
+        r"""Sets the user_name of this CreateInstanceUserReq.
 
         用户名称。  创建用户时，为必选参数。
 
@@ -79,7 +79,7 @@ class CreateInstanceUserReq:
 
     @property
     def user_desc(self):
-        """Gets the user_desc of this CreateInstanceUserReq.
+        r"""Gets the user_desc of this CreateInstanceUserReq.
 
         用户描述。
 
@@ -90,7 +90,7 @@ class CreateInstanceUserReq:
 
     @user_desc.setter
     def user_desc(self, user_desc):
-        """Sets the user_desc of this CreateInstanceUserReq.
+        r"""Sets the user_desc of this CreateInstanceUserReq.
 
         用户描述。
 
@@ -101,7 +101,7 @@ class CreateInstanceUserReq:
 
     @property
     def user_passwd(self):
-        """Gets the user_passwd of this CreateInstanceUserReq.
+        r"""Gets the user_passwd of this CreateInstanceUserReq.
 
         用户密码。  创建用户时，为必选参数。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
@@ -112,7 +112,7 @@ class CreateInstanceUserReq:
 
     @user_passwd.setter
     def user_passwd(self, user_passwd):
-        """Sets the user_passwd of this CreateInstanceUserReq.
+        r"""Sets the user_passwd of this CreateInstanceUserReq.
 
         用户密码。  创建用户时，为必选参数。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 

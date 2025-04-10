@@ -32,7 +32,7 @@ class ListQueueUsersResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, queue_name=None, privileges=None):
-        """ListQueueUsersResponse
+        r"""ListQueueUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListQueueUsersResponse.
+        r"""Gets the is_success of this ListQueueUsersResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListQueueUsersResponse.
+        r"""Sets the is_success of this ListQueueUsersResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListQueueUsersResponse.
+        r"""Gets the message of this ListQueueUsersResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListQueueUsersResponse.
+        r"""Sets the message of this ListQueueUsersResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListQueueUsersResponse.
+        r"""Gets the queue_name of this ListQueueUsersResponse.
 
         队列名称。
 
@@ -120,7 +120,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListQueueUsersResponse.
+        r"""Sets the queue_name of this ListQueueUsersResponse.
 
         队列名称。
 
@@ -131,7 +131,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @property
     def privileges(self):
-        """Gets the privileges of this ListQueueUsersResponse.
+        r"""Gets the privileges of this ListQueueUsersResponse.
 
         有权限使用该队列的用户及其对应的权限数组。
 
@@ -142,7 +142,7 @@ class ListQueueUsersResponse(SdkResponse):
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this ListQueueUsersResponse.
+        r"""Sets the privileges of this ListQueueUsersResponse.
 
         有权限使用该队列的用户及其对应的权限数组。
 

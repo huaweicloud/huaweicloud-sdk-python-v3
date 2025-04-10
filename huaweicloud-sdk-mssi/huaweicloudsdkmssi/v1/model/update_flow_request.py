@@ -27,7 +27,7 @@ class UpdateFlowRequest:
     }
 
     def __init__(self, flow_id=None, body=None):
-        """UpdateFlowRequest
+        r"""UpdateFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFlowRequest:
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this UpdateFlowRequest.
+        r"""Gets the flow_id of this UpdateFlowRequest.
 
         flow_id
 
@@ -60,7 +60,7 @@ class UpdateFlowRequest:
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this UpdateFlowRequest.
+        r"""Sets the flow_id of this UpdateFlowRequest.
 
         flow_id
 
@@ -71,7 +71,7 @@ class UpdateFlowRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlowRequest.
+        r"""Gets the body of this UpdateFlowRequest.
 
         :return: The body of this UpdateFlowRequest.
         :rtype: :class:`huaweicloudsdkmssi.v1.FlowMeta`
@@ -80,7 +80,7 @@ class UpdateFlowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlowRequest.
+        r"""Sets the body of this UpdateFlowRequest.
 
         :param body: The body of this UpdateFlowRequest.
         :type body: :class:`huaweicloudsdkmssi.v1.FlowMeta`

@@ -25,7 +25,7 @@ class BatchDeleteRulesRequestBody:
     }
 
     def __init__(self, resources=None):
-        """BatchDeleteRulesRequestBody
+        r"""BatchDeleteRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteRulesRequestBody:
 
     @property
     def resources(self):
-        """Gets the resources of this BatchDeleteRulesRequestBody.
+        r"""Gets the resources of this BatchDeleteRulesRequestBody.
 
         规则ID列表，自动向下取整
 
@@ -53,7 +53,7 @@ class BatchDeleteRulesRequestBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this BatchDeleteRulesRequestBody.
+        r"""Sets the resources of this BatchDeleteRulesRequestBody.
 
         规则ID列表，自动向下取整
 

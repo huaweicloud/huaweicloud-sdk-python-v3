@@ -27,7 +27,7 @@ class SetInstancesDbShrinkRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SetInstancesDbShrinkRequest
+        r"""SetInstancesDbShrinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetInstancesDbShrinkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetInstancesDbShrinkRequest.
+        r"""Gets the instance_id of this SetInstancesDbShrinkRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class SetInstancesDbShrinkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetInstancesDbShrinkRequest.
+        r"""Sets the instance_id of this SetInstancesDbShrinkRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class SetInstancesDbShrinkRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetInstancesDbShrinkRequest.
+        r"""Gets the body of this SetInstancesDbShrinkRequest.
 
         :return: The body of this SetInstancesDbShrinkRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDBShrinkRequestBody`
@@ -80,7 +80,7 @@ class SetInstancesDbShrinkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetInstancesDbShrinkRequest.
+        r"""Sets the body of this SetInstancesDbShrinkRequest.
 
         :param body: The body of this SetInstancesDbShrinkRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateDBShrinkRequestBody`

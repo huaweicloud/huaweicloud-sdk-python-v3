@@ -29,7 +29,7 @@ class BatchDeleteMembersOption:
     }
 
     def __init__(self, id=None, address=None, protocol_port=None):
-        """BatchDeleteMembersOption
+        r"""BatchDeleteMembersOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchDeleteMembersOption:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteMembersOption.
+        r"""Gets the id of this BatchDeleteMembersOption.
 
         需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -68,7 +68,7 @@ class BatchDeleteMembersOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteMembersOption.
+        r"""Sets the id of this BatchDeleteMembersOption.
 
         需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -79,7 +79,7 @@ class BatchDeleteMembersOption:
 
     @property
     def address(self):
-        """Gets the address of this BatchDeleteMembersOption.
+        r"""Gets the address of this BatchDeleteMembersOption.
 
         后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
 
@@ -90,7 +90,7 @@ class BatchDeleteMembersOption:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BatchDeleteMembersOption.
+        r"""Sets the address of this BatchDeleteMembersOption.
 
         后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
 
@@ -101,7 +101,7 @@ class BatchDeleteMembersOption:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this BatchDeleteMembersOption.
+        r"""Gets the protocol_port of this BatchDeleteMembersOption.
 
         后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
 
@@ -112,7 +112,7 @@ class BatchDeleteMembersOption:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this BatchDeleteMembersOption.
+        r"""Sets the protocol_port of this BatchDeleteMembersOption.
 
         后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
 

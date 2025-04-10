@@ -27,7 +27,7 @@ class SimpleFieldDto:
     }
 
     def __init__(self, column_name=None, column_type=None):
-        """SimpleFieldDto
+        r"""SimpleFieldDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SimpleFieldDto:
 
     @property
     def column_name(self):
-        """Gets the column_name of this SimpleFieldDto.
+        r"""Gets the column_name of this SimpleFieldDto.
 
         指标表对应字段名称。
 
@@ -61,7 +61,7 @@ class SimpleFieldDto:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this SimpleFieldDto.
+        r"""Sets the column_name of this SimpleFieldDto.
 
         指标表对应字段名称。
 
@@ -72,7 +72,7 @@ class SimpleFieldDto:
 
     @property
     def column_type(self):
-        """Gets the column_type of this SimpleFieldDto.
+        r"""Gets the column_type of this SimpleFieldDto.
 
         指标表对应字段类型。
 
@@ -83,7 +83,7 @@ class SimpleFieldDto:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this SimpleFieldDto.
+        r"""Sets the column_type of this SimpleFieldDto.
 
         指标表对应字段类型。
 

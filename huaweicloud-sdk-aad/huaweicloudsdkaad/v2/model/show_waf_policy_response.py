@@ -34,7 +34,7 @@ class ShowWafPolicyResponse(SdkResponse):
     }
 
     def __init__(self, domain_name=None, overseas_type=None, options=None, level=None, mode=None):
-        """ShowWafPolicyResponse
+        r"""ShowWafPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowWafPolicyResponse.
+        r"""Gets the domain_name of this ShowWafPolicyResponse.
 
         域名(包含端口)
 
@@ -83,7 +83,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowWafPolicyResponse.
+        r"""Sets the domain_name of this ShowWafPolicyResponse.
 
         域名(包含端口)
 
@@ -94,7 +94,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this ShowWafPolicyResponse.
+        r"""Gets the overseas_type of this ShowWafPolicyResponse.
 
         0-中国大陆，1-中国大陆外
 
@@ -105,7 +105,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this ShowWafPolicyResponse.
+        r"""Sets the overseas_type of this ShowWafPolicyResponse.
 
         0-中国大陆，1-中国大陆外
 
@@ -116,7 +116,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @property
     def options(self):
-        """Gets the options of this ShowWafPolicyResponse.
+        r"""Gets the options of this ShowWafPolicyResponse.
 
         :return: The options of this ShowWafPolicyResponse.
         :rtype: :class:`huaweicloudsdkaad.v2.WafPolicyOptions`
@@ -125,7 +125,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @options.setter
     def options(self, options):
-        """Sets the options of this ShowWafPolicyResponse.
+        r"""Sets the options of this ShowWafPolicyResponse.
 
         :param options: The options of this ShowWafPolicyResponse.
         :type options: :class:`huaweicloudsdkaad.v2.WafPolicyOptions`
@@ -134,7 +134,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @property
     def level(self):
-        """Gets the level of this ShowWafPolicyResponse.
+        r"""Gets the level of this ShowWafPolicyResponse.
 
         智能CC防护等级：[0-宽松,1- 正常, 2- 严格]
 
@@ -145,7 +145,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ShowWafPolicyResponse.
+        r"""Sets the level of this ShowWafPolicyResponse.
 
         智能CC防护等级：[0-宽松,1- 正常, 2- 严格]
 
@@ -156,7 +156,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this ShowWafPolicyResponse.
+        r"""Gets the mode of this ShowWafPolicyResponse.
 
         智能CC模式：0-预警，1-防护
 
@@ -167,7 +167,7 @@ class ShowWafPolicyResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowWafPolicyResponse.
+        r"""Sets the mode of this ShowWafPolicyResponse.
 
         智能CC模式：0-预警，1-防护
 

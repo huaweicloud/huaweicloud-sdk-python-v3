@@ -26,7 +26,7 @@ class ListEcsSpecificationResponse(SdkResponse):
     }
 
     def __init__(self, specification=None):
-        """ListEcsSpecificationResponse
+        r"""ListEcsSpecificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEcsSpecificationResponse(SdkResponse):
 
     @property
     def specification(self):
-        """Gets the specification of this ListEcsSpecificationResponse.
+        r"""Gets the specification of this ListEcsSpecificationResponse.
 
         ecs规格集合
 
@@ -55,7 +55,7 @@ class ListEcsSpecificationResponse(SdkResponse):
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ListEcsSpecificationResponse.
+        r"""Sets the specification of this ListEcsSpecificationResponse.
 
         ecs规格集合
 

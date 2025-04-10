@@ -27,7 +27,7 @@ class BatchCreateGeipSegmentTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateGeipSegmentTagsRequest
+        r"""BatchCreateGeipSegmentTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateGeipSegmentTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateGeipSegmentTagsRequest.
+        r"""Gets the resource_id of this BatchCreateGeipSegmentTagsRequest.
 
         :return: The resource_id of this BatchCreateGeipSegmentTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class BatchCreateGeipSegmentTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateGeipSegmentTagsRequest.
+        r"""Sets the resource_id of this BatchCreateGeipSegmentTagsRequest.
 
         :param resource_id: The resource_id of this BatchCreateGeipSegmentTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class BatchCreateGeipSegmentTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateGeipSegmentTagsRequest.
+        r"""Gets the body of this BatchCreateGeipSegmentTagsRequest.
 
         :return: The body of this BatchCreateGeipSegmentTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`
@@ -76,7 +76,7 @@ class BatchCreateGeipSegmentTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateGeipSegmentTagsRequest.
+        r"""Sets the body of this BatchCreateGeipSegmentTagsRequest.
 
         :param body: The body of this BatchCreateGeipSegmentTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`

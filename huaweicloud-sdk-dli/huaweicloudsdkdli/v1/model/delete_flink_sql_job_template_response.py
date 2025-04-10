@@ -30,7 +30,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, template=None):
-        """DeleteFlinkSqlJobTemplateResponse
+        r"""DeleteFlinkSqlJobTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this DeleteFlinkSqlJobTemplateResponse.
+        r"""Gets the is_success of this DeleteFlinkSqlJobTemplateResponse.
 
         响应正确与否的标志，true表示成功。
 
@@ -69,7 +69,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this DeleteFlinkSqlJobTemplateResponse.
+        r"""Sets the is_success of this DeleteFlinkSqlJobTemplateResponse.
 
         响应正确与否的标志，true表示成功。
 
@@ -80,7 +80,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteFlinkSqlJobTemplateResponse.
+        r"""Gets the message of this DeleteFlinkSqlJobTemplateResponse.
 
         消息内容。
 
@@ -91,7 +91,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteFlinkSqlJobTemplateResponse.
+        r"""Sets the message of this DeleteFlinkSqlJobTemplateResponse.
 
         消息内容。
 
@@ -102,7 +102,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this DeleteFlinkSqlJobTemplateResponse.
+        r"""Gets the template of this DeleteFlinkSqlJobTemplateResponse.
 
         :return: The template of this DeleteFlinkSqlJobTemplateResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateId`
@@ -111,7 +111,7 @@ class DeleteFlinkSqlJobTemplateResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this DeleteFlinkSqlJobTemplateResponse.
+        r"""Sets the template of this DeleteFlinkSqlJobTemplateResponse.
 
         :param template: The template of this DeleteFlinkSqlJobTemplateResponse.
         :type template: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateId`

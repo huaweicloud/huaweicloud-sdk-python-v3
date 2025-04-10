@@ -27,7 +27,7 @@ class Follow302StatusBody:
     }
 
     def __init__(self, domain_id=None, follow_status=None):
-        """Follow302StatusBody
+        r"""Follow302StatusBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Follow302StatusBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Follow302StatusBody.
+        r"""Gets the domain_id of this Follow302StatusBody.
 
         加速域名id。
 
@@ -61,7 +61,7 @@ class Follow302StatusBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Follow302StatusBody.
+        r"""Sets the domain_id of this Follow302StatusBody.
 
         加速域名id。
 
@@ -72,7 +72,7 @@ class Follow302StatusBody:
 
     @property
     def follow_status(self):
-        """Gets the follow_status of this Follow302StatusBody.
+        r"""Gets the follow_status of this Follow302StatusBody.
 
         follow302状态，off：关闭，on：开启。
 
@@ -83,7 +83,7 @@ class Follow302StatusBody:
 
     @follow_status.setter
     def follow_status(self, follow_status):
-        """Sets the follow_status of this Follow302StatusBody.
+        r"""Sets the follow_status of this Follow302StatusBody.
 
         follow302状态，off：关闭，on：开启。
 

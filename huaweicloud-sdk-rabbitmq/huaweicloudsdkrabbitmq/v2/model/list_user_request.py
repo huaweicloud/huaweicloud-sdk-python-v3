@@ -29,7 +29,7 @@ class ListUserRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListUserRequest
+        r"""ListUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListUserRequest.
+        r"""Gets the instance_id of this ListUserRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListUserRequest.
+        r"""Sets the instance_id of this ListUserRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListUserRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserRequest.
+        r"""Gets the offset of this ListUserRequest.
 
         分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
 
@@ -89,7 +89,7 @@ class ListUserRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserRequest.
+        r"""Sets the offset of this ListUserRequest.
 
         分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
 
@@ -100,7 +100,7 @@ class ListUserRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserRequest.
+        r"""Gets the limit of this ListUserRequest.
 
         分页查询单页数量，取值范围0~50，默认查询10条。
 
@@ -111,7 +111,7 @@ class ListUserRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserRequest.
+        r"""Sets the limit of this ListUserRequest.
 
         分页查询单页数量，取值范围0~50，默认查询10条。
 

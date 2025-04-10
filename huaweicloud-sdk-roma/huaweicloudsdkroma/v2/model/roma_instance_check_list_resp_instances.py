@@ -69,7 +69,7 @@ class RomaInstanceCheckListRespInstances:
     }
 
     def __init__(self, id=None, name=None, description=None, flavor_id=None, flavor_type=None, cpu_arch=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_enable=None, publicip_id=None, publicip_address=None, status=None, error_code=None, error_msg=None, charge_type=None, project_id=None, create_time=None, update_time=None, maintain_begin=None, maintain_end=None, available_zone_ids=None, enterprise_project_id=None):
-        """RomaInstanceCheckListRespInstances
+        r"""RomaInstanceCheckListRespInstances
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def id(self):
-        """Gets the id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the id of this RomaInstanceCheckListRespInstances.
 
         实例ID
 
@@ -208,7 +208,7 @@ class RomaInstanceCheckListRespInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the id of this RomaInstanceCheckListRespInstances.
 
         实例ID
 
@@ -219,7 +219,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def name(self):
-        """Gets the name of this RomaInstanceCheckListRespInstances.
+        r"""Gets the name of this RomaInstanceCheckListRespInstances.
 
         实例名称
 
@@ -230,7 +230,7 @@ class RomaInstanceCheckListRespInstances:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RomaInstanceCheckListRespInstances.
+        r"""Sets the name of this RomaInstanceCheckListRespInstances.
 
         实例名称
 
@@ -241,7 +241,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def description(self):
-        """Gets the description of this RomaInstanceCheckListRespInstances.
+        r"""Gets the description of this RomaInstanceCheckListRespInstances.
 
         实例描述
 
@@ -252,7 +252,7 @@ class RomaInstanceCheckListRespInstances:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RomaInstanceCheckListRespInstances.
+        r"""Sets the description of this RomaInstanceCheckListRespInstances.
 
         实例描述
 
@@ -263,7 +263,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the flavor_id of this RomaInstanceCheckListRespInstances.
 
         实例规格ID
 
@@ -274,7 +274,7 @@ class RomaInstanceCheckListRespInstances:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the flavor_id of this RomaInstanceCheckListRespInstances.
 
         实例规格ID
 
@@ -285,7 +285,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def flavor_type(self):
-        """Gets the flavor_type of this RomaInstanceCheckListRespInstances.
+        r"""Gets the flavor_type of this RomaInstanceCheckListRespInstances.
 
         实例规格类型
 
@@ -296,7 +296,7 @@ class RomaInstanceCheckListRespInstances:
 
     @flavor_type.setter
     def flavor_type(self, flavor_type):
-        """Sets the flavor_type of this RomaInstanceCheckListRespInstances.
+        r"""Sets the flavor_type of this RomaInstanceCheckListRespInstances.
 
         实例规格类型
 
@@ -307,7 +307,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def cpu_arch(self):
-        """Gets the cpu_arch of this RomaInstanceCheckListRespInstances.
+        r"""Gets the cpu_arch of this RomaInstanceCheckListRespInstances.
 
         CPU架构类型，取值如下： - x86_64: x86架构 - aarch64: arm架构 
 
@@ -318,7 +318,7 @@ class RomaInstanceCheckListRespInstances:
 
     @cpu_arch.setter
     def cpu_arch(self, cpu_arch):
-        """Sets the cpu_arch of this RomaInstanceCheckListRespInstances.
+        r"""Sets the cpu_arch of this RomaInstanceCheckListRespInstances.
 
         CPU架构类型，取值如下： - x86_64: x86架构 - aarch64: arm架构 
 
@@ -329,7 +329,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the vpc_id of this RomaInstanceCheckListRespInstances.
 
         实例指定虚拟私有云ID
 
@@ -340,7 +340,7 @@ class RomaInstanceCheckListRespInstances:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the vpc_id of this RomaInstanceCheckListRespInstances.
 
         实例指定虚拟私有云ID
 
@@ -351,7 +351,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the subnet_id of this RomaInstanceCheckListRespInstances.
 
         实例指定虚拟私有云子网ID
 
@@ -362,7 +362,7 @@ class RomaInstanceCheckListRespInstances:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the subnet_id of this RomaInstanceCheckListRespInstances.
 
         实例指定虚拟私有云子网ID
 
@@ -373,7 +373,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the security_group_id of this RomaInstanceCheckListRespInstances.
 
         实例指定安全组ID
 
@@ -384,7 +384,7 @@ class RomaInstanceCheckListRespInstances:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the security_group_id of this RomaInstanceCheckListRespInstances.
 
         实例指定安全组ID
 
@@ -395,7 +395,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def publicip_enable(self):
-        """Gets the publicip_enable of this RomaInstanceCheckListRespInstances.
+        r"""Gets the publicip_enable of this RomaInstanceCheckListRespInstances.
 
         是否开启公网访问，开启时publicip_id字段必填。 
 
@@ -406,7 +406,7 @@ class RomaInstanceCheckListRespInstances:
 
     @publicip_enable.setter
     def publicip_enable(self, publicip_enable):
-        """Sets the publicip_enable of this RomaInstanceCheckListRespInstances.
+        r"""Sets the publicip_enable of this RomaInstanceCheckListRespInstances.
 
         是否开启公网访问，开启时publicip_id字段必填。 
 
@@ -417,7 +417,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the publicip_id of this RomaInstanceCheckListRespInstances.
 
         实例绑定的弹性公网地址ID
 
@@ -428,7 +428,7 @@ class RomaInstanceCheckListRespInstances:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the publicip_id of this RomaInstanceCheckListRespInstances.
 
         实例绑定的弹性公网地址ID
 
@@ -439,7 +439,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this RomaInstanceCheckListRespInstances.
+        r"""Gets the publicip_address of this RomaInstanceCheckListRespInstances.
 
         实例绑定的弹性公网地址
 
@@ -450,7 +450,7 @@ class RomaInstanceCheckListRespInstances:
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this RomaInstanceCheckListRespInstances.
+        r"""Sets the publicip_address of this RomaInstanceCheckListRespInstances.
 
         实例绑定的弹性公网地址
 
@@ -461,7 +461,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def status(self):
-        """Gets the status of this RomaInstanceCheckListRespInstances.
+        r"""Gets the status of this RomaInstanceCheckListRespInstances.
 
         实例运行状态
 
@@ -472,7 +472,7 @@ class RomaInstanceCheckListRespInstances:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RomaInstanceCheckListRespInstances.
+        r"""Sets the status of this RomaInstanceCheckListRespInstances.
 
         实例运行状态
 
@@ -483,7 +483,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def error_code(self):
-        """Gets the error_code of this RomaInstanceCheckListRespInstances.
+        r"""Gets the error_code of this RomaInstanceCheckListRespInstances.
 
         错误码
 
@@ -494,7 +494,7 @@ class RomaInstanceCheckListRespInstances:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RomaInstanceCheckListRespInstances.
+        r"""Sets the error_code of this RomaInstanceCheckListRespInstances.
 
         错误码
 
@@ -505,7 +505,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RomaInstanceCheckListRespInstances.
+        r"""Gets the error_msg of this RomaInstanceCheckListRespInstances.
 
         错误消息
 
@@ -516,7 +516,7 @@ class RomaInstanceCheckListRespInstances:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RomaInstanceCheckListRespInstances.
+        r"""Sets the error_msg of this RomaInstanceCheckListRespInstances.
 
         错误消息
 
@@ -527,7 +527,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def charge_type(self):
-        """Gets the charge_type of this RomaInstanceCheckListRespInstances.
+        r"""Gets the charge_type of this RomaInstanceCheckListRespInstances.
 
         实例计费模式
 
@@ -538,7 +538,7 @@ class RomaInstanceCheckListRespInstances:
 
     @charge_type.setter
     def charge_type(self, charge_type):
-        """Sets the charge_type of this RomaInstanceCheckListRespInstances.
+        r"""Sets the charge_type of this RomaInstanceCheckListRespInstances.
 
         实例计费模式
 
@@ -549,7 +549,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the project_id of this RomaInstanceCheckListRespInstances.
 
         租户项目ID
 
@@ -560,7 +560,7 @@ class RomaInstanceCheckListRespInstances:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the project_id of this RomaInstanceCheckListRespInstances.
 
         租户项目ID
 
@@ -571,7 +571,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RomaInstanceCheckListRespInstances.
+        r"""Gets the create_time of this RomaInstanceCheckListRespInstances.
 
         创建时间
 
@@ -582,7 +582,7 @@ class RomaInstanceCheckListRespInstances:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RomaInstanceCheckListRespInstances.
+        r"""Sets the create_time of this RomaInstanceCheckListRespInstances.
 
         创建时间
 
@@ -593,7 +593,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RomaInstanceCheckListRespInstances.
+        r"""Gets the update_time of this RomaInstanceCheckListRespInstances.
 
         更新时间
 
@@ -604,7 +604,7 @@ class RomaInstanceCheckListRespInstances:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RomaInstanceCheckListRespInstances.
+        r"""Sets the update_time of this RomaInstanceCheckListRespInstances.
 
         更新时间
 
@@ -615,7 +615,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this RomaInstanceCheckListRespInstances.
+        r"""Gets the maintain_begin of this RomaInstanceCheckListRespInstances.
 
         运维开始时间
 
@@ -626,7 +626,7 @@ class RomaInstanceCheckListRespInstances:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this RomaInstanceCheckListRespInstances.
+        r"""Sets the maintain_begin of this RomaInstanceCheckListRespInstances.
 
         运维开始时间
 
@@ -637,7 +637,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this RomaInstanceCheckListRespInstances.
+        r"""Gets the maintain_end of this RomaInstanceCheckListRespInstances.
 
         运维结束时间
 
@@ -648,7 +648,7 @@ class RomaInstanceCheckListRespInstances:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this RomaInstanceCheckListRespInstances.
+        r"""Sets the maintain_end of this RomaInstanceCheckListRespInstances.
 
         运维结束时间
 
@@ -659,7 +659,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def available_zone_ids(self):
-        """Gets the available_zone_ids of this RomaInstanceCheckListRespInstances.
+        r"""Gets the available_zone_ids of this RomaInstanceCheckListRespInstances.
 
         创实例使用的可用区列表
 
@@ -670,7 +670,7 @@ class RomaInstanceCheckListRespInstances:
 
     @available_zone_ids.setter
     def available_zone_ids(self, available_zone_ids):
-        """Sets the available_zone_ids of this RomaInstanceCheckListRespInstances.
+        r"""Sets the available_zone_ids of this RomaInstanceCheckListRespInstances.
 
         创实例使用的可用区列表
 
@@ -681,7 +681,7 @@ class RomaInstanceCheckListRespInstances:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RomaInstanceCheckListRespInstances.
+        r"""Gets the enterprise_project_id of this RomaInstanceCheckListRespInstances.
 
         实例所属企业项目ID
 
@@ -692,7 +692,7 @@ class RomaInstanceCheckListRespInstances:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RomaInstanceCheckListRespInstances.
+        r"""Sets the enterprise_project_id of this RomaInstanceCheckListRespInstances.
 
         实例所属企业项目ID
 

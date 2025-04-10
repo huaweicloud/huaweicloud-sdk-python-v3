@@ -31,7 +31,7 @@ class UpdateHttpPolicyRuleStatusRequest:
     }
 
     def __init__(self, policy_id=None, rule_type=None, rule_id=None, body=None):
-        """UpdateHttpPolicyRuleStatusRequest
+        r"""UpdateHttpPolicyRuleStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Gets the policy_id of this UpdateHttpPolicyRuleStatusRequest.
 
         防护策略id
 
@@ -72,7 +72,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Sets the policy_id of this UpdateHttpPolicyRuleStatusRequest.
 
         防护策略id
 
@@ -83,7 +83,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Gets the rule_type of this UpdateHttpPolicyRuleStatusRequest.
 
         防护策略规则 cc-rule|access-control-rule|blocktrustip-rule|privacy-rule|ignore-rule|geoip-rule|punishment-rule
 
@@ -94,7 +94,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Sets the rule_type of this UpdateHttpPolicyRuleStatusRequest.
 
         防护策略规则 cc-rule|access-control-rule|blocktrustip-rule|privacy-rule|ignore-rule|geoip-rule|punishment-rule
 
@@ -105,7 +105,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Gets the rule_id of this UpdateHttpPolicyRuleStatusRequest.
 
         防护策略规则id
 
@@ -116,7 +116,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Sets the rule_id of this UpdateHttpPolicyRuleStatusRequest.
 
         防护策略规则id
 
@@ -127,7 +127,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Gets the body of this UpdateHttpPolicyRuleStatusRequest.
 
         :return: The body of this UpdateHttpPolicyRuleStatusRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPolicyRuleStatusRequestBody`
@@ -136,7 +136,7 @@ class UpdateHttpPolicyRuleStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpPolicyRuleStatusRequest.
+        r"""Sets the body of this UpdateHttpPolicyRuleStatusRequest.
 
         :param body: The body of this UpdateHttpPolicyRuleStatusRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPolicyRuleStatusRequestBody`

@@ -26,7 +26,7 @@ class LogoutRequest:
     }
 
     def __init__(self, access_token=None):
-        """LogoutRequest
+        r"""LogoutRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LogoutRequest:
 
     @property
     def access_token(self):
-        """Gets the access_token of this LogoutRequest.
+        r"""Gets the access_token of this LogoutRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -54,7 +54,7 @@ class LogoutRequest:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this LogoutRequest.
+        r"""Sets the access_token of this LogoutRequest.
 
         创建令牌接口调用签发的访问令牌
 

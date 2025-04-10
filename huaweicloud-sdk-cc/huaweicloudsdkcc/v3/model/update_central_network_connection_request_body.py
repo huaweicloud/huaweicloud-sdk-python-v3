@@ -25,7 +25,7 @@ class UpdateCentralNetworkConnectionRequestBody:
     }
 
     def __init__(self, central_network_connection=None):
-        """UpdateCentralNetworkConnectionRequestBody
+        r"""UpdateCentralNetworkConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateCentralNetworkConnectionRequestBody:
 
     @property
     def central_network_connection(self):
-        """Gets the central_network_connection of this UpdateCentralNetworkConnectionRequestBody.
+        r"""Gets the central_network_connection of this UpdateCentralNetworkConnectionRequestBody.
 
         :return: The central_network_connection of this UpdateCentralNetworkConnectionRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkConnection`
@@ -51,7 +51,7 @@ class UpdateCentralNetworkConnectionRequestBody:
 
     @central_network_connection.setter
     def central_network_connection(self, central_network_connection):
-        """Sets the central_network_connection of this UpdateCentralNetworkConnectionRequestBody.
+        r"""Sets the central_network_connection of this UpdateCentralNetworkConnectionRequestBody.
 
         :param central_network_connection: The central_network_connection of this UpdateCentralNetworkConnectionRequestBody.
         :type central_network_connection: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkConnection`

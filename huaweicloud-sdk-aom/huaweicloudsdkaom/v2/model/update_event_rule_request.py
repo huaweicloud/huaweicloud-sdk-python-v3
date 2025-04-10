@@ -25,7 +25,7 @@ class UpdateEventRuleRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateEventRuleRequest
+        r"""UpdateEventRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateEventRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventRuleRequest.
+        r"""Gets the body of this UpdateEventRuleRequest.
 
         :return: The body of this UpdateEventRuleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.Event2alarmRuleBody`
@@ -52,7 +52,7 @@ class UpdateEventRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventRuleRequest.
+        r"""Sets the body of this UpdateEventRuleRequest.
 
         :param body: The body of this UpdateEventRuleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.Event2alarmRuleBody`

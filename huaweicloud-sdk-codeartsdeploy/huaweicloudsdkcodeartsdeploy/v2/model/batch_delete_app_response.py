@@ -28,7 +28,7 @@ class BatchDeleteAppResponse(SdkResponse):
     }
 
     def __init__(self, result=None, total_num=None):
-        """BatchDeleteAppResponse
+        r"""BatchDeleteAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteAppResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchDeleteAppResponse.
+        r"""Gets the result of this BatchDeleteAppResponse.
 
         批量删除应用结果
 
@@ -62,7 +62,7 @@ class BatchDeleteAppResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchDeleteAppResponse.
+        r"""Sets the result of this BatchDeleteAppResponse.
 
         批量删除应用结果
 
@@ -73,7 +73,7 @@ class BatchDeleteAppResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this BatchDeleteAppResponse.
+        r"""Gets the total_num of this BatchDeleteAppResponse.
 
         批量删除应用总数
 
@@ -84,7 +84,7 @@ class BatchDeleteAppResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this BatchDeleteAppResponse.
+        r"""Sets the total_num of this BatchDeleteAppResponse.
 
         批量删除应用总数
 

@@ -28,7 +28,7 @@ class ListRulesResponse(SdkResponse):
     }
 
     def __init__(self, info=None, total=None):
-        """ListRulesResponse
+        r"""ListRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def info(self):
-        """Gets the info of this ListRulesResponse.
+        r"""Gets the info of this ListRulesResponse.
 
         规则信息
 
@@ -62,7 +62,7 @@ class ListRulesResponse(SdkResponse):
 
     @info.setter
     def info(self, info):
-        """Sets the info of this ListRulesResponse.
+        r"""Sets the info of this ListRulesResponse.
 
         规则信息
 
@@ -73,7 +73,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRulesResponse.
+        r"""Gets the total of this ListRulesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRulesResponse.
+        r"""Sets the total of this ListRulesResponse.
 
         总数
 

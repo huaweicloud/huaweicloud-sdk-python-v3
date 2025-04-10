@@ -26,7 +26,7 @@ class UpdateProxyPortResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateProxyPortResponse
+        r"""UpdateProxyPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateProxyPortResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateProxyPortResponse.
+        r"""Gets the job_id of this UpdateProxyPortResponse.
 
         修改proxy端口号的任务ID。
 
@@ -55,7 +55,7 @@ class UpdateProxyPortResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateProxyPortResponse.
+        r"""Sets the job_id of this UpdateProxyPortResponse.
 
         修改proxy端口号的任务ID。
 

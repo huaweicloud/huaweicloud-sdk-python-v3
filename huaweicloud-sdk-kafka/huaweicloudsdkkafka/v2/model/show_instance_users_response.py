@@ -26,7 +26,7 @@ class ShowInstanceUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """ShowInstanceUsersResponse
+        r"""ShowInstanceUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowInstanceUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ShowInstanceUsersResponse.
+        r"""Gets the users of this ShowInstanceUsersResponse.
 
         用户列表。
 
@@ -55,7 +55,7 @@ class ShowInstanceUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ShowInstanceUsersResponse.
+        r"""Sets the users of this ShowInstanceUsersResponse.
 
         用户列表。
 

@@ -31,7 +31,7 @@ class MergeRequestAssigneeListItem:
     }
 
     def __init__(self, id=None, name=None, state=None, username=None):
-        """MergeRequestAssigneeListItem
+        r"""MergeRequestAssigneeListItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MergeRequestAssigneeListItem:
 
     @property
     def id(self):
-        """Gets the id of this MergeRequestAssigneeListItem.
+        r"""Gets the id of this MergeRequestAssigneeListItem.
 
         用户id
 
@@ -75,7 +75,7 @@ class MergeRequestAssigneeListItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MergeRequestAssigneeListItem.
+        r"""Sets the id of this MergeRequestAssigneeListItem.
 
         用户id
 
@@ -86,7 +86,7 @@ class MergeRequestAssigneeListItem:
 
     @property
     def name(self):
-        """Gets the name of this MergeRequestAssigneeListItem.
+        r"""Gets the name of this MergeRequestAssigneeListItem.
 
         用户名
 
@@ -97,7 +97,7 @@ class MergeRequestAssigneeListItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MergeRequestAssigneeListItem.
+        r"""Sets the name of this MergeRequestAssigneeListItem.
 
         用户名
 
@@ -108,7 +108,7 @@ class MergeRequestAssigneeListItem:
 
     @property
     def state(self):
-        """Gets the state of this MergeRequestAssigneeListItem.
+        r"""Gets the state of this MergeRequestAssigneeListItem.
 
         用户状态
 
@@ -119,7 +119,7 @@ class MergeRequestAssigneeListItem:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this MergeRequestAssigneeListItem.
+        r"""Sets the state of this MergeRequestAssigneeListItem.
 
         用户状态
 
@@ -130,7 +130,7 @@ class MergeRequestAssigneeListItem:
 
     @property
     def username(self):
-        """Gets the username of this MergeRequestAssigneeListItem.
+        r"""Gets the username of this MergeRequestAssigneeListItem.
 
         用户iamId
 
@@ -141,7 +141,7 @@ class MergeRequestAssigneeListItem:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this MergeRequestAssigneeListItem.
+        r"""Sets the username of this MergeRequestAssigneeListItem.
 
         用户iamId
 

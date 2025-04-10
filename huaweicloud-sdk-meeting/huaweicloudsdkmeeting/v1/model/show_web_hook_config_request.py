@@ -27,7 +27,7 @@ class ShowWebHookConfigRequest:
     }
 
     def __init__(self, corp_id=None, sp_id=None):
-        """ShowWebHookConfigRequest
+        r"""ShowWebHookConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowWebHookConfigRequest:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this ShowWebHookConfigRequest.
+        r"""Gets the corp_id of this ShowWebHookConfigRequest.
 
         企业ID。按企业注册回调时需要填写。
 
@@ -61,7 +61,7 @@ class ShowWebHookConfigRequest:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this ShowWebHookConfigRequest.
+        r"""Sets the corp_id of this ShowWebHookConfigRequest.
 
         企业ID。按企业注册回调时需要填写。
 
@@ -72,7 +72,7 @@ class ShowWebHookConfigRequest:
 
     @property
     def sp_id(self):
-        """Gets the sp_id of this ShowWebHookConfigRequest.
+        r"""Gets the sp_id of this ShowWebHookConfigRequest.
 
         SP ID。多租户场景下，按SP注册回调时需要填写。
 
@@ -83,7 +83,7 @@ class ShowWebHookConfigRequest:
 
     @sp_id.setter
     def sp_id(self, sp_id):
-        """Sets the sp_id of this ShowWebHookConfigRequest.
+        r"""Sets the sp_id of this ShowWebHookConfigRequest.
 
         SP ID。多租户场景下，按SP注册回调时需要填写。
 

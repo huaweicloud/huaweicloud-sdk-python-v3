@@ -29,7 +29,7 @@ class DeleteIaConfigRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, config_id=None):
-        """DeleteIaConfigRequest
+        r"""DeleteIaConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteIaConfigRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteIaConfigRequest.
+        r"""Gets the node_id of this DeleteIaConfigRequest.
 
         边缘节点ID
 
@@ -65,7 +65,7 @@ class DeleteIaConfigRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteIaConfigRequest.
+        r"""Sets the node_id of this DeleteIaConfigRequest.
 
         边缘节点ID
 
@@ -76,7 +76,7 @@ class DeleteIaConfigRequest:
 
     @property
     def ia_id(self):
-        """Gets the ia_id of this DeleteIaConfigRequest.
+        r"""Gets the ia_id of this DeleteIaConfigRequest.
 
         边侧第三方应用的模块ID
 
@@ -87,7 +87,7 @@ class DeleteIaConfigRequest:
 
     @ia_id.setter
     def ia_id(self, ia_id):
-        """Sets the ia_id of this DeleteIaConfigRequest.
+        r"""Sets the ia_id of this DeleteIaConfigRequest.
 
         边侧第三方应用的模块ID
 
@@ -98,7 +98,7 @@ class DeleteIaConfigRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this DeleteIaConfigRequest.
+        r"""Gets the config_id of this DeleteIaConfigRequest.
 
         配置ID
 
@@ -109,7 +109,7 @@ class DeleteIaConfigRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this DeleteIaConfigRequest.
+        r"""Sets the config_id of this DeleteIaConfigRequest.
 
         配置ID
 

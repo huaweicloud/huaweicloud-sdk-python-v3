@@ -31,7 +31,7 @@ class ExerciseCodeResource:
     }
 
     def __init__(self, id=None, polymeric_resource_id=None, content=None, code_answer=None):
-        """ExerciseCodeResource
+        r"""ExerciseCodeResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ExerciseCodeResource:
 
     @property
     def id(self):
-        """Gets the id of this ExerciseCodeResource.
+        r"""Gets the id of this ExerciseCodeResource.
 
         习题内容存储id
 
@@ -75,7 +75,7 @@ class ExerciseCodeResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExerciseCodeResource.
+        r"""Sets the id of this ExerciseCodeResource.
 
         习题内容存储id
 
@@ -86,7 +86,7 @@ class ExerciseCodeResource:
 
     @property
     def polymeric_resource_id(self):
-        """Gets the polymeric_resource_id of this ExerciseCodeResource.
+        r"""Gets the polymeric_resource_id of this ExerciseCodeResource.
 
         资源聚合id
 
@@ -97,7 +97,7 @@ class ExerciseCodeResource:
 
     @polymeric_resource_id.setter
     def polymeric_resource_id(self, polymeric_resource_id):
-        """Sets the polymeric_resource_id of this ExerciseCodeResource.
+        r"""Sets the polymeric_resource_id of this ExerciseCodeResource.
 
         资源聚合id
 
@@ -108,7 +108,7 @@ class ExerciseCodeResource:
 
     @property
     def content(self):
-        """Gets the content of this ExerciseCodeResource.
+        r"""Gets the content of this ExerciseCodeResource.
 
         习题内容
 
@@ -119,7 +119,7 @@ class ExerciseCodeResource:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ExerciseCodeResource.
+        r"""Sets the content of this ExerciseCodeResource.
 
         习题内容
 
@@ -130,7 +130,7 @@ class ExerciseCodeResource:
 
     @property
     def code_answer(self):
-        """Gets the code_answer of this ExerciseCodeResource.
+        r"""Gets the code_answer of this ExerciseCodeResource.
 
         参考答案
 
@@ -141,7 +141,7 @@ class ExerciseCodeResource:
 
     @code_answer.setter
     def code_answer(self, code_answer):
-        """Sets the code_answer of this ExerciseCodeResource.
+        r"""Sets the code_answer of this ExerciseCodeResource.
 
         参考答案
 

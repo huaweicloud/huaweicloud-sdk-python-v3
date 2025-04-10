@@ -27,7 +27,7 @@ class ShowDetailOfEventTraceRequest:
     }
 
     def __init__(self, trace_id=None, channel_id=None):
-        """ShowDetailOfEventTraceRequest
+        r"""ShowDetailOfEventTraceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailOfEventTraceRequest:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ShowDetailOfEventTraceRequest.
+        r"""Gets the trace_id of this ShowDetailOfEventTraceRequest.
 
         事件唯一标识
 
@@ -59,7 +59,7 @@ class ShowDetailOfEventTraceRequest:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ShowDetailOfEventTraceRequest.
+        r"""Sets the trace_id of this ShowDetailOfEventTraceRequest.
 
         事件唯一标识
 
@@ -70,7 +70,7 @@ class ShowDetailOfEventTraceRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ShowDetailOfEventTraceRequest.
+        r"""Gets the channel_id of this ShowDetailOfEventTraceRequest.
 
         通道id
 
@@ -81,7 +81,7 @@ class ShowDetailOfEventTraceRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ShowDetailOfEventTraceRequest.
+        r"""Sets the channel_id of this ShowDetailOfEventTraceRequest.
 
         通道id
 

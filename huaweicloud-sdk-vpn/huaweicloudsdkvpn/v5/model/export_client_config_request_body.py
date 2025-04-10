@@ -25,7 +25,7 @@ class ExportClientConfigRequestBody:
     }
 
     def __init__(self, os_type=None):
-        """ExportClientConfigRequestBody
+        r"""ExportClientConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExportClientConfigRequestBody:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ExportClientConfigRequestBody.
+        r"""Gets the os_type of this ExportClientConfigRequestBody.
 
         操作系统类型
 
@@ -54,7 +54,7 @@ class ExportClientConfigRequestBody:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ExportClientConfigRequestBody.
+        r"""Sets the os_type of this ExportClientConfigRequestBody.
 
         操作系统类型
 

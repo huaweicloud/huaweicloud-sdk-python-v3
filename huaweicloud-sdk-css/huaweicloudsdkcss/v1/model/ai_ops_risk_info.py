@@ -31,7 +31,7 @@ class AIOpsRiskInfo:
     }
 
     def __init__(self, risk_type=None, level=None, desc=None, suggestion=None):
-        """AIOpsRiskInfo
+        r"""AIOpsRiskInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AIOpsRiskInfo:
 
     @property
     def risk_type(self):
-        """Gets the risk_type of this AIOpsRiskInfo.
+        r"""Gets the risk_type of this AIOpsRiskInfo.
 
         检测项介绍。
 
@@ -75,7 +75,7 @@ class AIOpsRiskInfo:
 
     @risk_type.setter
     def risk_type(self, risk_type):
-        """Sets the risk_type of this AIOpsRiskInfo.
+        r"""Sets the risk_type of this AIOpsRiskInfo.
 
         检测项介绍。
 
@@ -86,7 +86,7 @@ class AIOpsRiskInfo:
 
     @property
     def level(self):
-        """Gets the level of this AIOpsRiskInfo.
+        r"""Gets the level of this AIOpsRiskInfo.
 
         风险等级。 - high - medium - suggestion
 
@@ -97,7 +97,7 @@ class AIOpsRiskInfo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this AIOpsRiskInfo.
+        r"""Sets the level of this AIOpsRiskInfo.
 
         风险等级。 - high - medium - suggestion
 
@@ -108,7 +108,7 @@ class AIOpsRiskInfo:
 
     @property
     def desc(self):
-        """Gets the desc of this AIOpsRiskInfo.
+        r"""Gets the desc of this AIOpsRiskInfo.
 
         风险描述。
 
@@ -119,7 +119,7 @@ class AIOpsRiskInfo:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this AIOpsRiskInfo.
+        r"""Sets the desc of this AIOpsRiskInfo.
 
         风险描述。
 
@@ -130,7 +130,7 @@ class AIOpsRiskInfo:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this AIOpsRiskInfo.
+        r"""Gets the suggestion of this AIOpsRiskInfo.
 
         风险建议。
 
@@ -141,7 +141,7 @@ class AIOpsRiskInfo:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this AIOpsRiskInfo.
+        r"""Sets the suggestion of this AIOpsRiskInfo.
 
         风险建议。
 

@@ -27,7 +27,7 @@ class OpExtendInfoVaultDelete:
     }
 
     def __init__(self, fail_count=None, total_count=None):
-        """OpExtendInfoVaultDelete
+        r"""OpExtendInfoVaultDelete
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpExtendInfoVaultDelete:
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this OpExtendInfoVaultDelete.
+        r"""Gets the fail_count of this OpExtendInfoVaultDelete.
 
         本次任务删除失败的资源数量
 
@@ -61,7 +61,7 @@ class OpExtendInfoVaultDelete:
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this OpExtendInfoVaultDelete.
+        r"""Sets the fail_count of this OpExtendInfoVaultDelete.
 
         本次任务删除失败的资源数量
 
@@ -72,7 +72,7 @@ class OpExtendInfoVaultDelete:
 
     @property
     def total_count(self):
-        """Gets the total_count of this OpExtendInfoVaultDelete.
+        r"""Gets the total_count of this OpExtendInfoVaultDelete.
 
         本次任务删除的备份总数
 
@@ -83,7 +83,7 @@ class OpExtendInfoVaultDelete:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this OpExtendInfoVaultDelete.
+        r"""Sets the total_count of this OpExtendInfoVaultDelete.
 
         本次任务删除的备份总数
 

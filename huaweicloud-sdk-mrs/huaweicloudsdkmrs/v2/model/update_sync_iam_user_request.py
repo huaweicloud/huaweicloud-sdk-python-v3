@@ -27,7 +27,7 @@ class UpdateSyncIamUserRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateSyncIamUserRequest
+        r"""UpdateSyncIamUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSyncIamUserRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateSyncIamUserRequest.
+        r"""Gets the cluster_id of this UpdateSyncIamUserRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class UpdateSyncIamUserRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateSyncIamUserRequest.
+        r"""Sets the cluster_id of this UpdateSyncIamUserRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class UpdateSyncIamUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSyncIamUserRequest.
+        r"""Gets the body of this UpdateSyncIamUserRequest.
 
         :return: The body of this UpdateSyncIamUserRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateSyncRequest`
@@ -80,7 +80,7 @@ class UpdateSyncIamUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSyncIamUserRequest.
+        r"""Sets the body of this UpdateSyncIamUserRequest.
 
         :param body: The body of this UpdateSyncIamUserRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.UpdateSyncRequest`

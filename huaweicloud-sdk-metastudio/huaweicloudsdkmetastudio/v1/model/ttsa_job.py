@@ -35,7 +35,7 @@ class TTSAJob:
     }
 
     def __init__(self, job_id=None, state=None, start_time=None, end_time=None, content_duration=None, job_type=None):
-        """TTSAJob
+        r"""TTSAJob
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TTSAJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this TTSAJob.
+        r"""Gets the job_id of this TTSAJob.
 
         语音驱动任务ID。
 
@@ -89,7 +89,7 @@ class TTSAJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this TTSAJob.
+        r"""Sets the job_id of this TTSAJob.
 
         语音驱动任务ID。
 
@@ -100,7 +100,7 @@ class TTSAJob:
 
     @property
     def state(self):
-        """Gets the state of this TTSAJob.
+        r"""Gets the state of this TTSAJob.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -111,7 +111,7 @@ class TTSAJob:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TTSAJob.
+        r"""Sets the state of this TTSAJob.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -122,7 +122,7 @@ class TTSAJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TTSAJob.
+        r"""Gets the start_time of this TTSAJob.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -133,7 +133,7 @@ class TTSAJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TTSAJob.
+        r"""Sets the start_time of this TTSAJob.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -144,7 +144,7 @@ class TTSAJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TTSAJob.
+        r"""Gets the end_time of this TTSAJob.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -155,7 +155,7 @@ class TTSAJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TTSAJob.
+        r"""Sets the end_time of this TTSAJob.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -166,7 +166,7 @@ class TTSAJob:
 
     @property
     def content_duration(self):
-        """Gets the content_duration of this TTSAJob.
+        r"""Gets the content_duration of this TTSAJob.
 
         语音驱动内容时长。  单位:秒。
 
@@ -177,7 +177,7 @@ class TTSAJob:
 
     @content_duration.setter
     def content_duration(self, content_duration):
-        """Sets the content_duration of this TTSAJob.
+        r"""Sets the content_duration of this TTSAJob.
 
         语音驱动内容时长。  单位:秒。
 
@@ -188,7 +188,7 @@ class TTSAJob:
 
     @property
     def job_type(self):
-        """Gets the job_type of this TTSAJob.
+        r"""Gets the job_type of this TTSAJob.
 
         任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
 
@@ -199,7 +199,7 @@ class TTSAJob:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this TTSAJob.
+        r"""Sets the job_type of this TTSAJob.
 
         任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
 

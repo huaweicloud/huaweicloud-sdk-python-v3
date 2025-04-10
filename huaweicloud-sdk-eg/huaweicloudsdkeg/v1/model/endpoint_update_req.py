@@ -25,7 +25,7 @@ class EndpointUpdateReq:
     }
 
     def __init__(self, description=None):
-        """EndpointUpdateReq
+        r"""EndpointUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EndpointUpdateReq:
 
     @property
     def description(self):
-        """Gets the description of this EndpointUpdateReq.
+        r"""Gets the description of this EndpointUpdateReq.
 
         描述
 
@@ -54,7 +54,7 @@ class EndpointUpdateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointUpdateReq.
+        r"""Sets the description of this EndpointUpdateReq.
 
         描述
 

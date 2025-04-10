@@ -29,7 +29,7 @@ class SiteConfigsRequest:
     }
 
     def __init__(self, availability_zone=None, network_config=None, access_config=None):
-        """SiteConfigsRequest
+        r"""SiteConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SiteConfigsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this SiteConfigsRequest.
+        r"""Gets the availability_zone of this SiteConfigsRequest.
 
         开通服务资源使用的可用分区
 
@@ -66,7 +66,7 @@ class SiteConfigsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this SiteConfigsRequest.
+        r"""Sets the availability_zone of this SiteConfigsRequest.
 
         开通服务资源使用的可用分区
 
@@ -77,7 +77,7 @@ class SiteConfigsRequest:
 
     @property
     def network_config(self):
-        """Gets the network_config of this SiteConfigsRequest.
+        r"""Gets the network_config of this SiteConfigsRequest.
 
         :return: The network_config of this SiteConfigsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.NetworkConfigReq`
@@ -86,7 +86,7 @@ class SiteConfigsRequest:
 
     @network_config.setter
     def network_config(self, network_config):
-        """Sets the network_config of this SiteConfigsRequest.
+        r"""Sets the network_config of this SiteConfigsRequest.
 
         :param network_config: The network_config of this SiteConfigsRequest.
         :type network_config: :class:`huaweicloudsdkworkspace.v2.NetworkConfigReq`
@@ -95,7 +95,7 @@ class SiteConfigsRequest:
 
     @property
     def access_config(self):
-        """Gets the access_config of this SiteConfigsRequest.
+        r"""Gets the access_config of this SiteConfigsRequest.
 
         :return: The access_config of this SiteConfigsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AccessConfigReq`
@@ -104,7 +104,7 @@ class SiteConfigsRequest:
 
     @access_config.setter
     def access_config(self, access_config):
-        """Sets the access_config of this SiteConfigsRequest.
+        r"""Sets the access_config of this SiteConfigsRequest.
 
         :param access_config: The access_config of this SiteConfigsRequest.
         :type access_config: :class:`huaweicloudsdkworkspace.v2.AccessConfigReq`

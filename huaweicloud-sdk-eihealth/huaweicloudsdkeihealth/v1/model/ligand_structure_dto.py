@@ -29,7 +29,7 @@ class LigandStructureDto:
     }
 
     def __init__(self, format=None, compressed=None, data=None):
-        """LigandStructureDto
+        r"""LigandStructureDto
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class LigandStructureDto:
 
     @property
     def format(self):
-        """Gets the format of this LigandStructureDto.
+        r"""Gets the format of this LigandStructureDto.
 
         配体格式，即文件后缀名
 
@@ -66,7 +66,7 @@ class LigandStructureDto:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this LigandStructureDto.
+        r"""Sets the format of this LigandStructureDto.
 
         配体格式，即文件后缀名
 
@@ -77,7 +77,7 @@ class LigandStructureDto:
 
     @property
     def compressed(self):
-        """Gets the compressed of this LigandStructureDto.
+        r"""Gets the compressed of this LigandStructureDto.
 
         是否压缩
 
@@ -88,7 +88,7 @@ class LigandStructureDto:
 
     @compressed.setter
     def compressed(self, compressed):
-        """Sets the compressed of this LigandStructureDto.
+        r"""Sets the compressed of this LigandStructureDto.
 
         是否压缩
 
@@ -99,7 +99,7 @@ class LigandStructureDto:
 
     @property
     def data(self):
-        """Gets the data of this LigandStructureDto.
+        r"""Gets the data of this LigandStructureDto.
 
         结构数据，如压缩则需要解码、解压处理（ASCII Encode -> Base64 Decode -> GZip Inflate -> UTF-8 Decode）以得到原始字符串；如未压缩则为原始字符串
 
@@ -110,7 +110,7 @@ class LigandStructureDto:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this LigandStructureDto.
+        r"""Sets the data of this LigandStructureDto.
 
         结构数据，如压缩则需要解码、解压处理（ASCII Encode -> Base64 Decode -> GZip Inflate -> UTF-8 Decode）以得到原始字符串；如未压缩则为原始字符串
 

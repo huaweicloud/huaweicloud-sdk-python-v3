@@ -25,7 +25,7 @@ class BatchDeleteNoticeReq:
     }
 
     def __init__(self, notice_ids=None):
-        """BatchDeleteNoticeReq
+        r"""BatchDeleteNoticeReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteNoticeReq:
 
     @property
     def notice_ids(self):
-        """Gets the notice_ids of this BatchDeleteNoticeReq.
+        r"""Gets the notice_ids of this BatchDeleteNoticeReq.
 
         批量删除通知消息id列表
 
@@ -53,7 +53,7 @@ class BatchDeleteNoticeReq:
 
     @notice_ids.setter
     def notice_ids(self, notice_ids):
-        """Sets the notice_ids of this BatchDeleteNoticeReq.
+        r"""Sets the notice_ids of this BatchDeleteNoticeReq.
 
         批量删除通知消息id列表
 

@@ -29,7 +29,7 @@ class UpdateTemplateRequest:
     }
 
     def __init__(self, id=None, workspace=None, body=None):
-        """UpdateTemplateRequest
+        r"""UpdateTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTemplateRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTemplateRequest.
+        r"""Gets the id of this UpdateTemplateRequest.
 
         id
 
@@ -66,7 +66,7 @@ class UpdateTemplateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTemplateRequest.
+        r"""Sets the id of this UpdateTemplateRequest.
 
         id
 
@@ -77,7 +77,7 @@ class UpdateTemplateRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateTemplateRequest.
+        r"""Gets the workspace of this UpdateTemplateRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class UpdateTemplateRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateTemplateRequest.
+        r"""Sets the workspace of this UpdateTemplateRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class UpdateTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTemplateRequest.
+        r"""Gets the body of this UpdateTemplateRequest.
 
         :return: The body of this UpdateTemplateRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TemplateRO`
@@ -108,7 +108,7 @@ class UpdateTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTemplateRequest.
+        r"""Sets the body of this UpdateTemplateRequest.
 
         :param body: The body of this UpdateTemplateRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TemplateRO`

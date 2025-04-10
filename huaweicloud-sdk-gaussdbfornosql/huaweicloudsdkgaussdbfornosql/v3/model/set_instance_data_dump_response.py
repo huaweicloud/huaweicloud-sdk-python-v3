@@ -24,7 +24,7 @@ class SetInstanceDataDumpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetInstanceDataDumpResponse
+        r"""SetInstanceDataDumpResponse
 
         The model defined in huaweicloud sdk
 

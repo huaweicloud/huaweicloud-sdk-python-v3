@@ -27,7 +27,7 @@ class UpdateClickHouseLtsConfigRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """UpdateClickHouseLtsConfigRequest
+        r"""UpdateClickHouseLtsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateClickHouseLtsConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateClickHouseLtsConfigRequest.
+        r"""Gets the x_language of this UpdateClickHouseLtsConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -61,7 +61,7 @@ class UpdateClickHouseLtsConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateClickHouseLtsConfigRequest.
+        r"""Sets the x_language of this UpdateClickHouseLtsConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -72,7 +72,7 @@ class UpdateClickHouseLtsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClickHouseLtsConfigRequest.
+        r"""Gets the body of this UpdateClickHouseLtsConfigRequest.
 
         :return: The body of this UpdateClickHouseLtsConfigRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChLtsConfigRequestBody`
@@ -81,7 +81,7 @@ class UpdateClickHouseLtsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClickHouseLtsConfigRequest.
+        r"""Sets the body of this UpdateClickHouseLtsConfigRequest.
 
         :param body: The body of this UpdateClickHouseLtsConfigRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CreateChLtsConfigRequestBody`

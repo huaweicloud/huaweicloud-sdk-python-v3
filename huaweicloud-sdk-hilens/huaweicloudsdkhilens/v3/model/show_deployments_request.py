@@ -37,7 +37,7 @@ class ShowDeploymentsRequest:
     }
 
     def __init__(self, cluster_id=None, node_id=None, provider=None, name=None, sort=None, limit=None, offset=None):
-        """ShowDeploymentsRequest
+        r"""ShowDeploymentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowDeploymentsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowDeploymentsRequest.
+        r"""Gets the cluster_id of this ShowDeploymentsRequest.
 
         集群ID，查询部署在该节点组的应用列表，和node_id不可同时请求
 
@@ -96,7 +96,7 @@ class ShowDeploymentsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowDeploymentsRequest.
+        r"""Sets the cluster_id of this ShowDeploymentsRequest.
 
         集群ID，查询部署在该节点组的应用列表，和node_id不可同时请求
 
@@ -107,7 +107,7 @@ class ShowDeploymentsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowDeploymentsRequest.
+        r"""Gets the node_id of this ShowDeploymentsRequest.
 
         节点ID，查询部署在该节点下的应用列表，和cluster_id不可同时请求
 
@@ -118,7 +118,7 @@ class ShowDeploymentsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowDeploymentsRequest.
+        r"""Sets the node_id of this ShowDeploymentsRequest.
 
         节点ID，查询部署在该节点下的应用列表，和cluster_id不可同时请求
 
@@ -129,7 +129,7 @@ class ShowDeploymentsRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ShowDeploymentsRequest.
+        r"""Gets the provider of this ShowDeploymentsRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据
 
@@ -140,7 +140,7 @@ class ShowDeploymentsRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ShowDeploymentsRequest.
+        r"""Sets the provider of this ShowDeploymentsRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据
 
@@ -151,7 +151,7 @@ class ShowDeploymentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowDeploymentsRequest.
+        r"""Gets the name of this ShowDeploymentsRequest.
 
         部署名称(支持模糊匹配)
 
@@ -162,7 +162,7 @@ class ShowDeploymentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDeploymentsRequest.
+        r"""Sets the name of this ShowDeploymentsRequest.
 
         部署名称(支持模糊匹配)
 
@@ -173,7 +173,7 @@ class ShowDeploymentsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ShowDeploymentsRequest.
+        r"""Gets the sort of this ShowDeploymentsRequest.
 
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
@@ -184,7 +184,7 @@ class ShowDeploymentsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ShowDeploymentsRequest.
+        r"""Sets the sort of this ShowDeploymentsRequest.
 
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
@@ -195,7 +195,7 @@ class ShowDeploymentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDeploymentsRequest.
+        r"""Gets the limit of this ShowDeploymentsRequest.
 
         每页显示的条目数量, 最大 100，默认值 10
 
@@ -206,7 +206,7 @@ class ShowDeploymentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDeploymentsRequest.
+        r"""Sets the limit of this ShowDeploymentsRequest.
 
         每页显示的条目数量, 最大 100，默认值 10
 
@@ -217,7 +217,7 @@ class ShowDeploymentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDeploymentsRequest.
+        r"""Gets the offset of this ShowDeploymentsRequest.
 
         查询的起始位置, 默认值 0
 
@@ -228,7 +228,7 @@ class ShowDeploymentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDeploymentsRequest.
+        r"""Sets the offset of this ShowDeploymentsRequest.
 
         查询的起始位置, 默认值 0
 

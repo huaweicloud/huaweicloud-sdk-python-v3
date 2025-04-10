@@ -27,7 +27,7 @@ class OpenTSDBValue:
     }
 
     def __init__(self, type=None, value=None):
-        """OpenTSDBValue
+        r"""OpenTSDBValue
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenTSDBValue:
 
     @property
     def type(self):
-        """Gets the type of this OpenTSDBValue.
+        r"""Gets the type of this OpenTSDBValue.
 
         通道内用户JSON数据对应JSON属性的类型名称。  取值范围：  - Bigint - Double - Boolean - Timestamp - String - Decimal
 
@@ -59,7 +59,7 @@ class OpenTSDBValue:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenTSDBValue.
+        r"""Sets the type of this OpenTSDBValue.
 
         通道内用户JSON数据对应JSON属性的类型名称。  取值范围：  - Bigint - Double - Boolean - Timestamp - String - Decimal
 
@@ -70,7 +70,7 @@ class OpenTSDBValue:
 
     @property
     def value(self):
-        """Gets the value of this OpenTSDBValue.
+        r"""Gets the value of this OpenTSDBValue.
 
         常量或通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -81,7 +81,7 @@ class OpenTSDBValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OpenTSDBValue.
+        r"""Sets the value of this OpenTSDBValue.
 
         常量或通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 

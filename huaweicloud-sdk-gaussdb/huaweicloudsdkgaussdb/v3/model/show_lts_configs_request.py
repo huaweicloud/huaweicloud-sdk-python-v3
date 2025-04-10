@@ -35,7 +35,7 @@ class ShowLtsConfigsRequest:
     }
 
     def __init__(self, x_language=None, enterprise_project_id=None, instance_id=None, instance_name=None, limit=None, offset=None):
-        """ShowLtsConfigsRequest
+        r"""ShowLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowLtsConfigsRequest.
+        r"""Gets the x_language of this ShowLtsConfigsRequest.
 
         语言。
 
@@ -89,7 +89,7 @@ class ShowLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowLtsConfigsRequest.
+        r"""Sets the x_language of this ShowLtsConfigsRequest.
 
         语言。
 
@@ -100,7 +100,7 @@ class ShowLtsConfigsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowLtsConfigsRequest.
+        r"""Gets the enterprise_project_id of this ShowLtsConfigsRequest.
 
         企业项目ID。
 
@@ -111,7 +111,7 @@ class ShowLtsConfigsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowLtsConfigsRequest.
+        r"""Sets the enterprise_project_id of this ShowLtsConfigsRequest.
 
         企业项目ID。
 
@@ -122,7 +122,7 @@ class ShowLtsConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowLtsConfigsRequest.
+        r"""Gets the instance_id of this ShowLtsConfigsRequest.
 
         实例ID。
 
@@ -133,7 +133,7 @@ class ShowLtsConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowLtsConfigsRequest.
+        r"""Sets the instance_id of this ShowLtsConfigsRequest.
 
         实例ID。
 
@@ -144,7 +144,7 @@ class ShowLtsConfigsRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShowLtsConfigsRequest.
+        r"""Gets the instance_name of this ShowLtsConfigsRequest.
 
         实例名称
 
@@ -155,7 +155,7 @@ class ShowLtsConfigsRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShowLtsConfigsRequest.
+        r"""Sets the instance_name of this ShowLtsConfigsRequest.
 
         实例名称
 
@@ -166,7 +166,7 @@ class ShowLtsConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowLtsConfigsRequest.
+        r"""Gets the limit of this ShowLtsConfigsRequest.
 
         查询记录数，默认值为10，最小为1，最大为100。
 
@@ -177,7 +177,7 @@ class ShowLtsConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowLtsConfigsRequest.
+        r"""Sets the limit of this ShowLtsConfigsRequest.
 
         查询记录数，默认值为10，最小为1，最大为100。
 
@@ -188,7 +188,7 @@ class ShowLtsConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowLtsConfigsRequest.
+        r"""Gets the offset of this ShowLtsConfigsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
@@ -199,7 +199,7 @@ class ShowLtsConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowLtsConfigsRequest.
+        r"""Sets the offset of this ShowLtsConfigsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。
 

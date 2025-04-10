@@ -27,7 +27,7 @@ class OpsWindowRequest:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """OpsWindowRequest
+        r"""OpsWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpsWindowRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpsWindowRequest.
+        r"""Gets the start_time of this OpsWindowRequest.
 
         - 开始时间， UTC时间
 
@@ -59,7 +59,7 @@ class OpsWindowRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpsWindowRequest.
+        r"""Sets the start_time of this OpsWindowRequest.
 
         - 开始时间， UTC时间
 
@@ -70,7 +70,7 @@ class OpsWindowRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OpsWindowRequest.
+        r"""Gets the end_time of this OpsWindowRequest.
 
         - 结束时间，UTC时间
 
@@ -81,7 +81,7 @@ class OpsWindowRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OpsWindowRequest.
+        r"""Sets the end_time of this OpsWindowRequest.
 
         - 结束时间，UTC时间
 

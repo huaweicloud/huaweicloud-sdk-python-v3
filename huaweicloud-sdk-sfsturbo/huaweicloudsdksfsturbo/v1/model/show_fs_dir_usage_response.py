@@ -28,7 +28,7 @@ class ShowFsDirUsageResponse(SdkResponse):
     }
 
     def __init__(self, dir_usage=None, x_request_id=None):
-        """ShowFsDirUsageResponse
+        r"""ShowFsDirUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFsDirUsageResponse(SdkResponse):
 
     @property
     def dir_usage(self):
-        """Gets the dir_usage of this ShowFsDirUsageResponse.
+        r"""Gets the dir_usage of this ShowFsDirUsageResponse.
 
         :return: The dir_usage of this ShowFsDirUsageResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsDirUasge`
@@ -60,7 +60,7 @@ class ShowFsDirUsageResponse(SdkResponse):
 
     @dir_usage.setter
     def dir_usage(self, dir_usage):
-        """Sets the dir_usage of this ShowFsDirUsageResponse.
+        r"""Sets the dir_usage of this ShowFsDirUsageResponse.
 
         :param dir_usage: The dir_usage of this ShowFsDirUsageResponse.
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDirUasge`
@@ -69,7 +69,7 @@ class ShowFsDirUsageResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowFsDirUsageResponse.
+        r"""Gets the x_request_id of this ShowFsDirUsageResponse.
 
         :return: The x_request_id of this ShowFsDirUsageResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowFsDirUsageResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowFsDirUsageResponse.
+        r"""Sets the x_request_id of this ShowFsDirUsageResponse.
 
         :param x_request_id: The x_request_id of this ShowFsDirUsageResponse.
         :type x_request_id: str

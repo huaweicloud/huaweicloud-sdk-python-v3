@@ -26,7 +26,7 @@ class UpdateClientIpTransparentTransmissionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateClientIpTransparentTransmissionResponse
+        r"""UpdateClientIpTransparentTransmissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateClientIpTransparentTransmissionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateClientIpTransparentTransmissionResponse.
+        r"""Gets the job_id of this UpdateClientIpTransparentTransmissionResponse.
 
         开启或关闭客户ip透传的任务ID
 
@@ -55,7 +55,7 @@ class UpdateClientIpTransparentTransmissionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateClientIpTransparentTransmissionResponse.
+        r"""Sets the job_id of this UpdateClientIpTransparentTransmissionResponse.
 
         开启或关闭客户ip透传的任务ID
 

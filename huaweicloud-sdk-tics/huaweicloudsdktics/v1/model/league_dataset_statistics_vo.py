@@ -35,7 +35,7 @@ class LeagueDatasetStatisticsVo:
     }
 
     def __init__(self, dataset_domain_alias=None, dataset_domain_name=None, dataset_id=None, dataset_intercept_cnt=None, dataset_name=None, dataset_use_cnt=None):
-        """LeagueDatasetStatisticsVo
+        r"""LeagueDatasetStatisticsVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LeagueDatasetStatisticsVo:
 
     @property
     def dataset_domain_alias(self):
-        """Gets the dataset_domain_alias of this LeagueDatasetStatisticsVo.
+        r"""Gets the dataset_domain_alias of this LeagueDatasetStatisticsVo.
 
         参与方别名
 
@@ -89,7 +89,7 @@ class LeagueDatasetStatisticsVo:
 
     @dataset_domain_alias.setter
     def dataset_domain_alias(self, dataset_domain_alias):
-        """Sets the dataset_domain_alias of this LeagueDatasetStatisticsVo.
+        r"""Sets the dataset_domain_alias of this LeagueDatasetStatisticsVo.
 
         参与方别名
 
@@ -100,7 +100,7 @@ class LeagueDatasetStatisticsVo:
 
     @property
     def dataset_domain_name(self):
-        """Gets the dataset_domain_name of this LeagueDatasetStatisticsVo.
+        r"""Gets the dataset_domain_name of this LeagueDatasetStatisticsVo.
 
         参与方租户名称
 
@@ -111,7 +111,7 @@ class LeagueDatasetStatisticsVo:
 
     @dataset_domain_name.setter
     def dataset_domain_name(self, dataset_domain_name):
-        """Sets the dataset_domain_name of this LeagueDatasetStatisticsVo.
+        r"""Sets the dataset_domain_name of this LeagueDatasetStatisticsVo.
 
         参与方租户名称
 
@@ -122,7 +122,7 @@ class LeagueDatasetStatisticsVo:
 
     @property
     def dataset_id(self):
-        """Gets the dataset_id of this LeagueDatasetStatisticsVo.
+        r"""Gets the dataset_id of this LeagueDatasetStatisticsVo.
 
         数据集id
 
@@ -133,7 +133,7 @@ class LeagueDatasetStatisticsVo:
 
     @dataset_id.setter
     def dataset_id(self, dataset_id):
-        """Sets the dataset_id of this LeagueDatasetStatisticsVo.
+        r"""Sets the dataset_id of this LeagueDatasetStatisticsVo.
 
         数据集id
 
@@ -144,7 +144,7 @@ class LeagueDatasetStatisticsVo:
 
     @property
     def dataset_intercept_cnt(self):
-        """Gets the dataset_intercept_cnt of this LeagueDatasetStatisticsVo.
+        r"""Gets the dataset_intercept_cnt of this LeagueDatasetStatisticsVo.
 
         数据集拦截次数
 
@@ -155,7 +155,7 @@ class LeagueDatasetStatisticsVo:
 
     @dataset_intercept_cnt.setter
     def dataset_intercept_cnt(self, dataset_intercept_cnt):
-        """Sets the dataset_intercept_cnt of this LeagueDatasetStatisticsVo.
+        r"""Sets the dataset_intercept_cnt of this LeagueDatasetStatisticsVo.
 
         数据集拦截次数
 
@@ -166,7 +166,7 @@ class LeagueDatasetStatisticsVo:
 
     @property
     def dataset_name(self):
-        """Gets the dataset_name of this LeagueDatasetStatisticsVo.
+        r"""Gets the dataset_name of this LeagueDatasetStatisticsVo.
 
         数据集名称
 
@@ -177,7 +177,7 @@ class LeagueDatasetStatisticsVo:
 
     @dataset_name.setter
     def dataset_name(self, dataset_name):
-        """Sets the dataset_name of this LeagueDatasetStatisticsVo.
+        r"""Sets the dataset_name of this LeagueDatasetStatisticsVo.
 
         数据集名称
 
@@ -188,7 +188,7 @@ class LeagueDatasetStatisticsVo:
 
     @property
     def dataset_use_cnt(self):
-        """Gets the dataset_use_cnt of this LeagueDatasetStatisticsVo.
+        r"""Gets the dataset_use_cnt of this LeagueDatasetStatisticsVo.
 
         数据集使用次数
 
@@ -199,7 +199,7 @@ class LeagueDatasetStatisticsVo:
 
     @dataset_use_cnt.setter
     def dataset_use_cnt(self, dataset_use_cnt):
-        """Sets the dataset_use_cnt of this LeagueDatasetStatisticsVo.
+        r"""Sets the dataset_use_cnt of this LeagueDatasetStatisticsVo.
 
         数据集使用次数
 

@@ -37,7 +37,7 @@ class StepDetail:
     }
 
     def __init__(self, step_id=None, step_name=None, step_status=None, begin_time=None, end_time=None, error_code=None, sub_step_details=None):
-        """StepDetail
+        r"""StepDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class StepDetail:
 
     @property
     def step_id(self):
-        """Gets the step_id of this StepDetail.
+        r"""Gets the step_id of this StepDetail.
 
         任务id
 
@@ -96,7 +96,7 @@ class StepDetail:
 
     @step_id.setter
     def step_id(self, step_id):
-        """Sets the step_id of this StepDetail.
+        r"""Sets the step_id of this StepDetail.
 
         任务id
 
@@ -107,7 +107,7 @@ class StepDetail:
 
     @property
     def step_name(self):
-        """Gets the step_name of this StepDetail.
+        r"""Gets the step_name of this StepDetail.
 
         任务名
 
@@ -118,7 +118,7 @@ class StepDetail:
 
     @step_name.setter
     def step_name(self, step_name):
-        """Sets the step_name of this StepDetail.
+        r"""Sets the step_name of this StepDetail.
 
         任务名
 
@@ -129,7 +129,7 @@ class StepDetail:
 
     @property
     def step_status(self):
-        """Gets the step_status of this StepDetail.
+        r"""Gets the step_status of this StepDetail.
 
         任务状态
 
@@ -140,7 +140,7 @@ class StepDetail:
 
     @step_status.setter
     def step_status(self, step_status):
-        """Sets the step_status of this StepDetail.
+        r"""Sets the step_status of this StepDetail.
 
         任务状态
 
@@ -151,7 +151,7 @@ class StepDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this StepDetail.
+        r"""Gets the begin_time of this StepDetail.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -162,7 +162,7 @@ class StepDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this StepDetail.
+        r"""Sets the begin_time of this StepDetail.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -173,7 +173,7 @@ class StepDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StepDetail.
+        r"""Gets the end_time of this StepDetail.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -184,7 +184,7 @@ class StepDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StepDetail.
+        r"""Sets the end_time of this StepDetail.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -195,7 +195,7 @@ class StepDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this StepDetail.
+        r"""Gets the error_code of this StepDetail.
 
         错误码
 
@@ -206,7 +206,7 @@ class StepDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this StepDetail.
+        r"""Sets the error_code of this StepDetail.
 
         错误码
 
@@ -217,7 +217,7 @@ class StepDetail:
 
     @property
     def sub_step_details(self):
-        """Gets the sub_step_details of this StepDetail.
+        r"""Gets the sub_step_details of this StepDetail.
 
         子任务详情列表
 
@@ -228,7 +228,7 @@ class StepDetail:
 
     @sub_step_details.setter
     def sub_step_details(self, sub_step_details):
-        """Sets the sub_step_details of this StepDetail.
+        r"""Sets the sub_step_details of this StepDetail.
 
         子任务详情列表
 

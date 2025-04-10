@@ -27,7 +27,7 @@ class DependencyParserRequest:
     }
 
     def __init__(self, text=None, lang=None):
-        """DependencyParserRequest
+        r"""DependencyParserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DependencyParserRequest:
 
     @property
     def text(self):
-        """Gets the text of this DependencyParserRequest.
+        r"""Gets the text of this DependencyParserRequest.
 
         待分析文本，长度为1~32，文本编码为utf-8。
 
@@ -60,7 +60,7 @@ class DependencyParserRequest:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this DependencyParserRequest.
+        r"""Sets the text of this DependencyParserRequest.
 
         待分析文本，长度为1~32，文本编码为utf-8。
 
@@ -71,7 +71,7 @@ class DependencyParserRequest:
 
     @property
     def lang(self):
-        """Gets the lang of this DependencyParserRequest.
+        r"""Gets the lang of this DependencyParserRequest.
 
         支持的文本语言类型，目前只支持中文，默认为zh。 
 
@@ -82,7 +82,7 @@ class DependencyParserRequest:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this DependencyParserRequest.
+        r"""Sets the lang of this DependencyParserRequest.
 
         支持的文本语言类型，目前只支持中文，默认为zh。 
 

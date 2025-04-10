@@ -30,7 +30,7 @@ class ListEventTargetResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListEventTargetResponse
+        r"""ListEventTargetResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEventTargetResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEventTargetResponse.
+        r"""Gets the total of this ListEventTargetResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListEventTargetResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEventTargetResponse.
+        r"""Sets the total of this ListEventTargetResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListEventTargetResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListEventTargetResponse.
+        r"""Gets the size of this ListEventTargetResponse.
 
         本页数量
 
@@ -91,7 +91,7 @@ class ListEventTargetResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEventTargetResponse.
+        r"""Sets the size of this ListEventTargetResponse.
 
         本页数量
 
@@ -102,7 +102,7 @@ class ListEventTargetResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListEventTargetResponse.
+        r"""Gets the items of this ListEventTargetResponse.
 
         对象列表
 
@@ -113,7 +113,7 @@ class ListEventTargetResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListEventTargetResponse.
+        r"""Sets the items of this ListEventTargetResponse.
 
         对象列表
 

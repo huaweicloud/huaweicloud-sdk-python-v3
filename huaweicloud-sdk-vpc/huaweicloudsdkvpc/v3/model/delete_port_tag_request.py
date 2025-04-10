@@ -27,7 +27,7 @@ class DeletePortTagRequest:
     }
 
     def __init__(self, port_id=None, tag_key=None):
-        """DeletePortTagRequest
+        r"""DeletePortTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePortTagRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this DeletePortTagRequest.
+        r"""Gets the port_id of this DeletePortTagRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -59,7 +59,7 @@ class DeletePortTagRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this DeletePortTagRequest.
+        r"""Sets the port_id of this DeletePortTagRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -70,7 +70,7 @@ class DeletePortTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeletePortTagRequest.
+        r"""Gets the tag_key of this DeletePortTagRequest.
 
         功能说明：标签键
 
@@ -81,7 +81,7 @@ class DeletePortTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeletePortTagRequest.
+        r"""Sets the tag_key of this DeletePortTagRequest.
 
         功能说明：标签键
 

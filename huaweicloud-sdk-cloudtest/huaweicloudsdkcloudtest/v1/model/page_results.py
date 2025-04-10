@@ -33,7 +33,7 @@ class PageResults:
     }
 
     def __init__(self, page_list=None, page_no=None, page_size=None, total_page=None, total_size=None):
-        """PageResults
+        r"""PageResults
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PageResults:
 
     @property
     def page_list(self):
-        """Gets the page_list of this PageResults.
+        r"""Gets the page_list of this PageResults.
 
         :return: The page_list of this PageResults.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.VariableRes`]
@@ -80,7 +80,7 @@ class PageResults:
 
     @page_list.setter
     def page_list(self, page_list):
-        """Sets the page_list of this PageResults.
+        r"""Sets the page_list of this PageResults.
 
         :param page_list: The page_list of this PageResults.
         :type page_list: list[:class:`huaweicloudsdkcloudtest.v1.VariableRes`]
@@ -89,7 +89,7 @@ class PageResults:
 
     @property
     def page_no(self):
-        """Gets the page_no of this PageResults.
+        r"""Gets the page_no of this PageResults.
 
         :return: The page_no of this PageResults.
         :rtype: int
@@ -98,7 +98,7 @@ class PageResults:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this PageResults.
+        r"""Sets the page_no of this PageResults.
 
         :param page_no: The page_no of this PageResults.
         :type page_no: int
@@ -107,7 +107,7 @@ class PageResults:
 
     @property
     def page_size(self):
-        """Gets the page_size of this PageResults.
+        r"""Gets the page_size of this PageResults.
 
         :return: The page_size of this PageResults.
         :rtype: int
@@ -116,7 +116,7 @@ class PageResults:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this PageResults.
+        r"""Sets the page_size of this PageResults.
 
         :param page_size: The page_size of this PageResults.
         :type page_size: int
@@ -125,7 +125,7 @@ class PageResults:
 
     @property
     def total_page(self):
-        """Gets the total_page of this PageResults.
+        r"""Gets the total_page of this PageResults.
 
         :return: The total_page of this PageResults.
         :rtype: int
@@ -134,7 +134,7 @@ class PageResults:
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this PageResults.
+        r"""Sets the total_page of this PageResults.
 
         :param total_page: The total_page of this PageResults.
         :type total_page: int
@@ -143,7 +143,7 @@ class PageResults:
 
     @property
     def total_size(self):
-        """Gets the total_size of this PageResults.
+        r"""Gets the total_size of this PageResults.
 
         :return: The total_size of this PageResults.
         :rtype: int
@@ -152,7 +152,7 @@ class PageResults:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this PageResults.
+        r"""Sets the total_size of this PageResults.
 
         :param total_size: The total_size of this PageResults.
         :type total_size: int

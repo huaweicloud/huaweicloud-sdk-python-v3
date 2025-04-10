@@ -25,7 +25,7 @@ class BatchRestorePostgreSqlTablesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRestorePostgreSqlTablesRequest
+        r"""BatchRestorePostgreSqlTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRestorePostgreSqlTablesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRestorePostgreSqlTablesRequest.
+        r"""Gets the body of this BatchRestorePostgreSqlTablesRequest.
 
         :return: The body of this BatchRestorePostgreSqlTablesRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgreSQLRestoreTableRequest`
@@ -52,7 +52,7 @@ class BatchRestorePostgreSqlTablesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRestorePostgreSqlTablesRequest.
+        r"""Sets the body of this BatchRestorePostgreSqlTablesRequest.
 
         :param body: The body of this BatchRestorePostgreSqlTablesRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgreSQLRestoreTableRequest`

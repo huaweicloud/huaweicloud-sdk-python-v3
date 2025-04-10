@@ -31,7 +31,7 @@ class ProfileResp:
     }
 
     def __init__(self, order_id=None, product_id=None, region_id=None, user_id=None):
-        """ProfileResp
+        r"""ProfileResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProfileResp:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ProfileResp.
+        r"""Gets the order_id of this ProfileResp.
 
         订单的id
 
@@ -75,7 +75,7 @@ class ProfileResp:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ProfileResp.
+        r"""Sets the order_id of this ProfileResp.
 
         订单的id
 
@@ -86,7 +86,7 @@ class ProfileResp:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProfileResp.
+        r"""Gets the product_id of this ProfileResp.
 
         产品的id
 
@@ -97,7 +97,7 @@ class ProfileResp:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProfileResp.
+        r"""Sets the product_id of this ProfileResp.
 
         产品的id
 
@@ -108,7 +108,7 @@ class ProfileResp:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ProfileResp.
+        r"""Gets the region_id of this ProfileResp.
 
         region的id
 
@@ -119,7 +119,7 @@ class ProfileResp:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ProfileResp.
+        r"""Sets the region_id of this ProfileResp.
 
         region的id
 
@@ -130,7 +130,7 @@ class ProfileResp:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ProfileResp.
+        r"""Gets the user_id of this ProfileResp.
 
         用户的id
 
@@ -141,7 +141,7 @@ class ProfileResp:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ProfileResp.
+        r"""Sets the user_id of this ProfileResp.
 
         用户的id
 

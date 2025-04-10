@@ -25,7 +25,7 @@ class OsReinstallBody:
     }
 
     def __init__(self, os_reinstall=None):
-        """OsReinstallBody
+        r"""OsReinstallBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OsReinstallBody:
 
     @property
     def os_reinstall(self):
-        """Gets the os_reinstall of this OsReinstallBody.
+        r"""Gets the os_reinstall of this OsReinstallBody.
 
         :return: The os_reinstall of this OsReinstallBody.
         :rtype: :class:`huaweicloudsdkbms.v1.OsReinstall`
@@ -51,7 +51,7 @@ class OsReinstallBody:
 
     @os_reinstall.setter
     def os_reinstall(self, os_reinstall):
-        """Sets the os_reinstall of this OsReinstallBody.
+        r"""Sets the os_reinstall of this OsReinstallBody.
 
         :param os_reinstall: The os_reinstall of this OsReinstallBody.
         :type os_reinstall: :class:`huaweicloudsdkbms.v1.OsReinstall`

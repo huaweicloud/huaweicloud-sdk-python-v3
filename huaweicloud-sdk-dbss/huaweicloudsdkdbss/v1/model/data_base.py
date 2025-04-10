@@ -59,7 +59,7 @@ class DataBase:
     }
 
     def __init__(self, id=None, name=None, type=None, version=None, charset=None, ip=None, port=None, os=None, status=None, instance_name=None, audit_status=None, agent_url=None, db_classification=None, rds_audit_switch_mismatch=None, rds_id=None, rds_obj_info=None, dws_obj_info=None, clouddb_obj_info=None):
-        """DataBase
+        r"""DataBase
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class DataBase:
 
     @property
     def id(self):
-        """Gets the id of this DataBase.
+        r"""Gets the id of this DataBase.
 
         数据库ID
 
@@ -163,7 +163,7 @@ class DataBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataBase.
+        r"""Sets the id of this DataBase.
 
         数据库ID
 
@@ -174,7 +174,7 @@ class DataBase:
 
     @property
     def name(self):
-        """Gets the name of this DataBase.
+        r"""Gets the name of this DataBase.
 
         数据库名称
 
@@ -185,7 +185,7 @@ class DataBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataBase.
+        r"""Sets the name of this DataBase.
 
         数据库名称
 
@@ -196,7 +196,7 @@ class DataBase:
 
     @property
     def type(self):
-        """Gets the type of this DataBase.
+        r"""Gets the type of this DataBase.
 
         添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
 
@@ -207,7 +207,7 @@ class DataBase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataBase.
+        r"""Sets the type of this DataBase.
 
         添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
 
@@ -218,7 +218,7 @@ class DataBase:
 
     @property
     def version(self):
-        """Gets the version of this DataBase.
+        r"""Gets the version of this DataBase.
 
         数据库版本
 
@@ -229,7 +229,7 @@ class DataBase:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DataBase.
+        r"""Sets the version of this DataBase.
 
         数据库版本
 
@@ -240,7 +240,7 @@ class DataBase:
 
     @property
     def charset(self):
-        """Gets the charset of this DataBase.
+        r"""Gets the charset of this DataBase.
 
         数据库字符集 - GBK - UTF8
 
@@ -251,7 +251,7 @@ class DataBase:
 
     @charset.setter
     def charset(self, charset):
-        """Sets the charset of this DataBase.
+        r"""Sets the charset of this DataBase.
 
         数据库字符集 - GBK - UTF8
 
@@ -262,7 +262,7 @@ class DataBase:
 
     @property
     def ip(self):
-        """Gets the ip of this DataBase.
+        r"""Gets the ip of this DataBase.
 
         数据库IP
 
@@ -273,7 +273,7 @@ class DataBase:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DataBase.
+        r"""Sets the ip of this DataBase.
 
         数据库IP
 
@@ -284,7 +284,7 @@ class DataBase:
 
     @property
     def port(self):
-        """Gets the port of this DataBase.
+        r"""Gets the port of this DataBase.
 
         数据库端口
 
@@ -295,7 +295,7 @@ class DataBase:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DataBase.
+        r"""Sets the port of this DataBase.
 
         数据库端口
 
@@ -306,7 +306,7 @@ class DataBase:
 
     @property
     def os(self):
-        """Gets the os of this DataBase.
+        r"""Gets the os of this DataBase.
 
         数据库操作系统
 
@@ -317,7 +317,7 @@ class DataBase:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this DataBase.
+        r"""Sets the os of this DataBase.
 
         数据库操作系统
 
@@ -328,7 +328,7 @@ class DataBase:
 
     @property
     def status(self):
-        """Gets the status of this DataBase.
+        r"""Gets the status of this DataBase.
 
         实例状态 - ON :开启 - OFF : 关闭
 
@@ -339,7 +339,7 @@ class DataBase:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DataBase.
+        r"""Sets the status of this DataBase.
 
         实例状态 - ON :开启 - OFF : 关闭
 
@@ -350,7 +350,7 @@ class DataBase:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this DataBase.
+        r"""Gets the instance_name of this DataBase.
 
         数据库实例名
 
@@ -361,7 +361,7 @@ class DataBase:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this DataBase.
+        r"""Sets the instance_name of this DataBase.
 
         数据库实例名
 
@@ -372,7 +372,7 @@ class DataBase:
 
     @property
     def audit_status(self):
-        """Gets the audit_status of this DataBase.
+        r"""Gets the audit_status of this DataBase.
 
         数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
 
@@ -383,7 +383,7 @@ class DataBase:
 
     @audit_status.setter
     def audit_status(self, audit_status):
-        """Sets the audit_status of this DataBase.
+        r"""Sets the audit_status of this DataBase.
 
         数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
 
@@ -394,7 +394,7 @@ class DataBase:
 
     @property
     def agent_url(self):
-        """Gets the agent_url of this DataBase.
+        r"""Gets the agent_url of this DataBase.
 
         agent的唯一ID
 
@@ -405,7 +405,7 @@ class DataBase:
 
     @agent_url.setter
     def agent_url(self, agent_url):
-        """Sets the agent_url of this DataBase.
+        r"""Sets the agent_url of this DataBase.
 
         agent的唯一ID
 
@@ -416,7 +416,7 @@ class DataBase:
 
     @property
     def db_classification(self):
-        """Gets the db_classification of this DataBase.
+        r"""Gets the db_classification of this DataBase.
 
         数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
 
@@ -427,7 +427,7 @@ class DataBase:
 
     @db_classification.setter
     def db_classification(self, db_classification):
-        """Sets the db_classification of this DataBase.
+        r"""Sets the db_classification of this DataBase.
 
         数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
 
@@ -438,7 +438,7 @@ class DataBase:
 
     @property
     def rds_audit_switch_mismatch(self):
-        """Gets the rds_audit_switch_mismatch of this DataBase.
+        r"""Gets the rds_audit_switch_mismatch of this DataBase.
 
         rds实例审计开关状态不匹配。当数据库审计开启且rds侧日志上传开关关闭时该字段为true。
 
@@ -449,7 +449,7 @@ class DataBase:
 
     @rds_audit_switch_mismatch.setter
     def rds_audit_switch_mismatch(self, rds_audit_switch_mismatch):
-        """Sets the rds_audit_switch_mismatch of this DataBase.
+        r"""Sets the rds_audit_switch_mismatch of this DataBase.
 
         rds实例审计开关状态不匹配。当数据库审计开启且rds侧日志上传开关关闭时该字段为true。
 
@@ -460,7 +460,7 @@ class DataBase:
 
     @property
     def rds_id(self):
-        """Gets the rds_id of this DataBase.
+        r"""Gets the rds_id of this DataBase.
 
         RDS数据库的ID。
 
@@ -471,7 +471,7 @@ class DataBase:
 
     @rds_id.setter
     def rds_id(self, rds_id):
-        """Sets the rds_id of this DataBase.
+        r"""Sets the rds_id of this DataBase.
 
         RDS数据库的ID。
 
@@ -482,7 +482,7 @@ class DataBase:
 
     @property
     def rds_obj_info(self):
-        """Gets the rds_obj_info of this DataBase.
+        r"""Gets the rds_obj_info of this DataBase.
 
         RDS数据库信息。
 
@@ -493,7 +493,7 @@ class DataBase:
 
     @rds_obj_info.setter
     def rds_obj_info(self, rds_obj_info):
-        """Sets the rds_obj_info of this DataBase.
+        r"""Sets the rds_obj_info of this DataBase.
 
         RDS数据库信息。
 
@@ -504,7 +504,7 @@ class DataBase:
 
     @property
     def dws_obj_info(self):
-        """Gets the dws_obj_info of this DataBase.
+        r"""Gets the dws_obj_info of this DataBase.
 
         DWS数据库信息。
 
@@ -515,7 +515,7 @@ class DataBase:
 
     @dws_obj_info.setter
     def dws_obj_info(self, dws_obj_info):
-        """Sets the dws_obj_info of this DataBase.
+        r"""Sets the dws_obj_info of this DataBase.
 
         DWS数据库信息。
 
@@ -526,7 +526,7 @@ class DataBase:
 
     @property
     def clouddb_obj_info(self):
-        """Gets the clouddb_obj_info of this DataBase.
+        r"""Gets the clouddb_obj_info of this DataBase.
 
         云数据库信息，该字段已废弃。
 
@@ -537,7 +537,7 @@ class DataBase:
 
     @clouddb_obj_info.setter
     def clouddb_obj_info(self, clouddb_obj_info):
-        """Sets the clouddb_obj_info of this DataBase.
+        r"""Sets the clouddb_obj_info of this DataBase.
 
         云数据库信息，该字段已废弃。
 

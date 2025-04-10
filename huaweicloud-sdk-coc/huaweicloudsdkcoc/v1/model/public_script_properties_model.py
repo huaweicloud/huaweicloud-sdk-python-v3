@@ -27,7 +27,7 @@ class PublicScriptPropertiesModel:
     }
 
     def __init__(self, risk_level=None, version=None):
-        """PublicScriptPropertiesModel
+        r"""PublicScriptPropertiesModel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PublicScriptPropertiesModel:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this PublicScriptPropertiesModel.
+        r"""Gets the risk_level of this PublicScriptPropertiesModel.
 
         风险等级 LOW:低风险 MEDIUM:中风险 HIGH:高风险
 
@@ -59,7 +59,7 @@ class PublicScriptPropertiesModel:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this PublicScriptPropertiesModel.
+        r"""Sets the risk_level of this PublicScriptPropertiesModel.
 
         风险等级 LOW:低风险 MEDIUM:中风险 HIGH:高风险
 
@@ -70,7 +70,7 @@ class PublicScriptPropertiesModel:
 
     @property
     def version(self):
-        """Gets the version of this PublicScriptPropertiesModel.
+        r"""Gets the version of this PublicScriptPropertiesModel.
 
         脚本版本号
 
@@ -81,7 +81,7 @@ class PublicScriptPropertiesModel:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublicScriptPropertiesModel.
+        r"""Sets the version of this PublicScriptPropertiesModel.
 
         脚本版本号
 

@@ -31,7 +31,7 @@ class StyleExtraMeta:
     }
 
     def __init__(self, picture_modeling_enable=None, edit_enable=None, edit_engine=None, model_id=None):
-        """StyleExtraMeta
+        r"""StyleExtraMeta
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StyleExtraMeta:
 
     @property
     def picture_modeling_enable(self):
-        """Gets the picture_modeling_enable of this StyleExtraMeta.
+        r"""Gets the picture_modeling_enable of this StyleExtraMeta.
 
         是否支持照片建模
 
@@ -75,7 +75,7 @@ class StyleExtraMeta:
 
     @picture_modeling_enable.setter
     def picture_modeling_enable(self, picture_modeling_enable):
-        """Sets the picture_modeling_enable of this StyleExtraMeta.
+        r"""Sets the picture_modeling_enable of this StyleExtraMeta.
 
         是否支持照片建模
 
@@ -86,7 +86,7 @@ class StyleExtraMeta:
 
     @property
     def edit_enable(self):
-        """Gets the edit_enable of this StyleExtraMeta.
+        r"""Gets the edit_enable of this StyleExtraMeta.
 
         是否支持模型编辑
 
@@ -97,7 +97,7 @@ class StyleExtraMeta:
 
     @edit_enable.setter
     def edit_enable(self, edit_enable):
-        """Sets the edit_enable of this StyleExtraMeta.
+        r"""Sets the edit_enable of this StyleExtraMeta.
 
         是否支持模型编辑
 
@@ -108,7 +108,7 @@ class StyleExtraMeta:
 
     @property
     def edit_engine(self):
-        """Gets the edit_engine of this StyleExtraMeta.
+        r"""Gets the edit_engine of this StyleExtraMeta.
 
         编辑使用引擎
 
@@ -119,7 +119,7 @@ class StyleExtraMeta:
 
     @edit_engine.setter
     def edit_engine(self, edit_engine):
-        """Sets the edit_engine of this StyleExtraMeta.
+        r"""Sets the edit_engine of this StyleExtraMeta.
 
         编辑使用引擎
 
@@ -130,7 +130,7 @@ class StyleExtraMeta:
 
     @property
     def model_id(self):
-        """Gets the model_id of this StyleExtraMeta.
+        r"""Gets the model_id of this StyleExtraMeta.
 
         照片建模算法调用的模型类型
 
@@ -141,7 +141,7 @@ class StyleExtraMeta:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this StyleExtraMeta.
+        r"""Sets the model_id of this StyleExtraMeta.
 
         照片建模算法调用的模型类型
 

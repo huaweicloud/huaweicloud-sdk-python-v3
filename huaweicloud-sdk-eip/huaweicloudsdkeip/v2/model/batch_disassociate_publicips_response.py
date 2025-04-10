@@ -26,7 +26,7 @@ class BatchDisassociatePublicipsResponse(SdkResponse):
     }
 
     def __init__(self, job_ids=None):
-        """BatchDisassociatePublicipsResponse
+        r"""BatchDisassociatePublicipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDisassociatePublicipsResponse(SdkResponse):
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this BatchDisassociatePublicipsResponse.
+        r"""Gets the job_ids of this BatchDisassociatePublicipsResponse.
 
         job_id列表，此job信息不保存在数据库中，不能同过组件查询到。
 
@@ -55,7 +55,7 @@ class BatchDisassociatePublicipsResponse(SdkResponse):
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this BatchDisassociatePublicipsResponse.
+        r"""Sets the job_ids of this BatchDisassociatePublicipsResponse.
 
         job_id列表，此job信息不保存在数据库中，不能同过组件查询到。
 

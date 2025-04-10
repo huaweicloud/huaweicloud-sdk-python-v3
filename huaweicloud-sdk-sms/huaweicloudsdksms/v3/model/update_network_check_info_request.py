@@ -27,7 +27,7 @@ class UpdateNetworkCheckInfoRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateNetworkCheckInfoRequest
+        r"""UpdateNetworkCheckInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNetworkCheckInfoRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateNetworkCheckInfoRequest.
+        r"""Gets the task_id of this UpdateNetworkCheckInfoRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class UpdateNetworkCheckInfoRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateNetworkCheckInfoRequest.
+        r"""Sets the task_id of this UpdateNetworkCheckInfoRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class UpdateNetworkCheckInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNetworkCheckInfoRequest.
+        r"""Gets the body of this UpdateNetworkCheckInfoRequest.
 
         :return: The body of this UpdateNetworkCheckInfoRequest.
         :rtype: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`
@@ -80,7 +80,7 @@ class UpdateNetworkCheckInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNetworkCheckInfoRequest.
+        r"""Sets the body of this UpdateNetworkCheckInfoRequest.
 
         :param body: The body of this UpdateNetworkCheckInfoRequest.
         :type body: :class:`huaweicloudsdksms.v3.NetworkCheckInfoRequestBody`

@@ -37,7 +37,7 @@ class CreateChangeImageOrderRequestBody:
     }
 
     def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, image_spec_code=None, image_id=None, delay_time=None, message=None):
-        """CreateChangeImageOrderRequestBody
+        r"""CreateChangeImageOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this CreateChangeImageOrderRequestBody.
+        r"""Gets the desktop_pool_id of this CreateChangeImageOrderRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -96,7 +96,7 @@ class CreateChangeImageOrderRequestBody:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this CreateChangeImageOrderRequestBody.
+        r"""Sets the desktop_pool_id of this CreateChangeImageOrderRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -107,7 +107,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this CreateChangeImageOrderRequestBody.
+        r"""Gets the desktop_ids of this CreateChangeImageOrderRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -118,7 +118,7 @@ class CreateChangeImageOrderRequestBody:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this CreateChangeImageOrderRequestBody.
+        r"""Sets the desktop_ids of this CreateChangeImageOrderRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -129,7 +129,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this CreateChangeImageOrderRequestBody.
+        r"""Gets the promotion_plan_id of this CreateChangeImageOrderRequestBody.
 
         促销计划ID
 
@@ -140,7 +140,7 @@ class CreateChangeImageOrderRequestBody:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this CreateChangeImageOrderRequestBody.
+        r"""Sets the promotion_plan_id of this CreateChangeImageOrderRequestBody.
 
         促销计划ID
 
@@ -151,7 +151,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def image_spec_code(self):
-        """Gets the image_spec_code of this CreateChangeImageOrderRequestBody.
+        r"""Gets the image_spec_code of this CreateChangeImageOrderRequestBody.
 
         云市场镜像的specCode，即将停用。image_spec_code与image_id同时存在时取image_id的值，两者不可同时为空。
 
@@ -162,7 +162,7 @@ class CreateChangeImageOrderRequestBody:
 
     @image_spec_code.setter
     def image_spec_code(self, image_spec_code):
-        """Sets the image_spec_code of this CreateChangeImageOrderRequestBody.
+        r"""Sets the image_spec_code of this CreateChangeImageOrderRequestBody.
 
         云市场镜像的specCode，即将停用。image_spec_code与image_id同时存在时取image_id的值，两者不可同时为空。
 
@@ -173,7 +173,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CreateChangeImageOrderRequestBody.
+        r"""Gets the image_id of this CreateChangeImageOrderRequestBody.
 
         云市场镜像ID，建议使用image_id。
 
@@ -184,7 +184,7 @@ class CreateChangeImageOrderRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CreateChangeImageOrderRequestBody.
+        r"""Sets the image_id of this CreateChangeImageOrderRequestBody.
 
         云市场镜像ID，建议使用image_id。
 
@@ -195,7 +195,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this CreateChangeImageOrderRequestBody.
+        r"""Gets the delay_time of this CreateChangeImageOrderRequestBody.
 
         立即重建时给用户预留的保存数据的时间（单位：分钟）。
 
@@ -206,7 +206,7 @@ class CreateChangeImageOrderRequestBody:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this CreateChangeImageOrderRequestBody.
+        r"""Sets the delay_time of this CreateChangeImageOrderRequestBody.
 
         立即重建时给用户预留的保存数据的时间（单位：分钟）。
 
@@ -217,7 +217,7 @@ class CreateChangeImageOrderRequestBody:
 
     @property
     def message(self):
-        """Gets the message of this CreateChangeImageOrderRequestBody.
+        r"""Gets the message of this CreateChangeImageOrderRequestBody.
 
         下发重建系统盘任务时，给用户发送的提示信息。
 
@@ -228,7 +228,7 @@ class CreateChangeImageOrderRequestBody:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateChangeImageOrderRequestBody.
+        r"""Sets the message of this CreateChangeImageOrderRequestBody.
 
         下发重建系统盘任务时，给用户发送的提示信息。
 

@@ -25,7 +25,7 @@ class AddSubscriptionFromSubscriptionUserRequestBody:
     }
 
     def __init__(self, ids=None):
-        """AddSubscriptionFromSubscriptionUserRequestBody
+        r"""AddSubscriptionFromSubscriptionUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddSubscriptionFromSubscriptionUserRequestBody:
 
     @property
     def ids(self):
-        """Gets the ids of this AddSubscriptionFromSubscriptionUserRequestBody.
+        r"""Gets the ids of this AddSubscriptionFromSubscriptionUserRequestBody.
 
         订阅用户ID列表。
 
@@ -53,7 +53,7 @@ class AddSubscriptionFromSubscriptionUserRequestBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this AddSubscriptionFromSubscriptionUserRequestBody.
+        r"""Sets the ids of this AddSubscriptionFromSubscriptionUserRequestBody.
 
         订阅用户ID列表。
 

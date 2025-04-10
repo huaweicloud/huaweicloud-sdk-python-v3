@@ -32,7 +32,7 @@ class SyncLimitDataResponse(SdkResponse):
     }
 
     def __init__(self, result=None, instance_id=None, node_id=None, total_count=None):
-        """SyncLimitDataResponse
+        r"""SyncLimitDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this SyncLimitDataResponse.
+        r"""Gets the result of this SyncLimitDataResponse.
 
         同步结果，success成功，fail失败
 
@@ -76,7 +76,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SyncLimitDataResponse.
+        r"""Sets the result of this SyncLimitDataResponse.
 
         同步结果，success成功，fail失败
 
@@ -87,7 +87,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SyncLimitDataResponse.
+        r"""Gets the instance_id of this SyncLimitDataResponse.
 
         同步数据的实例ID
 
@@ -98,7 +98,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SyncLimitDataResponse.
+        r"""Sets the instance_id of this SyncLimitDataResponse.
 
         同步数据的实例ID
 
@@ -109,7 +109,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this SyncLimitDataResponse.
+        r"""Gets the node_id of this SyncLimitDataResponse.
 
         同步数据的节点ID，集中式表示主节点ID，分布式表示CN节点ID
 
@@ -120,7 +120,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SyncLimitDataResponse.
+        r"""Sets the node_id of this SyncLimitDataResponse.
 
         同步数据的节点ID，集中式表示主节点ID，分布式表示CN节点ID
 
@@ -131,7 +131,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this SyncLimitDataResponse.
+        r"""Gets the total_count of this SyncLimitDataResponse.
 
         同步的数据记录总数
 
@@ -142,7 +142,7 @@ class SyncLimitDataResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this SyncLimitDataResponse.
+        r"""Sets the total_count of this SyncLimitDataResponse.
 
         同步的数据记录总数
 

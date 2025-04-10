@@ -28,7 +28,7 @@ class ListResourcesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListResourcesByTagsResponse
+        r"""ListResourcesByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourcesByTagsResponse.
+        r"""Gets the resources of this ListResourcesByTagsResponse.
 
         :return: The resources of this ListResourcesByTagsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Resource`]
@@ -60,7 +60,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourcesByTagsResponse.
+        r"""Sets the resources of this ListResourcesByTagsResponse.
 
         :param resources: The resources of this ListResourcesByTagsResponse.
         :type resources: list[:class:`huaweicloudsdkvpn.v5.Resource`]
@@ -69,7 +69,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourcesByTagsResponse.
+        r"""Gets the total_count of this ListResourcesByTagsResponse.
 
         :return: The total_count of this ListResourcesByTagsResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourcesByTagsResponse.
+        r"""Sets the total_count of this ListResourcesByTagsResponse.
 
         :param total_count: The total_count of this ListResourcesByTagsResponse.
         :type total_count: int

@@ -43,7 +43,7 @@ class AdjustRecordV3:
     }
 
     def __init__(self, customer_id=None, customer_name=None, operation_type=None, amount=None, currency=None, apply_scene=None, operation_time=None, measure_id=None, trans_id=None, memo=None):
-        """AdjustRecordV3
+        r"""AdjustRecordV3
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AdjustRecordV3:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this AdjustRecordV3.
+        r"""Gets the customer_id of this AdjustRecordV3.
 
         客户账号ID。
 
@@ -117,7 +117,7 @@ class AdjustRecordV3:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this AdjustRecordV3.
+        r"""Sets the customer_id of this AdjustRecordV3.
 
         客户账号ID。
 
@@ -128,7 +128,7 @@ class AdjustRecordV3:
 
     @property
     def customer_name(self):
-        """Gets the customer_name of this AdjustRecordV3.
+        r"""Gets the customer_name of this AdjustRecordV3.
 
         客户名称。
 
@@ -139,7 +139,7 @@ class AdjustRecordV3:
 
     @customer_name.setter
     def customer_name(self, customer_name):
-        """Sets the customer_name of this AdjustRecordV3.
+        r"""Sets the customer_name of this AdjustRecordV3.
 
         客户名称。
 
@@ -150,7 +150,7 @@ class AdjustRecordV3:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this AdjustRecordV3.
+        r"""Gets the operation_type of this AdjustRecordV3.
 
         调账类型。 SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收
 
@@ -161,7 +161,7 @@ class AdjustRecordV3:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this AdjustRecordV3.
+        r"""Sets the operation_type of this AdjustRecordV3.
 
         调账类型。 SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收
 
@@ -172,7 +172,7 @@ class AdjustRecordV3:
 
     @property
     def amount(self):
-        """Gets the amount of this AdjustRecordV3.
+        r"""Gets the amount of this AdjustRecordV3.
 
         调账的总金额。
 
@@ -183,7 +183,7 @@ class AdjustRecordV3:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this AdjustRecordV3.
+        r"""Sets the amount of this AdjustRecordV3.
 
         调账的总金额。
 
@@ -194,7 +194,7 @@ class AdjustRecordV3:
 
     @property
     def currency(self):
-        """Gets the currency of this AdjustRecordV3.
+        r"""Gets the currency of this AdjustRecordV3.
 
         币种。 CNY：人民币
 
@@ -205,7 +205,7 @@ class AdjustRecordV3:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this AdjustRecordV3.
+        r"""Sets the currency of this AdjustRecordV3.
 
         币种。 CNY：人民币
 
@@ -216,7 +216,7 @@ class AdjustRecordV3:
 
     @property
     def apply_scene(self):
-        """Gets the apply_scene of this AdjustRecordV3.
+        r"""Gets the apply_scene of this AdjustRecordV3.
 
         使用场景。
 
@@ -227,7 +227,7 @@ class AdjustRecordV3:
 
     @apply_scene.setter
     def apply_scene(self, apply_scene):
-        """Sets the apply_scene of this AdjustRecordV3.
+        r"""Sets the apply_scene of this AdjustRecordV3.
 
         使用场景。
 
@@ -238,7 +238,7 @@ class AdjustRecordV3:
 
     @property
     def operation_time(self):
-        """Gets the operation_time of this AdjustRecordV3.
+        r"""Gets the operation_time of this AdjustRecordV3.
 
         调账操作的时间。 UTC时间，格式为：2016-03-28T14:45:38Z
 
@@ -249,7 +249,7 @@ class AdjustRecordV3:
 
     @operation_time.setter
     def operation_time(self, operation_time):
-        """Sets the operation_time of this AdjustRecordV3.
+        r"""Sets the operation_time of this AdjustRecordV3.
 
         调账操作的时间。 UTC时间，格式为：2016-03-28T14:45:38Z
 
@@ -260,7 +260,7 @@ class AdjustRecordV3:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this AdjustRecordV3.
+        r"""Gets the measure_id of this AdjustRecordV3.
 
         调账单位。 1：元
 
@@ -271,7 +271,7 @@ class AdjustRecordV3:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this AdjustRecordV3.
+        r"""Sets the measure_id of this AdjustRecordV3.
 
         调账单位。 1：元
 
@@ -282,7 +282,7 @@ class AdjustRecordV3:
 
     @property
     def trans_id(self):
-        """Gets the trans_id of this AdjustRecordV3.
+        r"""Gets the trans_id of this AdjustRecordV3.
 
         事务ID。
 
@@ -293,7 +293,7 @@ class AdjustRecordV3:
 
     @trans_id.setter
     def trans_id(self, trans_id):
-        """Sets the trans_id of this AdjustRecordV3.
+        r"""Sets the trans_id of this AdjustRecordV3.
 
         事务ID。
 
@@ -304,7 +304,7 @@ class AdjustRecordV3:
 
     @property
     def memo(self):
-        """Gets the memo of this AdjustRecordV3.
+        r"""Gets the memo of this AdjustRecordV3.
 
         备注。
 
@@ -315,7 +315,7 @@ class AdjustRecordV3:
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this AdjustRecordV3.
+        r"""Sets the memo of this AdjustRecordV3.
 
         备注。
 

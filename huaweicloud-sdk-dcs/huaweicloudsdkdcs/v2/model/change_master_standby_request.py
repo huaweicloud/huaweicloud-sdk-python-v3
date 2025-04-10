@@ -25,7 +25,7 @@ class ChangeMasterStandbyRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ChangeMasterStandbyRequest
+        r"""ChangeMasterStandbyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeMasterStandbyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeMasterStandbyRequest.
+        r"""Gets the instance_id of this ChangeMasterStandbyRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ChangeMasterStandbyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeMasterStandbyRequest.
+        r"""Sets the instance_id of this ChangeMasterStandbyRequest.
 
         实例ID。
 

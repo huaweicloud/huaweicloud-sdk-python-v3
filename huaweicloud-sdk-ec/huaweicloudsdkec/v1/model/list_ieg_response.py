@@ -30,7 +30,7 @@ class ListIegResponse(SdkResponse):
     }
 
     def __init__(self, intelligent_enterprise_gateways=None, page_info=None, total_count=None):
-        """ListIegResponse
+        r"""ListIegResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListIegResponse(SdkResponse):
 
     @property
     def intelligent_enterprise_gateways(self):
-        """Gets the intelligent_enterprise_gateways of this ListIegResponse.
+        r"""Gets the intelligent_enterprise_gateways of this ListIegResponse.
 
         智能企业网关列表
 
@@ -69,7 +69,7 @@ class ListIegResponse(SdkResponse):
 
     @intelligent_enterprise_gateways.setter
     def intelligent_enterprise_gateways(self, intelligent_enterprise_gateways):
-        """Sets the intelligent_enterprise_gateways of this ListIegResponse.
+        r"""Sets the intelligent_enterprise_gateways of this ListIegResponse.
 
         智能企业网关列表
 
@@ -80,7 +80,7 @@ class ListIegResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListIegResponse.
+        r"""Gets the page_info of this ListIegResponse.
 
         :return: The page_info of this ListIegResponse.
         :rtype: :class:`huaweicloudsdkec.v1.PageInfo`
@@ -89,7 +89,7 @@ class ListIegResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListIegResponse.
+        r"""Sets the page_info of this ListIegResponse.
 
         :param page_info: The page_info of this ListIegResponse.
         :type page_info: :class:`huaweicloudsdkec.v1.PageInfo`
@@ -98,7 +98,7 @@ class ListIegResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListIegResponse.
+        r"""Gets the total_count of this ListIegResponse.
 
         智能企业网关数量
 
@@ -109,7 +109,7 @@ class ListIegResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListIegResponse.
+        r"""Sets the total_count of this ListIegResponse.
 
         智能企业网关数量
 

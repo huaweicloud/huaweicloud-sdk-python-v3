@@ -30,7 +30,7 @@ class DetectLiveByUrlResponse(SdkResponse):
     }
 
     def __init__(self, video_result=None, warning_list=None, x_request_id=None):
-        """DetectLiveByUrlResponse
+        r"""DetectLiveByUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
     @property
     def video_result(self):
-        """Gets the video_result of this DetectLiveByUrlResponse.
+        r"""Gets the video_result of this DetectLiveByUrlResponse.
 
         :return: The video_result of this DetectLiveByUrlResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
@@ -67,7 +67,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
     @video_result.setter
     def video_result(self, video_result):
-        """Sets the video_result of this DetectLiveByUrlResponse.
+        r"""Sets the video_result of this DetectLiveByUrlResponse.
 
         :param video_result: The video_result of this DetectLiveByUrlResponse.
         :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
@@ -76,7 +76,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
     @property
     def warning_list(self):
-        """Gets the warning_list of this DetectLiveByUrlResponse.
+        r"""Gets the warning_list of this DetectLiveByUrlResponse.
 
         [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
 
@@ -87,7 +87,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
     @warning_list.setter
     def warning_list(self, warning_list):
-        """Sets the warning_list of this DetectLiveByUrlResponse.
+        r"""Sets the warning_list of this DetectLiveByUrlResponse.
 
         [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
 
@@ -98,7 +98,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectLiveByUrlResponse.
+        r"""Gets the x_request_id of this DetectLiveByUrlResponse.
 
         :return: The x_request_id of this DetectLiveByUrlResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectLiveByUrlResponse.
+        r"""Sets the x_request_id of this DetectLiveByUrlResponse.
 
         :param x_request_id: The x_request_id of this DetectLiveByUrlResponse.
         :type x_request_id: str

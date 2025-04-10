@@ -25,7 +25,7 @@ class ConfigMapId:
     }
 
     def __init__(self, id=None):
-        """ConfigMapId
+        r"""ConfigMapId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConfigMapId:
 
     @property
     def id(self):
-        """Gets the id of this ConfigMapId.
+        r"""Gets the id of this ConfigMapId.
 
         配置项id
 
@@ -53,7 +53,7 @@ class ConfigMapId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigMapId.
+        r"""Sets the id of this ConfigMapId.
 
         配置项id
 

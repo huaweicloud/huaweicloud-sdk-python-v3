@@ -29,7 +29,7 @@ class CreateAlertRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreateAlertRequest
+        r"""CreateAlertRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAlertRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAlertRequest.
+        r"""Gets the project_id of this CreateAlertRequest.
 
         ID of project
 
@@ -66,7 +66,7 @@ class CreateAlertRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAlertRequest.
+        r"""Sets the project_id of this CreateAlertRequest.
 
         ID of project
 
@@ -77,7 +77,7 @@ class CreateAlertRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateAlertRequest.
+        r"""Gets the workspace_id of this CreateAlertRequest.
 
         ID of workspace
 
@@ -88,7 +88,7 @@ class CreateAlertRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateAlertRequest.
+        r"""Sets the workspace_id of this CreateAlertRequest.
 
         ID of workspace
 
@@ -99,7 +99,7 @@ class CreateAlertRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAlertRequest.
+        r"""Gets the body of this CreateAlertRequest.
 
         :return: The body of this CreateAlertRequest.
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertRequestBody`
@@ -108,7 +108,7 @@ class CreateAlertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAlertRequest.
+        r"""Sets the body of this CreateAlertRequest.
 
         :param body: The body of this CreateAlertRequest.
         :type body: :class:`huaweicloudsdksa.v2.CreateAlertRequestBody`

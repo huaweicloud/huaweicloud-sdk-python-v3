@@ -47,7 +47,7 @@ class Review:
     }
 
     def __init__(self, charger=None, create_time=None, creator=None, deleted=None, description=None, id=None, mindmap_id=None, node_id=None, node_value=None, status=None, type=None, update_time=None):
-        """Review
+        r"""Review
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class Review:
 
     @property
     def charger(self):
-        """Gets the charger of this Review.
+        r"""Gets the charger of this Review.
 
         名称
 
@@ -131,7 +131,7 @@ class Review:
 
     @charger.setter
     def charger(self, charger):
-        """Sets the charger of this Review.
+        r"""Sets the charger of this Review.
 
         名称
 
@@ -142,7 +142,7 @@ class Review:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Review.
+        r"""Gets the create_time of this Review.
 
         创建时间
 
@@ -153,7 +153,7 @@ class Review:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Review.
+        r"""Sets the create_time of this Review.
 
         创建时间
 
@@ -164,7 +164,7 @@ class Review:
 
     @property
     def creator(self):
-        """Gets the creator of this Review.
+        r"""Gets the creator of this Review.
 
         创建人
 
@@ -175,7 +175,7 @@ class Review:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Review.
+        r"""Sets the creator of this Review.
 
         创建人
 
@@ -186,7 +186,7 @@ class Review:
 
     @property
     def deleted(self):
-        """Gets the deleted of this Review.
+        r"""Gets the deleted of this Review.
 
         是否删除
 
@@ -197,7 +197,7 @@ class Review:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this Review.
+        r"""Sets the deleted of this Review.
 
         是否删除
 
@@ -208,7 +208,7 @@ class Review:
 
     @property
     def description(self):
-        """Gets the description of this Review.
+        r"""Gets the description of this Review.
 
         描述
 
@@ -219,7 +219,7 @@ class Review:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Review.
+        r"""Sets the description of this Review.
 
         描述
 
@@ -230,7 +230,7 @@ class Review:
 
     @property
     def id(self):
-        """Gets the id of this Review.
+        r"""Gets the id of this Review.
 
         id 主键
 
@@ -241,7 +241,7 @@ class Review:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Review.
+        r"""Sets the id of this Review.
 
         id 主键
 
@@ -252,7 +252,7 @@ class Review:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this Review.
+        r"""Gets the mindmap_id of this Review.
 
         脑图id
 
@@ -263,7 +263,7 @@ class Review:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this Review.
+        r"""Sets the mindmap_id of this Review.
 
         脑图id
 
@@ -274,7 +274,7 @@ class Review:
 
     @property
     def node_id(self):
-        """Gets the node_id of this Review.
+        r"""Gets the node_id of this Review.
 
         节点id
 
@@ -285,7 +285,7 @@ class Review:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this Review.
+        r"""Sets the node_id of this Review.
 
         节点id
 
@@ -296,7 +296,7 @@ class Review:
 
     @property
     def node_value(self):
-        """Gets the node_value of this Review.
+        r"""Gets the node_value of this Review.
 
         节点值
 
@@ -307,7 +307,7 @@ class Review:
 
     @node_value.setter
     def node_value(self, node_value):
-        """Sets the node_value of this Review.
+        r"""Sets the node_value of this Review.
 
         节点值
 
@@ -318,7 +318,7 @@ class Review:
 
     @property
     def status(self):
-        """Gets the status of this Review.
+        r"""Gets the status of this Review.
 
         状态
 
@@ -329,7 +329,7 @@ class Review:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Review.
+        r"""Sets the status of this Review.
 
         状态
 
@@ -340,7 +340,7 @@ class Review:
 
     @property
     def type(self):
-        """Gets the type of this Review.
+        r"""Gets the type of this Review.
 
         类型
 
@@ -351,7 +351,7 @@ class Review:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Review.
+        r"""Sets the type of this Review.
 
         类型
 
@@ -362,7 +362,7 @@ class Review:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Review.
+        r"""Gets the update_time of this Review.
 
         更新时间
 
@@ -373,7 +373,7 @@ class Review:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Review.
+        r"""Sets the update_time of this Review.
 
         更新时间
 

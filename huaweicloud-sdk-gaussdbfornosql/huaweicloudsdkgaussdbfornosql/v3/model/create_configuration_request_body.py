@@ -31,7 +31,7 @@ class CreateConfigurationRequestBody:
     }
 
     def __init__(self, name=None, description=None, datastore=None, values=None):
-        """CreateConfigurationRequestBody
+        r"""CreateConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateConfigurationRequestBody.
+        r"""Gets the name of this CreateConfigurationRequestBody.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
 
@@ -73,7 +73,7 @@ class CreateConfigurationRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConfigurationRequestBody.
+        r"""Sets the name of this CreateConfigurationRequestBody.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
 
@@ -84,7 +84,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateConfigurationRequestBody.
+        r"""Gets the description of this CreateConfigurationRequestBody.
 
         参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
 
@@ -95,7 +95,7 @@ class CreateConfigurationRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConfigurationRequestBody.
+        r"""Sets the description of this CreateConfigurationRequestBody.
 
         参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
 
@@ -106,7 +106,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateConfigurationRequestBody.
+        r"""Gets the datastore of this CreateConfigurationRequestBody.
 
         :return: The datastore of this CreateConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationDatastoreOption`
@@ -115,7 +115,7 @@ class CreateConfigurationRequestBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateConfigurationRequestBody.
+        r"""Sets the datastore of this CreateConfigurationRequestBody.
 
         :param datastore: The datastore of this CreateConfigurationRequestBody.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationDatastoreOption`
@@ -124,7 +124,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def values(self):
-        """Gets the values of this CreateConfigurationRequestBody.
+        r"""Gets the values of this CreateConfigurationRequestBody.
 
         参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
 
@@ -135,7 +135,7 @@ class CreateConfigurationRequestBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateConfigurationRequestBody.
+        r"""Sets the values of this CreateConfigurationRequestBody.
 
         参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
 

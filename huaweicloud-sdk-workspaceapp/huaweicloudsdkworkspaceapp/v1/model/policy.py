@@ -27,7 +27,7 @@ class Policy:
     }
 
     def __init__(self, version=None, statement=None):
-        """Policy
+        r"""Policy
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Policy:
 
     @property
     def version(self):
-        """Gets the version of this Policy.
+        r"""Gets the version of this Policy.
 
         版本号。
 
@@ -61,7 +61,7 @@ class Policy:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Policy.
+        r"""Sets the version of this Policy.
 
         版本号。
 
@@ -72,7 +72,7 @@ class Policy:
 
     @property
     def statement(self):
-        """Gets the statement of this Policy.
+        r"""Gets the statement of this Policy.
 
         :return: The statement of this Policy.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`
@@ -81,7 +81,7 @@ class Policy:
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this Policy.
+        r"""Sets the statement of this Policy.
 
         :param statement: The statement of this Policy.
         :type statement: :class:`huaweicloudsdkworkspaceapp.v1.PolicyStatement`

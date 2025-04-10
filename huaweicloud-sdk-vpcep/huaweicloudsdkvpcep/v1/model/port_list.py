@@ -29,7 +29,7 @@ class PortList:
     }
 
     def __init__(self, client_port=None, server_port=None, protocol=None):
-        """PortList
+        r"""PortList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PortList:
 
     @property
     def client_port(self):
-        """Gets the client_port of this PortList.
+        r"""Gets the client_port of this PortList.
 
         终端节点访问的端口。 终端节点提供给用户，作为访问终端节点服务的端口，范围1-65535。
 
@@ -68,7 +68,7 @@ class PortList:
 
     @client_port.setter
     def client_port(self, client_port):
-        """Sets the client_port of this PortList.
+        r"""Sets the client_port of this PortList.
 
         终端节点访问的端口。 终端节点提供给用户，作为访问终端节点服务的端口，范围1-65535。
 
@@ -79,7 +79,7 @@ class PortList:
 
     @property
     def server_port(self):
-        """Gets the server_port of this PortList.
+        r"""Gets the server_port of this PortList.
 
         终端节点服务的端口。 终端节点服务绑定了后端资源，作为提供服务的端口，范围1-65535。
 
@@ -90,7 +90,7 @@ class PortList:
 
     @server_port.setter
     def server_port(self, server_port):
-        """Sets the server_port of this PortList.
+        r"""Sets the server_port of this PortList.
 
         终端节点服务的端口。 终端节点服务绑定了后端资源，作为提供服务的端口，范围1-65535。
 
@@ -101,7 +101,7 @@ class PortList:
 
     @property
     def protocol(self):
-        """Gets the protocol of this PortList.
+        r"""Gets the protocol of this PortList.
 
         端口映射协议，支持TCP。
 
@@ -112,7 +112,7 @@ class PortList:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this PortList.
+        r"""Sets the protocol of this PortList.
 
         端口映射协议，支持TCP。
 

@@ -29,7 +29,7 @@ class ModifyIpWhitelistBody:
     }
 
     def __init__(self, instance_id=None, enable_whitelist=None, whitelist=None):
-        """ModifyIpWhitelistBody
+        r"""ModifyIpWhitelistBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ModifyIpWhitelistBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyIpWhitelistBody.
+        r"""Gets the instance_id of this ModifyIpWhitelistBody.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ModifyIpWhitelistBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyIpWhitelistBody.
+        r"""Sets the instance_id of this ModifyIpWhitelistBody.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ModifyIpWhitelistBody:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this ModifyIpWhitelistBody.
+        r"""Gets the enable_whitelist of this ModifyIpWhitelistBody.
 
         是否启用白名单（true/false）。
 
@@ -88,7 +88,7 @@ class ModifyIpWhitelistBody:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this ModifyIpWhitelistBody.
+        r"""Sets the enable_whitelist of this ModifyIpWhitelistBody.
 
         是否启用白名单（true/false）。
 
@@ -99,7 +99,7 @@ class ModifyIpWhitelistBody:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this ModifyIpWhitelistBody.
+        r"""Gets the whitelist of this ModifyIpWhitelistBody.
 
         IP白名单分组列表。
 
@@ -110,7 +110,7 @@ class ModifyIpWhitelistBody:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this ModifyIpWhitelistBody.
+        r"""Sets the whitelist of this ModifyIpWhitelistBody.
 
         IP白名单分组列表。
 

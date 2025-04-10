@@ -59,7 +59,7 @@ class SmsSignatureInfo:
     }
 
     def __init__(self, signature_name=None, signature_id=None, signature_type=None, app_name=None, app_id=None, apply_desc=None, channel_num=None, file_id=None, status=None, signature_source=None, is_involved_third=None, power_attorney_file_id=None, urge_status=None, urge_time=None, urge_desc=None, review_desc=None, source_title_content=None, create_time=None):
-        """SmsSignatureInfo
+        r"""SmsSignatureInfo
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class SmsSignatureInfo:
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this SmsSignatureInfo.
+        r"""Gets the signature_name of this SmsSignatureInfo.
 
         签名名称。
 
@@ -173,7 +173,7 @@ class SmsSignatureInfo:
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this SmsSignatureInfo.
+        r"""Sets the signature_name of this SmsSignatureInfo.
 
         签名名称。
 
@@ -184,7 +184,7 @@ class SmsSignatureInfo:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this SmsSignatureInfo.
+        r"""Gets the signature_id of this SmsSignatureInfo.
 
         签名ID。
 
@@ -195,7 +195,7 @@ class SmsSignatureInfo:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this SmsSignatureInfo.
+        r"""Sets the signature_id of this SmsSignatureInfo.
 
         签名ID。
 
@@ -206,7 +206,7 @@ class SmsSignatureInfo:
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this SmsSignatureInfo.
+        r"""Gets the signature_type of this SmsSignatureInfo.
 
         签名类型。
 
@@ -217,7 +217,7 @@ class SmsSignatureInfo:
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this SmsSignatureInfo.
+        r"""Sets the signature_type of this SmsSignatureInfo.
 
         签名类型。
 
@@ -228,7 +228,7 @@ class SmsSignatureInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsSignatureInfo.
+        r"""Gets the app_name of this SmsSignatureInfo.
 
         应用名称。
 
@@ -239,7 +239,7 @@ class SmsSignatureInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsSignatureInfo.
+        r"""Sets the app_name of this SmsSignatureInfo.
 
         应用名称。
 
@@ -250,7 +250,7 @@ class SmsSignatureInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SmsSignatureInfo.
+        r"""Gets the app_id of this SmsSignatureInfo.
 
         应用ID。
 
@@ -261,7 +261,7 @@ class SmsSignatureInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SmsSignatureInfo.
+        r"""Sets the app_id of this SmsSignatureInfo.
 
         应用ID。
 
@@ -272,7 +272,7 @@ class SmsSignatureInfo:
 
     @property
     def apply_desc(self):
-        """Gets the apply_desc of this SmsSignatureInfo.
+        r"""Gets the apply_desc of this SmsSignatureInfo.
 
         申请说明。
 
@@ -283,7 +283,7 @@ class SmsSignatureInfo:
 
     @apply_desc.setter
     def apply_desc(self, apply_desc):
-        """Sets the apply_desc of this SmsSignatureInfo.
+        r"""Sets the apply_desc of this SmsSignatureInfo.
 
         申请说明。
 
@@ -294,7 +294,7 @@ class SmsSignatureInfo:
 
     @property
     def channel_num(self):
-        """Gets the channel_num of this SmsSignatureInfo.
+        r"""Gets the channel_num of this SmsSignatureInfo.
 
         国内短信通道号，仅当签名审核成功，运营人员配置完成后返回。
 
@@ -305,7 +305,7 @@ class SmsSignatureInfo:
 
     @channel_num.setter
     def channel_num(self, channel_num):
-        """Sets the channel_num of this SmsSignatureInfo.
+        r"""Sets the channel_num of this SmsSignatureInfo.
 
         国内短信通道号，仅当签名审核成功，运营人员配置完成后返回。
 
@@ -316,7 +316,7 @@ class SmsSignatureInfo:
 
     @property
     def file_id(self):
-        """Gets the file_id of this SmsSignatureInfo.
+        r"""Gets the file_id of this SmsSignatureInfo.
 
         营业执照文件ID。
 
@@ -327,7 +327,7 @@ class SmsSignatureInfo:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this SmsSignatureInfo.
+        r"""Sets the file_id of this SmsSignatureInfo.
 
         营业执照文件ID。
 
@@ -338,7 +338,7 @@ class SmsSignatureInfo:
 
     @property
     def status(self):
-        """Gets the status of this SmsSignatureInfo.
+        r"""Gets the status of this SmsSignatureInfo.
 
         状态。
 
@@ -349,7 +349,7 @@ class SmsSignatureInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsSignatureInfo.
+        r"""Sets the status of this SmsSignatureInfo.
 
         状态。
 
@@ -360,7 +360,7 @@ class SmsSignatureInfo:
 
     @property
     def signature_source(self):
-        """Gets the signature_source of this SmsSignatureInfo.
+        r"""Gets the signature_source of this SmsSignatureInfo.
 
         签名来源。
 
@@ -371,7 +371,7 @@ class SmsSignatureInfo:
 
     @signature_source.setter
     def signature_source(self, signature_source):
-        """Sets the signature_source of this SmsSignatureInfo.
+        r"""Sets the signature_source of this SmsSignatureInfo.
 
         签名来源。
 
@@ -382,7 +382,7 @@ class SmsSignatureInfo:
 
     @property
     def is_involved_third(self):
-        """Gets the is_involved_third of this SmsSignatureInfo.
+        r"""Gets the is_involved_third of this SmsSignatureInfo.
 
         是否涉及第三方权益。
 
@@ -393,7 +393,7 @@ class SmsSignatureInfo:
 
     @is_involved_third.setter
     def is_involved_third(self, is_involved_third):
-        """Sets the is_involved_third of this SmsSignatureInfo.
+        r"""Sets the is_involved_third of this SmsSignatureInfo.
 
         是否涉及第三方权益。
 
@@ -404,7 +404,7 @@ class SmsSignatureInfo:
 
     @property
     def power_attorney_file_id(self):
-        """Gets the power_attorney_file_id of this SmsSignatureInfo.
+        r"""Gets the power_attorney_file_id of this SmsSignatureInfo.
 
         授权委托书文件ID。
 
@@ -415,7 +415,7 @@ class SmsSignatureInfo:
 
     @power_attorney_file_id.setter
     def power_attorney_file_id(self, power_attorney_file_id):
-        """Sets the power_attorney_file_id of this SmsSignatureInfo.
+        r"""Sets the power_attorney_file_id of this SmsSignatureInfo.
 
         授权委托书文件ID。
 
@@ -426,7 +426,7 @@ class SmsSignatureInfo:
 
     @property
     def urge_status(self):
-        """Gets the urge_status of this SmsSignatureInfo.
+        r"""Gets the urge_status of this SmsSignatureInfo.
 
         催审状态。
 
@@ -437,7 +437,7 @@ class SmsSignatureInfo:
 
     @urge_status.setter
     def urge_status(self, urge_status):
-        """Sets the urge_status of this SmsSignatureInfo.
+        r"""Sets the urge_status of this SmsSignatureInfo.
 
         催审状态。
 
@@ -448,7 +448,7 @@ class SmsSignatureInfo:
 
     @property
     def urge_time(self):
-        """Gets the urge_time of this SmsSignatureInfo.
+        r"""Gets the urge_time of this SmsSignatureInfo.
 
         催审时间。
 
@@ -459,7 +459,7 @@ class SmsSignatureInfo:
 
     @urge_time.setter
     def urge_time(self, urge_time):
-        """Sets the urge_time of this SmsSignatureInfo.
+        r"""Sets the urge_time of this SmsSignatureInfo.
 
         催审时间。
 
@@ -470,7 +470,7 @@ class SmsSignatureInfo:
 
     @property
     def urge_desc(self):
-        """Gets the urge_desc of this SmsSignatureInfo.
+        r"""Gets the urge_desc of this SmsSignatureInfo.
 
         催审描述。
 
@@ -481,7 +481,7 @@ class SmsSignatureInfo:
 
     @urge_desc.setter
     def urge_desc(self, urge_desc):
-        """Sets the urge_desc of this SmsSignatureInfo.
+        r"""Sets the urge_desc of this SmsSignatureInfo.
 
         催审描述。
 
@@ -492,7 +492,7 @@ class SmsSignatureInfo:
 
     @property
     def review_desc(self):
-        """Gets the review_desc of this SmsSignatureInfo.
+        r"""Gets the review_desc of this SmsSignatureInfo.
 
         审核意见。
 
@@ -503,7 +503,7 @@ class SmsSignatureInfo:
 
     @review_desc.setter
     def review_desc(self, review_desc):
-        """Sets the review_desc of this SmsSignatureInfo.
+        r"""Sets the review_desc of this SmsSignatureInfo.
 
         审核意见。
 
@@ -514,7 +514,7 @@ class SmsSignatureInfo:
 
     @property
     def source_title_content(self):
-        """Gets the source_title_content of this SmsSignatureInfo.
+        r"""Gets the source_title_content of this SmsSignatureInfo.
 
         标题内容。
 
@@ -525,7 +525,7 @@ class SmsSignatureInfo:
 
     @source_title_content.setter
     def source_title_content(self, source_title_content):
-        """Sets the source_title_content of this SmsSignatureInfo.
+        r"""Sets the source_title_content of this SmsSignatureInfo.
 
         标题内容。
 
@@ -536,7 +536,7 @@ class SmsSignatureInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsSignatureInfo.
+        r"""Gets the create_time of this SmsSignatureInfo.
 
         创建时间。
 
@@ -547,7 +547,7 @@ class SmsSignatureInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsSignatureInfo.
+        r"""Sets the create_time of this SmsSignatureInfo.
 
         创建时间。
 

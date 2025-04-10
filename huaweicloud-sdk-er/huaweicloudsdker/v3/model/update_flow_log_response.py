@@ -28,7 +28,7 @@ class UpdateFlowLogResponse(SdkResponse):
     }
 
     def __init__(self, flow_log=None, request_id=None):
-        """UpdateFlowLogResponse
+        r"""UpdateFlowLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateFlowLogResponse(SdkResponse):
 
     @property
     def flow_log(self):
-        """Gets the flow_log of this UpdateFlowLogResponse.
+        r"""Gets the flow_log of this UpdateFlowLogResponse.
 
         :return: The flow_log of this UpdateFlowLogResponse.
         :rtype: :class:`huaweicloudsdker.v3.FlowLog`
@@ -60,7 +60,7 @@ class UpdateFlowLogResponse(SdkResponse):
 
     @flow_log.setter
     def flow_log(self, flow_log):
-        """Sets the flow_log of this UpdateFlowLogResponse.
+        r"""Sets the flow_log of this UpdateFlowLogResponse.
 
         :param flow_log: The flow_log of this UpdateFlowLogResponse.
         :type flow_log: :class:`huaweicloudsdker.v3.FlowLog`
@@ -69,7 +69,7 @@ class UpdateFlowLogResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateFlowLogResponse.
+        r"""Gets the request_id of this UpdateFlowLogResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class UpdateFlowLogResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateFlowLogResponse.
+        r"""Sets the request_id of this UpdateFlowLogResponse.
 
         请求id
 

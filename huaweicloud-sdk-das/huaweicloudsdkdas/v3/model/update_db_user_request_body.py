@@ -27,7 +27,7 @@ class UpdateDbUserRequestBody:
     }
 
     def __init__(self, db_username=None, db_user_password=None):
-        """UpdateDbUserRequestBody
+        r"""UpdateDbUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateDbUserRequestBody:
 
     @property
     def db_username(self):
-        """Gets the db_username of this UpdateDbUserRequestBody.
+        r"""Gets the db_username of this UpdateDbUserRequestBody.
 
         数据库用户名称
 
@@ -59,7 +59,7 @@ class UpdateDbUserRequestBody:
 
     @db_username.setter
     def db_username(self, db_username):
-        """Sets the db_username of this UpdateDbUserRequestBody.
+        r"""Sets the db_username of this UpdateDbUserRequestBody.
 
         数据库用户名称
 
@@ -70,7 +70,7 @@ class UpdateDbUserRequestBody:
 
     @property
     def db_user_password(self):
-        """Gets the db_user_password of this UpdateDbUserRequestBody.
+        r"""Gets the db_user_password of this UpdateDbUserRequestBody.
 
         数据库用户密码
 
@@ -81,7 +81,7 @@ class UpdateDbUserRequestBody:
 
     @db_user_password.setter
     def db_user_password(self, db_user_password):
-        """Sets the db_user_password of this UpdateDbUserRequestBody.
+        r"""Sets the db_user_password of this UpdateDbUserRequestBody.
 
         数据库用户密码
 

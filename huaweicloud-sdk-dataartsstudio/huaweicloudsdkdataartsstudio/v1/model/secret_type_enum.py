@@ -29,7 +29,7 @@ class SecretTypeEnum:
     }
 
     def __init__(self):
-        """SecretTypeEnum
+        r"""SecretTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -51,7 +51,7 @@ class DesktopSnapshotDetailInfo:
     }
 
     def __init__(self, snapshot_id=None, snapshot_name=None, desktop_id=None, desktop_name=None, desktop_sid=None, desktop_pool_id=None, is_system_disk=None, status=None, process=None, description=None, create_time=None, create_type=None, last_restore_time=None, restore_fail_reason=None):
-        """DesktopSnapshotDetailInfo
+        r"""DesktopSnapshotDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this DesktopSnapshotDetailInfo.
+        r"""Gets the snapshot_id of this DesktopSnapshotDetailInfo.
 
         桌面快照ID。
 
@@ -145,7 +145,7 @@ class DesktopSnapshotDetailInfo:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this DesktopSnapshotDetailInfo.
+        r"""Sets the snapshot_id of this DesktopSnapshotDetailInfo.
 
         桌面快照ID。
 
@@ -156,7 +156,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def snapshot_name(self):
-        """Gets the snapshot_name of this DesktopSnapshotDetailInfo.
+        r"""Gets the snapshot_name of this DesktopSnapshotDetailInfo.
 
         桌面快照记录名称。
 
@@ -167,7 +167,7 @@ class DesktopSnapshotDetailInfo:
 
     @snapshot_name.setter
     def snapshot_name(self, snapshot_name):
-        """Sets the snapshot_name of this DesktopSnapshotDetailInfo.
+        r"""Sets the snapshot_name of this DesktopSnapshotDetailInfo.
 
         桌面快照记录名称。
 
@@ -178,7 +178,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopSnapshotDetailInfo.
+        r"""Gets the desktop_id of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面id。
 
@@ -189,7 +189,7 @@ class DesktopSnapshotDetailInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopSnapshotDetailInfo.
+        r"""Sets the desktop_id of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面id。
 
@@ -200,7 +200,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this DesktopSnapshotDetailInfo.
+        r"""Gets the desktop_name of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面名称。
 
@@ -211,7 +211,7 @@ class DesktopSnapshotDetailInfo:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this DesktopSnapshotDetailInfo.
+        r"""Sets the desktop_name of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面名称。
 
@@ -222,7 +222,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def desktop_sid(self):
-        """Gets the desktop_sid of this DesktopSnapshotDetailInfo.
+        r"""Gets the desktop_sid of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面sid。
 
@@ -233,7 +233,7 @@ class DesktopSnapshotDetailInfo:
 
     @desktop_sid.setter
     def desktop_sid(self, desktop_sid):
-        """Sets the desktop_sid of this DesktopSnapshotDetailInfo.
+        r"""Sets the desktop_sid of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面sid。
 
@@ -244,7 +244,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this DesktopSnapshotDetailInfo.
+        r"""Gets the desktop_pool_id of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面池id。
 
@@ -255,7 +255,7 @@ class DesktopSnapshotDetailInfo:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this DesktopSnapshotDetailInfo.
+        r"""Sets the desktop_pool_id of this DesktopSnapshotDetailInfo.
 
         桌面快照对应的桌面池id。
 
@@ -266,7 +266,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def is_system_disk(self):
-        """Gets the is_system_disk of this DesktopSnapshotDetailInfo.
+        r"""Gets the is_system_disk of this DesktopSnapshotDetailInfo.
 
         快照对应磁盘类型，true表示系统盘，false表示数据盘。
 
@@ -277,7 +277,7 @@ class DesktopSnapshotDetailInfo:
 
     @is_system_disk.setter
     def is_system_disk(self, is_system_disk):
-        """Sets the is_system_disk of this DesktopSnapshotDetailInfo.
+        r"""Sets the is_system_disk of this DesktopSnapshotDetailInfo.
 
         快照对应磁盘类型，true表示系统盘，false表示数据盘。
 
@@ -288,7 +288,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this DesktopSnapshotDetailInfo.
+        r"""Gets the status of this DesktopSnapshotDetailInfo.
 
         快照状态。 - creating：表示创建中。 - restoring：表示恢复中。 - create_success：表示创建成功。 - create_failed：表示创建快照失败。 - restore_success：表示快照恢复成功。 - restore_failed：表示快照恢复失败。
 
@@ -299,7 +299,7 @@ class DesktopSnapshotDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DesktopSnapshotDetailInfo.
+        r"""Sets the status of this DesktopSnapshotDetailInfo.
 
         快照状态。 - creating：表示创建中。 - restoring：表示恢复中。 - create_success：表示创建成功。 - create_failed：表示创建快照失败。 - restore_success：表示快照恢复成功。 - restore_failed：表示快照恢复失败。
 
@@ -310,7 +310,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def process(self):
-        """Gets the process of this DesktopSnapshotDetailInfo.
+        r"""Gets the process of this DesktopSnapshotDetailInfo.
 
         快照任务进度， 取值范围0-100以及null，null表示该快照无任务，0-100表明该任务进度的百分比。
 
@@ -321,7 +321,7 @@ class DesktopSnapshotDetailInfo:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this DesktopSnapshotDetailInfo.
+        r"""Sets the process of this DesktopSnapshotDetailInfo.
 
         快照任务进度， 取值范围0-100以及null，null表示该快照无任务，0-100表明该任务进度的百分比。
 
@@ -332,7 +332,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def description(self):
-        """Gets the description of this DesktopSnapshotDetailInfo.
+        r"""Gets the description of this DesktopSnapshotDetailInfo.
 
         快照描述。
 
@@ -343,7 +343,7 @@ class DesktopSnapshotDetailInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DesktopSnapshotDetailInfo.
+        r"""Sets the description of this DesktopSnapshotDetailInfo.
 
         快照描述。
 
@@ -354,7 +354,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DesktopSnapshotDetailInfo.
+        r"""Gets the create_time of this DesktopSnapshotDetailInfo.
 
         快照的创建时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -365,7 +365,7 @@ class DesktopSnapshotDetailInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DesktopSnapshotDetailInfo.
+        r"""Sets the create_time of this DesktopSnapshotDetailInfo.
 
         快照的创建时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -376,7 +376,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def create_type(self):
-        """Gets the create_type of this DesktopSnapshotDetailInfo.
+        r"""Gets the create_type of this DesktopSnapshotDetailInfo.
 
         快照创建类型。 - AUTO 定时任务自动创建。 - MANUALLY 手动创建。
 
@@ -387,7 +387,7 @@ class DesktopSnapshotDetailInfo:
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this DesktopSnapshotDetailInfo.
+        r"""Sets the create_type of this DesktopSnapshotDetailInfo.
 
         快照创建类型。 - AUTO 定时任务自动创建。 - MANUALLY 手动创建。
 
@@ -398,7 +398,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def last_restore_time(self):
-        """Gets the last_restore_time of this DesktopSnapshotDetailInfo.
+        r"""Gets the last_restore_time of this DesktopSnapshotDetailInfo.
 
         快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -409,7 +409,7 @@ class DesktopSnapshotDetailInfo:
 
     @last_restore_time.setter
     def last_restore_time(self, last_restore_time):
-        """Sets the last_restore_time of this DesktopSnapshotDetailInfo.
+        r"""Sets the last_restore_time of this DesktopSnapshotDetailInfo.
 
         快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -420,7 +420,7 @@ class DesktopSnapshotDetailInfo:
 
     @property
     def restore_fail_reason(self):
-        """Gets the restore_fail_reason of this DesktopSnapshotDetailInfo.
+        r"""Gets the restore_fail_reason of this DesktopSnapshotDetailInfo.
 
         快照恢复失败原因。
 
@@ -431,7 +431,7 @@ class DesktopSnapshotDetailInfo:
 
     @restore_fail_reason.setter
     def restore_fail_reason(self, restore_fail_reason):
-        """Sets the restore_fail_reason of this DesktopSnapshotDetailInfo.
+        r"""Sets the restore_fail_reason of this DesktopSnapshotDetailInfo.
 
         快照恢复失败原因。
 

@@ -31,7 +31,7 @@ class ListImageMembersView:
     }
 
     def __init__(self, create_time=None, update_time=None, image_id=None, member_id=None):
-        """ListImageMembersView
+        r"""ListImageMembersView
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListImageMembersView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListImageMembersView.
+        r"""Gets the create_time of this ListImageMembersView.
 
         共享时间
 
@@ -75,7 +75,7 @@ class ListImageMembersView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListImageMembersView.
+        r"""Sets the create_time of this ListImageMembersView.
 
         共享时间
 
@@ -86,7 +86,7 @@ class ListImageMembersView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListImageMembersView.
+        r"""Gets the update_time of this ListImageMembersView.
 
         更新时间
 
@@ -97,7 +97,7 @@ class ListImageMembersView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListImageMembersView.
+        r"""Sets the update_time of this ListImageMembersView.
 
         更新时间
 
@@ -108,7 +108,7 @@ class ListImageMembersView:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImageMembersView.
+        r"""Gets the image_id of this ListImageMembersView.
 
         镜像ID
 
@@ -119,7 +119,7 @@ class ListImageMembersView:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImageMembersView.
+        r"""Sets the image_id of this ListImageMembersView.
 
         镜像ID
 
@@ -130,7 +130,7 @@ class ListImageMembersView:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ListImageMembersView.
+        r"""Gets the member_id of this ListImageMembersView.
 
         被共享账号的PROJECT_ID
 
@@ -141,7 +141,7 @@ class ListImageMembersView:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ListImageMembersView.
+        r"""Sets the member_id of this ListImageMembersView.
 
         被共享账号的PROJECT_ID
 

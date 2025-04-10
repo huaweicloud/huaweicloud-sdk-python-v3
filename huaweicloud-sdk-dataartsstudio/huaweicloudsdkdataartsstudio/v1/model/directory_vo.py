@@ -53,7 +53,7 @@ class DirectoryVO:
     }
 
     def __init__(self, name=None, description=None, type=None, id=None, parent_id=None, prev_id=None, root_id=None, qualified_name=None, from_public=None, create_time=None, update_time=None, create_by=None, update_by=None, ref_id=None, children=None):
-        """DirectoryVO
+        r"""DirectoryVO
 
         The model defined in huaweicloud sdk
 
@@ -137,7 +137,7 @@ class DirectoryVO:
 
     @property
     def name(self):
-        """Gets the name of this DirectoryVO.
+        r"""Gets the name of this DirectoryVO.
 
         目录名称。
 
@@ -148,7 +148,7 @@ class DirectoryVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DirectoryVO.
+        r"""Sets the name of this DirectoryVO.
 
         目录名称。
 
@@ -159,7 +159,7 @@ class DirectoryVO:
 
     @property
     def description(self):
-        """Gets the description of this DirectoryVO.
+        r"""Gets the description of this DirectoryVO.
 
         描述。
 
@@ -170,7 +170,7 @@ class DirectoryVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DirectoryVO.
+        r"""Sets the description of this DirectoryVO.
 
         描述。
 
@@ -181,7 +181,7 @@ class DirectoryVO:
 
     @property
     def type(self):
-        """Gets the type of this DirectoryVO.
+        r"""Gets the type of this DirectoryVO.
 
         目录类型。 枚举值：   - STANDARD_ELEMENT: 数据标准   - CODE: 码表 
 
@@ -192,7 +192,7 @@ class DirectoryVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DirectoryVO.
+        r"""Sets the type of this DirectoryVO.
 
         目录类型。 枚举值：   - STANDARD_ELEMENT: 数据标准   - CODE: 码表 
 
@@ -203,7 +203,7 @@ class DirectoryVO:
 
     @property
     def id(self):
-        """Gets the id of this DirectoryVO.
+        r"""Gets the id of this DirectoryVO.
 
         ID，创建时可不传，更新时必填。填写String类型替代Long类型。
 
@@ -214,7 +214,7 @@ class DirectoryVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DirectoryVO.
+        r"""Sets the id of this DirectoryVO.
 
         ID，创建时可不传，更新时必填。填写String类型替代Long类型。
 
@@ -225,7 +225,7 @@ class DirectoryVO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this DirectoryVO.
+        r"""Gets the parent_id of this DirectoryVO.
 
         父目录ID，首层传null。填写String类型替代Long类型。
 
@@ -236,7 +236,7 @@ class DirectoryVO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this DirectoryVO.
+        r"""Sets the parent_id of this DirectoryVO.
 
         父目录ID，首层传null。填写String类型替代Long类型。
 
@@ -247,7 +247,7 @@ class DirectoryVO:
 
     @property
     def prev_id(self):
-        """Gets the prev_id of this DirectoryVO.
+        r"""Gets the prev_id of this DirectoryVO.
 
         上个节点ID，首节点传null。填写String类型替代Long类型。
 
@@ -258,7 +258,7 @@ class DirectoryVO:
 
     @prev_id.setter
     def prev_id(self, prev_id):
-        """Sets the prev_id of this DirectoryVO.
+        r"""Sets the prev_id of this DirectoryVO.
 
         上个节点ID，首节点传null。填写String类型替代Long类型。
 
@@ -269,7 +269,7 @@ class DirectoryVO:
 
     @property
     def root_id(self):
-        """Gets the root_id of this DirectoryVO.
+        r"""Gets the root_id of this DirectoryVO.
 
         根节点ID，根节点此ID为自身ID，只读。填写String类型替代Long类型。
 
@@ -280,7 +280,7 @@ class DirectoryVO:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this DirectoryVO.
+        r"""Sets the root_id of this DirectoryVO.
 
         根节点ID，根节点此ID为自身ID，只读。填写String类型替代Long类型。
 
@@ -291,7 +291,7 @@ class DirectoryVO:
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this DirectoryVO.
+        r"""Gets the qualified_name of this DirectoryVO.
 
         目录的资产名称，只读。
 
@@ -302,7 +302,7 @@ class DirectoryVO:
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this DirectoryVO.
+        r"""Sets the qualified_name of this DirectoryVO.
 
         目录的资产名称，只读。
 
@@ -313,7 +313,7 @@ class DirectoryVO:
 
     @property
     def from_public(self):
-        """Gets the from_public of this DirectoryVO.
+        r"""Gets the from_public of this DirectoryVO.
 
         是否来自公共层，只读。
 
@@ -324,7 +324,7 @@ class DirectoryVO:
 
     @from_public.setter
     def from_public(self, from_public):
-        """Sets the from_public of this DirectoryVO.
+        r"""Sets the from_public of this DirectoryVO.
 
         是否来自公共层，只读。
 
@@ -335,7 +335,7 @@ class DirectoryVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DirectoryVO.
+        r"""Gets the create_time of this DirectoryVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -346,7 +346,7 @@ class DirectoryVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DirectoryVO.
+        r"""Sets the create_time of this DirectoryVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -357,7 +357,7 @@ class DirectoryVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DirectoryVO.
+        r"""Gets the update_time of this DirectoryVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -368,7 +368,7 @@ class DirectoryVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DirectoryVO.
+        r"""Sets the update_time of this DirectoryVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -379,7 +379,7 @@ class DirectoryVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DirectoryVO.
+        r"""Gets the create_by of this DirectoryVO.
 
         创建人，只读。
 
@@ -390,7 +390,7 @@ class DirectoryVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DirectoryVO.
+        r"""Sets the create_by of this DirectoryVO.
 
         创建人，只读。
 
@@ -401,7 +401,7 @@ class DirectoryVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this DirectoryVO.
+        r"""Gets the update_by of this DirectoryVO.
 
         更新人，只读。
 
@@ -412,7 +412,7 @@ class DirectoryVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this DirectoryVO.
+        r"""Sets the update_by of this DirectoryVO.
 
         更新人，只读。
 
@@ -423,7 +423,7 @@ class DirectoryVO:
 
     @property
     def ref_id(self):
-        """Gets the ref_id of this DirectoryVO.
+        r"""Gets the ref_id of this DirectoryVO.
 
         关联的主题ID，ID字符串。
 
@@ -434,7 +434,7 @@ class DirectoryVO:
 
     @ref_id.setter
     def ref_id(self, ref_id):
-        """Sets the ref_id of this DirectoryVO.
+        r"""Sets the ref_id of this DirectoryVO.
 
         关联的主题ID，ID字符串。
 
@@ -445,7 +445,7 @@ class DirectoryVO:
 
     @property
     def children(self):
-        """Gets the children of this DirectoryVO.
+        r"""Gets the children of this DirectoryVO.
 
         子目录。
 
@@ -456,7 +456,7 @@ class DirectoryVO:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this DirectoryVO.
+        r"""Sets the children of this DirectoryVO.
 
         子目录。
 

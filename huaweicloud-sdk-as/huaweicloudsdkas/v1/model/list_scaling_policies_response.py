@@ -32,7 +32,7 @@ class ListScalingPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_policies=None):
-        """ListScalingPoliciesResponse
+        r"""ListScalingPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListScalingPoliciesResponse.
+        r"""Gets the total_number of this ListScalingPoliciesResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListScalingPoliciesResponse.
+        r"""Sets the total_number of this ListScalingPoliciesResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingPoliciesResponse.
+        r"""Gets the start_number of this ListScalingPoliciesResponse.
 
         查询的起始行号。
 
@@ -98,7 +98,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingPoliciesResponse.
+        r"""Sets the start_number of this ListScalingPoliciesResponse.
 
         查询的起始行号。
 
@@ -109,7 +109,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingPoliciesResponse.
+        r"""Gets the limit of this ListScalingPoliciesResponse.
 
         查询记录数。
 
@@ -120,7 +120,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingPoliciesResponse.
+        r"""Sets the limit of this ListScalingPoliciesResponse.
 
         查询记录数。
 
@@ -131,7 +131,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @property
     def scaling_policies(self):
-        """Gets the scaling_policies of this ListScalingPoliciesResponse.
+        r"""Gets the scaling_policies of this ListScalingPoliciesResponse.
 
         伸缩策略列表
 
@@ -142,7 +142,7 @@ class ListScalingPoliciesResponse(SdkResponse):
 
     @scaling_policies.setter
     def scaling_policies(self, scaling_policies):
-        """Sets the scaling_policies of this ListScalingPoliciesResponse.
+        r"""Sets the scaling_policies of this ListScalingPoliciesResponse.
 
         伸缩策略列表
 

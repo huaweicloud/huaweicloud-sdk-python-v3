@@ -43,13 +43,13 @@ class ListHostRaspProtectHistoryInfoRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, host_id=None, start_time=None, end_time=None, limit=None, offset=None, alarm_level=None, severity=None, protect_status=None):
-        """ListHostRaspProtectHistoryInfoRequest
+        r"""ListHostRaspProtectHistoryInfoRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_id: Host Id，为空时查所有主机
         :type host_id: str
@@ -101,7 +101,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the region of this ListHostRaspProtectHistoryInfoRequest.
 
         Region Id
 
@@ -112,7 +112,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the region of this ListHostRaspProtectHistoryInfoRequest.
 
         Region Id
 
@@ -123,9 +123,9 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: str
@@ -134,9 +134,9 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostRaspProtectHistoryInfoRequest.
         :type enterprise_project_id: str
@@ -145,7 +145,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the host_id of this ListHostRaspProtectHistoryInfoRequest.
 
         Host Id，为空时查所有主机
 
@@ -156,7 +156,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the host_id of this ListHostRaspProtectHistoryInfoRequest.
 
         Host Id，为空时查所有主机
 
@@ -167,7 +167,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the start_time of this ListHostRaspProtectHistoryInfoRequest.
 
         起始时间(ms)
 
@@ -178,7 +178,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the start_time of this ListHostRaspProtectHistoryInfoRequest.
 
         起始时间(ms)
 
@@ -189,7 +189,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the end_time of this ListHostRaspProtectHistoryInfoRequest.
 
         终止时间(ms)
 
@@ -200,7 +200,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the end_time of this ListHostRaspProtectHistoryInfoRequest.
 
         终止时间(ms)
 
@@ -211,7 +211,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the limit of this ListHostRaspProtectHistoryInfoRequest.
 
         limit
 
@@ -222,7 +222,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the limit of this ListHostRaspProtectHistoryInfoRequest.
 
         limit
 
@@ -233,7 +233,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the offset of this ListHostRaspProtectHistoryInfoRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -244,7 +244,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the offset of this ListHostRaspProtectHistoryInfoRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -255,7 +255,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the alarm_level of this ListHostRaspProtectHistoryInfoRequest.
 
         告警级别 - 1 : 低危 - 2 : 中危 - 3 : 高危 - 4 : 严重
 
@@ -266,7 +266,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the alarm_level of this ListHostRaspProtectHistoryInfoRequest.
 
         告警级别 - 1 : 低危 - 2 : 中危 - 3 : 高危 - 4 : 严重
 
@@ -277,7 +277,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the severity of this ListHostRaspProtectHistoryInfoRequest.
 
         威胁等级   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -288,7 +288,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the severity of this ListHostRaspProtectHistoryInfoRequest.
 
         威胁等级   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -299,7 +299,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Gets the protect_status of this ListHostRaspProtectHistoryInfoRequest.
 
         防护状态   - closed : 未开启   - opened : 防护中
 
@@ -310,7 +310,7 @@ class ListHostRaspProtectHistoryInfoRequest:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ListHostRaspProtectHistoryInfoRequest.
+        r"""Sets the protect_status of this ListHostRaspProtectHistoryInfoRequest.
 
         防护状态   - closed : 未开启   - opened : 防护中
 

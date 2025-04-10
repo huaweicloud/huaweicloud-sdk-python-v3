@@ -27,7 +27,7 @@ class CreateSubnetTagRequest:
     }
 
     def __init__(self, subnet_id=None, body=None):
-        """CreateSubnetTagRequest
+        r"""CreateSubnetTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSubnetTagRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateSubnetTagRequest.
+        r"""Gets the subnet_id of this CreateSubnetTagRequest.
 
         子网ID
 
@@ -60,7 +60,7 @@ class CreateSubnetTagRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateSubnetTagRequest.
+        r"""Sets the subnet_id of this CreateSubnetTagRequest.
 
         子网ID
 
@@ -71,7 +71,7 @@ class CreateSubnetTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubnetTagRequest.
+        r"""Gets the body of this CreateSubnetTagRequest.
 
         :return: The body of this CreateSubnetTagRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequestBody`
@@ -80,7 +80,7 @@ class CreateSubnetTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubnetTagRequest.
+        r"""Sets the body of this CreateSubnetTagRequest.
 
         :param body: The body of this CreateSubnetTagRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequestBody`

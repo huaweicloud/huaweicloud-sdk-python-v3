@@ -27,7 +27,7 @@ class QuotaLimitInfo:
     }
 
     def __init__(self, limit_key=None, limit_values=None):
-        """QuotaLimitInfo
+        r"""QuotaLimitInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QuotaLimitInfo:
 
     @property
     def limit_key(self):
-        """Gets the limit_key of this QuotaLimitInfo.
+        r"""Gets the limit_key of this QuotaLimitInfo.
 
         属性key值。
 
@@ -61,7 +61,7 @@ class QuotaLimitInfo:
 
     @limit_key.setter
     def limit_key(self, limit_key):
-        """Sets the limit_key of this QuotaLimitInfo.
+        r"""Sets the limit_key of this QuotaLimitInfo.
 
         属性key值。
 
@@ -72,7 +72,7 @@ class QuotaLimitInfo:
 
     @property
     def limit_values(self):
-        """Gets the limit_values of this QuotaLimitInfo.
+        r"""Gets the limit_values of this QuotaLimitInfo.
 
         属性值，具体参见表3。
 
@@ -83,7 +83,7 @@ class QuotaLimitInfo:
 
     @limit_values.setter
     def limit_values(self, limit_values):
-        """Sets the limit_values of this QuotaLimitInfo.
+        r"""Sets the limit_values of this QuotaLimitInfo.
 
         属性值，具体参见表3。
 

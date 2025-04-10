@@ -23,7 +23,7 @@ class ServicePrincipal:
     }
 
     def __init__(self):
-        """ServicePrincipal
+        r"""ServicePrincipal
 
         The model defined in huaweicloud sdk
 

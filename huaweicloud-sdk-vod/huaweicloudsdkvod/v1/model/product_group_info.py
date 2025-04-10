@@ -27,7 +27,7 @@ class ProductGroupInfo:
     }
 
     def __init__(self, group_id=None, products=None):
-        """ProductGroupInfo
+        r"""ProductGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProductGroupInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ProductGroupInfo.
+        r"""Gets the group_id of this ProductGroupInfo.
 
         模板组ID
 
@@ -61,7 +61,7 @@ class ProductGroupInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ProductGroupInfo.
+        r"""Sets the group_id of this ProductGroupInfo.
 
         模板组ID
 
@@ -72,7 +72,7 @@ class ProductGroupInfo:
 
     @property
     def products(self):
-        """Gets the products of this ProductGroupInfo.
+        r"""Gets the products of this ProductGroupInfo.
 
         产物信息
 
@@ -83,7 +83,7 @@ class ProductGroupInfo:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ProductGroupInfo.
+        r"""Sets the products of this ProductGroupInfo.
 
         产物信息
 

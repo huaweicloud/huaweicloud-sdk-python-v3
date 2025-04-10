@@ -34,7 +34,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """ListBasicAwInfoListSupportsSearchResponse
+        r"""ListBasicAwInfoListSupportsSearchResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Gets the code of this ListBasicAwInfoListSupportsSearchResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Sets the code of this ListBasicAwInfoListSupportsSearchResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Gets the error of this ListBasicAwInfoListSupportsSearchResponse.
 
         :return: The error of this ListBasicAwInfoListSupportsSearchResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorPageResultBasicAWInfo`
@@ -103,7 +103,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Sets the error of this ListBasicAwInfoListSupportsSearchResponse.
 
         :param error: The error of this ListBasicAwInfoListSupportsSearchResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorPageResultBasicAWInfo`
@@ -112,7 +112,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Gets the reason of this ListBasicAwInfoListSupportsSearchResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Sets the reason of this ListBasicAwInfoListSupportsSearchResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Gets the result of this ListBasicAwInfoListSupportsSearchResponse.
 
         :return: The result of this ListBasicAwInfoListSupportsSearchResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PageResultBasicAWInfo`
@@ -143,7 +143,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Sets the result of this ListBasicAwInfoListSupportsSearchResponse.
 
         :param result: The result of this ListBasicAwInfoListSupportsSearchResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.PageResultBasicAWInfo`
@@ -152,7 +152,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Gets the status of this ListBasicAwInfoListSupportsSearchResponse.
 
         状态
 
@@ -163,7 +163,7 @@ class ListBasicAwInfoListSupportsSearchResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBasicAwInfoListSupportsSearchResponse.
+        r"""Sets the status of this ListBasicAwInfoListSupportsSearchResponse.
 
         状态
 

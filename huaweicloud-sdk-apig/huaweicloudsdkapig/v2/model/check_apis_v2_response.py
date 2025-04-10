@@ -24,7 +24,7 @@ class CheckApisV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """CheckApisV2Response
+        r"""CheckApisV2Response
 
         The model defined in huaweicloud sdk
 

@@ -43,7 +43,7 @@ class Scene:
     }
 
     def __init__(self, category=None, type=None, scene_name=None, scene_id=None, datasource_id=None, status=None, created_at=None, update_at=None, workspace_id=None, service_type=None):
-        """Scene
+        r"""Scene
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class Scene:
 
     @property
     def category(self):
-        """Gets the category of this Scene.
+        r"""Gets the category of this Scene.
 
         类型。
 
@@ -108,7 +108,7 @@ class Scene:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this Scene.
+        r"""Sets the category of this Scene.
 
         类型。
 
@@ -119,7 +119,7 @@ class Scene:
 
     @property
     def type(self):
-        """Gets the type of this Scene.
+        r"""Gets the type of this Scene.
 
         场景类型。
 
@@ -130,7 +130,7 @@ class Scene:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Scene.
+        r"""Sets the type of this Scene.
 
         场景类型。
 
@@ -141,7 +141,7 @@ class Scene:
 
     @property
     def scene_name(self):
-        """Gets the scene_name of this Scene.
+        r"""Gets the scene_name of this Scene.
 
         场景名称。
 
@@ -152,7 +152,7 @@ class Scene:
 
     @scene_name.setter
     def scene_name(self, scene_name):
-        """Sets the scene_name of this Scene.
+        r"""Sets the scene_name of this Scene.
 
         场景名称。
 
@@ -163,7 +163,7 @@ class Scene:
 
     @property
     def scene_id(self):
-        """Gets the scene_id of this Scene.
+        r"""Gets the scene_id of this Scene.
 
         场景id。
 
@@ -174,7 +174,7 @@ class Scene:
 
     @scene_id.setter
     def scene_id(self, scene_id):
-        """Sets the scene_id of this Scene.
+        r"""Sets the scene_id of this Scene.
 
         场景id。
 
@@ -185,7 +185,7 @@ class Scene:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this Scene.
+        r"""Gets the datasource_id of this Scene.
 
         数据源id。
 
@@ -196,7 +196,7 @@ class Scene:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this Scene.
+        r"""Sets the datasource_id of this Scene.
 
         数据源id。
 
@@ -207,7 +207,7 @@ class Scene:
 
     @property
     def status(self):
-        """Gets the status of this Scene.
+        r"""Gets the status of this Scene.
 
         状态。
 
@@ -218,7 +218,7 @@ class Scene:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Scene.
+        r"""Sets the status of this Scene.
 
         状态。
 
@@ -229,7 +229,7 @@ class Scene:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Scene.
+        r"""Gets the created_at of this Scene.
 
         创建时间。
 
@@ -240,7 +240,7 @@ class Scene:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Scene.
+        r"""Sets the created_at of this Scene.
 
         创建时间。
 
@@ -251,7 +251,7 @@ class Scene:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Scene.
+        r"""Gets the update_at of this Scene.
 
         更新时间。
 
@@ -262,7 +262,7 @@ class Scene:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Scene.
+        r"""Sets the update_at of this Scene.
 
         更新时间。
 
@@ -273,7 +273,7 @@ class Scene:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this Scene.
+        r"""Gets the workspace_id of this Scene.
 
         工作空间id。
 
@@ -284,7 +284,7 @@ class Scene:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this Scene.
+        r"""Sets the workspace_id of this Scene.
 
         工作空间id。
 
@@ -295,7 +295,7 @@ class Scene:
 
     @property
     def service_type(self):
-        """Gets the service_type of this Scene.
+        r"""Gets the service_type of this Scene.
 
         服务类型。
 
@@ -306,7 +306,7 @@ class Scene:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this Scene.
+        r"""Sets the service_type of this Scene.
 
         服务类型。
 

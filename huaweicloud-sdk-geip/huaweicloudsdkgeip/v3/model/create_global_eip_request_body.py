@@ -27,7 +27,7 @@ class CreateGlobalEipRequestBody:
     }
 
     def __init__(self, dry_run=None, global_eip=None):
-        """CreateGlobalEipRequestBody
+        r"""CreateGlobalEipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGlobalEipRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this CreateGlobalEipRequestBody.
+        r"""Gets the dry_run of this CreateGlobalEipRequestBody.
 
         :return: The dry_run of this CreateGlobalEipRequestBody.
         :rtype: bool
@@ -58,7 +58,7 @@ class CreateGlobalEipRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this CreateGlobalEipRequestBody.
+        r"""Sets the dry_run of this CreateGlobalEipRequestBody.
 
         :param dry_run: The dry_run of this CreateGlobalEipRequestBody.
         :type dry_run: bool
@@ -67,7 +67,7 @@ class CreateGlobalEipRequestBody:
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this CreateGlobalEipRequestBody.
+        r"""Gets the global_eip of this CreateGlobalEipRequestBody.
 
         :return: The global_eip of this CreateGlobalEipRequestBody.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEip`
@@ -76,7 +76,7 @@ class CreateGlobalEipRequestBody:
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this CreateGlobalEipRequestBody.
+        r"""Sets the global_eip of this CreateGlobalEipRequestBody.
 
         :param global_eip: The global_eip of this CreateGlobalEipRequestBody.
         :type global_eip: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipRequestBodyGlobalEip`

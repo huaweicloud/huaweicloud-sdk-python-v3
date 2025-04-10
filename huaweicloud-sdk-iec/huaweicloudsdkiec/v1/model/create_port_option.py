@@ -29,7 +29,7 @@ class CreatePortOption:
     }
 
     def __init__(self, device_owner=None, network_id=None, fixed_ips=None):
-        """CreatePortOption
+        r"""CreatePortOption
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePortOption:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this CreatePortOption.
+        r"""Gets the device_owner of this CreatePortOption.
 
         端口设备所属。  取值范围：目前只支持指定\"neutron:VIP_PORT\"，neutron:VIP_PORT表示创建的是VIP
 
@@ -66,7 +66,7 @@ class CreatePortOption:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this CreatePortOption.
+        r"""Sets the device_owner of this CreatePortOption.
 
         端口设备所属。  取值范围：目前只支持指定\"neutron:VIP_PORT\"，neutron:VIP_PORT表示创建的是VIP
 
@@ -77,7 +77,7 @@ class CreatePortOption:
 
     @property
     def network_id(self):
-        """Gets the network_id of this CreatePortOption.
+        r"""Gets the network_id of this CreatePortOption.
 
         端口所属网络的ID。  约束：必须是存在的网络ID。
 
@@ -88,7 +88,7 @@ class CreatePortOption:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this CreatePortOption.
+        r"""Sets the network_id of this CreatePortOption.
 
         端口所属网络的ID。  约束：必须是存在的网络ID。
 
@@ -99,7 +99,7 @@ class CreatePortOption:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this CreatePortOption.
+        r"""Gets the fixed_ips of this CreatePortOption.
 
         端口IP  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
@@ -110,7 +110,7 @@ class CreatePortOption:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this CreatePortOption.
+        r"""Sets the fixed_ips of this CreatePortOption.
 
         端口IP  约束：一个端口只支持一个fixed_ip，且不支持更新。
 

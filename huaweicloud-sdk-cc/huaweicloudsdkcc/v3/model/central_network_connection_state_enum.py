@@ -37,7 +37,7 @@ class CentralNetworkConnectionStateEnum:
     }
 
     def __init__(self):
-        """CentralNetworkConnectionStateEnum
+        r"""CentralNetworkConnectionStateEnum
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class CreateSecurityAssignedQueueResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateSecurityAssignedQueueResponse
+        r"""CreateSecurityAssignedQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityAssignedQueueResponse.
+        r"""Gets the body of this CreateSecurityAssignedQueueResponse.
 
         :return: The body of this CreateSecurityAssignedQueueResponse.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.QueueSrcAssignEntity`]
@@ -53,7 +53,7 @@ class CreateSecurityAssignedQueueResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityAssignedQueueResponse.
+        r"""Sets the body of this CreateSecurityAssignedQueueResponse.
 
         :param body: The body of this CreateSecurityAssignedQueueResponse.
         :type body: list[:class:`huaweicloudsdkdataartsstudio.v1.QueueSrcAssignEntity`]

@@ -27,7 +27,7 @@ class ShowCeshierarchyRespQueues:
     }
 
     def __init__(self, name=None, partitions=None):
-        """ShowCeshierarchyRespQueues
+        r"""ShowCeshierarchyRespQueues
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespQueues:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespQueues.
+        r"""Gets the name of this ShowCeshierarchyRespQueues.
 
         topic名称。
 
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespQueues:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespQueues.
+        r"""Sets the name of this ShowCeshierarchyRespQueues.
 
         topic名称。
 
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespQueues:
 
     @property
     def partitions(self):
-        """Gets the partitions of this ShowCeshierarchyRespQueues.
+        r"""Gets the partitions of this ShowCeshierarchyRespQueues.
 
         分区列表。
 
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespQueues:
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ShowCeshierarchyRespQueues.
+        r"""Sets the partitions of this ShowCeshierarchyRespQueues.
 
         分区列表。
 

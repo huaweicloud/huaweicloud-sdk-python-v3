@@ -27,7 +27,7 @@ class UpdateGroupReqBody:
     }
 
     def __init__(self, new_group_name=None, new_group_description=None):
-        """UpdateGroupReqBody
+        r"""UpdateGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateGroupReqBody:
 
     @property
     def new_group_name(self):
-        """Gets the new_group_name of this UpdateGroupReqBody.
+        r"""Gets the new_group_name of this UpdateGroupReqBody.
 
         用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
@@ -61,7 +61,7 @@ class UpdateGroupReqBody:
 
     @new_group_name.setter
     def new_group_name(self, new_group_name):
-        """Sets the new_group_name of this UpdateGroupReqBody.
+        r"""Sets the new_group_name of this UpdateGroupReqBody.
 
         用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
@@ -72,7 +72,7 @@ class UpdateGroupReqBody:
 
     @property
     def new_group_description(self):
-        """Gets the new_group_description of this UpdateGroupReqBody.
+        r"""Gets the new_group_description of this UpdateGroupReqBody.
 
         用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -83,7 +83,7 @@ class UpdateGroupReqBody:
 
     @new_group_description.setter
     def new_group_description(self, new_group_description):
-        """Sets the new_group_description of this UpdateGroupReqBody.
+        r"""Sets the new_group_description of this UpdateGroupReqBody.
 
         用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 

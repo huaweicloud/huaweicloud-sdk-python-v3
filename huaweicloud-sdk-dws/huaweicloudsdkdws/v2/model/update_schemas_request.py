@@ -29,7 +29,7 @@ class UpdateSchemasRequest:
     }
 
     def __init__(self, cluster_id=None, database_name=None, body=None):
-        """UpdateSchemasRequest
+        r"""UpdateSchemasRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSchemasRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateSchemasRequest.
+        r"""Gets the cluster_id of this UpdateSchemasRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class UpdateSchemasRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateSchemasRequest.
+        r"""Sets the cluster_id of this UpdateSchemasRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class UpdateSchemasRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateSchemasRequest.
+        r"""Gets the database_name of this UpdateSchemasRequest.
 
         数据库名称
 
@@ -88,7 +88,7 @@ class UpdateSchemasRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateSchemasRequest.
+        r"""Sets the database_name of this UpdateSchemasRequest.
 
         数据库名称
 
@@ -99,7 +99,7 @@ class UpdateSchemasRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSchemasRequest.
+        r"""Gets the body of this UpdateSchemasRequest.
 
         :return: The body of this UpdateSchemasRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadSchemaReq`
@@ -108,7 +108,7 @@ class UpdateSchemasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSchemasRequest.
+        r"""Sets the body of this UpdateSchemasRequest.
 
         :param body: The body of this UpdateSchemasRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadSchemaReq`

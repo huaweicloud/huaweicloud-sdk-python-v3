@@ -34,7 +34,7 @@ class EpsClient(Client):
         return client_builder
 
     def create_enterprise_project(self, request):
-        """创建企业项目
+        r"""创建企业项目
 
         创建企业项目。
         
@@ -99,7 +99,7 @@ class EpsClient(Client):
         return http_info
 
     def disable_enterprise_project(self, request):
-        """停用企业项目
+        r"""停用企业项目
 
         停用企业项目。
         
@@ -166,7 +166,7 @@ class EpsClient(Client):
         return http_info
 
     def enable_enterprise_project(self, request):
-        """启用企业项目
+        r"""启用企业项目
 
         启用企业项目。
         
@@ -233,7 +233,7 @@ class EpsClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询API版本列表
+        r"""查询API版本列表
 
         查询企业项目的API版本列表。
         
@@ -296,7 +296,7 @@ class EpsClient(Client):
         return http_info
 
     def list_enterprise_project(self, request):
-        """查询企业项目列表
+        r"""查询企业项目列表
 
         查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
         
@@ -373,7 +373,7 @@ class EpsClient(Client):
         return http_info
 
     def list_providers(self, request):
-        """查询企业项目支持的服务
+        r"""查询企业项目支持的服务
 
         查询企业项目支持的服务
         
@@ -444,7 +444,7 @@ class EpsClient(Client):
         return http_info
 
     def migrate_resource(self, request):
-        """迁移资源
+        r"""迁移资源
 
         迁移资源到目标企业项目。
         
@@ -511,7 +511,7 @@ class EpsClient(Client):
         return http_info
 
     def show_api_version(self, request):
-        """查询API版本号详情
+        r"""查询API版本号详情
 
         查询指定的企业项目API版本号详情
         
@@ -576,7 +576,7 @@ class EpsClient(Client):
         return http_info
 
     def show_enterprise_project(self, request):
-        """查询企业项目详情
+        r"""查询企业项目详情
 
         查询企业项目详情。
         
@@ -641,7 +641,7 @@ class EpsClient(Client):
         return http_info
 
     def show_enterprise_project_quota(self, request):
-        """查询企业项目配额
+        r"""查询企业项目配额
 
         查询企业项目的配额信息。
         
@@ -704,7 +704,7 @@ class EpsClient(Client):
         return http_info
 
     def show_resource_bind_enterprise_project(self, request):
-        """查询企业项目绑定的资源列表
+        r"""查询企业项目绑定的资源列表
 
         查询企业项目下绑定的资源详情。
         
@@ -771,7 +771,7 @@ class EpsClient(Client):
         return http_info
 
     def update_enterprise_project(self, request):
-        """修改企业项目
+        r"""修改企业项目
 
         修改企业项目。当前仅支持修改名称和描述。
         

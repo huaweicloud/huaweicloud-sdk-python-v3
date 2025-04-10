@@ -27,7 +27,7 @@ class LineViewItem:
     }
 
     def __init__(self, function=None, _as=None):
-        """LineViewItem
+        r"""LineViewItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LineViewItem:
 
     @property
     def function(self):
-        """Gets the function of this LineViewItem.
+        r"""Gets the function of this LineViewItem.
 
         表达式。
 
@@ -61,7 +61,7 @@ class LineViewItem:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this LineViewItem.
+        r"""Sets the function of this LineViewItem.
 
         表达式。
 
@@ -72,7 +72,7 @@ class LineViewItem:
 
     @property
     def _as(self):
-        """Gets the _as of this LineViewItem.
+        r"""Gets the _as of this LineViewItem.
 
         作为。
 
@@ -83,7 +83,7 @@ class LineViewItem:
 
     @_as.setter
     def _as(self, _as):
-        """Sets the _as of this LineViewItem.
+        r"""Sets the _as of this LineViewItem.
 
         作为。
 

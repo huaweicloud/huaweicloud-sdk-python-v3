@@ -25,7 +25,7 @@ class PrivateProviderVersionDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, version_description=None):
-        """PrivateProviderVersionDescriptionPrimitiveTypeHolder
+        r"""PrivateProviderVersionDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateProviderVersionDescriptionPrimitiveTypeHolder:
 
     @property
     def version_description(self):
-        """Gets the version_description of this PrivateProviderVersionDescriptionPrimitiveTypeHolder.
+        r"""Gets the version_description of this PrivateProviderVersionDescriptionPrimitiveTypeHolder.
 
         私有provider版本（provider version）的描述。可用于客户识别并管理私有provider的版本。注意：provider版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建
 
@@ -54,7 +54,7 @@ class PrivateProviderVersionDescriptionPrimitiveTypeHolder:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this PrivateProviderVersionDescriptionPrimitiveTypeHolder.
+        r"""Sets the version_description of this PrivateProviderVersionDescriptionPrimitiveTypeHolder.
 
         私有provider版本（provider version）的描述。可用于客户识别并管理私有provider的版本。注意：provider版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建
 

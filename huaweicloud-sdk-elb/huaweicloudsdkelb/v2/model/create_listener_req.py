@@ -57,7 +57,7 @@ class CreateListenerReq:
     }
 
     def __init__(self, loadbalancer_id=None, protocol=None, protocol_port=None, tenant_id=None, name=None, description=None, admin_state_up=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, protection_status=None, protection_reason=None):
-        """CreateListenerReq
+        r"""CreateListenerReq
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class CreateListenerReq:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreateListenerReq.
+        r"""Gets the loadbalancer_id of this CreateListenerReq.
 
         监听器关联的负载均衡器 ID
 
@@ -163,7 +163,7 @@ class CreateListenerReq:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreateListenerReq.
+        r"""Sets the loadbalancer_id of this CreateListenerReq.
 
         监听器关联的负载均衡器 ID
 
@@ -174,7 +174,7 @@ class CreateListenerReq:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateListenerReq.
+        r"""Gets the protocol of this CreateListenerReq.
 
         监听器的监听协议
 
@@ -185,7 +185,7 @@ class CreateListenerReq:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateListenerReq.
+        r"""Sets the protocol of this CreateListenerReq.
 
         监听器的监听协议
 
@@ -196,7 +196,7 @@ class CreateListenerReq:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this CreateListenerReq.
+        r"""Gets the protocol_port of this CreateListenerReq.
 
         监听器的监听端口。如果监听协议为UDP，端口号不支持4789。
 
@@ -207,7 +207,7 @@ class CreateListenerReq:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this CreateListenerReq.
+        r"""Sets the protocol_port of this CreateListenerReq.
 
         监听器的监听端口。如果监听协议为UDP，端口号不支持4789。
 
@@ -218,7 +218,7 @@ class CreateListenerReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateListenerReq.
+        r"""Gets the tenant_id of this CreateListenerReq.
 
         监听器所在的项目ID。
 
@@ -229,7 +229,7 @@ class CreateListenerReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateListenerReq.
+        r"""Sets the tenant_id of this CreateListenerReq.
 
         监听器所在的项目ID。
 
@@ -240,7 +240,7 @@ class CreateListenerReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateListenerReq.
+        r"""Gets the name of this CreateListenerReq.
 
         监听器名称。
 
@@ -251,7 +251,7 @@ class CreateListenerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateListenerReq.
+        r"""Sets the name of this CreateListenerReq.
 
         监听器名称。
 
@@ -262,7 +262,7 @@ class CreateListenerReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateListenerReq.
+        r"""Gets the description of this CreateListenerReq.
 
         监听器的描述信息
 
@@ -273,7 +273,7 @@ class CreateListenerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateListenerReq.
+        r"""Sets the description of this CreateListenerReq.
 
         监听器的描述信息
 
@@ -284,7 +284,7 @@ class CreateListenerReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateListenerReq.
+        r"""Gets the admin_state_up of this CreateListenerReq.
 
         监听器器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -295,7 +295,7 @@ class CreateListenerReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateListenerReq.
+        r"""Sets the admin_state_up of this CreateListenerReq.
 
         监听器器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -306,7 +306,7 @@ class CreateListenerReq:
 
     @property
     def connection_limit(self):
-        """Gets the connection_limit of this CreateListenerReq.
+        r"""Gets the connection_limit of this CreateListenerReq.
 
         监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
 
@@ -317,7 +317,7 @@ class CreateListenerReq:
 
     @connection_limit.setter
     def connection_limit(self, connection_limit):
-        """Sets the connection_limit of this CreateListenerReq.
+        r"""Sets the connection_limit of this CreateListenerReq.
 
         监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
 
@@ -328,7 +328,7 @@ class CreateListenerReq:
 
     @property
     def http2_enable(self):
-        """Gets the http2_enable of this CreateListenerReq.
+        r"""Gets the http2_enable of this CreateListenerReq.
 
         HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
@@ -339,7 +339,7 @@ class CreateListenerReq:
 
     @http2_enable.setter
     def http2_enable(self, http2_enable):
-        """Sets the http2_enable of this CreateListenerReq.
+        r"""Sets the http2_enable of this CreateListenerReq.
 
         HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
@@ -350,7 +350,7 @@ class CreateListenerReq:
 
     @property
     def default_pool_id(self):
-        """Gets the default_pool_id of this CreateListenerReq.
+        r"""Gets the default_pool_id of this CreateListenerReq.
 
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。当该字段为null时，表示监听器无默认的后端云服务器组。
 
@@ -361,7 +361,7 @@ class CreateListenerReq:
 
     @default_pool_id.setter
     def default_pool_id(self, default_pool_id):
-        """Sets the default_pool_id of this CreateListenerReq.
+        r"""Sets the default_pool_id of this CreateListenerReq.
 
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。当该字段为null时，表示监听器无默认的后端云服务器组。
 
@@ -372,7 +372,7 @@ class CreateListenerReq:
 
     @property
     def default_tls_container_ref(self):
-        """Gets the default_tls_container_ref of this CreateListenerReq.
+        r"""Gets the default_tls_container_ref of this CreateListenerReq.
 
         监听器使用的服务器证书ID。当protocol参数为TERMINATED_HTTPS时，为必选字段
 
@@ -383,7 +383,7 @@ class CreateListenerReq:
 
     @default_tls_container_ref.setter
     def default_tls_container_ref(self, default_tls_container_ref):
-        """Sets the default_tls_container_ref of this CreateListenerReq.
+        r"""Sets the default_tls_container_ref of this CreateListenerReq.
 
         监听器使用的服务器证书ID。当protocol参数为TERMINATED_HTTPS时，为必选字段
 
@@ -394,7 +394,7 @@ class CreateListenerReq:
 
     @property
     def client_ca_tls_container_ref(self):
-        """Gets the client_ca_tls_container_ref of this CreateListenerReq.
+        r"""Gets the client_ca_tls_container_ref of this CreateListenerReq.
 
         监听器使用的CA证书ID。
 
@@ -405,7 +405,7 @@ class CreateListenerReq:
 
     @client_ca_tls_container_ref.setter
     def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
-        """Sets the client_ca_tls_container_ref of this CreateListenerReq.
+        r"""Sets the client_ca_tls_container_ref of this CreateListenerReq.
 
         监听器使用的CA证书ID。
 
@@ -416,7 +416,7 @@ class CreateListenerReq:
 
     @property
     def sni_container_refs(self):
-        """Gets the sni_container_refs of this CreateListenerReq.
+        r"""Gets the sni_container_refs of this CreateListenerReq.
 
         监听器使用的SNI证书（带域名的服务器证书）ID的列表，最大支持50个sni证书 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
 
@@ -427,7 +427,7 @@ class CreateListenerReq:
 
     @sni_container_refs.setter
     def sni_container_refs(self, sni_container_refs):
-        """Sets the sni_container_refs of this CreateListenerReq.
+        r"""Sets the sni_container_refs of this CreateListenerReq.
 
         监听器使用的SNI证书（带域名的服务器证书）ID的列表，最大支持50个sni证书 该字段不为空列表时，SNI特性开启。该字段为空列表时，SNI特性关闭。
 
@@ -438,7 +438,7 @@ class CreateListenerReq:
 
     @property
     def insert_headers(self):
-        """Gets the insert_headers of this CreateListenerReq.
+        r"""Gets the insert_headers of this CreateListenerReq.
 
         :return: The insert_headers of this CreateListenerReq.
         :rtype: :class:`huaweicloudsdkelb.v2.InsertHeader`
@@ -447,7 +447,7 @@ class CreateListenerReq:
 
     @insert_headers.setter
     def insert_headers(self, insert_headers):
-        """Sets the insert_headers of this CreateListenerReq.
+        r"""Sets the insert_headers of this CreateListenerReq.
 
         :param insert_headers: The insert_headers of this CreateListenerReq.
         :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
@@ -456,7 +456,7 @@ class CreateListenerReq:
 
     @property
     def tls_ciphers_policy(self):
-        """Gets the tls_ciphers_policy of this CreateListenerReq.
+        r"""Gets the tls_ciphers_policy of this CreateListenerReq.
 
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
 
@@ -467,7 +467,7 @@ class CreateListenerReq:
 
     @tls_ciphers_policy.setter
     def tls_ciphers_policy(self, tls_ciphers_policy):
-        """Sets the tls_ciphers_policy of this CreateListenerReq.
+        r"""Sets the tls_ciphers_policy of this CreateListenerReq.
 
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。
 
@@ -478,7 +478,7 @@ class CreateListenerReq:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this CreateListenerReq.
+        r"""Gets the protection_status of this CreateListenerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -489,7 +489,7 @@ class CreateListenerReq:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this CreateListenerReq.
+        r"""Sets the protection_status of this CreateListenerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -500,7 +500,7 @@ class CreateListenerReq:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this CreateListenerReq.
+        r"""Gets the protection_reason of this CreateListenerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -511,7 +511,7 @@ class CreateListenerReq:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this CreateListenerReq.
+        r"""Sets the protection_reason of this CreateListenerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

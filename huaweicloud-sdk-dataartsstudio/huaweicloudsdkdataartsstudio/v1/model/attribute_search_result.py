@@ -27,7 +27,7 @@ class AttributeSearchResult:
     }
 
     def __init__(self, name=None, values=None):
-        """AttributeSearchResult
+        r"""AttributeSearchResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttributeSearchResult:
 
     @property
     def name(self):
-        """Gets the name of this AttributeSearchResult.
+        r"""Gets the name of this AttributeSearchResult.
 
         名称列表
 
@@ -61,7 +61,7 @@ class AttributeSearchResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AttributeSearchResult.
+        r"""Sets the name of this AttributeSearchResult.
 
         名称列表
 
@@ -72,7 +72,7 @@ class AttributeSearchResult:
 
     @property
     def values(self):
-        """Gets the values of this AttributeSearchResult.
+        r"""Gets the values of this AttributeSearchResult.
 
         值列表
 
@@ -83,7 +83,7 @@ class AttributeSearchResult:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this AttributeSearchResult.
+        r"""Sets the values of this AttributeSearchResult.
 
         值列表
 

@@ -25,7 +25,7 @@ class CommRequestAssetExportParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestAssetExportParam
+        r"""CommRequestAssetExportParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestAssetExportParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestAssetExportParam.
+        r"""Gets the params of this CommRequestAssetExportParam.
 
         :return: The params of this CommRequestAssetExportParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssetExportParam`
@@ -51,7 +51,7 @@ class CommRequestAssetExportParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestAssetExportParam.
+        r"""Sets the params of this CommRequestAssetExportParam.
 
         :param params: The params of this CommRequestAssetExportParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.AssetExportParam`

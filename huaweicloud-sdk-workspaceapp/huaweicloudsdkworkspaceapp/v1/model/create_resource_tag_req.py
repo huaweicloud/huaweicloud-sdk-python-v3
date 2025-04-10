@@ -25,7 +25,7 @@ class CreateResourceTagReq:
     }
 
     def __init__(self, tags=None):
-        """CreateResourceTagReq
+        r"""CreateResourceTagReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateResourceTagReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateResourceTagReq.
+        r"""Gets the tags of this CreateResourceTagReq.
 
         标签列表。
 
@@ -54,7 +54,7 @@ class CreateResourceTagReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateResourceTagReq.
+        r"""Sets the tags of this CreateResourceTagReq.
 
         标签列表。
 

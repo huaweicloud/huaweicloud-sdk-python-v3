@@ -47,7 +47,7 @@ class Backup:
     }
 
     def __init__(self, id=None, description=None, instance_id=None, instance_name=None, datastore=None, name=None, type=None, size=None, status=None, begin_time=None, end_time=None, database_tables=None):
-        """Backup
+        r"""Backup
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class Backup:
 
     @property
     def id(self):
-        """Gets the id of this Backup.
+        r"""Gets the id of this Backup.
 
         备份ID。
 
@@ -120,7 +120,7 @@ class Backup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Backup.
+        r"""Sets the id of this Backup.
 
         备份ID。
 
@@ -131,7 +131,7 @@ class Backup:
 
     @property
     def description(self):
-        """Gets the description of this Backup.
+        r"""Gets the description of this Backup.
 
         备份描述信息。
 
@@ -142,7 +142,7 @@ class Backup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Backup.
+        r"""Sets the description of this Backup.
 
         备份描述信息。
 
@@ -153,7 +153,7 @@ class Backup:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Backup.
+        r"""Gets the instance_id of this Backup.
 
         备份所属的实例ID。
 
@@ -164,7 +164,7 @@ class Backup:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Backup.
+        r"""Sets the instance_id of this Backup.
 
         备份所属的实例ID。
 
@@ -175,7 +175,7 @@ class Backup:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this Backup.
+        r"""Gets the instance_name of this Backup.
 
         备份所属的实例名称。
 
@@ -186,7 +186,7 @@ class Backup:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this Backup.
+        r"""Sets the instance_name of this Backup.
 
         备份所属的实例名称。
 
@@ -197,7 +197,7 @@ class Backup:
 
     @property
     def datastore(self):
-        """Gets the datastore of this Backup.
+        r"""Gets the datastore of this Backup.
 
         :return: The datastore of this Backup.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.Datastore`
@@ -206,7 +206,7 @@ class Backup:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this Backup.
+        r"""Sets the datastore of this Backup.
 
         :param datastore: The datastore of this Backup.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.Datastore`
@@ -215,7 +215,7 @@ class Backup:
 
     @property
     def name(self):
-        """Gets the name of this Backup.
+        r"""Gets the name of this Backup.
 
         备份名称。
 
@@ -226,7 +226,7 @@ class Backup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Backup.
+        r"""Sets the name of this Backup.
 
         备份名称。
 
@@ -237,7 +237,7 @@ class Backup:
 
     @property
     def type(self):
-        """Gets the type of this Backup.
+        r"""Gets the type of this Backup.
 
         - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。
 
@@ -248,7 +248,7 @@ class Backup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Backup.
+        r"""Sets the type of this Backup.
 
         - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。
 
@@ -259,7 +259,7 @@ class Backup:
 
     @property
     def size(self):
-        """Gets the size of this Backup.
+        r"""Gets the size of this Backup.
 
         备份大小，单位：KB。
 
@@ -270,7 +270,7 @@ class Backup:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Backup.
+        r"""Sets the size of this Backup.
 
         备份大小，单位：KB。
 
@@ -281,7 +281,7 @@ class Backup:
 
     @property
     def status(self):
-        """Gets the status of this Backup.
+        r"""Gets the status of this Backup.
 
         备份状态。取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。
 
@@ -292,7 +292,7 @@ class Backup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Backup.
+        r"""Sets the status of this Backup.
 
         备份状态。取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。
 
@@ -303,7 +303,7 @@ class Backup:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Backup.
+        r"""Gets the begin_time of this Backup.
 
         备份开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -314,7 +314,7 @@ class Backup:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Backup.
+        r"""Sets the begin_time of this Backup.
 
         备份开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -325,7 +325,7 @@ class Backup:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Backup.
+        r"""Gets the end_time of this Backup.
 
         备份结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -336,7 +336,7 @@ class Backup:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Backup.
+        r"""Sets the end_time of this Backup.
 
         备份结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -347,7 +347,7 @@ class Backup:
 
     @property
     def database_tables(self):
-        """Gets the database_tables of this Backup.
+        r"""Gets the database_tables of this Backup.
 
         备份里的库表信息 - 实例级查询时该字段为空，可忽略 - 库表级查询时该字段非空（存在库表级备份的话）
 
@@ -358,7 +358,7 @@ class Backup:
 
     @database_tables.setter
     def database_tables(self, database_tables):
-        """Sets the database_tables of this Backup.
+        r"""Sets the database_tables of this Backup.
 
         备份里的库表信息 - 实例级查询时该字段为空，可忽略 - 库表级查询时该字段非空（存在库表级备份的话）
 

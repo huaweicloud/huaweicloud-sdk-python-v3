@@ -27,7 +27,7 @@ class ListClickHouseInstanceNodeRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListClickHouseInstanceNodeRequest
+        r"""ListClickHouseInstanceNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListClickHouseInstanceNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListClickHouseInstanceNodeRequest.
+        r"""Gets the instance_id of this ListClickHouseInstanceNodeRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -60,7 +60,7 @@ class ListClickHouseInstanceNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListClickHouseInstanceNodeRequest.
+        r"""Sets the instance_id of this ListClickHouseInstanceNodeRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class ListClickHouseInstanceNodeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListClickHouseInstanceNodeRequest.
+        r"""Gets the x_language of this ListClickHouseInstanceNodeRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -82,7 +82,7 @@ class ListClickHouseInstanceNodeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListClickHouseInstanceNodeRequest.
+        r"""Sets the x_language of this ListClickHouseInstanceNodeRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

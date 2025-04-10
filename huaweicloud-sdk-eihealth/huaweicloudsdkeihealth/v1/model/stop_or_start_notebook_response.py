@@ -24,7 +24,7 @@ class StopOrStartNotebookResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopOrStartNotebookResponse
+        r"""StopOrStartNotebookResponse
 
         The model defined in huaweicloud sdk
 

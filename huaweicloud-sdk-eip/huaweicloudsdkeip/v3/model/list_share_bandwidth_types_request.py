@@ -45,7 +45,7 @@ class ListShareBandwidthTypesRequest:
     }
 
     def __init__(self, fields=None, id=None, bandwidth_type=None, name_en=None, name_zh=None, public_border_group=None, sort_key=None, sort_dir=None, limit=None, marker=None, offset=None):
-        """ListShareBandwidthTypesRequest
+        r"""ListShareBandwidthTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListShareBandwidthTypesRequest.
+        r"""Gets the fields of this ListShareBandwidthTypesRequest.
 
         形式为\\\"fields=id&fields=bandwidth_type&...\\\"，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
 
@@ -124,7 +124,7 @@ class ListShareBandwidthTypesRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListShareBandwidthTypesRequest.
+        r"""Sets the fields of this ListShareBandwidthTypesRequest.
 
         形式为\\\"fields=id&fields=bandwidth_type&...\\\"，支持字段：id/bandwidth_type/name_en/name_zh/created_at/update_at/public_border_group/description
 
@@ -135,7 +135,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListShareBandwidthTypesRequest.
+        r"""Gets the id of this ListShareBandwidthTypesRequest.
 
         支持带宽类型的id
 
@@ -146,7 +146,7 @@ class ListShareBandwidthTypesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListShareBandwidthTypesRequest.
+        r"""Sets the id of this ListShareBandwidthTypesRequest.
 
         支持带宽类型的id
 
@@ -157,7 +157,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this ListShareBandwidthTypesRequest.
+        r"""Gets the bandwidth_type of this ListShareBandwidthTypesRequest.
 
         带宽支持类型
 
@@ -168,7 +168,7 @@ class ListShareBandwidthTypesRequest:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this ListShareBandwidthTypesRequest.
+        r"""Sets the bandwidth_type of this ListShareBandwidthTypesRequest.
 
         带宽支持类型
 
@@ -179,7 +179,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ListShareBandwidthTypesRequest.
+        r"""Gets the name_en of this ListShareBandwidthTypesRequest.
 
         带宽类型英文表述
 
@@ -190,7 +190,7 @@ class ListShareBandwidthTypesRequest:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ListShareBandwidthTypesRequest.
+        r"""Sets the name_en of this ListShareBandwidthTypesRequest.
 
         带宽类型英文表述
 
@@ -201,7 +201,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this ListShareBandwidthTypesRequest.
+        r"""Gets the name_zh of this ListShareBandwidthTypesRequest.
 
         带宽类型中文表述
 
@@ -212,7 +212,7 @@ class ListShareBandwidthTypesRequest:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this ListShareBandwidthTypesRequest.
+        r"""Sets the name_zh of this ListShareBandwidthTypesRequest.
 
         带宽类型中文表述
 
@@ -223,7 +223,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListShareBandwidthTypesRequest.
+        r"""Gets the public_border_group of this ListShareBandwidthTypesRequest.
 
         带宽类型所处位置，中心站点or边缘站点
 
@@ -234,7 +234,7 @@ class ListShareBandwidthTypesRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListShareBandwidthTypesRequest.
+        r"""Sets the public_border_group of this ListShareBandwidthTypesRequest.
 
         带宽类型所处位置，中心站点or边缘站点
 
@@ -245,7 +245,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListShareBandwidthTypesRequest.
+        r"""Gets the sort_key of this ListShareBandwidthTypesRequest.
 
         排序，形式为\"sort_key=id&sort_dir=asc\"  支持字段：id/bandwidth_type/public_border_group
 
@@ -256,7 +256,7 @@ class ListShareBandwidthTypesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListShareBandwidthTypesRequest.
+        r"""Sets the sort_key of this ListShareBandwidthTypesRequest.
 
         排序，形式为\"sort_key=id&sort_dir=asc\"  支持字段：id/bandwidth_type/public_border_group
 
@@ -267,7 +267,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListShareBandwidthTypesRequest.
+        r"""Gets the sort_dir of this ListShareBandwidthTypesRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -278,7 +278,7 @@ class ListShareBandwidthTypesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListShareBandwidthTypesRequest.
+        r"""Sets the sort_dir of this ListShareBandwidthTypesRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -289,7 +289,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListShareBandwidthTypesRequest.
+        r"""Gets the limit of this ListShareBandwidthTypesRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -300,7 +300,7 @@ class ListShareBandwidthTypesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListShareBandwidthTypesRequest.
+        r"""Sets the limit of this ListShareBandwidthTypesRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -311,7 +311,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListShareBandwidthTypesRequest.
+        r"""Gets the marker of this ListShareBandwidthTypesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -322,7 +322,7 @@ class ListShareBandwidthTypesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListShareBandwidthTypesRequest.
+        r"""Sets the marker of this ListShareBandwidthTypesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -333,7 +333,7 @@ class ListShareBandwidthTypesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListShareBandwidthTypesRequest.
+        r"""Gets the offset of this ListShareBandwidthTypesRequest.
 
         分页查询起始的资源序号
 
@@ -344,7 +344,7 @@ class ListShareBandwidthTypesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListShareBandwidthTypesRequest.
+        r"""Sets the offset of this ListShareBandwidthTypesRequest.
 
         分页查询起始的资源序号
 

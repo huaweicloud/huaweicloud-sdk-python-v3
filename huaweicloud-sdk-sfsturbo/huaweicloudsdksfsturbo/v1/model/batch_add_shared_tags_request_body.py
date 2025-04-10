@@ -29,7 +29,7 @@ class BatchAddSharedTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None, sys_tags=None):
-        """BatchAddSharedTagsRequestBody
+        r"""BatchAddSharedTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchAddSharedTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchAddSharedTagsRequestBody.
+        r"""Gets the action of this BatchAddSharedTagsRequestBody.
 
         操作标识，取值范围为：create。 为指定共享批量添加标签时使用create。
 
@@ -67,7 +67,7 @@ class BatchAddSharedTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchAddSharedTagsRequestBody.
+        r"""Sets the action of this BatchAddSharedTagsRequestBody.
 
         操作标识，取值范围为：create。 为指定共享批量添加标签时使用create。
 
@@ -78,7 +78,7 @@ class BatchAddSharedTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchAddSharedTagsRequestBody.
+        r"""Gets the tags of this BatchAddSharedTagsRequestBody.
 
         标签列表。 用户权限时该字段必选。如果有op_service权限时，tags和sys_tags二选一。
 
@@ -89,7 +89,7 @@ class BatchAddSharedTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchAddSharedTagsRequestBody.
+        r"""Sets the tags of this BatchAddSharedTagsRequestBody.
 
         标签列表。 用户权限时该字段必选。如果有op_service权限时，tags和sys_tags二选一。
 
@@ -100,7 +100,7 @@ class BatchAddSharedTagsRequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this BatchAddSharedTagsRequestBody.
+        r"""Gets the sys_tags of this BatchAddSharedTagsRequestBody.
 
         系统标签列表。 op_service权限可以访问，和tags二选一。目前TMS调用时只包含一个resource_tag结构体，key固定为：_sys_enterprise_project_id。
 
@@ -111,7 +111,7 @@ class BatchAddSharedTagsRequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchAddSharedTagsRequestBody.
+        r"""Sets the sys_tags of this BatchAddSharedTagsRequestBody.
 
         系统标签列表。 op_service权限可以访问，和tags二选一。目前TMS调用时只包含一个resource_tag结构体，key固定为：_sys_enterprise_project_id。
 

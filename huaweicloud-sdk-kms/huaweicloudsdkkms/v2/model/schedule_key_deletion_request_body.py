@@ -29,7 +29,7 @@ class ScheduleKeyDeletionRequestBody:
     }
 
     def __init__(self, key_id=None, pending_days=None, sequence=None):
-        """ScheduleKeyDeletionRequestBody
+        r"""ScheduleKeyDeletionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ScheduleKeyDeletionRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ScheduleKeyDeletionRequestBody.
+        r"""Gets the key_id of this ScheduleKeyDeletionRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -66,7 +66,7 @@ class ScheduleKeyDeletionRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ScheduleKeyDeletionRequestBody.
+        r"""Sets the key_id of this ScheduleKeyDeletionRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -77,7 +77,7 @@ class ScheduleKeyDeletionRequestBody:
 
     @property
     def pending_days(self):
-        """Gets the pending_days of this ScheduleKeyDeletionRequestBody.
+        r"""Gets the pending_days of this ScheduleKeyDeletionRequestBody.
 
         计划多少天后删除密钥，取值为7到1096。
 
@@ -88,7 +88,7 @@ class ScheduleKeyDeletionRequestBody:
 
     @pending_days.setter
     def pending_days(self, pending_days):
-        """Sets the pending_days of this ScheduleKeyDeletionRequestBody.
+        r"""Sets the pending_days of this ScheduleKeyDeletionRequestBody.
 
         计划多少天后删除密钥，取值为7到1096。
 
@@ -99,7 +99,7 @@ class ScheduleKeyDeletionRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this ScheduleKeyDeletionRequestBody.
+        r"""Gets the sequence of this ScheduleKeyDeletionRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -110,7 +110,7 @@ class ScheduleKeyDeletionRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this ScheduleKeyDeletionRequestBody.
+        r"""Sets the sequence of this ScheduleKeyDeletionRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

@@ -25,7 +25,7 @@ class ShowRealnameAuthenticationReviewResultRequest:
     }
 
     def __init__(self, customer_id=None):
-        """ShowRealnameAuthenticationReviewResultRequest
+        r"""ShowRealnameAuthenticationReviewResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRealnameAuthenticationReviewResultRequest:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ShowRealnameAuthenticationReviewResultRequest.
+        r"""Gets the customer_id of this ShowRealnameAuthenticationReviewResultRequest.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -53,7 +53,7 @@ class ShowRealnameAuthenticationReviewResultRequest:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ShowRealnameAuthenticationReviewResultRequest.
+        r"""Sets the customer_id of this ShowRealnameAuthenticationReviewResultRequest.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id。
 

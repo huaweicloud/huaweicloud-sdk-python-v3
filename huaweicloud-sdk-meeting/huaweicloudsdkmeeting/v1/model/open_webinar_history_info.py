@@ -61,7 +61,7 @@ class OpenWebinarHistoryInfo:
     }
 
     def __init__(self, conference_id=None, conf_uuid=None, subject=None, scheduser_name=None, moderator=None, dept_name=None, time_zone_id=None, start_time=None, duration=None, actual_start_time=None, end_time=None, actual_duration=None, attendee_count=None, chair_count=None, guest_count=None, audience_count=None, vmr_id=None, vmr_pkg_audience_parties=None, vmr_pkg_name=None):
-        """OpenWebinarHistoryInfo
+        r"""OpenWebinarHistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this OpenWebinarHistoryInfo.
+        r"""Gets the conference_id of this OpenWebinarHistoryInfo.
 
         网络研讨会ID。
 
@@ -180,7 +180,7 @@ class OpenWebinarHistoryInfo:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this OpenWebinarHistoryInfo.
+        r"""Sets the conference_id of this OpenWebinarHistoryInfo.
 
         网络研讨会ID。
 
@@ -191,7 +191,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this OpenWebinarHistoryInfo.
+        r"""Gets the conf_uuid of this OpenWebinarHistoryInfo.
 
         网络研讨会UUID。
 
@@ -202,7 +202,7 @@ class OpenWebinarHistoryInfo:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this OpenWebinarHistoryInfo.
+        r"""Sets the conf_uuid of this OpenWebinarHistoryInfo.
 
         网络研讨会UUID。
 
@@ -213,7 +213,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def subject(self):
-        """Gets the subject of this OpenWebinarHistoryInfo.
+        r"""Gets the subject of this OpenWebinarHistoryInfo.
 
         网络研讨会主题。
 
@@ -224,7 +224,7 @@ class OpenWebinarHistoryInfo:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this OpenWebinarHistoryInfo.
+        r"""Sets the subject of this OpenWebinarHistoryInfo.
 
         网络研讨会主题。
 
@@ -235,7 +235,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def scheduser_name(self):
-        """Gets the scheduser_name of this OpenWebinarHistoryInfo.
+        r"""Gets the scheduser_name of this OpenWebinarHistoryInfo.
 
         网络研讨会预定者名称。
 
@@ -246,7 +246,7 @@ class OpenWebinarHistoryInfo:
 
     @scheduser_name.setter
     def scheduser_name(self, scheduser_name):
-        """Sets the scheduser_name of this OpenWebinarHistoryInfo.
+        r"""Sets the scheduser_name of this OpenWebinarHistoryInfo.
 
         网络研讨会预定者名称。
 
@@ -257,7 +257,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def moderator(self):
-        """Gets the moderator of this OpenWebinarHistoryInfo.
+        r"""Gets the moderator of this OpenWebinarHistoryInfo.
 
         网络研讨主持人名称。
 
@@ -268,7 +268,7 @@ class OpenWebinarHistoryInfo:
 
     @moderator.setter
     def moderator(self, moderator):
-        """Sets the moderator of this OpenWebinarHistoryInfo.
+        r"""Sets the moderator of this OpenWebinarHistoryInfo.
 
         网络研讨主持人名称。
 
@@ -279,7 +279,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this OpenWebinarHistoryInfo.
+        r"""Gets the dept_name of this OpenWebinarHistoryInfo.
 
         预订人部门名称。
 
@@ -290,7 +290,7 @@ class OpenWebinarHistoryInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this OpenWebinarHistoryInfo.
+        r"""Sets the dept_name of this OpenWebinarHistoryInfo.
 
         预订人部门名称。
 
@@ -301,7 +301,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this OpenWebinarHistoryInfo.
+        r"""Gets the time_zone_id of this OpenWebinarHistoryInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -312,7 +312,7 @@ class OpenWebinarHistoryInfo:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this OpenWebinarHistoryInfo.
+        r"""Sets the time_zone_id of this OpenWebinarHistoryInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -323,7 +323,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenWebinarHistoryInfo.
+        r"""Gets the start_time of this OpenWebinarHistoryInfo.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -334,7 +334,7 @@ class OpenWebinarHistoryInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenWebinarHistoryInfo.
+        r"""Sets the start_time of this OpenWebinarHistoryInfo.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -345,7 +345,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this OpenWebinarHistoryInfo.
+        r"""Gets the duration of this OpenWebinarHistoryInfo.
 
         网络研讨会持续时长，单位分钟。
 
@@ -356,7 +356,7 @@ class OpenWebinarHistoryInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OpenWebinarHistoryInfo.
+        r"""Sets the duration of this OpenWebinarHistoryInfo.
 
         网络研讨会持续时长，单位分钟。
 
@@ -367,7 +367,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def actual_start_time(self):
-        """Gets the actual_start_time of this OpenWebinarHistoryInfo.
+        r"""Gets the actual_start_time of this OpenWebinarHistoryInfo.
 
         网络研讨会实际召开时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -378,7 +378,7 @@ class OpenWebinarHistoryInfo:
 
     @actual_start_time.setter
     def actual_start_time(self, actual_start_time):
-        """Sets the actual_start_time of this OpenWebinarHistoryInfo.
+        r"""Sets the actual_start_time of this OpenWebinarHistoryInfo.
 
         网络研讨会实际召开时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -389,7 +389,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OpenWebinarHistoryInfo.
+        r"""Gets the end_time of this OpenWebinarHistoryInfo.
 
         网络研讨会结束时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -400,7 +400,7 @@ class OpenWebinarHistoryInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OpenWebinarHistoryInfo.
+        r"""Sets the end_time of this OpenWebinarHistoryInfo.
 
         网络研讨会结束时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -411,7 +411,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def actual_duration(self):
-        """Gets the actual_duration of this OpenWebinarHistoryInfo.
+        r"""Gets the actual_duration of this OpenWebinarHistoryInfo.
 
         网络研讨会实际时长，单位分钟。
 
@@ -422,7 +422,7 @@ class OpenWebinarHistoryInfo:
 
     @actual_duration.setter
     def actual_duration(self, actual_duration):
-        """Sets the actual_duration of this OpenWebinarHistoryInfo.
+        r"""Sets the actual_duration of this OpenWebinarHistoryInfo.
 
         网络研讨会实际时长，单位分钟。
 
@@ -433,7 +433,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def attendee_count(self):
-        """Gets the attendee_count of this OpenWebinarHistoryInfo.
+        r"""Gets the attendee_count of this OpenWebinarHistoryInfo.
 
         与会人数。
 
@@ -444,7 +444,7 @@ class OpenWebinarHistoryInfo:
 
     @attendee_count.setter
     def attendee_count(self, attendee_count):
-        """Sets the attendee_count of this OpenWebinarHistoryInfo.
+        r"""Sets the attendee_count of this OpenWebinarHistoryInfo.
 
         与会人数。
 
@@ -455,7 +455,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def chair_count(self):
-        """Gets the chair_count of this OpenWebinarHistoryInfo.
+        r"""Gets the chair_count of this OpenWebinarHistoryInfo.
 
         主持人数。
 
@@ -466,7 +466,7 @@ class OpenWebinarHistoryInfo:
 
     @chair_count.setter
     def chair_count(self, chair_count):
-        """Sets the chair_count of this OpenWebinarHistoryInfo.
+        r"""Sets the chair_count of this OpenWebinarHistoryInfo.
 
         主持人数。
 
@@ -477,7 +477,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def guest_count(self):
-        """Gets the guest_count of this OpenWebinarHistoryInfo.
+        r"""Gets the guest_count of this OpenWebinarHistoryInfo.
 
         嘉宾数。
 
@@ -488,7 +488,7 @@ class OpenWebinarHistoryInfo:
 
     @guest_count.setter
     def guest_count(self, guest_count):
-        """Sets the guest_count of this OpenWebinarHistoryInfo.
+        r"""Sets the guest_count of this OpenWebinarHistoryInfo.
 
         嘉宾数。
 
@@ -499,7 +499,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def audience_count(self):
-        """Gets the audience_count of this OpenWebinarHistoryInfo.
+        r"""Gets the audience_count of this OpenWebinarHistoryInfo.
 
         观众人数。
 
@@ -510,7 +510,7 @@ class OpenWebinarHistoryInfo:
 
     @audience_count.setter
     def audience_count(self, audience_count):
-        """Sets the audience_count of this OpenWebinarHistoryInfo.
+        r"""Sets the audience_count of this OpenWebinarHistoryInfo.
 
         观众人数。
 
@@ -521,7 +521,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this OpenWebinarHistoryInfo.
+        r"""Gets the vmr_id of this OpenWebinarHistoryInfo.
 
         VMR ID。
 
@@ -532,7 +532,7 @@ class OpenWebinarHistoryInfo:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this OpenWebinarHistoryInfo.
+        r"""Sets the vmr_id of this OpenWebinarHistoryInfo.
 
         VMR ID。
 
@@ -543,7 +543,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def vmr_pkg_audience_parties(self):
-        """Gets the vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
+        r"""Gets the vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
 
         网络研讨会VMR最大观众数。
 
@@ -554,7 +554,7 @@ class OpenWebinarHistoryInfo:
 
     @vmr_pkg_audience_parties.setter
     def vmr_pkg_audience_parties(self, vmr_pkg_audience_parties):
-        """Sets the vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
+        r"""Sets the vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
 
         网络研讨会VMR最大观众数。
 
@@ -565,7 +565,7 @@ class OpenWebinarHistoryInfo:
 
     @property
     def vmr_pkg_name(self):
-        """Gets the vmr_pkg_name of this OpenWebinarHistoryInfo.
+        r"""Gets the vmr_pkg_name of this OpenWebinarHistoryInfo.
 
         网络研讨会VMR名称。
 
@@ -576,7 +576,7 @@ class OpenWebinarHistoryInfo:
 
     @vmr_pkg_name.setter
     def vmr_pkg_name(self, vmr_pkg_name):
-        """Sets the vmr_pkg_name of this OpenWebinarHistoryInfo.
+        r"""Sets the vmr_pkg_name of this OpenWebinarHistoryInfo.
 
         网络研讨会VMR名称。
 

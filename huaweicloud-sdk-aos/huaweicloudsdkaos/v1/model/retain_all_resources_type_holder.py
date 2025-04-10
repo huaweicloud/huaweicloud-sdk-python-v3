@@ -25,7 +25,7 @@ class RetainAllResourcesTypeHolder:
     }
 
     def __init__(self, retain_all_resources=None):
-        """RetainAllResourcesTypeHolder
+        r"""RetainAllResourcesTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RetainAllResourcesTypeHolder:
 
     @property
     def retain_all_resources(self):
-        """Gets the retain_all_resources of this RetainAllResourcesTypeHolder.
+        r"""Gets the retain_all_resources of this RetainAllResourcesTypeHolder.
 
         删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，如果该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
 
@@ -54,7 +54,7 @@ class RetainAllResourcesTypeHolder:
 
     @retain_all_resources.setter
     def retain_all_resources(self, retain_all_resources):
-        """Sets the retain_all_resources of this RetainAllResourcesTypeHolder.
+        r"""Sets the retain_all_resources of this RetainAllResourcesTypeHolder.
 
         删除资源栈是否保留资源的标志位，如果不传默认为false，即默认不保留资源（删除资源栈后会删除资源栈中的资源）  * DeleteStackEnhanced API中，如果该参数未在RequestBody中给予，则删除时不会保留资源栈中的资源*
 

@@ -31,7 +31,7 @@ class ShowCeshierarchyRespChildren:
     }
 
     def __init__(self, name=None, metrics=None, key_name=None, dim_router=None):
-        """ShowCeshierarchyRespChildren
+        r"""ShowCeshierarchyRespChildren
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowCeshierarchyRespChildren:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespChildren.
+        r"""Gets the name of this ShowCeshierarchyRespChildren.
 
         子维度名称。
 
@@ -75,7 +75,7 @@ class ShowCeshierarchyRespChildren:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespChildren.
+        r"""Sets the name of this ShowCeshierarchyRespChildren.
 
         子维度名称。
 
@@ -86,7 +86,7 @@ class ShowCeshierarchyRespChildren:
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowCeshierarchyRespChildren.
+        r"""Gets the metrics of this ShowCeshierarchyRespChildren.
 
         监控指标名称列表。
 
@@ -97,7 +97,7 @@ class ShowCeshierarchyRespChildren:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowCeshierarchyRespChildren.
+        r"""Sets the metrics of this ShowCeshierarchyRespChildren.
 
         监控指标名称列表。
 
@@ -108,7 +108,7 @@ class ShowCeshierarchyRespChildren:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ShowCeshierarchyRespChildren.
+        r"""Gets the key_name of this ShowCeshierarchyRespChildren.
 
         监控查询使用的key。
 
@@ -119,7 +119,7 @@ class ShowCeshierarchyRespChildren:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ShowCeshierarchyRespChildren.
+        r"""Sets the key_name of this ShowCeshierarchyRespChildren.
 
         监控查询使用的key。
 
@@ -130,7 +130,7 @@ class ShowCeshierarchyRespChildren:
 
     @property
     def dim_router(self):
-        """Gets the dim_router of this ShowCeshierarchyRespChildren.
+        r"""Gets the dim_router of this ShowCeshierarchyRespChildren.
 
         监控维度路由。
 
@@ -141,7 +141,7 @@ class ShowCeshierarchyRespChildren:
 
     @dim_router.setter
     def dim_router(self, dim_router):
-        """Sets the dim_router of this ShowCeshierarchyRespChildren.
+        r"""Sets the dim_router of this ShowCeshierarchyRespChildren.
 
         监控维度路由。
 

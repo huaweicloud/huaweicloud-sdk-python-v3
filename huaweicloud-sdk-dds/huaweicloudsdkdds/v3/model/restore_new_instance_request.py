@@ -25,7 +25,7 @@ class RestoreNewInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """RestoreNewInstanceRequest
+        r"""RestoreNewInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestoreNewInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreNewInstanceRequest.
+        r"""Gets the body of this RestoreNewInstanceRequest.
 
         :return: The body of this RestoreNewInstanceRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreNewInstanceRequestBody`
@@ -52,7 +52,7 @@ class RestoreNewInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreNewInstanceRequest.
+        r"""Sets the body of this RestoreNewInstanceRequest.
 
         :param body: The body of this RestoreNewInstanceRequest.
         :type body: :class:`huaweicloudsdkdds.v3.RestoreNewInstanceRequestBody`

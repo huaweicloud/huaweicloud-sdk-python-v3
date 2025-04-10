@@ -45,7 +45,7 @@ class PermissionSummary:
     }
 
     def __init__(self, id=None, name=None, resource_type=None, is_resource_type_default=None, created_at=None, updated_at=None, permission_urn=None, permission_type=None, default_version=None, version=None, status=None):
-        """PermissionSummary
+        r"""PermissionSummary
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class PermissionSummary:
 
     @property
     def id(self):
-        """Gets the id of this PermissionSummary.
+        r"""Gets the id of this PermissionSummary.
 
         权限ID。
 
@@ -118,7 +118,7 @@ class PermissionSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionSummary.
+        r"""Sets the id of this PermissionSummary.
 
         权限ID。
 
@@ -129,7 +129,7 @@ class PermissionSummary:
 
     @property
     def name(self):
-        """Gets the name of this PermissionSummary.
+        r"""Gets the name of this PermissionSummary.
 
         权限名称。
 
@@ -140,7 +140,7 @@ class PermissionSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PermissionSummary.
+        r"""Sets the name of this PermissionSummary.
 
         权限名称。
 
@@ -151,7 +151,7 @@ class PermissionSummary:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PermissionSummary.
+        r"""Gets the resource_type of this PermissionSummary.
 
         此权限适用的资源类型。
 
@@ -162,7 +162,7 @@ class PermissionSummary:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PermissionSummary.
+        r"""Sets the resource_type of this PermissionSummary.
 
         此权限适用的资源类型。
 
@@ -173,7 +173,7 @@ class PermissionSummary:
 
     @property
     def is_resource_type_default(self):
-        """Gets the is_resource_type_default of this PermissionSummary.
+        r"""Gets the is_resource_type_default of this PermissionSummary.
 
         该权限是否是此资源类型的默认权限。
 
@@ -184,7 +184,7 @@ class PermissionSummary:
 
     @is_resource_type_default.setter
     def is_resource_type_default(self, is_resource_type_default):
-        """Sets the is_resource_type_default of this PermissionSummary.
+        r"""Sets the is_resource_type_default of this PermissionSummary.
 
         该权限是否是此资源类型的默认权限。
 
@@ -195,7 +195,7 @@ class PermissionSummary:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PermissionSummary.
+        r"""Gets the created_at of this PermissionSummary.
 
         权限的创建时间。
 
@@ -206,7 +206,7 @@ class PermissionSummary:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PermissionSummary.
+        r"""Sets the created_at of this PermissionSummary.
 
         权限的创建时间。
 
@@ -217,7 +217,7 @@ class PermissionSummary:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PermissionSummary.
+        r"""Gets the updated_at of this PermissionSummary.
 
         上次更新权限的时间。
 
@@ -228,7 +228,7 @@ class PermissionSummary:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PermissionSummary.
+        r"""Sets the updated_at of this PermissionSummary.
 
         上次更新权限的时间。
 
@@ -239,7 +239,7 @@ class PermissionSummary:
 
     @property
     def permission_urn(self):
-        """Gets the permission_urn of this PermissionSummary.
+        r"""Gets the permission_urn of this PermissionSummary.
 
         权限URN。
 
@@ -250,7 +250,7 @@ class PermissionSummary:
 
     @permission_urn.setter
     def permission_urn(self, permission_urn):
-        """Sets the permission_urn of this PermissionSummary.
+        r"""Sets the permission_urn of this PermissionSummary.
 
         权限URN。
 
@@ -261,7 +261,7 @@ class PermissionSummary:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this PermissionSummary.
+        r"""Gets the permission_type of this PermissionSummary.
 
         权限类型，RAM托管或者租户自定义权限。
 
@@ -272,7 +272,7 @@ class PermissionSummary:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this PermissionSummary.
+        r"""Sets the permission_type of this PermissionSummary.
 
         权限类型，RAM托管或者租户自定义权限。
 
@@ -283,7 +283,7 @@ class PermissionSummary:
 
     @property
     def default_version(self):
-        """Gets the default_version of this PermissionSummary.
+        r"""Gets the default_version of this PermissionSummary.
 
         是否是默认版本。
 
@@ -294,7 +294,7 @@ class PermissionSummary:
 
     @default_version.setter
     def default_version(self, default_version):
-        """Sets the default_version of this PermissionSummary.
+        r"""Sets the default_version of this PermissionSummary.
 
         是否是默认版本。
 
@@ -305,7 +305,7 @@ class PermissionSummary:
 
     @property
     def version(self):
-        """Gets the version of this PermissionSummary.
+        r"""Gets the version of this PermissionSummary.
 
         权限版本。
 
@@ -316,7 +316,7 @@ class PermissionSummary:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PermissionSummary.
+        r"""Sets the version of this PermissionSummary.
 
         权限版本。
 
@@ -327,7 +327,7 @@ class PermissionSummary:
 
     @property
     def status(self):
-        """Gets the status of this PermissionSummary.
+        r"""Gets the status of this PermissionSummary.
 
         权限的状态
 
@@ -338,7 +338,7 @@ class PermissionSummary:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PermissionSummary.
+        r"""Sets the status of this PermissionSummary.
 
         权限的状态
 

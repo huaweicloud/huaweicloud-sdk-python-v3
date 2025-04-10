@@ -27,7 +27,7 @@ class TemplateViewHistory:
     }
 
     def __init__(self, template_id=None, template_title=None):
-        """TemplateViewHistory
+        r"""TemplateViewHistory
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TemplateViewHistory:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TemplateViewHistory.
+        r"""Gets the template_id of this TemplateViewHistory.
 
         模板的id。
 
@@ -59,7 +59,7 @@ class TemplateViewHistory:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TemplateViewHistory.
+        r"""Sets the template_id of this TemplateViewHistory.
 
         模板的id。
 
@@ -70,7 +70,7 @@ class TemplateViewHistory:
 
     @property
     def template_title(self):
-        """Gets the template_title of this TemplateViewHistory.
+        r"""Gets the template_title of this TemplateViewHistory.
 
         模板的名称。
 
@@ -81,7 +81,7 @@ class TemplateViewHistory:
 
     @template_title.setter
     def template_title(self, template_title):
-        """Sets the template_title of this TemplateViewHistory.
+        r"""Sets the template_title of this TemplateViewHistory.
 
         模板的名称。
 

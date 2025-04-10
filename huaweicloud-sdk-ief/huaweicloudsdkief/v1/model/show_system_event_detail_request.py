@@ -27,7 +27,7 @@ class ShowSystemEventDetailRequest:
     }
 
     def __init__(self, event_id=None, ief_instance_id=None):
-        """ShowSystemEventDetailRequest
+        r"""ShowSystemEventDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSystemEventDetailRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ShowSystemEventDetailRequest.
+        r"""Gets the event_id of this ShowSystemEventDetailRequest.
 
         系统订阅名称
 
@@ -60,7 +60,7 @@ class ShowSystemEventDetailRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ShowSystemEventDetailRequest.
+        r"""Sets the event_id of this ShowSystemEventDetailRequest.
 
         系统订阅名称
 
@@ -71,7 +71,7 @@ class ShowSystemEventDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowSystemEventDetailRequest.
+        r"""Gets the ief_instance_id of this ShowSystemEventDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class ShowSystemEventDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowSystemEventDetailRequest.
+        r"""Sets the ief_instance_id of this ShowSystemEventDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 

@@ -39,7 +39,7 @@ class ListRepositoryTagsRequest:
     }
 
     def __init__(self, namespace=None, repository=None, limit=None, offset=None, order_column=None, order_type=None, tag=None, filter=None):
-        """ListRepositoryTagsRequest
+        r"""ListRepositoryTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListRepositoryTagsRequest.
+        r"""Gets the namespace of this ListRepositoryTagsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -101,7 +101,7 @@ class ListRepositoryTagsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListRepositoryTagsRequest.
+        r"""Sets the namespace of this ListRepositoryTagsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -112,7 +112,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this ListRepositoryTagsRequest.
+        r"""Gets the repository of this ListRepositoryTagsRequest.
 
         镜像仓库名称
 
@@ -123,7 +123,7 @@ class ListRepositoryTagsRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this ListRepositoryTagsRequest.
+        r"""Sets the repository of this ListRepositoryTagsRequest.
 
         镜像仓库名称
 
@@ -134,7 +134,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRepositoryTagsRequest.
+        r"""Gets the limit of this ListRepositoryTagsRequest.
 
         返回条数。注意：offset和limit参数需要配套使用。
 
@@ -145,7 +145,7 @@ class ListRepositoryTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRepositoryTagsRequest.
+        r"""Sets the limit of this ListRepositoryTagsRequest.
 
         返回条数。注意：offset和limit参数需要配套使用。
 
@@ -156,7 +156,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRepositoryTagsRequest.
+        r"""Gets the offset of this ListRepositoryTagsRequest.
 
         起始索引。注意：offset和limit参数需要配套使用。
 
@@ -167,7 +167,7 @@ class ListRepositoryTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRepositoryTagsRequest.
+        r"""Sets the offset of this ListRepositoryTagsRequest.
 
         起始索引。注意：offset和limit参数需要配套使用。
 
@@ -178,7 +178,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def order_column(self):
-        """Gets the order_column of this ListRepositoryTagsRequest.
+        r"""Gets the order_column of this ListRepositoryTagsRequest.
 
         按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
 
@@ -189,7 +189,7 @@ class ListRepositoryTagsRequest:
 
     @order_column.setter
     def order_column(self, order_column):
-        """Sets the order_column of this ListRepositoryTagsRequest.
+        r"""Sets the order_column of this ListRepositoryTagsRequest.
 
         按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
 
@@ -200,7 +200,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def order_type(self):
-        """Gets the order_type of this ListRepositoryTagsRequest.
+        r"""Gets the order_type of this ListRepositoryTagsRequest.
 
         排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
 
@@ -211,7 +211,7 @@ class ListRepositoryTagsRequest:
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this ListRepositoryTagsRequest.
+        r"""Sets the order_type of this ListRepositoryTagsRequest.
 
         排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
 
@@ -222,7 +222,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListRepositoryTagsRequest.
+        r"""Gets the tag of this ListRepositoryTagsRequest.
 
         镜像版本名。
 
@@ -233,7 +233,7 @@ class ListRepositoryTagsRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListRepositoryTagsRequest.
+        r"""Sets the tag of this ListRepositoryTagsRequest.
 
         镜像版本名。
 
@@ -244,7 +244,7 @@ class ListRepositoryTagsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListRepositoryTagsRequest.
+        r"""Gets the filter of this ListRepositoryTagsRequest.
 
         应填写 offset::{offset}|limit::{limit}|order_column::{order_column}|order_type::{order_type}|tag::{tag} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用。 {order_column}为按列排序，可设置为updated_at（按更新时间排序）,{order_type}为排序类型，可设置为desc（降序）、asc（升序），{tag}为镜像版本名。
 
@@ -255,7 +255,7 @@ class ListRepositoryTagsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListRepositoryTagsRequest.
+        r"""Sets the filter of this ListRepositoryTagsRequest.
 
         应填写 offset::{offset}|limit::{limit}|order_column::{order_column}|order_type::{order_type}|tag::{tag} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用。 {order_column}为按列排序，可设置为updated_at（按更新时间排序）,{order_type}为排序类型，可设置为desc（降序）、asc（升序），{tag}为镜像版本名。
 

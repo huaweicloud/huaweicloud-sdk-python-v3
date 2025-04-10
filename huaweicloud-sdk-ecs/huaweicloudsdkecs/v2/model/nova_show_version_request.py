@@ -25,7 +25,7 @@ class NovaShowVersionRequest:
     }
 
     def __init__(self, api_version=None):
-        """NovaShowVersionRequest
+        r"""NovaShowVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaShowVersionRequest:
 
     @property
     def api_version(self):
-        """Gets the api_version of this NovaShowVersionRequest.
+        r"""Gets the api_version of this NovaShowVersionRequest.
 
         API版本号。例如: v2
 
@@ -53,7 +53,7 @@ class NovaShowVersionRequest:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this NovaShowVersionRequest.
+        r"""Sets the api_version of this NovaShowVersionRequest.
 
         API版本号。例如: v2
 

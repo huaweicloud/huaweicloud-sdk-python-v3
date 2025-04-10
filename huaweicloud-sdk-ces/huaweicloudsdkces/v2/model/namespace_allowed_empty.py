@@ -23,7 +23,7 @@ class NamespaceAllowedEmpty:
     }
 
     def __init__(self):
-        """NamespaceAllowedEmpty
+        r"""NamespaceAllowedEmpty
 
         The model defined in huaweicloud sdk
 

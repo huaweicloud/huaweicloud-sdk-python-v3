@@ -35,7 +35,7 @@ class WafGeoIpRule:
     }
 
     def __init__(self, geoip=None, id=None, name=None, overseas_type=None, timestamp=None, white=None):
-        """WafGeoIpRule
+        r"""WafGeoIpRule
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class WafGeoIpRule:
 
     @property
     def geoip(self):
-        """Gets the geoip of this WafGeoIpRule.
+        r"""Gets the geoip of this WafGeoIpRule.
 
         地理位置
 
@@ -89,7 +89,7 @@ class WafGeoIpRule:
 
     @geoip.setter
     def geoip(self, geoip):
-        """Sets the geoip of this WafGeoIpRule.
+        r"""Sets the geoip of this WafGeoIpRule.
 
         地理位置
 
@@ -100,7 +100,7 @@ class WafGeoIpRule:
 
     @property
     def id(self):
-        """Gets the id of this WafGeoIpRule.
+        r"""Gets the id of this WafGeoIpRule.
 
         id
 
@@ -111,7 +111,7 @@ class WafGeoIpRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WafGeoIpRule.
+        r"""Sets the id of this WafGeoIpRule.
 
         id
 
@@ -122,7 +122,7 @@ class WafGeoIpRule:
 
     @property
     def name(self):
-        """Gets the name of this WafGeoIpRule.
+        r"""Gets the name of this WafGeoIpRule.
 
         规则名称
 
@@ -133,7 +133,7 @@ class WafGeoIpRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WafGeoIpRule.
+        r"""Sets the name of this WafGeoIpRule.
 
         规则名称
 
@@ -144,7 +144,7 @@ class WafGeoIpRule:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this WafGeoIpRule.
+        r"""Gets the overseas_type of this WafGeoIpRule.
 
         防护区域，0-大陆，1-海外
 
@@ -155,7 +155,7 @@ class WafGeoIpRule:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this WafGeoIpRule.
+        r"""Sets the overseas_type of this WafGeoIpRule.
 
         防护区域，0-大陆，1-海外
 
@@ -166,7 +166,7 @@ class WafGeoIpRule:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this WafGeoIpRule.
+        r"""Gets the timestamp of this WafGeoIpRule.
 
         添加时间
 
@@ -177,7 +177,7 @@ class WafGeoIpRule:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this WafGeoIpRule.
+        r"""Sets the timestamp of this WafGeoIpRule.
 
         添加时间
 
@@ -188,7 +188,7 @@ class WafGeoIpRule:
 
     @property
     def white(self):
-        """Gets the white of this WafGeoIpRule.
+        r"""Gets the white of this WafGeoIpRule.
 
         防护动作 0-阻断，1-放行，2-仅记录
 
@@ -199,7 +199,7 @@ class WafGeoIpRule:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this WafGeoIpRule.
+        r"""Sets the white of this WafGeoIpRule.
 
         防护动作 0-阻断，1-放行，2-仅记录
 

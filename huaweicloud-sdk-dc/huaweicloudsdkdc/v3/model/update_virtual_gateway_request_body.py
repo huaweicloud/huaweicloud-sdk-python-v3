@@ -25,7 +25,7 @@ class UpdateVirtualGatewayRequestBody:
     }
 
     def __init__(self, virtual_gateway=None):
-        """UpdateVirtualGatewayRequestBody
+        r"""UpdateVirtualGatewayRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateVirtualGatewayRequestBody:
 
     @property
     def virtual_gateway(self):
-        """Gets the virtual_gateway of this UpdateVirtualGatewayRequestBody.
+        r"""Gets the virtual_gateway of this UpdateVirtualGatewayRequestBody.
 
         :return: The virtual_gateway of this UpdateVirtualGatewayRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVirtualGateway`
@@ -52,7 +52,7 @@ class UpdateVirtualGatewayRequestBody:
 
     @virtual_gateway.setter
     def virtual_gateway(self, virtual_gateway):
-        """Sets the virtual_gateway of this UpdateVirtualGatewayRequestBody.
+        r"""Sets the virtual_gateway of this UpdateVirtualGatewayRequestBody.
 
         :param virtual_gateway: The virtual_gateway of this UpdateVirtualGatewayRequestBody.
         :type virtual_gateway: :class:`huaweicloudsdkdc.v3.UpdateVirtualGateway`

@@ -27,7 +27,7 @@ class ListResourceByFilterTagRequest:
     }
 
     def __init__(self, resource_type=None, body=None):
-        """ListResourceByFilterTagRequest
+        r"""ListResourceByFilterTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListResourceByFilterTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourceByFilterTagRequest.
+        r"""Gets the resource_type of this ListResourceByFilterTagRequest.
 
         资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
@@ -60,7 +60,7 @@ class ListResourceByFilterTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourceByFilterTagRequest.
+        r"""Sets the resource_type of this ListResourceByFilterTagRequest.
 
         资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
@@ -71,7 +71,7 @@ class ListResourceByFilterTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceByFilterTagRequest.
+        r"""Gets the body of this ListResourceByFilterTagRequest.
 
         :return: The body of this ListResourceByFilterTagRequest.
         :rtype: :class:`huaweicloudsdkcc.v2.ListResourceByFilterTagRequestBody`
@@ -80,7 +80,7 @@ class ListResourceByFilterTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceByFilterTagRequest.
+        r"""Sets the body of this ListResourceByFilterTagRequest.
 
         :param body: The body of this ListResourceByFilterTagRequest.
         :type body: :class:`huaweicloudsdkcc.v2.ListResourceByFilterTagRequestBody`

@@ -25,7 +25,7 @@ class CommRequestScenePageParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestScenePageParam
+        r"""CommRequestScenePageParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommRequestScenePageParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestScenePageParam.
+        r"""Gets the params of this CommRequestScenePageParam.
 
         :return: The params of this CommRequestScenePageParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ScenePageParam`
@@ -52,7 +52,7 @@ class CommRequestScenePageParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestScenePageParam.
+        r"""Sets the params of this CommRequestScenePageParam.
 
         :param params: The params of this CommRequestScenePageParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.ScenePageParam`

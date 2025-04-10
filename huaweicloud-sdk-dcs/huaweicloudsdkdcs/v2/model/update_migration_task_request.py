@@ -27,7 +27,7 @@ class UpdateMigrationTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateMigrationTaskRequest
+        r"""UpdateMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMigrationTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateMigrationTaskRequest.
+        r"""Gets the task_id of this UpdateMigrationTaskRequest.
 
         任务ID
 
@@ -60,7 +60,7 @@ class UpdateMigrationTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateMigrationTaskRequest.
+        r"""Sets the task_id of this UpdateMigrationTaskRequest.
 
         任务ID
 
@@ -71,7 +71,7 @@ class UpdateMigrationTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMigrationTaskRequest.
+        r"""Gets the body of this UpdateMigrationTaskRequest.
 
         :return: The body of this UpdateMigrationTaskRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.MigrationUpdateRequestEntity`
@@ -80,7 +80,7 @@ class UpdateMigrationTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMigrationTaskRequest.
+        r"""Sets the body of this UpdateMigrationTaskRequest.
 
         :param body: The body of this UpdateMigrationTaskRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.MigrationUpdateRequestEntity`

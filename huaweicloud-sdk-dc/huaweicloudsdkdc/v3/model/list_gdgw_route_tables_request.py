@@ -39,7 +39,7 @@ class ListGdgwRouteTablesRequest:
     }
 
     def __init__(self, fields=None, ext_fields=None, limit=None, marker=None, gdgw_id=None, nexthop=None, destination=None, address_family=None):
-        """ListGdgwRouteTablesRequest
+        r"""ListGdgwRouteTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGdgwRouteTablesRequest.
+        r"""Gets the fields of this ListGdgwRouteTablesRequest.
 
         显示字段列表
 
@@ -102,7 +102,7 @@ class ListGdgwRouteTablesRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGdgwRouteTablesRequest.
+        r"""Sets the fields of this ListGdgwRouteTablesRequest.
 
         显示字段列表
 
@@ -113,7 +113,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def ext_fields(self):
-        """Gets the ext_fields of this ListGdgwRouteTablesRequest.
+        r"""Gets the ext_fields of this ListGdgwRouteTablesRequest.
 
         show response ext-fields
 
@@ -124,7 +124,7 @@ class ListGdgwRouteTablesRequest:
 
     @ext_fields.setter
     def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ListGdgwRouteTablesRequest.
+        r"""Sets the ext_fields of this ListGdgwRouteTablesRequest.
 
         show response ext-fields
 
@@ -135,7 +135,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGdgwRouteTablesRequest.
+        r"""Gets the limit of this ListGdgwRouteTablesRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -146,7 +146,7 @@ class ListGdgwRouteTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGdgwRouteTablesRequest.
+        r"""Sets the limit of this ListGdgwRouteTablesRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -157,7 +157,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGdgwRouteTablesRequest.
+        r"""Gets the marker of this ListGdgwRouteTablesRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -168,7 +168,7 @@ class ListGdgwRouteTablesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGdgwRouteTablesRequest.
+        r"""Sets the marker of this ListGdgwRouteTablesRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -179,7 +179,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def gdgw_id(self):
-        """Gets the gdgw_id of this ListGdgwRouteTablesRequest.
+        r"""Gets the gdgw_id of this ListGdgwRouteTablesRequest.
 
         全域接入网关ID
 
@@ -190,7 +190,7 @@ class ListGdgwRouteTablesRequest:
 
     @gdgw_id.setter
     def gdgw_id(self, gdgw_id):
-        """Sets the gdgw_id of this ListGdgwRouteTablesRequest.
+        r"""Sets the gdgw_id of this ListGdgwRouteTablesRequest.
 
         全域接入网关ID
 
@@ -201,7 +201,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this ListGdgwRouteTablesRequest.
+        r"""Gets the nexthop of this ListGdgwRouteTablesRequest.
 
         下一条ID
 
@@ -212,7 +212,7 @@ class ListGdgwRouteTablesRequest:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this ListGdgwRouteTablesRequest.
+        r"""Sets the nexthop of this ListGdgwRouteTablesRequest.
 
         下一条ID
 
@@ -223,7 +223,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def destination(self):
-        """Gets the destination of this ListGdgwRouteTablesRequest.
+        r"""Gets the destination of this ListGdgwRouteTablesRequest.
 
         目的地址
 
@@ -234,7 +234,7 @@ class ListGdgwRouteTablesRequest:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ListGdgwRouteTablesRequest.
+        r"""Sets the destination of this ListGdgwRouteTablesRequest.
 
         目的地址
 
@@ -245,7 +245,7 @@ class ListGdgwRouteTablesRequest:
 
     @property
     def address_family(self):
-        """Gets the address_family of this ListGdgwRouteTablesRequest.
+        r"""Gets the address_family of this ListGdgwRouteTablesRequest.
 
         地址簇
 
@@ -256,7 +256,7 @@ class ListGdgwRouteTablesRequest:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this ListGdgwRouteTablesRequest.
+        r"""Sets the address_family of this ListGdgwRouteTablesRequest.
 
         地址簇
 

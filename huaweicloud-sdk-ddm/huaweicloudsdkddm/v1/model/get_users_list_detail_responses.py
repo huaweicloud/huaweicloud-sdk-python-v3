@@ -39,7 +39,7 @@ class GetUsersListDetailResponses:
     }
 
     def __init__(self, name=None, status=None, base_authority=None, password_last_changed=None, extend_authority=None, description=None, created=None, databases=None):
-        """GetUsersListDetailResponses
+        r"""GetUsersListDetailResponses
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class GetUsersListDetailResponses:
 
     @property
     def name(self):
-        """Gets the name of this GetUsersListDetailResponses.
+        r"""Gets the name of this GetUsersListDetailResponses.
 
         DDM实例帐号名称。
 
@@ -97,7 +97,7 @@ class GetUsersListDetailResponses:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetUsersListDetailResponses.
+        r"""Sets the name of this GetUsersListDetailResponses.
 
         DDM实例帐号名称。
 
@@ -108,7 +108,7 @@ class GetUsersListDetailResponses:
 
     @property
     def status(self):
-        """Gets the status of this GetUsersListDetailResponses.
+        r"""Gets the status of this GetUsersListDetailResponses.
 
         DDM实例帐号状态。
 
@@ -119,7 +119,7 @@ class GetUsersListDetailResponses:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetUsersListDetailResponses.
+        r"""Sets the status of this GetUsersListDetailResponses.
 
         DDM实例帐号状态。
 
@@ -130,7 +130,7 @@ class GetUsersListDetailResponses:
 
     @property
     def base_authority(self):
-        """Gets the base_authority of this GetUsersListDetailResponses.
+        r"""Gets the base_authority of this GetUsersListDetailResponses.
 
         DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
@@ -141,7 +141,7 @@ class GetUsersListDetailResponses:
 
     @base_authority.setter
     def base_authority(self, base_authority):
-        """Sets the base_authority of this GetUsersListDetailResponses.
+        r"""Sets the base_authority of this GetUsersListDetailResponses.
 
         DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
@@ -152,7 +152,7 @@ class GetUsersListDetailResponses:
 
     @property
     def password_last_changed(self):
-        """Gets the password_last_changed of this GetUsersListDetailResponses.
+        r"""Gets the password_last_changed of this GetUsersListDetailResponses.
 
         DDM实例账号的密码修改时间，UNIX时间戳格式。
 
@@ -163,7 +163,7 @@ class GetUsersListDetailResponses:
 
     @password_last_changed.setter
     def password_last_changed(self, password_last_changed):
-        """Sets the password_last_changed of this GetUsersListDetailResponses.
+        r"""Sets the password_last_changed of this GetUsersListDetailResponses.
 
         DDM实例账号的密码修改时间，UNIX时间戳格式。
 
@@ -174,7 +174,7 @@ class GetUsersListDetailResponses:
 
     @property
     def extend_authority(self):
-        """Gets the extend_authority of this GetUsersListDetailResponses.
+        r"""Gets the extend_authority of this GetUsersListDetailResponses.
 
         DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
 
@@ -185,7 +185,7 @@ class GetUsersListDetailResponses:
 
     @extend_authority.setter
     def extend_authority(self, extend_authority):
-        """Sets the extend_authority of this GetUsersListDetailResponses.
+        r"""Sets the extend_authority of this GetUsersListDetailResponses.
 
         DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
 
@@ -196,7 +196,7 @@ class GetUsersListDetailResponses:
 
     @property
     def description(self):
-        """Gets the description of this GetUsersListDetailResponses.
+        r"""Gets the description of this GetUsersListDetailResponses.
 
         DDM实例帐号的描述。
 
@@ -207,7 +207,7 @@ class GetUsersListDetailResponses:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GetUsersListDetailResponses.
+        r"""Sets the description of this GetUsersListDetailResponses.
 
         DDM实例帐号的描述。
 
@@ -218,7 +218,7 @@ class GetUsersListDetailResponses:
 
     @property
     def created(self):
-        """Gets the created of this GetUsersListDetailResponses.
+        r"""Gets the created of this GetUsersListDetailResponses.
 
         DDM实例帐号的创建时间，UNIX时间戳格式。
 
@@ -229,7 +229,7 @@ class GetUsersListDetailResponses:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetUsersListDetailResponses.
+        r"""Sets the created of this GetUsersListDetailResponses.
 
         DDM实例帐号的创建时间，UNIX时间戳格式。
 
@@ -240,7 +240,7 @@ class GetUsersListDetailResponses:
 
     @property
     def databases(self):
-        """Gets the databases of this GetUsersListDetailResponses.
+        r"""Gets the databases of this GetUsersListDetailResponses.
 
         关联的逻辑库的集合。
 
@@ -251,7 +251,7 @@ class GetUsersListDetailResponses:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this GetUsersListDetailResponses.
+        r"""Sets the databases of this GetUsersListDetailResponses.
 
         关联的逻辑库的集合。
 

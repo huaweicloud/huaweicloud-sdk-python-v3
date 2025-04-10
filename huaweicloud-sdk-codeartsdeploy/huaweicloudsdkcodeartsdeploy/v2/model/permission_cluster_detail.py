@@ -35,7 +35,7 @@ class PermissionClusterDetail:
     }
 
     def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_manage=None, can_copy=None):
-        """PermissionClusterDetail
+        r"""PermissionClusterDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PermissionClusterDetail:
 
     @property
     def can_view(self):
-        """Gets the can_view of this PermissionClusterDetail.
+        r"""Gets the can_view of this PermissionClusterDetail.
 
         是否有查看权限
 
@@ -89,7 +89,7 @@ class PermissionClusterDetail:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this PermissionClusterDetail.
+        r"""Sets the can_view of this PermissionClusterDetail.
 
         是否有查看权限
 
@@ -100,7 +100,7 @@ class PermissionClusterDetail:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this PermissionClusterDetail.
+        r"""Gets the can_edit of this PermissionClusterDetail.
 
         是否有编辑权限
 
@@ -111,7 +111,7 @@ class PermissionClusterDetail:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this PermissionClusterDetail.
+        r"""Sets the can_edit of this PermissionClusterDetail.
 
         是否有编辑权限
 
@@ -122,7 +122,7 @@ class PermissionClusterDetail:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this PermissionClusterDetail.
+        r"""Gets the can_delete of this PermissionClusterDetail.
 
         是否有删除权限
 
@@ -133,7 +133,7 @@ class PermissionClusterDetail:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this PermissionClusterDetail.
+        r"""Sets the can_delete of this PermissionClusterDetail.
 
         是否有删除权限
 
@@ -144,7 +144,7 @@ class PermissionClusterDetail:
 
     @property
     def can_add_host(self):
-        """Gets the can_add_host of this PermissionClusterDetail.
+        r"""Gets the can_add_host of this PermissionClusterDetail.
 
         是否有添加主机权限
 
@@ -155,7 +155,7 @@ class PermissionClusterDetail:
 
     @can_add_host.setter
     def can_add_host(self, can_add_host):
-        """Sets the can_add_host of this PermissionClusterDetail.
+        r"""Sets the can_add_host of this PermissionClusterDetail.
 
         是否有添加主机权限
 
@@ -166,7 +166,7 @@ class PermissionClusterDetail:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this PermissionClusterDetail.
+        r"""Gets the can_manage of this PermissionClusterDetail.
 
         是否有编辑主机集群权限矩阵的权限
 
@@ -177,7 +177,7 @@ class PermissionClusterDetail:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this PermissionClusterDetail.
+        r"""Sets the can_manage of this PermissionClusterDetail.
 
         是否有编辑主机集群权限矩阵的权限
 
@@ -188,7 +188,7 @@ class PermissionClusterDetail:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this PermissionClusterDetail.
+        r"""Gets the can_copy of this PermissionClusterDetail.
 
         是否有复制主机权限
 
@@ -199,7 +199,7 @@ class PermissionClusterDetail:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this PermissionClusterDetail.
+        r"""Sets the can_copy of this PermissionClusterDetail.
 
         是否有复制主机权限
 

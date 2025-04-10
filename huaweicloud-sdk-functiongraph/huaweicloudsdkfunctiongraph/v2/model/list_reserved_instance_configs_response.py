@@ -30,7 +30,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
     }
 
     def __init__(self, reserved_instances=None, page_info=None, count=None):
-        """ListReservedInstanceConfigsResponse
+        r"""ListReservedInstanceConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
 
     @property
     def reserved_instances(self):
-        """Gets the reserved_instances of this ListReservedInstanceConfigsResponse.
+        r"""Gets the reserved_instances of this ListReservedInstanceConfigsResponse.
 
         函数预留实例列表
 
@@ -69,7 +69,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
 
     @reserved_instances.setter
     def reserved_instances(self, reserved_instances):
-        """Sets the reserved_instances of this ListReservedInstanceConfigsResponse.
+        r"""Sets the reserved_instances of this ListReservedInstanceConfigsResponse.
 
         函数预留实例列表
 
@@ -80,7 +80,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListReservedInstanceConfigsResponse.
+        r"""Gets the page_info of this ListReservedInstanceConfigsResponse.
 
         :return: The page_info of this ListReservedInstanceConfigsResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
@@ -89,7 +89,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListReservedInstanceConfigsResponse.
+        r"""Sets the page_info of this ListReservedInstanceConfigsResponse.
 
         :param page_info: The page_info of this ListReservedInstanceConfigsResponse.
         :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
@@ -98,7 +98,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListReservedInstanceConfigsResponse.
+        r"""Gets the count of this ListReservedInstanceConfigsResponse.
 
         函数个数
 
@@ -109,7 +109,7 @@ class ListReservedInstanceConfigsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListReservedInstanceConfigsResponse.
+        r"""Sets the count of this ListReservedInstanceConfigsResponse.
 
         函数个数
 

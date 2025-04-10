@@ -41,7 +41,7 @@ class ListAiOpsRequestBodyAiopsList:
     }
 
     def __init__(self, id=None, name=None, desc=None, status=None, summary=None, create_time=None, smn_status=None, smn_fail_reason=None, task_risks=None):
-        """ListAiOpsRequestBodyAiopsList
+        r"""ListAiOpsRequestBodyAiopsList
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def id(self):
-        """Gets the id of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the id of this ListAiOpsRequestBodyAiopsList.
 
         检测任务id。
 
@@ -110,7 +110,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the id of this ListAiOpsRequestBodyAiopsList.
 
         检测任务id。
 
@@ -121,7 +121,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def name(self):
-        """Gets the name of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the name of this ListAiOpsRequestBodyAiopsList.
 
         检测任务名称。
 
@@ -132,7 +132,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the name of this ListAiOpsRequestBodyAiopsList.
 
         检测任务名称。
 
@@ -143,7 +143,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def desc(self):
-        """Gets the desc of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the desc of this ListAiOpsRequestBodyAiopsList.
 
         检测任务描述。
 
@@ -154,7 +154,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the desc of this ListAiOpsRequestBodyAiopsList.
 
         检测任务描述。
 
@@ -165,7 +165,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def status(self):
-        """Gets the status of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the status of this ListAiOpsRequestBodyAiopsList.
 
         任务执行状态。 - 150：未开启。 - 200：已开启。 - 300：已发送。
 
@@ -176,7 +176,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the status of this ListAiOpsRequestBodyAiopsList.
 
         任务执行状态。 - 150：未开启。 - 200：已开启。 - 300：已发送。
 
@@ -187,7 +187,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def summary(self):
-        """Gets the summary of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the summary of this ListAiOpsRequestBodyAiopsList.
 
         :return: The summary of this ListAiOpsRequestBodyAiopsList.
         :rtype: :class:`huaweicloudsdkcss.v1.ListAiOpsRequestBodySummary`
@@ -196,7 +196,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the summary of this ListAiOpsRequestBodyAiopsList.
 
         :param summary: The summary of this ListAiOpsRequestBodyAiopsList.
         :type summary: :class:`huaweicloudsdkcss.v1.ListAiOpsRequestBodySummary`
@@ -205,7 +205,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the create_time of this ListAiOpsRequestBodyAiopsList.
 
         检测任务创建时间戳。
 
@@ -216,7 +216,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the create_time of this ListAiOpsRequestBodyAiopsList.
 
         检测任务创建时间戳。
 
@@ -227,7 +227,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def smn_status(self):
-        """Gets the smn_status of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the smn_status of this ListAiOpsRequestBodyAiopsList.
 
         检测任务SMN告警任务发送状态。 - not_open：未开启。 - not_trigger：未触发。 - sent：已发送。 - send_fail： 发送失败。
 
@@ -238,7 +238,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @smn_status.setter
     def smn_status(self, smn_status):
-        """Sets the smn_status of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the smn_status of this ListAiOpsRequestBodyAiopsList.
 
         检测任务SMN告警任务发送状态。 - not_open：未开启。 - not_trigger：未触发。 - sent：已发送。 - send_fail： 发送失败。
 
@@ -249,7 +249,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def smn_fail_reason(self):
-        """Gets the smn_fail_reason of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the smn_fail_reason of this ListAiOpsRequestBodyAiopsList.
 
         发送失败原因。
 
@@ -260,7 +260,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @smn_fail_reason.setter
     def smn_fail_reason(self, smn_fail_reason):
-        """Sets the smn_fail_reason of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the smn_fail_reason of this ListAiOpsRequestBodyAiopsList.
 
         发送失败原因。
 
@@ -271,7 +271,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @property
     def task_risks(self):
-        """Gets the task_risks of this ListAiOpsRequestBodyAiopsList.
+        r"""Gets the task_risks of this ListAiOpsRequestBodyAiopsList.
 
         风险项详情。
 
@@ -282,7 +282,7 @@ class ListAiOpsRequestBodyAiopsList:
 
     @task_risks.setter
     def task_risks(self, task_risks):
-        """Sets the task_risks of this ListAiOpsRequestBodyAiopsList.
+        r"""Sets the task_risks of this ListAiOpsRequestBodyAiopsList.
 
         风险项详情。
 

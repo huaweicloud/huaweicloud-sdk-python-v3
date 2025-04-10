@@ -43,7 +43,7 @@ class ListenerInsertHeaders:
     }
 
     def __init__(self, x_forwarded_elb_ip=None, x_forwarded_port=None, x_forwarded_for_port=None, x_forwarded_host=None, x_forwarded_proto=None, x_real_ip=None, x_forwarded_elb_id=None, x_forwarded_tls_certificate_id=None, x_forwarded_tls_protocol=None, x_forwarded_tls_cipher=None):
-        """ListenerInsertHeaders
+        r"""ListenerInsertHeaders
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_elb_ip(self):
-        """Gets the x_forwarded_elb_ip of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_elb_ip of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-ELB-IP设为true可以将ELB实例的eip地址从报文的http头中带到后端服务器。
 
@@ -117,7 +117,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_elb_ip.setter
     def x_forwarded_elb_ip(self, x_forwarded_elb_ip):
-        """Sets the x_forwarded_elb_ip of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_elb_ip of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-ELB-IP设为true可以将ELB实例的eip地址从报文的http头中带到后端服务器。
 
@@ -128,7 +128,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_port(self):
-        """Gets the x_forwarded_port of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_port of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-Port设为true可以将ELB实例的监听端口从报文的http头中带到后端服务器。
 
@@ -139,7 +139,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_port.setter
     def x_forwarded_port(self, x_forwarded_port):
-        """Sets the x_forwarded_port of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_port of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-Port设为true可以将ELB实例的监听端口从报文的http头中带到后端服务器。
 
@@ -150,7 +150,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_for_port(self):
-        """Gets the x_forwarded_for_port of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_for_port of this ListenerInsertHeaders.
 
         X-Forwarded-For-Port设为true可以将客户端的源端口从报文的http头中带到后端服务器。
 
@@ -161,7 +161,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_for_port.setter
     def x_forwarded_for_port(self, x_forwarded_for_port):
-        """Sets the x_forwarded_for_port of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_for_port of this ListenerInsertHeaders.
 
         X-Forwarded-For-Port设为true可以将客户端的源端口从报文的http头中带到后端服务器。
 
@@ -172,7 +172,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_host(self):
-        """Gets the x_forwarded_host of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_host of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-Host设为true可以将客户请求头的X-Forwarded-Host设置为请求头的Host带到后端服务器。
 
@@ -183,7 +183,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_host.setter
     def x_forwarded_host(self, x_forwarded_host):
-        """Sets the x_forwarded_host of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_host of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-Host设为true可以将客户请求头的X-Forwarded-Host设置为请求头的Host带到后端服务器。
 
@@ -194,7 +194,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_proto(self):
-        """Gets the x_forwarded_proto of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_proto of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-Proto设为true可以将负载均衡器实例的监听协议通过报文的http头带到后端服务器。
 
@@ -205,7 +205,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_proto.setter
     def x_forwarded_proto(self, x_forwarded_proto):
-        """Sets the x_forwarded_proto of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_proto of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-Proto设为true可以将负载均衡器实例的监听协议通过报文的http头带到后端服务器。
 
@@ -216,7 +216,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_real_ip(self):
-        """Gets the x_real_ip of this ListenerInsertHeaders.
+        r"""Gets the x_real_ip of this ListenerInsertHeaders.
 
         参数解释：X-Real-IP设为true可以将客户端的IP通过报文的http头带到后端服务器。
 
@@ -227,7 +227,7 @@ class ListenerInsertHeaders:
 
     @x_real_ip.setter
     def x_real_ip(self, x_real_ip):
-        """Sets the x_real_ip of this ListenerInsertHeaders.
+        r"""Sets the x_real_ip of this ListenerInsertHeaders.
 
         参数解释：X-Real-IP设为true可以将客户端的IP通过报文的http头带到后端服务器。
 
@@ -238,7 +238,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_elb_id(self):
-        """Gets the x_forwarded_elb_id of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_elb_id of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-ELB-ID设为true可以将负载均衡器实例的ID通过报文的http头带到后端服务器。
 
@@ -249,7 +249,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_elb_id.setter
     def x_forwarded_elb_id(self, x_forwarded_elb_id):
-        """Sets the x_forwarded_elb_id of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_elb_id of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-ELB-ID设为true可以将负载均衡器实例的ID通过报文的http头带到后端服务器。
 
@@ -260,7 +260,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_tls_certificate_id(self):
-        """Gets the x_forwarded_tls_certificate_id of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_tls_certificate_id of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-TLS-Certificate-ID设为true可以将负载均衡器实例的证书ID通过报文的http头带到后端服务器。
 
@@ -271,7 +271,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_tls_certificate_id.setter
     def x_forwarded_tls_certificate_id(self, x_forwarded_tls_certificate_id):
-        """Sets the x_forwarded_tls_certificate_id of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_tls_certificate_id of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-TLS-Certificate-ID设为true可以将负载均衡器实例的证书ID通过报文的http头带到后端服务器。
 
@@ -282,7 +282,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_tls_protocol(self):
-        """Gets the x_forwarded_tls_protocol of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_tls_protocol of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-TLS-Protocol设为true可以将负载均衡器实例的算法协议通过报文的http头带到后端服务器。
 
@@ -293,7 +293,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_tls_protocol.setter
     def x_forwarded_tls_protocol(self, x_forwarded_tls_protocol):
-        """Sets the x_forwarded_tls_protocol of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_tls_protocol of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-TLS-Protocol设为true可以将负载均衡器实例的算法协议通过报文的http头带到后端服务器。
 
@@ -304,7 +304,7 @@ class ListenerInsertHeaders:
 
     @property
     def x_forwarded_tls_cipher(self):
-        """Gets the x_forwarded_tls_cipher of this ListenerInsertHeaders.
+        r"""Gets the x_forwarded_tls_cipher of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-TLS-Cipher设为true可以将负载均衡器实例的算法套件通过报文的http头带到后端服务器。
 
@@ -315,7 +315,7 @@ class ListenerInsertHeaders:
 
     @x_forwarded_tls_cipher.setter
     def x_forwarded_tls_cipher(self, x_forwarded_tls_cipher):
-        """Sets the x_forwarded_tls_cipher of this ListenerInsertHeaders.
+        r"""Sets the x_forwarded_tls_cipher of this ListenerInsertHeaders.
 
         参数解释：X-Forwarded-TLS-Cipher设为true可以将负载均衡器实例的算法套件通过报文的http头带到后端服务器。
 

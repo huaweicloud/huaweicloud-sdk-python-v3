@@ -25,7 +25,7 @@ class EnterpriseRouterRegionId:
     }
 
     def __init__(self, enterprise_router_region_id=None):
-        """EnterpriseRouterRegionId
+        r"""EnterpriseRouterRegionId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnterpriseRouterRegionId:
 
     @property
     def enterprise_router_region_id(self):
-        """Gets the enterprise_router_region_id of this EnterpriseRouterRegionId.
+        r"""Gets the enterprise_router_region_id of this EnterpriseRouterRegionId.
 
         ER路由器的regionID。
 
@@ -53,7 +53,7 @@ class EnterpriseRouterRegionId:
 
     @enterprise_router_region_id.setter
     def enterprise_router_region_id(self, enterprise_router_region_id):
-        """Sets the enterprise_router_region_id of this EnterpriseRouterRegionId.
+        r"""Sets the enterprise_router_region_id of this EnterpriseRouterRegionId.
 
         ER路由器的regionID。
 

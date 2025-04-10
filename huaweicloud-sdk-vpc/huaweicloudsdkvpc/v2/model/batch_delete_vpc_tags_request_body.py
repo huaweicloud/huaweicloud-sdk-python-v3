@@ -27,7 +27,7 @@ class BatchDeleteVpcTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteVpcTagsRequestBody
+        r"""BatchDeleteVpcTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteVpcTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteVpcTagsRequestBody.
+        r"""Gets the action of this BatchDeleteVpcTagsRequestBody.
 
         操作标识
 
@@ -59,7 +59,7 @@ class BatchDeleteVpcTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteVpcTagsRequestBody.
+        r"""Sets the action of this BatchDeleteVpcTagsRequestBody.
 
         操作标识
 
@@ -70,7 +70,7 @@ class BatchDeleteVpcTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteVpcTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteVpcTagsRequestBody.
 
         标签列表
 
@@ -81,7 +81,7 @@ class BatchDeleteVpcTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteVpcTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteVpcTagsRequestBody.
 
         标签列表
 

@@ -27,7 +27,7 @@ class ListTenantGeipSupportInstancesRequest:
     }
 
     def __init__(self, access_site=None, fields=None):
-        """ListTenantGeipSupportInstancesRequest
+        r"""ListTenantGeipSupportInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTenantGeipSupportInstancesRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListTenantGeipSupportInstancesRequest.
+        r"""Gets the access_site of this ListTenantGeipSupportInstancesRequest.
 
         :return: The access_site of this ListTenantGeipSupportInstancesRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ListTenantGeipSupportInstancesRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListTenantGeipSupportInstancesRequest.
+        r"""Sets the access_site of this ListTenantGeipSupportInstancesRequest.
 
         :param access_site: The access_site of this ListTenantGeipSupportInstancesRequest.
         :type access_site: str
@@ -67,7 +67,7 @@ class ListTenantGeipSupportInstancesRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListTenantGeipSupportInstancesRequest.
+        r"""Gets the fields of this ListTenantGeipSupportInstancesRequest.
 
         :return: The fields of this ListTenantGeipSupportInstancesRequest.
         :rtype: list[str]
@@ -76,7 +76,7 @@ class ListTenantGeipSupportInstancesRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListTenantGeipSupportInstancesRequest.
+        r"""Sets the fields of this ListTenantGeipSupportInstancesRequest.
 
         :param fields: The fields of this ListTenantGeipSupportInstancesRequest.
         :type fields: list[str]

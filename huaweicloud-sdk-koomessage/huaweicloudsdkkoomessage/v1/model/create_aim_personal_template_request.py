@@ -25,7 +25,7 @@ class CreateAimPersonalTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAimPersonalTemplateRequest
+        r"""CreateAimPersonalTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAimPersonalTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAimPersonalTemplateRequest.
+        r"""Gets the body of this CreateAimPersonalTemplateRequest.
 
         :return: The body of this CreateAimPersonalTemplateRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimPersonalTemplateRequestBody`
@@ -52,7 +52,7 @@ class CreateAimPersonalTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAimPersonalTemplateRequest.
+        r"""Sets the body of this CreateAimPersonalTemplateRequest.
 
         :param body: The body of this CreateAimPersonalTemplateRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CreateAimPersonalTemplateRequestBody`

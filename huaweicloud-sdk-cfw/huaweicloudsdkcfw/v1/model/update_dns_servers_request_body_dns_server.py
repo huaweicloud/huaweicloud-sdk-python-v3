@@ -29,7 +29,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     }
 
     def __init__(self, server_ip=None, is_customized=None, is_applied=None):
-        """UpdateDnsServersRequestBodyDnsServer
+        r"""UpdateDnsServersRequestBodyDnsServer
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
     @property
     def server_ip(self):
-        """Gets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
+        r"""Gets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
 
         DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
 
@@ -65,7 +65,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
     @server_ip.setter
     def server_ip(self, server_ip):
-        """Sets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
+        r"""Sets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
 
         DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
 
@@ -76,7 +76,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
     @property
     def is_customized(self):
-        """Gets the is_customized of this UpdateDnsServersRequestBodyDnsServer.
+        r"""Gets the is_customized of this UpdateDnsServersRequestBodyDnsServer.
 
         是否是用户自定义的dns服务器，0否 1是
 
@@ -87,7 +87,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
     @is_customized.setter
     def is_customized(self, is_customized):
-        """Sets the is_customized of this UpdateDnsServersRequestBodyDnsServer.
+        r"""Sets the is_customized of this UpdateDnsServersRequestBodyDnsServer.
 
         是否是用户自定义的dns服务器，0否 1是
 
@@ -98,7 +98,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
     @property
     def is_applied(self):
-        """Gets the is_applied of this UpdateDnsServersRequestBodyDnsServer.
+        r"""Gets the is_applied of this UpdateDnsServersRequestBodyDnsServer.
 
         是否应用，0否 1是
 
@@ -109,7 +109,7 @@ class UpdateDnsServersRequestBodyDnsServer:
 
     @is_applied.setter
     def is_applied(self, is_applied):
-        """Sets the is_applied of this UpdateDnsServersRequestBodyDnsServer.
+        r"""Sets the is_applied of this UpdateDnsServersRequestBodyDnsServer.
 
         是否应用，0否 1是
 

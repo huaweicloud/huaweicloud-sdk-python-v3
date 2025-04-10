@@ -30,7 +30,7 @@ class ListVmsSendTasksResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """ListVmsSendTasksResponse
+        r"""ListVmsSendTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVmsSendTasksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListVmsSendTasksResponse.
+        r"""Gets the status of this ListVmsSendTasksResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class ListVmsSendTasksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVmsSendTasksResponse.
+        r"""Sets the status of this ListVmsSendTasksResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class ListVmsSendTasksResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListVmsSendTasksResponse.
+        r"""Gets the message of this ListVmsSendTasksResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class ListVmsSendTasksResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListVmsSendTasksResponse.
+        r"""Sets the message of this ListVmsSendTasksResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class ListVmsSendTasksResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListVmsSendTasksResponse.
+        r"""Gets the data of this ListVmsSendTasksResponse.
 
         :return: The data of this ListVmsSendTasksResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListVmsSendTasksResponseMode`
@@ -111,7 +111,7 @@ class ListVmsSendTasksResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListVmsSendTasksResponse.
+        r"""Sets the data of this ListVmsSendTasksResponse.
 
         :param data: The data of this ListVmsSendTasksResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.ListVmsSendTasksResponseMode`

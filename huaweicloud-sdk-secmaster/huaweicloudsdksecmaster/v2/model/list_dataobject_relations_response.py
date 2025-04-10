@@ -40,7 +40,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
-        """ListDataobjectRelationsResponse
+        r"""ListDataobjectRelationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListDataobjectRelationsResponse.
+        r"""Gets the code of this ListDataobjectRelationsResponse.
 
         错误码
 
@@ -104,7 +104,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListDataobjectRelationsResponse.
+        r"""Sets the code of this ListDataobjectRelationsResponse.
 
         错误码
 
@@ -115,7 +115,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListDataobjectRelationsResponse.
+        r"""Gets the message of this ListDataobjectRelationsResponse.
 
         错误信息
 
@@ -126,7 +126,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListDataobjectRelationsResponse.
+        r"""Sets the message of this ListDataobjectRelationsResponse.
 
         错误信息
 
@@ -137,7 +137,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDataobjectRelationsResponse.
+        r"""Gets the total of this ListDataobjectRelationsResponse.
 
         告警总数
 
@@ -148,7 +148,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDataobjectRelationsResponse.
+        r"""Sets the total of this ListDataobjectRelationsResponse.
 
         告警总数
 
@@ -159,7 +159,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataobjectRelationsResponse.
+        r"""Gets the limit of this ListDataobjectRelationsResponse.
 
         分页大小
 
@@ -170,7 +170,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataobjectRelationsResponse.
+        r"""Sets the limit of this ListDataobjectRelationsResponse.
 
         分页大小
 
@@ -181,7 +181,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataobjectRelationsResponse.
+        r"""Gets the offset of this ListDataobjectRelationsResponse.
 
         偏移量
 
@@ -192,7 +192,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataobjectRelationsResponse.
+        r"""Sets the offset of this ListDataobjectRelationsResponse.
 
         偏移量
 
@@ -203,7 +203,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ListDataobjectRelationsResponse.
+        r"""Gets the success of this ListDataobjectRelationsResponse.
 
         是否成功
 
@@ -214,7 +214,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ListDataobjectRelationsResponse.
+        r"""Sets the success of this ListDataobjectRelationsResponse.
 
         是否成功
 
@@ -225,7 +225,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDataobjectRelationsResponse.
+        r"""Gets the data of this ListDataobjectRelationsResponse.
 
         告警列表
 
@@ -236,7 +236,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDataobjectRelationsResponse.
+        r"""Sets the data of this ListDataobjectRelationsResponse.
 
         告警列表
 
@@ -247,7 +247,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDataobjectRelationsResponse.
+        r"""Gets the x_request_id of this ListDataobjectRelationsResponse.
 
         :return: The x_request_id of this ListDataobjectRelationsResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class ListDataobjectRelationsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDataobjectRelationsResponse.
+        r"""Sets the x_request_id of this ListDataobjectRelationsResponse.
 
         :param x_request_id: The x_request_id of this ListDataobjectRelationsResponse.
         :type x_request_id: str

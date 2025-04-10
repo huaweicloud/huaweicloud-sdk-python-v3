@@ -43,7 +43,7 @@ class BandwidthPkgResp:
     }
 
     def __init__(self, resource_id=None, resource_name=None, processed_time=None, bandwidth_id=None, pkg_size=None, tenant_id=None, billing_info=None, start_time=None, end_time=None, status=None):
-        """BandwidthPkgResp
+        r"""BandwidthPkgResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class BandwidthPkgResp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BandwidthPkgResp.
+        r"""Gets the resource_id of this BandwidthPkgResp.
 
         - 功能说明：加油包ID - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）
 
@@ -107,7 +107,7 @@ class BandwidthPkgResp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BandwidthPkgResp.
+        r"""Sets the resource_id of this BandwidthPkgResp.
 
         - 功能说明：加油包ID - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）
 
@@ -118,7 +118,7 @@ class BandwidthPkgResp:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this BandwidthPkgResp.
+        r"""Gets the resource_name of this BandwidthPkgResp.
 
         - 功能说明：加油包名称
 
@@ -129,7 +129,7 @@ class BandwidthPkgResp:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this BandwidthPkgResp.
+        r"""Sets the resource_name of this BandwidthPkgResp.
 
         - 功能说明：加油包名称
 
@@ -140,7 +140,7 @@ class BandwidthPkgResp:
 
     @property
     def processed_time(self):
-        """Gets the processed_time of this BandwidthPkgResp.
+        r"""Gets the processed_time of this BandwidthPkgResp.
 
         - 功能说明：资源创建时间，UTC时间格式：2016-03-28T00:00:00Z
 
@@ -151,7 +151,7 @@ class BandwidthPkgResp:
 
     @processed_time.setter
     def processed_time(self, processed_time):
-        """Sets the processed_time of this BandwidthPkgResp.
+        r"""Sets the processed_time of this BandwidthPkgResp.
 
         - 功能说明：资源创建时间，UTC时间格式：2016-03-28T00:00:00Z
 
@@ -162,7 +162,7 @@ class BandwidthPkgResp:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this BandwidthPkgResp.
+        r"""Gets the bandwidth_id of this BandwidthPkgResp.
 
         - 功能说明：加油包绑定的原带宽ID
 
@@ -173,7 +173,7 @@ class BandwidthPkgResp:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this BandwidthPkgResp.
+        r"""Sets the bandwidth_id of this BandwidthPkgResp.
 
         - 功能说明：加油包绑定的原带宽ID
 
@@ -184,7 +184,7 @@ class BandwidthPkgResp:
 
     @property
     def pkg_size(self):
-        """Gets the pkg_size of this BandwidthPkgResp.
+        r"""Gets the pkg_size of this BandwidthPkgResp.
 
         - 功能说明：加油包的大小，即在原始带宽之上提升的带宽大小 - 取值范围：>1M，pkgSize+原始带宽大小 < 云服务带宽接口限制的带宽上限
 
@@ -195,7 +195,7 @@ class BandwidthPkgResp:
 
     @pkg_size.setter
     def pkg_size(self, pkg_size):
-        """Sets the pkg_size of this BandwidthPkgResp.
+        r"""Sets the pkg_size of this BandwidthPkgResp.
 
         - 功能说明：加油包的大小，即在原始带宽之上提升的带宽大小 - 取值范围：>1M，pkgSize+原始带宽大小 < 云服务带宽接口限制的带宽上限
 
@@ -206,7 +206,7 @@ class BandwidthPkgResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this BandwidthPkgResp.
+        r"""Gets the tenant_id of this BandwidthPkgResp.
 
         - 功能说明：租户id
 
@@ -217,7 +217,7 @@ class BandwidthPkgResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this BandwidthPkgResp.
+        r"""Sets the tenant_id of this BandwidthPkgResp.
 
         - 功能说明：租户id
 
@@ -228,7 +228,7 @@ class BandwidthPkgResp:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this BandwidthPkgResp.
+        r"""Gets the billing_info of this BandwidthPkgResp.
 
         - 功能说明：加油包订单相关信息格式：非空时值为''orderId:productId''
 
@@ -239,7 +239,7 @@ class BandwidthPkgResp:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this BandwidthPkgResp.
+        r"""Sets the billing_info of this BandwidthPkgResp.
 
         - 功能说明：加油包订单相关信息格式：非空时值为''orderId:productId''
 
@@ -250,7 +250,7 @@ class BandwidthPkgResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BandwidthPkgResp.
+        r"""Gets the start_time of this BandwidthPkgResp.
 
         - 功能说明：加油包起始生效时间，UTC时间格式：2016-03-28T00:00:00Z - 取值范围：startTime >= 服务处理请求的时间
 
@@ -261,7 +261,7 @@ class BandwidthPkgResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BandwidthPkgResp.
+        r"""Sets the start_time of this BandwidthPkgResp.
 
         - 功能说明：加油包起始生效时间，UTC时间格式：2016-03-28T00:00:00Z - 取值范围：startTime >= 服务处理请求的时间
 
@@ -272,7 +272,7 @@ class BandwidthPkgResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BandwidthPkgResp.
+        r"""Gets the end_time of this BandwidthPkgResp.
 
         - 功能说明：加油包结束时间UTC时间格式：2016-03-28T00:00:00Z - 取值范围：startTime < endTime
 
@@ -283,7 +283,7 @@ class BandwidthPkgResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BandwidthPkgResp.
+        r"""Sets the end_time of this BandwidthPkgResp.
 
         - 功能说明：加油包结束时间UTC时间格式：2016-03-28T00:00:00Z - 取值范围：startTime < endTime
 
@@ -294,7 +294,7 @@ class BandwidthPkgResp:
 
     @property
     def status(self):
-        """Gets the status of this BandwidthPkgResp.
+        r"""Gets the status of this BandwidthPkgResp.
 
         - 功能说明：加油包资源状态，仅管理员权限可以变更状态 - 取值范围：''pending'', ''active'', ''completed'', ''error''
 
@@ -305,7 +305,7 @@ class BandwidthPkgResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BandwidthPkgResp.
+        r"""Sets the status of this BandwidthPkgResp.
 
         - 功能说明：加油包资源状态，仅管理员权限可以变更状态 - 取值范围：''pending'', ''active'', ''completed'', ''error''
 

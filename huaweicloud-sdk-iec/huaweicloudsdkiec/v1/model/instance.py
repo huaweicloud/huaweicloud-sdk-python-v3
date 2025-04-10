@@ -101,7 +101,7 @@ class Instance:
     }
 
     def __init__(self, id=None, name=None, status=None, updated=None, host_id=None, addresses=None, created=None, tags=None, locked=None, description=None, tenant_id=None, sys_tags=None, flavor=None, metadata=None, security_groups=None, progress=None, os_ext_st_spower_state=None, os_ext_st_svm_state=None, os_ext_st_stask_state=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_ruser_data=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_extended_volumesvolumes_attached=None, geolocation=None, edgecloud_id=None, edgecloud_name=None, domain_id=None, key_name=None, os_ext_srv_att_rinstance_name=None):
-        """Instance
+        r"""Instance
 
         The model defined in huaweicloud sdk
 
@@ -309,7 +309,7 @@ class Instance:
 
     @property
     def id(self):
-        """Gets the id of this Instance.
+        r"""Gets the id of this Instance.
 
         边缘实例ID。
 
@@ -320,7 +320,7 @@ class Instance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Instance.
+        r"""Sets the id of this Instance.
 
         边缘实例ID。
 
@@ -331,7 +331,7 @@ class Instance:
 
     @property
     def name(self):
-        """Gets the name of this Instance.
+        r"""Gets the name of this Instance.
 
         边缘实例名称。
 
@@ -342,7 +342,7 @@ class Instance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Instance.
+        r"""Sets the name of this Instance.
 
         边缘实例名称。
 
@@ -353,7 +353,7 @@ class Instance:
 
     @property
     def status(self):
-        """Gets the status of this Instance.
+        r"""Gets the status of this Instance.
 
         边缘实例状态。 取值范围： ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
@@ -364,7 +364,7 @@ class Instance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Instance.
+        r"""Sets the status of this Instance.
 
         边缘实例状态。 取值范围： ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
@@ -375,7 +375,7 @@ class Instance:
 
     @property
     def updated(self):
-        """Gets the updated of this Instance.
+        r"""Gets the updated of this Instance.
 
         边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
@@ -386,7 +386,7 @@ class Instance:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this Instance.
+        r"""Sets the updated of this Instance.
 
         边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
@@ -397,7 +397,7 @@ class Instance:
 
     @property
     def host_id(self):
-        """Gets the host_id of this Instance.
+        r"""Gets the host_id of this Instance.
 
         边缘实例所在主机的主机ID。
 
@@ -408,7 +408,7 @@ class Instance:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this Instance.
+        r"""Sets the host_id of this Instance.
 
         边缘实例所在主机的主机ID。
 
@@ -419,7 +419,7 @@ class Instance:
 
     @property
     def addresses(self):
-        """Gets the addresses of this Instance.
+        r"""Gets the addresses of this Instance.
 
         边缘实例对应的网络地址信息，详情请参见表addresses字段数据结构说明。
 
@@ -430,7 +430,7 @@ class Instance:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this Instance.
+        r"""Sets the addresses of this Instance.
 
         边缘实例对应的网络地址信息，详情请参见表addresses字段数据结构说明。
 
@@ -441,7 +441,7 @@ class Instance:
 
     @property
     def created(self):
-        """Gets the created of this Instance.
+        r"""Gets the created of this Instance.
 
         边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
@@ -452,7 +452,7 @@ class Instance:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this Instance.
+        r"""Sets the created of this Instance.
 
         边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
@@ -463,7 +463,7 @@ class Instance:
 
     @property
     def tags(self):
-        """Gets the tags of this Instance.
+        r"""Gets the tags of this Instance.
 
         边缘实例标签。 主要用来存储边缘业务ID。
 
@@ -474,7 +474,7 @@ class Instance:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Instance.
+        r"""Sets the tags of this Instance.
 
         边缘实例标签。 主要用来存储边缘业务ID。
 
@@ -485,7 +485,7 @@ class Instance:
 
     @property
     def locked(self):
-        """Gets the locked of this Instance.
+        r"""Gets the locked of this Instance.
 
         边缘实例是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -496,7 +496,7 @@ class Instance:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this Instance.
+        r"""Sets the locked of this Instance.
 
         边缘实例是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -507,7 +507,7 @@ class Instance:
 
     @property
     def description(self):
-        """Gets the description of this Instance.
+        r"""Gets the description of this Instance.
 
         边缘实例的描述信息。
 
@@ -518,7 +518,7 @@ class Instance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Instance.
+        r"""Sets the description of this Instance.
 
         边缘实例的描述信息。
 
@@ -529,7 +529,7 @@ class Instance:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Instance.
+        r"""Gets the tenant_id of this Instance.
 
         边缘实例所属租户ID，即项目ID，和project_id表示相同的概念，格式为UUID。
 
@@ -540,7 +540,7 @@ class Instance:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Instance.
+        r"""Sets the tenant_id of this Instance.
 
         边缘实例所属租户ID，即项目ID，和project_id表示相同的概念，格式为UUID。
 
@@ -551,7 +551,7 @@ class Instance:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this Instance.
+        r"""Gets the sys_tags of this Instance.
 
         边缘实例系统标签。
 
@@ -562,7 +562,7 @@ class Instance:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this Instance.
+        r"""Sets the sys_tags of this Instance.
 
         边缘实例系统标签。
 
@@ -573,7 +573,7 @@ class Instance:
 
     @property
     def flavor(self):
-        """Gets the flavor of this Instance.
+        r"""Gets the flavor of this Instance.
 
         :return: The flavor of this Instance.
         :rtype: :class:`huaweicloudsdkiec.v1.FlavorInstance`
@@ -582,7 +582,7 @@ class Instance:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this Instance.
+        r"""Sets the flavor of this Instance.
 
         :param flavor: The flavor of this Instance.
         :type flavor: :class:`huaweicloudsdkiec.v1.FlavorInstance`
@@ -591,7 +591,7 @@ class Instance:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Instance.
+        r"""Gets the metadata of this Instance.
 
         边缘实例元数据。
 
@@ -602,7 +602,7 @@ class Instance:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Instance.
+        r"""Sets the metadata of this Instance.
 
         边缘实例元数据。
 
@@ -613,7 +613,7 @@ class Instance:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this Instance.
+        r"""Gets the security_groups of this Instance.
 
         边缘实例所属安全组列表。
 
@@ -624,7 +624,7 @@ class Instance:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this Instance.
+        r"""Sets the security_groups of this Instance.
 
         边缘实例所属安全组列表。
 
@@ -635,7 +635,7 @@ class Instance:
 
     @property
     def progress(self):
-        """Gets the progress of this Instance.
+        r"""Gets the progress of this Instance.
 
         边缘实例进度。
 
@@ -646,7 +646,7 @@ class Instance:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this Instance.
+        r"""Sets the progress of this Instance.
 
         边缘实例进度。
 
@@ -657,7 +657,7 @@ class Instance:
 
     @property
     def os_ext_st_spower_state(self):
-        """Gets the os_ext_st_spower_state of this Instance.
+        r"""Gets the os_ext_st_spower_state of this Instance.
 
         扩展属性，边缘实例电源状态。
 
@@ -668,7 +668,7 @@ class Instance:
 
     @os_ext_st_spower_state.setter
     def os_ext_st_spower_state(self, os_ext_st_spower_state):
-        """Sets the os_ext_st_spower_state of this Instance.
+        r"""Sets the os_ext_st_spower_state of this Instance.
 
         扩展属性，边缘实例电源状态。
 
@@ -679,7 +679,7 @@ class Instance:
 
     @property
     def os_ext_st_svm_state(self):
-        """Gets the os_ext_st_svm_state of this Instance.
+        r"""Gets the os_ext_st_svm_state of this Instance.
 
         扩展属性，边缘实例当前状态。
 
@@ -690,7 +690,7 @@ class Instance:
 
     @os_ext_st_svm_state.setter
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
-        """Sets the os_ext_st_svm_state of this Instance.
+        r"""Sets the os_ext_st_svm_state of this Instance.
 
         扩展属性，边缘实例当前状态。
 
@@ -701,7 +701,7 @@ class Instance:
 
     @property
     def os_ext_st_stask_state(self):
-        """Gets the os_ext_st_stask_state of this Instance.
+        r"""Gets the os_ext_st_stask_state of this Instance.
 
         边缘实例任务状态。
 
@@ -712,7 +712,7 @@ class Instance:
 
     @os_ext_st_stask_state.setter
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
-        """Sets the os_ext_st_stask_state of this Instance.
+        r"""Sets the os_ext_st_stask_state of this Instance.
 
         边缘实例任务状态。
 
@@ -723,7 +723,7 @@ class Instance:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this Instance.
+        r"""Gets the os_dc_fdisk_config of this Instance.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -734,7 +734,7 @@ class Instance:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this Instance.
+        r"""Sets the os_dc_fdisk_config of this Instance.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -745,7 +745,7 @@ class Instance:
 
     @property
     def os_ext_a_zavailability_zone(self):
-        """Gets the os_ext_a_zavailability_zone of this Instance.
+        r"""Gets the os_ext_a_zavailability_zone of this Instance.
 
         扩展属性，边缘实例所在可用区名称。
 
@@ -756,7 +756,7 @@ class Instance:
 
     @os_ext_a_zavailability_zone.setter
     def os_ext_a_zavailability_zone(self, os_ext_a_zavailability_zone):
-        """Sets the os_ext_a_zavailability_zone of this Instance.
+        r"""Sets the os_ext_a_zavailability_zone of this Instance.
 
         扩展属性，边缘实例所在可用区名称。
 
@@ -767,7 +767,7 @@ class Instance:
 
     @property
     def os_srv_us_glaunched_at(self):
-        """Gets the os_srv_us_glaunched_at of this Instance.
+        r"""Gets the os_srv_us_glaunched_at of this Instance.
 
         边缘实例启动时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -778,7 +778,7 @@ class Instance:
 
     @os_srv_us_glaunched_at.setter
     def os_srv_us_glaunched_at(self, os_srv_us_glaunched_at):
-        """Sets the os_srv_us_glaunched_at of this Instance.
+        r"""Sets the os_srv_us_glaunched_at of this Instance.
 
         边缘实例启动时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -789,7 +789,7 @@ class Instance:
 
     @property
     def os_srv_us_gterminated_at(self):
-        """Gets the os_srv_us_gterminated_at of this Instance.
+        r"""Gets the os_srv_us_gterminated_at of this Instance.
 
         边缘实例删除时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -800,7 +800,7 @@ class Instance:
 
     @os_srv_us_gterminated_at.setter
     def os_srv_us_gterminated_at(self, os_srv_us_gterminated_at):
-        """Sets the os_srv_us_gterminated_at of this Instance.
+        r"""Sets the os_srv_us_gterminated_at of this Instance.
 
         边缘实例删除时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -811,7 +811,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rroot_device_name(self):
-        """Gets the os_ext_srv_att_rroot_device_name of this Instance.
+        r"""Gets the os_ext_srv_att_rroot_device_name of this Instance.
 
         边缘实例系统盘的设备名称。
 
@@ -822,7 +822,7 @@ class Instance:
 
     @os_ext_srv_att_rroot_device_name.setter
     def os_ext_srv_att_rroot_device_name(self, os_ext_srv_att_rroot_device_name):
-        """Sets the os_ext_srv_att_rroot_device_name of this Instance.
+        r"""Sets the os_ext_srv_att_rroot_device_name of this Instance.
 
         边缘实例系统盘的设备名称。
 
@@ -833,7 +833,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rramdisk_id(self):
-        """Gets the os_ext_srv_att_rramdisk_id of this Instance.
+        r"""Gets the os_ext_srv_att_rramdisk_id of this Instance.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -844,7 +844,7 @@ class Instance:
 
     @os_ext_srv_att_rramdisk_id.setter
     def os_ext_srv_att_rramdisk_id(self, os_ext_srv_att_rramdisk_id):
-        """Sets the os_ext_srv_att_rramdisk_id of this Instance.
+        r"""Sets the os_ext_srv_att_rramdisk_id of this Instance.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -855,7 +855,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rkernel_id(self):
-        """Gets the os_ext_srv_att_rkernel_id of this Instance.
+        r"""Gets the os_ext_srv_att_rkernel_id of this Instance.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
@@ -866,7 +866,7 @@ class Instance:
 
     @os_ext_srv_att_rkernel_id.setter
     def os_ext_srv_att_rkernel_id(self, os_ext_srv_att_rkernel_id):
-        """Sets the os_ext_srv_att_rkernel_id of this Instance.
+        r"""Sets the os_ext_srv_att_rkernel_id of this Instance.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
@@ -877,7 +877,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rlaunch_index(self):
-        """Gets the os_ext_srv_att_rlaunch_index of this Instance.
+        r"""Gets the os_ext_srv_att_rlaunch_index of this Instance.
 
         批量创建场景，边缘实例的启动顺序。
 
@@ -888,7 +888,7 @@ class Instance:
 
     @os_ext_srv_att_rlaunch_index.setter
     def os_ext_srv_att_rlaunch_index(self, os_ext_srv_att_rlaunch_index):
-        """Sets the os_ext_srv_att_rlaunch_index of this Instance.
+        r"""Sets the os_ext_srv_att_rlaunch_index of this Instance.
 
         批量创建场景，边缘实例的启动顺序。
 
@@ -899,7 +899,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rreservation_id(self):
-        """Gets the os_ext_srv_att_rreservation_id of this Instance.
+        r"""Gets the os_ext_srv_att_rreservation_id of this Instance.
 
         批量创建场景，边缘实例的预留ID。
 
@@ -910,7 +910,7 @@ class Instance:
 
     @os_ext_srv_att_rreservation_id.setter
     def os_ext_srv_att_rreservation_id(self, os_ext_srv_att_rreservation_id):
-        """Sets the os_ext_srv_att_rreservation_id of this Instance.
+        r"""Sets the os_ext_srv_att_rreservation_id of this Instance.
 
         批量创建场景，边缘实例的预留ID。
 
@@ -921,7 +921,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this Instance.
+        r"""Gets the os_ext_srv_att_rhostname of this Instance.
 
         边缘实例的主机名。
 
@@ -932,7 +932,7 @@ class Instance:
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this Instance.
+        r"""Sets the os_ext_srv_att_rhostname of this Instance.
 
         边缘实例的主机名。
 
@@ -943,7 +943,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this Instance.
+        r"""Gets the os_ext_srv_att_ruser_data of this Instance.
 
         创建边缘实例时指定的user_data。
 
@@ -954,7 +954,7 @@ class Instance:
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this Instance.
+        r"""Sets the os_ext_srv_att_ruser_data of this Instance.
 
         创建边缘实例时指定的user_data。
 
@@ -965,7 +965,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rhost(self):
-        """Gets the os_ext_srv_att_rhost of this Instance.
+        r"""Gets the os_ext_srv_att_rhost of this Instance.
 
         边缘实例所在主机的主机名称。
 
@@ -976,7 +976,7 @@ class Instance:
 
     @os_ext_srv_att_rhost.setter
     def os_ext_srv_att_rhost(self, os_ext_srv_att_rhost):
-        """Sets the os_ext_srv_att_rhost of this Instance.
+        r"""Sets the os_ext_srv_att_rhost of this Instance.
 
         边缘实例所在主机的主机名称。
 
@@ -987,7 +987,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rhypervisor_hostname(self):
-        """Gets the os_ext_srv_att_rhypervisor_hostname of this Instance.
+        r"""Gets the os_ext_srv_att_rhypervisor_hostname of this Instance.
 
         扩展属性，边缘实例所在虚拟化主机名。
 
@@ -998,7 +998,7 @@ class Instance:
 
     @os_ext_srv_att_rhypervisor_hostname.setter
     def os_ext_srv_att_rhypervisor_hostname(self, os_ext_srv_att_rhypervisor_hostname):
-        """Sets the os_ext_srv_att_rhypervisor_hostname of this Instance.
+        r"""Sets the os_ext_srv_att_rhypervisor_hostname of this Instance.
 
         扩展属性，边缘实例所在虚拟化主机名。
 
@@ -1009,7 +1009,7 @@ class Instance:
 
     @property
     def os_extended_volumesvolumes_attached(self):
-        """Gets the os_extended_volumesvolumes_attached of this Instance.
+        r"""Gets the os_extended_volumesvolumes_attached of this Instance.
 
         挂载到边缘实例上的磁盘。
 
@@ -1020,7 +1020,7 @@ class Instance:
 
     @os_extended_volumesvolumes_attached.setter
     def os_extended_volumesvolumes_attached(self, os_extended_volumesvolumes_attached):
-        """Sets the os_extended_volumesvolumes_attached of this Instance.
+        r"""Sets the os_extended_volumesvolumes_attached of this Instance.
 
         挂载到边缘实例上的磁盘。
 
@@ -1031,7 +1031,7 @@ class Instance:
 
     @property
     def geolocation(self):
-        """Gets the geolocation of this Instance.
+        r"""Gets the geolocation of this Instance.
 
         :return: The geolocation of this Instance.
         :rtype: :class:`huaweicloudsdkiec.v1.GeoLocation`
@@ -1040,7 +1040,7 @@ class Instance:
 
     @geolocation.setter
     def geolocation(self, geolocation):
-        """Sets the geolocation of this Instance.
+        r"""Sets the geolocation of this Instance.
 
         :param geolocation: The geolocation of this Instance.
         :type geolocation: :class:`huaweicloudsdkiec.v1.GeoLocation`
@@ -1049,7 +1049,7 @@ class Instance:
 
     @property
     def edgecloud_id(self):
-        """Gets the edgecloud_id of this Instance.
+        r"""Gets the edgecloud_id of this Instance.
 
         边缘实例所属边缘业务的ID。
 
@@ -1060,7 +1060,7 @@ class Instance:
 
     @edgecloud_id.setter
     def edgecloud_id(self, edgecloud_id):
-        """Sets the edgecloud_id of this Instance.
+        r"""Sets the edgecloud_id of this Instance.
 
         边缘实例所属边缘业务的ID。
 
@@ -1071,7 +1071,7 @@ class Instance:
 
     @property
     def edgecloud_name(self):
-        """Gets the edgecloud_name of this Instance.
+        r"""Gets the edgecloud_name of this Instance.
 
         边缘实例所属边缘业务的名称
 
@@ -1082,7 +1082,7 @@ class Instance:
 
     @edgecloud_name.setter
     def edgecloud_name(self, edgecloud_name):
-        """Sets the edgecloud_name of this Instance.
+        r"""Sets the edgecloud_name of this Instance.
 
         边缘实例所属边缘业务的名称
 
@@ -1093,7 +1093,7 @@ class Instance:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Instance.
+        r"""Gets the domain_id of this Instance.
 
         帐号ID。
 
@@ -1104,7 +1104,7 @@ class Instance:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Instance.
+        r"""Sets the domain_id of this Instance.
 
         帐号ID。
 
@@ -1115,7 +1115,7 @@ class Instance:
 
     @property
     def key_name(self):
-        """Gets the key_name of this Instance.
+        r"""Gets the key_name of this Instance.
 
         使用的密钥对名称。
 
@@ -1126,7 +1126,7 @@ class Instance:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this Instance.
+        r"""Sets the key_name of this Instance.
 
         使用的密钥对名称。
 
@@ -1137,7 +1137,7 @@ class Instance:
 
     @property
     def os_ext_srv_att_rinstance_name(self):
-        """Gets the os_ext_srv_att_rinstance_name of this Instance.
+        r"""Gets the os_ext_srv_att_rinstance_name of this Instance.
 
         扩展属性，边缘实例别名。
 
@@ -1148,7 +1148,7 @@ class Instance:
 
     @os_ext_srv_att_rinstance_name.setter
     def os_ext_srv_att_rinstance_name(self, os_ext_srv_att_rinstance_name):
-        """Sets the os_ext_srv_att_rinstance_name of this Instance.
+        r"""Sets the os_ext_srv_att_rinstance_name of this Instance.
 
         扩展属性，边缘实例别名。
 

@@ -27,7 +27,7 @@ class MetricRequestV2DividendCustomFields:
     }
 
     def __init__(self, name=None, options=None):
-        """MetricRequestV2DividendCustomFields
+        r"""MetricRequestV2DividendCustomFields
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetricRequestV2DividendCustomFields:
 
     @property
     def name(self):
-        """Gets the name of this MetricRequestV2DividendCustomFields.
+        r"""Gets the name of this MetricRequestV2DividendCustomFields.
 
         自定义字段名称
 
@@ -61,7 +61,7 @@ class MetricRequestV2DividendCustomFields:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetricRequestV2DividendCustomFields.
+        r"""Sets the name of this MetricRequestV2DividendCustomFields.
 
         自定义字段名称
 
@@ -72,7 +72,7 @@ class MetricRequestV2DividendCustomFields:
 
     @property
     def options(self):
-        """Gets the options of this MetricRequestV2DividendCustomFields.
+        r"""Gets the options of this MetricRequestV2DividendCustomFields.
 
         自定义字段取值，逗号分隔
 
@@ -83,7 +83,7 @@ class MetricRequestV2DividendCustomFields:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this MetricRequestV2DividendCustomFields.
+        r"""Sets the options of this MetricRequestV2DividendCustomFields.
 
         自定义字段取值，逗号分隔
 

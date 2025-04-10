@@ -29,7 +29,7 @@ class ListCgwsRequest:
     }
 
     def __init__(self, cgw_id=None, limit=None, marker=None):
-        """ListCgwsRequest
+        r"""ListCgwsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListCgwsRequest:
 
     @property
     def cgw_id(self):
-        """Gets the cgw_id of this ListCgwsRequest.
+        r"""Gets the cgw_id of this ListCgwsRequest.
 
         CustomerGateway ID
 
@@ -68,7 +68,7 @@ class ListCgwsRequest:
 
     @cgw_id.setter
     def cgw_id(self, cgw_id):
-        """Sets the cgw_id of this ListCgwsRequest.
+        r"""Sets the cgw_id of this ListCgwsRequest.
 
         CustomerGateway ID
 
@@ -79,7 +79,7 @@ class ListCgwsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCgwsRequest.
+        r"""Gets the limit of this ListCgwsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -90,7 +90,7 @@ class ListCgwsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCgwsRequest.
+        r"""Sets the limit of this ListCgwsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -101,7 +101,7 @@ class ListCgwsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCgwsRequest.
+        r"""Gets the marker of this ListCgwsRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -112,7 +112,7 @@ class ListCgwsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCgwsRequest.
+        r"""Sets the marker of this ListCgwsRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 

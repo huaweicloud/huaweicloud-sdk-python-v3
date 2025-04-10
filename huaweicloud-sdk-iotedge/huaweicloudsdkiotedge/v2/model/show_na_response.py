@@ -42,7 +42,7 @@ class ShowNaResponse(SdkResponse):
     }
 
     def __init__(self, na_id=None, name=None, description=None, endpoint=None, auth_type=None, access_type=None, access_roma_info=None, create_time=None, update_time=None):
-        """ShowNaResponse
+        r"""ShowNaResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def na_id(self):
-        """Gets the na_id of this ShowNaResponse.
+        r"""Gets the na_id of this ShowNaResponse.
 
         NA系统ID，提供给其他系统访问的唯一标识
 
@@ -111,7 +111,7 @@ class ShowNaResponse(SdkResponse):
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this ShowNaResponse.
+        r"""Sets the na_id of this ShowNaResponse.
 
         NA系统ID，提供给其他系统访问的唯一标识
 
@@ -122,7 +122,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNaResponse.
+        r"""Gets the name of this ShowNaResponse.
 
         NA系统名称
 
@@ -133,7 +133,7 @@ class ShowNaResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNaResponse.
+        r"""Sets the name of this ShowNaResponse.
 
         NA系统名称
 
@@ -144,7 +144,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowNaResponse.
+        r"""Gets the description of this ShowNaResponse.
 
         北向NA系统描述
 
@@ -155,7 +155,7 @@ class ShowNaResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowNaResponse.
+        r"""Sets the description of this ShowNaResponse.
 
         北向NA系统描述
 
@@ -166,7 +166,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ShowNaResponse.
+        r"""Gets the endpoint of this ShowNaResponse.
 
         访问URL地址
 
@@ -177,7 +177,7 @@ class ShowNaResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ShowNaResponse.
+        r"""Sets the endpoint of this ShowNaResponse.
 
         访问URL地址
 
@@ -188,7 +188,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShowNaResponse.
+        r"""Gets the auth_type of this ShowNaResponse.
 
         鉴权方式
 
@@ -199,7 +199,7 @@ class ShowNaResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShowNaResponse.
+        r"""Sets the auth_type of this ShowNaResponse.
 
         鉴权方式
 
@@ -210,7 +210,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def access_type(self):
-        """Gets the access_type of this ShowNaResponse.
+        r"""Gets the access_type of this ShowNaResponse.
 
         接入类型
 
@@ -221,7 +221,7 @@ class ShowNaResponse(SdkResponse):
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this ShowNaResponse.
+        r"""Sets the access_type of this ShowNaResponse.
 
         接入类型
 
@@ -232,7 +232,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def access_roma_info(self):
-        """Gets the access_roma_info of this ShowNaResponse.
+        r"""Gets the access_roma_info of this ShowNaResponse.
 
         :return: The access_roma_info of this ShowNaResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
@@ -241,7 +241,7 @@ class ShowNaResponse(SdkResponse):
 
     @access_roma_info.setter
     def access_roma_info(self, access_roma_info):
-        """Sets the access_roma_info of this ShowNaResponse.
+        r"""Sets the access_roma_info of this ShowNaResponse.
 
         :param access_roma_info: The access_roma_info of this ShowNaResponse.
         :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
@@ -250,7 +250,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowNaResponse.
+        r"""Gets the create_time of this ShowNaResponse.
 
         创建时间
 
@@ -261,7 +261,7 @@ class ShowNaResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowNaResponse.
+        r"""Sets the create_time of this ShowNaResponse.
 
         创建时间
 
@@ -272,7 +272,7 @@ class ShowNaResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowNaResponse.
+        r"""Gets the update_time of this ShowNaResponse.
 
         更新时间
 
@@ -283,7 +283,7 @@ class ShowNaResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowNaResponse.
+        r"""Sets the update_time of this ShowNaResponse.
 
         更新时间
 

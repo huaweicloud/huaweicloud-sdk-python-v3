@@ -43,7 +43,7 @@ class InstanceCreate:
     }
 
     def __init__(self, name=None, environment_id=None, flavor_id=None, replica=None, artifacts=None, version=None, configuration=None, description=None, external_accesses=None, refer_resources=None):
-        """InstanceCreate
+        r"""InstanceCreate
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InstanceCreate:
 
     @property
     def name(self):
-        """Gets the name of this InstanceCreate.
+        r"""Gets the name of this InstanceCreate.
 
         应用组件实例名称。
 
@@ -110,7 +110,7 @@ class InstanceCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceCreate.
+        r"""Sets the name of this InstanceCreate.
 
         应用组件实例名称。
 
@@ -121,7 +121,7 @@ class InstanceCreate:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this InstanceCreate.
+        r"""Gets the environment_id of this InstanceCreate.
 
         环境ID。
 
@@ -132,7 +132,7 @@ class InstanceCreate:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this InstanceCreate.
+        r"""Sets the environment_id of this InstanceCreate.
 
         环境ID。
 
@@ -143,7 +143,7 @@ class InstanceCreate:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this InstanceCreate.
+        r"""Gets the flavor_id of this InstanceCreate.
 
         :return: The flavor_id of this InstanceCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -152,7 +152,7 @@ class InstanceCreate:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this InstanceCreate.
+        r"""Sets the flavor_id of this InstanceCreate.
 
         :param flavor_id: The flavor_id of this InstanceCreate.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -161,7 +161,7 @@ class InstanceCreate:
 
     @property
     def replica(self):
-        """Gets the replica of this InstanceCreate.
+        r"""Gets the replica of this InstanceCreate.
 
         实例副本数。
 
@@ -172,7 +172,7 @@ class InstanceCreate:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this InstanceCreate.
+        r"""Sets the replica of this InstanceCreate.
 
         实例副本数。
 
@@ -183,7 +183,7 @@ class InstanceCreate:
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this InstanceCreate.
+        r"""Gets the artifacts of this InstanceCreate.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -194,7 +194,7 @@ class InstanceCreate:
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this InstanceCreate.
+        r"""Sets the artifacts of this InstanceCreate.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -205,7 +205,7 @@ class InstanceCreate:
 
     @property
     def version(self):
-        """Gets the version of this InstanceCreate.
+        r"""Gets the version of this InstanceCreate.
 
         应用组件版本号，满足版本语义，如1.0.0。。
 
@@ -216,7 +216,7 @@ class InstanceCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceCreate.
+        r"""Sets the version of this InstanceCreate.
 
         应用组件版本号，满足版本语义，如1.0.0。。
 
@@ -227,7 +227,7 @@ class InstanceCreate:
 
     @property
     def configuration(self):
-        """Gets the configuration of this InstanceCreate.
+        r"""Gets the configuration of this InstanceCreate.
 
         :return: The configuration of this InstanceCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
@@ -236,7 +236,7 @@ class InstanceCreate:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this InstanceCreate.
+        r"""Sets the configuration of this InstanceCreate.
 
         :param configuration: The configuration of this InstanceCreate.
         :type configuration: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
@@ -245,7 +245,7 @@ class InstanceCreate:
 
     @property
     def description(self):
-        """Gets the description of this InstanceCreate.
+        r"""Gets the description of this InstanceCreate.
 
         描述。
 
@@ -256,7 +256,7 @@ class InstanceCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceCreate.
+        r"""Sets the description of this InstanceCreate.
 
         描述。
 
@@ -267,7 +267,7 @@ class InstanceCreate:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this InstanceCreate.
+        r"""Gets the external_accesses of this InstanceCreate.
 
         访问方式。
 
@@ -278,7 +278,7 @@ class InstanceCreate:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this InstanceCreate.
+        r"""Sets the external_accesses of this InstanceCreate.
 
         访问方式。
 
@@ -289,7 +289,7 @@ class InstanceCreate:
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this InstanceCreate.
+        r"""Gets the refer_resources of this InstanceCreate.
 
         部署资源。
 
@@ -300,7 +300,7 @@ class InstanceCreate:
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this InstanceCreate.
+        r"""Sets the refer_resources of this InstanceCreate.
 
         部署资源。
 

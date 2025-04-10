@@ -51,7 +51,7 @@ class CreateInstanceRequestBody:
     }
 
     def __init__(self, chargemode=None, region=None, available_zone=None, arch=None, instancename=None, specification=None, cpu_flavor=None, vpc_id=None, subnet_id=None, security_group=None, count=None, res_tenant=None, anti_affinity=None, tags=None):
-        """CreateInstanceRequestBody
+        r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class CreateInstanceRequestBody:
 
     @property
     def chargemode(self):
-        """Gets the chargemode of this CreateInstanceRequestBody.
+        r"""Gets the chargemode of this CreateInstanceRequestBody.
 
         收费模式，当前仅支持按需收费（30）
 
@@ -136,7 +136,7 @@ class CreateInstanceRequestBody:
 
     @chargemode.setter
     def chargemode(self, chargemode):
-        """Sets the chargemode of this CreateInstanceRequestBody.
+        r"""Sets the chargemode of this CreateInstanceRequestBody.
 
         收费模式，当前仅支持按需收费（30）
 
@@ -147,7 +147,7 @@ class CreateInstanceRequestBody:
 
     @property
     def region(self):
-        """Gets the region of this CreateInstanceRequestBody.
+        r"""Gets the region of this CreateInstanceRequestBody.
 
         需要创建独享引擎的局点，例如：北京四（cn-north-4）
 
@@ -158,7 +158,7 @@ class CreateInstanceRequestBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstanceRequestBody.
+        r"""Sets the region of this CreateInstanceRequestBody.
 
         需要创建独享引擎的局点，例如：北京四（cn-north-4）
 
@@ -169,7 +169,7 @@ class CreateInstanceRequestBody:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this CreateInstanceRequestBody.
+        r"""Gets the available_zone of this CreateInstanceRequestBody.
 
         需要创建独享引擎的可用区，例如：北京四可用区1（cn-north-4a）
 
@@ -180,7 +180,7 @@ class CreateInstanceRequestBody:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this CreateInstanceRequestBody.
+        r"""Sets the available_zone of this CreateInstanceRequestBody.
 
         需要创建独享引擎的可用区，例如：北京四可用区1（cn-north-4a）
 
@@ -191,7 +191,7 @@ class CreateInstanceRequestBody:
 
     @property
     def arch(self):
-        """Gets the arch of this CreateInstanceRequestBody.
+        r"""Gets the arch of this CreateInstanceRequestBody.
 
         独享引擎CPU架构，例如：x86与arm
 
@@ -202,7 +202,7 @@ class CreateInstanceRequestBody:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this CreateInstanceRequestBody.
+        r"""Sets the arch of this CreateInstanceRequestBody.
 
         独享引擎CPU架构，例如：x86与arm
 
@@ -213,7 +213,7 @@ class CreateInstanceRequestBody:
 
     @property
     def instancename(self):
-        """Gets the instancename of this CreateInstanceRequestBody.
+        r"""Gets the instancename of this CreateInstanceRequestBody.
 
         独享引擎名称前缀
 
@@ -224,7 +224,7 @@ class CreateInstanceRequestBody:
 
     @instancename.setter
     def instancename(self, instancename):
-        """Sets the instancename of this CreateInstanceRequestBody.
+        r"""Sets the instancename of this CreateInstanceRequestBody.
 
         独享引擎名称前缀
 
@@ -235,7 +235,7 @@ class CreateInstanceRequestBody:
 
     @property
     def specification(self):
-        """Gets the specification of this CreateInstanceRequestBody.
+        r"""Gets the specification of this CreateInstanceRequestBody.
 
         独享引擎版本规格   - waf.instance.enterprise：企业版，对应控制台WI-500规格   - waf.instance.professional：专业版，对应控制台WI-100规格
 
@@ -246,7 +246,7 @@ class CreateInstanceRequestBody:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this CreateInstanceRequestBody.
+        r"""Sets the specification of this CreateInstanceRequestBody.
 
         独享引擎版本规格   - waf.instance.enterprise：企业版，对应控制台WI-500规格   - waf.instance.professional：专业版，对应控制台WI-100规格
 
@@ -257,7 +257,7 @@ class CreateInstanceRequestBody:
 
     @property
     def cpu_flavor(self):
-        """Gets the cpu_flavor of this CreateInstanceRequestBody.
+        r"""Gets the cpu_flavor of this CreateInstanceRequestBody.
 
         独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
 
@@ -268,7 +268,7 @@ class CreateInstanceRequestBody:
 
     @cpu_flavor.setter
     def cpu_flavor(self, cpu_flavor):
-        """Sets the cpu_flavor of this CreateInstanceRequestBody.
+        r"""Sets the cpu_flavor of this CreateInstanceRequestBody.
 
         独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
 
@@ -279,7 +279,7 @@ class CreateInstanceRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceRequestBody.
+        r"""Gets the vpc_id of this CreateInstanceRequestBody.
 
         独享引擎所在VPC的ID（通过调用虚拟私有云ListVpcs接口获取所有的VPC列表查询VPC的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
 
@@ -290,7 +290,7 @@ class CreateInstanceRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceRequestBody.
+        r"""Sets the vpc_id of this CreateInstanceRequestBody.
 
         独享引擎所在VPC的ID（通过调用虚拟私有云ListVpcs接口获取所有的VPC列表查询VPC的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
 
@@ -301,7 +301,7 @@ class CreateInstanceRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceRequestBody.
+        r"""Gets the subnet_id of this CreateInstanceRequestBody.
 
         独享引擎所在VPC内的子网ID（通过调用虚拟私有云ListSubnets接口获取所有的子网列表查询子网的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
 
@@ -312,7 +312,7 @@ class CreateInstanceRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceRequestBody.
+        r"""Sets the subnet_id of this CreateInstanceRequestBody.
 
         独享引擎所在VPC内的子网ID（通过调用虚拟私有云ListSubnets接口获取所有的子网列表查询子网的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
 
@@ -323,7 +323,7 @@ class CreateInstanceRequestBody:
 
     @property
     def security_group(self):
-        """Gets the security_group of this CreateInstanceRequestBody.
+        r"""Gets the security_group of this CreateInstanceRequestBody.
 
         独享引擎需要绑定的安全组ID（通过调用虚拟私有云ListSecurityGroups接口获取所有的安全组列表查询安全组的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
 
@@ -334,7 +334,7 @@ class CreateInstanceRequestBody:
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this CreateInstanceRequestBody.
+        r"""Sets the security_group of this CreateInstanceRequestBody.
 
         独享引擎需要绑定的安全组ID（通过调用虚拟私有云ListSecurityGroups接口获取所有的安全组列表查询安全组的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
 
@@ -345,7 +345,7 @@ class CreateInstanceRequestBody:
 
     @property
     def count(self):
-        """Gets the count of this CreateInstanceRequestBody.
+        r"""Gets the count of this CreateInstanceRequestBody.
 
         申请的独享引擎数量
 
@@ -356,7 +356,7 @@ class CreateInstanceRequestBody:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateInstanceRequestBody.
+        r"""Sets the count of this CreateInstanceRequestBody.
 
         申请的独享引擎数量
 
@@ -367,7 +367,7 @@ class CreateInstanceRequestBody:
 
     @property
     def res_tenant(self):
-        """Gets the res_tenant of this CreateInstanceRequestBody.
+        r"""Gets the res_tenant of this CreateInstanceRequestBody.
 
         是否为资源租户类，默认值为false。   - true: 资源租户类   - false: 普通租户类
 
@@ -378,7 +378,7 @@ class CreateInstanceRequestBody:
 
     @res_tenant.setter
     def res_tenant(self, res_tenant):
-        """Sets the res_tenant of this CreateInstanceRequestBody.
+        r"""Sets the res_tenant of this CreateInstanceRequestBody.
 
         是否为资源租户类，默认值为false。   - true: 资源租户类   - false: 普通租户类
 
@@ -389,7 +389,7 @@ class CreateInstanceRequestBody:
 
     @property
     def anti_affinity(self):
-        """Gets the anti_affinity of this CreateInstanceRequestBody.
+        r"""Gets the anti_affinity of this CreateInstanceRequestBody.
 
         是否开启反亲和。仅资源租户独享实例支持该特性。
 
@@ -400,7 +400,7 @@ class CreateInstanceRequestBody:
 
     @anti_affinity.setter
     def anti_affinity(self, anti_affinity):
-        """Sets the anti_affinity of this CreateInstanceRequestBody.
+        r"""Sets the anti_affinity of this CreateInstanceRequestBody.
 
         是否开启反亲和。仅资源租户独享实例支持该特性。
 
@@ -411,7 +411,7 @@ class CreateInstanceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstanceRequestBody.
+        r"""Gets the tags of this CreateInstanceRequestBody.
 
         TMS标签信息
 
@@ -422,7 +422,7 @@ class CreateInstanceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstanceRequestBody.
+        r"""Sets the tags of this CreateInstanceRequestBody.
 
         TMS标签信息
 

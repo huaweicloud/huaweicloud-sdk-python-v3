@@ -25,7 +25,7 @@ class ShowAdmetPropertiesRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAdmetPropertiesRequest
+        r"""ShowAdmetPropertiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAdmetPropertiesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAdmetPropertiesRequest.
+        r"""Gets the body of this ShowAdmetPropertiesRequest.
 
         :return: The body of this ShowAdmetPropertiesRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AdmetRequest`
@@ -52,7 +52,7 @@ class ShowAdmetPropertiesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAdmetPropertiesRequest.
+        r"""Sets the body of this ShowAdmetPropertiesRequest.
 
         :param body: The body of this ShowAdmetPropertiesRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.AdmetRequest`

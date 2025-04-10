@@ -45,7 +45,7 @@ class ListDesktopUsageMetricRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, resource_name=None, min_idle_days=None, max_idle_days=None, usage_min_hours=None, usage_max_hours=None, sort_field=None, sort_type=None, offset=None, limit=None):
-        """ListDesktopUsageMetricRequest
+        r"""ListDesktopUsageMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDesktopUsageMetricRequest.
+        r"""Gets the start_time of this ListDesktopUsageMetricRequest.
 
         查询起始时间(0时区) 云服务每天凌晨02:00进行聚合运算前一天00:00:00~23:59:59的使用时长,并将周期范围内的数据聚合到周期边界上 跨天的记录会按照统计周期进行计算 假设一天内桌面登录多次，09:00~12:00,13:00~21:00,22:00~01:00(次日): 则当天的累计使用时长数据会被汇聚到23:59:59这个点;总使用时长为 3hours(09:00~12:00)+8hours(13:00~21:00)+2hours(22:00~00:00) 如果查询的from-to不足一个周期内，可能造成查询到数据为空；
 
@@ -122,7 +122,7 @@ class ListDesktopUsageMetricRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDesktopUsageMetricRequest.
+        r"""Sets the start_time of this ListDesktopUsageMetricRequest.
 
         查询起始时间(0时区) 云服务每天凌晨02:00进行聚合运算前一天00:00:00~23:59:59的使用时长,并将周期范围内的数据聚合到周期边界上 跨天的记录会按照统计周期进行计算 假设一天内桌面登录多次，09:00~12:00,13:00~21:00,22:00~01:00(次日): 则当天的累计使用时长数据会被汇聚到23:59:59这个点;总使用时长为 3hours(09:00~12:00)+8hours(13:00~21:00)+2hours(22:00~00:00) 如果查询的from-to不足一个周期内，可能造成查询到数据为空；
 
@@ -133,7 +133,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDesktopUsageMetricRequest.
+        r"""Gets the end_time of this ListDesktopUsageMetricRequest.
 
         查询截至时间(0时区)
 
@@ -144,7 +144,7 @@ class ListDesktopUsageMetricRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDesktopUsageMetricRequest.
+        r"""Sets the end_time of this ListDesktopUsageMetricRequest.
 
         查询截至时间(0时区)
 
@@ -155,7 +155,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListDesktopUsageMetricRequest.
+        r"""Gets the resource_name of this ListDesktopUsageMetricRequest.
 
         资源名称(模糊匹配)
 
@@ -166,7 +166,7 @@ class ListDesktopUsageMetricRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListDesktopUsageMetricRequest.
+        r"""Sets the resource_name of this ListDesktopUsageMetricRequest.
 
         资源名称(模糊匹配)
 
@@ -177,7 +177,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def min_idle_days(self):
-        """Gets the min_idle_days of this ListDesktopUsageMetricRequest.
+        r"""Gets the min_idle_days of this ListDesktopUsageMetricRequest.
 
         最小空闲天数
 
@@ -188,7 +188,7 @@ class ListDesktopUsageMetricRequest:
 
     @min_idle_days.setter
     def min_idle_days(self, min_idle_days):
-        """Sets the min_idle_days of this ListDesktopUsageMetricRequest.
+        r"""Sets the min_idle_days of this ListDesktopUsageMetricRequest.
 
         最小空闲天数
 
@@ -199,7 +199,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def max_idle_days(self):
-        """Gets the max_idle_days of this ListDesktopUsageMetricRequest.
+        r"""Gets the max_idle_days of this ListDesktopUsageMetricRequest.
 
         最大空闲天数 min_idle_days、max_idle_days都非空时,max_idle_days必须大于等于min_idle_days否则可能查询不到数据
 
@@ -210,7 +210,7 @@ class ListDesktopUsageMetricRequest:
 
     @max_idle_days.setter
     def max_idle_days(self, max_idle_days):
-        """Sets the max_idle_days of this ListDesktopUsageMetricRequest.
+        r"""Sets the max_idle_days of this ListDesktopUsageMetricRequest.
 
         最大空闲天数 min_idle_days、max_idle_days都非空时,max_idle_days必须大于等于min_idle_days否则可能查询不到数据
 
@@ -221,7 +221,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def usage_min_hours(self):
-        """Gets the usage_min_hours of this ListDesktopUsageMetricRequest.
+        r"""Gets the usage_min_hours of this ListDesktopUsageMetricRequest.
 
         使用时长(hour)最小值
 
@@ -232,7 +232,7 @@ class ListDesktopUsageMetricRequest:
 
     @usage_min_hours.setter
     def usage_min_hours(self, usage_min_hours):
-        """Sets the usage_min_hours of this ListDesktopUsageMetricRequest.
+        r"""Sets the usage_min_hours of this ListDesktopUsageMetricRequest.
 
         使用时长(hour)最小值
 
@@ -243,7 +243,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def usage_max_hours(self):
-        """Gets the usage_max_hours of this ListDesktopUsageMetricRequest.
+        r"""Gets the usage_max_hours of this ListDesktopUsageMetricRequest.
 
         使用时长(hour)最大值(必须大于等于usage_min_hours)
 
@@ -254,7 +254,7 @@ class ListDesktopUsageMetricRequest:
 
     @usage_max_hours.setter
     def usage_max_hours(self, usage_max_hours):
-        """Sets the usage_max_hours of this ListDesktopUsageMetricRequest.
+        r"""Sets the usage_max_hours of this ListDesktopUsageMetricRequest.
 
         使用时长(hour)最大值(必须大于等于usage_min_hours)
 
@@ -265,7 +265,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListDesktopUsageMetricRequest.
+        r"""Gets the sort_field of this ListDesktopUsageMetricRequest.
 
         按照指标进行排序 * `desktop_usage` -  按照桌面使用时长排序 * `desktop_idle_duration` -  按照桌面空闲周期排序
 
@@ -276,7 +276,7 @@ class ListDesktopUsageMetricRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListDesktopUsageMetricRequest.
+        r"""Sets the sort_field of this ListDesktopUsageMetricRequest.
 
         按照指标进行排序 * `desktop_usage` -  按照桌面使用时长排序 * `desktop_idle_duration` -  按照桌面空闲周期排序
 
@@ -287,7 +287,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListDesktopUsageMetricRequest.
+        r"""Gets the sort_type of this ListDesktopUsageMetricRequest.
 
         按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
@@ -298,7 +298,7 @@ class ListDesktopUsageMetricRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListDesktopUsageMetricRequest.
+        r"""Sets the sort_type of this ListDesktopUsageMetricRequest.
 
         按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
@@ -309,7 +309,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopUsageMetricRequest.
+        r"""Gets the offset of this ListDesktopUsageMetricRequest.
 
         查询的偏移量,默认值0
 
@@ -320,7 +320,7 @@ class ListDesktopUsageMetricRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopUsageMetricRequest.
+        r"""Sets the offset of this ListDesktopUsageMetricRequest.
 
         查询的偏移量,默认值0
 
@@ -331,7 +331,7 @@ class ListDesktopUsageMetricRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopUsageMetricRequest.
+        r"""Gets the limit of this ListDesktopUsageMetricRequest.
 
         limit范围[1-100],默认值0
 
@@ -342,7 +342,7 @@ class ListDesktopUsageMetricRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopUsageMetricRequest.
+        r"""Sets the limit of this ListDesktopUsageMetricRequest.
 
         limit范围[1-100],默认值0
 

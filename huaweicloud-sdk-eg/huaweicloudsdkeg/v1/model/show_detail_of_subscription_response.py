@@ -48,7 +48,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, used=None, sources=None, targets=None, created_time=None, updated_time=None):
-        """ShowDetailOfSubscriptionResponse
+        r"""ShowDetailOfSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the id of this ShowDetailOfSubscriptionResponse.
 
         订阅ID
 
@@ -132,7 +132,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the id of this ShowDetailOfSubscriptionResponse.
 
         订阅ID
 
@@ -143,7 +143,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the name of this ShowDetailOfSubscriptionResponse.
 
         订阅名称
 
@@ -154,7 +154,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the name of this ShowDetailOfSubscriptionResponse.
 
         订阅名称
 
@@ -165,7 +165,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the description of this ShowDetailOfSubscriptionResponse.
 
         订阅描述
 
@@ -176,7 +176,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the description of this ShowDetailOfSubscriptionResponse.
 
         订阅描述
 
@@ -187,7 +187,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the type of this ShowDetailOfSubscriptionResponse.
 
         类型
 
@@ -198,7 +198,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the type of this ShowDetailOfSubscriptionResponse.
 
         类型
 
@@ -209,7 +209,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the status of this ShowDetailOfSubscriptionResponse.
 
         状态
 
@@ -220,7 +220,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the status of this ShowDetailOfSubscriptionResponse.
 
         状态
 
@@ -231,7 +231,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the channel_id of this ShowDetailOfSubscriptionResponse.
 
         通道ID
 
@@ -242,7 +242,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the channel_id of this ShowDetailOfSubscriptionResponse.
 
         通道ID
 
@@ -253,7 +253,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the channel_name of this ShowDetailOfSubscriptionResponse.
 
         通道名称
 
@@ -264,7 +264,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the channel_name of this ShowDetailOfSubscriptionResponse.
 
         通道名称
 
@@ -275,7 +275,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def used(self):
-        """Gets the used of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the used of this ShowDetailOfSubscriptionResponse.
 
         标签信息
 
@@ -286,7 +286,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the used of this ShowDetailOfSubscriptionResponse.
 
         标签信息
 
@@ -297,7 +297,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the sources of this ShowDetailOfSubscriptionResponse.
 
         订阅源列表
 
@@ -308,7 +308,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the sources of this ShowDetailOfSubscriptionResponse.
 
         订阅源列表
 
@@ -319,7 +319,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the targets of this ShowDetailOfSubscriptionResponse.
 
         订阅目标列表
 
@@ -330,7 +330,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the targets of this ShowDetailOfSubscriptionResponse.
 
         订阅目标列表
 
@@ -341,7 +341,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the created_time of this ShowDetailOfSubscriptionResponse.
 
         创建时间
 
@@ -352,7 +352,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the created_time of this ShowDetailOfSubscriptionResponse.
 
         创建时间
 
@@ -363,7 +363,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowDetailOfSubscriptionResponse.
+        r"""Gets the updated_time of this ShowDetailOfSubscriptionResponse.
 
         更新时间
 
@@ -374,7 +374,7 @@ class ShowDetailOfSubscriptionResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowDetailOfSubscriptionResponse.
+        r"""Sets the updated_time of this ShowDetailOfSubscriptionResponse.
 
         更新时间
 

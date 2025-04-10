@@ -28,7 +28,7 @@ class ListCommonPoolsResponse(SdkResponse):
     }
 
     def __init__(self, common_pools=None, request_id=None):
-        """ListCommonPoolsResponse
+        r"""ListCommonPoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCommonPoolsResponse(SdkResponse):
 
     @property
     def common_pools(self):
-        """Gets the common_pools of this ListCommonPoolsResponse.
+        r"""Gets the common_pools of this ListCommonPoolsResponse.
 
         功能说明：公共池对象
 
@@ -62,7 +62,7 @@ class ListCommonPoolsResponse(SdkResponse):
 
     @common_pools.setter
     def common_pools(self, common_pools):
-        """Sets the common_pools of this ListCommonPoolsResponse.
+        r"""Sets the common_pools of this ListCommonPoolsResponse.
 
         功能说明：公共池对象
 
@@ -73,7 +73,7 @@ class ListCommonPoolsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCommonPoolsResponse.
+        r"""Gets the request_id of this ListCommonPoolsResponse.
 
         本次请求的编号
 
@@ -84,7 +84,7 @@ class ListCommonPoolsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCommonPoolsResponse.
+        r"""Sets the request_id of this ListCommonPoolsResponse.
 
         本次请求的编号
 

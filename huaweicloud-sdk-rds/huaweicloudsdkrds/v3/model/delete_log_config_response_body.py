@@ -25,7 +25,7 @@ class DeleteLogConfigResponseBody:
     }
 
     def __init__(self, log_configs=None):
-        """DeleteLogConfigResponseBody
+        r"""DeleteLogConfigResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLogConfigResponseBody:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this DeleteLogConfigResponseBody.
+        r"""Gets the log_configs of this DeleteLogConfigResponseBody.
 
         实例日志配置信息。
 
@@ -53,7 +53,7 @@ class DeleteLogConfigResponseBody:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this DeleteLogConfigResponseBody.
+        r"""Sets the log_configs of this DeleteLogConfigResponseBody.
 
         实例日志配置信息。
 

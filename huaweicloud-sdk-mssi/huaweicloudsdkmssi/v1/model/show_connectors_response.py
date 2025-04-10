@@ -28,7 +28,7 @@ class ShowConnectorsResponse(SdkResponse):
     }
 
     def __init__(self, connectors=None, count=None):
-        """ShowConnectorsResponse
+        r"""ShowConnectorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowConnectorsResponse(SdkResponse):
 
     @property
     def connectors(self):
-        """Gets the connectors of this ShowConnectorsResponse.
+        r"""Gets the connectors of this ShowConnectorsResponse.
 
         连接器列表
 
@@ -62,7 +62,7 @@ class ShowConnectorsResponse(SdkResponse):
 
     @connectors.setter
     def connectors(self, connectors):
-        """Sets the connectors of this ShowConnectorsResponse.
+        r"""Sets the connectors of this ShowConnectorsResponse.
 
         连接器列表
 
@@ -73,7 +73,7 @@ class ShowConnectorsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowConnectorsResponse.
+        r"""Gets the count of this ShowConnectorsResponse.
 
         连接器数量
 
@@ -84,7 +84,7 @@ class ShowConnectorsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowConnectorsResponse.
+        r"""Sets the count of this ShowConnectorsResponse.
 
         连接器数量
 

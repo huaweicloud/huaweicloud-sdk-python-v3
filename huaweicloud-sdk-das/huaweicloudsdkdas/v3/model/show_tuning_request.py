@@ -29,7 +29,7 @@ class ShowTuningRequest:
     }
 
     def __init__(self, message_id=None, connection_id=None, x_language=None):
-        """ShowTuningRequest
+        r"""ShowTuningRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowTuningRequest:
 
     @property
     def message_id(self):
-        """Gets the message_id of this ShowTuningRequest.
+        r"""Gets the message_id of this ShowTuningRequest.
 
         诊断messageId
 
@@ -66,7 +66,7 @@ class ShowTuningRequest:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this ShowTuningRequest.
+        r"""Sets the message_id of this ShowTuningRequest.
 
         诊断messageId
 
@@ -77,7 +77,7 @@ class ShowTuningRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowTuningRequest.
+        r"""Gets the connection_id of this ShowTuningRequest.
 
         连接Id
 
@@ -88,7 +88,7 @@ class ShowTuningRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowTuningRequest.
+        r"""Sets the connection_id of this ShowTuningRequest.
 
         连接Id
 
@@ -99,7 +99,7 @@ class ShowTuningRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowTuningRequest.
+        r"""Gets the x_language of this ShowTuningRequest.
 
         语言
 
@@ -110,7 +110,7 @@ class ShowTuningRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowTuningRequest.
+        r"""Sets the x_language of this ShowTuningRequest.
 
         语言
 

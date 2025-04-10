@@ -27,7 +27,7 @@ class PutEventsRequest:
     }
 
     def __init__(self, channel_id=None, body=None):
-        """PutEventsRequest
+        r"""PutEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PutEventsRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this PutEventsRequest.
+        r"""Gets the channel_id of this PutEventsRequest.
 
         指定查询的事件通道ID
 
@@ -60,7 +60,7 @@ class PutEventsRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this PutEventsRequest.
+        r"""Sets the channel_id of this PutEventsRequest.
 
         指定查询的事件通道ID
 
@@ -71,7 +71,7 @@ class PutEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this PutEventsRequest.
+        r"""Gets the body of this PutEventsRequest.
 
         :return: The body of this PutEventsRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.PutEventsReq`
@@ -80,7 +80,7 @@ class PutEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PutEventsRequest.
+        r"""Sets the body of this PutEventsRequest.
 
         :param body: The body of this PutEventsRequest.
         :type body: :class:`huaweicloudsdkeg.v1.PutEventsReq`

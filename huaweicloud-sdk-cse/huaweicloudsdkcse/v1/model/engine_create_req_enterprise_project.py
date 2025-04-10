@@ -37,7 +37,7 @@ class EngineCreateReqEnterpriseProject:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None, label=None):
-        """EngineCreateReqEnterpriseProject
+        r"""EngineCreateReqEnterpriseProject
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def id(self):
-        """Gets the id of this EngineCreateReqEnterpriseProject.
+        r"""Gets the id of this EngineCreateReqEnterpriseProject.
 
         企业项目id
 
@@ -96,7 +96,7 @@ class EngineCreateReqEnterpriseProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EngineCreateReqEnterpriseProject.
+        r"""Sets the id of this EngineCreateReqEnterpriseProject.
 
         企业项目id
 
@@ -107,7 +107,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def name(self):
-        """Gets the name of this EngineCreateReqEnterpriseProject.
+        r"""Gets the name of this EngineCreateReqEnterpriseProject.
 
         企业项目名称
 
@@ -118,7 +118,7 @@ class EngineCreateReqEnterpriseProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EngineCreateReqEnterpriseProject.
+        r"""Sets the name of this EngineCreateReqEnterpriseProject.
 
         企业项目名称
 
@@ -129,7 +129,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def description(self):
-        """Gets the description of this EngineCreateReqEnterpriseProject.
+        r"""Gets the description of this EngineCreateReqEnterpriseProject.
 
         企业项目描述
 
@@ -140,7 +140,7 @@ class EngineCreateReqEnterpriseProject:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EngineCreateReqEnterpriseProject.
+        r"""Sets the description of this EngineCreateReqEnterpriseProject.
 
         企业项目描述
 
@@ -151,7 +151,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def status(self):
-        """Gets the status of this EngineCreateReqEnterpriseProject.
+        r"""Gets the status of this EngineCreateReqEnterpriseProject.
 
         企业项目状态
 
@@ -162,7 +162,7 @@ class EngineCreateReqEnterpriseProject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EngineCreateReqEnterpriseProject.
+        r"""Sets the status of this EngineCreateReqEnterpriseProject.
 
         企业项目状态
 
@@ -173,7 +173,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EngineCreateReqEnterpriseProject.
+        r"""Gets the created_at of this EngineCreateReqEnterpriseProject.
 
         企业项目创建时间
 
@@ -184,7 +184,7 @@ class EngineCreateReqEnterpriseProject:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EngineCreateReqEnterpriseProject.
+        r"""Sets the created_at of this EngineCreateReqEnterpriseProject.
 
         企业项目创建时间
 
@@ -195,7 +195,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EngineCreateReqEnterpriseProject.
+        r"""Gets the updated_at of this EngineCreateReqEnterpriseProject.
 
         企业项目升级时间
 
@@ -206,7 +206,7 @@ class EngineCreateReqEnterpriseProject:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EngineCreateReqEnterpriseProject.
+        r"""Sets the updated_at of this EngineCreateReqEnterpriseProject.
 
         企业项目升级时间
 
@@ -217,7 +217,7 @@ class EngineCreateReqEnterpriseProject:
 
     @property
     def label(self):
-        """Gets the label of this EngineCreateReqEnterpriseProject.
+        r"""Gets the label of this EngineCreateReqEnterpriseProject.
 
         企业项目标签
 
@@ -228,7 +228,7 @@ class EngineCreateReqEnterpriseProject:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this EngineCreateReqEnterpriseProject.
+        r"""Sets the label of this EngineCreateReqEnterpriseProject.
 
         企业项目标签
 

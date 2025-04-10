@@ -35,7 +35,7 @@ class PGSQLInstanceConfig:
     }
 
     def __init__(self, coordinator_resource_spec=None, coordinator_pod_label=None, worker_resource_spec=None, worker_pod_label=None, coordinator_port=None, runtime_param=None):
-        """PGSQLInstanceConfig
+        r"""PGSQLInstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class PGSQLInstanceConfig:
 
     @property
     def coordinator_resource_spec(self):
-        """Gets the coordinator_resource_spec of this PGSQLInstanceConfig.
+        r"""Gets the coordinator_resource_spec of this PGSQLInstanceConfig.
 
         资源规格，从规格列表查询获取。
 
@@ -83,7 +83,7 @@ class PGSQLInstanceConfig:
 
     @coordinator_resource_spec.setter
     def coordinator_resource_spec(self, coordinator_resource_spec):
-        """Sets the coordinator_resource_spec of this PGSQLInstanceConfig.
+        r"""Sets the coordinator_resource_spec of this PGSQLInstanceConfig.
 
         资源规格，从规格列表查询获取。
 
@@ -94,7 +94,7 @@ class PGSQLInstanceConfig:
 
     @property
     def coordinator_pod_label(self):
-        """Gets the coordinator_pod_label of this PGSQLInstanceConfig.
+        r"""Gets the coordinator_pod_label of this PGSQLInstanceConfig.
 
         Coordinator的POD标签
 
@@ -105,7 +105,7 @@ class PGSQLInstanceConfig:
 
     @coordinator_pod_label.setter
     def coordinator_pod_label(self, coordinator_pod_label):
-        """Sets the coordinator_pod_label of this PGSQLInstanceConfig.
+        r"""Sets the coordinator_pod_label of this PGSQLInstanceConfig.
 
         Coordinator的POD标签
 
@@ -116,7 +116,7 @@ class PGSQLInstanceConfig:
 
     @property
     def worker_resource_spec(self):
-        """Gets the worker_resource_spec of this PGSQLInstanceConfig.
+        r"""Gets the worker_resource_spec of this PGSQLInstanceConfig.
 
         资源规格，从规格列表查询获取。
 
@@ -127,7 +127,7 @@ class PGSQLInstanceConfig:
 
     @worker_resource_spec.setter
     def worker_resource_spec(self, worker_resource_spec):
-        """Sets the worker_resource_spec of this PGSQLInstanceConfig.
+        r"""Sets the worker_resource_spec of this PGSQLInstanceConfig.
 
         资源规格，从规格列表查询获取。
 
@@ -138,7 +138,7 @@ class PGSQLInstanceConfig:
 
     @property
     def worker_pod_label(self):
-        """Gets the worker_pod_label of this PGSQLInstanceConfig.
+        r"""Gets the worker_pod_label of this PGSQLInstanceConfig.
 
         Worker的POD标签
 
@@ -149,7 +149,7 @@ class PGSQLInstanceConfig:
 
     @worker_pod_label.setter
     def worker_pod_label(self, worker_pod_label):
-        """Sets the worker_pod_label of this PGSQLInstanceConfig.
+        r"""Sets the worker_pod_label of this PGSQLInstanceConfig.
 
         Worker的POD标签
 
@@ -160,7 +160,7 @@ class PGSQLInstanceConfig:
 
     @property
     def coordinator_port(self):
-        """Gets the coordinator_port of this PGSQLInstanceConfig.
+        r"""Gets the coordinator_port of this PGSQLInstanceConfig.
 
         Coordinator对外服务的端口
 
@@ -171,7 +171,7 @@ class PGSQLInstanceConfig:
 
     @coordinator_port.setter
     def coordinator_port(self, coordinator_port):
-        """Sets the coordinator_port of this PGSQLInstanceConfig.
+        r"""Sets the coordinator_port of this PGSQLInstanceConfig.
 
         Coordinator对外服务的端口
 
@@ -182,7 +182,7 @@ class PGSQLInstanceConfig:
 
     @property
     def runtime_param(self):
-        """Gets the runtime_param of this PGSQLInstanceConfig.
+        r"""Gets the runtime_param of this PGSQLInstanceConfig.
 
         json格式 元数据以及data位置信息
 
@@ -193,7 +193,7 @@ class PGSQLInstanceConfig:
 
     @runtime_param.setter
     def runtime_param(self, runtime_param):
-        """Sets the runtime_param of this PGSQLInstanceConfig.
+        r"""Sets the runtime_param of this PGSQLInstanceConfig.
 
         json格式 元数据以及data位置信息
 

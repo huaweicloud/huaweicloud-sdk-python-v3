@@ -26,7 +26,7 @@ class ShowAomMappingRulesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowAomMappingRulesResponse
+        r"""ShowAomMappingRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAomMappingRulesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowAomMappingRulesResponse.
+        r"""Gets the body of this ShowAomMappingRulesResponse.
 
         :return: The body of this ShowAomMappingRulesResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]
@@ -53,7 +53,7 @@ class ShowAomMappingRulesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAomMappingRulesResponse.
+        r"""Sets the body of this ShowAomMappingRulesResponse.
 
         :param body: The body of this ShowAomMappingRulesResponse.
         :type body: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]

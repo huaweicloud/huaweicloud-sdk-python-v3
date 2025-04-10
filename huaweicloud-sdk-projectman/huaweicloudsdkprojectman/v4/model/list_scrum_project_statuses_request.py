@@ -31,7 +31,7 @@ class ListScrumProjectStatusesRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, tracker_id=None):
-        """ListScrumProjectStatusesRequest
+        r"""ListScrumProjectStatusesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListScrumProjectStatusesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListScrumProjectStatusesRequest.
+        r"""Gets the project_id of this ListScrumProjectStatusesRequest.
 
         devcloud项目的32位id
 
@@ -74,7 +74,7 @@ class ListScrumProjectStatusesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListScrumProjectStatusesRequest.
+        r"""Sets the project_id of this ListScrumProjectStatusesRequest.
 
         devcloud项目的32位id
 
@@ -85,7 +85,7 @@ class ListScrumProjectStatusesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScrumProjectStatusesRequest.
+        r"""Gets the offset of this ListScrumProjectStatusesRequest.
 
         查询偏移量
 
@@ -96,7 +96,7 @@ class ListScrumProjectStatusesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScrumProjectStatusesRequest.
+        r"""Sets the offset of this ListScrumProjectStatusesRequest.
 
         查询偏移量
 
@@ -107,7 +107,7 @@ class ListScrumProjectStatusesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScrumProjectStatusesRequest.
+        r"""Gets the limit of this ListScrumProjectStatusesRequest.
 
         一次返回的数据,最小1,最大100
 
@@ -118,7 +118,7 @@ class ListScrumProjectStatusesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScrumProjectStatusesRequest.
+        r"""Sets the limit of this ListScrumProjectStatusesRequest.
 
         一次返回的数据,最小1,最大100
 
@@ -129,7 +129,7 @@ class ListScrumProjectStatusesRequest:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this ListScrumProjectStatusesRequest.
+        r"""Gets the tracker_id of this ListScrumProjectStatusesRequest.
 
         自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -140,7 +140,7 @@ class ListScrumProjectStatusesRequest:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this ListScrumProjectStatusesRequest.
+        r"""Sets the tracker_id of this ListScrumProjectStatusesRequest.
 
         自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 

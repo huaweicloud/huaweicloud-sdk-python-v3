@@ -41,7 +41,7 @@ class ListAvailableDisasterClustersRequest:
     }
 
     def __init__(self, primary_cluster_id=None, primary_spec_id=None, primary_cluster_dn_num=None, standby_region=None, standby_project_id=None, standby_az_code=None, dr_type=None, datastore_type=None, datastore_version=None):
-        """ListAvailableDisasterClustersRequest
+        r"""ListAvailableDisasterClustersRequest
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def primary_cluster_id(self):
-        """Gets the primary_cluster_id of this ListAvailableDisasterClustersRequest.
+        r"""Gets the primary_cluster_id of this ListAvailableDisasterClustersRequest.
 
         主集群ID
 
@@ -108,7 +108,7 @@ class ListAvailableDisasterClustersRequest:
 
     @primary_cluster_id.setter
     def primary_cluster_id(self, primary_cluster_id):
-        """Sets the primary_cluster_id of this ListAvailableDisasterClustersRequest.
+        r"""Sets the primary_cluster_id of this ListAvailableDisasterClustersRequest.
 
         主集群ID
 
@@ -119,7 +119,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def primary_spec_id(self):
-        """Gets the primary_spec_id of this ListAvailableDisasterClustersRequest.
+        r"""Gets the primary_spec_id of this ListAvailableDisasterClustersRequest.
 
         主集群规格ID
 
@@ -130,7 +130,7 @@ class ListAvailableDisasterClustersRequest:
 
     @primary_spec_id.setter
     def primary_spec_id(self, primary_spec_id):
-        """Sets the primary_spec_id of this ListAvailableDisasterClustersRequest.
+        r"""Sets the primary_spec_id of this ListAvailableDisasterClustersRequest.
 
         主集群规格ID
 
@@ -141,7 +141,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def primary_cluster_dn_num(self):
-        """Gets the primary_cluster_dn_num of this ListAvailableDisasterClustersRequest.
+        r"""Gets the primary_cluster_dn_num of this ListAvailableDisasterClustersRequest.
 
         主集群DN数量
 
@@ -152,7 +152,7 @@ class ListAvailableDisasterClustersRequest:
 
     @primary_cluster_dn_num.setter
     def primary_cluster_dn_num(self, primary_cluster_dn_num):
-        """Sets the primary_cluster_dn_num of this ListAvailableDisasterClustersRequest.
+        r"""Sets the primary_cluster_dn_num of this ListAvailableDisasterClustersRequest.
 
         主集群DN数量
 
@@ -163,7 +163,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def standby_region(self):
-        """Gets the standby_region of this ListAvailableDisasterClustersRequest.
+        r"""Gets the standby_region of this ListAvailableDisasterClustersRequest.
 
         备集群所在region
 
@@ -174,7 +174,7 @@ class ListAvailableDisasterClustersRequest:
 
     @standby_region.setter
     def standby_region(self, standby_region):
-        """Sets the standby_region of this ListAvailableDisasterClustersRequest.
+        r"""Sets the standby_region of this ListAvailableDisasterClustersRequest.
 
         备集群所在region
 
@@ -185,7 +185,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def standby_project_id(self):
-        """Gets the standby_project_id of this ListAvailableDisasterClustersRequest.
+        r"""Gets the standby_project_id of this ListAvailableDisasterClustersRequest.
 
         备集群项目ID
 
@@ -196,7 +196,7 @@ class ListAvailableDisasterClustersRequest:
 
     @standby_project_id.setter
     def standby_project_id(self, standby_project_id):
-        """Sets the standby_project_id of this ListAvailableDisasterClustersRequest.
+        r"""Sets the standby_project_id of this ListAvailableDisasterClustersRequest.
 
         备集群项目ID
 
@@ -207,7 +207,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def standby_az_code(self):
-        """Gets the standby_az_code of this ListAvailableDisasterClustersRequest.
+        r"""Gets the standby_az_code of this ListAvailableDisasterClustersRequest.
 
         备集群所在AZ
 
@@ -218,7 +218,7 @@ class ListAvailableDisasterClustersRequest:
 
     @standby_az_code.setter
     def standby_az_code(self, standby_az_code):
-        """Sets the standby_az_code of this ListAvailableDisasterClustersRequest.
+        r"""Sets the standby_az_code of this ListAvailableDisasterClustersRequest.
 
         备集群所在AZ
 
@@ -229,7 +229,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def dr_type(self):
-        """Gets the dr_type of this ListAvailableDisasterClustersRequest.
+        r"""Gets the dr_type of this ListAvailableDisasterClustersRequest.
 
         容灾类型
 
@@ -240,7 +240,7 @@ class ListAvailableDisasterClustersRequest:
 
     @dr_type.setter
     def dr_type(self, dr_type):
-        """Sets the dr_type of this ListAvailableDisasterClustersRequest.
+        r"""Sets the dr_type of this ListAvailableDisasterClustersRequest.
 
         容灾类型
 
@@ -251,7 +251,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListAvailableDisasterClustersRequest.
+        r"""Gets the datastore_type of this ListAvailableDisasterClustersRequest.
 
         数仓类型
 
@@ -262,7 +262,7 @@ class ListAvailableDisasterClustersRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListAvailableDisasterClustersRequest.
+        r"""Sets the datastore_type of this ListAvailableDisasterClustersRequest.
 
         数仓类型
 
@@ -273,7 +273,7 @@ class ListAvailableDisasterClustersRequest:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ListAvailableDisasterClustersRequest.
+        r"""Gets the datastore_version of this ListAvailableDisasterClustersRequest.
 
         数仓版本
 
@@ -284,7 +284,7 @@ class ListAvailableDisasterClustersRequest:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ListAvailableDisasterClustersRequest.
+        r"""Sets the datastore_version of this ListAvailableDisasterClustersRequest.
 
         数仓版本
 

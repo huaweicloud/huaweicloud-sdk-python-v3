@@ -30,7 +30,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, internet_bandwidth_limits=None, x_request_id=None):
-        """ListInternetBandwidthLimitsResponse
+        r"""ListInternetBandwidthLimitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListInternetBandwidthLimitsResponse.
+        r"""Gets the request_id of this ListInternetBandwidthLimitsResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListInternetBandwidthLimitsResponse.
+        r"""Sets the request_id of this ListInternetBandwidthLimitsResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
 
     @property
     def internet_bandwidth_limits(self):
-        """Gets the internet_bandwidth_limits of this ListInternetBandwidthLimitsResponse.
+        r"""Gets the internet_bandwidth_limits of this ListInternetBandwidthLimitsResponse.
 
         全域公网带宽限制列表
 
@@ -91,7 +91,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
 
     @internet_bandwidth_limits.setter
     def internet_bandwidth_limits(self, internet_bandwidth_limits):
-        """Sets the internet_bandwidth_limits of this ListInternetBandwidthLimitsResponse.
+        r"""Sets the internet_bandwidth_limits of this ListInternetBandwidthLimitsResponse.
 
         全域公网带宽限制列表
 
@@ -102,7 +102,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListInternetBandwidthLimitsResponse.
+        r"""Gets the x_request_id of this ListInternetBandwidthLimitsResponse.
 
         :return: The x_request_id of this ListInternetBandwidthLimitsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListInternetBandwidthLimitsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListInternetBandwidthLimitsResponse.
+        r"""Sets the x_request_id of this ListInternetBandwidthLimitsResponse.
 
         :param x_request_id: The x_request_id of this ListInternetBandwidthLimitsResponse.
         :type x_request_id: str

@@ -26,7 +26,7 @@ class ListDeployedResourcesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListDeployedResourcesResponse
+        r"""ListDeployedResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDeployedResourcesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListDeployedResourcesResponse.
+        r"""Gets the results of this ListDeployedResourcesResponse.
 
         请求结果列表，详情请参见ResultDetail字段数据结构说明。
 
@@ -55,7 +55,7 @@ class ListDeployedResourcesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListDeployedResourcesResponse.
+        r"""Sets the results of this ListDeployedResourcesResponse.
 
         请求结果列表，详情请参见ResultDetail字段数据结构说明。
 

@@ -25,7 +25,7 @@ class ParseCertificateSigningRequestRequest:
     }
 
     def __init__(self, body=None):
-        """ParseCertificateSigningRequestRequest
+        r"""ParseCertificateSigningRequestRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ParseCertificateSigningRequestRequest:
 
     @property
     def body(self):
-        """Gets the body of this ParseCertificateSigningRequestRequest.
+        r"""Gets the body of this ParseCertificateSigningRequestRequest.
 
         :return: The body of this ParseCertificateSigningRequestRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`
@@ -52,7 +52,7 @@ class ParseCertificateSigningRequestRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ParseCertificateSigningRequestRequest.
+        r"""Sets the body of this ParseCertificateSigningRequestRequest.
 
         :param body: The body of this ParseCertificateSigningRequestRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`

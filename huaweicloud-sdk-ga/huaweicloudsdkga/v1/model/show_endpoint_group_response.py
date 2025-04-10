@@ -28,7 +28,7 @@ class ShowEndpointGroupResponse(SdkResponse):
     }
 
     def __init__(self, endpoint_group=None, request_id=None):
-        """ShowEndpointGroupResponse
+        r"""ShowEndpointGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEndpointGroupResponse(SdkResponse):
 
     @property
     def endpoint_group(self):
-        """Gets the endpoint_group of this ShowEndpointGroupResponse.
+        r"""Gets the endpoint_group of this ShowEndpointGroupResponse.
 
         :return: The endpoint_group of this ShowEndpointGroupResponse.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointGroupDetail`
@@ -60,7 +60,7 @@ class ShowEndpointGroupResponse(SdkResponse):
 
     @endpoint_group.setter
     def endpoint_group(self, endpoint_group):
-        """Sets the endpoint_group of this ShowEndpointGroupResponse.
+        r"""Sets the endpoint_group of this ShowEndpointGroupResponse.
 
         :param endpoint_group: The endpoint_group of this ShowEndpointGroupResponse.
         :type endpoint_group: :class:`huaweicloudsdkga.v1.EndpointGroupDetail`
@@ -69,7 +69,7 @@ class ShowEndpointGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowEndpointGroupResponse.
+        r"""Gets the request_id of this ShowEndpointGroupResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowEndpointGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowEndpointGroupResponse.
+        r"""Sets the request_id of this ShowEndpointGroupResponse.
 
         请求ID。
 

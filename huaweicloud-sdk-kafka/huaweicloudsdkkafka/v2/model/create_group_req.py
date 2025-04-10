@@ -27,7 +27,7 @@ class CreateGroupReq:
     }
 
     def __init__(self, group_name=None, group_desc=None):
-        """CreateGroupReq
+        r"""CreateGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGroupReq:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateGroupReq.
+        r"""Gets the group_name of this CreateGroupReq.
 
         消费组名称
 
@@ -60,7 +60,7 @@ class CreateGroupReq:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateGroupReq.
+        r"""Sets the group_name of this CreateGroupReq.
 
         消费组名称
 
@@ -71,7 +71,7 @@ class CreateGroupReq:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this CreateGroupReq.
+        r"""Gets the group_desc of this CreateGroupReq.
 
         消费组描述
 
@@ -82,7 +82,7 @@ class CreateGroupReq:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this CreateGroupReq.
+        r"""Sets the group_desc of this CreateGroupReq.
 
         消费组描述
 

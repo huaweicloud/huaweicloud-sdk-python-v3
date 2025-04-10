@@ -25,7 +25,7 @@ class SetCPUThresholdData:
     }
 
     def __init__(self, cpu=None):
-        """SetCPUThresholdData
+        r"""SetCPUThresholdData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetCPUThresholdData:
 
     @property
     def cpu(self):
-        """Gets the cpu of this SetCPUThresholdData.
+        r"""Gets the cpu of this SetCPUThresholdData.
 
         CPU阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 
@@ -54,7 +54,7 @@ class SetCPUThresholdData:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this SetCPUThresholdData.
+        r"""Sets the cpu of this SetCPUThresholdData.
 
         CPU阈值设定值，单位为百分比(%)。 取值范围：0 - 100。
 

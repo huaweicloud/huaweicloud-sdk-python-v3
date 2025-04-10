@@ -31,7 +31,7 @@ class HapComponentInfo:
     }
 
     def __init__(self, permission=None, page=None, service=None, data=None):
-        """HapComponentInfo
+        r"""HapComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HapComponentInfo:
 
     @property
     def permission(self):
-        """Gets the permission of this HapComponentInfo.
+        r"""Gets the permission of this HapComponentInfo.
 
         权限列表
 
@@ -75,7 +75,7 @@ class HapComponentInfo:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this HapComponentInfo.
+        r"""Sets the permission of this HapComponentInfo.
 
         权限列表
 
@@ -86,7 +86,7 @@ class HapComponentInfo:
 
     @property
     def page(self):
-        """Gets the page of this HapComponentInfo.
+        r"""Gets the page of this HapComponentInfo.
 
         鸿蒙Page列表，仅鸿蒙任务存在该组件
 
@@ -97,7 +97,7 @@ class HapComponentInfo:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this HapComponentInfo.
+        r"""Sets the page of this HapComponentInfo.
 
         鸿蒙Page列表，仅鸿蒙任务存在该组件
 
@@ -108,7 +108,7 @@ class HapComponentInfo:
 
     @property
     def service(self):
-        """Gets the service of this HapComponentInfo.
+        r"""Gets the service of this HapComponentInfo.
 
         鸿蒙service列表，仅鸿蒙任务存在该组件
 
@@ -119,7 +119,7 @@ class HapComponentInfo:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this HapComponentInfo.
+        r"""Sets the service of this HapComponentInfo.
 
         鸿蒙service列表，仅鸿蒙任务存在该组件
 
@@ -130,7 +130,7 @@ class HapComponentInfo:
 
     @property
     def data(self):
-        """Gets the data of this HapComponentInfo.
+        r"""Gets the data of this HapComponentInfo.
 
         鸿蒙data息列表，仅鸿蒙任务存在该组件
 
@@ -141,7 +141,7 @@ class HapComponentInfo:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this HapComponentInfo.
+        r"""Sets the data of this HapComponentInfo.
 
         鸿蒙data息列表，仅鸿蒙任务存在该组件
 

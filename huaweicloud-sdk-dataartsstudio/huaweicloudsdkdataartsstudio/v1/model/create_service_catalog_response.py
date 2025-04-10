@@ -38,7 +38,7 @@ class CreateServiceCatalogResponse(SdkResponse):
     }
 
     def __init__(self, catalog_id=None, name=None, description=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """CreateServiceCatalogResponse
+        r"""CreateServiceCatalogResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this CreateServiceCatalogResponse.
+        r"""Gets the catalog_id of this CreateServiceCatalogResponse.
 
         目录编号
 
@@ -97,7 +97,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this CreateServiceCatalogResponse.
+        r"""Sets the catalog_id of this CreateServiceCatalogResponse.
 
         目录编号
 
@@ -108,7 +108,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateServiceCatalogResponse.
+        r"""Gets the name of this CreateServiceCatalogResponse.
 
         名称
 
@@ -119,7 +119,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateServiceCatalogResponse.
+        r"""Sets the name of this CreateServiceCatalogResponse.
 
         名称
 
@@ -130,7 +130,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateServiceCatalogResponse.
+        r"""Gets the description of this CreateServiceCatalogResponse.
 
         描述
 
@@ -141,7 +141,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateServiceCatalogResponse.
+        r"""Sets the description of this CreateServiceCatalogResponse.
 
         描述
 
@@ -152,7 +152,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateServiceCatalogResponse.
+        r"""Gets the create_time of this CreateServiceCatalogResponse.
 
         创建时间
 
@@ -163,7 +163,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateServiceCatalogResponse.
+        r"""Sets the create_time of this CreateServiceCatalogResponse.
 
         创建时间
 
@@ -174,7 +174,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this CreateServiceCatalogResponse.
+        r"""Gets the create_user of this CreateServiceCatalogResponse.
 
         创建者
 
@@ -185,7 +185,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this CreateServiceCatalogResponse.
+        r"""Sets the create_user of this CreateServiceCatalogResponse.
 
         创建者
 
@@ -196,7 +196,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateServiceCatalogResponse.
+        r"""Gets the update_time of this CreateServiceCatalogResponse.
 
         更新时间
 
@@ -207,7 +207,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateServiceCatalogResponse.
+        r"""Sets the update_time of this CreateServiceCatalogResponse.
 
         更新时间
 
@@ -218,7 +218,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this CreateServiceCatalogResponse.
+        r"""Gets the update_user of this CreateServiceCatalogResponse.
 
         更新者
 
@@ -229,7 +229,7 @@ class CreateServiceCatalogResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this CreateServiceCatalogResponse.
+        r"""Sets the update_user of this CreateServiceCatalogResponse.
 
         更新者
 

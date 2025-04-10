@@ -34,7 +34,7 @@ class EvsAsyncClient(Client):
         return client_builder
 
     def batch_create_volume_tags_async(self, request):
-        """为指定云硬盘批量添加标签
+        r"""为指定云硬盘批量添加标签
 
         为指定云硬盘批量添加标签。
         
@@ -104,7 +104,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def batch_delete_volume_tags_async(self, request):
-        """为指定云硬盘批量删除标签
+        r"""为指定云硬盘批量删除标签
 
         为指定云硬盘批量删除标签。
         
@@ -171,7 +171,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_accept_volume_transfer_async(self, request):
-        """接受云硬盘过户
+        r"""接受云硬盘过户
 
         通过云硬盘过户记录ID以及身份认证密钥来接受云硬盘过户。
         
@@ -238,7 +238,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_create_volume_transfer_async(self, request):
-        """创建云硬盘过户
+        r"""创建云硬盘过户
 
         指定云硬盘来创建云硬盘过户记录，创建成功后，会返回过户记录ID以及身份认证密钥。
         云硬盘在过户过程中的状态变化如下：创建云硬盘过户后，云硬盘状态由“available”变为“awaiting-transfer”。当云硬盘过户被接收后，云硬盘状态变为“available”。
@@ -304,7 +304,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_delete_volume_transfer_async(self, request):
-        """删除云硬盘过户
+        r"""删除云硬盘过户
 
         当云硬盘过户未被接受时，您可以删除云硬盘过户记录，接受后则无法执行删除操作。
         
@@ -369,7 +369,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_list_availability_zones_async(self, request):
-        """查询所有的可用分区信息
+        r"""查询所有的可用分区信息
 
         查询所有的可用分区信息。
         
@@ -432,7 +432,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_list_quotas_async(self, request):
-        """查询租户的详细配额
+        r"""查询租户的详细配额
 
         查询租户的详细配额。
         
@@ -499,7 +499,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_list_volume_transfers_async(self, request):
-        """查询云硬盘过户记录列表概要
+        r"""查询云硬盘过户记录列表概要
 
         查询当前租户下所有云硬盘的过户记录列表
         
@@ -566,7 +566,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_list_volume_types_async(self, request):
-        """查询云硬盘类型列表
+        r"""查询云硬盘类型列表
 
         查询云硬盘类型列表。
         
@@ -629,7 +629,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def cinder_show_volume_transfer_async(self, request):
-        """查询单个云硬盘过户记录详情
+        r"""查询单个云硬盘过户记录详情
 
         查询单个云硬盘的过户记录详情，比如过户记录创建时间、ID以及名称等信息。
         
@@ -694,7 +694,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def create_snapshot_async(self, request):
-        """创建云硬盘快照
+        r"""创建云硬盘快照
 
         创建云硬盘快照。
         
@@ -759,7 +759,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def create_volume_async(self, request):
-        """创建云硬盘
+        r"""创建云硬盘
 
         创建按需或包周期云硬盘。
         在创建包周期云硬盘的场景下：
@@ -831,7 +831,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def delete_snapshot_async(self, request):
-        """删除云硬盘快照
+        r"""删除云硬盘快照
 
         删除云硬盘快照。
         
@@ -896,7 +896,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def delete_volume_async(self, request):
-        """删除云硬盘
+        r"""删除云硬盘
 
         删除一个云硬盘。
         
@@ -961,7 +961,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def list_snapshots_async(self, request):
-        """查询云硬盘快照详情列表
+        r"""查询云硬盘快照详情列表
 
         查询云硬盘快照详细列表信息。
         
@@ -1046,7 +1046,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def list_volume_tags_async(self, request):
-        """获取云硬盘资源的所有标签
+        r"""获取云硬盘资源的所有标签
 
         获取某个租户的所有云硬盘资源的标签信息。
         
@@ -1109,7 +1109,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def list_volumes_async(self, request):
-        """查询所有云硬盘详情
+        r"""查询所有云硬盘详情
 
         查询所有云硬盘的详细信息。
         
@@ -1210,7 +1210,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def list_volumes_by_tags_async(self, request):
-        """通过标签查询云硬盘资源实例详情
+        r"""通过标签查询云硬盘资源实例详情
 
         通过标签查询云硬盘资源实例详情。
         
@@ -1275,7 +1275,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def modify_volume_qo_s_async(self, request):
-        """修改云硬盘QoS
+        r"""修改云硬盘QoS
 
         调整云硬盘的iops或者吞吐量。
         
@@ -1342,7 +1342,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def resize_volume_async(self, request):
-        """扩容云硬盘
+        r"""扩容云硬盘
 
         对按需或者包周期云硬盘进行扩容。
         在扩容包周期云硬盘的场景下：
@@ -1414,7 +1414,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def retype_volume_async(self, request):
-        """磁盘类型变更
+        r"""磁盘类型变更
 
         对按需或者包周期云硬盘进行磁盘类型变更。
         [在磁盘类型变更包周期云硬盘的场景下：](tag:hws)
@@ -1486,7 +1486,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def rollback_snapshot_async(self, request):
-        """回滚快照到云硬盘
+        r"""回滚快照到云硬盘
 
         将快照数据回滚到云硬盘。支持企业项目授权功能。
         
@@ -1553,7 +1553,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def show_job_async(self, request):
-        """查询job的状态
+        r"""查询job的状态
 
         查询Job的执行状态。
         可用于查询创建云硬盘，扩容云硬盘，删除云硬盘等API的执行状态。
@@ -1619,7 +1619,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def show_snapshot_async(self, request):
-        """查询单个云硬盘快照详情
+        r"""查询单个云硬盘快照详情
 
         查询单个云硬盘快照信息。支持企业项目授权功能。
         
@@ -1684,7 +1684,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def show_volume_async(self, request):
-        """查询单个云硬盘详情
+        r"""查询单个云硬盘详情
 
         查询单个云硬盘的详细信息。支持企业项目授权功能。
         
@@ -1749,7 +1749,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def show_volume_tags_async(self, request):
-        """查询云硬盘标签
+        r"""查询云硬盘标签
 
         查询指定云硬盘的标签信息。
         
@@ -1814,7 +1814,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def unsubscribe_postpaid_volume_async(self, request):
-        """退订包周期计费模式的云硬盘
+        r"""退订包周期计费模式的云硬盘
 
         退订包周期计费模式的云硬盘，有如下约束：
         -  系统盘、启动盘不可使用当前接口退订，必须和弹性云服务器一起退订
@@ -1881,7 +1881,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def update_snapshot_async(self, request):
-        """更新云硬盘快照
+        r"""更新云硬盘快照
 
         更新云硬盘快照。支持企业项目授权功能。
         
@@ -1948,7 +1948,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def update_volume_async(self, request):
-        """更新云硬盘
+        r"""更新云硬盘
 
         更新一个云硬盘的名称和描述。
         
@@ -2015,7 +2015,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def list_versions_async(self, request):
-        """查询接口版本信息列表
+        r"""查询接口版本信息列表
 
         查询接口版本信息列表。
         
@@ -2078,7 +2078,7 @@ class EvsAsyncClient(Client):
         return http_info
 
     def show_version_async(self, request):
-        """查询API接口的版本信息
+        r"""查询API接口的版本信息
 
         查询接口的指定版本信息。
         

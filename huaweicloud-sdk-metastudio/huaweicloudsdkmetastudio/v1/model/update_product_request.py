@@ -29,7 +29,7 @@ class UpdateProductRequest:
     }
 
     def __init__(self, x_app_user_id=None, product_id=None, body=None):
-        """UpdateProductRequest
+        r"""UpdateProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateProductRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateProductRequest.
+        r"""Gets the x_app_user_id of this UpdateProductRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateProductRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateProductRequest.
+        r"""Sets the x_app_user_id of this UpdateProductRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateProductRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this UpdateProductRequest.
+        r"""Gets the product_id of this UpdateProductRequest.
 
         商品ID。
 
@@ -89,7 +89,7 @@ class UpdateProductRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this UpdateProductRequest.
+        r"""Sets the product_id of this UpdateProductRequest.
 
         商品ID。
 
@@ -100,7 +100,7 @@ class UpdateProductRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProductRequest.
+        r"""Gets the body of this UpdateProductRequest.
 
         :return: The body of this UpdateProductRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateProductRequestBody`
@@ -109,7 +109,7 @@ class UpdateProductRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProductRequest.
+        r"""Sets the body of this UpdateProductRequest.
 
         :param body: The body of this UpdateProductRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateProductRequestBody`

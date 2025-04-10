@@ -25,7 +25,7 @@ class OperateSqlFilterRuleReq:
     }
 
     def __init__(self, sql_filter_rules=None):
-        """OperateSqlFilterRuleReq
+        r"""OperateSqlFilterRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OperateSqlFilterRuleReq:
 
     @property
     def sql_filter_rules(self):
-        """Gets the sql_filter_rules of this OperateSqlFilterRuleReq.
+        r"""Gets the sql_filter_rules of this OperateSqlFilterRuleReq.
 
         :return: The sql_filter_rules of this OperateSqlFilterRuleReq.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.NodeSqlFilterRuleInfo`]
@@ -51,7 +51,7 @@ class OperateSqlFilterRuleReq:
 
     @sql_filter_rules.setter
     def sql_filter_rules(self, sql_filter_rules):
-        """Sets the sql_filter_rules of this OperateSqlFilterRuleReq.
+        r"""Sets the sql_filter_rules of this OperateSqlFilterRuleReq.
 
         :param sql_filter_rules: The sql_filter_rules of this OperateSqlFilterRuleReq.
         :type sql_filter_rules: list[:class:`huaweicloudsdkgaussdb.v3.NodeSqlFilterRuleInfo`]

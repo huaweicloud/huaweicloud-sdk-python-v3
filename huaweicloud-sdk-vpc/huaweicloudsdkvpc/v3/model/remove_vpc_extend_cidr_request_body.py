@@ -27,7 +27,7 @@ class RemoveVpcExtendCidrRequestBody:
     }
 
     def __init__(self, dry_run=None, vpc=None):
-        """RemoveVpcExtendCidrRequestBody
+        r"""RemoveVpcExtendCidrRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveVpcExtendCidrRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this RemoveVpcExtendCidrRequestBody.
+        r"""Gets the dry_run of this RemoveVpcExtendCidrRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会移除VPC扩展网段。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接移除VPC扩展网段。
 
@@ -60,7 +60,7 @@ class RemoveVpcExtendCidrRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this RemoveVpcExtendCidrRequestBody.
+        r"""Sets the dry_run of this RemoveVpcExtendCidrRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会移除VPC扩展网段。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接移除VPC扩展网段。
 
@@ -71,7 +71,7 @@ class RemoveVpcExtendCidrRequestBody:
 
     @property
     def vpc(self):
-        """Gets the vpc of this RemoveVpcExtendCidrRequestBody.
+        r"""Gets the vpc of this RemoveVpcExtendCidrRequestBody.
 
         :return: The vpc of this RemoveVpcExtendCidrRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveExtendCidrOption`
@@ -80,7 +80,7 @@ class RemoveVpcExtendCidrRequestBody:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this RemoveVpcExtendCidrRequestBody.
+        r"""Sets the vpc of this RemoveVpcExtendCidrRequestBody.
 
         :param vpc: The vpc of this RemoveVpcExtendCidrRequestBody.
         :type vpc: :class:`huaweicloudsdkvpc.v3.RemoveExtendCidrOption`

@@ -29,7 +29,7 @@ class RegisterDbUserRequestBody:
     }
 
     def __init__(self, db_username=None, db_user_password=None, datastore_type=None):
-        """RegisterDbUserRequestBody
+        r"""RegisterDbUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RegisterDbUserRequestBody:
 
     @property
     def db_username(self):
-        """Gets the db_username of this RegisterDbUserRequestBody.
+        r"""Gets the db_username of this RegisterDbUserRequestBody.
 
         数据库用户名称
 
@@ -65,7 +65,7 @@ class RegisterDbUserRequestBody:
 
     @db_username.setter
     def db_username(self, db_username):
-        """Sets the db_username of this RegisterDbUserRequestBody.
+        r"""Sets the db_username of this RegisterDbUserRequestBody.
 
         数据库用户名称
 
@@ -76,7 +76,7 @@ class RegisterDbUserRequestBody:
 
     @property
     def db_user_password(self):
-        """Gets the db_user_password of this RegisterDbUserRequestBody.
+        r"""Gets the db_user_password of this RegisterDbUserRequestBody.
 
         数据库用户密码
 
@@ -87,7 +87,7 @@ class RegisterDbUserRequestBody:
 
     @db_user_password.setter
     def db_user_password(self, db_user_password):
-        """Sets the db_user_password of this RegisterDbUserRequestBody.
+        r"""Sets the db_user_password of this RegisterDbUserRequestBody.
 
         数据库用户密码
 
@@ -98,7 +98,7 @@ class RegisterDbUserRequestBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this RegisterDbUserRequestBody.
+        r"""Gets the datastore_type of this RegisterDbUserRequestBody.
 
         数据库类型，取值为MySQL
 
@@ -109,7 +109,7 @@ class RegisterDbUserRequestBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this RegisterDbUserRequestBody.
+        r"""Sets the datastore_type of this RegisterDbUserRequestBody.
 
         数据库类型，取值为MySQL
 

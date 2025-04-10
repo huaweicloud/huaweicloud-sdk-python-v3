@@ -33,7 +33,7 @@ class ListSmsDetailsRequest:
     }
 
     def __init__(self, limit=None, offset=None, cid=None, start_time=None, end_time=None):
-        """ListSmsDetailsRequest
+        r"""ListSmsDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSmsDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSmsDetailsRequest.
+        r"""Gets the limit of this ListSmsDetailsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -82,7 +82,7 @@ class ListSmsDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSmsDetailsRequest.
+        r"""Sets the limit of this ListSmsDetailsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -93,7 +93,7 @@ class ListSmsDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSmsDetailsRequest.
+        r"""Gets the offset of this ListSmsDetailsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -104,7 +104,7 @@ class ListSmsDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSmsDetailsRequest.
+        r"""Sets the offset of this ListSmsDetailsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -115,7 +115,7 @@ class ListSmsDetailsRequest:
 
     @property
     def cid(self):
-        """Gets the cid of this ListSmsDetailsRequest.
+        r"""Gets the cid of this ListSmsDetailsRequest.
 
         容器ID
 
@@ -126,7 +126,7 @@ class ListSmsDetailsRequest:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this ListSmsDetailsRequest.
+        r"""Sets the cid of this ListSmsDetailsRequest.
 
         容器ID
 
@@ -137,7 +137,7 @@ class ListSmsDetailsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSmsDetailsRequest.
+        r"""Gets the start_time of this ListSmsDetailsRequest.
 
         开始时间
 
@@ -148,7 +148,7 @@ class ListSmsDetailsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSmsDetailsRequest.
+        r"""Sets the start_time of this ListSmsDetailsRequest.
 
         开始时间
 
@@ -159,7 +159,7 @@ class ListSmsDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSmsDetailsRequest.
+        r"""Gets the end_time of this ListSmsDetailsRequest.
 
         结束时间
 
@@ -170,7 +170,7 @@ class ListSmsDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSmsDetailsRequest.
+        r"""Sets the end_time of this ListSmsDetailsRequest.
 
         结束时间
 

@@ -25,7 +25,7 @@ class CreateClusterReq:
     }
 
     def __init__(self, cluster=None):
-        """CreateClusterReq
+        r"""CreateClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateClusterReq:
 
     @property
     def cluster(self):
-        """Gets the cluster of this CreateClusterReq.
+        r"""Gets the cluster of this CreateClusterReq.
 
         :return: The cluster of this CreateClusterReq.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterBody`
@@ -51,7 +51,7 @@ class CreateClusterReq:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this CreateClusterReq.
+        r"""Sets the cluster of this CreateClusterReq.
 
         :param cluster: The cluster of this CreateClusterReq.
         :type cluster: :class:`huaweicloudsdkcss.v1.CreateClusterBody`

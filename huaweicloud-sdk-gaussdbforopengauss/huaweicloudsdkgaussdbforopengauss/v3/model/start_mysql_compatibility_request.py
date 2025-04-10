@@ -29,7 +29,7 @@ class StartMysqlCompatibilityRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """StartMysqlCompatibilityRequest
+        r"""StartMysqlCompatibilityRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartMysqlCompatibilityRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartMysqlCompatibilityRequest.
+        r"""Gets the instance_id of this StartMysqlCompatibilityRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class StartMysqlCompatibilityRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartMysqlCompatibilityRequest.
+        r"""Sets the instance_id of this StartMysqlCompatibilityRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class StartMysqlCompatibilityRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartMysqlCompatibilityRequest.
+        r"""Gets the x_language of this StartMysqlCompatibilityRequest.
 
         语言。默认值：en-us。
 
@@ -89,7 +89,7 @@ class StartMysqlCompatibilityRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartMysqlCompatibilityRequest.
+        r"""Sets the x_language of this StartMysqlCompatibilityRequest.
 
         语言。默认值：en-us。
 
@@ -100,7 +100,7 @@ class StartMysqlCompatibilityRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartMysqlCompatibilityRequest.
+        r"""Gets the body of this StartMysqlCompatibilityRequest.
 
         :return: The body of this StartMysqlCompatibilityRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartMySQLCompatibilityRequestBody`
@@ -109,7 +109,7 @@ class StartMysqlCompatibilityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartMysqlCompatibilityRequest.
+        r"""Sets the body of this StartMysqlCompatibilityRequest.
 
         :param body: The body of this StartMysqlCompatibilityRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartMySQLCompatibilityRequestBody`

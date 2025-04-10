@@ -25,7 +25,7 @@ class DeleteShareAppsRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteShareAppsRequest
+        r"""DeleteShareAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteShareAppsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteShareAppsRequest.
+        r"""Gets the body of this DeleteShareAppsRequest.
 
         :return: The body of this DeleteShareAppsRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareAppsRequestBody`
@@ -52,7 +52,7 @@ class DeleteShareAppsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteShareAppsRequest.
+        r"""Sets the body of this DeleteShareAppsRequest.
 
         :param body: The body of this DeleteShareAppsRequest.
         :type body: :class:`huaweicloudsdkcph.v1.DeleteShareAppsRequestBody`

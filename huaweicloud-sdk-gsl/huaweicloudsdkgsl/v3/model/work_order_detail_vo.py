@@ -39,7 +39,7 @@ class WorkOrderDetailVo:
     }
 
     def __init__(self, id=None, sim_type=None, status=None, cid=None, sim_card_id=None, create_time=None, finish_time=None, description=None):
-        """WorkOrderDetailVo
+        r"""WorkOrderDetailVo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class WorkOrderDetailVo:
 
     @property
     def id(self):
-        """Gets the id of this WorkOrderDetailVo.
+        r"""Gets the id of this WorkOrderDetailVo.
 
         业务受理ID
 
@@ -103,7 +103,7 @@ class WorkOrderDetailVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkOrderDetailVo.
+        r"""Sets the id of this WorkOrderDetailVo.
 
         业务受理ID
 
@@ -114,7 +114,7 @@ class WorkOrderDetailVo:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this WorkOrderDetailVo.
+        r"""Gets the sim_type of this WorkOrderDetailVo.
 
         SIM卡类型:3.实体卡
 
@@ -125,7 +125,7 @@ class WorkOrderDetailVo:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this WorkOrderDetailVo.
+        r"""Sets the sim_type of this WorkOrderDetailVo.
 
         SIM卡类型:3.实体卡
 
@@ -136,7 +136,7 @@ class WorkOrderDetailVo:
 
     @property
     def status(self):
-        """Gets the status of this WorkOrderDetailVo.
+        r"""Gets the status of this WorkOrderDetailVo.
 
         业务受理明细状态：1成功、2处理中、3失败
 
@@ -147,7 +147,7 @@ class WorkOrderDetailVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkOrderDetailVo.
+        r"""Sets the status of this WorkOrderDetailVo.
 
         业务受理明细状态：1成功、2处理中、3失败
 
@@ -158,7 +158,7 @@ class WorkOrderDetailVo:
 
     @property
     def cid(self):
-        """Gets the cid of this WorkOrderDetailVo.
+        r"""Gets the cid of this WorkOrderDetailVo.
 
         容器ID
 
@@ -169,7 +169,7 @@ class WorkOrderDetailVo:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this WorkOrderDetailVo.
+        r"""Sets the cid of this WorkOrderDetailVo.
 
         容器ID
 
@@ -180,7 +180,7 @@ class WorkOrderDetailVo:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this WorkOrderDetailVo.
+        r"""Gets the sim_card_id of this WorkOrderDetailVo.
 
         SIM卡标识
 
@@ -191,7 +191,7 @@ class WorkOrderDetailVo:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this WorkOrderDetailVo.
+        r"""Sets the sim_card_id of this WorkOrderDetailVo.
 
         SIM卡标识
 
@@ -202,7 +202,7 @@ class WorkOrderDetailVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WorkOrderDetailVo.
+        r"""Gets the create_time of this WorkOrderDetailVo.
 
         创建时间
 
@@ -213,7 +213,7 @@ class WorkOrderDetailVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WorkOrderDetailVo.
+        r"""Sets the create_time of this WorkOrderDetailVo.
 
         创建时间
 
@@ -224,7 +224,7 @@ class WorkOrderDetailVo:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this WorkOrderDetailVo.
+        r"""Gets the finish_time of this WorkOrderDetailVo.
 
         完成时间
 
@@ -235,7 +235,7 @@ class WorkOrderDetailVo:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this WorkOrderDetailVo.
+        r"""Sets the finish_time of this WorkOrderDetailVo.
 
         完成时间
 
@@ -246,7 +246,7 @@ class WorkOrderDetailVo:
 
     @property
     def description(self):
-        """Gets the description of this WorkOrderDetailVo.
+        r"""Gets the description of this WorkOrderDetailVo.
 
         描述
 
@@ -257,7 +257,7 @@ class WorkOrderDetailVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkOrderDetailVo.
+        r"""Sets the description of this WorkOrderDetailVo.
 
         描述
 

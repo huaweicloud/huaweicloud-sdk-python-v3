@@ -27,7 +27,7 @@ class DescribeBackupEncryptStatusRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """DescribeBackupEncryptStatusRequest
+        r"""DescribeBackupEncryptStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DescribeBackupEncryptStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DescribeBackupEncryptStatusRequest.
+        r"""Gets the x_language of this DescribeBackupEncryptStatusRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class DescribeBackupEncryptStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DescribeBackupEncryptStatusRequest.
+        r"""Sets the x_language of this DescribeBackupEncryptStatusRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class DescribeBackupEncryptStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DescribeBackupEncryptStatusRequest.
+        r"""Gets the instance_id of this DescribeBackupEncryptStatusRequest.
 
         租户在某一project下的实例ID。
 
@@ -82,7 +82,7 @@ class DescribeBackupEncryptStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DescribeBackupEncryptStatusRequest.
+        r"""Sets the instance_id of this DescribeBackupEncryptStatusRequest.
 
         租户在某一project下的实例ID。
 

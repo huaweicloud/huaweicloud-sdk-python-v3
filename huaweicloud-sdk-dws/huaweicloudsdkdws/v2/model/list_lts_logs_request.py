@@ -29,7 +29,7 @@ class ListLtsLogsRequest:
     }
 
     def __init__(self, cluster_id=None, limit=None, offset=None):
-        """ListLtsLogsRequest
+        r"""ListLtsLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListLtsLogsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListLtsLogsRequest.
+        r"""Gets the cluster_id of this ListLtsLogsRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class ListLtsLogsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListLtsLogsRequest.
+        r"""Sets the cluster_id of this ListLtsLogsRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class ListLtsLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLtsLogsRequest.
+        r"""Gets the limit of this ListLtsLogsRequest.
 
         查询条数
 
@@ -89,7 +89,7 @@ class ListLtsLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLtsLogsRequest.
+        r"""Sets the limit of this ListLtsLogsRequest.
 
         查询条数
 
@@ -100,7 +100,7 @@ class ListLtsLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLtsLogsRequest.
+        r"""Gets the offset of this ListLtsLogsRequest.
 
         偏移量
 
@@ -111,7 +111,7 @@ class ListLtsLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLtsLogsRequest.
+        r"""Sets the offset of this ListLtsLogsRequest.
 
         偏移量
 

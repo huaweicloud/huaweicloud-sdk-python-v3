@@ -26,7 +26,7 @@ class ResetLinkAttributeAndStandardResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ResetLinkAttributeAndStandardResponse
+        r"""ResetLinkAttributeAndStandardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetLinkAttributeAndStandardResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ResetLinkAttributeAndStandardResponse.
+        r"""Gets the data of this ResetLinkAttributeAndStandardResponse.
 
         :return: The data of this ResetLinkAttributeAndStandardResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ResetLinkAttributeAndStandardResultData`
@@ -53,7 +53,7 @@ class ResetLinkAttributeAndStandardResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ResetLinkAttributeAndStandardResponse.
+        r"""Sets the data of this ResetLinkAttributeAndStandardResponse.
 
         :param data: The data of this ResetLinkAttributeAndStandardResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ResetLinkAttributeAndStandardResultData`

@@ -27,7 +27,7 @@ class PrivacyComplianceSubtype:
     }
 
     def __init__(self, desc=None, checker_rules=None):
-        """PrivacyComplianceSubtype
+        r"""PrivacyComplianceSubtype
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PrivacyComplianceSubtype:
 
     @property
     def desc(self):
-        """Gets the desc of this PrivacyComplianceSubtype.
+        r"""Gets the desc of this PrivacyComplianceSubtype.
 
         隐私合规子类型描述
 
@@ -61,7 +61,7 @@ class PrivacyComplianceSubtype:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this PrivacyComplianceSubtype.
+        r"""Sets the desc of this PrivacyComplianceSubtype.
 
         隐私合规子类型描述
 
@@ -72,7 +72,7 @@ class PrivacyComplianceSubtype:
 
     @property
     def checker_rules(self):
-        """Gets the checker_rules of this PrivacyComplianceSubtype.
+        r"""Gets the checker_rules of this PrivacyComplianceSubtype.
 
         检测项列表
 
@@ -83,7 +83,7 @@ class PrivacyComplianceSubtype:
 
     @checker_rules.setter
     def checker_rules(self, checker_rules):
-        """Sets the checker_rules of this PrivacyComplianceSubtype.
+        r"""Sets the checker_rules of this PrivacyComplianceSubtype.
 
         检测项列表
 

@@ -26,7 +26,7 @@ class CreateSqlserverDbUserResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """CreateSqlserverDbUserResponse
+        r"""CreateSqlserverDbUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSqlserverDbUserResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this CreateSqlserverDbUserResponse.
+        r"""Gets the resp of this CreateSqlserverDbUserResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class CreateSqlserverDbUserResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this CreateSqlserverDbUserResponse.
+        r"""Sets the resp of this CreateSqlserverDbUserResponse.
 
         操作结果。
 

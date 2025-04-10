@@ -37,7 +37,7 @@ class ListFlavorsResult:
     }
 
     def __init__(self, engine_name=None, engine_version=None, vcpus=None, ram=None, spec_code=None, availability_zone=None, az_status=None):
-        """ListFlavorsResult
+        r"""ListFlavorsResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListFlavorsResult:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListFlavorsResult.
+        r"""Gets the engine_name of this ListFlavorsResult.
 
         引擎名称。
 
@@ -89,7 +89,7 @@ class ListFlavorsResult:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListFlavorsResult.
+        r"""Sets the engine_name of this ListFlavorsResult.
 
         引擎名称。
 
@@ -100,7 +100,7 @@ class ListFlavorsResult:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ListFlavorsResult.
+        r"""Gets the engine_version of this ListFlavorsResult.
 
         引擎版本。
 
@@ -111,7 +111,7 @@ class ListFlavorsResult:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ListFlavorsResult.
+        r"""Sets the engine_version of this ListFlavorsResult.
 
         引擎版本。
 
@@ -122,7 +122,7 @@ class ListFlavorsResult:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ListFlavorsResult.
+        r"""Gets the vcpus of this ListFlavorsResult.
 
         CPU核数。
 
@@ -133,7 +133,7 @@ class ListFlavorsResult:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ListFlavorsResult.
+        r"""Sets the vcpus of this ListFlavorsResult.
 
         CPU核数。
 
@@ -144,7 +144,7 @@ class ListFlavorsResult:
 
     @property
     def ram(self):
-        """Gets the ram of this ListFlavorsResult.
+        r"""Gets the ram of this ListFlavorsResult.
 
         内存大小，单位为兆字节。
 
@@ -155,7 +155,7 @@ class ListFlavorsResult:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ListFlavorsResult.
+        r"""Sets the ram of this ListFlavorsResult.
 
         内存大小，单位为兆字节。
 
@@ -166,7 +166,7 @@ class ListFlavorsResult:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListFlavorsResult.
+        r"""Gets the spec_code of this ListFlavorsResult.
 
         资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GeminiDB的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
 
@@ -177,7 +177,7 @@ class ListFlavorsResult:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListFlavorsResult.
+        r"""Sets the spec_code of this ListFlavorsResult.
 
         资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GeminiDB的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
 
@@ -188,7 +188,7 @@ class ListFlavorsResult:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListFlavorsResult.
+        r"""Gets the availability_zone of this ListFlavorsResult.
 
         支持该规格的可用区ID。   - 该字段已废弃，请不要使用。
 
@@ -199,7 +199,7 @@ class ListFlavorsResult:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListFlavorsResult.
+        r"""Sets the availability_zone of this ListFlavorsResult.
 
         支持该规格的可用区ID。   - 该字段已废弃，请不要使用。
 
@@ -210,7 +210,7 @@ class ListFlavorsResult:
 
     @property
     def az_status(self):
-        """Gets the az_status of this ListFlavorsResult.
+        r"""Gets the az_status of this ListFlavorsResult.
 
         规格在可用区内的状态，包含以下状态：   - normal，在售。   - unsupported，暂不支持该规格。   - sellout，售罄。
 
@@ -221,7 +221,7 @@ class ListFlavorsResult:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this ListFlavorsResult.
+        r"""Sets the az_status of this ListFlavorsResult.
 
         规格在可用区内的状态，包含以下状态：   - normal，在售。   - unsupported，暂不支持该规格。   - sellout，售罄。
 

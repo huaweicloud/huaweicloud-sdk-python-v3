@@ -23,7 +23,7 @@ class DownloadCertRequest:
     }
 
     def __init__(self):
-        """DownloadCertRequest
+        r"""DownloadCertRequest
 
         The model defined in huaweicloud sdk
 

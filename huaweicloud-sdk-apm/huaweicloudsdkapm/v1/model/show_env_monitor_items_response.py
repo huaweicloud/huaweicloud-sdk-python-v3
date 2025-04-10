@@ -28,7 +28,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
     }
 
     def __init__(self, category_info_list=None, monitor_item_info_list=None):
-        """ShowEnvMonitorItemsResponse
+        r"""ShowEnvMonitorItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
 
     @property
     def category_info_list(self):
-        """Gets the category_info_list of this ShowEnvMonitorItemsResponse.
+        r"""Gets the category_info_list of this ShowEnvMonitorItemsResponse.
 
         采集器类别集合。
 
@@ -62,7 +62,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
 
     @category_info_list.setter
     def category_info_list(self, category_info_list):
-        """Sets the category_info_list of this ShowEnvMonitorItemsResponse.
+        r"""Sets the category_info_list of this ShowEnvMonitorItemsResponse.
 
         采集器类别集合。
 
@@ -73,7 +73,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
 
     @property
     def monitor_item_info_list(self):
-        """Gets the monitor_item_info_list of this ShowEnvMonitorItemsResponse.
+        r"""Gets the monitor_item_info_list of this ShowEnvMonitorItemsResponse.
 
         监控项集合。
 
@@ -84,7 +84,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
 
     @monitor_item_info_list.setter
     def monitor_item_info_list(self, monitor_item_info_list):
-        """Sets the monitor_item_info_list of this ShowEnvMonitorItemsResponse.
+        r"""Sets the monitor_item_info_list of this ShowEnvMonitorItemsResponse.
 
         监控项集合。
 

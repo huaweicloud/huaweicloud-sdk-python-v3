@@ -25,7 +25,7 @@ class BinlogClearPolicyRequestBody:
     }
 
     def __init__(self, binlog_retention_hours=None):
-        """BinlogClearPolicyRequestBody
+        r"""BinlogClearPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BinlogClearPolicyRequestBody:
 
     @property
     def binlog_retention_hours(self):
-        """Gets the binlog_retention_hours of this BinlogClearPolicyRequestBody.
+        r"""Gets the binlog_retention_hours of this BinlogClearPolicyRequestBody.
 
         取值范围0-7*24
 
@@ -53,7 +53,7 @@ class BinlogClearPolicyRequestBody:
 
     @binlog_retention_hours.setter
     def binlog_retention_hours(self, binlog_retention_hours):
-        """Sets the binlog_retention_hours of this BinlogClearPolicyRequestBody.
+        r"""Sets the binlog_retention_hours of this BinlogClearPolicyRequestBody.
 
         取值范围0-7*24
 

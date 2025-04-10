@@ -25,7 +25,7 @@ class DeleteLoadBalancerForceRequest:
     }
 
     def __init__(self, loadbalancer_id=None):
-        """DeleteLoadBalancerForceRequest
+        r"""DeleteLoadBalancerForceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLoadBalancerForceRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this DeleteLoadBalancerForceRequest.
+        r"""Gets the loadbalancer_id of this DeleteLoadBalancerForceRequest.
 
         负载均衡器ID。
 
@@ -53,7 +53,7 @@ class DeleteLoadBalancerForceRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this DeleteLoadBalancerForceRequest.
+        r"""Sets the loadbalancer_id of this DeleteLoadBalancerForceRequest.
 
         负载均衡器ID。
 

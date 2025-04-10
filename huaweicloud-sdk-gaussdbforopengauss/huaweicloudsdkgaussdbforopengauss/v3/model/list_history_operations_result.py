@@ -33,7 +33,7 @@ class ListHistoryOperationsResult:
     }
 
     def __init__(self, parameter_name=None, old_value=None, new_value=None, update_result=None, updated_at=None):
-        """ListHistoryOperationsResult
+        r"""ListHistoryOperationsResult
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListHistoryOperationsResult:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ListHistoryOperationsResult.
+        r"""Gets the parameter_name of this ListHistoryOperationsResult.
 
         参数名称。
 
@@ -77,7 +77,7 @@ class ListHistoryOperationsResult:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ListHistoryOperationsResult.
+        r"""Sets the parameter_name of this ListHistoryOperationsResult.
 
         参数名称。
 
@@ -88,7 +88,7 @@ class ListHistoryOperationsResult:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ListHistoryOperationsResult.
+        r"""Gets the old_value of this ListHistoryOperationsResult.
 
         修改前参数值。
 
@@ -99,7 +99,7 @@ class ListHistoryOperationsResult:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ListHistoryOperationsResult.
+        r"""Sets the old_value of this ListHistoryOperationsResult.
 
         修改前参数值。
 
@@ -110,7 +110,7 @@ class ListHistoryOperationsResult:
 
     @property
     def new_value(self):
-        """Gets the new_value of this ListHistoryOperationsResult.
+        r"""Gets the new_value of this ListHistoryOperationsResult.
 
         修改后参数值。
 
@@ -121,7 +121,7 @@ class ListHistoryOperationsResult:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this ListHistoryOperationsResult.
+        r"""Sets the new_value of this ListHistoryOperationsResult.
 
         修改后参数值。
 
@@ -132,7 +132,7 @@ class ListHistoryOperationsResult:
 
     @property
     def update_result(self):
-        """Gets the update_result of this ListHistoryOperationsResult.
+        r"""Gets the update_result of this ListHistoryOperationsResult.
 
         修改状态 (SUCCESS | FAILED)。
 
@@ -143,7 +143,7 @@ class ListHistoryOperationsResult:
 
     @update_result.setter
     def update_result(self, update_result):
-        """Sets the update_result of this ListHistoryOperationsResult.
+        r"""Sets the update_result of this ListHistoryOperationsResult.
 
         修改状态 (SUCCESS | FAILED)。
 
@@ -154,7 +154,7 @@ class ListHistoryOperationsResult:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListHistoryOperationsResult.
+        r"""Gets the updated_at of this ListHistoryOperationsResult.
 
         修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -165,7 +165,7 @@ class ListHistoryOperationsResult:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListHistoryOperationsResult.
+        r"""Sets the updated_at of this ListHistoryOperationsResult.
 
         修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

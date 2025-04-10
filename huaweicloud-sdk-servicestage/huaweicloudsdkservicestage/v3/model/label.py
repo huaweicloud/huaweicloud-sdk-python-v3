@@ -27,7 +27,7 @@ class Label:
     }
 
     def __init__(self, key=None, value=None):
-        """Label
+        r"""Label
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Label:
 
     @property
     def key(self):
-        """Gets the key of this Label.
+        r"""Gets the key of this Label.
 
         :return: The key of this Label.
         :rtype: str
@@ -57,7 +57,7 @@ class Label:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Label.
+        r"""Sets the key of this Label.
 
         :param key: The key of this Label.
         :type key: str
@@ -66,7 +66,7 @@ class Label:
 
     @property
     def value(self):
-        """Gets the value of this Label.
+        r"""Gets the value of this Label.
 
         :return: The value of this Label.
         :rtype: str
@@ -75,7 +75,7 @@ class Label:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Label.
+        r"""Sets the value of this Label.
 
         :param value: The value of this Label.
         :type value: str

@@ -61,7 +61,7 @@ class TrackerResponseBody:
     }
 
     def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, agency_name=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, group_id=None, stream_id=None, obs_info=None, data_bucket=None):
-        """TrackerResponseBody
+        r"""TrackerResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class TrackerResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this TrackerResponseBody.
+        r"""Gets the id of this TrackerResponseBody.
 
         追踪器唯一标识。
 
@@ -180,7 +180,7 @@ class TrackerResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TrackerResponseBody.
+        r"""Sets the id of this TrackerResponseBody.
 
         追踪器唯一标识。
 
@@ -191,7 +191,7 @@ class TrackerResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TrackerResponseBody.
+        r"""Gets the create_time of this TrackerResponseBody.
 
         追踪器创建时间戳。
 
@@ -202,7 +202,7 @@ class TrackerResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TrackerResponseBody.
+        r"""Sets the create_time of this TrackerResponseBody.
 
         追踪器创建时间戳。
 
@@ -213,7 +213,7 @@ class TrackerResponseBody:
 
     @property
     def kms_id(self):
-        """Gets the kms_id of this TrackerResponseBody.
+        r"""Gets the kms_id of this TrackerResponseBody.
 
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"和\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -224,7 +224,7 @@ class TrackerResponseBody:
 
     @kms_id.setter
     def kms_id(self, kms_id):
-        """Sets the kms_id of this TrackerResponseBody.
+        r"""Sets the kms_id of this TrackerResponseBody.
 
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"和\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -235,7 +235,7 @@ class TrackerResponseBody:
 
     @property
     def is_support_validate(self):
-        """Gets the is_support_validate of this TrackerResponseBody.
+        r"""Gets the is_support_validate of this TrackerResponseBody.
 
         是否打开事件文件校验。
 
@@ -246,7 +246,7 @@ class TrackerResponseBody:
 
     @is_support_validate.setter
     def is_support_validate(self, is_support_validate):
-        """Sets the is_support_validate of this TrackerResponseBody.
+        r"""Sets the is_support_validate of this TrackerResponseBody.
 
         是否打开事件文件校验。
 
@@ -257,7 +257,7 @@ class TrackerResponseBody:
 
     @property
     def is_organization_tracker(self):
-        """Gets the is_organization_tracker of this TrackerResponseBody.
+        r"""Gets the is_organization_tracker of this TrackerResponseBody.
 
         是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
 
@@ -268,7 +268,7 @@ class TrackerResponseBody:
 
     @is_organization_tracker.setter
     def is_organization_tracker(self, is_organization_tracker):
-        """Sets the is_organization_tracker of this TrackerResponseBody.
+        r"""Sets the is_organization_tracker of this TrackerResponseBody.
 
         是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
 
@@ -279,7 +279,7 @@ class TrackerResponseBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this TrackerResponseBody.
+        r"""Gets the agency_name of this TrackerResponseBody.
 
         云服务委托名称。
 
@@ -290,7 +290,7 @@ class TrackerResponseBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this TrackerResponseBody.
+        r"""Sets the agency_name of this TrackerResponseBody.
 
         云服务委托名称。
 
@@ -301,7 +301,7 @@ class TrackerResponseBody:
 
     @property
     def management_event_selector(self):
-        """Gets the management_event_selector of this TrackerResponseBody.
+        r"""Gets the management_event_selector of this TrackerResponseBody.
 
         :return: The management_event_selector of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
@@ -310,7 +310,7 @@ class TrackerResponseBody:
 
     @management_event_selector.setter
     def management_event_selector(self, management_event_selector):
-        """Sets the management_event_selector of this TrackerResponseBody.
+        r"""Sets the management_event_selector of this TrackerResponseBody.
 
         :param management_event_selector: The management_event_selector of this TrackerResponseBody.
         :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
@@ -319,7 +319,7 @@ class TrackerResponseBody:
 
     @property
     def lts(self):
-        """Gets the lts of this TrackerResponseBody.
+        r"""Gets the lts of this TrackerResponseBody.
 
         :return: The lts of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.Lts`
@@ -328,7 +328,7 @@ class TrackerResponseBody:
 
     @lts.setter
     def lts(self, lts):
-        """Sets the lts of this TrackerResponseBody.
+        r"""Sets the lts of this TrackerResponseBody.
 
         :param lts: The lts of this TrackerResponseBody.
         :type lts: :class:`huaweicloudsdkcts.v3.Lts`
@@ -337,7 +337,7 @@ class TrackerResponseBody:
 
     @property
     def tracker_type(self):
-        """Gets the tracker_type of this TrackerResponseBody.
+        r"""Gets the tracker_type of this TrackerResponseBody.
 
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
 
@@ -348,7 +348,7 @@ class TrackerResponseBody:
 
     @tracker_type.setter
     def tracker_type(self, tracker_type):
-        """Sets the tracker_type of this TrackerResponseBody.
+        r"""Sets the tracker_type of this TrackerResponseBody.
 
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
 
@@ -359,7 +359,7 @@ class TrackerResponseBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this TrackerResponseBody.
+        r"""Gets the domain_id of this TrackerResponseBody.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -370,7 +370,7 @@ class TrackerResponseBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this TrackerResponseBody.
+        r"""Sets the domain_id of this TrackerResponseBody.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -381,7 +381,7 @@ class TrackerResponseBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TrackerResponseBody.
+        r"""Gets the project_id of this TrackerResponseBody.
 
         项目ID。
 
@@ -392,7 +392,7 @@ class TrackerResponseBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TrackerResponseBody.
+        r"""Sets the project_id of this TrackerResponseBody.
 
         项目ID。
 
@@ -403,7 +403,7 @@ class TrackerResponseBody:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this TrackerResponseBody.
+        r"""Gets the tracker_name of this TrackerResponseBody.
 
         标识追踪器名称，当前版本默认为“system”。
 
@@ -414,7 +414,7 @@ class TrackerResponseBody:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this TrackerResponseBody.
+        r"""Sets the tracker_name of this TrackerResponseBody.
 
         标识追踪器名称，当前版本默认为“system”。
 
@@ -425,7 +425,7 @@ class TrackerResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this TrackerResponseBody.
+        r"""Gets the status of this TrackerResponseBody.
 
         标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
 
@@ -436,7 +436,7 @@ class TrackerResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TrackerResponseBody.
+        r"""Sets the status of this TrackerResponseBody.
 
         标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
 
@@ -447,7 +447,7 @@ class TrackerResponseBody:
 
     @property
     def detail(self):
-        """Gets the detail of this TrackerResponseBody.
+        r"""Gets the detail of this TrackerResponseBody.
 
         该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
 
@@ -458,7 +458,7 @@ class TrackerResponseBody:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this TrackerResponseBody.
+        r"""Sets the detail of this TrackerResponseBody.
 
         该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
 
@@ -469,7 +469,7 @@ class TrackerResponseBody:
 
     @property
     def is_support_trace_files_encryption(self):
-        """Gets the is_support_trace_files_encryption of this TrackerResponseBody.
+        r"""Gets the is_support_trace_files_encryption of this TrackerResponseBody.
 
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
@@ -480,7 +480,7 @@ class TrackerResponseBody:
 
     @is_support_trace_files_encryption.setter
     def is_support_trace_files_encryption(self, is_support_trace_files_encryption):
-        """Sets the is_support_trace_files_encryption of this TrackerResponseBody.
+        r"""Sets the is_support_trace_files_encryption of this TrackerResponseBody.
 
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
@@ -491,7 +491,7 @@ class TrackerResponseBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this TrackerResponseBody.
+        r"""Gets the group_id of this TrackerResponseBody.
 
         LTS服务日志组的ID。
 
@@ -502,7 +502,7 @@ class TrackerResponseBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this TrackerResponseBody.
+        r"""Sets the group_id of this TrackerResponseBody.
 
         LTS服务日志组的ID。
 
@@ -513,7 +513,7 @@ class TrackerResponseBody:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this TrackerResponseBody.
+        r"""Gets the stream_id of this TrackerResponseBody.
 
         LTS服务日志流的ID。
 
@@ -524,7 +524,7 @@ class TrackerResponseBody:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this TrackerResponseBody.
+        r"""Sets the stream_id of this TrackerResponseBody.
 
         LTS服务日志流的ID。
 
@@ -535,7 +535,7 @@ class TrackerResponseBody:
 
     @property
     def obs_info(self):
-        """Gets the obs_info of this TrackerResponseBody.
+        r"""Gets the obs_info of this TrackerResponseBody.
 
         :return: The obs_info of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.ObsInfo`
@@ -544,7 +544,7 @@ class TrackerResponseBody:
 
     @obs_info.setter
     def obs_info(self, obs_info):
-        """Sets the obs_info of this TrackerResponseBody.
+        r"""Sets the obs_info of this TrackerResponseBody.
 
         :param obs_info: The obs_info of this TrackerResponseBody.
         :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
@@ -553,7 +553,7 @@ class TrackerResponseBody:
 
     @property
     def data_bucket(self):
-        """Gets the data_bucket of this TrackerResponseBody.
+        r"""Gets the data_bucket of this TrackerResponseBody.
 
         :return: The data_bucket of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
@@ -562,7 +562,7 @@ class TrackerResponseBody:
 
     @data_bucket.setter
     def data_bucket(self, data_bucket):
-        """Sets the data_bucket of this TrackerResponseBody.
+        r"""Sets the data_bucket of this TrackerResponseBody.
 
         :param data_bucket: The data_bucket of this TrackerResponseBody.
         :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucketQuery`

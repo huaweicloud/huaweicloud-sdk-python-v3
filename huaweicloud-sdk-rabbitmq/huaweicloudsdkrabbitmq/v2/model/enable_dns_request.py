@@ -25,7 +25,7 @@ class EnableDnsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """EnableDnsRequest
+        r"""EnableDnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableDnsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this EnableDnsRequest.
+        r"""Gets the instance_id of this EnableDnsRequest.
 
         实例ID，从[查询所有实例列表](ListInstancesDetails.xml)获取实例ID。
 
@@ -53,7 +53,7 @@ class EnableDnsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this EnableDnsRequest.
+        r"""Sets the instance_id of this EnableDnsRequest.
 
         实例ID，从[查询所有实例列表](ListInstancesDetails.xml)获取实例ID。
 

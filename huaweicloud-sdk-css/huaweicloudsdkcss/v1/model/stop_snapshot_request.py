@@ -25,7 +25,7 @@ class StopSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopSnapshotRequest
+        r"""StopSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopSnapshotRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopSnapshotRequest.
+        r"""Gets the cluster_id of this StopSnapshotRequest.
 
         停用快照所属的集群的ID。
 
@@ -53,7 +53,7 @@ class StopSnapshotRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopSnapshotRequest.
+        r"""Sets the cluster_id of this StopSnapshotRequest.
 
         停用快照所属的集群的ID。
 

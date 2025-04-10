@@ -27,7 +27,7 @@ class CreateDashBoardReqBody:
     }
 
     def __init__(self, group_name=None, title=None):
-        """CreateDashBoardReqBody
+        r"""CreateDashBoardReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDashBoardReqBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateDashBoardReqBody.
+        r"""Gets the group_name of this CreateDashBoardReqBody.
 
         仪表盘分组名称
 
@@ -60,7 +60,7 @@ class CreateDashBoardReqBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateDashBoardReqBody.
+        r"""Sets the group_name of this CreateDashBoardReqBody.
 
         仪表盘分组名称
 
@@ -71,7 +71,7 @@ class CreateDashBoardReqBody:
 
     @property
     def title(self):
-        """Gets the title of this CreateDashBoardReqBody.
+        r"""Gets the title of this CreateDashBoardReqBody.
 
         仪表盘名称
 
@@ -82,7 +82,7 @@ class CreateDashBoardReqBody:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateDashBoardReqBody.
+        r"""Sets the title of this CreateDashBoardReqBody.
 
         仪表盘名称
 

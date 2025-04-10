@@ -35,7 +35,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     }
 
     def __init__(self, unique_id=None, plugin_name=None, version=None, workspace_id=None, output_key=None, output_value=None):
-        """PluginPartQueryVOListAgentPluginOutputVOData
+        r"""PluginPartQueryVOListAgentPluginOutputVOData
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Gets the unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         唯一ID
 
@@ -89,7 +89,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Sets the unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         唯一ID
 
@@ -100,7 +100,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         插件名
 
@@ -111,7 +111,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         插件名
 
@@ -122,7 +122,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @property
     def version(self):
-        """Gets the version of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Gets the version of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         版本
 
@@ -133,7 +133,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Sets the version of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         版本
 
@@ -144,7 +144,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Gets the workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         租户ID
 
@@ -155,7 +155,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Sets the workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         租户ID
 
@@ -166,7 +166,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @property
     def output_key(self):
-        """Gets the output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Gets the output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         名称
 
@@ -177,7 +177,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @output_key.setter
     def output_key(self, output_key):
-        """Sets the output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Sets the output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         名称
 
@@ -188,7 +188,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @property
     def output_value(self):
-        """Gets the output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Gets the output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         值
 
@@ -199,7 +199,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
     @output_value.setter
     def output_value(self, output_value):
-        """Sets the output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
+        r"""Sets the output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
 
         值
 

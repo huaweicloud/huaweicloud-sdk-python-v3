@@ -26,7 +26,7 @@ class DeleteRuleResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """DeleteRuleResponse
+        r"""DeleteRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteRuleResponse.
+        r"""Gets the status of this DeleteRuleResponse.
 
         状态
 
@@ -55,7 +55,7 @@ class DeleteRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteRuleResponse.
+        r"""Sets the status of this DeleteRuleResponse.
 
         状态
 

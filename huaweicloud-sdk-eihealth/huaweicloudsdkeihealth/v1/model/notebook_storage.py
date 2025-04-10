@@ -27,7 +27,7 @@ class NotebookStorage:
     }
 
     def __init__(self, path=None, mount_path=None):
-        """NotebookStorage
+        r"""NotebookStorage
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NotebookStorage:
 
     @property
     def path(self):
-        """Gets the path of this NotebookStorage.
+        r"""Gets the path of this NotebookStorage.
 
         notebook存储路径
 
@@ -60,7 +60,7 @@ class NotebookStorage:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this NotebookStorage.
+        r"""Sets the path of this NotebookStorage.
 
         notebook存储路径
 
@@ -71,7 +71,7 @@ class NotebookStorage:
 
     @property
     def mount_path(self):
-        """Gets the mount_path of this NotebookStorage.
+        r"""Gets the mount_path of this NotebookStorage.
 
         挂载路径，由于目前暂不支持自定义挂载，暂不开放
 
@@ -82,7 +82,7 @@ class NotebookStorage:
 
     @mount_path.setter
     def mount_path(self, mount_path):
-        """Sets the mount_path of this NotebookStorage.
+        r"""Sets the mount_path of this NotebookStorage.
 
         挂载路径，由于目前暂不支持自定义挂载，暂不开放
 

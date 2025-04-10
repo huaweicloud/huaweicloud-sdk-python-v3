@@ -28,7 +28,7 @@ class ListPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, stream_id=None, rules=None):
-        """ListPoliciesResponse
+        r"""ListPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPoliciesResponse(SdkResponse):
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ListPoliciesResponse.
+        r"""Gets the stream_id of this ListPoliciesResponse.
 
         通道唯一标识符。
 
@@ -62,7 +62,7 @@ class ListPoliciesResponse(SdkResponse):
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ListPoliciesResponse.
+        r"""Sets the stream_id of this ListPoliciesResponse.
 
         通道唯一标识符。
 
@@ -73,7 +73,7 @@ class ListPoliciesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListPoliciesResponse.
+        r"""Gets the rules of this ListPoliciesResponse.
 
         通道授权信息列表。
 
@@ -84,7 +84,7 @@ class ListPoliciesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListPoliciesResponse.
+        r"""Sets the rules of this ListPoliciesResponse.
 
         通道授权信息列表。
 

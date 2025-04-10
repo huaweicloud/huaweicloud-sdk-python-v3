@@ -35,7 +35,7 @@ class Volume:
     }
 
     def __init__(self, destination=None, key=None, name=None, read_only=None, source=None, type=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class Volume:
 
     @property
     def destination(self):
-        """Gets the destination of this Volume.
+        r"""Gets the destination of this Volume.
 
         卷挂载路径，必须是合法的路径
 
@@ -83,7 +83,7 @@ class Volume:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this Volume.
+        r"""Sets the destination of this Volume.
 
         卷挂载路径，必须是合法的路径
 
@@ -94,7 +94,7 @@ class Volume:
 
     @property
     def key(self):
-        """Gets the key of this Volume.
+        r"""Gets the key of this Volume.
 
         卷的类型，支持configMap,secret,emptyDir,hostPath
 
@@ -105,7 +105,7 @@ class Volume:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Volume.
+        r"""Sets the key of this Volume.
 
         卷的类型，支持configMap,secret,emptyDir,hostPath
 
@@ -116,7 +116,7 @@ class Volume:
 
     @property
     def name(self):
-        """Gets the name of this Volume.
+        r"""Gets the name of this Volume.
 
         卷名称，小写字母或数字，最长63个字符
 
@@ -127,7 +127,7 @@ class Volume:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Volume.
+        r"""Sets the name of this Volume.
 
         卷名称，小写字母或数字，最长63个字符
 
@@ -138,7 +138,7 @@ class Volume:
 
     @property
     def read_only(self):
-        """Gets the read_only of this Volume.
+        r"""Gets the read_only of this Volume.
 
         读写权限，configMap和secret类型只支持读权限
 
@@ -149,7 +149,7 @@ class Volume:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this Volume.
+        r"""Sets the read_only of this Volume.
 
         读写权限，configMap和secret类型只支持读权限
 
@@ -160,7 +160,7 @@ class Volume:
 
     @property
     def source(self):
-        """Gets the source of this Volume.
+        r"""Gets the source of this Volume.
 
         卷来源，type为hostPath时输入路径，要求以/开头，后面可包含中划线，反斜杠，下划线，点号，字母，数字； secret时输入secret名称，configMap时输入configMap名称，emptyDir时输入disk或memory
 
@@ -171,7 +171,7 @@ class Volume:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this Volume.
+        r"""Sets the source of this Volume.
 
         卷来源，type为hostPath时输入路径，要求以/开头，后面可包含中划线，反斜杠，下划线，点号，字母，数字； secret时输入secret名称，configMap时输入configMap名称，emptyDir时输入disk或memory
 
@@ -182,7 +182,7 @@ class Volume:
 
     @property
     def type(self):
-        """Gets the type of this Volume.
+        r"""Gets the type of this Volume.
 
         卷的类型，支持configMap,secret,emptyDir,hostPath
 
@@ -193,7 +193,7 @@ class Volume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Volume.
+        r"""Sets the type of this Volume.
 
         卷的类型，支持configMap,secret,emptyDir,hostPath
 

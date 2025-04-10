@@ -31,7 +31,7 @@ class NoticeRuleScope:
     }
 
     def __init__(self, type=None, environments=None, applications=None, components=None):
-        """NoticeRuleScope
+        r"""NoticeRuleScope
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class NoticeRuleScope:
 
     @property
     def type(self):
-        """Gets the type of this NoticeRuleScope.
+        r"""Gets the type of this NoticeRuleScope.
 
         生效范围的类型。包括environments（对指定环境下所有组件生效），applications（对指定应用下所有组件生效），components（对指定的组件生效）。
 
@@ -74,7 +74,7 @@ class NoticeRuleScope:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NoticeRuleScope.
+        r"""Sets the type of this NoticeRuleScope.
 
         生效范围的类型。包括environments（对指定环境下所有组件生效），applications（对指定应用下所有组件生效），components（对指定的组件生效）。
 
@@ -85,7 +85,7 @@ class NoticeRuleScope:
 
     @property
     def environments(self):
-        """Gets the environments of this NoticeRuleScope.
+        r"""Gets the environments of this NoticeRuleScope.
 
         生效的环境id列表。
 
@@ -96,7 +96,7 @@ class NoticeRuleScope:
 
     @environments.setter
     def environments(self, environments):
-        """Sets the environments of this NoticeRuleScope.
+        r"""Sets the environments of this NoticeRuleScope.
 
         生效的环境id列表。
 
@@ -107,7 +107,7 @@ class NoticeRuleScope:
 
     @property
     def applications(self):
-        """Gets the applications of this NoticeRuleScope.
+        r"""Gets the applications of this NoticeRuleScope.
 
         生效的应用id列表。
 
@@ -118,7 +118,7 @@ class NoticeRuleScope:
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this NoticeRuleScope.
+        r"""Sets the applications of this NoticeRuleScope.
 
         生效的应用id列表。
 
@@ -129,7 +129,7 @@ class NoticeRuleScope:
 
     @property
     def components(self):
-        """Gets the components of this NoticeRuleScope.
+        r"""Gets the components of this NoticeRuleScope.
 
         生效的组件id列表。
 
@@ -140,7 +140,7 @@ class NoticeRuleScope:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this NoticeRuleScope.
+        r"""Sets the components of this NoticeRuleScope.
 
         生效的组件id列表。
 

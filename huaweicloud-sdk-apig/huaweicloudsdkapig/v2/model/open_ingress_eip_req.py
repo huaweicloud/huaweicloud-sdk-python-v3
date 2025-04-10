@@ -27,7 +27,7 @@ class OpenIngressEipReq:
     }
 
     def __init__(self, bandwidth_size=None, bandwidth_charging_mode=None):
-        """OpenIngressEipReq
+        r"""OpenIngressEipReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenIngressEipReq:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this OpenIngressEipReq.
+        r"""Gets the bandwidth_size of this OpenIngressEipReq.
 
         入公网带宽  单位：Mbit/s
 
@@ -61,7 +61,7 @@ class OpenIngressEipReq:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this OpenIngressEipReq.
+        r"""Sets the bandwidth_size of this OpenIngressEipReq.
 
         入公网带宽  单位：Mbit/s
 
@@ -72,7 +72,7 @@ class OpenIngressEipReq:
 
     @property
     def bandwidth_charging_mode(self):
-        """Gets the bandwidth_charging_mode of this OpenIngressEipReq.
+        r"""Gets the bandwidth_charging_mode of this OpenIngressEipReq.
 
         入公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
 
@@ -83,7 +83,7 @@ class OpenIngressEipReq:
 
     @bandwidth_charging_mode.setter
     def bandwidth_charging_mode(self, bandwidth_charging_mode):
-        """Sets the bandwidth_charging_mode of this OpenIngressEipReq.
+        r"""Sets the bandwidth_charging_mode of this OpenIngressEipReq.
 
         入公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
 

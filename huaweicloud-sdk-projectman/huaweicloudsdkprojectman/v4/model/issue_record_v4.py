@@ -31,7 +31,7 @@ class IssueRecordV4:
     }
 
     def __init__(self, id=None, created_time=None, user=None, details=None):
-        """IssueRecordV4
+        r"""IssueRecordV4
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IssueRecordV4:
 
     @property
     def id(self):
-        """Gets the id of this IssueRecordV4.
+        r"""Gets the id of this IssueRecordV4.
 
         操作记录id
 
@@ -75,7 +75,7 @@ class IssueRecordV4:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueRecordV4.
+        r"""Sets the id of this IssueRecordV4.
 
         操作记录id
 
@@ -86,7 +86,7 @@ class IssueRecordV4:
 
     @property
     def created_time(self):
-        """Gets the created_time of this IssueRecordV4.
+        r"""Gets the created_time of this IssueRecordV4.
 
         操作记录创建时间
 
@@ -97,7 +97,7 @@ class IssueRecordV4:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this IssueRecordV4.
+        r"""Sets the created_time of this IssueRecordV4.
 
         操作记录创建时间
 
@@ -108,7 +108,7 @@ class IssueRecordV4:
 
     @property
     def user(self):
-        """Gets the user of this IssueRecordV4.
+        r"""Gets the user of this IssueRecordV4.
 
         :return: The user of this IssueRecordV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`
@@ -117,7 +117,7 @@ class IssueRecordV4:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this IssueRecordV4.
+        r"""Sets the user of this IssueRecordV4.
 
         :param user: The user of this IssueRecordV4.
         :type user: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`
@@ -126,7 +126,7 @@ class IssueRecordV4:
 
     @property
     def details(self):
-        """Gets the details of this IssueRecordV4.
+        r"""Gets the details of this IssueRecordV4.
 
         操作的记录
 
@@ -137,7 +137,7 @@ class IssueRecordV4:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this IssueRecordV4.
+        r"""Sets the details of this IssueRecordV4.
 
         操作的记录
 

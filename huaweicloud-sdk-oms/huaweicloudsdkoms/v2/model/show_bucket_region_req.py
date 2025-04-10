@@ -35,7 +35,7 @@ class ShowBucketRegionReq:
     }
 
     def __init__(self, cloud_type=None, ak=None, sk=None, json_auth_file=None, app_id=None, bucket_name=None):
-        """ShowBucketRegionReq
+        r"""ShowBucketRegionReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowBucketRegionReq:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this ShowBucketRegionReq.
+        r"""Gets the cloud_type of this ShowBucketRegionReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
@@ -87,7 +87,7 @@ class ShowBucketRegionReq:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this ShowBucketRegionReq.
+        r"""Sets the cloud_type of this ShowBucketRegionReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
@@ -98,7 +98,7 @@ class ShowBucketRegionReq:
 
     @property
     def ak(self):
-        """Gets the ak of this ShowBucketRegionReq.
+        r"""Gets the ak of this ShowBucketRegionReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -109,7 +109,7 @@ class ShowBucketRegionReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ShowBucketRegionReq.
+        r"""Sets the ak of this ShowBucketRegionReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -120,7 +120,7 @@ class ShowBucketRegionReq:
 
     @property
     def sk(self):
-        """Gets the sk of this ShowBucketRegionReq.
+        r"""Gets the sk of this ShowBucketRegionReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -131,7 +131,7 @@ class ShowBucketRegionReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ShowBucketRegionReq.
+        r"""Sets the sk of this ShowBucketRegionReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -142,7 +142,7 @@ class ShowBucketRegionReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this ShowBucketRegionReq.
+        r"""Gets the json_auth_file of this ShowBucketRegionReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -153,7 +153,7 @@ class ShowBucketRegionReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this ShowBucketRegionReq.
+        r"""Sets the json_auth_file of this ShowBucketRegionReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -164,7 +164,7 @@ class ShowBucketRegionReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowBucketRegionReq.
+        r"""Gets the app_id of this ShowBucketRegionReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -175,7 +175,7 @@ class ShowBucketRegionReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowBucketRegionReq.
+        r"""Sets the app_id of this ShowBucketRegionReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -186,7 +186,7 @@ class ShowBucketRegionReq:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ShowBucketRegionReq.
+        r"""Gets the bucket_name of this ShowBucketRegionReq.
 
         桶名
 
@@ -197,7 +197,7 @@ class ShowBucketRegionReq:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ShowBucketRegionReq.
+        r"""Sets the bucket_name of this ShowBucketRegionReq.
 
         桶名
 

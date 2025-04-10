@@ -61,7 +61,7 @@ class MainlandTravelPermitResult:
     }
 
     def __init__(self, name=None, name_en=None, birth_date=None, sex=None, valid_period=None, issuing_authority=None, number=None, issue_place=None, issue_times=None, id_name=None, id_number=None, machine_code1=None, machine_code2=None, machine_code3=None, type=None, side=None, portrait_image=None, portrait_location=None, confidence=None):
-        """MainlandTravelPermitResult
+        r"""MainlandTravelPermitResult
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class MainlandTravelPermitResult:
 
     @property
     def name(self):
-        """Gets the name of this MainlandTravelPermitResult.
+        r"""Gets the name of this MainlandTravelPermitResult.
 
         中文姓名。 
 
@@ -180,7 +180,7 @@ class MainlandTravelPermitResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MainlandTravelPermitResult.
+        r"""Sets the name of this MainlandTravelPermitResult.
 
         中文姓名。 
 
@@ -191,7 +191,7 @@ class MainlandTravelPermitResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this MainlandTravelPermitResult.
+        r"""Gets the name_en of this MainlandTravelPermitResult.
 
         英文姓名。 
 
@@ -202,7 +202,7 @@ class MainlandTravelPermitResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this MainlandTravelPermitResult.
+        r"""Sets the name_en of this MainlandTravelPermitResult.
 
         英文姓名。 
 
@@ -213,7 +213,7 @@ class MainlandTravelPermitResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this MainlandTravelPermitResult.
+        r"""Gets the birth_date of this MainlandTravelPermitResult.
 
         出生日期。 
 
@@ -224,7 +224,7 @@ class MainlandTravelPermitResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this MainlandTravelPermitResult.
+        r"""Sets the birth_date of this MainlandTravelPermitResult.
 
         出生日期。 
 
@@ -235,7 +235,7 @@ class MainlandTravelPermitResult:
 
     @property
     def sex(self):
-        """Gets the sex of this MainlandTravelPermitResult.
+        r"""Gets the sex of this MainlandTravelPermitResult.
 
         性别。 
 
@@ -246,7 +246,7 @@ class MainlandTravelPermitResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this MainlandTravelPermitResult.
+        r"""Sets the sex of this MainlandTravelPermitResult.
 
         性别。 
 
@@ -257,7 +257,7 @@ class MainlandTravelPermitResult:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this MainlandTravelPermitResult.
+        r"""Gets the valid_period of this MainlandTravelPermitResult.
 
         有效期限。 
 
@@ -268,7 +268,7 @@ class MainlandTravelPermitResult:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this MainlandTravelPermitResult.
+        r"""Sets the valid_period of this MainlandTravelPermitResult.
 
         有效期限。 
 
@@ -279,7 +279,7 @@ class MainlandTravelPermitResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this MainlandTravelPermitResult.
+        r"""Gets the issuing_authority of this MainlandTravelPermitResult.
 
         签发机关。 
 
@@ -290,7 +290,7 @@ class MainlandTravelPermitResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this MainlandTravelPermitResult.
+        r"""Sets the issuing_authority of this MainlandTravelPermitResult.
 
         签发机关。 
 
@@ -301,7 +301,7 @@ class MainlandTravelPermitResult:
 
     @property
     def number(self):
-        """Gets the number of this MainlandTravelPermitResult.
+        r"""Gets the number of this MainlandTravelPermitResult.
 
         证件号。 
 
@@ -312,7 +312,7 @@ class MainlandTravelPermitResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this MainlandTravelPermitResult.
+        r"""Sets the number of this MainlandTravelPermitResult.
 
         证件号。 
 
@@ -323,7 +323,7 @@ class MainlandTravelPermitResult:
 
     @property
     def issue_place(self):
-        """Gets the issue_place of this MainlandTravelPermitResult.
+        r"""Gets the issue_place of this MainlandTravelPermitResult.
 
         签发地点。 
 
@@ -334,7 +334,7 @@ class MainlandTravelPermitResult:
 
     @issue_place.setter
     def issue_place(self, issue_place):
-        """Sets the issue_place of this MainlandTravelPermitResult.
+        r"""Sets the issue_place of this MainlandTravelPermitResult.
 
         签发地点。 
 
@@ -345,7 +345,7 @@ class MainlandTravelPermitResult:
 
     @property
     def issue_times(self):
-        """Gets the issue_times of this MainlandTravelPermitResult.
+        r"""Gets the issue_times of this MainlandTravelPermitResult.
 
         签发次数。 
 
@@ -356,7 +356,7 @@ class MainlandTravelPermitResult:
 
     @issue_times.setter
     def issue_times(self, issue_times):
-        """Sets the issue_times of this MainlandTravelPermitResult.
+        r"""Sets the issue_times of this MainlandTravelPermitResult.
 
         签发次数。 
 
@@ -367,7 +367,7 @@ class MainlandTravelPermitResult:
 
     @property
     def id_name(self):
-        """Gets the id_name of this MainlandTravelPermitResult.
+        r"""Gets the id_name of this MainlandTravelPermitResult.
 
         回乡证背面的香港/澳门/台湾身份证姓名。 
 
@@ -378,7 +378,7 @@ class MainlandTravelPermitResult:
 
     @id_name.setter
     def id_name(self, id_name):
-        """Sets the id_name of this MainlandTravelPermitResult.
+        r"""Sets the id_name of this MainlandTravelPermitResult.
 
         回乡证背面的香港/澳门/台湾身份证姓名。 
 
@@ -389,7 +389,7 @@ class MainlandTravelPermitResult:
 
     @property
     def id_number(self):
-        """Gets the id_number of this MainlandTravelPermitResult.
+        r"""Gets the id_number of this MainlandTravelPermitResult.
 
         回乡证背面的香港/澳门/台湾身份证号码。 
 
@@ -400,7 +400,7 @@ class MainlandTravelPermitResult:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this MainlandTravelPermitResult.
+        r"""Sets the id_number of this MainlandTravelPermitResult.
 
         回乡证背面的香港/澳门/台湾身份证号码。 
 
@@ -411,7 +411,7 @@ class MainlandTravelPermitResult:
 
     @property
     def machine_code1(self):
-        """Gets the machine_code1 of this MainlandTravelPermitResult.
+        r"""Gets the machine_code1 of this MainlandTravelPermitResult.
 
         机读码第一行。 
 
@@ -422,7 +422,7 @@ class MainlandTravelPermitResult:
 
     @machine_code1.setter
     def machine_code1(self, machine_code1):
-        """Sets the machine_code1 of this MainlandTravelPermitResult.
+        r"""Sets the machine_code1 of this MainlandTravelPermitResult.
 
         机读码第一行。 
 
@@ -433,7 +433,7 @@ class MainlandTravelPermitResult:
 
     @property
     def machine_code2(self):
-        """Gets the machine_code2 of this MainlandTravelPermitResult.
+        r"""Gets the machine_code2 of this MainlandTravelPermitResult.
 
         机读码第二行。 
 
@@ -444,7 +444,7 @@ class MainlandTravelPermitResult:
 
     @machine_code2.setter
     def machine_code2(self, machine_code2):
-        """Sets the machine_code2 of this MainlandTravelPermitResult.
+        r"""Sets the machine_code2 of this MainlandTravelPermitResult.
 
         机读码第二行。 
 
@@ -455,7 +455,7 @@ class MainlandTravelPermitResult:
 
     @property
     def machine_code3(self):
-        """Gets the machine_code3 of this MainlandTravelPermitResult.
+        r"""Gets the machine_code3 of this MainlandTravelPermitResult.
 
         机读码第三行。 
 
@@ -466,7 +466,7 @@ class MainlandTravelPermitResult:
 
     @machine_code3.setter
     def machine_code3(self, machine_code3):
-        """Sets the machine_code3 of this MainlandTravelPermitResult.
+        r"""Sets the machine_code3 of this MainlandTravelPermitResult.
 
         机读码第三行。 
 
@@ -477,7 +477,7 @@ class MainlandTravelPermitResult:
 
     @property
     def type(self):
-        """Gets the type of this MainlandTravelPermitResult.
+        r"""Gets the type of this MainlandTravelPermitResult.
 
         证件类别。可选值包括： - “港澳居民来往内地通行证” - “台湾居民来往大陆通行证” 
 
@@ -488,7 +488,7 @@ class MainlandTravelPermitResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MainlandTravelPermitResult.
+        r"""Sets the type of this MainlandTravelPermitResult.
 
         证件类别。可选值包括： - “港澳居民来往内地通行证” - “台湾居民来往大陆通行证” 
 
@@ -499,7 +499,7 @@ class MainlandTravelPermitResult:
 
     @property
     def side(self):
-        """Gets the side of this MainlandTravelPermitResult.
+        r"""Gets the side of this MainlandTravelPermitResult.
 
         证件图片正反面信息。可选值包括： - \"front\"：证件图片为正面 - \"back\"：证件图片为反面 
 
@@ -510,7 +510,7 @@ class MainlandTravelPermitResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this MainlandTravelPermitResult.
+        r"""Sets the side of this MainlandTravelPermitResult.
 
         证件图片正反面信息。可选值包括： - \"front\"：证件图片为正面 - \"back\"：证件图片为反面 
 
@@ -521,7 +521,7 @@ class MainlandTravelPermitResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this MainlandTravelPermitResult.
+        r"""Gets the portrait_image of this MainlandTravelPermitResult.
 
         头像的base64编码。当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -532,7 +532,7 @@ class MainlandTravelPermitResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this MainlandTravelPermitResult.
+        r"""Sets the portrait_image of this MainlandTravelPermitResult.
 
         头像的base64编码。当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -543,7 +543,7 @@ class MainlandTravelPermitResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this MainlandTravelPermitResult.
+        r"""Gets the portrait_location of this MainlandTravelPermitResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -554,7 +554,7 @@ class MainlandTravelPermitResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this MainlandTravelPermitResult.
+        r"""Sets the portrait_location of this MainlandTravelPermitResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -565,7 +565,7 @@ class MainlandTravelPermitResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this MainlandTravelPermitResult.
+        r"""Gets the confidence of this MainlandTravelPermitResult.
 
         :return: The confidence of this MainlandTravelPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitConfidence`
@@ -574,7 +574,7 @@ class MainlandTravelPermitResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this MainlandTravelPermitResult.
+        r"""Sets the confidence of this MainlandTravelPermitResult.
 
         :param confidence: The confidence of this MainlandTravelPermitResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitConfidence`

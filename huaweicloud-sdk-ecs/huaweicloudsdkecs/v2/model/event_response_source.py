@@ -27,7 +27,7 @@ class EventResponseSource:
     }
 
     def __init__(self, type=None, host_scheduled_event_id=None):
-        """EventResponseSource
+        r"""EventResponseSource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EventResponseSource:
 
     @property
     def type(self):
-        """Gets the type of this EventResponseSource.
+        r"""Gets the type of this EventResponseSource.
 
         计划事件来源类型
 
@@ -61,7 +61,7 @@ class EventResponseSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EventResponseSource.
+        r"""Sets the type of this EventResponseSource.
 
         计划事件来源类型
 
@@ -72,7 +72,7 @@ class EventResponseSource:
 
     @property
     def host_scheduled_event_id(self):
-        """Gets the host_scheduled_event_id of this EventResponseSource.
+        r"""Gets the host_scheduled_event_id of this EventResponseSource.
 
         主机计划事件ID
 
@@ -83,7 +83,7 @@ class EventResponseSource:
 
     @host_scheduled_event_id.setter
     def host_scheduled_event_id(self, host_scheduled_event_id):
-        """Sets the host_scheduled_event_id of this EventResponseSource.
+        r"""Sets the host_scheduled_event_id of this EventResponseSource.
 
         主机计划事件ID
 

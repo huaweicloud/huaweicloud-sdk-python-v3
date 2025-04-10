@@ -35,7 +35,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, local_area=None, remote_area=None, level=None):
-        """ListGlobalConnectionBandwidthSpecCodesRequest
+        r"""ListGlobalConnectionBandwidthSpecCodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Gets the limit of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -89,7 +89,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Sets the limit of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -100,7 +100,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Gets the marker of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -111,7 +111,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Sets the marker of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -122,7 +122,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Gets the id of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         根据id查询，可查询多个id。
 
@@ -133,7 +133,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Sets the id of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         根据id查询，可查询多个id。
 
@@ -144,7 +144,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @property
     def local_area(self):
-        """Gets the local_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Gets the local_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         线路规格本端接入点编码信息。
 
@@ -155,7 +155,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Sets the local_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         线路规格本端接入点编码信息。
 
@@ -166,7 +166,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Gets the remote_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         线路规格远端接入点编码信息。
 
@@ -177,7 +177,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Sets the remote_area of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         线路规格远端接入点编码信息。
 
@@ -188,7 +188,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Gets the level of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         带宽等级： - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -199,7 +199,7 @@ class ListGlobalConnectionBandwidthSpecCodesRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListGlobalConnectionBandwidthSpecCodesRequest.
+        r"""Sets the level of this ListGlobalConnectionBandwidthSpecCodesRequest.
 
         带宽等级： - Pt: 铂金 - Au: 金 - Ag: 银
 

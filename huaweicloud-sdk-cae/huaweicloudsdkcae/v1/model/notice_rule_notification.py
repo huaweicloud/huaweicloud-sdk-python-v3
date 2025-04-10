@@ -29,7 +29,7 @@ class NoticeRuleNotification:
     }
 
     def __init__(self, protocol=None, endpoint=None, template=None):
-        """NoticeRuleNotification
+        r"""NoticeRuleNotification
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class NoticeRuleNotification:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NoticeRuleNotification.
+        r"""Gets the protocol of this NoticeRuleNotification.
 
         通知的协议类型，包括短信，邮件，企业微信群消息等。
 
@@ -66,7 +66,7 @@ class NoticeRuleNotification:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NoticeRuleNotification.
+        r"""Sets the protocol of this NoticeRuleNotification.
 
         通知的协议类型，包括短信，邮件，企业微信群消息等。
 
@@ -77,7 +77,7 @@ class NoticeRuleNotification:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this NoticeRuleNotification.
+        r"""Gets the endpoint of this NoticeRuleNotification.
 
         通知的终端地址。 email协议，接入点必须是邮件地址。 sms协议，接入点必须是一个电话号码。 wechat协议，参考https://support.huaweicloud.com/smn_faq/smn_faq_0027.html获取订阅终端， 企业微信群消息为SMN服务公测功能，需提交工单申请开通。
 
@@ -88,7 +88,7 @@ class NoticeRuleNotification:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this NoticeRuleNotification.
+        r"""Sets the endpoint of this NoticeRuleNotification.
 
         通知的终端地址。 email协议，接入点必须是邮件地址。 sms协议，接入点必须是一个电话号码。 wechat协议，参考https://support.huaweicloud.com/smn_faq/smn_faq_0027.html获取订阅终端， 企业微信群消息为SMN服务公测功能，需提交工单申请开通。
 
@@ -99,7 +99,7 @@ class NoticeRuleNotification:
 
     @property
     def template(self):
-        """Gets the template of this NoticeRuleNotification.
+        r"""Gets the template of this NoticeRuleNotification.
 
         通知的模板语言。 ZH，中文。 EN，英文。
 
@@ -110,7 +110,7 @@ class NoticeRuleNotification:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this NoticeRuleNotification.
+        r"""Sets the template of this NoticeRuleNotification.
 
         通知的模板语言。 ZH，中文。 EN，英文。
 

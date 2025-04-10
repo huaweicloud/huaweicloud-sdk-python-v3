@@ -26,7 +26,7 @@ class ShowFindingResponse(SdkResponse):
     }
 
     def __init__(self, finding=None):
-        """ShowFindingResponse
+        r"""ShowFindingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowFindingResponse(SdkResponse):
 
     @property
     def finding(self):
-        """Gets the finding of this ShowFindingResponse.
+        r"""Gets the finding of this ShowFindingResponse.
 
         :return: The finding of this ShowFindingResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Finding`
@@ -53,7 +53,7 @@ class ShowFindingResponse(SdkResponse):
 
     @finding.setter
     def finding(self, finding):
-        """Sets the finding of this ShowFindingResponse.
+        r"""Sets the finding of this ShowFindingResponse.
 
         :param finding: The finding of this ShowFindingResponse.
         :type finding: :class:`huaweicloudsdkiamaccessanalyzer.v1.Finding`

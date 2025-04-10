@@ -29,7 +29,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, engine_id=None, offset=None, limit=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListFlavorsRequest:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this ListFlavorsRequest.
+        r"""Gets the engine_id of this ListFlavorsRequest.
 
         引擎id,通过查询DDM引擎信息接口获取。
 
@@ -67,7 +67,7 @@ class ListFlavorsRequest:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this ListFlavorsRequest.
+        r"""Sets the engine_id of this ListFlavorsRequest.
 
         引擎id,通过查询DDM引擎信息接口获取。
 
@@ -78,7 +78,7 @@ class ListFlavorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlavorsRequest.
+        r"""Gets the offset of this ListFlavorsRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -89,7 +89,7 @@ class ListFlavorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlavorsRequest.
+        r"""Sets the offset of this ListFlavorsRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -100,7 +100,7 @@ class ListFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlavorsRequest.
+        r"""Gets the limit of this ListFlavorsRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
@@ -111,7 +111,7 @@ class ListFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlavorsRequest.
+        r"""Sets the limit of this ListFlavorsRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 

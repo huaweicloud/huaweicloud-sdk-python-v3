@@ -26,7 +26,7 @@ class RemoveRoomResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """RemoveRoomResponse
+        r"""RemoveRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RemoveRoomResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RemoveRoomResponse.
+        r"""Gets the x_request_id of this RemoveRoomResponse.
 
         :return: The x_request_id of this RemoveRoomResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RemoveRoomResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RemoveRoomResponse.
+        r"""Sets the x_request_id of this RemoveRoomResponse.
 
         :param x_request_id: The x_request_id of this RemoveRoomResponse.
         :type x_request_id: str

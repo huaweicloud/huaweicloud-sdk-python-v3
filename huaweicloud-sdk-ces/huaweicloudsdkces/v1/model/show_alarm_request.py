@@ -25,7 +25,7 @@ class ShowAlarmRequest:
     }
 
     def __init__(self, alarm_id=None):
-        """ShowAlarmRequest
+        r"""ShowAlarmRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAlarmRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ShowAlarmRequest.
+        r"""Gets the alarm_id of this ShowAlarmRequest.
 
         告警规则的ID。
 
@@ -53,7 +53,7 @@ class ShowAlarmRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ShowAlarmRequest.
+        r"""Sets the alarm_id of this ShowAlarmRequest.
 
         告警规则的ID。
 

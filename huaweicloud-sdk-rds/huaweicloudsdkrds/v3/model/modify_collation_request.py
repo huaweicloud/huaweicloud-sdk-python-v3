@@ -29,7 +29,7 @@ class ModifyCollationRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ModifyCollationRequest
+        r"""ModifyCollationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ModifyCollationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyCollationRequest.
+        r"""Gets the x_language of this ModifyCollationRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ModifyCollationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyCollationRequest.
+        r"""Sets the x_language of this ModifyCollationRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ModifyCollationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyCollationRequest.
+        r"""Gets the instance_id of this ModifyCollationRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ModifyCollationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyCollationRequest.
+        r"""Sets the instance_id of this ModifyCollationRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ModifyCollationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyCollationRequest.
+        r"""Gets the body of this ModifyCollationRequest.
 
         :return: The body of this ModifyCollationRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ModifyCollationRequestBody`
@@ -109,7 +109,7 @@ class ModifyCollationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyCollationRequest.
+        r"""Sets the body of this ModifyCollationRequest.
 
         :param body: The body of this ModifyCollationRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ModifyCollationRequestBody`

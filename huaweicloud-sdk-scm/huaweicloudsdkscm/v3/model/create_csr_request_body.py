@@ -41,7 +41,7 @@ class CreateCsrRequestBody:
     }
 
     def __init__(self, name=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None):
-        """CreateCsrRequestBody
+        r"""CreateCsrRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class CreateCsrRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCsrRequestBody.
+        r"""Gets the name of this CreateCsrRequestBody.
 
         自定义CSR名称。
 
@@ -106,7 +106,7 @@ class CreateCsrRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCsrRequestBody.
+        r"""Sets the name of this CreateCsrRequestBody.
 
         自定义CSR名称。
 
@@ -117,7 +117,7 @@ class CreateCsrRequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateCsrRequestBody.
+        r"""Gets the domain_name of this CreateCsrRequestBody.
 
         CSR绑定的域名。如果您想在提交证书申请时使用该CSR，必须确保证书绑定域名包含此处设置的域名。
 
@@ -128,7 +128,7 @@ class CreateCsrRequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateCsrRequestBody.
+        r"""Sets the domain_name of this CreateCsrRequestBody.
 
         CSR绑定的域名。如果您想在提交证书申请时使用该CSR，必须确保证书绑定域名包含此处设置的域名。
 
@@ -139,7 +139,7 @@ class CreateCsrRequestBody:
 
     @property
     def sans(self):
-        """Gets the sans of this CreateCsrRequestBody.
+        r"""Gets the sans of this CreateCsrRequestBody.
 
         CSR绑定的附加域名。
 
@@ -150,7 +150,7 @@ class CreateCsrRequestBody:
 
     @sans.setter
     def sans(self, sans):
-        """Sets the sans of this CreateCsrRequestBody.
+        r"""Sets the sans of this CreateCsrRequestBody.
 
         CSR绑定的附加域名。
 
@@ -161,7 +161,7 @@ class CreateCsrRequestBody:
 
     @property
     def private_key_algo(self):
-        """Gets the private_key_algo of this CreateCsrRequestBody.
+        r"""Gets the private_key_algo of this CreateCsrRequestBody.
 
         私钥算法。取值如下： - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 
@@ -172,7 +172,7 @@ class CreateCsrRequestBody:
 
     @private_key_algo.setter
     def private_key_algo(self, private_key_algo):
-        """Sets the private_key_algo of this CreateCsrRequestBody.
+        r"""Sets the private_key_algo of this CreateCsrRequestBody.
 
         私钥算法。取值如下： - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
 
@@ -183,7 +183,7 @@ class CreateCsrRequestBody:
 
     @property
     def usage(self):
-        """Gets the usage of this CreateCsrRequestBody.
+        r"""Gets the usage of this CreateCsrRequestBody.
 
         CSR用途。取值如下： - PERSONAL：个人证书 - ENTERPRISE：企业证书
 
@@ -194,7 +194,7 @@ class CreateCsrRequestBody:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this CreateCsrRequestBody.
+        r"""Sets the usage of this CreateCsrRequestBody.
 
         CSR用途。取值如下： - PERSONAL：个人证书 - ENTERPRISE：企业证书
 
@@ -205,7 +205,7 @@ class CreateCsrRequestBody:
 
     @property
     def company_country(self):
-        """Gets the company_country of this CreateCsrRequestBody.
+        r"""Gets the company_country of this CreateCsrRequestBody.
 
         国家，当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：CN。
 
@@ -216,7 +216,7 @@ class CreateCsrRequestBody:
 
     @company_country.setter
     def company_country(self, company_country):
-        """Sets the company_country of this CreateCsrRequestBody.
+        r"""Sets the company_country of this CreateCsrRequestBody.
 
         国家，当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：CN。
 
@@ -227,7 +227,7 @@ class CreateCsrRequestBody:
 
     @property
     def company_province(self):
-        """Gets the company_province of this CreateCsrRequestBody.
+        r"""Gets the company_province of this CreateCsrRequestBody.
 
         省份，当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
 
@@ -238,7 +238,7 @@ class CreateCsrRequestBody:
 
     @company_province.setter
     def company_province(self, company_province):
-        """Sets the company_province of this CreateCsrRequestBody.
+        r"""Sets the company_province of this CreateCsrRequestBody.
 
         省份，当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
 
@@ -249,7 +249,7 @@ class CreateCsrRequestBody:
 
     @property
     def company_city(self):
-        """Gets the company_city of this CreateCsrRequestBody.
+        r"""Gets the company_city of this CreateCsrRequestBody.
 
         城市。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
 
@@ -260,7 +260,7 @@ class CreateCsrRequestBody:
 
     @company_city.setter
     def company_city(self, company_city):
-        """Sets the company_city of this CreateCsrRequestBody.
+        r"""Sets the company_city of this CreateCsrRequestBody.
 
         城市。当“usage”取值为“ENTERPRISE”时，本参数必填。取值示例：北京市。
 
@@ -271,7 +271,7 @@ class CreateCsrRequestBody:
 
     @property
     def company_name(self):
-        """Gets the company_name of this CreateCsrRequestBody.
+        r"""Gets the company_name of this CreateCsrRequestBody.
 
         公司名称。当“usage”取值为“ENTERPRISE”时，本参数必填。
 
@@ -282,7 +282,7 @@ class CreateCsrRequestBody:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this CreateCsrRequestBody.
+        r"""Sets the company_name of this CreateCsrRequestBody.
 
         公司名称。当“usage”取值为“ENTERPRISE”时，本参数必填。
 

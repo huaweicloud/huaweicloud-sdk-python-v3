@@ -45,7 +45,7 @@ class ListServersRequest:
     }
 
     def __init__(self, state=None, name=None, id=None, ip=None, migproject=None, limit=None, offset=None, migration_cycle=None, connected=None, enterprise_project_id=None, is_consistency_result_exist=None):
-        """ListServersRequest
+        r"""ListServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListServersRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListServersRequest.
+        r"""Gets the state of this ListServersRequest.
 
         源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -124,7 +124,7 @@ class ListServersRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListServersRequest.
+        r"""Sets the state of this ListServersRequest.
 
         源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -135,7 +135,7 @@ class ListServersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListServersRequest.
+        r"""Gets the name of this ListServersRequest.
 
         源端服务器名称
 
@@ -146,7 +146,7 @@ class ListServersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListServersRequest.
+        r"""Sets the name of this ListServersRequest.
 
         源端服务器名称
 
@@ -157,7 +157,7 @@ class ListServersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListServersRequest.
+        r"""Gets the id of this ListServersRequest.
 
         源端服务器ID
 
@@ -168,7 +168,7 @@ class ListServersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServersRequest.
+        r"""Sets the id of this ListServersRequest.
 
         源端服务器ID
 
@@ -179,7 +179,7 @@ class ListServersRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListServersRequest.
+        r"""Gets the ip of this ListServersRequest.
 
         源端服务器IP地址
 
@@ -190,7 +190,7 @@ class ListServersRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListServersRequest.
+        r"""Sets the ip of this ListServersRequest.
 
         源端服务器IP地址
 
@@ -201,7 +201,7 @@ class ListServersRequest:
 
     @property
     def migproject(self):
-        """Gets the migproject of this ListServersRequest.
+        r"""Gets the migproject of this ListServersRequest.
 
         迁移项目ID，填写该参数将查询迁移项目下的所有虚拟机
 
@@ -212,7 +212,7 @@ class ListServersRequest:
 
     @migproject.setter
     def migproject(self, migproject):
-        """Sets the migproject of this ListServersRequest.
+        r"""Sets the migproject of this ListServersRequest.
 
         迁移项目ID，填写该参数将查询迁移项目下的所有虚拟机
 
@@ -223,7 +223,7 @@ class ListServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServersRequest.
+        r"""Gets the limit of this ListServersRequest.
 
         每一页记录的源端服务器数量，0表示用默认值 200
 
@@ -234,7 +234,7 @@ class ListServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServersRequest.
+        r"""Sets the limit of this ListServersRequest.
 
         每一页记录的源端服务器数量，0表示用默认值 200
 
@@ -245,7 +245,7 @@ class ListServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServersRequest.
+        r"""Gets the offset of this ListServersRequest.
 
         偏移量，默认值0
 
@@ -256,7 +256,7 @@ class ListServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServersRequest.
+        r"""Sets the offset of this ListServersRequest.
 
         偏移量，默认值0
 
@@ -267,7 +267,7 @@ class ListServersRequest:
 
     @property
     def migration_cycle(self):
-        """Gets the migration_cycle of this ListServersRequest.
+        r"""Gets the migration_cycle of this ListServersRequest.
 
         checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 cutovering:启动目的端中 cutovered:启动目的端完成
 
@@ -278,7 +278,7 @@ class ListServersRequest:
 
     @migration_cycle.setter
     def migration_cycle(self, migration_cycle):
-        """Sets the migration_cycle of this ListServersRequest.
+        r"""Sets the migration_cycle of this ListServersRequest.
 
         checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 cutovering:启动目的端中 cutovered:启动目的端完成
 
@@ -289,7 +289,7 @@ class ListServersRequest:
 
     @property
     def connected(self):
-        """Gets the connected of this ListServersRequest.
+        r"""Gets the connected of this ListServersRequest.
 
         查询失去连接的源端
 
@@ -300,7 +300,7 @@ class ListServersRequest:
 
     @connected.setter
     def connected(self, connected):
-        """Sets the connected of this ListServersRequest.
+        r"""Sets the connected of this ListServersRequest.
 
         查询失去连接的源端
 
@@ -311,7 +311,7 @@ class ListServersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListServersRequest.
+        r"""Gets the enterprise_project_id of this ListServersRequest.
 
         需要查询的企业项目ID
 
@@ -322,7 +322,7 @@ class ListServersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListServersRequest.
+        r"""Sets the enterprise_project_id of this ListServersRequest.
 
         需要查询的企业项目ID
 
@@ -333,7 +333,7 @@ class ListServersRequest:
 
     @property
     def is_consistency_result_exist(self):
-        """Gets the is_consistency_result_exist of this ListServersRequest.
+        r"""Gets the is_consistency_result_exist of this ListServersRequest.
 
         是否存在一致性校验结果
 
@@ -344,7 +344,7 @@ class ListServersRequest:
 
     @is_consistency_result_exist.setter
     def is_consistency_result_exist(self, is_consistency_result_exist):
-        """Sets the is_consistency_result_exist of this ListServersRequest.
+        r"""Sets the is_consistency_result_exist of this ListServersRequest.
 
         是否存在一致性校验结果
 

@@ -27,7 +27,7 @@ class TaskOutputLocalpath:
     }
 
     def __init__(self, mount_source_path=None, data_category=None):
-        """TaskOutputLocalpath
+        r"""TaskOutputLocalpath
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TaskOutputLocalpath:
 
     @property
     def mount_source_path(self):
-        """Gets the mount_source_path of this TaskOutputLocalpath.
+        r"""Gets the mount_source_path of this TaskOutputLocalpath.
 
         挂载的源路径，存放作业运行结果的路径，必须为linux路径
 
@@ -60,7 +60,7 @@ class TaskOutputLocalpath:
 
     @mount_source_path.setter
     def mount_source_path(self, mount_source_path):
-        """Sets the mount_source_path of this TaskOutputLocalpath.
+        r"""Sets the mount_source_path of this TaskOutputLocalpath.
 
         挂载的源路径，存放作业运行结果的路径，必须为linux路径
 
@@ -71,7 +71,7 @@ class TaskOutputLocalpath:
 
     @property
     def data_category(self):
-        """Gets the data_category of this TaskOutputLocalpath.
+        r"""Gets the data_category of this TaskOutputLocalpath.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
@@ -82,7 +82,7 @@ class TaskOutputLocalpath:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this TaskOutputLocalpath.
+        r"""Sets the data_category of this TaskOutputLocalpath.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 

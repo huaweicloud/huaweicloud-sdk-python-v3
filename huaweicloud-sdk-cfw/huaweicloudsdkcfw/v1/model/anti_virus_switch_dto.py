@@ -27,7 +27,7 @@ class AntiVirusSwitchDto:
     }
 
     def __init__(self, anti_virus_status=None, object_id=None):
-        """AntiVirusSwitchDto
+        r"""AntiVirusSwitchDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AntiVirusSwitchDto:
 
     @property
     def anti_virus_status(self):
-        """Gets the anti_virus_status of this AntiVirusSwitchDto.
+        r"""Gets the anti_virus_status of this AntiVirusSwitchDto.
 
         反病毒开关状态
 
@@ -61,7 +61,7 @@ class AntiVirusSwitchDto:
 
     @anti_virus_status.setter
     def anti_virus_status(self, anti_virus_status):
-        """Sets the anti_virus_status of this AntiVirusSwitchDto.
+        r"""Sets the anti_virus_status of this AntiVirusSwitchDto.
 
         反病毒开关状态
 
@@ -72,7 +72,7 @@ class AntiVirusSwitchDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AntiVirusSwitchDto.
+        r"""Gets the object_id of this AntiVirusSwitchDto.
 
         防护对象ID
 
@@ -83,7 +83,7 @@ class AntiVirusSwitchDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AntiVirusSwitchDto.
+        r"""Sets the object_id of this AntiVirusSwitchDto.
 
         防护对象ID
 

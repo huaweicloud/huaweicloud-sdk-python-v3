@@ -27,7 +27,7 @@ class SubnetResult:
     }
 
     def __init__(self, id=None, status=None):
-        """SubnetResult
+        r"""SubnetResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SubnetResult:
 
     @property
     def id(self):
-        """Gets the id of this SubnetResult.
+        r"""Gets the id of this SubnetResult.
 
         uuid形式的一个资源标识。
 
@@ -59,7 +59,7 @@ class SubnetResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubnetResult.
+        r"""Sets the id of this SubnetResult.
 
         uuid形式的一个资源标识。
 
@@ -70,7 +70,7 @@ class SubnetResult:
 
     @property
     def status(self):
-        """Gets the status of this SubnetResult.
+        r"""Gets the status of this SubnetResult.
 
         功能说明：子网的状态。   取值范围：ACTIVE,UNKNOWN,ERROR       ACTIVE表示子网已挂载到ROUTER上       UNKNOWN表示子网还未挂载到ROUTER上       ERROR表示子网状态故障  
 
@@ -81,7 +81,7 @@ class SubnetResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubnetResult.
+        r"""Sets the status of this SubnetResult.
 
         功能说明：子网的状态。   取值范围：ACTIVE,UNKNOWN,ERROR       ACTIVE表示子网已挂载到ROUTER上       UNKNOWN表示子网还未挂载到ROUTER上       ERROR表示子网状态故障  
 

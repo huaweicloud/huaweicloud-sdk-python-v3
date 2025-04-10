@@ -29,7 +29,7 @@ class CustomArgs:
     }
 
     def __init__(self, type=None, key=None, value=None):
-        """CustomArgs
+        r"""CustomArgs
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CustomArgs:
 
     @property
     def type(self):
-        """Gets the type of this CustomArgs.
+        r"""Gets the type of this CustomArgs.
 
         参数类型，custom_var：自定义，nginx_preset_var：预置的变量。
 
@@ -65,7 +65,7 @@ class CustomArgs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomArgs.
+        r"""Sets the type of this CustomArgs.
 
         参数类型，custom_var：自定义，nginx_preset_var：预置的变量。
 
@@ -76,7 +76,7 @@ class CustomArgs:
 
     @property
     def key(self):
-        """Gets the key of this CustomArgs.
+        r"""Gets the key of this CustomArgs.
 
         参数,长度支持1-256，由数字0-9、字符a-z、A-Z，及特殊字符._-*#%|+^@?=组成。
 
@@ -87,7 +87,7 @@ class CustomArgs:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CustomArgs.
+        r"""Sets the key of this CustomArgs.
 
         参数,长度支持1-256，由数字0-9、字符a-z、A-Z，及特殊字符._-*#%|+^@?=组成。
 
@@ -98,7 +98,7 @@ class CustomArgs:
 
     @property
     def value(self):
-        """Gets the value of this CustomArgs.
+        r"""Gets the value of this CustomArgs.
 
         取值,长度支持1-256，由数字0-9、字符a-z、A-Z，及特殊字符._-*#%|+^@?=组成。
 
@@ -109,7 +109,7 @@ class CustomArgs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomArgs.
+        r"""Sets the value of this CustomArgs.
 
         取值,长度支持1-256，由数字0-9、字符a-z、A-Z，及特殊字符._-*#%|+^@?=组成。
 

@@ -35,7 +35,7 @@ class UpgradeHistory:
     }
 
     def __init__(self, id=None, from_version=None, to_version=None, upgrade_time=None, result=None, dur_time=None):
-        """UpgradeHistory
+        r"""UpgradeHistory
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpgradeHistory:
 
     @property
     def id(self):
-        """Gets the id of this UpgradeHistory.
+        r"""Gets the id of this UpgradeHistory.
 
         节点升级或安装历史版本id
 
@@ -89,7 +89,7 @@ class UpgradeHistory:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpgradeHistory.
+        r"""Sets the id of this UpgradeHistory.
 
         节点升级或安装历史版本id
 
@@ -100,7 +100,7 @@ class UpgradeHistory:
 
     @property
     def from_version(self):
-        """Gets the from_version of this UpgradeHistory.
+        r"""Gets the from_version of this UpgradeHistory.
 
         节点升级前节点上edgecore版本号，形式如2.1.0，其中每一位都是整数
 
@@ -111,7 +111,7 @@ class UpgradeHistory:
 
     @from_version.setter
     def from_version(self, from_version):
-        """Sets the from_version of this UpgradeHistory.
+        r"""Sets the from_version of this UpgradeHistory.
 
         节点升级前节点上edgecore版本号，形式如2.1.0，其中每一位都是整数
 
@@ -122,7 +122,7 @@ class UpgradeHistory:
 
     @property
     def to_version(self):
-        """Gets the to_version of this UpgradeHistory.
+        r"""Gets the to_version of this UpgradeHistory.
 
         节点升级或安装后节点行edgecore版本号，形式如2.1.0，其中每一位都是整数
 
@@ -133,7 +133,7 @@ class UpgradeHistory:
 
     @to_version.setter
     def to_version(self, to_version):
-        """Sets the to_version of this UpgradeHistory.
+        r"""Sets the to_version of this UpgradeHistory.
 
         节点升级或安装后节点行edgecore版本号，形式如2.1.0，其中每一位都是整数
 
@@ -144,7 +144,7 @@ class UpgradeHistory:
 
     @property
     def upgrade_time(self):
-        """Gets the upgrade_time of this UpgradeHistory.
+        r"""Gets the upgrade_time of this UpgradeHistory.
 
         节点升级或安装的十位时间戳
 
@@ -155,7 +155,7 @@ class UpgradeHistory:
 
     @upgrade_time.setter
     def upgrade_time(self, upgrade_time):
-        """Sets the upgrade_time of this UpgradeHistory.
+        r"""Sets the upgrade_time of this UpgradeHistory.
 
         节点升级或安装的十位时间戳
 
@@ -166,7 +166,7 @@ class UpgradeHistory:
 
     @property
     def result(self):
-        """Gets the result of this UpgradeHistory.
+        r"""Gets the result of this UpgradeHistory.
 
         节点升级或安装状态，包含 - install_success：边缘节点安装成功 - upgrade_success：边缘节点升级成功 - install_failed：边缘节点安装失败 - upgrade_failed：边缘节点升级失败 - upgrade_failed_rollback_success：边缘节点升级失败回滚成功 - upgrade_failed_rollback_failed：边缘节点升级失败回滚失败
 
@@ -177,7 +177,7 @@ class UpgradeHistory:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpgradeHistory.
+        r"""Sets the result of this UpgradeHistory.
 
         节点升级或安装状态，包含 - install_success：边缘节点安装成功 - upgrade_success：边缘节点升级成功 - install_failed：边缘节点安装失败 - upgrade_failed：边缘节点升级失败 - upgrade_failed_rollback_success：边缘节点升级失败回滚成功 - upgrade_failed_rollback_failed：边缘节点升级失败回滚失败
 
@@ -188,7 +188,7 @@ class UpgradeHistory:
 
     @property
     def dur_time(self):
-        """Gets the dur_time of this UpgradeHistory.
+        r"""Gets the dur_time of this UpgradeHistory.
 
         节点升级所消耗的时间
 
@@ -199,7 +199,7 @@ class UpgradeHistory:
 
     @dur_time.setter
     def dur_time(self, dur_time):
-        """Sets the dur_time of this UpgradeHistory.
+        r"""Sets the dur_time of this UpgradeHistory.
 
         节点升级所消耗的时间
 

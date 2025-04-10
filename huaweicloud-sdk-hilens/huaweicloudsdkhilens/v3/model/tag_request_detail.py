@@ -25,7 +25,7 @@ class TagRequestDetail:
     }
 
     def __init__(self, tags=None):
-        """TagRequestDetail
+        r"""TagRequestDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TagRequestDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this TagRequestDetail.
+        r"""Gets the tags of this TagRequestDetail.
 
         资源标签对列表
 
@@ -54,7 +54,7 @@ class TagRequestDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagRequestDetail.
+        r"""Sets the tags of this TagRequestDetail.
 
         资源标签对列表
 

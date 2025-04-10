@@ -25,7 +25,7 @@ class AssociatePublicipsRequestBody:
     }
 
     def __init__(self, publicip=None):
-        """AssociatePublicipsRequestBody
+        r"""AssociatePublicipsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssociatePublicipsRequestBody:
 
     @property
     def publicip(self):
-        """Gets the publicip of this AssociatePublicipsRequestBody.
+        r"""Gets the publicip of this AssociatePublicipsRequestBody.
 
         :return: The publicip of this AssociatePublicipsRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v3.AssociatePublicipsOption`
@@ -51,7 +51,7 @@ class AssociatePublicipsRequestBody:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this AssociatePublicipsRequestBody.
+        r"""Sets the publicip of this AssociatePublicipsRequestBody.
 
         :param publicip: The publicip of this AssociatePublicipsRequestBody.
         :type publicip: :class:`huaweicloudsdkeip.v3.AssociatePublicipsOption`

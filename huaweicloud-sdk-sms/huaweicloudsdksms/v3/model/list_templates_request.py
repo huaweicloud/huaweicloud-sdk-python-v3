@@ -33,7 +33,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, name=None, availability_zone=None, region=None, limit=None, offset=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTemplatesRequest.
+        r"""Gets the name of this ListTemplatesRequest.
 
         模板名称
 
@@ -82,7 +82,7 @@ class ListTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTemplatesRequest.
+        r"""Sets the name of this ListTemplatesRequest.
 
         模板名称
 
@@ -93,7 +93,7 @@ class ListTemplatesRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListTemplatesRequest.
+        r"""Gets the availability_zone of this ListTemplatesRequest.
 
         可用区
 
@@ -104,7 +104,7 @@ class ListTemplatesRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListTemplatesRequest.
+        r"""Sets the availability_zone of this ListTemplatesRequest.
 
         可用区
 
@@ -115,7 +115,7 @@ class ListTemplatesRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListTemplatesRequest.
+        r"""Gets the region of this ListTemplatesRequest.
 
         Region ID
 
@@ -126,7 +126,7 @@ class ListTemplatesRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListTemplatesRequest.
+        r"""Sets the region of this ListTemplatesRequest.
 
         Region ID
 
@@ -137,7 +137,7 @@ class ListTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTemplatesRequest.
+        r"""Gets the limit of this ListTemplatesRequest.
 
         分页大小，不传值默认为50
 
@@ -148,7 +148,7 @@ class ListTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTemplatesRequest.
+        r"""Sets the limit of this ListTemplatesRequest.
 
         分页大小，不传值默认为50
 
@@ -159,7 +159,7 @@ class ListTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTemplatesRequest.
+        r"""Gets the offset of this ListTemplatesRequest.
 
         偏移量，不传值默认为0
 
@@ -170,7 +170,7 @@ class ListTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTemplatesRequest.
+        r"""Sets the offset of this ListTemplatesRequest.
 
         偏移量，不传值默认为0
 

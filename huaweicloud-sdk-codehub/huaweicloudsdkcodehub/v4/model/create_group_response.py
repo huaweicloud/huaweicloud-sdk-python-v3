@@ -34,7 +34,7 @@ class CreateGroupResponse(SdkResponse):
     }
 
     def __init__(self, description=None, full_name=None, id=None, name=None, visibility=None):
-        """CreateGroupResponse
+        r"""CreateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateGroupResponse.
+        r"""Gets the description of this CreateGroupResponse.
 
         代码组描述信息
 
@@ -83,7 +83,7 @@ class CreateGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGroupResponse.
+        r"""Sets the description of this CreateGroupResponse.
 
         代码组描述信息
 
@@ -94,7 +94,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def full_name(self):
-        """Gets the full_name of this CreateGroupResponse.
+        r"""Gets the full_name of this CreateGroupResponse.
 
         代码组全名
 
@@ -105,7 +105,7 @@ class CreateGroupResponse(SdkResponse):
 
     @full_name.setter
     def full_name(self, full_name):
-        """Sets the full_name of this CreateGroupResponse.
+        r"""Sets the full_name of this CreateGroupResponse.
 
         代码组全名
 
@@ -116,7 +116,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateGroupResponse.
+        r"""Gets the id of this CreateGroupResponse.
 
         代码组id
 
@@ -127,7 +127,7 @@ class CreateGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateGroupResponse.
+        r"""Sets the id of this CreateGroupResponse.
 
         代码组id
 
@@ -138,7 +138,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateGroupResponse.
+        r"""Gets the name of this CreateGroupResponse.
 
         错误码
 
@@ -149,7 +149,7 @@ class CreateGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGroupResponse.
+        r"""Sets the name of this CreateGroupResponse.
 
         错误码
 
@@ -160,7 +160,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this CreateGroupResponse.
+        r"""Gets the visibility of this CreateGroupResponse.
 
         可见性, private public
 
@@ -171,7 +171,7 @@ class CreateGroupResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this CreateGroupResponse.
+        r"""Sets the visibility of this CreateGroupResponse.
 
         可见性, private public
 

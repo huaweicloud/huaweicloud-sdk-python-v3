@@ -53,7 +53,7 @@ class AgentListVo:
     }
 
     def __init__(self, agent_id=None, agent_name=None, create_time=None, creator_domain_id=None, creator_user_name=None, deploy_status=None, deploy_type=None, deployment_event_information=None, enable_delete=None, enable_upgrade=None, image_version=None, is_high_avail=None, league_id=None, league_name=None, league_version=None):
-        """AgentListVo
+        r"""AgentListVo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class AgentListVo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AgentListVo.
+        r"""Gets the agent_id of this AgentListVo.
 
         可信节点id
 
@@ -152,7 +152,7 @@ class AgentListVo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AgentListVo.
+        r"""Sets the agent_id of this AgentListVo.
 
         可信节点id
 
@@ -163,7 +163,7 @@ class AgentListVo:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this AgentListVo.
+        r"""Gets the agent_name of this AgentListVo.
 
         可信节点名称
 
@@ -174,7 +174,7 @@ class AgentListVo:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this AgentListVo.
+        r"""Sets the agent_name of this AgentListVo.
 
         可信节点名称
 
@@ -185,7 +185,7 @@ class AgentListVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AgentListVo.
+        r"""Gets the create_time of this AgentListVo.
 
         创建时间
 
@@ -196,7 +196,7 @@ class AgentListVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AgentListVo.
+        r"""Sets the create_time of this AgentListVo.
 
         创建时间
 
@@ -207,7 +207,7 @@ class AgentListVo:
 
     @property
     def creator_domain_id(self):
-        """Gets the creator_domain_id of this AgentListVo.
+        r"""Gets the creator_domain_id of this AgentListVo.
 
         创建者租户id
 
@@ -218,7 +218,7 @@ class AgentListVo:
 
     @creator_domain_id.setter
     def creator_domain_id(self, creator_domain_id):
-        """Sets the creator_domain_id of this AgentListVo.
+        r"""Sets the creator_domain_id of this AgentListVo.
 
         创建者租户id
 
@@ -229,7 +229,7 @@ class AgentListVo:
 
     @property
     def creator_user_name(self):
-        """Gets the creator_user_name of this AgentListVo.
+        r"""Gets the creator_user_name of this AgentListVo.
 
         创建者名称
 
@@ -240,7 +240,7 @@ class AgentListVo:
 
     @creator_user_name.setter
     def creator_user_name(self, creator_user_name):
-        """Sets the creator_user_name of this AgentListVo.
+        r"""Sets the creator_user_name of this AgentListVo.
 
         创建者名称
 
@@ -251,7 +251,7 @@ class AgentListVo:
 
     @property
     def deploy_status(self):
-        """Gets the deploy_status of this AgentListVo.
+        r"""Gets the deploy_status of this AgentListVo.
 
         部署状态 ABNORMAL.正常,RESTARTING.重启中,RESTART_FAILED.重启失败，ROLLBACKING.回滚中，STARTING.启动中，DEPLOYING.创建中,DEPLOY_FAILED.创建失败,DEPLOY_SUCCESS.创建成功,RUNNING.运行中,DELETING.删除中,DELETE_FAILED.删除失败,DELETE_SUCCESS.删除成功,UPGRADING.升级中,UPGRADE_FAILED.升级失败,ROLLBACK.回退中,ROLLBACK_FAILED.回退失败,SUCCESS.成功,FAILED.失败,TO_START.待开始,IN_PROGRESS.进行中
 
@@ -262,7 +262,7 @@ class AgentListVo:
 
     @deploy_status.setter
     def deploy_status(self, deploy_status):
-        """Sets the deploy_status of this AgentListVo.
+        r"""Sets the deploy_status of this AgentListVo.
 
         部署状态 ABNORMAL.正常,RESTARTING.重启中,RESTART_FAILED.重启失败，ROLLBACKING.回滚中，STARTING.启动中，DEPLOYING.创建中,DEPLOY_FAILED.创建失败,DEPLOY_SUCCESS.创建成功,RUNNING.运行中,DELETING.删除中,DELETE_FAILED.删除失败,DELETE_SUCCESS.删除成功,UPGRADING.升级中,UPGRADE_FAILED.升级失败,ROLLBACK.回退中,ROLLBACK_FAILED.回退失败,SUCCESS.成功,FAILED.失败,TO_START.待开始,IN_PROGRESS.进行中
 
@@ -273,7 +273,7 @@ class AgentListVo:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this AgentListVo.
+        r"""Gets the deploy_type of this AgentListVo.
 
         部署类型 CCE,IEF,EXTERNAL
 
@@ -284,7 +284,7 @@ class AgentListVo:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this AgentListVo.
+        r"""Sets the deploy_type of this AgentListVo.
 
         部署类型 CCE,IEF,EXTERNAL
 
@@ -295,7 +295,7 @@ class AgentListVo:
 
     @property
     def deployment_event_information(self):
-        """Gets the deployment_event_information of this AgentListVo.
+        r"""Gets the deployment_event_information of this AgentListVo.
 
         部署事件状态
 
@@ -306,7 +306,7 @@ class AgentListVo:
 
     @deployment_event_information.setter
     def deployment_event_information(self, deployment_event_information):
-        """Sets the deployment_event_information of this AgentListVo.
+        r"""Sets the deployment_event_information of this AgentListVo.
 
         部署事件状态
 
@@ -317,7 +317,7 @@ class AgentListVo:
 
     @property
     def enable_delete(self):
-        """Gets the enable_delete of this AgentListVo.
+        r"""Gets the enable_delete of this AgentListVo.
 
         是否可删除
 
@@ -328,7 +328,7 @@ class AgentListVo:
 
     @enable_delete.setter
     def enable_delete(self, enable_delete):
-        """Sets the enable_delete of this AgentListVo.
+        r"""Sets the enable_delete of this AgentListVo.
 
         是否可删除
 
@@ -339,7 +339,7 @@ class AgentListVo:
 
     @property
     def enable_upgrade(self):
-        """Gets the enable_upgrade of this AgentListVo.
+        r"""Gets the enable_upgrade of this AgentListVo.
 
         是否可升级
 
@@ -350,7 +350,7 @@ class AgentListVo:
 
     @enable_upgrade.setter
     def enable_upgrade(self, enable_upgrade):
-        """Sets the enable_upgrade of this AgentListVo.
+        r"""Sets the enable_upgrade of this AgentListVo.
 
         是否可升级
 
@@ -361,7 +361,7 @@ class AgentListVo:
 
     @property
     def image_version(self):
-        """Gets the image_version of this AgentListVo.
+        r"""Gets the image_version of this AgentListVo.
 
         节点镜像版本
 
@@ -372,7 +372,7 @@ class AgentListVo:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this AgentListVo.
+        r"""Sets the image_version of this AgentListVo.
 
         节点镜像版本
 
@@ -383,7 +383,7 @@ class AgentListVo:
 
     @property
     def is_high_avail(self):
-        """Gets the is_high_avail of this AgentListVo.
+        r"""Gets the is_high_avail of this AgentListVo.
 
         节点是否高可用
 
@@ -394,7 +394,7 @@ class AgentListVo:
 
     @is_high_avail.setter
     def is_high_avail(self, is_high_avail):
-        """Sets the is_high_avail of this AgentListVo.
+        r"""Sets the is_high_avail of this AgentListVo.
 
         节点是否高可用
 
@@ -405,7 +405,7 @@ class AgentListVo:
 
     @property
     def league_id(self):
-        """Gets the league_id of this AgentListVo.
+        r"""Gets the league_id of this AgentListVo.
 
         联盟ID
 
@@ -416,7 +416,7 @@ class AgentListVo:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this AgentListVo.
+        r"""Sets the league_id of this AgentListVo.
 
         联盟ID
 
@@ -427,7 +427,7 @@ class AgentListVo:
 
     @property
     def league_name(self):
-        """Gets the league_name of this AgentListVo.
+        r"""Gets the league_name of this AgentListVo.
 
         联盟名称
 
@@ -438,7 +438,7 @@ class AgentListVo:
 
     @league_name.setter
     def league_name(self, league_name):
-        """Sets the league_name of this AgentListVo.
+        r"""Sets the league_name of this AgentListVo.
 
         联盟名称
 
@@ -449,7 +449,7 @@ class AgentListVo:
 
     @property
     def league_version(self):
-        """Gets the league_version of this AgentListVo.
+        r"""Gets the league_version of this AgentListVo.
 
         联盟版本
 
@@ -460,7 +460,7 @@ class AgentListVo:
 
     @league_version.setter
     def league_version(self, league_version):
-        """Sets the league_version of this AgentListVo.
+        r"""Sets the league_version of this AgentListVo.
 
         联盟版本
 

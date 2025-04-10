@@ -27,7 +27,7 @@ class CountEventsRequest:
     }
 
     def __init__(self, type=None, body=None):
-        """CountEventsRequest
+        r"""CountEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CountEventsRequest:
 
     @property
     def type(self):
-        """Gets the type of this CountEventsRequest.
+        r"""Gets the type of this CountEventsRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
@@ -61,7 +61,7 @@ class CountEventsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CountEventsRequest.
+        r"""Sets the type of this CountEventsRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
@@ -72,7 +72,7 @@ class CountEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountEventsRequest.
+        r"""Gets the body of this CountEventsRequest.
 
         :return: The body of this CountEventsRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.EventQueryParam`
@@ -81,7 +81,7 @@ class CountEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountEventsRequest.
+        r"""Sets the body of this CountEventsRequest.
 
         :param body: The body of this CountEventsRequest.
         :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam`

@@ -27,7 +27,7 @@ class KeyWordsStat:
     }
 
     def __init__(self, keyword=None, freq=None):
-        """KeyWordsStat
+        r"""KeyWordsStat
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeyWordsStat:
 
     @property
     def keyword(self):
-        """Gets the keyword of this KeyWordsStat.
+        r"""Gets the keyword of this KeyWordsStat.
 
         关键词。
 
@@ -59,7 +59,7 @@ class KeyWordsStat:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this KeyWordsStat.
+        r"""Sets the keyword of this KeyWordsStat.
 
         关键词。
 
@@ -70,7 +70,7 @@ class KeyWordsStat:
 
     @property
     def freq(self):
-        """Gets the freq of this KeyWordsStat.
+        r"""Gets the freq of this KeyWordsStat.
 
         关键词频次。
 
@@ -81,7 +81,7 @@ class KeyWordsStat:
 
     @freq.setter
     def freq(self, freq):
-        """Sets the freq of this KeyWordsStat.
+        r"""Sets the freq of this KeyWordsStat.
 
         关键词频次。
 

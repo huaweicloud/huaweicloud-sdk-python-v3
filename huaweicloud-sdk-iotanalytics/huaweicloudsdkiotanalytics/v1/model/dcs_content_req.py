@@ -33,7 +33,7 @@ class DcsContentReq:
     }
 
     def __init__(self, endpoint_service_id=None, endpoint_service_name=None, port=None, dcs_type=None, password=None):
-        """DcsContentReq
+        r"""DcsContentReq
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DcsContentReq:
 
     @property
     def endpoint_service_id(self):
-        """Gets the endpoint_service_id of this DcsContentReq.
+        r"""Gets the endpoint_service_id of this DcsContentReq.
 
         VPC-EP服务端id
 
@@ -77,7 +77,7 @@ class DcsContentReq:
 
     @endpoint_service_id.setter
     def endpoint_service_id(self, endpoint_service_id):
-        """Sets the endpoint_service_id of this DcsContentReq.
+        r"""Sets the endpoint_service_id of this DcsContentReq.
 
         VPC-EP服务端id
 
@@ -88,7 +88,7 @@ class DcsContentReq:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this DcsContentReq.
+        r"""Gets the endpoint_service_name of this DcsContentReq.
 
         VPC-EP服务端名称
 
@@ -99,7 +99,7 @@ class DcsContentReq:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this DcsContentReq.
+        r"""Sets the endpoint_service_name of this DcsContentReq.
 
         VPC-EP服务端名称
 
@@ -110,7 +110,7 @@ class DcsContentReq:
 
     @property
     def port(self):
-        """Gets the port of this DcsContentReq.
+        r"""Gets the port of this DcsContentReq.
 
         VPC-EP客户端Port
 
@@ -121,7 +121,7 @@ class DcsContentReq:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DcsContentReq.
+        r"""Sets the port of this DcsContentReq.
 
         VPC-EP客户端Port
 
@@ -132,7 +132,7 @@ class DcsContentReq:
 
     @property
     def dcs_type(self):
-        """Gets the dcs_type of this DcsContentReq.
+        r"""Gets the dcs_type of this DcsContentReq.
 
         redis实例类型
 
@@ -143,7 +143,7 @@ class DcsContentReq:
 
     @dcs_type.setter
     def dcs_type(self, dcs_type):
-        """Sets the dcs_type of this DcsContentReq.
+        r"""Sets the dcs_type of this DcsContentReq.
 
         redis实例类型
 
@@ -154,7 +154,7 @@ class DcsContentReq:
 
     @property
     def password(self):
-        """Gets the password of this DcsContentReq.
+        r"""Gets the password of this DcsContentReq.
 
         redis访问密码
 
@@ -165,7 +165,7 @@ class DcsContentReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this DcsContentReq.
+        r"""Sets the password of this DcsContentReq.
 
         redis访问密码
 

@@ -35,7 +35,7 @@ class ComponentContainerParameter:
     }
 
     def __init__(self, name=None, size=None, env=None, storage=None, lifecycle=None, probes=None):
-        """ComponentContainerParameter
+        r"""ComponentContainerParameter
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ComponentContainerParameter:
 
     @property
     def name(self):
-        """Gets the name of this ComponentContainerParameter.
+        r"""Gets the name of this ComponentContainerParameter.
 
         容器名称
 
@@ -89,7 +89,7 @@ class ComponentContainerParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentContainerParameter.
+        r"""Sets the name of this ComponentContainerParameter.
 
         容器名称
 
@@ -100,7 +100,7 @@ class ComponentContainerParameter:
 
     @property
     def size(self):
-        """Gets the size of this ComponentContainerParameter.
+        r"""Gets the size of this ComponentContainerParameter.
 
         :return: The size of this ComponentContainerParameter.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentContainerSize`
@@ -109,7 +109,7 @@ class ComponentContainerParameter:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ComponentContainerParameter.
+        r"""Sets the size of this ComponentContainerParameter.
 
         :param size: The size of this ComponentContainerParameter.
         :type size: :class:`huaweicloudsdkservicestage.v2.ComponentContainerSize`
@@ -118,7 +118,7 @@ class ComponentContainerParameter:
 
     @property
     def env(self):
-        """Gets the env of this ComponentContainerParameter.
+        r"""Gets the env of this ComponentContainerParameter.
 
         应用环境变量。
 
@@ -129,7 +129,7 @@ class ComponentContainerParameter:
 
     @env.setter
     def env(self, env):
-        """Sets the env of this ComponentContainerParameter.
+        r"""Sets the env of this ComponentContainerParameter.
 
         应用环境变量。
 
@@ -140,7 +140,7 @@ class ComponentContainerParameter:
 
     @property
     def storage(self):
-        """Gets the storage of this ComponentContainerParameter.
+        r"""Gets the storage of this ComponentContainerParameter.
 
         :return: The storage of this ComponentContainerParameter.
         :rtype: list[:class:`huaweicloudsdkservicestage.v2.ComponentStorage`]
@@ -149,7 +149,7 @@ class ComponentContainerParameter:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ComponentContainerParameter.
+        r"""Sets the storage of this ComponentContainerParameter.
 
         :param storage: The storage of this ComponentContainerParameter.
         :type storage: list[:class:`huaweicloudsdkservicestage.v2.ComponentStorage`]
@@ -158,7 +158,7 @@ class ComponentContainerParameter:
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this ComponentContainerParameter.
+        r"""Gets the lifecycle of this ComponentContainerParameter.
 
         :return: The lifecycle of this ComponentContainerParameter.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationLifecycle`
@@ -167,7 +167,7 @@ class ComponentContainerParameter:
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this ComponentContainerParameter.
+        r"""Sets the lifecycle of this ComponentContainerParameter.
 
         :param lifecycle: The lifecycle of this ComponentContainerParameter.
         :type lifecycle: :class:`huaweicloudsdkservicestage.v2.ConfigurationLifecycle`
@@ -176,7 +176,7 @@ class ComponentContainerParameter:
 
     @property
     def probes(self):
-        """Gets the probes of this ComponentContainerParameter.
+        r"""Gets the probes of this ComponentContainerParameter.
 
         :return: The probes of this ComponentContainerParameter.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationProbes`
@@ -185,7 +185,7 @@ class ComponentContainerParameter:
 
     @probes.setter
     def probes(self, probes):
-        """Sets the probes of this ComponentContainerParameter.
+        r"""Sets the probes of this ComponentContainerParameter.
 
         :param probes: The probes of this ComponentContainerParameter.
         :type probes: :class:`huaweicloudsdkservicestage.v2.ConfigurationProbes`

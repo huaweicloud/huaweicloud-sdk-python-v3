@@ -25,7 +25,7 @@ class AdmetRequest:
     }
 
     def __init__(self, smiles=None):
-        """AdmetRequest
+        r"""AdmetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AdmetRequest:
 
     @property
     def smiles(self):
-        """Gets the smiles of this AdmetRequest.
+        r"""Gets the smiles of this AdmetRequest.
 
         分子SMILES表达式
 
@@ -53,7 +53,7 @@ class AdmetRequest:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this AdmetRequest.
+        r"""Sets the smiles of this AdmetRequest.
 
         分子SMILES表达式
 

@@ -35,7 +35,7 @@ class InstanceDetail:
     }
 
     def __init__(self, instance_id=None, instance_name=None, status=None, type=None, solution=None, hotfix_versions=None):
-        """InstanceDetail
+        r"""InstanceDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class InstanceDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceDetail.
+        r"""Gets the instance_id of this InstanceDetail.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class InstanceDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceDetail.
+        r"""Sets the instance_id of this InstanceDetail.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class InstanceDetail:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceDetail.
+        r"""Gets the instance_name of this InstanceDetail.
 
         实例名称。
 
@@ -111,7 +111,7 @@ class InstanceDetail:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceDetail.
+        r"""Sets the instance_name of this InstanceDetail.
 
         实例名称。
 
@@ -122,7 +122,7 @@ class InstanceDetail:
 
     @property
     def status(self):
-        """Gets the status of this InstanceDetail.
+        r"""Gets the status of this InstanceDetail.
 
         实例状态。
 
@@ -133,7 +133,7 @@ class InstanceDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceDetail.
+        r"""Sets the status of this InstanceDetail.
 
         实例状态。
 
@@ -144,7 +144,7 @@ class InstanceDetail:
 
     @property
     def type(self):
-        """Gets the type of this InstanceDetail.
+        r"""Gets the type of this InstanceDetail.
 
         实例类型。
 
@@ -155,7 +155,7 @@ class InstanceDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InstanceDetail.
+        r"""Sets the type of this InstanceDetail.
 
         实例类型。
 
@@ -166,7 +166,7 @@ class InstanceDetail:
 
     @property
     def solution(self):
-        """Gets the solution of this InstanceDetail.
+        r"""Gets the solution of this InstanceDetail.
 
         实例部署形态。
 
@@ -177,7 +177,7 @@ class InstanceDetail:
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this InstanceDetail.
+        r"""Sets the solution of this InstanceDetail.
 
         实例部署形态。
 
@@ -188,7 +188,7 @@ class InstanceDetail:
 
     @property
     def hotfix_versions(self):
-        """Gets the hotfix_versions of this InstanceDetail.
+        r"""Gets the hotfix_versions of this InstanceDetail.
 
         已升级热补丁版本。
 
@@ -199,7 +199,7 @@ class InstanceDetail:
 
     @hotfix_versions.setter
     def hotfix_versions(self, hotfix_versions):
-        """Sets the hotfix_versions of this InstanceDetail.
+        r"""Sets the hotfix_versions of this InstanceDetail.
 
         已升级热补丁版本。
 

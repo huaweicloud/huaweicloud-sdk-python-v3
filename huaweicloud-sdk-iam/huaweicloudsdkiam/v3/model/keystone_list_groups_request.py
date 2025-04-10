@@ -27,7 +27,7 @@ class KeystoneListGroupsRequest:
     }
 
     def __init__(self, domain_id=None, name=None):
-        """KeystoneListGroupsRequest
+        r"""KeystoneListGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeystoneListGroupsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneListGroupsRequest.
+        r"""Gets the domain_id of this KeystoneListGroupsRequest.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -61,7 +61,7 @@ class KeystoneListGroupsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneListGroupsRequest.
+        r"""Sets the domain_id of this KeystoneListGroupsRequest.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -72,7 +72,7 @@ class KeystoneListGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneListGroupsRequest.
+        r"""Gets the name of this KeystoneListGroupsRequest.
 
         用户组名，长度小于等于128字符，获取方式请参见：[获取用户组名](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -83,7 +83,7 @@ class KeystoneListGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneListGroupsRequest.
+        r"""Sets the name of this KeystoneListGroupsRequest.
 
         用户组名，长度小于等于128字符，获取方式请参见：[获取用户组名](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

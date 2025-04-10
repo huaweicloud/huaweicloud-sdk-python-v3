@@ -27,7 +27,7 @@ class UpdateVirtualInterfaceRequest:
     }
 
     def __init__(self, virtual_interface_id=None, body=None):
-        """UpdateVirtualInterfaceRequest
+        r"""UpdateVirtualInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVirtualInterfaceRequest:
 
     @property
     def virtual_interface_id(self):
-        """Gets the virtual_interface_id of this UpdateVirtualInterfaceRequest.
+        r"""Gets the virtual_interface_id of this UpdateVirtualInterfaceRequest.
 
         虚拟接口ID。
 
@@ -60,7 +60,7 @@ class UpdateVirtualInterfaceRequest:
 
     @virtual_interface_id.setter
     def virtual_interface_id(self, virtual_interface_id):
-        """Sets the virtual_interface_id of this UpdateVirtualInterfaceRequest.
+        r"""Sets the virtual_interface_id of this UpdateVirtualInterfaceRequest.
 
         虚拟接口ID。
 
@@ -71,7 +71,7 @@ class UpdateVirtualInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVirtualInterfaceRequest.
+        r"""Gets the body of this UpdateVirtualInterfaceRequest.
 
         :return: The body of this UpdateVirtualInterfaceRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVirtualInterfaceRequestBody`
@@ -80,7 +80,7 @@ class UpdateVirtualInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVirtualInterfaceRequest.
+        r"""Sets the body of this UpdateVirtualInterfaceRequest.
 
         :param body: The body of this UpdateVirtualInterfaceRequest.
         :type body: :class:`huaweicloudsdkdc.v3.UpdateVirtualInterfaceRequestBody`

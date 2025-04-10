@@ -28,7 +28,7 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, system_templates=None, custom_templates=None):
-        """ListTemplatesResponse
+        r"""ListTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def system_templates(self):
-        """Gets the system_templates of this ListTemplatesResponse.
+        r"""Gets the system_templates of this ListTemplatesResponse.
 
         系统模板列表。
 
@@ -62,7 +62,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @system_templates.setter
     def system_templates(self, system_templates):
-        """Sets the system_templates of this ListTemplatesResponse.
+        r"""Sets the system_templates of this ListTemplatesResponse.
 
         系统模板列表。
 
@@ -73,7 +73,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def custom_templates(self):
-        """Gets the custom_templates of this ListTemplatesResponse.
+        r"""Gets the custom_templates of this ListTemplatesResponse.
 
         自定义模板列表。
 
@@ -84,7 +84,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @custom_templates.setter
     def custom_templates(self, custom_templates):
-        """Sets the custom_templates of this ListTemplatesResponse.
+        r"""Sets the custom_templates of this ListTemplatesResponse.
 
         自定义模板列表。
 

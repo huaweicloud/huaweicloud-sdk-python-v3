@@ -27,7 +27,7 @@ class UpdateRecordCallbackConfigRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateRecordCallbackConfigRequest
+        r"""UpdateRecordCallbackConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateRecordCallbackConfigRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateRecordCallbackConfigRequest.
+        r"""Gets the id of this UpdateRecordCallbackConfigRequest.
 
         配置ID，在创建配置成功后返回
 
@@ -60,7 +60,7 @@ class UpdateRecordCallbackConfigRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateRecordCallbackConfigRequest.
+        r"""Sets the id of this UpdateRecordCallbackConfigRequest.
 
         配置ID，在创建配置成功后返回
 
@@ -71,7 +71,7 @@ class UpdateRecordCallbackConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRecordCallbackConfigRequest.
+        r"""Gets the body of this UpdateRecordCallbackConfigRequest.
 
         :return: The body of this UpdateRecordCallbackConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`
@@ -80,7 +80,7 @@ class UpdateRecordCallbackConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRecordCallbackConfigRequest.
+        r"""Sets the body of this UpdateRecordCallbackConfigRequest.
 
         :param body: The body of this UpdateRecordCallbackConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`

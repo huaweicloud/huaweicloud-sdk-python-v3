@@ -25,7 +25,7 @@ class EncryptDataReq:
     }
 
     def __init__(self, encrypt_data=None):
-        """EncryptDataReq
+        r"""EncryptDataReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EncryptDataReq:
 
     @property
     def encrypt_data(self):
-        """Gets the encrypt_data of this EncryptDataReq.
+        r"""Gets the encrypt_data of this EncryptDataReq.
 
         :return: The encrypt_data of this EncryptDataReq.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptDataIn`
@@ -51,7 +51,7 @@ class EncryptDataReq:
 
     @encrypt_data.setter
     def encrypt_data(self, encrypt_data):
-        """Sets the encrypt_data of this EncryptDataReq.
+        r"""Sets the encrypt_data of this EncryptDataReq.
 
         :param encrypt_data: The encrypt_data of this EncryptDataReq.
         :type encrypt_data: :class:`huaweicloudsdkief.v1.EncryptDataIn`

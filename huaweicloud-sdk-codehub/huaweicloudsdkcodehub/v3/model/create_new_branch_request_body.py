@@ -27,7 +27,7 @@ class CreateNewBranchRequestBody:
     }
 
     def __init__(self, branch_name=None, ref=None):
-        """CreateNewBranchRequestBody
+        r"""CreateNewBranchRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateNewBranchRequestBody:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this CreateNewBranchRequestBody.
+        r"""Gets the branch_name of this CreateNewBranchRequestBody.
 
         分支名称
 
@@ -59,7 +59,7 @@ class CreateNewBranchRequestBody:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this CreateNewBranchRequestBody.
+        r"""Sets the branch_name of this CreateNewBranchRequestBody.
 
         分支名称
 
@@ -70,7 +70,7 @@ class CreateNewBranchRequestBody:
 
     @property
     def ref(self):
-        """Gets the ref of this CreateNewBranchRequestBody.
+        r"""Gets the ref of this CreateNewBranchRequestBody.
 
         源分支名称
 
@@ -81,7 +81,7 @@ class CreateNewBranchRequestBody:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this CreateNewBranchRequestBody.
+        r"""Sets the ref of this CreateNewBranchRequestBody.
 
         源分支名称
 

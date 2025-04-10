@@ -34,7 +34,7 @@ class ElbClient(Client):
         return client_builder
 
     def batch_create_listener_tags(self, request):
-        """批量添加监听器标签
+        r"""批量添加监听器标签
 
         批量添加监听器标签。
         
@@ -101,7 +101,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_create_loadbalancer_tags(self, request):
-        """批量添加负载均衡器标签
+        r"""批量添加负载均衡器标签
 
         批量添加负载均衡器标签。
         
@@ -168,7 +168,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_delete_listener_tags(self, request):
-        """批量删除监听器标签
+        r"""批量删除监听器标签
 
         批量删除监听器标签。
         
@@ -235,7 +235,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_delete_loadbalancer_tags(self, request):
-        """批量删除负载均衡器标签
+        r"""批量删除负载均衡器标签
 
         批量删除负载均衡器标签。
         
@@ -302,7 +302,7 @@ class ElbClient(Client):
         return http_info
 
     def create_healthmonitor(self, request):
-        """创建健康检查
+        r"""创建健康检查
 
         给后端云服务器组添加健康检查
         
@@ -367,7 +367,7 @@ class ElbClient(Client):
         return http_info
 
     def create_l7policy(self, request):
-        """创建转发策略
+        r"""创建转发策略
 
         创建listener关联的转发策略
         
@@ -432,7 +432,7 @@ class ElbClient(Client):
         return http_info
 
     def create_l7rule(self, request):
-        """创建转发规则
+        r"""创建转发规则
 
         创建转发规则
         
@@ -499,7 +499,7 @@ class ElbClient(Client):
         return http_info
 
     def create_listener(self, request):
-        """创建监听器
+        r"""创建监听器
 
         创建与负载均衡器绑定的监听器。
         
@@ -564,7 +564,7 @@ class ElbClient(Client):
         return http_info
 
     def create_listener_tags(self, request):
-        """添加监听器标签
+        r"""添加监听器标签
 
         给指定监听器添加标签。
         
@@ -631,7 +631,7 @@ class ElbClient(Client):
         return http_info
 
     def create_loadbalancer(self, request):
-        """创建负载均衡器
+        r"""创建负载均衡器
 
         创建私网类型的增强型负载均衡器。创建成功后，该接口会返回创建的增强型负载均衡器的ID、所属子网ID、负载均衡器IP等详细信息。若要创建公网类型的增强型负载均衡器，还需调用创建浮动IP的接口，将浮动IP与私网负载均衡器的vip_port_id绑定。
         
@@ -696,7 +696,7 @@ class ElbClient(Client):
         return http_info
 
     def create_loadbalancer_tags(self, request):
-        """添加负载均衡器标签
+        r"""添加负载均衡器标签
 
         给指定负载均衡器添加标签。
         
@@ -763,7 +763,7 @@ class ElbClient(Client):
         return http_info
 
     def create_member(self, request):
-        """创建后端云服务器
+        r"""创建后端云服务器
 
         添加属于某个后端云服务器组的后端云服务器。
         
@@ -830,7 +830,7 @@ class ElbClient(Client):
         return http_info
 
     def create_pool(self, request):
-        """创建后端云服务器组
+        r"""创建后端云服务器组
 
         创建后端云服务器组。将多个后端云服务器添加到后端云服务器组中后，请求会在后端云服务器间按后端云服务器组的负载均衡算法和后端云服务器的权重来做请求分发。
         
@@ -895,7 +895,7 @@ class ElbClient(Client):
         return http_info
 
     def create_whitelist(self, request):
-        """创建白名单
+        r"""创建白名单
 
         创建白名单，控制监听器的访问权限。若开启了白名单功能，只有白名单中放通的IP可以访问该监听器的后端服务。
         
@@ -960,7 +960,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_healthmonitor(self, request):
-        """删除健康检查
+        r"""删除健康检查
 
         删除健康检查
         
@@ -1025,7 +1025,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_l7policy(self, request):
-        """删除转发策略
+        r"""删除转发策略
 
         删除转发策略
         
@@ -1090,7 +1090,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_l7rule(self, request):
-        """删除转发规则
+        r"""删除转发规则
 
         删除转发规则
         
@@ -1157,7 +1157,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_listener(self, request):
-        """删除监听器
+        r"""删除监听器
 
         根据指定ID删除监听器。
         
@@ -1222,7 +1222,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_listener_tags(self, request):
-        """删除监听器标签
+        r"""删除监听器标签
 
         删除监听器的某个key对应的标签。
         
@@ -1289,7 +1289,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_loadbalancer(self, request):
-        """删除负载均衡
+        r"""删除负载均衡
 
         根据指定ID删除负载均衡器。
         
@@ -1354,7 +1354,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_loadbalancer_tags(self, request):
-        """删除负载均衡标签
+        r"""删除负载均衡标签
 
         删除负载均衡器的某个key对应的标签。
         
@@ -1421,7 +1421,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_member(self, request):
-        """删除后端云服务器
+        r"""删除后端云服务器
 
         删除后端云服务器
         
@@ -1488,7 +1488,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_pool(self, request):
-        """删除后端云服务器组
+        r"""删除后端云服务器组
 
         删除后端云服务器组。
         
@@ -1553,7 +1553,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_whitelist(self, request):
-        """删除白名单
+        r"""删除白名单
 
         删除白名单
         
@@ -1618,7 +1618,7 @@ class ElbClient(Client):
         return http_info
 
     def list_healthmonitors(self, request):
-        """查询健康检查列表
+        r"""查询健康检查列表
 
         查询健康检查列表
         
@@ -1711,7 +1711,7 @@ class ElbClient(Client):
         return http_info
 
     def list_l7policies(self, request):
-        """查询转发策略列表
+        r"""查询转发策略列表
 
         查询转发策略。支持过滤查询和分页查询。
         
@@ -1806,7 +1806,7 @@ class ElbClient(Client):
         return http_info
 
     def list_l7rules(self, request):
-        """查询转发规则列表
+        r"""查询转发规则列表
 
         查询指定转发策略下关联的转发规则列表
         
@@ -1893,7 +1893,7 @@ class ElbClient(Client):
         return http_info
 
     def list_listener_tags(self, request):
-        """查询所有监听器的标签列表
+        r"""查询所有监听器的标签列表
 
         查询指定项目下所有监听器的标签列表
         
@@ -1956,7 +1956,7 @@ class ElbClient(Client):
         return http_info
 
     def list_listeners(self, request):
-        """查询监听器列表
+        r"""查询监听器列表
 
         查询监听器列表。支持过滤查询和分页查询。可以通过监听器ID、协议类型、监听端口号、关联的后端云服务器的IP等查询监听器。
         
@@ -2055,7 +2055,7 @@ class ElbClient(Client):
         return http_info
 
     def list_listeners_by_tags(self, request):
-        """根据标签查询监听器
+        r"""根据标签查询监听器
 
         根据标签过滤查询监听器实例。
         
@@ -2120,7 +2120,7 @@ class ElbClient(Client):
         return http_info
 
     def list_loadbalancer_tags(self, request):
-        """查询所有负载均衡器的标签列表
+        r"""查询所有负载均衡器的标签列表
 
         查询指定项目下所有负载均衡器的标签列表
         
@@ -2183,7 +2183,7 @@ class ElbClient(Client):
         return http_info
 
     def list_loadbalancers(self, request):
-        """查询负载均衡列表
+        r"""查询负载均衡列表
 
         查询负载均衡器列表。
         
@@ -2278,7 +2278,7 @@ class ElbClient(Client):
         return http_info
 
     def list_loadbalancers_by_tags(self, request):
-        """根据标签查询负载均衡器
+        r"""根据标签查询负载均衡器
 
         根据标签过滤查询负载均衡实例。
         
@@ -2343,7 +2343,7 @@ class ElbClient(Client):
         return http_info
 
     def list_members(self, request):
-        """查询后端云服务器列表
+        r"""查询后端云服务器列表
 
         查询属于某个后端云服务器组的后端云服务器。
         
@@ -2430,7 +2430,7 @@ class ElbClient(Client):
         return http_info
 
     def list_pools(self, request):
-        """查询后端云服务器组列表
+        r"""查询后端云服务器组列表
 
         查询后端云服务器组列表。
         
@@ -2519,7 +2519,7 @@ class ElbClient(Client):
         return http_info
 
     def list_whitelists(self, request):
-        """查询白名单列表
+        r"""查询白名单列表
 
         查询白名单，支持过滤查询和分页查询。
         
@@ -2596,7 +2596,7 @@ class ElbClient(Client):
         return http_info
 
     def show_healthmonitors(self, request):
-        """查询健康检查详情
+        r"""查询健康检查详情
 
         根据指定ID查询健康检查详情。
         
@@ -2661,7 +2661,7 @@ class ElbClient(Client):
         return http_info
 
     def show_l7policy(self, request):
-        """查询转发策略详情
+        r"""查询转发策略详情
 
         根据指定ID查询转发策略详情。
         
@@ -2726,7 +2726,7 @@ class ElbClient(Client):
         return http_info
 
     def show_l7rule(self, request):
-        """查询转发规则详情
+        r"""查询转发规则详情
 
         根据指定ID查询某转发策略下关联的转发规则详情。
         
@@ -2793,7 +2793,7 @@ class ElbClient(Client):
         return http_info
 
     def show_listener(self, request):
-        """查询监听器详情
+        r"""查询监听器详情
 
         根据指定ID查询监听器详情。
         
@@ -2858,7 +2858,7 @@ class ElbClient(Client):
         return http_info
 
     def show_listener_tags(self, request):
-        """查询监听器的标签详情
+        r"""查询监听器的标签详情
 
         查询指定监听器的所有标签信息。
         
@@ -2923,7 +2923,7 @@ class ElbClient(Client):
         return http_info
 
     def show_loadbalancer(self, request):
-        """查询负载均衡详情
+        r"""查询负载均衡详情
 
         根据指定负载均衡器ID查询负载均衡器详情
         
@@ -2988,7 +2988,7 @@ class ElbClient(Client):
         return http_info
 
     def show_loadbalancer_tags(self, request):
-        """查询负载均衡器的标签详情
+        r"""查询负载均衡器的标签详情
 
         查询指定负载均衡器的所有标签信息
         
@@ -3053,7 +3053,7 @@ class ElbClient(Client):
         return http_info
 
     def show_loadbalancers_status(self, request):
-        """查询负载均衡状态树
+        r"""查询负载均衡状态树
 
         查询负载均衡器状态树。可通过该接口查询负载均衡器关联的监听器、后端云服务器组、后端云服务器、健康检查、转发策略、转发规则的主要信息，了解负载均衡器下资源的拓扑情况。
         
@@ -3118,7 +3118,7 @@ class ElbClient(Client):
         return http_info
 
     def show_member(self, request):
-        """查询后端云服务器详情
+        r"""查询后端云服务器详情
 
         根据指定ID查询后端云服务器详情。
         
@@ -3185,7 +3185,7 @@ class ElbClient(Client):
         return http_info
 
     def show_pool(self, request):
-        """查询后端云服务器组详情
+        r"""查询后端云服务器组详情
 
         根据指定ID查询后端云服务器组详情。
         
@@ -3250,7 +3250,7 @@ class ElbClient(Client):
         return http_info
 
     def show_whitelist(self, request):
-        """查询白名单详情
+        r"""查询白名单详情
 
         根据指定ID查询白名单详情。
         
@@ -3315,7 +3315,7 @@ class ElbClient(Client):
         return http_info
 
     def update_healthmonitor(self, request):
-        """更新健康检查
+        r"""更新健康检查
 
         更新健康检查
         
@@ -3382,7 +3382,7 @@ class ElbClient(Client):
         return http_info
 
     def update_l7policies(self, request):
-        """更新转发策略
+        r"""更新转发策略
 
         更新转发策略
         
@@ -3449,7 +3449,7 @@ class ElbClient(Client):
         return http_info
 
     def update_l7rule(self, request):
-        """更新转发规则
+        r"""更新转发规则
 
         更新指定的转发规则
         
@@ -3518,7 +3518,7 @@ class ElbClient(Client):
         return http_info
 
     def update_listener(self, request):
-        """更新监听器
+        r"""更新监听器
 
         更新监听器。
         
@@ -3585,7 +3585,7 @@ class ElbClient(Client):
         return http_info
 
     def update_loadbalancer(self, request):
-        """更新负载均衡器
+        r"""更新负载均衡器
 
         更新负载均衡器。
         
@@ -3652,7 +3652,7 @@ class ElbClient(Client):
         return http_info
 
     def update_member(self, request):
-        """更新后端云服务器
+        r"""更新后端云服务器
 
         更新后端云服务器
         
@@ -3721,7 +3721,7 @@ class ElbClient(Client):
         return http_info
 
     def update_pool(self, request):
-        """更新后端云服务器组
+        r"""更新后端云服务器组
 
         更新后端云服务器组。
         
@@ -3788,7 +3788,7 @@ class ElbClient(Client):
         return http_info
 
     def update_whitelist(self, request):
-        """更新白名单
+        r"""更新白名单
 
         更新白名单。可以打开或关闭白名单，或更新访问控制的IP。
         
@@ -3855,7 +3855,7 @@ class ElbClient(Client):
         return http_info
 
     def create_certificate(self, request):
-        """创建SSL证书
+        r"""创建SSL证书
 
         创建SSL证书。将监听器和SSL证书绑定后，可以通过负载均衡器实现服务端认证，后端服务器只要提供HTTP服务就能实现安全可靠的连接。
         
@@ -3920,7 +3920,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_certificate(self, request):
-        """删除SSL证书
+        r"""删除SSL证书
 
         删除指定的SSL证书
         
@@ -3985,7 +3985,7 @@ class ElbClient(Client):
         return http_info
 
     def list_certificates(self, request):
-        """查询SSL证书列表
+        r"""查询SSL证书列表
 
         查询SSL证书。支持过滤查询和分页查询。
         
@@ -4074,7 +4074,7 @@ class ElbClient(Client):
         return http_info
 
     def show_certificate(self, request):
-        """查询SSL证书详情
+        r"""查询SSL证书详情
 
         查询指定SSL证书的详情信息。
         
@@ -4139,7 +4139,7 @@ class ElbClient(Client):
         return http_info
 
     def update_certificate(self, request):
-        """更新SSL证书
+        r"""更新SSL证书
 
         更新指定的SSL证书
         

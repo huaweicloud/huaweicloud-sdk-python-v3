@@ -27,7 +27,7 @@ class ResourceInstanceResponseTags:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceInstanceResponseTags
+        r"""ResourceInstanceResponseTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceInstanceResponseTags:
 
     @property
     def key(self):
-        """Gets the key of this ResourceInstanceResponseTags.
+        r"""Gets the key of this ResourceInstanceResponseTags.
 
         键
 
@@ -61,7 +61,7 @@ class ResourceInstanceResponseTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceInstanceResponseTags.
+        r"""Sets the key of this ResourceInstanceResponseTags.
 
         键
 
@@ -72,7 +72,7 @@ class ResourceInstanceResponseTags:
 
     @property
     def value(self):
-        """Gets the value of this ResourceInstanceResponseTags.
+        r"""Gets the value of this ResourceInstanceResponseTags.
 
         值
 
@@ -83,7 +83,7 @@ class ResourceInstanceResponseTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceInstanceResponseTags.
+        r"""Sets the value of this ResourceInstanceResponseTags.
 
         值
 

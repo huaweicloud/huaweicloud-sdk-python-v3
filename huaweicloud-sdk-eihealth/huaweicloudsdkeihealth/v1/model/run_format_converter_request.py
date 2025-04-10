@@ -27,7 +27,7 @@ class RunFormatConverterRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """RunFormatConverterRequest
+        r"""RunFormatConverterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunFormatConverterRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this RunFormatConverterRequest.
+        r"""Gets the eihealth_project_id of this RunFormatConverterRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class RunFormatConverterRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this RunFormatConverterRequest.
+        r"""Sets the eihealth_project_id of this RunFormatConverterRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class RunFormatConverterRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunFormatConverterRequest.
+        r"""Gets the body of this RunFormatConverterRequest.
 
         :return: The body of this RunFormatConverterRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunFormatConverterReq`
@@ -80,7 +80,7 @@ class RunFormatConverterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunFormatConverterRequest.
+        r"""Sets the body of this RunFormatConverterRequest.
 
         :param body: The body of this RunFormatConverterRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.RunFormatConverterReq`

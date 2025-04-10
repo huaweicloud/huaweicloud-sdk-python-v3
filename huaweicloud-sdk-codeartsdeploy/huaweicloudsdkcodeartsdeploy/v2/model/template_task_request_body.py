@@ -35,7 +35,7 @@ class TemplateTaskRequestBody:
     }
 
     def __init__(self, project_id=None, project_name=None, template_id=None, task_name=None, slave_cluster_id=None, configs=None):
-        """TemplateTaskRequestBody
+        r"""TemplateTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TemplateTaskRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TemplateTaskRequestBody.
+        r"""Gets the project_id of this TemplateTaskRequestBody.
 
         项目id
 
@@ -85,7 +85,7 @@ class TemplateTaskRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TemplateTaskRequestBody.
+        r"""Sets the project_id of this TemplateTaskRequestBody.
 
         项目id
 
@@ -96,7 +96,7 @@ class TemplateTaskRequestBody:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TemplateTaskRequestBody.
+        r"""Gets the project_name of this TemplateTaskRequestBody.
 
         项目名称
 
@@ -107,7 +107,7 @@ class TemplateTaskRequestBody:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TemplateTaskRequestBody.
+        r"""Sets the project_name of this TemplateTaskRequestBody.
 
         项目名称
 
@@ -118,7 +118,7 @@ class TemplateTaskRequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TemplateTaskRequestBody.
+        r"""Gets the template_id of this TemplateTaskRequestBody.
 
         部署模板id
 
@@ -129,7 +129,7 @@ class TemplateTaskRequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TemplateTaskRequestBody.
+        r"""Sets the template_id of this TemplateTaskRequestBody.
 
         部署模板id
 
@@ -140,7 +140,7 @@ class TemplateTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TemplateTaskRequestBody.
+        r"""Gets the task_name of this TemplateTaskRequestBody.
 
         应用名称
 
@@ -151,7 +151,7 @@ class TemplateTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TemplateTaskRequestBody.
+        r"""Sets the task_name of this TemplateTaskRequestBody.
 
         应用名称
 
@@ -162,7 +162,7 @@ class TemplateTaskRequestBody:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this TemplateTaskRequestBody.
+        r"""Gets the slave_cluster_id of this TemplateTaskRequestBody.
 
         自定义slave资源池id
 
@@ -173,7 +173,7 @@ class TemplateTaskRequestBody:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this TemplateTaskRequestBody.
+        r"""Sets the slave_cluster_id of this TemplateTaskRequestBody.
 
         自定义slave资源池id
 
@@ -184,7 +184,7 @@ class TemplateTaskRequestBody:
 
     @property
     def configs(self):
-        """Gets the configs of this TemplateTaskRequestBody.
+        r"""Gets the configs of this TemplateTaskRequestBody.
 
         部署参数类
 
@@ -195,7 +195,7 @@ class TemplateTaskRequestBody:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this TemplateTaskRequestBody.
+        r"""Sets the configs of this TemplateTaskRequestBody.
 
         部署参数类
 

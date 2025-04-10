@@ -27,7 +27,7 @@ class EdgeContentRsp:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """EdgeContentRsp
+        r"""EdgeContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EdgeContentRsp:
 
     @property
     def iotda_instance_id(self):
-        """Gets the iotda_instance_id of this EdgeContentRsp.
+        r"""Gets the iotda_instance_id of this EdgeContentRsp.
 
         Edge实例Id
 
@@ -59,7 +59,7 @@ class EdgeContentRsp:
 
     @iotda_instance_id.setter
     def iotda_instance_id(self, iotda_instance_id):
-        """Sets the iotda_instance_id of this EdgeContentRsp.
+        r"""Sets the iotda_instance_id of this EdgeContentRsp.
 
         Edge实例Id
 
@@ -70,7 +70,7 @@ class EdgeContentRsp:
 
     @property
     def rules(self):
-        """Gets the rules of this EdgeContentRsp.
+        r"""Gets the rules of this EdgeContentRsp.
 
         在Edge实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 
@@ -81,7 +81,7 @@ class EdgeContentRsp:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this EdgeContentRsp.
+        r"""Sets the rules of this EdgeContentRsp.
 
         在Edge实例中要配置的转发规则，包含推送数据的资源空间和产品列表
 

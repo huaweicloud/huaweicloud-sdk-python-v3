@@ -25,7 +25,7 @@ class UpdateAomMappingRulesRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAomMappingRulesRequest
+        r"""UpdateAomMappingRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAomMappingRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAomMappingRulesRequest.
+        r"""Gets the body of this UpdateAomMappingRulesRequest.
 
         :return: The body of this UpdateAomMappingRulesRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateAomMappingRequest`
@@ -52,7 +52,7 @@ class UpdateAomMappingRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAomMappingRulesRequest.
+        r"""Sets the body of this UpdateAomMappingRulesRequest.
 
         :param body: The body of this UpdateAomMappingRulesRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateAomMappingRequest`

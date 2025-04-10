@@ -31,7 +31,7 @@ class CentralNetworkPlane:
     }
 
     def __init__(self, id=None, name=None, associate_er_tables=None, exclude_er_connections=None):
-        """CentralNetworkPlane
+        r"""CentralNetworkPlane
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CentralNetworkPlane:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkPlane.
+        r"""Gets the id of this CentralNetworkPlane.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class CentralNetworkPlane:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkPlane.
+        r"""Sets the id of this CentralNetworkPlane.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class CentralNetworkPlane:
 
     @property
     def name(self):
-        """Gets the name of this CentralNetworkPlane.
+        r"""Gets the name of this CentralNetworkPlane.
 
         实例名字。
 
@@ -95,7 +95,7 @@ class CentralNetworkPlane:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CentralNetworkPlane.
+        r"""Sets the name of this CentralNetworkPlane.
 
         实例名字。
 
@@ -106,7 +106,7 @@ class CentralNetworkPlane:
 
     @property
     def associate_er_tables(self):
-        """Gets the associate_er_tables of this CentralNetworkPlane.
+        r"""Gets the associate_er_tables of this CentralNetworkPlane.
 
         关联的中心网络ER实例列表。
 
@@ -117,7 +117,7 @@ class CentralNetworkPlane:
 
     @associate_er_tables.setter
     def associate_er_tables(self, associate_er_tables):
-        """Sets the associate_er_tables of this CentralNetworkPlane.
+        r"""Sets the associate_er_tables of this CentralNetworkPlane.
 
         关联的中心网络ER实例列表。
 
@@ -128,7 +128,7 @@ class CentralNetworkPlane:
 
     @property
     def exclude_er_connections(self):
-        """Gets the exclude_er_connections of this CentralNetworkPlane.
+        r"""Gets the exclude_er_connections of this CentralNetworkPlane.
 
         当自动连接所有ER实例时，排除中心网络的ER实例的连接。
 
@@ -139,7 +139,7 @@ class CentralNetworkPlane:
 
     @exclude_er_connections.setter
     def exclude_er_connections(self, exclude_er_connections):
-        """Sets the exclude_er_connections of this CentralNetworkPlane.
+        r"""Sets the exclude_er_connections of this CentralNetworkPlane.
 
         当自动连接所有ER实例时，排除中心网络的ER实例的连接。
 

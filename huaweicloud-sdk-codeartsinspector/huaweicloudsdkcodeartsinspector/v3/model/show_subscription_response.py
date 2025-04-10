@@ -42,7 +42,7 @@ class ShowSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, force_purchase=None, amount=None, expire_time=None, limit=None, resources=None, used=None, type=None, is_new_user=None, version=None):
-        """ShowSubscriptionResponse
+        r"""ShowSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def force_purchase(self):
-        """Gets the force_purchase of this ShowSubscriptionResponse.
+        r"""Gets the force_purchase of this ShowSubscriptionResponse.
 
         forcePurchase
 
@@ -111,7 +111,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @force_purchase.setter
     def force_purchase(self, force_purchase):
-        """Sets the force_purchase of this ShowSubscriptionResponse.
+        r"""Sets the force_purchase of this ShowSubscriptionResponse.
 
         forcePurchase
 
@@ -122,7 +122,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def amount(self):
-        """Gets the amount of this ShowSubscriptionResponse.
+        r"""Gets the amount of this ShowSubscriptionResponse.
 
         amount
 
@@ -133,7 +133,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ShowSubscriptionResponse.
+        r"""Sets the amount of this ShowSubscriptionResponse.
 
         amount
 
@@ -144,7 +144,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowSubscriptionResponse.
+        r"""Gets the expire_time of this ShowSubscriptionResponse.
 
         expire_time
 
@@ -155,7 +155,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowSubscriptionResponse.
+        r"""Sets the expire_time of this ShowSubscriptionResponse.
 
         expire_time
 
@@ -166,7 +166,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ShowSubscriptionResponse.
+        r"""Gets the limit of this ShowSubscriptionResponse.
 
         limit
 
@@ -177,7 +177,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowSubscriptionResponse.
+        r"""Sets the limit of this ShowSubscriptionResponse.
 
         limit
 
@@ -188,7 +188,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowSubscriptionResponse.
+        r"""Gets the resources of this ShowSubscriptionResponse.
 
         resources
 
@@ -199,7 +199,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowSubscriptionResponse.
+        r"""Sets the resources of this ShowSubscriptionResponse.
 
         resources
 
@@ -210,7 +210,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def used(self):
-        """Gets the used of this ShowSubscriptionResponse.
+        r"""Gets the used of this ShowSubscriptionResponse.
 
         used
 
@@ -221,7 +221,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowSubscriptionResponse.
+        r"""Sets the used of this ShowSubscriptionResponse.
 
         used
 
@@ -232,7 +232,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowSubscriptionResponse.
+        r"""Gets the type of this ShowSubscriptionResponse.
 
         type
 
@@ -243,7 +243,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSubscriptionResponse.
+        r"""Sets the type of this ShowSubscriptionResponse.
 
         type
 
@@ -254,7 +254,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def is_new_user(self):
-        """Gets the is_new_user of this ShowSubscriptionResponse.
+        r"""Gets the is_new_user of this ShowSubscriptionResponse.
 
         isNewUser
 
@@ -265,7 +265,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @is_new_user.setter
     def is_new_user(self, is_new_user):
-        """Sets the is_new_user of this ShowSubscriptionResponse.
+        r"""Sets the is_new_user of this ShowSubscriptionResponse.
 
         isNewUser
 
@@ -276,7 +276,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowSubscriptionResponse.
+        r"""Gets the version of this ShowSubscriptionResponse.
 
         version
 
@@ -287,7 +287,7 @@ class ShowSubscriptionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowSubscriptionResponse.
+        r"""Sets the version of this ShowSubscriptionResponse.
 
         version
 

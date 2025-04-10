@@ -41,7 +41,7 @@ class ListUserUsageMetricRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, username=None, usage_min_hours=None, usage_max_hours=None, sort_field=None, sort_type=None, offset=None, limit=None):
-        """ListUserUsageMetricRequest
+        r"""ListUserUsageMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUserUsageMetricRequest.
+        r"""Gets the start_time of this ListUserUsageMetricRequest.
 
         查询起始时间(0时区)
 
@@ -108,7 +108,7 @@ class ListUserUsageMetricRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUserUsageMetricRequest.
+        r"""Sets the start_time of this ListUserUsageMetricRequest.
 
         查询起始时间(0时区)
 
@@ -119,7 +119,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUserUsageMetricRequest.
+        r"""Gets the end_time of this ListUserUsageMetricRequest.
 
         查询截至时间(0时区)
 
@@ -130,7 +130,7 @@ class ListUserUsageMetricRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUserUsageMetricRequest.
+        r"""Sets the end_time of this ListUserUsageMetricRequest.
 
         查询截至时间(0时区)
 
@@ -141,7 +141,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def username(self):
-        """Gets the username of this ListUserUsageMetricRequest.
+        r"""Gets the username of this ListUserUsageMetricRequest.
 
         用户名(模糊匹配)
 
@@ -152,7 +152,7 @@ class ListUserUsageMetricRequest:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ListUserUsageMetricRequest.
+        r"""Sets the username of this ListUserUsageMetricRequest.
 
         用户名(模糊匹配)
 
@@ -163,7 +163,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def usage_min_hours(self):
-        """Gets the usage_min_hours of this ListUserUsageMetricRequest.
+        r"""Gets the usage_min_hours of this ListUserUsageMetricRequest.
 
         使用时长最小值
 
@@ -174,7 +174,7 @@ class ListUserUsageMetricRequest:
 
     @usage_min_hours.setter
     def usage_min_hours(self, usage_min_hours):
-        """Sets the usage_min_hours of this ListUserUsageMetricRequest.
+        r"""Sets the usage_min_hours of this ListUserUsageMetricRequest.
 
         使用时长最小值
 
@@ -185,7 +185,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def usage_max_hours(self):
-        """Gets the usage_max_hours of this ListUserUsageMetricRequest.
+        r"""Gets the usage_max_hours of this ListUserUsageMetricRequest.
 
         使用时长最大值 usage_min_hours和usage_max_hours同时存在时,usage_max_hours必须大于等于usage_min_hours
 
@@ -196,7 +196,7 @@ class ListUserUsageMetricRequest:
 
     @usage_max_hours.setter
     def usage_max_hours(self, usage_max_hours):
-        """Sets the usage_max_hours of this ListUserUsageMetricRequest.
+        r"""Sets the usage_max_hours of this ListUserUsageMetricRequest.
 
         使用时长最大值 usage_min_hours和usage_max_hours同时存在时,usage_max_hours必须大于等于usage_min_hours
 
@@ -207,7 +207,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListUserUsageMetricRequest.
+        r"""Gets the sort_field of this ListUserUsageMetricRequest.
 
         按照指标进行排序 * `user_usage` -  按照用户使用时长排序
 
@@ -218,7 +218,7 @@ class ListUserUsageMetricRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListUserUsageMetricRequest.
+        r"""Sets the sort_field of this ListUserUsageMetricRequest.
 
         按照指标进行排序 * `user_usage` -  按照用户使用时长排序
 
@@ -229,7 +229,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListUserUsageMetricRequest.
+        r"""Gets the sort_type of this ListUserUsageMetricRequest.
 
         按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
@@ -240,7 +240,7 @@ class ListUserUsageMetricRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListUserUsageMetricRequest.
+        r"""Sets the sort_type of this ListUserUsageMetricRequest.
 
         按照指标进行排序的方向;需配合sort_field一起使用 * `DESC` - 降序返回数据 * `ASC` -  升序返回数据
 
@@ -251,7 +251,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserUsageMetricRequest.
+        r"""Gets the offset of this ListUserUsageMetricRequest.
 
         查询的偏移量,默认值0
 
@@ -262,7 +262,7 @@ class ListUserUsageMetricRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserUsageMetricRequest.
+        r"""Sets the offset of this ListUserUsageMetricRequest.
 
         查询的偏移量,默认值0
 
@@ -273,7 +273,7 @@ class ListUserUsageMetricRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserUsageMetricRequest.
+        r"""Gets the limit of this ListUserUsageMetricRequest.
 
         limit范围[1-100],默认值0
 
@@ -284,7 +284,7 @@ class ListUserUsageMetricRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserUsageMetricRequest.
+        r"""Sets the limit of this ListUserUsageMetricRequest.
 
         limit范围[1-100],默认值0
 

@@ -37,7 +37,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name_en=None, name_cn=None, site_code=None, site_type=None):
-        """ListGlobalConnectionBandwidthSitesRequest
+        r"""ListGlobalConnectionBandwidthSitesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the limit of this ListGlobalConnectionBandwidthSitesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -96,7 +96,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the limit of this ListGlobalConnectionBandwidthSitesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -107,7 +107,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the marker of this ListGlobalConnectionBandwidthSitesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -118,7 +118,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the marker of this ListGlobalConnectionBandwidthSitesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -129,7 +129,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the id of this ListGlobalConnectionBandwidthSitesRequest.
 
         根据id查询，可查询多个id。
 
@@ -140,7 +140,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the id of this ListGlobalConnectionBandwidthSitesRequest.
 
         根据id查询，可查询多个id。
 
@@ -151,7 +151,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the name_en of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点信息自定义英文名称。
 
@@ -162,7 +162,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the name_en of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点信息自定义英文名称。
 
@@ -173,7 +173,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the name_cn of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点信息自定义中文名称。
 
@@ -184,7 +184,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the name_cn of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点信息自定义中文名称。
 
@@ -195,7 +195,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def site_code(self):
-        """Gets the site_code of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the site_code of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点编码。
 
@@ -206,7 +206,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the site_code of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点编码。
 
@@ -217,7 +217,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @property
     def site_type(self):
-        """Gets the site_type of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Gets the site_type of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点类型： - Area: 大区 - SubArea: 区域 - Region: 城域
 
@@ -228,7 +228,7 @@ class ListGlobalConnectionBandwidthSitesRequest:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this ListGlobalConnectionBandwidthSitesRequest.
+        r"""Sets the site_type of this ListGlobalConnectionBandwidthSitesRequest.
 
         站点类型： - Area: 大区 - SubArea: 区域 - Region: 城域
 

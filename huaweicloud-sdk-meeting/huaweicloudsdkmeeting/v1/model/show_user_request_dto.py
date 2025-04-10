@@ -25,7 +25,7 @@ class ShowUserRequestDTO:
     }
 
     def __init__(self, id=None):
-        """ShowUserRequestDTO
+        r"""ShowUserRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowUserRequestDTO:
 
     @property
     def id(self):
-        """Gets the id of this ShowUserRequestDTO.
+        r"""Gets the id of this ShowUserRequestDTO.
 
         用户ID或者第三方账号
 
@@ -54,7 +54,7 @@ class ShowUserRequestDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowUserRequestDTO.
+        r"""Sets the id of this ShowUserRequestDTO.
 
         用户ID或者第三方账号
 

@@ -33,7 +33,7 @@ class VolumeMetadata:
     }
 
     def __init__(self, system__cmkid=None, system__encrypted=None, full_clone=None, hwpassthrough=None, order_id=None):
-        """VolumeMetadata
+        r"""VolumeMetadata
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VolumeMetadata:
 
     @property
     def system__cmkid(self):
-        """Gets the system__cmkid of this VolumeMetadata.
+        r"""Gets the system__cmkid of this VolumeMetadata.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。 > 说明： >  > 请求获取密钥ID的方法请参考：\"[查询密钥列表](https://support.huaweicloud.com/api-dew/dew_02_0017.html)\"。
 
@@ -82,7 +82,7 @@ class VolumeMetadata:
 
     @system__cmkid.setter
     def system__cmkid(self, system__cmkid):
-        """Sets the system__cmkid of this VolumeMetadata.
+        r"""Sets the system__cmkid of this VolumeMetadata.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。 > 说明： >  > 请求获取密钥ID的方法请参考：\"[查询密钥列表](https://support.huaweicloud.com/api-dew/dew_02_0017.html)\"。
 
@@ -93,7 +93,7 @@ class VolumeMetadata:
 
     @property
     def system__encrypted(self):
-        """Gets the system__encrypted of this VolumeMetadata.
+        r"""Gets the system__encrypted of this VolumeMetadata.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
 
@@ -104,7 +104,7 @@ class VolumeMetadata:
 
     @system__encrypted.setter
     def system__encrypted(self, system__encrypted):
-        """Sets the system__encrypted of this VolumeMetadata.
+        r"""Sets the system__encrypted of this VolumeMetadata.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
 
@@ -115,7 +115,7 @@ class VolumeMetadata:
 
     @property
     def full_clone(self):
-        """Gets the full_clone of this VolumeMetadata.
+        r"""Gets the full_clone of this VolumeMetadata.
 
         从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
 
@@ -126,7 +126,7 @@ class VolumeMetadata:
 
     @full_clone.setter
     def full_clone(self, full_clone):
-        """Sets the full_clone of this VolumeMetadata.
+        r"""Sets the full_clone of this VolumeMetadata.
 
         从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
 
@@ -137,7 +137,7 @@ class VolumeMetadata:
 
     @property
     def hwpassthrough(self):
-        """Gets the hwpassthrough of this VolumeMetadata.
+        r"""Gets the hwpassthrough of this VolumeMetadata.
 
         * true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 * false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 * 该字段不存在时，云硬盘默认为VBD类型。
 
@@ -148,7 +148,7 @@ class VolumeMetadata:
 
     @hwpassthrough.setter
     def hwpassthrough(self, hwpassthrough):
-        """Sets the hwpassthrough of this VolumeMetadata.
+        r"""Sets the hwpassthrough of this VolumeMetadata.
 
         * true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 * false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 * 该字段不存在时，云硬盘默认为VBD类型。
 
@@ -159,7 +159,7 @@ class VolumeMetadata:
 
     @property
     def order_id(self):
-        """Gets the order_id of this VolumeMetadata.
+        r"""Gets the order_id of this VolumeMetadata.
 
         metadata中的表示云硬盘计费类型的字段。 当该字段有值时，表示该云硬盘的计费类型为包周期计费，否则计费类型为按需计费。
 
@@ -170,7 +170,7 @@ class VolumeMetadata:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this VolumeMetadata.
+        r"""Sets the order_id of this VolumeMetadata.
 
         metadata中的表示云硬盘计费类型的字段。 当该字段有值时，表示该云硬盘的计费类型为包周期计费，否则计费类型为按需计费。
 

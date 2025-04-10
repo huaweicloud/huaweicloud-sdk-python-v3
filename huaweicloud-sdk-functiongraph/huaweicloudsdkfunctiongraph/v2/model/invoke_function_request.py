@@ -33,7 +33,7 @@ class InvokeFunctionRequest:
     }
 
     def __init__(self, function_urn=None, x_cff_log_type=None, x_cff_request_version=None, x_cff_instance_memory=None, body=None):
-        """InvokeFunctionRequest
+        r"""InvokeFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class InvokeFunctionRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this InvokeFunctionRequest.
+        r"""Gets the function_urn of this InvokeFunctionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -81,7 +81,7 @@ class InvokeFunctionRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this InvokeFunctionRequest.
+        r"""Sets the function_urn of this InvokeFunctionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -92,7 +92,7 @@ class InvokeFunctionRequest:
 
     @property
     def x_cff_log_type(self):
-        """Gets the x_cff_log_type of this InvokeFunctionRequest.
+        r"""Gets the x_cff_log_type of this InvokeFunctionRequest.
 
         取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
 
@@ -103,7 +103,7 @@ class InvokeFunctionRequest:
 
     @x_cff_log_type.setter
     def x_cff_log_type(self, x_cff_log_type):
-        """Sets the x_cff_log_type of this InvokeFunctionRequest.
+        r"""Sets the x_cff_log_type of this InvokeFunctionRequest.
 
         取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
 
@@ -114,7 +114,7 @@ class InvokeFunctionRequest:
 
     @property
     def x_cff_request_version(self):
-        """Gets the x_cff_request_version of this InvokeFunctionRequest.
+        r"""Gets the x_cff_request_version of this InvokeFunctionRequest.
 
         返回体格式，取值v0,v1。 v0:默认返回文本格式 v1:默认返回json格式，sdk需要使用此值。
 
@@ -125,7 +125,7 @@ class InvokeFunctionRequest:
 
     @x_cff_request_version.setter
     def x_cff_request_version(self, x_cff_request_version):
-        """Sets the x_cff_request_version of this InvokeFunctionRequest.
+        r"""Sets the x_cff_request_version of this InvokeFunctionRequest.
 
         返回体格式，取值v0,v1。 v0:默认返回文本格式 v1:默认返回json格式，sdk需要使用此值。
 
@@ -136,7 +136,7 @@ class InvokeFunctionRequest:
 
     @property
     def x_cff_instance_memory(self):
-        """Gets the x_cff_instance_memory of this InvokeFunctionRequest.
+        r"""Gets the x_cff_instance_memory of this InvokeFunctionRequest.
 
         设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
 
@@ -147,7 +147,7 @@ class InvokeFunctionRequest:
 
     @x_cff_instance_memory.setter
     def x_cff_instance_memory(self, x_cff_instance_memory):
-        """Sets the x_cff_instance_memory of this InvokeFunctionRequest.
+        r"""Sets the x_cff_instance_memory of this InvokeFunctionRequest.
 
         设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
 
@@ -158,7 +158,7 @@ class InvokeFunctionRequest:
 
     @property
     def body(self):
-        """Gets the body of this InvokeFunctionRequest.
+        r"""Gets the body of this InvokeFunctionRequest.
 
         执行函数请求体，为json格式。
 
@@ -169,7 +169,7 @@ class InvokeFunctionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InvokeFunctionRequest.
+        r"""Sets the body of this InvokeFunctionRequest.
 
         执行函数请求体，为json格式。
 

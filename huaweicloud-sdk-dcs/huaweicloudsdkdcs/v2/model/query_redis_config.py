@@ -37,7 +37,7 @@ class QueryRedisConfig:
     }
 
     def __init__(self, param_value=None, value_type=None, value_range=None, description=None, default_value=None, param_name=None, param_id=None):
-        """QueryRedisConfig
+        r"""QueryRedisConfig
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QueryRedisConfig:
 
     @property
     def param_value(self):
-        """Gets the param_value of this QueryRedisConfig.
+        r"""Gets the param_value of this QueryRedisConfig.
 
         配置参数值。
 
@@ -96,7 +96,7 @@ class QueryRedisConfig:
 
     @param_value.setter
     def param_value(self, param_value):
-        """Sets the param_value of this QueryRedisConfig.
+        r"""Sets the param_value of this QueryRedisConfig.
 
         配置参数值。
 
@@ -107,7 +107,7 @@ class QueryRedisConfig:
 
     @property
     def value_type(self):
-        """Gets the value_type of this QueryRedisConfig.
+        r"""Gets the value_type of this QueryRedisConfig.
 
         配置参数的值类型。
 
@@ -118,7 +118,7 @@ class QueryRedisConfig:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this QueryRedisConfig.
+        r"""Sets the value_type of this QueryRedisConfig.
 
         配置参数的值类型。
 
@@ -129,7 +129,7 @@ class QueryRedisConfig:
 
     @property
     def value_range(self):
-        """Gets the value_range of this QueryRedisConfig.
+        r"""Gets the value_range of this QueryRedisConfig.
 
         配置参数的取值范围。
 
@@ -140,7 +140,7 @@ class QueryRedisConfig:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this QueryRedisConfig.
+        r"""Sets the value_range of this QueryRedisConfig.
 
         配置参数的取值范围。
 
@@ -151,7 +151,7 @@ class QueryRedisConfig:
 
     @property
     def description(self):
-        """Gets the description of this QueryRedisConfig.
+        r"""Gets the description of this QueryRedisConfig.
 
         配置项的描述。
 
@@ -162,7 +162,7 @@ class QueryRedisConfig:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryRedisConfig.
+        r"""Sets the description of this QueryRedisConfig.
 
         配置项的描述。
 
@@ -173,7 +173,7 @@ class QueryRedisConfig:
 
     @property
     def default_value(self):
-        """Gets the default_value of this QueryRedisConfig.
+        r"""Gets the default_value of this QueryRedisConfig.
 
         配置参数的默认值。
 
@@ -184,7 +184,7 @@ class QueryRedisConfig:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this QueryRedisConfig.
+        r"""Sets the default_value of this QueryRedisConfig.
 
         配置参数的默认值。
 
@@ -195,7 +195,7 @@ class QueryRedisConfig:
 
     @property
     def param_name(self):
-        """Gets the param_name of this QueryRedisConfig.
+        r"""Gets the param_name of this QueryRedisConfig.
 
         配置参数名称。
 
@@ -206,7 +206,7 @@ class QueryRedisConfig:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this QueryRedisConfig.
+        r"""Sets the param_name of this QueryRedisConfig.
 
         配置参数名称。
 
@@ -217,7 +217,7 @@ class QueryRedisConfig:
 
     @property
     def param_id(self):
-        """Gets the param_id of this QueryRedisConfig.
+        r"""Gets the param_id of this QueryRedisConfig.
 
         配置参数ID。
 
@@ -228,7 +228,7 @@ class QueryRedisConfig:
 
     @param_id.setter
     def param_id(self, param_id):
-        """Sets the param_id of this QueryRedisConfig.
+        r"""Sets the param_id of this QueryRedisConfig.
 
         配置参数ID。
 

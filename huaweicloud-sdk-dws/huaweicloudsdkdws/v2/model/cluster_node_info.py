@@ -39,7 +39,7 @@ class ClusterNodeInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, sub_status=None, spec=None, inst_create_type=None, alias_name=None, az_code=None):
-        """ClusterNodeInfo
+        r"""ClusterNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ClusterNodeInfo:
 
     @property
     def id(self):
-        """Gets the id of this ClusterNodeInfo.
+        r"""Gets the id of this ClusterNodeInfo.
 
         节点ID
 
@@ -103,7 +103,7 @@ class ClusterNodeInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterNodeInfo.
+        r"""Sets the id of this ClusterNodeInfo.
 
         节点ID
 
@@ -114,7 +114,7 @@ class ClusterNodeInfo:
 
     @property
     def name(self):
-        """Gets the name of this ClusterNodeInfo.
+        r"""Gets the name of this ClusterNodeInfo.
 
         节点名称
 
@@ -125,7 +125,7 @@ class ClusterNodeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterNodeInfo.
+        r"""Sets the name of this ClusterNodeInfo.
 
         节点名称
 
@@ -136,7 +136,7 @@ class ClusterNodeInfo:
 
     @property
     def status(self):
-        """Gets the status of this ClusterNodeInfo.
+        r"""Gets the status of this ClusterNodeInfo.
 
         节点状态
 
@@ -147,7 +147,7 @@ class ClusterNodeInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterNodeInfo.
+        r"""Sets the status of this ClusterNodeInfo.
 
         节点状态
 
@@ -158,7 +158,7 @@ class ClusterNodeInfo:
 
     @property
     def sub_status(self):
-        """Gets the sub_status of this ClusterNodeInfo.
+        r"""Gets the sub_status of this ClusterNodeInfo.
 
         节点子状态
 
@@ -169,7 +169,7 @@ class ClusterNodeInfo:
 
     @sub_status.setter
     def sub_status(self, sub_status):
-        """Sets the sub_status of this ClusterNodeInfo.
+        r"""Sets the sub_status of this ClusterNodeInfo.
 
         节点子状态
 
@@ -180,7 +180,7 @@ class ClusterNodeInfo:
 
     @property
     def spec(self):
-        """Gets the spec of this ClusterNodeInfo.
+        r"""Gets the spec of this ClusterNodeInfo.
 
         节点规格
 
@@ -191,7 +191,7 @@ class ClusterNodeInfo:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ClusterNodeInfo.
+        r"""Sets the spec of this ClusterNodeInfo.
 
         节点规格
 
@@ -202,7 +202,7 @@ class ClusterNodeInfo:
 
     @property
     def inst_create_type(self):
-        """Gets the inst_create_type of this ClusterNodeInfo.
+        r"""Gets the inst_create_type of this ClusterNodeInfo.
 
         实例创建类型
 
@@ -213,7 +213,7 @@ class ClusterNodeInfo:
 
     @inst_create_type.setter
     def inst_create_type(self, inst_create_type):
-        """Sets the inst_create_type of this ClusterNodeInfo.
+        r"""Sets the inst_create_type of this ClusterNodeInfo.
 
         实例创建类型
 
@@ -224,7 +224,7 @@ class ClusterNodeInfo:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this ClusterNodeInfo.
+        r"""Gets the alias_name of this ClusterNodeInfo.
 
         节点别名
 
@@ -235,7 +235,7 @@ class ClusterNodeInfo:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this ClusterNodeInfo.
+        r"""Sets the alias_name of this ClusterNodeInfo.
 
         节点别名
 
@@ -246,7 +246,7 @@ class ClusterNodeInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ClusterNodeInfo.
+        r"""Gets the az_code of this ClusterNodeInfo.
 
         可用区编码
 
@@ -257,7 +257,7 @@ class ClusterNodeInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ClusterNodeInfo.
+        r"""Sets the az_code of this ClusterNodeInfo.
 
         可用区编码
 

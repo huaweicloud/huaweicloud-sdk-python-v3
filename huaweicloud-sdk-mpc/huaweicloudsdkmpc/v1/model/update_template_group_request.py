@@ -25,7 +25,7 @@ class UpdateTemplateGroupRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTemplateGroupRequest
+        r"""UpdateTemplateGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTemplateGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTemplateGroupRequest.
+        r"""Gets the body of this UpdateTemplateGroupRequest.
 
         :return: The body of this UpdateTemplateGroupRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateGroup`
@@ -52,7 +52,7 @@ class UpdateTemplateGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTemplateGroupRequest.
+        r"""Sets the body of this UpdateTemplateGroupRequest.
 
         :param body: The body of this UpdateTemplateGroupRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateGroup`

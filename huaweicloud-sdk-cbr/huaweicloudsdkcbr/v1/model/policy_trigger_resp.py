@@ -31,7 +31,7 @@ class PolicyTriggerResp:
     }
 
     def __init__(self, id=None, name=None, properties=None, type=None):
-        """PolicyTriggerResp
+        r"""PolicyTriggerResp
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PolicyTriggerResp:
 
     @property
     def id(self):
-        """Gets the id of this PolicyTriggerResp.
+        r"""Gets the id of this PolicyTriggerResp.
 
         调度器id
 
@@ -73,7 +73,7 @@ class PolicyTriggerResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyTriggerResp.
+        r"""Sets the id of this PolicyTriggerResp.
 
         调度器id
 
@@ -84,7 +84,7 @@ class PolicyTriggerResp:
 
     @property
     def name(self):
-        """Gets the name of this PolicyTriggerResp.
+        r"""Gets the name of this PolicyTriggerResp.
 
         调度器名称
 
@@ -95,7 +95,7 @@ class PolicyTriggerResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyTriggerResp.
+        r"""Sets the name of this PolicyTriggerResp.
 
         调度器名称
 
@@ -106,7 +106,7 @@ class PolicyTriggerResp:
 
     @property
     def properties(self):
-        """Gets the properties of this PolicyTriggerResp.
+        r"""Gets the properties of this PolicyTriggerResp.
 
         :return: The properties of this PolicyTriggerResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesResp`
@@ -115,7 +115,7 @@ class PolicyTriggerResp:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this PolicyTriggerResp.
+        r"""Sets the properties of this PolicyTriggerResp.
 
         :param properties: The properties of this PolicyTriggerResp.
         :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesResp`
@@ -124,7 +124,7 @@ class PolicyTriggerResp:
 
     @property
     def type(self):
-        """Gets the type of this PolicyTriggerResp.
+        r"""Gets the type of this PolicyTriggerResp.
 
         调度器类型,目前只支持 time: 定时调度。
 
@@ -135,7 +135,7 @@ class PolicyTriggerResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyTriggerResp.
+        r"""Sets the type of this PolicyTriggerResp.
 
         调度器类型,目前只支持 time: 定时调度。
 

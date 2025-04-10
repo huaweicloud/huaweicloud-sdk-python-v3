@@ -27,7 +27,7 @@ class StopNodeRequest:
     }
 
     def __init__(self, id=None, force=None):
-        """StopNodeRequest
+        r"""StopNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopNodeRequest:
 
     @property
     def id(self):
-        """Gets the id of this StopNodeRequest.
+        r"""Gets the id of this StopNodeRequest.
 
         计算资源id
 
@@ -60,7 +60,7 @@ class StopNodeRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StopNodeRequest.
+        r"""Sets the id of this StopNodeRequest.
 
         计算资源id
 
@@ -71,7 +71,7 @@ class StopNodeRequest:
 
     @property
     def force(self):
-        """Gets the force of this StopNodeRequest.
+        r"""Gets the force of this StopNodeRequest.
 
         是否强制关闭，默认为false
 
@@ -82,7 +82,7 @@ class StopNodeRequest:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this StopNodeRequest.
+        r"""Sets the force of this StopNodeRequest.
 
         是否强制关闭，默认为false
 

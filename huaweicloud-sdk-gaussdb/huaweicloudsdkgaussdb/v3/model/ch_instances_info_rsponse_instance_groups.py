@@ -31,7 +31,7 @@ class ChInstancesInfoRsponseInstanceGroups:
     }
 
     def __init__(self, id=None, name=None, group_type_name=None, nodes=None):
-        """ChInstancesInfoRsponseInstanceGroups
+        r"""ChInstancesInfoRsponseInstanceGroups
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @property
     def id(self):
-        """Gets the id of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Gets the id of this ChInstancesInfoRsponseInstanceGroups.
 
         分组ID。
 
@@ -71,7 +71,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Sets the id of this ChInstancesInfoRsponseInstanceGroups.
 
         分组ID。
 
@@ -82,7 +82,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @property
     def name(self):
-        """Gets the name of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Gets the name of this ChInstancesInfoRsponseInstanceGroups.
 
         分组名。
 
@@ -93,7 +93,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Sets the name of this ChInstancesInfoRsponseInstanceGroups.
 
         分组名。
 
@@ -104,7 +104,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @property
     def group_type_name(self):
-        """Gets the group_type_name of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Gets the group_type_name of this ChInstancesInfoRsponseInstanceGroups.
 
         实例分组类型名，现在只支持clickhouse。
 
@@ -115,7 +115,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @group_type_name.setter
     def group_type_name(self, group_type_name):
-        """Sets the group_type_name of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Sets the group_type_name of this ChInstancesInfoRsponseInstanceGroups.
 
         实例分组类型名，现在只支持clickhouse。
 
@@ -126,7 +126,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Gets the nodes of this ChInstancesInfoRsponseInstanceGroups.
 
         实例节点信息。
 
@@ -137,7 +137,7 @@ class ChInstancesInfoRsponseInstanceGroups:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ChInstancesInfoRsponseInstanceGroups.
+        r"""Sets the nodes of this ChInstancesInfoRsponseInstanceGroups.
 
         实例节点信息。
 

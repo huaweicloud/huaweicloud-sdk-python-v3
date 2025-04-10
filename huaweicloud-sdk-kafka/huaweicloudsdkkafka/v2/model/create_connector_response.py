@@ -28,7 +28,7 @@ class CreateConnectorResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, connector_id=None):
-        """CreateConnectorResponse
+        r"""CreateConnectorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateConnectorResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateConnectorResponse.
+        r"""Gets the job_id of this CreateConnectorResponse.
 
         任务ID。 
 
@@ -62,7 +62,7 @@ class CreateConnectorResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateConnectorResponse.
+        r"""Sets the job_id of this CreateConnectorResponse.
 
         任务ID。 
 
@@ -73,7 +73,7 @@ class CreateConnectorResponse(SdkResponse):
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this CreateConnectorResponse.
+        r"""Gets the connector_id of this CreateConnectorResponse.
 
         实例转储ID。 
 
@@ -84,7 +84,7 @@ class CreateConnectorResponse(SdkResponse):
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this CreateConnectorResponse.
+        r"""Sets the connector_id of this CreateConnectorResponse.
 
         实例转储ID。 
 

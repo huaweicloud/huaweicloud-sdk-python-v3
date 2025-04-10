@@ -37,7 +37,7 @@ class ListClientsRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None, offset=None, limit=None, addr=None, sort=None, order=None):
-        """ListClientsRequest
+        r"""ListClientsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListClientsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListClientsRequest.
+        r"""Gets the instance_id of this ListClientsRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ListClientsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListClientsRequest.
+        r"""Sets the instance_id of this ListClientsRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ListClientsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListClientsRequest.
+        r"""Gets the node_id of this ListClientsRequest.
 
         节点ID。
 
@@ -116,7 +116,7 @@ class ListClientsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListClientsRequest.
+        r"""Sets the node_id of this ListClientsRequest.
 
         节点ID。
 
@@ -127,7 +127,7 @@ class ListClientsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClientsRequest.
+        r"""Gets the offset of this ListClientsRequest.
 
         偏移量，表示从此偏移量开始查询， 偏移量大于等于0。
 
@@ -138,7 +138,7 @@ class ListClientsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClientsRequest.
+        r"""Sets the offset of this ListClientsRequest.
 
         偏移量，表示从此偏移量开始查询， 偏移量大于等于0。
 
@@ -149,7 +149,7 @@ class ListClientsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClientsRequest.
+        r"""Gets the limit of this ListClientsRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10.
 
@@ -160,7 +160,7 @@ class ListClientsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClientsRequest.
+        r"""Sets the limit of this ListClientsRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10.
 
@@ -171,7 +171,7 @@ class ListClientsRequest:
 
     @property
     def addr(self):
-        """Gets the addr of this ListClientsRequest.
+        r"""Gets the addr of this ListClientsRequest.
 
         按客户端连接地址过滤。
 
@@ -182,7 +182,7 @@ class ListClientsRequest:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ListClientsRequest.
+        r"""Sets the addr of this ListClientsRequest.
 
         按客户端连接地址过滤。
 
@@ -193,7 +193,7 @@ class ListClientsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListClientsRequest.
+        r"""Gets the sort of this ListClientsRequest.
 
         排序字段。
 
@@ -204,7 +204,7 @@ class ListClientsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListClientsRequest.
+        r"""Sets the sort of this ListClientsRequest.
 
         排序字段。
 
@@ -215,7 +215,7 @@ class ListClientsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListClientsRequest.
+        r"""Gets the order of this ListClientsRequest.
 
         排序方式
 
@@ -226,7 +226,7 @@ class ListClientsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListClientsRequest.
+        r"""Sets the order of this ListClientsRequest.
 
         排序方式
 

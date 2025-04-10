@@ -25,7 +25,7 @@ class ListOnDemandResourceRatingsRequest:
     }
 
     def __init__(self, body=None):
-        """ListOnDemandResourceRatingsRequest
+        r"""ListOnDemandResourceRatingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListOnDemandResourceRatingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListOnDemandResourceRatingsRequest.
+        r"""Gets the body of this ListOnDemandResourceRatingsRequest.
 
         :return: The body of this ListOnDemandResourceRatingsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.RateOnDemandReq`
@@ -52,7 +52,7 @@ class ListOnDemandResourceRatingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListOnDemandResourceRatingsRequest.
+        r"""Sets the body of this ListOnDemandResourceRatingsRequest.
 
         :param body: The body of this ListOnDemandResourceRatingsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.RateOnDemandReq`

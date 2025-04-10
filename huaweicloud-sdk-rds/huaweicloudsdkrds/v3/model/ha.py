@@ -27,7 +27,7 @@ class Ha:
     }
 
     def __init__(self, mode=None, replication_mode=None):
-        """Ha
+        r"""Ha
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Ha:
 
     @property
     def mode(self):
-        """Gets the mode of this Ha.
+        r"""Gets the mode of this Ha.
 
         实例主备模式，取值：Ha（主备），不区分大小写。
 
@@ -59,7 +59,7 @@ class Ha:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this Ha.
+        r"""Sets the mode of this Ha.
 
         实例主备模式，取值：Ha（主备），不区分大小写。
 
@@ -70,7 +70,7 @@ class Ha:
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this Ha.
+        r"""Gets the replication_mode of this Ha.
 
         备机同步参数。实例主备模式为Ha时有效。 取值： - MySQL为“async”或“semisync”。 - PostgreSQL为“async”或“sync”。 - Microsoft SQL Server为“sync”。
 
@@ -81,7 +81,7 @@ class Ha:
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this Ha.
+        r"""Sets the replication_mode of this Ha.
 
         备机同步参数。实例主备模式为Ha时有效。 取值： - MySQL为“async”或“semisync”。 - PostgreSQL为“async”或“sync”。 - Microsoft SQL Server为“sync”。
 

@@ -37,7 +37,7 @@ class UpdatePoolReq:
     }
 
     def __init__(self, lb_algorithm=None, name=None, description=None, admin_state_up=None, session_persistence=None, protection_status=None, protection_reason=None):
-        """UpdatePoolReq
+        r"""UpdatePoolReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdatePoolReq:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this UpdatePoolReq.
+        r"""Gets the lb_algorithm of this UpdatePoolReq.
 
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -96,7 +96,7 @@ class UpdatePoolReq:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this UpdatePoolReq.
+        r"""Sets the lb_algorithm of this UpdatePoolReq.
 
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -107,7 +107,7 @@ class UpdatePoolReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePoolReq.
+        r"""Gets the name of this UpdatePoolReq.
 
         后端云服务器组的名称。
 
@@ -118,7 +118,7 @@ class UpdatePoolReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePoolReq.
+        r"""Sets the name of this UpdatePoolReq.
 
         后端云服务器组的名称。
 
@@ -129,7 +129,7 @@ class UpdatePoolReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePoolReq.
+        r"""Gets the description of this UpdatePoolReq.
 
         后端云服务器组的描述信息
 
@@ -140,7 +140,7 @@ class UpdatePoolReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePoolReq.
+        r"""Sets the description of this UpdatePoolReq.
 
         后端云服务器组的描述信息
 
@@ -151,7 +151,7 @@ class UpdatePoolReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdatePoolReq.
+        r"""Gets the admin_state_up of this UpdatePoolReq.
 
         后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
 
@@ -162,7 +162,7 @@ class UpdatePoolReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdatePoolReq.
+        r"""Sets the admin_state_up of this UpdatePoolReq.
 
         后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
 
@@ -173,7 +173,7 @@ class UpdatePoolReq:
 
     @property
     def session_persistence(self):
-        """Gets the session_persistence of this UpdatePoolReq.
+        r"""Gets the session_persistence of this UpdatePoolReq.
 
         :return: The session_persistence of this UpdatePoolReq.
         :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
@@ -182,7 +182,7 @@ class UpdatePoolReq:
 
     @session_persistence.setter
     def session_persistence(self, session_persistence):
-        """Sets the session_persistence of this UpdatePoolReq.
+        r"""Sets the session_persistence of this UpdatePoolReq.
 
         :param session_persistence: The session_persistence of this UpdatePoolReq.
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
@@ -191,7 +191,7 @@ class UpdatePoolReq:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this UpdatePoolReq.
+        r"""Gets the protection_status of this UpdatePoolReq.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -202,7 +202,7 @@ class UpdatePoolReq:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this UpdatePoolReq.
+        r"""Sets the protection_status of this UpdatePoolReq.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -213,7 +213,7 @@ class UpdatePoolReq:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this UpdatePoolReq.
+        r"""Gets the protection_reason of this UpdatePoolReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -224,7 +224,7 @@ class UpdatePoolReq:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this UpdatePoolReq.
+        r"""Sets the protection_reason of this UpdatePoolReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

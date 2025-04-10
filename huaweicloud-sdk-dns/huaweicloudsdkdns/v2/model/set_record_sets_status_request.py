@@ -27,7 +27,7 @@ class SetRecordSetsStatusRequest:
     }
 
     def __init__(self, recordset_id=None, body=None):
-        """SetRecordSetsStatusRequest
+        r"""SetRecordSetsStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetRecordSetsStatusRequest:
 
     @property
     def recordset_id(self):
-        """Gets the recordset_id of this SetRecordSetsStatusRequest.
+        r"""Gets the recordset_id of this SetRecordSetsStatusRequest.
 
         待设置Record Set的ID信息。
 
@@ -60,7 +60,7 @@ class SetRecordSetsStatusRequest:
 
     @recordset_id.setter
     def recordset_id(self, recordset_id):
-        """Sets the recordset_id of this SetRecordSetsStatusRequest.
+        r"""Sets the recordset_id of this SetRecordSetsStatusRequest.
 
         待设置Record Set的ID信息。
 
@@ -71,7 +71,7 @@ class SetRecordSetsStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetRecordSetsStatusRequest.
+        r"""Gets the body of this SetRecordSetsStatusRequest.
 
         :return: The body of this SetRecordSetsStatusRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequestBody`
@@ -80,7 +80,7 @@ class SetRecordSetsStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetRecordSetsStatusRequest.
+        r"""Sets the body of this SetRecordSetsStatusRequest.
 
         :param body: The body of this SetRecordSetsStatusRequest.
         :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequestBody`

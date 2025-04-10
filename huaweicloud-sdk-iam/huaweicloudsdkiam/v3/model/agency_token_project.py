@@ -29,7 +29,7 @@ class AgencyTokenProject:
     }
 
     def __init__(self, name=None, id=None, domain=None):
-        """AgencyTokenProject
+        r"""AgencyTokenProject
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AgencyTokenProject:
 
     @property
     def name(self):
-        """Gets the name of this AgencyTokenProject.
+        r"""Gets the name of this AgencyTokenProject.
 
         委托方A的项目名称。
 
@@ -65,7 +65,7 @@ class AgencyTokenProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyTokenProject.
+        r"""Sets the name of this AgencyTokenProject.
 
         委托方A的项目名称。
 
@@ -76,7 +76,7 @@ class AgencyTokenProject:
 
     @property
     def id(self):
-        """Gets the id of this AgencyTokenProject.
+        r"""Gets the id of this AgencyTokenProject.
 
         委托方A的项目ID。
 
@@ -87,7 +87,7 @@ class AgencyTokenProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyTokenProject.
+        r"""Sets the id of this AgencyTokenProject.
 
         委托方A的项目ID。
 
@@ -98,7 +98,7 @@ class AgencyTokenProject:
 
     @property
     def domain(self):
-        """Gets the domain of this AgencyTokenProject.
+        r"""Gets the domain of this AgencyTokenProject.
 
         :return: The domain of this AgencyTokenProject.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenProjectDomain`
@@ -107,7 +107,7 @@ class AgencyTokenProject:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AgencyTokenProject.
+        r"""Sets the domain of this AgencyTokenProject.
 
         :param domain: The domain of this AgencyTokenProject.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenProjectDomain`

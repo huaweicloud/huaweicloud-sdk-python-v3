@@ -29,7 +29,7 @@ class BatchTagDelActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """BatchTagDelActionRequest
+        r"""BatchTagDelActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchTagDelActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchTagDelActionRequest.
+        r"""Gets the x_language of this BatchTagDelActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class BatchTagDelActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchTagDelActionRequest.
+        r"""Sets the x_language of this BatchTagDelActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class BatchTagDelActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchTagDelActionRequest.
+        r"""Gets the instance_id of this BatchTagDelActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class BatchTagDelActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchTagDelActionRequest.
+        r"""Sets the instance_id of this BatchTagDelActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class BatchTagDelActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchTagDelActionRequest.
+        r"""Gets the body of this BatchTagDelActionRequest.
 
         :return: The body of this BatchTagDelActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.BatchTagActionDelRequestBody`
@@ -109,7 +109,7 @@ class BatchTagDelActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchTagDelActionRequest.
+        r"""Sets the body of this BatchTagDelActionRequest.
 
         :param body: The body of this BatchTagDelActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.BatchTagActionDelRequestBody`

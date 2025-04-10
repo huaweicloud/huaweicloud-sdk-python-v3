@@ -34,7 +34,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return client_builder
 
     def batch_delete_trashes_async(self, request):
-        """批量删除回收站
+        r"""批量删除回收站
 
         批量删除回收站
         
@@ -99,7 +99,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def batch_restore_repo_async(self, request):
-        """批量还原回收站
+        r"""批量还原回收站
 
         批量还原回收站
         
@@ -164,7 +164,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def create_artifactory_async(self, request):
-        """创建非maven仓库
+        r"""创建非maven仓库
 
         创建非maven仓库
         
@@ -229,7 +229,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def create_attention_async(self, request):
-        """关注组件/取消关注组件
+        r"""关注组件/取消关注组件
 
         关注组件/取消关注组件
         
@@ -294,7 +294,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def create_docker_repositories_async(self, request):
-        """创建docker仓库
+        r"""创建docker仓库
 
         创建docker仓库
         
@@ -359,7 +359,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def create_maven_repo_async(self, request):
-        """创建maven仓库
+        r"""创建maven仓库
 
         创建maven仓库
         
@@ -424,7 +424,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def create_project_related_repository_async(self, request):
-        """创建项目关联仓库
+        r"""创建项目关联仓库
 
         创建项目管理关联仓库
         
@@ -489,7 +489,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def delete_artifact_file_async(self, request):
-        """非maven删除文件
+        r"""非maven删除文件
 
         非maven删除文件
         
@@ -554,7 +554,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def delete_repository_async(self, request):
-        """删除仓库到回收站
+        r"""删除仓库到回收站
 
         删除仓库到回收站
         
@@ -619,7 +619,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def list_all_repositories_async(self, request):
-        """查询仓库详情，不会去统计仓库下的制品数量
+        r"""查询仓库详情，不会去统计仓库下的制品数量
 
         查询仓库详情，不会去统计仓库下的制品数量
         
@@ -708,7 +708,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def list_artifactory_component_async(self, request):
-        """查询仓库文件详情
+        r"""查询仓库文件详情
 
         查询仓库文件详情
         
@@ -783,7 +783,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def list_artifactory_storage_statistic_async(self, request):
-        """查询存储容量趋势
+        r"""查询存储容量趋势
 
         查询存储容量趋势
         
@@ -858,7 +858,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def list_attentions_async(self, request):
-        """查询关注列表
+        r"""查询关注列表
 
         查询关注列表
         
@@ -927,7 +927,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def modify_repository_async(self, request):
-        """编辑仓库
+        r"""编辑仓库
 
         编辑仓库
         
@@ -994,7 +994,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def reset_user_password_async(self, request):
-        """重置用户密码
+        r"""重置用户密码
 
         重置用户密码
         
@@ -1057,7 +1057,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def search_artifacts_async(self, request):
-        """统筹搜索
+        r"""统筹搜索
 
         统筹搜索
         
@@ -1122,7 +1122,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def search_by_checksum_async(self, request):
-        """通过checksum搜索文件
+        r"""通过checksum搜索文件
 
         通过checksum搜索文件
         
@@ -1197,7 +1197,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_audit_async(self, request):
-        """查询仓库或文件的审计日志信息
+        r"""查询仓库或文件的审计日志信息
 
         查询仓库或文件的审计日志信息
         
@@ -1276,7 +1276,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_file_tree_async(self, request):
-        """查询仓库文件夹目录
+        r"""查询仓库文件夹目录
 
         查询仓库文件夹目录
         
@@ -1351,7 +1351,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_maven_info_async(self, request):
-        """查询租户Maven仓库列表和账号密码
+        r"""查询租户Maven仓库列表和账号密码
 
         查询租户Maven仓库列表和账号密码，支持跨租户
         
@@ -1424,7 +1424,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_project_list_async(self, request):
-        """查询项目管理关联仓库
+        r"""查询项目管理关联仓库
 
         查询项目管理关联仓库
         
@@ -1489,7 +1489,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_project_release_files_async(self, request):
-        """获取项目下文件版本信息列表
+        r"""获取项目下文件版本信息列表
 
         获取项目下文件版本信息列表
         
@@ -1560,7 +1560,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_release_project_files_async(self, request):
-        """获取项目下文件版本信息列表
+        r"""获取项目下文件版本信息列表
 
         获取项目下文件版本信息列表
         
@@ -1633,7 +1633,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_repository_async(self, request):
-        """查询单个仓库详细信息，会去统计仓库下的制品数量
+        r"""查询单个仓库详细信息，会去统计仓库下的制品数量
 
         查询单个仓库详细信息，会去统计仓库下的制品数量
         
@@ -1704,7 +1704,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_repository_info_async(self, request):
-        """查看仓库信息
+        r"""查看仓库信息
 
         查看仓库信息
         
@@ -1769,7 +1769,7 @@ class CodeArtsArtifactAsyncClient(Client):
         return http_info
 
     def show_storage_async(self, request):
-        """仓库用量查询
+        r"""仓库用量查询
 
         仓库用量查询
         
@@ -1835,8 +1835,73 @@ class CodeArtsArtifactAsyncClient(Client):
 
         return http_info
 
+    def show_user_privileges_async(self, request):
+        r"""查询用户在项目下的权限
+
+        查询用户在项目下的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowUserPrivileges
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowUserPrivilegesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowUserPrivilegesResponse`
+        """
+        http_info = self._show_user_privileges_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_user_privileges_async_invoker(self, request):
+        http_info = self._show_user_privileges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_user_privileges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v3/user/{project_id}/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserPrivilegesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_artifactory_async(self, request):
-        """编辑非maven仓库信息
+        r"""编辑非maven仓库信息
 
         编辑非maven仓库信息
         

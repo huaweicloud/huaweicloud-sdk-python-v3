@@ -25,7 +25,7 @@ class EngineRbacPwd:
     }
 
     def __init__(self, pwd=None):
-        """EngineRbacPwd
+        r"""EngineRbacPwd
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EngineRbacPwd:
 
     @property
     def pwd(self):
-        """Gets the pwd of this EngineRbacPwd.
+        r"""Gets the pwd of this EngineRbacPwd.
 
         开启安全认证的ServiceComb引擎专享版默认root帐号的密码
 
@@ -54,7 +54,7 @@ class EngineRbacPwd:
 
     @pwd.setter
     def pwd(self, pwd):
-        """Sets the pwd of this EngineRbacPwd.
+        r"""Sets the pwd of this EngineRbacPwd.
 
         开启安全认证的ServiceComb引擎专享版默认root帐号的密码
 

@@ -27,7 +27,7 @@ class ServiceProviderConfigRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None):
-        """ServiceProviderConfigRequest
+        r"""ServiceProviderConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServiceProviderConfigRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ServiceProviderConfigRequest.
+        r"""Gets the authorization of this ServiceProviderConfigRequest.
 
         承载令牌
 
@@ -59,7 +59,7 @@ class ServiceProviderConfigRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ServiceProviderConfigRequest.
+        r"""Sets the authorization of this ServiceProviderConfigRequest.
 
         承载令牌
 
@@ -70,7 +70,7 @@ class ServiceProviderConfigRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ServiceProviderConfigRequest.
+        r"""Gets the tenant_id of this ServiceProviderConfigRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -81,7 +81,7 @@ class ServiceProviderConfigRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ServiceProviderConfigRequest.
+        r"""Sets the tenant_id of this ServiceProviderConfigRequest.
 
         租户的全局唯一标识符（ID）
 

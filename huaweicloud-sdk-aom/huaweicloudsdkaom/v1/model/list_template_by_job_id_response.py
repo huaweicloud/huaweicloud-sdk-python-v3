@@ -28,7 +28,7 @@ class ListTemplateByJobIdResponse(SdkResponse):
     }
 
     def __init__(self, total_elements=None, elements=None):
-        """ListTemplateByJobIdResponse
+        r"""ListTemplateByJobIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplateByJobIdResponse(SdkResponse):
 
     @property
     def total_elements(self):
-        """Gets the total_elements of this ListTemplateByJobIdResponse.
+        r"""Gets the total_elements of this ListTemplateByJobIdResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListTemplateByJobIdResponse(SdkResponse):
 
     @total_elements.setter
     def total_elements(self, total_elements):
-        """Sets the total_elements of this ListTemplateByJobIdResponse.
+        r"""Sets the total_elements of this ListTemplateByJobIdResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListTemplateByJobIdResponse(SdkResponse):
 
     @property
     def elements(self):
-        """Gets the elements of this ListTemplateByJobIdResponse.
+        r"""Gets the elements of this ListTemplateByJobIdResponse.
 
         查询作业信息集合
 
@@ -84,7 +84,7 @@ class ListTemplateByJobIdResponse(SdkResponse):
 
     @elements.setter
     def elements(self, elements):
-        """Sets the elements of this ListTemplateByJobIdResponse.
+        r"""Sets the elements of this ListTemplateByJobIdResponse.
 
         查询作业信息集合
 

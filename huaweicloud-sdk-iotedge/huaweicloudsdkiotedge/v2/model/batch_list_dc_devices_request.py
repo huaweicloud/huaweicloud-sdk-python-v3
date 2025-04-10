@@ -33,7 +33,7 @@ class BatchListDcDevicesRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, device_id=None, offset=None, limit=None):
-        """BatchListDcDevicesRequest
+        r"""BatchListDcDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BatchListDcDevicesRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this BatchListDcDevicesRequest.
+        r"""Gets the edge_node_id of this BatchListDcDevicesRequest.
 
         边缘节点ID
 
@@ -80,7 +80,7 @@ class BatchListDcDevicesRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this BatchListDcDevicesRequest.
+        r"""Sets the edge_node_id of this BatchListDcDevicesRequest.
 
         边缘节点ID
 
@@ -91,7 +91,7 @@ class BatchListDcDevicesRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this BatchListDcDevicesRequest.
+        r"""Gets the ds_id of this BatchListDcDevicesRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -102,7 +102,7 @@ class BatchListDcDevicesRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this BatchListDcDevicesRequest.
+        r"""Sets the ds_id of this BatchListDcDevicesRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -113,7 +113,7 @@ class BatchListDcDevicesRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this BatchListDcDevicesRequest.
+        r"""Gets the device_id of this BatchListDcDevicesRequest.
 
         设备标识码。
 
@@ -124,7 +124,7 @@ class BatchListDcDevicesRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this BatchListDcDevicesRequest.
+        r"""Sets the device_id of this BatchListDcDevicesRequest.
 
         设备标识码。
 
@@ -135,7 +135,7 @@ class BatchListDcDevicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListDcDevicesRequest.
+        r"""Gets the offset of this BatchListDcDevicesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -146,7 +146,7 @@ class BatchListDcDevicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListDcDevicesRequest.
+        r"""Sets the offset of this BatchListDcDevicesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -157,7 +157,7 @@ class BatchListDcDevicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListDcDevicesRequest.
+        r"""Gets the limit of this BatchListDcDevicesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -168,7 +168,7 @@ class BatchListDcDevicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListDcDevicesRequest.
+        r"""Sets the limit of this BatchListDcDevicesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

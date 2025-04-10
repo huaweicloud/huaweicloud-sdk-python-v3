@@ -25,7 +25,7 @@ class DeleteAimMsgSignatureRequest:
     }
 
     def __init__(self, signature_id=None):
-        """DeleteAimMsgSignatureRequest
+        r"""DeleteAimMsgSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAimMsgSignatureRequest:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this DeleteAimMsgSignatureRequest.
+        r"""Gets the signature_id of this DeleteAimMsgSignatureRequest.
 
         签名ID。
 
@@ -53,7 +53,7 @@ class DeleteAimMsgSignatureRequest:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this DeleteAimMsgSignatureRequest.
+        r"""Sets the signature_id of this DeleteAimMsgSignatureRequest.
 
         签名ID。
 

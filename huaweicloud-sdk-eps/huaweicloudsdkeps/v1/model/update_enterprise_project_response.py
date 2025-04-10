@@ -26,7 +26,7 @@ class UpdateEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_project=None):
-        """UpdateEnterpriseProjectResponse
+        r"""UpdateEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEnterpriseProjectResponse(SdkResponse):
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this UpdateEnterpriseProjectResponse.
+        r"""Gets the enterprise_project of this UpdateEnterpriseProjectResponse.
 
         :return: The enterprise_project of this UpdateEnterpriseProjectResponse.
         :rtype: :class:`huaweicloudsdkeps.v1.EpDetail`
@@ -53,7 +53,7 @@ class UpdateEnterpriseProjectResponse(SdkResponse):
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this UpdateEnterpriseProjectResponse.
+        r"""Sets the enterprise_project of this UpdateEnterpriseProjectResponse.
 
         :param enterprise_project: The enterprise_project of this UpdateEnterpriseProjectResponse.
         :type enterprise_project: :class:`huaweicloudsdkeps.v1.EpDetail`

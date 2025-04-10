@@ -27,7 +27,7 @@ class ShowSecurityDynamicMaskingPolicyRequest:
     }
 
     def __init__(self, workspace=None, id=None):
-        """ShowSecurityDynamicMaskingPolicyRequest
+        r"""ShowSecurityDynamicMaskingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecurityDynamicMaskingPolicyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the workspace of this ShowSecurityDynamicMaskingPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowSecurityDynamicMaskingPolicyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the workspace of this ShowSecurityDynamicMaskingPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowSecurityDynamicMaskingPolicyRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the id of this ShowSecurityDynamicMaskingPolicyRequest.
 
         动态脱敏策略id。
 
@@ -81,7 +81,7 @@ class ShowSecurityDynamicMaskingPolicyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the id of this ShowSecurityDynamicMaskingPolicyRequest.
 
         动态脱敏策略id。
 

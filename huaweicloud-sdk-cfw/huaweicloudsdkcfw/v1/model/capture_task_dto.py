@@ -35,7 +35,7 @@ class CaptureTaskDto:
     }
 
     def __init__(self, destination=None, duration=None, max_packets=None, name=None, service=None, source=None):
-        """CaptureTaskDto
+        r"""CaptureTaskDto
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CaptureTaskDto:
 
     @property
     def destination(self):
-        """Gets the destination of this CaptureTaskDto.
+        r"""Gets the destination of this CaptureTaskDto.
 
         :return: The destination of this CaptureTaskDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.CaptureRuleAddressDto`
@@ -81,7 +81,7 @@ class CaptureTaskDto:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CaptureTaskDto.
+        r"""Sets the destination of this CaptureTaskDto.
 
         :param destination: The destination of this CaptureTaskDto.
         :type destination: :class:`huaweicloudsdkcfw.v1.CaptureRuleAddressDto`
@@ -90,7 +90,7 @@ class CaptureTaskDto:
 
     @property
     def duration(self):
-        """Gets the duration of this CaptureTaskDto.
+        r"""Gets the duration of this CaptureTaskDto.
 
         抓包时长，以分钟为单位
 
@@ -101,7 +101,7 @@ class CaptureTaskDto:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CaptureTaskDto.
+        r"""Sets the duration of this CaptureTaskDto.
 
         抓包时长，以分钟为单位
 
@@ -112,7 +112,7 @@ class CaptureTaskDto:
 
     @property
     def max_packets(self):
-        """Gets the max_packets of this CaptureTaskDto.
+        r"""Gets the max_packets of this CaptureTaskDto.
 
         最大抓包数，以个为单位
 
@@ -123,7 +123,7 @@ class CaptureTaskDto:
 
     @max_packets.setter
     def max_packets(self, max_packets):
-        """Sets the max_packets of this CaptureTaskDto.
+        r"""Sets the max_packets of this CaptureTaskDto.
 
         最大抓包数，以个为单位
 
@@ -134,7 +134,7 @@ class CaptureTaskDto:
 
     @property
     def name(self):
-        """Gets the name of this CaptureTaskDto.
+        r"""Gets the name of this CaptureTaskDto.
 
         抓包任务名称
 
@@ -145,7 +145,7 @@ class CaptureTaskDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaptureTaskDto.
+        r"""Sets the name of this CaptureTaskDto.
 
         抓包任务名称
 
@@ -156,7 +156,7 @@ class CaptureTaskDto:
 
     @property
     def service(self):
-        """Gets the service of this CaptureTaskDto.
+        r"""Gets the service of this CaptureTaskDto.
 
         :return: The service of this CaptureTaskDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.CaptureServiceDto`
@@ -165,7 +165,7 @@ class CaptureTaskDto:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this CaptureTaskDto.
+        r"""Sets the service of this CaptureTaskDto.
 
         :param service: The service of this CaptureTaskDto.
         :type service: :class:`huaweicloudsdkcfw.v1.CaptureServiceDto`
@@ -174,7 +174,7 @@ class CaptureTaskDto:
 
     @property
     def source(self):
-        """Gets the source of this CaptureTaskDto.
+        r"""Gets the source of this CaptureTaskDto.
 
         :return: The source of this CaptureTaskDto.
         :rtype: :class:`huaweicloudsdkcfw.v1.CaptureRuleAddressDto`
@@ -183,7 +183,7 @@ class CaptureTaskDto:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CaptureTaskDto.
+        r"""Sets the source of this CaptureTaskDto.
 
         :param source: The source of this CaptureTaskDto.
         :type source: :class:`huaweicloudsdkcfw.v1.CaptureRuleAddressDto`

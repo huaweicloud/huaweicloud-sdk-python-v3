@@ -27,7 +27,7 @@ class ListCommitStatisticsRequest:
     }
 
     def __init__(self, branch_name=None, repository_id=None):
-        """ListCommitStatisticsRequest
+        r"""ListCommitStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListCommitStatisticsRequest:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this ListCommitStatisticsRequest.
+        r"""Gets the branch_name of this ListCommitStatisticsRequest.
 
         分支名
 
@@ -59,7 +59,7 @@ class ListCommitStatisticsRequest:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this ListCommitStatisticsRequest.
+        r"""Sets the branch_name of this ListCommitStatisticsRequest.
 
         分支名
 
@@ -70,7 +70,7 @@ class ListCommitStatisticsRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ListCommitStatisticsRequest.
+        r"""Gets the repository_id of this ListCommitStatisticsRequest.
 
         仓库的主键id
 
@@ -81,7 +81,7 @@ class ListCommitStatisticsRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ListCommitStatisticsRequest.
+        r"""Sets the repository_id of this ListCommitStatisticsRequest.
 
         仓库的主键id
 

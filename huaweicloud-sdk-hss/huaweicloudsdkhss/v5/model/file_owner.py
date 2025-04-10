@@ -23,7 +23,7 @@ class FileOwner:
     }
 
     def __init__(self):
-        """FileOwner
+        r"""FileOwner
 
         The model defined in huaweicloud sdk
 

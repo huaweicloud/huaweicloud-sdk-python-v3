@@ -24,7 +24,7 @@ class ApplyInternetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ApplyInternetResponse
+        r"""ApplyInternetResponse
 
         The model defined in huaweicloud sdk
 

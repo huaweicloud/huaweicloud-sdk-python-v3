@@ -26,7 +26,7 @@ class ShowEnvironmentResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """ShowEnvironmentResourcesResponse
+        r"""ShowEnvironmentResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEnvironmentResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowEnvironmentResourcesResponse.
+        r"""Gets the resources of this ShowEnvironmentResourcesResponse.
 
         :return: The resources of this ShowEnvironmentResourcesResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
@@ -53,7 +53,7 @@ class ShowEnvironmentResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowEnvironmentResourcesResponse.
+        r"""Sets the resources of this ShowEnvironmentResourcesResponse.
 
         :param resources: The resources of this ShowEnvironmentResourcesResponse.
         :type resources: list[:class:`huaweicloudsdkservicestage.v3.Resource`]

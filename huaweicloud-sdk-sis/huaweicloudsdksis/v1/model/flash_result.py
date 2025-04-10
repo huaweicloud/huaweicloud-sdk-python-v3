@@ -27,7 +27,7 @@ class FlashResult:
     }
 
     def __init__(self, channel_id=None, sentences=None):
-        """FlashResult
+        r"""FlashResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlashResult:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this FlashResult.
+        r"""Gets the channel_id of this FlashResult.
 
         音频声道id
 
@@ -61,7 +61,7 @@ class FlashResult:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this FlashResult.
+        r"""Sets the channel_id of this FlashResult.
 
         音频声道id
 
@@ -72,7 +72,7 @@ class FlashResult:
 
     @property
     def sentences(self):
-        """Gets the sentences of this FlashResult.
+        r"""Gets the sentences of this FlashResult.
 
         分句结果
 
@@ -83,7 +83,7 @@ class FlashResult:
 
     @sentences.setter
     def sentences(self, sentences):
-        """Sets the sentences of this FlashResult.
+        r"""Sets the sentences of this FlashResult.
 
         分句结果
 

@@ -29,7 +29,7 @@ class TimeRange:
     }
 
     def __init__(self, time_type=None, start=None, end=None):
-        """TimeRange
+        r"""TimeRange
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TimeRange:
 
     @property
     def time_type(self):
-        """Gets the time_type of this TimeRange.
+        r"""Gets the time_type of this TimeRange.
 
         可选值：ddlUpdateTime、dataUpdateTime、ddlCreateTime
 
@@ -65,7 +65,7 @@ class TimeRange:
 
     @time_type.setter
     def time_type(self, time_type):
-        """Sets the time_type of this TimeRange.
+        r"""Sets the time_type of this TimeRange.
 
         可选值：ddlUpdateTime、dataUpdateTime、ddlCreateTime
 
@@ -76,7 +76,7 @@ class TimeRange:
 
     @property
     def start(self):
-        """Gets the start of this TimeRange.
+        r"""Gets the start of this TimeRange.
 
         开始时间
 
@@ -87,7 +87,7 @@ class TimeRange:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this TimeRange.
+        r"""Sets the start of this TimeRange.
 
         开始时间
 
@@ -98,7 +98,7 @@ class TimeRange:
 
     @property
     def end(self):
-        """Gets the end of this TimeRange.
+        r"""Gets the end of this TimeRange.
 
         结束时间
 
@@ -109,7 +109,7 @@ class TimeRange:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this TimeRange.
+        r"""Sets the end of this TimeRange.
 
         结束时间
 

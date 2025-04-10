@@ -25,7 +25,7 @@ class ChangeSubjectsResultData:
     }
 
     def __init__(self, value=None):
-        """ChangeSubjectsResultData
+        r"""ChangeSubjectsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeSubjectsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ChangeSubjectsResultData.
+        r"""Gets the value of this ChangeSubjectsResultData.
 
         :return: The value of this ChangeSubjectsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVOList`
@@ -52,7 +52,7 @@ class ChangeSubjectsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ChangeSubjectsResultData.
+        r"""Sets the value of this ChangeSubjectsResultData.
 
         :param value: The value of this ChangeSubjectsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.CatalogLevelVOList`

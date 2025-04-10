@@ -26,7 +26,7 @@ class ShowCloudTypeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowCloudTypeResponse
+        r"""ShowCloudTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCloudTypeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowCloudTypeResponse.
+        r"""Gets the body of this ShowCloudTypeResponse.
 
         :return: The body of this ShowCloudTypeResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ShowCloudTypeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowCloudTypeResponse.
+        r"""Sets the body of this ShowCloudTypeResponse.
 
         :param body: The body of this ShowCloudTypeResponse.
         :type body: list[str]

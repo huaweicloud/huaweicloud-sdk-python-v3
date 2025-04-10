@@ -29,7 +29,7 @@ class ListFunctionReservedInstancesRequest:
     }
 
     def __init__(self, marker=None, limit=None, urn=None):
-        """ListFunctionReservedInstancesRequest
+        r"""ListFunctionReservedInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListFunctionReservedInstancesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionReservedInstancesRequest.
+        r"""Gets the marker of this ListFunctionReservedInstancesRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -68,7 +68,7 @@ class ListFunctionReservedInstancesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionReservedInstancesRequest.
+        r"""Sets the marker of this ListFunctionReservedInstancesRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -79,7 +79,7 @@ class ListFunctionReservedInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFunctionReservedInstancesRequest.
+        r"""Gets the limit of this ListFunctionReservedInstancesRequest.
 
         每次查询获取的最大函数记录数量  最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
@@ -90,7 +90,7 @@ class ListFunctionReservedInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFunctionReservedInstancesRequest.
+        r"""Sets the limit of this ListFunctionReservedInstancesRequest.
 
         每次查询获取的最大函数记录数量  最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
@@ -101,7 +101,7 @@ class ListFunctionReservedInstancesRequest:
 
     @property
     def urn(self):
-        """Gets the urn of this ListFunctionReservedInstancesRequest.
+        r"""Gets the urn of this ListFunctionReservedInstancesRequest.
 
         查询指定函数版本预留实例数的函数urn。
 
@@ -112,7 +112,7 @@ class ListFunctionReservedInstancesRequest:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this ListFunctionReservedInstancesRequest.
+        r"""Sets the urn of this ListFunctionReservedInstancesRequest.
 
         查询指定函数版本预留实例数的函数urn。
 

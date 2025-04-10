@@ -26,7 +26,7 @@ class CreateTtscVocabularyConfigsResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateTtscVocabularyConfigsResponse
+        r"""CreateTtscVocabularyConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTtscVocabularyConfigsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTtscVocabularyConfigsResponse.
+        r"""Gets the id of this CreateTtscVocabularyConfigsResponse.
 
         配置项id。
 
@@ -55,7 +55,7 @@ class CreateTtscVocabularyConfigsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTtscVocabularyConfigsResponse.
+        r"""Sets the id of this CreateTtscVocabularyConfigsResponse.
 
         配置项id。
 

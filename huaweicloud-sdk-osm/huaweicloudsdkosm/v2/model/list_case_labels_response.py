@@ -26,7 +26,7 @@ class ListCaseLabelsResponse(SdkResponse):
     }
 
     def __init__(self, case_label_list=None):
-        """ListCaseLabelsResponse
+        r"""ListCaseLabelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCaseLabelsResponse(SdkResponse):
 
     @property
     def case_label_list(self):
-        """Gets the case_label_list of this ListCaseLabelsResponse.
+        r"""Gets the case_label_list of this ListCaseLabelsResponse.
 
         工单关联的标签列表
 
@@ -55,7 +55,7 @@ class ListCaseLabelsResponse(SdkResponse):
 
     @case_label_list.setter
     def case_label_list(self, case_label_list):
-        """Sets the case_label_list of this ListCaseLabelsResponse.
+        r"""Sets the case_label_list of this ListCaseLabelsResponse.
 
         工单关联的标签列表
 

@@ -31,7 +31,7 @@ class ListResourcesByTagRequest:
     }
 
     def __init__(self, resource_type=None, limit=None, offset=None, body=None):
-        """ListResourcesByTagRequest
+        r"""ListResourcesByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListResourcesByTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourcesByTagRequest.
+        r"""Gets the resource_type of this ListResourcesByTagRequest.
 
         资源类型。
 
@@ -74,7 +74,7 @@ class ListResourcesByTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourcesByTagRequest.
+        r"""Sets the resource_type of this ListResourcesByTagRequest.
 
         资源类型。
 
@@ -85,7 +85,7 @@ class ListResourcesByTagRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourcesByTagRequest.
+        r"""Gets the limit of this ListResourcesByTagRequest.
 
         每页返回的个数。
 
@@ -96,7 +96,7 @@ class ListResourcesByTagRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourcesByTagRequest.
+        r"""Sets the limit of this ListResourcesByTagRequest.
 
         每页返回的个数。
 
@@ -107,7 +107,7 @@ class ListResourcesByTagRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourcesByTagRequest.
+        r"""Gets the offset of this ListResourcesByTagRequest.
 
         偏移量。
 
@@ -118,7 +118,7 @@ class ListResourcesByTagRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourcesByTagRequest.
+        r"""Sets the offset of this ListResourcesByTagRequest.
 
         偏移量。
 
@@ -129,7 +129,7 @@ class ListResourcesByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourcesByTagRequest.
+        r"""Gets the body of this ListResourcesByTagRequest.
 
         :return: The body of this ListResourcesByTagRequest.
         :rtype: :class:`huaweicloudsdkga.v1.ListResourcesByTagRequestBody`
@@ -138,7 +138,7 @@ class ListResourcesByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourcesByTagRequest.
+        r"""Sets the body of this ListResourcesByTagRequest.
 
         :param body: The body of this ListResourcesByTagRequest.
         :type body: :class:`huaweicloudsdkga.v1.ListResourcesByTagRequestBody`

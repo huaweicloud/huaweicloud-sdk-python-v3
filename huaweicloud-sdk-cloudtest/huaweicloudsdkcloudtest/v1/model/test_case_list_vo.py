@@ -81,7 +81,7 @@ class TestCaseListVo:
     }
 
     def __init__(self, uri=None, name=None, owner=None, status=None, result=None, module=None, iteration=None, exeplatform=None, number=None, description=None, rank_id=None, feature_uri=None, release_dev=None, is_keyword=None, script_url=None, report_url=None, project_uuid=None, service_type=None, test_type=None, create_info=None, execute_info=None, associate_issue_info=None, associate_defect_info=None, case_type=None, labels=None, custom_field_info=None, is_test_design=None, last_modified=None, review_status=None):
-        """TestCaseListVo
+        r"""TestCaseListVo
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class TestCaseListVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestCaseListVo.
+        r"""Gets the uri of this TestCaseListVo.
 
         用例URI
 
@@ -250,7 +250,7 @@ class TestCaseListVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestCaseListVo.
+        r"""Sets the uri of this TestCaseListVo.
 
         用例URI
 
@@ -261,7 +261,7 @@ class TestCaseListVo:
 
     @property
     def name(self):
-        """Gets the name of this TestCaseListVo.
+        r"""Gets the name of this TestCaseListVo.
 
         用例名称
 
@@ -272,7 +272,7 @@ class TestCaseListVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestCaseListVo.
+        r"""Sets the name of this TestCaseListVo.
 
         用例名称
 
@@ -283,7 +283,7 @@ class TestCaseListVo:
 
     @property
     def owner(self):
-        """Gets the owner of this TestCaseListVo.
+        r"""Gets the owner of this TestCaseListVo.
 
         :return: The owner of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -292,7 +292,7 @@ class TestCaseListVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestCaseListVo.
+        r"""Sets the owner of this TestCaseListVo.
 
         :param owner: The owner of this TestCaseListVo.
         :type owner: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -301,7 +301,7 @@ class TestCaseListVo:
 
     @property
     def status(self):
-        """Gets the status of this TestCaseListVo.
+        r"""Gets the status of this TestCaseListVo.
 
         :return: The status of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -310,7 +310,7 @@ class TestCaseListVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TestCaseListVo.
+        r"""Sets the status of this TestCaseListVo.
 
         :param status: The status of this TestCaseListVo.
         :type status: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -319,7 +319,7 @@ class TestCaseListVo:
 
     @property
     def result(self):
-        """Gets the result of this TestCaseListVo.
+        r"""Gets the result of this TestCaseListVo.
 
         :return: The result of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -328,7 +328,7 @@ class TestCaseListVo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this TestCaseListVo.
+        r"""Sets the result of this TestCaseListVo.
 
         :param result: The result of this TestCaseListVo.
         :type result: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -337,7 +337,7 @@ class TestCaseListVo:
 
     @property
     def module(self):
-        """Gets the module of this TestCaseListVo.
+        r"""Gets the module of this TestCaseListVo.
 
         :return: The module of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -346,7 +346,7 @@ class TestCaseListVo:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this TestCaseListVo.
+        r"""Sets the module of this TestCaseListVo.
 
         :param module: The module of this TestCaseListVo.
         :type module: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -355,7 +355,7 @@ class TestCaseListVo:
 
     @property
     def iteration(self):
-        """Gets the iteration of this TestCaseListVo.
+        r"""Gets the iteration of this TestCaseListVo.
 
         :return: The iteration of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -364,7 +364,7 @@ class TestCaseListVo:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this TestCaseListVo.
+        r"""Sets the iteration of this TestCaseListVo.
 
         :param iteration: The iteration of this TestCaseListVo.
         :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -373,7 +373,7 @@ class TestCaseListVo:
 
     @property
     def exeplatform(self):
-        """Gets the exeplatform of this TestCaseListVo.
+        r"""Gets the exeplatform of this TestCaseListVo.
 
         执行平台，如：apittest,其他三方执行平台
 
@@ -384,7 +384,7 @@ class TestCaseListVo:
 
     @exeplatform.setter
     def exeplatform(self, exeplatform):
-        """Sets the exeplatform of this TestCaseListVo.
+        r"""Sets the exeplatform of this TestCaseListVo.
 
         执行平台，如：apittest,其他三方执行平台
 
@@ -395,7 +395,7 @@ class TestCaseListVo:
 
     @property
     def number(self):
-        """Gets the number of this TestCaseListVo.
+        r"""Gets the number of this TestCaseListVo.
 
         用例编号
 
@@ -406,7 +406,7 @@ class TestCaseListVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestCaseListVo.
+        r"""Sets the number of this TestCaseListVo.
 
         用例编号
 
@@ -417,7 +417,7 @@ class TestCaseListVo:
 
     @property
     def description(self):
-        """Gets the description of this TestCaseListVo.
+        r"""Gets the description of this TestCaseListVo.
 
         用例描述
 
@@ -428,7 +428,7 @@ class TestCaseListVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TestCaseListVo.
+        r"""Sets the description of this TestCaseListVo.
 
         用例描述
 
@@ -439,7 +439,7 @@ class TestCaseListVo:
 
     @property
     def rank_id(self):
-        """Gets the rank_id of this TestCaseListVo.
+        r"""Gets the rank_id of this TestCaseListVo.
 
         用例等级
 
@@ -450,7 +450,7 @@ class TestCaseListVo:
 
     @rank_id.setter
     def rank_id(self, rank_id):
-        """Sets the rank_id of this TestCaseListVo.
+        r"""Sets the rank_id of this TestCaseListVo.
 
         用例等级
 
@@ -461,7 +461,7 @@ class TestCaseListVo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this TestCaseListVo.
+        r"""Gets the feature_uri of this TestCaseListVo.
 
         目录URI
 
@@ -472,7 +472,7 @@ class TestCaseListVo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this TestCaseListVo.
+        r"""Sets the feature_uri of this TestCaseListVo.
 
         目录URI
 
@@ -483,7 +483,7 @@ class TestCaseListVo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TestCaseListVo.
+        r"""Gets the release_dev of this TestCaseListVo.
 
         版本号
 
@@ -494,7 +494,7 @@ class TestCaseListVo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TestCaseListVo.
+        r"""Sets the release_dev of this TestCaseListVo.
 
         版本号
 
@@ -505,7 +505,7 @@ class TestCaseListVo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this TestCaseListVo.
+        r"""Gets the is_keyword of this TestCaseListVo.
 
         是否组合关键字
 
@@ -516,7 +516,7 @@ class TestCaseListVo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this TestCaseListVo.
+        r"""Sets the is_keyword of this TestCaseListVo.
 
         是否组合关键字
 
@@ -527,7 +527,7 @@ class TestCaseListVo:
 
     @property
     def script_url(self):
-        """Gets the script_url of this TestCaseListVo.
+        r"""Gets the script_url of this TestCaseListVo.
 
         脚本路径
 
@@ -538,7 +538,7 @@ class TestCaseListVo:
 
     @script_url.setter
     def script_url(self, script_url):
-        """Sets the script_url of this TestCaseListVo.
+        r"""Sets the script_url of this TestCaseListVo.
 
         脚本路径
 
@@ -549,7 +549,7 @@ class TestCaseListVo:
 
     @property
     def report_url(self):
-        """Gets the report_url of this TestCaseListVo.
+        r"""Gets the report_url of this TestCaseListVo.
 
         实时报告地址
 
@@ -560,7 +560,7 @@ class TestCaseListVo:
 
     @report_url.setter
     def report_url(self, report_url):
-        """Sets the report_url of this TestCaseListVo.
+        r"""Sets the report_url of this TestCaseListVo.
 
         实时报告地址
 
@@ -571,7 +571,7 @@ class TestCaseListVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestCaseListVo.
+        r"""Gets the project_uuid of this TestCaseListVo.
 
         项目ID
 
@@ -582,7 +582,7 @@ class TestCaseListVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestCaseListVo.
+        r"""Sets the project_uuid of this TestCaseListVo.
 
         项目ID
 
@@ -593,7 +593,7 @@ class TestCaseListVo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TestCaseListVo.
+        r"""Gets the service_type of this TestCaseListVo.
 
         :return: The service_type of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -602,7 +602,7 @@ class TestCaseListVo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TestCaseListVo.
+        r"""Sets the service_type of this TestCaseListVo.
 
         :param service_type: The service_type of this TestCaseListVo.
         :type service_type: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -611,7 +611,7 @@ class TestCaseListVo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this TestCaseListVo.
+        r"""Gets the test_type of this TestCaseListVo.
 
         :return: The test_type of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IntegerIdAndNameVo`
@@ -620,7 +620,7 @@ class TestCaseListVo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this TestCaseListVo.
+        r"""Sets the test_type of this TestCaseListVo.
 
         :param test_type: The test_type of this TestCaseListVo.
         :type test_type: :class:`huaweicloudsdkcloudtest.v1.IntegerIdAndNameVo`
@@ -629,7 +629,7 @@ class TestCaseListVo:
 
     @property
     def create_info(self):
-        """Gets the create_info of this TestCaseListVo.
+        r"""Gets the create_info of this TestCaseListVo.
 
         :return: The create_info of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateInfoVo`
@@ -638,7 +638,7 @@ class TestCaseListVo:
 
     @create_info.setter
     def create_info(self, create_info):
-        """Sets the create_info of this TestCaseListVo.
+        r"""Sets the create_info of this TestCaseListVo.
 
         :param create_info: The create_info of this TestCaseListVo.
         :type create_info: :class:`huaweicloudsdkcloudtest.v1.CreateInfoVo`
@@ -647,7 +647,7 @@ class TestCaseListVo:
 
     @property
     def execute_info(self):
-        """Gets the execute_info of this TestCaseListVo.
+        r"""Gets the execute_info of this TestCaseListVo.
 
         :return: The execute_info of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExecuteInfoVo`
@@ -656,7 +656,7 @@ class TestCaseListVo:
 
     @execute_info.setter
     def execute_info(self, execute_info):
-        """Sets the execute_info of this TestCaseListVo.
+        r"""Sets the execute_info of this TestCaseListVo.
 
         :param execute_info: The execute_info of this TestCaseListVo.
         :type execute_info: :class:`huaweicloudsdkcloudtest.v1.ExecuteInfoVo`
@@ -665,7 +665,7 @@ class TestCaseListVo:
 
     @property
     def associate_issue_info(self):
-        """Gets the associate_issue_info of this TestCaseListVo.
+        r"""Gets the associate_issue_info of this TestCaseListVo.
 
         :return: The associate_issue_info of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssociateIssueInfoVo`
@@ -674,7 +674,7 @@ class TestCaseListVo:
 
     @associate_issue_info.setter
     def associate_issue_info(self, associate_issue_info):
-        """Sets the associate_issue_info of this TestCaseListVo.
+        r"""Sets the associate_issue_info of this TestCaseListVo.
 
         :param associate_issue_info: The associate_issue_info of this TestCaseListVo.
         :type associate_issue_info: :class:`huaweicloudsdkcloudtest.v1.AssociateIssueInfoVo`
@@ -683,7 +683,7 @@ class TestCaseListVo:
 
     @property
     def associate_defect_info(self):
-        """Gets the associate_defect_info of this TestCaseListVo.
+        r"""Gets the associate_defect_info of this TestCaseListVo.
 
         :return: The associate_defect_info of this TestCaseListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssociateDefectInfoVo`
@@ -692,7 +692,7 @@ class TestCaseListVo:
 
     @associate_defect_info.setter
     def associate_defect_info(self, associate_defect_info):
-        """Sets the associate_defect_info of this TestCaseListVo.
+        r"""Sets the associate_defect_info of this TestCaseListVo.
 
         :param associate_defect_info: The associate_defect_info of this TestCaseListVo.
         :type associate_defect_info: :class:`huaweicloudsdkcloudtest.v1.AssociateDefectInfoVo`
@@ -701,7 +701,7 @@ class TestCaseListVo:
 
     @property
     def case_type(self):
-        """Gets the case_type of this TestCaseListVo.
+        r"""Gets the case_type of this TestCaseListVo.
 
         用例类型
 
@@ -712,7 +712,7 @@ class TestCaseListVo:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this TestCaseListVo.
+        r"""Sets the case_type of this TestCaseListVo.
 
         用例类型
 
@@ -723,7 +723,7 @@ class TestCaseListVo:
 
     @property
     def labels(self):
-        """Gets the labels of this TestCaseListVo.
+        r"""Gets the labels of this TestCaseListVo.
 
         用例标签名称列表
 
@@ -734,7 +734,7 @@ class TestCaseListVo:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this TestCaseListVo.
+        r"""Sets the labels of this TestCaseListVo.
 
         用例标签名称列表
 
@@ -745,7 +745,7 @@ class TestCaseListVo:
 
     @property
     def custom_field_info(self):
-        """Gets the custom_field_info of this TestCaseListVo.
+        r"""Gets the custom_field_info of this TestCaseListVo.
 
         自定义字段信息
 
@@ -756,7 +756,7 @@ class TestCaseListVo:
 
     @custom_field_info.setter
     def custom_field_info(self, custom_field_info):
-        """Sets the custom_field_info of this TestCaseListVo.
+        r"""Sets the custom_field_info of this TestCaseListVo.
 
         自定义字段信息
 
@@ -767,7 +767,7 @@ class TestCaseListVo:
 
     @property
     def is_test_design(self):
-        """Gets the is_test_design of this TestCaseListVo.
+        r"""Gets the is_test_design of this TestCaseListVo.
 
         是否来自测试设计（null：不限，false：否来自测试设计，true：来自测试设计）
 
@@ -778,7 +778,7 @@ class TestCaseListVo:
 
     @is_test_design.setter
     def is_test_design(self, is_test_design):
-        """Sets the is_test_design of this TestCaseListVo.
+        r"""Sets the is_test_design of this TestCaseListVo.
 
         是否来自测试设计（null：不限，false：否来自测试设计，true：来自测试设计）
 
@@ -789,7 +789,7 @@ class TestCaseListVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TestCaseListVo.
+        r"""Gets the last_modified of this TestCaseListVo.
 
         最后修改时间（null：不限）
 
@@ -800,7 +800,7 @@ class TestCaseListVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TestCaseListVo.
+        r"""Sets the last_modified of this TestCaseListVo.
 
         最后修改时间（null：不限）
 
@@ -811,7 +811,7 @@ class TestCaseListVo:
 
     @property
     def review_status(self):
-        """Gets the review_status of this TestCaseListVo.
+        r"""Gets the review_status of this TestCaseListVo.
 
         用例评审状态（null：0至127）
 
@@ -822,7 +822,7 @@ class TestCaseListVo:
 
     @review_status.setter
     def review_status(self, review_status):
-        """Sets the review_status of this TestCaseListVo.
+        r"""Sets the review_status of this TestCaseListVo.
 
         用例评审状态（null：0至127）
 

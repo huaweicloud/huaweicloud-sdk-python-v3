@@ -26,7 +26,7 @@ class ListBrokersResponse(SdkResponse):
     }
 
     def __init__(self, brokers=None):
-        """ListBrokersResponse
+        r"""ListBrokersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBrokersResponse(SdkResponse):
 
     @property
     def brokers(self):
-        """Gets the brokers of this ListBrokersResponse.
+        r"""Gets the brokers of this ListBrokersResponse.
 
         代理列表。
 
@@ -55,7 +55,7 @@ class ListBrokersResponse(SdkResponse):
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ListBrokersResponse.
+        r"""Sets the brokers of this ListBrokersResponse.
 
         代理列表。
 

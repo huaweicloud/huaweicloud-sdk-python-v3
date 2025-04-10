@@ -117,7 +117,7 @@ class SubCustomerMonthlyBillDetail:
     }
 
     def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
-        """SubCustomerMonthlyBillDetail
+        r"""SubCustomerMonthlyBillDetail
 
         The model defined in huaweicloud sdk
 
@@ -365,7 +365,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this SubCustomerMonthlyBillDetail.
+        r"""Gets the bill_cycle of this SubCustomerMonthlyBillDetail.
 
         账期。 格式：YYYY-MM
 
@@ -376,7 +376,7 @@ class SubCustomerMonthlyBillDetail:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this SubCustomerMonthlyBillDetail.
+        r"""Sets the bill_cycle of this SubCustomerMonthlyBillDetail.
 
         账期。 格式：YYYY-MM
 
@@ -387,7 +387,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the customer_id of this SubCustomerMonthlyBillDetail.
 
         客户账号ID。
 
@@ -398,7 +398,7 @@ class SubCustomerMonthlyBillDetail:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the customer_id of this SubCustomerMonthlyBillDetail.
 
         客户账号ID。
 
@@ -409,7 +409,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def association_type(self):
-        """Gets the association_type of this SubCustomerMonthlyBillDetail.
+        r"""Gets the association_type of this SubCustomerMonthlyBillDetail.
 
         子客户的关联类型： 1：顾问销售2：代售
 
@@ -420,7 +420,7 @@ class SubCustomerMonthlyBillDetail:
 
     @association_type.setter
     def association_type(self, association_type):
-        """Sets the association_type of this SubCustomerMonthlyBillDetail.
+        r"""Sets the association_type of this SubCustomerMonthlyBillDetail.
 
         子客户的关联类型： 1：顾问销售2：代售
 
@@ -431,7 +431,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Gets the service_type_code of this SubCustomerMonthlyBillDetail.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -442,7 +442,7 @@ class SubCustomerMonthlyBillDetail:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Sets the service_type_code of this SubCustomerMonthlyBillDetail.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -453,7 +453,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Gets the resource_type_code of this SubCustomerMonthlyBillDetail.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
@@ -464,7 +464,7 @@ class SubCustomerMonthlyBillDetail:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Sets the resource_type_code of this SubCustomerMonthlyBillDetail.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
@@ -475,7 +475,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the service_type_name of this SubCustomerMonthlyBillDetail.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -486,7 +486,7 @@ class SubCustomerMonthlyBillDetail:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the service_type_name of this SubCustomerMonthlyBillDetail.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -497,7 +497,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the resource_type_name of this SubCustomerMonthlyBillDetail.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -508,7 +508,7 @@ class SubCustomerMonthlyBillDetail:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the resource_type_name of this SubCustomerMonthlyBillDetail.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -519,7 +519,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this SubCustomerMonthlyBillDetail.
+        r"""Gets the charging_mode of this SubCustomerMonthlyBillDetail.
 
         计费模式。 1：包周期3：按需10：预留实例11：节省计划
 
@@ -530,7 +530,7 @@ class SubCustomerMonthlyBillDetail:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this SubCustomerMonthlyBillDetail.
+        r"""Sets the charging_mode of this SubCustomerMonthlyBillDetail.
 
         计费模式。 1：包周期3：按需10：预留实例11：节省计划
 
@@ -541,7 +541,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def trade_time(self):
-        """Gets the trade_time of this SubCustomerMonthlyBillDetail.
+        r"""Gets the trade_time of this SubCustomerMonthlyBillDetail.
 
         交易时间，即某条消费记录对应的扣费时间。 示例：2020-11-17T06:43:38Z
 
@@ -552,7 +552,7 @@ class SubCustomerMonthlyBillDetail:
 
     @trade_time.setter
     def trade_time(self, trade_time):
-        """Sets the trade_time of this SubCustomerMonthlyBillDetail.
+        r"""Sets the trade_time of this SubCustomerMonthlyBillDetail.
 
         交易时间，即某条消费记录对应的扣费时间。 示例：2020-11-17T06:43:38Z
 
@@ -563,7 +563,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the trade_id of this SubCustomerMonthlyBillDetail.
 
         订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
 
@@ -574,7 +574,7 @@ class SubCustomerMonthlyBillDetail:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the trade_id of this SubCustomerMonthlyBillDetail.
 
         订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
 
@@ -585,7 +585,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def id(self):
-        """Gets the id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the id of this SubCustomerMonthlyBillDetail.
 
         唯一标识。
 
@@ -596,7 +596,7 @@ class SubCustomerMonthlyBillDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the id of this SubCustomerMonthlyBillDetail.
 
         唯一标识。
 
@@ -607,7 +607,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def bill_detail_type(self):
-        """Gets the bill_detail_type of this SubCustomerMonthlyBillDetail.
+        r"""Gets the bill_detail_type of this SubCustomerMonthlyBillDetail.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
@@ -618,7 +618,7 @@ class SubCustomerMonthlyBillDetail:
 
     @bill_detail_type.setter
     def bill_detail_type(self, bill_detail_type):
-        """Sets the bill_detail_type of this SubCustomerMonthlyBillDetail.
+        r"""Sets the bill_detail_type of this SubCustomerMonthlyBillDetail.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
@@ -629,7 +629,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the resource_id of this SubCustomerMonthlyBillDetail.
 
         资源ID。
 
@@ -640,7 +640,7 @@ class SubCustomerMonthlyBillDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the resource_id of this SubCustomerMonthlyBillDetail.
 
         资源ID。
 
@@ -651,7 +651,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the resource_name of this SubCustomerMonthlyBillDetail.
 
         资源名称。
 
@@ -662,7 +662,7 @@ class SubCustomerMonthlyBillDetail:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the resource_name of this SubCustomerMonthlyBillDetail.
 
         资源名称。
 
@@ -673,7 +673,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this SubCustomerMonthlyBillDetail.
+        r"""Gets the product_spec_desc of this SubCustomerMonthlyBillDetail.
 
         产品的规格描述。
 
@@ -684,7 +684,7 @@ class SubCustomerMonthlyBillDetail:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this SubCustomerMonthlyBillDetail.
+        r"""Sets the product_spec_desc of this SubCustomerMonthlyBillDetail.
 
         产品的规格描述。
 
@@ -695,7 +695,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def region_code(self):
-        """Gets the region_code of this SubCustomerMonthlyBillDetail.
+        r"""Gets the region_code of this SubCustomerMonthlyBillDetail.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -706,7 +706,7 @@ class SubCustomerMonthlyBillDetail:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this SubCustomerMonthlyBillDetail.
+        r"""Sets the region_code of this SubCustomerMonthlyBillDetail.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -717,7 +717,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def product_id(self):
-        """Gets the product_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the product_id of this SubCustomerMonthlyBillDetail.
 
         产品ID。
 
@@ -728,7 +728,7 @@ class SubCustomerMonthlyBillDetail:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the product_id of this SubCustomerMonthlyBillDetail.
 
         产品ID。
 
@@ -739,7 +739,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def product_name(self):
-        """Gets the product_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the product_name of this SubCustomerMonthlyBillDetail.
 
         产品名称。
 
@@ -750,7 +750,7 @@ class SubCustomerMonthlyBillDetail:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the product_name of this SubCustomerMonthlyBillDetail.
 
         产品名称。
 
@@ -761,7 +761,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def resource_tag(self):
-        """Gets the resource_tag of this SubCustomerMonthlyBillDetail.
+        r"""Gets the resource_tag of this SubCustomerMonthlyBillDetail.
 
         资源标签。
 
@@ -772,7 +772,7 @@ class SubCustomerMonthlyBillDetail:
 
     @resource_tag.setter
     def resource_tag(self, resource_tag):
-        """Sets the resource_tag of this SubCustomerMonthlyBillDetail.
+        r"""Sets the resource_tag of this SubCustomerMonthlyBillDetail.
 
         资源标签。
 
@@ -783,7 +783,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def consume_time(self):
-        """Gets the consume_time of this SubCustomerMonthlyBillDetail.
+        r"""Gets the consume_time of this SubCustomerMonthlyBillDetail.
 
         消费时间。 包周期和预留实例订购场景下为订单支付时间；按需场景下为话单生失效时间。 格式：YYYY-MM-DDThh:mm:ssZ
 
@@ -794,7 +794,7 @@ class SubCustomerMonthlyBillDetail:
 
     @consume_time.setter
     def consume_time(self, consume_time):
-        """Sets the consume_time of this SubCustomerMonthlyBillDetail.
+        r"""Sets the consume_time of this SubCustomerMonthlyBillDetail.
 
         消费时间。 包周期和预留实例订购场景下为订单支付时间；按需场景下为话单生失效时间。 格式：YYYY-MM-DDThh:mm:ssZ
 
@@ -805,7 +805,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def usage_type(self):
-        """Gets the usage_type of this SubCustomerMonthlyBillDetail.
+        r"""Gets the usage_type of this SubCustomerMonthlyBillDetail.
 
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
@@ -816,7 +816,7 @@ class SubCustomerMonthlyBillDetail:
 
     @usage_type.setter
     def usage_type(self, usage_type):
-        """Sets the usage_type of this SubCustomerMonthlyBillDetail.
+        r"""Sets the usage_type of this SubCustomerMonthlyBillDetail.
 
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
@@ -827,7 +827,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def usage_amount(self):
-        """Gets the usage_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the usage_amount of this SubCustomerMonthlyBillDetail.
 
         资源的使用量。
 
@@ -838,7 +838,7 @@ class SubCustomerMonthlyBillDetail:
 
     @usage_amount.setter
     def usage_amount(self, usage_amount):
-        """Sets the usage_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the usage_amount of this SubCustomerMonthlyBillDetail.
 
         资源的使用量。
 
@@ -849,7 +849,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the usage_measure_id of this SubCustomerMonthlyBillDetail.
 
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -860,7 +860,7 @@ class SubCustomerMonthlyBillDetail:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the usage_measure_id of this SubCustomerMonthlyBillDetail.
 
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -871,7 +871,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def free_resource_usage(self):
-        """Gets the free_resource_usage of this SubCustomerMonthlyBillDetail.
+        r"""Gets the free_resource_usage of this SubCustomerMonthlyBillDetail.
 
         套餐内使用量。
 
@@ -882,7 +882,7 @@ class SubCustomerMonthlyBillDetail:
 
     @free_resource_usage.setter
     def free_resource_usage(self, free_resource_usage):
-        """Sets the free_resource_usage of this SubCustomerMonthlyBillDetail.
+        r"""Sets the free_resource_usage of this SubCustomerMonthlyBillDetail.
 
         套餐内使用量。
 
@@ -893,7 +893,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def free_resource_measure_id(self):
-        """Gets the free_resource_measure_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the free_resource_measure_id of this SubCustomerMonthlyBillDetail.
 
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -904,7 +904,7 @@ class SubCustomerMonthlyBillDetail:
 
     @free_resource_measure_id.setter
     def free_resource_measure_id(self, free_resource_measure_id):
-        """Sets the free_resource_measure_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the free_resource_measure_id of this SubCustomerMonthlyBillDetail.
 
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -915,7 +915,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def ri_usage(self):
-        """Gets the ri_usage of this SubCustomerMonthlyBillDetail.
+        r"""Gets the ri_usage of this SubCustomerMonthlyBillDetail.
 
         预留实例使用量。
 
@@ -926,7 +926,7 @@ class SubCustomerMonthlyBillDetail:
 
     @ri_usage.setter
     def ri_usage(self, ri_usage):
-        """Sets the ri_usage of this SubCustomerMonthlyBillDetail.
+        r"""Sets the ri_usage of this SubCustomerMonthlyBillDetail.
 
         预留实例使用量。
 
@@ -937,7 +937,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def ri_usage_measure_id(self):
-        """Gets the ri_usage_measure_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the ri_usage_measure_id of this SubCustomerMonthlyBillDetail.
 
         预留实例使用量单位。
 
@@ -948,7 +948,7 @@ class SubCustomerMonthlyBillDetail:
 
     @ri_usage_measure_id.setter
     def ri_usage_measure_id(self, ri_usage_measure_id):
-        """Sets the ri_usage_measure_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the ri_usage_measure_id of this SubCustomerMonthlyBillDetail.
 
         预留实例使用量单位。
 
@@ -959,7 +959,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the official_amount of this SubCustomerMonthlyBillDetail.
 
         官网价。
 
@@ -970,7 +970,7 @@ class SubCustomerMonthlyBillDetail:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the official_amount of this SubCustomerMonthlyBillDetail.
 
         官网价。
 
@@ -981,7 +981,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def official_discount_amount(self):
-        """Gets the official_discount_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the official_discount_amount of this SubCustomerMonthlyBillDetail.
 
         对应官网价折扣金额。
 
@@ -992,7 +992,7 @@ class SubCustomerMonthlyBillDetail:
 
     @official_discount_amount.setter
     def official_discount_amount(self, official_discount_amount):
-        """Sets the official_discount_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the official_discount_amount of this SubCustomerMonthlyBillDetail.
 
         对应官网价折扣金额。
 
@@ -1003,7 +1003,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def payment_amount(self):
-        """Gets the payment_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the payment_amount of this SubCustomerMonthlyBillDetail.
 
         应付金额。
 
@@ -1014,7 +1014,7 @@ class SubCustomerMonthlyBillDetail:
 
     @payment_amount.setter
     def payment_amount(self, payment_amount):
-        """Sets the payment_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the payment_amount of this SubCustomerMonthlyBillDetail.
 
         应付金额。
 
@@ -1025,7 +1025,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def cash_amount(self):
-        """Gets the cash_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the cash_amount of this SubCustomerMonthlyBillDetail.
 
         现金支付金额。
 
@@ -1036,7 +1036,7 @@ class SubCustomerMonthlyBillDetail:
 
     @cash_amount.setter
     def cash_amount(self, cash_amount):
-        """Sets the cash_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the cash_amount of this SubCustomerMonthlyBillDetail.
 
         现金支付金额。
 
@@ -1047,7 +1047,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the credit_amount of this SubCustomerMonthlyBillDetail.
 
         信用额度支付金额。
 
@@ -1058,7 +1058,7 @@ class SubCustomerMonthlyBillDetail:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the credit_amount of this SubCustomerMonthlyBillDetail.
 
         信用额度支付金额。
 
@@ -1069,7 +1069,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the coupon_amount of this SubCustomerMonthlyBillDetail.
 
         代金券支付金额。
 
@@ -1080,7 +1080,7 @@ class SubCustomerMonthlyBillDetail:
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the coupon_amount of this SubCustomerMonthlyBillDetail.
 
         代金券支付金额。
 
@@ -1091,7 +1091,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
 
         现金券支付金额。
 
@@ -1102,7 +1102,7 @@ class SubCustomerMonthlyBillDetail:
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the flexipurchase_coupon_amount of this SubCustomerMonthlyBillDetail.
 
         现金券支付金额。
 
@@ -1113,7 +1113,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def stored_value_card_amount(self):
-        """Gets the stored_value_card_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the stored_value_card_amount of this SubCustomerMonthlyBillDetail.
 
         储值卡支付金额。
 
@@ -1124,7 +1124,7 @@ class SubCustomerMonthlyBillDetail:
 
     @stored_value_card_amount.setter
     def stored_value_card_amount(self, stored_value_card_amount):
-        """Sets the stored_value_card_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the stored_value_card_amount of this SubCustomerMonthlyBillDetail.
 
         储值卡支付金额。
 
@@ -1135,7 +1135,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the debt_amount of this SubCustomerMonthlyBillDetail.
 
         欠费金额。
 
@@ -1146,7 +1146,7 @@ class SubCustomerMonthlyBillDetail:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the debt_amount of this SubCustomerMonthlyBillDetail.
 
         欠费金额。
 
@@ -1157,7 +1157,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def writeoff_amount(self):
-        """Gets the writeoff_amount of this SubCustomerMonthlyBillDetail.
+        r"""Gets the writeoff_amount of this SubCustomerMonthlyBillDetail.
 
         欠费核销金额。
 
@@ -1168,7 +1168,7 @@ class SubCustomerMonthlyBillDetail:
 
     @writeoff_amount.setter
     def writeoff_amount(self, writeoff_amount):
-        """Sets the writeoff_amount of this SubCustomerMonthlyBillDetail.
+        r"""Sets the writeoff_amount of this SubCustomerMonthlyBillDetail.
 
         欠费核销金额。
 
@@ -1179,7 +1179,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def period_type(self):
-        """Gets the period_type of this SubCustomerMonthlyBillDetail.
+        r"""Gets the period_type of this SubCustomerMonthlyBillDetail.
 
         周期类型： 19：年20：月24：天25：小时5：一次性
 
@@ -1190,7 +1190,7 @@ class SubCustomerMonthlyBillDetail:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this SubCustomerMonthlyBillDetail.
+        r"""Sets the period_type of this SubCustomerMonthlyBillDetail.
 
         周期类型： 19：年20：月24：天25：小时5：一次性
 
@@ -1201,7 +1201,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def account_manager_id(self):
-        """Gets the account_manager_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the account_manager_id of this SubCustomerMonthlyBillDetail.
 
         客户经理标识。
 
@@ -1212,7 +1212,7 @@ class SubCustomerMonthlyBillDetail:
 
     @account_manager_id.setter
     def account_manager_id(self, account_manager_id):
-        """Sets the account_manager_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the account_manager_id of this SubCustomerMonthlyBillDetail.
 
         客户经理标识。
 
@@ -1223,7 +1223,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def partner_id(self):
-        """Gets the partner_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the partner_id of this SubCustomerMonthlyBillDetail.
 
         关联的经销商ID。
 
@@ -1234,7 +1234,7 @@ class SubCustomerMonthlyBillDetail:
 
     @partner_id.setter
     def partner_id(self, partner_id):
-        """Sets the partner_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the partner_id of this SubCustomerMonthlyBillDetail.
 
         关联的经销商ID。
 
@@ -1245,7 +1245,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def region_name(self):
-        """Gets the region_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the region_name of this SubCustomerMonthlyBillDetail.
 
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -1256,7 +1256,7 @@ class SubCustomerMonthlyBillDetail:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the region_name of this SubCustomerMonthlyBillDetail.
 
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -1267,7 +1267,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def sub_service_type_code(self):
-        """Gets the sub_service_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Gets the sub_service_type_code of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的云服务类型编码。
 
@@ -1278,7 +1278,7 @@ class SubCustomerMonthlyBillDetail:
 
     @sub_service_type_code.setter
     def sub_service_type_code(self, sub_service_type_code):
-        """Sets the sub_service_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Sets the sub_service_type_code of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的云服务类型编码。
 
@@ -1289,7 +1289,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def sub_service_type_name(self):
-        """Gets the sub_service_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the sub_service_type_name of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的云服务类型名称。
 
@@ -1300,7 +1300,7 @@ class SubCustomerMonthlyBillDetail:
 
     @sub_service_type_name.setter
     def sub_service_type_name(self, sub_service_type_name):
-        """Sets the sub_service_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the sub_service_type_name of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的云服务类型名称。
 
@@ -1311,7 +1311,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def sub_resource_type_code(self):
-        """Gets the sub_resource_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Gets the sub_resource_type_code of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源类型编码。
 
@@ -1322,7 +1322,7 @@ class SubCustomerMonthlyBillDetail:
 
     @sub_resource_type_code.setter
     def sub_resource_type_code(self, sub_resource_type_code):
-        """Sets the sub_resource_type_code of this SubCustomerMonthlyBillDetail.
+        r"""Sets the sub_resource_type_code of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源类型编码。
 
@@ -1333,7 +1333,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def sub_resource_type_name(self):
-        """Gets the sub_resource_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the sub_resource_type_name of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源类型名称。
 
@@ -1344,7 +1344,7 @@ class SubCustomerMonthlyBillDetail:
 
     @sub_resource_type_name.setter
     def sub_resource_type_name(self, sub_resource_type_name):
-        """Sets the sub_resource_type_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the sub_resource_type_name of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源类型名称。
 
@@ -1355,7 +1355,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def sub_resource_id(self):
-        """Gets the sub_resource_id of this SubCustomerMonthlyBillDetail.
+        r"""Gets the sub_resource_id of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1366,7 +1366,7 @@ class SubCustomerMonthlyBillDetail:
 
     @sub_resource_id.setter
     def sub_resource_id(self, sub_resource_id):
-        """Sets the sub_resource_id of this SubCustomerMonthlyBillDetail.
+        r"""Sets the sub_resource_id of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1377,7 +1377,7 @@ class SubCustomerMonthlyBillDetail:
 
     @property
     def sub_resource_name(self):
-        """Gets the sub_resource_name of this SubCustomerMonthlyBillDetail.
+        r"""Gets the sub_resource_name of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1388,7 +1388,7 @@ class SubCustomerMonthlyBillDetail:
 
     @sub_resource_name.setter
     def sub_resource_name(self, sub_resource_name):
-        """Sets the sub_resource_name of this SubCustomerMonthlyBillDetail.
+        r"""Sets the sub_resource_name of this SubCustomerMonthlyBillDetail.
 
         整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 

@@ -27,7 +27,7 @@ class ConsumeRecordsRequest:
     }
 
     def __init__(self, partition_cursor=None, max_fetch_bytes=None):
-        """ConsumeRecordsRequest
+        r"""ConsumeRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ConsumeRecordsRequest:
 
     @property
     def partition_cursor(self):
-        """Gets the partition_cursor of this ConsumeRecordsRequest.
+        r"""Gets the partition_cursor of this ConsumeRecordsRequest.
 
         数据游标，需要先通过获取数据游标的接口获取。  取值范围：1~512个字符。  说明：  数据游标有效期为5分钟。
 
@@ -60,7 +60,7 @@ class ConsumeRecordsRequest:
 
     @partition_cursor.setter
     def partition_cursor(self, partition_cursor):
-        """Sets the partition_cursor of this ConsumeRecordsRequest.
+        r"""Sets the partition_cursor of this ConsumeRecordsRequest.
 
         数据游标，需要先通过获取数据游标的接口获取。  取值范围：1~512个字符。  说明：  数据游标有效期为5分钟。
 
@@ -71,7 +71,7 @@ class ConsumeRecordsRequest:
 
     @property
     def max_fetch_bytes(self):
-        """Gets the max_fetch_bytes of this ConsumeRecordsRequest.
+        r"""Gets the max_fetch_bytes of this ConsumeRecordsRequest.
 
         每个请求获取记录的最大字节数。  注意：  该值如果小于分区中单条记录的大小，会导致一直无法获取到记录。
 
@@ -82,7 +82,7 @@ class ConsumeRecordsRequest:
 
     @max_fetch_bytes.setter
     def max_fetch_bytes(self, max_fetch_bytes):
-        """Sets the max_fetch_bytes of this ConsumeRecordsRequest.
+        r"""Sets the max_fetch_bytes of this ConsumeRecordsRequest.
 
         每个请求获取记录的最大字节数。  注意：  该值如果小于分区中单条记录的大小，会导致一直无法获取到记录。
 

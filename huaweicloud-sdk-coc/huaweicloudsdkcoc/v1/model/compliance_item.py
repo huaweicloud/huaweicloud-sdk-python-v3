@@ -35,7 +35,7 @@ class ComplianceItem:
     }
 
     def __init__(self, instance_id=None, title=None, classification=None, severity_level=None, compliance_level=None, patch_detail=None):
-        """ComplianceItem
+        r"""ComplianceItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ComplianceItem:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ComplianceItem.
+        r"""Gets the instance_id of this ComplianceItem.
 
         节点id
 
@@ -89,7 +89,7 @@ class ComplianceItem:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ComplianceItem.
+        r"""Sets the instance_id of this ComplianceItem.
 
         节点id
 
@@ -100,7 +100,7 @@ class ComplianceItem:
 
     @property
     def title(self):
-        """Gets the title of this ComplianceItem.
+        r"""Gets the title of this ComplianceItem.
 
         补丁名称
 
@@ -111,7 +111,7 @@ class ComplianceItem:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ComplianceItem.
+        r"""Sets the title of this ComplianceItem.
 
         补丁名称
 
@@ -122,7 +122,7 @@ class ComplianceItem:
 
     @property
     def classification(self):
-        """Gets the classification of this ComplianceItem.
+        r"""Gets the classification of this ComplianceItem.
 
         分类
 
@@ -133,7 +133,7 @@ class ComplianceItem:
 
     @classification.setter
     def classification(self, classification):
-        """Sets the classification of this ComplianceItem.
+        r"""Sets the classification of this ComplianceItem.
 
         分类
 
@@ -144,7 +144,7 @@ class ComplianceItem:
 
     @property
     def severity_level(self):
-        """Gets the severity_level of this ComplianceItem.
+        r"""Gets the severity_level of this ComplianceItem.
 
         严重性级别
 
@@ -155,7 +155,7 @@ class ComplianceItem:
 
     @severity_level.setter
     def severity_level(self, severity_level):
-        """Sets the severity_level of this ComplianceItem.
+        r"""Sets the severity_level of this ComplianceItem.
 
         严重性级别
 
@@ -166,7 +166,7 @@ class ComplianceItem:
 
     @property
     def compliance_level(self):
-        """Gets the compliance_level of this ComplianceItem.
+        r"""Gets the compliance_level of this ComplianceItem.
 
         合规性级别
 
@@ -177,7 +177,7 @@ class ComplianceItem:
 
     @compliance_level.setter
     def compliance_level(self, compliance_level):
-        """Sets the compliance_level of this ComplianceItem.
+        r"""Sets the compliance_level of this ComplianceItem.
 
         合规性级别
 
@@ -188,7 +188,7 @@ class ComplianceItem:
 
     @property
     def patch_detail(self):
-        """Gets the patch_detail of this ComplianceItem.
+        r"""Gets the patch_detail of this ComplianceItem.
 
         :return: The patch_detail of this ComplianceItem.
         :rtype: :class:`huaweicloudsdkcoc.v1.PatchDetail`
@@ -197,7 +197,7 @@ class ComplianceItem:
 
     @patch_detail.setter
     def patch_detail(self, patch_detail):
-        """Sets the patch_detail of this ComplianceItem.
+        r"""Sets the patch_detail of this ComplianceItem.
 
         :param patch_detail: The patch_detail of this ComplianceItem.
         :type patch_detail: :class:`huaweicloudsdkcoc.v1.PatchDetail`

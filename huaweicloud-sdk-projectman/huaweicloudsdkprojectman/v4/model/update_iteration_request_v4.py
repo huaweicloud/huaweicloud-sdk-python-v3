@@ -35,7 +35,7 @@ class UpdateIterationRequestV4:
     }
 
     def __init__(self, begin_time=None, description=None, end_time=None, name=None, status=None, over_type=None):
-        """UpdateIterationRequestV4
+        r"""UpdateIterationRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class UpdateIterationRequestV4:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this UpdateIterationRequestV4.
+        r"""Gets the begin_time of this UpdateIterationRequestV4.
 
         开始时间，年-月-日
 
@@ -86,7 +86,7 @@ class UpdateIterationRequestV4:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this UpdateIterationRequestV4.
+        r"""Sets the begin_time of this UpdateIterationRequestV4.
 
         开始时间，年-月-日
 
@@ -97,7 +97,7 @@ class UpdateIterationRequestV4:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIterationRequestV4.
+        r"""Gets the description of this UpdateIterationRequestV4.
 
         描述
 
@@ -108,7 +108,7 @@ class UpdateIterationRequestV4:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIterationRequestV4.
+        r"""Sets the description of this UpdateIterationRequestV4.
 
         描述
 
@@ -119,7 +119,7 @@ class UpdateIterationRequestV4:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateIterationRequestV4.
+        r"""Gets the end_time of this UpdateIterationRequestV4.
 
         结束时间，年-月-日
 
@@ -130,7 +130,7 @@ class UpdateIterationRequestV4:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateIterationRequestV4.
+        r"""Sets the end_time of this UpdateIterationRequestV4.
 
         结束时间，年-月-日
 
@@ -141,7 +141,7 @@ class UpdateIterationRequestV4:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIterationRequestV4.
+        r"""Gets the name of this UpdateIterationRequestV4.
 
         标题
 
@@ -152,7 +152,7 @@ class UpdateIterationRequestV4:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIterationRequestV4.
+        r"""Sets the name of this UpdateIterationRequestV4.
 
         标题
 
@@ -163,7 +163,7 @@ class UpdateIterationRequestV4:
 
     @property
     def status(self):
-        """Gets the status of this UpdateIterationRequestV4.
+        r"""Gets the status of this UpdateIterationRequestV4.
 
         迭代的状态，0 未开始 <--> 1 进行中<--> 2 结束 <--> 1<-->0, 状态不能跨状态更改
 
@@ -174,7 +174,7 @@ class UpdateIterationRequestV4:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateIterationRequestV4.
+        r"""Sets the status of this UpdateIterationRequestV4.
 
         迭代的状态，0 未开始 <--> 1 进行中<--> 2 结束 <--> 1<-->0, 状态不能跨状态更改
 
@@ -185,7 +185,7 @@ class UpdateIterationRequestV4:
 
     @property
     def over_type(self):
-        """Gets the over_type of this UpdateIterationRequestV4.
+        r"""Gets the over_type of this UpdateIterationRequestV4.
 
         迭代结束时，工作项的处理（close 所有的工作项关闭，empty 没有关闭的工作项 放在block里面），status更新为2时需要填写over_type
 
@@ -196,7 +196,7 @@ class UpdateIterationRequestV4:
 
     @over_type.setter
     def over_type(self, over_type):
-        """Sets the over_type of this UpdateIterationRequestV4.
+        r"""Sets the over_type of this UpdateIterationRequestV4.
 
         迭代结束时，工作项的处理（close 所有的工作项关闭，empty 没有关闭的工作项 放在block里面），status更新为2时需要填写over_type
 

@@ -26,7 +26,7 @@ class ListQpsTimelineResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListQpsTimelineResponse
+        r"""ListQpsTimelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListQpsTimelineResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListQpsTimelineResponse.
+        r"""Gets the body of this ListQpsTimelineResponse.
 
         安全总览的Qps时间线统计数据
 
@@ -55,7 +55,7 @@ class ListQpsTimelineResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListQpsTimelineResponse.
+        r"""Sets the body of this ListQpsTimelineResponse.
 
         安全总览的Qps时间线统计数据
 

@@ -26,7 +26,7 @@ class ListRepoDomainsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListRepoDomainsResponse
+        r"""ListRepoDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRepoDomainsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListRepoDomainsResponse.
+        r"""Gets the body of this ListRepoDomainsResponse.
 
         共享租户列表
 
@@ -55,7 +55,7 @@ class ListRepoDomainsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRepoDomainsResponse.
+        r"""Sets the body of this ListRepoDomainsResponse.
 
         共享租户列表
 

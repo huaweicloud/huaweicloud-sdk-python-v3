@@ -27,7 +27,7 @@ class UpdateProjectStatusRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UpdateProjectStatusRequest
+        r"""UpdateProjectStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateProjectStatusRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateProjectStatusRequest.
+        r"""Gets the project_id of this UpdateProjectStatusRequest.
 
         待设置状态的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class UpdateProjectStatusRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateProjectStatusRequest.
+        r"""Sets the project_id of this UpdateProjectStatusRequest.
 
         待设置状态的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class UpdateProjectStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProjectStatusRequest.
+        r"""Gets the body of this UpdateProjectStatusRequest.
 
         :return: The body of this UpdateProjectStatusRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusRequestBody`
@@ -80,7 +80,7 @@ class UpdateProjectStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProjectStatusRequest.
+        r"""Sets the body of this UpdateProjectStatusRequest.
 
         :param body: The body of this UpdateProjectStatusRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusRequestBody`

@@ -25,7 +25,7 @@ class GetIdTokenIdTokenBody:
     }
 
     def __init__(self, id=None):
-        """GetIdTokenIdTokenBody
+        r"""GetIdTokenIdTokenBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetIdTokenIdTokenBody:
 
     @property
     def id(self):
-        """Gets the id of this GetIdTokenIdTokenBody.
+        r"""Gets the id of this GetIdTokenIdTokenBody.
 
         id_token的值
 
@@ -53,7 +53,7 @@ class GetIdTokenIdTokenBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetIdTokenIdTokenBody.
+        r"""Sets the id of this GetIdTokenIdTokenBody.
 
         id_token的值
 

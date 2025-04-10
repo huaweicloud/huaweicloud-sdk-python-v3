@@ -27,7 +27,7 @@ class ListDimensionGroupsResultDataValue:
     }
 
     def __init__(self, main_table=None, dimension_tables=None):
-        """ListDimensionGroupsResultDataValue
+        r"""ListDimensionGroupsResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDimensionGroupsResultDataValue:
 
     @property
     def main_table(self):
-        """Gets the main_table of this ListDimensionGroupsResultDataValue.
+        r"""Gets the main_table of this ListDimensionGroupsResultDataValue.
 
         :return: The main_table of this ListDimensionGroupsResultDataValue.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.FactLogicTableVO`
@@ -59,7 +59,7 @@ class ListDimensionGroupsResultDataValue:
 
     @main_table.setter
     def main_table(self, main_table):
-        """Sets the main_table of this ListDimensionGroupsResultDataValue.
+        r"""Sets the main_table of this ListDimensionGroupsResultDataValue.
 
         :param main_table: The main_table of this ListDimensionGroupsResultDataValue.
         :type main_table: :class:`huaweicloudsdkdataartsstudio.v1.FactLogicTableVO`
@@ -68,7 +68,7 @@ class ListDimensionGroupsResultDataValue:
 
     @property
     def dimension_tables(self):
-        """Gets the dimension_tables of this ListDimensionGroupsResultDataValue.
+        r"""Gets the dimension_tables of this ListDimensionGroupsResultDataValue.
 
         维度。
 
@@ -79,7 +79,7 @@ class ListDimensionGroupsResultDataValue:
 
     @dimension_tables.setter
     def dimension_tables(self, dimension_tables):
-        """Sets the dimension_tables of this ListDimensionGroupsResultDataValue.
+        r"""Sets the dimension_tables of this ListDimensionGroupsResultDataValue.
 
         维度。
 

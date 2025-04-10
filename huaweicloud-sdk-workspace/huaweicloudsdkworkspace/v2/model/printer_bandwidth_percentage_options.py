@@ -25,7 +25,7 @@ class PrinterBandwidthPercentageOptions:
     }
 
     def __init__(self, printer_bandwidth_percentage_value=None):
-        """PrinterBandwidthPercentageOptions
+        r"""PrinterBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrinterBandwidthPercentageOptions:
 
     @property
     def printer_bandwidth_percentage_value(self):
-        """Gets the printer_bandwidth_percentage_value of this PrinterBandwidthPercentageOptions.
+        r"""Gets the printer_bandwidth_percentage_value of this PrinterBandwidthPercentageOptions.
 
         打印机带宽百分比控制量（%）。取值范围为[0-100]。默认：5。
 
@@ -54,7 +54,7 @@ class PrinterBandwidthPercentageOptions:
 
     @printer_bandwidth_percentage_value.setter
     def printer_bandwidth_percentage_value(self, printer_bandwidth_percentage_value):
-        """Sets the printer_bandwidth_percentage_value of this PrinterBandwidthPercentageOptions.
+        r"""Sets the printer_bandwidth_percentage_value of this PrinterBandwidthPercentageOptions.
 
         打印机带宽百分比控制量（%）。取值范围为[0-100]。默认：5。
 

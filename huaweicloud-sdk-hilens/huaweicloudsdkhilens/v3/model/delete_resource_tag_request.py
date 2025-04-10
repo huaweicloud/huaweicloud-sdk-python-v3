@@ -29,7 +29,7 @@ class DeleteResourceTagRequest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, key=None):
-        """DeleteResourceTagRequest
+        r"""DeleteResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResourceTagRequest.
+        r"""Gets the resource_id of this DeleteResourceTagRequest.
 
         资源ID，不同资源（节点，部署，配置项，密钥）有不同的资源ID
 
@@ -65,7 +65,7 @@ class DeleteResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResourceTagRequest.
+        r"""Sets the resource_id of this DeleteResourceTagRequest.
 
         资源ID，不同资源（节点，部署，配置项，密钥）有不同的资源ID
 
@@ -76,7 +76,7 @@ class DeleteResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteResourceTagRequest.
+        r"""Gets the resource_type of this DeleteResourceTagRequest.
 
         资源类型（节点，部署，配置项，密钥）
 
@@ -87,7 +87,7 @@ class DeleteResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteResourceTagRequest.
+        r"""Sets the resource_type of this DeleteResourceTagRequest.
 
         资源类型（节点，部署，配置项，密钥）
 
@@ -98,7 +98,7 @@ class DeleteResourceTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResourceTagRequest.
+        r"""Gets the key of this DeleteResourceTagRequest.
 
         标签键，最大长度36个字符。不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”
 
@@ -109,7 +109,7 @@ class DeleteResourceTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResourceTagRequest.
+        r"""Sets the key of this DeleteResourceTagRequest.
 
         标签键，最大长度36个字符。不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”
 

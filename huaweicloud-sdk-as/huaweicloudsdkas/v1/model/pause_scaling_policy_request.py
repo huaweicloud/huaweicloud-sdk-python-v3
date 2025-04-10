@@ -27,7 +27,7 @@ class PauseScalingPolicyRequest:
     }
 
     def __init__(self, scaling_policy_id=None, body=None):
-        """PauseScalingPolicyRequest
+        r"""PauseScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PauseScalingPolicyRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this PauseScalingPolicyRequest.
+        r"""Gets the scaling_policy_id of this PauseScalingPolicyRequest.
 
         伸缩策略ID。
 
@@ -60,7 +60,7 @@ class PauseScalingPolicyRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this PauseScalingPolicyRequest.
+        r"""Sets the scaling_policy_id of this PauseScalingPolicyRequest.
 
         伸缩策略ID。
 
@@ -71,7 +71,7 @@ class PauseScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this PauseScalingPolicyRequest.
+        r"""Gets the body of this PauseScalingPolicyRequest.
 
         :return: The body of this PauseScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingPolicyOption`
@@ -80,7 +80,7 @@ class PauseScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PauseScalingPolicyRequest.
+        r"""Sets the body of this PauseScalingPolicyRequest.
 
         :param body: The body of this PauseScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkas.v1.PauseScalingPolicyOption`

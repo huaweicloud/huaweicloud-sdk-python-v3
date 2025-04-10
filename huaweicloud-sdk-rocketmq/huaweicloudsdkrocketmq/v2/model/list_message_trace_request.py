@@ -29,7 +29,7 @@ class ListMessageTraceRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, msg_id=None):
-        """ListMessageTraceRequest
+        r"""ListMessageTraceRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListMessageTraceRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListMessageTraceRequest.
+        r"""Gets the engine of this ListMessageTraceRequest.
 
         消息引擎。
 
@@ -65,7 +65,7 @@ class ListMessageTraceRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListMessageTraceRequest.
+        r"""Sets the engine of this ListMessageTraceRequest.
 
         消息引擎。
 
@@ -76,7 +76,7 @@ class ListMessageTraceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMessageTraceRequest.
+        r"""Gets the instance_id of this ListMessageTraceRequest.
 
         实例ID。
 
@@ -87,7 +87,7 @@ class ListMessageTraceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMessageTraceRequest.
+        r"""Sets the instance_id of this ListMessageTraceRequest.
 
         实例ID。
 
@@ -98,7 +98,7 @@ class ListMessageTraceRequest:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this ListMessageTraceRequest.
+        r"""Gets the msg_id of this ListMessageTraceRequest.
 
         消息ID。
 
@@ -109,7 +109,7 @@ class ListMessageTraceRequest:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this ListMessageTraceRequest.
+        r"""Sets the msg_id of this ListMessageTraceRequest.
 
         消息ID。
 

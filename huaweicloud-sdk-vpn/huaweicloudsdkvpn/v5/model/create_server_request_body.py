@@ -25,7 +25,7 @@ class CreateServerRequestBody:
     }
 
     def __init__(self, vpn_server=None):
-        """CreateServerRequestBody
+        r"""CreateServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateServerRequestBody:
 
     @property
     def vpn_server(self):
-        """Gets the vpn_server of this CreateServerRequestBody.
+        r"""Gets the vpn_server of this CreateServerRequestBody.
 
         :return: The vpn_server of this CreateServerRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateServerRequest`
@@ -51,7 +51,7 @@ class CreateServerRequestBody:
 
     @vpn_server.setter
     def vpn_server(self, vpn_server):
-        """Sets the vpn_server of this CreateServerRequestBody.
+        r"""Sets the vpn_server of this CreateServerRequestBody.
 
         :param vpn_server: The vpn_server of this CreateServerRequestBody.
         :type vpn_server: :class:`huaweicloudsdkvpn.v5.CreateServerRequest`

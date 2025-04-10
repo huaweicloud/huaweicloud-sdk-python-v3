@@ -32,7 +32,7 @@ class ListSimSmScenariosResponse(SdkResponse):
     }
 
     def __init__(self, count=None, next=None, previous=None, results=None):
-        """ListSimSmScenariosResponse
+        r"""ListSimSmScenariosResponse
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSimSmScenariosResponse.
+        r"""Gets the count of this ListSimSmScenariosResponse.
 
         :return: The count of this ListSimSmScenariosResponse.
         :rtype: int
@@ -72,7 +72,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSimSmScenariosResponse.
+        r"""Sets the count of this ListSimSmScenariosResponse.
 
         :param count: The count of this ListSimSmScenariosResponse.
         :type count: int
@@ -81,7 +81,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @property
     def next(self):
-        """Gets the next of this ListSimSmScenariosResponse.
+        r"""Gets the next of this ListSimSmScenariosResponse.
 
         :return: The next of this ListSimSmScenariosResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @next.setter
     def next(self, next):
-        """Sets the next of this ListSimSmScenariosResponse.
+        r"""Sets the next of this ListSimSmScenariosResponse.
 
         :param next: The next of this ListSimSmScenariosResponse.
         :type next: str
@@ -99,7 +99,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @property
     def previous(self):
-        """Gets the previous of this ListSimSmScenariosResponse.
+        r"""Gets the previous of this ListSimSmScenariosResponse.
 
         :return: The previous of this ListSimSmScenariosResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @previous.setter
     def previous(self, previous):
-        """Sets the previous of this ListSimSmScenariosResponse.
+        r"""Sets the previous of this ListSimSmScenariosResponse.
 
         :param previous: The previous of this ListSimSmScenariosResponse.
         :type previous: str
@@ -117,7 +117,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListSimSmScenariosResponse.
+        r"""Gets the results of this ListSimSmScenariosResponse.
 
         :return: The results of this ListSimSmScenariosResponse.
         :rtype: list[:class:`huaweicloudsdkoctopus.v2.ScenarioListSrlz`]
@@ -126,7 +126,7 @@ class ListSimSmScenariosResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListSimSmScenariosResponse.
+        r"""Sets the results of this ListSimSmScenariosResponse.
 
         :param results: The results of this ListSimSmScenariosResponse.
         :type results: list[:class:`huaweicloudsdkoctopus.v2.ScenarioListSrlz`]

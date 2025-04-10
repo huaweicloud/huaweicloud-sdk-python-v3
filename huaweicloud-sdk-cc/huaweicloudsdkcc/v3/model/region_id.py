@@ -25,7 +25,7 @@ class RegionId:
     }
 
     def __init__(self, region_id=None):
-        """RegionId
+        r"""RegionId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegionId:
 
     @property
     def region_id(self):
-        """Gets the region_id of this RegionId.
+        r"""Gets the region_id of this RegionId.
 
         RegionID。
 
@@ -53,7 +53,7 @@ class RegionId:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this RegionId.
+        r"""Sets the region_id of this RegionId.
 
         RegionID。
 

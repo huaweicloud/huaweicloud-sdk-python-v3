@@ -23,7 +23,7 @@ class ShowAgreementRuleRequest:
     }
 
     def __init__(self):
-        """ShowAgreementRuleRequest
+        r"""ShowAgreementRuleRequest
 
         The model defined in huaweicloud sdk
 

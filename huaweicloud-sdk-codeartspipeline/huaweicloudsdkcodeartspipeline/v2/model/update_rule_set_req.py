@@ -27,7 +27,7 @@ class UpdateRuleSetReq:
     }
 
     def __init__(self, name=None, rules=None):
-        """UpdateRuleSetReq
+        r"""UpdateRuleSetReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateRuleSetReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRuleSetReq.
+        r"""Gets the name of this UpdateRuleSetReq.
 
         规则模版实例名称
 
@@ -60,7 +60,7 @@ class UpdateRuleSetReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRuleSetReq.
+        r"""Sets the name of this UpdateRuleSetReq.
 
         规则模版实例名称
 
@@ -71,7 +71,7 @@ class UpdateRuleSetReq:
 
     @property
     def rules(self):
-        """Gets the rules of this UpdateRuleSetReq.
+        r"""Gets the rules of this UpdateRuleSetReq.
 
         规则实例列表
 
@@ -82,7 +82,7 @@ class UpdateRuleSetReq:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this UpdateRuleSetReq.
+        r"""Sets the rules of this UpdateRuleSetReq.
 
         规则实例列表
 

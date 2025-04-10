@@ -27,7 +27,7 @@ class TagsPojo:
     }
 
     def __init__(self, key=None, value=None):
-        """TagsPojo
+        r"""TagsPojo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagsPojo:
 
     @property
     def key(self):
-        """Gets the key of this TagsPojo.
+        r"""Gets the key of this TagsPojo.
 
         标签key
 
@@ -61,7 +61,7 @@ class TagsPojo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagsPojo.
+        r"""Sets the key of this TagsPojo.
 
         标签key
 
@@ -72,7 +72,7 @@ class TagsPojo:
 
     @property
     def value(self):
-        """Gets the value of this TagsPojo.
+        r"""Gets the value of this TagsPojo.
 
         标签value
 
@@ -83,7 +83,7 @@ class TagsPojo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagsPojo.
+        r"""Sets the value of this TagsPojo.
 
         标签value
 

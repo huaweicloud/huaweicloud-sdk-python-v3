@@ -71,7 +71,7 @@ class AtomicIndexVO:
     }
 
     def __init__(self, id=None, name_en=None, name_ch=None, description=None, create_by=None, cal_exp=None, cal_fn_ids=None, l1_id=None, l2_id=None, l3_id=None, table_id=None, tb_name=None, dw_type=None, field_ids=None, field_names=None, status=None, biz_type=None, create_time=None, update_time=None, l1=None, l2=None, l3=None, approval_info=None, new_biz=None):
-        """AtomicIndexVO
+        r"""AtomicIndexVO
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class AtomicIndexVO:
 
     @property
     def id(self):
-        """Gets the id of this AtomicIndexVO.
+        r"""Gets the id of this AtomicIndexVO.
 
         编码，ID字符串。
 
@@ -209,7 +209,7 @@ class AtomicIndexVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AtomicIndexVO.
+        r"""Sets the id of this AtomicIndexVO.
 
         编码，ID字符串。
 
@@ -220,7 +220,7 @@ class AtomicIndexVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this AtomicIndexVO.
+        r"""Gets the name_en of this AtomicIndexVO.
 
         原子指标英文名。
 
@@ -231,7 +231,7 @@ class AtomicIndexVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this AtomicIndexVO.
+        r"""Sets the name_en of this AtomicIndexVO.
 
         原子指标英文名。
 
@@ -242,7 +242,7 @@ class AtomicIndexVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this AtomicIndexVO.
+        r"""Gets the name_ch of this AtomicIndexVO.
 
         原子指标英文名。
 
@@ -253,7 +253,7 @@ class AtomicIndexVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this AtomicIndexVO.
+        r"""Sets the name_ch of this AtomicIndexVO.
 
         原子指标英文名。
 
@@ -264,7 +264,7 @@ class AtomicIndexVO:
 
     @property
     def description(self):
-        """Gets the description of this AtomicIndexVO.
+        r"""Gets the description of this AtomicIndexVO.
 
         描述。
 
@@ -275,7 +275,7 @@ class AtomicIndexVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AtomicIndexVO.
+        r"""Sets the description of this AtomicIndexVO.
 
         描述。
 
@@ -286,7 +286,7 @@ class AtomicIndexVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this AtomicIndexVO.
+        r"""Gets the create_by of this AtomicIndexVO.
 
         创建人。
 
@@ -297,7 +297,7 @@ class AtomicIndexVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this AtomicIndexVO.
+        r"""Sets the create_by of this AtomicIndexVO.
 
         创建人。
 
@@ -308,7 +308,7 @@ class AtomicIndexVO:
 
     @property
     def cal_exp(self):
-        """Gets the cal_exp of this AtomicIndexVO.
+        r"""Gets the cal_exp of this AtomicIndexVO.
 
         计算表达式，形如'sum(${fact_column_id})'，其中fact_column_id表示引用事实表中的字段ID
 
@@ -319,7 +319,7 @@ class AtomicIndexVO:
 
     @cal_exp.setter
     def cal_exp(self, cal_exp):
-        """Sets the cal_exp of this AtomicIndexVO.
+        r"""Sets the cal_exp of this AtomicIndexVO.
 
         计算表达式，形如'sum(${fact_column_id})'，其中fact_column_id表示引用事实表中的字段ID
 
@@ -330,7 +330,7 @@ class AtomicIndexVO:
 
     @property
     def cal_fn_ids(self):
-        """Gets the cal_fn_ids of this AtomicIndexVO.
+        r"""Gets the cal_fn_ids of this AtomicIndexVO.
 
         引用函数ID，ID字符串。
 
@@ -341,7 +341,7 @@ class AtomicIndexVO:
 
     @cal_fn_ids.setter
     def cal_fn_ids(self, cal_fn_ids):
-        """Sets the cal_fn_ids of this AtomicIndexVO.
+        r"""Sets the cal_fn_ids of this AtomicIndexVO.
 
         引用函数ID，ID字符串。
 
@@ -352,7 +352,7 @@ class AtomicIndexVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this AtomicIndexVO.
+        r"""Gets the l1_id of this AtomicIndexVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -363,7 +363,7 @@ class AtomicIndexVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this AtomicIndexVO.
+        r"""Sets the l1_id of this AtomicIndexVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -374,7 +374,7 @@ class AtomicIndexVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this AtomicIndexVO.
+        r"""Gets the l2_id of this AtomicIndexVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -385,7 +385,7 @@ class AtomicIndexVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this AtomicIndexVO.
+        r"""Sets the l2_id of this AtomicIndexVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -396,7 +396,7 @@ class AtomicIndexVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this AtomicIndexVO.
+        r"""Gets the l3_id of this AtomicIndexVO.
 
         业务对象guid，ID字符串。
 
@@ -407,7 +407,7 @@ class AtomicIndexVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this AtomicIndexVO.
+        r"""Sets the l3_id of this AtomicIndexVO.
 
         业务对象guid，ID字符串。
 
@@ -418,7 +418,7 @@ class AtomicIndexVO:
 
     @property
     def table_id(self):
-        """Gets the table_id of this AtomicIndexVO.
+        r"""Gets the table_id of this AtomicIndexVO.
 
         事实表ID，ID字符串。
 
@@ -429,7 +429,7 @@ class AtomicIndexVO:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this AtomicIndexVO.
+        r"""Sets the table_id of this AtomicIndexVO.
 
         事实表ID，ID字符串。
 
@@ -440,7 +440,7 @@ class AtomicIndexVO:
 
     @property
     def tb_name(self):
-        """Gets the tb_name of this AtomicIndexVO.
+        r"""Gets the tb_name of this AtomicIndexVO.
 
         事实表名称。
 
@@ -451,7 +451,7 @@ class AtomicIndexVO:
 
     @tb_name.setter
     def tb_name(self, tb_name):
-        """Sets the tb_name of this AtomicIndexVO.
+        r"""Sets the tb_name of this AtomicIndexVO.
 
         事实表名称。
 
@@ -462,7 +462,7 @@ class AtomicIndexVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this AtomicIndexVO.
+        r"""Gets the dw_type of this AtomicIndexVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -473,7 +473,7 @@ class AtomicIndexVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this AtomicIndexVO.
+        r"""Sets the dw_type of this AtomicIndexVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -484,7 +484,7 @@ class AtomicIndexVO:
 
     @property
     def field_ids(self):
-        """Gets the field_ids of this AtomicIndexVO.
+        r"""Gets the field_ids of this AtomicIndexVO.
 
         字段ID信息，ID字符串。
 
@@ -495,7 +495,7 @@ class AtomicIndexVO:
 
     @field_ids.setter
     def field_ids(self, field_ids):
-        """Sets the field_ids of this AtomicIndexVO.
+        r"""Sets the field_ids of this AtomicIndexVO.
 
         字段ID信息，ID字符串。
 
@@ -506,7 +506,7 @@ class AtomicIndexVO:
 
     @property
     def field_names(self):
-        """Gets the field_names of this AtomicIndexVO.
+        r"""Gets the field_names of this AtomicIndexVO.
 
         字段名称信息。
 
@@ -517,7 +517,7 @@ class AtomicIndexVO:
 
     @field_names.setter
     def field_names(self, field_names):
-        """Sets the field_names of this AtomicIndexVO.
+        r"""Sets the field_names of this AtomicIndexVO.
 
         字段名称信息。
 
@@ -528,7 +528,7 @@ class AtomicIndexVO:
 
     @property
     def status(self):
-        """Gets the status of this AtomicIndexVO.
+        r"""Gets the status of this AtomicIndexVO.
 
         :return: The status of this AtomicIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -537,7 +537,7 @@ class AtomicIndexVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AtomicIndexVO.
+        r"""Sets the status of this AtomicIndexVO.
 
         :param status: The status of this AtomicIndexVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -546,7 +546,7 @@ class AtomicIndexVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this AtomicIndexVO.
+        r"""Gets the biz_type of this AtomicIndexVO.
 
         :return: The biz_type of this AtomicIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -555,7 +555,7 @@ class AtomicIndexVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this AtomicIndexVO.
+        r"""Sets the biz_type of this AtomicIndexVO.
 
         :param biz_type: The biz_type of this AtomicIndexVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -564,7 +564,7 @@ class AtomicIndexVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AtomicIndexVO.
+        r"""Gets the create_time of this AtomicIndexVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -575,7 +575,7 @@ class AtomicIndexVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AtomicIndexVO.
+        r"""Sets the create_time of this AtomicIndexVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -586,7 +586,7 @@ class AtomicIndexVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AtomicIndexVO.
+        r"""Gets the update_time of this AtomicIndexVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -597,7 +597,7 @@ class AtomicIndexVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AtomicIndexVO.
+        r"""Sets the update_time of this AtomicIndexVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -608,7 +608,7 @@ class AtomicIndexVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this AtomicIndexVO.
+        r"""Gets the l1 of this AtomicIndexVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -619,7 +619,7 @@ class AtomicIndexVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this AtomicIndexVO.
+        r"""Sets the l1 of this AtomicIndexVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -630,7 +630,7 @@ class AtomicIndexVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this AtomicIndexVO.
+        r"""Gets the l2 of this AtomicIndexVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -641,7 +641,7 @@ class AtomicIndexVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this AtomicIndexVO.
+        r"""Sets the l2 of this AtomicIndexVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -652,7 +652,7 @@ class AtomicIndexVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this AtomicIndexVO.
+        r"""Gets the l3 of this AtomicIndexVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -663,7 +663,7 @@ class AtomicIndexVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this AtomicIndexVO.
+        r"""Sets the l3 of this AtomicIndexVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -674,7 +674,7 @@ class AtomicIndexVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this AtomicIndexVO.
+        r"""Gets the approval_info of this AtomicIndexVO.
 
         :return: The approval_info of this AtomicIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -683,7 +683,7 @@ class AtomicIndexVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this AtomicIndexVO.
+        r"""Sets the approval_info of this AtomicIndexVO.
 
         :param approval_info: The approval_info of this AtomicIndexVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -692,7 +692,7 @@ class AtomicIndexVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this AtomicIndexVO.
+        r"""Gets the new_biz of this AtomicIndexVO.
 
         :return: The new_biz of this AtomicIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -701,7 +701,7 @@ class AtomicIndexVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this AtomicIndexVO.
+        r"""Sets the new_biz of this AtomicIndexVO.
 
         :param new_biz: The new_biz of this AtomicIndexVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`

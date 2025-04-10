@@ -33,7 +33,7 @@ class EncryptDataNodes:
     }
 
     def __init__(self, id=None, state=None, name=None, host_name=None, host_ips=None):
-        """EncryptDataNodes
+        r"""EncryptDataNodes
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class EncryptDataNodes:
 
     @property
     def id(self):
-        """Gets the id of this EncryptDataNodes.
+        r"""Gets the id of this EncryptDataNodes.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class EncryptDataNodes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EncryptDataNodes.
+        r"""Sets the id of this EncryptDataNodes.
 
         边缘节点ID
 
@@ -88,7 +88,7 @@ class EncryptDataNodes:
 
     @property
     def state(self):
-        """Gets the state of this EncryptDataNodes.
+        r"""Gets the state of this EncryptDataNodes.
 
         边缘节点状态
 
@@ -99,7 +99,7 @@ class EncryptDataNodes:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this EncryptDataNodes.
+        r"""Sets the state of this EncryptDataNodes.
 
         边缘节点状态
 
@@ -110,7 +110,7 @@ class EncryptDataNodes:
 
     @property
     def name(self):
-        """Gets the name of this EncryptDataNodes.
+        r"""Gets the name of this EncryptDataNodes.
 
         边缘节点名称
 
@@ -121,7 +121,7 @@ class EncryptDataNodes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EncryptDataNodes.
+        r"""Sets the name of this EncryptDataNodes.
 
         边缘节点名称
 
@@ -132,7 +132,7 @@ class EncryptDataNodes:
 
     @property
     def host_name(self):
-        """Gets the host_name of this EncryptDataNodes.
+        r"""Gets the host_name of this EncryptDataNodes.
 
         边缘节点主机名
 
@@ -143,7 +143,7 @@ class EncryptDataNodes:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this EncryptDataNodes.
+        r"""Sets the host_name of this EncryptDataNodes.
 
         边缘节点主机名
 
@@ -154,7 +154,7 @@ class EncryptDataNodes:
 
     @property
     def host_ips(self):
-        """Gets the host_ips of this EncryptDataNodes.
+        r"""Gets the host_ips of this EncryptDataNodes.
 
         边缘节点主机IP地址列表
 
@@ -165,7 +165,7 @@ class EncryptDataNodes:
 
     @host_ips.setter
     def host_ips(self, host_ips):
-        """Sets the host_ips of this EncryptDataNodes.
+        r"""Sets the host_ips of this EncryptDataNodes.
 
         边缘节点主机IP地址列表
 

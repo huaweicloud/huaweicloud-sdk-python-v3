@@ -27,7 +27,7 @@ class CreateAppGroupsRequestBody:
     }
 
     def __init__(self, name=None, parent_id=None):
-        """CreateAppGroupsRequestBody
+        r"""CreateAppGroupsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAppGroupsRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateAppGroupsRequestBody.
+        r"""Gets the name of this CreateAppGroupsRequestBody.
 
         分组名称
 
@@ -60,7 +60,7 @@ class CreateAppGroupsRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAppGroupsRequestBody.
+        r"""Sets the name of this CreateAppGroupsRequestBody.
 
         分组名称
 
@@ -71,7 +71,7 @@ class CreateAppGroupsRequestBody:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateAppGroupsRequestBody.
+        r"""Gets the parent_id of this CreateAppGroupsRequestBody.
 
         父分组id
 
@@ -82,7 +82,7 @@ class CreateAppGroupsRequestBody:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateAppGroupsRequestBody.
+        r"""Sets the parent_id of this CreateAppGroupsRequestBody.
 
         父分组id
 

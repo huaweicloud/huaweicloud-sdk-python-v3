@@ -36,7 +36,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
     }
 
     def __init__(self, total_page=None, total_num=None, offset=None, limit=None, request_id=None, streams=None):
-        """ListLiveStreamsOnlineResponse
+        r"""ListLiveStreamsOnlineResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ListLiveStreamsOnlineResponse.
+        r"""Gets the total_page of this ListLiveStreamsOnlineResponse.
 
         总条页数
 
@@ -90,7 +90,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ListLiveStreamsOnlineResponse.
+        r"""Sets the total_page of this ListLiveStreamsOnlineResponse.
 
         总条页数
 
@@ -101,7 +101,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListLiveStreamsOnlineResponse.
+        r"""Gets the total_num of this ListLiveStreamsOnlineResponse.
 
         总条目数
 
@@ -112,7 +112,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListLiveStreamsOnlineResponse.
+        r"""Sets the total_num of this ListLiveStreamsOnlineResponse.
 
         总条目数
 
@@ -123,7 +123,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListLiveStreamsOnlineResponse.
+        r"""Gets the offset of this ListLiveStreamsOnlineResponse.
 
         偏移量
 
@@ -134,7 +134,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLiveStreamsOnlineResponse.
+        r"""Sets the offset of this ListLiveStreamsOnlineResponse.
 
         偏移量
 
@@ -145,7 +145,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListLiveStreamsOnlineResponse.
+        r"""Gets the limit of this ListLiveStreamsOnlineResponse.
 
         每页条目数
 
@@ -156,7 +156,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLiveStreamsOnlineResponse.
+        r"""Sets the limit of this ListLiveStreamsOnlineResponse.
 
         每页条目数
 
@@ -167,7 +167,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListLiveStreamsOnlineResponse.
+        r"""Gets the request_id of this ListLiveStreamsOnlineResponse.
 
         请求唯一标识
 
@@ -178,7 +178,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListLiveStreamsOnlineResponse.
+        r"""Sets the request_id of this ListLiveStreamsOnlineResponse.
 
         请求唯一标识
 
@@ -189,7 +189,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @property
     def streams(self):
-        """Gets the streams of this ListLiveStreamsOnlineResponse.
+        r"""Gets the streams of this ListLiveStreamsOnlineResponse.
 
         推流统计
 
@@ -200,7 +200,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
 
     @streams.setter
     def streams(self, streams):
-        """Sets the streams of this ListLiveStreamsOnlineResponse.
+        r"""Sets the streams of this ListLiveStreamsOnlineResponse.
 
         推流统计
 

@@ -25,7 +25,7 @@ class UpdateSiteConnectionBandwidthSizeRequestBody:
     }
 
     def __init__(self, site_connection=None):
-        """UpdateSiteConnectionBandwidthSizeRequestBody
+        r"""UpdateSiteConnectionBandwidthSizeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSiteConnectionBandwidthSizeRequestBody:
 
     @property
     def site_connection(self):
-        """Gets the site_connection of this UpdateSiteConnectionBandwidthSizeRequestBody.
+        r"""Gets the site_connection of this UpdateSiteConnectionBandwidthSizeRequestBody.
 
         :return: The site_connection of this UpdateSiteConnectionBandwidthSizeRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthSize`
@@ -51,7 +51,7 @@ class UpdateSiteConnectionBandwidthSizeRequestBody:
 
     @site_connection.setter
     def site_connection(self, site_connection):
-        """Sets the site_connection of this UpdateSiteConnectionBandwidthSizeRequestBody.
+        r"""Sets the site_connection of this UpdateSiteConnectionBandwidthSizeRequestBody.
 
         :param site_connection: The site_connection of this UpdateSiteConnectionBandwidthSizeRequestBody.
         :type site_connection: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthSize`

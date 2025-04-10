@@ -29,7 +29,7 @@ class ActiveDTO:
     }
 
     def __init__(self, sms_number=None, country=None, email_addr=None):
-        """ActiveDTO
+        r"""ActiveDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ActiveDTO:
 
     @property
     def sms_number(self):
-        """Gets the sms_number of this ActiveDTO.
+        r"""Gets the sms_number of this ActiveDTO.
 
         手机号。 例如中国大陆手机+86xxxxxxxxxxx。当填写手机号时 “country”参数必填。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
@@ -68,7 +68,7 @@ class ActiveDTO:
 
     @sms_number.setter
     def sms_number(self, sms_number):
-        """Sets the sms_number of this ActiveDTO.
+        r"""Sets the sms_number of this ActiveDTO.
 
         手机号。 例如中国大陆手机+86xxxxxxxxxxx。当填写手机号时 “country”参数必填。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
@@ -79,7 +79,7 @@ class ActiveDTO:
 
     @property
     def country(self):
-        """Gets the country of this ActiveDTO.
+        r"""Gets the country of this ActiveDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -90,7 +90,7 @@ class ActiveDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ActiveDTO.
+        r"""Sets the country of this ActiveDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -101,7 +101,7 @@ class ActiveDTO:
 
     @property
     def email_addr(self):
-        """Gets the email_addr of this ActiveDTO.
+        r"""Gets the email_addr of this ActiveDTO.
 
         邮件地址。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
@@ -112,7 +112,7 @@ class ActiveDTO:
 
     @email_addr.setter
     def email_addr(self, email_addr):
-        """Sets the email_addr of this ActiveDTO.
+        r"""Sets the email_addr of this ActiveDTO.
 
         邮件地址。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 

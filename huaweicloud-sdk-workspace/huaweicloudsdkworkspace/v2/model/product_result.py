@@ -57,7 +57,7 @@ class ProductResult:
     }
 
     def __init__(self, id=None, product_id=None, amount=None, discount_amount=None, original_amount=None, official_website_amount=None, official_website_discount_amount=None, optional_discount_amount=None, per_amount=None, per_discount_amount=None, per_original_amount=None, per_official_website_amount=None, per_official_website_discount_amount=None, per_optional_discount_amount=None, per_period_type=None, measure_id=None, extend_params=None):
-        """ProductResult
+        r"""ProductResult
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ProductResult:
 
     @property
     def id(self):
-        """Gets the id of this ProductResult.
+        r"""Gets the id of this ProductResult.
 
         对应请求体中的ID
 
@@ -166,7 +166,7 @@ class ProductResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProductResult.
+        r"""Sets the id of this ProductResult.
 
         对应请求体中的ID
 
@@ -177,7 +177,7 @@ class ProductResult:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductResult.
+        r"""Gets the product_id of this ProductResult.
 
         产品ID
 
@@ -188,7 +188,7 @@ class ProductResult:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductResult.
+        r"""Sets the product_id of this ProductResult.
 
         产品ID
 
@@ -199,7 +199,7 @@ class ProductResult:
 
     @property
     def amount(self):
-        """Gets the amount of this ProductResult.
+        r"""Gets the amount of this ProductResult.
 
         总额，即最终优惠后的金额(预留实例只包含预付部分)
 
@@ -210,7 +210,7 @@ class ProductResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ProductResult.
+        r"""Sets the amount of this ProductResult.
 
         总额，即最终优惠后的金额(预留实例只包含预付部分)
 
@@ -221,7 +221,7 @@ class ProductResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this ProductResult.
+        r"""Gets the discount_amount of this ProductResult.
 
         优惠额(预留实例只包含预付部分)
 
@@ -232,7 +232,7 @@ class ProductResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this ProductResult.
+        r"""Sets the discount_amount of this ProductResult.
 
         优惠额(预留实例只包含预付部分)
 
@@ -243,7 +243,7 @@ class ProductResult:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this ProductResult.
+        r"""Gets the original_amount of this ProductResult.
 
         原总额，即优惠前总额(预留实例只包含预付部分)
 
@@ -254,7 +254,7 @@ class ProductResult:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this ProductResult.
+        r"""Sets the original_amount of this ProductResult.
 
         原总额，即优惠前总额(预留实例只包含预付部分)
 
@@ -265,7 +265,7 @@ class ProductResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this ProductResult.
+        r"""Gets the official_website_amount of this ProductResult.
 
         官网价（非所有接口有该字段）(预留实例只包含预付部分)
 
@@ -276,7 +276,7 @@ class ProductResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this ProductResult.
+        r"""Sets the official_website_amount of this ProductResult.
 
         官网价（非所有接口有该字段）(预留实例只包含预付部分)
 
@@ -287,7 +287,7 @@ class ProductResult:
 
     @property
     def official_website_discount_amount(self):
-        """Gets the official_website_discount_amount of this ProductResult.
+        r"""Gets the official_website_discount_amount of this ProductResult.
 
         官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)
 
@@ -298,7 +298,7 @@ class ProductResult:
 
     @official_website_discount_amount.setter
     def official_website_discount_amount(self, official_website_discount_amount):
-        """Sets the official_website_discount_amount of this ProductResult.
+        r"""Sets the official_website_discount_amount of this ProductResult.
 
         官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)
 
@@ -309,7 +309,7 @@ class ProductResult:
 
     @property
     def optional_discount_amount(self):
-        """Gets the optional_discount_amount of this ProductResult.
+        r"""Gets the optional_discount_amount of this ProductResult.
 
         可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）
 
@@ -320,7 +320,7 @@ class ProductResult:
 
     @optional_discount_amount.setter
     def optional_discount_amount(self, optional_discount_amount):
-        """Sets the optional_discount_amount of this ProductResult.
+        r"""Sets the optional_discount_amount of this ProductResult.
 
         可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）
 
@@ -331,7 +331,7 @@ class ProductResult:
 
     @property
     def per_amount(self):
-        """Gets the per_amount of this ProductResult.
+        r"""Gets the per_amount of this ProductResult.
 
         总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
 
@@ -342,7 +342,7 @@ class ProductResult:
 
     @per_amount.setter
     def per_amount(self, per_amount):
-        """Sets the per_amount of this ProductResult.
+        r"""Sets the per_amount of this ProductResult.
 
         总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
 
@@ -353,7 +353,7 @@ class ProductResult:
 
     @property
     def per_discount_amount(self):
-        """Gets the per_discount_amount of this ProductResult.
+        r"""Gets the per_discount_amount of this ProductResult.
 
         总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
 
@@ -364,7 +364,7 @@ class ProductResult:
 
     @per_discount_amount.setter
     def per_discount_amount(self, per_discount_amount):
-        """Sets the per_discount_amount of this ProductResult.
+        r"""Sets the per_discount_amount of this ProductResult.
 
         总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
 
@@ -375,7 +375,7 @@ class ProductResult:
 
     @property
     def per_original_amount(self):
-        """Gets the per_original_amount of this ProductResult.
+        r"""Gets the per_original_amount of this ProductResult.
 
         总分期金额原价
 
@@ -386,7 +386,7 @@ class ProductResult:
 
     @per_original_amount.setter
     def per_original_amount(self, per_original_amount):
-        """Sets the per_original_amount of this ProductResult.
+        r"""Sets the per_original_amount of this ProductResult.
 
         总分期金额原价
 
@@ -397,7 +397,7 @@ class ProductResult:
 
     @property
     def per_official_website_amount(self):
-        """Gets the per_official_website_amount of this ProductResult.
+        r"""Gets the per_official_website_amount of this ProductResult.
 
         分期金额的官网价
 
@@ -408,7 +408,7 @@ class ProductResult:
 
     @per_official_website_amount.setter
     def per_official_website_amount(self, per_official_website_amount):
-        """Sets the per_official_website_amount of this ProductResult.
+        r"""Sets the per_official_website_amount of this ProductResult.
 
         分期金额的官网价
 
@@ -419,7 +419,7 @@ class ProductResult:
 
     @property
     def per_official_website_discount_amount(self):
-        """Gets the per_official_website_discount_amount of this ProductResult.
+        r"""Gets the per_official_website_discount_amount of this ProductResult.
 
         分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount
 
@@ -430,7 +430,7 @@ class ProductResult:
 
     @per_official_website_discount_amount.setter
     def per_official_website_discount_amount(self, per_official_website_discount_amount):
-        """Sets the per_official_website_discount_amount of this ProductResult.
+        r"""Sets the per_official_website_discount_amount of this ProductResult.
 
         分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount
 
@@ -441,7 +441,7 @@ class ProductResult:
 
     @property
     def per_optional_discount_amount(self):
-        """Gets the per_optional_discount_amount of this ProductResult.
+        r"""Gets the per_optional_discount_amount of this ProductResult.
 
         分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount
 
@@ -452,7 +452,7 @@ class ProductResult:
 
     @per_optional_discount_amount.setter
     def per_optional_discount_amount(self, per_optional_discount_amount):
-        """Sets the per_optional_discount_amount of this ProductResult.
+        r"""Sets the per_optional_discount_amount of this ProductResult.
 
         分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount
 
@@ -463,7 +463,7 @@ class ProductResult:
 
     @property
     def per_period_type(self):
-        """Gets the per_period_type of this ProductResult.
+        r"""Gets the per_period_type of this ProductResult.
 
         分期周期类型 2:月 4:小时
 
@@ -474,7 +474,7 @@ class ProductResult:
 
     @per_period_type.setter
     def per_period_type(self, per_period_type):
-        """Sets the per_period_type of this ProductResult.
+        r"""Sets the per_period_type of this ProductResult.
 
         分期周期类型 2:月 4:小时
 
@@ -485,7 +485,7 @@ class ProductResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ProductResult.
+        r"""Gets the measure_id of this ProductResult.
 
         度量单位
 
@@ -496,7 +496,7 @@ class ProductResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ProductResult.
+        r"""Sets the measure_id of this ProductResult.
 
         度量单位
 
@@ -507,7 +507,7 @@ class ProductResult:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this ProductResult.
+        r"""Gets the extend_params of this ProductResult.
 
         扩展参数
 
@@ -518,7 +518,7 @@ class ProductResult:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this ProductResult.
+        r"""Sets the extend_params of this ProductResult.
 
         扩展参数
 

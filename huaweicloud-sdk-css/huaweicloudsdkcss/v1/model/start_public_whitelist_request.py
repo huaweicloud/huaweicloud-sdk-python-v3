@@ -27,7 +27,7 @@ class StartPublicWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartPublicWhitelistRequest
+        r"""StartPublicWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartPublicWhitelistRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartPublicWhitelistRequest.
+        r"""Gets the cluster_id of this StartPublicWhitelistRequest.
 
         指定开启公网访问控制白名单集群ID。
 
@@ -60,7 +60,7 @@ class StartPublicWhitelistRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartPublicWhitelistRequest.
+        r"""Sets the cluster_id of this StartPublicWhitelistRequest.
 
         指定开启公网访问控制白名单集群ID。
 
@@ -71,7 +71,7 @@ class StartPublicWhitelistRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartPublicWhitelistRequest.
+        r"""Gets the body of this StartPublicWhitelistRequest.
 
         :return: The body of this StartPublicWhitelistRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistReq`
@@ -80,7 +80,7 @@ class StartPublicWhitelistRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartPublicWhitelistRequest.
+        r"""Sets the body of this StartPublicWhitelistRequest.
 
         :param body: The body of this StartPublicWhitelistRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistReq`

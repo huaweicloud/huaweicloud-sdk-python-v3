@@ -27,7 +27,7 @@ class BatchUpdateSecurityDlfDataWareHousesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """BatchUpdateSecurityDlfDataWareHousesRequest
+        r"""BatchUpdateSecurityDlfDataWareHousesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateSecurityDlfDataWareHousesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchUpdateSecurityDlfDataWareHousesRequest.
+        r"""Gets the workspace of this BatchUpdateSecurityDlfDataWareHousesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class BatchUpdateSecurityDlfDataWareHousesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchUpdateSecurityDlfDataWareHousesRequest.
+        r"""Sets the workspace of this BatchUpdateSecurityDlfDataWareHousesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class BatchUpdateSecurityDlfDataWareHousesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateSecurityDlfDataWareHousesRequest.
+        r"""Gets the body of this BatchUpdateSecurityDlfDataWareHousesRequest.
 
         :return: The body of this BatchUpdateSecurityDlfDataWareHousesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.FgacUpdateReq`
@@ -80,7 +80,7 @@ class BatchUpdateSecurityDlfDataWareHousesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateSecurityDlfDataWareHousesRequest.
+        r"""Sets the body of this BatchUpdateSecurityDlfDataWareHousesRequest.
 
         :param body: The body of this BatchUpdateSecurityDlfDataWareHousesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.FgacUpdateReq`

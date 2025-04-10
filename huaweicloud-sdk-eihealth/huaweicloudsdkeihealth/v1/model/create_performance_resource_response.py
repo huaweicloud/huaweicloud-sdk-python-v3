@@ -24,7 +24,7 @@ class CreatePerformanceResourceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreatePerformanceResourceResponse
+        r"""CreatePerformanceResourceResponse
 
         The model defined in huaweicloud sdk
 

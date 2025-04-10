@@ -28,7 +28,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListRiskConfigHostsResponse
+        r"""ListRiskConfigHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListRiskConfigHostsResponse.
+        r"""Gets the total_num of this ListRiskConfigHostsResponse.
 
         受配置检测影响的服务器数据总量
 
@@ -62,7 +62,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListRiskConfigHostsResponse.
+        r"""Sets the total_num of this ListRiskConfigHostsResponse.
 
         受配置检测影响的服务器数据总量
 
@@ -73,7 +73,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListRiskConfigHostsResponse.
+        r"""Gets the data_list of this ListRiskConfigHostsResponse.
 
         数据列表
 
@@ -84,7 +84,7 @@ class ListRiskConfigHostsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListRiskConfigHostsResponse.
+        r"""Sets the data_list of this ListRiskConfigHostsResponse.
 
         数据列表
 

@@ -37,7 +37,7 @@ class ListDesktopOperationsRequest:
     }
 
     def __init__(self, record_id=None, event_type=None, event_id=None, event_level=None, event_data=None, limit=None, offset=None):
-        """ListDesktopOperationsRequest
+        r"""ListDesktopOperationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ListDesktopOperationsRequest.
+        r"""Gets the record_id of this ListDesktopOperationsRequest.
 
         录屏记录UUID。
 
@@ -95,7 +95,7 @@ class ListDesktopOperationsRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ListDesktopOperationsRequest.
+        r"""Sets the record_id of this ListDesktopOperationsRequest.
 
         录屏记录UUID。
 
@@ -106,7 +106,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListDesktopOperationsRequest.
+        r"""Gets the event_type of this ListDesktopOperationsRequest.
 
         事件类型。 - APP：应用监控。 - FILE：文件监控。 - REG：注册表监控。 - HDP：协议行为监控。
 
@@ -117,7 +117,7 @@ class ListDesktopOperationsRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListDesktopOperationsRequest.
+        r"""Sets the event_type of this ListDesktopOperationsRequest.
 
         事件类型。 - APP：应用监控。 - FILE：文件监控。 - REG：注册表监控。 - HDP：协议行为监控。
 
@@ -128,7 +128,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ListDesktopOperationsRequest.
+        r"""Gets the event_id of this ListDesktopOperationsRequest.
 
         事件ID。 - APP_START：应用程序启动 - APP_STOP：应用程序结束 - APP_CRASH：应用程序异常退出 - APP_HANG：应用程序无响应 - APP_INSTALL：应用安装 - APP_UNINSTALL：应用卸裁 - FILE_CREATE：文件创建 - FILE_DELETE：文件删除 - FILE_RENAME：文件改名 - REG_CREATE：注册表创建 - REG_CHANGE：注册表修改 - REG_DELETE：注册表删除 - REG_RENAME：注册表改名 - REG_SETVALUE：注册表设置值 - HDP_USB：USB重定向事件 - HDP_CLIPBOARD：剪切板操作 - HDP_INPUTIDLE：空闲无操作 - HDP_PRINT：文件打印
 
@@ -139,7 +139,7 @@ class ListDesktopOperationsRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ListDesktopOperationsRequest.
+        r"""Sets the event_id of this ListDesktopOperationsRequest.
 
         事件ID。 - APP_START：应用程序启动 - APP_STOP：应用程序结束 - APP_CRASH：应用程序异常退出 - APP_HANG：应用程序无响应 - APP_INSTALL：应用安装 - APP_UNINSTALL：应用卸裁 - FILE_CREATE：文件创建 - FILE_DELETE：文件删除 - FILE_RENAME：文件改名 - REG_CREATE：注册表创建 - REG_CHANGE：注册表修改 - REG_DELETE：注册表删除 - REG_RENAME：注册表改名 - REG_SETVALUE：注册表设置值 - HDP_USB：USB重定向事件 - HDP_CLIPBOARD：剪切板操作 - HDP_INPUTIDLE：空闲无操作 - HDP_PRINT：文件打印
 
@@ -150,7 +150,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def event_level(self):
-        """Gets the event_level of this ListDesktopOperationsRequest.
+        r"""Gets the event_level of this ListDesktopOperationsRequest.
 
         事件级别。 - INFO：提示。 - ALARM：告警。 - ERROR：异常。
 
@@ -161,7 +161,7 @@ class ListDesktopOperationsRequest:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this ListDesktopOperationsRequest.
+        r"""Sets the event_level of this ListDesktopOperationsRequest.
 
         事件级别。 - INFO：提示。 - ALARM：告警。 - ERROR：异常。
 
@@ -172,7 +172,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def event_data(self):
-        """Gets the event_data of this ListDesktopOperationsRequest.
+        r"""Gets the event_data of this ListDesktopOperationsRequest.
 
         事件内容。
 
@@ -183,7 +183,7 @@ class ListDesktopOperationsRequest:
 
     @event_data.setter
     def event_data(self, event_data):
-        """Sets the event_data of this ListDesktopOperationsRequest.
+        r"""Sets the event_data of this ListDesktopOperationsRequest.
 
         事件内容。
 
@@ -194,7 +194,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopOperationsRequest.
+        r"""Gets the limit of this ListDesktopOperationsRequest.
 
         用于分页查询，返回录屏记录数量的限制。默认100。范围0~1000。
 
@@ -205,7 +205,7 @@ class ListDesktopOperationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopOperationsRequest.
+        r"""Sets the limit of this ListDesktopOperationsRequest.
 
         用于分页查询，返回录屏记录数量的限制。默认100。范围0~1000。
 
@@ -216,7 +216,7 @@ class ListDesktopOperationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopOperationsRequest.
+        r"""Gets the offset of this ListDesktopOperationsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -227,7 +227,7 @@ class ListDesktopOperationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopOperationsRequest.
+        r"""Sets the offset of this ListDesktopOperationsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 

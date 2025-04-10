@@ -27,7 +27,7 @@ class ReviewDetail:
     }
 
     def __init__(self, confidence=None, label=None):
-        """ReviewDetail
+        r"""ReviewDetail
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReviewDetail:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ReviewDetail.
+        r"""Gets the confidence of this ReviewDetail.
 
         置信度。  取值范围：[0,1]。
 
@@ -60,7 +60,7 @@ class ReviewDetail:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ReviewDetail.
+        r"""Sets the confidence of this ReviewDetail.
 
         置信度。  取值范围：[0,1]。
 
@@ -71,7 +71,7 @@ class ReviewDetail:
 
     @property
     def label(self):
-        """Gets the label of this ReviewDetail.
+        r"""Gets the label of this ReviewDetail.
 
         每个检测结果的标签化说明。 - politics场景：label为对应的政治人物信息。 - terrorism场景： label为对应的暴恐元素（枪支、刀具、火灾等） 信息。 - porn场景：label为对应的涉黄元素（涉黄、性感等）信息。
 
@@ -82,7 +82,7 @@ class ReviewDetail:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ReviewDetail.
+        r"""Sets the label of this ReviewDetail.
 
         每个检测结果的标签化说明。 - politics场景：label为对应的政治人物信息。 - terrorism场景： label为对应的暴恐元素（枪支、刀具、火灾等） 信息。 - porn场景：label为对应的涉黄元素（涉黄、性感等）信息。
 

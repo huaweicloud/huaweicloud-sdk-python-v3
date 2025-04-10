@@ -26,7 +26,7 @@ class EnableAttributeResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """EnableAttributeResponse
+        r"""EnableAttributeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class EnableAttributeResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this EnableAttributeResponse.
+        r"""Gets the body of this EnableAttributeResponse.
 
         :return: The body of this EnableAttributeResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class EnableAttributeResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableAttributeResponse.
+        r"""Sets the body of this EnableAttributeResponse.
 
         :param body: The body of this EnableAttributeResponse.
         :type body: str

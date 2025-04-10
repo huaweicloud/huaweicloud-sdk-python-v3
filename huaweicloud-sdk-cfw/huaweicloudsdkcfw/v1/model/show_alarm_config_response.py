@@ -28,7 +28,7 @@ class ShowAlarmConfigResponse(SdkResponse):
     }
 
     def __init__(self, alarm_configs=None, data=None):
-        """ShowAlarmConfigResponse
+        r"""ShowAlarmConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAlarmConfigResponse(SdkResponse):
 
     @property
     def alarm_configs(self):
-        """Gets the alarm_configs of this ShowAlarmConfigResponse.
+        r"""Gets the alarm_configs of this ShowAlarmConfigResponse.
 
         告警配置列表
 
@@ -62,7 +62,7 @@ class ShowAlarmConfigResponse(SdkResponse):
 
     @alarm_configs.setter
     def alarm_configs(self, alarm_configs):
-        """Sets the alarm_configs of this ShowAlarmConfigResponse.
+        r"""Sets the alarm_configs of this ShowAlarmConfigResponse.
 
         告警配置列表
 
@@ -73,7 +73,7 @@ class ShowAlarmConfigResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowAlarmConfigResponse.
+        r"""Gets the data of this ShowAlarmConfigResponse.
 
         :return: The data of this ShowAlarmConfigResponse.
         :rtype: object
@@ -82,7 +82,7 @@ class ShowAlarmConfigResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowAlarmConfigResponse.
+        r"""Sets the data of this ShowAlarmConfigResponse.
 
         :param data: The data of this ShowAlarmConfigResponse.
         :type data: object

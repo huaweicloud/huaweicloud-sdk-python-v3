@@ -26,7 +26,7 @@ class ExecutePrivilegeDatabaseUserRoleResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """ExecutePrivilegeDatabaseUserRoleResponse
+        r"""ExecutePrivilegeDatabaseUserRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecutePrivilegeDatabaseUserRoleResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this ExecutePrivilegeDatabaseUserRoleResponse.
+        r"""Gets the resp of this ExecutePrivilegeDatabaseUserRoleResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class ExecutePrivilegeDatabaseUserRoleResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this ExecutePrivilegeDatabaseUserRoleResponse.
+        r"""Sets the resp of this ExecutePrivilegeDatabaseUserRoleResponse.
 
         调用正常时，返回“successful”。
 

@@ -25,7 +25,7 @@ class UploadPublisherIconRequestBody:
     }
 
     def __init__(self, upload_file=None):
-        """UploadPublisherIconRequestBody
+        r"""UploadPublisherIconRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadPublisherIconRequestBody:
 
     @property
     def upload_file(self):
-        """Gets the upload_file of this UploadPublisherIconRequestBody.
+        r"""Gets the upload_file of this UploadPublisherIconRequestBody.
 
         图标文件
 
@@ -53,7 +53,7 @@ class UploadPublisherIconRequestBody:
 
     @upload_file.setter
     def upload_file(self, upload_file):
-        """Sets the upload_file of this UploadPublisherIconRequestBody.
+        r"""Sets the upload_file of this UploadPublisherIconRequestBody.
 
         图标文件
 

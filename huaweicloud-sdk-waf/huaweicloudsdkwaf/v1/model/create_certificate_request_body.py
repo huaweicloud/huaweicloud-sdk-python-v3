@@ -29,7 +29,7 @@ class CreateCertificateRequestBody:
     }
 
     def __init__(self, name=None, content=None, key=None):
-        """CreateCertificateRequestBody
+        r"""CreateCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateCertificateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCertificateRequestBody.
+        r"""Gets the name of this CreateCertificateRequestBody.
 
         证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
 
@@ -65,7 +65,7 @@ class CreateCertificateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCertificateRequestBody.
+        r"""Sets the name of this CreateCertificateRequestBody.
 
         证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
 
@@ -76,7 +76,7 @@ class CreateCertificateRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this CreateCertificateRequestBody.
+        r"""Gets the content of this CreateCertificateRequestBody.
 
         证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
@@ -87,7 +87,7 @@ class CreateCertificateRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateCertificateRequestBody.
+        r"""Sets the content of this CreateCertificateRequestBody.
 
         证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
@@ -98,7 +98,7 @@ class CreateCertificateRequestBody:
 
     @property
     def key(self):
-        """Gets the key of this CreateCertificateRequestBody.
+        r"""Gets the key of this CreateCertificateRequestBody.
 
         证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
@@ -109,7 +109,7 @@ class CreateCertificateRequestBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateCertificateRequestBody.
+        r"""Sets the key of this CreateCertificateRequestBody.
 
         证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 

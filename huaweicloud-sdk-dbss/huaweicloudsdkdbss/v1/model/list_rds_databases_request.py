@@ -29,7 +29,7 @@ class ListRdsDatabasesRequest:
     }
 
     def __init__(self, db_type=None, offset=None, limit=None):
-        """ListRdsDatabasesRequest
+        r"""ListRdsDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListRdsDatabasesRequest:
 
     @property
     def db_type(self):
-        """Gets the db_type of this ListRdsDatabasesRequest.
+        r"""Gets the db_type of this ListRdsDatabasesRequest.
 
         数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
 
@@ -67,7 +67,7 @@ class ListRdsDatabasesRequest:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this ListRdsDatabasesRequest.
+        r"""Sets the db_type of this ListRdsDatabasesRequest.
 
         数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
 
@@ -78,7 +78,7 @@ class ListRdsDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRdsDatabasesRequest.
+        r"""Gets the offset of this ListRdsDatabasesRequest.
 
         偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
 
@@ -89,7 +89,7 @@ class ListRdsDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRdsDatabasesRequest.
+        r"""Sets the offset of this ListRdsDatabasesRequest.
 
         偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
 
@@ -100,7 +100,7 @@ class ListRdsDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRdsDatabasesRequest.
+        r"""Gets the limit of this ListRdsDatabasesRequest.
 
         查询记录数，默认为100。
 
@@ -111,7 +111,7 @@ class ListRdsDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRdsDatabasesRequest.
+        r"""Sets the limit of this ListRdsDatabasesRequest.
 
         查询记录数，默认为100。
 

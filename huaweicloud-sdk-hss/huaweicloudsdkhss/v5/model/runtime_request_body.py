@@ -27,7 +27,7 @@ class RuntimeRequestBody:
     }
 
     def __init__(self, runtime_name=None, runtime_path=None):
-        """RuntimeRequestBody
+        r"""RuntimeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RuntimeRequestBody:
 
     @property
     def runtime_name(self):
-        """Gets the runtime_name of this RuntimeRequestBody.
+        r"""Gets the runtime_name of this RuntimeRequestBody.
 
         运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman
 
@@ -61,7 +61,7 @@ class RuntimeRequestBody:
 
     @runtime_name.setter
     def runtime_name(self, runtime_name):
-        """Sets the runtime_name of this RuntimeRequestBody.
+        r"""Sets the runtime_name of this RuntimeRequestBody.
 
         运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman
 
@@ -72,7 +72,7 @@ class RuntimeRequestBody:
 
     @property
     def runtime_path(self):
-        """Gets the runtime_path of this RuntimeRequestBody.
+        r"""Gets the runtime_path of this RuntimeRequestBody.
 
         运行时路径
 
@@ -83,7 +83,7 @@ class RuntimeRequestBody:
 
     @runtime_path.setter
     def runtime_path(self, runtime_path):
-        """Sets the runtime_path of this RuntimeRequestBody.
+        r"""Sets the runtime_path of this RuntimeRequestBody.
 
         运行时路径
 

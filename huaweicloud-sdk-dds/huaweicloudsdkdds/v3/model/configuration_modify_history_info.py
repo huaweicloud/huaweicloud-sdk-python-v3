@@ -37,7 +37,7 @@ class ConfigurationModifyHistoryInfo:
     }
 
     def __init__(self, parameter_name=None, old_value=None, new_value=None, update_result=None, applied=None, updated_at=None, applied_at=None):
-        """ConfigurationModifyHistoryInfo
+        r"""ConfigurationModifyHistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ConfigurationModifyHistoryInfo.
+        r"""Gets the parameter_name of this ConfigurationModifyHistoryInfo.
 
         参数名称。
 
@@ -89,7 +89,7 @@ class ConfigurationModifyHistoryInfo:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ConfigurationModifyHistoryInfo.
+        r"""Sets the parameter_name of this ConfigurationModifyHistoryInfo.
 
         参数名称。
 
@@ -100,7 +100,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ConfigurationModifyHistoryInfo.
+        r"""Gets the old_value of this ConfigurationModifyHistoryInfo.
 
         修改前的值。
 
@@ -111,7 +111,7 @@ class ConfigurationModifyHistoryInfo:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ConfigurationModifyHistoryInfo.
+        r"""Sets the old_value of this ConfigurationModifyHistoryInfo.
 
         修改前的值。
 
@@ -122,7 +122,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def new_value(self):
-        """Gets the new_value of this ConfigurationModifyHistoryInfo.
+        r"""Gets the new_value of this ConfigurationModifyHistoryInfo.
 
         修改后的值。
 
@@ -133,7 +133,7 @@ class ConfigurationModifyHistoryInfo:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this ConfigurationModifyHistoryInfo.
+        r"""Sets the new_value of this ConfigurationModifyHistoryInfo.
 
         修改后的值。
 
@@ -144,7 +144,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def update_result(self):
-        """Gets the update_result of this ConfigurationModifyHistoryInfo.
+        r"""Gets the update_result of this ConfigurationModifyHistoryInfo.
 
         更新结果。
 
@@ -155,7 +155,7 @@ class ConfigurationModifyHistoryInfo:
 
     @update_result.setter
     def update_result(self, update_result):
-        """Sets the update_result of this ConfigurationModifyHistoryInfo.
+        r"""Sets the update_result of this ConfigurationModifyHistoryInfo.
 
         更新结果。
 
@@ -166,7 +166,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def applied(self):
-        """Gets the applied of this ConfigurationModifyHistoryInfo.
+        r"""Gets the applied of this ConfigurationModifyHistoryInfo.
 
         是否被应用。 - true: 已被应用。 - false: 未被应用。
 
@@ -177,7 +177,7 @@ class ConfigurationModifyHistoryInfo:
 
     @applied.setter
     def applied(self, applied):
-        """Sets the applied of this ConfigurationModifyHistoryInfo.
+        r"""Sets the applied of this ConfigurationModifyHistoryInfo.
 
         是否被应用。 - true: 已被应用。 - false: 未被应用。
 
@@ -188,7 +188,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ConfigurationModifyHistoryInfo.
+        r"""Gets the updated_at of this ConfigurationModifyHistoryInfo.
 
         修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -199,7 +199,7 @@ class ConfigurationModifyHistoryInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ConfigurationModifyHistoryInfo.
+        r"""Sets the updated_at of this ConfigurationModifyHistoryInfo.
 
         修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -210,7 +210,7 @@ class ConfigurationModifyHistoryInfo:
 
     @property
     def applied_at(self):
-        """Gets the applied_at of this ConfigurationModifyHistoryInfo.
+        r"""Gets the applied_at of this ConfigurationModifyHistoryInfo.
 
         应用时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -221,7 +221,7 @@ class ConfigurationModifyHistoryInfo:
 
     @applied_at.setter
     def applied_at(self, applied_at):
-        """Sets the applied_at of this ConfigurationModifyHistoryInfo.
+        r"""Sets the applied_at of this ConfigurationModifyHistoryInfo.
 
         应用时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

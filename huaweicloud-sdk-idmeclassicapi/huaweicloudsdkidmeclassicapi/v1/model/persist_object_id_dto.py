@@ -25,7 +25,7 @@ class PersistObjectIdDTO:
     }
 
     def __init__(self, id=None):
-        """PersistObjectIdDTO
+        r"""PersistObjectIdDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PersistObjectIdDTO:
 
     @property
     def id(self):
-        """Gets the id of this PersistObjectIdDTO.
+        r"""Gets the id of this PersistObjectIdDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -53,7 +53,7 @@ class PersistObjectIdDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersistObjectIdDTO.
+        r"""Sets the id of this PersistObjectIdDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

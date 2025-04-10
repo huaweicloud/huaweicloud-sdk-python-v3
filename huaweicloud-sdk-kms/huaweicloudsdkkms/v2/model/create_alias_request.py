@@ -25,7 +25,7 @@ class CreateAliasRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAliasRequest
+        r"""CreateAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAliasRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAliasRequest.
+        r"""Gets the body of this CreateAliasRequest.
 
         :return: The body of this CreateAliasRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.CreateAliasRequestBody`
@@ -52,7 +52,7 @@ class CreateAliasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAliasRequest.
+        r"""Sets the body of this CreateAliasRequest.
 
         :param body: The body of this CreateAliasRequest.
         :type body: :class:`huaweicloudsdkkms.v2.CreateAliasRequestBody`

@@ -34,7 +34,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """ShowUpgradeWorkFlowResponse
+        r"""ShowUpgradeWorkFlowResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowUpgradeWorkFlowResponse.
+        r"""Gets the kind of this ShowUpgradeWorkFlowResponse.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -83,7 +83,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowUpgradeWorkFlowResponse.
+        r"""Sets the kind of this ShowUpgradeWorkFlowResponse.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -94,7 +94,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowUpgradeWorkFlowResponse.
+        r"""Gets the api_version of this ShowUpgradeWorkFlowResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -105,7 +105,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowUpgradeWorkFlowResponse.
+        r"""Sets the api_version of this ShowUpgradeWorkFlowResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -116,7 +116,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowUpgradeWorkFlowResponse.
+        r"""Gets the metadata of this ShowUpgradeWorkFlowResponse.
 
         :return: The metadata of this ShowUpgradeWorkFlowResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -125,7 +125,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowUpgradeWorkFlowResponse.
+        r"""Sets the metadata of this ShowUpgradeWorkFlowResponse.
 
         :param metadata: The metadata of this ShowUpgradeWorkFlowResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -134,7 +134,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowUpgradeWorkFlowResponse.
+        r"""Gets the spec of this ShowUpgradeWorkFlowResponse.
 
         :return: The spec of this ShowUpgradeWorkFlowResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -143,7 +143,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowUpgradeWorkFlowResponse.
+        r"""Sets the spec of this ShowUpgradeWorkFlowResponse.
 
         :param spec: The spec of this ShowUpgradeWorkFlowResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -152,7 +152,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowUpgradeWorkFlowResponse.
+        r"""Gets the status of this ShowUpgradeWorkFlowResponse.
 
         :return: The status of this ShowUpgradeWorkFlowResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowStatus`
@@ -161,7 +161,7 @@ class ShowUpgradeWorkFlowResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUpgradeWorkFlowResponse.
+        r"""Sets the status of this ShowUpgradeWorkFlowResponse.
 
         :param status: The status of this ShowUpgradeWorkFlowResponse.
         :type status: :class:`huaweicloudsdkcce.v3.WorkFlowStatus`

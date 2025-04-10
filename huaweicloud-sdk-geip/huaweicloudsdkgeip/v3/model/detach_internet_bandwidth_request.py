@@ -27,7 +27,7 @@ class DetachInternetBandwidthRequest:
     }
 
     def __init__(self, global_eip_id=None, force_unbind=None):
-        """DetachInternetBandwidthRequest
+        r"""DetachInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DetachInternetBandwidthRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this DetachInternetBandwidthRequest.
+        r"""Gets the global_eip_id of this DetachInternetBandwidthRequest.
 
         :return: The global_eip_id of this DetachInternetBandwidthRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DetachInternetBandwidthRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this DetachInternetBandwidthRequest.
+        r"""Sets the global_eip_id of this DetachInternetBandwidthRequest.
 
         :param global_eip_id: The global_eip_id of this DetachInternetBandwidthRequest.
         :type global_eip_id: str
@@ -67,7 +67,7 @@ class DetachInternetBandwidthRequest:
 
     @property
     def force_unbind(self):
-        """Gets the force_unbind of this DetachInternetBandwidthRequest.
+        r"""Gets the force_unbind of this DetachInternetBandwidthRequest.
 
         :return: The force_unbind of this DetachInternetBandwidthRequest.
         :rtype: bool
@@ -76,7 +76,7 @@ class DetachInternetBandwidthRequest:
 
     @force_unbind.setter
     def force_unbind(self, force_unbind):
-        """Sets the force_unbind of this DetachInternetBandwidthRequest.
+        r"""Sets the force_unbind of this DetachInternetBandwidthRequest.
 
         :param force_unbind: The force_unbind of this DetachInternetBandwidthRequest.
         :type force_unbind: bool

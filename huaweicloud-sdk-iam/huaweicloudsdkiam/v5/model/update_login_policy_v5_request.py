@@ -25,7 +25,7 @@ class UpdateLoginPolicyV5Request:
     }
 
     def __init__(self, body=None):
-        """UpdateLoginPolicyV5Request
+        r"""UpdateLoginPolicyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateLoginPolicyV5Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLoginPolicyV5Request.
+        r"""Gets the body of this UpdateLoginPolicyV5Request.
 
         :return: The body of this UpdateLoginPolicyV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.UpdateLoginPolicyReqBody`
@@ -52,7 +52,7 @@ class UpdateLoginPolicyV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLoginPolicyV5Request.
+        r"""Sets the body of this UpdateLoginPolicyV5Request.
 
         :param body: The body of this UpdateLoginPolicyV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.UpdateLoginPolicyReqBody`

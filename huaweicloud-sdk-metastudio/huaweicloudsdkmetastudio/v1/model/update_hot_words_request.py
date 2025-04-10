@@ -29,7 +29,7 @@ class UpdateHotWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, hot_words_id=None, body=None):
-        """UpdateHotWordsRequest
+        r"""UpdateHotWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateHotWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateHotWordsRequest.
+        r"""Gets the x_app_user_id of this UpdateHotWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateHotWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateHotWordsRequest.
+        r"""Sets the x_app_user_id of this UpdateHotWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateHotWordsRequest:
 
     @property
     def hot_words_id(self):
-        """Gets the hot_words_id of this UpdateHotWordsRequest.
+        r"""Gets the hot_words_id of this UpdateHotWordsRequest.
 
         热词记录ID。
 
@@ -89,7 +89,7 @@ class UpdateHotWordsRequest:
 
     @hot_words_id.setter
     def hot_words_id(self, hot_words_id):
-        """Sets the hot_words_id of this UpdateHotWordsRequest.
+        r"""Sets the hot_words_id of this UpdateHotWordsRequest.
 
         热词记录ID。
 
@@ -100,7 +100,7 @@ class UpdateHotWordsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHotWordsRequest.
+        r"""Gets the body of this UpdateHotWordsRequest.
 
         :return: The body of this UpdateHotWordsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateHotWordsReq`
@@ -109,7 +109,7 @@ class UpdateHotWordsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHotWordsRequest.
+        r"""Sets the body of this UpdateHotWordsRequest.
 
         :param body: The body of this UpdateHotWordsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateHotWordsReq`

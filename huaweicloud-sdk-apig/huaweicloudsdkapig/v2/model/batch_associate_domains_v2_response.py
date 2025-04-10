@@ -24,7 +24,7 @@ class BatchAssociateDomainsV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAssociateDomainsV2Response
+        r"""BatchAssociateDomainsV2Response
 
         The model defined in huaweicloud sdk
 

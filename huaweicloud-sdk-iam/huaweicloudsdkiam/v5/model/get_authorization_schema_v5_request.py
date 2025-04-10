@@ -25,7 +25,7 @@ class GetAuthorizationSchemaV5Request:
     }
 
     def __init__(self, service_code=None):
-        """GetAuthorizationSchemaV5Request
+        r"""GetAuthorizationSchemaV5Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetAuthorizationSchemaV5Request:
 
     @property
     def service_code(self):
-        """Gets the service_code of this GetAuthorizationSchemaV5Request.
+        r"""Gets the service_code of this GetAuthorizationSchemaV5Request.
 
         服务名称缩写，长度为1到56个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class GetAuthorizationSchemaV5Request:
 
     @service_code.setter
     def service_code(self, service_code):
-        """Sets the service_code of this GetAuthorizationSchemaV5Request.
+        r"""Sets the service_code of this GetAuthorizationSchemaV5Request.
 
         服务名称缩写，长度为1到56个字符，只包含字母、数字和\"-\"的字符串。
 

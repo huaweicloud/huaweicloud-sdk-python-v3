@@ -29,7 +29,7 @@ class PostcheckSpec:
     }
 
     def __init__(self, cluster_id=None, cluster_version=None, target_version=None):
-        """PostcheckSpec
+        r"""PostcheckSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PostcheckSpec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PostcheckSpec.
+        r"""Gets the cluster_id of this PostcheckSpec.
 
         集群ID
 
@@ -68,7 +68,7 @@ class PostcheckSpec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PostcheckSpec.
+        r"""Sets the cluster_id of this PostcheckSpec.
 
         集群ID
 
@@ -79,7 +79,7 @@ class PostcheckSpec:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this PostcheckSpec.
+        r"""Gets the cluster_version of this PostcheckSpec.
 
         集群升级源版本
 
@@ -90,7 +90,7 @@ class PostcheckSpec:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this PostcheckSpec.
+        r"""Sets the cluster_version of this PostcheckSpec.
 
         集群升级源版本
 
@@ -101,7 +101,7 @@ class PostcheckSpec:
 
     @property
     def target_version(self):
-        """Gets the target_version of this PostcheckSpec.
+        r"""Gets the target_version of this PostcheckSpec.
 
         集群升级目标版本
 
@@ -112,7 +112,7 @@ class PostcheckSpec:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this PostcheckSpec.
+        r"""Sets the target_version of this PostcheckSpec.
 
         集群升级目标版本
 

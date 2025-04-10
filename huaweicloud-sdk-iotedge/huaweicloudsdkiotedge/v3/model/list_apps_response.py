@@ -30,7 +30,7 @@ class ListAppsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, apps=None):
-        """ListAppsResponse
+        r"""ListAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppsResponse.
+        r"""Gets the count of this ListAppsResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class ListAppsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppsResponse.
+        r"""Sets the count of this ListAppsResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAppsResponse.
+        r"""Gets the page_info of this ListAppsResponse.
 
         :return: The page_info of this ListAppsResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v3.PageInfoDTO`
@@ -89,7 +89,7 @@ class ListAppsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAppsResponse.
+        r"""Sets the page_info of this ListAppsResponse.
 
         :param page_info: The page_info of this ListAppsResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v3.PageInfoDTO`
@@ -98,7 +98,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListAppsResponse.
+        r"""Gets the apps of this ListAppsResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class ListAppsResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListAppsResponse.
+        r"""Sets the apps of this ListAppsResponse.
 
         每页记录数
 

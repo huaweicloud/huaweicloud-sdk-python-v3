@@ -25,7 +25,7 @@ class CreateVideoReq:
     }
 
     def __init__(self, name=None):
-        """CreateVideoReq
+        r"""CreateVideoReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVideoReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateVideoReq.
+        r"""Gets the name of this CreateVideoReq.
 
         视频名，长度3~63位。 大小写字母，数字，汉字及部分符号(“_”、“-”、“#”)组成
 
@@ -54,7 +54,7 @@ class CreateVideoReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVideoReq.
+        r"""Sets the name of this CreateVideoReq.
 
         视频名，长度3~63位。 大小写字母，数字，汉字及部分符号(“_”、“-”、“#”)组成
 

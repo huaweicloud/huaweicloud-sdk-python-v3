@@ -63,7 +63,7 @@ class ListCloudServersRequest:
     }
 
     def __init__(self, id=None, name=None, status=None, in_recycle_bin=None, spod_id=None, flavor_name=None, image_id=None, metadata=None, metadata_key=None, tags=None, not_tags=None, availability_zone=None, availability_zone_eq=None, charging_mode=None, key_name=None, launched_since=None, enterprise_project_id=None, expect_fields=None, limit=None, marker=None):
-        """ListCloudServersRequest
+        r"""ListCloudServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ListCloudServersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCloudServersRequest.
+        r"""Gets the id of this ListCloudServersRequest.
 
         云服务器ID，格式为UUID，匹配规则为精确匹配。
 
@@ -187,7 +187,7 @@ class ListCloudServersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCloudServersRequest.
+        r"""Sets the id of this ListCloudServersRequest.
 
         云服务器ID，格式为UUID，匹配规则为精确匹配。
 
@@ -198,7 +198,7 @@ class ListCloudServersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCloudServersRequest.
+        r"""Gets the name of this ListCloudServersRequest.
 
         云服务器名称，匹配规则为模糊匹配。
 
@@ -209,7 +209,7 @@ class ListCloudServersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCloudServersRequest.
+        r"""Sets the name of this ListCloudServersRequest.
 
         云服务器名称，匹配规则为模糊匹配。
 
@@ -220,7 +220,7 @@ class ListCloudServersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCloudServersRequest.
+        r"""Gets the status of this ListCloudServersRequest.
 
         云服务器状态。  取值范围：  ACTIVE， BUILD，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -231,7 +231,7 @@ class ListCloudServersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCloudServersRequest.
+        r"""Sets the status of this ListCloudServersRequest.
 
         云服务器状态。  取值范围：  ACTIVE， BUILD，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -242,7 +242,7 @@ class ListCloudServersRequest:
 
     @property
     def in_recycle_bin(self):
-        """Gets the in_recycle_bin of this ListCloudServersRequest.
+        r"""Gets the in_recycle_bin of this ListCloudServersRequest.
 
         云服务器是否处于回收站中
 
@@ -253,7 +253,7 @@ class ListCloudServersRequest:
 
     @in_recycle_bin.setter
     def in_recycle_bin(self, in_recycle_bin):
-        """Sets the in_recycle_bin of this ListCloudServersRequest.
+        r"""Sets the in_recycle_bin of this ListCloudServersRequest.
 
         云服务器是否处于回收站中
 
@@ -264,7 +264,7 @@ class ListCloudServersRequest:
 
     @property
     def spod_id(self):
-        """Gets the spod_id of this ListCloudServersRequest.
+        r"""Gets the spod_id of this ListCloudServersRequest.
 
         共池裸机按整机柜发放的同一批次的批创id。
 
@@ -275,7 +275,7 @@ class ListCloudServersRequest:
 
     @spod_id.setter
     def spod_id(self, spod_id):
-        """Sets the spod_id of this ListCloudServersRequest.
+        r"""Sets the spod_id of this ListCloudServersRequest.
 
         共池裸机按整机柜发放的同一批次的批创id。
 
@@ -286,7 +286,7 @@ class ListCloudServersRequest:
 
     @property
     def flavor_name(self):
-        """Gets the flavor_name of this ListCloudServersRequest.
+        r"""Gets the flavor_name of this ListCloudServersRequest.
 
         云服务器规格名称。
 
@@ -297,7 +297,7 @@ class ListCloudServersRequest:
 
     @flavor_name.setter
     def flavor_name(self, flavor_name):
-        """Sets the flavor_name of this ListCloudServersRequest.
+        r"""Sets the flavor_name of this ListCloudServersRequest.
 
         云服务器规格名称。
 
@@ -308,7 +308,7 @@ class ListCloudServersRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListCloudServersRequest.
+        r"""Gets the image_id of this ListCloudServersRequest.
 
         镜像ID。
 
@@ -319,7 +319,7 @@ class ListCloudServersRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListCloudServersRequest.
+        r"""Sets the image_id of this ListCloudServersRequest.
 
         镜像ID。
 
@@ -330,7 +330,7 @@ class ListCloudServersRequest:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListCloudServersRequest.
+        r"""Gets the metadata of this ListCloudServersRequest.
 
         元数据过滤，支持key=value过滤。
 
@@ -341,7 +341,7 @@ class ListCloudServersRequest:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListCloudServersRequest.
+        r"""Sets the metadata of this ListCloudServersRequest.
 
         元数据过滤，支持key=value过滤。
 
@@ -352,7 +352,7 @@ class ListCloudServersRequest:
 
     @property
     def metadata_key(self):
-        """Gets the metadata_key of this ListCloudServersRequest.
+        r"""Gets the metadata_key of this ListCloudServersRequest.
 
         元数据key过滤。
 
@@ -363,7 +363,7 @@ class ListCloudServersRequest:
 
     @metadata_key.setter
     def metadata_key(self, metadata_key):
-        """Sets the metadata_key of this ListCloudServersRequest.
+        r"""Sets the metadata_key of this ListCloudServersRequest.
 
         元数据key过滤。
 
@@ -374,7 +374,7 @@ class ListCloudServersRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListCloudServersRequest.
+        r"""Gets the tags of this ListCloudServersRequest.
 
         查询tag字段中包含该值的云服务器。
 
@@ -385,7 +385,7 @@ class ListCloudServersRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListCloudServersRequest.
+        r"""Sets the tags of this ListCloudServersRequest.
 
         查询tag字段中包含该值的云服务器。
 
@@ -396,7 +396,7 @@ class ListCloudServersRequest:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ListCloudServersRequest.
+        r"""Gets the not_tags of this ListCloudServersRequest.
 
          查询tag字段中不包含该值的云服务器
 
@@ -407,7 +407,7 @@ class ListCloudServersRequest:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ListCloudServersRequest.
+        r"""Sets the not_tags of this ListCloudServersRequest.
 
          查询tag字段中不包含该值的云服务器
 
@@ -418,7 +418,7 @@ class ListCloudServersRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListCloudServersRequest.
+        r"""Gets the availability_zone of this ListCloudServersRequest.
 
         云服务器所在的AZ，匹配规则为模糊匹配。
 
@@ -429,7 +429,7 @@ class ListCloudServersRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListCloudServersRequest.
+        r"""Sets the availability_zone of this ListCloudServersRequest.
 
         云服务器所在的AZ，匹配规则为模糊匹配。
 
@@ -440,7 +440,7 @@ class ListCloudServersRequest:
 
     @property
     def availability_zone_eq(self):
-        """Gets the availability_zone_eq of this ListCloudServersRequest.
+        r"""Gets the availability_zone_eq of this ListCloudServersRequest.
 
         云服务器所在的AZ，匹配规则为精确匹配。
 
@@ -451,7 +451,7 @@ class ListCloudServersRequest:
 
     @availability_zone_eq.setter
     def availability_zone_eq(self, availability_zone_eq):
-        """Sets the availability_zone_eq of this ListCloudServersRequest.
+        r"""Sets the availability_zone_eq of this ListCloudServersRequest.
 
         云服务器所在的AZ，匹配规则为精确匹配。
 
@@ -462,7 +462,7 @@ class ListCloudServersRequest:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ListCloudServersRequest.
+        r"""Gets the charging_mode of this ListCloudServersRequest.
 
         云服务器的计费类型。
 
@@ -473,7 +473,7 @@ class ListCloudServersRequest:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ListCloudServersRequest.
+        r"""Sets the charging_mode of this ListCloudServersRequest.
 
         云服务器的计费类型。
 
@@ -484,7 +484,7 @@ class ListCloudServersRequest:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ListCloudServersRequest.
+        r"""Gets the key_name of this ListCloudServersRequest.
 
         云服务器使用的密钥对名称。
 
@@ -495,7 +495,7 @@ class ListCloudServersRequest:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ListCloudServersRequest.
+        r"""Sets the key_name of this ListCloudServersRequest.
 
         云服务器使用的密钥对名称。
 
@@ -506,7 +506,7 @@ class ListCloudServersRequest:
 
     @property
     def launched_since(self):
-        """Gets the launched_since of this ListCloudServersRequest.
+        r"""Gets the launched_since of this ListCloudServersRequest.
 
         过滤在launched_since时间之后启动的云服务器。格式为ISO8601时间格式，例如：2013-06-09T06:42:18Z。
 
@@ -517,7 +517,7 @@ class ListCloudServersRequest:
 
     @launched_since.setter
     def launched_since(self, launched_since):
-        """Sets the launched_since of this ListCloudServersRequest.
+        r"""Sets the launched_since of this ListCloudServersRequest.
 
         过滤在launched_since时间之后启动的云服务器。格式为ISO8601时间格式，例如：2013-06-09T06:42:18Z。
 
@@ -528,7 +528,7 @@ class ListCloudServersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCloudServersRequest.
+        r"""Gets the enterprise_project_id of this ListCloudServersRequest.
 
         过滤绑定某个企业项目的云服务器。 若需要查询当前用户所有企业项目绑定的云服务，请传参all_granted_eps。
 
@@ -539,7 +539,7 @@ class ListCloudServersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCloudServersRequest.
+        r"""Sets the enterprise_project_id of this ListCloudServersRequest.
 
         过滤绑定某个企业项目的云服务器。 若需要查询当前用户所有企业项目绑定的云服务，请传参all_granted_eps。
 
@@ -550,7 +550,7 @@ class ListCloudServersRequest:
 
     @property
     def expect_fields(self):
-        """Gets the expect_fields of this ListCloudServersRequest.
+        r"""Gets the expect_fields of this ListCloudServersRequest.
 
         控制查询输出的字段。在默认字段的基础上选择是否查询。   launched_at：云服务器启动时间。   key_name：云服务器使用的密钥对名称。   locked：云服务器是否为锁定状态。   root_device_name：云服务器系统盘的设备名称。   tenancy：在专属主机或共享池中创建云服务器。   dedicated_host_id：专属主机ID。   enterprise_project_id：查询绑定某个企业项目的云服务器。   tags：云服务器的标签列表。   metadata：云服务器元数据。   addresses：云服务器对应的网络地址信息。   security_groups：云服务器的安全组信息。   volumes_attached：云服务器挂载磁盘信息。   image：云服务器镜像信息。   power_state：云服务器电源状态。   cpu_options：自定义CPU选项。   market_info：云服务器计费信息，包含计费类型、到期时间等字段。
 
@@ -561,7 +561,7 @@ class ListCloudServersRequest:
 
     @expect_fields.setter
     def expect_fields(self, expect_fields):
-        """Sets the expect_fields of this ListCloudServersRequest.
+        r"""Sets the expect_fields of this ListCloudServersRequest.
 
         控制查询输出的字段。在默认字段的基础上选择是否查询。   launched_at：云服务器启动时间。   key_name：云服务器使用的密钥对名称。   locked：云服务器是否为锁定状态。   root_device_name：云服务器系统盘的设备名称。   tenancy：在专属主机或共享池中创建云服务器。   dedicated_host_id：专属主机ID。   enterprise_project_id：查询绑定某个企业项目的云服务器。   tags：云服务器的标签列表。   metadata：云服务器元数据。   addresses：云服务器对应的网络地址信息。   security_groups：云服务器的安全组信息。   volumes_attached：云服务器挂载磁盘信息。   image：云服务器镜像信息。   power_state：云服务器电源状态。   cpu_options：自定义CPU选项。   market_info：云服务器计费信息，包含计费类型、到期时间等字段。
 
@@ -572,7 +572,7 @@ class ListCloudServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudServersRequest.
+        r"""Gets the limit of this ListCloudServersRequest.
 
         查询返回VM数量限制。 limit 默认为10，最大为100。
 
@@ -583,7 +583,7 @@ class ListCloudServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudServersRequest.
+        r"""Sets the limit of this ListCloudServersRequest.
 
         查询返回VM数量限制。 limit 默认为10，最大为100。
 
@@ -594,7 +594,7 @@ class ListCloudServersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCloudServersRequest.
+        r"""Gets the marker of this ListCloudServersRequest.
 
         以单页最后一条server的ID作为分页标记。
 
@@ -605,7 +605,7 @@ class ListCloudServersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCloudServersRequest.
+        r"""Sets the marker of this ListCloudServersRequest.
 
         以单页最后一条server的ID作为分页标记。
 

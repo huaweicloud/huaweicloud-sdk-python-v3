@@ -34,7 +34,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, links=None, version=None, status=None, updated=None):
-        """ShowApiVersionInfoResponse
+        r"""ShowApiVersionInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApiVersionInfoResponse.
+        r"""Gets the id of this ShowApiVersionInfoResponse.
 
         版本ID。
 
@@ -83,7 +83,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApiVersionInfoResponse.
+        r"""Sets the id of this ShowApiVersionInfoResponse.
 
         版本ID。
 
@@ -94,7 +94,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowApiVersionInfoResponse.
+        r"""Gets the links of this ShowApiVersionInfoResponse.
 
         版本详情的URL地址。
 
@@ -105,7 +105,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowApiVersionInfoResponse.
+        r"""Sets the links of this ShowApiVersionInfoResponse.
 
         版本详情的URL地址。
 
@@ -116,7 +116,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowApiVersionInfoResponse.
+        r"""Gets the version of this ShowApiVersionInfoResponse.
 
         该版本API的微版本信息。
 
@@ -127,7 +127,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowApiVersionInfoResponse.
+        r"""Sets the version of this ShowApiVersionInfoResponse.
 
         该版本API的微版本信息。
 
@@ -138,7 +138,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowApiVersionInfoResponse.
+        r"""Gets the status of this ShowApiVersionInfoResponse.
 
         版本的状态。
 
@@ -149,7 +149,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowApiVersionInfoResponse.
+        r"""Sets the status of this ShowApiVersionInfoResponse.
 
         版本的状态。
 
@@ -160,7 +160,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowApiVersionInfoResponse.
+        r"""Gets the updated of this ShowApiVersionInfoResponse.
 
         版本更新时间。
 
@@ -171,7 +171,7 @@ class ShowApiVersionInfoResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowApiVersionInfoResponse.
+        r"""Sets the updated of this ShowApiVersionInfoResponse.
 
         版本更新时间。
 

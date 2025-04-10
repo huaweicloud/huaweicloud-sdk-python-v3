@@ -65,7 +65,7 @@ class V2CreateCluster:
     }
 
     def __init__(self, name=None, flavor=None, num_cn=None, num_node=None, db_name=None, db_password=None, db_port=None, dss_pool_id=None, availability_zones=None, tags=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, datastore_version=None, master_key_id=None, master_key_name=None, crypt_algorithm=None, volume=None, enterprise_project_id=None, ipv6_enable=None):
-        """V2CreateCluster
+        r"""V2CreateCluster
 
         The model defined in huaweicloud sdk
 
@@ -171,7 +171,7 @@ class V2CreateCluster:
 
     @property
     def name(self):
-        """Gets the name of this V2CreateCluster.
+        r"""Gets the name of this V2CreateCluster.
 
         集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
 
@@ -182,7 +182,7 @@ class V2CreateCluster:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this V2CreateCluster.
+        r"""Sets the name of this V2CreateCluster.
 
         集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
 
@@ -193,7 +193,7 @@ class V2CreateCluster:
 
     @property
     def flavor(self):
-        """Gets the flavor of this V2CreateCluster.
+        r"""Gets the flavor of this V2CreateCluster.
 
         集群规格名称。节点类型详情请参见数据仓库类型数据仓库类型。
 
@@ -204,7 +204,7 @@ class V2CreateCluster:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this V2CreateCluster.
+        r"""Sets the flavor of this V2CreateCluster.
 
         集群规格名称。节点类型详情请参见数据仓库类型数据仓库类型。
 
@@ -215,7 +215,7 @@ class V2CreateCluster:
 
     @property
     def num_cn(self):
-        """Gets the num_cn of this V2CreateCluster.
+        r"""Gets the num_cn of this V2CreateCluster.
 
         集群CN数量，取值范围为2~集群节点数，最大值为20，默认值为3。
 
@@ -226,7 +226,7 @@ class V2CreateCluster:
 
     @num_cn.setter
     def num_cn(self, num_cn):
-        """Sets the num_cn of this V2CreateCluster.
+        r"""Sets the num_cn of this V2CreateCluster.
 
         集群CN数量，取值范围为2~集群节点数，最大值为20，默认值为3。
 
@@ -237,7 +237,7 @@ class V2CreateCluster:
 
     @property
     def num_node(self):
-        """Gets the num_node of this V2CreateCluster.
+        r"""Gets the num_node of this V2CreateCluster.
 
         集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
 
@@ -248,7 +248,7 @@ class V2CreateCluster:
 
     @num_node.setter
     def num_node(self, num_node):
-        """Sets the num_node of this V2CreateCluster.
+        r"""Sets the num_node of this V2CreateCluster.
 
         集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
 
@@ -259,7 +259,7 @@ class V2CreateCluster:
 
     @property
     def db_name(self):
-        """Gets the db_name of this V2CreateCluster.
+        r"""Gets the db_name of this V2CreateCluster.
 
         管理员用户名称。用户命名要求如下： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。用户名不能为DWS数据库的关键字。
 
@@ -270,7 +270,7 @@ class V2CreateCluster:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this V2CreateCluster.
+        r"""Sets the db_name of this V2CreateCluster.
 
         管理员用户名称。用户命名要求如下： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。用户名不能为DWS数据库的关键字。
 
@@ -281,7 +281,7 @@ class V2CreateCluster:
 
     @property
     def db_password(self):
-        """Gets the db_password of this V2CreateCluster.
+        r"""Gets the db_password of this V2CreateCluster.
 
         管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
 
@@ -292,7 +292,7 @@ class V2CreateCluster:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this V2CreateCluster.
+        r"""Sets the db_password of this V2CreateCluster.
 
         管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
 
@@ -303,7 +303,7 @@ class V2CreateCluster:
 
     @property
     def db_port(self):
-        """Gets the db_port of this V2CreateCluster.
+        r"""Gets the db_port of this V2CreateCluster.
 
         集群数据库端口，取值范围为8000~30000，默认值：8000。
 
@@ -314,7 +314,7 @@ class V2CreateCluster:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this V2CreateCluster.
+        r"""Sets the db_port of this V2CreateCluster.
 
         集群数据库端口，取值范围为8000~30000，默认值：8000。
 
@@ -325,7 +325,7 @@ class V2CreateCluster:
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this V2CreateCluster.
+        r"""Gets the dss_pool_id of this V2CreateCluster.
 
         专属存储池ID
 
@@ -336,7 +336,7 @@ class V2CreateCluster:
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this V2CreateCluster.
+        r"""Sets the dss_pool_id of this V2CreateCluster.
 
         专属存储池ID
 
@@ -347,7 +347,7 @@ class V2CreateCluster:
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this V2CreateCluster.
+        r"""Gets the availability_zones of this V2CreateCluster.
 
         可用区列表。集群可用区选择详情请参见地区和终端节点地区和终端节点。
 
@@ -358,7 +358,7 @@ class V2CreateCluster:
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this V2CreateCluster.
+        r"""Sets the availability_zones of this V2CreateCluster.
 
         可用区列表。集群可用区选择详情请参见地区和终端节点地区和终端节点。
 
@@ -369,7 +369,7 @@ class V2CreateCluster:
 
     @property
     def tags(self):
-        """Gets the tags of this V2CreateCluster.
+        r"""Gets the tags of this V2CreateCluster.
 
         标签列表
 
@@ -380,7 +380,7 @@ class V2CreateCluster:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this V2CreateCluster.
+        r"""Sets the tags of this V2CreateCluster.
 
         标签列表
 
@@ -391,7 +391,7 @@ class V2CreateCluster:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this V2CreateCluster.
+        r"""Gets the vpc_id of this V2CreateCluster.
 
         指定虚拟私有云ID，用于集群网络配置。
 
@@ -402,7 +402,7 @@ class V2CreateCluster:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this V2CreateCluster.
+        r"""Sets the vpc_id of this V2CreateCluster.
 
         指定虚拟私有云ID，用于集群网络配置。
 
@@ -413,7 +413,7 @@ class V2CreateCluster:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this V2CreateCluster.
+        r"""Gets the subnet_id of this V2CreateCluster.
 
         指定子网ID，用于集群网络配置。
 
@@ -424,7 +424,7 @@ class V2CreateCluster:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this V2CreateCluster.
+        r"""Sets the subnet_id of this V2CreateCluster.
 
         指定子网ID，用于集群网络配置。
 
@@ -435,7 +435,7 @@ class V2CreateCluster:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this V2CreateCluster.
+        r"""Gets the security_group_id of this V2CreateCluster.
 
         指定安全组ID，用于集群网络配置。
 
@@ -446,7 +446,7 @@ class V2CreateCluster:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this V2CreateCluster.
+        r"""Sets the security_group_id of this V2CreateCluster.
 
         指定安全组ID，用于集群网络配置。
 
@@ -457,7 +457,7 @@ class V2CreateCluster:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this V2CreateCluster.
+        r"""Gets the public_ip of this V2CreateCluster.
 
         :return: The public_ip of this V2CreateCluster.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -466,7 +466,7 @@ class V2CreateCluster:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this V2CreateCluster.
+        r"""Sets the public_ip of this V2CreateCluster.
 
         :param public_ip: The public_ip of this V2CreateCluster.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -475,7 +475,7 @@ class V2CreateCluster:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this V2CreateCluster.
+        r"""Gets the datastore_version of this V2CreateCluster.
 
         集群版本
 
@@ -486,7 +486,7 @@ class V2CreateCluster:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this V2CreateCluster.
+        r"""Sets the datastore_version of this V2CreateCluster.
 
         集群版本
 
@@ -497,7 +497,7 @@ class V2CreateCluster:
 
     @property
     def master_key_id(self):
-        """Gets the master_key_id of this V2CreateCluster.
+        r"""Gets the master_key_id of this V2CreateCluster.
 
         密钥ID
 
@@ -508,7 +508,7 @@ class V2CreateCluster:
 
     @master_key_id.setter
     def master_key_id(self, master_key_id):
-        """Sets the master_key_id of this V2CreateCluster.
+        r"""Sets the master_key_id of this V2CreateCluster.
 
         密钥ID
 
@@ -519,7 +519,7 @@ class V2CreateCluster:
 
     @property
     def master_key_name(self):
-        """Gets the master_key_name of this V2CreateCluster.
+        r"""Gets the master_key_name of this V2CreateCluster.
 
         密钥名称
 
@@ -530,7 +530,7 @@ class V2CreateCluster:
 
     @master_key_name.setter
     def master_key_name(self, master_key_name):
-        """Sets the master_key_name of this V2CreateCluster.
+        r"""Sets the master_key_name of this V2CreateCluster.
 
         密钥名称
 
@@ -541,7 +541,7 @@ class V2CreateCluster:
 
     @property
     def crypt_algorithm(self):
-        """Gets the crypt_algorithm of this V2CreateCluster.
+        r"""Gets the crypt_algorithm of this V2CreateCluster.
 
         加密算法
 
@@ -552,7 +552,7 @@ class V2CreateCluster:
 
     @crypt_algorithm.setter
     def crypt_algorithm(self, crypt_algorithm):
-        """Sets the crypt_algorithm of this V2CreateCluster.
+        r"""Sets the crypt_algorithm of this V2CreateCluster.
 
         加密算法
 
@@ -563,7 +563,7 @@ class V2CreateCluster:
 
     @property
     def volume(self):
-        """Gets the volume of this V2CreateCluster.
+        r"""Gets the volume of this V2CreateCluster.
 
         :return: The volume of this V2CreateCluster.
         :rtype: :class:`huaweicloudsdkdws.v2.Volume`
@@ -572,7 +572,7 @@ class V2CreateCluster:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this V2CreateCluster.
+        r"""Sets the volume of this V2CreateCluster.
 
         :param volume: The volume of this V2CreateCluster.
         :type volume: :class:`huaweicloudsdkdws.v2.Volume`
@@ -581,7 +581,7 @@ class V2CreateCluster:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this V2CreateCluster.
+        r"""Gets the enterprise_project_id of this V2CreateCluster.
 
         企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
 
@@ -592,7 +592,7 @@ class V2CreateCluster:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this V2CreateCluster.
+        r"""Sets the enterprise_project_id of this V2CreateCluster.
 
         企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
 
@@ -603,7 +603,7 @@ class V2CreateCluster:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this V2CreateCluster.
+        r"""Gets the ipv6_enable of this V2CreateCluster.
 
         指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
 
@@ -614,7 +614,7 @@ class V2CreateCluster:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this V2CreateCluster.
+        r"""Sets the ipv6_enable of this V2CreateCluster.
 
         指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
 

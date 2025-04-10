@@ -59,7 +59,7 @@ class NatGatewayDnatRuleResponseBody:
     }
 
     def __init__(self, id=None, tenant_id=None, description=None, port_id=None, private_ip=None, internal_service_port=None, nat_gateway_id=None, floating_ip_id=None, floating_ip_address=None, external_service_port=None, status=None, admin_state_up=None, internal_service_port_range=None, external_service_port_range=None, protocol=None, created_at=None, global_eip_id=None, global_eip_address=None):
-        """NatGatewayDnatRuleResponseBody
+        r"""NatGatewayDnatRuleResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the id of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的ID。
 
@@ -159,7 +159,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the id of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的ID。
 
@@ -170,7 +170,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the tenant_id of this NatGatewayDnatRuleResponseBody.
 
         项目的ID。
 
@@ -181,7 +181,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the tenant_id of this NatGatewayDnatRuleResponseBody.
 
         项目的ID。
 
@@ -192,7 +192,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the description of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -203,7 +203,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the description of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -214,7 +214,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def port_id(self):
-        """Gets the port_id of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the port_id of this NatGatewayDnatRuleResponseBody.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -225,7 +225,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the port_id of this NatGatewayDnatRuleResponseBody.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -236,7 +236,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the private_ip of this NatGatewayDnatRuleResponseBody.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -247,7 +247,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the private_ip of this NatGatewayDnatRuleResponseBody.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -258,7 +258,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def internal_service_port(self):
-        """Gets the internal_service_port of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the internal_service_port of this NatGatewayDnatRuleResponseBody.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -269,7 +269,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @internal_service_port.setter
     def internal_service_port(self, internal_service_port):
-        """Sets the internal_service_port of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the internal_service_port of this NatGatewayDnatRuleResponseBody.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -280,7 +280,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the nat_gateway_id of this NatGatewayDnatRuleResponseBody.
 
         公网NAT网关实例的ID。
 
@@ -291,7 +291,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the nat_gateway_id of this NatGatewayDnatRuleResponseBody.
 
         公网NAT网关实例的ID。
 
@@ -302,7 +302,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the floating_ip_id of this NatGatewayDnatRuleResponseBody.
 
         弹性公网IP的id。
 
@@ -313,7 +313,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the floating_ip_id of this NatGatewayDnatRuleResponseBody.
 
         弹性公网IP的id。
 
@@ -324,7 +324,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the floating_ip_address of this NatGatewayDnatRuleResponseBody.
 
         弹性公网IP的IP地址。 
 
@@ -335,7 +335,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the floating_ip_address of this NatGatewayDnatRuleResponseBody.
 
         弹性公网IP的IP地址。 
 
@@ -346,7 +346,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def external_service_port(self):
-        """Gets the external_service_port of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the external_service_port of this NatGatewayDnatRuleResponseBody.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -357,7 +357,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @external_service_port.setter
     def external_service_port(self, external_service_port):
-        """Sets the external_service_port of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the external_service_port of this NatGatewayDnatRuleResponseBody.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -368,7 +368,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the status of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -379,7 +379,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the status of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -390,7 +390,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the admin_state_up of this NatGatewayDnatRuleResponseBody.
 
         解冻/冻结状态。 取值范围： − “true”： 解冻 − “false”： 冻结 
 
@@ -401,7 +401,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the admin_state_up of this NatGatewayDnatRuleResponseBody.
 
         解冻/冻结状态。 取值范围： − “true”： 解冻 − “false”： 冻结 
 
@@ -412,7 +412,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def internal_service_port_range(self):
-        """Gets the internal_service_port_range of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the internal_service_port_range of this NatGatewayDnatRuleResponseBody.
 
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
@@ -423,7 +423,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @internal_service_port_range.setter
     def internal_service_port_range(self, internal_service_port_range):
-        """Sets the internal_service_port_range of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the internal_service_port_range of this NatGatewayDnatRuleResponseBody.
 
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
@@ -434,7 +434,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def external_service_port_range(self):
-        """Gets the external_service_port_range of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the external_service_port_range of this NatGatewayDnatRuleResponseBody.
 
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围 
 
@@ -445,7 +445,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @external_service_port_range.setter
     def external_service_port_range(self, external_service_port_range):
-        """Sets the external_service_port_range of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the external_service_port_range of this NatGatewayDnatRuleResponseBody.
 
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围 
 
@@ -456,7 +456,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the protocol of this NatGatewayDnatRuleResponseBody.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。 
 
@@ -467,7 +467,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the protocol of this NatGatewayDnatRuleResponseBody.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。 
 
@@ -478,7 +478,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the created_at of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -489,7 +489,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the created_at of this NatGatewayDnatRuleResponseBody.
 
         DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -500,7 +500,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the global_eip_id of this NatGatewayDnatRuleResponseBody.
 
         全域弹性公网IP的id。
 
@@ -511,7 +511,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the global_eip_id of this NatGatewayDnatRuleResponseBody.
 
         全域弹性公网IP的id。
 
@@ -522,7 +522,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @property
     def global_eip_address(self):
-        """Gets the global_eip_address of this NatGatewayDnatRuleResponseBody.
+        r"""Gets the global_eip_address of this NatGatewayDnatRuleResponseBody.
 
         全域弹性公网IP的地址。
 
@@ -533,7 +533,7 @@ class NatGatewayDnatRuleResponseBody:
 
     @global_eip_address.setter
     def global_eip_address(self, global_eip_address):
-        """Sets the global_eip_address of this NatGatewayDnatRuleResponseBody.
+        r"""Sets the global_eip_address of this NatGatewayDnatRuleResponseBody.
 
         全域弹性公网IP的地址。
 

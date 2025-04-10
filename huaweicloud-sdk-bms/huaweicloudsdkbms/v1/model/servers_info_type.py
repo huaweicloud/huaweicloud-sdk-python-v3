@@ -27,7 +27,7 @@ class ServersInfoType:
     }
 
     def __init__(self, type=None, servers=None):
-        """ServersInfoType
+        r"""ServersInfoType
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServersInfoType:
 
     @property
     def type(self):
-        """Gets the type of this ServersInfoType.
+        r"""Gets the type of this ServersInfoType.
 
         重启类型：SOFT：普通重启（不生效）。HARD：强制重启（默认）。
 
@@ -59,7 +59,7 @@ class ServersInfoType:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ServersInfoType.
+        r"""Sets the type of this ServersInfoType.
 
         重启类型：SOFT：普通重启（不生效）。HARD：强制重启（默认）。
 
@@ -70,7 +70,7 @@ class ServersInfoType:
 
     @property
     def servers(self):
-        """Gets the servers of this ServersInfoType.
+        r"""Gets the servers of this ServersInfoType.
 
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
 
@@ -81,7 +81,7 @@ class ServersInfoType:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ServersInfoType.
+        r"""Sets the servers of this ServersInfoType.
 
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
 

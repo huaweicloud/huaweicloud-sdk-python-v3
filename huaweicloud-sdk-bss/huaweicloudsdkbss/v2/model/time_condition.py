@@ -29,7 +29,7 @@ class TimeCondition:
     }
 
     def __init__(self, time_measure_id=None, begin_time=None, end_time=None):
-        """TimeCondition
+        r"""TimeCondition
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TimeCondition:
 
     @property
     def time_measure_id(self):
-        """Gets the time_measure_id of this TimeCondition.
+        r"""Gets the time_measure_id of this TimeCondition.
 
         时间单位。1：天2：月
 
@@ -65,7 +65,7 @@ class TimeCondition:
 
     @time_measure_id.setter
     def time_measure_id(self, time_measure_id):
-        """Sets the time_measure_id of this TimeCondition.
+        r"""Sets the time_measure_id of this TimeCondition.
 
         时间单位。1：天2：月
 
@@ -76,7 +76,7 @@ class TimeCondition:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this TimeCondition.
+        r"""Gets the begin_time of this TimeCondition.
 
         查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
@@ -87,7 +87,7 @@ class TimeCondition:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this TimeCondition.
+        r"""Sets the begin_time of this TimeCondition.
 
         查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
@@ -98,7 +98,7 @@ class TimeCondition:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TimeCondition.
+        r"""Gets the end_time of this TimeCondition.
 
         查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
@@ -109,7 +109,7 @@ class TimeCondition:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TimeCondition.
+        r"""Sets the end_time of this TimeCondition.
 
         查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 

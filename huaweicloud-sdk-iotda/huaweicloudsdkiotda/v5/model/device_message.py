@@ -45,7 +45,7 @@ class DeviceMessage:
     }
 
     def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, properties=None, status=None, error_info=None, created_time=None, finished_time=None):
-        """DeviceMessage
+        r"""DeviceMessage
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class DeviceMessage:
 
     @property
     def message_id(self):
-        """Gets the message_id of this DeviceMessage.
+        r"""Gets the message_id of this DeviceMessage.
 
         设备消息ID，用于唯一标识一条消息，在下发设备消息时由物联网平台分配获得。
 
@@ -124,7 +124,7 @@ class DeviceMessage:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this DeviceMessage.
+        r"""Sets the message_id of this DeviceMessage.
 
         设备消息ID，用于唯一标识一条消息，在下发设备消息时由物联网平台分配获得。
 
@@ -135,7 +135,7 @@ class DeviceMessage:
 
     @property
     def name(self):
-        """Gets the name of this DeviceMessage.
+        r"""Gets the name of this DeviceMessage.
 
         消息名称,在下发消息时由用户指定。
 
@@ -146,7 +146,7 @@ class DeviceMessage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeviceMessage.
+        r"""Sets the name of this DeviceMessage.
 
         消息名称,在下发消息时由用户指定。
 
@@ -157,7 +157,7 @@ class DeviceMessage:
 
     @property
     def message(self):
-        """Gets the message of this DeviceMessage.
+        r"""Gets the message of this DeviceMessage.
 
         消息内容。
 
@@ -168,7 +168,7 @@ class DeviceMessage:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeviceMessage.
+        r"""Sets the message of this DeviceMessage.
 
         消息内容。
 
@@ -179,7 +179,7 @@ class DeviceMessage:
 
     @property
     def encoding(self):
-        """Gets the encoding of this DeviceMessage.
+        r"""Gets the encoding of this DeviceMessage.
 
         消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。
 
@@ -190,7 +190,7 @@ class DeviceMessage:
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this DeviceMessage.
+        r"""Sets the encoding of this DeviceMessage.
 
         消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。
 
@@ -201,7 +201,7 @@ class DeviceMessage:
 
     @property
     def payload_format(self):
-        """Gets the payload_format of this DeviceMessage.
+        r"""Gets the payload_format of this DeviceMessage.
 
         有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。
 
@@ -212,7 +212,7 @@ class DeviceMessage:
 
     @payload_format.setter
     def payload_format(self, payload_format):
-        """Sets the payload_format of this DeviceMessage.
+        r"""Sets the payload_format of this DeviceMessage.
 
         有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。
 
@@ -223,7 +223,7 @@ class DeviceMessage:
 
     @property
     def topic(self):
-        """Gets the topic of this DeviceMessage.
+        r"""Gets the topic of this DeviceMessage.
 
         消息topic
 
@@ -234,7 +234,7 @@ class DeviceMessage:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this DeviceMessage.
+        r"""Sets the topic of this DeviceMessage.
 
         消息topic
 
@@ -245,7 +245,7 @@ class DeviceMessage:
 
     @property
     def properties(self):
-        """Gets the properties of this DeviceMessage.
+        r"""Gets the properties of this DeviceMessage.
 
         :return: The properties of this DeviceMessage.
         :rtype: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
@@ -254,7 +254,7 @@ class DeviceMessage:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this DeviceMessage.
+        r"""Sets the properties of this DeviceMessage.
 
         :param properties: The properties of this DeviceMessage.
         :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
@@ -263,7 +263,7 @@ class DeviceMessage:
 
     @property
     def status(self):
-        """Gets the status of this DeviceMessage.
+        r"""Gets the status of this DeviceMessage.
 
         消息状态，包含PENDING，DELIVERED，FAILED和TIMEOUT，PENDING指设备不在线，消息被缓存起来，等设备上线之后下发； DELIVERED指消息发送成功；FAILED消息发送失败；TIMEOUT指消息在平台默认时间内（1天）还没有下发送给设备，则平台会将消息设置为超时，状态为TIMEOUT。
 
@@ -274,7 +274,7 @@ class DeviceMessage:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeviceMessage.
+        r"""Sets the status of this DeviceMessage.
 
         消息状态，包含PENDING，DELIVERED，FAILED和TIMEOUT，PENDING指设备不在线，消息被缓存起来，等设备上线之后下发； DELIVERED指消息发送成功；FAILED消息发送失败；TIMEOUT指消息在平台默认时间内（1天）还没有下发送给设备，则平台会将消息设置为超时，状态为TIMEOUT。
 
@@ -285,7 +285,7 @@ class DeviceMessage:
 
     @property
     def error_info(self):
-        """Gets the error_info of this DeviceMessage.
+        r"""Gets the error_info of this DeviceMessage.
 
         :return: The error_info of this DeviceMessage.
         :rtype: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`
@@ -294,7 +294,7 @@ class DeviceMessage:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this DeviceMessage.
+        r"""Sets the error_info of this DeviceMessage.
 
         :param error_info: The error_info of this DeviceMessage.
         :type error_info: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`
@@ -303,7 +303,7 @@ class DeviceMessage:
 
     @property
     def created_time(self):
-        """Gets the created_time of this DeviceMessage.
+        r"""Gets the created_time of this DeviceMessage.
 
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -314,7 +314,7 @@ class DeviceMessage:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this DeviceMessage.
+        r"""Sets the created_time of this DeviceMessage.
 
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -325,7 +325,7 @@ class DeviceMessage:
 
     @property
     def finished_time(self):
-        """Gets the finished_time of this DeviceMessage.
+        r"""Gets the finished_time of this DeviceMessage.
 
         消息结束时间, \"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串，包含消息转换到DELIVERED和TIMEOUT两个状态的时间。
 
@@ -336,7 +336,7 @@ class DeviceMessage:
 
     @finished_time.setter
     def finished_time(self, finished_time):
-        """Sets the finished_time of this DeviceMessage.
+        r"""Sets the finished_time of this DeviceMessage.
 
         消息结束时间, \"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串，包含消息转换到DELIVERED和TIMEOUT两个状态的时间。
 

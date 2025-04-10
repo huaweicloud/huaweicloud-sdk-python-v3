@@ -27,7 +27,7 @@ class PauseScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """PauseScalingGroupRequest
+        r"""PauseScalingGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PauseScalingGroupRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this PauseScalingGroupRequest.
+        r"""Gets the scaling_group_id of this PauseScalingGroupRequest.
 
         伸缩组ID
 
@@ -60,7 +60,7 @@ class PauseScalingGroupRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this PauseScalingGroupRequest.
+        r"""Sets the scaling_group_id of this PauseScalingGroupRequest.
 
         伸缩组ID
 
@@ -71,7 +71,7 @@ class PauseScalingGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this PauseScalingGroupRequest.
+        r"""Gets the body of this PauseScalingGroupRequest.
 
         :return: The body of this PauseScalingGroupRequest.
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingGroupOption`
@@ -80,7 +80,7 @@ class PauseScalingGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PauseScalingGroupRequest.
+        r"""Sets the body of this PauseScalingGroupRequest.
 
         :param body: The body of this PauseScalingGroupRequest.
         :type body: :class:`huaweicloudsdkas.v1.PauseScalingGroupOption`

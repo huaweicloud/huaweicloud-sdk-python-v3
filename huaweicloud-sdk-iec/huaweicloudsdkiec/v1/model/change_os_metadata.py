@@ -25,7 +25,7 @@ class ChangeOsMetadata:
     }
 
     def __init__(self, user_data=None):
-        """ChangeOsMetadata
+        r"""ChangeOsMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeOsMetadata:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ChangeOsMetadata.
+        r"""Gets the user_data of this ChangeOsMetadata.
 
         切换边缘实例操作系统过程中注入的用户数据。
 
@@ -54,7 +54,7 @@ class ChangeOsMetadata:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ChangeOsMetadata.
+        r"""Sets the user_data of this ChangeOsMetadata.
 
         切换边缘实例操作系统过程中注入的用户数据。
 

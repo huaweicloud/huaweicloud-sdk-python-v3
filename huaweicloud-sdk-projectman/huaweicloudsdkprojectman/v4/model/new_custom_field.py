@@ -29,7 +29,7 @@ class NewCustomField:
     }
 
     def __init__(self, custom_field=None, field_name=None, value=None):
-        """NewCustomField
+        r"""NewCustomField
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NewCustomField:
 
     @property
     def custom_field(self):
-        """Gets the custom_field of this NewCustomField.
+        r"""Gets the custom_field of this NewCustomField.
 
         自定义字段
 
@@ -68,7 +68,7 @@ class NewCustomField:
 
     @custom_field.setter
     def custom_field(self, custom_field):
-        """Sets the custom_field of this NewCustomField.
+        r"""Sets the custom_field of this NewCustomField.
 
         自定义字段
 
@@ -79,7 +79,7 @@ class NewCustomField:
 
     @property
     def field_name(self):
-        """Gets the field_name of this NewCustomField.
+        r"""Gets the field_name of this NewCustomField.
 
         自定义字段名称
 
@@ -90,7 +90,7 @@ class NewCustomField:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this NewCustomField.
+        r"""Sets the field_name of this NewCustomField.
 
         自定义字段名称
 
@@ -101,7 +101,7 @@ class NewCustomField:
 
     @property
     def value(self):
-        """Gets the value of this NewCustomField.
+        r"""Gets the value of this NewCustomField.
 
         自定义属性对应的值，多个值以英文逗号区分开
 
@@ -112,7 +112,7 @@ class NewCustomField:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this NewCustomField.
+        r"""Sets the value of this NewCustomField.
 
         自定义属性对应的值，多个值以英文逗号区分开
 

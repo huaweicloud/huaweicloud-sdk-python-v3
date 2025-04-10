@@ -49,7 +49,7 @@ class RecordForApplyDetail:
     }
 
     def __init__(self, id=None, api_apply_status=None, api_apply_type=None, api_id=None, api_name=None, api_using_time=None, app_id=None, app_name=None, apply_time=None, approval_time=None, approver_name=None, comment=None, user_name=None):
-        """RecordForApplyDetail
+        r"""RecordForApplyDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class RecordForApplyDetail:
 
     @property
     def id(self):
-        """Gets the id of this RecordForApplyDetail.
+        r"""Gets the id of this RecordForApplyDetail.
 
         申请编号
 
@@ -138,7 +138,7 @@ class RecordForApplyDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecordForApplyDetail.
+        r"""Sets the id of this RecordForApplyDetail.
 
         申请编号
 
@@ -149,7 +149,7 @@ class RecordForApplyDetail:
 
     @property
     def api_apply_status(self):
-        """Gets the api_apply_status of this RecordForApplyDetail.
+        r"""Gets the api_apply_status of this RecordForApplyDetail.
 
         申请状态
 
@@ -160,7 +160,7 @@ class RecordForApplyDetail:
 
     @api_apply_status.setter
     def api_apply_status(self, api_apply_status):
-        """Sets the api_apply_status of this RecordForApplyDetail.
+        r"""Sets the api_apply_status of this RecordForApplyDetail.
 
         申请状态
 
@@ -171,7 +171,7 @@ class RecordForApplyDetail:
 
     @property
     def api_apply_type(self):
-        """Gets the api_apply_type of this RecordForApplyDetail.
+        r"""Gets the api_apply_type of this RecordForApplyDetail.
 
         申请类型
 
@@ -182,7 +182,7 @@ class RecordForApplyDetail:
 
     @api_apply_type.setter
     def api_apply_type(self, api_apply_type):
-        """Sets the api_apply_type of this RecordForApplyDetail.
+        r"""Sets the api_apply_type of this RecordForApplyDetail.
 
         申请类型
 
@@ -193,7 +193,7 @@ class RecordForApplyDetail:
 
     @property
     def api_id(self):
-        """Gets the api_id of this RecordForApplyDetail.
+        r"""Gets the api_id of this RecordForApplyDetail.
 
         api编号
 
@@ -204,7 +204,7 @@ class RecordForApplyDetail:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this RecordForApplyDetail.
+        r"""Sets the api_id of this RecordForApplyDetail.
 
         api编号
 
@@ -215,7 +215,7 @@ class RecordForApplyDetail:
 
     @property
     def api_name(self):
-        """Gets the api_name of this RecordForApplyDetail.
+        r"""Gets the api_name of this RecordForApplyDetail.
 
         api名称
 
@@ -226,7 +226,7 @@ class RecordForApplyDetail:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this RecordForApplyDetail.
+        r"""Sets the api_name of this RecordForApplyDetail.
 
         api名称
 
@@ -237,7 +237,7 @@ class RecordForApplyDetail:
 
     @property
     def api_using_time(self):
-        """Gets the api_using_time of this RecordForApplyDetail.
+        r"""Gets the api_using_time of this RecordForApplyDetail.
 
         使用截止时间
 
@@ -248,7 +248,7 @@ class RecordForApplyDetail:
 
     @api_using_time.setter
     def api_using_time(self, api_using_time):
-        """Sets the api_using_time of this RecordForApplyDetail.
+        r"""Sets the api_using_time of this RecordForApplyDetail.
 
         使用截止时间
 
@@ -259,7 +259,7 @@ class RecordForApplyDetail:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RecordForApplyDetail.
+        r"""Gets the app_id of this RecordForApplyDetail.
 
         app编号
 
@@ -270,7 +270,7 @@ class RecordForApplyDetail:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RecordForApplyDetail.
+        r"""Sets the app_id of this RecordForApplyDetail.
 
         app编号
 
@@ -281,7 +281,7 @@ class RecordForApplyDetail:
 
     @property
     def app_name(self):
-        """Gets the app_name of this RecordForApplyDetail.
+        r"""Gets the app_name of this RecordForApplyDetail.
 
         app名称
 
@@ -292,7 +292,7 @@ class RecordForApplyDetail:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this RecordForApplyDetail.
+        r"""Sets the app_name of this RecordForApplyDetail.
 
         app名称
 
@@ -303,7 +303,7 @@ class RecordForApplyDetail:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this RecordForApplyDetail.
+        r"""Gets the apply_time of this RecordForApplyDetail.
 
         申请时间
 
@@ -314,7 +314,7 @@ class RecordForApplyDetail:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this RecordForApplyDetail.
+        r"""Sets the apply_time of this RecordForApplyDetail.
 
         申请时间
 
@@ -325,7 +325,7 @@ class RecordForApplyDetail:
 
     @property
     def approval_time(self):
-        """Gets the approval_time of this RecordForApplyDetail.
+        r"""Gets the approval_time of this RecordForApplyDetail.
 
         授权时间
 
@@ -336,7 +336,7 @@ class RecordForApplyDetail:
 
     @approval_time.setter
     def approval_time(self, approval_time):
-        """Sets the approval_time of this RecordForApplyDetail.
+        r"""Sets the approval_time of this RecordForApplyDetail.
 
         授权时间
 
@@ -347,7 +347,7 @@ class RecordForApplyDetail:
 
     @property
     def approver_name(self):
-        """Gets the approver_name of this RecordForApplyDetail.
+        r"""Gets the approver_name of this RecordForApplyDetail.
 
         审核人名称
 
@@ -358,7 +358,7 @@ class RecordForApplyDetail:
 
     @approver_name.setter
     def approver_name(self, approver_name):
-        """Sets the approver_name of this RecordForApplyDetail.
+        r"""Sets the approver_name of this RecordForApplyDetail.
 
         审核人名称
 
@@ -369,7 +369,7 @@ class RecordForApplyDetail:
 
     @property
     def comment(self):
-        """Gets the comment of this RecordForApplyDetail.
+        r"""Gets the comment of this RecordForApplyDetail.
 
         审核评论
 
@@ -380,7 +380,7 @@ class RecordForApplyDetail:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this RecordForApplyDetail.
+        r"""Sets the comment of this RecordForApplyDetail.
 
         审核评论
 
@@ -391,7 +391,7 @@ class RecordForApplyDetail:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RecordForApplyDetail.
+        r"""Gets the user_name of this RecordForApplyDetail.
 
         申请人姓名
 
@@ -402,7 +402,7 @@ class RecordForApplyDetail:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RecordForApplyDetail.
+        r"""Sets the user_name of this RecordForApplyDetail.
 
         申请人姓名
 

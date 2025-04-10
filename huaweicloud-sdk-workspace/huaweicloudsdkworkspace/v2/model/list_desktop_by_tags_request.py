@@ -25,7 +25,7 @@ class ListDesktopByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListDesktopByTagsRequest
+        r"""ListDesktopByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDesktopByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDesktopByTagsRequest.
+        r"""Gets the body of this ListDesktopByTagsRequest.
 
         :return: The body of this ListDesktopByTagsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.QueryDesktopByTagReq`
@@ -52,7 +52,7 @@ class ListDesktopByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDesktopByTagsRequest.
+        r"""Sets the body of this ListDesktopByTagsRequest.
 
         :param body: The body of this ListDesktopByTagsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.QueryDesktopByTagReq`

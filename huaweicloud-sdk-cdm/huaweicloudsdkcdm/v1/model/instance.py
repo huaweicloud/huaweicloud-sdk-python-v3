@@ -31,7 +31,7 @@ class Instance:
     }
 
     def __init__(self, availability_zone=None, nics=None, flavor_ref=None, type=None):
-        """Instance
+        r"""Instance
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Instance:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Instance.
+        r"""Gets the availability_zone of this Instance.
 
         集群的可用分区
 
@@ -71,7 +71,7 @@ class Instance:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Instance.
+        r"""Sets the availability_zone of this Instance.
 
         集群的可用分区
 
@@ -82,7 +82,7 @@ class Instance:
 
     @property
     def nics(self):
-        """Gets the nics of this Instance.
+        r"""Gets the nics of this Instance.
 
         网卡列表，最多两个网卡。请参见•nics参数说明
 
@@ -93,7 +93,7 @@ class Instance:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this Instance.
+        r"""Sets the nics of this Instance.
 
         网卡列表，最多两个网卡。请参见•nics参数说明
 
@@ -104,7 +104,7 @@ class Instance:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this Instance.
+        r"""Gets the flavor_ref of this Instance.
 
         实例规格： - a79fd5ae-1833-448a-88e8-3ea2b913e1f6：表示cdm.small规格，2核CPU、4G内存的虚拟机。适合PoC验证和开发测试。 - fb8fe666-6734-4b11-bc6c-43d11db3c745：表示cdm.medium规格，4核CPU、8G内存的虚拟机适合单张表规模<1000万条的场景。 - 5ddb1071-c5d7-40e0-a874-8a032e81a697：表示cdm.large规格，8核CPU、16G内存的虚拟机。适合单张表规模≥1000万条的场景。 - 6ddb1072-c5d7-40e0-a874-8a032e81a698：表示cdm.xlarge规格，16核CPU、32G内存的虚拟机。需要10GE高速带宽进行TB以上的数据量迁移时使用
 
@@ -115,7 +115,7 @@ class Instance:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this Instance.
+        r"""Sets the flavor_ref of this Instance.
 
         实例规格： - a79fd5ae-1833-448a-88e8-3ea2b913e1f6：表示cdm.small规格，2核CPU、4G内存的虚拟机。适合PoC验证和开发测试。 - fb8fe666-6734-4b11-bc6c-43d11db3c745：表示cdm.medium规格，4核CPU、8G内存的虚拟机适合单张表规模<1000万条的场景。 - 5ddb1071-c5d7-40e0-a874-8a032e81a697：表示cdm.large规格，8核CPU、16G内存的虚拟机。适合单张表规模≥1000万条的场景。 - 6ddb1072-c5d7-40e0-a874-8a032e81a698：表示cdm.xlarge规格，16核CPU、32G内存的虚拟机。需要10GE高速带宽进行TB以上的数据量迁移时使用
 
@@ -126,7 +126,7 @@ class Instance:
 
     @property
     def type(self):
-        """Gets the type of this Instance.
+        r"""Gets the type of this Instance.
 
         节点类型，当前只有“cdm”一种类型
 
@@ -137,7 +137,7 @@ class Instance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Instance.
+        r"""Sets the type of this Instance.
 
         节点类型，当前只有“cdm”一种类型
 

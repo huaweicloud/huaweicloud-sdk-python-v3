@@ -35,7 +35,7 @@ class CreateCredentialResult:
     }
 
     def __init__(self, create_time=None, access=None, secret=None, status=None, user_id=None, description=None):
-        """CreateCredentialResult
+        r"""CreateCredentialResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateCredentialResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateCredentialResult.
+        r"""Gets the create_time of this CreateCredentialResult.
 
         创建访问密钥时间。
 
@@ -83,7 +83,7 @@ class CreateCredentialResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateCredentialResult.
+        r"""Sets the create_time of this CreateCredentialResult.
 
         创建访问密钥时间。
 
@@ -94,7 +94,7 @@ class CreateCredentialResult:
 
     @property
     def access(self):
-        """Gets the access of this CreateCredentialResult.
+        r"""Gets the access of this CreateCredentialResult.
 
         创建的AK。
 
@@ -105,7 +105,7 @@ class CreateCredentialResult:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this CreateCredentialResult.
+        r"""Sets the access of this CreateCredentialResult.
 
         创建的AK。
 
@@ -116,7 +116,7 @@ class CreateCredentialResult:
 
     @property
     def secret(self):
-        """Gets the secret of this CreateCredentialResult.
+        r"""Gets the secret of this CreateCredentialResult.
 
         创建的SK。
 
@@ -127,7 +127,7 @@ class CreateCredentialResult:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this CreateCredentialResult.
+        r"""Sets the secret of this CreateCredentialResult.
 
         创建的SK。
 
@@ -138,7 +138,7 @@ class CreateCredentialResult:
 
     @property
     def status(self):
-        """Gets the status of this CreateCredentialResult.
+        r"""Gets the status of this CreateCredentialResult.
 
         访问密钥状态。
 
@@ -149,7 +149,7 @@ class CreateCredentialResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateCredentialResult.
+        r"""Sets the status of this CreateCredentialResult.
 
         访问密钥状态。
 
@@ -160,7 +160,7 @@ class CreateCredentialResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateCredentialResult.
+        r"""Gets the user_id of this CreateCredentialResult.
 
         IAM用户ID。
 
@@ -171,7 +171,7 @@ class CreateCredentialResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateCredentialResult.
+        r"""Sets the user_id of this CreateCredentialResult.
 
         IAM用户ID。
 
@@ -182,7 +182,7 @@ class CreateCredentialResult:
 
     @property
     def description(self):
-        """Gets the description of this CreateCredentialResult.
+        r"""Gets the description of this CreateCredentialResult.
 
         访问密钥描述信息。
 
@@ -193,7 +193,7 @@ class CreateCredentialResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCredentialResult.
+        r"""Sets the description of this CreateCredentialResult.
 
         访问密钥描述信息。
 

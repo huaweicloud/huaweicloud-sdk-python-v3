@@ -27,7 +27,7 @@ class JobValidationResult:
     }
 
     def __init__(self, message=None, status=None):
-        """JobValidationResult
+        r"""JobValidationResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobValidationResult:
 
     @property
     def message(self):
-        """Gets the message of this JobValidationResult.
+        r"""Gets the message of this JobValidationResult.
 
         错误描述
 
@@ -61,7 +61,7 @@ class JobValidationResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this JobValidationResult.
+        r"""Sets the message of this JobValidationResult.
 
         错误描述
 
@@ -72,7 +72,7 @@ class JobValidationResult:
 
     @property
     def status(self):
-        """Gets the status of this JobValidationResult.
+        r"""Gets the status of this JobValidationResult.
 
         ERROR,WARNING
 
@@ -83,7 +83,7 @@ class JobValidationResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobValidationResult.
+        r"""Sets the status of this JobValidationResult.
 
         ERROR,WARNING
 

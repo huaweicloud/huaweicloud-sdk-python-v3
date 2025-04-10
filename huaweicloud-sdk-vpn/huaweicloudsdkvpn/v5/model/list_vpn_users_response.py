@@ -32,7 +32,7 @@ class ListVpnUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None, page_info=None, request_id=None):
-        """ListVpnUsersResponse
+        r"""ListVpnUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListVpnUsersResponse.
+        r"""Gets the users of this ListVpnUsersResponse.
 
         用户列表信息
 
@@ -76,7 +76,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListVpnUsersResponse.
+        r"""Sets the users of this ListVpnUsersResponse.
 
         用户列表信息
 
@@ -87,7 +87,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListVpnUsersResponse.
+        r"""Gets the total_count of this ListVpnUsersResponse.
 
         总数
 
@@ -98,7 +98,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListVpnUsersResponse.
+        r"""Sets the total_count of this ListVpnUsersResponse.
 
         总数
 
@@ -109,7 +109,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpnUsersResponse.
+        r"""Gets the page_info of this ListVpnUsersResponse.
 
         :return: The page_info of this ListVpnUsersResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -118,7 +118,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpnUsersResponse.
+        r"""Sets the page_info of this ListVpnUsersResponse.
 
         :param page_info: The page_info of this ListVpnUsersResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -127,7 +127,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpnUsersResponse.
+        r"""Gets the request_id of this ListVpnUsersResponse.
 
         请求ID
 
@@ -138,7 +138,7 @@ class ListVpnUsersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpnUsersResponse.
+        r"""Sets the request_id of this ListVpnUsersResponse.
 
         请求ID
 

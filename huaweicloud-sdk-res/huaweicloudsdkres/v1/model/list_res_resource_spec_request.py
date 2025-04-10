@@ -25,7 +25,7 @@ class ListResResourceSpecRequest:
     }
 
     def __init__(self, content_type=None):
-        """ListResResourceSpecRequest
+        r"""ListResResourceSpecRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListResResourceSpecRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListResResourceSpecRequest.
+        r"""Gets the content_type of this ListResResourceSpecRequest.
 
         内容类型，取值为application/json。
 
@@ -53,7 +53,7 @@ class ListResResourceSpecRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListResResourceSpecRequest.
+        r"""Sets the content_type of this ListResResourceSpecRequest.
 
         内容类型，取值为application/json。
 

@@ -41,7 +41,7 @@ class ListFutureExecutionsReq:
     }
 
     def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, time_zone=None, scheduled_date=None, scheduled_time=None, expire_time=None):
-        """ListFutureExecutionsReq
+        r"""ListFutureExecutionsReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListFutureExecutionsReq:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ListFutureExecutionsReq.
+        r"""Gets the scheduled_type of this ListFutureExecutionsReq.
 
         执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。
 
@@ -110,7 +110,7 @@ class ListFutureExecutionsReq:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ListFutureExecutionsReq.
+        r"""Sets the scheduled_type of this ListFutureExecutionsReq.
 
         执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。
 
@@ -121,7 +121,7 @@ class ListFutureExecutionsReq:
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this ListFutureExecutionsReq.
+        r"""Gets the day_interval of this ListFutureExecutionsReq.
 
         周期按天时：按x天间隔执行。
 
@@ -132,7 +132,7 @@ class ListFutureExecutionsReq:
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this ListFutureExecutionsReq.
+        r"""Sets the day_interval of this ListFutureExecutionsReq.
 
         周期按天时：按x天间隔执行。
 
@@ -143,7 +143,7 @@ class ListFutureExecutionsReq:
 
     @property
     def week_list(self):
-        """Gets the week_list of this ListFutureExecutionsReq.
+        r"""Gets the week_list of this ListFutureExecutionsReq.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -154,7 +154,7 @@ class ListFutureExecutionsReq:
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this ListFutureExecutionsReq.
+        r"""Sets the week_list of this ListFutureExecutionsReq.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -165,7 +165,7 @@ class ListFutureExecutionsReq:
 
     @property
     def month_list(self):
-        """Gets the month_list of this ListFutureExecutionsReq.
+        r"""Gets the month_list of this ListFutureExecutionsReq.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -176,7 +176,7 @@ class ListFutureExecutionsReq:
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this ListFutureExecutionsReq.
+        r"""Sets the month_list of this ListFutureExecutionsReq.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -187,7 +187,7 @@ class ListFutureExecutionsReq:
 
     @property
     def date_list(self):
-        """Gets the date_list of this ListFutureExecutionsReq.
+        r"""Gets the date_list of this ListFutureExecutionsReq.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -198,7 +198,7 @@ class ListFutureExecutionsReq:
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this ListFutureExecutionsReq.
+        r"""Sets the date_list of this ListFutureExecutionsReq.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -209,7 +209,7 @@ class ListFutureExecutionsReq:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ListFutureExecutionsReq.
+        r"""Gets the time_zone of this ListFutureExecutionsReq.
 
         时区。
 
@@ -220,7 +220,7 @@ class ListFutureExecutionsReq:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ListFutureExecutionsReq.
+        r"""Sets the time_zone of this ListFutureExecutionsReq.
 
         时区。
 
@@ -231,7 +231,7 @@ class ListFutureExecutionsReq:
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this ListFutureExecutionsReq.
+        r"""Gets the scheduled_date of this ListFutureExecutionsReq.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -242,7 +242,7 @@ class ListFutureExecutionsReq:
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this ListFutureExecutionsReq.
+        r"""Sets the scheduled_date of this ListFutureExecutionsReq.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -253,7 +253,7 @@ class ListFutureExecutionsReq:
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this ListFutureExecutionsReq.
+        r"""Gets the scheduled_time of this ListFutureExecutionsReq.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -264,7 +264,7 @@ class ListFutureExecutionsReq:
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this ListFutureExecutionsReq.
+        r"""Sets the scheduled_time of this ListFutureExecutionsReq.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -275,7 +275,7 @@ class ListFutureExecutionsReq:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ListFutureExecutionsReq.
+        r"""Gets the expire_time of this ListFutureExecutionsReq.
 
         到期时间。
 
@@ -286,7 +286,7 @@ class ListFutureExecutionsReq:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ListFutureExecutionsReq.
+        r"""Sets the expire_time of this ListFutureExecutionsReq.
 
         到期时间。
 

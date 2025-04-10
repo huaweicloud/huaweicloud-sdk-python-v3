@@ -25,7 +25,7 @@ class BatchDeleteGroupReq:
     }
 
     def __init__(self, group_ids=None):
-        """BatchDeleteGroupReq
+        r"""BatchDeleteGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteGroupReq:
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this BatchDeleteGroupReq.
+        r"""Gets the group_ids of this BatchDeleteGroupReq.
 
         所有需要删除的消费组ID。
 
@@ -53,7 +53,7 @@ class BatchDeleteGroupReq:
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this BatchDeleteGroupReq.
+        r"""Sets the group_ids of this BatchDeleteGroupReq.
 
         所有需要删除的消费组ID。
 

@@ -53,7 +53,7 @@ class SignApiBindingInfo:
     }
 
     def __init__(self, publish_id=None, api_id=None, group_name=None, binding_time=None, env_id=None, env_name=None, api_type=None, api_name=None, id=None, api_remark=None, sign_id=None, sign_name=None, sign_key=None, sign_secret=None, sign_type=None):
-        """SignApiBindingInfo
+        r"""SignApiBindingInfo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class SignApiBindingInfo:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this SignApiBindingInfo.
+        r"""Gets the publish_id of this SignApiBindingInfo.
 
         API的发布编号
 
@@ -152,7 +152,7 @@ class SignApiBindingInfo:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this SignApiBindingInfo.
+        r"""Sets the publish_id of this SignApiBindingInfo.
 
         API的发布编号
 
@@ -163,7 +163,7 @@ class SignApiBindingInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this SignApiBindingInfo.
+        r"""Gets the api_id of this SignApiBindingInfo.
 
         API编号
 
@@ -174,7 +174,7 @@ class SignApiBindingInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this SignApiBindingInfo.
+        r"""Sets the api_id of this SignApiBindingInfo.
 
         API编号
 
@@ -185,7 +185,7 @@ class SignApiBindingInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this SignApiBindingInfo.
+        r"""Gets the group_name of this SignApiBindingInfo.
 
         API所属分组的名称
 
@@ -196,7 +196,7 @@ class SignApiBindingInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this SignApiBindingInfo.
+        r"""Sets the group_name of this SignApiBindingInfo.
 
         API所属分组的名称
 
@@ -207,7 +207,7 @@ class SignApiBindingInfo:
 
     @property
     def binding_time(self):
-        """Gets the binding_time of this SignApiBindingInfo.
+        r"""Gets the binding_time of this SignApiBindingInfo.
 
         绑定时间
 
@@ -218,7 +218,7 @@ class SignApiBindingInfo:
 
     @binding_time.setter
     def binding_time(self, binding_time):
-        """Sets the binding_time of this SignApiBindingInfo.
+        r"""Sets the binding_time of this SignApiBindingInfo.
 
         绑定时间
 
@@ -229,7 +229,7 @@ class SignApiBindingInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this SignApiBindingInfo.
+        r"""Gets the env_id of this SignApiBindingInfo.
 
         API所属环境的编号
 
@@ -240,7 +240,7 @@ class SignApiBindingInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this SignApiBindingInfo.
+        r"""Sets the env_id of this SignApiBindingInfo.
 
         API所属环境的编号
 
@@ -251,7 +251,7 @@ class SignApiBindingInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this SignApiBindingInfo.
+        r"""Gets the env_name of this SignApiBindingInfo.
 
         API所属环境的名称
 
@@ -262,7 +262,7 @@ class SignApiBindingInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this SignApiBindingInfo.
+        r"""Sets the env_name of this SignApiBindingInfo.
 
         API所属环境的名称
 
@@ -273,7 +273,7 @@ class SignApiBindingInfo:
 
     @property
     def api_type(self):
-        """Gets the api_type of this SignApiBindingInfo.
+        r"""Gets the api_type of this SignApiBindingInfo.
 
         API类型
 
@@ -284,7 +284,7 @@ class SignApiBindingInfo:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this SignApiBindingInfo.
+        r"""Sets the api_type of this SignApiBindingInfo.
 
         API类型
 
@@ -295,7 +295,7 @@ class SignApiBindingInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this SignApiBindingInfo.
+        r"""Gets the api_name of this SignApiBindingInfo.
 
         API名称
 
@@ -306,7 +306,7 @@ class SignApiBindingInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this SignApiBindingInfo.
+        r"""Sets the api_name of this SignApiBindingInfo.
 
         API名称
 
@@ -317,7 +317,7 @@ class SignApiBindingInfo:
 
     @property
     def id(self):
-        """Gets the id of this SignApiBindingInfo.
+        r"""Gets the id of this SignApiBindingInfo.
 
         绑定关系的ID
 
@@ -328,7 +328,7 @@ class SignApiBindingInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SignApiBindingInfo.
+        r"""Sets the id of this SignApiBindingInfo.
 
         绑定关系的ID
 
@@ -339,7 +339,7 @@ class SignApiBindingInfo:
 
     @property
     def api_remark(self):
-        """Gets the api_remark of this SignApiBindingInfo.
+        r"""Gets the api_remark of this SignApiBindingInfo.
 
         API描述
 
@@ -350,7 +350,7 @@ class SignApiBindingInfo:
 
     @api_remark.setter
     def api_remark(self, api_remark):
-        """Sets the api_remark of this SignApiBindingInfo.
+        r"""Sets the api_remark of this SignApiBindingInfo.
 
         API描述
 
@@ -361,7 +361,7 @@ class SignApiBindingInfo:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this SignApiBindingInfo.
+        r"""Gets the sign_id of this SignApiBindingInfo.
 
         签名密钥的编号
 
@@ -372,7 +372,7 @@ class SignApiBindingInfo:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this SignApiBindingInfo.
+        r"""Sets the sign_id of this SignApiBindingInfo.
 
         签名密钥的编号
 
@@ -383,7 +383,7 @@ class SignApiBindingInfo:
 
     @property
     def sign_name(self):
-        """Gets the sign_name of this SignApiBindingInfo.
+        r"""Gets the sign_name of this SignApiBindingInfo.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -394,7 +394,7 @@ class SignApiBindingInfo:
 
     @sign_name.setter
     def sign_name(self, sign_name):
-        """Sets the sign_name of this SignApiBindingInfo.
+        r"""Sets the sign_name of this SignApiBindingInfo.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -405,7 +405,7 @@ class SignApiBindingInfo:
 
     @property
     def sign_key(self):
-        """Gets the sign_key of this SignApiBindingInfo.
+        r"""Gets the sign_key of this SignApiBindingInfo.
 
         签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
 
@@ -416,7 +416,7 @@ class SignApiBindingInfo:
 
     @sign_key.setter
     def sign_key(self, sign_key):
-        """Sets the sign_key of this SignApiBindingInfo.
+        r"""Sets the sign_key of this SignApiBindingInfo.
 
         签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
 
@@ -427,7 +427,7 @@ class SignApiBindingInfo:
 
     @property
     def sign_secret(self):
-        """Gets the sign_secret of this SignApiBindingInfo.
+        r"""Gets the sign_secret of this SignApiBindingInfo.
 
         签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
@@ -438,7 +438,7 @@ class SignApiBindingInfo:
 
     @sign_secret.setter
     def sign_secret(self, sign_secret):
-        """Sets the sign_secret of this SignApiBindingInfo.
+        r"""Sets the sign_secret of this SignApiBindingInfo.
 
         签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
@@ -449,7 +449,7 @@ class SignApiBindingInfo:
 
     @property
     def sign_type(self):
-        """Gets the sign_type of this SignApiBindingInfo.
+        r"""Gets the sign_type of this SignApiBindingInfo.
 
         签名密钥类型： - hmac - basic - public_key - aes  basic类型需要实例升级到对应版本，若不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIC特性”，如确认实例不存在public_key配置可联系技术工程师开启。  aes类型需要实例升级到对应版本，若不存在可联系技术工程师升级。
 
@@ -460,7 +460,7 @@ class SignApiBindingInfo:
 
     @sign_type.setter
     def sign_type(self, sign_type):
-        """Sets the sign_type of this SignApiBindingInfo.
+        r"""Sets the sign_type of this SignApiBindingInfo.
 
         签名密钥类型： - hmac - basic - public_key - aes  basic类型需要实例升级到对应版本，若不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIC特性”，如确认实例不存在public_key配置可联系技术工程师开启。  aes类型需要实例升级到对应版本，若不存在可联系技术工程师升级。
 

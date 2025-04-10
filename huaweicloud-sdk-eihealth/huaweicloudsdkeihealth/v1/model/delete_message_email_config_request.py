@@ -23,7 +23,7 @@ class DeleteMessageEmailConfigRequest:
     }
 
     def __init__(self):
-        """DeleteMessageEmailConfigRequest
+        r"""DeleteMessageEmailConfigRequest
 
         The model defined in huaweicloud sdk
 

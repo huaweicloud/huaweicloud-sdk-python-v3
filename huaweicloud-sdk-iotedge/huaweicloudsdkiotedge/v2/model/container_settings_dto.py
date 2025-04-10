@@ -39,7 +39,7 @@ class ContainerSettingsDTO:
     }
 
     def __init__(self, configs=None, image_url=None, envs=None, volumes=None, npu_type=None, vnpu_template=None, resources=None, ext_devices=None):
-        """ContainerSettingsDTO
+        r"""ContainerSettingsDTO
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ContainerSettingsDTO:
 
     @property
     def configs(self):
-        """Gets the configs of this ContainerSettingsDTO.
+        r"""Gets the configs of this ContainerSettingsDTO.
 
         :return: The configs of this ContainerSettingsDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
@@ -100,7 +100,7 @@ class ContainerSettingsDTO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ContainerSettingsDTO.
+        r"""Sets the configs of this ContainerSettingsDTO.
 
         :param configs: The configs of this ContainerSettingsDTO.
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
@@ -109,7 +109,7 @@ class ContainerSettingsDTO:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ContainerSettingsDTO.
+        r"""Gets the image_url of this ContainerSettingsDTO.
 
         镜像存储地址
 
@@ -120,7 +120,7 @@ class ContainerSettingsDTO:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ContainerSettingsDTO.
+        r"""Sets the image_url of this ContainerSettingsDTO.
 
         镜像存储地址
 
@@ -131,7 +131,7 @@ class ContainerSettingsDTO:
 
     @property
     def envs(self):
-        """Gets the envs of this ContainerSettingsDTO.
+        r"""Gets the envs of this ContainerSettingsDTO.
 
         环境变量
 
@@ -142,7 +142,7 @@ class ContainerSettingsDTO:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ContainerSettingsDTO.
+        r"""Sets the envs of this ContainerSettingsDTO.
 
         环境变量
 
@@ -153,7 +153,7 @@ class ContainerSettingsDTO:
 
     @property
     def volumes(self):
-        """Gets the volumes of this ContainerSettingsDTO.
+        r"""Gets the volumes of this ContainerSettingsDTO.
 
         卷配置
 
@@ -164,7 +164,7 @@ class ContainerSettingsDTO:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ContainerSettingsDTO.
+        r"""Sets the volumes of this ContainerSettingsDTO.
 
         卷配置
 
@@ -175,7 +175,7 @@ class ContainerSettingsDTO:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this ContainerSettingsDTO.
+        r"""Gets the npu_type of this ContainerSettingsDTO.
 
         NPU类型, D310:昇腾310推理卡，D910:昇腾910训练卡;D310P：昇腾710或者310P加速卡
 
@@ -186,7 +186,7 @@ class ContainerSettingsDTO:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this ContainerSettingsDTO.
+        r"""Sets the npu_type of this ContainerSettingsDTO.
 
         NPU类型, D310:昇腾310推理卡，D910:昇腾910训练卡;D310P：昇腾710或者310P加速卡
 
@@ -197,7 +197,7 @@ class ContainerSettingsDTO:
 
     @property
     def vnpu_template(self):
-        """Gets the vnpu_template of this ContainerSettingsDTO.
+        r"""Gets the vnpu_template of this ContainerSettingsDTO.
 
         NPU算力切分模板,昇腾D310Pro，支持：vir01、vir02、vir02_1c、vir04、vir04_4c_dvpp、vir04_3c、vir04_3c_ndvpp 昇腾D910芯片支持:vir01|vir02|vir04|vir08 可在对应芯片的机器上通过npu-smi info -t template-info命令查询其详细信息
 
@@ -208,7 +208,7 @@ class ContainerSettingsDTO:
 
     @vnpu_template.setter
     def vnpu_template(self, vnpu_template):
-        """Sets the vnpu_template of this ContainerSettingsDTO.
+        r"""Sets the vnpu_template of this ContainerSettingsDTO.
 
         NPU算力切分模板,昇腾D310Pro，支持：vir01、vir02、vir02_1c、vir04、vir04_4c_dvpp、vir04_3c、vir04_3c_ndvpp 昇腾D910芯片支持:vir01|vir02|vir04|vir08 可在对应芯片的机器上通过npu-smi info -t template-info命令查询其详细信息
 
@@ -219,7 +219,7 @@ class ContainerSettingsDTO:
 
     @property
     def resources(self):
-        """Gets the resources of this ContainerSettingsDTO.
+        r"""Gets the resources of this ContainerSettingsDTO.
 
         :return: The resources of this ContainerSettingsDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
@@ -228,7 +228,7 @@ class ContainerSettingsDTO:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ContainerSettingsDTO.
+        r"""Sets the resources of this ContainerSettingsDTO.
 
         :param resources: The resources of this ContainerSettingsDTO.
         :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
@@ -237,7 +237,7 @@ class ContainerSettingsDTO:
 
     @property
     def ext_devices(self):
-        """Gets the ext_devices of this ContainerSettingsDTO.
+        r"""Gets the ext_devices of this ContainerSettingsDTO.
 
         外挂设备配置
 
@@ -248,7 +248,7 @@ class ContainerSettingsDTO:
 
     @ext_devices.setter
     def ext_devices(self, ext_devices):
-        """Sets the ext_devices of this ContainerSettingsDTO.
+        r"""Sets the ext_devices of this ContainerSettingsDTO.
 
         外挂设备配置
 

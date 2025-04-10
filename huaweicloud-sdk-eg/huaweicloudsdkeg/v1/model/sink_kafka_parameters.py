@@ -29,7 +29,7 @@ class SinkKafkaParameters:
     }
 
     def __init__(self, topic=None, key_transform=None, connection_id=None):
-        """SinkKafkaParameters
+        r"""SinkKafkaParameters
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SinkKafkaParameters:
 
     @property
     def topic(self):
-        """Gets the topic of this SinkKafkaParameters.
+        r"""Gets the topic of this SinkKafkaParameters.
 
         topic名称
 
@@ -66,7 +66,7 @@ class SinkKafkaParameters:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SinkKafkaParameters.
+        r"""Sets the topic of this SinkKafkaParameters.
 
         topic名称
 
@@ -77,7 +77,7 @@ class SinkKafkaParameters:
 
     @property
     def key_transform(self):
-        """Gets the key_transform of this SinkKafkaParameters.
+        r"""Gets the key_transform of this SinkKafkaParameters.
 
         key的转换规则
 
@@ -88,7 +88,7 @@ class SinkKafkaParameters:
 
     @key_transform.setter
     def key_transform(self, key_transform):
-        """Sets the key_transform of this SinkKafkaParameters.
+        r"""Sets the key_transform of this SinkKafkaParameters.
 
         key的转换规则
 
@@ -99,7 +99,7 @@ class SinkKafkaParameters:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this SinkKafkaParameters.
+        r"""Gets the connection_id of this SinkKafkaParameters.
 
         目标连接id
 
@@ -110,7 +110,7 @@ class SinkKafkaParameters:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this SinkKafkaParameters.
+        r"""Sets the connection_id of this SinkKafkaParameters.
 
         目标连接id
 

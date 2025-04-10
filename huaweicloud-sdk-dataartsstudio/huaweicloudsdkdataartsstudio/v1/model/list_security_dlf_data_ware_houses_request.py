@@ -29,7 +29,7 @@ class ListSecurityDlfDataWareHousesRequest:
     }
 
     def __init__(self, workspace=None, offset=None, limit=None):
-        """ListSecurityDlfDataWareHousesRequest
+        r"""ListSecurityDlfDataWareHousesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSecurityDlfDataWareHousesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDlfDataWareHousesRequest.
+        r"""Gets the workspace of this ListSecurityDlfDataWareHousesRequest.
 
         DataArts Studio工作空间ID
 
@@ -67,7 +67,7 @@ class ListSecurityDlfDataWareHousesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDlfDataWareHousesRequest.
+        r"""Sets the workspace of this ListSecurityDlfDataWareHousesRequest.
 
         DataArts Studio工作空间ID
 
@@ -78,7 +78,7 @@ class ListSecurityDlfDataWareHousesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityDlfDataWareHousesRequest.
+        r"""Gets the offset of this ListSecurityDlfDataWareHousesRequest.
 
         offset
 
@@ -89,7 +89,7 @@ class ListSecurityDlfDataWareHousesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityDlfDataWareHousesRequest.
+        r"""Sets the offset of this ListSecurityDlfDataWareHousesRequest.
 
         offset
 
@@ -100,7 +100,7 @@ class ListSecurityDlfDataWareHousesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityDlfDataWareHousesRequest.
+        r"""Gets the limit of this ListSecurityDlfDataWareHousesRequest.
 
         limit
 
@@ -111,7 +111,7 @@ class ListSecurityDlfDataWareHousesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityDlfDataWareHousesRequest.
+        r"""Sets the limit of this ListSecurityDlfDataWareHousesRequest.
 
         limit
 

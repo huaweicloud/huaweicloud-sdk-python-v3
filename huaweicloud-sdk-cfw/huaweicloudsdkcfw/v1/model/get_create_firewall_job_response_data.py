@@ -31,7 +31,7 @@ class GetCreateFirewallJobResponseData:
     }
 
     def __init__(self, id=None, status=None, begin_time=None, end_time=None):
-        """GetCreateFirewallJobResponseData
+        r"""GetCreateFirewallJobResponseData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GetCreateFirewallJobResponseData:
 
     @property
     def id(self):
-        """Gets the id of this GetCreateFirewallJobResponseData.
+        r"""Gets the id of this GetCreateFirewallJobResponseData.
 
         创建按需防火墙任务ID
 
@@ -75,7 +75,7 @@ class GetCreateFirewallJobResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetCreateFirewallJobResponseData.
+        r"""Sets the id of this GetCreateFirewallJobResponseData.
 
         创建按需防火墙任务ID
 
@@ -86,7 +86,7 @@ class GetCreateFirewallJobResponseData:
 
     @property
     def status(self):
-        """Gets the status of this GetCreateFirewallJobResponseData.
+        r"""Gets the status of this GetCreateFirewallJobResponseData.
 
         任务执行状态，用于向客户显示创建防火墙是否成功。  取值：  值为“Running”，表示任务正在执行。  值为“Success”，表示任务执行成功。  值为“Failed”，表示任务执行失败。
 
@@ -97,7 +97,7 @@ class GetCreateFirewallJobResponseData:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetCreateFirewallJobResponseData.
+        r"""Sets the status of this GetCreateFirewallJobResponseData.
 
         任务执行状态，用于向客户显示创建防火墙是否成功。  取值：  值为“Running”，表示任务正在执行。  值为“Success”，表示任务执行成功。  值为“Failed”，表示任务执行失败。
 
@@ -108,7 +108,7 @@ class GetCreateFirewallJobResponseData:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this GetCreateFirewallJobResponseData.
+        r"""Gets the begin_time of this GetCreateFirewallJobResponseData.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -119,7 +119,7 @@ class GetCreateFirewallJobResponseData:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this GetCreateFirewallJobResponseData.
+        r"""Sets the begin_time of this GetCreateFirewallJobResponseData.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -130,7 +130,7 @@ class GetCreateFirewallJobResponseData:
 
     @property
     def end_time(self):
-        """Gets the end_time of this GetCreateFirewallJobResponseData.
+        r"""Gets the end_time of this GetCreateFirewallJobResponseData.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -141,7 +141,7 @@ class GetCreateFirewallJobResponseData:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this GetCreateFirewallJobResponseData.
+        r"""Sets the end_time of this GetCreateFirewallJobResponseData.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

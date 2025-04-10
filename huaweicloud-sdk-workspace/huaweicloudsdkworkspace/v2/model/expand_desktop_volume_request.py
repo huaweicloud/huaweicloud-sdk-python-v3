@@ -31,7 +31,7 @@ class ExpandDesktopVolumeRequest:
     }
 
     def __init__(self, desktop_id=None, service_transaction_id=None, volume_id=None, body=None):
-        """ExpandDesktopVolumeRequest
+        r"""ExpandDesktopVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ExpandDesktopVolumeRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ExpandDesktopVolumeRequest.
+        r"""Gets the desktop_id of this ExpandDesktopVolumeRequest.
 
         桌面ID。
 
@@ -73,7 +73,7 @@ class ExpandDesktopVolumeRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ExpandDesktopVolumeRequest.
+        r"""Sets the desktop_id of this ExpandDesktopVolumeRequest.
 
         桌面ID。
 
@@ -84,7 +84,7 @@ class ExpandDesktopVolumeRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ExpandDesktopVolumeRequest.
+        r"""Gets the service_transaction_id of this ExpandDesktopVolumeRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -95,7 +95,7 @@ class ExpandDesktopVolumeRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ExpandDesktopVolumeRequest.
+        r"""Sets the service_transaction_id of this ExpandDesktopVolumeRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -106,7 +106,7 @@ class ExpandDesktopVolumeRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ExpandDesktopVolumeRequest.
+        r"""Gets the volume_id of this ExpandDesktopVolumeRequest.
 
         磁盘ID。
 
@@ -117,7 +117,7 @@ class ExpandDesktopVolumeRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ExpandDesktopVolumeRequest.
+        r"""Sets the volume_id of this ExpandDesktopVolumeRequest.
 
         磁盘ID。
 
@@ -128,7 +128,7 @@ class ExpandDesktopVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandDesktopVolumeRequest.
+        r"""Gets the body of this ExpandDesktopVolumeRequest.
 
         :return: The body of this ExpandDesktopVolumeRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandVolumeReq`
@@ -137,7 +137,7 @@ class ExpandDesktopVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandDesktopVolumeRequest.
+        r"""Sets the body of this ExpandDesktopVolumeRequest.
 
         :param body: The body of this ExpandDesktopVolumeRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ExpandVolumeReq`

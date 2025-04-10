@@ -26,7 +26,7 @@ class CreateAccountResponse(SdkResponse):
     }
 
     def __init__(self, operation_id=None):
-        """CreateAccountResponse
+        r"""CreateAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAccountResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this CreateAccountResponse.
+        r"""Gets the operation_id of this CreateAccountResponse.
 
         创建账号、纳管账号、纳管注册OU的操作ID。
 
@@ -55,7 +55,7 @@ class CreateAccountResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this CreateAccountResponse.
+        r"""Sets the operation_id of this CreateAccountResponse.
 
         创建账号、纳管账号、纳管注册OU的操作ID。
 

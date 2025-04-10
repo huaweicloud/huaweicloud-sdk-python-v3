@@ -25,7 +25,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
     }
 
     def __init__(self, deployment_targets=None):
-        """DeploymentTargetsPrimitiveTypeHolder
+        r"""DeploymentTargetsPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
 
     @property
     def deployment_targets(self):
-        """Gets the deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
+        r"""Gets the deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
 
         :return: The deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
         :rtype: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
@@ -51,7 +51,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
 
     @deployment_targets.setter
     def deployment_targets(self, deployment_targets):
-        """Sets the deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
+        r"""Sets the deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
 
         :param deployment_targets: The deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
         :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargets`

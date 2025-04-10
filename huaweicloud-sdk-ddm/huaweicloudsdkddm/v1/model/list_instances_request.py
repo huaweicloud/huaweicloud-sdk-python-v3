@@ -27,7 +27,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -61,7 +61,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -72,7 +72,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是10。
 
@@ -83,7 +83,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是10。
 

@@ -31,7 +31,7 @@ class CreateInterRegionBandwidth:
     }
 
     def __init__(self, cloud_connection_id=None, bandwidth_package_id=None, bandwidth=None, inter_region_ids=None):
-        """CreateInterRegionBandwidth
+        r"""CreateInterRegionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateInterRegionBandwidth:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CreateInterRegionBandwidth.
+        r"""Gets the cloud_connection_id of this CreateInterRegionBandwidth.
 
         云连接实例ID。
 
@@ -71,7 +71,7 @@ class CreateInterRegionBandwidth:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CreateInterRegionBandwidth.
+        r"""Sets the cloud_connection_id of this CreateInterRegionBandwidth.
 
         云连接实例ID。
 
@@ -82,7 +82,7 @@ class CreateInterRegionBandwidth:
 
     @property
     def bandwidth_package_id(self):
-        """Gets the bandwidth_package_id of this CreateInterRegionBandwidth.
+        r"""Gets the bandwidth_package_id of this CreateInterRegionBandwidth.
 
         带宽包实例ID。
 
@@ -93,7 +93,7 @@ class CreateInterRegionBandwidth:
 
     @bandwidth_package_id.setter
     def bandwidth_package_id(self, bandwidth_package_id):
-        """Sets the bandwidth_package_id of this CreateInterRegionBandwidth.
+        r"""Sets the bandwidth_package_id of this CreateInterRegionBandwidth.
 
         带宽包实例ID。
 
@@ -104,7 +104,7 @@ class CreateInterRegionBandwidth:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreateInterRegionBandwidth.
+        r"""Gets the bandwidth of this CreateInterRegionBandwidth.
 
         域间带宽值。
 
@@ -115,7 +115,7 @@ class CreateInterRegionBandwidth:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreateInterRegionBandwidth.
+        r"""Sets the bandwidth of this CreateInterRegionBandwidth.
 
         域间带宽值。
 
@@ -126,7 +126,7 @@ class CreateInterRegionBandwidth:
 
     @property
     def inter_region_ids(self):
-        """Gets the inter_region_ids of this CreateInterRegionBandwidth.
+        r"""Gets the inter_region_ids of this CreateInterRegionBandwidth.
 
         域间RegionID。
 
@@ -137,7 +137,7 @@ class CreateInterRegionBandwidth:
 
     @inter_region_ids.setter
     def inter_region_ids(self, inter_region_ids):
-        """Sets the inter_region_ids of this CreateInterRegionBandwidth.
+        r"""Sets the inter_region_ids of this CreateInterRegionBandwidth.
 
         域间RegionID。
 

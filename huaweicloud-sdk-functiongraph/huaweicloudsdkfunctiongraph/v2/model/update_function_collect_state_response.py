@@ -24,7 +24,7 @@ class UpdateFunctionCollectStateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateFunctionCollectStateResponse
+        r"""UpdateFunctionCollectStateResponse
 
         The model defined in huaweicloud sdk
 

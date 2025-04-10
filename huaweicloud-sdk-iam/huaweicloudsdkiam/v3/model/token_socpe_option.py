@@ -27,7 +27,7 @@ class TokenSocpeOption:
     }
 
     def __init__(self, domain=None, project=None):
-        """TokenSocpeOption
+        r"""TokenSocpeOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TokenSocpeOption:
 
     @property
     def domain(self):
-        """Gets the domain of this TokenSocpeOption.
+        r"""Gets the domain of this TokenSocpeOption.
 
         :return: The domain of this TokenSocpeOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
@@ -59,7 +59,7 @@ class TokenSocpeOption:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this TokenSocpeOption.
+        r"""Sets the domain of this TokenSocpeOption.
 
         :param domain: The domain of this TokenSocpeOption.
         :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
@@ -68,7 +68,7 @@ class TokenSocpeOption:
 
     @property
     def project(self):
-        """Gets the project of this TokenSocpeOption.
+        r"""Gets the project of this TokenSocpeOption.
 
         :return: The project of this TokenSocpeOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`
@@ -77,7 +77,7 @@ class TokenSocpeOption:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this TokenSocpeOption.
+        r"""Sets the project of this TokenSocpeOption.
 
         :param project: The project of this TokenSocpeOption.
         :type project: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`

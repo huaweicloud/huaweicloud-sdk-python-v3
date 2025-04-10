@@ -31,7 +31,7 @@ class PartitionReassignEntity:
     }
 
     def __init__(self, topic=None, brokers=None, replication_factor=None, assignment=None):
-        """PartitionReassignEntity
+        r"""PartitionReassignEntity
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PartitionReassignEntity:
 
     @property
     def topic(self):
-        """Gets the topic of this PartitionReassignEntity.
+        r"""Gets the topic of this PartitionReassignEntity.
 
         topic名称
 
@@ -74,7 +74,7 @@ class PartitionReassignEntity:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this PartitionReassignEntity.
+        r"""Sets the topic of this PartitionReassignEntity.
 
         topic名称
 
@@ -85,7 +85,7 @@ class PartitionReassignEntity:
 
     @property
     def brokers(self):
-        """Gets the brokers of this PartitionReassignEntity.
+        r"""Gets the brokers of this PartitionReassignEntity.
 
         分区重平衡到的broker列表，自动生成分配方案时需指定该参数。
 
@@ -96,7 +96,7 @@ class PartitionReassignEntity:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this PartitionReassignEntity.
+        r"""Sets the brokers of this PartitionReassignEntity.
 
         分区重平衡到的broker列表，自动生成分配方案时需指定该参数。
 
@@ -107,7 +107,7 @@ class PartitionReassignEntity:
 
     @property
     def replication_factor(self):
-        """Gets the replication_factor of this PartitionReassignEntity.
+        r"""Gets the replication_factor of this PartitionReassignEntity.
 
         副本因子，自动生成分配方案时可指定。
 
@@ -118,7 +118,7 @@ class PartitionReassignEntity:
 
     @replication_factor.setter
     def replication_factor(self, replication_factor):
-        """Sets the replication_factor of this PartitionReassignEntity.
+        r"""Sets the replication_factor of this PartitionReassignEntity.
 
         副本因子，自动生成分配方案时可指定。
 
@@ -129,7 +129,7 @@ class PartitionReassignEntity:
 
     @property
     def assignment(self):
-        """Gets the assignment of this PartitionReassignEntity.
+        r"""Gets the assignment of this PartitionReassignEntity.
 
         手动指定的分配方案。brokers参数与该参数不能同时为空。
 
@@ -140,7 +140,7 @@ class PartitionReassignEntity:
 
     @assignment.setter
     def assignment(self, assignment):
-        """Sets the assignment of this PartitionReassignEntity.
+        r"""Sets the assignment of this PartitionReassignEntity.
 
         手动指定的分配方案。brokers参数与该参数不能同时为空。
 

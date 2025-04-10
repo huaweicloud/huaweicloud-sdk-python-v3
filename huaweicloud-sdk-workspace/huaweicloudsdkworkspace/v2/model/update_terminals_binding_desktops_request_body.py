@@ -31,7 +31,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     }
 
     def __init__(self, id=None, mac=None, desktop_name=None, description=None):
-        """UpdateTerminalsBindingDesktopsRequestBody
+        r"""UpdateTerminalsBindingDesktopsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Gets the id of this UpdateTerminalsBindingDesktopsRequestBody.
 
         策略id
 
@@ -72,7 +72,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Sets the id of this UpdateTerminalsBindingDesktopsRequestBody.
 
         策略id
 
@@ -83,7 +83,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @property
     def mac(self):
-        """Gets the mac of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Gets the mac of this UpdateTerminalsBindingDesktopsRequestBody.
 
         终端MAC地址
 
@@ -94,7 +94,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Sets the mac of this UpdateTerminalsBindingDesktopsRequestBody.
 
         终端MAC地址
 
@@ -105,7 +105,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Gets the desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
 
         虚拟机名称
 
@@ -116,7 +116,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Sets the desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
 
         虚拟机名称
 
@@ -127,7 +127,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Gets the description of this UpdateTerminalsBindingDesktopsRequestBody.
 
         描述
 
@@ -138,7 +138,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTerminalsBindingDesktopsRequestBody.
+        r"""Sets the description of this UpdateTerminalsBindingDesktopsRequestBody.
 
         描述
 

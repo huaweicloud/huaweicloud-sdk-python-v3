@@ -25,7 +25,7 @@ class ShowIterationV4Request:
     }
 
     def __init__(self, iteration_id=None):
-        """ShowIterationV4Request
+        r"""ShowIterationV4Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowIterationV4Request:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this ShowIterationV4Request.
+        r"""Gets the iteration_id of this ShowIterationV4Request.
 
         迭代id
 
@@ -53,7 +53,7 @@ class ShowIterationV4Request:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this ShowIterationV4Request.
+        r"""Sets the iteration_id of this ShowIterationV4Request.
 
         迭代id
 

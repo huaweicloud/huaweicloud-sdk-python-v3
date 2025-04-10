@@ -27,7 +27,7 @@ class InsurancePolicyDetail:
     }
 
     def __init__(self, words=None, location=None):
-        """InsurancePolicyDetail
+        r"""InsurancePolicyDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InsurancePolicyDetail:
 
     @property
     def words(self):
-        """Gets the words of this InsurancePolicyDetail.
+        r"""Gets the words of this InsurancePolicyDetail.
 
         对应识别出的文本内容
 
@@ -61,7 +61,7 @@ class InsurancePolicyDetail:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this InsurancePolicyDetail.
+        r"""Sets the words of this InsurancePolicyDetail.
 
         对应识别出的文本内容
 
@@ -72,7 +72,7 @@ class InsurancePolicyDetail:
 
     @property
     def location(self):
-        """Gets the location of this InsurancePolicyDetail.
+        r"""Gets the location of this InsurancePolicyDetail.
 
         对应识别出的四个顶点坐标 
 
@@ -83,7 +83,7 @@ class InsurancePolicyDetail:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this InsurancePolicyDetail.
+        r"""Sets the location of this InsurancePolicyDetail.
 
         对应识别出的四个顶点坐标 
 

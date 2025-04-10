@@ -25,7 +25,7 @@ class AddIpGroupIpRequestBody:
     }
 
     def __init__(self, ip_list=None):
-        """AddIpGroupIpRequestBody
+        r"""AddIpGroupIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddIpGroupIpRequestBody:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this AddIpGroupIpRequestBody.
+        r"""Gets the ip_list of this AddIpGroupIpRequestBody.
 
         IP地址组中的IP网段列表，一次最多支持添加20个条目。
 
@@ -53,7 +53,7 @@ class AddIpGroupIpRequestBody:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this AddIpGroupIpRequestBody.
+        r"""Sets the ip_list of this AddIpGroupIpRequestBody.
 
         IP地址组中的IP网段列表，一次最多支持添加20个条目。
 

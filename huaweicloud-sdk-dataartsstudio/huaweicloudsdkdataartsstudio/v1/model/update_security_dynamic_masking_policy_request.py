@@ -29,7 +29,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """UpdateSecurityDynamicMaskingPolicyRequest
+        r"""UpdateSecurityDynamicMaskingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the workspace of this UpdateSecurityDynamicMaskingPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the workspace of this UpdateSecurityDynamicMaskingPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the id of this UpdateSecurityDynamicMaskingPolicyRequest.
 
         脱敏策略id
 
@@ -88,7 +88,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the id of this UpdateSecurityDynamicMaskingPolicyRequest.
 
         脱敏策略id
 
@@ -99,7 +99,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the body of this UpdateSecurityDynamicMaskingPolicyRequest.
 
         :return: The body of this UpdateSecurityDynamicMaskingPolicyRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DynamicMaskingPolicyUpdateDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityDynamicMaskingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the body of this UpdateSecurityDynamicMaskingPolicyRequest.
 
         :param body: The body of this UpdateSecurityDynamicMaskingPolicyRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DynamicMaskingPolicyUpdateDTO`

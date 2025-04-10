@@ -37,7 +37,7 @@ class ResizeDesktopReq:
     }
 
     def __init__(self, desktops=None, product_id=None, flavor_id=None, mode=None, dedicated_host_id=None, order_id=None, extend_param=None):
-        """ResizeDesktopReq
+        r"""ResizeDesktopReq
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ResizeDesktopReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this ResizeDesktopReq.
+        r"""Gets the desktops of this ResizeDesktopReq.
 
         桌面数据。支持批量按需类型桌面变更为同一规格。
 
@@ -93,7 +93,7 @@ class ResizeDesktopReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this ResizeDesktopReq.
+        r"""Sets the desktops of this ResizeDesktopReq.
 
         桌面数据。支持批量按需类型桌面变更为同一规格。
 
@@ -104,7 +104,7 @@ class ResizeDesktopReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ResizeDesktopReq.
+        r"""Gets the product_id of this ResizeDesktopReq.
 
         套餐id。批量变更时，则变更为同一规格的虚拟机。
 
@@ -115,7 +115,7 @@ class ResizeDesktopReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ResizeDesktopReq.
+        r"""Sets the product_id of this ResizeDesktopReq.
 
         套餐id。批量变更时，则变更为同一规格的虚拟机。
 
@@ -126,7 +126,7 @@ class ResizeDesktopReq:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ResizeDesktopReq.
+        r"""Gets the flavor_id of this ResizeDesktopReq.
 
         套餐flavorId。批量变更时，则变更为同一规格的虚拟机。
 
@@ -137,7 +137,7 @@ class ResizeDesktopReq:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ResizeDesktopReq.
+        r"""Sets the flavor_id of this ResizeDesktopReq.
 
         套餐flavorId。批量变更时，则变更为同一规格的虚拟机。
 
@@ -148,7 +148,7 @@ class ResizeDesktopReq:
 
     @property
     def mode(self):
-        """Gets the mode of this ResizeDesktopReq.
+        r"""Gets the mode of this ResizeDesktopReq.
 
         是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
 
@@ -159,7 +159,7 @@ class ResizeDesktopReq:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ResizeDesktopReq.
+        r"""Sets the mode of this ResizeDesktopReq.
 
         是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
 
@@ -170,7 +170,7 @@ class ResizeDesktopReq:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this ResizeDesktopReq.
+        r"""Gets the dedicated_host_id of this ResizeDesktopReq.
 
         专属主机ID。
 
@@ -181,7 +181,7 @@ class ResizeDesktopReq:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this ResizeDesktopReq.
+        r"""Sets the dedicated_host_id of this ResizeDesktopReq.
 
         专属主机ID。
 
@@ -192,7 +192,7 @@ class ResizeDesktopReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeDesktopReq.
+        r"""Gets the order_id of this ResizeDesktopReq.
 
         订单ID，包周期变更规格时使用。
 
@@ -203,7 +203,7 @@ class ResizeDesktopReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeDesktopReq.
+        r"""Sets the order_id of this ResizeDesktopReq.
 
         订单ID，包周期变更规格时使用。
 
@@ -214,7 +214,7 @@ class ResizeDesktopReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this ResizeDesktopReq.
+        r"""Gets the extend_param of this ResizeDesktopReq.
 
         :return: The extend_param of this ResizeDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
@@ -223,7 +223,7 @@ class ResizeDesktopReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this ResizeDesktopReq.
+        r"""Sets the extend_param of this ResizeDesktopReq.
 
         :param extend_param: The extend_param of this ResizeDesktopReq.
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`

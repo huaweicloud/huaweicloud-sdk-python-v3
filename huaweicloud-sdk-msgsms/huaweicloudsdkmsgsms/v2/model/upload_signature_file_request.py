@@ -27,7 +27,7 @@ class UploadSignatureFileRequest:
     }
 
     def __init__(self, file_desc=None, body=None):
-        """UploadSignatureFileRequest
+        r"""UploadSignatureFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadSignatureFileRequest:
 
     @property
     def file_desc(self):
-        """Gets the file_desc of this UploadSignatureFileRequest.
+        r"""Gets the file_desc of this UploadSignatureFileRequest.
 
         描述
 
@@ -61,7 +61,7 @@ class UploadSignatureFileRequest:
 
     @file_desc.setter
     def file_desc(self, file_desc):
-        """Sets the file_desc of this UploadSignatureFileRequest.
+        r"""Sets the file_desc of this UploadSignatureFileRequest.
 
         描述
 
@@ -72,7 +72,7 @@ class UploadSignatureFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadSignatureFileRequest.
+        r"""Gets the body of this UploadSignatureFileRequest.
 
         :return: The body of this UploadSignatureFileRequest.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UploadSignatureFileRequestBody`
@@ -81,7 +81,7 @@ class UploadSignatureFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadSignatureFileRequest.
+        r"""Sets the body of this UploadSignatureFileRequest.
 
         :param body: The body of this UploadSignatureFileRequest.
         :type body: :class:`huaweicloudsdkmsgsms.v2.UploadSignatureFileRequestBody`

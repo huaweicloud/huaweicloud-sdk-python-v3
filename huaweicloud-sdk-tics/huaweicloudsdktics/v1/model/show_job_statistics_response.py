@@ -34,7 +34,7 @@ class ShowJobStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, job_cnt=None, job_ins_cnt=None, job_ins_fail_cnt=None, job_ins_intercept_cnt=None, job_ins_success_cnt=None):
-        """ShowJobStatisticsResponse
+        r"""ShowJobStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @property
     def job_cnt(self):
-        """Gets the job_cnt of this ShowJobStatisticsResponse.
+        r"""Gets the job_cnt of this ShowJobStatisticsResponse.
 
         作业数量统计
 
@@ -83,7 +83,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @job_cnt.setter
     def job_cnt(self, job_cnt):
-        """Sets the job_cnt of this ShowJobStatisticsResponse.
+        r"""Sets the job_cnt of this ShowJobStatisticsResponse.
 
         作业数量统计
 
@@ -94,7 +94,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @property
     def job_ins_cnt(self):
-        """Gets the job_ins_cnt of this ShowJobStatisticsResponse.
+        r"""Gets the job_ins_cnt of this ShowJobStatisticsResponse.
 
         作业实例次数
 
@@ -105,7 +105,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @job_ins_cnt.setter
     def job_ins_cnt(self, job_ins_cnt):
-        """Sets the job_ins_cnt of this ShowJobStatisticsResponse.
+        r"""Sets the job_ins_cnt of this ShowJobStatisticsResponse.
 
         作业实例次数
 
@@ -116,7 +116,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @property
     def job_ins_fail_cnt(self):
-        """Gets the job_ins_fail_cnt of this ShowJobStatisticsResponse.
+        r"""Gets the job_ins_fail_cnt of this ShowJobStatisticsResponse.
 
         作业实例失败次数
 
@@ -127,7 +127,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @job_ins_fail_cnt.setter
     def job_ins_fail_cnt(self, job_ins_fail_cnt):
-        """Sets the job_ins_fail_cnt of this ShowJobStatisticsResponse.
+        r"""Sets the job_ins_fail_cnt of this ShowJobStatisticsResponse.
 
         作业实例失败次数
 
@@ -138,7 +138,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @property
     def job_ins_intercept_cnt(self):
-        """Gets the job_ins_intercept_cnt of this ShowJobStatisticsResponse.
+        r"""Gets the job_ins_intercept_cnt of this ShowJobStatisticsResponse.
 
         作业实例拦截次数
 
@@ -149,7 +149,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @job_ins_intercept_cnt.setter
     def job_ins_intercept_cnt(self, job_ins_intercept_cnt):
-        """Sets the job_ins_intercept_cnt of this ShowJobStatisticsResponse.
+        r"""Sets the job_ins_intercept_cnt of this ShowJobStatisticsResponse.
 
         作业实例拦截次数
 
@@ -160,7 +160,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @property
     def job_ins_success_cnt(self):
-        """Gets the job_ins_success_cnt of this ShowJobStatisticsResponse.
+        r"""Gets the job_ins_success_cnt of this ShowJobStatisticsResponse.
 
         作业实例成功次数
 
@@ -171,7 +171,7 @@ class ShowJobStatisticsResponse(SdkResponse):
 
     @job_ins_success_cnt.setter
     def job_ins_success_cnt(self, job_ins_success_cnt):
-        """Sets the job_ins_success_cnt of this ShowJobStatisticsResponse.
+        r"""Sets the job_ins_success_cnt of this ShowJobStatisticsResponse.
 
         作业实例成功次数
 

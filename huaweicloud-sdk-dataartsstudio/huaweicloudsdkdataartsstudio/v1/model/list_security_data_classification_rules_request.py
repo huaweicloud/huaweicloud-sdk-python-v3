@@ -45,7 +45,7 @@ class ListSecurityDataClassificationRulesRequest:
     }
 
     def __init__(self, workspace=None, offset=None, limit=None, secrecy_level=None, name=None, creator=None, enable=None, start_time=None, end_time=None, order_by=None, desc=None):
-        """ListSecurityDataClassificationRulesRequest
+        r"""ListSecurityDataClassificationRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the workspace of this ListSecurityDataClassificationRulesRequest.
 
         DataArts Studio工作空间ID
 
@@ -123,7 +123,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the workspace of this ListSecurityDataClassificationRulesRequest.
 
         DataArts Studio工作空间ID
 
@@ -134,7 +134,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the offset of this ListSecurityDataClassificationRulesRequest.
 
         查询偏移
 
@@ -145,7 +145,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the offset of this ListSecurityDataClassificationRulesRequest.
 
         查询偏移
 
@@ -156,7 +156,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the limit of this ListSecurityDataClassificationRulesRequest.
 
         查询一页限制
 
@@ -167,7 +167,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the limit of this ListSecurityDataClassificationRulesRequest.
 
         查询一页限制
 
@@ -178,7 +178,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def secrecy_level(self):
-        """Gets the secrecy_level of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the secrecy_level of this ListSecurityDataClassificationRulesRequest.
 
         密级
 
@@ -189,7 +189,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @secrecy_level.setter
     def secrecy_level(self, secrecy_level):
-        """Sets the secrecy_level of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the secrecy_level of this ListSecurityDataClassificationRulesRequest.
 
         密级
 
@@ -200,7 +200,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the name of this ListSecurityDataClassificationRulesRequest.
 
         规则名称
 
@@ -211,7 +211,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the name of this ListSecurityDataClassificationRulesRequest.
 
         规则名称
 
@@ -222,7 +222,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the creator of this ListSecurityDataClassificationRulesRequest.
 
         规则创建者
 
@@ -233,7 +233,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the creator of this ListSecurityDataClassificationRulesRequest.
 
         规则创建者
 
@@ -244,7 +244,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def enable(self):
-        """Gets the enable of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the enable of this ListSecurityDataClassificationRulesRequest.
 
         规则是否开启
 
@@ -255,7 +255,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the enable of this ListSecurityDataClassificationRulesRequest.
 
         规则是否开启
 
@@ -266,7 +266,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the start_time of this ListSecurityDataClassificationRulesRequest.
 
         开始日期
 
@@ -277,7 +277,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the start_time of this ListSecurityDataClassificationRulesRequest.
 
         开始日期
 
@@ -288,7 +288,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the end_time of this ListSecurityDataClassificationRulesRequest.
 
         结束日期
 
@@ -299,7 +299,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the end_time of this ListSecurityDataClassificationRulesRequest.
 
         结束日期
 
@@ -310,7 +310,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the order_by of this ListSecurityDataClassificationRulesRequest.
 
         排序字段, createdAt, createdBy, updatedAt, updatedBy, name, description
 
@@ -321,7 +321,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the order_by of this ListSecurityDataClassificationRulesRequest.
 
         排序字段, createdAt, createdBy, updatedAt, updatedBy, name, description
 
@@ -332,7 +332,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @property
     def desc(self):
-        """Gets the desc of this ListSecurityDataClassificationRulesRequest.
+        r"""Gets the desc of this ListSecurityDataClassificationRulesRequest.
 
         排序规则
 
@@ -343,7 +343,7 @@ class ListSecurityDataClassificationRulesRequest:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ListSecurityDataClassificationRulesRequest.
+        r"""Sets the desc of this ListSecurityDataClassificationRulesRequest.
 
         排序规则
 

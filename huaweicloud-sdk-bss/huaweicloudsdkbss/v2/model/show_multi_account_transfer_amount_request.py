@@ -29,7 +29,7 @@ class ShowMultiAccountTransferAmountRequest:
     }
 
     def __init__(self, balance_type=None, offset=None, limit=None):
-        """ShowMultiAccountTransferAmountRequest
+        r"""ShowMultiAccountTransferAmountRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowMultiAccountTransferAmountRequest:
 
     @property
     def balance_type(self):
-        """Gets the balance_type of this ShowMultiAccountTransferAmountRequest.
+        r"""Gets the balance_type of this ShowMultiAccountTransferAmountRequest.
 
         账户类型：BALANCE_TYPE_DEBIT：余额账户BALANCE_TYPE_CREDIT：信用账户
 
@@ -67,7 +67,7 @@ class ShowMultiAccountTransferAmountRequest:
 
     @balance_type.setter
     def balance_type(self, balance_type):
-        """Sets the balance_type of this ShowMultiAccountTransferAmountRequest.
+        r"""Sets the balance_type of this ShowMultiAccountTransferAmountRequest.
 
         账户类型：BALANCE_TYPE_DEBIT：余额账户BALANCE_TYPE_CREDIT：信用账户
 
@@ -78,7 +78,7 @@ class ShowMultiAccountTransferAmountRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMultiAccountTransferAmountRequest.
+        r"""Gets the offset of this ShowMultiAccountTransferAmountRequest.
 
         偏移量，默认值为0。只有信用账户有效。
 
@@ -89,7 +89,7 @@ class ShowMultiAccountTransferAmountRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMultiAccountTransferAmountRequest.
+        r"""Sets the offset of this ShowMultiAccountTransferAmountRequest.
 
         偏移量，默认值为0。只有信用账户有效。
 
@@ -100,7 +100,7 @@ class ShowMultiAccountTransferAmountRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowMultiAccountTransferAmountRequest.
+        r"""Gets the limit of this ShowMultiAccountTransferAmountRequest.
 
         每次查询条数，默认值为10。只有信用账户有效。
 
@@ -111,7 +111,7 @@ class ShowMultiAccountTransferAmountRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowMultiAccountTransferAmountRequest.
+        r"""Sets the limit of this ShowMultiAccountTransferAmountRequest.
 
         每次查询条数，默认值为10。只有信用账户有效。
 

@@ -25,7 +25,7 @@ class ListGcbResourceTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ListGcbResourceTagsRequest
+        r"""ListGcbResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListGcbResourceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListGcbResourceTagsRequest.
+        r"""Gets the resource_id of this ListGcbResourceTagsRequest.
 
         资源唯一标识符。
 
@@ -53,7 +53,7 @@ class ListGcbResourceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListGcbResourceTagsRequest.
+        r"""Sets the resource_id of this ListGcbResourceTagsRequest.
 
         资源唯一标识符。
 

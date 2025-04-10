@@ -27,7 +27,7 @@ class ServerAppInfoCreatedUser:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """ServerAppInfoCreatedUser
+        r"""ServerAppInfoCreatedUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServerAppInfoCreatedUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ServerAppInfoCreatedUser.
+        r"""Gets the user_id of this ServerAppInfoCreatedUser.
 
         创建应用的用户ID
 
@@ -61,7 +61,7 @@ class ServerAppInfoCreatedUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ServerAppInfoCreatedUser.
+        r"""Sets the user_id of this ServerAppInfoCreatedUser.
 
         创建应用的用户ID
 
@@ -72,7 +72,7 @@ class ServerAppInfoCreatedUser:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ServerAppInfoCreatedUser.
+        r"""Gets the user_name of this ServerAppInfoCreatedUser.
 
         创建应用的用户名称
 
@@ -83,7 +83,7 @@ class ServerAppInfoCreatedUser:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ServerAppInfoCreatedUser.
+        r"""Sets the user_name of this ServerAppInfoCreatedUser.
 
         创建应用的用户名称
 

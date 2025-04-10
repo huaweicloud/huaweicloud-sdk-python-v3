@@ -25,7 +25,7 @@ class ListResEnterprisesRequest:
     }
 
     def __init__(self, content_type=None):
-        """ListResEnterprisesRequest
+        r"""ListResEnterprisesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListResEnterprisesRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListResEnterprisesRequest.
+        r"""Gets the content_type of this ListResEnterprisesRequest.
 
         内容类型，取值为application/json。
 
@@ -53,7 +53,7 @@ class ListResEnterprisesRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListResEnterprisesRequest.
+        r"""Sets the content_type of this ListResEnterprisesRequest.
 
         内容类型，取值为application/json。
 

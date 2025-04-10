@@ -31,7 +31,7 @@ class MergeChangesTrees:
     }
 
     def __init__(self, title=None, level=None, file_path=None, file_type=None):
-        """MergeChangesTrees
+        r"""MergeChangesTrees
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MergeChangesTrees:
 
     @property
     def title(self):
-        """Gets the title of this MergeChangesTrees.
+        r"""Gets the title of this MergeChangesTrees.
 
         分段路径
 
@@ -75,7 +75,7 @@ class MergeChangesTrees:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this MergeChangesTrees.
+        r"""Sets the title of this MergeChangesTrees.
 
         分段路径
 
@@ -86,7 +86,7 @@ class MergeChangesTrees:
 
     @property
     def level(self):
-        """Gets the level of this MergeChangesTrees.
+        r"""Gets the level of this MergeChangesTrees.
 
         路径级别
 
@@ -97,7 +97,7 @@ class MergeChangesTrees:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this MergeChangesTrees.
+        r"""Sets the level of this MergeChangesTrees.
 
         路径级别
 
@@ -108,7 +108,7 @@ class MergeChangesTrees:
 
     @property
     def file_path(self):
-        """Gets the file_path of this MergeChangesTrees.
+        r"""Gets the file_path of this MergeChangesTrees.
 
         当前级别全路径
 
@@ -119,7 +119,7 @@ class MergeChangesTrees:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this MergeChangesTrees.
+        r"""Sets the file_path of this MergeChangesTrees.
 
         当前级别全路径
 
@@ -130,7 +130,7 @@ class MergeChangesTrees:
 
     @property
     def file_type(self):
-        """Gets the file_type of this MergeChangesTrees.
+        r"""Gets the file_type of this MergeChangesTrees.
 
         文件类型
 
@@ -141,7 +141,7 @@ class MergeChangesTrees:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this MergeChangesTrees.
+        r"""Sets the file_type of this MergeChangesTrees.
 
         文件类型
 

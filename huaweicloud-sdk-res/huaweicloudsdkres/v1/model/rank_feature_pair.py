@@ -29,7 +29,7 @@ class RankFeaturePair:
     }
 
     def __init__(self, feature_name_a=None, feature_name_b=None, weight=None):
-        """RankFeaturePair
+        r"""RankFeaturePair
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RankFeaturePair:
 
     @property
     def feature_name_a(self):
-        """Gets the feature_name_a of this RankFeaturePair.
+        r"""Gets the feature_name_a of this RankFeaturePair.
 
         待推荐对象的属性。
 
@@ -68,7 +68,7 @@ class RankFeaturePair:
 
     @feature_name_a.setter
     def feature_name_a(self, feature_name_a):
-        """Sets the feature_name_a of this RankFeaturePair.
+        r"""Sets the feature_name_a of this RankFeaturePair.
 
         待推荐对象的属性。
 
@@ -79,7 +79,7 @@ class RankFeaturePair:
 
     @property
     def feature_name_b(self):
-        """Gets the feature_name_b of this RankFeaturePair.
+        r"""Gets the feature_name_b of this RankFeaturePair.
 
         被推荐对象的属性。
 
@@ -90,7 +90,7 @@ class RankFeaturePair:
 
     @feature_name_b.setter
     def feature_name_b(self, feature_name_b):
-        """Sets the feature_name_b of this RankFeaturePair.
+        r"""Sets the feature_name_b of this RankFeaturePair.
 
         被推荐对象的属性。
 
@@ -101,7 +101,7 @@ class RankFeaturePair:
 
     @property
     def weight(self):
-        """Gets the weight of this RankFeaturePair.
+        r"""Gets the weight of this RankFeaturePair.
 
         权重。
 
@@ -112,7 +112,7 @@ class RankFeaturePair:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this RankFeaturePair.
+        r"""Sets the weight of this RankFeaturePair.
 
         权重。
 

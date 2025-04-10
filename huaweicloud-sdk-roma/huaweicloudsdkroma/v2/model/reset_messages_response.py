@@ -32,7 +32,7 @@ class ResetMessagesResponse(SdkResponse):
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, consumer_key=None):
-        """ResetMessagesResponse
+        r"""ResetMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this ResetMessagesResponse.
+        r"""Gets the topic of this ResetMessagesResponse.
 
         topic名称。
 
@@ -76,7 +76,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ResetMessagesResponse.
+        r"""Sets the topic of this ResetMessagesResponse.
 
         topic名称。
 
@@ -87,7 +87,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @property
     def partition(self):
-        """Gets the partition of this ResetMessagesResponse.
+        r"""Gets the partition of this ResetMessagesResponse.
 
         分区。
 
@@ -98,7 +98,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ResetMessagesResponse.
+        r"""Sets the partition of this ResetMessagesResponse.
 
         分区。
 
@@ -109,7 +109,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ResetMessagesResponse.
+        r"""Gets the message_offset of this ResetMessagesResponse.
 
         消息偏移量。
 
@@ -120,7 +120,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ResetMessagesResponse.
+        r"""Sets the message_offset of this ResetMessagesResponse.
 
         消息偏移量。
 
@@ -131,7 +131,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @property
     def consumer_key(self):
-        """Gets the consumer_key of this ResetMessagesResponse.
+        r"""Gets the consumer_key of this ResetMessagesResponse.
 
         应用key。在该消息头中添加一个consumer_key的消息头。
 
@@ -142,7 +142,7 @@ class ResetMessagesResponse(SdkResponse):
 
     @consumer_key.setter
     def consumer_key(self, consumer_key):
-        """Sets the consumer_key of this ResetMessagesResponse.
+        r"""Sets the consumer_key of this ResetMessagesResponse.
 
         应用key。在该消息头中添加一个consumer_key的消息头。
 

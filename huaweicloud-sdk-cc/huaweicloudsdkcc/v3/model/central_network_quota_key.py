@@ -25,7 +25,7 @@ class CentralNetworkQuotaKey:
     }
 
     def __init__(self, quota_key=None):
-        """CentralNetworkQuotaKey
+        r"""CentralNetworkQuotaKey
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CentralNetworkQuotaKey:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this CentralNetworkQuotaKey.
+        r"""Gets the quota_key of this CentralNetworkQuotaKey.
 
         :return: The quota_key of this CentralNetworkQuotaKey.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`
@@ -51,7 +51,7 @@ class CentralNetworkQuotaKey:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this CentralNetworkQuotaKey.
+        r"""Sets the quota_key of this CentralNetworkQuotaKey.
 
         :param quota_key: The quota_key of this CentralNetworkQuotaKey.
         :type quota_key: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`

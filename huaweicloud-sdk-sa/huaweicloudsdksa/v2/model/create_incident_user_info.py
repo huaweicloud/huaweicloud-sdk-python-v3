@@ -27,7 +27,7 @@ class CreateIncidentUserInfo:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """CreateIncidentUserInfo
+        r"""CreateIncidentUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateIncidentUserInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateIncidentUserInfo.
+        r"""Gets the user_id of this CreateIncidentUserInfo.
 
         Id value
 
@@ -61,7 +61,7 @@ class CreateIncidentUserInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateIncidentUserInfo.
+        r"""Sets the user_id of this CreateIncidentUserInfo.
 
         Id value
 
@@ -72,7 +72,7 @@ class CreateIncidentUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateIncidentUserInfo.
+        r"""Gets the user_name of this CreateIncidentUserInfo.
 
         The name, display only
 
@@ -83,7 +83,7 @@ class CreateIncidentUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateIncidentUserInfo.
+        r"""Sets the user_name of this CreateIncidentUserInfo.
 
         The name, display only
 

@@ -26,7 +26,7 @@ class ListCdnDomainTopRefersResponse(SdkResponse):
     }
 
     def __init__(self, top_refer_summary=None):
-        """ListCdnDomainTopRefersResponse
+        r"""ListCdnDomainTopRefersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCdnDomainTopRefersResponse(SdkResponse):
 
     @property
     def top_refer_summary(self):
-        """Gets the top_refer_summary of this ListCdnDomainTopRefersResponse.
+        r"""Gets the top_refer_summary of this ListCdnDomainTopRefersResponse.
 
         详情数据对象。
 
@@ -55,7 +55,7 @@ class ListCdnDomainTopRefersResponse(SdkResponse):
 
     @top_refer_summary.setter
     def top_refer_summary(self, top_refer_summary):
-        """Sets the top_refer_summary of this ListCdnDomainTopRefersResponse.
+        r"""Sets the top_refer_summary of this ListCdnDomainTopRefersResponse.
 
         详情数据对象。
 

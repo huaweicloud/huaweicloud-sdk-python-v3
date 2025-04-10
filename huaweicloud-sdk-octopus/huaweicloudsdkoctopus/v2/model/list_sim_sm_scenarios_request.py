@@ -57,7 +57,7 @@ class ListSimSmScenariosRequest:
     }
 
     def __init__(self, exclude_group=None, file=None, gen_scenario=None, group=None, id=None, label=None, map=None, name=None, ordering=None, offset=None, limit=None, search=None, simulator=None, source=None, status=None, user_name=None, version=None):
-        """ListSimSmScenariosRequest
+        r"""ListSimSmScenariosRequest
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def exclude_group(self):
-        """Gets the exclude_group of this ListSimSmScenariosRequest.
+        r"""Gets the exclude_group of this ListSimSmScenariosRequest.
 
         :return: The exclude_group of this ListSimSmScenariosRequest.
         :rtype: int
@@ -164,7 +164,7 @@ class ListSimSmScenariosRequest:
 
     @exclude_group.setter
     def exclude_group(self, exclude_group):
-        """Sets the exclude_group of this ListSimSmScenariosRequest.
+        r"""Sets the exclude_group of this ListSimSmScenariosRequest.
 
         :param exclude_group: The exclude_group of this ListSimSmScenariosRequest.
         :type exclude_group: int
@@ -173,7 +173,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def file(self):
-        """Gets the file of this ListSimSmScenariosRequest.
+        r"""Gets the file of this ListSimSmScenariosRequest.
 
         :return: The file of this ListSimSmScenariosRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class ListSimSmScenariosRequest:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ListSimSmScenariosRequest.
+        r"""Sets the file of this ListSimSmScenariosRequest.
 
         :param file: The file of this ListSimSmScenariosRequest.
         :type file: str
@@ -191,7 +191,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def gen_scenario(self):
-        """Gets the gen_scenario of this ListSimSmScenariosRequest.
+        r"""Gets the gen_scenario of this ListSimSmScenariosRequest.
 
         :return: The gen_scenario of this ListSimSmScenariosRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListSimSmScenariosRequest:
 
     @gen_scenario.setter
     def gen_scenario(self, gen_scenario):
-        """Sets the gen_scenario of this ListSimSmScenariosRequest.
+        r"""Sets the gen_scenario of this ListSimSmScenariosRequest.
 
         :param gen_scenario: The gen_scenario of this ListSimSmScenariosRequest.
         :type gen_scenario: str
@@ -209,7 +209,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def group(self):
-        """Gets the group of this ListSimSmScenariosRequest.
+        r"""Gets the group of this ListSimSmScenariosRequest.
 
         :return: The group of this ListSimSmScenariosRequest.
         :rtype: list[int]
@@ -218,7 +218,7 @@ class ListSimSmScenariosRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ListSimSmScenariosRequest.
+        r"""Sets the group of this ListSimSmScenariosRequest.
 
         :param group: The group of this ListSimSmScenariosRequest.
         :type group: list[int]
@@ -227,7 +227,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSimSmScenariosRequest.
+        r"""Gets the id of this ListSimSmScenariosRequest.
 
         :return: The id of this ListSimSmScenariosRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListSimSmScenariosRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSimSmScenariosRequest.
+        r"""Sets the id of this ListSimSmScenariosRequest.
 
         :param id: The id of this ListSimSmScenariosRequest.
         :type id: int
@@ -245,7 +245,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def label(self):
-        """Gets the label of this ListSimSmScenariosRequest.
+        r"""Gets the label of this ListSimSmScenariosRequest.
 
         label
 
@@ -256,7 +256,7 @@ class ListSimSmScenariosRequest:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ListSimSmScenariosRequest.
+        r"""Sets the label of this ListSimSmScenariosRequest.
 
         label
 
@@ -267,7 +267,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def map(self):
-        """Gets the map of this ListSimSmScenariosRequest.
+        r"""Gets the map of this ListSimSmScenariosRequest.
 
         :return: The map of this ListSimSmScenariosRequest.
         :rtype: int
@@ -276,7 +276,7 @@ class ListSimSmScenariosRequest:
 
     @map.setter
     def map(self, map):
-        """Sets the map of this ListSimSmScenariosRequest.
+        r"""Sets the map of this ListSimSmScenariosRequest.
 
         :param map: The map of this ListSimSmScenariosRequest.
         :type map: int
@@ -285,7 +285,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSimSmScenariosRequest.
+        r"""Gets the name of this ListSimSmScenariosRequest.
 
         :return: The name of this ListSimSmScenariosRequest.
         :rtype: str
@@ -294,7 +294,7 @@ class ListSimSmScenariosRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSimSmScenariosRequest.
+        r"""Sets the name of this ListSimSmScenariosRequest.
 
         :param name: The name of this ListSimSmScenariosRequest.
         :type name: str
@@ -303,7 +303,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def ordering(self):
-        """Gets the ordering of this ListSimSmScenariosRequest.
+        r"""Gets the ordering of this ListSimSmScenariosRequest.
 
         Which field to use when ordering the results.
 
@@ -314,7 +314,7 @@ class ListSimSmScenariosRequest:
 
     @ordering.setter
     def ordering(self, ordering):
-        """Sets the ordering of this ListSimSmScenariosRequest.
+        r"""Sets the ordering of this ListSimSmScenariosRequest.
 
         Which field to use when ordering the results.
 
@@ -325,7 +325,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimSmScenariosRequest.
+        r"""Gets the offset of this ListSimSmScenariosRequest.
 
         A page number within the paginated result set.
 
@@ -336,7 +336,7 @@ class ListSimSmScenariosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimSmScenariosRequest.
+        r"""Sets the offset of this ListSimSmScenariosRequest.
 
         A page number within the paginated result set.
 
@@ -347,7 +347,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimSmScenariosRequest.
+        r"""Gets the limit of this ListSimSmScenariosRequest.
 
         Number of results to return per page.
 
@@ -358,7 +358,7 @@ class ListSimSmScenariosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimSmScenariosRequest.
+        r"""Sets the limit of this ListSimSmScenariosRequest.
 
         Number of results to return per page.
 
@@ -369,7 +369,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListSimSmScenariosRequest.
+        r"""Gets the search of this ListSimSmScenariosRequest.
 
         A search term.
 
@@ -380,7 +380,7 @@ class ListSimSmScenariosRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListSimSmScenariosRequest.
+        r"""Sets the search of this ListSimSmScenariosRequest.
 
         A search term.
 
@@ -391,7 +391,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def simulator(self):
-        """Gets the simulator of this ListSimSmScenariosRequest.
+        r"""Gets the simulator of this ListSimSmScenariosRequest.
 
         * `VTD` - VTD * `SimPro` - SimPro
 
@@ -402,7 +402,7 @@ class ListSimSmScenariosRequest:
 
     @simulator.setter
     def simulator(self, simulator):
-        """Sets the simulator of this ListSimSmScenariosRequest.
+        r"""Sets the simulator of this ListSimSmScenariosRequest.
 
         * `VTD` - VTD * `SimPro` - SimPro
 
@@ -413,7 +413,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def source(self):
-        """Gets the source of this ListSimSmScenariosRequest.
+        r"""Gets the source of this ListSimSmScenariosRequest.
 
         Choices: generalization, road, upload
 
@@ -424,7 +424,7 @@ class ListSimSmScenariosRequest:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ListSimSmScenariosRequest.
+        r"""Sets the source of this ListSimSmScenariosRequest.
 
         Choices: generalization, road, upload
 
@@ -435,7 +435,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSimSmScenariosRequest.
+        r"""Gets the status of this ListSimSmScenariosRequest.
 
         * `0` - Released * `1` - Available * `10` - Initial * `11` - Unavailable * `12` - Releasing * `100` - Deprecated
 
@@ -446,7 +446,7 @@ class ListSimSmScenariosRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSimSmScenariosRequest.
+        r"""Sets the status of this ListSimSmScenariosRequest.
 
         * `0` - Released * `1` - Available * `10` - Initial * `11` - Unavailable * `12` - Releasing * `100` - Deprecated
 
@@ -457,7 +457,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListSimSmScenariosRequest.
+        r"""Gets the user_name of this ListSimSmScenariosRequest.
 
         :return: The user_name of this ListSimSmScenariosRequest.
         :rtype: str
@@ -466,7 +466,7 @@ class ListSimSmScenariosRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListSimSmScenariosRequest.
+        r"""Sets the user_name of this ListSimSmScenariosRequest.
 
         :param user_name: The user_name of this ListSimSmScenariosRequest.
         :type user_name: str
@@ -475,7 +475,7 @@ class ListSimSmScenariosRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListSimSmScenariosRequest.
+        r"""Gets the version of this ListSimSmScenariosRequest.
 
         * `vtd` - vtd * `v0.9.1` - v0.9.1 * `v1.0.0` - v1.0.0 * `v1.1.0` - v1.1.0 * `v1.1.1` - v1.1.1
 
@@ -486,7 +486,7 @@ class ListSimSmScenariosRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListSimSmScenariosRequest.
+        r"""Sets the version of this ListSimSmScenariosRequest.
 
         * `vtd` - vtd * `v0.9.1` - v0.9.1 * `v1.0.0` - v1.0.0 * `v1.1.0` - v1.1.0 * `v1.1.1` - v1.1.1
 

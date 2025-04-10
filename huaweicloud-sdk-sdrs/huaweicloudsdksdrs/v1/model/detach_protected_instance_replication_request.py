@@ -27,7 +27,7 @@ class DetachProtectedInstanceReplicationRequest:
     }
 
     def __init__(self, protected_instance_id=None, replication_id=None):
-        """DetachProtectedInstanceReplicationRequest
+        r"""DetachProtectedInstanceReplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DetachProtectedInstanceReplicationRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this DetachProtectedInstanceReplicationRequest.
+        r"""Gets the protected_instance_id of this DetachProtectedInstanceReplicationRequest.
 
         保护实例的ID。
 
@@ -59,7 +59,7 @@ class DetachProtectedInstanceReplicationRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this DetachProtectedInstanceReplicationRequest.
+        r"""Sets the protected_instance_id of this DetachProtectedInstanceReplicationRequest.
 
         保护实例的ID。
 
@@ -70,7 +70,7 @@ class DetachProtectedInstanceReplicationRequest:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this DetachProtectedInstanceReplicationRequest.
+        r"""Gets the replication_id of this DetachProtectedInstanceReplicationRequest.
 
         复制对的ID。
 
@@ -81,7 +81,7 @@ class DetachProtectedInstanceReplicationRequest:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this DetachProtectedInstanceReplicationRequest.
+        r"""Sets the replication_id of this DetachProtectedInstanceReplicationRequest.
 
         复制对的ID。
 

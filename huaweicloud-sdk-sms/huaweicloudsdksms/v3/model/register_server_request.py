@@ -25,7 +25,7 @@ class RegisterServerRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterServerRequest
+        r"""RegisterServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterServerRequest.
+        r"""Gets the body of this RegisterServerRequest.
 
         :return: The body of this RegisterServerRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
@@ -52,7 +52,7 @@ class RegisterServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterServerRequest.
+        r"""Sets the body of this RegisterServerRequest.
 
         :param body: The body of this RegisterServerRequest.
         :type body: :class:`huaweicloudsdksms.v3.PostSourceServerBody`

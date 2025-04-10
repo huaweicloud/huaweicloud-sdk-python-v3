@@ -25,7 +25,7 @@ class CreateOneClickAlarmRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOneClickAlarmRequest
+        r"""CreateOneClickAlarmRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOneClickAlarmRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOneClickAlarmRequest.
+        r"""Gets the body of this CreateOneClickAlarmRequest.
 
         :return: The body of this CreateOneClickAlarmRequest.
         :rtype: :class:`huaweicloudsdkces.v2.EnableOneClickAlarmRequestBody`
@@ -52,7 +52,7 @@ class CreateOneClickAlarmRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOneClickAlarmRequest.
+        r"""Sets the body of this CreateOneClickAlarmRequest.
 
         :param body: The body of this CreateOneClickAlarmRequest.
         :type body: :class:`huaweicloudsdkces.v2.EnableOneClickAlarmRequestBody`

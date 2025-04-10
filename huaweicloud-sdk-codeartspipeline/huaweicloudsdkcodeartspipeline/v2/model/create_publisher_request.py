@@ -27,7 +27,7 @@ class CreatePublisherRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """CreatePublisherRequest
+        r"""CreatePublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePublisherRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreatePublisherRequest.
+        r"""Gets the domain_id of this CreatePublisherRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class CreatePublisherRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreatePublisherRequest.
+        r"""Sets the domain_id of this CreatePublisherRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class CreatePublisherRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePublisherRequest.
+        r"""Gets the body of this CreatePublisherRequest.
 
         :return: The body of this CreatePublisherRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PublisherRequest`
@@ -80,7 +80,7 @@ class CreatePublisherRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePublisherRequest.
+        r"""Sets the body of this CreatePublisherRequest.
 
         :param body: The body of this CreatePublisherRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PublisherRequest`

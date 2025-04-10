@@ -25,7 +25,7 @@ class Follow302StatusRequest:
     }
 
     def __init__(self, follow302_status=None):
-        """Follow302StatusRequest
+        r"""Follow302StatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Follow302StatusRequest:
 
     @property
     def follow302_status(self):
-        """Gets the follow302_status of this Follow302StatusRequest.
+        r"""Gets the follow302_status of this Follow302StatusRequest.
 
         follow302状态，off：关闭，on：开启。
 
@@ -53,7 +53,7 @@ class Follow302StatusRequest:
 
     @follow302_status.setter
     def follow302_status(self, follow302_status):
-        """Sets the follow302_status of this Follow302StatusRequest.
+        r"""Sets the follow302_status of this Follow302StatusRequest.
 
         follow302状态，off：关闭，on：开启。
 

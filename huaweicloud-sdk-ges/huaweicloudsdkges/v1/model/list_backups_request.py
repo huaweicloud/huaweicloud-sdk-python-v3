@@ -27,7 +27,7 @@ class ListBackupsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListBackupsRequest
+        r"""ListBackupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListBackupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackupsRequest.
+        r"""Gets the limit of this ListBackupsRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -61,7 +61,7 @@ class ListBackupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackupsRequest.
+        r"""Sets the limit of this ListBackupsRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -72,7 +72,7 @@ class ListBackupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackupsRequest.
+        r"""Gets the offset of this ListBackupsRequest.
 
         本次请求的起始位置，默认为0。
 
@@ -83,7 +83,7 @@ class ListBackupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackupsRequest.
+        r"""Sets the offset of this ListBackupsRequest.
 
         本次请求的起始位置，默认为0。
 

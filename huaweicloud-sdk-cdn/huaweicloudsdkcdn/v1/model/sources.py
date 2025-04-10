@@ -33,7 +33,7 @@ class Sources:
     }
 
     def __init__(self, domain_id=None, origin_type=None, ip_or_domain=None, active_standby=None, enable_obs_web_hosting=None):
-        """Sources
+        r"""Sources
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class Sources:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Sources.
+        r"""Gets the domain_id of this Sources.
 
         加速域名id。
 
@@ -79,7 +79,7 @@ class Sources:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Sources.
+        r"""Sets the domain_id of this Sources.
 
         加速域名id。
 
@@ -90,7 +90,7 @@ class Sources:
 
     @property
     def origin_type(self):
-        """Gets the origin_type of this Sources.
+        r"""Gets the origin_type of this Sources.
 
         源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。源站为ipaddr时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持50个源站IP对象，备源站最多支持50个源站IP对象；源站为domain时，仅支持1个源站对象。不支持IP源站和域名源站混用。
 
@@ -101,7 +101,7 @@ class Sources:
 
     @origin_type.setter
     def origin_type(self, origin_type):
-        """Sets the origin_type of this Sources.
+        r"""Sets the origin_type of this Sources.
 
         源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。源站为ipaddr时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持50个源站IP对象，备源站最多支持50个源站IP对象；源站为domain时，仅支持1个源站对象。不支持IP源站和域名源站混用。
 
@@ -112,7 +112,7 @@ class Sources:
 
     @property
     def ip_or_domain(self):
-        """Gets the ip_or_domain of this Sources.
+        r"""Gets the ip_or_domain of this Sources.
 
         源站IP（非内网IP）或者域名。
 
@@ -123,7 +123,7 @@ class Sources:
 
     @ip_or_domain.setter
     def ip_or_domain(self, ip_or_domain):
-        """Sets the ip_or_domain of this Sources.
+        r"""Sets the ip_or_domain of this Sources.
 
         源站IP（非内网IP）或者域名。
 
@@ -134,7 +134,7 @@ class Sources:
 
     @property
     def active_standby(self):
-        """Gets the active_standby of this Sources.
+        r"""Gets the active_standby of this Sources.
 
         主备状态，1代表主源站，0代表备源站。
 
@@ -145,7 +145,7 @@ class Sources:
 
     @active_standby.setter
     def active_standby(self, active_standby):
-        """Sets the active_standby of this Sources.
+        r"""Sets the active_standby of this Sources.
 
         主备状态，1代表主源站，0代表备源站。
 
@@ -156,7 +156,7 @@ class Sources:
 
     @property
     def enable_obs_web_hosting(self):
-        """Gets the enable_obs_web_hosting of this Sources.
+        r"""Gets the enable_obs_web_hosting of this Sources.
 
         是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
@@ -167,7 +167,7 @@ class Sources:
 
     @enable_obs_web_hosting.setter
     def enable_obs_web_hosting(self, enable_obs_web_hosting):
-        """Sets the enable_obs_web_hosting of this Sources.
+        r"""Sets the enable_obs_web_hosting of this Sources.
 
         是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 

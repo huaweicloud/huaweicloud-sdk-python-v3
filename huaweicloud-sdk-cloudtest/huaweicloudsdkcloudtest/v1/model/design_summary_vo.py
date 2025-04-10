@@ -29,7 +29,7 @@ class DesignSummaryVo:
     }
 
     def __init__(self, issue_num=None, issue_cover_num=None, case_num=None):
-        """DesignSummaryVo
+        r"""DesignSummaryVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DesignSummaryVo:
 
     @property
     def issue_num(self):
-        """Gets the issue_num of this DesignSummaryVo.
+        r"""Gets the issue_num of this DesignSummaryVo.
 
         需求总数
 
@@ -68,7 +68,7 @@ class DesignSummaryVo:
 
     @issue_num.setter
     def issue_num(self, issue_num):
-        """Sets the issue_num of this DesignSummaryVo.
+        r"""Sets the issue_num of this DesignSummaryVo.
 
         需求总数
 
@@ -79,7 +79,7 @@ class DesignSummaryVo:
 
     @property
     def issue_cover_num(self):
-        """Gets the issue_cover_num of this DesignSummaryVo.
+        r"""Gets the issue_cover_num of this DesignSummaryVo.
 
         已覆盖需求数
 
@@ -90,7 +90,7 @@ class DesignSummaryVo:
 
     @issue_cover_num.setter
     def issue_cover_num(self, issue_cover_num):
-        """Sets the issue_cover_num of this DesignSummaryVo.
+        r"""Sets the issue_cover_num of this DesignSummaryVo.
 
         已覆盖需求数
 
@@ -101,7 +101,7 @@ class DesignSummaryVo:
 
     @property
     def case_num(self):
-        """Gets the case_num of this DesignSummaryVo.
+        r"""Gets the case_num of this DesignSummaryVo.
 
         用例数
 
@@ -112,7 +112,7 @@ class DesignSummaryVo:
 
     @case_num.setter
     def case_num(self, case_num):
-        """Sets the case_num of this DesignSummaryVo.
+        r"""Sets the case_num of this DesignSummaryVo.
 
         用例数
 

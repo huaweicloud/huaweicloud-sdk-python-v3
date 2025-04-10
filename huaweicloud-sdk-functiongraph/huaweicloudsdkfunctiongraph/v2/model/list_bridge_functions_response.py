@@ -26,7 +26,7 @@ class ListBridgeFunctionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListBridgeFunctionsResponse
+        r"""ListBridgeFunctionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBridgeFunctionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListBridgeFunctionsResponse.
+        r"""Gets the body of this ListBridgeFunctionsResponse.
 
         函数绑定的servicebridge函数列表。
 
@@ -55,7 +55,7 @@ class ListBridgeFunctionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBridgeFunctionsResponse.
+        r"""Sets the body of this ListBridgeFunctionsResponse.
 
         函数绑定的servicebridge函数列表。
 

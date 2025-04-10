@@ -27,7 +27,7 @@ class ShowBackupDownloadLinkRequest:
     }
 
     def __init__(self, graph_id=None, backup_id=None):
-        """ShowBackupDownloadLinkRequest
+        r"""ShowBackupDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ShowBackupDownloadLinkRequest.
+        r"""Gets the graph_id of this ShowBackupDownloadLinkRequest.
 
         图ID。
 
@@ -59,7 +59,7 @@ class ShowBackupDownloadLinkRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ShowBackupDownloadLinkRequest.
+        r"""Sets the graph_id of this ShowBackupDownloadLinkRequest.
 
         图ID。
 
@@ -70,7 +70,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowBackupDownloadLinkRequest.
+        r"""Gets the backup_id of this ShowBackupDownloadLinkRequest.
 
         备份ID
 
@@ -81,7 +81,7 @@ class ShowBackupDownloadLinkRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowBackupDownloadLinkRequest.
+        r"""Sets the backup_id of this ShowBackupDownloadLinkRequest.
 
         备份ID
 

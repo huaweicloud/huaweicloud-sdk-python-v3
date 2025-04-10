@@ -66,7 +66,7 @@ class RestoreNewInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None, order_id=None, charge_info=None):
-        """RestoreNewInstanceResponse
+        r"""RestoreNewInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this RestoreNewInstanceResponse.
+        r"""Gets the id of this RestoreNewInstanceResponse.
 
         实例ID。
 
@@ -195,7 +195,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RestoreNewInstanceResponse.
+        r"""Sets the id of this RestoreNewInstanceResponse.
 
         实例ID。
 
@@ -206,7 +206,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this RestoreNewInstanceResponse.
+        r"""Gets the datastore of this RestoreNewInstanceResponse.
 
         :return: The datastore of this RestoreNewInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.Datastore`
@@ -215,7 +215,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this RestoreNewInstanceResponse.
+        r"""Sets the datastore of this RestoreNewInstanceResponse.
 
         :param datastore: The datastore of this RestoreNewInstanceResponse.
         :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
@@ -224,7 +224,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this RestoreNewInstanceResponse.
+        r"""Gets the name of this RestoreNewInstanceResponse.
 
         实例名称，与请求参数相同。
 
@@ -235,7 +235,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RestoreNewInstanceResponse.
+        r"""Sets the name of this RestoreNewInstanceResponse.
 
         实例名称，与请求参数相同。
 
@@ -246,7 +246,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this RestoreNewInstanceResponse.
+        r"""Gets the created of this RestoreNewInstanceResponse.
 
         创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
 
@@ -257,7 +257,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this RestoreNewInstanceResponse.
+        r"""Sets the created of this RestoreNewInstanceResponse.
 
         创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
 
@@ -268,7 +268,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this RestoreNewInstanceResponse.
+        r"""Gets the status of this RestoreNewInstanceResponse.
 
         实例状态，取值为“creating”。
 
@@ -279,7 +279,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RestoreNewInstanceResponse.
+        r"""Sets the status of this RestoreNewInstanceResponse.
 
         实例状态，取值为“creating”。
 
@@ -290,7 +290,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this RestoreNewInstanceResponse.
+        r"""Gets the region of this RestoreNewInstanceResponse.
 
         区域ID，与请求参数相同。
 
@@ -301,7 +301,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RestoreNewInstanceResponse.
+        r"""Sets the region of this RestoreNewInstanceResponse.
 
         区域ID，与请求参数相同。
 
@@ -312,7 +312,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this RestoreNewInstanceResponse.
+        r"""Gets the availability_zone of this RestoreNewInstanceResponse.
 
         可用区ID，与请求参数相同。
 
@@ -323,7 +323,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this RestoreNewInstanceResponse.
+        r"""Sets the availability_zone of this RestoreNewInstanceResponse.
 
         可用区ID，与请求参数相同。
 
@@ -334,7 +334,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this RestoreNewInstanceResponse.
+        r"""Gets the vpc_id of this RestoreNewInstanceResponse.
 
         虚拟私有云ID，与请求参数相同。
 
@@ -345,7 +345,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this RestoreNewInstanceResponse.
+        r"""Sets the vpc_id of this RestoreNewInstanceResponse.
 
         虚拟私有云ID，与请求参数相同。
 
@@ -356,7 +356,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this RestoreNewInstanceResponse.
+        r"""Gets the subnet_id of this RestoreNewInstanceResponse.
 
         子网ID，与请求参数相同。
 
@@ -367,7 +367,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this RestoreNewInstanceResponse.
+        r"""Sets the subnet_id of this RestoreNewInstanceResponse.
 
         子网ID，与请求参数相同。
 
@@ -378,7 +378,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this RestoreNewInstanceResponse.
+        r"""Gets the security_group_id of this RestoreNewInstanceResponse.
 
         实例所属的安全组ID，与请求参数相同。
 
@@ -389,7 +389,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this RestoreNewInstanceResponse.
+        r"""Sets the security_group_id of this RestoreNewInstanceResponse.
 
         实例所属的安全组ID，与请求参数相同。
 
@@ -400,7 +400,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this RestoreNewInstanceResponse.
+        r"""Gets the disk_encryption_id of this RestoreNewInstanceResponse.
 
         磁盘加密的密钥ID，与请求参数相同。
 
@@ -411,7 +411,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this RestoreNewInstanceResponse.
+        r"""Sets the disk_encryption_id of this RestoreNewInstanceResponse.
 
         磁盘加密的密钥ID，与请求参数相同。
 
@@ -422,7 +422,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this RestoreNewInstanceResponse.
+        r"""Gets the mode of this RestoreNewInstanceResponse.
 
         实例类型，与请求参数相同。
 
@@ -433,7 +433,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RestoreNewInstanceResponse.
+        r"""Sets the mode of this RestoreNewInstanceResponse.
 
         实例类型，与请求参数相同。
 
@@ -444,7 +444,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this RestoreNewInstanceResponse.
+        r"""Gets the configurations of this RestoreNewInstanceResponse.
 
         参数组配置信息。
 
@@ -455,7 +455,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this RestoreNewInstanceResponse.
+        r"""Sets the configurations of this RestoreNewInstanceResponse.
 
         参数组配置信息。
 
@@ -466,7 +466,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this RestoreNewInstanceResponse.
+        r"""Gets the flavor of this RestoreNewInstanceResponse.
 
         实例规格详情，与请求参数相同。
 
@@ -477,7 +477,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this RestoreNewInstanceResponse.
+        r"""Sets the flavor of this RestoreNewInstanceResponse.
 
         实例规格详情，与请求参数相同。
 
@@ -488,7 +488,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this RestoreNewInstanceResponse.
+        r"""Gets the backup_strategy of this RestoreNewInstanceResponse.
 
         :return: The backup_strategy of this RestoreNewInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -497,7 +497,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this RestoreNewInstanceResponse.
+        r"""Sets the backup_strategy of this RestoreNewInstanceResponse.
 
         :param backup_strategy: The backup_strategy of this RestoreNewInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -506,7 +506,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RestoreNewInstanceResponse.
+        r"""Gets the enterprise_project_id of this RestoreNewInstanceResponse.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -517,7 +517,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RestoreNewInstanceResponse.
+        r"""Sets the enterprise_project_id of this RestoreNewInstanceResponse.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -528,7 +528,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this RestoreNewInstanceResponse.
+        r"""Gets the ssl_option of this RestoreNewInstanceResponse.
 
         SSL开关选项，与请求参数相同。
 
@@ -539,7 +539,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this RestoreNewInstanceResponse.
+        r"""Sets the ssl_option of this RestoreNewInstanceResponse.
 
         SSL开关选项，与请求参数相同。
 
@@ -550,7 +550,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this RestoreNewInstanceResponse.
+        r"""Gets the dss_pool_id of this RestoreNewInstanceResponse.
 
         专属存储池ID。
 
@@ -561,7 +561,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this RestoreNewInstanceResponse.
+        r"""Sets the dss_pool_id of this RestoreNewInstanceResponse.
 
         专属存储池ID。
 
@@ -572,7 +572,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestoreNewInstanceResponse.
+        r"""Gets the job_id of this RestoreNewInstanceResponse.
 
         创建实例的工作流ID。
 
@@ -583,7 +583,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestoreNewInstanceResponse.
+        r"""Sets the job_id of this RestoreNewInstanceResponse.
 
         创建实例的工作流ID。
 
@@ -594,7 +594,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this RestoreNewInstanceResponse.
+        r"""Gets the order_id of this RestoreNewInstanceResponse.
 
         创建实例的订单ID，仅创建包年包月实例时返回该参数。
 
@@ -605,7 +605,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this RestoreNewInstanceResponse.
+        r"""Sets the order_id of this RestoreNewInstanceResponse.
 
         创建实例的订单ID，仅创建包年包月实例时返回该参数。
 
@@ -616,7 +616,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this RestoreNewInstanceResponse.
+        r"""Gets the charge_info of this RestoreNewInstanceResponse.
 
         :return: The charge_info of this RestoreNewInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
@@ -625,7 +625,7 @@ class RestoreNewInstanceResponse(SdkResponse):
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this RestoreNewInstanceResponse.
+        r"""Sets the charge_info of this RestoreNewInstanceResponse.
 
         :param charge_info: The charge_info of this RestoreNewInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`

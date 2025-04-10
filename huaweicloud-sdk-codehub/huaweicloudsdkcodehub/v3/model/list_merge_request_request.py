@@ -33,7 +33,7 @@ class ListMergeRequestRequest:
     }
 
     def __init__(self, repository_id=None, state=None, page=None, per_page=None, search=None):
-        """ListMergeRequestRequest
+        r"""ListMergeRequestRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListMergeRequestRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ListMergeRequestRequest.
+        r"""Gets the repository_id of this ListMergeRequestRequest.
 
         仓库短id
 
@@ -81,7 +81,7 @@ class ListMergeRequestRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ListMergeRequestRequest.
+        r"""Sets the repository_id of this ListMergeRequestRequest.
 
         仓库短id
 
@@ -92,7 +92,7 @@ class ListMergeRequestRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListMergeRequestRequest.
+        r"""Gets the state of this ListMergeRequestRequest.
 
         匹配条件
 
@@ -103,7 +103,7 @@ class ListMergeRequestRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListMergeRequestRequest.
+        r"""Sets the state of this ListMergeRequestRequest.
 
         匹配条件
 
@@ -114,7 +114,7 @@ class ListMergeRequestRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListMergeRequestRequest.
+        r"""Gets the page of this ListMergeRequestRequest.
 
         分页页数
 
@@ -125,7 +125,7 @@ class ListMergeRequestRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListMergeRequestRequest.
+        r"""Sets the page of this ListMergeRequestRequest.
 
         分页页数
 
@@ -136,7 +136,7 @@ class ListMergeRequestRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ListMergeRequestRequest.
+        r"""Gets the per_page of this ListMergeRequestRequest.
 
         每页数据数
 
@@ -147,7 +147,7 @@ class ListMergeRequestRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ListMergeRequestRequest.
+        r"""Sets the per_page of this ListMergeRequestRequest.
 
         每页数据数
 
@@ -158,7 +158,7 @@ class ListMergeRequestRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListMergeRequestRequest.
+        r"""Gets the search of this ListMergeRequestRequest.
 
         匹配条件
 
@@ -169,7 +169,7 @@ class ListMergeRequestRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListMergeRequestRequest.
+        r"""Sets the search of this ListMergeRequestRequest.
 
         匹配条件
 

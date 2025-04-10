@@ -73,7 +73,7 @@ class ShowProtectionGroupParams:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, progress=None, source_availability_zone=None, target_availability_zone=None, domain_id=None, domain_name=None, priority_station=None, protected_instance_num=None, replication_num=None, disaster_recovery_drill_num=None, protected_status=None, replication_status=None, health_status=None, source_vpc_id=None, target_vpc_id=None, test_vpc_id=None, dr_type=None, created_at=None, updated_at=None, protection_type=None, replication_model=None, server_type=None):
-        """ShowProtectionGroupParams
+        r"""ShowProtectionGroupParams
 
         The model defined in huaweicloud sdk
 
@@ -186,7 +186,7 @@ class ShowProtectionGroupParams:
 
     @property
     def id(self):
-        """Gets the id of this ShowProtectionGroupParams.
+        r"""Gets the id of this ShowProtectionGroupParams.
 
         保护组的ID。
 
@@ -197,7 +197,7 @@ class ShowProtectionGroupParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProtectionGroupParams.
+        r"""Sets the id of this ShowProtectionGroupParams.
 
         保护组的ID。
 
@@ -208,7 +208,7 @@ class ShowProtectionGroupParams:
 
     @property
     def name(self):
-        """Gets the name of this ShowProtectionGroupParams.
+        r"""Gets the name of this ShowProtectionGroupParams.
 
         保护组的名称。
 
@@ -219,7 +219,7 @@ class ShowProtectionGroupParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProtectionGroupParams.
+        r"""Sets the name of this ShowProtectionGroupParams.
 
         保护组的名称。
 
@@ -230,7 +230,7 @@ class ShowProtectionGroupParams:
 
     @property
     def description(self):
-        """Gets the description of this ShowProtectionGroupParams.
+        r"""Gets the description of this ShowProtectionGroupParams.
 
         保护组的描述。
 
@@ -241,7 +241,7 @@ class ShowProtectionGroupParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProtectionGroupParams.
+        r"""Sets the description of this ShowProtectionGroupParams.
 
         保护组的描述。
 
@@ -252,7 +252,7 @@ class ShowProtectionGroupParams:
 
     @property
     def status(self):
-        """Gets the status of this ShowProtectionGroupParams.
+        r"""Gets the status of this ShowProtectionGroupParams.
 
         保护组的状态。
 
@@ -263,7 +263,7 @@ class ShowProtectionGroupParams:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowProtectionGroupParams.
+        r"""Sets the status of this ShowProtectionGroupParams.
 
         保护组的状态。
 
@@ -274,7 +274,7 @@ class ShowProtectionGroupParams:
 
     @property
     def progress(self):
-        """Gets the progress of this ShowProtectionGroupParams.
+        r"""Gets the progress of this ShowProtectionGroupParams.
 
         保护组的同步进度。单位：百分比（%）。
 
@@ -285,7 +285,7 @@ class ShowProtectionGroupParams:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowProtectionGroupParams.
+        r"""Sets the progress of this ShowProtectionGroupParams.
 
         保护组的同步进度。单位：百分比（%）。
 
@@ -296,7 +296,7 @@ class ShowProtectionGroupParams:
 
     @property
     def source_availability_zone(self):
-        """Gets the source_availability_zone of this ShowProtectionGroupParams.
+        r"""Gets the source_availability_zone of this ShowProtectionGroupParams.
 
         保护组创建时的生产站点可用区名称。注意：保护组切换、故障切换后，该值不变。
 
@@ -307,7 +307,7 @@ class ShowProtectionGroupParams:
 
     @source_availability_zone.setter
     def source_availability_zone(self, source_availability_zone):
-        """Sets the source_availability_zone of this ShowProtectionGroupParams.
+        r"""Sets the source_availability_zone of this ShowProtectionGroupParams.
 
         保护组创建时的生产站点可用区名称。注意：保护组切换、故障切换后，该值不变。
 
@@ -318,7 +318,7 @@ class ShowProtectionGroupParams:
 
     @property
     def target_availability_zone(self):
-        """Gets the target_availability_zone of this ShowProtectionGroupParams.
+        r"""Gets the target_availability_zone of this ShowProtectionGroupParams.
 
         保护组创建时的容灾站点可用区名称。注意：保护组切换、故障切换后，该值不变。
 
@@ -329,7 +329,7 @@ class ShowProtectionGroupParams:
 
     @target_availability_zone.setter
     def target_availability_zone(self, target_availability_zone):
-        """Sets the target_availability_zone of this ShowProtectionGroupParams.
+        r"""Sets the target_availability_zone of this ShowProtectionGroupParams.
 
         保护组创建时的容灾站点可用区名称。注意：保护组切换、故障切换后，该值不变。
 
@@ -340,7 +340,7 @@ class ShowProtectionGroupParams:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowProtectionGroupParams.
+        r"""Gets the domain_id of this ShowProtectionGroupParams.
 
         双活域ID。
 
@@ -351,7 +351,7 @@ class ShowProtectionGroupParams:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowProtectionGroupParams.
+        r"""Sets the domain_id of this ShowProtectionGroupParams.
 
         双活域ID。
 
@@ -362,7 +362,7 @@ class ShowProtectionGroupParams:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowProtectionGroupParams.
+        r"""Gets the domain_name of this ShowProtectionGroupParams.
 
         双活域名称。
 
@@ -373,7 +373,7 @@ class ShowProtectionGroupParams:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowProtectionGroupParams.
+        r"""Sets the domain_name of this ShowProtectionGroupParams.
 
         双活域名称。
 
@@ -384,7 +384,7 @@ class ShowProtectionGroupParams:
 
     @property
     def priority_station(self):
-        """Gets the priority_station of this ShowProtectionGroupParams.
+        r"""Gets the priority_station of this ShowProtectionGroupParams.
 
         用于标识保护组的当前生产站点。 source：表示当前生产站点可用区为source_availability_zone的值。 target：表示当前生产站点可用区为target_availability_zone的值。
 
@@ -395,7 +395,7 @@ class ShowProtectionGroupParams:
 
     @priority_station.setter
     def priority_station(self, priority_station):
-        """Sets the priority_station of this ShowProtectionGroupParams.
+        r"""Sets the priority_station of this ShowProtectionGroupParams.
 
         用于标识保护组的当前生产站点。 source：表示当前生产站点可用区为source_availability_zone的值。 target：表示当前生产站点可用区为target_availability_zone的值。
 
@@ -406,7 +406,7 @@ class ShowProtectionGroupParams:
 
     @property
     def protected_instance_num(self):
-        """Gets the protected_instance_num of this ShowProtectionGroupParams.
+        r"""Gets the protected_instance_num of this ShowProtectionGroupParams.
 
         该保护组中保护实例的个数。
 
@@ -417,7 +417,7 @@ class ShowProtectionGroupParams:
 
     @protected_instance_num.setter
     def protected_instance_num(self, protected_instance_num):
-        """Sets the protected_instance_num of this ShowProtectionGroupParams.
+        r"""Sets the protected_instance_num of this ShowProtectionGroupParams.
 
         该保护组中保护实例的个数。
 
@@ -428,7 +428,7 @@ class ShowProtectionGroupParams:
 
     @property
     def replication_num(self):
-        """Gets the replication_num of this ShowProtectionGroupParams.
+        r"""Gets the replication_num of this ShowProtectionGroupParams.
 
         该保护组中复制对的个数。
 
@@ -439,7 +439,7 @@ class ShowProtectionGroupParams:
 
     @replication_num.setter
     def replication_num(self, replication_num):
-        """Sets the replication_num of this ShowProtectionGroupParams.
+        r"""Sets the replication_num of this ShowProtectionGroupParams.
 
         该保护组中复制对的个数。
 
@@ -450,7 +450,7 @@ class ShowProtectionGroupParams:
 
     @property
     def disaster_recovery_drill_num(self):
-        """Gets the disaster_recovery_drill_num of this ShowProtectionGroupParams.
+        r"""Gets the disaster_recovery_drill_num of this ShowProtectionGroupParams.
 
         该保护组中容灾演练的个数。
 
@@ -461,7 +461,7 @@ class ShowProtectionGroupParams:
 
     @disaster_recovery_drill_num.setter
     def disaster_recovery_drill_num(self, disaster_recovery_drill_num):
-        """Sets the disaster_recovery_drill_num of this ShowProtectionGroupParams.
+        r"""Sets the disaster_recovery_drill_num of this ShowProtectionGroupParams.
 
         该保护组中容灾演练的个数。
 
@@ -472,7 +472,7 @@ class ShowProtectionGroupParams:
 
     @property
     def protected_status(self):
-        """Gets the protected_status of this ShowProtectionGroupParams.
+        r"""Gets the protected_status of this ShowProtectionGroupParams.
 
         保护状态。started：表示该保护组开始保护。stopped：表示该保护组停止保护。 说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
@@ -483,7 +483,7 @@ class ShowProtectionGroupParams:
 
     @protected_status.setter
     def protected_status(self, protected_status):
-        """Sets the protected_status of this ShowProtectionGroupParams.
+        r"""Sets the protected_status of this ShowProtectionGroupParams.
 
         保护状态。started：表示该保护组开始保护。stopped：表示该保护组停止保护。 说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
@@ -494,7 +494,7 @@ class ShowProtectionGroupParams:
 
     @property
     def replication_status(self):
-        """Gets the replication_status of this ShowProtectionGroupParams.
+        r"""Gets the replication_status of this ShowProtectionGroupParams.
 
         数据同步状态。 active：表示数据已同步完成。 inactive：表示数据未同步。 copying：表示数据正在同步。 active-stopped：表示数据已停止同步。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
@@ -505,7 +505,7 @@ class ShowProtectionGroupParams:
 
     @replication_status.setter
     def replication_status(self, replication_status):
-        """Sets the replication_status of this ShowProtectionGroupParams.
+        r"""Sets the replication_status of this ShowProtectionGroupParams.
 
         数据同步状态。 active：表示数据已同步完成。 inactive：表示数据未同步。 copying：表示数据正在同步。 active-stopped：表示数据已停止同步。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
@@ -516,7 +516,7 @@ class ShowProtectionGroupParams:
 
     @property
     def health_status(self):
-        """Gets the health_status of this ShowProtectionGroupParams.
+        r"""Gets the health_status of this ShowProtectionGroupParams.
 
         健康状态。 normal：表示该保护组处于正常状态。 abnormal：表示该保护组处于非正常状态。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
@@ -527,7 +527,7 @@ class ShowProtectionGroupParams:
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this ShowProtectionGroupParams.
+        r"""Sets the health_status of this ShowProtectionGroupParams.
 
         健康状态。 normal：表示该保护组处于正常状态。 abnormal：表示该保护组处于非正常状态。  说明:系统近期进行了升级，对于升级后创建的保护组，该字段值为null，无实际意义。
 
@@ -538,7 +538,7 @@ class ShowProtectionGroupParams:
 
     @property
     def source_vpc_id(self):
-        """Gets the source_vpc_id of this ShowProtectionGroupParams.
+        r"""Gets the source_vpc_id of this ShowProtectionGroupParams.
 
         生产站点虚拟私有云ID。
 
@@ -549,7 +549,7 @@ class ShowProtectionGroupParams:
 
     @source_vpc_id.setter
     def source_vpc_id(self, source_vpc_id):
-        """Sets the source_vpc_id of this ShowProtectionGroupParams.
+        r"""Sets the source_vpc_id of this ShowProtectionGroupParams.
 
         生产站点虚拟私有云ID。
 
@@ -560,7 +560,7 @@ class ShowProtectionGroupParams:
 
     @property
     def target_vpc_id(self):
-        """Gets the target_vpc_id of this ShowProtectionGroupParams.
+        r"""Gets the target_vpc_id of this ShowProtectionGroupParams.
 
         容灾站点虚拟私有云ID。
 
@@ -571,7 +571,7 @@ class ShowProtectionGroupParams:
 
     @target_vpc_id.setter
     def target_vpc_id(self, target_vpc_id):
-        """Sets the target_vpc_id of this ShowProtectionGroupParams.
+        r"""Sets the target_vpc_id of this ShowProtectionGroupParams.
 
         容灾站点虚拟私有云ID。
 
@@ -582,7 +582,7 @@ class ShowProtectionGroupParams:
 
     @property
     def test_vpc_id(self):
-        """Gets the test_vpc_id of this ShowProtectionGroupParams.
+        r"""Gets the test_vpc_id of this ShowProtectionGroupParams.
 
         容灾演练虚拟私有云ID。（该参数暂未使用）
 
@@ -593,7 +593,7 @@ class ShowProtectionGroupParams:
 
     @test_vpc_id.setter
     def test_vpc_id(self, test_vpc_id):
-        """Sets the test_vpc_id of this ShowProtectionGroupParams.
+        r"""Sets the test_vpc_id of this ShowProtectionGroupParams.
 
         容灾演练虚拟私有云ID。（该参数暂未使用）
 
@@ -604,7 +604,7 @@ class ShowProtectionGroupParams:
 
     @property
     def dr_type(self):
-        """Gets the dr_type of this ShowProtectionGroupParams.
+        r"""Gets the dr_type of this ShowProtectionGroupParams.
 
         部署模式。默认值为“migration”，migration表示VPC内迁移。
 
@@ -615,7 +615,7 @@ class ShowProtectionGroupParams:
 
     @dr_type.setter
     def dr_type(self, dr_type):
-        """Sets the dr_type of this ShowProtectionGroupParams.
+        r"""Sets the dr_type of this ShowProtectionGroupParams.
 
         部署模式。默认值为“migration”，migration表示VPC内迁移。
 
@@ -626,7 +626,7 @@ class ShowProtectionGroupParams:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowProtectionGroupParams.
+        r"""Gets the created_at of this ShowProtectionGroupParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -637,7 +637,7 @@ class ShowProtectionGroupParams:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowProtectionGroupParams.
+        r"""Sets the created_at of this ShowProtectionGroupParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -648,7 +648,7 @@ class ShowProtectionGroupParams:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowProtectionGroupParams.
+        r"""Gets the updated_at of this ShowProtectionGroupParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -659,7 +659,7 @@ class ShowProtectionGroupParams:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowProtectionGroupParams.
+        r"""Sets the updated_at of this ShowProtectionGroupParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -670,7 +670,7 @@ class ShowProtectionGroupParams:
 
     @property
     def protection_type(self):
-        """Gets the protection_type of this ShowProtectionGroupParams.
+        r"""Gets the protection_type of this ShowProtectionGroupParams.
 
         保护模式。 replication-pair：表示以复制对为单位进行数据同步。 null：表示将保护组中的所有复制对作为一个整体进行数据同步。  说明:当保护组中的所有复制对作为一个整体进行数据同步时，如果数据同步失败，保护组中的所有复制对都会受到影响。因此，SDRS服务对系统做了优化升级： 对于升级后创建的资源，默认以复制对为单位进行数据同步，返回值为replication-pair； 对于已有资源，仍以一个整体进行数据同步，返回值为null。
 
@@ -681,7 +681,7 @@ class ShowProtectionGroupParams:
 
     @protection_type.setter
     def protection_type(self, protection_type):
-        """Sets the protection_type of this ShowProtectionGroupParams.
+        r"""Sets the protection_type of this ShowProtectionGroupParams.
 
         保护模式。 replication-pair：表示以复制对为单位进行数据同步。 null：表示将保护组中的所有复制对作为一个整体进行数据同步。  说明:当保护组中的所有复制对作为一个整体进行数据同步时，如果数据同步失败，保护组中的所有复制对都会受到影响。因此，SDRS服务对系统做了优化升级： 对于升级后创建的资源，默认以复制对为单位进行数据同步，返回值为replication-pair； 对于已有资源，仍以一个整体进行数据同步，返回值为null。
 
@@ -692,7 +692,7 @@ class ShowProtectionGroupParams:
 
     @property
     def replication_model(self):
-        """Gets the replication_model of this ShowProtectionGroupParams.
+        r"""Gets the replication_model of this ShowProtectionGroupParams.
 
         复制类型。 说明:预留参数，暂未启用。
 
@@ -703,7 +703,7 @@ class ShowProtectionGroupParams:
 
     @replication_model.setter
     def replication_model(self, replication_model):
-        """Sets the replication_model of this ShowProtectionGroupParams.
+        r"""Sets the replication_model of this ShowProtectionGroupParams.
 
         复制类型。 说明:预留参数，暂未启用。
 
@@ -714,7 +714,7 @@ class ShowProtectionGroupParams:
 
     @property
     def server_type(self):
-        """Gets the server_type of this ShowProtectionGroupParams.
+        r"""Gets the server_type of this ShowProtectionGroupParams.
 
         管理的服务器类型 ECS：表示管理的服务器类型为云服务器。
 
@@ -725,7 +725,7 @@ class ShowProtectionGroupParams:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this ShowProtectionGroupParams.
+        r"""Sets the server_type of this ShowProtectionGroupParams.
 
         管理的服务器类型 ECS：表示管理的服务器类型为云服务器。
 

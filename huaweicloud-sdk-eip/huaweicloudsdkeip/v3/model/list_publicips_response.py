@@ -32,7 +32,7 @@ class ListPublicipsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, publicips=None, page_info=None, total_count=None):
-        """ListPublicipsResponse
+        r"""ListPublicipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPublicipsResponse.
+        r"""Gets the request_id of this ListPublicipsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPublicipsResponse.
+        r"""Sets the request_id of this ListPublicipsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @property
     def publicips(self):
-        """Gets the publicips of this ListPublicipsResponse.
+        r"""Gets the publicips of this ListPublicipsResponse.
 
         功能说明：弹性公网IP对象
 
@@ -98,7 +98,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this ListPublicipsResponse.
+        r"""Sets the publicips of this ListPublicipsResponse.
 
         功能说明：弹性公网IP对象
 
@@ -109,7 +109,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPublicipsResponse.
+        r"""Gets the page_info of this ListPublicipsResponse.
 
         :return: The page_info of this ListPublicipsResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
@@ -118,7 +118,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPublicipsResponse.
+        r"""Sets the page_info of this ListPublicipsResponse.
 
         :param page_info: The page_info of this ListPublicipsResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
@@ -127,7 +127,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPublicipsResponse.
+        r"""Gets the total_count of this ListPublicipsResponse.
 
         公网IP总条目数
 
@@ -138,7 +138,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPublicipsResponse.
+        r"""Sets the total_count of this ListPublicipsResponse.
 
         公网IP总条目数
 

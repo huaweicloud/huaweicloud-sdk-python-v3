@@ -43,7 +43,7 @@ class LdApiCreate:
     }
 
     def __init__(self, name=None, path=None, method=None, description=None, version=None, content_type=None, api_signature_id=None, roma_app_id=None, return_format=None, parameters=None):
-        """LdApiCreate
+        r"""LdApiCreate
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class LdApiCreate:
 
     @property
     def name(self):
-        """Gets the name of this LdApiCreate.
+        r"""Gets the name of this LdApiCreate.
 
         后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
 
@@ -111,7 +111,7 @@ class LdApiCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LdApiCreate.
+        r"""Sets the name of this LdApiCreate.
 
         后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
 
@@ -122,7 +122,7 @@ class LdApiCreate:
 
     @property
     def path(self):
-        """Gets the path of this LdApiCreate.
+        r"""Gets the path of this LdApiCreate.
 
         后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求路径不能修改。
 
@@ -133,7 +133,7 @@ class LdApiCreate:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this LdApiCreate.
+        r"""Sets the path of this LdApiCreate.
 
         后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求路径不能修改。
 
@@ -144,7 +144,7 @@ class LdApiCreate:
 
     @property
     def method(self):
-        """Gets the method of this LdApiCreate.
+        r"""Gets the method of this LdApiCreate.
 
         后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求方法不能修改。
 
@@ -155,7 +155,7 @@ class LdApiCreate:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this LdApiCreate.
+        r"""Sets the method of this LdApiCreate.
 
         后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求方法不能修改。
 
@@ -166,7 +166,7 @@ class LdApiCreate:
 
     @property
     def description(self):
-        """Gets the description of this LdApiCreate.
+        r"""Gets the description of this LdApiCreate.
 
         后端API描述。  不支持<，>字符
 
@@ -177,7 +177,7 @@ class LdApiCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LdApiCreate.
+        r"""Sets the description of this LdApiCreate.
 
         后端API描述。  不支持<，>字符
 
@@ -188,7 +188,7 @@ class LdApiCreate:
 
     @property
     def version(self):
-        """Gets the version of this LdApiCreate.
+        r"""Gets the version of this LdApiCreate.
 
         后端API版本  支持英文，数字，下划线，中划线，点。
 
@@ -199,7 +199,7 @@ class LdApiCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this LdApiCreate.
+        r"""Sets the version of this LdApiCreate.
 
         后端API版本  支持英文，数字，下划线，中划线，点。
 
@@ -210,7 +210,7 @@ class LdApiCreate:
 
     @property
     def content_type(self):
-        """Gets the content_type of this LdApiCreate.
+        r"""Gets the content_type of this LdApiCreate.
 
         后端API返回类型
 
@@ -221,7 +221,7 @@ class LdApiCreate:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this LdApiCreate.
+        r"""Sets the content_type of this LdApiCreate.
 
         后端API返回类型
 
@@ -232,7 +232,7 @@ class LdApiCreate:
 
     @property
     def api_signature_id(self):
-        """Gets the api_signature_id of this LdApiCreate.
+        r"""Gets the api_signature_id of this LdApiCreate.
 
         后端API为签名认证时绑定的签名密钥编号
 
@@ -243,7 +243,7 @@ class LdApiCreate:
 
     @api_signature_id.setter
     def api_signature_id(self, api_signature_id):
-        """Sets the api_signature_id of this LdApiCreate.
+        r"""Sets the api_signature_id of this LdApiCreate.
 
         后端API为签名认证时绑定的签名密钥编号
 
@@ -254,7 +254,7 @@ class LdApiCreate:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this LdApiCreate.
+        r"""Gets the roma_app_id of this LdApiCreate.
 
         后端API归属的集成应用编号  更新后端API时，status=4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
 
@@ -265,7 +265,7 @@ class LdApiCreate:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this LdApiCreate.
+        r"""Sets the roma_app_id of this LdApiCreate.
 
         后端API归属的集成应用编号  更新后端API时，status=4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
 
@@ -276,7 +276,7 @@ class LdApiCreate:
 
     @property
     def return_format(self):
-        """Gets the return_format of this LdApiCreate.
+        r"""Gets the return_format of this LdApiCreate.
 
         API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
 
@@ -287,7 +287,7 @@ class LdApiCreate:
 
     @return_format.setter
     def return_format(self, return_format):
-        """Sets the return_format of this LdApiCreate.
+        r"""Sets the return_format of this LdApiCreate.
 
         API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
 
@@ -298,7 +298,7 @@ class LdApiCreate:
 
     @property
     def parameters(self):
-        """Gets the parameters of this LdApiCreate.
+        r"""Gets the parameters of this LdApiCreate.
 
         后端API的请求参数列表
 
@@ -309,7 +309,7 @@ class LdApiCreate:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this LdApiCreate.
+        r"""Sets the parameters of this LdApiCreate.
 
         后端API的请求参数列表
 

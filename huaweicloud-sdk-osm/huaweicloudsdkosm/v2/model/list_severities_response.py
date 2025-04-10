@@ -28,7 +28,7 @@ class ListSeveritiesResponse(SdkResponse):
     }
 
     def __init__(self, show=None, severity_list=None):
-        """ListSeveritiesResponse
+        r"""ListSeveritiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSeveritiesResponse(SdkResponse):
 
     @property
     def show(self):
-        """Gets the show of this ListSeveritiesResponse.
+        r"""Gets the show of this ListSeveritiesResponse.
 
         是否展示
 
@@ -62,7 +62,7 @@ class ListSeveritiesResponse(SdkResponse):
 
     @show.setter
     def show(self, show):
-        """Sets the show of this ListSeveritiesResponse.
+        r"""Sets the show of this ListSeveritiesResponse.
 
         是否展示
 
@@ -73,7 +73,7 @@ class ListSeveritiesResponse(SdkResponse):
 
     @property
     def severity_list(self):
-        """Gets the severity_list of this ListSeveritiesResponse.
+        r"""Gets the severity_list of this ListSeveritiesResponse.
 
         严重性列表
 
@@ -84,7 +84,7 @@ class ListSeveritiesResponse(SdkResponse):
 
     @severity_list.setter
     def severity_list(self, severity_list):
-        """Sets the severity_list of this ListSeveritiesResponse.
+        r"""Sets the severity_list of this ListSeveritiesResponse.
 
         严重性列表
 

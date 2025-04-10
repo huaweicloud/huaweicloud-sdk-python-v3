@@ -55,7 +55,7 @@ class BaseInfo:
     }
 
     def __init__(self, title=None, video_name=None, description=None, category_id=None, category_name=None, create_time=None, last_modified=None, video_type=None, tags=None, meta_data=None, video_url=None, sign_url=None, cover_info_array=None, subtitle_info=None, source_path=None, output_path=None):
-        """BaseInfo
+        r"""BaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class BaseInfo:
 
     @property
     def title(self):
-        """Gets the title of this BaseInfo.
+        r"""Gets the title of this BaseInfo.
 
         媒资标题。  长度不超过128个字节，UTF8编码。
 
@@ -159,7 +159,7 @@ class BaseInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this BaseInfo.
+        r"""Sets the title of this BaseInfo.
 
         媒资标题。  长度不超过128个字节，UTF8编码。
 
@@ -170,7 +170,7 @@ class BaseInfo:
 
     @property
     def video_name(self):
-        """Gets the video_name of this BaseInfo.
+        r"""Gets the video_name of this BaseInfo.
 
         媒资文件名。
 
@@ -181,7 +181,7 @@ class BaseInfo:
 
     @video_name.setter
     def video_name(self, video_name):
-        """Sets the video_name of this BaseInfo.
+        r"""Sets the video_name of this BaseInfo.
 
         媒资文件名。
 
@@ -192,7 +192,7 @@ class BaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this BaseInfo.
+        r"""Gets the description of this BaseInfo.
 
         媒资描述。  长度不超过1024个字节。
 
@@ -203,7 +203,7 @@ class BaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseInfo.
+        r"""Sets the description of this BaseInfo.
 
         媒资描述。  长度不超过1024个字节。
 
@@ -214,7 +214,7 @@ class BaseInfo:
 
     @property
     def category_id(self):
-        """Gets the category_id of this BaseInfo.
+        r"""Gets the category_id of this BaseInfo.
 
         媒资分类id。
 
@@ -225,7 +225,7 @@ class BaseInfo:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this BaseInfo.
+        r"""Sets the category_id of this BaseInfo.
 
         媒资分类id。
 
@@ -236,7 +236,7 @@ class BaseInfo:
 
     @property
     def category_name(self):
-        """Gets the category_name of this BaseInfo.
+        r"""Gets the category_name of this BaseInfo.
 
         媒资分类名称。
 
@@ -247,7 +247,7 @@ class BaseInfo:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this BaseInfo.
+        r"""Sets the category_name of this BaseInfo.
 
         媒资分类名称。
 
@@ -258,7 +258,7 @@ class BaseInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BaseInfo.
+        r"""Gets the create_time of this BaseInfo.
 
         媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -269,7 +269,7 @@ class BaseInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BaseInfo.
+        r"""Sets the create_time of this BaseInfo.
 
         媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -280,7 +280,7 @@ class BaseInfo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this BaseInfo.
+        r"""Gets the last_modified of this BaseInfo.
 
         媒资最近修改时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -291,7 +291,7 @@ class BaseInfo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this BaseInfo.
+        r"""Sets the last_modified of this BaseInfo.
 
         媒资最近修改时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -302,7 +302,7 @@ class BaseInfo:
 
     @property
     def video_type(self):
-        """Gets the video_type of this BaseInfo.
+        r"""Gets the video_type of this BaseInfo.
 
         音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV。 - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2。
 
@@ -313,7 +313,7 @@ class BaseInfo:
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this BaseInfo.
+        r"""Sets the video_type of this BaseInfo.
 
         音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV。 - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2。
 
@@ -324,7 +324,7 @@ class BaseInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this BaseInfo.
+        r"""Gets the tags of this BaseInfo.
 
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -335,7 +335,7 @@ class BaseInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BaseInfo.
+        r"""Sets the tags of this BaseInfo.
 
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -346,7 +346,7 @@ class BaseInfo:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this BaseInfo.
+        r"""Gets the meta_data of this BaseInfo.
 
         :return: The meta_data of this BaseInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
@@ -355,7 +355,7 @@ class BaseInfo:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this BaseInfo.
+        r"""Sets the meta_data of this BaseInfo.
 
         :param meta_data: The meta_data of this BaseInfo.
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
@@ -364,7 +364,7 @@ class BaseInfo:
 
     @property
     def video_url(self):
-        """Gets the video_url of this BaseInfo.
+        r"""Gets the video_url of this BaseInfo.
 
         原始视频文件的访问地址。
 
@@ -375,7 +375,7 @@ class BaseInfo:
 
     @video_url.setter
     def video_url(self, video_url):
-        """Sets the video_url of this BaseInfo.
+        r"""Sets the video_url of this BaseInfo.
 
         原始视频文件的访问地址。
 
@@ -386,7 +386,7 @@ class BaseInfo:
 
     @property
     def sign_url(self):
-        """Gets the sign_url of this BaseInfo.
+        r"""Gets the sign_url of this BaseInfo.
 
         原视频文件的OBS临时访问地址,仅媒资详情接口生效
 
@@ -397,7 +397,7 @@ class BaseInfo:
 
     @sign_url.setter
     def sign_url(self, sign_url):
-        """Sets the sign_url of this BaseInfo.
+        r"""Sets the sign_url of this BaseInfo.
 
         原视频文件的OBS临时访问地址,仅媒资详情接口生效
 
@@ -408,7 +408,7 @@ class BaseInfo:
 
     @property
     def cover_info_array(self):
-        """Gets the cover_info_array of this BaseInfo.
+        r"""Gets the cover_info_array of this BaseInfo.
 
         封面信息。
 
@@ -419,7 +419,7 @@ class BaseInfo:
 
     @cover_info_array.setter
     def cover_info_array(self, cover_info_array):
-        """Sets the cover_info_array of this BaseInfo.
+        r"""Sets the cover_info_array of this BaseInfo.
 
         封面信息。
 
@@ -430,7 +430,7 @@ class BaseInfo:
 
     @property
     def subtitle_info(self):
-        """Gets the subtitle_info of this BaseInfo.
+        r"""Gets the subtitle_info of this BaseInfo.
 
         字幕信息数组
 
@@ -441,7 +441,7 @@ class BaseInfo:
 
     @subtitle_info.setter
     def subtitle_info(self, subtitle_info):
-        """Sets the subtitle_info of this BaseInfo.
+        r"""Sets the subtitle_info of this BaseInfo.
 
         字幕信息数组
 
@@ -452,7 +452,7 @@ class BaseInfo:
 
     @property
     def source_path(self):
-        """Gets the source_path of this BaseInfo.
+        r"""Gets the source_path of this BaseInfo.
 
         :return: The source_path of this BaseInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
@@ -461,7 +461,7 @@ class BaseInfo:
 
     @source_path.setter
     def source_path(self, source_path):
-        """Sets the source_path of this BaseInfo.
+        r"""Sets the source_path of this BaseInfo.
 
         :param source_path: The source_path of this BaseInfo.
         :type source_path: :class:`huaweicloudsdkvod.v1.FileAddr`
@@ -470,7 +470,7 @@ class BaseInfo:
 
     @property
     def output_path(self):
-        """Gets the output_path of this BaseInfo.
+        r"""Gets the output_path of this BaseInfo.
 
         :return: The output_path of this BaseInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
@@ -479,7 +479,7 @@ class BaseInfo:
 
     @output_path.setter
     def output_path(self, output_path):
-        """Sets the output_path of this BaseInfo.
+        r"""Sets the output_path of this BaseInfo.
 
         :param output_path: The output_path of this BaseInfo.
         :type output_path: :class:`huaweicloudsdkvod.v1.FileAddr`

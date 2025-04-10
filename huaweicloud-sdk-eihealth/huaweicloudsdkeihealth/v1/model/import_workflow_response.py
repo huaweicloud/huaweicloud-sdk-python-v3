@@ -30,7 +30,7 @@ class ImportWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, id=None, import_workflow_status=None, import_app_results=None):
-        """ImportWorkflowResponse
+        r"""ImportWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ImportWorkflowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ImportWorkflowResponse.
+        r"""Gets the id of this ImportWorkflowResponse.
 
         流程ID
 
@@ -69,7 +69,7 @@ class ImportWorkflowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportWorkflowResponse.
+        r"""Sets the id of this ImportWorkflowResponse.
 
         流程ID
 
@@ -80,7 +80,7 @@ class ImportWorkflowResponse(SdkResponse):
 
     @property
     def import_workflow_status(self):
-        """Gets the import_workflow_status of this ImportWorkflowResponse.
+        r"""Gets the import_workflow_status of this ImportWorkflowResponse.
 
         导入流程结果状态, 包括以下状态：IMPORT_SUCCESS,IMPORT_FAIL
 
@@ -91,7 +91,7 @@ class ImportWorkflowResponse(SdkResponse):
 
     @import_workflow_status.setter
     def import_workflow_status(self, import_workflow_status):
-        """Sets the import_workflow_status of this ImportWorkflowResponse.
+        r"""Sets the import_workflow_status of this ImportWorkflowResponse.
 
         导入流程结果状态, 包括以下状态：IMPORT_SUCCESS,IMPORT_FAIL
 
@@ -102,7 +102,7 @@ class ImportWorkflowResponse(SdkResponse):
 
     @property
     def import_app_results(self):
-        """Gets the import_app_results of this ImportWorkflowResponse.
+        r"""Gets the import_app_results of this ImportWorkflowResponse.
 
         导入应用详情
 
@@ -113,7 +113,7 @@ class ImportWorkflowResponse(SdkResponse):
 
     @import_app_results.setter
     def import_app_results(self, import_app_results):
-        """Sets the import_app_results of this ImportWorkflowResponse.
+        r"""Sets the import_app_results of this ImportWorkflowResponse.
 
         导入应用详情
 

@@ -39,7 +39,7 @@ class ListHistoryWebinarsRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, sort_type=None, start_time=None, end_time=None):
-        """ListHistoryWebinarsRequest
+        r"""ListHistoryWebinarsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListHistoryWebinarsRequest.
+        r"""Gets the x_request_id of this ListHistoryWebinarsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -103,7 +103,7 @@ class ListHistoryWebinarsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListHistoryWebinarsRequest.
+        r"""Sets the x_request_id of this ListHistoryWebinarsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -114,7 +114,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ListHistoryWebinarsRequest.
+        r"""Gets the accept_language of this ListHistoryWebinarsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -125,7 +125,7 @@ class ListHistoryWebinarsRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ListHistoryWebinarsRequest.
+        r"""Sets the accept_language of this ListHistoryWebinarsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -136,7 +136,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHistoryWebinarsRequest.
+        r"""Gets the offset of this ListHistoryWebinarsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -147,7 +147,7 @@ class ListHistoryWebinarsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHistoryWebinarsRequest.
+        r"""Sets the offset of this ListHistoryWebinarsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -158,7 +158,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHistoryWebinarsRequest.
+        r"""Gets the limit of this ListHistoryWebinarsRequest.
 
         查询数量。 默认值：10。 
 
@@ -169,7 +169,7 @@ class ListHistoryWebinarsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHistoryWebinarsRequest.
+        r"""Sets the limit of this ListHistoryWebinarsRequest.
 
         查询数量。 默认值：10。 
 
@@ -180,7 +180,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListHistoryWebinarsRequest.
+        r"""Gets the search_key of this ListHistoryWebinarsRequest.
 
         搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
@@ -191,7 +191,7 @@ class ListHistoryWebinarsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListHistoryWebinarsRequest.
+        r"""Sets the search_key of this ListHistoryWebinarsRequest.
 
         搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
@@ -202,7 +202,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListHistoryWebinarsRequest.
+        r"""Gets the sort_type of this ListHistoryWebinarsRequest.
 
         查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
 
@@ -213,7 +213,7 @@ class ListHistoryWebinarsRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListHistoryWebinarsRequest.
+        r"""Sets the sort_type of this ListHistoryWebinarsRequest.
 
         查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
 
@@ -224,7 +224,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHistoryWebinarsRequest.
+        r"""Gets the start_time of this ListHistoryWebinarsRequest.
 
         开始时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
@@ -235,7 +235,7 @@ class ListHistoryWebinarsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHistoryWebinarsRequest.
+        r"""Sets the start_time of this ListHistoryWebinarsRequest.
 
         开始时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
@@ -246,7 +246,7 @@ class ListHistoryWebinarsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHistoryWebinarsRequest.
+        r"""Gets the end_time of this ListHistoryWebinarsRequest.
 
         结束时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
@@ -257,7 +257,7 @@ class ListHistoryWebinarsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHistoryWebinarsRequest.
+        r"""Sets the end_time of this ListHistoryWebinarsRequest.
 
         结束时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 

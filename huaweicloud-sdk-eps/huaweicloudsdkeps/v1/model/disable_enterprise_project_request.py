@@ -27,7 +27,7 @@ class DisableEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """DisableEnterpriseProjectRequest
+        r"""DisableEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisableEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DisableEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this DisableEnterpriseProjectRequest.
 
         :return: The enterprise_project_id of this DisableEnterpriseProjectRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DisableEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DisableEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this DisableEnterpriseProjectRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this DisableEnterpriseProjectRequest.
         :type enterprise_project_id: str
@@ -67,7 +67,7 @@ class DisableEnterpriseProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisableEnterpriseProjectRequest.
+        r"""Gets the body of this DisableEnterpriseProjectRequest.
 
         :return: The body of this DisableEnterpriseProjectRequest.
         :rtype: :class:`huaweicloudsdkeps.v1.DisableAction`
@@ -76,7 +76,7 @@ class DisableEnterpriseProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisableEnterpriseProjectRequest.
+        r"""Sets the body of this DisableEnterpriseProjectRequest.
 
         :param body: The body of this DisableEnterpriseProjectRequest.
         :type body: :class:`huaweicloudsdkeps.v1.DisableAction`

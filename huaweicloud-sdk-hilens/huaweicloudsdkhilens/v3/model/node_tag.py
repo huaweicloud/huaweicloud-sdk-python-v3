@@ -27,7 +27,7 @@ class NodeTag:
     }
 
     def __init__(self, key=None, value=None):
-        """NodeTag
+        r"""NodeTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeTag:
 
     @property
     def key(self):
-        """Gets the key of this NodeTag.
+        r"""Gets the key of this NodeTag.
 
         标签键，最大长度36个字符。不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”
 
@@ -61,7 +61,7 @@ class NodeTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this NodeTag.
+        r"""Sets the key of this NodeTag.
 
         标签键，最大长度36个字符。不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”
 
@@ -72,7 +72,7 @@ class NodeTag:
 
     @property
     def value(self):
-        """Gets the value of this NodeTag.
+        r"""Gets the value of this NodeTag.
 
         标签值，每个值最大长度43个字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除。不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”
 
@@ -83,7 +83,7 @@ class NodeTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this NodeTag.
+        r"""Sets the value of this NodeTag.
 
         标签值，每个值最大长度43个字符，删除时如果value有值按照key/value删除，如果value没值，则按照key删除。不能为空，只能包含大小写字母，数字，中划线“-”，下划线“_”
 

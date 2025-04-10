@@ -46,7 +46,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
     }
 
     def __init__(self, org_conformance_pack_id=None, org_conformance_pack_name=None, owner_id=None, organization_id=None, org_conformance_pack_urn=None, excluded_accounts=None, vars_structure=None, created_at=None, updated_at=None, template_key=None, template_uri=None):
-        """ShowOrganizationConformancePackResponse
+        r"""ShowOrganizationConformancePackResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def org_conformance_pack_id(self):
-        """Gets the org_conformance_pack_id of this ShowOrganizationConformancePackResponse.
+        r"""Gets the org_conformance_pack_id of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包ID。
 
@@ -125,7 +125,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @org_conformance_pack_id.setter
     def org_conformance_pack_id(self, org_conformance_pack_id):
-        """Sets the org_conformance_pack_id of this ShowOrganizationConformancePackResponse.
+        r"""Sets the org_conformance_pack_id of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包ID。
 
@@ -136,7 +136,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def org_conformance_pack_name(self):
-        """Gets the org_conformance_pack_name of this ShowOrganizationConformancePackResponse.
+        r"""Gets the org_conformance_pack_name of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包名称。
 
@@ -147,7 +147,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @org_conformance_pack_name.setter
     def org_conformance_pack_name(self, org_conformance_pack_name):
-        """Sets the org_conformance_pack_name of this ShowOrganizationConformancePackResponse.
+        r"""Sets the org_conformance_pack_name of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包名称。
 
@@ -158,7 +158,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this ShowOrganizationConformancePackResponse.
+        r"""Gets the owner_id of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包创建者。
 
@@ -169,7 +169,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this ShowOrganizationConformancePackResponse.
+        r"""Sets the owner_id of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包创建者。
 
@@ -180,7 +180,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ShowOrganizationConformancePackResponse.
+        r"""Gets the organization_id of this ShowOrganizationConformancePackResponse.
 
         组织ID
 
@@ -191,7 +191,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ShowOrganizationConformancePackResponse.
+        r"""Sets the organization_id of this ShowOrganizationConformancePackResponse.
 
         组织ID
 
@@ -202,7 +202,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def org_conformance_pack_urn(self):
-        """Gets the org_conformance_pack_urn of this ShowOrganizationConformancePackResponse.
+        r"""Gets the org_conformance_pack_urn of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包资源唯一标识。
 
@@ -213,7 +213,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @org_conformance_pack_urn.setter
     def org_conformance_pack_urn(self, org_conformance_pack_urn):
-        """Sets the org_conformance_pack_urn of this ShowOrganizationConformancePackResponse.
+        r"""Sets the org_conformance_pack_urn of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包资源唯一标识。
 
@@ -224,7 +224,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def excluded_accounts(self):
-        """Gets the excluded_accounts of this ShowOrganizationConformancePackResponse.
+        r"""Gets the excluded_accounts of this ShowOrganizationConformancePackResponse.
 
         排除配置合规包的帐号。
 
@@ -235,7 +235,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @excluded_accounts.setter
     def excluded_accounts(self, excluded_accounts):
-        """Sets the excluded_accounts of this ShowOrganizationConformancePackResponse.
+        r"""Sets the excluded_accounts of this ShowOrganizationConformancePackResponse.
 
         排除配置合规包的帐号。
 
@@ -246,7 +246,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this ShowOrganizationConformancePackResponse.
+        r"""Gets the vars_structure of this ShowOrganizationConformancePackResponse.
 
         合规规则包参数。
 
@@ -257,7 +257,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this ShowOrganizationConformancePackResponse.
+        r"""Sets the vars_structure of this ShowOrganizationConformancePackResponse.
 
         合规规则包参数。
 
@@ -268,7 +268,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowOrganizationConformancePackResponse.
+        r"""Gets the created_at of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包创建时间。
 
@@ -279,7 +279,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowOrganizationConformancePackResponse.
+        r"""Sets the created_at of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包创建时间。
 
@@ -290,7 +290,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowOrganizationConformancePackResponse.
+        r"""Gets the updated_at of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包更新时间。
 
@@ -301,7 +301,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowOrganizationConformancePackResponse.
+        r"""Sets the updated_at of this ShowOrganizationConformancePackResponse.
 
         组织合规规则包更新时间。
 
@@ -312,7 +312,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def template_key(self):
-        """Gets the template_key of this ShowOrganizationConformancePackResponse.
+        r"""Gets the template_key of this ShowOrganizationConformancePackResponse.
 
         预定义合规规则包模板名称。
 
@@ -323,7 +323,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this ShowOrganizationConformancePackResponse.
+        r"""Sets the template_key of this ShowOrganizationConformancePackResponse.
 
         预定义合规规则包模板名称。
 
@@ -334,7 +334,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @property
     def template_uri(self):
-        """Gets the template_uri of this ShowOrganizationConformancePackResponse.
+        r"""Gets the template_uri of this ShowOrganizationConformancePackResponse.
 
         合规规则包模板OBS地址
 
@@ -345,7 +345,7 @@ class ShowOrganizationConformancePackResponse(SdkResponse):
 
     @template_uri.setter
     def template_uri(self, template_uri):
-        """Sets the template_uri of this ShowOrganizationConformancePackResponse.
+        r"""Sets the template_uri of this ShowOrganizationConformancePackResponse.
 
         合规规则包模板OBS地址
 

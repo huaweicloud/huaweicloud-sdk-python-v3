@@ -31,7 +31,7 @@ class EipResponseData:
     }
 
     def __init__(self, limit=None, offset=None, total=None, records=None):
-        """EipResponseData
+        r"""EipResponseData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EipResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this EipResponseData.
+        r"""Gets the limit of this EipResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -75,7 +75,7 @@ class EipResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this EipResponseData.
+        r"""Sets the limit of this EipResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -86,7 +86,7 @@ class EipResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this EipResponseData.
+        r"""Gets the offset of this EipResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -97,7 +97,7 @@ class EipResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this EipResponseData.
+        r"""Sets the offset of this EipResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -108,7 +108,7 @@ class EipResponseData:
 
     @property
     def total(self):
-        """Gets the total of this EipResponseData.
+        r"""Gets the total of this EipResponseData.
 
         查询获得EIP列表总数
 
@@ -119,7 +119,7 @@ class EipResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this EipResponseData.
+        r"""Sets the total of this EipResponseData.
 
         查询获得EIP列表总数
 
@@ -130,7 +130,7 @@ class EipResponseData:
 
     @property
     def records(self):
-        """Gets the records of this EipResponseData.
+        r"""Gets the records of this EipResponseData.
 
         eip资源记录
 
@@ -141,7 +141,7 @@ class EipResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this EipResponseData.
+        r"""Sets the records of this EipResponseData.
 
         eip资源记录
 

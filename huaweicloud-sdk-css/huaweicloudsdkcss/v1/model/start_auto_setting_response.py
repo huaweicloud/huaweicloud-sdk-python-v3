@@ -24,7 +24,7 @@ class StartAutoSettingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartAutoSettingResponse
+        r"""StartAutoSettingResponse
 
         The model defined in huaweicloud sdk
 

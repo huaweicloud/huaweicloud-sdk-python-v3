@@ -25,7 +25,7 @@ class CreateDockerRepositoriesRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDockerRepositoriesRequest
+        r"""CreateDockerRepositoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDockerRepositoriesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDockerRepositoriesRequest.
+        r"""Gets the body of this CreateDockerRepositoriesRequest.
 
         :return: The body of this CreateDockerRepositoriesRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateDockerRepositoryDO`
@@ -52,7 +52,7 @@ class CreateDockerRepositoriesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDockerRepositoriesRequest.
+        r"""Sets the body of this CreateDockerRepositoriesRequest.
 
         :param body: The body of this CreateDockerRepositoriesRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.CreateDockerRepositoryDO`

@@ -28,7 +28,7 @@ class ListRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, count=None):
-        """ListRulesResponse
+        r"""ListRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListRulesResponse.
+        r"""Gets the rules of this ListRulesResponse.
 
         规则配置
 
@@ -62,7 +62,7 @@ class ListRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListRulesResponse.
+        r"""Sets the rules of this ListRulesResponse.
 
         规则配置
 
@@ -73,7 +73,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRulesResponse.
+        r"""Gets the count of this ListRulesResponse.
 
         满足条件的规则个数
 
@@ -84,7 +84,7 @@ class ListRulesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRulesResponse.
+        r"""Sets the count of this ListRulesResponse.
 
         满足条件的规则个数
 

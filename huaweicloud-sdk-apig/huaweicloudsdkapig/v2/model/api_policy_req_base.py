@@ -33,7 +33,7 @@ class ApiPolicyReqBase:
     }
 
     def __init__(self, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
-        """ApiPolicyReqBase
+        r"""ApiPolicyReqBase
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ApiPolicyReqBase:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyReqBase.
+        r"""Gets the effect_mode of this ApiPolicyReqBase.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -79,7 +79,7 @@ class ApiPolicyReqBase:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyReqBase.
+        r"""Sets the effect_mode of this ApiPolicyReqBase.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -90,7 +90,7 @@ class ApiPolicyReqBase:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyReqBase.
+        r"""Gets the name of this ApiPolicyReqBase.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -101,7 +101,7 @@ class ApiPolicyReqBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyReqBase.
+        r"""Sets the name of this ApiPolicyReqBase.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -112,7 +112,7 @@ class ApiPolicyReqBase:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyReqBase.
+        r"""Gets the backend_params of this ApiPolicyReqBase.
 
         后端参数列表，后端类型为GRPC时不支持配置
 
@@ -123,7 +123,7 @@ class ApiPolicyReqBase:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyReqBase.
+        r"""Sets the backend_params of this ApiPolicyReqBase.
 
         后端参数列表，后端类型为GRPC时不支持配置
 
@@ -134,7 +134,7 @@ class ApiPolicyReqBase:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyReqBase.
+        r"""Gets the conditions of this ApiPolicyReqBase.
 
         策略条件列表
 
@@ -145,7 +145,7 @@ class ApiPolicyReqBase:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyReqBase.
+        r"""Sets the conditions of this ApiPolicyReqBase.
 
         策略条件列表
 
@@ -156,7 +156,7 @@ class ApiPolicyReqBase:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyReqBase.
+        r"""Gets the authorizer_id of this ApiPolicyReqBase.
 
         后端自定义认证对象的ID
 
@@ -167,7 +167,7 @@ class ApiPolicyReqBase:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyReqBase.
+        r"""Sets the authorizer_id of this ApiPolicyReqBase.
 
         后端自定义认证对象的ID
 

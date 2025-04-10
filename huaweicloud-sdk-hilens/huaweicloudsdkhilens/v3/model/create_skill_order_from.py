@@ -29,7 +29,7 @@ class CreateSkillOrderFrom:
     }
 
     def __init__(self, skill_id=None, amount=None, commission_flag=None):
-        """CreateSkillOrderFrom
+        r"""CreateSkillOrderFrom
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateSkillOrderFrom:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this CreateSkillOrderFrom.
+        r"""Gets the skill_id of this CreateSkillOrderFrom.
 
         技能ID
 
@@ -65,7 +65,7 @@ class CreateSkillOrderFrom:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this CreateSkillOrderFrom.
+        r"""Sets the skill_id of this CreateSkillOrderFrom.
 
         技能ID
 
@@ -76,7 +76,7 @@ class CreateSkillOrderFrom:
 
     @property
     def amount(self):
-        """Gets the amount of this CreateSkillOrderFrom.
+        r"""Gets the amount of this CreateSkillOrderFrom.
 
         购买个数
 
@@ -87,7 +87,7 @@ class CreateSkillOrderFrom:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this CreateSkillOrderFrom.
+        r"""Sets the amount of this CreateSkillOrderFrom.
 
         购买个数
 
@@ -98,7 +98,7 @@ class CreateSkillOrderFrom:
 
     @property
     def commission_flag(self):
-        """Gets the commission_flag of this CreateSkillOrderFrom.
+        r"""Gets the commission_flag of this CreateSkillOrderFrom.
 
         定制技能标识
 
@@ -109,7 +109,7 @@ class CreateSkillOrderFrom:
 
     @commission_flag.setter
     def commission_flag(self, commission_flag):
-        """Sets the commission_flag of this CreateSkillOrderFrom.
+        r"""Sets the commission_flag of this CreateSkillOrderFrom.
 
         定制技能标识
 

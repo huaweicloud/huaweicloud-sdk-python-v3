@@ -26,7 +26,7 @@ class ListTopSlowLogResponse(SdkResponse):
     }
 
     def __init__(self, top_slow_log_list=None):
-        """ListTopSlowLogResponse
+        r"""ListTopSlowLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTopSlowLogResponse(SdkResponse):
 
     @property
     def top_slow_log_list(self):
-        """Gets the top_slow_log_list of this ListTopSlowLogResponse.
+        r"""Gets the top_slow_log_list of this ListTopSlowLogResponse.
 
         TOP慢SQL列表
 
@@ -55,7 +55,7 @@ class ListTopSlowLogResponse(SdkResponse):
 
     @top_slow_log_list.setter
     def top_slow_log_list(self, top_slow_log_list):
-        """Sets the top_slow_log_list of this ListTopSlowLogResponse.
+        r"""Sets the top_slow_log_list of this ListTopSlowLogResponse.
 
         TOP慢SQL列表
 

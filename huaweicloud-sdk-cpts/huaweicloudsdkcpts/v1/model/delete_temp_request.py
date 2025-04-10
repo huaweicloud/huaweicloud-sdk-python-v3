@@ -25,7 +25,7 @@ class DeleteTempRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteTempRequest
+        r"""DeleteTempRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTempRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteTempRequest.
+        r"""Gets the template_id of this DeleteTempRequest.
 
         事务id
 
@@ -53,7 +53,7 @@ class DeleteTempRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteTempRequest.
+        r"""Sets the template_id of this DeleteTempRequest.
 
         事务id
 

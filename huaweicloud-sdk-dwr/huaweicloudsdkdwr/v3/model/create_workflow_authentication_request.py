@@ -23,7 +23,7 @@ class CreateWorkflowAuthenticationRequest:
     }
 
     def __init__(self):
-        """CreateWorkflowAuthenticationRequest
+        r"""CreateWorkflowAuthenticationRequest
 
         The model defined in huaweicloud sdk
 

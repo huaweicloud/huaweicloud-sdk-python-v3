@@ -29,7 +29,7 @@ class ShowObjectMappingRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """ShowObjectMappingRequest
+        r"""ShowObjectMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowObjectMappingRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowObjectMappingRequest.
+        r"""Gets the job_id of this ShowObjectMappingRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class ShowObjectMappingRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowObjectMappingRequest.
+        r"""Sets the job_id of this ShowObjectMappingRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class ShowObjectMappingRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowObjectMappingRequest.
+        r"""Gets the x_language of this ShowObjectMappingRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class ShowObjectMappingRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowObjectMappingRequest.
+        r"""Sets the x_language of this ShowObjectMappingRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class ShowObjectMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowObjectMappingRequest.
+        r"""Gets the body of this ShowObjectMappingRequest.
 
         :return: The body of this ShowObjectMappingRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryUserSelectedObjectInfoReq`
@@ -109,7 +109,7 @@ class ShowObjectMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowObjectMappingRequest.
+        r"""Sets the body of this ShowObjectMappingRequest.
 
         :param body: The body of this ShowObjectMappingRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.QueryUserSelectedObjectInfoReq`

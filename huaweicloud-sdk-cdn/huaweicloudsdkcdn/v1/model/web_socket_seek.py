@@ -27,7 +27,7 @@ class WebSocketSeek:
     }
 
     def __init__(self, status=None, timeout=None):
-        """WebSocketSeek
+        r"""WebSocketSeek
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class WebSocketSeek:
 
     @property
     def status(self):
-        """Gets the status of this WebSocketSeek.
+        r"""Gets the status of this WebSocketSeek.
 
         开关， on 开启，off 关闭。
 
@@ -59,7 +59,7 @@ class WebSocketSeek:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WebSocketSeek.
+        r"""Sets the status of this WebSocketSeek.
 
         开关， on 开启，off 关闭。
 
@@ -70,7 +70,7 @@ class WebSocketSeek:
 
     @property
     def timeout(self):
-        """Gets the timeout of this WebSocketSeek.
+        r"""Gets the timeout of this WebSocketSeek.
 
         请求建立连接后，会话的保持时间：范围：1-300，单位：秒。
 
@@ -81,7 +81,7 @@ class WebSocketSeek:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this WebSocketSeek.
+        r"""Sets the timeout of this WebSocketSeek.
 
         请求建立连接后，会话的保持时间：范围：1-300，单位：秒。
 

@@ -27,7 +27,7 @@ class SlaReportsValue:
     }
 
     def __init__(self, timestamp=None, value=None):
-        """SlaReportsValue
+        r"""SlaReportsValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SlaReportsValue:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this SlaReportsValue.
+        r"""Gets the timestamp of this SlaReportsValue.
 
         时间戳
 
@@ -61,7 +61,7 @@ class SlaReportsValue:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this SlaReportsValue.
+        r"""Sets the timestamp of this SlaReportsValue.
 
         时间戳
 
@@ -72,7 +72,7 @@ class SlaReportsValue:
 
     @property
     def value(self):
-        """Gets the value of this SlaReportsValue.
+        r"""Gets the value of this SlaReportsValue.
 
         值
 
@@ -83,7 +83,7 @@ class SlaReportsValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SlaReportsValue.
+        r"""Sets the value of this SlaReportsValue.
 
         值
 

@@ -29,7 +29,7 @@ class ResumePluginExtensionsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ResumePluginExtensionsRequest
+        r"""ResumePluginExtensionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResumePluginExtensionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ResumePluginExtensionsRequest.
+        r"""Gets the x_language of this ResumePluginExtensionsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ResumePluginExtensionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ResumePluginExtensionsRequest.
+        r"""Sets the x_language of this ResumePluginExtensionsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ResumePluginExtensionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResumePluginExtensionsRequest.
+        r"""Gets the instance_id of this ResumePluginExtensionsRequest.
 
         配置插件拓展能力的实例ID
 
@@ -89,7 +89,7 @@ class ResumePluginExtensionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResumePluginExtensionsRequest.
+        r"""Sets the instance_id of this ResumePluginExtensionsRequest.
 
         配置插件拓展能力的实例ID
 
@@ -100,7 +100,7 @@ class ResumePluginExtensionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResumePluginExtensionsRequest.
+        r"""Gets the body of this ResumePluginExtensionsRequest.
 
         :return: The body of this ResumePluginExtensionsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResumePluginExtensionsRequestBody`
@@ -109,7 +109,7 @@ class ResumePluginExtensionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResumePluginExtensionsRequest.
+        r"""Sets the body of this ResumePluginExtensionsRequest.
 
         :param body: The body of this ResumePluginExtensionsRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResumePluginExtensionsRequestBody`

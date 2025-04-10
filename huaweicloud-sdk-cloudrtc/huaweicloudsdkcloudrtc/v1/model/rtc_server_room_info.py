@@ -37,7 +37,7 @@ class RtcServerRoomInfo:
     }
 
     def __init__(self, domain=None, app=None, room_id=None, state=None, duration=None, start_time=None, end_time=None):
-        """RtcServerRoomInfo
+        r"""RtcServerRoomInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RtcServerRoomInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this RtcServerRoomInfo.
+        r"""Gets the domain of this RtcServerRoomInfo.
 
         域名
 
@@ -96,7 +96,7 @@ class RtcServerRoomInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this RtcServerRoomInfo.
+        r"""Sets the domain of this RtcServerRoomInfo.
 
         域名
 
@@ -107,7 +107,7 @@ class RtcServerRoomInfo:
 
     @property
     def app(self):
-        """Gets the app of this RtcServerRoomInfo.
+        r"""Gets the app of this RtcServerRoomInfo.
 
         应用标识
 
@@ -118,7 +118,7 @@ class RtcServerRoomInfo:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this RtcServerRoomInfo.
+        r"""Sets the app of this RtcServerRoomInfo.
 
         应用标识
 
@@ -129,7 +129,7 @@ class RtcServerRoomInfo:
 
     @property
     def room_id(self):
-        """Gets the room_id of this RtcServerRoomInfo.
+        r"""Gets the room_id of this RtcServerRoomInfo.
 
         房间ID
 
@@ -140,7 +140,7 @@ class RtcServerRoomInfo:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this RtcServerRoomInfo.
+        r"""Sets the room_id of this RtcServerRoomInfo.
 
         房间ID
 
@@ -151,7 +151,7 @@ class RtcServerRoomInfo:
 
     @property
     def state(self):
-        """Gets the state of this RtcServerRoomInfo.
+        r"""Gets the state of this RtcServerRoomInfo.
 
         房间状态，取值如下：  - RUNNING：开启中  - CLOSED：已关闭 
 
@@ -162,7 +162,7 @@ class RtcServerRoomInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RtcServerRoomInfo.
+        r"""Sets the state of this RtcServerRoomInfo.
 
         房间状态，取值如下：  - RUNNING：开启中  - CLOSED：已关闭 
 
@@ -173,7 +173,7 @@ class RtcServerRoomInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this RtcServerRoomInfo.
+        r"""Gets the duration of this RtcServerRoomInfo.
 
         房间持续时长
 
@@ -184,7 +184,7 @@ class RtcServerRoomInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this RtcServerRoomInfo.
+        r"""Sets the duration of this RtcServerRoomInfo.
 
         房间持续时长
 
@@ -195,7 +195,7 @@ class RtcServerRoomInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RtcServerRoomInfo.
+        r"""Gets the start_time of this RtcServerRoomInfo.
 
         房间开始时间，即第一个用户加入房间时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z 
 
@@ -206,7 +206,7 @@ class RtcServerRoomInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RtcServerRoomInfo.
+        r"""Sets the start_time of this RtcServerRoomInfo.
 
         房间开始时间，即第一个用户加入房间时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z 
 
@@ -217,7 +217,7 @@ class RtcServerRoomInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RtcServerRoomInfo.
+        r"""Gets the end_time of this RtcServerRoomInfo.
 
         房间关闭时间，即最后一个room_uuid关闭的时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，若房间未关闭，则返回 “-” 
 
@@ -228,7 +228,7 @@ class RtcServerRoomInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RtcServerRoomInfo.
+        r"""Sets the end_time of this RtcServerRoomInfo.
 
         房间关闭时间，即最后一个room_uuid关闭的时间，UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，若房间未关闭，则返回 “-” 
 

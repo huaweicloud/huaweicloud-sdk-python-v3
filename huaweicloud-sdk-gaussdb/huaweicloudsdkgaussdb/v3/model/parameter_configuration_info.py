@@ -31,7 +31,7 @@ class ParameterConfigurationInfo:
     }
 
     def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None):
-        """ParameterConfigurationInfo
+        r"""ParameterConfigurationInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ParameterConfigurationInfo:
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this ParameterConfigurationInfo.
+        r"""Gets the datastore_version_name of this ParameterConfigurationInfo.
 
         数据库版本名称。
 
@@ -75,7 +75,7 @@ class ParameterConfigurationInfo:
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this ParameterConfigurationInfo.
+        r"""Sets the datastore_version_name of this ParameterConfigurationInfo.
 
         数据库版本名称。
 
@@ -86,7 +86,7 @@ class ParameterConfigurationInfo:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ParameterConfigurationInfo.
+        r"""Gets the datastore_name of this ParameterConfigurationInfo.
 
         数据库名称。
 
@@ -97,7 +97,7 @@ class ParameterConfigurationInfo:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ParameterConfigurationInfo.
+        r"""Sets the datastore_name of this ParameterConfigurationInfo.
 
         数据库名称。
 
@@ -108,7 +108,7 @@ class ParameterConfigurationInfo:
 
     @property
     def created(self):
-        """Gets the created of this ParameterConfigurationInfo.
+        r"""Gets the created of this ParameterConfigurationInfo.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -119,7 +119,7 @@ class ParameterConfigurationInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ParameterConfigurationInfo.
+        r"""Sets the created of this ParameterConfigurationInfo.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -130,7 +130,7 @@ class ParameterConfigurationInfo:
 
     @property
     def updated(self):
-        """Gets the updated of this ParameterConfigurationInfo.
+        r"""Gets the updated of this ParameterConfigurationInfo.
 
         更新时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -141,7 +141,7 @@ class ParameterConfigurationInfo:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ParameterConfigurationInfo.
+        r"""Sets the updated of this ParameterConfigurationInfo.
 
         更新时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 

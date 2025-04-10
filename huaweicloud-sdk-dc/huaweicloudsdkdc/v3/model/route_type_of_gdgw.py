@@ -27,7 +27,7 @@ class RouteTypeOfGdgw:
     }
 
     def __init__(self):
-        """RouteTypeOfGdgw
+        r"""RouteTypeOfGdgw
 
         The model defined in huaweicloud sdk
 

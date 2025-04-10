@@ -26,7 +26,7 @@ class AddPublicipsIntoSharedBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None):
-        """AddPublicipsIntoSharedBandwidthResponse
+        r"""AddPublicipsIntoSharedBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddPublicipsIntoSharedBandwidthResponse(SdkResponse):
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this AddPublicipsIntoSharedBandwidthResponse.
+        r"""Gets the bandwidth of this AddPublicipsIntoSharedBandwidthResponse.
 
         :return: The bandwidth of this AddPublicipsIntoSharedBandwidthResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.BandwidthRespInsert`
@@ -53,7 +53,7 @@ class AddPublicipsIntoSharedBandwidthResponse(SdkResponse):
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this AddPublicipsIntoSharedBandwidthResponse.
+        r"""Sets the bandwidth of this AddPublicipsIntoSharedBandwidthResponse.
 
         :param bandwidth: The bandwidth of this AddPublicipsIntoSharedBandwidthResponse.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthRespInsert`

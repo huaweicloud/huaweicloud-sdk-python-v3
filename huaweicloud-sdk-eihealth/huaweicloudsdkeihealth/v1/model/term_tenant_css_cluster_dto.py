@@ -29,7 +29,7 @@ class TermTenantCssClusterDto:
     }
 
     def __init__(self, css_id=None, name=None, is_active=None):
-        """TermTenantCssClusterDto
+        r"""TermTenantCssClusterDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TermTenantCssClusterDto:
 
     @property
     def css_id(self):
-        """Gets the css_id of this TermTenantCssClusterDto.
+        r"""Gets the css_id of this TermTenantCssClusterDto.
 
         css集群id
 
@@ -68,7 +68,7 @@ class TermTenantCssClusterDto:
 
     @css_id.setter
     def css_id(self, css_id):
-        """Sets the css_id of this TermTenantCssClusterDto.
+        r"""Sets the css_id of this TermTenantCssClusterDto.
 
         css集群id
 
@@ -79,7 +79,7 @@ class TermTenantCssClusterDto:
 
     @property
     def name(self):
-        """Gets the name of this TermTenantCssClusterDto.
+        r"""Gets the name of this TermTenantCssClusterDto.
 
         css集群名称
 
@@ -90,7 +90,7 @@ class TermTenantCssClusterDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TermTenantCssClusterDto.
+        r"""Sets the name of this TermTenantCssClusterDto.
 
         css集群名称
 
@@ -101,7 +101,7 @@ class TermTenantCssClusterDto:
 
     @property
     def is_active(self):
-        """Gets the is_active of this TermTenantCssClusterDto.
+        r"""Gets the is_active of this TermTenantCssClusterDto.
 
         集群是否可用
 
@@ -112,7 +112,7 @@ class TermTenantCssClusterDto:
 
     @is_active.setter
     def is_active(self, is_active):
-        """Sets the is_active of this TermTenantCssClusterDto.
+        r"""Sets the is_active of this TermTenantCssClusterDto.
 
         集群是否可用
 

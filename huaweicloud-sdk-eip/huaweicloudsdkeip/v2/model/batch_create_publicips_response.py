@@ -26,7 +26,7 @@ class BatchCreatePublicipsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchCreatePublicipsResponse
+        r"""BatchCreatePublicipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreatePublicipsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchCreatePublicipsResponse.
+        r"""Gets the job_id of this BatchCreatePublicipsResponse.
 
         job_id，需要访问调用netAPI组件访问job执行情况。netAPI：/v1/{tenant_id}/jobs/{job_id}
 
@@ -55,7 +55,7 @@ class BatchCreatePublicipsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchCreatePublicipsResponse.
+        r"""Sets the job_id of this BatchCreatePublicipsResponse.
 
         job_id，需要访问调用netAPI组件访问job执行情况。netAPI：/v1/{tenant_id}/jobs/{job_id}
 

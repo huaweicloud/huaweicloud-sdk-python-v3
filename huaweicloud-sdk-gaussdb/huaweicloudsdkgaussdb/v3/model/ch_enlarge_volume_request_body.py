@@ -25,7 +25,7 @@ class ChEnlargeVolumeRequestBody:
     }
 
     def __init__(self, size_in_gb=None):
-        """ChEnlargeVolumeRequestBody
+        r"""ChEnlargeVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChEnlargeVolumeRequestBody:
 
     @property
     def size_in_gb(self):
-        """Gets the size_in_gb of this ChEnlargeVolumeRequestBody.
+        r"""Gets the size_in_gb of this ChEnlargeVolumeRequestBody.
 
         磁盘容量。取值范围：50GB~32000GB。
 
@@ -53,7 +53,7 @@ class ChEnlargeVolumeRequestBody:
 
     @size_in_gb.setter
     def size_in_gb(self, size_in_gb):
-        """Sets the size_in_gb of this ChEnlargeVolumeRequestBody.
+        r"""Sets the size_in_gb of this ChEnlargeVolumeRequestBody.
 
         磁盘容量。取值范围：50GB~32000GB。
 

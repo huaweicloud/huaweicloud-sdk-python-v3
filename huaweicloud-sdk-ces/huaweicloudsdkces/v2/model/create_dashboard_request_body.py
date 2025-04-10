@@ -31,7 +31,7 @@ class CreateDashboardRequestBody:
     }
 
     def __init__(self, dashboard_name=None, enterprise_id=None, dashboard_id=None, row_widget_num=None):
-        """CreateDashboardRequestBody
+        r"""CreateDashboardRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateDashboardRequestBody:
 
     @property
     def dashboard_name(self):
-        """Gets the dashboard_name of this CreateDashboardRequestBody.
+        r"""Gets the dashboard_name of this CreateDashboardRequestBody.
 
         自定义监控看板名称
 
@@ -75,7 +75,7 @@ class CreateDashboardRequestBody:
 
     @dashboard_name.setter
     def dashboard_name(self, dashboard_name):
-        """Sets the dashboard_name of this CreateDashboardRequestBody.
+        r"""Sets the dashboard_name of this CreateDashboardRequestBody.
 
         自定义监控看板名称
 
@@ -86,7 +86,7 @@ class CreateDashboardRequestBody:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this CreateDashboardRequestBody.
+        r"""Gets the enterprise_id of this CreateDashboardRequestBody.
 
         企业项目Id
 
@@ -97,7 +97,7 @@ class CreateDashboardRequestBody:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this CreateDashboardRequestBody.
+        r"""Sets the enterprise_id of this CreateDashboardRequestBody.
 
         企业项目Id
 
@@ -108,7 +108,7 @@ class CreateDashboardRequestBody:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this CreateDashboardRequestBody.
+        r"""Gets the dashboard_id of this CreateDashboardRequestBody.
 
         监控看板id
 
@@ -119,7 +119,7 @@ class CreateDashboardRequestBody:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this CreateDashboardRequestBody.
+        r"""Sets the dashboard_id of this CreateDashboardRequestBody.
 
         监控看板id
 
@@ -130,7 +130,7 @@ class CreateDashboardRequestBody:
 
     @property
     def row_widget_num(self):
-        """Gets the row_widget_num of this CreateDashboardRequestBody.
+        r"""Gets the row_widget_num of this CreateDashboardRequestBody.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 
@@ -141,7 +141,7 @@ class CreateDashboardRequestBody:
 
     @row_widget_num.setter
     def row_widget_num(self, row_widget_num):
-        """Sets the row_widget_num of this CreateDashboardRequestBody.
+        r"""Sets the row_widget_num of this CreateDashboardRequestBody.
 
         监控视图展示模式，0表示自定义坐标，1代表每行一个
 

@@ -30,7 +30,7 @@ class CreateSignatureResponse(SdkResponse):
     }
 
     def __init__(self, id=None, signature_id=None, signature_name=None):
-        """CreateSignatureResponse
+        r"""CreateSignatureResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateSignatureResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSignatureResponse.
+        r"""Gets the id of this CreateSignatureResponse.
 
         签名主键ID
 
@@ -69,7 +69,7 @@ class CreateSignatureResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSignatureResponse.
+        r"""Sets the id of this CreateSignatureResponse.
 
         签名主键ID
 
@@ -80,7 +80,7 @@ class CreateSignatureResponse(SdkResponse):
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this CreateSignatureResponse.
+        r"""Gets the signature_id of this CreateSignatureResponse.
 
         签名ID
 
@@ -91,7 +91,7 @@ class CreateSignatureResponse(SdkResponse):
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this CreateSignatureResponse.
+        r"""Sets the signature_id of this CreateSignatureResponse.
 
         签名ID
 
@@ -102,7 +102,7 @@ class CreateSignatureResponse(SdkResponse):
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this CreateSignatureResponse.
+        r"""Gets the signature_name of this CreateSignatureResponse.
 
         签名名称
 
@@ -113,7 +113,7 @@ class CreateSignatureResponse(SdkResponse):
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this CreateSignatureResponse.
+        r"""Sets the signature_name of this CreateSignatureResponse.
 
         签名名称
 

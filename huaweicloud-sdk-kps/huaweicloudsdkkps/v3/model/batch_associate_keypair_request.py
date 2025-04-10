@@ -25,7 +25,7 @@ class BatchAssociateKeypairRequest:
     }
 
     def __init__(self, body=None):
-        """BatchAssociateKeypairRequest
+        r"""BatchAssociateKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAssociateKeypairRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAssociateKeypairRequest.
+        r"""Gets the body of this BatchAssociateKeypairRequest.
 
         :return: The body of this BatchAssociateKeypairRequest.
         :rtype: :class:`huaweicloudsdkkps.v3.BatchAssociateKeypairRequestBody`
@@ -52,7 +52,7 @@ class BatchAssociateKeypairRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAssociateKeypairRequest.
+        r"""Sets the body of this BatchAssociateKeypairRequest.
 
         :param body: The body of this BatchAssociateKeypairRequest.
         :type body: :class:`huaweicloudsdkkps.v3.BatchAssociateKeypairRequestBody`

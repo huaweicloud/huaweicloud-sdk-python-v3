@@ -26,7 +26,7 @@ class BatchCreateAgentInvocationsResponse(SdkResponse):
     }
 
     def __init__(self, invocations=None):
-        """BatchCreateAgentInvocationsResponse
+        r"""BatchCreateAgentInvocationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateAgentInvocationsResponse(SdkResponse):
 
     @property
     def invocations(self):
-        """Gets the invocations of this BatchCreateAgentInvocationsResponse.
+        r"""Gets the invocations of this BatchCreateAgentInvocationsResponse.
 
         创建任务的信息列表
 
@@ -55,7 +55,7 @@ class BatchCreateAgentInvocationsResponse(SdkResponse):
 
     @invocations.setter
     def invocations(self, invocations):
-        """Sets the invocations of this BatchCreateAgentInvocationsResponse.
+        r"""Sets the invocations of this BatchCreateAgentInvocationsResponse.
 
         创建任务的信息列表
 

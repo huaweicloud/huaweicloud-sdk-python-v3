@@ -25,7 +25,7 @@ class SearchSql:
     }
 
     def __init__(self, sql=None):
-        """SearchSql
+        r"""SearchSql
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SearchSql:
 
     @property
     def sql(self):
-        """Gets the sql of this SearchSql.
+        r"""Gets the sql of this SearchSql.
 
         搜索sql语句，具体使用方法见类SQL语法使用说明章节
 
@@ -53,7 +53,7 @@ class SearchSql:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this SearchSql.
+        r"""Sets the sql of this SearchSql.
 
         搜索sql语句，具体使用方法见类SQL语法使用说明章节
 

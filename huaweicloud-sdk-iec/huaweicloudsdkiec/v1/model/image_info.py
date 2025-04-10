@@ -123,7 +123,7 @@ class ImageInfo:
     }
 
     def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, hw_firmware_type=None, support_arm=None, max_ram=None, hw_vif_multiqueue_enabled=None, root_origin=None, sequence_num=None, support_amd=None):
-        """ImageInfo
+        r"""ImageInfo
 
         The model defined in huaweicloud sdk
 
@@ -367,7 +367,7 @@ class ImageInfo:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ImageInfo.
+        r"""Gets the backup_id of this ImageInfo.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空
 
@@ -378,7 +378,7 @@ class ImageInfo:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ImageInfo.
+        r"""Sets the backup_id of this ImageInfo.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空
 
@@ -389,7 +389,7 @@ class ImageInfo:
 
     @property
     def data_origin(self):
-        """Gets the data_origin of this ImageInfo.
+        r"""Gets the data_origin of this ImageInfo.
 
         镜像来源。公共镜像为空
 
@@ -400,7 +400,7 @@ class ImageInfo:
 
     @data_origin.setter
     def data_origin(self, data_origin):
-        """Sets the data_origin of this ImageInfo.
+        r"""Sets the data_origin of this ImageInfo.
 
         镜像来源。公共镜像为空
 
@@ -411,7 +411,7 @@ class ImageInfo:
 
     @property
     def description(self):
-        """Gets the description of this ImageInfo.
+        r"""Gets the description of this ImageInfo.
 
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
@@ -422,7 +422,7 @@ class ImageInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImageInfo.
+        r"""Sets the description of this ImageInfo.
 
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
@@ -433,7 +433,7 @@ class ImageInfo:
 
     @property
     def image_size(self):
-        """Gets the image_size of this ImageInfo.
+        r"""Gets the image_size of this ImageInfo.
 
         镜像文件的大小，单位为字节
 
@@ -444,7 +444,7 @@ class ImageInfo:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this ImageInfo.
+        r"""Sets the image_size of this ImageInfo.
 
         镜像文件的大小，单位为字节
 
@@ -455,7 +455,7 @@ class ImageInfo:
 
     @property
     def image_source_type(self):
-        """Gets the image_source_type of this ImageInfo.
+        r"""Gets the image_source_type of this ImageInfo.
 
         镜像后端存储类型，目前只支持uds
 
@@ -466,7 +466,7 @@ class ImageInfo:
 
     @image_source_type.setter
     def image_source_type(self, image_source_type):
-        """Sets the image_source_type of this ImageInfo.
+        r"""Sets the image_source_type of this ImageInfo.
 
         镜像后端存储类型，目前只支持uds
 
@@ -477,7 +477,7 @@ class ImageInfo:
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this ImageInfo.
+        r"""Gets the imagetype of this ImageInfo.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
@@ -488,7 +488,7 @@ class ImageInfo:
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this ImageInfo.
+        r"""Sets the imagetype of this ImageInfo.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
@@ -499,7 +499,7 @@ class ImageInfo:
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this ImageInfo.
+        r"""Gets the isregistered of this ImageInfo.
 
         是否是注册过的镜像，取值为“true”或者“false”
 
@@ -510,7 +510,7 @@ class ImageInfo:
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this ImageInfo.
+        r"""Sets the isregistered of this ImageInfo.
 
         是否是注册过的镜像，取值为“true”或者“false”
 
@@ -521,7 +521,7 @@ class ImageInfo:
 
     @property
     def originalimagename(self):
-        """Gets the originalimagename of this ImageInfo.
+        r"""Gets the originalimagename of this ImageInfo.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空
 
@@ -532,7 +532,7 @@ class ImageInfo:
 
     @originalimagename.setter
     def originalimagename(self, originalimagename):
-        """Sets the originalimagename of this ImageInfo.
+        r"""Sets the originalimagename of this ImageInfo.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空
 
@@ -543,7 +543,7 @@ class ImageInfo:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this ImageInfo.
+        r"""Gets the os_bit of this ImageInfo.
 
         操作系统位数，一般取值为“32”或者“64”
 
@@ -554,7 +554,7 @@ class ImageInfo:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this ImageInfo.
+        r"""Sets the os_bit of this ImageInfo.
 
         操作系统位数，一般取值为“32”或者“64”
 
@@ -565,7 +565,7 @@ class ImageInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ImageInfo.
+        r"""Gets the os_type of this ImageInfo.
 
         操作系统类型，目前取值Linux， Windows，Other
 
@@ -576,7 +576,7 @@ class ImageInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ImageInfo.
+        r"""Sets the os_type of this ImageInfo.
 
         操作系统类型，目前取值Linux， Windows，Other
 
@@ -587,7 +587,7 @@ class ImageInfo:
 
     @property
     def os_version(self):
-        """Gets the os_version of this ImageInfo.
+        r"""Gets the os_version of this ImageInfo.
 
         操作系统具体版本
 
@@ -598,7 +598,7 @@ class ImageInfo:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ImageInfo.
+        r"""Sets the os_version of this ImageInfo.
 
         操作系统具体版本
 
@@ -609,7 +609,7 @@ class ImageInfo:
 
     @property
     def platform(self):
-        """Gets the platform of this ImageInfo.
+        r"""Gets the platform of this ImageInfo.
 
         镜像平台分类
 
@@ -620,7 +620,7 @@ class ImageInfo:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ImageInfo.
+        r"""Sets the platform of this ImageInfo.
 
         镜像平台分类
 
@@ -631,7 +631,7 @@ class ImageInfo:
 
     @property
     def productcode(self):
-        """Gets the productcode of this ImageInfo.
+        r"""Gets the productcode of this ImageInfo.
 
         市场镜像的产品ID
 
@@ -642,7 +642,7 @@ class ImageInfo:
 
     @productcode.setter
     def productcode(self, productcode):
-        """Sets the productcode of this ImageInfo.
+        r"""Sets the productcode of this ImageInfo.
 
         市场镜像的产品ID
 
@@ -653,7 +653,7 @@ class ImageInfo:
 
     @property
     def support_diskintensive(self):
-        """Gets the support_diskintensive of this ImageInfo.
+        r"""Gets the support_diskintensive of this ImageInfo.
 
         镜像来源表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -664,7 +664,7 @@ class ImageInfo:
 
     @support_diskintensive.setter
     def support_diskintensive(self, support_diskintensive):
-        """Sets the support_diskintensive of this ImageInfo.
+        r"""Sets the support_diskintensive of this ImageInfo.
 
         镜像来源表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -675,7 +675,7 @@ class ImageInfo:
 
     @property
     def support_highperformance(self):
-        """Gets the support_highperformance of this ImageInfo.
+        r"""Gets the support_highperformance of this ImageInfo.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -686,7 +686,7 @@ class ImageInfo:
 
     @support_highperformance.setter
     def support_highperformance(self, support_highperformance):
-        """Sets the support_highperformance of this ImageInfo.
+        r"""Sets the support_highperformance of this ImageInfo.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -697,7 +697,7 @@ class ImageInfo:
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this ImageInfo.
+        r"""Gets the support_kvm of this ImageInfo.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -708,7 +708,7 @@ class ImageInfo:
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this ImageInfo.
+        r"""Sets the support_kvm of this ImageInfo.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -719,7 +719,7 @@ class ImageInfo:
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this ImageInfo.
+        r"""Gets the support_kvm_gpu_type of this ImageInfo.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -730,7 +730,7 @@ class ImageInfo:
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this ImageInfo.
+        r"""Sets the support_kvm_gpu_type of this ImageInfo.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -741,7 +741,7 @@ class ImageInfo:
 
     @property
     def support_kvm_infiniband(self):
-        """Gets the support_kvm_infiniband of this ImageInfo.
+        r"""Gets the support_kvm_infiniband of this ImageInfo.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -752,7 +752,7 @@ class ImageInfo:
 
     @support_kvm_infiniband.setter
     def support_kvm_infiniband(self, support_kvm_infiniband):
-        """Sets the support_kvm_infiniband of this ImageInfo.
+        r"""Sets the support_kvm_infiniband of this ImageInfo.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -763,7 +763,7 @@ class ImageInfo:
 
     @property
     def support_largememory(self):
-        """Gets the support_largememory of this ImageInfo.
+        r"""Gets the support_largememory of this ImageInfo.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -774,7 +774,7 @@ class ImageInfo:
 
     @support_largememory.setter
     def support_largememory(self, support_largememory):
-        """Sets the support_largememory of this ImageInfo.
+        r"""Sets the support_largememory of this ImageInfo.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -785,7 +785,7 @@ class ImageInfo:
 
     @property
     def support_xen(self):
-        """Gets the support_xen of this ImageInfo.
+        r"""Gets the support_xen of this ImageInfo.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -796,7 +796,7 @@ class ImageInfo:
 
     @support_xen.setter
     def support_xen(self, support_xen):
-        """Sets the support_xen of this ImageInfo.
+        r"""Sets the support_xen of this ImageInfo.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -807,7 +807,7 @@ class ImageInfo:
 
     @property
     def support_xen_gpu_type(self):
-        """Gets the support_xen_gpu_type of this ImageInfo.
+        r"""Gets the support_xen_gpu_type of this ImageInfo.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性            。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -818,7 +818,7 @@ class ImageInfo:
 
     @support_xen_gpu_type.setter
     def support_xen_gpu_type(self, support_xen_gpu_type):
-        """Sets the support_xen_gpu_type of this ImageInfo.
+        r"""Sets the support_xen_gpu_type of this ImageInfo.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性            。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -829,7 +829,7 @@ class ImageInfo:
 
     @property
     def support_xen_hana(self):
-        """Gets the support_xen_hana of this ImageInfo.
+        r"""Gets the support_xen_hana of this ImageInfo.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”             和“__support_kvm”属性不共存。
 
@@ -840,7 +840,7 @@ class ImageInfo:
 
     @support_xen_hana.setter
     def support_xen_hana(self, support_xen_hana):
-        """Sets the support_xen_hana of this ImageInfo.
+        r"""Sets the support_xen_hana of this ImageInfo.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”             和“__support_kvm”属性不共存。
 
@@ -851,7 +851,7 @@ class ImageInfo:
 
     @property
     def checksum(self):
-        """Gets the checksum of this ImageInfo.
+        r"""Gets the checksum of this ImageInfo.
 
         目前暂时不使用
 
@@ -862,7 +862,7 @@ class ImageInfo:
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this ImageInfo.
+        r"""Sets the checksum of this ImageInfo.
 
         目前暂时不使用
 
@@ -873,7 +873,7 @@ class ImageInfo:
 
     @property
     def container_format(self):
-        """Gets the container_format of this ImageInfo.
+        r"""Gets the container_format of this ImageInfo.
 
         容器类型
 
@@ -884,7 +884,7 @@ class ImageInfo:
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this ImageInfo.
+        r"""Sets the container_format of this ImageInfo.
 
         容器类型
 
@@ -895,7 +895,7 @@ class ImageInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ImageInfo.
+        r"""Gets the created_at of this ImageInfo.
 
         创建时间。格式为UTC时间
 
@@ -906,7 +906,7 @@ class ImageInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ImageInfo.
+        r"""Sets the created_at of this ImageInfo.
 
         创建时间。格式为UTC时间
 
@@ -917,7 +917,7 @@ class ImageInfo:
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this ImageInfo.
+        r"""Gets the disk_format of this ImageInfo.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
@@ -928,7 +928,7 @@ class ImageInfo:
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this ImageInfo.
+        r"""Sets the disk_format of this ImageInfo.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
@@ -939,7 +939,7 @@ class ImageInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ImageInfo.
+        r"""Gets the enterprise_project_id of this ImageInfo.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -950,7 +950,7 @@ class ImageInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ImageInfo.
+        r"""Sets the enterprise_project_id of this ImageInfo.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -961,7 +961,7 @@ class ImageInfo:
 
     @property
     def file(self):
-        """Gets the file of this ImageInfo.
+        r"""Gets the file of this ImageInfo.
 
         镜像文件下载和上传链接
 
@@ -972,7 +972,7 @@ class ImageInfo:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ImageInfo.
+        r"""Sets the file of this ImageInfo.
 
         镜像文件下载和上传链接
 
@@ -983,7 +983,7 @@ class ImageInfo:
 
     @property
     def id(self):
-        """Gets the id of this ImageInfo.
+        r"""Gets the id of this ImageInfo.
 
         镜像ID
 
@@ -994,7 +994,7 @@ class ImageInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageInfo.
+        r"""Sets the id of this ImageInfo.
 
         镜像ID
 
@@ -1005,7 +1005,7 @@ class ImageInfo:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this ImageInfo.
+        r"""Gets the min_disk of this ImageInfo.
 
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
@@ -1016,7 +1016,7 @@ class ImageInfo:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this ImageInfo.
+        r"""Sets the min_disk of this ImageInfo.
 
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
@@ -1027,7 +1027,7 @@ class ImageInfo:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this ImageInfo.
+        r"""Gets the min_ram of this ImageInfo.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0
 
@@ -1038,7 +1038,7 @@ class ImageInfo:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this ImageInfo.
+        r"""Sets the min_ram of this ImageInfo.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0
 
@@ -1049,7 +1049,7 @@ class ImageInfo:
 
     @property
     def name(self):
-        """Gets the name of this ImageInfo.
+        r"""Gets the name of this ImageInfo.
 
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
@@ -1060,7 +1060,7 @@ class ImageInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageInfo.
+        r"""Sets the name of this ImageInfo.
 
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
@@ -1071,7 +1071,7 @@ class ImageInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this ImageInfo.
+        r"""Gets the owner of this ImageInfo.
 
         镜像属于哪个租户
 
@@ -1082,7 +1082,7 @@ class ImageInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ImageInfo.
+        r"""Sets the owner of this ImageInfo.
 
         镜像属于哪个租户
 
@@ -1093,7 +1093,7 @@ class ImageInfo:
 
     @property
     def protected(self):
-        """Gets the protected of this ImageInfo.
+        r"""Gets the protected of this ImageInfo.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false
 
@@ -1104,7 +1104,7 @@ class ImageInfo:
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this ImageInfo.
+        r"""Sets the protected of this ImageInfo.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false
 
@@ -1115,7 +1115,7 @@ class ImageInfo:
 
     @property
     def schema(self):
-        """Gets the schema of this ImageInfo.
+        r"""Gets the schema of this ImageInfo.
 
         镜像视图
 
@@ -1126,7 +1126,7 @@ class ImageInfo:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ImageInfo.
+        r"""Sets the schema of this ImageInfo.
 
         镜像视图
 
@@ -1137,7 +1137,7 @@ class ImageInfo:
 
     @property
     def _self(self):
-        """Gets the _self of this ImageInfo.
+        r"""Gets the _self of this ImageInfo.
 
         镜像链接信息
 
@@ -1148,7 +1148,7 @@ class ImageInfo:
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this ImageInfo.
+        r"""Sets the _self of this ImageInfo.
 
         镜像链接信息
 
@@ -1159,7 +1159,7 @@ class ImageInfo:
 
     @property
     def size(self):
-        """Gets the size of this ImageInfo.
+        r"""Gets the size of this ImageInfo.
 
         目前暂时不使用
 
@@ -1170,7 +1170,7 @@ class ImageInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ImageInfo.
+        r"""Sets the size of this ImageInfo.
 
         目前暂时不使用
 
@@ -1181,7 +1181,7 @@ class ImageInfo:
 
     @property
     def status(self):
-        """Gets the status of this ImageInfo.
+        r"""Gets the status of this ImageInfo.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待 上传镜像文件。saving：表示镜像 正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
@@ -1192,7 +1192,7 @@ class ImageInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImageInfo.
+        r"""Sets the status of this ImageInfo.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待 上传镜像文件。saving：表示镜像 正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
@@ -1203,7 +1203,7 @@ class ImageInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this ImageInfo.
+        r"""Gets the tags of this ImageInfo.
 
         镜像标签列表
 
@@ -1214,7 +1214,7 @@ class ImageInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ImageInfo.
+        r"""Sets the tags of this ImageInfo.
 
         镜像标签列表
 
@@ -1225,7 +1225,7 @@ class ImageInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ImageInfo.
+        r"""Gets the updated_at of this ImageInfo.
 
         更新时间。格式为UTC时间
 
@@ -1236,7 +1236,7 @@ class ImageInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ImageInfo.
+        r"""Sets the updated_at of this ImageInfo.
 
         更新时间。格式为UTC时间
 
@@ -1247,7 +1247,7 @@ class ImageInfo:
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this ImageInfo.
+        r"""Gets the virtual_env_type of this ImageInfo.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取Dat            aImage，如果是裸金属服务器镜像，则取值是Ironic
 
@@ -1258,7 +1258,7 @@ class ImageInfo:
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this ImageInfo.
+        r"""Sets the virtual_env_type of this ImageInfo.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取Dat            aImage，如果是裸金属服务器镜像，则取值是Ironic
 
@@ -1269,7 +1269,7 @@ class ImageInfo:
 
     @property
     def virtual_size(self):
-        """Gets the virtual_size of this ImageInfo.
+        r"""Gets the virtual_size of this ImageInfo.
 
         目前暂时不使用
 
@@ -1280,7 +1280,7 @@ class ImageInfo:
 
     @virtual_size.setter
     def virtual_size(self, virtual_size):
-        """Sets the virtual_size of this ImageInfo.
+        r"""Sets the virtual_size of this ImageInfo.
 
         目前暂时不使用
 
@@ -1291,7 +1291,7 @@ class ImageInfo:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ImageInfo.
+        r"""Gets the visibility of this ImageInfo.
 
         是否被其他租户可见，取值为private或public
 
@@ -1302,7 +1302,7 @@ class ImageInfo:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ImageInfo.
+        r"""Sets the visibility of this ImageInfo.
 
         是否被其他租户可见，取值为private或public
 
@@ -1313,7 +1313,7 @@ class ImageInfo:
 
     @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this ImageInfo.
+        r"""Gets the hw_firmware_type of this ImageInfo.
 
         云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -1324,7 +1324,7 @@ class ImageInfo:
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this ImageInfo.
+        r"""Sets the hw_firmware_type of this ImageInfo.
 
         云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -1335,7 +1335,7 @@ class ImageInfo:
 
     @property
     def support_arm(self):
-        """Gets the support_arm of this ImageInfo.
+        r"""Gets the support_arm of this ImageInfo.
 
         是否是ARM架构类型的镜像，取值为“true”或者“false”。
 
@@ -1346,7 +1346,7 @@ class ImageInfo:
 
     @support_arm.setter
     def support_arm(self, support_arm):
-        """Sets the support_arm of this ImageInfo.
+        r"""Sets the support_arm of this ImageInfo.
 
         是否是ARM架构类型的镜像，取值为“true”或者“false”。
 
@@ -1357,7 +1357,7 @@ class ImageInfo:
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this ImageInfo.
+        r"""Gets the max_ram of this ImageInfo.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -1368,7 +1368,7 @@ class ImageInfo:
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this ImageInfo.
+        r"""Sets the max_ram of this ImageInfo.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -1379,7 +1379,7 @@ class ImageInfo:
 
     @property
     def hw_vif_multiqueue_enabled(self):
-        """Gets the hw_vif_multiqueue_enabled of this ImageInfo.
+        r"""Gets the hw_vif_multiqueue_enabled of this ImageInfo.
 
         镜像是否支持网卡多队列。取值为“true”或者“false”。
 
@@ -1390,7 +1390,7 @@ class ImageInfo:
 
     @hw_vif_multiqueue_enabled.setter
     def hw_vif_multiqueue_enabled(self, hw_vif_multiqueue_enabled):
-        """Sets the hw_vif_multiqueue_enabled of this ImageInfo.
+        r"""Sets the hw_vif_multiqueue_enabled of this ImageInfo.
 
         镜像是否支持网卡多队列。取值为“true”或者“false”。
 
@@ -1401,7 +1401,7 @@ class ImageInfo:
 
     @property
     def root_origin(self):
-        """Gets the root_origin of this ImageInfo.
+        r"""Gets the root_origin of this ImageInfo.
 
         表示当前镜像来源是从外部导入。取值：file。
 
@@ -1412,7 +1412,7 @@ class ImageInfo:
 
     @root_origin.setter
     def root_origin(self, root_origin):
-        """Sets the root_origin of this ImageInfo.
+        r"""Sets the root_origin of this ImageInfo.
 
         表示当前镜像来源是从外部导入。取值：file。
 
@@ -1423,7 +1423,7 @@ class ImageInfo:
 
     @property
     def sequence_num(self):
-        """Gets the sequence_num of this ImageInfo.
+        r"""Gets the sequence_num of this ImageInfo.
 
         表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
 
@@ -1434,7 +1434,7 @@ class ImageInfo:
 
     @sequence_num.setter
     def sequence_num(self, sequence_num):
-        """Sets the sequence_num of this ImageInfo.
+        r"""Sets the sequence_num of this ImageInfo.
 
         表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
 
@@ -1445,7 +1445,7 @@ class ImageInfo:
 
     @property
     def support_amd(self):
-        """Gets the support_amd of this ImageInfo.
+        r"""Gets the support_amd of this ImageInfo.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
@@ -1456,7 +1456,7 @@ class ImageInfo:
 
     @support_amd.setter
     def support_amd(self, support_amd):
-        """Sets the support_amd of this ImageInfo.
+        r"""Sets the support_amd of this ImageInfo.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 

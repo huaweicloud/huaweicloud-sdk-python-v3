@@ -28,7 +28,7 @@ class ListPublisherResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ListPublisherResponse
+        r"""ListPublisherResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPublisherResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListPublisherResponse.
+        r"""Gets the result of this ListPublisherResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class ListPublisherResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListPublisherResponse.
+        r"""Sets the result of this ListPublisherResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class ListPublisherResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListPublisherResponse.
+        r"""Gets the status of this ListPublisherResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class ListPublisherResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPublisherResponse.
+        r"""Sets the status of this ListPublisherResponse.
 
         状态
 

@@ -31,7 +31,7 @@ class PauseJobResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """PauseJobResp
+        r"""PauseJobResp
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PauseJobResp:
 
     @property
     def id(self):
-        """Gets the id of this PauseJobResp.
+        r"""Gets the id of this PauseJobResp.
 
         任务id
 
@@ -73,7 +73,7 @@ class PauseJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PauseJobResp.
+        r"""Sets the id of this PauseJobResp.
 
         任务id
 
@@ -84,7 +84,7 @@ class PauseJobResp:
 
     @property
     def status(self):
-        """Gets the status of this PauseJobResp.
+        r"""Gets the status of this PauseJobResp.
 
         暂停结果
 
@@ -95,7 +95,7 @@ class PauseJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PauseJobResp.
+        r"""Sets the status of this PauseJobResp.
 
         暂停结果
 
@@ -106,7 +106,7 @@ class PauseJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this PauseJobResp.
+        r"""Gets the error_code of this PauseJobResp.
 
         错误码
 
@@ -117,7 +117,7 @@ class PauseJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this PauseJobResp.
+        r"""Sets the error_code of this PauseJobResp.
 
         错误码
 
@@ -128,7 +128,7 @@ class PauseJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this PauseJobResp.
+        r"""Gets the error_msg of this PauseJobResp.
 
         错误信息
 
@@ -139,7 +139,7 @@ class PauseJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this PauseJobResp.
+        r"""Sets the error_msg of this PauseJobResp.
 
         错误信息
 

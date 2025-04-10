@@ -25,7 +25,7 @@ class ShowMasterRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """ShowMasterRequest
+        r"""ShowMasterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMasterRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShowMasterRequest.
+        r"""Gets the repository_uuid of this ShowMasterRequest.
 
         仓库id
 
@@ -53,7 +53,7 @@ class ShowMasterRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShowMasterRequest.
+        r"""Sets the repository_uuid of this ShowMasterRequest.
 
         仓库id
 

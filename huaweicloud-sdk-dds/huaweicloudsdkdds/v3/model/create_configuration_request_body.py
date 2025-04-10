@@ -31,7 +31,7 @@ class CreateConfigurationRequestBody:
     }
 
     def __init__(self, name=None, description=None, parameter_values=None, datastore=None):
-        """CreateConfigurationRequestBody
+        r"""CreateConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateConfigurationRequestBody.
+        r"""Gets the name of this CreateConfigurationRequestBody.
 
         参数模板名称。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
 
@@ -71,7 +71,7 @@ class CreateConfigurationRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConfigurationRequestBody.
+        r"""Sets the name of this CreateConfigurationRequestBody.
 
         参数模板名称。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
 
@@ -82,7 +82,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateConfigurationRequestBody.
+        r"""Gets the description of this CreateConfigurationRequestBody.
 
         参数模板描述。 取值范围：长度不超过256位，且不能包含回车和>!<\"&'=特殊字符。默认为空
 
@@ -93,7 +93,7 @@ class CreateConfigurationRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConfigurationRequestBody.
+        r"""Sets the description of this CreateConfigurationRequestBody.
 
         参数模板描述。 取值范围：长度不超过256位，且不能包含回车和>!<\"&'=特殊字符。默认为空
 
@@ -104,7 +104,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this CreateConfigurationRequestBody.
+        r"""Gets the parameter_values of this CreateConfigurationRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。
 
@@ -115,7 +115,7 @@ class CreateConfigurationRequestBody:
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this CreateConfigurationRequestBody.
+        r"""Sets the parameter_values of this CreateConfigurationRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。
 
@@ -126,7 +126,7 @@ class CreateConfigurationRequestBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateConfigurationRequestBody.
+        r"""Gets the datastore of this CreateConfigurationRequestBody.
 
         :return: The datastore of this CreateConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.DatastoreResult`
@@ -135,7 +135,7 @@ class CreateConfigurationRequestBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateConfigurationRequestBody.
+        r"""Sets the datastore of this CreateConfigurationRequestBody.
 
         :param datastore: The datastore of this CreateConfigurationRequestBody.
         :type datastore: :class:`huaweicloudsdkdds.v3.DatastoreResult`

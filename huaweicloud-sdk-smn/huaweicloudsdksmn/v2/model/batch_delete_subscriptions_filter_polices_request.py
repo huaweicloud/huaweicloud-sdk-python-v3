@@ -25,7 +25,7 @@ class BatchDeleteSubscriptionsFilterPolicesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteSubscriptionsFilterPolicesRequest
+        r"""BatchDeleteSubscriptionsFilterPolicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteSubscriptionsFilterPolicesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSubscriptionsFilterPolicesRequest.
+        r"""Gets the body of this BatchDeleteSubscriptionsFilterPolicesRequest.
 
         :return: The body of this BatchDeleteSubscriptionsFilterPolicesRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsFilterPolicesRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteSubscriptionsFilterPolicesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSubscriptionsFilterPolicesRequest.
+        r"""Sets the body of this BatchDeleteSubscriptionsFilterPolicesRequest.
 
         :param body: The body of this BatchDeleteSubscriptionsFilterPolicesRequest.
         :type body: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsFilterPolicesRequestBody`

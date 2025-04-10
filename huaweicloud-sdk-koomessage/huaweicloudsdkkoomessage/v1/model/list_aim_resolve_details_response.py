@@ -28,7 +28,7 @@ class ListAimResolveDetailsResponse(SdkResponse):
     }
 
     def __init__(self, resolve_details=None, page_info=None):
-        """ListAimResolveDetailsResponse
+        r"""ListAimResolveDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAimResolveDetailsResponse(SdkResponse):
 
     @property
     def resolve_details(self):
-        """Gets the resolve_details of this ListAimResolveDetailsResponse.
+        r"""Gets the resolve_details of this ListAimResolveDetailsResponse.
 
         查询解析结果集。
 
@@ -62,7 +62,7 @@ class ListAimResolveDetailsResponse(SdkResponse):
 
     @resolve_details.setter
     def resolve_details(self, resolve_details):
-        """Sets the resolve_details of this ListAimResolveDetailsResponse.
+        r"""Sets the resolve_details of this ListAimResolveDetailsResponse.
 
         查询解析结果集。
 
@@ -73,7 +73,7 @@ class ListAimResolveDetailsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimResolveDetailsResponse.
+        r"""Gets the page_info of this ListAimResolveDetailsResponse.
 
         :return: The page_info of this ListAimResolveDetailsResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -82,7 +82,7 @@ class ListAimResolveDetailsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimResolveDetailsResponse.
+        r"""Sets the page_info of this ListAimResolveDetailsResponse.
 
         :param page_info: The page_info of this ListAimResolveDetailsResponse.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

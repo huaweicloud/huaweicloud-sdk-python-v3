@@ -46,7 +46,7 @@ class CreateDestinationResponse(SdkResponse):
     }
 
     def __init__(self, destination_id=None, destination_type=None, app_id=None, destination_name=None, topic=None, server=None, token=None, tag=None, mqs_sasl_ssl=None, user_name=None, password=None):
-        """CreateDestinationResponse
+        r"""CreateDestinationResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def destination_id(self):
-        """Gets the destination_id of this CreateDestinationResponse.
+        r"""Gets the destination_id of this CreateDestinationResponse.
 
         目标数据源ID
 
@@ -125,7 +125,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @destination_id.setter
     def destination_id(self, destination_id):
-        """Sets the destination_id of this CreateDestinationResponse.
+        r"""Sets the destination_id of this CreateDestinationResponse.
 
         目标数据源ID
 
@@ -136,7 +136,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this CreateDestinationResponse.
+        r"""Gets the destination_type of this CreateDestinationResponse.
 
         操作类型，枚举值:0-目标端为本ROMA实例内MQS； 7-目标端为设备
 
@@ -147,7 +147,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this CreateDestinationResponse.
+        r"""Sets the destination_type of this CreateDestinationResponse.
 
         操作类型，枚举值:0-目标端为本ROMA实例内MQS； 7-目标端为设备
 
@@ -158,7 +158,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateDestinationResponse.
+        r"""Gets the app_id of this CreateDestinationResponse.
 
         应用ID，目标端为0时需明确对方的APP_ID
 
@@ -169,7 +169,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateDestinationResponse.
+        r"""Sets the app_id of this CreateDestinationResponse.
 
         应用ID，目标端为0时需明确对方的APP_ID
 
@@ -180,7 +180,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def destination_name(self):
-        """Gets the destination_name of this CreateDestinationResponse.
+        r"""Gets the destination_name of this CreateDestinationResponse.
 
         目标数据源名称
 
@@ -191,7 +191,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @destination_name.setter
     def destination_name(self, destination_name):
-        """Sets the destination_name of this CreateDestinationResponse.
+        r"""Sets the destination_name of this CreateDestinationResponse.
 
         目标数据源名称
 
@@ -202,7 +202,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this CreateDestinationResponse.
+        r"""Gets the topic of this CreateDestinationResponse.
 
         目标数据源主题
 
@@ -213,7 +213,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this CreateDestinationResponse.
+        r"""Sets the topic of this CreateDestinationResponse.
 
         目标数据源主题
 
@@ -224,7 +224,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this CreateDestinationResponse.
+        r"""Gets the server of this CreateDestinationResponse.
 
         目标端数据源服务
 
@@ -235,7 +235,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreateDestinationResponse.
+        r"""Sets the server of this CreateDestinationResponse.
 
         目标端数据源服务
 
@@ -246,7 +246,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this CreateDestinationResponse.
+        r"""Gets the token of this CreateDestinationResponse.
 
         目标端数据源token
 
@@ -257,7 +257,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CreateDestinationResponse.
+        r"""Sets the token of this CreateDestinationResponse.
 
         目标端数据源token
 
@@ -268,7 +268,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def tag(self):
-        """Gets the tag of this CreateDestinationResponse.
+        r"""Gets the tag of this CreateDestinationResponse.
 
         目标数据源标签
 
@@ -279,7 +279,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateDestinationResponse.
+        r"""Sets the tag of this CreateDestinationResponse.
 
         目标数据源标签
 
@@ -290,7 +290,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def mqs_sasl_ssl(self):
-        """Gets the mqs_sasl_ssl of this CreateDestinationResponse.
+        r"""Gets the mqs_sasl_ssl of this CreateDestinationResponse.
 
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
@@ -301,7 +301,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @mqs_sasl_ssl.setter
     def mqs_sasl_ssl(self, mqs_sasl_ssl):
-        """Sets the mqs_sasl_ssl of this CreateDestinationResponse.
+        r"""Sets the mqs_sasl_ssl of this CreateDestinationResponse.
 
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
@@ -312,7 +312,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateDestinationResponse.
+        r"""Gets the user_name of this CreateDestinationResponse.
 
         目标数据源用户名
 
@@ -323,7 +323,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateDestinationResponse.
+        r"""Sets the user_name of this CreateDestinationResponse.
 
         目标数据源用户名
 
@@ -334,7 +334,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this CreateDestinationResponse.
+        r"""Gets the password of this CreateDestinationResponse.
 
         目标数据源密码
 
@@ -345,7 +345,7 @@ class CreateDestinationResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateDestinationResponse.
+        r"""Sets the password of this CreateDestinationResponse.
 
         目标数据源密码
 

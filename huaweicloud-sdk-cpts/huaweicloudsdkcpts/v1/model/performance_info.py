@@ -143,7 +143,7 @@ class PerformanceInfo:
     }
 
     def __init__(self, average_resp_time=None, avg_network_traffic=None, avg_rec_bytes=None, avg_sent_bytes=None, avg_tran_resp_time=None, case_uri=None, create_time=None, current_thread_num=None, detail_id=None, end_time=None, error_count=None, error_events_count=None, failed_assert=None, failed_others=None, failed_parsed=None, failed_refused=None, failed_timeout=None, id=None, is_aw=None, max=None, max_network_traffic=None, max_rec_bytes=None, max_resp_time=None, max_sent_bytes=None, max_tran_resp_time=None, min=None, min_network_traffic=None, name=None, requests=None, result=None, start_time=None, status=None, success_count=None, success_rate=None, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None, task_id=None, task_project_id=None, task_status=None, test_case_uri=None, tp50=None, tp75=None, tp90=None, tp95=None, tp99=None, tp999=None, tp9999=None, tps=None, tran_tps=None, transaction_id=None, transaction_success=None, transactional_success_rate=None, transactional_tps=None, transactional_tps_success=None, transactions=None, update_time=None, vum=None):
-        """PerformanceInfo
+        r"""PerformanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -456,7 +456,7 @@ class PerformanceInfo:
 
     @property
     def average_resp_time(self):
-        """Gets the average_resp_time of this PerformanceInfo.
+        r"""Gets the average_resp_time of this PerformanceInfo.
 
         平均响应时间
 
@@ -467,7 +467,7 @@ class PerformanceInfo:
 
     @average_resp_time.setter
     def average_resp_time(self, average_resp_time):
-        """Sets the average_resp_time of this PerformanceInfo.
+        r"""Sets the average_resp_time of this PerformanceInfo.
 
         平均响应时间
 
@@ -478,7 +478,7 @@ class PerformanceInfo:
 
     @property
     def avg_network_traffic(self):
-        """Gets the avg_network_traffic of this PerformanceInfo.
+        r"""Gets the avg_network_traffic of this PerformanceInfo.
 
         平均带宽
 
@@ -489,7 +489,7 @@ class PerformanceInfo:
 
     @avg_network_traffic.setter
     def avg_network_traffic(self, avg_network_traffic):
-        """Sets the avg_network_traffic of this PerformanceInfo.
+        r"""Sets the avg_network_traffic of this PerformanceInfo.
 
         平均带宽
 
@@ -500,7 +500,7 @@ class PerformanceInfo:
 
     @property
     def avg_rec_bytes(self):
-        """Gets the avg_rec_bytes of this PerformanceInfo.
+        r"""Gets the avg_rec_bytes of this PerformanceInfo.
 
         平均下行带宽
 
@@ -511,7 +511,7 @@ class PerformanceInfo:
 
     @avg_rec_bytes.setter
     def avg_rec_bytes(self, avg_rec_bytes):
-        """Sets the avg_rec_bytes of this PerformanceInfo.
+        r"""Sets the avg_rec_bytes of this PerformanceInfo.
 
         平均下行带宽
 
@@ -522,7 +522,7 @@ class PerformanceInfo:
 
     @property
     def avg_sent_bytes(self):
-        """Gets the avg_sent_bytes of this PerformanceInfo.
+        r"""Gets the avg_sent_bytes of this PerformanceInfo.
 
         平均上行带宽
 
@@ -533,7 +533,7 @@ class PerformanceInfo:
 
     @avg_sent_bytes.setter
     def avg_sent_bytes(self, avg_sent_bytes):
-        """Sets the avg_sent_bytes of this PerformanceInfo.
+        r"""Sets the avg_sent_bytes of this PerformanceInfo.
 
         平均上行带宽
 
@@ -544,7 +544,7 @@ class PerformanceInfo:
 
     @property
     def avg_tran_resp_time(self):
-        """Gets the avg_tran_resp_time of this PerformanceInfo.
+        r"""Gets the avg_tran_resp_time of this PerformanceInfo.
 
         事务平均响应时间
 
@@ -555,7 +555,7 @@ class PerformanceInfo:
 
     @avg_tran_resp_time.setter
     def avg_tran_resp_time(self, avg_tran_resp_time):
-        """Sets the avg_tran_resp_time of this PerformanceInfo.
+        r"""Sets the avg_tran_resp_time of this PerformanceInfo.
 
         事务平均响应时间
 
@@ -566,7 +566,7 @@ class PerformanceInfo:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this PerformanceInfo.
+        r"""Gets the case_uri of this PerformanceInfo.
 
         用例Uri
 
@@ -577,7 +577,7 @@ class PerformanceInfo:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this PerformanceInfo.
+        r"""Sets the case_uri of this PerformanceInfo.
 
         用例Uri
 
@@ -588,7 +588,7 @@ class PerformanceInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PerformanceInfo.
+        r"""Gets the create_time of this PerformanceInfo.
 
         创建时间
 
@@ -599,7 +599,7 @@ class PerformanceInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PerformanceInfo.
+        r"""Sets the create_time of this PerformanceInfo.
 
         创建时间
 
@@ -610,7 +610,7 @@ class PerformanceInfo:
 
     @property
     def current_thread_num(self):
-        """Gets the current_thread_num of this PerformanceInfo.
+        r"""Gets the current_thread_num of this PerformanceInfo.
 
         最大并发数
 
@@ -621,7 +621,7 @@ class PerformanceInfo:
 
     @current_thread_num.setter
     def current_thread_num(self, current_thread_num):
-        """Sets the current_thread_num of this PerformanceInfo.
+        r"""Sets the current_thread_num of this PerformanceInfo.
 
         最大并发数
 
@@ -632,7 +632,7 @@ class PerformanceInfo:
 
     @property
     def detail_id(self):
-        """Gets the detail_id of this PerformanceInfo.
+        r"""Gets the detail_id of this PerformanceInfo.
 
         详情id
 
@@ -643,7 +643,7 @@ class PerformanceInfo:
 
     @detail_id.setter
     def detail_id(self, detail_id):
-        """Sets the detail_id of this PerformanceInfo.
+        r"""Sets the detail_id of this PerformanceInfo.
 
         详情id
 
@@ -654,7 +654,7 @@ class PerformanceInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PerformanceInfo.
+        r"""Gets the end_time of this PerformanceInfo.
 
         结束时间
 
@@ -665,7 +665,7 @@ class PerformanceInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PerformanceInfo.
+        r"""Sets the end_time of this PerformanceInfo.
 
         结束时间
 
@@ -676,7 +676,7 @@ class PerformanceInfo:
 
     @property
     def error_count(self):
-        """Gets the error_count of this PerformanceInfo.
+        r"""Gets the error_count of this PerformanceInfo.
 
         失败请求数
 
@@ -687,7 +687,7 @@ class PerformanceInfo:
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this PerformanceInfo.
+        r"""Sets the error_count of this PerformanceInfo.
 
         失败请求数
 
@@ -698,7 +698,7 @@ class PerformanceInfo:
 
     @property
     def error_events_count(self):
-        """Gets the error_events_count of this PerformanceInfo.
+        r"""Gets the error_events_count of this PerformanceInfo.
 
         ERROR级别的事件个数
 
@@ -709,7 +709,7 @@ class PerformanceInfo:
 
     @error_events_count.setter
     def error_events_count(self, error_events_count):
-        """Sets the error_events_count of this PerformanceInfo.
+        r"""Sets the error_events_count of this PerformanceInfo.
 
         ERROR级别的事件个数
 
@@ -720,7 +720,7 @@ class PerformanceInfo:
 
     @property
     def failed_assert(self):
-        """Gets the failed_assert of this PerformanceInfo.
+        r"""Gets the failed_assert of this PerformanceInfo.
 
         断言失败
 
@@ -731,7 +731,7 @@ class PerformanceInfo:
 
     @failed_assert.setter
     def failed_assert(self, failed_assert):
-        """Sets the failed_assert of this PerformanceInfo.
+        r"""Sets the failed_assert of this PerformanceInfo.
 
         断言失败
 
@@ -742,7 +742,7 @@ class PerformanceInfo:
 
     @property
     def failed_others(self):
-        """Gets the failed_others of this PerformanceInfo.
+        r"""Gets the failed_others of this PerformanceInfo.
 
         其他失败
 
@@ -753,7 +753,7 @@ class PerformanceInfo:
 
     @failed_others.setter
     def failed_others(self, failed_others):
-        """Sets the failed_others of this PerformanceInfo.
+        r"""Sets the failed_others of this PerformanceInfo.
 
         其他失败
 
@@ -764,7 +764,7 @@ class PerformanceInfo:
 
     @property
     def failed_parsed(self):
-        """Gets the failed_parsed of this PerformanceInfo.
+        r"""Gets the failed_parsed of this PerformanceInfo.
 
         解析失败
 
@@ -775,7 +775,7 @@ class PerformanceInfo:
 
     @failed_parsed.setter
     def failed_parsed(self, failed_parsed):
-        """Sets the failed_parsed of this PerformanceInfo.
+        r"""Sets the failed_parsed of this PerformanceInfo.
 
         解析失败
 
@@ -786,7 +786,7 @@ class PerformanceInfo:
 
     @property
     def failed_refused(self):
-        """Gets the failed_refused of this PerformanceInfo.
+        r"""Gets the failed_refused of this PerformanceInfo.
 
         连接被拒
 
@@ -797,7 +797,7 @@ class PerformanceInfo:
 
     @failed_refused.setter
     def failed_refused(self, failed_refused):
-        """Sets the failed_refused of this PerformanceInfo.
+        r"""Sets the failed_refused of this PerformanceInfo.
 
         连接被拒
 
@@ -808,7 +808,7 @@ class PerformanceInfo:
 
     @property
     def failed_timeout(self):
-        """Gets the failed_timeout of this PerformanceInfo.
+        r"""Gets the failed_timeout of this PerformanceInfo.
 
         超时失败
 
@@ -819,7 +819,7 @@ class PerformanceInfo:
 
     @failed_timeout.setter
     def failed_timeout(self, failed_timeout):
-        """Sets the failed_timeout of this PerformanceInfo.
+        r"""Sets the failed_timeout of this PerformanceInfo.
 
         超时失败
 
@@ -830,7 +830,7 @@ class PerformanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this PerformanceInfo.
+        r"""Gets the id of this PerformanceInfo.
 
         id
 
@@ -841,7 +841,7 @@ class PerformanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PerformanceInfo.
+        r"""Sets the id of this PerformanceInfo.
 
         id
 
@@ -852,7 +852,7 @@ class PerformanceInfo:
 
     @property
     def is_aw(self):
-        """Gets the is_aw of this PerformanceInfo.
+        r"""Gets the is_aw of this PerformanceInfo.
 
         是否aw
 
@@ -863,7 +863,7 @@ class PerformanceInfo:
 
     @is_aw.setter
     def is_aw(self, is_aw):
-        """Sets the is_aw of this PerformanceInfo.
+        r"""Sets the is_aw of this PerformanceInfo.
 
         是否aw
 
@@ -874,7 +874,7 @@ class PerformanceInfo:
 
     @property
     def max(self):
-        """Gets the max of this PerformanceInfo.
+        r"""Gets the max of this PerformanceInfo.
 
         最大响应时间
 
@@ -885,7 +885,7 @@ class PerformanceInfo:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this PerformanceInfo.
+        r"""Sets the max of this PerformanceInfo.
 
         最大响应时间
 
@@ -896,7 +896,7 @@ class PerformanceInfo:
 
     @property
     def max_network_traffic(self):
-        """Gets the max_network_traffic of this PerformanceInfo.
+        r"""Gets the max_network_traffic of this PerformanceInfo.
 
         最大带宽
 
@@ -907,7 +907,7 @@ class PerformanceInfo:
 
     @max_network_traffic.setter
     def max_network_traffic(self, max_network_traffic):
-        """Sets the max_network_traffic of this PerformanceInfo.
+        r"""Sets the max_network_traffic of this PerformanceInfo.
 
         最大带宽
 
@@ -918,7 +918,7 @@ class PerformanceInfo:
 
     @property
     def max_rec_bytes(self):
-        """Gets the max_rec_bytes of this PerformanceInfo.
+        r"""Gets the max_rec_bytes of this PerformanceInfo.
 
         最大接收字节数
 
@@ -929,7 +929,7 @@ class PerformanceInfo:
 
     @max_rec_bytes.setter
     def max_rec_bytes(self, max_rec_bytes):
-        """Sets the max_rec_bytes of this PerformanceInfo.
+        r"""Sets the max_rec_bytes of this PerformanceInfo.
 
         最大接收字节数
 
@@ -940,7 +940,7 @@ class PerformanceInfo:
 
     @property
     def max_resp_time(self):
-        """Gets the max_resp_time of this PerformanceInfo.
+        r"""Gets the max_resp_time of this PerformanceInfo.
 
         探底结果：响应时间
 
@@ -951,7 +951,7 @@ class PerformanceInfo:
 
     @max_resp_time.setter
     def max_resp_time(self, max_resp_time):
-        """Sets the max_resp_time of this PerformanceInfo.
+        r"""Sets the max_resp_time of this PerformanceInfo.
 
         探底结果：响应时间
 
@@ -962,7 +962,7 @@ class PerformanceInfo:
 
     @property
     def max_sent_bytes(self):
-        """Gets the max_sent_bytes of this PerformanceInfo.
+        r"""Gets the max_sent_bytes of this PerformanceInfo.
 
         最大发送带宽
 
@@ -973,7 +973,7 @@ class PerformanceInfo:
 
     @max_sent_bytes.setter
     def max_sent_bytes(self, max_sent_bytes):
-        """Sets the max_sent_bytes of this PerformanceInfo.
+        r"""Sets the max_sent_bytes of this PerformanceInfo.
 
         最大发送带宽
 
@@ -984,7 +984,7 @@ class PerformanceInfo:
 
     @property
     def max_tran_resp_time(self):
-        """Gets the max_tran_resp_time of this PerformanceInfo.
+        r"""Gets the max_tran_resp_time of this PerformanceInfo.
 
         事务最大响应时间
 
@@ -995,7 +995,7 @@ class PerformanceInfo:
 
     @max_tran_resp_time.setter
     def max_tran_resp_time(self, max_tran_resp_time):
-        """Sets the max_tran_resp_time of this PerformanceInfo.
+        r"""Sets the max_tran_resp_time of this PerformanceInfo.
 
         事务最大响应时间
 
@@ -1006,7 +1006,7 @@ class PerformanceInfo:
 
     @property
     def min(self):
-        """Gets the min of this PerformanceInfo.
+        r"""Gets the min of this PerformanceInfo.
 
         最小响应时间
 
@@ -1017,7 +1017,7 @@ class PerformanceInfo:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this PerformanceInfo.
+        r"""Sets the min of this PerformanceInfo.
 
         最小响应时间
 
@@ -1028,7 +1028,7 @@ class PerformanceInfo:
 
     @property
     def min_network_traffic(self):
-        """Gets the min_network_traffic of this PerformanceInfo.
+        r"""Gets the min_network_traffic of this PerformanceInfo.
 
         最小带宽
 
@@ -1039,7 +1039,7 @@ class PerformanceInfo:
 
     @min_network_traffic.setter
     def min_network_traffic(self, min_network_traffic):
-        """Sets the min_network_traffic of this PerformanceInfo.
+        r"""Sets the min_network_traffic of this PerformanceInfo.
 
         最小带宽
 
@@ -1050,7 +1050,7 @@ class PerformanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this PerformanceInfo.
+        r"""Gets the name of this PerformanceInfo.
 
         名称
 
@@ -1061,7 +1061,7 @@ class PerformanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PerformanceInfo.
+        r"""Sets the name of this PerformanceInfo.
 
         名称
 
@@ -1072,7 +1072,7 @@ class PerformanceInfo:
 
     @property
     def requests(self):
-        """Gets the requests of this PerformanceInfo.
+        r"""Gets the requests of this PerformanceInfo.
 
         请求数
 
@@ -1083,7 +1083,7 @@ class PerformanceInfo:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this PerformanceInfo.
+        r"""Sets the requests of this PerformanceInfo.
 
         请求数
 
@@ -1094,7 +1094,7 @@ class PerformanceInfo:
 
     @property
     def result(self):
-        """Gets the result of this PerformanceInfo.
+        r"""Gets the result of this PerformanceInfo.
 
         用例/aw的执行结果
 
@@ -1105,7 +1105,7 @@ class PerformanceInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this PerformanceInfo.
+        r"""Sets the result of this PerformanceInfo.
 
         用例/aw的执行结果
 
@@ -1116,7 +1116,7 @@ class PerformanceInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PerformanceInfo.
+        r"""Gets the start_time of this PerformanceInfo.
 
         开始时间
 
@@ -1127,7 +1127,7 @@ class PerformanceInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PerformanceInfo.
+        r"""Sets the start_time of this PerformanceInfo.
 
         开始时间
 
@@ -1138,7 +1138,7 @@ class PerformanceInfo:
 
     @property
     def status(self):
-        """Gets the status of this PerformanceInfo.
+        r"""Gets the status of this PerformanceInfo.
 
         用例状态
 
@@ -1149,7 +1149,7 @@ class PerformanceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PerformanceInfo.
+        r"""Sets the status of this PerformanceInfo.
 
         用例状态
 
@@ -1160,7 +1160,7 @@ class PerformanceInfo:
 
     @property
     def success_count(self):
-        """Gets the success_count of this PerformanceInfo.
+        r"""Gets the success_count of this PerformanceInfo.
 
         成功数
 
@@ -1171,7 +1171,7 @@ class PerformanceInfo:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this PerformanceInfo.
+        r"""Sets the success_count of this PerformanceInfo.
 
         成功数
 
@@ -1182,7 +1182,7 @@ class PerformanceInfo:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this PerformanceInfo.
+        r"""Gets the success_rate of this PerformanceInfo.
 
         成功率
 
@@ -1193,7 +1193,7 @@ class PerformanceInfo:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this PerformanceInfo.
+        r"""Sets the success_rate of this PerformanceInfo.
 
         成功率
 
@@ -1204,7 +1204,7 @@ class PerformanceInfo:
 
     @property
     def sum1xx(self):
-        """Gets the sum1xx of this PerformanceInfo.
+        r"""Gets the sum1xx of this PerformanceInfo.
 
         1xx响应码计数
 
@@ -1215,7 +1215,7 @@ class PerformanceInfo:
 
     @sum1xx.setter
     def sum1xx(self, sum1xx):
-        """Sets the sum1xx of this PerformanceInfo.
+        r"""Sets the sum1xx of this PerformanceInfo.
 
         1xx响应码计数
 
@@ -1226,7 +1226,7 @@ class PerformanceInfo:
 
     @property
     def sum2xx(self):
-        """Gets the sum2xx of this PerformanceInfo.
+        r"""Gets the sum2xx of this PerformanceInfo.
 
         2xx响应码计数
 
@@ -1237,7 +1237,7 @@ class PerformanceInfo:
 
     @sum2xx.setter
     def sum2xx(self, sum2xx):
-        """Sets the sum2xx of this PerformanceInfo.
+        r"""Sets the sum2xx of this PerformanceInfo.
 
         2xx响应码计数
 
@@ -1248,7 +1248,7 @@ class PerformanceInfo:
 
     @property
     def sum3xx(self):
-        """Gets the sum3xx of this PerformanceInfo.
+        r"""Gets the sum3xx of this PerformanceInfo.
 
         3xx响应码计数
 
@@ -1259,7 +1259,7 @@ class PerformanceInfo:
 
     @sum3xx.setter
     def sum3xx(self, sum3xx):
-        """Sets the sum3xx of this PerformanceInfo.
+        r"""Sets the sum3xx of this PerformanceInfo.
 
         3xx响应码计数
 
@@ -1270,7 +1270,7 @@ class PerformanceInfo:
 
     @property
     def sum4xx(self):
-        """Gets the sum4xx of this PerformanceInfo.
+        r"""Gets the sum4xx of this PerformanceInfo.
 
         4xx响应码计数
 
@@ -1281,7 +1281,7 @@ class PerformanceInfo:
 
     @sum4xx.setter
     def sum4xx(self, sum4xx):
-        """Sets the sum4xx of this PerformanceInfo.
+        r"""Sets the sum4xx of this PerformanceInfo.
 
         4xx响应码计数
 
@@ -1292,7 +1292,7 @@ class PerformanceInfo:
 
     @property
     def sum5xx(self):
-        """Gets the sum5xx of this PerformanceInfo.
+        r"""Gets the sum5xx of this PerformanceInfo.
 
         5xx响应码计数
 
@@ -1303,7 +1303,7 @@ class PerformanceInfo:
 
     @sum5xx.setter
     def sum5xx(self, sum5xx):
-        """Sets the sum5xx of this PerformanceInfo.
+        r"""Sets the sum5xx of this PerformanceInfo.
 
         5xx响应码计数
 
@@ -1314,7 +1314,7 @@ class PerformanceInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this PerformanceInfo.
+        r"""Gets the task_id of this PerformanceInfo.
 
         任务id_轮次
 
@@ -1325,7 +1325,7 @@ class PerformanceInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this PerformanceInfo.
+        r"""Sets the task_id of this PerformanceInfo.
 
         任务id_轮次
 
@@ -1336,7 +1336,7 @@ class PerformanceInfo:
 
     @property
     def task_project_id(self):
-        """Gets the task_project_id of this PerformanceInfo.
+        r"""Gets the task_project_id of this PerformanceInfo.
 
         任务id
 
@@ -1347,7 +1347,7 @@ class PerformanceInfo:
 
     @task_project_id.setter
     def task_project_id(self, task_project_id):
-        """Sets the task_project_id of this PerformanceInfo.
+        r"""Sets the task_project_id of this PerformanceInfo.
 
         任务id
 
@@ -1358,7 +1358,7 @@ class PerformanceInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this PerformanceInfo.
+        r"""Gets the task_status of this PerformanceInfo.
 
         任务状态
 
@@ -1369,7 +1369,7 @@ class PerformanceInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this PerformanceInfo.
+        r"""Sets the task_status of this PerformanceInfo.
 
         任务状态
 
@@ -1380,7 +1380,7 @@ class PerformanceInfo:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this PerformanceInfo.
+        r"""Gets the test_case_uri of this PerformanceInfo.
 
         用例uri
 
@@ -1391,7 +1391,7 @@ class PerformanceInfo:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this PerformanceInfo.
+        r"""Sets the test_case_uri of this PerformanceInfo.
 
         用例uri
 
@@ -1402,7 +1402,7 @@ class PerformanceInfo:
 
     @property
     def tp50(self):
-        """Gets the tp50 of this PerformanceInfo.
+        r"""Gets the tp50 of this PerformanceInfo.
 
         tp50
 
@@ -1413,7 +1413,7 @@ class PerformanceInfo:
 
     @tp50.setter
     def tp50(self, tp50):
-        """Sets the tp50 of this PerformanceInfo.
+        r"""Sets the tp50 of this PerformanceInfo.
 
         tp50
 
@@ -1424,7 +1424,7 @@ class PerformanceInfo:
 
     @property
     def tp75(self):
-        """Gets the tp75 of this PerformanceInfo.
+        r"""Gets the tp75 of this PerformanceInfo.
 
         tp75
 
@@ -1435,7 +1435,7 @@ class PerformanceInfo:
 
     @tp75.setter
     def tp75(self, tp75):
-        """Sets the tp75 of this PerformanceInfo.
+        r"""Sets the tp75 of this PerformanceInfo.
 
         tp75
 
@@ -1446,7 +1446,7 @@ class PerformanceInfo:
 
     @property
     def tp90(self):
-        """Gets the tp90 of this PerformanceInfo.
+        r"""Gets the tp90 of this PerformanceInfo.
 
         tp90
 
@@ -1457,7 +1457,7 @@ class PerformanceInfo:
 
     @tp90.setter
     def tp90(self, tp90):
-        """Sets the tp90 of this PerformanceInfo.
+        r"""Sets the tp90 of this PerformanceInfo.
 
         tp90
 
@@ -1468,7 +1468,7 @@ class PerformanceInfo:
 
     @property
     def tp95(self):
-        """Gets the tp95 of this PerformanceInfo.
+        r"""Gets the tp95 of this PerformanceInfo.
 
         tp95
 
@@ -1479,7 +1479,7 @@ class PerformanceInfo:
 
     @tp95.setter
     def tp95(self, tp95):
-        """Sets the tp95 of this PerformanceInfo.
+        r"""Sets the tp95 of this PerformanceInfo.
 
         tp95
 
@@ -1490,7 +1490,7 @@ class PerformanceInfo:
 
     @property
     def tp99(self):
-        """Gets the tp99 of this PerformanceInfo.
+        r"""Gets the tp99 of this PerformanceInfo.
 
         tp99
 
@@ -1501,7 +1501,7 @@ class PerformanceInfo:
 
     @tp99.setter
     def tp99(self, tp99):
-        """Sets the tp99 of this PerformanceInfo.
+        r"""Sets the tp99 of this PerformanceInfo.
 
         tp99
 
@@ -1512,7 +1512,7 @@ class PerformanceInfo:
 
     @property
     def tp999(self):
-        """Gets the tp999 of this PerformanceInfo.
+        r"""Gets the tp999 of this PerformanceInfo.
 
         tp999
 
@@ -1523,7 +1523,7 @@ class PerformanceInfo:
 
     @tp999.setter
     def tp999(self, tp999):
-        """Sets the tp999 of this PerformanceInfo.
+        r"""Sets the tp999 of this PerformanceInfo.
 
         tp999
 
@@ -1534,7 +1534,7 @@ class PerformanceInfo:
 
     @property
     def tp9999(self):
-        """Gets the tp9999 of this PerformanceInfo.
+        r"""Gets the tp9999 of this PerformanceInfo.
 
         tp9999
 
@@ -1545,7 +1545,7 @@ class PerformanceInfo:
 
     @tp9999.setter
     def tp9999(self, tp9999):
-        """Sets the tp9999 of this PerformanceInfo.
+        r"""Sets the tp9999 of this PerformanceInfo.
 
         tp9999
 
@@ -1556,7 +1556,7 @@ class PerformanceInfo:
 
     @property
     def tps(self):
-        """Gets the tps of this PerformanceInfo.
+        r"""Gets the tps of this PerformanceInfo.
 
         tps
 
@@ -1567,7 +1567,7 @@ class PerformanceInfo:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this PerformanceInfo.
+        r"""Sets the tps of this PerformanceInfo.
 
         tps
 
@@ -1578,7 +1578,7 @@ class PerformanceInfo:
 
     @property
     def tran_tps(self):
-        """Gets the tran_tps of this PerformanceInfo.
+        r"""Gets the tran_tps of this PerformanceInfo.
 
         事务TPS
 
@@ -1589,7 +1589,7 @@ class PerformanceInfo:
 
     @tran_tps.setter
     def tran_tps(self, tran_tps):
-        """Sets the tran_tps of this PerformanceInfo.
+        r"""Sets the tran_tps of this PerformanceInfo.
 
         事务TPS
 
@@ -1600,7 +1600,7 @@ class PerformanceInfo:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this PerformanceInfo.
+        r"""Gets the transaction_id of this PerformanceInfo.
 
         事务id
 
@@ -1611,7 +1611,7 @@ class PerformanceInfo:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this PerformanceInfo.
+        r"""Sets the transaction_id of this PerformanceInfo.
 
         事务id
 
@@ -1622,7 +1622,7 @@ class PerformanceInfo:
 
     @property
     def transaction_success(self):
-        """Gets the transaction_success of this PerformanceInfo.
+        r"""Gets the transaction_success of this PerformanceInfo.
 
         成功事务数
 
@@ -1633,7 +1633,7 @@ class PerformanceInfo:
 
     @transaction_success.setter
     def transaction_success(self, transaction_success):
-        """Sets the transaction_success of this PerformanceInfo.
+        r"""Sets the transaction_success of this PerformanceInfo.
 
         成功事务数
 
@@ -1644,7 +1644,7 @@ class PerformanceInfo:
 
     @property
     def transactional_success_rate(self):
-        """Gets the transactional_success_rate of this PerformanceInfo.
+        r"""Gets the transactional_success_rate of this PerformanceInfo.
 
         事务成功率
 
@@ -1655,7 +1655,7 @@ class PerformanceInfo:
 
     @transactional_success_rate.setter
     def transactional_success_rate(self, transactional_success_rate):
-        """Sets the transactional_success_rate of this PerformanceInfo.
+        r"""Sets the transactional_success_rate of this PerformanceInfo.
 
         事务成功率
 
@@ -1666,7 +1666,7 @@ class PerformanceInfo:
 
     @property
     def transactional_tps(self):
-        """Gets the transactional_tps of this PerformanceInfo.
+        r"""Gets the transactional_tps of this PerformanceInfo.
 
         自定义事务tps
 
@@ -1677,7 +1677,7 @@ class PerformanceInfo:
 
     @transactional_tps.setter
     def transactional_tps(self, transactional_tps):
-        """Sets the transactional_tps of this PerformanceInfo.
+        r"""Sets the transactional_tps of this PerformanceInfo.
 
         自定义事务tps
 
@@ -1688,7 +1688,7 @@ class PerformanceInfo:
 
     @property
     def transactional_tps_success(self):
-        """Gets the transactional_tps_success of this PerformanceInfo.
+        r"""Gets the transactional_tps_success of this PerformanceInfo.
 
         自定义事务成功率
 
@@ -1699,7 +1699,7 @@ class PerformanceInfo:
 
     @transactional_tps_success.setter
     def transactional_tps_success(self, transactional_tps_success):
-        """Sets the transactional_tps_success of this PerformanceInfo.
+        r"""Sets the transactional_tps_success of this PerformanceInfo.
 
         自定义事务成功率
 
@@ -1710,7 +1710,7 @@ class PerformanceInfo:
 
     @property
     def transactions(self):
-        """Gets the transactions of this PerformanceInfo.
+        r"""Gets the transactions of this PerformanceInfo.
 
         事务数
 
@@ -1721,7 +1721,7 @@ class PerformanceInfo:
 
     @transactions.setter
     def transactions(self, transactions):
-        """Sets the transactions of this PerformanceInfo.
+        r"""Sets the transactions of this PerformanceInfo.
 
         事务数
 
@@ -1732,7 +1732,7 @@ class PerformanceInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PerformanceInfo.
+        r"""Gets the update_time of this PerformanceInfo.
 
         更新时间
 
@@ -1743,7 +1743,7 @@ class PerformanceInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PerformanceInfo.
+        r"""Sets the update_time of this PerformanceInfo.
 
         更新时间
 
@@ -1754,7 +1754,7 @@ class PerformanceInfo:
 
     @property
     def vum(self):
-        """Gets the vum of this PerformanceInfo.
+        r"""Gets the vum of this PerformanceInfo.
 
         分钟数*并发数
 
@@ -1765,7 +1765,7 @@ class PerformanceInfo:
 
     @vum.setter
     def vum(self, vum):
-        """Sets the vum of this PerformanceInfo.
+        r"""Sets the vum of this PerformanceInfo.
 
         分钟数*并发数
 

@@ -35,7 +35,7 @@ class ControlOperation:
     }
 
     def __init__(self, operation_control_status_id=None, operation_type=None, status=None, message=None, start_time=None, end_time=None):
-        """ControlOperation
+        r"""ControlOperation
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ControlOperation:
 
     @property
     def operation_control_status_id(self):
-        """Gets the operation_control_status_id of this ControlOperation.
+        r"""Gets the operation_control_status_id of this ControlOperation.
 
         本次操作控制策略的ID。
 
@@ -89,7 +89,7 @@ class ControlOperation:
 
     @operation_control_status_id.setter
     def operation_control_status_id(self, operation_control_status_id):
-        """Sets the operation_control_status_id of this ControlOperation.
+        r"""Sets the operation_control_status_id of this ControlOperation.
 
         本次操作控制策略的ID。
 
@@ -100,7 +100,7 @@ class ControlOperation:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ControlOperation.
+        r"""Gets the operation_type of this ControlOperation.
 
         操作类型，启用控制策略或禁用控制策略。
 
@@ -111,7 +111,7 @@ class ControlOperation:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ControlOperation.
+        r"""Sets the operation_type of this ControlOperation.
 
         操作类型，启用控制策略或禁用控制策略。
 
@@ -122,7 +122,7 @@ class ControlOperation:
 
     @property
     def status(self):
-        """Gets the status of this ControlOperation.
+        r"""Gets the status of this ControlOperation.
 
         控制策略实施的状态 SUCCEEDED | FAILED | IN_PROGRESS。
 
@@ -133,7 +133,7 @@ class ControlOperation:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ControlOperation.
+        r"""Sets the status of this ControlOperation.
 
         控制策略实施的状态 SUCCEEDED | FAILED | IN_PROGRESS。
 
@@ -144,7 +144,7 @@ class ControlOperation:
 
     @property
     def message(self):
-        """Gets the message of this ControlOperation.
+        r"""Gets the message of this ControlOperation.
 
         控制策略实施失败的错误信息。
 
@@ -155,7 +155,7 @@ class ControlOperation:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ControlOperation.
+        r"""Sets the message of this ControlOperation.
 
         控制策略实施失败的错误信息。
 
@@ -166,7 +166,7 @@ class ControlOperation:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ControlOperation.
+        r"""Gets the start_time of this ControlOperation.
 
         操作开始的时间。
 
@@ -177,7 +177,7 @@ class ControlOperation:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ControlOperation.
+        r"""Sets the start_time of this ControlOperation.
 
         操作开始的时间。
 
@@ -188,7 +188,7 @@ class ControlOperation:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ControlOperation.
+        r"""Gets the end_time of this ControlOperation.
 
         操作结束的时间。
 
@@ -199,7 +199,7 @@ class ControlOperation:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ControlOperation.
+        r"""Sets the end_time of this ControlOperation.
 
         操作结束的时间。
 

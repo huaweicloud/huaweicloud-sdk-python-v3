@@ -47,7 +47,7 @@ class HealthReportInspectionScore:
     }
 
     def __init__(self, score=None, critical=None, medium=None, light=None, cpu_usage=None, mem_usage=None, space_usage=None, connection_rate=None, iops_usage=None, thread_running=None, slow_sql_total=None, lost_points_detail_list=None):
-        """HealthReportInspectionScore
+        r"""HealthReportInspectionScore
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class HealthReportInspectionScore:
 
     @property
     def score(self):
-        """Gets the score of this HealthReportInspectionScore.
+        r"""Gets the score of this HealthReportInspectionScore.
 
         得分。
 
@@ -119,7 +119,7 @@ class HealthReportInspectionScore:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this HealthReportInspectionScore.
+        r"""Sets the score of this HealthReportInspectionScore.
 
         得分。
 
@@ -130,7 +130,7 @@ class HealthReportInspectionScore:
 
     @property
     def critical(self):
-        """Gets the critical of this HealthReportInspectionScore.
+        r"""Gets the critical of this HealthReportInspectionScore.
 
         严重事件。
 
@@ -141,7 +141,7 @@ class HealthReportInspectionScore:
 
     @critical.setter
     def critical(self, critical):
-        """Sets the critical of this HealthReportInspectionScore.
+        r"""Sets the critical of this HealthReportInspectionScore.
 
         严重事件。
 
@@ -152,7 +152,7 @@ class HealthReportInspectionScore:
 
     @property
     def medium(self):
-        """Gets the medium of this HealthReportInspectionScore.
+        r"""Gets the medium of this HealthReportInspectionScore.
 
         警告事件。
 
@@ -163,7 +163,7 @@ class HealthReportInspectionScore:
 
     @medium.setter
     def medium(self, medium):
-        """Sets the medium of this HealthReportInspectionScore.
+        r"""Sets the medium of this HealthReportInspectionScore.
 
         警告事件。
 
@@ -174,7 +174,7 @@ class HealthReportInspectionScore:
 
     @property
     def light(self):
-        """Gets the light of this HealthReportInspectionScore.
+        r"""Gets the light of this HealthReportInspectionScore.
 
         优化事件。
 
@@ -185,7 +185,7 @@ class HealthReportInspectionScore:
 
     @light.setter
     def light(self, light):
-        """Sets the light of this HealthReportInspectionScore.
+        r"""Sets the light of this HealthReportInspectionScore.
 
         优化事件。
 
@@ -196,7 +196,7 @@ class HealthReportInspectionScore:
 
     @property
     def cpu_usage(self):
-        """Gets the cpu_usage of this HealthReportInspectionScore.
+        r"""Gets the cpu_usage of this HealthReportInspectionScore.
 
         CPU使用率。
 
@@ -207,7 +207,7 @@ class HealthReportInspectionScore:
 
     @cpu_usage.setter
     def cpu_usage(self, cpu_usage):
-        """Sets the cpu_usage of this HealthReportInspectionScore.
+        r"""Sets the cpu_usage of this HealthReportInspectionScore.
 
         CPU使用率。
 
@@ -218,7 +218,7 @@ class HealthReportInspectionScore:
 
     @property
     def mem_usage(self):
-        """Gets the mem_usage of this HealthReportInspectionScore.
+        r"""Gets the mem_usage of this HealthReportInspectionScore.
 
         内存使用率。
 
@@ -229,7 +229,7 @@ class HealthReportInspectionScore:
 
     @mem_usage.setter
     def mem_usage(self, mem_usage):
-        """Sets the mem_usage of this HealthReportInspectionScore.
+        r"""Sets the mem_usage of this HealthReportInspectionScore.
 
         内存使用率。
 
@@ -240,7 +240,7 @@ class HealthReportInspectionScore:
 
     @property
     def space_usage(self):
-        """Gets the space_usage of this HealthReportInspectionScore.
+        r"""Gets the space_usage of this HealthReportInspectionScore.
 
         空间使用率。
 
@@ -251,7 +251,7 @@ class HealthReportInspectionScore:
 
     @space_usage.setter
     def space_usage(self, space_usage):
-        """Sets the space_usage of this HealthReportInspectionScore.
+        r"""Sets the space_usage of this HealthReportInspectionScore.
 
         空间使用率。
 
@@ -262,7 +262,7 @@ class HealthReportInspectionScore:
 
     @property
     def connection_rate(self):
-        """Gets the connection_rate of this HealthReportInspectionScore.
+        r"""Gets the connection_rate of this HealthReportInspectionScore.
 
         连接使用率。
 
@@ -273,7 +273,7 @@ class HealthReportInspectionScore:
 
     @connection_rate.setter
     def connection_rate(self, connection_rate):
-        """Sets the connection_rate of this HealthReportInspectionScore.
+        r"""Sets the connection_rate of this HealthReportInspectionScore.
 
         连接使用率。
 
@@ -284,7 +284,7 @@ class HealthReportInspectionScore:
 
     @property
     def iops_usage(self):
-        """Gets the iops_usage of this HealthReportInspectionScore.
+        r"""Gets the iops_usage of this HealthReportInspectionScore.
 
         IOPS使用率。
 
@@ -295,7 +295,7 @@ class HealthReportInspectionScore:
 
     @iops_usage.setter
     def iops_usage(self, iops_usage):
-        """Sets the iops_usage of this HealthReportInspectionScore.
+        r"""Sets the iops_usage of this HealthReportInspectionScore.
 
         IOPS使用率。
 
@@ -306,7 +306,7 @@ class HealthReportInspectionScore:
 
     @property
     def thread_running(self):
-        """Gets the thread_running of this HealthReportInspectionScore.
+        r"""Gets the thread_running of this HealthReportInspectionScore.
 
         活跃会话。
 
@@ -317,7 +317,7 @@ class HealthReportInspectionScore:
 
     @thread_running.setter
     def thread_running(self, thread_running):
-        """Sets the thread_running of this HealthReportInspectionScore.
+        r"""Sets the thread_running of this HealthReportInspectionScore.
 
         活跃会话。
 
@@ -328,7 +328,7 @@ class HealthReportInspectionScore:
 
     @property
     def slow_sql_total(self):
-        """Gets the slow_sql_total of this HealthReportInspectionScore.
+        r"""Gets the slow_sql_total of this HealthReportInspectionScore.
 
         慢SQL数量。
 
@@ -339,7 +339,7 @@ class HealthReportInspectionScore:
 
     @slow_sql_total.setter
     def slow_sql_total(self, slow_sql_total):
-        """Sets the slow_sql_total of this HealthReportInspectionScore.
+        r"""Sets the slow_sql_total of this HealthReportInspectionScore.
 
         慢SQL数量。
 
@@ -350,7 +350,7 @@ class HealthReportInspectionScore:
 
     @property
     def lost_points_detail_list(self):
-        """Gets the lost_points_detail_list of this HealthReportInspectionScore.
+        r"""Gets the lost_points_detail_list of this HealthReportInspectionScore.
 
         扣分详情。
 
@@ -361,7 +361,7 @@ class HealthReportInspectionScore:
 
     @lost_points_detail_list.setter
     def lost_points_detail_list(self, lost_points_detail_list):
-        """Sets the lost_points_detail_list of this HealthReportInspectionScore.
+        r"""Sets the lost_points_detail_list of this HealthReportInspectionScore.
 
         扣分详情。
 

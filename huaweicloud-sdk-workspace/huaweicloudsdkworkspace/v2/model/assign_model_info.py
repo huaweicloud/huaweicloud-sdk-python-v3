@@ -33,7 +33,7 @@ class AssignModelInfo:
     }
 
     def __init__(self, assign_dimension=None, priority_strategy=None, desktop_assigin_user_num=None, user_assigin_desktop_num=None, desktop_name_policy_id=None):
-        """AssignModelInfo
+        r"""AssignModelInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AssignModelInfo:
 
     @property
     def assign_dimension(self):
-        """Gets the assign_dimension of this AssignModelInfo.
+        r"""Gets the assign_dimension of this AssignModelInfo.
 
         分配的维度，当前支持  - USER: “用户为维度” - DESKTOP:“桌面为维度”两种。
 
@@ -82,7 +82,7 @@ class AssignModelInfo:
 
     @assign_dimension.setter
     def assign_dimension(self, assign_dimension):
-        """Sets the assign_dimension of this AssignModelInfo.
+        r"""Sets the assign_dimension of this AssignModelInfo.
 
         分配的维度，当前支持  - USER: “用户为维度” - DESKTOP:“桌面为维度”两种。
 
@@ -93,7 +93,7 @@ class AssignModelInfo:
 
     @property
     def priority_strategy(self):
-        """Gets the priority_strategy of this AssignModelInfo.
+        r"""Gets the priority_strategy of this AssignModelInfo.
 
         优先分配的策略，策略名为规则为{维度}_{子策略}  - USER_NO_DESKTOP:  用户维度-无桌面 - USER_FIXED_DESKTOP_NUM: 用户维度-桌面个数固定 - DESKTOP_ASSIGN_USER_PRIORITY： 桌面维度-用户优先 - DESKTOP_ASSIGN_FIXED_USER： 桌面维度-固定用户 - DESKTOP_ASSIGN_USERS_OR_GROUPS： 桌面维度-为每台桌面分配所选的所有用户（组） - FIXED_RELATION: 使用参数中的固定分配关系
 
@@ -104,7 +104,7 @@ class AssignModelInfo:
 
     @priority_strategy.setter
     def priority_strategy(self, priority_strategy):
-        """Sets the priority_strategy of this AssignModelInfo.
+        r"""Sets the priority_strategy of this AssignModelInfo.
 
         优先分配的策略，策略名为规则为{维度}_{子策略}  - USER_NO_DESKTOP:  用户维度-无桌面 - USER_FIXED_DESKTOP_NUM: 用户维度-桌面个数固定 - DESKTOP_ASSIGN_USER_PRIORITY： 桌面维度-用户优先 - DESKTOP_ASSIGN_FIXED_USER： 桌面维度-固定用户 - DESKTOP_ASSIGN_USERS_OR_GROUPS： 桌面维度-为每台桌面分配所选的所有用户（组） - FIXED_RELATION: 使用参数中的固定分配关系
 
@@ -115,7 +115,7 @@ class AssignModelInfo:
 
     @property
     def desktop_assigin_user_num(self):
-        """Gets the desktop_assigin_user_num of this AssignModelInfo.
+        r"""Gets the desktop_assigin_user_num of this AssignModelInfo.
 
         每个桌面自动分配的用户数，当子策略为 DESKTOP_ASSIGN_FIXED_USER 必填。
 
@@ -126,7 +126,7 @@ class AssignModelInfo:
 
     @desktop_assigin_user_num.setter
     def desktop_assigin_user_num(self, desktop_assigin_user_num):
-        """Sets the desktop_assigin_user_num of this AssignModelInfo.
+        r"""Sets the desktop_assigin_user_num of this AssignModelInfo.
 
         每个桌面自动分配的用户数，当子策略为 DESKTOP_ASSIGN_FIXED_USER 必填。
 
@@ -137,7 +137,7 @@ class AssignModelInfo:
 
     @property
     def user_assigin_desktop_num(self):
-        """Gets the user_assigin_desktop_num of this AssignModelInfo.
+        r"""Gets the user_assigin_desktop_num of this AssignModelInfo.
 
         每个用户自动分配桌面数，当子策略为 USER_NO_DESKTOP、USER_FIXED_DESKTOP_NUM必填。
 
@@ -148,7 +148,7 @@ class AssignModelInfo:
 
     @user_assigin_desktop_num.setter
     def user_assigin_desktop_num(self, user_assigin_desktop_num):
-        """Sets the user_assigin_desktop_num of this AssignModelInfo.
+        r"""Sets the user_assigin_desktop_num of this AssignModelInfo.
 
         每个用户自动分配桌面数，当子策略为 USER_NO_DESKTOP、USER_FIXED_DESKTOP_NUM必填。
 
@@ -159,7 +159,7 @@ class AssignModelInfo:
 
     @property
     def desktop_name_policy_id(self):
-        """Gets the desktop_name_policy_id of this AssignModelInfo.
+        r"""Gets the desktop_name_policy_id of this AssignModelInfo.
 
         策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
 
@@ -170,7 +170,7 @@ class AssignModelInfo:
 
     @desktop_name_policy_id.setter
     def desktop_name_policy_id(self, desktop_name_policy_id):
-        """Sets the desktop_name_policy_id of this AssignModelInfo.
+        r"""Sets the desktop_name_policy_id of this AssignModelInfo.
 
         策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
 

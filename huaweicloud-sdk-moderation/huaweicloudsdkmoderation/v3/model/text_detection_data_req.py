@@ -27,7 +27,7 @@ class TextDetectionDataReq:
     }
 
     def __init__(self, text=None, language=None):
-        """TextDetectionDataReq
+        r"""TextDetectionDataReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TextDetectionDataReq:
 
     @property
     def text(self):
-        """Gets the text of this TextDetectionDataReq.
+        r"""Gets the text of this TextDetectionDataReq.
 
         待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过10000个字符时，只检测前10000个字符。
 
@@ -60,7 +60,7 @@ class TextDetectionDataReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this TextDetectionDataReq.
+        r"""Sets the text of this TextDetectionDataReq.
 
         待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过10000个字符时，只检测前10000个字符。
 
@@ -71,7 +71,7 @@ class TextDetectionDataReq:
 
     @property
     def language(self):
-        """Gets the language of this TextDetectionDataReq.
+        r"""Gets the language of this TextDetectionDataReq.
 
         支持检测的文本语言
 
@@ -82,7 +82,7 @@ class TextDetectionDataReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this TextDetectionDataReq.
+        r"""Sets the language of this TextDetectionDataReq.
 
         支持检测的文本语言
 

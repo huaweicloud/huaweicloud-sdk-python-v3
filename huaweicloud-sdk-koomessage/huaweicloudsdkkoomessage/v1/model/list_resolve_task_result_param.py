@@ -49,7 +49,7 @@ class ListResolveTaskResultParam:
     }
 
     def __init__(self, cust_flag=None, cust_id=None, dync_params=None, custom_url=None, aim_url=None, aim_code=None, ext_data=None, result_code=None, error_message=None, generate_date=None, expire_date=None, resolved_date=None, resolved_times=None):
-        """ListResolveTaskResultParam
+        r"""ListResolveTaskResultParam
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListResolveTaskResultParam:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this ListResolveTaskResultParam.
+        r"""Gets the cust_flag of this ListResolveTaskResultParam.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -138,7 +138,7 @@ class ListResolveTaskResultParam:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this ListResolveTaskResultParam.
+        r"""Sets the cust_flag of this ListResolveTaskResultParam.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -149,7 +149,7 @@ class ListResolveTaskResultParam:
 
     @property
     def cust_id(self):
-        """Gets the cust_id of this ListResolveTaskResultParam.
+        r"""Gets the cust_id of this ListResolveTaskResultParam.
 
         租户ID。
 
@@ -160,7 +160,7 @@ class ListResolveTaskResultParam:
 
     @cust_id.setter
     def cust_id(self, cust_id):
-        """Sets the cust_id of this ListResolveTaskResultParam.
+        r"""Sets the cust_id of this ListResolveTaskResultParam.
 
         租户ID。
 
@@ -171,7 +171,7 @@ class ListResolveTaskResultParam:
 
     @property
     def dync_params(self):
-        """Gets the dync_params of this ListResolveTaskResultParam.
+        r"""Gets the dync_params of this ListResolveTaskResultParam.
 
         动态参数。
 
@@ -182,7 +182,7 @@ class ListResolveTaskResultParam:
 
     @dync_params.setter
     def dync_params(self, dync_params):
-        """Sets the dync_params of this ListResolveTaskResultParam.
+        r"""Sets the dync_params of this ListResolveTaskResultParam.
 
         动态参数。
 
@@ -193,7 +193,7 @@ class ListResolveTaskResultParam:
 
     @property
     def custom_url(self):
-        """Gets the custom_url of this ListResolveTaskResultParam.
+        r"""Gets the custom_url of this ListResolveTaskResultParam.
 
         自定义跳转地址。 > - 未填时，终端用户点击访问短信原文中的短链，跳转智能信息H5页 > - 已填时，终端用户点击访问短信原文中的短链，跳转客户填写的链接落地页，填写时必须为http或https作为前缀 
 
@@ -204,7 +204,7 @@ class ListResolveTaskResultParam:
 
     @custom_url.setter
     def custom_url(self, custom_url):
-        """Sets the custom_url of this ListResolveTaskResultParam.
+        r"""Sets the custom_url of this ListResolveTaskResultParam.
 
         自定义跳转地址。 > - 未填时，终端用户点击访问短信原文中的短链，跳转智能信息H5页 > - 已填时，终端用户点击访问短信原文中的短链，跳转客户填写的链接落地页，填写时必须为http或https作为前缀 
 
@@ -215,7 +215,7 @@ class ListResolveTaskResultParam:
 
     @property
     def aim_url(self):
-        """Gets the aim_url of this ListResolveTaskResultParam.
+        r"""Gets the aim_url of this ListResolveTaskResultParam.
 
         完整的短链连接地址，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。样例：km2g.cn/PDiWqc。
 
@@ -226,7 +226,7 @@ class ListResolveTaskResultParam:
 
     @aim_url.setter
     def aim_url(self, aim_url):
-        """Sets the aim_url of this ListResolveTaskResultParam.
+        r"""Sets the aim_url of this ListResolveTaskResultParam.
 
         完整的短链连接地址，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。样例：km2g.cn/PDiWqc。
 
@@ -237,7 +237,7 @@ class ListResolveTaskResultParam:
 
     @property
     def aim_code(self):
-        """Gets the aim_code of this ListResolveTaskResultParam.
+        r"""Gets the aim_code of this ListResolveTaskResultParam.
 
         智能信息编码。样例：PDiWqc。
 
@@ -248,7 +248,7 @@ class ListResolveTaskResultParam:
 
     @aim_code.setter
     def aim_code(self, aim_code):
-        """Sets the aim_code of this ListResolveTaskResultParam.
+        r"""Sets the aim_code of this ListResolveTaskResultParam.
 
         智能信息编码。样例：PDiWqc。
 
@@ -259,7 +259,7 @@ class ListResolveTaskResultParam:
 
     @property
     def ext_data(self):
-        """Gets the ext_data of this ListResolveTaskResultParam.
+        r"""Gets the ext_data of this ListResolveTaskResultParam.
 
         自定义扩展参数。  >预留字段。 
 
@@ -270,7 +270,7 @@ class ListResolveTaskResultParam:
 
     @ext_data.setter
     def ext_data(self, ext_data):
-        """Sets the ext_data of this ListResolveTaskResultParam.
+        r"""Sets the ext_data of this ListResolveTaskResultParam.
 
         自定义扩展参数。  >预留字段。 
 
@@ -281,7 +281,7 @@ class ListResolveTaskResultParam:
 
     @property
     def result_code(self):
-        """Gets the result_code of this ListResolveTaskResultParam.
+        r"""Gets the result_code of this ListResolveTaskResultParam.
 
         短链申请结果返回码。 - 0：成功 - 非0：失败，具体请参见错误码 
 
@@ -292,7 +292,7 @@ class ListResolveTaskResultParam:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ListResolveTaskResultParam.
+        r"""Sets the result_code of this ListResolveTaskResultParam.
 
         短链申请结果返回码。 - 0：成功 - 非0：失败，具体请参见错误码 
 
@@ -303,7 +303,7 @@ class ListResolveTaskResultParam:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListResolveTaskResultParam.
+        r"""Gets the error_message of this ListResolveTaskResultParam.
 
         短链申请结果错误描述。 
 
@@ -314,7 +314,7 @@ class ListResolveTaskResultParam:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListResolveTaskResultParam.
+        r"""Sets the error_message of this ListResolveTaskResultParam.
 
         短链申请结果错误描述。 
 
@@ -325,7 +325,7 @@ class ListResolveTaskResultParam:
 
     @property
     def generate_date(self):
-        """Gets the generate_date of this ListResolveTaskResultParam.
+        r"""Gets the generate_date of this ListResolveTaskResultParam.
 
         短链生成时间。样例为：2019-10-12T07:20:50。
 
@@ -336,7 +336,7 @@ class ListResolveTaskResultParam:
 
     @generate_date.setter
     def generate_date(self, generate_date):
-        """Sets the generate_date of this ListResolveTaskResultParam.
+        r"""Sets the generate_date of this ListResolveTaskResultParam.
 
         短链生成时间。样例为：2019-10-12T07:20:50。
 
@@ -347,7 +347,7 @@ class ListResolveTaskResultParam:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this ListResolveTaskResultParam.
+        r"""Gets the expire_date of this ListResolveTaskResultParam.
 
         短链到期时间。样例为：2019-10-12T07:20:50。
 
@@ -358,7 +358,7 @@ class ListResolveTaskResultParam:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this ListResolveTaskResultParam.
+        r"""Sets the expire_date of this ListResolveTaskResultParam.
 
         短链到期时间。样例为：2019-10-12T07:20:50。
 
@@ -369,7 +369,7 @@ class ListResolveTaskResultParam:
 
     @property
     def resolved_date(self):
-        """Gets the resolved_date of this ListResolveTaskResultParam.
+        r"""Gets the resolved_date of this ListResolveTaskResultParam.
 
         解析时间。样例为：2019-10-12T07:20:50。 
 
@@ -380,7 +380,7 @@ class ListResolveTaskResultParam:
 
     @resolved_date.setter
     def resolved_date(self, resolved_date):
-        """Sets the resolved_date of this ListResolveTaskResultParam.
+        r"""Sets the resolved_date of this ListResolveTaskResultParam.
 
         解析时间。样例为：2019-10-12T07:20:50。 
 
@@ -391,7 +391,7 @@ class ListResolveTaskResultParam:
 
     @property
     def resolved_times(self):
-        """Gets the resolved_times of this ListResolveTaskResultParam.
+        r"""Gets the resolved_times of this ListResolveTaskResultParam.
 
         短链实际解析次数。  > 预留字段。 
 
@@ -402,7 +402,7 @@ class ListResolveTaskResultParam:
 
     @resolved_times.setter
     def resolved_times(self, resolved_times):
-        """Sets the resolved_times of this ListResolveTaskResultParam.
+        r"""Sets the resolved_times of this ListResolveTaskResultParam.
 
         短链实际解析次数。  > 预留字段。 
 

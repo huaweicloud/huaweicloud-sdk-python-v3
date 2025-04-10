@@ -62,7 +62,7 @@ class GetBucketMetadataResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, x_obs_fs_file_interface=None, x_obs_version=None, access_control_allow_origin=None, access_control_allow_methods=None, x_obs_bucket_location=None, connection=None, x_obs_epid=None, date=None, access_control_allow_headers=None, access_control_expose_headers=None, e_tag=None, x_obs_storage_class=None, x_obs_az_redundancy=None, content_length=None, access_control_max_age=None, x_obs_ies_location=None):
-        """GetBucketMetadataResponse
+        r"""GetBucketMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -165,7 +165,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_id_2 of this GetBucketMetadataResponse.
 
         :return: The x_obs_id_2 of this GetBucketMetadataResponse.
         :rtype: str
@@ -174,7 +174,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_id_2 of this GetBucketMetadataResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this GetBucketMetadataResponse.
         :type x_obs_id_2: str
@@ -183,7 +183,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_request_id of this GetBucketMetadataResponse.
 
         :return: The x_obs_request_id of this GetBucketMetadataResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_request_id of this GetBucketMetadataResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this GetBucketMetadataResponse.
         :type x_obs_request_id: str
@@ -201,7 +201,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_fs_file_interface(self):
-        """Gets the x_obs_fs_file_interface of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_fs_file_interface of this GetBucketMetadataResponse.
 
         :return: The x_obs_fs_file_interface of this GetBucketMetadataResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_fs_file_interface.setter
     def x_obs_fs_file_interface(self, x_obs_fs_file_interface):
-        """Sets the x_obs_fs_file_interface of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_fs_file_interface of this GetBucketMetadataResponse.
 
         :param x_obs_fs_file_interface: The x_obs_fs_file_interface of this GetBucketMetadataResponse.
         :type x_obs_fs_file_interface: str
@@ -219,7 +219,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_version(self):
-        """Gets the x_obs_version of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_version of this GetBucketMetadataResponse.
 
         :return: The x_obs_version of this GetBucketMetadataResponse.
         :rtype: str
@@ -228,7 +228,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_version.setter
     def x_obs_version(self, x_obs_version):
-        """Sets the x_obs_version of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_version of this GetBucketMetadataResponse.
 
         :param x_obs_version: The x_obs_version of this GetBucketMetadataResponse.
         :type x_obs_version: str
@@ -237,7 +237,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def access_control_allow_origin(self):
-        """Gets the access_control_allow_origin of this GetBucketMetadataResponse.
+        r"""Gets the access_control_allow_origin of this GetBucketMetadataResponse.
 
         :return: The access_control_allow_origin of this GetBucketMetadataResponse.
         :rtype: str
@@ -246,7 +246,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @access_control_allow_origin.setter
     def access_control_allow_origin(self, access_control_allow_origin):
-        """Sets the access_control_allow_origin of this GetBucketMetadataResponse.
+        r"""Sets the access_control_allow_origin of this GetBucketMetadataResponse.
 
         :param access_control_allow_origin: The access_control_allow_origin of this GetBucketMetadataResponse.
         :type access_control_allow_origin: str
@@ -255,7 +255,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def access_control_allow_methods(self):
-        """Gets the access_control_allow_methods of this GetBucketMetadataResponse.
+        r"""Gets the access_control_allow_methods of this GetBucketMetadataResponse.
 
         :return: The access_control_allow_methods of this GetBucketMetadataResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @access_control_allow_methods.setter
     def access_control_allow_methods(self, access_control_allow_methods):
-        """Sets the access_control_allow_methods of this GetBucketMetadataResponse.
+        r"""Sets the access_control_allow_methods of this GetBucketMetadataResponse.
 
         :param access_control_allow_methods: The access_control_allow_methods of this GetBucketMetadataResponse.
         :type access_control_allow_methods: str
@@ -273,7 +273,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_bucket_location(self):
-        """Gets the x_obs_bucket_location of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_bucket_location of this GetBucketMetadataResponse.
 
         :return: The x_obs_bucket_location of this GetBucketMetadataResponse.
         :rtype: str
@@ -282,7 +282,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_bucket_location.setter
     def x_obs_bucket_location(self, x_obs_bucket_location):
-        """Sets the x_obs_bucket_location of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_bucket_location of this GetBucketMetadataResponse.
 
         :param x_obs_bucket_location: The x_obs_bucket_location of this GetBucketMetadataResponse.
         :type x_obs_bucket_location: str
@@ -291,7 +291,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this GetBucketMetadataResponse.
+        r"""Gets the connection of this GetBucketMetadataResponse.
 
         :return: The connection of this GetBucketMetadataResponse.
         :rtype: str
@@ -300,7 +300,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this GetBucketMetadataResponse.
+        r"""Sets the connection of this GetBucketMetadataResponse.
 
         :param connection: The connection of this GetBucketMetadataResponse.
         :type connection: str
@@ -309,7 +309,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_epid(self):
-        """Gets the x_obs_epid of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_epid of this GetBucketMetadataResponse.
 
         :return: The x_obs_epid of this GetBucketMetadataResponse.
         :rtype: str
@@ -318,7 +318,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_epid.setter
     def x_obs_epid(self, x_obs_epid):
-        """Sets the x_obs_epid of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_epid of this GetBucketMetadataResponse.
 
         :param x_obs_epid: The x_obs_epid of this GetBucketMetadataResponse.
         :type x_obs_epid: str
@@ -327,7 +327,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this GetBucketMetadataResponse.
+        r"""Gets the date of this GetBucketMetadataResponse.
 
         :return: The date of this GetBucketMetadataResponse.
         :rtype: str
@@ -336,7 +336,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetBucketMetadataResponse.
+        r"""Sets the date of this GetBucketMetadataResponse.
 
         :param date: The date of this GetBucketMetadataResponse.
         :type date: str
@@ -345,7 +345,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def access_control_allow_headers(self):
-        """Gets the access_control_allow_headers of this GetBucketMetadataResponse.
+        r"""Gets the access_control_allow_headers of this GetBucketMetadataResponse.
 
         :return: The access_control_allow_headers of this GetBucketMetadataResponse.
         :rtype: str
@@ -354,7 +354,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @access_control_allow_headers.setter
     def access_control_allow_headers(self, access_control_allow_headers):
-        """Sets the access_control_allow_headers of this GetBucketMetadataResponse.
+        r"""Sets the access_control_allow_headers of this GetBucketMetadataResponse.
 
         :param access_control_allow_headers: The access_control_allow_headers of this GetBucketMetadataResponse.
         :type access_control_allow_headers: str
@@ -363,7 +363,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def access_control_expose_headers(self):
-        """Gets the access_control_expose_headers of this GetBucketMetadataResponse.
+        r"""Gets the access_control_expose_headers of this GetBucketMetadataResponse.
 
         :return: The access_control_expose_headers of this GetBucketMetadataResponse.
         :rtype: str
@@ -372,7 +372,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @access_control_expose_headers.setter
     def access_control_expose_headers(self, access_control_expose_headers):
-        """Sets the access_control_expose_headers of this GetBucketMetadataResponse.
+        r"""Sets the access_control_expose_headers of this GetBucketMetadataResponse.
 
         :param access_control_expose_headers: The access_control_expose_headers of this GetBucketMetadataResponse.
         :type access_control_expose_headers: str
@@ -381,7 +381,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this GetBucketMetadataResponse.
+        r"""Gets the e_tag of this GetBucketMetadataResponse.
 
         :return: The e_tag of this GetBucketMetadataResponse.
         :rtype: str
@@ -390,7 +390,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this GetBucketMetadataResponse.
+        r"""Sets the e_tag of this GetBucketMetadataResponse.
 
         :param e_tag: The e_tag of this GetBucketMetadataResponse.
         :type e_tag: str
@@ -399,7 +399,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_storage_class of this GetBucketMetadataResponse.
 
         :return: The x_obs_storage_class of this GetBucketMetadataResponse.
         :rtype: str
@@ -408,7 +408,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_storage_class of this GetBucketMetadataResponse.
 
         :param x_obs_storage_class: The x_obs_storage_class of this GetBucketMetadataResponse.
         :type x_obs_storage_class: str
@@ -417,7 +417,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_az_redundancy(self):
-        """Gets the x_obs_az_redundancy of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_az_redundancy of this GetBucketMetadataResponse.
 
         :return: The x_obs_az_redundancy of this GetBucketMetadataResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_az_redundancy.setter
     def x_obs_az_redundancy(self, x_obs_az_redundancy):
-        """Sets the x_obs_az_redundancy of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_az_redundancy of this GetBucketMetadataResponse.
 
         :param x_obs_az_redundancy: The x_obs_az_redundancy of this GetBucketMetadataResponse.
         :type x_obs_az_redundancy: str
@@ -435,7 +435,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this GetBucketMetadataResponse.
+        r"""Gets the content_length of this GetBucketMetadataResponse.
 
         :return: The content_length of this GetBucketMetadataResponse.
         :rtype: str
@@ -444,7 +444,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this GetBucketMetadataResponse.
+        r"""Sets the content_length of this GetBucketMetadataResponse.
 
         :param content_length: The content_length of this GetBucketMetadataResponse.
         :type content_length: str
@@ -453,7 +453,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def access_control_max_age(self):
-        """Gets the access_control_max_age of this GetBucketMetadataResponse.
+        r"""Gets the access_control_max_age of this GetBucketMetadataResponse.
 
         :return: The access_control_max_age of this GetBucketMetadataResponse.
         :rtype: int
@@ -462,7 +462,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @access_control_max_age.setter
     def access_control_max_age(self, access_control_max_age):
-        """Sets the access_control_max_age of this GetBucketMetadataResponse.
+        r"""Sets the access_control_max_age of this GetBucketMetadataResponse.
 
         :param access_control_max_age: The access_control_max_age of this GetBucketMetadataResponse.
         :type access_control_max_age: int
@@ -471,7 +471,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @property
     def x_obs_ies_location(self):
-        """Gets the x_obs_ies_location of this GetBucketMetadataResponse.
+        r"""Gets the x_obs_ies_location of this GetBucketMetadataResponse.
 
         :return: The x_obs_ies_location of this GetBucketMetadataResponse.
         :rtype: str
@@ -480,7 +480,7 @@ class GetBucketMetadataResponse(SdkResponse):
 
     @x_obs_ies_location.setter
     def x_obs_ies_location(self, x_obs_ies_location):
-        """Sets the x_obs_ies_location of this GetBucketMetadataResponse.
+        r"""Sets the x_obs_ies_location of this GetBucketMetadataResponse.
 
         :param x_obs_ies_location: The x_obs_ies_location of this GetBucketMetadataResponse.
         :type x_obs_ies_location: str

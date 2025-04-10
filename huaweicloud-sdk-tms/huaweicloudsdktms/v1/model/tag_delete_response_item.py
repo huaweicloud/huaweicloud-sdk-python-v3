@@ -31,7 +31,7 @@ class TagDeleteResponseItem:
     }
 
     def __init__(self, resource_id=None, resource_type=None, error_code=None, error_msg=None):
-        """TagDeleteResponseItem
+        r"""TagDeleteResponseItem
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TagDeleteResponseItem:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TagDeleteResponseItem.
+        r"""Gets the resource_id of this TagDeleteResponseItem.
 
         资源ID。
 
@@ -71,7 +71,7 @@ class TagDeleteResponseItem:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TagDeleteResponseItem.
+        r"""Sets the resource_id of this TagDeleteResponseItem.
 
         资源ID。
 
@@ -82,7 +82,7 @@ class TagDeleteResponseItem:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this TagDeleteResponseItem.
+        r"""Gets the resource_type of this TagDeleteResponseItem.
 
         资源类型。
 
@@ -93,7 +93,7 @@ class TagDeleteResponseItem:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this TagDeleteResponseItem.
+        r"""Sets the resource_type of this TagDeleteResponseItem.
 
         资源类型。
 
@@ -104,7 +104,7 @@ class TagDeleteResponseItem:
 
     @property
     def error_code(self):
-        """Gets the error_code of this TagDeleteResponseItem.
+        r"""Gets the error_code of this TagDeleteResponseItem.
 
         错误码
 
@@ -115,7 +115,7 @@ class TagDeleteResponseItem:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this TagDeleteResponseItem.
+        r"""Sets the error_code of this TagDeleteResponseItem.
 
         错误码
 
@@ -126,7 +126,7 @@ class TagDeleteResponseItem:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this TagDeleteResponseItem.
+        r"""Gets the error_msg of this TagDeleteResponseItem.
 
         错误描述
 
@@ -137,7 +137,7 @@ class TagDeleteResponseItem:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this TagDeleteResponseItem.
+        r"""Sets the error_msg of this TagDeleteResponseItem.
 
         错误描述
 

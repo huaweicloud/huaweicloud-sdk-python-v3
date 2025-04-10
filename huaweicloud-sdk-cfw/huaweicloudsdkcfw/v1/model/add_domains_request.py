@@ -31,7 +31,7 @@ class AddDomainsRequest:
     }
 
     def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None, body=None):
-        """AddDomainsRequest
+        r"""AddDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AddDomainsRequest:
 
     @property
     def set_id(self):
-        """Gets the set_id of this AddDomainsRequest.
+        r"""Gets the set_id of this AddDomainsRequest.
 
         域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -74,7 +74,7 @@ class AddDomainsRequest:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this AddDomainsRequest.
+        r"""Sets the set_id of this AddDomainsRequest.
 
         域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -85,7 +85,7 @@ class AddDomainsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AddDomainsRequest.
+        r"""Gets the enterprise_project_id of this AddDomainsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -96,7 +96,7 @@ class AddDomainsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AddDomainsRequest.
+        r"""Sets the enterprise_project_id of this AddDomainsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -107,7 +107,7 @@ class AddDomainsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this AddDomainsRequest.
+        r"""Gets the fw_instance_id of this AddDomainsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -118,7 +118,7 @@ class AddDomainsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this AddDomainsRequest.
+        r"""Sets the fw_instance_id of this AddDomainsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -129,7 +129,7 @@ class AddDomainsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDomainsRequest.
+        r"""Gets the body of this AddDomainsRequest.
 
         :return: The body of this AddDomainsRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.AddDomainListDto`
@@ -138,7 +138,7 @@ class AddDomainsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDomainsRequest.
+        r"""Sets the body of this AddDomainsRequest.
 
         :param body: The body of this AddDomainsRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.AddDomainListDto`

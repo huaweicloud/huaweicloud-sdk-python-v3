@@ -29,7 +29,7 @@ class UpdateJobResourceOwnerRequestBody:
     }
 
     def __init__(self, new_owner=None, group_name=None, resource_name=None):
-        """UpdateJobResourceOwnerRequestBody
+        r"""UpdateJobResourceOwnerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateJobResourceOwnerRequestBody:
 
     @property
     def new_owner(self):
-        """Gets the new_owner of this UpdateJobResourceOwnerRequestBody.
+        r"""Gets the new_owner of this UpdateJobResourceOwnerRequestBody.
 
         新用户名,只能包含数字、英文字母、下划线和中划线且不能以数字开头,长度在5-32字符之间
 
@@ -66,7 +66,7 @@ class UpdateJobResourceOwnerRequestBody:
 
     @new_owner.setter
     def new_owner(self, new_owner):
-        """Sets the new_owner of this UpdateJobResourceOwnerRequestBody.
+        r"""Sets the new_owner of this UpdateJobResourceOwnerRequestBody.
 
         新用户名,只能包含数字、英文字母、下划线和中划线且不能以数字开头,长度在5-32字符之间
 
@@ -77,7 +77,7 @@ class UpdateJobResourceOwnerRequestBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this UpdateJobResourceOwnerRequestBody.
+        r"""Gets the group_name of this UpdateJobResourceOwnerRequestBody.
 
         组名,名称只能包含数字、英文字母、点、下划线和中划线,长度不能超过64字符
 
@@ -88,7 +88,7 @@ class UpdateJobResourceOwnerRequestBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UpdateJobResourceOwnerRequestBody.
+        r"""Sets the group_name of this UpdateJobResourceOwnerRequestBody.
 
         组名,名称只能包含数字、英文字母、点、下划线和中划线,长度不能超过64字符
 
@@ -99,7 +99,7 @@ class UpdateJobResourceOwnerRequestBody:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this UpdateJobResourceOwnerRequestBody.
+        r"""Gets the resource_name of this UpdateJobResourceOwnerRequestBody.
 
         包名,包名,长度（包含文件后缀）不能超过128个字符
 
@@ -110,7 +110,7 @@ class UpdateJobResourceOwnerRequestBody:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this UpdateJobResourceOwnerRequestBody.
+        r"""Sets the resource_name of this UpdateJobResourceOwnerRequestBody.
 
         包名,包名,长度（包含文件后缀）不能超过128个字符
 

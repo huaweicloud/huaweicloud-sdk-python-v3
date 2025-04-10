@@ -25,7 +25,7 @@ class ListStacksRequest:
     }
 
     def __init__(self, tags=None):
-        """ListStacksRequest
+        r"""ListStacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListStacksRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListStacksRequest.
+        r"""Gets the tags of this ListStacksRequest.
 
         技术栈标签。默认为空值，查询全部。 例如：Java,CPP,GO,Python;可查询多个标签
 
@@ -54,7 +54,7 @@ class ListStacksRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListStacksRequest.
+        r"""Sets the tags of this ListStacksRequest.
 
         技术栈标签。默认为空值，查询全部。 例如：Java,CPP,GO,Python;可查询多个标签
 

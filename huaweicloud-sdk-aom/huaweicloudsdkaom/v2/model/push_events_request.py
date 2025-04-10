@@ -29,7 +29,7 @@ class PushEventsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, action=None, body=None):
-        """PushEventsRequest
+        r"""PushEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PushEventsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PushEventsRequest.
+        r"""Gets the enterprise_project_id of this PushEventsRequest.
 
         告警所属的企业项目id。
 
@@ -68,7 +68,7 @@ class PushEventsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PushEventsRequest.
+        r"""Sets the enterprise_project_id of this PushEventsRequest.
 
         告警所属的企业项目id。
 
@@ -79,7 +79,7 @@ class PushEventsRequest:
 
     @property
     def action(self):
-        """Gets the action of this PushEventsRequest.
+        r"""Gets the action of this PushEventsRequest.
 
         接口请求动作。action=clear代表清除告警，不传或者传其他值默认为上报动作。
 
@@ -90,7 +90,7 @@ class PushEventsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PushEventsRequest.
+        r"""Sets the action of this PushEventsRequest.
 
         接口请求动作。action=clear代表清除告警，不传或者传其他值默认为上报动作。
 
@@ -101,7 +101,7 @@ class PushEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this PushEventsRequest.
+        r"""Gets the body of this PushEventsRequest.
 
         :return: The body of this PushEventsRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.EventList`
@@ -110,7 +110,7 @@ class PushEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PushEventsRequest.
+        r"""Sets the body of this PushEventsRequest.
 
         :param body: The body of this PushEventsRequest.
         :type body: :class:`huaweicloudsdkaom.v2.EventList`

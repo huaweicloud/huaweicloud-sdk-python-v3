@@ -41,7 +41,7 @@ class UserAccountVO:
     }
 
     def __init__(self, id=None, account=None, comment=None, is_transfer=None, privileges=None, password=None, is_set_password=None, roles=None, selected=None):
-        """UserAccountVO
+        r"""UserAccountVO
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class UserAccountVO:
 
     @property
     def id(self):
-        """Gets the id of this UserAccountVO.
+        r"""Gets the id of this UserAccountVO.
 
         用户账户ID。
 
@@ -105,7 +105,7 @@ class UserAccountVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserAccountVO.
+        r"""Sets the id of this UserAccountVO.
 
         用户账户ID。
 
@@ -116,7 +116,7 @@ class UserAccountVO:
 
     @property
     def account(self):
-        """Gets the account of this UserAccountVO.
+        r"""Gets the account of this UserAccountVO.
 
         用户
 
@@ -127,7 +127,7 @@ class UserAccountVO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this UserAccountVO.
+        r"""Sets the account of this UserAccountVO.
 
         用户
 
@@ -138,7 +138,7 @@ class UserAccountVO:
 
     @property
     def comment(self):
-        """Gets the comment of this UserAccountVO.
+        r"""Gets the comment of this UserAccountVO.
 
         说明
 
@@ -149,7 +149,7 @@ class UserAccountVO:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UserAccountVO.
+        r"""Sets the comment of this UserAccountVO.
 
         说明
 
@@ -160,7 +160,7 @@ class UserAccountVO:
 
     @property
     def is_transfer(self):
-        """Gets the is_transfer of this UserAccountVO.
+        r"""Gets the is_transfer of this UserAccountVO.
 
         是否支持迁移
 
@@ -171,7 +171,7 @@ class UserAccountVO:
 
     @is_transfer.setter
     def is_transfer(self, is_transfer):
-        """Sets the is_transfer of this UserAccountVO.
+        r"""Sets the is_transfer of this UserAccountVO.
 
         是否支持迁移
 
@@ -182,7 +182,7 @@ class UserAccountVO:
 
     @property
     def privileges(self):
-        """Gets the privileges of this UserAccountVO.
+        r"""Gets the privileges of this UserAccountVO.
 
         权限列表
 
@@ -193,7 +193,7 @@ class UserAccountVO:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this UserAccountVO.
+        r"""Sets the privileges of this UserAccountVO.
 
         权限列表
 
@@ -204,7 +204,7 @@ class UserAccountVO:
 
     @property
     def password(self):
-        """Gets the password of this UserAccountVO.
+        r"""Gets the password of this UserAccountVO.
 
         密码
 
@@ -215,7 +215,7 @@ class UserAccountVO:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UserAccountVO.
+        r"""Sets the password of this UserAccountVO.
 
         密码
 
@@ -226,7 +226,7 @@ class UserAccountVO:
 
     @property
     def is_set_password(self):
-        """Gets the is_set_password of this UserAccountVO.
+        r"""Gets the is_set_password of this UserAccountVO.
 
         是否重置密码。
 
@@ -237,7 +237,7 @@ class UserAccountVO:
 
     @is_set_password.setter
     def is_set_password(self, is_set_password):
-        """Sets the is_set_password of this UserAccountVO.
+        r"""Sets the is_set_password of this UserAccountVO.
 
         是否重置密码。
 
@@ -248,7 +248,7 @@ class UserAccountVO:
 
     @property
     def roles(self):
-        """Gets the roles of this UserAccountVO.
+        r"""Gets the roles of this UserAccountVO.
 
         角色
 
@@ -259,7 +259,7 @@ class UserAccountVO:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this UserAccountVO.
+        r"""Sets the roles of this UserAccountVO.
 
         角色
 
@@ -270,7 +270,7 @@ class UserAccountVO:
 
     @property
     def selected(self):
-        """Gets the selected of this UserAccountVO.
+        r"""Gets the selected of this UserAccountVO.
 
         是否选择。
 
@@ -281,7 +281,7 @@ class UserAccountVO:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this UserAccountVO.
+        r"""Sets the selected of this UserAccountVO.
 
         是否选择。
 

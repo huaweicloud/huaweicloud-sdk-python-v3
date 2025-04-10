@@ -31,7 +31,7 @@ class UpdateBandwidthPackage:
     }
 
     def __init__(self, name=None, description=None, bandwidth=None, billing_mode=None):
-        """UpdateBandwidthPackage
+        r"""UpdateBandwidthPackage
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateBandwidthPackage:
 
     @property
     def name(self):
-        """Gets the name of this UpdateBandwidthPackage.
+        r"""Gets the name of this UpdateBandwidthPackage.
 
         实例名字。
 
@@ -75,7 +75,7 @@ class UpdateBandwidthPackage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateBandwidthPackage.
+        r"""Sets the name of this UpdateBandwidthPackage.
 
         实例名字。
 
@@ -86,7 +86,7 @@ class UpdateBandwidthPackage:
 
     @property
     def description(self):
-        """Gets the description of this UpdateBandwidthPackage.
+        r"""Gets the description of this UpdateBandwidthPackage.
 
         实例描述。不支持 <>。
 
@@ -97,7 +97,7 @@ class UpdateBandwidthPackage:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateBandwidthPackage.
+        r"""Sets the description of this UpdateBandwidthPackage.
 
         实例描述。不支持 <>。
 
@@ -108,7 +108,7 @@ class UpdateBandwidthPackage:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdateBandwidthPackage.
+        r"""Gets the bandwidth of this UpdateBandwidthPackage.
 
         带宽包实例中的带宽值。
 
@@ -119,7 +119,7 @@ class UpdateBandwidthPackage:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdateBandwidthPackage.
+        r"""Sets the bandwidth of this UpdateBandwidthPackage.
 
         带宽包实例中的带宽值。
 
@@ -130,7 +130,7 @@ class UpdateBandwidthPackage:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this UpdateBandwidthPackage.
+        r"""Gets the billing_mode of this UpdateBandwidthPackage.
 
         带宽包实例在大陆站或国际站的计费方式： - 5：大陆站按95方式计费 - 6：国际站按95方式计费
 
@@ -141,7 +141,7 @@ class UpdateBandwidthPackage:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this UpdateBandwidthPackage.
+        r"""Sets the billing_mode of this UpdateBandwidthPackage.
 
         带宽包实例在大陆站或国际站的计费方式： - 5：大陆站按95方式计费 - 6：国际站按95方式计费
 

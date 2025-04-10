@@ -27,7 +27,7 @@ class SendConfigResponse:
     }
 
     def __init__(self, channel=None, target_list=None):
-        """SendConfigResponse
+        r"""SendConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SendConfigResponse:
 
     @property
     def channel(self):
-        """Gets the channel of this SendConfigResponse.
+        r"""Gets the channel of this SendConfigResponse.
 
         :return: The channel of this SendConfigResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.Channel`
@@ -59,7 +59,7 @@ class SendConfigResponse:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this SendConfigResponse.
+        r"""Sets the channel of this SendConfigResponse.
 
         :param channel: The channel of this SendConfigResponse.
         :type channel: :class:`huaweicloudsdkdris.v1.Channel`
@@ -68,7 +68,7 @@ class SendConfigResponse:
 
     @property
     def target_list(self):
-        """Gets the target_list of this SendConfigResponse.
+        r"""Gets the target_list of this SendConfigResponse.
 
         :return: The target_list of this SendConfigResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.TargetList`
@@ -77,7 +77,7 @@ class SendConfigResponse:
 
     @target_list.setter
     def target_list(self, target_list):
-        """Sets the target_list of this SendConfigResponse.
+        r"""Sets the target_list of this SendConfigResponse.
 
         :param target_list: The target_list of this SendConfigResponse.
         :type target_list: :class:`huaweicloudsdkdris.v1.TargetList`

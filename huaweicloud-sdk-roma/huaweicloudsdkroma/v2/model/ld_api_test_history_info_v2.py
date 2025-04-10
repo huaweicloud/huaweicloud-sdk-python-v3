@@ -41,7 +41,7 @@ class LdApiTestHistoryInfoV2:
     }
 
     def __init__(self, test_status_code=None, test_request=None, test_used_time=None, test_operator=None, test_response=None, test_method=None, test_id=None, test_date=None, ld_api_id=None):
-        """LdApiTestHistoryInfoV2
+        r"""LdApiTestHistoryInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_status_code(self):
-        """Gets the test_status_code of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_status_code of this LdApiTestHistoryInfoV2.
 
         测试返回的状态码
 
@@ -110,7 +110,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_status_code.setter
     def test_status_code(self, test_status_code):
-        """Sets the test_status_code of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_status_code of this LdApiTestHistoryInfoV2.
 
         测试返回的状态码
 
@@ -121,7 +121,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_request(self):
-        """Gets the test_request of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_request of this LdApiTestHistoryInfoV2.
 
         测试的请求内容
 
@@ -132,7 +132,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_request.setter
     def test_request(self, test_request):
-        """Sets the test_request of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_request of this LdApiTestHistoryInfoV2.
 
         测试的请求内容
 
@@ -143,7 +143,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_used_time(self):
-        """Gets the test_used_time of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_used_time of this LdApiTestHistoryInfoV2.
 
         测试耗时
 
@@ -154,7 +154,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_used_time.setter
     def test_used_time(self, test_used_time):
-        """Sets the test_used_time of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_used_time of this LdApiTestHistoryInfoV2.
 
         测试耗时
 
@@ -165,7 +165,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_operator(self):
-        """Gets the test_operator of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_operator of this LdApiTestHistoryInfoV2.
 
         测试者的项目编号
 
@@ -176,7 +176,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_operator.setter
     def test_operator(self, test_operator):
-        """Sets the test_operator of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_operator of this LdApiTestHistoryInfoV2.
 
         测试者的项目编号
 
@@ -187,7 +187,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_response(self):
-        """Gets the test_response of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_response of this LdApiTestHistoryInfoV2.
 
         测试的响应内容
 
@@ -198,7 +198,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_response.setter
     def test_response(self, test_response):
-        """Sets the test_response of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_response of this LdApiTestHistoryInfoV2.
 
         测试的响应内容
 
@@ -209,7 +209,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_method(self):
-        """Gets the test_method of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_method of this LdApiTestHistoryInfoV2.
 
         测试的请求方法
 
@@ -220,7 +220,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_method.setter
     def test_method(self, test_method):
-        """Sets the test_method of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_method of this LdApiTestHistoryInfoV2.
 
         测试的请求方法
 
@@ -231,7 +231,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_id(self):
-        """Gets the test_id of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_id of this LdApiTestHistoryInfoV2.
 
         测试编号
 
@@ -242,7 +242,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_id.setter
     def test_id(self, test_id):
-        """Sets the test_id of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_id of this LdApiTestHistoryInfoV2.
 
         测试编号
 
@@ -253,7 +253,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def test_date(self):
-        """Gets the test_date of this LdApiTestHistoryInfoV2.
+        r"""Gets the test_date of this LdApiTestHistoryInfoV2.
 
         测试时间
 
@@ -264,7 +264,7 @@ class LdApiTestHistoryInfoV2:
 
     @test_date.setter
     def test_date(self, test_date):
-        """Sets the test_date of this LdApiTestHistoryInfoV2.
+        r"""Sets the test_date of this LdApiTestHistoryInfoV2.
 
         测试时间
 
@@ -275,7 +275,7 @@ class LdApiTestHistoryInfoV2:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this LdApiTestHistoryInfoV2.
+        r"""Gets the ld_api_id of this LdApiTestHistoryInfoV2.
 
         后端API编号
 
@@ -286,7 +286,7 @@ class LdApiTestHistoryInfoV2:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this LdApiTestHistoryInfoV2.
+        r"""Sets the ld_api_id of this LdApiTestHistoryInfoV2.
 
         后端API编号
 

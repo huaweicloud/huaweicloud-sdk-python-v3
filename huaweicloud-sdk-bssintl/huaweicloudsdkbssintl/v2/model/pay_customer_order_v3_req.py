@@ -33,7 +33,7 @@ class PayCustomerOrderV3Req:
     }
 
     def __init__(self, order_id=None, use_coupon=None, use_discount=None, coupon_infos=None, discount_infos=None):
-        """PayCustomerOrderV3Req
+        r"""PayCustomerOrderV3Req
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class PayCustomerOrderV3Req:
 
     @property
     def order_id(self):
-        """Gets the order_id of this PayCustomerOrderV3Req.
+        r"""Gets the order_id of this PayCustomerOrderV3Req.
 
         订单编号。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值或调用“续订包年/包月资源”接口时响应消息“order_ids”中的订单ID。
 
@@ -79,7 +79,7 @@ class PayCustomerOrderV3Req:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PayCustomerOrderV3Req.
+        r"""Sets the order_id of this PayCustomerOrderV3Req.
 
         订单编号。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值或调用“续订包年/包月资源”接口时响应消息“order_ids”中的订单ID。
 
@@ -90,7 +90,7 @@ class PayCustomerOrderV3Req:
 
     @property
     def use_coupon(self):
-        """Gets the use_coupon of this PayCustomerOrderV3Req.
+        r"""Gets the use_coupon of this PayCustomerOrderV3Req.
 
         本次订单支付是否使用优惠券。传递“YES”时，coupon_infos字段必选，传递“NO”时，会忽略coupon_infos字段的传值。 使用优惠券：YES，不使用优惠券：NO
 
@@ -101,7 +101,7 @@ class PayCustomerOrderV3Req:
 
     @use_coupon.setter
     def use_coupon(self, use_coupon):
-        """Sets the use_coupon of this PayCustomerOrderV3Req.
+        r"""Sets the use_coupon of this PayCustomerOrderV3Req.
 
         本次订单支付是否使用优惠券。传递“YES”时，coupon_infos字段必选，传递“NO”时，会忽略coupon_infos字段的传值。 使用优惠券：YES，不使用优惠券：NO
 
@@ -112,7 +112,7 @@ class PayCustomerOrderV3Req:
 
     @property
     def use_discount(self):
-        """Gets the use_discount of this PayCustomerOrderV3Req.
+        r"""Gets the use_discount of this PayCustomerOrderV3Req.
 
         本次订单支付是否使用折扣。传递“YES”时，discount_infos字段必选，传递“NO”时，会忽略discount_infos字段的传值。 使用折扣：YES，不使用折扣：NO
 
@@ -123,7 +123,7 @@ class PayCustomerOrderV3Req:
 
     @use_discount.setter
     def use_discount(self, use_discount):
-        """Sets the use_discount of this PayCustomerOrderV3Req.
+        r"""Sets the use_discount of this PayCustomerOrderV3Req.
 
         本次订单支付是否使用折扣。传递“YES”时，discount_infos字段必选，传递“NO”时，会忽略discount_infos字段的传值。 使用折扣：YES，不使用折扣：NO
 
@@ -134,7 +134,7 @@ class PayCustomerOrderV3Req:
 
     @property
     def coupon_infos(self):
-        """Gets the coupon_infos of this PayCustomerOrderV3Req.
+        r"""Gets the coupon_infos of this PayCustomerOrderV3Req.
 
         优惠券ID列表，目前支持传递最多三个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。 当use_coupon参数取值为“YES”，本字段必填；当use_coupon参数取值为“NO”，本字段不可填写，否则报参数错误。
 
@@ -145,7 +145,7 @@ class PayCustomerOrderV3Req:
 
     @coupon_infos.setter
     def coupon_infos(self, coupon_infos):
-        """Sets the coupon_infos of this PayCustomerOrderV3Req.
+        r"""Sets the coupon_infos of this PayCustomerOrderV3Req.
 
         优惠券ID列表，目前支持传递最多三个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。 当use_coupon参数取值为“YES”，本字段必填；当use_coupon参数取值为“NO”，本字段不可填写，否则报参数错误。
 
@@ -156,7 +156,7 @@ class PayCustomerOrderV3Req:
 
     @property
     def discount_infos(self):
-        """Gets the discount_infos of this PayCustomerOrderV3Req.
+        r"""Gets the discount_infos of this PayCustomerOrderV3Req.
 
         折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。 当use_discount参数取值为“YES”，本字段必填；当use_discount参数取值为“NO”，本字段不可填写，否则报参数错误。
 
@@ -167,7 +167,7 @@ class PayCustomerOrderV3Req:
 
     @discount_infos.setter
     def discount_infos(self, discount_infos):
-        """Sets the discount_infos of this PayCustomerOrderV3Req.
+        r"""Sets the discount_infos of this PayCustomerOrderV3Req.
 
         折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。 当use_discount参数取值为“YES”，本字段必填；当use_discount参数取值为“NO”，本字段不可填写，否则报参数错误。
 

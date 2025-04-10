@@ -51,7 +51,7 @@ class StatisticsGroup:
     }
 
     def __init__(self, max_latency=None, avg_latency=None, req_count=None, req_count2xx=None, req_count4xx=None, req_count5xx=None, req_count_error=None, output_throughput=None, input_throughput=None, current_minute=None, group_id=None, provider=None, req_time=None, register_time=None):
-        """StatisticsGroup
+        r"""StatisticsGroup
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class StatisticsGroup:
 
     @property
     def max_latency(self):
-        """Gets the max_latency of this StatisticsGroup.
+        r"""Gets the max_latency of this StatisticsGroup.
 
         最大延时  单位：ms
 
@@ -145,7 +145,7 @@ class StatisticsGroup:
 
     @max_latency.setter
     def max_latency(self, max_latency):
-        """Sets the max_latency of this StatisticsGroup.
+        r"""Sets the max_latency of this StatisticsGroup.
 
         最大延时  单位：ms
 
@@ -156,7 +156,7 @@ class StatisticsGroup:
 
     @property
     def avg_latency(self):
-        """Gets the avg_latency of this StatisticsGroup.
+        r"""Gets the avg_latency of this StatisticsGroup.
 
         平均延时  单位：ms
 
@@ -167,7 +167,7 @@ class StatisticsGroup:
 
     @avg_latency.setter
     def avg_latency(self, avg_latency):
-        """Sets the avg_latency of this StatisticsGroup.
+        r"""Sets the avg_latency of this StatisticsGroup.
 
         平均延时  单位：ms
 
@@ -178,7 +178,7 @@ class StatisticsGroup:
 
     @property
     def req_count(self):
-        """Gets the req_count of this StatisticsGroup.
+        r"""Gets the req_count of this StatisticsGroup.
 
         请求总次数
 
@@ -189,7 +189,7 @@ class StatisticsGroup:
 
     @req_count.setter
     def req_count(self, req_count):
-        """Sets the req_count of this StatisticsGroup.
+        r"""Sets the req_count of this StatisticsGroup.
 
         请求总次数
 
@@ -200,7 +200,7 @@ class StatisticsGroup:
 
     @property
     def req_count2xx(self):
-        """Gets the req_count2xx of this StatisticsGroup.
+        r"""Gets the req_count2xx of this StatisticsGroup.
 
         2xx响应码总次数
 
@@ -211,7 +211,7 @@ class StatisticsGroup:
 
     @req_count2xx.setter
     def req_count2xx(self, req_count2xx):
-        """Sets the req_count2xx of this StatisticsGroup.
+        r"""Sets the req_count2xx of this StatisticsGroup.
 
         2xx响应码总次数
 
@@ -222,7 +222,7 @@ class StatisticsGroup:
 
     @property
     def req_count4xx(self):
-        """Gets the req_count4xx of this StatisticsGroup.
+        r"""Gets the req_count4xx of this StatisticsGroup.
 
         4xx响应码总次数
 
@@ -233,7 +233,7 @@ class StatisticsGroup:
 
     @req_count4xx.setter
     def req_count4xx(self, req_count4xx):
-        """Sets the req_count4xx of this StatisticsGroup.
+        r"""Sets the req_count4xx of this StatisticsGroup.
 
         4xx响应码总次数
 
@@ -244,7 +244,7 @@ class StatisticsGroup:
 
     @property
     def req_count5xx(self):
-        """Gets the req_count5xx of this StatisticsGroup.
+        r"""Gets the req_count5xx of this StatisticsGroup.
 
         5xx响应码总次数
 
@@ -255,7 +255,7 @@ class StatisticsGroup:
 
     @req_count5xx.setter
     def req_count5xx(self, req_count5xx):
-        """Sets the req_count5xx of this StatisticsGroup.
+        r"""Sets the req_count5xx of this StatisticsGroup.
 
         5xx响应码总次数
 
@@ -266,7 +266,7 @@ class StatisticsGroup:
 
     @property
     def req_count_error(self):
-        """Gets the req_count_error of this StatisticsGroup.
+        r"""Gets the req_count_error of this StatisticsGroup.
 
         错误次数
 
@@ -277,7 +277,7 @@ class StatisticsGroup:
 
     @req_count_error.setter
     def req_count_error(self, req_count_error):
-        """Sets the req_count_error of this StatisticsGroup.
+        r"""Sets the req_count_error of this StatisticsGroup.
 
         错误次数
 
@@ -288,7 +288,7 @@ class StatisticsGroup:
 
     @property
     def output_throughput(self):
-        """Gets the output_throughput of this StatisticsGroup.
+        r"""Gets the output_throughput of this StatisticsGroup.
 
         下行吞吐量（byte）
 
@@ -299,7 +299,7 @@ class StatisticsGroup:
 
     @output_throughput.setter
     def output_throughput(self, output_throughput):
-        """Sets the output_throughput of this StatisticsGroup.
+        r"""Sets the output_throughput of this StatisticsGroup.
 
         下行吞吐量（byte）
 
@@ -310,7 +310,7 @@ class StatisticsGroup:
 
     @property
     def input_throughput(self):
-        """Gets the input_throughput of this StatisticsGroup.
+        r"""Gets the input_throughput of this StatisticsGroup.
 
         上行吞吐量（byte）
 
@@ -321,7 +321,7 @@ class StatisticsGroup:
 
     @input_throughput.setter
     def input_throughput(self, input_throughput):
-        """Sets the input_throughput of this StatisticsGroup.
+        r"""Sets the input_throughput of this StatisticsGroup.
 
         上行吞吐量（byte）
 
@@ -332,7 +332,7 @@ class StatisticsGroup:
 
     @property
     def current_minute(self):
-        """Gets the current_minute of this StatisticsGroup.
+        r"""Gets the current_minute of this StatisticsGroup.
 
         API访问的UTC时间戳
 
@@ -343,7 +343,7 @@ class StatisticsGroup:
 
     @current_minute.setter
     def current_minute(self, current_minute):
-        """Sets the current_minute of this StatisticsGroup.
+        r"""Sets the current_minute of this StatisticsGroup.
 
         API访问的UTC时间戳
 
@@ -354,7 +354,7 @@ class StatisticsGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this StatisticsGroup.
+        r"""Gets the group_id of this StatisticsGroup.
 
         API分组编号
 
@@ -365,7 +365,7 @@ class StatisticsGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this StatisticsGroup.
+        r"""Sets the group_id of this StatisticsGroup.
 
         API分组编号
 
@@ -376,7 +376,7 @@ class StatisticsGroup:
 
     @property
     def provider(self):
-        """Gets the provider of this StatisticsGroup.
+        r"""Gets the provider of this StatisticsGroup.
 
         API拥有者
 
@@ -387,7 +387,7 @@ class StatisticsGroup:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this StatisticsGroup.
+        r"""Sets the provider of this StatisticsGroup.
 
         API拥有者
 
@@ -398,7 +398,7 @@ class StatisticsGroup:
 
     @property
     def req_time(self):
-        """Gets the req_time of this StatisticsGroup.
+        r"""Gets the req_time of this StatisticsGroup.
 
         API请求时间
 
@@ -409,7 +409,7 @@ class StatisticsGroup:
 
     @req_time.setter
     def req_time(self, req_time):
-        """Sets the req_time of this StatisticsGroup.
+        r"""Sets the req_time of this StatisticsGroup.
 
         API请求时间
 
@@ -420,7 +420,7 @@ class StatisticsGroup:
 
     @property
     def register_time(self):
-        """Gets the register_time of this StatisticsGroup.
+        r"""Gets the register_time of this StatisticsGroup.
 
         记录时间
 
@@ -431,7 +431,7 @@ class StatisticsGroup:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this StatisticsGroup.
+        r"""Sets the register_time of this StatisticsGroup.
 
         记录时间
 

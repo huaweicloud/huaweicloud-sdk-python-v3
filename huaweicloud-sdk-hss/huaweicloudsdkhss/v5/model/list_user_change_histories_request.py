@@ -45,7 +45,7 @@ class ListUserChangeHistoriesRequest:
     }
 
     def __init__(self, user_name=None, host_id=None, root_permission=None, host_name=None, private_ip=None, change_type=None, limit=None, offset=None, enterprise_project_id=None, start_time=None, end_time=None):
-        """ListUserChangeHistoriesRequest
+        r"""ListUserChangeHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListUserChangeHistoriesRequest:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param start_time: 变更开始时间，13位时间戳
         :type start_time: int
@@ -113,7 +113,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUserChangeHistoriesRequest.
+        r"""Gets the user_name of this ListUserChangeHistoriesRequest.
 
         账号名
 
@@ -124,7 +124,7 @@ class ListUserChangeHistoriesRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUserChangeHistoriesRequest.
+        r"""Sets the user_name of this ListUserChangeHistoriesRequest.
 
         账号名
 
@@ -135,7 +135,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListUserChangeHistoriesRequest.
+        r"""Gets the host_id of this ListUserChangeHistoriesRequest.
 
         主机id
 
@@ -146,7 +146,7 @@ class ListUserChangeHistoriesRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListUserChangeHistoriesRequest.
+        r"""Sets the host_id of this ListUserChangeHistoriesRequest.
 
         主机id
 
@@ -157,7 +157,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def root_permission(self):
-        """Gets the root_permission of this ListUserChangeHistoriesRequest.
+        r"""Gets the root_permission of this ListUserChangeHistoriesRequest.
 
         是否有root权限
 
@@ -168,7 +168,7 @@ class ListUserChangeHistoriesRequest:
 
     @root_permission.setter
     def root_permission(self, root_permission):
-        """Sets the root_permission of this ListUserChangeHistoriesRequest.
+        r"""Sets the root_permission of this ListUserChangeHistoriesRequest.
 
         是否有root权限
 
@@ -179,7 +179,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListUserChangeHistoriesRequest.
+        r"""Gets the host_name of this ListUserChangeHistoriesRequest.
 
         主机名称
 
@@ -190,7 +190,7 @@ class ListUserChangeHistoriesRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListUserChangeHistoriesRequest.
+        r"""Sets the host_name of this ListUserChangeHistoriesRequest.
 
         主机名称
 
@@ -201,7 +201,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListUserChangeHistoriesRequest.
+        r"""Gets the private_ip of this ListUserChangeHistoriesRequest.
 
         服务器私有IP
 
@@ -212,7 +212,7 @@ class ListUserChangeHistoriesRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListUserChangeHistoriesRequest.
+        r"""Sets the private_ip of this ListUserChangeHistoriesRequest.
 
         服务器私有IP
 
@@ -223,7 +223,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def change_type(self):
-        """Gets the change_type of this ListUserChangeHistoriesRequest.
+        r"""Gets the change_type of this ListUserChangeHistoriesRequest.
 
         账号变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
 
@@ -234,7 +234,7 @@ class ListUserChangeHistoriesRequest:
 
     @change_type.setter
     def change_type(self, change_type):
-        """Sets the change_type of this ListUserChangeHistoriesRequest.
+        r"""Sets the change_type of this ListUserChangeHistoriesRequest.
 
         账号变更类型:   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
 
@@ -245,7 +245,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserChangeHistoriesRequest.
+        r"""Gets the limit of this ListUserChangeHistoriesRequest.
 
         每页显示数量
 
@@ -256,7 +256,7 @@ class ListUserChangeHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserChangeHistoriesRequest.
+        r"""Sets the limit of this ListUserChangeHistoriesRequest.
 
         每页显示数量
 
@@ -267,7 +267,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserChangeHistoriesRequest.
+        r"""Gets the offset of this ListUserChangeHistoriesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -278,7 +278,7 @@ class ListUserChangeHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserChangeHistoriesRequest.
+        r"""Sets the offset of this ListUserChangeHistoriesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -289,9 +289,9 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListUserChangeHistoriesRequest.
+        r"""Gets the enterprise_project_id of this ListUserChangeHistoriesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListUserChangeHistoriesRequest.
         :rtype: str
@@ -300,9 +300,9 @@ class ListUserChangeHistoriesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListUserChangeHistoriesRequest.
+        r"""Sets the enterprise_project_id of this ListUserChangeHistoriesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListUserChangeHistoriesRequest.
         :type enterprise_project_id: str
@@ -311,7 +311,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUserChangeHistoriesRequest.
+        r"""Gets the start_time of this ListUserChangeHistoriesRequest.
 
         变更开始时间，13位时间戳
 
@@ -322,7 +322,7 @@ class ListUserChangeHistoriesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUserChangeHistoriesRequest.
+        r"""Sets the start_time of this ListUserChangeHistoriesRequest.
 
         变更开始时间，13位时间戳
 
@@ -333,7 +333,7 @@ class ListUserChangeHistoriesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUserChangeHistoriesRequest.
+        r"""Gets the end_time of this ListUserChangeHistoriesRequest.
 
         变更结束时间，13位时间戳
 
@@ -344,7 +344,7 @@ class ListUserChangeHistoriesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUserChangeHistoriesRequest.
+        r"""Sets the end_time of this ListUserChangeHistoriesRequest.
 
         变更结束时间，13位时间戳
 

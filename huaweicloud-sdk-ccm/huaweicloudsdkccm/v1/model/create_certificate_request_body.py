@@ -43,7 +43,7 @@ class CreateCertificateRequestBody:
     }
 
     def __init__(self, issuer_id=None, key_algorithm=None, signature_algorithm=None, distinguished_name=None, validity=None, key_usages=None, subject_alternative_names=None, extended_key_usage=None, customized_extension=None, enterprise_project_id=None):
-        """CreateCertificateRequestBody
+        r"""CreateCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class CreateCertificateRequestBody:
 
     @property
     def issuer_id(self):
-        """Gets the issuer_id of this CreateCertificateRequestBody.
+        r"""Gets the issuer_id of this CreateCertificateRequestBody.
 
         父CA证书ID。
 
@@ -112,7 +112,7 @@ class CreateCertificateRequestBody:
 
     @issuer_id.setter
     def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this CreateCertificateRequestBody.
+        r"""Sets the issuer_id of this CreateCertificateRequestBody.
 
         父CA证书ID。
 
@@ -123,7 +123,7 @@ class CreateCertificateRequestBody:
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this CreateCertificateRequestBody.
+        r"""Gets the key_algorithm of this CreateCertificateRequestBody.
 
         密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位；   - **SM2** : 国家密码管理局颁发的椭圆曲线算法（签名哈希算法SM3），密钥长度256位。（中国站）
 
@@ -134,7 +134,7 @@ class CreateCertificateRequestBody:
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this CreateCertificateRequestBody.
+        r"""Sets the key_algorithm of this CreateCertificateRequestBody.
 
         密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位；   - **SM2** : 国家密码管理局颁发的椭圆曲线算法（签名哈希算法SM3），密钥长度256位。（中国站）
 
@@ -145,7 +145,7 @@ class CreateCertificateRequestBody:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CreateCertificateRequestBody.
+        r"""Gets the signature_algorithm of this CreateCertificateRequestBody.
 
         签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
 
@@ -156,7 +156,7 @@ class CreateCertificateRequestBody:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CreateCertificateRequestBody.
+        r"""Sets the signature_algorithm of this CreateCertificateRequestBody.
 
         签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
 
@@ -167,7 +167,7 @@ class CreateCertificateRequestBody:
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this CreateCertificateRequestBody.
+        r"""Gets the distinguished_name of this CreateCertificateRequestBody.
 
         :return: The distinguished_name of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
@@ -176,7 +176,7 @@ class CreateCertificateRequestBody:
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this CreateCertificateRequestBody.
+        r"""Sets the distinguished_name of this CreateCertificateRequestBody.
 
         :param distinguished_name: The distinguished_name of this CreateCertificateRequestBody.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
@@ -185,7 +185,7 @@ class CreateCertificateRequestBody:
 
     @property
     def validity(self):
-        """Gets the validity of this CreateCertificateRequestBody.
+        r"""Gets the validity of this CreateCertificateRequestBody.
 
         :return: The validity of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
@@ -194,7 +194,7 @@ class CreateCertificateRequestBody:
 
     @validity.setter
     def validity(self, validity):
-        """Sets the validity of this CreateCertificateRequestBody.
+        r"""Sets the validity of this CreateCertificateRequestBody.
 
         :param validity: The validity of this CreateCertificateRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -203,7 +203,7 @@ class CreateCertificateRequestBody:
 
     @property
     def key_usages(self):
-        """Gets the key_usages of this CreateCertificateRequestBody.
+        r"""Gets the key_usages of this CreateCertificateRequestBody.
 
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。
 
@@ -214,7 +214,7 @@ class CreateCertificateRequestBody:
 
     @key_usages.setter
     def key_usages(self, key_usages):
-        """Sets the key_usages of this CreateCertificateRequestBody.
+        r"""Sets the key_usages of this CreateCertificateRequestBody.
 
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。
 
@@ -225,7 +225,7 @@ class CreateCertificateRequestBody:
 
     @property
     def subject_alternative_names(self):
-        """Gets the subject_alternative_names of this CreateCertificateRequestBody.
+        r"""Gets the subject_alternative_names of this CreateCertificateRequestBody.
 
         主体备用名称，详情请参见**SubjectAlternativeName**字段数据结构说明。   - array大小：[0,20]。
 
@@ -236,7 +236,7 @@ class CreateCertificateRequestBody:
 
     @subject_alternative_names.setter
     def subject_alternative_names(self, subject_alternative_names):
-        """Sets the subject_alternative_names of this CreateCertificateRequestBody.
+        r"""Sets the subject_alternative_names of this CreateCertificateRequestBody.
 
         主体备用名称，详情请参见**SubjectAlternativeName**字段数据结构说明。   - array大小：[0,20]。
 
@@ -247,7 +247,7 @@ class CreateCertificateRequestBody:
 
     @property
     def extended_key_usage(self):
-        """Gets the extended_key_usage of this CreateCertificateRequestBody.
+        r"""Gets the extended_key_usage of this CreateCertificateRequestBody.
 
         :return: The extended_key_usage of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
@@ -256,7 +256,7 @@ class CreateCertificateRequestBody:
 
     @extended_key_usage.setter
     def extended_key_usage(self, extended_key_usage):
-        """Sets the extended_key_usage of this CreateCertificateRequestBody.
+        r"""Sets the extended_key_usage of this CreateCertificateRequestBody.
 
         :param extended_key_usage: The extended_key_usage of this CreateCertificateRequestBody.
         :type extended_key_usage: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
@@ -265,7 +265,7 @@ class CreateCertificateRequestBody:
 
     @property
     def customized_extension(self):
-        """Gets the customized_extension of this CreateCertificateRequestBody.
+        r"""Gets the customized_extension of this CreateCertificateRequestBody.
 
         :return: The customized_extension of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
@@ -274,7 +274,7 @@ class CreateCertificateRequestBody:
 
     @customized_extension.setter
     def customized_extension(self, customized_extension):
-        """Sets the customized_extension of this CreateCertificateRequestBody.
+        r"""Sets the customized_extension of this CreateCertificateRequestBody.
 
         :param customized_extension: The customized_extension of this CreateCertificateRequestBody.
         :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
@@ -283,7 +283,7 @@ class CreateCertificateRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateRequestBody.
+        r"""Gets the enterprise_project_id of this CreateCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -294,7 +294,7 @@ class CreateCertificateRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateRequestBody.
+        r"""Sets the enterprise_project_id of this CreateCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 

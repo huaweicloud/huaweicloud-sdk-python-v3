@@ -26,7 +26,7 @@ class UpdateLinkResponse(SdkResponse):
     }
 
     def __init__(self, validation_result=None):
-        """UpdateLinkResponse
+        r"""UpdateLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLinkResponse(SdkResponse):
 
     @property
     def validation_result(self):
-        """Gets the validation_result of this UpdateLinkResponse.
+        r"""Gets the validation_result of this UpdateLinkResponse.
 
         校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
 
@@ -55,7 +55,7 @@ class UpdateLinkResponse(SdkResponse):
 
     @validation_result.setter
     def validation_result(self, validation_result):
-        """Sets the validation_result of this UpdateLinkResponse.
+        r"""Sets the validation_result of this UpdateLinkResponse.
 
         校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
 

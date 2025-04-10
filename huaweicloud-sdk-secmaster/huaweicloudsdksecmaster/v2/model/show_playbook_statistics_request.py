@@ -27,7 +27,7 @@ class ShowPlaybookStatisticsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None):
-        """ShowPlaybookStatisticsRequest
+        r"""ShowPlaybookStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowPlaybookStatisticsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlaybookStatisticsRequest.
+        r"""Gets the project_id of this ShowPlaybookStatisticsRequest.
 
         项目ID
 
@@ -59,7 +59,7 @@ class ShowPlaybookStatisticsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlaybookStatisticsRequest.
+        r"""Sets the project_id of this ShowPlaybookStatisticsRequest.
 
         项目ID
 
@@ -70,7 +70,7 @@ class ShowPlaybookStatisticsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowPlaybookStatisticsRequest.
+        r"""Gets the workspace_id of this ShowPlaybookStatisticsRequest.
 
         工作空间ID
 
@@ -81,7 +81,7 @@ class ShowPlaybookStatisticsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowPlaybookStatisticsRequest.
+        r"""Sets the workspace_id of this ShowPlaybookStatisticsRequest.
 
         工作空间ID
 

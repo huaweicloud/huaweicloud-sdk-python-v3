@@ -45,7 +45,7 @@ class SearchSubjectRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, owner=None, status=None, begin_time=None, end_time=None, limit=None, offset=None, parent_id=None):
-        """SearchSubjectRequest
+        r"""SearchSubjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class SearchSubjectRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchSubjectRequest.
+        r"""Gets the workspace of this SearchSubjectRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -123,7 +123,7 @@ class SearchSubjectRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchSubjectRequest.
+        r"""Sets the workspace of this SearchSubjectRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -134,7 +134,7 @@ class SearchSubjectRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this SearchSubjectRequest.
+        r"""Gets the x_project_id of this SearchSubjectRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -145,7 +145,7 @@ class SearchSubjectRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this SearchSubjectRequest.
+        r"""Sets the x_project_id of this SearchSubjectRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -156,7 +156,7 @@ class SearchSubjectRequest:
 
     @property
     def name(self):
-        """Gets the name of this SearchSubjectRequest.
+        r"""Gets the name of this SearchSubjectRequest.
 
         按名称或编码模糊查询。
 
@@ -167,7 +167,7 @@ class SearchSubjectRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchSubjectRequest.
+        r"""Sets the name of this SearchSubjectRequest.
 
         按名称或编码模糊查询。
 
@@ -178,7 +178,7 @@ class SearchSubjectRequest:
 
     @property
     def create_by(self):
-        """Gets the create_by of this SearchSubjectRequest.
+        r"""Gets the create_by of this SearchSubjectRequest.
 
         按创建者查询。
 
@@ -189,7 +189,7 @@ class SearchSubjectRequest:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this SearchSubjectRequest.
+        r"""Sets the create_by of this SearchSubjectRequest.
 
         按创建者查询。
 
@@ -200,7 +200,7 @@ class SearchSubjectRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this SearchSubjectRequest.
+        r"""Gets the owner of this SearchSubjectRequest.
 
         按负责人查询。
 
@@ -211,7 +211,7 @@ class SearchSubjectRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SearchSubjectRequest.
+        r"""Sets the owner of this SearchSubjectRequest.
 
         按负责人查询。
 
@@ -222,7 +222,7 @@ class SearchSubjectRequest:
 
     @property
     def status(self):
-        """Gets the status of this SearchSubjectRequest.
+        r"""Gets the status of this SearchSubjectRequest.
 
         业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
@@ -233,7 +233,7 @@ class SearchSubjectRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchSubjectRequest.
+        r"""Sets the status of this SearchSubjectRequest.
 
         业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
@@ -244,7 +244,7 @@ class SearchSubjectRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SearchSubjectRequest.
+        r"""Gets the begin_time of this SearchSubjectRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -255,7 +255,7 @@ class SearchSubjectRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SearchSubjectRequest.
+        r"""Sets the begin_time of this SearchSubjectRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -266,7 +266,7 @@ class SearchSubjectRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SearchSubjectRequest.
+        r"""Gets the end_time of this SearchSubjectRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -277,7 +277,7 @@ class SearchSubjectRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SearchSubjectRequest.
+        r"""Sets the end_time of this SearchSubjectRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -288,7 +288,7 @@ class SearchSubjectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchSubjectRequest.
+        r"""Gets the limit of this SearchSubjectRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -299,7 +299,7 @@ class SearchSubjectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchSubjectRequest.
+        r"""Sets the limit of this SearchSubjectRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -310,7 +310,7 @@ class SearchSubjectRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchSubjectRequest.
+        r"""Gets the offset of this SearchSubjectRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -321,7 +321,7 @@ class SearchSubjectRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchSubjectRequest.
+        r"""Sets the offset of this SearchSubjectRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -332,7 +332,7 @@ class SearchSubjectRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this SearchSubjectRequest.
+        r"""Gets the parent_id of this SearchSubjectRequest.
 
         父目录ID，根节点没有此ID，空值为所有，-1为根节点下节点。填写String类型替代Long类型。
 
@@ -343,7 +343,7 @@ class SearchSubjectRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this SearchSubjectRequest.
+        r"""Sets the parent_id of this SearchSubjectRequest.
 
         父目录ID，根节点没有此ID，空值为所有，-1为根节点下节点。填写String类型替代Long类型。
 

@@ -33,7 +33,7 @@ class ListClickHouseDataBaseRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, database_name=None, x_language=None):
-        """ListClickHouseDataBaseRequest
+        r"""ListClickHouseDataBaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListClickHouseDataBaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListClickHouseDataBaseRequest.
+        r"""Gets the instance_id of this ListClickHouseDataBaseRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -81,7 +81,7 @@ class ListClickHouseDataBaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListClickHouseDataBaseRequest.
+        r"""Sets the instance_id of this ListClickHouseDataBaseRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -92,7 +92,7 @@ class ListClickHouseDataBaseRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClickHouseDataBaseRequest.
+        r"""Gets the limit of this ListClickHouseDataBaseRequest.
 
         查询记录数，默认10。不能为负数，最小值为1，最大值为100。
 
@@ -103,7 +103,7 @@ class ListClickHouseDataBaseRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClickHouseDataBaseRequest.
+        r"""Sets the limit of this ListClickHouseDataBaseRequest.
 
         查询记录数，默认10。不能为负数，最小值为1，最大值为100。
 
@@ -114,7 +114,7 @@ class ListClickHouseDataBaseRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClickHouseDataBaseRequest.
+        r"""Gets the offset of this ListClickHouseDataBaseRequest.
 
         索引位置，偏移量，默认0。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -125,7 +125,7 @@ class ListClickHouseDataBaseRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClickHouseDataBaseRequest.
+        r"""Sets the offset of this ListClickHouseDataBaseRequest.
 
         索引位置，偏移量，默认0。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -136,7 +136,7 @@ class ListClickHouseDataBaseRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListClickHouseDataBaseRequest.
+        r"""Gets the database_name of this ListClickHouseDataBaseRequest.
 
         数据库名。
 
@@ -147,7 +147,7 @@ class ListClickHouseDataBaseRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListClickHouseDataBaseRequest.
+        r"""Sets the database_name of this ListClickHouseDataBaseRequest.
 
         数据库名。
 
@@ -158,7 +158,7 @@ class ListClickHouseDataBaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListClickHouseDataBaseRequest.
+        r"""Gets the x_language of this ListClickHouseDataBaseRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -169,7 +169,7 @@ class ListClickHouseDataBaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListClickHouseDataBaseRequest.
+        r"""Sets the x_language of this ListClickHouseDataBaseRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

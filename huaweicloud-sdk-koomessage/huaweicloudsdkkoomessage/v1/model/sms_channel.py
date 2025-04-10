@@ -31,7 +31,7 @@ class SmsChannel:
     }
 
     def __init__(self, channel_number=None, sms_tpl_id=None, sms_sign=None, sms_app_name=None):
-        """SmsChannel
+        r"""SmsChannel
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SmsChannel:
 
     @property
     def channel_number(self):
-        """Gets the channel_number of this SmsChannel.
+        r"""Gets the channel_number of this SmsChannel.
 
         短信通道号。  > 必须与另外三个字段sms_tpl_id、sms_sign、sms_app_name相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信签名管理-通道号”中获取。 
 
@@ -71,7 +71,7 @@ class SmsChannel:
 
     @channel_number.setter
     def channel_number(self, channel_number):
-        """Sets the channel_number of this SmsChannel.
+        r"""Sets the channel_number of this SmsChannel.
 
         短信通道号。  > 必须与另外三个字段sms_tpl_id、sms_sign、sms_app_name相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信签名管理-通道号”中获取。 
 
@@ -82,7 +82,7 @@ class SmsChannel:
 
     @property
     def sms_tpl_id(self):
-        """Gets the sms_tpl_id of this SmsChannel.
+        r"""Gets the sms_tpl_id of this SmsChannel.
 
         短信模板ID。  > 必须与另外三个字段channel_number、sms_sign、sms_app_name相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信模板管理-模板ID”中获取。 
 
@@ -93,7 +93,7 @@ class SmsChannel:
 
     @sms_tpl_id.setter
     def sms_tpl_id(self, sms_tpl_id):
-        """Sets the sms_tpl_id of this SmsChannel.
+        r"""Sets the sms_tpl_id of this SmsChannel.
 
         短信模板ID。  > 必须与另外三个字段channel_number、sms_sign、sms_app_name相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信模板管理-模板ID”中获取。 
 
@@ -104,7 +104,7 @@ class SmsChannel:
 
     @property
     def sms_sign(self):
-        """Gets the sms_sign of this SmsChannel.
+        r"""Gets the sms_sign of this SmsChannel.
 
         短信签名。  > 必须与另外三个字段channel_number、sms_tpl_id、sms_app_name相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信模板管理-所属签名”中获取。 
 
@@ -115,7 +115,7 @@ class SmsChannel:
 
     @sms_sign.setter
     def sms_sign(self, sms_sign):
-        """Sets the sms_sign of this SmsChannel.
+        r"""Sets the sms_sign of this SmsChannel.
 
         短信签名。  > 必须与另外三个字段channel_number、sms_tpl_id、sms_app_name相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信模板管理-所属签名”中获取。 
 
@@ -126,7 +126,7 @@ class SmsChannel:
 
     @property
     def sms_app_name(self):
-        """Gets the sms_app_name of this SmsChannel.
+        r"""Gets the sms_app_name of this SmsChannel.
 
         短信应用名称。  > 必须与另外三个字段channel_number、sms_sign、sms_tpl_id相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信模板管理-所属应用”中获取。 
 
@@ -137,7 +137,7 @@ class SmsChannel:
 
     @sms_app_name.setter
     def sms_app_name(self, sms_app_name):
-        """Sets the sms_app_name of this SmsChannel.
+        r"""Sets the sms_app_name of this SmsChannel.
 
         短信应用名称。  > 必须与另外三个字段channel_number、sms_sign、sms_tpl_id相匹配，这些字段信息可以从“云消息服务KooMessage-管理控制台-短信配置-短信模板管理-所属应用”中获取。 
 

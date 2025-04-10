@@ -59,7 +59,7 @@ class OpengaussRestoreInstanceRequest:
     }
 
     def __init__(self, name=None, availability_zone=None, flavor_ref=None, volume=None, disk_encryption_id=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, charge_info=None, restore_point=None, backup_strategy=None, enable_parallel_restore=None, configuration_id=None, enterprise_project_id=None, port=None, time_zone=None, enable_force_switch=None):
-        """OpengaussRestoreInstanceRequest
+        r"""OpengaussRestoreInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -153,7 +153,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def name(self):
-        """Gets the name of this OpengaussRestoreInstanceRequest.
+        r"""Gets the name of this OpengaussRestoreInstanceRequest.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -164,7 +164,7 @@ class OpengaussRestoreInstanceRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OpengaussRestoreInstanceRequest.
+        r"""Sets the name of this OpengaussRestoreInstanceRequest.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -175,7 +175,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this OpengaussRestoreInstanceRequest.
+        r"""Gets the availability_zone of this OpengaussRestoreInstanceRequest.
 
         可用区ID。  GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -186,7 +186,7 @@ class OpengaussRestoreInstanceRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this OpengaussRestoreInstanceRequest.
+        r"""Sets the availability_zone of this OpengaussRestoreInstanceRequest.
 
         可用区ID。  GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -197,7 +197,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this OpengaussRestoreInstanceRequest.
+        r"""Gets the flavor_ref of this OpengaussRestoreInstanceRequest.
 
         规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
@@ -208,7 +208,7 @@ class OpengaussRestoreInstanceRequest:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this OpengaussRestoreInstanceRequest.
+        r"""Sets the flavor_ref of this OpengaussRestoreInstanceRequest.
 
         规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
@@ -219,7 +219,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def volume(self):
-        """Gets the volume of this OpengaussRestoreInstanceRequest.
+        r"""Gets the volume of this OpengaussRestoreInstanceRequest.
 
         :return: The volume of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
@@ -228,7 +228,7 @@ class OpengaussRestoreInstanceRequest:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this OpengaussRestoreInstanceRequest.
+        r"""Sets the volume of this OpengaussRestoreInstanceRequest.
 
         :param volume: The volume of this OpengaussRestoreInstanceRequest.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
@@ -237,7 +237,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this OpengaussRestoreInstanceRequest.
+        r"""Gets the disk_encryption_id of this OpengaussRestoreInstanceRequest.
 
         用于磁盘加密的密钥ID，默认为空。
 
@@ -248,7 +248,7 @@ class OpengaussRestoreInstanceRequest:
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this OpengaussRestoreInstanceRequest.
+        r"""Sets the disk_encryption_id of this OpengaussRestoreInstanceRequest.
 
         用于磁盘加密的密钥ID，默认为空。
 
@@ -259,7 +259,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this OpengaussRestoreInstanceRequest.
+        r"""Gets the vpc_id of this OpengaussRestoreInstanceRequest.
 
         虚拟私有云ID，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
 
@@ -270,7 +270,7 @@ class OpengaussRestoreInstanceRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this OpengaussRestoreInstanceRequest.
+        r"""Sets the vpc_id of this OpengaussRestoreInstanceRequest.
 
         虚拟私有云ID，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
 
@@ -281,7 +281,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this OpengaussRestoreInstanceRequest.
+        r"""Gets the subnet_id of this OpengaussRestoreInstanceRequest.
 
         子网的网络ID信息，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -292,7 +292,7 @@ class OpengaussRestoreInstanceRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this OpengaussRestoreInstanceRequest.
+        r"""Sets the subnet_id of this OpengaussRestoreInstanceRequest.
 
         子网的网络ID信息，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -303,7 +303,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this OpengaussRestoreInstanceRequest.
+        r"""Gets the security_group_id of this OpengaussRestoreInstanceRequest.
 
         指定实例所属的安全组。如果不需要指定安全组，请联系客服申请白名单。  - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
 
@@ -314,7 +314,7 @@ class OpengaussRestoreInstanceRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this OpengaussRestoreInstanceRequest.
+        r"""Sets the security_group_id of this OpengaussRestoreInstanceRequest.
 
         指定实例所属的安全组。如果不需要指定安全组，请联系客服申请白名单。  - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
 
@@ -325,7 +325,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def password(self):
-        """Gets the password of this OpengaussRestoreInstanceRequest.
+        r"""Gets the password of this OpengaussRestoreInstanceRequest.
 
         数据库密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -336,7 +336,7 @@ class OpengaussRestoreInstanceRequest:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this OpengaussRestoreInstanceRequest.
+        r"""Sets the password of this OpengaussRestoreInstanceRequest.
 
         数据库密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -347,7 +347,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this OpengaussRestoreInstanceRequest.
+        r"""Gets the charge_info of this OpengaussRestoreInstanceRequest.
 
         :return: The charge_info of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
@@ -356,7 +356,7 @@ class OpengaussRestoreInstanceRequest:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this OpengaussRestoreInstanceRequest.
+        r"""Sets the charge_info of this OpengaussRestoreInstanceRequest.
 
         :param charge_info: The charge_info of this OpengaussRestoreInstanceRequest.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
@@ -365,7 +365,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def restore_point(self):
-        """Gets the restore_point of this OpengaussRestoreInstanceRequest.
+        r"""Gets the restore_point of this OpengaussRestoreInstanceRequest.
 
         :return: The restore_point of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestorePoint`
@@ -374,7 +374,7 @@ class OpengaussRestoreInstanceRequest:
 
     @restore_point.setter
     def restore_point(self, restore_point):
-        """Sets the restore_point of this OpengaussRestoreInstanceRequest.
+        r"""Sets the restore_point of this OpengaussRestoreInstanceRequest.
 
         :param restore_point: The restore_point of this OpengaussRestoreInstanceRequest.
         :type restore_point: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestorePoint`
@@ -383,7 +383,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this OpengaussRestoreInstanceRequest.
+        r"""Gets the backup_strategy of this OpengaussRestoreInstanceRequest.
 
         :return: The backup_strategy of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
@@ -392,7 +392,7 @@ class OpengaussRestoreInstanceRequest:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this OpengaussRestoreInstanceRequest.
+        r"""Sets the backup_strategy of this OpengaussRestoreInstanceRequest.
 
         :param backup_strategy: The backup_strategy of this OpengaussRestoreInstanceRequest.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
@@ -401,7 +401,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def enable_parallel_restore(self):
-        """Gets the enable_parallel_restore of this OpengaussRestoreInstanceRequest.
+        r"""Gets the enable_parallel_restore of this OpengaussRestoreInstanceRequest.
 
         是否支持备份并行恢复。当不传该参数时，企业版默认为不支持，主备版默认支持。
 
@@ -412,7 +412,7 @@ class OpengaussRestoreInstanceRequest:
 
     @enable_parallel_restore.setter
     def enable_parallel_restore(self, enable_parallel_restore):
-        """Sets the enable_parallel_restore of this OpengaussRestoreInstanceRequest.
+        r"""Sets the enable_parallel_restore of this OpengaussRestoreInstanceRequest.
 
         是否支持备份并行恢复。当不传该参数时，企业版默认为不支持，主备版默认支持。
 
@@ -423,7 +423,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this OpengaussRestoreInstanceRequest.
+        r"""Gets the configuration_id of this OpengaussRestoreInstanceRequest.
 
         参数组ID，当不传该参数时，使用系统默认的参数模板。
 
@@ -434,7 +434,7 @@ class OpengaussRestoreInstanceRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this OpengaussRestoreInstanceRequest.
+        r"""Sets the configuration_id of this OpengaussRestoreInstanceRequest.
 
         参数组ID，当不传该参数时，使用系统默认的参数模板。
 
@@ -445,7 +445,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this OpengaussRestoreInstanceRequest.
+        r"""Gets the enterprise_project_id of this OpengaussRestoreInstanceRequest.
 
         企业项目ID。
 
@@ -456,7 +456,7 @@ class OpengaussRestoreInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this OpengaussRestoreInstanceRequest.
+        r"""Sets the enterprise_project_id of this OpengaussRestoreInstanceRequest.
 
         企业项目ID。
 
@@ -467,7 +467,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def port(self):
-        """Gets the port of this OpengaussRestoreInstanceRequest.
+        r"""Gets the port of this OpengaussRestoreInstanceRequest.
 
         数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
@@ -478,7 +478,7 @@ class OpengaussRestoreInstanceRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this OpengaussRestoreInstanceRequest.
+        r"""Sets the port of this OpengaussRestoreInstanceRequest.
 
         数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
@@ -489,7 +489,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this OpengaussRestoreInstanceRequest.
+        r"""Gets the time_zone of this OpengaussRestoreInstanceRequest.
 
         时区。  - 不选择时，国内站默认为UTC+08:00，国际站默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
 
@@ -500,7 +500,7 @@ class OpengaussRestoreInstanceRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this OpengaussRestoreInstanceRequest.
+        r"""Sets the time_zone of this OpengaussRestoreInstanceRequest.
 
         时区。  - 不选择时，国内站默认为UTC+08:00，国际站默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
 
@@ -511,7 +511,7 @@ class OpengaussRestoreInstanceRequest:
 
     @property
     def enable_force_switch(self):
-        """Gets the enable_force_switch of this OpengaussRestoreInstanceRequest.
+        r"""Gets the enable_force_switch of this OpengaussRestoreInstanceRequest.
 
         enable_force_switch表示是否开启备机强升主功能，仅支持取值true，false。 enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
 
@@ -522,7 +522,7 @@ class OpengaussRestoreInstanceRequest:
 
     @enable_force_switch.setter
     def enable_force_switch(self, enable_force_switch):
-        """Sets the enable_force_switch of this OpengaussRestoreInstanceRequest.
+        r"""Sets the enable_force_switch of this OpengaussRestoreInstanceRequest.
 
         enable_force_switch表示是否开启备机强升主功能，仅支持取值true，false。 enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
 

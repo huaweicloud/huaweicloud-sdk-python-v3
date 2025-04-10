@@ -28,7 +28,7 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, request_id=None):
-        """ChangeAvailabilityZoneResponse
+        r"""ChangeAvailabilityZoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ChangeAvailabilityZoneResponse.
+        r"""Gets the instance of this ChangeAvailabilityZoneResponse.
 
         :return: The instance of this ChangeAvailabilityZoneResponse.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -60,7 +60,7 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ChangeAvailabilityZoneResponse.
+        r"""Sets the instance of this ChangeAvailabilityZoneResponse.
 
         :param instance: The instance of this ChangeAvailabilityZoneResponse.
         :type instance: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -69,7 +69,7 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ChangeAvailabilityZoneResponse.
+        r"""Gets the request_id of this ChangeAvailabilityZoneResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ChangeAvailabilityZoneResponse.
+        r"""Sets the request_id of this ChangeAvailabilityZoneResponse.
 
         请求ID
 

@@ -37,7 +37,7 @@ class ImportDefaultCategoryResultDto:
     }
 
     def __init__(self, import_status=None, import_error_message=None, children=None, rule_result=None, uuid=None, name=None, description=None):
-        """ImportDefaultCategoryResultDto
+        r"""ImportDefaultCategoryResultDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def import_status(self):
-        """Gets the import_status of this ImportDefaultCategoryResultDto.
+        r"""Gets the import_status of this ImportDefaultCategoryResultDto.
 
         导入状态 * success 导入成功 * failed 导入失败
 
@@ -96,7 +96,7 @@ class ImportDefaultCategoryResultDto:
 
     @import_status.setter
     def import_status(self, import_status):
-        """Sets the import_status of this ImportDefaultCategoryResultDto.
+        r"""Sets the import_status of this ImportDefaultCategoryResultDto.
 
         导入状态 * success 导入成功 * failed 导入失败
 
@@ -107,7 +107,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def import_error_message(self):
-        """Gets the import_error_message of this ImportDefaultCategoryResultDto.
+        r"""Gets the import_error_message of this ImportDefaultCategoryResultDto.
 
         导入错误原因。
 
@@ -118,7 +118,7 @@ class ImportDefaultCategoryResultDto:
 
     @import_error_message.setter
     def import_error_message(self, import_error_message):
-        """Sets the import_error_message of this ImportDefaultCategoryResultDto.
+        r"""Sets the import_error_message of this ImportDefaultCategoryResultDto.
 
         导入错误原因。
 
@@ -129,7 +129,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def children(self):
-        """Gets the children of this ImportDefaultCategoryResultDto.
+        r"""Gets the children of this ImportDefaultCategoryResultDto.
 
         子分类导入结果。
 
@@ -140,7 +140,7 @@ class ImportDefaultCategoryResultDto:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ImportDefaultCategoryResultDto.
+        r"""Sets the children of this ImportDefaultCategoryResultDto.
 
         子分类导入结果。
 
@@ -151,7 +151,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def rule_result(self):
-        """Gets the rule_result of this ImportDefaultCategoryResultDto.
+        r"""Gets the rule_result of this ImportDefaultCategoryResultDto.
 
         此分类绑定的规则导入的结果。
 
@@ -162,7 +162,7 @@ class ImportDefaultCategoryResultDto:
 
     @rule_result.setter
     def rule_result(self, rule_result):
-        """Sets the rule_result of this ImportDefaultCategoryResultDto.
+        r"""Sets the rule_result of this ImportDefaultCategoryResultDto.
 
         此分类绑定的规则导入的结果。
 
@@ -173,7 +173,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def uuid(self):
-        """Gets the uuid of this ImportDefaultCategoryResultDto.
+        r"""Gets the uuid of this ImportDefaultCategoryResultDto.
 
         数据分类id。
 
@@ -184,7 +184,7 @@ class ImportDefaultCategoryResultDto:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ImportDefaultCategoryResultDto.
+        r"""Sets the uuid of this ImportDefaultCategoryResultDto.
 
         数据分类id。
 
@@ -195,7 +195,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def name(self):
-        """Gets the name of this ImportDefaultCategoryResultDto.
+        r"""Gets the name of this ImportDefaultCategoryResultDto.
 
         数据分类名称。
 
@@ -206,7 +206,7 @@ class ImportDefaultCategoryResultDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportDefaultCategoryResultDto.
+        r"""Sets the name of this ImportDefaultCategoryResultDto.
 
         数据分类名称。
 
@@ -217,7 +217,7 @@ class ImportDefaultCategoryResultDto:
 
     @property
     def description(self):
-        """Gets the description of this ImportDefaultCategoryResultDto.
+        r"""Gets the description of this ImportDefaultCategoryResultDto.
 
         数据分类描述。
 
@@ -228,7 +228,7 @@ class ImportDefaultCategoryResultDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImportDefaultCategoryResultDto.
+        r"""Sets the description of this ImportDefaultCategoryResultDto.
 
         数据分类描述。
 

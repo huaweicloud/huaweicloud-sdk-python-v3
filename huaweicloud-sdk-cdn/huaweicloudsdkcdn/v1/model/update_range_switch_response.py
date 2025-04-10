@@ -28,7 +28,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
     }
 
     def __init__(self, origin_range=None, x_request_id=None):
-        """UpdateRangeSwitchResponse
+        r"""UpdateRangeSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
 
     @property
     def origin_range(self):
-        """Gets the origin_range of this UpdateRangeSwitchResponse.
+        r"""Gets the origin_range of this UpdateRangeSwitchResponse.
 
         :return: The origin_range of this UpdateRangeSwitchResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
@@ -60,7 +60,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
 
     @origin_range.setter
     def origin_range(self, origin_range):
-        """Sets the origin_range of this UpdateRangeSwitchResponse.
+        r"""Sets the origin_range of this UpdateRangeSwitchResponse.
 
         :param origin_range: The origin_range of this UpdateRangeSwitchResponse.
         :type origin_range: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
@@ -69,7 +69,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateRangeSwitchResponse.
+        r"""Gets the x_request_id of this UpdateRangeSwitchResponse.
 
         :return: The x_request_id of this UpdateRangeSwitchResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateRangeSwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateRangeSwitchResponse.
+        r"""Sets the x_request_id of this UpdateRangeSwitchResponse.
 
         :param x_request_id: The x_request_id of this UpdateRangeSwitchResponse.
         :type x_request_id: str

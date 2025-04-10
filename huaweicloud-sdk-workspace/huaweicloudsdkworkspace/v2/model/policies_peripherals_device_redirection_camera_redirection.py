@@ -27,7 +27,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
     }
 
     def __init__(self, video_compress_enable=None, options=None):
-        """PoliciesPeripheralsDeviceRedirectionCameraRedirection
+        r"""PoliciesPeripheralsDeviceRedirectionCameraRedirection
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
 
     @property
     def video_compress_enable(self):
-        """Gets the video_compress_enable of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
+        r"""Gets the video_compress_enable of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
 
         是否开启摄像头设备重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
 
     @video_compress_enable.setter
     def video_compress_enable(self, video_compress_enable):
-        """Sets the video_compress_enable of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
+        r"""Sets the video_compress_enable of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
 
         是否开启摄像头设备重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
+        r"""Gets the options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDeviceRedirectionCameraRedirectionOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
+        r"""Sets the options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDeviceRedirectionCameraRedirectionOptions`

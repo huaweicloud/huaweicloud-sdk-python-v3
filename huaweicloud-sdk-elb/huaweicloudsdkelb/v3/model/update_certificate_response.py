@@ -28,7 +28,7 @@ class UpdateCertificateResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, certificate=None):
-        """UpdateCertificateResponse
+        r"""UpdateCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateCertificateResponse.
+        r"""Gets the request_id of this UpdateCertificateResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateCertificateResponse.
+        r"""Sets the request_id of this UpdateCertificateResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateCertificateResponse.
+        r"""Gets the certificate of this UpdateCertificateResponse.
 
         :return: The certificate of this UpdateCertificateResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.CertificateInfo`
@@ -82,7 +82,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateCertificateResponse.
+        r"""Sets the certificate of this UpdateCertificateResponse.
 
         :param certificate: The certificate of this UpdateCertificateResponse.
         :type certificate: :class:`huaweicloudsdkelb.v3.CertificateInfo`

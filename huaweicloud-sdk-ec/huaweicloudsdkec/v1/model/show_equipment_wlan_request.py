@@ -27,7 +27,7 @@ class ShowEquipmentWlanRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None):
-        """ShowEquipmentWlanRequest
+        r"""ShowEquipmentWlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEquipmentWlanRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ShowEquipmentWlanRequest.
+        r"""Gets the ieg_id of this ShowEquipmentWlanRequest.
 
         智能企业网关ID
 
@@ -59,7 +59,7 @@ class ShowEquipmentWlanRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ShowEquipmentWlanRequest.
+        r"""Sets the ieg_id of this ShowEquipmentWlanRequest.
 
         智能企业网关ID
 
@@ -70,7 +70,7 @@ class ShowEquipmentWlanRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this ShowEquipmentWlanRequest.
+        r"""Gets the equipment_id of this ShowEquipmentWlanRequest.
 
         智能企业网关设备ID
 
@@ -81,7 +81,7 @@ class ShowEquipmentWlanRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this ShowEquipmentWlanRequest.
+        r"""Sets the equipment_id of this ShowEquipmentWlanRequest.
 
         智能企业网关设备ID
 

@@ -25,7 +25,7 @@ class ShrinkClusterReq:
     }
 
     def __init__(self, shrink=None):
-        """ShrinkClusterReq
+        r"""ShrinkClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShrinkClusterReq:
 
     @property
     def shrink(self):
-        """Gets the shrink of this ShrinkClusterReq.
+        r"""Gets the shrink of this ShrinkClusterReq.
 
         需要缩容的节点类型和数量集合。
 
@@ -53,7 +53,7 @@ class ShrinkClusterReq:
 
     @shrink.setter
     def shrink(self, shrink):
-        """Sets the shrink of this ShrinkClusterReq.
+        r"""Sets the shrink of this ShrinkClusterReq.
 
         需要缩容的节点类型和数量集合。
 

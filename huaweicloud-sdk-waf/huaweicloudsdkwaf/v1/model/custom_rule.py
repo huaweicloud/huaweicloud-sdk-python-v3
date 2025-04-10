@@ -51,7 +51,7 @@ class CustomRule:
     }
 
     def __init__(self, id=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, timestamp=None, time=None, start=None, terminal=None, producer=None, name=None):
-        """CustomRule
+        r"""CustomRule
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class CustomRule:
 
     @property
     def id(self):
-        """Gets the id of this CustomRule.
+        r"""Gets the id of this CustomRule.
 
         规则ID
 
@@ -145,7 +145,7 @@ class CustomRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomRule.
+        r"""Sets the id of this CustomRule.
 
         规则ID
 
@@ -156,7 +156,7 @@ class CustomRule:
 
     @property
     def policyid(self):
-        """Gets the policyid of this CustomRule.
+        r"""Gets the policyid of this CustomRule.
 
         策略ID
 
@@ -167,7 +167,7 @@ class CustomRule:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CustomRule.
+        r"""Sets the policyid of this CustomRule.
 
         策略ID
 
@@ -178,7 +178,7 @@ class CustomRule:
 
     @property
     def description(self):
-        """Gets the description of this CustomRule.
+        r"""Gets the description of this CustomRule.
 
         规则描述
 
@@ -189,7 +189,7 @@ class CustomRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomRule.
+        r"""Sets the description of this CustomRule.
 
         规则描述
 
@@ -200,7 +200,7 @@ class CustomRule:
 
     @property
     def status(self):
-        """Gets the status of this CustomRule.
+        r"""Gets the status of this CustomRule.
 
         规则状态，0：关闭，1：开启
 
@@ -211,7 +211,7 @@ class CustomRule:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CustomRule.
+        r"""Sets the status of this CustomRule.
 
         规则状态，0：关闭，1：开启
 
@@ -222,7 +222,7 @@ class CustomRule:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CustomRule.
+        r"""Gets the conditions of this CustomRule.
 
         匹配条件列表，匹配条件必须同时满足。
 
@@ -233,7 +233,7 @@ class CustomRule:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CustomRule.
+        r"""Sets the conditions of this CustomRule.
 
         匹配条件列表，匹配条件必须同时满足。
 
@@ -244,7 +244,7 @@ class CustomRule:
 
     @property
     def action(self):
-        """Gets the action of this CustomRule.
+        r"""Gets the action of this CustomRule.
 
         :return: The action of this CustomRule.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -253,7 +253,7 @@ class CustomRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CustomRule.
+        r"""Sets the action of this CustomRule.
 
         :param action: The action of this CustomRule.
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -262,7 +262,7 @@ class CustomRule:
 
     @property
     def action_mode(self):
-        """Gets the action_mode of this CustomRule.
+        r"""Gets the action_mode of this CustomRule.
 
         预留参数，可忽略。
 
@@ -273,7 +273,7 @@ class CustomRule:
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        """Sets the action_mode of this CustomRule.
+        r"""Sets the action_mode of this CustomRule.
 
         预留参数，可忽略。
 
@@ -284,7 +284,7 @@ class CustomRule:
 
     @property
     def priority(self):
-        """Gets the priority of this CustomRule.
+        r"""Gets the priority of this CustomRule.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -295,7 +295,7 @@ class CustomRule:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CustomRule.
+        r"""Sets the priority of this CustomRule.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -306,7 +306,7 @@ class CustomRule:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CustomRule.
+        r"""Gets the timestamp of this CustomRule.
 
         创建精准防护规则的时间戳
 
@@ -317,7 +317,7 @@ class CustomRule:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CustomRule.
+        r"""Sets the timestamp of this CustomRule.
 
         创建精准防护规则的时间戳
 
@@ -328,7 +328,7 @@ class CustomRule:
 
     @property
     def time(self):
-        """Gets the time of this CustomRule.
+        r"""Gets the time of this CustomRule.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -339,7 +339,7 @@ class CustomRule:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this CustomRule.
+        r"""Sets the time of this CustomRule.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -350,7 +350,7 @@ class CustomRule:
 
     @property
     def start(self):
-        """Gets the start of this CustomRule.
+        r"""Gets the start of this CustomRule.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
@@ -361,7 +361,7 @@ class CustomRule:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this CustomRule.
+        r"""Sets the start of this CustomRule.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
@@ -372,7 +372,7 @@ class CustomRule:
 
     @property
     def terminal(self):
-        """Gets the terminal of this CustomRule.
+        r"""Gets the terminal of this CustomRule.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
@@ -383,7 +383,7 @@ class CustomRule:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this CustomRule.
+        r"""Sets the terminal of this CustomRule.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
@@ -394,7 +394,7 @@ class CustomRule:
 
     @property
     def producer(self):
-        """Gets the producer of this CustomRule.
+        r"""Gets the producer of this CustomRule.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -405,7 +405,7 @@ class CustomRule:
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this CustomRule.
+        r"""Sets the producer of this CustomRule.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -416,7 +416,7 @@ class CustomRule:
 
     @property
     def name(self):
-        """Gets the name of this CustomRule.
+        r"""Gets the name of this CustomRule.
 
         规则名称
 
@@ -427,7 +427,7 @@ class CustomRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomRule.
+        r"""Sets the name of this CustomRule.
 
         规则名称
 

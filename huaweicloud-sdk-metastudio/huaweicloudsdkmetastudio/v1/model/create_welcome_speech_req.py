@@ -29,7 +29,7 @@ class CreateWelcomeSpeechReq:
     }
 
     def __init__(self, robot_id=None, welcome_speech=None, language=None):
-        """CreateWelcomeSpeechReq
+        r"""CreateWelcomeSpeechReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateWelcomeSpeechReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateWelcomeSpeechReq.
+        r"""Gets the robot_id of this CreateWelcomeSpeechReq.
 
         应用ID。
 
@@ -66,7 +66,7 @@ class CreateWelcomeSpeechReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateWelcomeSpeechReq.
+        r"""Sets the robot_id of this CreateWelcomeSpeechReq.
 
         应用ID。
 
@@ -77,7 +77,7 @@ class CreateWelcomeSpeechReq:
 
     @property
     def welcome_speech(self):
-        """Gets the welcome_speech of this CreateWelcomeSpeechReq.
+        r"""Gets the welcome_speech of this CreateWelcomeSpeechReq.
 
         欢迎词。
 
@@ -88,7 +88,7 @@ class CreateWelcomeSpeechReq:
 
     @welcome_speech.setter
     def welcome_speech(self, welcome_speech):
-        """Sets the welcome_speech of this CreateWelcomeSpeechReq.
+        r"""Sets the welcome_speech of this CreateWelcomeSpeechReq.
 
         欢迎词。
 
@@ -99,7 +99,7 @@ class CreateWelcomeSpeechReq:
 
     @property
     def language(self):
-        """Gets the language of this CreateWelcomeSpeechReq.
+        r"""Gets the language of this CreateWelcomeSpeechReq.
 
         :return: The language of this CreateWelcomeSpeechReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -108,7 +108,7 @@ class CreateWelcomeSpeechReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateWelcomeSpeechReq.
+        r"""Sets the language of this CreateWelcomeSpeechReq.
 
         :param language: The language of this CreateWelcomeSpeechReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`

@@ -27,7 +27,7 @@ class CreateTrafficMirrorFilterOption:
     }
 
     def __init__(self, description=None, name=None):
-        """CreateTrafficMirrorFilterOption
+        r"""CreateTrafficMirrorFilterOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTrafficMirrorFilterOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateTrafficMirrorFilterOption.
+        r"""Gets the description of this CreateTrafficMirrorFilterOption.
 
         功能说明：流量镜像筛选条件的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -60,7 +60,7 @@ class CreateTrafficMirrorFilterOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTrafficMirrorFilterOption.
+        r"""Sets the description of this CreateTrafficMirrorFilterOption.
 
         功能说明：流量镜像筛选条件的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -71,7 +71,7 @@ class CreateTrafficMirrorFilterOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateTrafficMirrorFilterOption.
+        r"""Gets the name of this CreateTrafficMirrorFilterOption.
 
         功能说明：流量镜像筛选条件的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -82,7 +82,7 @@ class CreateTrafficMirrorFilterOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTrafficMirrorFilterOption.
+        r"""Sets the name of this CreateTrafficMirrorFilterOption.
 
         功能说明：流量镜像筛选条件的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 

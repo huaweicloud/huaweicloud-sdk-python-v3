@@ -29,7 +29,7 @@ class MicroServiceCreate:
     }
 
     def __init__(self, service_type=None, cse_info=None, cce_info=None):
-        """MicroServiceCreate
+        r"""MicroServiceCreate
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MicroServiceCreate:
 
     @property
     def service_type(self):
-        """Gets the service_type of this MicroServiceCreate.
+        r"""Gets the service_type of this MicroServiceCreate.
 
         微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（暂不支持）
 
@@ -68,7 +68,7 @@ class MicroServiceCreate:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this MicroServiceCreate.
+        r"""Sets the service_type of this MicroServiceCreate.
 
         微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（暂不支持）
 
@@ -79,7 +79,7 @@ class MicroServiceCreate:
 
     @property
     def cse_info(self):
-        """Gets the cse_info of this MicroServiceCreate.
+        r"""Gets the cse_info of this MicroServiceCreate.
 
         :return: The cse_info of this MicroServiceCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCSEBase`
@@ -88,7 +88,7 @@ class MicroServiceCreate:
 
     @cse_info.setter
     def cse_info(self, cse_info):
-        """Sets the cse_info of this MicroServiceCreate.
+        r"""Sets the cse_info of this MicroServiceCreate.
 
         :param cse_info: The cse_info of this MicroServiceCreate.
         :type cse_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCSEBase`
@@ -97,7 +97,7 @@ class MicroServiceCreate:
 
     @property
     def cce_info(self):
-        """Gets the cce_info of this MicroServiceCreate.
+        r"""Gets the cce_info of this MicroServiceCreate.
 
         :return: The cce_info of this MicroServiceCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCCEBase`
@@ -106,7 +106,7 @@ class MicroServiceCreate:
 
     @cce_info.setter
     def cce_info(self, cce_info):
-        """Sets the cce_info of this MicroServiceCreate.
+        r"""Sets the cce_info of this MicroServiceCreate.
 
         :param cce_info: The cce_info of this MicroServiceCreate.
         :type cce_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCCEBase`

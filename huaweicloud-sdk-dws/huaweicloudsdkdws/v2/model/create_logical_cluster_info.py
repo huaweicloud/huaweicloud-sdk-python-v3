@@ -27,7 +27,7 @@ class CreateLogicalClusterInfo:
     }
 
     def __init__(self, logical_cluster_name=None, cluster_rings=None):
-        """CreateLogicalClusterInfo
+        r"""CreateLogicalClusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateLogicalClusterInfo:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this CreateLogicalClusterInfo.
+        r"""Gets the logical_cluster_name of this CreateLogicalClusterInfo.
 
         逻辑集群名称
 
@@ -59,7 +59,7 @@ class CreateLogicalClusterInfo:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this CreateLogicalClusterInfo.
+        r"""Sets the logical_cluster_name of this CreateLogicalClusterInfo.
 
         逻辑集群名称
 
@@ -70,7 +70,7 @@ class CreateLogicalClusterInfo:
 
     @property
     def cluster_rings(self):
-        """Gets the cluster_rings of this CreateLogicalClusterInfo.
+        r"""Gets the cluster_rings of this CreateLogicalClusterInfo.
 
         逻辑集群环信息
 
@@ -81,7 +81,7 @@ class CreateLogicalClusterInfo:
 
     @cluster_rings.setter
     def cluster_rings(self, cluster_rings):
-        """Sets the cluster_rings of this CreateLogicalClusterInfo.
+        r"""Sets the cluster_rings of this CreateLogicalClusterInfo.
 
         逻辑集群环信息
 

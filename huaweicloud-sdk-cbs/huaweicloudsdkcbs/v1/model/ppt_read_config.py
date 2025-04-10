@@ -29,7 +29,7 @@ class PPTReadConfig:
     }
 
     def __init__(self, read_content=None, image_id=None, resolution=None):
-        """PPTReadConfig
+        r"""PPTReadConfig
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PPTReadConfig:
 
     @property
     def read_content(self):
-        """Gets the read_content of this PPTReadConfig.
+        r"""Gets the read_content of this PPTReadConfig.
 
         播报内容，长度为3~2500
 
@@ -65,7 +65,7 @@ class PPTReadConfig:
 
     @read_content.setter
     def read_content(self, read_content):
-        """Sets the read_content of this PPTReadConfig.
+        r"""Sets the read_content of this PPTReadConfig.
 
         播报内容，长度为3~2500
 
@@ -76,7 +76,7 @@ class PPTReadConfig:
 
     @property
     def image_id(self):
-        """Gets the image_id of this PPTReadConfig.
+        r"""Gets the image_id of this PPTReadConfig.
 
         PPT转化有的图片id
 
@@ -87,7 +87,7 @@ class PPTReadConfig:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this PPTReadConfig.
+        r"""Sets the image_id of this PPTReadConfig.
 
         PPT转化有的图片id
 
@@ -98,7 +98,7 @@ class PPTReadConfig:
 
     @property
     def resolution(self):
-        """Gets the resolution of this PPTReadConfig.
+        r"""Gets the resolution of this PPTReadConfig.
 
         :return: The resolution of this PPTReadConfig.
         :rtype: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -107,7 +107,7 @@ class PPTReadConfig:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this PPTReadConfig.
+        r"""Sets the resolution of this PPTReadConfig.
 
         :param resolution: The resolution of this PPTReadConfig.
         :type resolution: :class:`huaweicloudsdkcbs.v1.Resolution`

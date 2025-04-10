@@ -29,7 +29,7 @@ class QueueUserPrivilege:
     }
 
     def __init__(self, is_admin=None, user_name=None, privileges=None):
-        """QueueUserPrivilege
+        r"""QueueUserPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueueUserPrivilege:
 
     @property
     def is_admin(self):
-        """Gets the is_admin of this QueueUserPrivilege.
+        r"""Gets the is_admin of this QueueUserPrivilege.
 
         判断用户是否为管理员。
 
@@ -68,7 +68,7 @@ class QueueUserPrivilege:
 
     @is_admin.setter
     def is_admin(self, is_admin):
-        """Sets the is_admin of this QueueUserPrivilege.
+        r"""Sets the is_admin of this QueueUserPrivilege.
 
         判断用户是否为管理员。
 
@@ -79,7 +79,7 @@ class QueueUserPrivilege:
 
     @property
     def user_name(self):
-        """Gets the user_name of this QueueUserPrivilege.
+        r"""Gets the user_name of this QueueUserPrivilege.
 
         用户名称，即该用户在当前数据库上有权限。
 
@@ -90,7 +90,7 @@ class QueueUserPrivilege:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this QueueUserPrivilege.
+        r"""Sets the user_name of this QueueUserPrivilege.
 
         用户名称，即该用户在当前数据库上有权限。
 
@@ -101,7 +101,7 @@ class QueueUserPrivilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this QueueUserPrivilege.
+        r"""Gets the privileges of this QueueUserPrivilege.
 
         该用户在数据库上的权限
 
@@ -112,7 +112,7 @@ class QueueUserPrivilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this QueueUserPrivilege.
+        r"""Sets the privileges of this QueueUserPrivilege.
 
         该用户在数据库上的权限
 

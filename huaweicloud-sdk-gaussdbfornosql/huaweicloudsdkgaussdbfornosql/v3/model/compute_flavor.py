@@ -33,7 +33,7 @@ class ComputeFlavor:
     }
 
     def __init__(self, vcpus=None, ram=None, spec_code=None, az_status=None, region_status=None):
-        """ComputeFlavor
+        r"""ComputeFlavor
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ComputeFlavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ComputeFlavor.
+        r"""Gets the vcpus of this ComputeFlavor.
 
         cpu核数。
 
@@ -77,7 +77,7 @@ class ComputeFlavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ComputeFlavor.
+        r"""Sets the vcpus of this ComputeFlavor.
 
         cpu核数。
 
@@ -88,7 +88,7 @@ class ComputeFlavor:
 
     @property
     def ram(self):
-        """Gets the ram of this ComputeFlavor.
+        r"""Gets the ram of this ComputeFlavor.
 
         内存大小，单位为GB。
 
@@ -99,7 +99,7 @@ class ComputeFlavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ComputeFlavor.
+        r"""Sets the ram of this ComputeFlavor.
 
         内存大小，单位为GB。
 
@@ -110,7 +110,7 @@ class ComputeFlavor:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ComputeFlavor.
+        r"""Gets the spec_code of this ComputeFlavor.
 
         规格码。
 
@@ -121,7 +121,7 @@ class ComputeFlavor:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ComputeFlavor.
+        r"""Sets the spec_code of this ComputeFlavor.
 
         规格码。
 
@@ -132,7 +132,7 @@ class ComputeFlavor:
 
     @property
     def az_status(self):
-        """Gets the az_status of this ComputeFlavor.
+        r"""Gets the az_status of this ComputeFlavor.
 
         可用区状态。
 
@@ -143,7 +143,7 @@ class ComputeFlavor:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this ComputeFlavor.
+        r"""Sets the az_status of this ComputeFlavor.
 
         可用区状态。
 
@@ -154,7 +154,7 @@ class ComputeFlavor:
 
     @property
     def region_status(self):
-        """Gets the region_status of this ComputeFlavor.
+        r"""Gets the region_status of this ComputeFlavor.
 
         Region状态。
 
@@ -165,7 +165,7 @@ class ComputeFlavor:
 
     @region_status.setter
     def region_status(self, region_status):
-        """Sets the region_status of this ComputeFlavor.
+        r"""Sets the region_status of this ComputeFlavor.
 
         Region状态。
 

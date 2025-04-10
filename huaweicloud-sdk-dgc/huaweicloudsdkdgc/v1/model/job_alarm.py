@@ -27,7 +27,7 @@ class JobAlarm:
     }
 
     def __init__(self, alarm_type=None, topic_urn=None):
-        """JobAlarm
+        r"""JobAlarm
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class JobAlarm:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this JobAlarm.
+        r"""Gets the alarm_type of this JobAlarm.
 
         告警类型
 
@@ -59,7 +59,7 @@ class JobAlarm:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this JobAlarm.
+        r"""Sets the alarm_type of this JobAlarm.
 
         告警类型
 
@@ -70,7 +70,7 @@ class JobAlarm:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this JobAlarm.
+        r"""Gets the topic_urn of this JobAlarm.
 
         :return: The topic_urn of this JobAlarm.
         :rtype: str
@@ -79,7 +79,7 @@ class JobAlarm:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this JobAlarm.
+        r"""Sets the topic_urn of this JobAlarm.
 
         :param topic_urn: The topic_urn of this JobAlarm.
         :type topic_urn: str

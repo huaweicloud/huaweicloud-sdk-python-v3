@@ -26,7 +26,7 @@ class SendDlqMessageResponse(SdkResponse):
     }
 
     def __init__(self, resend_results=None):
-        """SendDlqMessageResponse
+        r"""SendDlqMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SendDlqMessageResponse(SdkResponse):
 
     @property
     def resend_results(self):
-        """Gets the resend_results of this SendDlqMessageResponse.
+        r"""Gets the resend_results of this SendDlqMessageResponse.
 
         重发死信消息结果。
 
@@ -55,7 +55,7 @@ class SendDlqMessageResponse(SdkResponse):
 
     @resend_results.setter
     def resend_results(self, resend_results):
-        """Sets the resend_results of this SendDlqMessageResponse.
+        r"""Sets the resend_results of this SendDlqMessageResponse.
 
         重发死信消息结果。
 

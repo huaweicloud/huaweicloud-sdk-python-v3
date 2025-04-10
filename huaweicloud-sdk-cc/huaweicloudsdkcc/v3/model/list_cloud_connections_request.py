@@ -41,7 +41,7 @@ class ListCloudConnectionsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, enterprise_project_id=None, status=None, type=None, used_scene=None):
-        """ListCloudConnectionsRequest
+        r"""ListCloudConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudConnectionsRequest.
+        r"""Gets the limit of this ListCloudConnectionsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -110,7 +110,7 @@ class ListCloudConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudConnectionsRequest.
+        r"""Sets the limit of this ListCloudConnectionsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -121,7 +121,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCloudConnectionsRequest.
+        r"""Gets the marker of this ListCloudConnectionsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -132,7 +132,7 @@ class ListCloudConnectionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCloudConnectionsRequest.
+        r"""Sets the marker of this ListCloudConnectionsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -143,7 +143,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCloudConnectionsRequest.
+        r"""Gets the id of this ListCloudConnectionsRequest.
 
         根据id查询，可查询多个id。
 
@@ -154,7 +154,7 @@ class ListCloudConnectionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCloudConnectionsRequest.
+        r"""Sets the id of this ListCloudConnectionsRequest.
 
         根据id查询，可查询多个id。
 
@@ -165,7 +165,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCloudConnectionsRequest.
+        r"""Gets the name of this ListCloudConnectionsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -176,7 +176,7 @@ class ListCloudConnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCloudConnectionsRequest.
+        r"""Sets the name of this ListCloudConnectionsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -187,7 +187,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListCloudConnectionsRequest.
+        r"""Gets the description of this ListCloudConnectionsRequest.
 
         根据描述查询，可查询多个描述。
 
@@ -198,7 +198,7 @@ class ListCloudConnectionsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListCloudConnectionsRequest.
+        r"""Sets the description of this ListCloudConnectionsRequest.
 
         根据描述查询，可查询多个描述。
 
@@ -209,7 +209,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCloudConnectionsRequest.
+        r"""Gets the enterprise_project_id of this ListCloudConnectionsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -220,7 +220,7 @@ class ListCloudConnectionsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCloudConnectionsRequest.
+        r"""Sets the enterprise_project_id of this ListCloudConnectionsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -231,7 +231,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCloudConnectionsRequest.
+        r"""Gets the status of this ListCloudConnectionsRequest.
 
         根据状态过滤云连接实例列表。ACTIVE：表示状态可用。
 
@@ -242,7 +242,7 @@ class ListCloudConnectionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCloudConnectionsRequest.
+        r"""Sets the status of this ListCloudConnectionsRequest.
 
         根据状态过滤云连接实例列表。ACTIVE：表示状态可用。
 
@@ -253,7 +253,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListCloudConnectionsRequest.
+        r"""Gets the type of this ListCloudConnectionsRequest.
 
         根据类型过滤云连接实例列表。
 
@@ -264,7 +264,7 @@ class ListCloudConnectionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListCloudConnectionsRequest.
+        r"""Sets the type of this ListCloudConnectionsRequest.
 
         根据类型过滤云连接实例列表。
 
@@ -275,7 +275,7 @@ class ListCloudConnectionsRequest:
 
     @property
     def used_scene(self):
-        """Gets the used_scene of this ListCloudConnectionsRequest.
+        r"""Gets the used_scene of this ListCloudConnectionsRequest.
 
         根据使用场景过滤云连接实例列表。
 
@@ -286,7 +286,7 @@ class ListCloudConnectionsRequest:
 
     @used_scene.setter
     def used_scene(self, used_scene):
-        """Sets the used_scene of this ListCloudConnectionsRequest.
+        r"""Sets the used_scene of this ListCloudConnectionsRequest.
 
         根据使用场景过滤云连接实例列表。
 

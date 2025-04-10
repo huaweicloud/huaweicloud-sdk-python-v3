@@ -25,7 +25,7 @@ class EnablePolicyAssignmentRequest:
     }
 
     def __init__(self, policy_assignment_id=None):
-        """EnablePolicyAssignmentRequest
+        r"""EnablePolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnablePolicyAssignmentRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this EnablePolicyAssignmentRequest.
+        r"""Gets the policy_assignment_id of this EnablePolicyAssignmentRequest.
 
         规则ID
 
@@ -53,7 +53,7 @@ class EnablePolicyAssignmentRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this EnablePolicyAssignmentRequest.
+        r"""Sets the policy_assignment_id of this EnablePolicyAssignmentRequest.
 
         规则ID
 

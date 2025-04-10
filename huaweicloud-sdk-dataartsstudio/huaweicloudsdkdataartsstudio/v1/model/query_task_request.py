@@ -43,7 +43,7 @@ class QueryTaskRequest:
     }
 
     def __init__(self, user_name=None, name=None, data_source_type=None, data_connection_id=None, start_time=None, end_time=None, directory_id=None, bucket_name=None, limit=None, offset=None):
-        """QueryTaskRequest
+        r"""QueryTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class QueryTaskRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this QueryTaskRequest.
+        r"""Gets the user_name of this QueryTaskRequest.
 
         创建人
 
@@ -117,7 +117,7 @@ class QueryTaskRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this QueryTaskRequest.
+        r"""Sets the user_name of this QueryTaskRequest.
 
         创建人
 
@@ -128,7 +128,7 @@ class QueryTaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this QueryTaskRequest.
+        r"""Gets the name of this QueryTaskRequest.
 
         任务名
 
@@ -139,7 +139,7 @@ class QueryTaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryTaskRequest.
+        r"""Sets the name of this QueryTaskRequest.
 
         任务名
 
@@ -150,7 +150,7 @@ class QueryTaskRequest:
 
     @property
     def data_source_type(self):
-        """Gets the data_source_type of this QueryTaskRequest.
+        r"""Gets the data_source_type of this QueryTaskRequest.
 
         数据源类型
 
@@ -161,7 +161,7 @@ class QueryTaskRequest:
 
     @data_source_type.setter
     def data_source_type(self, data_source_type):
-        """Sets the data_source_type of this QueryTaskRequest.
+        r"""Sets the data_source_type of this QueryTaskRequest.
 
         数据源类型
 
@@ -172,7 +172,7 @@ class QueryTaskRequest:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this QueryTaskRequest.
+        r"""Gets the data_connection_id of this QueryTaskRequest.
 
         数据连接id
 
@@ -183,7 +183,7 @@ class QueryTaskRequest:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this QueryTaskRequest.
+        r"""Sets the data_connection_id of this QueryTaskRequest.
 
         数据连接id
 
@@ -194,7 +194,7 @@ class QueryTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryTaskRequest.
+        r"""Gets the start_time of this QueryTaskRequest.
 
         开始时间
 
@@ -205,7 +205,7 @@ class QueryTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryTaskRequest.
+        r"""Sets the start_time of this QueryTaskRequest.
 
         开始时间
 
@@ -216,7 +216,7 @@ class QueryTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryTaskRequest.
+        r"""Gets the end_time of this QueryTaskRequest.
 
         结束时间
 
@@ -227,7 +227,7 @@ class QueryTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryTaskRequest.
+        r"""Sets the end_time of this QueryTaskRequest.
 
         结束时间
 
@@ -238,7 +238,7 @@ class QueryTaskRequest:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this QueryTaskRequest.
+        r"""Gets the directory_id of this QueryTaskRequest.
 
         目录id
 
@@ -249,7 +249,7 @@ class QueryTaskRequest:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this QueryTaskRequest.
+        r"""Sets the directory_id of this QueryTaskRequest.
 
         目录id
 
@@ -260,7 +260,7 @@ class QueryTaskRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this QueryTaskRequest.
+        r"""Gets the bucket_name of this QueryTaskRequest.
 
         桶名
 
@@ -271,7 +271,7 @@ class QueryTaskRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this QueryTaskRequest.
+        r"""Sets the bucket_name of this QueryTaskRequest.
 
         桶名
 
@@ -282,7 +282,7 @@ class QueryTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryTaskRequest.
+        r"""Gets the limit of this QueryTaskRequest.
 
         分页参数limit，默认值：10
 
@@ -293,7 +293,7 @@ class QueryTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryTaskRequest.
+        r"""Sets the limit of this QueryTaskRequest.
 
         分页参数limit，默认值：10
 
@@ -304,7 +304,7 @@ class QueryTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryTaskRequest.
+        r"""Gets the offset of this QueryTaskRequest.
 
         分页参数offset，默认值：0
 
@@ -315,7 +315,7 @@ class QueryTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryTaskRequest.
+        r"""Sets the offset of this QueryTaskRequest.
 
         分页参数offset，默认值：0
 

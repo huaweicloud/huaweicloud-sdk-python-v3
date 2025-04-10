@@ -31,7 +31,7 @@ class NeutronUpdateFirewallPolicyOption:
     }
 
     def __init__(self, name=None, description=None, firewall_rules=None, audited=None):
-        """NeutronUpdateFirewallPolicyOption
+        r"""NeutronUpdateFirewallPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronUpdateFirewallPolicyOption.
+        r"""Gets the name of this NeutronUpdateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
 
@@ -75,7 +75,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronUpdateFirewallPolicyOption.
+        r"""Sets the name of this NeutronUpdateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
 
@@ -86,7 +86,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronUpdateFirewallPolicyOption.
+        r"""Gets the description of this NeutronUpdateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
 
@@ -97,7 +97,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronUpdateFirewallPolicyOption.
+        r"""Sets the description of this NeutronUpdateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
 
@@ -108,7 +108,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @property
     def firewall_rules(self):
-        """Gets the firewall_rules of this NeutronUpdateFirewallPolicyOption.
+        r"""Gets the firewall_rules of this NeutronUpdateFirewallPolicyOption.
 
         功能说明：网络ACL策略关联的规则列表
 
@@ -119,7 +119,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @firewall_rules.setter
     def firewall_rules(self, firewall_rules):
-        """Sets the firewall_rules of this NeutronUpdateFirewallPolicyOption.
+        r"""Sets the firewall_rules of this NeutronUpdateFirewallPolicyOption.
 
         功能说明：网络ACL策略关联的规则列表
 
@@ -130,7 +130,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @property
     def audited(self):
-        """Gets the audited of this NeutronUpdateFirewallPolicyOption.
+        r"""Gets the audited of this NeutronUpdateFirewallPolicyOption.
 
         审计标记。
 
@@ -141,7 +141,7 @@ class NeutronUpdateFirewallPolicyOption:
 
     @audited.setter
     def audited(self, audited):
-        """Sets the audited of this NeutronUpdateFirewallPolicyOption.
+        r"""Sets the audited of this NeutronUpdateFirewallPolicyOption.
 
         审计标记。
 

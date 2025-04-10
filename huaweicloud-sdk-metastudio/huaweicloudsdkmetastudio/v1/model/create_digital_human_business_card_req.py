@@ -47,7 +47,7 @@ class CreateDigitalHumanBusinessCardReq:
     }
 
     def __init__(self, business_card_type=None, card_templet_asset_id=None, card_text_config=None, card_image_config=None, introduction_type=None, introduction_text=None, voice_asset_id=None, introduction_audio_asset_id=None, video_asset_name=None, gender=None, review_config=None, callback_config=None):
-        """CreateDigitalHumanBusinessCardReq
+        r"""CreateDigitalHumanBusinessCardReq
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def business_card_type(self):
-        """Gets the business_card_type of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the business_card_type of this CreateDigitalHumanBusinessCardReq.
 
         数字人名片类型。 * 2D_DIGITAL_HUMAN_CARD：分身数字人名片。
 
@@ -127,7 +127,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @business_card_type.setter
     def business_card_type(self, business_card_type):
-        """Sets the business_card_type of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the business_card_type of this CreateDigitalHumanBusinessCardReq.
 
         数字人名片类型。 * 2D_DIGITAL_HUMAN_CARD：分身数字人名片。
 
@@ -138,7 +138,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def card_templet_asset_id(self):
-        """Gets the card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
 
         数字人名片模板资产ID，可以从资产库中查询。
 
@@ -149,7 +149,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @card_templet_asset_id.setter
     def card_templet_asset_id(self, card_templet_asset_id):
-        """Sets the card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the card_templet_asset_id of this CreateDigitalHumanBusinessCardReq.
 
         数字人名片模板资产ID，可以从资产库中查询。
 
@@ -160,7 +160,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def card_text_config(self):
-        """Gets the card_text_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the card_text_config of this CreateDigitalHumanBusinessCardReq.
 
         :return: The card_text_config of this CreateDigitalHumanBusinessCardReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
@@ -169,7 +169,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @card_text_config.setter
     def card_text_config(self, card_text_config):
-        """Sets the card_text_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the card_text_config of this CreateDigitalHumanBusinessCardReq.
 
         :param card_text_config: The card_text_config of this CreateDigitalHumanBusinessCardReq.
         :type card_text_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
@@ -178,7 +178,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def card_image_config(self):
-        """Gets the card_image_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the card_image_config of this CreateDigitalHumanBusinessCardReq.
 
         :return: The card_image_config of this CreateDigitalHumanBusinessCardReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BusinessCardImageConfig`
@@ -187,7 +187,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @card_image_config.setter
     def card_image_config(self, card_image_config):
-        """Sets the card_image_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the card_image_config of this CreateDigitalHumanBusinessCardReq.
 
         :param card_image_config: The card_image_config of this CreateDigitalHumanBusinessCardReq.
         :type card_image_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardImageConfig`
@@ -196,7 +196,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def introduction_type(self):
-        """Gets the introduction_type of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the introduction_type of this CreateDigitalHumanBusinessCardReq.
 
         自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音。文本驱动需要填写introduction_text和voice_asset_id参数。 * AUDIO: 语音驱动，需要在资产库中先上传语音资产。语音驱动需要填写introduction_audio_asset_id参数。
 
@@ -207,7 +207,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @introduction_type.setter
     def introduction_type(self, introduction_type):
-        """Sets the introduction_type of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the introduction_type of this CreateDigitalHumanBusinessCardReq.
 
         自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音。文本驱动需要填写introduction_text和voice_asset_id参数。 * AUDIO: 语音驱动，需要在资产库中先上传语音资产。语音驱动需要填写introduction_audio_asset_id参数。
 
@@ -218,7 +218,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def introduction_text(self):
-        """Gets the introduction_text of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the introduction_text of this CreateDigitalHumanBusinessCardReq.
 
         自我介绍文本，用于驱动数字人口型。
 
@@ -229,7 +229,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @introduction_text.setter
     def introduction_text(self, introduction_text):
-        """Sets the introduction_text of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the introduction_text of this CreateDigitalHumanBusinessCardReq.
 
         自我介绍文本，用于驱动数字人口型。
 
@@ -240,7 +240,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the voice_asset_id of this CreateDigitalHumanBusinessCardReq.
 
         音色资产ID，可以从资产库中查询。
 
@@ -251,7 +251,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the voice_asset_id of this CreateDigitalHumanBusinessCardReq.
 
         音色资产ID，可以从资产库中查询。
 
@@ -262,7 +262,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def introduction_audio_asset_id(self):
-        """Gets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
 
         自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
@@ -273,7 +273,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @introduction_audio_asset_id.setter
     def introduction_audio_asset_id(self, introduction_audio_asset_id):
-        """Sets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the introduction_audio_asset_id of this CreateDigitalHumanBusinessCardReq.
 
         自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
@@ -284,7 +284,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def video_asset_name(self):
-        """Gets the video_asset_name of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the video_asset_name of this CreateDigitalHumanBusinessCardReq.
 
         输出名片视频资产名称。默认取card_name的值
 
@@ -295,7 +295,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @video_asset_name.setter
     def video_asset_name(self, video_asset_name):
-        """Sets the video_asset_name of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the video_asset_name of this CreateDigitalHumanBusinessCardReq.
 
         输出名片视频资产名称。默认取card_name的值
 
@@ -306,7 +306,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def gender(self):
-        """Gets the gender of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the gender of this CreateDigitalHumanBusinessCardReq.
 
         性别。 * MALE：男性 * FEMALE：女性
 
@@ -317,7 +317,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the gender of this CreateDigitalHumanBusinessCardReq.
 
         性别。 * MALE：男性 * FEMALE：女性
 
@@ -328,7 +328,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def review_config(self):
-        """Gets the review_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the review_config of this CreateDigitalHumanBusinessCardReq.
 
         :return: The review_config of this CreateDigitalHumanBusinessCardReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -337,7 +337,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the review_config of this CreateDigitalHumanBusinessCardReq.
 
         :param review_config: The review_config of this CreateDigitalHumanBusinessCardReq.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -346,7 +346,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Gets the callback_config of this CreateDigitalHumanBusinessCardReq.
 
         :return: The callback_config of this CreateDigitalHumanBusinessCardReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
@@ -355,7 +355,7 @@ class CreateDigitalHumanBusinessCardReq:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this CreateDigitalHumanBusinessCardReq.
+        r"""Sets the callback_config of this CreateDigitalHumanBusinessCardReq.
 
         :param callback_config: The callback_config of this CreateDigitalHumanBusinessCardReq.
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`

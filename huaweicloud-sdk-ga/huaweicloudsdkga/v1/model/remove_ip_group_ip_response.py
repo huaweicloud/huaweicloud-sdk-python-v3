@@ -26,7 +26,7 @@ class RemoveIpGroupIpResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """RemoveIpGroupIpResponse
+        r"""RemoveIpGroupIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RemoveIpGroupIpResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this RemoveIpGroupIpResponse.
+        r"""Gets the request_id of this RemoveIpGroupIpResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class RemoveIpGroupIpResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this RemoveIpGroupIpResponse.
+        r"""Sets the request_id of this RemoveIpGroupIpResponse.
 
         请求ID。
 

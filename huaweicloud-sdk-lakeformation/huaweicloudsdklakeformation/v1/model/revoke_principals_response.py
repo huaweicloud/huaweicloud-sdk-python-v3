@@ -24,7 +24,7 @@ class RevokePrincipalsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RevokePrincipalsResponse
+        r"""RevokePrincipalsResponse
 
         The model defined in huaweicloud sdk
 

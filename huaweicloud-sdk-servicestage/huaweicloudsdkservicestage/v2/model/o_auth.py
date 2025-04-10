@@ -29,7 +29,7 @@ class OAuth:
     }
 
     def __init__(self, name=None, code=None, state=None):
-        """OAuth
+        r"""OAuth
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OAuth:
 
     @property
     def name(self):
-        """Gets the name of this OAuth.
+        r"""Gets the name of this OAuth.
 
         授权名称。
 
@@ -65,7 +65,7 @@ class OAuth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OAuth.
+        r"""Sets the name of this OAuth.
 
         授权名称。
 
@@ -76,7 +76,7 @@ class OAuth:
 
     @property
     def code(self):
-        """Gets the code of this OAuth.
+        r"""Gets the code of this OAuth.
 
         git仓库授权后，重定向回来的url里面的query参数。
 
@@ -87,7 +87,7 @@ class OAuth:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this OAuth.
+        r"""Sets the code of this OAuth.
 
         git仓库授权后，重定向回来的url里面的query参数。
 
@@ -98,7 +98,7 @@ class OAuth:
 
     @property
     def state(self):
-        """Gets the state of this OAuth.
+        r"""Gets the state of this OAuth.
 
         git仓库授权后，一次性的认证编码和随机串。
 
@@ -109,7 +109,7 @@ class OAuth:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this OAuth.
+        r"""Sets the state of this OAuth.
 
         git仓库授权后，一次性的认证编码和随机串。
 

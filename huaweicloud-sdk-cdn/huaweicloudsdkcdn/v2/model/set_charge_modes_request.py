@@ -25,7 +25,7 @@ class SetChargeModesRequest:
     }
 
     def __init__(self, body=None):
-        """SetChargeModesRequest
+        r"""SetChargeModesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetChargeModesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetChargeModesRequest.
+        r"""Gets the body of this SetChargeModesRequest.
 
         :return: The body of this SetChargeModesRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.SetChargeModesBody`
@@ -52,7 +52,7 @@ class SetChargeModesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetChargeModesRequest.
+        r"""Sets the body of this SetChargeModesRequest.
 
         :param body: The body of this SetChargeModesRequest.
         :type body: :class:`huaweicloudsdkcdn.v2.SetChargeModesBody`

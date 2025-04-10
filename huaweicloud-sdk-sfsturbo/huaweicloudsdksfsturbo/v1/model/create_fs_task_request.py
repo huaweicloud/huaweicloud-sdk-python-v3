@@ -29,7 +29,7 @@ class CreateFsTaskRequest:
     }
 
     def __init__(self, share_id=None, feature=None, body=None):
-        """CreateFsTaskRequest
+        r"""CreateFsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateFsTaskRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreateFsTaskRequest.
+        r"""Gets the share_id of this CreateFsTaskRequest.
 
         文件系统id
 
@@ -66,7 +66,7 @@ class CreateFsTaskRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreateFsTaskRequest.
+        r"""Sets the share_id of this CreateFsTaskRequest.
 
         文件系统id
 
@@ -77,7 +77,7 @@ class CreateFsTaskRequest:
 
     @property
     def feature(self):
-        """Gets the feature of this CreateFsTaskRequest.
+        r"""Gets the feature of this CreateFsTaskRequest.
 
         任务类型。当前仅支持取值\"dir-usage\"。
 
@@ -88,7 +88,7 @@ class CreateFsTaskRequest:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this CreateFsTaskRequest.
+        r"""Sets the feature of this CreateFsTaskRequest.
 
         任务类型。当前仅支持取值\"dir-usage\"。
 
@@ -99,7 +99,7 @@ class CreateFsTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFsTaskRequest.
+        r"""Gets the body of this CreateFsTaskRequest.
 
         :return: The body of this CreateFsTaskRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsDirReq`
@@ -108,7 +108,7 @@ class CreateFsTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFsTaskRequest.
+        r"""Sets the body of this CreateFsTaskRequest.
 
         :param body: The body of this CreateFsTaskRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.FsDirReq`

@@ -27,7 +27,7 @@ class OrderV3:
     }
 
     def __init__(self, order_id=None, order_line_items=None):
-        """OrderV3
+        r"""OrderV3
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OrderV3:
 
     @property
     def order_id(self):
-        """Gets the order_id of this OrderV3.
+        r"""Gets the order_id of this OrderV3.
 
         可使用折扣的订单ID。
 
@@ -59,7 +59,7 @@ class OrderV3:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this OrderV3.
+        r"""Sets the order_id of this OrderV3.
 
         可使用折扣的订单ID。
 
@@ -70,7 +70,7 @@ class OrderV3:
 
     @property
     def order_line_items(self):
-        """Gets the order_line_items of this OrderV3.
+        r"""Gets the order_line_items of this OrderV3.
 
         可使用折扣的订单项列表，具体参见表4。
 
@@ -81,7 +81,7 @@ class OrderV3:
 
     @order_line_items.setter
     def order_line_items(self, order_line_items):
-        """Sets the order_line_items of this OrderV3.
+        r"""Sets the order_line_items of this OrderV3.
 
         可使用折扣的订单项列表，具体参见表4。
 

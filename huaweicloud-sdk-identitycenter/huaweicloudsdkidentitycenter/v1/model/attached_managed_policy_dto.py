@@ -27,7 +27,7 @@ class AttachedManagedPolicyDto:
     }
 
     def __init__(self, policy_id=None, policy_name=None):
-        """AttachedManagedPolicyDto
+        r"""AttachedManagedPolicyDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttachedManagedPolicyDto:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this AttachedManagedPolicyDto.
+        r"""Gets the policy_id of this AttachedManagedPolicyDto.
 
         IAM系统身份策略唯一标识
 
@@ -61,7 +61,7 @@ class AttachedManagedPolicyDto:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this AttachedManagedPolicyDto.
+        r"""Sets the policy_id of this AttachedManagedPolicyDto.
 
         IAM系统身份策略唯一标识
 
@@ -72,7 +72,7 @@ class AttachedManagedPolicyDto:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this AttachedManagedPolicyDto.
+        r"""Gets the policy_name of this AttachedManagedPolicyDto.
 
         IAM系统身份策略名称
 
@@ -83,7 +83,7 @@ class AttachedManagedPolicyDto:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this AttachedManagedPolicyDto.
+        r"""Sets the policy_name of this AttachedManagedPolicyDto.
 
         IAM系统身份策略名称
 

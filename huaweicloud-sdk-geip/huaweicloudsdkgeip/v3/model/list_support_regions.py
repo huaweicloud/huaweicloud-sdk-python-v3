@@ -41,7 +41,7 @@ class ListSupportRegions:
     }
 
     def __init__(self, id=None, instance_type=None, access_site=None, region_id=None, public_border_group=None, remote_endpoint=None, status=None, created_at=None, updated_at=None):
-        """ListSupportRegions
+        r"""ListSupportRegions
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListSupportRegions:
 
     @property
     def id(self):
-        """Gets the id of this ListSupportRegions.
+        r"""Gets the id of this ListSupportRegions.
 
         域弹性公网IP支持绑定的Region限制的ID
 
@@ -110,7 +110,7 @@ class ListSupportRegions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSupportRegions.
+        r"""Sets the id of this ListSupportRegions.
 
         域弹性公网IP支持绑定的Region限制的ID
 
@@ -121,7 +121,7 @@ class ListSupportRegions:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListSupportRegions.
+        r"""Gets the instance_type of this ListSupportRegions.
 
         支持绑定的实例类型
 
@@ -132,7 +132,7 @@ class ListSupportRegions:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListSupportRegions.
+        r"""Sets the instance_type of this ListSupportRegions.
 
         支持绑定的实例类型
 
@@ -143,7 +143,7 @@ class ListSupportRegions:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListSupportRegions.
+        r"""Gets the access_site of this ListSupportRegions.
 
         接入点信息
 
@@ -154,7 +154,7 @@ class ListSupportRegions:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListSupportRegions.
+        r"""Sets the access_site of this ListSupportRegions.
 
         接入点信息
 
@@ -165,7 +165,7 @@ class ListSupportRegions:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListSupportRegions.
+        r"""Gets the region_id of this ListSupportRegions.
 
         region_id
 
@@ -176,7 +176,7 @@ class ListSupportRegions:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListSupportRegions.
+        r"""Sets the region_id of this ListSupportRegions.
 
         region_id
 
@@ -187,7 +187,7 @@ class ListSupportRegions:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListSupportRegions.
+        r"""Gets the public_border_group of this ListSupportRegions.
 
         - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
@@ -198,7 +198,7 @@ class ListSupportRegions:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListSupportRegions.
+        r"""Sets the public_border_group of this ListSupportRegions.
 
         - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
@@ -209,7 +209,7 @@ class ListSupportRegions:
 
     @property
     def remote_endpoint(self):
-        """Gets the remote_endpoint of this ListSupportRegions.
+        r"""Gets the remote_endpoint of this ListSupportRegions.
 
         remote_endpoint
 
@@ -220,7 +220,7 @@ class ListSupportRegions:
 
     @remote_endpoint.setter
     def remote_endpoint(self, remote_endpoint):
-        """Sets the remote_endpoint of this ListSupportRegions.
+        r"""Sets the remote_endpoint of this ListSupportRegions.
 
         remote_endpoint
 
@@ -231,7 +231,7 @@ class ListSupportRegions:
 
     @property
     def status(self):
-        """Gets the status of this ListSupportRegions.
+        r"""Gets the status of this ListSupportRegions.
 
         状态
 
@@ -242,7 +242,7 @@ class ListSupportRegions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSupportRegions.
+        r"""Sets the status of this ListSupportRegions.
 
         状态
 
@@ -253,7 +253,7 @@ class ListSupportRegions:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListSupportRegions.
+        r"""Gets the created_at of this ListSupportRegions.
 
         创建时间
 
@@ -264,7 +264,7 @@ class ListSupportRegions:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListSupportRegions.
+        r"""Sets the created_at of this ListSupportRegions.
 
         创建时间
 
@@ -275,7 +275,7 @@ class ListSupportRegions:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListSupportRegions.
+        r"""Gets the updated_at of this ListSupportRegions.
 
         更新时间
 
@@ -286,7 +286,7 @@ class ListSupportRegions:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListSupportRegions.
+        r"""Sets the updated_at of this ListSupportRegions.
 
         更新时间
 

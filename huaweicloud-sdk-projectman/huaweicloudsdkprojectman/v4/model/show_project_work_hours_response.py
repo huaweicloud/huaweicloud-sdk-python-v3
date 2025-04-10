@@ -28,7 +28,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
     }
 
     def __init__(self, work_hours=None, total=None):
-        """ShowProjectWorkHoursResponse
+        r"""ShowProjectWorkHoursResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
 
     @property
     def work_hours(self):
-        """Gets the work_hours of this ShowProjectWorkHoursResponse.
+        r"""Gets the work_hours of this ShowProjectWorkHoursResponse.
 
         工时列表
 
@@ -62,7 +62,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
 
     @work_hours.setter
     def work_hours(self, work_hours):
-        """Sets the work_hours of this ShowProjectWorkHoursResponse.
+        r"""Sets the work_hours of this ShowProjectWorkHoursResponse.
 
         工时列表
 
@@ -73,7 +73,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowProjectWorkHoursResponse.
+        r"""Gets the total of this ShowProjectWorkHoursResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowProjectWorkHoursResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowProjectWorkHoursResponse.
+        r"""Sets the total of this ShowProjectWorkHoursResponse.
 
         总数
 

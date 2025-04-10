@@ -29,7 +29,7 @@ class ListUserGroupsRequest:
     }
 
     def __init__(self, limit=None, offset=None, keyword=None):
-        """ListUserGroupsRequest
+        r"""ListUserGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListUserGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserGroupsRequest.
+        r"""Gets the limit of this ListUserGroupsRequest.
 
         用于分页查询，返回用户组数量限制。如果不指定或为0，则使用默认值100，从1开始，最大100。
 
@@ -68,7 +68,7 @@ class ListUserGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserGroupsRequest.
+        r"""Sets the limit of this ListUserGroupsRequest.
 
         用于分页查询，返回用户组数量限制。如果不指定或为0，则使用默认值100，从1开始，最大100。
 
@@ -79,7 +79,7 @@ class ListUserGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserGroupsRequest.
+        r"""Gets the offset of this ListUserGroupsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始，默认值0，必须与limit同时使用。
 
@@ -90,7 +90,7 @@ class ListUserGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserGroupsRequest.
+        r"""Sets the offset of this ListUserGroupsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始，默认值0，必须与limit同时使用。
 
@@ -101,7 +101,7 @@ class ListUserGroupsRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListUserGroupsRequest.
+        r"""Gets the keyword of this ListUserGroupsRequest.
 
         用来匹配用户组的搜索关键字。例如根据组名模糊查询。
 
@@ -112,7 +112,7 @@ class ListUserGroupsRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListUserGroupsRequest.
+        r"""Sets the keyword of this ListUserGroupsRequest.
 
         用来匹配用户组的搜索关键字。例如根据组名模糊查询。
 

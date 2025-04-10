@@ -30,7 +30,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, nodes=None):
-        """ListNaAuthorizedNodesResponse
+        r"""ListNaAuthorizedNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNaAuthorizedNodesResponse.
+        r"""Gets the count of this ListNaAuthorizedNodesResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNaAuthorizedNodesResponse.
+        r"""Sets the count of this ListNaAuthorizedNodesResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListNaAuthorizedNodesResponse.
+        r"""Gets the page_info of this ListNaAuthorizedNodesResponse.
 
         :return: The page_info of this ListNaAuthorizedNodesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListNaAuthorizedNodesResponse.
+        r"""Sets the page_info of this ListNaAuthorizedNodesResponse.
 
         :param page_info: The page_info of this ListNaAuthorizedNodesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListNaAuthorizedNodesResponse.
+        r"""Gets the nodes of this ListNaAuthorizedNodesResponse.
 
         查询授权北向NA信息到边缘节点列表的返回结构体
 
@@ -109,7 +109,7 @@ class ListNaAuthorizedNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListNaAuthorizedNodesResponse.
+        r"""Sets the nodes of this ListNaAuthorizedNodesResponse.
 
         查询授权北向NA信息到边缘节点列表的返回结构体
 

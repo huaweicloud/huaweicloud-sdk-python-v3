@@ -28,7 +28,7 @@ class AddWorkloadPlanStageResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None):
-        """AddWorkloadPlanStageResponse
+        r"""AddWorkloadPlanStageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this AddWorkloadPlanStageResponse.
+        r"""Gets the workload_res_code of this AddWorkloadPlanStageResponse.
 
         响应编码。
 
@@ -62,7 +62,7 @@ class AddWorkloadPlanStageResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this AddWorkloadPlanStageResponse.
+        r"""Sets the workload_res_code of this AddWorkloadPlanStageResponse.
 
         响应编码。
 
@@ -73,7 +73,7 @@ class AddWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this AddWorkloadPlanStageResponse.
+        r"""Gets the workload_res_str of this AddWorkloadPlanStageResponse.
 
         响应信息。
 
@@ -84,7 +84,7 @@ class AddWorkloadPlanStageResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this AddWorkloadPlanStageResponse.
+        r"""Sets the workload_res_str of this AddWorkloadPlanStageResponse.
 
         响应信息。
 

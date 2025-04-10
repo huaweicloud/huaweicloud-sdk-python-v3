@@ -37,7 +37,7 @@ class ListErrorLogsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_date=None, end_date=None, offset=None, limit=None, level=None):
-        """ListErrorLogsRequest
+        r"""ListErrorLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListErrorLogsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListErrorLogsRequest.
+        r"""Gets the x_language of this ListErrorLogsRequest.
 
         语言
 
@@ -93,7 +93,7 @@ class ListErrorLogsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListErrorLogsRequest.
+        r"""Sets the x_language of this ListErrorLogsRequest.
 
         语言
 
@@ -104,7 +104,7 @@ class ListErrorLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListErrorLogsRequest.
+        r"""Gets the instance_id of this ListErrorLogsRequest.
 
         实例ID。
 
@@ -115,7 +115,7 @@ class ListErrorLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListErrorLogsRequest.
+        r"""Sets the instance_id of this ListErrorLogsRequest.
 
         实例ID。
 
@@ -126,7 +126,7 @@ class ListErrorLogsRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListErrorLogsRequest.
+        r"""Gets the start_date of this ListErrorLogsRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -137,7 +137,7 @@ class ListErrorLogsRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListErrorLogsRequest.
+        r"""Sets the start_date of this ListErrorLogsRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -148,7 +148,7 @@ class ListErrorLogsRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListErrorLogsRequest.
+        r"""Gets the end_date of this ListErrorLogsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  只能查询当前时间前一个月内的错误日志。
 
@@ -159,7 +159,7 @@ class ListErrorLogsRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListErrorLogsRequest.
+        r"""Sets the end_date of this ListErrorLogsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  只能查询当前时间前一个月内的错误日志。
 
@@ -170,7 +170,7 @@ class ListErrorLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListErrorLogsRequest.
+        r"""Gets the offset of this ListErrorLogsRequest.
 
         页数偏移量，如1、2、3、4等，不填时默认为1。
 
@@ -181,7 +181,7 @@ class ListErrorLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListErrorLogsRequest.
+        r"""Sets the offset of this ListErrorLogsRequest.
 
         页数偏移量，如1、2、3、4等，不填时默认为1。
 
@@ -192,7 +192,7 @@ class ListErrorLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListErrorLogsRequest.
+        r"""Gets the limit of this ListErrorLogsRequest.
 
         每页多少条记录，取值范围是1~100，不填时默认为10。
 
@@ -203,7 +203,7 @@ class ListErrorLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListErrorLogsRequest.
+        r"""Sets the limit of this ListErrorLogsRequest.
 
         每页多少条记录，取值范围是1~100，不填时默认为10。
 
@@ -214,7 +214,7 @@ class ListErrorLogsRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListErrorLogsRequest.
+        r"""Gets the level of this ListErrorLogsRequest.
 
         日志级别，默认为ALL。
 
@@ -225,7 +225,7 @@ class ListErrorLogsRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListErrorLogsRequest.
+        r"""Sets the level of this ListErrorLogsRequest.
 
         日志级别，默认为ALL。
 

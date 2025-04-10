@@ -26,7 +26,7 @@ class ClaimEnterpriseMultiAccountCouponResponse(SdkResponse):
     }
 
     def __init__(self, sub_coupon_id=None):
-        """ClaimEnterpriseMultiAccountCouponResponse
+        r"""ClaimEnterpriseMultiAccountCouponResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ClaimEnterpriseMultiAccountCouponResponse(SdkResponse):
 
     @property
     def sub_coupon_id(self):
-        """Gets the sub_coupon_id of this ClaimEnterpriseMultiAccountCouponResponse.
+        r"""Gets the sub_coupon_id of this ClaimEnterpriseMultiAccountCouponResponse.
 
         |参数名称：实际回收金额。| |参数的约束及描述：成功时返回|
 
@@ -55,7 +55,7 @@ class ClaimEnterpriseMultiAccountCouponResponse(SdkResponse):
 
     @sub_coupon_id.setter
     def sub_coupon_id(self, sub_coupon_id):
-        """Sets the sub_coupon_id of this ClaimEnterpriseMultiAccountCouponResponse.
+        r"""Sets the sub_coupon_id of this ClaimEnterpriseMultiAccountCouponResponse.
 
         |参数名称：实际回收金额。| |参数的约束及描述：成功时返回|
 

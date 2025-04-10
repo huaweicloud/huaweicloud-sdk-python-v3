@@ -27,7 +27,7 @@ class AnimationItem:
     }
 
     def __init__(self, animation_asset_id=None, timestamp=None):
-        """AnimationItem
+        r"""AnimationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AnimationItem:
 
     @property
     def animation_asset_id(self):
-        """Gets the animation_asset_id of this AnimationItem.
+        r"""Gets the animation_asset_id of this AnimationItem.
 
         动作资产ID。
 
@@ -61,7 +61,7 @@ class AnimationItem:
 
     @animation_asset_id.setter
     def animation_asset_id(self, animation_asset_id):
-        """Sets the animation_asset_id of this AnimationItem.
+        r"""Sets the animation_asset_id of this AnimationItem.
 
         动作资产ID。
 
@@ -72,7 +72,7 @@ class AnimationItem:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this AnimationItem.
+        r"""Gets the timestamp of this AnimationItem.
 
         时间戳，相对时间戳。  单位秒。  保留3位小数。
 
@@ -83,7 +83,7 @@ class AnimationItem:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this AnimationItem.
+        r"""Sets the timestamp of this AnimationItem.
 
         时间戳，相对时间戳。  单位秒。  保留3位小数。
 

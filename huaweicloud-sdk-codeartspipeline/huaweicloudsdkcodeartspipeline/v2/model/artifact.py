@@ -49,7 +49,7 @@ class Artifact:
     }
 
     def __init__(self, project_id=None, name=None, artifact_version=None, upload_target=None, artifact_package_type=None, artifact_uri=None, artifact_download_url_with_id=None, artifact_type=None, hash_code=None, job_id=None, build_no=None, daily_build_number=None, file_size=None):
-        """Artifact
+        r"""Artifact
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class Artifact:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Artifact.
+        r"""Gets the project_id of this Artifact.
 
         项目ID
 
@@ -138,7 +138,7 @@ class Artifact:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Artifact.
+        r"""Sets the project_id of this Artifact.
 
         项目ID
 
@@ -149,7 +149,7 @@ class Artifact:
 
     @property
     def name(self):
-        """Gets the name of this Artifact.
+        r"""Gets the name of this Artifact.
 
         名称
 
@@ -160,7 +160,7 @@ class Artifact:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Artifact.
+        r"""Sets the name of this Artifact.
 
         名称
 
@@ -171,7 +171,7 @@ class Artifact:
 
     @property
     def artifact_version(self):
-        """Gets the artifact_version of this Artifact.
+        r"""Gets the artifact_version of this Artifact.
 
         版本
 
@@ -182,7 +182,7 @@ class Artifact:
 
     @artifact_version.setter
     def artifact_version(self, artifact_version):
-        """Sets the artifact_version of this Artifact.
+        r"""Sets the artifact_version of this Artifact.
 
         版本
 
@@ -193,7 +193,7 @@ class Artifact:
 
     @property
     def upload_target(self):
-        """Gets the upload_target of this Artifact.
+        r"""Gets the upload_target of this Artifact.
 
         存放平台类型
 
@@ -204,7 +204,7 @@ class Artifact:
 
     @upload_target.setter
     def upload_target(self, upload_target):
-        """Sets the upload_target of this Artifact.
+        r"""Sets the upload_target of this Artifact.
 
         存放平台类型
 
@@ -215,7 +215,7 @@ class Artifact:
 
     @property
     def artifact_package_type(self):
-        """Gets the artifact_package_type of this Artifact.
+        r"""Gets the artifact_package_type of this Artifact.
 
         产物包类型
 
@@ -226,7 +226,7 @@ class Artifact:
 
     @artifact_package_type.setter
     def artifact_package_type(self, artifact_package_type):
-        """Sets the artifact_package_type of this Artifact.
+        r"""Sets the artifact_package_type of this Artifact.
 
         产物包类型
 
@@ -237,7 +237,7 @@ class Artifact:
 
     @property
     def artifact_uri(self):
-        """Gets the artifact_uri of this Artifact.
+        r"""Gets the artifact_uri of this Artifact.
 
         制品仓路径
 
@@ -248,7 +248,7 @@ class Artifact:
 
     @artifact_uri.setter
     def artifact_uri(self, artifact_uri):
-        """Sets the artifact_uri of this Artifact.
+        r"""Sets the artifact_uri of this Artifact.
 
         制品仓路径
 
@@ -259,7 +259,7 @@ class Artifact:
 
     @property
     def artifact_download_url_with_id(self):
-        """Gets the artifact_download_url_with_id of this Artifact.
+        r"""Gets the artifact_download_url_with_id of this Artifact.
 
         制品仓下载链接
 
@@ -270,7 +270,7 @@ class Artifact:
 
     @artifact_download_url_with_id.setter
     def artifact_download_url_with_id(self, artifact_download_url_with_id):
-        """Sets the artifact_download_url_with_id of this Artifact.
+        r"""Sets the artifact_download_url_with_id of this Artifact.
 
         制品仓下载链接
 
@@ -281,7 +281,7 @@ class Artifact:
 
     @property
     def artifact_type(self):
-        """Gets the artifact_type of this Artifact.
+        r"""Gets the artifact_type of this Artifact.
 
         产物类型
 
@@ -292,7 +292,7 @@ class Artifact:
 
     @artifact_type.setter
     def artifact_type(self, artifact_type):
-        """Sets the artifact_type of this Artifact.
+        r"""Sets the artifact_type of this Artifact.
 
         产物类型
 
@@ -303,7 +303,7 @@ class Artifact:
 
     @property
     def hash_code(self):
-        """Gets the hash_code of this Artifact.
+        r"""Gets the hash_code of this Artifact.
 
         哈希码
 
@@ -314,7 +314,7 @@ class Artifact:
 
     @hash_code.setter
     def hash_code(self, hash_code):
-        """Sets the hash_code of this Artifact.
+        r"""Sets the hash_code of this Artifact.
 
         哈希码
 
@@ -325,7 +325,7 @@ class Artifact:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Artifact.
+        r"""Gets the job_id of this Artifact.
 
         构建任务ID
 
@@ -336,7 +336,7 @@ class Artifact:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Artifact.
+        r"""Sets the job_id of this Artifact.
 
         构建任务ID
 
@@ -347,7 +347,7 @@ class Artifact:
 
     @property
     def build_no(self):
-        """Gets the build_no of this Artifact.
+        r"""Gets the build_no of this Artifact.
 
         构建任务编号
 
@@ -358,7 +358,7 @@ class Artifact:
 
     @build_no.setter
     def build_no(self, build_no):
-        """Sets the build_no of this Artifact.
+        r"""Sets the build_no of this Artifact.
 
         构建任务编号
 
@@ -369,7 +369,7 @@ class Artifact:
 
     @property
     def daily_build_number(self):
-        """Gets the daily_build_number of this Artifact.
+        r"""Gets the daily_build_number of this Artifact.
 
         构建任务序号
 
@@ -380,7 +380,7 @@ class Artifact:
 
     @daily_build_number.setter
     def daily_build_number(self, daily_build_number):
-        """Sets the daily_build_number of this Artifact.
+        r"""Sets the daily_build_number of this Artifact.
 
         构建任务序号
 
@@ -391,7 +391,7 @@ class Artifact:
 
     @property
     def file_size(self):
-        """Gets the file_size of this Artifact.
+        r"""Gets the file_size of this Artifact.
 
         产物大小
 
@@ -402,7 +402,7 @@ class Artifact:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this Artifact.
+        r"""Sets the file_size of this Artifact.
 
         产物大小
 

@@ -25,7 +25,7 @@ class ExportExcelJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """ExportExcelJobRequest
+        r"""ExportExcelJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExportExcelJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExportExcelJobRequest.
+        r"""Gets the job_id of this ExportExcelJobRequest.
 
         jobID
 
@@ -53,7 +53,7 @@ class ExportExcelJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExportExcelJobRequest.
+        r"""Sets the job_id of this ExportExcelJobRequest.
 
         jobID
 

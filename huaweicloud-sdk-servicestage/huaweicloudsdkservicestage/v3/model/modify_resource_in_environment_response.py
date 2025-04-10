@@ -26,7 +26,7 @@ class ModifyResourceInEnvironmentResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """ModifyResourceInEnvironmentResponse
+        r"""ModifyResourceInEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifyResourceInEnvironmentResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ModifyResourceInEnvironmentResponse.
+        r"""Gets the resources of this ModifyResourceInEnvironmentResponse.
 
         :return: The resources of this ModifyResourceInEnvironmentResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
@@ -53,7 +53,7 @@ class ModifyResourceInEnvironmentResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ModifyResourceInEnvironmentResponse.
+        r"""Sets the resources of this ModifyResourceInEnvironmentResponse.
 
         :param resources: The resources of this ModifyResourceInEnvironmentResponse.
         :type resources: list[:class:`huaweicloudsdkservicestage.v3.Resource`]

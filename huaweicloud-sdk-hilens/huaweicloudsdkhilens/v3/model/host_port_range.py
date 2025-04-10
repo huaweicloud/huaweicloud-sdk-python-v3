@@ -27,7 +27,7 @@ class HostPortRange:
     }
 
     def __init__(self, max_port=None, min_port=None):
-        """HostPortRange
+        r"""HostPortRange
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HostPortRange:
 
     @property
     def max_port(self):
-        """Gets the max_port of this HostPortRange.
+        r"""Gets the max_port of this HostPortRange.
 
         主机端口上限值,1到65535之间的整数；max_port需大于min_port
 
@@ -59,7 +59,7 @@ class HostPortRange:
 
     @max_port.setter
     def max_port(self, max_port):
-        """Sets the max_port of this HostPortRange.
+        r"""Sets the max_port of this HostPortRange.
 
         主机端口上限值,1到65535之间的整数；max_port需大于min_port
 
@@ -70,7 +70,7 @@ class HostPortRange:
 
     @property
     def min_port(self):
-        """Gets the min_port of this HostPortRange.
+        r"""Gets the min_port of this HostPortRange.
 
         主机端口下限制,1到65535之间的整数
 
@@ -81,7 +81,7 @@ class HostPortRange:
 
     @min_port.setter
     def min_port(self, min_port):
-        """Sets the min_port of this HostPortRange.
+        r"""Sets the min_port of this HostPortRange.
 
         主机端口下限制,1到65535之间的整数
 

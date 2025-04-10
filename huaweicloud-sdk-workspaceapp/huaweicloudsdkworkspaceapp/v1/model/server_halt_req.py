@@ -27,7 +27,7 @@ class ServerHaltReq:
     }
 
     def __init__(self, items=None, type=None):
-        """ServerHaltReq
+        r"""ServerHaltReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServerHaltReq:
 
     @property
     def items(self):
-        """Gets the items of this ServerHaltReq.
+        r"""Gets the items of this ServerHaltReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -59,7 +59,7 @@ class ServerHaltReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ServerHaltReq.
+        r"""Sets the items of this ServerHaltReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -70,7 +70,7 @@ class ServerHaltReq:
 
     @property
     def type(self):
-        """Gets the type of this ServerHaltReq.
+        r"""Gets the type of this ServerHaltReq.
 
         :return: The type of this ServerHaltReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerHaltType`
@@ -79,7 +79,7 @@ class ServerHaltReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ServerHaltReq.
+        r"""Sets the type of this ServerHaltReq.
 
         :param type: The type of this ServerHaltReq.
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.ServerHaltType`

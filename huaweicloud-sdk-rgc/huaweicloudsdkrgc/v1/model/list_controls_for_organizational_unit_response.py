@@ -30,7 +30,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
     }
 
     def __init__(self, control_summaries=None, state=None, page_info=None):
-        """ListControlsForOrganizationalUnitResponse
+        r"""ListControlsForOrganizationalUnitResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     @property
     def control_summaries(self):
-        """Gets the control_summaries of this ListControlsForOrganizationalUnitResponse.
+        r"""Gets the control_summaries of this ListControlsForOrganizationalUnitResponse.
 
         治理策略概要。
 
@@ -69,7 +69,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     @control_summaries.setter
     def control_summaries(self, control_summaries):
-        """Sets the control_summaries of this ListControlsForOrganizationalUnitResponse.
+        r"""Sets the control_summaries of this ListControlsForOrganizationalUnitResponse.
 
         治理策略概要。
 
@@ -80,7 +80,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ListControlsForOrganizationalUnitResponse.
+        r"""Gets the state of this ListControlsForOrganizationalUnitResponse.
 
         控制策略启用状态。
 
@@ -91,7 +91,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListControlsForOrganizationalUnitResponse.
+        r"""Sets the state of this ListControlsForOrganizationalUnitResponse.
 
         控制策略启用状态。
 
@@ -102,7 +102,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListControlsForOrganizationalUnitResponse.
+        r"""Gets the page_info of this ListControlsForOrganizationalUnitResponse.
 
         :return: The page_info of this ListControlsForOrganizationalUnitResponse.
         :rtype: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
@@ -111,7 +111,7 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListControlsForOrganizationalUnitResponse.
+        r"""Sets the page_info of this ListControlsForOrganizationalUnitResponse.
 
         :param page_info: The page_info of this ListControlsForOrganizationalUnitResponse.
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`

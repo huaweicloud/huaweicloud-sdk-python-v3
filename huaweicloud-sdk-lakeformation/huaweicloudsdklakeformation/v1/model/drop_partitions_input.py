@@ -29,7 +29,7 @@ class DropPartitionsInput:
     }
 
     def __init__(self, if_exist=None, delete_data=None, partition_values=None):
-        """DropPartitionsInput
+        r"""DropPartitionsInput
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DropPartitionsInput:
 
     @property
     def if_exist(self):
-        """Gets the if_exist of this DropPartitionsInput.
+        r"""Gets the if_exist of this DropPartitionsInput.
 
         是否跳过不存在分区
 
@@ -67,7 +67,7 @@ class DropPartitionsInput:
 
     @if_exist.setter
     def if_exist(self, if_exist):
-        """Sets the if_exist of this DropPartitionsInput.
+        r"""Sets the if_exist of this DropPartitionsInput.
 
         是否跳过不存在分区
 
@@ -78,7 +78,7 @@ class DropPartitionsInput:
 
     @property
     def delete_data(self):
-        """Gets the delete_data of this DropPartitionsInput.
+        r"""Gets the delete_data of this DropPartitionsInput.
 
         非事务表：删除分区的数据；若if_purge为真，立即释放空间。 事务表：数据保留但不可见，待数据过期统一删除。
 
@@ -89,7 +89,7 @@ class DropPartitionsInput:
 
     @delete_data.setter
     def delete_data(self, delete_data):
-        """Sets the delete_data of this DropPartitionsInput.
+        r"""Sets the delete_data of this DropPartitionsInput.
 
         非事务表：删除分区的数据；若if_purge为真，立即释放空间。 事务表：数据保留但不可见，待数据过期统一删除。
 
@@ -100,7 +100,7 @@ class DropPartitionsInput:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this DropPartitionsInput.
+        r"""Gets the partition_values of this DropPartitionsInput.
 
         删除分区值
 
@@ -111,7 +111,7 @@ class DropPartitionsInput:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this DropPartitionsInput.
+        r"""Sets the partition_values of this DropPartitionsInput.
 
         删除分区值
 

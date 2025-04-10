@@ -61,7 +61,7 @@ class QueryRecordSetWithLineResp:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None, bundle=None):
-        """QueryRecordSetWithLineResp
+        r"""QueryRecordSetWithLineResp
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def id(self):
-        """Gets the id of this QueryRecordSetWithLineResp.
+        r"""Gets the id of this QueryRecordSetWithLineResp.
 
         Record Set的ID。
 
@@ -180,7 +180,7 @@ class QueryRecordSetWithLineResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryRecordSetWithLineResp.
+        r"""Sets the id of this QueryRecordSetWithLineResp.
 
         Record Set的ID。
 
@@ -191,7 +191,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def name(self):
-        """Gets the name of this QueryRecordSetWithLineResp.
+        r"""Gets the name of this QueryRecordSetWithLineResp.
 
         Record Set的名称。
 
@@ -202,7 +202,7 @@ class QueryRecordSetWithLineResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryRecordSetWithLineResp.
+        r"""Sets the name of this QueryRecordSetWithLineResp.
 
         Record Set的名称。
 
@@ -213,7 +213,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def description(self):
-        """Gets the description of this QueryRecordSetWithLineResp.
+        r"""Gets the description of this QueryRecordSetWithLineResp.
 
         Record Set的描述信息。
 
@@ -224,7 +224,7 @@ class QueryRecordSetWithLineResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryRecordSetWithLineResp.
+        r"""Sets the description of this QueryRecordSetWithLineResp.
 
         Record Set的描述信息。
 
@@ -235,7 +235,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this QueryRecordSetWithLineResp.
+        r"""Gets the zone_id of this QueryRecordSetWithLineResp.
 
         托管该记录的zone_id。
 
@@ -246,7 +246,7 @@ class QueryRecordSetWithLineResp:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this QueryRecordSetWithLineResp.
+        r"""Sets the zone_id of this QueryRecordSetWithLineResp.
 
         托管该记录的zone_id。
 
@@ -257,7 +257,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this QueryRecordSetWithLineResp.
+        r"""Gets the zone_name of this QueryRecordSetWithLineResp.
 
         托管该记录的zone_name。
 
@@ -268,7 +268,7 @@ class QueryRecordSetWithLineResp:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this QueryRecordSetWithLineResp.
+        r"""Sets the zone_name of this QueryRecordSetWithLineResp.
 
         托管该记录的zone_name。
 
@@ -279,7 +279,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def type(self):
-        """Gets the type of this QueryRecordSetWithLineResp.
+        r"""Gets the type of this QueryRecordSetWithLineResp.
 
         记录类型。
 
@@ -290,7 +290,7 @@ class QueryRecordSetWithLineResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryRecordSetWithLineResp.
+        r"""Sets the type of this QueryRecordSetWithLineResp.
 
         记录类型。
 
@@ -301,7 +301,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def ttl(self):
-        """Gets the ttl of this QueryRecordSetWithLineResp.
+        r"""Gets the ttl of this QueryRecordSetWithLineResp.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -312,7 +312,7 @@ class QueryRecordSetWithLineResp:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this QueryRecordSetWithLineResp.
+        r"""Sets the ttl of this QueryRecordSetWithLineResp.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -323,7 +323,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def records(self):
-        """Gets the records of this QueryRecordSetWithLineResp.
+        r"""Gets the records of this QueryRecordSetWithLineResp.
 
         域名解析后的值。
 
@@ -334,7 +334,7 @@ class QueryRecordSetWithLineResp:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this QueryRecordSetWithLineResp.
+        r"""Sets the records of this QueryRecordSetWithLineResp.
 
         域名解析后的值。
 
@@ -345,7 +345,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this QueryRecordSetWithLineResp.
+        r"""Gets the created_at of this QueryRecordSetWithLineResp.
 
         创建时间。
 
@@ -356,7 +356,7 @@ class QueryRecordSetWithLineResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this QueryRecordSetWithLineResp.
+        r"""Sets the created_at of this QueryRecordSetWithLineResp.
 
         创建时间。
 
@@ -367,7 +367,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this QueryRecordSetWithLineResp.
+        r"""Gets the updated_at of this QueryRecordSetWithLineResp.
 
         更新时间。
 
@@ -378,7 +378,7 @@ class QueryRecordSetWithLineResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this QueryRecordSetWithLineResp.
+        r"""Sets the updated_at of this QueryRecordSetWithLineResp.
 
         更新时间。
 
@@ -389,7 +389,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def status(self):
-        """Gets the status of this QueryRecordSetWithLineResp.
+        r"""Gets the status of this QueryRecordSetWithLineResp.
 
         资源状态。
 
@@ -400,7 +400,7 @@ class QueryRecordSetWithLineResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryRecordSetWithLineResp.
+        r"""Sets the status of this QueryRecordSetWithLineResp.
 
         资源状态。
 
@@ -411,7 +411,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def default(self):
-        """Gets the default of this QueryRecordSetWithLineResp.
+        r"""Gets the default of this QueryRecordSetWithLineResp.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -422,7 +422,7 @@ class QueryRecordSetWithLineResp:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this QueryRecordSetWithLineResp.
+        r"""Sets the default of this QueryRecordSetWithLineResp.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -433,7 +433,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this QueryRecordSetWithLineResp.
+        r"""Gets the project_id of this QueryRecordSetWithLineResp.
 
         该Record Set所属的项目ID。
 
@@ -444,7 +444,7 @@ class QueryRecordSetWithLineResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this QueryRecordSetWithLineResp.
+        r"""Sets the project_id of this QueryRecordSetWithLineResp.
 
         该Record Set所属的项目ID。
 
@@ -455,7 +455,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def links(self):
-        """Gets the links of this QueryRecordSetWithLineResp.
+        r"""Gets the links of this QueryRecordSetWithLineResp.
 
         :return: The links of this QueryRecordSetWithLineResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -464,7 +464,7 @@ class QueryRecordSetWithLineResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this QueryRecordSetWithLineResp.
+        r"""Sets the links of this QueryRecordSetWithLineResp.
 
         :param links: The links of this QueryRecordSetWithLineResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -473,7 +473,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def line(self):
-        """Gets the line of this QueryRecordSetWithLineResp.
+        r"""Gets the line of this QueryRecordSetWithLineResp.
 
         解析线路ID。
 
@@ -484,7 +484,7 @@ class QueryRecordSetWithLineResp:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this QueryRecordSetWithLineResp.
+        r"""Sets the line of this QueryRecordSetWithLineResp.
 
         解析线路ID。
 
@@ -495,7 +495,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def weight(self):
-        """Gets the weight of this QueryRecordSetWithLineResp.
+        r"""Gets the weight of this QueryRecordSetWithLineResp.
 
         解析记录的权重。
 
@@ -506,7 +506,7 @@ class QueryRecordSetWithLineResp:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this QueryRecordSetWithLineResp.
+        r"""Sets the weight of this QueryRecordSetWithLineResp.
 
         解析记录的权重。
 
@@ -517,7 +517,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this QueryRecordSetWithLineResp.
+        r"""Gets the health_check_id of this QueryRecordSetWithLineResp.
 
         健康检查ID。
 
@@ -528,7 +528,7 @@ class QueryRecordSetWithLineResp:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this QueryRecordSetWithLineResp.
+        r"""Sets the health_check_id of this QueryRecordSetWithLineResp.
 
         健康检查ID。
 
@@ -539,7 +539,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this QueryRecordSetWithLineResp.
+        r"""Gets the alias_target of this QueryRecordSetWithLineResp.
 
         :return: The alias_target of this QueryRecordSetWithLineResp.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -548,7 +548,7 @@ class QueryRecordSetWithLineResp:
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this QueryRecordSetWithLineResp.
+        r"""Sets the alias_target of this QueryRecordSetWithLineResp.
 
         :param alias_target: The alias_target of this QueryRecordSetWithLineResp.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -557,7 +557,7 @@ class QueryRecordSetWithLineResp:
 
     @property
     def bundle(self):
-        """Gets the bundle of this QueryRecordSetWithLineResp.
+        r"""Gets the bundle of this QueryRecordSetWithLineResp.
 
         规格，默认规格，保留字段。
 
@@ -568,7 +568,7 @@ class QueryRecordSetWithLineResp:
 
     @bundle.setter
     def bundle(self, bundle):
-        """Sets the bundle of this QueryRecordSetWithLineResp.
+        r"""Sets the bundle of this QueryRecordSetWithLineResp.
 
         规格，默认规格，保留字段。
 

@@ -29,7 +29,7 @@ class ImageReadConfig:
     }
 
     def __init__(self, read_content=None, image_id=None, resolution=None):
-        """ImageReadConfig
+        r"""ImageReadConfig
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ImageReadConfig:
 
     @property
     def read_content(self):
-        """Gets the read_content of this ImageReadConfig.
+        r"""Gets the read_content of this ImageReadConfig.
 
         播报内容，长度为1~2500
 
@@ -65,7 +65,7 @@ class ImageReadConfig:
 
     @read_content.setter
     def read_content(self, read_content):
-        """Sets the read_content of this ImageReadConfig.
+        r"""Sets the read_content of this ImageReadConfig.
 
         播报内容，长度为1~2500
 
@@ -76,7 +76,7 @@ class ImageReadConfig:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ImageReadConfig.
+        r"""Gets the image_id of this ImageReadConfig.
 
         图片id
 
@@ -87,7 +87,7 @@ class ImageReadConfig:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ImageReadConfig.
+        r"""Sets the image_id of this ImageReadConfig.
 
         图片id
 
@@ -98,7 +98,7 @@ class ImageReadConfig:
 
     @property
     def resolution(self):
-        """Gets the resolution of this ImageReadConfig.
+        r"""Gets the resolution of this ImageReadConfig.
 
         :return: The resolution of this ImageReadConfig.
         :rtype: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -107,7 +107,7 @@ class ImageReadConfig:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this ImageReadConfig.
+        r"""Sets the resolution of this ImageReadConfig.
 
         :param resolution: The resolution of this ImageReadConfig.
         :type resolution: :class:`huaweicloudsdkcbs.v1.Resolution`

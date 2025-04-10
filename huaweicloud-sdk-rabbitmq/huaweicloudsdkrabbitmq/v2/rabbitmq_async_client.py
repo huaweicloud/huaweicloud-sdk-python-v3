@@ -34,7 +34,7 @@ class RabbitMQAsyncClient(Client):
         return client_builder
 
     def batch_create_or_delete_rabbit_mq_tag_async(self, request):
-        """批量添加或删除实例标签
+        r"""批量添加或删除实例标签
 
         批量添加或删除实例标签。
         
@@ -101,7 +101,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def batch_restart_or_delete_instances_async(self, request):
-        """批量删除实例
+        r"""批量删除实例
 
         批量删除实例。
         
@@ -168,7 +168,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_post_paid_instance_async(self, request):
-        """创建实例(按需)
+        r"""创建实例(按需)
 
         创建实例，该接口创建的实例为按需计费的方式。
         
@@ -233,7 +233,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_post_paid_instance_by_engine_async(self, request):
-        """创建实例
+        r"""创建实例
 
         创建实例[，该接口支持创建按需[和包周期](tag:hws,hws_eu,hws_hk,ctc,cmcc)计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,cmcc,sbc)。
         
@@ -300,7 +300,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_user_async(self, request):
-        """创建用户
+        r"""创建用户
 
         创建用户（仅AMQP版本支持）。
         
@@ -367,7 +367,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def delete_background_task_async(self, request):
-        """删除后台任务管理中的指定记录
+        r"""删除后台任务管理中的指定记录
 
         删除后台任务管理中的指定记录。
         
@@ -434,7 +434,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def delete_instance_async(self, request):
-        """删除指定的实例
+        r"""删除指定的实例
 
         删除指定的实例，释放该实例的所有资源。
         
@@ -499,7 +499,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def delete_user_async(self, request):
-        """删除用户
+        r"""删除用户
 
         删除用户（仅AMQP版本支持）。
         
@@ -566,7 +566,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def enable_dns_async(self, request):
-        """开启RabbitMQ实例域名访问能力
+        r"""开启RabbitMQ实例域名访问能力
 
         开启RabbitMQ实例域名访问功能后，客户端可以通过域名连接RabbitMQ实例。
         
@@ -631,7 +631,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_available_zones_async(self, request):
-        """查询可用区信息
+        r"""查询可用区信息
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
@@ -694,7 +694,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_background_tasks_async(self, request):
-        """查询实例的后台任务列表
+        r"""查询实例的后台任务列表
 
         查询实例的后台任务列表。
         
@@ -767,7 +767,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_engine_products_async(self, request):
-        """查询产品规格列表
+        r"""查询产品规格列表
 
         查询产品规格列表。
         
@@ -834,7 +834,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_instances_details_async(self, request):
-        """查询所有实例列表
+        r"""查询所有实例列表
 
         查询租户的实例列表，支持按照条件查询。
         
@@ -915,7 +915,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_plugins_async(self, request):
-        """查询插件列表
+        r"""查询插件列表
 
         查询插件列表。
         
@@ -980,7 +980,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_products_async(self, request):
-        """查询产品规格列表
+        r"""查询产品规格列表
 
         在创建实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。
         
@@ -1045,7 +1045,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_user_async(self, request):
-        """查询用户列表
+        r"""查询用户列表
 
         查询用户列表（仅AMQP版本支持）。
         
@@ -1114,7 +1114,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def reset_password_async(self, request):
-        """重置密码
+        r"""重置密码
 
         重置密码。
         
@@ -1181,7 +1181,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def resize_engine_instance_async(self, request):
-        """新规格实例的规格变更
+        r"""新规格实例的规格变更
 
         实例规格变更。
         
@@ -1252,7 +1252,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def resize_instance_async(self, request):
-        """实例规格变更
+        r"""实例规格变更
 
         实例规格变更。
         
@@ -1321,7 +1321,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_background_task_async(self, request):
-        """查询后台任务管理中的指定记录
+        r"""查询后台任务管理中的指定记录
 
         查询后台任务管理中的指定记录。
         
@@ -1388,7 +1388,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_ces_hierarchy_async(self, request):
-        """查询实例在CES的监控层级关系
+        r"""查询实例在CES的监控层级关系
 
         查询实例在CES的监控层级关系。
         
@@ -1453,7 +1453,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_engine_instance_extend_product_info_async(self, request):
-        """查询新规格可扩容规格列表
+        r"""查询新规格可扩容规格列表
 
         查询新规格实例可扩容列表
         
@@ -1522,7 +1522,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_instance_async(self, request):
-        """查询指定实例
+        r"""查询指定实例
 
         查询指定实例的详细信息。
         
@@ -1587,7 +1587,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_instance_extend_product_info_async(self, request):
-        """查询可扩容规格列表
+        r"""查询可扩容规格列表
 
         查询可扩容规格列表。
         
@@ -1658,7 +1658,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_maintain_windows_async(self, request):
-        """查询维护时间窗时间段
+        r"""查询维护时间窗时间段
 
         查询维护时间窗开始时间和结束时间。
         
@@ -1721,7 +1721,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_quotas_async(self, request):
-        """查看租户配额
+        r"""查看租户配额
 
         查询租户最大可以创建的实例个数和已创建的实例个数，以及每个实例最大可以创建标签的个数。
         
@@ -1784,7 +1784,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_rabbit_mq_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签。
         
@@ -1847,7 +1847,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_rabbit_mq_tags_async(self, request):
-        """查询实例标签
+        r"""查询实例标签
 
         查询实例标签。
         
@@ -1912,7 +1912,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def update_instance_async(self, request):
-        """修改实例信息
+        r"""修改实例信息
 
         修改实例的名称和描述信息。
         
@@ -1979,7 +1979,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def update_plugins_async(self, request):
-        """开启或关闭插件
+        r"""开启或关闭插件
 
         开启或关闭插件。
         
@@ -2046,7 +2046,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def update_user_async(self, request):
-        """修改用户参数
+        r"""修改用户参数
 
         修改用户参数（仅AMQP版本支持）。
         
@@ -2115,7 +2115,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_binding_async(self, request):
-        """添加绑定
+        r"""添加绑定
 
         添加绑定。
         
@@ -2186,7 +2186,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def delete_binding_async(self, request):
-        """删除绑定
+        r"""删除绑定
 
         删除绑定。
         
@@ -2261,7 +2261,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_bindings_async(self, request):
-        """查询Exchange绑定信息列表
+        r"""查询Exchange绑定信息列表
 
         查询Exchange绑定信息列表。
         
@@ -2330,7 +2330,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def batch_delete_exchanges_async(self, request):
-        """批量删除指定Exchange
+        r"""批量删除指定Exchange
 
         批量删除指定Exchange。
         
@@ -2399,7 +2399,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_exchange_async(self, request):
-        """创建Exchange
+        r"""创建Exchange
 
         创建Exchange。
         
@@ -2468,7 +2468,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_exchanges_async(self, request):
-        """查询Exchange列表
+        r"""查询Exchange列表
 
         查询Exchange列表。
         
@@ -2539,7 +2539,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def batch_delete_queues_async(self, request):
-        """批量删除指定Queue
+        r"""批量删除指定Queue
 
         批量删除指定Queue。
         
@@ -2608,7 +2608,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_queue_async(self, request):
-        """创建Queue
+        r"""创建Queue
 
         创建Queue。
         
@@ -2677,7 +2677,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def delete_queue_info_async(self, request):
-        """清空Queue消息
+        r"""清空Queue消息
 
         清空Queue消息。
         
@@ -2746,7 +2746,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_queues_async(self, request):
-        """查询所属Vhost下Queue的列表
+        r"""查询所属Vhost下Queue的列表
 
         查询所属Vhost下Queue的列表。
         
@@ -2817,7 +2817,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def show_queue_details_async(self, request):
-        """查询指定Queue详情
+        r"""查询指定Queue详情
 
         查询指定Queue详情。
         
@@ -2886,7 +2886,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def batch_delete_vhosts_async(self, request):
-        """批量删除指定Vhost
+        r"""批量删除指定Vhost
 
         批量删除指定Vhost。
         
@@ -2953,7 +2953,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def create_vhost_async(self, request):
-        """创建Vhost
+        r"""创建Vhost
 
         创建Vhost。
         
@@ -3020,7 +3020,7 @@ class RabbitMQAsyncClient(Client):
         return http_info
 
     def list_vhosts_async(self, request):
-        """查询Vhost列表
+        r"""查询Vhost列表
 
         查询Vhost列表。
         

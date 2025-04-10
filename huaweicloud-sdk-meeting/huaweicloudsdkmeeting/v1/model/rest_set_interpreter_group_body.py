@@ -25,7 +25,7 @@ class RestSetInterpreterGroupBody:
     }
 
     def __init__(self, interpreter_groups=None):
-        """RestSetInterpreterGroupBody
+        r"""RestSetInterpreterGroupBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestSetInterpreterGroupBody:
 
     @property
     def interpreter_groups(self):
-        """Gets the interpreter_groups of this RestSetInterpreterGroupBody.
+        r"""Gets the interpreter_groups of this RestSetInterpreterGroupBody.
 
         传译组列表信息
 
@@ -53,7 +53,7 @@ class RestSetInterpreterGroupBody:
 
     @interpreter_groups.setter
     def interpreter_groups(self, interpreter_groups):
-        """Sets the interpreter_groups of this RestSetInterpreterGroupBody.
+        r"""Sets the interpreter_groups of this RestSetInterpreterGroupBody.
 
         传译组列表信息
 

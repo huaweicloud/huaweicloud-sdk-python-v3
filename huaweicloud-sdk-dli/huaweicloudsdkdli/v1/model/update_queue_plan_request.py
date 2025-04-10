@@ -29,7 +29,7 @@ class UpdateQueuePlanRequest:
     }
 
     def __init__(self, plan_id=None, queue_name=None, body=None):
-        """UpdateQueuePlanRequest
+        r"""UpdateQueuePlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateQueuePlanRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this UpdateQueuePlanRequest.
+        r"""Gets the plan_id of this UpdateQueuePlanRequest.
 
         待修改的队列扩缩容计划的ID
 
@@ -66,7 +66,7 @@ class UpdateQueuePlanRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this UpdateQueuePlanRequest.
+        r"""Sets the plan_id of this UpdateQueuePlanRequest.
 
         待修改的队列扩缩容计划的ID
 
@@ -77,7 +77,7 @@ class UpdateQueuePlanRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateQueuePlanRequest.
+        r"""Gets the queue_name of this UpdateQueuePlanRequest.
 
         待删除定时扩缩计划的队列名称
 
@@ -88,7 +88,7 @@ class UpdateQueuePlanRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateQueuePlanRequest.
+        r"""Sets the queue_name of this UpdateQueuePlanRequest.
 
         待删除定时扩缩计划的队列名称
 
@@ -99,7 +99,7 @@ class UpdateQueuePlanRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateQueuePlanRequest.
+        r"""Gets the body of this UpdateQueuePlanRequest.
 
         :return: The body of this UpdateQueuePlanRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`
@@ -108,7 +108,7 @@ class UpdateQueuePlanRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateQueuePlanRequest.
+        r"""Sets the body of this UpdateQueuePlanRequest.
 
         :param body: The body of this UpdateQueuePlanRequest.
         :type body: :class:`huaweicloudsdkdli.v1.QueuePlanRequestBody`

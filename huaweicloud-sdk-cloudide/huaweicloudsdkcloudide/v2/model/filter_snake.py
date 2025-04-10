@@ -33,7 +33,7 @@ class FilterSnake:
     }
 
     def __init__(self, criteria=None, page_number=None, page_size=None, sort_by=None, sort_order=None):
-        """FilterSnake
+        r"""FilterSnake
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class FilterSnake:
 
     @property
     def criteria(self):
-        """Gets the criteria of this FilterSnake.
+        r"""Gets the criteria of this FilterSnake.
 
         过滤集合
 
@@ -80,7 +80,7 @@ class FilterSnake:
 
     @criteria.setter
     def criteria(self, criteria):
-        """Sets the criteria of this FilterSnake.
+        r"""Sets the criteria of this FilterSnake.
 
         过滤集合
 
@@ -91,7 +91,7 @@ class FilterSnake:
 
     @property
     def page_number(self):
-        """Gets the page_number of this FilterSnake.
+        r"""Gets the page_number of this FilterSnake.
 
         页码
 
@@ -102,7 +102,7 @@ class FilterSnake:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this FilterSnake.
+        r"""Sets the page_number of this FilterSnake.
 
         页码
 
@@ -113,7 +113,7 @@ class FilterSnake:
 
     @property
     def page_size(self):
-        """Gets the page_size of this FilterSnake.
+        r"""Gets the page_size of this FilterSnake.
 
         分页大小
 
@@ -124,7 +124,7 @@ class FilterSnake:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this FilterSnake.
+        r"""Sets the page_size of this FilterSnake.
 
         分页大小
 
@@ -135,7 +135,7 @@ class FilterSnake:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this FilterSnake.
+        r"""Gets the sort_by of this FilterSnake.
 
         排序字段. - 1 修改日期 - 2 插件名称 - 3 插件作者名称
 
@@ -146,7 +146,7 @@ class FilterSnake:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this FilterSnake.
+        r"""Sets the sort_by of this FilterSnake.
 
         排序字段. - 1 修改日期 - 2 插件名称 - 3 插件作者名称
 
@@ -157,7 +157,7 @@ class FilterSnake:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this FilterSnake.
+        r"""Gets the sort_order of this FilterSnake.
 
         排序顺序. - 1 升序 - 2 降序
 
@@ -168,7 +168,7 @@ class FilterSnake:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this FilterSnake.
+        r"""Sets the sort_order of this FilterSnake.
 
         排序顺序. - 1 升序 - 2 降序
 

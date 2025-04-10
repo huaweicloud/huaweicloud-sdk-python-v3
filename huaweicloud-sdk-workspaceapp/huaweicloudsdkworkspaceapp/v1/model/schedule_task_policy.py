@@ -25,7 +25,7 @@ class ScheduleTaskPolicy:
     }
 
     def __init__(self, enforcement_enable=None):
-        """ScheduleTaskPolicy
+        r"""ScheduleTaskPolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ScheduleTaskPolicy:
 
     @property
     def enforcement_enable(self):
-        """Gets the enforcement_enable of this ScheduleTaskPolicy.
+        r"""Gets the enforcement_enable of this ScheduleTaskPolicy.
 
         当存在会话的时候，是否强制执行，强制执行开关。取值为： * false：表示关闭。 * true：表示开启。
 
@@ -54,7 +54,7 @@ class ScheduleTaskPolicy:
 
     @enforcement_enable.setter
     def enforcement_enable(self, enforcement_enable):
-        """Sets the enforcement_enable of this ScheduleTaskPolicy.
+        r"""Sets the enforcement_enable of this ScheduleTaskPolicy.
 
         当存在会话的时候，是否强制执行，强制执行开关。取值为： * false：表示关闭。 * true：表示开启。
 

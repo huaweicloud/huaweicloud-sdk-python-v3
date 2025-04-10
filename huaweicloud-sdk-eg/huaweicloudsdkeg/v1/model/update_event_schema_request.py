@@ -27,7 +27,7 @@ class UpdateEventSchemaRequest:
     }
 
     def __init__(self, schema_id=None, body=None):
-        """UpdateEventSchemaRequest
+        r"""UpdateEventSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEventSchemaRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this UpdateEventSchemaRequest.
+        r"""Gets the schema_id of this UpdateEventSchemaRequest.
 
         指定查询的事件模型ID
 
@@ -60,7 +60,7 @@ class UpdateEventSchemaRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this UpdateEventSchemaRequest.
+        r"""Sets the schema_id of this UpdateEventSchemaRequest.
 
         指定查询的事件模型ID
 
@@ -71,7 +71,7 @@ class UpdateEventSchemaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventSchemaRequest.
+        r"""Gets the body of this UpdateEventSchemaRequest.
 
         :return: The body of this UpdateEventSchemaRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CustomizeSchemaUpdateReq`
@@ -80,7 +80,7 @@ class UpdateEventSchemaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventSchemaRequest.
+        r"""Sets the body of this UpdateEventSchemaRequest.
 
         :param body: The body of this UpdateEventSchemaRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CustomizeSchemaUpdateReq`

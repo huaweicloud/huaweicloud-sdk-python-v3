@@ -37,7 +37,7 @@ class CambodianIdCardScoreInformationResult:
     }
 
     def __init__(self, idcard_type_score=None, border_integrity_score=None, blocking_within_border_score=None, blur_score=None, glare_score=None, tampering_score=None, reproduce_score=None):
-        """CambodianIdCardScoreInformationResult
+        r"""CambodianIdCardScoreInformationResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def idcard_type_score(self):
-        """Gets the idcard_type_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the idcard_type_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示复印件，小于等于50表示原件，值越靠近99，表示复印件的可能性越大，值越靠近0，表示原件的可能性越大。  仅在传入参数return_idcard_type为true时，返回该字段。 
 
@@ -96,7 +96,7 @@ class CambodianIdCardScoreInformationResult:
 
     @idcard_type_score.setter
     def idcard_type_score(self, idcard_type_score):
-        """Sets the idcard_type_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the idcard_type_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示复印件，小于等于50表示原件，值越靠近99，表示复印件的可能性越大，值越靠近0，表示原件的可能性越大。  仅在传入参数return_idcard_type为true时，返回该字段。 
 
@@ -107,7 +107,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def border_integrity_score(self):
-        """Gets the border_integrity_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the border_integrity_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示边框不完整，小于50表示边框完整，值越靠近99，表示边框不完整的可能性越大，值越靠近0，表示边框完整的可能性越大。 仅在传入参数detect_border_integrity为true时，返回该字段。 
 
@@ -118,7 +118,7 @@ class CambodianIdCardScoreInformationResult:
 
     @border_integrity_score.setter
     def border_integrity_score(self, border_integrity_score):
-        """Sets the border_integrity_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the border_integrity_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示边框不完整，小于50表示边框完整，值越靠近99，表示边框不完整的可能性越大，值越靠近0，表示边框完整的可能性越大。 仅在传入参数detect_border_integrity为true时，返回该字段。 
 
@@ -129,7 +129,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def blocking_within_border_score(self):
-        """Gets the blocking_within_border_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the blocking_within_border_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示框内有遮挡，小于50表示框内无遮挡，值越靠近99，表示框内有遮挡的可能性越大，值越靠近0，表示框内无遮挡的可能性越大。 仅在传入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -140,7 +140,7 @@ class CambodianIdCardScoreInformationResult:
 
     @blocking_within_border_score.setter
     def blocking_within_border_score(self, blocking_within_border_score):
-        """Sets the blocking_within_border_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the blocking_within_border_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示框内有遮挡，小于50表示框内无遮挡，值越靠近99，表示框内有遮挡的可能性越大，值越靠近0，表示框内无遮挡的可能性越大。 仅在传入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -151,7 +151,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def blur_score(self):
-        """Gets the blur_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the blur_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证模糊，小于50表示身份证清晰，值越靠近99，表示身份证模糊的可能性越大，值越靠近0，表示身份证清晰的可能性越大。 仅在传入参数detect_blur为true时，返回该字段。 
 
@@ -162,7 +162,7 @@ class CambodianIdCardScoreInformationResult:
 
     @blur_score.setter
     def blur_score(self, blur_score):
-        """Sets the blur_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the blur_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证模糊，小于50表示身份证清晰，值越靠近99，表示身份证模糊的可能性越大，值越靠近0，表示身份证清晰的可能性越大。 仅在传入参数detect_blur为true时，返回该字段。 
 
@@ -173,7 +173,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def glare_score(self):
-        """Gets the glare_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the glare_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证反光，小于50表示身份证不反光，值越靠近99，表示身份证反光的可能性越大，值越靠近0，表示身份证不反光的可能性越大。 仅在传入参数detect_glare为true时，返回该字段。 
 
@@ -184,7 +184,7 @@ class CambodianIdCardScoreInformationResult:
 
     @glare_score.setter
     def glare_score(self, glare_score):
-        """Sets the glare_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the glare_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证反光，小于50表示身份证不反光，值越靠近99，表示身份证反光的可能性越大，值越靠近0，表示身份证不反光的可能性越大。 仅在传入参数detect_glare为true时，返回该字段。 
 
@@ -195,7 +195,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def tampering_score(self):
-        """Gets the tampering_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the tampering_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证人像被其他非身份证人像篡改过，小于50表示身份证人像未被篡改，值越靠近99，表示身份证人像被篡改的可能性越大，值越靠近0，表示身份证未人像被篡改的可能性越大。 仅在传入参数detect_tampering为true时，返回该字段。 
 
@@ -206,7 +206,7 @@ class CambodianIdCardScoreInformationResult:
 
     @tampering_score.setter
     def tampering_score(self, tampering_score):
-        """Sets the tampering_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the tampering_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证人像被其他非身份证人像篡改过，小于50表示身份证人像未被篡改，值越靠近99，表示身份证人像被篡改的可能性越大，值越靠近0，表示身份证未人像被篡改的可能性越大。 仅在传入参数detect_tampering为true时，返回该字段。 
 
@@ -217,7 +217,7 @@ class CambodianIdCardScoreInformationResult:
 
     @property
     def reproduce_score(self):
-        """Gets the reproduce_score of this CambodianIdCardScoreInformationResult.
+        r"""Gets the reproduce_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证经过翻拍，小于50表示身份证未经过翻拍，值越靠近99，表示身份证图像被翻拍过的可能性越大，值越靠近0，表示身份证图像未被翻拍的可能性越大。 仅在传入参数detect_reproduce为true时，返回该字段。 
 
@@ -228,7 +228,7 @@ class CambodianIdCardScoreInformationResult:
 
     @reproduce_score.setter
     def reproduce_score(self, reproduce_score):
-        """Sets the reproduce_score of this CambodianIdCardScoreInformationResult.
+        r"""Sets the reproduce_score of this CambodianIdCardScoreInformationResult.
 
         告警分数，字段取值范围[0, 99]值大于50表示身份证经过翻拍，小于50表示身份证未经过翻拍，值越靠近99，表示身份证图像被翻拍过的可能性越大，值越靠近0，表示身份证图像未被翻拍的可能性越大。 仅在传入参数detect_reproduce为true时，返回该字段。 
 

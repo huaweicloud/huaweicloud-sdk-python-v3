@@ -51,7 +51,7 @@ class InstanceStatusStatistics:
     }
 
     def __init__(self, static_name=None, running_num=None, stop_num=None, hibernate_num=None, other_num=None, attached_num=None, unattached_num=None, cannot_attach_num=None, in_process_num=None, in_use_num=None, unregistered_num=None, ready_num=None, disconnected_num=None, unknown_num=None):
-        """InstanceStatusStatistics
+        r"""InstanceStatusStatistics
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class InstanceStatusStatistics:
 
     @property
     def static_name(self):
-        """Gets the static_name of this InstanceStatusStatistics.
+        r"""Gets the static_name of this InstanceStatusStatistics.
 
         统计对象名称(虚拟机组名称、桌面组名称)。
 
@@ -145,7 +145,7 @@ class InstanceStatusStatistics:
 
     @static_name.setter
     def static_name(self, static_name):
-        """Sets the static_name of this InstanceStatusStatistics.
+        r"""Sets the static_name of this InstanceStatusStatistics.
 
         统计对象名称(虚拟机组名称、桌面组名称)。
 
@@ -156,7 +156,7 @@ class InstanceStatusStatistics:
 
     @property
     def running_num(self):
-        """Gets the running_num of this InstanceStatusStatistics.
+        r"""Gets the running_num of this InstanceStatusStatistics.
 
         运行数目(运行中、启动中、故障迁移中、迁移中)。
 
@@ -167,7 +167,7 @@ class InstanceStatusStatistics:
 
     @running_num.setter
     def running_num(self, running_num):
-        """Sets the running_num of this InstanceStatusStatistics.
+        r"""Sets the running_num of this InstanceStatusStatistics.
 
         运行数目(运行中、启动中、故障迁移中、迁移中)。
 
@@ -178,7 +178,7 @@ class InstanceStatusStatistics:
 
     @property
     def stop_num(self):
-        """Gets the stop_num of this InstanceStatusStatistics.
+        r"""Gets the stop_num of this InstanceStatusStatistics.
 
         关机数目(关机中、已关机)。
 
@@ -189,7 +189,7 @@ class InstanceStatusStatistics:
 
     @stop_num.setter
     def stop_num(self, stop_num):
-        """Sets the stop_num of this InstanceStatusStatistics.
+        r"""Sets the stop_num of this InstanceStatusStatistics.
 
         关机数目(关机中、已关机)。
 
@@ -200,7 +200,7 @@ class InstanceStatusStatistics:
 
     @property
     def hibernate_num(self):
-        """Gets the hibernate_num of this InstanceStatusStatistics.
+        r"""Gets the hibernate_num of this InstanceStatusStatistics.
 
         休眠数目(休眠中、已休眠)。
 
@@ -211,7 +211,7 @@ class InstanceStatusStatistics:
 
     @hibernate_num.setter
     def hibernate_num(self, hibernate_num):
-        """Sets the hibernate_num of this InstanceStatusStatistics.
+        r"""Sets the hibernate_num of this InstanceStatusStatistics.
 
         休眠数目(休眠中、已休眠)。
 
@@ -222,7 +222,7 @@ class InstanceStatusStatistics:
 
     @property
     def other_num(self):
-        """Gets the other_num of this InstanceStatusStatistics.
+        r"""Gets the other_num of this InstanceStatusStatistics.
 
         其他(未知、删除失败、删除中)。
 
@@ -233,7 +233,7 @@ class InstanceStatusStatistics:
 
     @other_num.setter
     def other_num(self, other_num):
-        """Sets the other_num of this InstanceStatusStatistics.
+        r"""Sets the other_num of this InstanceStatusStatistics.
 
         其他(未知、删除失败、删除中)。
 
@@ -244,7 +244,7 @@ class InstanceStatusStatistics:
 
     @property
     def attached_num(self):
-        """Gets the attached_num of this InstanceStatusStatistics.
+        r"""Gets the attached_num of this InstanceStatusStatistics.
 
         已分配数目
 
@@ -255,7 +255,7 @@ class InstanceStatusStatistics:
 
     @attached_num.setter
     def attached_num(self, attached_num):
-        """Sets the attached_num of this InstanceStatusStatistics.
+        r"""Sets the attached_num of this InstanceStatusStatistics.
 
         已分配数目
 
@@ -266,7 +266,7 @@ class InstanceStatusStatistics:
 
     @property
     def unattached_num(self):
-        """Gets the unattached_num of this InstanceStatusStatistics.
+        r"""Gets the unattached_num of this InstanceStatusStatistics.
 
         未分配数目
 
@@ -277,7 +277,7 @@ class InstanceStatusStatistics:
 
     @unattached_num.setter
     def unattached_num(self, unattached_num):
-        """Sets the unattached_num of this InstanceStatusStatistics.
+        r"""Sets the unattached_num of this InstanceStatusStatistics.
 
         未分配数目
 
@@ -288,7 +288,7 @@ class InstanceStatusStatistics:
 
     @property
     def cannot_attach_num(self):
-        """Gets the cannot_attach_num of this InstanceStatusStatistics.
+        r"""Gets the cannot_attach_num of this InstanceStatusStatistics.
 
         不可分配数目(分配失败、解分配失败、解分配成功)
 
@@ -299,7 +299,7 @@ class InstanceStatusStatistics:
 
     @cannot_attach_num.setter
     def cannot_attach_num(self, cannot_attach_num):
-        """Sets the cannot_attach_num of this InstanceStatusStatistics.
+        r"""Sets the cannot_attach_num of this InstanceStatusStatistics.
 
         不可分配数目(分配失败、解分配失败、解分配成功)
 
@@ -310,7 +310,7 @@ class InstanceStatusStatistics:
 
     @property
     def in_process_num(self):
-        """Gets the in_process_num of this InstanceStatusStatistics.
+        r"""Gets the in_process_num of this InstanceStatusStatistics.
 
         处理中(分配中、解分配中)
 
@@ -321,7 +321,7 @@ class InstanceStatusStatistics:
 
     @in_process_num.setter
     def in_process_num(self, in_process_num):
-        """Sets the in_process_num of this InstanceStatusStatistics.
+        r"""Sets the in_process_num of this InstanceStatusStatistics.
 
         处理中(分配中、解分配中)
 
@@ -332,7 +332,7 @@ class InstanceStatusStatistics:
 
     @property
     def in_use_num(self):
-        """Gets the in_use_num of this InstanceStatusStatistics.
+        r"""Gets the in_use_num of this InstanceStatusStatistics.
 
         使用中数目。
 
@@ -343,7 +343,7 @@ class InstanceStatusStatistics:
 
     @in_use_num.setter
     def in_use_num(self, in_use_num):
-        """Sets the in_use_num of this InstanceStatusStatistics.
+        r"""Sets the in_use_num of this InstanceStatusStatistics.
 
         使用中数目。
 
@@ -354,7 +354,7 @@ class InstanceStatusStatistics:
 
     @property
     def unregistered_num(self):
-        """Gets the unregistered_num of this InstanceStatusStatistics.
+        r"""Gets the unregistered_num of this InstanceStatusStatistics.
 
         未注册数目。
 
@@ -365,7 +365,7 @@ class InstanceStatusStatistics:
 
     @unregistered_num.setter
     def unregistered_num(self, unregistered_num):
-        """Sets the unregistered_num of this InstanceStatusStatistics.
+        r"""Sets the unregistered_num of this InstanceStatusStatistics.
 
         未注册数目。
 
@@ -376,7 +376,7 @@ class InstanceStatusStatistics:
 
     @property
     def ready_num(self):
-        """Gets the ready_num of this InstanceStatusStatistics.
+        r"""Gets the ready_num of this InstanceStatusStatistics.
 
         空闲数目。
 
@@ -387,7 +387,7 @@ class InstanceStatusStatistics:
 
     @ready_num.setter
     def ready_num(self, ready_num):
-        """Sets the ready_num of this InstanceStatusStatistics.
+        r"""Sets the ready_num of this InstanceStatusStatistics.
 
         空闲数目。
 
@@ -398,7 +398,7 @@ class InstanceStatusStatistics:
 
     @property
     def disconnected_num(self):
-        """Gets the disconnected_num of this InstanceStatusStatistics.
+        r"""Gets the disconnected_num of this InstanceStatusStatistics.
 
         断开连接数目。
 
@@ -409,7 +409,7 @@ class InstanceStatusStatistics:
 
     @disconnected_num.setter
     def disconnected_num(self, disconnected_num):
-        """Sets the disconnected_num of this InstanceStatusStatistics.
+        r"""Sets the disconnected_num of this InstanceStatusStatistics.
 
         断开连接数目。
 
@@ -420,7 +420,7 @@ class InstanceStatusStatistics:
 
     @property
     def unknown_num(self):
-        """Gets the unknown_num of this InstanceStatusStatistics.
+        r"""Gets the unknown_num of this InstanceStatusStatistics.
 
         未知数目。
 
@@ -431,7 +431,7 @@ class InstanceStatusStatistics:
 
     @unknown_num.setter
     def unknown_num(self, unknown_num):
-        """Sets the unknown_num of this InstanceStatusStatistics.
+        r"""Sets the unknown_num of this InstanceStatusStatistics.
 
         未知数目。
 

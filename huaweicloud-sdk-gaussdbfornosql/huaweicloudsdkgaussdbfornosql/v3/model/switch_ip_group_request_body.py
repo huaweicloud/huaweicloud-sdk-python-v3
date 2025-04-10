@@ -29,7 +29,7 @@ class SwitchIpGroupRequestBody:
     }
 
     def __init__(self, type=None, enabled=None, ip_groups=None):
-        """SwitchIpGroupRequestBody
+        r"""SwitchIpGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SwitchIpGroupRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this SwitchIpGroupRequestBody.
+        r"""Gets the type of this SwitchIpGroupRequestBody.
 
         类型选项，取值： - whiteList：白名单，只允许指定ip或网段访问。 - blackList：黑名单，不允许指定ip或网段访问。
 
@@ -65,7 +65,7 @@ class SwitchIpGroupRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SwitchIpGroupRequestBody.
+        r"""Sets the type of this SwitchIpGroupRequestBody.
 
         类型选项，取值： - whiteList：白名单，只允许指定ip或网段访问。 - blackList：黑名单，不允许指定ip或网段访问。
 
@@ -76,7 +76,7 @@ class SwitchIpGroupRequestBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this SwitchIpGroupRequestBody.
+        r"""Gets the enabled of this SwitchIpGroupRequestBody.
 
         true 开启，false 关闭。
 
@@ -87,7 +87,7 @@ class SwitchIpGroupRequestBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this SwitchIpGroupRequestBody.
+        r"""Sets the enabled of this SwitchIpGroupRequestBody.
 
         true 开启，false 关闭。
 
@@ -98,7 +98,7 @@ class SwitchIpGroupRequestBody:
 
     @property
     def ip_groups(self):
-        """Gets the ip_groups of this SwitchIpGroupRequestBody.
+        r"""Gets the ip_groups of this SwitchIpGroupRequestBody.
 
         IP地址组中包含的IP或网段列表。
 
@@ -109,7 +109,7 @@ class SwitchIpGroupRequestBody:
 
     @ip_groups.setter
     def ip_groups(self, ip_groups):
-        """Sets the ip_groups of this SwitchIpGroupRequestBody.
+        r"""Sets the ip_groups of this SwitchIpGroupRequestBody.
 
         IP地址组中包含的IP或网段列表。
 

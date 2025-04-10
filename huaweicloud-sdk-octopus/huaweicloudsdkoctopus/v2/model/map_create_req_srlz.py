@@ -27,7 +27,7 @@ class MapCreateReqSrlz:
     }
 
     def __init__(self, file=None, version=None):
-        """MapCreateReqSrlz
+        r"""MapCreateReqSrlz
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MapCreateReqSrlz:
 
     @property
     def file(self):
-        """Gets the file of this MapCreateReqSrlz.
+        r"""Gets the file of this MapCreateReqSrlz.
 
         :return: The file of this MapCreateReqSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.FileCreateReqSrlz`
@@ -57,7 +57,7 @@ class MapCreateReqSrlz:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this MapCreateReqSrlz.
+        r"""Sets the file of this MapCreateReqSrlz.
 
         :param file: The file of this MapCreateReqSrlz.
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateReqSrlz`
@@ -66,7 +66,7 @@ class MapCreateReqSrlz:
 
     @property
     def version(self):
-        """Gets the version of this MapCreateReqSrlz.
+        r"""Gets the version of this MapCreateReqSrlz.
 
         :return: The version of this MapCreateReqSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
@@ -75,7 +75,7 @@ class MapCreateReqSrlz:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MapCreateReqSrlz.
+        r"""Sets the version of this MapCreateReqSrlz.
 
         :param version: The version of this MapCreateReqSrlz.
         :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`

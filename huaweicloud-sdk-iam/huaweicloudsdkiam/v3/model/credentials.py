@@ -33,7 +33,7 @@ class Credentials:
     }
 
     def __init__(self, user_id=None, access=None, status=None, create_time=None, description=None):
-        """Credentials
+        r"""Credentials
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Credentials:
 
     @property
     def user_id(self):
-        """Gets the user_id of this Credentials.
+        r"""Gets the user_id of this Credentials.
 
         IAM用户ID。
 
@@ -77,7 +77,7 @@ class Credentials:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this Credentials.
+        r"""Sets the user_id of this Credentials.
 
         IAM用户ID。
 
@@ -88,7 +88,7 @@ class Credentials:
 
     @property
     def access(self):
-        """Gets the access of this Credentials.
+        r"""Gets the access of this Credentials.
 
         查询的AK。
 
@@ -99,7 +99,7 @@ class Credentials:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this Credentials.
+        r"""Sets the access of this Credentials.
 
         查询的AK。
 
@@ -110,7 +110,7 @@ class Credentials:
 
     @property
     def status(self):
-        """Gets the status of this Credentials.
+        r"""Gets the status of this Credentials.
 
         访问密钥状态。
 
@@ -121,7 +121,7 @@ class Credentials:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Credentials.
+        r"""Sets the status of this Credentials.
 
         访问密钥状态。
 
@@ -132,7 +132,7 @@ class Credentials:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Credentials.
+        r"""Gets the create_time of this Credentials.
 
         访问密钥创建时间。
 
@@ -143,7 +143,7 @@ class Credentials:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Credentials.
+        r"""Sets the create_time of this Credentials.
 
         访问密钥创建时间。
 
@@ -154,7 +154,7 @@ class Credentials:
 
     @property
     def description(self):
-        """Gets the description of this Credentials.
+        r"""Gets the description of this Credentials.
 
         访问密钥描述信息。
 
@@ -165,7 +165,7 @@ class Credentials:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Credentials.
+        r"""Sets the description of this Credentials.
 
         访问密钥描述信息。
 

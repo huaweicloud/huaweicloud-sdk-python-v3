@@ -35,7 +35,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
     }
 
     def __init__(self, resource_id=None, resource_type=None, region_id=None, project_id=None, result=None, message=None):
-        """DisassociateGlobalConnectionBandwidthInstanceResponseInfo
+        r"""DisassociateGlobalConnectionBandwidthInstanceResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Gets the resource_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例ID。 取值范围：1-36个字符，支持数字、字母、_(下划线)、-（中划线）
 
@@ -86,7 +86,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Sets the resource_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例ID。 取值范围：1-36个字符，支持数字、字母、_(下划线)、-（中划线）
 
@@ -97,7 +97,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Gets the resource_type of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例类型。
 
@@ -108,7 +108,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Sets the resource_type of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例类型。
 
@@ -119,7 +119,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Gets the region_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例所在region，不填默认\"global\"。
 
@@ -130,7 +130,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Sets the region_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例所在region，不填默认\"global\"。
 
@@ -141,7 +141,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Gets the project_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例所在region对应的projectId。
 
@@ -152,7 +152,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Sets the project_id of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：实例所在region对应的projectId。
 
@@ -163,7 +163,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @property
     def result(self):
-        """Gets the result of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Gets the result of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：解绑操作成功还是失败。 - success: 成功 - fail: 失败
 
@@ -174,7 +174,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Sets the result of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：解绑操作成功还是失败。 - success: 成功 - fail: 失败
 
@@ -185,7 +185,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @property
     def message(self):
-        """Gets the message of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Gets the message of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：解绑操作如果失败，具体的错误信息。
 
@@ -196,7 +196,7 @@ class DisassociateGlobalConnectionBandwidthInstanceResponseInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
+        r"""Sets the message of this DisassociateGlobalConnectionBandwidthInstanceResponseInfo.
 
         功能说明：解绑操作如果失败，具体的错误信息。
 

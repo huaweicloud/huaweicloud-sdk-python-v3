@@ -39,7 +39,7 @@ class ScanSkeyKvRequestBody:
     }
 
     def __init__(self, table_name=None, hint_index_name=None, limit=None, shard_key=None, start_sort_key=None, end_sort_key=None, filter_expression=None, return_count_only=None):
-        """ScanSkeyKvRequestBody
+        r"""ScanSkeyKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ScanSkeyKvRequestBody.
+        r"""Gets the table_name of this ScanSkeyKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -101,7 +101,7 @@ class ScanSkeyKvRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ScanSkeyKvRequestBody.
+        r"""Sets the table_name of this ScanSkeyKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -112,7 +112,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def hint_index_name(self):
-        """Gets the hint_index_name of this ScanSkeyKvRequestBody.
+        r"""Gets the hint_index_name of this ScanSkeyKvRequestBody.
 
         create_table时指定的索引名。
 
@@ -123,7 +123,7 @@ class ScanSkeyKvRequestBody:
 
     @hint_index_name.setter
     def hint_index_name(self, hint_index_name):
-        """Sets the hint_index_name of this ScanSkeyKvRequestBody.
+        r"""Sets the hint_index_name of this ScanSkeyKvRequestBody.
 
         create_table时指定的索引名。
 
@@ -134,7 +134,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ScanSkeyKvRequestBody.
+        r"""Gets the limit of this ScanSkeyKvRequestBody.
 
         数据量不超过1MB时，返回的文档个数，最大100个，默认1MB或者100个文档。
 
@@ -145,7 +145,7 @@ class ScanSkeyKvRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ScanSkeyKvRequestBody.
+        r"""Sets the limit of this ScanSkeyKvRequestBody.
 
         数据量不超过1MB时，返回的文档个数，最大100个，默认1MB或者100个文档。
 
@@ -156,7 +156,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def shard_key(self):
-        """Gets the shard_key of this ScanSkeyKvRequestBody.
+        r"""Gets the shard_key of this ScanSkeyKvRequestBody.
 
         要遍历的指定分区键下的kv。
 
@@ -167,7 +167,7 @@ class ScanSkeyKvRequestBody:
 
     @shard_key.setter
     def shard_key(self, shard_key):
-        """Sets the shard_key of this ScanSkeyKvRequestBody.
+        r"""Sets the shard_key of this ScanSkeyKvRequestBody.
 
         要遍历的指定分区键下的kv。
 
@@ -178,7 +178,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def start_sort_key(self):
-        """Gets the start_sort_key of this ScanSkeyKvRequestBody.
+        r"""Gets the start_sort_key of this ScanSkeyKvRequestBody.
 
         起始排序键值，默认空表示从头遍历，左闭。 > 分页返回时，该值使用上次响应返回的cursor_sort_key
 
@@ -189,7 +189,7 @@ class ScanSkeyKvRequestBody:
 
     @start_sort_key.setter
     def start_sort_key(self, start_sort_key):
-        """Sets the start_sort_key of this ScanSkeyKvRequestBody.
+        r"""Sets the start_sort_key of this ScanSkeyKvRequestBody.
 
         起始排序键值，默认空表示从头遍历，左闭。 > 分页返回时，该值使用上次响应返回的cursor_sort_key
 
@@ -200,7 +200,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def end_sort_key(self):
-        """Gets the end_sort_key of this ScanSkeyKvRequestBody.
+        r"""Gets the end_sort_key of this ScanSkeyKvRequestBody.
 
         终止主键或索引键值，默认空表示直到最后，右开。
 
@@ -211,7 +211,7 @@ class ScanSkeyKvRequestBody:
 
     @end_sort_key.setter
     def end_sort_key(self, end_sort_key):
-        """Sets the end_sort_key of this ScanSkeyKvRequestBody.
+        r"""Sets the end_sort_key of this ScanSkeyKvRequestBody.
 
         终止主键或索引键值，默认空表示直到最后，右开。
 
@@ -222,7 +222,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def filter_expression(self):
-        """Gets the filter_expression of this ScanSkeyKvRequestBody.
+        r"""Gets the filter_expression of this ScanSkeyKvRequestBody.
 
         :return: The filter_expression of this ScanSkeyKvRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -231,7 +231,7 @@ class ScanSkeyKvRequestBody:
 
     @filter_expression.setter
     def filter_expression(self, filter_expression):
-        """Sets the filter_expression of this ScanSkeyKvRequestBody.
+        r"""Sets the filter_expression of this ScanSkeyKvRequestBody.
 
         :param filter_expression: The filter_expression of this ScanSkeyKvRequestBody.
         :type filter_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -240,7 +240,7 @@ class ScanSkeyKvRequestBody:
 
     @property
     def return_count_only(self):
-        """Gets the return_count_only of this ScanSkeyKvRequestBody.
+        r"""Gets the return_count_only of this ScanSkeyKvRequestBody.
 
         返回查询条件对应的KV总数. - 当KV总数小于limit条件时，返回KV查询结果和KV总数。 - 当KV总数多于limit条件时，只返回KV总数。
 
@@ -251,7 +251,7 @@ class ScanSkeyKvRequestBody:
 
     @return_count_only.setter
     def return_count_only(self, return_count_only):
-        """Sets the return_count_only of this ScanSkeyKvRequestBody.
+        r"""Sets the return_count_only of this ScanSkeyKvRequestBody.
 
         返回查询条件对应的KV总数. - 当KV总数小于limit条件时，返回KV查询结果和KV总数。 - 当KV总数多于limit条件时，只返回KV总数。
 

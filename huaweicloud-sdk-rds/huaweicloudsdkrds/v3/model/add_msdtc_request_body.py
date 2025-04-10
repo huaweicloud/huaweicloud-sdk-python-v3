@@ -25,7 +25,7 @@ class AddMsdtcRequestBody:
     }
 
     def __init__(self, hosts=None):
-        """AddMsdtcRequestBody
+        r"""AddMsdtcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddMsdtcRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this AddMsdtcRequestBody.
+        r"""Gets the hosts of this AddMsdtcRequestBody.
 
         主机信息，key为hostname ，value 为IP
 
@@ -54,7 +54,7 @@ class AddMsdtcRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this AddMsdtcRequestBody.
+        r"""Sets the hosts of this AddMsdtcRequestBody.
 
         主机信息，key为hostname ，value 为IP
 

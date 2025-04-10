@@ -33,7 +33,7 @@ class ListEnhancedConnectionsRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None, tags=None):
-        """ListEnhancedConnectionsRequest
+        r"""ListEnhancedConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListEnhancedConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnhancedConnectionsRequest.
+        r"""Gets the limit of this ListEnhancedConnectionsRequest.
 
         查询最大连接个数，默认100。
 
@@ -82,7 +82,7 @@ class ListEnhancedConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnhancedConnectionsRequest.
+        r"""Sets the limit of this ListEnhancedConnectionsRequest.
 
         查询最大连接个数，默认100。
 
@@ -93,7 +93,7 @@ class ListEnhancedConnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEnhancedConnectionsRequest.
+        r"""Gets the name of this ListEnhancedConnectionsRequest.
 
         连接名。
 
@@ -104,7 +104,7 @@ class ListEnhancedConnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEnhancedConnectionsRequest.
+        r"""Sets the name of this ListEnhancedConnectionsRequest.
 
         连接名。
 
@@ -115,7 +115,7 @@ class ListEnhancedConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnhancedConnectionsRequest.
+        r"""Gets the offset of this ListEnhancedConnectionsRequest.
 
         查询结果偏移量，默认为0（连接以创建时间进行排序）
 
@@ -126,7 +126,7 @@ class ListEnhancedConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnhancedConnectionsRequest.
+        r"""Sets the offset of this ListEnhancedConnectionsRequest.
 
         查询结果偏移量，默认为0（连接以创建时间进行排序）
 
@@ -137,7 +137,7 @@ class ListEnhancedConnectionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEnhancedConnectionsRequest.
+        r"""Gets the status of this ListEnhancedConnectionsRequest.
 
         连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
 
@@ -148,7 +148,7 @@ class ListEnhancedConnectionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEnhancedConnectionsRequest.
+        r"""Sets the status of this ListEnhancedConnectionsRequest.
 
         连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
 
@@ -159,7 +159,7 @@ class ListEnhancedConnectionsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListEnhancedConnectionsRequest.
+        r"""Gets the tags of this ListEnhancedConnectionsRequest.
 
         标签
 
@@ -170,7 +170,7 @@ class ListEnhancedConnectionsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListEnhancedConnectionsRequest.
+        r"""Sets the tags of this ListEnhancedConnectionsRequest.
 
         标签
 

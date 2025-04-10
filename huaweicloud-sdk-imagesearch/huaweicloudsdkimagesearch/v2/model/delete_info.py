@@ -27,7 +27,7 @@ class DeleteInfo:
     }
 
     def __init__(self, total_num=None, delete_num=None):
-        """DeleteInfo
+        r"""DeleteInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this DeleteInfo.
+        r"""Gets the total_num of this DeleteInfo.
 
         符合条件的结果总数。
 
@@ -61,7 +61,7 @@ class DeleteInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this DeleteInfo.
+        r"""Sets the total_num of this DeleteInfo.
 
         符合条件的结果总数。
 
@@ -72,7 +72,7 @@ class DeleteInfo:
 
     @property
     def delete_num(self):
-        """Gets the delete_num of this DeleteInfo.
+        r"""Gets the delete_num of this DeleteInfo.
 
         本次删除的结果总数，目前一次请求最多删除100条结果。
 
@@ -83,7 +83,7 @@ class DeleteInfo:
 
     @delete_num.setter
     def delete_num(self, delete_num):
-        """Sets the delete_num of this DeleteInfo.
+        r"""Sets the delete_num of this DeleteInfo.
 
         本次删除的结果总数，目前一次请求最多删除100条结果。
 

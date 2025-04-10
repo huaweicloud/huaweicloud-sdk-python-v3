@@ -26,7 +26,7 @@ class UpdateDeviceResponse(SdkResponse):
     }
 
     def __init__(self, config=None):
-        """UpdateDeviceResponse
+        r"""UpdateDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this UpdateDeviceResponse.
+        r"""Gets the config of this UpdateDeviceResponse.
 
         设备配置，内容由产品的$config服务定义。
 
@@ -55,7 +55,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this UpdateDeviceResponse.
+        r"""Sets the config of this UpdateDeviceResponse.
 
         设备配置，内容由产品的$config服务定义。
 

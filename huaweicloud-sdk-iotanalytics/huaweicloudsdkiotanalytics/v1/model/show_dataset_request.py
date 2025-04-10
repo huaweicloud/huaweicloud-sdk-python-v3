@@ -31,7 +31,7 @@ class ShowDatasetRequest:
     }
 
     def __init__(self, job_id=None, run_id=None, offset=None, limit=None):
-        """ShowDatasetRequest
+        r"""ShowDatasetRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowDatasetRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDatasetRequest.
+        r"""Gets the job_id of this ShowDatasetRequest.
 
         作业ID。
 
@@ -73,7 +73,7 @@ class ShowDatasetRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDatasetRequest.
+        r"""Sets the job_id of this ShowDatasetRequest.
 
         作业ID。
 
@@ -84,7 +84,7 @@ class ShowDatasetRequest:
 
     @property
     def run_id(self):
-        """Gets the run_id of this ShowDatasetRequest.
+        r"""Gets the run_id of this ShowDatasetRequest.
 
         作业运行ID。
 
@@ -95,7 +95,7 @@ class ShowDatasetRequest:
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this ShowDatasetRequest.
+        r"""Sets the run_id of this ShowDatasetRequest.
 
         作业运行ID。
 
@@ -106,7 +106,7 @@ class ShowDatasetRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDatasetRequest.
+        r"""Gets the offset of this ShowDatasetRequest.
 
         当前偏移量，默认为0。
 
@@ -117,7 +117,7 @@ class ShowDatasetRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDatasetRequest.
+        r"""Sets the offset of this ShowDatasetRequest.
 
         当前偏移量，默认为0。
 
@@ -128,7 +128,7 @@ class ShowDatasetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDatasetRequest.
+        r"""Gets the limit of this ShowDatasetRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -139,7 +139,7 @@ class ShowDatasetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDatasetRequest.
+        r"""Sets the limit of this ShowDatasetRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 

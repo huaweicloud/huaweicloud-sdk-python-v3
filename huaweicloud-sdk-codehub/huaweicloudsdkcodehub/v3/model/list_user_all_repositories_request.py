@@ -29,7 +29,7 @@ class ListUserAllRepositoriesRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, search=None):
-        """ListUserAllRepositoriesRequest
+        r"""ListUserAllRepositoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListUserAllRepositoriesRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListUserAllRepositoriesRequest.
+        r"""Gets the page_index of this ListUserAllRepositoriesRequest.
 
         分页索引，从1开始计数
 
@@ -68,7 +68,7 @@ class ListUserAllRepositoriesRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListUserAllRepositoriesRequest.
+        r"""Sets the page_index of this ListUserAllRepositoriesRequest.
 
         分页索引，从1开始计数
 
@@ -79,7 +79,7 @@ class ListUserAllRepositoriesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListUserAllRepositoriesRequest.
+        r"""Gets the page_size of this ListUserAllRepositoriesRequest.
 
         每页条目数
 
@@ -90,7 +90,7 @@ class ListUserAllRepositoriesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListUserAllRepositoriesRequest.
+        r"""Sets the page_size of this ListUserAllRepositoriesRequest.
 
         每页条目数
 
@@ -101,7 +101,7 @@ class ListUserAllRepositoriesRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListUserAllRepositoriesRequest.
+        r"""Gets the search of this ListUserAllRepositoriesRequest.
 
         搜索关键字
 
@@ -112,7 +112,7 @@ class ListUserAllRepositoriesRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListUserAllRepositoriesRequest.
+        r"""Sets the search of this ListUserAllRepositoriesRequest.
 
         搜索关键字
 

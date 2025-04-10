@@ -24,7 +24,7 @@ class RetryDataJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RetryDataJobResponse
+        r"""RetryDataJobResponse
 
         The model defined in huaweicloud sdk
 

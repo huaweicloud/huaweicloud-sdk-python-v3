@@ -33,7 +33,7 @@ class PPTAssetMeta:
     }
 
     def __init__(self, auto_analysis=None, ppt_analysis_status=None, error_info=None, page_count=None, pages=None):
-        """PPTAssetMeta
+        r"""PPTAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PPTAssetMeta:
 
     @property
     def auto_analysis(self):
-        """Gets the auto_analysis of this PPTAssetMeta.
+        r"""Gets the auto_analysis of this PPTAssetMeta.
 
         **参数解释**： PPT是否需要自动解析。 **约束限制**： 部分过于复杂的PPT或压缩比过高的PPT可能无法解析。 超过50页PPT仅转换50页 转换的图片无法保证完全还原，需要自行确认。 **取值范围**： * true: 自动解析 * false: 无需解析
 
@@ -82,7 +82,7 @@ class PPTAssetMeta:
 
     @auto_analysis.setter
     def auto_analysis(self, auto_analysis):
-        """Sets the auto_analysis of this PPTAssetMeta.
+        r"""Sets the auto_analysis of this PPTAssetMeta.
 
         **参数解释**： PPT是否需要自动解析。 **约束限制**： 部分过于复杂的PPT或压缩比过高的PPT可能无法解析。 超过50页PPT仅转换50页 转换的图片无法保证完全还原，需要自行确认。 **取值范围**： * true: 自动解析 * false: 无需解析
 
@@ -93,7 +93,7 @@ class PPTAssetMeta:
 
     @property
     def ppt_analysis_status(self):
-        """Gets the ppt_analysis_status of this PPTAssetMeta.
+        r"""Gets the ppt_analysis_status of this PPTAssetMeta.
 
         **参数解释**： PPT解析状态。 **约束限制**： 不涉及 **取值范围**： * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消  **默认取值**： 不涉及
 
@@ -104,7 +104,7 @@ class PPTAssetMeta:
 
     @ppt_analysis_status.setter
     def ppt_analysis_status(self, ppt_analysis_status):
-        """Sets the ppt_analysis_status of this PPTAssetMeta.
+        r"""Sets the ppt_analysis_status of this PPTAssetMeta.
 
         **参数解释**： PPT解析状态。 **约束限制**： 不涉及 **取值范围**： * INITIALIZE：初始 * WAITING：等待 * CONVERTING：解析中 * FAILED：失败 * SUCCEEDED：成功 * CANCELED：取消  **默认取值**： 不涉及
 
@@ -115,7 +115,7 @@ class PPTAssetMeta:
 
     @property
     def error_info(self):
-        """Gets the error_info of this PPTAssetMeta.
+        r"""Gets the error_info of this PPTAssetMeta.
 
         :return: The error_info of this PPTAssetMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -124,7 +124,7 @@ class PPTAssetMeta:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this PPTAssetMeta.
+        r"""Sets the error_info of this PPTAssetMeta.
 
         :param error_info: The error_info of this PPTAssetMeta.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -133,7 +133,7 @@ class PPTAssetMeta:
 
     @property
     def page_count(self):
-        """Gets the page_count of this PPTAssetMeta.
+        r"""Gets the page_count of this PPTAssetMeta.
 
         **参数解释**： PPT页面总数。 **约束限制**： 不涉及
 
@@ -144,7 +144,7 @@ class PPTAssetMeta:
 
     @page_count.setter
     def page_count(self, page_count):
-        """Sets the page_count of this PPTAssetMeta.
+        r"""Sets the page_count of this PPTAssetMeta.
 
         **参数解释**： PPT页面总数。 **约束限制**： 不涉及
 
@@ -155,7 +155,7 @@ class PPTAssetMeta:
 
     @property
     def pages(self):
-        """Gets the pages of this PPTAssetMeta.
+        r"""Gets the pages of this PPTAssetMeta.
 
         PPT页面图片。
 
@@ -166,7 +166,7 @@ class PPTAssetMeta:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this PPTAssetMeta.
+        r"""Sets the pages of this PPTAssetMeta.
 
         PPT页面图片。
 

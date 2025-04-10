@@ -27,7 +27,7 @@ class UpdateVpcOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateVpcOption
+        r"""UpdateVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateVpcOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpcOption.
+        r"""Gets the name of this UpdateVpcOption.
 
         功能说明：虚拟私有云名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：与description至少选填一个 
 
@@ -61,7 +61,7 @@ class UpdateVpcOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpcOption.
+        r"""Sets the name of this UpdateVpcOption.
 
         功能说明：虚拟私有云名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：与description至少选填一个 
 
@@ -72,7 +72,7 @@ class UpdateVpcOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVpcOption.
+        r"""Gets the description of this UpdateVpcOption.
 
         功能说明：虚拟私有云描述 取值范围：0-255个字符，不能包含“<”和“>”。 约束：与name至少选填一个
 
@@ -83,7 +83,7 @@ class UpdateVpcOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVpcOption.
+        r"""Sets the description of this UpdateVpcOption.
 
         功能说明：虚拟私有云描述 取值范围：0-255个字符，不能包含“<”和“>”。 约束：与name至少选填一个
 

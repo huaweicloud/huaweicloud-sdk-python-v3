@@ -30,7 +30,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
     }
 
     def __init__(self, release_package=None, task_details=None, x_request_id=None):
-        """ShowFactoryPackageDetailResponse
+        r"""ShowFactoryPackageDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
 
     @property
     def release_package(self):
-        """Gets the release_package of this ShowFactoryPackageDetailResponse.
+        r"""Gets the release_package of this ShowFactoryPackageDetailResponse.
 
         :return: The release_package of this ShowFactoryPackageDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowPackageDetailRespReleasePackage`
@@ -67,7 +67,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
 
     @release_package.setter
     def release_package(self, release_package):
-        """Sets the release_package of this ShowFactoryPackageDetailResponse.
+        r"""Sets the release_package of this ShowFactoryPackageDetailResponse.
 
         :param release_package: The release_package of this ShowFactoryPackageDetailResponse.
         :type release_package: :class:`huaweicloudsdkdataartsstudio.v1.ShowPackageDetailRespReleasePackage`
@@ -76,7 +76,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
 
     @property
     def task_details(self):
-        """Gets the task_details of this ShowFactoryPackageDetailResponse.
+        r"""Gets the task_details of this ShowFactoryPackageDetailResponse.
 
         发布任务详情
 
@@ -87,7 +87,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
 
     @task_details.setter
     def task_details(self, task_details):
-        """Sets the task_details of this ShowFactoryPackageDetailResponse.
+        r"""Sets the task_details of this ShowFactoryPackageDetailResponse.
 
         发布任务详情
 
@@ -98,7 +98,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowFactoryPackageDetailResponse.
+        r"""Gets the x_request_id of this ShowFactoryPackageDetailResponse.
 
         :return: The x_request_id of this ShowFactoryPackageDetailResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowFactoryPackageDetailResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowFactoryPackageDetailResponse.
+        r"""Sets the x_request_id of this ShowFactoryPackageDetailResponse.
 
         :param x_request_id: The x_request_id of this ShowFactoryPackageDetailResponse.
         :type x_request_id: str

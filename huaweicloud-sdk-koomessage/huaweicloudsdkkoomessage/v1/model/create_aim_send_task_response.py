@@ -46,7 +46,7 @@ class CreateAimSendTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_name=None, sms_channel=None, resolve_task=None, task_id=None, task_state=None, creation_time=None, submission_count=None, send_count=None, resolve_count=None, support_resolve_count=None, failed_short_chains=None):
-        """CreateAimSendTaskResponse
+        r"""CreateAimSendTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateAimSendTaskResponse.
+        r"""Gets the task_name of this CreateAimSendTaskResponse.
 
         智能信息发送任务名称。
 
@@ -125,7 +125,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateAimSendTaskResponse.
+        r"""Sets the task_name of this CreateAimSendTaskResponse.
 
         智能信息发送任务名称。
 
@@ -136,7 +136,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def sms_channel(self):
-        """Gets the sms_channel of this CreateAimSendTaskResponse.
+        r"""Gets the sms_channel of this CreateAimSendTaskResponse.
 
         :return: The sms_channel of this CreateAimSendTaskResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SmsChannel`
@@ -145,7 +145,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @sms_channel.setter
     def sms_channel(self, sms_channel):
-        """Sets the sms_channel of this CreateAimSendTaskResponse.
+        r"""Sets the sms_channel of this CreateAimSendTaskResponse.
 
         :param sms_channel: The sms_channel of this CreateAimSendTaskResponse.
         :type sms_channel: :class:`huaweicloudsdkkoomessage.v1.SmsChannel`
@@ -154,7 +154,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def resolve_task(self):
-        """Gets the resolve_task of this CreateAimSendTaskResponse.
+        r"""Gets the resolve_task of this CreateAimSendTaskResponse.
 
         :return: The resolve_task of this CreateAimSendTaskResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskRequestMode`
@@ -163,7 +163,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @resolve_task.setter
     def resolve_task(self, resolve_task):
-        """Sets the resolve_task of this CreateAimSendTaskResponse.
+        r"""Sets the resolve_task of this CreateAimSendTaskResponse.
 
         :param resolve_task: The resolve_task of this CreateAimSendTaskResponse.
         :type resolve_task: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskRequestMode`
@@ -172,7 +172,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateAimSendTaskResponse.
+        r"""Gets the task_id of this CreateAimSendTaskResponse.
 
         任务ID。
 
@@ -183,7 +183,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateAimSendTaskResponse.
+        r"""Sets the task_id of this CreateAimSendTaskResponse.
 
         任务ID。
 
@@ -194,7 +194,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def task_state(self):
-        """Gets the task_state of this CreateAimSendTaskResponse.
+        r"""Gets the task_state of this CreateAimSendTaskResponse.
 
         任务状态。  - Success：发送成功 - Failed：发送失败  > 此状态仅代表任务提交状态，不代表智能信息发送结果。用户手机接收智能信息结果请以收到的回执结果为准，也可通过查询智能信息发送明细API获取或登录KooMessage控制台查看。 
 
@@ -205,7 +205,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @task_state.setter
     def task_state(self, task_state):
-        """Sets the task_state of this CreateAimSendTaskResponse.
+        r"""Sets the task_state of this CreateAimSendTaskResponse.
 
         任务状态。  - Success：发送成功 - Failed：发送失败  > 此状态仅代表任务提交状态，不代表智能信息发送结果。用户手机接收智能信息结果请以收到的回执结果为准，也可通过查询智能信息发送明细API获取或登录KooMessage控制台查看。 
 
@@ -216,7 +216,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this CreateAimSendTaskResponse.
+        r"""Gets the creation_time of this CreateAimSendTaskResponse.
 
         创建时间。样例：2019-10-12T07:20:50.522Z。
 
@@ -227,7 +227,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this CreateAimSendTaskResponse.
+        r"""Sets the creation_time of this CreateAimSendTaskResponse.
 
         创建时间。样例：2019-10-12T07:20:50.522Z。
 
@@ -238,7 +238,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def submission_count(self):
-        """Gets the submission_count of this CreateAimSendTaskResponse.
+        r"""Gets the submission_count of this CreateAimSendTaskResponse.
 
         提交的手机号码总数。
 
@@ -249,7 +249,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @submission_count.setter
     def submission_count(self, submission_count):
-        """Sets the submission_count of this CreateAimSendTaskResponse.
+        r"""Sets the submission_count of this CreateAimSendTaskResponse.
 
         提交的手机号码总数。
 
@@ -260,7 +260,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def send_count(self):
-        """Gets the send_count of this CreateAimSendTaskResponse.
+        r"""Gets the send_count of this CreateAimSendTaskResponse.
 
         发送数量。
 
@@ -271,7 +271,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @send_count.setter
     def send_count(self, send_count):
-        """Sets the send_count of this CreateAimSendTaskResponse.
+        r"""Sets the send_count of this CreateAimSendTaskResponse.
 
         发送数量。
 
@@ -282,7 +282,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def resolve_count(self):
-        """Gets the resolve_count of this CreateAimSendTaskResponse.
+        r"""Gets the resolve_count of this CreateAimSendTaskResponse.
 
         智能信息解析成功的手机号码总数。 
 
@@ -293,7 +293,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @resolve_count.setter
     def resolve_count(self, resolve_count):
-        """Sets the resolve_count of this CreateAimSendTaskResponse.
+        r"""Sets the resolve_count of this CreateAimSendTaskResponse.
 
         智能信息解析成功的手机号码总数。 
 
@@ -304,7 +304,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def support_resolve_count(self):
-        """Gets the support_resolve_count of this CreateAimSendTaskResponse.
+        r"""Gets the support_resolve_count of this CreateAimSendTaskResponse.
 
         支持智能信息解析的手机号码总数。  >通过API发送的智能信息任务不做解析能力判断，返回-1作为标识。 
 
@@ -315,7 +315,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @support_resolve_count.setter
     def support_resolve_count(self, support_resolve_count):
-        """Sets the support_resolve_count of this CreateAimSendTaskResponse.
+        r"""Sets the support_resolve_count of this CreateAimSendTaskResponse.
 
         支持智能信息解析的手机号码总数。  >通过API发送的智能信息任务不做解析能力判断，返回-1作为标识。 
 
@@ -326,7 +326,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @property
     def failed_short_chains(self):
-        """Gets the failed_short_chains of this CreateAimSendTaskResponse.
+        r"""Gets the failed_short_chains of this CreateAimSendTaskResponse.
 
         短链生成失败列表。 
 
@@ -337,7 +337,7 @@ class CreateAimSendTaskResponse(SdkResponse):
 
     @failed_short_chains.setter
     def failed_short_chains(self, failed_short_chains):
-        """Sets the failed_short_chains of this CreateAimSendTaskResponse.
+        r"""Sets the failed_short_chains of this CreateAimSendTaskResponse.
 
         短链生成失败列表。 
 

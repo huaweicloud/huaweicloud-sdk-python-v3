@@ -39,7 +39,7 @@ class CreatePlaybookInfo:
     }
 
     def __init__(self, name=None, description=None, workspace_id=None, approve_role=None, user_role=None, edit_role=None, owner_id=None, enabled=None):
-        """CreatePlaybookInfo
+        r"""CreatePlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CreatePlaybookInfo:
 
     @property
     def name(self):
-        """Gets the name of this CreatePlaybookInfo.
+        r"""Gets the name of this CreatePlaybookInfo.
 
         The name, display only
 
@@ -103,7 +103,7 @@ class CreatePlaybookInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePlaybookInfo.
+        r"""Sets the name of this CreatePlaybookInfo.
 
         The name, display only
 
@@ -114,7 +114,7 @@ class CreatePlaybookInfo:
 
     @property
     def description(self):
-        """Gets the description of this CreatePlaybookInfo.
+        r"""Gets the description of this CreatePlaybookInfo.
 
         The description, display only
 
@@ -125,7 +125,7 @@ class CreatePlaybookInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePlaybookInfo.
+        r"""Sets the description of this CreatePlaybookInfo.
 
         The description, display only
 
@@ -136,7 +136,7 @@ class CreatePlaybookInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookInfo.
+        r"""Gets the workspace_id of this CreatePlaybookInfo.
 
         工作空间id
 
@@ -147,7 +147,7 @@ class CreatePlaybookInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookInfo.
+        r"""Sets the workspace_id of this CreatePlaybookInfo.
 
         工作空间id
 
@@ -158,7 +158,7 @@ class CreatePlaybookInfo:
 
     @property
     def approve_role(self):
-        """Gets the approve_role of this CreatePlaybookInfo.
+        r"""Gets the approve_role of this CreatePlaybookInfo.
 
         Role required for approve
 
@@ -169,7 +169,7 @@ class CreatePlaybookInfo:
 
     @approve_role.setter
     def approve_role(self, approve_role):
-        """Sets the approve_role of this CreatePlaybookInfo.
+        r"""Sets the approve_role of this CreatePlaybookInfo.
 
         Role required for approve
 
@@ -180,7 +180,7 @@ class CreatePlaybookInfo:
 
     @property
     def user_role(self):
-        """Gets the user_role of this CreatePlaybookInfo.
+        r"""Gets the user_role of this CreatePlaybookInfo.
 
         Role required for use
 
@@ -191,7 +191,7 @@ class CreatePlaybookInfo:
 
     @user_role.setter
     def user_role(self, user_role):
-        """Sets the user_role of this CreatePlaybookInfo.
+        r"""Sets the user_role of this CreatePlaybookInfo.
 
         Role required for use
 
@@ -202,7 +202,7 @@ class CreatePlaybookInfo:
 
     @property
     def edit_role(self):
-        """Gets the edit_role of this CreatePlaybookInfo.
+        r"""Gets the edit_role of this CreatePlaybookInfo.
 
         Role required for edit
 
@@ -213,7 +213,7 @@ class CreatePlaybookInfo:
 
     @edit_role.setter
     def edit_role(self, edit_role):
-        """Sets the edit_role of this CreatePlaybookInfo.
+        r"""Sets the edit_role of this CreatePlaybookInfo.
 
         Role required for edit
 
@@ -224,7 +224,7 @@ class CreatePlaybookInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this CreatePlaybookInfo.
+        r"""Gets the owner_id of this CreatePlaybookInfo.
 
         Owner id
 
@@ -235,7 +235,7 @@ class CreatePlaybookInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this CreatePlaybookInfo.
+        r"""Sets the owner_id of this CreatePlaybookInfo.
 
         Owner id
 
@@ -246,7 +246,7 @@ class CreatePlaybookInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreatePlaybookInfo.
+        r"""Gets the enabled of this CreatePlaybookInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -257,7 +257,7 @@ class CreatePlaybookInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreatePlaybookInfo.
+        r"""Sets the enabled of this CreatePlaybookInfo.
 
         If is enabled, false for disenabled, true for enabled
 

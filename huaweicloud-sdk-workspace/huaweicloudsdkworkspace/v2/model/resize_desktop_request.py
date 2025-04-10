@@ -27,7 +27,7 @@ class ResizeDesktopRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """ResizeDesktopRequest
+        r"""ResizeDesktopRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResizeDesktopRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ResizeDesktopRequest.
+        r"""Gets the service_transaction_id of this ResizeDesktopRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class ResizeDesktopRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ResizeDesktopRequest.
+        r"""Sets the service_transaction_id of this ResizeDesktopRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class ResizeDesktopRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeDesktopRequest.
+        r"""Gets the body of this ResizeDesktopRequest.
 
         :return: The body of this ResizeDesktopRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopReq`
@@ -81,7 +81,7 @@ class ResizeDesktopRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeDesktopRequest.
+        r"""Sets the body of this ResizeDesktopRequest.
 
         :param body: The body of this ResizeDesktopRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopReq`

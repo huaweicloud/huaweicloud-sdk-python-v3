@@ -25,7 +25,7 @@ class DatabaseVersionRequest:
     }
 
     def __init__(self, target_version=None):
-        """DatabaseVersionRequest
+        r"""DatabaseVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DatabaseVersionRequest:
 
     @property
     def target_version(self):
-        """Gets the target_version of this DatabaseVersionRequest.
+        r"""Gets the target_version of this DatabaseVersionRequest.
 
         目标版本
 
@@ -53,7 +53,7 @@ class DatabaseVersionRequest:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this DatabaseVersionRequest.
+        r"""Sets the target_version of this DatabaseVersionRequest.
 
         目标版本
 

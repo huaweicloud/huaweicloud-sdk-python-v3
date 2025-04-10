@@ -65,11 +65,11 @@ class ListImageLocalRequest:
     }
 
     def __init__(self, enterprise_project_id=None, image_name=None, image_version=None, offset=None, limit=None, scan_status=None, local_image_type=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_vul=None, host_name=None, host_id=None, host_ip=None, container_id=None, container_name=None, pod_id=None, pod_name=None, app_name=None):
-        """ListImageLocalRequest
+        r"""ListImageLocalRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param image_name: 镜像名称
         :type image_name: str
@@ -183,9 +183,9 @@ class ListImageLocalRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListImageLocalRequest.
+        r"""Gets the enterprise_project_id of this ListImageLocalRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListImageLocalRequest.
         :rtype: str
@@ -194,9 +194,9 @@ class ListImageLocalRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListImageLocalRequest.
+        r"""Sets the enterprise_project_id of this ListImageLocalRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListImageLocalRequest.
         :type enterprise_project_id: str
@@ -205,7 +205,7 @@ class ListImageLocalRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListImageLocalRequest.
+        r"""Gets the image_name of this ListImageLocalRequest.
 
         镜像名称
 
@@ -216,7 +216,7 @@ class ListImageLocalRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListImageLocalRequest.
+        r"""Sets the image_name of this ListImageLocalRequest.
 
         镜像名称
 
@@ -227,7 +227,7 @@ class ListImageLocalRequest:
 
     @property
     def image_version(self):
-        """Gets the image_version of this ListImageLocalRequest.
+        r"""Gets the image_version of this ListImageLocalRequest.
 
         镜像版本
 
@@ -238,7 +238,7 @@ class ListImageLocalRequest:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this ListImageLocalRequest.
+        r"""Sets the image_version of this ListImageLocalRequest.
 
         镜像版本
 
@@ -249,7 +249,7 @@ class ListImageLocalRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImageLocalRequest.
+        r"""Gets the offset of this ListImageLocalRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -260,7 +260,7 @@ class ListImageLocalRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImageLocalRequest.
+        r"""Sets the offset of this ListImageLocalRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -271,7 +271,7 @@ class ListImageLocalRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImageLocalRequest.
+        r"""Gets the limit of this ListImageLocalRequest.
 
         每页显示数量
 
@@ -282,7 +282,7 @@ class ListImageLocalRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImageLocalRequest.
+        r"""Sets the limit of this ListImageLocalRequest.
 
         每页显示数量
 
@@ -293,7 +293,7 @@ class ListImageLocalRequest:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this ListImageLocalRequest.
+        r"""Gets the scan_status of this ListImageLocalRequest.
 
         扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
 
@@ -304,7 +304,7 @@ class ListImageLocalRequest:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this ListImageLocalRequest.
+        r"""Sets the scan_status of this ListImageLocalRequest.
 
         扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
 
@@ -315,7 +315,7 @@ class ListImageLocalRequest:
 
     @property
     def local_image_type(self):
-        """Gets the local_image_type of this ListImageLocalRequest.
+        r"""Gets the local_image_type of this ListImageLocalRequest.
 
         镜像类型，包含如下:  - other_image : 非SWR镜像  - swr_image : SWR镜像
 
@@ -326,7 +326,7 @@ class ListImageLocalRequest:
 
     @local_image_type.setter
     def local_image_type(self, local_image_type):
-        """Sets the local_image_type of this ListImageLocalRequest.
+        r"""Sets the local_image_type of this ListImageLocalRequest.
 
         镜像类型，包含如下:  - other_image : 非SWR镜像  - swr_image : SWR镜像
 
@@ -337,7 +337,7 @@ class ListImageLocalRequest:
 
     @property
     def image_size(self):
-        """Gets the image_size of this ListImageLocalRequest.
+        r"""Gets the image_size of this ListImageLocalRequest.
 
         镜像大小，单位字节
 
@@ -348,7 +348,7 @@ class ListImageLocalRequest:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this ListImageLocalRequest.
+        r"""Sets the image_size of this ListImageLocalRequest.
 
         镜像大小，单位字节
 
@@ -359,7 +359,7 @@ class ListImageLocalRequest:
 
     @property
     def start_latest_update_time(self):
-        """Gets the start_latest_update_time of this ListImageLocalRequest.
+        r"""Gets the start_latest_update_time of this ListImageLocalRequest.
 
         最近更新时间搜索开始日期，时间单位 毫秒（ms）
 
@@ -370,7 +370,7 @@ class ListImageLocalRequest:
 
     @start_latest_update_time.setter
     def start_latest_update_time(self, start_latest_update_time):
-        """Sets the start_latest_update_time of this ListImageLocalRequest.
+        r"""Sets the start_latest_update_time of this ListImageLocalRequest.
 
         最近更新时间搜索开始日期，时间单位 毫秒（ms）
 
@@ -381,7 +381,7 @@ class ListImageLocalRequest:
 
     @property
     def end_latest_update_time(self):
-        """Gets the end_latest_update_time of this ListImageLocalRequest.
+        r"""Gets the end_latest_update_time of this ListImageLocalRequest.
 
         最近更新时间搜索结束日期，时间单位 毫秒（ms）
 
@@ -392,7 +392,7 @@ class ListImageLocalRequest:
 
     @end_latest_update_time.setter
     def end_latest_update_time(self, end_latest_update_time):
-        """Sets the end_latest_update_time of this ListImageLocalRequest.
+        r"""Sets the end_latest_update_time of this ListImageLocalRequest.
 
         最近更新时间搜索结束日期，时间单位 毫秒（ms）
 
@@ -403,7 +403,7 @@ class ListImageLocalRequest:
 
     @property
     def start_latest_scan_time(self):
-        """Gets the start_latest_scan_time of this ListImageLocalRequest.
+        r"""Gets the start_latest_scan_time of this ListImageLocalRequest.
 
         最近一次扫描完成时间搜索开始日期，时间单位 毫秒（ms）
 
@@ -414,7 +414,7 @@ class ListImageLocalRequest:
 
     @start_latest_scan_time.setter
     def start_latest_scan_time(self, start_latest_scan_time):
-        """Sets the start_latest_scan_time of this ListImageLocalRequest.
+        r"""Sets the start_latest_scan_time of this ListImageLocalRequest.
 
         最近一次扫描完成时间搜索开始日期，时间单位 毫秒（ms）
 
@@ -425,7 +425,7 @@ class ListImageLocalRequest:
 
     @property
     def end_latest_scan_time(self):
-        """Gets the end_latest_scan_time of this ListImageLocalRequest.
+        r"""Gets the end_latest_scan_time of this ListImageLocalRequest.
 
         最近一次扫描完成时间搜索结束日期，时间单位 毫秒（ms）
 
@@ -436,7 +436,7 @@ class ListImageLocalRequest:
 
     @end_latest_scan_time.setter
     def end_latest_scan_time(self, end_latest_scan_time):
-        """Sets the end_latest_scan_time of this ListImageLocalRequest.
+        r"""Sets the end_latest_scan_time of this ListImageLocalRequest.
 
         最近一次扫描完成时间搜索结束日期，时间单位 毫秒（ms）
 
@@ -447,7 +447,7 @@ class ListImageLocalRequest:
 
     @property
     def has_vul(self):
-        """Gets the has_vul of this ListImageLocalRequest.
+        r"""Gets the has_vul of this ListImageLocalRequest.
 
         是否存在软件漏洞
 
@@ -458,7 +458,7 @@ class ListImageLocalRequest:
 
     @has_vul.setter
     def has_vul(self, has_vul):
-        """Sets the has_vul of this ListImageLocalRequest.
+        r"""Sets the has_vul of this ListImageLocalRequest.
 
         是否存在软件漏洞
 
@@ -469,7 +469,7 @@ class ListImageLocalRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListImageLocalRequest.
+        r"""Gets the host_name of this ListImageLocalRequest.
 
         本地镜像所关联服务器的名称
 
@@ -480,7 +480,7 @@ class ListImageLocalRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListImageLocalRequest.
+        r"""Sets the host_name of this ListImageLocalRequest.
 
         本地镜像所关联服务器的名称
 
@@ -491,7 +491,7 @@ class ListImageLocalRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListImageLocalRequest.
+        r"""Gets the host_id of this ListImageLocalRequest.
 
         本地镜像所关联服务器的ID
 
@@ -502,7 +502,7 @@ class ListImageLocalRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListImageLocalRequest.
+        r"""Sets the host_id of this ListImageLocalRequest.
 
         本地镜像所关联服务器的ID
 
@@ -513,7 +513,7 @@ class ListImageLocalRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListImageLocalRequest.
+        r"""Gets the host_ip of this ListImageLocalRequest.
 
         本地镜像所关联服务器的IP（公网或私网）
 
@@ -524,7 +524,7 @@ class ListImageLocalRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListImageLocalRequest.
+        r"""Sets the host_ip of this ListImageLocalRequest.
 
         本地镜像所关联服务器的IP（公网或私网）
 
@@ -535,7 +535,7 @@ class ListImageLocalRequest:
 
     @property
     def container_id(self):
-        """Gets the container_id of this ListImageLocalRequest.
+        r"""Gets the container_id of this ListImageLocalRequest.
 
         本地镜像所关联容器的ID
 
@@ -546,7 +546,7 @@ class ListImageLocalRequest:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this ListImageLocalRequest.
+        r"""Sets the container_id of this ListImageLocalRequest.
 
         本地镜像所关联容器的ID
 
@@ -557,7 +557,7 @@ class ListImageLocalRequest:
 
     @property
     def container_name(self):
-        """Gets the container_name of this ListImageLocalRequest.
+        r"""Gets the container_name of this ListImageLocalRequest.
 
         本地镜像所关联容器的名称
 
@@ -568,7 +568,7 @@ class ListImageLocalRequest:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this ListImageLocalRequest.
+        r"""Sets the container_name of this ListImageLocalRequest.
 
         本地镜像所关联容器的名称
 
@@ -579,7 +579,7 @@ class ListImageLocalRequest:
 
     @property
     def pod_id(self):
-        """Gets the pod_id of this ListImageLocalRequest.
+        r"""Gets the pod_id of this ListImageLocalRequest.
 
         本地镜像所关联Pod的ID
 
@@ -590,7 +590,7 @@ class ListImageLocalRequest:
 
     @pod_id.setter
     def pod_id(self, pod_id):
-        """Sets the pod_id of this ListImageLocalRequest.
+        r"""Sets the pod_id of this ListImageLocalRequest.
 
         本地镜像所关联Pod的ID
 
@@ -601,7 +601,7 @@ class ListImageLocalRequest:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this ListImageLocalRequest.
+        r"""Gets the pod_name of this ListImageLocalRequest.
 
         本地镜像所关联Pod的名称
 
@@ -612,7 +612,7 @@ class ListImageLocalRequest:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this ListImageLocalRequest.
+        r"""Sets the pod_name of this ListImageLocalRequest.
 
         本地镜像所关联Pod的名称
 
@@ -623,7 +623,7 @@ class ListImageLocalRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListImageLocalRequest.
+        r"""Gets the app_name of this ListImageLocalRequest.
 
         本地镜像所关联软件的名称
 
@@ -634,7 +634,7 @@ class ListImageLocalRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListImageLocalRequest.
+        r"""Sets the app_name of this ListImageLocalRequest.
 
         本地镜像所关联软件的名称
 

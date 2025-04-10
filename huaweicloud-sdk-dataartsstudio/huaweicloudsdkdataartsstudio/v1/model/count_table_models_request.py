@@ -29,7 +29,7 @@ class CountTableModelsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, model_id=None):
-        """CountTableModelsRequest
+        r"""CountTableModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CountTableModelsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CountTableModelsRequest.
+        r"""Gets the workspace of this CountTableModelsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class CountTableModelsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CountTableModelsRequest.
+        r"""Sets the workspace of this CountTableModelsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class CountTableModelsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this CountTableModelsRequest.
+        r"""Gets the x_project_id of this CountTableModelsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -89,7 +89,7 @@ class CountTableModelsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this CountTableModelsRequest.
+        r"""Sets the x_project_id of this CountTableModelsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -100,7 +100,7 @@ class CountTableModelsRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this CountTableModelsRequest.
+        r"""Gets the model_id of this CountTableModelsRequest.
 
         依据关系建模的模型ID查询统计信息，ID字符串。
 
@@ -111,7 +111,7 @@ class CountTableModelsRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this CountTableModelsRequest.
+        r"""Sets the model_id of this CountTableModelsRequest.
 
         依据关系建模的模型ID查询统计信息，ID字符串。
 

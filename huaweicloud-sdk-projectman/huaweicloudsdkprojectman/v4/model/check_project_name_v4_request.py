@@ -25,7 +25,7 @@ class CheckProjectNameV4Request:
     }
 
     def __init__(self, body=None):
-        """CheckProjectNameV4Request
+        r"""CheckProjectNameV4Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckProjectNameV4Request:
 
     @property
     def body(self):
-        """Gets the body of this CheckProjectNameV4Request.
+        r"""Gets the body of this CheckProjectNameV4Request.
 
         :return: The body of this CheckProjectNameV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameRequestV4`
@@ -52,7 +52,7 @@ class CheckProjectNameV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckProjectNameV4Request.
+        r"""Sets the body of this CheckProjectNameV4Request.
 
         :param body: The body of this CheckProjectNameV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameRequestV4`

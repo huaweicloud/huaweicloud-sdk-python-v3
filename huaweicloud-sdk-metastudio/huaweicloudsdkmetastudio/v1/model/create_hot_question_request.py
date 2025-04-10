@@ -27,7 +27,7 @@ class CreateHotQuestionRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateHotQuestionRequest
+        r"""CreateHotQuestionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateHotQuestionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateHotQuestionRequest.
+        r"""Gets the x_app_user_id of this CreateHotQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateHotQuestionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateHotQuestionRequest.
+        r"""Sets the x_app_user_id of this CreateHotQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateHotQuestionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHotQuestionRequest.
+        r"""Gets the body of this CreateHotQuestionRequest.
 
         :return: The body of this CreateHotQuestionRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateHotQuestionReq`
@@ -81,7 +81,7 @@ class CreateHotQuestionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHotQuestionRequest.
+        r"""Sets the body of this CreateHotQuestionRequest.
 
         :param body: The body of this CreateHotQuestionRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateHotQuestionReq`

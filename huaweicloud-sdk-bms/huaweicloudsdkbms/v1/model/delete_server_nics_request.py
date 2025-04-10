@@ -27,7 +27,7 @@ class DeleteServerNicsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """DeleteServerNicsRequest
+        r"""DeleteServerNicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteServerNicsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this DeleteServerNicsRequest.
+        r"""Gets the server_id of this DeleteServerNicsRequest.
 
         :return: The server_id of this DeleteServerNicsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteServerNicsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this DeleteServerNicsRequest.
+        r"""Sets the server_id of this DeleteServerNicsRequest.
 
         :param server_id: The server_id of this DeleteServerNicsRequest.
         :type server_id: str
@@ -67,7 +67,7 @@ class DeleteServerNicsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteServerNicsRequest.
+        r"""Gets the body of this DeleteServerNicsRequest.
 
         :return: The body of this DeleteServerNicsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteServerNicsReq`
@@ -76,7 +76,7 @@ class DeleteServerNicsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteServerNicsRequest.
+        r"""Sets the body of this DeleteServerNicsRequest.
 
         :param body: The body of this DeleteServerNicsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.DeleteServerNicsReq`

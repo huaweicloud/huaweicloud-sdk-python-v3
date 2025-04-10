@@ -25,7 +25,7 @@ class NeutronCreateRouterRequest:
     }
 
     def __init__(self, body=None):
-        """NeutronCreateRouterRequest
+        r"""NeutronCreateRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NeutronCreateRouterRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronCreateRouterRequest.
+        r"""Gets the body of this NeutronCreateRouterRequest.
 
         :return: The body of this NeutronCreateRouterRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateRouterRequestBody`
@@ -52,7 +52,7 @@ class NeutronCreateRouterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronCreateRouterRequest.
+        r"""Sets the body of this NeutronCreateRouterRequest.
 
         :param body: The body of this NeutronCreateRouterRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronCreateRouterRequestBody`

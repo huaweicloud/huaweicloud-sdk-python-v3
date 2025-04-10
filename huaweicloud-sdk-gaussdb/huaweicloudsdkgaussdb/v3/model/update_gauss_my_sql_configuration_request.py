@@ -29,7 +29,7 @@ class UpdateGaussMySqlConfigurationRequest:
     }
 
     def __init__(self, x_language=None, configuration_id=None, body=None):
-        """UpdateGaussMySqlConfigurationRequest
+        r"""UpdateGaussMySqlConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlConfigurationRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlConfigurationRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlConfigurationRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this UpdateGaussMySqlConfigurationRequest.
+        r"""Gets the configuration_id of this UpdateGaussMySqlConfigurationRequest.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlConfigurationRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this UpdateGaussMySqlConfigurationRequest.
+        r"""Sets the configuration_id of this UpdateGaussMySqlConfigurationRequest.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlConfigurationRequest.
+        r"""Gets the body of this UpdateGaussMySqlConfigurationRequest.
 
         :return: The body of this UpdateGaussMySqlConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateConfigurationParameterRequestBody`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlConfigurationRequest.
+        r"""Sets the body of this UpdateGaussMySqlConfigurationRequest.
 
         :param body: The body of this UpdateGaussMySqlConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateConfigurationParameterRequestBody`

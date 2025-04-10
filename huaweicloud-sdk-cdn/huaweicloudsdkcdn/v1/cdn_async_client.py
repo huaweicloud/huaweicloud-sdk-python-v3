@@ -34,7 +34,7 @@ class CdnAsyncClient(Client):
         return client_builder
 
     def batch_delete_tags_async(self, request):
-        """删除资源标签配置接口
+        r"""删除资源标签配置接口
 
         用于删除资源标签。
         
@@ -101,7 +101,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def create_domain_async(self, request):
-        """创建加速域名
+        r"""创建加速域名
 
         创建加速域名。
         
@@ -168,7 +168,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def create_preheating_tasks_async(self, request):
-        """创建预热缓存任务
+        r"""创建预热缓存任务
 
         创建预热任务。
         
@@ -237,7 +237,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def create_refresh_tasks_async(self, request):
-        """创建刷新缓存任务
+        r"""创建刷新缓存任务
 
         创建刷新缓存任务。
         
@@ -306,7 +306,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def create_tags_async(self, request):
-        """创建资源标签配置接口
+        r"""创建资源标签配置接口
 
         用于创建资源标签。
         
@@ -373,7 +373,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def delete_domain_async(self, request):
-        """删除加速域名
+        r"""删除加速域名
 
         删除加速域名。
         
@@ -442,7 +442,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def disable_domain_async(self, request):
-        """停用加速域名
+        r"""停用加速域名
 
         停用加速域名。
         
@@ -511,7 +511,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def enable_domain_async(self, request):
-        """启用加速域名
+        r"""启用加速域名
 
         启用加速域名。
         
@@ -580,7 +580,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def list_domains_async(self, request):
-        """查询加速域名
+        r"""查询加速域名
 
         查询加速域名信息
         
@@ -663,7 +663,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_black_white_list_async(self, request):
-        """查询IP黑白名单
+        r"""查询IP黑白名单
 
         查询域名已经设置的IP黑白名单。
         
@@ -732,7 +732,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_cache_rules_async(self, request):
-        """查询缓存规则
+        r"""查询缓存规则
 
         查询缓存规则。
         
@@ -801,7 +801,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_certificates_https_info_async(self, request):
-        """查询所有绑定HTTPS证书的域名信息
+        r"""查询所有绑定HTTPS证书的域名信息
 
         查询所有绑定HTTPS证书的域名信息
         
@@ -876,7 +876,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_domain_detail_async(self, request):
-        """查询加速域名详情
+        r"""查询加速域名详情
 
         查询加速域名详情。
         
@@ -945,7 +945,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_domain_full_config_async(self, request):
-        """查询域名配置接口
+        r"""查询域名配置接口
 
         查询域名配置接口，
         支持查询回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、强制重定向、智能压缩、IPv6开关、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面、缓存规则、IP黑白名单、防盗链、强制跳转。
@@ -1015,7 +1015,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_domain_item_details_async(self, request):
-        """批量查询域名的统计明细-按域名单独返回
+        r"""批量查询域名的统计明细-按域名单独返回
 
         - 支持查询90天内的数据。
         - 查询跨度不能超过7天。
@@ -1100,7 +1100,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_domain_item_location_details_async(self, request):
-        """批量查询域名的区域、运营商统计明细-按域名单独返回
+        r"""批量查询域名的区域、运营商统计明细-按域名单独返回
 
         - 支持查询90天内的数据。
         - 查询跨度是7天。
@@ -1190,7 +1190,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_domain_location_stats_async(self, request):
-        """按区域运营商查询域名统计数据
+        r"""按区域运营商查询域名统计数据
 
         - 支持查询90天内的数据。
         
@@ -1289,7 +1289,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_domain_stats_async(self, request):
-        """查询域名统计数据
+        r"""查询域名统计数据
 
         - 支持查询90天内的数据。
         
@@ -1384,7 +1384,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_history_task_details_async(self, request):
-        """查询刷新预热任务详情
+        r"""查询刷新预热任务详情
 
         查询刷新预热任务详情。
         
@@ -1463,7 +1463,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_history_tasks_async(self, request):
-        """查询刷新预热任务
+        r"""查询刷新预热任务
 
         查询刷新预热任务。
         
@@ -1548,7 +1548,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_http_info_async(self, request):
-        """查询HTTPS配置
+        r"""查询HTTPS配置
 
         获取加速域名证书。
         
@@ -1617,7 +1617,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_ip_info_async(self, request):
-        """查询IP归属信息
+        r"""查询IP归属信息
 
         查询IP归属信息。
         
@@ -1686,7 +1686,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_logs_async(self, request):
-        """日志查询
+        r"""日志查询
 
         查询日志下载链接，支持查询30天内的日志信息。
         
@@ -1761,7 +1761,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_origin_host_async(self, request):
-        """查询回源HOST
+        r"""查询回源HOST
 
         查询回源HOST。回源HOST是CDN节点在回源过程中，在源站访问的站点域名，即http请求头中的host信息。
         
@@ -1830,7 +1830,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_quota_async(self, request):
-        """查询用户配额
+        r"""查询用户配额
 
         查询当前用户域名、刷新文件、刷新目录和预热的配额
         
@@ -1895,7 +1895,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_refer_async(self, request):
-        """查询Referer过滤规则
+        r"""查询Referer过滤规则
 
         查询Referer过滤规则。
         
@@ -1964,7 +1964,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_response_header_async(self, request):
-        """查询响应头配置
+        r"""查询响应头配置
 
         列举header所有配置。
         
@@ -2033,7 +2033,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_tags_async(self, request):
-        """查询资源标签列表配置接口
+        r"""查询资源标签列表配置接口
 
         用于查询资源标签列表。
         
@@ -2100,7 +2100,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_top_url_async(self, request):
-        """查询TOP100 URL明细
+        r"""查询TOP100 URL明细
 
         - 查询TOP100 URL明细。
         
@@ -2190,7 +2190,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def show_url_task_info_async(self, request):
-        """查询刷新预热URL记录
+        r"""查询刷新预热URL记录
 
         查询刷新预热URL记录。如需此接口，请提交工单开通。
         
@@ -2271,7 +2271,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_black_white_list_async(self, request):
-        """设置IP黑白名单
+        r"""设置IP黑白名单
 
         设置域名的IP黑白名单。
         
@@ -2342,7 +2342,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_cache_rules_async(self, request):
-        """设置缓存规则
+        r"""设置缓存规则
 
         设置CDN节点上缓存资源的缓存策略。
         
@@ -2413,7 +2413,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_domain_full_config_async(self, request):
-        """修改域名全量配置接口
+        r"""修改域名全量配置接口
 
         修改域名配置接口，
         支持修改回源请求头、HTTP header配置、URL鉴权、证书、源站、回源协议、强制重定向、智能压缩、IPv6开关、状态码缓存时间、Range回源、User-Agent黑白名单、改写回源URL、自定义错误页面、缓存规则、IP黑白名单、防盗链、强制跳转。
@@ -2485,7 +2485,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_domain_multi_certificates_async(self, request):
-        """一个证书批量设置多个域名
+        r"""一个证书批量设置多个域名
 
         一个证书配置多个域名，设置域名强制https回源参数。
         
@@ -2554,7 +2554,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_domain_origin_async(self, request):
-        """修改源站信息。
+        r"""修改源站信息。
 
         修改加速域名的源站配置。
         
@@ -2625,7 +2625,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_follow302_switch_async(self, request):
-        """开启/关闭回源跟随
+        r"""开启/关闭回源跟随
 
         开启此项配置后，当CDN节点回源请求源站返回301/302状态码时，CDN节点会先跳转到301/302对应地址获取资源并缓存后再返回给用户。
         
@@ -2696,7 +2696,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_https_info_async(self, request):
-        """配置HTTPS
+        r"""配置HTTPS
 
         设置加速域名HTTPS。通过配置加速域名的HTTPS证书，并将其部署在全网CDN节点，实现HTTPS安全加速。
         
@@ -2767,7 +2767,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_origin_host_async(self, request):
-        """修改回源HOST。
+        r"""修改回源HOST。
 
         修改回源HOST。回源HOST是CDN节点在回源过程中，在源站访问的站点域名，即http请求头中的host信息。
         
@@ -2838,7 +2838,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_private_bucket_access_async(self, request):
-        """修改私有桶开启关闭状态
+        r"""修改私有桶开启关闭状态
 
         修改私有桶开启关闭状态。
         
@@ -2909,7 +2909,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_range_switch_async(self, request):
-        """开启/关闭Range回源
+        r"""开启/关闭Range回源
 
         Range回源是指源站在收到CDN节点回源请求时，根据http请求头中的Range信息返回指定范围的数据给CDN节点。
         
@@ -2982,7 +2982,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_refer_async(self, request):
-        """设置Referer过滤规则
+        r"""设置Referer过滤规则
 
         设置Referer过滤规则。通过设置过滤策略，对访问者身份进行识别和过滤，实现限制访问来源的目的。
         
@@ -3053,7 +3053,7 @@ class CdnAsyncClient(Client):
         return http_info
 
     def update_response_header_async(self, request):
-        """新增/修改响应头配置
+        r"""新增/修改响应头配置
 
         新增/修改域名响应头配置。
         

@@ -29,7 +29,7 @@ class EmailItemDto:
     }
 
     def __init__(self, value=None, type=None, primary=None):
-        """EmailItemDto
+        r"""EmailItemDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EmailItemDto:
 
     @property
     def value(self):
-        """Gets the value of this EmailItemDto.
+        r"""Gets the value of this EmailItemDto.
 
         包含电子邮箱地址的字符串
 
@@ -65,7 +65,7 @@ class EmailItemDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EmailItemDto.
+        r"""Sets the value of this EmailItemDto.
 
         包含电子邮箱地址的字符串
 
@@ -76,7 +76,7 @@ class EmailItemDto:
 
     @property
     def type(self):
-        """Gets the type of this EmailItemDto.
+        r"""Gets the type of this EmailItemDto.
 
         表示电子邮箱类型的字符串
 
@@ -87,7 +87,7 @@ class EmailItemDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EmailItemDto.
+        r"""Sets the type of this EmailItemDto.
 
         表示电子邮箱类型的字符串
 
@@ -98,7 +98,7 @@ class EmailItemDto:
 
     @property
     def primary(self):
-        """Gets the primary of this EmailItemDto.
+        r"""Gets the primary of this EmailItemDto.
 
         一个布尔值，表示这是否是用户的主电子邮箱
 
@@ -109,7 +109,7 @@ class EmailItemDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this EmailItemDto.
+        r"""Sets the primary of this EmailItemDto.
 
         一个布尔值，表示这是否是用户的主电子邮箱
 

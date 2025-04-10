@@ -35,7 +35,7 @@ class ListAimTemplateMaterialsRequest:
     }
 
     def __init__(self, resource_type=None, file_name=None, material_id=None, aim_resource_id=None, offset=None, limit=None):
-        """ListAimTemplateMaterialsRequest
+        r"""ListAimTemplateMaterialsRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListAimTemplateMaterialsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListAimTemplateMaterialsRequest.
+        r"""Gets the resource_type of this ListAimTemplateMaterialsRequest.
 
         资源类型。 - image：表示图片 - video：表示视频 
 
@@ -86,7 +86,7 @@ class ListAimTemplateMaterialsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListAimTemplateMaterialsRequest.
+        r"""Sets the resource_type of this ListAimTemplateMaterialsRequest.
 
         资源类型。 - image：表示图片 - video：表示视频 
 
@@ -97,7 +97,7 @@ class ListAimTemplateMaterialsRequest:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListAimTemplateMaterialsRequest.
+        r"""Gets the file_name of this ListAimTemplateMaterialsRequest.
 
         文件名称。
 
@@ -108,7 +108,7 @@ class ListAimTemplateMaterialsRequest:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListAimTemplateMaterialsRequest.
+        r"""Sets the file_name of this ListAimTemplateMaterialsRequest.
 
         文件名称。
 
@@ -119,7 +119,7 @@ class ListAimTemplateMaterialsRequest:
 
     @property
     def material_id(self):
-        """Gets the material_id of this ListAimTemplateMaterialsRequest.
+        r"""Gets the material_id of this ListAimTemplateMaterialsRequest.
 
         素材ID。
 
@@ -130,7 +130,7 @@ class ListAimTemplateMaterialsRequest:
 
     @material_id.setter
     def material_id(self, material_id):
-        """Sets the material_id of this ListAimTemplateMaterialsRequest.
+        r"""Sets the material_id of this ListAimTemplateMaterialsRequest.
 
         素材ID。
 
@@ -141,7 +141,7 @@ class ListAimTemplateMaterialsRequest:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this ListAimTemplateMaterialsRequest.
+        r"""Gets the aim_resource_id of this ListAimTemplateMaterialsRequest.
 
         资源ID。
 
@@ -152,7 +152,7 @@ class ListAimTemplateMaterialsRequest:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this ListAimTemplateMaterialsRequest.
+        r"""Sets the aim_resource_id of this ListAimTemplateMaterialsRequest.
 
         资源ID。
 
@@ -163,7 +163,7 @@ class ListAimTemplateMaterialsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimTemplateMaterialsRequest.
+        r"""Gets the offset of this ListAimTemplateMaterialsRequest.
 
         翻页页数，从1开始。
 
@@ -174,7 +174,7 @@ class ListAimTemplateMaterialsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimTemplateMaterialsRequest.
+        r"""Sets the offset of this ListAimTemplateMaterialsRequest.
 
         翻页页数，从1开始。
 
@@ -185,7 +185,7 @@ class ListAimTemplateMaterialsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimTemplateMaterialsRequest.
+        r"""Gets the limit of this ListAimTemplateMaterialsRequest.
 
         每页展示的条数。
 
@@ -196,7 +196,7 @@ class ListAimTemplateMaterialsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimTemplateMaterialsRequest.
+        r"""Sets the limit of this ListAimTemplateMaterialsRequest.
 
         每页展示的条数。
 

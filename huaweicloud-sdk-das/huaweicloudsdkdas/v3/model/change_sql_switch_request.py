@@ -29,7 +29,7 @@ class ChangeSqlSwitchRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ChangeSqlSwitchRequest
+        r"""ChangeSqlSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeSqlSwitchRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeSqlSwitchRequest.
+        r"""Gets the instance_id of this ChangeSqlSwitchRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ChangeSqlSwitchRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeSqlSwitchRequest.
+        r"""Sets the instance_id of this ChangeSqlSwitchRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ChangeSqlSwitchRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeSqlSwitchRequest.
+        r"""Gets the x_language of this ChangeSqlSwitchRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class ChangeSqlSwitchRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeSqlSwitchRequest.
+        r"""Sets the x_language of this ChangeSqlSwitchRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class ChangeSqlSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeSqlSwitchRequest.
+        r"""Gets the body of this ChangeSqlSwitchRequest.
 
         :return: The body of this ChangeSqlSwitchRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`
@@ -109,7 +109,7 @@ class ChangeSqlSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeSqlSwitchRequest.
+        r"""Sets the body of this ChangeSqlSwitchRequest.
 
         :param body: The body of this ChangeSqlSwitchRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`

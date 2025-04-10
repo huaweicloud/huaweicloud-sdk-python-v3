@@ -35,7 +35,7 @@ class ListDataobjectRelationRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, dataclass_type=None, data_object_id=None, related_dataclass_type=None, body=None):
-        """ListDataobjectRelationRequest
+        r"""ListDataobjectRelationRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ListDataobjectRelationRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDataobjectRelationRequest.
+        r"""Gets the project_id of this ListDataobjectRelationRequest.
 
         ID of project
 
@@ -84,7 +84,7 @@ class ListDataobjectRelationRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDataobjectRelationRequest.
+        r"""Sets the project_id of this ListDataobjectRelationRequest.
 
         ID of project
 
@@ -95,7 +95,7 @@ class ListDataobjectRelationRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListDataobjectRelationRequest.
+        r"""Gets the workspace_id of this ListDataobjectRelationRequest.
 
         ID of workspace
 
@@ -106,7 +106,7 @@ class ListDataobjectRelationRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListDataobjectRelationRequest.
+        r"""Sets the workspace_id of this ListDataobjectRelationRequest.
 
         ID of workspace
 
@@ -117,7 +117,7 @@ class ListDataobjectRelationRequest:
 
     @property
     def dataclass_type(self):
-        """Gets the dataclass_type of this ListDataobjectRelationRequest.
+        r"""Gets the dataclass_type of this ListDataobjectRelationRequest.
 
         type of dataclass
 
@@ -128,7 +128,7 @@ class ListDataobjectRelationRequest:
 
     @dataclass_type.setter
     def dataclass_type(self, dataclass_type):
-        """Sets the dataclass_type of this ListDataobjectRelationRequest.
+        r"""Sets the dataclass_type of this ListDataobjectRelationRequest.
 
         type of dataclass
 
@@ -139,7 +139,7 @@ class ListDataobjectRelationRequest:
 
     @property
     def data_object_id(self):
-        """Gets the data_object_id of this ListDataobjectRelationRequest.
+        r"""Gets the data_object_id of this ListDataobjectRelationRequest.
 
         ID of dataobject
 
@@ -150,7 +150,7 @@ class ListDataobjectRelationRequest:
 
     @data_object_id.setter
     def data_object_id(self, data_object_id):
-        """Sets the data_object_id of this ListDataobjectRelationRequest.
+        r"""Sets the data_object_id of this ListDataobjectRelationRequest.
 
         ID of dataobject
 
@@ -161,7 +161,7 @@ class ListDataobjectRelationRequest:
 
     @property
     def related_dataclass_type(self):
-        """Gets the related_dataclass_type of this ListDataobjectRelationRequest.
+        r"""Gets the related_dataclass_type of this ListDataobjectRelationRequest.
 
         type of related dataclass
 
@@ -172,7 +172,7 @@ class ListDataobjectRelationRequest:
 
     @related_dataclass_type.setter
     def related_dataclass_type(self, related_dataclass_type):
-        """Sets the related_dataclass_type of this ListDataobjectRelationRequest.
+        r"""Sets the related_dataclass_type of this ListDataobjectRelationRequest.
 
         type of related dataclass
 
@@ -183,7 +183,7 @@ class ListDataobjectRelationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDataobjectRelationRequest.
+        r"""Gets the body of this ListDataobjectRelationRequest.
 
         :return: The body of this ListDataobjectRelationRequest.
         :rtype: :class:`huaweicloudsdksa.v2.DataobjectSearch`
@@ -192,7 +192,7 @@ class ListDataobjectRelationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDataobjectRelationRequest.
+        r"""Sets the body of this ListDataobjectRelationRequest.
 
         :param body: The body of this ListDataobjectRelationRequest.
         :type body: :class:`huaweicloudsdksa.v2.DataobjectSearch`

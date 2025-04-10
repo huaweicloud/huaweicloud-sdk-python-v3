@@ -25,7 +25,7 @@ class UpdateReplicationNameRequestBody:
     }
 
     def __init__(self, replication=None):
-        """UpdateReplicationNameRequestBody
+        r"""UpdateReplicationNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateReplicationNameRequestBody:
 
     @property
     def replication(self):
-        """Gets the replication of this UpdateReplicationNameRequestBody.
+        r"""Gets the replication of this UpdateReplicationNameRequestBody.
 
         :return: The replication of this UpdateReplicationNameRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestParams`
@@ -51,7 +51,7 @@ class UpdateReplicationNameRequestBody:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this UpdateReplicationNameRequestBody.
+        r"""Sets the replication of this UpdateReplicationNameRequestBody.
 
         :param replication: The replication of this UpdateReplicationNameRequestBody.
         :type replication: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestParams`

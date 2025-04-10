@@ -31,7 +31,7 @@ class BaseModelDto:
     }
 
     def __init__(self, name=None, id=None, create_time=None, description=None):
-        """BaseModelDto
+        r"""BaseModelDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BaseModelDto:
 
     @property
     def name(self):
-        """Gets the name of this BaseModelDto.
+        r"""Gets the name of this BaseModelDto.
 
         模型名称
 
@@ -75,7 +75,7 @@ class BaseModelDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseModelDto.
+        r"""Sets the name of this BaseModelDto.
 
         模型名称
 
@@ -86,7 +86,7 @@ class BaseModelDto:
 
     @property
     def id(self):
-        """Gets the id of this BaseModelDto.
+        r"""Gets the id of this BaseModelDto.
 
         模型ID
 
@@ -97,7 +97,7 @@ class BaseModelDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseModelDto.
+        r"""Sets the id of this BaseModelDto.
 
         模型ID
 
@@ -108,7 +108,7 @@ class BaseModelDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BaseModelDto.
+        r"""Gets the create_time of this BaseModelDto.
 
         模型创建时间
 
@@ -119,7 +119,7 @@ class BaseModelDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BaseModelDto.
+        r"""Sets the create_time of this BaseModelDto.
 
         模型创建时间
 
@@ -130,7 +130,7 @@ class BaseModelDto:
 
     @property
     def description(self):
-        """Gets the description of this BaseModelDto.
+        r"""Gets the description of this BaseModelDto.
 
         模型描述信息
 
@@ -141,7 +141,7 @@ class BaseModelDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseModelDto.
+        r"""Sets the description of this BaseModelDto.
 
         模型描述信息
 

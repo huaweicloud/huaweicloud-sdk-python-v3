@@ -29,7 +29,7 @@ class ShowStreamRequest:
     }
 
     def __init__(self, stream_name=None, start_partition_id=None, limit_partitions=None):
-        """ShowStreamRequest
+        r"""ShowStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowStreamRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowStreamRequest.
+        r"""Gets the stream_name of this ShowStreamRequest.
 
         需要查询的通道名称。
 
@@ -67,7 +67,7 @@ class ShowStreamRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowStreamRequest.
+        r"""Sets the stream_name of this ShowStreamRequest.
 
         需要查询的通道名称。
 
@@ -78,7 +78,7 @@ class ShowStreamRequest:
 
     @property
     def start_partition_id(self):
-        """Gets the start_partition_id of this ShowStreamRequest.
+        r"""Gets the start_partition_id of this ShowStreamRequest.
 
         从该分区值开始返回分区列表，返回的分区列表不包括此分区。
 
@@ -89,7 +89,7 @@ class ShowStreamRequest:
 
     @start_partition_id.setter
     def start_partition_id(self, start_partition_id):
-        """Sets the start_partition_id of this ShowStreamRequest.
+        r"""Sets the start_partition_id of this ShowStreamRequest.
 
         从该分区值开始返回分区列表，返回的分区列表不包括此分区。
 
@@ -100,7 +100,7 @@ class ShowStreamRequest:
 
     @property
     def limit_partitions(self):
-        """Gets the limit_partitions of this ShowStreamRequest.
+        r"""Gets the limit_partitions of this ShowStreamRequest.
 
         单次请求返回的最大分区数。
 
@@ -111,7 +111,7 @@ class ShowStreamRequest:
 
     @limit_partitions.setter
     def limit_partitions(self, limit_partitions):
-        """Sets the limit_partitions of this ShowStreamRequest.
+        r"""Sets the limit_partitions of this ShowStreamRequest.
 
         单次请求返回的最大分区数。
 

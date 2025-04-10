@@ -25,7 +25,7 @@ class ShowScreenRecordRequest:
     }
 
     def __init__(self, record_id=None):
-        """ShowScreenRecordRequest
+        r"""ShowScreenRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScreenRecordRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ShowScreenRecordRequest.
+        r"""Gets the record_id of this ShowScreenRecordRequest.
 
         录屏记录UUID。
 
@@ -53,7 +53,7 @@ class ShowScreenRecordRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ShowScreenRecordRequest.
+        r"""Sets the record_id of this ShowScreenRecordRequest.
 
         录屏记录UUID。
 

@@ -25,7 +25,7 @@ class DeleteMuteRulesRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteMuteRulesRequest
+        r"""DeleteMuteRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteMuteRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteMuteRulesRequest.
+        r"""Gets the body of this DeleteMuteRulesRequest.
 
         :return: The body of this DeleteMuteRulesRequest.
         :rtype: list[:class:`huaweicloudsdkaom.v2.DeleteMuteRuleName`]
@@ -52,7 +52,7 @@ class DeleteMuteRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteMuteRulesRequest.
+        r"""Sets the body of this DeleteMuteRulesRequest.
 
         :param body: The body of this DeleteMuteRulesRequest.
         :type body: list[:class:`huaweicloudsdkaom.v2.DeleteMuteRuleName`]

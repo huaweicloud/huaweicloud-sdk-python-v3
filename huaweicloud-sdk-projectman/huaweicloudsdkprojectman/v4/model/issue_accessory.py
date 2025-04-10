@@ -43,7 +43,7 @@ class IssueAccessory:
     }
 
     def __init__(self, attachment_id=None, issue_id=None, creator_num_id=None, created_date=None, file_name=None, container_type=None, disk_file_name=None, digest=None, disk_directory=None, creator_id=None):
-        """IssueAccessory
+        r"""IssueAccessory
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class IssueAccessory:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this IssueAccessory.
+        r"""Gets the attachment_id of this IssueAccessory.
 
         附件id
 
@@ -117,7 +117,7 @@ class IssueAccessory:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this IssueAccessory.
+        r"""Sets the attachment_id of this IssueAccessory.
 
         附件id
 
@@ -128,7 +128,7 @@ class IssueAccessory:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this IssueAccessory.
+        r"""Gets the issue_id of this IssueAccessory.
 
         工作鞋ID
 
@@ -139,7 +139,7 @@ class IssueAccessory:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this IssueAccessory.
+        r"""Sets the issue_id of this IssueAccessory.
 
         工作鞋ID
 
@@ -150,7 +150,7 @@ class IssueAccessory:
 
     @property
     def creator_num_id(self):
-        """Gets the creator_num_id of this IssueAccessory.
+        r"""Gets the creator_num_id of this IssueAccessory.
 
         创建者数字ID
 
@@ -161,7 +161,7 @@ class IssueAccessory:
 
     @creator_num_id.setter
     def creator_num_id(self, creator_num_id):
-        """Sets the creator_num_id of this IssueAccessory.
+        r"""Sets the creator_num_id of this IssueAccessory.
 
         创建者数字ID
 
@@ -172,7 +172,7 @@ class IssueAccessory:
 
     @property
     def created_date(self):
-        """Gets the created_date of this IssueAccessory.
+        r"""Gets the created_date of this IssueAccessory.
 
         附件创建时间
 
@@ -183,7 +183,7 @@ class IssueAccessory:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this IssueAccessory.
+        r"""Sets the created_date of this IssueAccessory.
 
         附件创建时间
 
@@ -194,7 +194,7 @@ class IssueAccessory:
 
     @property
     def file_name(self):
-        """Gets the file_name of this IssueAccessory.
+        r"""Gets the file_name of this IssueAccessory.
 
         上传时文件名
 
@@ -205,7 +205,7 @@ class IssueAccessory:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this IssueAccessory.
+        r"""Sets the file_name of this IssueAccessory.
 
         上传时文件名
 
@@ -216,7 +216,7 @@ class IssueAccessory:
 
     @property
     def container_type(self):
-        """Gets the container_type of this IssueAccessory.
+        r"""Gets the container_type of this IssueAccessory.
 
         附件id
 
@@ -227,7 +227,7 @@ class IssueAccessory:
 
     @container_type.setter
     def container_type(self, container_type):
-        """Sets the container_type of this IssueAccessory.
+        r"""Sets the container_type of this IssueAccessory.
 
         附件id
 
@@ -238,7 +238,7 @@ class IssueAccessory:
 
     @property
     def disk_file_name(self):
-        """Gets the disk_file_name of this IssueAccessory.
+        r"""Gets the disk_file_name of this IssueAccessory.
 
         附件名称
 
@@ -249,7 +249,7 @@ class IssueAccessory:
 
     @disk_file_name.setter
     def disk_file_name(self, disk_file_name):
-        """Sets the disk_file_name of this IssueAccessory.
+        r"""Sets the disk_file_name of this IssueAccessory.
 
         附件名称
 
@@ -260,7 +260,7 @@ class IssueAccessory:
 
     @property
     def digest(self):
-        """Gets the digest of this IssueAccessory.
+        r"""Gets the digest of this IssueAccessory.
 
         附件id
 
@@ -271,7 +271,7 @@ class IssueAccessory:
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this IssueAccessory.
+        r"""Sets the digest of this IssueAccessory.
 
         附件id
 
@@ -282,7 +282,7 @@ class IssueAccessory:
 
     @property
     def disk_directory(self):
-        """Gets the disk_directory of this IssueAccessory.
+        r"""Gets the disk_directory of this IssueAccessory.
 
         附件路径
 
@@ -293,7 +293,7 @@ class IssueAccessory:
 
     @disk_directory.setter
     def disk_directory(self, disk_directory):
-        """Sets the disk_directory of this IssueAccessory.
+        r"""Sets the disk_directory of this IssueAccessory.
 
         附件路径
 
@@ -304,7 +304,7 @@ class IssueAccessory:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this IssueAccessory.
+        r"""Gets the creator_id of this IssueAccessory.
 
         创建这用户uuid
 
@@ -315,7 +315,7 @@ class IssueAccessory:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this IssueAccessory.
+        r"""Sets the creator_id of this IssueAccessory.
 
         创建这用户uuid
 

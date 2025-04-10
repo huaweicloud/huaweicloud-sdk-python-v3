@@ -30,7 +30,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, application_id=None, environment_id=None, configuration=None):
-        """ModifyApplicationConfigurationResponse
+        r"""ModifyApplicationConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this ModifyApplicationConfigurationResponse.
+        r"""Gets the application_id of this ModifyApplicationConfigurationResponse.
 
         :return: The application_id of this ModifyApplicationConfigurationResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ModifyApplicationConfigurationResponse.
+        r"""Sets the application_id of this ModifyApplicationConfigurationResponse.
 
         :param application_id: The application_id of this ModifyApplicationConfigurationResponse.
         :type application_id: str
@@ -76,7 +76,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ModifyApplicationConfigurationResponse.
+        r"""Gets the environment_id of this ModifyApplicationConfigurationResponse.
 
         :return: The environment_id of this ModifyApplicationConfigurationResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ModifyApplicationConfigurationResponse.
+        r"""Sets the environment_id of this ModifyApplicationConfigurationResponse.
 
         :param environment_id: The environment_id of this ModifyApplicationConfigurationResponse.
         :type environment_id: str
@@ -94,7 +94,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this ModifyApplicationConfigurationResponse.
+        r"""Gets the configuration of this ModifyApplicationConfigurationResponse.
 
         :return: The configuration of this ModifyApplicationConfigurationResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`
@@ -103,7 +103,7 @@ class ModifyApplicationConfigurationResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ModifyApplicationConfigurationResponse.
+        r"""Sets the configuration of this ModifyApplicationConfigurationResponse.
 
         :param configuration: The configuration of this ModifyApplicationConfigurationResponse.
         :type configuration: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigConfiguration`

@@ -26,7 +26,7 @@ class SwitchSslResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchSslResponse
+        r"""SwitchSslResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchSslResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchSslResponse.
+        r"""Gets the job_id of this SwitchSslResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class SwitchSslResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchSslResponse.
+        r"""Sets the job_id of this SwitchSslResponse.
 
         任务ID。
 

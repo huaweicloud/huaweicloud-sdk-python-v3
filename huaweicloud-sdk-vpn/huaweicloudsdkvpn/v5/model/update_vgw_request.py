@@ -27,7 +27,7 @@ class UpdateVgwRequest:
     }
 
     def __init__(self, vgw_id=None, body=None):
-        """UpdateVgwRequest
+        r"""UpdateVgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVgwRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this UpdateVgwRequest.
+        r"""Gets the vgw_id of this UpdateVgwRequest.
 
         VPN网关实例ID
 
@@ -60,7 +60,7 @@ class UpdateVgwRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this UpdateVgwRequest.
+        r"""Sets the vgw_id of this UpdateVgwRequest.
 
         VPN网关实例ID
 
@@ -71,7 +71,7 @@ class UpdateVgwRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVgwRequest.
+        r"""Gets the body of this UpdateVgwRequest.
 
         :return: The body of this UpdateVgwRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwRequestBody`
@@ -80,7 +80,7 @@ class UpdateVgwRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVgwRequest.
+        r"""Sets the body of this UpdateVgwRequest.
 
         :param body: The body of this UpdateVgwRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVgwRequestBody`

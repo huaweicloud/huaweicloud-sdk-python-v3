@@ -23,7 +23,7 @@ class ShowAlertConfigRequest:
     }
 
     def __init__(self):
-        """ShowAlertConfigRequest
+        r"""ShowAlertConfigRequest
 
         The model defined in huaweicloud sdk
 

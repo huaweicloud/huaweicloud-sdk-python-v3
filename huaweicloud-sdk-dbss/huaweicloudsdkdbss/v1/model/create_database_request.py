@@ -25,7 +25,7 @@ class CreateDatabaseRequest:
     }
 
     def __init__(self, database=None):
-        """CreateDatabaseRequest
+        r"""CreateDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDatabaseRequest:
 
     @property
     def database(self):
-        """Gets the database of this CreateDatabaseRequest.
+        r"""Gets the database of this CreateDatabaseRequest.
 
         :return: The database of this CreateDatabaseRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.CreateDatabaseRequestDatabase`
@@ -51,7 +51,7 @@ class CreateDatabaseRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this CreateDatabaseRequest.
+        r"""Sets the database of this CreateDatabaseRequest.
 
         :param database: The database of this CreateDatabaseRequest.
         :type database: :class:`huaweicloudsdkdbss.v1.CreateDatabaseRequestDatabase`

@@ -35,7 +35,7 @@ class ShowPartitionMetricsRequest:
     }
 
     def __init__(self, stream_name=None, partition_id=None, label=None, label_list=None, start_time=None, end_time=None):
-        """ShowPartitionMetricsRequest
+        r"""ShowPartitionMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ShowPartitionMetricsRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowPartitionMetricsRequest.
+        r"""Gets the stream_name of this ShowPartitionMetricsRequest.
 
         通道名称。
 
@@ -85,7 +85,7 @@ class ShowPartitionMetricsRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowPartitionMetricsRequest.
+        r"""Sets the stream_name of this ShowPartitionMetricsRequest.
 
         通道名称。
 
@@ -96,7 +96,7 @@ class ShowPartitionMetricsRequest:
 
     @property
     def partition_id(self):
-        """Gets the partition_id of this ShowPartitionMetricsRequest.
+        r"""Gets the partition_id of this ShowPartitionMetricsRequest.
 
         分区编号。 可定义为如下两种样式： - shardId-0000000000 - 0 比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -107,7 +107,7 @@ class ShowPartitionMetricsRequest:
 
     @partition_id.setter
     def partition_id(self, partition_id):
-        """Sets the partition_id of this ShowPartitionMetricsRequest.
+        r"""Sets the partition_id of this ShowPartitionMetricsRequest.
 
         分区编号。 可定义为如下两种样式： - shardId-0000000000 - 0 比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -118,7 +118,7 @@ class ShowPartitionMetricsRequest:
 
     @property
     def label(self):
-        """Gets the label of this ShowPartitionMetricsRequest.
+        r"""Gets the label of this ShowPartitionMetricsRequest.
 
         分区监控指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）  - total_put_bytes_per_partition：分区总输入流量（Byte） - total_get_bytes_per_partition：分区总输出流量（Byte） - total_put_records_per_partition：分区总输入记录数（个） - total_get_records_per_partition：分区总输出记录数（个）
 
@@ -129,7 +129,7 @@ class ShowPartitionMetricsRequest:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ShowPartitionMetricsRequest.
+        r"""Sets the label of this ShowPartitionMetricsRequest.
 
         分区监控指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）  - total_put_bytes_per_partition：分区总输入流量（Byte） - total_get_bytes_per_partition：分区总输出流量（Byte） - total_put_records_per_partition：分区总输入记录数（个） - total_get_records_per_partition：分区总输出记录数（个）
 
@@ -140,7 +140,7 @@ class ShowPartitionMetricsRequest:
 
     @property
     def label_list(self):
-        """Gets the label_list of this ShowPartitionMetricsRequest.
+        r"""Gets the label_list of this ShowPartitionMetricsRequest.
 
         使用label用逗号拼接组成，用于批量查询多个label的指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）
 
@@ -151,7 +151,7 @@ class ShowPartitionMetricsRequest:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this ShowPartitionMetricsRequest.
+        r"""Sets the label_list of this ShowPartitionMetricsRequest.
 
         使用label用逗号拼接组成，用于批量查询多个label的指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）
 
@@ -162,7 +162,7 @@ class ShowPartitionMetricsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPartitionMetricsRequest.
+        r"""Gets the start_time of this ShowPartitionMetricsRequest.
 
         监控开始时间点，10位时间戳。
 
@@ -173,7 +173,7 @@ class ShowPartitionMetricsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPartitionMetricsRequest.
+        r"""Sets the start_time of this ShowPartitionMetricsRequest.
 
         监控开始时间点，10位时间戳。
 
@@ -184,7 +184,7 @@ class ShowPartitionMetricsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPartitionMetricsRequest.
+        r"""Gets the end_time of this ShowPartitionMetricsRequest.
 
         监控结束时间点，10位时间戳。
 
@@ -195,7 +195,7 @@ class ShowPartitionMetricsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPartitionMetricsRequest.
+        r"""Sets the end_time of this ShowPartitionMetricsRequest.
 
         监控结束时间点，10位时间戳。
 

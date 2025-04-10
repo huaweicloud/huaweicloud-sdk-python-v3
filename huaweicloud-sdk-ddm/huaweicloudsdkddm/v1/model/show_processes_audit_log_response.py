@@ -28,7 +28,7 @@ class ShowProcessesAuditLogResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, process_audit_logs=None):
-        """ShowProcessesAuditLogResponse
+        r"""ShowProcessesAuditLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowProcessesAuditLogResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowProcessesAuditLogResponse.
+        r"""Gets the total_count of this ShowProcessesAuditLogResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ShowProcessesAuditLogResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowProcessesAuditLogResponse.
+        r"""Sets the total_count of this ShowProcessesAuditLogResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ShowProcessesAuditLogResponse(SdkResponse):
 
     @property
     def process_audit_logs(self):
-        """Gets the process_audit_logs of this ShowProcessesAuditLogResponse.
+        r"""Gets the process_audit_logs of this ShowProcessesAuditLogResponse.
 
         日志记录集合
 
@@ -84,7 +84,7 @@ class ShowProcessesAuditLogResponse(SdkResponse):
 
     @process_audit_logs.setter
     def process_audit_logs(self, process_audit_logs):
-        """Sets the process_audit_logs of this ShowProcessesAuditLogResponse.
+        r"""Sets the process_audit_logs of this ShowProcessesAuditLogResponse.
 
         日志记录集合
 

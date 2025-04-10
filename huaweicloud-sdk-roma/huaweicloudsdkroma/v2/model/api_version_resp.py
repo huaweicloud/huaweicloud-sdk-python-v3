@@ -39,7 +39,7 @@ class ApiVersionResp:
     }
 
     def __init__(self, version_id=None, version_no=None, api_id=None, env_id=None, env_name=None, remark=None, publish_time=None, status=None):
-        """ApiVersionResp
+        r"""ApiVersionResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ApiVersionResp:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ApiVersionResp.
+        r"""Gets the version_id of this ApiVersionResp.
 
         API历史版本的ID
 
@@ -103,7 +103,7 @@ class ApiVersionResp:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ApiVersionResp.
+        r"""Sets the version_id of this ApiVersionResp.
 
         API历史版本的ID
 
@@ -114,7 +114,7 @@ class ApiVersionResp:
 
     @property
     def version_no(self):
-        """Gets the version_no of this ApiVersionResp.
+        r"""Gets the version_no of this ApiVersionResp.
 
         API的版本号
 
@@ -125,7 +125,7 @@ class ApiVersionResp:
 
     @version_no.setter
     def version_no(self, version_no):
-        """Sets the version_no of this ApiVersionResp.
+        r"""Sets the version_no of this ApiVersionResp.
 
         API的版本号
 
@@ -136,7 +136,7 @@ class ApiVersionResp:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiVersionResp.
+        r"""Gets the api_id of this ApiVersionResp.
 
         API编号
 
@@ -147,7 +147,7 @@ class ApiVersionResp:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiVersionResp.
+        r"""Sets the api_id of this ApiVersionResp.
 
         API编号
 
@@ -158,7 +158,7 @@ class ApiVersionResp:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiVersionResp.
+        r"""Gets the env_id of this ApiVersionResp.
 
         发布的环境编号
 
@@ -169,7 +169,7 @@ class ApiVersionResp:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiVersionResp.
+        r"""Sets the env_id of this ApiVersionResp.
 
         发布的环境编号
 
@@ -180,7 +180,7 @@ class ApiVersionResp:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ApiVersionResp.
+        r"""Gets the env_name of this ApiVersionResp.
 
         发布的环境名称
 
@@ -191,7 +191,7 @@ class ApiVersionResp:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ApiVersionResp.
+        r"""Sets the env_name of this ApiVersionResp.
 
         发布的环境名称
 
@@ -202,7 +202,7 @@ class ApiVersionResp:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiVersionResp.
+        r"""Gets the remark of this ApiVersionResp.
 
         发布描述
 
@@ -213,7 +213,7 @@ class ApiVersionResp:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiVersionResp.
+        r"""Sets the remark of this ApiVersionResp.
 
         发布描述
 
@@ -224,7 +224,7 @@ class ApiVersionResp:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this ApiVersionResp.
+        r"""Gets the publish_time of this ApiVersionResp.
 
         发布时间
 
@@ -235,7 +235,7 @@ class ApiVersionResp:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this ApiVersionResp.
+        r"""Sets the publish_time of this ApiVersionResp.
 
         发布时间
 
@@ -246,7 +246,7 @@ class ApiVersionResp:
 
     @property
     def status(self):
-        """Gets the status of this ApiVersionResp.
+        r"""Gets the status of this ApiVersionResp.
 
         版本状态 - 1：当前生效中的版本 - 2：未生效的版本
 
@@ -257,7 +257,7 @@ class ApiVersionResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiVersionResp.
+        r"""Sets the status of this ApiVersionResp.
 
         版本状态 - 1：当前生效中的版本 - 2：未生效的版本
 

@@ -25,7 +25,7 @@ class CreateKeypairRequest:
     }
 
     def __init__(self, body=None):
-        """CreateKeypairRequest
+        r"""CreateKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateKeypairRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateKeypairRequest.
+        r"""Gets the body of this CreateKeypairRequest.
 
         :return: The body of this CreateKeypairRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateKeypairRequestBody`
@@ -52,7 +52,7 @@ class CreateKeypairRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateKeypairRequest.
+        r"""Sets the body of this CreateKeypairRequest.
 
         :param body: The body of this CreateKeypairRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateKeypairRequestBody`

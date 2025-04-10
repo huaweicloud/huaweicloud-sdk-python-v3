@@ -37,7 +37,7 @@ class CreateL7ruleReq:
     }
 
     def __init__(self, tenant_id=None, admin_state_up=None, type=None, compare_type=None, key=None, value=None, invert=None):
-        """CreateL7ruleReq
+        r"""CreateL7ruleReq
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateL7ruleReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateL7ruleReq.
+        r"""Gets the tenant_id of this CreateL7ruleReq.
 
         转发规则所在的项目ID。
 
@@ -93,7 +93,7 @@ class CreateL7ruleReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateL7ruleReq.
+        r"""Sets the tenant_id of this CreateL7ruleReq.
 
         转发规则所在的项目ID。
 
@@ -104,7 +104,7 @@ class CreateL7ruleReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateL7ruleReq.
+        r"""Gets the admin_state_up of this CreateL7ruleReq.
 
         转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -115,7 +115,7 @@ class CreateL7ruleReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateL7ruleReq.
+        r"""Sets the admin_state_up of this CreateL7ruleReq.
 
         转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -126,7 +126,7 @@ class CreateL7ruleReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateL7ruleReq.
+        r"""Gets the type of this CreateL7ruleReq.
 
         转发规则的匹配内容
 
@@ -137,7 +137,7 @@ class CreateL7ruleReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateL7ruleReq.
+        r"""Sets the type of this CreateL7ruleReq.
 
         转发规则的匹配内容
 
@@ -148,7 +148,7 @@ class CreateL7ruleReq:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this CreateL7ruleReq.
+        r"""Gets the compare_type of this CreateL7ruleReq.
 
         转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
@@ -159,7 +159,7 @@ class CreateL7ruleReq:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this CreateL7ruleReq.
+        r"""Sets the compare_type of this CreateL7ruleReq.
 
         转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
@@ -170,7 +170,7 @@ class CreateL7ruleReq:
 
     @property
     def key(self):
-        """Gets the key of this CreateL7ruleReq.
+        r"""Gets the key of this CreateL7ruleReq.
 
         匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
@@ -181,7 +181,7 @@ class CreateL7ruleReq:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateL7ruleReq.
+        r"""Sets the key of this CreateL7ruleReq.
 
         匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
@@ -192,7 +192,7 @@ class CreateL7ruleReq:
 
     @property
     def value(self):
-        """Gets the value of this CreateL7ruleReq.
+        r"""Gets the value of this CreateL7ruleReq.
 
         匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
@@ -203,7 +203,7 @@ class CreateL7ruleReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateL7ruleReq.
+        r"""Sets the value of this CreateL7ruleReq.
 
         匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
@@ -214,7 +214,7 @@ class CreateL7ruleReq:
 
     @property
     def invert(self):
-        """Gets the invert of this CreateL7ruleReq.
+        r"""Gets the invert of this CreateL7ruleReq.
 
         是否反向匹配； 取值范围：true/false。默认值：false； 该字段为预留字段，暂未启用。
 
@@ -225,7 +225,7 @@ class CreateL7ruleReq:
 
     @invert.setter
     def invert(self, invert):
-        """Sets the invert of this CreateL7ruleReq.
+        r"""Sets the invert of this CreateL7ruleReq.
 
         是否反向匹配； 取值范围：true/false。默认值：false； 该字段为预留字段，暂未启用。
 

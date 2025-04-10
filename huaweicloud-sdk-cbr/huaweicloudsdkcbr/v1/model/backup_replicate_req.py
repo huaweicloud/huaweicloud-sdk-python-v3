@@ -25,7 +25,7 @@ class BackupReplicateReq:
     }
 
     def __init__(self, replicate=None):
-        """BackupReplicateReq
+        r"""BackupReplicateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BackupReplicateReq:
 
     @property
     def replicate(self):
-        """Gets the replicate of this BackupReplicateReq.
+        r"""Gets the replicate of this BackupReplicateReq.
 
         :return: The replicate of this BackupReplicateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`
@@ -51,7 +51,7 @@ class BackupReplicateReq:
 
     @replicate.setter
     def replicate(self, replicate):
-        """Sets the replicate of this BackupReplicateReq.
+        r"""Sets the replicate of this BackupReplicateReq.
 
         :param replicate: The replicate of this BackupReplicateReq.
         :type replicate: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`

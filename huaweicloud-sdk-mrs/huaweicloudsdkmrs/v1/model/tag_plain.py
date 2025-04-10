@@ -27,7 +27,7 @@ class TagPlain:
     }
 
     def __init__(self, key=None, value=None):
-        """TagPlain
+        r"""TagPlain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagPlain:
 
     @property
     def key(self):
-        """Gets the key of this TagPlain.
+        r"""Gets the key of this TagPlain.
 
         键。标签的key值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
@@ -61,7 +61,7 @@ class TagPlain:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagPlain.
+        r"""Sets the key of this TagPlain.
 
         键。标签的key值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
@@ -72,7 +72,7 @@ class TagPlain:
 
     @property
     def value(self):
-        """Gets the value of this TagPlain.
+        r"""Gets the value of this TagPlain.
 
         值。标签的value值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
@@ -83,7 +83,7 @@ class TagPlain:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagPlain.
+        r"""Sets the value of this TagPlain.
 
         值。标签的value值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 

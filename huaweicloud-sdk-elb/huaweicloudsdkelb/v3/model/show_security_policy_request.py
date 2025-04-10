@@ -25,7 +25,7 @@ class ShowSecurityPolicyRequest:
     }
 
     def __init__(self, security_policy_id=None):
-        """ShowSecurityPolicyRequest
+        r"""ShowSecurityPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecurityPolicyRequest:
 
     @property
     def security_policy_id(self):
-        """Gets the security_policy_id of this ShowSecurityPolicyRequest.
+        r"""Gets the security_policy_id of this ShowSecurityPolicyRequest.
 
         自定义安全策略ID。
 
@@ -53,7 +53,7 @@ class ShowSecurityPolicyRequest:
 
     @security_policy_id.setter
     def security_policy_id(self, security_policy_id):
-        """Sets the security_policy_id of this ShowSecurityPolicyRequest.
+        r"""Sets the security_policy_id of this ShowSecurityPolicyRequest.
 
         自定义安全策略ID。
 

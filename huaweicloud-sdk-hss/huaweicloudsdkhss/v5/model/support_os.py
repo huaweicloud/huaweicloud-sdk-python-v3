@@ -23,7 +23,7 @@ class SupportOs:
     }
 
     def __init__(self):
-        """SupportOs
+        r"""SupportOs
 
         The model defined in huaweicloud sdk
 

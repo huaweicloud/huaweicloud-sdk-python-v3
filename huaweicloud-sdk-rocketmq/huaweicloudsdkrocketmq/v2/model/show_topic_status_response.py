@@ -30,7 +30,7 @@ class ShowTopicStatusResponse(SdkResponse):
     }
 
     def __init__(self, max_offset=None, min_offset=None, brokers=None):
-        """ShowTopicStatusResponse
+        r"""ShowTopicStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTopicStatusResponse(SdkResponse):
 
     @property
     def max_offset(self):
-        """Gets the max_offset of this ShowTopicStatusResponse.
+        r"""Gets the max_offset of this ShowTopicStatusResponse.
 
         最大偏移量。
 
@@ -69,7 +69,7 @@ class ShowTopicStatusResponse(SdkResponse):
 
     @max_offset.setter
     def max_offset(self, max_offset):
-        """Sets the max_offset of this ShowTopicStatusResponse.
+        r"""Sets the max_offset of this ShowTopicStatusResponse.
 
         最大偏移量。
 
@@ -80,7 +80,7 @@ class ShowTopicStatusResponse(SdkResponse):
 
     @property
     def min_offset(self):
-        """Gets the min_offset of this ShowTopicStatusResponse.
+        r"""Gets the min_offset of this ShowTopicStatusResponse.
 
         最小偏移量。
 
@@ -91,7 +91,7 @@ class ShowTopicStatusResponse(SdkResponse):
 
     @min_offset.setter
     def min_offset(self, min_offset):
-        """Sets the min_offset of this ShowTopicStatusResponse.
+        r"""Sets the min_offset of this ShowTopicStatusResponse.
 
         最小偏移量。
 
@@ -102,7 +102,7 @@ class ShowTopicStatusResponse(SdkResponse):
 
     @property
     def brokers(self):
-        """Gets the brokers of this ShowTopicStatusResponse.
+        r"""Gets the brokers of this ShowTopicStatusResponse.
 
         代理。
 
@@ -113,7 +113,7 @@ class ShowTopicStatusResponse(SdkResponse):
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ShowTopicStatusResponse.
+        r"""Sets the brokers of this ShowTopicStatusResponse.
 
         代理。
 

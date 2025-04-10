@@ -35,7 +35,7 @@ class AutoScalingPolicy:
     }
 
     def __init__(self, auto_scaling_enable=None, min_capacity=None, max_capacity=None, resources_plans=None, rules=None, exec_scripts=None):
-        """AutoScalingPolicy
+        r"""AutoScalingPolicy
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AutoScalingPolicy:
 
     @property
     def auto_scaling_enable(self):
-        """Gets the auto_scaling_enable of this AutoScalingPolicy.
+        r"""Gets the auto_scaling_enable of this AutoScalingPolicy.
 
         当前自动伸缩规则是否开启。
 
@@ -86,7 +86,7 @@ class AutoScalingPolicy:
 
     @auto_scaling_enable.setter
     def auto_scaling_enable(self, auto_scaling_enable):
-        """Sets the auto_scaling_enable of this AutoScalingPolicy.
+        r"""Sets the auto_scaling_enable of this AutoScalingPolicy.
 
         当前自动伸缩规则是否开启。
 
@@ -97,7 +97,7 @@ class AutoScalingPolicy:
 
     @property
     def min_capacity(self):
-        """Gets the min_capacity of this AutoScalingPolicy.
+        r"""Gets the min_capacity of this AutoScalingPolicy.
 
         指定该节点组的最小保留节点数。  取值范围：[0～500]
 
@@ -108,7 +108,7 @@ class AutoScalingPolicy:
 
     @min_capacity.setter
     def min_capacity(self, min_capacity):
-        """Sets the min_capacity of this AutoScalingPolicy.
+        r"""Sets the min_capacity of this AutoScalingPolicy.
 
         指定该节点组的最小保留节点数。  取值范围：[0～500]
 
@@ -119,7 +119,7 @@ class AutoScalingPolicy:
 
     @property
     def max_capacity(self):
-        """Gets the max_capacity of this AutoScalingPolicy.
+        r"""Gets the max_capacity of this AutoScalingPolicy.
 
         指定该节点组的最大节点数。  取值范围：[0～500]
 
@@ -130,7 +130,7 @@ class AutoScalingPolicy:
 
     @max_capacity.setter
     def max_capacity(self, max_capacity):
-        """Sets the max_capacity of this AutoScalingPolicy.
+        r"""Sets the max_capacity of this AutoScalingPolicy.
 
         指定该节点组的最大节点数。  取值范围：[0～500]
 
@@ -141,7 +141,7 @@ class AutoScalingPolicy:
 
     @property
     def resources_plans(self):
-        """Gets the resources_plans of this AutoScalingPolicy.
+        r"""Gets the resources_plans of this AutoScalingPolicy.
 
         资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -152,7 +152,7 @@ class AutoScalingPolicy:
 
     @resources_plans.setter
     def resources_plans(self, resources_plans):
-        """Sets the resources_plans of this AutoScalingPolicy.
+        r"""Sets the resources_plans of this AutoScalingPolicy.
 
         资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -163,7 +163,7 @@ class AutoScalingPolicy:
 
     @property
     def rules(self):
-        """Gets the rules of this AutoScalingPolicy.
+        r"""Gets the rules of this AutoScalingPolicy.
 
         自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -174,7 +174,7 @@ class AutoScalingPolicy:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this AutoScalingPolicy.
+        r"""Sets the rules of this AutoScalingPolicy.
 
         自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -185,7 +185,7 @@ class AutoScalingPolicy:
 
     @property
     def exec_scripts(self):
-        """Gets the exec_scripts of this AutoScalingPolicy.
+        r"""Gets the exec_scripts of this AutoScalingPolicy.
 
         弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
 
@@ -196,7 +196,7 @@ class AutoScalingPolicy:
 
     @exec_scripts.setter
     def exec_scripts(self, exec_scripts):
-        """Sets the exec_scripts of this AutoScalingPolicy.
+        r"""Sets the exec_scripts of this AutoScalingPolicy.
 
         弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
 

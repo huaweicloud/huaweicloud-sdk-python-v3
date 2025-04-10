@@ -51,7 +51,7 @@ class ClassesViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, description=None, id=None, kiaguid=None, last_update_time=None, modifier=None, name=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, security_level=None, tenant=None):
-        """ClassesViewDTO
+        r"""ClassesViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ClassesViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this ClassesViewDTO.
+        r"""Gets the class_name of this ClassesViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -145,7 +145,7 @@ class ClassesViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this ClassesViewDTO.
+        r"""Sets the class_name of this ClassesViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -156,7 +156,7 @@ class ClassesViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ClassesViewDTO.
+        r"""Gets the create_time of this ClassesViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -167,7 +167,7 @@ class ClassesViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ClassesViewDTO.
+        r"""Sets the create_time of this ClassesViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -178,7 +178,7 @@ class ClassesViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this ClassesViewDTO.
+        r"""Gets the creator of this ClassesViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -189,7 +189,7 @@ class ClassesViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ClassesViewDTO.
+        r"""Sets the creator of this ClassesViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -200,7 +200,7 @@ class ClassesViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this ClassesViewDTO.
+        r"""Gets the description of this ClassesViewDTO.
 
         **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -211,7 +211,7 @@ class ClassesViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClassesViewDTO.
+        r"""Sets the description of this ClassesViewDTO.
 
         **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -222,7 +222,7 @@ class ClassesViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this ClassesViewDTO.
+        r"""Gets the id of this ClassesViewDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -233,7 +233,7 @@ class ClassesViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClassesViewDTO.
+        r"""Sets the id of this ClassesViewDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -244,7 +244,7 @@ class ClassesViewDTO:
 
     @property
     def kiaguid(self):
-        """Gets the kiaguid of this ClassesViewDTO.
+        r"""Gets the kiaguid of this ClassesViewDTO.
 
         **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -255,7 +255,7 @@ class ClassesViewDTO:
 
     @kiaguid.setter
     def kiaguid(self, kiaguid):
-        """Sets the kiaguid of this ClassesViewDTO.
+        r"""Sets the kiaguid of this ClassesViewDTO.
 
         **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -266,7 +266,7 @@ class ClassesViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this ClassesViewDTO.
+        r"""Gets the last_update_time of this ClassesViewDTO.
 
         **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -277,7 +277,7 @@ class ClassesViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this ClassesViewDTO.
+        r"""Sets the last_update_time of this ClassesViewDTO.
 
         **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -288,7 +288,7 @@ class ClassesViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this ClassesViewDTO.
+        r"""Gets the modifier of this ClassesViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -299,7 +299,7 @@ class ClassesViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this ClassesViewDTO.
+        r"""Sets the modifier of this ClassesViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -310,7 +310,7 @@ class ClassesViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this ClassesViewDTO.
+        r"""Gets the name of this ClassesViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -321,7 +321,7 @@ class ClassesViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClassesViewDTO.
+        r"""Sets the name of this ClassesViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -332,7 +332,7 @@ class ClassesViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this ClassesViewDTO.
+        r"""Gets the rdm_delete_flag of this ClassesViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -343,7 +343,7 @@ class ClassesViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this ClassesViewDTO.
+        r"""Sets the rdm_delete_flag of this ClassesViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -354,7 +354,7 @@ class ClassesViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this ClassesViewDTO.
+        r"""Gets the rdm_extension_type of this ClassesViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -365,7 +365,7 @@ class ClassesViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this ClassesViewDTO.
+        r"""Sets the rdm_extension_type of this ClassesViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -376,7 +376,7 @@ class ClassesViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this ClassesViewDTO.
+        r"""Gets the rdm_version of this ClassesViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -387,7 +387,7 @@ class ClassesViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this ClassesViewDTO.
+        r"""Sets the rdm_version of this ClassesViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -398,7 +398,7 @@ class ClassesViewDTO:
 
     @property
     def security_level(self):
-        """Gets the security_level of this ClassesViewDTO.
+        r"""Gets the security_level of this ClassesViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -409,7 +409,7 @@ class ClassesViewDTO:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this ClassesViewDTO.
+        r"""Sets the security_level of this ClassesViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -420,7 +420,7 @@ class ClassesViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this ClassesViewDTO.
+        r"""Gets the tenant of this ClassesViewDTO.
 
         :return: The tenant of this ClassesViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -429,7 +429,7 @@ class ClassesViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this ClassesViewDTO.
+        r"""Sets the tenant of this ClassesViewDTO.
 
         :param tenant: The tenant of this ClassesViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`

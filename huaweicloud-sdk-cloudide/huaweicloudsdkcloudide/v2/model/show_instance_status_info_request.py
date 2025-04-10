@@ -25,7 +25,7 @@ class ShowInstanceStatusInfoRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowInstanceStatusInfoRequest
+        r"""ShowInstanceStatusInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceStatusInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceStatusInfoRequest.
+        r"""Gets the instance_id of this ShowInstanceStatusInfoRequest.
 
         CodeArtsIDEOnline实例id
 
@@ -53,7 +53,7 @@ class ShowInstanceStatusInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceStatusInfoRequest.
+        r"""Sets the instance_id of this ShowInstanceStatusInfoRequest.
 
         CodeArtsIDEOnline实例id
 

@@ -33,7 +33,7 @@ class ListAccessClientInfosRequest:
     }
 
     def __init__(self, instance_id=None, id=None, name=None, offset=None, limit=None):
-        """ListAccessClientInfosRequest
+        r"""ListAccessClientInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListAccessClientInfosRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAccessClientInfosRequest.
+        r"""Gets the instance_id of this ListAccessClientInfosRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -80,7 +80,7 @@ class ListAccessClientInfosRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAccessClientInfosRequest.
+        r"""Sets the instance_id of this ListAccessClientInfosRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -91,7 +91,7 @@ class ListAccessClientInfosRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListAccessClientInfosRequest.
+        r"""Gets the id of this ListAccessClientInfosRequest.
 
         ID搜索。根据ID进行搜索。
 
@@ -102,7 +102,7 @@ class ListAccessClientInfosRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAccessClientInfosRequest.
+        r"""Sets the id of this ListAccessClientInfosRequest.
 
         ID搜索。根据ID进行搜索。
 
@@ -113,7 +113,7 @@ class ListAccessClientInfosRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAccessClientInfosRequest.
+        r"""Gets the name of this ListAccessClientInfosRequest.
 
         名称关键字搜索。只能包含字母、数字、下划线和中划线，且最大长度为32个字符。
 
@@ -124,7 +124,7 @@ class ListAccessClientInfosRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAccessClientInfosRequest.
+        r"""Sets the name of this ListAccessClientInfosRequest.
 
         名称关键字搜索。只能包含字母、数字、下划线和中划线，且最大长度为32个字符。
 
@@ -135,7 +135,7 @@ class ListAccessClientInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAccessClientInfosRequest.
+        r"""Gets the offset of this ListAccessClientInfosRequest.
 
         分页查询时的偏移量。默认值为0。最小值为0，最大值为1000。
 
@@ -146,7 +146,7 @@ class ListAccessClientInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAccessClientInfosRequest.
+        r"""Sets the offset of this ListAccessClientInfosRequest.
 
         分页查询时的偏移量。默认值为0。最小值为0，最大值为1000。
 
@@ -157,7 +157,7 @@ class ListAccessClientInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccessClientInfosRequest.
+        r"""Gets the limit of this ListAccessClientInfosRequest.
 
         分页一页显示数。默认值为10。最小值为1，最大值为1000。
 
@@ -168,7 +168,7 @@ class ListAccessClientInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccessClientInfosRequest.
+        r"""Sets the limit of this ListAccessClientInfosRequest.
 
         分页一页显示数。默认值为10。最小值为1，最大值为1000。
 

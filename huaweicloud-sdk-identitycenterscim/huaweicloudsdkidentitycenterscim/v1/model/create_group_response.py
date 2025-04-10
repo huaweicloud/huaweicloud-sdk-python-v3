@@ -36,7 +36,7 @@ class CreateGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, external_id=None, meta=None, schemas=None, display_name=None, members=None):
-        """CreateGroupResponse
+        r"""CreateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateGroupResponse.
+        r"""Gets the id of this CreateGroupResponse.
 
         用户组的全局唯一标识符（ID）
 
@@ -90,7 +90,7 @@ class CreateGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateGroupResponse.
+        r"""Sets the id of this CreateGroupResponse.
 
         用户组的全局唯一标识符（ID）
 
@@ -101,7 +101,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def external_id(self):
-        """Gets the external_id of this CreateGroupResponse.
+        r"""Gets the external_id of this CreateGroupResponse.
 
         外部标识符
 
@@ -112,7 +112,7 @@ class CreateGroupResponse(SdkResponse):
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this CreateGroupResponse.
+        r"""Sets the external_id of this CreateGroupResponse.
 
         外部标识符
 
@@ -123,7 +123,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this CreateGroupResponse.
+        r"""Gets the meta of this CreateGroupResponse.
 
         :return: The meta of this CreateGroupResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -132,7 +132,7 @@ class CreateGroupResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this CreateGroupResponse.
+        r"""Sets the meta of this CreateGroupResponse.
 
         :param meta: The meta of this CreateGroupResponse.
         :type meta: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -141,7 +141,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this CreateGroupResponse.
+        r"""Gets the schemas of this CreateGroupResponse.
 
         概要
 
@@ -152,7 +152,7 @@ class CreateGroupResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this CreateGroupResponse.
+        r"""Sets the schemas of this CreateGroupResponse.
 
         概要
 
@@ -163,7 +163,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateGroupResponse.
+        r"""Gets the display_name of this CreateGroupResponse.
 
         包含用户组显示名称的字符串
 
@@ -174,7 +174,7 @@ class CreateGroupResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateGroupResponse.
+        r"""Sets the display_name of this CreateGroupResponse.
 
         包含用户组显示名称的字符串
 
@@ -185,7 +185,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this CreateGroupResponse.
+        r"""Gets the members of this CreateGroupResponse.
 
         用户组中的成员对象列表
 
@@ -196,7 +196,7 @@ class CreateGroupResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this CreateGroupResponse.
+        r"""Sets the members of this CreateGroupResponse.
 
         用户组中的成员对象列表
 

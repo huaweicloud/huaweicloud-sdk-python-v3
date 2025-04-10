@@ -31,7 +31,7 @@ class RunAuthorizationActionRequestBody:
     }
 
     def __init__(self, user_name=None, grant_project_id=None, action=None, privileges=None):
-        """RunAuthorizationActionRequestBody
+        r"""RunAuthorizationActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RunAuthorizationActionRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RunAuthorizationActionRequestBody.
+        r"""Gets the user_name of this RunAuthorizationActionRequestBody.
 
         被赋权的用户名称，该用户将有权访问指定的DLI资源权限，被收回或者更新访问权限。
 
@@ -73,7 +73,7 @@ class RunAuthorizationActionRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RunAuthorizationActionRequestBody.
+        r"""Sets the user_name of this RunAuthorizationActionRequestBody.
 
         被赋权的用户名称，该用户将有权访问指定的DLI资源权限，被收回或者更新访问权限。
 
@@ -84,7 +84,7 @@ class RunAuthorizationActionRequestBody:
 
     @property
     def grant_project_id(self):
-        """Gets the grant_project_id of this RunAuthorizationActionRequestBody.
+        r"""Gets the grant_project_id of this RunAuthorizationActionRequestBody.
 
         被赋权的项目ID，数据赋权给其他项目后，该项目的管理员将 有权访问指定的DLI资源权限，被收回或者更新访问权限。
 
@@ -95,7 +95,7 @@ class RunAuthorizationActionRequestBody:
 
     @grant_project_id.setter
     def grant_project_id(self, grant_project_id):
-        """Sets the grant_project_id of this RunAuthorizationActionRequestBody.
+        r"""Sets the grant_project_id of this RunAuthorizationActionRequestBody.
 
         被赋权的项目ID，数据赋权给其他项目后，该项目的管理员将 有权访问指定的DLI资源权限，被收回或者更新访问权限。
 
@@ -106,7 +106,7 @@ class RunAuthorizationActionRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this RunAuthorizationActionRequestBody.
+        r"""Gets the action of this RunAuthorizationActionRequestBody.
 
         指定赋权或回收。值为：grant，revoke或update。  说明：当用户同时拥有grant和revoke权限的时候才有权限使用update操作。
 
@@ -117,7 +117,7 @@ class RunAuthorizationActionRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RunAuthorizationActionRequestBody.
+        r"""Sets the action of this RunAuthorizationActionRequestBody.
 
         指定赋权或回收。值为：grant，revoke或update。  说明：当用户同时拥有grant和revoke权限的时候才有权限使用update操作。
 
@@ -128,7 +128,7 @@ class RunAuthorizationActionRequestBody:
 
     @property
     def privileges(self):
-        """Gets the privileges of this RunAuthorizationActionRequestBody.
+        r"""Gets the privileges of this RunAuthorizationActionRequestBody.
 
         赋权信息。具体参数请参考Privilege参数。
 
@@ -139,7 +139,7 @@ class RunAuthorizationActionRequestBody:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this RunAuthorizationActionRequestBody.
+        r"""Sets the privileges of this RunAuthorizationActionRequestBody.
 
         赋权信息。具体参数请参考Privilege参数。
 

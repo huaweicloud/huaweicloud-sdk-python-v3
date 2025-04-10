@@ -39,7 +39,7 @@ class AddressItemDto:
     }
 
     def __init__(self, formatted=None, street_address=None, locality=None, region=None, postal_code=None, country=None, type=None, primary=None):
-        """AddressItemDto
+        r"""AddressItemDto
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AddressItemDto:
 
     @property
     def formatted(self):
-        """Gets the formatted of this AddressItemDto.
+        r"""Gets the formatted of this AddressItemDto.
 
         包含要显示的地址的格式化版本的字符串
 
@@ -103,7 +103,7 @@ class AddressItemDto:
 
     @formatted.setter
     def formatted(self, formatted):
-        """Sets the formatted of this AddressItemDto.
+        r"""Sets the formatted of this AddressItemDto.
 
         包含要显示的地址的格式化版本的字符串
 
@@ -114,7 +114,7 @@ class AddressItemDto:
 
     @property
     def street_address(self):
-        """Gets the street_address of this AddressItemDto.
+        r"""Gets the street_address of this AddressItemDto.
 
         街道
 
@@ -125,7 +125,7 @@ class AddressItemDto:
 
     @street_address.setter
     def street_address(self, street_address):
-        """Sets the street_address of this AddressItemDto.
+        r"""Sets the street_address of this AddressItemDto.
 
         街道
 
@@ -136,7 +136,7 @@ class AddressItemDto:
 
     @property
     def locality(self):
-        """Gets the locality of this AddressItemDto.
+        r"""Gets the locality of this AddressItemDto.
 
         地址位置
 
@@ -147,7 +147,7 @@ class AddressItemDto:
 
     @locality.setter
     def locality(self, locality):
-        """Sets the locality of this AddressItemDto.
+        r"""Sets the locality of this AddressItemDto.
 
         地址位置
 
@@ -158,7 +158,7 @@ class AddressItemDto:
 
     @property
     def region(self):
-        """Gets the region of this AddressItemDto.
+        r"""Gets the region of this AddressItemDto.
 
         区域
 
@@ -169,7 +169,7 @@ class AddressItemDto:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AddressItemDto.
+        r"""Sets the region of this AddressItemDto.
 
         区域
 
@@ -180,7 +180,7 @@ class AddressItemDto:
 
     @property
     def postal_code(self):
-        """Gets the postal_code of this AddressItemDto.
+        r"""Gets the postal_code of this AddressItemDto.
 
         邮政编码
 
@@ -191,7 +191,7 @@ class AddressItemDto:
 
     @postal_code.setter
     def postal_code(self, postal_code):
-        """Sets the postal_code of this AddressItemDto.
+        r"""Sets the postal_code of this AddressItemDto.
 
         邮政编码
 
@@ -202,7 +202,7 @@ class AddressItemDto:
 
     @property
     def country(self):
-        """Gets the country of this AddressItemDto.
+        r"""Gets the country of this AddressItemDto.
 
         国家或地区
 
@@ -213,7 +213,7 @@ class AddressItemDto:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this AddressItemDto.
+        r"""Sets the country of this AddressItemDto.
 
         国家或地区
 
@@ -224,7 +224,7 @@ class AddressItemDto:
 
     @property
     def type(self):
-        """Gets the type of this AddressItemDto.
+        r"""Gets the type of this AddressItemDto.
 
         表示地址类型的字符串
 
@@ -235,7 +235,7 @@ class AddressItemDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddressItemDto.
+        r"""Sets the type of this AddressItemDto.
 
         表示地址类型的字符串
 
@@ -246,7 +246,7 @@ class AddressItemDto:
 
     @property
     def primary(self):
-        """Gets the primary of this AddressItemDto.
+        r"""Gets the primary of this AddressItemDto.
 
         一个布尔值，表示这是否是用户的主地址
 
@@ -257,7 +257,7 @@ class AddressItemDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this AddressItemDto.
+        r"""Sets the primary of this AddressItemDto.
 
         一个布尔值，表示这是否是用户的主地址
 

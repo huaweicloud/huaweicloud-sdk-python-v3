@@ -49,7 +49,7 @@ class ListWorkflowsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, order=None, sortby=None, enabled=None, last_version=None, name=None, description=None, dataclass_id=None, dataclass_name=None, aop_type=None):
-        """ListWorkflowsRequest
+        r"""ListWorkflowsRequest
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class ListWorkflowsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListWorkflowsRequest.
+        r"""Gets the project_id of this ListWorkflowsRequest.
 
         项目id
 
@@ -136,7 +136,7 @@ class ListWorkflowsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListWorkflowsRequest.
+        r"""Sets the project_id of this ListWorkflowsRequest.
 
         项目id
 
@@ -147,7 +147,7 @@ class ListWorkflowsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListWorkflowsRequest.
+        r"""Gets the workspace_id of this ListWorkflowsRequest.
 
         工作空间id
 
@@ -158,7 +158,7 @@ class ListWorkflowsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListWorkflowsRequest.
+        r"""Sets the workspace_id of this ListWorkflowsRequest.
 
         工作空间id
 
@@ -169,7 +169,7 @@ class ListWorkflowsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkflowsRequest.
+        r"""Gets the offset of this ListWorkflowsRequest.
 
         偏移量
 
@@ -180,7 +180,7 @@ class ListWorkflowsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkflowsRequest.
+        r"""Sets the offset of this ListWorkflowsRequest.
 
         偏移量
 
@@ -191,7 +191,7 @@ class ListWorkflowsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkflowsRequest.
+        r"""Gets the limit of this ListWorkflowsRequest.
 
         数据量
 
@@ -202,7 +202,7 @@ class ListWorkflowsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkflowsRequest.
+        r"""Sets the limit of this ListWorkflowsRequest.
 
         数据量
 
@@ -213,7 +213,7 @@ class ListWorkflowsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListWorkflowsRequest.
+        r"""Gets the order of this ListWorkflowsRequest.
 
         排序顺序，asc：升序，desc：降序
 
@@ -224,7 +224,7 @@ class ListWorkflowsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListWorkflowsRequest.
+        r"""Sets the order of this ListWorkflowsRequest.
 
         排序顺序，asc：升序，desc：降序
 
@@ -235,7 +235,7 @@ class ListWorkflowsRequest:
 
     @property
     def sortby(self):
-        """Gets the sortby of this ListWorkflowsRequest.
+        r"""Gets the sortby of this ListWorkflowsRequest.
 
         排序字段，create_time：创建时间，category：类型分类名称
 
@@ -246,7 +246,7 @@ class ListWorkflowsRequest:
 
     @sortby.setter
     def sortby(self, sortby):
-        """Sets the sortby of this ListWorkflowsRequest.
+        r"""Sets the sortby of this ListWorkflowsRequest.
 
         排序字段，create_time：创建时间，category：类型分类名称
 
@@ -257,7 +257,7 @@ class ListWorkflowsRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListWorkflowsRequest.
+        r"""Gets the enabled of this ListWorkflowsRequest.
 
         是否启用
 
@@ -268,7 +268,7 @@ class ListWorkflowsRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListWorkflowsRequest.
+        r"""Sets the enabled of this ListWorkflowsRequest.
 
         是否启用
 
@@ -279,7 +279,7 @@ class ListWorkflowsRequest:
 
     @property
     def last_version(self):
-        """Gets the last_version of this ListWorkflowsRequest.
+        r"""Gets the last_version of this ListWorkflowsRequest.
 
         最新版本号
 
@@ -290,7 +290,7 @@ class ListWorkflowsRequest:
 
     @last_version.setter
     def last_version(self, last_version):
-        """Sets the last_version of this ListWorkflowsRequest.
+        r"""Sets the last_version of this ListWorkflowsRequest.
 
         最新版本号
 
@@ -301,7 +301,7 @@ class ListWorkflowsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListWorkflowsRequest.
+        r"""Gets the name of this ListWorkflowsRequest.
 
         流程名称
 
@@ -312,7 +312,7 @@ class ListWorkflowsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListWorkflowsRequest.
+        r"""Sets the name of this ListWorkflowsRequest.
 
         流程名称
 
@@ -323,7 +323,7 @@ class ListWorkflowsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListWorkflowsRequest.
+        r"""Gets the description of this ListWorkflowsRequest.
 
         流程描述
 
@@ -334,7 +334,7 @@ class ListWorkflowsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListWorkflowsRequest.
+        r"""Sets the description of this ListWorkflowsRequest.
 
         流程描述
 
@@ -345,7 +345,7 @@ class ListWorkflowsRequest:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this ListWorkflowsRequest.
+        r"""Gets the dataclass_id of this ListWorkflowsRequest.
 
         数据类ID
 
@@ -356,7 +356,7 @@ class ListWorkflowsRequest:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this ListWorkflowsRequest.
+        r"""Sets the dataclass_id of this ListWorkflowsRequest.
 
         数据类ID
 
@@ -367,7 +367,7 @@ class ListWorkflowsRequest:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this ListWorkflowsRequest.
+        r"""Gets the dataclass_name of this ListWorkflowsRequest.
 
         数据类名称
 
@@ -378,7 +378,7 @@ class ListWorkflowsRequest:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this ListWorkflowsRequest.
+        r"""Sets the dataclass_name of this ListWorkflowsRequest.
 
         数据类名称
 
@@ -389,7 +389,7 @@ class ListWorkflowsRequest:
 
     @property
     def aop_type(self):
-        """Gets the aop_type of this ListWorkflowsRequest.
+        r"""Gets the aop_type of this ListWorkflowsRequest.
 
         流程类型
 
@@ -400,7 +400,7 @@ class ListWorkflowsRequest:
 
     @aop_type.setter
     def aop_type(self, aop_type):
-        """Sets the aop_type of this ListWorkflowsRequest.
+        r"""Sets the aop_type of this ListWorkflowsRequest.
 
         流程类型
 

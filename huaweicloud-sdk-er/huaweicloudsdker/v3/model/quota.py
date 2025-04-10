@@ -31,7 +31,7 @@ class Quota:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """Quota
+        r"""Quota
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Quota:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this Quota.
+        r"""Gets the quota_key of this Quota.
 
         配额类型
 
@@ -75,7 +75,7 @@ class Quota:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this Quota.
+        r"""Sets the quota_key of this Quota.
 
         配额类型
 
@@ -86,7 +86,7 @@ class Quota:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this Quota.
+        r"""Gets the quota_limit of this Quota.
 
         可用的配额数，-1 代表不受限制
 
@@ -97,7 +97,7 @@ class Quota:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this Quota.
+        r"""Sets the quota_limit of this Quota.
 
         可用的配额数，-1 代表不受限制
 
@@ -108,7 +108,7 @@ class Quota:
 
     @property
     def used(self):
-        """Gets the used of this Quota.
+        r"""Gets the used of this Quota.
 
         已使用的配额数量
 
@@ -119,7 +119,7 @@ class Quota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Quota.
+        r"""Sets the used of this Quota.
 
         已使用的配额数量
 
@@ -130,7 +130,7 @@ class Quota:
 
     @property
     def unit(self):
-        """Gets the unit of this Quota.
+        r"""Gets the unit of this Quota.
 
         用量单位
 
@@ -141,7 +141,7 @@ class Quota:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Quota.
+        r"""Sets the unit of this Quota.
 
         用量单位
 

@@ -25,7 +25,7 @@ class ShowIegInfoRequest:
     }
 
     def __init__(self, ieg_id=None):
-        """ShowIegInfoRequest
+        r"""ShowIegInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowIegInfoRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ShowIegInfoRequest.
+        r"""Gets the ieg_id of this ShowIegInfoRequest.
 
         智能企业网关ID
 
@@ -53,7 +53,7 @@ class ShowIegInfoRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ShowIegInfoRequest.
+        r"""Sets the ieg_id of this ShowIegInfoRequest.
 
         智能企业网关ID
 

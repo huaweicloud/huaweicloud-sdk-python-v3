@@ -25,7 +25,7 @@ class CreateAddonInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAddonInstanceRequest
+        r"""CreateAddonInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAddonInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAddonInstanceRequest.
+        r"""Gets the body of this CreateAddonInstanceRequest.
 
         :return: The body of this CreateAddonInstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceRequest`
@@ -52,7 +52,7 @@ class CreateAddonInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAddonInstanceRequest.
+        r"""Sets the body of this CreateAddonInstanceRequest.
 
         :param body: The body of this CreateAddonInstanceRequest.
         :type body: :class:`huaweicloudsdkcce.v3.InstanceRequest`

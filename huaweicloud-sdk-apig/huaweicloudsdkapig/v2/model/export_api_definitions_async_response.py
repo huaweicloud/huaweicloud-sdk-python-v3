@@ -26,7 +26,7 @@ class ExportApiDefinitionsAsyncResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """ExportApiDefinitionsAsyncResponse
+        r"""ExportApiDefinitionsAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExportApiDefinitionsAsyncResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExportApiDefinitionsAsyncResponse.
+        r"""Gets the task_id of this ExportApiDefinitionsAsyncResponse.
 
         任务id
 
@@ -55,7 +55,7 @@ class ExportApiDefinitionsAsyncResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExportApiDefinitionsAsyncResponse.
+        r"""Sets the task_id of this ExportApiDefinitionsAsyncResponse.
 
         任务id
 

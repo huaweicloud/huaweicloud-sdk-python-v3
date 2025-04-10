@@ -35,7 +35,7 @@ class ReportInfo:
     }
 
     def __init__(self, brokens=None, details=None, outline=None, rtproportion=None, task_info=None, resp_time_range=None):
-        """ReportInfo
+        r"""ReportInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ReportInfo:
 
     @property
     def brokens(self):
-        """Gets the brokens of this ReportInfo.
+        r"""Gets the brokens of this ReportInfo.
 
         :return: The brokens of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
@@ -87,7 +87,7 @@ class ReportInfo:
 
     @brokens.setter
     def brokens(self, brokens):
-        """Sets the brokens of this ReportInfo.
+        r"""Sets the brokens of this ReportInfo.
 
         :param brokens: The brokens of this ReportInfo.
         :type brokens: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
@@ -96,7 +96,7 @@ class ReportInfo:
 
     @property
     def details(self):
-        """Gets the details of this ReportInfo.
+        r"""Gets the details of this ReportInfo.
 
         :return: The details of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
@@ -105,7 +105,7 @@ class ReportInfo:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this ReportInfo.
+        r"""Sets the details of this ReportInfo.
 
         :param details: The details of this ReportInfo.
         :type details: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
@@ -114,7 +114,7 @@ class ReportInfo:
 
     @property
     def outline(self):
-        """Gets the outline of this ReportInfo.
+        r"""Gets the outline of this ReportInfo.
 
         :return: The outline of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
@@ -123,7 +123,7 @@ class ReportInfo:
 
     @outline.setter
     def outline(self, outline):
-        """Sets the outline of this ReportInfo.
+        r"""Sets the outline of this ReportInfo.
 
         :param outline: The outline of this ReportInfo.
         :type outline: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
@@ -132,7 +132,7 @@ class ReportInfo:
 
     @property
     def rtproportion(self):
-        """Gets the rtproportion of this ReportInfo.
+        r"""Gets the rtproportion of this ReportInfo.
 
         响应时间分布
 
@@ -143,7 +143,7 @@ class ReportInfo:
 
     @rtproportion.setter
     def rtproportion(self, rtproportion):
-        """Sets the rtproportion of this ReportInfo.
+        r"""Sets the rtproportion of this ReportInfo.
 
         响应时间分布
 
@@ -154,7 +154,7 @@ class ReportInfo:
 
     @property
     def task_info(self):
-        """Gets the task_info of this ReportInfo.
+        r"""Gets the task_info of this ReportInfo.
 
         :return: The task_info of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
@@ -163,7 +163,7 @@ class ReportInfo:
 
     @task_info.setter
     def task_info(self, task_info):
-        """Sets the task_info of this ReportInfo.
+        r"""Sets the task_info of this ReportInfo.
 
         :param task_info: The task_info of this ReportInfo.
         :type task_info: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
@@ -172,7 +172,7 @@ class ReportInfo:
 
     @property
     def resp_time_range(self):
-        """Gets the resp_time_range of this ReportInfo.
+        r"""Gets the resp_time_range of this ReportInfo.
 
         响应时间分布
 
@@ -183,7 +183,7 @@ class ReportInfo:
 
     @resp_time_range.setter
     def resp_time_range(self, resp_time_range):
-        """Sets the resp_time_range of this ReportInfo.
+        r"""Sets the resp_time_range of this ReportInfo.
 
         响应时间分布
 

@@ -32,7 +32,7 @@ class CreateCredentialResponse(SdkResponse):
     }
 
     def __init__(self, key=None, create_time=None, description=None, status=None):
-        """CreateCredentialResponse
+        r"""CreateCredentialResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @property
     def key(self):
-        """Gets the key of this CreateCredentialResponse.
+        r"""Gets the key of this CreateCredentialResponse.
 
         凭证
 
@@ -76,7 +76,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateCredentialResponse.
+        r"""Sets the key of this CreateCredentialResponse.
 
         凭证
 
@@ -87,7 +87,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateCredentialResponse.
+        r"""Gets the create_time of this CreateCredentialResponse.
 
         创建凭证的时间UTC时间格式：YYYY-mm-dd'T'HH:mm:ss.SSSSSS'Z'，e.g. \"2020-01-08T06:26:08.123059Z\"
 
@@ -98,7 +98,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateCredentialResponse.
+        r"""Sets the create_time of this CreateCredentialResponse.
 
         创建凭证的时间UTC时间格式：YYYY-mm-dd'T'HH:mm:ss.SSSSSS'Z'，e.g. \"2020-01-08T06:26:08.123059Z\"
 
@@ -109,7 +109,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateCredentialResponse.
+        r"""Gets the description of this CreateCredentialResponse.
 
         凭证的描述信息。
 
@@ -120,7 +120,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCredentialResponse.
+        r"""Sets the description of this CreateCredentialResponse.
 
         凭证的描述信息。
 
@@ -131,7 +131,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateCredentialResponse.
+        r"""Gets the status of this CreateCredentialResponse.
 
         凭证状态“ACTIVE”
 
@@ -142,7 +142,7 @@ class CreateCredentialResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateCredentialResponse.
+        r"""Sets the status of this CreateCredentialResponse.
 
         凭证状态“ACTIVE”
 

@@ -27,7 +27,7 @@ class EventExInfo:
     }
 
     def __init__(self, participants=None, congestion_info=None):
-        """EventExInfo
+        r"""EventExInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EventExInfo:
 
     @property
     def participants(self):
-        """Gets the participants of this EventExInfo.
+        r"""Gets the participants of this EventExInfo.
 
         **参数说明**：识别出交通事件时所对应的交通参与者。
 
@@ -61,7 +61,7 @@ class EventExInfo:
 
     @participants.setter
     def participants(self, participants):
-        """Sets the participants of this EventExInfo.
+        r"""Sets the participants of this EventExInfo.
 
         **参数说明**：识别出交通事件时所对应的交通参与者。
 
@@ -72,7 +72,7 @@ class EventExInfo:
 
     @property
     def congestion_info(self):
-        """Gets the congestion_info of this EventExInfo.
+        r"""Gets the congestion_info of this EventExInfo.
 
         :return: The congestion_info of this EventExInfo.
         :rtype: :class:`huaweicloudsdkdris.v1.CongestionInfo`
@@ -81,7 +81,7 @@ class EventExInfo:
 
     @congestion_info.setter
     def congestion_info(self, congestion_info):
-        """Sets the congestion_info of this EventExInfo.
+        r"""Sets the congestion_info of this EventExInfo.
 
         :param congestion_info: The congestion_info of this EventExInfo.
         :type congestion_info: :class:`huaweicloudsdkdris.v1.CongestionInfo`

@@ -35,7 +35,7 @@ class ListAppTemplatesResult:
     }
 
     def __init__(self, id=None, name=None, runtime=None, category=None, description=None, image=None):
-        """ListAppTemplatesResult
+        r"""ListAppTemplatesResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListAppTemplatesResult:
 
     @property
     def id(self):
-        """Gets the id of this ListAppTemplatesResult.
+        r"""Gets the id of this ListAppTemplatesResult.
 
         模板id
 
@@ -89,7 +89,7 @@ class ListAppTemplatesResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAppTemplatesResult.
+        r"""Sets the id of this ListAppTemplatesResult.
 
         模板id
 
@@ -100,7 +100,7 @@ class ListAppTemplatesResult:
 
     @property
     def name(self):
-        """Gets the name of this ListAppTemplatesResult.
+        r"""Gets the name of this ListAppTemplatesResult.
 
         模板名称
 
@@ -111,7 +111,7 @@ class ListAppTemplatesResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppTemplatesResult.
+        r"""Sets the name of this ListAppTemplatesResult.
 
         模板名称
 
@@ -122,7 +122,7 @@ class ListAppTemplatesResult:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ListAppTemplatesResult.
+        r"""Gets the runtime of this ListAppTemplatesResult.
 
         模板执行运行时
 
@@ -133,7 +133,7 @@ class ListAppTemplatesResult:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ListAppTemplatesResult.
+        r"""Sets the runtime of this ListAppTemplatesResult.
 
         模板执行运行时
 
@@ -144,7 +144,7 @@ class ListAppTemplatesResult:
 
     @property
     def category(self):
-        """Gets the category of this ListAppTemplatesResult.
+        r"""Gets the category of this ListAppTemplatesResult.
 
         模板使用场景
 
@@ -155,7 +155,7 @@ class ListAppTemplatesResult:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListAppTemplatesResult.
+        r"""Sets the category of this ListAppTemplatesResult.
 
         模板使用场景
 
@@ -166,7 +166,7 @@ class ListAppTemplatesResult:
 
     @property
     def description(self):
-        """Gets the description of this ListAppTemplatesResult.
+        r"""Gets the description of this ListAppTemplatesResult.
 
         模板描述
 
@@ -177,7 +177,7 @@ class ListAppTemplatesResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListAppTemplatesResult.
+        r"""Sets the description of this ListAppTemplatesResult.
 
         模板描述
 
@@ -188,7 +188,7 @@ class ListAppTemplatesResult:
 
     @property
     def image(self):
-        """Gets the image of this ListAppTemplatesResult.
+        r"""Gets the image of this ListAppTemplatesResult.
 
         模板镜像文件（base64编码）
 
@@ -199,7 +199,7 @@ class ListAppTemplatesResult:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ListAppTemplatesResult.
+        r"""Sets the image of this ListAppTemplatesResult.
 
         模板镜像文件（base64编码）
 

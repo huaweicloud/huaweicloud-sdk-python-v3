@@ -28,7 +28,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, total_count=None):
-        """ListPartnerAdjustRecordsResponse
+        r"""ListPartnerAdjustRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListPartnerAdjustRecordsResponse.
+        r"""Gets the records of this ListPartnerAdjustRecordsResponse.
 
         调账记录列表。 具体请参见表2。
 
@@ -62,7 +62,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListPartnerAdjustRecordsResponse.
+        r"""Sets the records of this ListPartnerAdjustRecordsResponse.
 
         调账记录列表。 具体请参见表2。
 
@@ -73,7 +73,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPartnerAdjustRecordsResponse.
+        r"""Gets the total_count of this ListPartnerAdjustRecordsResponse.
 
         返回总条数。
 
@@ -84,7 +84,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPartnerAdjustRecordsResponse.
+        r"""Sets the total_count of this ListPartnerAdjustRecordsResponse.
 
         返回总条数。
 

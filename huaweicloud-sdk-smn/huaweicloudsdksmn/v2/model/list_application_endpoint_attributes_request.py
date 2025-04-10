@@ -25,7 +25,7 @@ class ListApplicationEndpointAttributesRequest:
     }
 
     def __init__(self, endpoint_urn=None):
-        """ListApplicationEndpointAttributesRequest
+        r"""ListApplicationEndpointAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListApplicationEndpointAttributesRequest:
 
     @property
     def endpoint_urn(self):
-        """Gets the endpoint_urn of this ListApplicationEndpointAttributesRequest.
+        r"""Gets the endpoint_urn of this ListApplicationEndpointAttributesRequest.
 
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class ListApplicationEndpointAttributesRequest:
 
     @endpoint_urn.setter
     def endpoint_urn(self, endpoint_urn):
-        """Sets the endpoint_urn of this ListApplicationEndpointAttributesRequest.
+        r"""Sets the endpoint_urn of this ListApplicationEndpointAttributesRequest.
 
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识。
 

@@ -23,7 +23,7 @@ class ListTerminalsBindingDesktopsConfigRequest:
     }
 
     def __init__(self):
-        """ListTerminalsBindingDesktopsConfigRequest
+        r"""ListTerminalsBindingDesktopsConfigRequest
 
         The model defined in huaweicloud sdk
 

@@ -35,7 +35,7 @@ class AdditionalParams:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, security_group_id=None, smn_topic_urn=None, ciphering_algorithm=None, port_info=None):
-        """AdditionalParams
+        r"""AdditionalParams
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class AdditionalParams:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AdditionalParams.
+        r"""Gets the vpc_id of this AdditionalParams.
 
         **参数说明**：企业版实例的VPCID 
 
@@ -85,7 +85,7 @@ class AdditionalParams:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AdditionalParams.
+        r"""Sets the vpc_id of this AdditionalParams.
 
         **参数说明**：企业版实例的VPCID 
 
@@ -96,7 +96,7 @@ class AdditionalParams:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AdditionalParams.
+        r"""Gets the subnet_id of this AdditionalParams.
 
         **参数说明**：企业版实例的子网ID 
 
@@ -107,7 +107,7 @@ class AdditionalParams:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AdditionalParams.
+        r"""Sets the subnet_id of this AdditionalParams.
 
         **参数说明**：企业版实例的子网ID 
 
@@ -118,7 +118,7 @@ class AdditionalParams:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this AdditionalParams.
+        r"""Gets the security_group_id of this AdditionalParams.
 
         **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping） 
 
@@ -129,7 +129,7 @@ class AdditionalParams:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this AdditionalParams.
+        r"""Sets the security_group_id of this AdditionalParams.
 
         **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping） 
 
@@ -140,7 +140,7 @@ class AdditionalParams:
 
     @property
     def smn_topic_urn(self):
-        """Gets the smn_topic_urn of this AdditionalParams.
+        r"""Gets the smn_topic_urn of this AdditionalParams.
 
         **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知 
 
@@ -151,7 +151,7 @@ class AdditionalParams:
 
     @smn_topic_urn.setter
     def smn_topic_urn(self, smn_topic_urn):
-        """Sets the smn_topic_urn of this AdditionalParams.
+        r"""Sets the smn_topic_urn of this AdditionalParams.
 
         **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知 
 
@@ -162,7 +162,7 @@ class AdditionalParams:
 
     @property
     def ciphering_algorithm(self):
-        """Gets the ciphering_algorithm of this AdditionalParams.
+        r"""Gets the ciphering_algorithm of this AdditionalParams.
 
         **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
@@ -173,7 +173,7 @@ class AdditionalParams:
 
     @ciphering_algorithm.setter
     def ciphering_algorithm(self, ciphering_algorithm):
-        """Sets the ciphering_algorithm of this AdditionalParams.
+        r"""Sets the ciphering_algorithm of this AdditionalParams.
 
         **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
@@ -184,7 +184,7 @@ class AdditionalParams:
 
     @property
     def port_info(self):
-        """Gets the port_info of this AdditionalParams.
+        r"""Gets the port_info of this AdditionalParams.
 
         :return: The port_info of this AdditionalParams.
         :rtype: :class:`huaweicloudsdkiotdm.v5.Port`
@@ -193,7 +193,7 @@ class AdditionalParams:
 
     @port_info.setter
     def port_info(self, port_info):
-        """Sets the port_info of this AdditionalParams.
+        r"""Sets the port_info of this AdditionalParams.
 
         :param port_info: The port_info of this AdditionalParams.
         :type port_info: :class:`huaweicloudsdkiotdm.v5.Port`

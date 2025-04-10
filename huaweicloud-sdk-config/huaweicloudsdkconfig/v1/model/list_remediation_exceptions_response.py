@@ -28,7 +28,7 @@ class ListRemediationExceptionsResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListRemediationExceptionsResponse
+        r"""ListRemediationExceptionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRemediationExceptionsResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListRemediationExceptionsResponse.
+        r"""Gets the value of this ListRemediationExceptionsResponse.
 
         合规规则修正例外的详情。
 
@@ -62,7 +62,7 @@ class ListRemediationExceptionsResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListRemediationExceptionsResponse.
+        r"""Sets the value of this ListRemediationExceptionsResponse.
 
         合规规则修正例外的详情。
 
@@ -73,7 +73,7 @@ class ListRemediationExceptionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListRemediationExceptionsResponse.
+        r"""Gets the page_info of this ListRemediationExceptionsResponse.
 
         :return: The page_info of this ListRemediationExceptionsResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListRemediationExceptionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListRemediationExceptionsResponse.
+        r"""Sets the page_info of this ListRemediationExceptionsResponse.
 
         :param page_info: The page_info of this ListRemediationExceptionsResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

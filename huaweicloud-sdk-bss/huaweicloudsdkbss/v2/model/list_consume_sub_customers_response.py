@@ -28,7 +28,7 @@ class ListConsumeSubCustomersResponse(SdkResponse):
     }
 
     def __init__(self, sub_customers=None, total_count=None):
-        """ListConsumeSubCustomersResponse
+        r"""ListConsumeSubCustomersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConsumeSubCustomersResponse(SdkResponse):
 
     @property
     def sub_customers(self):
-        """Gets the sub_customers of this ListConsumeSubCustomersResponse.
+        r"""Gets the sub_customers of this ListConsumeSubCustomersResponse.
 
         子客户列表。 具体请参见表SubCustomerInfo。
 
@@ -62,7 +62,7 @@ class ListConsumeSubCustomersResponse(SdkResponse):
 
     @sub_customers.setter
     def sub_customers(self, sub_customers):
-        """Sets the sub_customers of this ListConsumeSubCustomersResponse.
+        r"""Sets the sub_customers of this ListConsumeSubCustomersResponse.
 
         子客户列表。 具体请参见表SubCustomerInfo。
 
@@ -73,7 +73,7 @@ class ListConsumeSubCustomersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListConsumeSubCustomersResponse.
+        r"""Gets the total_count of this ListConsumeSubCustomersResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -84,7 +84,7 @@ class ListConsumeSubCustomersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListConsumeSubCustomersResponse.
+        r"""Sets the total_count of this ListConsumeSubCustomersResponse.
 
         结果集数量，只有成功才返回这个参数。
 

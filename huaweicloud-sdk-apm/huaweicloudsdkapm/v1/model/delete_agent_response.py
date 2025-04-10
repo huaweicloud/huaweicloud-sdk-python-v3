@@ -26,7 +26,7 @@ class DeleteAgentResponse(SdkResponse):
     }
 
     def __init__(self, delete_status=None):
-        """DeleteAgentResponse
+        r"""DeleteAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAgentResponse(SdkResponse):
 
     @property
     def delete_status(self):
-        """Gets the delete_status of this DeleteAgentResponse.
+        r"""Gets the delete_status of this DeleteAgentResponse.
 
         删除状态。
 
@@ -55,7 +55,7 @@ class DeleteAgentResponse(SdkResponse):
 
     @delete_status.setter
     def delete_status(self, delete_status):
-        """Sets the delete_status of this DeleteAgentResponse.
+        r"""Sets the delete_status of this DeleteAgentResponse.
 
         删除状态。
 

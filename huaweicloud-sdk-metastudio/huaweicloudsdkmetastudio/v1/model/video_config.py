@@ -49,7 +49,7 @@ class VideoConfig:
     }
 
     def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None, is_end_at_first_frame=None, output_external_url=None):
-        """VideoConfig
+        r"""VideoConfig
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class VideoConfig:
 
     @property
     def clip_mode(self):
-        """Gets the clip_mode of this VideoConfig.
+        r"""Gets the clip_mode of this VideoConfig.
 
         **参数解释**： 输出视频的剪辑方式。 **约束限制**： 不涉及。 **取值范围**： * RESIZE：视频缩放。 * CROP：视频裁剪。
 
@@ -135,7 +135,7 @@ class VideoConfig:
 
     @clip_mode.setter
     def clip_mode(self, clip_mode):
-        """Sets the clip_mode of this VideoConfig.
+        r"""Sets the clip_mode of this VideoConfig.
 
         **参数解释**： 输出视频的剪辑方式。 **约束限制**： 不涉及。 **取值范围**： * RESIZE：视频缩放。 * CROP：视频裁剪。
 
@@ -146,7 +146,7 @@ class VideoConfig:
 
     @property
     def codec(self):
-        """Gets the codec of this VideoConfig.
+        r"""Gets the codec of this VideoConfig.
 
         **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
 
@@ -157,7 +157,7 @@ class VideoConfig:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this VideoConfig.
+        r"""Sets the codec of this VideoConfig.
 
         **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
 
@@ -168,7 +168,7 @@ class VideoConfig:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoConfig.
+        r"""Gets the bitrate of this VideoConfig.
 
         **参数解释**： 输出平均码率。单位：kbps。 **约束限制**： * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 * 分身数字人直播码率范围[1000, 8000]。  **默认取值**： 不涉及
 
@@ -179,7 +179,7 @@ class VideoConfig:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoConfig.
+        r"""Sets the bitrate of this VideoConfig.
 
         **参数解释**： 输出平均码率。单位：kbps。 **约束限制**： * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 * 分身数字人直播码率范围[1000, 8000]。  **默认取值**： 不涉及
 
@@ -190,7 +190,7 @@ class VideoConfig:
 
     @property
     def width(self):
-        """Gets the width of this VideoConfig.
+        r"""Gets the width of this VideoConfig.
 
         **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
@@ -201,7 +201,7 @@ class VideoConfig:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoConfig.
+        r"""Sets the width of this VideoConfig.
 
         **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
@@ -212,7 +212,7 @@ class VideoConfig:
 
     @property
     def height(self):
-        """Gets the height of this VideoConfig.
+        r"""Gets the height of this VideoConfig.
 
         **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
@@ -223,7 +223,7 @@ class VideoConfig:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoConfig.
+        r"""Sets the height of this VideoConfig.
 
         **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
@@ -234,7 +234,7 @@ class VideoConfig:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoConfig.
+        r"""Gets the frame_rate of this VideoConfig.
 
         **参数解释**： 帧率。单位：FPS。 **约束限制**： 分身数字人视频固定25FPS。
 
@@ -245,7 +245,7 @@ class VideoConfig:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoConfig.
+        r"""Sets the frame_rate of this VideoConfig.
 
         **参数解释**： 帧率。单位：FPS。 **约束限制**： 分身数字人视频固定25FPS。
 
@@ -256,7 +256,7 @@ class VideoConfig:
 
     @property
     def is_subtitle_enable(self):
-        """Gets the is_subtitle_enable of this VideoConfig.
+        r"""Gets the is_subtitle_enable of this VideoConfig.
 
         **参数解释**： 输出的视频是否带字幕。 **约束限制**： 分身数字人直播暂时不支持字幕。  **取值范围**： * true: 打开字幕 * false: 关闭字幕
 
@@ -267,7 +267,7 @@ class VideoConfig:
 
     @is_subtitle_enable.setter
     def is_subtitle_enable(self, is_subtitle_enable):
-        """Sets the is_subtitle_enable of this VideoConfig.
+        r"""Sets the is_subtitle_enable of this VideoConfig.
 
         **参数解释**： 输出的视频是否带字幕。 **约束限制**： 分身数字人直播暂时不支持字幕。  **取值范围**： * true: 打开字幕 * false: 关闭字幕
 
@@ -278,7 +278,7 @@ class VideoConfig:
 
     @property
     def subtitle_config(self):
-        """Gets the subtitle_config of this VideoConfig.
+        r"""Gets the subtitle_config of this VideoConfig.
 
         :return: The subtitle_config of this VideoConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SubtitleConfig`
@@ -287,7 +287,7 @@ class VideoConfig:
 
     @subtitle_config.setter
     def subtitle_config(self, subtitle_config):
-        """Sets the subtitle_config of this VideoConfig.
+        r"""Sets the subtitle_config of this VideoConfig.
 
         :param subtitle_config: The subtitle_config of this VideoConfig.
         :type subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SubtitleConfig`
@@ -296,7 +296,7 @@ class VideoConfig:
 
     @property
     def dx(self):
-        """Gets the dx of this VideoConfig.
+        r"""Gets the dx of this VideoConfig.
 
         **参数解释**： 裁剪视频左上角像素点横坐标。 > 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dx最小值是0，最大值是1920。  **约束限制**： clip_mode= CROP时生效。 **默认取值**： 不涉及
 
@@ -307,7 +307,7 @@ class VideoConfig:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this VideoConfig.
+        r"""Sets the dx of this VideoConfig.
 
         **参数解释**： 裁剪视频左上角像素点横坐标。 > 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dx最小值是0，最大值是1920。  **约束限制**： clip_mode= CROP时生效。 **默认取值**： 不涉及
 
@@ -318,7 +318,7 @@ class VideoConfig:
 
     @property
     def dy(self):
-        """Gets the dy of this VideoConfig.
+        r"""Gets the dy of this VideoConfig.
 
         **参数解释**： 裁剪视频左上角像素点纵坐标。 > 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dy最小值是0，最大值是1080  **约束限制**： clip_mode= CROP时生效。 **默认取值**： 不涉及
 
@@ -329,7 +329,7 @@ class VideoConfig:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this VideoConfig.
+        r"""Sets the dy of this VideoConfig.
 
         **参数解释**： 裁剪视频左上角像素点纵坐标。 > 以模特分辨率为画布大小，比如1920*1080分辨率的模特，dy最小值是0，最大值是1080  **约束限制**： clip_mode= CROP时生效。 **默认取值**： 不涉及
 
@@ -340,7 +340,7 @@ class VideoConfig:
 
     @property
     def is_enable_super_resolution(self):
-        """Gets the is_enable_super_resolution of this VideoConfig.
+        r"""Gets the is_enable_super_resolution of this VideoConfig.
 
         **参数解释**： 视频是否开启超分。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
 
@@ -351,7 +351,7 @@ class VideoConfig:
 
     @is_enable_super_resolution.setter
     def is_enable_super_resolution(self, is_enable_super_resolution):
-        """Sets the is_enable_super_resolution of this VideoConfig.
+        r"""Sets the is_enable_super_resolution of this VideoConfig.
 
         **参数解释**： 视频是否开启超分。 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
 
@@ -362,7 +362,7 @@ class VideoConfig:
 
     @property
     def is_end_at_first_frame(self):
-        """Gets the is_end_at_first_frame of this VideoConfig.
+        r"""Gets the is_end_at_first_frame of this VideoConfig.
 
         **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持，当视频制作时插入动作标签后此设置将失效。 **取值范围** * true: 开启 * false: 不开启
 
@@ -373,7 +373,7 @@ class VideoConfig:
 
     @is_end_at_first_frame.setter
     def is_end_at_first_frame(self, is_end_at_first_frame):
-        """Sets the is_end_at_first_frame of this VideoConfig.
+        r"""Sets the is_end_at_first_frame of this VideoConfig.
 
         **参数解释**： 视频结束帧是否跟起始帧相同。需要多个数字人视频无缝拼接时设置成true。 **约束限制**： 仅分身数字人视频制作支持，当视频制作时插入动作标签后此设置将失效。 **取值范围** * true: 开启 * false: 不开启
 
@@ -384,7 +384,7 @@ class VideoConfig:
 
     @property
     def output_external_url(self):
-        """Gets the output_external_url of this VideoConfig.
+        r"""Gets the output_external_url of this VideoConfig.
 
         视频文件上传的外部URL。  > * 需要先申请开通白名单后，才允许将视频上传到外部URL。
 
@@ -395,7 +395,7 @@ class VideoConfig:
 
     @output_external_url.setter
     def output_external_url(self, output_external_url):
-        """Sets the output_external_url of this VideoConfig.
+        r"""Sets the output_external_url of this VideoConfig.
 
         视频文件上传的外部URL。  > * 需要先申请开通白名单后，才允许将视频上传到外部URL。
 

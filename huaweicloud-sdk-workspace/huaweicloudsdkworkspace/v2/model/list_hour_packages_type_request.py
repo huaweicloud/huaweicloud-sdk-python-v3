@@ -27,7 +27,7 @@ class ListHourPackagesTypeRequest:
     }
 
     def __init__(self, desktop_resource_spec_code=None, resource_spec_code=None):
-        """ListHourPackagesTypeRequest
+        r"""ListHourPackagesTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListHourPackagesTypeRequest:
 
     @property
     def desktop_resource_spec_code(self):
-        """Gets the desktop_resource_spec_code of this ListHourPackagesTypeRequest.
+        r"""Gets the desktop_resource_spec_code of this ListHourPackagesTypeRequest.
 
         小时包对应的按需桌面的资源规格编码。
 
@@ -61,7 +61,7 @@ class ListHourPackagesTypeRequest:
 
     @desktop_resource_spec_code.setter
     def desktop_resource_spec_code(self, desktop_resource_spec_code):
-        """Sets the desktop_resource_spec_code of this ListHourPackagesTypeRequest.
+        r"""Sets the desktop_resource_spec_code of this ListHourPackagesTypeRequest.
 
         小时包对应的按需桌面的资源规格编码。
 
@@ -72,7 +72,7 @@ class ListHourPackagesTypeRequest:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ListHourPackagesTypeRequest.
+        r"""Gets the resource_spec_code of this ListHourPackagesTypeRequest.
 
         小时包的资源规格编码。
 
@@ -83,7 +83,7 @@ class ListHourPackagesTypeRequest:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ListHourPackagesTypeRequest.
+        r"""Sets the resource_spec_code of this ListHourPackagesTypeRequest.
 
         小时包的资源规格编码。
 

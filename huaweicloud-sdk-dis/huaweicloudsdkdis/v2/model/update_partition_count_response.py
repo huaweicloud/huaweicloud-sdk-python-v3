@@ -24,7 +24,7 @@ class UpdatePartitionCountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePartitionCountResponse
+        r"""UpdatePartitionCountResponse
 
         The model defined in huaweicloud sdk
 

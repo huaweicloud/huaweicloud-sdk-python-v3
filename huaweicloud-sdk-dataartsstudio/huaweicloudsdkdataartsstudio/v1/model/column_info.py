@@ -29,7 +29,7 @@ class ColumnInfo:
     }
 
     def __init__(self, column_name=None, description=None, type=None):
-        """ColumnInfo
+        r"""ColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ColumnInfo:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ColumnInfo.
+        r"""Gets the column_name of this ColumnInfo.
 
         列名称
 
@@ -68,7 +68,7 @@ class ColumnInfo:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ColumnInfo.
+        r"""Sets the column_name of this ColumnInfo.
 
         列名称
 
@@ -79,7 +79,7 @@ class ColumnInfo:
 
     @property
     def description(self):
-        """Gets the description of this ColumnInfo.
+        r"""Gets the description of this ColumnInfo.
 
         描述
 
@@ -90,7 +90,7 @@ class ColumnInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ColumnInfo.
+        r"""Sets the description of this ColumnInfo.
 
         描述
 
@@ -101,7 +101,7 @@ class ColumnInfo:
 
     @property
     def type(self):
-        """Gets the type of this ColumnInfo.
+        r"""Gets the type of this ColumnInfo.
 
         类型
 
@@ -112,7 +112,7 @@ class ColumnInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ColumnInfo.
+        r"""Sets the type of this ColumnInfo.
 
         类型
 

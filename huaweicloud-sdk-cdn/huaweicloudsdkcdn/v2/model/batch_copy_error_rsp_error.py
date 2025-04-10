@@ -27,7 +27,7 @@ class BatchCopyErrorRspError:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """BatchCopyErrorRspError
+        r"""BatchCopyErrorRspError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchCopyErrorRspError:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchCopyErrorRspError.
+        r"""Gets the error_code of this BatchCopyErrorRspError.
 
         错误码
 
@@ -61,7 +61,7 @@ class BatchCopyErrorRspError:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchCopyErrorRspError.
+        r"""Sets the error_code of this BatchCopyErrorRspError.
 
         错误码
 
@@ -72,7 +72,7 @@ class BatchCopyErrorRspError:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchCopyErrorRspError.
+        r"""Gets the error_msg of this BatchCopyErrorRspError.
 
         错误描述
 
@@ -83,7 +83,7 @@ class BatchCopyErrorRspError:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchCopyErrorRspError.
+        r"""Sets the error_msg of this BatchCopyErrorRspError.
 
         错误描述
 

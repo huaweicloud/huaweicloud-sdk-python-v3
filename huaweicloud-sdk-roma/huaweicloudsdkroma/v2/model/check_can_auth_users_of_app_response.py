@@ -26,7 +26,7 @@ class CheckCanAuthUsersOfAppResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """CheckCanAuthUsersOfAppResponse
+        r"""CheckCanAuthUsersOfAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckCanAuthUsersOfAppResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this CheckCanAuthUsersOfAppResponse.
+        r"""Gets the users of this CheckCanAuthUsersOfAppResponse.
 
         候选用户成员列表
 
@@ -55,7 +55,7 @@ class CheckCanAuthUsersOfAppResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CheckCanAuthUsersOfAppResponse.
+        r"""Sets the users of this CheckCanAuthUsersOfAppResponse.
 
         候选用户成员列表
 

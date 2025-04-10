@@ -25,7 +25,7 @@ class GetUserIdReqBody:
     }
 
     def __init__(self, alternate_identifier=None):
-        """GetUserIdReqBody
+        r"""GetUserIdReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetUserIdReqBody:
 
     @property
     def alternate_identifier(self):
-        """Gets the alternate_identifier of this GetUserIdReqBody.
+        r"""Gets the alternate_identifier of this GetUserIdReqBody.
 
         :return: The alternate_identifier of this GetUserIdReqBody.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.AlternateIdentifierDto`
@@ -51,7 +51,7 @@ class GetUserIdReqBody:
 
     @alternate_identifier.setter
     def alternate_identifier(self, alternate_identifier):
-        """Sets the alternate_identifier of this GetUserIdReqBody.
+        r"""Sets the alternate_identifier of this GetUserIdReqBody.
 
         :param alternate_identifier: The alternate_identifier of this GetUserIdReqBody.
         :type alternate_identifier: :class:`huaweicloudsdkidentitycenterstore.v1.AlternateIdentifierDto`

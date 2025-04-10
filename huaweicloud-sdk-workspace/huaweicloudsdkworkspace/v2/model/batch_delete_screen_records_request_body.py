@@ -25,7 +25,7 @@ class BatchDeleteScreenRecordsRequestBody:
     }
 
     def __init__(self, screen_records=None):
-        """BatchDeleteScreenRecordsRequestBody
+        r"""BatchDeleteScreenRecordsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteScreenRecordsRequestBody:
 
     @property
     def screen_records(self):
-        """Gets the screen_records of this BatchDeleteScreenRecordsRequestBody.
+        r"""Gets the screen_records of this BatchDeleteScreenRecordsRequestBody.
 
         待删除的录屏ID列表。
 
@@ -54,7 +54,7 @@ class BatchDeleteScreenRecordsRequestBody:
 
     @screen_records.setter
     def screen_records(self, screen_records):
-        """Sets the screen_records of this BatchDeleteScreenRecordsRequestBody.
+        r"""Sets the screen_records of this BatchDeleteScreenRecordsRequestBody.
 
         待删除的录屏ID列表。
 

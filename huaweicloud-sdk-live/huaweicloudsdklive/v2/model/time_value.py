@@ -27,7 +27,7 @@ class TimeValue:
     }
 
     def __init__(self, time=None, value=None):
-        """TimeValue
+        r"""TimeValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TimeValue:
 
     @property
     def time(self):
-        """Gets the time of this TimeValue.
+        r"""Gets the time of this TimeValue.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DDThh:mm:ssZ
 
@@ -61,7 +61,7 @@ class TimeValue:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TimeValue.
+        r"""Sets the time of this TimeValue.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DDThh:mm:ssZ
 
@@ -72,7 +72,7 @@ class TimeValue:
 
     @property
     def value(self):
-        """Gets the value of this TimeValue.
+        r"""Gets the value of this TimeValue.
 
         当前时间返回指定指标的值
 
@@ -83,7 +83,7 @@ class TimeValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TimeValue.
+        r"""Sets the value of this TimeValue.
 
         当前时间返回指定指标的值
 

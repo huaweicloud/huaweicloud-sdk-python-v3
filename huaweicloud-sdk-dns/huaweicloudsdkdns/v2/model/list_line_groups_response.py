@@ -28,7 +28,7 @@ class ListLineGroupsResponse(SdkResponse):
     }
 
     def __init__(self, linegroups=None, metadata=None):
-        """ListLineGroupsResponse
+        r"""ListLineGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLineGroupsResponse(SdkResponse):
 
     @property
     def linegroups(self):
-        """Gets the linegroups of this ListLineGroupsResponse.
+        r"""Gets the linegroups of this ListLineGroupsResponse.
 
         列表对象。
 
@@ -62,7 +62,7 @@ class ListLineGroupsResponse(SdkResponse):
 
     @linegroups.setter
     def linegroups(self, linegroups):
-        """Sets the linegroups of this ListLineGroupsResponse.
+        r"""Sets the linegroups of this ListLineGroupsResponse.
 
         列表对象。
 
@@ -73,7 +73,7 @@ class ListLineGroupsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListLineGroupsResponse.
+        r"""Gets the metadata of this ListLineGroupsResponse.
 
         :return: The metadata of this ListLineGroupsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -82,7 +82,7 @@ class ListLineGroupsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListLineGroupsResponse.
+        r"""Sets the metadata of this ListLineGroupsResponse.
 
         :param metadata: The metadata of this ListLineGroupsResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

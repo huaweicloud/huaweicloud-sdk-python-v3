@@ -26,7 +26,7 @@ class ShowAccessPreviewResponse(SdkResponse):
     }
 
     def __init__(self, access_preview=None):
-        """ShowAccessPreviewResponse
+        r"""ShowAccessPreviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAccessPreviewResponse(SdkResponse):
 
     @property
     def access_preview(self):
-        """Gets the access_preview of this ShowAccessPreviewResponse.
+        r"""Gets the access_preview of this ShowAccessPreviewResponse.
 
         :return: The access_preview of this ShowAccessPreviewResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreview`
@@ -53,7 +53,7 @@ class ShowAccessPreviewResponse(SdkResponse):
 
     @access_preview.setter
     def access_preview(self, access_preview):
-        """Sets the access_preview of this ShowAccessPreviewResponse.
+        r"""Sets the access_preview of this ShowAccessPreviewResponse.
 
         :param access_preview: The access_preview of this ShowAccessPreviewResponse.
         :type access_preview: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreview`

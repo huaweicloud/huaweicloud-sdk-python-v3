@@ -29,7 +29,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
     }
 
     def __init__(self, site_network_id=None, site_connection_id=None, body=None):
-        """UpdateSiteNetworkBandwidthSizeRequest
+        r"""UpdateSiteNetworkBandwidthSizeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this UpdateSiteNetworkBandwidthSizeRequest.
+        r"""Gets the site_network_id of this UpdateSiteNetworkBandwidthSizeRequest.
 
         分支网络的ID。
 
@@ -66,7 +66,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this UpdateSiteNetworkBandwidthSizeRequest.
+        r"""Sets the site_network_id of this UpdateSiteNetworkBandwidthSizeRequest.
 
         分支网络的ID。
 
@@ -77,7 +77,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
 
     @property
     def site_connection_id(self):
-        """Gets the site_connection_id of this UpdateSiteNetworkBandwidthSizeRequest.
+        r"""Gets the site_connection_id of this UpdateSiteNetworkBandwidthSizeRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
 
     @site_connection_id.setter
     def site_connection_id(self, site_connection_id):
-        """Sets the site_connection_id of this UpdateSiteNetworkBandwidthSizeRequest.
+        r"""Sets the site_connection_id of this UpdateSiteNetworkBandwidthSizeRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSiteNetworkBandwidthSizeRequest.
+        r"""Gets the body of this UpdateSiteNetworkBandwidthSizeRequest.
 
         :return: The body of this UpdateSiteNetworkBandwidthSizeRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthSizeRequestBody`
@@ -108,7 +108,7 @@ class UpdateSiteNetworkBandwidthSizeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSiteNetworkBandwidthSizeRequest.
+        r"""Sets the body of this UpdateSiteNetworkBandwidthSizeRequest.
 
         :param body: The body of this UpdateSiteNetworkBandwidthSizeRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthSizeRequestBody`

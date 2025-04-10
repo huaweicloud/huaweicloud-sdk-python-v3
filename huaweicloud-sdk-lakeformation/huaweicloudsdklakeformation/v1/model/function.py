@@ -43,7 +43,7 @@ class Function:
     }
 
     def __init__(self, catalog_name=None, database_name=None, function_name=None, function_type=None, owner=None, owner_type=None, owner_auth_source_type=None, class_name=None, create_time=None, resource_uris=None):
-        """Function
+        r"""Function
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Function:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this Function.
+        r"""Gets the catalog_name of this Function.
 
         catalog名称
 
@@ -110,7 +110,7 @@ class Function:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this Function.
+        r"""Sets the catalog_name of this Function.
 
         catalog名称
 
@@ -121,7 +121,7 @@ class Function:
 
     @property
     def database_name(self):
-        """Gets the database_name of this Function.
+        r"""Gets the database_name of this Function.
 
         数据库名称
 
@@ -132,7 +132,7 @@ class Function:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this Function.
+        r"""Sets the database_name of this Function.
 
         数据库名称
 
@@ -143,7 +143,7 @@ class Function:
 
     @property
     def function_name(self):
-        """Gets the function_name of this Function.
+        r"""Gets the function_name of this Function.
 
         函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -154,7 +154,7 @@ class Function:
 
     @function_name.setter
     def function_name(self, function_name):
-        """Sets the function_name of this Function.
+        r"""Sets the function_name of this Function.
 
         函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -165,7 +165,7 @@ class Function:
 
     @property
     def function_type(self):
-        """Gets the function_type of this Function.
+        r"""Gets the function_type of this Function.
 
         函数类型,JAVA
 
@@ -176,7 +176,7 @@ class Function:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this Function.
+        r"""Sets the function_type of this Function.
 
         函数类型,JAVA
 
@@ -187,7 +187,7 @@ class Function:
 
     @property
     def owner(self):
-        """Gets the owner of this Function.
+        r"""Gets the owner of this Function.
 
         函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -198,7 +198,7 @@ class Function:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Function.
+        r"""Sets the owner of this Function.
 
         函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -209,7 +209,7 @@ class Function:
 
     @property
     def owner_type(self):
-        """Gets the owner_type of this Function.
+        r"""Gets the owner_type of this Function.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -220,7 +220,7 @@ class Function:
 
     @owner_type.setter
     def owner_type(self, owner_type):
-        """Sets the owner_type of this Function.
+        r"""Sets the owner_type of this Function.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -231,7 +231,7 @@ class Function:
 
     @property
     def owner_auth_source_type(self):
-        """Gets the owner_auth_source_type of this Function.
+        r"""Gets the owner_auth_source_type of this Function.
 
         所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -242,7 +242,7 @@ class Function:
 
     @owner_auth_source_type.setter
     def owner_auth_source_type(self, owner_auth_source_type):
-        """Sets the owner_auth_source_type of this Function.
+        r"""Sets the owner_auth_source_type of this Function.
 
         所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -253,7 +253,7 @@ class Function:
 
     @property
     def class_name(self):
-        """Gets the class_name of this Function.
+        r"""Gets the class_name of this Function.
 
         函数类名
 
@@ -264,7 +264,7 @@ class Function:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this Function.
+        r"""Sets the class_name of this Function.
 
         函数类名
 
@@ -275,7 +275,7 @@ class Function:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Function.
+        r"""Gets the create_time of this Function.
 
         创建时间格式为yyyy-mm-ddThh:mm:sss
 
@@ -286,7 +286,7 @@ class Function:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Function.
+        r"""Sets the create_time of this Function.
 
         创建时间格式为yyyy-mm-ddThh:mm:sss
 
@@ -297,7 +297,7 @@ class Function:
 
     @property
     def resource_uris(self):
-        """Gets the resource_uris of this Function.
+        r"""Gets the resource_uris of this Function.
 
         函数地址信息
 
@@ -308,7 +308,7 @@ class Function:
 
     @resource_uris.setter
     def resource_uris(self, resource_uris):
-        """Sets the resource_uris of this Function.
+        r"""Sets the resource_uris of this Function.
 
         函数地址信息
 

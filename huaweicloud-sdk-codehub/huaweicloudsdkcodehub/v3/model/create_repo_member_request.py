@@ -25,7 +25,7 @@ class CreateRepoMemberRequest:
     }
 
     def __init__(self, users=None):
-        """CreateRepoMemberRequest
+        r"""CreateRepoMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRepoMemberRequest:
 
     @property
     def users(self):
-        """Gets the users of this CreateRepoMemberRequest.
+        r"""Gets the users of this CreateRepoMemberRequest.
 
         添加用户的信息列表
 
@@ -54,7 +54,7 @@ class CreateRepoMemberRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateRepoMemberRequest.
+        r"""Sets the users of this CreateRepoMemberRequest.
 
         添加用户的信息列表
 

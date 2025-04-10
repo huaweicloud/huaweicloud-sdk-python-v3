@@ -27,7 +27,7 @@ class EngineCreateReqMaintenanceConfig:
     }
 
     def __init__(self, time=None, zone=None):
-        """EngineCreateReqMaintenanceConfig
+        r"""EngineCreateReqMaintenanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EngineCreateReqMaintenanceConfig:
 
     @property
     def time(self):
-        """Gets the time of this EngineCreateReqMaintenanceConfig.
+        r"""Gets the time of this EngineCreateReqMaintenanceConfig.
 
         维护时间
 
@@ -61,7 +61,7 @@ class EngineCreateReqMaintenanceConfig:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this EngineCreateReqMaintenanceConfig.
+        r"""Sets the time of this EngineCreateReqMaintenanceConfig.
 
         维护时间
 
@@ -72,7 +72,7 @@ class EngineCreateReqMaintenanceConfig:
 
     @property
     def zone(self):
-        """Gets the zone of this EngineCreateReqMaintenanceConfig.
+        r"""Gets the zone of this EngineCreateReqMaintenanceConfig.
 
         维护时间的时区
 
@@ -83,7 +83,7 @@ class EngineCreateReqMaintenanceConfig:
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this EngineCreateReqMaintenanceConfig.
+        r"""Sets the zone of this EngineCreateReqMaintenanceConfig.
 
         维护时间的时区
 

@@ -29,7 +29,7 @@ class PutCaseExtParamReq:
     }
 
     def __init__(self, group_id=None, message_id=None, extends_map=None):
-        """PutCaseExtParamReq
+        r"""PutCaseExtParamReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PutCaseExtParamReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PutCaseExtParamReq.
+        r"""Gets the group_id of this PutCaseExtParamReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -68,7 +68,7 @@ class PutCaseExtParamReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PutCaseExtParamReq.
+        r"""Sets the group_id of this PutCaseExtParamReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -79,7 +79,7 @@ class PutCaseExtParamReq:
 
     @property
     def message_id(self):
-        """Gets the message_id of this PutCaseExtParamReq.
+        r"""Gets the message_id of this PutCaseExtParamReq.
 
         消息id
 
@@ -90,7 +90,7 @@ class PutCaseExtParamReq:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this PutCaseExtParamReq.
+        r"""Sets the message_id of this PutCaseExtParamReq.
 
         消息id
 
@@ -101,7 +101,7 @@ class PutCaseExtParamReq:
 
     @property
     def extends_map(self):
-        """Gets the extends_map of this PutCaseExtParamReq.
+        r"""Gets the extends_map of this PutCaseExtParamReq.
 
         扩展参数
 
@@ -112,7 +112,7 @@ class PutCaseExtParamReq:
 
     @extends_map.setter
     def extends_map(self, extends_map):
-        """Sets the extends_map of this PutCaseExtParamReq.
+        r"""Sets the extends_map of this PutCaseExtParamReq.
 
         扩展参数
 

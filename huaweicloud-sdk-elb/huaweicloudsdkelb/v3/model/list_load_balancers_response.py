@@ -30,7 +30,7 @@ class ListLoadBalancersResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancers=None, page_info=None, request_id=None):
-        """ListLoadBalancersResponse
+        r"""ListLoadBalancersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
     @property
     def loadbalancers(self):
-        """Gets the loadbalancers of this ListLoadBalancersResponse.
+        r"""Gets the loadbalancers of this ListLoadBalancersResponse.
 
         Loadbalancer的列表。
 
@@ -69,7 +69,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
     @loadbalancers.setter
     def loadbalancers(self, loadbalancers):
-        """Sets the loadbalancers of this ListLoadBalancersResponse.
+        r"""Sets the loadbalancers of this ListLoadBalancersResponse.
 
         Loadbalancer的列表。
 
@@ -80,7 +80,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListLoadBalancersResponse.
+        r"""Gets the page_info of this ListLoadBalancersResponse.
 
         :return: The page_info of this ListLoadBalancersResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListLoadBalancersResponse.
+        r"""Sets the page_info of this ListLoadBalancersResponse.
 
         :param page_info: The page_info of this ListLoadBalancersResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListLoadBalancersResponse.
+        r"""Gets the request_id of this ListLoadBalancersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -109,7 +109,7 @@ class ListLoadBalancersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListLoadBalancersResponse.
+        r"""Sets the request_id of this ListLoadBalancersResponse.
 
         请求ID。  注：自动生成 。
 

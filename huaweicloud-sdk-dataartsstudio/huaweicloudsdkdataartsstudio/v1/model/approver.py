@@ -25,7 +25,7 @@ class Approver:
     }
 
     def __init__(self, approver_name=None):
-        """Approver
+        r"""Approver
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Approver:
 
     @property
     def approver_name(self):
-        """Gets the approver_name of this Approver.
+        r"""Gets the approver_name of this Approver.
 
         审批人名称
 
@@ -53,7 +53,7 @@ class Approver:
 
     @approver_name.setter
     def approver_name(self, approver_name):
-        """Sets the approver_name of this Approver.
+        r"""Sets the approver_name of this Approver.
 
         审批人名称
 

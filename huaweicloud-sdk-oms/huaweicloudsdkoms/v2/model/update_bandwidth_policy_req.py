@@ -25,7 +25,7 @@ class UpdateBandwidthPolicyReq:
     }
 
     def __init__(self, bandwidth_policy=None):
-        """UpdateBandwidthPolicyReq
+        r"""UpdateBandwidthPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBandwidthPolicyReq:
 
     @property
     def bandwidth_policy(self):
-        """Gets the bandwidth_policy of this UpdateBandwidthPolicyReq.
+        r"""Gets the bandwidth_policy of this UpdateBandwidthPolicyReq.
 
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 
@@ -53,7 +53,7 @@ class UpdateBandwidthPolicyReq:
 
     @bandwidth_policy.setter
     def bandwidth_policy(self, bandwidth_policy):
-        """Sets the bandwidth_policy of this UpdateBandwidthPolicyReq.
+        r"""Sets the bandwidth_policy of this UpdateBandwidthPolicyReq.
 
         配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
 

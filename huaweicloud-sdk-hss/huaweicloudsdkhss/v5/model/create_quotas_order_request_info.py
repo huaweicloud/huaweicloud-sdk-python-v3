@@ -35,7 +35,7 @@ class CreateQuotasOrderRequestInfo:
     }
 
     def __init__(self, resource_spec_code=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, subscription_num=None):
-        """CreateQuotasOrderRequestInfo
+        r"""CreateQuotasOrderRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateQuotasOrderRequestInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this CreateQuotasOrderRequestInfo.
+        r"""Gets the resource_spec_code of this CreateQuotasOrderRequestInfo.
 
         资源规格   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -85,7 +85,7 @@ class CreateQuotasOrderRequestInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this CreateQuotasOrderRequestInfo.
+        r"""Sets the resource_spec_code of this CreateQuotasOrderRequestInfo.
 
         资源规格   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -96,7 +96,7 @@ class CreateQuotasOrderRequestInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateQuotasOrderRequestInfo.
+        r"""Gets the period_type of this CreateQuotasOrderRequestInfo.
 
         订购周期类型   - 2 : 月   - 3 : 年
 
@@ -107,7 +107,7 @@ class CreateQuotasOrderRequestInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateQuotasOrderRequestInfo.
+        r"""Sets the period_type of this CreateQuotasOrderRequestInfo.
 
         订购周期类型   - 2 : 月   - 3 : 年
 
@@ -118,7 +118,7 @@ class CreateQuotasOrderRequestInfo:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateQuotasOrderRequestInfo.
+        r"""Gets the period_num of this CreateQuotasOrderRequestInfo.
 
         订购周期数
 
@@ -129,7 +129,7 @@ class CreateQuotasOrderRequestInfo:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateQuotasOrderRequestInfo.
+        r"""Sets the period_num of this CreateQuotasOrderRequestInfo.
 
         订购周期数
 
@@ -140,7 +140,7 @@ class CreateQuotasOrderRequestInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateQuotasOrderRequestInfo.
+        r"""Gets the is_auto_renew of this CreateQuotasOrderRequestInfo.
 
         是否支持自动续订，true表示自动续订，false表示不自动续订，默认值为false
 
@@ -151,7 +151,7 @@ class CreateQuotasOrderRequestInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateQuotasOrderRequestInfo.
+        r"""Sets the is_auto_renew of this CreateQuotasOrderRequestInfo.
 
         是否支持自动续订，true表示自动续订，false表示不自动续订，默认值为false
 
@@ -162,7 +162,7 @@ class CreateQuotasOrderRequestInfo:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateQuotasOrderRequestInfo.
+        r"""Gets the is_auto_pay of this CreateQuotasOrderRequestInfo.
 
         是否支持自动支付，true表示支持，false表示不支持，默认值为false
 
@@ -173,7 +173,7 @@ class CreateQuotasOrderRequestInfo:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateQuotasOrderRequestInfo.
+        r"""Sets the is_auto_pay of this CreateQuotasOrderRequestInfo.
 
         是否支持自动支付，true表示支持，false表示不支持，默认值为false
 
@@ -184,7 +184,7 @@ class CreateQuotasOrderRequestInfo:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this CreateQuotasOrderRequestInfo.
+        r"""Gets the subscription_num of this CreateQuotasOrderRequestInfo.
 
         订购数量
 
@@ -195,7 +195,7 @@ class CreateQuotasOrderRequestInfo:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this CreateQuotasOrderRequestInfo.
+        r"""Sets the subscription_num of this CreateQuotasOrderRequestInfo.
 
         订购数量
 

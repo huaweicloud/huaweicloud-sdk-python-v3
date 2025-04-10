@@ -34,7 +34,7 @@ class CentralNetworkQuotaKeyEnum:
     }
 
     def __init__(self):
-        """CentralNetworkQuotaKeyEnum
+        r"""CentralNetworkQuotaKeyEnum
 
         The model defined in huaweicloud sdk
 

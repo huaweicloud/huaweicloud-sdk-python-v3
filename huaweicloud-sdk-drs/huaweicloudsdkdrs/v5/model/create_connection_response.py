@@ -44,7 +44,7 @@ class CreateConnectionResponse(SdkResponse):
     }
 
     def __init__(self, connection_id=None, name=None, create_time=None, db_type=None, config=None, endpoint=None, vpc=None, ssl=None, enterprise_project_id=None, description=None):
-        """CreateConnectionResponse
+        r"""CreateConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this CreateConnectionResponse.
+        r"""Gets the connection_id of this CreateConnectionResponse.
 
         连接ID。
 
@@ -118,7 +118,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this CreateConnectionResponse.
+        r"""Sets the connection_id of this CreateConnectionResponse.
 
         连接ID。
 
@@ -129,7 +129,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateConnectionResponse.
+        r"""Gets the name of this CreateConnectionResponse.
 
         连接名称。
 
@@ -140,7 +140,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConnectionResponse.
+        r"""Sets the name of this CreateConnectionResponse.
 
         连接名称。
 
@@ -151,7 +151,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateConnectionResponse.
+        r"""Gets the create_time of this CreateConnectionResponse.
 
         连接创建时间，格式为时间戳。
 
@@ -162,7 +162,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateConnectionResponse.
+        r"""Sets the create_time of this CreateConnectionResponse.
 
         连接创建时间，格式为时间戳。
 
@@ -173,7 +173,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def db_type(self):
-        """Gets the db_type of this CreateConnectionResponse.
+        r"""Gets the db_type of this CreateConnectionResponse.
 
         连接类型。
 
@@ -184,7 +184,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this CreateConnectionResponse.
+        r"""Sets the db_type of this CreateConnectionResponse.
 
         连接类型。
 
@@ -195,7 +195,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this CreateConnectionResponse.
+        r"""Gets the config of this CreateConnectionResponse.
 
         :return: The config of this CreateConnectionResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -204,7 +204,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this CreateConnectionResponse.
+        r"""Sets the config of this CreateConnectionResponse.
 
         :param config: The config of this CreateConnectionResponse.
         :type config: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -213,7 +213,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this CreateConnectionResponse.
+        r"""Gets the endpoint of this CreateConnectionResponse.
 
         :return: The endpoint of this CreateConnectionResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -222,7 +222,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this CreateConnectionResponse.
+        r"""Sets the endpoint of this CreateConnectionResponse.
 
         :param endpoint: The endpoint of this CreateConnectionResponse.
         :type endpoint: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -231,7 +231,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def vpc(self):
-        """Gets the vpc of this CreateConnectionResponse.
+        r"""Gets the vpc of this CreateConnectionResponse.
 
         :return: The vpc of this CreateConnectionResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -240,7 +240,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this CreateConnectionResponse.
+        r"""Sets the vpc of this CreateConnectionResponse.
 
         :param vpc: The vpc of this CreateConnectionResponse.
         :type vpc: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -249,7 +249,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def ssl(self):
-        """Gets the ssl of this CreateConnectionResponse.
+        r"""Gets the ssl of this CreateConnectionResponse.
 
         :return: The ssl of this CreateConnectionResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -258,7 +258,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this CreateConnectionResponse.
+        r"""Sets the ssl of this CreateConnectionResponse.
 
         :param ssl: The ssl of this CreateConnectionResponse.
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -267,7 +267,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateConnectionResponse.
+        r"""Gets the enterprise_project_id of this CreateConnectionResponse.
 
         企业项目ID。
 
@@ -278,7 +278,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateConnectionResponse.
+        r"""Sets the enterprise_project_id of this CreateConnectionResponse.
 
         企业项目ID。
 
@@ -289,7 +289,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateConnectionResponse.
+        r"""Gets the description of this CreateConnectionResponse.
 
         描述。
 
@@ -300,7 +300,7 @@ class CreateConnectionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConnectionResponse.
+        r"""Sets the description of this CreateConnectionResponse.
 
         描述。
 

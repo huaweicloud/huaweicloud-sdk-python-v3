@@ -49,7 +49,7 @@ class ShareBackups:
     }
 
     def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, size=None, type=None, backup_method=None, instance_id=None, instance_name=None, instance_status=None, datastore=None, user_name=None):
-        """ShareBackups
+        r"""ShareBackups
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ShareBackups:
 
     @property
     def id(self):
-        """Gets the id of this ShareBackups.
+        r"""Gets the id of this ShareBackups.
 
         备份ID。
 
@@ -138,7 +138,7 @@ class ShareBackups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShareBackups.
+        r"""Sets the id of this ShareBackups.
 
         备份ID。
 
@@ -149,7 +149,7 @@ class ShareBackups:
 
     @property
     def name(self):
-        """Gets the name of this ShareBackups.
+        r"""Gets the name of this ShareBackups.
 
         备份名字。
 
@@ -160,7 +160,7 @@ class ShareBackups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShareBackups.
+        r"""Sets the name of this ShareBackups.
 
         备份名字。
 
@@ -171,7 +171,7 @@ class ShareBackups:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShareBackups.
+        r"""Gets the begin_time of this ShareBackups.
 
         备份开始时间。
 
@@ -182,7 +182,7 @@ class ShareBackups:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShareBackups.
+        r"""Sets the begin_time of this ShareBackups.
 
         备份开始时间。
 
@@ -193,7 +193,7 @@ class ShareBackups:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShareBackups.
+        r"""Gets the end_time of this ShareBackups.
 
         备份结束时间。
 
@@ -204,7 +204,7 @@ class ShareBackups:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShareBackups.
+        r"""Sets the end_time of this ShareBackups.
 
         备份结束时间。
 
@@ -215,7 +215,7 @@ class ShareBackups:
 
     @property
     def status(self):
-        """Gets the status of this ShareBackups.
+        r"""Gets the status of this ShareBackups.
 
         备份状态，取值：BUILDING：备份中，COMPLETED：备份完成，FAILED：备份失败，DELETING：备份删除中。
 
@@ -226,7 +226,7 @@ class ShareBackups:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShareBackups.
+        r"""Sets the status of this ShareBackups.
 
         备份状态，取值：BUILDING：备份中，COMPLETED：备份完成，FAILED：备份失败，DELETING：备份删除中。
 
@@ -237,7 +237,7 @@ class ShareBackups:
 
     @property
     def size(self):
-        """Gets the size of this ShareBackups.
+        r"""Gets the size of this ShareBackups.
 
         备份大小，单位：KB。
 
@@ -248,7 +248,7 @@ class ShareBackups:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShareBackups.
+        r"""Sets the size of this ShareBackups.
 
         备份大小，单位：KB。
 
@@ -259,7 +259,7 @@ class ShareBackups:
 
     @property
     def type(self):
-        """Gets the type of this ShareBackups.
+        r"""Gets the type of this ShareBackups.
 
         备份类型，取值：\"auto\"自动全量备份，“manual”手动全量备份。
 
@@ -270,7 +270,7 @@ class ShareBackups:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShareBackups.
+        r"""Sets the type of this ShareBackups.
 
         备份类型，取值：\"auto\"自动全量备份，“manual”手动全量备份。
 
@@ -281,7 +281,7 @@ class ShareBackups:
 
     @property
     def backup_method(self):
-        """Gets the backup_method of this ShareBackups.
+        r"""Gets the backup_method of this ShareBackups.
 
         备份方法。
 
@@ -292,7 +292,7 @@ class ShareBackups:
 
     @backup_method.setter
     def backup_method(self, backup_method):
-        """Sets the backup_method of this ShareBackups.
+        r"""Sets the backup_method of this ShareBackups.
 
         备份方法。
 
@@ -303,7 +303,7 @@ class ShareBackups:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShareBackups.
+        r"""Gets the instance_id of this ShareBackups.
 
         备份所在实例ID。
 
@@ -314,7 +314,7 @@ class ShareBackups:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShareBackups.
+        r"""Sets the instance_id of this ShareBackups.
 
         备份所在实例ID。
 
@@ -325,7 +325,7 @@ class ShareBackups:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShareBackups.
+        r"""Gets the instance_name of this ShareBackups.
 
         备份所在实例名称。
 
@@ -336,7 +336,7 @@ class ShareBackups:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShareBackups.
+        r"""Sets the instance_name of this ShareBackups.
 
         备份所在实例名称。
 
@@ -347,7 +347,7 @@ class ShareBackups:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this ShareBackups.
+        r"""Gets the instance_status of this ShareBackups.
 
         备份所在实例状态。
 
@@ -358,7 +358,7 @@ class ShareBackups:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this ShareBackups.
+        r"""Sets the instance_status of this ShareBackups.
 
         备份所在实例状态。
 
@@ -369,7 +369,7 @@ class ShareBackups:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ShareBackups.
+        r"""Gets the datastore of this ShareBackups.
 
         数据库版本信息。
 
@@ -380,7 +380,7 @@ class ShareBackups:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ShareBackups.
+        r"""Sets the datastore of this ShareBackups.
 
         数据库版本信息。
 
@@ -391,7 +391,7 @@ class ShareBackups:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShareBackups.
+        r"""Gets the user_name of this ShareBackups.
 
         共享者用户名称。
 
@@ -402,7 +402,7 @@ class ShareBackups:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShareBackups.
+        r"""Sets the user_name of this ShareBackups.
 
         共享者用户名称。
 

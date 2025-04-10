@@ -27,7 +27,7 @@ class SgObject:
     }
 
     def __init__(self, id=None, name=None):
-        """SgObject
+        r"""SgObject
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SgObject:
 
     @property
     def id(self):
-        """Gets the id of this SgObject.
+        r"""Gets the id of this SgObject.
 
         安全组ID
 
@@ -59,7 +59,7 @@ class SgObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SgObject.
+        r"""Sets the id of this SgObject.
 
         安全组ID
 
@@ -70,7 +70,7 @@ class SgObject:
 
     @property
     def name(self):
-        """Gets the name of this SgObject.
+        r"""Gets the name of this SgObject.
 
         安全组名称
 
@@ -81,7 +81,7 @@ class SgObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SgObject.
+        r"""Sets the name of this SgObject.
 
         安全组名称
 

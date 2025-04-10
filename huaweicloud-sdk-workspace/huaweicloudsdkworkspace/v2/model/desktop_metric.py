@@ -31,7 +31,7 @@ class DesktopMetric:
     }
 
     def __init__(self, resource_id=None, resource_pool_id=None, resource_name=None, metric=None):
-        """DesktopMetric
+        r"""DesktopMetric
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DesktopMetric:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DesktopMetric.
+        r"""Gets the resource_id of this DesktopMetric.
 
         桌面ID
 
@@ -75,7 +75,7 @@ class DesktopMetric:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DesktopMetric.
+        r"""Sets the resource_id of this DesktopMetric.
 
         桌面ID
 
@@ -86,7 +86,7 @@ class DesktopMetric:
 
     @property
     def resource_pool_id(self):
-        """Gets the resource_pool_id of this DesktopMetric.
+        r"""Gets the resource_pool_id of this DesktopMetric.
 
         桌面池ID(仅桌面池中的桌面存在该字段)
 
@@ -97,7 +97,7 @@ class DesktopMetric:
 
     @resource_pool_id.setter
     def resource_pool_id(self, resource_pool_id):
-        """Sets the resource_pool_id of this DesktopMetric.
+        r"""Sets the resource_pool_id of this DesktopMetric.
 
         桌面池ID(仅桌面池中的桌面存在该字段)
 
@@ -108,7 +108,7 @@ class DesktopMetric:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this DesktopMetric.
+        r"""Gets the resource_name of this DesktopMetric.
 
         桌面名称
 
@@ -119,7 +119,7 @@ class DesktopMetric:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this DesktopMetric.
+        r"""Sets the resource_name of this DesktopMetric.
 
         桌面名称
 
@@ -130,7 +130,7 @@ class DesktopMetric:
 
     @property
     def metric(self):
-        """Gets the metric of this DesktopMetric.
+        r"""Gets the metric of this DesktopMetric.
 
         统计信息 * `desktop_usage` -  桌面使用时长(单位:秒) * `desktop_idle_duration` -  桌面空闲时长(单位:秒)
 
@@ -141,7 +141,7 @@ class DesktopMetric:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this DesktopMetric.
+        r"""Sets the metric of this DesktopMetric.
 
         统计信息 * `desktop_usage` -  桌面使用时长(单位:秒) * `desktop_idle_duration` -  桌面空闲时长(单位:秒)
 

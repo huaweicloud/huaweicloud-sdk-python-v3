@@ -27,7 +27,7 @@ class DeleteLoadBalancerCascadeOption:
     }
 
     def __init__(self, unbounded_pool=None, public_ip=None):
-        """DeleteLoadBalancerCascadeOption
+        r"""DeleteLoadBalancerCascadeOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteLoadBalancerCascadeOption:
 
     @property
     def unbounded_pool(self):
-        """Gets the unbounded_pool of this DeleteLoadBalancerCascadeOption.
+        r"""Gets the unbounded_pool of this DeleteLoadBalancerCascadeOption.
 
         参数解释：是否删除关联的后端服务器组。  约束限制： - 共享型负载均衡器仅支持传参为true。 [- 若开启多挂特性，且后端服务器组关联了多个LB，则无论传入何值，都不会删除后端服务器组。](tag: hws,hws_hk)  取值范围： - true：删除该后端服务器组。 - false：仅解绑后端服务器组，不删除。  默认取值：true
 
@@ -61,7 +61,7 @@ class DeleteLoadBalancerCascadeOption:
 
     @unbounded_pool.setter
     def unbounded_pool(self, unbounded_pool):
-        """Sets the unbounded_pool of this DeleteLoadBalancerCascadeOption.
+        r"""Sets the unbounded_pool of this DeleteLoadBalancerCascadeOption.
 
         参数解释：是否删除关联的后端服务器组。  约束限制： - 共享型负载均衡器仅支持传参为true。 [- 若开启多挂特性，且后端服务器组关联了多个LB，则无论传入何值，都不会删除后端服务器组。](tag: hws,hws_hk)  取值范围： - true：删除该后端服务器组。 - false：仅解绑后端服务器组，不删除。  默认取值：true
 
@@ -72,7 +72,7 @@ class DeleteLoadBalancerCascadeOption:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this DeleteLoadBalancerCascadeOption.
+        r"""Gets the public_ip of this DeleteLoadBalancerCascadeOption.
 
         参数解释：删除负载均衡器后是否删除关联的公网IP。  取值范围： - true：删除关联的EIP。 - false：仅解绑关联的EIP，不删除。
 
@@ -83,7 +83,7 @@ class DeleteLoadBalancerCascadeOption:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this DeleteLoadBalancerCascadeOption.
+        r"""Sets the public_ip of this DeleteLoadBalancerCascadeOption.
 
         参数解释：删除负载均衡器后是否删除关联的公网IP。  取值范围： - true：删除关联的EIP。 - false：仅解绑关联的EIP，不删除。
 

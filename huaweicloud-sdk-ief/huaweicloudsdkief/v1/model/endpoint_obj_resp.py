@@ -43,7 +43,7 @@ class EndpointObjResp:
     }
 
     def __init__(self, created_at=None, description=None, id=None, ief_instance_id=None, is_shared=None, name=None, project_id=None, properties=None, type=None, updated_at=None):
-        """EndpointObjResp
+        r"""EndpointObjResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class EndpointObjResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointObjResp.
+        r"""Gets the created_at of this EndpointObjResp.
 
         创建时间
 
@@ -107,7 +107,7 @@ class EndpointObjResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointObjResp.
+        r"""Sets the created_at of this EndpointObjResp.
 
         创建时间
 
@@ -118,7 +118,7 @@ class EndpointObjResp:
 
     @property
     def description(self):
-        """Gets the description of this EndpointObjResp.
+        r"""Gets the description of this EndpointObjResp.
 
         端点描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -129,7 +129,7 @@ class EndpointObjResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointObjResp.
+        r"""Sets the description of this EndpointObjResp.
 
         端点描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -140,7 +140,7 @@ class EndpointObjResp:
 
     @property
     def id(self):
-        """Gets the id of this EndpointObjResp.
+        r"""Gets the id of this EndpointObjResp.
 
         端点ID
 
@@ -151,7 +151,7 @@ class EndpointObjResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointObjResp.
+        r"""Sets the id of this EndpointObjResp.
 
         端点ID
 
@@ -162,7 +162,7 @@ class EndpointObjResp:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this EndpointObjResp.
+        r"""Gets the ief_instance_id of this EndpointObjResp.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -173,7 +173,7 @@ class EndpointObjResp:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this EndpointObjResp.
+        r"""Sets the ief_instance_id of this EndpointObjResp.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -184,7 +184,7 @@ class EndpointObjResp:
 
     @property
     def is_shared(self):
-        """Gets the is_shared of this EndpointObjResp.
+        r"""Gets the is_shared of this EndpointObjResp.
 
         是否共享
 
@@ -195,7 +195,7 @@ class EndpointObjResp:
 
     @is_shared.setter
     def is_shared(self, is_shared):
-        """Sets the is_shared of this EndpointObjResp.
+        r"""Sets the is_shared of this EndpointObjResp.
 
         是否共享
 
@@ -206,7 +206,7 @@ class EndpointObjResp:
 
     @property
     def name(self):
-        """Gets the name of this EndpointObjResp.
+        r"""Gets the name of this EndpointObjResp.
 
         端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
@@ -217,7 +217,7 @@ class EndpointObjResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointObjResp.
+        r"""Sets the name of this EndpointObjResp.
 
         端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
@@ -228,7 +228,7 @@ class EndpointObjResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EndpointObjResp.
+        r"""Gets the project_id of this EndpointObjResp.
 
         项目ID
 
@@ -239,7 +239,7 @@ class EndpointObjResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EndpointObjResp.
+        r"""Sets the project_id of this EndpointObjResp.
 
         项目ID
 
@@ -250,7 +250,7 @@ class EndpointObjResp:
 
     @property
     def properties(self):
-        """Gets the properties of this EndpointObjResp.
+        r"""Gets the properties of this EndpointObjResp.
 
         端点的属性，端点需要对外展示的属性，示例： - dis: {\"domain_id\":\"user's domain id\"} - servicebus: {\"service_port\":8080} - apigw: {\"domain_id\":\"user's domain id\"}
 
@@ -261,7 +261,7 @@ class EndpointObjResp:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this EndpointObjResp.
+        r"""Sets the properties of this EndpointObjResp.
 
         端点的属性，端点需要对外展示的属性，示例： - dis: {\"domain_id\":\"user's domain id\"} - servicebus: {\"service_port\":8080} - apigw: {\"domain_id\":\"user's domain id\"}
 
@@ -272,7 +272,7 @@ class EndpointObjResp:
 
     @property
     def type(self):
-        """Gets the type of this EndpointObjResp.
+        r"""Gets the type of this EndpointObjResp.
 
         端点类型。枚举值： - dis - servicebus - apigw
 
@@ -283,7 +283,7 @@ class EndpointObjResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EndpointObjResp.
+        r"""Sets the type of this EndpointObjResp.
 
         端点类型。枚举值： - dis - servicebus - apigw
 
@@ -294,7 +294,7 @@ class EndpointObjResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EndpointObjResp.
+        r"""Gets the updated_at of this EndpointObjResp.
 
         更新时间
 
@@ -305,7 +305,7 @@ class EndpointObjResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EndpointObjResp.
+        r"""Sets the updated_at of this EndpointObjResp.
 
         更新时间
 

@@ -26,7 +26,7 @@ class CreateWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateWorkflowResponse
+        r"""CreateWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateWorkflowResponse.
+        r"""Gets the id of this CreateWorkflowResponse.
 
         流程id
 
@@ -55,7 +55,7 @@ class CreateWorkflowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateWorkflowResponse.
+        r"""Sets the id of this CreateWorkflowResponse.
 
         流程id
 

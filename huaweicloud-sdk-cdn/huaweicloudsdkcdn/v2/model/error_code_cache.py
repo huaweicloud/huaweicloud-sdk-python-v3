@@ -27,7 +27,7 @@ class ErrorCodeCache:
     }
 
     def __init__(self, code=None, ttl=None):
-        """ErrorCodeCache
+        r"""ErrorCodeCache
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ErrorCodeCache:
 
     @property
     def code(self):
-        """Gets the code of this ErrorCodeCache.
+        r"""Gets the code of this ErrorCodeCache.
 
         允许配置的错误码: 400, 403, 404, 405, 414, 500, 501, 502, 503, 504
 
@@ -61,7 +61,7 @@ class ErrorCodeCache:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ErrorCodeCache.
+        r"""Sets the code of this ErrorCodeCache.
 
         允许配置的错误码: 400, 403, 404, 405, 414, 500, 501, 502, 503, 504
 
@@ -72,7 +72,7 @@ class ErrorCodeCache:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ErrorCodeCache.
+        r"""Gets the ttl of this ErrorCodeCache.
 
         错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)。
 
@@ -83,7 +83,7 @@ class ErrorCodeCache:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ErrorCodeCache.
+        r"""Sets the ttl of this ErrorCodeCache.
 
         错误码缓存时间，单位为秒，范围0-31,536,000(一年默认为365天)。
 

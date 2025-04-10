@@ -30,7 +30,7 @@ class ListAvailableZonesResponse(SdkResponse):
     }
 
     def __init__(self, available_zones=None, default_az_code=None, support_physical_az_group=None):
-        """ListAvailableZonesResponse
+        r"""ListAvailableZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ListAvailableZonesResponse.
+        r"""Gets the available_zones of this ListAvailableZonesResponse.
 
         可用区列表
 
@@ -69,7 +69,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ListAvailableZonesResponse.
+        r"""Sets the available_zones of this ListAvailableZonesResponse.
 
         可用区列表
 
@@ -80,7 +80,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     @property
     def default_az_code(self):
-        """Gets the default_az_code of this ListAvailableZonesResponse.
+        r"""Gets the default_az_code of this ListAvailableZonesResponse.
 
         默认可用区编码
 
@@ -91,7 +91,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     @default_az_code.setter
     def default_az_code(self, default_az_code):
-        """Sets the default_az_code of this ListAvailableZonesResponse.
+        r"""Sets the default_az_code of this ListAvailableZonesResponse.
 
         默认可用区编码
 
@@ -102,7 +102,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     @property
     def support_physical_az_group(self):
-        """Gets the support_physical_az_group of this ListAvailableZonesResponse.
+        r"""Gets the support_physical_az_group of this ListAvailableZonesResponse.
 
         支持的物理可用区分组
 
@@ -113,7 +113,7 @@ class ListAvailableZonesResponse(SdkResponse):
 
     @support_physical_az_group.setter
     def support_physical_az_group(self, support_physical_az_group):
-        """Sets the support_physical_az_group of this ListAvailableZonesResponse.
+        r"""Sets the support_physical_az_group of this ListAvailableZonesResponse.
 
         支持的物理可用区分组
 

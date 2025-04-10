@@ -27,7 +27,7 @@ class SvcMetadata:
     }
 
     def __init__(self, labels=None, name=None):
-        """SvcMetadata
+        r"""SvcMetadata
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SvcMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this SvcMetadata.
+        r"""Gets the labels of this SvcMetadata.
 
         自定义标签属性列表
 
@@ -60,7 +60,7 @@ class SvcMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this SvcMetadata.
+        r"""Sets the labels of this SvcMetadata.
 
         自定义标签属性列表
 
@@ -71,7 +71,7 @@ class SvcMetadata:
 
     @property
     def name(self):
-        """Gets the name of this SvcMetadata.
+        r"""Gets the name of this SvcMetadata.
 
         服务名称，只允许英文小写字母、数字、中划线，最大长度64，英文小写字母开头，数字或小写字母结尾
 
@@ -82,7 +82,7 @@ class SvcMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SvcMetadata.
+        r"""Sets the name of this SvcMetadata.
 
         服务名称，只允许英文小写字母、数字、中划线，最大长度64，英文小写字母开头，数字或小写字母结尾
 

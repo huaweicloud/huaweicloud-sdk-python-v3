@@ -27,7 +27,7 @@ class User:
     }
 
     def __init__(self, client_certificate_data=None, client_key_data=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class User:
 
     @property
     def client_certificate_data(self):
-        """Gets the client_certificate_data of this User.
+        r"""Gets the client_certificate_data of this User.
 
         客户端证书。 
 
@@ -61,7 +61,7 @@ class User:
 
     @client_certificate_data.setter
     def client_certificate_data(self, client_certificate_data):
-        """Sets the client_certificate_data of this User.
+        r"""Sets the client_certificate_data of this User.
 
         客户端证书。 
 
@@ -72,7 +72,7 @@ class User:
 
     @property
     def client_key_data(self):
-        """Gets the client_key_data of this User.
+        r"""Gets the client_key_data of this User.
 
         包含来自TLS客户端密钥文件的PEM编码数据。 
 
@@ -83,7 +83,7 @@ class User:
 
     @client_key_data.setter
     def client_key_data(self, client_key_data):
-        """Sets the client_key_data of this User.
+        r"""Sets the client_key_data of this User.
 
         包含来自TLS客户端密钥文件的PEM编码数据。 
 

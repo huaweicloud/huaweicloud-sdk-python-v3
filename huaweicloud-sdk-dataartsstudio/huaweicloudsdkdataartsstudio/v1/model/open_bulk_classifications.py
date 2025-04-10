@@ -27,7 +27,7 @@ class OpenBulkClassifications:
     }
 
     def __init__(self, guids=None, classification=None):
-        """OpenBulkClassifications
+        r"""OpenBulkClassifications
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenBulkClassifications:
 
     @property
     def guids(self):
-        """Gets the guids of this OpenBulkClassifications.
+        r"""Gets the guids of this OpenBulkClassifications.
 
         数据资产list
 
@@ -59,7 +59,7 @@ class OpenBulkClassifications:
 
     @guids.setter
     def guids(self, guids):
-        """Sets the guids of this OpenBulkClassifications.
+        r"""Sets the guids of this OpenBulkClassifications.
 
         数据资产list
 
@@ -70,7 +70,7 @@ class OpenBulkClassifications:
 
     @property
     def classification(self):
-        """Gets the classification of this OpenBulkClassifications.
+        r"""Gets the classification of this OpenBulkClassifications.
 
         :return: The classification of this OpenBulkClassifications.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenClassification`
@@ -79,7 +79,7 @@ class OpenBulkClassifications:
 
     @classification.setter
     def classification(self, classification):
-        """Sets the classification of this OpenBulkClassifications.
+        r"""Sets the classification of this OpenBulkClassifications.
 
         :param classification: The classification of this OpenBulkClassifications.
         :type classification: :class:`huaweicloudsdkdataartsstudio.v1.OpenClassification`

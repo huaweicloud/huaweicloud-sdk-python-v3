@@ -27,7 +27,7 @@ class ErrorInfoDTO:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ErrorInfoDTO
+        r"""ErrorInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ErrorInfoDTO:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ErrorInfoDTO.
+        r"""Gets the error_code of this ErrorInfoDTO.
 
         **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic。
 
@@ -61,7 +61,7 @@ class ErrorInfoDTO:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ErrorInfoDTO.
+        r"""Sets the error_code of this ErrorInfoDTO.
 
         **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic。
 
@@ -72,7 +72,7 @@ class ErrorInfoDTO:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ErrorInfoDTO.
+        r"""Gets the error_msg of this ErrorInfoDTO.
 
         **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明。
 
@@ -83,7 +83,7 @@ class ErrorInfoDTO:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorInfoDTO.
+        r"""Sets the error_msg of this ErrorInfoDTO.
 
         **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明。
 

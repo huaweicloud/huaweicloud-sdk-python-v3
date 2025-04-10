@@ -25,7 +25,7 @@ class DeleteIpAddressGroupForceRequest:
     }
 
     def __init__(self, address_group_id=None):
-        """DeleteIpAddressGroupForceRequest
+        r"""DeleteIpAddressGroupForceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteIpAddressGroupForceRequest:
 
     @property
     def address_group_id(self):
-        """Gets the address_group_id of this DeleteIpAddressGroupForceRequest.
+        r"""Gets the address_group_id of this DeleteIpAddressGroupForceRequest.
 
         IP地址组的唯一标识，要删除的IP地址组ID
 
@@ -53,7 +53,7 @@ class DeleteIpAddressGroupForceRequest:
 
     @address_group_id.setter
     def address_group_id(self, address_group_id):
-        """Sets the address_group_id of this DeleteIpAddressGroupForceRequest.
+        r"""Sets the address_group_id of this DeleteIpAddressGroupForceRequest.
 
         IP地址组的唯一标识，要删除的IP地址组ID
 

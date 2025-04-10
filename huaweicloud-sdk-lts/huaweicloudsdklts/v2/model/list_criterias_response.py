@@ -26,7 +26,7 @@ class ListCriteriasResponse(SdkResponse):
     }
 
     def __init__(self, search_criterias=None):
-        """ListCriteriasResponse
+        r"""ListCriteriasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCriteriasResponse(SdkResponse):
 
     @property
     def search_criterias(self):
-        """Gets the search_criterias of this ListCriteriasResponse.
+        r"""Gets the search_criterias of this ListCriteriasResponse.
 
         :return: The search_criterias of this ListCriteriasResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.GetQuerySearchCriteriasBody`]
@@ -53,7 +53,7 @@ class ListCriteriasResponse(SdkResponse):
 
     @search_criterias.setter
     def search_criterias(self, search_criterias):
-        """Sets the search_criterias of this ListCriteriasResponse.
+        r"""Sets the search_criterias of this ListCriteriasResponse.
 
         :param search_criterias: The search_criterias of this ListCriteriasResponse.
         :type search_criterias: list[:class:`huaweicloudsdklts.v2.GetQuerySearchCriteriasBody`]

@@ -27,7 +27,7 @@ class ReqUpdateDehMessage:
     }
 
     def __init__(self, auto_placement=None, name=None):
-        """ReqUpdateDehMessage
+        r"""ReqUpdateDehMessage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReqUpdateDehMessage:
 
     @property
     def auto_placement(self):
-        """Gets the auto_placement of this ReqUpdateDehMessage.
+        r"""Gets the auto_placement of this ReqUpdateDehMessage.
 
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。  取值范围：“on”或“off”。
 
@@ -61,7 +61,7 @@ class ReqUpdateDehMessage:
 
     @auto_placement.setter
     def auto_placement(self, auto_placement):
-        """Sets the auto_placement of this ReqUpdateDehMessage.
+        r"""Sets the auto_placement of this ReqUpdateDehMessage.
 
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。  取值范围：“on”或“off”。
 
@@ -72,7 +72,7 @@ class ReqUpdateDehMessage:
 
     @property
     def name(self):
-        """Gets the name of this ReqUpdateDehMessage.
+        r"""Gets the name of this ReqUpdateDehMessage.
 
         专属主机名称。
 
@@ -83,7 +83,7 @@ class ReqUpdateDehMessage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReqUpdateDehMessage.
+        r"""Sets the name of this ReqUpdateDehMessage.
 
         专属主机名称。
 

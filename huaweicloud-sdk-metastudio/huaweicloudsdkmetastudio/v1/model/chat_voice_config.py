@@ -35,7 +35,7 @@ class ChatVoiceConfig:
     }
 
     def __init__(self, voice_asset_id=None, speed=None, pitch=None, volume=None, provider=None, language=None):
-        """ChatVoiceConfig
+        r"""ChatVoiceConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ChatVoiceConfig:
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this ChatVoiceConfig.
+        r"""Gets the voice_asset_id of this ChatVoiceConfig.
 
         语音合成特征字符串
 
@@ -89,7 +89,7 @@ class ChatVoiceConfig:
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this ChatVoiceConfig.
+        r"""Sets the voice_asset_id of this ChatVoiceConfig.
 
         语音合成特征字符串
 
@@ -100,7 +100,7 @@ class ChatVoiceConfig:
 
     @property
     def speed(self):
-        """Gets the speed of this ChatVoiceConfig.
+        r"""Gets the speed of this ChatVoiceConfig.
 
         语速。默认值100，最小值50，最大值200。 > 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。
 
@@ -111,7 +111,7 @@ class ChatVoiceConfig:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this ChatVoiceConfig.
+        r"""Sets the speed of this ChatVoiceConfig.
 
         语速。默认值100，最小值50，最大值200。 > 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。
 
@@ -122,7 +122,7 @@ class ChatVoiceConfig:
 
     @property
     def pitch(self):
-        """Gets the pitch of this ChatVoiceConfig.
+        r"""Gets the pitch of this ChatVoiceConfig.
 
         音高。默认值100，最小值50，最大值200。
 
@@ -133,7 +133,7 @@ class ChatVoiceConfig:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this ChatVoiceConfig.
+        r"""Sets the pitch of this ChatVoiceConfig.
 
         音高。默认值100，最小值50，最大值200。
 
@@ -144,7 +144,7 @@ class ChatVoiceConfig:
 
     @property
     def volume(self):
-        """Gets the volume of this ChatVoiceConfig.
+        r"""Gets the volume of this ChatVoiceConfig.
 
         音量。默认值140，最小值90，最大值240。
 
@@ -155,7 +155,7 @@ class ChatVoiceConfig:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ChatVoiceConfig.
+        r"""Sets the volume of this ChatVoiceConfig.
 
         音量。默认值140，最小值90，最大值240。
 
@@ -166,7 +166,7 @@ class ChatVoiceConfig:
 
     @property
     def provider(self):
-        """Gets the provider of this ChatVoiceConfig.
+        r"""Gets the provider of this ChatVoiceConfig.
 
         第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
 
@@ -177,7 +177,7 @@ class ChatVoiceConfig:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ChatVoiceConfig.
+        r"""Sets the provider of this ChatVoiceConfig.
 
         第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
 
@@ -188,7 +188,7 @@ class ChatVoiceConfig:
 
     @property
     def language(self):
-        """Gets the language of this ChatVoiceConfig.
+        r"""Gets the language of this ChatVoiceConfig.
 
         语言类型。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -199,7 +199,7 @@ class ChatVoiceConfig:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ChatVoiceConfig.
+        r"""Sets the language of this ChatVoiceConfig.
 
         语言类型。默认值CN。 * CN：简体中文。 * EN：英语。
 

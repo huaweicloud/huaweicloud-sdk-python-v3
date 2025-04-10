@@ -35,7 +35,7 @@ class ExportOpenApiReq:
     }
 
     def __init__(self, env_id=None, group_id=None, define=None, type=None, version=None, apis=None):
-        """ExportOpenApiReq
+        r"""ExportOpenApiReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ExportOpenApiReq:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ExportOpenApiReq.
+        r"""Gets the env_id of this ExportOpenApiReq.
 
         API分组发布的环境ID
 
@@ -87,7 +87,7 @@ class ExportOpenApiReq:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ExportOpenApiReq.
+        r"""Sets the env_id of this ExportOpenApiReq.
 
         API分组发布的环境ID
 
@@ -98,7 +98,7 @@ class ExportOpenApiReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ExportOpenApiReq.
+        r"""Gets the group_id of this ExportOpenApiReq.
 
         API分组ID
 
@@ -109,7 +109,7 @@ class ExportOpenApiReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ExportOpenApiReq.
+        r"""Sets the group_id of this ExportOpenApiReq.
 
         API分组ID
 
@@ -120,7 +120,7 @@ class ExportOpenApiReq:
 
     @property
     def define(self):
-        """Gets the define of this ExportOpenApiReq.
+        r"""Gets the define of this ExportOpenApiReq.
 
         导出API的定义范围： - spec：基础定义，只包括api前端定义 - proxy：全量定义，包括api前后端定义 - all：扩展定义，包括api前后端定义以及流控、访问控制、自定义认证等扩展定义 - dev：开发定义，包括未发布的api的前后端定义
 
@@ -131,7 +131,7 @@ class ExportOpenApiReq:
 
     @define.setter
     def define(self, define):
-        """Sets the define of this ExportOpenApiReq.
+        r"""Sets the define of this ExportOpenApiReq.
 
         导出API的定义范围： - spec：基础定义，只包括api前端定义 - proxy：全量定义，包括api前后端定义 - all：扩展定义，包括api前后端定义以及流控、访问控制、自定义认证等扩展定义 - dev：开发定义，包括未发布的api的前后端定义
 
@@ -142,7 +142,7 @@ class ExportOpenApiReq:
 
     @property
     def type(self):
-        """Gets the type of this ExportOpenApiReq.
+        r"""Gets the type of this ExportOpenApiReq.
 
         导出的API定义的格式
 
@@ -153,7 +153,7 @@ class ExportOpenApiReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExportOpenApiReq.
+        r"""Sets the type of this ExportOpenApiReq.
 
         导出的API定义的格式
 
@@ -164,7 +164,7 @@ class ExportOpenApiReq:
 
     @property
     def version(self):
-        """Gets the version of this ExportOpenApiReq.
+        r"""Gets the version of this ExportOpenApiReq.
 
         导出的API定义版本，默认为当前时间
 
@@ -175,7 +175,7 @@ class ExportOpenApiReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ExportOpenApiReq.
+        r"""Sets the version of this ExportOpenApiReq.
 
         导出的API定义版本，默认为当前时间
 
@@ -186,7 +186,7 @@ class ExportOpenApiReq:
 
     @property
     def apis(self):
-        """Gets the apis of this ExportOpenApiReq.
+        r"""Gets the apis of this ExportOpenApiReq.
 
         导出的API ID列表
 
@@ -197,7 +197,7 @@ class ExportOpenApiReq:
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ExportOpenApiReq.
+        r"""Sets the apis of this ExportOpenApiReq.
 
         导出的API ID列表
 

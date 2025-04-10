@@ -31,7 +31,7 @@ class UpdateEdgeAppVersionDTO:
     }
 
     def __init__(self, description=None, container_settings=None, command=None, args=None):
-        """UpdateEdgeAppVersionDTO
+        r"""UpdateEdgeAppVersionDTO
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEdgeAppVersionDTO.
+        r"""Gets the description of this UpdateEdgeAppVersionDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -74,7 +74,7 @@ class UpdateEdgeAppVersionDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEdgeAppVersionDTO.
+        r"""Sets the description of this UpdateEdgeAppVersionDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -85,7 +85,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this UpdateEdgeAppVersionDTO.
+        r"""Gets the container_settings of this UpdateEdgeAppVersionDTO.
 
         :return: The container_settings of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ContainerSettingsDTO`
@@ -94,7 +94,7 @@ class UpdateEdgeAppVersionDTO:
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this UpdateEdgeAppVersionDTO.
+        r"""Sets the container_settings of this UpdateEdgeAppVersionDTO.
 
         :param container_settings: The container_settings of this UpdateEdgeAppVersionDTO.
         :type container_settings: :class:`huaweicloudsdkdris.v1.ContainerSettingsDTO`
@@ -103,7 +103,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def command(self):
-        """Gets the command of this UpdateEdgeAppVersionDTO.
+        r"""Gets the command of this UpdateEdgeAppVersionDTO.
 
         **参数说明**：启动命令。
 
@@ -114,7 +114,7 @@ class UpdateEdgeAppVersionDTO:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this UpdateEdgeAppVersionDTO.
+        r"""Sets the command of this UpdateEdgeAppVersionDTO.
 
         **参数说明**：启动命令。
 
@@ -125,7 +125,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def args(self):
-        """Gets the args of this UpdateEdgeAppVersionDTO.
+        r"""Gets the args of this UpdateEdgeAppVersionDTO.
 
         **参数说明**：启动参数。
 
@@ -136,7 +136,7 @@ class UpdateEdgeAppVersionDTO:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this UpdateEdgeAppVersionDTO.
+        r"""Sets the args of this UpdateEdgeAppVersionDTO.
 
         **参数说明**：启动参数。
 

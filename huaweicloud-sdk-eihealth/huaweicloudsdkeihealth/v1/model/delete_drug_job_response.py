@@ -24,7 +24,7 @@ class DeleteDrugJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDrugJobResponse
+        r"""DeleteDrugJobResponse
 
         The model defined in huaweicloud sdk
 

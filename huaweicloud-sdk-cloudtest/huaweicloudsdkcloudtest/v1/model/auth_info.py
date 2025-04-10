@@ -27,7 +27,7 @@ class AuthInfo:
     }
 
     def __init__(self, access_key=None, secret_key=None):
-        """AuthInfo
+        r"""AuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AuthInfo:
 
     @property
     def access_key(self):
-        """Gets the access_key of this AuthInfo.
+        r"""Gets the access_key of this AuthInfo.
 
         访问密钥
 
@@ -61,7 +61,7 @@ class AuthInfo:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this AuthInfo.
+        r"""Sets the access_key of this AuthInfo.
 
         访问密钥
 
@@ -72,7 +72,7 @@ class AuthInfo:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this AuthInfo.
+        r"""Gets the secret_key of this AuthInfo.
 
         私钥
 
@@ -83,7 +83,7 @@ class AuthInfo:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this AuthInfo.
+        r"""Sets the secret_key of this AuthInfo.
 
         私钥
 

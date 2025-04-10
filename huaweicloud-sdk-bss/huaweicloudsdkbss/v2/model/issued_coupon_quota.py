@@ -55,7 +55,7 @@ class IssuedCouponQuota:
     }
 
     def __init__(self, quota_id=None, quota_type=None, create_time=None, last_update_time=None, quota_value=None, quota_status=None, balance=None, measure_id=None, currency=None, effective_time=None, expire_time=None, limit_infos=None, indirect_partner_id=None, indirect_partner_account_name=None, indirect_partner_name=None, parent_quota_id=None):
-        """IssuedCouponQuota
+        r"""IssuedCouponQuota
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class IssuedCouponQuota:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this IssuedCouponQuota.
+        r"""Gets the quota_id of this IssuedCouponQuota.
 
         已发放的代金券额度ID。
 
@@ -159,7 +159,7 @@ class IssuedCouponQuota:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this IssuedCouponQuota.
+        r"""Sets the quota_id of this IssuedCouponQuota.
 
         已发放的代金券额度ID。
 
@@ -170,7 +170,7 @@ class IssuedCouponQuota:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this IssuedCouponQuota.
+        r"""Gets the quota_type of this IssuedCouponQuota.
 
         额度类型： 0：代金券额度
 
@@ -181,7 +181,7 @@ class IssuedCouponQuota:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this IssuedCouponQuota.
+        r"""Sets the quota_type of this IssuedCouponQuota.
 
         额度类型： 0：代金券额度
 
@@ -192,7 +192,7 @@ class IssuedCouponQuota:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IssuedCouponQuota.
+        r"""Gets the create_time of this IssuedCouponQuota.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -203,7 +203,7 @@ class IssuedCouponQuota:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IssuedCouponQuota.
+        r"""Sets the create_time of this IssuedCouponQuota.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -214,7 +214,7 @@ class IssuedCouponQuota:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this IssuedCouponQuota.
+        r"""Gets the last_update_time of this IssuedCouponQuota.
 
         最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -225,7 +225,7 @@ class IssuedCouponQuota:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this IssuedCouponQuota.
+        r"""Sets the last_update_time of this IssuedCouponQuota.
 
         最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -236,7 +236,7 @@ class IssuedCouponQuota:
 
     @property
     def quota_value(self):
-        """Gets the quota_value of this IssuedCouponQuota.
+        r"""Gets the quota_value of this IssuedCouponQuota.
 
         代金券额度的值，精确到小数点后2位。
 
@@ -247,7 +247,7 @@ class IssuedCouponQuota:
 
     @quota_value.setter
     def quota_value(self, quota_value):
-        """Sets the quota_value of this IssuedCouponQuota.
+        r"""Sets the quota_value of this IssuedCouponQuota.
 
         代金券额度的值，精确到小数点后2位。
 
@@ -258,7 +258,7 @@ class IssuedCouponQuota:
 
     @property
     def quota_status(self):
-        """Gets the quota_status of this IssuedCouponQuota.
+        r"""Gets the quota_status of this IssuedCouponQuota.
 
         代金券额度的状态： 0：正常3：失效（包括过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）5：冻结6：回收
 
@@ -269,7 +269,7 @@ class IssuedCouponQuota:
 
     @quota_status.setter
     def quota_status(self, quota_status):
-        """Sets the quota_status of this IssuedCouponQuota.
+        r"""Sets the quota_status of this IssuedCouponQuota.
 
         代金券额度的状态： 0：正常3：失效（包括过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）5：冻结6：回收
 
@@ -280,7 +280,7 @@ class IssuedCouponQuota:
 
     @property
     def balance(self):
-        """Gets the balance of this IssuedCouponQuota.
+        r"""Gets the balance of this IssuedCouponQuota.
 
         剩余的代金券额度，精确到小数点后2位。
 
@@ -291,7 +291,7 @@ class IssuedCouponQuota:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this IssuedCouponQuota.
+        r"""Sets the balance of this IssuedCouponQuota.
 
         剩余的代金券额度，精确到小数点后2位。
 
@@ -302,7 +302,7 @@ class IssuedCouponQuota:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this IssuedCouponQuota.
+        r"""Gets the measure_id of this IssuedCouponQuota.
 
         代金券额度的单位。 1：元。
 
@@ -313,7 +313,7 @@ class IssuedCouponQuota:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this IssuedCouponQuota.
+        r"""Sets the measure_id of this IssuedCouponQuota.
 
         代金券额度的单位。 1：元。
 
@@ -324,7 +324,7 @@ class IssuedCouponQuota:
 
     @property
     def currency(self):
-        """Gets the currency of this IssuedCouponQuota.
+        r"""Gets the currency of this IssuedCouponQuota.
 
         币种。 CNY：人民币
 
@@ -335,7 +335,7 @@ class IssuedCouponQuota:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this IssuedCouponQuota.
+        r"""Sets the currency of this IssuedCouponQuota.
 
         币种。 CNY：人民币
 
@@ -346,7 +346,7 @@ class IssuedCouponQuota:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this IssuedCouponQuota.
+        r"""Gets the effective_time of this IssuedCouponQuota.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -357,7 +357,7 @@ class IssuedCouponQuota:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this IssuedCouponQuota.
+        r"""Sets the effective_time of this IssuedCouponQuota.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -368,7 +368,7 @@ class IssuedCouponQuota:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this IssuedCouponQuota.
+        r"""Gets the expire_time of this IssuedCouponQuota.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -379,7 +379,7 @@ class IssuedCouponQuota:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this IssuedCouponQuota.
+        r"""Sets the expire_time of this IssuedCouponQuota.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -390,7 +390,7 @@ class IssuedCouponQuota:
 
     @property
     def limit_infos(self):
-        """Gets the limit_infos of this IssuedCouponQuota.
+        r"""Gets the limit_infos of this IssuedCouponQuota.
 
         代金券额度上的限制属性，具体参见表3。
 
@@ -401,7 +401,7 @@ class IssuedCouponQuota:
 
     @limit_infos.setter
     def limit_infos(self, limit_infos):
-        """Sets the limit_infos of this IssuedCouponQuota.
+        r"""Sets the limit_infos of this IssuedCouponQuota.
 
         代金券额度上的限制属性，具体参见表3。
 
@@ -412,7 +412,7 @@ class IssuedCouponQuota:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this IssuedCouponQuota.
+        r"""Gets the indirect_partner_id of this IssuedCouponQuota.
 
         云经销商ID。
 
@@ -423,7 +423,7 @@ class IssuedCouponQuota:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this IssuedCouponQuota.
+        r"""Sets the indirect_partner_id of this IssuedCouponQuota.
 
         云经销商ID。
 
@@ -434,7 +434,7 @@ class IssuedCouponQuota:
 
     @property
     def indirect_partner_account_name(self):
-        """Gets the indirect_partner_account_name of this IssuedCouponQuota.
+        r"""Gets the indirect_partner_account_name of this IssuedCouponQuota.
 
         云经销商账号名。
 
@@ -445,7 +445,7 @@ class IssuedCouponQuota:
 
     @indirect_partner_account_name.setter
     def indirect_partner_account_name(self, indirect_partner_account_name):
-        """Sets the indirect_partner_account_name of this IssuedCouponQuota.
+        r"""Sets the indirect_partner_account_name of this IssuedCouponQuota.
 
         云经销商账号名。
 
@@ -456,7 +456,7 @@ class IssuedCouponQuota:
 
     @property
     def indirect_partner_name(self):
-        """Gets the indirect_partner_name of this IssuedCouponQuota.
+        r"""Gets the indirect_partner_name of this IssuedCouponQuota.
 
         云经销商名称。
 
@@ -467,7 +467,7 @@ class IssuedCouponQuota:
 
     @indirect_partner_name.setter
     def indirect_partner_name(self, indirect_partner_name):
-        """Sets the indirect_partner_name of this IssuedCouponQuota.
+        r"""Sets the indirect_partner_name of this IssuedCouponQuota.
 
         云经销商名称。
 
@@ -478,7 +478,7 @@ class IssuedCouponQuota:
 
     @property
     def parent_quota_id(self):
-        """Gets the parent_quota_id of this IssuedCouponQuota.
+        r"""Gets the parent_quota_id of this IssuedCouponQuota.
 
         父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。
 
@@ -489,7 +489,7 @@ class IssuedCouponQuota:
 
     @parent_quota_id.setter
     def parent_quota_id(self, parent_quota_id):
-        """Sets the parent_quota_id of this IssuedCouponQuota.
+        r"""Sets the parent_quota_id of this IssuedCouponQuota.
 
         父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。
 

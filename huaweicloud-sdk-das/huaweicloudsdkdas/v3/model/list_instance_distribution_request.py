@@ -27,7 +27,7 @@ class ListInstanceDistributionRequest:
     }
 
     def __init__(self, datastore_type=None, x_language=None):
-        """ListInstanceDistributionRequest
+        r"""ListInstanceDistributionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListInstanceDistributionRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListInstanceDistributionRequest.
+        r"""Gets the datastore_type of this ListInstanceDistributionRequest.
 
         数据库类型
 
@@ -61,7 +61,7 @@ class ListInstanceDistributionRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListInstanceDistributionRequest.
+        r"""Sets the datastore_type of this ListInstanceDistributionRequest.
 
         数据库类型
 
@@ -72,7 +72,7 @@ class ListInstanceDistributionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstanceDistributionRequest.
+        r"""Gets the x_language of this ListInstanceDistributionRequest.
 
         语言
 
@@ -83,7 +83,7 @@ class ListInstanceDistributionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstanceDistributionRequest.
+        r"""Sets the x_language of this ListInstanceDistributionRequest.
 
         语言
 

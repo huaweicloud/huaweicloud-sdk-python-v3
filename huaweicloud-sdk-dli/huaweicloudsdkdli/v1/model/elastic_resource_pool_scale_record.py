@@ -39,7 +39,7 @@ class ElasticResourcePoolScaleRecord:
     }
 
     def __init__(self, max_cu=None, min_cu=None, current_cu=None, origin_cu=None, target_cu=None, record_time=None, status=None, fail_reason=None):
-        """ElasticResourcePoolScaleRecord
+        r"""ElasticResourcePoolScaleRecord
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def max_cu(self):
-        """Gets the max_cu of this ElasticResourcePoolScaleRecord.
+        r"""Gets the max_cu of this ElasticResourcePoolScaleRecord.
 
         最大Cu
 
@@ -96,7 +96,7 @@ class ElasticResourcePoolScaleRecord:
 
     @max_cu.setter
     def max_cu(self, max_cu):
-        """Sets the max_cu of this ElasticResourcePoolScaleRecord.
+        r"""Sets the max_cu of this ElasticResourcePoolScaleRecord.
 
         最大Cu
 
@@ -107,7 +107,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def min_cu(self):
-        """Gets the min_cu of this ElasticResourcePoolScaleRecord.
+        r"""Gets the min_cu of this ElasticResourcePoolScaleRecord.
 
         最小CU
 
@@ -118,7 +118,7 @@ class ElasticResourcePoolScaleRecord:
 
     @min_cu.setter
     def min_cu(self, min_cu):
-        """Sets the min_cu of this ElasticResourcePoolScaleRecord.
+        r"""Sets the min_cu of this ElasticResourcePoolScaleRecord.
 
         最小CU
 
@@ -129,7 +129,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def current_cu(self):
-        """Gets the current_cu of this ElasticResourcePoolScaleRecord.
+        r"""Gets the current_cu of this ElasticResourcePoolScaleRecord.
 
         扩缩容后CU
 
@@ -140,7 +140,7 @@ class ElasticResourcePoolScaleRecord:
 
     @current_cu.setter
     def current_cu(self, current_cu):
-        """Sets the current_cu of this ElasticResourcePoolScaleRecord.
+        r"""Sets the current_cu of this ElasticResourcePoolScaleRecord.
 
         扩缩容后CU
 
@@ -151,7 +151,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def origin_cu(self):
-        """Gets the origin_cu of this ElasticResourcePoolScaleRecord.
+        r"""Gets the origin_cu of this ElasticResourcePoolScaleRecord.
 
         扩缩容前CU
 
@@ -162,7 +162,7 @@ class ElasticResourcePoolScaleRecord:
 
     @origin_cu.setter
     def origin_cu(self, origin_cu):
-        """Sets the origin_cu of this ElasticResourcePoolScaleRecord.
+        r"""Sets the origin_cu of this ElasticResourcePoolScaleRecord.
 
         扩缩容前CU
 
@@ -173,7 +173,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def target_cu(self):
-        """Gets the target_cu of this ElasticResourcePoolScaleRecord.
+        r"""Gets the target_cu of this ElasticResourcePoolScaleRecord.
 
         扩缩容预期CU
 
@@ -184,7 +184,7 @@ class ElasticResourcePoolScaleRecord:
 
     @target_cu.setter
     def target_cu(self, target_cu):
-        """Sets the target_cu of this ElasticResourcePoolScaleRecord.
+        r"""Sets the target_cu of this ElasticResourcePoolScaleRecord.
 
         扩缩容预期CU
 
@@ -195,7 +195,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def record_time(self):
-        """Gets the record_time of this ElasticResourcePoolScaleRecord.
+        r"""Gets the record_time of this ElasticResourcePoolScaleRecord.
 
         操作完成时间
 
@@ -206,7 +206,7 @@ class ElasticResourcePoolScaleRecord:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this ElasticResourcePoolScaleRecord.
+        r"""Sets the record_time of this ElasticResourcePoolScaleRecord.
 
         操作完成时间
 
@@ -217,7 +217,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def status(self):
-        """Gets the status of this ElasticResourcePoolScaleRecord.
+        r"""Gets the status of this ElasticResourcePoolScaleRecord.
 
         扩缩容成功或者失败的状态
 
@@ -228,7 +228,7 @@ class ElasticResourcePoolScaleRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ElasticResourcePoolScaleRecord.
+        r"""Sets the status of this ElasticResourcePoolScaleRecord.
 
         扩缩容成功或者失败的状态
 
@@ -239,7 +239,7 @@ class ElasticResourcePoolScaleRecord:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ElasticResourcePoolScaleRecord.
+        r"""Gets the fail_reason of this ElasticResourcePoolScaleRecord.
 
         失败原因
 
@@ -250,7 +250,7 @@ class ElasticResourcePoolScaleRecord:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ElasticResourcePoolScaleRecord.
+        r"""Sets the fail_reason of this ElasticResourcePoolScaleRecord.
 
         失败原因
 

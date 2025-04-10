@@ -35,7 +35,7 @@ class ApiConditionBase:
     }
 
     def __init__(self, req_param_name=None, sys_param_name=None, cookie_param_name=None, condition_type=None, condition_origin=None, condition_value=None):
-        """ApiConditionBase
+        r"""ApiConditionBase
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ApiConditionBase:
 
     @property
     def req_param_name(self):
-        """Gets the req_param_name of this ApiConditionBase.
+        r"""Gets the req_param_name of this ApiConditionBase.
 
         关联的请求参数对象名称。策略类型为param时必选
 
@@ -87,7 +87,7 @@ class ApiConditionBase:
 
     @req_param_name.setter
     def req_param_name(self, req_param_name):
-        """Sets the req_param_name of this ApiConditionBase.
+        r"""Sets the req_param_name of this ApiConditionBase.
 
         关联的请求参数对象名称。策略类型为param时必选
 
@@ -98,7 +98,7 @@ class ApiConditionBase:
 
     @property
     def sys_param_name(self):
-        """Gets the sys_param_name of this ApiConditionBase.
+        r"""Gets the sys_param_name of this ApiConditionBase.
 
         系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
@@ -109,7 +109,7 @@ class ApiConditionBase:
 
     @sys_param_name.setter
     def sys_param_name(self, sys_param_name):
-        """Sets the sys_param_name of this ApiConditionBase.
+        r"""Sets the sys_param_name of this ApiConditionBase.
 
         系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
@@ -120,7 +120,7 @@ class ApiConditionBase:
 
     @property
     def cookie_param_name(self):
-        """Gets the cookie_param_name of this ApiConditionBase.
+        r"""Gets the cookie_param_name of this ApiConditionBase.
 
         COOKIE参数名称;策略类型为cookie时必选
 
@@ -131,7 +131,7 @@ class ApiConditionBase:
 
     @cookie_param_name.setter
     def cookie_param_name(self, cookie_param_name):
-        """Sets the cookie_param_name of this ApiConditionBase.
+        r"""Sets the cookie_param_name of this ApiConditionBase.
 
         COOKIE参数名称;策略类型为cookie时必选
 
@@ -142,7 +142,7 @@ class ApiConditionBase:
 
     @property
     def condition_type(self):
-        """Gets the condition_type of this ApiConditionBase.
+        r"""Gets the condition_type of this ApiConditionBase.
 
         策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
 
@@ -153,7 +153,7 @@ class ApiConditionBase:
 
     @condition_type.setter
     def condition_type(self, condition_type):
-        """Sets the condition_type of this ApiConditionBase.
+        r"""Sets the condition_type of this ApiConditionBase.
 
         策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
 
@@ -164,7 +164,7 @@ class ApiConditionBase:
 
     @property
     def condition_origin(self):
-        """Gets the condition_origin of this ApiConditionBase.
+        r"""Gets the condition_origin of this ApiConditionBase.
 
         策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
 
@@ -175,7 +175,7 @@ class ApiConditionBase:
 
     @condition_origin.setter
     def condition_origin(self, condition_origin):
-        """Sets the condition_origin of this ApiConditionBase.
+        r"""Sets the condition_origin of this ApiConditionBase.
 
         策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
 
@@ -186,7 +186,7 @@ class ApiConditionBase:
 
     @property
     def condition_value(self):
-        """Gets the condition_value of this ApiConditionBase.
+        r"""Gets the condition_value of this ApiConditionBase.
 
         策略值;策略类型为param，source,cookie时必填
 
@@ -197,7 +197,7 @@ class ApiConditionBase:
 
     @condition_value.setter
     def condition_value(self, condition_value):
-        """Sets the condition_value of this ApiConditionBase.
+        r"""Sets the condition_value of this ApiConditionBase.
 
         策略值;策略类型为param，source,cookie时必填
 

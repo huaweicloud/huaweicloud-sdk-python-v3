@@ -34,7 +34,7 @@ class AsmAsyncClient(Client):
         return client_builder
 
     def create_mesh_async(self, request):
-        """创建网格
+        r"""创建网格
 
         该API用于创建一个网格
         
@@ -103,7 +103,7 @@ class AsmAsyncClient(Client):
         return http_info
 
     def delete_mesh_async(self, request):
-        """删除网格
+        r"""删除网格
 
         该API用于删除一个指定的网格
         
@@ -172,7 +172,7 @@ class AsmAsyncClient(Client):
         return http_info
 
     def list_meshes_async(self, request):
-        """查询网格列表
+        r"""查询网格列表
 
         该API用于获取用户所有网格的详细信息
         
@@ -239,7 +239,7 @@ class AsmAsyncClient(Client):
         return http_info
 
     def show_mesh_async(self, request):
-        """查询网格
+        r"""查询网格
 
         该API用于获取指定网格的详细信息
         

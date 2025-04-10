@@ -27,7 +27,7 @@ class BatchSwitchesRequest:
     }
 
     def __init__(self, ids=None, status=None):
-        """BatchSwitchesRequest
+        r"""BatchSwitchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSwitchesRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchSwitchesRequest.
+        r"""Gets the ids of this BatchSwitchesRequest.
 
         规则ID,多个ID中间逗号分隔。可在查询风险规则策略接口ID字段获取。
 
@@ -61,7 +61,7 @@ class BatchSwitchesRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchSwitchesRequest.
+        r"""Sets the ids of this BatchSwitchesRequest.
 
         规则ID,多个ID中间逗号分隔。可在查询风险规则策略接口ID字段获取。
 
@@ -72,7 +72,7 @@ class BatchSwitchesRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchSwitchesRequest.
+        r"""Gets the status of this BatchSwitchesRequest.
 
         开关状态 - OFF: 关闭 - ON: 开启
 
@@ -83,7 +83,7 @@ class BatchSwitchesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchSwitchesRequest.
+        r"""Sets the status of this BatchSwitchesRequest.
 
         开关状态 - OFF: 关闭 - ON: 开启
 

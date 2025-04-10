@@ -42,7 +42,7 @@ class CreateResolveTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, tpl_id=None, sms_signs=None, resolving_times=None, resolved_times=None, aim_code_type=None, domain=None, expiration_time=None, params=None):
-        """CreateResolveTaskResponse
+        r"""CreateResolveTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateResolveTaskResponse.
+        r"""Gets the task_id of this CreateResolveTaskResponse.
 
         任务ID。
 
@@ -111,7 +111,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateResolveTaskResponse.
+        r"""Sets the task_id of this CreateResolveTaskResponse.
 
         任务ID。
 
@@ -122,7 +122,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateResolveTaskResponse.
+        r"""Gets the tpl_id of this CreateResolveTaskResponse.
 
         智能信息模板ID，由9位数字组成。
 
@@ -133,7 +133,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateResolveTaskResponse.
+        r"""Sets the tpl_id of this CreateResolveTaskResponse.
 
         智能信息模板ID，由9位数字组成。
 
@@ -144,7 +144,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def sms_signs(self):
-        """Gets the sms_signs of this CreateResolveTaskResponse.
+        r"""Gets the sms_signs of this CreateResolveTaskResponse.
 
         短信签名列表。
 
@@ -155,7 +155,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @sms_signs.setter
     def sms_signs(self, sms_signs):
-        """Sets the sms_signs of this CreateResolveTaskResponse.
+        r"""Sets the sms_signs of this CreateResolveTaskResponse.
 
         短信签名列表。
 
@@ -166,7 +166,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def resolving_times(self):
-        """Gets the resolving_times of this CreateResolveTaskResponse.
+        r"""Gets the resolving_times of this CreateResolveTaskResponse.
 
         用户创建时提交的最大解析次数。
 
@@ -177,7 +177,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @resolving_times.setter
     def resolving_times(self, resolving_times):
-        """Sets the resolving_times of this CreateResolveTaskResponse.
+        r"""Sets the resolving_times of this CreateResolveTaskResponse.
 
         用户创建时提交的最大解析次数。
 
@@ -188,7 +188,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def resolved_times(self):
-        """Gets the resolved_times of this CreateResolveTaskResponse.
+        r"""Gets the resolved_times of this CreateResolveTaskResponse.
 
         实际已解析数量统计。  > 预留字段。 
 
@@ -199,7 +199,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @resolved_times.setter
     def resolved_times(self, resolved_times):
-        """Sets the resolved_times of this CreateResolveTaskResponse.
+        r"""Sets the resolved_times of this CreateResolveTaskResponse.
 
         实际已解析数量统计。  > 预留字段。 
 
@@ -210,7 +210,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def aim_code_type(self):
-        """Gets the aim_code_type of this CreateResolveTaskResponse.
+        r"""Gets the aim_code_type of this CreateResolveTaskResponse.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -221,7 +221,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @aim_code_type.setter
     def aim_code_type(self, aim_code_type):
-        """Sets the aim_code_type of this CreateResolveTaskResponse.
+        r"""Sets the aim_code_type of this CreateResolveTaskResponse.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -232,7 +232,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this CreateResolveTaskResponse.
+        r"""Gets the domain of this CreateResolveTaskResponse.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。
 
@@ -243,7 +243,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateResolveTaskResponse.
+        r"""Sets the domain of this CreateResolveTaskResponse.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。
 
@@ -254,7 +254,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this CreateResolveTaskResponse.
+        r"""Gets the expiration_time of this CreateResolveTaskResponse.
 
         失效时间（天）。
 
@@ -265,7 +265,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this CreateResolveTaskResponse.
+        r"""Sets the expiration_time of this CreateResolveTaskResponse.
 
         失效时间（天）。
 
@@ -276,7 +276,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this CreateResolveTaskResponse.
+        r"""Gets the params of this CreateResolveTaskResponse.
 
         短链列表。
 
@@ -287,7 +287,7 @@ class CreateResolveTaskResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateResolveTaskResponse.
+        r"""Sets the params of this CreateResolveTaskResponse.
 
         短链列表。
 

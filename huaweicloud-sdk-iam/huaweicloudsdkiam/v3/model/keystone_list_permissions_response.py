@@ -30,7 +30,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, roles=None, total_number=None):
-        """KeystoneListPermissionsResponse
+        r"""KeystoneListPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListPermissionsResponse.
+        r"""Gets the links of this KeystoneListPermissionsResponse.
 
         :return: The links of this KeystoneListPermissionsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -67,7 +67,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListPermissionsResponse.
+        r"""Sets the links of this KeystoneListPermissionsResponse.
 
         :param links: The links of this KeystoneListPermissionsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -76,7 +76,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this KeystoneListPermissionsResponse.
+        r"""Gets the roles of this KeystoneListPermissionsResponse.
 
         权限信息列表。
 
@@ -87,7 +87,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this KeystoneListPermissionsResponse.
+        r"""Sets the roles of this KeystoneListPermissionsResponse.
 
         权限信息列表。
 
@@ -98,7 +98,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this KeystoneListPermissionsResponse.
+        r"""Gets the total_number of this KeystoneListPermissionsResponse.
 
         在查询参数存在domain_id时，返回自定义策略总数
 
@@ -109,7 +109,7 @@ class KeystoneListPermissionsResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this KeystoneListPermissionsResponse.
+        r"""Sets the total_number of this KeystoneListPermissionsResponse.
 
         在查询参数存在domain_id时，返回自定义策略总数
 

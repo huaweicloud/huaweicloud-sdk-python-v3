@@ -41,7 +41,7 @@ class AddDeviceRequestBody:
     }
 
     def __init__(self, node_id=None, device_name=None, product_id=None, auth_info=None, description=None, gateway_id=None, space_id=None, extension_info=None, config=None):
-        """AddDeviceRequestBody
+        r"""AddDeviceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class AddDeviceRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this AddDeviceRequestBody.
+        r"""Gets the node_id of this AddDeviceRequestBody.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。（注意:NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。）
 
@@ -108,7 +108,7 @@ class AddDeviceRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AddDeviceRequestBody.
+        r"""Sets the node_id of this AddDeviceRequestBody.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。（注意:NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。）
 
@@ -119,7 +119,7 @@ class AddDeviceRequestBody:
 
     @property
     def device_name(self):
-        """Gets the device_name of this AddDeviceRequestBody.
+        r"""Gets the device_name of this AddDeviceRequestBody.
 
         设备名称。
 
@@ -130,7 +130,7 @@ class AddDeviceRequestBody:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this AddDeviceRequestBody.
+        r"""Sets the device_name of this AddDeviceRequestBody.
 
         设备名称。
 
@@ -141,7 +141,7 @@ class AddDeviceRequestBody:
 
     @property
     def product_id(self):
-        """Gets the product_id of this AddDeviceRequestBody.
+        r"""Gets the product_id of this AddDeviceRequestBody.
 
         设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
@@ -152,7 +152,7 @@ class AddDeviceRequestBody:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this AddDeviceRequestBody.
+        r"""Sets the product_id of this AddDeviceRequestBody.
 
         设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
@@ -163,7 +163,7 @@ class AddDeviceRequestBody:
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this AddDeviceRequestBody.
+        r"""Gets the auth_info of this AddDeviceRequestBody.
 
         :return: The auth_info of this AddDeviceRequestBody.
         :rtype: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
@@ -172,7 +172,7 @@ class AddDeviceRequestBody:
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this AddDeviceRequestBody.
+        r"""Sets the auth_info of this AddDeviceRequestBody.
 
         :param auth_info: The auth_info of this AddDeviceRequestBody.
         :type auth_info: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
@@ -181,7 +181,7 @@ class AddDeviceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this AddDeviceRequestBody.
+        r"""Gets the description of this AddDeviceRequestBody.
 
         设备的描述信息。
 
@@ -192,7 +192,7 @@ class AddDeviceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddDeviceRequestBody.
+        r"""Sets the description of this AddDeviceRequestBody.
 
         设备的描述信息。
 
@@ -203,7 +203,7 @@ class AddDeviceRequestBody:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this AddDeviceRequestBody.
+        r"""Gets the gateway_id of this AddDeviceRequestBody.
 
         父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
 
@@ -214,7 +214,7 @@ class AddDeviceRequestBody:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this AddDeviceRequestBody.
+        r"""Sets the gateway_id of this AddDeviceRequestBody.
 
         父设备ID，用于标识设备所属的父设备。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。
 
@@ -225,7 +225,7 @@ class AddDeviceRequestBody:
 
     @property
     def space_id(self):
-        """Gets the space_id of this AddDeviceRequestBody.
+        r"""Gets the space_id of this AddDeviceRequestBody.
 
         资源空间Id。此参数为非必选参数，用于兼容平台老用户存在多应用的场景。存在多应用的用户需要使用该接口时，必须携带该参数指定注册的设备归属到哪个应用下，否则接口会提示错误。如果用户存在多应用，同时又不想携带该参数，可以联系华为技术支持对用户数据做应用合并。
 
@@ -236,7 +236,7 @@ class AddDeviceRequestBody:
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this AddDeviceRequestBody.
+        r"""Sets the space_id of this AddDeviceRequestBody.
 
         资源空间Id。此参数为非必选参数，用于兼容平台老用户存在多应用的场景。存在多应用的用户需要使用该接口时，必须携带该参数指定注册的设备归属到哪个应用下，否则接口会提示错误。如果用户存在多应用，同时又不想携带该参数，可以联系华为技术支持对用户数据做应用合并。
 
@@ -247,7 +247,7 @@ class AddDeviceRequestBody:
 
     @property
     def extension_info(self):
-        """Gets the extension_info of this AddDeviceRequestBody.
+        r"""Gets the extension_info of this AddDeviceRequestBody.
 
         设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。 追加：如果通过EdgeHub, EdgeAccess进行设备接入，不需要携带extension_info；如果通过用户自定义的应用进行边缘设备接入，则携带模块id参数作为extension_info, 例如：{\\\"module_id\":\\\"user_xxx\"}
 
@@ -258,7 +258,7 @@ class AddDeviceRequestBody:
 
     @extension_info.setter
     def extension_info(self, extension_info):
-        """Sets the extension_info of this AddDeviceRequestBody.
+        r"""Sets the extension_info of this AddDeviceRequestBody.
 
         设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。 追加：如果通过EdgeHub, EdgeAccess进行设备接入，不需要携带extension_info；如果通过用户自定义的应用进行边缘设备接入，则携带模块id参数作为extension_info, 例如：{\\\"module_id\":\\\"user_xxx\"}
 
@@ -269,7 +269,7 @@ class AddDeviceRequestBody:
 
     @property
     def config(self):
-        """Gets the config of this AddDeviceRequestBody.
+        r"""Gets the config of this AddDeviceRequestBody.
 
         设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。例如连接MQTT设备，配置接入平台密码，携带该参数{\\\"password\":\\\"xxxxxxxx\"}
 
@@ -280,7 +280,7 @@ class AddDeviceRequestBody:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this AddDeviceRequestBody.
+        r"""Sets the config of this AddDeviceRequestBody.
 
         设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以设置的属性值为准写入到设备配置中。例如连接MQTT设备，配置接入平台密码，携带该参数{\\\"password\":\\\"xxxxxxxx\"}
 

@@ -29,7 +29,7 @@ class ShowApiRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None):
-        """ShowApiRequest
+        r"""ShowApiRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowApiRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowApiRequest.
+        r"""Gets the workspace of this ShowApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowApiRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowApiRequest.
+        r"""Sets the workspace of this ShowApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowApiRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowApiRequest.
+        r"""Gets the dlm_type of this ShowApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -88,7 +88,7 @@ class ShowApiRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowApiRequest.
+        r"""Sets the dlm_type of this ShowApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -99,7 +99,7 @@ class ShowApiRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ShowApiRequest.
+        r"""Gets the api_id of this ShowApiRequest.
 
         API ID。
 
@@ -110,7 +110,7 @@ class ShowApiRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ShowApiRequest.
+        r"""Sets the api_id of this ShowApiRequest.
 
         API ID。
 

@@ -39,7 +39,7 @@ class PipelineBuildResult:
     }
 
     def __init__(self, build_id=None, elapse_time=None, end_time=None, outcome=None, pipeline_id=None, pipeline_name=None, start_time=None, status=None):
-        """PipelineBuildResult
+        r"""PipelineBuildResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PipelineBuildResult:
 
     @property
     def build_id(self):
-        """Gets the build_id of this PipelineBuildResult.
+        r"""Gets the build_id of this PipelineBuildResult.
 
         执行ID
 
@@ -96,7 +96,7 @@ class PipelineBuildResult:
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this PipelineBuildResult.
+        r"""Sets the build_id of this PipelineBuildResult.
 
         执行ID
 
@@ -107,7 +107,7 @@ class PipelineBuildResult:
 
     @property
     def elapse_time(self):
-        """Gets the elapse_time of this PipelineBuildResult.
+        r"""Gets the elapse_time of this PipelineBuildResult.
 
         运行耗时
 
@@ -118,7 +118,7 @@ class PipelineBuildResult:
 
     @elapse_time.setter
     def elapse_time(self, elapse_time):
-        """Sets the elapse_time of this PipelineBuildResult.
+        r"""Sets the elapse_time of this PipelineBuildResult.
 
         运行耗时
 
@@ -129,7 +129,7 @@ class PipelineBuildResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PipelineBuildResult.
+        r"""Gets the end_time of this PipelineBuildResult.
 
         执行结束时间
 
@@ -140,7 +140,7 @@ class PipelineBuildResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PipelineBuildResult.
+        r"""Sets the end_time of this PipelineBuildResult.
 
         执行结束时间
 
@@ -151,7 +151,7 @@ class PipelineBuildResult:
 
     @property
     def outcome(self):
-        """Gets the outcome of this PipelineBuildResult.
+        r"""Gets the outcome of this PipelineBuildResult.
 
         运行结果
 
@@ -162,7 +162,7 @@ class PipelineBuildResult:
 
     @outcome.setter
     def outcome(self, outcome):
-        """Sets the outcome of this PipelineBuildResult.
+        r"""Sets the outcome of this PipelineBuildResult.
 
         运行结果
 
@@ -173,7 +173,7 @@ class PipelineBuildResult:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineBuildResult.
+        r"""Gets the pipeline_id of this PipelineBuildResult.
 
         流水线id
 
@@ -184,7 +184,7 @@ class PipelineBuildResult:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineBuildResult.
+        r"""Sets the pipeline_id of this PipelineBuildResult.
 
         流水线id
 
@@ -195,7 +195,7 @@ class PipelineBuildResult:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this PipelineBuildResult.
+        r"""Gets the pipeline_name of this PipelineBuildResult.
 
         流水线名称
 
@@ -206,7 +206,7 @@ class PipelineBuildResult:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this PipelineBuildResult.
+        r"""Sets the pipeline_name of this PipelineBuildResult.
 
         流水线名称
 
@@ -217,7 +217,7 @@ class PipelineBuildResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PipelineBuildResult.
+        r"""Gets the start_time of this PipelineBuildResult.
 
         执行开始时间
 
@@ -228,7 +228,7 @@ class PipelineBuildResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PipelineBuildResult.
+        r"""Sets the start_time of this PipelineBuildResult.
 
         执行开始时间
 
@@ -239,7 +239,7 @@ class PipelineBuildResult:
 
     @property
     def status(self):
-        """Gets the status of this PipelineBuildResult.
+        r"""Gets the status of this PipelineBuildResult.
 
         运行状态
 
@@ -250,7 +250,7 @@ class PipelineBuildResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineBuildResult.
+        r"""Sets the status of this PipelineBuildResult.
 
         运行状态
 

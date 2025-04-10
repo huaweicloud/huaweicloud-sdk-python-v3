@@ -133,7 +133,7 @@ class MvsInvoiceResult:
     }
 
     def __init__(self, code=None, number=None, machine_printed_code=None, machine_printed_number=None, issue_date=None, machine_number=None, buyer_name=None, buyer_organization_number=None, buyer_id=None, buyer_address=None, buyer_phone=None, seller_name=None, seller_phone=None, seller_id=None, seller_account=None, seller_address=None, licence_plate_number=None, registration_number=None, dept_motor_vehicles=None, seller_bank=None, vehicle_type=None, brand_model=None, manufacturing_location=None, quality_certificate=None, import_certificate=None, inspection_number=None, engine_number=None, vehicle_identification_number=None, tonnage=None, seating_capacity=None, tax_authority=None, tax_authority_code=None, tax_payment_receipt=None, tax_rate=None, tax=None, tax_exclusive_price=None, total=None, total_chinese=None, fiscal_code=None, auction_org_name=None, auction_org_address=None, auction_org_id=None, auction_org_bank_account=None, auction_org_phone=None, used_vehicle_market_name=None, used_vehicle_market_id=None, used_vehicle_market_address=None, used_vehicle_market_bank_account=None, used_vehicle_market_phone=None, reverse_issue=None, remark=None, drawer_name=None, type=None, text_location=None, confidence=None):
-        """MvsInvoiceResult
+        r"""MvsInvoiceResult
 
         The model defined in huaweicloud sdk
 
@@ -421,7 +421,7 @@ class MvsInvoiceResult:
 
     @property
     def code(self):
-        """Gets the code of this MvsInvoiceResult.
+        r"""Gets the code of this MvsInvoiceResult.
 
         发票代码。 
 
@@ -432,7 +432,7 @@ class MvsInvoiceResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this MvsInvoiceResult.
+        r"""Sets the code of this MvsInvoiceResult.
 
         发票代码。 
 
@@ -443,7 +443,7 @@ class MvsInvoiceResult:
 
     @property
     def number(self):
-        """Gets the number of this MvsInvoiceResult.
+        r"""Gets the number of this MvsInvoiceResult.
 
         发票号码。 
 
@@ -454,7 +454,7 @@ class MvsInvoiceResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this MvsInvoiceResult.
+        r"""Sets the number of this MvsInvoiceResult.
 
         发票号码。 
 
@@ -465,7 +465,7 @@ class MvsInvoiceResult:
 
     @property
     def machine_printed_code(self):
-        """Gets the machine_printed_code of this MvsInvoiceResult.
+        r"""Gets the machine_printed_code of this MvsInvoiceResult.
 
         机打代码。 
 
@@ -476,7 +476,7 @@ class MvsInvoiceResult:
 
     @machine_printed_code.setter
     def machine_printed_code(self, machine_printed_code):
-        """Sets the machine_printed_code of this MvsInvoiceResult.
+        r"""Sets the machine_printed_code of this MvsInvoiceResult.
 
         机打代码。 
 
@@ -487,7 +487,7 @@ class MvsInvoiceResult:
 
     @property
     def machine_printed_number(self):
-        """Gets the machine_printed_number of this MvsInvoiceResult.
+        r"""Gets the machine_printed_number of this MvsInvoiceResult.
 
         机打号码。 
 
@@ -498,7 +498,7 @@ class MvsInvoiceResult:
 
     @machine_printed_number.setter
     def machine_printed_number(self, machine_printed_number):
-        """Sets the machine_printed_number of this MvsInvoiceResult.
+        r"""Sets the machine_printed_number of this MvsInvoiceResult.
 
         机打号码。 
 
@@ -509,7 +509,7 @@ class MvsInvoiceResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this MvsInvoiceResult.
+        r"""Gets the issue_date of this MvsInvoiceResult.
 
         开票日期。 
 
@@ -520,7 +520,7 @@ class MvsInvoiceResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this MvsInvoiceResult.
+        r"""Sets the issue_date of this MvsInvoiceResult.
 
         开票日期。 
 
@@ -531,7 +531,7 @@ class MvsInvoiceResult:
 
     @property
     def machine_number(self):
-        """Gets the machine_number of this MvsInvoiceResult.
+        r"""Gets the machine_number of this MvsInvoiceResult.
 
         机器编号。 
 
@@ -542,7 +542,7 @@ class MvsInvoiceResult:
 
     @machine_number.setter
     def machine_number(self, machine_number):
-        """Sets the machine_number of this MvsInvoiceResult.
+        r"""Sets the machine_number of this MvsInvoiceResult.
 
         机器编号。 
 
@@ -553,7 +553,7 @@ class MvsInvoiceResult:
 
     @property
     def buyer_name(self):
-        """Gets the buyer_name of this MvsInvoiceResult.
+        r"""Gets the buyer_name of this MvsInvoiceResult.
 
         购买方名称、二手车买方单位/个人 
 
@@ -564,7 +564,7 @@ class MvsInvoiceResult:
 
     @buyer_name.setter
     def buyer_name(self, buyer_name):
-        """Sets the buyer_name of this MvsInvoiceResult.
+        r"""Sets the buyer_name of this MvsInvoiceResult.
 
         购买方名称、二手车买方单位/个人 
 
@@ -575,7 +575,7 @@ class MvsInvoiceResult:
 
     @property
     def buyer_organization_number(self):
-        """Gets the buyer_organization_number of this MvsInvoiceResult.
+        r"""Gets the buyer_organization_number of this MvsInvoiceResult.
 
         购买方身份证号码/组织机构代码。 
 
@@ -586,7 +586,7 @@ class MvsInvoiceResult:
 
     @buyer_organization_number.setter
     def buyer_organization_number(self, buyer_organization_number):
-        """Sets the buyer_organization_number of this MvsInvoiceResult.
+        r"""Sets the buyer_organization_number of this MvsInvoiceResult.
 
         购买方身份证号码/组织机构代码。 
 
@@ -597,7 +597,7 @@ class MvsInvoiceResult:
 
     @property
     def buyer_id(self):
-        """Gets the buyer_id of this MvsInvoiceResult.
+        r"""Gets the buyer_id of this MvsInvoiceResult.
 
         购买方纳税人识别号、二手车买方单位代码/身份证号 
 
@@ -608,7 +608,7 @@ class MvsInvoiceResult:
 
     @buyer_id.setter
     def buyer_id(self, buyer_id):
-        """Sets the buyer_id of this MvsInvoiceResult.
+        r"""Sets the buyer_id of this MvsInvoiceResult.
 
         购买方纳税人识别号、二手车买方单位代码/身份证号 
 
@@ -619,7 +619,7 @@ class MvsInvoiceResult:
 
     @property
     def buyer_address(self):
-        """Gets the buyer_address of this MvsInvoiceResult.
+        r"""Gets the buyer_address of this MvsInvoiceResult.
 
         二手车买方单位/个人住址。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -630,7 +630,7 @@ class MvsInvoiceResult:
 
     @buyer_address.setter
     def buyer_address(self, buyer_address):
-        """Sets the buyer_address of this MvsInvoiceResult.
+        r"""Sets the buyer_address of this MvsInvoiceResult.
 
         二手车买方单位/个人住址。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -641,7 +641,7 @@ class MvsInvoiceResult:
 
     @property
     def buyer_phone(self):
-        """Gets the buyer_phone of this MvsInvoiceResult.
+        r"""Gets the buyer_phone of this MvsInvoiceResult.
 
         二手车买方单位/个人电话。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -652,7 +652,7 @@ class MvsInvoiceResult:
 
     @buyer_phone.setter
     def buyer_phone(self, buyer_phone):
-        """Sets the buyer_phone of this MvsInvoiceResult.
+        r"""Sets the buyer_phone of this MvsInvoiceResult.
 
         二手车买方单位/个人电话。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -663,7 +663,7 @@ class MvsInvoiceResult:
 
     @property
     def seller_name(self):
-        """Gets the seller_name of this MvsInvoiceResult.
+        r"""Gets the seller_name of this MvsInvoiceResult.
 
         销货单位名称、二手车卖方单位/个人 
 
@@ -674,7 +674,7 @@ class MvsInvoiceResult:
 
     @seller_name.setter
     def seller_name(self, seller_name):
-        """Sets the seller_name of this MvsInvoiceResult.
+        r"""Sets the seller_name of this MvsInvoiceResult.
 
         销货单位名称、二手车卖方单位/个人 
 
@@ -685,7 +685,7 @@ class MvsInvoiceResult:
 
     @property
     def seller_phone(self):
-        """Gets the seller_phone of this MvsInvoiceResult.
+        r"""Gets the seller_phone of this MvsInvoiceResult.
 
         销售方电话、二手车卖方电话 
 
@@ -696,7 +696,7 @@ class MvsInvoiceResult:
 
     @seller_phone.setter
     def seller_phone(self, seller_phone):
-        """Sets the seller_phone of this MvsInvoiceResult.
+        r"""Sets the seller_phone of this MvsInvoiceResult.
 
         销售方电话、二手车卖方电话 
 
@@ -707,7 +707,7 @@ class MvsInvoiceResult:
 
     @property
     def seller_id(self):
-        """Gets the seller_id of this MvsInvoiceResult.
+        r"""Gets the seller_id of this MvsInvoiceResult.
 
         销售方纳税人识别号、二手车卖方单位代码/身份证号 
 
@@ -718,7 +718,7 @@ class MvsInvoiceResult:
 
     @seller_id.setter
     def seller_id(self, seller_id):
-        """Sets the seller_id of this MvsInvoiceResult.
+        r"""Sets the seller_id of this MvsInvoiceResult.
 
         销售方纳税人识别号、二手车卖方单位代码/身份证号 
 
@@ -729,7 +729,7 @@ class MvsInvoiceResult:
 
     @property
     def seller_account(self):
-        """Gets the seller_account of this MvsInvoiceResult.
+        r"""Gets the seller_account of this MvsInvoiceResult.
 
         销售方账号。 
 
@@ -740,7 +740,7 @@ class MvsInvoiceResult:
 
     @seller_account.setter
     def seller_account(self, seller_account):
-        """Sets the seller_account of this MvsInvoiceResult.
+        r"""Sets the seller_account of this MvsInvoiceResult.
 
         销售方账号。 
 
@@ -751,7 +751,7 @@ class MvsInvoiceResult:
 
     @property
     def seller_address(self):
-        """Gets the seller_address of this MvsInvoiceResult.
+        r"""Gets the seller_address of this MvsInvoiceResult.
 
         销售方地址、二手车卖方单位/个人地址 
 
@@ -762,7 +762,7 @@ class MvsInvoiceResult:
 
     @seller_address.setter
     def seller_address(self, seller_address):
-        """Sets the seller_address of this MvsInvoiceResult.
+        r"""Sets the seller_address of this MvsInvoiceResult.
 
         销售方地址、二手车卖方单位/个人地址 
 
@@ -773,7 +773,7 @@ class MvsInvoiceResult:
 
     @property
     def licence_plate_number(self):
-        """Gets the licence_plate_number of this MvsInvoiceResult.
+        r"""Gets the licence_plate_number of this MvsInvoiceResult.
 
         二手车车牌照号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -784,7 +784,7 @@ class MvsInvoiceResult:
 
     @licence_plate_number.setter
     def licence_plate_number(self, licence_plate_number):
-        """Sets the licence_plate_number of this MvsInvoiceResult.
+        r"""Sets the licence_plate_number of this MvsInvoiceResult.
 
         二手车车牌照号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -795,7 +795,7 @@ class MvsInvoiceResult:
 
     @property
     def registration_number(self):
-        """Gets the registration_number of this MvsInvoiceResult.
+        r"""Gets the registration_number of this MvsInvoiceResult.
 
         二手车登记证号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -806,7 +806,7 @@ class MvsInvoiceResult:
 
     @registration_number.setter
     def registration_number(self, registration_number):
-        """Sets the registration_number of this MvsInvoiceResult.
+        r"""Sets the registration_number of this MvsInvoiceResult.
 
         二手车登记证号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -817,7 +817,7 @@ class MvsInvoiceResult:
 
     @property
     def dept_motor_vehicles(self):
-        """Gets the dept_motor_vehicles of this MvsInvoiceResult.
+        r"""Gets the dept_motor_vehicles of this MvsInvoiceResult.
 
         二手车转入地车管所名称。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -828,7 +828,7 @@ class MvsInvoiceResult:
 
     @dept_motor_vehicles.setter
     def dept_motor_vehicles(self, dept_motor_vehicles):
-        """Sets the dept_motor_vehicles of this MvsInvoiceResult.
+        r"""Sets the dept_motor_vehicles of this MvsInvoiceResult.
 
         二手车转入地车管所名称。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -839,7 +839,7 @@ class MvsInvoiceResult:
 
     @property
     def seller_bank(self):
-        """Gets the seller_bank of this MvsInvoiceResult.
+        r"""Gets the seller_bank of this MvsInvoiceResult.
 
         销售方开户行。 
 
@@ -850,7 +850,7 @@ class MvsInvoiceResult:
 
     @seller_bank.setter
     def seller_bank(self, seller_bank):
-        """Sets the seller_bank of this MvsInvoiceResult.
+        r"""Sets the seller_bank of this MvsInvoiceResult.
 
         销售方开户行。 
 
@@ -861,7 +861,7 @@ class MvsInvoiceResult:
 
     @property
     def vehicle_type(self):
-        """Gets the vehicle_type of this MvsInvoiceResult.
+        r"""Gets the vehicle_type of this MvsInvoiceResult.
 
         车辆类型。 
 
@@ -872,7 +872,7 @@ class MvsInvoiceResult:
 
     @vehicle_type.setter
     def vehicle_type(self, vehicle_type):
-        """Sets the vehicle_type of this MvsInvoiceResult.
+        r"""Sets the vehicle_type of this MvsInvoiceResult.
 
         车辆类型。 
 
@@ -883,7 +883,7 @@ class MvsInvoiceResult:
 
     @property
     def brand_model(self):
-        """Gets the brand_model of this MvsInvoiceResult.
+        r"""Gets the brand_model of this MvsInvoiceResult.
 
         厂牌型号。 
 
@@ -894,7 +894,7 @@ class MvsInvoiceResult:
 
     @brand_model.setter
     def brand_model(self, brand_model):
-        """Sets the brand_model of this MvsInvoiceResult.
+        r"""Sets the brand_model of this MvsInvoiceResult.
 
         厂牌型号。 
 
@@ -905,7 +905,7 @@ class MvsInvoiceResult:
 
     @property
     def manufacturing_location(self):
-        """Gets the manufacturing_location of this MvsInvoiceResult.
+        r"""Gets the manufacturing_location of this MvsInvoiceResult.
 
         产地。 
 
@@ -916,7 +916,7 @@ class MvsInvoiceResult:
 
     @manufacturing_location.setter
     def manufacturing_location(self, manufacturing_location):
-        """Sets the manufacturing_location of this MvsInvoiceResult.
+        r"""Sets the manufacturing_location of this MvsInvoiceResult.
 
         产地。 
 
@@ -927,7 +927,7 @@ class MvsInvoiceResult:
 
     @property
     def quality_certificate(self):
-        """Gets the quality_certificate of this MvsInvoiceResult.
+        r"""Gets the quality_certificate of this MvsInvoiceResult.
 
         合格证号。 
 
@@ -938,7 +938,7 @@ class MvsInvoiceResult:
 
     @quality_certificate.setter
     def quality_certificate(self, quality_certificate):
-        """Sets the quality_certificate of this MvsInvoiceResult.
+        r"""Sets the quality_certificate of this MvsInvoiceResult.
 
         合格证号。 
 
@@ -949,7 +949,7 @@ class MvsInvoiceResult:
 
     @property
     def import_certificate(self):
-        """Gets the import_certificate of this MvsInvoiceResult.
+        r"""Gets the import_certificate of this MvsInvoiceResult.
 
         进口证明书号。 
 
@@ -960,7 +960,7 @@ class MvsInvoiceResult:
 
     @import_certificate.setter
     def import_certificate(self, import_certificate):
-        """Sets the import_certificate of this MvsInvoiceResult.
+        r"""Sets the import_certificate of this MvsInvoiceResult.
 
         进口证明书号。 
 
@@ -971,7 +971,7 @@ class MvsInvoiceResult:
 
     @property
     def inspection_number(self):
-        """Gets the inspection_number of this MvsInvoiceResult.
+        r"""Gets the inspection_number of this MvsInvoiceResult.
 
         商检单号。 
 
@@ -982,7 +982,7 @@ class MvsInvoiceResult:
 
     @inspection_number.setter
     def inspection_number(self, inspection_number):
-        """Sets the inspection_number of this MvsInvoiceResult.
+        r"""Sets the inspection_number of this MvsInvoiceResult.
 
         商检单号。 
 
@@ -993,7 +993,7 @@ class MvsInvoiceResult:
 
     @property
     def engine_number(self):
-        """Gets the engine_number of this MvsInvoiceResult.
+        r"""Gets the engine_number of this MvsInvoiceResult.
 
         发动机号码。 
 
@@ -1004,7 +1004,7 @@ class MvsInvoiceResult:
 
     @engine_number.setter
     def engine_number(self, engine_number):
-        """Sets the engine_number of this MvsInvoiceResult.
+        r"""Sets the engine_number of this MvsInvoiceResult.
 
         发动机号码。 
 
@@ -1015,7 +1015,7 @@ class MvsInvoiceResult:
 
     @property
     def vehicle_identification_number(self):
-        """Gets the vehicle_identification_number of this MvsInvoiceResult.
+        r"""Gets the vehicle_identification_number of this MvsInvoiceResult.
 
         车辆识别代号/车架号码。 
 
@@ -1026,7 +1026,7 @@ class MvsInvoiceResult:
 
     @vehicle_identification_number.setter
     def vehicle_identification_number(self, vehicle_identification_number):
-        """Sets the vehicle_identification_number of this MvsInvoiceResult.
+        r"""Sets the vehicle_identification_number of this MvsInvoiceResult.
 
         车辆识别代号/车架号码。 
 
@@ -1037,7 +1037,7 @@ class MvsInvoiceResult:
 
     @property
     def tonnage(self):
-        """Gets the tonnage of this MvsInvoiceResult.
+        r"""Gets the tonnage of this MvsInvoiceResult.
 
         吨位。 
 
@@ -1048,7 +1048,7 @@ class MvsInvoiceResult:
 
     @tonnage.setter
     def tonnage(self, tonnage):
-        """Sets the tonnage of this MvsInvoiceResult.
+        r"""Sets the tonnage of this MvsInvoiceResult.
 
         吨位。 
 
@@ -1059,7 +1059,7 @@ class MvsInvoiceResult:
 
     @property
     def seating_capacity(self):
-        """Gets the seating_capacity of this MvsInvoiceResult.
+        r"""Gets the seating_capacity of this MvsInvoiceResult.
 
         限乘人数。 
 
@@ -1070,7 +1070,7 @@ class MvsInvoiceResult:
 
     @seating_capacity.setter
     def seating_capacity(self, seating_capacity):
-        """Sets the seating_capacity of this MvsInvoiceResult.
+        r"""Sets the seating_capacity of this MvsInvoiceResult.
 
         限乘人数。 
 
@@ -1081,7 +1081,7 @@ class MvsInvoiceResult:
 
     @property
     def tax_authority(self):
-        """Gets the tax_authority of this MvsInvoiceResult.
+        r"""Gets the tax_authority of this MvsInvoiceResult.
 
         主管税务机关。 
 
@@ -1092,7 +1092,7 @@ class MvsInvoiceResult:
 
     @tax_authority.setter
     def tax_authority(self, tax_authority):
-        """Sets the tax_authority of this MvsInvoiceResult.
+        r"""Sets the tax_authority of this MvsInvoiceResult.
 
         主管税务机关。 
 
@@ -1103,7 +1103,7 @@ class MvsInvoiceResult:
 
     @property
     def tax_authority_code(self):
-        """Gets the tax_authority_code of this MvsInvoiceResult.
+        r"""Gets the tax_authority_code of this MvsInvoiceResult.
 
         主管税务机关代码。 
 
@@ -1114,7 +1114,7 @@ class MvsInvoiceResult:
 
     @tax_authority_code.setter
     def tax_authority_code(self, tax_authority_code):
-        """Sets the tax_authority_code of this MvsInvoiceResult.
+        r"""Sets the tax_authority_code of this MvsInvoiceResult.
 
         主管税务机关代码。 
 
@@ -1125,7 +1125,7 @@ class MvsInvoiceResult:
 
     @property
     def tax_payment_receipt(self):
-        """Gets the tax_payment_receipt of this MvsInvoiceResult.
+        r"""Gets the tax_payment_receipt of this MvsInvoiceResult.
 
         完税凭证号码。 
 
@@ -1136,7 +1136,7 @@ class MvsInvoiceResult:
 
     @tax_payment_receipt.setter
     def tax_payment_receipt(self, tax_payment_receipt):
-        """Sets the tax_payment_receipt of this MvsInvoiceResult.
+        r"""Sets the tax_payment_receipt of this MvsInvoiceResult.
 
         完税凭证号码。 
 
@@ -1147,7 +1147,7 @@ class MvsInvoiceResult:
 
     @property
     def tax_rate(self):
-        """Gets the tax_rate of this MvsInvoiceResult.
+        r"""Gets the tax_rate of this MvsInvoiceResult.
 
         增值税税率或征收率。 
 
@@ -1158,7 +1158,7 @@ class MvsInvoiceResult:
 
     @tax_rate.setter
     def tax_rate(self, tax_rate):
-        """Sets the tax_rate of this MvsInvoiceResult.
+        r"""Sets the tax_rate of this MvsInvoiceResult.
 
         增值税税率或征收率。 
 
@@ -1169,7 +1169,7 @@ class MvsInvoiceResult:
 
     @property
     def tax(self):
-        """Gets the tax of this MvsInvoiceResult.
+        r"""Gets the tax of this MvsInvoiceResult.
 
         增值税税额。 
 
@@ -1180,7 +1180,7 @@ class MvsInvoiceResult:
 
     @tax.setter
     def tax(self, tax):
-        """Sets the tax of this MvsInvoiceResult.
+        r"""Sets the tax of this MvsInvoiceResult.
 
         增值税税额。 
 
@@ -1191,7 +1191,7 @@ class MvsInvoiceResult:
 
     @property
     def tax_exclusive_price(self):
-        """Gets the tax_exclusive_price of this MvsInvoiceResult.
+        r"""Gets the tax_exclusive_price of this MvsInvoiceResult.
 
         不含税价。 
 
@@ -1202,7 +1202,7 @@ class MvsInvoiceResult:
 
     @tax_exclusive_price.setter
     def tax_exclusive_price(self, tax_exclusive_price):
-        """Sets the tax_exclusive_price of this MvsInvoiceResult.
+        r"""Sets the tax_exclusive_price of this MvsInvoiceResult.
 
         不含税价。 
 
@@ -1213,7 +1213,7 @@ class MvsInvoiceResult:
 
     @property
     def total(self):
-        """Gets the total of this MvsInvoiceResult.
+        r"""Gets the total of this MvsInvoiceResult.
 
         价税合计、二手车车价合计（小写） 
 
@@ -1224,7 +1224,7 @@ class MvsInvoiceResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this MvsInvoiceResult.
+        r"""Sets the total of this MvsInvoiceResult.
 
         价税合计、二手车车价合计（小写） 
 
@@ -1235,7 +1235,7 @@ class MvsInvoiceResult:
 
     @property
     def total_chinese(self):
-        """Gets the total_chinese of this MvsInvoiceResult.
+        r"""Gets the total_chinese of this MvsInvoiceResult.
 
         价税合计大写、二手车车价合计（大写） 
 
@@ -1246,7 +1246,7 @@ class MvsInvoiceResult:
 
     @total_chinese.setter
     def total_chinese(self, total_chinese):
-        """Sets the total_chinese of this MvsInvoiceResult.
+        r"""Sets the total_chinese of this MvsInvoiceResult.
 
         价税合计大写、二手车车价合计（大写） 
 
@@ -1257,7 +1257,7 @@ class MvsInvoiceResult:
 
     @property
     def fiscal_code(self):
-        """Gets the fiscal_code of this MvsInvoiceResult.
+        r"""Gets the fiscal_code of this MvsInvoiceResult.
 
         税控码。 
 
@@ -1268,7 +1268,7 @@ class MvsInvoiceResult:
 
     @fiscal_code.setter
     def fiscal_code(self, fiscal_code):
-        """Sets the fiscal_code of this MvsInvoiceResult.
+        r"""Sets the fiscal_code of this MvsInvoiceResult.
 
         税控码。 
 
@@ -1279,7 +1279,7 @@ class MvsInvoiceResult:
 
     @property
     def auction_org_name(self):
-        """Gets the auction_org_name of this MvsInvoiceResult.
+        r"""Gets the auction_org_name of this MvsInvoiceResult.
 
         二手车经营拍卖单位名称。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1290,7 +1290,7 @@ class MvsInvoiceResult:
 
     @auction_org_name.setter
     def auction_org_name(self, auction_org_name):
-        """Sets the auction_org_name of this MvsInvoiceResult.
+        r"""Sets the auction_org_name of this MvsInvoiceResult.
 
         二手车经营拍卖单位名称。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1301,7 +1301,7 @@ class MvsInvoiceResult:
 
     @property
     def auction_org_address(self):
-        """Gets the auction_org_address of this MvsInvoiceResult.
+        r"""Gets the auction_org_address of this MvsInvoiceResult.
 
         二手车经营拍卖单位地址。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1312,7 +1312,7 @@ class MvsInvoiceResult:
 
     @auction_org_address.setter
     def auction_org_address(self, auction_org_address):
-        """Sets the auction_org_address of this MvsInvoiceResult.
+        r"""Sets the auction_org_address of this MvsInvoiceResult.
 
         二手车经营拍卖单位地址。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1323,7 +1323,7 @@ class MvsInvoiceResult:
 
     @property
     def auction_org_id(self):
-        """Gets the auction_org_id of this MvsInvoiceResult.
+        r"""Gets the auction_org_id of this MvsInvoiceResult.
 
         二手车经营拍卖单位纳税人识别号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1334,7 +1334,7 @@ class MvsInvoiceResult:
 
     @auction_org_id.setter
     def auction_org_id(self, auction_org_id):
-        """Sets the auction_org_id of this MvsInvoiceResult.
+        r"""Sets the auction_org_id of this MvsInvoiceResult.
 
         二手车经营拍卖单位纳税人识别号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1345,7 +1345,7 @@ class MvsInvoiceResult:
 
     @property
     def auction_org_bank_account(self):
-        """Gets the auction_org_bank_account of this MvsInvoiceResult.
+        r"""Gets the auction_org_bank_account of this MvsInvoiceResult.
 
         二手车经营拍卖单位银行和账号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1356,7 +1356,7 @@ class MvsInvoiceResult:
 
     @auction_org_bank_account.setter
     def auction_org_bank_account(self, auction_org_bank_account):
-        """Sets the auction_org_bank_account of this MvsInvoiceResult.
+        r"""Sets the auction_org_bank_account of this MvsInvoiceResult.
 
         二手车经营拍卖单位银行和账号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1367,7 +1367,7 @@ class MvsInvoiceResult:
 
     @property
     def auction_org_phone(self):
-        """Gets the auction_org_phone of this MvsInvoiceResult.
+        r"""Gets the auction_org_phone of this MvsInvoiceResult.
 
         二手车经营拍卖单位电话。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1378,7 +1378,7 @@ class MvsInvoiceResult:
 
     @auction_org_phone.setter
     def auction_org_phone(self, auction_org_phone):
-        """Sets the auction_org_phone of this MvsInvoiceResult.
+        r"""Sets the auction_org_phone of this MvsInvoiceResult.
 
         二手车经营拍卖单位电话。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1389,7 +1389,7 @@ class MvsInvoiceResult:
 
     @property
     def used_vehicle_market_name(self):
-        """Gets the used_vehicle_market_name of this MvsInvoiceResult.
+        r"""Gets the used_vehicle_market_name of this MvsInvoiceResult.
 
         二手车市场名称。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1400,7 +1400,7 @@ class MvsInvoiceResult:
 
     @used_vehicle_market_name.setter
     def used_vehicle_market_name(self, used_vehicle_market_name):
-        """Sets the used_vehicle_market_name of this MvsInvoiceResult.
+        r"""Sets the used_vehicle_market_name of this MvsInvoiceResult.
 
         二手车市场名称。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1411,7 +1411,7 @@ class MvsInvoiceResult:
 
     @property
     def used_vehicle_market_id(self):
-        """Gets the used_vehicle_market_id of this MvsInvoiceResult.
+        r"""Gets the used_vehicle_market_id of this MvsInvoiceResult.
 
         二手车市场纳税人识别号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1422,7 +1422,7 @@ class MvsInvoiceResult:
 
     @used_vehicle_market_id.setter
     def used_vehicle_market_id(self, used_vehicle_market_id):
-        """Sets the used_vehicle_market_id of this MvsInvoiceResult.
+        r"""Sets the used_vehicle_market_id of this MvsInvoiceResult.
 
         二手车市场纳税人识别号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1433,7 +1433,7 @@ class MvsInvoiceResult:
 
     @property
     def used_vehicle_market_address(self):
-        """Gets the used_vehicle_market_address of this MvsInvoiceResult.
+        r"""Gets the used_vehicle_market_address of this MvsInvoiceResult.
 
         二手车市场地址。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1444,7 +1444,7 @@ class MvsInvoiceResult:
 
     @used_vehicle_market_address.setter
     def used_vehicle_market_address(self, used_vehicle_market_address):
-        """Sets the used_vehicle_market_address of this MvsInvoiceResult.
+        r"""Sets the used_vehicle_market_address of this MvsInvoiceResult.
 
         二手车市场地址。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1455,7 +1455,7 @@ class MvsInvoiceResult:
 
     @property
     def used_vehicle_market_bank_account(self):
-        """Gets the used_vehicle_market_bank_account of this MvsInvoiceResult.
+        r"""Gets the used_vehicle_market_bank_account of this MvsInvoiceResult.
 
         二手车市场银行和账号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1466,7 +1466,7 @@ class MvsInvoiceResult:
 
     @used_vehicle_market_bank_account.setter
     def used_vehicle_market_bank_account(self, used_vehicle_market_bank_account):
-        """Sets the used_vehicle_market_bank_account of this MvsInvoiceResult.
+        r"""Sets the used_vehicle_market_bank_account of this MvsInvoiceResult.
 
         二手车市场银行和账号。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1477,7 +1477,7 @@ class MvsInvoiceResult:
 
     @property
     def used_vehicle_market_phone(self):
-        """Gets the used_vehicle_market_phone of this MvsInvoiceResult.
+        r"""Gets the used_vehicle_market_phone of this MvsInvoiceResult.
 
         二手车市场电话。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1488,7 +1488,7 @@ class MvsInvoiceResult:
 
     @used_vehicle_market_phone.setter
     def used_vehicle_market_phone(self, used_vehicle_market_phone):
-        """Sets the used_vehicle_market_phone of this MvsInvoiceResult.
+        r"""Sets the used_vehicle_market_phone of this MvsInvoiceResult.
 
         二手车市场电话。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1499,7 +1499,7 @@ class MvsInvoiceResult:
 
     @property
     def reverse_issue(self):
-        """Gets the reverse_issue of this MvsInvoiceResult.
+        r"""Gets the reverse_issue of this MvsInvoiceResult.
 
         二手车反向开具标识，True表示是反向开具发票，False表示不是反向开具发票。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1510,7 +1510,7 @@ class MvsInvoiceResult:
 
     @reverse_issue.setter
     def reverse_issue(self, reverse_issue):
-        """Sets the reverse_issue of this MvsInvoiceResult.
+        r"""Sets the reverse_issue of this MvsInvoiceResult.
 
         二手车反向开具标识，True表示是反向开具发票，False表示不是反向开具发票。 当请求参数\"type\"设置为\"auto\"或\"used\"时才返回。 
 
@@ -1521,7 +1521,7 @@ class MvsInvoiceResult:
 
     @property
     def remark(self):
-        """Gets the remark of this MvsInvoiceResult.
+        r"""Gets the remark of this MvsInvoiceResult.
 
         备注 
 
@@ -1532,7 +1532,7 @@ class MvsInvoiceResult:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this MvsInvoiceResult.
+        r"""Sets the remark of this MvsInvoiceResult.
 
         备注 
 
@@ -1543,7 +1543,7 @@ class MvsInvoiceResult:
 
     @property
     def drawer_name(self):
-        """Gets the drawer_name of this MvsInvoiceResult.
+        r"""Gets the drawer_name of this MvsInvoiceResult.
 
         开票人 
 
@@ -1554,7 +1554,7 @@ class MvsInvoiceResult:
 
     @drawer_name.setter
     def drawer_name(self, drawer_name):
-        """Sets the drawer_name of this MvsInvoiceResult.
+        r"""Sets the drawer_name of this MvsInvoiceResult.
 
         开票人 
 
@@ -1565,7 +1565,7 @@ class MvsInvoiceResult:
 
     @property
     def type(self):
-        """Gets the type of this MvsInvoiceResult.
+        r"""Gets the type of this MvsInvoiceResult.
 
         枚举值，机动车销售统一发票或者二手车销售统一发票。 当入参中包含type时返回。 
 
@@ -1576,7 +1576,7 @@ class MvsInvoiceResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MvsInvoiceResult.
+        r"""Sets the type of this MvsInvoiceResult.
 
         枚举值，机动车销售统一发票或者二手车销售统一发票。 当入参中包含type时返回。 
 
@@ -1587,7 +1587,7 @@ class MvsInvoiceResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this MvsInvoiceResult.
+        r"""Gets the text_location of this MvsInvoiceResult.
 
         检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 
 
@@ -1598,7 +1598,7 @@ class MvsInvoiceResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this MvsInvoiceResult.
+        r"""Sets the text_location of this MvsInvoiceResult.
 
         检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 
 
@@ -1609,7 +1609,7 @@ class MvsInvoiceResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this MvsInvoiceResult.
+        r"""Gets the confidence of this MvsInvoiceResult.
 
         字段文字内容置信度，内容为字段-字符置信度对,如code:0.9999。这个数值为字段中每个字符置信度，格式为fp32，保留四位。若字段不存在则返回0.0。 
 
@@ -1620,7 +1620,7 @@ class MvsInvoiceResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this MvsInvoiceResult.
+        r"""Sets the confidence of this MvsInvoiceResult.
 
         字段文字内容置信度，内容为字段-字符置信度对,如code:0.9999。这个数值为字段中每个字符置信度，格式为fp32，保留四位。若字段不存在则返回0.0。 
 

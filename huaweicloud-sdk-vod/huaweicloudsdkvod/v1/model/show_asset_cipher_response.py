@@ -30,7 +30,7 @@ class ShowAssetCipherResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, edk=None, dk=None):
-        """ShowAssetCipherResponse
+        r"""ShowAssetCipherResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAssetCipherResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetCipherResponse.
+        r"""Gets the asset_id of this ShowAssetCipherResponse.
 
         媒资ID。
 
@@ -69,7 +69,7 @@ class ShowAssetCipherResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetCipherResponse.
+        r"""Sets the asset_id of this ShowAssetCipherResponse.
 
         媒资ID。
 
@@ -80,7 +80,7 @@ class ShowAssetCipherResponse(SdkResponse):
 
     @property
     def edk(self):
-        """Gets the edk of this ShowAssetCipherResponse.
+        r"""Gets the edk of this ShowAssetCipherResponse.
 
         密钥密文。
 
@@ -91,7 +91,7 @@ class ShowAssetCipherResponse(SdkResponse):
 
     @edk.setter
     def edk(self, edk):
-        """Sets the edk of this ShowAssetCipherResponse.
+        r"""Sets the edk of this ShowAssetCipherResponse.
 
         密钥密文。
 
@@ -102,7 +102,7 @@ class ShowAssetCipherResponse(SdkResponse):
 
     @property
     def dk(self):
-        """Gets the dk of this ShowAssetCipherResponse.
+        r"""Gets the dk of this ShowAssetCipherResponse.
 
         密钥明文。
 
@@ -113,7 +113,7 @@ class ShowAssetCipherResponse(SdkResponse):
 
     @dk.setter
     def dk(self, dk):
-        """Sets the dk of this ShowAssetCipherResponse.
+        r"""Sets the dk of this ShowAssetCipherResponse.
 
         密钥明文。
 

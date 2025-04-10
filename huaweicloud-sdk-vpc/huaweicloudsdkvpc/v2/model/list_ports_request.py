@@ -51,7 +51,7 @@ class ListPortsRequest:
     }
 
     def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None, marker=None, fixed_ips=None, enterprise_project_id=None, enable_efi=None):
-        """ListPortsRequest
+        r"""ListPortsRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListPortsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPortsRequest.
+        r"""Gets the name of this ListPortsRequest.
 
         功能说明：按照name过滤查询  取值范围：最大长度不超过255
 
@@ -145,7 +145,7 @@ class ListPortsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPortsRequest.
+        r"""Sets the name of this ListPortsRequest.
 
         功能说明：按照name过滤查询  取值范围：最大长度不超过255
 
@@ -156,7 +156,7 @@ class ListPortsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPortsRequest.
+        r"""Gets the id of this ListPortsRequest.
 
         按照port_id过滤查询
 
@@ -167,7 +167,7 @@ class ListPortsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPortsRequest.
+        r"""Sets the id of this ListPortsRequest.
 
         按照port_id过滤查询
 
@@ -178,7 +178,7 @@ class ListPortsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortsRequest.
+        r"""Gets the limit of this ListPortsRequest.
 
         每页返回的个数
 
@@ -189,7 +189,7 @@ class ListPortsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortsRequest.
+        r"""Sets the limit of this ListPortsRequest.
 
         每页返回的个数
 
@@ -200,7 +200,7 @@ class ListPortsRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListPortsRequest.
+        r"""Gets the admin_state_up of this ListPortsRequest.
 
         按照admin_state_up进行过滤
 
@@ -211,7 +211,7 @@ class ListPortsRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListPortsRequest.
+        r"""Sets the admin_state_up of this ListPortsRequest.
 
         按照admin_state_up进行过滤
 
@@ -222,7 +222,7 @@ class ListPortsRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this ListPortsRequest.
+        r"""Gets the network_id of this ListPortsRequest.
 
         按照network_id过滤查询
 
@@ -233,7 +233,7 @@ class ListPortsRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this ListPortsRequest.
+        r"""Sets the network_id of this ListPortsRequest.
 
         按照network_id过滤查询
 
@@ -244,7 +244,7 @@ class ListPortsRequest:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this ListPortsRequest.
+        r"""Gets the mac_address of this ListPortsRequest.
 
         按照mac_address过滤查询
 
@@ -255,7 +255,7 @@ class ListPortsRequest:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this ListPortsRequest.
+        r"""Sets the mac_address of this ListPortsRequest.
 
         按照mac_address过滤查询
 
@@ -266,7 +266,7 @@ class ListPortsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListPortsRequest.
+        r"""Gets the device_id of this ListPortsRequest.
 
         按照device_id过滤查询
 
@@ -277,7 +277,7 @@ class ListPortsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListPortsRequest.
+        r"""Sets the device_id of this ListPortsRequest.
 
         按照device_id过滤查询
 
@@ -288,7 +288,7 @@ class ListPortsRequest:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this ListPortsRequest.
+        r"""Gets the device_owner of this ListPortsRequest.
 
         按照device_owner过滤查询
 
@@ -299,7 +299,7 @@ class ListPortsRequest:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this ListPortsRequest.
+        r"""Sets the device_owner of this ListPortsRequest.
 
         按照device_owner过滤查询
 
@@ -310,7 +310,7 @@ class ListPortsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPortsRequest.
+        r"""Gets the status of this ListPortsRequest.
 
         功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
@@ -321,7 +321,7 @@ class ListPortsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPortsRequest.
+        r"""Sets the status of this ListPortsRequest.
 
         功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
@@ -332,7 +332,7 @@ class ListPortsRequest:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ListPortsRequest.
+        r"""Gets the security_groups of this ListPortsRequest.
 
         按照安全组ID列表过滤查询
 
@@ -343,7 +343,7 @@ class ListPortsRequest:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ListPortsRequest.
+        r"""Sets the security_groups of this ListPortsRequest.
 
         按照安全组ID列表过滤查询
 
@@ -354,7 +354,7 @@ class ListPortsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPortsRequest.
+        r"""Gets the marker of this ListPortsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -365,7 +365,7 @@ class ListPortsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPortsRequest.
+        r"""Sets the marker of this ListPortsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -376,7 +376,7 @@ class ListPortsRequest:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this ListPortsRequest.
+        r"""Gets the fixed_ips of this ListPortsRequest.
 
         按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
@@ -387,7 +387,7 @@ class ListPortsRequest:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this ListPortsRequest.
+        r"""Sets the fixed_ips of this ListPortsRequest.
 
         按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
@@ -398,7 +398,7 @@ class ListPortsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPortsRequest.
+        r"""Gets the enterprise_project_id of this ListPortsRequest.
 
         功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
 
@@ -409,7 +409,7 @@ class ListPortsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPortsRequest.
+        r"""Sets the enterprise_project_id of this ListPortsRequest.
 
         功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
 
@@ -420,7 +420,7 @@ class ListPortsRequest:
 
     @property
     def enable_efi(self):
-        """Gets the enable_efi of this ListPortsRequest.
+        r"""Gets the enable_efi of this ListPortsRequest.
 
         按照是否使能efi过滤查询
 
@@ -431,7 +431,7 @@ class ListPortsRequest:
 
     @enable_efi.setter
     def enable_efi(self, enable_efi):
-        """Sets the enable_efi of this ListPortsRequest.
+        r"""Sets the enable_efi of this ListPortsRequest.
 
         按照是否使能efi过滤查询
 

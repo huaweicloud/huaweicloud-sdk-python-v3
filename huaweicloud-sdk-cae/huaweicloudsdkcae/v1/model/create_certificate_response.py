@@ -30,7 +30,7 @@ class CreateCertificateResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """CreateCertificateResponse
+        r"""CreateCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateCertificateResponse.
+        r"""Gets the api_version of this CreateCertificateResponse.
 
         :return: The api_version of this CreateCertificateResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateCertificateResponse.
+        r"""Sets the api_version of this CreateCertificateResponse.
 
         :param api_version: The api_version of this CreateCertificateResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateCertificateResponse.
+        r"""Gets the kind of this CreateCertificateResponse.
 
         :return: The kind of this CreateCertificateResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -85,7 +85,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateCertificateResponse.
+        r"""Sets the kind of this CreateCertificateResponse.
 
         :param kind: The kind of this CreateCertificateResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -94,7 +94,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this CreateCertificateResponse.
+        r"""Gets the items of this CreateCertificateResponse.
 
         证书列表。
 
@@ -105,7 +105,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this CreateCertificateResponse.
+        r"""Sets the items of this CreateCertificateResponse.
 
         证书列表。
 

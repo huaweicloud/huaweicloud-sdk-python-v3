@@ -34,7 +34,7 @@ class CphAsyncClient(Client):
         return client_builder
 
     def add_image_member_async(self, request):
-        """共享镜像给指定账号
+        r"""共享镜像给指定账号
 
         镜像共享,共享镜像给指定账号。
         - 镜像只能共享给同region下的其他华为云账号(project_id)。
@@ -103,7 +103,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def batch_create_tags_async(self, request):
-        """批量添加标签
+        r"""批量添加标签
 
         批量添加标签。
         
@@ -172,7 +172,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def batch_delete_tags_async(self, request):
-        """批量删除标签
+        r"""批量删除标签
 
         批量删除标签。
         
@@ -241,7 +241,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def batch_export_cloud_phone_data_async(self, request):
-        """导出云手机数据
+        r"""导出云手机数据
 
         批量导出云手机中的数据。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         
@@ -306,7 +306,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def batch_import_cloud_phone_data_async(self, request):
-        """恢复云手机数据
+        r"""恢复云手机数据
 
         批量恢复数据到云手机中。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         
@@ -375,7 +375,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def batch_show_phone_connect_infos_async(self, request):
-        """获取云手机连接信息
+        r"""获取云手机连接信息
 
         获取云手机连接信息。
         
@@ -440,7 +440,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def change_cloud_phone_server_async(self, request):
-        """切换云手机服务器
+        r"""切换云手机服务器
 
         切换云手机服务器, 支持您换一台新的云手机服务器。切换后服务器名称、服务器ID和服务器所在AZ与原服务器相同, 服务器计费保持不变。服务器切换的同时服务器上的手机重新创建，不保留用户数据。切换需要额外的资源和资源配额。
         
@@ -507,7 +507,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def change_cloud_phone_server_model_async(self, request):
-        """变更云手机服务器规格
+        r"""变更云手机服务器规格
 
         变更云手机服务器规格。接口调用成功后，大约2分钟左右规格会变更结束，在订单中心可以查看到变更的订单状态为成功，且查询服务器的详细信息，可以查看到服务器规格名称已经变成新的规格名称。
         
@@ -572,7 +572,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def create_cloud_phone_single_server_async(self, request):
-        """创建云手机裸服务器
+        r"""创建云手机裸服务器
 
         该接口创建的服务器仅包含服务器和服务器的镜像，不包含云手机实例和镜像等内容。若需要创建包含云手机实例的服务器，请使用创建云手机服务器接口。
         
@@ -637,7 +637,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def create_net2_cloud_phone_server_async(self, request):
-        """[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)云手机服务器
+        r"""[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)云手机服务器
 
         [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)云手机服务器，支持您复用已有的VPC网络管理云手机服务器，支持云手机服务器复用您已[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的共享带宽等资源。
         - 请确保您使用的账号具有CPH AgencyDependencyAccess权限。
@@ -705,7 +705,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def delete_cloud_phone_server_async(self, request):
-        """删除云手机服务器
+        r"""删除云手机服务器
 
         删除云手机服务器，仅可以删除按需购买的云手机服务器，最多删除十台。
         
@@ -770,7 +770,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def delete_image_async(self, request):
-        """删除镜像
+        r"""删除镜像
 
         删除自定义镜像
         
@@ -835,7 +835,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def delete_image_member_async(self, request):
-        """删除共享镜像
+        r"""删除共享镜像
 
         删除共享镜像
         
@@ -902,7 +902,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def delete_share_apps_async(self, request):
-        """删除共享应用
+        r"""删除共享应用
 
         在共享应用存储目录中删除共享应用，该功能仅在支持共享应用的云手机规格上可实现。
         
@@ -967,7 +967,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def delete_share_files_async(self, request):
-        """删除共享存储文件
+        r"""删除共享存储文件
 
         删除共享存储目录中文件，该功能仅在支持共享存储的云手机规格上可实现。
         
@@ -1032,7 +1032,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def expand_phone_data_volume_size_async(self, request):
-        """扩容云手机数据盘大小
+        r"""扩容云手机数据盘大小
 
         扩容云手机数据盘大小
         - 注意: 本接口会产生扩容新增容量的费用，新增容量不算入服务器免费存储额度内。
@@ -1098,7 +1098,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def import_traffic_async(self, request):
-        """云手机流量导流
+        r"""云手机流量导流
 
         手机流量路由修改。
         
@@ -1163,7 +1163,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_cloud_phone_images_async(self, request):
-        """查询手机镜像
+        r"""查询手机镜像
 
         根据项目ID查询可用的手机镜像。
         
@@ -1228,7 +1228,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_cloud_phone_models_async(self, request):
-        """查询云手机规格列表
+        r"""查询云手机规格列表
 
         查询或统计云手机的规格列表。
         
@@ -1297,7 +1297,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_cloud_phone_server_models_async(self, request):
-        """查询云手机服务器规格列表
+        r"""查询云手机服务器规格列表
 
         查询云手机服务器的规格列表。
         
@@ -1362,7 +1362,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_cloud_phone_servers_async(self, request):
-        """查询云手机服务器列表
+        r"""查询云手机服务器列表
 
         分页查询云手机服务器，云手机服务器列表按照创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在云手机服务器，则返回空列表。
         
@@ -1443,7 +1443,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_cloud_phones_async(self, request):
-        """查询云手机列表
+        r"""查询云手机列表
 
         分页查询云手机，云手机列表按照创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在云手机，则返回空列表。
         
@@ -1518,7 +1518,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_encode_servers_async(self, request):
-        """查询编码服务
+        r"""查询编码服务
 
         查询编码服务列表。
         
@@ -1591,7 +1591,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_image_members_async(self, request):
-        """获取镜像已共享账号列表
+        r"""获取镜像已共享账号列表
 
         获取镜像已共享账号列表
         - 路径中的project_id为共享账号的租户id
@@ -1658,7 +1658,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_images_async(self, request):
-        """查询自定义镜像列表
+        r"""查询自定义镜像列表
 
         查询自定义镜像列表
         
@@ -1739,7 +1739,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_jobs_async(self, request):
-        """查询任务执行状态列表
+        r"""查询任务执行状态列表
 
         查询同一个request id下的任务。
         
@@ -1810,7 +1810,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询租户在指定区域和资源类型的所有标签集合。
         
@@ -1875,7 +1875,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_resource_instances_async(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         查询资源实例。
         
@@ -1942,7 +1942,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_resource_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询资源标签列表。
         
@@ -2009,7 +2009,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def list_share_files_async(self, request):
-        """查询共享存储文件
+        r"""查询共享存储文件
 
         查询共享存储指定路径下的文件列表，该功能仅在支持共享存储的云手机规格上可实现。
         
@@ -2080,7 +2080,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def push_share_apps_async(self, request):
-        """推送共享应用
+        r"""推送共享应用
 
         推送应用tar文件至共享应用存储目录中，该功能仅在支持共享应用的云手机服务器上可实现。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         
@@ -2147,7 +2147,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def push_share_files_async(self, request):
-        """推送共享存储文件
+        r"""推送共享存储文件
 
         推送文件至共享存储目录中，该功能仅在支持共享存储的云手机规格上可实现。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         
@@ -2212,7 +2212,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def reset_cloud_phone_async(self, request):
-        """重置云手机
+        r"""重置云手机
 
         批量重置云手机，将云手机恢复出厂设置。该接口为异步接口。
         
@@ -2277,7 +2277,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def restart_cloud_phone_async(self, request):
-        """重启云手机
+        r"""重启云手机
 
         批量重启云手机，也可用于开启云手机。该接口为异步接口。
         
@@ -2342,7 +2342,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def restart_cloud_phone_server_async(self, request):
-        """重启云手机服务器
+        r"""重启云手机服务器
 
         批量重启云手机服务器。
         
@@ -2407,7 +2407,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def restart_encode_server_async(self, request):
-        """重启编码服务
+        r"""重启编码服务
 
         批量重启编码服务。
         
@@ -2472,7 +2472,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def show_bandwidth_detail_async(self, request):
-        """查询带宽信息
+        r"""查询带宽信息
 
         查询云手机使用的带宽信息，本接口只适用于使用系统定义网络的服务器。
         
@@ -2539,7 +2539,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def show_cloud_phone_detail_async(self, request):
-        """查询云手机详情
+        r"""查询云手机详情
 
         查询云手机的详细信息。
         
@@ -2604,7 +2604,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def show_cloud_phone_server_detail_async(self, request):
-        """查询云手机服务器详情
+        r"""查询云手机服务器详情
 
         根据server_id查询云手机服务器的详细信息。
         
@@ -2669,7 +2669,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def show_job_async(self, request):
-        """查询任务执行状态
+        r"""查询任务执行状态
 
         查询任务的执行状态。
         
@@ -2734,7 +2734,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def stop_cloud_phone_async(self, request):
-        """关闭云手机
+        r"""关闭云手机
 
         批量关闭云手机。
         
@@ -2799,7 +2799,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def update_bandwidth_async(self, request):
-        """修改共享带宽
+        r"""修改共享带宽
 
         修改云手机使用的共享带宽大小，本接口只适用于使用系统定义网络的服务器。
         
@@ -2866,7 +2866,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def update_cloud_phone_property_async(self, request):
-        """更新云手机属性
+        r"""更新云手机属性
 
         部分云手机属性开放更新能力，部分属性无法更新，部分属性需要重启手机生效，属性约束请云手机属性列表。如果手机处于异常状态，属性更新后需恢复手机状态为运行中才可生效。该接口为异步接口。
         
@@ -2931,7 +2931,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def update_image_member_async(self, request):
-        """更新共享镜像接受信息
+        r"""更新共享镜像接受信息
 
         用户收到共享镜像后，选择接受或拒绝共享镜像。未接受的共享镜像无法使用。
         
@@ -2998,7 +2998,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def update_keypair_async(self, request):
-        """更改密钥对
+        r"""更改密钥对
 
         修改连接云手机的密钥对。
         
@@ -3063,7 +3063,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def update_phone_name_async(self, request):
-        """修改云手机名称
+        r"""修改云手机名称
 
         根据phoneId修改phoneName。
         
@@ -3130,7 +3130,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def update_server_name_async(self, request):
-        """修改云手机服务器名称
+        r"""修改云手机服务器名称
 
         根据serverId修改serverName。
         
@@ -3197,7 +3197,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def install_apk_async(self, request):
-        """安装apk
+        r"""安装apk
 
         在云手机中安装apk。系统会将指定的apk文件下载后直接安装到云手机中。
         支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk，如果一次传多个apk只有第一个安装成功；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
@@ -3265,7 +3265,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def push_file_async(self, request):
-        """推送文件
+        r"""推送文件
 
         推送文件到云手机文件系统中。系统会将所指定的文件下载解压后，将解压后的内容全部推送到云手机的根目录下。只支持指定tar格式的文件进行推送，您需要将tar文件提前上传至您的OBS桶中。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。
@@ -3333,7 +3333,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def run_shell_command_async(self, request):
-        """异步执行adb命令
+        r"""异步执行adb命令
 
         在云手机中执行shell命令。该接口为异步接口。
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。
@@ -3399,7 +3399,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def run_sync_command_async(self, request):
-        """同步执行adb命令
+        r"""同步执行adb命令
 
         在云手机中同步执行命令并返回命令执行的输出信息，该接口仅支持adb shell命令的执行。1分钟内每个用户调用接口次数上限为6次，每个云手机允许执行命令超时时间为2秒，接口时间不超过30秒，执行云手机数越多，接口耗时相应越长。
         
@@ -3464,7 +3464,7 @@ class CphAsyncClient(Client):
         return http_info
 
     def uninstall_apk_async(self, request):
-        """卸载apk
+        r"""卸载apk
 
         在云手机中卸载apk。该接口为异步接口。
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。

@@ -25,7 +25,7 @@ class CreateDatabaseDetailResponses:
     }
 
     def __init__(self, name=None):
-        """CreateDatabaseDetailResponses
+        r"""CreateDatabaseDetailResponses
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDatabaseDetailResponses:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseDetailResponses.
+        r"""Gets the name of this CreateDatabaseDetailResponses.
 
         逻辑库名称。
 
@@ -53,7 +53,7 @@ class CreateDatabaseDetailResponses:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseDetailResponses.
+        r"""Sets the name of this CreateDatabaseDetailResponses.
 
         逻辑库名称。
 

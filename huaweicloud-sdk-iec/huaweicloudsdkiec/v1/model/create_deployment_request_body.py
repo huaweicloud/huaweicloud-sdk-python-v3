@@ -25,7 +25,7 @@ class CreateDeploymentRequestBody:
     }
 
     def __init__(self, edgecloud=None):
-        """CreateDeploymentRequestBody
+        r"""CreateDeploymentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDeploymentRequestBody:
 
     @property
     def edgecloud(self):
-        """Gets the edgecloud of this CreateDeploymentRequestBody.
+        r"""Gets the edgecloud of this CreateDeploymentRequestBody.
 
         :return: The edgecloud of this CreateDeploymentRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.EdgeCloudOption`
@@ -51,7 +51,7 @@ class CreateDeploymentRequestBody:
 
     @edgecloud.setter
     def edgecloud(self, edgecloud):
-        """Sets the edgecloud of this CreateDeploymentRequestBody.
+        r"""Sets the edgecloud of this CreateDeploymentRequestBody.
 
         :param edgecloud: The edgecloud of this CreateDeploymentRequestBody.
         :type edgecloud: :class:`huaweicloudsdkiec.v1.EdgeCloudOption`

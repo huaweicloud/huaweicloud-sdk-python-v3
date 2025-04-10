@@ -37,7 +37,7 @@ class UpdateProductRequestBody:
     }
 
     def __init__(self, name=None, description=None, manufacturer_id=None, manufacturer_name=None, model=None, device_type=None, version=None):
-        """UpdateProductRequestBody
+        r"""UpdateProductRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class UpdateProductRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateProductRequestBody.
+        r"""Gets the name of this UpdateProductRequestBody.
 
         产品名称，创建产品时租户内唯一，长度1-64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -91,7 +91,7 @@ class UpdateProductRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProductRequestBody.
+        r"""Sets the name of this UpdateProductRequestBody.
 
         产品名称，创建产品时租户内唯一，长度1-64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -102,7 +102,7 @@ class UpdateProductRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProductRequestBody.
+        r"""Gets the description of this UpdateProductRequestBody.
 
         产品描述，长度0-200
 
@@ -113,7 +113,7 @@ class UpdateProductRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProductRequestBody.
+        r"""Sets the description of this UpdateProductRequestBody.
 
         产品描述，长度0-200
 
@@ -124,7 +124,7 @@ class UpdateProductRequestBody:
 
     @property
     def manufacturer_id(self):
-        """Gets the manufacturer_id of this UpdateProductRequestBody.
+        r"""Gets the manufacturer_id of this UpdateProductRequestBody.
 
         产品供应商ID，支持英文大小写，数字，下划线和中划线，长度2-50
 
@@ -135,7 +135,7 @@ class UpdateProductRequestBody:
 
     @manufacturer_id.setter
     def manufacturer_id(self, manufacturer_id):
-        """Sets the manufacturer_id of this UpdateProductRequestBody.
+        r"""Sets the manufacturer_id of this UpdateProductRequestBody.
 
         产品供应商ID，支持英文大小写，数字，下划线和中划线，长度2-50
 
@@ -146,7 +146,7 @@ class UpdateProductRequestBody:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this UpdateProductRequestBody.
+        r"""Gets the manufacturer_name of this UpdateProductRequestBody.
 
         厂商名称，支持长度2-64
 
@@ -157,7 +157,7 @@ class UpdateProductRequestBody:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this UpdateProductRequestBody.
+        r"""Sets the manufacturer_name of this UpdateProductRequestBody.
 
         厂商名称，支持长度2-64
 
@@ -168,7 +168,7 @@ class UpdateProductRequestBody:
 
     @property
     def model(self):
-        """Gets the model of this UpdateProductRequestBody.
+        r"""Gets the model of this UpdateProductRequestBody.
 
         产品型号，支持英文大小写，数字，下划线，中划线和空格(首尾空格会被忽略)，长度2-50
 
@@ -179,7 +179,7 @@ class UpdateProductRequestBody:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this UpdateProductRequestBody.
+        r"""Sets the model of this UpdateProductRequestBody.
 
         产品型号，支持英文大小写，数字，下划线，中划线和空格(首尾空格会被忽略)，长度2-50
 
@@ -190,7 +190,7 @@ class UpdateProductRequestBody:
 
     @property
     def device_type(self):
-        """Gets the device_type of this UpdateProductRequestBody.
+        r"""Gets the device_type of this UpdateProductRequestBody.
 
         产品的设备类型（默认Default Type）
 
@@ -201,7 +201,7 @@ class UpdateProductRequestBody:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this UpdateProductRequestBody.
+        r"""Sets the device_type of this UpdateProductRequestBody.
 
         产品的设备类型（默认Default Type）
 
@@ -212,7 +212,7 @@ class UpdateProductRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this UpdateProductRequestBody.
+        r"""Gets the version of this UpdateProductRequestBody.
 
         模型版本
 
@@ -223,7 +223,7 @@ class UpdateProductRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateProductRequestBody.
+        r"""Sets the version of this UpdateProductRequestBody.
 
         模型版本
 

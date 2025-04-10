@@ -27,7 +27,7 @@ class SwitchVirtualPrivateCloudRequestBody:
     }
 
     def __init__(self, server_id=None, network=None):
-        """SwitchVirtualPrivateCloudRequestBody
+        r"""SwitchVirtualPrivateCloudRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SwitchVirtualPrivateCloudRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this SwitchVirtualPrivateCloudRequestBody.
+        r"""Gets the server_id of this SwitchVirtualPrivateCloudRequestBody.
 
         需要切换vpc的实例id
 
@@ -59,7 +59,7 @@ class SwitchVirtualPrivateCloudRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this SwitchVirtualPrivateCloudRequestBody.
+        r"""Sets the server_id of this SwitchVirtualPrivateCloudRequestBody.
 
         需要切换vpc的实例id
 
@@ -70,7 +70,7 @@ class SwitchVirtualPrivateCloudRequestBody:
 
     @property
     def network(self):
-        """Gets the network of this SwitchVirtualPrivateCloudRequestBody.
+        r"""Gets the network of this SwitchVirtualPrivateCloudRequestBody.
 
         :return: The network of this SwitchVirtualPrivateCloudRequestBody.
         :rtype: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`
@@ -79,7 +79,7 @@ class SwitchVirtualPrivateCloudRequestBody:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this SwitchVirtualPrivateCloudRequestBody.
+        r"""Sets the network of this SwitchVirtualPrivateCloudRequestBody.
 
         :param network: The network of this SwitchVirtualPrivateCloudRequestBody.
         :type network: :class:`huaweicloudsdkcbh.v2.NetworkInfoCreate`

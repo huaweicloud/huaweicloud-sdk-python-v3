@@ -28,7 +28,7 @@ class ListAppVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None, count=None):
-        """ListAppVersionsResponse
+        r"""ListAppVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListAppVersionsResponse.
+        r"""Gets the versions of this ListAppVersionsResponse.
 
         app详情
 
@@ -62,7 +62,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListAppVersionsResponse.
+        r"""Sets the versions of this ListAppVersionsResponse.
 
         app详情
 
@@ -73,7 +73,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppVersionsResponse.
+        r"""Gets the count of this ListAppVersionsResponse.
 
         满足条件的应用版本个数
 
@@ -84,7 +84,7 @@ class ListAppVersionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppVersionsResponse.
+        r"""Sets the count of this ListAppVersionsResponse.
 
         满足条件的应用版本个数
 

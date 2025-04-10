@@ -29,7 +29,7 @@ class DetachServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, volume_id=None, delete_flag=None):
-        """DetachServerVolumeRequest
+        r"""DetachServerVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DetachServerVolumeRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this DetachServerVolumeRequest.
+        r"""Gets the server_id of this DetachServerVolumeRequest.
 
         云服务器ID。
 
@@ -66,7 +66,7 @@ class DetachServerVolumeRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this DetachServerVolumeRequest.
+        r"""Sets the server_id of this DetachServerVolumeRequest.
 
         云服务器ID。
 
@@ -77,7 +77,7 @@ class DetachServerVolumeRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this DetachServerVolumeRequest.
+        r"""Gets the volume_id of this DetachServerVolumeRequest.
 
         磁盘ID。
 
@@ -88,7 +88,7 @@ class DetachServerVolumeRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this DetachServerVolumeRequest.
+        r"""Sets the volume_id of this DetachServerVolumeRequest.
 
         磁盘ID。
 
@@ -99,7 +99,7 @@ class DetachServerVolumeRequest:
 
     @property
     def delete_flag(self):
-        """Gets the delete_flag of this DetachServerVolumeRequest.
+        r"""Gets the delete_flag of this DetachServerVolumeRequest.
 
         是否强制卸载数据盘。  - 是，值为“1”。  - 否，值为“0”。  默认值为0。
 
@@ -110,7 +110,7 @@ class DetachServerVolumeRequest:
 
     @delete_flag.setter
     def delete_flag(self, delete_flag):
-        """Sets the delete_flag of this DetachServerVolumeRequest.
+        r"""Sets the delete_flag of this DetachServerVolumeRequest.
 
         是否强制卸载数据盘。  - 是，值为“1”。  - 否，值为“0”。  默认值为0。
 

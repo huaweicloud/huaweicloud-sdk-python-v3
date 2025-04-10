@@ -26,7 +26,7 @@ class CreateDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, databases=None):
-        """CreateDatabaseResponse
+        r"""CreateDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDatabaseResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this CreateDatabaseResponse.
+        r"""Gets the databases of this CreateDatabaseResponse.
 
         逻辑库相关信息的集合。
 
@@ -55,7 +55,7 @@ class CreateDatabaseResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateDatabaseResponse.
+        r"""Sets the databases of this CreateDatabaseResponse.
 
         逻辑库相关信息的集合。
 

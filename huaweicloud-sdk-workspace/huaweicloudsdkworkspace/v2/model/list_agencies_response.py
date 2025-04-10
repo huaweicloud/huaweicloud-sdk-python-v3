@@ -26,7 +26,7 @@ class ListAgenciesResponse(SdkResponse):
     }
 
     def __init__(self, existing_agencies=None):
-        """ListAgenciesResponse
+        r"""ListAgenciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def existing_agencies(self):
-        """Gets the existing_agencies of this ListAgenciesResponse.
+        r"""Gets the existing_agencies of this ListAgenciesResponse.
 
         委托信息
 
@@ -55,7 +55,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @existing_agencies.setter
     def existing_agencies(self, existing_agencies):
-        """Sets the existing_agencies of this ListAgenciesResponse.
+        r"""Sets the existing_agencies of this ListAgenciesResponse.
 
         委托信息
 

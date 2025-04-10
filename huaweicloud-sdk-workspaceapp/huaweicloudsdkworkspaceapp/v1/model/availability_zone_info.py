@@ -37,7 +37,7 @@ class AvailabilityZoneInfo:
     }
 
     def __init__(self, availability_zone=None, display_name=None, i18n=None, sold_out=None, product_ids=None, visible=None, default_availability_zone=None):
-        """AvailabilityZoneInfo
+        r"""AvailabilityZoneInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AvailabilityZoneInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this AvailabilityZoneInfo.
+        r"""Gets the availability_zone of this AvailabilityZoneInfo.
 
         可用分区编码。
 
@@ -96,7 +96,7 @@ class AvailabilityZoneInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this AvailabilityZoneInfo.
+        r"""Sets the availability_zone of this AvailabilityZoneInfo.
 
         可用分区编码。
 
@@ -107,7 +107,7 @@ class AvailabilityZoneInfo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AvailabilityZoneInfo.
+        r"""Gets the display_name of this AvailabilityZoneInfo.
 
         可用分区名称。
 
@@ -118,7 +118,7 @@ class AvailabilityZoneInfo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AvailabilityZoneInfo.
+        r"""Sets the display_name of this AvailabilityZoneInfo.
 
         可用分区名称。
 
@@ -129,7 +129,7 @@ class AvailabilityZoneInfo:
 
     @property
     def i18n(self):
-        """Gets the i18n of this AvailabilityZoneInfo.
+        r"""Gets the i18n of this AvailabilityZoneInfo.
 
         可用分区国际化信息。
 
@@ -140,7 +140,7 @@ class AvailabilityZoneInfo:
 
     @i18n.setter
     def i18n(self, i18n):
-        """Sets the i18n of this AvailabilityZoneInfo.
+        r"""Sets the i18n of this AvailabilityZoneInfo.
 
         可用分区国际化信息。
 
@@ -151,7 +151,7 @@ class AvailabilityZoneInfo:
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this AvailabilityZoneInfo.
+        r"""Gets the sold_out of this AvailabilityZoneInfo.
 
         :return: The sold_out of this AvailabilityZoneInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SoldOutInfo`
@@ -160,7 +160,7 @@ class AvailabilityZoneInfo:
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this AvailabilityZoneInfo.
+        r"""Sets the sold_out of this AvailabilityZoneInfo.
 
         :param sold_out: The sold_out of this AvailabilityZoneInfo.
         :type sold_out: :class:`huaweicloudsdkworkspaceapp.v1.SoldOutInfo`
@@ -169,7 +169,7 @@ class AvailabilityZoneInfo:
 
     @property
     def product_ids(self):
-        """Gets the product_ids of this AvailabilityZoneInfo.
+        r"""Gets the product_ids of this AvailabilityZoneInfo.
 
         指定当前分区下自定义支持的产品ID列表，如果为空则支持所有套餐。
 
@@ -180,7 +180,7 @@ class AvailabilityZoneInfo:
 
     @product_ids.setter
     def product_ids(self, product_ids):
-        """Sets the product_ids of this AvailabilityZoneInfo.
+        r"""Sets the product_ids of this AvailabilityZoneInfo.
 
         指定当前分区下自定义支持的产品ID列表，如果为空则支持所有套餐。
 
@@ -191,7 +191,7 @@ class AvailabilityZoneInfo:
 
     @property
     def visible(self):
-        """Gets the visible of this AvailabilityZoneInfo.
+        r"""Gets the visible of this AvailabilityZoneInfo.
 
         是否可见。
 
@@ -202,7 +202,7 @@ class AvailabilityZoneInfo:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this AvailabilityZoneInfo.
+        r"""Sets the visible of this AvailabilityZoneInfo.
 
         是否可见。
 
@@ -213,7 +213,7 @@ class AvailabilityZoneInfo:
 
     @property
     def default_availability_zone(self):
-        """Gets the default_availability_zone of this AvailabilityZoneInfo.
+        r"""Gets the default_availability_zone of this AvailabilityZoneInfo.
 
         是否默认可用分区。
 
@@ -224,7 +224,7 @@ class AvailabilityZoneInfo:
 
     @default_availability_zone.setter
     def default_availability_zone(self, default_availability_zone):
-        """Sets the default_availability_zone of this AvailabilityZoneInfo.
+        r"""Sets the default_availability_zone of this AvailabilityZoneInfo.
 
         是否默认可用分区。
 

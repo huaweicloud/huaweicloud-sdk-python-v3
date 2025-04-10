@@ -23,7 +23,7 @@ class ContainerName:
     }
 
     def __init__(self):
-        """ContainerName
+        r"""ContainerName
 
         The model defined in huaweicloud sdk
 

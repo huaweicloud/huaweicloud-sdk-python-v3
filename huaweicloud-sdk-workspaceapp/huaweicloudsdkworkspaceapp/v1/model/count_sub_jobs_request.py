@@ -29,7 +29,7 @@ class CountSubJobsRequest:
     }
 
     def __init__(self, status=None, job_type=None, job_id=None):
-        """CountSubJobsRequest
+        r"""CountSubJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CountSubJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this CountSubJobsRequest.
+        r"""Gets the status of this CountSubJobsRequest.
 
         job详情的状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 成功 * `FAILED` - 失败 * `ABNORMAL` - 异常 * `ROLLBACK` - 回滚中 * `ABORTING` - 取消
 
@@ -68,7 +68,7 @@ class CountSubJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CountSubJobsRequest.
+        r"""Sets the status of this CountSubJobsRequest.
 
         job详情的状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 成功 * `FAILED` - 失败 * `ABNORMAL` - 异常 * `ROLLBACK` - 回滚中 * `ABORTING` - 取消
 
@@ -79,7 +79,7 @@ class CountSubJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this CountSubJobsRequest.
+        r"""Gets the job_type of this CountSubJobsRequest.
 
         任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔。
 
@@ -90,7 +90,7 @@ class CountSubJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CountSubJobsRequest.
+        r"""Sets the job_type of this CountSubJobsRequest.
 
         任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔。
 
@@ -101,7 +101,7 @@ class CountSubJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CountSubJobsRequest.
+        r"""Gets the job_id of this CountSubJobsRequest.
 
         任务ID。
 
@@ -112,7 +112,7 @@ class CountSubJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CountSubJobsRequest.
+        r"""Sets the job_id of this CountSubJobsRequest.
 
         任务ID。
 

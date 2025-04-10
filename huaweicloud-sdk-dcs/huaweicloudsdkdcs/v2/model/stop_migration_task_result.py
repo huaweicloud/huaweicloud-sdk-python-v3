@@ -31,7 +31,7 @@ class StopMigrationTaskResult:
     }
 
     def __init__(self, result=None, task_id=None, error_msg=None, error_code=None):
-        """StopMigrationTaskResult
+        r"""StopMigrationTaskResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StopMigrationTaskResult:
 
     @property
     def result(self):
-        """Gets the result of this StopMigrationTaskResult.
+        r"""Gets the result of this StopMigrationTaskResult.
 
         下发停止迁移任务操作结果。
 
@@ -75,7 +75,7 @@ class StopMigrationTaskResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StopMigrationTaskResult.
+        r"""Sets the result of this StopMigrationTaskResult.
 
         下发停止迁移任务操作结果。
 
@@ -86,7 +86,7 @@ class StopMigrationTaskResult:
 
     @property
     def task_id(self):
-        """Gets the task_id of this StopMigrationTaskResult.
+        r"""Gets the task_id of this StopMigrationTaskResult.
 
         数据迁移任务ID。
 
@@ -97,7 +97,7 @@ class StopMigrationTaskResult:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StopMigrationTaskResult.
+        r"""Sets the task_id of this StopMigrationTaskResult.
 
         数据迁移任务ID。
 
@@ -108,7 +108,7 @@ class StopMigrationTaskResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this StopMigrationTaskResult.
+        r"""Gets the error_msg of this StopMigrationTaskResult.
 
         错误信息
 
@@ -119,7 +119,7 @@ class StopMigrationTaskResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this StopMigrationTaskResult.
+        r"""Sets the error_msg of this StopMigrationTaskResult.
 
         错误信息
 
@@ -130,7 +130,7 @@ class StopMigrationTaskResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this StopMigrationTaskResult.
+        r"""Gets the error_code of this StopMigrationTaskResult.
 
         错误码
 
@@ -141,7 +141,7 @@ class StopMigrationTaskResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this StopMigrationTaskResult.
+        r"""Sets the error_code of this StopMigrationTaskResult.
 
         错误码
 

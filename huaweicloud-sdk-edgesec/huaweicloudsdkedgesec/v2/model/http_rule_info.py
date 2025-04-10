@@ -31,7 +31,7 @@ class HttpRuleInfo:
     }
 
     def __init__(self, rule_id=None, rule_name=None, policy_id=None, policy_name=None):
-        """HttpRuleInfo
+        r"""HttpRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HttpRuleInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this HttpRuleInfo.
+        r"""Gets the rule_id of this HttpRuleInfo.
 
         策略下的规则id
 
@@ -75,7 +75,7 @@ class HttpRuleInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this HttpRuleInfo.
+        r"""Sets the rule_id of this HttpRuleInfo.
 
         策略下的规则id
 
@@ -86,7 +86,7 @@ class HttpRuleInfo:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this HttpRuleInfo.
+        r"""Gets the rule_name of this HttpRuleInfo.
 
         策略下的规则名称
 
@@ -97,7 +97,7 @@ class HttpRuleInfo:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this HttpRuleInfo.
+        r"""Sets the rule_name of this HttpRuleInfo.
 
         策略下的规则名称
 
@@ -108,7 +108,7 @@ class HttpRuleInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this HttpRuleInfo.
+        r"""Gets the policy_id of this HttpRuleInfo.
 
         策略id
 
@@ -119,7 +119,7 @@ class HttpRuleInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this HttpRuleInfo.
+        r"""Sets the policy_id of this HttpRuleInfo.
 
         策略id
 
@@ -130,7 +130,7 @@ class HttpRuleInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this HttpRuleInfo.
+        r"""Gets the policy_name of this HttpRuleInfo.
 
         策略名称
 
@@ -141,7 +141,7 @@ class HttpRuleInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this HttpRuleInfo.
+        r"""Sets the policy_name of this HttpRuleInfo.
 
         策略名称
 

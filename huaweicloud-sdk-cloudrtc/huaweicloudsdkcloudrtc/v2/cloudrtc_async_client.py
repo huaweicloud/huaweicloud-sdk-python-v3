@@ -34,7 +34,7 @@ class CloudRTCAsyncClient(Client):
         return client_builder
 
     def create_app_async(self, request):
-        """创建应用
+        r"""创建应用
 
         调用此接口创建应用。
         
@@ -107,7 +107,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def create_individual_stream_job_async(self, request):
-        """启动单流任务
+        r"""启动单流任务
 
         调用此接口接口启动单流任务。
         
@@ -186,7 +186,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def create_mix_job_async(self, request):
-        """启动合流任务
+        r"""启动合流任务
 
         调用此接口创建合流转码任务。
         
@@ -277,7 +277,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def create_record_rule_async(self, request):
-        """创建或更新录制规则
+        r"""创建或更新录制规则
 
         调用此接口创建或更新录制规则。
         
@@ -355,7 +355,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def delete_app_async(self, request):
-        """删除应用
+        r"""删除应用
 
         调用此接口删除单个应用。
         
@@ -428,7 +428,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def delete_record_rule_async(self, request):
-        """删除录制规则
+        r"""删除录制规则
 
         调用此接口删除录制规则，对于正在使用的录制规则，不允许删除。
         
@@ -503,7 +503,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_apps_async(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         调用此接口查询应用列表。
         
@@ -580,7 +580,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_record_rules_async(self, request):
-        """查询录制规则列表
+        r"""查询录制规则列表
 
         调用此接口查询录制规则列表。
         
@@ -657,7 +657,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def remove_room_async(self, request):
-        """解散房间
+        r"""解散房间
 
         调用此接口解散房间，将该房间中所有用户踢出房间。
         
@@ -732,7 +732,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def remove_users_async(self, request):
-        """踢除在线用户
+        r"""踢除在线用户
 
         调用此接口强制用户离开房间。
         
@@ -809,7 +809,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def show_app_async(self, request):
-        """查询单个应用
+        r"""查询单个应用
 
         调用此接口查询单个应用详情。
         
@@ -882,7 +882,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def show_auto_record_async(self, request):
-        """查询自动录制配置
+        r"""查询自动录制配置
 
         调用此接口查询自动录制配置
         
@@ -955,7 +955,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def show_individual_stream_job_async(self, request):
-        """查询单流任务状态
+        r"""查询单流任务状态
 
         调用此接口查询单流任务状态。
         
@@ -1032,7 +1032,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def show_mix_job_async(self, request):
-        """查询合流任务
+        r"""查询合流任务
 
         调用此接口查询合流转码任务状态。
         
@@ -1107,7 +1107,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def show_record_callback_async(self, request):
-        """查询增值（录制）事件回调配置
+        r"""查询增值（录制）事件回调配置
 
         调用此接口查询增值（录制）事件回调配置
         
@@ -1180,7 +1180,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def show_record_rule_async(self, request):
-        """查询录制规则
+        r"""查询录制规则
 
         调用此接口查询指定录制规则。
         
@@ -1255,7 +1255,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def start_app_async(self, request):
-        """启用应用
+        r"""启用应用
 
         调用此接口启用单个应用。
         
@@ -1328,7 +1328,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def stop_app_async(self, request):
-        """停用应用
+        r"""停用应用
 
         调用此接口停用单个应用。
         
@@ -1403,7 +1403,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def stop_individual_stream_job_async(self, request):
-        """停止单流任务
+        r"""停止单流任务
 
         调用此接口停止单流任务
         
@@ -1478,7 +1478,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def stop_mix_job_async(self, request):
-        """停止合流任务
+        r"""停止合流任务
 
         调用此接口停止已下发的合流转码任务。
         
@@ -1553,7 +1553,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def update_auto_record_async(self, request):
-        """更新自动录制配置
+        r"""更新自动录制配置
 
         更新自动录制配置，租户可以开启自动单流录制或者停用自动单流录制。
         
@@ -1628,7 +1628,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def update_individual_stream_job_async(self, request):
-        """更新单流任务
+        r"""更新单流任务
 
         调用此接口修改单流任务。
         
@@ -1707,7 +1707,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def update_mix_job_async(self, request):
-        """修改合流任务
+        r"""修改合流任务
 
         调用此接口更新合流任务布局。
         
@@ -1784,7 +1784,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def update_record_callback_async(self, request):
-        """配置RTC增值（录制）事件回调
+        r"""配置RTC增值（录制）事件回调
 
         调用此接口配置增值（录制）事件上报回调。
         
@@ -1863,7 +1863,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def update_record_rule_async(self, request):
-        """更新录制规则
+        r"""更新录制规则
 
         调用此接口更新录制规则。
         
@@ -1940,7 +1940,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_obs_bucket_objects_async(self, request):
-        """查询OBS桶下对象列表
+        r"""查询OBS桶下对象列表
 
         查询OBS桶下对象列表
         
@@ -2011,7 +2011,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_obs_buckets_async(self, request):
-        """查询OBS桶列表
+        r"""查询OBS桶列表
 
         查询OBS桶列表
         
@@ -2074,7 +2074,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def update_obs_bucket_authority_async(self, request):
-        """OBS桶授权及取消授权
+        r"""OBS桶授权及取消授权
 
         OBS桶授权及取消授权
         

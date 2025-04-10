@@ -27,7 +27,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """AssociateGlobalConnectionBandwidthInstanceRequest
+        r"""AssociateGlobalConnectionBandwidthInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this AssociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Gets the id of this AssociateGlobalConnectionBandwidthInstanceRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Sets the id of this AssociateGlobalConnectionBandwidthInstanceRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Gets the body of this AssociateGlobalConnectionBandwidthInstanceRequest.
 
         :return: The body of this AssociateGlobalConnectionBandwidthInstanceRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.AssociateGlobalConnectionBandwidthInstanceRequestBody`
@@ -80,7 +80,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateGlobalConnectionBandwidthInstanceRequest.
+        r"""Sets the body of this AssociateGlobalConnectionBandwidthInstanceRequest.
 
         :param body: The body of this AssociateGlobalConnectionBandwidthInstanceRequest.
         :type body: :class:`huaweicloudsdkcc.v3.AssociateGlobalConnectionBandwidthInstanceRequestBody`

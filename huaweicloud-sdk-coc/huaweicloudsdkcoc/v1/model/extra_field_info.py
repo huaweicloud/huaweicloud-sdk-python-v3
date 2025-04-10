@@ -41,7 +41,7 @@ class ExtraFieldInfo:
     }
 
     def __init__(self, current_cloud_service_id=None, description=None, level_id=None, mtm_region=None, mtm_type=None, source_id=None, title=None, is_change_event=None, is_service_interrupt=None):
-        """ExtraFieldInfo
+        r"""ExtraFieldInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExtraFieldInfo:
 
     @property
     def current_cloud_service_id(self):
-        """Gets the current_cloud_service_id of this ExtraFieldInfo.
+        r"""Gets the current_cloud_service_id of this ExtraFieldInfo.
 
         扩展字段
 
@@ -110,7 +110,7 @@ class ExtraFieldInfo:
 
     @current_cloud_service_id.setter
     def current_cloud_service_id(self, current_cloud_service_id):
-        """Sets the current_cloud_service_id of this ExtraFieldInfo.
+        r"""Sets the current_cloud_service_id of this ExtraFieldInfo.
 
         扩展字段
 
@@ -121,7 +121,7 @@ class ExtraFieldInfo:
 
     @property
     def description(self):
-        """Gets the description of this ExtraFieldInfo.
+        r"""Gets the description of this ExtraFieldInfo.
 
         扩展字段
 
@@ -132,7 +132,7 @@ class ExtraFieldInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExtraFieldInfo.
+        r"""Sets the description of this ExtraFieldInfo.
 
         扩展字段
 
@@ -143,7 +143,7 @@ class ExtraFieldInfo:
 
     @property
     def level_id(self):
-        """Gets the level_id of this ExtraFieldInfo.
+        r"""Gets the level_id of this ExtraFieldInfo.
 
         扩展字段
 
@@ -154,7 +154,7 @@ class ExtraFieldInfo:
 
     @level_id.setter
     def level_id(self, level_id):
-        """Sets the level_id of this ExtraFieldInfo.
+        r"""Sets the level_id of this ExtraFieldInfo.
 
         扩展字段
 
@@ -165,7 +165,7 @@ class ExtraFieldInfo:
 
     @property
     def mtm_region(self):
-        """Gets the mtm_region of this ExtraFieldInfo.
+        r"""Gets the mtm_region of this ExtraFieldInfo.
 
         扩展字段
 
@@ -176,7 +176,7 @@ class ExtraFieldInfo:
 
     @mtm_region.setter
     def mtm_region(self, mtm_region):
-        """Sets the mtm_region of this ExtraFieldInfo.
+        r"""Sets the mtm_region of this ExtraFieldInfo.
 
         扩展字段
 
@@ -187,7 +187,7 @@ class ExtraFieldInfo:
 
     @property
     def mtm_type(self):
-        """Gets the mtm_type of this ExtraFieldInfo.
+        r"""Gets the mtm_type of this ExtraFieldInfo.
 
         扩展字段
 
@@ -198,7 +198,7 @@ class ExtraFieldInfo:
 
     @mtm_type.setter
     def mtm_type(self, mtm_type):
-        """Sets the mtm_type of this ExtraFieldInfo.
+        r"""Sets the mtm_type of this ExtraFieldInfo.
 
         扩展字段
 
@@ -209,7 +209,7 @@ class ExtraFieldInfo:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ExtraFieldInfo.
+        r"""Gets the source_id of this ExtraFieldInfo.
 
         扩展字段
 
@@ -220,7 +220,7 @@ class ExtraFieldInfo:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ExtraFieldInfo.
+        r"""Sets the source_id of this ExtraFieldInfo.
 
         扩展字段
 
@@ -231,7 +231,7 @@ class ExtraFieldInfo:
 
     @property
     def title(self):
-        """Gets the title of this ExtraFieldInfo.
+        r"""Gets the title of this ExtraFieldInfo.
 
         扩展字段
 
@@ -242,7 +242,7 @@ class ExtraFieldInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ExtraFieldInfo.
+        r"""Sets the title of this ExtraFieldInfo.
 
         扩展字段
 
@@ -253,7 +253,7 @@ class ExtraFieldInfo:
 
     @property
     def is_change_event(self):
-        """Gets the is_change_event of this ExtraFieldInfo.
+        r"""Gets the is_change_event of this ExtraFieldInfo.
 
         是否变更事件
 
@@ -264,7 +264,7 @@ class ExtraFieldInfo:
 
     @is_change_event.setter
     def is_change_event(self, is_change_event):
-        """Sets the is_change_event of this ExtraFieldInfo.
+        r"""Sets the is_change_event of this ExtraFieldInfo.
 
         是否变更事件
 
@@ -275,7 +275,7 @@ class ExtraFieldInfo:
 
     @property
     def is_service_interrupt(self):
-        """Gets the is_service_interrupt of this ExtraFieldInfo.
+        r"""Gets the is_service_interrupt of this ExtraFieldInfo.
 
         是否变更事件
 
@@ -286,7 +286,7 @@ class ExtraFieldInfo:
 
     @is_service_interrupt.setter
     def is_service_interrupt(self, is_service_interrupt):
-        """Sets the is_service_interrupt of this ExtraFieldInfo.
+        r"""Sets the is_service_interrupt of this ExtraFieldInfo.
 
         是否变更事件
 

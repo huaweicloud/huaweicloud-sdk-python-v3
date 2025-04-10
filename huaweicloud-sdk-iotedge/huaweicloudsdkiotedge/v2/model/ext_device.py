@@ -29,7 +29,7 @@ class ExtDevice:
     }
 
     def __init__(self, source=None, destination=None, cgroup_permissions=None):
-        """ExtDevice
+        r"""ExtDevice
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExtDevice:
 
     @property
     def source(self):
-        """Gets the source of this ExtDevice.
+        r"""Gets the source of this ExtDevice.
 
         源路径
 
@@ -66,7 +66,7 @@ class ExtDevice:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ExtDevice.
+        r"""Sets the source of this ExtDevice.
 
         源路径
 
@@ -77,7 +77,7 @@ class ExtDevice:
 
     @property
     def destination(self):
-        """Gets the destination of this ExtDevice.
+        r"""Gets the destination of this ExtDevice.
 
         卷挂载路径
 
@@ -88,7 +88,7 @@ class ExtDevice:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ExtDevice.
+        r"""Sets the destination of this ExtDevice.
 
         卷挂载路径
 
@@ -99,7 +99,7 @@ class ExtDevice:
 
     @property
     def cgroup_permissions(self):
-        """Gets the cgroup_permissions of this ExtDevice.
+        r"""Gets the cgroup_permissions of this ExtDevice.
 
         只读，默认MRW
 
@@ -110,7 +110,7 @@ class ExtDevice:
 
     @cgroup_permissions.setter
     def cgroup_permissions(self, cgroup_permissions):
-        """Sets the cgroup_permissions of this ExtDevice.
+        r"""Sets the cgroup_permissions of this ExtDevice.
 
         只读，默认MRW
 

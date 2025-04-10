@@ -26,7 +26,7 @@ class ListIaConfigsResponse(SdkResponse):
     }
 
     def __init__(self, configs=None):
-        """ListIaConfigsResponse
+        r"""ListIaConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListIaConfigsResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListIaConfigsResponse.
+        r"""Gets the configs of this ListIaConfigsResponse.
 
         南向3rdIA配置项列表
 
@@ -55,7 +55,7 @@ class ListIaConfigsResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListIaConfigsResponse.
+        r"""Sets the configs of this ListIaConfigsResponse.
 
         南向3rdIA配置项列表
 

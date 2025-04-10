@@ -27,7 +27,7 @@ class Evaluation:
     }
 
     def __init__(self, extension_id=None, text=None):
-        """Evaluation
+        r"""Evaluation
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Evaluation:
 
     @property
     def extension_id(self):
-        """Gets the extension_id of this Evaluation.
+        r"""Gets the extension_id of this Evaluation.
 
         插件id
 
@@ -59,7 +59,7 @@ class Evaluation:
 
     @extension_id.setter
     def extension_id(self, extension_id):
-        """Sets the extension_id of this Evaluation.
+        r"""Sets the extension_id of this Evaluation.
 
         插件id
 
@@ -70,7 +70,7 @@ class Evaluation:
 
     @property
     def text(self):
-        """Gets the text of this Evaluation.
+        r"""Gets the text of this Evaluation.
 
         评论内容
 
@@ -81,7 +81,7 @@ class Evaluation:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this Evaluation.
+        r"""Sets the text of this Evaluation.
 
         评论内容
 

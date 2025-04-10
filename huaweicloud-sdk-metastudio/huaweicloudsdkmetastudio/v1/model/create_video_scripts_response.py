@@ -30,7 +30,7 @@ class CreateVideoScriptsResponse(SdkResponse):
     }
 
     def __init__(self, script_id=None, audio_files=None, x_request_id=None):
-        """CreateVideoScriptsResponse
+        r"""CreateVideoScriptsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVideoScriptsResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this CreateVideoScriptsResponse.
+        r"""Gets the script_id of this CreateVideoScriptsResponse.
 
         剧本ID
 
@@ -69,7 +69,7 @@ class CreateVideoScriptsResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this CreateVideoScriptsResponse.
+        r"""Sets the script_id of this CreateVideoScriptsResponse.
 
         剧本ID
 
@@ -80,7 +80,7 @@ class CreateVideoScriptsResponse(SdkResponse):
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this CreateVideoScriptsResponse.
+        r"""Gets the audio_files of this CreateVideoScriptsResponse.
 
         :return: The audio_files of this CreateVideoScriptsResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -89,7 +89,7 @@ class CreateVideoScriptsResponse(SdkResponse):
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this CreateVideoScriptsResponse.
+        r"""Sets the audio_files of this CreateVideoScriptsResponse.
 
         :param audio_files: The audio_files of this CreateVideoScriptsResponse.
         :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -98,7 +98,7 @@ class CreateVideoScriptsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateVideoScriptsResponse.
+        r"""Gets the x_request_id of this CreateVideoScriptsResponse.
 
         :return: The x_request_id of this CreateVideoScriptsResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVideoScriptsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateVideoScriptsResponse.
+        r"""Sets the x_request_id of this CreateVideoScriptsResponse.
 
         :param x_request_id: The x_request_id of this CreateVideoScriptsResponse.
         :type x_request_id: str

@@ -28,7 +28,7 @@ class UpdateInstanceActivityResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """UpdateInstanceActivityResponse
+        r"""UpdateInstanceActivityResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateInstanceActivityResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateInstanceActivityResponse.
+        r"""Gets the result of this UpdateInstanceActivityResponse.
 
         :return: The result of this UpdateInstanceActivityResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExpireVo`
@@ -60,7 +60,7 @@ class UpdateInstanceActivityResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateInstanceActivityResponse.
+        r"""Sets the result of this UpdateInstanceActivityResponse.
 
         :param result: The result of this UpdateInstanceActivityResponse.
         :type result: :class:`huaweicloudsdkcloudide.v2.ExpireVo`
@@ -69,7 +69,7 @@ class UpdateInstanceActivityResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateInstanceActivityResponse.
+        r"""Gets the status of this UpdateInstanceActivityResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class UpdateInstanceActivityResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateInstanceActivityResponse.
+        r"""Sets the status of this UpdateInstanceActivityResponse.
 
         状态
 

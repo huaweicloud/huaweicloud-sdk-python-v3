@@ -25,7 +25,7 @@ class GrantAccessServiceRequestBody:
     }
 
     def __init__(self, access_services=None):
-        """GrantAccessServiceRequestBody
+        r"""GrantAccessServiceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GrantAccessServiceRequestBody:
 
     @property
     def access_services(self):
-        """Gets the access_services of this GrantAccessServiceRequestBody.
+        r"""Gets the access_services of this GrantAccessServiceRequestBody.
 
         接入服务授权信息列表
 
@@ -53,7 +53,7 @@ class GrantAccessServiceRequestBody:
 
     @access_services.setter
     def access_services(self, access_services):
-        """Sets the access_services of this GrantAccessServiceRequestBody.
+        r"""Sets the access_services of this GrantAccessServiceRequestBody.
 
         接入服务授权信息列表
 

@@ -48,7 +48,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, domain=None, app_name=None, id=None, start_time=None, end_time=None, create_time=None, event_name=None, task_desc=None, status=None, max_retry_cnt=None, package_info=None):
-        """ModifyHarvestTaskResponse
+        r"""ModifyHarvestTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyHarvestTaskResponse.
+        r"""Gets the job_id of this ModifyHarvestTaskResponse.
 
         任务ID
 
@@ -132,7 +132,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyHarvestTaskResponse.
+        r"""Sets the job_id of this ModifyHarvestTaskResponse.
 
         任务ID
 
@@ -143,7 +143,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyHarvestTaskResponse.
+        r"""Gets the domain of this ModifyHarvestTaskResponse.
 
         频道推流域名
 
@@ -154,7 +154,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyHarvestTaskResponse.
+        r"""Sets the domain of this ModifyHarvestTaskResponse.
 
         频道推流域名
 
@@ -165,7 +165,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyHarvestTaskResponse.
+        r"""Gets the app_name of this ModifyHarvestTaskResponse.
 
         组名或应用名
 
@@ -176,7 +176,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyHarvestTaskResponse.
+        r"""Sets the app_name of this ModifyHarvestTaskResponse.
 
         组名或应用名
 
@@ -187,7 +187,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ModifyHarvestTaskResponse.
+        r"""Gets the id of this ModifyHarvestTaskResponse.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -198,7 +198,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyHarvestTaskResponse.
+        r"""Sets the id of this ModifyHarvestTaskResponse.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -209,7 +209,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ModifyHarvestTaskResponse.
+        r"""Gets the start_time of this ModifyHarvestTaskResponse.
 
         开始时间。Unix时间错，单位为秒
 
@@ -220,7 +220,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ModifyHarvestTaskResponse.
+        r"""Sets the start_time of this ModifyHarvestTaskResponse.
 
         开始时间。Unix时间错，单位为秒
 
@@ -231,7 +231,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ModifyHarvestTaskResponse.
+        r"""Gets the end_time of this ModifyHarvestTaskResponse.
 
         结束时间。Unix时间错，单位为秒
 
@@ -242,7 +242,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ModifyHarvestTaskResponse.
+        r"""Sets the end_time of this ModifyHarvestTaskResponse.
 
         结束时间。Unix时间错，单位为秒
 
@@ -253,7 +253,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ModifyHarvestTaskResponse.
+        r"""Gets the create_time of this ModifyHarvestTaskResponse.
 
         任务创建时间。Unix时间错，单位为秒
 
@@ -264,7 +264,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ModifyHarvestTaskResponse.
+        r"""Sets the create_time of this ModifyHarvestTaskResponse.
 
         任务创建时间。Unix时间错，单位为秒
 
@@ -275,7 +275,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def event_name(self):
-        """Gets the event_name of this ModifyHarvestTaskResponse.
+        r"""Gets the event_name of this ModifyHarvestTaskResponse.
 
         事件名称
 
@@ -286,7 +286,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ModifyHarvestTaskResponse.
+        r"""Sets the event_name of this ModifyHarvestTaskResponse.
 
         事件名称
 
@@ -297,7 +297,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def task_desc(self):
-        """Gets the task_desc of this ModifyHarvestTaskResponse.
+        r"""Gets the task_desc of this ModifyHarvestTaskResponse.
 
         任务描述
 
@@ -308,7 +308,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @task_desc.setter
     def task_desc(self, task_desc):
-        """Sets the task_desc of this ModifyHarvestTaskResponse.
+        r"""Sets the task_desc of this ModifyHarvestTaskResponse.
 
         任务描述
 
@@ -319,7 +319,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ModifyHarvestTaskResponse.
+        r"""Gets the status of this ModifyHarvestTaskResponse.
 
         任务状态，取值为 [ UNSTART、IN_PROGRESS、SUCCEEDED、FAILED ]
 
@@ -330,7 +330,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModifyHarvestTaskResponse.
+        r"""Sets the status of this ModifyHarvestTaskResponse.
 
         任务状态，取值为 [ UNSTART、IN_PROGRESS、SUCCEEDED、FAILED ]
 
@@ -341,7 +341,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def max_retry_cnt(self):
-        """Gets the max_retry_cnt of this ModifyHarvestTaskResponse.
+        r"""Gets the max_retry_cnt of this ModifyHarvestTaskResponse.
 
         任务状态为FAILED时，最大允许重试的次数
 
@@ -352,7 +352,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @max_retry_cnt.setter
     def max_retry_cnt(self, max_retry_cnt):
-        """Sets the max_retry_cnt of this ModifyHarvestTaskResponse.
+        r"""Sets the max_retry_cnt of this ModifyHarvestTaskResponse.
 
         任务状态为FAILED时，最大允许重试的次数
 
@@ -363,7 +363,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @property
     def package_info(self):
-        """Gets the package_info of this ModifyHarvestTaskResponse.
+        r"""Gets the package_info of this ModifyHarvestTaskResponse.
 
         :return: The package_info of this ModifyHarvestTaskResponse.
         :rtype: :class:`huaweicloudsdklive.v1.VodPackageInfo`
@@ -372,7 +372,7 @@ class ModifyHarvestTaskResponse(SdkResponse):
 
     @package_info.setter
     def package_info(self, package_info):
-        """Sets the package_info of this ModifyHarvestTaskResponse.
+        r"""Sets the package_info of this ModifyHarvestTaskResponse.
 
         :param package_info: The package_info of this ModifyHarvestTaskResponse.
         :type package_info: :class:`huaweicloudsdklive.v1.VodPackageInfo`

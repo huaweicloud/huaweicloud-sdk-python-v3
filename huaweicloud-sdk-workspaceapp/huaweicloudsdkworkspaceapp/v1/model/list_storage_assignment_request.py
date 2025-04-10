@@ -37,7 +37,7 @@ class ListStorageAssignmentRequest:
     }
 
     def __init__(self, offset=None, limit=None, storage_id=None, claim_mode=None, storage_claim_id=None, attach=None, attach_type=None):
-        """ListStorageAssignmentRequest
+        r"""ListStorageAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStorageAssignmentRequest.
+        r"""Gets the offset of this ListStorageAssignmentRequest.
 
         查询的偏移量。
 
@@ -94,7 +94,7 @@ class ListStorageAssignmentRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStorageAssignmentRequest.
+        r"""Sets the offset of this ListStorageAssignmentRequest.
 
         查询的偏移量。
 
@@ -105,7 +105,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStorageAssignmentRequest.
+        r"""Gets the limit of this ListStorageAssignmentRequest.
 
         单次查询的大小[1-100]。
 
@@ -116,7 +116,7 @@ class ListStorageAssignmentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStorageAssignmentRequest.
+        r"""Sets the limit of this ListStorageAssignmentRequest.
 
         单次查询的大小[1-100]。
 
@@ -127,7 +127,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this ListStorageAssignmentRequest.
+        r"""Gets the storage_id of this ListStorageAssignmentRequest.
 
         WKS存储ID。
 
@@ -138,7 +138,7 @@ class ListStorageAssignmentRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this ListStorageAssignmentRequest.
+        r"""Sets the storage_id of this ListStorageAssignmentRequest.
 
         WKS存储ID。
 
@@ -149,7 +149,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def claim_mode(self):
-        """Gets the claim_mode of this ListStorageAssignmentRequest.
+        r"""Gets the claim_mode of this ListStorageAssignmentRequest.
 
         存储声明的类型，claim_mode为share时，storage_claim_id必填。 * `USER` -  用户目录 * `SHARE` - 共享目录
 
@@ -160,7 +160,7 @@ class ListStorageAssignmentRequest:
 
     @claim_mode.setter
     def claim_mode(self, claim_mode):
-        """Sets the claim_mode of this ListStorageAssignmentRequest.
+        r"""Sets the claim_mode of this ListStorageAssignmentRequest.
 
         存储声明的类型，claim_mode为share时，storage_claim_id必填。 * `USER` -  用户目录 * `SHARE` - 共享目录
 
@@ -171,7 +171,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def storage_claim_id(self):
-        """Gets the storage_claim_id of this ListStorageAssignmentRequest.
+        r"""Gets the storage_claim_id of this ListStorageAssignmentRequest.
 
         WKS存储目录声明ID。
 
@@ -182,7 +182,7 @@ class ListStorageAssignmentRequest:
 
     @storage_claim_id.setter
     def storage_claim_id(self, storage_claim_id):
-        """Sets the storage_claim_id of this ListStorageAssignmentRequest.
+        r"""Sets the storage_claim_id of this ListStorageAssignmentRequest.
 
         WKS存储目录声明ID。
 
@@ -193,7 +193,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def attach(self):
-        """Gets the attach of this ListStorageAssignmentRequest.
+        r"""Gets the attach of this ListStorageAssignmentRequest.
 
         成员。
 
@@ -204,7 +204,7 @@ class ListStorageAssignmentRequest:
 
     @attach.setter
     def attach(self, attach):
-        """Sets the attach of this ListStorageAssignmentRequest.
+        r"""Sets the attach of this ListStorageAssignmentRequest.
 
         成员。
 
@@ -215,7 +215,7 @@ class ListStorageAssignmentRequest:
 
     @property
     def attach_type(self):
-        """Gets the attach_type of this ListStorageAssignmentRequest.
+        r"""Gets the attach_type of this ListStorageAssignmentRequest.
 
         关联对象类型： * `USER` -  用户 * `USER_GROUP` - 用户组
 
@@ -226,7 +226,7 @@ class ListStorageAssignmentRequest:
 
     @attach_type.setter
     def attach_type(self, attach_type):
-        """Sets the attach_type of this ListStorageAssignmentRequest.
+        r"""Sets the attach_type of this ListStorageAssignmentRequest.
 
         关联对象类型： * `USER` -  用户 * `USER_GROUP` - 用户组
 

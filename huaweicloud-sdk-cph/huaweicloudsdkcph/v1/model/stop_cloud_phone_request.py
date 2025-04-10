@@ -25,7 +25,7 @@ class StopCloudPhoneRequest:
     }
 
     def __init__(self, body=None):
-        """StopCloudPhoneRequest
+        r"""StopCloudPhoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StopCloudPhoneRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopCloudPhoneRequest.
+        r"""Gets the body of this StopCloudPhoneRequest.
 
         :return: The body of this StopCloudPhoneRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.StopCloudPhoneRequestBody`
@@ -52,7 +52,7 @@ class StopCloudPhoneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopCloudPhoneRequest.
+        r"""Sets the body of this StopCloudPhoneRequest.
 
         :param body: The body of this StopCloudPhoneRequest.
         :type body: :class:`huaweicloudsdkcph.v1.StopCloudPhoneRequestBody`

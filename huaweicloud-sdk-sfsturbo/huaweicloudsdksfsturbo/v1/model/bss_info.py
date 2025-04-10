@@ -31,7 +31,7 @@ class BssInfo:
     }
 
     def __init__(self, is_auto_renew=None, period_num=None, period_type=None, is_auto_pay=None):
-        """BssInfo
+        r"""BssInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BssInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this BssInfo.
+        r"""Gets the is_auto_renew of this BssInfo.
 
         是否自动续费
 
@@ -73,7 +73,7 @@ class BssInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this BssInfo.
+        r"""Sets the is_auto_renew of this BssInfo.
 
         是否自动续费
 
@@ -84,7 +84,7 @@ class BssInfo:
 
     @property
     def period_num(self):
-        """Gets the period_num of this BssInfo.
+        r"""Gets the period_num of this BssInfo.
 
         包周期订购的周期数
 
@@ -95,7 +95,7 @@ class BssInfo:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this BssInfo.
+        r"""Sets the period_num of this BssInfo.
 
         包周期订购的周期数
 
@@ -106,7 +106,7 @@ class BssInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this BssInfo.
+        r"""Gets the period_type of this BssInfo.
 
         包周期的类型，可选包年或包月，2 表示包月，3 表示包年
 
@@ -117,7 +117,7 @@ class BssInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this BssInfo.
+        r"""Sets the period_type of this BssInfo.
 
         包周期的类型，可选包年或包月，2 表示包月，3 表示包年
 
@@ -128,7 +128,7 @@ class BssInfo:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BssInfo.
+        r"""Gets the is_auto_pay of this BssInfo.
 
         是否生成订单后自动扣款
 
@@ -139,7 +139,7 @@ class BssInfo:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BssInfo.
+        r"""Sets the is_auto_pay of this BssInfo.
 
         是否生成订单后自动扣款
 

@@ -37,7 +37,7 @@ class Templatespec:
     }
 
     def __init__(self, type=None, require=None, labels=None, logo_url=None, readme_url=None, description=None, versions=None):
-        """Templatespec
+        r"""Templatespec
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class Templatespec:
 
     @property
     def type(self):
-        """Gets the type of this Templatespec.
+        r"""Gets the type of this Templatespec.
 
         模板类型（helm，static）
 
@@ -90,7 +90,7 @@ class Templatespec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Templatespec.
+        r"""Sets the type of this Templatespec.
 
         模板类型（helm，static）
 
@@ -101,7 +101,7 @@ class Templatespec:
 
     @property
     def require(self):
-        """Gets the require of this Templatespec.
+        r"""Gets the require of this Templatespec.
 
         是否为必安装插件
 
@@ -112,7 +112,7 @@ class Templatespec:
 
     @require.setter
     def require(self, require):
-        """Sets the require of this Templatespec.
+        r"""Sets the require of this Templatespec.
 
         是否为必安装插件
 
@@ -123,7 +123,7 @@ class Templatespec:
 
     @property
     def labels(self):
-        """Gets the labels of this Templatespec.
+        r"""Gets the labels of this Templatespec.
 
         模板所属分组
 
@@ -134,7 +134,7 @@ class Templatespec:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this Templatespec.
+        r"""Sets the labels of this Templatespec.
 
         模板所属分组
 
@@ -145,7 +145,7 @@ class Templatespec:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this Templatespec.
+        r"""Gets the logo_url of this Templatespec.
 
         Logo图片地址
 
@@ -156,7 +156,7 @@ class Templatespec:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this Templatespec.
+        r"""Sets the logo_url of this Templatespec.
 
         Logo图片地址
 
@@ -167,7 +167,7 @@ class Templatespec:
 
     @property
     def readme_url(self):
-        """Gets the readme_url of this Templatespec.
+        r"""Gets the readme_url of this Templatespec.
 
         插件详情描述及使用说明
 
@@ -178,7 +178,7 @@ class Templatespec:
 
     @readme_url.setter
     def readme_url(self, readme_url):
-        """Sets the readme_url of this Templatespec.
+        r"""Sets the readme_url of this Templatespec.
 
         插件详情描述及使用说明
 
@@ -189,7 +189,7 @@ class Templatespec:
 
     @property
     def description(self):
-        """Gets the description of this Templatespec.
+        r"""Gets the description of this Templatespec.
 
         模板描述
 
@@ -200,7 +200,7 @@ class Templatespec:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Templatespec.
+        r"""Sets the description of this Templatespec.
 
         模板描述
 
@@ -211,7 +211,7 @@ class Templatespec:
 
     @property
     def versions(self):
-        """Gets the versions of this Templatespec.
+        r"""Gets the versions of this Templatespec.
 
         模板具体版本详情
 
@@ -222,7 +222,7 @@ class Templatespec:
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this Templatespec.
+        r"""Sets the versions of this Templatespec.
 
         模板具体版本详情
 

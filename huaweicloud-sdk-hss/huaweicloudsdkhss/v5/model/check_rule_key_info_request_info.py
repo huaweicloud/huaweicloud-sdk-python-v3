@@ -31,7 +31,7 @@ class CheckRuleKeyInfoRequestInfo:
     }
 
     def __init__(self, check_name=None, check_rule_id=None, standard=None, fix_values=None):
-        """CheckRuleKeyInfoRequestInfo
+        r"""CheckRuleKeyInfoRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @property
     def check_name(self):
-        """Gets the check_name of this CheckRuleKeyInfoRequestInfo.
+        r"""Gets the check_name of this CheckRuleKeyInfoRequestInfo.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -75,7 +75,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this CheckRuleKeyInfoRequestInfo.
+        r"""Sets the check_name of this CheckRuleKeyInfoRequestInfo.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -86,7 +86,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @property
     def check_rule_id(self):
-        """Gets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
+        r"""Gets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
 
         检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
 
@@ -97,7 +97,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @check_rule_id.setter
     def check_rule_id(self, check_rule_id):
-        """Sets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
+        r"""Sets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
 
         检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
 
@@ -108,7 +108,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @property
     def standard(self):
-        """Gets the standard of this CheckRuleKeyInfoRequestInfo.
+        r"""Gets the standard of this CheckRuleKeyInfoRequestInfo.
 
         基线标准, 类别包含如下：   - cn_standard#等保合规标准   - hw_standard#云安全实践标准
 
@@ -119,7 +119,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this CheckRuleKeyInfoRequestInfo.
+        r"""Sets the standard of this CheckRuleKeyInfoRequestInfo.
 
         基线标准, 类别包含如下：   - cn_standard#等保合规标准   - hw_standard#云安全实践标准
 
@@ -130,7 +130,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @property
     def fix_values(self):
-        """Gets the fix_values of this CheckRuleKeyInfoRequestInfo.
+        r"""Gets the fix_values of this CheckRuleKeyInfoRequestInfo.
 
         用户键入的检查项修复参数数组
 
@@ -141,7 +141,7 @@ class CheckRuleKeyInfoRequestInfo:
 
     @fix_values.setter
     def fix_values(self, fix_values):
-        """Sets the fix_values of this CheckRuleKeyInfoRequestInfo.
+        r"""Sets the fix_values of this CheckRuleKeyInfoRequestInfo.
 
         用户键入的检查项修复参数数组
 

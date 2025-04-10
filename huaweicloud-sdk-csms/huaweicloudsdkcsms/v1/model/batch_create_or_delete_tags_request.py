@@ -27,7 +27,7 @@ class BatchCreateOrDeleteTagsRequest:
     }
 
     def __init__(self, secret_id=None, body=None):
-        """BatchCreateOrDeleteTagsRequest
+        r"""BatchCreateOrDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this BatchCreateOrDeleteTagsRequest.
+        r"""Gets the secret_id of this BatchCreateOrDeleteTagsRequest.
 
         凭据ID
 
@@ -60,7 +60,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this BatchCreateOrDeleteTagsRequest.
+        r"""Sets the secret_id of this BatchCreateOrDeleteTagsRequest.
 
         凭据ID
 
@@ -71,7 +71,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateOrDeleteTagsRequest.
+        r"""Gets the body of this BatchCreateOrDeleteTagsRequest.
 
         :return: The body of this BatchCreateOrDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateOrDeleteTagsRequest.
+        r"""Sets the body of this BatchCreateOrDeleteTagsRequest.
 
         :param body: The body of this BatchCreateOrDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsRequestBody`

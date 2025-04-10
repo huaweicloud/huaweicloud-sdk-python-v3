@@ -25,7 +25,7 @@ class DeleteAuditLogRequestBody:
     }
 
     def __init__(self, file_names=None):
-        """DeleteAuditLogRequestBody
+        r"""DeleteAuditLogRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAuditLogRequestBody:
 
     @property
     def file_names(self):
-        """Gets the file_names of this DeleteAuditLogRequestBody.
+        r"""Gets the file_names of this DeleteAuditLogRequestBody.
 
         文件名列表
 
@@ -53,7 +53,7 @@ class DeleteAuditLogRequestBody:
 
     @file_names.setter
     def file_names(self, file_names):
-        """Sets the file_names of this DeleteAuditLogRequestBody.
+        r"""Sets the file_names of this DeleteAuditLogRequestBody.
 
         文件名列表
 

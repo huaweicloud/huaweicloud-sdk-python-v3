@@ -25,7 +25,7 @@ class RestartCloudPhoneServerRequest:
     }
 
     def __init__(self, body=None):
-        """RestartCloudPhoneServerRequest
+        r"""RestartCloudPhoneServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartCloudPhoneServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestartCloudPhoneServerRequest.
+        r"""Gets the body of this RestartCloudPhoneServerRequest.
 
         :return: The body of this RestartCloudPhoneServerRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerRequestBody`
@@ -52,7 +52,7 @@ class RestartCloudPhoneServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestartCloudPhoneServerRequest.
+        r"""Sets the body of this RestartCloudPhoneServerRequest.
 
         :param body: The body of this RestartCloudPhoneServerRequest.
         :type body: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerRequestBody`

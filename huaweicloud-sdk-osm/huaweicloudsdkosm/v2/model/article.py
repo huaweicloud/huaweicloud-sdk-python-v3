@@ -41,7 +41,7 @@ class Article:
     }
 
     def __init__(self, id=None, code=None, name=None, url=None, create_time=None, update_time=None, product_type_id=None, business_type_id=None, problem_type_id=None):
-        """Article
+        r"""Article
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Article:
 
     @property
     def id(self):
-        """Gets the id of this Article.
+        r"""Gets the id of this Article.
 
         案例Id
 
@@ -110,7 +110,7 @@ class Article:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Article.
+        r"""Sets the id of this Article.
 
         案例Id
 
@@ -121,7 +121,7 @@ class Article:
 
     @property
     def code(self):
-        """Gets the code of this Article.
+        r"""Gets the code of this Article.
 
         案例编码
 
@@ -132,7 +132,7 @@ class Article:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Article.
+        r"""Sets the code of this Article.
 
         案例编码
 
@@ -143,7 +143,7 @@ class Article:
 
     @property
     def name(self):
-        """Gets the name of this Article.
+        r"""Gets the name of this Article.
 
         案例名称
 
@@ -154,7 +154,7 @@ class Article:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Article.
+        r"""Sets the name of this Article.
 
         案例名称
 
@@ -165,7 +165,7 @@ class Article:
 
     @property
     def url(self):
-        """Gets the url of this Article.
+        r"""Gets the url of this Article.
 
         案例链接
 
@@ -176,7 +176,7 @@ class Article:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Article.
+        r"""Sets the url of this Article.
 
         案例链接
 
@@ -187,7 +187,7 @@ class Article:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Article.
+        r"""Gets the create_time of this Article.
 
         创建时间
 
@@ -198,7 +198,7 @@ class Article:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Article.
+        r"""Sets the create_time of this Article.
 
         创建时间
 
@@ -209,7 +209,7 @@ class Article:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Article.
+        r"""Gets the update_time of this Article.
 
         更新时间
 
@@ -220,7 +220,7 @@ class Article:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Article.
+        r"""Sets the update_time of this Article.
 
         更新时间
 
@@ -231,7 +231,7 @@ class Article:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this Article.
+        r"""Gets the product_type_id of this Article.
 
         产品类型Id
 
@@ -242,7 +242,7 @@ class Article:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this Article.
+        r"""Sets the product_type_id of this Article.
 
         产品类型Id
 
@@ -253,7 +253,7 @@ class Article:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this Article.
+        r"""Gets the business_type_id of this Article.
 
         业务类型Id
 
@@ -264,7 +264,7 @@ class Article:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this Article.
+        r"""Sets the business_type_id of this Article.
 
         业务类型Id
 
@@ -275,7 +275,7 @@ class Article:
 
     @property
     def problem_type_id(self):
-        """Gets the problem_type_id of this Article.
+        r"""Gets the problem_type_id of this Article.
 
         问题类型Id
 
@@ -286,7 +286,7 @@ class Article:
 
     @problem_type_id.setter
     def problem_type_id(self, problem_type_id):
-        """Sets the problem_type_id of this Article.
+        r"""Sets the problem_type_id of this Article.
 
         问题类型Id
 

@@ -32,7 +32,7 @@ class ShowTopicsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, default_topic_urn=None, topic_count=None, topics=None):
-        """ShowTopicsResponse
+        r"""ShowTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTopicsResponse.
+        r"""Gets the id of this ShowTopicsResponse.
 
         DSC告警主题ID（非消息通知服务主题ID）
 
@@ -76,7 +76,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTopicsResponse.
+        r"""Sets the id of this ShowTopicsResponse.
 
         DSC告警主题ID（非消息通知服务主题ID）
 
@@ -87,7 +87,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @property
     def default_topic_urn(self):
-        """Gets the default_topic_urn of this ShowTopicsResponse.
+        r"""Gets the default_topic_urn of this ShowTopicsResponse.
 
         默认消息通知主题的唯一资源标识符
 
@@ -98,7 +98,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @default_topic_urn.setter
     def default_topic_urn(self, default_topic_urn):
-        """Sets the default_topic_urn of this ShowTopicsResponse.
+        r"""Sets the default_topic_urn of this ShowTopicsResponse.
 
         默认消息通知主题的唯一资源标识符
 
@@ -109,7 +109,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @property
     def topic_count(self):
-        """Gets the topic_count of this ShowTopicsResponse.
+        r"""Gets the topic_count of this ShowTopicsResponse.
 
         已确认的消息通知主题数量
 
@@ -120,7 +120,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @topic_count.setter
     def topic_count(self, topic_count):
-        """Sets the topic_count of this ShowTopicsResponse.
+        r"""Sets the topic_count of this ShowTopicsResponse.
 
         已确认的消息通知主题数量
 
@@ -131,7 +131,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ShowTopicsResponse.
+        r"""Gets the topics of this ShowTopicsResponse.
 
         已确认的消息通知主题列表
 
@@ -142,7 +142,7 @@ class ShowTopicsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ShowTopicsResponse.
+        r"""Sets the topics of this ShowTopicsResponse.
 
         已确认的消息通知主题列表
 

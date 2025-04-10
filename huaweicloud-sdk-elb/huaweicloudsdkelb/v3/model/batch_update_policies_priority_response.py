@@ -26,7 +26,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """BatchUpdatePoliciesPriorityResponse
+        r"""BatchUpdatePoliciesPriorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchUpdatePoliciesPriorityResponse.
+        r"""Gets the request_id of this BatchUpdatePoliciesPriorityResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchUpdatePoliciesPriorityResponse.
+        r"""Sets the request_id of this BatchUpdatePoliciesPriorityResponse.
 
         请求ID。
 

@@ -105,7 +105,7 @@ class ListPublicipsRequest:
     }
 
     def __init__(self, marker=None, offset=None, limit=None, fields=None, sort_key=None, sort_dir=None, id=None, ip_version=None, public_ip_address=None, public_ip_address_like=None, public_ipv6_address=None, public_ipv6_address_like=None, type=None, network_type=None, publicip_pool_name=None, status=None, alias_like=None, alias=None, description=None, vnic_private_ip_address=None, vnic_private_ip_address_like=None, vnic_device_id=None, vnic_device_owner=None, vnic_vpc_id=None, vnic_port_id=None, vnic_device_owner_prefixlike=None, vnic_instance_type=None, vnic_instance_id=None, bandwidth_id=None, bandwidth_name=None, bandwidth_name_like=None, bandwidth_size=None, bandwidth_share_type=None, bandwidth_charge_mode=None, billing_info=None, billing_mode=None, associate_instance_type=None, associate_instance_id=None, enterprise_project_id=None, public_border_group=None, allow_share_bandwidth_type_any=None):
-        """ListPublicipsRequest
+        r"""ListPublicipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -323,7 +323,7 @@ class ListPublicipsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPublicipsRequest.
+        r"""Gets the marker of this ListPublicipsRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -334,7 +334,7 @@ class ListPublicipsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPublicipsRequest.
+        r"""Sets the marker of this ListPublicipsRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -345,7 +345,7 @@ class ListPublicipsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublicipsRequest.
+        r"""Gets the offset of this ListPublicipsRequest.
 
         分页查询起始的资源序号
 
@@ -356,7 +356,7 @@ class ListPublicipsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublicipsRequest.
+        r"""Sets the offset of this ListPublicipsRequest.
 
         分页查询起始的资源序号
 
@@ -367,7 +367,7 @@ class ListPublicipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublicipsRequest.
+        r"""Gets the limit of this ListPublicipsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -378,7 +378,7 @@ class ListPublicipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublicipsRequest.
+        r"""Sets the limit of this ListPublicipsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -389,7 +389,7 @@ class ListPublicipsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListPublicipsRequest.
+        r"""Gets the fields of this ListPublicipsRequest.
 
         显示，形式为\"fields=id&fields=owner&...\"  支持字段：id/project_id/ip_version/type/public_ip_address/public_ipv6_address/network_type/status/description/created_at/updated_at/vnic/bandwidth/associate_instance_type/associate_instance_id/lock_status/billing_info/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group/alias/publicip_pool_name/publicip_pool_id
 
@@ -400,7 +400,7 @@ class ListPublicipsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListPublicipsRequest.
+        r"""Sets the fields of this ListPublicipsRequest.
 
         显示，形式为\"fields=id&fields=owner&...\"  支持字段：id/project_id/ip_version/type/public_ip_address/public_ipv6_address/network_type/status/description/created_at/updated_at/vnic/bandwidth/associate_instance_type/associate_instance_id/lock_status/billing_info/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group/alias/publicip_pool_name/publicip_pool_id
 
@@ -411,7 +411,7 @@ class ListPublicipsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPublicipsRequest.
+        r"""Gets the sort_key of this ListPublicipsRequest.
 
         排序，形式为\"sort_key=id\"  支持字段：id/public_ip_address/public_ipv6_address/ip_version/created_at/updated_at/public_border_group
 
@@ -422,7 +422,7 @@ class ListPublicipsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPublicipsRequest.
+        r"""Sets the sort_key of this ListPublicipsRequest.
 
         排序，形式为\"sort_key=id\"  支持字段：id/public_ip_address/public_ipv6_address/ip_version/created_at/updated_at/public_border_group
 
@@ -433,7 +433,7 @@ class ListPublicipsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPublicipsRequest.
+        r"""Gets the sort_dir of this ListPublicipsRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -444,7 +444,7 @@ class ListPublicipsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPublicipsRequest.
+        r"""Sets the sort_dir of this ListPublicipsRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -455,7 +455,7 @@ class ListPublicipsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPublicipsRequest.
+        r"""Gets the id of this ListPublicipsRequest.
 
         根据id过滤
 
@@ -466,7 +466,7 @@ class ListPublicipsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPublicipsRequest.
+        r"""Sets the id of this ListPublicipsRequest.
 
         根据id过滤
 
@@ -477,7 +477,7 @@ class ListPublicipsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListPublicipsRequest.
+        r"""Gets the ip_version of this ListPublicipsRequest.
 
         根据ip_version过滤  取值范围：4、6
 
@@ -488,7 +488,7 @@ class ListPublicipsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListPublicipsRequest.
+        r"""Sets the ip_version of this ListPublicipsRequest.
 
         根据ip_version过滤  取值范围：4、6
 
@@ -499,7 +499,7 @@ class ListPublicipsRequest:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this ListPublicipsRequest.
+        r"""Gets the public_ip_address of this ListPublicipsRequest.
 
         根据public_ip_address过滤
 
@@ -510,7 +510,7 @@ class ListPublicipsRequest:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this ListPublicipsRequest.
+        r"""Sets the public_ip_address of this ListPublicipsRequest.
 
         根据public_ip_address过滤
 
@@ -521,7 +521,7 @@ class ListPublicipsRequest:
 
     @property
     def public_ip_address_like(self):
-        """Gets the public_ip_address_like of this ListPublicipsRequest.
+        r"""Gets the public_ip_address_like of this ListPublicipsRequest.
 
         根据public_ip_address过滤，模糊搜索
 
@@ -532,7 +532,7 @@ class ListPublicipsRequest:
 
     @public_ip_address_like.setter
     def public_ip_address_like(self, public_ip_address_like):
-        """Sets the public_ip_address_like of this ListPublicipsRequest.
+        r"""Sets the public_ip_address_like of this ListPublicipsRequest.
 
         根据public_ip_address过滤，模糊搜索
 
@@ -543,7 +543,7 @@ class ListPublicipsRequest:
 
     @property
     def public_ipv6_address(self):
-        """Gets the public_ipv6_address of this ListPublicipsRequest.
+        r"""Gets the public_ipv6_address of this ListPublicipsRequest.
 
         根据public_ipv6_address过滤
 
@@ -554,7 +554,7 @@ class ListPublicipsRequest:
 
     @public_ipv6_address.setter
     def public_ipv6_address(self, public_ipv6_address):
-        """Sets the public_ipv6_address of this ListPublicipsRequest.
+        r"""Sets the public_ipv6_address of this ListPublicipsRequest.
 
         根据public_ipv6_address过滤
 
@@ -565,7 +565,7 @@ class ListPublicipsRequest:
 
     @property
     def public_ipv6_address_like(self):
-        """Gets the public_ipv6_address_like of this ListPublicipsRequest.
+        r"""Gets the public_ipv6_address_like of this ListPublicipsRequest.
 
         根据public_ipv6_address过滤，模糊搜索
 
@@ -576,7 +576,7 @@ class ListPublicipsRequest:
 
     @public_ipv6_address_like.setter
     def public_ipv6_address_like(self, public_ipv6_address_like):
-        """Sets the public_ipv6_address_like of this ListPublicipsRequest.
+        r"""Sets the public_ipv6_address_like of this ListPublicipsRequest.
 
         根据public_ipv6_address过滤，模糊搜索
 
@@ -587,7 +587,7 @@ class ListPublicipsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPublicipsRequest.
+        r"""Gets the type of this ListPublicipsRequest.
 
         根据type过滤  取值范围：EIP、DUALSTACK、DUALSTACK_SUBNET  EIP: 弹性公网IP   DUALSTACK: 双栈IPV6   DUALSTACK_SUBNET: 双栈子网
 
@@ -598,7 +598,7 @@ class ListPublicipsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPublicipsRequest.
+        r"""Sets the type of this ListPublicipsRequest.
 
         根据type过滤  取值范围：EIP、DUALSTACK、DUALSTACK_SUBNET  EIP: 弹性公网IP   DUALSTACK: 双栈IPV6   DUALSTACK_SUBNET: 双栈子网
 
@@ -609,7 +609,7 @@ class ListPublicipsRequest:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ListPublicipsRequest.
+        r"""Gets the network_type of this ListPublicipsRequest.
 
         根据network_type过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp
 
@@ -620,7 +620,7 @@ class ListPublicipsRequest:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ListPublicipsRequest.
+        r"""Sets the network_type of this ListPublicipsRequest.
 
         根据network_type过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp
 
@@ -631,7 +631,7 @@ class ListPublicipsRequest:
 
     @property
     def publicip_pool_name(self):
-        """Gets the publicip_pool_name of this ListPublicipsRequest.
+        r"""Gets the publicip_pool_name of this ListPublicipsRequest.
 
         根据publicip_pool_name过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp、专属池名称等
 
@@ -642,7 +642,7 @@ class ListPublicipsRequest:
 
     @publicip_pool_name.setter
     def publicip_pool_name(self, publicip_pool_name):
-        """Sets the publicip_pool_name of this ListPublicipsRequest.
+        r"""Sets the publicip_pool_name of this ListPublicipsRequest.
 
         根据publicip_pool_name过滤  取值范围：5_telcom、5_union、5_bgp、5_sbgp、5_ipv6、5_graybgp、专属池名称等
 
@@ -653,7 +653,7 @@ class ListPublicipsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPublicipsRequest.
+        r"""Gets the status of this ListPublicipsRequest.
 
         根据status过滤  取值范围：FREEZED、DOWN、ACTIVE、ERROR
 
@@ -664,7 +664,7 @@ class ListPublicipsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPublicipsRequest.
+        r"""Sets the status of this ListPublicipsRequest.
 
         根据status过滤  取值范围：FREEZED、DOWN、ACTIVE、ERROR
 
@@ -675,7 +675,7 @@ class ListPublicipsRequest:
 
     @property
     def alias_like(self):
-        """Gets the alias_like of this ListPublicipsRequest.
+        r"""Gets the alias_like of this ListPublicipsRequest.
 
         根据alias模糊搜索
 
@@ -686,7 +686,7 @@ class ListPublicipsRequest:
 
     @alias_like.setter
     def alias_like(self, alias_like):
-        """Sets the alias_like of this ListPublicipsRequest.
+        r"""Sets the alias_like of this ListPublicipsRequest.
 
         根据alias模糊搜索
 
@@ -697,7 +697,7 @@ class ListPublicipsRequest:
 
     @property
     def alias(self):
-        """Gets the alias of this ListPublicipsRequest.
+        r"""Gets the alias of this ListPublicipsRequest.
 
         根据alias过滤
 
@@ -708,7 +708,7 @@ class ListPublicipsRequest:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ListPublicipsRequest.
+        r"""Sets the alias of this ListPublicipsRequest.
 
         根据alias过滤
 
@@ -719,7 +719,7 @@ class ListPublicipsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPublicipsRequest.
+        r"""Gets the description of this ListPublicipsRequest.
 
         根据description过滤
 
@@ -730,7 +730,7 @@ class ListPublicipsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPublicipsRequest.
+        r"""Sets the description of this ListPublicipsRequest.
 
         根据description过滤
 
@@ -741,7 +741,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_private_ip_address(self):
-        """Gets the vnic_private_ip_address of this ListPublicipsRequest.
+        r"""Gets the vnic_private_ip_address of this ListPublicipsRequest.
 
         根据private_ip_address过滤
 
@@ -752,7 +752,7 @@ class ListPublicipsRequest:
 
     @vnic_private_ip_address.setter
     def vnic_private_ip_address(self, vnic_private_ip_address):
-        """Sets the vnic_private_ip_address of this ListPublicipsRequest.
+        r"""Sets the vnic_private_ip_address of this ListPublicipsRequest.
 
         根据private_ip_address过滤
 
@@ -763,7 +763,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_private_ip_address_like(self):
-        """Gets the vnic_private_ip_address_like of this ListPublicipsRequest.
+        r"""Gets the vnic_private_ip_address_like of this ListPublicipsRequest.
 
         根据private_ip_address模糊搜索
 
@@ -774,7 +774,7 @@ class ListPublicipsRequest:
 
     @vnic_private_ip_address_like.setter
     def vnic_private_ip_address_like(self, vnic_private_ip_address_like):
-        """Sets the vnic_private_ip_address_like of this ListPublicipsRequest.
+        r"""Sets the vnic_private_ip_address_like of this ListPublicipsRequest.
 
         根据private_ip_address模糊搜索
 
@@ -785,7 +785,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_device_id(self):
-        """Gets the vnic_device_id of this ListPublicipsRequest.
+        r"""Gets the vnic_device_id of this ListPublicipsRequest.
 
         根据device_id过滤
 
@@ -796,7 +796,7 @@ class ListPublicipsRequest:
 
     @vnic_device_id.setter
     def vnic_device_id(self, vnic_device_id):
-        """Sets the vnic_device_id of this ListPublicipsRequest.
+        r"""Sets the vnic_device_id of this ListPublicipsRequest.
 
         根据device_id过滤
 
@@ -807,7 +807,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_device_owner(self):
-        """Gets the vnic_device_owner of this ListPublicipsRequest.
+        r"""Gets the vnic_device_owner of this ListPublicipsRequest.
 
         根据device_owner过滤
 
@@ -818,7 +818,7 @@ class ListPublicipsRequest:
 
     @vnic_device_owner.setter
     def vnic_device_owner(self, vnic_device_owner):
-        """Sets the vnic_device_owner of this ListPublicipsRequest.
+        r"""Sets the vnic_device_owner of this ListPublicipsRequest.
 
         根据device_owner过滤
 
@@ -829,7 +829,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_vpc_id(self):
-        """Gets the vnic_vpc_id of this ListPublicipsRequest.
+        r"""Gets the vnic_vpc_id of this ListPublicipsRequest.
 
         根据vpc_id过滤
 
@@ -840,7 +840,7 @@ class ListPublicipsRequest:
 
     @vnic_vpc_id.setter
     def vnic_vpc_id(self, vnic_vpc_id):
-        """Sets the vnic_vpc_id of this ListPublicipsRequest.
+        r"""Sets the vnic_vpc_id of this ListPublicipsRequest.
 
         根据vpc_id过滤
 
@@ -851,7 +851,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_port_id(self):
-        """Gets the vnic_port_id of this ListPublicipsRequest.
+        r"""Gets the vnic_port_id of this ListPublicipsRequest.
 
         根据port_id过滤
 
@@ -862,7 +862,7 @@ class ListPublicipsRequest:
 
     @vnic_port_id.setter
     def vnic_port_id(self, vnic_port_id):
-        """Sets the vnic_port_id of this ListPublicipsRequest.
+        r"""Sets the vnic_port_id of this ListPublicipsRequest.
 
         根据port_id过滤
 
@@ -873,7 +873,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_device_owner_prefixlike(self):
-        """Gets the vnic_device_owner_prefixlike of this ListPublicipsRequest.
+        r"""Gets the vnic_device_owner_prefixlike of this ListPublicipsRequest.
 
         根据device_owner_prefixlike模糊搜索
 
@@ -884,7 +884,7 @@ class ListPublicipsRequest:
 
     @vnic_device_owner_prefixlike.setter
     def vnic_device_owner_prefixlike(self, vnic_device_owner_prefixlike):
-        """Sets the vnic_device_owner_prefixlike of this ListPublicipsRequest.
+        r"""Sets the vnic_device_owner_prefixlike of this ListPublicipsRequest.
 
         根据device_owner_prefixlike模糊搜索
 
@@ -895,7 +895,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_instance_type(self):
-        """Gets the vnic_instance_type of this ListPublicipsRequest.
+        r"""Gets the vnic_instance_type of this ListPublicipsRequest.
 
         根据instance_type过滤
 
@@ -906,7 +906,7 @@ class ListPublicipsRequest:
 
     @vnic_instance_type.setter
     def vnic_instance_type(self, vnic_instance_type):
-        """Sets the vnic_instance_type of this ListPublicipsRequest.
+        r"""Sets the vnic_instance_type of this ListPublicipsRequest.
 
         根据instance_type过滤
 
@@ -917,7 +917,7 @@ class ListPublicipsRequest:
 
     @property
     def vnic_instance_id(self):
-        """Gets the vnic_instance_id of this ListPublicipsRequest.
+        r"""Gets the vnic_instance_id of this ListPublicipsRequest.
 
         根据instance_id过滤
 
@@ -928,7 +928,7 @@ class ListPublicipsRequest:
 
     @vnic_instance_id.setter
     def vnic_instance_id(self, vnic_instance_id):
-        """Sets the vnic_instance_id of this ListPublicipsRequest.
+        r"""Sets the vnic_instance_id of this ListPublicipsRequest.
 
         根据instance_id过滤
 
@@ -939,7 +939,7 @@ class ListPublicipsRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this ListPublicipsRequest.
+        r"""Gets the bandwidth_id of this ListPublicipsRequest.
 
         根据id过滤
 
@@ -950,7 +950,7 @@ class ListPublicipsRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this ListPublicipsRequest.
+        r"""Sets the bandwidth_id of this ListPublicipsRequest.
 
         根据id过滤
 
@@ -961,7 +961,7 @@ class ListPublicipsRequest:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this ListPublicipsRequest.
+        r"""Gets the bandwidth_name of this ListPublicipsRequest.
 
         根据name过滤
 
@@ -972,7 +972,7 @@ class ListPublicipsRequest:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this ListPublicipsRequest.
+        r"""Sets the bandwidth_name of this ListPublicipsRequest.
 
         根据name过滤
 
@@ -983,7 +983,7 @@ class ListPublicipsRequest:
 
     @property
     def bandwidth_name_like(self):
-        """Gets the bandwidth_name_like of this ListPublicipsRequest.
+        r"""Gets the bandwidth_name_like of this ListPublicipsRequest.
 
         根据name模糊过滤
 
@@ -994,7 +994,7 @@ class ListPublicipsRequest:
 
     @bandwidth_name_like.setter
     def bandwidth_name_like(self, bandwidth_name_like):
-        """Sets the bandwidth_name_like of this ListPublicipsRequest.
+        r"""Sets the bandwidth_name_like of this ListPublicipsRequest.
 
         根据name模糊过滤
 
@@ -1005,7 +1005,7 @@ class ListPublicipsRequest:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ListPublicipsRequest.
+        r"""Gets the bandwidth_size of this ListPublicipsRequest.
 
         根据size过滤
 
@@ -1016,7 +1016,7 @@ class ListPublicipsRequest:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ListPublicipsRequest.
+        r"""Sets the bandwidth_size of this ListPublicipsRequest.
 
         根据size过滤
 
@@ -1027,7 +1027,7 @@ class ListPublicipsRequest:
 
     @property
     def bandwidth_share_type(self):
-        """Gets the bandwidth_share_type of this ListPublicipsRequest.
+        r"""Gets the bandwidth_share_type of this ListPublicipsRequest.
 
         根据share_type过滤
 
@@ -1038,7 +1038,7 @@ class ListPublicipsRequest:
 
     @bandwidth_share_type.setter
     def bandwidth_share_type(self, bandwidth_share_type):
-        """Sets the bandwidth_share_type of this ListPublicipsRequest.
+        r"""Sets the bandwidth_share_type of this ListPublicipsRequest.
 
         根据share_type过滤
 
@@ -1049,7 +1049,7 @@ class ListPublicipsRequest:
 
     @property
     def bandwidth_charge_mode(self):
-        """Gets the bandwidth_charge_mode of this ListPublicipsRequest.
+        r"""Gets the bandwidth_charge_mode of this ListPublicipsRequest.
 
         根据charge_mode过滤
 
@@ -1060,7 +1060,7 @@ class ListPublicipsRequest:
 
     @bandwidth_charge_mode.setter
     def bandwidth_charge_mode(self, bandwidth_charge_mode):
-        """Sets the bandwidth_charge_mode of this ListPublicipsRequest.
+        r"""Sets the bandwidth_charge_mode of this ListPublicipsRequest.
 
         根据charge_mode过滤
 
@@ -1071,7 +1071,7 @@ class ListPublicipsRequest:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this ListPublicipsRequest.
+        r"""Gets the billing_info of this ListPublicipsRequest.
 
         根据billing_info过滤
 
@@ -1082,7 +1082,7 @@ class ListPublicipsRequest:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this ListPublicipsRequest.
+        r"""Sets the billing_info of this ListPublicipsRequest.
 
         根据billing_info过滤
 
@@ -1093,7 +1093,7 @@ class ListPublicipsRequest:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this ListPublicipsRequest.
+        r"""Gets the billing_mode of this ListPublicipsRequest.
 
         根据订单模式过滤,   取值范围：YEARLY_MONTHLY、PAY_PER_USE
 
@@ -1104,7 +1104,7 @@ class ListPublicipsRequest:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this ListPublicipsRequest.
+        r"""Sets the billing_mode of this ListPublicipsRequest.
 
         根据订单模式过滤,   取值范围：YEARLY_MONTHLY、PAY_PER_USE
 
@@ -1115,7 +1115,7 @@ class ListPublicipsRequest:
 
     @property
     def associate_instance_type(self):
-        """Gets the associate_instance_type of this ListPublicipsRequest.
+        r"""Gets the associate_instance_type of this ListPublicipsRequest.
 
         根据associate_instance_type过滤  取值范围：PORT、NATGW、ELB、VPN、ELBV1
 
@@ -1126,7 +1126,7 @@ class ListPublicipsRequest:
 
     @associate_instance_type.setter
     def associate_instance_type(self, associate_instance_type):
-        """Sets the associate_instance_type of this ListPublicipsRequest.
+        r"""Sets the associate_instance_type of this ListPublicipsRequest.
 
         根据associate_instance_type过滤  取值范围：PORT、NATGW、ELB、VPN、ELBV1
 
@@ -1137,7 +1137,7 @@ class ListPublicipsRequest:
 
     @property
     def associate_instance_id(self):
-        """Gets the associate_instance_id of this ListPublicipsRequest.
+        r"""Gets the associate_instance_id of this ListPublicipsRequest.
 
         根据associate_instance_id过滤
 
@@ -1148,7 +1148,7 @@ class ListPublicipsRequest:
 
     @associate_instance_id.setter
     def associate_instance_id(self, associate_instance_id):
-        """Sets the associate_instance_id of this ListPublicipsRequest.
+        r"""Sets the associate_instance_id of this ListPublicipsRequest.
 
         根据associate_instance_id过滤
 
@@ -1159,7 +1159,7 @@ class ListPublicipsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPublicipsRequest.
+        r"""Gets the enterprise_project_id of this ListPublicipsRequest.
 
         根据enterprise_project_id过滤
 
@@ -1170,7 +1170,7 @@ class ListPublicipsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPublicipsRequest.
+        r"""Sets the enterprise_project_id of this ListPublicipsRequest.
 
         根据enterprise_project_id过滤
 
@@ -1181,7 +1181,7 @@ class ListPublicipsRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListPublicipsRequest.
+        r"""Gets the public_border_group of this ListPublicipsRequest.
 
         根据public_border_group过滤
 
@@ -1192,7 +1192,7 @@ class ListPublicipsRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListPublicipsRequest.
+        r"""Sets the public_border_group of this ListPublicipsRequest.
 
         根据public_border_group过滤
 
@@ -1203,7 +1203,7 @@ class ListPublicipsRequest:
 
     @property
     def allow_share_bandwidth_type_any(self):
-        """Gets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
+        r"""Gets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
 
         共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
 
@@ -1214,7 +1214,7 @@ class ListPublicipsRequest:
 
     @allow_share_bandwidth_type_any.setter
     def allow_share_bandwidth_type_any(self, allow_share_bandwidth_type_any):
-        """Sets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
+        r"""Sets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
 
         共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
 

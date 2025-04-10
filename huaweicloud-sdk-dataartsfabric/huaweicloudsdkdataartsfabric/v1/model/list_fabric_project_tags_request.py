@@ -29,7 +29,7 @@ class ListFabricProjectTagsRequest:
     }
 
     def __init__(self, use_predefine_tags=None, offset=None, limit=None):
-        """ListFabricProjectTagsRequest
+        r"""ListFabricProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListFabricProjectTagsRequest:
 
     @property
     def use_predefine_tags(self):
-        """Gets the use_predefine_tags of this ListFabricProjectTagsRequest.
+        r"""Gets the use_predefine_tags of this ListFabricProjectTagsRequest.
 
         使用预定义标签，true表示使用。
 
@@ -67,7 +67,7 @@ class ListFabricProjectTagsRequest:
 
     @use_predefine_tags.setter
     def use_predefine_tags(self, use_predefine_tags):
-        """Sets the use_predefine_tags of this ListFabricProjectTagsRequest.
+        r"""Sets the use_predefine_tags of this ListFabricProjectTagsRequest.
 
         使用预定义标签，true表示使用。
 
@@ -78,7 +78,7 @@ class ListFabricProjectTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFabricProjectTagsRequest.
+        r"""Gets the offset of this ListFabricProjectTagsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -89,7 +89,7 @@ class ListFabricProjectTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFabricProjectTagsRequest.
+        r"""Sets the offset of this ListFabricProjectTagsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -100,7 +100,7 @@ class ListFabricProjectTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFabricProjectTagsRequest.
+        r"""Gets the limit of this ListFabricProjectTagsRequest.
 
         查询记录数默认为1000，limit最多为1000,不能为负数，最小值为1
 
@@ -111,7 +111,7 @@ class ListFabricProjectTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFabricProjectTagsRequest.
+        r"""Sets the limit of this ListFabricProjectTagsRequest.
 
         查询记录数默认为1000，limit最多为1000,不能为负数，最小值为1
 

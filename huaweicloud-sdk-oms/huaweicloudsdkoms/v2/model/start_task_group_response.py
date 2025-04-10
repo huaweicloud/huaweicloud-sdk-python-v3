@@ -24,7 +24,7 @@ class StartTaskGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartTaskGroupResponse
+        r"""StartTaskGroupResponse
 
         The model defined in huaweicloud sdk
 

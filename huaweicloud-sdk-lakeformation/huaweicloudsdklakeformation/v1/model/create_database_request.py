@@ -29,7 +29,7 @@ class CreateDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, body=None):
-        """CreateDatabaseRequest
+        r"""CreateDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDatabaseRequest.
+        r"""Gets the instance_id of this CreateDatabaseRequest.
 
         实例Id
 
@@ -66,7 +66,7 @@ class CreateDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDatabaseRequest.
+        r"""Sets the instance_id of this CreateDatabaseRequest.
 
         实例Id
 
@@ -77,7 +77,7 @@ class CreateDatabaseRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this CreateDatabaseRequest.
+        r"""Gets the catalog_name of this CreateDatabaseRequest.
 
         catalog名字
 
@@ -88,7 +88,7 @@ class CreateDatabaseRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this CreateDatabaseRequest.
+        r"""Sets the catalog_name of this CreateDatabaseRequest.
 
         catalog名字
 
@@ -99,7 +99,7 @@ class CreateDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatabaseRequest.
+        r"""Gets the body of this CreateDatabaseRequest.
 
         :return: The body of this CreateDatabaseRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.DatabaseInput`
@@ -108,7 +108,7 @@ class CreateDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatabaseRequest.
+        r"""Sets the body of this CreateDatabaseRequest.
 
         :param body: The body of this CreateDatabaseRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.DatabaseInput`

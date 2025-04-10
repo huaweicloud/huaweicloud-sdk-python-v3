@@ -29,7 +29,7 @@ class UpdateUserReqBody:
     }
 
     def __init__(self, new_user_name=None, new_description=None, enabled=None):
-        """UpdateUserReqBody
+        r"""UpdateUserReqBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateUserReqBody:
 
     @property
     def new_user_name(self):
-        """Gets the new_user_name of this UpdateUserReqBody.
+        r"""Gets the new_user_name of this UpdateUserReqBody.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -68,7 +68,7 @@ class UpdateUserReqBody:
 
     @new_user_name.setter
     def new_user_name(self, new_user_name):
-        """Sets the new_user_name of this UpdateUserReqBody.
+        r"""Sets the new_user_name of this UpdateUserReqBody.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -79,7 +79,7 @@ class UpdateUserReqBody:
 
     @property
     def new_description(self):
-        """Gets the new_description of this UpdateUserReqBody.
+        r"""Gets the new_description of this UpdateUserReqBody.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -90,7 +90,7 @@ class UpdateUserReqBody:
 
     @new_description.setter
     def new_description(self, new_description):
-        """Sets the new_description of this UpdateUserReqBody.
+        r"""Sets the new_description of this UpdateUserReqBody.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -101,7 +101,7 @@ class UpdateUserReqBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateUserReqBody.
+        r"""Gets the enabled of this UpdateUserReqBody.
 
         IAM用户是否启用。
 
@@ -112,7 +112,7 @@ class UpdateUserReqBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateUserReqBody.
+        r"""Sets the enabled of this UpdateUserReqBody.
 
         IAM用户是否启用。
 

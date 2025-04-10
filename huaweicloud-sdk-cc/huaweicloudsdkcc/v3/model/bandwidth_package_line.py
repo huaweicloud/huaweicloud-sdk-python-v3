@@ -35,7 +35,7 @@ class BandwidthPackageLine:
     }
 
     def __init__(self, local_region_id=None, remote_region_id=None, local_site_code=None, remote_site_code=None, support_levels=None, spec_codes=None):
-        """BandwidthPackageLine
+        r"""BandwidthPackageLine
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BandwidthPackageLine:
 
     @property
     def local_region_id(self):
-        """Gets the local_region_id of this BandwidthPackageLine.
+        r"""Gets the local_region_id of this BandwidthPackageLine.
 
         RegionID。
 
@@ -89,7 +89,7 @@ class BandwidthPackageLine:
 
     @local_region_id.setter
     def local_region_id(self, local_region_id):
-        """Sets the local_region_id of this BandwidthPackageLine.
+        r"""Sets the local_region_id of this BandwidthPackageLine.
 
         RegionID。
 
@@ -100,7 +100,7 @@ class BandwidthPackageLine:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this BandwidthPackageLine.
+        r"""Gets the remote_region_id of this BandwidthPackageLine.
 
         RegionID。
 
@@ -111,7 +111,7 @@ class BandwidthPackageLine:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this BandwidthPackageLine.
+        r"""Sets the remote_region_id of this BandwidthPackageLine.
 
         RegionID。
 
@@ -122,7 +122,7 @@ class BandwidthPackageLine:
 
     @property
     def local_site_code(self):
-        """Gets the local_site_code of this BandwidthPackageLine.
+        r"""Gets the local_site_code of this BandwidthPackageLine.
 
         站点编码
 
@@ -133,7 +133,7 @@ class BandwidthPackageLine:
 
     @local_site_code.setter
     def local_site_code(self, local_site_code):
-        """Sets the local_site_code of this BandwidthPackageLine.
+        r"""Sets the local_site_code of this BandwidthPackageLine.
 
         站点编码
 
@@ -144,7 +144,7 @@ class BandwidthPackageLine:
 
     @property
     def remote_site_code(self):
-        """Gets the remote_site_code of this BandwidthPackageLine.
+        r"""Gets the remote_site_code of this BandwidthPackageLine.
 
         站点编码
 
@@ -155,7 +155,7 @@ class BandwidthPackageLine:
 
     @remote_site_code.setter
     def remote_site_code(self, remote_site_code):
-        """Sets the remote_site_code of this BandwidthPackageLine.
+        r"""Sets the remote_site_code of this BandwidthPackageLine.
 
         站点编码
 
@@ -166,7 +166,7 @@ class BandwidthPackageLine:
 
     @property
     def support_levels(self):
-        """Gets the support_levels of this BandwidthPackageLine.
+        r"""Gets the support_levels of this BandwidthPackageLine.
 
         支持的等级列表
 
@@ -177,7 +177,7 @@ class BandwidthPackageLine:
 
     @support_levels.setter
     def support_levels(self, support_levels):
-        """Sets the support_levels of this BandwidthPackageLine.
+        r"""Sets the support_levels of this BandwidthPackageLine.
 
         支持的等级列表
 
@@ -188,7 +188,7 @@ class BandwidthPackageLine:
 
     @property
     def spec_codes(self):
-        """Gets the spec_codes of this BandwidthPackageLine.
+        r"""Gets the spec_codes of this BandwidthPackageLine.
 
         产品编码列表
 
@@ -199,7 +199,7 @@ class BandwidthPackageLine:
 
     @spec_codes.setter
     def spec_codes(self, spec_codes):
-        """Sets the spec_codes of this BandwidthPackageLine.
+        r"""Sets the spec_codes of this BandwidthPackageLine.
 
         产品编码列表
 

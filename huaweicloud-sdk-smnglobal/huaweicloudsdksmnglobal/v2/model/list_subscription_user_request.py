@@ -35,7 +35,7 @@ class ListSubscriptionUserRequest:
     }
 
     def __init__(self, name=None, protocol=None, status=None, group=None, offset=None, limit=None):
-        """ListSubscriptionUserRequest
+        r"""ListSubscriptionUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSubscriptionUserRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSubscriptionUserRequest.
+        r"""Gets the name of this ListSubscriptionUserRequest.
 
         订阅用户名称。
 
@@ -89,7 +89,7 @@ class ListSubscriptionUserRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSubscriptionUserRequest.
+        r"""Sets the name of this ListSubscriptionUserRequest.
 
         订阅用户名称。
 
@@ -100,7 +100,7 @@ class ListSubscriptionUserRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListSubscriptionUserRequest.
+        r"""Gets the protocol of this ListSubscriptionUserRequest.
 
         协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件
 
@@ -111,7 +111,7 @@ class ListSubscriptionUserRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListSubscriptionUserRequest.
+        r"""Sets the protocol of this ListSubscriptionUserRequest.
 
         协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件
 
@@ -122,7 +122,7 @@ class ListSubscriptionUserRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSubscriptionUserRequest.
+        r"""Gets the status of this ListSubscriptionUserRequest.
 
         订阅用户状态。 UNCONFIRMED：未确认 CONFIRMED：已确认 CANCELLED：已取消
 
@@ -133,7 +133,7 @@ class ListSubscriptionUserRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubscriptionUserRequest.
+        r"""Sets the status of this ListSubscriptionUserRequest.
 
         订阅用户状态。 UNCONFIRMED：未确认 CONFIRMED：已确认 CANCELLED：已取消
 
@@ -144,7 +144,7 @@ class ListSubscriptionUserRequest:
 
     @property
     def group(self):
-        """Gets the group of this ListSubscriptionUserRequest.
+        r"""Gets the group of this ListSubscriptionUserRequest.
 
         订阅用户分组。
 
@@ -155,7 +155,7 @@ class ListSubscriptionUserRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ListSubscriptionUserRequest.
+        r"""Sets the group of this ListSubscriptionUserRequest.
 
         订阅用户分组。
 
@@ -166,7 +166,7 @@ class ListSubscriptionUserRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubscriptionUserRequest.
+        r"""Gets the offset of this ListSubscriptionUserRequest.
 
         偏移量。偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -177,7 +177,7 @@ class ListSubscriptionUserRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubscriptionUserRequest.
+        r"""Sets the offset of this ListSubscriptionUserRequest.
 
         偏移量。偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -188,7 +188,7 @@ class ListSubscriptionUserRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubscriptionUserRequest.
+        r"""Gets the limit of this ListSubscriptionUserRequest.
 
         查询数量限制。取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -199,7 +199,7 @@ class ListSubscriptionUserRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubscriptionUserRequest.
+        r"""Sets the limit of this ListSubscriptionUserRequest.
 
         查询数量限制。取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 

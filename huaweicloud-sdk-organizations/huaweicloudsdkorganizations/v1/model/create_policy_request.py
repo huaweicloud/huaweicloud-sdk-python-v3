@@ -30,7 +30,7 @@ class CreatePolicyRequest:
     }
 
     def __init__(self, x_security_token=None, x_language=None, body=None):
-        """CreatePolicyRequest
+        r"""CreatePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreatePolicyRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CreatePolicyRequest.
+        r"""Gets the x_security_token of this CreatePolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -69,7 +69,7 @@ class CreatePolicyRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CreatePolicyRequest.
+        r"""Sets the x_security_token of this CreatePolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -80,7 +80,7 @@ class CreatePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreatePolicyRequest.
+        r"""Gets the x_language of this CreatePolicyRequest.
 
         选择接口返回的信息的语言
 
@@ -91,7 +91,7 @@ class CreatePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreatePolicyRequest.
+        r"""Sets the x_language of this CreatePolicyRequest.
 
         选择接口返回的信息的语言
 
@@ -102,7 +102,7 @@ class CreatePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePolicyRequest.
+        r"""Gets the body of this CreatePolicyRequest.
 
         :return: The body of this CreatePolicyRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreatePolicyReqBody`
@@ -111,7 +111,7 @@ class CreatePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePolicyRequest.
+        r"""Sets the body of this CreatePolicyRequest.
 
         :param body: The body of this CreatePolicyRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.CreatePolicyReqBody`

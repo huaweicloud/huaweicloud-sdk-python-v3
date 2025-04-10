@@ -29,7 +29,7 @@ class ChangeUserPrivilegeGroupUserInfo:
     }
 
     def __init__(self, user_name=None, user_privilege_group=None, type=None):
-        """ChangeUserPrivilegeGroupUserInfo
+        r"""ChangeUserPrivilegeGroupUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ChangeUserPrivilegeGroupUserInfo.
+        r"""Gets the user_name of this ChangeUserPrivilegeGroupUserInfo.
 
         桌面分配对象的名称，当type类型USER时填写用户名字；当type类型GROUP时填写用户组名称。
 
@@ -66,7 +66,7 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ChangeUserPrivilegeGroupUserInfo.
+        r"""Sets the user_name of this ChangeUserPrivilegeGroupUserInfo.
 
         桌面分配对象的名称，当type类型USER时填写用户名字；当type类型GROUP时填写用户组名称。
 
@@ -77,7 +77,7 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     @property
     def user_privilege_group(self):
-        """Gets the user_privilege_group of this ChangeUserPrivilegeGroupUserInfo.
+        r"""Gets the user_privilege_group of this ChangeUserPrivilegeGroupUserInfo.
 
         桌面用户所属的用户组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -88,7 +88,7 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     @user_privilege_group.setter
     def user_privilege_group(self, user_privilege_group):
-        """Sets the user_privilege_group of this ChangeUserPrivilegeGroupUserInfo.
+        r"""Sets the user_privilege_group of this ChangeUserPrivilegeGroupUserInfo.
 
         桌面用户所属的用户组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -99,7 +99,7 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     @property
     def type(self):
-        """Gets the type of this ChangeUserPrivilegeGroupUserInfo.
+        r"""Gets the type of this ChangeUserPrivilegeGroupUserInfo.
 
         对象类型，可选值为： - USER：用户。 - GROUP：用户组。
 
@@ -110,7 +110,7 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChangeUserPrivilegeGroupUserInfo.
+        r"""Sets the type of this ChangeUserPrivilegeGroupUserInfo.
 
         对象类型，可选值为： - USER：用户。 - GROUP：用户组。
 

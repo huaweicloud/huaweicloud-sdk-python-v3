@@ -25,7 +25,7 @@ class UserResource:
     }
 
     def __init__(self, name=None):
-        """UserResource
+        r"""UserResource
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UserResource:
 
     @property
     def name(self):
-        """Gets the name of this UserResource.
+        r"""Gets the name of this UserResource.
 
         用户名。
 
@@ -54,7 +54,7 @@ class UserResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserResource.
+        r"""Sets the name of this UserResource.
 
         用户名。
 

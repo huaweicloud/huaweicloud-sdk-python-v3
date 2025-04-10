@@ -28,7 +28,7 @@ class ListJobHistoryParametersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, parameter_history_config_list=None):
-        """ListJobHistoryParametersResponse
+        r"""ListJobHistoryParametersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJobHistoryParametersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJobHistoryParametersResponse.
+        r"""Gets the count of this ListJobHistoryParametersResponse.
 
         历史记录总数。
 
@@ -62,7 +62,7 @@ class ListJobHistoryParametersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJobHistoryParametersResponse.
+        r"""Sets the count of this ListJobHistoryParametersResponse.
 
         历史记录总数。
 
@@ -73,7 +73,7 @@ class ListJobHistoryParametersResponse(SdkResponse):
 
     @property
     def parameter_history_config_list(self):
-        """Gets the parameter_history_config_list of this ListJobHistoryParametersResponse.
+        r"""Gets the parameter_history_config_list of this ListJobHistoryParametersResponse.
 
         任务参数历史修改列表
 
@@ -84,7 +84,7 @@ class ListJobHistoryParametersResponse(SdkResponse):
 
     @parameter_history_config_list.setter
     def parameter_history_config_list(self, parameter_history_config_list):
-        """Sets the parameter_history_config_list of this ListJobHistoryParametersResponse.
+        r"""Sets the parameter_history_config_list of this ListJobHistoryParametersResponse.
 
         任务参数历史修改列表
 

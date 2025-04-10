@@ -30,7 +30,7 @@ class CreateNewCaseResponse(SdkResponse):
     }
 
     def __init__(self, code=None, json=None, message=None):
-        """CreateNewCaseResponse
+        r"""CreateNewCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateNewCaseResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateNewCaseResponse.
+        r"""Gets the code of this CreateNewCaseResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class CreateNewCaseResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateNewCaseResponse.
+        r"""Sets the code of this CreateNewCaseResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class CreateNewCaseResponse(SdkResponse):
 
     @property
     def json(self):
-        """Gets the json of this CreateNewCaseResponse.
+        r"""Gets the json of this CreateNewCaseResponse.
 
         :return: The json of this CreateNewCaseResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.CreaseCaseResponseJson`
@@ -89,7 +89,7 @@ class CreateNewCaseResponse(SdkResponse):
 
     @json.setter
     def json(self, json):
-        """Sets the json of this CreateNewCaseResponse.
+        r"""Sets the json of this CreateNewCaseResponse.
 
         :param json: The json of this CreateNewCaseResponse.
         :type json: :class:`huaweicloudsdkcpts.v1.CreaseCaseResponseJson`
@@ -98,7 +98,7 @@ class CreateNewCaseResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateNewCaseResponse.
+        r"""Gets the message of this CreateNewCaseResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class CreateNewCaseResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateNewCaseResponse.
+        r"""Sets the message of this CreateNewCaseResponse.
 
         响应消息
 

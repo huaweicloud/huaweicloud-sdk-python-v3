@@ -26,7 +26,7 @@ class ShowEdgeNodeHostsInfoResponse(SdkResponse):
     }
 
     def __init__(self, hosts=None):
-        """ShowEdgeNodeHostsInfoResponse
+        r"""ShowEdgeNodeHostsInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEdgeNodeHostsInfoResponse(SdkResponse):
 
     @property
     def hosts(self):
-        """Gets the hosts of this ShowEdgeNodeHostsInfoResponse.
+        r"""Gets the hosts of this ShowEdgeNodeHostsInfoResponse.
 
         节点主机信息详情
 
@@ -55,7 +55,7 @@ class ShowEdgeNodeHostsInfoResponse(SdkResponse):
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ShowEdgeNodeHostsInfoResponse.
+        r"""Sets the hosts of this ShowEdgeNodeHostsInfoResponse.
 
         节点主机信息详情
 

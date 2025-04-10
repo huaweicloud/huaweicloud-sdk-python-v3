@@ -26,7 +26,7 @@ class AttachImageServerAppResponse(SdkResponse):
     }
 
     def __init__(self, uri=None):
-        """AttachImageServerAppResponse
+        r"""AttachImageServerAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AttachImageServerAppResponse(SdkResponse):
 
     @property
     def uri(self):
-        """Gets the uri of this AttachImageServerAppResponse.
+        r"""Gets the uri of this AttachImageServerAppResponse.
 
         分发软件信息的URI。
 
@@ -55,7 +55,7 @@ class AttachImageServerAppResponse(SdkResponse):
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this AttachImageServerAppResponse.
+        r"""Sets the uri of this AttachImageServerAppResponse.
 
         分发软件信息的URI。
 

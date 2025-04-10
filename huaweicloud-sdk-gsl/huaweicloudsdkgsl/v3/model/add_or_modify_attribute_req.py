@@ -25,7 +25,7 @@ class AddOrModifyAttributeReq:
     }
 
     def __init__(self, cust_attr_name=None):
-        """AddOrModifyAttributeReq
+        r"""AddOrModifyAttributeReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddOrModifyAttributeReq:
 
     @property
     def cust_attr_name(self):
-        """Gets the cust_attr_name of this AddOrModifyAttributeReq.
+        r"""Gets the cust_attr_name of this AddOrModifyAttributeReq.
 
         自定义属性名称
 
@@ -53,7 +53,7 @@ class AddOrModifyAttributeReq:
 
     @cust_attr_name.setter
     def cust_attr_name(self, cust_attr_name):
-        """Sets the cust_attr_name of this AddOrModifyAttributeReq.
+        r"""Sets the cust_attr_name of this AddOrModifyAttributeReq.
 
         自定义属性名称
 

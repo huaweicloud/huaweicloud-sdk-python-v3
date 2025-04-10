@@ -29,7 +29,7 @@ class EnvironmentModify:
     }
 
     def __init__(self, name=None, alias=None, description=None):
-        """EnvironmentModify
+        r"""EnvironmentModify
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EnvironmentModify:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentModify.
+        r"""Gets the name of this EnvironmentModify.
 
         环境名称。
 
@@ -68,7 +68,7 @@ class EnvironmentModify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentModify.
+        r"""Sets the name of this EnvironmentModify.
 
         环境名称。
 
@@ -79,7 +79,7 @@ class EnvironmentModify:
 
     @property
     def alias(self):
-        """Gets the alias of this EnvironmentModify.
+        r"""Gets the alias of this EnvironmentModify.
 
         环境别名。
 
@@ -90,7 +90,7 @@ class EnvironmentModify:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this EnvironmentModify.
+        r"""Sets the alias of this EnvironmentModify.
 
         环境别名。
 
@@ -101,7 +101,7 @@ class EnvironmentModify:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentModify.
+        r"""Gets the description of this EnvironmentModify.
 
         环境描述。
 
@@ -112,7 +112,7 @@ class EnvironmentModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentModify.
+        r"""Sets the description of this EnvironmentModify.
 
         环境描述。
 

@@ -25,7 +25,7 @@ class ShowProtectedInstanceRequest:
     }
 
     def __init__(self, protected_instance_id=None):
-        """ShowProtectedInstanceRequest
+        r"""ShowProtectedInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowProtectedInstanceRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this ShowProtectedInstanceRequest.
+        r"""Gets the protected_instance_id of this ShowProtectedInstanceRequest.
 
         保护实例的ID。
 
@@ -53,7 +53,7 @@ class ShowProtectedInstanceRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this ShowProtectedInstanceRequest.
+        r"""Sets the protected_instance_id of this ShowProtectedInstanceRequest.
 
         保护实例的ID。
 

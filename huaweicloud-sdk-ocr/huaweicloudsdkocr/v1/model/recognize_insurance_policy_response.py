@@ -28,7 +28,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeInsurancePolicyResponse
+        r"""RecognizeInsurancePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeInsurancePolicyResponse.
+        r"""Gets the result of this RecognizeInsurancePolicyResponse.
 
         :return: The result of this RecognizeInsurancePolicyResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyResult`
@@ -60,7 +60,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeInsurancePolicyResponse.
+        r"""Sets the result of this RecognizeInsurancePolicyResponse.
 
         :param result: The result of this RecognizeInsurancePolicyResponse.
         :type result: :class:`huaweicloudsdkocr.v1.InsurancePolicyResult`
@@ -69,7 +69,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeInsurancePolicyResponse.
+        r"""Gets the x_request_id of this RecognizeInsurancePolicyResponse.
 
         :return: The x_request_id of this RecognizeInsurancePolicyResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeInsurancePolicyResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeInsurancePolicyResponse.
+        r"""Sets the x_request_id of this RecognizeInsurancePolicyResponse.
 
         :param x_request_id: The x_request_id of this RecognizeInsurancePolicyResponse.
         :type x_request_id: str

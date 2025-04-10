@@ -33,7 +33,7 @@ class ConsumerGroupHeartBeatRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, consumer_group_name=None, consumer_name=None, body=None):
-        """ConsumerGroupHeartBeatRequest
+        r"""ConsumerGroupHeartBeatRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ConsumerGroupHeartBeatRequest.
+        r"""Gets the group_id of this ConsumerGroupHeartBeatRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -78,7 +78,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ConsumerGroupHeartBeatRequest.
+        r"""Sets the group_id of this ConsumerGroupHeartBeatRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -89,7 +89,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ConsumerGroupHeartBeatRequest.
+        r"""Gets the stream_id of this ConsumerGroupHeartBeatRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -100,7 +100,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ConsumerGroupHeartBeatRequest.
+        r"""Sets the stream_id of this ConsumerGroupHeartBeatRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -111,7 +111,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @property
     def consumer_group_name(self):
-        """Gets the consumer_group_name of this ConsumerGroupHeartBeatRequest.
+        r"""Gets the consumer_group_name of this ConsumerGroupHeartBeatRequest.
 
         消费组名
 
@@ -122,7 +122,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @consumer_group_name.setter
     def consumer_group_name(self, consumer_group_name):
-        """Sets the consumer_group_name of this ConsumerGroupHeartBeatRequest.
+        r"""Sets the consumer_group_name of this ConsumerGroupHeartBeatRequest.
 
         消费组名
 
@@ -133,7 +133,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @property
     def consumer_name(self):
-        """Gets the consumer_name of this ConsumerGroupHeartBeatRequest.
+        r"""Gets the consumer_name of this ConsumerGroupHeartBeatRequest.
 
         消费者名称
 
@@ -144,7 +144,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @consumer_name.setter
     def consumer_name(self, consumer_name):
-        """Sets the consumer_name of this ConsumerGroupHeartBeatRequest.
+        r"""Sets the consumer_name of this ConsumerGroupHeartBeatRequest.
 
         消费者名称
 
@@ -155,7 +155,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConsumerGroupHeartBeatRequest.
+        r"""Gets the body of this ConsumerGroupHeartBeatRequest.
 
         :return: The body of this ConsumerGroupHeartBeatRequest.
         :rtype: list[str]
@@ -164,7 +164,7 @@ class ConsumerGroupHeartBeatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConsumerGroupHeartBeatRequest.
+        r"""Sets the body of this ConsumerGroupHeartBeatRequest.
 
         :param body: The body of this ConsumerGroupHeartBeatRequest.
         :type body: list[str]

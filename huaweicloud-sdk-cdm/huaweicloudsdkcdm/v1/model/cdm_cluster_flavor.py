@@ -39,7 +39,7 @@ class CdmClusterFlavor:
     }
 
     def __init__(self, cpu=None, ram=None, name=None, region=None, typename=None, cluster_mode=None, status=None, str_id=None):
-        """CdmClusterFlavor
+        r"""CdmClusterFlavor
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CdmClusterFlavor:
 
     @property
     def cpu(self):
-        """Gets the cpu of this CdmClusterFlavor.
+        r"""Gets the cpu of this CdmClusterFlavor.
 
         CPU。
 
@@ -103,7 +103,7 @@ class CdmClusterFlavor:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this CdmClusterFlavor.
+        r"""Sets the cpu of this CdmClusterFlavor.
 
         CPU。
 
@@ -114,7 +114,7 @@ class CdmClusterFlavor:
 
     @property
     def ram(self):
-        """Gets the ram of this CdmClusterFlavor.
+        r"""Gets the ram of this CdmClusterFlavor.
 
         内存。
 
@@ -125,7 +125,7 @@ class CdmClusterFlavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this CdmClusterFlavor.
+        r"""Sets the ram of this CdmClusterFlavor.
 
         内存。
 
@@ -136,7 +136,7 @@ class CdmClusterFlavor:
 
     @property
     def name(self):
-        """Gets the name of this CdmClusterFlavor.
+        r"""Gets the name of this CdmClusterFlavor.
 
         规格名称。
 
@@ -147,7 +147,7 @@ class CdmClusterFlavor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdmClusterFlavor.
+        r"""Sets the name of this CdmClusterFlavor.
 
         规格名称。
 
@@ -158,7 +158,7 @@ class CdmClusterFlavor:
 
     @property
     def region(self):
-        """Gets the region of this CdmClusterFlavor.
+        r"""Gets the region of this CdmClusterFlavor.
 
         region。
 
@@ -169,7 +169,7 @@ class CdmClusterFlavor:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CdmClusterFlavor.
+        r"""Sets the region of this CdmClusterFlavor.
 
         region。
 
@@ -180,7 +180,7 @@ class CdmClusterFlavor:
 
     @property
     def typename(self):
-        """Gets the typename of this CdmClusterFlavor.
+        r"""Gets the typename of this CdmClusterFlavor.
 
         类型名称。
 
@@ -191,7 +191,7 @@ class CdmClusterFlavor:
 
     @typename.setter
     def typename(self, typename):
-        """Sets the typename of this CdmClusterFlavor.
+        r"""Sets the typename of this CdmClusterFlavor.
 
         类型名称。
 
@@ -202,7 +202,7 @@ class CdmClusterFlavor:
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this CdmClusterFlavor.
+        r"""Gets the cluster_mode of this CdmClusterFlavor.
 
         集群模式。
 
@@ -213,7 +213,7 @@ class CdmClusterFlavor:
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this CdmClusterFlavor.
+        r"""Sets the cluster_mode of this CdmClusterFlavor.
 
         集群模式。
 
@@ -224,7 +224,7 @@ class CdmClusterFlavor:
 
     @property
     def status(self):
-        """Gets the status of this CdmClusterFlavor.
+        r"""Gets the status of this CdmClusterFlavor.
 
         规格状态。
 
@@ -235,7 +235,7 @@ class CdmClusterFlavor:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CdmClusterFlavor.
+        r"""Sets the status of this CdmClusterFlavor.
 
         规格状态。
 
@@ -246,7 +246,7 @@ class CdmClusterFlavor:
 
     @property
     def str_id(self):
-        """Gets the str_id of this CdmClusterFlavor.
+        r"""Gets the str_id of this CdmClusterFlavor.
 
         规格ID。
 
@@ -257,7 +257,7 @@ class CdmClusterFlavor:
 
     @str_id.setter
     def str_id(self, str_id):
-        """Sets the str_id of this CdmClusterFlavor.
+        r"""Sets the str_id of this CdmClusterFlavor.
 
         规格ID。
 

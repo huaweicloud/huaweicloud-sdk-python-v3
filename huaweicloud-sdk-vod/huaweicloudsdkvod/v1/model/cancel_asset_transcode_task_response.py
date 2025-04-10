@@ -24,7 +24,7 @@ class CancelAssetTranscodeTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelAssetTranscodeTaskResponse
+        r"""CancelAssetTranscodeTaskResponse
 
         The model defined in huaweicloud sdk
 

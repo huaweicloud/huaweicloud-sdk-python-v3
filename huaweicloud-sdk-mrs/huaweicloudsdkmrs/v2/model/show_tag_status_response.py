@@ -28,7 +28,7 @@ class ShowTagStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, default_tags_enable=None):
-        """ShowTagStatusResponse
+        r"""ShowTagStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTagStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTagStatusResponse.
+        r"""Gets the status of this ShowTagStatusResponse.
 
         标签处理状态
 
@@ -62,7 +62,7 @@ class ShowTagStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTagStatusResponse.
+        r"""Sets the status of this ShowTagStatusResponse.
 
         标签处理状态
 
@@ -73,7 +73,7 @@ class ShowTagStatusResponse(SdkResponse):
 
     @property
     def default_tags_enable(self):
-        """Gets the default_tags_enable of this ShowTagStatusResponse.
+        r"""Gets the default_tags_enable of this ShowTagStatusResponse.
 
         默认标签是否已开启
 
@@ -84,7 +84,7 @@ class ShowTagStatusResponse(SdkResponse):
 
     @default_tags_enable.setter
     def default_tags_enable(self, default_tags_enable):
-        """Sets the default_tags_enable of this ShowTagStatusResponse.
+        r"""Sets the default_tags_enable of this ShowTagStatusResponse.
 
         默认标签是否已开启
 

@@ -30,7 +30,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, request_id=None):
-        """ListTagResourceInstancesResponse
+        r"""ListTagResourceInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListTagResourceInstancesResponse.
+        r"""Gets the resources of this ListTagResourceInstancesResponse.
 
         资源列表。
 
@@ -69,7 +69,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListTagResourceInstancesResponse.
+        r"""Sets the resources of this ListTagResourceInstancesResponse.
 
         资源列表。
 
@@ -80,7 +80,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListTagResourceInstancesResponse.
+        r"""Gets the total_count of this ListTagResourceInstancesResponse.
 
         总记录数。
 
@@ -91,7 +91,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListTagResourceInstancesResponse.
+        r"""Sets the total_count of this ListTagResourceInstancesResponse.
 
         总记录数。
 
@@ -102,7 +102,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTagResourceInstancesResponse.
+        r"""Gets the request_id of this ListTagResourceInstancesResponse.
 
         请求ID
 
@@ -113,7 +113,7 @@ class ListTagResourceInstancesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTagResourceInstancesResponse.
+        r"""Sets the request_id of this ListTagResourceInstancesResponse.
 
         请求ID
 

@@ -37,7 +37,7 @@ class ValueListResponseBody:
     }
 
     def __init__(self, id=None, name=None, type=None, timestamp=None, values=None, producer=None, description=None):
-        """ValueListResponseBody
+        r"""ValueListResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ValueListResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this ValueListResponseBody.
+        r"""Gets the id of this ValueListResponseBody.
 
         引用表id
 
@@ -96,7 +96,7 @@ class ValueListResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ValueListResponseBody.
+        r"""Sets the id of this ValueListResponseBody.
 
         引用表id
 
@@ -107,7 +107,7 @@ class ValueListResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this ValueListResponseBody.
+        r"""Gets the name of this ValueListResponseBody.
 
         引用表名称
 
@@ -118,7 +118,7 @@ class ValueListResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValueListResponseBody.
+        r"""Sets the name of this ValueListResponseBody.
 
         引用表名称
 
@@ -129,7 +129,7 @@ class ValueListResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this ValueListResponseBody.
+        r"""Gets the type of this ValueListResponseBody.
 
         引用表类型
 
@@ -140,7 +140,7 @@ class ValueListResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ValueListResponseBody.
+        r"""Sets the type of this ValueListResponseBody.
 
         引用表类型
 
@@ -151,7 +151,7 @@ class ValueListResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ValueListResponseBody.
+        r"""Gets the timestamp of this ValueListResponseBody.
 
         引用表时间戳
 
@@ -162,7 +162,7 @@ class ValueListResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ValueListResponseBody.
+        r"""Sets the timestamp of this ValueListResponseBody.
 
         引用表时间戳
 
@@ -173,7 +173,7 @@ class ValueListResponseBody:
 
     @property
     def values(self):
-        """Gets the values of this ValueListResponseBody.
+        r"""Gets the values of this ValueListResponseBody.
 
         引用表的值
 
@@ -184,7 +184,7 @@ class ValueListResponseBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ValueListResponseBody.
+        r"""Sets the values of this ValueListResponseBody.
 
         引用表的值
 
@@ -195,7 +195,7 @@ class ValueListResponseBody:
 
     @property
     def producer(self):
-        """Gets the producer of this ValueListResponseBody.
+        r"""Gets the producer of this ValueListResponseBody.
 
         引用表来源，1代表用户创建，其它值代表modulleX自动生成
 
@@ -206,7 +206,7 @@ class ValueListResponseBody:
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this ValueListResponseBody.
+        r"""Sets the producer of this ValueListResponseBody.
 
         引用表来源，1代表用户创建，其它值代表modulleX自动生成
 
@@ -217,7 +217,7 @@ class ValueListResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this ValueListResponseBody.
+        r"""Gets the description of this ValueListResponseBody.
 
         引用表描述
 
@@ -228,7 +228,7 @@ class ValueListResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ValueListResponseBody.
+        r"""Sets the description of this ValueListResponseBody.
 
         引用表描述
 

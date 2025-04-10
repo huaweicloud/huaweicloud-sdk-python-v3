@@ -28,7 +28,7 @@ class ListTablesResponse(SdkResponse):
     }
 
     def __init__(self, tables=None, count=None):
-        """ListTablesResponse
+        r"""ListTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTablesResponse(SdkResponse):
 
     @property
     def tables(self):
-        """Gets the tables of this ListTablesResponse.
+        r"""Gets the tables of this ListTablesResponse.
 
         表的信息。
 
@@ -62,7 +62,7 @@ class ListTablesResponse(SdkResponse):
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ListTablesResponse.
+        r"""Sets the tables of this ListTablesResponse.
 
         表的信息。
 
@@ -73,7 +73,7 @@ class ListTablesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTablesResponse.
+        r"""Gets the count of this ListTablesResponse.
 
         数据表总数。
 
@@ -84,7 +84,7 @@ class ListTablesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTablesResponse.
+        r"""Sets the count of this ListTablesResponse.
 
         数据表总数。
 

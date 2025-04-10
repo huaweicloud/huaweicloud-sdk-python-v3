@@ -41,7 +41,7 @@ class BizDatasourceRelationVO:
     }
 
     def __init__(self, id=None, biz_id=None, biz_type=None, dw_type=None, dw_id=None, dw_name=None, db_name=None, queue_name=None, schema=None):
-        """BizDatasourceRelationVO
+        r"""BizDatasourceRelationVO
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class BizDatasourceRelationVO:
 
     @property
     def id(self):
-        """Gets the id of this BizDatasourceRelationVO.
+        r"""Gets the id of this BizDatasourceRelationVO.
 
         编码，ID字符串。
 
@@ -108,7 +108,7 @@ class BizDatasourceRelationVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BizDatasourceRelationVO.
+        r"""Sets the id of this BizDatasourceRelationVO.
 
         编码，ID字符串。
 
@@ -119,7 +119,7 @@ class BizDatasourceRelationVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this BizDatasourceRelationVO.
+        r"""Gets the biz_id of this BizDatasourceRelationVO.
 
         业务对象信息，ID字符串。
 
@@ -130,7 +130,7 @@ class BizDatasourceRelationVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this BizDatasourceRelationVO.
+        r"""Sets the biz_id of this BizDatasourceRelationVO.
 
         业务对象信息，ID字符串。
 
@@ -141,7 +141,7 @@ class BizDatasourceRelationVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this BizDatasourceRelationVO.
+        r"""Gets the biz_type of this BizDatasourceRelationVO.
 
         :return: The biz_type of this BizDatasourceRelationVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -150,7 +150,7 @@ class BizDatasourceRelationVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this BizDatasourceRelationVO.
+        r"""Sets the biz_type of this BizDatasourceRelationVO.
 
         :param biz_type: The biz_type of this BizDatasourceRelationVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -159,7 +159,7 @@ class BizDatasourceRelationVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this BizDatasourceRelationVO.
+        r"""Gets the dw_type of this BizDatasourceRelationVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -170,7 +170,7 @@ class BizDatasourceRelationVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this BizDatasourceRelationVO.
+        r"""Sets the dw_type of this BizDatasourceRelationVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -181,7 +181,7 @@ class BizDatasourceRelationVO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this BizDatasourceRelationVO.
+        r"""Gets the dw_id of this BizDatasourceRelationVO.
 
         数据连接ID。
 
@@ -192,7 +192,7 @@ class BizDatasourceRelationVO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this BizDatasourceRelationVO.
+        r"""Sets the dw_id of this BizDatasourceRelationVO.
 
         数据连接ID。
 
@@ -203,7 +203,7 @@ class BizDatasourceRelationVO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this BizDatasourceRelationVO.
+        r"""Gets the dw_name of this BizDatasourceRelationVO.
 
         数据连接名，只读。
 
@@ -214,7 +214,7 @@ class BizDatasourceRelationVO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this BizDatasourceRelationVO.
+        r"""Sets the dw_name of this BizDatasourceRelationVO.
 
         数据连接名，只读。
 
@@ -225,7 +225,7 @@ class BizDatasourceRelationVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this BizDatasourceRelationVO.
+        r"""Gets the db_name of this BizDatasourceRelationVO.
 
         数据库名。
 
@@ -236,7 +236,7 @@ class BizDatasourceRelationVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this BizDatasourceRelationVO.
+        r"""Sets the db_name of this BizDatasourceRelationVO.
 
         数据库名。
 
@@ -247,7 +247,7 @@ class BizDatasourceRelationVO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this BizDatasourceRelationVO.
+        r"""Gets the queue_name of this BizDatasourceRelationVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -258,7 +258,7 @@ class BizDatasourceRelationVO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this BizDatasourceRelationVO.
+        r"""Sets the queue_name of this BizDatasourceRelationVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -269,7 +269,7 @@ class BizDatasourceRelationVO:
 
     @property
     def schema(self):
-        """Gets the schema of this BizDatasourceRelationVO.
+        r"""Gets the schema of this BizDatasourceRelationVO.
 
         DWS类型需要。
 
@@ -280,7 +280,7 @@ class BizDatasourceRelationVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this BizDatasourceRelationVO.
+        r"""Sets the schema of this BizDatasourceRelationVO.
 
         DWS类型需要。
 

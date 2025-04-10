@@ -25,7 +25,7 @@ class AlarmBody:
     }
 
     def __init__(self, topic_urn=None):
-        """AlarmBody
+        r"""AlarmBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AlarmBody:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this AlarmBody.
+        r"""Gets the topic_urn of this AlarmBody.
 
         SMN的topic urn
 
@@ -53,7 +53,7 @@ class AlarmBody:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this AlarmBody.
+        r"""Sets the topic_urn of this AlarmBody.
 
         SMN的topic urn
 

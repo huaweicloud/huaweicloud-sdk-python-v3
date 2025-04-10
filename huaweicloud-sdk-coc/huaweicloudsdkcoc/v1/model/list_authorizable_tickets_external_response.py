@@ -32,7 +32,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
     }
 
     def __init__(self, provider_code=None, error_code=None, error_msg=None, data=None):
-        """ListAuthorizableTicketsExternalResponse
+        r"""ListAuthorizableTicketsExternalResponse
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @property
     def provider_code(self):
-        """Gets the provider_code of this ListAuthorizableTicketsExternalResponse.
+        r"""Gets the provider_code of this ListAuthorizableTicketsExternalResponse.
 
         服务标识
 
@@ -74,7 +74,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @provider_code.setter
     def provider_code(self, provider_code):
-        """Sets the provider_code of this ListAuthorizableTicketsExternalResponse.
+        r"""Sets the provider_code of this ListAuthorizableTicketsExternalResponse.
 
         服务标识
 
@@ -85,7 +85,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListAuthorizableTicketsExternalResponse.
+        r"""Gets the error_code of this ListAuthorizableTicketsExternalResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -96,7 +96,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListAuthorizableTicketsExternalResponse.
+        r"""Sets the error_code of this ListAuthorizableTicketsExternalResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -107,7 +107,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListAuthorizableTicketsExternalResponse.
+        r"""Gets the error_msg of this ListAuthorizableTicketsExternalResponse.
 
         请求响应描述
 
@@ -118,7 +118,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListAuthorizableTicketsExternalResponse.
+        r"""Sets the error_msg of this ListAuthorizableTicketsExternalResponse.
 
         请求响应描述
 
@@ -129,7 +129,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAuthorizableTicketsExternalResponse.
+        r"""Gets the data of this ListAuthorizableTicketsExternalResponse.
 
         可授权单信息
 
@@ -140,7 +140,7 @@ class ListAuthorizableTicketsExternalResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAuthorizableTicketsExternalResponse.
+        r"""Sets the data of this ListAuthorizableTicketsExternalResponse.
 
         可授权单信息
 

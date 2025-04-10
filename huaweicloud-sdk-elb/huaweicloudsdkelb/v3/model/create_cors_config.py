@@ -35,7 +35,7 @@ class CreateCorsConfig:
     }
 
     def __init__(self, allow_origin=None, allow_methods=None, allow_headers=None, expose_headers=None, allow_credentials=None, max_age=None):
-        """CreateCorsConfig
+        r"""CreateCorsConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateCorsConfig:
 
     @property
     def allow_origin(self):
-        """Gets the allow_origin of this CreateCorsConfig.
+        r"""Gets the allow_origin of this CreateCorsConfig.
 
         参数解释：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  约束限制： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
 
@@ -89,7 +89,7 @@ class CreateCorsConfig:
 
     @allow_origin.setter
     def allow_origin(self, allow_origin):
-        """Sets the allow_origin of this CreateCorsConfig.
+        r"""Sets the allow_origin of this CreateCorsConfig.
 
         参数解释：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  约束限制： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
 
@@ -100,7 +100,7 @@ class CreateCorsConfig:
 
     @property
     def allow_methods(self):
-        """Gets the allow_methods of this CreateCorsConfig.
+        r"""Gets the allow_methods of this CreateCorsConfig.
 
         参数解释：选择跨域访问时允许的 HTTP 方法。
 
@@ -111,7 +111,7 @@ class CreateCorsConfig:
 
     @allow_methods.setter
     def allow_methods(self, allow_methods):
-        """Sets the allow_methods of this CreateCorsConfig.
+        r"""Sets the allow_methods of this CreateCorsConfig.
 
         参数解释：选择跨域访问时允许的 HTTP 方法。
 
@@ -122,7 +122,7 @@ class CreateCorsConfig:
 
     @property
     def allow_headers(self):
-        """Gets the allow_headers of this CreateCorsConfig.
+        r"""Gets the allow_headers of this CreateCorsConfig.
 
         参数解释：允许跨域的 Header 列表。
 
@@ -133,7 +133,7 @@ class CreateCorsConfig:
 
     @allow_headers.setter
     def allow_headers(self, allow_headers):
-        """Sets the allow_headers of this CreateCorsConfig.
+        r"""Sets the allow_headers of this CreateCorsConfig.
 
         参数解释：允许跨域的 Header 列表。
 
@@ -144,7 +144,7 @@ class CreateCorsConfig:
 
     @property
     def expose_headers(self):
-        """Gets the expose_headers of this CreateCorsConfig.
+        r"""Gets the expose_headers of this CreateCorsConfig.
 
         参数解释：允许暴露的Header列表。
 
@@ -155,7 +155,7 @@ class CreateCorsConfig:
 
     @expose_headers.setter
     def expose_headers(self, expose_headers):
-        """Sets the expose_headers of this CreateCorsConfig.
+        r"""Sets the expose_headers of this CreateCorsConfig.
 
         参数解释：允许暴露的Header列表。
 
@@ -166,7 +166,7 @@ class CreateCorsConfig:
 
     @property
     def allow_credentials(self):
-        """Gets the allow_credentials of this CreateCorsConfig.
+        r"""Gets the allow_credentials of this CreateCorsConfig.
 
         参数解释：是否允许携带凭证信息。  取值范围： - true：是。 - false：否。
 
@@ -177,7 +177,7 @@ class CreateCorsConfig:
 
     @allow_credentials.setter
     def allow_credentials(self, allow_credentials):
-        """Sets the allow_credentials of this CreateCorsConfig.
+        r"""Sets the allow_credentials of this CreateCorsConfig.
 
         参数解释：是否允许携带凭证信息。  取值范围： - true：是。 - false：否。
 
@@ -188,7 +188,7 @@ class CreateCorsConfig:
 
     @property
     def max_age(self):
-        """Gets the max_age of this CreateCorsConfig.
+        r"""Gets the max_age of this CreateCorsConfig.
 
         参数解释：预检请求在浏览器的最大缓存时间，单位：秒。  取值范围：-1~172800。
 
@@ -199,7 +199,7 @@ class CreateCorsConfig:
 
     @max_age.setter
     def max_age(self, max_age):
-        """Sets the max_age of this CreateCorsConfig.
+        r"""Sets the max_age of this CreateCorsConfig.
 
         参数解释：预检请求在浏览器的最大缓存时间，单位：秒。  取值范围：-1~172800。
 

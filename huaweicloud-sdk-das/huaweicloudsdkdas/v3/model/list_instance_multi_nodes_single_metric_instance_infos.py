@@ -27,7 +27,7 @@ class ListInstanceMultiNodesSingleMetricInstanceInfos:
     }
 
     def __init__(self, datastore_type=None, node_infos=None):
-        """ListInstanceMultiNodesSingleMetricInstanceInfos
+        r"""ListInstanceMultiNodesSingleMetricInstanceInfos
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstanceMultiNodesSingleMetricInstanceInfos:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListInstanceMultiNodesSingleMetricInstanceInfos.
+        r"""Gets the datastore_type of this ListInstanceMultiNodesSingleMetricInstanceInfos.
 
         数据库类型
 
@@ -59,7 +59,7 @@ class ListInstanceMultiNodesSingleMetricInstanceInfos:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListInstanceMultiNodesSingleMetricInstanceInfos.
+        r"""Sets the datastore_type of this ListInstanceMultiNodesSingleMetricInstanceInfos.
 
         数据库类型
 
@@ -70,7 +70,7 @@ class ListInstanceMultiNodesSingleMetricInstanceInfos:
 
     @property
     def node_infos(self):
-        """Gets the node_infos of this ListInstanceMultiNodesSingleMetricInstanceInfos.
+        r"""Gets the node_infos of this ListInstanceMultiNodesSingleMetricInstanceInfos.
 
         节点列表
 
@@ -81,7 +81,7 @@ class ListInstanceMultiNodesSingleMetricInstanceInfos:
 
     @node_infos.setter
     def node_infos(self, node_infos):
-        """Sets the node_infos of this ListInstanceMultiNodesSingleMetricInstanceInfos.
+        r"""Sets the node_infos of this ListInstanceMultiNodesSingleMetricInstanceInfos.
 
         节点列表
 

@@ -27,7 +27,7 @@ class ResourceLimit:
     }
 
     def __init__(self, cpu_limit=None, memory_limit=None):
-        """ResourceLimit
+        r"""ResourceLimit
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceLimit:
 
     @property
     def cpu_limit(self):
-        """Gets the cpu_limit of this ResourceLimit.
+        r"""Gets the cpu_limit of this ResourceLimit.
 
         cpu限额。
 
@@ -59,7 +59,7 @@ class ResourceLimit:
 
     @cpu_limit.setter
     def cpu_limit(self, cpu_limit):
-        """Sets the cpu_limit of this ResourceLimit.
+        r"""Sets the cpu_limit of this ResourceLimit.
 
         cpu限额。
 
@@ -70,7 +70,7 @@ class ResourceLimit:
 
     @property
     def memory_limit(self):
-        """Gets the memory_limit of this ResourceLimit.
+        r"""Gets the memory_limit of this ResourceLimit.
 
         内存限额。
 
@@ -81,7 +81,7 @@ class ResourceLimit:
 
     @memory_limit.setter
     def memory_limit(self, memory_limit):
-        """Sets the memory_limit of this ResourceLimit.
+        r"""Sets the memory_limit of this ResourceLimit.
 
         内存限额。
 

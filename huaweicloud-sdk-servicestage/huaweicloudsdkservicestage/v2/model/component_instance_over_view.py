@@ -53,7 +53,7 @@ class ComponentInstanceOverView:
     }
 
     def __init__(self, instance_id=None, instance_name=None, description=None, environment_id=None, platform_type=None, flavor_id=None, artifacts=None, version=None, configuration=None, creator=None, create_time=None, update_time=None, external_accesses=None, refer_resources=None, status_detail=None):
-        """ComponentInstanceOverView
+        r"""ComponentInstanceOverView
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ComponentInstanceOverView:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ComponentInstanceOverView.
+        r"""Gets the instance_id of this ComponentInstanceOverView.
 
         应用组件实例ID。
 
@@ -152,7 +152,7 @@ class ComponentInstanceOverView:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ComponentInstanceOverView.
+        r"""Sets the instance_id of this ComponentInstanceOverView.
 
         应用组件实例ID。
 
@@ -163,7 +163,7 @@ class ComponentInstanceOverView:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ComponentInstanceOverView.
+        r"""Gets the instance_name of this ComponentInstanceOverView.
 
         应用组件实例名称。
 
@@ -174,7 +174,7 @@ class ComponentInstanceOverView:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ComponentInstanceOverView.
+        r"""Sets the instance_name of this ComponentInstanceOverView.
 
         应用组件实例名称。
 
@@ -185,7 +185,7 @@ class ComponentInstanceOverView:
 
     @property
     def description(self):
-        """Gets the description of this ComponentInstanceOverView.
+        r"""Gets the description of this ComponentInstanceOverView.
 
         实例描述。
 
@@ -196,7 +196,7 @@ class ComponentInstanceOverView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentInstanceOverView.
+        r"""Sets the description of this ComponentInstanceOverView.
 
         实例描述。
 
@@ -207,7 +207,7 @@ class ComponentInstanceOverView:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ComponentInstanceOverView.
+        r"""Gets the environment_id of this ComponentInstanceOverView.
 
         应用组件环境ID。
 
@@ -218,7 +218,7 @@ class ComponentInstanceOverView:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ComponentInstanceOverView.
+        r"""Sets the environment_id of this ComponentInstanceOverView.
 
         应用组件环境ID。
 
@@ -229,7 +229,7 @@ class ComponentInstanceOverView:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this ComponentInstanceOverView.
+        r"""Gets the platform_type of this ComponentInstanceOverView.
 
         :return: The platform_type of this ComponentInstanceOverView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
@@ -238,7 +238,7 @@ class ComponentInstanceOverView:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this ComponentInstanceOverView.
+        r"""Sets the platform_type of this ComponentInstanceOverView.
 
         :param platform_type: The platform_type of this ComponentInstanceOverView.
         :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
@@ -247,7 +247,7 @@ class ComponentInstanceOverView:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ComponentInstanceOverView.
+        r"""Gets the flavor_id of this ComponentInstanceOverView.
 
         :return: The flavor_id of this ComponentInstanceOverView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -256,7 +256,7 @@ class ComponentInstanceOverView:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ComponentInstanceOverView.
+        r"""Sets the flavor_id of this ComponentInstanceOverView.
 
         :param flavor_id: The flavor_id of this ComponentInstanceOverView.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -265,7 +265,7 @@ class ComponentInstanceOverView:
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this ComponentInstanceOverView.
+        r"""Gets the artifacts of this ComponentInstanceOverView.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -276,7 +276,7 @@ class ComponentInstanceOverView:
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this ComponentInstanceOverView.
+        r"""Sets the artifacts of this ComponentInstanceOverView.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -287,7 +287,7 @@ class ComponentInstanceOverView:
 
     @property
     def version(self):
-        """Gets the version of this ComponentInstanceOverView.
+        r"""Gets the version of this ComponentInstanceOverView.
 
         应用组件版本号。
 
@@ -298,7 +298,7 @@ class ComponentInstanceOverView:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentInstanceOverView.
+        r"""Sets the version of this ComponentInstanceOverView.
 
         应用组件版本号。
 
@@ -309,7 +309,7 @@ class ComponentInstanceOverView:
 
     @property
     def configuration(self):
-        """Gets the configuration of this ComponentInstanceOverView.
+        r"""Gets the configuration of this ComponentInstanceOverView.
 
         应用组件配置，如环境变量。
 
@@ -320,7 +320,7 @@ class ComponentInstanceOverView:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ComponentInstanceOverView.
+        r"""Sets the configuration of this ComponentInstanceOverView.
 
         应用组件配置，如环境变量。
 
@@ -331,7 +331,7 @@ class ComponentInstanceOverView:
 
     @property
     def creator(self):
-        """Gets the creator of this ComponentInstanceOverView.
+        r"""Gets the creator of this ComponentInstanceOverView.
 
         创建人。
 
@@ -342,7 +342,7 @@ class ComponentInstanceOverView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ComponentInstanceOverView.
+        r"""Sets the creator of this ComponentInstanceOverView.
 
         创建人。
 
@@ -353,7 +353,7 @@ class ComponentInstanceOverView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ComponentInstanceOverView.
+        r"""Gets the create_time of this ComponentInstanceOverView.
 
         创建时间。
 
@@ -364,7 +364,7 @@ class ComponentInstanceOverView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ComponentInstanceOverView.
+        r"""Sets the create_time of this ComponentInstanceOverView.
 
         创建时间。
 
@@ -375,7 +375,7 @@ class ComponentInstanceOverView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ComponentInstanceOverView.
+        r"""Gets the update_time of this ComponentInstanceOverView.
 
         修改时间。
 
@@ -386,7 +386,7 @@ class ComponentInstanceOverView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ComponentInstanceOverView.
+        r"""Sets the update_time of this ComponentInstanceOverView.
 
         修改时间。
 
@@ -397,7 +397,7 @@ class ComponentInstanceOverView:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this ComponentInstanceOverView.
+        r"""Gets the external_accesses of this ComponentInstanceOverView.
 
         访问方式列表。
 
@@ -408,7 +408,7 @@ class ComponentInstanceOverView:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this ComponentInstanceOverView.
+        r"""Sets the external_accesses of this ComponentInstanceOverView.
 
         访问方式列表。
 
@@ -419,7 +419,7 @@ class ComponentInstanceOverView:
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this ComponentInstanceOverView.
+        r"""Gets the refer_resources of this ComponentInstanceOverView.
 
         部署资源列表。
 
@@ -430,7 +430,7 @@ class ComponentInstanceOverView:
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this ComponentInstanceOverView.
+        r"""Sets the refer_resources of this ComponentInstanceOverView.
 
         部署资源列表。
 
@@ -441,7 +441,7 @@ class ComponentInstanceOverView:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this ComponentInstanceOverView.
+        r"""Gets the status_detail of this ComponentInstanceOverView.
 
         :return: The status_detail of this ComponentInstanceOverView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
@@ -450,7 +450,7 @@ class ComponentInstanceOverView:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this ComponentInstanceOverView.
+        r"""Sets the status_detail of this ComponentInstanceOverView.
 
         :param status_detail: The status_detail of this ComponentInstanceOverView.
         :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`

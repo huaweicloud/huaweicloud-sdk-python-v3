@@ -31,7 +31,7 @@ class AccessoryJsonFormatReq:
     }
 
     def __init__(self, accessory_name=None, accessory_from=None, upload_type=None, accessory_data=None):
-        """AccessoryJsonFormatReq
+        r"""AccessoryJsonFormatReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AccessoryJsonFormatReq:
 
     @property
     def accessory_name(self):
-        """Gets the accessory_name of this AccessoryJsonFormatReq.
+        r"""Gets the accessory_name of this AccessoryJsonFormatReq.
 
         文件名称
 
@@ -72,7 +72,7 @@ class AccessoryJsonFormatReq:
 
     @accessory_name.setter
     def accessory_name(self, accessory_name):
-        """Sets the accessory_name of this AccessoryJsonFormatReq.
+        r"""Sets the accessory_name of this AccessoryJsonFormatReq.
 
         文件名称
 
@@ -83,7 +83,7 @@ class AccessoryJsonFormatReq:
 
     @property
     def accessory_from(self):
-        """Gets the accessory_from of this AccessoryJsonFormatReq.
+        r"""Gets the accessory_from of this AccessoryJsonFormatReq.
 
         文件来源，创建工单附件传incident，留言附件传message
 
@@ -94,7 +94,7 @@ class AccessoryJsonFormatReq:
 
     @accessory_from.setter
     def accessory_from(self, accessory_from):
-        """Sets the accessory_from of this AccessoryJsonFormatReq.
+        r"""Sets the accessory_from of this AccessoryJsonFormatReq.
 
         文件来源，创建工单附件传incident，留言附件传message
 
@@ -105,7 +105,7 @@ class AccessoryJsonFormatReq:
 
     @property
     def upload_type(self):
-        """Gets the upload_type of this AccessoryJsonFormatReq.
+        r"""Gets the upload_type of this AccessoryJsonFormatReq.
 
         上传类型，默认为0，markdown模式为1
 
@@ -116,7 +116,7 @@ class AccessoryJsonFormatReq:
 
     @upload_type.setter
     def upload_type(self, upload_type):
-        """Sets the upload_type of this AccessoryJsonFormatReq.
+        r"""Sets the upload_type of this AccessoryJsonFormatReq.
 
         上传类型，默认为0，markdown模式为1
 
@@ -127,7 +127,7 @@ class AccessoryJsonFormatReq:
 
     @property
     def accessory_data(self):
-        """Gets the accessory_data of this AccessoryJsonFormatReq.
+        r"""Gets the accessory_data of this AccessoryJsonFormatReq.
 
         文件内容，Base64格式
 
@@ -138,7 +138,7 @@ class AccessoryJsonFormatReq:
 
     @accessory_data.setter
     def accessory_data(self, accessory_data):
-        """Sets the accessory_data of this AccessoryJsonFormatReq.
+        r"""Sets the accessory_data of this AccessoryJsonFormatReq.
 
         文件内容，Base64格式
 

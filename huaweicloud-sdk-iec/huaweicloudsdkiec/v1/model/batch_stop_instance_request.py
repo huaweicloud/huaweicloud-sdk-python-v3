@@ -25,7 +25,7 @@ class BatchStopInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStopInstanceRequest
+        r"""BatchStopInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchStopInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStopInstanceRequest.
+        r"""Gets the body of this BatchStopInstanceRequest.
 
         :return: The body of this BatchStopInstanceRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequestBody`
@@ -52,7 +52,7 @@ class BatchStopInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStopInstanceRequest.
+        r"""Sets the body of this BatchStopInstanceRequest.
 
         :param body: The body of this BatchStopInstanceRequest.
         :type body: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequestBody`

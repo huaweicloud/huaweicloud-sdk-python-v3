@@ -25,7 +25,7 @@ class UpgradeCbhRequestBody:
     }
 
     def __init__(self, instance_id=None):
-        """UpgradeCbhRequestBody
+        r"""UpgradeCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpgradeCbhRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeCbhRequestBody.
+        r"""Gets the instance_id of this UpgradeCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式。
 
@@ -53,7 +53,7 @@ class UpgradeCbhRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeCbhRequestBody.
+        r"""Sets the instance_id of this UpgradeCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式。
 

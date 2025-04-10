@@ -30,7 +30,7 @@ class ListNewHostsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, status=None, result=None):
-        """ListNewHostsResponse
+        r"""ListNewHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNewHostsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListNewHostsResponse.
+        r"""Gets the total of this ListNewHostsResponse.
 
         主机数量
 
@@ -69,7 +69,7 @@ class ListNewHostsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListNewHostsResponse.
+        r"""Sets the total of this ListNewHostsResponse.
 
         主机数量
 
@@ -80,7 +80,7 @@ class ListNewHostsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListNewHostsResponse.
+        r"""Gets the status of this ListNewHostsResponse.
 
         请求成功失败状态
 
@@ -91,7 +91,7 @@ class ListNewHostsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNewHostsResponse.
+        r"""Sets the status of this ListNewHostsResponse.
 
         请求成功失败状态
 
@@ -102,7 +102,7 @@ class ListNewHostsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListNewHostsResponse.
+        r"""Gets the result of this ListNewHostsResponse.
 
         主机信息列表
 
@@ -113,7 +113,7 @@ class ListNewHostsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListNewHostsResponse.
+        r"""Sets the result of this ListNewHostsResponse.
 
         主机信息列表
 

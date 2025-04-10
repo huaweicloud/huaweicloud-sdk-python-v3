@@ -60,7 +60,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, title=None, template_name=None, description=None, runtime=None, handler=None, code_type=None, code=None, timeout=None, memory_size=None, trigger_metadata_list=None, temp_detail=None, user_data=None, encrypted_user_data=None, dependencies=None, scene=None, service=None):
-        """ShowFunctionTemplateResponse
+        r"""ShowFunctionTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowFunctionTemplateResponse.
+        r"""Gets the id of this ShowFunctionTemplateResponse.
 
         模板id
 
@@ -174,7 +174,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowFunctionTemplateResponse.
+        r"""Sets the id of this ShowFunctionTemplateResponse.
 
         模板id
 
@@ -185,7 +185,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowFunctionTemplateResponse.
+        r"""Gets the type of this ShowFunctionTemplateResponse.
 
         模板类型
 
@@ -196,7 +196,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowFunctionTemplateResponse.
+        r"""Sets the type of this ShowFunctionTemplateResponse.
 
         模板类型
 
@@ -207,7 +207,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ShowFunctionTemplateResponse.
+        r"""Gets the title of this ShowFunctionTemplateResponse.
 
         模板标题
 
@@ -218,7 +218,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowFunctionTemplateResponse.
+        r"""Sets the title of this ShowFunctionTemplateResponse.
 
         模板标题
 
@@ -229,7 +229,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowFunctionTemplateResponse.
+        r"""Gets the template_name of this ShowFunctionTemplateResponse.
 
         模板名称
 
@@ -240,7 +240,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowFunctionTemplateResponse.
+        r"""Sets the template_name of this ShowFunctionTemplateResponse.
 
         模板名称
 
@@ -251,7 +251,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowFunctionTemplateResponse.
+        r"""Gets the description of this ShowFunctionTemplateResponse.
 
         模板描述
 
@@ -262,7 +262,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowFunctionTemplateResponse.
+        r"""Sets the description of this ShowFunctionTemplateResponse.
 
         模板描述
 
@@ -273,7 +273,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def runtime(self):
-        """Gets the runtime of this ShowFunctionTemplateResponse.
+        r"""Gets the runtime of this ShowFunctionTemplateResponse.
 
         模板执行运行时
 
@@ -284,7 +284,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ShowFunctionTemplateResponse.
+        r"""Sets the runtime of this ShowFunctionTemplateResponse.
 
         模板执行运行时
 
@@ -295,7 +295,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def handler(self):
-        """Gets the handler of this ShowFunctionTemplateResponse.
+        r"""Gets the handler of this ShowFunctionTemplateResponse.
 
         模板函数执行入口
 
@@ -306,7 +306,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this ShowFunctionTemplateResponse.
+        r"""Sets the handler of this ShowFunctionTemplateResponse.
 
         模板函数执行入口
 
@@ -317,7 +317,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def code_type(self):
-        """Gets the code_type of this ShowFunctionTemplateResponse.
+        r"""Gets the code_type of this ShowFunctionTemplateResponse.
 
         代码类型
 
@@ -328,7 +328,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this ShowFunctionTemplateResponse.
+        r"""Sets the code_type of this ShowFunctionTemplateResponse.
 
         代码类型
 
@@ -339,7 +339,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowFunctionTemplateResponse.
+        r"""Gets the code of this ShowFunctionTemplateResponse.
 
         代码文件
 
@@ -350,7 +350,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowFunctionTemplateResponse.
+        r"""Sets the code of this ShowFunctionTemplateResponse.
 
         代码文件
 
@@ -361,7 +361,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this ShowFunctionTemplateResponse.
+        r"""Gets the timeout of this ShowFunctionTemplateResponse.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -372,7 +372,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ShowFunctionTemplateResponse.
+        r"""Sets the timeout of this ShowFunctionTemplateResponse.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -383,7 +383,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def memory_size(self):
-        """Gets the memory_size of this ShowFunctionTemplateResponse.
+        r"""Gets the memory_size of this ShowFunctionTemplateResponse.
 
         内存大小
 
@@ -394,7 +394,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @memory_size.setter
     def memory_size(self, memory_size):
-        """Sets the memory_size of this ShowFunctionTemplateResponse.
+        r"""Sets the memory_size of this ShowFunctionTemplateResponse.
 
         内存大小
 
@@ -405,7 +405,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def trigger_metadata_list(self):
-        """Gets the trigger_metadata_list of this ShowFunctionTemplateResponse.
+        r"""Gets the trigger_metadata_list of this ShowFunctionTemplateResponse.
 
         触发信息列表
 
@@ -416,7 +416,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @trigger_metadata_list.setter
     def trigger_metadata_list(self, trigger_metadata_list):
-        """Sets the trigger_metadata_list of this ShowFunctionTemplateResponse.
+        r"""Sets the trigger_metadata_list of this ShowFunctionTemplateResponse.
 
         触发信息列表
 
@@ -427,7 +427,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def temp_detail(self):
-        """Gets the temp_detail of this ShowFunctionTemplateResponse.
+        r"""Gets the temp_detail of this ShowFunctionTemplateResponse.
 
         :return: The temp_detail of this ShowFunctionTemplateResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TempDetail`
@@ -436,7 +436,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @temp_detail.setter
     def temp_detail(self, temp_detail):
-        """Sets the temp_detail of this ShowFunctionTemplateResponse.
+        r"""Sets the temp_detail of this ShowFunctionTemplateResponse.
 
         :param temp_detail: The temp_detail of this ShowFunctionTemplateResponse.
         :type temp_detail: :class:`huaweicloudsdkfunctiongraph.v2.TempDetail`
@@ -445,7 +445,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def user_data(self):
-        """Gets the user_data of this ShowFunctionTemplateResponse.
+        r"""Gets the user_data of this ShowFunctionTemplateResponse.
 
         用户数据
 
@@ -456,7 +456,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ShowFunctionTemplateResponse.
+        r"""Sets the user_data of this ShowFunctionTemplateResponse.
 
         用户数据
 
@@ -467,7 +467,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def encrypted_user_data(self):
-        """Gets the encrypted_user_data of this ShowFunctionTemplateResponse.
+        r"""Gets the encrypted_user_data of this ShowFunctionTemplateResponse.
 
         加密用户数据
 
@@ -478,7 +478,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @encrypted_user_data.setter
     def encrypted_user_data(self, encrypted_user_data):
-        """Sets the encrypted_user_data of this ShowFunctionTemplateResponse.
+        r"""Sets the encrypted_user_data of this ShowFunctionTemplateResponse.
 
         加密用户数据
 
@@ -489,7 +489,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this ShowFunctionTemplateResponse.
+        r"""Gets the dependencies of this ShowFunctionTemplateResponse.
 
         模板所需依赖列表
 
@@ -500,7 +500,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this ShowFunctionTemplateResponse.
+        r"""Sets the dependencies of this ShowFunctionTemplateResponse.
 
         模板所需依赖列表
 
@@ -511,7 +511,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def scene(self):
-        """Gets the scene of this ShowFunctionTemplateResponse.
+        r"""Gets the scene of this ShowFunctionTemplateResponse.
 
         模板使用场景
 
@@ -522,7 +522,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this ShowFunctionTemplateResponse.
+        r"""Sets the scene of this ShowFunctionTemplateResponse.
 
         模板使用场景
 
@@ -533,7 +533,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @property
     def service(self):
-        """Gets the service of this ShowFunctionTemplateResponse.
+        r"""Gets the service of this ShowFunctionTemplateResponse.
 
         模板关联云服务
 
@@ -544,7 +544,7 @@ class ShowFunctionTemplateResponse(SdkResponse):
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ShowFunctionTemplateResponse.
+        r"""Sets the service of this ShowFunctionTemplateResponse.
 
         模板关联云服务
 

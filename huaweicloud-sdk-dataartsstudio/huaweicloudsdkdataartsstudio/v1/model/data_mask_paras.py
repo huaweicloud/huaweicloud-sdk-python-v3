@@ -35,7 +35,7 @@ class DataMaskParas:
     }
 
     def __init__(self, column_name=None, algorithm_name=None, algorithm_type=None, en_name=None, algorithm_parameters=None, failure_policy=None):
-        """DataMaskParas
+        r"""DataMaskParas
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DataMaskParas:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DataMaskParas.
+        r"""Gets the column_name of this DataMaskParas.
 
         敏感字段。
 
@@ -89,7 +89,7 @@ class DataMaskParas:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DataMaskParas.
+        r"""Sets the column_name of this DataMaskParas.
 
         敏感字段。
 
@@ -100,7 +100,7 @@ class DataMaskParas:
 
     @property
     def algorithm_name(self):
-        """Gets the algorithm_name of this DataMaskParas.
+        r"""Gets the algorithm_name of this DataMaskParas.
 
         算法名称。
 
@@ -111,7 +111,7 @@ class DataMaskParas:
 
     @algorithm_name.setter
     def algorithm_name(self, algorithm_name):
-        """Sets the algorithm_name of this DataMaskParas.
+        r"""Sets the algorithm_name of this DataMaskParas.
 
         算法名称。
 
@@ -122,7 +122,7 @@ class DataMaskParas:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this DataMaskParas.
+        r"""Gets the algorithm_type of this DataMaskParas.
 
         算法类型。
 
@@ -133,7 +133,7 @@ class DataMaskParas:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this DataMaskParas.
+        r"""Sets the algorithm_type of this DataMaskParas.
 
         算法类型。
 
@@ -144,7 +144,7 @@ class DataMaskParas:
 
     @property
     def en_name(self):
-        """Gets the en_name of this DataMaskParas.
+        r"""Gets the en_name of this DataMaskParas.
 
         算法名称。
 
@@ -155,7 +155,7 @@ class DataMaskParas:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this DataMaskParas.
+        r"""Sets the en_name of this DataMaskParas.
 
         算法名称。
 
@@ -166,7 +166,7 @@ class DataMaskParas:
 
     @property
     def algorithm_parameters(self):
-        """Gets the algorithm_parameters of this DataMaskParas.
+        r"""Gets the algorithm_parameters of this DataMaskParas.
 
         参数。
 
@@ -177,7 +177,7 @@ class DataMaskParas:
 
     @algorithm_parameters.setter
     def algorithm_parameters(self, algorithm_parameters):
-        """Sets the algorithm_parameters of this DataMaskParas.
+        r"""Sets the algorithm_parameters of this DataMaskParas.
 
         参数。
 
@@ -188,7 +188,7 @@ class DataMaskParas:
 
     @property
     def failure_policy(self):
-        """Gets the failure_policy of this DataMaskParas.
+        r"""Gets the failure_policy of this DataMaskParas.
 
         :return: The failure_policy of this DataMaskParas.
         :rtype: str
@@ -197,7 +197,7 @@ class DataMaskParas:
 
     @failure_policy.setter
     def failure_policy(self, failure_policy):
-        """Sets the failure_policy of this DataMaskParas.
+        r"""Sets the failure_policy of this DataMaskParas.
 
         :param failure_policy: The failure_policy of this DataMaskParas.
         :type failure_policy: str

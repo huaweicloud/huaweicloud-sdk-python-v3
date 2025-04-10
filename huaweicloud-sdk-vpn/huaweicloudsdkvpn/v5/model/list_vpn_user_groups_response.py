@@ -32,7 +32,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
     }
 
     def __init__(self, user_groups=None, total_count=None, page_info=None, request_id=None):
-        """ListVpnUserGroupsResponse
+        r"""ListVpnUserGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @property
     def user_groups(self):
-        """Gets the user_groups of this ListVpnUserGroupsResponse.
+        r"""Gets the user_groups of this ListVpnUserGroupsResponse.
 
         用户组列表信息
 
@@ -76,7 +76,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @user_groups.setter
     def user_groups(self, user_groups):
-        """Sets the user_groups of this ListVpnUserGroupsResponse.
+        r"""Sets the user_groups of this ListVpnUserGroupsResponse.
 
         用户组列表信息
 
@@ -87,7 +87,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListVpnUserGroupsResponse.
+        r"""Gets the total_count of this ListVpnUserGroupsResponse.
 
         总数
 
@@ -98,7 +98,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListVpnUserGroupsResponse.
+        r"""Sets the total_count of this ListVpnUserGroupsResponse.
 
         总数
 
@@ -109,7 +109,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpnUserGroupsResponse.
+        r"""Gets the page_info of this ListVpnUserGroupsResponse.
 
         :return: The page_info of this ListVpnUserGroupsResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -118,7 +118,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpnUserGroupsResponse.
+        r"""Sets the page_info of this ListVpnUserGroupsResponse.
 
         :param page_info: The page_info of this ListVpnUserGroupsResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -127,7 +127,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpnUserGroupsResponse.
+        r"""Gets the request_id of this ListVpnUserGroupsResponse.
 
         请求ID
 
@@ -138,7 +138,7 @@ class ListVpnUserGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpnUserGroupsResponse.
+        r"""Sets the request_id of this ListVpnUserGroupsResponse.
 
         请求ID
 

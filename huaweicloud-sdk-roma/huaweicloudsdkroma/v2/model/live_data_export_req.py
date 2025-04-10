@@ -31,7 +31,7 @@ class LiveDataExportReq:
     }
 
     def __init__(self, app_id=None, format=None, apis=None, status=None):
-        """LiveDataExportReq
+        r"""LiveDataExportReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LiveDataExportReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this LiveDataExportReq.
+        r"""Gets the app_id of this LiveDataExportReq.
 
         API所属的应用ID
 
@@ -75,7 +75,7 @@ class LiveDataExportReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this LiveDataExportReq.
+        r"""Sets the app_id of this LiveDataExportReq.
 
         API所属的应用ID
 
@@ -86,7 +86,7 @@ class LiveDataExportReq:
 
     @property
     def format(self):
-        """Gets the format of this LiveDataExportReq.
+        r"""Gets the format of this LiveDataExportReq.
 
         导出的API定义的格式
 
@@ -97,7 +97,7 @@ class LiveDataExportReq:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this LiveDataExportReq.
+        r"""Sets the format of this LiveDataExportReq.
 
         导出的API定义的格式
 
@@ -108,7 +108,7 @@ class LiveDataExportReq:
 
     @property
     def apis(self):
-        """Gets the apis of this LiveDataExportReq.
+        r"""Gets the apis of this LiveDataExportReq.
 
         导出的自定义后端API ID列表
 
@@ -119,7 +119,7 @@ class LiveDataExportReq:
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this LiveDataExportReq.
+        r"""Sets the apis of this LiveDataExportReq.
 
         导出的自定义后端API ID列表
 
@@ -130,7 +130,7 @@ class LiveDataExportReq:
 
     @property
     def status(self):
-        """Gets the status of this LiveDataExportReq.
+        r"""Gets the status of this LiveDataExportReq.
 
         导出的后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
 
@@ -141,7 +141,7 @@ class LiveDataExportReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LiveDataExportReq.
+        r"""Sets the status of this LiveDataExportReq.
 
         导出的后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
 

@@ -27,7 +27,7 @@ class CreateNotebookRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateNotebookRequest
+        r"""CreateNotebookRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateNotebookRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateNotebookRequest.
+        r"""Gets the eihealth_project_id of this CreateNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateNotebookRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateNotebookRequest.
+        r"""Sets the eihealth_project_id of this CreateNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateNotebookRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNotebookRequest.
+        r"""Gets the body of this CreateNotebookRequest.
 
         :return: The body of this CreateNotebookRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNotebookReq`
@@ -80,7 +80,7 @@ class CreateNotebookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNotebookRequest.
+        r"""Sets the body of this CreateNotebookRequest.
 
         :param body: The body of this CreateNotebookRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateNotebookReq`

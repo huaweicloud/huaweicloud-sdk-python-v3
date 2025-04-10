@@ -33,7 +33,7 @@ class AddressSetDetailResponseDTOData:
     }
 
     def __init__(self, id=None, name=None, description=None, address_set_type=None, address_type=None):
-        """AddressSetDetailResponseDTOData
+        r"""AddressSetDetailResponseDTOData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AddressSetDetailResponseDTOData:
 
     @property
     def id(self):
-        """Gets the id of this AddressSetDetailResponseDTOData.
+        r"""Gets the id of this AddressSetDetailResponseDTOData.
 
         地址组id
 
@@ -82,7 +82,7 @@ class AddressSetDetailResponseDTOData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddressSetDetailResponseDTOData.
+        r"""Sets the id of this AddressSetDetailResponseDTOData.
 
         地址组id
 
@@ -93,7 +93,7 @@ class AddressSetDetailResponseDTOData:
 
     @property
     def name(self):
-        """Gets the name of this AddressSetDetailResponseDTOData.
+        r"""Gets the name of this AddressSetDetailResponseDTOData.
 
         地址组名称
 
@@ -104,7 +104,7 @@ class AddressSetDetailResponseDTOData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddressSetDetailResponseDTOData.
+        r"""Sets the name of this AddressSetDetailResponseDTOData.
 
         地址组名称
 
@@ -115,7 +115,7 @@ class AddressSetDetailResponseDTOData:
 
     @property
     def description(self):
-        """Gets the description of this AddressSetDetailResponseDTOData.
+        r"""Gets the description of this AddressSetDetailResponseDTOData.
 
         地址组描述
 
@@ -126,7 +126,7 @@ class AddressSetDetailResponseDTOData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddressSetDetailResponseDTOData.
+        r"""Sets the description of this AddressSetDetailResponseDTOData.
 
         地址组描述
 
@@ -137,7 +137,7 @@ class AddressSetDetailResponseDTOData:
 
     @property
     def address_set_type(self):
-        """Gets the address_set_type of this AddressSetDetailResponseDTOData.
+        r"""Gets the address_set_type of this AddressSetDetailResponseDTOData.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -148,7 +148,7 @@ class AddressSetDetailResponseDTOData:
 
     @address_set_type.setter
     def address_set_type(self, address_set_type):
-        """Sets the address_set_type of this AddressSetDetailResponseDTOData.
+        r"""Sets the address_set_type of this AddressSetDetailResponseDTOData.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -159,7 +159,7 @@ class AddressSetDetailResponseDTOData:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddressSetDetailResponseDTOData.
+        r"""Gets the address_type of this AddressSetDetailResponseDTOData.
 
         地址类型0 ipv4，1 ipv6
 
@@ -170,7 +170,7 @@ class AddressSetDetailResponseDTOData:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddressSetDetailResponseDTOData.
+        r"""Sets the address_type of this AddressSetDetailResponseDTOData.
 
         地址类型0 ipv4，1 ipv6
 

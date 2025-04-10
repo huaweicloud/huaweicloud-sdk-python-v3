@@ -25,7 +25,7 @@ class Service:
     }
 
     def __init__(self, service=None):
-        """Service
+        r"""Service
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Service:
 
     @property
     def service(self):
-        """Gets the service of this Service.
+        r"""Gets the service of this Service.
 
         :return: The service of this Service.
         :rtype: :class:`huaweicloudsdkief.v1.ServiceReqDetail`
@@ -52,7 +52,7 @@ class Service:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this Service.
+        r"""Sets the service of this Service.
 
         :param service: The service of this Service.
         :type service: :class:`huaweicloudsdkief.v1.ServiceReqDetail`

@@ -33,7 +33,7 @@ class SubscriptionSource:
     }
 
     def __init__(self, id=None, name=None, provider_type=None, detail=None, filter=None):
-        """SubscriptionSource
+        r"""SubscriptionSource
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class SubscriptionSource:
 
     @property
     def id(self):
-        """Gets the id of this SubscriptionSource.
+        r"""Gets the id of this SubscriptionSource.
 
         订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。由小写字母、数字、中划线组成，必须字母或数字开头。
 
@@ -79,7 +79,7 @@ class SubscriptionSource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubscriptionSource.
+        r"""Sets the id of this SubscriptionSource.
 
         订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。由小写字母、数字、中划线组成，必须字母或数字开头。
 
@@ -90,7 +90,7 @@ class SubscriptionSource:
 
     @property
     def name(self):
-        """Gets the name of this SubscriptionSource.
+        r"""Gets the name of this SubscriptionSource.
 
         订阅的事件源名称
 
@@ -101,7 +101,7 @@ class SubscriptionSource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubscriptionSource.
+        r"""Sets the name of this SubscriptionSource.
 
         订阅的事件源名称
 
@@ -112,7 +112,7 @@ class SubscriptionSource:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this SubscriptionSource.
+        r"""Gets the provider_type of this SubscriptionSource.
 
         订阅的事件源的提供方类型
 
@@ -123,7 +123,7 @@ class SubscriptionSource:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this SubscriptionSource.
+        r"""Sets the provider_type of this SubscriptionSource.
 
         订阅的事件源的提供方类型
 
@@ -134,7 +134,7 @@ class SubscriptionSource:
 
     @property
     def detail(self):
-        """Gets the detail of this SubscriptionSource.
+        r"""Gets the detail of this SubscriptionSource.
 
         订阅的事件源参数列表, 该字段序列化后总长度不超过1024字节
 
@@ -145,7 +145,7 @@ class SubscriptionSource:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SubscriptionSource.
+        r"""Sets the detail of this SubscriptionSource.
 
         订阅的事件源参数列表, 该字段序列化后总长度不超过1024字节
 
@@ -156,7 +156,7 @@ class SubscriptionSource:
 
     @property
     def filter(self):
-        """Gets the filter of this SubscriptionSource.
+        r"""Gets the filter of this SubscriptionSource.
 
         订阅事件源的匹配过滤规则, 该字段序列化后总长度不超过2048字节
 
@@ -167,7 +167,7 @@ class SubscriptionSource:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this SubscriptionSource.
+        r"""Sets the filter of this SubscriptionSource.
 
         订阅事件源的匹配过滤规则, 该字段序列化后总长度不超过2048字节
 

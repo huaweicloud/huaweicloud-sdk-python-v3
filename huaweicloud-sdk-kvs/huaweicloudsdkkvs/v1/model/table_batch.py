@@ -27,7 +27,7 @@ class TableBatch:
     }
 
     def __init__(self, table_name=None, kv_opers=None):
-        """TableBatch
+        r"""TableBatch
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TableBatch:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TableBatch.
+        r"""Gets the table_name of this TableBatch.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -59,7 +59,7 @@ class TableBatch:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TableBatch.
+        r"""Sets the table_name of this TableBatch.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -70,7 +70,7 @@ class TableBatch:
 
     @property
     def kv_opers(self):
-        """Gets the kv_opers of this TableBatch.
+        r"""Gets the kv_opers of this TableBatch.
 
         kv操作数组。
 
@@ -81,7 +81,7 @@ class TableBatch:
 
     @kv_opers.setter
     def kv_opers(self, kv_opers):
-        """Sets the kv_opers of this TableBatch.
+        r"""Sets the kv_opers of this TableBatch.
 
         kv操作数组。
 

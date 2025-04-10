@@ -29,7 +29,7 @@ class CreateResourceTagRequest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, body=None):
-        """CreateResourceTagRequest
+        r"""CreateResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateResourceTagRequest.
+        r"""Gets the resource_id of this CreateResourceTagRequest.
 
         资源ID
 
@@ -66,7 +66,7 @@ class CreateResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateResourceTagRequest.
+        r"""Sets the resource_id of this CreateResourceTagRequest.
 
         资源ID
 
@@ -77,7 +77,7 @@ class CreateResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateResourceTagRequest.
+        r"""Gets the resource_type of this CreateResourceTagRequest.
 
         标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
 
@@ -88,7 +88,7 @@ class CreateResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateResourceTagRequest.
+        r"""Sets the resource_type of this CreateResourceTagRequest.
 
         标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
 
@@ -99,7 +99,7 @@ class CreateResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceTagRequest.
+        r"""Gets the body of this CreateResourceTagRequest.
 
         :return: The body of this CreateResourceTagRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateResourceTagRequestBody`
@@ -108,7 +108,7 @@ class CreateResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceTagRequest.
+        r"""Sets the body of this CreateResourceTagRequest.
 
         :param body: The body of this CreateResourceTagRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateResourceTagRequestBody`

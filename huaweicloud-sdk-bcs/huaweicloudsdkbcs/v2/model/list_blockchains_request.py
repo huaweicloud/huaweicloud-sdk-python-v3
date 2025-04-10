@@ -23,7 +23,7 @@ class ListBlockchainsRequest:
     }
 
     def __init__(self):
-        """ListBlockchainsRequest
+        r"""ListBlockchainsRequest
 
         The model defined in huaweicloud sdk
 

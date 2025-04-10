@@ -28,7 +28,7 @@ class ListNodeTypesResponse(SdkResponse):
     }
 
     def __init__(self, node_types=None, count=None):
-        """ListNodeTypesResponse
+        r"""ListNodeTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNodeTypesResponse(SdkResponse):
 
     @property
     def node_types(self):
-        """Gets the node_types of this ListNodeTypesResponse.
+        r"""Gets the node_types of this ListNodeTypesResponse.
 
         节点类型对象列表。
 
@@ -62,7 +62,7 @@ class ListNodeTypesResponse(SdkResponse):
 
     @node_types.setter
     def node_types(self, node_types):
-        """Sets the node_types of this ListNodeTypesResponse.
+        r"""Sets the node_types of this ListNodeTypesResponse.
 
         节点类型对象列表。
 
@@ -73,7 +73,7 @@ class ListNodeTypesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNodeTypesResponse.
+        r"""Gets the count of this ListNodeTypesResponse.
 
         节点类型总数
 
@@ -84,7 +84,7 @@ class ListNodeTypesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNodeTypesResponse.
+        r"""Sets the count of this ListNodeTypesResponse.
 
         节点类型总数
 

@@ -27,7 +27,7 @@ class TmsTag:
     }
 
     def __init__(self, key=None, value=None):
-        """TmsTag
+        r"""TmsTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TmsTag:
 
     @property
     def key(self):
-        """Gets the key of this TmsTag.
+        r"""Gets the key of this TmsTag.
 
         键。最大长度128个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @ 2. 两头不能有空白字符
 
@@ -60,7 +60,7 @@ class TmsTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TmsTag.
+        r"""Sets the key of this TmsTag.
 
         键。最大长度128个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @ 2. 两头不能有空白字符
 
@@ -71,7 +71,7 @@ class TmsTag:
 
     @property
     def value(self):
-        """Gets the value of this TmsTag.
+        r"""Gets the value of this TmsTag.
 
         值。每个值最大长度255个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -82,7 +82,7 @@ class TmsTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TmsTag.
+        r"""Sets the value of this TmsTag.
 
         值。每个值最大长度255个unicode字符。 1. 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 

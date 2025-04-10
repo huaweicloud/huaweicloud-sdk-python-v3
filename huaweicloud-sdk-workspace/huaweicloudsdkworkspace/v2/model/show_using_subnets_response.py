@@ -26,7 +26,7 @@ class ShowUsingSubnetsResponse(SdkResponse):
     }
 
     def __init__(self, subnet_ids=None):
-        """ShowUsingSubnetsResponse
+        r"""ShowUsingSubnetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowUsingSubnetsResponse(SdkResponse):
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this ShowUsingSubnetsResponse.
+        r"""Gets the subnet_ids of this ShowUsingSubnetsResponse.
 
         正在被桌面使用的子网ids。
 
@@ -55,7 +55,7 @@ class ShowUsingSubnetsResponse(SdkResponse):
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this ShowUsingSubnetsResponse.
+        r"""Sets the subnet_ids of this ShowUsingSubnetsResponse.
 
         正在被桌面使用的子网ids。
 

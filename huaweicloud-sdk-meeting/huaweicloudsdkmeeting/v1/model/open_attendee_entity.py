@@ -39,7 +39,7 @@ class OpenAttendeeEntity:
     }
 
     def __init__(self, app_id=None, user_account=None, user_name=None, dept_name=None, phone=None, email=None, sms=None, is_hard_terminal=None):
-        """OpenAttendeeEntity
+        r"""OpenAttendeeEntity
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class OpenAttendeeEntity:
 
     @property
     def app_id(self):
-        """Gets the app_id of this OpenAttendeeEntity.
+        r"""Gets the app_id of this OpenAttendeeEntity.
 
         App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
@@ -102,7 +102,7 @@ class OpenAttendeeEntity:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this OpenAttendeeEntity.
+        r"""Sets the app_id of this OpenAttendeeEntity.
 
         App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
@@ -113,7 +113,7 @@ class OpenAttendeeEntity:
 
     @property
     def user_account(self):
-        """Gets the user_account of this OpenAttendeeEntity.
+        r"""Gets the user_account of this OpenAttendeeEntity.
 
         嘉宾的帐号。 * 如果是帐号/密码鉴权场景: 选填，表示华为云会议帐号ID * 如果是APP ID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId 
 
@@ -124,7 +124,7 @@ class OpenAttendeeEntity:
 
     @user_account.setter
     def user_account(self, user_account):
-        """Sets the user_account of this OpenAttendeeEntity.
+        r"""Sets the user_account of this OpenAttendeeEntity.
 
         嘉宾的帐号。 * 如果是帐号/密码鉴权场景: 选填，表示华为云会议帐号ID * 如果是APP ID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId 
 
@@ -135,7 +135,7 @@ class OpenAttendeeEntity:
 
     @property
     def user_name(self):
-        """Gets the user_name of this OpenAttendeeEntity.
+        r"""Gets the user_name of this OpenAttendeeEntity.
 
         嘉宾的名称。长度限制为96个字符。
 
@@ -146,7 +146,7 @@ class OpenAttendeeEntity:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this OpenAttendeeEntity.
+        r"""Sets the user_name of this OpenAttendeeEntity.
 
         嘉宾的名称。长度限制为96个字符。
 
@@ -157,7 +157,7 @@ class OpenAttendeeEntity:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this OpenAttendeeEntity.
+        r"""Gets the dept_name of this OpenAttendeeEntity.
 
         部门名称，最大128字符。
 
@@ -168,7 +168,7 @@ class OpenAttendeeEntity:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this OpenAttendeeEntity.
+        r"""Sets the dept_name of this OpenAttendeeEntity.
 
         部门名称，最大128字符。
 
@@ -179,7 +179,7 @@ class OpenAttendeeEntity:
 
     @property
     def phone(self):
-        """Gets the phone of this OpenAttendeeEntity.
+        r"""Gets the phone of this OpenAttendeeEntity.
 
         号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
@@ -190,7 +190,7 @@ class OpenAttendeeEntity:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this OpenAttendeeEntity.
+        r"""Sets the phone of this OpenAttendeeEntity.
 
         号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
@@ -201,7 +201,7 @@ class OpenAttendeeEntity:
 
     @property
     def email(self):
-        """Gets the email of this OpenAttendeeEntity.
+        r"""Gets the email of this OpenAttendeeEntity.
 
         邮件地址。需要发邮件通知时填写。
 
@@ -212,7 +212,7 @@ class OpenAttendeeEntity:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this OpenAttendeeEntity.
+        r"""Sets the email of this OpenAttendeeEntity.
 
         邮件地址。需要发邮件通知时填写。
 
@@ -223,7 +223,7 @@ class OpenAttendeeEntity:
 
     @property
     def sms(self):
-        """Gets the sms of this OpenAttendeeEntity.
+        r"""Gets the sms of this OpenAttendeeEntity.
 
         短信通知的手机号码。需要发短信通知时填写。
 
@@ -234,7 +234,7 @@ class OpenAttendeeEntity:
 
     @sms.setter
     def sms(self, sms):
-        """Sets the sms of this OpenAttendeeEntity.
+        r"""Sets the sms of this OpenAttendeeEntity.
 
         短信通知的手机号码。需要发短信通知时填写。
 
@@ -245,7 +245,7 @@ class OpenAttendeeEntity:
 
     @property
     def is_hard_terminal(self):
-        """Gets the is_hard_terminal of this OpenAttendeeEntity.
+        r"""Gets the is_hard_terminal of this OpenAttendeeEntity.
 
         是否硬终端（会议室或硬终端）。
 
@@ -256,7 +256,7 @@ class OpenAttendeeEntity:
 
     @is_hard_terminal.setter
     def is_hard_terminal(self, is_hard_terminal):
-        """Sets the is_hard_terminal of this OpenAttendeeEntity.
+        r"""Sets the is_hard_terminal of this OpenAttendeeEntity.
 
         是否硬终端（会议室或硬终端）。
 

@@ -28,7 +28,7 @@ class ListKeypairsResponse(SdkResponse):
     }
 
     def __init__(self, keypairs=None, page_info=None):
-        """ListKeypairsResponse
+        r"""ListKeypairsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListKeypairsResponse(SdkResponse):
 
     @property
     def keypairs(self):
-        """Gets the keypairs of this ListKeypairsResponse.
+        r"""Gets the keypairs of this ListKeypairsResponse.
 
         SSH密钥对信息列表
 
@@ -62,7 +62,7 @@ class ListKeypairsResponse(SdkResponse):
 
     @keypairs.setter
     def keypairs(self, keypairs):
-        """Sets the keypairs of this ListKeypairsResponse.
+        r"""Sets the keypairs of this ListKeypairsResponse.
 
         SSH密钥对信息列表
 
@@ -73,7 +73,7 @@ class ListKeypairsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListKeypairsResponse.
+        r"""Gets the page_info of this ListKeypairsResponse.
 
         :return: The page_info of this ListKeypairsResponse.
         :rtype: :class:`huaweicloudsdkkps.v3.PageInfo`
@@ -82,7 +82,7 @@ class ListKeypairsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListKeypairsResponse.
+        r"""Sets the page_info of this ListKeypairsResponse.
 
         :param page_info: The page_info of this ListKeypairsResponse.
         :type page_info: :class:`huaweicloudsdkkps.v3.PageInfo`

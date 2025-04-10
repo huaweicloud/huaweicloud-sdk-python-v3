@@ -27,7 +27,7 @@ class Endpoints:
     }
 
     def __init__(self, connect_info=None, jdbc_url=None):
-        """Endpoints
+        r"""Endpoints
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Endpoints:
 
     @property
     def connect_info(self):
-        """Gets the connect_info of this Endpoints.
+        r"""Gets the connect_info of this Endpoints.
 
         内网连接信息。
 
@@ -61,7 +61,7 @@ class Endpoints:
 
     @connect_info.setter
     def connect_info(self, connect_info):
-        """Sets the connect_info of this Endpoints.
+        r"""Sets the connect_info of this Endpoints.
 
         内网连接信息。
 
@@ -72,7 +72,7 @@ class Endpoints:
 
     @property
     def jdbc_url(self):
-        """Gets the jdbc_url of this Endpoints.
+        r"""Gets the jdbc_url of this Endpoints.
 
         内网JDBC URL，默认格式如下： jdbc:postgresql://<connect_info>/<YOUR_DATABASE_NAME>
 
@@ -83,7 +83,7 @@ class Endpoints:
 
     @jdbc_url.setter
     def jdbc_url(self, jdbc_url):
-        """Sets the jdbc_url of this Endpoints.
+        r"""Sets the jdbc_url of this Endpoints.
 
         内网JDBC URL，默认格式如下： jdbc:postgresql://<connect_info>/<YOUR_DATABASE_NAME>
 

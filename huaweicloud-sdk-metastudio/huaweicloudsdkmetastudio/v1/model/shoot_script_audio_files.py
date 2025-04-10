@@ -25,7 +25,7 @@ class ShootScriptAudioFiles:
     }
 
     def __init__(self, audio_file_url=None):
-        """ShootScriptAudioFiles
+        r"""ShootScriptAudioFiles
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShootScriptAudioFiles:
 
     @property
     def audio_file_url(self):
-        """Gets the audio_file_url of this ShootScriptAudioFiles.
+        r"""Gets the audio_file_url of this ShootScriptAudioFiles.
 
         用于语音驱动的音频文件上传URL。
 
@@ -54,7 +54,7 @@ class ShootScriptAudioFiles:
 
     @audio_file_url.setter
     def audio_file_url(self, audio_file_url):
-        """Sets the audio_file_url of this ShootScriptAudioFiles.
+        r"""Sets the audio_file_url of this ShootScriptAudioFiles.
 
         用于语音驱动的音频文件上传URL。
 

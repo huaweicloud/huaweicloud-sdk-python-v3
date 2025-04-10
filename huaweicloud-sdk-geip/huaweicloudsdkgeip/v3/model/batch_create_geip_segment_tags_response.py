@@ -26,7 +26,7 @@ class BatchCreateGeipSegmentTagsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """BatchCreateGeipSegmentTagsResponse
+        r"""BatchCreateGeipSegmentTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateGeipSegmentTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchCreateGeipSegmentTagsResponse.
+        r"""Gets the x_request_id of this BatchCreateGeipSegmentTagsResponse.
 
         :return: The x_request_id of this BatchCreateGeipSegmentTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchCreateGeipSegmentTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchCreateGeipSegmentTagsResponse.
+        r"""Sets the x_request_id of this BatchCreateGeipSegmentTagsResponse.
 
         :param x_request_id: The x_request_id of this BatchCreateGeipSegmentTagsResponse.
         :type x_request_id: str

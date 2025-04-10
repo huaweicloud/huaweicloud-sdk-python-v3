@@ -25,7 +25,7 @@ class AddSnapshotCrossRegionPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """AddSnapshotCrossRegionPolicyRequest
+        r"""AddSnapshotCrossRegionPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddSnapshotCrossRegionPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSnapshotCrossRegionPolicyRequest.
+        r"""Gets the body of this AddSnapshotCrossRegionPolicyRequest.
 
         :return: The body of this AddSnapshotCrossRegionPolicyRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.AddSnapshotCrossRegionPolicyRequestBody`
@@ -52,7 +52,7 @@ class AddSnapshotCrossRegionPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSnapshotCrossRegionPolicyRequest.
+        r"""Sets the body of this AddSnapshotCrossRegionPolicyRequest.
 
         :param body: The body of this AddSnapshotCrossRegionPolicyRequest.
         :type body: :class:`huaweicloudsdkdws.v2.AddSnapshotCrossRegionPolicyRequestBody`

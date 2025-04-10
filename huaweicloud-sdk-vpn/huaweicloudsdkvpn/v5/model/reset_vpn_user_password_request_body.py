@@ -26,7 +26,7 @@ class ResetVpnUserPasswordRequestBody:
     }
 
     def __init__(self, new_password=None):
-        """ResetVpnUserPasswordRequestBody
+        r"""ResetVpnUserPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetVpnUserPasswordRequestBody:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ResetVpnUserPasswordRequestBody.
+        r"""Gets the new_password of this ResetVpnUserPasswordRequestBody.
 
         用户新密码
 
@@ -54,7 +54,7 @@ class ResetVpnUserPasswordRequestBody:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ResetVpnUserPasswordRequestBody.
+        r"""Sets the new_password of this ResetVpnUserPasswordRequestBody.
 
         用户新密码
 

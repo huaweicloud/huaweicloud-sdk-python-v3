@@ -25,7 +25,7 @@ class EngineCreateReqResourceParams:
     }
 
     def __init__(self, is_auto_renew=None):
-        """EngineCreateReqResourceParams
+        r"""EngineCreateReqResourceParams
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EngineCreateReqResourceParams:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this EngineCreateReqResourceParams.
+        r"""Gets the is_auto_renew of this EngineCreateReqResourceParams.
 
         是否自动刷新
 
@@ -54,7 +54,7 @@ class EngineCreateReqResourceParams:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this EngineCreateReqResourceParams.
+        r"""Sets the is_auto_renew of this EngineCreateReqResourceParams.
 
         是否自动刷新
 

@@ -47,7 +47,7 @@ class UpdateRobotReq:
     }
 
     def __init__(self, name=None, app_type=None, room_id=None, robot_type=None, language=None, tail_silence_time=None, enable_question_audit=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
-        """UpdateRobotReq
+        r"""UpdateRobotReq
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class UpdateRobotReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRobotReq.
+        r"""Gets the name of this UpdateRobotReq.
 
         应用名称。
 
@@ -131,7 +131,7 @@ class UpdateRobotReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRobotReq.
+        r"""Sets the name of this UpdateRobotReq.
 
         应用名称。
 
@@ -142,7 +142,7 @@ class UpdateRobotReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this UpdateRobotReq.
+        r"""Gets the app_type of this UpdateRobotReq.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
@@ -153,7 +153,7 @@ class UpdateRobotReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this UpdateRobotReq.
+        r"""Sets the app_type of this UpdateRobotReq.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
@@ -164,7 +164,7 @@ class UpdateRobotReq:
 
     @property
     def room_id(self):
-        """Gets the room_id of this UpdateRobotReq.
+        r"""Gets the room_id of this UpdateRobotReq.
 
         智能交互对话房间ID。
 
@@ -175,7 +175,7 @@ class UpdateRobotReq:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this UpdateRobotReq.
+        r"""Sets the room_id of this UpdateRobotReq.
 
         智能交互对话房间ID。
 
@@ -186,7 +186,7 @@ class UpdateRobotReq:
 
     @property
     def robot_type(self):
-        """Gets the robot_type of this UpdateRobotReq.
+        r"""Gets the robot_type of this UpdateRobotReq.
 
         :return: The robot_type of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
@@ -195,7 +195,7 @@ class UpdateRobotReq:
 
     @robot_type.setter
     def robot_type(self, robot_type):
-        """Sets the robot_type of this UpdateRobotReq.
+        r"""Sets the robot_type of this UpdateRobotReq.
 
         :param robot_type: The robot_type of this UpdateRobotReq.
         :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
@@ -204,7 +204,7 @@ class UpdateRobotReq:
 
     @property
     def language(self):
-        """Gets the language of this UpdateRobotReq.
+        r"""Gets the language of this UpdateRobotReq.
 
         :return: The language of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -213,7 +213,7 @@ class UpdateRobotReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateRobotReq.
+        r"""Sets the language of this UpdateRobotReq.
 
         :param language: The language of this UpdateRobotReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -222,7 +222,7 @@ class UpdateRobotReq:
 
     @property
     def tail_silence_time(self):
-        """Gets the tail_silence_time of this UpdateRobotReq.
+        r"""Gets the tail_silence_time of this UpdateRobotReq.
 
         语音识别后端点静音时长默认500ms
 
@@ -233,7 +233,7 @@ class UpdateRobotReq:
 
     @tail_silence_time.setter
     def tail_silence_time(self, tail_silence_time):
-        """Sets the tail_silence_time of this UpdateRobotReq.
+        r"""Sets the tail_silence_time of this UpdateRobotReq.
 
         语音识别后端点静音时长默认500ms
 
@@ -244,7 +244,7 @@ class UpdateRobotReq:
 
     @property
     def enable_question_audit(self):
-        """Gets the enable_question_audit of this UpdateRobotReq.
+        r"""Gets the enable_question_audit of this UpdateRobotReq.
 
         提问文本审核开关
 
@@ -255,7 +255,7 @@ class UpdateRobotReq:
 
     @enable_question_audit.setter
     def enable_question_audit(self, enable_question_audit):
-        """Sets the enable_question_audit of this UpdateRobotReq.
+        r"""Sets the enable_question_audit of this UpdateRobotReq.
 
         提问文本审核开关
 
@@ -266,7 +266,7 @@ class UpdateRobotReq:
 
     @property
     def huawei_ei_cbs(self):
-        """Gets the huawei_ei_cbs of this UpdateRobotReq.
+        r"""Gets the huawei_ei_cbs of this UpdateRobotReq.
 
         :return: The huawei_ei_cbs of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -275,7 +275,7 @@ class UpdateRobotReq:
 
     @huawei_ei_cbs.setter
     def huawei_ei_cbs(self, huawei_ei_cbs):
-        """Sets the huawei_ei_cbs of this UpdateRobotReq.
+        r"""Sets the huawei_ei_cbs of this UpdateRobotReq.
 
         :param huawei_ei_cbs: The huawei_ei_cbs of this UpdateRobotReq.
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -284,7 +284,7 @@ class UpdateRobotReq:
 
     @property
     def iflytek_aiui_config(self):
-        """Gets the iflytek_aiui_config of this UpdateRobotReq.
+        r"""Gets the iflytek_aiui_config of this UpdateRobotReq.
 
         :return: The iflytek_aiui_config of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
@@ -293,7 +293,7 @@ class UpdateRobotReq:
 
     @iflytek_aiui_config.setter
     def iflytek_aiui_config(self, iflytek_aiui_config):
-        """Sets the iflytek_aiui_config of this UpdateRobotReq.
+        r"""Sets the iflytek_aiui_config of this UpdateRobotReq.
 
         :param iflytek_aiui_config: The iflytek_aiui_config of this UpdateRobotReq.
         :type iflytek_aiui_config: :class:`huaweicloudsdkmetastudio.v1.IflytekAiuiConfig`
@@ -302,7 +302,7 @@ class UpdateRobotReq:
 
     @property
     def iflytek_spark(self):
-        """Gets the iflytek_spark of this UpdateRobotReq.
+        r"""Gets the iflytek_spark of this UpdateRobotReq.
 
         :return: The iflytek_spark of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
@@ -311,7 +311,7 @@ class UpdateRobotReq:
 
     @iflytek_spark.setter
     def iflytek_spark(self, iflytek_spark):
-        """Sets the iflytek_spark of this UpdateRobotReq.
+        r"""Sets the iflytek_spark of this UpdateRobotReq.
 
         :param iflytek_spark: The iflytek_spark of this UpdateRobotReq.
         :type iflytek_spark: :class:`huaweicloudsdkmetastudio.v1.IflytekSpark`
@@ -320,7 +320,7 @@ class UpdateRobotReq:
 
     @property
     def third_party_model_config(self):
-        """Gets the third_party_model_config of this UpdateRobotReq.
+        r"""Gets the third_party_model_config of this UpdateRobotReq.
 
         :return: The third_party_model_config of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
@@ -329,7 +329,7 @@ class UpdateRobotReq:
 
     @third_party_model_config.setter
     def third_party_model_config(self, third_party_model_config):
-        """Sets the third_party_model_config of this UpdateRobotReq.
+        r"""Sets the third_party_model_config of this UpdateRobotReq.
 
         :param third_party_model_config: The third_party_model_config of this UpdateRobotReq.
         :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
@@ -338,7 +338,7 @@ class UpdateRobotReq:
 
     @property
     def mobvoi_config(self):
-        """Gets the mobvoi_config of this UpdateRobotReq.
+        r"""Gets the mobvoi_config of this UpdateRobotReq.
 
         :return: The mobvoi_config of this UpdateRobotReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
@@ -347,7 +347,7 @@ class UpdateRobotReq:
 
     @mobvoi_config.setter
     def mobvoi_config(self, mobvoi_config):
-        """Sets the mobvoi_config of this UpdateRobotReq.
+        r"""Sets the mobvoi_config of this UpdateRobotReq.
 
         :param mobvoi_config: The mobvoi_config of this UpdateRobotReq.
         :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`

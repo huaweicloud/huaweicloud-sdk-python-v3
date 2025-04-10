@@ -29,7 +29,7 @@ class ShowSpResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, query_group=None):
-        """ShowSpResourceRequest
+        r"""ShowSpResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowSpResourceRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowSpResourceRequest.
+        r"""Gets the x_request_id of this ShowSpResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -68,7 +68,7 @@ class ShowSpResourceRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowSpResourceRequest.
+        r"""Sets the x_request_id of this ShowSpResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -79,7 +79,7 @@ class ShowSpResourceRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ShowSpResourceRequest.
+        r"""Gets the accept_language of this ShowSpResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -90,7 +90,7 @@ class ShowSpResourceRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ShowSpResourceRequest.
+        r"""Sets the accept_language of this ShowSpResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -101,7 +101,7 @@ class ShowSpResourceRequest:
 
     @property
     def query_group(self):
-        """Gets the query_group of this ShowSpResourceRequest.
+        r"""Gets the query_group of this ShowSpResourceRequest.
 
         是否在查询资源信息时返回SP自主规划的媒体接入分组id，默认不查询。
 
@@ -112,7 +112,7 @@ class ShowSpResourceRequest:
 
     @query_group.setter
     def query_group(self, query_group):
-        """Sets the query_group of this ShowSpResourceRequest.
+        r"""Sets the query_group of this ShowSpResourceRequest.
 
         是否在查询资源信息时返回SP自主规划的媒体接入分组id，默认不查询。
 

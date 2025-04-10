@@ -25,7 +25,7 @@ class CreateScalingGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScalingGroupRequest
+        r"""CreateScalingGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateScalingGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScalingGroupRequest.
+        r"""Gets the body of this CreateScalingGroupRequest.
 
         :return: The body of this CreateScalingGroupRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`
@@ -52,7 +52,7 @@ class CreateScalingGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScalingGroupRequest.
+        r"""Sets the body of this CreateScalingGroupRequest.
 
         :param body: The body of this CreateScalingGroupRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`

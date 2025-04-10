@@ -37,7 +37,7 @@ class SiteNetworkSpecificationEnum:
     }
 
     def __init__(self):
-        """SiteNetworkSpecificationEnum
+        r"""SiteNetworkSpecificationEnum
 
         The model defined in huaweicloud sdk
 

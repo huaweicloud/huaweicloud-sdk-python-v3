@@ -33,7 +33,7 @@ class RuntimePermission:
     }
 
     def __init__(self, action=None, action_list=None, name=None, permission_name=None, permission_type=None):
-        """RuntimePermission
+        r"""RuntimePermission
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RuntimePermission:
 
     @property
     def action(self):
-        """Gets the action of this RuntimePermission.
+        r"""Gets the action of this RuntimePermission.
 
         动作列表
 
@@ -82,7 +82,7 @@ class RuntimePermission:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RuntimePermission.
+        r"""Sets the action of this RuntimePermission.
 
         动作列表
 
@@ -93,7 +93,7 @@ class RuntimePermission:
 
     @property
     def action_list(self):
-        """Gets the action_list of this RuntimePermission.
+        r"""Gets the action_list of this RuntimePermission.
 
         动作列表
 
@@ -104,7 +104,7 @@ class RuntimePermission:
 
     @action_list.setter
     def action_list(self, action_list):
-        """Sets the action_list of this RuntimePermission.
+        r"""Sets the action_list of this RuntimePermission.
 
         动作列表
 
@@ -115,7 +115,7 @@ class RuntimePermission:
 
     @property
     def name(self):
-        """Gets the name of this RuntimePermission.
+        r"""Gets the name of this RuntimePermission.
 
         权限名称
 
@@ -126,7 +126,7 @@ class RuntimePermission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuntimePermission.
+        r"""Sets the name of this RuntimePermission.
 
         权限名称
 
@@ -137,7 +137,7 @@ class RuntimePermission:
 
     @property
     def permission_name(self):
-        """Gets the permission_name of this RuntimePermission.
+        r"""Gets the permission_name of this RuntimePermission.
 
         权限名称
 
@@ -148,7 +148,7 @@ class RuntimePermission:
 
     @permission_name.setter
     def permission_name(self, permission_name):
-        """Sets the permission_name of this RuntimePermission.
+        r"""Sets the permission_name of this RuntimePermission.
 
         权限名称
 
@@ -159,7 +159,7 @@ class RuntimePermission:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this RuntimePermission.
+        r"""Gets the permission_type of this RuntimePermission.
 
         权限类型
 
@@ -170,7 +170,7 @@ class RuntimePermission:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this RuntimePermission.
+        r"""Sets the permission_type of this RuntimePermission.
 
         权限类型
 

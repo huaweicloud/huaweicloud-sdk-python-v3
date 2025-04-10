@@ -27,7 +27,7 @@ class ResetAdministratorRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ResetAdministratorRequest
+        r"""ResetAdministratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetAdministratorRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetAdministratorRequest.
+        r"""Gets the instance_id of this ResetAdministratorRequest.
 
         DDM实例ID。
 
@@ -60,7 +60,7 @@ class ResetAdministratorRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetAdministratorRequest.
+        r"""Sets the instance_id of this ResetAdministratorRequest.
 
         DDM实例ID。
 
@@ -71,7 +71,7 @@ class ResetAdministratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetAdministratorRequest.
+        r"""Gets the body of this ResetAdministratorRequest.
 
         :return: The body of this ResetAdministratorRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.AdminUserInfoReq`
@@ -80,7 +80,7 @@ class ResetAdministratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetAdministratorRequest.
+        r"""Sets the body of this ResetAdministratorRequest.
 
         :param body: The body of this ResetAdministratorRequest.
         :type body: :class:`huaweicloudsdkddm.v1.AdminUserInfoReq`

@@ -45,7 +45,7 @@ class EndpointGroupDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, traffic_dial_percentage=None, region_id=None, listeners=None, created_at=None, updated_at=None, domain_id=None, frozen_info=None):
-        """EndpointGroupDetail
+        r"""EndpointGroupDetail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EndpointGroupDetail:
 
     @property
     def id(self):
-        """Gets the id of this EndpointGroupDetail.
+        r"""Gets the id of this EndpointGroupDetail.
 
         终端节点组ID。
 
@@ -124,7 +124,7 @@ class EndpointGroupDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointGroupDetail.
+        r"""Sets the id of this EndpointGroupDetail.
 
         终端节点组ID。
 
@@ -135,7 +135,7 @@ class EndpointGroupDetail:
 
     @property
     def name(self):
-        """Gets the name of this EndpointGroupDetail.
+        r"""Gets the name of this EndpointGroupDetail.
 
         终端节点组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -146,7 +146,7 @@ class EndpointGroupDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointGroupDetail.
+        r"""Sets the name of this EndpointGroupDetail.
 
         终端节点组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -157,7 +157,7 @@ class EndpointGroupDetail:
 
     @property
     def description(self):
-        """Gets the description of this EndpointGroupDetail.
+        r"""Gets the description of this EndpointGroupDetail.
 
         终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -168,7 +168,7 @@ class EndpointGroupDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointGroupDetail.
+        r"""Sets the description of this EndpointGroupDetail.
 
         终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -179,7 +179,7 @@ class EndpointGroupDetail:
 
     @property
     def status(self):
-        """Gets the status of this EndpointGroupDetail.
+        r"""Gets the status of this EndpointGroupDetail.
 
         :return: The status of this EndpointGroupDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -188,7 +188,7 @@ class EndpointGroupDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EndpointGroupDetail.
+        r"""Sets the status of this EndpointGroupDetail.
 
         :param status: The status of this EndpointGroupDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -197,7 +197,7 @@ class EndpointGroupDetail:
 
     @property
     def traffic_dial_percentage(self):
-        """Gets the traffic_dial_percentage of this EndpointGroupDetail.
+        r"""Gets the traffic_dial_percentage of this EndpointGroupDetail.
 
         流量拨分到此组的百分比。
 
@@ -208,7 +208,7 @@ class EndpointGroupDetail:
 
     @traffic_dial_percentage.setter
     def traffic_dial_percentage(self, traffic_dial_percentage):
-        """Sets the traffic_dial_percentage of this EndpointGroupDetail.
+        r"""Sets the traffic_dial_percentage of this EndpointGroupDetail.
 
         流量拨分到此组的百分比。
 
@@ -219,7 +219,7 @@ class EndpointGroupDetail:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EndpointGroupDetail.
+        r"""Gets the region_id of this EndpointGroupDetail.
 
         终端节点组所属区域ID。
 
@@ -230,7 +230,7 @@ class EndpointGroupDetail:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EndpointGroupDetail.
+        r"""Sets the region_id of this EndpointGroupDetail.
 
         终端节点组所属区域ID。
 
@@ -241,7 +241,7 @@ class EndpointGroupDetail:
 
     @property
     def listeners(self):
-        """Gets the listeners of this EndpointGroupDetail.
+        r"""Gets the listeners of this EndpointGroupDetail.
 
         关联监听器列表。
 
@@ -252,7 +252,7 @@ class EndpointGroupDetail:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this EndpointGroupDetail.
+        r"""Sets the listeners of this EndpointGroupDetail.
 
         关联监听器列表。
 
@@ -263,7 +263,7 @@ class EndpointGroupDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointGroupDetail.
+        r"""Gets the created_at of this EndpointGroupDetail.
 
         创建时间。
 
@@ -274,7 +274,7 @@ class EndpointGroupDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointGroupDetail.
+        r"""Sets the created_at of this EndpointGroupDetail.
 
         创建时间。
 
@@ -285,7 +285,7 @@ class EndpointGroupDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EndpointGroupDetail.
+        r"""Gets the updated_at of this EndpointGroupDetail.
 
         更新时间。
 
@@ -296,7 +296,7 @@ class EndpointGroupDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EndpointGroupDetail.
+        r"""Sets the updated_at of this EndpointGroupDetail.
 
         更新时间。
 
@@ -307,7 +307,7 @@ class EndpointGroupDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EndpointGroupDetail.
+        r"""Gets the domain_id of this EndpointGroupDetail.
 
         租户ID。
 
@@ -318,7 +318,7 @@ class EndpointGroupDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EndpointGroupDetail.
+        r"""Sets the domain_id of this EndpointGroupDetail.
 
         租户ID。
 
@@ -329,7 +329,7 @@ class EndpointGroupDetail:
 
     @property
     def frozen_info(self):
-        """Gets the frozen_info of this EndpointGroupDetail.
+        r"""Gets the frozen_info of this EndpointGroupDetail.
 
         :return: The frozen_info of this EndpointGroupDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -338,7 +338,7 @@ class EndpointGroupDetail:
 
     @frozen_info.setter
     def frozen_info(self, frozen_info):
-        """Sets the frozen_info of this EndpointGroupDetail.
+        r"""Sets the frozen_info of this EndpointGroupDetail.
 
         :param frozen_info: The frozen_info of this EndpointGroupDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

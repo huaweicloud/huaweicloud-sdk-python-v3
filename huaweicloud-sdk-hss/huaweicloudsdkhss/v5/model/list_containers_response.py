@@ -30,7 +30,7 @@ class ListContainersResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, last_update_time=None, data_list=None):
-        """ListContainersResponse
+        r"""ListContainersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListContainersResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListContainersResponse.
+        r"""Gets the total_num of this ListContainersResponse.
 
         容器总数
 
@@ -69,7 +69,7 @@ class ListContainersResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListContainersResponse.
+        r"""Sets the total_num of this ListContainersResponse.
 
         容器总数
 
@@ -80,7 +80,7 @@ class ListContainersResponse(SdkResponse):
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this ListContainersResponse.
+        r"""Gets the last_update_time of this ListContainersResponse.
 
         最近更新时间
 
@@ -91,7 +91,7 @@ class ListContainersResponse(SdkResponse):
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this ListContainersResponse.
+        r"""Sets the last_update_time of this ListContainersResponse.
 
         最近更新时间
 
@@ -102,7 +102,7 @@ class ListContainersResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListContainersResponse.
+        r"""Gets the data_list of this ListContainersResponse.
 
         容器基本信息列表
 
@@ -113,7 +113,7 @@ class ListContainersResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListContainersResponse.
+        r"""Sets the data_list of this ListContainersResponse.
 
         容器基本信息列表
 

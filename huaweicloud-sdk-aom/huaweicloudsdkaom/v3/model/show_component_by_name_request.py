@@ -27,7 +27,7 @@ class ShowComponentByNameRequest:
     }
 
     def __init__(self, application_id=None, component_name=None):
-        """ShowComponentByNameRequest
+        r"""ShowComponentByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowComponentByNameRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowComponentByNameRequest.
+        r"""Gets the application_id of this ShowComponentByNameRequest.
 
         应用id
 
@@ -59,7 +59,7 @@ class ShowComponentByNameRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowComponentByNameRequest.
+        r"""Sets the application_id of this ShowComponentByNameRequest.
 
         应用id
 
@@ -70,7 +70,7 @@ class ShowComponentByNameRequest:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ShowComponentByNameRequest.
+        r"""Gets the component_name of this ShowComponentByNameRequest.
 
         组件名称
 
@@ -81,7 +81,7 @@ class ShowComponentByNameRequest:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ShowComponentByNameRequest.
+        r"""Sets the component_name of this ShowComponentByNameRequest.
 
         组件名称
 

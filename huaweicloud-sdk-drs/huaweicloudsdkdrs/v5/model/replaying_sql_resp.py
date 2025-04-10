@@ -39,7 +39,7 @@ class ReplayingSqlResp:
     }
 
     def __init__(self, schema_name=None, sql_statement=None, latency=None, execute_latency=None, status=None, client=None, connection_id=None, replay_start_time=None):
-        """ReplayingSqlResp
+        r"""ReplayingSqlResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ReplayingSqlResp:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ReplayingSqlResp.
+        r"""Gets the schema_name of this ReplayingSqlResp.
 
         库名或shema名称
 
@@ -103,7 +103,7 @@ class ReplayingSqlResp:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ReplayingSqlResp.
+        r"""Sets the schema_name of this ReplayingSqlResp.
 
         库名或shema名称
 
@@ -114,7 +114,7 @@ class ReplayingSqlResp:
 
     @property
     def sql_statement(self):
-        """Gets the sql_statement of this ReplayingSqlResp.
+        r"""Gets the sql_statement of this ReplayingSqlResp.
 
         SQL语句
 
@@ -125,7 +125,7 @@ class ReplayingSqlResp:
 
     @sql_statement.setter
     def sql_statement(self, sql_statement):
-        """Sets the sql_statement of this ReplayingSqlResp.
+        r"""Sets the sql_statement of this ReplayingSqlResp.
 
         SQL语句
 
@@ -136,7 +136,7 @@ class ReplayingSqlResp:
 
     @property
     def latency(self):
-        """Gets the latency of this ReplayingSqlResp.
+        r"""Gets the latency of this ReplayingSqlResp.
 
         原始执行耗时
 
@@ -147,7 +147,7 @@ class ReplayingSqlResp:
 
     @latency.setter
     def latency(self, latency):
-        """Sets the latency of this ReplayingSqlResp.
+        r"""Sets the latency of this ReplayingSqlResp.
 
         原始执行耗时
 
@@ -158,7 +158,7 @@ class ReplayingSqlResp:
 
     @property
     def execute_latency(self):
-        """Gets the execute_latency of this ReplayingSqlResp.
+        r"""Gets the execute_latency of this ReplayingSqlResp.
 
         回放执行耗时
 
@@ -169,7 +169,7 @@ class ReplayingSqlResp:
 
     @execute_latency.setter
     def execute_latency(self, execute_latency):
-        """Sets the execute_latency of this ReplayingSqlResp.
+        r"""Sets the execute_latency of this ReplayingSqlResp.
 
         回放执行耗时
 
@@ -180,7 +180,7 @@ class ReplayingSqlResp:
 
     @property
     def status(self):
-        """Gets the status of this ReplayingSqlResp.
+        r"""Gets the status of this ReplayingSqlResp.
 
         执行状态
 
@@ -191,7 +191,7 @@ class ReplayingSqlResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ReplayingSqlResp.
+        r"""Sets the status of this ReplayingSqlResp.
 
         执行状态
 
@@ -202,7 +202,7 @@ class ReplayingSqlResp:
 
     @property
     def client(self):
-        """Gets the client of this ReplayingSqlResp.
+        r"""Gets the client of this ReplayingSqlResp.
 
         客户端IP
 
@@ -213,7 +213,7 @@ class ReplayingSqlResp:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this ReplayingSqlResp.
+        r"""Sets the client of this ReplayingSqlResp.
 
         客户端IP
 
@@ -224,7 +224,7 @@ class ReplayingSqlResp:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ReplayingSqlResp.
+        r"""Gets the connection_id of this ReplayingSqlResp.
 
         连接ID
 
@@ -235,7 +235,7 @@ class ReplayingSqlResp:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ReplayingSqlResp.
+        r"""Sets the connection_id of this ReplayingSqlResp.
 
         连接ID
 
@@ -246,7 +246,7 @@ class ReplayingSqlResp:
 
     @property
     def replay_start_time(self):
-        """Gets the replay_start_time of this ReplayingSqlResp.
+        r"""Gets the replay_start_time of this ReplayingSqlResp.
 
         回放开始时间
 
@@ -257,7 +257,7 @@ class ReplayingSqlResp:
 
     @replay_start_time.setter
     def replay_start_time(self, replay_start_time):
-        """Sets the replay_start_time of this ReplayingSqlResp.
+        r"""Sets the replay_start_time of this ReplayingSqlResp.
 
         回放开始时间
 

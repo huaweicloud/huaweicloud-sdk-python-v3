@@ -28,7 +28,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListMetricNotifyRecordResponse
+        r"""ListMetricNotifyRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMetricNotifyRecordResponse.
+        r"""Gets the count of this ListMetricNotifyRecordResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMetricNotifyRecordResponse.
+        r"""Sets the count of this ListMetricNotifyRecordResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListMetricNotifyRecordResponse.
+        r"""Gets the items of this ListMetricNotifyRecordResponse.
 
         通知记录
 
@@ -84,7 +84,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListMetricNotifyRecordResponse.
+        r"""Sets the items of this ListMetricNotifyRecordResponse.
 
         通知记录
 

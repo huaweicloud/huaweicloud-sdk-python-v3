@@ -39,7 +39,7 @@ class LigandPreviewInfoDto:
     }
 
     def __init__(self, index=None, name=None, success=None, smiles=None, formula=None, is_3d=None, structure=None, reason=None):
-        """LigandPreviewInfoDto
+        r"""LigandPreviewInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class LigandPreviewInfoDto:
 
     @property
     def index(self):
-        """Gets the index of this LigandPreviewInfoDto.
+        r"""Gets the index of this LigandPreviewInfoDto.
 
         配体索引（从0起编号）
 
@@ -100,7 +100,7 @@ class LigandPreviewInfoDto:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this LigandPreviewInfoDto.
+        r"""Sets the index of this LigandPreviewInfoDto.
 
         配体索引（从0起编号）
 
@@ -111,7 +111,7 @@ class LigandPreviewInfoDto:
 
     @property
     def name(self):
-        """Gets the name of this LigandPreviewInfoDto.
+        r"""Gets the name of this LigandPreviewInfoDto.
 
         配体名称，若无名称则自动命名，格式为UNK+索引（从1起编号）
 
@@ -122,7 +122,7 @@ class LigandPreviewInfoDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LigandPreviewInfoDto.
+        r"""Sets the name of this LigandPreviewInfoDto.
 
         配体名称，若无名称则自动命名，格式为UNK+索引（从1起编号）
 
@@ -133,7 +133,7 @@ class LigandPreviewInfoDto:
 
     @property
     def success(self):
-        """Gets the success of this LigandPreviewInfoDto.
+        r"""Gets the success of this LigandPreviewInfoDto.
 
         解析是否成功
 
@@ -144,7 +144,7 @@ class LigandPreviewInfoDto:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this LigandPreviewInfoDto.
+        r"""Sets the success of this LigandPreviewInfoDto.
 
         解析是否成功
 
@@ -155,7 +155,7 @@ class LigandPreviewInfoDto:
 
     @property
     def smiles(self):
-        """Gets the smiles of this LigandPreviewInfoDto.
+        r"""Gets the smiles of this LigandPreviewInfoDto.
 
         分子SMILES表达式
 
@@ -166,7 +166,7 @@ class LigandPreviewInfoDto:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this LigandPreviewInfoDto.
+        r"""Sets the smiles of this LigandPreviewInfoDto.
 
         分子SMILES表达式
 
@@ -177,7 +177,7 @@ class LigandPreviewInfoDto:
 
     @property
     def formula(self):
-        """Gets the formula of this LigandPreviewInfoDto.
+        r"""Gets the formula of this LigandPreviewInfoDto.
 
         配体分子的化学式
 
@@ -188,7 +188,7 @@ class LigandPreviewInfoDto:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this LigandPreviewInfoDto.
+        r"""Sets the formula of this LigandPreviewInfoDto.
 
         配体分子的化学式
 
@@ -199,7 +199,7 @@ class LigandPreviewInfoDto:
 
     @property
     def is_3d(self):
-        """Gets the is_3d of this LigandPreviewInfoDto.
+        r"""Gets the is_3d of this LigandPreviewInfoDto.
 
         标识原始数据是否为3D
 
@@ -210,7 +210,7 @@ class LigandPreviewInfoDto:
 
     @is_3d.setter
     def is_3d(self, is_3d):
-        """Sets the is_3d of this LigandPreviewInfoDto.
+        r"""Sets the is_3d of this LigandPreviewInfoDto.
 
         标识原始数据是否为3D
 
@@ -221,7 +221,7 @@ class LigandPreviewInfoDto:
 
     @property
     def structure(self):
-        """Gets the structure of this LigandPreviewInfoDto.
+        r"""Gets the structure of this LigandPreviewInfoDto.
 
         :return: The structure of this LigandPreviewInfoDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LigandStructureDto`
@@ -230,7 +230,7 @@ class LigandPreviewInfoDto:
 
     @structure.setter
     def structure(self, structure):
-        """Sets the structure of this LigandPreviewInfoDto.
+        r"""Sets the structure of this LigandPreviewInfoDto.
 
         :param structure: The structure of this LigandPreviewInfoDto.
         :type structure: :class:`huaweicloudsdkeihealth.v1.LigandStructureDto`
@@ -239,7 +239,7 @@ class LigandPreviewInfoDto:
 
     @property
     def reason(self):
-        """Gets the reason of this LigandPreviewInfoDto.
+        r"""Gets the reason of this LigandPreviewInfoDto.
 
         解析失败的理由
 
@@ -250,7 +250,7 @@ class LigandPreviewInfoDto:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this LigandPreviewInfoDto.
+        r"""Sets the reason of this LigandPreviewInfoDto.
 
         解析失败的理由
 

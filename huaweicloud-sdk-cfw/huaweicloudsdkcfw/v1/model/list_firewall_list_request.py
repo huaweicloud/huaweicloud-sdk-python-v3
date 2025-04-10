@@ -27,7 +27,7 @@ class ListFirewallListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """ListFirewallListRequest
+        r"""ListFirewallListRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFirewallListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFirewallListRequest.
+        r"""Gets the enterprise_project_id of this ListFirewallListRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -61,7 +61,7 @@ class ListFirewallListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFirewallListRequest.
+        r"""Sets the enterprise_project_id of this ListFirewallListRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -72,7 +72,7 @@ class ListFirewallListRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListFirewallListRequest.
+        r"""Gets the body of this ListFirewallListRequest.
 
         :return: The body of this ListFirewallListRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.QueryFireWallInstanceDto`
@@ -81,7 +81,7 @@ class ListFirewallListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFirewallListRequest.
+        r"""Sets the body of this ListFirewallListRequest.
 
         :param body: The body of this ListFirewallListRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.QueryFireWallInstanceDto`

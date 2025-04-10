@@ -29,7 +29,7 @@ class InstanceStatistics:
     }
 
     def __init__(self, unhealth=None, total=None, type_statistics=None):
-        """InstanceStatistics
+        r"""InstanceStatistics
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceStatistics:
 
     @property
     def unhealth(self):
-        """Gets the unhealth of this InstanceStatistics.
+        r"""Gets the unhealth of this InstanceStatistics.
 
         该资源分组中当前处在告警状态的资源个数。
 
@@ -68,7 +68,7 @@ class InstanceStatistics:
 
     @unhealth.setter
     def unhealth(self, unhealth):
-        """Sets the unhealth of this InstanceStatistics.
+        r"""Sets the unhealth of this InstanceStatistics.
 
         该资源分组中当前处在告警状态的资源个数。
 
@@ -79,7 +79,7 @@ class InstanceStatistics:
 
     @property
     def total(self):
-        """Gets the total of this InstanceStatistics.
+        r"""Gets the total of this InstanceStatistics.
 
         该资源分组中资源的总个数。
 
@@ -90,7 +90,7 @@ class InstanceStatistics:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this InstanceStatistics.
+        r"""Sets the total of this InstanceStatistics.
 
         该资源分组中资源的总个数。
 
@@ -101,7 +101,7 @@ class InstanceStatistics:
 
     @property
     def type_statistics(self):
-        """Gets the type_statistics of this InstanceStatistics.
+        r"""Gets the type_statistics of this InstanceStatistics.
 
         该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。
 
@@ -112,7 +112,7 @@ class InstanceStatistics:
 
     @type_statistics.setter
     def type_statistics(self, type_statistics):
-        """Sets the type_statistics of this InstanceStatistics.
+        r"""Sets the type_statistics of this InstanceStatistics.
 
         该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。
 

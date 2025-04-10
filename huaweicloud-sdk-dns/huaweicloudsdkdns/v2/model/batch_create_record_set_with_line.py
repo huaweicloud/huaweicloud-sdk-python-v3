@@ -31,7 +31,7 @@ class BatchCreateRecordSetWithLine:
     }
 
     def __init__(self, line=None, ttl=None, weight=None, records=None):
-        """BatchCreateRecordSetWithLine
+        r"""BatchCreateRecordSetWithLine
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchCreateRecordSetWithLine:
 
     @property
     def line(self):
-        """Gets the line of this BatchCreateRecordSetWithLine.
+        r"""Gets the line of this BatchCreateRecordSetWithLine.
 
         解析线路ID。
 
@@ -73,7 +73,7 @@ class BatchCreateRecordSetWithLine:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this BatchCreateRecordSetWithLine.
+        r"""Sets the line of this BatchCreateRecordSetWithLine.
 
         解析线路ID。
 
@@ -84,7 +84,7 @@ class BatchCreateRecordSetWithLine:
 
     @property
     def ttl(self):
-        """Gets the ttl of this BatchCreateRecordSetWithLine.
+        r"""Gets the ttl of this BatchCreateRecordSetWithLine.
 
         Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
 
@@ -95,7 +95,7 @@ class BatchCreateRecordSetWithLine:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this BatchCreateRecordSetWithLine.
+        r"""Sets the ttl of this BatchCreateRecordSetWithLine.
 
         Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
 
@@ -106,7 +106,7 @@ class BatchCreateRecordSetWithLine:
 
     @property
     def weight(self):
-        """Gets the weight of this BatchCreateRecordSetWithLine.
+        r"""Gets the weight of this BatchCreateRecordSetWithLine.
 
         解析记录的权重，默认为1。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
 
@@ -117,7 +117,7 @@ class BatchCreateRecordSetWithLine:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this BatchCreateRecordSetWithLine.
+        r"""Sets the weight of this BatchCreateRecordSetWithLine.
 
         解析记录的权重，默认为1。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
 
@@ -128,7 +128,7 @@ class BatchCreateRecordSetWithLine:
 
     @property
     def records(self):
-        """Gets the records of this BatchCreateRecordSetWithLine.
+        r"""Gets the records of this BatchCreateRecordSetWithLine.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -139,7 +139,7 @@ class BatchCreateRecordSetWithLine:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this BatchCreateRecordSetWithLine.
+        r"""Sets the records of this BatchCreateRecordSetWithLine.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 

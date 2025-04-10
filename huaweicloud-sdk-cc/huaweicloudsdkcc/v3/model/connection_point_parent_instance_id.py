@@ -25,7 +25,7 @@ class ConnectionPointParentInstanceId:
     }
 
     def __init__(self, parent_instance_id=None):
-        """ConnectionPointParentInstanceId
+        r"""ConnectionPointParentInstanceId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConnectionPointParentInstanceId:
 
     @property
     def parent_instance_id(self):
-        """Gets the parent_instance_id of this ConnectionPointParentInstanceId.
+        r"""Gets the parent_instance_id of this ConnectionPointParentInstanceId.
 
         连接点的实例的父资源ID。
 
@@ -54,7 +54,7 @@ class ConnectionPointParentInstanceId:
 
     @parent_instance_id.setter
     def parent_instance_id(self, parent_instance_id):
-        """Sets the parent_instance_id of this ConnectionPointParentInstanceId.
+        r"""Sets the parent_instance_id of this ConnectionPointParentInstanceId.
 
         连接点的实例的父资源ID。
 

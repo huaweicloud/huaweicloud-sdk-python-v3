@@ -39,7 +39,7 @@ class RemediationExecution:
     }
 
     def __init__(self, automatic=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, invocation_time=None, state=None, message=None):
-        """RemediationExecution
+        r"""RemediationExecution
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RemediationExecution:
 
     @property
     def automatic(self):
-        """Gets the automatic of this RemediationExecution.
+        r"""Gets the automatic of this RemediationExecution.
 
         是否为自动修正。
 
@@ -103,7 +103,7 @@ class RemediationExecution:
 
     @automatic.setter
     def automatic(self, automatic):
-        """Sets the automatic of this RemediationExecution.
+        r"""Sets the automatic of this RemediationExecution.
 
         是否为自动修正。
 
@@ -114,7 +114,7 @@ class RemediationExecution:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RemediationExecution.
+        r"""Gets the resource_id of this RemediationExecution.
 
         资源ID。
 
@@ -125,7 +125,7 @@ class RemediationExecution:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RemediationExecution.
+        r"""Sets the resource_id of this RemediationExecution.
 
         资源ID。
 
@@ -136,7 +136,7 @@ class RemediationExecution:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this RemediationExecution.
+        r"""Gets the resource_name of this RemediationExecution.
 
         资源名称。
 
@@ -147,7 +147,7 @@ class RemediationExecution:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this RemediationExecution.
+        r"""Sets the resource_name of this RemediationExecution.
 
         资源名称。
 
@@ -158,7 +158,7 @@ class RemediationExecution:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this RemediationExecution.
+        r"""Gets the resource_provider of this RemediationExecution.
 
         云服务名称。
 
@@ -169,7 +169,7 @@ class RemediationExecution:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this RemediationExecution.
+        r"""Sets the resource_provider of this RemediationExecution.
 
         云服务名称。
 
@@ -180,7 +180,7 @@ class RemediationExecution:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this RemediationExecution.
+        r"""Gets the resource_type of this RemediationExecution.
 
         资源类型。
 
@@ -191,7 +191,7 @@ class RemediationExecution:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this RemediationExecution.
+        r"""Sets the resource_type of this RemediationExecution.
 
         资源类型。
 
@@ -202,7 +202,7 @@ class RemediationExecution:
 
     @property
     def invocation_time(self):
-        """Gets the invocation_time of this RemediationExecution.
+        r"""Gets the invocation_time of this RemediationExecution.
 
         补救执行的开始时间。
 
@@ -213,7 +213,7 @@ class RemediationExecution:
 
     @invocation_time.setter
     def invocation_time(self, invocation_time):
-        """Sets the invocation_time of this RemediationExecution.
+        r"""Sets the invocation_time of this RemediationExecution.
 
         补救执行的开始时间。
 
@@ -224,7 +224,7 @@ class RemediationExecution:
 
     @property
     def state(self):
-        """Gets the state of this RemediationExecution.
+        r"""Gets the state of this RemediationExecution.
 
         合规规则修正执行的状态。
 
@@ -235,7 +235,7 @@ class RemediationExecution:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RemediationExecution.
+        r"""Sets the state of this RemediationExecution.
 
         合规规则修正执行的状态。
 
@@ -246,7 +246,7 @@ class RemediationExecution:
 
     @property
     def message(self):
-        """Gets the message of this RemediationExecution.
+        r"""Gets the message of this RemediationExecution.
 
         合规规则修正执行的信息。
 
@@ -257,7 +257,7 @@ class RemediationExecution:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RemediationExecution.
+        r"""Sets the message of this RemediationExecution.
 
         合规规则修正执行的信息。
 

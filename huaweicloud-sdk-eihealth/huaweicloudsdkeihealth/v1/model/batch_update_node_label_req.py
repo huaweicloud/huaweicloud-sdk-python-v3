@@ -25,7 +25,7 @@ class BatchUpdateNodeLabelReq:
     }
 
     def __init__(self, labels=None):
-        """BatchUpdateNodeLabelReq
+        r"""BatchUpdateNodeLabelReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateNodeLabelReq:
 
     @property
     def labels(self):
-        """Gets the labels of this BatchUpdateNodeLabelReq.
+        r"""Gets the labels of this BatchUpdateNodeLabelReq.
 
         标签列表
 
@@ -53,7 +53,7 @@ class BatchUpdateNodeLabelReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this BatchUpdateNodeLabelReq.
+        r"""Sets the labels of this BatchUpdateNodeLabelReq.
 
         标签列表
 

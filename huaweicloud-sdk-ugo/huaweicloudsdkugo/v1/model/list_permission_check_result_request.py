@@ -29,7 +29,7 @@ class ListPermissionCheckResultRequest:
     }
 
     def __init__(self, migration_project_id=None, offset=None, limit=None):
-        """ListPermissionCheckResultRequest
+        r"""ListPermissionCheckResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPermissionCheckResultRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this ListPermissionCheckResultRequest.
+        r"""Gets the migration_project_id of this ListPermissionCheckResultRequest.
 
         迁移项目ID。
 
@@ -67,7 +67,7 @@ class ListPermissionCheckResultRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this ListPermissionCheckResultRequest.
+        r"""Sets the migration_project_id of this ListPermissionCheckResultRequest.
 
         迁移项目ID。
 
@@ -78,7 +78,7 @@ class ListPermissionCheckResultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPermissionCheckResultRequest.
+        r"""Gets the offset of this ListPermissionCheckResultRequest.
 
         分页查询的偏移量。
 
@@ -89,7 +89,7 @@ class ListPermissionCheckResultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPermissionCheckResultRequest.
+        r"""Sets the offset of this ListPermissionCheckResultRequest.
 
         分页查询的偏移量。
 
@@ -100,7 +100,7 @@ class ListPermissionCheckResultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermissionCheckResultRequest.
+        r"""Gets the limit of this ListPermissionCheckResultRequest.
 
         每页显示的条目数量。
 
@@ -111,7 +111,7 @@ class ListPermissionCheckResultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermissionCheckResultRequest.
+        r"""Sets the limit of this ListPermissionCheckResultRequest.
 
         每页显示的条目数量。
 

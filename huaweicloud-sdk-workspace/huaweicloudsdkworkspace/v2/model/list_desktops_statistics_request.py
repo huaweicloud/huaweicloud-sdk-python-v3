@@ -27,7 +27,7 @@ class ListDesktopsStatisticsRequest:
     }
 
     def __init__(self, desktop_type=None, statistics_type=None):
-        """ListDesktopsStatisticsRequest
+        r"""ListDesktopsStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDesktopsStatisticsRequest:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this ListDesktopsStatisticsRequest.
+        r"""Gets the desktop_type of this ListDesktopsStatisticsRequest.
 
         桌面类型
 
@@ -61,7 +61,7 @@ class ListDesktopsStatisticsRequest:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this ListDesktopsStatisticsRequest.
+        r"""Sets the desktop_type of this ListDesktopsStatisticsRequest.
 
         桌面类型
 
@@ -72,7 +72,7 @@ class ListDesktopsStatisticsRequest:
 
     @property
     def statistics_type(self):
-        """Gets the statistics_type of this ListDesktopsStatisticsRequest.
+        r"""Gets the statistics_type of this ListDesktopsStatisticsRequest.
 
         统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计
 
@@ -83,7 +83,7 @@ class ListDesktopsStatisticsRequest:
 
     @statistics_type.setter
     def statistics_type(self, statistics_type):
-        """Sets the statistics_type of this ListDesktopsStatisticsRequest.
+        r"""Sets the statistics_type of this ListDesktopsStatisticsRequest.
 
         统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计
 

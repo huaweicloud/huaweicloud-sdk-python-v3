@@ -43,7 +43,7 @@ class DataClassificationRuleOperateDTO:
     }
 
     def __init__(self, rule_type=None, secrecy_level_id=None, name=None, method=None, content_expression=None, column_expression=None, commit_expression=None, builtin_rule_id=None, description=None, category_id=None):
-        """DataClassificationRuleOperateDTO
+        r"""DataClassificationRuleOperateDTO
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this DataClassificationRuleOperateDTO.
+        r"""Gets the rule_type of this DataClassificationRuleOperateDTO.
 
         规则类型, CUSTOM, BUILTIN
 
@@ -114,7 +114,7 @@ class DataClassificationRuleOperateDTO:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this DataClassificationRuleOperateDTO.
+        r"""Sets the rule_type of this DataClassificationRuleOperateDTO.
 
         规则类型, CUSTOM, BUILTIN
 
@@ -125,7 +125,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def secrecy_level_id(self):
-        """Gets the secrecy_level_id of this DataClassificationRuleOperateDTO.
+        r"""Gets the secrecy_level_id of this DataClassificationRuleOperateDTO.
 
         密级ID
 
@@ -136,7 +136,7 @@ class DataClassificationRuleOperateDTO:
 
     @secrecy_level_id.setter
     def secrecy_level_id(self, secrecy_level_id):
-        """Sets the secrecy_level_id of this DataClassificationRuleOperateDTO.
+        r"""Sets the secrecy_level_id of this DataClassificationRuleOperateDTO.
 
         密级ID
 
@@ -147,7 +147,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationRuleOperateDTO.
+        r"""Gets the name of this DataClassificationRuleOperateDTO.
 
         规则名称
 
@@ -158,7 +158,7 @@ class DataClassificationRuleOperateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationRuleOperateDTO.
+        r"""Sets the name of this DataClassificationRuleOperateDTO.
 
         规则名称
 
@@ -169,7 +169,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def method(self):
-        """Gets the method of this DataClassificationRuleOperateDTO.
+        r"""Gets the method of this DataClassificationRuleOperateDTO.
 
         规则方式, REGULAR, NONE, DEFAULT
 
@@ -180,7 +180,7 @@ class DataClassificationRuleOperateDTO:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this DataClassificationRuleOperateDTO.
+        r"""Sets the method of this DataClassificationRuleOperateDTO.
 
         规则方式, REGULAR, NONE, DEFAULT
 
@@ -191,7 +191,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def content_expression(self):
-        """Gets the content_expression of this DataClassificationRuleOperateDTO.
+        r"""Gets the content_expression of this DataClassificationRuleOperateDTO.
 
         内容表达式
 
@@ -202,7 +202,7 @@ class DataClassificationRuleOperateDTO:
 
     @content_expression.setter
     def content_expression(self, content_expression):
-        """Sets the content_expression of this DataClassificationRuleOperateDTO.
+        r"""Sets the content_expression of this DataClassificationRuleOperateDTO.
 
         内容表达式
 
@@ -213,7 +213,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def column_expression(self):
-        """Gets the column_expression of this DataClassificationRuleOperateDTO.
+        r"""Gets the column_expression of this DataClassificationRuleOperateDTO.
 
         列表达式
 
@@ -224,7 +224,7 @@ class DataClassificationRuleOperateDTO:
 
     @column_expression.setter
     def column_expression(self, column_expression):
-        """Sets the column_expression of this DataClassificationRuleOperateDTO.
+        r"""Sets the column_expression of this DataClassificationRuleOperateDTO.
 
         列表达式
 
@@ -235,7 +235,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def commit_expression(self):
-        """Gets the commit_expression of this DataClassificationRuleOperateDTO.
+        r"""Gets the commit_expression of this DataClassificationRuleOperateDTO.
 
         备注表达式
 
@@ -246,7 +246,7 @@ class DataClassificationRuleOperateDTO:
 
     @commit_expression.setter
     def commit_expression(self, commit_expression):
-        """Sets the commit_expression of this DataClassificationRuleOperateDTO.
+        r"""Sets the commit_expression of this DataClassificationRuleOperateDTO.
 
         备注表达式
 
@@ -257,7 +257,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def builtin_rule_id(self):
-        """Gets the builtin_rule_id of this DataClassificationRuleOperateDTO.
+        r"""Gets the builtin_rule_id of this DataClassificationRuleOperateDTO.
 
         内置规则id
 
@@ -268,7 +268,7 @@ class DataClassificationRuleOperateDTO:
 
     @builtin_rule_id.setter
     def builtin_rule_id(self, builtin_rule_id):
-        """Sets the builtin_rule_id of this DataClassificationRuleOperateDTO.
+        r"""Sets the builtin_rule_id of this DataClassificationRuleOperateDTO.
 
         内置规则id
 
@@ -279,7 +279,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationRuleOperateDTO.
+        r"""Gets the description of this DataClassificationRuleOperateDTO.
 
         规则描述
 
@@ -290,7 +290,7 @@ class DataClassificationRuleOperateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationRuleOperateDTO.
+        r"""Sets the description of this DataClassificationRuleOperateDTO.
 
         规则描述
 
@@ -301,7 +301,7 @@ class DataClassificationRuleOperateDTO:
 
     @property
     def category_id(self):
-        """Gets the category_id of this DataClassificationRuleOperateDTO.
+        r"""Gets the category_id of this DataClassificationRuleOperateDTO.
 
         分类ID
 
@@ -312,7 +312,7 @@ class DataClassificationRuleOperateDTO:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this DataClassificationRuleOperateDTO.
+        r"""Sets the category_id of this DataClassificationRuleOperateDTO.
 
         分类ID
 

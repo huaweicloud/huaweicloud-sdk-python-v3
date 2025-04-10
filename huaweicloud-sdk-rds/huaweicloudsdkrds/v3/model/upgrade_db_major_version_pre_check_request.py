@@ -29,7 +29,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpgradeDbMajorVersionPreCheckRequest
+        r"""UpgradeDbMajorVersionPreCheckRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeDbMajorVersionPreCheckRequest.
+        r"""Gets the instance_id of this UpgradeDbMajorVersionPreCheckRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeDbMajorVersionPreCheckRequest.
+        r"""Sets the instance_id of this UpgradeDbMajorVersionPreCheckRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpgradeDbMajorVersionPreCheckRequest.
+        r"""Gets the x_language of this UpgradeDbMajorVersionPreCheckRequest.
 
         语言。默认en-us。
 
@@ -89,7 +89,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpgradeDbMajorVersionPreCheckRequest.
+        r"""Sets the x_language of this UpgradeDbMajorVersionPreCheckRequest.
 
         语言。默认en-us。
 
@@ -100,7 +100,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeDbMajorVersionPreCheckRequest.
+        r"""Gets the body of this UpgradeDbMajorVersionPreCheckRequest.
 
         :return: The body of this UpgradeDbMajorVersionPreCheckRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgresqlPreCheckUpgradeMajorVersionReq`
@@ -109,7 +109,7 @@ class UpgradeDbMajorVersionPreCheckRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeDbMajorVersionPreCheckRequest.
+        r"""Sets the body of this UpgradeDbMajorVersionPreCheckRequest.
 
         :param body: The body of this UpgradeDbMajorVersionPreCheckRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgresqlPreCheckUpgradeMajorVersionReq`

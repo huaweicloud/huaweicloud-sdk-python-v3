@@ -31,7 +31,7 @@ class MeshCluster:
     }
 
     def __init__(self, cluster_id=None, project_id=None, injection=None, installation=None):
-        """MeshCluster
+        r"""MeshCluster
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class MeshCluster:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MeshCluster.
+        r"""Gets the cluster_id of this MeshCluster.
 
         集群ID，资源唯一标识，通过该ID查询需要添加的集群
 
@@ -72,7 +72,7 @@ class MeshCluster:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MeshCluster.
+        r"""Sets the cluster_id of this MeshCluster.
 
         集群ID，资源唯一标识，通过该ID查询需要添加的集群
 
@@ -83,7 +83,7 @@ class MeshCluster:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MeshCluster.
+        r"""Gets the project_id of this MeshCluster.
 
         集群所属的projectID
 
@@ -94,7 +94,7 @@ class MeshCluster:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MeshCluster.
+        r"""Sets the project_id of this MeshCluster.
 
         集群所属的projectID
 
@@ -105,7 +105,7 @@ class MeshCluster:
 
     @property
     def injection(self):
-        """Gets the injection of this MeshCluster.
+        r"""Gets the injection of this MeshCluster.
 
         :return: The injection of this MeshCluster.
         :rtype: :class:`huaweicloudsdkasm.v1.InjectionConfig`
@@ -114,7 +114,7 @@ class MeshCluster:
 
     @injection.setter
     def injection(self, injection):
-        """Sets the injection of this MeshCluster.
+        r"""Sets the injection of this MeshCluster.
 
         :param injection: The injection of this MeshCluster.
         :type injection: :class:`huaweicloudsdkasm.v1.InjectionConfig`
@@ -123,7 +123,7 @@ class MeshCluster:
 
     @property
     def installation(self):
-        """Gets the installation of this MeshCluster.
+        r"""Gets the installation of this MeshCluster.
 
         :return: The installation of this MeshCluster.
         :rtype: :class:`huaweicloudsdkasm.v1.InstallationConfig`
@@ -132,7 +132,7 @@ class MeshCluster:
 
     @installation.setter
     def installation(self, installation):
-        """Sets the installation of this MeshCluster.
+        r"""Sets the installation of this MeshCluster.
 
         :param installation: The installation of this MeshCluster.
         :type installation: :class:`huaweicloudsdkasm.v1.InstallationConfig`

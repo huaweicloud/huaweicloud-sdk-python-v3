@@ -33,7 +33,7 @@ class ListColumnsRequest:
     }
 
     def __init__(self, workspace=None, connection_id=None, table_id=None, limit=None, offset=None):
-        """ListColumnsRequest
+        r"""ListColumnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListColumnsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListColumnsRequest.
+        r"""Gets the workspace of this ListColumnsRequest.
 
         数据所在空间的id值
 
@@ -79,7 +79,7 @@ class ListColumnsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListColumnsRequest.
+        r"""Sets the workspace of this ListColumnsRequest.
 
         数据所在空间的id值
 
@@ -90,7 +90,7 @@ class ListColumnsRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListColumnsRequest.
+        r"""Gets the connection_id of this ListColumnsRequest.
 
         数据连接id
 
@@ -101,7 +101,7 @@ class ListColumnsRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListColumnsRequest.
+        r"""Sets the connection_id of this ListColumnsRequest.
 
         数据连接id
 
@@ -112,7 +112,7 @@ class ListColumnsRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this ListColumnsRequest.
+        r"""Gets the table_id of this ListColumnsRequest.
 
         表id
 
@@ -123,7 +123,7 @@ class ListColumnsRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this ListColumnsRequest.
+        r"""Sets the table_id of this ListColumnsRequest.
 
         表id
 
@@ -134,7 +134,7 @@ class ListColumnsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListColumnsRequest.
+        r"""Gets the limit of this ListColumnsRequest.
 
         数据条数限制
 
@@ -145,7 +145,7 @@ class ListColumnsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListColumnsRequest.
+        r"""Sets the limit of this ListColumnsRequest.
 
         数据条数限制
 
@@ -156,7 +156,7 @@ class ListColumnsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListColumnsRequest.
+        r"""Gets the offset of this ListColumnsRequest.
 
         偏移量
 
@@ -167,7 +167,7 @@ class ListColumnsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListColumnsRequest.
+        r"""Sets the offset of this ListColumnsRequest.
 
         偏移量
 

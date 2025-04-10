@@ -30,7 +30,7 @@ class RestartInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, job_id=None):
-        """RestartInstanceResponse
+        r"""RestartInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestartInstanceResponse.
+        r"""Gets the instance_id of this RestartInstanceResponse.
 
         DDM实例ID。
 
@@ -69,7 +69,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestartInstanceResponse.
+        r"""Sets the instance_id of this RestartInstanceResponse.
 
         DDM实例ID。
 
@@ -80,7 +80,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this RestartInstanceResponse.
+        r"""Gets the instance_name of this RestartInstanceResponse.
 
         DDM实例名称。
 
@@ -91,7 +91,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this RestartInstanceResponse.
+        r"""Sets the instance_name of this RestartInstanceResponse.
 
         DDM实例名称。
 
@@ -102,7 +102,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartInstanceResponse.
+        r"""Gets the job_id of this RestartInstanceResponse.
 
         任务ID。
 
@@ -113,7 +113,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartInstanceResponse.
+        r"""Sets the job_id of this RestartInstanceResponse.
 
         任务ID。
 

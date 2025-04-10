@@ -41,7 +41,7 @@ class ShowHisMeetingDetailRequest:
     }
 
     def __init__(self, conf_uuid=None, offset=None, limit=None, search_key=None, user_uuid=None, x_type=None, x_query_type=None, x_authorization_type=None, x_site_id=None):
-        """ShowHisMeetingDetailRequest
+        r"""ShowHisMeetingDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this ShowHisMeetingDetailRequest.
+        r"""Gets the conf_uuid of this ShowHisMeetingDetailRequest.
 
         会议UUID。
 
@@ -109,7 +109,7 @@ class ShowHisMeetingDetailRequest:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this ShowHisMeetingDetailRequest.
+        r"""Sets the conf_uuid of this ShowHisMeetingDetailRequest.
 
         会议UUID。
 
@@ -120,7 +120,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowHisMeetingDetailRequest.
+        r"""Gets the offset of this ShowHisMeetingDetailRequest.
 
         查询偏移量。默认为0。针对PageParticipant 中的与会者分页。
 
@@ -131,7 +131,7 @@ class ShowHisMeetingDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowHisMeetingDetailRequest.
+        r"""Sets the offset of this ShowHisMeetingDetailRequest.
 
         查询偏移量。默认为0。针对PageParticipant 中的与会者分页。
 
@@ -142,7 +142,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowHisMeetingDetailRequest.
+        r"""Gets the limit of this ShowHisMeetingDetailRequest.
 
         查询数量。默认值20。
 
@@ -153,7 +153,7 @@ class ShowHisMeetingDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowHisMeetingDetailRequest.
+        r"""Sets the limit of this ShowHisMeetingDetailRequest.
 
         查询数量。默认值20。
 
@@ -164,7 +164,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ShowHisMeetingDetailRequest.
+        r"""Gets the search_key of this ShowHisMeetingDetailRequest.
 
         查询条件 。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-128个字符。
 
@@ -175,7 +175,7 @@ class ShowHisMeetingDetailRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ShowHisMeetingDetailRequest.
+        r"""Sets the search_key of this ShowHisMeetingDetailRequest.
 
         查询条件 。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-128个字符。
 
@@ -186,7 +186,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this ShowHisMeetingDetailRequest.
+        r"""Gets the user_uuid of this ShowHisMeetingDetailRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -197,7 +197,7 @@ class ShowHisMeetingDetailRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this ShowHisMeetingDetailRequest.
+        r"""Sets the user_uuid of this ShowHisMeetingDetailRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -208,7 +208,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def x_type(self):
-        """Gets the x_type of this ShowHisMeetingDetailRequest.
+        r"""Gets the x_type of this ShowHisMeetingDetailRequest.
 
         默认值为0。 0: 不区分会议室和与会人。 1：分页查询区分会议室和与会人，结果合并返回。 2：单独查询会议室与与会人，结果也是单独返回。
 
@@ -219,7 +219,7 @@ class ShowHisMeetingDetailRequest:
 
     @x_type.setter
     def x_type(self, x_type):
-        """Sets the x_type of this ShowHisMeetingDetailRequest.
+        r"""Sets the x_type of this ShowHisMeetingDetailRequest.
 
         默认值为0。 0: 不区分会议室和与会人。 1：分页查询区分会议室和与会人，结果合并返回。 2：单独查询会议室与与会人，结果也是单独返回。
 
@@ -230,7 +230,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def x_query_type(self):
-        """Gets the x_query_type of this ShowHisMeetingDetailRequest.
+        r"""Gets the x_query_type of this ShowHisMeetingDetailRequest.
 
         当X-Type为2时，该字段有效。默认值为0。 0: 查询与会人。 1：查询终端。
 
@@ -241,7 +241,7 @@ class ShowHisMeetingDetailRequest:
 
     @x_query_type.setter
     def x_query_type(self, x_query_type):
-        """Sets the x_query_type of this ShowHisMeetingDetailRequest.
+        r"""Sets the x_query_type of this ShowHisMeetingDetailRequest.
 
         当X-Type为2时，该字段有效。默认值为0。 0: 查询与会人。 1：查询终端。
 
@@ -252,7 +252,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this ShowHisMeetingDetailRequest.
+        r"""Gets the x_authorization_type of this ShowHisMeetingDetailRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -263,7 +263,7 @@ class ShowHisMeetingDetailRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this ShowHisMeetingDetailRequest.
+        r"""Sets the x_authorization_type of this ShowHisMeetingDetailRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -274,7 +274,7 @@ class ShowHisMeetingDetailRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this ShowHisMeetingDetailRequest.
+        r"""Gets the x_site_id of this ShowHisMeetingDetailRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -285,7 +285,7 @@ class ShowHisMeetingDetailRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this ShowHisMeetingDetailRequest.
+        r"""Sets the x_site_id of this ShowHisMeetingDetailRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

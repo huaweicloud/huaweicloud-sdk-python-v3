@@ -27,7 +27,7 @@ class ReinstallVolumeSpec:
     }
 
     def __init__(self, image_id=None, cmk_id=None):
-        """ReinstallVolumeSpec
+        r"""ReinstallVolumeSpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReinstallVolumeSpec:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ReinstallVolumeSpec.
+        r"""Gets the image_id of this ReinstallVolumeSpec.
 
         用户自定义镜像ID
 
@@ -61,7 +61,7 @@ class ReinstallVolumeSpec:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ReinstallVolumeSpec.
+        r"""Sets the image_id of this ReinstallVolumeSpec.
 
         用户自定义镜像ID
 
@@ -72,7 +72,7 @@ class ReinstallVolumeSpec:
 
     @property
     def cmk_id(self):
-        """Gets the cmk_id of this ReinstallVolumeSpec.
+        r"""Gets the cmk_id of this ReinstallVolumeSpec.
 
         用户主密钥ID。默认为空时，表示云硬盘不加密。
 
@@ -83,7 +83,7 @@ class ReinstallVolumeSpec:
 
     @cmk_id.setter
     def cmk_id(self, cmk_id):
-        """Sets the cmk_id of this ReinstallVolumeSpec.
+        r"""Sets the cmk_id of this ReinstallVolumeSpec.
 
         用户主密钥ID。默认为空时，表示云硬盘不加密。
 

@@ -32,7 +32,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
     }
 
     def __init__(self, app_count=None, workflow_count=None, job_count=None, succeed_job_count=None):
-        """ListWorkflowStatisticResponse
+        r"""ListWorkflowStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @property
     def app_count(self):
-        """Gets the app_count of this ListWorkflowStatisticResponse.
+        r"""Gets the app_count of this ListWorkflowStatisticResponse.
 
         应用总数
 
@@ -76,7 +76,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @app_count.setter
     def app_count(self, app_count):
-        """Sets the app_count of this ListWorkflowStatisticResponse.
+        r"""Sets the app_count of this ListWorkflowStatisticResponse.
 
         应用总数
 
@@ -87,7 +87,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @property
     def workflow_count(self):
-        """Gets the workflow_count of this ListWorkflowStatisticResponse.
+        r"""Gets the workflow_count of this ListWorkflowStatisticResponse.
 
         流程总数
 
@@ -98,7 +98,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @workflow_count.setter
     def workflow_count(self, workflow_count):
-        """Sets the workflow_count of this ListWorkflowStatisticResponse.
+        r"""Sets the workflow_count of this ListWorkflowStatisticResponse.
 
         流程总数
 
@@ -109,7 +109,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ListWorkflowStatisticResponse.
+        r"""Gets the job_count of this ListWorkflowStatisticResponse.
 
         作业总数
 
@@ -120,7 +120,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ListWorkflowStatisticResponse.
+        r"""Sets the job_count of this ListWorkflowStatisticResponse.
 
         作业总数
 
@@ -131,7 +131,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @property
     def succeed_job_count(self):
-        """Gets the succeed_job_count of this ListWorkflowStatisticResponse.
+        r"""Gets the succeed_job_count of this ListWorkflowStatisticResponse.
 
         运行成功作业总数
 
@@ -142,7 +142,7 @@ class ListWorkflowStatisticResponse(SdkResponse):
 
     @succeed_job_count.setter
     def succeed_job_count(self, succeed_job_count):
-        """Sets the succeed_job_count of this ListWorkflowStatisticResponse.
+        r"""Sets the succeed_job_count of this ListWorkflowStatisticResponse.
 
         运行成功作业总数
 

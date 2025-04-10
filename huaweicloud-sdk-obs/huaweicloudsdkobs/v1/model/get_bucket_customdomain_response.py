@@ -40,7 +40,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
     }
 
     def __init__(self, domains=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """GetBucketCustomdomainResponse
+        r"""GetBucketCustomdomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this GetBucketCustomdomainResponse.
+        r"""Gets the domains of this GetBucketCustomdomainResponse.
 
         :return: The domains of this GetBucketCustomdomainResponse.
         :rtype: :class:`huaweicloudsdkobs.v1.Domains`
@@ -97,7 +97,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this GetBucketCustomdomainResponse.
+        r"""Sets the domains of this GetBucketCustomdomainResponse.
 
         :param domains: The domains of this GetBucketCustomdomainResponse.
         :type domains: :class:`huaweicloudsdkobs.v1.Domains`
@@ -106,7 +106,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this GetBucketCustomdomainResponse.
+        r"""Gets the x_obs_id_2 of this GetBucketCustomdomainResponse.
 
         :return: The x_obs_id_2 of this GetBucketCustomdomainResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this GetBucketCustomdomainResponse.
+        r"""Sets the x_obs_id_2 of this GetBucketCustomdomainResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this GetBucketCustomdomainResponse.
         :type x_obs_id_2: str
@@ -124,7 +124,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this GetBucketCustomdomainResponse.
+        r"""Gets the x_obs_request_id of this GetBucketCustomdomainResponse.
 
         :return: The x_obs_request_id of this GetBucketCustomdomainResponse.
         :rtype: str
@@ -133,7 +133,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this GetBucketCustomdomainResponse.
+        r"""Sets the x_obs_request_id of this GetBucketCustomdomainResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this GetBucketCustomdomainResponse.
         :type x_obs_request_id: str
@@ -142,7 +142,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this GetBucketCustomdomainResponse.
+        r"""Gets the e_tag of this GetBucketCustomdomainResponse.
 
         :return: The e_tag of this GetBucketCustomdomainResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this GetBucketCustomdomainResponse.
+        r"""Sets the e_tag of this GetBucketCustomdomainResponse.
 
         :param e_tag: The e_tag of this GetBucketCustomdomainResponse.
         :type e_tag: str
@@ -160,7 +160,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this GetBucketCustomdomainResponse.
+        r"""Gets the connection of this GetBucketCustomdomainResponse.
 
         :return: The connection of this GetBucketCustomdomainResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this GetBucketCustomdomainResponse.
+        r"""Sets the connection of this GetBucketCustomdomainResponse.
 
         :param connection: The connection of this GetBucketCustomdomainResponse.
         :type connection: str
@@ -178,7 +178,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this GetBucketCustomdomainResponse.
+        r"""Gets the content_length of this GetBucketCustomdomainResponse.
 
         :return: The content_length of this GetBucketCustomdomainResponse.
         :rtype: str
@@ -187,7 +187,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this GetBucketCustomdomainResponse.
+        r"""Sets the content_length of this GetBucketCustomdomainResponse.
 
         :param content_length: The content_length of this GetBucketCustomdomainResponse.
         :type content_length: str
@@ -196,7 +196,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this GetBucketCustomdomainResponse.
+        r"""Gets the date of this GetBucketCustomdomainResponse.
 
         :return: The date of this GetBucketCustomdomainResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class GetBucketCustomdomainResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetBucketCustomdomainResponse.
+        r"""Sets the date of this GetBucketCustomdomainResponse.
 
         :param date: The date of this GetBucketCustomdomainResponse.
         :type date: str

@@ -57,7 +57,7 @@ class MetricAlarms:
     }
 
     def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, insufficientdata_actions=None, alarm_action_begin_time=None, alarm_action_end_time=None, alarm_id=None, update_time=None, alarm_state=None, enterprise_project_id=None):
-        """MetricAlarms
+        r"""MetricAlarms
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class MetricAlarms:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this MetricAlarms.
+        r"""Gets the alarm_name of this MetricAlarms.
 
         告警名称。
 
@@ -160,7 +160,7 @@ class MetricAlarms:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this MetricAlarms.
+        r"""Sets the alarm_name of this MetricAlarms.
 
         告警名称。
 
@@ -171,7 +171,7 @@ class MetricAlarms:
 
     @property
     def alarm_description(self):
-        """Gets the alarm_description of this MetricAlarms.
+        r"""Gets the alarm_description of this MetricAlarms.
 
         告警描述。
 
@@ -182,7 +182,7 @@ class MetricAlarms:
 
     @alarm_description.setter
     def alarm_description(self, alarm_description):
-        """Sets the alarm_description of this MetricAlarms.
+        r"""Sets the alarm_description of this MetricAlarms.
 
         告警描述。
 
@@ -193,7 +193,7 @@ class MetricAlarms:
 
     @property
     def metric(self):
-        """Gets the metric of this MetricAlarms.
+        r"""Gets the metric of this MetricAlarms.
 
         :return: The metric of this MetricAlarms.
         :rtype: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
@@ -202,7 +202,7 @@ class MetricAlarms:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this MetricAlarms.
+        r"""Sets the metric of this MetricAlarms.
 
         :param metric: The metric of this MetricAlarms.
         :type metric: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
@@ -211,7 +211,7 @@ class MetricAlarms:
 
     @property
     def condition(self):
-        """Gets the condition of this MetricAlarms.
+        r"""Gets the condition of this MetricAlarms.
 
         :return: The condition of this MetricAlarms.
         :rtype: :class:`huaweicloudsdkces.v1.Condition`
@@ -220,7 +220,7 @@ class MetricAlarms:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this MetricAlarms.
+        r"""Sets the condition of this MetricAlarms.
 
         :param condition: The condition of this MetricAlarms.
         :type condition: :class:`huaweicloudsdkces.v1.Condition`
@@ -229,7 +229,7 @@ class MetricAlarms:
 
     @property
     def alarm_enabled(self):
-        """Gets the alarm_enabled of this MetricAlarms.
+        r"""Gets the alarm_enabled of this MetricAlarms.
 
         是否启用该条告警。
 
@@ -240,7 +240,7 @@ class MetricAlarms:
 
     @alarm_enabled.setter
     def alarm_enabled(self, alarm_enabled):
-        """Sets the alarm_enabled of this MetricAlarms.
+        r"""Sets the alarm_enabled of this MetricAlarms.
 
         是否启用该条告警。
 
@@ -251,7 +251,7 @@ class MetricAlarms:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this MetricAlarms.
+        r"""Gets the alarm_level of this MetricAlarms.
 
         告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
 
@@ -262,7 +262,7 @@ class MetricAlarms:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this MetricAlarms.
+        r"""Sets the alarm_level of this MetricAlarms.
 
         告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
 
@@ -273,7 +273,7 @@ class MetricAlarms:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this MetricAlarms.
+        r"""Gets the alarm_type of this MetricAlarms.
 
         告警类型。 仅针对事件告警的参数，枚举类型：EVENT.SYS或者EVENT.CUSTOM
 
@@ -284,7 +284,7 @@ class MetricAlarms:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this MetricAlarms.
+        r"""Sets the alarm_type of this MetricAlarms.
 
         告警类型。 仅针对事件告警的参数，枚举类型：EVENT.SYS或者EVENT.CUSTOM
 
@@ -295,7 +295,7 @@ class MetricAlarms:
 
     @property
     def alarm_action_enabled(self):
-        """Gets the alarm_action_enabled of this MetricAlarms.
+        r"""Gets the alarm_action_enabled of this MetricAlarms.
 
         是否启用该条告警触发的动作。
 
@@ -306,7 +306,7 @@ class MetricAlarms:
 
     @alarm_action_enabled.setter
     def alarm_action_enabled(self, alarm_action_enabled):
-        """Sets the alarm_action_enabled of this MetricAlarms.
+        r"""Sets the alarm_action_enabled of this MetricAlarms.
 
         是否启用该条告警触发的动作。
 
@@ -317,7 +317,7 @@ class MetricAlarms:
 
     @property
     def alarm_actions(self):
-        """Gets the alarm_actions of this MetricAlarms.
+        r"""Gets the alarm_actions of this MetricAlarms.
 
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -328,7 +328,7 @@ class MetricAlarms:
 
     @alarm_actions.setter
     def alarm_actions(self, alarm_actions):
-        """Sets the alarm_actions of this MetricAlarms.
+        r"""Sets the alarm_actions of this MetricAlarms.
 
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -339,7 +339,7 @@ class MetricAlarms:
 
     @property
     def ok_actions(self):
-        """Gets the ok_actions of this MetricAlarms.
+        r"""Gets the ok_actions of this MetricAlarms.
 
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -350,7 +350,7 @@ class MetricAlarms:
 
     @ok_actions.setter
     def ok_actions(self, ok_actions):
-        """Sets the ok_actions of this MetricAlarms.
+        r"""Sets the ok_actions of this MetricAlarms.
 
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
@@ -361,7 +361,7 @@ class MetricAlarms:
 
     @property
     def insufficientdata_actions(self):
-        """Gets the insufficientdata_actions of this MetricAlarms.
+        r"""Gets the insufficientdata_actions of this MetricAlarms.
 
         数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
 
@@ -372,7 +372,7 @@ class MetricAlarms:
 
     @insufficientdata_actions.setter
     def insufficientdata_actions(self, insufficientdata_actions):
-        """Sets the insufficientdata_actions of this MetricAlarms.
+        r"""Sets the insufficientdata_actions of this MetricAlarms.
 
         数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
 
@@ -383,7 +383,7 @@ class MetricAlarms:
 
     @property
     def alarm_action_begin_time(self):
-        """Gets the alarm_action_begin_time of this MetricAlarms.
+        r"""Gets the alarm_action_begin_time of this MetricAlarms.
 
         告警规则生效的开始时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
 
@@ -394,7 +394,7 @@ class MetricAlarms:
 
     @alarm_action_begin_time.setter
     def alarm_action_begin_time(self, alarm_action_begin_time):
-        """Sets the alarm_action_begin_time of this MetricAlarms.
+        r"""Sets the alarm_action_begin_time of this MetricAlarms.
 
         告警规则生效的开始时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
 
@@ -405,7 +405,7 @@ class MetricAlarms:
 
     @property
     def alarm_action_end_time(self):
-        """Gets the alarm_action_end_time of this MetricAlarms.
+        r"""Gets the alarm_action_end_time of this MetricAlarms.
 
         告警规则生效的结束时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
 
@@ -416,7 +416,7 @@ class MetricAlarms:
 
     @alarm_action_end_time.setter
     def alarm_action_end_time(self, alarm_action_end_time):
-        """Sets the alarm_action_end_time of this MetricAlarms.
+        r"""Sets the alarm_action_end_time of this MetricAlarms.
 
         告警规则生效的结束时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
 
@@ -427,7 +427,7 @@ class MetricAlarms:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this MetricAlarms.
+        r"""Gets the alarm_id of this MetricAlarms.
 
         告警规则的ID。
 
@@ -438,7 +438,7 @@ class MetricAlarms:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this MetricAlarms.
+        r"""Sets the alarm_id of this MetricAlarms.
 
         告警规则的ID。
 
@@ -449,7 +449,7 @@ class MetricAlarms:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MetricAlarms.
+        r"""Gets the update_time of this MetricAlarms.
 
         告警状态变更的时间，UNIX时间戳，单位毫秒。
 
@@ -460,7 +460,7 @@ class MetricAlarms:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MetricAlarms.
+        r"""Sets the update_time of this MetricAlarms.
 
         告警状态变更的时间，UNIX时间戳，单位毫秒。
 
@@ -471,7 +471,7 @@ class MetricAlarms:
 
     @property
     def alarm_state(self):
-        """Gets the alarm_state of this MetricAlarms.
+        r"""Gets the alarm_state of this MetricAlarms.
 
         告警状态，取值说明：  ok，正常 alarm，告警 insufficient_data，数据不足
 
@@ -482,7 +482,7 @@ class MetricAlarms:
 
     @alarm_state.setter
     def alarm_state(self, alarm_state):
-        """Sets the alarm_state of this MetricAlarms.
+        r"""Sets the alarm_state of this MetricAlarms.
 
         告警状态，取值说明：  ok，正常 alarm，告警 insufficient_data，数据不足
 
@@ -493,7 +493,7 @@ class MetricAlarms:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MetricAlarms.
+        r"""Gets the enterprise_project_id of this MetricAlarms.
 
         企业项目ID。 取值为all_granted_eps时，表示所有企业项目; 取值为0时，表示默认的企业项目default。
 
@@ -504,7 +504,7 @@ class MetricAlarms:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MetricAlarms.
+        r"""Sets the enterprise_project_id of this MetricAlarms.
 
         企业项目ID。 取值为all_granted_eps时，表示所有企业项目; 取值为0时，表示默认的企业项目default。
 

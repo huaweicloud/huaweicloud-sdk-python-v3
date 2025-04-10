@@ -28,7 +28,7 @@ class ListLeagueDatasetsResponse(SdkResponse):
     }
 
     def __init__(self, lists=None, total=None):
-        """ListLeagueDatasetsResponse
+        r"""ListLeagueDatasetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLeagueDatasetsResponse(SdkResponse):
 
     @property
     def lists(self):
-        """Gets the lists of this ListLeagueDatasetsResponse.
+        r"""Gets the lists of this ListLeagueDatasetsResponse.
 
         实例集合
 
@@ -62,7 +62,7 @@ class ListLeagueDatasetsResponse(SdkResponse):
 
     @lists.setter
     def lists(self, lists):
-        """Sets the lists of this ListLeagueDatasetsResponse.
+        r"""Sets the lists of this ListLeagueDatasetsResponse.
 
         实例集合
 
@@ -73,7 +73,7 @@ class ListLeagueDatasetsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListLeagueDatasetsResponse.
+        r"""Gets the total of this ListLeagueDatasetsResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListLeagueDatasetsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListLeagueDatasetsResponse.
+        r"""Sets the total of this ListLeagueDatasetsResponse.
 
         总记录数
 

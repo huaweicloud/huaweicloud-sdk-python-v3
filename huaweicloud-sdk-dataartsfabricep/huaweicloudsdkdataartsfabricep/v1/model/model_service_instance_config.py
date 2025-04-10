@@ -25,7 +25,7 @@ class ModelServiceInstanceConfig:
     }
 
     def __init__(self, resource=None):
-        """ModelServiceInstanceConfig
+        r"""ModelServiceInstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModelServiceInstanceConfig:
 
     @property
     def resource(self):
-        """Gets the resource of this ModelServiceInstanceConfig.
+        r"""Gets the resource of this ModelServiceInstanceConfig.
 
         :return: The resource of this ModelServiceInstanceConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ResourceDemand`
@@ -51,7 +51,7 @@ class ModelServiceInstanceConfig:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this ModelServiceInstanceConfig.
+        r"""Sets the resource of this ModelServiceInstanceConfig.
 
         :param resource: The resource of this ModelServiceInstanceConfig.
         :type resource: :class:`huaweicloudsdkdataartsfabricep.v1.ResourceDemand`

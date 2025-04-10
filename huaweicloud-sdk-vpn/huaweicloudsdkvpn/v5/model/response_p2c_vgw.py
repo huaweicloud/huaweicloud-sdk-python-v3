@@ -25,7 +25,7 @@ class ResponseP2cVgw:
     }
 
     def __init__(self, id=None):
-        """ResponseP2cVgw
+        r"""ResponseP2cVgw
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResponseP2cVgw:
 
     @property
     def id(self):
-        """Gets the id of this ResponseP2cVgw.
+        r"""Gets the id of this ResponseP2cVgw.
 
         P2C VPN网关ID
 
@@ -54,7 +54,7 @@ class ResponseP2cVgw:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseP2cVgw.
+        r"""Sets the id of this ResponseP2cVgw.
 
         P2C VPN网关ID
 

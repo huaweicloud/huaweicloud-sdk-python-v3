@@ -25,7 +25,7 @@ class ShowSiteNetworkRequest:
     }
 
     def __init__(self, site_network_id=None):
-        """ShowSiteNetworkRequest
+        r"""ShowSiteNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSiteNetworkRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this ShowSiteNetworkRequest.
+        r"""Gets the site_network_id of this ShowSiteNetworkRequest.
 
         分支网络的ID。
 
@@ -53,7 +53,7 @@ class ShowSiteNetworkRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this ShowSiteNetworkRequest.
+        r"""Sets the site_network_id of this ShowSiteNetworkRequest.
 
         分支网络的ID。
 

@@ -25,7 +25,7 @@ class SetProfileImageRequestBody:
     }
 
     def __init__(self, file=None):
-        """SetProfileImageRequestBody
+        r"""SetProfileImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetProfileImageRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this SetProfileImageRequestBody.
+        r"""Gets the file of this SetProfileImageRequestBody.
 
         上传的头像图片，图片文件不超过10MB，尺寸不超过4096*4096
 
@@ -53,7 +53,7 @@ class SetProfileImageRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this SetProfileImageRequestBody.
+        r"""Sets the file of this SetProfileImageRequestBody.
 
         上传的头像图片，图片文件不超过10MB，尺寸不超过4096*4096
 

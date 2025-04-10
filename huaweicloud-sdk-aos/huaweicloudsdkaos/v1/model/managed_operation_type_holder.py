@@ -25,7 +25,7 @@ class ManagedOperationTypeHolder:
     }
 
     def __init__(self, managed_operation=None):
-        """ManagedOperationTypeHolder
+        r"""ManagedOperationTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ManagedOperationTypeHolder:
 
     @property
     def managed_operation(self):
-        """Gets the managed_operation of this ManagedOperationTypeHolder.
+        r"""Gets the managed_operation of this ManagedOperationTypeHolder.
 
         :return: The managed_operation of this ManagedOperationTypeHolder.
         :rtype: :class:`huaweicloudsdkaos.v1.ManagedOperation`
@@ -52,7 +52,7 @@ class ManagedOperationTypeHolder:
 
     @managed_operation.setter
     def managed_operation(self, managed_operation):
-        """Sets the managed_operation of this ManagedOperationTypeHolder.
+        r"""Sets the managed_operation of this ManagedOperationTypeHolder.
 
         :param managed_operation: The managed_operation of this ManagedOperationTypeHolder.
         :type managed_operation: :class:`huaweicloudsdkaos.v1.ManagedOperation`

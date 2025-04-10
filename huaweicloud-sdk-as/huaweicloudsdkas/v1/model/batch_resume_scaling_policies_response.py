@@ -24,7 +24,7 @@ class BatchResumeScalingPoliciesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchResumeScalingPoliciesResponse
+        r"""BatchResumeScalingPoliciesResponse
 
         The model defined in huaweicloud sdk
 

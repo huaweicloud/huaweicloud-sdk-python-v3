@@ -26,7 +26,7 @@ class RetryPipelineRunResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """RetryPipelineRunResponse
+        r"""RetryPipelineRunResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RetryPipelineRunResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this RetryPipelineRunResponse.
+        r"""Gets the success of this RetryPipelineRunResponse.
 
         操作是否成功
 
@@ -55,7 +55,7 @@ class RetryPipelineRunResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this RetryPipelineRunResponse.
+        r"""Sets the success of this RetryPipelineRunResponse.
 
         操作是否成功
 

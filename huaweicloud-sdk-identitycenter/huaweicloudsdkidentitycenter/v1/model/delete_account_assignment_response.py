@@ -26,7 +26,7 @@ class DeleteAccountAssignmentResponse(SdkResponse):
     }
 
     def __init__(self, account_assignment_deletion_status=None):
-        """DeleteAccountAssignmentResponse
+        r"""DeleteAccountAssignmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAccountAssignmentResponse(SdkResponse):
 
     @property
     def account_assignment_deletion_status(self):
-        """Gets the account_assignment_deletion_status of this DeleteAccountAssignmentResponse.
+        r"""Gets the account_assignment_deletion_status of this DeleteAccountAssignmentResponse.
 
         :return: The account_assignment_deletion_status of this DeleteAccountAssignmentResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.AccountAssignmentOperationStatusDto`
@@ -53,7 +53,7 @@ class DeleteAccountAssignmentResponse(SdkResponse):
 
     @account_assignment_deletion_status.setter
     def account_assignment_deletion_status(self, account_assignment_deletion_status):
-        """Sets the account_assignment_deletion_status of this DeleteAccountAssignmentResponse.
+        r"""Sets the account_assignment_deletion_status of this DeleteAccountAssignmentResponse.
 
         :param account_assignment_deletion_status: The account_assignment_deletion_status of this DeleteAccountAssignmentResponse.
         :type account_assignment_deletion_status: :class:`huaweicloudsdkidentitycenter.v1.AccountAssignmentOperationStatusDto`

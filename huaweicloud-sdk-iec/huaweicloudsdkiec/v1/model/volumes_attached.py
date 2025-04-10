@@ -31,7 +31,7 @@ class VolumesAttached:
     }
 
     def __init__(self, id=None, boot_index=None, delete_on_termination=None, device=None):
-        """VolumesAttached
+        r"""VolumesAttached
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VolumesAttached:
 
     @property
     def id(self):
-        """Gets the id of this VolumesAttached.
+        r"""Gets the id of this VolumesAttached.
 
         磁盘ID，格式为UUID。
 
@@ -75,7 +75,7 @@ class VolumesAttached:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumesAttached.
+        r"""Sets the id of this VolumesAttached.
 
         磁盘ID，格式为UUID。
 
@@ -86,7 +86,7 @@ class VolumesAttached:
 
     @property
     def boot_index(self):
-        """Gets the boot_index of this VolumesAttached.
+        r"""Gets the boot_index of this VolumesAttached.
 
         启动标识。  - “0”代表系统盘 - 非“0”为数据盘。
 
@@ -97,7 +97,7 @@ class VolumesAttached:
 
     @boot_index.setter
     def boot_index(self, boot_index):
-        """Sets the boot_index of this VolumesAttached.
+        r"""Sets the boot_index of this VolumesAttached.
 
         启动标识。  - “0”代表系统盘 - 非“0”为数据盘。
 
@@ -108,7 +108,7 @@ class VolumesAttached:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this VolumesAttached.
+        r"""Gets the delete_on_termination of this VolumesAttached.
 
         删边缘实例时是否一并删除该磁盘。  - true：是 - false：否
 
@@ -119,7 +119,7 @@ class VolumesAttached:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this VolumesAttached.
+        r"""Sets the delete_on_termination of this VolumesAttached.
 
         删边缘实例时是否一并删除该磁盘。  - true：是 - false：否
 
@@ -130,7 +130,7 @@ class VolumesAttached:
 
     @property
     def device(self):
-        """Gets the device of this VolumesAttached.
+        r"""Gets the device of this VolumesAttached.
 
         硬盘挂载盘符，即磁盘挂载点。
 
@@ -141,7 +141,7 @@ class VolumesAttached:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this VolumesAttached.
+        r"""Sets the device of this VolumesAttached.
 
         硬盘挂载盘符，即磁盘挂载点。
 

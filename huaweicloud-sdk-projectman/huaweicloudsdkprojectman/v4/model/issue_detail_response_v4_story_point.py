@@ -27,7 +27,7 @@ class IssueDetailResponseV4StoryPoint:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueDetailResponseV4StoryPoint
+        r"""IssueDetailResponseV4StoryPoint
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueDetailResponseV4StoryPoint:
 
     @property
     def id(self):
-        """Gets the id of this IssueDetailResponseV4StoryPoint.
+        r"""Gets the id of this IssueDetailResponseV4StoryPoint.
 
         故事点id
 
@@ -61,7 +61,7 @@ class IssueDetailResponseV4StoryPoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueDetailResponseV4StoryPoint.
+        r"""Sets the id of this IssueDetailResponseV4StoryPoint.
 
         故事点id
 
@@ -72,7 +72,7 @@ class IssueDetailResponseV4StoryPoint:
 
     @property
     def name(self):
-        """Gets the name of this IssueDetailResponseV4StoryPoint.
+        r"""Gets the name of this IssueDetailResponseV4StoryPoint.
 
         故事点名称
 
@@ -83,7 +83,7 @@ class IssueDetailResponseV4StoryPoint:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueDetailResponseV4StoryPoint.
+        r"""Sets the name of this IssueDetailResponseV4StoryPoint.
 
         故事点名称
 

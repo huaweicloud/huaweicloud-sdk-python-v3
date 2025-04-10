@@ -31,7 +31,7 @@ class VideoJobResponseHostingResult:
     }
 
     def __init__(self, data=None, obs=None, status=None, result_json_overdue_at=None):
-        """VideoJobResponseHostingResult
+        r"""VideoJobResponseHostingResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VideoJobResponseHostingResult:
 
     @property
     def data(self):
-        """Gets the data of this VideoJobResponseHostingResult.
+        r"""Gets the data of this VideoJobResponseHostingResult.
 
         结果文件result.json的具体内容。
 
@@ -75,7 +75,7 @@ class VideoJobResponseHostingResult:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this VideoJobResponseHostingResult.
+        r"""Sets the data of this VideoJobResponseHostingResult.
 
         结果文件result.json的具体内容。
 
@@ -86,7 +86,7 @@ class VideoJobResponseHostingResult:
 
     @property
     def obs(self):
-        """Gets the obs of this VideoJobResponseHostingResult.
+        r"""Gets the obs of this VideoJobResponseHostingResult.
 
         结果文件所在的OBS桶和result.json文件路径
 
@@ -97,7 +97,7 @@ class VideoJobResponseHostingResult:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this VideoJobResponseHostingResult.
+        r"""Sets the obs of this VideoJobResponseHostingResult.
 
         结果文件所在的OBS桶和result.json文件路径
 
@@ -108,7 +108,7 @@ class VideoJobResponseHostingResult:
 
     @property
     def status(self):
-        """Gets the status of this VideoJobResponseHostingResult.
+        r"""Gets the status of this VideoJobResponseHostingResult.
 
         result.json文件的状态： - NOT_GENERATED：文件未生成 - AVAILABLE：文件可获取 - EXCEED_IN_SIZE：文件超过最大规格 - OVERDUE：文件过期 - DELETED_MISTAKENLY：文件误删除
 
@@ -119,7 +119,7 @@ class VideoJobResponseHostingResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VideoJobResponseHostingResult.
+        r"""Sets the status of this VideoJobResponseHostingResult.
 
         result.json文件的状态： - NOT_GENERATED：文件未生成 - AVAILABLE：文件可获取 - EXCEED_IN_SIZE：文件超过最大规格 - OVERDUE：文件过期 - DELETED_MISTAKENLY：文件误删除
 
@@ -130,7 +130,7 @@ class VideoJobResponseHostingResult:
 
     @property
     def result_json_overdue_at(self):
-        """Gets the result_json_overdue_at of this VideoJobResponseHostingResult.
+        r"""Gets the result_json_overdue_at of this VideoJobResponseHostingResult.
 
         result.json文件的过期日期，文件默认保存48小时。
 
@@ -141,7 +141,7 @@ class VideoJobResponseHostingResult:
 
     @result_json_overdue_at.setter
     def result_json_overdue_at(self, result_json_overdue_at):
-        """Sets the result_json_overdue_at of this VideoJobResponseHostingResult.
+        r"""Sets the result_json_overdue_at of this VideoJobResponseHostingResult.
 
         result.json文件的过期日期，文件默认保存48小时。
 

@@ -25,7 +25,7 @@ class RetryScriptExecutionRequest:
     }
 
     def __init__(self, body=None):
-        """RetryScriptExecutionRequest
+        r"""RetryScriptExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RetryScriptExecutionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RetryScriptExecutionRequest.
+        r"""Gets the body of this RetryScriptExecutionRequest.
 
         :return: The body of this RetryScriptExecutionRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RetryScriptExecutionReq`
@@ -52,7 +52,7 @@ class RetryScriptExecutionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RetryScriptExecutionRequest.
+        r"""Sets the body of this RetryScriptExecutionRequest.
 
         :param body: The body of this RetryScriptExecutionRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.RetryScriptExecutionReq`

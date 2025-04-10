@@ -27,7 +27,7 @@ class ObsInfo:
     }
 
     def __init__(self, bucket=None, object=None):
-        """ObsInfo
+        r"""ObsInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ObsInfo:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsInfo.
+        r"""Gets the bucket of this ObsInfo.
 
         OBS的bucket名称
 
@@ -59,7 +59,7 @@ class ObsInfo:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsInfo.
+        r"""Sets the bucket of this ObsInfo.
 
         OBS的bucket名称
 
@@ -70,7 +70,7 @@ class ObsInfo:
 
     @property
     def object(self):
-        """Gets the object of this ObsInfo.
+        r"""Gets the object of this ObsInfo.
 
         OBS对象路径
 
@@ -81,7 +81,7 @@ class ObsInfo:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this ObsInfo.
+        r"""Sets the object of this ObsInfo.
 
         OBS对象路径
 

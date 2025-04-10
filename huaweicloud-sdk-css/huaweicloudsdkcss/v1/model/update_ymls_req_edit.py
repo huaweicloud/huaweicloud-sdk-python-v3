@@ -25,7 +25,7 @@ class UpdateYmlsReqEdit:
     }
 
     def __init__(self, modify=None):
-        """UpdateYmlsReqEdit
+        r"""UpdateYmlsReqEdit
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateYmlsReqEdit:
 
     @property
     def modify(self):
-        """Gets the modify of this UpdateYmlsReqEdit.
+        r"""Gets the modify of this UpdateYmlsReqEdit.
 
         :return: The modify of this UpdateYmlsReqEdit.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
@@ -51,7 +51,7 @@ class UpdateYmlsReqEdit:
 
     @modify.setter
     def modify(self, modify):
-        """Sets the modify of this UpdateYmlsReqEdit.
+        r"""Sets the modify of this UpdateYmlsReqEdit.
 
         :param modify: The modify of this UpdateYmlsReqEdit.
         :type modify: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`

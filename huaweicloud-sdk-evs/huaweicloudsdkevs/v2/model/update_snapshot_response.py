@@ -26,7 +26,7 @@ class UpdateSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, snapshot=None):
-        """UpdateSnapshotResponse
+        r"""UpdateSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSnapshotResponse(SdkResponse):
 
     @property
     def snapshot(self):
-        """Gets the snapshot of this UpdateSnapshotResponse.
+        r"""Gets the snapshot of this UpdateSnapshotResponse.
 
         :return: The snapshot of this UpdateSnapshotResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.SnapshotDetails`
@@ -53,7 +53,7 @@ class UpdateSnapshotResponse(SdkResponse):
 
     @snapshot.setter
     def snapshot(self, snapshot):
-        """Sets the snapshot of this UpdateSnapshotResponse.
+        r"""Sets the snapshot of this UpdateSnapshotResponse.
 
         :param snapshot: The snapshot of this UpdateSnapshotResponse.
         :type snapshot: :class:`huaweicloudsdkevs.v2.SnapshotDetails`

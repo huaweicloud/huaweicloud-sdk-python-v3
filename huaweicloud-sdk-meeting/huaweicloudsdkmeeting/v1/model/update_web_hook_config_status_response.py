@@ -24,7 +24,7 @@ class UpdateWebHookConfigStatusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateWebHookConfigStatusResponse
+        r"""UpdateWebHookConfigStatusResponse
 
         The model defined in huaweicloud sdk
 

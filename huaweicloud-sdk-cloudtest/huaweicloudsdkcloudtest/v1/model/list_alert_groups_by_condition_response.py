@@ -28,7 +28,7 @@ class ListAlertGroupsByConditionResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ListAlertGroupsByConditionResponse
+        r"""ListAlertGroupsByConditionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlertGroupsByConditionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListAlertGroupsByConditionResponse.
+        r"""Gets the error_code of this ListAlertGroupsByConditionResponse.
 
         错误编码
 
@@ -62,7 +62,7 @@ class ListAlertGroupsByConditionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListAlertGroupsByConditionResponse.
+        r"""Sets the error_code of this ListAlertGroupsByConditionResponse.
 
         错误编码
 
@@ -73,7 +73,7 @@ class ListAlertGroupsByConditionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListAlertGroupsByConditionResponse.
+        r"""Gets the error_msg of this ListAlertGroupsByConditionResponse.
 
         错误原因
 
@@ -84,7 +84,7 @@ class ListAlertGroupsByConditionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListAlertGroupsByConditionResponse.
+        r"""Sets the error_msg of this ListAlertGroupsByConditionResponse.
 
         错误原因
 

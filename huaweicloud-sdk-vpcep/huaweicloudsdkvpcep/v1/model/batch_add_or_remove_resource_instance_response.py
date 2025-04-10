@@ -24,7 +24,7 @@ class BatchAddOrRemoveResourceInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAddOrRemoveResourceInstanceResponse
+        r"""BatchAddOrRemoveResourceInstanceResponse
 
         The model defined in huaweicloud sdk
 

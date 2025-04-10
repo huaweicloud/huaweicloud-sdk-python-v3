@@ -49,7 +49,7 @@ class HealthCheckDetail:
     }
 
     def __init__(self, id=None, endpoint_group_id=None, protocol=None, status=None, port=None, interval=None, timeout=None, max_retries=None, created_at=None, updated_at=None, domain_id=None, enabled=None, frozen_info=None):
-        """HealthCheckDetail
+        r"""HealthCheckDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class HealthCheckDetail:
 
     @property
     def id(self):
-        """Gets the id of this HealthCheckDetail.
+        r"""Gets the id of this HealthCheckDetail.
 
         健康检查ID。
 
@@ -138,7 +138,7 @@ class HealthCheckDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HealthCheckDetail.
+        r"""Sets the id of this HealthCheckDetail.
 
         健康检查ID。
 
@@ -149,7 +149,7 @@ class HealthCheckDetail:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this HealthCheckDetail.
+        r"""Gets the endpoint_group_id of this HealthCheckDetail.
 
         终端节点组ID。
 
@@ -160,7 +160,7 @@ class HealthCheckDetail:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this HealthCheckDetail.
+        r"""Sets the endpoint_group_id of this HealthCheckDetail.
 
         终端节点组ID。
 
@@ -171,7 +171,7 @@ class HealthCheckDetail:
 
     @property
     def protocol(self):
-        """Gets the protocol of this HealthCheckDetail.
+        r"""Gets the protocol of this HealthCheckDetail.
 
         :return: The protocol of this HealthCheckDetail.
         :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -180,7 +180,7 @@ class HealthCheckDetail:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this HealthCheckDetail.
+        r"""Sets the protocol of this HealthCheckDetail.
 
         :param protocol: The protocol of this HealthCheckDetail.
         :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -189,7 +189,7 @@ class HealthCheckDetail:
 
     @property
     def status(self):
-        """Gets the status of this HealthCheckDetail.
+        r"""Gets the status of this HealthCheckDetail.
 
         :return: The status of this HealthCheckDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -198,7 +198,7 @@ class HealthCheckDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HealthCheckDetail.
+        r"""Sets the status of this HealthCheckDetail.
 
         :param status: The status of this HealthCheckDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -207,7 +207,7 @@ class HealthCheckDetail:
 
     @property
     def port(self):
-        """Gets the port of this HealthCheckDetail.
+        r"""Gets the port of this HealthCheckDetail.
 
         健康检查的端口。
 
@@ -218,7 +218,7 @@ class HealthCheckDetail:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HealthCheckDetail.
+        r"""Sets the port of this HealthCheckDetail.
 
         健康检查的端口。
 
@@ -229,7 +229,7 @@ class HealthCheckDetail:
 
     @property
     def interval(self):
-        """Gets the interval of this HealthCheckDetail.
+        r"""Gets the interval of this HealthCheckDetail.
 
         健康检查的时间间隔，单位为秒。
 
@@ -240,7 +240,7 @@ class HealthCheckDetail:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this HealthCheckDetail.
+        r"""Sets the interval of this HealthCheckDetail.
 
         健康检查的时间间隔，单位为秒。
 
@@ -251,7 +251,7 @@ class HealthCheckDetail:
 
     @property
     def timeout(self):
-        """Gets the timeout of this HealthCheckDetail.
+        r"""Gets the timeout of this HealthCheckDetail.
 
         健康检查的超时时间，单位为秒。建议该值小于interval的值。
 
@@ -262,7 +262,7 @@ class HealthCheckDetail:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this HealthCheckDetail.
+        r"""Sets the timeout of this HealthCheckDetail.
 
         健康检查的超时时间，单位为秒。建议该值小于interval的值。
 
@@ -273,7 +273,7 @@ class HealthCheckDetail:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this HealthCheckDetail.
+        r"""Gets the max_retries of this HealthCheckDetail.
 
         最大重试次数。将终端节点的状态从“健康”设置为“不健康”或从“不健康”设置为“健康”所需的连续健康检查次数。
 
@@ -284,7 +284,7 @@ class HealthCheckDetail:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this HealthCheckDetail.
+        r"""Sets the max_retries of this HealthCheckDetail.
 
         最大重试次数。将终端节点的状态从“健康”设置为“不健康”或从“不健康”设置为“健康”所需的连续健康检查次数。
 
@@ -295,7 +295,7 @@ class HealthCheckDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this HealthCheckDetail.
+        r"""Gets the created_at of this HealthCheckDetail.
 
         创建时间。
 
@@ -306,7 +306,7 @@ class HealthCheckDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this HealthCheckDetail.
+        r"""Sets the created_at of this HealthCheckDetail.
 
         创建时间。
 
@@ -317,7 +317,7 @@ class HealthCheckDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this HealthCheckDetail.
+        r"""Gets the updated_at of this HealthCheckDetail.
 
         更新时间。
 
@@ -328,7 +328,7 @@ class HealthCheckDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this HealthCheckDetail.
+        r"""Sets the updated_at of this HealthCheckDetail.
 
         更新时间。
 
@@ -339,7 +339,7 @@ class HealthCheckDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this HealthCheckDetail.
+        r"""Gets the domain_id of this HealthCheckDetail.
 
         租户ID。
 
@@ -350,7 +350,7 @@ class HealthCheckDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this HealthCheckDetail.
+        r"""Sets the domain_id of this HealthCheckDetail.
 
         租户ID。
 
@@ -361,7 +361,7 @@ class HealthCheckDetail:
 
     @property
     def enabled(self):
-        """Gets the enabled of this HealthCheckDetail.
+        r"""Gets the enabled of this HealthCheckDetail.
 
         是否开启健康检查。
 
@@ -372,7 +372,7 @@ class HealthCheckDetail:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this HealthCheckDetail.
+        r"""Sets the enabled of this HealthCheckDetail.
 
         是否开启健康检查。
 
@@ -383,7 +383,7 @@ class HealthCheckDetail:
 
     @property
     def frozen_info(self):
-        """Gets the frozen_info of this HealthCheckDetail.
+        r"""Gets the frozen_info of this HealthCheckDetail.
 
         :return: The frozen_info of this HealthCheckDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -392,7 +392,7 @@ class HealthCheckDetail:
 
     @frozen_info.setter
     def frozen_info(self, frozen_info):
-        """Sets the frozen_info of this HealthCheckDetail.
+        r"""Sets the frozen_info of this HealthCheckDetail.
 
         :param frozen_info: The frozen_info of this HealthCheckDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

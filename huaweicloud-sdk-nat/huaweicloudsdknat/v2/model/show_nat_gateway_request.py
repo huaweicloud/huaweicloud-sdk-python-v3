@@ -25,7 +25,7 @@ class ShowNatGatewayRequest:
     }
 
     def __init__(self, nat_gateway_id=None):
-        """ShowNatGatewayRequest
+        r"""ShowNatGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNatGatewayRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this ShowNatGatewayRequest.
+        r"""Gets the nat_gateway_id of this ShowNatGatewayRequest.
 
         公网NAT网关实例的ID。
 
@@ -53,7 +53,7 @@ class ShowNatGatewayRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this ShowNatGatewayRequest.
+        r"""Sets the nat_gateway_id of this ShowNatGatewayRequest.
 
         公网NAT网关实例的ID。
 

@@ -35,7 +35,7 @@ class CustomConnectorInfoV2:
     }
 
     def __init__(self, api_config=None, auth_content=None, connector_created_type=None, connector_type=None, icon=None, swagger=None):
-        """CustomConnectorInfoV2
+        r"""CustomConnectorInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CustomConnectorInfoV2:
 
     @property
     def api_config(self):
-        """Gets the api_config of this CustomConnectorInfoV2.
+        r"""Gets the api_config of this CustomConnectorInfoV2.
 
         :return: The api_config of this CustomConnectorInfoV2.
         :rtype: :class:`huaweicloudsdkmssi.v1.ApiConfig`
@@ -87,7 +87,7 @@ class CustomConnectorInfoV2:
 
     @api_config.setter
     def api_config(self, api_config):
-        """Sets the api_config of this CustomConnectorInfoV2.
+        r"""Sets the api_config of this CustomConnectorInfoV2.
 
         :param api_config: The api_config of this CustomConnectorInfoV2.
         :type api_config: :class:`huaweicloudsdkmssi.v1.ApiConfig`
@@ -96,7 +96,7 @@ class CustomConnectorInfoV2:
 
     @property
     def auth_content(self):
-        """Gets the auth_content of this CustomConnectorInfoV2.
+        r"""Gets the auth_content of this CustomConnectorInfoV2.
 
         :return: The auth_content of this CustomConnectorInfoV2.
         :rtype: :class:`huaweicloudsdkmssi.v1.AuthConfigA`
@@ -105,7 +105,7 @@ class CustomConnectorInfoV2:
 
     @auth_content.setter
     def auth_content(self, auth_content):
-        """Sets the auth_content of this CustomConnectorInfoV2.
+        r"""Sets the auth_content of this CustomConnectorInfoV2.
 
         :param auth_content: The auth_content of this CustomConnectorInfoV2.
         :type auth_content: :class:`huaweicloudsdkmssi.v1.AuthConfigA`
@@ -114,7 +114,7 @@ class CustomConnectorInfoV2:
 
     @property
     def connector_created_type(self):
-        """Gets the connector_created_type of this CustomConnectorInfoV2.
+        r"""Gets the connector_created_type of this CustomConnectorInfoV2.
 
         :return: The connector_created_type of this CustomConnectorInfoV2.
         :rtype: str
@@ -123,7 +123,7 @@ class CustomConnectorInfoV2:
 
     @connector_created_type.setter
     def connector_created_type(self, connector_created_type):
-        """Sets the connector_created_type of this CustomConnectorInfoV2.
+        r"""Sets the connector_created_type of this CustomConnectorInfoV2.
 
         :param connector_created_type: The connector_created_type of this CustomConnectorInfoV2.
         :type connector_created_type: str
@@ -132,7 +132,7 @@ class CustomConnectorInfoV2:
 
     @property
     def connector_type(self):
-        """Gets the connector_type of this CustomConnectorInfoV2.
+        r"""Gets the connector_type of this CustomConnectorInfoV2.
 
         :return: The connector_type of this CustomConnectorInfoV2.
         :rtype: str
@@ -141,7 +141,7 @@ class CustomConnectorInfoV2:
 
     @connector_type.setter
     def connector_type(self, connector_type):
-        """Sets the connector_type of this CustomConnectorInfoV2.
+        r"""Sets the connector_type of this CustomConnectorInfoV2.
 
         :param connector_type: The connector_type of this CustomConnectorInfoV2.
         :type connector_type: str
@@ -150,7 +150,7 @@ class CustomConnectorInfoV2:
 
     @property
     def icon(self):
-        """Gets the icon of this CustomConnectorInfoV2.
+        r"""Gets the icon of this CustomConnectorInfoV2.
 
         logo base64编码
 
@@ -161,7 +161,7 @@ class CustomConnectorInfoV2:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this CustomConnectorInfoV2.
+        r"""Sets the icon of this CustomConnectorInfoV2.
 
         logo base64编码
 
@@ -172,7 +172,7 @@ class CustomConnectorInfoV2:
 
     @property
     def swagger(self):
-        """Gets the swagger of this CustomConnectorInfoV2.
+        r"""Gets the swagger of this CustomConnectorInfoV2.
 
         swagger文档，大文本
 
@@ -183,7 +183,7 @@ class CustomConnectorInfoV2:
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this CustomConnectorInfoV2.
+        r"""Sets the swagger of this CustomConnectorInfoV2.
 
         swagger文档，大文本
 

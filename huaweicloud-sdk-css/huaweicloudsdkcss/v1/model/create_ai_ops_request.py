@@ -27,7 +27,7 @@ class CreateAiOpsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateAiOpsRequest
+        r"""CreateAiOpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAiOpsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAiOpsRequest.
+        r"""Gets the cluster_id of this CreateAiOpsRequest.
 
         指定待操作的集群ID。
 
@@ -60,7 +60,7 @@ class CreateAiOpsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAiOpsRequest.
+        r"""Sets the cluster_id of this CreateAiOpsRequest.
 
         指定待操作的集群ID。
 
@@ -71,7 +71,7 @@ class CreateAiOpsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAiOpsRequest.
+        r"""Gets the body of this CreateAiOpsRequest.
 
         :return: The body of this CreateAiOpsRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequestBody`
@@ -80,7 +80,7 @@ class CreateAiOpsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAiOpsRequest.
+        r"""Sets the body of this CreateAiOpsRequest.
 
         :param body: The body of this CreateAiOpsRequest.
         :type body: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequestBody`

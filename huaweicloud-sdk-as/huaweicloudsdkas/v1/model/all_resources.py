@@ -33,7 +33,7 @@ class AllResources:
     }
 
     def __init__(self, type=None, used=None, quota=None, max=None, min=None):
-        """AllResources
+        r"""AllResources
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AllResources:
 
     @property
     def type(self):
-        """Gets the type of this AllResources.
+        r"""Gets the type of this AllResources.
 
         查询配额的类型。scaling_Group：伸缩组配额。scaling_Config：伸缩配置配额。scaling_Policy：伸缩策略配额。scaling_Instance：伸缩实例配额。bandwidth_scaling_policy：伸缩带宽策略配额。
 
@@ -82,7 +82,7 @@ class AllResources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AllResources.
+        r"""Sets the type of this AllResources.
 
         查询配额的类型。scaling_Group：伸缩组配额。scaling_Config：伸缩配置配额。scaling_Policy：伸缩策略配额。scaling_Instance：伸缩实例配额。bandwidth_scaling_policy：伸缩带宽策略配额。
 
@@ -93,7 +93,7 @@ class AllResources:
 
     @property
     def used(self):
-        """Gets the used of this AllResources.
+        r"""Gets the used of this AllResources.
 
         已使用的配额数量。当type为scaling_Policy和scaling_Instance时，该字段为保留字段，返回-1。可通过查询弹性伸缩策略和伸缩实例配额查询指定弹性伸缩组下的弹性伸缩策略和伸缩实例已使用的配额数量。
 
@@ -104,7 +104,7 @@ class AllResources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this AllResources.
+        r"""Sets the used of this AllResources.
 
         已使用的配额数量。当type为scaling_Policy和scaling_Instance时，该字段为保留字段，返回-1。可通过查询弹性伸缩策略和伸缩实例配额查询指定弹性伸缩组下的弹性伸缩策略和伸缩实例已使用的配额数量。
 
@@ -115,7 +115,7 @@ class AllResources:
 
     @property
     def quota(self):
-        """Gets the quota of this AllResources.
+        r"""Gets the quota of this AllResources.
 
         配额总数量。
 
@@ -126,7 +126,7 @@ class AllResources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this AllResources.
+        r"""Sets the quota of this AllResources.
 
         配额总数量。
 
@@ -137,7 +137,7 @@ class AllResources:
 
     @property
     def max(self):
-        """Gets the max of this AllResources.
+        r"""Gets the max of this AllResources.
 
         配额上限。
 
@@ -148,7 +148,7 @@ class AllResources:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this AllResources.
+        r"""Sets the max of this AllResources.
 
         配额上限。
 
@@ -159,7 +159,7 @@ class AllResources:
 
     @property
     def min(self):
-        """Gets the min of this AllResources.
+        r"""Gets the min of this AllResources.
 
         配额下限。
 
@@ -170,7 +170,7 @@ class AllResources:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this AllResources.
+        r"""Sets the min of this AllResources.
 
         配额下限。
 

@@ -26,7 +26,7 @@ class ShowTrainingSegmentInfoResponse(SdkResponse):
     }
 
     def __init__(self, confirmed_index=None):
-        """ShowTrainingSegmentInfoResponse
+        r"""ShowTrainingSegmentInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTrainingSegmentInfoResponse(SdkResponse):
 
     @property
     def confirmed_index(self):
-        """Gets the confirmed_index of this ShowTrainingSegmentInfoResponse.
+        r"""Gets the confirmed_index of this ShowTrainingSegmentInfoResponse.
 
         确认过的语句索引。
 
@@ -55,7 +55,7 @@ class ShowTrainingSegmentInfoResponse(SdkResponse):
 
     @confirmed_index.setter
     def confirmed_index(self, confirmed_index):
-        """Sets the confirmed_index of this ShowTrainingSegmentInfoResponse.
+        r"""Sets the confirmed_index of this ShowTrainingSegmentInfoResponse.
 
         确认过的语句索引。
 

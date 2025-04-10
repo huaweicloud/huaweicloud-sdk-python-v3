@@ -25,7 +25,7 @@ class ShowMetricTreeRequest:
     }
 
     def __init__(self, workspace=None):
-        """ShowMetricTreeRequest
+        r"""ShowMetricTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMetricTreeRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowMetricTreeRequest.
+        r"""Gets the workspace of this ShowMetricTreeRequest.
 
         DataArts Studio工作空间ID
 
@@ -53,7 +53,7 @@ class ShowMetricTreeRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowMetricTreeRequest.
+        r"""Sets the workspace of this ShowMetricTreeRequest.
 
         DataArts Studio工作空间ID
 

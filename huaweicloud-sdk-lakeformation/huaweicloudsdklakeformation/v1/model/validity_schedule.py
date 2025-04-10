@@ -31,7 +31,7 @@ class ValiditySchedule:
     }
 
     def __init__(self, end_time=None, recurrences=None, start_time=None, time_zone=None):
-        """ValiditySchedule
+        r"""ValiditySchedule
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ValiditySchedule:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ValiditySchedule.
+        r"""Gets the end_time of this ValiditySchedule.
 
         end时间
 
@@ -75,7 +75,7 @@ class ValiditySchedule:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ValiditySchedule.
+        r"""Sets the end_time of this ValiditySchedule.
 
         end时间
 
@@ -86,7 +86,7 @@ class ValiditySchedule:
 
     @property
     def recurrences(self):
-        """Gets the recurrences of this ValiditySchedule.
+        r"""Gets the recurrences of this ValiditySchedule.
 
         策略递归
 
@@ -97,7 +97,7 @@ class ValiditySchedule:
 
     @recurrences.setter
     def recurrences(self, recurrences):
-        """Sets the recurrences of this ValiditySchedule.
+        r"""Sets the recurrences of this ValiditySchedule.
 
         策略递归
 
@@ -108,7 +108,7 @@ class ValiditySchedule:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ValiditySchedule.
+        r"""Gets the start_time of this ValiditySchedule.
 
         开始时间
 
@@ -119,7 +119,7 @@ class ValiditySchedule:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ValiditySchedule.
+        r"""Sets the start_time of this ValiditySchedule.
 
         开始时间
 
@@ -130,7 +130,7 @@ class ValiditySchedule:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ValiditySchedule.
+        r"""Gets the time_zone of this ValiditySchedule.
 
         时间域
 
@@ -141,7 +141,7 @@ class ValiditySchedule:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ValiditySchedule.
+        r"""Sets the time_zone of this ValiditySchedule.
 
         时间域
 

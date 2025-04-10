@@ -30,7 +30,7 @@ class RunKeywordExtractResponse(SdkResponse):
     }
 
     def __init__(self, words=None, error_code=None, error_msg=None):
-        """RunKeywordExtractResponse
+        r"""RunKeywordExtractResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunKeywordExtractResponse(SdkResponse):
 
     @property
     def words(self):
-        """Gets the words of this RunKeywordExtractResponse.
+        r"""Gets the words of this RunKeywordExtractResponse.
 
         关键词列表。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunKeywordExtractResponse(SdkResponse):
 
     @words.setter
     def words(self, words):
-        """Sets the words of this RunKeywordExtractResponse.
+        r"""Sets the words of this RunKeywordExtractResponse.
 
         关键词列表。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunKeywordExtractResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunKeywordExtractResponse.
+        r"""Gets the error_code of this RunKeywordExtractResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunKeywordExtractResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunKeywordExtractResponse.
+        r"""Sets the error_code of this RunKeywordExtractResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunKeywordExtractResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunKeywordExtractResponse.
+        r"""Gets the error_msg of this RunKeywordExtractResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunKeywordExtractResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunKeywordExtractResponse.
+        r"""Sets the error_msg of this RunKeywordExtractResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

@@ -34,7 +34,7 @@ class VodClient(Client):
         return client_builder
 
     def cancel_asset_transcode_task(self, request):
-        """取消媒资转码任务
+        r"""取消媒资转码任务
 
         取消媒资转码任务，只能取消排队中的转码任务。
         
@@ -99,7 +99,7 @@ class VodClient(Client):
         return http_info
 
     def cancel_extract_audio_task(self, request):
-        """取消提取音频任务
+        r"""取消提取音频任务
 
         取消提取音频任务，只有排队中的提取音频任务才可以取消。
         
@@ -164,7 +164,7 @@ class VodClient(Client):
         return http_info
 
     def check_md5_duplication(self, request):
-        """上传检验
+        r"""上传检验
 
         校验媒资文件是否已存储于视频点播服务中。
         
@@ -231,7 +231,7 @@ class VodClient(Client):
         return http_info
 
     def confirm_asset_upload(self, request):
-        """确认媒资上传
+        r"""确认媒资上传
 
         媒资分段上传完成后，需要调用此接口通知点播服务媒资上传的状态，表示媒资上传创建完成。
         
@@ -296,7 +296,7 @@ class VodClient(Client):
         return http_info
 
     def confirm_image_upload(self, request):
-        """确认水印图片上传
+        r"""确认水印图片上传
 
         确认水印图片上传状态。
         
@@ -361,7 +361,7 @@ class VodClient(Client):
         return http_info
 
     def create_asset_by_file_upload(self, request):
-        """创建媒资：上传方式
+        r"""创建媒资：上传方式
 
         调用该接口创建媒资时，需要将对应的媒资文件上传到点播服务的OBS桶中。
         
@@ -430,7 +430,7 @@ class VodClient(Client):
         return http_info
 
     def create_asset_category(self, request):
-        """创建媒资分类
+        r"""创建媒资分类
 
         创建媒资分类。
         
@@ -495,7 +495,7 @@ class VodClient(Client):
         return http_info
 
     def create_asset_process_task(self, request):
-        """媒资处理
+        r"""媒资处理
 
         实现视频转码、截图、加密等处理。既可以同时启动多种操作，也可以只启动一种操作。
         
@@ -560,7 +560,7 @@ class VodClient(Client):
         return http_info
 
     def create_asset_review_task(self, request):
-        """创建审核媒资任务
+        r"""创建审核媒资任务
 
         对上传的媒资进行审核。审核后，可以调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口查看审核结果。
         
@@ -625,7 +625,7 @@ class VodClient(Client):
         return http_info
 
     def create_extract_audio_task(self, request):
-        """音频提取
+        r"""音频提取
 
         本接口为异步接口，创建音频提取任务下发成功后会返回asset_id和提取的audio_asset_id，但此时音频提取任务并没有立即完成，可通过消息订阅界面配置的音频提取完成事件来获取音频提取任务完成与否。
         
@@ -690,7 +690,7 @@ class VodClient(Client):
         return http_info
 
     def create_preheating_asset(self, request):
-        """CDN预热
+        r"""CDN预热
 
         媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。单租户每天最多预热1000个。
         
@@ -755,7 +755,7 @@ class VodClient(Client):
         return http_info
 
     def create_take_over_task(self, request):
-        """创建媒资：OBS托管方式
+        r"""创建媒资：OBS托管方式
 
         通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。
         
@@ -822,7 +822,7 @@ class VodClient(Client):
         return http_info
 
     def create_template_group(self, request):
-        """创建自定义转码模板组
+        r"""创建自定义转码模板组
 
         创建自定义转码模板组。
         
@@ -887,7 +887,7 @@ class VodClient(Client):
         return http_info
 
     def create_template_group_collection(self, request):
-        """创建转码模板组集合
+        r"""创建转码模板组集合
 
         创建转码模板组集合
         
@@ -952,7 +952,7 @@ class VodClient(Client):
         return http_info
 
     def create_transcode_template(self, request):
-        """创建自定义转码模板
+        r"""创建自定义转码模板
 
         创建自定义转码模板。
         
@@ -1017,7 +1017,7 @@ class VodClient(Client):
         return http_info
 
     def create_watermark_template(self, request):
-        """创建水印模板
+        r"""创建水印模板
 
         创建水印模板。
         
@@ -1082,7 +1082,7 @@ class VodClient(Client):
         return http_info
 
     def delete_asset_category(self, request):
-        """删除媒资分类
+        r"""删除媒资分类
 
         删除媒资分类。
         
@@ -1147,7 +1147,7 @@ class VodClient(Client):
         return http_info
 
     def delete_assets(self, request):
-        """删除媒资
+        r"""删除媒资
 
         删除媒资。
         
@@ -1215,7 +1215,7 @@ class VodClient(Client):
         return http_info
 
     def delete_template_group(self, request):
-        """删除自定义转码模板组
+        r"""删除自定义转码模板组
 
         删除自定义转码模板组。
         
@@ -1280,7 +1280,7 @@ class VodClient(Client):
         return http_info
 
     def delete_template_group_collection(self, request):
-        """删除转码模板组集合
+        r"""删除转码模板组集合
 
         删除转码模板组集合
         
@@ -1345,7 +1345,7 @@ class VodClient(Client):
         return http_info
 
     def delete_transcode_product(self, request):
-        """删除转码产物
+        r"""删除转码产物
 
         删除转码产物。
         
@@ -1410,7 +1410,7 @@ class VodClient(Client):
         return http_info
 
     def delete_transcode_template(self, request):
-        """删除自定义模板
+        r"""删除自定义模板
 
         删除自定义模板
         
@@ -1475,7 +1475,7 @@ class VodClient(Client):
         return http_info
 
     def delete_watermark_template(self, request):
-        """删除水印模板
+        r"""删除水印模板
 
         删除水印模板
         
@@ -1540,7 +1540,7 @@ class VodClient(Client):
         return http_info
 
     def list_asset_category(self, request):
-        """查询指定分类信息
+        r"""查询指定分类信息
 
         查询指定分类信息，及其子分类（即下一级分类）的列表。
         
@@ -1605,7 +1605,7 @@ class VodClient(Client):
         return http_info
 
     def list_asset_daily_summary_log(self, request):
-        """查询媒资日播放统计数据
+        r"""查询媒资日播放统计数据
 
         查询媒资日播放统计数据。
         
@@ -1680,7 +1680,7 @@ class VodClient(Client):
         return http_info
 
     def list_asset_list(self, request):
-        """查询媒资列表
+        r"""查询媒资列表
 
         查询媒资列表，列表中的每一条记录包含媒资的概要信息。
         
@@ -1768,7 +1768,7 @@ class VodClient(Client):
         return http_info
 
     def list_domain_logs(self, request):
-        """查询域名播放日志
+        r"""查询域名播放日志
 
         查询指定点播域名某段时间内在CDN的相关日志。
         
@@ -1839,7 +1839,7 @@ class VodClient(Client):
         return http_info
 
     def list_template_group(self, request):
-        """查询转码模板组列表
+        r"""查询转码模板组列表
 
         查询转码模板组列表。
         
@@ -1910,7 +1910,7 @@ class VodClient(Client):
         return http_info
 
     def list_template_group_collection(self, request):
-        """查询自定义模板组集合
+        r"""查询自定义模板组集合
 
         查询转码模板组集合
         
@@ -1979,7 +1979,7 @@ class VodClient(Client):
         return http_info
 
     def list_top_statistics(self, request):
-        """查询TopN媒资信息
+        r"""查询TopN媒资信息
 
         查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
         
@@ -2046,7 +2046,7 @@ class VodClient(Client):
         return http_info
 
     def list_transcode_template(self, request):
-        """查询转码模板列表
+        r"""查询转码模板列表
 
         查询转码模板列表
         
@@ -2119,7 +2119,7 @@ class VodClient(Client):
         return http_info
 
     def list_watermark_template(self, request):
-        """查询水印列表
+        r"""查询水印列表
 
         查询水印模板
         
@@ -2189,7 +2189,7 @@ class VodClient(Client):
         return http_info
 
     def modify_subtitle(self, request):
-        """多字幕封装
+        r"""多字幕封装
 
         多字幕封装，仅支持 HLS VTT格式和HLS SRT格式
         
@@ -2254,7 +2254,7 @@ class VodClient(Client):
         return http_info
 
     def publish_asset_from_obs(self, request):
-        """创建媒资：OBS转存方式
+        r"""创建媒资：OBS转存方式
 
         若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。调用该接口前，您需要调用[桶授权](https://support.huaweicloud.com/api-vod/vod_04_0199.html)接口，将存储音视频文件的OBS桶授权给点播服务。
         
@@ -2319,7 +2319,7 @@ class VodClient(Client):
         return http_info
 
     def publish_assets(self, request):
-        """媒资发布
+        r"""媒资发布
 
         将媒资设置为发布状态。支持批量发布。
         
@@ -2384,7 +2384,7 @@ class VodClient(Client):
         return http_info
 
     def show_asset_cipher(self, request):
-        """密钥查询
+        r"""密钥查询
 
         终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
         
@@ -2449,7 +2449,7 @@ class VodClient(Client):
         return http_info
 
     def show_asset_detail(self, request):
-        """查询指定媒资的详细信息
+        r"""查询指定媒资的详细信息
 
         查询指定媒资的详细信息。
         
@@ -2517,7 +2517,7 @@ class VodClient(Client):
         return http_info
 
     def show_asset_meta(self, request):
-        """查询媒资信息
+        r"""查询媒资信息
 
         查询媒资信息，支持指定媒资ID、分类、状态、起止时间查询。
         
@@ -2606,7 +2606,7 @@ class VodClient(Client):
         return http_info
 
     def show_asset_temp_authority(self, request):
-        """获取分段上传授权
+        r"""获取分段上传授权
 
         客户端请求创建媒资时，如果媒资文件超过20MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。
         
@@ -2689,7 +2689,7 @@ class VodClient(Client):
         return http_info
 
     def show_cdn_statistics(self, request):
-        """查询CDN统计信息
+        r"""查询CDN统计信息
 
         查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。
         
@@ -2762,7 +2762,7 @@ class VodClient(Client):
         return http_info
 
     def show_preheating_asset(self, request):
-        """查询CDN预热
+        r"""查询CDN预热
 
         查询预热结果。
         
@@ -2827,7 +2827,7 @@ class VodClient(Client):
         return http_info
 
     def show_storage_mode_type(self, request):
-        """查询媒资降冷配置
+        r"""查询媒资降冷配置
 
         查询媒资降冷配置。
         
@@ -2890,7 +2890,7 @@ class VodClient(Client):
         return http_info
 
     def show_vod_retrieval(self, request):
-        """查询取回数据信息
+        r"""查询取回数据信息
 
         ## 典型场景 ##
          用于查询点播低频和归档取回量统计数据。&lt;br/&gt;
@@ -2963,7 +2963,7 @@ class VodClient(Client):
         return http_info
 
     def show_vod_statistics(self, request):
-        """查询源站统计信息
+        r"""查询源站统计信息
 
         查询点播源站的统计数据，包括存储空间、转码时长。
         
@@ -3032,7 +3032,7 @@ class VodClient(Client):
         return http_info
 
     def unpublish_assets(self, request):
-        """媒资发布取消
+        r"""媒资发布取消
 
         将媒资设置为未发布状态。
         
@@ -3097,7 +3097,7 @@ class VodClient(Client):
         return http_info
 
     def update_asset(self, request):
-        """视频更新
+        r"""视频更新
 
         媒资创建后，单独上传封面、更新视频文件或更新已有封面。
         
@@ -3168,7 +3168,7 @@ class VodClient(Client):
         return http_info
 
     def update_asset_category(self, request):
-        """修改媒资分类
+        r"""修改媒资分类
 
         修改媒资分类。
         
@@ -3233,7 +3233,7 @@ class VodClient(Client):
         return http_info
 
     def update_asset_meta(self, request):
-        """修改媒资属性
+        r"""修改媒资属性
 
         修改媒资属性。
         
@@ -3298,7 +3298,7 @@ class VodClient(Client):
         return http_info
 
     def update_bucket_authorized(self, request):
-        """桶授权
+        r"""桶授权
 
         用户可以通过该接口将OBS桶授权给点播服务或取消点播服务的授权。
         
@@ -3363,7 +3363,7 @@ class VodClient(Client):
         return http_info
 
     def update_cover_by_thumbnail(self, request):
-        """设置封面
+        r"""设置封面
 
         将视频截图生成的某张图片设置成封面。
         
@@ -3428,7 +3428,7 @@ class VodClient(Client):
         return http_info
 
     def update_storage_mode(self, request):
-        """修改媒资文件在obs的存储模式
+        r"""修改媒资文件在obs的存储模式
 
         ## 接口功能 ##
           修改媒资文件在obs的存储模式&lt;br/&gt;
@@ -3494,7 +3494,7 @@ class VodClient(Client):
         return http_info
 
     def update_storage_mode_type(self, request):
-        """修改媒资降冷粒度
+        r"""修改媒资降冷粒度
 
         修改媒资降冷粒度。
         
@@ -3561,7 +3561,7 @@ class VodClient(Client):
         return http_info
 
     def update_template_group(self, request):
-        """修改自定义转码模板组
+        r"""修改自定义转码模板组
 
         修改自定义转码模板组。
         
@@ -3626,7 +3626,7 @@ class VodClient(Client):
         return http_info
 
     def update_template_group_collection(self, request):
-        """修改转码模板组集合
+        r"""修改转码模板组集合
 
         修改转码模板组结合
         
@@ -3691,7 +3691,7 @@ class VodClient(Client):
         return http_info
 
     def update_transcode_template(self, request):
-        """修改转码模板
+        r"""修改转码模板
 
         修改转码模板
         
@@ -3756,7 +3756,7 @@ class VodClient(Client):
         return http_info
 
     def update_watermark_template(self, request):
-        """修改水印模板
+        r"""修改水印模板
 
         修改水印模板
         
@@ -3821,7 +3821,7 @@ class VodClient(Client):
         return http_info
 
     def upload_meta_data_by_url(self, request):
-        """创建媒资：URL拉取注入
+        r"""创建媒资：URL拉取注入
 
         基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。
         
@@ -3886,7 +3886,7 @@ class VodClient(Client):
         return http_info
 
     def list_take_over_task(self, request):
-        """查询托管任务
+        r"""查询托管任务
 
         查询OBS存量托管任务列表。
         
@@ -3957,7 +3957,7 @@ class VodClient(Client):
         return http_info
 
     def show_take_over_asset_details(self, request):
-        """查询托管媒资详情
+        r"""查询托管媒资详情
 
         查询OBS托管媒资的详细信息。
         
@@ -4024,7 +4024,7 @@ class VodClient(Client):
         return http_info
 
     def show_take_over_task_details(self, request):
-        """查询托管任务详情
+        r"""查询托管任务详情
 
         查询OBS存量托管任务详情。
         

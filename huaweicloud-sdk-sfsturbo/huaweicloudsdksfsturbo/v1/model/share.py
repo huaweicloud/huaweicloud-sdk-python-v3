@@ -49,7 +49,7 @@ class Share:
     }
 
     def __init__(self, availability_zone=None, description=None, enterprise_project_id=None, metadata=None, name=None, security_group_id=None, share_proto=None, share_type=None, size=None, subnet_id=None, vpc_id=None, backup_id=None, tags=None):
-        """Share
+        r"""Share
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class Share:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Share.
+        r"""Gets the availability_zone of this Share.
 
         文件系统所在可用区(az)的编码 
 
@@ -130,7 +130,7 @@ class Share:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Share.
+        r"""Sets the availability_zone of this Share.
 
         文件系统所在可用区(az)的编码 
 
@@ -141,7 +141,7 @@ class Share:
 
     @property
     def description(self):
-        """Gets the description of this Share.
+        r"""Gets the description of this Share.
 
         文件系统描述信息，长度为0~255。当前不支持。
 
@@ -152,7 +152,7 @@ class Share:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Share.
+        r"""Sets the description of this Share.
 
         文件系统描述信息，长度为0~255。当前不支持。
 
@@ -163,7 +163,7 @@ class Share:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Share.
+        r"""Gets the enterprise_project_id of this Share.
 
         创建文件系统时，给文件系统绑定的企业项目ID。
 
@@ -174,7 +174,7 @@ class Share:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Share.
+        r"""Sets the enterprise_project_id of this Share.
 
         创建文件系统时，给文件系统绑定的企业项目ID。
 
@@ -185,7 +185,7 @@ class Share:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Share.
+        r"""Gets the metadata of this Share.
 
         :return: The metadata of this Share.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.Metadata`
@@ -194,7 +194,7 @@ class Share:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Share.
+        r"""Sets the metadata of this Share.
 
         :param metadata: The metadata of this Share.
         :type metadata: :class:`huaweicloudsdksfsturbo.v1.Metadata`
@@ -203,7 +203,7 @@ class Share:
 
     @property
     def name(self):
-        """Gets the name of this Share.
+        r"""Gets the name of this Share.
 
         SFS Turbo文件系统的名称。长度为4~64位，必须以字母开头，可以包含字母、数字、中划线、下划线，不能包含其他的特殊字符，不区分大小写。
 
@@ -214,7 +214,7 @@ class Share:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Share.
+        r"""Sets the name of this Share.
 
         SFS Turbo文件系统的名称。长度为4~64位，必须以字母开头，可以包含字母、数字、中划线、下划线，不能包含其他的特殊字符，不区分大小写。
 
@@ -225,7 +225,7 @@ class Share:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this Share.
+        r"""Gets the security_group_id of this Share.
 
         用户在某一区域下的安全组ID。 
 
@@ -236,7 +236,7 @@ class Share:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this Share.
+        r"""Sets the security_group_id of this Share.
 
         用户在某一区域下的安全组ID。 
 
@@ -247,7 +247,7 @@ class Share:
 
     @property
     def share_proto(self):
-        """Gets the share_proto of this Share.
+        r"""Gets the share_proto of this Share.
 
         文件系统共享协议，有效值为NFS。NFS（Network File System），即网络文件系统。一种使用于分散式文件系统的协议，通过网络让不同的机器、不同的操作系统能够彼此分享数据。
 
@@ -258,7 +258,7 @@ class Share:
 
     @share_proto.setter
     def share_proto(self, share_proto):
-        """Sets the share_proto of this Share.
+        r"""Sets the share_proto of this Share.
 
         文件系统共享协议，有效值为NFS。NFS（Network File System），即网络文件系统。一种使用于分散式文件系统的协议，通过网络让不同的机器、不同的操作系统能够彼此分享数据。
 
@@ -269,7 +269,7 @@ class Share:
 
     @property
     def share_type(self):
-        """Gets the share_type of this Share.
+        r"""Gets the share_type of this Share.
 
         文件系统类型，有效值为STANDARD或者PERFORMANCE。当文件系统正在创建时，该字段不返回。  - SFS Turbo上一代文件系统规格类型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。  - 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/TiB：不校验该字段，填写STANDARD或者PERFORMANCE。  - HPC缓存型：不校验该字段，填写STANDARD或者PERFORMANCE。 
 
@@ -280,7 +280,7 @@ class Share:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this Share.
+        r"""Sets the share_type of this Share.
 
         文件系统类型，有效值为STANDARD或者PERFORMANCE。当文件系统正在创建时，该字段不返回。  - SFS Turbo上一代文件系统规格类型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。  - 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/TiB：不校验该字段，填写STANDARD或者PERFORMANCE。  - HPC缓存型：不校验该字段，填写STANDARD或者PERFORMANCE。 
 
@@ -291,7 +291,7 @@ class Share:
 
     @property
     def size(self):
-        """Gets the size of this Share.
+        r"""Gets the size of this Share.
 
         - SFS Turbo上一代文件系统规格类型-文件系统容量：取值范围为500~32768，单位为GiB。  - SFS Turbo上一代文件系统规格类型-增强版文件系统：在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围为10240~327680，单位为GiB。  - 20MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"20M\"，则容量范围为3686~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 40MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"40M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 125MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"125M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 250MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"250M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 500MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"500M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 1000MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"1000M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - HPC缓存型文件系统：在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围为4096~1048576，单位为GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
@@ -302,7 +302,7 @@ class Share:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Share.
+        r"""Sets the size of this Share.
 
         - SFS Turbo上一代文件系统规格类型-文件系统容量：取值范围为500~32768，单位为GiB。  - SFS Turbo上一代文件系统规格类型-增强版文件系统：在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围为10240~327680，单位为GiB。  - 20MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"20M\"，则容量范围为3686~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 40MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"40M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 125MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"125M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 250MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"250M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 500MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"500M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - 1000MB/s/TiB：在“metadata”字段中设置了expand_type=\"hpc\"、hpc_bw=\"1000M\"，则容量范围为1228~1048576，单位为GiB。容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。  - HPC缓存型文件系统：在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围为4096~1048576，单位为GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
@@ -313,7 +313,7 @@ class Share:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Share.
+        r"""Gets the subnet_id of this Share.
 
         用户在VPC下面的子网的网络ID。 
 
@@ -324,7 +324,7 @@ class Share:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Share.
+        r"""Sets the subnet_id of this Share.
 
         用户在VPC下面的子网的网络ID。 
 
@@ -335,7 +335,7 @@ class Share:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Share.
+        r"""Gets the vpc_id of this Share.
 
         用户在某一区域下的VPC ID。 
 
@@ -346,7 +346,7 @@ class Share:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Share.
+        r"""Sets the vpc_id of this Share.
 
         用户在某一区域下的VPC ID。 
 
@@ -357,7 +357,7 @@ class Share:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this Share.
+        r"""Gets the backup_id of this Share.
 
         备份ID，从备份创建文件系统时为必选。
 
@@ -368,7 +368,7 @@ class Share:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this Share.
+        r"""Sets the backup_id of this Share.
 
         备份ID，从备份创建文件系统时为必选。
 
@@ -379,7 +379,7 @@ class Share:
 
     @property
     def tags(self):
-        """Gets the tags of this Share.
+        r"""Gets the tags of this Share.
 
         tag标签的列表。
 
@@ -390,7 +390,7 @@ class Share:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Share.
+        r"""Sets the tags of this Share.
 
         tag标签的列表。
 

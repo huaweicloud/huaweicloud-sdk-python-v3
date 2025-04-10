@@ -25,7 +25,7 @@ class ExpandEdgecloudRequest:
     }
 
     def __init__(self, deployment_id=None):
-        """ExpandEdgecloudRequest
+        r"""ExpandEdgecloudRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExpandEdgecloudRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ExpandEdgecloudRequest.
+        r"""Gets the deployment_id of this ExpandEdgecloudRequest.
 
         部署计划ID。  约束： - 该接口只能执行指定边缘业务ID（id）创建的部署计划。
 
@@ -53,7 +53,7 @@ class ExpandEdgecloudRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ExpandEdgecloudRequest.
+        r"""Sets the deployment_id of this ExpandEdgecloudRequest.
 
         部署计划ID。  约束： - 该接口只能执行指定边缘业务ID（id）创建的部署计划。
 

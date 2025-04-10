@@ -29,7 +29,7 @@ class DeleteDatabaseRequest:
     }
 
     def __init__(self, database_name=None, _async=None, cascade=None):
-        """DeleteDatabaseRequest
+        r"""DeleteDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDatabaseRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteDatabaseRequest.
+        r"""Gets the database_name of this DeleteDatabaseRequest.
 
         删除的数据库名称。
 
@@ -67,7 +67,7 @@ class DeleteDatabaseRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteDatabaseRequest.
+        r"""Sets the database_name of this DeleteDatabaseRequest.
 
         删除的数据库名称。
 
@@ -78,7 +78,7 @@ class DeleteDatabaseRequest:
 
     @property
     def _async(self):
-        """Gets the _async of this DeleteDatabaseRequest.
+        r"""Gets the _async of this DeleteDatabaseRequest.
 
         :return: The _async of this DeleteDatabaseRequest.
         :rtype: bool
@@ -87,7 +87,7 @@ class DeleteDatabaseRequest:
 
     @_async.setter
     def _async(self, _async):
-        """Sets the _async of this DeleteDatabaseRequest.
+        r"""Sets the _async of this DeleteDatabaseRequest.
 
         :param _async: The _async of this DeleteDatabaseRequest.
         :type _async: bool
@@ -96,7 +96,7 @@ class DeleteDatabaseRequest:
 
     @property
     def cascade(self):
-        """Gets the cascade of this DeleteDatabaseRequest.
+        r"""Gets the cascade of this DeleteDatabaseRequest.
 
         :return: The cascade of this DeleteDatabaseRequest.
         :rtype: bool
@@ -105,7 +105,7 @@ class DeleteDatabaseRequest:
 
     @cascade.setter
     def cascade(self, cascade):
-        """Sets the cascade of this DeleteDatabaseRequest.
+        r"""Sets the cascade of this DeleteDatabaseRequest.
 
         :param cascade: The cascade of this DeleteDatabaseRequest.
         :type cascade: bool

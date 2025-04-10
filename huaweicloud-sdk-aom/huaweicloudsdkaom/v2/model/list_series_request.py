@@ -29,7 +29,7 @@ class ListSeriesRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListSeriesRequest
+        r"""ListSeriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSeriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSeriesRequest.
+        r"""Gets the limit of this ListSeriesRequest.
 
         用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
@@ -68,7 +68,7 @@ class ListSeriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSeriesRequest.
+        r"""Sets the limit of this ListSeriesRequest.
 
         用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
@@ -79,7 +79,7 @@ class ListSeriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSeriesRequest.
+        r"""Gets the offset of this ListSeriesRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -90,7 +90,7 @@ class ListSeriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSeriesRequest.
+        r"""Sets the offset of this ListSeriesRequest.
 
         分页查询起始位置，为非负整数。
 
@@ -101,7 +101,7 @@ class ListSeriesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSeriesRequest.
+        r"""Gets the body of this ListSeriesRequest.
 
         :return: The body of this ListSeriesRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`
@@ -110,7 +110,7 @@ class ListSeriesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSeriesRequest.
+        r"""Sets the body of this ListSeriesRequest.
 
         :param body: The body of this ListSeriesRequest.
         :type body: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`

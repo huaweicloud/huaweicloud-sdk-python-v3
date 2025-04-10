@@ -27,7 +27,7 @@ class ShowSecretStageRequest:
     }
 
     def __init__(self, secret_name=None, stage_name=None):
-        """ShowSecretStageRequest
+        r"""ShowSecretStageRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecretStageRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this ShowSecretStageRequest.
+        r"""Gets the secret_name of this ShowSecretStageRequest.
 
         凭据名称。
 
@@ -59,7 +59,7 @@ class ShowSecretStageRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this ShowSecretStageRequest.
+        r"""Sets the secret_name of this ShowSecretStageRequest.
 
         凭据名称。
 
@@ -70,7 +70,7 @@ class ShowSecretStageRequest:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this ShowSecretStageRequest.
+        r"""Gets the stage_name of this ShowSecretStageRequest.
 
         凭据版本状态的名称。
 
@@ -81,7 +81,7 @@ class ShowSecretStageRequest:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this ShowSecretStageRequest.
+        r"""Sets the stage_name of this ShowSecretStageRequest.
 
         凭据版本状态的名称。
 

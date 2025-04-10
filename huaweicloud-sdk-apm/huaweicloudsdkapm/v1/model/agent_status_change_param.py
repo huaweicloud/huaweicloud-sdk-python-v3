@@ -31,7 +31,7 @@ class AgentStatusChangeParam:
     }
 
     def __init__(self, instance_list=None, target_status=None, region=None, env_id=None):
-        """AgentStatusChangeParam
+        r"""AgentStatusChangeParam
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AgentStatusChangeParam:
 
     @property
     def instance_list(self):
-        """Gets the instance_list of this AgentStatusChangeParam.
+        r"""Gets the instance_list of this AgentStatusChangeParam.
 
         探针实例id列表。
 
@@ -72,7 +72,7 @@ class AgentStatusChangeParam:
 
     @instance_list.setter
     def instance_list(self, instance_list):
-        """Sets the instance_list of this AgentStatusChangeParam.
+        r"""Sets the instance_list of this AgentStatusChangeParam.
 
         探针实例id列表。
 
@@ -83,7 +83,7 @@ class AgentStatusChangeParam:
 
     @property
     def target_status(self):
-        """Gets the target_status of this AgentStatusChangeParam.
+        r"""Gets the target_status of this AgentStatusChangeParam.
 
         期望探针改变后的状态，0或1，0表示启用，1表示停用。
 
@@ -94,7 +94,7 @@ class AgentStatusChangeParam:
 
     @target_status.setter
     def target_status(self, target_status):
-        """Sets the target_status of this AgentStatusChangeParam.
+        r"""Sets the target_status of this AgentStatusChangeParam.
 
         期望探针改变后的状态，0或1，0表示启用，1表示停用。
 
@@ -105,7 +105,7 @@ class AgentStatusChangeParam:
 
     @property
     def region(self):
-        """Gets the region of this AgentStatusChangeParam.
+        r"""Gets the region of this AgentStatusChangeParam.
 
         探针所在的区域。
 
@@ -116,7 +116,7 @@ class AgentStatusChangeParam:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AgentStatusChangeParam.
+        r"""Sets the region of this AgentStatusChangeParam.
 
         探针所在的区域。
 
@@ -127,7 +127,7 @@ class AgentStatusChangeParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AgentStatusChangeParam.
+        r"""Gets the env_id of this AgentStatusChangeParam.
 
         探针所属环境的id。
 
@@ -138,7 +138,7 @@ class AgentStatusChangeParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AgentStatusChangeParam.
+        r"""Sets the env_id of this AgentStatusChangeParam.
 
         探针所属环境的id。
 

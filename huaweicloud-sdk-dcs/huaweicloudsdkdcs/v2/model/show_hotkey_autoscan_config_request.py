@@ -25,7 +25,7 @@ class ShowHotkeyAutoscanConfigRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowHotkeyAutoscanConfigRequest
+        r"""ShowHotkeyAutoscanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowHotkeyAutoscanConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowHotkeyAutoscanConfigRequest.
+        r"""Gets the instance_id of this ShowHotkeyAutoscanConfigRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowHotkeyAutoscanConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowHotkeyAutoscanConfigRequest.
+        r"""Sets the instance_id of this ShowHotkeyAutoscanConfigRequest.
 
         实例ID。
 

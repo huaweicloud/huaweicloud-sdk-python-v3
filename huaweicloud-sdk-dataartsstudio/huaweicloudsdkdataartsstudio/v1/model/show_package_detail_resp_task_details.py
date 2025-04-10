@@ -49,7 +49,7 @@ class ShowPackageDetailRespTaskDetails:
     }
 
     def __init__(self, deploy_status=None, deployed_version=None, item_name=None, pending_item_id=None, pending_version=None, script_id=None, task_id=None, start_job_status=None, submit_timestamp=None, submit_user_id=None, submit_user_name=None, task_type=None, update_type=None):
-        """ShowPackageDetailRespTaskDetails
+        r"""ShowPackageDetailRespTaskDetails
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def deploy_status(self):
-        """Gets the deploy_status of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the deploy_status of this ShowPackageDetailRespTaskDetails.
 
         发布状态，1:待审批,2:成功,3:失败, 5:发布中
 
@@ -138,7 +138,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @deploy_status.setter
     def deploy_status(self, deploy_status):
-        """Sets the deploy_status of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the deploy_status of this ShowPackageDetailRespTaskDetails.
 
         发布状态，1:待审批,2:成功,3:失败, 5:发布中
 
@@ -149,7 +149,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def deployed_version(self):
-        """Gets the deployed_version of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the deployed_version of this ShowPackageDetailRespTaskDetails.
 
         已发布节点版本
 
@@ -160,7 +160,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @deployed_version.setter
     def deployed_version(self, deployed_version):
-        """Sets the deployed_version of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the deployed_version of this ShowPackageDetailRespTaskDetails.
 
         已发布节点版本
 
@@ -171,7 +171,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def item_name(self):
-        """Gets the item_name of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the item_name of this ShowPackageDetailRespTaskDetails.
 
         发布任务名称
 
@@ -182,7 +182,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @item_name.setter
     def item_name(self, item_name):
-        """Sets the item_name of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the item_name of this ShowPackageDetailRespTaskDetails.
 
         发布任务名称
 
@@ -193,7 +193,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def pending_item_id(self):
-        """Gets the pending_item_id of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the pending_item_id of this ShowPackageDetailRespTaskDetails.
 
         发布任务ID
 
@@ -204,7 +204,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @pending_item_id.setter
     def pending_item_id(self, pending_item_id):
-        """Sets the pending_item_id of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the pending_item_id of this ShowPackageDetailRespTaskDetails.
 
         发布任务ID
 
@@ -215,7 +215,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def pending_version(self):
-        """Gets the pending_version of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the pending_version of this ShowPackageDetailRespTaskDetails.
 
         节点版本
 
@@ -226,7 +226,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @pending_version.setter
     def pending_version(self, pending_version):
-        """Sets the pending_version of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the pending_version of this ShowPackageDetailRespTaskDetails.
 
         节点版本
 
@@ -237,7 +237,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the script_id of this ShowPackageDetailRespTaskDetails.
 
         具体脚本ID
 
@@ -248,7 +248,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the script_id of this ShowPackageDetailRespTaskDetails.
 
         具体脚本ID
 
@@ -259,7 +259,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the task_id of this ShowPackageDetailRespTaskDetails.
 
         作业ID
 
@@ -270,7 +270,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the task_id of this ShowPackageDetailRespTaskDetails.
 
         作业ID
 
@@ -281,7 +281,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def start_job_status(self):
-        """Gets the start_job_status of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the start_job_status of this ShowPackageDetailRespTaskDetails.
 
         作业启动状态，2：成功，3：失败
 
@@ -292,7 +292,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @start_job_status.setter
     def start_job_status(self, start_job_status):
-        """Sets the start_job_status of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the start_job_status of this ShowPackageDetailRespTaskDetails.
 
         作业启动状态，2：成功，3：失败
 
@@ -303,7 +303,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def submit_timestamp(self):
-        """Gets the submit_timestamp of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the submit_timestamp of this ShowPackageDetailRespTaskDetails.
 
         提交时间戳，13位时间戳
 
@@ -314,7 +314,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @submit_timestamp.setter
     def submit_timestamp(self, submit_timestamp):
-        """Sets the submit_timestamp of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the submit_timestamp of this ShowPackageDetailRespTaskDetails.
 
         提交时间戳，13位时间戳
 
@@ -325,7 +325,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def submit_user_id(self):
-        """Gets the submit_user_id of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the submit_user_id of this ShowPackageDetailRespTaskDetails.
 
         提交人id
 
@@ -336,7 +336,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @submit_user_id.setter
     def submit_user_id(self, submit_user_id):
-        """Sets the submit_user_id of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the submit_user_id of this ShowPackageDetailRespTaskDetails.
 
         提交人id
 
@@ -347,7 +347,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def submit_user_name(self):
-        """Gets the submit_user_name of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the submit_user_name of this ShowPackageDetailRespTaskDetails.
 
         提交人名称
 
@@ -358,7 +358,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @submit_user_name.setter
     def submit_user_name(self, submit_user_name):
-        """Sets the submit_user_name of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the submit_user_name of this ShowPackageDetailRespTaskDetails.
 
         提交人名称
 
@@ -369,7 +369,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the task_type of this ShowPackageDetailRespTaskDetails.
 
         任务类型（1-作业，2-脚本，3-资源）
 
@@ -380,7 +380,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the task_type of this ShowPackageDetailRespTaskDetails.
 
         任务类型（1-作业，2-脚本，3-资源）
 
@@ -391,7 +391,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @property
     def update_type(self):
-        """Gets the update_type of this ShowPackageDetailRespTaskDetails.
+        r"""Gets the update_type of this ShowPackageDetailRespTaskDetails.
 
         变更类型，默认值1，（1-新增，2-修改，3-删除）
 
@@ -402,7 +402,7 @@ class ShowPackageDetailRespTaskDetails:
 
     @update_type.setter
     def update_type(self, update_type):
-        """Sets the update_type of this ShowPackageDetailRespTaskDetails.
+        r"""Sets the update_type of this ShowPackageDetailRespTaskDetails.
 
         变更类型，默认值1，（1-新增，2-修改，3-删除）
 

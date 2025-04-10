@@ -27,7 +27,7 @@ class NetworkControlConfig:
     }
 
     def __init__(self, disable_public_network=None, trigger_access_vpcs=None):
-        """NetworkControlConfig
+        r"""NetworkControlConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NetworkControlConfig:
 
     @property
     def disable_public_network(self):
-        """Gets the disable_public_network of this NetworkControlConfig.
+        r"""Gets the disable_public_network of this NetworkControlConfig.
 
         禁止公网访问开关。
 
@@ -61,7 +61,7 @@ class NetworkControlConfig:
 
     @disable_public_network.setter
     def disable_public_network(self, disable_public_network):
-        """Sets the disable_public_network of this NetworkControlConfig.
+        r"""Sets the disable_public_network of this NetworkControlConfig.
 
         禁止公网访问开关。
 
@@ -72,7 +72,7 @@ class NetworkControlConfig:
 
     @property
     def trigger_access_vpcs(self):
-        """Gets the trigger_access_vpcs of this NetworkControlConfig.
+        r"""Gets the trigger_access_vpcs of this NetworkControlConfig.
 
         指定触发函数vpc配置。
 
@@ -83,7 +83,7 @@ class NetworkControlConfig:
 
     @trigger_access_vpcs.setter
     def trigger_access_vpcs(self, trigger_access_vpcs):
-        """Sets the trigger_access_vpcs of this NetworkControlConfig.
+        r"""Sets the trigger_access_vpcs of this NetworkControlConfig.
 
         指定触发函数vpc配置。
 

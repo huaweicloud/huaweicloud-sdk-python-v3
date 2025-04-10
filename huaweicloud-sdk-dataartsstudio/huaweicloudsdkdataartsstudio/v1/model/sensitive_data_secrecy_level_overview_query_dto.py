@@ -31,7 +31,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
     }
 
     def __init__(self, secrecy_level_id=None, secrecy_level_name=None, secrecy_level_number=None, count=None):
-        """SensitiveDataSecrecyLevelOverviewQueryDTO
+        r"""SensitiveDataSecrecyLevelOverviewQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @property
     def secrecy_level_id(self):
-        """Gets the secrecy_level_id of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Gets the secrecy_level_id of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         密级ID
 
@@ -75,7 +75,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @secrecy_level_id.setter
     def secrecy_level_id(self, secrecy_level_id):
-        """Sets the secrecy_level_id of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Sets the secrecy_level_id of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         密级ID
 
@@ -86,7 +86,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @property
     def secrecy_level_name(self):
-        """Gets the secrecy_level_name of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Gets the secrecy_level_name of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         密级名称
 
@@ -97,7 +97,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @secrecy_level_name.setter
     def secrecy_level_name(self, secrecy_level_name):
-        """Sets the secrecy_level_name of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Sets the secrecy_level_name of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         密级名称
 
@@ -108,7 +108,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @property
     def secrecy_level_number(self):
-        """Gets the secrecy_level_number of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Gets the secrecy_level_number of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         密级的等级
 
@@ -119,7 +119,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @secrecy_level_number.setter
     def secrecy_level_number(self, secrecy_level_number):
-        """Sets the secrecy_level_number of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Sets the secrecy_level_number of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         密级的等级
 
@@ -130,7 +130,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @property
     def count(self):
-        """Gets the count of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Gets the count of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         当前密级下的敏感字段数量
 
@@ -141,7 +141,7 @@ class SensitiveDataSecrecyLevelOverviewQueryDTO:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SensitiveDataSecrecyLevelOverviewQueryDTO.
+        r"""Sets the count of this SensitiveDataSecrecyLevelOverviewQueryDTO.
 
         当前密级下的敏感字段数量
 

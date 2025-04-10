@@ -31,7 +31,7 @@ class NodeCreateRequest:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """NodeCreateRequest
+        r"""NodeCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class NodeCreateRequest:
 
     @property
     def kind(self):
-        """Gets the kind of this NodeCreateRequest.
+        r"""Gets the kind of this NodeCreateRequest.
 
         API类型，固定值“Node”，该值不可修改。  
 
@@ -72,7 +72,7 @@ class NodeCreateRequest:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this NodeCreateRequest.
+        r"""Sets the kind of this NodeCreateRequest.
 
         API类型，固定值“Node”，该值不可修改。  
 
@@ -83,7 +83,7 @@ class NodeCreateRequest:
 
     @property
     def api_version(self):
-        """Gets the api_version of this NodeCreateRequest.
+        r"""Gets the api_version of this NodeCreateRequest.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -94,7 +94,7 @@ class NodeCreateRequest:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this NodeCreateRequest.
+        r"""Sets the api_version of this NodeCreateRequest.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -105,7 +105,7 @@ class NodeCreateRequest:
 
     @property
     def metadata(self):
-        """Gets the metadata of this NodeCreateRequest.
+        r"""Gets the metadata of this NodeCreateRequest.
 
         :return: The metadata of this NodeCreateRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -114,7 +114,7 @@ class NodeCreateRequest:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this NodeCreateRequest.
+        r"""Sets the metadata of this NodeCreateRequest.
 
         :param metadata: The metadata of this NodeCreateRequest.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -123,7 +123,7 @@ class NodeCreateRequest:
 
     @property
     def spec(self):
-        """Gets the spec of this NodeCreateRequest.
+        r"""Gets the spec of this NodeCreateRequest.
 
         :return: The spec of this NodeCreateRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -132,7 +132,7 @@ class NodeCreateRequest:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this NodeCreateRequest.
+        r"""Sets the spec of this NodeCreateRequest.
 
         :param spec: The spec of this NodeCreateRequest.
         :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`

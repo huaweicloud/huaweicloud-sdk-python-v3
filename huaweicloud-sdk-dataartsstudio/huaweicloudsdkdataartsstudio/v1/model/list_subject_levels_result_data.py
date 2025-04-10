@@ -25,7 +25,7 @@ class ListSubjectLevelsResultData:
     }
 
     def __init__(self, value=None):
-        """ListSubjectLevelsResultData
+        r"""ListSubjectLevelsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSubjectLevelsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListSubjectLevelsResultData.
+        r"""Gets the value of this ListSubjectLevelsResultData.
 
         value，统一的返回结果的外层数据结构。
 
@@ -54,7 +54,7 @@ class ListSubjectLevelsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListSubjectLevelsResultData.
+        r"""Sets the value of this ListSubjectLevelsResultData.
 
         value，统一的返回结果的外层数据结构。
 

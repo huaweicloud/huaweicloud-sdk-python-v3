@@ -25,7 +25,7 @@ class ChangeBaremetalNameServer:
     }
 
     def __init__(self, name=None):
-        """ChangeBaremetalNameServer
+        r"""ChangeBaremetalNameServer
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeBaremetalNameServer:
 
     @property
     def name(self):
-        """Gets the name of this ChangeBaremetalNameServer.
+        r"""Gets the name of this ChangeBaremetalNameServer.
 
         修改后的裸金属服务器名称
 
@@ -53,7 +53,7 @@ class ChangeBaremetalNameServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChangeBaremetalNameServer.
+        r"""Sets the name of this ChangeBaremetalNameServer.
 
         修改后的裸金属服务器名称
 

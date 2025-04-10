@@ -28,7 +28,7 @@ class ValidatePolicyResponse(SdkResponse):
     }
 
     def __init__(self, findings=None, page_info=None):
-        """ValidatePolicyResponse
+        r"""ValidatePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ValidatePolicyResponse(SdkResponse):
 
     @property
     def findings(self):
-        """Gets the findings of this ValidatePolicyResponse.
+        r"""Gets the findings of this ValidatePolicyResponse.
 
         可用于改进策略的可操作建议。
 
@@ -62,7 +62,7 @@ class ValidatePolicyResponse(SdkResponse):
 
     @findings.setter
     def findings(self, findings):
-        """Sets the findings of this ValidatePolicyResponse.
+        r"""Sets the findings of this ValidatePolicyResponse.
 
         可用于改进策略的可操作建议。
 
@@ -73,7 +73,7 @@ class ValidatePolicyResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ValidatePolicyResponse.
+        r"""Gets the page_info of this ValidatePolicyResponse.
 
         :return: The page_info of this ValidatePolicyResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -82,7 +82,7 @@ class ValidatePolicyResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ValidatePolicyResponse.
+        r"""Sets the page_info of this ValidatePolicyResponse.
 
         :param page_info: The page_info of this ValidatePolicyResponse.
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`

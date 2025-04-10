@@ -30,7 +30,7 @@ class UploadCsrResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, create_time=None):
-        """UploadCsrResponse
+        r"""UploadCsrResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UploadCsrResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UploadCsrResponse.
+        r"""Gets the id of this UploadCsrResponse.
 
         CSR的ID。
 
@@ -69,7 +69,7 @@ class UploadCsrResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadCsrResponse.
+        r"""Sets the id of this UploadCsrResponse.
 
         CSR的ID。
 
@@ -80,7 +80,7 @@ class UploadCsrResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UploadCsrResponse.
+        r"""Gets the name of this UploadCsrResponse.
 
         自定义CSR名称。
 
@@ -91,7 +91,7 @@ class UploadCsrResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadCsrResponse.
+        r"""Sets the name of this UploadCsrResponse.
 
         自定义CSR名称。
 
@@ -102,7 +102,7 @@ class UploadCsrResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UploadCsrResponse.
+        r"""Gets the create_time of this UploadCsrResponse.
 
         CSR创建时间。
 
@@ -113,7 +113,7 @@ class UploadCsrResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UploadCsrResponse.
+        r"""Sets the create_time of this UploadCsrResponse.
 
         CSR创建时间。
 

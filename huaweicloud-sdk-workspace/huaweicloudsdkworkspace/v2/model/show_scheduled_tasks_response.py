@@ -66,7 +66,7 @@ class ShowScheduledTasksResponse(SdkResponse):
     }
 
     def __init__(self, id=None, task_type=None, task_name=None, force_execute=None, scheduled_type=None, life_cycle_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, extra_params=None, apply_objects=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, time_zone=None, wait_time=None):
-        """ShowScheduledTasksResponse
+        r"""ShowScheduledTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowScheduledTasksResponse.
+        r"""Gets the id of this ShowScheduledTasksResponse.
 
         任务id
 
@@ -195,7 +195,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScheduledTasksResponse.
+        r"""Sets the id of this ShowScheduledTasksResponse.
 
         任务id
 
@@ -206,7 +206,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowScheduledTasksResponse.
+        r"""Gets the task_type of this ShowScheduledTasksResponse.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。scheduled_type为LIFE_CYCLE时，不支持START、REBUILD。
 
@@ -217,7 +217,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowScheduledTasksResponse.
+        r"""Sets the task_type of this ShowScheduledTasksResponse.
 
         任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。scheduled_type为LIFE_CYCLE时，不支持START、REBUILD。
 
@@ -228,7 +228,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowScheduledTasksResponse.
+        r"""Gets the task_name of this ShowScheduledTasksResponse.
 
         任务名称。
 
@@ -239,7 +239,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowScheduledTasksResponse.
+        r"""Sets the task_name of this ShowScheduledTasksResponse.
 
         任务名称。
 
@@ -250,7 +250,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def force_execute(self):
-        """Gets the force_execute of this ShowScheduledTasksResponse.
+        r"""Gets the force_execute of this ShowScheduledTasksResponse.
 
         是否强制执行。
 
@@ -261,7 +261,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @force_execute.setter
     def force_execute(self, force_execute):
-        """Sets the force_execute of this ShowScheduledTasksResponse.
+        r"""Sets the force_execute of this ShowScheduledTasksResponse.
 
         是否强制执行。
 
@@ -272,7 +272,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ShowScheduledTasksResponse.
+        r"""Gets the scheduled_type of this ShowScheduledTasksResponse.
 
         执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月，LIFE_CYCLE：指定场景下触发。
 
@@ -283,7 +283,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ShowScheduledTasksResponse.
+        r"""Sets the scheduled_type of this ShowScheduledTasksResponse.
 
         执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月，LIFE_CYCLE：指定场景下触发。
 
@@ -294,7 +294,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def life_cycle_type(self):
-        """Gets the life_cycle_type of this ShowScheduledTasksResponse.
+        r"""Gets the life_cycle_type of this ShowScheduledTasksResponse.
 
         触发场景类型。仅当scheduled_type为LIFE_CYCLE时，生效。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
 
@@ -305,7 +305,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @life_cycle_type.setter
     def life_cycle_type(self, life_cycle_type):
-        """Sets the life_cycle_type of this ShowScheduledTasksResponse.
+        r"""Sets the life_cycle_type of this ShowScheduledTasksResponse.
 
         触发场景类型。仅当scheduled_type为LIFE_CYCLE时，生效。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
 
@@ -316,7 +316,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this ShowScheduledTasksResponse.
+        r"""Gets the day_interval of this ShowScheduledTasksResponse.
 
         周期按天时：按x天间隔执行。
 
@@ -327,7 +327,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this ShowScheduledTasksResponse.
+        r"""Sets the day_interval of this ShowScheduledTasksResponse.
 
         周期按天时：按x天间隔执行。
 
@@ -338,7 +338,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def week_list(self):
-        """Gets the week_list of this ShowScheduledTasksResponse.
+        r"""Gets the week_list of this ShowScheduledTasksResponse.
 
         周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
 
@@ -349,7 +349,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this ShowScheduledTasksResponse.
+        r"""Sets the week_list of this ShowScheduledTasksResponse.
 
         周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
 
@@ -360,7 +360,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def month_list(self):
-        """Gets the month_list of this ShowScheduledTasksResponse.
+        r"""Gets the month_list of this ShowScheduledTasksResponse.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -371,7 +371,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this ShowScheduledTasksResponse.
+        r"""Sets the month_list of this ShowScheduledTasksResponse.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -382,7 +382,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def date_list(self):
-        """Gets the date_list of this ShowScheduledTasksResponse.
+        r"""Gets the date_list of this ShowScheduledTasksResponse.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -393,7 +393,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this ShowScheduledTasksResponse.
+        r"""Sets the date_list of this ShowScheduledTasksResponse.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -404,7 +404,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this ShowScheduledTasksResponse.
+        r"""Gets the scheduled_date of this ShowScheduledTasksResponse.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -415,7 +415,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this ShowScheduledTasksResponse.
+        r"""Sets the scheduled_date of this ShowScheduledTasksResponse.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -426,7 +426,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this ShowScheduledTasksResponse.
+        r"""Gets the scheduled_time of this ShowScheduledTasksResponse.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -437,7 +437,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this ShowScheduledTasksResponse.
+        r"""Sets the scheduled_time of this ShowScheduledTasksResponse.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -448,7 +448,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowScheduledTasksResponse.
+        r"""Gets the expire_time of this ShowScheduledTasksResponse.
 
         到期时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -459,7 +459,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowScheduledTasksResponse.
+        r"""Sets the expire_time of this ShowScheduledTasksResponse.
 
         到期时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -470,7 +470,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowScheduledTasksResponse.
+        r"""Gets the description of this ShowScheduledTasksResponse.
 
         描述。
 
@@ -481,7 +481,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowScheduledTasksResponse.
+        r"""Sets the description of this ShowScheduledTasksResponse.
 
         描述。
 
@@ -492,7 +492,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def extra_params(self):
-        """Gets the extra_params of this ShowScheduledTasksResponse.
+        r"""Gets the extra_params of this ShowScheduledTasksResponse.
 
         扩展参数，json格式。
 
@@ -503,7 +503,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @extra_params.setter
     def extra_params(self, extra_params):
-        """Sets the extra_params of this ShowScheduledTasksResponse.
+        r"""Sets the extra_params of this ShowScheduledTasksResponse.
 
         扩展参数，json格式。
 
@@ -514,7 +514,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def apply_objects(self):
-        """Gets the apply_objects of this ShowScheduledTasksResponse.
+        r"""Gets the apply_objects of this ShowScheduledTasksResponse.
 
         定时任务应用的对象列表。
 
@@ -525,7 +525,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @apply_objects.setter
     def apply_objects(self, apply_objects):
-        """Sets the apply_objects of this ShowScheduledTasksResponse.
+        r"""Sets the apply_objects of this ShowScheduledTasksResponse.
 
         定时任务应用的对象列表。
 
@@ -536,7 +536,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def gray_count(self):
-        """Gets the gray_count of this ShowScheduledTasksResponse.
+        r"""Gets the gray_count of this ShowScheduledTasksResponse.
 
         灰度对象数量，优先级高于gray_desktop_ids。
 
@@ -547,7 +547,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @gray_count.setter
     def gray_count(self, gray_count):
-        """Sets the gray_count of this ShowScheduledTasksResponse.
+        r"""Sets the gray_count of this ShowScheduledTasksResponse.
 
         灰度对象数量，优先级高于gray_desktop_ids。
 
@@ -558,7 +558,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def gray_desktop_ids(self):
-        """Gets the gray_desktop_ids of this ShowScheduledTasksResponse.
+        r"""Gets the gray_desktop_ids of this ShowScheduledTasksResponse.
 
         灰度执行的桌面id列表，优先级低于gray_count。
 
@@ -569,7 +569,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @gray_desktop_ids.setter
     def gray_desktop_ids(self, gray_desktop_ids):
-        """Sets the gray_desktop_ids of this ShowScheduledTasksResponse.
+        r"""Sets the gray_desktop_ids of this ShowScheduledTasksResponse.
 
         灰度执行的桌面id列表，优先级低于gray_count。
 
@@ -580,7 +580,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def gray_fail_threshold(self):
-        """Gets the gray_fail_threshold of this ShowScheduledTasksResponse.
+        r"""Gets the gray_fail_threshold of this ShowScheduledTasksResponse.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。
 
@@ -591,7 +591,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @gray_fail_threshold.setter
     def gray_fail_threshold(self, gray_fail_threshold):
-        """Sets the gray_fail_threshold of this ShowScheduledTasksResponse.
+        r"""Sets the gray_fail_threshold of this ShowScheduledTasksResponse.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。
 
@@ -602,7 +602,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ShowScheduledTasksResponse.
+        r"""Gets the time_zone of this ShowScheduledTasksResponse.
 
         时区。
 
@@ -613,7 +613,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ShowScheduledTasksResponse.
+        r"""Sets the time_zone of this ShowScheduledTasksResponse.
 
         时区。
 
@@ -624,7 +624,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @property
     def wait_time(self):
-        """Gets the wait_time of this ShowScheduledTasksResponse.
+        r"""Gets the wait_time of this ShowScheduledTasksResponse.
 
         触发式任务触发后，等待时长。
 
@@ -635,7 +635,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
     @wait_time.setter
     def wait_time(self, wait_time):
-        """Sets the wait_time of this ShowScheduledTasksResponse.
+        r"""Sets the wait_time of this ShowScheduledTasksResponse.
 
         触发式任务触发后，等待时长。
 

@@ -29,7 +29,7 @@ class AssociateClassificationToEntityRequest:
     }
 
     def __init__(self, workspace=None, guid=None, body=None):
-        """AssociateClassificationToEntityRequest
+        r"""AssociateClassificationToEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AssociateClassificationToEntityRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this AssociateClassificationToEntityRequest.
+        r"""Gets the workspace of this AssociateClassificationToEntityRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class AssociateClassificationToEntityRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this AssociateClassificationToEntityRequest.
+        r"""Sets the workspace of this AssociateClassificationToEntityRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class AssociateClassificationToEntityRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this AssociateClassificationToEntityRequest.
+        r"""Gets the guid of this AssociateClassificationToEntityRequest.
 
         资产标识guid
 
@@ -88,7 +88,7 @@ class AssociateClassificationToEntityRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this AssociateClassificationToEntityRequest.
+        r"""Sets the guid of this AssociateClassificationToEntityRequest.
 
         资产标识guid
 
@@ -99,7 +99,7 @@ class AssociateClassificationToEntityRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateClassificationToEntityRequest.
+        r"""Gets the body of this AssociateClassificationToEntityRequest.
 
         :return: The body of this AssociateClassificationToEntityRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenClassification`
@@ -108,7 +108,7 @@ class AssociateClassificationToEntityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateClassificationToEntityRequest.
+        r"""Sets the body of this AssociateClassificationToEntityRequest.
 
         :param body: The body of this AssociateClassificationToEntityRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.OpenClassification`

@@ -33,7 +33,7 @@ class NoticeRsp:
     }
 
     def __init__(self, id=None, type=None, detail=None, create_time=None, is_read=None):
-        """NoticeRsp
+        r"""NoticeRsp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NoticeRsp:
 
     @property
     def id(self):
-        """Gets the id of this NoticeRsp.
+        r"""Gets the id of this NoticeRsp.
 
         消息id
 
@@ -82,7 +82,7 @@ class NoticeRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NoticeRsp.
+        r"""Sets the id of this NoticeRsp.
 
         消息id
 
@@ -93,7 +93,7 @@ class NoticeRsp:
 
     @property
     def type(self):
-        """Gets the type of this NoticeRsp.
+        r"""Gets the type of this NoticeRsp.
 
         消息类型
 
@@ -104,7 +104,7 @@ class NoticeRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NoticeRsp.
+        r"""Sets the type of this NoticeRsp.
 
         消息类型
 
@@ -115,7 +115,7 @@ class NoticeRsp:
 
     @property
     def detail(self):
-        """Gets the detail of this NoticeRsp.
+        r"""Gets the detail of this NoticeRsp.
 
         消息详情
 
@@ -126,7 +126,7 @@ class NoticeRsp:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this NoticeRsp.
+        r"""Sets the detail of this NoticeRsp.
 
         消息详情
 
@@ -137,7 +137,7 @@ class NoticeRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this NoticeRsp.
+        r"""Gets the create_time of this NoticeRsp.
 
         消息创建时间
 
@@ -148,7 +148,7 @@ class NoticeRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this NoticeRsp.
+        r"""Sets the create_time of this NoticeRsp.
 
         消息创建时间
 
@@ -159,7 +159,7 @@ class NoticeRsp:
 
     @property
     def is_read(self):
-        """Gets the is_read of this NoticeRsp.
+        r"""Gets the is_read of this NoticeRsp.
 
         是否已读
 
@@ -170,7 +170,7 @@ class NoticeRsp:
 
     @is_read.setter
     def is_read(self, is_read):
-        """Sets the is_read of this NoticeRsp.
+        r"""Sets the is_read of this NoticeRsp.
 
         是否已读
 

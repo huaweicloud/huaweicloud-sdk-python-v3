@@ -29,7 +29,7 @@ class WafProductInfo:
     }
 
     def __init__(self, resource_spec_code=None, period_type=None, period_num=None):
-        """WafProductInfo
+        r"""WafProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WafProductInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this WafProductInfo.
+        r"""Gets the resource_spec_code of this WafProductInfo.
 
         waf规格   -  professional：标准   - enterprise：专业   - ultimate：铂金版
 
@@ -68,7 +68,7 @@ class WafProductInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this WafProductInfo.
+        r"""Sets the resource_spec_code of this WafProductInfo.
 
         waf规格   -  professional：标准   - enterprise：专业   - ultimate：铂金版
 
@@ -79,7 +79,7 @@ class WafProductInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this WafProductInfo.
+        r"""Gets the period_type of this WafProductInfo.
 
         订购周期类型 month: 月；year: 年
 
@@ -90,7 +90,7 @@ class WafProductInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this WafProductInfo.
+        r"""Sets the period_type of this WafProductInfo.
 
         订购周期类型 month: 月；year: 年
 
@@ -101,7 +101,7 @@ class WafProductInfo:
 
     @property
     def period_num(self):
-        """Gets the period_num of this WafProductInfo.
+        r"""Gets the period_num of this WafProductInfo.
 
         订购周期数
 
@@ -112,7 +112,7 @@ class WafProductInfo:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this WafProductInfo.
+        r"""Sets the period_num of this WafProductInfo.
 
         订购周期数
 

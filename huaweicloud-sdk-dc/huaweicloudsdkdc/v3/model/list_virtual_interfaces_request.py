@@ -43,7 +43,7 @@ class ListVirtualInterfacesRequest:
     }
 
     def __init__(self, limit=None, marker=None, fields=None, sort_dir=None, sort_key=None, enterprise_project_id=None, id=None, status=None, direct_connect_id=None, vgw_id=None):
-        """ListVirtualInterfacesRequest
+        r"""ListVirtualInterfacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVirtualInterfacesRequest.
+        r"""Gets the limit of this ListVirtualInterfacesRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -117,7 +117,7 @@ class ListVirtualInterfacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVirtualInterfacesRequest.
+        r"""Sets the limit of this ListVirtualInterfacesRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -128,7 +128,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVirtualInterfacesRequest.
+        r"""Gets the marker of this ListVirtualInterfacesRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -139,7 +139,7 @@ class ListVirtualInterfacesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVirtualInterfacesRequest.
+        r"""Sets the marker of this ListVirtualInterfacesRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -150,7 +150,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListVirtualInterfacesRequest.
+        r"""Gets the fields of this ListVirtualInterfacesRequest.
 
         显示字段列表
 
@@ -161,7 +161,7 @@ class ListVirtualInterfacesRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListVirtualInterfacesRequest.
+        r"""Sets the fields of this ListVirtualInterfacesRequest.
 
         显示字段列表
 
@@ -172,7 +172,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListVirtualInterfacesRequest.
+        r"""Gets the sort_dir of this ListVirtualInterfacesRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -183,7 +183,7 @@ class ListVirtualInterfacesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListVirtualInterfacesRequest.
+        r"""Sets the sort_dir of this ListVirtualInterfacesRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -194,7 +194,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListVirtualInterfacesRequest.
+        r"""Gets the sort_key of this ListVirtualInterfacesRequest.
 
         排序字段。
 
@@ -205,7 +205,7 @@ class ListVirtualInterfacesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListVirtualInterfacesRequest.
+        r"""Sets the sort_key of this ListVirtualInterfacesRequest.
 
         排序字段。
 
@@ -216,7 +216,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVirtualInterfacesRequest.
+        r"""Gets the enterprise_project_id of this ListVirtualInterfacesRequest.
 
         根据企业项目ID过滤资源实例
 
@@ -227,7 +227,7 @@ class ListVirtualInterfacesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVirtualInterfacesRequest.
+        r"""Sets the enterprise_project_id of this ListVirtualInterfacesRequest.
 
         根据企业项目ID过滤资源实例
 
@@ -238,7 +238,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVirtualInterfacesRequest.
+        r"""Gets the id of this ListVirtualInterfacesRequest.
 
         根据资源ID过滤实例
 
@@ -249,7 +249,7 @@ class ListVirtualInterfacesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVirtualInterfacesRequest.
+        r"""Sets the id of this ListVirtualInterfacesRequest.
 
         根据资源ID过滤实例
 
@@ -260,7 +260,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVirtualInterfacesRequest.
+        r"""Gets the status of this ListVirtualInterfacesRequest.
 
         根椐资源状态过滤实例
 
@@ -271,7 +271,7 @@ class ListVirtualInterfacesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVirtualInterfacesRequest.
+        r"""Sets the status of this ListVirtualInterfacesRequest.
 
         根椐资源状态过滤实例
 
@@ -282,7 +282,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def direct_connect_id(self):
-        """Gets the direct_connect_id of this ListVirtualInterfacesRequest.
+        r"""Gets the direct_connect_id of this ListVirtualInterfacesRequest.
 
         根椐物理专线ID过滤查询实例信息
 
@@ -293,7 +293,7 @@ class ListVirtualInterfacesRequest:
 
     @direct_connect_id.setter
     def direct_connect_id(self, direct_connect_id):
-        """Sets the direct_connect_id of this ListVirtualInterfacesRequest.
+        r"""Sets the direct_connect_id of this ListVirtualInterfacesRequest.
 
         根椐物理专线ID过滤查询实例信息
 
@@ -304,7 +304,7 @@ class ListVirtualInterfacesRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this ListVirtualInterfacesRequest.
+        r"""Gets the vgw_id of this ListVirtualInterfacesRequest.
 
         根椐虚拟网关ID过滤查询实例信息
 
@@ -315,7 +315,7 @@ class ListVirtualInterfacesRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this ListVirtualInterfacesRequest.
+        r"""Sets the vgw_id of this ListVirtualInterfacesRequest.
 
         根椐虚拟网关ID过滤查询实例信息
 

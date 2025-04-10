@@ -27,7 +27,7 @@ class TagsOption:
     }
 
     def __init__(self, key=None, value=None):
-        """TagsOption
+        r"""TagsOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagsOption:
 
     @property
     def key(self):
-        """Gets the key of this TagsOption.
+        r"""Gets the key of this TagsOption.
 
         标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。
 
@@ -59,7 +59,7 @@ class TagsOption:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagsOption.
+        r"""Sets the key of this TagsOption.
 
         标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。
 
@@ -70,7 +70,7 @@ class TagsOption:
 
     @property
     def value(self):
-        """Gets the value of this TagsOption.
+        r"""Gets the value of this TagsOption.
 
         标签值。最大长度43个unicode字符，可以为空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。
 
@@ -81,7 +81,7 @@ class TagsOption:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagsOption.
+        r"""Sets the value of this TagsOption.
 
         标签值。最大长度43个unicode字符，可以为空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。
 

@@ -26,7 +26,7 @@ class DeleteBlockchainResponse(SdkResponse):
     }
 
     def __init__(self, operation_id=None):
-        """DeleteBlockchainResponse
+        r"""DeleteBlockchainResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteBlockchainResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this DeleteBlockchainResponse.
+        r"""Gets the operation_id of this DeleteBlockchainResponse.
 
         操作记录id
 
@@ -55,7 +55,7 @@ class DeleteBlockchainResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this DeleteBlockchainResponse.
+        r"""Sets the operation_id of this DeleteBlockchainResponse.
 
         操作记录id
 

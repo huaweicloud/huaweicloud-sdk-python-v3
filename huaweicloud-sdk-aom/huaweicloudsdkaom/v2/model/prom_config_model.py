@@ -33,7 +33,7 @@ class PromConfigModel:
     }
 
     def __init__(self, remote_write_url=None, remote_read_url=None, prom_http_api_endpoint=None, dashboard_id=None, region_id=None):
-        """PromConfigModel
+        r"""PromConfigModel
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PromConfigModel:
 
     @property
     def remote_write_url(self):
-        """Gets the remote_write_url of this PromConfigModel.
+        r"""Gets the remote_write_url of this PromConfigModel.
 
         Prometheus实例remote-write地址。
 
@@ -82,7 +82,7 @@ class PromConfigModel:
 
     @remote_write_url.setter
     def remote_write_url(self, remote_write_url):
-        """Sets the remote_write_url of this PromConfigModel.
+        r"""Sets the remote_write_url of this PromConfigModel.
 
         Prometheus实例remote-write地址。
 
@@ -93,7 +93,7 @@ class PromConfigModel:
 
     @property
     def remote_read_url(self):
-        """Gets the remote_read_url of this PromConfigModel.
+        r"""Gets the remote_read_url of this PromConfigModel.
 
         Prometheus实例remote-read地址。
 
@@ -104,7 +104,7 @@ class PromConfigModel:
 
     @remote_read_url.setter
     def remote_read_url(self, remote_read_url):
-        """Sets the remote_read_url of this PromConfigModel.
+        r"""Sets the remote_read_url of this PromConfigModel.
 
         Prometheus实例remote-read地址。
 
@@ -115,7 +115,7 @@ class PromConfigModel:
 
     @property
     def prom_http_api_endpoint(self):
-        """Gets the prom_http_api_endpoint of this PromConfigModel.
+        r"""Gets the prom_http_api_endpoint of this PromConfigModel.
 
         Prometheus实例调用url。
 
@@ -126,7 +126,7 @@ class PromConfigModel:
 
     @prom_http_api_endpoint.setter
     def prom_http_api_endpoint(self, prom_http_api_endpoint):
-        """Sets the prom_http_api_endpoint of this PromConfigModel.
+        r"""Sets the prom_http_api_endpoint of this PromConfigModel.
 
         Prometheus实例调用url。
 
@@ -137,7 +137,7 @@ class PromConfigModel:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this PromConfigModel.
+        r"""Gets the dashboard_id of this PromConfigModel.
 
         Prometheus实例关联dashboard的dashboard id（目前未使用）。
 
@@ -148,7 +148,7 @@ class PromConfigModel:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this PromConfigModel.
+        r"""Sets the dashboard_id of this PromConfigModel.
 
         Prometheus实例关联dashboard的dashboard id（目前未使用）。
 
@@ -159,7 +159,7 @@ class PromConfigModel:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PromConfigModel.
+        r"""Gets the region_id of this PromConfigModel.
 
         Prometheus实例所属的region。
 
@@ -170,7 +170,7 @@ class PromConfigModel:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PromConfigModel.
+        r"""Sets the region_id of this PromConfigModel.
 
         Prometheus实例所属的region。
 

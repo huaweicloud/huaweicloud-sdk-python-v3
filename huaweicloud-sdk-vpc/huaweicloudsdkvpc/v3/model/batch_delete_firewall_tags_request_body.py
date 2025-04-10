@@ -25,7 +25,7 @@ class BatchDeleteFirewallTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchDeleteFirewallTagsRequestBody
+        r"""BatchDeleteFirewallTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteFirewallTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteFirewallTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteFirewallTagsRequestBody.
 
         标签列表
 
@@ -53,7 +53,7 @@ class BatchDeleteFirewallTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteFirewallTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteFirewallTagsRequestBody.
 
         标签列表
 

@@ -25,7 +25,7 @@ class SubscribeCloudServiceRequest:
     }
 
     def __init__(self, service_type=None):
-        """SubscribeCloudServiceRequest
+        r"""SubscribeCloudServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SubscribeCloudServiceRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this SubscribeCloudServiceRequest.
+        r"""Gets the service_type of this SubscribeCloudServiceRequest.
 
         iDME服务的类型。  说明：目前仅支持接口开通设计态服务STUDIO  示例：STUDIO
 
@@ -53,7 +53,7 @@ class SubscribeCloudServiceRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this SubscribeCloudServiceRequest.
+        r"""Sets the service_type of this SubscribeCloudServiceRequest.
 
         iDME服务的类型。  说明：目前仅支持接口开通设计态服务STUDIO  示例：STUDIO
 

@@ -31,7 +31,7 @@ class ListAutopilotClustersRequest:
     }
 
     def __init__(self, detail=None, status=None, type=None, version=None):
-        """ListAutopilotClustersRequest
+        r"""ListAutopilotClustersRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListAutopilotClustersRequest:
 
     @property
     def detail(self):
-        """Gets the detail of this ListAutopilotClustersRequest.
+        r"""Gets the detail of this ListAutopilotClustersRequest.
 
         查询集群详细信息。  若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)、已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。 
 
@@ -75,7 +75,7 @@ class ListAutopilotClustersRequest:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ListAutopilotClustersRequest.
+        r"""Sets the detail of this ListAutopilotClustersRequest.
 
         查询集群详细信息。  若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)、已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。 
 
@@ -86,7 +86,7 @@ class ListAutopilotClustersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAutopilotClustersRequest.
+        r"""Gets the status of this ListAutopilotClustersRequest.
 
         集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - RollingBack：回滚中，表示集群正处于回滚过程中。 - RollbackFailed：回滚异常，表示集群回滚异常。 - Error：错误，表示集群资源异常，可尝试手动删除。
 
@@ -97,7 +97,7 @@ class ListAutopilotClustersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAutopilotClustersRequest.
+        r"""Sets the status of this ListAutopilotClustersRequest.
 
         集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - RollingBack：回滚中，表示集群正处于回滚过程中。 - RollbackFailed：回滚异常，表示集群回滚异常。 - Error：错误，表示集群资源异常，可尝试手动删除。
 
@@ -108,7 +108,7 @@ class ListAutopilotClustersRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAutopilotClustersRequest.
+        r"""Gets the type of this ListAutopilotClustersRequest.
 
         集群类型： - VirtualMachine：CCE集群
 
@@ -119,7 +119,7 @@ class ListAutopilotClustersRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAutopilotClustersRequest.
+        r"""Sets the type of this ListAutopilotClustersRequest.
 
         集群类型： - VirtualMachine：CCE集群
 
@@ -130,7 +130,7 @@ class ListAutopilotClustersRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListAutopilotClustersRequest.
+        r"""Gets the version of this ListAutopilotClustersRequest.
 
         集群版本过滤
 
@@ -141,7 +141,7 @@ class ListAutopilotClustersRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListAutopilotClustersRequest.
+        r"""Sets the version of this ListAutopilotClustersRequest.
 
         集群版本过滤
 

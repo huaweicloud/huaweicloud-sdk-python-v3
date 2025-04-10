@@ -43,7 +43,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
     }
 
     def __init__(self, desktop_pool_id=None, script_id=None, script_name=None, status=None, task_type=None, offset=None, limit=None, execute_time_start=None, execute_time_end=None, task_id=None):
-        """ShowDesktopPoolsScriptExecTasksRequest
+        r"""ShowDesktopPoolsScriptExecTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the desktop_pool_id of this ShowDesktopPoolsScriptExecTasksRequest.
 
         桌面池id。
 
@@ -117,7 +117,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the desktop_pool_id of this ShowDesktopPoolsScriptExecTasksRequest.
 
         桌面池id。
 
@@ -128,7 +128,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the script_id of this ShowDesktopPoolsScriptExecTasksRequest.
 
         脚本id。
 
@@ -139,7 +139,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the script_id of this ShowDesktopPoolsScriptExecTasksRequest.
 
         脚本id。
 
@@ -150,7 +150,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the script_name of this ShowDesktopPoolsScriptExecTasksRequest.
 
         脚本名称。
 
@@ -161,7 +161,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the script_name of this ShowDesktopPoolsScriptExecTasksRequest.
 
         脚本名称。
 
@@ -172,7 +172,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the status of this ShowDesktopPoolsScriptExecTasksRequest.
 
         执行情况。SUCCESS：成功，FAILED：失败，RUNNING：执行中，WAITING：等待。
 
@@ -183,7 +183,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the status of this ShowDesktopPoolsScriptExecTasksRequest.
 
         执行情况。SUCCESS：成功，FAILED：失败，RUNNING：执行中，WAITING：等待。
 
@@ -194,7 +194,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the task_type of this ShowDesktopPoolsScriptExecTasksRequest.
 
         查询的任务类型。支持SCRIPT、COMMAND。
 
@@ -205,7 +205,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the task_type of this ShowDesktopPoolsScriptExecTasksRequest.
 
         查询的任务类型。支持SCRIPT、COMMAND。
 
@@ -216,7 +216,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the offset of this ShowDesktopPoolsScriptExecTasksRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -227,7 +227,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the offset of this ShowDesktopPoolsScriptExecTasksRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -238,7 +238,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the limit of this ShowDesktopPoolsScriptExecTasksRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
@@ -249,7 +249,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the limit of this ShowDesktopPoolsScriptExecTasksRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
@@ -260,7 +260,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def execute_time_start(self):
-        """Gets the execute_time_start of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the execute_time_start of this ShowDesktopPoolsScriptExecTasksRequest.
 
         按执行时间查询的起始时间。指定该参数后，返回的结果为此时间之后的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -271,7 +271,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @execute_time_start.setter
     def execute_time_start(self, execute_time_start):
-        """Sets the execute_time_start of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the execute_time_start of this ShowDesktopPoolsScriptExecTasksRequest.
 
         按执行时间查询的起始时间。指定该参数后，返回的结果为此时间之后的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -282,7 +282,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def execute_time_end(self):
-        """Gets the execute_time_end of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the execute_time_end of this ShowDesktopPoolsScriptExecTasksRequest.
 
         按执行时间查询的终止时间。指定该参数后，返回的结果为此时间之前的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -293,7 +293,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @execute_time_end.setter
     def execute_time_end(self, execute_time_end):
-        """Sets the execute_time_end of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the execute_time_end of this ShowDesktopPoolsScriptExecTasksRequest.
 
         按执行时间查询的终止时间。指定该参数后，返回的结果为此时间之前的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -304,7 +304,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Gets the task_id of this ShowDesktopPoolsScriptExecTasksRequest.
 
         任务id。
 
@@ -315,7 +315,7 @@ class ShowDesktopPoolsScriptExecTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowDesktopPoolsScriptExecTasksRequest.
+        r"""Sets the task_id of this ShowDesktopPoolsScriptExecTasksRequest.
 
         任务id。
 

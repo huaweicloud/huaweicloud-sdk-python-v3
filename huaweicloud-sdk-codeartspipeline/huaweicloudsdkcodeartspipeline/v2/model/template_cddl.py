@@ -29,7 +29,7 @@ class TemplateCddl:
     }
 
     def __init__(self, flow=None, states=None, workflow=None):
-        """TemplateCddl
+        r"""TemplateCddl
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TemplateCddl:
 
     @property
     def flow(self):
-        """Gets the flow of this TemplateCddl.
+        r"""Gets the flow of this TemplateCddl.
 
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -65,7 +65,7 @@ class TemplateCddl:
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this TemplateCddl.
+        r"""Sets the flow of this TemplateCddl.
 
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -76,7 +76,7 @@ class TemplateCddl:
 
     @property
     def states(self):
-        """Gets the states of this TemplateCddl.
+        r"""Gets the states of this TemplateCddl.
 
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -87,7 +87,7 @@ class TemplateCddl:
 
     @states.setter
     def states(self, states):
-        """Sets the states of this TemplateCddl.
+        r"""Sets the states of this TemplateCddl.
 
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -98,7 +98,7 @@ class TemplateCddl:
 
     @property
     def workflow(self):
-        """Gets the workflow of this TemplateCddl.
+        r"""Gets the workflow of this TemplateCddl.
 
         :return: The workflow of this TemplateCddl.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.Workflow`
@@ -107,7 +107,7 @@ class TemplateCddl:
 
     @workflow.setter
     def workflow(self, workflow):
-        """Sets the workflow of this TemplateCddl.
+        r"""Sets the workflow of this TemplateCddl.
 
         :param workflow: The workflow of this TemplateCddl.
         :type workflow: :class:`huaweicloudsdkcodeartspipeline.v2.Workflow`

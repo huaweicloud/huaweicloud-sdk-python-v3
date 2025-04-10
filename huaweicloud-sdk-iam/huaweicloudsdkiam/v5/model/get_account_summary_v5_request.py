@@ -23,7 +23,7 @@ class GetAccountSummaryV5Request:
     }
 
     def __init__(self):
-        """GetAccountSummaryV5Request
+        r"""GetAccountSummaryV5Request
 
         The model defined in huaweicloud sdk
 

@@ -24,7 +24,7 @@ class UpdateEngressEipV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateEngressEipV2Response
+        r"""UpdateEngressEipV2Response
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ComponentContainerSize:
     }
 
     def __init__(self, id=None):
-        """ComponentContainerSize
+        r"""ComponentContainerSize
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ComponentContainerSize:
 
     @property
     def id(self):
-        """Gets the id of this ComponentContainerSize.
+        r"""Gets the id of this ComponentContainerSize.
 
         资源规格，可查询获取所有支持的应用资源规格接口获取系统预定义好的资源规格。
 
@@ -54,7 +54,7 @@ class ComponentContainerSize:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentContainerSize.
+        r"""Sets the id of this ComponentContainerSize.
 
         资源规格，可查询获取所有支持的应用资源规格接口获取系统预定义好的资源规格。
 

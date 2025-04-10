@@ -27,7 +27,7 @@ class ModifyOfflineTaskReq:
     }
 
     def __init__(self, name=None, description=None):
-        """ModifyOfflineTaskReq
+        r"""ModifyOfflineTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyOfflineTaskReq:
 
     @property
     def name(self):
-        """Gets the name of this ModifyOfflineTaskReq.
+        r"""Gets the name of this ModifyOfflineTaskReq.
 
         备份迁移任务名称。
 
@@ -60,7 +60,7 @@ class ModifyOfflineTaskReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyOfflineTaskReq.
+        r"""Sets the name of this ModifyOfflineTaskReq.
 
         备份迁移任务名称。
 
@@ -71,7 +71,7 @@ class ModifyOfflineTaskReq:
 
     @property
     def description(self):
-        """Gets the description of this ModifyOfflineTaskReq.
+        r"""Gets the description of this ModifyOfflineTaskReq.
 
         备份迁移任务描述。
 
@@ -82,7 +82,7 @@ class ModifyOfflineTaskReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyOfflineTaskReq.
+        r"""Sets the description of this ModifyOfflineTaskReq.
 
         备份迁移任务描述。
 

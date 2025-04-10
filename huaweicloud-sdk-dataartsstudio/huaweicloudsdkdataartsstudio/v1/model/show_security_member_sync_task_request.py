@@ -27,7 +27,7 @@ class ShowSecurityMemberSyncTaskRequest:
     }
 
     def __init__(self, workspace=None, task_id=None):
-        """ShowSecurityMemberSyncTaskRequest
+        r"""ShowSecurityMemberSyncTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecurityMemberSyncTaskRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityMemberSyncTaskRequest.
+        r"""Gets the workspace of this ShowSecurityMemberSyncTaskRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowSecurityMemberSyncTaskRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityMemberSyncTaskRequest.
+        r"""Sets the workspace of this ShowSecurityMemberSyncTaskRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowSecurityMemberSyncTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSecurityMemberSyncTaskRequest.
+        r"""Gets the task_id of this ShowSecurityMemberSyncTaskRequest.
 
         用户同步任务id。
 
@@ -81,7 +81,7 @@ class ShowSecurityMemberSyncTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSecurityMemberSyncTaskRequest.
+        r"""Sets the task_id of this ShowSecurityMemberSyncTaskRequest.
 
         用户同步任务id。
 

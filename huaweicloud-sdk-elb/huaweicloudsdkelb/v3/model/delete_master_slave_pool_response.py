@@ -24,7 +24,7 @@ class DeleteMasterSlavePoolResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMasterSlavePoolResponse
+        r"""DeleteMasterSlavePoolResponse
 
         The model defined in huaweicloud sdk
 

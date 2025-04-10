@@ -28,7 +28,7 @@ class CreateHostClusterResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None):
-        """CreateHostClusterResponse
+        r"""CreateHostClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateHostClusterResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateHostClusterResponse.
+        r"""Gets the id of this CreateHostClusterResponse.
 
         主机集群id
 
@@ -62,7 +62,7 @@ class CreateHostClusterResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateHostClusterResponse.
+        r"""Sets the id of this CreateHostClusterResponse.
 
         主机集群id
 
@@ -73,7 +73,7 @@ class CreateHostClusterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateHostClusterResponse.
+        r"""Gets the status of this CreateHostClusterResponse.
 
         请求成功失败状态
 
@@ -84,7 +84,7 @@ class CreateHostClusterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateHostClusterResponse.
+        r"""Sets the status of this CreateHostClusterResponse.
 
         请求成功失败状态
 

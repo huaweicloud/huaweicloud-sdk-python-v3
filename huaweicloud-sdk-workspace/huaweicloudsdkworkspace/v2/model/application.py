@@ -59,7 +59,7 @@ class Application:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, version=None, description=None, authorization_type=None, app_file_store=None, app_icon_url=None, install_type=None, install_command=None, uninstall_command=None, support_os=None, status=None, application_source=None, create_time=None, catalog_id=None, catalog=None, install_info=None):
-        """Application
+        r"""Application
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class Application:
 
     @property
     def id(self):
-        """Gets the id of this Application.
+        r"""Gets the id of this Application.
 
         唯一标识。
 
@@ -173,7 +173,7 @@ class Application:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Application.
+        r"""Sets the id of this Application.
 
         唯一标识。
 
@@ -184,7 +184,7 @@ class Application:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Application.
+        r"""Gets the tenant_id of this Application.
 
         租户id。
 
@@ -195,7 +195,7 @@ class Application:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Application.
+        r"""Sets the tenant_id of this Application.
 
         租户id。
 
@@ -206,7 +206,7 @@ class Application:
 
     @property
     def name(self):
-        """Gets the name of this Application.
+        r"""Gets the name of this Application.
 
         应用名称。
 
@@ -217,7 +217,7 @@ class Application:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Application.
+        r"""Sets the name of this Application.
 
         应用名称。
 
@@ -228,7 +228,7 @@ class Application:
 
     @property
     def version(self):
-        """Gets the version of this Application.
+        r"""Gets the version of this Application.
 
         版本号。
 
@@ -239,7 +239,7 @@ class Application:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Application.
+        r"""Sets the version of this Application.
 
         版本号。
 
@@ -250,7 +250,7 @@ class Application:
 
     @property
     def description(self):
-        """Gets the description of this Application.
+        r"""Gets the description of this Application.
 
         描述。
 
@@ -261,7 +261,7 @@ class Application:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Application.
+        r"""Sets the description of this Application.
 
         描述。
 
@@ -272,7 +272,7 @@ class Application:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this Application.
+        r"""Gets the authorization_type of this Application.
 
         :return: The authorization_type of this Application.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -281,7 +281,7 @@ class Application:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this Application.
+        r"""Sets the authorization_type of this Application.
 
         :param authorization_type: The authorization_type of this Application.
         :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -290,7 +290,7 @@ class Application:
 
     @property
     def app_file_store(self):
-        """Gets the app_file_store of this Application.
+        r"""Gets the app_file_store of this Application.
 
         :return: The app_file_store of this Application.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -299,7 +299,7 @@ class Application:
 
     @app_file_store.setter
     def app_file_store(self, app_file_store):
-        """Sets the app_file_store of this Application.
+        r"""Sets the app_file_store of this Application.
 
         :param app_file_store: The app_file_store of this Application.
         :type app_file_store: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -308,7 +308,7 @@ class Application:
 
     @property
     def app_icon_url(self):
-        """Gets the app_icon_url of this Application.
+        r"""Gets the app_icon_url of this Application.
 
         应用图标路径。
 
@@ -319,7 +319,7 @@ class Application:
 
     @app_icon_url.setter
     def app_icon_url(self, app_icon_url):
-        """Sets the app_icon_url of this Application.
+        r"""Sets the app_icon_url of this Application.
 
         应用图标路径。
 
@@ -330,7 +330,7 @@ class Application:
 
     @property
     def install_type(self):
-        """Gets the install_type of this Application.
+        r"""Gets the install_type of this Application.
 
         :return: The install_type of this Application.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -339,7 +339,7 @@ class Application:
 
     @install_type.setter
     def install_type(self, install_type):
-        """Sets the install_type of this Application.
+        r"""Sets the install_type of this Application.
 
         :param install_type: The install_type of this Application.
         :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -348,7 +348,7 @@ class Application:
 
     @property
     def install_command(self):
-        """Gets the install_command of this Application.
+        r"""Gets the install_command of this Application.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -359,7 +359,7 @@ class Application:
 
     @install_command.setter
     def install_command(self, install_command):
-        """Sets the install_command of this Application.
+        r"""Sets the install_command of this Application.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -370,7 +370,7 @@ class Application:
 
     @property
     def uninstall_command(self):
-        """Gets the uninstall_command of this Application.
+        r"""Gets the uninstall_command of this Application.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -381,7 +381,7 @@ class Application:
 
     @uninstall_command.setter
     def uninstall_command(self, uninstall_command):
-        """Sets the uninstall_command of this Application.
+        r"""Sets the uninstall_command of this Application.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -392,7 +392,7 @@ class Application:
 
     @property
     def support_os(self):
-        """Gets the support_os of this Application.
+        r"""Gets the support_os of this Application.
 
         :return: The support_os of this Application.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -401,7 +401,7 @@ class Application:
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this Application.
+        r"""Sets the support_os of this Application.
 
         :param support_os: The support_os of this Application.
         :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -410,7 +410,7 @@ class Application:
 
     @property
     def status(self):
-        """Gets the status of this Application.
+        r"""Gets the status of this Application.
 
         :return: The status of this Application.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
@@ -419,7 +419,7 @@ class Application:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Application.
+        r"""Sets the status of this Application.
 
         :param status: The status of this Application.
         :type status: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
@@ -428,7 +428,7 @@ class Application:
 
     @property
     def application_source(self):
-        """Gets the application_source of this Application.
+        r"""Gets the application_source of this Application.
 
         :return: The application_source of this Application.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
@@ -437,7 +437,7 @@ class Application:
 
     @application_source.setter
     def application_source(self, application_source):
-        """Sets the application_source of this Application.
+        r"""Sets the application_source of this Application.
 
         :param application_source: The application_source of this Application.
         :type application_source: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
@@ -446,7 +446,7 @@ class Application:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Application.
+        r"""Gets the create_time of this Application.
 
         应用创建时间。
 
@@ -457,7 +457,7 @@ class Application:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Application.
+        r"""Sets the create_time of this Application.
 
         应用创建时间。
 
@@ -468,7 +468,7 @@ class Application:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this Application.
+        r"""Gets the catalog_id of this Application.
 
         分类ID。
 
@@ -479,7 +479,7 @@ class Application:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this Application.
+        r"""Sets the catalog_id of this Application.
 
         分类ID。
 
@@ -490,7 +490,7 @@ class Application:
 
     @property
     def catalog(self):
-        """Gets the catalog of this Application.
+        r"""Gets the catalog of this Application.
 
         分类名称。
 
@@ -501,7 +501,7 @@ class Application:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this Application.
+        r"""Sets the catalog of this Application.
 
         分类名称。
 
@@ -512,7 +512,7 @@ class Application:
 
     @property
     def install_info(self):
-        """Gets the install_info of this Application.
+        r"""Gets the install_info of this Application.
 
         安装信息。
 
@@ -523,7 +523,7 @@ class Application:
 
     @install_info.setter
     def install_info(self, install_info):
-        """Sets the install_info of this Application.
+        r"""Sets the install_info of this Application.
 
         安装信息。
 

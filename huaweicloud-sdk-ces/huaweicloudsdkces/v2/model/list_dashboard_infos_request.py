@@ -31,7 +31,7 @@ class ListDashboardInfosRequest:
     }
 
     def __init__(self, enterprise_id=None, is_favorite=None, dashboard_name=None, dashboard_id=None):
-        """ListDashboardInfosRequest
+        r"""ListDashboardInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListDashboardInfosRequest:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this ListDashboardInfosRequest.
+        r"""Gets the enterprise_id of this ListDashboardInfosRequest.
 
         企业项目Id
 
@@ -75,7 +75,7 @@ class ListDashboardInfosRequest:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this ListDashboardInfosRequest.
+        r"""Sets the enterprise_id of this ListDashboardInfosRequest.
 
         企业项目Id
 
@@ -86,7 +86,7 @@ class ListDashboardInfosRequest:
 
     @property
     def is_favorite(self):
-        """Gets the is_favorite of this ListDashboardInfosRequest.
+        r"""Gets the is_favorite of this ListDashboardInfosRequest.
 
         指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
 
@@ -97,7 +97,7 @@ class ListDashboardInfosRequest:
 
     @is_favorite.setter
     def is_favorite(self, is_favorite):
-        """Sets the is_favorite of this ListDashboardInfosRequest.
+        r"""Sets the is_favorite of this ListDashboardInfosRequest.
 
         指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
 
@@ -108,7 +108,7 @@ class ListDashboardInfosRequest:
 
     @property
     def dashboard_name(self):
-        """Gets the dashboard_name of this ListDashboardInfosRequest.
+        r"""Gets the dashboard_name of this ListDashboardInfosRequest.
 
         监控看板名称
 
@@ -119,7 +119,7 @@ class ListDashboardInfosRequest:
 
     @dashboard_name.setter
     def dashboard_name(self, dashboard_name):
-        """Sets the dashboard_name of this ListDashboardInfosRequest.
+        r"""Sets the dashboard_name of this ListDashboardInfosRequest.
 
         监控看板名称
 
@@ -130,7 +130,7 @@ class ListDashboardInfosRequest:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this ListDashboardInfosRequest.
+        r"""Gets the dashboard_id of this ListDashboardInfosRequest.
 
         监控看板id
 
@@ -141,7 +141,7 @@ class ListDashboardInfosRequest:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this ListDashboardInfosRequest.
+        r"""Sets the dashboard_id of this ListDashboardInfosRequest.
 
         监控看板id
 

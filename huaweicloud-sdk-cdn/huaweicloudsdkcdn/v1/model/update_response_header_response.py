@@ -28,7 +28,7 @@ class UpdateResponseHeaderResponse(SdkResponse):
     }
 
     def __init__(self, headers=None, x_request_id=None):
-        """UpdateResponseHeaderResponse
+        r"""UpdateResponseHeaderResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateResponseHeaderResponse(SdkResponse):
 
     @property
     def headers(self):
-        """Gets the headers of this UpdateResponseHeaderResponse.
+        r"""Gets the headers of this UpdateResponseHeaderResponse.
 
         :return: The headers of this UpdateResponseHeaderResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.HeaderMap`
@@ -60,7 +60,7 @@ class UpdateResponseHeaderResponse(SdkResponse):
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this UpdateResponseHeaderResponse.
+        r"""Sets the headers of this UpdateResponseHeaderResponse.
 
         :param headers: The headers of this UpdateResponseHeaderResponse.
         :type headers: :class:`huaweicloudsdkcdn.v1.HeaderMap`
@@ -69,7 +69,7 @@ class UpdateResponseHeaderResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateResponseHeaderResponse.
+        r"""Gets the x_request_id of this UpdateResponseHeaderResponse.
 
         :return: The x_request_id of this UpdateResponseHeaderResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateResponseHeaderResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateResponseHeaderResponse.
+        r"""Sets the x_request_id of this UpdateResponseHeaderResponse.
 
         :param x_request_id: The x_request_id of this UpdateResponseHeaderResponse.
         :type x_request_id: str

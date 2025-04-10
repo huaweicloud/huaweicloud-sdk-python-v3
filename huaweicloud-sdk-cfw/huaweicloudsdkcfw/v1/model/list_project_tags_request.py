@@ -29,7 +29,7 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, enterprise_project_id=None):
-        """ListProjectTagsRequest
+        r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListProjectTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectTagsRequest.
+        r"""Gets the limit of this ListProjectTagsRequest.
 
         分页查询数据限制
 
@@ -66,7 +66,7 @@ class ListProjectTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectTagsRequest.
+        r"""Sets the limit of this ListProjectTagsRequest.
 
         分页查询数据限制
 
@@ -77,7 +77,7 @@ class ListProjectTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectTagsRequest.
+        r"""Gets the offset of this ListProjectTagsRequest.
 
         查询偏移量
 
@@ -88,7 +88,7 @@ class ListProjectTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectTagsRequest.
+        r"""Sets the offset of this ListProjectTagsRequest.
 
         查询偏移量
 
@@ -99,7 +99,7 @@ class ListProjectTagsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListProjectTagsRequest.
+        r"""Gets the enterprise_project_id of this ListProjectTagsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -110,7 +110,7 @@ class ListProjectTagsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListProjectTagsRequest.
+        r"""Sets the enterprise_project_id of this ListProjectTagsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

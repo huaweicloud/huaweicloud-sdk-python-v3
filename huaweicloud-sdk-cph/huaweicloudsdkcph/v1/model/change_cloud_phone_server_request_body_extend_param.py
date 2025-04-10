@@ -25,7 +25,7 @@ class ChangeCloudPhoneServerRequestBodyExtendParam:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ChangeCloudPhoneServerRequestBodyExtendParam
+        r"""ChangeCloudPhoneServerRequestBodyExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeCloudPhoneServerRequestBodyExtendParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeCloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the enterprise_project_id of this ChangeCloudPhoneServerRequestBodyExtendParam.
 
         企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
@@ -54,7 +54,7 @@ class ChangeCloudPhoneServerRequestBodyExtendParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeCloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the enterprise_project_id of this ChangeCloudPhoneServerRequestBodyExtendParam.
 
         企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 

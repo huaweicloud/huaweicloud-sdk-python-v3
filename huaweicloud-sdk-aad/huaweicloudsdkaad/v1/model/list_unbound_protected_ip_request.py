@@ -29,7 +29,7 @@ class ListUnboundProtectedIpRequest:
     }
 
     def __init__(self, package_id=None, offset=None, limit=None):
-        """ListUnboundProtectedIpRequest
+        r"""ListUnboundProtectedIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListUnboundProtectedIpRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ListUnboundProtectedIpRequest.
+        r"""Gets the package_id of this ListUnboundProtectedIpRequest.
 
         防护包id
 
@@ -67,7 +67,7 @@ class ListUnboundProtectedIpRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ListUnboundProtectedIpRequest.
+        r"""Sets the package_id of this ListUnboundProtectedIpRequest.
 
         防护包id
 
@@ -78,7 +78,7 @@ class ListUnboundProtectedIpRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUnboundProtectedIpRequest.
+        r"""Gets the offset of this ListUnboundProtectedIpRequest.
 
         开始查询的偏移量,默认值:0
 
@@ -89,7 +89,7 @@ class ListUnboundProtectedIpRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUnboundProtectedIpRequest.
+        r"""Sets the offset of this ListUnboundProtectedIpRequest.
 
         开始查询的偏移量,默认值:0
 
@@ -100,7 +100,7 @@ class ListUnboundProtectedIpRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUnboundProtectedIpRequest.
+        r"""Gets the limit of this ListUnboundProtectedIpRequest.
 
         每页显示的条目数量,默认值:2000
 
@@ -111,7 +111,7 @@ class ListUnboundProtectedIpRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUnboundProtectedIpRequest.
+        r"""Sets the limit of this ListUnboundProtectedIpRequest.
 
         每页显示的条目数量,默认值:2000
 

@@ -27,7 +27,7 @@ class CreateRsuRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateRsuRequest
+        r"""CreateRsuRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateRsuRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRsuRequest.
+        r"""Gets the instance_id of this CreateRsuRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -61,7 +61,7 @@ class CreateRsuRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRsuRequest.
+        r"""Sets the instance_id of this CreateRsuRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -72,7 +72,7 @@ class CreateRsuRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRsuRequest.
+        r"""Gets the body of this CreateRsuRequest.
 
         :return: The body of this CreateRsuRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.AddRsuDTO`
@@ -81,7 +81,7 @@ class CreateRsuRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRsuRequest.
+        r"""Sets the body of this CreateRsuRequest.
 
         :param body: The body of this CreateRsuRequest.
         :type body: :class:`huaweicloudsdkdris.v1.AddRsuDTO`

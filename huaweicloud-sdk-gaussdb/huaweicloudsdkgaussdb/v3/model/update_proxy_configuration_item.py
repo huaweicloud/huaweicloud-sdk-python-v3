@@ -29,7 +29,7 @@ class UpdateProxyConfigurationItem:
     }
 
     def __init__(self, name=None, value=None, elem_type=None):
-        """UpdateProxyConfigurationItem
+        r"""UpdateProxyConfigurationItem
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateProxyConfigurationItem:
 
     @property
     def name(self):
-        """Gets the name of this UpdateProxyConfigurationItem.
+        r"""Gets the name of this UpdateProxyConfigurationItem.
 
         参数名。
 
@@ -65,7 +65,7 @@ class UpdateProxyConfigurationItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProxyConfigurationItem.
+        r"""Sets the name of this UpdateProxyConfigurationItem.
 
         参数名。
 
@@ -76,7 +76,7 @@ class UpdateProxyConfigurationItem:
 
     @property
     def value(self):
-        """Gets the value of this UpdateProxyConfigurationItem.
+        r"""Gets the value of this UpdateProxyConfigurationItem.
 
         参数值。
 
@@ -87,7 +87,7 @@ class UpdateProxyConfigurationItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateProxyConfigurationItem.
+        r"""Sets the value of this UpdateProxyConfigurationItem.
 
         参数值。
 
@@ -98,7 +98,7 @@ class UpdateProxyConfigurationItem:
 
     @property
     def elem_type(self):
-        """Gets the elem_type of this UpdateProxyConfigurationItem.
+        r"""Gets the elem_type of this UpdateProxyConfigurationItem.
 
         父标签类型。
 
@@ -109,7 +109,7 @@ class UpdateProxyConfigurationItem:
 
     @elem_type.setter
     def elem_type(self, elem_type):
-        """Sets the elem_type of this UpdateProxyConfigurationItem.
+        r"""Sets the elem_type of this UpdateProxyConfigurationItem.
 
         父标签类型。
 

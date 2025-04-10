@@ -25,7 +25,7 @@ class UpdateExternalPeerLinkRequestBody:
     }
 
     def __init__(self, peer_link=None):
-        """UpdateExternalPeerLinkRequestBody
+        r"""UpdateExternalPeerLinkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateExternalPeerLinkRequestBody:
 
     @property
     def peer_link(self):
-        """Gets the peer_link of this UpdateExternalPeerLinkRequestBody.
+        r"""Gets the peer_link of this UpdateExternalPeerLinkRequestBody.
 
         :return: The peer_link of this UpdateExternalPeerLinkRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBodyPeerLink`
@@ -52,7 +52,7 @@ class UpdateExternalPeerLinkRequestBody:
 
     @peer_link.setter
     def peer_link(self, peer_link):
-        """Sets the peer_link of this UpdateExternalPeerLinkRequestBody.
+        r"""Sets the peer_link of this UpdateExternalPeerLinkRequestBody.
 
         :param peer_link: The peer_link of this UpdateExternalPeerLinkRequestBody.
         :type peer_link: :class:`huaweicloudsdkdc.v3.UpdateExternalPeerLinkRequestBodyPeerLink`

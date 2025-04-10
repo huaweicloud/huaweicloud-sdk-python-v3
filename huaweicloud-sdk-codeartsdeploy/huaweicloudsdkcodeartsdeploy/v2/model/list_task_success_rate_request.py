@@ -27,7 +27,7 @@ class ListTaskSuccessRateRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ListTaskSuccessRateRequest
+        r"""ListTaskSuccessRateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTaskSuccessRateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTaskSuccessRateRequest.
+        r"""Gets the project_id of this ListTaskSuccessRateRequest.
 
         项目id
 
@@ -60,7 +60,7 @@ class ListTaskSuccessRateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTaskSuccessRateRequest.
+        r"""Sets the project_id of this ListTaskSuccessRateRequest.
 
         项目id
 
@@ -71,7 +71,7 @@ class ListTaskSuccessRateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTaskSuccessRateRequest.
+        r"""Gets the body of this ListTaskSuccessRateRequest.
 
         :return: The body of this ListTaskSuccessRateRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.TasksSuccessRateQuery`
@@ -80,7 +80,7 @@ class ListTaskSuccessRateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTaskSuccessRateRequest.
+        r"""Sets the body of this ListTaskSuccessRateRequest.
 
         :param body: The body of this ListTaskSuccessRateRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.TasksSuccessRateQuery`

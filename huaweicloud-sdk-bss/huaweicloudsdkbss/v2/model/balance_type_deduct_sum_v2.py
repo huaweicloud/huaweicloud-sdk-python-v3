@@ -29,7 +29,7 @@ class BalanceTypeDeductSumV2:
     }
 
     def __init__(self, balance_type=None, amount=None, bill_type=None):
-        """BalanceTypeDeductSumV2
+        r"""BalanceTypeDeductSumV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BalanceTypeDeductSumV2:
 
     @property
     def balance_type(self):
-        """Gets the balance_type of this BalanceTypeDeductSumV2.
+        r"""Gets the balance_type of this BalanceTypeDeductSumV2.
 
         账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
 
@@ -68,7 +68,7 @@ class BalanceTypeDeductSumV2:
 
     @balance_type.setter
     def balance_type(self, balance_type):
-        """Sets the balance_type of this BalanceTypeDeductSumV2.
+        r"""Sets the balance_type of this BalanceTypeDeductSumV2.
 
         账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
 
@@ -79,7 +79,7 @@ class BalanceTypeDeductSumV2:
 
     @property
     def amount(self):
-        """Gets the amount of this BalanceTypeDeductSumV2.
+        r"""Gets the amount of this BalanceTypeDeductSumV2.
 
         金额。 对于billType=1或者2的账单，该金额为负值。
 
@@ -90,7 +90,7 @@ class BalanceTypeDeductSumV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this BalanceTypeDeductSumV2.
+        r"""Sets the amount of this BalanceTypeDeductSumV2.
 
         金额。 对于billType=1或者2的账单，该金额为负值。
 
@@ -101,7 +101,7 @@ class BalanceTypeDeductSumV2:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this BalanceTypeDeductSumV2.
+        r"""Gets the bill_type of this BalanceTypeDeductSumV2.
 
         账单类型。 0：正常1：退订2：华为核销
 
@@ -112,7 +112,7 @@ class BalanceTypeDeductSumV2:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this BalanceTypeDeductSumV2.
+        r"""Sets the bill_type of this BalanceTypeDeductSumV2.
 
         账单类型。 0：正常1：退订2：华为核销
 

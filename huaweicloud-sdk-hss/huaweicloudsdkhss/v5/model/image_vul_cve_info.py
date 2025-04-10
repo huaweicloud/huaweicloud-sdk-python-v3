@@ -31,7 +31,7 @@ class ImageVulCveInfo:
     }
 
     def __init__(self, cve_id=None, cvss_score=None, publish_time=None, description=None):
-        """ImageVulCveInfo
+        r"""ImageVulCveInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ImageVulCveInfo:
 
     @property
     def cve_id(self):
-        """Gets the cve_id of this ImageVulCveInfo.
+        r"""Gets the cve_id of this ImageVulCveInfo.
 
         cve id
 
@@ -75,7 +75,7 @@ class ImageVulCveInfo:
 
     @cve_id.setter
     def cve_id(self, cve_id):
-        """Sets the cve_id of this ImageVulCveInfo.
+        r"""Sets the cve_id of this ImageVulCveInfo.
 
         cve id
 
@@ -86,7 +86,7 @@ class ImageVulCveInfo:
 
     @property
     def cvss_score(self):
-        """Gets the cvss_score of this ImageVulCveInfo.
+        r"""Gets the cvss_score of this ImageVulCveInfo.
 
         CVSS分数
 
@@ -97,7 +97,7 @@ class ImageVulCveInfo:
 
     @cvss_score.setter
     def cvss_score(self, cvss_score):
-        """Sets the cvss_score of this ImageVulCveInfo.
+        r"""Sets the cvss_score of this ImageVulCveInfo.
 
         CVSS分数
 
@@ -108,7 +108,7 @@ class ImageVulCveInfo:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this ImageVulCveInfo.
+        r"""Gets the publish_time of this ImageVulCveInfo.
 
         公布时间，时间单位 毫秒（ms）
 
@@ -119,7 +119,7 @@ class ImageVulCveInfo:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this ImageVulCveInfo.
+        r"""Sets the publish_time of this ImageVulCveInfo.
 
         公布时间，时间单位 毫秒（ms）
 
@@ -130,7 +130,7 @@ class ImageVulCveInfo:
 
     @property
     def description(self):
-        """Gets the description of this ImageVulCveInfo.
+        r"""Gets the description of this ImageVulCveInfo.
 
         cve描述
 
@@ -141,7 +141,7 @@ class ImageVulCveInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImageVulCveInfo.
+        r"""Sets the description of this ImageVulCveInfo.
 
         cve描述
 

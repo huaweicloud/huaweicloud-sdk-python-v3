@@ -29,7 +29,7 @@ class DesktopUsedHoursInfo:
     }
 
     def __init__(self, desktop_id=None, desktop_username=None, used_info_list=None):
-        """DesktopUsedHoursInfo
+        r"""DesktopUsedHoursInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DesktopUsedHoursInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopUsedHoursInfo.
+        r"""Gets the desktop_id of this DesktopUsedHoursInfo.
 
         桌面Id。
 
@@ -68,7 +68,7 @@ class DesktopUsedHoursInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopUsedHoursInfo.
+        r"""Sets the desktop_id of this DesktopUsedHoursInfo.
 
         桌面Id。
 
@@ -79,7 +79,7 @@ class DesktopUsedHoursInfo:
 
     @property
     def desktop_username(self):
-        """Gets the desktop_username of this DesktopUsedHoursInfo.
+        r"""Gets the desktop_username of this DesktopUsedHoursInfo.
 
         使用的用户。
 
@@ -90,7 +90,7 @@ class DesktopUsedHoursInfo:
 
     @desktop_username.setter
     def desktop_username(self, desktop_username):
-        """Sets the desktop_username of this DesktopUsedHoursInfo.
+        r"""Sets the desktop_username of this DesktopUsedHoursInfo.
 
         使用的用户。
 
@@ -101,7 +101,7 @@ class DesktopUsedHoursInfo:
 
     @property
     def used_info_list(self):
-        """Gets the used_info_list of this DesktopUsedHoursInfo.
+        r"""Gets the used_info_list of this DesktopUsedHoursInfo.
 
         桌面使用时间列表。
 
@@ -112,7 +112,7 @@ class DesktopUsedHoursInfo:
 
     @used_info_list.setter
     def used_info_list(self, used_info_list):
-        """Sets the used_info_list of this DesktopUsedHoursInfo.
+        r"""Sets the used_info_list of this DesktopUsedHoursInfo.
 
         桌面使用时间列表。
 

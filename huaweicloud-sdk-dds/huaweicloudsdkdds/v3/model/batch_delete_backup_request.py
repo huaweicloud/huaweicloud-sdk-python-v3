@@ -27,7 +27,7 @@ class BatchDeleteBackupRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchDeleteBackupRequest
+        r"""BatchDeleteBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteBackupRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchDeleteBackupRequest.
+        r"""Gets the x_language of this BatchDeleteBackupRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class BatchDeleteBackupRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchDeleteBackupRequest.
+        r"""Sets the x_language of this BatchDeleteBackupRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class BatchDeleteBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteBackupRequest.
+        r"""Gets the body of this BatchDeleteBackupRequest.
 
         :return: The body of this BatchDeleteBackupRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.BatchDeleteBackupRequestBody`
@@ -81,7 +81,7 @@ class BatchDeleteBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteBackupRequest.
+        r"""Sets the body of this BatchDeleteBackupRequest.
 
         :param body: The body of this BatchDeleteBackupRequest.
         :type body: :class:`huaweicloudsdkdds.v3.BatchDeleteBackupRequestBody`

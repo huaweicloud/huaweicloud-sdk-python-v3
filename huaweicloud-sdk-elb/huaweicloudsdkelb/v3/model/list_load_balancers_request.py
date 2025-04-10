@@ -95,7 +95,7 @@ class ListLoadBalancersRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None, protection_status=None, global_eips=None, log_topic_id=None, log_group_id=None):
-        """ListLoadBalancersRequest
+        r"""ListLoadBalancersRequest
 
         The model defined in huaweicloud sdk
 
@@ -288,7 +288,7 @@ class ListLoadBalancersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListLoadBalancersRequest.
+        r"""Gets the marker of this ListLoadBalancersRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -299,7 +299,7 @@ class ListLoadBalancersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListLoadBalancersRequest.
+        r"""Sets the marker of this ListLoadBalancersRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -310,7 +310,7 @@ class ListLoadBalancersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLoadBalancersRequest.
+        r"""Gets the limit of this ListLoadBalancersRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -321,7 +321,7 @@ class ListLoadBalancersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLoadBalancersRequest.
+        r"""Sets the limit of this ListLoadBalancersRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -332,7 +332,7 @@ class ListLoadBalancersRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListLoadBalancersRequest.
+        r"""Gets the page_reverse of this ListLoadBalancersRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -343,7 +343,7 @@ class ListLoadBalancersRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListLoadBalancersRequest.
+        r"""Sets the page_reverse of this ListLoadBalancersRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -354,7 +354,7 @@ class ListLoadBalancersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListLoadBalancersRequest.
+        r"""Gets the id of this ListLoadBalancersRequest.
 
         负载均衡器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -365,7 +365,7 @@ class ListLoadBalancersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListLoadBalancersRequest.
+        r"""Sets the id of this ListLoadBalancersRequest.
 
         负载均衡器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -376,7 +376,7 @@ class ListLoadBalancersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListLoadBalancersRequest.
+        r"""Gets the name of this ListLoadBalancersRequest.
 
         负载均衡器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -387,7 +387,7 @@ class ListLoadBalancersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLoadBalancersRequest.
+        r"""Sets the name of this ListLoadBalancersRequest.
 
         负载均衡器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -398,7 +398,7 @@ class ListLoadBalancersRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListLoadBalancersRequest.
+        r"""Gets the description of this ListLoadBalancersRequest.
 
         负载均衡器的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -409,7 +409,7 @@ class ListLoadBalancersRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListLoadBalancersRequest.
+        r"""Sets the description of this ListLoadBalancersRequest.
 
         负载均衡器的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -420,7 +420,7 @@ class ListLoadBalancersRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListLoadBalancersRequest.
+        r"""Gets the admin_state_up of this ListLoadBalancersRequest.
 
         参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
 
@@ -431,7 +431,7 @@ class ListLoadBalancersRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListLoadBalancersRequest.
+        r"""Sets the admin_state_up of this ListLoadBalancersRequest.
 
         参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
 
@@ -442,7 +442,7 @@ class ListLoadBalancersRequest:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListLoadBalancersRequest.
+        r"""Gets the provisioning_status of this ListLoadBalancersRequest.
 
         负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
@@ -453,7 +453,7 @@ class ListLoadBalancersRequest:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListLoadBalancersRequest.
+        r"""Sets the provisioning_status of this ListLoadBalancersRequest.
 
         负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。  支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。
 
@@ -464,7 +464,7 @@ class ListLoadBalancersRequest:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this ListLoadBalancersRequest.
+        r"""Gets the operating_status of this ListLoadBalancersRequest.
 
         负载均衡器的操作状态。  取值： - ONLINE：正常运行。 - FROZEN：已冻结。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。
 
@@ -475,7 +475,7 @@ class ListLoadBalancersRequest:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this ListLoadBalancersRequest.
+        r"""Sets the operating_status of this ListLoadBalancersRequest.
 
         负载均衡器的操作状态。  取值： - ONLINE：正常运行。 - FROZEN：已冻结。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。
 
@@ -486,7 +486,7 @@ class ListLoadBalancersRequest:
 
     @property
     def guaranteed(self):
-        """Gets the guaranteed of this ListLoadBalancersRequest.
+        r"""Gets the guaranteed of this ListLoadBalancersRequest.
 
         是否独享型LB。  取值： - false：共享型 - true：独享型  [仅支持独享型，固定为true。](tag:hws_eu,hcso_dt)
 
@@ -497,7 +497,7 @@ class ListLoadBalancersRequest:
 
     @guaranteed.setter
     def guaranteed(self, guaranteed):
-        """Sets the guaranteed of this ListLoadBalancersRequest.
+        r"""Sets the guaranteed of this ListLoadBalancersRequest.
 
         是否独享型LB。  取值： - false：共享型 - true：独享型  [仅支持独享型，固定为true。](tag:hws_eu,hcso_dt)
 
@@ -508,7 +508,7 @@ class ListLoadBalancersRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListLoadBalancersRequest.
+        r"""Gets the vpc_id of this ListLoadBalancersRequest.
 
         负载均衡器所在的VPC ID。  支持多值查询，查询条件格式：*vpc_id=xxx&vpc_id=xxx*。
 
@@ -519,7 +519,7 @@ class ListLoadBalancersRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListLoadBalancersRequest.
+        r"""Sets the vpc_id of this ListLoadBalancersRequest.
 
         负载均衡器所在的VPC ID。  支持多值查询，查询条件格式：*vpc_id=xxx&vpc_id=xxx*。
 
@@ -530,7 +530,7 @@ class ListLoadBalancersRequest:
 
     @property
     def vip_port_id(self):
-        """Gets the vip_port_id of this ListLoadBalancersRequest.
+        r"""Gets the vip_port_id of this ListLoadBalancersRequest.
 
         负载均衡器的IPv4对应的port ID。  支持多值查询，查询条件格式：*vip_port_id=xxx&vip_port_id=xxx*。
 
@@ -541,7 +541,7 @@ class ListLoadBalancersRequest:
 
     @vip_port_id.setter
     def vip_port_id(self, vip_port_id):
-        """Sets the vip_port_id of this ListLoadBalancersRequest.
+        r"""Sets the vip_port_id of this ListLoadBalancersRequest.
 
         负载均衡器的IPv4对应的port ID。  支持多值查询，查询条件格式：*vip_port_id=xxx&vip_port_id=xxx*。
 
@@ -552,7 +552,7 @@ class ListLoadBalancersRequest:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this ListLoadBalancersRequest.
+        r"""Gets the vip_address of this ListLoadBalancersRequest.
 
         负载均衡器的IPv4虚拟IP地址。  支持多值查询，查询条件格式：*vip_address=xxx&vip_address=xxx*。
 
@@ -563,7 +563,7 @@ class ListLoadBalancersRequest:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this ListLoadBalancersRequest.
+        r"""Sets the vip_address of this ListLoadBalancersRequest.
 
         负载均衡器的IPv4虚拟IP地址。  支持多值查询，查询条件格式：*vip_address=xxx&vip_address=xxx*。
 
@@ -574,7 +574,7 @@ class ListLoadBalancersRequest:
 
     @property
     def vip_subnet_cidr_id(self):
-        """Gets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
+        r"""Gets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
 
         负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*vip_subnet_cidr_id=xxx&vip_subnet_cidr_id=xxx*。
 
@@ -585,7 +585,7 @@ class ListLoadBalancersRequest:
 
     @vip_subnet_cidr_id.setter
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
-        """Sets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
+        r"""Sets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
 
         负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*vip_subnet_cidr_id=xxx&vip_subnet_cidr_id=xxx*。
 
@@ -596,7 +596,7 @@ class ListLoadBalancersRequest:
 
     @property
     def ipv6_vip_port_id(self):
-        """Gets the ipv6_vip_port_id of this ListLoadBalancersRequest.
+        r"""Gets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
         双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id=xxx&ipv6_vip_port_id=xxx*。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -607,7 +607,7 @@ class ListLoadBalancersRequest:
 
     @ipv6_vip_port_id.setter
     def ipv6_vip_port_id(self, ipv6_vip_port_id):
-        """Sets the ipv6_vip_port_id of this ListLoadBalancersRequest.
+        r"""Sets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
         双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id=xxx&ipv6_vip_port_id=xxx*。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -618,7 +618,7 @@ class ListLoadBalancersRequest:
 
     @property
     def ipv6_vip_address(self):
-        """Gets the ipv6_vip_address of this ListLoadBalancersRequest.
+        r"""Gets the ipv6_vip_address of this ListLoadBalancersRequest.
 
         双栈类型负载均衡器的IPv6地址。  支持多值查询，查询条件格式：*ipv6_vip_address=xxx&ipv6_vip_address=xxx*。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -629,7 +629,7 @@ class ListLoadBalancersRequest:
 
     @ipv6_vip_address.setter
     def ipv6_vip_address(self, ipv6_vip_address):
-        """Sets the ipv6_vip_address of this ListLoadBalancersRequest.
+        r"""Sets the ipv6_vip_address of this ListLoadBalancersRequest.
 
         双栈类型负载均衡器的IPv6地址。  支持多值查询，查询条件格式：*ipv6_vip_address=xxx&ipv6_vip_address=xxx*。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -640,7 +640,7 @@ class ListLoadBalancersRequest:
 
     @property
     def ipv6_vip_virsubnet_id(self):
-        """Gets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
+        r"""Gets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
 
         双栈类型负载均衡器所在的子网IPv6网络ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*ipv6_vip_virsubnet_id=xxx&ipv6_vip_virsubnet_id=xxx*。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -651,7 +651,7 @@ class ListLoadBalancersRequest:
 
     @ipv6_vip_virsubnet_id.setter
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
-        """Sets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
+        r"""Sets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
 
         双栈类型负载均衡器所在的子网IPv6网络ID，也称为该负载均衡器实例的前端子网。  支持多值查询，查询条件格式：*ipv6_vip_virsubnet_id=xxx&ipv6_vip_virsubnet_id=xxx*。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -662,7 +662,7 @@ class ListLoadBalancersRequest:
 
     @property
     def eips(self):
-        """Gets the eips of this ListLoadBalancersRequest.
+        r"""Gets the eips of this ListLoadBalancersRequest.
 
         负载均衡器绑定的EIP。例如要查询绑定以下EIP的LB： \"eips\": [     {         \"eip_id\": \"e9b72a9d-4275-455e-a724-853504e4d9c6\",         \"eip_address\": \"88.88.14.122\",         \"ip_version\": 4     } ] 可以通如下查询： eips=ip_version%3D4&eips=eip_address%3D88.88.14.122&eips=eip_id%3De9b72a9d-4275-455e-a724-853504e4d9c6  支持多值查询，查询条件格式： - eip_id作为查询条件：*eips=eip_id=xxx&eips=eip_id=xxx*。 - eip_address作为查询条件：*eips=eip_address=xxx&eips=eip_address=xxx*。 - ip_version作为查询条件：*eips=ip_version=xxx&eips=ip_version=xxx*。  注：该字段与publicips字段一致。
 
@@ -673,7 +673,7 @@ class ListLoadBalancersRequest:
 
     @eips.setter
     def eips(self, eips):
-        """Sets the eips of this ListLoadBalancersRequest.
+        r"""Sets the eips of this ListLoadBalancersRequest.
 
         负载均衡器绑定的EIP。例如要查询绑定以下EIP的LB： \"eips\": [     {         \"eip_id\": \"e9b72a9d-4275-455e-a724-853504e4d9c6\",         \"eip_address\": \"88.88.14.122\",         \"ip_version\": 4     } ] 可以通如下查询： eips=ip_version%3D4&eips=eip_address%3D88.88.14.122&eips=eip_id%3De9b72a9d-4275-455e-a724-853504e4d9c6  支持多值查询，查询条件格式： - eip_id作为查询条件：*eips=eip_id=xxx&eips=eip_id=xxx*。 - eip_address作为查询条件：*eips=eip_address=xxx&eips=eip_address=xxx*。 - ip_version作为查询条件：*eips=ip_version=xxx&eips=ip_version=xxx*。  注：该字段与publicips字段一致。
 
@@ -684,7 +684,7 @@ class ListLoadBalancersRequest:
 
     @property
     def publicips(self):
-        """Gets the publicips of this ListLoadBalancersRequest.
+        r"""Gets the publicips of this ListLoadBalancersRequest.
 
         负载均衡器绑定的公网IP。例如要查询绑定以下公网IP的LB： \"publicips=\": [     {         \"public_id\": \"e9b72a9d-4275-455e-a724-853504e4d9c6\",         \"public_address\": \"88.88.14.122\",         \"ip_version\": 4     } ] 可以通如下查询： publicips=ip_version%3D4&publicips=public_address%3D88.88.14.122&publicips=public_id%3De9b72a9d-4275-455e-a724-853504e4d9c6   支持多值查询，查询条件格式： - publicip_id作为查询条件： *publicips=publicip_id=xxx&publicips=publicip_id=xxx* - publicip_address作为查询条件： *publicips=publicip_address=xxx&publicips=publicip_address=xxx* - ip_version作为查询条件： *publicips=ip_version=xxx&publicips=ip_version=xxx*  注：该字段与eips字段一致。
 
@@ -695,7 +695,7 @@ class ListLoadBalancersRequest:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this ListLoadBalancersRequest.
+        r"""Sets the publicips of this ListLoadBalancersRequest.
 
         负载均衡器绑定的公网IP。例如要查询绑定以下公网IP的LB： \"publicips=\": [     {         \"public_id\": \"e9b72a9d-4275-455e-a724-853504e4d9c6\",         \"public_address\": \"88.88.14.122\",         \"ip_version\": 4     } ] 可以通如下查询： publicips=ip_version%3D4&publicips=public_address%3D88.88.14.122&publicips=public_id%3De9b72a9d-4275-455e-a724-853504e4d9c6   支持多值查询，查询条件格式： - publicip_id作为查询条件： *publicips=publicip_id=xxx&publicips=publicip_id=xxx* - publicip_address作为查询条件： *publicips=publicip_address=xxx&publicips=publicip_address=xxx* - ip_version作为查询条件： *publicips=ip_version=xxx&publicips=ip_version=xxx*  注：该字段与eips字段一致。
 
@@ -706,7 +706,7 @@ class ListLoadBalancersRequest:
 
     @property
     def availability_zone_list(self):
-        """Gets the availability_zone_list of this ListLoadBalancersRequest.
+        r"""Gets the availability_zone_list of this ListLoadBalancersRequest.
 
         负载均衡器所在可用区列表。  支持多值查询，查询条件格式： *availability_zone_list=xxx&availability_zone_list=xxx*。
 
@@ -717,7 +717,7 @@ class ListLoadBalancersRequest:
 
     @availability_zone_list.setter
     def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this ListLoadBalancersRequest.
+        r"""Sets the availability_zone_list of this ListLoadBalancersRequest.
 
         负载均衡器所在可用区列表。  支持多值查询，查询条件格式： *availability_zone_list=xxx&availability_zone_list=xxx*。
 
@@ -728,7 +728,7 @@ class ListLoadBalancersRequest:
 
     @property
     def l4_flavor_id(self):
-        """Gets the l4_flavor_id of this ListLoadBalancersRequest.
+        r"""Gets the l4_flavor_id of this ListLoadBalancersRequest.
 
         网络型规格ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hk_vdf,srg,fcs)
 
@@ -739,7 +739,7 @@ class ListLoadBalancersRequest:
 
     @l4_flavor_id.setter
     def l4_flavor_id(self, l4_flavor_id):
-        """Sets the l4_flavor_id of this ListLoadBalancersRequest.
+        r"""Sets the l4_flavor_id of this ListLoadBalancersRequest.
 
         网络型规格ID。  支持多值查询，查询条件格式：*l4_flavor_id=xxx&l4_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hk_vdf,srg,fcs)
 
@@ -750,7 +750,7 @@ class ListLoadBalancersRequest:
 
     @property
     def l4_scale_flavor_id(self):
-        """Gets the l4_scale_flavor_id of this ListLoadBalancersRequest.
+        r"""Gets the l4_scale_flavor_id of this ListLoadBalancersRequest.
 
         四层弹性Flavor ID。  支持多值查询，查询条件格式：*l4_scale_flavor_id=xxx&l4_scale_flavor_id=xxx*。  不支持该字段，请勿使用。
 
@@ -761,7 +761,7 @@ class ListLoadBalancersRequest:
 
     @l4_scale_flavor_id.setter
     def l4_scale_flavor_id(self, l4_scale_flavor_id):
-        """Sets the l4_scale_flavor_id of this ListLoadBalancersRequest.
+        r"""Sets the l4_scale_flavor_id of this ListLoadBalancersRequest.
 
         四层弹性Flavor ID。  支持多值查询，查询条件格式：*l4_scale_flavor_id=xxx&l4_scale_flavor_id=xxx*。  不支持该字段，请勿使用。
 
@@ -772,7 +772,7 @@ class ListLoadBalancersRequest:
 
     @property
     def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this ListLoadBalancersRequest.
+        r"""Gets the l7_flavor_id of this ListLoadBalancersRequest.
 
         应用型规格ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hk_vdf,srg,fcs)
 
@@ -783,7 +783,7 @@ class ListLoadBalancersRequest:
 
     @l7_flavor_id.setter
     def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this ListLoadBalancersRequest.
+        r"""Sets the l7_flavor_id of this ListLoadBalancersRequest.
 
         应用型规格ID。  支持多值查询，查询条件格式：*l7_flavor_id=xxx&l7_flavor_id=xxx*。  [不支持该字段，请勿使用。](tag:hk_vdf,srg,fcs)
 
@@ -794,7 +794,7 @@ class ListLoadBalancersRequest:
 
     @property
     def l7_scale_flavor_id(self):
-        """Gets the l7_scale_flavor_id of this ListLoadBalancersRequest.
+        r"""Gets the l7_scale_flavor_id of this ListLoadBalancersRequest.
 
         七层弹性Flavor ID。  支持多值查询，查询条件格式：*l7_scale_flavor_id=xxx&l7_scale_flavor_id=xxx*。  不支持该字段，请勿使用。
 
@@ -805,7 +805,7 @@ class ListLoadBalancersRequest:
 
     @l7_scale_flavor_id.setter
     def l7_scale_flavor_id(self, l7_scale_flavor_id):
-        """Sets the l7_scale_flavor_id of this ListLoadBalancersRequest.
+        r"""Sets the l7_scale_flavor_id of this ListLoadBalancersRequest.
 
         七层弹性Flavor ID。  支持多值查询，查询条件格式：*l7_scale_flavor_id=xxx&l7_scale_flavor_id=xxx*。  不支持该字段，请勿使用。
 
@@ -816,7 +816,7 @@ class ListLoadBalancersRequest:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this ListLoadBalancersRequest.
+        r"""Gets the billing_info of this ListLoadBalancersRequest.
 
         资源账单信息。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg)
 
@@ -827,7 +827,7 @@ class ListLoadBalancersRequest:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this ListLoadBalancersRequest.
+        r"""Sets the billing_info of this ListLoadBalancersRequest.
 
         资源账单信息。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg)
 
@@ -838,7 +838,7 @@ class ListLoadBalancersRequest:
 
     @property
     def member_device_id(self):
-        """Gets the member_device_id of this ListLoadBalancersRequest.
+        r"""Gets the member_device_id of this ListLoadBalancersRequest.
 
         负载均衡器中的后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
@@ -849,7 +849,7 @@ class ListLoadBalancersRequest:
 
     @member_device_id.setter
     def member_device_id(self, member_device_id):
-        """Sets the member_device_id of this ListLoadBalancersRequest.
+        r"""Sets the member_device_id of this ListLoadBalancersRequest.
 
         负载均衡器中的后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
@@ -860,7 +860,7 @@ class ListLoadBalancersRequest:
 
     @property
     def member_address(self):
-        """Gets the member_address of this ListLoadBalancersRequest.
+        r"""Gets the member_address of this ListLoadBalancersRequest.
 
         负载均衡器中的后端服务器对应的弹性云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
@@ -871,7 +871,7 @@ class ListLoadBalancersRequest:
 
     @member_address.setter
     def member_address(self, member_address):
-        """Sets the member_address of this ListLoadBalancersRequest.
+        r"""Sets the member_address of this ListLoadBalancersRequest.
 
         负载均衡器中的后端服务器对应的弹性云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
@@ -882,7 +882,7 @@ class ListLoadBalancersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLoadBalancersRequest.
+        r"""Gets the enterprise_project_id of this ListLoadBalancersRequest.
 
         参数解释：负载均衡器所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:loadbalancers:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -893,7 +893,7 @@ class ListLoadBalancersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLoadBalancersRequest.
+        r"""Sets the enterprise_project_id of this ListLoadBalancersRequest.
 
         参数解释：负载均衡器所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:loadbalancers:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -904,7 +904,7 @@ class ListLoadBalancersRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListLoadBalancersRequest.
+        r"""Gets the ip_version of this ListLoadBalancersRequest.
 
         IP版本信息。  取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。  [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -915,7 +915,7 @@ class ListLoadBalancersRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListLoadBalancersRequest.
+        r"""Sets the ip_version of this ListLoadBalancersRequest.
 
         IP版本信息。  取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。  [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -926,7 +926,7 @@ class ListLoadBalancersRequest:
 
     @property
     def deletion_protection_enable(self):
-        """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
+        r"""Gets the deletion_protection_enable of this ListLoadBalancersRequest.
 
         是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -937,7 +937,7 @@ class ListLoadBalancersRequest:
 
     @deletion_protection_enable.setter
     def deletion_protection_enable(self, deletion_protection_enable):
-        """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
+        r"""Sets the deletion_protection_enable of this ListLoadBalancersRequest.
 
         是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -948,7 +948,7 @@ class ListLoadBalancersRequest:
 
     @property
     def elb_virsubnet_type(self):
-        """Gets the elb_virsubnet_type of this ListLoadBalancersRequest.
+        r"""Gets the elb_virsubnet_type of this ListLoadBalancersRequest.
 
         下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。
 
@@ -959,7 +959,7 @@ class ListLoadBalancersRequest:
 
     @elb_virsubnet_type.setter
     def elb_virsubnet_type(self, elb_virsubnet_type):
-        """Sets the elb_virsubnet_type of this ListLoadBalancersRequest.
+        r"""Sets the elb_virsubnet_type of this ListLoadBalancersRequest.
 
         下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。
 
@@ -970,7 +970,7 @@ class ListLoadBalancersRequest:
 
     @property
     def autoscaling(self):
-        """Gets the autoscaling of this ListLoadBalancersRequest.
+        r"""Gets the autoscaling of this ListLoadBalancersRequest.
 
         是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
@@ -981,7 +981,7 @@ class ListLoadBalancersRequest:
 
     @autoscaling.setter
     def autoscaling(self, autoscaling):
-        """Sets the autoscaling of this ListLoadBalancersRequest.
+        r"""Sets the autoscaling of this ListLoadBalancersRequest.
 
         是否开启弹性扩缩容。示例如下： \"autoscaling\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *autoscaling=enable=true&autoscaling=enable=false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
@@ -992,7 +992,7 @@ class ListLoadBalancersRequest:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this ListLoadBalancersRequest.
+        r"""Gets the protection_status of this ListLoadBalancersRequest.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -1003,7 +1003,7 @@ class ListLoadBalancersRequest:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this ListLoadBalancersRequest.
+        r"""Sets the protection_status of this ListLoadBalancersRequest.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -1014,7 +1014,7 @@ class ListLoadBalancersRequest:
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this ListLoadBalancersRequest.
+        r"""Gets the global_eips of this ListLoadBalancersRequest.
 
         负载均衡器绑定的公网IP。示例如下：  {     \"global_eips\": [         {             \"global_eip_id\": \"24000000-0000-0000-0000-100000000001\",             \"global_eip_address\": \"10.10.10.10\",             \"ip_version\": 4         }     ] }   支持多值查询，查询条件格式：  - global_eip_id作为查询条件：*global_eips=global_eip_id=xxx&global_eips=global_eip_id=xxx*。  - global_eip_address作为查询条件：*global_eips=global_eip_address=xxx&global_eips=global_eip_address=xxx*。  - ip_version作为查询条件：*global_eips=ip_version=xxx&global_eips=ip_version=xxx*。
 
@@ -1025,7 +1025,7 @@ class ListLoadBalancersRequest:
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this ListLoadBalancersRequest.
+        r"""Sets the global_eips of this ListLoadBalancersRequest.
 
         负载均衡器绑定的公网IP。示例如下：  {     \"global_eips\": [         {             \"global_eip_id\": \"24000000-0000-0000-0000-100000000001\",             \"global_eip_address\": \"10.10.10.10\",             \"ip_version\": 4         }     ] }   支持多值查询，查询条件格式：  - global_eip_id作为查询条件：*global_eips=global_eip_id=xxx&global_eips=global_eip_id=xxx*。  - global_eip_address作为查询条件：*global_eips=global_eip_address=xxx&global_eips=global_eip_address=xxx*。  - ip_version作为查询条件：*global_eips=ip_version=xxx&global_eips=ip_version=xxx*。
 
@@ -1036,7 +1036,7 @@ class ListLoadBalancersRequest:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this ListLoadBalancersRequest.
+        r"""Gets the log_topic_id of this ListLoadBalancersRequest.
 
         LB实例绑定的logtank的topic id信息，支持多值查询，查询条件格式：*log_topic_id=xxx&log_topic_id=xxx*。
 
@@ -1047,7 +1047,7 @@ class ListLoadBalancersRequest:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this ListLoadBalancersRequest.
+        r"""Sets the log_topic_id of this ListLoadBalancersRequest.
 
         LB实例绑定的logtank的topic id信息，支持多值查询，查询条件格式：*log_topic_id=xxx&log_topic_id=xxx*。
 
@@ -1058,7 +1058,7 @@ class ListLoadBalancersRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListLoadBalancersRequest.
+        r"""Gets the log_group_id of this ListLoadBalancersRequest.
 
         LB实例绑定的logtank的group id信息，支持多值查询，查询条件格式：*log_group_id=xxx&log_group_id=xxx*。
 
@@ -1069,7 +1069,7 @@ class ListLoadBalancersRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListLoadBalancersRequest.
+        r"""Sets the log_group_id of this ListLoadBalancersRequest.
 
         LB实例绑定的logtank的group id信息，支持多值查询，查询条件格式：*log_group_id=xxx&log_group_id=xxx*。
 

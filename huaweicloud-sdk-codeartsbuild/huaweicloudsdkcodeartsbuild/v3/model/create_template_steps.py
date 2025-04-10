@@ -33,7 +33,7 @@ class CreateTemplateSteps:
     }
 
     def __init__(self, properties=None, module_id=None, name=None, version=None, enable=None):
-        """CreateTemplateSteps
+        r"""CreateTemplateSteps
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateTemplateSteps:
 
     @property
     def properties(self):
-        """Gets the properties of this CreateTemplateSteps.
+        r"""Gets the properties of this CreateTemplateSteps.
 
         具体的构建步骤
 
@@ -81,7 +81,7 @@ class CreateTemplateSteps:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this CreateTemplateSteps.
+        r"""Sets the properties of this CreateTemplateSteps.
 
         具体的构建步骤
 
@@ -92,7 +92,7 @@ class CreateTemplateSteps:
 
     @property
     def module_id(self):
-        """Gets the module_id of this CreateTemplateSteps.
+        r"""Gets the module_id of this CreateTemplateSteps.
 
         构建模块id
 
@@ -103,7 +103,7 @@ class CreateTemplateSteps:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this CreateTemplateSteps.
+        r"""Sets the module_id of this CreateTemplateSteps.
 
         构建模块id
 
@@ -114,7 +114,7 @@ class CreateTemplateSteps:
 
     @property
     def name(self):
-        """Gets the name of this CreateTemplateSteps.
+        r"""Gets the name of this CreateTemplateSteps.
 
         构建模块名称
 
@@ -125,7 +125,7 @@ class CreateTemplateSteps:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTemplateSteps.
+        r"""Sets the name of this CreateTemplateSteps.
 
         构建模块名称
 
@@ -136,7 +136,7 @@ class CreateTemplateSteps:
 
     @property
     def version(self):
-        """Gets the version of this CreateTemplateSteps.
+        r"""Gets the version of this CreateTemplateSteps.
 
         构建版本
 
@@ -147,7 +147,7 @@ class CreateTemplateSteps:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateTemplateSteps.
+        r"""Sets the version of this CreateTemplateSteps.
 
         构建版本
 
@@ -158,7 +158,7 @@ class CreateTemplateSteps:
 
     @property
     def enable(self):
-        """Gets the enable of this CreateTemplateSteps.
+        r"""Gets the enable of this CreateTemplateSteps.
 
         是否开启
 
@@ -169,7 +169,7 @@ class CreateTemplateSteps:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateTemplateSteps.
+        r"""Sets the enable of this CreateTemplateSteps.
 
         是否开启
 

@@ -41,7 +41,7 @@ class Parameters:
     }
 
     def __init__(self, schema_path=None, edgeset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_path=None, vertexset_format=None, vertexset_default_label=None, log_dir=None, parallel_edge=None):
-        """Parameters
+        r"""Parameters
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class Parameters:
 
     @property
     def schema_path(self):
-        """Gets the schema_path of this Parameters.
+        r"""Gets the schema_path of this Parameters.
 
         元数据文件OBS路径，只支持文件。
 
@@ -108,7 +108,7 @@ class Parameters:
 
     @schema_path.setter
     def schema_path(self, schema_path):
-        """Sets the schema_path of this Parameters.
+        r"""Sets the schema_path of this Parameters.
 
         元数据文件OBS路径，只支持文件。
 
@@ -119,7 +119,7 @@ class Parameters:
 
     @property
     def edgeset_path(self):
-        """Gets the edgeset_path of this Parameters.
+        r"""Gets the edgeset_path of this Parameters.
 
         边数据集文件OBS路径，只支持文件。
 
@@ -130,7 +130,7 @@ class Parameters:
 
     @edgeset_path.setter
     def edgeset_path(self, edgeset_path):
-        """Sets the edgeset_path of this Parameters.
+        r"""Sets the edgeset_path of this Parameters.
 
         边数据集文件OBS路径，只支持文件。
 
@@ -141,7 +141,7 @@ class Parameters:
 
     @property
     def edgeset_format(self):
-        """Gets the edgeset_format of this Parameters.
+        r"""Gets the edgeset_format of this Parameters.
 
         边数据集格式。当前仅支持csv。  默认为csv。
 
@@ -152,7 +152,7 @@ class Parameters:
 
     @edgeset_format.setter
     def edgeset_format(self, edgeset_format):
-        """Sets the edgeset_format of this Parameters.
+        r"""Sets the edgeset_format of this Parameters.
 
         边数据集格式。当前仅支持csv。  默认为csv。
 
@@ -163,7 +163,7 @@ class Parameters:
 
     @property
     def edgeset_default_label(self):
-        """Gets the edgeset_default_label of this Parameters.
+        r"""Gets the edgeset_default_label of this Parameters.
 
         边数据集默认标签，当前默认为空，可以不填。
 
@@ -174,7 +174,7 @@ class Parameters:
 
     @edgeset_default_label.setter
     def edgeset_default_label(self, edgeset_default_label):
-        """Sets the edgeset_default_label of this Parameters.
+        r"""Sets the edgeset_default_label of this Parameters.
 
         边数据集默认标签，当前默认为空，可以不填。
 
@@ -185,7 +185,7 @@ class Parameters:
 
     @property
     def vertexset_path(self):
-        """Gets the vertexset_path of this Parameters.
+        r"""Gets the vertexset_path of this Parameters.
 
         点数据集OBS路径，只支持文件。
 
@@ -196,7 +196,7 @@ class Parameters:
 
     @vertexset_path.setter
     def vertexset_path(self, vertexset_path):
-        """Sets the vertexset_path of this Parameters.
+        r"""Sets the vertexset_path of this Parameters.
 
         点数据集OBS路径，只支持文件。
 
@@ -207,7 +207,7 @@ class Parameters:
 
     @property
     def vertexset_format(self):
-        """Gets the vertexset_format of this Parameters.
+        r"""Gets the vertexset_format of this Parameters.
 
         点数据集格式。当前仅支持csv。  默认为csv。
 
@@ -218,7 +218,7 @@ class Parameters:
 
     @vertexset_format.setter
     def vertexset_format(self, vertexset_format):
-        """Sets the vertexset_format of this Parameters.
+        r"""Sets the vertexset_format of this Parameters.
 
         点数据集格式。当前仅支持csv。  默认为csv。
 
@@ -229,7 +229,7 @@ class Parameters:
 
     @property
     def vertexset_default_label(self):
-        """Gets the vertexset_default_label of this Parameters.
+        r"""Gets the vertexset_default_label of this Parameters.
 
         点数据集默认标签，当前默认为空，可以不填。
 
@@ -240,7 +240,7 @@ class Parameters:
 
     @vertexset_default_label.setter
     def vertexset_default_label(self, vertexset_default_label):
-        """Sets the vertexset_default_label of this Parameters.
+        r"""Sets the vertexset_default_label of this Parameters.
 
         点数据集默认标签，当前默认为空，可以不填。
 
@@ -251,7 +251,7 @@ class Parameters:
 
     @property
     def log_dir(self):
-        """Gets the log_dir of this Parameters.
+        r"""Gets the log_dir of this Parameters.
 
         OBS日志存储目录，用于存储建图过程导入失败的数据和详细日志。
 
@@ -262,7 +262,7 @@ class Parameters:
 
     @log_dir.setter
     def log_dir(self, log_dir):
-        """Sets the log_dir of this Parameters.
+        r"""Sets the log_dir of this Parameters.
 
         OBS日志存储目录，用于存储建图过程导入失败的数据和详细日志。
 
@@ -273,7 +273,7 @@ class Parameters:
 
     @property
     def parallel_edge(self):
-        """Gets the parallel_edge of this Parameters.
+        r"""Gets the parallel_edge of this Parameters.
 
         :return: The parallel_edge of this Parameters.
         :rtype: :class:`huaweicloudsdkges.v1.ParallelEdge`
@@ -282,7 +282,7 @@ class Parameters:
 
     @parallel_edge.setter
     def parallel_edge(self, parallel_edge):
-        """Sets the parallel_edge of this Parameters.
+        r"""Sets the parallel_edge of this Parameters.
 
         :param parallel_edge: The parallel_edge of this Parameters.
         :type parallel_edge: :class:`huaweicloudsdkges.v1.ParallelEdge`

@@ -30,7 +30,7 @@ class RunTextSimilarityResponse(SdkResponse):
     }
 
     def __init__(self, similarity=None, error_code=None, error_msg=None):
-        """RunTextSimilarityResponse
+        r"""RunTextSimilarityResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunTextSimilarityResponse(SdkResponse):
 
     @property
     def similarity(self):
-        """Gets the similarity of this RunTextSimilarityResponse.
+        r"""Gets the similarity of this RunTextSimilarityResponse.
 
         相似度得分，范围在0~1，默认小数点后保留8位。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunTextSimilarityResponse(SdkResponse):
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this RunTextSimilarityResponse.
+        r"""Sets the similarity of this RunTextSimilarityResponse.
 
         相似度得分，范围在0~1，默认小数点后保留8位。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunTextSimilarityResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunTextSimilarityResponse.
+        r"""Gets the error_code of this RunTextSimilarityResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunTextSimilarityResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunTextSimilarityResponse.
+        r"""Sets the error_code of this RunTextSimilarityResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunTextSimilarityResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunTextSimilarityResponse.
+        r"""Gets the error_msg of this RunTextSimilarityResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunTextSimilarityResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunTextSimilarityResponse.
+        r"""Sets the error_msg of this RunTextSimilarityResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

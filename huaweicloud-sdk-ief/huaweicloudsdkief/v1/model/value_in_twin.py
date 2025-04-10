@@ -29,7 +29,7 @@ class ValueInTwin:
     }
 
     def __init__(self, excepted=None, optional=None, metadata=None):
-        """ValueInTwin
+        r"""ValueInTwin
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ValueInTwin:
 
     @property
     def excepted(self):
-        """Gets the excepted of this ValueInTwin.
+        r"""Gets the excepted of this ValueInTwin.
 
         :return: The excepted of this ValueInTwin.
         :rtype: :class:`huaweicloudsdkief.v1.Excepted`
@@ -66,7 +66,7 @@ class ValueInTwin:
 
     @excepted.setter
     def excepted(self, excepted):
-        """Sets the excepted of this ValueInTwin.
+        r"""Sets the excepted of this ValueInTwin.
 
         :param excepted: The excepted of this ValueInTwin.
         :type excepted: :class:`huaweicloudsdkief.v1.Excepted`
@@ -75,7 +75,7 @@ class ValueInTwin:
 
     @property
     def optional(self):
-        """Gets the optional of this ValueInTwin.
+        r"""Gets the optional of this ValueInTwin.
 
         动态属性的实际信息
 
@@ -86,7 +86,7 @@ class ValueInTwin:
 
     @optional.setter
     def optional(self, optional):
-        """Sets the optional of this ValueInTwin.
+        r"""Sets the optional of this ValueInTwin.
 
         动态属性的实际信息
 
@@ -97,7 +97,7 @@ class ValueInTwin:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ValueInTwin.
+        r"""Gets the metadata of this ValueInTwin.
 
         :return: The metadata of this ValueInTwin.
         :rtype: :class:`huaweicloudsdkief.v1.Metadata`
@@ -106,7 +106,7 @@ class ValueInTwin:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ValueInTwin.
+        r"""Sets the metadata of this ValueInTwin.
 
         :param metadata: The metadata of this ValueInTwin.
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`

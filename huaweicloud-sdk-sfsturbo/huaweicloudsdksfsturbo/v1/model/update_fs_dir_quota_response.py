@@ -34,7 +34,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
     }
 
     def __init__(self, path=None, capacity=None, inode=None, used_capacity=None, used_inode=None):
-        """UpdateFsDirQuotaResponse
+        r"""UpdateFsDirQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this UpdateFsDirQuotaResponse.
+        r"""Gets the path of this UpdateFsDirQuotaResponse.
 
         合法的已存在的目录的全路径
 
@@ -83,7 +83,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateFsDirQuotaResponse.
+        r"""Sets the path of this UpdateFsDirQuotaResponse.
 
         合法的已存在的目录的全路径
 
@@ -94,7 +94,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @property
     def capacity(self):
-        """Gets the capacity of this UpdateFsDirQuotaResponse.
+        r"""Gets the capacity of this UpdateFsDirQuotaResponse.
 
         目录的容量大小，单位：MB
 
@@ -105,7 +105,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this UpdateFsDirQuotaResponse.
+        r"""Sets the capacity of this UpdateFsDirQuotaResponse.
 
         目录的容量大小，单位：MB
 
@@ -116,7 +116,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @property
     def inode(self):
-        """Gets the inode of this UpdateFsDirQuotaResponse.
+        r"""Gets the inode of this UpdateFsDirQuotaResponse.
 
         目录的inode数量限制
 
@@ -127,7 +127,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @inode.setter
     def inode(self, inode):
-        """Sets the inode of this UpdateFsDirQuotaResponse.
+        r"""Sets the inode of this UpdateFsDirQuotaResponse.
 
         目录的inode数量限制
 
@@ -138,7 +138,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @property
     def used_capacity(self):
-        """Gets the used_capacity of this UpdateFsDirQuotaResponse.
+        r"""Gets the used_capacity of this UpdateFsDirQuotaResponse.
 
         目录已使用的容量大小，单位：MB。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
@@ -149,7 +149,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @used_capacity.setter
     def used_capacity(self, used_capacity):
-        """Sets the used_capacity of this UpdateFsDirQuotaResponse.
+        r"""Sets the used_capacity of this UpdateFsDirQuotaResponse.
 
         目录已使用的容量大小，单位：MB。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
@@ -160,7 +160,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @property
     def used_inode(self):
-        """Gets the used_inode of this UpdateFsDirQuotaResponse.
+        r"""Gets the used_inode of this UpdateFsDirQuotaResponse.
 
         目录的已使用的inode数量。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 
@@ -171,7 +171,7 @@ class UpdateFsDirQuotaResponse(SdkResponse):
 
     @used_inode.setter
     def used_inode(self, used_inode):
-        """Sets the used_inode of this UpdateFsDirQuotaResponse.
+        r"""Sets the used_inode of this UpdateFsDirQuotaResponse.
 
         目录的已使用的inode数量。仅SFSTurbo 20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB返回该字段
 

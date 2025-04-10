@@ -26,7 +26,7 @@ class DeleteDesignAtomicIndexResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignAtomicIndexResponse
+        r"""DeleteDesignAtomicIndexResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignAtomicIndexResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignAtomicIndexResponse.
+        r"""Gets the data of this DeleteDesignAtomicIndexResponse.
 
         :return: The data of this DeleteDesignAtomicIndexResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignAtomicIndexResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignAtomicIndexResponse.
+        r"""Sets the data of this DeleteDesignAtomicIndexResponse.
 
         :param data: The data of this DeleteDesignAtomicIndexResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

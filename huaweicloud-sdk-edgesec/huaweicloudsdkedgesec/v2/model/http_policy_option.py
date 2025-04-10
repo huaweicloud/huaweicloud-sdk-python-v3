@@ -63,7 +63,7 @@ class HttpPolicyOption:
     }
 
     def __init__(self, webattack=None, common=None, bot_enable=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, followed_action=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, anticrawler=None, third_bot_river=None):
-        """HttpPolicyOption
+        r"""HttpPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class HttpPolicyOption:
 
     @property
     def webattack(self):
-        """Gets the webattack of this HttpPolicyOption.
+        r"""Gets the webattack of this HttpPolicyOption.
 
         基础防护是否开启
 
@@ -187,7 +187,7 @@ class HttpPolicyOption:
 
     @webattack.setter
     def webattack(self, webattack):
-        """Sets the webattack of this HttpPolicyOption.
+        r"""Sets the webattack of this HttpPolicyOption.
 
         基础防护是否开启
 
@@ -198,7 +198,7 @@ class HttpPolicyOption:
 
     @property
     def common(self):
-        """Gets the common of this HttpPolicyOption.
+        r"""Gets the common of this HttpPolicyOption.
 
         常规检测是否开启
 
@@ -209,7 +209,7 @@ class HttpPolicyOption:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this HttpPolicyOption.
+        r"""Sets the common of this HttpPolicyOption.
 
         常规检测是否开启
 
@@ -220,7 +220,7 @@ class HttpPolicyOption:
 
     @property
     def bot_enable(self):
-        """Gets the bot_enable of this HttpPolicyOption.
+        r"""Gets the bot_enable of this HttpPolicyOption.
 
         所有反爬虫是否开启
 
@@ -231,7 +231,7 @@ class HttpPolicyOption:
 
     @bot_enable.setter
     def bot_enable(self, bot_enable):
-        """Sets the bot_enable of this HttpPolicyOption.
+        r"""Sets the bot_enable of this HttpPolicyOption.
 
         所有反爬虫是否开启
 
@@ -242,7 +242,7 @@ class HttpPolicyOption:
 
     @property
     def crawler(self):
-        """Gets the crawler of this HttpPolicyOption.
+        r"""Gets the crawler of this HttpPolicyOption.
 
         特征反爬虫是否开启
 
@@ -253,7 +253,7 @@ class HttpPolicyOption:
 
     @crawler.setter
     def crawler(self, crawler):
-        """Sets the crawler of this HttpPolicyOption.
+        r"""Sets the crawler of this HttpPolicyOption.
 
         特征反爬虫是否开启
 
@@ -264,7 +264,7 @@ class HttpPolicyOption:
 
     @property
     def crawler_engine(self):
-        """Gets the crawler_engine of this HttpPolicyOption.
+        r"""Gets the crawler_engine of this HttpPolicyOption.
 
         搜索engine是否开启
 
@@ -275,7 +275,7 @@ class HttpPolicyOption:
 
     @crawler_engine.setter
     def crawler_engine(self, crawler_engine):
-        """Sets the crawler_engine of this HttpPolicyOption.
+        r"""Sets the crawler_engine of this HttpPolicyOption.
 
         搜索engine是否开启
 
@@ -286,7 +286,7 @@ class HttpPolicyOption:
 
     @property
     def crawler_scanner(self):
-        """Gets the crawler_scanner of this HttpPolicyOption.
+        r"""Gets the crawler_scanner of this HttpPolicyOption.
 
         扫描器是否开启
 
@@ -297,7 +297,7 @@ class HttpPolicyOption:
 
     @crawler_scanner.setter
     def crawler_scanner(self, crawler_scanner):
-        """Sets the crawler_scanner of this HttpPolicyOption.
+        r"""Sets the crawler_scanner of this HttpPolicyOption.
 
         扫描器是否开启
 
@@ -308,7 +308,7 @@ class HttpPolicyOption:
 
     @property
     def crawler_script(self):
-        """Gets the crawler_script of this HttpPolicyOption.
+        r"""Gets the crawler_script of this HttpPolicyOption.
 
         脚本反爬虫是否开启
 
@@ -319,7 +319,7 @@ class HttpPolicyOption:
 
     @crawler_script.setter
     def crawler_script(self, crawler_script):
-        """Sets the crawler_script of this HttpPolicyOption.
+        r"""Sets the crawler_script of this HttpPolicyOption.
 
         脚本反爬虫是否开启
 
@@ -330,7 +330,7 @@ class HttpPolicyOption:
 
     @property
     def crawler_other(self):
-        """Gets the crawler_other of this HttpPolicyOption.
+        r"""Gets the crawler_other of this HttpPolicyOption.
 
         其他爬虫是否开启
 
@@ -341,7 +341,7 @@ class HttpPolicyOption:
 
     @crawler_other.setter
     def crawler_other(self, crawler_other):
-        """Sets the crawler_other of this HttpPolicyOption.
+        r"""Sets the crawler_other of this HttpPolicyOption.
 
         其他爬虫是否开启
 
@@ -352,7 +352,7 @@ class HttpPolicyOption:
 
     @property
     def webshell(self):
-        """Gets the webshell of this HttpPolicyOption.
+        r"""Gets the webshell of this HttpPolicyOption.
 
         Webshell检测是否开启
 
@@ -363,7 +363,7 @@ class HttpPolicyOption:
 
     @webshell.setter
     def webshell(self, webshell):
-        """Sets the webshell of this HttpPolicyOption.
+        r"""Sets the webshell of this HttpPolicyOption.
 
         Webshell检测是否开启
 
@@ -374,7 +374,7 @@ class HttpPolicyOption:
 
     @property
     def cc(self):
-        """Gets the cc of this HttpPolicyOption.
+        r"""Gets the cc of this HttpPolicyOption.
 
         cc规则是否开启
 
@@ -385,7 +385,7 @@ class HttpPolicyOption:
 
     @cc.setter
     def cc(self, cc):
-        """Sets the cc of this HttpPolicyOption.
+        r"""Sets the cc of this HttpPolicyOption.
 
         cc规则是否开启
 
@@ -396,7 +396,7 @@ class HttpPolicyOption:
 
     @property
     def custom(self):
-        """Gets the custom of this HttpPolicyOption.
+        r"""Gets the custom of this HttpPolicyOption.
 
         精准防护是否开启
 
@@ -407,7 +407,7 @@ class HttpPolicyOption:
 
     @custom.setter
     def custom(self, custom):
-        """Sets the custom of this HttpPolicyOption.
+        r"""Sets the custom of this HttpPolicyOption.
 
         精准防护是否开启
 
@@ -418,7 +418,7 @@ class HttpPolicyOption:
 
     @property
     def followed_action(self):
-        """Gets the followed_action of this HttpPolicyOption.
+        r"""Gets the followed_action of this HttpPolicyOption.
 
         攻击惩罚是否开启
 
@@ -429,7 +429,7 @@ class HttpPolicyOption:
 
     @followed_action.setter
     def followed_action(self, followed_action):
-        """Sets the followed_action of this HttpPolicyOption.
+        r"""Sets the followed_action of this HttpPolicyOption.
 
         攻击惩罚是否开启
 
@@ -440,7 +440,7 @@ class HttpPolicyOption:
 
     @property
     def whiteblackip(self):
-        """Gets the whiteblackip of this HttpPolicyOption.
+        r"""Gets the whiteblackip of this HttpPolicyOption.
 
         黑白名单防护是否开启
 
@@ -451,7 +451,7 @@ class HttpPolicyOption:
 
     @whiteblackip.setter
     def whiteblackip(self, whiteblackip):
-        """Sets the whiteblackip of this HttpPolicyOption.
+        r"""Sets the whiteblackip of this HttpPolicyOption.
 
         黑白名单防护是否开启
 
@@ -462,7 +462,7 @@ class HttpPolicyOption:
 
     @property
     def geoip(self):
-        """Gets the geoip of this HttpPolicyOption.
+        r"""Gets the geoip of this HttpPolicyOption.
 
         地理位置规则是否开启
 
@@ -473,7 +473,7 @@ class HttpPolicyOption:
 
     @geoip.setter
     def geoip(self, geoip):
-        """Sets the geoip of this HttpPolicyOption.
+        r"""Sets the geoip of this HttpPolicyOption.
 
         地理位置规则是否开启
 
@@ -484,7 +484,7 @@ class HttpPolicyOption:
 
     @property
     def ignore(self):
-        """Gets the ignore of this HttpPolicyOption.
+        r"""Gets the ignore of this HttpPolicyOption.
 
         误报屏蔽是否开启
 
@@ -495,7 +495,7 @@ class HttpPolicyOption:
 
     @ignore.setter
     def ignore(self, ignore):
-        """Sets the ignore of this HttpPolicyOption.
+        r"""Sets the ignore of this HttpPolicyOption.
 
         误报屏蔽是否开启
 
@@ -506,7 +506,7 @@ class HttpPolicyOption:
 
     @property
     def privacy(self):
-        """Gets the privacy of this HttpPolicyOption.
+        r"""Gets the privacy of this HttpPolicyOption.
 
         隐私屏蔽是否开启
 
@@ -517,7 +517,7 @@ class HttpPolicyOption:
 
     @privacy.setter
     def privacy(self, privacy):
-        """Sets the privacy of this HttpPolicyOption.
+        r"""Sets the privacy of this HttpPolicyOption.
 
         隐私屏蔽是否开启
 
@@ -528,7 +528,7 @@ class HttpPolicyOption:
 
     @property
     def antitamper(self):
-        """Gets the antitamper of this HttpPolicyOption.
+        r"""Gets the antitamper of this HttpPolicyOption.
 
         网页防篡改规则是否开启
 
@@ -539,7 +539,7 @@ class HttpPolicyOption:
 
     @antitamper.setter
     def antitamper(self, antitamper):
-        """Sets the antitamper of this HttpPolicyOption.
+        r"""Sets the antitamper of this HttpPolicyOption.
 
         网页防篡改规则是否开启
 
@@ -550,7 +550,7 @@ class HttpPolicyOption:
 
     @property
     def antileakage(self):
-        """Gets the antileakage of this HttpPolicyOption.
+        r"""Gets the antileakage of this HttpPolicyOption.
 
         防敏感信息泄露规则是否开启
 
@@ -561,7 +561,7 @@ class HttpPolicyOption:
 
     @antileakage.setter
     def antileakage(self, antileakage):
-        """Sets the antileakage of this HttpPolicyOption.
+        r"""Sets the antileakage of this HttpPolicyOption.
 
         防敏感信息泄露规则是否开启
 
@@ -572,7 +572,7 @@ class HttpPolicyOption:
 
     @property
     def anticrawler(self):
-        """Gets the anticrawler of this HttpPolicyOption.
+        r"""Gets the anticrawler of this HttpPolicyOption.
 
         脚本反爬虫规则是否开启
 
@@ -583,7 +583,7 @@ class HttpPolicyOption:
 
     @anticrawler.setter
     def anticrawler(self, anticrawler):
-        """Sets the anticrawler of this HttpPolicyOption.
+        r"""Sets the anticrawler of this HttpPolicyOption.
 
         脚本反爬虫规则是否开启
 
@@ -594,7 +594,7 @@ class HttpPolicyOption:
 
     @property
     def third_bot_river(self):
-        """Gets the third_bot_river of this HttpPolicyOption.
+        r"""Gets the third_bot_river of this HttpPolicyOption.
 
         三方BOT是否开启
 
@@ -605,7 +605,7 @@ class HttpPolicyOption:
 
     @third_bot_river.setter
     def third_bot_river(self, third_bot_river):
-        """Sets the third_bot_river of this HttpPolicyOption.
+        r"""Sets the third_bot_river of this HttpPolicyOption.
 
         三方BOT是否开启
 

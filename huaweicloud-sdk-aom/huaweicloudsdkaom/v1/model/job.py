@@ -53,7 +53,7 @@ class Job:
     }
 
     def __init__(self, id=None, name=None, create_time=None, create_by=None, update_time=None, update_by=None, description=None, enterprise_project_id=None, project_id=None, steps=None, parameters=None, rate_control=None, approve_info=None, is_latest_version=None, version_number=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class Job:
 
     @property
     def id(self):
-        """Gets the id of this Job.
+        r"""Gets the id of this Job.
 
         作业id。
 
@@ -145,7 +145,7 @@ class Job:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Job.
+        r"""Sets the id of this Job.
 
         作业id。
 
@@ -156,7 +156,7 @@ class Job:
 
     @property
     def name(self):
-        """Gets the name of this Job.
+        r"""Gets the name of this Job.
 
         作业名称。
 
@@ -167,7 +167,7 @@ class Job:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Job.
+        r"""Sets the name of this Job.
 
         作业名称。
 
@@ -178,7 +178,7 @@ class Job:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Job.
+        r"""Gets the create_time of this Job.
 
         实体的创建时间戳。
 
@@ -189,7 +189,7 @@ class Job:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Job.
+        r"""Sets the create_time of this Job.
 
         实体的创建时间戳。
 
@@ -200,7 +200,7 @@ class Job:
 
     @property
     def create_by(self):
-        """Gets the create_by of this Job.
+        r"""Gets the create_by of this Job.
 
         创建人。
 
@@ -211,7 +211,7 @@ class Job:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this Job.
+        r"""Sets the create_by of this Job.
 
         创建人。
 
@@ -222,7 +222,7 @@ class Job:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Job.
+        r"""Gets the update_time of this Job.
 
         实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
@@ -233,7 +233,7 @@ class Job:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Job.
+        r"""Sets the update_time of this Job.
 
         实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
@@ -244,7 +244,7 @@ class Job:
 
     @property
     def update_by(self):
-        """Gets the update_by of this Job.
+        r"""Gets the update_by of this Job.
 
         修改人。
 
@@ -255,7 +255,7 @@ class Job:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this Job.
+        r"""Sets the update_by of this Job.
 
         修改人。
 
@@ -266,7 +266,7 @@ class Job:
 
     @property
     def description(self):
-        """Gets the description of this Job.
+        r"""Gets the description of this Job.
 
         作业描述，最大长度为1000。
 
@@ -277,7 +277,7 @@ class Job:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Job.
+        r"""Sets the description of this Job.
 
         作业描述，最大长度为1000。
 
@@ -288,7 +288,7 @@ class Job:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Job.
+        r"""Gets the enterprise_project_id of this Job.
 
         企业项目id。
 
@@ -299,7 +299,7 @@ class Job:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Job.
+        r"""Sets the enterprise_project_id of this Job.
 
         企业项目id。
 
@@ -310,7 +310,7 @@ class Job:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Job.
+        r"""Gets the project_id of this Job.
 
         租户从IAM申请到的projectid，一般为32位字符串。
 
@@ -321,7 +321,7 @@ class Job:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Job.
+        r"""Sets the project_id of this Job.
 
         租户从IAM申请到的projectid，一般为32位字符串。
 
@@ -332,7 +332,7 @@ class Job:
 
     @property
     def steps(self):
-        """Gets the steps of this Job.
+        r"""Gets the steps of this Job.
 
         作业步骤。
 
@@ -343,7 +343,7 @@ class Job:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this Job.
+        r"""Sets the steps of this Job.
 
         作业步骤。
 
@@ -354,7 +354,7 @@ class Job:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Job.
+        r"""Gets the parameters of this Job.
 
         全局参数。
 
@@ -365,7 +365,7 @@ class Job:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Job.
+        r"""Sets the parameters of this Job.
 
         全局参数。
 
@@ -376,7 +376,7 @@ class Job:
 
     @property
     def rate_control(self):
-        """Gets the rate_control of this Job.
+        r"""Gets the rate_control of this Job.
 
         :return: The rate_control of this Job.
         :rtype: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -385,7 +385,7 @@ class Job:
 
     @rate_control.setter
     def rate_control(self, rate_control):
-        """Sets the rate_control of this Job.
+        r"""Sets the rate_control of this Job.
 
         :param rate_control: The rate_control of this Job.
         :type rate_control: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -394,7 +394,7 @@ class Job:
 
     @property
     def approve_info(self):
-        """Gets the approve_info of this Job.
+        r"""Gets the approve_info of this Job.
 
         :return: The approve_info of this Job.
         :rtype: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -403,7 +403,7 @@ class Job:
 
     @approve_info.setter
     def approve_info(self, approve_info):
-        """Sets the approve_info of this Job.
+        r"""Sets the approve_info of this Job.
 
         :param approve_info: The approve_info of this Job.
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -412,7 +412,7 @@ class Job:
 
     @property
     def is_latest_version(self):
-        """Gets the is_latest_version of this Job.
+        r"""Gets the is_latest_version of this Job.
 
         是否为最新版本的作业
 
@@ -423,7 +423,7 @@ class Job:
 
     @is_latest_version.setter
     def is_latest_version(self, is_latest_version):
-        """Sets the is_latest_version of this Job.
+        r"""Sets the is_latest_version of this Job.
 
         是否为最新版本的作业
 
@@ -434,7 +434,7 @@ class Job:
 
     @property
     def version_number(self):
-        """Gets the version_number of this Job.
+        r"""Gets the version_number of this Job.
 
         版本号
 
@@ -445,7 +445,7 @@ class Job:
 
     @version_number.setter
     def version_number(self, version_number):
-        """Sets the version_number of this Job.
+        r"""Sets the version_number of this Job.
 
         版本号
 

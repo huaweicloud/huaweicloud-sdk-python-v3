@@ -25,7 +25,7 @@ class HeaderBody:
     }
 
     def __init__(self, headers=None):
-        """HeaderBody
+        r"""HeaderBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HeaderBody:
 
     @property
     def headers(self):
-        """Gets the headers of this HeaderBody.
+        r"""Gets the headers of this HeaderBody.
 
         :return: The headers of this HeaderBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.HeaderMap`
@@ -52,7 +52,7 @@ class HeaderBody:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this HeaderBody.
+        r"""Sets the headers of this HeaderBody.
 
         :param headers: The headers of this HeaderBody.
         :type headers: :class:`huaweicloudsdkcdn.v1.HeaderMap`

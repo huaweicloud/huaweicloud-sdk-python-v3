@@ -25,7 +25,7 @@ class ConnectionManagement:
     }
 
     def __init__(self, driver_management=None):
-        """ConnectionManagement
+        r"""ConnectionManagement
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConnectionManagement:
 
     @property
     def driver_management(self):
-        """Gets the driver_management of this ConnectionManagement.
+        r"""Gets the driver_management of this ConnectionManagement.
 
         :return: The driver_management of this ConnectionManagement.
         :rtype: :class:`huaweicloudsdkdrs.v5.DriverManagement`
@@ -52,7 +52,7 @@ class ConnectionManagement:
 
     @driver_management.setter
     def driver_management(self, driver_management):
-        """Sets the driver_management of this ConnectionManagement.
+        r"""Sets the driver_management of this ConnectionManagement.
 
         :param driver_management: The driver_management of this ConnectionManagement.
         :type driver_management: :class:`huaweicloudsdkdrs.v5.DriverManagement`

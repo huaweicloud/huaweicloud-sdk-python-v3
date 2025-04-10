@@ -33,7 +33,7 @@ class BizAppParam:
     }
 
     def __init__(self, description=None, display_name=None, eps_id=None, name=None, register_type=None):
-        """BizAppParam
+        r"""BizAppParam
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BizAppParam:
 
     @property
     def description(self):
-        """Gets the description of this BizAppParam.
+        r"""Gets the description of this BizAppParam.
 
         应用描述
 
@@ -81,7 +81,7 @@ class BizAppParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BizAppParam.
+        r"""Sets the description of this BizAppParam.
 
         应用描述
 
@@ -92,7 +92,7 @@ class BizAppParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this BizAppParam.
+        r"""Gets the display_name of this BizAppParam.
 
         应用名称.字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
 
@@ -103,7 +103,7 @@ class BizAppParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this BizAppParam.
+        r"""Sets the display_name of this BizAppParam.
 
         应用名称.字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
 
@@ -114,7 +114,7 @@ class BizAppParam:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this BizAppParam.
+        r"""Gets the eps_id of this BizAppParam.
 
         应用关联的企业项目id。企业级用户必传
 
@@ -125,7 +125,7 @@ class BizAppParam:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this BizAppParam.
+        r"""Sets the eps_id of this BizAppParam.
 
         应用关联的企业项目id。企业级用户必传
 
@@ -136,7 +136,7 @@ class BizAppParam:
 
     @property
     def name(self):
-        """Gets the name of this BizAppParam.
+        r"""Gets the name of this BizAppParam.
 
         唯一标识.字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
 
@@ -147,7 +147,7 @@ class BizAppParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BizAppParam.
+        r"""Sets the name of this BizAppParam.
 
         唯一标识.字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点
 
@@ -158,7 +158,7 @@ class BizAppParam:
 
     @property
     def register_type(self):
-        """Gets the register_type of this BizAppParam.
+        r"""Gets the register_type of this BizAppParam.
 
         前端默认是CONSOLE，不需要传参。rest接口无参数是API，有参数只能是：SERVICE_DISCOVERY
 
@@ -169,7 +169,7 @@ class BizAppParam:
 
     @register_type.setter
     def register_type(self, register_type):
-        """Sets the register_type of this BizAppParam.
+        r"""Sets the register_type of this BizAppParam.
 
         前端默认是CONSOLE，不需要传参。rest接口无参数是API，有参数只能是：SERVICE_DISCOVERY
 

@@ -32,7 +32,7 @@ class ListBasePluginsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, data=None):
-        """ListBasePluginsResponse
+        r"""ListBasePluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListBasePluginsResponse.
+        r"""Gets the offset of this ListBasePluginsResponse.
 
         偏移
 
@@ -76,7 +76,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBasePluginsResponse.
+        r"""Sets the offset of this ListBasePluginsResponse.
 
         偏移
 
@@ -87,7 +87,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListBasePluginsResponse.
+        r"""Gets the limit of this ListBasePluginsResponse.
 
         大小
 
@@ -98,7 +98,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBasePluginsResponse.
+        r"""Sets the limit of this ListBasePluginsResponse.
 
         大小
 
@@ -109,7 +109,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListBasePluginsResponse.
+        r"""Gets the total of this ListBasePluginsResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBasePluginsResponse.
+        r"""Sets the total of this ListBasePluginsResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListBasePluginsResponse.
+        r"""Gets the data of this ListBasePluginsResponse.
 
         结果集
 
@@ -142,7 +142,7 @@ class ListBasePluginsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListBasePluginsResponse.
+        r"""Sets the data of this ListBasePluginsResponse.
 
         结果集
 

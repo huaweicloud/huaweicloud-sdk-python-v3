@@ -29,7 +29,7 @@ class UploadAppIconRequest:
     }
 
     def __init__(self, app_group_id=None, app_id=None, body=None):
-        """UploadAppIconRequest
+        r"""UploadAppIconRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UploadAppIconRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this UploadAppIconRequest.
+        r"""Gets the app_group_id of this UploadAppIconRequest.
 
         应用组ID。
 
@@ -66,7 +66,7 @@ class UploadAppIconRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this UploadAppIconRequest.
+        r"""Sets the app_group_id of this UploadAppIconRequest.
 
         应用组ID。
 
@@ -77,7 +77,7 @@ class UploadAppIconRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UploadAppIconRequest.
+        r"""Gets the app_id of this UploadAppIconRequest.
 
         应用ID。
 
@@ -88,7 +88,7 @@ class UploadAppIconRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UploadAppIconRequest.
+        r"""Sets the app_id of this UploadAppIconRequest.
 
         应用ID。
 
@@ -99,7 +99,7 @@ class UploadAppIconRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadAppIconRequest.
+        r"""Gets the body of this UploadAppIconRequest.
 
         :return: The body of this UploadAppIconRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconRequestBody`
@@ -108,7 +108,7 @@ class UploadAppIconRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadAppIconRequest.
+        r"""Sets the body of this UploadAppIconRequest.
 
         :param body: The body of this UploadAppIconRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconRequestBody`

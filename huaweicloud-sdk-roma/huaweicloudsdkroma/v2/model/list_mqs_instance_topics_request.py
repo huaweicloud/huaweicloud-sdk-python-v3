@@ -35,7 +35,7 @@ class ListMqsInstanceTopicsRequest:
     }
 
     def __init__(self, instance_id=None, app_name=None, name=None, access_policy=None, limit=None, offset=None):
-        """ListMqsInstanceTopicsRequest
+        r"""ListMqsInstanceTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListMqsInstanceTopicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMqsInstanceTopicsRequest.
+        r"""Gets the instance_id of this ListMqsInstanceTopicsRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class ListMqsInstanceTopicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMqsInstanceTopicsRequest.
+        r"""Sets the instance_id of this ListMqsInstanceTopicsRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ListMqsInstanceTopicsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListMqsInstanceTopicsRequest.
+        r"""Gets the app_name of this ListMqsInstanceTopicsRequest.
 
         应用名称。
 
@@ -110,7 +110,7 @@ class ListMqsInstanceTopicsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListMqsInstanceTopicsRequest.
+        r"""Sets the app_name of this ListMqsInstanceTopicsRequest.
 
         应用名称。
 
@@ -121,7 +121,7 @@ class ListMqsInstanceTopicsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListMqsInstanceTopicsRequest.
+        r"""Gets the name of this ListMqsInstanceTopicsRequest.
 
         Topic名称。
 
@@ -132,7 +132,7 @@ class ListMqsInstanceTopicsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListMqsInstanceTopicsRequest.
+        r"""Sets the name of this ListMqsInstanceTopicsRequest.
 
         Topic名称。
 
@@ -143,7 +143,7 @@ class ListMqsInstanceTopicsRequest:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this ListMqsInstanceTopicsRequest.
+        r"""Gets the access_policy of this ListMqsInstanceTopicsRequest.
 
         权限类型。 - all：发布+订阅 - pub：发布 - sub：订阅
 
@@ -154,7 +154,7 @@ class ListMqsInstanceTopicsRequest:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this ListMqsInstanceTopicsRequest.
+        r"""Sets the access_policy of this ListMqsInstanceTopicsRequest.
 
         权限类型。 - all：发布+订阅 - pub：发布 - sub：订阅
 
@@ -165,7 +165,7 @@ class ListMqsInstanceTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMqsInstanceTopicsRequest.
+        r"""Gets the limit of this ListMqsInstanceTopicsRequest.
 
         分页查询大小。默认查询所有的topic。
 
@@ -176,7 +176,7 @@ class ListMqsInstanceTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMqsInstanceTopicsRequest.
+        r"""Sets the limit of this ListMqsInstanceTopicsRequest.
 
         分页查询大小。默认查询所有的topic。
 
@@ -187,7 +187,7 @@ class ListMqsInstanceTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMqsInstanceTopicsRequest.
+        r"""Gets the offset of this ListMqsInstanceTopicsRequest.
 
         分页查询的偏移量。默认值是0。
 
@@ -198,7 +198,7 @@ class ListMqsInstanceTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMqsInstanceTopicsRequest.
+        r"""Sets the offset of this ListMqsInstanceTopicsRequest.
 
         分页查询的偏移量。默认值是0。
 

@@ -35,7 +35,7 @@ class ListLakeFormationInstancesRequest:
     }
 
     def __init__(self, in_recycle_bin=None, offset=None, limit=None, name=None, enterprise_project_id=None, tags=None):
-        """ListLakeFormationInstancesRequest
+        r"""ListLakeFormationInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ListLakeFormationInstancesRequest:
 
     @property
     def in_recycle_bin(self):
-        """Gets the in_recycle_bin of this ListLakeFormationInstancesRequest.
+        r"""Gets the in_recycle_bin of this ListLakeFormationInstancesRequest.
 
         是否查询回收站中的实例
 
@@ -85,7 +85,7 @@ class ListLakeFormationInstancesRequest:
 
     @in_recycle_bin.setter
     def in_recycle_bin(self, in_recycle_bin):
-        """Sets the in_recycle_bin of this ListLakeFormationInstancesRequest.
+        r"""Sets the in_recycle_bin of this ListLakeFormationInstancesRequest.
 
         是否查询回收站中的实例
 
@@ -96,7 +96,7 @@ class ListLakeFormationInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLakeFormationInstancesRequest.
+        r"""Gets the offset of this ListLakeFormationInstancesRequest.
 
         分页查询时的偏移量
 
@@ -107,7 +107,7 @@ class ListLakeFormationInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLakeFormationInstancesRequest.
+        r"""Sets the offset of this ListLakeFormationInstancesRequest.
 
         分页查询时的偏移量
 
@@ -118,7 +118,7 @@ class ListLakeFormationInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLakeFormationInstancesRequest.
+        r"""Gets the limit of this ListLakeFormationInstancesRequest.
 
         分页一页显示数
 
@@ -129,7 +129,7 @@ class ListLakeFormationInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLakeFormationInstancesRequest.
+        r"""Sets the limit of this ListLakeFormationInstancesRequest.
 
         分页一页显示数
 
@@ -140,7 +140,7 @@ class ListLakeFormationInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListLakeFormationInstancesRequest.
+        r"""Gets the name of this ListLakeFormationInstancesRequest.
 
         使用LakeFormation实例名进行检索
 
@@ -151,7 +151,7 @@ class ListLakeFormationInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLakeFormationInstancesRequest.
+        r"""Sets the name of this ListLakeFormationInstancesRequest.
 
         使用LakeFormation实例名进行检索
 
@@ -162,7 +162,7 @@ class ListLakeFormationInstancesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLakeFormationInstancesRequest.
+        r"""Gets the enterprise_project_id of this ListLakeFormationInstancesRequest.
 
         企业项目id
 
@@ -173,7 +173,7 @@ class ListLakeFormationInstancesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLakeFormationInstancesRequest.
+        r"""Sets the enterprise_project_id of this ListLakeFormationInstancesRequest.
 
         企业项目id
 
@@ -184,7 +184,7 @@ class ListLakeFormationInstancesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListLakeFormationInstancesRequest.
+        r"""Gets the tags of this ListLakeFormationInstancesRequest.
 
         标签条件列表
 
@@ -195,7 +195,7 @@ class ListLakeFormationInstancesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListLakeFormationInstancesRequest.
+        r"""Sets the tags of this ListLakeFormationInstancesRequest.
 
         标签条件列表
 

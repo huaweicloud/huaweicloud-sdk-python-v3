@@ -37,7 +37,7 @@ class JobScriptOrderInfoModel:
     }
 
     def __init__(self, execute_uuid=None, gmt_created=None, gmt_finished=None, execute_costs=None, creator=None, status=None, properties=None):
-        """JobScriptOrderInfoModel
+        r"""JobScriptOrderInfoModel
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def execute_uuid(self):
-        """Gets the execute_uuid of this JobScriptOrderInfoModel.
+        r"""Gets the execute_uuid of this JobScriptOrderInfoModel.
 
         执行uuid
 
@@ -96,7 +96,7 @@ class JobScriptOrderInfoModel:
 
     @execute_uuid.setter
     def execute_uuid(self, execute_uuid):
-        """Sets the execute_uuid of this JobScriptOrderInfoModel.
+        r"""Sets the execute_uuid of this JobScriptOrderInfoModel.
 
         执行uuid
 
@@ -107,7 +107,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this JobScriptOrderInfoModel.
+        r"""Gets the gmt_created of this JobScriptOrderInfoModel.
 
         执行创建时间
 
@@ -118,7 +118,7 @@ class JobScriptOrderInfoModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this JobScriptOrderInfoModel.
+        r"""Sets the gmt_created of this JobScriptOrderInfoModel.
 
         执行创建时间
 
@@ -129,7 +129,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def gmt_finished(self):
-        """Gets the gmt_finished of this JobScriptOrderInfoModel.
+        r"""Gets the gmt_finished of this JobScriptOrderInfoModel.
 
         执行完成时间
 
@@ -140,7 +140,7 @@ class JobScriptOrderInfoModel:
 
     @gmt_finished.setter
     def gmt_finished(self, gmt_finished):
-        """Sets the gmt_finished of this JobScriptOrderInfoModel.
+        r"""Sets the gmt_finished of this JobScriptOrderInfoModel.
 
         执行完成时间
 
@@ -151,7 +151,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def execute_costs(self):
-        """Gets the execute_costs of this JobScriptOrderInfoModel.
+        r"""Gets the execute_costs of this JobScriptOrderInfoModel.
 
         执行耗时，单位：秒
 
@@ -162,7 +162,7 @@ class JobScriptOrderInfoModel:
 
     @execute_costs.setter
     def execute_costs(self, execute_costs):
-        """Sets the execute_costs of this JobScriptOrderInfoModel.
+        r"""Sets the execute_costs of this JobScriptOrderInfoModel.
 
         执行耗时，单位：秒
 
@@ -173,7 +173,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def creator(self):
-        """Gets the creator of this JobScriptOrderInfoModel.
+        r"""Gets the creator of this JobScriptOrderInfoModel.
 
         创建人
 
@@ -184,7 +184,7 @@ class JobScriptOrderInfoModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this JobScriptOrderInfoModel.
+        r"""Sets the creator of this JobScriptOrderInfoModel.
 
         创建人
 
@@ -195,7 +195,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def status(self):
-        """Gets the status of this JobScriptOrderInfoModel.
+        r"""Gets the status of this JobScriptOrderInfoModel.
 
         执行状态
 
@@ -206,7 +206,7 @@ class JobScriptOrderInfoModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobScriptOrderInfoModel.
+        r"""Sets the status of this JobScriptOrderInfoModel.
 
         执行状态
 
@@ -217,7 +217,7 @@ class JobScriptOrderInfoModel:
 
     @property
     def properties(self):
-        """Gets the properties of this JobScriptOrderInfoModel.
+        r"""Gets the properties of this JobScriptOrderInfoModel.
 
         :return: The properties of this JobScriptOrderInfoModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.JobScriptOrderInfoProp`
@@ -226,7 +226,7 @@ class JobScriptOrderInfoModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this JobScriptOrderInfoModel.
+        r"""Sets the properties of this JobScriptOrderInfoModel.
 
         :param properties: The properties of this JobScriptOrderInfoModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.JobScriptOrderInfoProp`

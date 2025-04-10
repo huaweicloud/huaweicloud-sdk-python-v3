@@ -116,7 +116,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, is_send_fg_body_base64=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_id=None, run_env_name=None, publish_id=None, publish_time=None, roma_app_name=None, ld_api_id=None, backend_api=None, api_group_info=None, func_info=None, mock_info=None, req_params=None, backend_params=None, policy_functions=None, policy_mocks=None, policy_https=None):
-        """ShowDetailsOfApiV2Response
+        r"""ShowDetailsOfApiV2Response
 
         The model defined in huaweicloud sdk
 
@@ -351,7 +351,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailsOfApiV2Response.
+        r"""Gets the name of this ShowDetailsOfApiV2Response.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -362,7 +362,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailsOfApiV2Response.
+        r"""Sets the name of this ShowDetailsOfApiV2Response.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -373,7 +373,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDetailsOfApiV2Response.
+        r"""Gets the type of this ShowDetailsOfApiV2Response.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -384,7 +384,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDetailsOfApiV2Response.
+        r"""Sets the type of this ShowDetailsOfApiV2Response.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -395,7 +395,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowDetailsOfApiV2Response.
+        r"""Gets the version of this ShowDetailsOfApiV2Response.
 
         API的版本
 
@@ -406,7 +406,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowDetailsOfApiV2Response.
+        r"""Sets the version of this ShowDetailsOfApiV2Response.
 
         API的版本
 
@@ -417,7 +417,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ShowDetailsOfApiV2Response.
+        r"""Gets the req_protocol of this ShowDetailsOfApiV2Response.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
@@ -428,7 +428,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ShowDetailsOfApiV2Response.
+        r"""Sets the req_protocol of this ShowDetailsOfApiV2Response.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
@@ -439,7 +439,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def req_method(self):
-        """Gets the req_method of this ShowDetailsOfApiV2Response.
+        r"""Gets the req_method of this ShowDetailsOfApiV2Response.
 
         API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
@@ -450,7 +450,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ShowDetailsOfApiV2Response.
+        r"""Sets the req_method of this ShowDetailsOfApiV2Response.
 
         API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
@@ -461,7 +461,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ShowDetailsOfApiV2Response.
+        r"""Gets the req_uri of this ShowDetailsOfApiV2Response.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
@@ -472,7 +472,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ShowDetailsOfApiV2Response.
+        r"""Sets the req_uri of this ShowDetailsOfApiV2Response.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
@@ -483,7 +483,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShowDetailsOfApiV2Response.
+        r"""Gets the auth_type of this ShowDetailsOfApiV2Response.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入
 
@@ -494,7 +494,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShowDetailsOfApiV2Response.
+        r"""Sets the auth_type of this ShowDetailsOfApiV2Response.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入
 
@@ -505,7 +505,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def auth_opt(self):
-        """Gets the auth_opt of this ShowDetailsOfApiV2Response.
+        r"""Gets the auth_opt of this ShowDetailsOfApiV2Response.
 
         :return: The auth_opt of this ShowDetailsOfApiV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -514,7 +514,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @auth_opt.setter
     def auth_opt(self, auth_opt):
-        """Sets the auth_opt of this ShowDetailsOfApiV2Response.
+        r"""Sets the auth_opt of this ShowDetailsOfApiV2Response.
 
         :param auth_opt: The auth_opt of this ShowDetailsOfApiV2Response.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -523,7 +523,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def cors(self):
-        """Gets the cors of this ShowDetailsOfApiV2Response.
+        r"""Gets the cors of this ShowDetailsOfApiV2Response.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -534,7 +534,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this ShowDetailsOfApiV2Response.
+        r"""Sets the cors of this ShowDetailsOfApiV2Response.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -545,7 +545,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ShowDetailsOfApiV2Response.
+        r"""Gets the match_mode of this ShowDetailsOfApiV2Response.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -556,7 +556,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ShowDetailsOfApiV2Response.
+        r"""Sets the match_mode of this ShowDetailsOfApiV2Response.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -567,7 +567,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def backend_type(self):
-        """Gets the backend_type of this ShowDetailsOfApiV2Response.
+        r"""Gets the backend_type of this ShowDetailsOfApiV2Response.
 
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
@@ -578,7 +578,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @backend_type.setter
     def backend_type(self, backend_type):
-        """Sets the backend_type of this ShowDetailsOfApiV2Response.
+        r"""Sets the backend_type of this ShowDetailsOfApiV2Response.
 
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
@@ -589,7 +589,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this ShowDetailsOfApiV2Response.
+        r"""Gets the remark of this ShowDetailsOfApiV2Response.
 
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -600,7 +600,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ShowDetailsOfApiV2Response.
+        r"""Sets the remark of this ShowDetailsOfApiV2Response.
 
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -611,7 +611,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the group_id of this ShowDetailsOfApiV2Response.
 
         API所属的分组编号
 
@@ -622,7 +622,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the group_id of this ShowDetailsOfApiV2Response.
 
         API所属的分组编号
 
@@ -633,7 +633,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def body_remark(self):
-        """Gets the body_remark of this ShowDetailsOfApiV2Response.
+        r"""Gets the body_remark of this ShowDetailsOfApiV2Response.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -644,7 +644,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @body_remark.setter
     def body_remark(self, body_remark):
-        """Sets the body_remark of this ShowDetailsOfApiV2Response.
+        r"""Sets the body_remark of this ShowDetailsOfApiV2Response.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -655,7 +655,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def result_normal_sample(self):
-        """Gets the result_normal_sample of this ShowDetailsOfApiV2Response.
+        r"""Gets the result_normal_sample of this ShowDetailsOfApiV2Response.
 
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -666,7 +666,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @result_normal_sample.setter
     def result_normal_sample(self, result_normal_sample):
-        """Sets the result_normal_sample of this ShowDetailsOfApiV2Response.
+        r"""Sets the result_normal_sample of this ShowDetailsOfApiV2Response.
 
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -677,7 +677,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def result_failure_sample(self):
-        """Gets the result_failure_sample of this ShowDetailsOfApiV2Response.
+        r"""Gets the result_failure_sample of this ShowDetailsOfApiV2Response.
 
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -688,7 +688,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @result_failure_sample.setter
     def result_failure_sample(self, result_failure_sample):
-        """Sets the result_failure_sample of this ShowDetailsOfApiV2Response.
+        r"""Sets the result_failure_sample of this ShowDetailsOfApiV2Response.
 
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -699,7 +699,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the authorizer_id of this ShowDetailsOfApiV2Response.
 
         前端自定义认证对象的ID
 
@@ -710,7 +710,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the authorizer_id of this ShowDetailsOfApiV2Response.
 
         前端自定义认证对象的ID
 
@@ -721,7 +721,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowDetailsOfApiV2Response.
+        r"""Gets the tags of this ShowDetailsOfApiV2Response.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -732,7 +732,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowDetailsOfApiV2Response.
+        r"""Sets the tags of this ShowDetailsOfApiV2Response.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -743,7 +743,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def response_id(self):
-        """Gets the response_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the response_id of this ShowDetailsOfApiV2Response.
 
         分组自定义响应ID
 
@@ -754,7 +754,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the response_id of this ShowDetailsOfApiV2Response.
 
         分组自定义响应ID
 
@@ -765,7 +765,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the roma_app_id of this ShowDetailsOfApiV2Response.
 
         集成应用ID  暂不支持
 
@@ -776,7 +776,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the roma_app_id of this ShowDetailsOfApiV2Response.
 
         集成应用ID  暂不支持
 
@@ -787,7 +787,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDetailsOfApiV2Response.
+        r"""Gets the domain_name of this ShowDetailsOfApiV2Response.
 
         API绑定的自定义域名  暂不支持
 
@@ -798,7 +798,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDetailsOfApiV2Response.
+        r"""Sets the domain_name of this ShowDetailsOfApiV2Response.
 
         API绑定的自定义域名  暂不支持
 
@@ -809,7 +809,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def tag(self):
-        """Gets the tag of this ShowDetailsOfApiV2Response.
+        r"""Gets the tag of this ShowDetailsOfApiV2Response.
 
         标签  待废弃，优先使用tags字段
 
@@ -820,7 +820,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowDetailsOfApiV2Response.
+        r"""Sets the tag of this ShowDetailsOfApiV2Response.
 
         标签  待废弃，优先使用tags字段
 
@@ -831,7 +831,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowDetailsOfApiV2Response.
+        r"""Gets the content_type of this ShowDetailsOfApiV2Response.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -842,7 +842,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowDetailsOfApiV2Response.
+        r"""Sets the content_type of this ShowDetailsOfApiV2Response.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -853,7 +853,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def is_send_fg_body_base64(self):
-        """Gets the is_send_fg_body_base64 of this ShowDetailsOfApiV2Response.
+        r"""Gets the is_send_fg_body_base64 of this ShowDetailsOfApiV2Response.
 
         是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
 
@@ -864,7 +864,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @is_send_fg_body_base64.setter
     def is_send_fg_body_base64(self, is_send_fg_body_base64):
-        """Sets the is_send_fg_body_base64 of this ShowDetailsOfApiV2Response.
+        r"""Sets the is_send_fg_body_base64 of this ShowDetailsOfApiV2Response.
 
         是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
 
@@ -875,7 +875,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfApiV2Response.
+        r"""Gets the id of this ShowDetailsOfApiV2Response.
 
         API编号
 
@@ -886,7 +886,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfApiV2Response.
+        r"""Sets the id of this ShowDetailsOfApiV2Response.
 
         API编号
 
@@ -897,7 +897,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailsOfApiV2Response.
+        r"""Gets the status of this ShowDetailsOfApiV2Response.
 
         API状态   - 1： 有效
 
@@ -908,7 +908,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailsOfApiV2Response.
+        r"""Sets the status of this ShowDetailsOfApiV2Response.
 
         API状态   - 1： 有效
 
@@ -919,7 +919,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def arrange_necessary(self):
-        """Gets the arrange_necessary of this ShowDetailsOfApiV2Response.
+        r"""Gets the arrange_necessary of this ShowDetailsOfApiV2Response.
 
         是否需要编排
 
@@ -930,7 +930,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @arrange_necessary.setter
     def arrange_necessary(self, arrange_necessary):
-        """Sets the arrange_necessary of this ShowDetailsOfApiV2Response.
+        r"""Sets the arrange_necessary of this ShowDetailsOfApiV2Response.
 
         是否需要编排
 
@@ -941,7 +941,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def register_time(self):
-        """Gets the register_time of this ShowDetailsOfApiV2Response.
+        r"""Gets the register_time of this ShowDetailsOfApiV2Response.
 
         API注册时间
 
@@ -952,7 +952,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ShowDetailsOfApiV2Response.
+        r"""Sets the register_time of this ShowDetailsOfApiV2Response.
 
         API注册时间
 
@@ -963,7 +963,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDetailsOfApiV2Response.
+        r"""Gets the update_time of this ShowDetailsOfApiV2Response.
 
         API修改时间
 
@@ -974,7 +974,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDetailsOfApiV2Response.
+        r"""Sets the update_time of this ShowDetailsOfApiV2Response.
 
         API修改时间
 
@@ -985,7 +985,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowDetailsOfApiV2Response.
+        r"""Gets the group_name of this ShowDetailsOfApiV2Response.
 
         API所属分组的名称
 
@@ -996,7 +996,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowDetailsOfApiV2Response.
+        r"""Sets the group_name of this ShowDetailsOfApiV2Response.
 
         API所属分组的名称
 
@@ -1007,7 +1007,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def group_version(self):
-        """Gets the group_version of this ShowDetailsOfApiV2Response.
+        r"""Gets the group_version of this ShowDetailsOfApiV2Response.
 
         API所属分组的版本  默认V1，其他版本暂不支持
 
@@ -1018,7 +1018,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @group_version.setter
     def group_version(self, group_version):
-        """Sets the group_version of this ShowDetailsOfApiV2Response.
+        r"""Sets the group_version of this ShowDetailsOfApiV2Response.
 
         API所属分组的版本  默认V1，其他版本暂不支持
 
@@ -1029,7 +1029,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def run_env_id(self):
-        """Gets the run_env_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the run_env_id of this ShowDetailsOfApiV2Response.
 
         发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
@@ -1040,7 +1040,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @run_env_id.setter
     def run_env_id(self, run_env_id):
-        """Sets the run_env_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the run_env_id of this ShowDetailsOfApiV2Response.
 
         发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
@@ -1051,7 +1051,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def run_env_name(self):
-        """Gets the run_env_name of this ShowDetailsOfApiV2Response.
+        r"""Gets the run_env_name of this ShowDetailsOfApiV2Response.
 
         发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
@@ -1062,7 +1062,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @run_env_name.setter
     def run_env_name(self, run_env_name):
-        """Sets the run_env_name of this ShowDetailsOfApiV2Response.
+        r"""Sets the run_env_name of this ShowDetailsOfApiV2Response.
 
         发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
@@ -1073,7 +1073,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the publish_id of this ShowDetailsOfApiV2Response.
 
         发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
@@ -1084,7 +1084,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the publish_id of this ShowDetailsOfApiV2Response.
 
         发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
@@ -1095,7 +1095,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this ShowDetailsOfApiV2Response.
+        r"""Gets the publish_time of this ShowDetailsOfApiV2Response.
 
         发布时间  存在多个发布记录时，发布时间之间用|隔开
 
@@ -1106,7 +1106,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this ShowDetailsOfApiV2Response.
+        r"""Sets the publish_time of this ShowDetailsOfApiV2Response.
 
         发布时间  存在多个发布记录时，发布时间之间用|隔开
 
@@ -1117,7 +1117,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this ShowDetailsOfApiV2Response.
+        r"""Gets the roma_app_name of this ShowDetailsOfApiV2Response.
 
         API归属的集成应用名称  暂不支持
 
@@ -1128,7 +1128,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this ShowDetailsOfApiV2Response.
+        r"""Sets the roma_app_name of this ShowDetailsOfApiV2Response.
 
         API归属的集成应用名称  暂不支持
 
@@ -1139,7 +1139,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this ShowDetailsOfApiV2Response.
+        r"""Gets the ld_api_id of this ShowDetailsOfApiV2Response.
 
         当API的后端为自定义后端时，对应的自定义后端API编号  暂不支持
 
@@ -1150,7 +1150,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this ShowDetailsOfApiV2Response.
+        r"""Sets the ld_api_id of this ShowDetailsOfApiV2Response.
 
         当API的后端为自定义后端时，对应的自定义后端API编号  暂不支持
 
@@ -1161,7 +1161,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def backend_api(self):
-        """Gets the backend_api of this ShowDetailsOfApiV2Response.
+        r"""Gets the backend_api of this ShowDetailsOfApiV2Response.
 
         :return: The backend_api of this ShowDetailsOfApiV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.BackendApi`
@@ -1170,7 +1170,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @backend_api.setter
     def backend_api(self, backend_api):
-        """Sets the backend_api of this ShowDetailsOfApiV2Response.
+        r"""Sets the backend_api of this ShowDetailsOfApiV2Response.
 
         :param backend_api: The backend_api of this ShowDetailsOfApiV2Response.
         :type backend_api: :class:`huaweicloudsdkapig.v2.BackendApi`
@@ -1179,7 +1179,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def api_group_info(self):
-        """Gets the api_group_info of this ShowDetailsOfApiV2Response.
+        r"""Gets the api_group_info of this ShowDetailsOfApiV2Response.
 
         :return: The api_group_info of this ShowDetailsOfApiV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`
@@ -1188,7 +1188,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @api_group_info.setter
     def api_group_info(self, api_group_info):
-        """Sets the api_group_info of this ShowDetailsOfApiV2Response.
+        r"""Sets the api_group_info of this ShowDetailsOfApiV2Response.
 
         :param api_group_info: The api_group_info of this ShowDetailsOfApiV2Response.
         :type api_group_info: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`
@@ -1197,7 +1197,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def func_info(self):
-        """Gets the func_info of this ShowDetailsOfApiV2Response.
+        r"""Gets the func_info of this ShowDetailsOfApiV2Response.
 
         :return: The func_info of this ShowDetailsOfApiV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiFunc`
@@ -1206,7 +1206,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @func_info.setter
     def func_info(self, func_info):
-        """Sets the func_info of this ShowDetailsOfApiV2Response.
+        r"""Sets the func_info of this ShowDetailsOfApiV2Response.
 
         :param func_info: The func_info of this ShowDetailsOfApiV2Response.
         :type func_info: :class:`huaweicloudsdkapig.v2.ApiFunc`
@@ -1215,7 +1215,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def mock_info(self):
-        """Gets the mock_info of this ShowDetailsOfApiV2Response.
+        r"""Gets the mock_info of this ShowDetailsOfApiV2Response.
 
         :return: The mock_info of this ShowDetailsOfApiV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiMock`
@@ -1224,7 +1224,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @mock_info.setter
     def mock_info(self, mock_info):
-        """Sets the mock_info of this ShowDetailsOfApiV2Response.
+        r"""Sets the mock_info of this ShowDetailsOfApiV2Response.
 
         :param mock_info: The mock_info of this ShowDetailsOfApiV2Response.
         :type mock_info: :class:`huaweicloudsdkapig.v2.ApiMock`
@@ -1233,7 +1233,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def req_params(self):
-        """Gets the req_params of this ShowDetailsOfApiV2Response.
+        r"""Gets the req_params of this ShowDetailsOfApiV2Response.
 
         API的请求参数列表
 
@@ -1244,7 +1244,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @req_params.setter
     def req_params(self, req_params):
-        """Sets the req_params of this ShowDetailsOfApiV2Response.
+        r"""Sets the req_params of this ShowDetailsOfApiV2Response.
 
         API的请求参数列表
 
@@ -1255,7 +1255,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ShowDetailsOfApiV2Response.
+        r"""Gets the backend_params of this ShowDetailsOfApiV2Response.
 
         API的后端参数列表
 
@@ -1266,7 +1266,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ShowDetailsOfApiV2Response.
+        r"""Sets the backend_params of this ShowDetailsOfApiV2Response.
 
         API的后端参数列表
 
@@ -1277,7 +1277,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def policy_functions(self):
-        """Gets the policy_functions of this ShowDetailsOfApiV2Response.
+        r"""Gets the policy_functions of this ShowDetailsOfApiV2Response.
 
         函数工作流策略后端列表
 
@@ -1288,7 +1288,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @policy_functions.setter
     def policy_functions(self, policy_functions):
-        """Sets the policy_functions of this ShowDetailsOfApiV2Response.
+        r"""Sets the policy_functions of this ShowDetailsOfApiV2Response.
 
         函数工作流策略后端列表
 
@@ -1299,7 +1299,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def policy_mocks(self):
-        """Gets the policy_mocks of this ShowDetailsOfApiV2Response.
+        r"""Gets the policy_mocks of this ShowDetailsOfApiV2Response.
 
         mock策略后端列表
 
@@ -1310,7 +1310,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @policy_mocks.setter
     def policy_mocks(self, policy_mocks):
-        """Sets the policy_mocks of this ShowDetailsOfApiV2Response.
+        r"""Sets the policy_mocks of this ShowDetailsOfApiV2Response.
 
         mock策略后端列表
 
@@ -1321,7 +1321,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @property
     def policy_https(self):
-        """Gets the policy_https of this ShowDetailsOfApiV2Response.
+        r"""Gets the policy_https of this ShowDetailsOfApiV2Response.
 
         web策略后端列表
 
@@ -1332,7 +1332,7 @@ class ShowDetailsOfApiV2Response(SdkResponse):
 
     @policy_https.setter
     def policy_https(self, policy_https):
-        """Sets the policy_https of this ShowDetailsOfApiV2Response.
+        r"""Sets the policy_https of this ShowDetailsOfApiV2Response.
 
         web策略后端列表
 

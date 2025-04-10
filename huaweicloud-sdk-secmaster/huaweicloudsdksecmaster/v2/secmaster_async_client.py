@@ -34,7 +34,7 @@ class SecMasterAsyncClient(Client):
         return client_builder
 
     def batch_search_metric_hits_async(self, request):
-        """批量查询指标结果
+        r"""批量查询指标结果
 
         批量查询指标结果
         
@@ -107,7 +107,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def change_alert_async(self, request):
-        """更新告警
+        r"""更新告警
 
         编辑告警，根据实际修改的属性更新，未修改的列不更新
         
@@ -178,7 +178,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def change_incident_async(self, request):
-        """更新事件
+        r"""更新事件
 
         编辑事件，根据实际修改的属性更新，未修改的列不更新
         
@@ -249,7 +249,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def change_playbook_instance_async(self, request):
-        """操作剧本实例
+        r"""操作剧本实例
 
         操作剧本实例
         
@@ -320,7 +320,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def copy_playbook_version_async(self, request):
-        """克隆剧本及版本
+        r"""克隆剧本及版本
 
         克隆剧本及版本
         
@@ -391,7 +391,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_alert_async(self, request):
-        """创建告警
+        r"""创建告警
 
         创建告警
         
@@ -460,7 +460,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_alert_rule_async(self, request):
-        """创建告警规则
+        r"""创建告警规则
 
         Create alert rule
         
@@ -529,7 +529,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_alert_rule_simulation_async(self, request):
-        """模拟告警规则
+        r"""模拟告警规则
 
         Simulate alert rule
         
@@ -598,7 +598,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_batch_order_alerts_async(self, request):
-        """告警转事件
+        r"""告警转事件
 
         告警转事件
         
@@ -667,7 +667,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_dataobject_relations_async(self, request):
-        """关联Dataobject
+        r"""关联Dataobject
 
         关联Dataobject
         
@@ -742,7 +742,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_dataspace_async(self, request):
-        """创建数据空间
+        r"""创建数据空间
 
         创建数据空间
         
@@ -811,7 +811,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_incident_async(self, request):
-        """创建事件
+        r"""创建事件
 
         创建事件
         
@@ -880,7 +880,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_indicator_async(self, request):
-        """创建威胁情报
+        r"""创建威胁情报
 
         创建威胁情报
         
@@ -949,7 +949,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_pipe_async(self, request):
-        """创建数据管道
+        r"""创建数据管道
 
         创建数据管道
         
@@ -1018,7 +1018,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_playbook_async(self, request):
-        """创建剧本
+        r"""创建剧本
 
         创建剧本
         
@@ -1087,7 +1087,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_playbook_action_async(self, request):
-        """创建剧本动作
+        r"""创建剧本动作
 
         创建剧本动作
         
@@ -1158,7 +1158,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_playbook_approve_async(self, request):
-        """审核剧本
+        r"""审核剧本
 
         审核剧本
         
@@ -1229,7 +1229,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_playbook_rule_async(self, request):
-        """创建剧本规则
+        r"""创建剧本规则
 
         创建剧本规则
         
@@ -1300,7 +1300,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_playbook_version_async(self, request):
-        """创建剧本版本
+        r"""创建剧本版本
 
         创建剧本版本
         
@@ -1371,7 +1371,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_post_paid_order_async(self, request):
-        """安全云脑按需订购
+        r"""安全云脑按需订购
 
         开通安全云脑按需服务
         
@@ -1440,7 +1440,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_workspace_async(self, request):
-        """新建工作空间
+        r"""新建工作空间
 
         在使用安全云脑的基线检查、告警管理、安全分析、安全编排等功能前，需要创建工作空间，它可以将资源划分为各个不同的工作场景，避免资源冗余查找不便，影响日常使用。
         
@@ -1507,7 +1507,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_alert_async(self, request):
-        """删除告警
+        r"""删除告警
 
         删除告警
         
@@ -1576,7 +1576,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_alert_rule_async(self, request):
-        """删除告警规则
+        r"""删除告警规则
 
         Delete alert rule
         
@@ -1645,7 +1645,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_dataobject_relations_async(self, request):
-        """取消关联Dataobject
+        r"""取消关联Dataobject
 
         取消关联Dataobject
         
@@ -1720,7 +1720,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_incident_async(self, request):
-        """删除事件
+        r"""删除事件
 
         删除事件
         
@@ -1789,7 +1789,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_indicator_async(self, request):
-        """删除威胁情报
+        r"""删除威胁情报
 
         删除威胁情报
         
@@ -1858,7 +1858,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_playbook_async(self, request):
-        """删除剧本
+        r"""删除剧本
 
         删除剧本
         
@@ -1927,7 +1927,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_playbook_action_async(self, request):
-        """删除剧本动作
+        r"""删除剧本动作
 
         删除剧本动作
         
@@ -1998,7 +1998,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_playbook_rule_async(self, request):
-        """删除剧本规则
+        r"""删除剧本规则
 
         删除剧本规则
         
@@ -2069,7 +2069,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def delete_playbook_version_async(self, request):
-        """删除剧本版本
+        r"""删除剧本版本
 
         删除剧本版本
         
@@ -2138,7 +2138,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def disable_alert_rule_async(self, request):
-        """停用告警规则
+        r"""停用告警规则
 
         Disable alert rule
         
@@ -2207,7 +2207,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def enable_alert_rule_async(self, request):
-        """启用告警规则
+        r"""启用告警规则
 
         Enable alert rule
         
@@ -2276,7 +2276,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_alert_rule_metrics_async(self, request):
-        """告警规则总览
+        r"""告警规则总览
 
         List alert rule metrics
         
@@ -2343,7 +2343,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_alert_rule_templates_async(self, request):
-        """列出告警规则模板
+        r"""列出告警规则模板
 
         List alert rule templates
         
@@ -2421,7 +2421,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_alert_rules_async(self, request):
-        """列出告警规则
+        r"""列出告警规则
 
         List alert rules
         
@@ -2508,7 +2508,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_alerts_async(self, request):
-        """搜索告警列表
+        r"""搜索告警列表
 
         搜索告警列表
         
@@ -2577,7 +2577,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_dataclass_async(self, request):
-        """查询数据类列表
+        r"""查询数据类列表
 
         查询数据类列表
         
@@ -2656,7 +2656,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_dataclass_fields_async(self, request):
-        """查询字段列表
+        r"""查询字段列表
 
         查询字段列表
         
@@ -2737,7 +2737,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_dataobject_relations_async(self, request):
-        """查询关联Dataobject列表
+        r"""查询关联Dataobject列表
 
         查询关联Dataobject列表
         
@@ -2812,7 +2812,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_incidents_async(self, request):
-        """搜索事件列表
+        r"""搜索事件列表
 
         搜索事件列表
         
@@ -2881,7 +2881,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_indicators_async(self, request):
-        """查询威胁情报列表
+        r"""查询威胁情报列表
 
         查询威胁情报列表
         
@@ -2950,7 +2950,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_playbook_actions_async(self, request):
-        """查询剧本动作
+        r"""查询剧本动作
 
         查询剧本动作列表
         
@@ -3023,7 +3023,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_playbook_approves_async(self, request):
-        """查询剧本审核结果
+        r"""查询剧本审核结果
 
         查询剧本审核结果
         
@@ -3094,7 +3094,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_playbook_audit_logs_async(self, request):
-        """查询剧本实例审计日志
+        r"""查询剧本实例审计日志
 
         查询剧本实例审计日志
         
@@ -3171,7 +3171,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_playbook_instances_async(self, request):
-        """查询剧本实例列表
+        r"""查询剧本实例列表
 
         查询剧本实例列表
         
@@ -3258,7 +3258,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_playbook_versions_async(self, request):
-        """查询剧本版本列表
+        r"""查询剧本版本列表
 
         查询剧本版本列表
         
@@ -3337,7 +3337,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_playbooks_async(self, request):
-        """查询剧本列表
+        r"""查询剧本列表
 
         查询剧本列表
         
@@ -3418,7 +3418,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_workflows_async(self, request):
-        """查询流程列表
+        r"""查询流程列表
 
         查询流程列表
         
@@ -3507,7 +3507,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def list_workspaces_async(self, request):
-        """工作空间列表查询
+        r"""工作空间列表查询
 
         工作空间列表查询:可通过工作空间名称、工作空间描述、创建时间等条件对租户的工作空间进行筛选。
         
@@ -3598,7 +3598,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def search_baseline_async(self, request):
-        """搜索基线检查结果列表
+        r"""搜索基线检查结果列表
 
         搜索基线检查结果列表
         
@@ -3669,7 +3669,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_alert_async(self, request):
-        """获取告警详情
+        r"""获取告警详情
 
         获取告警详情
         
@@ -3738,7 +3738,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_alert_rule_async(self, request):
-        """查看告警规则
+        r"""查看告警规则
 
         查看告警规则 Get alert rule
         
@@ -3807,7 +3807,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_alert_rule_template_async(self, request):
-        """查看告警规则模板
+        r"""查看告警规则模板
 
         List alert rule templates
         
@@ -3876,7 +3876,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_incident_async(self, request):
-        """获取事件详情
+        r"""获取事件详情
 
         获取事件详情
         
@@ -3945,7 +3945,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_indicator_detail_async(self, request):
-        """查询威胁情报详情
+        r"""查询威胁情报详情
 
         查询威胁情报详情
         
@@ -4014,7 +4014,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_async(self, request):
-        """查询剧本详情
+        r"""查询剧本详情
 
         查询剧本详情
         
@@ -4083,7 +4083,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_instance_async(self, request):
-        """查询剧本实例详情
+        r"""查询剧本实例详情
 
         Show playbook instance
         
@@ -4152,7 +4152,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_monitors_async(self, request):
-        """剧本运行监控
+        r"""剧本运行监控
 
         剧本运行监控
         
@@ -4227,7 +4227,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_rule_async(self, request):
-        """查询剧本规则详情
+        r"""查询剧本规则详情
 
         查询剧本规则详情
         
@@ -4298,7 +4298,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_statistics_async(self, request):
-        """剧本数据统计
+        r"""剧本数据统计
 
         剧本统计数据
         
@@ -4365,7 +4365,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_topology_async(self, request):
-        """查询剧本拓扑关系
+        r"""查询剧本拓扑关系
 
         查询剧本拓扑关系
         
@@ -4434,7 +4434,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def show_playbook_version_async(self, request):
-        """查询剧本版本详情
+        r"""查询剧本版本详情
 
         Show playbook version version
         
@@ -4503,7 +4503,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_alert_rule_async(self, request):
-        """更新告警规则
+        r"""更新告警规则
 
         Update alert rule
         
@@ -4574,7 +4574,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_indicator_async(self, request):
-        """更新威胁情报
+        r"""更新威胁情报
 
         更新威胁情报
         
@@ -4645,7 +4645,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_playbook_async(self, request):
-        """修改剧本
+        r"""修改剧本
 
         修改剧本
         
@@ -4716,7 +4716,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_playbook_action_async(self, request):
-        """更新剧本动作
+        r"""更新剧本动作
 
         更新剧本动作
         
@@ -4789,7 +4789,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_playbook_rule_async(self, request):
-        """更新剧本规则
+        r"""更新剧本规则
 
         更新剧本规则
         
@@ -4862,7 +4862,7 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_playbook_version_async(self, request):
-        """更新剧本版本
+        r"""更新剧本版本
 
         更新剧本版本
         

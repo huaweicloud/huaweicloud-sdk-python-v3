@@ -30,7 +30,7 @@ class ListFirewallResponse(SdkResponse):
     }
 
     def __init__(self, firewalls=None, page_info=None, request_id=None):
-        """ListFirewallResponse
+        r"""ListFirewallResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFirewallResponse(SdkResponse):
 
     @property
     def firewalls(self):
-        """Gets the firewalls of this ListFirewallResponse.
+        r"""Gets the firewalls of this ListFirewallResponse.
 
         ACL防火墙响应体列表
 
@@ -69,7 +69,7 @@ class ListFirewallResponse(SdkResponse):
 
     @firewalls.setter
     def firewalls(self, firewalls):
-        """Sets the firewalls of this ListFirewallResponse.
+        r"""Sets the firewalls of this ListFirewallResponse.
 
         ACL防火墙响应体列表
 
@@ -80,7 +80,7 @@ class ListFirewallResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFirewallResponse.
+        r"""Gets the page_info of this ListFirewallResponse.
 
         :return: The page_info of this ListFirewallResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListFirewallResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFirewallResponse.
+        r"""Sets the page_info of this ListFirewallResponse.
 
         :param page_info: The page_info of this ListFirewallResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListFirewallResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListFirewallResponse.
+        r"""Gets the request_id of this ListFirewallResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ListFirewallResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListFirewallResponse.
+        r"""Sets the request_id of this ListFirewallResponse.
 
         请求ID
 

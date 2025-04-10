@@ -29,7 +29,7 @@ class NeutronCreateRouterOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, external_gateway_info=None):
-        """NeutronCreateRouterOption
+        r"""NeutronCreateRouterOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NeutronCreateRouterOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreateRouterOption.
+        r"""Gets the name of this NeutronCreateRouterOption.
 
         功能说明：路由器的名称。 取值范围：0-64个字符，仅支持数字、字母、中文、_(下划线)、-（中划线）、.（点）。 约束：如果name非空，则name不能重复
 
@@ -68,7 +68,7 @@ class NeutronCreateRouterOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreateRouterOption.
+        r"""Sets the name of this NeutronCreateRouterOption.
 
         功能说明：路由器的名称。 取值范围：0-64个字符，仅支持数字、字母、中文、_(下划线)、-（中划线）、.（点）。 约束：如果name非空，则name不能重复
 
@@ -79,7 +79,7 @@ class NeutronCreateRouterOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronCreateRouterOption.
+        r"""Gets the admin_state_up of this NeutronCreateRouterOption.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -90,7 +90,7 @@ class NeutronCreateRouterOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronCreateRouterOption.
+        r"""Sets the admin_state_up of this NeutronCreateRouterOption.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -101,7 +101,7 @@ class NeutronCreateRouterOption:
 
     @property
     def external_gateway_info(self):
-        """Gets the external_gateway_info of this NeutronCreateRouterOption.
+        r"""Gets the external_gateway_info of this NeutronCreateRouterOption.
 
         :return: The external_gateway_info of this NeutronCreateRouterOption.
         :rtype: :class:`huaweicloudsdkvpc.v2.ExternalGatewayInfoOption`
@@ -110,7 +110,7 @@ class NeutronCreateRouterOption:
 
     @external_gateway_info.setter
     def external_gateway_info(self, external_gateway_info):
-        """Sets the external_gateway_info of this NeutronCreateRouterOption.
+        r"""Sets the external_gateway_info of this NeutronCreateRouterOption.
 
         :param external_gateway_info: The external_gateway_info of this NeutronCreateRouterOption.
         :type external_gateway_info: :class:`huaweicloudsdkvpc.v2.ExternalGatewayInfoOption`

@@ -31,7 +31,7 @@ class StatUsageInfo:
     }
 
     def __init__(self, stat_time=None, guaranteed_band_width=None, usage=None, measure_id=None):
-        """StatUsageInfo
+        r"""StatUsageInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StatUsageInfo:
 
     @property
     def stat_time(self):
-        """Gets the stat_time of this StatUsageInfo.
+        r"""Gets the stat_time of this StatUsageInfo.
 
         统计时间点，UTC时间，格式为YYYY-MM-DDTHH:MM:SSZ。
 
@@ -75,7 +75,7 @@ class StatUsageInfo:
 
     @stat_time.setter
     def stat_time(self, stat_time):
-        """Sets the stat_time of this StatUsageInfo.
+        r"""Sets the stat_time of this StatUsageInfo.
 
         统计时间点，UTC时间，格式为YYYY-MM-DDTHH:MM:SSZ。
 
@@ -86,7 +86,7 @@ class StatUsageInfo:
 
     @property
     def guaranteed_band_width(self):
-        """Gets the guaranteed_band_width of this StatUsageInfo.
+        r"""Gets the guaranteed_band_width of this StatUsageInfo.
 
         保底带宽。  说明： 该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -97,7 +97,7 @@ class StatUsageInfo:
 
     @guaranteed_band_width.setter
     def guaranteed_band_width(self, guaranteed_band_width):
-        """Sets the guaranteed_band_width of this StatUsageInfo.
+        r"""Sets the guaranteed_band_width of this StatUsageInfo.
 
         保底带宽。  说明： 该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -108,7 +108,7 @@ class StatUsageInfo:
 
     @property
     def usage(self):
-        """Gets the usage of this StatUsageInfo.
+        r"""Gets the usage of this StatUsageInfo.
 
         用量。
 
@@ -119,7 +119,7 @@ class StatUsageInfo:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this StatUsageInfo.
+        r"""Sets the usage of this StatUsageInfo.
 
         用量。
 
@@ -130,7 +130,7 @@ class StatUsageInfo:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this StatUsageInfo.
+        r"""Gets the measure_id of this StatUsageInfo.
 
         单位，您可以调用查询度量单位列表接口获取。带宽和用量使用相同的计量单位。
 
@@ -141,7 +141,7 @@ class StatUsageInfo:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this StatUsageInfo.
+        r"""Sets the measure_id of this StatUsageInfo.
 
         单位，您可以调用查询度量单位列表接口获取。带宽和用量使用相同的计量单位。
 

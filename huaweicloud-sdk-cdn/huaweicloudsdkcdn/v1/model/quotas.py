@@ -31,7 +31,7 @@ class Quotas:
     }
 
     def __init__(self, quota_limit=None, type=None, used=None, user_domain_id=None):
-        """Quotas
+        r"""Quotas
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Quotas:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this Quotas.
+        r"""Gets the quota_limit of this Quotas.
 
         配额上限。
 
@@ -75,7 +75,7 @@ class Quotas:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this Quotas.
+        r"""Sets the quota_limit of this Quotas.
 
         配额上限。
 
@@ -86,7 +86,7 @@ class Quotas:
 
     @property
     def type(self):
-        """Gets the type of this Quotas.
+        r"""Gets the type of this Quotas.
 
         配额类型。
 
@@ -97,7 +97,7 @@ class Quotas:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Quotas.
+        r"""Sets the type of this Quotas.
 
         配额类型。
 
@@ -108,7 +108,7 @@ class Quotas:
 
     @property
     def used(self):
-        """Gets the used of this Quotas.
+        r"""Gets the used of this Quotas.
 
         已使用配额数。
 
@@ -119,7 +119,7 @@ class Quotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Quotas.
+        r"""Sets the used of this Quotas.
 
         已使用配额数。
 
@@ -130,7 +130,7 @@ class Quotas:
 
     @property
     def user_domain_id(self):
-        """Gets the user_domain_id of this Quotas.
+        r"""Gets the user_domain_id of this Quotas.
 
         域名所属用户的domain_id。
 
@@ -141,7 +141,7 @@ class Quotas:
 
     @user_domain_id.setter
     def user_domain_id(self, user_domain_id):
-        """Sets the user_domain_id of this Quotas.
+        r"""Sets the user_domain_id of this Quotas.
 
         域名所属用户的domain_id。
 

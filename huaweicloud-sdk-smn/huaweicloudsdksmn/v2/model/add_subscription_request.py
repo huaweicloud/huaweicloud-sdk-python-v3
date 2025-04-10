@@ -27,7 +27,7 @@ class AddSubscriptionRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """AddSubscriptionRequest
+        r"""AddSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddSubscriptionRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this AddSubscriptionRequest.
+        r"""Gets the topic_urn of this AddSubscriptionRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class AddSubscriptionRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this AddSubscriptionRequest.
+        r"""Sets the topic_urn of this AddSubscriptionRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class AddSubscriptionRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSubscriptionRequest.
+        r"""Gets the body of this AddSubscriptionRequest.
 
         :return: The body of this AddSubscriptionRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequestBody`
@@ -80,7 +80,7 @@ class AddSubscriptionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSubscriptionRequest.
+        r"""Sets the body of this AddSubscriptionRequest.
 
         :param body: The body of this AddSubscriptionRequest.
         :type body: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequestBody`

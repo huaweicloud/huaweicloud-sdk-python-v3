@@ -23,7 +23,7 @@ class NativeUUID:
     }
 
     def __init__(self):
-        """NativeUUID
+        r"""NativeUUID
 
         The model defined in huaweicloud sdk
 

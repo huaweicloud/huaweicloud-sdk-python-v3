@@ -29,7 +29,7 @@ class ShowFileRequest:
     }
 
     def __init__(self, repo_id=None, file_path=None, ref=None):
-        """ShowFileRequest
+        r"""ShowFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowFileRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ShowFileRequest.
+        r"""Gets the repo_id of this ShowFileRequest.
 
         仓库短id
 
@@ -65,7 +65,7 @@ class ShowFileRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ShowFileRequest.
+        r"""Sets the repo_id of this ShowFileRequest.
 
         仓库短id
 
@@ -76,7 +76,7 @@ class ShowFileRequest:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ShowFileRequest.
+        r"""Gets the file_path of this ShowFileRequest.
 
         Url编码的新文件的完整路径。
 
@@ -87,7 +87,7 @@ class ShowFileRequest:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ShowFileRequest.
+        r"""Sets the file_path of this ShowFileRequest.
 
         Url编码的新文件的完整路径。
 
@@ -98,7 +98,7 @@ class ShowFileRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this ShowFileRequest.
+        r"""Gets the ref of this ShowFileRequest.
 
         commit id，仓库的branch名或tag名
 
@@ -109,7 +109,7 @@ class ShowFileRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ShowFileRequest.
+        r"""Sets the ref of this ShowFileRequest.
 
         commit id，仓库的branch名或tag名
 

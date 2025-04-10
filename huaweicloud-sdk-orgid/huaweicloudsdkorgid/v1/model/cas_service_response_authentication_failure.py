@@ -27,7 +27,7 @@ class CasServiceResponseAuthenticationFailure:
     }
 
     def __init__(self, code=None, description=None):
-        """CasServiceResponseAuthenticationFailure
+        r"""CasServiceResponseAuthenticationFailure
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CasServiceResponseAuthenticationFailure:
 
     @property
     def code(self):
-        """Gets the code of this CasServiceResponseAuthenticationFailure.
+        r"""Gets the code of this CasServiceResponseAuthenticationFailure.
 
         响应码
 
@@ -61,7 +61,7 @@ class CasServiceResponseAuthenticationFailure:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CasServiceResponseAuthenticationFailure.
+        r"""Sets the code of this CasServiceResponseAuthenticationFailure.
 
         响应码
 
@@ -72,7 +72,7 @@ class CasServiceResponseAuthenticationFailure:
 
     @property
     def description(self):
-        """Gets the description of this CasServiceResponseAuthenticationFailure.
+        r"""Gets the description of this CasServiceResponseAuthenticationFailure.
 
         响应描述
 
@@ -83,7 +83,7 @@ class CasServiceResponseAuthenticationFailure:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CasServiceResponseAuthenticationFailure.
+        r"""Sets the description of this CasServiceResponseAuthenticationFailure.
 
         响应描述
 

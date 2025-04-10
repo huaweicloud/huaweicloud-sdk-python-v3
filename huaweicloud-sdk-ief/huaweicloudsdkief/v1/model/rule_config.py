@@ -39,7 +39,7 @@ class RuleConfig:
     }
 
     def __init__(self, description=None, ief_instance_id=None, in_using=None, name=None, source=None, source_resource=None, target=None, target_resource=None):
-        """RuleConfig
+        r"""RuleConfig
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class RuleConfig:
 
     @property
     def description(self):
-        """Gets the description of this RuleConfig.
+        r"""Gets the description of this RuleConfig.
 
         规则描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -98,7 +98,7 @@ class RuleConfig:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RuleConfig.
+        r"""Sets the description of this RuleConfig.
 
         规则描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -109,7 +109,7 @@ class RuleConfig:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this RuleConfig.
+        r"""Gets the ief_instance_id of this RuleConfig.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -120,7 +120,7 @@ class RuleConfig:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this RuleConfig.
+        r"""Sets the ief_instance_id of this RuleConfig.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -131,7 +131,7 @@ class RuleConfig:
 
     @property
     def in_using(self):
-        """Gets the in_using of this RuleConfig.
+        r"""Gets the in_using of this RuleConfig.
 
         是否启用规则，默认为true（启用）
 
@@ -142,7 +142,7 @@ class RuleConfig:
 
     @in_using.setter
     def in_using(self, in_using):
-        """Sets the in_using of this RuleConfig.
+        r"""Sets the in_using of this RuleConfig.
 
         是否启用规则，默认为true（启用）
 
@@ -153,7 +153,7 @@ class RuleConfig:
 
     @property
     def name(self):
-        """Gets the name of this RuleConfig.
+        r"""Gets the name of this RuleConfig.
 
         规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
 
@@ -164,7 +164,7 @@ class RuleConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleConfig.
+        r"""Sets the name of this RuleConfig.
 
         规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
 
@@ -175,7 +175,7 @@ class RuleConfig:
 
     @property
     def source(self):
-        """Gets the source of this RuleConfig.
+        r"""Gets the source of this RuleConfig.
 
         源端点ID
 
@@ -186,7 +186,7 @@ class RuleConfig:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this RuleConfig.
+        r"""Sets the source of this RuleConfig.
 
         源端点ID
 
@@ -197,7 +197,7 @@ class RuleConfig:
 
     @property
     def source_resource(self):
-        """Gets the source_resource of this RuleConfig.
+        r"""Gets the source_resource of this RuleConfig.
 
         源端点资源。示例： - rest: {\"path\":\"\\<standard uri format\\>\"} - eventbus: {\"topic\":\"\\<project id\\>/nodes/\\<node id\\>/user/\\<租户自定义且满足eventbus topic要求的字符串\\>\",\"node_id\":\"\\<node id\\>\"} 
 
@@ -208,7 +208,7 @@ class RuleConfig:
 
     @source_resource.setter
     def source_resource(self, source_resource):
-        """Sets the source_resource of this RuleConfig.
+        r"""Sets the source_resource of this RuleConfig.
 
         源端点资源。示例： - rest: {\"path\":\"\\<standard uri format\\>\"} - eventbus: {\"topic\":\"\\<project id\\>/nodes/\\<node id\\>/user/\\<租户自定义且满足eventbus topic要求的字符串\\>\",\"node_id\":\"\\<node id\\>\"} 
 
@@ -219,7 +219,7 @@ class RuleConfig:
 
     @property
     def target(self):
-        """Gets the target of this RuleConfig.
+        r"""Gets the target of this RuleConfig.
 
         目的端点ID
 
@@ -230,7 +230,7 @@ class RuleConfig:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this RuleConfig.
+        r"""Sets the target of this RuleConfig.
 
         目的端点ID
 
@@ -241,7 +241,7 @@ class RuleConfig:
 
     @property
     def target_resource(self):
-        """Gets the target_resource of this RuleConfig.
+        r"""Gets the target_resource of this RuleConfig.
 
         目的端点资源。示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
@@ -252,7 +252,7 @@ class RuleConfig:
 
     @target_resource.setter
     def target_resource(self, target_resource):
-        """Sets the target_resource of this RuleConfig.
+        r"""Sets the target_resource of this RuleConfig.
 
         目的端点资源。示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 

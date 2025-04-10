@@ -27,7 +27,7 @@ class AlertRemediation:
     }
 
     def __init__(self, recommendation=None, url=None):
-        """AlertRemediation
+        r"""AlertRemediation
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlertRemediation:
 
     @property
     def recommendation(self):
-        """Gets the recommendation of this AlertRemediation.
+        r"""Gets the recommendation of this AlertRemediation.
 
         推荐处理方法
 
@@ -61,7 +61,7 @@ class AlertRemediation:
 
     @recommendation.setter
     def recommendation(self, recommendation):
-        """Sets the recommendation of this AlertRemediation.
+        r"""Sets the recommendation of this AlertRemediation.
 
         推荐处理方法
 
@@ -72,7 +72,7 @@ class AlertRemediation:
 
     @property
     def url(self):
-        """Gets the url of this AlertRemediation.
+        r"""Gets the url of this AlertRemediation.
 
         链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证
 
@@ -83,7 +83,7 @@ class AlertRemediation:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AlertRemediation.
+        r"""Sets the url of this AlertRemediation.
 
         链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证
 

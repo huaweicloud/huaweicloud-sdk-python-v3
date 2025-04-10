@@ -25,7 +25,7 @@ class DeleteVideoJobRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteVideoJobRequest
+        r"""DeleteVideoJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVideoJobRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteVideoJobRequest.
+        r"""Gets the task_id of this DeleteVideoJobRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class DeleteVideoJobRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteVideoJobRequest.
+        r"""Sets the task_id of this DeleteVideoJobRequest.
 
         任务ID
 

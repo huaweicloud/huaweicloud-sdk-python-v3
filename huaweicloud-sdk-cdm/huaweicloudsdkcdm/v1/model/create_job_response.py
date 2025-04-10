@@ -28,7 +28,7 @@ class CreateJobResponse(SdkResponse):
     }
 
     def __init__(self, name=None, validation_result=None):
-        """CreateJobResponse
+        r"""CreateJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateJobResponse.
+        r"""Gets the name of this CreateJobResponse.
 
         作业名称。
 
@@ -62,7 +62,7 @@ class CreateJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateJobResponse.
+        r"""Sets the name of this CreateJobResponse.
 
         作业名称。
 
@@ -73,7 +73,7 @@ class CreateJobResponse(SdkResponse):
 
     @property
     def validation_result(self):
-        """Gets the validation_result of this CreateJobResponse.
+        r"""Gets the validation_result of this CreateJobResponse.
 
         校验结果： - 如果修改失败，返回失败原因。 - 如果修改成功，返回空列表。
 
@@ -84,7 +84,7 @@ class CreateJobResponse(SdkResponse):
 
     @validation_result.setter
     def validation_result(self, validation_result):
-        """Sets the validation_result of this CreateJobResponse.
+        r"""Sets the validation_result of this CreateJobResponse.
 
         校验结果： - 如果修改失败，返回失败原因。 - 如果修改成功，返回空列表。
 

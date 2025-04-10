@@ -29,7 +29,7 @@ class ComponentInfoCustomMetric:
     }
 
     def __init__(self, path=None, port=None, dimensions=None):
-        """ComponentInfoCustomMetric
+        r"""ComponentInfoCustomMetric
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ComponentInfoCustomMetric:
 
     @property
     def path(self):
-        """Gets the path of this ComponentInfoCustomMetric.
+        r"""Gets the path of this ComponentInfoCustomMetric.
 
         采集路径，例如/metrics
 
@@ -68,7 +68,7 @@ class ComponentInfoCustomMetric:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ComponentInfoCustomMetric.
+        r"""Sets the path of this ComponentInfoCustomMetric.
 
         采集路径，例如/metrics
 
@@ -79,7 +79,7 @@ class ComponentInfoCustomMetric:
 
     @property
     def port(self):
-        """Gets the port of this ComponentInfoCustomMetric.
+        r"""Gets the port of this ComponentInfoCustomMetric.
 
         采集端口，例如9090
 
@@ -90,7 +90,7 @@ class ComponentInfoCustomMetric:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ComponentInfoCustomMetric.
+        r"""Sets the port of this ComponentInfoCustomMetric.
 
         采集端口，例如9090
 
@@ -101,7 +101,7 @@ class ComponentInfoCustomMetric:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ComponentInfoCustomMetric.
+        r"""Gets the dimensions of this ComponentInfoCustomMetric.
 
         监控维度，例如\"cpu_usage,mem_usage\"
 
@@ -112,7 +112,7 @@ class ComponentInfoCustomMetric:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ComponentInfoCustomMetric.
+        r"""Sets the dimensions of this ComponentInfoCustomMetric.
 
         监控维度，例如\"cpu_usage,mem_usage\"
 

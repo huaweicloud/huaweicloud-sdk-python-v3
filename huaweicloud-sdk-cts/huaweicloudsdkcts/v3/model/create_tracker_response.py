@@ -58,7 +58,7 @@ class CreateTrackerResponse(SdkResponse):
     }
 
     def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, is_organization_tracker=None, management_event_selector=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, agency_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
-        """CreateTrackerResponse
+        r"""CreateTrackerResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTrackerResponse.
+        r"""Gets the id of this CreateTrackerResponse.
 
         追踪器唯一标识。
 
@@ -167,7 +167,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTrackerResponse.
+        r"""Sets the id of this CreateTrackerResponse.
 
         追踪器唯一标识。
 
@@ -178,7 +178,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateTrackerResponse.
+        r"""Gets the create_time of this CreateTrackerResponse.
 
         追踪器创建时间戳。
 
@@ -189,7 +189,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateTrackerResponse.
+        r"""Sets the create_time of this CreateTrackerResponse.
 
         追踪器创建时间戳。
 
@@ -200,7 +200,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def kms_id(self):
-        """Gets the kms_id of this CreateTrackerResponse.
+        r"""Gets the kms_id of this CreateTrackerResponse.
 
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"和\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -211,7 +211,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @kms_id.setter
     def kms_id(self, kms_id):
-        """Sets the kms_id of this CreateTrackerResponse.
+        r"""Sets the kms_id of this CreateTrackerResponse.
 
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"和\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -222,7 +222,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def is_support_validate(self):
-        """Gets the is_support_validate of this CreateTrackerResponse.
+        r"""Gets the is_support_validate of this CreateTrackerResponse.
 
         是否打开事件文件校验。当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
@@ -233,7 +233,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @is_support_validate.setter
     def is_support_validate(self, is_support_validate):
-        """Sets the is_support_validate of this CreateTrackerResponse.
+        r"""Sets the is_support_validate of this CreateTrackerResponse.
 
         是否打开事件文件校验。当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
@@ -244,7 +244,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def is_organization_tracker(self):
-        """Gets the is_organization_tracker of this CreateTrackerResponse.
+        r"""Gets the is_organization_tracker of this CreateTrackerResponse.
 
         是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
 
@@ -255,7 +255,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @is_organization_tracker.setter
     def is_organization_tracker(self, is_organization_tracker):
-        """Sets the is_organization_tracker of this CreateTrackerResponse.
+        r"""Sets the is_organization_tracker of this CreateTrackerResponse.
 
         是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
 
@@ -266,7 +266,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def management_event_selector(self):
-        """Gets the management_event_selector of this CreateTrackerResponse.
+        r"""Gets the management_event_selector of this CreateTrackerResponse.
 
         :return: The management_event_selector of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
@@ -275,7 +275,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @management_event_selector.setter
     def management_event_selector(self, management_event_selector):
-        """Sets the management_event_selector of this CreateTrackerResponse.
+        r"""Sets the management_event_selector of this CreateTrackerResponse.
 
         :param management_event_selector: The management_event_selector of this CreateTrackerResponse.
         :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
@@ -284,7 +284,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def lts(self):
-        """Gets the lts of this CreateTrackerResponse.
+        r"""Gets the lts of this CreateTrackerResponse.
 
         :return: The lts of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.Lts`
@@ -293,7 +293,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @lts.setter
     def lts(self, lts):
-        """Sets the lts of this CreateTrackerResponse.
+        r"""Sets the lts of this CreateTrackerResponse.
 
         :param lts: The lts of this CreateTrackerResponse.
         :type lts: :class:`huaweicloudsdkcts.v3.Lts`
@@ -302,7 +302,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def tracker_type(self):
-        """Gets the tracker_type of this CreateTrackerResponse.
+        r"""Gets the tracker_type of this CreateTrackerResponse.
 
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
 
@@ -313,7 +313,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @tracker_type.setter
     def tracker_type(self, tracker_type):
-        """Sets the tracker_type of this CreateTrackerResponse.
+        r"""Sets the tracker_type of this CreateTrackerResponse.
 
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器（system）和数据类追踪器（data）。
 
@@ -324,7 +324,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateTrackerResponse.
+        r"""Gets the domain_id of this CreateTrackerResponse.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -335,7 +335,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateTrackerResponse.
+        r"""Sets the domain_id of this CreateTrackerResponse.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -346,7 +346,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTrackerResponse.
+        r"""Gets the project_id of this CreateTrackerResponse.
 
         项目ID。
 
@@ -357,7 +357,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTrackerResponse.
+        r"""Sets the project_id of this CreateTrackerResponse.
 
         项目ID。
 
@@ -368,7 +368,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this CreateTrackerResponse.
+        r"""Gets the tracker_name of this CreateTrackerResponse.
 
         标识追踪器名称，当前版本默认为“system”。
 
@@ -379,7 +379,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this CreateTrackerResponse.
+        r"""Sets the tracker_name of this CreateTrackerResponse.
 
         标识追踪器名称，当前版本默认为“system”。
 
@@ -390,7 +390,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CreateTrackerResponse.
+        r"""Gets the agency_name of this CreateTrackerResponse.
 
         云服务委托名称。
 
@@ -401,7 +401,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CreateTrackerResponse.
+        r"""Sets the agency_name of this CreateTrackerResponse.
 
         云服务委托名称。
 
@@ -412,7 +412,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateTrackerResponse.
+        r"""Gets the status of this CreateTrackerResponse.
 
         标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
 
@@ -423,7 +423,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateTrackerResponse.
+        r"""Sets the status of this CreateTrackerResponse.
 
         标识追踪器状态，包括正常（enabled），停止（disabled）和异常（error）三种状态，状态为异常时需通过明细（detail）字段说明错误来源。
 
@@ -434,7 +434,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this CreateTrackerResponse.
+        r"""Gets the detail of this CreateTrackerResponse.
 
         该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
 
@@ -445,7 +445,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CreateTrackerResponse.
+        r"""Sets the detail of this CreateTrackerResponse.
 
         该参数仅在追踪器状态异常时返回，用于标识追踪器异常的原因，包括桶策略异常（bucketPolicyError），桶不存在（noBucket）和欠费或冻结（arrears）三种原因。
 
@@ -456,7 +456,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def is_support_trace_files_encryption(self):
-        """Gets the is_support_trace_files_encryption of this CreateTrackerResponse.
+        r"""Gets the is_support_trace_files_encryption of this CreateTrackerResponse.
 
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
@@ -467,7 +467,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @is_support_trace_files_encryption.setter
     def is_support_trace_files_encryption(self, is_support_trace_files_encryption):
-        """Sets the is_support_trace_files_encryption of this CreateTrackerResponse.
+        r"""Sets the is_support_trace_files_encryption of this CreateTrackerResponse.
 
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
 
@@ -478,7 +478,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def obs_info(self):
-        """Gets the obs_info of this CreateTrackerResponse.
+        r"""Gets the obs_info of this CreateTrackerResponse.
 
         :return: The obs_info of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.ObsInfo`
@@ -487,7 +487,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @obs_info.setter
     def obs_info(self, obs_info):
-        """Sets the obs_info of this CreateTrackerResponse.
+        r"""Sets the obs_info of this CreateTrackerResponse.
 
         :param obs_info: The obs_info of this CreateTrackerResponse.
         :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
@@ -496,7 +496,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @property
     def data_bucket(self):
-        """Gets the data_bucket of this CreateTrackerResponse.
+        r"""Gets the data_bucket of this CreateTrackerResponse.
 
         :return: The data_bucket of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
@@ -505,7 +505,7 @@ class CreateTrackerResponse(SdkResponse):
 
     @data_bucket.setter
     def data_bucket(self, data_bucket):
-        """Sets the data_bucket of this CreateTrackerResponse.
+        r"""Sets the data_bucket of this CreateTrackerResponse.
 
         :param data_bucket: The data_bucket of this CreateTrackerResponse.
         :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucketQuery`

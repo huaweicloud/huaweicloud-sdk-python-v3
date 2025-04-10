@@ -35,7 +35,7 @@ class UserRoleVO:
     }
 
     def __init__(self, role=None, comment=None, is_transfer=None, privileges=None, inherits_roles=None, selected=None):
-        """UserRoleVO
+        r"""UserRoleVO
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class UserRoleVO:
 
     @property
     def role(self):
-        """Gets the role of this UserRoleVO.
+        r"""Gets the role of this UserRoleVO.
 
         角色
 
@@ -86,7 +86,7 @@ class UserRoleVO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this UserRoleVO.
+        r"""Sets the role of this UserRoleVO.
 
         角色
 
@@ -97,7 +97,7 @@ class UserRoleVO:
 
     @property
     def comment(self):
-        """Gets the comment of this UserRoleVO.
+        r"""Gets the comment of this UserRoleVO.
 
         说明
 
@@ -108,7 +108,7 @@ class UserRoleVO:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UserRoleVO.
+        r"""Sets the comment of this UserRoleVO.
 
         说明
 
@@ -119,7 +119,7 @@ class UserRoleVO:
 
     @property
     def is_transfer(self):
-        """Gets the is_transfer of this UserRoleVO.
+        r"""Gets the is_transfer of this UserRoleVO.
 
         是否支持迁移。
 
@@ -130,7 +130,7 @@ class UserRoleVO:
 
     @is_transfer.setter
     def is_transfer(self, is_transfer):
-        """Sets the is_transfer of this UserRoleVO.
+        r"""Sets the is_transfer of this UserRoleVO.
 
         是否支持迁移。
 
@@ -141,7 +141,7 @@ class UserRoleVO:
 
     @property
     def privileges(self):
-        """Gets the privileges of this UserRoleVO.
+        r"""Gets the privileges of this UserRoleVO.
 
         权限
 
@@ -152,7 +152,7 @@ class UserRoleVO:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this UserRoleVO.
+        r"""Sets the privileges of this UserRoleVO.
 
         权限
 
@@ -163,7 +163,7 @@ class UserRoleVO:
 
     @property
     def inherits_roles(self):
-        """Gets the inherits_roles of this UserRoleVO.
+        r"""Gets the inherits_roles of this UserRoleVO.
 
         继承角色列表
 
@@ -174,7 +174,7 @@ class UserRoleVO:
 
     @inherits_roles.setter
     def inherits_roles(self, inherits_roles):
-        """Sets the inherits_roles of this UserRoleVO.
+        r"""Sets the inherits_roles of this UserRoleVO.
 
         继承角色列表
 
@@ -185,7 +185,7 @@ class UserRoleVO:
 
     @property
     def selected(self):
-        """Gets the selected of this UserRoleVO.
+        r"""Gets the selected of this UserRoleVO.
 
         是否选择。
 
@@ -196,7 +196,7 @@ class UserRoleVO:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this UserRoleVO.
+        r"""Sets the selected of this UserRoleVO.
 
         是否选择。
 

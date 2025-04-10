@@ -39,7 +39,7 @@ class FilesResponseInfo:
     }
 
     def __init__(self, file_name=None, file_path=None, size=None, encoding=None, ref=None, blob_id=None, file_type=None, content=None):
-        """FilesResponseInfo
+        r"""FilesResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FilesResponseInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this FilesResponseInfo.
+        r"""Gets the file_name of this FilesResponseInfo.
 
         文件名称
 
@@ -103,7 +103,7 @@ class FilesResponseInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this FilesResponseInfo.
+        r"""Sets the file_name of this FilesResponseInfo.
 
         文件名称
 
@@ -114,7 +114,7 @@ class FilesResponseInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this FilesResponseInfo.
+        r"""Gets the file_path of this FilesResponseInfo.
 
         文件路径
 
@@ -125,7 +125,7 @@ class FilesResponseInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this FilesResponseInfo.
+        r"""Sets the file_path of this FilesResponseInfo.
 
         文件路径
 
@@ -136,7 +136,7 @@ class FilesResponseInfo:
 
     @property
     def size(self):
-        """Gets the size of this FilesResponseInfo.
+        r"""Gets the size of this FilesResponseInfo.
 
         文件大小
 
@@ -147,7 +147,7 @@ class FilesResponseInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this FilesResponseInfo.
+        r"""Sets the size of this FilesResponseInfo.
 
         文件大小
 
@@ -158,7 +158,7 @@ class FilesResponseInfo:
 
     @property
     def encoding(self):
-        """Gets the encoding of this FilesResponseInfo.
+        r"""Gets the encoding of this FilesResponseInfo.
 
         编码类型
 
@@ -169,7 +169,7 @@ class FilesResponseInfo:
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this FilesResponseInfo.
+        r"""Sets the encoding of this FilesResponseInfo.
 
         编码类型
 
@@ -180,7 +180,7 @@ class FilesResponseInfo:
 
     @property
     def ref(self):
-        """Gets the ref of this FilesResponseInfo.
+        r"""Gets the ref of this FilesResponseInfo.
 
         分支名称
 
@@ -191,7 +191,7 @@ class FilesResponseInfo:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this FilesResponseInfo.
+        r"""Sets the ref of this FilesResponseInfo.
 
         分支名称
 
@@ -202,7 +202,7 @@ class FilesResponseInfo:
 
     @property
     def blob_id(self):
-        """Gets the blob_id of this FilesResponseInfo.
+        r"""Gets the blob_id of this FilesResponseInfo.
 
         文件块id
 
@@ -213,7 +213,7 @@ class FilesResponseInfo:
 
     @blob_id.setter
     def blob_id(self, blob_id):
-        """Sets the blob_id of this FilesResponseInfo.
+        r"""Sets the blob_id of this FilesResponseInfo.
 
         文件块id
 
@@ -224,7 +224,7 @@ class FilesResponseInfo:
 
     @property
     def file_type(self):
-        """Gets the file_type of this FilesResponseInfo.
+        r"""Gets the file_type of this FilesResponseInfo.
 
         文件类型
 
@@ -235,7 +235,7 @@ class FilesResponseInfo:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this FilesResponseInfo.
+        r"""Sets the file_type of this FilesResponseInfo.
 
         文件类型
 
@@ -246,7 +246,7 @@ class FilesResponseInfo:
 
     @property
     def content(self):
-        """Gets the content of this FilesResponseInfo.
+        r"""Gets the content of this FilesResponseInfo.
 
         文件内容
 
@@ -257,7 +257,7 @@ class FilesResponseInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this FilesResponseInfo.
+        r"""Sets the content of this FilesResponseInfo.
 
         文件内容
 

@@ -34,7 +34,7 @@ class CodeHubAsyncClient(Client):
         return client_builder
 
     def associate_group_user_group_async(self, request):
-        """关联代码组与成员组
+        r"""关联代码组与成员组
 
         关联代码组与成员组
         
@@ -103,7 +103,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def associate_repository_user_group_async(self, request):
-        """关联仓库与成员组
+        r"""关联仓库与成员组
 
         关联仓库与成员组
         
@@ -172,7 +172,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def create_group_async(self, request):
-        """创建代码组
+        r"""创建代码组
 
         创建代码组
         
@@ -239,7 +239,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def delete_group_async(self, request):
-        """删除代码组
+        r"""删除代码组
 
         删除代码组
         
@@ -306,7 +306,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def list_manageable_groups_async(self, request):
-        """项目下拥有创建权限的代码组列表
+        r"""项目下拥有创建权限的代码组列表
 
         项目下拥有创建权限的代码组列表
         
@@ -377,7 +377,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def show_group_async(self, request):
-        """获取代码组信息
+        r"""获取代码组信息
 
         获取代码组信息
         
@@ -444,7 +444,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def add_trusted_ip_address_async(self, request):
-        """添加仓库ip白名单
+        r"""添加仓库ip白名单
 
         添加仓库ip白名单
         
@@ -511,7 +511,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def delete_trusted_ip_address_async(self, request):
-        """删除仓库ip白名单
+        r"""删除仓库ip白名单
 
         删除仓库ip白名单
         
@@ -578,7 +578,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def list_trusted_ip_addresses_async(self, request):
-        """获取仓库ip白名单
+        r"""获取仓库ip白名单
 
         获取仓库ip白名单
         
@@ -647,7 +647,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def lock_repository_async(self, request):
-        """根据仓库短ID锁定仓库
+        r"""根据仓库短ID锁定仓库
 
         根据仓库短ID锁定仓库
         
@@ -714,7 +714,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def unlock_repository_async(self, request):
-        """根据仓库短ID解锁仓库
+        r"""根据仓库短ID解锁仓库
 
         根据仓库短ID解锁仓库
         
@@ -781,7 +781,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def update_trusted_ip_address_async(self, request):
-        """修改仓库ip白名单
+        r"""修改仓库ip白名单
 
         修改仓库ip白名单
         
@@ -850,7 +850,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def add_tenant_trusted_ip_address_async(self, request):
-        """添加租户ip白名单
+        r"""添加租户ip白名单
 
         添加租户ip白名单
         
@@ -915,7 +915,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def delete_tenant_trusted_ip_address_async(self, request):
-        """删除租户ip白名单
+        r"""删除租户ip白名单
 
         删除租户ip白名单
         
@@ -980,7 +980,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def list_tenant_trusted_ip_addresses_async(self, request):
-        """获取租户ip白名单
+        r"""获取租户ip白名单
 
         获取租户ip白名单
         
@@ -1047,7 +1047,7 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def update_tenant_trusted_ip_address_async(self, request):
-        """修改租户ip白名单
+        r"""修改租户ip白名单
 
         修改租户ip白名单
         

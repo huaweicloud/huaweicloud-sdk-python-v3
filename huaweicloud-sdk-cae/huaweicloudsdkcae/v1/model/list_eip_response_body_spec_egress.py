@@ -29,7 +29,7 @@ class ListEipResponseBodySpecEgress:
     }
 
     def __init__(self, bandwidth_size=None, enabled=None, ip_list=None):
-        """ListEipResponseBodySpecEgress
+        r"""ListEipResponseBodySpecEgress
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListEipResponseBodySpecEgress:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ListEipResponseBodySpecEgress.
+        r"""Gets the bandwidth_size of this ListEipResponseBodySpecEgress.
 
         出网IP带宽。
 
@@ -68,7 +68,7 @@ class ListEipResponseBodySpecEgress:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ListEipResponseBodySpecEgress.
+        r"""Sets the bandwidth_size of this ListEipResponseBodySpecEgress.
 
         出网IP带宽。
 
@@ -79,7 +79,7 @@ class ListEipResponseBodySpecEgress:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListEipResponseBodySpecEgress.
+        r"""Gets the enabled of this ListEipResponseBodySpecEgress.
 
         是否关闭出网IP。
 
@@ -90,7 +90,7 @@ class ListEipResponseBodySpecEgress:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListEipResponseBodySpecEgress.
+        r"""Sets the enabled of this ListEipResponseBodySpecEgress.
 
         是否关闭出网IP。
 
@@ -101,7 +101,7 @@ class ListEipResponseBodySpecEgress:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this ListEipResponseBodySpecEgress.
+        r"""Gets the ip_list of this ListEipResponseBodySpecEgress.
 
         出网IP列表。
 
@@ -112,7 +112,7 @@ class ListEipResponseBodySpecEgress:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this ListEipResponseBodySpecEgress.
+        r"""Sets the ip_list of this ListEipResponseBodySpecEgress.
 
         出网IP列表。
 

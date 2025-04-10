@@ -29,7 +29,7 @@ class ListSecretVersionsRequest:
     }
 
     def __init__(self, secret_name=None, marker=None, limit=None):
-        """ListSecretVersionsRequest
+        r"""ListSecretVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSecretVersionsRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this ListSecretVersionsRequest.
+        r"""Gets the secret_name of this ListSecretVersionsRequest.
 
         凭据名称。
 
@@ -67,7 +67,7 @@ class ListSecretVersionsRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this ListSecretVersionsRequest.
+        r"""Sets the secret_name of this ListSecretVersionsRequest.
 
         凭据名称。
 
@@ -78,7 +78,7 @@ class ListSecretVersionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecretVersionsRequest.
+        r"""Gets the marker of this ListSecretVersionsRequest.
 
         分页参数，取值为上一页数据的最后一条记录的版本号。
 
@@ -89,7 +89,7 @@ class ListSecretVersionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecretVersionsRequest.
+        r"""Sets the marker of this ListSecretVersionsRequest.
 
         分页参数，取值为上一页数据的最后一条记录的版本号。
 
@@ -100,7 +100,7 @@ class ListSecretVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecretVersionsRequest.
+        r"""Gets the limit of this ListSecretVersionsRequest.
 
         每页显示的条目数量。默认值50。
 
@@ -111,7 +111,7 @@ class ListSecretVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecretVersionsRequest.
+        r"""Sets the limit of this ListSecretVersionsRequest.
 
         每页显示的条目数量。默认值50。
 

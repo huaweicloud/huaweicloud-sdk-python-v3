@@ -27,7 +27,7 @@ class CreateNewBranchRequest:
     }
 
     def __init__(self, repository_id=None, body=None):
-        """CreateNewBranchRequest
+        r"""CreateNewBranchRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateNewBranchRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this CreateNewBranchRequest.
+        r"""Gets the repository_id of this CreateNewBranchRequest.
 
         仓库的主键id
 
@@ -60,7 +60,7 @@ class CreateNewBranchRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this CreateNewBranchRequest.
+        r"""Sets the repository_id of this CreateNewBranchRequest.
 
         仓库的主键id
 
@@ -71,7 +71,7 @@ class CreateNewBranchRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNewBranchRequest.
+        r"""Gets the body of this CreateNewBranchRequest.
 
         :return: The body of this CreateNewBranchRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequestBody`
@@ -80,7 +80,7 @@ class CreateNewBranchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNewBranchRequest.
+        r"""Sets the body of this CreateNewBranchRequest.
 
         :param body: The body of this CreateNewBranchRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequestBody`

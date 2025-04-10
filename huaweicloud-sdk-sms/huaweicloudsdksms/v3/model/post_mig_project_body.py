@@ -47,7 +47,7 @@ class PostMigProjectBody:
     }
 
     def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_networck_check=None):
-        """PostMigProjectBody
+        r"""PostMigProjectBody
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class PostMigProjectBody:
 
     @property
     def name(self):
-        """Gets the name of this PostMigProjectBody.
+        r"""Gets the name of this PostMigProjectBody.
 
         迁移项目名称
 
@@ -125,7 +125,7 @@ class PostMigProjectBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostMigProjectBody.
+        r"""Sets the name of this PostMigProjectBody.
 
         迁移项目名称
 
@@ -136,7 +136,7 @@ class PostMigProjectBody:
 
     @property
     def description(self):
-        """Gets the description of this PostMigProjectBody.
+        r"""Gets the description of this PostMigProjectBody.
 
         迁移项目描述
 
@@ -147,7 +147,7 @@ class PostMigProjectBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PostMigProjectBody.
+        r"""Sets the description of this PostMigProjectBody.
 
         迁移项目描述
 
@@ -158,7 +158,7 @@ class PostMigProjectBody:
 
     @property
     def isdefault(self):
-        """Gets the isdefault of this PostMigProjectBody.
+        r"""Gets the isdefault of this PostMigProjectBody.
 
         是否为默认模板
 
@@ -169,7 +169,7 @@ class PostMigProjectBody:
 
     @isdefault.setter
     def isdefault(self, isdefault):
-        """Sets the isdefault of this PostMigProjectBody.
+        r"""Sets the isdefault of this PostMigProjectBody.
 
         是否为默认模板
 
@@ -180,7 +180,7 @@ class PostMigProjectBody:
 
     @property
     def region(self):
-        """Gets the region of this PostMigProjectBody.
+        r"""Gets the region of this PostMigProjectBody.
 
         区域名称
 
@@ -191,7 +191,7 @@ class PostMigProjectBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this PostMigProjectBody.
+        r"""Sets the region of this PostMigProjectBody.
 
         区域名称
 
@@ -202,7 +202,7 @@ class PostMigProjectBody:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this PostMigProjectBody.
+        r"""Gets the start_target_server of this PostMigProjectBody.
 
         迁移后是否启动目的端虚拟机
 
@@ -213,7 +213,7 @@ class PostMigProjectBody:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this PostMigProjectBody.
+        r"""Sets the start_target_server of this PostMigProjectBody.
 
         迁移后是否启动目的端虚拟机
 
@@ -224,7 +224,7 @@ class PostMigProjectBody:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this PostMigProjectBody.
+        r"""Gets the speed_limit of this PostMigProjectBody.
 
         限制迁移速率，单位：Mbps
 
@@ -235,7 +235,7 @@ class PostMigProjectBody:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this PostMigProjectBody.
+        r"""Sets the speed_limit of this PostMigProjectBody.
 
         限制迁移速率，单位：Mbps
 
@@ -246,7 +246,7 @@ class PostMigProjectBody:
 
     @property
     def use_public_ip(self):
-        """Gets the use_public_ip of this PostMigProjectBody.
+        r"""Gets the use_public_ip of this PostMigProjectBody.
 
         是否使用公网IP迁移
 
@@ -257,7 +257,7 @@ class PostMigProjectBody:
 
     @use_public_ip.setter
     def use_public_ip(self, use_public_ip):
-        """Sets the use_public_ip of this PostMigProjectBody.
+        r"""Sets the use_public_ip of this PostMigProjectBody.
 
         是否使用公网IP迁移
 
@@ -268,7 +268,7 @@ class PostMigProjectBody:
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this PostMigProjectBody.
+        r"""Gets the exist_server of this PostMigProjectBody.
 
         是否是已经存在的服务器
 
@@ -279,7 +279,7 @@ class PostMigProjectBody:
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this PostMigProjectBody.
+        r"""Sets the exist_server of this PostMigProjectBody.
 
         是否是已经存在的服务器
 
@@ -290,7 +290,7 @@ class PostMigProjectBody:
 
     @property
     def type(self):
-        """Gets the type of this PostMigProjectBody.
+        r"""Gets the type of this PostMigProjectBody.
 
         迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -301,7 +301,7 @@ class PostMigProjectBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostMigProjectBody.
+        r"""Sets the type of this PostMigProjectBody.
 
         迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -312,7 +312,7 @@ class PostMigProjectBody:
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this PostMigProjectBody.
+        r"""Gets the enterprise_project of this PostMigProjectBody.
 
         企业项目名称
 
@@ -323,7 +323,7 @@ class PostMigProjectBody:
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this PostMigProjectBody.
+        r"""Sets the enterprise_project of this PostMigProjectBody.
 
         企业项目名称
 
@@ -334,7 +334,7 @@ class PostMigProjectBody:
 
     @property
     def syncing(self):
-        """Gets the syncing of this PostMigProjectBody.
+        r"""Gets the syncing of this PostMigProjectBody.
 
         首次复制或者同步后 是否继续持续同步
 
@@ -345,7 +345,7 @@ class PostMigProjectBody:
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this PostMigProjectBody.
+        r"""Sets the syncing of this PostMigProjectBody.
 
         首次复制或者同步后 是否继续持续同步
 
@@ -356,7 +356,7 @@ class PostMigProjectBody:
 
     @property
     def start_networck_check(self):
-        """Gets the start_networck_check of this PostMigProjectBody.
+        r"""Gets the start_networck_check of this PostMigProjectBody.
 
         是否启动网络质量检测
 
@@ -367,7 +367,7 @@ class PostMigProjectBody:
 
     @start_networck_check.setter
     def start_networck_check(self, start_networck_check):
-        """Sets the start_networck_check of this PostMigProjectBody.
+        r"""Sets the start_networck_check of this PostMigProjectBody.
 
         是否启动网络质量检测
 

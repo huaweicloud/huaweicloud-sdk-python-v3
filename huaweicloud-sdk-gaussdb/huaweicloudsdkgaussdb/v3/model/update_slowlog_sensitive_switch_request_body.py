@@ -25,7 +25,7 @@ class UpdateSlowlogSensitiveSwitchRequestBody:
     }
 
     def __init__(self, open_slow_log_switch=None):
-        """UpdateSlowlogSensitiveSwitchRequestBody
+        r"""UpdateSlowlogSensitiveSwitchRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSlowlogSensitiveSwitchRequestBody:
 
     @property
     def open_slow_log_switch(self):
-        """Gets the open_slow_log_switch of this UpdateSlowlogSensitiveSwitchRequestBody.
+        r"""Gets the open_slow_log_switch of this UpdateSlowlogSensitiveSwitchRequestBody.
 
         慢日志开关状态。
 
@@ -53,7 +53,7 @@ class UpdateSlowlogSensitiveSwitchRequestBody:
 
     @open_slow_log_switch.setter
     def open_slow_log_switch(self, open_slow_log_switch):
-        """Sets the open_slow_log_switch of this UpdateSlowlogSensitiveSwitchRequestBody.
+        r"""Sets the open_slow_log_switch of this UpdateSlowlogSensitiveSwitchRequestBody.
 
         慢日志开关状态。
 

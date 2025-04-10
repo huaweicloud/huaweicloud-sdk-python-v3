@@ -25,7 +25,7 @@ class CreateChInstanceRequestBodyTagsInfo:
     }
 
     def __init__(self, sys_tags=None):
-        """CreateChInstanceRequestBodyTagsInfo
+        r"""CreateChInstanceRequestBodyTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateChInstanceRequestBodyTagsInfo:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CreateChInstanceRequestBodyTagsInfo.
+        r"""Gets the sys_tags of this CreateChInstanceRequestBodyTagsInfo.
 
         系统标签。
 
@@ -53,7 +53,7 @@ class CreateChInstanceRequestBodyTagsInfo:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CreateChInstanceRequestBodyTagsInfo.
+        r"""Sets the sys_tags of this CreateChInstanceRequestBodyTagsInfo.
 
         系统标签。
 

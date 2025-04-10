@@ -25,7 +25,7 @@ class CreateL7ruleRequestBody:
     }
 
     def __init__(self, rule=None):
-        """CreateL7ruleRequestBody
+        r"""CreateL7ruleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateL7ruleRequestBody:
 
     @property
     def rule(self):
-        """Gets the rule of this CreateL7ruleRequestBody.
+        r"""Gets the rule of this CreateL7ruleRequestBody.
 
         :return: The rule of this CreateL7ruleRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateL7ruleReq`
@@ -51,7 +51,7 @@ class CreateL7ruleRequestBody:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateL7ruleRequestBody.
+        r"""Sets the rule of this CreateL7ruleRequestBody.
 
         :param rule: The rule of this CreateL7ruleRequestBody.
         :type rule: :class:`huaweicloudsdkelb.v2.CreateL7ruleReq`

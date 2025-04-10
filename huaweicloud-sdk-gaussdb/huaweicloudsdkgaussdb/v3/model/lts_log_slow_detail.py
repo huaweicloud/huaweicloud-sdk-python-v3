@@ -49,7 +49,7 @@ class LtsLogSlowDetail:
     }
 
     def __init__(self, node_id=None, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, start_time=None, client_ip=None, line_num=None):
-        """LtsLogSlowDetail
+        r"""LtsLogSlowDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class LtsLogSlowDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this LtsLogSlowDetail.
+        r"""Gets the node_id of this LtsLogSlowDetail.
 
         节点ID。
 
@@ -138,7 +138,7 @@ class LtsLogSlowDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this LtsLogSlowDetail.
+        r"""Sets the node_id of this LtsLogSlowDetail.
 
         节点ID。
 
@@ -149,7 +149,7 @@ class LtsLogSlowDetail:
 
     @property
     def count(self):
-        """Gets the count of this LtsLogSlowDetail.
+        r"""Gets the count of this LtsLogSlowDetail.
 
         执行次数。
 
@@ -160,7 +160,7 @@ class LtsLogSlowDetail:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this LtsLogSlowDetail.
+        r"""Sets the count of this LtsLogSlowDetail.
 
         执行次数。
 
@@ -171,7 +171,7 @@ class LtsLogSlowDetail:
 
     @property
     def time(self):
-        """Gets the time of this LtsLogSlowDetail.
+        r"""Gets the time of this LtsLogSlowDetail.
 
         执行时间。
 
@@ -182,7 +182,7 @@ class LtsLogSlowDetail:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this LtsLogSlowDetail.
+        r"""Sets the time of this LtsLogSlowDetail.
 
         执行时间。
 
@@ -193,7 +193,7 @@ class LtsLogSlowDetail:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this LtsLogSlowDetail.
+        r"""Gets the lock_time of this LtsLogSlowDetail.
 
         等待锁时间。
 
@@ -204,7 +204,7 @@ class LtsLogSlowDetail:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this LtsLogSlowDetail.
+        r"""Sets the lock_time of this LtsLogSlowDetail.
 
         等待锁时间。
 
@@ -215,7 +215,7 @@ class LtsLogSlowDetail:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this LtsLogSlowDetail.
+        r"""Gets the rows_sent of this LtsLogSlowDetail.
 
         结果行数量。
 
@@ -226,7 +226,7 @@ class LtsLogSlowDetail:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this LtsLogSlowDetail.
+        r"""Sets the rows_sent of this LtsLogSlowDetail.
 
         结果行数量。
 
@@ -237,7 +237,7 @@ class LtsLogSlowDetail:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this LtsLogSlowDetail.
+        r"""Gets the rows_examined of this LtsLogSlowDetail.
 
         扫描的行数量。
 
@@ -248,7 +248,7 @@ class LtsLogSlowDetail:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this LtsLogSlowDetail.
+        r"""Sets the rows_examined of this LtsLogSlowDetail.
 
         扫描的行数量。
 
@@ -259,7 +259,7 @@ class LtsLogSlowDetail:
 
     @property
     def database(self):
-        """Gets the database of this LtsLogSlowDetail.
+        r"""Gets the database of this LtsLogSlowDetail.
 
         所属数据库。
 
@@ -270,7 +270,7 @@ class LtsLogSlowDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this LtsLogSlowDetail.
+        r"""Sets the database of this LtsLogSlowDetail.
 
         所属数据库。
 
@@ -281,7 +281,7 @@ class LtsLogSlowDetail:
 
     @property
     def users(self):
-        """Gets the users of this LtsLogSlowDetail.
+        r"""Gets the users of this LtsLogSlowDetail.
 
         账号。
 
@@ -292,7 +292,7 @@ class LtsLogSlowDetail:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this LtsLogSlowDetail.
+        r"""Sets the users of this LtsLogSlowDetail.
 
         账号。
 
@@ -303,7 +303,7 @@ class LtsLogSlowDetail:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this LtsLogSlowDetail.
+        r"""Gets the query_sample of this LtsLogSlowDetail.
 
         执行语法。
 
@@ -314,7 +314,7 @@ class LtsLogSlowDetail:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this LtsLogSlowDetail.
+        r"""Sets the query_sample of this LtsLogSlowDetail.
 
         执行语法。
 
@@ -325,7 +325,7 @@ class LtsLogSlowDetail:
 
     @property
     def type(self):
-        """Gets the type of this LtsLogSlowDetail.
+        r"""Gets the type of this LtsLogSlowDetail.
 
         语句类型。
 
@@ -336,7 +336,7 @@ class LtsLogSlowDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LtsLogSlowDetail.
+        r"""Sets the type of this LtsLogSlowDetail.
 
         语句类型。
 
@@ -347,7 +347,7 @@ class LtsLogSlowDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this LtsLogSlowDetail.
+        r"""Gets the start_time of this LtsLogSlowDetail.
 
         发生时间，UTC时间。
 
@@ -358,7 +358,7 @@ class LtsLogSlowDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this LtsLogSlowDetail.
+        r"""Sets the start_time of this LtsLogSlowDetail.
 
         发生时间，UTC时间。
 
@@ -369,7 +369,7 @@ class LtsLogSlowDetail:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this LtsLogSlowDetail.
+        r"""Gets the client_ip of this LtsLogSlowDetail.
 
         IP地址。
 
@@ -380,7 +380,7 @@ class LtsLogSlowDetail:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this LtsLogSlowDetail.
+        r"""Sets the client_ip of this LtsLogSlowDetail.
 
         IP地址。
 
@@ -391,7 +391,7 @@ class LtsLogSlowDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this LtsLogSlowDetail.
+        r"""Gets the line_num of this LtsLogSlowDetail.
 
         日志单行序列号。
 
@@ -402,7 +402,7 @@ class LtsLogSlowDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this LtsLogSlowDetail.
+        r"""Sets the line_num of this LtsLogSlowDetail.
 
         日志单行序列号。
 

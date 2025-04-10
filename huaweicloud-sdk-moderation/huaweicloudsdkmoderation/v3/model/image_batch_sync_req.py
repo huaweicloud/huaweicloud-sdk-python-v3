@@ -35,7 +35,7 @@ class ImageBatchSyncReq:
     }
 
     def __init__(self, event_type=None, categories=None, image_text_config=None, urls=None, language=None, biz_type=None):
-        """ImageBatchSyncReq
+        r"""ImageBatchSyncReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ImageBatchSyncReq:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ImageBatchSyncReq.
+        r"""Gets the event_type of this ImageBatchSyncReq.
 
         事件类型。可选值如下： - head_image：头像 - album：相册 - dynamic：动态 - article：帖子 - comment：评论 - room_cover：房间封面 - group_message：群聊图片 - message：私聊图片 - product：商品图片
 
@@ -88,7 +88,7 @@ class ImageBatchSyncReq:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ImageBatchSyncReq.
+        r"""Sets the event_type of this ImageBatchSyncReq.
 
         事件类型。可选值如下： - head_image：头像 - album：相册 - dynamic：动态 - article：帖子 - comment：评论 - room_cover：房间封面 - group_message：群聊图片 - message：私聊图片 - product：商品图片
 
@@ -99,7 +99,7 @@ class ImageBatchSyncReq:
 
     @property
     def categories(self):
-        """Gets the categories of this ImageBatchSyncReq.
+        r"""Gets the categories of this ImageBatchSyncReq.
 
         检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
 
@@ -110,7 +110,7 @@ class ImageBatchSyncReq:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this ImageBatchSyncReq.
+        r"""Sets the categories of this ImageBatchSyncReq.
 
         检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
 
@@ -121,7 +121,7 @@ class ImageBatchSyncReq:
 
     @property
     def image_text_config(self):
-        """Gets the image_text_config of this ImageBatchSyncReq.
+        r"""Gets the image_text_config of this ImageBatchSyncReq.
 
         :return: The image_text_config of this ImageBatchSyncReq.
         :rtype: :class:`huaweicloudsdkmoderation.v3.ImageBatchSyncReqImageTextConfig`
@@ -130,7 +130,7 @@ class ImageBatchSyncReq:
 
     @image_text_config.setter
     def image_text_config(self, image_text_config):
-        """Sets the image_text_config of this ImageBatchSyncReq.
+        r"""Sets the image_text_config of this ImageBatchSyncReq.
 
         :param image_text_config: The image_text_config of this ImageBatchSyncReq.
         :type image_text_config: :class:`huaweicloudsdkmoderation.v3.ImageBatchSyncReqImageTextConfig`
@@ -139,7 +139,7 @@ class ImageBatchSyncReq:
 
     @property
     def urls(self):
-        """Gets the urls of this ImageBatchSyncReq.
+        r"""Gets the urls of this ImageBatchSyncReq.
 
         图片url列表。
 
@@ -150,7 +150,7 @@ class ImageBatchSyncReq:
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this ImageBatchSyncReq.
+        r"""Sets the urls of this ImageBatchSyncReq.
 
         图片url列表。
 
@@ -161,7 +161,7 @@ class ImageBatchSyncReq:
 
     @property
     def language(self):
-        """Gets the language of this ImageBatchSyncReq.
+        r"""Gets the language of this ImageBatchSyncReq.
 
         指定图片中文字语种类型。 - zh: 中文 - en: 英文 默认值为zh，中国站仅支持zh。
 
@@ -172,7 +172,7 @@ class ImageBatchSyncReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ImageBatchSyncReq.
+        r"""Sets the language of this ImageBatchSyncReq.
 
         指定图片中文字语种类型。 - zh: 中文 - en: 英文 默认值为zh，中国站仅支持zh。
 
@@ -183,7 +183,7 @@ class ImageBatchSyncReq:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ImageBatchSyncReq.
+        r"""Gets the biz_type of this ImageBatchSyncReq.
 
         用户在控制台界面创建的自定义审核策略名称。 - 如果请求参数中包含biz_type则优先使用biztype。 - 如果未传biz_type则event_type和categories为必传参数。
 
@@ -194,7 +194,7 @@ class ImageBatchSyncReq:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ImageBatchSyncReq.
+        r"""Sets the biz_type of this ImageBatchSyncReq.
 
         用户在控制台界面创建的自定义审核策略名称。 - 如果请求参数中包含biz_type则优先使用biztype。 - 如果未传biz_type则event_type和categories为必传参数。
 

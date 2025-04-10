@@ -27,7 +27,7 @@ class CompoundMetricVOSearchResultDataValue:
     }
 
     def __init__(self, records=None, total=None):
-        """CompoundMetricVOSearchResultDataValue
+        r"""CompoundMetricVOSearchResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CompoundMetricVOSearchResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this CompoundMetricVOSearchResultDataValue.
+        r"""Gets the records of this CompoundMetricVOSearchResultDataValue.
 
         CompoundMetricVO数组。
 
@@ -61,7 +61,7 @@ class CompoundMetricVOSearchResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this CompoundMetricVOSearchResultDataValue.
+        r"""Sets the records of this CompoundMetricVOSearchResultDataValue.
 
         CompoundMetricVO数组。
 
@@ -72,7 +72,7 @@ class CompoundMetricVOSearchResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this CompoundMetricVOSearchResultDataValue.
+        r"""Gets the total of this CompoundMetricVOSearchResultDataValue.
 
         总数。
 
@@ -83,7 +83,7 @@ class CompoundMetricVOSearchResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CompoundMetricVOSearchResultDataValue.
+        r"""Sets the total of this CompoundMetricVOSearchResultDataValue.
 
         总数。
 

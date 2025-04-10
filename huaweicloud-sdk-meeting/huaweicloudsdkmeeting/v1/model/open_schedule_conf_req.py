@@ -57,7 +57,7 @@ class OpenScheduleConfReq:
     }
 
     def __init__(self, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, vmr_id=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None, enable_recording=None, live_address=None, aux_address=None, live_url=None):
-        """OpenScheduleConfReq
+        r"""OpenScheduleConfReq
 
         The model defined in huaweicloud sdk
 
@@ -150,7 +150,7 @@ class OpenScheduleConfReq:
 
     @property
     def subject(self):
-        """Gets the subject of this OpenScheduleConfReq.
+        r"""Gets the subject of this OpenScheduleConfReq.
 
         网络研讨会主题。长度限制为128个字符。
 
@@ -161,7 +161,7 @@ class OpenScheduleConfReq:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this OpenScheduleConfReq.
+        r"""Sets the subject of this OpenScheduleConfReq.
 
         网络研讨会主题。长度限制为128个字符。
 
@@ -172,7 +172,7 @@ class OpenScheduleConfReq:
 
     @property
     def description(self):
-        """Gets the description of this OpenScheduleConfReq.
+        r"""Gets the description of this OpenScheduleConfReq.
 
         网络研讨会描述，长度限制为1000个字符。
 
@@ -183,7 +183,7 @@ class OpenScheduleConfReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenScheduleConfReq.
+        r"""Sets the description of this OpenScheduleConfReq.
 
         网络研讨会描述，长度限制为1000个字符。
 
@@ -194,7 +194,7 @@ class OpenScheduleConfReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenScheduleConfReq.
+        r"""Gets the start_time of this OpenScheduleConfReq.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -205,7 +205,7 @@ class OpenScheduleConfReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenScheduleConfReq.
+        r"""Sets the start_time of this OpenScheduleConfReq.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -216,7 +216,7 @@ class OpenScheduleConfReq:
 
     @property
     def duration(self):
-        """Gets the duration of this OpenScheduleConfReq.
+        r"""Gets the duration of this OpenScheduleConfReq.
 
         网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
@@ -227,7 +227,7 @@ class OpenScheduleConfReq:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OpenScheduleConfReq.
+        r"""Sets the duration of this OpenScheduleConfReq.
 
         网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
@@ -238,7 +238,7 @@ class OpenScheduleConfReq:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this OpenScheduleConfReq.
+        r"""Gets the time_zone_id of this OpenScheduleConfReq.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -249,7 +249,7 @@ class OpenScheduleConfReq:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this OpenScheduleConfReq.
+        r"""Sets the time_zone_id of this OpenScheduleConfReq.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -260,7 +260,7 @@ class OpenScheduleConfReq:
 
     @property
     def attendees(self):
-        """Gets the attendees of this OpenScheduleConfReq.
+        r"""Gets the attendees of this OpenScheduleConfReq.
 
         与会嘉宾列表。 > 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
 
@@ -271,7 +271,7 @@ class OpenScheduleConfReq:
 
     @attendees.setter
     def attendees(self, attendees):
-        """Sets the attendees of this OpenScheduleConfReq.
+        r"""Sets the attendees of this OpenScheduleConfReq.
 
         与会嘉宾列表。 > 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
 
@@ -282,7 +282,7 @@ class OpenScheduleConfReq:
 
     @property
     def notify_setting(self):
-        """Gets the notify_setting of this OpenScheduleConfReq.
+        r"""Gets the notify_setting of this OpenScheduleConfReq.
 
         :return: The notify_setting of this OpenScheduleConfReq.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
@@ -291,7 +291,7 @@ class OpenScheduleConfReq:
 
     @notify_setting.setter
     def notify_setting(self, notify_setting):
-        """Sets the notify_setting of this OpenScheduleConfReq.
+        r"""Sets the notify_setting of this OpenScheduleConfReq.
 
         :param notify_setting: The notify_setting of this OpenScheduleConfReq.
         :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
@@ -300,7 +300,7 @@ class OpenScheduleConfReq:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this OpenScheduleConfReq.
+        r"""Gets the vmr_id of this OpenScheduleConfReq.
 
         绑定给当前创建网络研讨会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 > * vmrID取上述查询接口中返回的id，不是vmrId。 > * 创建网络研讨会时，使用vmrMode=2的VMR。 
 
@@ -311,7 +311,7 @@ class OpenScheduleConfReq:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this OpenScheduleConfReq.
+        r"""Sets the vmr_id of this OpenScheduleConfReq.
 
         绑定给当前创建网络研讨会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 > * vmrID取上述查询接口中返回的id，不是vmrId。 > * 创建网络研讨会时，使用vmrMode=2的VMR。 
 
@@ -322,7 +322,7 @@ class OpenScheduleConfReq:
 
     @property
     def guest_passwd(self):
-        """Gets the guest_passwd of this OpenScheduleConfReq.
+        r"""Gets the guest_passwd of this OpenScheduleConfReq.
 
         嘉宾密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
@@ -333,7 +333,7 @@ class OpenScheduleConfReq:
 
     @guest_passwd.setter
     def guest_passwd(self, guest_passwd):
-        """Sets the guest_passwd of this OpenScheduleConfReq.
+        r"""Sets the guest_passwd of this OpenScheduleConfReq.
 
         嘉宾密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
@@ -344,7 +344,7 @@ class OpenScheduleConfReq:
 
     @property
     def audience_passwd(self):
-        """Gets the audience_passwd of this OpenScheduleConfReq.
+        r"""Gets the audience_passwd of this OpenScheduleConfReq.
 
         观众密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
@@ -355,7 +355,7 @@ class OpenScheduleConfReq:
 
     @audience_passwd.setter
     def audience_passwd(self, audience_passwd):
-        """Sets the audience_passwd of this OpenScheduleConfReq.
+        r"""Sets the audience_passwd of this OpenScheduleConfReq.
 
         观众密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
@@ -366,7 +366,7 @@ class OpenScheduleConfReq:
 
     @property
     def call_restriction(self):
-        """Gets the call_restriction of this OpenScheduleConfReq.
+        r"""Gets the call_restriction of this OpenScheduleConfReq.
 
         入会范围开关。 * false：不限制入会范围 * true：限制入会范围 
 
@@ -377,7 +377,7 @@ class OpenScheduleConfReq:
 
     @call_restriction.setter
     def call_restriction(self, call_restriction):
-        """Sets the call_restriction of this OpenScheduleConfReq.
+        r"""Sets the call_restriction of this OpenScheduleConfReq.
 
         入会范围开关。 * false：不限制入会范围 * true：限制入会范围 
 
@@ -388,7 +388,7 @@ class OpenScheduleConfReq:
 
     @property
     def scope(self):
-        """Gets the scope of this OpenScheduleConfReq.
+        r"""Gets the scope of this OpenScheduleConfReq.
 
         主持人、嘉宾入会范围 。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
@@ -399,7 +399,7 @@ class OpenScheduleConfReq:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this OpenScheduleConfReq.
+        r"""Sets the scope of this OpenScheduleConfReq.
 
         主持人、嘉宾入会范围 。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
@@ -410,7 +410,7 @@ class OpenScheduleConfReq:
 
     @property
     def audience_scope(self):
-        """Gets the audience_scope of this OpenScheduleConfReq.
+        r"""Gets the audience_scope of this OpenScheduleConfReq.
 
         观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
 
@@ -421,7 +421,7 @@ class OpenScheduleConfReq:
 
     @audience_scope.setter
     def audience_scope(self, audience_scope):
-        """Sets the audience_scope of this OpenScheduleConfReq.
+        r"""Sets the audience_scope of this OpenScheduleConfReq.
 
         观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
 
@@ -432,7 +432,7 @@ class OpenScheduleConfReq:
 
     @property
     def enable_recording(self):
-        """Gets the enable_recording of this OpenScheduleConfReq.
+        r"""Gets the enable_recording of this OpenScheduleConfReq.
 
         :return: The enable_recording of this OpenScheduleConfReq.
         :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
@@ -441,7 +441,7 @@ class OpenScheduleConfReq:
 
     @enable_recording.setter
     def enable_recording(self, enable_recording):
-        """Sets the enable_recording of this OpenScheduleConfReq.
+        r"""Sets the enable_recording of this OpenScheduleConfReq.
 
         :param enable_recording: The enable_recording of this OpenScheduleConfReq.
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
@@ -450,7 +450,7 @@ class OpenScheduleConfReq:
 
     @property
     def live_address(self):
-        """Gets the live_address of this OpenScheduleConfReq.
+        r"""Gets the live_address of this OpenScheduleConfReq.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -461,7 +461,7 @@ class OpenScheduleConfReq:
 
     @live_address.setter
     def live_address(self, live_address):
-        """Sets the live_address of this OpenScheduleConfReq.
+        r"""Sets the live_address of this OpenScheduleConfReq.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -472,7 +472,7 @@ class OpenScheduleConfReq:
 
     @property
     def aux_address(self):
-        """Gets the aux_address of this OpenScheduleConfReq.
+        r"""Gets the aux_address of this OpenScheduleConfReq.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -483,7 +483,7 @@ class OpenScheduleConfReq:
 
     @aux_address.setter
     def aux_address(self, aux_address):
-        """Sets the aux_address of this OpenScheduleConfReq.
+        r"""Sets the aux_address of this OpenScheduleConfReq.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -494,7 +494,7 @@ class OpenScheduleConfReq:
 
     @property
     def live_url(self):
-        """Gets the live_url of this OpenScheduleConfReq.
+        r"""Gets the live_url of this OpenScheduleConfReq.
 
         直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
 
@@ -505,7 +505,7 @@ class OpenScheduleConfReq:
 
     @live_url.setter
     def live_url(self, live_url):
-        """Sets the live_url of this OpenScheduleConfReq.
+        r"""Sets the live_url of this OpenScheduleConfReq.
 
         直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
 

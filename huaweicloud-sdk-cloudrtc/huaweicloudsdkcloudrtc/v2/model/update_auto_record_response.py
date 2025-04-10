@@ -30,7 +30,7 @@ class UpdateAutoRecordResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, auto_record_mode=None, x_request_id=None):
-        """UpdateAutoRecordResponse
+        r"""UpdateAutoRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateAutoRecordResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAutoRecordResponse.
+        r"""Gets the app_id of this UpdateAutoRecordResponse.
 
         应用id
 
@@ -69,7 +69,7 @@ class UpdateAutoRecordResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAutoRecordResponse.
+        r"""Sets the app_id of this UpdateAutoRecordResponse.
 
         应用id
 
@@ -80,7 +80,7 @@ class UpdateAutoRecordResponse(SdkResponse):
 
     @property
     def auto_record_mode(self):
-        """Gets the auto_record_mode of this UpdateAutoRecordResponse.
+        r"""Gets the auto_record_mode of this UpdateAutoRecordResponse.
 
         :return: The auto_record_mode of this UpdateAutoRecordResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -89,7 +89,7 @@ class UpdateAutoRecordResponse(SdkResponse):
 
     @auto_record_mode.setter
     def auto_record_mode(self, auto_record_mode):
-        """Sets the auto_record_mode of this UpdateAutoRecordResponse.
+        r"""Sets the auto_record_mode of this UpdateAutoRecordResponse.
 
         :param auto_record_mode: The auto_record_mode of this UpdateAutoRecordResponse.
         :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -98,7 +98,7 @@ class UpdateAutoRecordResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateAutoRecordResponse.
+        r"""Gets the x_request_id of this UpdateAutoRecordResponse.
 
         :return: The x_request_id of this UpdateAutoRecordResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateAutoRecordResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateAutoRecordResponse.
+        r"""Sets the x_request_id of this UpdateAutoRecordResponse.
 
         :param x_request_id: The x_request_id of this UpdateAutoRecordResponse.
         :type x_request_id: str

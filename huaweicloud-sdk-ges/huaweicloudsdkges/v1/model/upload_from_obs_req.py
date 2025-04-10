@@ -31,7 +31,7 @@ class UploadFromOBSReq:
     }
 
     def __init__(self, metadata_path=None, name=None, description=None, encryption=None):
-        """UploadFromOBSReq
+        r"""UploadFromOBSReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UploadFromOBSReq:
 
     @property
     def metadata_path(self):
-        """Gets the metadata_path of this UploadFromOBSReq.
+        r"""Gets the metadata_path of this UploadFromOBSReq.
 
         元数据存储地址。
 
@@ -73,7 +73,7 @@ class UploadFromOBSReq:
 
     @metadata_path.setter
     def metadata_path(self, metadata_path):
-        """Sets the metadata_path of this UploadFromOBSReq.
+        r"""Sets the metadata_path of this UploadFromOBSReq.
 
         元数据存储地址。
 
@@ -84,7 +84,7 @@ class UploadFromOBSReq:
 
     @property
     def name(self):
-        """Gets the name of this UploadFromOBSReq.
+        r"""Gets the name of this UploadFromOBSReq.
 
         元数据的名字。
 
@@ -95,7 +95,7 @@ class UploadFromOBSReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadFromOBSReq.
+        r"""Sets the name of this UploadFromOBSReq.
 
         元数据的名字。
 
@@ -106,7 +106,7 @@ class UploadFromOBSReq:
 
     @property
     def description(self):
-        """Gets the description of this UploadFromOBSReq.
+        r"""Gets the description of this UploadFromOBSReq.
 
         对元数据的描述。
 
@@ -117,7 +117,7 @@ class UploadFromOBSReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadFromOBSReq.
+        r"""Sets the description of this UploadFromOBSReq.
 
         对元数据的描述。
 
@@ -128,7 +128,7 @@ class UploadFromOBSReq:
 
     @property
     def encryption(self):
-        """Gets the encryption of this UploadFromOBSReq.
+        r"""Gets the encryption of this UploadFromOBSReq.
 
         :return: The encryption of this UploadFromOBSReq.
         :rtype: :class:`huaweicloudsdkges.v1.EncryptionReq`
@@ -137,7 +137,7 @@ class UploadFromOBSReq:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this UploadFromOBSReq.
+        r"""Sets the encryption of this UploadFromOBSReq.
 
         :param encryption: The encryption of this UploadFromOBSReq.
         :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`

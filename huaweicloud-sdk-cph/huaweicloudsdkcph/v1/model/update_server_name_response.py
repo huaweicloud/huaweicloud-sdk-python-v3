@@ -30,7 +30,7 @@ class UpdateServerNameResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, error_msg=None, error_code=None):
-        """UpdateServerNameResponse
+        r"""UpdateServerNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateServerNameResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateServerNameResponse.
+        r"""Gets the request_id of this UpdateServerNameResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class UpdateServerNameResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateServerNameResponse.
+        r"""Sets the request_id of this UpdateServerNameResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class UpdateServerNameResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UpdateServerNameResponse.
+        r"""Gets the error_msg of this UpdateServerNameResponse.
 
         任务错误码说明。
 
@@ -91,7 +91,7 @@ class UpdateServerNameResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdateServerNameResponse.
+        r"""Sets the error_msg of this UpdateServerNameResponse.
 
         任务错误码说明。
 
@@ -102,7 +102,7 @@ class UpdateServerNameResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateServerNameResponse.
+        r"""Gets the error_code of this UpdateServerNameResponse.
 
         任务错误码。
 
@@ -113,7 +113,7 @@ class UpdateServerNameResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateServerNameResponse.
+        r"""Sets the error_code of this UpdateServerNameResponse.
 
         任务错误码。
 

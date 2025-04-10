@@ -27,7 +27,7 @@ class DebugSecurityDlfDataWareHousesRequest:
     }
 
     def __init__(self, workspace=None, dw_id=None):
-        """DebugSecurityDlfDataWareHousesRequest
+        r"""DebugSecurityDlfDataWareHousesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DebugSecurityDlfDataWareHousesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DebugSecurityDlfDataWareHousesRequest.
+        r"""Gets the workspace of this DebugSecurityDlfDataWareHousesRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DebugSecurityDlfDataWareHousesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DebugSecurityDlfDataWareHousesRequest.
+        r"""Sets the workspace of this DebugSecurityDlfDataWareHousesRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DebugSecurityDlfDataWareHousesRequest:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this DebugSecurityDlfDataWareHousesRequest.
+        r"""Gets the dw_id of this DebugSecurityDlfDataWareHousesRequest.
 
         数据连接id
 
@@ -81,7 +81,7 @@ class DebugSecurityDlfDataWareHousesRequest:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this DebugSecurityDlfDataWareHousesRequest.
+        r"""Sets the dw_id of this DebugSecurityDlfDataWareHousesRequest.
 
         数据连接id
 

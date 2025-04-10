@@ -29,7 +29,7 @@ class SetSecondLevelMonitorRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """SetSecondLevelMonitorRequest
+        r"""SetSecondLevelMonitorRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetSecondLevelMonitorRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetSecondLevelMonitorRequest.
+        r"""Gets the instance_id of this SetSecondLevelMonitorRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class SetSecondLevelMonitorRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetSecondLevelMonitorRequest.
+        r"""Sets the instance_id of this SetSecondLevelMonitorRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class SetSecondLevelMonitorRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetSecondLevelMonitorRequest.
+        r"""Gets the x_language of this SetSecondLevelMonitorRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class SetSecondLevelMonitorRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetSecondLevelMonitorRequest.
+        r"""Sets the x_language of this SetSecondLevelMonitorRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class SetSecondLevelMonitorRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetSecondLevelMonitorRequest.
+        r"""Gets the body of this SetSecondLevelMonitorRequest.
 
         :return: The body of this SetSecondLevelMonitorRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SecondMonitor`
@@ -109,7 +109,7 @@ class SetSecondLevelMonitorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetSecondLevelMonitorRequest.
+        r"""Sets the body of this SetSecondLevelMonitorRequest.
 
         :param body: The body of this SetSecondLevelMonitorRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SecondMonitor`

@@ -29,7 +29,7 @@ class EnableCertificateAuthorityCrlRequestBody:
     }
 
     def __init__(self, crl_name=None, obs_bucket_name=None, valid_days=None):
-        """EnableCertificateAuthorityCrlRequestBody
+        r"""EnableCertificateAuthorityCrlRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EnableCertificateAuthorityCrlRequestBody:
 
     @property
     def crl_name(self):
-        """Gets the crl_name of this EnableCertificateAuthorityCrlRequestBody.
+        r"""Gets the crl_name of this EnableCertificateAuthorityCrlRequestBody.
 
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
@@ -66,7 +66,7 @@ class EnableCertificateAuthorityCrlRequestBody:
 
     @crl_name.setter
     def crl_name(self, crl_name):
-        """Sets the crl_name of this EnableCertificateAuthorityCrlRequestBody.
+        r"""Sets the crl_name of this EnableCertificateAuthorityCrlRequestBody.
 
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
@@ -77,7 +77,7 @@ class EnableCertificateAuthorityCrlRequestBody:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this EnableCertificateAuthorityCrlRequestBody.
+        r"""Gets the obs_bucket_name of this EnableCertificateAuthorityCrlRequestBody.
 
         OBS桶名称。 > - 用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
@@ -88,7 +88,7 @@ class EnableCertificateAuthorityCrlRequestBody:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this EnableCertificateAuthorityCrlRequestBody.
+        r"""Sets the obs_bucket_name of this EnableCertificateAuthorityCrlRequestBody.
 
         OBS桶名称。 > - 用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
@@ -99,7 +99,7 @@ class EnableCertificateAuthorityCrlRequestBody:
 
     @property
     def valid_days(self):
-        """Gets the valid_days of this EnableCertificateAuthorityCrlRequestBody.
+        r"""Gets the valid_days of this EnableCertificateAuthorityCrlRequestBody.
 
         CRL更新周期，单位为\"天\"。
 
@@ -110,7 +110,7 @@ class EnableCertificateAuthorityCrlRequestBody:
 
     @valid_days.setter
     def valid_days(self, valid_days):
-        """Sets the valid_days of this EnableCertificateAuthorityCrlRequestBody.
+        r"""Sets the valid_days of this EnableCertificateAuthorityCrlRequestBody.
 
         CRL更新周期，单位为\"天\"。
 

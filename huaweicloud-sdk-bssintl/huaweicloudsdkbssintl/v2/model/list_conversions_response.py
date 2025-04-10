@@ -26,7 +26,7 @@ class ListConversionsResponse(SdkResponse):
     }
 
     def __init__(self, conversions=None):
-        """ListConversionsResponse
+        r"""ListConversionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListConversionsResponse(SdkResponse):
 
     @property
     def conversions(self):
-        """Gets the conversions of this ListConversionsResponse.
+        r"""Gets the conversions of this ListConversionsResponse.
 
         度量单位的换算信息，具体参见表3。
 
@@ -55,7 +55,7 @@ class ListConversionsResponse(SdkResponse):
 
     @conversions.setter
     def conversions(self, conversions):
-        """Sets the conversions of this ListConversionsResponse.
+        r"""Sets the conversions of this ListConversionsResponse.
 
         度量单位的换算信息，具体参见表3。
 

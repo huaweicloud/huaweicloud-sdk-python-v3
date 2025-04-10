@@ -33,7 +33,7 @@ class Compliance:
     }
 
     def __init__(self, checkitem_id=None, checkpoint_id=None, spec_id=None, status=None, properties=None):
-        """Compliance
+        r"""Compliance
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class Compliance:
 
     @property
     def checkitem_id(self):
-        """Gets the checkitem_id of this Compliance.
+        r"""Gets the checkitem_id of this Compliance.
 
         检查项（检查规则）编号
 
@@ -78,7 +78,7 @@ class Compliance:
 
     @checkitem_id.setter
     def checkitem_id(self, checkitem_id):
-        """Sets the checkitem_id of this Compliance.
+        r"""Sets the checkitem_id of this Compliance.
 
         检查项（检查规则）编号
 
@@ -89,7 +89,7 @@ class Compliance:
 
     @property
     def checkpoint_id(self):
-        """Gets the checkpoint_id of this Compliance.
+        r"""Gets the checkpoint_id of this Compliance.
 
         检查点（检查结果）编号，检查项对同一个资源的检查结果
 
@@ -100,7 +100,7 @@ class Compliance:
 
     @checkpoint_id.setter
     def checkpoint_id(self, checkpoint_id):
-        """Sets the checkpoint_id of this Compliance.
+        r"""Sets the checkpoint_id of this Compliance.
 
         检查点（检查结果）编号，检查项对同一个资源的检查结果
 
@@ -111,7 +111,7 @@ class Compliance:
 
     @property
     def spec_id(self):
-        """Gets the spec_id of this Compliance.
+        r"""Gets the spec_id of this Compliance.
 
         检查规范编号，默认选第一个
 
@@ -122,7 +122,7 @@ class Compliance:
 
     @spec_id.setter
     def spec_id(self, spec_id):
-        """Sets the spec_id of this Compliance.
+        r"""Sets the spec_id of this Compliance.
 
         检查规范编号，默认选第一个
 
@@ -133,7 +133,7 @@ class Compliance:
 
     @property
     def status(self):
-        """Gets the status of this Compliance.
+        r"""Gets the status of this Compliance.
 
         合规检查结果，取值定义：PASSED、WARNING、FAILED、NOT_AVAILABLE。 说明： PASSED - 接受评估的所有资源都已通过安全检查。 WARNING - 某些信息缺失或配置不支持此检查。 FAILED - 至少有一个接受评估的资源未能通过安全检查。 NOT_AVAILABLE - 由于服务中断或 API 错误，无法执行检查。
 
@@ -144,7 +144,7 @@ class Compliance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Compliance.
+        r"""Sets the status of this Compliance.
 
         合规检查结果，取值定义：PASSED、WARNING、FAILED、NOT_AVAILABLE。 说明： PASSED - 接受评估的所有资源都已通过安全检查。 WARNING - 某些信息缺失或配置不支持此检查。 FAILED - 至少有一个接受评估的资源未能通过安全检查。 NOT_AVAILABLE - 由于服务中断或 API 错误，无法执行检查。
 
@@ -155,7 +155,7 @@ class Compliance:
 
     @property
     def properties(self):
-        """Gets the properties of this Compliance.
+        r"""Gets the properties of this Compliance.
 
         属性信息
 
@@ -166,7 +166,7 @@ class Compliance:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this Compliance.
+        r"""Sets the properties of this Compliance.
 
         属性信息
 

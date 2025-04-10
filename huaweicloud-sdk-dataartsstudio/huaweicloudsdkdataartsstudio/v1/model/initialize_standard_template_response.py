@@ -26,7 +26,7 @@ class InitializeStandardTemplateResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """InitializeStandardTemplateResponse
+        r"""InitializeStandardTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InitializeStandardTemplateResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this InitializeStandardTemplateResponse.
+        r"""Gets the data of this InitializeStandardTemplateResponse.
 
         :return: The data of this InitializeStandardTemplateResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.InitializeStandardTemplateResultData`
@@ -53,7 +53,7 @@ class InitializeStandardTemplateResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this InitializeStandardTemplateResponse.
+        r"""Sets the data of this InitializeStandardTemplateResponse.
 
         :param data: The data of this InitializeStandardTemplateResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.InitializeStandardTemplateResultData`

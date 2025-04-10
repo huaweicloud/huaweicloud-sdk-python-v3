@@ -30,7 +30,7 @@ class ListTablesStatisticResponse(SdkResponse):
     }
 
     def __init__(self, collect_time=None, data=None, count=None):
-        """ListTablesStatisticResponse
+        r"""ListTablesStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTablesStatisticResponse(SdkResponse):
 
     @property
     def collect_time(self):
-        """Gets the collect_time of this ListTablesStatisticResponse.
+        r"""Gets the collect_time of this ListTablesStatisticResponse.
 
         数据采集时间毫秒级时间戳。
 
@@ -69,7 +69,7 @@ class ListTablesStatisticResponse(SdkResponse):
 
     @collect_time.setter
     def collect_time(self, collect_time):
-        """Sets the collect_time of this ListTablesStatisticResponse.
+        r"""Sets the collect_time of this ListTablesStatisticResponse.
 
         数据采集时间毫秒级时间戳。
 
@@ -80,7 +80,7 @@ class ListTablesStatisticResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListTablesStatisticResponse.
+        r"""Gets the data of this ListTablesStatisticResponse.
 
         表倾斜率或脏页率列表。
 
@@ -91,7 +91,7 @@ class ListTablesStatisticResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListTablesStatisticResponse.
+        r"""Sets the data of this ListTablesStatisticResponse.
 
         表倾斜率或脏页率列表。
 
@@ -102,7 +102,7 @@ class ListTablesStatisticResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTablesStatisticResponse.
+        r"""Gets the count of this ListTablesStatisticResponse.
 
         总列表大小。
 
@@ -113,7 +113,7 @@ class ListTablesStatisticResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTablesStatisticResponse.
+        r"""Sets the count of this ListTablesStatisticResponse.
 
         总列表大小。
 

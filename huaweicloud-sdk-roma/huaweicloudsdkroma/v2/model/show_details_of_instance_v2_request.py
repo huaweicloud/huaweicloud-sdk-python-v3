@@ -25,7 +25,7 @@ class ShowDetailsOfInstanceV2Request:
     }
 
     def __init__(self, instance_id=None):
-        """ShowDetailsOfInstanceV2Request
+        r"""ShowDetailsOfInstanceV2Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDetailsOfInstanceV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfInstanceV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfInstanceV2Request.
 
         实例ID
 
@@ -53,7 +53,7 @@ class ShowDetailsOfInstanceV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfInstanceV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfInstanceV2Request.
 
         实例ID
 

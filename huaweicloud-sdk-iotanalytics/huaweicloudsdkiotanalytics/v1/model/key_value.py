@@ -27,7 +27,7 @@ class KeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """KeyValue
+        r"""KeyValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeyValue:
 
     @property
     def key(self):
-        """Gets the key of this KeyValue.
+        r"""Gets the key of this KeyValue.
 
         键。
 
@@ -61,7 +61,7 @@ class KeyValue:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this KeyValue.
+        r"""Sets the key of this KeyValue.
 
         键。
 
@@ -72,7 +72,7 @@ class KeyValue:
 
     @property
     def value(self):
-        """Gets the value of this KeyValue.
+        r"""Gets the value of this KeyValue.
 
         值。
 
@@ -83,7 +83,7 @@ class KeyValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this KeyValue.
+        r"""Sets the value of this KeyValue.
 
         值。
 

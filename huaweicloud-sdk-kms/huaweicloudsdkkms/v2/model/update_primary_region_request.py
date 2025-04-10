@@ -27,7 +27,7 @@ class UpdatePrimaryRegionRequest:
     }
 
     def __init__(self, key_id=None, body=None):
-        """UpdatePrimaryRegionRequest
+        r"""UpdatePrimaryRegionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePrimaryRegionRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this UpdatePrimaryRegionRequest.
+        r"""Gets the key_id of this UpdatePrimaryRegionRequest.
 
         待更新的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -60,7 +60,7 @@ class UpdatePrimaryRegionRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this UpdatePrimaryRegionRequest.
+        r"""Sets the key_id of this UpdatePrimaryRegionRequest.
 
         待更新的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -71,7 +71,7 @@ class UpdatePrimaryRegionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrimaryRegionRequest.
+        r"""Gets the body of this UpdatePrimaryRegionRequest.
 
         :return: The body of this UpdatePrimaryRegionRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.UpdatePrimaryRegionRequestBody`
@@ -80,7 +80,7 @@ class UpdatePrimaryRegionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrimaryRegionRequest.
+        r"""Sets the body of this UpdatePrimaryRegionRequest.
 
         :param body: The body of this UpdatePrimaryRegionRequest.
         :type body: :class:`huaweicloudsdkkms.v2.UpdatePrimaryRegionRequestBody`

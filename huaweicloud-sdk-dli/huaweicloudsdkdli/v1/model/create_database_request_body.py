@@ -31,7 +31,7 @@ class CreateDatabaseRequestBody:
     }
 
     def __init__(self, database_name=None, description=None, enterprise_project_id=None, tags=None):
-        """CreateDatabaseRequestBody
+        r"""CreateDatabaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateDatabaseRequestBody:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateDatabaseRequestBody.
+        r"""Gets the database_name of this CreateDatabaseRequestBody.
 
         新增数据库名称。 说明： “default”为内置数据库，不能创建名为“default”的数据库。
 
@@ -74,7 +74,7 @@ class CreateDatabaseRequestBody:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateDatabaseRequestBody.
+        r"""Sets the database_name of this CreateDatabaseRequestBody.
 
         新增数据库名称。 说明： “default”为内置数据库，不能创建名为“default”的数据库。
 
@@ -85,7 +85,7 @@ class CreateDatabaseRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateDatabaseRequestBody.
+        r"""Gets the description of this CreateDatabaseRequestBody.
 
         新增数据库的描述信息。
 
@@ -96,7 +96,7 @@ class CreateDatabaseRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDatabaseRequestBody.
+        r"""Sets the description of this CreateDatabaseRequestBody.
 
         新增数据库的描述信息。
 
@@ -107,7 +107,7 @@ class CreateDatabaseRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDatabaseRequestBody.
+        r"""Gets the enterprise_project_id of this CreateDatabaseRequestBody.
 
         企业项目ID，“0”表示default，即默认的企业项目。关于如何设置企业项目请参考《企业管理用户指南》。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -118,7 +118,7 @@ class CreateDatabaseRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDatabaseRequestBody.
+        r"""Sets the enterprise_project_id of this CreateDatabaseRequestBody.
 
         企业项目ID，“0”表示default，即默认的企业项目。关于如何设置企业项目请参考《企业管理用户指南》。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -129,7 +129,7 @@ class CreateDatabaseRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDatabaseRequestBody.
+        r"""Gets the tags of this CreateDatabaseRequestBody.
 
         标签
 
@@ -140,7 +140,7 @@ class CreateDatabaseRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDatabaseRequestBody.
+        r"""Sets the tags of this CreateDatabaseRequestBody.
 
         标签
 

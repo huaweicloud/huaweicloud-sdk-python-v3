@@ -28,7 +28,7 @@ class UpdateResJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None):
-        """UpdateResJobResponse
+        r"""UpdateResJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateResJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateResJobResponse.
+        r"""Gets the is_success of this UpdateResJobResponse.
 
         是否成功
 
@@ -62,7 +62,7 @@ class UpdateResJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateResJobResponse.
+        r"""Sets the is_success of this UpdateResJobResponse.
 
         是否成功
 
@@ -73,7 +73,7 @@ class UpdateResJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateResJobResponse.
+        r"""Gets the message of this UpdateResJobResponse.
 
         返回消息
 
@@ -84,7 +84,7 @@ class UpdateResJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateResJobResponse.
+        r"""Sets the message of this UpdateResJobResponse.
 
         返回消息
 

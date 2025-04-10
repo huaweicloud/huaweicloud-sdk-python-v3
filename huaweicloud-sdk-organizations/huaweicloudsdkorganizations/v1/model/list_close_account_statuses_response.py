@@ -26,7 +26,7 @@ class ListCloseAccountStatusesResponse(SdkResponse):
     }
 
     def __init__(self, close_account_statuses=None):
-        """ListCloseAccountStatusesResponse
+        r"""ListCloseAccountStatusesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCloseAccountStatusesResponse(SdkResponse):
 
     @property
     def close_account_statuses(self):
-        """Gets the close_account_statuses of this ListCloseAccountStatusesResponse.
+        r"""Gets the close_account_statuses of this ListCloseAccountStatusesResponse.
 
         包含有关请求的详细信息的对象列表。
 
@@ -55,7 +55,7 @@ class ListCloseAccountStatusesResponse(SdkResponse):
 
     @close_account_statuses.setter
     def close_account_statuses(self, close_account_statuses):
-        """Sets the close_account_statuses of this ListCloseAccountStatusesResponse.
+        r"""Sets the close_account_statuses of this ListCloseAccountStatusesResponse.
 
         包含有关请求的详细信息的对象列表。
 

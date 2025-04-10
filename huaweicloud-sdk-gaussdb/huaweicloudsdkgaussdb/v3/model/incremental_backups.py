@@ -35,7 +35,7 @@ class IncrementalBackups:
     }
 
     def __init__(self, id=None, name=None, begin_time=None, end_time=None, size=None, instance_id=None):
-        """IncrementalBackups
+        r"""IncrementalBackups
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IncrementalBackups:
 
     @property
     def id(self):
-        """Gets the id of this IncrementalBackups.
+        r"""Gets the id of this IncrementalBackups.
 
         备份ID。
 
@@ -89,7 +89,7 @@ class IncrementalBackups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IncrementalBackups.
+        r"""Sets the id of this IncrementalBackups.
 
         备份ID。
 
@@ -100,7 +100,7 @@ class IncrementalBackups:
 
     @property
     def name(self):
-        """Gets the name of this IncrementalBackups.
+        r"""Gets the name of this IncrementalBackups.
 
         备份名称。
 
@@ -111,7 +111,7 @@ class IncrementalBackups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IncrementalBackups.
+        r"""Sets the name of this IncrementalBackups.
 
         备份名称。
 
@@ -122,7 +122,7 @@ class IncrementalBackups:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this IncrementalBackups.
+        r"""Gets the begin_time of this IncrementalBackups.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -133,7 +133,7 @@ class IncrementalBackups:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this IncrementalBackups.
+        r"""Sets the begin_time of this IncrementalBackups.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -144,7 +144,7 @@ class IncrementalBackups:
 
     @property
     def end_time(self):
-        """Gets the end_time of this IncrementalBackups.
+        r"""Gets the end_time of this IncrementalBackups.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -155,7 +155,7 @@ class IncrementalBackups:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this IncrementalBackups.
+        r"""Sets the end_time of this IncrementalBackups.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -166,7 +166,7 @@ class IncrementalBackups:
 
     @property
     def size(self):
-        """Gets the size of this IncrementalBackups.
+        r"""Gets the size of this IncrementalBackups.
 
         备份大小，(单位：KB)。
 
@@ -177,7 +177,7 @@ class IncrementalBackups:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this IncrementalBackups.
+        r"""Sets the size of this IncrementalBackups.
 
         备份大小，(单位：KB)。
 
@@ -188,7 +188,7 @@ class IncrementalBackups:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this IncrementalBackups.
+        r"""Gets the instance_id of this IncrementalBackups.
 
         实例ID。
 
@@ -199,7 +199,7 @@ class IncrementalBackups:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this IncrementalBackups.
+        r"""Sets the instance_id of this IncrementalBackups.
 
         实例ID。
 

@@ -24,7 +24,7 @@ class DownloadBuildLogResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadBuildLogResponse
+        r"""DownloadBuildLogResponse
 
         The model defined in huaweicloud sdk
 

@@ -24,7 +24,7 @@ class DeleteKvResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteKvResponse
+        r"""DeleteKvResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class Filter:
     }
 
     def __init__(self, condition=None, is_support_filter=None, rule=None):
-        """Filter
+        r"""Filter
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Filter:
 
     @property
     def condition(self):
-        """Gets the condition of this Filter.
+        r"""Gets the condition of this Filter.
 
         多条件关系。 - AND 表示所有过滤条件满足后生效。 - OR 表示有任意一个条件满足时生效。
 
@@ -65,7 +65,7 @@ class Filter:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this Filter.
+        r"""Sets the condition of this Filter.
 
         多条件关系。 - AND 表示所有过滤条件满足后生效。 - OR 表示有任意一个条件满足时生效。
 
@@ -76,7 +76,7 @@ class Filter:
 
     @property
     def is_support_filter(self):
-        """Gets the is_support_filter of this Filter.
+        r"""Gets the is_support_filter of this Filter.
 
         是否打开高级筛选开关。
 
@@ -87,7 +87,7 @@ class Filter:
 
     @is_support_filter.setter
     def is_support_filter(self, is_support_filter):
-        """Sets the is_support_filter of this Filter.
+        r"""Sets the is_support_filter of this Filter.
 
         是否打开高级筛选开关。
 
@@ -98,7 +98,7 @@ class Filter:
 
     @property
     def rule(self):
-        """Gets the rule of this Filter.
+        r"""Gets the rule of this Filter.
 
         高级过滤条件规则，示例如下：\"key != value\"，格式为：字段 规则 值。 -字段取值范围：api_version,code,trace_rating,trace_type,resource_id,resource_name。 -规则：!= 或 =。 - 值：api_version正则约束：^(a-zA-Z0-9_-.){1,64}$；code：最小长度1，最大长度256；trace_rating枚举值：\"normal\", \"warning\", \"incident\"；trace_type枚举值：\"ConsoleAction\", \"ApiCall\", \"SystemAction\"；resource_id：最小长度1，最大长度350；resource_name：最小长度1，最大长度256
 
@@ -109,7 +109,7 @@ class Filter:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this Filter.
+        r"""Sets the rule of this Filter.
 
         高级过滤条件规则，示例如下：\"key != value\"，格式为：字段 规则 值。 -字段取值范围：api_version,code,trace_rating,trace_type,resource_id,resource_name。 -规则：!= 或 =。 - 值：api_version正则约束：^(a-zA-Z0-9_-.){1,64}$；code：最小长度1，最大长度256；trace_rating枚举值：\"normal\", \"warning\", \"incident\"；trace_type枚举值：\"ConsoleAction\", \"ApiCall\", \"SystemAction\"；resource_id：最小长度1，最大长度350；resource_name：最小长度1，最大长度256
 

@@ -33,7 +33,7 @@ class ReceptorDrugFileReq:
     }
 
     def __init__(self, source=None, url=None, format=None, data=None, add_hydrogen=None):
-        """ReceptorDrugFileReq
+        r"""ReceptorDrugFileReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ReceptorDrugFileReq:
 
     @property
     def source(self):
-        """Gets the source of this ReceptorDrugFileReq.
+        r"""Gets the source of this ReceptorDrugFileReq.
 
         :return: The source of this ReceptorDrugFileReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -79,7 +79,7 @@ class ReceptorDrugFileReq:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ReceptorDrugFileReq.
+        r"""Sets the source of this ReceptorDrugFileReq.
 
         :param source: The source of this ReceptorDrugFileReq.
         :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -88,7 +88,7 @@ class ReceptorDrugFileReq:
 
     @property
     def url(self):
-        """Gets the url of this ReceptorDrugFileReq.
+        r"""Gets the url of this ReceptorDrugFileReq.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -99,7 +99,7 @@ class ReceptorDrugFileReq:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ReceptorDrugFileReq.
+        r"""Sets the url of this ReceptorDrugFileReq.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -110,7 +110,7 @@ class ReceptorDrugFileReq:
 
     @property
     def format(self):
-        """Gets the format of this ReceptorDrugFileReq.
+        r"""Gets the format of this ReceptorDrugFileReq.
 
         文件格式，仅支持PDB，仅数据源为RAW时提供
 
@@ -121,7 +121,7 @@ class ReceptorDrugFileReq:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ReceptorDrugFileReq.
+        r"""Sets the format of this ReceptorDrugFileReq.
 
         文件格式，仅支持PDB，仅数据源为RAW时提供
 
@@ -132,7 +132,7 @@ class ReceptorDrugFileReq:
 
     @property
     def data(self):
-        """Gets the data of this ReceptorDrugFileReq.
+        r"""Gets the data of this ReceptorDrugFileReq.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -143,7 +143,7 @@ class ReceptorDrugFileReq:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ReceptorDrugFileReq.
+        r"""Sets the data of this ReceptorDrugFileReq.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -154,7 +154,7 @@ class ReceptorDrugFileReq:
 
     @property
     def add_hydrogen(self):
-        """Gets the add_hydrogen of this ReceptorDrugFileReq.
+        r"""Gets the add_hydrogen of this ReceptorDrugFileReq.
 
         增加氢原子
 
@@ -165,7 +165,7 @@ class ReceptorDrugFileReq:
 
     @add_hydrogen.setter
     def add_hydrogen(self, add_hydrogen):
-        """Sets the add_hydrogen of this ReceptorDrugFileReq.
+        r"""Sets the add_hydrogen of this ReceptorDrugFileReq.
 
         增加氢原子
 

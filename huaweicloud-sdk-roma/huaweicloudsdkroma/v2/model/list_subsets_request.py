@@ -37,7 +37,7 @@ class ListSubsetsRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, limit=None, device_name=None, status=None, online_status=None, offset=None):
-        """ListSubsetsRequest
+        r"""ListSubsetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListSubsetsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSubsetsRequest.
+        r"""Gets the instance_id of this ListSubsetsRequest.
 
         实例ID
 
@@ -94,7 +94,7 @@ class ListSubsetsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSubsetsRequest.
+        r"""Sets the instance_id of this ListSubsetsRequest.
 
         实例ID
 
@@ -105,7 +105,7 @@ class ListSubsetsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListSubsetsRequest.
+        r"""Gets the device_id of this ListSubsetsRequest.
 
         设备ID
 
@@ -116,7 +116,7 @@ class ListSubsetsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListSubsetsRequest.
+        r"""Sets the device_id of this ListSubsetsRequest.
 
         设备ID
 
@@ -127,7 +127,7 @@ class ListSubsetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubsetsRequest.
+        r"""Gets the limit of this ListSubsetsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -138,7 +138,7 @@ class ListSubsetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubsetsRequest.
+        r"""Sets the limit of this ListSubsetsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -149,7 +149,7 @@ class ListSubsetsRequest:
 
     @property
     def device_name(self):
-        """Gets the device_name of this ListSubsetsRequest.
+        r"""Gets the device_name of this ListSubsetsRequest.
 
         设备名称
 
@@ -160,7 +160,7 @@ class ListSubsetsRequest:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this ListSubsetsRequest.
+        r"""Sets the device_name of this ListSubsetsRequest.
 
         设备名称
 
@@ -171,7 +171,7 @@ class ListSubsetsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSubsetsRequest.
+        r"""Gets the status of this ListSubsetsRequest.
 
         设备状态 0-启动 1-停用
 
@@ -182,7 +182,7 @@ class ListSubsetsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubsetsRequest.
+        r"""Sets the status of this ListSubsetsRequest.
 
         设备状态 0-启动 1-停用
 
@@ -193,7 +193,7 @@ class ListSubsetsRequest:
 
     @property
     def online_status(self):
-        """Gets the online_status of this ListSubsetsRequest.
+        r"""Gets the online_status of this ListSubsetsRequest.
 
         设备状态 0-未连接 1-在线 2-离线
 
@@ -204,7 +204,7 @@ class ListSubsetsRequest:
 
     @online_status.setter
     def online_status(self, online_status):
-        """Sets the online_status of this ListSubsetsRequest.
+        r"""Sets the online_status of this ListSubsetsRequest.
 
         设备状态 0-未连接 1-在线 2-离线
 
@@ -215,7 +215,7 @@ class ListSubsetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubsetsRequest.
+        r"""Gets the offset of this ListSubsetsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -226,7 +226,7 @@ class ListSubsetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubsetsRequest.
+        r"""Sets the offset of this ListSubsetsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

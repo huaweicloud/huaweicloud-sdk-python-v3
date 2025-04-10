@@ -47,7 +47,7 @@ class ListCentralNetworkConnectionsRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, state=None, central_network_id=None, global_connection_bandwidth_id=None, bandwidth_type=None, connection_type=None, is_cross_region=None):
-        """ListCentralNetworkConnectionsRequest
+        r"""ListCentralNetworkConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the limit of this ListCentralNetworkConnectionsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -130,7 +130,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the limit of this ListCentralNetworkConnectionsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -141,7 +141,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the marker of this ListCentralNetworkConnectionsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -152,7 +152,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the marker of this ListCentralNetworkConnectionsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -163,7 +163,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the sort_key of this ListCentralNetworkConnectionsRequest.
 
         排序字段。
 
@@ -174,7 +174,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the sort_key of this ListCentralNetworkConnectionsRequest.
 
         排序字段。
 
@@ -185,7 +185,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the sort_dir of this ListCentralNetworkConnectionsRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -196,7 +196,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the sort_dir of this ListCentralNetworkConnectionsRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -207,7 +207,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the id of this ListCentralNetworkConnectionsRequest.
 
         根据id查询，可查询多个id。
 
@@ -218,7 +218,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the id of this ListCentralNetworkConnectionsRequest.
 
         根据id查询，可查询多个id。
 
@@ -229,7 +229,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the name of this ListCentralNetworkConnectionsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -240,7 +240,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the name of this ListCentralNetworkConnectionsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -251,7 +251,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the state of this ListCentralNetworkConnectionsRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -262,7 +262,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the state of this ListCentralNetworkConnectionsRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -273,7 +273,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the central_network_id of this ListCentralNetworkConnectionsRequest.
 
         中心网络的ID。
 
@@ -284,7 +284,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the central_network_id of this ListCentralNetworkConnectionsRequest.
 
         中心网络的ID。
 
@@ -295,7 +295,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the global_connection_bandwidth_id of this ListCentralNetworkConnectionsRequest.
 
         根据带宽包ID过滤。
 
@@ -306,7 +306,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the global_connection_bandwidth_id of this ListCentralNetworkConnectionsRequest.
 
         根据带宽包ID过滤。
 
@@ -317,7 +317,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the bandwidth_type of this ListCentralNetworkConnectionsRequest.
 
         根据带宽类型查询。带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
 
@@ -328,7 +328,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the bandwidth_type of this ListCentralNetworkConnectionsRequest.
 
         根据带宽类型查询。带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
 
@@ -339,7 +339,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the connection_type of this ListCentralNetworkConnectionsRequest.
 
         连接类型，支持。
 
@@ -350,7 +350,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the connection_type of this ListCentralNetworkConnectionsRequest.
 
         连接类型，支持。
 
@@ -361,7 +361,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @property
     def is_cross_region(self):
-        """Gets the is_cross_region of this ListCentralNetworkConnectionsRequest.
+        r"""Gets the is_cross_region of this ListCentralNetworkConnectionsRequest.
 
         是否跨地域。
 
@@ -372,7 +372,7 @@ class ListCentralNetworkConnectionsRequest:
 
     @is_cross_region.setter
     def is_cross_region(self, is_cross_region):
-        """Sets the is_cross_region of this ListCentralNetworkConnectionsRequest.
+        r"""Sets the is_cross_region of this ListCentralNetworkConnectionsRequest.
 
         是否跨地域。
 

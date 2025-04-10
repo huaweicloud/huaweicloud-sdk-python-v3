@@ -31,7 +31,7 @@ class DiskusageTopicEntity:
     }
 
     def __init__(self, size=None, topic_name=None, topic_partition=None, percentage=None):
-        """DiskusageTopicEntity
+        r"""DiskusageTopicEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DiskusageTopicEntity:
 
     @property
     def size(self):
-        """Gets the size of this DiskusageTopicEntity.
+        r"""Gets the size of this DiskusageTopicEntity.
 
         磁盘使用量。
 
@@ -75,7 +75,7 @@ class DiskusageTopicEntity:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DiskusageTopicEntity.
+        r"""Sets the size of this DiskusageTopicEntity.
 
         磁盘使用量。
 
@@ -86,7 +86,7 @@ class DiskusageTopicEntity:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this DiskusageTopicEntity.
+        r"""Gets the topic_name of this DiskusageTopicEntity.
 
         topic名称。
 
@@ -97,7 +97,7 @@ class DiskusageTopicEntity:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this DiskusageTopicEntity.
+        r"""Sets the topic_name of this DiskusageTopicEntity.
 
         topic名称。
 
@@ -108,7 +108,7 @@ class DiskusageTopicEntity:
 
     @property
     def topic_partition(self):
-        """Gets the topic_partition of this DiskusageTopicEntity.
+        r"""Gets the topic_partition of this DiskusageTopicEntity.
 
         分区。
 
@@ -119,7 +119,7 @@ class DiskusageTopicEntity:
 
     @topic_partition.setter
     def topic_partition(self, topic_partition):
-        """Sets the topic_partition of this DiskusageTopicEntity.
+        r"""Sets the topic_partition of this DiskusageTopicEntity.
 
         分区。
 
@@ -130,7 +130,7 @@ class DiskusageTopicEntity:
 
     @property
     def percentage(self):
-        """Gets the percentage of this DiskusageTopicEntity.
+        r"""Gets the percentage of this DiskusageTopicEntity.
 
         磁盘使用量的占比。
 
@@ -141,7 +141,7 @@ class DiskusageTopicEntity:
 
     @percentage.setter
     def percentage(self, percentage):
-        """Sets the percentage of this DiskusageTopicEntity.
+        r"""Sets the percentage of this DiskusageTopicEntity.
 
         磁盘使用量的占比。
 

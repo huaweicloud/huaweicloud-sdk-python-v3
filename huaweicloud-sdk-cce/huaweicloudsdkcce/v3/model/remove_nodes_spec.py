@@ -27,7 +27,7 @@ class RemoveNodesSpec:
     }
 
     def __init__(self, login=None, nodes=None):
-        """RemoveNodesSpec
+        r"""RemoveNodesSpec
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RemoveNodesSpec:
 
     @property
     def login(self):
-        """Gets the login of this RemoveNodesSpec.
+        r"""Gets the login of this RemoveNodesSpec.
 
         :return: The login of this RemoveNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
@@ -57,7 +57,7 @@ class RemoveNodesSpec:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this RemoveNodesSpec.
+        r"""Sets the login of this RemoveNodesSpec.
 
         :param login: The login of this RemoveNodesSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -66,7 +66,7 @@ class RemoveNodesSpec:
 
     @property
     def nodes(self):
-        """Gets the nodes of this RemoveNodesSpec.
+        r"""Gets the nodes of this RemoveNodesSpec.
 
         待操作节点列表
 
@@ -77,7 +77,7 @@ class RemoveNodesSpec:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this RemoveNodesSpec.
+        r"""Sets the nodes of this RemoveNodesSpec.
 
         待操作节点列表
 

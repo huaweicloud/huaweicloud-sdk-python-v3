@@ -41,7 +41,7 @@ class TaskGroupSrcNode:
     }
 
     def __init__(self, ak=None, sk=None, json_auth_file=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
-        """TaskGroupSrcNode
+        r"""TaskGroupSrcNode
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TaskGroupSrcNode:
 
     @property
     def ak(self):
-        """Gets the ak of this TaskGroupSrcNode.
+        r"""Gets the ak of this TaskGroupSrcNode.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -110,7 +110,7 @@ class TaskGroupSrcNode:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this TaskGroupSrcNode.
+        r"""Sets the ak of this TaskGroupSrcNode.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -121,7 +121,7 @@ class TaskGroupSrcNode:
 
     @property
     def sk(self):
-        """Gets the sk of this TaskGroupSrcNode.
+        r"""Gets the sk of this TaskGroupSrcNode.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -132,7 +132,7 @@ class TaskGroupSrcNode:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this TaskGroupSrcNode.
+        r"""Sets the sk of this TaskGroupSrcNode.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -143,7 +143,7 @@ class TaskGroupSrcNode:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this TaskGroupSrcNode.
+        r"""Gets the json_auth_file of this TaskGroupSrcNode.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -154,7 +154,7 @@ class TaskGroupSrcNode:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this TaskGroupSrcNode.
+        r"""Sets the json_auth_file of this TaskGroupSrcNode.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -165,7 +165,7 @@ class TaskGroupSrcNode:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TaskGroupSrcNode.
+        r"""Gets the app_id of this TaskGroupSrcNode.
 
         当源端为腾讯云时，需要填写此参数。
 
@@ -176,7 +176,7 @@ class TaskGroupSrcNode:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TaskGroupSrcNode.
+        r"""Sets the app_id of this TaskGroupSrcNode.
 
         当源端为腾讯云时，需要填写此参数。
 
@@ -187,7 +187,7 @@ class TaskGroupSrcNode:
 
     @property
     def region(self):
-        """Gets the region of this TaskGroupSrcNode.
+        r"""Gets the region of this TaskGroupSrcNode.
 
         源端桶所处的区域，task_type为非URL_LIST时，本参数为必选。
 
@@ -198,7 +198,7 @@ class TaskGroupSrcNode:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TaskGroupSrcNode.
+        r"""Sets the region of this TaskGroupSrcNode.
 
         源端桶所处的区域，task_type为非URL_LIST时，本参数为必选。
 
@@ -209,7 +209,7 @@ class TaskGroupSrcNode:
 
     @property
     def object_key(self):
-        """Gets the object_key of this TaskGroupSrcNode.
+        r"""Gets the object_key of this TaskGroupSrcNode.
 
         任务类型为前缀迁移任务时，表示待迁移前缀。 整桶迁移时，此参数设置为[\"\"]。
 
@@ -220,7 +220,7 @@ class TaskGroupSrcNode:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this TaskGroupSrcNode.
+        r"""Sets the object_key of this TaskGroupSrcNode.
 
         任务类型为前缀迁移任务时，表示待迁移前缀。 整桶迁移时，此参数设置为[\"\"]。
 
@@ -231,7 +231,7 @@ class TaskGroupSrcNode:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskGroupSrcNode.
+        r"""Gets the bucket of this TaskGroupSrcNode.
 
         源端所在桶
 
@@ -242,7 +242,7 @@ class TaskGroupSrcNode:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskGroupSrcNode.
+        r"""Sets the bucket of this TaskGroupSrcNode.
 
         源端所在桶
 
@@ -253,7 +253,7 @@ class TaskGroupSrcNode:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this TaskGroupSrcNode.
+        r"""Gets the cloud_type of this TaskGroupSrcNode.
 
         源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource、Google或者UCloud。默认值为Aliyun。
 
@@ -264,7 +264,7 @@ class TaskGroupSrcNode:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this TaskGroupSrcNode.
+        r"""Sets the cloud_type of this TaskGroupSrcNode.
 
         源端云服务提供商，当task_type为URL_LIST时，本参数为URLSource且必选。可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、URLSource、Google或者UCloud。默认值为Aliyun。
 
@@ -275,7 +275,7 @@ class TaskGroupSrcNode:
 
     @property
     def list_file(self):
-        """Gets the list_file of this TaskGroupSrcNode.
+        r"""Gets the list_file of this TaskGroupSrcNode.
 
         :return: The list_file of this TaskGroupSrcNode.
         :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
@@ -284,7 +284,7 @@ class TaskGroupSrcNode:
 
     @list_file.setter
     def list_file(self, list_file):
-        """Sets the list_file of this TaskGroupSrcNode.
+        r"""Sets the list_file of this TaskGroupSrcNode.
 
         :param list_file: The list_file of this TaskGroupSrcNode.
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`

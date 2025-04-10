@@ -27,7 +27,7 @@ class ShowWorkSpaceRequest:
     }
 
     def __init__(self, instance_id=None, workspace_id=None):
-        """ShowWorkSpaceRequest
+        r"""ShowWorkSpaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowWorkSpaceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowWorkSpaceRequest.
+        r"""Gets the instance_id of this ShowWorkSpaceRequest.
 
         DataArtsStudio实例id
 
@@ -59,7 +59,7 @@ class ShowWorkSpaceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowWorkSpaceRequest.
+        r"""Sets the instance_id of this ShowWorkSpaceRequest.
 
         DataArtsStudio实例id
 
@@ -70,7 +70,7 @@ class ShowWorkSpaceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowWorkSpaceRequest.
+        r"""Gets the workspace_id of this ShowWorkSpaceRequest.
 
         工作空间id
 
@@ -81,7 +81,7 @@ class ShowWorkSpaceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowWorkSpaceRequest.
+        r"""Sets the workspace_id of this ShowWorkSpaceRequest.
 
         工作空间id
 

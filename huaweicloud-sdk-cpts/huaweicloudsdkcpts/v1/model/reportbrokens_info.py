@@ -33,7 +33,7 @@ class ReportbrokensInfo:
     }
 
     def __init__(self, brand_brokens=None, common_timestamps=None, respcode_brokens=None, tps_brokens=None, vusers_brokens=None):
-        """ReportbrokensInfo
+        r"""ReportbrokensInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ReportbrokensInfo:
 
     @property
     def brand_brokens(self):
-        """Gets the brand_brokens of this ReportbrokensInfo.
+        r"""Gets the brand_brokens of this ReportbrokensInfo.
 
         :return: The brand_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
@@ -80,7 +80,7 @@ class ReportbrokensInfo:
 
     @brand_brokens.setter
     def brand_brokens(self, brand_brokens):
-        """Sets the brand_brokens of this ReportbrokensInfo.
+        r"""Sets the brand_brokens of this ReportbrokensInfo.
 
         :param brand_brokens: The brand_brokens of this ReportbrokensInfo.
         :type brand_brokens: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
@@ -89,7 +89,7 @@ class ReportbrokensInfo:
 
     @property
     def common_timestamps(self):
-        """Gets the common_timestamps of this ReportbrokensInfo.
+        r"""Gets the common_timestamps of this ReportbrokensInfo.
 
         时间戳
 
@@ -100,7 +100,7 @@ class ReportbrokensInfo:
 
     @common_timestamps.setter
     def common_timestamps(self, common_timestamps):
-        """Sets the common_timestamps of this ReportbrokensInfo.
+        r"""Sets the common_timestamps of this ReportbrokensInfo.
 
         时间戳
 
@@ -111,7 +111,7 @@ class ReportbrokensInfo:
 
     @property
     def respcode_brokens(self):
-        """Gets the respcode_brokens of this ReportbrokensInfo.
+        r"""Gets the respcode_brokens of this ReportbrokensInfo.
 
         :return: The respcode_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
@@ -120,7 +120,7 @@ class ReportbrokensInfo:
 
     @respcode_brokens.setter
     def respcode_brokens(self, respcode_brokens):
-        """Sets the respcode_brokens of this ReportbrokensInfo.
+        r"""Sets the respcode_brokens of this ReportbrokensInfo.
 
         :param respcode_brokens: The respcode_brokens of this ReportbrokensInfo.
         :type respcode_brokens: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
@@ -129,7 +129,7 @@ class ReportbrokensInfo:
 
     @property
     def tps_brokens(self):
-        """Gets the tps_brokens of this ReportbrokensInfo.
+        r"""Gets the tps_brokens of this ReportbrokensInfo.
 
         :return: The tps_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.TpsBrokens`
@@ -138,7 +138,7 @@ class ReportbrokensInfo:
 
     @tps_brokens.setter
     def tps_brokens(self, tps_brokens):
-        """Sets the tps_brokens of this ReportbrokensInfo.
+        r"""Sets the tps_brokens of this ReportbrokensInfo.
 
         :param tps_brokens: The tps_brokens of this ReportbrokensInfo.
         :type tps_brokens: :class:`huaweicloudsdkcpts.v1.TpsBrokens`
@@ -147,7 +147,7 @@ class ReportbrokensInfo:
 
     @property
     def vusers_brokens(self):
-        """Gets the vusers_brokens of this ReportbrokensInfo.
+        r"""Gets the vusers_brokens of this ReportbrokensInfo.
 
         :return: The vusers_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.VusersBrokens`
@@ -156,7 +156,7 @@ class ReportbrokensInfo:
 
     @vusers_brokens.setter
     def vusers_brokens(self, vusers_brokens):
-        """Sets the vusers_brokens of this ReportbrokensInfo.
+        r"""Sets the vusers_brokens of this ReportbrokensInfo.
 
         :param vusers_brokens: The vusers_brokens of this ReportbrokensInfo.
         :type vusers_brokens: :class:`huaweicloudsdkcpts.v1.VusersBrokens`

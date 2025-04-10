@@ -24,7 +24,7 @@ class CreateAppResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateAppResponse
+        r"""CreateAppResponse
 
         The model defined in huaweicloud sdk
 

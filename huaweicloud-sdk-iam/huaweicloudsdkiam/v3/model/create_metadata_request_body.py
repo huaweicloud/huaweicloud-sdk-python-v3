@@ -29,7 +29,7 @@ class CreateMetadataRequestBody:
     }
 
     def __init__(self, domain_id=None, xaccount_type=None, metadata=None):
-        """CreateMetadataRequestBody
+        r"""CreateMetadataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateMetadataRequestBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateMetadataRequestBody.
+        r"""Gets the domain_id of this CreateMetadataRequestBody.
 
         用户所属账号ID。
 
@@ -65,7 +65,7 @@ class CreateMetadataRequestBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateMetadataRequestBody.
+        r"""Sets the domain_id of this CreateMetadataRequestBody.
 
         用户所属账号ID。
 
@@ -76,7 +76,7 @@ class CreateMetadataRequestBody:
 
     @property
     def xaccount_type(self):
-        """Gets the xaccount_type of this CreateMetadataRequestBody.
+        r"""Gets the xaccount_type of this CreateMetadataRequestBody.
 
         该字段为标识租户来源字段，默认为空。
 
@@ -87,7 +87,7 @@ class CreateMetadataRequestBody:
 
     @xaccount_type.setter
     def xaccount_type(self, xaccount_type):
-        """Sets the xaccount_type of this CreateMetadataRequestBody.
+        r"""Sets the xaccount_type of this CreateMetadataRequestBody.
 
         该字段为标识租户来源字段，默认为空。
 
@@ -98,7 +98,7 @@ class CreateMetadataRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateMetadataRequestBody.
+        r"""Gets the metadata of this CreateMetadataRequestBody.
 
         该字段为用户IdP服务器的Metadata文件的内容。
 
@@ -109,7 +109,7 @@ class CreateMetadataRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateMetadataRequestBody.
+        r"""Sets the metadata of this CreateMetadataRequestBody.
 
         该字段为用户IdP服务器的Metadata文件的内容。
 

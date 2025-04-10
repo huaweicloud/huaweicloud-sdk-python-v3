@@ -31,7 +31,7 @@ class ShowProjectReleaseFilesRequest:
     }
 
     def __init__(self, file_name=None, limit=None, offset=None, project_id=None):
-        """ShowProjectReleaseFilesRequest
+        r"""ShowProjectReleaseFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowProjectReleaseFilesRequest:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ShowProjectReleaseFilesRequest.
+        r"""Gets the file_name of this ShowProjectReleaseFilesRequest.
 
         文件名称，模糊搜索
 
@@ -73,7 +73,7 @@ class ShowProjectReleaseFilesRequest:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ShowProjectReleaseFilesRequest.
+        r"""Sets the file_name of this ShowProjectReleaseFilesRequest.
 
         文件名称，模糊搜索
 
@@ -84,7 +84,7 @@ class ShowProjectReleaseFilesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowProjectReleaseFilesRequest.
+        r"""Gets the limit of this ShowProjectReleaseFilesRequest.
 
         每页显示的条目数量
 
@@ -95,7 +95,7 @@ class ShowProjectReleaseFilesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowProjectReleaseFilesRequest.
+        r"""Sets the limit of this ShowProjectReleaseFilesRequest.
 
         每页显示的条目数量
 
@@ -106,7 +106,7 @@ class ShowProjectReleaseFilesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowProjectReleaseFilesRequest.
+        r"""Gets the offset of this ShowProjectReleaseFilesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -117,7 +117,7 @@ class ShowProjectReleaseFilesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowProjectReleaseFilesRequest.
+        r"""Sets the offset of this ShowProjectReleaseFilesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -128,7 +128,7 @@ class ShowProjectReleaseFilesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectReleaseFilesRequest.
+        r"""Gets the project_id of this ShowProjectReleaseFilesRequest.
 
         项目id
 
@@ -139,7 +139,7 @@ class ShowProjectReleaseFilesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectReleaseFilesRequest.
+        r"""Sets the project_id of this ShowProjectReleaseFilesRequest.
 
         项目id
 

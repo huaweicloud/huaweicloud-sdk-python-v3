@@ -34,7 +34,7 @@ class ShowCorpResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, admin_info=None, res_info=None, group_dto=None, id=None):
-        """ShowCorpResponse
+        r"""ShowCorpResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowCorpResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowCorpResponse.
+        r"""Gets the basic_info of this ShowCorpResponse.
 
         :return: The basic_info of this ShowCorpResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
@@ -81,7 +81,7 @@ class ShowCorpResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowCorpResponse.
+        r"""Sets the basic_info of this ShowCorpResponse.
 
         :param basic_info: The basic_info of this ShowCorpResponse.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
@@ -90,7 +90,7 @@ class ShowCorpResponse(SdkResponse):
 
     @property
     def admin_info(self):
-        """Gets the admin_info of this ShowCorpResponse.
+        r"""Gets the admin_info of this ShowCorpResponse.
 
         :return: The admin_info of this ShowCorpResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
@@ -99,7 +99,7 @@ class ShowCorpResponse(SdkResponse):
 
     @admin_info.setter
     def admin_info(self, admin_info):
-        """Sets the admin_info of this ShowCorpResponse.
+        r"""Sets the admin_info of this ShowCorpResponse.
 
         :param admin_info: The admin_info of this ShowCorpResponse.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
@@ -108,7 +108,7 @@ class ShowCorpResponse(SdkResponse):
 
     @property
     def res_info(self):
-        """Gets the res_info of this ShowCorpResponse.
+        r"""Gets the res_info of this ShowCorpResponse.
 
         :return: The res_info of this ShowCorpResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
@@ -117,7 +117,7 @@ class ShowCorpResponse(SdkResponse):
 
     @res_info.setter
     def res_info(self, res_info):
-        """Sets the res_info of this ShowCorpResponse.
+        r"""Sets the res_info of this ShowCorpResponse.
 
         :param res_info: The res_info of this ShowCorpResponse.
         :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
@@ -126,7 +126,7 @@ class ShowCorpResponse(SdkResponse):
 
     @property
     def group_dto(self):
-        """Gets the group_dto of this ShowCorpResponse.
+        r"""Gets the group_dto of this ShowCorpResponse.
 
         :return: The group_dto of this ShowCorpResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
@@ -135,7 +135,7 @@ class ShowCorpResponse(SdkResponse):
 
     @group_dto.setter
     def group_dto(self, group_dto):
-        """Sets the group_dto of this ShowCorpResponse.
+        r"""Sets the group_dto of this ShowCorpResponse.
 
         :param group_dto: The group_dto of this ShowCorpResponse.
         :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
@@ -144,7 +144,7 @@ class ShowCorpResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowCorpResponse.
+        r"""Gets the id of this ShowCorpResponse.
 
         企业id。
 
@@ -155,7 +155,7 @@ class ShowCorpResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCorpResponse.
+        r"""Sets the id of this ShowCorpResponse.
 
         企业id。
 

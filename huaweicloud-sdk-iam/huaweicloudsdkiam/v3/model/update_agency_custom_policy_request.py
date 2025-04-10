@@ -27,7 +27,7 @@ class UpdateAgencyCustomPolicyRequest:
     }
 
     def __init__(self, role_id=None, body=None):
-        """UpdateAgencyCustomPolicyRequest
+        r"""UpdateAgencyCustomPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAgencyCustomPolicyRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this UpdateAgencyCustomPolicyRequest.
+        r"""Gets the role_id of this UpdateAgencyCustomPolicyRequest.
 
         待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
@@ -60,7 +60,7 @@ class UpdateAgencyCustomPolicyRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this UpdateAgencyCustomPolicyRequest.
+        r"""Sets the role_id of this UpdateAgencyCustomPolicyRequest.
 
         待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
@@ -71,7 +71,7 @@ class UpdateAgencyCustomPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgencyCustomPolicyRequest.
+        r"""Gets the body of this UpdateAgencyCustomPolicyRequest.
 
         :return: The body of this UpdateAgencyCustomPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateAgencyCustomPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgencyCustomPolicyRequest.
+        r"""Sets the body of this UpdateAgencyCustomPolicyRequest.
 
         :param body: The body of this UpdateAgencyCustomPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyRequestBody`

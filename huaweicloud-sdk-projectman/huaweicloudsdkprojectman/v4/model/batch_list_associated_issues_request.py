@@ -29,7 +29,7 @@ class BatchListAssociatedIssuesRequest:
     }
 
     def __init__(self, project_id=None, limit=None, offset=None):
-        """BatchListAssociatedIssuesRequest
+        r"""BatchListAssociatedIssuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchListAssociatedIssuesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchListAssociatedIssuesRequest.
+        r"""Gets the project_id of this BatchListAssociatedIssuesRequest.
 
         devcloud项目的32位id
 
@@ -67,7 +67,7 @@ class BatchListAssociatedIssuesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchListAssociatedIssuesRequest.
+        r"""Sets the project_id of this BatchListAssociatedIssuesRequest.
 
         devcloud项目的32位id
 
@@ -78,7 +78,7 @@ class BatchListAssociatedIssuesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListAssociatedIssuesRequest.
+        r"""Gets the limit of this BatchListAssociatedIssuesRequest.
 
         每页数量
 
@@ -89,7 +89,7 @@ class BatchListAssociatedIssuesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListAssociatedIssuesRequest.
+        r"""Sets the limit of this BatchListAssociatedIssuesRequest.
 
         每页数量
 
@@ -100,7 +100,7 @@ class BatchListAssociatedIssuesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListAssociatedIssuesRequest.
+        r"""Gets the offset of this BatchListAssociatedIssuesRequest.
 
         偏移量
 
@@ -111,7 +111,7 @@ class BatchListAssociatedIssuesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListAssociatedIssuesRequest.
+        r"""Sets the offset of this BatchListAssociatedIssuesRequest.
 
         偏移量
 

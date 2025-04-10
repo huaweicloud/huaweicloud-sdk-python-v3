@@ -39,7 +39,7 @@ class ObsScanResultInfo:
     }
 
     def __init__(self, task_id=None, bucket_id=None, bucket_name=None, file_path=None, file_name=None, md5=None, risk_level=None, sensitive_data_type=None):
-        """ObsScanResultInfo
+        r"""ObsScanResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ObsScanResultInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ObsScanResultInfo.
+        r"""Gets the task_id of this ObsScanResultInfo.
 
         任务ID
 
@@ -103,7 +103,7 @@ class ObsScanResultInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ObsScanResultInfo.
+        r"""Sets the task_id of this ObsScanResultInfo.
 
         任务ID
 
@@ -114,7 +114,7 @@ class ObsScanResultInfo:
 
     @property
     def bucket_id(self):
-        """Gets the bucket_id of this ObsScanResultInfo.
+        r"""Gets the bucket_id of this ObsScanResultInfo.
 
         OBS桶ID
 
@@ -125,7 +125,7 @@ class ObsScanResultInfo:
 
     @bucket_id.setter
     def bucket_id(self, bucket_id):
-        """Sets the bucket_id of this ObsScanResultInfo.
+        r"""Sets the bucket_id of this ObsScanResultInfo.
 
         OBS桶ID
 
@@ -136,7 +136,7 @@ class ObsScanResultInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ObsScanResultInfo.
+        r"""Gets the bucket_name of this ObsScanResultInfo.
 
         OBS桶名称
 
@@ -147,7 +147,7 @@ class ObsScanResultInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ObsScanResultInfo.
+        r"""Sets the bucket_name of this ObsScanResultInfo.
 
         OBS桶名称
 
@@ -158,7 +158,7 @@ class ObsScanResultInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ObsScanResultInfo.
+        r"""Gets the file_path of this ObsScanResultInfo.
 
         文件路径
 
@@ -169,7 +169,7 @@ class ObsScanResultInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ObsScanResultInfo.
+        r"""Sets the file_path of this ObsScanResultInfo.
 
         文件路径
 
@@ -180,7 +180,7 @@ class ObsScanResultInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ObsScanResultInfo.
+        r"""Gets the file_name of this ObsScanResultInfo.
 
         文件名
 
@@ -191,7 +191,7 @@ class ObsScanResultInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ObsScanResultInfo.
+        r"""Sets the file_name of this ObsScanResultInfo.
 
         文件名
 
@@ -202,7 +202,7 @@ class ObsScanResultInfo:
 
     @property
     def md5(self):
-        """Gets the md5 of this ObsScanResultInfo.
+        r"""Gets the md5 of this ObsScanResultInfo.
 
         文件md5值
 
@@ -213,7 +213,7 @@ class ObsScanResultInfo:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this ObsScanResultInfo.
+        r"""Sets the md5 of this ObsScanResultInfo.
 
         文件md5值
 
@@ -224,7 +224,7 @@ class ObsScanResultInfo:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ObsScanResultInfo.
+        r"""Gets the risk_level of this ObsScanResultInfo.
 
         风险等级
 
@@ -235,7 +235,7 @@ class ObsScanResultInfo:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ObsScanResultInfo.
+        r"""Sets the risk_level of this ObsScanResultInfo.
 
         风险等级
 
@@ -246,7 +246,7 @@ class ObsScanResultInfo:
 
     @property
     def sensitive_data_type(self):
-        """Gets the sensitive_data_type of this ObsScanResultInfo.
+        r"""Gets the sensitive_data_type of this ObsScanResultInfo.
 
         风险数据类型
 
@@ -257,7 +257,7 @@ class ObsScanResultInfo:
 
     @sensitive_data_type.setter
     def sensitive_data_type(self, sensitive_data_type):
-        """Sets the sensitive_data_type of this ObsScanResultInfo.
+        r"""Sets the sensitive_data_type of this ObsScanResultInfo.
 
         风险数据类型
 

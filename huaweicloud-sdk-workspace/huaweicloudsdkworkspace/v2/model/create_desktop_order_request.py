@@ -25,7 +25,7 @@ class CreateDesktopOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDesktopOrderRequest
+        r"""CreateDesktopOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDesktopOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopOrderRequest.
+        r"""Gets the body of this CreateDesktopOrderRequest.
 
         :return: The body of this CreateDesktopOrderRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopOrderRequestBody`
@@ -52,7 +52,7 @@ class CreateDesktopOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopOrderRequest.
+        r"""Sets the body of this CreateDesktopOrderRequest.
 
         :param body: The body of this CreateDesktopOrderRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateDesktopOrderRequestBody`

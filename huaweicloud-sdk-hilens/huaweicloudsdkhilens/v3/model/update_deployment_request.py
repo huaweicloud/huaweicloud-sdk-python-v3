@@ -31,7 +31,7 @@ class UpdateDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None, provider=None, x_expired_time=None, body=None):
-        """UpdateDeploymentRequest
+        r"""UpdateDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this UpdateDeploymentRequest.
+        r"""Gets the deployment_id of this UpdateDeploymentRequest.
 
         部署ID
 
@@ -74,7 +74,7 @@ class UpdateDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this UpdateDeploymentRequest.
+        r"""Sets the deployment_id of this UpdateDeploymentRequest.
 
         部署ID
 
@@ -85,7 +85,7 @@ class UpdateDeploymentRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this UpdateDeploymentRequest.
+        r"""Gets the provider of this UpdateDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据。
 
@@ -96,7 +96,7 @@ class UpdateDeploymentRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this UpdateDeploymentRequest.
+        r"""Sets the provider of this UpdateDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据。
 
@@ -107,7 +107,7 @@ class UpdateDeploymentRequest:
 
     @property
     def x_expired_time(self):
-        """Gets the x_expired_time of this UpdateDeploymentRequest.
+        r"""Gets the x_expired_time of this UpdateDeploymentRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 
@@ -118,7 +118,7 @@ class UpdateDeploymentRequest:
 
     @x_expired_time.setter
     def x_expired_time(self, x_expired_time):
-        """Sets the x_expired_time of this UpdateDeploymentRequest.
+        r"""Sets the x_expired_time of this UpdateDeploymentRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 
@@ -129,7 +129,7 @@ class UpdateDeploymentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeploymentRequest.
+        r"""Gets the body of this UpdateDeploymentRequest.
 
         :return: The body of this UpdateDeploymentRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentUpdateRequest`
@@ -138,7 +138,7 @@ class UpdateDeploymentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeploymentRequest.
+        r"""Sets the body of this UpdateDeploymentRequest.
 
         :param body: The body of this UpdateDeploymentRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.DeploymentUpdateRequest`

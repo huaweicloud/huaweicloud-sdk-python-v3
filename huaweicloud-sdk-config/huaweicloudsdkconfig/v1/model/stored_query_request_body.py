@@ -31,7 +31,7 @@ class StoredQueryRequestBody:
     }
 
     def __init__(self, name=None, type=None, description=None, expression=None):
-        """StoredQueryRequestBody
+        r"""StoredQueryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class StoredQueryRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this StoredQueryRequestBody.
+        r"""Gets the name of this StoredQueryRequestBody.
 
         ResourceQL 名字
 
@@ -73,7 +73,7 @@ class StoredQueryRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StoredQueryRequestBody.
+        r"""Sets the name of this StoredQueryRequestBody.
 
         ResourceQL 名字
 
@@ -84,7 +84,7 @@ class StoredQueryRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this StoredQueryRequestBody.
+        r"""Gets the type of this StoredQueryRequestBody.
 
         自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
 
@@ -95,7 +95,7 @@ class StoredQueryRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StoredQueryRequestBody.
+        r"""Sets the type of this StoredQueryRequestBody.
 
         自定义查询类型，枚举值为“account”和“aggregator”。若取值为“account”，表示单帐号的自定义查询语句；若取值为“aggregator”，表示聚合器的自定义查询语句。默认值为“account”。
 
@@ -106,7 +106,7 @@ class StoredQueryRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this StoredQueryRequestBody.
+        r"""Gets the description of this StoredQueryRequestBody.
 
         ResourceQL 描述
 
@@ -117,7 +117,7 @@ class StoredQueryRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StoredQueryRequestBody.
+        r"""Sets the description of this StoredQueryRequestBody.
 
         ResourceQL 描述
 
@@ -128,7 +128,7 @@ class StoredQueryRequestBody:
 
     @property
     def expression(self):
-        """Gets the expression of this StoredQueryRequestBody.
+        r"""Gets the expression of this StoredQueryRequestBody.
 
         ResourceQL 表达式
 
@@ -139,7 +139,7 @@ class StoredQueryRequestBody:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this StoredQueryRequestBody.
+        r"""Sets the expression of this StoredQueryRequestBody.
 
         ResourceQL 表达式
 

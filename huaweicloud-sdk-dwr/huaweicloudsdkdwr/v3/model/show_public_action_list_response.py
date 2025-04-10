@@ -42,7 +42,7 @@ class ShowPublicActionListResponse(SdkResponse):
     }
 
     def __init__(self, count=None, action_templates=None, total=None, is_truncated=None, offset=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ShowPublicActionListResponse
+        r"""ShowPublicActionListResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowPublicActionListResponse.
+        r"""Gets the count of this ShowPublicActionListResponse.
 
         列表条目数
 
@@ -111,7 +111,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowPublicActionListResponse.
+        r"""Sets the count of this ShowPublicActionListResponse.
 
         列表条目数
 
@@ -122,7 +122,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def action_templates(self):
-        """Gets the action_templates of this ShowPublicActionListResponse.
+        r"""Gets the action_templates of this ShowPublicActionListResponse.
 
         模板列表信息
 
@@ -133,7 +133,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @action_templates.setter
     def action_templates(self, action_templates):
-        """Sets the action_templates of this ShowPublicActionListResponse.
+        r"""Sets the action_templates of this ShowPublicActionListResponse.
 
         模板列表信息
 
@@ -144,7 +144,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowPublicActionListResponse.
+        r"""Gets the total of this ShowPublicActionListResponse.
 
         列表总条目数
 
@@ -155,7 +155,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowPublicActionListResponse.
+        r"""Sets the total of this ShowPublicActionListResponse.
 
         列表总条目数
 
@@ -166,7 +166,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ShowPublicActionListResponse.
+        r"""Gets the is_truncated of this ShowPublicActionListResponse.
 
         是否为分页返回
 
@@ -177,7 +177,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ShowPublicActionListResponse.
+        r"""Sets the is_truncated of this ShowPublicActionListResponse.
 
         是否为分页返回
 
@@ -188,7 +188,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPublicActionListResponse.
+        r"""Gets the offset of this ShowPublicActionListResponse.
 
         下次查询的起始位置
 
@@ -199,7 +199,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPublicActionListResponse.
+        r"""Sets the offset of this ShowPublicActionListResponse.
 
         下次查询的起始位置
 
@@ -210,7 +210,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPublicActionListResponse.
+        r"""Gets the x_request_id of this ShowPublicActionListResponse.
 
         :return: The x_request_id of this ShowPublicActionListResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPublicActionListResponse.
+        r"""Sets the x_request_id of this ShowPublicActionListResponse.
 
         :param x_request_id: The x_request_id of this ShowPublicActionListResponse.
         :type x_request_id: str
@@ -228,7 +228,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ShowPublicActionListResponse.
+        r"""Gets the connection of this ShowPublicActionListResponse.
 
         :return: The connection of this ShowPublicActionListResponse.
         :rtype: str
@@ -237,7 +237,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ShowPublicActionListResponse.
+        r"""Sets the connection of this ShowPublicActionListResponse.
 
         :param connection: The connection of this ShowPublicActionListResponse.
         :type connection: str
@@ -246,7 +246,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ShowPublicActionListResponse.
+        r"""Gets the content_length of this ShowPublicActionListResponse.
 
         :return: The content_length of this ShowPublicActionListResponse.
         :rtype: str
@@ -255,7 +255,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ShowPublicActionListResponse.
+        r"""Sets the content_length of this ShowPublicActionListResponse.
 
         :param content_length: The content_length of this ShowPublicActionListResponse.
         :type content_length: str
@@ -264,7 +264,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ShowPublicActionListResponse.
+        r"""Gets the date of this ShowPublicActionListResponse.
 
         :return: The date of this ShowPublicActionListResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class ShowPublicActionListResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowPublicActionListResponse.
+        r"""Sets the date of this ShowPublicActionListResponse.
 
         :param date: The date of this ShowPublicActionListResponse.
         :type date: str

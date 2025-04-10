@@ -31,7 +31,7 @@ class PutRecordsResultEntry:
     }
 
     def __init__(self, partition_id=None, sequence_number=None, error_code=None, error_message=None):
-        """PutRecordsResultEntry
+        r"""PutRecordsResultEntry
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PutRecordsResultEntry:
 
     @property
     def partition_id(self):
-        """Gets the partition_id of this PutRecordsResultEntry.
+        r"""Gets the partition_id of this PutRecordsResultEntry.
 
         数据上传到的分区ID。
 
@@ -75,7 +75,7 @@ class PutRecordsResultEntry:
 
     @partition_id.setter
     def partition_id(self, partition_id):
-        """Sets the partition_id of this PutRecordsResultEntry.
+        r"""Sets the partition_id of this PutRecordsResultEntry.
 
         数据上传到的分区ID。
 
@@ -86,7 +86,7 @@ class PutRecordsResultEntry:
 
     @property
     def sequence_number(self):
-        """Gets the sequence_number of this PutRecordsResultEntry.
+        r"""Gets the sequence_number of this PutRecordsResultEntry.
 
         数据上传到的序列号。序列号是每个记录的唯一标识符。序列号由DIS在数据生产者调用PutRecords操作以添加数据到DIS数据通道时DIS服务自动分配的。同一分区键的序列号通常会随时间变化增加。PutRecords请求之间的时间段越长，序列号越大。
 
@@ -97,7 +97,7 @@ class PutRecordsResultEntry:
 
     @sequence_number.setter
     def sequence_number(self, sequence_number):
-        """Sets the sequence_number of this PutRecordsResultEntry.
+        r"""Sets the sequence_number of this PutRecordsResultEntry.
 
         数据上传到的序列号。序列号是每个记录的唯一标识符。序列号由DIS在数据生产者调用PutRecords操作以添加数据到DIS数据通道时DIS服务自动分配的。同一分区键的序列号通常会随时间变化增加。PutRecords请求之间的时间段越长，序列号越大。
 
@@ -108,7 +108,7 @@ class PutRecordsResultEntry:
 
     @property
     def error_code(self):
-        """Gets the error_code of this PutRecordsResultEntry.
+        r"""Gets the error_code of this PutRecordsResultEntry.
 
         错误码。
 
@@ -119,7 +119,7 @@ class PutRecordsResultEntry:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this PutRecordsResultEntry.
+        r"""Sets the error_code of this PutRecordsResultEntry.
 
         错误码。
 
@@ -130,7 +130,7 @@ class PutRecordsResultEntry:
 
     @property
     def error_message(self):
-        """Gets the error_message of this PutRecordsResultEntry.
+        r"""Gets the error_message of this PutRecordsResultEntry.
 
         错误消息。
 
@@ -141,7 +141,7 @@ class PutRecordsResultEntry:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this PutRecordsResultEntry.
+        r"""Sets the error_message of this PutRecordsResultEntry.
 
         错误消息。
 

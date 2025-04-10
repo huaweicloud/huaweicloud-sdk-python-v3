@@ -25,7 +25,7 @@ class CreateRetryRemuxTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRetryRemuxTaskRequest
+        r"""CreateRetryRemuxTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRetryRemuxTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRetryRemuxTaskRequest.
+        r"""Gets the body of this CreateRetryRemuxTaskRequest.
 
         :return: The body of this CreateRetryRemuxTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.RemuxRetryReq`
@@ -52,7 +52,7 @@ class CreateRetryRemuxTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRetryRemuxTaskRequest.
+        r"""Sets the body of this CreateRetryRemuxTaskRequest.
 
         :param body: The body of this CreateRetryRemuxTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.RemuxRetryReq`

@@ -23,7 +23,7 @@ class ListObsBucketsRequest:
     }
 
     def __init__(self):
-        """ListObsBucketsRequest
+        r"""ListObsBucketsRequest
 
         The model defined in huaweicloud sdk
 

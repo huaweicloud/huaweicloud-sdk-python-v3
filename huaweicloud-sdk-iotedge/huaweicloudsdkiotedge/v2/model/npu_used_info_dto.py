@@ -29,7 +29,7 @@ class NpuUsedInfoDTO:
     }
 
     def __init__(self, module_id=None, used_ai_core_num=None, used_cpu_core_num=None):
-        """NpuUsedInfoDTO
+        r"""NpuUsedInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NpuUsedInfoDTO:
 
     @property
     def module_id(self):
-        """Gets the module_id of this NpuUsedInfoDTO.
+        r"""Gets the module_id of this NpuUsedInfoDTO.
 
         模块名称
 
@@ -68,7 +68,7 @@ class NpuUsedInfoDTO:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this NpuUsedInfoDTO.
+        r"""Sets the module_id of this NpuUsedInfoDTO.
 
         模块名称
 
@@ -79,7 +79,7 @@ class NpuUsedInfoDTO:
 
     @property
     def used_ai_core_num(self):
-        """Gets the used_ai_core_num of this NpuUsedInfoDTO.
+        r"""Gets the used_ai_core_num of this NpuUsedInfoDTO.
 
         模块使用AI核的个数
 
@@ -90,7 +90,7 @@ class NpuUsedInfoDTO:
 
     @used_ai_core_num.setter
     def used_ai_core_num(self, used_ai_core_num):
-        """Sets the used_ai_core_num of this NpuUsedInfoDTO.
+        r"""Sets the used_ai_core_num of this NpuUsedInfoDTO.
 
         模块使用AI核的个数
 
@@ -101,7 +101,7 @@ class NpuUsedInfoDTO:
 
     @property
     def used_cpu_core_num(self):
-        """Gets the used_cpu_core_num of this NpuUsedInfoDTO.
+        r"""Gets the used_cpu_core_num of this NpuUsedInfoDTO.
 
         模块使用NPU芯片中的cpu核数
 
@@ -112,7 +112,7 @@ class NpuUsedInfoDTO:
 
     @used_cpu_core_num.setter
     def used_cpu_core_num(self, used_cpu_core_num):
-        """Sets the used_cpu_core_num of this NpuUsedInfoDTO.
+        r"""Sets the used_cpu_core_num of this NpuUsedInfoDTO.
 
         模块使用NPU芯片中的cpu核数
 

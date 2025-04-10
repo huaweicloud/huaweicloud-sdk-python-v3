@@ -27,7 +27,7 @@ class UpdateAutopilotAddonInstanceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateAutopilotAddonInstanceRequest
+        r"""UpdateAutopilotAddonInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAutopilotAddonInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAutopilotAddonInstanceRequest.
+        r"""Gets the id of this UpdateAutopilotAddonInstanceRequest.
 
         插件实例id
 
@@ -60,7 +60,7 @@ class UpdateAutopilotAddonInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAutopilotAddonInstanceRequest.
+        r"""Sets the id of this UpdateAutopilotAddonInstanceRequest.
 
         插件实例id
 
@@ -71,7 +71,7 @@ class UpdateAutopilotAddonInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutopilotAddonInstanceRequest.
+        r"""Gets the body of this UpdateAutopilotAddonInstanceRequest.
 
         :return: The body of this UpdateAutopilotAddonInstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceRequest`
@@ -80,7 +80,7 @@ class UpdateAutopilotAddonInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutopilotAddonInstanceRequest.
+        r"""Sets the body of this UpdateAutopilotAddonInstanceRequest.
 
         :param body: The body of this UpdateAutopilotAddonInstanceRequest.
         :type body: :class:`huaweicloudsdkcce.v3.InstanceRequest`

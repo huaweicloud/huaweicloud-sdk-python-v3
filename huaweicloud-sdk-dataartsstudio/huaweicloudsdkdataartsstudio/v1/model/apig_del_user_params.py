@@ -25,7 +25,7 @@ class ApigDelUserParams:
     }
 
     def __init__(self, user_ids=None):
-        """ApigDelUserParams
+        r"""ApigDelUserParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ApigDelUserParams:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this ApigDelUserParams.
+        r"""Gets the user_ids of this ApigDelUserParams.
 
         用户组列表
 
@@ -53,7 +53,7 @@ class ApigDelUserParams:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this ApigDelUserParams.
+        r"""Sets the user_ids of this ApigDelUserParams.
 
         用户组列表
 

@@ -27,7 +27,7 @@ class DeleteInstancesSessionRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """DeleteInstancesSessionRequest
+        r"""DeleteInstancesSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteInstancesSessionRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteInstancesSessionRequest.
+        r"""Gets the node_id of this DeleteInstancesSessionRequest.
 
         节点ID。
 
@@ -60,7 +60,7 @@ class DeleteInstancesSessionRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteInstancesSessionRequest.
+        r"""Sets the node_id of this DeleteInstancesSessionRequest.
 
         节点ID。
 
@@ -71,7 +71,7 @@ class DeleteInstancesSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteInstancesSessionRequest.
+        r"""Gets the body of this DeleteInstancesSessionRequest.
 
         :return: The body of this DeleteInstancesSessionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstancesSessionRequestBody`
@@ -80,7 +80,7 @@ class DeleteInstancesSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteInstancesSessionRequest.
+        r"""Sets the body of this DeleteInstancesSessionRequest.
 
         :param body: The body of this DeleteInstancesSessionRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstancesSessionRequestBody`

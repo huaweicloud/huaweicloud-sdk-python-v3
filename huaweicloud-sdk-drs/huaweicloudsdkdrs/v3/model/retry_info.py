@@ -27,7 +27,7 @@ class RetryInfo:
     }
 
     def __init__(self, job_id=None, is_sync_re_edit=None):
-        """RetryInfo
+        r"""RetryInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RetryInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RetryInfo.
+        r"""Gets the job_id of this RetryInfo.
 
         任务ID
 
@@ -60,7 +60,7 @@ class RetryInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RetryInfo.
+        r"""Sets the job_id of this RetryInfo.
 
         任务ID
 
@@ -71,7 +71,7 @@ class RetryInfo:
 
     @property
     def is_sync_re_edit(self):
-        """Gets the is_sync_re_edit of this RetryInfo.
+        r"""Gets the is_sync_re_edit of this RetryInfo.
 
         再编辑之后启动，必填为true。
 
@@ -82,7 +82,7 @@ class RetryInfo:
 
     @is_sync_re_edit.setter
     def is_sync_re_edit(self, is_sync_re_edit):
-        """Sets the is_sync_re_edit of this RetryInfo.
+        r"""Sets the is_sync_re_edit of this RetryInfo.
 
         再编辑之后启动，必填为true。
 

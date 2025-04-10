@@ -33,7 +33,7 @@ class SourceRsp:
     }
 
     def __init__(self, url=None, bitrate=None, width=None, height=None, enable_snapshot=None):
-        """SourceRsp
+        r"""SourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SourceRsp:
 
     @property
     def url(self):
-        """Gets the url of this SourceRsp.
+        r"""Gets the url of this SourceRsp.
 
         RTMP推流地址
 
@@ -82,7 +82,7 @@ class SourceRsp:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SourceRsp.
+        r"""Sets the url of this SourceRsp.
 
         RTMP推流地址
 
@@ -93,7 +93,7 @@ class SourceRsp:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this SourceRsp.
+        r"""Gets the bitrate of this SourceRsp.
 
         码率。  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
@@ -104,7 +104,7 @@ class SourceRsp:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this SourceRsp.
+        r"""Sets the bitrate of this SourceRsp.
 
         码率。  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
@@ -115,7 +115,7 @@ class SourceRsp:
 
     @property
     def width(self):
-        """Gets the width of this SourceRsp.
+        r"""Gets the width of this SourceRsp.
 
         分辨率对应宽的值。取值范围：0 - 4096（4K）
 
@@ -126,7 +126,7 @@ class SourceRsp:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this SourceRsp.
+        r"""Sets the width of this SourceRsp.
 
         分辨率对应宽的值。取值范围：0 - 4096（4K）
 
@@ -137,7 +137,7 @@ class SourceRsp:
 
     @property
     def height(self):
-        """Gets the height of this SourceRsp.
+        r"""Gets the height of this SourceRsp.
 
         分辨率对应高的值。取值范围：0 - 2160（4K）
 
@@ -148,7 +148,7 @@ class SourceRsp:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this SourceRsp.
+        r"""Sets the height of this SourceRsp.
 
         分辨率对应高的值。取值范围：0 - 2160（4K）
 
@@ -159,7 +159,7 @@ class SourceRsp:
 
     @property
     def enable_snapshot(self):
-        """Gets the enable_snapshot of this SourceRsp.
+        r"""Gets the enable_snapshot of this SourceRsp.
 
         描述是否使用该流做截图
 
@@ -170,7 +170,7 @@ class SourceRsp:
 
     @enable_snapshot.setter
     def enable_snapshot(self, enable_snapshot):
-        """Sets the enable_snapshot of this SourceRsp.
+        r"""Sets the enable_snapshot of this SourceRsp.
 
         描述是否使用该流做截图
 

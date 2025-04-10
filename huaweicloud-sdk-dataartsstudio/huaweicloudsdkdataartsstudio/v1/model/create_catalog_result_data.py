@@ -25,7 +25,7 @@ class CreateCatalogResultData:
     }
 
     def __init__(self, value=None):
-        """CreateCatalogResultData
+        r"""CreateCatalogResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCatalogResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateCatalogResultData.
+        r"""Gets the value of this CreateCatalogResultData.
 
         :return: The value of this CreateCatalogResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`
@@ -52,7 +52,7 @@ class CreateCatalogResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateCatalogResultData.
+        r"""Sets the value of this CreateCatalogResultData.
 
         :param value: The value of this CreateCatalogResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.BizCatalogVO`

@@ -39,7 +39,7 @@ class ResourceInstance:
     }
 
     def __init__(self, resource_id=None, provider=None, region_id=None, type=None, custom_attributes=None, agent_sn=None, agent_status=None, properties=None):
-        """ResourceInstance
+        r"""ResourceInstance
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ResourceInstance:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceInstance.
+        r"""Gets the resource_id of this ResourceInstance.
 
         实例唯一id
 
@@ -99,7 +99,7 @@ class ResourceInstance:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceInstance.
+        r"""Sets the resource_id of this ResourceInstance.
 
         实例唯一id
 
@@ -110,7 +110,7 @@ class ResourceInstance:
 
     @property
     def provider(self):
-        """Gets the provider of this ResourceInstance.
+        r"""Gets the provider of this ResourceInstance.
 
         资源提供者：ECS。单个脚本工单， 每个实例的provider是一致的
 
@@ -121,7 +121,7 @@ class ResourceInstance:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ResourceInstance.
+        r"""Sets the provider of this ResourceInstance.
 
         资源提供者：ECS。单个脚本工单， 每个实例的provider是一致的
 
@@ -132,7 +132,7 @@ class ResourceInstance:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceInstance.
+        r"""Gets the region_id of this ResourceInstance.
 
         机器所属region的ID
 
@@ -143,7 +143,7 @@ class ResourceInstance:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceInstance.
+        r"""Sets the region_id of this ResourceInstance.
 
         机器所属region的ID
 
@@ -154,7 +154,7 @@ class ResourceInstance:
 
     @property
     def type(self):
-        """Gets the type of this ResourceInstance.
+        r"""Gets the type of this ResourceInstance.
 
         资源提供者下资源类型，不传默认为CLOUDSERVER CLOUDSERVER:CLOUDSERVER类型
 
@@ -165,7 +165,7 @@ class ResourceInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceInstance.
+        r"""Sets the type of this ResourceInstance.
 
         资源提供者下资源类型，不传默认为CLOUDSERVER CLOUDSERVER:CLOUDSERVER类型
 
@@ -176,7 +176,7 @@ class ResourceInstance:
 
     @property
     def custom_attributes(self):
-        """Gets the custom_attributes of this ResourceInstance.
+        r"""Gets the custom_attributes of this ResourceInstance.
 
         支持用户自定义5个key_value形式的属性。 约束条件：  - key值长度为20     - value长度为50     - map长度最大为5
 
@@ -187,7 +187,7 @@ class ResourceInstance:
 
     @custom_attributes.setter
     def custom_attributes(self, custom_attributes):
-        """Sets the custom_attributes of this ResourceInstance.
+        r"""Sets the custom_attributes of this ResourceInstance.
 
         支持用户自定义5个key_value形式的属性。 约束条件：  - key值长度为20     - value长度为50     - map长度最大为5
 
@@ -198,7 +198,7 @@ class ResourceInstance:
 
     @property
     def agent_sn(self):
-        """Gets the agent_sn of this ResourceInstance.
+        r"""Gets the agent_sn of this ResourceInstance.
 
         agent纳管id。该参数即将废弃，请勿使用。
 
@@ -209,7 +209,7 @@ class ResourceInstance:
 
     @agent_sn.setter
     def agent_sn(self, agent_sn):
-        """Sets the agent_sn of this ResourceInstance.
+        r"""Sets the agent_sn of this ResourceInstance.
 
         agent纳管id。该参数即将废弃，请勿使用。
 
@@ -220,7 +220,7 @@ class ResourceInstance:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ResourceInstance.
+        r"""Gets the agent_status of this ResourceInstance.
 
         agent纳管状态。该参数即将废弃，请勿使用。
 
@@ -231,7 +231,7 @@ class ResourceInstance:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ResourceInstance.
+        r"""Sets the agent_status of this ResourceInstance.
 
         agent纳管状态。该参数即将废弃，请勿使用。
 
@@ -242,7 +242,7 @@ class ResourceInstance:
 
     @property
     def properties(self):
-        """Gets the properties of this ResourceInstance.
+        r"""Gets the properties of this ResourceInstance.
 
         :return: The properties of this ResourceInstance.
         :rtype: :class:`huaweicloudsdkcoc.v1.ResourceInstanceProp`
@@ -251,7 +251,7 @@ class ResourceInstance:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ResourceInstance.
+        r"""Sets the properties of this ResourceInstance.
 
         :param properties: The properties of this ResourceInstance.
         :type properties: :class:`huaweicloudsdkcoc.v1.ResourceInstanceProp`

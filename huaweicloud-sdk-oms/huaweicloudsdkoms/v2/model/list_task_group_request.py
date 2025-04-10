@@ -29,7 +29,7 @@ class ListTaskGroupRequest:
     }
 
     def __init__(self, limit=None, offset=None, status=None):
-        """ListTaskGroupRequest
+        r"""ListTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTaskGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTaskGroupRequest.
+        r"""Gets the limit of this ListTaskGroupRequest.
 
         查询返回迁移组任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
@@ -68,7 +68,7 @@ class ListTaskGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTaskGroupRequest.
+        r"""Sets the limit of this ListTaskGroupRequest.
 
         查询返回迁移组任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
@@ -79,7 +79,7 @@ class ListTaskGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTaskGroupRequest.
+        r"""Gets the offset of this ListTaskGroupRequest.
 
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
@@ -90,7 +90,7 @@ class ListTaskGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTaskGroupRequest.
+        r"""Sets the offset of this ListTaskGroupRequest.
 
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
@@ -101,7 +101,7 @@ class ListTaskGroupRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTaskGroupRequest.
+        r"""Gets the status of this ListTaskGroupRequest.
 
         迁移任务组状态（无该参数时代表查询所有状态的任务） 0 – 等待中 1 – 执行中/创建中 2 – 监控任务执行 3 – 暂停 4 – 创建任务失败 5 – 迁移失败 6 – 迁移完成 7 – 暂停中 8 – 等待删除中 9 – 删除
 
@@ -112,7 +112,7 @@ class ListTaskGroupRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTaskGroupRequest.
+        r"""Sets the status of this ListTaskGroupRequest.
 
         迁移任务组状态（无该参数时代表查询所有状态的任务） 0 – 等待中 1 – 执行中/创建中 2 – 监控任务执行 3 – 暂停 4 – 创建任务失败 5 – 迁移失败 6 – 迁移完成 7 – 暂停中 8 – 等待删除中 9 – 删除
 

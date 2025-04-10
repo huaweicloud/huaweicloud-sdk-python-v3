@@ -24,7 +24,7 @@ class UpdateMessageEmailConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMessageEmailConfigResponse
+        r"""UpdateMessageEmailConfigResponse
 
         The model defined in huaweicloud sdk
 

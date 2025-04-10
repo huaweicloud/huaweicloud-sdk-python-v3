@@ -27,7 +27,7 @@ class CreateNotifyPolicyRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """CreateNotifyPolicyRequest
+        r"""CreateNotifyPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateNotifyPolicyRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateNotifyPolicyRequest.
+        r"""Gets the topic_urn of this CreateNotifyPolicyRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class CreateNotifyPolicyRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateNotifyPolicyRequest.
+        r"""Sets the topic_urn of this CreateNotifyPolicyRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class CreateNotifyPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNotifyPolicyRequest.
+        r"""Gets the body of this CreateNotifyPolicyRequest.
 
         :return: The body of this CreateNotifyPolicyRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.NotifyPolicyRequestBody`
@@ -80,7 +80,7 @@ class CreateNotifyPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNotifyPolicyRequest.
+        r"""Sets the body of this CreateNotifyPolicyRequest.
 
         :param body: The body of this CreateNotifyPolicyRequest.
         :type body: :class:`huaweicloudsdksmn.v2.NotifyPolicyRequestBody`

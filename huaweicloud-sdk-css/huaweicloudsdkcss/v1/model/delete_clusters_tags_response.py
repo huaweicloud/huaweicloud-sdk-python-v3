@@ -24,7 +24,7 @@ class DeleteClustersTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteClustersTagsResponse
+        r"""DeleteClustersTagsResponse
 
         The model defined in huaweicloud sdk
 

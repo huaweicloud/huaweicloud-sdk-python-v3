@@ -53,7 +53,7 @@ class ListNatGatewayDnatRulesRequest:
     }
 
     def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None, marker=None):
-        """ListNatGatewayDnatRulesRequest
+        r"""ListNatGatewayDnatRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the admin_state_up of this ListNatGatewayDnatRulesRequest.
 
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -152,7 +152,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the admin_state_up of this ListNatGatewayDnatRulesRequest.
 
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -163,7 +163,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def external_service_port(self):
-        """Gets the external_service_port of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the external_service_port of this ListNatGatewayDnatRulesRequest.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -174,7 +174,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @external_service_port.setter
     def external_service_port(self, external_service_port):
-        """Sets the external_service_port of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the external_service_port of this ListNatGatewayDnatRulesRequest.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -185,7 +185,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the floating_ip_address of this ListNatGatewayDnatRulesRequest.
 
         弹性公网的IP地址。
 
@@ -196,7 +196,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the floating_ip_address of this ListNatGatewayDnatRulesRequest.
 
         弹性公网的IP地址。
 
@@ -207,7 +207,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the status of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -218,7 +218,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the status of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -229,7 +229,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the floating_ip_id of this ListNatGatewayDnatRulesRequest.
 
         弹性公网IP的id。
 
@@ -240,7 +240,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the floating_ip_id of this ListNatGatewayDnatRulesRequest.
 
         弹性公网IP的id。
 
@@ -251,7 +251,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def internal_service_port(self):
-        """Gets the internal_service_port of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the internal_service_port of this ListNatGatewayDnatRulesRequest.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -262,7 +262,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @internal_service_port.setter
     def internal_service_port(self, internal_service_port):
-        """Sets the internal_service_port of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the internal_service_port of this ListNatGatewayDnatRulesRequest.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -273,7 +273,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the limit of this ListNatGatewayDnatRulesRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -284,7 +284,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the limit of this ListNatGatewayDnatRulesRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -295,7 +295,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the id of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的ID。
 
@@ -306,7 +306,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the id of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的ID。
 
@@ -317,7 +317,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the description of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -328,7 +328,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the description of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -339,7 +339,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the created_at of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -350,7 +350,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the created_at of this ListNatGatewayDnatRulesRequest.
 
         DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -361,7 +361,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the nat_gateway_id of this ListNatGatewayDnatRulesRequest.
 
         公网NAT网关实例的ID。
 
@@ -372,7 +372,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the nat_gateway_id of this ListNatGatewayDnatRulesRequest.
 
         公网NAT网关实例的ID。
 
@@ -383,7 +383,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the port_id of this ListNatGatewayDnatRulesRequest.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -394,7 +394,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the port_id of this ListNatGatewayDnatRulesRequest.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -405,7 +405,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the private_ip of this ListNatGatewayDnatRulesRequest.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -416,7 +416,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the private_ip of this ListNatGatewayDnatRulesRequest.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -427,7 +427,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the protocol of this ListNatGatewayDnatRulesRequest.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -438,7 +438,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the protocol of this ListNatGatewayDnatRulesRequest.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -449,7 +449,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListNatGatewayDnatRulesRequest.
+        r"""Gets the marker of this ListNatGatewayDnatRulesRequest.
 
         分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
 
@@ -460,7 +460,7 @@ class ListNatGatewayDnatRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListNatGatewayDnatRulesRequest.
+        r"""Sets the marker of this ListNatGatewayDnatRulesRequest.
 
         分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
 

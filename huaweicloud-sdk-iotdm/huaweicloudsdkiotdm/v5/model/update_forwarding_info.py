@@ -25,7 +25,7 @@ class UpdateForwardingInfo:
     }
 
     def __init__(self, enable_snat=None):
-        """UpdateForwardingInfo
+        r"""UpdateForwardingInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateForwardingInfo:
 
     @property
     def enable_snat(self):
-        """Gets the enable_snat of this UpdateForwardingInfo.
+        r"""Gets the enable_snat of this UpdateForwardingInfo.
 
         **参数说明**：是否启用SNAT配置。企业版实例开启SNAT配置后，可以在公共网络中进行外部通信。 约束：只有企业版实例支持配置SNAT配置，SNAT配置开启后将不支持关闭 **取值范围**： - true: 启用SNAT配置 
 
@@ -53,7 +53,7 @@ class UpdateForwardingInfo:
 
     @enable_snat.setter
     def enable_snat(self, enable_snat):
-        """Sets the enable_snat of this UpdateForwardingInfo.
+        r"""Sets the enable_snat of this UpdateForwardingInfo.
 
         **参数说明**：是否启用SNAT配置。企业版实例开启SNAT配置后，可以在公共网络中进行外部通信。 约束：只有企业版实例支持配置SNAT配置，SNAT配置开启后将不支持关闭 **取值范围**： - true: 启用SNAT配置 
 

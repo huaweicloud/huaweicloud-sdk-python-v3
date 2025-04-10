@@ -33,7 +33,7 @@ class IdentityAssumerole:
     }
 
     def __init__(self, agency_name=None, domain_id=None, domain_name=None, duration_seconds=None, session_user=None):
-        """IdentityAssumerole
+        r"""IdentityAssumerole
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class IdentityAssumerole:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this IdentityAssumerole.
+        r"""Gets the agency_name of this IdentityAssumerole.
 
         委托名。
 
@@ -81,7 +81,7 @@ class IdentityAssumerole:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this IdentityAssumerole.
+        r"""Sets the agency_name of this IdentityAssumerole.
 
         委托名。
 
@@ -92,7 +92,7 @@ class IdentityAssumerole:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IdentityAssumerole.
+        r"""Gets the domain_id of this IdentityAssumerole.
 
         委托方的账号ID。“domain_id”与“domain_name”至少填写一个。
 
@@ -103,7 +103,7 @@ class IdentityAssumerole:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IdentityAssumerole.
+        r"""Sets the domain_id of this IdentityAssumerole.
 
         委托方的账号ID。“domain_id”与“domain_name”至少填写一个。
 
@@ -114,7 +114,7 @@ class IdentityAssumerole:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this IdentityAssumerole.
+        r"""Gets the domain_name of this IdentityAssumerole.
 
         委托方的账号名。“domain_id”与“domain_name”至少填写一个。
 
@@ -125,7 +125,7 @@ class IdentityAssumerole:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this IdentityAssumerole.
+        r"""Sets the domain_name of this IdentityAssumerole.
 
         委托方的账号名。“domain_id”与“domain_name”至少填写一个。
 
@@ -136,7 +136,7 @@ class IdentityAssumerole:
 
     @property
     def duration_seconds(self):
-        """Gets the duration_seconds of this IdentityAssumerole.
+        r"""Gets the duration_seconds of this IdentityAssumerole.
 
         AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
 
@@ -147,7 +147,7 @@ class IdentityAssumerole:
 
     @duration_seconds.setter
     def duration_seconds(self, duration_seconds):
-        """Sets the duration_seconds of this IdentityAssumerole.
+        r"""Sets the duration_seconds of this IdentityAssumerole.
 
         AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
 
@@ -158,7 +158,7 @@ class IdentityAssumerole:
 
     @property
     def session_user(self):
-        """Gets the session_user of this IdentityAssumerole.
+        r"""Gets the session_user of this IdentityAssumerole.
 
         :return: The session_user of this IdentityAssumerole.
         :rtype: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`
@@ -167,7 +167,7 @@ class IdentityAssumerole:
 
     @session_user.setter
     def session_user(self, session_user):
-        """Sets the session_user of this IdentityAssumerole.
+        r"""Sets the session_user of this IdentityAssumerole.
 
         :param session_user: The session_user of this IdentityAssumerole.
         :type session_user: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`

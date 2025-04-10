@@ -41,7 +41,7 @@ class GeoLocation:
     }
 
     def __init__(self, id=None, area=None, city=None, country=None, i18n_area=None, i18n_city=None, i18n_country=None, i18n_province=None, province=None):
-        """GeoLocation
+        r"""GeoLocation
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class GeoLocation:
 
     @property
     def id(self):
-        """Gets the id of this GeoLocation.
+        r"""Gets the id of this GeoLocation.
 
         地理位置信息ID。
 
@@ -110,7 +110,7 @@ class GeoLocation:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GeoLocation.
+        r"""Sets the id of this GeoLocation.
 
         地理位置信息ID。
 
@@ -121,7 +121,7 @@ class GeoLocation:
 
     @property
     def area(self):
-        """Gets the area of this GeoLocation.
+        r"""Gets the area of this GeoLocation.
 
         所在大区。
 
@@ -132,7 +132,7 @@ class GeoLocation:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this GeoLocation.
+        r"""Sets the area of this GeoLocation.
 
         所在大区。
 
@@ -143,7 +143,7 @@ class GeoLocation:
 
     @property
     def city(self):
-        """Gets the city of this GeoLocation.
+        r"""Gets the city of this GeoLocation.
 
         所在城市。
 
@@ -154,7 +154,7 @@ class GeoLocation:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this GeoLocation.
+        r"""Sets the city of this GeoLocation.
 
         所在城市。
 
@@ -165,7 +165,7 @@ class GeoLocation:
 
     @property
     def country(self):
-        """Gets the country of this GeoLocation.
+        r"""Gets the country of this GeoLocation.
 
         所在的国家。
 
@@ -176,7 +176,7 @@ class GeoLocation:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this GeoLocation.
+        r"""Sets the country of this GeoLocation.
 
         所在的国家。
 
@@ -187,7 +187,7 @@ class GeoLocation:
 
     @property
     def i18n_area(self):
-        """Gets the i18n_area of this GeoLocation.
+        r"""Gets the i18n_area of this GeoLocation.
 
         区域的国际化名称。
 
@@ -198,7 +198,7 @@ class GeoLocation:
 
     @i18n_area.setter
     def i18n_area(self, i18n_area):
-        """Sets the i18n_area of this GeoLocation.
+        r"""Sets the i18n_area of this GeoLocation.
 
         区域的国际化名称。
 
@@ -209,7 +209,7 @@ class GeoLocation:
 
     @property
     def i18n_city(self):
-        """Gets the i18n_city of this GeoLocation.
+        r"""Gets the i18n_city of this GeoLocation.
 
         城市的国际化名称。
 
@@ -220,7 +220,7 @@ class GeoLocation:
 
     @i18n_city.setter
     def i18n_city(self, i18n_city):
-        """Sets the i18n_city of this GeoLocation.
+        r"""Sets the i18n_city of this GeoLocation.
 
         城市的国际化名称。
 
@@ -231,7 +231,7 @@ class GeoLocation:
 
     @property
     def i18n_country(self):
-        """Gets the i18n_country of this GeoLocation.
+        r"""Gets the i18n_country of this GeoLocation.
 
         国家的国际化名称。
 
@@ -242,7 +242,7 @@ class GeoLocation:
 
     @i18n_country.setter
     def i18n_country(self, i18n_country):
-        """Sets the i18n_country of this GeoLocation.
+        r"""Sets the i18n_country of this GeoLocation.
 
         国家的国际化名称。
 
@@ -253,7 +253,7 @@ class GeoLocation:
 
     @property
     def i18n_province(self):
-        """Gets the i18n_province of this GeoLocation.
+        r"""Gets the i18n_province of this GeoLocation.
 
         省份的国际化名称。
 
@@ -264,7 +264,7 @@ class GeoLocation:
 
     @i18n_province.setter
     def i18n_province(self, i18n_province):
-        """Sets the i18n_province of this GeoLocation.
+        r"""Sets the i18n_province of this GeoLocation.
 
         省份的国际化名称。
 
@@ -275,7 +275,7 @@ class GeoLocation:
 
     @property
     def province(self):
-        """Gets the province of this GeoLocation.
+        r"""Gets the province of this GeoLocation.
 
         所在省份。
 
@@ -286,7 +286,7 @@ class GeoLocation:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this GeoLocation.
+        r"""Sets the province of this GeoLocation.
 
         所在省份。
 

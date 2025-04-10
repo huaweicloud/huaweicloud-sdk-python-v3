@@ -41,7 +41,7 @@ class ExtraInfo:
     }
 
     def __init__(self, child_import_package=None, document_link=None, http_method=None, http_url=None, import_package=None, mock=None, output_param=None, param_dependent=None, summary=None):
-        """ExtraInfo
+        r"""ExtraInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExtraInfo:
 
     @property
     def child_import_package(self):
-        """Gets the child_import_package of this ExtraInfo.
+        r"""Gets the child_import_package of this ExtraInfo.
 
         子级导入的包
 
@@ -110,7 +110,7 @@ class ExtraInfo:
 
     @child_import_package.setter
     def child_import_package(self, child_import_package):
-        """Sets the child_import_package of this ExtraInfo.
+        r"""Sets the child_import_package of this ExtraInfo.
 
         子级导入的包
 
@@ -121,7 +121,7 @@ class ExtraInfo:
 
     @property
     def document_link(self):
-        """Gets the document_link of this ExtraInfo.
+        r"""Gets the document_link of this ExtraInfo.
 
         文档链接
 
@@ -132,7 +132,7 @@ class ExtraInfo:
 
     @document_link.setter
     def document_link(self, document_link):
-        """Sets the document_link of this ExtraInfo.
+        r"""Sets the document_link of this ExtraInfo.
 
         文档链接
 
@@ -143,7 +143,7 @@ class ExtraInfo:
 
     @property
     def http_method(self):
-        """Gets the http_method of this ExtraInfo.
+        r"""Gets the http_method of this ExtraInfo.
 
         http请求方法
 
@@ -154,7 +154,7 @@ class ExtraInfo:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this ExtraInfo.
+        r"""Sets the http_method of this ExtraInfo.
 
         http请求方法
 
@@ -165,7 +165,7 @@ class ExtraInfo:
 
     @property
     def http_url(self):
-        """Gets the http_url of this ExtraInfo.
+        r"""Gets the http_url of this ExtraInfo.
 
         HTTP请求的URL
 
@@ -176,7 +176,7 @@ class ExtraInfo:
 
     @http_url.setter
     def http_url(self, http_url):
-        """Sets the http_url of this ExtraInfo.
+        r"""Sets the http_url of this ExtraInfo.
 
         HTTP请求的URL
 
@@ -187,7 +187,7 @@ class ExtraInfo:
 
     @property
     def import_package(self):
-        """Gets the import_package of this ExtraInfo.
+        r"""Gets the import_package of this ExtraInfo.
 
         导入的包
 
@@ -198,7 +198,7 @@ class ExtraInfo:
 
     @import_package.setter
     def import_package(self, import_package):
-        """Sets the import_package of this ExtraInfo.
+        r"""Sets the import_package of this ExtraInfo.
 
         导入的包
 
@@ -209,7 +209,7 @@ class ExtraInfo:
 
     @property
     def mock(self):
-        """Gets the mock of this ExtraInfo.
+        r"""Gets the mock of this ExtraInfo.
 
         :return: The mock of this ExtraInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.MockInfo`
@@ -218,7 +218,7 @@ class ExtraInfo:
 
     @mock.setter
     def mock(self, mock):
-        """Sets the mock of this ExtraInfo.
+        r"""Sets the mock of this ExtraInfo.
 
         :param mock: The mock of this ExtraInfo.
         :type mock: :class:`huaweicloudsdkcloudtest.v1.MockInfo`
@@ -227,7 +227,7 @@ class ExtraInfo:
 
     @property
     def output_param(self):
-        """Gets the output_param of this ExtraInfo.
+        r"""Gets the output_param of this ExtraInfo.
 
         输出参数
 
@@ -238,7 +238,7 @@ class ExtraInfo:
 
     @output_param.setter
     def output_param(self, output_param):
-        """Sets the output_param of this ExtraInfo.
+        r"""Sets the output_param of this ExtraInfo.
 
         输出参数
 
@@ -249,7 +249,7 @@ class ExtraInfo:
 
     @property
     def param_dependent(self):
-        """Gets the param_dependent of this ExtraInfo.
+        r"""Gets the param_dependent of this ExtraInfo.
 
         参数依赖
 
@@ -260,7 +260,7 @@ class ExtraInfo:
 
     @param_dependent.setter
     def param_dependent(self, param_dependent):
-        """Sets the param_dependent of this ExtraInfo.
+        r"""Sets the param_dependent of this ExtraInfo.
 
         参数依赖
 
@@ -271,7 +271,7 @@ class ExtraInfo:
 
     @property
     def summary(self):
-        """Gets the summary of this ExtraInfo.
+        r"""Gets the summary of this ExtraInfo.
 
         摘要
 
@@ -282,7 +282,7 @@ class ExtraInfo:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ExtraInfo.
+        r"""Sets the summary of this ExtraInfo.
 
         摘要
 

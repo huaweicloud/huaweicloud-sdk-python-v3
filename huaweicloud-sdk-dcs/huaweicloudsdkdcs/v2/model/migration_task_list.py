@@ -73,7 +73,7 @@ class MigrationTaskList:
     }
 
     def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, data_source=None, source_instance_name=None, source_instance_id=None, target_instance_addrs=None, target_instance_name=None, target_instance_id=None, created_at=None, description=None, source_instance_status=None, target_instance_status=None, source_instance_subnet_id=None, target_instance_subnet_id=None, source_instance_spec_code=None, target_instance_spec_code=None, error_message=None, released_at=None, version=None, resume_mode=None, supported_features=None):
-        """MigrationTaskList
+        r"""MigrationTaskList
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class MigrationTaskList:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MigrationTaskList.
+        r"""Gets the task_id of this MigrationTaskList.
 
         迁移任务ID。
 
@@ -222,7 +222,7 @@ class MigrationTaskList:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MigrationTaskList.
+        r"""Sets the task_id of this MigrationTaskList.
 
         迁移任务ID。
 
@@ -233,7 +233,7 @@ class MigrationTaskList:
 
     @property
     def task_name(self):
-        """Gets the task_name of this MigrationTaskList.
+        r"""Gets the task_name of this MigrationTaskList.
 
         迁移任务名称。
 
@@ -244,7 +244,7 @@ class MigrationTaskList:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this MigrationTaskList.
+        r"""Sets the task_name of this MigrationTaskList.
 
         迁移任务名称。
 
@@ -255,7 +255,7 @@ class MigrationTaskList:
 
     @property
     def status(self):
-        """Gets the status of this MigrationTaskList.
+        r"""Gets the status of this MigrationTaskList.
 
         迁移任务状态，这个字段的值包括：SUCCESS（成功）, FAILED（失败）, MIGRATING（迁移中），TERMINATED（已结束）。
 
@@ -266,7 +266,7 @@ class MigrationTaskList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MigrationTaskList.
+        r"""Sets the status of this MigrationTaskList.
 
         迁移任务状态，这个字段的值包括：SUCCESS（成功）, FAILED（失败）, MIGRATING（迁移中），TERMINATED（已结束）。
 
@@ -277,7 +277,7 @@ class MigrationTaskList:
 
     @property
     def migration_type(self):
-        """Gets the migration_type of this MigrationTaskList.
+        r"""Gets the migration_type of this MigrationTaskList.
 
         迁移任务类型，包括备份文件导入和在线迁移两种类型。
 
@@ -288,7 +288,7 @@ class MigrationTaskList:
 
     @migration_type.setter
     def migration_type(self, migration_type):
-        """Sets the migration_type of this MigrationTaskList.
+        r"""Sets the migration_type of this MigrationTaskList.
 
         迁移任务类型，包括备份文件导入和在线迁移两种类型。
 
@@ -299,7 +299,7 @@ class MigrationTaskList:
 
     @property
     def migration_method(self):
-        """Gets the migration_method of this MigrationTaskList.
+        r"""Gets the migration_method of this MigrationTaskList.
 
         迁移方式，包括全量迁移和增量迁移两种类型。
 
@@ -310,7 +310,7 @@ class MigrationTaskList:
 
     @migration_method.setter
     def migration_method(self, migration_method):
-        """Sets the migration_method of this MigrationTaskList.
+        r"""Sets the migration_method of this MigrationTaskList.
 
         迁移方式，包括全量迁移和增量迁移两种类型。
 
@@ -321,7 +321,7 @@ class MigrationTaskList:
 
     @property
     def ecs_tenant_private_ip(self):
-        """Gets the ecs_tenant_private_ip of this MigrationTaskList.
+        r"""Gets the ecs_tenant_private_ip of this MigrationTaskList.
 
         迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单。
 
@@ -332,7 +332,7 @@ class MigrationTaskList:
 
     @ecs_tenant_private_ip.setter
     def ecs_tenant_private_ip(self, ecs_tenant_private_ip):
-        """Sets the ecs_tenant_private_ip of this MigrationTaskList.
+        r"""Sets the ecs_tenant_private_ip of this MigrationTaskList.
 
         迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单。
 
@@ -343,7 +343,7 @@ class MigrationTaskList:
 
     @property
     def data_source(self):
-        """Gets the data_source of this MigrationTaskList.
+        r"""Gets the data_source of this MigrationTaskList.
 
         源redis地址，格式为ip:port或者桶名。
 
@@ -354,7 +354,7 @@ class MigrationTaskList:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this MigrationTaskList.
+        r"""Sets the data_source of this MigrationTaskList.
 
         源redis地址，格式为ip:port或者桶名。
 
@@ -365,7 +365,7 @@ class MigrationTaskList:
 
     @property
     def source_instance_name(self):
-        """Gets the source_instance_name of this MigrationTaskList.
+        r"""Gets the source_instance_name of this MigrationTaskList.
 
         源实例名称，若自建redis则为空。
 
@@ -376,7 +376,7 @@ class MigrationTaskList:
 
     @source_instance_name.setter
     def source_instance_name(self, source_instance_name):
-        """Sets the source_instance_name of this MigrationTaskList.
+        r"""Sets the source_instance_name of this MigrationTaskList.
 
         源实例名称，若自建redis则为空。
 
@@ -387,7 +387,7 @@ class MigrationTaskList:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this MigrationTaskList.
+        r"""Gets the source_instance_id of this MigrationTaskList.
 
         源实例ID，若自建redis则为空。
 
@@ -398,7 +398,7 @@ class MigrationTaskList:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this MigrationTaskList.
+        r"""Sets the source_instance_id of this MigrationTaskList.
 
         源实例ID，若自建redis则为空。
 
@@ -409,7 +409,7 @@ class MigrationTaskList:
 
     @property
     def target_instance_addrs(self):
-        """Gets the target_instance_addrs of this MigrationTaskList.
+        r"""Gets the target_instance_addrs of this MigrationTaskList.
 
         目标redis地址，格式为ip:port。
 
@@ -420,7 +420,7 @@ class MigrationTaskList:
 
     @target_instance_addrs.setter
     def target_instance_addrs(self, target_instance_addrs):
-        """Sets the target_instance_addrs of this MigrationTaskList.
+        r"""Sets the target_instance_addrs of this MigrationTaskList.
 
         目标redis地址，格式为ip:port。
 
@@ -431,7 +431,7 @@ class MigrationTaskList:
 
     @property
     def target_instance_name(self):
-        """Gets the target_instance_name of this MigrationTaskList.
+        r"""Gets the target_instance_name of this MigrationTaskList.
 
         目标实例名称。
 
@@ -442,7 +442,7 @@ class MigrationTaskList:
 
     @target_instance_name.setter
     def target_instance_name(self, target_instance_name):
-        """Sets the target_instance_name of this MigrationTaskList.
+        r"""Sets the target_instance_name of this MigrationTaskList.
 
         目标实例名称。
 
@@ -453,7 +453,7 @@ class MigrationTaskList:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this MigrationTaskList.
+        r"""Gets the target_instance_id of this MigrationTaskList.
 
         目标实例ID。
 
@@ -464,7 +464,7 @@ class MigrationTaskList:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this MigrationTaskList.
+        r"""Sets the target_instance_id of this MigrationTaskList.
 
         目标实例ID。
 
@@ -475,7 +475,7 @@ class MigrationTaskList:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MigrationTaskList.
+        r"""Gets the created_at of this MigrationTaskList.
 
         迁移任务创建时间。
 
@@ -486,7 +486,7 @@ class MigrationTaskList:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MigrationTaskList.
+        r"""Sets the created_at of this MigrationTaskList.
 
         迁移任务创建时间。
 
@@ -497,7 +497,7 @@ class MigrationTaskList:
 
     @property
     def description(self):
-        """Gets the description of this MigrationTaskList.
+        r"""Gets the description of this MigrationTaskList.
 
         迁移任务描述。
 
@@ -508,7 +508,7 @@ class MigrationTaskList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MigrationTaskList.
+        r"""Sets the description of this MigrationTaskList.
 
         迁移任务描述。
 
@@ -519,7 +519,7 @@ class MigrationTaskList:
 
     @property
     def source_instance_status(self):
-        """Gets the source_instance_status of this MigrationTaskList.
+        r"""Gets the source_instance_status of this MigrationTaskList.
 
         源实例状态，若自建redis则为空。
 
@@ -530,7 +530,7 @@ class MigrationTaskList:
 
     @source_instance_status.setter
     def source_instance_status(self, source_instance_status):
-        """Sets the source_instance_status of this MigrationTaskList.
+        r"""Sets the source_instance_status of this MigrationTaskList.
 
         源实例状态，若自建redis则为空。
 
@@ -541,7 +541,7 @@ class MigrationTaskList:
 
     @property
     def target_instance_status(self):
-        """Gets the target_instance_status of this MigrationTaskList.
+        r"""Gets the target_instance_status of this MigrationTaskList.
 
         目标实例状态。
 
@@ -552,7 +552,7 @@ class MigrationTaskList:
 
     @target_instance_status.setter
     def target_instance_status(self, target_instance_status):
-        """Sets the target_instance_status of this MigrationTaskList.
+        r"""Sets the target_instance_status of this MigrationTaskList.
 
         目标实例状态。
 
@@ -563,7 +563,7 @@ class MigrationTaskList:
 
     @property
     def source_instance_subnet_id(self):
-        """Gets the source_instance_subnet_id of this MigrationTaskList.
+        r"""Gets the source_instance_subnet_id of this MigrationTaskList.
 
         源实例子网ID，若自建redis则为空。
 
@@ -574,7 +574,7 @@ class MigrationTaskList:
 
     @source_instance_subnet_id.setter
     def source_instance_subnet_id(self, source_instance_subnet_id):
-        """Sets the source_instance_subnet_id of this MigrationTaskList.
+        r"""Sets the source_instance_subnet_id of this MigrationTaskList.
 
         源实例子网ID，若自建redis则为空。
 
@@ -585,7 +585,7 @@ class MigrationTaskList:
 
     @property
     def target_instance_subnet_id(self):
-        """Gets the target_instance_subnet_id of this MigrationTaskList.
+        r"""Gets the target_instance_subnet_id of this MigrationTaskList.
 
         目标实例子网ID。
 
@@ -596,7 +596,7 @@ class MigrationTaskList:
 
     @target_instance_subnet_id.setter
     def target_instance_subnet_id(self, target_instance_subnet_id):
-        """Sets the target_instance_subnet_id of this MigrationTaskList.
+        r"""Sets the target_instance_subnet_id of this MigrationTaskList.
 
         目标实例子网ID。
 
@@ -607,7 +607,7 @@ class MigrationTaskList:
 
     @property
     def source_instance_spec_code(self):
-        """Gets the source_instance_spec_code of this MigrationTaskList.
+        r"""Gets the source_instance_spec_code of this MigrationTaskList.
 
         源实例规格编码，若自建redis则为空。
 
@@ -618,7 +618,7 @@ class MigrationTaskList:
 
     @source_instance_spec_code.setter
     def source_instance_spec_code(self, source_instance_spec_code):
-        """Sets the source_instance_spec_code of this MigrationTaskList.
+        r"""Sets the source_instance_spec_code of this MigrationTaskList.
 
         源实例规格编码，若自建redis则为空。
 
@@ -629,7 +629,7 @@ class MigrationTaskList:
 
     @property
     def target_instance_spec_code(self):
-        """Gets the target_instance_spec_code of this MigrationTaskList.
+        r"""Gets the target_instance_spec_code of this MigrationTaskList.
 
         目标实例规格编码。
 
@@ -640,7 +640,7 @@ class MigrationTaskList:
 
     @target_instance_spec_code.setter
     def target_instance_spec_code(self, target_instance_spec_code):
-        """Sets the target_instance_spec_code of this MigrationTaskList.
+        r"""Sets the target_instance_spec_code of this MigrationTaskList.
 
         目标实例规格编码。
 
@@ -651,7 +651,7 @@ class MigrationTaskList:
 
     @property
     def error_message(self):
-        """Gets the error_message of this MigrationTaskList.
+        r"""Gets the error_message of this MigrationTaskList.
 
         错误信息。
 
@@ -662,7 +662,7 @@ class MigrationTaskList:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this MigrationTaskList.
+        r"""Sets the error_message of this MigrationTaskList.
 
         错误信息。
 
@@ -673,7 +673,7 @@ class MigrationTaskList:
 
     @property
     def released_at(self):
-        """Gets the released_at of this MigrationTaskList.
+        r"""Gets the released_at of this MigrationTaskList.
 
         迁移机释放时间。
 
@@ -684,7 +684,7 @@ class MigrationTaskList:
 
     @released_at.setter
     def released_at(self, released_at):
-        """Sets the released_at of this MigrationTaskList.
+        r"""Sets the released_at of this MigrationTaskList.
 
         迁移机释放时间。
 
@@ -695,7 +695,7 @@ class MigrationTaskList:
 
     @property
     def version(self):
-        """Gets the version of this MigrationTaskList.
+        r"""Gets the version of this MigrationTaskList.
 
         版本。
 
@@ -706,7 +706,7 @@ class MigrationTaskList:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MigrationTaskList.
+        r"""Sets the version of this MigrationTaskList.
 
         版本。
 
@@ -717,7 +717,7 @@ class MigrationTaskList:
 
     @property
     def resume_mode(self):
-        """Gets the resume_mode of this MigrationTaskList.
+        r"""Gets the resume_mode of this MigrationTaskList.
 
         操作模式，分为auto和manual。
 
@@ -728,7 +728,7 @@ class MigrationTaskList:
 
     @resume_mode.setter
     def resume_mode(self, resume_mode):
-        """Sets the resume_mode of this MigrationTaskList.
+        r"""Sets the resume_mode of this MigrationTaskList.
 
         操作模式，分为auto和manual。
 
@@ -739,7 +739,7 @@ class MigrationTaskList:
 
     @property
     def supported_features(self):
-        """Gets the supported_features of this MigrationTaskList.
+        r"""Gets the supported_features of this MigrationTaskList.
 
         支持的特性。
 
@@ -750,7 +750,7 @@ class MigrationTaskList:
 
     @supported_features.setter
     def supported_features(self, supported_features):
-        """Sets the supported_features of this MigrationTaskList.
+        r"""Sets the supported_features of this MigrationTaskList.
 
         支持的特性。
 

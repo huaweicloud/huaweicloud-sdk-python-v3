@@ -28,7 +28,7 @@ class ListNotebookResponse(SdkResponse):
     }
 
     def __init__(self, count=None, notebooks=None):
-        """ListNotebookResponse
+        r"""ListNotebookResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNotebookResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNotebookResponse.
+        r"""Gets the count of this ListNotebookResponse.
 
         notebook总数
 
@@ -62,7 +62,7 @@ class ListNotebookResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNotebookResponse.
+        r"""Sets the count of this ListNotebookResponse.
 
         notebook总数
 
@@ -73,7 +73,7 @@ class ListNotebookResponse(SdkResponse):
 
     @property
     def notebooks(self):
-        """Gets the notebooks of this ListNotebookResponse.
+        r"""Gets the notebooks of this ListNotebookResponse.
 
         notebook详情列表
 
@@ -84,7 +84,7 @@ class ListNotebookResponse(SdkResponse):
 
     @notebooks.setter
     def notebooks(self, notebooks):
-        """Sets the notebooks of this ListNotebookResponse.
+        r"""Sets the notebooks of this ListNotebookResponse.
 
         notebook详情列表
 

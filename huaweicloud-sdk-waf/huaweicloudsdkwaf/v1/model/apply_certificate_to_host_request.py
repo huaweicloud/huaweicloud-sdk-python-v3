@@ -29,7 +29,7 @@ class ApplyCertificateToHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, certificate_id=None, body=None):
-        """ApplyCertificateToHostRequest
+        r"""ApplyCertificateToHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ApplyCertificateToHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplyCertificateToHostRequest.
+        r"""Gets the enterprise_project_id of this ApplyCertificateToHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class ApplyCertificateToHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplyCertificateToHostRequest.
+        r"""Sets the enterprise_project_id of this ApplyCertificateToHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class ApplyCertificateToHostRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ApplyCertificateToHostRequest.
+        r"""Gets the certificate_id of this ApplyCertificateToHostRequest.
 
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
@@ -89,7 +89,7 @@ class ApplyCertificateToHostRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ApplyCertificateToHostRequest.
+        r"""Sets the certificate_id of this ApplyCertificateToHostRequest.
 
         https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
@@ -100,7 +100,7 @@ class ApplyCertificateToHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyCertificateToHostRequest.
+        r"""Gets the body of this ApplyCertificateToHostRequest.
 
         :return: The body of this ApplyCertificateToHostRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`
@@ -109,7 +109,7 @@ class ApplyCertificateToHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyCertificateToHostRequest.
+        r"""Sets the body of this ApplyCertificateToHostRequest.
 
         :param body: The body of this ApplyCertificateToHostRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`

@@ -34,7 +34,7 @@ class SdrsClient(Client):
         return client_builder
 
     def add_protected_instance_nic(self, request):
-        """保护实例添加网卡
+        r"""保护实例添加网卡
 
         给指定的保护实例添加网卡。
         
@@ -101,7 +101,7 @@ class SdrsClient(Client):
         return http_info
 
     def add_protected_instance_tags(self, request):
-        """添加保护实例标签
+        r"""添加保护实例标签
 
         一个保护实例上最多有10个标签。此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
         
@@ -168,7 +168,7 @@ class SdrsClient(Client):
         return http_info
 
     def attach_protected_instance_replication(self, request):
-        """保护实例挂载复制对
+        r"""保护实例挂载复制对
 
         将指定的复制对挂载到指定的保护实例上。
         
@@ -235,7 +235,7 @@ class SdrsClient(Client):
         return http_info
 
     def batch_add_tags(self, request):
-        """批量添加保护实例标签
+        r"""批量添加保护实例标签
 
         为指定保护实例批量添加或删除标签。一个资源上最多有10个标签。
         此接口为幂等接口：
@@ -305,7 +305,7 @@ class SdrsClient(Client):
         return http_info
 
     def batch_create_protected_instances(self, request):
-        """批量创建保护实例
+        r"""批量创建保护实例
 
         典型场景：没有特殊操作场景
         接口功能：批量创建保护实例。保护实例创建完成后，系统默认容灾站点云服务器名称与生产站点云服务器名称相同，但ID不同。
@@ -371,7 +371,7 @@ class SdrsClient(Client):
         return http_info
 
     def batch_delete_protected_instances(self, request):
-        """批量删除保护实例
+        r"""批量删除保护实例
 
         典型场景：没有特殊操作场景
         接口功能：批量删除保护实例。
@@ -437,7 +437,7 @@ class SdrsClient(Client):
         return http_info
 
     def batch_delete_tags(self, request):
-        """批量删除保护实例标签
+        r"""批量删除保护实例标签
 
         为指定保护实例批量删除标签。一个资源上最多有10个标签。
         此接口为幂等接口：
@@ -506,7 +506,7 @@ class SdrsClient(Client):
         return http_info
 
     def create_disaster_recovery_drill(self, request):
-        """创建容灾演练
+        r"""创建容灾演练
 
         创建容灾演练。
         
@@ -571,7 +571,7 @@ class SdrsClient(Client):
         return http_info
 
     def create_protected_instance(self, request):
-        """创建保护实例
+        r"""创建保护实例
 
         创建保护实例。保护实例创建完成后，系统默认容灾站点云服务器名称与生产站点云服务器名称相同，但ID不同。如果需要修改云服务器名称，请在保护实例详情页面单击云服务器名称，进入云服务器详情页面进行修改
         
@@ -636,7 +636,7 @@ class SdrsClient(Client):
         return http_info
 
     def create_protection_group(self, request):
-        """创建保护组
+        r"""创建保护组
 
         创建保护组。
         说明：
@@ -703,7 +703,7 @@ class SdrsClient(Client):
         return http_info
 
     def create_replication(self, request):
-        """创建复制对
+        r"""创建复制对
 
         创建复制对，并将其添加到指定的保护组中。
         
@@ -768,7 +768,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_all_server_group_failure_jobs(self, request):
-        """删除所有保护组失败任务
+        r"""删除所有保护组失败任务
 
         删除所有保护组层级的失败任务，创建、删除保护组失败等。
         
@@ -831,7 +831,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_disaster_recovery_drill(self, request):
-        """删除容灾演练
+        r"""删除容灾演练
 
         删除指定的容灾演练。删除后：
         容灾演练服务器、容灾演练服务器上挂载的磁盘和网卡将被一并删除。
@@ -898,7 +898,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_failure_job(self, request):
-        """删除单个失败任务
+        r"""删除单个失败任务
 
         删除单个失败任务。
         
@@ -963,7 +963,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_protected_instance(self, request):
-        """删除保护实例
+        r"""删除保护实例
 
         删除指定的保护实例。
         
@@ -1030,7 +1030,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_protected_instance_nic(self, request):
-        """保护实例删除网卡
+        r"""保护实例删除网卡
 
         删除指定保护实例的指定网卡。
         
@@ -1097,7 +1097,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_protected_instance_tag(self, request):
-        """删除保护实例标签
+        r"""删除保护实例标签
 
         幂等接口：删除时，不对标签字符集做校验，调用接口前必须要做encodeURI，服务端需要对接口URI做decodeURI。
          说明:请自行选择工具执行URI编码。
@@ -1166,7 +1166,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_protection_group(self, request):
-        """删除保护组
+        r"""删除保护组
 
         删除指定的保护组。
         
@@ -1231,7 +1231,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_replication(self, request):
-        """删除复制对
+        r"""删除复制对
 
         删除指定的复制对。
         
@@ -1298,7 +1298,7 @@ class SdrsClient(Client):
         return http_info
 
     def delete_server_group_failure_jobs(self, request):
-        """删除指定保护组内的所有失败任务
+        r"""删除指定保护组内的所有失败任务
 
         删除指定保护组内的所有失败任务，创建保护实例失败、创建复制对失败、删除保护实例失败、删除复制对失败等。
         
@@ -1363,7 +1363,7 @@ class SdrsClient(Client):
         return http_info
 
     def detach_protected_instance_replication(self, request):
-        """保护实例卸载复制对
+        r"""保护实例卸载复制对
 
         将指定的复制对从指定的保护实例上卸载。
         
@@ -1430,7 +1430,7 @@ class SdrsClient(Client):
         return http_info
 
     def expand_replication(self, request):
-        """复制对扩容
+        r"""复制对扩容
 
         对复制对包含的两个磁盘进行扩容操作。
         
@@ -1497,7 +1497,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_active_active_domains(self, request):
-        """查询双活域
+        r"""查询双活域
 
         查询双活域。双活域由本端存储设备、远端存储设备组成，通过双活域，应用服务器可以实现跨站点的数据访问。
         
@@ -1560,7 +1560,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_disaster_recovery_drills(self, request):
-        """查询容灾演练列表
+        r"""查询容灾演练列表
 
         查询指定保护组下的所有容灾演练列表，当未指定保护组时查询当前租户下的所有容灾演练列表。
         
@@ -1635,7 +1635,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_failure_jobs(self, request):
-        """查询失败任务列表
+        r"""查询失败任务列表
 
         查询所有保护组失败任务列表或者指定保护组下的所有失败任务列表。
         
@@ -1710,7 +1710,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_protected_instance_tags(self, request):
-        """查询保护实例标签
+        r"""查询保护实例标签
 
         查询指定保护实例的标签信息。
         
@@ -1775,7 +1775,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_protected_instances(self, request):
-        """查询保护实例列表
+        r"""查询保护实例列表
 
         查询当前租户下的所有保护实例列表。
         
@@ -1856,7 +1856,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_protected_instances_by_tags(self, request):
-        """通过标签查询保护实例
+        r"""通过标签查询保护实例
 
         使用标签过滤保护实例
         
@@ -1921,7 +1921,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_protected_instances_project_tags(self, request):
-        """查询保护实例项目标签
+        r"""查询保护实例项目标签
 
         查询租户在指定Project中保护实例的所有资源标签集合。
         
@@ -1984,7 +1984,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_protection_groups(self, request):
-        """查询保护组列表
+        r"""查询保护组列表
 
         查询当前租户所有的保护组列表。
         
@@ -2059,7 +2059,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_replications(self, request):
-        """查询复制对列表
+        r"""查询复制对列表
 
         查询指定保护组下的所有复制对列表，如果不给定指定保护组则查询当前租户下的所有复制对列表。
         
@@ -2142,7 +2142,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_rpo_statistics(self, request):
-        """查询资源的RPO超标趋势记录列表
+        r"""查询资源的RPO超标趋势记录列表
 
         查询当前租户大屏显示中，资源的RPO超标趋势记录列表。
         
@@ -2215,7 +2215,7 @@ class SdrsClient(Client):
         return http_info
 
     def resize_protected_instance(self, request):
-        """保护实例变更规格
+        r"""保护实例变更规格
 
         变更指定保护实例中弹性云服务器的规格，包括：同时变更生产站点云服务器和容灾站点云服务器的规格。
         仅变更生产站点云服务器的规格，容灾站点云服务器规格不变。
@@ -2287,7 +2287,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_disaster_recovery_drill(self, request):
-        """查询单个容灾演练详情
+        r"""查询单个容灾演练详情
 
         查询单个容灾演练的详细信息。
         
@@ -2352,7 +2352,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_protected_instance(self, request):
-        """查询单个保护实例详情
+        r"""查询单个保护实例详情
 
         查询单个保护实例的详细信息，如名称、ID等。
         
@@ -2417,7 +2417,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_protection_group(self, request):
-        """查询保护组详情
+        r"""查询保护组详情
 
         查询单个保护组的详细信息，如ID、名称等。
         
@@ -2482,7 +2482,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_quota(self, request):
-        """查询租户配额
+        r"""查询租户配额
 
         查询资源的配额相关信息。
         
@@ -2545,7 +2545,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_replication(self, request):
-        """查询单个复制对详情
+        r"""查询单个复制对详情
 
         查询单个复制对的详细信息。
         
@@ -2610,7 +2610,7 @@ class SdrsClient(Client):
         return http_info
 
     def start_failover_protection_group(self, request):
-        """保护组故障切换
+        r"""保护组故障切换
 
         当保护组的生产站点发生故障时，将保护组的生产站点切到当前的容灾站点，即另一端AZ，启用当前容灾站点的云硬盘以及云服务器等资源。
         故障切换完成之后，保护组的当前生产站点变成故障切换发生之前的容灾站点，且生产站点和容灾站点之间的数据已停止保护，必须调用5.4.6-保护组开启保护/重保护接口成功后，两端的数据才会重新被保护。
@@ -2678,7 +2678,7 @@ class SdrsClient(Client):
         return http_info
 
     def start_protection_group(self, request):
-        """保护组开启保护/重保护
+        r"""保护组开启保护/重保护
 
         对某一个保护组的“开启保护”或“重保护”操作。
         
@@ -2745,7 +2745,7 @@ class SdrsClient(Client):
         return http_info
 
     def start_reverse_protection_group(self, request):
-        """保护组切换
+        r"""保护组切换
 
         对保护组进行切换操作，可以将保护组的当前生产站点，从创建保护组时指定的生产站点切换到创建保护组时指定的容灾站点，也可以从创建保护组时指定的容灾站点切换到创建保护组时指定的生产站点。切换后，生产站点和容灾站点的数据仍然处于被保护状态，只是复制方向与操作之前相反。
         
@@ -2812,7 +2812,7 @@ class SdrsClient(Client):
         return http_info
 
     def stop_protection_group(self, request):
-        """保护组停止保护
+        r"""保护组停止保护
 
         对某一个保护组的停止保护操作。
         
@@ -2879,7 +2879,7 @@ class SdrsClient(Client):
         return http_info
 
     def update_disaster_recovery_drill_name(self, request):
-        """更新容灾演练名称
+        r"""更新容灾演练名称
 
         更新容灾演练的名称。
         
@@ -2946,7 +2946,7 @@ class SdrsClient(Client):
         return http_info
 
     def update_protected_instance_name(self, request):
-        """更新保护实例名称
+        r"""更新保护实例名称
 
         更新某一个保护实例的名称。
         
@@ -3013,7 +3013,7 @@ class SdrsClient(Client):
         return http_info
 
     def update_protection_group_name(self, request):
-        """更新保护组名称
+        r"""更新保护组名称
 
         更新某一个保护组的名称。
         
@@ -3080,7 +3080,7 @@ class SdrsClient(Client):
         return http_info
 
     def update_replication_name(self, request):
-        """更新复制对名称
+        r"""更新复制对名称
 
         更新复制对名称。
         
@@ -3147,7 +3147,7 @@ class SdrsClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询API版本信息
+        r"""查询API版本信息
 
         查询存储容灾当前所有可用的版本信息列表。
         
@@ -3210,7 +3210,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_specified_api_version(self, request):
-        """查询指定API版本信息
+        r"""查询指定API版本信息
 
         查询存储容灾指定API版本信息。
         
@@ -3275,7 +3275,7 @@ class SdrsClient(Client):
         return http_info
 
     def show_job_status(self, request):
-        """查询job状态
+        r"""查询job状态
 
         查询job的执行状态。
         对于创建保护组、删除保护组、创建保护实例、删除保护实例、创建复制对、删除复制对等异步API，命令下发后，会返回job_id，通过job_id可以查询任务的执行状态。

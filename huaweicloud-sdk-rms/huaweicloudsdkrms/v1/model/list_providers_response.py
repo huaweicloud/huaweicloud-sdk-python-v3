@@ -28,7 +28,7 @@ class ListProvidersResponse(SdkResponse):
     }
 
     def __init__(self, resource_providers=None, total_count=None):
-        """ListProvidersResponse
+        r"""ListProvidersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProvidersResponse(SdkResponse):
 
     @property
     def resource_providers(self):
-        """Gets the resource_providers of this ListProvidersResponse.
+        r"""Gets the resource_providers of this ListProvidersResponse.
 
         云服务详情列表
 
@@ -62,7 +62,7 @@ class ListProvidersResponse(SdkResponse):
 
     @resource_providers.setter
     def resource_providers(self, resource_providers):
-        """Sets the resource_providers of this ListProvidersResponse.
+        r"""Sets the resource_providers of this ListProvidersResponse.
 
         云服务详情列表
 
@@ -73,7 +73,7 @@ class ListProvidersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListProvidersResponse.
+        r"""Gets the total_count of this ListProvidersResponse.
 
         当前支持的云服务总数
 
@@ -84,7 +84,7 @@ class ListProvidersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListProvidersResponse.
+        r"""Sets the total_count of this ListProvidersResponse.
 
         当前支持的云服务总数
 

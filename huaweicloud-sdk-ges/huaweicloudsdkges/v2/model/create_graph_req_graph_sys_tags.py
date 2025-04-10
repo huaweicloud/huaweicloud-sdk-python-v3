@@ -27,7 +27,7 @@ class CreateGraphReqGraphSysTags:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateGraphReqGraphSysTags
+        r"""CreateGraphReqGraphSysTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateGraphReqGraphSysTags:
 
     @property
     def key(self):
-        """Gets the key of this CreateGraphReqGraphSysTags.
+        r"""Gets the key of this CreateGraphReqGraphSysTags.
 
         企业项目的key填：_sys_enterprise_project_id。
 
@@ -61,7 +61,7 @@ class CreateGraphReqGraphSysTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateGraphReqGraphSysTags.
+        r"""Sets the key of this CreateGraphReqGraphSysTags.
 
         企业项目的key填：_sys_enterprise_project_id。
 
@@ -72,7 +72,7 @@ class CreateGraphReqGraphSysTags:
 
     @property
     def value(self):
-        """Gets the value of this CreateGraphReqGraphSysTags.
+        r"""Gets the value of this CreateGraphReqGraphSysTags.
 
         企业项目的id。可以从企业项目获取。
 
@@ -83,7 +83,7 @@ class CreateGraphReqGraphSysTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateGraphReqGraphSysTags.
+        r"""Sets the value of this CreateGraphReqGraphSysTags.
 
         企业项目的id。可以从企业项目获取。
 

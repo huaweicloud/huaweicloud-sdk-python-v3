@@ -25,7 +25,7 @@ class BindPublicReqEipBandWidth:
     }
 
     def __init__(self, size=None):
-        """BindPublicReqEipBandWidth
+        r"""BindPublicReqEipBandWidth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BindPublicReqEipBandWidth:
 
     @property
     def size(self):
-        """Gets the size of this BindPublicReqEipBandWidth.
+        r"""Gets the size of this BindPublicReqEipBandWidth.
 
         带宽大小。单位：Mbit/s
 
@@ -53,7 +53,7 @@ class BindPublicReqEipBandWidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BindPublicReqEipBandWidth.
+        r"""Sets the size of this BindPublicReqEipBandWidth.
 
         带宽大小。单位：Mbit/s
 

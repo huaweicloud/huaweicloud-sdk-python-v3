@@ -31,7 +31,7 @@ class ListConfigMapsRequest:
     }
 
     def __init__(self, ief_instance_id=None, name=None, limit=None, offset=None):
-        """ListConfigMapsRequest
+        r"""ListConfigMapsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListConfigMapsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListConfigMapsRequest.
+        r"""Gets the ief_instance_id of this ListConfigMapsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -75,7 +75,7 @@ class ListConfigMapsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListConfigMapsRequest.
+        r"""Sets the ief_instance_id of this ListConfigMapsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -86,7 +86,7 @@ class ListConfigMapsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListConfigMapsRequest.
+        r"""Gets the name of this ListConfigMapsRequest.
 
         配置项名称，模糊匹配
 
@@ -97,7 +97,7 @@ class ListConfigMapsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConfigMapsRequest.
+        r"""Sets the name of this ListConfigMapsRequest.
 
         配置项名称，模糊匹配
 
@@ -108,7 +108,7 @@ class ListConfigMapsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigMapsRequest.
+        r"""Gets the limit of this ListConfigMapsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认为1000
 
@@ -119,7 +119,7 @@ class ListConfigMapsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigMapsRequest.
+        r"""Sets the limit of this ListConfigMapsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认为1000
 
@@ -130,7 +130,7 @@ class ListConfigMapsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConfigMapsRequest.
+        r"""Gets the offset of this ListConfigMapsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -141,7 +141,7 @@ class ListConfigMapsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConfigMapsRequest.
+        r"""Sets the offset of this ListConfigMapsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 

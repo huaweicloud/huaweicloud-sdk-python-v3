@@ -30,7 +30,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, global_eip_segment=None, x_request_id=None):
-        """AssociateGeipSegmentInstanceResponse
+        r"""AssociateGeipSegmentInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AssociateGeipSegmentInstanceResponse.
+        r"""Gets the job_id of this AssociateGeipSegmentInstanceResponse.
 
         本次请求的job id
 
@@ -69,7 +69,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AssociateGeipSegmentInstanceResponse.
+        r"""Sets the job_id of this AssociateGeipSegmentInstanceResponse.
 
         本次请求的job id
 
@@ -80,7 +80,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
 
     @property
     def global_eip_segment(self):
-        """Gets the global_eip_segment of this AssociateGeipSegmentInstanceResponse.
+        r"""Gets the global_eip_segment of this AssociateGeipSegmentInstanceResponse.
 
         :return: The global_eip_segment of this AssociateGeipSegmentInstanceResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ShortGlobalEipSegment`
@@ -89,7 +89,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
 
     @global_eip_segment.setter
     def global_eip_segment(self, global_eip_segment):
-        """Sets the global_eip_segment of this AssociateGeipSegmentInstanceResponse.
+        r"""Sets the global_eip_segment of this AssociateGeipSegmentInstanceResponse.
 
         :param global_eip_segment: The global_eip_segment of this AssociateGeipSegmentInstanceResponse.
         :type global_eip_segment: :class:`huaweicloudsdkgeip.v3.ShortGlobalEipSegment`
@@ -98,7 +98,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AssociateGeipSegmentInstanceResponse.
+        r"""Gets the x_request_id of this AssociateGeipSegmentInstanceResponse.
 
         :return: The x_request_id of this AssociateGeipSegmentInstanceResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class AssociateGeipSegmentInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AssociateGeipSegmentInstanceResponse.
+        r"""Sets the x_request_id of this AssociateGeipSegmentInstanceResponse.
 
         :param x_request_id: The x_request_id of this AssociateGeipSegmentInstanceResponse.
         :type x_request_id: str

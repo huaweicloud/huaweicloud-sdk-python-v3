@@ -28,7 +28,7 @@ class ListDelayConfigResponse(SdkResponse):
     }
 
     def __init__(self, play_domain=None, delay_config=None):
-        """ListDelayConfigResponse
+        r"""ListDelayConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDelayConfigResponse(SdkResponse):
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ListDelayConfigResponse.
+        r"""Gets the play_domain of this ListDelayConfigResponse.
 
         播放域名
 
@@ -62,7 +62,7 @@ class ListDelayConfigResponse(SdkResponse):
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ListDelayConfigResponse.
+        r"""Sets the play_domain of this ListDelayConfigResponse.
 
         播放域名
 
@@ -73,7 +73,7 @@ class ListDelayConfigResponse(SdkResponse):
 
     @property
     def delay_config(self):
-        """Gets the delay_config of this ListDelayConfigResponse.
+        r"""Gets the delay_config of this ListDelayConfigResponse.
 
         直播延时配置
 
@@ -84,7 +84,7 @@ class ListDelayConfigResponse(SdkResponse):
 
     @delay_config.setter
     def delay_config(self, delay_config):
-        """Sets the delay_config of this ListDelayConfigResponse.
+        r"""Sets the delay_config of this ListDelayConfigResponse.
 
         直播延时配置
 

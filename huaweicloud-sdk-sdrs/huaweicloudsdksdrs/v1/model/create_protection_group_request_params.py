@@ -37,7 +37,7 @@ class CreateProtectionGroupRequestParams:
     }
 
     def __init__(self, name=None, description=None, source_availability_zone=None, target_availability_zone=None, domain_id=None, source_vpc_id=None, dr_type=None):
-        """CreateProtectionGroupRequestParams
+        r"""CreateProtectionGroupRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def name(self):
-        """Gets the name of this CreateProtectionGroupRequestParams.
+        r"""Gets the name of this CreateProtectionGroupRequestParams.
 
         指定保护组的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -91,7 +91,7 @@ class CreateProtectionGroupRequestParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProtectionGroupRequestParams.
+        r"""Sets the name of this CreateProtectionGroupRequestParams.
 
         指定保护组的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -102,7 +102,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def description(self):
-        """Gets the description of this CreateProtectionGroupRequestParams.
+        r"""Gets the description of this CreateProtectionGroupRequestParams.
 
         指定保护组的描述，最大支持长度为64个字节。不能包含左尖括号（<）或右尖括号（>）。
 
@@ -113,7 +113,7 @@ class CreateProtectionGroupRequestParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProtectionGroupRequestParams.
+        r"""Sets the description of this CreateProtectionGroupRequestParams.
 
         指定保护组的描述，最大支持长度为64个字节。不能包含左尖括号（<）或右尖括号（>）。
 
@@ -124,7 +124,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def source_availability_zone(self):
-        """Gets the source_availability_zone of this CreateProtectionGroupRequestParams.
+        r"""Gets the source_availability_zone of this CreateProtectionGroupRequestParams.
 
         指定保护组的生产站点可用区名称。
 
@@ -135,7 +135,7 @@ class CreateProtectionGroupRequestParams:
 
     @source_availability_zone.setter
     def source_availability_zone(self, source_availability_zone):
-        """Sets the source_availability_zone of this CreateProtectionGroupRequestParams.
+        r"""Sets the source_availability_zone of this CreateProtectionGroupRequestParams.
 
         指定保护组的生产站点可用区名称。
 
@@ -146,7 +146,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def target_availability_zone(self):
-        """Gets the target_availability_zone of this CreateProtectionGroupRequestParams.
+        r"""Gets the target_availability_zone of this CreateProtectionGroupRequestParams.
 
         指定保护组的容灾站点可用区名称。
 
@@ -157,7 +157,7 @@ class CreateProtectionGroupRequestParams:
 
     @target_availability_zone.setter
     def target_availability_zone(self, target_availability_zone):
-        """Sets the target_availability_zone of this CreateProtectionGroupRequestParams.
+        r"""Sets the target_availability_zone of this CreateProtectionGroupRequestParams.
 
         指定保护组的容灾站点可用区名称。
 
@@ -168,7 +168,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateProtectionGroupRequestParams.
+        r"""Gets the domain_id of this CreateProtectionGroupRequestParams.
 
         指定双活域的ID。
 
@@ -179,7 +179,7 @@ class CreateProtectionGroupRequestParams:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateProtectionGroupRequestParams.
+        r"""Sets the domain_id of this CreateProtectionGroupRequestParams.
 
         指定双活域的ID。
 
@@ -190,7 +190,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def source_vpc_id(self):
-        """Gets the source_vpc_id of this CreateProtectionGroupRequestParams.
+        r"""Gets the source_vpc_id of this CreateProtectionGroupRequestParams.
 
         生产站点虚拟私有云ID。
 
@@ -201,7 +201,7 @@ class CreateProtectionGroupRequestParams:
 
     @source_vpc_id.setter
     def source_vpc_id(self, source_vpc_id):
-        """Sets the source_vpc_id of this CreateProtectionGroupRequestParams.
+        r"""Sets the source_vpc_id of this CreateProtectionGroupRequestParams.
 
         生产站点虚拟私有云ID。
 
@@ -212,7 +212,7 @@ class CreateProtectionGroupRequestParams:
 
     @property
     def dr_type(self):
-        """Gets the dr_type of this CreateProtectionGroupRequestParams.
+        r"""Gets the dr_type of this CreateProtectionGroupRequestParams.
 
         部署模式。默认值为“migration”，migration表示VPC内迁移。
 
@@ -223,7 +223,7 @@ class CreateProtectionGroupRequestParams:
 
     @dr_type.setter
     def dr_type(self, dr_type):
-        """Sets the dr_type of this CreateProtectionGroupRequestParams.
+        r"""Sets the dr_type of this CreateProtectionGroupRequestParams.
 
         部署模式。默认值为“migration”，migration表示VPC内迁移。
 

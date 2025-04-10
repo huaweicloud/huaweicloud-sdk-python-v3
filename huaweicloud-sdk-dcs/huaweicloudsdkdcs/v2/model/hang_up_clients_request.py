@@ -27,7 +27,7 @@ class HangUpClientsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """HangUpClientsRequest
+        r"""HangUpClientsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class HangUpClientsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this HangUpClientsRequest.
+        r"""Gets the instance_id of this HangUpClientsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class HangUpClientsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this HangUpClientsRequest.
+        r"""Sets the instance_id of this HangUpClientsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class HangUpClientsRequest:
 
     @property
     def body(self):
-        """Gets the body of this HangUpClientsRequest.
+        r"""Gets the body of this HangUpClientsRequest.
 
         :return: The body of this HangUpClientsRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.HangUpClientsRequestBody`
@@ -80,7 +80,7 @@ class HangUpClientsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this HangUpClientsRequest.
+        r"""Sets the body of this HangUpClientsRequest.
 
         :param body: The body of this HangUpClientsRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.HangUpClientsRequestBody`

@@ -46,7 +46,7 @@ class ShowExerciseDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, difficult=None, exercise_type=None, exercise_type_name=None, order_count=None, test_case_description=None, knowledge_point=None, judge_type=None, exercise_data=None):
-        """ShowExerciseDetailResponse
+        r"""ShowExerciseDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowExerciseDetailResponse.
+        r"""Gets the id of this ShowExerciseDetailResponse.
 
         习题id
 
@@ -125,7 +125,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowExerciseDetailResponse.
+        r"""Sets the id of this ShowExerciseDetailResponse.
 
         习题id
 
@@ -136,7 +136,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowExerciseDetailResponse.
+        r"""Gets the name of this ShowExerciseDetailResponse.
 
         习题名称
 
@@ -147,7 +147,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowExerciseDetailResponse.
+        r"""Sets the name of this ShowExerciseDetailResponse.
 
         习题名称
 
@@ -158,7 +158,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowExerciseDetailResponse.
+        r"""Gets the description of this ShowExerciseDetailResponse.
 
         习题描述
 
@@ -169,7 +169,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowExerciseDetailResponse.
+        r"""Sets the description of this ShowExerciseDetailResponse.
 
         习题描述
 
@@ -180,7 +180,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def difficult(self):
-        """Gets the difficult of this ShowExerciseDetailResponse.
+        r"""Gets the difficult of this ShowExerciseDetailResponse.
 
         :return: The difficult of this ShowExerciseDetailResponse.
         :rtype: :class:`huaweicloudsdkclassroom.v3.DifficultInfo`
@@ -189,7 +189,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @difficult.setter
     def difficult(self, difficult):
-        """Sets the difficult of this ShowExerciseDetailResponse.
+        r"""Sets the difficult of this ShowExerciseDetailResponse.
 
         :param difficult: The difficult of this ShowExerciseDetailResponse.
         :type difficult: :class:`huaweicloudsdkclassroom.v3.DifficultInfo`
@@ -198,7 +198,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def exercise_type(self):
-        """Gets the exercise_type of this ShowExerciseDetailResponse.
+        r"""Gets the exercise_type of this ShowExerciseDetailResponse.
 
         习题类型编号
 
@@ -209,7 +209,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @exercise_type.setter
     def exercise_type(self, exercise_type):
-        """Sets the exercise_type of this ShowExerciseDetailResponse.
+        r"""Sets the exercise_type of this ShowExerciseDetailResponse.
 
         习题类型编号
 
@@ -220,7 +220,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def exercise_type_name(self):
-        """Gets the exercise_type_name of this ShowExerciseDetailResponse.
+        r"""Gets the exercise_type_name of this ShowExerciseDetailResponse.
 
         习题类型名称
 
@@ -231,7 +231,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @exercise_type_name.setter
     def exercise_type_name(self, exercise_type_name):
-        """Sets the exercise_type_name of this ShowExerciseDetailResponse.
+        r"""Sets the exercise_type_name of this ShowExerciseDetailResponse.
 
         习题类型名称
 
@@ -242,7 +242,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def order_count(self):
-        """Gets the order_count of this ShowExerciseDetailResponse.
+        r"""Gets the order_count of this ShowExerciseDetailResponse.
 
         习题库里习题编号
 
@@ -253,7 +253,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @order_count.setter
     def order_count(self, order_count):
-        """Sets the order_count of this ShowExerciseDetailResponse.
+        r"""Sets the order_count of this ShowExerciseDetailResponse.
 
         习题库里习题编号
 
@@ -264,7 +264,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def test_case_description(self):
-        """Gets the test_case_description of this ShowExerciseDetailResponse.
+        r"""Gets the test_case_description of this ShowExerciseDetailResponse.
 
         测试用例描述
 
@@ -275,7 +275,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @test_case_description.setter
     def test_case_description(self, test_case_description):
-        """Sets the test_case_description of this ShowExerciseDetailResponse.
+        r"""Sets the test_case_description of this ShowExerciseDetailResponse.
 
         测试用例描述
 
@@ -286,7 +286,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def knowledge_point(self):
-        """Gets the knowledge_point of this ShowExerciseDetailResponse.
+        r"""Gets the knowledge_point of this ShowExerciseDetailResponse.
 
         相关知识点
 
@@ -297,7 +297,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @knowledge_point.setter
     def knowledge_point(self, knowledge_point):
-        """Sets the knowledge_point of this ShowExerciseDetailResponse.
+        r"""Sets the knowledge_point of this ShowExerciseDetailResponse.
 
         相关知识点
 
@@ -308,7 +308,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def judge_type(self):
-        """Gets the judge_type of this ShowExerciseDetailResponse.
+        r"""Gets the judge_type of this ShowExerciseDetailResponse.
 
         判题类型
 
@@ -319,7 +319,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @judge_type.setter
     def judge_type(self, judge_type):
-        """Sets the judge_type of this ShowExerciseDetailResponse.
+        r"""Sets the judge_type of this ShowExerciseDetailResponse.
 
         判题类型
 
@@ -330,7 +330,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @property
     def exercise_data(self):
-        """Gets the exercise_data of this ShowExerciseDetailResponse.
+        r"""Gets the exercise_data of this ShowExerciseDetailResponse.
 
         :return: The exercise_data of this ShowExerciseDetailResponse.
         :rtype: :class:`huaweicloudsdkclassroom.v3.ExerciseDetailData`
@@ -339,7 +339,7 @@ class ShowExerciseDetailResponse(SdkResponse):
 
     @exercise_data.setter
     def exercise_data(self, exercise_data):
-        """Sets the exercise_data of this ShowExerciseDetailResponse.
+        r"""Sets the exercise_data of this ShowExerciseDetailResponse.
 
         :param exercise_data: The exercise_data of this ShowExerciseDetailResponse.
         :type exercise_data: :class:`huaweicloudsdkclassroom.v3.ExerciseDetailData`

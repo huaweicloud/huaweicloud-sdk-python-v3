@@ -27,7 +27,7 @@ class MysqlProxyFlavorGroups:
     }
 
     def __init__(self, group_type=None, proxy_flavors=None):
-        """MysqlProxyFlavorGroups
+        r"""MysqlProxyFlavorGroups
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MysqlProxyFlavorGroups:
 
     @property
     def group_type(self):
-        """Gets the group_type of this MysqlProxyFlavorGroups.
+        r"""Gets the group_type of this MysqlProxyFlavorGroups.
 
         规格组类型，如x86、arm。
 
@@ -61,7 +61,7 @@ class MysqlProxyFlavorGroups:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this MysqlProxyFlavorGroups.
+        r"""Sets the group_type of this MysqlProxyFlavorGroups.
 
         规格组类型，如x86、arm。
 
@@ -72,7 +72,7 @@ class MysqlProxyFlavorGroups:
 
     @property
     def proxy_flavors(self):
-        """Gets the proxy_flavors of this MysqlProxyFlavorGroups.
+        r"""Gets the proxy_flavors of this MysqlProxyFlavorGroups.
 
         规格信息。
 
@@ -83,7 +83,7 @@ class MysqlProxyFlavorGroups:
 
     @proxy_flavors.setter
     def proxy_flavors(self, proxy_flavors):
-        """Sets the proxy_flavors of this MysqlProxyFlavorGroups.
+        r"""Sets the proxy_flavors of this MysqlProxyFlavorGroups.
 
         规格信息。
 

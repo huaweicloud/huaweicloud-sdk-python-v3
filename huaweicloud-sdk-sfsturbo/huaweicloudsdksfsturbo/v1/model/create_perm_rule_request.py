@@ -27,7 +27,7 @@ class CreatePermRuleRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """CreatePermRuleRequest
+        r"""CreatePermRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePermRuleRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreatePermRuleRequest.
+        r"""Gets the share_id of this CreatePermRuleRequest.
 
         文件系统id
 
@@ -60,7 +60,7 @@ class CreatePermRuleRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreatePermRuleRequest.
+        r"""Sets the share_id of this CreatePermRuleRequest.
 
         文件系统id
 
@@ -71,7 +71,7 @@ class CreatePermRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePermRuleRequest.
+        r"""Gets the body of this CreatePermRuleRequest.
 
         :return: The body of this CreatePermRuleRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreatePermRulesRequestBody`
@@ -80,7 +80,7 @@ class CreatePermRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePermRuleRequest.
+        r"""Sets the body of this CreatePermRuleRequest.
 
         :param body: The body of this CreatePermRuleRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreatePermRulesRequestBody`

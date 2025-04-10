@@ -30,7 +30,7 @@ class WorkFlowPhase:
     }
 
     def __init__(self):
-        """WorkFlowPhase
+        r"""WorkFlowPhase
 
         The model defined in huaweicloud sdk
 

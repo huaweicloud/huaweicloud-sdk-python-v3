@@ -25,7 +25,7 @@ class DeleteDatasourceConnectionRequest:
     }
 
     def __init__(self, connection_id=None):
-        """DeleteDatasourceConnectionRequest
+        r"""DeleteDatasourceConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDatasourceConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DeleteDatasourceConnectionRequest.
+        r"""Gets the connection_id of this DeleteDatasourceConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -53,7 +53,7 @@ class DeleteDatasourceConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DeleteDatasourceConnectionRequest.
+        r"""Sets the connection_id of this DeleteDatasourceConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 

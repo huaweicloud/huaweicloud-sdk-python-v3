@@ -26,7 +26,7 @@ class ChangeMasterStandbyAsyncResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeMasterStandbyAsyncResponse
+        r"""ChangeMasterStandbyAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeMasterStandbyAsyncResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeMasterStandbyAsyncResponse.
+        r"""Gets the job_id of this ChangeMasterStandbyAsyncResponse.
 
         主备切换任务ID
 
@@ -55,7 +55,7 @@ class ChangeMasterStandbyAsyncResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeMasterStandbyAsyncResponse.
+        r"""Sets the job_id of this ChangeMasterStandbyAsyncResponse.
 
         主备切换任务ID
 

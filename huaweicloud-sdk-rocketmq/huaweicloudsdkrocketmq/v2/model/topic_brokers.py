@@ -29,7 +29,7 @@ class TopicBrokers:
     }
 
     def __init__(self, broker_name=None, read_queue_num=None, write_queue_num=None):
-        """TopicBrokers
+        r"""TopicBrokers
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TopicBrokers:
 
     @property
     def broker_name(self):
-        """Gets the broker_name of this TopicBrokers.
+        r"""Gets the broker_name of this TopicBrokers.
 
         代理名称。
 
@@ -68,7 +68,7 @@ class TopicBrokers:
 
     @broker_name.setter
     def broker_name(self, broker_name):
-        """Sets the broker_name of this TopicBrokers.
+        r"""Sets the broker_name of this TopicBrokers.
 
         代理名称。
 
@@ -79,7 +79,7 @@ class TopicBrokers:
 
     @property
     def read_queue_num(self):
-        """Gets the read_queue_num of this TopicBrokers.
+        r"""Gets the read_queue_num of this TopicBrokers.
 
         读队列个数。
 
@@ -90,7 +90,7 @@ class TopicBrokers:
 
     @read_queue_num.setter
     def read_queue_num(self, read_queue_num):
-        """Sets the read_queue_num of this TopicBrokers.
+        r"""Sets the read_queue_num of this TopicBrokers.
 
         读队列个数。
 
@@ -101,7 +101,7 @@ class TopicBrokers:
 
     @property
     def write_queue_num(self):
-        """Gets the write_queue_num of this TopicBrokers.
+        r"""Gets the write_queue_num of this TopicBrokers.
 
         写队列个数。
 
@@ -112,7 +112,7 @@ class TopicBrokers:
 
     @write_queue_num.setter
     def write_queue_num(self, write_queue_num):
-        """Sets the write_queue_num of this TopicBrokers.
+        r"""Sets the write_queue_num of this TopicBrokers.
 
         写队列个数。
 

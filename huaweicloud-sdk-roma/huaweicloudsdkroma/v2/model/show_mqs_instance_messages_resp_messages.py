@@ -45,7 +45,7 @@ class ShowMqsInstanceMessagesRespMessages:
     }
 
     def __init__(self, topic=None, partition=None, key=None, value=None, size=None, timestamp=None, huge_message=None, message_offset=None, message_id=None, app_id=None, tag=None):
-        """ShowMqsInstanceMessagesRespMessages
+        r"""ShowMqsInstanceMessagesRespMessages
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the topic of this ShowMqsInstanceMessagesRespMessages.
 
         topic名称。
 
@@ -124,7 +124,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the topic of this ShowMqsInstanceMessagesRespMessages.
 
         topic名称。
 
@@ -135,7 +135,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the partition of this ShowMqsInstanceMessagesRespMessages.
 
         消息所在的分区。
 
@@ -146,7 +146,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the partition of this ShowMqsInstanceMessagesRespMessages.
 
         消息所在的分区。
 
@@ -157,7 +157,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def key(self):
-        """Gets the key of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the key of this ShowMqsInstanceMessagesRespMessages.
 
         消息key。
 
@@ -168,7 +168,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the key of this ShowMqsInstanceMessagesRespMessages.
 
         消息key。
 
@@ -179,7 +179,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def value(self):
-        """Gets the value of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the value of this ShowMqsInstanceMessagesRespMessages.
 
         消息内容。
 
@@ -190,7 +190,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the value of this ShowMqsInstanceMessagesRespMessages.
 
         消息内容。
 
@@ -201,7 +201,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def size(self):
-        """Gets the size of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the size of this ShowMqsInstanceMessagesRespMessages.
 
         消息大小。
 
@@ -212,7 +212,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the size of this ShowMqsInstanceMessagesRespMessages.
 
         消息大小。
 
@@ -223,7 +223,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the timestamp of this ShowMqsInstanceMessagesRespMessages.
 
         topic名称。
 
@@ -234,7 +234,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the timestamp of this ShowMqsInstanceMessagesRespMessages.
 
         topic名称。
 
@@ -245,7 +245,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def huge_message(self):
-        """Gets the huge_message of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the huge_message of this ShowMqsInstanceMessagesRespMessages.
 
         大数据标识。
 
@@ -256,7 +256,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @huge_message.setter
     def huge_message(self, huge_message):
-        """Sets the huge_message of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the huge_message of this ShowMqsInstanceMessagesRespMessages.
 
         大数据标识。
 
@@ -267,7 +267,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the message_offset of this ShowMqsInstanceMessagesRespMessages.
 
         消息偏移量。
 
@@ -278,7 +278,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the message_offset of this ShowMqsInstanceMessagesRespMessages.
 
         消息偏移量。
 
@@ -289,7 +289,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def message_id(self):
-        """Gets the message_id of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the message_id of this ShowMqsInstanceMessagesRespMessages.
 
         消息ID。
 
@@ -300,7 +300,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the message_id of this ShowMqsInstanceMessagesRespMessages.
 
         消息ID。
 
@@ -311,7 +311,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the app_id of this ShowMqsInstanceMessagesRespMessages.
 
         应用ID。
 
@@ -322,7 +322,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the app_id of this ShowMqsInstanceMessagesRespMessages.
 
         应用ID。
 
@@ -333,7 +333,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @property
     def tag(self):
-        """Gets the tag of this ShowMqsInstanceMessagesRespMessages.
+        r"""Gets the tag of this ShowMqsInstanceMessagesRespMessages.
 
         消息标签。
 
@@ -344,7 +344,7 @@ class ShowMqsInstanceMessagesRespMessages:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowMqsInstanceMessagesRespMessages.
+        r"""Sets the tag of this ShowMqsInstanceMessagesRespMessages.
 
         消息标签。
 

@@ -25,7 +25,7 @@ class ListCorpConfigInfoRequest:
     }
 
     def __init__(self, body=None):
-        """ListCorpConfigInfoRequest
+        r"""ListCorpConfigInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCorpConfigInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCorpConfigInfoRequest.
+        r"""Gets the body of this ListCorpConfigInfoRequest.
 
         :return: The body of this ListCorpConfigInfoRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListConfigInfoReq`
@@ -52,7 +52,7 @@ class ListCorpConfigInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCorpConfigInfoRequest.
+        r"""Sets the body of this ListCorpConfigInfoRequest.
 
         :param body: The body of this ListCorpConfigInfoRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ListConfigInfoReq`

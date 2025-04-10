@@ -28,7 +28,7 @@ class ListSubMetricsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, result=None):
-        """ListSubMetricsResponse
+        r"""ListSubMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSubMetricsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSubMetricsResponse.
+        r"""Gets the total of this ListSubMetricsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListSubMetricsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSubMetricsResponse.
+        r"""Sets the total of this ListSubMetricsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListSubMetricsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListSubMetricsResponse.
+        r"""Gets the result of this ListSubMetricsResponse.
 
         指标数据列表
 
@@ -84,7 +84,7 @@ class ListSubMetricsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListSubMetricsResponse.
+        r"""Sets the result of this ListSubMetricsResponse.
 
         指标数据列表
 

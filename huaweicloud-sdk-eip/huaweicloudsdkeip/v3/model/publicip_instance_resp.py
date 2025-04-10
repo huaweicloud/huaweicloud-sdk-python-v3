@@ -65,7 +65,7 @@ class PublicipInstanceResp:
     }
 
     def __init__(self, id=None, project_id=None, ip_version=None, public_ip_address=None, public_ipv6_address=None, status=None, description=None, public_border_group=None, created_at=None, updated_at=None, type=None, vnic=None, bandwidth=None, enterprise_project_id=None, billing_info=None, lock_status=None, associate_instance_type=None, associate_instance_id=None, publicip_pool_id=None, publicip_pool_name=None, alias=None):
-        """PublicipInstanceResp
+        r"""PublicipInstanceResp
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class PublicipInstanceResp:
 
     @property
     def id(self):
-        """Gets the id of this PublicipInstanceResp.
+        r"""Gets the id of this PublicipInstanceResp.
 
         功能说明：弹性公网IP唯一标识
 
@@ -194,7 +194,7 @@ class PublicipInstanceResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicipInstanceResp.
+        r"""Sets the id of this PublicipInstanceResp.
 
         功能说明：弹性公网IP唯一标识
 
@@ -205,7 +205,7 @@ class PublicipInstanceResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PublicipInstanceResp.
+        r"""Gets the project_id of this PublicipInstanceResp.
 
         功能说明：项目ID
 
@@ -216,7 +216,7 @@ class PublicipInstanceResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PublicipInstanceResp.
+        r"""Sets the project_id of this PublicipInstanceResp.
 
         功能说明：项目ID
 
@@ -227,7 +227,7 @@ class PublicipInstanceResp:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicipInstanceResp.
+        r"""Gets the ip_version of this PublicipInstanceResp.
 
         功能说明：IP版本信息 取值范围：4表示公网IP地址为public_ip_address地址;6表示公网IP地址为public_ipv6_address地址\"
 
@@ -238,7 +238,7 @@ class PublicipInstanceResp:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicipInstanceResp.
+        r"""Sets the ip_version of this PublicipInstanceResp.
 
         功能说明：IP版本信息 取值范围：4表示公网IP地址为public_ip_address地址;6表示公网IP地址为public_ipv6_address地址\"
 
@@ -249,7 +249,7 @@ class PublicipInstanceResp:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this PublicipInstanceResp.
+        r"""Gets the public_ip_address of this PublicipInstanceResp.
 
         功能说明：弹性公网IP或者IPv6端口的地址
 
@@ -260,7 +260,7 @@ class PublicipInstanceResp:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this PublicipInstanceResp.
+        r"""Sets the public_ip_address of this PublicipInstanceResp.
 
         功能说明：弹性公网IP或者IPv6端口的地址
 
@@ -271,7 +271,7 @@ class PublicipInstanceResp:
 
     @property
     def public_ipv6_address(self):
-        """Gets the public_ipv6_address of this PublicipInstanceResp.
+        r"""Gets the public_ipv6_address of this PublicipInstanceResp.
 
         功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -282,7 +282,7 @@ class PublicipInstanceResp:
 
     @public_ipv6_address.setter
     def public_ipv6_address(self, public_ipv6_address):
-        """Sets the public_ipv6_address of this PublicipInstanceResp.
+        r"""Sets the public_ipv6_address of this PublicipInstanceResp.
 
         功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -293,7 +293,7 @@ class PublicipInstanceResp:
 
     @property
     def status(self):
-        """Gets the status of this PublicipInstanceResp.
+        r"""Gets the status of this PublicipInstanceResp.
 
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
@@ -304,7 +304,7 @@ class PublicipInstanceResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicipInstanceResp.
+        r"""Sets the status of this PublicipInstanceResp.
 
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
@@ -315,7 +315,7 @@ class PublicipInstanceResp:
 
     @property
     def description(self):
-        """Gets the description of this PublicipInstanceResp.
+        r"""Gets the description of this PublicipInstanceResp.
 
         功能说明：弹性公网IP描述信息 约束：用户以自定义方式标识资源，系统不感知
 
@@ -326,7 +326,7 @@ class PublicipInstanceResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublicipInstanceResp.
+        r"""Sets the description of this PublicipInstanceResp.
 
         功能说明：弹性公网IP描述信息 约束：用户以自定义方式标识资源，系统不感知
 
@@ -337,7 +337,7 @@ class PublicipInstanceResp:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this PublicipInstanceResp.
+        r"""Gets the public_border_group of this PublicipInstanceResp.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
@@ -348,7 +348,7 @@ class PublicipInstanceResp:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this PublicipInstanceResp.
+        r"""Sets the public_border_group of this PublicipInstanceResp.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
@@ -359,7 +359,7 @@ class PublicipInstanceResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PublicipInstanceResp.
+        r"""Gets the created_at of this PublicipInstanceResp.
 
         功能说明：资源创建UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
 
@@ -370,7 +370,7 @@ class PublicipInstanceResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PublicipInstanceResp.
+        r"""Sets the created_at of this PublicipInstanceResp.
 
         功能说明：资源创建UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
 
@@ -381,7 +381,7 @@ class PublicipInstanceResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PublicipInstanceResp.
+        r"""Gets the updated_at of this PublicipInstanceResp.
 
         功能说明：资源更新UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
 
@@ -392,7 +392,7 @@ class PublicipInstanceResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PublicipInstanceResp.
+        r"""Sets the updated_at of this PublicipInstanceResp.
 
         功能说明：资源更新UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
 
@@ -403,7 +403,7 @@ class PublicipInstanceResp:
 
     @property
     def type(self):
-        """Gets the type of this PublicipInstanceResp.
+        r"""Gets the type of this PublicipInstanceResp.
 
         功能说明：弹性公网IP类型
 
@@ -414,7 +414,7 @@ class PublicipInstanceResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicipInstanceResp.
+        r"""Sets the type of this PublicipInstanceResp.
 
         功能说明：弹性公网IP类型
 
@@ -425,7 +425,7 @@ class PublicipInstanceResp:
 
     @property
     def vnic(self):
-        """Gets the vnic of this PublicipInstanceResp.
+        r"""Gets the vnic of this PublicipInstanceResp.
 
         :return: The vnic of this PublicipInstanceResp.
         :rtype: :class:`huaweicloudsdkeip.v3.VnicInfo`
@@ -434,7 +434,7 @@ class PublicipInstanceResp:
 
     @vnic.setter
     def vnic(self, vnic):
-        """Sets the vnic of this PublicipInstanceResp.
+        r"""Sets the vnic of this PublicipInstanceResp.
 
         :param vnic: The vnic of this PublicipInstanceResp.
         :type vnic: :class:`huaweicloudsdkeip.v3.VnicInfo`
@@ -443,7 +443,7 @@ class PublicipInstanceResp:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this PublicipInstanceResp.
+        r"""Gets the bandwidth of this PublicipInstanceResp.
 
         :return: The bandwidth of this PublicipInstanceResp.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
@@ -452,7 +452,7 @@ class PublicipInstanceResp:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this PublicipInstanceResp.
+        r"""Sets the bandwidth of this PublicipInstanceResp.
 
         :param bandwidth: The bandwidth of this PublicipInstanceResp.
         :type bandwidth: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
@@ -461,7 +461,7 @@ class PublicipInstanceResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PublicipInstanceResp.
+        r"""Gets the enterprise_project_id of this PublicipInstanceResp.
 
         功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
 
@@ -472,7 +472,7 @@ class PublicipInstanceResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PublicipInstanceResp.
+        r"""Sets the enterprise_project_id of this PublicipInstanceResp.
 
         功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
 
@@ -483,7 +483,7 @@ class PublicipInstanceResp:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this PublicipInstanceResp.
+        r"""Gets the billing_info of this PublicipInstanceResp.
 
         功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
 
@@ -494,7 +494,7 @@ class PublicipInstanceResp:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this PublicipInstanceResp.
+        r"""Sets the billing_info of this PublicipInstanceResp.
 
         功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
 
@@ -505,7 +505,7 @@ class PublicipInstanceResp:
 
     @property
     def lock_status(self):
-        """Gets the lock_status of this PublicipInstanceResp.
+        r"""Gets the lock_status of this PublicipInstanceResp.
 
         功能说明：记录公网IP当前的冻结状态 约束：metadata类型，标识欠费冻结、公安冻结 取值范围：police，locked
 
@@ -516,7 +516,7 @@ class PublicipInstanceResp:
 
     @lock_status.setter
     def lock_status(self, lock_status):
-        """Sets the lock_status of this PublicipInstanceResp.
+        r"""Sets the lock_status of this PublicipInstanceResp.
 
         功能说明：记录公网IP当前的冻结状态 约束：metadata类型，标识欠费冻结、公安冻结 取值范围：police，locked
 
@@ -527,7 +527,7 @@ class PublicipInstanceResp:
 
     @property
     def associate_instance_type(self):
-        """Gets the associate_instance_type of this PublicipInstanceResp.
+        r"""Gets the associate_instance_type of this PublicipInstanceResp.
 
         功能说明：公网IP绑定的实例类型 取值范围：PORT、NATGW、ELB、ELBV1、VPN、null
 
@@ -538,7 +538,7 @@ class PublicipInstanceResp:
 
     @associate_instance_type.setter
     def associate_instance_type(self, associate_instance_type):
-        """Sets the associate_instance_type of this PublicipInstanceResp.
+        r"""Sets the associate_instance_type of this PublicipInstanceResp.
 
         功能说明：公网IP绑定的实例类型 取值范围：PORT、NATGW、ELB、ELBV1、VPN、null
 
@@ -549,7 +549,7 @@ class PublicipInstanceResp:
 
     @property
     def associate_instance_id(self):
-        """Gets the associate_instance_id of this PublicipInstanceResp.
+        r"""Gets the associate_instance_id of this PublicipInstanceResp.
 
         功能说明：公网IP绑定的实例ID
 
@@ -560,7 +560,7 @@ class PublicipInstanceResp:
 
     @associate_instance_id.setter
     def associate_instance_id(self, associate_instance_id):
-        """Sets the associate_instance_id of this PublicipInstanceResp.
+        r"""Sets the associate_instance_id of this PublicipInstanceResp.
 
         功能说明：公网IP绑定的实例ID
 
@@ -571,7 +571,7 @@ class PublicipInstanceResp:
 
     @property
     def publicip_pool_id(self):
-        """Gets the publicip_pool_id of this PublicipInstanceResp.
+        r"""Gets the publicip_pool_id of this PublicipInstanceResp.
 
         功能说明：公网IP所属网络的ID。publicip_pool_name对应的网络ID
 
@@ -582,7 +582,7 @@ class PublicipInstanceResp:
 
     @publicip_pool_id.setter
     def publicip_pool_id(self, publicip_pool_id):
-        """Sets the publicip_pool_id of this PublicipInstanceResp.
+        r"""Sets the publicip_pool_id of this PublicipInstanceResp.
 
         功能说明：公网IP所属网络的ID。publicip_pool_name对应的网络ID
 
@@ -593,7 +593,7 @@ class PublicipInstanceResp:
 
     @property
     def publicip_pool_name(self):
-        """Gets the publicip_pool_name of this PublicipInstanceResp.
+        r"""Gets the publicip_pool_name of this PublicipInstanceResp.
 
         功能说明：弹性公网IP的网络类型, 包括公共池类型，如5_bgp/5_sbgp...，和用户购买的专属池。 专属池见publcip_pool相关接口
 
@@ -604,7 +604,7 @@ class PublicipInstanceResp:
 
     @publicip_pool_name.setter
     def publicip_pool_name(self, publicip_pool_name):
-        """Sets the publicip_pool_name of this PublicipInstanceResp.
+        r"""Sets the publicip_pool_name of this PublicipInstanceResp.
 
         功能说明：弹性公网IP的网络类型, 包括公共池类型，如5_bgp/5_sbgp...，和用户购买的专属池。 专属池见publcip_pool相关接口
 
@@ -615,7 +615,7 @@ class PublicipInstanceResp:
 
     @property
     def alias(self):
-        """Gets the alias of this PublicipInstanceResp.
+        r"""Gets the alias of this PublicipInstanceResp.
 
         功能说明：弹性公网IP名称
 
@@ -626,7 +626,7 @@ class PublicipInstanceResp:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this PublicipInstanceResp.
+        r"""Sets the alias of this PublicipInstanceResp.
 
         功能说明：弹性公网IP名称
 

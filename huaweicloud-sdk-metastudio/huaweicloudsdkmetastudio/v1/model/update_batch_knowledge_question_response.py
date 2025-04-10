@@ -26,7 +26,7 @@ class UpdateBatchKnowledgeQuestionResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateBatchKnowledgeQuestionResponse
+        r"""UpdateBatchKnowledgeQuestionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBatchKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateBatchKnowledgeQuestionResponse.
+        r"""Gets the x_request_id of this UpdateBatchKnowledgeQuestionResponse.
 
         :return: The x_request_id of this UpdateBatchKnowledgeQuestionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateBatchKnowledgeQuestionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateBatchKnowledgeQuestionResponse.
+        r"""Sets the x_request_id of this UpdateBatchKnowledgeQuestionResponse.
 
         :param x_request_id: The x_request_id of this UpdateBatchKnowledgeQuestionResponse.
         :type x_request_id: str

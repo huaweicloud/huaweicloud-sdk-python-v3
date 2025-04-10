@@ -41,7 +41,7 @@ class Asset:
     }
 
     def __init__(self, id=None, name=None, project_id=None, create_time=None, creator_name=None, creator_num=None, update_name=None, update_num=None, update_time=None):
-        """Asset
+        r"""Asset
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Asset:
 
     @property
     def id(self):
-        """Gets the id of this Asset.
+        r"""Gets the id of this Asset.
 
         :return: The id of this Asset.
         :rtype: str
@@ -108,7 +108,7 @@ class Asset:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Asset.
+        r"""Sets the id of this Asset.
 
         :param id: The id of this Asset.
         :type id: str
@@ -117,7 +117,7 @@ class Asset:
 
     @property
     def name(self):
-        """Gets the name of this Asset.
+        r"""Gets the name of this Asset.
 
         :return: The name of this Asset.
         :rtype: str
@@ -126,7 +126,7 @@ class Asset:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Asset.
+        r"""Sets the name of this Asset.
 
         :param name: The name of this Asset.
         :type name: str
@@ -135,7 +135,7 @@ class Asset:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Asset.
+        r"""Gets the project_id of this Asset.
 
         :return: The project_id of this Asset.
         :rtype: str
@@ -144,7 +144,7 @@ class Asset:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Asset.
+        r"""Sets the project_id of this Asset.
 
         :param project_id: The project_id of this Asset.
         :type project_id: str
@@ -153,7 +153,7 @@ class Asset:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Asset.
+        r"""Gets the create_time of this Asset.
 
         :return: The create_time of this Asset.
         :rtype: datetime
@@ -162,7 +162,7 @@ class Asset:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Asset.
+        r"""Sets the create_time of this Asset.
 
         :param create_time: The create_time of this Asset.
         :type create_time: datetime
@@ -171,7 +171,7 @@ class Asset:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this Asset.
+        r"""Gets the creator_name of this Asset.
 
         :return: The creator_name of this Asset.
         :rtype: str
@@ -180,7 +180,7 @@ class Asset:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this Asset.
+        r"""Sets the creator_name of this Asset.
 
         :param creator_name: The creator_name of this Asset.
         :type creator_name: str
@@ -189,7 +189,7 @@ class Asset:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this Asset.
+        r"""Gets the creator_num of this Asset.
 
         :return: The creator_num of this Asset.
         :rtype: str
@@ -198,7 +198,7 @@ class Asset:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this Asset.
+        r"""Sets the creator_num of this Asset.
 
         :param creator_num: The creator_num of this Asset.
         :type creator_num: str
@@ -207,7 +207,7 @@ class Asset:
 
     @property
     def update_name(self):
-        """Gets the update_name of this Asset.
+        r"""Gets the update_name of this Asset.
 
         :return: The update_name of this Asset.
         :rtype: str
@@ -216,7 +216,7 @@ class Asset:
 
     @update_name.setter
     def update_name(self, update_name):
-        """Sets the update_name of this Asset.
+        r"""Sets the update_name of this Asset.
 
         :param update_name: The update_name of this Asset.
         :type update_name: str
@@ -225,7 +225,7 @@ class Asset:
 
     @property
     def update_num(self):
-        """Gets the update_num of this Asset.
+        r"""Gets the update_num of this Asset.
 
         :return: The update_num of this Asset.
         :rtype: str
@@ -234,7 +234,7 @@ class Asset:
 
     @update_num.setter
     def update_num(self, update_num):
-        """Sets the update_num of this Asset.
+        r"""Sets the update_num of this Asset.
 
         :param update_num: The update_num of this Asset.
         :type update_num: str
@@ -243,7 +243,7 @@ class Asset:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Asset.
+        r"""Gets the update_time of this Asset.
 
         :return: The update_time of this Asset.
         :rtype: datetime
@@ -252,7 +252,7 @@ class Asset:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Asset.
+        r"""Sets the update_time of this Asset.
 
         :param update_time: The update_time of this Asset.
         :type update_time: datetime

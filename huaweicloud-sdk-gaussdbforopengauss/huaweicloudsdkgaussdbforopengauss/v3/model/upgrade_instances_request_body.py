@@ -25,7 +25,7 @@ class UpgradeInstancesRequestBody:
     }
 
     def __init__(self, instance_ids=None):
-        """UpgradeInstancesRequestBody
+        r"""UpgradeInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeInstancesRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this UpgradeInstancesRequestBody.
+        r"""Gets the instance_ids of this UpgradeInstancesRequestBody.
 
         批量实例ID。
 
@@ -54,7 +54,7 @@ class UpgradeInstancesRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this UpgradeInstancesRequestBody.
+        r"""Sets the instance_ids of this UpgradeInstancesRequestBody.
 
         批量实例ID。
 

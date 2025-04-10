@@ -34,7 +34,7 @@ class DlfAsyncClient(Client):
         return client_builder
 
     def cancel_script_async(self, request):
-        """停止脚本实例的执行
+        r"""停止脚本实例的执行
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -102,7 +102,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def create_connection_async(self, request):
-        """创建连接
+        r"""创建连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -168,7 +168,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def create_job_async(self, request):
-        """创建作业
+        r"""创建作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -234,7 +234,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def create_resource_async(self, request):
-        """创建资源
+        r"""创建资源
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -300,7 +300,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def create_script_async(self, request):
-        """创建脚本
+        r"""创建脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -366,7 +366,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def delete_connction_async(self, request):
-        """删除连接
+        r"""删除连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -432,7 +432,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def delete_job_async(self, request):
-        """删除作业
+        r"""删除作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -498,7 +498,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def delete_resource_async(self, request):
-        """删除资源
+        r"""删除资源
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -564,7 +564,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def delete_script_async(self, request):
-        """删除脚本
+        r"""删除脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -630,7 +630,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def execute_script_async(self, request):
-        """执行脚本
+        r"""执行脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -698,7 +698,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def export_connections_async(self, request):
-        """导出连接
+        r"""导出连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -762,7 +762,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def export_job_async(self, request):
-        """导出作业
+        r"""导出作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -828,7 +828,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def export_job_list_async(self, request):
-        """批量导出作业
+        r"""批量导出作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -894,7 +894,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def import_connections_async(self, request):
-        """导入连接
+        r"""导入连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -960,7 +960,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def import_job_async(self, request):
-        """导入作业
+        r"""导入作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1026,7 +1026,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_connections_async(self, request):
-        """查询连接列表
+        r"""查询连接列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1090,7 +1090,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_job_instances_async(self, request):
-        """查询作业实例列表
+        r"""查询作业实例列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1154,7 +1154,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_jobs_async(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1218,7 +1218,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_resources_async(self, request):
-        """查询资源列表
+        r"""查询资源列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1282,7 +1282,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_script_results_async(self, request):
-        """查询脚本实例执行结果
+        r"""查询脚本实例执行结果
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1350,7 +1350,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_scripts_async(self, request):
-        """查询脚本列表
+        r"""查询脚本列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1414,7 +1414,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def list_system_tasks_async(self, request):
-        """查询系统任务详情
+        r"""查询系统任务详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1480,7 +1480,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def restore_job_instance_async(self, request):
-        """重跑作业实例
+        r"""重跑作业实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1548,7 +1548,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def run_once_async(self, request):
-        """单次执行作业
+        r"""单次执行作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1616,7 +1616,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_connection_async(self, request):
-        """查询连接详情
+        r"""查询连接详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1682,7 +1682,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_directory_tree_async(self, request):
-        """查询目录树
+        r"""查询目录树
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1756,7 +1756,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_file_info_async(self, request):
-        """检查导入作业文件中的作业和脚本
+        r"""检查导入作业文件中的作业和脚本
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1822,7 +1822,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_job_async(self, request):
-        """查询作业详情
+        r"""查询作业详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1888,7 +1888,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_job_instance_async(self, request):
-        """查询作业实例详情
+        r"""查询作业实例详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1956,7 +1956,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_job_status_async(self, request):
-        """查询实时作业的运行状态
+        r"""查询实时作业的运行状态
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2022,7 +2022,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_resource_async(self, request):
-        """查询资源详情
+        r"""查询资源详情
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2088,7 +2088,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def show_script_async(self, request):
-        """查询脚本信息
+        r"""查询脚本信息
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2154,7 +2154,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def start_job_async(self, request):
-        """启动作业
+        r"""启动作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2222,7 +2222,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def stop_job_async(self, request):
-        """停止作业
+        r"""停止作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2288,7 +2288,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def stop_job_instance_async(self, request):
-        """停止作业实例
+        r"""停止作业实例
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2356,7 +2356,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def update_connection_async(self, request):
-        """修改连接
+        r"""修改连接
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2424,7 +2424,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def update_job_async(self, request):
-        """修改作业
+        r"""修改作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2492,7 +2492,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def update_resource_async(self, request):
-        """修改资源
+        r"""修改资源
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -2560,7 +2560,7 @@ class DlfAsyncClient(Client):
         return http_info
 
     def update_script_async(self, request):
-        """修改脚本内容
+        r"""修改脚本内容
 
         
         Please refer to HUAWEI cloud API Explorer for details.

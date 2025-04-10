@@ -37,7 +37,7 @@ class QueryTaskTestCasesInfo:
     }
 
     def __init__(self, page_no=None, page_size=None, start_index=None, end_index=None, key_word=None, test_case_uris=None, iterator_uri=None):
-        """QueryTaskTestCasesInfo
+        r"""QueryTaskTestCasesInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this QueryTaskTestCasesInfo.
+        r"""Gets the page_no of this QueryTaskTestCasesInfo.
 
         页码
 
@@ -96,7 +96,7 @@ class QueryTaskTestCasesInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this QueryTaskTestCasesInfo.
+        r"""Sets the page_no of this QueryTaskTestCasesInfo.
 
         页码
 
@@ -107,7 +107,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryTaskTestCasesInfo.
+        r"""Gets the page_size of this QueryTaskTestCasesInfo.
 
         每页数量
 
@@ -118,7 +118,7 @@ class QueryTaskTestCasesInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryTaskTestCasesInfo.
+        r"""Sets the page_size of this QueryTaskTestCasesInfo.
 
         每页数量
 
@@ -129,7 +129,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def start_index(self):
-        """Gets the start_index of this QueryTaskTestCasesInfo.
+        r"""Gets the start_index of this QueryTaskTestCasesInfo.
 
         起始位
 
@@ -140,7 +140,7 @@ class QueryTaskTestCasesInfo:
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this QueryTaskTestCasesInfo.
+        r"""Sets the start_index of this QueryTaskTestCasesInfo.
 
         起始位
 
@@ -151,7 +151,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def end_index(self):
-        """Gets the end_index of this QueryTaskTestCasesInfo.
+        r"""Gets the end_index of this QueryTaskTestCasesInfo.
 
         结束位
 
@@ -162,7 +162,7 @@ class QueryTaskTestCasesInfo:
 
     @end_index.setter
     def end_index(self, end_index):
-        """Sets the end_index of this QueryTaskTestCasesInfo.
+        r"""Sets the end_index of this QueryTaskTestCasesInfo.
 
         结束位
 
@@ -173,7 +173,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def key_word(self):
-        """Gets the key_word of this QueryTaskTestCasesInfo.
+        r"""Gets the key_word of this QueryTaskTestCasesInfo.
 
         关键字
 
@@ -184,7 +184,7 @@ class QueryTaskTestCasesInfo:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this QueryTaskTestCasesInfo.
+        r"""Sets the key_word of this QueryTaskTestCasesInfo.
 
         关键字
 
@@ -195,7 +195,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def test_case_uris(self):
-        """Gets the test_case_uris of this QueryTaskTestCasesInfo.
+        r"""Gets the test_case_uris of this QueryTaskTestCasesInfo.
 
         用例uri列表
 
@@ -206,7 +206,7 @@ class QueryTaskTestCasesInfo:
 
     @test_case_uris.setter
     def test_case_uris(self, test_case_uris):
-        """Sets the test_case_uris of this QueryTaskTestCasesInfo.
+        r"""Sets the test_case_uris of this QueryTaskTestCasesInfo.
 
         用例uri列表
 
@@ -217,7 +217,7 @@ class QueryTaskTestCasesInfo:
 
     @property
     def iterator_uri(self):
-        """Gets the iterator_uri of this QueryTaskTestCasesInfo.
+        r"""Gets the iterator_uri of this QueryTaskTestCasesInfo.
 
         测试计划uri
 
@@ -228,7 +228,7 @@ class QueryTaskTestCasesInfo:
 
     @iterator_uri.setter
     def iterator_uri(self, iterator_uri):
-        """Sets the iterator_uri of this QueryTaskTestCasesInfo.
+        r"""Sets the iterator_uri of this QueryTaskTestCasesInfo.
 
         测试计划uri
 

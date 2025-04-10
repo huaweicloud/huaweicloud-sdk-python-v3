@@ -29,7 +29,7 @@ class ShowRunRequest:
     }
 
     def __init__(self, job_id=None, run_id=None, with_details=None):
-        """ShowRunRequest
+        r"""ShowRunRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowRunRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowRunRequest.
+        r"""Gets the job_id of this ShowRunRequest.
 
         作业ID。
 
@@ -66,7 +66,7 @@ class ShowRunRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowRunRequest.
+        r"""Sets the job_id of this ShowRunRequest.
 
         作业ID。
 
@@ -77,7 +77,7 @@ class ShowRunRequest:
 
     @property
     def run_id(self):
-        """Gets the run_id of this ShowRunRequest.
+        r"""Gets the run_id of this ShowRunRequest.
 
         作业运行ID。
 
@@ -88,7 +88,7 @@ class ShowRunRequest:
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this ShowRunRequest.
+        r"""Sets the run_id of this ShowRunRequest.
 
         作业运行ID。
 
@@ -99,7 +99,7 @@ class ShowRunRequest:
 
     @property
     def with_details(self):
-        """Gets the with_details of this ShowRunRequest.
+        r"""Gets the with_details of this ShowRunRequest.
 
         是否查询作业详情。true：查询；false：不查询。details属性为空。默认为false。
 
@@ -110,7 +110,7 @@ class ShowRunRequest:
 
     @with_details.setter
     def with_details(self, with_details):
-        """Sets the with_details of this ShowRunRequest.
+        r"""Sets the with_details of this ShowRunRequest.
 
         是否查询作业详情。true：查询；false：不查询。details属性为空。默认为false。
 

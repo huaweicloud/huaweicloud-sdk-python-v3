@@ -25,7 +25,7 @@ class QueryDbPositionReq:
     }
 
     def __init__(self, reset_position_time=None):
-        """QueryDbPositionReq
+        r"""QueryDbPositionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QueryDbPositionReq:
 
     @property
     def reset_position_time(self):
-        """Gets the reset_position_time of this QueryDbPositionReq.
+        r"""Gets the reset_position_time of this QueryDbPositionReq.
 
         重置位点时间, 使用UTC时间 示例：2023-09-19 15:00:00，UTC时间是2023-09-19T07:00:00Z
 
@@ -53,7 +53,7 @@ class QueryDbPositionReq:
 
     @reset_position_time.setter
     def reset_position_time(self, reset_position_time):
-        """Sets the reset_position_time of this QueryDbPositionReq.
+        r"""Sets the reset_position_time of this QueryDbPositionReq.
 
         重置位点时间, 使用UTC时间 示例：2023-09-19 15:00:00，UTC时间是2023-09-19T07:00:00Z
 

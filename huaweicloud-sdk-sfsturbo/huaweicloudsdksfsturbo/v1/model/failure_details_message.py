@@ -25,7 +25,7 @@ class FailureDetailsMessage:
     }
 
     def __init__(self, message=None):
-        """FailureDetailsMessage
+        r"""FailureDetailsMessage
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FailureDetailsMessage:
 
     @property
     def message(self):
-        """Gets the message of this FailureDetailsMessage.
+        r"""Gets the message of this FailureDetailsMessage.
 
         错误信息
 
@@ -53,7 +53,7 @@ class FailureDetailsMessage:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this FailureDetailsMessage.
+        r"""Sets the message of this FailureDetailsMessage.
 
         错误信息
 

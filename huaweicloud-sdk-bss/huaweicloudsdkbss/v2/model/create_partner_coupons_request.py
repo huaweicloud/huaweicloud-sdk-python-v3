@@ -25,7 +25,7 @@ class CreatePartnerCouponsRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePartnerCouponsRequest
+        r"""CreatePartnerCouponsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePartnerCouponsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePartnerCouponsRequest.
+        r"""Gets the body of this CreatePartnerCouponsRequest.
 
         :return: The body of this CreatePartnerCouponsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsReq`
@@ -52,7 +52,7 @@ class CreatePartnerCouponsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePartnerCouponsRequest.
+        r"""Sets the body of this CreatePartnerCouponsRequest.
 
         :param body: The body of this CreatePartnerCouponsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsReq`

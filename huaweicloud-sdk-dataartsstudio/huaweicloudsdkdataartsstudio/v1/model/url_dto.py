@@ -27,7 +27,7 @@ class UrlDTO:
     }
 
     def __init__(self, name=None, contains=None):
-        """UrlDTO
+        r"""UrlDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UrlDTO:
 
     @property
     def name(self):
-        """Gets the name of this UrlDTO.
+        r"""Gets the name of this UrlDTO.
 
         url路径名称
 
@@ -61,7 +61,7 @@ class UrlDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UrlDTO.
+        r"""Sets the name of this UrlDTO.
 
         url路径名称
 
@@ -72,7 +72,7 @@ class UrlDTO:
 
     @property
     def contains(self):
-        """Gets the contains of this UrlDTO.
+        r"""Gets the contains of this UrlDTO.
 
         父权限集是否包含此权限, true包含, false不包含, null未检测
 
@@ -83,7 +83,7 @@ class UrlDTO:
 
     @contains.setter
     def contains(self, contains):
-        """Sets the contains of this UrlDTO.
+        r"""Sets the contains of this UrlDTO.
 
         父权限集是否包含此权限, true包含, false不包含, null未检测
 

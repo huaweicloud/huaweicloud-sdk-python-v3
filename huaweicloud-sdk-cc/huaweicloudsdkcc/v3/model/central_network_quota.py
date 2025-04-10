@@ -31,7 +31,7 @@ class CentralNetworkQuota:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """CentralNetworkQuota
+        r"""CentralNetworkQuota
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CentralNetworkQuota:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this CentralNetworkQuota.
+        r"""Gets the quota_key of this CentralNetworkQuota.
 
         :return: The quota_key of this CentralNetworkQuota.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`
@@ -69,7 +69,7 @@ class CentralNetworkQuota:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this CentralNetworkQuota.
+        r"""Sets the quota_key of this CentralNetworkQuota.
 
         :param quota_key: The quota_key of this CentralNetworkQuota.
         :type quota_key: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`
@@ -78,7 +78,7 @@ class CentralNetworkQuota:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this CentralNetworkQuota.
+        r"""Gets the quota_limit of this CentralNetworkQuota.
 
         配额大小。
 
@@ -89,7 +89,7 @@ class CentralNetworkQuota:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this CentralNetworkQuota.
+        r"""Sets the quota_limit of this CentralNetworkQuota.
 
         配额大小。
 
@@ -100,7 +100,7 @@ class CentralNetworkQuota:
 
     @property
     def used(self):
-        """Gets the used of this CentralNetworkQuota.
+        r"""Gets the used of this CentralNetworkQuota.
 
         已使用配额。
 
@@ -111,7 +111,7 @@ class CentralNetworkQuota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this CentralNetworkQuota.
+        r"""Sets the used of this CentralNetworkQuota.
 
         已使用配额。
 
@@ -122,7 +122,7 @@ class CentralNetworkQuota:
 
     @property
     def unit(self):
-        """Gets the unit of this CentralNetworkQuota.
+        r"""Gets the unit of this CentralNetworkQuota.
 
         配额值的单位。
 
@@ -133,7 +133,7 @@ class CentralNetworkQuota:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this CentralNetworkQuota.
+        r"""Sets the unit of this CentralNetworkQuota.
 
         配额值的单位。
 

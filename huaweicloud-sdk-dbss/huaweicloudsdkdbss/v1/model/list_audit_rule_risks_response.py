@@ -28,7 +28,7 @@ class ListAuditRuleRisksResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, total=None):
-        """ListAuditRuleRisksResponse
+        r"""ListAuditRuleRisksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditRuleRisksResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListAuditRuleRisksResponse.
+        r"""Gets the rules of this ListAuditRuleRisksResponse.
 
         风险规则列表
 
@@ -62,7 +62,7 @@ class ListAuditRuleRisksResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListAuditRuleRisksResponse.
+        r"""Sets the rules of this ListAuditRuleRisksResponse.
 
         风险规则列表
 
@@ -73,7 +73,7 @@ class ListAuditRuleRisksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditRuleRisksResponse.
+        r"""Gets the total of this ListAuditRuleRisksResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAuditRuleRisksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditRuleRisksResponse.
+        r"""Sets the total of this ListAuditRuleRisksResponse.
 
         总数
 

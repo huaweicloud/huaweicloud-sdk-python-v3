@@ -25,7 +25,7 @@ class CreateL7policyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateL7policyRequest
+        r"""CreateL7policyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateL7policyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateL7policyRequest.
+        r"""Gets the body of this CreateL7policyRequest.
 
         :return: The body of this CreateL7policyRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateL7policyRequestBody`
@@ -52,7 +52,7 @@ class CreateL7policyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateL7policyRequest.
+        r"""Sets the body of this CreateL7policyRequest.
 
         :param body: The body of this CreateL7policyRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateL7policyRequestBody`

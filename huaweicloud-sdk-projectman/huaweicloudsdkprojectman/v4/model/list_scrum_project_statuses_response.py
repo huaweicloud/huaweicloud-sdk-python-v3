@@ -28,7 +28,7 @@ class ListScrumProjectStatusesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, issue_statuses=None):
-        """ListScrumProjectStatusesResponse
+        r"""ListScrumProjectStatusesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScrumProjectStatusesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListScrumProjectStatusesResponse.
+        r"""Gets the total of this ListScrumProjectStatusesResponse.
 
         状态总数
 
@@ -62,7 +62,7 @@ class ListScrumProjectStatusesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListScrumProjectStatusesResponse.
+        r"""Sets the total of this ListScrumProjectStatusesResponse.
 
         状态总数
 
@@ -73,7 +73,7 @@ class ListScrumProjectStatusesResponse(SdkResponse):
 
     @property
     def issue_statuses(self):
-        """Gets the issue_statuses of this ListScrumProjectStatusesResponse.
+        r"""Gets the issue_statuses of this ListScrumProjectStatusesResponse.
 
         状态列表
 
@@ -84,7 +84,7 @@ class ListScrumProjectStatusesResponse(SdkResponse):
 
     @issue_statuses.setter
     def issue_statuses(self, issue_statuses):
-        """Sets the issue_statuses of this ListScrumProjectStatusesResponse.
+        r"""Sets the issue_statuses of this ListScrumProjectStatusesResponse.
 
         状态列表
 

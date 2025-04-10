@@ -25,7 +25,7 @@ class CreateSecurityGroupRuleRequestBody:
     }
 
     def __init__(self, security_group_rule=None):
-        """CreateSecurityGroupRuleRequestBody
+        r"""CreateSecurityGroupRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSecurityGroupRuleRequestBody:
 
     @property
     def security_group_rule(self):
-        """Gets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
+        r"""Gets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
 
         :return: The security_group_rule of this CreateSecurityGroupRuleRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleOption`
@@ -51,7 +51,7 @@ class CreateSecurityGroupRuleRequestBody:
 
     @security_group_rule.setter
     def security_group_rule(self, security_group_rule):
-        """Sets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
+        r"""Sets the security_group_rule of this CreateSecurityGroupRuleRequestBody.
 
         :param security_group_rule: The security_group_rule of this CreateSecurityGroupRuleRequestBody.
         :type security_group_rule: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleOption`

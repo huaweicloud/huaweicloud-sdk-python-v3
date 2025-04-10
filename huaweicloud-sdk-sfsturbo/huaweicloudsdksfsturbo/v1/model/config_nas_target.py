@@ -29,7 +29,7 @@ class ConfigNasTarget:
     }
 
     def __init__(self, name=None, type=None, url=None):
-        """ConfigNasTarget
+        r"""ConfigNasTarget
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ConfigNasTarget:
 
     @property
     def name(self):
-        """Gets the name of this ConfigNasTarget.
+        r"""Gets the name of this ConfigNasTarget.
 
         nas 配置名
 
@@ -65,7 +65,7 @@ class ConfigNasTarget:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigNasTarget.
+        r"""Sets the name of this ConfigNasTarget.
 
         nas 配置名
 
@@ -76,7 +76,7 @@ class ConfigNasTarget:
 
     @property
     def type(self):
-        """Gets the type of this ConfigNasTarget.
+        r"""Gets the type of this ConfigNasTarget.
 
         nas 配置协议类型
 
@@ -87,7 +87,7 @@ class ConfigNasTarget:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigNasTarget.
+        r"""Sets the type of this ConfigNasTarget.
 
         nas 配置协议类型
 
@@ -98,7 +98,7 @@ class ConfigNasTarget:
 
     @property
     def url(self):
-        """Gets the url of this ConfigNasTarget.
+        r"""Gets the url of this ConfigNasTarget.
 
         nas 配置 ip
 
@@ -109,7 +109,7 @@ class ConfigNasTarget:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ConfigNasTarget.
+        r"""Sets the url of this ConfigNasTarget.
 
         nas 配置 ip
 

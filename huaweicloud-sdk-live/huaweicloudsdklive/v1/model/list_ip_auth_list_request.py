@@ -25,7 +25,7 @@ class ListIpAuthListRequest:
     }
 
     def __init__(self, domain=None):
-        """ListIpAuthListRequest
+        r"""ListIpAuthListRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListIpAuthListRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListIpAuthListRequest.
+        r"""Gets the domain of this ListIpAuthListRequest.
 
         推流域名或播放域名
 
@@ -53,7 +53,7 @@ class ListIpAuthListRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListIpAuthListRequest.
+        r"""Sets the domain of this ListIpAuthListRequest.
 
         推流域名或播放域名
 

@@ -26,7 +26,7 @@ class BatchExecuteJobActionsResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """BatchExecuteJobActionsResponse
+        r"""BatchExecuteJobActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchExecuteJobActionsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchExecuteJobActionsResponse.
+        r"""Gets the jobs of this BatchExecuteJobActionsResponse.
 
         批量异步操作任务响应体。
 
@@ -55,7 +55,7 @@ class BatchExecuteJobActionsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchExecuteJobActionsResponse.
+        r"""Sets the jobs of this BatchExecuteJobActionsResponse.
 
         批量异步操作任务响应体。
 

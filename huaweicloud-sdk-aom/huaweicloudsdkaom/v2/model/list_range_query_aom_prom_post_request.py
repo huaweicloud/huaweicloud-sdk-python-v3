@@ -31,7 +31,7 @@ class ListRangeQueryAomPromPostRequest:
     }
 
     def __init__(self, query=None, start=None, end=None, step=None):
-        """ListRangeQueryAomPromPostRequest
+        r"""ListRangeQueryAomPromPostRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @property
     def query(self):
-        """Gets the query of this ListRangeQueryAomPromPostRequest.
+        r"""Gets the query of this ListRangeQueryAomPromPostRequest.
 
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
@@ -71,7 +71,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ListRangeQueryAomPromPostRequest.
+        r"""Sets the query of this ListRangeQueryAomPromPostRequest.
 
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
@@ -82,7 +82,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListRangeQueryAomPromPostRequest.
+        r"""Gets the start of this ListRangeQueryAomPromPostRequest.
 
         起始时间戳(Unix时间戳格式，单位：秒）。
 
@@ -93,7 +93,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListRangeQueryAomPromPostRequest.
+        r"""Sets the start of this ListRangeQueryAomPromPostRequest.
 
         起始时间戳(Unix时间戳格式，单位：秒）。
 
@@ -104,7 +104,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @property
     def end(self):
-        """Gets the end of this ListRangeQueryAomPromPostRequest.
+        r"""Gets the end of this ListRangeQueryAomPromPostRequest.
 
         结束时间戳(Unix时间戳格式，单位：秒）。
 
@@ -115,7 +115,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this ListRangeQueryAomPromPostRequest.
+        r"""Sets the end of this ListRangeQueryAomPromPostRequest.
 
         结束时间戳(Unix时间戳格式，单位：秒）。
 
@@ -126,7 +126,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @property
     def step(self):
-        """Gets the step of this ListRangeQueryAomPromPostRequest.
+        r"""Gets the step of this ListRangeQueryAomPromPostRequest.
 
         查询时间步长，时间区内每step秒执行一次。
 
@@ -137,7 +137,7 @@ class ListRangeQueryAomPromPostRequest:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ListRangeQueryAomPromPostRequest.
+        r"""Sets the step of this ListRangeQueryAomPromPostRequest.
 
         查询时间步长，时间区内每step秒执行一次。
 

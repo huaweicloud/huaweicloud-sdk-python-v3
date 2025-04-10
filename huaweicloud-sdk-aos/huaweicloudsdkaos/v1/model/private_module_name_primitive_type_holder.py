@@ -25,7 +25,7 @@ class PrivateModuleNamePrimitiveTypeHolder:
     }
 
     def __init__(self, module_name=None):
-        """PrivateModuleNamePrimitiveTypeHolder
+        r"""PrivateModuleNamePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PrivateModuleNamePrimitiveTypeHolder:
 
     @property
     def module_name(self):
-        """Gets the module_name of this PrivateModuleNamePrimitiveTypeHolder.
+        r"""Gets the module_name of this PrivateModuleNamePrimitiveTypeHolder.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -53,7 +53,7 @@ class PrivateModuleNamePrimitiveTypeHolder:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this PrivateModuleNamePrimitiveTypeHolder.
+        r"""Sets the module_name of this PrivateModuleNamePrimitiveTypeHolder.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 

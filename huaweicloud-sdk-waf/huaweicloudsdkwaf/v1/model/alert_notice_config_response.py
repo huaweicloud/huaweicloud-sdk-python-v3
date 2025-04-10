@@ -51,7 +51,7 @@ class AlertNoticeConfigResponse:
     }
 
     def __init__(self, id=None, name=None, enabled=None, topic_urn=None, sendfreq=None, locale=None, times=None, threat=None, prefer_html=None, notice_class=None, nearly_expired_time=None, is_all_enterprise_project=None, enterprise_project_id=None, update_time=None):
-        """AlertNoticeConfigResponse
+        r"""AlertNoticeConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def id(self):
-        """Gets the id of this AlertNoticeConfigResponse.
+        r"""Gets the id of this AlertNoticeConfigResponse.
 
         ID
 
@@ -145,7 +145,7 @@ class AlertNoticeConfigResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlertNoticeConfigResponse.
+        r"""Sets the id of this AlertNoticeConfigResponse.
 
         ID
 
@@ -156,7 +156,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def name(self):
-        """Gets the name of this AlertNoticeConfigResponse.
+        r"""Gets the name of this AlertNoticeConfigResponse.
 
         告警通知名称
 
@@ -167,7 +167,7 @@ class AlertNoticeConfigResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlertNoticeConfigResponse.
+        r"""Sets the name of this AlertNoticeConfigResponse.
 
         告警通知名称
 
@@ -178,7 +178,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def enabled(self):
-        """Gets the enabled of this AlertNoticeConfigResponse.
+        r"""Gets the enabled of this AlertNoticeConfigResponse.
 
         是否开启   - false: 不开启   - true: 开启
 
@@ -189,7 +189,7 @@ class AlertNoticeConfigResponse:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this AlertNoticeConfigResponse.
+        r"""Sets the enabled of this AlertNoticeConfigResponse.
 
         是否开启   - false: 不开启   - true: 开启
 
@@ -200,7 +200,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this AlertNoticeConfigResponse.
+        r"""Gets the topic_urn of this AlertNoticeConfigResponse.
 
         主题
 
@@ -211,7 +211,7 @@ class AlertNoticeConfigResponse:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this AlertNoticeConfigResponse.
+        r"""Sets the topic_urn of this AlertNoticeConfigResponse.
 
         主题
 
@@ -222,7 +222,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def sendfreq(self):
-        """Gets the sendfreq of this AlertNoticeConfigResponse.
+        r"""Gets the sendfreq of this AlertNoticeConfigResponse.
 
         时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值1天、1周（需要转换成分钟）。
 
@@ -233,7 +233,7 @@ class AlertNoticeConfigResponse:
 
     @sendfreq.setter
     def sendfreq(self, sendfreq):
-        """Sets the sendfreq of this AlertNoticeConfigResponse.
+        r"""Sets the sendfreq of this AlertNoticeConfigResponse.
 
         时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值1天、1周（需要转换成分钟）。
 
@@ -244,7 +244,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def locale(self):
-        """Gets the locale of this AlertNoticeConfigResponse.
+        r"""Gets the locale of this AlertNoticeConfigResponse.
 
         语言
 
@@ -255,7 +255,7 @@ class AlertNoticeConfigResponse:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this AlertNoticeConfigResponse.
+        r"""Sets the locale of this AlertNoticeConfigResponse.
 
         语言
 
@@ -266,7 +266,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def times(self):
-        """Gets the times of this AlertNoticeConfigResponse.
+        r"""Gets the times of this AlertNoticeConfigResponse.
 
         当通知类型为防护事件时，需要填写该参数。在该时间间隔内，当攻击次数大于或等于您设置的阈值时才会发送告警通知
 
@@ -277,7 +277,7 @@ class AlertNoticeConfigResponse:
 
     @times.setter
     def times(self, times):
-        """Sets the times of this AlertNoticeConfigResponse.
+        r"""Sets the times of this AlertNoticeConfigResponse.
 
         当通知类型为防护事件时，需要填写该参数。在该时间间隔内，当攻击次数大于或等于您设置的阈值时才会发送告警通知
 
@@ -288,7 +288,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def threat(self):
-        """Gets the threat of this AlertNoticeConfigResponse.
+        r"""Gets the threat of this AlertNoticeConfigResponse.
 
         事件类型
 
@@ -299,7 +299,7 @@ class AlertNoticeConfigResponse:
 
     @threat.setter
     def threat(self, threat):
-        """Sets the threat of this AlertNoticeConfigResponse.
+        r"""Sets the threat of this AlertNoticeConfigResponse.
 
         事件类型
 
@@ -310,7 +310,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def prefer_html(self):
-        """Gets the prefer_html of this AlertNoticeConfigResponse.
+        r"""Gets the prefer_html of this AlertNoticeConfigResponse.
 
         预留参数，可忽略
 
@@ -321,7 +321,7 @@ class AlertNoticeConfigResponse:
 
     @prefer_html.setter
     def prefer_html(self, prefer_html):
-        """Sets the prefer_html of this AlertNoticeConfigResponse.
+        r"""Sets the prefer_html of this AlertNoticeConfigResponse.
 
         预留参数，可忽略
 
@@ -332,7 +332,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def notice_class(self):
-        """Gets the notice_class of this AlertNoticeConfigResponse.
+        r"""Gets the notice_class of this AlertNoticeConfigResponse.
 
         通知类型
 
@@ -343,7 +343,7 @@ class AlertNoticeConfigResponse:
 
     @notice_class.setter
     def notice_class(self, notice_class):
-        """Sets the notice_class of this AlertNoticeConfigResponse.
+        r"""Sets the notice_class of this AlertNoticeConfigResponse.
 
         通知类型
 
@@ -354,7 +354,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def nearly_expired_time(self):
-        """Gets the nearly_expired_time of this AlertNoticeConfigResponse.
+        r"""Gets the nearly_expired_time of this AlertNoticeConfigResponse.
 
         提前通知天数
 
@@ -365,7 +365,7 @@ class AlertNoticeConfigResponse:
 
     @nearly_expired_time.setter
     def nearly_expired_time(self, nearly_expired_time):
-        """Sets the nearly_expired_time of this AlertNoticeConfigResponse.
+        r"""Sets the nearly_expired_time of this AlertNoticeConfigResponse.
 
         提前通知天数
 
@@ -376,7 +376,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def is_all_enterprise_project(self):
-        """Gets the is_all_enterprise_project of this AlertNoticeConfigResponse.
+        r"""Gets the is_all_enterprise_project of this AlertNoticeConfigResponse.
 
         是否是所有企业项目
 
@@ -387,7 +387,7 @@ class AlertNoticeConfigResponse:
 
     @is_all_enterprise_project.setter
     def is_all_enterprise_project(self, is_all_enterprise_project):
-        """Sets the is_all_enterprise_project of this AlertNoticeConfigResponse.
+        r"""Sets the is_all_enterprise_project of this AlertNoticeConfigResponse.
 
         是否是所有企业项目
 
@@ -398,7 +398,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AlertNoticeConfigResponse.
+        r"""Gets the enterprise_project_id of this AlertNoticeConfigResponse.
 
         企业项目ID
 
@@ -409,7 +409,7 @@ class AlertNoticeConfigResponse:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AlertNoticeConfigResponse.
+        r"""Sets the enterprise_project_id of this AlertNoticeConfigResponse.
 
         企业项目ID
 
@@ -420,7 +420,7 @@ class AlertNoticeConfigResponse:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlertNoticeConfigResponse.
+        r"""Gets the update_time of this AlertNoticeConfigResponse.
 
         更新时间
 
@@ -431,7 +431,7 @@ class AlertNoticeConfigResponse:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlertNoticeConfigResponse.
+        r"""Sets the update_time of this AlertNoticeConfigResponse.
 
         更新时间
 

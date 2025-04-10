@@ -26,7 +26,7 @@ class DeleteScheduleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteScheduleResponse
+        r"""DeleteScheduleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteScheduleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteScheduleResponse.
+        r"""Gets the body of this DeleteScheduleResponse.
 
         :return: The body of this DeleteScheduleResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteScheduleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteScheduleResponse.
+        r"""Sets the body of this DeleteScheduleResponse.
 
         :param body: The body of this DeleteScheduleResponse.
         :type body: str

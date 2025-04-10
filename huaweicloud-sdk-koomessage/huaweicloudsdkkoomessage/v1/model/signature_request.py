@@ -41,7 +41,7 @@ class SignatureRequest:
     }
 
     def __init__(self, signature_name=None, signature_type=None, app_id=None, apply_desc=None, file_id=None, signature_source=None, is_involved_third=None, power_attorney_file_id=None, source_title_content=None):
-        """SignatureRequest
+        r"""SignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class SignatureRequest:
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this SignatureRequest.
+        r"""Gets the signature_name of this SignatureRequest.
 
         签名名称。
 
@@ -104,7 +104,7 @@ class SignatureRequest:
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this SignatureRequest.
+        r"""Sets the signature_name of this SignatureRequest.
 
         签名名称。
 
@@ -115,7 +115,7 @@ class SignatureRequest:
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this SignatureRequest.
+        r"""Gets the signature_type of this SignatureRequest.
 
         签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
@@ -126,7 +126,7 @@ class SignatureRequest:
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this SignatureRequest.
+        r"""Sets the signature_type of this SignatureRequest.
 
         签名类型。PROMOTION_TYPE：营销类，NOTIFY_TYPE：通知类。
 
@@ -137,7 +137,7 @@ class SignatureRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SignatureRequest.
+        r"""Gets the app_id of this SignatureRequest.
 
         短信应用ID。
 
@@ -148,7 +148,7 @@ class SignatureRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SignatureRequest.
+        r"""Sets the app_id of this SignatureRequest.
 
         短信应用ID。
 
@@ -159,7 +159,7 @@ class SignatureRequest:
 
     @property
     def apply_desc(self):
-        """Gets the apply_desc of this SignatureRequest.
+        r"""Gets the apply_desc of this SignatureRequest.
 
         申请说明。
 
@@ -170,7 +170,7 @@ class SignatureRequest:
 
     @apply_desc.setter
     def apply_desc(self, apply_desc):
-        """Sets the apply_desc of this SignatureRequest.
+        r"""Sets the apply_desc of this SignatureRequest.
 
         申请说明。
 
@@ -181,7 +181,7 @@ class SignatureRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this SignatureRequest.
+        r"""Gets the file_id of this SignatureRequest.
 
         营业执照文件ID。调用上传申请文件接口获取。
 
@@ -192,7 +192,7 @@ class SignatureRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this SignatureRequest.
+        r"""Sets the file_id of this SignatureRequest.
 
         营业执照文件ID。调用上传申请文件接口获取。
 
@@ -203,7 +203,7 @@ class SignatureRequest:
 
     @property
     def signature_source(self):
-        """Gets the signature_source of this SignatureRequest.
+        r"""Gets the signature_source of this SignatureRequest.
 
         签名来源。0：企事业单位的全称或简称，1：工信部备案网站的全称或简称，2：APP应用的全称或简称，3：公众号或小程序的全称或简称，4：电商平台店铺名的全称或简称，5：商标名的全称或简称。
 
@@ -214,7 +214,7 @@ class SignatureRequest:
 
     @signature_source.setter
     def signature_source(self, signature_source):
-        """Sets the signature_source of this SignatureRequest.
+        r"""Sets the signature_source of this SignatureRequest.
 
         签名来源。0：企事业单位的全称或简称，1：工信部备案网站的全称或简称，2：APP应用的全称或简称，3：公众号或小程序的全称或简称，4：电商平台店铺名的全称或简称，5：商标名的全称或简称。
 
@@ -225,7 +225,7 @@ class SignatureRequest:
 
     @property
     def is_involved_third(self):
-        """Gets the is_involved_third of this SignatureRequest.
+        r"""Gets the is_involved_third of this SignatureRequest.
 
         是否涉及第三方权益。若为yes，则还需要传入授权委托书。yes：涉及，no：不涉及。
 
@@ -236,7 +236,7 @@ class SignatureRequest:
 
     @is_involved_third.setter
     def is_involved_third(self, is_involved_third):
-        """Sets the is_involved_third of this SignatureRequest.
+        r"""Sets the is_involved_third of this SignatureRequest.
 
         是否涉及第三方权益。若为yes，则还需要传入授权委托书。yes：涉及，no：不涉及。
 
@@ -247,7 +247,7 @@ class SignatureRequest:
 
     @property
     def power_attorney_file_id(self):
-        """Gets the power_attorney_file_id of this SignatureRequest.
+        r"""Gets the power_attorney_file_id of this SignatureRequest.
 
         授权委托书文件ID。调用上传申请文件接口获取。
 
@@ -258,7 +258,7 @@ class SignatureRequest:
 
     @power_attorney_file_id.setter
     def power_attorney_file_id(self, power_attorney_file_id):
-        """Sets the power_attorney_file_id of this SignatureRequest.
+        r"""Sets the power_attorney_file_id of this SignatureRequest.
 
         授权委托书文件ID。调用上传申请文件接口获取。
 
@@ -269,7 +269,7 @@ class SignatureRequest:
 
     @property
     def source_title_content(self):
-        """Gets the source_title_content of this SignatureRequest.
+        r"""Gets the source_title_content of this SignatureRequest.
 
         签名来源标题内容，填写内容需和签名来源对应，具体如下。 - 网站域名：仅当“签名来源”为“工信部备案网站的全称或简称”时，需要输入工信部备案网站域名，如huawei.com。 - APP应用下载地址：仅当“签名来源”为“APP应用的全称或简称”时，需要填写。 - 公众号或者小程序的全称：仅当“签名来源”为“公众号或小程序的全称或简称”时，需要填写。 - 电商平台店铺地址：仅当“签名来源”为“电商平台店铺名的全称或简称”时，需要填写。
 
@@ -280,7 +280,7 @@ class SignatureRequest:
 
     @source_title_content.setter
     def source_title_content(self, source_title_content):
-        """Sets the source_title_content of this SignatureRequest.
+        r"""Sets the source_title_content of this SignatureRequest.
 
         签名来源标题内容，填写内容需和签名来源对应，具体如下。 - 网站域名：仅当“签名来源”为“工信部备案网站的全称或简称”时，需要输入工信部备案网站域名，如huawei.com。 - APP应用下载地址：仅当“签名来源”为“APP应用的全称或简称”时，需要填写。 - 公众号或者小程序的全称：仅当“签名来源”为“公众号或小程序的全称或简称”时，需要填写。 - 电商平台店铺地址：仅当“签名来源”为“电商平台店铺名的全称或简称”时，需要填写。
 

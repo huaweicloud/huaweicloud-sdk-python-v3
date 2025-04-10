@@ -37,7 +37,7 @@ class DomainSetVo:
     }
 
     def __init__(self, set_id=None, name=None, description=None, ref_count=None, domain_set_type=None, config_status=None, rules=None):
-        """DomainSetVo
+        r"""DomainSetVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DomainSetVo:
 
     @property
     def set_id(self):
-        """Gets the set_id of this DomainSetVo.
+        r"""Gets the set_id of this DomainSetVo.
 
         域名组id
 
@@ -96,7 +96,7 @@ class DomainSetVo:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this DomainSetVo.
+        r"""Sets the set_id of this DomainSetVo.
 
         域名组id
 
@@ -107,7 +107,7 @@ class DomainSetVo:
 
     @property
     def name(self):
-        """Gets the name of this DomainSetVo.
+        r"""Gets the name of this DomainSetVo.
 
         域名组名称
 
@@ -118,7 +118,7 @@ class DomainSetVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DomainSetVo.
+        r"""Sets the name of this DomainSetVo.
 
         域名组名称
 
@@ -129,7 +129,7 @@ class DomainSetVo:
 
     @property
     def description(self):
-        """Gets the description of this DomainSetVo.
+        r"""Gets the description of this DomainSetVo.
 
         域名组描述
 
@@ -140,7 +140,7 @@ class DomainSetVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DomainSetVo.
+        r"""Sets the description of this DomainSetVo.
 
         域名组描述
 
@@ -151,7 +151,7 @@ class DomainSetVo:
 
     @property
     def ref_count(self):
-        """Gets the ref_count of this DomainSetVo.
+        r"""Gets the ref_count of this DomainSetVo.
 
         域名组被规则引用次数
 
@@ -162,7 +162,7 @@ class DomainSetVo:
 
     @ref_count.setter
     def ref_count(self, ref_count):
-        """Sets the ref_count of this DomainSetVo.
+        r"""Sets the ref_count of this DomainSetVo.
 
         域名组被规则引用次数
 
@@ -173,7 +173,7 @@ class DomainSetVo:
 
     @property
     def domain_set_type(self):
-        """Gets the domain_set_type of this DomainSetVo.
+        r"""Gets the domain_set_type of this DomainSetVo.
 
         域名组类型，0表示应用域名组，1表示网络域名组
 
@@ -184,7 +184,7 @@ class DomainSetVo:
 
     @domain_set_type.setter
     def domain_set_type(self, domain_set_type):
-        """Sets the domain_set_type of this DomainSetVo.
+        r"""Sets the domain_set_type of this DomainSetVo.
 
         域名组类型，0表示应用域名组，1表示网络域名组
 
@@ -195,7 +195,7 @@ class DomainSetVo:
 
     @property
     def config_status(self):
-        """Gets the config_status of this DomainSetVo.
+        r"""Gets the config_status of this DomainSetVo.
 
         配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
 
@@ -206,7 +206,7 @@ class DomainSetVo:
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this DomainSetVo.
+        r"""Sets the config_status of this DomainSetVo.
 
         配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
 
@@ -217,7 +217,7 @@ class DomainSetVo:
 
     @property
     def rules(self):
-        """Gets the rules of this DomainSetVo.
+        r"""Gets the rules of this DomainSetVo.
 
         使用规则id列表
 
@@ -228,7 +228,7 @@ class DomainSetVo:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this DomainSetVo.
+        r"""Sets the rules of this DomainSetVo.
 
         使用规则id列表
 

@@ -24,7 +24,7 @@ class AssociateAgencyWithProjectPermissionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateAgencyWithProjectPermissionResponse
+        r"""AssociateAgencyWithProjectPermissionResponse
 
         The model defined in huaweicloud sdk
 

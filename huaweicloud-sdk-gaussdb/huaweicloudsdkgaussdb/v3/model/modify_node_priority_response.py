@@ -26,7 +26,7 @@ class ModifyNodePriorityResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ModifyNodePriorityResponse
+        r"""ModifyNodePriorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifyNodePriorityResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyNodePriorityResponse.
+        r"""Gets the job_id of this ModifyNodePriorityResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class ModifyNodePriorityResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyNodePriorityResponse.
+        r"""Sets the job_id of this ModifyNodePriorityResponse.
 
         工作流ID。
 

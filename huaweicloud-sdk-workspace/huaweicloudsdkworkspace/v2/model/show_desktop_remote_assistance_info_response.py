@@ -42,7 +42,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     }
 
     def __init__(self, share_space_id=None, invitation_code=None, share_space_name=None, share_space_passwd=None, private_share_link=None, internet_share_link=None, create_time=None, status=None, failed_reason=None):
-        """ShowDesktopRemoteAssistanceInfoResponse
+        r"""ShowDesktopRemoteAssistanceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def share_space_id(self):
-        """Gets the share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间ID
 
@@ -111,7 +111,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @share_space_id.setter
     def share_space_id(self, share_space_id):
-        """Sets the share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间ID
 
@@ -122,7 +122,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def invitation_code(self):
-        """Gets the invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间邀请码(大写英文+数字,共8位)
 
@@ -133,7 +133,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @invitation_code.setter
     def invitation_code(self, invitation_code):
-        """Sets the invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间邀请码(大写英文+数字,共8位)
 
@@ -144,7 +144,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def share_space_name(self):
-        """Gets the share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间名称
 
@@ -155,7 +155,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @share_space_name.setter
     def share_space_name(self, share_space_name):
-        """Sets the share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间名称
 
@@ -166,7 +166,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def share_space_passwd(self):
-        """Gets the share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间密码
 
@@ -177,7 +177,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @share_space_passwd.setter
     def share_space_passwd(self, share_space_passwd):
-        """Sets the share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间密码
 
@@ -188,7 +188,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def private_share_link(self):
-        """Gets the private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
         专线分享链接
 
@@ -199,7 +199,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @private_share_link.setter
     def private_share_link(self, private_share_link):
-        """Sets the private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
         专线分享链接
 
@@ -210,7 +210,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def internet_share_link(self):
-        """Gets the internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
         互联网分享链接
 
@@ -221,7 +221,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @internet_share_link.setter
     def internet_share_link(self, internet_share_link):
-        """Sets the internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
         互联网分享链接
 
@@ -232,7 +232,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the create_time of this ShowDesktopRemoteAssistanceInfoResponse.
 
         创建时间 UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -243,7 +243,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the create_time of this ShowDesktopRemoteAssistanceInfoResponse.
 
         创建时间 UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -254,7 +254,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the status of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间状态 - OPEN 协同空间已创建 - CLOSE 协同空间已关闭 - WAIT_USER_CONFIRM 等待用户确认进入远程协助 - WAIT_USER_ACCESS 等待用户进入远程协助
 
@@ -265,7 +265,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the status of this ShowDesktopRemoteAssistanceInfoResponse.
 
         协同空间状态 - OPEN 协同空间已创建 - CLOSE 协同空间已关闭 - WAIT_USER_CONFIRM 等待用户确认进入远程协助 - WAIT_USER_ACCESS 等待用户进入远程协助
 
@@ -276,7 +276,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Gets the failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
 
         失败原因
 
@@ -287,7 +287,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
+        r"""Sets the failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
 
         失败原因
 

@@ -27,7 +27,7 @@ class ShowBuiltInConformancePackTemplateRequest:
     }
 
     def __init__(self, template_id=None, x_language=None):
-        """ShowBuiltInConformancePackTemplateRequest
+        r"""ShowBuiltInConformancePackTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBuiltInConformancePackTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowBuiltInConformancePackTemplateRequest.
+        r"""Gets the template_id of this ShowBuiltInConformancePackTemplateRequest.
 
         合规规则包模板ID。
 
@@ -60,7 +60,7 @@ class ShowBuiltInConformancePackTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowBuiltInConformancePackTemplateRequest.
+        r"""Sets the template_id of this ShowBuiltInConformancePackTemplateRequest.
 
         合规规则包模板ID。
 
@@ -71,7 +71,7 @@ class ShowBuiltInConformancePackTemplateRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowBuiltInConformancePackTemplateRequest.
+        r"""Gets the x_language of this ShowBuiltInConformancePackTemplateRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
@@ -82,7 +82,7 @@ class ShowBuiltInConformancePackTemplateRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowBuiltInConformancePackTemplateRequest.
+        r"""Sets the x_language of this ShowBuiltInConformancePackTemplateRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 

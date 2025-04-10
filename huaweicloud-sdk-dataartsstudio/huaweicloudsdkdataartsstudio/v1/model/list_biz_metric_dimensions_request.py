@@ -31,7 +31,7 @@ class ListBizMetricDimensionsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, limit=None, offset=None):
-        """ListBizMetricDimensionsRequest
+        r"""ListBizMetricDimensionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListBizMetricDimensionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListBizMetricDimensionsRequest.
+        r"""Gets the workspace of this ListBizMetricDimensionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -74,7 +74,7 @@ class ListBizMetricDimensionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListBizMetricDimensionsRequest.
+        r"""Sets the workspace of this ListBizMetricDimensionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -85,7 +85,7 @@ class ListBizMetricDimensionsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListBizMetricDimensionsRequest.
+        r"""Gets the x_project_id of this ListBizMetricDimensionsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -96,7 +96,7 @@ class ListBizMetricDimensionsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListBizMetricDimensionsRequest.
+        r"""Sets the x_project_id of this ListBizMetricDimensionsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -107,7 +107,7 @@ class ListBizMetricDimensionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBizMetricDimensionsRequest.
+        r"""Gets the limit of this ListBizMetricDimensionsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -118,7 +118,7 @@ class ListBizMetricDimensionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBizMetricDimensionsRequest.
+        r"""Sets the limit of this ListBizMetricDimensionsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -129,7 +129,7 @@ class ListBizMetricDimensionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBizMetricDimensionsRequest.
+        r"""Gets the offset of this ListBizMetricDimensionsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -140,7 +140,7 @@ class ListBizMetricDimensionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBizMetricDimensionsRequest.
+        r"""Sets the offset of this ListBizMetricDimensionsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 

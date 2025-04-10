@@ -25,7 +25,7 @@ class ShowEvaluationStateByAssignmentIdRequest:
     }
 
     def __init__(self, policy_assignment_id=None):
-        """ShowEvaluationStateByAssignmentIdRequest
+        r"""ShowEvaluationStateByAssignmentIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEvaluationStateByAssignmentIdRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
+        r"""Gets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
 
         规则ID
 
@@ -53,7 +53,7 @@ class ShowEvaluationStateByAssignmentIdRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
+        r"""Sets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
 
         规则ID
 

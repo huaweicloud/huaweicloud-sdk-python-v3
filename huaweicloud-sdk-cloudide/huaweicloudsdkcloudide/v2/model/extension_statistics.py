@@ -27,7 +27,7 @@ class ExtensionStatistics:
     }
 
     def __init__(self, install=None, stars=None):
-        """ExtensionStatistics
+        r"""ExtensionStatistics
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtensionStatistics:
 
     @property
     def install(self):
-        """Gets the install of this ExtensionStatistics.
+        r"""Gets the install of this ExtensionStatistics.
 
         下载量
 
@@ -61,7 +61,7 @@ class ExtensionStatistics:
 
     @install.setter
     def install(self, install):
-        """Sets the install of this ExtensionStatistics.
+        r"""Sets the install of this ExtensionStatistics.
 
         下载量
 
@@ -72,7 +72,7 @@ class ExtensionStatistics:
 
     @property
     def stars(self):
-        """Gets the stars of this ExtensionStatistics.
+        r"""Gets the stars of this ExtensionStatistics.
 
         评星
 
@@ -83,7 +83,7 @@ class ExtensionStatistics:
 
     @stars.setter
     def stars(self, stars):
-        """Sets the stars of this ExtensionStatistics.
+        r"""Sets the stars of this ExtensionStatistics.
 
         评星
 

@@ -27,7 +27,7 @@ class Feature:
     }
 
     def __init__(self, key=None, value=None):
-        """Feature
+        r"""Feature
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Feature:
 
     @property
     def key(self):
-        """Gets the key of this Feature.
+        r"""Gets the key of this Feature.
 
         配置项key。
 
@@ -61,7 +61,7 @@ class Feature:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Feature.
+        r"""Sets the key of this Feature.
 
         配置项key。
 
@@ -72,7 +72,7 @@ class Feature:
 
     @property
     def value(self):
-        """Gets the value of this Feature.
+        r"""Gets the value of this Feature.
 
         配置项value。
 
@@ -83,7 +83,7 @@ class Feature:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Feature.
+        r"""Sets the value of this Feature.
 
         配置项value。
 

@@ -29,7 +29,7 @@ class ImportPrivateKeyKeypairBean:
     }
 
     def __init__(self, name=None, user_id=None, key_protection=None):
-        """ImportPrivateKeyKeypairBean
+        r"""ImportPrivateKeyKeypairBean
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportPrivateKeyKeypairBean:
 
     @property
     def name(self):
-        """Gets the name of this ImportPrivateKeyKeypairBean.
+        r"""Gets the name of this ImportPrivateKeyKeypairBean.
 
         SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
 
@@ -66,7 +66,7 @@ class ImportPrivateKeyKeypairBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportPrivateKeyKeypairBean.
+        r"""Sets the name of this ImportPrivateKeyKeypairBean.
 
         SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过64个字节
 
@@ -77,7 +77,7 @@ class ImportPrivateKeyKeypairBean:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ImportPrivateKeyKeypairBean.
+        r"""Gets the user_id of this ImportPrivateKeyKeypairBean.
 
         SSH密钥对所属的用户信息
 
@@ -88,7 +88,7 @@ class ImportPrivateKeyKeypairBean:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ImportPrivateKeyKeypairBean.
+        r"""Sets the user_id of this ImportPrivateKeyKeypairBean.
 
         SSH密钥对所属的用户信息
 
@@ -99,7 +99,7 @@ class ImportPrivateKeyKeypairBean:
 
     @property
     def key_protection(self):
-        """Gets the key_protection of this ImportPrivateKeyKeypairBean.
+        r"""Gets the key_protection of this ImportPrivateKeyKeypairBean.
 
         :return: The key_protection of this ImportPrivateKeyKeypairBean.
         :rtype: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyProtection`
@@ -108,7 +108,7 @@ class ImportPrivateKeyKeypairBean:
 
     @key_protection.setter
     def key_protection(self, key_protection):
-        """Sets the key_protection of this ImportPrivateKeyKeypairBean.
+        r"""Sets the key_protection of this ImportPrivateKeyKeypairBean.
 
         :param key_protection: The key_protection of this ImportPrivateKeyKeypairBean.
         :type key_protection: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyProtection`

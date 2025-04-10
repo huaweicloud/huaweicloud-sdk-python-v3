@@ -31,13 +31,13 @@ class DeleteAgentDaemonsetRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, cluster_id=None, invoked_service=None):
-        """DeleteAgentDaemonsetRequest
+        r"""DeleteAgentDaemonsetRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param cluster_id: 集群id
         :type cluster_id: str
@@ -62,7 +62,7 @@ class DeleteAgentDaemonsetRequest:
 
     @property
     def region(self):
-        """Gets the region of this DeleteAgentDaemonsetRequest.
+        r"""Gets the region of this DeleteAgentDaemonsetRequest.
 
         Region ID
 
@@ -73,7 +73,7 @@ class DeleteAgentDaemonsetRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DeleteAgentDaemonsetRequest.
+        r"""Sets the region of this DeleteAgentDaemonsetRequest.
 
         Region ID
 
@@ -84,9 +84,9 @@ class DeleteAgentDaemonsetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteAgentDaemonsetRequest.
+        r"""Gets the enterprise_project_id of this DeleteAgentDaemonsetRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this DeleteAgentDaemonsetRequest.
         :rtype: str
@@ -95,9 +95,9 @@ class DeleteAgentDaemonsetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteAgentDaemonsetRequest.
+        r"""Sets the enterprise_project_id of this DeleteAgentDaemonsetRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteAgentDaemonsetRequest.
         :type enterprise_project_id: str
@@ -106,7 +106,7 @@ class DeleteAgentDaemonsetRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteAgentDaemonsetRequest.
+        r"""Gets the cluster_id of this DeleteAgentDaemonsetRequest.
 
         集群id
 
@@ -117,7 +117,7 @@ class DeleteAgentDaemonsetRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteAgentDaemonsetRequest.
+        r"""Sets the cluster_id of this DeleteAgentDaemonsetRequest.
 
         集群id
 
@@ -128,7 +128,7 @@ class DeleteAgentDaemonsetRequest:
 
     @property
     def invoked_service(self):
-        """Gets the invoked_service of this DeleteAgentDaemonsetRequest.
+        r"""Gets the invoked_service of this DeleteAgentDaemonsetRequest.
 
         调用服务,默认hss，cce集成防护调用场景使用，包括:    - hss： hss服务    - cce： cce服务，cce集成防护调用需要传参cce
 
@@ -139,7 +139,7 @@ class DeleteAgentDaemonsetRequest:
 
     @invoked_service.setter
     def invoked_service(self, invoked_service):
-        """Sets the invoked_service of this DeleteAgentDaemonsetRequest.
+        r"""Sets the invoked_service of this DeleteAgentDaemonsetRequest.
 
         调用服务,默认hss，cce集成防护调用场景使用，包括:    - hss： hss服务    - cce： cce服务，cce集成防护调用需要传参cce
 

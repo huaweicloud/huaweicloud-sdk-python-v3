@@ -39,7 +39,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     }
 
     def __init__(self, conf_uuid=None, offset=None, limit=None, search_key=None, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language=None):
-        """SearchAttendanceRecordsOfHisMeetingRequest
+        r"""SearchAttendanceRecordsOfHisMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         会议UUID。
 
@@ -102,7 +102,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         会议UUID。
 
@@ -113,7 +113,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the offset of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         查询偏移量。默认为0。
 
@@ -124,7 +124,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the offset of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         查询偏移量。默认为0。
 
@@ -135,7 +135,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the limit of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         查询数量。默认值20，最大500条。
 
@@ -146,7 +146,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the limit of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         查询数量。默认值20，最大500条。
 
@@ -157,7 +157,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         查询条件 。
 
@@ -168,7 +168,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         查询条件 。
 
@@ -179,7 +179,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -190,7 +190,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -201,7 +201,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -212,7 +212,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -223,7 +223,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -234,7 +234,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -245,7 +245,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Gets the accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
@@ -256,7 +256,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
+        r"""Sets the accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
 
         语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 

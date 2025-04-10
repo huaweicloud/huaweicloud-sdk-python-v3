@@ -25,7 +25,7 @@ class DatabaseSrcReq:
     }
 
     def __init__(self, source_database_id=None):
-        """DatabaseSrcReq
+        r"""DatabaseSrcReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DatabaseSrcReq:
 
     @property
     def source_database_id(self):
-        """Gets the source_database_id of this DatabaseSrcReq.
+        r"""Gets the source_database_id of this DatabaseSrcReq.
 
         源数据库id
 
@@ -53,7 +53,7 @@ class DatabaseSrcReq:
 
     @source_database_id.setter
     def source_database_id(self, source_database_id):
-        """Sets the source_database_id of this DatabaseSrcReq.
+        r"""Sets the source_database_id of this DatabaseSrcReq.
 
         源数据库id
 

@@ -25,7 +25,7 @@ class DeleteSShkeyRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteSShkeyRequest
+        r"""DeleteSShkeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSShkeyRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSShkeyRequest.
+        r"""Gets the id of this DeleteSShkeyRequest.
 
         sshKey的id
 
@@ -53,7 +53,7 @@ class DeleteSShkeyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSShkeyRequest.
+        r"""Sets the id of this DeleteSShkeyRequest.
 
         sshKey的id
 

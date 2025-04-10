@@ -31,7 +31,7 @@ class MuteParticipantRequest:
     }
 
     def __init__(self, conference_id=None, participant_id=None, x_conference_authorization=None, body=None):
-        """MuteParticipantRequest
+        r"""MuteParticipantRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class MuteParticipantRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this MuteParticipantRequest.
+        r"""Gets the conference_id of this MuteParticipantRequest.
 
         会议ID。
 
@@ -72,7 +72,7 @@ class MuteParticipantRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this MuteParticipantRequest.
+        r"""Sets the conference_id of this MuteParticipantRequest.
 
         会议ID。
 
@@ -83,7 +83,7 @@ class MuteParticipantRequest:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this MuteParticipantRequest.
+        r"""Gets the participant_id of this MuteParticipantRequest.
 
         与会者标识。
 
@@ -94,7 +94,7 @@ class MuteParticipantRequest:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this MuteParticipantRequest.
+        r"""Sets the participant_id of this MuteParticipantRequest.
 
         与会者标识。
 
@@ -105,7 +105,7 @@ class MuteParticipantRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this MuteParticipantRequest.
+        r"""Gets the x_conference_authorization of this MuteParticipantRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -116,7 +116,7 @@ class MuteParticipantRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this MuteParticipantRequest.
+        r"""Sets the x_conference_authorization of this MuteParticipantRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -127,7 +127,7 @@ class MuteParticipantRequest:
 
     @property
     def body(self):
-        """Gets the body of this MuteParticipantRequest.
+        r"""Gets the body of this MuteParticipantRequest.
 
         :return: The body of this MuteParticipantRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`
@@ -136,7 +136,7 @@ class MuteParticipantRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MuteParticipantRequest.
+        r"""Sets the body of this MuteParticipantRequest.
 
         :param body: The body of this MuteParticipantRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`

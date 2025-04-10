@@ -25,7 +25,7 @@ class PrecheckCluserResponseMetadata:
     }
 
     def __init__(self, uid=None):
-        """PrecheckCluserResponseMetadata
+        r"""PrecheckCluserResponseMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrecheckCluserResponseMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this PrecheckCluserResponseMetadata.
+        r"""Gets the uid of this PrecheckCluserResponseMetadata.
 
         检查任务ID
 
@@ -54,7 +54,7 @@ class PrecheckCluserResponseMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this PrecheckCluserResponseMetadata.
+        r"""Sets the uid of this PrecheckCluserResponseMetadata.
 
         检查任务ID
 

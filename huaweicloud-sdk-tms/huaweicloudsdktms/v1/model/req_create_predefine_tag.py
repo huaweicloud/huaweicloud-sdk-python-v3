@@ -27,7 +27,7 @@ class ReqCreatePredefineTag:
     }
 
     def __init__(self, action=None, tags=None):
-        """ReqCreatePredefineTag
+        r"""ReqCreatePredefineTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReqCreatePredefineTag:
 
     @property
     def action(self):
-        """Gets the action of this ReqCreatePredefineTag.
+        r"""Gets the action of this ReqCreatePredefineTag.
 
         操作标识（区分大小写）：create（创建）
 
@@ -59,7 +59,7 @@ class ReqCreatePredefineTag:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ReqCreatePredefineTag.
+        r"""Sets the action of this ReqCreatePredefineTag.
 
         操作标识（区分大小写）：create（创建）
 
@@ -70,7 +70,7 @@ class ReqCreatePredefineTag:
 
     @property
     def tags(self):
-        """Gets the tags of this ReqCreatePredefineTag.
+        r"""Gets the tags of this ReqCreatePredefineTag.
 
         标签列表
 
@@ -81,7 +81,7 @@ class ReqCreatePredefineTag:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ReqCreatePredefineTag.
+        r"""Sets the tags of this ReqCreatePredefineTag.
 
         标签列表
 

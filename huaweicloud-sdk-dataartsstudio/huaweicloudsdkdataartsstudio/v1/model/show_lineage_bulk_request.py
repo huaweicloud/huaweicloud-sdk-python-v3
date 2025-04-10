@@ -29,7 +29,7 @@ class ShowLineageBulkRequest:
     }
 
     def __init__(self, instance=None, offset=None, limit=None):
-        """ShowLineageBulkRequest
+        r"""ShowLineageBulkRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowLineageBulkRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowLineageBulkRequest.
+        r"""Gets the instance of this ShowLineageBulkRequest.
 
         实例id
 
@@ -67,7 +67,7 @@ class ShowLineageBulkRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowLineageBulkRequest.
+        r"""Sets the instance of this ShowLineageBulkRequest.
 
         实例id
 
@@ -78,7 +78,7 @@ class ShowLineageBulkRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowLineageBulkRequest.
+        r"""Gets the offset of this ShowLineageBulkRequest.
 
         分页参数偏移量，默认值0
 
@@ -89,7 +89,7 @@ class ShowLineageBulkRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowLineageBulkRequest.
+        r"""Sets the offset of this ShowLineageBulkRequest.
 
         分页参数偏移量，默认值0
 
@@ -100,7 +100,7 @@ class ShowLineageBulkRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowLineageBulkRequest.
+        r"""Gets the limit of this ShowLineageBulkRequest.
 
         分页参每页数量，默认值100
 
@@ -111,7 +111,7 @@ class ShowLineageBulkRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowLineageBulkRequest.
+        r"""Sets the limit of this ShowLineageBulkRequest.
 
         分页参每页数量，默认值100
 

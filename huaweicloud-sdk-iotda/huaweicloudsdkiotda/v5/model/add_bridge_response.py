@@ -32,7 +32,7 @@ class AddBridgeResponse(SdkResponse):
     }
 
     def __init__(self, bridge_id=None, bridge_name=None, auth_info=None, create_time=None):
-        """AddBridgeResponse
+        r"""AddBridgeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class AddBridgeResponse(SdkResponse):
 
     @property
     def bridge_id(self):
-        """Gets the bridge_id of this AddBridgeResponse.
+        r"""Gets the bridge_id of this AddBridgeResponse.
 
         网桥ID，用于唯一标识一个网桥。在注册网桥时直接指定，或者由物联网平台分配获得。
 
@@ -76,7 +76,7 @@ class AddBridgeResponse(SdkResponse):
 
     @bridge_id.setter
     def bridge_id(self, bridge_id):
-        """Sets the bridge_id of this AddBridgeResponse.
+        r"""Sets the bridge_id of this AddBridgeResponse.
 
         网桥ID，用于唯一标识一个网桥。在注册网桥时直接指定，或者由物联网平台分配获得。
 
@@ -87,7 +87,7 @@ class AddBridgeResponse(SdkResponse):
 
     @property
     def bridge_name(self):
-        """Gets the bridge_name of this AddBridgeResponse.
+        r"""Gets the bridge_name of this AddBridgeResponse.
 
         网桥名称。
 
@@ -98,7 +98,7 @@ class AddBridgeResponse(SdkResponse):
 
     @bridge_name.setter
     def bridge_name(self, bridge_name):
-        """Sets the bridge_name of this AddBridgeResponse.
+        r"""Sets the bridge_name of this AddBridgeResponse.
 
         网桥名称。
 
@@ -109,7 +109,7 @@ class AddBridgeResponse(SdkResponse):
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this AddBridgeResponse.
+        r"""Gets the auth_info of this AddBridgeResponse.
 
         :return: The auth_info of this AddBridgeResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.BridgeAuthInfo`
@@ -118,7 +118,7 @@ class AddBridgeResponse(SdkResponse):
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this AddBridgeResponse.
+        r"""Sets the auth_info of this AddBridgeResponse.
 
         :param auth_info: The auth_info of this AddBridgeResponse.
         :type auth_info: :class:`huaweicloudsdkiotda.v5.BridgeAuthInfo`
@@ -127,7 +127,7 @@ class AddBridgeResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this AddBridgeResponse.
+        r"""Gets the create_time of this AddBridgeResponse.
 
         在物联网平台注册网桥的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -138,7 +138,7 @@ class AddBridgeResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AddBridgeResponse.
+        r"""Sets the create_time of this AddBridgeResponse.
 
         在物联网平台注册网桥的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

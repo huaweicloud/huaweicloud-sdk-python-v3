@@ -34,7 +34,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """RemoveIssuesFromIteratorResponse
+        r"""RemoveIssuesFromIteratorResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this RemoveIssuesFromIteratorResponse.
+        r"""Gets the status of this RemoveIssuesFromIteratorResponse.
 
         success|error
 
@@ -83,7 +83,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RemoveIssuesFromIteratorResponse.
+        r"""Sets the status of this RemoveIssuesFromIteratorResponse.
 
         success|error
 
@@ -94,7 +94,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RemoveIssuesFromIteratorResponse.
+        r"""Gets the result of this RemoveIssuesFromIteratorResponse.
 
         :return: The result of this RemoveIssuesFromIteratorResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueString`
@@ -103,7 +103,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RemoveIssuesFromIteratorResponse.
+        r"""Sets the result of this RemoveIssuesFromIteratorResponse.
 
         :param result: The result of this RemoveIssuesFromIteratorResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueString`
@@ -112,7 +112,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this RemoveIssuesFromIteratorResponse.
+        r"""Gets the error of this RemoveIssuesFromIteratorResponse.
 
         :return: The error of this RemoveIssuesFromIteratorResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this RemoveIssuesFromIteratorResponse.
+        r"""Sets the error of this RemoveIssuesFromIteratorResponse.
 
         :param error: The error of this RemoveIssuesFromIteratorResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this RemoveIssuesFromIteratorResponse.
+        r"""Gets the request_id of this RemoveIssuesFromIteratorResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this RemoveIssuesFromIteratorResponse.
+        r"""Sets the request_id of this RemoveIssuesFromIteratorResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this RemoveIssuesFromIteratorResponse.
+        r"""Gets the server_address of this RemoveIssuesFromIteratorResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class RemoveIssuesFromIteratorResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this RemoveIssuesFromIteratorResponse.
+        r"""Sets the server_address of this RemoveIssuesFromIteratorResponse.
 
         对内接口才有此属性
 

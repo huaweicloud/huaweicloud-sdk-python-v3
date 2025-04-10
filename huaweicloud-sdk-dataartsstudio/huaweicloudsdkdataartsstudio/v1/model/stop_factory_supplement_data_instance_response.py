@@ -26,7 +26,7 @@ class StopFactorySupplementDataInstanceResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """StopFactorySupplementDataInstanceResponse
+        r"""StopFactorySupplementDataInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopFactorySupplementDataInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StopFactorySupplementDataInstanceResponse.
+        r"""Gets the x_request_id of this StopFactorySupplementDataInstanceResponse.
 
         :return: The x_request_id of this StopFactorySupplementDataInstanceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopFactorySupplementDataInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StopFactorySupplementDataInstanceResponse.
+        r"""Sets the x_request_id of this StopFactorySupplementDataInstanceResponse.
 
         :param x_request_id: The x_request_id of this StopFactorySupplementDataInstanceResponse.
         :type x_request_id: str

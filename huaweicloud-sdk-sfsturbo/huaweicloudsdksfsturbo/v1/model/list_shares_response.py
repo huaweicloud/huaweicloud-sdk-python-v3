@@ -28,7 +28,7 @@ class ListSharesResponse(SdkResponse):
     }
 
     def __init__(self, shares=None, count=None):
-        """ListSharesResponse
+        r"""ListSharesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSharesResponse(SdkResponse):
 
     @property
     def shares(self):
-        """Gets the shares of this ListSharesResponse.
+        r"""Gets the shares of this ListSharesResponse.
 
         SFS Turbo文件系统的列表。
 
@@ -62,7 +62,7 @@ class ListSharesResponse(SdkResponse):
 
     @shares.setter
     def shares(self, shares):
-        """Sets the shares of this ListSharesResponse.
+        r"""Sets the shares of this ListSharesResponse.
 
         SFS Turbo文件系统的列表。
 
@@ -73,7 +73,7 @@ class ListSharesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSharesResponse.
+        r"""Gets the count of this ListSharesResponse.
 
         SFS Turbo文件系统的数量。
 
@@ -84,7 +84,7 @@ class ListSharesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSharesResponse.
+        r"""Sets the count of this ListSharesResponse.
 
         SFS Turbo文件系统的数量。
 

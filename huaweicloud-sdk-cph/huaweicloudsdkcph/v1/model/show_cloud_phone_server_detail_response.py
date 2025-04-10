@@ -72,7 +72,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, resource_project_id=None, metadata=None, addresses=None, band_widths=None, volumes=None, share_volume_info=None, network_version=None, enterprise_project_id=None, security_groups=None, create_time=None, update_time=None):
-        """ShowCloudPhoneServerDetailResponse
+        r"""ShowCloudPhoneServerDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -205,7 +205,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the request_id of this ShowCloudPhoneServerDetailResponse.
 
         请求的唯一标识ID。
 
@@ -216,7 +216,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the request_id of this ShowCloudPhoneServerDetailResponse.
 
         请求的唯一标识ID。
 
@@ -227,7 +227,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def server_name(self):
-        """Gets the server_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the server_name of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器名称， 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
 
@@ -238,7 +238,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the server_name of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器名称， 不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
 
@@ -249,7 +249,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the availability_zone of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -260,7 +260,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the availability_zone of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -271,7 +271,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the server_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器的唯一标识，不超过32个字节。
 
@@ -282,7 +282,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the server_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器的唯一标识，不超过32个字节。
 
@@ -293,7 +293,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def server_model_name(self):
-        """Gets the server_model_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the server_model_name of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器规格名称，不超过64个字节。
 
@@ -304,7 +304,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @server_model_name.setter
     def server_model_name(self, server_model_name):
-        """Sets the server_model_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the server_model_name of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器规格名称，不超过64个字节。
 
@@ -315,7 +315,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the phone_model_name of this ShowCloudPhoneServerDetailResponse.
 
         云手机规格名称，不超过64个字节。
 
@@ -326,7 +326,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the phone_model_name of this ShowCloudPhoneServerDetailResponse.
 
         云手机规格名称，不超过64个字节。
 
@@ -337,7 +337,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the keypair_name of this ShowCloudPhoneServerDetailResponse.
 
         连接云手机所使用的密钥对的名称，不超过64个字节。
 
@@ -348,7 +348,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the keypair_name of this ShowCloudPhoneServerDetailResponse.
 
         连接云手机所使用的密钥对的名称，不超过64个字节。
 
@@ -359,7 +359,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the status of this ShowCloudPhoneServerDetailResponse.
 
         服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
@@ -370,7 +370,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the status of this ShowCloudPhoneServerDetailResponse.
 
         服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
@@ -381,7 +381,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the vpc_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属虚拟私有云（简称VPC）的ID。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID。
 
@@ -392,7 +392,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the vpc_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属虚拟私有云（简称VPC）的ID。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC ID。
 
@@ -403,7 +403,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def cidr(self):
-        """Gets the cidr of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the cidr of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
@@ -414,7 +414,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the cidr of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
@@ -425,7 +425,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def vpc_cidr(self):
-        """Gets the vpc_cidr of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the vpc_cidr of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
@@ -436,7 +436,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @vpc_cidr.setter
     def vpc_cidr(self, vpc_cidr):
-        """Sets the vpc_cidr of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the vpc_cidr of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
@@ -447,7 +447,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the subnet_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID；网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
 
@@ -458,7 +458,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the subnet_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID；网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
 
@@ -469,7 +469,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def subnet_cidr(self):
-        """Gets the subnet_cidr of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the subnet_cidr of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属子网的网段。网络版本 network_version取值为“v2”时，表示租户创建服务器时指定子网的 CIDR；取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
 
@@ -480,7 +480,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @subnet_cidr.setter
     def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the subnet_cidr of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属子网的网段。网络版本 network_version取值为“v2”时，表示租户创建服务器时指定子网的 CIDR；取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
 
@@ -491,7 +491,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the resource_project_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
@@ -502,7 +502,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the resource_project_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
@@ -513,7 +513,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the metadata of this ShowCloudPhoneServerDetailResponse.
 
         :return: The metadata of this ShowCloudPhoneServerDetailResponse.
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyMetadata`
@@ -522,7 +522,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the metadata of this ShowCloudPhoneServerDetailResponse.
 
         :param metadata: The metadata of this ShowCloudPhoneServerDetailResponse.
         :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyMetadata`
@@ -531,7 +531,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def addresses(self):
-        """Gets the addresses of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the addresses of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器的IP相关信息。
 
@@ -542,7 +542,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the addresses of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器的IP相关信息。
 
@@ -553,7 +553,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def band_widths(self):
-        """Gets the band_widths of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the band_widths of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器带宽信息的结构体数组。
 
@@ -564,7 +564,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @band_widths.setter
     def band_widths(self, band_widths):
-        """Sets the band_widths of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the band_widths of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器带宽信息的结构体数组。
 
@@ -575,7 +575,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the volumes of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器卷信息的结构体数组。
 
@@ -586,7 +586,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the volumes of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器卷信息的结构体数组。
 
@@ -597,7 +597,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def share_volume_info(self):
-        """Gets the share_volume_info of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the share_volume_info of this ShowCloudPhoneServerDetailResponse.
 
         :return: The share_volume_info of this ShowCloudPhoneServerDetailResponse.
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo`
@@ -606,7 +606,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @share_volume_info.setter
     def share_volume_info(self, share_volume_info):
-        """Sets the share_volume_info of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the share_volume_info of this ShowCloudPhoneServerDetailResponse.
 
         :param share_volume_info: The share_volume_info of this ShowCloudPhoneServerDetailResponse.
         :type share_volume_info: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponseBodyShareVolumeInfo`
@@ -615,7 +615,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def network_version(self):
-        """Gets the network_version of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the network_version of this ShowCloudPhoneServerDetailResponse.
 
         是否为自定义网络的云手机服务器标识。\"v1\"，非自定义网络的云手机服务器。\"v2\"，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
 
@@ -626,7 +626,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @network_version.setter
     def network_version(self, network_version):
-        """Sets the network_version of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the network_version of this ShowCloudPhoneServerDetailResponse.
 
         是否为自定义网络的云手机服务器标识。\"v1\"，非自定义网络的云手机服务器。\"v2\"，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
 
@@ -637,7 +637,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属企业项目ID。
 
@@ -648,7 +648,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the enterprise_project_id of this ShowCloudPhoneServerDetailResponse.
 
         云手机服务器所属企业项目ID。
 
@@ -659,7 +659,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the security_groups of this ShowCloudPhoneServerDetailResponse.
 
         服务器扩展网卡绑定的安全组信息。 系统定义网络的服务器，该字段返回为空列表。
 
@@ -670,7 +670,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the security_groups of this ShowCloudPhoneServerDetailResponse.
 
         服务器扩展网卡绑定的安全组信息。 系统定义网络的服务器，该字段返回为空列表。
 
@@ -681,7 +681,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the create_time of this ShowCloudPhoneServerDetailResponse.
 
         创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -692,7 +692,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the create_time of this ShowCloudPhoneServerDetailResponse.
 
         创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -703,7 +703,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowCloudPhoneServerDetailResponse.
+        r"""Gets the update_time of this ShowCloudPhoneServerDetailResponse.
 
         更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -714,7 +714,7 @@ class ShowCloudPhoneServerDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowCloudPhoneServerDetailResponse.
+        r"""Sets the update_time of this ShowCloudPhoneServerDetailResponse.
 
         更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 

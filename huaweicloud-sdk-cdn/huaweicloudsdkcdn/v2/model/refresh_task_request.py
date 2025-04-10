@@ -25,7 +25,7 @@ class RefreshTaskRequest:
     }
 
     def __init__(self, refresh_task=None):
-        """RefreshTaskRequest
+        r"""RefreshTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RefreshTaskRequest:
 
     @property
     def refresh_task(self):
-        """Gets the refresh_task of this RefreshTaskRequest.
+        r"""Gets the refresh_task of this RefreshTaskRequest.
 
         :return: The refresh_task of this RefreshTaskRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.RefreshTaskRequestBody`
@@ -51,7 +51,7 @@ class RefreshTaskRequest:
 
     @refresh_task.setter
     def refresh_task(self, refresh_task):
-        """Sets the refresh_task of this RefreshTaskRequest.
+        r"""Sets the refresh_task of this RefreshTaskRequest.
 
         :param refresh_task: The refresh_task of this RefreshTaskRequest.
         :type refresh_task: :class:`huaweicloudsdkcdn.v2.RefreshTaskRequestBody`

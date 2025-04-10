@@ -25,7 +25,7 @@ class StackSetStatusPrimitiveTypeHolder:
     }
 
     def __init__(self, status=None):
-        """StackSetStatusPrimitiveTypeHolder
+        r"""StackSetStatusPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetStatusPrimitiveTypeHolder:
 
     @property
     def status(self):
-        """Gets the status of this StackSetStatusPrimitiveTypeHolder.
+        r"""Gets the status of this StackSetStatusPrimitiveTypeHolder.
 
         资源栈集的状态     * `IDLE` - 资源栈集空闲 * `OPERATION_IN_PROGRESS` - 资源栈集操作中 * `DEACTIVATED` - 资源栈集禁用
 
@@ -54,7 +54,7 @@ class StackSetStatusPrimitiveTypeHolder:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StackSetStatusPrimitiveTypeHolder.
+        r"""Sets the status of this StackSetStatusPrimitiveTypeHolder.
 
         资源栈集的状态     * `IDLE` - 资源栈集空闲 * `OPERATION_IN_PROGRESS` - 资源栈集操作中 * `DEACTIVATED` - 资源栈集禁用
 

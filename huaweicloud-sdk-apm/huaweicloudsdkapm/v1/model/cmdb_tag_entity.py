@@ -41,7 +41,7 @@ class CmdbTagEntity:
     }
 
     def __init__(self, name=None, business_id=None, uuid=None, descp=None, creator_id=None, env_id_list=None, id=None, gmt_create=None, gmt_modify=None):
-        """CmdbTagEntity
+        r"""CmdbTagEntity
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CmdbTagEntity:
 
     @property
     def name(self):
-        """Gets the name of this CmdbTagEntity.
+        r"""Gets the name of this CmdbTagEntity.
 
         环境标签名称。
 
@@ -110,7 +110,7 @@ class CmdbTagEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CmdbTagEntity.
+        r"""Sets the name of this CmdbTagEntity.
 
         环境标签名称。
 
@@ -121,7 +121,7 @@ class CmdbTagEntity:
 
     @property
     def business_id(self):
-        """Gets the business_id of this CmdbTagEntity.
+        r"""Gets the business_id of this CmdbTagEntity.
 
         应用id。
 
@@ -132,7 +132,7 @@ class CmdbTagEntity:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this CmdbTagEntity.
+        r"""Sets the business_id of this CmdbTagEntity.
 
         应用id。
 
@@ -143,7 +143,7 @@ class CmdbTagEntity:
 
     @property
     def uuid(self):
-        """Gets the uuid of this CmdbTagEntity.
+        r"""Gets the uuid of this CmdbTagEntity.
 
         UUID。
 
@@ -154,7 +154,7 @@ class CmdbTagEntity:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this CmdbTagEntity.
+        r"""Sets the uuid of this CmdbTagEntity.
 
         UUID。
 
@@ -165,7 +165,7 @@ class CmdbTagEntity:
 
     @property
     def descp(self):
-        """Gets the descp of this CmdbTagEntity.
+        r"""Gets the descp of this CmdbTagEntity.
 
         描述信息。
 
@@ -176,7 +176,7 @@ class CmdbTagEntity:
 
     @descp.setter
     def descp(self, descp):
-        """Sets the descp of this CmdbTagEntity.
+        r"""Sets the descp of this CmdbTagEntity.
 
         描述信息。
 
@@ -187,7 +187,7 @@ class CmdbTagEntity:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this CmdbTagEntity.
+        r"""Gets the creator_id of this CmdbTagEntity.
 
         创建者id。
 
@@ -198,7 +198,7 @@ class CmdbTagEntity:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this CmdbTagEntity.
+        r"""Sets the creator_id of this CmdbTagEntity.
 
         创建者id。
 
@@ -209,7 +209,7 @@ class CmdbTagEntity:
 
     @property
     def env_id_list(self):
-        """Gets the env_id_list of this CmdbTagEntity.
+        r"""Gets the env_id_list of this CmdbTagEntity.
 
         环境id列表。
 
@@ -220,7 +220,7 @@ class CmdbTagEntity:
 
     @env_id_list.setter
     def env_id_list(self, env_id_list):
-        """Sets the env_id_list of this CmdbTagEntity.
+        r"""Sets the env_id_list of this CmdbTagEntity.
 
         环境id列表。
 
@@ -231,7 +231,7 @@ class CmdbTagEntity:
 
     @property
     def id(self):
-        """Gets the id of this CmdbTagEntity.
+        r"""Gets the id of this CmdbTagEntity.
 
         环境标签id。
 
@@ -242,7 +242,7 @@ class CmdbTagEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CmdbTagEntity.
+        r"""Sets the id of this CmdbTagEntity.
 
         环境标签id。
 
@@ -253,7 +253,7 @@ class CmdbTagEntity:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this CmdbTagEntity.
+        r"""Gets the gmt_create of this CmdbTagEntity.
 
         创建时间。
 
@@ -264,7 +264,7 @@ class CmdbTagEntity:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this CmdbTagEntity.
+        r"""Sets the gmt_create of this CmdbTagEntity.
 
         创建时间。
 
@@ -275,7 +275,7 @@ class CmdbTagEntity:
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this CmdbTagEntity.
+        r"""Gets the gmt_modify of this CmdbTagEntity.
 
         修改时间。
 
@@ -286,7 +286,7 @@ class CmdbTagEntity:
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this CmdbTagEntity.
+        r"""Sets the gmt_modify of this CmdbTagEntity.
 
         修改时间。
 

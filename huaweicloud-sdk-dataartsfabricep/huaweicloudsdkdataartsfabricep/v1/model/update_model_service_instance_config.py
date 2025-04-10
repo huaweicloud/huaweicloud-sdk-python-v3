@@ -25,7 +25,7 @@ class UpdateModelServiceInstanceConfig:
     }
 
     def __init__(self, resource=None):
-        """UpdateModelServiceInstanceConfig
+        r"""UpdateModelServiceInstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateModelServiceInstanceConfig:
 
     @property
     def resource(self):
-        """Gets the resource of this UpdateModelServiceInstanceConfig.
+        r"""Gets the resource of this UpdateModelServiceInstanceConfig.
 
         :return: The resource of this UpdateModelServiceInstanceConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.BaseDemand`
@@ -51,7 +51,7 @@ class UpdateModelServiceInstanceConfig:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this UpdateModelServiceInstanceConfig.
+        r"""Sets the resource of this UpdateModelServiceInstanceConfig.
 
         :param resource: The resource of this UpdateModelServiceInstanceConfig.
         :type resource: :class:`huaweicloudsdkdataartsfabricep.v1.BaseDemand`

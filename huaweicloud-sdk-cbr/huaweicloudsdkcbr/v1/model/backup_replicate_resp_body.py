@@ -39,7 +39,7 @@ class BackupReplicateRespBody:
     }
 
     def __init__(self, backup_id=None, destination_project_id=None, destination_region=None, destination_vault_id=None, project_id=None, provider_id=None, replication_record_id=None, source_region=None):
-        """BackupReplicateRespBody
+        r"""BackupReplicateRespBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BackupReplicateRespBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this BackupReplicateRespBody.
+        r"""Gets the backup_id of this BackupReplicateRespBody.
 
         待复制的备份ID
 
@@ -103,7 +103,7 @@ class BackupReplicateRespBody:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this BackupReplicateRespBody.
+        r"""Sets the backup_id of this BackupReplicateRespBody.
 
         待复制的备份ID
 
@@ -114,7 +114,7 @@ class BackupReplicateRespBody:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this BackupReplicateRespBody.
+        r"""Gets the destination_project_id of this BackupReplicateRespBody.
 
         复制的目标项目ID
 
@@ -125,7 +125,7 @@ class BackupReplicateRespBody:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this BackupReplicateRespBody.
+        r"""Sets the destination_project_id of this BackupReplicateRespBody.
 
         复制的目标项目ID
 
@@ -136,7 +136,7 @@ class BackupReplicateRespBody:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this BackupReplicateRespBody.
+        r"""Gets the destination_region of this BackupReplicateRespBody.
 
         复制的目标区域
 
@@ -147,7 +147,7 @@ class BackupReplicateRespBody:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this BackupReplicateRespBody.
+        r"""Sets the destination_region of this BackupReplicateRespBody.
 
         复制的目标区域
 
@@ -158,7 +158,7 @@ class BackupReplicateRespBody:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this BackupReplicateRespBody.
+        r"""Gets the destination_vault_id of this BackupReplicateRespBody.
 
         复制的目标区域存储库ID
 
@@ -169,7 +169,7 @@ class BackupReplicateRespBody:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this BackupReplicateRespBody.
+        r"""Sets the destination_vault_id of this BackupReplicateRespBody.
 
         复制的目标区域存储库ID
 
@@ -180,7 +180,7 @@ class BackupReplicateRespBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BackupReplicateRespBody.
+        r"""Gets the project_id of this BackupReplicateRespBody.
 
         执行复制的项目ID
 
@@ -191,7 +191,7 @@ class BackupReplicateRespBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BackupReplicateRespBody.
+        r"""Sets the project_id of this BackupReplicateRespBody.
 
         执行复制的项目ID
 
@@ -202,7 +202,7 @@ class BackupReplicateRespBody:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this BackupReplicateRespBody.
+        r"""Gets the provider_id of this BackupReplicateRespBody.
 
         资源类型id
 
@@ -213,7 +213,7 @@ class BackupReplicateRespBody:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this BackupReplicateRespBody.
+        r"""Sets the provider_id of this BackupReplicateRespBody.
 
         资源类型id
 
@@ -224,7 +224,7 @@ class BackupReplicateRespBody:
 
     @property
     def replication_record_id(self):
-        """Gets the replication_record_id of this BackupReplicateRespBody.
+        r"""Gets the replication_record_id of this BackupReplicateRespBody.
 
         复制记录ID
 
@@ -235,7 +235,7 @@ class BackupReplicateRespBody:
 
     @replication_record_id.setter
     def replication_record_id(self, replication_record_id):
-        """Sets the replication_record_id of this BackupReplicateRespBody.
+        r"""Sets the replication_record_id of this BackupReplicateRespBody.
 
         复制记录ID
 
@@ -246,7 +246,7 @@ class BackupReplicateRespBody:
 
     @property
     def source_region(self):
-        """Gets the source_region of this BackupReplicateRespBody.
+        r"""Gets the source_region of this BackupReplicateRespBody.
 
         复制的源区域
 
@@ -257,7 +257,7 @@ class BackupReplicateRespBody:
 
     @source_region.setter
     def source_region(self, source_region):
-        """Sets the source_region of this BackupReplicateRespBody.
+        r"""Sets the source_region of this BackupReplicateRespBody.
 
         复制的源区域
 

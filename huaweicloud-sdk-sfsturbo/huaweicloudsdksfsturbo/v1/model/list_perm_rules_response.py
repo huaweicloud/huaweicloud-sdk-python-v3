@@ -26,7 +26,7 @@ class ListPermRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None):
-        """ListPermRulesResponse
+        r"""ListPermRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPermRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListPermRulesResponse.
+        r"""Gets the rules of this ListPermRulesResponse.
 
         权限信息
 
@@ -55,7 +55,7 @@ class ListPermRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListPermRulesResponse.
+        r"""Sets the rules of this ListPermRulesResponse.
 
         权限信息
 

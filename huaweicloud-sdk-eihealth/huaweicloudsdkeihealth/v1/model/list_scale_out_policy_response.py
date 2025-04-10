@@ -28,7 +28,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
     }
 
     def __init__(self, count=None, policies=None):
-        """ListScaleOutPolicyResponse
+        r"""ListScaleOutPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListScaleOutPolicyResponse.
+        r"""Gets the count of this ListScaleOutPolicyResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListScaleOutPolicyResponse.
+        r"""Sets the count of this ListScaleOutPolicyResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListScaleOutPolicyResponse.
+        r"""Gets the policies of this ListScaleOutPolicyResponse.
 
         扩容策略列表
 
@@ -84,7 +84,7 @@ class ListScaleOutPolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListScaleOutPolicyResponse.
+        r"""Sets the policies of this ListScaleOutPolicyResponse.
 
         扩容策略列表
 

@@ -33,7 +33,7 @@ class UpgradeTaskResponseBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """UpgradeTaskResponseBody
+        r"""UpgradeTaskResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpgradeTaskResponseBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpgradeTaskResponseBody.
+        r"""Gets the api_version of this UpgradeTaskResponseBody.
 
         api版本，默认为v3
 
@@ -82,7 +82,7 @@ class UpgradeTaskResponseBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpgradeTaskResponseBody.
+        r"""Sets the api_version of this UpgradeTaskResponseBody.
 
         api版本，默认为v3
 
@@ -93,7 +93,7 @@ class UpgradeTaskResponseBody:
 
     @property
     def kind(self):
-        """Gets the kind of this UpgradeTaskResponseBody.
+        r"""Gets the kind of this UpgradeTaskResponseBody.
 
         资源类型，默认为UpgradeTask
 
@@ -104,7 +104,7 @@ class UpgradeTaskResponseBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpgradeTaskResponseBody.
+        r"""Sets the kind of this UpgradeTaskResponseBody.
 
         资源类型，默认为UpgradeTask
 
@@ -115,7 +115,7 @@ class UpgradeTaskResponseBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradeTaskResponseBody.
+        r"""Gets the metadata of this UpgradeTaskResponseBody.
 
         :return: The metadata of this UpgradeTaskResponseBody.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskMetadata`
@@ -124,7 +124,7 @@ class UpgradeTaskResponseBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradeTaskResponseBody.
+        r"""Sets the metadata of this UpgradeTaskResponseBody.
 
         :param metadata: The metadata of this UpgradeTaskResponseBody.
         :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeTaskMetadata`
@@ -133,7 +133,7 @@ class UpgradeTaskResponseBody:
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradeTaskResponseBody.
+        r"""Gets the spec of this UpgradeTaskResponseBody.
 
         :return: The spec of this UpgradeTaskResponseBody.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskSpec`
@@ -142,7 +142,7 @@ class UpgradeTaskResponseBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradeTaskResponseBody.
+        r"""Sets the spec of this UpgradeTaskResponseBody.
 
         :param spec: The spec of this UpgradeTaskResponseBody.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradeTaskSpec`
@@ -151,7 +151,7 @@ class UpgradeTaskResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this UpgradeTaskResponseBody.
+        r"""Gets the status of this UpgradeTaskResponseBody.
 
         :return: The status of this UpgradeTaskResponseBody.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeTaskStatus`
@@ -160,7 +160,7 @@ class UpgradeTaskResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpgradeTaskResponseBody.
+        r"""Sets the status of this UpgradeTaskResponseBody.
 
         :param status: The status of this UpgradeTaskResponseBody.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeTaskStatus`

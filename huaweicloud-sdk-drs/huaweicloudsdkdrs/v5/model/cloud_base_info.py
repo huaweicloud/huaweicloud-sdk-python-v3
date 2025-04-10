@@ -29,7 +29,7 @@ class CloudBaseInfo:
     }
 
     def __init__(self, region=None, project_id=None, az_code=None):
-        """CloudBaseInfo
+        r"""CloudBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CloudBaseInfo:
 
     @property
     def region(self):
-        """Gets the region of this CloudBaseInfo.
+        r"""Gets the region of this CloudBaseInfo.
 
         区域ID，当数据库实例类型为ecs（华为云ECS自建数据库），cloud（华为云数据库）时为必填项。获取方法请参见地区和终端节点。 注意：当该Region下存在子项目时，Region ID为区域项目ID与子项目ID，由“_”下划线拼接，例如：cn-north-4_abc。
 
@@ -66,7 +66,7 @@ class CloudBaseInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CloudBaseInfo.
+        r"""Sets the region of this CloudBaseInfo.
 
         区域ID，当数据库实例类型为ecs（华为云ECS自建数据库），cloud（华为云数据库）时为必填项。获取方法请参见地区和终端节点。 注意：当该Region下存在子项目时，Region ID为区域项目ID与子项目ID，由“_”下划线拼接，例如：cn-north-4_abc。
 
@@ -77,7 +77,7 @@ class CloudBaseInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CloudBaseInfo.
+        r"""Gets the project_id of this CloudBaseInfo.
 
         租户在某一Region下的Project ID。 获取方法请参见获取项目ID。
 
@@ -88,7 +88,7 @@ class CloudBaseInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CloudBaseInfo.
+        r"""Sets the project_id of this CloudBaseInfo.
 
         租户在某一Region下的Project ID。 获取方法请参见获取项目ID。
 
@@ -99,7 +99,7 @@ class CloudBaseInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this CloudBaseInfo.
+        r"""Gets the az_code of this CloudBaseInfo.
 
         数据库所在可用分区（AZ）名称。
 
@@ -110,7 +110,7 @@ class CloudBaseInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this CloudBaseInfo.
+        r"""Sets the az_code of this CloudBaseInfo.
 
         数据库所在可用分区（AZ）名称。
 

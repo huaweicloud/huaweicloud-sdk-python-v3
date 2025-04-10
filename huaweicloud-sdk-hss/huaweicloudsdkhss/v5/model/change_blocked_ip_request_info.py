@@ -25,7 +25,7 @@ class ChangeBlockedIpRequestInfo:
     }
 
     def __init__(self, data_list=None):
-        """ChangeBlockedIpRequestInfo
+        r"""ChangeBlockedIpRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeBlockedIpRequestInfo:
 
     @property
     def data_list(self):
-        """Gets the data_list of this ChangeBlockedIpRequestInfo.
+        r"""Gets the data_list of this ChangeBlockedIpRequestInfo.
 
         需要解除拦截的IP列表
 
@@ -54,7 +54,7 @@ class ChangeBlockedIpRequestInfo:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ChangeBlockedIpRequestInfo.
+        r"""Sets the data_list of this ChangeBlockedIpRequestInfo.
 
         需要解除拦截的IP列表
 

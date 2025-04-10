@@ -31,7 +31,7 @@ class ListVpcsRequest:
     }
 
     def __init__(self, limit=None, offset=None, id=None, name=None):
-        """ListVpcsRequest
+        r"""ListVpcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListVpcsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpcsRequest.
+        r"""Gets the limit of this ListVpcsRequest.
 
         查询返回虚拟私有云列表数量。
 
@@ -75,7 +75,7 @@ class ListVpcsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpcsRequest.
+        r"""Sets the limit of this ListVpcsRequest.
 
         查询返回虚拟私有云列表数量。
 
@@ -86,7 +86,7 @@ class ListVpcsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVpcsRequest.
+        r"""Gets the offset of this ListVpcsRequest.
 
         查询的偏移量。
 
@@ -97,7 +97,7 @@ class ListVpcsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVpcsRequest.
+        r"""Sets the offset of this ListVpcsRequest.
 
         查询的偏移量。
 
@@ -108,7 +108,7 @@ class ListVpcsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVpcsRequest.
+        r"""Gets the id of this ListVpcsRequest.
 
         通过ID查询
 
@@ -119,7 +119,7 @@ class ListVpcsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVpcsRequest.
+        r"""Sets the id of this ListVpcsRequest.
 
         通过ID查询
 
@@ -130,7 +130,7 @@ class ListVpcsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVpcsRequest.
+        r"""Gets the name of this ListVpcsRequest.
 
         通过name查询
 
@@ -141,7 +141,7 @@ class ListVpcsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVpcsRequest.
+        r"""Sets the name of this ListVpcsRequest.
 
         通过name查询
 

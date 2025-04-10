@@ -34,7 +34,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
     }
 
     def __init__(self, vpn_servers=None, total_count=None, page_info=None, request_id=None, header_response_token=None):
-        """ListVpnServersByProjectResponse
+        r"""ListVpnServersByProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @property
     def vpn_servers(self):
-        """Gets the vpn_servers of this ListVpnServersByProjectResponse.
+        r"""Gets the vpn_servers of this ListVpnServersByProjectResponse.
 
         :return: The vpn_servers of this ListVpnServersByProjectResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]
@@ -81,7 +81,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @vpn_servers.setter
     def vpn_servers(self, vpn_servers):
-        """Sets the vpn_servers of this ListVpnServersByProjectResponse.
+        r"""Sets the vpn_servers of this ListVpnServersByProjectResponse.
 
         :param vpn_servers: The vpn_servers of this ListVpnServersByProjectResponse.
         :type vpn_servers: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]
@@ -90,7 +90,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListVpnServersByProjectResponse.
+        r"""Gets the total_count of this ListVpnServersByProjectResponse.
 
         总数
 
@@ -101,7 +101,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListVpnServersByProjectResponse.
+        r"""Sets the total_count of this ListVpnServersByProjectResponse.
 
         总数
 
@@ -112,7 +112,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpnServersByProjectResponse.
+        r"""Gets the page_info of this ListVpnServersByProjectResponse.
 
         :return: The page_info of this ListVpnServersByProjectResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -121,7 +121,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpnServersByProjectResponse.
+        r"""Sets the page_info of this ListVpnServersByProjectResponse.
 
         :param page_info: The page_info of this ListVpnServersByProjectResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -130,7 +130,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpnServersByProjectResponse.
+        r"""Gets the request_id of this ListVpnServersByProjectResponse.
 
         请求id
 
@@ -141,7 +141,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpnServersByProjectResponse.
+        r"""Sets the request_id of this ListVpnServersByProjectResponse.
 
         请求id
 
@@ -152,7 +152,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ListVpnServersByProjectResponse.
+        r"""Gets the header_response_token of this ListVpnServersByProjectResponse.
 
         :return: The header_response_token of this ListVpnServersByProjectResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ListVpnServersByProjectResponse.
+        r"""Sets the header_response_token of this ListVpnServersByProjectResponse.
 
         :param header_response_token: The header_response_token of this ListVpnServersByProjectResponse.
         :type header_response_token: str

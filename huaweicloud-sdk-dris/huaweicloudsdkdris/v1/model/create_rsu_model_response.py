@@ -36,7 +36,7 @@ class CreateRsuModelResponse(SdkResponse):
     }
 
     def __init__(self, rsu_model_id=None, name=None, manufacturer_name=None, description=None, last_modified_time=None, created_time=None):
-        """CreateRsuModelResponse
+        r"""CreateRsuModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @property
     def rsu_model_id(self):
-        """Gets the rsu_model_id of this CreateRsuModelResponse.
+        r"""Gets the rsu_model_id of this CreateRsuModelResponse.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得。  **取值范围**：长度不小于1不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -90,7 +90,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @rsu_model_id.setter
     def rsu_model_id(self, rsu_model_id):
-        """Sets the rsu_model_id of this CreateRsuModelResponse.
+        r"""Sets the rsu_model_id of this CreateRsuModelResponse.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得。  **取值范围**：长度不小于1不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -101,7 +101,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateRsuModelResponse.
+        r"""Gets the name of this CreateRsuModelResponse.
 
         **参数说明**: RSU型号名称。  **取值范围**：长度不低于1不超过64，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -112,7 +112,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRsuModelResponse.
+        r"""Sets the name of this CreateRsuModelResponse.
 
         **参数说明**: RSU型号名称。  **取值范围**：长度不低于1不超过64，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -123,7 +123,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this CreateRsuModelResponse.
+        r"""Gets the manufacturer_name of this CreateRsuModelResponse.
 
         **参数说明**: RSU的厂商名称。  **取值范围**：长度不低于1不超过32，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -134,7 +134,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this CreateRsuModelResponse.
+        r"""Sets the manufacturer_name of this CreateRsuModelResponse.
 
         **参数说明**: RSU的厂商名称。  **取值范围**：长度不低于1不超过32，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -145,7 +145,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateRsuModelResponse.
+        r"""Gets the description of this CreateRsuModelResponse.
 
         **参数说明**: RSU型号的描述信息。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -156,7 +156,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRsuModelResponse.
+        r"""Sets the description of this CreateRsuModelResponse.
 
         **参数说明**: RSU型号的描述信息。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -167,7 +167,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this CreateRsuModelResponse.
+        r"""Gets the last_modified_time of this CreateRsuModelResponse.
 
         **参数说明**: RSU型号更新的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如：2020-12-07T01:32:17Z
 
@@ -178,7 +178,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this CreateRsuModelResponse.
+        r"""Sets the last_modified_time of this CreateRsuModelResponse.
 
         **参数说明**: RSU型号更新的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如：2020-12-07T01:32:17Z
 
@@ -189,7 +189,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateRsuModelResponse.
+        r"""Gets the created_time of this CreateRsuModelResponse.
 
         **参数说明**: 在平台创建RSU型号的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如：2020-12-07T01:32:17Z
 
@@ -200,7 +200,7 @@ class CreateRsuModelResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateRsuModelResponse.
+        r"""Sets the created_time of this CreateRsuModelResponse.
 
         **参数说明**: 在平台创建RSU型号的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如：2020-12-07T01:32:17Z
 

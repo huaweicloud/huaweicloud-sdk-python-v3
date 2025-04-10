@@ -31,7 +31,7 @@ class ListPersistentStorageRequest:
     }
 
     def __init__(self, offset=None, limit=None, storage_id=None, name=None):
-        """ListPersistentStorageRequest
+        r"""ListPersistentStorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListPersistentStorageRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPersistentStorageRequest.
+        r"""Gets the offset of this ListPersistentStorageRequest.
 
         查询的偏移量。
 
@@ -75,7 +75,7 @@ class ListPersistentStorageRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPersistentStorageRequest.
+        r"""Sets the offset of this ListPersistentStorageRequest.
 
         查询的偏移量。
 
@@ -86,7 +86,7 @@ class ListPersistentStorageRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPersistentStorageRequest.
+        r"""Gets the limit of this ListPersistentStorageRequest.
 
         单次查询的大小[1-100]。
 
@@ -97,7 +97,7 @@ class ListPersistentStorageRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPersistentStorageRequest.
+        r"""Sets the limit of this ListPersistentStorageRequest.
 
         单次查询的大小[1-100]。
 
@@ -108,7 +108,7 @@ class ListPersistentStorageRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this ListPersistentStorageRequest.
+        r"""Gets the storage_id of this ListPersistentStorageRequest.
 
         WKS存储ID。
 
@@ -119,7 +119,7 @@ class ListPersistentStorageRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this ListPersistentStorageRequest.
+        r"""Sets the storage_id of this ListPersistentStorageRequest.
 
         WKS存储ID。
 
@@ -130,7 +130,7 @@ class ListPersistentStorageRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPersistentStorageRequest.
+        r"""Gets the name of this ListPersistentStorageRequest.
 
         查询名称，模糊匹配。
 
@@ -141,7 +141,7 @@ class ListPersistentStorageRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPersistentStorageRequest.
+        r"""Sets the name of this ListPersistentStorageRequest.
 
         查询名称，模糊匹配。
 

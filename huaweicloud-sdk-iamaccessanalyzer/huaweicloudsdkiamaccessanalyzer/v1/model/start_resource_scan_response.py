@@ -24,7 +24,7 @@ class StartResourceScanResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartResourceScanResponse
+        r"""StartResourceScanResponse
 
         The model defined in huaweicloud sdk
 

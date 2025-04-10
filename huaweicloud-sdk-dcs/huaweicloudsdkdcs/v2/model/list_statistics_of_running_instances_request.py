@@ -23,7 +23,7 @@ class ListStatisticsOfRunningInstancesRequest:
     }
 
     def __init__(self):
-        """ListStatisticsOfRunningInstancesRequest
+        r"""ListStatisticsOfRunningInstancesRequest
 
         The model defined in huaweicloud sdk
 

@@ -53,7 +53,7 @@ class ListTagsRequest:
     }
 
     def __init__(self, limit=None, page=None, imagetype=None, id=None, status=None, name=None, min_disk=None, platform=None, os_type=None, member_status=None, virtual_env_type=None, enterprise_project_id=None, architecture=None, created_at=None, updated_at=None):
-        """ListTagsRequest
+        r"""ListTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagsRequest.
+        r"""Gets the limit of this ListTagsRequest.
 
         用于分页，表示查询几条记录，取值为整数，默认为所有。
 
@@ -152,7 +152,7 @@ class ListTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagsRequest.
+        r"""Sets the limit of this ListTagsRequest.
 
         用于分页，表示查询几条记录，取值为整数，默认为所有。
 
@@ -163,7 +163,7 @@ class ListTagsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListTagsRequest.
+        r"""Gets the page of this ListTagsRequest.
 
         页码，表示需要查询第几页的数据。默认值为1。
 
@@ -174,7 +174,7 @@ class ListTagsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListTagsRequest.
+        r"""Sets the page of this ListTagsRequest.
 
         页码，表示需要查询第几页的数据。默认值为1。
 
@@ -185,7 +185,7 @@ class ListTagsRequest:
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this ListTagsRequest.
+        r"""Gets the imagetype of this ListTagsRequest.
 
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
@@ -196,7 +196,7 @@ class ListTagsRequest:
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this ListTagsRequest.
+        r"""Sets the imagetype of this ListTagsRequest.
 
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
@@ -207,7 +207,7 @@ class ListTagsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTagsRequest.
+        r"""Gets the id of this ListTagsRequest.
 
         镜像ID。
 
@@ -218,7 +218,7 @@ class ListTagsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTagsRequest.
+        r"""Sets the id of this ListTagsRequest.
 
         镜像ID。
 
@@ -229,7 +229,7 @@ class ListTagsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTagsRequest.
+        r"""Gets the status of this ListTagsRequest.
 
         镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
@@ -240,7 +240,7 @@ class ListTagsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTagsRequest.
+        r"""Sets the status of this ListTagsRequest.
 
         镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
@@ -251,7 +251,7 @@ class ListTagsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTagsRequest.
+        r"""Gets the name of this ListTagsRequest.
 
         镜像名称。
 
@@ -262,7 +262,7 @@ class ListTagsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTagsRequest.
+        r"""Sets the name of this ListTagsRequest.
 
         镜像名称。
 
@@ -273,7 +273,7 @@ class ListTagsRequest:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this ListTagsRequest.
+        r"""Gets the min_disk of this ListTagsRequest.
 
         镜像运行需要的最小磁盘，单位为GB 。
 
@@ -284,7 +284,7 @@ class ListTagsRequest:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this ListTagsRequest.
+        r"""Sets the min_disk of this ListTagsRequest.
 
         镜像运行需要的最小磁盘，单位为GB 。
 
@@ -295,7 +295,7 @@ class ListTagsRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this ListTagsRequest.
+        r"""Gets the platform of this ListTagsRequest.
 
         镜像平台分类。
 
@@ -306,7 +306,7 @@ class ListTagsRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ListTagsRequest.
+        r"""Sets the platform of this ListTagsRequest.
 
         镜像平台分类。
 
@@ -317,7 +317,7 @@ class ListTagsRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListTagsRequest.
+        r"""Gets the os_type of this ListTagsRequest.
 
         镜像系统类型，取值如下：Linux,Windows,Other
 
@@ -328,7 +328,7 @@ class ListTagsRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListTagsRequest.
+        r"""Sets the os_type of this ListTagsRequest.
 
         镜像系统类型，取值如下：Linux,Windows,Other
 
@@ -339,7 +339,7 @@ class ListTagsRequest:
 
     @property
     def member_status(self):
-        """Gets the member_status of this ListTagsRequest.
+        r"""Gets the member_status of this ListTagsRequest.
 
         成员状态。目前取值有accepted、rejected、pending。
 
@@ -350,7 +350,7 @@ class ListTagsRequest:
 
     @member_status.setter
     def member_status(self, member_status):
-        """Sets the member_status of this ListTagsRequest.
+        r"""Sets the member_status of this ListTagsRequest.
 
         成员状态。目前取值有accepted、rejected、pending。
 
@@ -361,7 +361,7 @@ class ListTagsRequest:
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this ListTagsRequest.
+        r"""Gets the virtual_env_type of this ListTagsRequest.
 
         镜像使用环境类型：FusionCompute、Ironic、DataImage。
 
@@ -372,7 +372,7 @@ class ListTagsRequest:
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this ListTagsRequest.
+        r"""Sets the virtual_env_type of this ListTagsRequest.
 
         镜像使用环境类型：FusionCompute、Ironic、DataImage。
 
@@ -383,7 +383,7 @@ class ListTagsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTagsRequest.
+        r"""Gets the enterprise_project_id of this ListTagsRequest.
 
         表示查询某个企业项目下的镜像。
 
@@ -394,7 +394,7 @@ class ListTagsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTagsRequest.
+        r"""Sets the enterprise_project_id of this ListTagsRequest.
 
         表示查询某个企业项目下的镜像。
 
@@ -405,7 +405,7 @@ class ListTagsRequest:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListTagsRequest.
+        r"""Gets the architecture of this ListTagsRequest.
 
         镜像架构类型。取值包括：x86，arm
 
@@ -416,7 +416,7 @@ class ListTagsRequest:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListTagsRequest.
+        r"""Sets the architecture of this ListTagsRequest.
 
         镜像架构类型。取值包括：x86，arm
 
@@ -427,7 +427,7 @@ class ListTagsRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListTagsRequest.
+        r"""Gets the created_at of this ListTagsRequest.
 
         镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
@@ -438,7 +438,7 @@ class ListTagsRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListTagsRequest.
+        r"""Sets the created_at of this ListTagsRequest.
 
         镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
@@ -449,7 +449,7 @@ class ListTagsRequest:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListTagsRequest.
+        r"""Gets the updated_at of this ListTagsRequest.
 
         镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
@@ -460,7 +460,7 @@ class ListTagsRequest:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListTagsRequest.
+        r"""Sets the updated_at of this ListTagsRequest.
 
         镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 

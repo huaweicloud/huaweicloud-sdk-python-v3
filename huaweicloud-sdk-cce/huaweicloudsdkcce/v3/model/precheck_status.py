@@ -35,7 +35,7 @@ class PrecheckStatus:
     }
 
     def __init__(self, phase=None, expire_time_stamp=None, message=None, cluster_check_status=None, addon_check_status=None, node_check_status=None):
-        """PrecheckStatus
+        r"""PrecheckStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PrecheckStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this PrecheckStatus.
+        r"""Gets the phase of this PrecheckStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败 - Error 错误
 
@@ -89,7 +89,7 @@ class PrecheckStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this PrecheckStatus.
+        r"""Sets the phase of this PrecheckStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败 - Error 错误
 
@@ -100,7 +100,7 @@ class PrecheckStatus:
 
     @property
     def expire_time_stamp(self):
-        """Gets the expire_time_stamp of this PrecheckStatus.
+        r"""Gets the expire_time_stamp of this PrecheckStatus.
 
         检查结果过期时间
 
@@ -111,7 +111,7 @@ class PrecheckStatus:
 
     @expire_time_stamp.setter
     def expire_time_stamp(self, expire_time_stamp):
-        """Sets the expire_time_stamp of this PrecheckStatus.
+        r"""Sets the expire_time_stamp of this PrecheckStatus.
 
         检查结果过期时间
 
@@ -122,7 +122,7 @@ class PrecheckStatus:
 
     @property
     def message(self):
-        """Gets the message of this PrecheckStatus.
+        r"""Gets the message of this PrecheckStatus.
 
         信息，一般是执行错误的日志信息
 
@@ -133,7 +133,7 @@ class PrecheckStatus:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PrecheckStatus.
+        r"""Sets the message of this PrecheckStatus.
 
         信息，一般是执行错误的日志信息
 
@@ -144,7 +144,7 @@ class PrecheckStatus:
 
     @property
     def cluster_check_status(self):
-        """Gets the cluster_check_status of this PrecheckStatus.
+        r"""Gets the cluster_check_status of this PrecheckStatus.
 
         :return: The cluster_check_status of this PrecheckStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterCheckStatus`
@@ -153,7 +153,7 @@ class PrecheckStatus:
 
     @cluster_check_status.setter
     def cluster_check_status(self, cluster_check_status):
-        """Sets the cluster_check_status of this PrecheckStatus.
+        r"""Sets the cluster_check_status of this PrecheckStatus.
 
         :param cluster_check_status: The cluster_check_status of this PrecheckStatus.
         :type cluster_check_status: :class:`huaweicloudsdkcce.v3.ClusterCheckStatus`
@@ -162,7 +162,7 @@ class PrecheckStatus:
 
     @property
     def addon_check_status(self):
-        """Gets the addon_check_status of this PrecheckStatus.
+        r"""Gets the addon_check_status of this PrecheckStatus.
 
         :return: The addon_check_status of this PrecheckStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonCheckStatus`
@@ -171,7 +171,7 @@ class PrecheckStatus:
 
     @addon_check_status.setter
     def addon_check_status(self, addon_check_status):
-        """Sets the addon_check_status of this PrecheckStatus.
+        r"""Sets the addon_check_status of this PrecheckStatus.
 
         :param addon_check_status: The addon_check_status of this PrecheckStatus.
         :type addon_check_status: :class:`huaweicloudsdkcce.v3.AddonCheckStatus`
@@ -180,7 +180,7 @@ class PrecheckStatus:
 
     @property
     def node_check_status(self):
-        """Gets the node_check_status of this PrecheckStatus.
+        r"""Gets the node_check_status of this PrecheckStatus.
 
         :return: The node_check_status of this PrecheckStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeCheckStatus`
@@ -189,7 +189,7 @@ class PrecheckStatus:
 
     @node_check_status.setter
     def node_check_status(self, node_check_status):
-        """Sets the node_check_status of this PrecheckStatus.
+        r"""Sets the node_check_status of this PrecheckStatus.
 
         :param node_check_status: The node_check_status of this PrecheckStatus.
         :type node_check_status: :class:`huaweicloudsdkcce.v3.NodeCheckStatus`

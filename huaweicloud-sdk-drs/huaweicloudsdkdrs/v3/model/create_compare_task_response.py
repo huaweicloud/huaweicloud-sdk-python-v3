@@ -34,7 +34,7 @@ class CreateCompareTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, object_level_compare_create_result=None, data_level_compare_create_result=None, error_code=None, error_msg=None):
-        """CreateCompareTaskResponse
+        r"""CreateCompareTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateCompareTaskResponse.
+        r"""Gets the job_id of this CreateCompareTaskResponse.
 
         任务id。
 
@@ -83,7 +83,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateCompareTaskResponse.
+        r"""Sets the job_id of this CreateCompareTaskResponse.
 
         任务id。
 
@@ -94,7 +94,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @property
     def object_level_compare_create_result(self):
-        """Gets the object_level_compare_create_result of this CreateCompareTaskResponse.
+        r"""Gets the object_level_compare_create_result of this CreateCompareTaskResponse.
 
         :return: The object_level_compare_create_result of this CreateCompareTaskResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
@@ -103,7 +103,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @object_level_compare_create_result.setter
     def object_level_compare_create_result(self, object_level_compare_create_result):
-        """Sets the object_level_compare_create_result of this CreateCompareTaskResponse.
+        r"""Sets the object_level_compare_create_result of this CreateCompareTaskResponse.
 
         :param object_level_compare_create_result: The object_level_compare_create_result of this CreateCompareTaskResponse.
         :type object_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
@@ -112,7 +112,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @property
     def data_level_compare_create_result(self):
-        """Gets the data_level_compare_create_result of this CreateCompareTaskResponse.
+        r"""Gets the data_level_compare_create_result of this CreateCompareTaskResponse.
 
         :return: The data_level_compare_create_result of this CreateCompareTaskResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
@@ -121,7 +121,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @data_level_compare_create_result.setter
     def data_level_compare_create_result(self, data_level_compare_create_result):
-        """Sets the data_level_compare_create_result of this CreateCompareTaskResponse.
+        r"""Sets the data_level_compare_create_result of this CreateCompareTaskResponse.
 
         :param data_level_compare_create_result: The data_level_compare_create_result of this CreateCompareTaskResponse.
         :type data_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
@@ -130,7 +130,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateCompareTaskResponse.
+        r"""Gets the error_code of this CreateCompareTaskResponse.
 
         错误码。
 
@@ -141,7 +141,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateCompareTaskResponse.
+        r"""Sets the error_code of this CreateCompareTaskResponse.
 
         错误码。
 
@@ -152,7 +152,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateCompareTaskResponse.
+        r"""Gets the error_msg of this CreateCompareTaskResponse.
 
         错误信息。
 
@@ -163,7 +163,7 @@ class CreateCompareTaskResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateCompareTaskResponse.
+        r"""Sets the error_msg of this CreateCompareTaskResponse.
 
         错误信息。
 

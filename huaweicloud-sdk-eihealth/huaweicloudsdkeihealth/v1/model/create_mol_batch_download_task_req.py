@@ -31,7 +31,7 @@ class CreateMolBatchDownloadTaskReq:
     }
 
     def __init__(self, job_id=None, job_result_url=None, mode=None, selected=None):
-        """CreateMolBatchDownloadTaskReq
+        r"""CreateMolBatchDownloadTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateMolBatchDownloadTaskReq.
+        r"""Gets the job_id of this CreateMolBatchDownloadTaskReq.
 
         作业ID
 
@@ -71,7 +71,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateMolBatchDownloadTaskReq.
+        r"""Sets the job_id of this CreateMolBatchDownloadTaskReq.
 
         作业ID
 
@@ -82,7 +82,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @property
     def job_result_url(self):
-        """Gets the job_result_url of this CreateMolBatchDownloadTaskReq.
+        r"""Gets the job_result_url of this CreateMolBatchDownloadTaskReq.
 
         作业结果文件url
 
@@ -93,7 +93,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @job_result_url.setter
     def job_result_url(self, job_result_url):
-        """Sets the job_result_url of this CreateMolBatchDownloadTaskReq.
+        r"""Sets the job_result_url of this CreateMolBatchDownloadTaskReq.
 
         作业结果文件url
 
@@ -104,7 +104,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateMolBatchDownloadTaskReq.
+        r"""Gets the mode of this CreateMolBatchDownloadTaskReq.
 
         下载类型：MOL（小分子）、COMPLEX（复合物）
 
@@ -115,7 +115,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateMolBatchDownloadTaskReq.
+        r"""Sets the mode of this CreateMolBatchDownloadTaskReq.
 
         下载类型：MOL（小分子）、COMPLEX（复合物）
 
@@ -126,7 +126,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @property
     def selected(self):
-        """Gets the selected of this CreateMolBatchDownloadTaskReq.
+        r"""Gets the selected of this CreateMolBatchDownloadTaskReq.
 
         选中下载的分子下标
 
@@ -137,7 +137,7 @@ class CreateMolBatchDownloadTaskReq:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this CreateMolBatchDownloadTaskReq.
+        r"""Sets the selected of this CreateMolBatchDownloadTaskReq.
 
         选中下载的分子下标
 

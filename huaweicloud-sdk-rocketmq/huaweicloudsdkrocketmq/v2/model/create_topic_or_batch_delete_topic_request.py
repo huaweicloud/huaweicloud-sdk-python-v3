@@ -29,7 +29,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
     }
 
     def __init__(self, instance_id=None, action=None, body=None):
-        """CreateTopicOrBatchDeleteTopicRequest
+        r"""CreateTopicOrBatchDeleteTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateTopicOrBatchDeleteTopicRequest.
+        r"""Gets the instance_id of this CreateTopicOrBatchDeleteTopicRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateTopicOrBatchDeleteTopicRequest.
+        r"""Sets the instance_id of this CreateTopicOrBatchDeleteTopicRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
     @property
     def action(self):
-        """Gets the action of this CreateTopicOrBatchDeleteTopicRequest.
+        r"""Gets the action of this CreateTopicOrBatchDeleteTopicRequest.
 
         批量删除Topic时使用，不配置则为创建接口。删除操作：delete。
 
@@ -89,7 +89,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateTopicOrBatchDeleteTopicRequest.
+        r"""Sets the action of this CreateTopicOrBatchDeleteTopicRequest.
 
         批量删除Topic时使用，不配置则为创建接口。删除操作：delete。
 
@@ -100,7 +100,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTopicOrBatchDeleteTopicRequest.
+        r"""Gets the body of this CreateTopicOrBatchDeleteTopicRequest.
 
         :return: The body of this CreateTopicOrBatchDeleteTopicRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicReq`
@@ -109,7 +109,7 @@ class CreateTopicOrBatchDeleteTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTopicOrBatchDeleteTopicRequest.
+        r"""Sets the body of this CreateTopicOrBatchDeleteTopicRequest.
 
         :param body: The body of this CreateTopicOrBatchDeleteTopicRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicReq`

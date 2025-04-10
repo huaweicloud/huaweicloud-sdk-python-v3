@@ -28,7 +28,7 @@ class KeystoneListServicesResponse(SdkResponse):
     }
 
     def __init__(self, services=None, links=None):
-        """KeystoneListServicesResponse
+        r"""KeystoneListServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListServicesResponse(SdkResponse):
 
     @property
     def services(self):
-        """Gets the services of this KeystoneListServicesResponse.
+        r"""Gets the services of this KeystoneListServicesResponse.
 
         服务信息列表。
 
@@ -62,7 +62,7 @@ class KeystoneListServicesResponse(SdkResponse):
 
     @services.setter
     def services(self, services):
-        """Sets the services of this KeystoneListServicesResponse.
+        r"""Sets the services of this KeystoneListServicesResponse.
 
         服务信息列表。
 
@@ -73,7 +73,7 @@ class KeystoneListServicesResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListServicesResponse.
+        r"""Gets the links of this KeystoneListServicesResponse.
 
         :return: The links of this KeystoneListServicesResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -82,7 +82,7 @@ class KeystoneListServicesResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListServicesResponse.
+        r"""Sets the links of this KeystoneListServicesResponse.
 
         :param links: The links of this KeystoneListServicesResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`

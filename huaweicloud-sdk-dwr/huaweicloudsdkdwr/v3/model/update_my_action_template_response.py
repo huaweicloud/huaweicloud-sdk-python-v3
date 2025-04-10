@@ -38,7 +38,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_name=None, created_at=None, version=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """UpdateMyActionTemplateResponse
+        r"""UpdateMyActionTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this UpdateMyActionTemplateResponse.
+        r"""Gets the template_name of this UpdateMyActionTemplateResponse.
 
         算子模板名称。
 
@@ -97,7 +97,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this UpdateMyActionTemplateResponse.
+        r"""Sets the template_name of this UpdateMyActionTemplateResponse.
 
         算子模板名称。
 
@@ -108,7 +108,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateMyActionTemplateResponse.
+        r"""Gets the created_at of this UpdateMyActionTemplateResponse.
 
         算子模板创建的时间。
 
@@ -119,7 +119,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateMyActionTemplateResponse.
+        r"""Sets the created_at of this UpdateMyActionTemplateResponse.
 
         算子模板创建的时间。
 
@@ -130,7 +130,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateMyActionTemplateResponse.
+        r"""Gets the version of this UpdateMyActionTemplateResponse.
 
         版本号。
 
@@ -141,7 +141,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateMyActionTemplateResponse.
+        r"""Sets the version of this UpdateMyActionTemplateResponse.
 
         版本号。
 
@@ -152,7 +152,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateMyActionTemplateResponse.
+        r"""Gets the x_request_id of this UpdateMyActionTemplateResponse.
 
         :return: The x_request_id of this UpdateMyActionTemplateResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateMyActionTemplateResponse.
+        r"""Sets the x_request_id of this UpdateMyActionTemplateResponse.
 
         :param x_request_id: The x_request_id of this UpdateMyActionTemplateResponse.
         :type x_request_id: str
@@ -170,7 +170,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this UpdateMyActionTemplateResponse.
+        r"""Gets the connection of this UpdateMyActionTemplateResponse.
 
         :return: The connection of this UpdateMyActionTemplateResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this UpdateMyActionTemplateResponse.
+        r"""Sets the connection of this UpdateMyActionTemplateResponse.
 
         :param connection: The connection of this UpdateMyActionTemplateResponse.
         :type connection: str
@@ -188,7 +188,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this UpdateMyActionTemplateResponse.
+        r"""Gets the content_length of this UpdateMyActionTemplateResponse.
 
         :return: The content_length of this UpdateMyActionTemplateResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this UpdateMyActionTemplateResponse.
+        r"""Sets the content_length of this UpdateMyActionTemplateResponse.
 
         :param content_length: The content_length of this UpdateMyActionTemplateResponse.
         :type content_length: str
@@ -206,7 +206,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this UpdateMyActionTemplateResponse.
+        r"""Gets the date of this UpdateMyActionTemplateResponse.
 
         :return: The date of this UpdateMyActionTemplateResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class UpdateMyActionTemplateResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this UpdateMyActionTemplateResponse.
+        r"""Sets the date of this UpdateMyActionTemplateResponse.
 
         :param date: The date of this UpdateMyActionTemplateResponse.
         :type date: str

@@ -27,7 +27,7 @@ class UpdateWorkspaceRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """UpdateWorkspaceRequest
+        r"""UpdateWorkspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateWorkspaceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateWorkspaceRequest.
+        r"""Gets the workspace_id of this UpdateWorkspaceRequest.
 
         工作空间ID
 
@@ -60,7 +60,7 @@ class UpdateWorkspaceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateWorkspaceRequest.
+        r"""Sets the workspace_id of this UpdateWorkspaceRequest.
 
         工作空间ID
 
@@ -71,7 +71,7 @@ class UpdateWorkspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWorkspaceRequest.
+        r"""Gets the body of this UpdateWorkspaceRequest.
 
         :return: The body of this UpdateWorkspaceRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.UpdateWorkspaceRequestInput`
@@ -80,7 +80,7 @@ class UpdateWorkspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWorkspaceRequest.
+        r"""Sets the body of this UpdateWorkspaceRequest.
 
         :param body: The body of this UpdateWorkspaceRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.UpdateWorkspaceRequestInput`

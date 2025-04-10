@@ -34,7 +34,7 @@ class ExecuteDeploymentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, deployment_id=None, status=None, job_id=None):
-        """ExecuteDeploymentResponse
+        r"""ExecuteDeploymentResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteDeploymentResponse.
+        r"""Gets the id of this ExecuteDeploymentResponse.
 
         边缘业务ID。
 
@@ -83,7 +83,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteDeploymentResponse.
+        r"""Sets the id of this ExecuteDeploymentResponse.
 
         边缘业务ID。
 
@@ -94,7 +94,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ExecuteDeploymentResponse.
+        r"""Gets the name of this ExecuteDeploymentResponse.
 
         部署计划名称。
 
@@ -105,7 +105,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecuteDeploymentResponse.
+        r"""Sets the name of this ExecuteDeploymentResponse.
 
         部署计划名称。
 
@@ -116,7 +116,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ExecuteDeploymentResponse.
+        r"""Gets the deployment_id of this ExecuteDeploymentResponse.
 
         部署计划ID。
 
@@ -127,7 +127,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ExecuteDeploymentResponse.
+        r"""Sets the deployment_id of this ExecuteDeploymentResponse.
 
         部署计划ID。
 
@@ -138,7 +138,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ExecuteDeploymentResponse.
+        r"""Gets the status of this ExecuteDeploymentResponse.
 
         边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
 
@@ -149,7 +149,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExecuteDeploymentResponse.
+        r"""Sets the status of this ExecuteDeploymentResponse.
 
         边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
 
@@ -160,7 +160,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecuteDeploymentResponse.
+        r"""Gets the job_id of this ExecuteDeploymentResponse.
 
         任务ID。
 
@@ -171,7 +171,7 @@ class ExecuteDeploymentResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecuteDeploymentResponse.
+        r"""Sets the job_id of this ExecuteDeploymentResponse.
 
         任务ID。
 

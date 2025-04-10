@@ -31,7 +31,7 @@ class RedisUserForCreation:
     }
 
     def __init__(self, name=None, password=None, databases=None, privilege=None):
-        """RedisUserForCreation
+        r"""RedisUserForCreation
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class RedisUserForCreation:
 
     @property
     def name(self):
-        """Gets the name of this RedisUserForCreation.
+        r"""Gets the name of this RedisUserForCreation.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -71,7 +71,7 @@ class RedisUserForCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RedisUserForCreation.
+        r"""Sets the name of this RedisUserForCreation.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -82,7 +82,7 @@ class RedisUserForCreation:
 
     @property
     def password(self):
-        """Gets the password of this RedisUserForCreation.
+        r"""Gets the password of this RedisUserForCreation.
 
         - 密码长度为8~32位。  - 密码需包含大写字母、小写字母、数字和特殊字符中的至少三种，支持的特殊字符为!@#$%^&*()_+-= 。
 
@@ -93,7 +93,7 @@ class RedisUserForCreation:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this RedisUserForCreation.
+        r"""Sets the password of this RedisUserForCreation.
 
         - 密码长度为8~32位。  - 密码需包含大写字母、小写字母、数字和特殊字符中的至少三种，支持的特殊字符为!@#$%^&*()_+-= 。
 
@@ -104,7 +104,7 @@ class RedisUserForCreation:
 
     @property
     def databases(self):
-        """Gets the databases of this RedisUserForCreation.
+        r"""Gets the databases of this RedisUserForCreation.
 
         账号授权的数据库名称列表，至少指定一个数据库。
 
@@ -115,7 +115,7 @@ class RedisUserForCreation:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this RedisUserForCreation.
+        r"""Sets the databases of this RedisUserForCreation.
 
         账号授权的数据库名称列表，至少指定一个数据库。
 
@@ -126,7 +126,7 @@ class RedisUserForCreation:
 
     @property
     def privilege(self):
-        """Gets the privilege of this RedisUserForCreation.
+        r"""Gets the privilege of this RedisUserForCreation.
 
         账号权限。  - 取值\"ReadOnly\"：账号为只读权限； - 取值\"ReadWrite\"：账号为读写权限。
 
@@ -137,7 +137,7 @@ class RedisUserForCreation:
 
     @privilege.setter
     def privilege(self, privilege):
-        """Sets the privilege of this RedisUserForCreation.
+        r"""Sets the privilege of this RedisUserForCreation.
 
         账号权限。  - 取值\"ReadOnly\"：账号为只读权限； - 取值\"ReadWrite\"：账号为读写权限。
 

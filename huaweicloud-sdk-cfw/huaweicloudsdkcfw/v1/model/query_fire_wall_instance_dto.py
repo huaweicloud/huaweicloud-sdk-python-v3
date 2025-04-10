@@ -33,7 +33,7 @@ class QueryFireWallInstanceDto:
     }
 
     def __init__(self, enterprise_project_id=None, key_word=None, tags=None, limit=None, offset=None):
-        """QueryFireWallInstanceDto
+        r"""QueryFireWallInstanceDto
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class QueryFireWallInstanceDto:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QueryFireWallInstanceDto.
+        r"""Gets the enterprise_project_id of this QueryFireWallInstanceDto.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -80,7 +80,7 @@ class QueryFireWallInstanceDto:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QueryFireWallInstanceDto.
+        r"""Sets the enterprise_project_id of this QueryFireWallInstanceDto.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -91,7 +91,7 @@ class QueryFireWallInstanceDto:
 
     @property
     def key_word(self):
-        """Gets the key_word of this QueryFireWallInstanceDto.
+        r"""Gets the key_word of this QueryFireWallInstanceDto.
 
         查询关键字，可为防火墙id或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -102,7 +102,7 @@ class QueryFireWallInstanceDto:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this QueryFireWallInstanceDto.
+        r"""Sets the key_word of this QueryFireWallInstanceDto.
 
         查询关键字，可为防火墙id或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -113,7 +113,7 @@ class QueryFireWallInstanceDto:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryFireWallInstanceDto.
+        r"""Gets the tags of this QueryFireWallInstanceDto.
 
         标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表
 
@@ -124,7 +124,7 @@ class QueryFireWallInstanceDto:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryFireWallInstanceDto.
+        r"""Sets the tags of this QueryFireWallInstanceDto.
 
         标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表
 
@@ -135,7 +135,7 @@ class QueryFireWallInstanceDto:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryFireWallInstanceDto.
+        r"""Gets the limit of this QueryFireWallInstanceDto.
 
         每页显示个数，范围为1-1024
 
@@ -146,7 +146,7 @@ class QueryFireWallInstanceDto:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryFireWallInstanceDto.
+        r"""Sets the limit of this QueryFireWallInstanceDto.
 
         每页显示个数，范围为1-1024
 
@@ -157,7 +157,7 @@ class QueryFireWallInstanceDto:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryFireWallInstanceDto.
+        r"""Gets the offset of this QueryFireWallInstanceDto.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -168,7 +168,7 @@ class QueryFireWallInstanceDto:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryFireWallInstanceDto.
+        r"""Sets the offset of this QueryFireWallInstanceDto.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 

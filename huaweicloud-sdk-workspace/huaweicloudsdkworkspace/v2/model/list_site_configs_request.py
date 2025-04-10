@@ -27,7 +27,7 @@ class ListSiteConfigsRequest:
     }
 
     def __init__(self, availability_zone_id=None, site_type=None):
-        """ListSiteConfigsRequest
+        r"""ListSiteConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSiteConfigsRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListSiteConfigsRequest.
+        r"""Gets the availability_zone_id of this ListSiteConfigsRequest.
 
         可用区
 
@@ -61,7 +61,7 @@ class ListSiteConfigsRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListSiteConfigsRequest.
+        r"""Sets the availability_zone_id of this ListSiteConfigsRequest.
 
         可用区
 
@@ -72,7 +72,7 @@ class ListSiteConfigsRequest:
 
     @property
     def site_type(self):
-        """Gets the site_type of this ListSiteConfigsRequest.
+        r"""Gets the site_type of this ListSiteConfigsRequest.
 
         站点类型，支持CENTER、IES。
 
@@ -83,7 +83,7 @@ class ListSiteConfigsRequest:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this ListSiteConfigsRequest.
+        r"""Sets the site_type of this ListSiteConfigsRequest.
 
         站点类型，支持CENTER、IES。
 

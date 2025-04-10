@@ -39,7 +39,7 @@ class SecurityGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, tags=None):
-        """SecurityGroup
+        r"""SecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class SecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroup.
+        r"""Gets the id of this SecurityGroup.
 
         功能描述：安全组对应的唯一标识 取值范围：带“-”的标准UUID格式
 
@@ -95,7 +95,7 @@ class SecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroup.
+        r"""Sets the id of this SecurityGroup.
 
         功能描述：安全组对应的唯一标识 取值范围：带“-”的标准UUID格式
 
@@ -106,7 +106,7 @@ class SecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this SecurityGroup.
+        r"""Gets the name of this SecurityGroup.
 
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -117,7 +117,7 @@ class SecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityGroup.
+        r"""Sets the name of this SecurityGroup.
 
         功能说明：安全组名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -128,7 +128,7 @@ class SecurityGroup:
 
     @property
     def description(self):
-        """Gets the description of this SecurityGroup.
+        r"""Gets the description of this SecurityGroup.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -139,7 +139,7 @@ class SecurityGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecurityGroup.
+        r"""Sets the description of this SecurityGroup.
 
         功能说明：安全组的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -150,7 +150,7 @@ class SecurityGroup:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SecurityGroup.
+        r"""Gets the project_id of this SecurityGroup.
 
         功能说明：安全组所属的项目ID
 
@@ -161,7 +161,7 @@ class SecurityGroup:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SecurityGroup.
+        r"""Sets the project_id of this SecurityGroup.
 
         功能说明：安全组所属的项目ID
 
@@ -172,7 +172,7 @@ class SecurityGroup:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecurityGroup.
+        r"""Gets the created_at of this SecurityGroup.
 
         功能说明：安全组创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -183,7 +183,7 @@ class SecurityGroup:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecurityGroup.
+        r"""Sets the created_at of this SecurityGroup.
 
         功能说明：安全组创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -194,7 +194,7 @@ class SecurityGroup:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecurityGroup.
+        r"""Gets the updated_at of this SecurityGroup.
 
         功能说明：安全组更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -205,7 +205,7 @@ class SecurityGroup:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecurityGroup.
+        r"""Sets the updated_at of this SecurityGroup.
 
         功能说明：安全组更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -216,7 +216,7 @@ class SecurityGroup:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SecurityGroup.
+        r"""Gets the enterprise_project_id of this SecurityGroup.
 
         功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -227,7 +227,7 @@ class SecurityGroup:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SecurityGroup.
+        r"""Sets the enterprise_project_id of this SecurityGroup.
 
         功能说明：安全组所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -238,7 +238,7 @@ class SecurityGroup:
 
     @property
     def tags(self):
-        """Gets the tags of this SecurityGroup.
+        r"""Gets the tags of this SecurityGroup.
 
         功能描述：安全组的标签信息
 
@@ -249,7 +249,7 @@ class SecurityGroup:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SecurityGroup.
+        r"""Sets the tags of this SecurityGroup.
 
         功能描述：安全组的标签信息
 

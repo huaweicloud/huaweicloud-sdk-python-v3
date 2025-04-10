@@ -27,7 +27,7 @@ class RouterRespDTO:
     }
 
     def __init__(self, route_id=None, sql=None):
-        """RouterRespDTO
+        r"""RouterRespDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RouterRespDTO:
 
     @property
     def route_id(self):
-        """Gets the route_id of this RouterRespDTO.
+        r"""Gets the route_id of this RouterRespDTO.
 
         路由ID，节点下唯一
 
@@ -60,7 +60,7 @@ class RouterRespDTO:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this RouterRespDTO.
+        r"""Sets the route_id of this RouterRespDTO.
 
         路由ID，节点下唯一
 
@@ -71,7 +71,7 @@ class RouterRespDTO:
 
     @property
     def sql(self):
-        """Gets the sql of this RouterRespDTO.
+        r"""Gets the sql of this RouterRespDTO.
 
         sql參數
 
@@ -82,7 +82,7 @@ class RouterRespDTO:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this RouterRespDTO.
+        r"""Sets the sql of this RouterRespDTO.
 
         sql參數
 

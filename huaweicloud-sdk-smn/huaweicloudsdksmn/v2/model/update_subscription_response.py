@@ -28,7 +28,7 @@ class UpdateSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, subscription_urn=None):
-        """UpdateSubscriptionResponse
+        r"""UpdateSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateSubscriptionResponse.
+        r"""Gets the request_id of this UpdateSubscriptionResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateSubscriptionResponse.
+        r"""Sets the request_id of this UpdateSubscriptionResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this UpdateSubscriptionResponse.
+        r"""Gets the subscription_urn of this UpdateSubscriptionResponse.
 
         订阅者的唯一资源标识。
 
@@ -84,7 +84,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this UpdateSubscriptionResponse.
+        r"""Sets the subscription_urn of this UpdateSubscriptionResponse.
 
         订阅者的唯一资源标识。
 

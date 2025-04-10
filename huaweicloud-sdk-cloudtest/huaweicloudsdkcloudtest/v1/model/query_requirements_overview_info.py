@@ -35,7 +35,7 @@ class QueryRequirementsOverviewInfo:
     }
 
     def __init__(self, fixed_version_id=None, module_id=None, key_word=None, page_size=None, page_no=None, pi_filter=None):
-        """QueryRequirementsOverviewInfo
+        r"""QueryRequirementsOverviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryRequirementsOverviewInfo:
 
     @property
     def fixed_version_id(self):
-        """Gets the fixed_version_id of this QueryRequirementsOverviewInfo.
+        r"""Gets the fixed_version_id of this QueryRequirementsOverviewInfo.
 
         筛选迭代ID
 
@@ -89,7 +89,7 @@ class QueryRequirementsOverviewInfo:
 
     @fixed_version_id.setter
     def fixed_version_id(self, fixed_version_id):
-        """Sets the fixed_version_id of this QueryRequirementsOverviewInfo.
+        r"""Sets the fixed_version_id of this QueryRequirementsOverviewInfo.
 
         筛选迭代ID
 
@@ -100,7 +100,7 @@ class QueryRequirementsOverviewInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this QueryRequirementsOverviewInfo.
+        r"""Gets the module_id of this QueryRequirementsOverviewInfo.
 
         模块ID
 
@@ -111,7 +111,7 @@ class QueryRequirementsOverviewInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this QueryRequirementsOverviewInfo.
+        r"""Sets the module_id of this QueryRequirementsOverviewInfo.
 
         模块ID
 
@@ -122,7 +122,7 @@ class QueryRequirementsOverviewInfo:
 
     @property
     def key_word(self):
-        """Gets the key_word of this QueryRequirementsOverviewInfo.
+        r"""Gets the key_word of this QueryRequirementsOverviewInfo.
 
         关键字
 
@@ -133,7 +133,7 @@ class QueryRequirementsOverviewInfo:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this QueryRequirementsOverviewInfo.
+        r"""Sets the key_word of this QueryRequirementsOverviewInfo.
 
         关键字
 
@@ -144,7 +144,7 @@ class QueryRequirementsOverviewInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryRequirementsOverviewInfo.
+        r"""Gets the page_size of this QueryRequirementsOverviewInfo.
 
         每页数量
 
@@ -155,7 +155,7 @@ class QueryRequirementsOverviewInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryRequirementsOverviewInfo.
+        r"""Sets the page_size of this QueryRequirementsOverviewInfo.
 
         每页数量
 
@@ -166,7 +166,7 @@ class QueryRequirementsOverviewInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this QueryRequirementsOverviewInfo.
+        r"""Gets the page_no of this QueryRequirementsOverviewInfo.
 
         页码
 
@@ -177,7 +177,7 @@ class QueryRequirementsOverviewInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this QueryRequirementsOverviewInfo.
+        r"""Sets the page_no of this QueryRequirementsOverviewInfo.
 
         页码
 
@@ -188,7 +188,7 @@ class QueryRequirementsOverviewInfo:
 
     @property
     def pi_filter(self):
-        """Gets the pi_filter of this QueryRequirementsOverviewInfo.
+        r"""Gets the pi_filter of this QueryRequirementsOverviewInfo.
 
         :return: The pi_filter of this QueryRequirementsOverviewInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PiFilterInfo`
@@ -197,7 +197,7 @@ class QueryRequirementsOverviewInfo:
 
     @pi_filter.setter
     def pi_filter(self, pi_filter):
-        """Sets the pi_filter of this QueryRequirementsOverviewInfo.
+        r"""Sets the pi_filter of this QueryRequirementsOverviewInfo.
 
         :param pi_filter: The pi_filter of this QueryRequirementsOverviewInfo.
         :type pi_filter: :class:`huaweicloudsdkcloudtest.v1.PiFilterInfo`

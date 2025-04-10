@@ -29,7 +29,7 @@ class CreateCssClusterReq:
     }
 
     def __init__(self, css_id=None, user_name=None, user_pwd=None):
-        """CreateCssClusterReq
+        r"""CreateCssClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateCssClusterReq:
 
     @property
     def css_id(self):
-        """Gets the css_id of this CreateCssClusterReq.
+        r"""Gets the css_id of this CreateCssClusterReq.
 
         集群id
 
@@ -65,7 +65,7 @@ class CreateCssClusterReq:
 
     @css_id.setter
     def css_id(self, css_id):
-        """Sets the css_id of this CreateCssClusterReq.
+        r"""Sets the css_id of this CreateCssClusterReq.
 
         集群id
 
@@ -76,7 +76,7 @@ class CreateCssClusterReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateCssClusterReq.
+        r"""Gets the user_name of this CreateCssClusterReq.
 
         集群用户账号
 
@@ -87,7 +87,7 @@ class CreateCssClusterReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateCssClusterReq.
+        r"""Sets the user_name of this CreateCssClusterReq.
 
         集群用户账号
 
@@ -98,7 +98,7 @@ class CreateCssClusterReq:
 
     @property
     def user_pwd(self):
-        """Gets the user_pwd of this CreateCssClusterReq.
+        r"""Gets the user_pwd of this CreateCssClusterReq.
 
         集群用户密码，长度限制为[8,32]
 
@@ -109,7 +109,7 @@ class CreateCssClusterReq:
 
     @user_pwd.setter
     def user_pwd(self, user_pwd):
-        """Sets the user_pwd of this CreateCssClusterReq.
+        r"""Sets the user_pwd of this CreateCssClusterReq.
 
         集群用户密码，长度限制为[8,32]
 

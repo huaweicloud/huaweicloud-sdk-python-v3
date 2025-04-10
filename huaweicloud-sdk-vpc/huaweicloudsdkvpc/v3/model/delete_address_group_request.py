@@ -25,7 +25,7 @@ class DeleteAddressGroupRequest:
     }
 
     def __init__(self, address_group_id=None):
-        """DeleteAddressGroupRequest
+        r"""DeleteAddressGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAddressGroupRequest:
 
     @property
     def address_group_id(self):
-        """Gets the address_group_id of this DeleteAddressGroupRequest.
+        r"""Gets the address_group_id of this DeleteAddressGroupRequest.
 
         地址组的唯一标识
 
@@ -53,7 +53,7 @@ class DeleteAddressGroupRequest:
 
     @address_group_id.setter
     def address_group_id(self, address_group_id):
-        """Sets the address_group_id of this DeleteAddressGroupRequest.
+        r"""Sets the address_group_id of this DeleteAddressGroupRequest.
 
         地址组的唯一标识
 

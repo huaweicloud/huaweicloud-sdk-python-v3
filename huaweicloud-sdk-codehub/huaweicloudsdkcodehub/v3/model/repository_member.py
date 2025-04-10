@@ -39,7 +39,7 @@ class RepositoryMember:
     }
 
     def __init__(self, description=None, domain_id=None, domain_name=None, email=None, enabled=None, name=None, role=None, user_id=None):
-        """RepositoryMember
+        r"""RepositoryMember
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RepositoryMember:
 
     @property
     def description(self):
-        """Gets the description of this RepositoryMember.
+        r"""Gets the description of this RepositoryMember.
 
         仓库成员描述
 
@@ -103,7 +103,7 @@ class RepositoryMember:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RepositoryMember.
+        r"""Sets the description of this RepositoryMember.
 
         仓库成员描述
 
@@ -114,7 +114,7 @@ class RepositoryMember:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RepositoryMember.
+        r"""Gets the domain_id of this RepositoryMember.
 
         租户id
 
@@ -125,7 +125,7 @@ class RepositoryMember:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RepositoryMember.
+        r"""Sets the domain_id of this RepositoryMember.
 
         租户id
 
@@ -136,7 +136,7 @@ class RepositoryMember:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this RepositoryMember.
+        r"""Gets the domain_name of this RepositoryMember.
 
         租户名
 
@@ -147,7 +147,7 @@ class RepositoryMember:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this RepositoryMember.
+        r"""Sets the domain_name of this RepositoryMember.
 
         租户名
 
@@ -158,7 +158,7 @@ class RepositoryMember:
 
     @property
     def email(self):
-        """Gets the email of this RepositoryMember.
+        r"""Gets the email of this RepositoryMember.
 
         邮箱地址
 
@@ -169,7 +169,7 @@ class RepositoryMember:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this RepositoryMember.
+        r"""Sets the email of this RepositoryMember.
 
         邮箱地址
 
@@ -180,7 +180,7 @@ class RepositoryMember:
 
     @property
     def enabled(self):
-        """Gets the enabled of this RepositoryMember.
+        r"""Gets the enabled of this RepositoryMember.
 
         成员是否可用
 
@@ -191,7 +191,7 @@ class RepositoryMember:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this RepositoryMember.
+        r"""Sets the enabled of this RepositoryMember.
 
         成员是否可用
 
@@ -202,7 +202,7 @@ class RepositoryMember:
 
     @property
     def name(self):
-        """Gets the name of this RepositoryMember.
+        r"""Gets the name of this RepositoryMember.
 
         用户名
 
@@ -213,7 +213,7 @@ class RepositoryMember:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RepositoryMember.
+        r"""Sets the name of this RepositoryMember.
 
         用户名
 
@@ -224,7 +224,7 @@ class RepositoryMember:
 
     @property
     def role(self):
-        """Gets the role of this RepositoryMember.
+        r"""Gets the role of this RepositoryMember.
 
         仓库用户权限，取值范围：30->普通成员，40->管理员
 
@@ -235,7 +235,7 @@ class RepositoryMember:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this RepositoryMember.
+        r"""Sets the role of this RepositoryMember.
 
         仓库用户权限，取值范围：30->普通成员，40->管理员
 
@@ -246,7 +246,7 @@ class RepositoryMember:
 
     @property
     def user_id(self):
-        """Gets the user_id of this RepositoryMember.
+        r"""Gets the user_id of this RepositoryMember.
 
         用户id
 
@@ -257,7 +257,7 @@ class RepositoryMember:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this RepositoryMember.
+        r"""Sets the user_id of this RepositoryMember.
 
         用户id
 

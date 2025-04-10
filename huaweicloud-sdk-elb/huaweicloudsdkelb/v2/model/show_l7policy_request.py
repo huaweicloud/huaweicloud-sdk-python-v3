@@ -25,7 +25,7 @@ class ShowL7policyRequest:
     }
 
     def __init__(self, l7policy_id=None):
-        """ShowL7policyRequest
+        r"""ShowL7policyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowL7policyRequest:
 
     @property
     def l7policy_id(self):
-        """Gets the l7policy_id of this ShowL7policyRequest.
+        r"""Gets the l7policy_id of this ShowL7policyRequest.
 
         转发策略id
 
@@ -53,7 +53,7 @@ class ShowL7policyRequest:
 
     @l7policy_id.setter
     def l7policy_id(self, l7policy_id):
-        """Sets the l7policy_id of this ShowL7policyRequest.
+        r"""Sets the l7policy_id of this ShowL7policyRequest.
 
         转发策略id
 

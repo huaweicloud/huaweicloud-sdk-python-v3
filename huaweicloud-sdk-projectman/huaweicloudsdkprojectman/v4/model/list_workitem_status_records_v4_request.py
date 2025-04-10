@@ -29,7 +29,7 @@ class ListWorkitemStatusRecordsV4Request:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ListWorkitemStatusRecordsV4Request
+        r"""ListWorkitemStatusRecordsV4Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListWorkitemStatusRecordsV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListWorkitemStatusRecordsV4Request.
+        r"""Gets the project_id of this ListWorkitemStatusRecordsV4Request.
 
         devcloud项目的32位id
 
@@ -67,7 +67,7 @@ class ListWorkitemStatusRecordsV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListWorkitemStatusRecordsV4Request.
+        r"""Sets the project_id of this ListWorkitemStatusRecordsV4Request.
 
         devcloud项目的32位id
 
@@ -78,7 +78,7 @@ class ListWorkitemStatusRecordsV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkitemStatusRecordsV4Request.
+        r"""Gets the offset of this ListWorkitemStatusRecordsV4Request.
 
         偏移量 从0开始
 
@@ -89,7 +89,7 @@ class ListWorkitemStatusRecordsV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkitemStatusRecordsV4Request.
+        r"""Sets the offset of this ListWorkitemStatusRecordsV4Request.
 
         偏移量 从0开始
 
@@ -100,7 +100,7 @@ class ListWorkitemStatusRecordsV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkitemStatusRecordsV4Request.
+        r"""Gets the limit of this ListWorkitemStatusRecordsV4Request.
 
         每页数量 最小1,最大100
 
@@ -111,7 +111,7 @@ class ListWorkitemStatusRecordsV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkitemStatusRecordsV4Request.
+        r"""Sets the limit of this ListWorkitemStatusRecordsV4Request.
 
         每页数量 最小1,最大100
 

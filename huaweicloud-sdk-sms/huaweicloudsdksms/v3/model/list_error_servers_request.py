@@ -31,7 +31,7 @@ class ListErrorServersRequest:
     }
 
     def __init__(self, limit=None, offset=None, migproject=None, enterprise_project_id=None):
-        """ListErrorServersRequest
+        r"""ListErrorServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListErrorServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListErrorServersRequest.
+        r"""Gets the limit of this ListErrorServersRequest.
 
         每一页记录的错误数量
 
@@ -74,7 +74,7 @@ class ListErrorServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListErrorServersRequest.
+        r"""Sets the limit of this ListErrorServersRequest.
 
         每一页记录的错误数量
 
@@ -85,7 +85,7 @@ class ListErrorServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListErrorServersRequest.
+        r"""Gets the offset of this ListErrorServersRequest.
 
         偏移量
 
@@ -96,7 +96,7 @@ class ListErrorServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListErrorServersRequest.
+        r"""Sets the offset of this ListErrorServersRequest.
 
         偏移量
 
@@ -107,7 +107,7 @@ class ListErrorServersRequest:
 
     @property
     def migproject(self):
-        """Gets the migproject of this ListErrorServersRequest.
+        r"""Gets the migproject of this ListErrorServersRequest.
 
         需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
 
@@ -118,7 +118,7 @@ class ListErrorServersRequest:
 
     @migproject.setter
     def migproject(self, migproject):
-        """Sets the migproject of this ListErrorServersRequest.
+        r"""Sets the migproject of this ListErrorServersRequest.
 
         需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
 
@@ -129,7 +129,7 @@ class ListErrorServersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListErrorServersRequest.
+        r"""Gets the enterprise_project_id of this ListErrorServersRequest.
 
         需要查询的企业项目ID
 
@@ -140,7 +140,7 @@ class ListErrorServersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListErrorServersRequest.
+        r"""Sets the enterprise_project_id of this ListErrorServersRequest.
 
         需要查询的企业项目ID
 

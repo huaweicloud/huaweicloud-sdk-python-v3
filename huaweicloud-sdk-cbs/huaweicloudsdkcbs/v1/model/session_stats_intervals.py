@@ -33,7 +33,7 @@ class SessionStatsIntervals:
     }
 
     def __init__(self, start=None, session_count=None, user_count=None, avg_request_count=None, avg_session_time=None):
-        """SessionStatsIntervals
+        r"""SessionStatsIntervals
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class SessionStatsIntervals:
 
     @property
     def start(self):
-        """Gets the start of this SessionStatsIntervals.
+        r"""Gets the start of this SessionStatsIntervals.
 
         间隔周期开始时间。
 
@@ -77,7 +77,7 @@ class SessionStatsIntervals:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this SessionStatsIntervals.
+        r"""Sets the start of this SessionStatsIntervals.
 
         间隔周期开始时间。
 
@@ -88,7 +88,7 @@ class SessionStatsIntervals:
 
     @property
     def session_count(self):
-        """Gets the session_count of this SessionStatsIntervals.
+        r"""Gets the session_count of this SessionStatsIntervals.
 
         间隔周期会话总数。
 
@@ -99,7 +99,7 @@ class SessionStatsIntervals:
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this SessionStatsIntervals.
+        r"""Sets the session_count of this SessionStatsIntervals.
 
         间隔周期会话总数。
 
@@ -110,7 +110,7 @@ class SessionStatsIntervals:
 
     @property
     def user_count(self):
-        """Gets the user_count of this SessionStatsIntervals.
+        r"""Gets the user_count of this SessionStatsIntervals.
 
         间隔周期独立用户个数。
 
@@ -121,7 +121,7 @@ class SessionStatsIntervals:
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this SessionStatsIntervals.
+        r"""Sets the user_count of this SessionStatsIntervals.
 
         间隔周期独立用户个数。
 
@@ -132,7 +132,7 @@ class SessionStatsIntervals:
 
     @property
     def avg_request_count(self):
-        """Gets the avg_request_count of this SessionStatsIntervals.
+        r"""Gets the avg_request_count of this SessionStatsIntervals.
 
         间隔周期平均会话轮数，保留小数点后三位。
 
@@ -143,7 +143,7 @@ class SessionStatsIntervals:
 
     @avg_request_count.setter
     def avg_request_count(self, avg_request_count):
-        """Sets the avg_request_count of this SessionStatsIntervals.
+        r"""Sets the avg_request_count of this SessionStatsIntervals.
 
         间隔周期平均会话轮数，保留小数点后三位。
 
@@ -154,7 +154,7 @@ class SessionStatsIntervals:
 
     @property
     def avg_session_time(self):
-        """Gets the avg_session_time of this SessionStatsIntervals.
+        r"""Gets the avg_session_time of this SessionStatsIntervals.
 
         间隔周期平均会话时长，保留小数点后三位。
 
@@ -165,7 +165,7 @@ class SessionStatsIntervals:
 
     @avg_session_time.setter
     def avg_session_time(self, avg_session_time):
-        """Sets the avg_session_time of this SessionStatsIntervals.
+        r"""Sets the avg_session_time of this SessionStatsIntervals.
 
         间隔周期平均会话时长，保留小数点后三位。
 

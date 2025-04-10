@@ -29,7 +29,7 @@ class FunctionRef:
     }
 
     def __init__(self, ref_name=None, invoke_mode=None, arguments=None):
-        """FunctionRef
+        r"""FunctionRef
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class FunctionRef:
 
     @property
     def ref_name(self):
-        """Gets the ref_name of this FunctionRef.
+        r"""Gets the ref_name of this FunctionRef.
 
         函数引用名称，需要和外层functions中的name对应
 
@@ -66,7 +66,7 @@ class FunctionRef:
 
     @ref_name.setter
     def ref_name(self, ref_name):
-        """Sets the ref_name of this FunctionRef.
+        r"""Sets the ref_name of this FunctionRef.
 
         函数引用名称，需要和外层functions中的name对应
 
@@ -77,7 +77,7 @@ class FunctionRef:
 
     @property
     def invoke_mode(self):
-        """Gets the invoke_mode of this FunctionRef.
+        r"""Gets the invoke_mode of this FunctionRef.
 
         函数调用模式，目前只支持同步调用
 
@@ -88,7 +88,7 @@ class FunctionRef:
 
     @invoke_mode.setter
     def invoke_mode(self, invoke_mode):
-        """Sets the invoke_mode of this FunctionRef.
+        r"""Sets the invoke_mode of this FunctionRef.
 
         函数调用模式，目前只支持同步调用
 
@@ -99,7 +99,7 @@ class FunctionRef:
 
     @property
     def arguments(self):
-        """Gets the arguments of this FunctionRef.
+        r"""Gets the arguments of this FunctionRef.
 
         函数执行时的入参，支持引用constants中的常量 定义方式：参数路径 | 常量值/常量路径 参数路径指输入参数的JsonPath路径，如$.a.b[0].c 常量值可以为数字类型，字符串类型(需要用单引号括起来)，布尔类型 常量路径为常量的JsonPath路径，但是根节点需要用$CONST表示，示例：$CONST.a.b
 
@@ -110,7 +110,7 @@ class FunctionRef:
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this FunctionRef.
+        r"""Sets the arguments of this FunctionRef.
 
         函数执行时的入参，支持引用constants中的常量 定义方式：参数路径 | 常量值/常量路径 参数路径指输入参数的JsonPath路径，如$.a.b[0].c 常量值可以为数字类型，字符串类型(需要用单引号括起来)，布尔类型 常量路径为常量的JsonPath路径，但是根节点需要用$CONST表示，示例：$CONST.a.b
 

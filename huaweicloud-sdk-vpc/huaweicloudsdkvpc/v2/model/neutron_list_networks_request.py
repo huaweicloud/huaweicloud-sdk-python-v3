@@ -43,7 +43,7 @@ class NeutronListNetworksRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, status=None, shared=None, routerexternal=None, admin_state_up=None, providernetwork_type=None, tenant_id=None):
-        """NeutronListNetworksRequest
+        r"""NeutronListNetworksRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NeutronListNetworksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListNetworksRequest.
+        r"""Gets the limit of this NeutronListNetworksRequest.
 
         每页返回的个数
 
@@ -117,7 +117,7 @@ class NeutronListNetworksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListNetworksRequest.
+        r"""Sets the limit of this NeutronListNetworksRequest.
 
         每页返回的个数
 
@@ -128,7 +128,7 @@ class NeutronListNetworksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListNetworksRequest.
+        r"""Gets the marker of this NeutronListNetworksRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -139,7 +139,7 @@ class NeutronListNetworksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListNetworksRequest.
+        r"""Sets the marker of this NeutronListNetworksRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -150,7 +150,7 @@ class NeutronListNetworksRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListNetworksRequest.
+        r"""Gets the id of this NeutronListNetworksRequest.
 
         按照网络对应的ID过滤查询
 
@@ -161,7 +161,7 @@ class NeutronListNetworksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListNetworksRequest.
+        r"""Sets the id of this NeutronListNetworksRequest.
 
         按照网络对应的ID过滤查询
 
@@ -172,7 +172,7 @@ class NeutronListNetworksRequest:
 
     @property
     def name(self):
-        """Gets the name of this NeutronListNetworksRequest.
+        r"""Gets the name of this NeutronListNetworksRequest.
 
         按照网络的名称过滤查询
 
@@ -183,7 +183,7 @@ class NeutronListNetworksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronListNetworksRequest.
+        r"""Sets the name of this NeutronListNetworksRequest.
 
         按照网络的名称过滤查询
 
@@ -194,7 +194,7 @@ class NeutronListNetworksRequest:
 
     @property
     def status(self):
-        """Gets the status of this NeutronListNetworksRequest.
+        r"""Gets the status of this NeutronListNetworksRequest.
 
         按照网络的状态过滤查询，取值范围：ACTIVE、ERROR、DOWN
 
@@ -205,7 +205,7 @@ class NeutronListNetworksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronListNetworksRequest.
+        r"""Sets the status of this NeutronListNetworksRequest.
 
         按照网络的状态过滤查询，取值范围：ACTIVE、ERROR、DOWN
 
@@ -216,7 +216,7 @@ class NeutronListNetworksRequest:
 
     @property
     def shared(self):
-        """Gets the shared of this NeutronListNetworksRequest.
+        r"""Gets the shared of this NeutronListNetworksRequest.
 
         按照网络是否支持跨租户共享过滤查询，取值范围：true or false
 
@@ -227,7 +227,7 @@ class NeutronListNetworksRequest:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this NeutronListNetworksRequest.
+        r"""Sets the shared of this NeutronListNetworksRequest.
 
         按照网络是否支持跨租户共享过滤查询，取值范围：true or false
 
@@ -238,7 +238,7 @@ class NeutronListNetworksRequest:
 
     @property
     def routerexternal(self):
-        """Gets the routerexternal of this NeutronListNetworksRequest.
+        r"""Gets the routerexternal of this NeutronListNetworksRequest.
 
         按照网络是否外部网络过滤查询，取值范围：true or false
 
@@ -249,7 +249,7 @@ class NeutronListNetworksRequest:
 
     @routerexternal.setter
     def routerexternal(self, routerexternal):
-        """Sets the routerexternal of this NeutronListNetworksRequest.
+        r"""Sets the routerexternal of this NeutronListNetworksRequest.
 
         按照网络是否外部网络过滤查询，取值范围：true or false
 
@@ -260,7 +260,7 @@ class NeutronListNetworksRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronListNetworksRequest.
+        r"""Gets the admin_state_up of this NeutronListNetworksRequest.
 
         按照网络的管理状态过滤查询，取值范围：true or false
 
@@ -271,7 +271,7 @@ class NeutronListNetworksRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronListNetworksRequest.
+        r"""Sets the admin_state_up of this NeutronListNetworksRequest.
 
         按照网络的管理状态过滤查询，取值范围：true or false
 
@@ -282,7 +282,7 @@ class NeutronListNetworksRequest:
 
     @property
     def providernetwork_type(self):
-        """Gets the providernetwork_type of this NeutronListNetworksRequest.
+        r"""Gets the providernetwork_type of this NeutronListNetworksRequest.
 
         按照网络的类型过滤查询
 
@@ -293,7 +293,7 @@ class NeutronListNetworksRequest:
 
     @providernetwork_type.setter
     def providernetwork_type(self, providernetwork_type):
-        """Sets the providernetwork_type of this NeutronListNetworksRequest.
+        r"""Sets the providernetwork_type of this NeutronListNetworksRequest.
 
         按照网络的类型过滤查询
 
@@ -304,7 +304,7 @@ class NeutronListNetworksRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListNetworksRequest.
+        r"""Gets the tenant_id of this NeutronListNetworksRequest.
 
         按照network所属的项目ID过滤
 
@@ -315,7 +315,7 @@ class NeutronListNetworksRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListNetworksRequest.
+        r"""Sets the tenant_id of this NeutronListNetworksRequest.
 
         按照network所属的项目ID过滤
 

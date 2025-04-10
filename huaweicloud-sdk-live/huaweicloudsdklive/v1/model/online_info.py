@@ -47,7 +47,7 @@ class OnlineInfo:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, video_codec=None, audio_codec=None, video_frame_rate=None, audio_frame_rate=None, video_bitrate=None, audio_bitrate=None, resolution=None, client_ip=None, start_time=None):
-        """OnlineInfo
+        r"""OnlineInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class OnlineInfo:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this OnlineInfo.
+        r"""Gets the publish_domain of this OnlineInfo.
 
         域名
 
@@ -124,7 +124,7 @@ class OnlineInfo:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this OnlineInfo.
+        r"""Sets the publish_domain of this OnlineInfo.
 
         域名
 
@@ -135,7 +135,7 @@ class OnlineInfo:
 
     @property
     def app(self):
-        """Gets the app of this OnlineInfo.
+        r"""Gets the app of this OnlineInfo.
 
         应用名
 
@@ -146,7 +146,7 @@ class OnlineInfo:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this OnlineInfo.
+        r"""Sets the app of this OnlineInfo.
 
         应用名
 
@@ -157,7 +157,7 @@ class OnlineInfo:
 
     @property
     def stream(self):
-        """Gets the stream of this OnlineInfo.
+        r"""Gets the stream of this OnlineInfo.
 
         流名
 
@@ -168,7 +168,7 @@ class OnlineInfo:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this OnlineInfo.
+        r"""Sets the stream of this OnlineInfo.
 
         流名
 
@@ -179,7 +179,7 @@ class OnlineInfo:
 
     @property
     def video_codec(self):
-        """Gets the video_codec of this OnlineInfo.
+        r"""Gets the video_codec of this OnlineInfo.
 
         视频编码方式 - H264 - H265 
 
@@ -190,7 +190,7 @@ class OnlineInfo:
 
     @video_codec.setter
     def video_codec(self, video_codec):
-        """Sets the video_codec of this OnlineInfo.
+        r"""Sets the video_codec of this OnlineInfo.
 
         视频编码方式 - H264 - H265 
 
@@ -201,7 +201,7 @@ class OnlineInfo:
 
     @property
     def audio_codec(self):
-        """Gets the audio_codec of this OnlineInfo.
+        r"""Gets the audio_codec of this OnlineInfo.
 
         音频编码方式 - AAC 
 
@@ -212,7 +212,7 @@ class OnlineInfo:
 
     @audio_codec.setter
     def audio_codec(self, audio_codec):
-        """Sets the audio_codec of this OnlineInfo.
+        r"""Sets the audio_codec of this OnlineInfo.
 
         音频编码方式 - AAC 
 
@@ -223,7 +223,7 @@ class OnlineInfo:
 
     @property
     def video_frame_rate(self):
-        """Gets the video_frame_rate of this OnlineInfo.
+        r"""Gets the video_frame_rate of this OnlineInfo.
 
         视频帧率
 
@@ -234,7 +234,7 @@ class OnlineInfo:
 
     @video_frame_rate.setter
     def video_frame_rate(self, video_frame_rate):
-        """Sets the video_frame_rate of this OnlineInfo.
+        r"""Sets the video_frame_rate of this OnlineInfo.
 
         视频帧率
 
@@ -245,7 +245,7 @@ class OnlineInfo:
 
     @property
     def audio_frame_rate(self):
-        """Gets the audio_frame_rate of this OnlineInfo.
+        r"""Gets the audio_frame_rate of this OnlineInfo.
 
         音频帧率
 
@@ -256,7 +256,7 @@ class OnlineInfo:
 
     @audio_frame_rate.setter
     def audio_frame_rate(self, audio_frame_rate):
-        """Sets the audio_frame_rate of this OnlineInfo.
+        r"""Sets the audio_frame_rate of this OnlineInfo.
 
         音频帧率
 
@@ -267,7 +267,7 @@ class OnlineInfo:
 
     @property
     def video_bitrate(self):
-        """Gets the video_bitrate of this OnlineInfo.
+        r"""Gets the video_bitrate of this OnlineInfo.
 
         视频码率
 
@@ -278,7 +278,7 @@ class OnlineInfo:
 
     @video_bitrate.setter
     def video_bitrate(self, video_bitrate):
-        """Sets the video_bitrate of this OnlineInfo.
+        r"""Sets the video_bitrate of this OnlineInfo.
 
         视频码率
 
@@ -289,7 +289,7 @@ class OnlineInfo:
 
     @property
     def audio_bitrate(self):
-        """Gets the audio_bitrate of this OnlineInfo.
+        r"""Gets the audio_bitrate of this OnlineInfo.
 
         音频码率
 
@@ -300,7 +300,7 @@ class OnlineInfo:
 
     @audio_bitrate.setter
     def audio_bitrate(self, audio_bitrate):
-        """Sets the audio_bitrate of this OnlineInfo.
+        r"""Sets the audio_bitrate of this OnlineInfo.
 
         音频码率
 
@@ -311,7 +311,7 @@ class OnlineInfo:
 
     @property
     def resolution(self):
-        """Gets the resolution of this OnlineInfo.
+        r"""Gets the resolution of this OnlineInfo.
 
         视频分辨率
 
@@ -322,7 +322,7 @@ class OnlineInfo:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this OnlineInfo.
+        r"""Sets the resolution of this OnlineInfo.
 
         视频分辨率
 
@@ -333,7 +333,7 @@ class OnlineInfo:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this OnlineInfo.
+        r"""Gets the client_ip of this OnlineInfo.
 
         推流设备的ip
 
@@ -344,7 +344,7 @@ class OnlineInfo:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this OnlineInfo.
+        r"""Sets the client_ip of this OnlineInfo.
 
         推流设备的ip
 
@@ -355,7 +355,7 @@ class OnlineInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OnlineInfo.
+        r"""Gets the start_time of this OnlineInfo.
 
         开始推流时刻 UTC格式 2006-01-02T15:04:05Z
 
@@ -366,7 +366,7 @@ class OnlineInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OnlineInfo.
+        r"""Sets the start_time of this OnlineInfo.
 
         开始推流时刻 UTC格式 2006-01-02T15:04:05Z
 

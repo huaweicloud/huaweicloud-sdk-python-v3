@@ -31,7 +31,7 @@ class ComponentLogs:
     }
 
     def __init__(self, log_path=None, rotate=None, host_path=None, host_extend_path=None):
-        """ComponentLogs
+        r"""ComponentLogs
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ComponentLogs:
 
     @property
     def log_path(self):
-        """Gets the log_path of this ComponentLogs.
+        r"""Gets the log_path of this ComponentLogs.
 
         容器中日志路径
 
@@ -71,7 +71,7 @@ class ComponentLogs:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this ComponentLogs.
+        r"""Sets the log_path of this ComponentLogs.
 
         容器中日志路径
 
@@ -82,7 +82,7 @@ class ComponentLogs:
 
     @property
     def rotate(self):
-        """Gets the rotate of this ComponentLogs.
+        r"""Gets the rotate of this ComponentLogs.
 
         日志转储周期
 
@@ -93,7 +93,7 @@ class ComponentLogs:
 
     @rotate.setter
     def rotate(self, rotate):
-        """Sets the rotate of this ComponentLogs.
+        r"""Sets the rotate of this ComponentLogs.
 
         日志转储周期
 
@@ -104,7 +104,7 @@ class ComponentLogs:
 
     @property
     def host_path(self):
-        """Gets the host_path of this ComponentLogs.
+        r"""Gets the host_path of this ComponentLogs.
 
         挂载的主机路径
 
@@ -115,7 +115,7 @@ class ComponentLogs:
 
     @host_path.setter
     def host_path(self, host_path):
-        """Sets the host_path of this ComponentLogs.
+        r"""Sets the host_path of this ComponentLogs.
 
         挂载的主机路径
 
@@ -126,7 +126,7 @@ class ComponentLogs:
 
     @property
     def host_extend_path(self):
-        """Gets the host_extend_path of this ComponentLogs.
+        r"""Gets the host_extend_path of this ComponentLogs.
 
         主机扩展路径
 
@@ -137,7 +137,7 @@ class ComponentLogs:
 
     @host_extend_path.setter
     def host_extend_path(self, host_extend_path):
-        """Sets the host_extend_path of this ComponentLogs.
+        r"""Sets the host_extend_path of this ComponentLogs.
 
         主机扩展路径
 

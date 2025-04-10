@@ -27,7 +27,7 @@ class RollbackSnapshotOption:
     }
 
     def __init__(self, name=None, volume_id=None):
-        """RollbackSnapshotOption
+        r"""RollbackSnapshotOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RollbackSnapshotOption:
 
     @property
     def name(self):
-        """Gets the name of this RollbackSnapshotOption.
+        r"""Gets the name of this RollbackSnapshotOption.
 
         回滚的目标云硬盘名称。
 
@@ -60,7 +60,7 @@ class RollbackSnapshotOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RollbackSnapshotOption.
+        r"""Sets the name of this RollbackSnapshotOption.
 
         回滚的目标云硬盘名称。
 
@@ -71,7 +71,7 @@ class RollbackSnapshotOption:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this RollbackSnapshotOption.
+        r"""Gets the volume_id of this RollbackSnapshotOption.
 
         回滚的目标云硬盘UUID。
 
@@ -82,7 +82,7 @@ class RollbackSnapshotOption:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this RollbackSnapshotOption.
+        r"""Sets the volume_id of this RollbackSnapshotOption.
 
         回滚的目标云硬盘UUID。
 

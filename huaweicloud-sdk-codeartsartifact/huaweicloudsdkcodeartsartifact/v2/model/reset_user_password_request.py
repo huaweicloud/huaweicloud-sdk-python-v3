@@ -23,7 +23,7 @@ class ResetUserPasswordRequest:
     }
 
     def __init__(self):
-        """ResetUserPasswordRequest
+        r"""ResetUserPasswordRequest
 
         The model defined in huaweicloud sdk
 

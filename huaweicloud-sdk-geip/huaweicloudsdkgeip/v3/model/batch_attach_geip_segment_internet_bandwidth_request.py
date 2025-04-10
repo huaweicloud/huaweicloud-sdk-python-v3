@@ -25,7 +25,7 @@ class BatchAttachGeipSegmentInternetBandwidthRequest:
     }
 
     def __init__(self, body=None):
-        """BatchAttachGeipSegmentInternetBandwidthRequest
+        r"""BatchAttachGeipSegmentInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAttachGeipSegmentInternetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAttachGeipSegmentInternetBandwidthRequest.
+        r"""Gets the body of this BatchAttachGeipSegmentInternetBandwidthRequest.
 
         :return: The body of this BatchAttachGeipSegmentInternetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchAttachInternetBandwidthsGlobalEipSegmentRequestBody`
@@ -52,7 +52,7 @@ class BatchAttachGeipSegmentInternetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAttachGeipSegmentInternetBandwidthRequest.
+        r"""Sets the body of this BatchAttachGeipSegmentInternetBandwidthRequest.
 
         :param body: The body of this BatchAttachGeipSegmentInternetBandwidthRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchAttachInternetBandwidthsGlobalEipSegmentRequestBody`

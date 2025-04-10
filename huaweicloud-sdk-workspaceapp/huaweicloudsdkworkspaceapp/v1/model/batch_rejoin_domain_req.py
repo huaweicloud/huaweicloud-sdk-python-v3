@@ -25,7 +25,7 @@ class BatchRejoinDomainReq:
     }
 
     def __init__(self, items=None):
-        """BatchRejoinDomainReq
+        r"""BatchRejoinDomainReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchRejoinDomainReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchRejoinDomainReq.
+        r"""Gets the items of this BatchRejoinDomainReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 
@@ -53,7 +53,7 @@ class BatchRejoinDomainReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchRejoinDomainReq.
+        r"""Sets the items of this BatchRejoinDomainReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 

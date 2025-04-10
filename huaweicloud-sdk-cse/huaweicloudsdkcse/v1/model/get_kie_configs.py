@@ -43,7 +43,7 @@ class GetKieConfigs:
     }
 
     def __init__(self, id=None, key=None, labels=None, value=None, value_type=None, status=None, create_time=None, update_time=None, create_revision=None, update_revision=None):
-        """GetKieConfigs
+        r"""GetKieConfigs
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class GetKieConfigs:
 
     @property
     def id(self):
-        """Gets the id of this GetKieConfigs.
+        r"""Gets the id of this GetKieConfigs.
 
         配置项的id。
 
@@ -117,7 +117,7 @@ class GetKieConfigs:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetKieConfigs.
+        r"""Sets the id of this GetKieConfigs.
 
         配置项的id。
 
@@ -128,7 +128,7 @@ class GetKieConfigs:
 
     @property
     def key(self):
-        """Gets the key of this GetKieConfigs.
+        r"""Gets the key of this GetKieConfigs.
 
         配置项的key。
 
@@ -139,7 +139,7 @@ class GetKieConfigs:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this GetKieConfigs.
+        r"""Sets the key of this GetKieConfigs.
 
         配置项的key。
 
@@ -150,7 +150,7 @@ class GetKieConfigs:
 
     @property
     def labels(self):
-        """Gets the labels of this GetKieConfigs.
+        r"""Gets the labels of this GetKieConfigs.
 
         配置项的标签。
 
@@ -161,7 +161,7 @@ class GetKieConfigs:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this GetKieConfigs.
+        r"""Sets the labels of this GetKieConfigs.
 
         配置项的标签。
 
@@ -172,7 +172,7 @@ class GetKieConfigs:
 
     @property
     def value(self):
-        """Gets the value of this GetKieConfigs.
+        r"""Gets the value of this GetKieConfigs.
 
         配置项的值。
 
@@ -183,7 +183,7 @@ class GetKieConfigs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this GetKieConfigs.
+        r"""Sets the value of this GetKieConfigs.
 
         配置项的值。
 
@@ -194,7 +194,7 @@ class GetKieConfigs:
 
     @property
     def value_type(self):
-        """Gets the value_type of this GetKieConfigs.
+        r"""Gets the value_type of this GetKieConfigs.
 
         配置项value的类型。
 
@@ -205,7 +205,7 @@ class GetKieConfigs:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this GetKieConfigs.
+        r"""Sets the value_type of this GetKieConfigs.
 
         配置项value的类型。
 
@@ -216,7 +216,7 @@ class GetKieConfigs:
 
     @property
     def status(self):
-        """Gets the status of this GetKieConfigs.
+        r"""Gets the status of this GetKieConfigs.
 
         配置项的状态。
 
@@ -227,7 +227,7 @@ class GetKieConfigs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetKieConfigs.
+        r"""Sets the status of this GetKieConfigs.
 
         配置项的状态。
 
@@ -238,7 +238,7 @@ class GetKieConfigs:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetKieConfigs.
+        r"""Gets the create_time of this GetKieConfigs.
 
         创建时间。
 
@@ -249,7 +249,7 @@ class GetKieConfigs:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetKieConfigs.
+        r"""Sets the create_time of this GetKieConfigs.
 
         创建时间。
 
@@ -260,7 +260,7 @@ class GetKieConfigs:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetKieConfigs.
+        r"""Gets the update_time of this GetKieConfigs.
 
         更新时间。
 
@@ -271,7 +271,7 @@ class GetKieConfigs:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetKieConfigs.
+        r"""Sets the update_time of this GetKieConfigs.
 
         更新时间。
 
@@ -282,7 +282,7 @@ class GetKieConfigs:
 
     @property
     def create_revision(self):
-        """Gets the create_revision of this GetKieConfigs.
+        r"""Gets the create_revision of this GetKieConfigs.
 
         创建配置的版本号
 
@@ -293,7 +293,7 @@ class GetKieConfigs:
 
     @create_revision.setter
     def create_revision(self, create_revision):
-        """Sets the create_revision of this GetKieConfigs.
+        r"""Sets the create_revision of this GetKieConfigs.
 
         创建配置的版本号
 
@@ -304,7 +304,7 @@ class GetKieConfigs:
 
     @property
     def update_revision(self):
-        """Gets the update_revision of this GetKieConfigs.
+        r"""Gets the update_revision of this GetKieConfigs.
 
         修改配置的版本号
 
@@ -315,7 +315,7 @@ class GetKieConfigs:
 
     @update_revision.setter
     def update_revision(self, update_revision):
-        """Sets the update_revision of this GetKieConfigs.
+        r"""Sets the update_revision of this GetKieConfigs.
 
         修改配置的版本号
 

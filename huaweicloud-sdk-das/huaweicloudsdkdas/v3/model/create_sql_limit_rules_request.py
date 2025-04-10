@@ -29,7 +29,7 @@ class CreateSqlLimitRulesRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CreateSqlLimitRulesRequest
+        r"""CreateSqlLimitRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSqlLimitRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSqlLimitRulesRequest.
+        r"""Gets the instance_id of this CreateSqlLimitRulesRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class CreateSqlLimitRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSqlLimitRulesRequest.
+        r"""Sets the instance_id of this CreateSqlLimitRulesRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class CreateSqlLimitRulesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateSqlLimitRulesRequest.
+        r"""Gets the x_language of this CreateSqlLimitRulesRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class CreateSqlLimitRulesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateSqlLimitRulesRequest.
+        r"""Sets the x_language of this CreateSqlLimitRulesRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class CreateSqlLimitRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSqlLimitRulesRequest.
+        r"""Gets the body of this CreateSqlLimitRulesRequest.
 
         :return: The body of this CreateSqlLimitRulesRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSqlLimitRulesBody`
@@ -109,7 +109,7 @@ class CreateSqlLimitRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSqlLimitRulesRequest.
+        r"""Sets the body of this CreateSqlLimitRulesRequest.
 
         :param body: The body of this CreateSqlLimitRulesRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateSqlLimitRulesBody`

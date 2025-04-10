@@ -25,7 +25,7 @@ class UpdateDomainRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDomainRequest
+        r"""UpdateDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainRequest.
+        r"""Gets the body of this UpdateDomainRequest.
 
         :return: The body of this UpdateDomainRequest.
         :rtype: :class:`huaweicloudsdklive.v1.LiveDomainModifyReq`
@@ -52,7 +52,7 @@ class UpdateDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainRequest.
+        r"""Sets the body of this UpdateDomainRequest.
 
         :param body: The body of this UpdateDomainRequest.
         :type body: :class:`huaweicloudsdklive.v1.LiveDomainModifyReq`

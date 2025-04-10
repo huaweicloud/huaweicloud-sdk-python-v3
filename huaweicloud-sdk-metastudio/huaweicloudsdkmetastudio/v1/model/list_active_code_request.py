@@ -31,7 +31,7 @@ class ListActiveCodeRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None):
-        """ListActiveCodeRequest
+        r"""ListActiveCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListActiveCodeRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListActiveCodeRequest.
+        r"""Gets the x_app_user_id of this ListActiveCodeRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -74,7 +74,7 @@ class ListActiveCodeRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListActiveCodeRequest.
+        r"""Sets the x_app_user_id of this ListActiveCodeRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -85,7 +85,7 @@ class ListActiveCodeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListActiveCodeRequest.
+        r"""Gets the offset of this ListActiveCodeRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -96,7 +96,7 @@ class ListActiveCodeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListActiveCodeRequest.
+        r"""Sets the offset of this ListActiveCodeRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -107,7 +107,7 @@ class ListActiveCodeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListActiveCodeRequest.
+        r"""Gets the limit of this ListActiveCodeRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListActiveCodeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListActiveCodeRequest.
+        r"""Sets the limit of this ListActiveCodeRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListActiveCodeRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ListActiveCodeRequest.
+        r"""Gets the robot_id of this ListActiveCodeRequest.
 
         应用ID。
 
@@ -140,7 +140,7 @@ class ListActiveCodeRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ListActiveCodeRequest.
+        r"""Sets the robot_id of this ListActiveCodeRequest.
 
         应用ID。
 

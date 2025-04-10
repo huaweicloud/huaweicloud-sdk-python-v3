@@ -27,7 +27,7 @@ class RevokeCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """RevokeCertificateAuthorityRequest
+        r"""RevokeCertificateAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RevokeCertificateAuthorityRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this RevokeCertificateAuthorityRequest.
+        r"""Gets the ca_id of this RevokeCertificateAuthorityRequest.
 
         所要吊销的子CA ID。
 
@@ -60,7 +60,7 @@ class RevokeCertificateAuthorityRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this RevokeCertificateAuthorityRequest.
+        r"""Sets the ca_id of this RevokeCertificateAuthorityRequest.
 
         所要吊销的子CA ID。
 
@@ -71,7 +71,7 @@ class RevokeCertificateAuthorityRequest:
 
     @property
     def body(self):
-        """Gets the body of this RevokeCertificateAuthorityRequest.
+        r"""Gets the body of this RevokeCertificateAuthorityRequest.
 
         :return: The body of this RevokeCertificateAuthorityRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`
@@ -80,7 +80,7 @@ class RevokeCertificateAuthorityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokeCertificateAuthorityRequest.
+        r"""Sets the body of this RevokeCertificateAuthorityRequest.
 
         :param body: The body of this RevokeCertificateAuthorityRequest.
         :type body: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`

@@ -26,7 +26,7 @@ class CreatePostgresqlDatabaseSchemaResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """CreatePostgresqlDatabaseSchemaResponse
+        r"""CreatePostgresqlDatabaseSchemaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePostgresqlDatabaseSchemaResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this CreatePostgresqlDatabaseSchemaResponse.
+        r"""Gets the resp of this CreatePostgresqlDatabaseSchemaResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class CreatePostgresqlDatabaseSchemaResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this CreatePostgresqlDatabaseSchemaResponse.
+        r"""Sets the resp of this CreatePostgresqlDatabaseSchemaResponse.
 
         操作结果。
 

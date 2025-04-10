@@ -29,7 +29,7 @@ class FindingType:
     }
 
     def __init__(self):
-        """FindingType
+        r"""FindingType
 
         The model defined in huaweicloud sdk
 

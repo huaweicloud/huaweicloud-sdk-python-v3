@@ -26,7 +26,7 @@ class ShowStackSetTemplateResponse(SdkResponse):
     }
 
     def __init__(self, location=None):
-        """ShowStackSetTemplateResponse
+        r"""ShowStackSetTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowStackSetTemplateResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowStackSetTemplateResponse.
+        r"""Gets the location of this ShowStackSetTemplateResponse.
 
         :return: The location of this ShowStackSetTemplateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowStackSetTemplateResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowStackSetTemplateResponse.
+        r"""Sets the location of this ShowStackSetTemplateResponse.
 
         :param location: The location of this ShowStackSetTemplateResponse.
         :type location: str

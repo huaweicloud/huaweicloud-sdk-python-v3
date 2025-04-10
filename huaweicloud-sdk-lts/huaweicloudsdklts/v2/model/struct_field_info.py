@@ -35,7 +35,7 @@ class StructFieldInfo:
     }
 
     def __init__(self, is_analysis=None, content=None, field_name=None, type=None, user_defined_name=None, index=None):
-        """StructFieldInfo
+        r"""StructFieldInfo
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class StructFieldInfo:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this StructFieldInfo.
+        r"""Gets the is_analysis of this StructFieldInfo.
 
         结构化方式
 
@@ -88,7 +88,7 @@ class StructFieldInfo:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this StructFieldInfo.
+        r"""Sets the is_analysis of this StructFieldInfo.
 
         结构化方式
 
@@ -99,7 +99,7 @@ class StructFieldInfo:
 
     @property
     def content(self):
-        """Gets the content of this StructFieldInfo.
+        r"""Gets the content of this StructFieldInfo.
 
         字段内容
 
@@ -110,7 +110,7 @@ class StructFieldInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this StructFieldInfo.
+        r"""Sets the content of this StructFieldInfo.
 
         字段内容
 
@@ -121,7 +121,7 @@ class StructFieldInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this StructFieldInfo.
+        r"""Gets the field_name of this StructFieldInfo.
 
         字段名称
 
@@ -132,7 +132,7 @@ class StructFieldInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this StructFieldInfo.
+        r"""Sets the field_name of this StructFieldInfo.
 
         字段名称
 
@@ -143,7 +143,7 @@ class StructFieldInfo:
 
     @property
     def type(self):
-        """Gets the type of this StructFieldInfo.
+        r"""Gets the type of this StructFieldInfo.
 
         字段数据类型,例：string，long，float
 
@@ -154,7 +154,7 @@ class StructFieldInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StructFieldInfo.
+        r"""Sets the type of this StructFieldInfo.
 
         字段数据类型,例：string，long，float
 
@@ -165,7 +165,7 @@ class StructFieldInfo:
 
     @property
     def user_defined_name(self):
-        """Gets the user_defined_name of this StructFieldInfo.
+        r"""Gets the user_defined_name of this StructFieldInfo.
 
         自定义别名(json方式中按需添加)
 
@@ -176,7 +176,7 @@ class StructFieldInfo:
 
     @user_defined_name.setter
     def user_defined_name(self, user_defined_name):
-        """Sets the user_defined_name of this StructFieldInfo.
+        r"""Sets the user_defined_name of this StructFieldInfo.
 
         自定义别名(json方式中按需添加)
 
@@ -187,7 +187,7 @@ class StructFieldInfo:
 
     @property
     def index(self):
-        """Gets the index of this StructFieldInfo.
+        r"""Gets the index of this StructFieldInfo.
 
         序号
 
@@ -198,7 +198,7 @@ class StructFieldInfo:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this StructFieldInfo.
+        r"""Sets the index of this StructFieldInfo.
 
         序号
 

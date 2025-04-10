@@ -27,7 +27,7 @@ class Location:
     }
 
     def __init__(self, path=None, span=None):
-        """Location
+        r"""Location
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Location:
 
     @property
     def path(self):
-        """Gets the path of this Location.
+        r"""Gets the path of this Location.
 
         策略中的路径，表示为路径元素的有序序列。
 
@@ -59,7 +59,7 @@ class Location:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Location.
+        r"""Sets the path of this Location.
 
         策略中的路径，表示为路径元素的有序序列。
 
@@ -70,7 +70,7 @@ class Location:
 
     @property
     def span(self):
-        """Gets the span of this Location.
+        r"""Gets the span of this Location.
 
         :return: The span of this Location.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Span`
@@ -79,7 +79,7 @@ class Location:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this Location.
+        r"""Sets the span of this Location.
 
         :param span: The span of this Location.
         :type span: :class:`huaweicloudsdkiamaccessanalyzer.v1.Span`

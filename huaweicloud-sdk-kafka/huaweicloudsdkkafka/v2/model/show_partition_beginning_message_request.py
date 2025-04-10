@@ -29,7 +29,7 @@ class ShowPartitionBeginningMessageRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, partition=None):
-        """ShowPartitionBeginningMessageRequest
+        r"""ShowPartitionBeginningMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowPartitionBeginningMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPartitionBeginningMessageRequest.
+        r"""Gets the instance_id of this ShowPartitionBeginningMessageRequest.
 
         实例ID。
 
@@ -65,7 +65,7 @@ class ShowPartitionBeginningMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPartitionBeginningMessageRequest.
+        r"""Sets the instance_id of this ShowPartitionBeginningMessageRequest.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class ShowPartitionBeginningMessageRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowPartitionBeginningMessageRequest.
+        r"""Gets the topic of this ShowPartitionBeginningMessageRequest.
 
         Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -87,7 +87,7 @@ class ShowPartitionBeginningMessageRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowPartitionBeginningMessageRequest.
+        r"""Sets the topic of this ShowPartitionBeginningMessageRequest.
 
         Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -98,7 +98,7 @@ class ShowPartitionBeginningMessageRequest:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowPartitionBeginningMessageRequest.
+        r"""Gets the partition of this ShowPartitionBeginningMessageRequest.
 
         分区编号。
 
@@ -109,7 +109,7 @@ class ShowPartitionBeginningMessageRequest:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowPartitionBeginningMessageRequest.
+        r"""Sets the partition of this ShowPartitionBeginningMessageRequest.
 
         分区编号。
 

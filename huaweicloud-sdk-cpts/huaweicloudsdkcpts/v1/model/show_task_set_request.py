@@ -29,7 +29,7 @@ class ShowTaskSetRequest:
     }
 
     def __init__(self, test_suite_id=None, offset=None, limit=None):
-        """ShowTaskSetRequest
+        r"""ShowTaskSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowTaskSetRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this ShowTaskSetRequest.
+        r"""Gets the test_suite_id of this ShowTaskSetRequest.
 
         测试工程id
 
@@ -67,7 +67,7 @@ class ShowTaskSetRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this ShowTaskSetRequest.
+        r"""Sets the test_suite_id of this ShowTaskSetRequest.
 
         测试工程id
 
@@ -78,7 +78,7 @@ class ShowTaskSetRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTaskSetRequest.
+        r"""Gets the offset of this ShowTaskSetRequest.
 
         查询偏移
 
@@ -89,7 +89,7 @@ class ShowTaskSetRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTaskSetRequest.
+        r"""Sets the offset of this ShowTaskSetRequest.
 
         查询偏移
 
@@ -100,7 +100,7 @@ class ShowTaskSetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTaskSetRequest.
+        r"""Gets the limit of this ShowTaskSetRequest.
 
         查询数量
 
@@ -111,7 +111,7 @@ class ShowTaskSetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTaskSetRequest.
+        r"""Sets the limit of this ShowTaskSetRequest.
 
         查询数量
 

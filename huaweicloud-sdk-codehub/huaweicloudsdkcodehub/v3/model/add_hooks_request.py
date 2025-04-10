@@ -29,7 +29,7 @@ class AddHooksRequest:
     }
 
     def __init__(self, group_name=None, repository_name=None, body=None):
-        """AddHooksRequest
+        r"""AddHooksRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddHooksRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this AddHooksRequest.
+        r"""Gets the group_name of this AddHooksRequest.
 
         组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -66,7 +66,7 @@ class AddHooksRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this AddHooksRequest.
+        r"""Sets the group_name of this AddHooksRequest.
 
         组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -77,7 +77,7 @@ class AddHooksRequest:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this AddHooksRequest.
+        r"""Gets the repository_name of this AddHooksRequest.
 
         仓库名
 
@@ -88,7 +88,7 @@ class AddHooksRequest:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this AddHooksRequest.
+        r"""Sets the repository_name of this AddHooksRequest.
 
         仓库名
 
@@ -99,7 +99,7 @@ class AddHooksRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddHooksRequest.
+        r"""Gets the body of this AddHooksRequest.
 
         :return: The body of this AddHooksRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`
@@ -108,7 +108,7 @@ class AddHooksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddHooksRequest.
+        r"""Sets the body of this AddHooksRequest.
 
         :param body: The body of this AddHooksRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`

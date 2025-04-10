@@ -27,7 +27,7 @@ class BackupStrategy:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """BackupStrategy
+        r"""BackupStrategy
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BackupStrategy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BackupStrategy.
+        r"""Gets the start_time of this BackupStrategy.
 
         备份时间段。自动备份将在该时间段内触发。 取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。   - HH取值必须比hh大1。   - mm和MM取值必须相同，且取值必须为00、15、30或45。
 
@@ -60,7 +60,7 @@ class BackupStrategy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BackupStrategy.
+        r"""Sets the start_time of this BackupStrategy.
 
         备份时间段。自动备份将在该时间段内触发。 取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。   - HH取值必须比hh大1。   - mm和MM取值必须相同，且取值必须为00、15、30或45。
 
@@ -71,7 +71,7 @@ class BackupStrategy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this BackupStrategy.
+        r"""Gets the keep_days of this BackupStrategy.
 
         指定已生成的备份文件可以保存的天数。 取值范围：0～732。   - 取0值，表示不设置自动备份策略。   - 不传该参数，默认开启自动备份策略，备份文件默认保存7天。
 
@@ -82,7 +82,7 @@ class BackupStrategy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this BackupStrategy.
+        r"""Sets the keep_days of this BackupStrategy.
 
         指定已生成的备份文件可以保存的天数。 取值范围：0～732。   - 取0值，表示不设置自动备份策略。   - 不传该参数，默认开启自动备份策略，备份文件默认保存7天。
 

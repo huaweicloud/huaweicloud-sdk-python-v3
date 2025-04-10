@@ -33,7 +33,7 @@ class BuildInfoParameters:
     }
 
     def __init__(self, build_cmd=None, dockerfile_path=None, artifact_namespace=None, cluster_id=None, node_label_selector=None):
-        """BuildInfoParameters
+        r"""BuildInfoParameters
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BuildInfoParameters:
 
     @property
     def build_cmd(self):
-        """Gets the build_cmd of this BuildInfoParameters.
+        r"""Gets the build_cmd of this BuildInfoParameters.
 
         编译命令。默认：  1、根目录存在build.sh：./build.sh  2、根据运行系统，示例如下：  Java和Tomcat：mvn clean package  Nodejs: npm build 
 
@@ -82,7 +82,7 @@ class BuildInfoParameters:
 
     @build_cmd.setter
     def build_cmd(self, build_cmd):
-        """Sets the build_cmd of this BuildInfoParameters.
+        r"""Sets the build_cmd of this BuildInfoParameters.
 
         编译命令。默认：  1、根目录存在build.sh：./build.sh  2、根据运行系统，示例如下：  Java和Tomcat：mvn clean package  Nodejs: npm build 
 
@@ -93,7 +93,7 @@ class BuildInfoParameters:
 
     @property
     def dockerfile_path(self):
-        """Gets the dockerfile_path of this BuildInfoParameters.
+        r"""Gets the dockerfile_path of this BuildInfoParameters.
 
         dockerfile地址。默认是根目录./。
 
@@ -104,7 +104,7 @@ class BuildInfoParameters:
 
     @dockerfile_path.setter
     def dockerfile_path(self, dockerfile_path):
-        """Sets the dockerfile_path of this BuildInfoParameters.
+        r"""Sets the dockerfile_path of this BuildInfoParameters.
 
         dockerfile地址。默认是根目录./。
 
@@ -115,7 +115,7 @@ class BuildInfoParameters:
 
     @property
     def artifact_namespace(self):
-        """Gets the artifact_namespace of this BuildInfoParameters.
+        r"""Gets the artifact_namespace of this BuildInfoParameters.
 
         构建归档组织，默认cas_{project_id}。
 
@@ -126,7 +126,7 @@ class BuildInfoParameters:
 
     @artifact_namespace.setter
     def artifact_namespace(self, artifact_namespace):
-        """Sets the artifact_namespace of this BuildInfoParameters.
+        r"""Sets the artifact_namespace of this BuildInfoParameters.
 
         构建归档组织，默认cas_{project_id}。
 
@@ -137,7 +137,7 @@ class BuildInfoParameters:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BuildInfoParameters.
+        r"""Gets the cluster_id of this BuildInfoParameters.
 
         指定构建集群的id。
 
@@ -148,7 +148,7 @@ class BuildInfoParameters:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BuildInfoParameters.
+        r"""Sets the cluster_id of this BuildInfoParameters.
 
         指定构建集群的id。
 
@@ -159,7 +159,7 @@ class BuildInfoParameters:
 
     @property
     def node_label_selector(self):
-        """Gets the node_label_selector of this BuildInfoParameters.
+        r"""Gets the node_label_selector of this BuildInfoParameters.
 
         key是标签的键，value是标签的值。
 
@@ -170,7 +170,7 @@ class BuildInfoParameters:
 
     @node_label_selector.setter
     def node_label_selector(self, node_label_selector):
-        """Sets the node_label_selector of this BuildInfoParameters.
+        r"""Sets the node_label_selector of this BuildInfoParameters.
 
         key是标签的键，value是标签的值。
 

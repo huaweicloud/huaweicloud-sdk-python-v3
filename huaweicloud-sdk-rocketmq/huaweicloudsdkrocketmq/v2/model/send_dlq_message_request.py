@@ -29,7 +29,7 @@ class SendDlqMessageRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, body=None):
-        """SendDlqMessageRequest
+        r"""SendDlqMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SendDlqMessageRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this SendDlqMessageRequest.
+        r"""Gets the engine of this SendDlqMessageRequest.
 
         消息引擎。
 
@@ -66,7 +66,7 @@ class SendDlqMessageRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this SendDlqMessageRequest.
+        r"""Sets the engine of this SendDlqMessageRequest.
 
         消息引擎。
 
@@ -77,7 +77,7 @@ class SendDlqMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SendDlqMessageRequest.
+        r"""Gets the instance_id of this SendDlqMessageRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class SendDlqMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SendDlqMessageRequest.
+        r"""Sets the instance_id of this SendDlqMessageRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class SendDlqMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendDlqMessageRequest.
+        r"""Gets the body of this SendDlqMessageRequest.
 
         :return: The body of this SendDlqMessageRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.DeadletterResendReq`
@@ -108,7 +108,7 @@ class SendDlqMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendDlqMessageRequest.
+        r"""Sets the body of this SendDlqMessageRequest.
 
         :param body: The body of this SendDlqMessageRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.DeadletterResendReq`

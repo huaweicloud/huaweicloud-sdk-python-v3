@@ -27,7 +27,7 @@ class EnableCertificateAuthorityCrlRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """EnableCertificateAuthorityCrlRequest
+        r"""EnableCertificateAuthorityCrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EnableCertificateAuthorityCrlRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this EnableCertificateAuthorityCrlRequest.
+        r"""Gets the ca_id of this EnableCertificateAuthorityCrlRequest.
 
         所要启用CRL的CA证书ID。
 
@@ -60,7 +60,7 @@ class EnableCertificateAuthorityCrlRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this EnableCertificateAuthorityCrlRequest.
+        r"""Sets the ca_id of this EnableCertificateAuthorityCrlRequest.
 
         所要启用CRL的CA证书ID。
 
@@ -71,7 +71,7 @@ class EnableCertificateAuthorityCrlRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableCertificateAuthorityCrlRequest.
+        r"""Gets the body of this EnableCertificateAuthorityCrlRequest.
 
         :return: The body of this EnableCertificateAuthorityCrlRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlRequestBody`
@@ -80,7 +80,7 @@ class EnableCertificateAuthorityCrlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableCertificateAuthorityCrlRequest.
+        r"""Sets the body of this EnableCertificateAuthorityCrlRequest.
 
         :param body: The body of this EnableCertificateAuthorityCrlRequest.
         :type body: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlRequestBody`

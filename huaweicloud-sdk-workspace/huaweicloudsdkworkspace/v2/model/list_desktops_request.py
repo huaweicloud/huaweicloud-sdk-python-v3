@@ -53,7 +53,7 @@ class ListDesktopsRequest:
     }
 
     def __init__(self, user_name=None, computer_name=None, desktop_ip=None, sids=None, offset=None, limit=None, site_id=None, pool_id=None, enterprise_project_id=None, desktop_type=None, is_share_desktop=None, subnet_id=None, status=None, desktop_id=None, tag=None):
-        """ListDesktopsRequest
+        r"""ListDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListDesktopsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListDesktopsRequest.
+        r"""Gets the user_name of this ListDesktopsRequest.
 
         桌面所属用户。
 
@@ -152,7 +152,7 @@ class ListDesktopsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListDesktopsRequest.
+        r"""Sets the user_name of this ListDesktopsRequest.
 
         桌面所属用户。
 
@@ -163,7 +163,7 @@ class ListDesktopsRequest:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ListDesktopsRequest.
+        r"""Gets the computer_name of this ListDesktopsRequest.
 
         桌面名。
 
@@ -174,7 +174,7 @@ class ListDesktopsRequest:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ListDesktopsRequest.
+        r"""Sets the computer_name of this ListDesktopsRequest.
 
         桌面名。
 
@@ -185,7 +185,7 @@ class ListDesktopsRequest:
 
     @property
     def desktop_ip(self):
-        """Gets the desktop_ip of this ListDesktopsRequest.
+        r"""Gets the desktop_ip of this ListDesktopsRequest.
 
         桌面IP地址。
 
@@ -196,7 +196,7 @@ class ListDesktopsRequest:
 
     @desktop_ip.setter
     def desktop_ip(self, desktop_ip):
-        """Sets the desktop_ip of this ListDesktopsRequest.
+        r"""Sets the desktop_ip of this ListDesktopsRequest.
 
         桌面IP地址。
 
@@ -207,7 +207,7 @@ class ListDesktopsRequest:
 
     @property
     def sids(self):
-        """Gets the sids of this ListDesktopsRequest.
+        r"""Gets the sids of this ListDesktopsRequest.
 
         桌面的sid列表，一次只能查询20个sid。
 
@@ -218,7 +218,7 @@ class ListDesktopsRequest:
 
     @sids.setter
     def sids(self, sids):
-        """Sets the sids of this ListDesktopsRequest.
+        r"""Sets the sids of this ListDesktopsRequest.
 
         桌面的sid列表，一次只能查询20个sid。
 
@@ -229,7 +229,7 @@ class ListDesktopsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopsRequest.
+        r"""Gets the offset of this ListDesktopsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -240,7 +240,7 @@ class ListDesktopsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopsRequest.
+        r"""Sets the offset of this ListDesktopsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -251,7 +251,7 @@ class ListDesktopsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopsRequest.
+        r"""Gets the limit of this ListDesktopsRequest.
 
         用于分页查询，取值范围0-1000，默认值1000。
 
@@ -262,7 +262,7 @@ class ListDesktopsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopsRequest.
+        r"""Sets the limit of this ListDesktopsRequest.
 
         用于分页查询，取值范围0-1000，默认值1000。
 
@@ -273,7 +273,7 @@ class ListDesktopsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListDesktopsRequest.
+        r"""Gets the site_id of this ListDesktopsRequest.
 
         用于筛选指定站点下的桌面列表
 
@@ -284,7 +284,7 @@ class ListDesktopsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListDesktopsRequest.
+        r"""Sets the site_id of this ListDesktopsRequest.
 
         用于筛选指定站点下的桌面列表
 
@@ -295,7 +295,7 @@ class ListDesktopsRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ListDesktopsRequest.
+        r"""Gets the pool_id of this ListDesktopsRequest.
 
         桌面池ID,多个桌面池ID用逗号隔开。
 
@@ -306,7 +306,7 @@ class ListDesktopsRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ListDesktopsRequest.
+        r"""Sets the pool_id of this ListDesktopsRequest.
 
         桌面池ID,多个桌面池ID用逗号隔开。
 
@@ -317,7 +317,7 @@ class ListDesktopsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDesktopsRequest.
+        r"""Gets the enterprise_project_id of this ListDesktopsRequest.
 
         企业项目ID
 
@@ -328,7 +328,7 @@ class ListDesktopsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDesktopsRequest.
+        r"""Sets the enterprise_project_id of this ListDesktopsRequest.
 
         企业项目ID
 
@@ -339,7 +339,7 @@ class ListDesktopsRequest:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this ListDesktopsRequest.
+        r"""Gets the desktop_type of this ListDesktopsRequest.
 
         桌面类型，为空时查所有桌面。查询多个类型时用,隔开。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等。 - SHARED: 多用户共享桌面。
 
@@ -350,7 +350,7 @@ class ListDesktopsRequest:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this ListDesktopsRequest.
+        r"""Sets the desktop_type of this ListDesktopsRequest.
 
         桌面类型，为空时查所有桌面。查询多个类型时用,隔开。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等。 - SHARED: 多用户共享桌面。
 
@@ -361,7 +361,7 @@ class ListDesktopsRequest:
 
     @property
     def is_share_desktop(self):
-        """Gets the is_share_desktop of this ListDesktopsRequest.
+        r"""Gets the is_share_desktop of this ListDesktopsRequest.
 
         是否为协同桌面
 
@@ -372,7 +372,7 @@ class ListDesktopsRequest:
 
     @is_share_desktop.setter
     def is_share_desktop(self, is_share_desktop):
-        """Sets the is_share_desktop of this ListDesktopsRequest.
+        r"""Sets the is_share_desktop of this ListDesktopsRequest.
 
         是否为协同桌面
 
@@ -383,7 +383,7 @@ class ListDesktopsRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListDesktopsRequest.
+        r"""Gets the subnet_id of this ListDesktopsRequest.
 
         桌面的子网ID。
 
@@ -394,7 +394,7 @@ class ListDesktopsRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListDesktopsRequest.
+        r"""Sets the subnet_id of this ListDesktopsRequest.
 
         桌面的子网ID。
 
@@ -405,7 +405,7 @@ class ListDesktopsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDesktopsRequest.
+        r"""Gets the status of this ListDesktopsRequest.
 
         桌面的运行状态。
 
@@ -416,7 +416,7 @@ class ListDesktopsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDesktopsRequest.
+        r"""Sets the status of this ListDesktopsRequest.
 
         桌面的运行状态。
 
@@ -427,7 +427,7 @@ class ListDesktopsRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListDesktopsRequest.
+        r"""Gets the desktop_id of this ListDesktopsRequest.
 
         桌面id，当前最多支持100个桌面id进行查询。
 
@@ -438,7 +438,7 @@ class ListDesktopsRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListDesktopsRequest.
+        r"""Sets the desktop_id of this ListDesktopsRequest.
 
         桌面id，当前最多支持100个桌面id进行查询。
 
@@ -449,7 +449,7 @@ class ListDesktopsRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListDesktopsRequest.
+        r"""Gets the tag of this ListDesktopsRequest.
 
         桌面的标签。样例： - key1=value1。 - key1=value1，key2=value2。
 
@@ -460,7 +460,7 @@ class ListDesktopsRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListDesktopsRequest.
+        r"""Sets the tag of this ListDesktopsRequest.
 
         桌面的标签。样例： - key1=value1。 - key1=value1，key2=value2。
 

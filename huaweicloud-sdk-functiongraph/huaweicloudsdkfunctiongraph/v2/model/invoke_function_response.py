@@ -34,7 +34,7 @@ class InvokeFunctionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, result=None, log=None, status=None, x_cff_request_id=None):
-        """InvokeFunctionResponse
+        r"""InvokeFunctionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this InvokeFunctionResponse.
+        r"""Gets the request_id of this InvokeFunctionResponse.
 
         请求ID。
 
@@ -83,7 +83,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this InvokeFunctionResponse.
+        r"""Sets the request_id of this InvokeFunctionResponse.
 
         请求ID。
 
@@ -94,7 +94,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this InvokeFunctionResponse.
+        r"""Gets the result of this InvokeFunctionResponse.
 
         函数执行结果
 
@@ -105,7 +105,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this InvokeFunctionResponse.
+        r"""Sets the result of this InvokeFunctionResponse.
 
         函数执行结果
 
@@ -116,7 +116,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @property
     def log(self):
-        """Gets the log of this InvokeFunctionResponse.
+        r"""Gets the log of this InvokeFunctionResponse.
 
         函数执行返回日志
 
@@ -127,7 +127,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @log.setter
     def log(self, log):
-        """Sets the log of this InvokeFunctionResponse.
+        r"""Sets the log of this InvokeFunctionResponse.
 
         函数执行返回日志
 
@@ -138,7 +138,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this InvokeFunctionResponse.
+        r"""Gets the status of this InvokeFunctionResponse.
 
         函数执行返回状态
 
@@ -149,7 +149,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InvokeFunctionResponse.
+        r"""Sets the status of this InvokeFunctionResponse.
 
         函数执行返回状态
 
@@ -160,7 +160,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @property
     def x_cff_request_id(self):
-        """Gets the x_cff_request_id of this InvokeFunctionResponse.
+        r"""Gets the x_cff_request_id of this InvokeFunctionResponse.
 
         :return: The x_cff_request_id of this InvokeFunctionResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class InvokeFunctionResponse(SdkResponse):
 
     @x_cff_request_id.setter
     def x_cff_request_id(self, x_cff_request_id):
-        """Sets the x_cff_request_id of this InvokeFunctionResponse.
+        r"""Sets the x_cff_request_id of this InvokeFunctionResponse.
 
         :param x_cff_request_id: The x_cff_request_id of this InvokeFunctionResponse.
         :type x_cff_request_id: str

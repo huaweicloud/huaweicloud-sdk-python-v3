@@ -25,7 +25,7 @@ class UpdateKnowledgeQuestionReq:
     }
 
     def __init__(self, question=None):
-        """UpdateKnowledgeQuestionReq
+        r"""UpdateKnowledgeQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateKnowledgeQuestionReq:
 
     @property
     def question(self):
-        """Gets the question of this UpdateKnowledgeQuestionReq.
+        r"""Gets the question of this UpdateKnowledgeQuestionReq.
 
         问法。
 
@@ -54,7 +54,7 @@ class UpdateKnowledgeQuestionReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this UpdateKnowledgeQuestionReq.
+        r"""Sets the question of this UpdateKnowledgeQuestionReq.
 
         问法。
 

@@ -43,7 +43,7 @@ class DirectoryTreeResp:
     }
 
     def __init__(self, parent_directory_id=None, directory_name=None, category_type=None, directory_id=None, paging=None, offset=None, limit=None, count=None, elements=None, sub_directories=None):
-        """DirectoryTreeResp
+        r"""DirectoryTreeResp
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class DirectoryTreeResp:
 
     @property
     def parent_directory_id(self):
-        """Gets the parent_directory_id of this DirectoryTreeResp.
+        r"""Gets the parent_directory_id of this DirectoryTreeResp.
 
         :return: The parent_directory_id of this DirectoryTreeResp.
         :rtype: str
@@ -115,7 +115,7 @@ class DirectoryTreeResp:
 
     @parent_directory_id.setter
     def parent_directory_id(self, parent_directory_id):
-        """Sets the parent_directory_id of this DirectoryTreeResp.
+        r"""Sets the parent_directory_id of this DirectoryTreeResp.
 
         :param parent_directory_id: The parent_directory_id of this DirectoryTreeResp.
         :type parent_directory_id: str
@@ -124,7 +124,7 @@ class DirectoryTreeResp:
 
     @property
     def directory_name(self):
-        """Gets the directory_name of this DirectoryTreeResp.
+        r"""Gets the directory_name of this DirectoryTreeResp.
 
         :return: The directory_name of this DirectoryTreeResp.
         :rtype: str
@@ -133,7 +133,7 @@ class DirectoryTreeResp:
 
     @directory_name.setter
     def directory_name(self, directory_name):
-        """Sets the directory_name of this DirectoryTreeResp.
+        r"""Sets the directory_name of this DirectoryTreeResp.
 
         :param directory_name: The directory_name of this DirectoryTreeResp.
         :type directory_name: str
@@ -142,7 +142,7 @@ class DirectoryTreeResp:
 
     @property
     def category_type(self):
-        """Gets the category_type of this DirectoryTreeResp.
+        r"""Gets the category_type of this DirectoryTreeResp.
 
         :return: The category_type of this DirectoryTreeResp.
         :rtype: str
@@ -151,7 +151,7 @@ class DirectoryTreeResp:
 
     @category_type.setter
     def category_type(self, category_type):
-        """Sets the category_type of this DirectoryTreeResp.
+        r"""Sets the category_type of this DirectoryTreeResp.
 
         :param category_type: The category_type of this DirectoryTreeResp.
         :type category_type: str
@@ -160,7 +160,7 @@ class DirectoryTreeResp:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this DirectoryTreeResp.
+        r"""Gets the directory_id of this DirectoryTreeResp.
 
         :return: The directory_id of this DirectoryTreeResp.
         :rtype: str
@@ -169,7 +169,7 @@ class DirectoryTreeResp:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this DirectoryTreeResp.
+        r"""Sets the directory_id of this DirectoryTreeResp.
 
         :param directory_id: The directory_id of this DirectoryTreeResp.
         :type directory_id: str
@@ -178,7 +178,7 @@ class DirectoryTreeResp:
 
     @property
     def paging(self):
-        """Gets the paging of this DirectoryTreeResp.
+        r"""Gets the paging of this DirectoryTreeResp.
 
         :return: The paging of this DirectoryTreeResp.
         :rtype: bool
@@ -187,7 +187,7 @@ class DirectoryTreeResp:
 
     @paging.setter
     def paging(self, paging):
-        """Sets the paging of this DirectoryTreeResp.
+        r"""Sets the paging of this DirectoryTreeResp.
 
         :param paging: The paging of this DirectoryTreeResp.
         :type paging: bool
@@ -196,7 +196,7 @@ class DirectoryTreeResp:
 
     @property
     def offset(self):
-        """Gets the offset of this DirectoryTreeResp.
+        r"""Gets the offset of this DirectoryTreeResp.
 
         :return: The offset of this DirectoryTreeResp.
         :rtype: int
@@ -205,7 +205,7 @@ class DirectoryTreeResp:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this DirectoryTreeResp.
+        r"""Sets the offset of this DirectoryTreeResp.
 
         :param offset: The offset of this DirectoryTreeResp.
         :type offset: int
@@ -214,7 +214,7 @@ class DirectoryTreeResp:
 
     @property
     def limit(self):
-        """Gets the limit of this DirectoryTreeResp.
+        r"""Gets the limit of this DirectoryTreeResp.
 
         :return: The limit of this DirectoryTreeResp.
         :rtype: int
@@ -223,7 +223,7 @@ class DirectoryTreeResp:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this DirectoryTreeResp.
+        r"""Sets the limit of this DirectoryTreeResp.
 
         :param limit: The limit of this DirectoryTreeResp.
         :type limit: int
@@ -232,7 +232,7 @@ class DirectoryTreeResp:
 
     @property
     def count(self):
-        """Gets the count of this DirectoryTreeResp.
+        r"""Gets the count of this DirectoryTreeResp.
 
         :return: The count of this DirectoryTreeResp.
         :rtype: int
@@ -241,7 +241,7 @@ class DirectoryTreeResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DirectoryTreeResp.
+        r"""Sets the count of this DirectoryTreeResp.
 
         :param count: The count of this DirectoryTreeResp.
         :type count: int
@@ -250,7 +250,7 @@ class DirectoryTreeResp:
 
     @property
     def elements(self):
-        """Gets the elements of this DirectoryTreeResp.
+        r"""Gets the elements of this DirectoryTreeResp.
 
         :return: The elements of this DirectoryTreeResp.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.TreeNodeElement`]
@@ -259,7 +259,7 @@ class DirectoryTreeResp:
 
     @elements.setter
     def elements(self, elements):
-        """Sets the elements of this DirectoryTreeResp.
+        r"""Sets the elements of this DirectoryTreeResp.
 
         :param elements: The elements of this DirectoryTreeResp.
         :type elements: list[:class:`huaweicloudsdkdlf.v1.TreeNodeElement`]
@@ -268,7 +268,7 @@ class DirectoryTreeResp:
 
     @property
     def sub_directories(self):
-        """Gets the sub_directories of this DirectoryTreeResp.
+        r"""Gets the sub_directories of this DirectoryTreeResp.
 
         :return: The sub_directories of this DirectoryTreeResp.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.DirectoryTreeResp`]
@@ -277,7 +277,7 @@ class DirectoryTreeResp:
 
     @sub_directories.setter
     def sub_directories(self, sub_directories):
-        """Sets the sub_directories of this DirectoryTreeResp.
+        r"""Sets the sub_directories of this DirectoryTreeResp.
 
         :param sub_directories: The sub_directories of this DirectoryTreeResp.
         :type sub_directories: list[:class:`huaweicloudsdkdlf.v1.DirectoryTreeResp`]

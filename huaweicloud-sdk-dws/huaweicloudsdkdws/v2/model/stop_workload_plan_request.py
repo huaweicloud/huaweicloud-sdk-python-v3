@@ -27,7 +27,7 @@ class StopWorkloadPlanRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None):
-        """StopWorkloadPlanRequest
+        r"""StopWorkloadPlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StopWorkloadPlanRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopWorkloadPlanRequest.
+        r"""Gets the cluster_id of this StopWorkloadPlanRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class StopWorkloadPlanRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopWorkloadPlanRequest.
+        r"""Sets the cluster_id of this StopWorkloadPlanRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class StopWorkloadPlanRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this StopWorkloadPlanRequest.
+        r"""Gets the plan_id of this StopWorkloadPlanRequest.
 
         计划ID
 
@@ -81,7 +81,7 @@ class StopWorkloadPlanRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this StopWorkloadPlanRequest.
+        r"""Sets the plan_id of this StopWorkloadPlanRequest.
 
         计划ID
 

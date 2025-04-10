@@ -27,7 +27,7 @@ class UpdateFirewallRulesRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """UpdateFirewallRulesRequest
+        r"""UpdateFirewallRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFirewallRulesRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this UpdateFirewallRulesRequest.
+        r"""Gets the firewall_id of this UpdateFirewallRulesRequest.
 
         网络ACL唯一标识
 
@@ -60,7 +60,7 @@ class UpdateFirewallRulesRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this UpdateFirewallRulesRequest.
+        r"""Sets the firewall_id of this UpdateFirewallRulesRequest.
 
         网络ACL唯一标识
 
@@ -71,7 +71,7 @@ class UpdateFirewallRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFirewallRulesRequest.
+        r"""Gets the body of this UpdateFirewallRulesRequest.
 
         :return: The body of this UpdateFirewallRulesRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRulesRequestBody`
@@ -80,7 +80,7 @@ class UpdateFirewallRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFirewallRulesRequest.
+        r"""Sets the body of this UpdateFirewallRulesRequest.
 
         :param body: The body of this UpdateFirewallRulesRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRulesRequestBody`

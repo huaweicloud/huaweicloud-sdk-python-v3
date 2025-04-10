@@ -27,7 +27,7 @@ class QosCpuInfo:
     }
 
     def __init__(self, client_cpu_max=None, system_cpu_max=None):
-        """QosCpuInfo
+        r"""QosCpuInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QosCpuInfo:
 
     @property
     def client_cpu_max(self):
-        """Gets the client_cpu_max of this QosCpuInfo.
+        r"""Gets the client_cpu_max of this QosCpuInfo.
 
         App最大CPU使用率。
 
@@ -61,7 +61,7 @@ class QosCpuInfo:
 
     @client_cpu_max.setter
     def client_cpu_max(self, client_cpu_max):
-        """Sets the client_cpu_max of this QosCpuInfo.
+        r"""Sets the client_cpu_max of this QosCpuInfo.
 
         App最大CPU使用率。
 
@@ -72,7 +72,7 @@ class QosCpuInfo:
 
     @property
     def system_cpu_max(self):
-        """Gets the system_cpu_max of this QosCpuInfo.
+        r"""Gets the system_cpu_max of this QosCpuInfo.
 
         系统最大CPU使用率。
 
@@ -83,7 +83,7 @@ class QosCpuInfo:
 
     @system_cpu_max.setter
     def system_cpu_max(self, system_cpu_max):
-        """Sets the system_cpu_max of this QosCpuInfo.
+        r"""Sets the system_cpu_max of this QosCpuInfo.
 
         系统最大CPU使用率。
 

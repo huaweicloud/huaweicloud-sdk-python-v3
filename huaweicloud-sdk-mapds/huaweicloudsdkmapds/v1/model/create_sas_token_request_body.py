@@ -27,7 +27,7 @@ class CreateSasTokenRequestBody:
     }
 
     def __init__(self, keytype=None, expiry=None):
-        """CreateSasTokenRequestBody
+        r"""CreateSasTokenRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateSasTokenRequestBody:
 
     @property
     def keytype(self):
-        """Gets the keytype of this CreateSasTokenRequestBody.
+        r"""Gets the keytype of this CreateSasTokenRequestBody.
 
         用于为用户生成令牌的密钥  取值为primary或者secondary  每个用户只有2个apikey，primary的原则就是对比apiKey时间最早的那个。  如果只有一个apikey，primary和secondary都指同一个apiKey
 
@@ -59,7 +59,7 @@ class CreateSasTokenRequestBody:
 
     @keytype.setter
     def keytype(self, keytype):
-        """Sets the keytype of this CreateSasTokenRequestBody.
+        r"""Sets the keytype of this CreateSasTokenRequestBody.
 
         用于为用户生成令牌的密钥  取值为primary或者secondary  每个用户只有2个apikey，primary的原则就是对比apiKey时间最早的那个。  如果只有一个apikey，primary和secondary都指同一个apiKey
 
@@ -70,7 +70,7 @@ class CreateSasTokenRequestBody:
 
     @property
     def expiry(self):
-        """Gets the expiry of this CreateSasTokenRequestBody.
+        r"""Gets the expiry of this CreateSasTokenRequestBody.
 
         令牌到期UTC时间，格式如：2019-04-21T00:44:24Z   日期符合以下格式： yyyy-MM-ddTHH:mm:ssZ 由 ISO 8601 标准指定。  最小值不小于15min，最大值不超过24h
 
@@ -81,7 +81,7 @@ class CreateSasTokenRequestBody:
 
     @expiry.setter
     def expiry(self, expiry):
-        """Sets the expiry of this CreateSasTokenRequestBody.
+        r"""Sets the expiry of this CreateSasTokenRequestBody.
 
         令牌到期UTC时间，格式如：2019-04-21T00:44:24Z   日期符合以下格式： yyyy-MM-ddTHH:mm:ssZ 由 ISO 8601 标准指定。  最小值不小于15min，最大值不超过24h
 

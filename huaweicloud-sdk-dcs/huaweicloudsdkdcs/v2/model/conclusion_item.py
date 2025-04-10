@@ -27,7 +27,7 @@ class ConclusionItem:
     }
 
     def __init__(self, id=None, params=None):
-        """ConclusionItem
+        r"""ConclusionItem
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ConclusionItem:
 
     @property
     def id(self):
-        """Gets the id of this ConclusionItem.
+        r"""Gets the id of this ConclusionItem.
 
         结论id
 
@@ -60,7 +60,7 @@ class ConclusionItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConclusionItem.
+        r"""Sets the id of this ConclusionItem.
 
         结论id
 
@@ -71,7 +71,7 @@ class ConclusionItem:
 
     @property
     def params(self):
-        """Gets the params of this ConclusionItem.
+        r"""Gets the params of this ConclusionItem.
 
         结论参数
 
@@ -82,7 +82,7 @@ class ConclusionItem:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ConclusionItem.
+        r"""Sets the params of this ConclusionItem.
 
         结论参数
 

@@ -37,7 +37,7 @@ class ListVpnConnectionsRequest:
     }
 
     def __init__(self, vpn_id=None, eip_id=None, vgw_ip=None, vgw_id=None, enterprise_project_id=None, limit=None, marker=None):
-        """ListVpnConnectionsRequest
+        r"""ListVpnConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def vpn_id(self):
-        """Gets the vpn_id of this ListVpnConnectionsRequest.
+        r"""Gets the vpn_id of this ListVpnConnectionsRequest.
 
         VPN ID
 
@@ -96,7 +96,7 @@ class ListVpnConnectionsRequest:
 
     @vpn_id.setter
     def vpn_id(self, vpn_id):
-        """Sets the vpn_id of this ListVpnConnectionsRequest.
+        r"""Sets the vpn_id of this ListVpnConnectionsRequest.
 
         VPN ID
 
@@ -107,7 +107,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this ListVpnConnectionsRequest.
+        r"""Gets the eip_id of this ListVpnConnectionsRequest.
 
         Eip ID
 
@@ -118,7 +118,7 @@ class ListVpnConnectionsRequest:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this ListVpnConnectionsRequest.
+        r"""Sets the eip_id of this ListVpnConnectionsRequest.
 
         Eip ID
 
@@ -129,7 +129,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def vgw_ip(self):
-        """Gets the vgw_ip of this ListVpnConnectionsRequest.
+        r"""Gets the vgw_ip of this ListVpnConnectionsRequest.
 
         VGW IP
 
@@ -140,7 +140,7 @@ class ListVpnConnectionsRequest:
 
     @vgw_ip.setter
     def vgw_ip(self, vgw_ip):
-        """Sets the vgw_ip of this ListVpnConnectionsRequest.
+        r"""Sets the vgw_ip of this ListVpnConnectionsRequest.
 
         VGW IP
 
@@ -151,7 +151,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this ListVpnConnectionsRequest.
+        r"""Gets the vgw_id of this ListVpnConnectionsRequest.
 
         vgw ID
 
@@ -162,7 +162,7 @@ class ListVpnConnectionsRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this ListVpnConnectionsRequest.
+        r"""Sets the vgw_id of this ListVpnConnectionsRequest.
 
         vgw ID
 
@@ -173,7 +173,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVpnConnectionsRequest.
+        r"""Gets the enterprise_project_id of this ListVpnConnectionsRequest.
 
         企业项目id
 
@@ -184,7 +184,7 @@ class ListVpnConnectionsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVpnConnectionsRequest.
+        r"""Sets the enterprise_project_id of this ListVpnConnectionsRequest.
 
         企业项目id
 
@@ -195,7 +195,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpnConnectionsRequest.
+        r"""Gets the limit of this ListVpnConnectionsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -206,7 +206,7 @@ class ListVpnConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpnConnectionsRequest.
+        r"""Sets the limit of this ListVpnConnectionsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -217,7 +217,7 @@ class ListVpnConnectionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpnConnectionsRequest.
+        r"""Gets the marker of this ListVpnConnectionsRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -228,7 +228,7 @@ class ListVpnConnectionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpnConnectionsRequest.
+        r"""Sets the marker of this ListVpnConnectionsRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 

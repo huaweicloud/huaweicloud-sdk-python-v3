@@ -30,7 +30,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, bound_domains=None):
-        """ListAttachedDomainsV2Response
+        r"""ListAttachedDomainsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListAttachedDomainsV2Response.
+        r"""Gets the size of this ListAttachedDomainsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAttachedDomainsV2Response.
+        r"""Sets the size of this ListAttachedDomainsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAttachedDomainsV2Response.
+        r"""Gets the total of this ListAttachedDomainsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAttachedDomainsV2Response.
+        r"""Sets the total of this ListAttachedDomainsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
 
     @property
     def bound_domains(self):
-        """Gets the bound_domains of this ListAttachedDomainsV2Response.
+        r"""Gets the bound_domains of this ListAttachedDomainsV2Response.
 
         已绑定域名集合
 
@@ -111,7 +111,7 @@ class ListAttachedDomainsV2Response(SdkResponse):
 
     @bound_domains.setter
     def bound_domains(self, bound_domains):
-        """Sets the bound_domains of this ListAttachedDomainsV2Response.
+        r"""Sets the bound_domains of this ListAttachedDomainsV2Response.
 
         已绑定域名集合
 

@@ -27,7 +27,7 @@ class DevelopImageType:
     }
 
     def __init__(self):
-        """DevelopImageType
+        r"""DevelopImageType
 
         The model defined in huaweicloud sdk
 

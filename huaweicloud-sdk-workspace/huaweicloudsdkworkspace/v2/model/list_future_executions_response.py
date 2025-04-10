@@ -26,7 +26,7 @@ class ListFutureExecutionsResponse(SdkResponse):
     }
 
     def __init__(self, future_executions=None):
-        """ListFutureExecutionsResponse
+        r"""ListFutureExecutionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFutureExecutionsResponse(SdkResponse):
 
     @property
     def future_executions(self):
-        """Gets the future_executions of this ListFutureExecutionsResponse.
+        r"""Gets the future_executions of this ListFutureExecutionsResponse.
 
         未来执行的具体时间列表。
 
@@ -55,7 +55,7 @@ class ListFutureExecutionsResponse(SdkResponse):
 
     @future_executions.setter
     def future_executions(self, future_executions):
-        """Sets the future_executions of this ListFutureExecutionsResponse.
+        r"""Sets the future_executions of this ListFutureExecutionsResponse.
 
         未来执行的具体时间列表。
 

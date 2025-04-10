@@ -25,7 +25,7 @@ class ExecuteComposeVideoRequest:
     }
 
     def __init__(self, video_id=None):
-        """ExecuteComposeVideoRequest
+        r"""ExecuteComposeVideoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteComposeVideoRequest:
 
     @property
     def video_id(self):
-        """Gets the video_id of this ExecuteComposeVideoRequest.
+        r"""Gets the video_id of this ExecuteComposeVideoRequest.
 
         视频id
 
@@ -53,7 +53,7 @@ class ExecuteComposeVideoRequest:
 
     @video_id.setter
     def video_id(self, video_id):
-        """Sets the video_id of this ExecuteComposeVideoRequest.
+        r"""Sets the video_id of this ExecuteComposeVideoRequest.
 
         视频id
 

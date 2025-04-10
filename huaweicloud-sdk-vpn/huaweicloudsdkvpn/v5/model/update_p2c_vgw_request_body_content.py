@@ -27,7 +27,7 @@ class UpdateP2cVgwRequestBodyContent:
     }
 
     def __init__(self, name=None, eip_id=None):
-        """UpdateP2cVgwRequestBodyContent
+        r"""UpdateP2cVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateP2cVgwRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this UpdateP2cVgwRequestBodyContent.
+        r"""Gets the name of this UpdateP2cVgwRequestBodyContent.
 
         P2C VPN网关名称。1-64字符，中文、英文、数字包含下划线
 
@@ -61,7 +61,7 @@ class UpdateP2cVgwRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateP2cVgwRequestBodyContent.
+        r"""Sets the name of this UpdateP2cVgwRequestBodyContent.
 
         P2C VPN网关名称。1-64字符，中文、英文、数字包含下划线
 
@@ -72,7 +72,7 @@ class UpdateP2cVgwRequestBodyContent:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this UpdateP2cVgwRequestBodyContent.
+        r"""Gets the eip_id of this UpdateP2cVgwRequestBodyContent.
 
         eip的ID。用于给P2C VPN网关绑定新的EIP，需要先解绑当前的EIP
 
@@ -83,7 +83,7 @@ class UpdateP2cVgwRequestBodyContent:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this UpdateP2cVgwRequestBodyContent.
+        r"""Sets the eip_id of this UpdateP2cVgwRequestBodyContent.
 
         eip的ID。用于给P2C VPN网关绑定新的EIP，需要先解绑当前的EIP
 

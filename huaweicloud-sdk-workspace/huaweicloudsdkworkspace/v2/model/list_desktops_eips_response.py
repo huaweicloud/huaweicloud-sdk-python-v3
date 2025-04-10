@@ -28,7 +28,7 @@ class ListDesktopsEipsResponse(SdkResponse):
     }
 
     def __init__(self, eips=None, total_count=None):
-        """ListDesktopsEipsResponse
+        r"""ListDesktopsEipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopsEipsResponse(SdkResponse):
 
     @property
     def eips(self):
-        """Gets the eips of this ListDesktopsEipsResponse.
+        r"""Gets the eips of this ListDesktopsEipsResponse.
 
         桌面EIP。
 
@@ -62,7 +62,7 @@ class ListDesktopsEipsResponse(SdkResponse):
 
     @eips.setter
     def eips(self, eips):
-        """Sets the eips of this ListDesktopsEipsResponse.
+        r"""Sets the eips of this ListDesktopsEipsResponse.
 
         桌面EIP。
 
@@ -73,7 +73,7 @@ class ListDesktopsEipsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopsEipsResponse.
+        r"""Gets the total_count of this ListDesktopsEipsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListDesktopsEipsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopsEipsResponse.
+        r"""Sets the total_count of this ListDesktopsEipsResponse.
 
         总数。
 

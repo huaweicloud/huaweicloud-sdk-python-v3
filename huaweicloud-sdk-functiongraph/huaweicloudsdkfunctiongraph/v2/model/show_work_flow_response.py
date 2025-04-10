@@ -40,7 +40,7 @@ class ShowWorkFlowResponse(SdkResponse):
     }
 
     def __init__(self, id=None, workflow_urn=None, created_time=None, updated_time=None, created_by=None, lts_group_id=None, lts_stream_id=None, definition=None):
-        """ShowWorkFlowResponse
+        r"""ShowWorkFlowResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowWorkFlowResponse.
+        r"""Gets the id of this ShowWorkFlowResponse.
 
         唯一标识ID，流程定义ID
 
@@ -104,7 +104,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowWorkFlowResponse.
+        r"""Sets the id of this ShowWorkFlowResponse.
 
         唯一标识ID，流程定义ID
 
@@ -115,7 +115,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this ShowWorkFlowResponse.
+        r"""Gets the workflow_urn of this ShowWorkFlowResponse.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -126,7 +126,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this ShowWorkFlowResponse.
+        r"""Sets the workflow_urn of this ShowWorkFlowResponse.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -137,7 +137,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowWorkFlowResponse.
+        r"""Gets the created_time of this ShowWorkFlowResponse.
 
         流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -148,7 +148,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowWorkFlowResponse.
+        r"""Sets the created_time of this ShowWorkFlowResponse.
 
         流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -159,7 +159,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowWorkFlowResponse.
+        r"""Gets the updated_time of this ShowWorkFlowResponse.
 
         流程修改时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -170,7 +170,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowWorkFlowResponse.
+        r"""Sets the updated_time of this ShowWorkFlowResponse.
 
         流程修改时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -181,7 +181,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ShowWorkFlowResponse.
+        r"""Gets the created_by of this ShowWorkFlowResponse.
 
         流程创建者
 
@@ -192,7 +192,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ShowWorkFlowResponse.
+        r"""Sets the created_by of this ShowWorkFlowResponse.
 
         流程创建者
 
@@ -203,7 +203,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this ShowWorkFlowResponse.
+        r"""Gets the lts_group_id of this ShowWorkFlowResponse.
 
         快速函数流日志组ID，仅快速模式函数流且日志级别不为NONE时
 
@@ -214,7 +214,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this ShowWorkFlowResponse.
+        r"""Sets the lts_group_id of this ShowWorkFlowResponse.
 
         快速函数流日志组ID，仅快速模式函数流且日志级别不为NONE时
 
@@ -225,7 +225,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this ShowWorkFlowResponse.
+        r"""Gets the lts_stream_id of this ShowWorkFlowResponse.
 
         快速函数流日志流ID，仅快速模式函数流且日志级别不为NONE时返回。
 
@@ -236,7 +236,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this ShowWorkFlowResponse.
+        r"""Sets the lts_stream_id of this ShowWorkFlowResponse.
 
         快速函数流日志流ID，仅快速模式函数流且日志级别不为NONE时返回。
 
@@ -247,7 +247,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @property
     def definition(self):
-        """Gets the definition of this ShowWorkFlowResponse.
+        r"""Gets the definition of this ShowWorkFlowResponse.
 
         :return: The definition of this ShowWorkFlowResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
@@ -256,7 +256,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this ShowWorkFlowResponse.
+        r"""Sets the definition of this ShowWorkFlowResponse.
 
         :param definition: The definition of this ShowWorkFlowResponse.
         :type definition: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`

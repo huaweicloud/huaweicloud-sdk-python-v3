@@ -26,7 +26,7 @@ class CreateSpaceAnalysisTaskResponse(SdkResponse):
     }
 
     def __init__(self, execution_time=None):
-        """CreateSpaceAnalysisTaskResponse
+        r"""CreateSpaceAnalysisTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSpaceAnalysisTaskResponse(SdkResponse):
 
     @property
     def execution_time(self):
-        """Gets the execution_time of this CreateSpaceAnalysisTaskResponse.
+        r"""Gets the execution_time of this CreateSpaceAnalysisTaskResponse.
 
         执行时间，毫秒为单位的时间戳
 
@@ -55,7 +55,7 @@ class CreateSpaceAnalysisTaskResponse(SdkResponse):
 
     @execution_time.setter
     def execution_time(self, execution_time):
-        """Sets the execution_time of this CreateSpaceAnalysisTaskResponse.
+        r"""Sets the execution_time of this CreateSpaceAnalysisTaskResponse.
 
         执行时间，毫秒为单位的时间戳
 

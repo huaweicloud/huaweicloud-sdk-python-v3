@@ -31,7 +31,7 @@ class ConditionInstance:
     }
 
     def __init__(self, condition_index=None, condition_map=None, dep_param_map=None, statement_index=None):
-        """ConditionInstance
+        r"""ConditionInstance
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConditionInstance:
 
     @property
     def condition_index(self):
-        """Gets the condition_index of this ConditionInstance.
+        r"""Gets the condition_index of this ConditionInstance.
 
         条件索引，用于标识当前处理的是哪个条件
 
@@ -75,7 +75,7 @@ class ConditionInstance:
 
     @condition_index.setter
     def condition_index(self, condition_index):
-        """Sets the condition_index of this ConditionInstance.
+        r"""Sets the condition_index of this ConditionInstance.
 
         条件索引，用于标识当前处理的是哪个条件
 
@@ -86,7 +86,7 @@ class ConditionInstance:
 
     @property
     def condition_map(self):
-        """Gets the condition_map of this ConditionInstance.
+        r"""Gets the condition_map of this ConditionInstance.
 
         条件映射，键为整数，值为字符串列表，用于存储各个条件的信息
 
@@ -97,7 +97,7 @@ class ConditionInstance:
 
     @condition_map.setter
     def condition_map(self, condition_map):
-        """Sets the condition_map of this ConditionInstance.
+        r"""Sets the condition_map of this ConditionInstance.
 
         条件映射，键为整数，值为字符串列表，用于存储各个条件的信息
 
@@ -108,7 +108,7 @@ class ConditionInstance:
 
     @property
     def dep_param_map(self):
-        """Gets the dep_param_map of this ConditionInstance.
+        r"""Gets the dep_param_map of this ConditionInstance.
 
         依赖参数实例的映射
 
@@ -119,7 +119,7 @@ class ConditionInstance:
 
     @dep_param_map.setter
     def dep_param_map(self, dep_param_map):
-        """Sets the dep_param_map of this ConditionInstance.
+        r"""Sets the dep_param_map of this ConditionInstance.
 
         依赖参数实例的映射
 
@@ -130,7 +130,7 @@ class ConditionInstance:
 
     @property
     def statement_index(self):
-        """Gets the statement_index of this ConditionInstance.
+        r"""Gets the statement_index of this ConditionInstance.
 
         声明索引，用于标识当前处理的是哪个声明
 
@@ -141,7 +141,7 @@ class ConditionInstance:
 
     @statement_index.setter
     def statement_index(self, statement_index):
-        """Sets the statement_index of this ConditionInstance.
+        r"""Sets the statement_index of this ConditionInstance.
 
         声明索引，用于标识当前处理的是哪个声明
 

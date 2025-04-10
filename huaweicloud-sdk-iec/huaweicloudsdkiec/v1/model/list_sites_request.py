@@ -39,7 +39,7 @@ class ListSitesRequest:
     }
 
     def __init__(self, limit=None, offset=None, id=None, area=None, province=None, city=None, flavor=None, volume_type=None):
-        """ListSitesRequest
+        r"""ListSitesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListSitesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSitesRequest.
+        r"""Gets the limit of this ListSitesRequest.
 
         查询返回边缘站点列表当前页面的数量。 取值范围：0~1000。
 
@@ -103,7 +103,7 @@ class ListSitesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSitesRequest.
+        r"""Sets the limit of this ListSitesRequest.
 
         查询返回边缘站点列表当前页面的数量。 取值范围：0~1000。
 
@@ -114,7 +114,7 @@ class ListSitesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSitesRequest.
+        r"""Gets the offset of this ListSitesRequest.
 
         查询的偏移量。默认为0。
 
@@ -125,7 +125,7 @@ class ListSitesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSitesRequest.
+        r"""Sets the offset of this ListSitesRequest.
 
         查询的偏移量。默认为0。
 
@@ -136,7 +136,7 @@ class ListSitesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSitesRequest.
+        r"""Gets the id of this ListSitesRequest.
 
         查询条件，站点ID。
 
@@ -147,7 +147,7 @@ class ListSitesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSitesRequest.
+        r"""Sets the id of this ListSitesRequest.
 
         查询条件，站点ID。
 
@@ -158,7 +158,7 @@ class ListSitesRequest:
 
     @property
     def area(self):
-        """Gets the area of this ListSitesRequest.
+        r"""Gets the area of this ListSitesRequest.
 
         边缘实例所在大区。   大小写通用，皆支持。 支持多个查询，中间使用','分隔。
 
@@ -169,7 +169,7 @@ class ListSitesRequest:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this ListSitesRequest.
+        r"""Sets the area of this ListSitesRequest.
 
         边缘实例所在大区。   大小写通用，皆支持。 支持多个查询，中间使用','分隔。
 
@@ -180,7 +180,7 @@ class ListSitesRequest:
 
     @property
     def province(self):
-        """Gets the province of this ListSitesRequest.
+        r"""Gets the province of this ListSitesRequest.
 
         边缘实例所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -191,7 +191,7 @@ class ListSitesRequest:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this ListSitesRequest.
+        r"""Sets the province of this ListSitesRequest.
 
         边缘实例所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -202,7 +202,7 @@ class ListSitesRequest:
 
     @property
     def city(self):
-        """Gets the city of this ListSitesRequest.
+        r"""Gets the city of this ListSitesRequest.
 
         边缘实例所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -213,7 +213,7 @@ class ListSitesRequest:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this ListSitesRequest.
+        r"""Sets the city of this ListSitesRequest.
 
         边缘实例所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -224,7 +224,7 @@ class ListSitesRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ListSitesRequest.
+        r"""Gets the flavor of this ListSitesRequest.
 
         边缘实例规格。
 
@@ -235,7 +235,7 @@ class ListSitesRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ListSitesRequest.
+        r"""Sets the flavor of this ListSitesRequest.
 
         边缘实例规格。
 
@@ -246,7 +246,7 @@ class ListSitesRequest:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ListSitesRequest.
+        r"""Gets the volume_type of this ListSitesRequest.
 
         过滤支持磁盘类型的站点，多个类型之间用“,”分割。
 
@@ -257,7 +257,7 @@ class ListSitesRequest:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ListSitesRequest.
+        r"""Sets the volume_type of this ListSitesRequest.
 
         过滤支持磁盘类型的站点，多个类型之间用“,”分割。
 

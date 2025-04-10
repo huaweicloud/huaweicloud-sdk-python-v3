@@ -27,7 +27,7 @@ class ProgressInfo:
     }
 
     def __init__(self, completed=None, remaining_time=None):
-        """ProgressInfo
+        r"""ProgressInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProgressInfo:
 
     @property
     def completed(self):
-        """Gets the completed of this ProgressInfo.
+        r"""Gets the completed of this ProgressInfo.
 
         完成进度
 
@@ -61,7 +61,7 @@ class ProgressInfo:
 
     @completed.setter
     def completed(self, completed):
-        """Sets the completed of this ProgressInfo.
+        r"""Sets the completed of this ProgressInfo.
 
         完成进度
 
@@ -72,7 +72,7 @@ class ProgressInfo:
 
     @property
     def remaining_time(self):
-        """Gets the remaining_time of this ProgressInfo.
+        r"""Gets the remaining_time of this ProgressInfo.
 
         预计剩余时间
 
@@ -83,7 +83,7 @@ class ProgressInfo:
 
     @remaining_time.setter
     def remaining_time(self, remaining_time):
-        """Sets the remaining_time of this ProgressInfo.
+        r"""Sets the remaining_time of this ProgressInfo.
 
         预计剩余时间
 

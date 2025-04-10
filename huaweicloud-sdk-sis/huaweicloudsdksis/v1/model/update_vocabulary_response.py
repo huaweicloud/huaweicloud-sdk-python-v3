@@ -26,7 +26,7 @@ class UpdateVocabularyResponse(SdkResponse):
     }
 
     def __init__(self, vocabulary_id=None):
-        """UpdateVocabularyResponse
+        r"""UpdateVocabularyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateVocabularyResponse(SdkResponse):
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this UpdateVocabularyResponse.
+        r"""Gets the vocabulary_id of this UpdateVocabularyResponse.
 
         调用成功返回热词表ID，调用失败时无此字段。
 
@@ -55,7 +55,7 @@ class UpdateVocabularyResponse(SdkResponse):
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this UpdateVocabularyResponse.
+        r"""Sets the vocabulary_id of this UpdateVocabularyResponse.
 
         调用成功返回热词表ID，调用失败时无此字段。
 

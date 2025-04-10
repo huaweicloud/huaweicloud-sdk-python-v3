@@ -26,7 +26,7 @@ class SearchFieldsForRelationResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SearchFieldsForRelationResponse
+        r"""SearchFieldsForRelationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchFieldsForRelationResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchFieldsForRelationResponse.
+        r"""Gets the data of this SearchFieldsForRelationResponse.
 
         返回的数据信息。
 
@@ -55,7 +55,7 @@ class SearchFieldsForRelationResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchFieldsForRelationResponse.
+        r"""Sets the data of this SearchFieldsForRelationResponse.
 
         返回的数据信息。
 

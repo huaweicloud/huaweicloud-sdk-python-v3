@@ -31,7 +31,7 @@ class ChangeIncidentRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, incident_id=None, body=None):
-        """ChangeIncidentRequest
+        r"""ChangeIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangeIncidentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ChangeIncidentRequest.
+        r"""Gets the project_id of this ChangeIncidentRequest.
 
         ID of project
 
@@ -72,7 +72,7 @@ class ChangeIncidentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ChangeIncidentRequest.
+        r"""Sets the project_id of this ChangeIncidentRequest.
 
         ID of project
 
@@ -83,7 +83,7 @@ class ChangeIncidentRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ChangeIncidentRequest.
+        r"""Gets the workspace_id of this ChangeIncidentRequest.
 
         ID of workspace
 
@@ -94,7 +94,7 @@ class ChangeIncidentRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ChangeIncidentRequest.
+        r"""Sets the workspace_id of this ChangeIncidentRequest.
 
         ID of workspace
 
@@ -105,7 +105,7 @@ class ChangeIncidentRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ChangeIncidentRequest.
+        r"""Gets the incident_id of this ChangeIncidentRequest.
 
         事件ID
 
@@ -116,7 +116,7 @@ class ChangeIncidentRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ChangeIncidentRequest.
+        r"""Sets the incident_id of this ChangeIncidentRequest.
 
         事件ID
 
@@ -127,7 +127,7 @@ class ChangeIncidentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeIncidentRequest.
+        r"""Gets the body of this ChangeIncidentRequest.
 
         :return: The body of this ChangeIncidentRequest.
         :rtype: :class:`huaweicloudsdksa.v2.ChangeIncidentRequestBody`
@@ -136,7 +136,7 @@ class ChangeIncidentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeIncidentRequest.
+        r"""Sets the body of this ChangeIncidentRequest.
 
         :param body: The body of this ChangeIncidentRequest.
         :type body: :class:`huaweicloudsdksa.v2.ChangeIncidentRequestBody`

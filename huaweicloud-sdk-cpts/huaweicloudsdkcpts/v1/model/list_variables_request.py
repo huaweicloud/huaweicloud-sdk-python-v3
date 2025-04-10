@@ -27,7 +27,7 @@ class ListVariablesRequest:
     }
 
     def __init__(self, variable_type=None, test_suite_id=None):
-        """ListVariablesRequest
+        r"""ListVariablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListVariablesRequest:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this ListVariablesRequest.
+        r"""Gets the variable_type of this ListVariablesRequest.
 
         变量类型
 
@@ -59,7 +59,7 @@ class ListVariablesRequest:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this ListVariablesRequest.
+        r"""Sets the variable_type of this ListVariablesRequest.
 
         变量类型
 
@@ -70,7 +70,7 @@ class ListVariablesRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this ListVariablesRequest.
+        r"""Gets the test_suite_id of this ListVariablesRequest.
 
         测试工程id
 
@@ -81,7 +81,7 @@ class ListVariablesRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this ListVariablesRequest.
+        r"""Sets the test_suite_id of this ListVariablesRequest.
 
         测试工程id
 

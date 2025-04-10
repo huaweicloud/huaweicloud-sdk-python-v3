@@ -47,7 +47,7 @@ class InnodbTrx:
     }
 
     def __init__(self, trx_id=None, trx_state=None, trx_started=None, trx_wait_started=None, trx_mysql_thread_id=None, trx_query=None, trx_tables_locked=None, trx_rows_locked=None, trx_rows_modified=None, trx_isolation_level=None, innodb_wait_locks=None, innodb_hold_locks=None):
-        """InnodbTrx
+        r"""InnodbTrx
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class InnodbTrx:
 
     @property
     def trx_id(self):
-        """Gets the trx_id of this InnodbTrx.
+        r"""Gets the trx_id of this InnodbTrx.
 
         事务ID
 
@@ -119,7 +119,7 @@ class InnodbTrx:
 
     @trx_id.setter
     def trx_id(self, trx_id):
-        """Sets the trx_id of this InnodbTrx.
+        r"""Sets the trx_id of this InnodbTrx.
 
         事务ID
 
@@ -130,7 +130,7 @@ class InnodbTrx:
 
     @property
     def trx_state(self):
-        """Gets the trx_state of this InnodbTrx.
+        r"""Gets the trx_state of this InnodbTrx.
 
         事务状态
 
@@ -141,7 +141,7 @@ class InnodbTrx:
 
     @trx_state.setter
     def trx_state(self, trx_state):
-        """Sets the trx_state of this InnodbTrx.
+        r"""Sets the trx_state of this InnodbTrx.
 
         事务状态
 
@@ -152,7 +152,7 @@ class InnodbTrx:
 
     @property
     def trx_started(self):
-        """Gets the trx_started of this InnodbTrx.
+        r"""Gets the trx_started of this InnodbTrx.
 
         事务开始时间
 
@@ -163,7 +163,7 @@ class InnodbTrx:
 
     @trx_started.setter
     def trx_started(self, trx_started):
-        """Sets the trx_started of this InnodbTrx.
+        r"""Sets the trx_started of this InnodbTrx.
 
         事务开始时间
 
@@ -174,7 +174,7 @@ class InnodbTrx:
 
     @property
     def trx_wait_started(self):
-        """Gets the trx_wait_started of this InnodbTrx.
+        r"""Gets the trx_wait_started of this InnodbTrx.
 
         事务等待开始时间
 
@@ -185,7 +185,7 @@ class InnodbTrx:
 
     @trx_wait_started.setter
     def trx_wait_started(self, trx_wait_started):
-        """Sets the trx_wait_started of this InnodbTrx.
+        r"""Sets the trx_wait_started of this InnodbTrx.
 
         事务等待开始时间
 
@@ -196,7 +196,7 @@ class InnodbTrx:
 
     @property
     def trx_mysql_thread_id(self):
-        """Gets the trx_mysql_thread_id of this InnodbTrx.
+        r"""Gets the trx_mysql_thread_id of this InnodbTrx.
 
         会话ID，同ListProcesses接口返回的id。
 
@@ -207,7 +207,7 @@ class InnodbTrx:
 
     @trx_mysql_thread_id.setter
     def trx_mysql_thread_id(self, trx_mysql_thread_id):
-        """Sets the trx_mysql_thread_id of this InnodbTrx.
+        r"""Sets the trx_mysql_thread_id of this InnodbTrx.
 
         会话ID，同ListProcesses接口返回的id。
 
@@ -218,7 +218,7 @@ class InnodbTrx:
 
     @property
     def trx_query(self):
-        """Gets the trx_query of this InnodbTrx.
+        r"""Gets the trx_query of this InnodbTrx.
 
         事务运行的SQL语句
 
@@ -229,7 +229,7 @@ class InnodbTrx:
 
     @trx_query.setter
     def trx_query(self, trx_query):
-        """Sets the trx_query of this InnodbTrx.
+        r"""Sets the trx_query of this InnodbTrx.
 
         事务运行的SQL语句
 
@@ -240,7 +240,7 @@ class InnodbTrx:
 
     @property
     def trx_tables_locked(self):
-        """Gets the trx_tables_locked of this InnodbTrx.
+        r"""Gets the trx_tables_locked of this InnodbTrx.
 
         加行锁的表数量
 
@@ -251,7 +251,7 @@ class InnodbTrx:
 
     @trx_tables_locked.setter
     def trx_tables_locked(self, trx_tables_locked):
-        """Sets the trx_tables_locked of this InnodbTrx.
+        r"""Sets the trx_tables_locked of this InnodbTrx.
 
         加行锁的表数量
 
@@ -262,7 +262,7 @@ class InnodbTrx:
 
     @property
     def trx_rows_locked(self):
-        """Gets the trx_rows_locked of this InnodbTrx.
+        r"""Gets the trx_rows_locked of this InnodbTrx.
 
         锁定的行数量（近似值）
 
@@ -273,7 +273,7 @@ class InnodbTrx:
 
     @trx_rows_locked.setter
     def trx_rows_locked(self, trx_rows_locked):
-        """Sets the trx_rows_locked of this InnodbTrx.
+        r"""Sets the trx_rows_locked of this InnodbTrx.
 
         锁定的行数量（近似值）
 
@@ -284,7 +284,7 @@ class InnodbTrx:
 
     @property
     def trx_rows_modified(self):
-        """Gets the trx_rows_modified of this InnodbTrx.
+        r"""Gets the trx_rows_modified of this InnodbTrx.
 
         事务插入或者修改的行数
 
@@ -295,7 +295,7 @@ class InnodbTrx:
 
     @trx_rows_modified.setter
     def trx_rows_modified(self, trx_rows_modified):
-        """Sets the trx_rows_modified of this InnodbTrx.
+        r"""Sets the trx_rows_modified of this InnodbTrx.
 
         事务插入或者修改的行数
 
@@ -306,7 +306,7 @@ class InnodbTrx:
 
     @property
     def trx_isolation_level(self):
-        """Gets the trx_isolation_level of this InnodbTrx.
+        r"""Gets the trx_isolation_level of this InnodbTrx.
 
         隔离级别
 
@@ -317,7 +317,7 @@ class InnodbTrx:
 
     @trx_isolation_level.setter
     def trx_isolation_level(self, trx_isolation_level):
-        """Sets the trx_isolation_level of this InnodbTrx.
+        r"""Sets the trx_isolation_level of this InnodbTrx.
 
         隔离级别
 
@@ -328,7 +328,7 @@ class InnodbTrx:
 
     @property
     def innodb_wait_locks(self):
-        """Gets the innodb_wait_locks of this InnodbTrx.
+        r"""Gets the innodb_wait_locks of this InnodbTrx.
 
         等待锁信息
 
@@ -339,7 +339,7 @@ class InnodbTrx:
 
     @innodb_wait_locks.setter
     def innodb_wait_locks(self, innodb_wait_locks):
-        """Sets the innodb_wait_locks of this InnodbTrx.
+        r"""Sets the innodb_wait_locks of this InnodbTrx.
 
         等待锁信息
 
@@ -350,7 +350,7 @@ class InnodbTrx:
 
     @property
     def innodb_hold_locks(self):
-        """Gets the innodb_hold_locks of this InnodbTrx.
+        r"""Gets the innodb_hold_locks of this InnodbTrx.
 
         持有锁信息
 
@@ -361,7 +361,7 @@ class InnodbTrx:
 
     @innodb_hold_locks.setter
     def innodb_hold_locks(self, innodb_hold_locks):
-        """Sets the innodb_hold_locks of this InnodbTrx.
+        r"""Sets the innodb_hold_locks of this InnodbTrx.
 
         持有锁信息
 

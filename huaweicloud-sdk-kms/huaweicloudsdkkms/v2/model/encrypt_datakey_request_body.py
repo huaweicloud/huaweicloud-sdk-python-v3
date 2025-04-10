@@ -33,7 +33,7 @@ class EncryptDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, plain_text=None, datakey_plain_length=None, additional_authenticated_data=None, sequence=None):
-        """EncryptDatakeyRequestBody
+        r"""EncryptDatakeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class EncryptDatakeyRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this EncryptDatakeyRequestBody.
+        r"""Gets the key_id of this EncryptDatakeyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -79,7 +79,7 @@ class EncryptDatakeyRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this EncryptDatakeyRequestBody.
+        r"""Sets the key_id of this EncryptDatakeyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -90,7 +90,7 @@ class EncryptDatakeyRequestBody:
 
     @property
     def plain_text(self):
-        """Gets the plain_text of this EncryptDatakeyRequestBody.
+        r"""Gets the plain_text of this EncryptDatakeyRequestBody.
 
         CMK为AES时，DEK明文和DEK明文的SHA256（32字节）；CMK为SM4时，DEK明文和DEK明文的SM3（32字节），均为16进制字符串表示。
 
@@ -101,7 +101,7 @@ class EncryptDatakeyRequestBody:
 
     @plain_text.setter
     def plain_text(self, plain_text):
-        """Sets the plain_text of this EncryptDatakeyRequestBody.
+        r"""Sets the plain_text of this EncryptDatakeyRequestBody.
 
         CMK为AES时，DEK明文和DEK明文的SHA256（32字节）；CMK为SM4时，DEK明文和DEK明文的SM3（32字节），均为16进制字符串表示。
 
@@ -112,7 +112,7 @@ class EncryptDatakeyRequestBody:
 
     @property
     def datakey_plain_length(self):
-        """Gets the datakey_plain_length of this EncryptDatakeyRequestBody.
+        r"""Gets the datakey_plain_length of this EncryptDatakeyRequestBody.
 
         DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
 
@@ -123,7 +123,7 @@ class EncryptDatakeyRequestBody:
 
     @datakey_plain_length.setter
     def datakey_plain_length(self, datakey_plain_length):
-        """Sets the datakey_plain_length of this EncryptDatakeyRequestBody.
+        r"""Sets the datakey_plain_length of this EncryptDatakeyRequestBody.
 
         DEK明文字节长度，取值范围为1~1024。 DEK明文字节长度，取值为“64”。
 
@@ -134,7 +134,7 @@ class EncryptDatakeyRequestBody:
 
     @property
     def additional_authenticated_data(self):
-        """Gets the additional_authenticated_data of this EncryptDatakeyRequestBody.
+        r"""Gets the additional_authenticated_data of this EncryptDatakeyRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -145,7 +145,7 @@ class EncryptDatakeyRequestBody:
 
     @additional_authenticated_data.setter
     def additional_authenticated_data(self, additional_authenticated_data):
-        """Sets the additional_authenticated_data of this EncryptDatakeyRequestBody.
+        r"""Sets the additional_authenticated_data of this EncryptDatakeyRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -156,7 +156,7 @@ class EncryptDatakeyRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this EncryptDatakeyRequestBody.
+        r"""Gets the sequence of this EncryptDatakeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -167,7 +167,7 @@ class EncryptDatakeyRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this EncryptDatakeyRequestBody.
+        r"""Sets the sequence of this EncryptDatakeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

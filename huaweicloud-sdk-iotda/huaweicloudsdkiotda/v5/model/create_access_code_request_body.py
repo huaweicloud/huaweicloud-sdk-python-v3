@@ -27,7 +27,7 @@ class CreateAccessCodeRequestBody:
     }
 
     def __init__(self, type=None, force_disconnect=None):
-        """CreateAccessCodeRequestBody
+        r"""CreateAccessCodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateAccessCodeRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateAccessCodeRequestBody.
+        r"""Gets the type of this CreateAccessCodeRequestBody.
 
         **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - [AMQP,MQTT]
 
@@ -61,7 +61,7 @@ class CreateAccessCodeRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateAccessCodeRequestBody.
+        r"""Sets the type of this CreateAccessCodeRequestBody.
 
         **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - [AMQP,MQTT]
 
@@ -72,7 +72,7 @@ class CreateAccessCodeRequestBody:
 
     @property
     def force_disconnect(self):
-        """Gets the force_disconnect of this CreateAccessCodeRequestBody.
+        r"""Gets the force_disconnect of this CreateAccessCodeRequestBody.
 
         **参数说明**: 是否将AMQP/MQTT连接断开
 
@@ -83,7 +83,7 @@ class CreateAccessCodeRequestBody:
 
     @force_disconnect.setter
     def force_disconnect(self, force_disconnect):
-        """Sets the force_disconnect of this CreateAccessCodeRequestBody.
+        r"""Sets the force_disconnect of this CreateAccessCodeRequestBody.
 
         **参数说明**: 是否将AMQP/MQTT连接断开
 

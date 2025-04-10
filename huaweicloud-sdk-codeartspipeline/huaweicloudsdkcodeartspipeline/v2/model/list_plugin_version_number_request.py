@@ -31,7 +31,7 @@ class ListPluginVersionNumberRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, offset=None, limit=None):
-        """ListPluginVersionNumberRequest
+        r"""ListPluginVersionNumberRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListPluginVersionNumberRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListPluginVersionNumberRequest.
+        r"""Gets the domain_id of this ListPluginVersionNumberRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ListPluginVersionNumberRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListPluginVersionNumberRequest.
+        r"""Sets the domain_id of this ListPluginVersionNumberRequest.
 
         租户ID
 
@@ -82,7 +82,7 @@ class ListPluginVersionNumberRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ListPluginVersionNumberRequest.
+        r"""Gets the plugin_name of this ListPluginVersionNumberRequest.
 
         插件名
 
@@ -93,7 +93,7 @@ class ListPluginVersionNumberRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ListPluginVersionNumberRequest.
+        r"""Sets the plugin_name of this ListPluginVersionNumberRequest.
 
         插件名
 
@@ -104,7 +104,7 @@ class ListPluginVersionNumberRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPluginVersionNumberRequest.
+        r"""Gets the offset of this ListPluginVersionNumberRequest.
 
         偏移
 
@@ -115,7 +115,7 @@ class ListPluginVersionNumberRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPluginVersionNumberRequest.
+        r"""Sets the offset of this ListPluginVersionNumberRequest.
 
         偏移
 
@@ -126,7 +126,7 @@ class ListPluginVersionNumberRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPluginVersionNumberRequest.
+        r"""Gets the limit of this ListPluginVersionNumberRequest.
 
         大小
 
@@ -137,7 +137,7 @@ class ListPluginVersionNumberRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPluginVersionNumberRequest.
+        r"""Sets the limit of this ListPluginVersionNumberRequest.
 
         大小
 

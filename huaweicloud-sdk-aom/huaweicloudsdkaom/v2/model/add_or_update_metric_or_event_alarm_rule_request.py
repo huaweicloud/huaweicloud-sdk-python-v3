@@ -29,7 +29,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
     }
 
     def __init__(self, action_id=None, enterprise_project_id=None, body=None):
-        """AddOrUpdateMetricOrEventAlarmRuleRequest
+        r"""AddOrUpdateMetricOrEventAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
+        r"""Gets the action_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
         告警规则id。 - 新增告警时，填写\"add-alarm-action\" - 更新告警时，填写“update-alarm-action”
 
@@ -67,7 +67,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
+        r"""Sets the action_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
         告警规则id。 - 新增告警时，填写\"add-alarm-action\" - 更新告警时，填写“update-alarm-action”
 
@@ -78,7 +78,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
+        r"""Gets the enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
         企业项目id。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
@@ -89,7 +89,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
+        r"""Sets the enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
         企业项目id。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
@@ -100,7 +100,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddOrUpdateMetricOrEventAlarmRuleRequest.
+        r"""Gets the body of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
         :return: The body of this AddOrUpdateMetricOrEventAlarmRuleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.AddOrUpdateAlarmRuleV4RequestBody`
@@ -109,7 +109,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddOrUpdateMetricOrEventAlarmRuleRequest.
+        r"""Sets the body of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
         :param body: The body of this AddOrUpdateMetricOrEventAlarmRuleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.AddOrUpdateAlarmRuleV4RequestBody`

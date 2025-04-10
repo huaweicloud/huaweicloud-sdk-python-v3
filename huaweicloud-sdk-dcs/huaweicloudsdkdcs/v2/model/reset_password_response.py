@@ -36,7 +36,7 @@ class ResetPasswordResponse(SdkResponse):
     }
 
     def __init__(self, retry_times_left=None, lock_time=None, lock_time_left=None, code=None, message=None, ext_message=None):
-        """ResetPasswordResponse
+        r"""ResetPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def retry_times_left(self):
-        """Gets the retry_times_left of this ResetPasswordResponse.
+        r"""Gets the retry_times_left of this ResetPasswordResponse.
 
         密码验证剩余次数
 
@@ -90,7 +90,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @retry_times_left.setter
     def retry_times_left(self, retry_times_left):
-        """Sets the retry_times_left of this ResetPasswordResponse.
+        r"""Sets the retry_times_left of this ResetPasswordResponse.
 
         密码验证剩余次数
 
@@ -101,7 +101,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this ResetPasswordResponse.
+        r"""Gets the lock_time of this ResetPasswordResponse.
 
         锁定时间
 
@@ -112,7 +112,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this ResetPasswordResponse.
+        r"""Sets the lock_time of this ResetPasswordResponse.
 
         锁定时间
 
@@ -123,7 +123,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def lock_time_left(self):
-        """Gets the lock_time_left of this ResetPasswordResponse.
+        r"""Gets the lock_time_left of this ResetPasswordResponse.
 
         锁定剩余时间
 
@@ -134,7 +134,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @lock_time_left.setter
     def lock_time_left(self, lock_time_left):
-        """Sets the lock_time_left of this ResetPasswordResponse.
+        r"""Sets the lock_time_left of this ResetPasswordResponse.
 
         锁定剩余时间
 
@@ -145,7 +145,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ResetPasswordResponse.
+        r"""Gets the code of this ResetPasswordResponse.
 
         **参数解释**： 重置密码结果编号。 **取值范围**： - 1：重置密码成功。 - 3：实例被锁定。 
 
@@ -156,7 +156,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ResetPasswordResponse.
+        r"""Sets the code of this ResetPasswordResponse.
 
         **参数解释**： 重置密码结果编号。 **取值范围**： - 1：重置密码成功。 - 3：实例被锁定。 
 
@@ -167,7 +167,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ResetPasswordResponse.
+        r"""Gets the message of this ResetPasswordResponse.
 
         **参数解释**： 重置密码结果信息。 **取值范围**： - success - instance is locked 
 
@@ -178,7 +178,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ResetPasswordResponse.
+        r"""Sets the message of this ResetPasswordResponse.
 
         **参数解释**： 重置密码结果信息。 **取值范围**： - success - instance is locked 
 
@@ -189,7 +189,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @property
     def ext_message(self):
-        """Gets the ext_message of this ResetPasswordResponse.
+        r"""Gets the ext_message of this ResetPasswordResponse.
 
         **参数解释**： 重置密码错误信息，若重置密码成功，则为null。 **取值范围**： 不涉及。 
 
@@ -200,7 +200,7 @@ class ResetPasswordResponse(SdkResponse):
 
     @ext_message.setter
     def ext_message(self, ext_message):
-        """Sets the ext_message of this ResetPasswordResponse.
+        r"""Sets the ext_message of this ResetPasswordResponse.
 
         **参数解释**： 重置密码错误信息，若重置密码成功，则为null。 **取值范围**： 不涉及。 
 

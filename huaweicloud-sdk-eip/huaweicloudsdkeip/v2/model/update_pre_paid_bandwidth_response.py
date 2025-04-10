@@ -28,7 +28,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None, order_id=None):
-        """UpdatePrePaidBandwidthResponse
+        r"""UpdatePrePaidBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdatePrePaidBandwidthResponse.
+        r"""Gets the bandwidth of this UpdatePrePaidBandwidthResponse.
 
         :return: The bandwidth of this UpdatePrePaidBandwidthResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.BandwidthResp`
@@ -60,7 +60,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdatePrePaidBandwidthResponse.
+        r"""Sets the bandwidth of this UpdatePrePaidBandwidthResponse.
 
         :param bandwidth: The bandwidth of this UpdatePrePaidBandwidthResponse.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`
@@ -69,7 +69,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpdatePrePaidBandwidthResponse.
+        r"""Gets the order_id of this UpdatePrePaidBandwidthResponse.
 
         订单号（包周期场景返回该字段）
 
@@ -80,7 +80,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpdatePrePaidBandwidthResponse.
+        r"""Sets the order_id of this UpdatePrePaidBandwidthResponse.
 
         订单号（包周期场景返回该字段）
 

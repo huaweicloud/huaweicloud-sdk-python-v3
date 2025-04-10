@@ -24,7 +24,7 @@ class ChangeIsolatedFileResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeIsolatedFileResponse
+        r"""ChangeIsolatedFileResponse
 
         The model defined in huaweicloud sdk
 

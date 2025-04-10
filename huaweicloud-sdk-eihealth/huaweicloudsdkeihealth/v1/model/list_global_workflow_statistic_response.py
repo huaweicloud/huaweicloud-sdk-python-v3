@@ -26,7 +26,7 @@ class ListGlobalWorkflowStatisticResponse(SdkResponse):
     }
 
     def __init__(self, job_count=None):
-        """ListGlobalWorkflowStatisticResponse
+        r"""ListGlobalWorkflowStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListGlobalWorkflowStatisticResponse(SdkResponse):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ListGlobalWorkflowStatisticResponse.
+        r"""Gets the job_count of this ListGlobalWorkflowStatisticResponse.
 
         所有作业总数
 
@@ -55,7 +55,7 @@ class ListGlobalWorkflowStatisticResponse(SdkResponse):
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ListGlobalWorkflowStatisticResponse.
+        r"""Sets the job_count of this ListGlobalWorkflowStatisticResponse.
 
         所有作业总数
 

@@ -29,7 +29,7 @@ class DatabaseBackupInfo:
     }
 
     def __init__(self, database_name=None, backup_file_name=None, backup_file_size=None):
-        """DatabaseBackupInfo
+        r"""DatabaseBackupInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DatabaseBackupInfo:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DatabaseBackupInfo.
+        r"""Gets the database_name of this DatabaseBackupInfo.
 
         库名
 
@@ -65,7 +65,7 @@ class DatabaseBackupInfo:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DatabaseBackupInfo.
+        r"""Sets the database_name of this DatabaseBackupInfo.
 
         库名
 
@@ -76,7 +76,7 @@ class DatabaseBackupInfo:
 
     @property
     def backup_file_name(self):
-        """Gets the backup_file_name of this DatabaseBackupInfo.
+        r"""Gets the backup_file_name of this DatabaseBackupInfo.
 
         备份文件名
 
@@ -87,7 +87,7 @@ class DatabaseBackupInfo:
 
     @backup_file_name.setter
     def backup_file_name(self, backup_file_name):
-        """Sets the backup_file_name of this DatabaseBackupInfo.
+        r"""Sets the backup_file_name of this DatabaseBackupInfo.
 
         备份文件名
 
@@ -98,7 +98,7 @@ class DatabaseBackupInfo:
 
     @property
     def backup_file_size(self):
-        """Gets the backup_file_size of this DatabaseBackupInfo.
+        r"""Gets the backup_file_size of this DatabaseBackupInfo.
 
         备份文件大小
 
@@ -109,7 +109,7 @@ class DatabaseBackupInfo:
 
     @backup_file_size.setter
     def backup_file_size(self, backup_file_size):
-        """Sets the backup_file_size of this DatabaseBackupInfo.
+        r"""Sets the backup_file_size of this DatabaseBackupInfo.
 
         备份文件大小
 

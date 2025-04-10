@@ -25,7 +25,7 @@ class CreatePrivateipRequestBody:
     }
 
     def __init__(self, privateips=None):
-        """CreatePrivateipRequestBody
+        r"""CreatePrivateipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePrivateipRequestBody:
 
     @property
     def privateips(self):
-        """Gets the privateips of this CreatePrivateipRequestBody.
+        r"""Gets the privateips of this CreatePrivateipRequestBody.
 
         私有IP列表对象
 
@@ -53,7 +53,7 @@ class CreatePrivateipRequestBody:
 
     @privateips.setter
     def privateips(self, privateips):
-        """Sets the privateips of this CreatePrivateipRequestBody.
+        r"""Sets the privateips of this CreatePrivateipRequestBody.
 
         私有IP列表对象
 

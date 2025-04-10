@@ -26,7 +26,7 @@ class ValidateWeakPasswordResponse(SdkResponse):
     }
 
     def __init__(self, is_weak_password=None):
-        """ValidateWeakPasswordResponse
+        r"""ValidateWeakPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateWeakPasswordResponse(SdkResponse):
 
     @property
     def is_weak_password(self):
-        """Gets the is_weak_password of this ValidateWeakPasswordResponse.
+        r"""Gets the is_weak_password of this ValidateWeakPasswordResponse.
 
         是否是弱密码。true为弱密码，不建议使用。false为非弱密码，可以使用。
 
@@ -55,7 +55,7 @@ class ValidateWeakPasswordResponse(SdkResponse):
 
     @is_weak_password.setter
     def is_weak_password(self, is_weak_password):
-        """Sets the is_weak_password of this ValidateWeakPasswordResponse.
+        r"""Sets the is_weak_password of this ValidateWeakPasswordResponse.
 
         是否是弱密码。true为弱密码，不建议使用。false为非弱密码，可以使用。
 

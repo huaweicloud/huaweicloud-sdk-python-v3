@@ -89,7 +89,7 @@ class ExtensionAllSnake:
     }
 
     def __init__(self, extension_id=None, extension_name=None, display_name=None, flags=None, last_updated=None, published_date=None, release_date=None, short_description=None, tags=None, tag_all_list=None, publisher=None, arch=None, target=None, categories=None, category_all_list=None, publish_manager=None, status=None, validate_status=None, install_count=None, average_star=None, identifier=None, support_os=None, support_ide=None, support_ide_info=None, versions=None, validate_result=None, extension_statistics=None, preview=None, ext_info=None, platform=None, check_result=None, gray_version_count=None, extension_owner=None):
-        """ExtensionAllSnake
+        r"""ExtensionAllSnake
 
         The model defined in huaweicloud sdk
 
@@ -267,7 +267,7 @@ class ExtensionAllSnake:
 
     @property
     def extension_id(self):
-        """Gets the extension_id of this ExtensionAllSnake.
+        r"""Gets the extension_id of this ExtensionAllSnake.
 
         插件id
 
@@ -278,7 +278,7 @@ class ExtensionAllSnake:
 
     @extension_id.setter
     def extension_id(self, extension_id):
-        """Sets the extension_id of this ExtensionAllSnake.
+        r"""Sets the extension_id of this ExtensionAllSnake.
 
         插件id
 
@@ -289,7 +289,7 @@ class ExtensionAllSnake:
 
     @property
     def extension_name(self):
-        """Gets the extension_name of this ExtensionAllSnake.
+        r"""Gets the extension_name of this ExtensionAllSnake.
 
         插件名称
 
@@ -300,7 +300,7 @@ class ExtensionAllSnake:
 
     @extension_name.setter
     def extension_name(self, extension_name):
-        """Sets the extension_name of this ExtensionAllSnake.
+        r"""Sets the extension_name of this ExtensionAllSnake.
 
         插件名称
 
@@ -311,7 +311,7 @@ class ExtensionAllSnake:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ExtensionAllSnake.
+        r"""Gets the display_name of this ExtensionAllSnake.
 
         插件显示名称
 
@@ -322,7 +322,7 @@ class ExtensionAllSnake:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ExtensionAllSnake.
+        r"""Sets the display_name of this ExtensionAllSnake.
 
         插件显示名称
 
@@ -333,7 +333,7 @@ class ExtensionAllSnake:
 
     @property
     def flags(self):
-        """Gets the flags of this ExtensionAllSnake.
+        r"""Gets the flags of this ExtensionAllSnake.
 
         插件flag;通过传递flag参数来进行过滤或其他操作。flag的基础数字是2\\4\\8\\16;传递的参数只能是这四个数字加法组合而成的数字 利用它们之间二进制的运算获取的值进行其他操作.比如6=0110=0010+0100也就是2和4的集合flags
 
@@ -344,7 +344,7 @@ class ExtensionAllSnake:
 
     @flags.setter
     def flags(self, flags):
-        """Sets the flags of this ExtensionAllSnake.
+        r"""Sets the flags of this ExtensionAllSnake.
 
         插件flag;通过传递flag参数来进行过滤或其他操作。flag的基础数字是2\\4\\8\\16;传递的参数只能是这四个数字加法组合而成的数字 利用它们之间二进制的运算获取的值进行其他操作.比如6=0110=0010+0100也就是2和4的集合flags
 
@@ -355,7 +355,7 @@ class ExtensionAllSnake:
 
     @property
     def last_updated(self):
-        """Gets the last_updated of this ExtensionAllSnake.
+        r"""Gets the last_updated of this ExtensionAllSnake.
 
         更新时间
 
@@ -366,7 +366,7 @@ class ExtensionAllSnake:
 
     @last_updated.setter
     def last_updated(self, last_updated):
-        """Sets the last_updated of this ExtensionAllSnake.
+        r"""Sets the last_updated of this ExtensionAllSnake.
 
         更新时间
 
@@ -377,7 +377,7 @@ class ExtensionAllSnake:
 
     @property
     def published_date(self):
-        """Gets the published_date of this ExtensionAllSnake.
+        r"""Gets the published_date of this ExtensionAllSnake.
 
         上传时间
 
@@ -388,7 +388,7 @@ class ExtensionAllSnake:
 
     @published_date.setter
     def published_date(self, published_date):
-        """Sets the published_date of this ExtensionAllSnake.
+        r"""Sets the published_date of this ExtensionAllSnake.
 
         上传时间
 
@@ -399,7 +399,7 @@ class ExtensionAllSnake:
 
     @property
     def release_date(self):
-        """Gets the release_date of this ExtensionAllSnake.
+        r"""Gets the release_date of this ExtensionAllSnake.
 
         发布时间
 
@@ -410,7 +410,7 @@ class ExtensionAllSnake:
 
     @release_date.setter
     def release_date(self, release_date):
-        """Sets the release_date of this ExtensionAllSnake.
+        r"""Sets the release_date of this ExtensionAllSnake.
 
         发布时间
 
@@ -421,7 +421,7 @@ class ExtensionAllSnake:
 
     @property
     def short_description(self):
-        """Gets the short_description of this ExtensionAllSnake.
+        r"""Gets the short_description of this ExtensionAllSnake.
 
         插件描述
 
@@ -432,7 +432,7 @@ class ExtensionAllSnake:
 
     @short_description.setter
     def short_description(self, short_description):
-        """Sets the short_description of this ExtensionAllSnake.
+        r"""Sets the short_description of this ExtensionAllSnake.
 
         插件描述
 
@@ -443,7 +443,7 @@ class ExtensionAllSnake:
 
     @property
     def tags(self):
-        """Gets the tags of this ExtensionAllSnake.
+        r"""Gets the tags of this ExtensionAllSnake.
 
         插件标签
 
@@ -454,7 +454,7 @@ class ExtensionAllSnake:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ExtensionAllSnake.
+        r"""Sets the tags of this ExtensionAllSnake.
 
         插件标签
 
@@ -465,7 +465,7 @@ class ExtensionAllSnake:
 
     @property
     def tag_all_list(self):
-        """Gets the tag_all_list of this ExtensionAllSnake.
+        r"""Gets the tag_all_list of this ExtensionAllSnake.
 
         所有标签
 
@@ -476,7 +476,7 @@ class ExtensionAllSnake:
 
     @tag_all_list.setter
     def tag_all_list(self, tag_all_list):
-        """Sets the tag_all_list of this ExtensionAllSnake.
+        r"""Sets the tag_all_list of this ExtensionAllSnake.
 
         所有标签
 
@@ -487,7 +487,7 @@ class ExtensionAllSnake:
 
     @property
     def publisher(self):
-        """Gets the publisher of this ExtensionAllSnake.
+        r"""Gets the publisher of this ExtensionAllSnake.
 
         :return: The publisher of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
@@ -496,7 +496,7 @@ class ExtensionAllSnake:
 
     @publisher.setter
     def publisher(self, publisher):
-        """Sets the publisher of this ExtensionAllSnake.
+        r"""Sets the publisher of this ExtensionAllSnake.
 
         :param publisher: The publisher of this ExtensionAllSnake.
         :type publisher: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
@@ -505,7 +505,7 @@ class ExtensionAllSnake:
 
     @property
     def arch(self):
-        """Gets the arch of this ExtensionAllSnake.
+        r"""Gets the arch of this ExtensionAllSnake.
 
         系统架构
 
@@ -516,7 +516,7 @@ class ExtensionAllSnake:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ExtensionAllSnake.
+        r"""Sets the arch of this ExtensionAllSnake.
 
         系统架构
 
@@ -527,7 +527,7 @@ class ExtensionAllSnake:
 
     @property
     def target(self):
-        """Gets the target of this ExtensionAllSnake.
+        r"""Gets the target of this ExtensionAllSnake.
 
         安装目标
 
@@ -538,7 +538,7 @@ class ExtensionAllSnake:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this ExtensionAllSnake.
+        r"""Sets the target of this ExtensionAllSnake.
 
         安装目标
 
@@ -549,7 +549,7 @@ class ExtensionAllSnake:
 
     @property
     def categories(self):
-        """Gets the categories of this ExtensionAllSnake.
+        r"""Gets the categories of this ExtensionAllSnake.
 
         插件分类
 
@@ -560,7 +560,7 @@ class ExtensionAllSnake:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this ExtensionAllSnake.
+        r"""Sets the categories of this ExtensionAllSnake.
 
         插件分类
 
@@ -571,7 +571,7 @@ class ExtensionAllSnake:
 
     @property
     def category_all_list(self):
-        """Gets the category_all_list of this ExtensionAllSnake.
+        r"""Gets the category_all_list of this ExtensionAllSnake.
 
         全部分类列表
 
@@ -582,7 +582,7 @@ class ExtensionAllSnake:
 
     @category_all_list.setter
     def category_all_list(self, category_all_list):
-        """Sets the category_all_list of this ExtensionAllSnake.
+        r"""Sets the category_all_list of this ExtensionAllSnake.
 
         全部分类列表
 
@@ -593,7 +593,7 @@ class ExtensionAllSnake:
 
     @property
     def publish_manager(self):
-        """Gets the publish_manager of this ExtensionAllSnake.
+        r"""Gets the publish_manager of this ExtensionAllSnake.
 
         :return: The publish_manager of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
@@ -602,7 +602,7 @@ class ExtensionAllSnake:
 
     @publish_manager.setter
     def publish_manager(self, publish_manager):
-        """Sets the publish_manager of this ExtensionAllSnake.
+        r"""Sets the publish_manager of this ExtensionAllSnake.
 
         :param publish_manager: The publish_manager of this ExtensionAllSnake.
         :type publish_manager: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
@@ -611,7 +611,7 @@ class ExtensionAllSnake:
 
     @property
     def status(self):
-        """Gets the status of this ExtensionAllSnake.
+        r"""Gets the status of this ExtensionAllSnake.
 
         插件状态  - INIT 上传插件的第一个版本 - NORMAL 插件有审核通过的版本 - OFFLINE 插件下线 - ABANDONED 上传废弃 - GRAYED 灰度插件
 
@@ -622,7 +622,7 @@ class ExtensionAllSnake:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExtensionAllSnake.
+        r"""Sets the status of this ExtensionAllSnake.
 
         插件状态  - INIT 上传插件的第一个版本 - NORMAL 插件有审核通过的版本 - OFFLINE 插件下线 - ABANDONED 上传废弃 - GRAYED 灰度插件
 
@@ -633,7 +633,7 @@ class ExtensionAllSnake:
 
     @property
     def validate_status(self):
-        """Gets the validate_status of this ExtensionAllSnake.
+        r"""Gets the validate_status of this ExtensionAllSnake.
 
         插件审核状态  - NONE 审核结束 - VALIDATING 审核中
 
@@ -644,7 +644,7 @@ class ExtensionAllSnake:
 
     @validate_status.setter
     def validate_status(self, validate_status):
-        """Sets the validate_status of this ExtensionAllSnake.
+        r"""Sets the validate_status of this ExtensionAllSnake.
 
         插件审核状态  - NONE 审核结束 - VALIDATING 审核中
 
@@ -655,7 +655,7 @@ class ExtensionAllSnake:
 
     @property
     def install_count(self):
-        """Gets the install_count of this ExtensionAllSnake.
+        r"""Gets the install_count of this ExtensionAllSnake.
 
         下载量
 
@@ -666,7 +666,7 @@ class ExtensionAllSnake:
 
     @install_count.setter
     def install_count(self, install_count):
-        """Sets the install_count of this ExtensionAllSnake.
+        r"""Sets the install_count of this ExtensionAllSnake.
 
         下载量
 
@@ -677,7 +677,7 @@ class ExtensionAllSnake:
 
     @property
     def average_star(self):
-        """Gets the average_star of this ExtensionAllSnake.
+        r"""Gets the average_star of this ExtensionAllSnake.
 
         平均评星值
 
@@ -688,7 +688,7 @@ class ExtensionAllSnake:
 
     @average_star.setter
     def average_star(self, average_star):
-        """Sets the average_star of this ExtensionAllSnake.
+        r"""Sets the average_star of this ExtensionAllSnake.
 
         平均评星值
 
@@ -699,7 +699,7 @@ class ExtensionAllSnake:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ExtensionAllSnake.
+        r"""Gets the identifier of this ExtensionAllSnake.
 
         插件唯一标识内部插件市场保留
 
@@ -710,7 +710,7 @@ class ExtensionAllSnake:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ExtensionAllSnake.
+        r"""Sets the identifier of this ExtensionAllSnake.
 
         插件唯一标识内部插件市场保留
 
@@ -721,7 +721,7 @@ class ExtensionAllSnake:
 
     @property
     def support_os(self):
-        """Gets the support_os of this ExtensionAllSnake.
+        r"""Gets the support_os of this ExtensionAllSnake.
 
         插件支持的操作系统
 
@@ -732,7 +732,7 @@ class ExtensionAllSnake:
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this ExtensionAllSnake.
+        r"""Sets the support_os of this ExtensionAllSnake.
 
         插件支持的操作系统
 
@@ -743,7 +743,7 @@ class ExtensionAllSnake:
 
     @property
     def support_ide(self):
-        """Gets the support_ide of this ExtensionAllSnake.
+        r"""Gets the support_ide of this ExtensionAllSnake.
 
         插件支持的ide
 
@@ -754,7 +754,7 @@ class ExtensionAllSnake:
 
     @support_ide.setter
     def support_ide(self, support_ide):
-        """Sets the support_ide of this ExtensionAllSnake.
+        r"""Sets the support_ide of this ExtensionAllSnake.
 
         插件支持的ide
 
@@ -765,7 +765,7 @@ class ExtensionAllSnake:
 
     @property
     def support_ide_info(self):
-        """Gets the support_ide_info of this ExtensionAllSnake.
+        r"""Gets the support_ide_info of this ExtensionAllSnake.
 
         插件支持的ide名称
 
@@ -776,7 +776,7 @@ class ExtensionAllSnake:
 
     @support_ide_info.setter
     def support_ide_info(self, support_ide_info):
-        """Sets the support_ide_info of this ExtensionAllSnake.
+        r"""Sets the support_ide_info of this ExtensionAllSnake.
 
         插件支持的ide名称
 
@@ -787,7 +787,7 @@ class ExtensionAllSnake:
 
     @property
     def versions(self):
-        """Gets the versions of this ExtensionAllSnake.
+        r"""Gets the versions of this ExtensionAllSnake.
 
         插件版本集合
 
@@ -798,7 +798,7 @@ class ExtensionAllSnake:
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ExtensionAllSnake.
+        r"""Sets the versions of this ExtensionAllSnake.
 
         插件版本集合
 
@@ -809,7 +809,7 @@ class ExtensionAllSnake:
 
     @property
     def validate_result(self):
-        """Gets the validate_result of this ExtensionAllSnake.
+        r"""Gets the validate_result of this ExtensionAllSnake.
 
         插件审核结果
 
@@ -820,7 +820,7 @@ class ExtensionAllSnake:
 
     @validate_result.setter
     def validate_result(self, validate_result):
-        """Sets the validate_result of this ExtensionAllSnake.
+        r"""Sets the validate_result of this ExtensionAllSnake.
 
         插件审核结果
 
@@ -831,7 +831,7 @@ class ExtensionAllSnake:
 
     @property
     def extension_statistics(self):
-        """Gets the extension_statistics of this ExtensionAllSnake.
+        r"""Gets the extension_statistics of this ExtensionAllSnake.
 
         :return: The extension_statistics of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionStatistics`
@@ -840,7 +840,7 @@ class ExtensionAllSnake:
 
     @extension_statistics.setter
     def extension_statistics(self, extension_statistics):
-        """Sets the extension_statistics of this ExtensionAllSnake.
+        r"""Sets the extension_statistics of this ExtensionAllSnake.
 
         :param extension_statistics: The extension_statistics of this ExtensionAllSnake.
         :type extension_statistics: :class:`huaweicloudsdkcloudide.v2.ExtensionStatistics`
@@ -849,7 +849,7 @@ class ExtensionAllSnake:
 
     @property
     def preview(self):
-        """Gets the preview of this ExtensionAllSnake.
+        r"""Gets the preview of this ExtensionAllSnake.
 
         是否支持预览
 
@@ -860,7 +860,7 @@ class ExtensionAllSnake:
 
     @preview.setter
     def preview(self, preview):
-        """Sets the preview of this ExtensionAllSnake.
+        r"""Sets the preview of this ExtensionAllSnake.
 
         是否支持预览
 
@@ -871,7 +871,7 @@ class ExtensionAllSnake:
 
     @property
     def ext_info(self):
-        """Gets the ext_info of this ExtensionAllSnake.
+        r"""Gets the ext_info of this ExtensionAllSnake.
 
         :return: The ext_info of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionExternalInfo`
@@ -880,7 +880,7 @@ class ExtensionAllSnake:
 
     @ext_info.setter
     def ext_info(self, ext_info):
-        """Sets the ext_info of this ExtensionAllSnake.
+        r"""Sets the ext_info of this ExtensionAllSnake.
 
         :param ext_info: The ext_info of this ExtensionAllSnake.
         :type ext_info: :class:`huaweicloudsdkcloudide.v2.ExtensionExternalInfo`
@@ -889,7 +889,7 @@ class ExtensionAllSnake:
 
     @property
     def platform(self):
-        """Gets the platform of this ExtensionAllSnake.
+        r"""Gets the platform of this ExtensionAllSnake.
 
         安装目标
 
@@ -900,7 +900,7 @@ class ExtensionAllSnake:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ExtensionAllSnake.
+        r"""Sets the platform of this ExtensionAllSnake.
 
         安装目标
 
@@ -911,7 +911,7 @@ class ExtensionAllSnake:
 
     @property
     def check_result(self):
-        """Gets the check_result of this ExtensionAllSnake.
+        r"""Gets the check_result of this ExtensionAllSnake.
 
         :return: The check_result of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckResult`
@@ -920,7 +920,7 @@ class ExtensionAllSnake:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this ExtensionAllSnake.
+        r"""Sets the check_result of this ExtensionAllSnake.
 
         :param check_result: The check_result of this ExtensionAllSnake.
         :type check_result: :class:`huaweicloudsdkcloudide.v2.CheckResult`
@@ -929,7 +929,7 @@ class ExtensionAllSnake:
 
     @property
     def gray_version_count(self):
-        """Gets the gray_version_count of this ExtensionAllSnake.
+        r"""Gets the gray_version_count of this ExtensionAllSnake.
 
         灰度版本数量
 
@@ -940,7 +940,7 @@ class ExtensionAllSnake:
 
     @gray_version_count.setter
     def gray_version_count(self, gray_version_count):
-        """Sets the gray_version_count of this ExtensionAllSnake.
+        r"""Sets the gray_version_count of this ExtensionAllSnake.
 
         灰度版本数量
 
@@ -951,7 +951,7 @@ class ExtensionAllSnake:
 
     @property
     def extension_owner(self):
-        """Gets the extension_owner of this ExtensionAllSnake.
+        r"""Gets the extension_owner of this ExtensionAllSnake.
 
         插件作者
 
@@ -962,7 +962,7 @@ class ExtensionAllSnake:
 
     @extension_owner.setter
     def extension_owner(self, extension_owner):
-        """Sets the extension_owner of this ExtensionAllSnake.
+        r"""Sets the extension_owner of this ExtensionAllSnake.
 
         插件作者
 

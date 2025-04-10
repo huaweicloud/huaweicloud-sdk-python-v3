@@ -28,7 +28,7 @@ class ShowServerGroupTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ShowServerGroupTagResponse
+        r"""ShowServerGroupTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowServerGroupTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowServerGroupTagResponse.
+        r"""Gets the tags of this ShowServerGroupTagResponse.
 
         标签列表
 
@@ -62,7 +62,7 @@ class ShowServerGroupTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowServerGroupTagResponse.
+        r"""Sets the tags of this ShowServerGroupTagResponse.
 
         标签列表
 
@@ -73,7 +73,7 @@ class ShowServerGroupTagResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowServerGroupTagResponse.
+        r"""Gets the sys_tags of this ShowServerGroupTagResponse.
 
         仅op_service权限才可以获取此字段，非op_service场景不能返回此字段，目前只包含一个resource_tag结构体。 > - key：_sys_enterprise_project_id。 > - value：企业项目id，0表示默认企业项目。
 
@@ -84,7 +84,7 @@ class ShowServerGroupTagResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowServerGroupTagResponse.
+        r"""Sets the sys_tags of this ShowServerGroupTagResponse.
 
         仅op_service权限才可以获取此字段，非op_service场景不能返回此字段，目前只包含一个resource_tag结构体。 > - key：_sys_enterprise_project_id。 > - value：企业项目id，0表示默认企业项目。
 

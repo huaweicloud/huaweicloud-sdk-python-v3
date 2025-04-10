@@ -27,7 +27,7 @@ class ChannelCreateInfo:
     }
 
     def __init__(self, channel_name=None, channel_description=None):
-        """ChannelCreateInfo
+        r"""ChannelCreateInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChannelCreateInfo:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this ChannelCreateInfo.
+        r"""Gets the channel_name of this ChannelCreateInfo.
 
         通道名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
 
@@ -60,7 +60,7 @@ class ChannelCreateInfo:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this ChannelCreateInfo.
+        r"""Sets the channel_name of this ChannelCreateInfo.
 
         通道名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
 
@@ -71,7 +71,7 @@ class ChannelCreateInfo:
 
     @property
     def channel_description(self):
-        """Gets the channel_description of this ChannelCreateInfo.
+        r"""Gets the channel_description of this ChannelCreateInfo.
 
         通道描述
 
@@ -82,7 +82,7 @@ class ChannelCreateInfo:
 
     @channel_description.setter
     def channel_description(self, channel_description):
-        """Sets the channel_description of this ChannelCreateInfo.
+        r"""Sets the channel_description of this ChannelCreateInfo.
 
         通道描述
 

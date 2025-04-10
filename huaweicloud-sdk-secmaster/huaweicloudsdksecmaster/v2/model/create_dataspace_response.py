@@ -46,7 +46,7 @@ class CreateDataspaceResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, region_id=None, project_id=None, dataspace_id=None, dataspace_name=None, dataspace_type=None, description=None, create_by=None, create_time=None, update_by=None, update_time=None):
-        """CreateDataspaceResponse
+        r"""CreateDataspaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateDataspaceResponse.
+        r"""Gets the domain_id of this CreateDataspaceResponse.
 
         账号ID
 
@@ -125,7 +125,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateDataspaceResponse.
+        r"""Sets the domain_id of this CreateDataspaceResponse.
 
         账号ID
 
@@ -136,7 +136,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateDataspaceResponse.
+        r"""Gets the region_id of this CreateDataspaceResponse.
 
         region ID
 
@@ -147,7 +147,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateDataspaceResponse.
+        r"""Sets the region_id of this CreateDataspaceResponse.
 
         region ID
 
@@ -158,7 +158,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateDataspaceResponse.
+        r"""Gets the project_id of this CreateDataspaceResponse.
 
         项目ID
 
@@ -169,7 +169,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateDataspaceResponse.
+        r"""Sets the project_id of this CreateDataspaceResponse.
 
         项目ID
 
@@ -180,7 +180,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def dataspace_id(self):
-        """Gets the dataspace_id of this CreateDataspaceResponse.
+        r"""Gets the dataspace_id of this CreateDataspaceResponse.
 
         工作空间ID
 
@@ -191,7 +191,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @dataspace_id.setter
     def dataspace_id(self, dataspace_id):
-        """Sets the dataspace_id of this CreateDataspaceResponse.
+        r"""Sets the dataspace_id of this CreateDataspaceResponse.
 
         工作空间ID
 
@@ -202,7 +202,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def dataspace_name(self):
-        """Gets the dataspace_name of this CreateDataspaceResponse.
+        r"""Gets the dataspace_name of this CreateDataspaceResponse.
 
         工作空间名称
 
@@ -213,7 +213,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @dataspace_name.setter
     def dataspace_name(self, dataspace_name):
-        """Sets the dataspace_name of this CreateDataspaceResponse.
+        r"""Sets the dataspace_name of this CreateDataspaceResponse.
 
         工作空间名称
 
@@ -224,7 +224,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def dataspace_type(self):
-        """Gets the dataspace_type of this CreateDataspaceResponse.
+        r"""Gets the dataspace_type of this CreateDataspaceResponse.
 
         数据空间类型；可选值：system-defined(系统预定义)、user-defined(用户自定义)
 
@@ -235,7 +235,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @dataspace_type.setter
     def dataspace_type(self, dataspace_type):
-        """Sets the dataspace_type of this CreateDataspaceResponse.
+        r"""Sets the dataspace_type of this CreateDataspaceResponse.
 
         数据空间类型；可选值：system-defined(系统预定义)、user-defined(用户自定义)
 
@@ -246,7 +246,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateDataspaceResponse.
+        r"""Gets the description of this CreateDataspaceResponse.
 
         描述
 
@@ -257,7 +257,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDataspaceResponse.
+        r"""Sets the description of this CreateDataspaceResponse.
 
         描述
 
@@ -268,7 +268,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def create_by(self):
-        """Gets the create_by of this CreateDataspaceResponse.
+        r"""Gets the create_by of this CreateDataspaceResponse.
 
         创建者
 
@@ -279,7 +279,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CreateDataspaceResponse.
+        r"""Sets the create_by of this CreateDataspaceResponse.
 
         创建者
 
@@ -290,7 +290,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDataspaceResponse.
+        r"""Gets the create_time of this CreateDataspaceResponse.
 
         创建时间
 
@@ -301,7 +301,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDataspaceResponse.
+        r"""Sets the create_time of this CreateDataspaceResponse.
 
         创建时间
 
@@ -312,7 +312,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def update_by(self):
-        """Gets the update_by of this CreateDataspaceResponse.
+        r"""Gets the update_by of this CreateDataspaceResponse.
 
         更新者
 
@@ -323,7 +323,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this CreateDataspaceResponse.
+        r"""Sets the update_by of this CreateDataspaceResponse.
 
         更新者
 
@@ -334,7 +334,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateDataspaceResponse.
+        r"""Gets the update_time of this CreateDataspaceResponse.
 
         更新时间
 
@@ -345,7 +345,7 @@ class CreateDataspaceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateDataspaceResponse.
+        r"""Sets the update_time of this CreateDataspaceResponse.
 
         更新时间
 

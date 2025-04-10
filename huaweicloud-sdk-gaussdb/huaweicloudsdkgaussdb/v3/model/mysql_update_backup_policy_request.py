@@ -25,7 +25,7 @@ class MysqlUpdateBackupPolicyRequest:
     }
 
     def __init__(self, backup_policy=None):
-        """MysqlUpdateBackupPolicyRequest
+        r"""MysqlUpdateBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MysqlUpdateBackupPolicyRequest:
 
     @property
     def backup_policy(self):
-        """Gets the backup_policy of this MysqlUpdateBackupPolicyRequest.
+        r"""Gets the backup_policy of this MysqlUpdateBackupPolicyRequest.
 
         :return: The backup_policy of this MysqlUpdateBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`
@@ -51,7 +51,7 @@ class MysqlUpdateBackupPolicyRequest:
 
     @backup_policy.setter
     def backup_policy(self, backup_policy):
-        """Sets the backup_policy of this MysqlUpdateBackupPolicyRequest.
+        r"""Sets the backup_policy of this MysqlUpdateBackupPolicyRequest.
 
         :param backup_policy: The backup_policy of this MysqlUpdateBackupPolicyRequest.
         :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`

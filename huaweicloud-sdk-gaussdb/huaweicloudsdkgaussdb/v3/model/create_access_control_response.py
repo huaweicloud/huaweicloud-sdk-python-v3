@@ -26,7 +26,7 @@ class CreateAccessControlResponse(SdkResponse):
     }
 
     def __init__(self, open_access_control=None):
-        """CreateAccessControlResponse
+        r"""CreateAccessControlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAccessControlResponse(SdkResponse):
 
     @property
     def open_access_control(self):
-        """Gets the open_access_control of this CreateAccessControlResponse.
+        r"""Gets the open_access_control of this CreateAccessControlResponse.
 
         是否已开启访问控制。 取值： - true：开启。 - false：关闭。
 
@@ -55,7 +55,7 @@ class CreateAccessControlResponse(SdkResponse):
 
     @open_access_control.setter
     def open_access_control(self, open_access_control):
-        """Sets the open_access_control of this CreateAccessControlResponse.
+        r"""Sets the open_access_control of this CreateAccessControlResponse.
 
         是否已开启访问控制。 取值： - true：开启。 - false：关闭。
 

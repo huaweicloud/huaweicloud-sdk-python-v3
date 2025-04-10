@@ -31,7 +31,7 @@ class PublicipInfo:
     }
 
     def __init__(self, ip_version=None, publicip_address=None, publicip_id=None, publicip_type=None):
-        """PublicipInfo
+        r"""PublicipInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PublicipInfo:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicipInfo.
+        r"""Gets the ip_version of this PublicipInfo.
 
           IP版本的信息
 
@@ -75,7 +75,7 @@ class PublicipInfo:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicipInfo.
+        r"""Sets the ip_version of this PublicipInfo.
 
           IP版本的信息
 
@@ -86,7 +86,7 @@ class PublicipInfo:
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this PublicipInfo.
+        r"""Gets the publicip_address of this PublicipInfo.
 
         弹性公网IP
 
@@ -97,7 +97,7 @@ class PublicipInfo:
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this PublicipInfo.
+        r"""Sets the publicip_address of this PublicipInfo.
 
         弹性公网IP
 
@@ -108,7 +108,7 @@ class PublicipInfo:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this PublicipInfo.
+        r"""Gets the publicip_id of this PublicipInfo.
 
         弹性公网IP的ID。
 
@@ -119,7 +119,7 @@ class PublicipInfo:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this PublicipInfo.
+        r"""Sets the publicip_id of this PublicipInfo.
 
         弹性公网IP的ID。
 
@@ -130,7 +130,7 @@ class PublicipInfo:
 
     @property
     def publicip_type(self):
-        """Gets the publicip_type of this PublicipInfo.
+        r"""Gets the publicip_type of this PublicipInfo.
 
         功能说明：弹性公网IP的类型
 
@@ -141,7 +141,7 @@ class PublicipInfo:
 
     @publicip_type.setter
     def publicip_type(self, publicip_type):
-        """Sets the publicip_type of this PublicipInfo.
+        r"""Sets the publicip_type of this PublicipInfo.
 
         功能说明：弹性公网IP的类型
 

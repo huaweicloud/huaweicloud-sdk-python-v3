@@ -67,7 +67,7 @@ class ApiAuthInfo:
     }
 
     def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None, env_name=None, app_id=None):
-        """ApiAuthInfo
+        r"""ApiAuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ApiAuthInfo:
 
     @property
     def id(self):
-        """Gets the id of this ApiAuthInfo.
+        r"""Gets the id of this ApiAuthInfo.
 
         授权关系编号
 
@@ -201,7 +201,7 @@ class ApiAuthInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiAuthInfo.
+        r"""Sets the id of this ApiAuthInfo.
 
         授权关系编号
 
@@ -212,7 +212,7 @@ class ApiAuthInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiAuthInfo.
+        r"""Gets the api_id of this ApiAuthInfo.
 
         API的编号
 
@@ -223,7 +223,7 @@ class ApiAuthInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiAuthInfo.
+        r"""Sets the api_id of this ApiAuthInfo.
 
         API的编号
 
@@ -234,7 +234,7 @@ class ApiAuthInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ApiAuthInfo.
+        r"""Gets the api_name of this ApiAuthInfo.
 
         API的名称
 
@@ -245,7 +245,7 @@ class ApiAuthInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ApiAuthInfo.
+        r"""Sets the api_name of this ApiAuthInfo.
 
         API的名称
 
@@ -256,7 +256,7 @@ class ApiAuthInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApiAuthInfo.
+        r"""Gets the group_name of this ApiAuthInfo.
 
         API绑定的分组名称
 
@@ -267,7 +267,7 @@ class ApiAuthInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApiAuthInfo.
+        r"""Sets the group_name of this ApiAuthInfo.
 
         API绑定的分组名称
 
@@ -278,7 +278,7 @@ class ApiAuthInfo:
 
     @property
     def api_type(self):
-        """Gets the api_type of this ApiAuthInfo.
+        r"""Gets the api_type of this ApiAuthInfo.
 
         API类型
 
@@ -289,7 +289,7 @@ class ApiAuthInfo:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this ApiAuthInfo.
+        r"""Sets the api_type of this ApiAuthInfo.
 
         API类型
 
@@ -300,7 +300,7 @@ class ApiAuthInfo:
 
     @property
     def api_remark(self):
-        """Gets the api_remark of this ApiAuthInfo.
+        r"""Gets the api_remark of this ApiAuthInfo.
 
         API的描述信息
 
@@ -311,7 +311,7 @@ class ApiAuthInfo:
 
     @api_remark.setter
     def api_remark(self, api_remark):
-        """Sets the api_remark of this ApiAuthInfo.
+        r"""Sets the api_remark of this ApiAuthInfo.
 
         API的描述信息
 
@@ -322,7 +322,7 @@ class ApiAuthInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiAuthInfo.
+        r"""Gets the env_id of this ApiAuthInfo.
 
         api授权绑定的环境ID
 
@@ -333,7 +333,7 @@ class ApiAuthInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiAuthInfo.
+        r"""Sets the env_id of this ApiAuthInfo.
 
         api授权绑定的环境ID
 
@@ -344,7 +344,7 @@ class ApiAuthInfo:
 
     @property
     def auth_role(self):
-        """Gets the auth_role of this ApiAuthInfo.
+        r"""Gets the auth_role of this ApiAuthInfo.
 
         授权者
 
@@ -355,7 +355,7 @@ class ApiAuthInfo:
 
     @auth_role.setter
     def auth_role(self, auth_role):
-        """Sets the auth_role of this ApiAuthInfo.
+        r"""Sets the auth_role of this ApiAuthInfo.
 
         授权者
 
@@ -366,7 +366,7 @@ class ApiAuthInfo:
 
     @property
     def auth_time(self):
-        """Gets the auth_time of this ApiAuthInfo.
+        r"""Gets the auth_time of this ApiAuthInfo.
 
         授权创建的时间
 
@@ -377,7 +377,7 @@ class ApiAuthInfo:
 
     @auth_time.setter
     def auth_time(self, auth_time):
-        """Sets the auth_time of this ApiAuthInfo.
+        r"""Sets the auth_time of this ApiAuthInfo.
 
         授权创建的时间
 
@@ -388,7 +388,7 @@ class ApiAuthInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ApiAuthInfo.
+        r"""Gets the app_name of this ApiAuthInfo.
 
         APP的名称
 
@@ -399,7 +399,7 @@ class ApiAuthInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ApiAuthInfo.
+        r"""Sets the app_name of this ApiAuthInfo.
 
         APP的名称
 
@@ -410,7 +410,7 @@ class ApiAuthInfo:
 
     @property
     def app_remark(self):
-        """Gets the app_remark of this ApiAuthInfo.
+        r"""Gets the app_remark of this ApiAuthInfo.
 
         APP的描述
 
@@ -421,7 +421,7 @@ class ApiAuthInfo:
 
     @app_remark.setter
     def app_remark(self, app_remark):
-        """Sets the app_remark of this ApiAuthInfo.
+        r"""Sets the app_remark of this ApiAuthInfo.
 
         APP的描述
 
@@ -432,7 +432,7 @@ class ApiAuthInfo:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ApiAuthInfo.
+        r"""Gets the app_type of this ApiAuthInfo.
 
         APP的类型： - apig：存量apic客户端，新建实例不支持此类型 - roma：roma集成客户端
 
@@ -443,7 +443,7 @@ class ApiAuthInfo:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ApiAuthInfo.
+        r"""Sets the app_type of this ApiAuthInfo.
 
         APP的类型： - apig：存量apic客户端，新建实例不支持此类型 - roma：roma集成客户端
 
@@ -454,7 +454,7 @@ class ApiAuthInfo:
 
     @property
     def app_creator(self):
-        """Gets the app_creator of this ApiAuthInfo.
+        r"""Gets the app_creator of this ApiAuthInfo.
 
         APP的创建者，取值如下： - USER：租户自己创建 - MARKET：API市场分配，暂不支持
 
@@ -465,7 +465,7 @@ class ApiAuthInfo:
 
     @app_creator.setter
     def app_creator(self, app_creator):
-        """Sets the app_creator of this ApiAuthInfo.
+        r"""Sets the app_creator of this ApiAuthInfo.
 
         APP的创建者，取值如下： - USER：租户自己创建 - MARKET：API市场分配，暂不支持
 
@@ -476,7 +476,7 @@ class ApiAuthInfo:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ApiAuthInfo.
+        r"""Gets the publish_id of this ApiAuthInfo.
 
         API的发布编号
 
@@ -487,7 +487,7 @@ class ApiAuthInfo:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ApiAuthInfo.
+        r"""Sets the publish_id of this ApiAuthInfo.
 
         API的发布编号
 
@@ -498,7 +498,7 @@ class ApiAuthInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiAuthInfo.
+        r"""Gets the group_id of this ApiAuthInfo.
 
         API绑定的分组ID
 
@@ -509,7 +509,7 @@ class ApiAuthInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiAuthInfo.
+        r"""Sets the group_id of this ApiAuthInfo.
 
         API绑定的分组ID
 
@@ -520,7 +520,7 @@ class ApiAuthInfo:
 
     @property
     def auth_tunnel(self):
-        """Gets the auth_tunnel of this ApiAuthInfo.
+        r"""Gets the auth_tunnel of this ApiAuthInfo.
 
         授权通道类型 - NORMAL：普通通道 - GREEN：绿色通道
 
@@ -531,7 +531,7 @@ class ApiAuthInfo:
 
     @auth_tunnel.setter
     def auth_tunnel(self, auth_tunnel):
-        """Sets the auth_tunnel of this ApiAuthInfo.
+        r"""Sets the auth_tunnel of this ApiAuthInfo.
 
         授权通道类型 - NORMAL：普通通道 - GREEN：绿色通道
 
@@ -542,7 +542,7 @@ class ApiAuthInfo:
 
     @property
     def auth_whitelist(self):
-        """Gets the auth_whitelist of this ApiAuthInfo.
+        r"""Gets the auth_whitelist of this ApiAuthInfo.
 
         绿色通道的白名单配置
 
@@ -553,7 +553,7 @@ class ApiAuthInfo:
 
     @auth_whitelist.setter
     def auth_whitelist(self, auth_whitelist):
-        """Sets the auth_whitelist of this ApiAuthInfo.
+        r"""Sets the auth_whitelist of this ApiAuthInfo.
 
         绿色通道的白名单配置
 
@@ -564,7 +564,7 @@ class ApiAuthInfo:
 
     @property
     def auth_blacklist(self):
-        """Gets the auth_blacklist of this ApiAuthInfo.
+        r"""Gets the auth_blacklist of this ApiAuthInfo.
 
         绿色通道的黑名单配置
 
@@ -575,7 +575,7 @@ class ApiAuthInfo:
 
     @auth_blacklist.setter
     def auth_blacklist(self, auth_blacklist):
-        """Sets the auth_blacklist of this ApiAuthInfo.
+        r"""Sets the auth_blacklist of this ApiAuthInfo.
 
         绿色通道的黑名单配置
 
@@ -586,7 +586,7 @@ class ApiAuthInfo:
 
     @property
     def visit_param(self):
-        """Gets the visit_param of this ApiAuthInfo.
+        r"""Gets the visit_param of this ApiAuthInfo.
 
         访问参数。
 
@@ -597,7 +597,7 @@ class ApiAuthInfo:
 
     @visit_param.setter
     def visit_param(self, visit_param):
-        """Sets the visit_param of this ApiAuthInfo.
+        r"""Sets the visit_param of this ApiAuthInfo.
 
         访问参数。
 
@@ -608,7 +608,7 @@ class ApiAuthInfo:
 
     @property
     def roma_app_type(self):
-        """Gets the roma_app_type of this ApiAuthInfo.
+        r"""Gets the roma_app_type of this ApiAuthInfo.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
@@ -619,7 +619,7 @@ class ApiAuthInfo:
 
     @roma_app_type.setter
     def roma_app_type(self, roma_app_type):
-        """Sets the roma_app_type of this ApiAuthInfo.
+        r"""Sets the roma_app_type of this ApiAuthInfo.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
@@ -630,7 +630,7 @@ class ApiAuthInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ApiAuthInfo.
+        r"""Gets the env_name of this ApiAuthInfo.
 
         api授权绑定的环境名称
 
@@ -641,7 +641,7 @@ class ApiAuthInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ApiAuthInfo.
+        r"""Sets the env_name of this ApiAuthInfo.
 
         api授权绑定的环境名称
 
@@ -652,7 +652,7 @@ class ApiAuthInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ApiAuthInfo.
+        r"""Gets the app_id of this ApiAuthInfo.
 
         APP的编号
 
@@ -663,7 +663,7 @@ class ApiAuthInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ApiAuthInfo.
+        r"""Sets the app_id of this ApiAuthInfo.
 
         APP的编号
 

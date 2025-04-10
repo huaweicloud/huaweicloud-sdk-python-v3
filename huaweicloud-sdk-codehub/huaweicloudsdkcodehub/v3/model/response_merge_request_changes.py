@@ -105,7 +105,7 @@ class ResponseMergeRequestChanges:
     }
 
     def __init__(self, id=None, iid=None, project_id=None, title=None, description=None, state=None, created_at=None, updated_at=None, target_branch=None, source_branch=None, user_notes_count=None, upvotes=None, downvotes=None, author=None, source_project_id=None, target_project_id=None, labels=None, work_in_progress=None, merge_when_pipeline_succeeds=None, merge_status=None, sha=None, should_remove_source_branch=None, force_remove_source_branch=None, web_url=None, squash=None, merge_request_type=None, subscribed=None, changes_count=None, latest_build_started_at=None, latest_build_finished_at=None, first_deployed_to_production_at=None, pipeline=None, diff_refs=None, merge_error=None, rebase_in_progress=None, diverged_commits_count=None, user=None, added_lines=None, removed_lines=None, changes=None, source_project=None):
-        """ResponseMergeRequestChanges
+        r"""ResponseMergeRequestChanges
 
         The model defined in huaweicloud sdk
 
@@ -323,7 +323,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def id(self):
-        """Gets the id of this ResponseMergeRequestChanges.
+        r"""Gets the id of this ResponseMergeRequestChanges.
 
         合并请求id
 
@@ -334,7 +334,7 @@ class ResponseMergeRequestChanges:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseMergeRequestChanges.
+        r"""Sets the id of this ResponseMergeRequestChanges.
 
         合并请求id
 
@@ -345,7 +345,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def iid(self):
-        """Gets the iid of this ResponseMergeRequestChanges.
+        r"""Gets the iid of this ResponseMergeRequestChanges.
 
         合并请求iid
 
@@ -356,7 +356,7 @@ class ResponseMergeRequestChanges:
 
     @iid.setter
     def iid(self, iid):
-        """Sets the iid of this ResponseMergeRequestChanges.
+        r"""Sets the iid of this ResponseMergeRequestChanges.
 
         合并请求iid
 
@@ -367,7 +367,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ResponseMergeRequestChanges.
+        r"""Gets the project_id of this ResponseMergeRequestChanges.
 
         仓库id
 
@@ -378,7 +378,7 @@ class ResponseMergeRequestChanges:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ResponseMergeRequestChanges.
+        r"""Sets the project_id of this ResponseMergeRequestChanges.
 
         仓库id
 
@@ -389,7 +389,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def title(self):
-        """Gets the title of this ResponseMergeRequestChanges.
+        r"""Gets the title of this ResponseMergeRequestChanges.
 
         合并请求标题
 
@@ -400,7 +400,7 @@ class ResponseMergeRequestChanges:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ResponseMergeRequestChanges.
+        r"""Sets the title of this ResponseMergeRequestChanges.
 
         合并请求标题
 
@@ -411,7 +411,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def description(self):
-        """Gets the description of this ResponseMergeRequestChanges.
+        r"""Gets the description of this ResponseMergeRequestChanges.
 
         合并请求描述
 
@@ -422,7 +422,7 @@ class ResponseMergeRequestChanges:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ResponseMergeRequestChanges.
+        r"""Sets the description of this ResponseMergeRequestChanges.
 
         合并请求描述
 
@@ -433,7 +433,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def state(self):
-        """Gets the state of this ResponseMergeRequestChanges.
+        r"""Gets the state of this ResponseMergeRequestChanges.
 
         合并请求状态
 
@@ -444,7 +444,7 @@ class ResponseMergeRequestChanges:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ResponseMergeRequestChanges.
+        r"""Sets the state of this ResponseMergeRequestChanges.
 
         合并请求状态
 
@@ -455,7 +455,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ResponseMergeRequestChanges.
+        r"""Gets the created_at of this ResponseMergeRequestChanges.
 
         合并请求创建时间
 
@@ -466,7 +466,7 @@ class ResponseMergeRequestChanges:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ResponseMergeRequestChanges.
+        r"""Sets the created_at of this ResponseMergeRequestChanges.
 
         合并请求创建时间
 
@@ -477,7 +477,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ResponseMergeRequestChanges.
+        r"""Gets the updated_at of this ResponseMergeRequestChanges.
 
         合并请求更新时间
 
@@ -488,7 +488,7 @@ class ResponseMergeRequestChanges:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ResponseMergeRequestChanges.
+        r"""Sets the updated_at of this ResponseMergeRequestChanges.
 
         合并请求更新时间
 
@@ -499,7 +499,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this ResponseMergeRequestChanges.
+        r"""Gets the target_branch of this ResponseMergeRequestChanges.
 
         合并请求目标分支
 
@@ -510,7 +510,7 @@ class ResponseMergeRequestChanges:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this ResponseMergeRequestChanges.
+        r"""Sets the target_branch of this ResponseMergeRequestChanges.
 
         合并请求目标分支
 
@@ -521,7 +521,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def source_branch(self):
-        """Gets the source_branch of this ResponseMergeRequestChanges.
+        r"""Gets the source_branch of this ResponseMergeRequestChanges.
 
         合并请求源分支
 
@@ -532,7 +532,7 @@ class ResponseMergeRequestChanges:
 
     @source_branch.setter
     def source_branch(self, source_branch):
-        """Sets the source_branch of this ResponseMergeRequestChanges.
+        r"""Sets the source_branch of this ResponseMergeRequestChanges.
 
         合并请求源分支
 
@@ -543,7 +543,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def user_notes_count(self):
-        """Gets the user_notes_count of this ResponseMergeRequestChanges.
+        r"""Gets the user_notes_count of this ResponseMergeRequestChanges.
 
         检视意见数量
 
@@ -554,7 +554,7 @@ class ResponseMergeRequestChanges:
 
     @user_notes_count.setter
     def user_notes_count(self, user_notes_count):
-        """Sets the user_notes_count of this ResponseMergeRequestChanges.
+        r"""Sets the user_notes_count of this ResponseMergeRequestChanges.
 
         检视意见数量
 
@@ -565,7 +565,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def upvotes(self):
-        """Gets the upvotes of this ResponseMergeRequestChanges.
+        r"""Gets the upvotes of this ResponseMergeRequestChanges.
 
         upvotes
 
@@ -576,7 +576,7 @@ class ResponseMergeRequestChanges:
 
     @upvotes.setter
     def upvotes(self, upvotes):
-        """Sets the upvotes of this ResponseMergeRequestChanges.
+        r"""Sets the upvotes of this ResponseMergeRequestChanges.
 
         upvotes
 
@@ -587,7 +587,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def downvotes(self):
-        """Gets the downvotes of this ResponseMergeRequestChanges.
+        r"""Gets the downvotes of this ResponseMergeRequestChanges.
 
         downvotes
 
@@ -598,7 +598,7 @@ class ResponseMergeRequestChanges:
 
     @downvotes.setter
     def downvotes(self, downvotes):
-        """Sets the downvotes of this ResponseMergeRequestChanges.
+        r"""Sets the downvotes of this ResponseMergeRequestChanges.
 
         downvotes
 
@@ -609,7 +609,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def author(self):
-        """Gets the author of this ResponseMergeRequestChanges.
+        r"""Gets the author of this ResponseMergeRequestChanges.
 
         :return: The author of this ResponseMergeRequestChanges.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -618,7 +618,7 @@ class ResponseMergeRequestChanges:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this ResponseMergeRequestChanges.
+        r"""Sets the author of this ResponseMergeRequestChanges.
 
         :param author: The author of this ResponseMergeRequestChanges.
         :type author: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -627,7 +627,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ResponseMergeRequestChanges.
+        r"""Gets the source_project_id of this ResponseMergeRequestChanges.
 
         合并请求源仓库id
 
@@ -638,7 +638,7 @@ class ResponseMergeRequestChanges:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ResponseMergeRequestChanges.
+        r"""Sets the source_project_id of this ResponseMergeRequestChanges.
 
         合并请求源仓库id
 
@@ -649,7 +649,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def target_project_id(self):
-        """Gets the target_project_id of this ResponseMergeRequestChanges.
+        r"""Gets the target_project_id of this ResponseMergeRequestChanges.
 
         合并请求目标仓库id
 
@@ -660,7 +660,7 @@ class ResponseMergeRequestChanges:
 
     @target_project_id.setter
     def target_project_id(self, target_project_id):
-        """Sets the target_project_id of this ResponseMergeRequestChanges.
+        r"""Sets the target_project_id of this ResponseMergeRequestChanges.
 
         合并请求目标仓库id
 
@@ -671,7 +671,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def labels(self):
-        """Gets the labels of this ResponseMergeRequestChanges.
+        r"""Gets the labels of this ResponseMergeRequestChanges.
 
         指定仓库的标签列表
 
@@ -682,7 +682,7 @@ class ResponseMergeRequestChanges:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ResponseMergeRequestChanges.
+        r"""Sets the labels of this ResponseMergeRequestChanges.
 
         指定仓库的标签列表
 
@@ -693,7 +693,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def work_in_progress(self):
-        """Gets the work_in_progress of this ResponseMergeRequestChanges.
+        r"""Gets the work_in_progress of this ResponseMergeRequestChanges.
 
         合并请求是否为wip状态
 
@@ -704,7 +704,7 @@ class ResponseMergeRequestChanges:
 
     @work_in_progress.setter
     def work_in_progress(self, work_in_progress):
-        """Sets the work_in_progress of this ResponseMergeRequestChanges.
+        r"""Sets the work_in_progress of this ResponseMergeRequestChanges.
 
         合并请求是否为wip状态
 
@@ -715,7 +715,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def merge_when_pipeline_succeeds(self):
-        """Gets the merge_when_pipeline_succeeds of this ResponseMergeRequestChanges.
+        r"""Gets the merge_when_pipeline_succeeds of this ResponseMergeRequestChanges.
 
         合并请求是否开启流水线成功后自动合入
 
@@ -726,7 +726,7 @@ class ResponseMergeRequestChanges:
 
     @merge_when_pipeline_succeeds.setter
     def merge_when_pipeline_succeeds(self, merge_when_pipeline_succeeds):
-        """Sets the merge_when_pipeline_succeeds of this ResponseMergeRequestChanges.
+        r"""Sets the merge_when_pipeline_succeeds of this ResponseMergeRequestChanges.
 
         合并请求是否开启流水线成功后自动合入
 
@@ -737,7 +737,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def merge_status(self):
-        """Gets the merge_status of this ResponseMergeRequestChanges.
+        r"""Gets the merge_status of this ResponseMergeRequestChanges.
 
         合并请求合入状态
 
@@ -748,7 +748,7 @@ class ResponseMergeRequestChanges:
 
     @merge_status.setter
     def merge_status(self, merge_status):
-        """Sets the merge_status of this ResponseMergeRequestChanges.
+        r"""Sets the merge_status of this ResponseMergeRequestChanges.
 
         合并请求合入状态
 
@@ -759,7 +759,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def sha(self):
-        """Gets the sha of this ResponseMergeRequestChanges.
+        r"""Gets the sha of this ResponseMergeRequestChanges.
 
         合并请求的head sha
 
@@ -770,7 +770,7 @@ class ResponseMergeRequestChanges:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this ResponseMergeRequestChanges.
+        r"""Sets the sha of this ResponseMergeRequestChanges.
 
         合并请求的head sha
 
@@ -781,7 +781,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def should_remove_source_branch(self):
-        """Gets the should_remove_source_branch of this ResponseMergeRequestChanges.
+        r"""Gets the should_remove_source_branch of this ResponseMergeRequestChanges.
 
         合并请求合入后是否应该移除源分支
 
@@ -792,7 +792,7 @@ class ResponseMergeRequestChanges:
 
     @should_remove_source_branch.setter
     def should_remove_source_branch(self, should_remove_source_branch):
-        """Sets the should_remove_source_branch of this ResponseMergeRequestChanges.
+        r"""Sets the should_remove_source_branch of this ResponseMergeRequestChanges.
 
         合并请求合入后是否应该移除源分支
 
@@ -803,7 +803,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def force_remove_source_branch(self):
-        """Gets the force_remove_source_branch of this ResponseMergeRequestChanges.
+        r"""Gets the force_remove_source_branch of this ResponseMergeRequestChanges.
 
         合并请求合入后是否移除源分支
 
@@ -814,7 +814,7 @@ class ResponseMergeRequestChanges:
 
     @force_remove_source_branch.setter
     def force_remove_source_branch(self, force_remove_source_branch):
-        """Sets the force_remove_source_branch of this ResponseMergeRequestChanges.
+        r"""Sets the force_remove_source_branch of this ResponseMergeRequestChanges.
 
         合并请求合入后是否移除源分支
 
@@ -825,7 +825,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def web_url(self):
-        """Gets the web_url of this ResponseMergeRequestChanges.
+        r"""Gets the web_url of this ResponseMergeRequestChanges.
 
         合并请求url
 
@@ -836,7 +836,7 @@ class ResponseMergeRequestChanges:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this ResponseMergeRequestChanges.
+        r"""Sets the web_url of this ResponseMergeRequestChanges.
 
         合并请求url
 
@@ -847,7 +847,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def squash(self):
-        """Gets the squash of this ResponseMergeRequestChanges.
+        r"""Gets the squash of this ResponseMergeRequestChanges.
 
         合并请求是否开启squash合并
 
@@ -858,7 +858,7 @@ class ResponseMergeRequestChanges:
 
     @squash.setter
     def squash(self, squash):
-        """Sets the squash of this ResponseMergeRequestChanges.
+        r"""Sets the squash of this ResponseMergeRequestChanges.
 
         合并请求是否开启squash合并
 
@@ -869,7 +869,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def merge_request_type(self):
-        """Gets the merge_request_type of this ResponseMergeRequestChanges.
+        r"""Gets the merge_request_type of this ResponseMergeRequestChanges.
 
         合并请求类型
 
@@ -880,7 +880,7 @@ class ResponseMergeRequestChanges:
 
     @merge_request_type.setter
     def merge_request_type(self, merge_request_type):
-        """Sets the merge_request_type of this ResponseMergeRequestChanges.
+        r"""Sets the merge_request_type of this ResponseMergeRequestChanges.
 
         合并请求类型
 
@@ -891,7 +891,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def subscribed(self):
-        """Gets the subscribed of this ResponseMergeRequestChanges.
+        r"""Gets the subscribed of this ResponseMergeRequestChanges.
 
         是否订阅
 
@@ -902,7 +902,7 @@ class ResponseMergeRequestChanges:
 
     @subscribed.setter
     def subscribed(self, subscribed):
-        """Sets the subscribed of this ResponseMergeRequestChanges.
+        r"""Sets the subscribed of this ResponseMergeRequestChanges.
 
         是否订阅
 
@@ -913,7 +913,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def changes_count(self):
-        """Gets the changes_count of this ResponseMergeRequestChanges.
+        r"""Gets the changes_count of this ResponseMergeRequestChanges.
 
         合并请求变更文件数量
 
@@ -924,7 +924,7 @@ class ResponseMergeRequestChanges:
 
     @changes_count.setter
     def changes_count(self, changes_count):
-        """Sets the changes_count of this ResponseMergeRequestChanges.
+        r"""Sets the changes_count of this ResponseMergeRequestChanges.
 
         合并请求变更文件数量
 
@@ -935,7 +935,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def latest_build_started_at(self):
-        """Gets the latest_build_started_at of this ResponseMergeRequestChanges.
+        r"""Gets the latest_build_started_at of this ResponseMergeRequestChanges.
 
         合并请求最新构建开始时间
 
@@ -946,7 +946,7 @@ class ResponseMergeRequestChanges:
 
     @latest_build_started_at.setter
     def latest_build_started_at(self, latest_build_started_at):
-        """Sets the latest_build_started_at of this ResponseMergeRequestChanges.
+        r"""Sets the latest_build_started_at of this ResponseMergeRequestChanges.
 
         合并请求最新构建开始时间
 
@@ -957,7 +957,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def latest_build_finished_at(self):
-        """Gets the latest_build_finished_at of this ResponseMergeRequestChanges.
+        r"""Gets the latest_build_finished_at of this ResponseMergeRequestChanges.
 
         合并请求最新构建结束时间
 
@@ -968,7 +968,7 @@ class ResponseMergeRequestChanges:
 
     @latest_build_finished_at.setter
     def latest_build_finished_at(self, latest_build_finished_at):
-        """Sets the latest_build_finished_at of this ResponseMergeRequestChanges.
+        r"""Sets the latest_build_finished_at of this ResponseMergeRequestChanges.
 
         合并请求最新构建结束时间
 
@@ -979,7 +979,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def first_deployed_to_production_at(self):
-        """Gets the first_deployed_to_production_at of this ResponseMergeRequestChanges.
+        r"""Gets the first_deployed_to_production_at of this ResponseMergeRequestChanges.
 
         first deployed to production at
 
@@ -990,7 +990,7 @@ class ResponseMergeRequestChanges:
 
     @first_deployed_to_production_at.setter
     def first_deployed_to_production_at(self, first_deployed_to_production_at):
-        """Sets the first_deployed_to_production_at of this ResponseMergeRequestChanges.
+        r"""Sets the first_deployed_to_production_at of this ResponseMergeRequestChanges.
 
         first deployed to production at
 
@@ -1001,7 +1001,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def pipeline(self):
-        """Gets the pipeline of this ResponseMergeRequestChanges.
+        r"""Gets the pipeline of this ResponseMergeRequestChanges.
 
         :return: The pipeline of this ResponseMergeRequestChanges.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PipelineBasicDto`
@@ -1010,7 +1010,7 @@ class ResponseMergeRequestChanges:
 
     @pipeline.setter
     def pipeline(self, pipeline):
-        """Sets the pipeline of this ResponseMergeRequestChanges.
+        r"""Sets the pipeline of this ResponseMergeRequestChanges.
 
         :param pipeline: The pipeline of this ResponseMergeRequestChanges.
         :type pipeline: :class:`huaweicloudsdkcodehub.v3.PipelineBasicDto`
@@ -1019,7 +1019,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def diff_refs(self):
-        """Gets the diff_refs of this ResponseMergeRequestChanges.
+        r"""Gets the diff_refs of this ResponseMergeRequestChanges.
 
         :return: The diff_refs of this ResponseMergeRequestChanges.
         :rtype: :class:`huaweicloudsdkcodehub.v3.DiffRefsDto`
@@ -1028,7 +1028,7 @@ class ResponseMergeRequestChanges:
 
     @diff_refs.setter
     def diff_refs(self, diff_refs):
-        """Sets the diff_refs of this ResponseMergeRequestChanges.
+        r"""Sets the diff_refs of this ResponseMergeRequestChanges.
 
         :param diff_refs: The diff_refs of this ResponseMergeRequestChanges.
         :type diff_refs: :class:`huaweicloudsdkcodehub.v3.DiffRefsDto`
@@ -1037,7 +1037,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def merge_error(self):
-        """Gets the merge_error of this ResponseMergeRequestChanges.
+        r"""Gets the merge_error of this ResponseMergeRequestChanges.
 
         合并请求操作错误信息
 
@@ -1048,7 +1048,7 @@ class ResponseMergeRequestChanges:
 
     @merge_error.setter
     def merge_error(self, merge_error):
-        """Sets the merge_error of this ResponseMergeRequestChanges.
+        r"""Sets the merge_error of this ResponseMergeRequestChanges.
 
         合并请求操作错误信息
 
@@ -1059,7 +1059,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def rebase_in_progress(self):
-        """Gets the rebase_in_progress of this ResponseMergeRequestChanges.
+        r"""Gets the rebase_in_progress of this ResponseMergeRequestChanges.
 
         合并请求是否rebase中
 
@@ -1070,7 +1070,7 @@ class ResponseMergeRequestChanges:
 
     @rebase_in_progress.setter
     def rebase_in_progress(self, rebase_in_progress):
-        """Sets the rebase_in_progress of this ResponseMergeRequestChanges.
+        r"""Sets the rebase_in_progress of this ResponseMergeRequestChanges.
 
         合并请求是否rebase中
 
@@ -1081,7 +1081,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def diverged_commits_count(self):
-        """Gets the diverged_commits_count of this ResponseMergeRequestChanges.
+        r"""Gets the diverged_commits_count of this ResponseMergeRequestChanges.
 
         合并请求落后提交数量
 
@@ -1092,7 +1092,7 @@ class ResponseMergeRequestChanges:
 
     @diverged_commits_count.setter
     def diverged_commits_count(self, diverged_commits_count):
-        """Sets the diverged_commits_count of this ResponseMergeRequestChanges.
+        r"""Sets the diverged_commits_count of this ResponseMergeRequestChanges.
 
         合并请求落后提交数量
 
@@ -1103,7 +1103,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def user(self):
-        """Gets the user of this ResponseMergeRequestChanges.
+        r"""Gets the user of this ResponseMergeRequestChanges.
 
         :return: The user of this ResponseMergeRequestChanges.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeRequestListDtoUser`
@@ -1112,7 +1112,7 @@ class ResponseMergeRequestChanges:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ResponseMergeRequestChanges.
+        r"""Sets the user of this ResponseMergeRequestChanges.
 
         :param user: The user of this ResponseMergeRequestChanges.
         :type user: :class:`huaweicloudsdkcodehub.v3.MergeRequestListDtoUser`
@@ -1121,7 +1121,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def added_lines(self):
-        """Gets the added_lines of this ResponseMergeRequestChanges.
+        r"""Gets the added_lines of this ResponseMergeRequestChanges.
 
         合并请求增加行数
 
@@ -1132,7 +1132,7 @@ class ResponseMergeRequestChanges:
 
     @added_lines.setter
     def added_lines(self, added_lines):
-        """Sets the added_lines of this ResponseMergeRequestChanges.
+        r"""Sets the added_lines of this ResponseMergeRequestChanges.
 
         合并请求增加行数
 
@@ -1143,7 +1143,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def removed_lines(self):
-        """Gets the removed_lines of this ResponseMergeRequestChanges.
+        r"""Gets the removed_lines of this ResponseMergeRequestChanges.
 
         合并请求删除行数
 
@@ -1154,7 +1154,7 @@ class ResponseMergeRequestChanges:
 
     @removed_lines.setter
     def removed_lines(self, removed_lines):
-        """Sets the removed_lines of this ResponseMergeRequestChanges.
+        r"""Sets the removed_lines of this ResponseMergeRequestChanges.
 
         合并请求删除行数
 
@@ -1165,7 +1165,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def changes(self):
-        """Gets the changes of this ResponseMergeRequestChanges.
+        r"""Gets the changes of this ResponseMergeRequestChanges.
 
         合并请求文件变更
 
@@ -1176,7 +1176,7 @@ class ResponseMergeRequestChanges:
 
     @changes.setter
     def changes(self, changes):
-        """Sets the changes of this ResponseMergeRequestChanges.
+        r"""Sets the changes of this ResponseMergeRequestChanges.
 
         合并请求文件变更
 
@@ -1187,7 +1187,7 @@ class ResponseMergeRequestChanges:
 
     @property
     def source_project(self):
-        """Gets the source_project of this ResponseMergeRequestChanges.
+        r"""Gets the source_project of this ResponseMergeRequestChanges.
 
         :return: The source_project of this ResponseMergeRequestChanges.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ProjectSimpleDto`
@@ -1196,7 +1196,7 @@ class ResponseMergeRequestChanges:
 
     @source_project.setter
     def source_project(self, source_project):
-        """Sets the source_project of this ResponseMergeRequestChanges.
+        r"""Sets the source_project of this ResponseMergeRequestChanges.
 
         :param source_project: The source_project of this ResponseMergeRequestChanges.
         :type source_project: :class:`huaweicloudsdkcodehub.v3.ProjectSimpleDto`

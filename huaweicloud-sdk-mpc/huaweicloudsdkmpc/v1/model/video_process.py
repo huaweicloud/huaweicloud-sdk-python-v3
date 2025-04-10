@@ -37,7 +37,7 @@ class VideoProcess:
     }
 
     def __init__(self, hls_init_count=None, hls_init_interval=None, hls_storage_type=None, rotate=None, adaptation=None, upsample=None, hls_segment_type=None):
-        """VideoProcess
+        r"""VideoProcess
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VideoProcess:
 
     @property
     def hls_init_count(self):
-        """Gets the hls_init_count of this VideoProcess.
+        r"""Gets the hls_init_count of this VideoProcess.
 
         需要单独设置时长的HLS起始分片数量。与hls_init_interval配合使用，设置前面hls_init_count个HLS分片时长。 为0表示不单独配置时长。 
 
@@ -96,7 +96,7 @@ class VideoProcess:
 
     @hls_init_count.setter
     def hls_init_count(self, hls_init_count):
-        """Sets the hls_init_count of this VideoProcess.
+        r"""Sets the hls_init_count of this VideoProcess.
 
         需要单独设置时长的HLS起始分片数量。与hls_init_interval配合使用，设置前面hls_init_count个HLS分片时长。 为0表示不单独配置时长。 
 
@@ -107,7 +107,7 @@ class VideoProcess:
 
     @property
     def hls_init_interval(self):
-        """Gets the hls_init_interval of this VideoProcess.
+        r"""Gets the hls_init_interval of this VideoProcess.
 
         表示前面hls_init_count个HLS分片的时长,hls_init_count不为0时，该字段才起作用。 
 
@@ -118,7 +118,7 @@ class VideoProcess:
 
     @hls_init_interval.setter
     def hls_init_interval(self, hls_init_interval):
-        """Sets the hls_init_interval of this VideoProcess.
+        r"""Sets the hls_init_interval of this VideoProcess.
 
         表示前面hls_init_count个HLS分片的时长,hls_init_count不为0时，该字段才起作用。 
 
@@ -129,7 +129,7 @@ class VideoProcess:
 
     @property
     def hls_storage_type(self):
-        """Gets the hls_storage_type of this VideoProcess.
+        r"""Gets the hls_storage_type of this VideoProcess.
 
         hls的音视频流存储方式。  - composite：存储在同一个文件中。 - separate：存储在不同的文件中 
 
@@ -140,7 +140,7 @@ class VideoProcess:
 
     @hls_storage_type.setter
     def hls_storage_type(self, hls_storage_type):
-        """Sets the hls_storage_type of this VideoProcess.
+        r"""Sets the hls_storage_type of this VideoProcess.
 
         hls的音视频流存储方式。  - composite：存储在同一个文件中。 - separate：存储在不同的文件中 
 
@@ -151,7 +151,7 @@ class VideoProcess:
 
     @property
     def rotate(self):
-        """Gets the rotate of this VideoProcess.
+        r"""Gets the rotate of this VideoProcess.
 
         视频顺时针旋转角度。  - 0：表示不旋转 - 1：表示顺时针旋转90度 - 2：表示顺时针旋转180度 - 3：表示顺时针旋转270度 
 
@@ -162,7 +162,7 @@ class VideoProcess:
 
     @rotate.setter
     def rotate(self, rotate):
-        """Sets the rotate of this VideoProcess.
+        r"""Sets the rotate of this VideoProcess.
 
         视频顺时针旋转角度。  - 0：表示不旋转 - 1：表示顺时针旋转90度 - 2：表示顺时针旋转180度 - 3：表示顺时针旋转270度 
 
@@ -173,7 +173,7 @@ class VideoProcess:
 
     @property
     def adaptation(self):
-        """Gets the adaptation of this VideoProcess.
+        r"""Gets the adaptation of this VideoProcess.
 
         长短边自适应控制字段： - SHORT：表示短边自适应 - LONG：表示长边自适应 - NONE：表示不自适应 
 
@@ -184,7 +184,7 @@ class VideoProcess:
 
     @adaptation.setter
     def adaptation(self, adaptation):
-        """Sets the adaptation of this VideoProcess.
+        r"""Sets the adaptation of this VideoProcess.
 
         长短边自适应控制字段： - SHORT：表示短边自适应 - LONG：表示长边自适应 - NONE：表示不自适应 
 
@@ -195,7 +195,7 @@ class VideoProcess:
 
     @property
     def upsample(self):
-        """Gets the upsample of this VideoProcess.
+        r"""Gets the upsample of this VideoProcess.
 
         是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
 
@@ -206,7 +206,7 @@ class VideoProcess:
 
     @upsample.setter
     def upsample(self, upsample):
-        """Sets the upsample of this VideoProcess.
+        r"""Sets the upsample of this VideoProcess.
 
         是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
 
@@ -217,7 +217,7 @@ class VideoProcess:
 
     @property
     def hls_segment_type(self):
-        """Gets the hls_segment_type of this VideoProcess.
+        r"""Gets the hls_segment_type of this VideoProcess.
 
         HLS切片类型。  取值如下所示： - mpegts：ts切片 - fmp4：fmp4切片  不设置默认为ts切片。 
 
@@ -228,7 +228,7 @@ class VideoProcess:
 
     @hls_segment_type.setter
     def hls_segment_type(self, hls_segment_type):
-        """Sets the hls_segment_type of this VideoProcess.
+        r"""Sets the hls_segment_type of this VideoProcess.
 
         HLS切片类型。  取值如下所示： - mpegts：ts切片 - fmp4：fmp4切片  不设置默认为ts切片。 
 

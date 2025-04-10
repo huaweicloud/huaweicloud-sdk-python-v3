@@ -27,7 +27,7 @@ class QueryConnectionsResponse:
     }
 
     def __init__(self, client_ip=None, count=None):
-        """QueryConnectionsResponse
+        r"""QueryConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryConnectionsResponse:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this QueryConnectionsResponse.
+        r"""Gets the client_ip of this QueryConnectionsResponse.
 
         连接到该实例或节点的客户端IP地址。
 
@@ -59,7 +59,7 @@ class QueryConnectionsResponse:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this QueryConnectionsResponse.
+        r"""Sets the client_ip of this QueryConnectionsResponse.
 
         连接到该实例或节点的客户端IP地址。
 
@@ -70,7 +70,7 @@ class QueryConnectionsResponse:
 
     @property
     def count(self):
-        """Gets the count of this QueryConnectionsResponse.
+        r"""Gets the count of this QueryConnectionsResponse.
 
         该IP对应的连接数。
 
@@ -81,7 +81,7 @@ class QueryConnectionsResponse:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this QueryConnectionsResponse.
+        r"""Sets the count of this QueryConnectionsResponse.
 
         该IP对应的连接数。
 

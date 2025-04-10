@@ -27,7 +27,7 @@ class ShowRepositoryStatisticalDataV2Request:
     }
 
     def __init__(self, x_language=None, repository_id=None):
-        """ShowRepositoryStatisticalDataV2Request
+        r"""ShowRepositoryStatisticalDataV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRepositoryStatisticalDataV2Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowRepositoryStatisticalDataV2Request.
+        r"""Gets the x_language of this ShowRepositoryStatisticalDataV2Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -60,7 +60,7 @@ class ShowRepositoryStatisticalDataV2Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowRepositoryStatisticalDataV2Request.
+        r"""Sets the x_language of this ShowRepositoryStatisticalDataV2Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -71,7 +71,7 @@ class ShowRepositoryStatisticalDataV2Request:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowRepositoryStatisticalDataV2Request.
+        r"""Gets the repository_id of this ShowRepositoryStatisticalDataV2Request.
 
         代码仓库id
 
@@ -82,7 +82,7 @@ class ShowRepositoryStatisticalDataV2Request:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowRepositoryStatisticalDataV2Request.
+        r"""Sets the repository_id of this ShowRepositoryStatisticalDataV2Request.
 
         代码仓库id
 

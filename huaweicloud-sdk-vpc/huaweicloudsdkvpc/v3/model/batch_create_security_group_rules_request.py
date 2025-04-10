@@ -27,7 +27,7 @@ class BatchCreateSecurityGroupRulesRequest:
     }
 
     def __init__(self, security_group_id=None, body=None):
-        """BatchCreateSecurityGroupRulesRequest
+        r"""BatchCreateSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateSecurityGroupRulesRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this BatchCreateSecurityGroupRulesRequest.
+        r"""Gets the security_group_id of this BatchCreateSecurityGroupRulesRequest.
 
         安全组ID
 
@@ -60,7 +60,7 @@ class BatchCreateSecurityGroupRulesRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this BatchCreateSecurityGroupRulesRequest.
+        r"""Sets the security_group_id of this BatchCreateSecurityGroupRulesRequest.
 
         安全组ID
 
@@ -71,7 +71,7 @@ class BatchCreateSecurityGroupRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateSecurityGroupRulesRequest.
+        r"""Gets the body of this BatchCreateSecurityGroupRulesRequest.
 
         :return: The body of this BatchCreateSecurityGroupRulesRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSecurityGroupRulesRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateSecurityGroupRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateSecurityGroupRulesRequest.
+        r"""Sets the body of this BatchCreateSecurityGroupRulesRequest.
 
         :param body: The body of this BatchCreateSecurityGroupRulesRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.BatchCreateSecurityGroupRulesRequestBody`

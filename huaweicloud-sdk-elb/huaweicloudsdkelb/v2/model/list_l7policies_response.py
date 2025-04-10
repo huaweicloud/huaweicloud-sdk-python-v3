@@ -26,7 +26,7 @@ class ListL7policiesResponse(SdkResponse):
     }
 
     def __init__(self, l7policies=None):
-        """ListL7policiesResponse
+        r"""ListL7policiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListL7policiesResponse(SdkResponse):
 
     @property
     def l7policies(self):
-        """Gets the l7policies of this ListL7policiesResponse.
+        r"""Gets the l7policies of this ListL7policiesResponse.
 
         转发策略对象的列表
 
@@ -55,7 +55,7 @@ class ListL7policiesResponse(SdkResponse):
 
     @l7policies.setter
     def l7policies(self, l7policies):
-        """Sets the l7policies of this ListL7policiesResponse.
+        r"""Sets the l7policies of this ListL7policiesResponse.
 
         转发策略对象的列表
 

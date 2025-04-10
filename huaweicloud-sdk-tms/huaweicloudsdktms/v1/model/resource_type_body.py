@@ -31,7 +31,7 @@ class ResourceTypeBody:
     }
 
     def __init__(self, resource_type=None, resource_type_i18n_display_name=None, regions=None, _global=None):
-        """ResourceTypeBody
+        r"""ResourceTypeBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ResourceTypeBody:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceTypeBody.
+        r"""Gets the resource_type of this ResourceTypeBody.
 
         资源类型
 
@@ -71,7 +71,7 @@ class ResourceTypeBody:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceTypeBody.
+        r"""Sets the resource_type of this ResourceTypeBody.
 
         资源类型
 
@@ -82,7 +82,7 @@ class ResourceTypeBody:
 
     @property
     def resource_type_i18n_display_name(self):
-        """Gets the resource_type_i18n_display_name of this ResourceTypeBody.
+        r"""Gets the resource_type_i18n_display_name of this ResourceTypeBody.
 
         资源类型显示名称，可以通过参数中“locale”设置语言。
 
@@ -93,7 +93,7 @@ class ResourceTypeBody:
 
     @resource_type_i18n_display_name.setter
     def resource_type_i18n_display_name(self, resource_type_i18n_display_name):
-        """Sets the resource_type_i18n_display_name of this ResourceTypeBody.
+        r"""Sets the resource_type_i18n_display_name of this ResourceTypeBody.
 
         资源类型显示名称，可以通过参数中“locale”设置语言。
 
@@ -104,7 +104,7 @@ class ResourceTypeBody:
 
     @property
     def regions(self):
-        """Gets the regions of this ResourceTypeBody.
+        r"""Gets the regions of this ResourceTypeBody.
 
         支持的region列表
 
@@ -115,7 +115,7 @@ class ResourceTypeBody:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ResourceTypeBody.
+        r"""Sets the regions of this ResourceTypeBody.
 
         支持的region列表
 
@@ -126,7 +126,7 @@ class ResourceTypeBody:
 
     @property
     def _global(self):
-        """Gets the _global of this ResourceTypeBody.
+        r"""Gets the _global of this ResourceTypeBody.
 
         是否是全局类型的资源
 
@@ -137,7 +137,7 @@ class ResourceTypeBody:
 
     @_global.setter
     def _global(self, _global):
-        """Sets the _global of this ResourceTypeBody.
+        r"""Sets the _global of this ResourceTypeBody.
 
         是否是全局类型的资源
 

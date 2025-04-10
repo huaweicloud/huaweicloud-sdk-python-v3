@@ -23,7 +23,7 @@ class ShowPublicIpTypeRequest:
     }
 
     def __init__(self):
-        """ShowPublicIpTypeRequest
+        r"""ShowPublicIpTypeRequest
 
         The model defined in huaweicloud sdk
 

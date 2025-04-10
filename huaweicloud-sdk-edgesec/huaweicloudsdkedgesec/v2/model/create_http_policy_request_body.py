@@ -25,7 +25,7 @@ class CreateHttpPolicyRequestBody:
     }
 
     def __init__(self, name=None):
-        """CreateHttpPolicyRequestBody
+        r"""CreateHttpPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateHttpPolicyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateHttpPolicyRequestBody.
+        r"""Gets the name of this CreateHttpPolicyRequestBody.
 
         防护策略名
 
@@ -53,7 +53,7 @@ class CreateHttpPolicyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHttpPolicyRequestBody.
+        r"""Sets the name of this CreateHttpPolicyRequestBody.
 
         防护策略名
 

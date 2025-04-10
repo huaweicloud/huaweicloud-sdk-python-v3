@@ -25,7 +25,7 @@ class BucketsRequest:
     }
 
     def __init__(self, buckets=None):
-        """BucketsRequest
+        r"""BucketsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BucketsRequest:
 
     @property
     def buckets(self):
-        """Gets the buckets of this BucketsRequest.
+        r"""Gets the buckets of this BucketsRequest.
 
         OBS桶列表
 
@@ -54,7 +54,7 @@ class BucketsRequest:
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this BucketsRequest.
+        r"""Sets the buckets of this BucketsRequest.
 
         OBS桶列表
 

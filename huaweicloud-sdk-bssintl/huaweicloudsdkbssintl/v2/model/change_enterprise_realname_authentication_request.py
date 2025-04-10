@@ -25,7 +25,7 @@ class ChangeEnterpriseRealnameAuthenticationRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeEnterpriseRealnameAuthenticationRequest
+        r"""ChangeEnterpriseRealnameAuthenticationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeEnterpriseRealnameAuthenticationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeEnterpriseRealnameAuthenticationRequest.
+        r"""Gets the body of this ChangeEnterpriseRealnameAuthenticationRequest.
 
         :return: The body of this ChangeEnterpriseRealnameAuthenticationRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ChangeEnterpriseRealnameAuthsReq`
@@ -52,7 +52,7 @@ class ChangeEnterpriseRealnameAuthenticationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeEnterpriseRealnameAuthenticationRequest.
+        r"""Sets the body of this ChangeEnterpriseRealnameAuthenticationRequest.
 
         :param body: The body of this ChangeEnterpriseRealnameAuthenticationRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.ChangeEnterpriseRealnameAuthsReq`

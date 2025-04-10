@@ -33,7 +33,7 @@ class CodeTableFieldValueVO:
     }
 
     def __init__(self, id=None, fd_id=None, fd_value=None, ordinal=None, description=None):
-        """CodeTableFieldValueVO
+        r"""CodeTableFieldValueVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CodeTableFieldValueVO:
 
     @property
     def id(self):
-        """Gets the id of this CodeTableFieldValueVO.
+        r"""Gets the id of this CodeTableFieldValueVO.
 
         码表字段ID，ID字符串。
 
@@ -82,7 +82,7 @@ class CodeTableFieldValueVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CodeTableFieldValueVO.
+        r"""Sets the id of this CodeTableFieldValueVO.
 
         码表字段ID，ID字符串。
 
@@ -93,7 +93,7 @@ class CodeTableFieldValueVO:
 
     @property
     def fd_id(self):
-        """Gets the fd_id of this CodeTableFieldValueVO.
+        r"""Gets the fd_id of this CodeTableFieldValueVO.
 
         所属码表属性ID，ID字符串。
 
@@ -104,7 +104,7 @@ class CodeTableFieldValueVO:
 
     @fd_id.setter
     def fd_id(self, fd_id):
-        """Sets the fd_id of this CodeTableFieldValueVO.
+        r"""Sets the fd_id of this CodeTableFieldValueVO.
 
         所属码表属性ID，ID字符串。
 
@@ -115,7 +115,7 @@ class CodeTableFieldValueVO:
 
     @property
     def fd_value(self):
-        """Gets the fd_value of this CodeTableFieldValueVO.
+        r"""Gets the fd_value of this CodeTableFieldValueVO.
 
         码表属性值。
 
@@ -126,7 +126,7 @@ class CodeTableFieldValueVO:
 
     @fd_value.setter
     def fd_value(self, fd_value):
-        """Sets the fd_value of this CodeTableFieldValueVO.
+        r"""Sets the fd_value of this CodeTableFieldValueVO.
 
         码表属性值。
 
@@ -137,7 +137,7 @@ class CodeTableFieldValueVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this CodeTableFieldValueVO.
+        r"""Gets the ordinal of this CodeTableFieldValueVO.
 
         序号。
 
@@ -148,7 +148,7 @@ class CodeTableFieldValueVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this CodeTableFieldValueVO.
+        r"""Sets the ordinal of this CodeTableFieldValueVO.
 
         序号。
 
@@ -159,7 +159,7 @@ class CodeTableFieldValueVO:
 
     @property
     def description(self):
-        """Gets the description of this CodeTableFieldValueVO.
+        r"""Gets the description of this CodeTableFieldValueVO.
 
         描述。
 
@@ -170,7 +170,7 @@ class CodeTableFieldValueVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CodeTableFieldValueVO.
+        r"""Sets the description of this CodeTableFieldValueVO.
 
         描述。
 

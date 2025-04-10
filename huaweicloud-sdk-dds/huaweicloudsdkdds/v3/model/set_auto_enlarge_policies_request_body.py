@@ -27,7 +27,7 @@ class SetAutoEnlargePoliciesRequestBody:
     }
 
     def __init__(self, switch_option=None, policies=None):
-        """SetAutoEnlargePoliciesRequestBody
+        r"""SetAutoEnlargePoliciesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetAutoEnlargePoliciesRequestBody:
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this SetAutoEnlargePoliciesRequestBody.
+        r"""Gets the switch_option of this SetAutoEnlargePoliciesRequestBody.
 
         自动扩容开关。 - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
 
@@ -60,7 +60,7 @@ class SetAutoEnlargePoliciesRequestBody:
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this SetAutoEnlargePoliciesRequestBody.
+        r"""Sets the switch_option of this SetAutoEnlargePoliciesRequestBody.
 
         自动扩容开关。 - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
 
@@ -71,7 +71,7 @@ class SetAutoEnlargePoliciesRequestBody:
 
     @property
     def policies(self):
-        """Gets the policies of this SetAutoEnlargePoliciesRequestBody.
+        r"""Gets the policies of this SetAutoEnlargePoliciesRequestBody.
 
         磁盘自动扩容策略。 最大支持设置10个实例的策略。
 
@@ -82,7 +82,7 @@ class SetAutoEnlargePoliciesRequestBody:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this SetAutoEnlargePoliciesRequestBody.
+        r"""Sets the policies of this SetAutoEnlargePoliciesRequestBody.
 
         磁盘自动扩容策略。 最大支持设置10个实例的策略。
 

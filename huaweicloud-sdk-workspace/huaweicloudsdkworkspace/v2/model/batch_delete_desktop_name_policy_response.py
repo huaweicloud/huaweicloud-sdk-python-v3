@@ -24,7 +24,7 @@ class BatchDeleteDesktopNamePolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteDesktopNamePolicyResponse
+        r"""BatchDeleteDesktopNamePolicyResponse
 
         The model defined in huaweicloud sdk
 

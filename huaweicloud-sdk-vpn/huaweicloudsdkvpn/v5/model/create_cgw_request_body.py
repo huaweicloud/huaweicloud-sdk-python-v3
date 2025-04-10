@@ -25,7 +25,7 @@ class CreateCgwRequestBody:
     }
 
     def __init__(self, customer_gateway=None):
-        """CreateCgwRequestBody
+        r"""CreateCgwRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateCgwRequestBody:
 
     @property
     def customer_gateway(self):
-        """Gets the customer_gateway of this CreateCgwRequestBody.
+        r"""Gets the customer_gateway of this CreateCgwRequestBody.
 
         :return: The customer_gateway of this CreateCgwRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateCgwRequestBodyContent`
@@ -51,7 +51,7 @@ class CreateCgwRequestBody:
 
     @customer_gateway.setter
     def customer_gateway(self, customer_gateway):
-        """Sets the customer_gateway of this CreateCgwRequestBody.
+        r"""Sets the customer_gateway of this CreateCgwRequestBody.
 
         :param customer_gateway: The customer_gateway of this CreateCgwRequestBody.
         :type customer_gateway: :class:`huaweicloudsdkvpn.v5.CreateCgwRequestBodyContent`

@@ -27,7 +27,7 @@ class AssetDailySummaryResult:
     }
 
     def __init__(self, date=None, link=None):
-        """AssetDailySummaryResult
+        r"""AssetDailySummaryResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssetDailySummaryResult:
 
     @property
     def date(self):
-        """Gets the date of this AssetDailySummaryResult.
+        r"""Gets the date of this AssetDailySummaryResult.
 
         播放日期，格式为：yyyyMMdd000000。 
 
@@ -61,7 +61,7 @@ class AssetDailySummaryResult:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this AssetDailySummaryResult.
+        r"""Sets the date of this AssetDailySummaryResult.
 
         播放日期，格式为：yyyyMMdd000000。 
 
@@ -72,7 +72,7 @@ class AssetDailySummaryResult:
 
     @property
     def link(self):
-        """Gets the link of this AssetDailySummaryResult.
+        r"""Gets the link of this AssetDailySummaryResult.
 
         日播放统计数据文件的下载地址，有效期为12个小时。  文件内容格式：[域名]\\t[媒资ID]\\t[日期]\\t[播放流量]\\t[播放次数]  播放次数统计说明： - HLS文件：访问M3U8文件时会统计播放次数，访问TS文件时不会统计播放次数。 - 其它文件：如MP4文件，当播放请求带有range且range的start参数不等于0时，不统计播放次数。其它情况下，会统计播放次数。
 
@@ -83,7 +83,7 @@ class AssetDailySummaryResult:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this AssetDailySummaryResult.
+        r"""Sets the link of this AssetDailySummaryResult.
 
         日播放统计数据文件的下载地址，有效期为12个小时。  文件内容格式：[域名]\\t[媒资ID]\\t[日期]\\t[播放流量]\\t[播放次数]  播放次数统计说明： - HLS文件：访问M3U8文件时会统计播放次数，访问TS文件时不会统计播放次数。 - 其它文件：如MP4文件，当播放请求带有range且range的start参数不等于0时，不统计播放次数。其它情况下，会统计播放次数。
 

@@ -25,7 +25,7 @@ class RunTextSimilarityRequest:
     }
 
     def __init__(self, body=None):
-        """RunTextSimilarityRequest
+        r"""RunTextSimilarityRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunTextSimilarityRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunTextSimilarityRequest.
+        r"""Gets the body of this RunTextSimilarityRequest.
 
         :return: The body of this RunTextSimilarityRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.TextSimilarityRequest`
@@ -52,7 +52,7 @@ class RunTextSimilarityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunTextSimilarityRequest.
+        r"""Sets the body of this RunTextSimilarityRequest.
 
         :param body: The body of this RunTextSimilarityRequest.
         :type body: :class:`huaweicloudsdknlp.v2.TextSimilarityRequest`

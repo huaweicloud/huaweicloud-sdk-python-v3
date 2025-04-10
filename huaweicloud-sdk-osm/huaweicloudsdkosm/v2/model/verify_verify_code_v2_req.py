@@ -35,7 +35,7 @@ class VerifyVerifyCodeV2Req:
     }
 
     def __init__(self, verify_code=None, contact_value=None, contact_way=None, area_code=None, x_customer_id=None, customer_id=None):
-        """VerifyVerifyCodeV2Req
+        r"""VerifyVerifyCodeV2Req
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class VerifyVerifyCodeV2Req:
 
     @property
     def verify_code(self):
-        """Gets the verify_code of this VerifyVerifyCodeV2Req.
+        r"""Gets the verify_code of this VerifyVerifyCodeV2Req.
 
         验证码
 
@@ -86,7 +86,7 @@ class VerifyVerifyCodeV2Req:
 
     @verify_code.setter
     def verify_code(self, verify_code):
-        """Sets the verify_code of this VerifyVerifyCodeV2Req.
+        r"""Sets the verify_code of this VerifyVerifyCodeV2Req.
 
         验证码
 
@@ -97,7 +97,7 @@ class VerifyVerifyCodeV2Req:
 
     @property
     def contact_value(self):
-        """Gets the contact_value of this VerifyVerifyCodeV2Req.
+        r"""Gets the contact_value of this VerifyVerifyCodeV2Req.
 
         联系方式的值
 
@@ -108,7 +108,7 @@ class VerifyVerifyCodeV2Req:
 
     @contact_value.setter
     def contact_value(self, contact_value):
-        """Sets the contact_value of this VerifyVerifyCodeV2Req.
+        r"""Sets the contact_value of this VerifyVerifyCodeV2Req.
 
         联系方式的值
 
@@ -119,7 +119,7 @@ class VerifyVerifyCodeV2Req:
 
     @property
     def contact_way(self):
-        """Gets the contact_way of this VerifyVerifyCodeV2Req.
+        r"""Gets the contact_way of this VerifyVerifyCodeV2Req.
 
         联系方式的类型，0：短信；1：邮件
 
@@ -130,7 +130,7 @@ class VerifyVerifyCodeV2Req:
 
     @contact_way.setter
     def contact_way(self, contact_way):
-        """Sets the contact_way of this VerifyVerifyCodeV2Req.
+        r"""Sets the contact_way of this VerifyVerifyCodeV2Req.
 
         联系方式的类型，0：短信；1：邮件
 
@@ -141,7 +141,7 @@ class VerifyVerifyCodeV2Req:
 
     @property
     def area_code(self):
-        """Gets the area_code of this VerifyVerifyCodeV2Req.
+        r"""Gets the area_code of this VerifyVerifyCodeV2Req.
 
         国家码
 
@@ -152,7 +152,7 @@ class VerifyVerifyCodeV2Req:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this VerifyVerifyCodeV2Req.
+        r"""Sets the area_code of this VerifyVerifyCodeV2Req.
 
         国家码
 
@@ -163,7 +163,7 @@ class VerifyVerifyCodeV2Req:
 
     @property
     def x_customer_id(self):
-        """Gets the x_customer_id of this VerifyVerifyCodeV2Req.
+        r"""Gets the x_customer_id of this VerifyVerifyCodeV2Req.
 
         子用户id
 
@@ -174,7 +174,7 @@ class VerifyVerifyCodeV2Req:
 
     @x_customer_id.setter
     def x_customer_id(self, x_customer_id):
-        """Sets the x_customer_id of this VerifyVerifyCodeV2Req.
+        r"""Sets the x_customer_id of this VerifyVerifyCodeV2Req.
 
         子用户id
 
@@ -185,7 +185,7 @@ class VerifyVerifyCodeV2Req:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this VerifyVerifyCodeV2Req.
+        r"""Gets the customer_id of this VerifyVerifyCodeV2Req.
 
         客户id
 
@@ -196,7 +196,7 @@ class VerifyVerifyCodeV2Req:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this VerifyVerifyCodeV2Req.
+        r"""Sets the customer_id of this VerifyVerifyCodeV2Req.
 
         客户id
 

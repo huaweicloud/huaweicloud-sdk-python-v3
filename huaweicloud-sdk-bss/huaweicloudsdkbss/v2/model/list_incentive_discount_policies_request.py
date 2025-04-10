@@ -31,7 +31,7 @@ class ListIncentiveDiscountPoliciesRequest:
     }
 
     def __init__(self, time=None, service_type_code=None, offset=None, limit=None):
-        """ListIncentiveDiscountPoliciesRequest
+        r"""ListIncentiveDiscountPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @property
     def time(self):
-        """Gets the time of this ListIncentiveDiscountPoliciesRequest.
+        r"""Gets the time of this ListIncentiveDiscountPoliciesRequest.
 
         查询策略的指定时间。东八区时间，格式：YYYY-MM。 说明： 实际查询结果为指定时间所在月最后一天23:59:59的策略情况。
 
@@ -74,7 +74,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListIncentiveDiscountPoliciesRequest.
+        r"""Sets the time of this ListIncentiveDiscountPoliciesRequest.
 
         查询策略的指定时间。东八区时间，格式：YYYY-MM。 说明： 实际查询结果为指定时间所在月最后一天23:59:59的策略情况。
 
@@ -85,7 +85,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ListIncentiveDiscountPoliciesRequest.
+        r"""Gets the service_type_code of this ListIncentiveDiscountPoliciesRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -96,7 +96,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ListIncentiveDiscountPoliciesRequest.
+        r"""Sets the service_type_code of this ListIncentiveDiscountPoliciesRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -107,7 +107,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIncentiveDiscountPoliciesRequest.
+        r"""Gets the offset of this ListIncentiveDiscountPoliciesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -118,7 +118,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIncentiveDiscountPoliciesRequest.
+        r"""Sets the offset of this ListIncentiveDiscountPoliciesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -129,7 +129,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIncentiveDiscountPoliciesRequest.
+        r"""Gets the limit of this ListIncentiveDiscountPoliciesRequest.
 
         每次查询的数量，默认值为10。
 
@@ -140,7 +140,7 @@ class ListIncentiveDiscountPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIncentiveDiscountPoliciesRequest.
+        r"""Sets the limit of this ListIncentiveDiscountPoliciesRequest.
 
         每次查询的数量，默认值为10。
 

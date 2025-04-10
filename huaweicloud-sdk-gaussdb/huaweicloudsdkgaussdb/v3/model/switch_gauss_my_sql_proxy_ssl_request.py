@@ -31,7 +31,7 @@ class SwitchGaussMySqlProxySslRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """SwitchGaussMySqlProxySslRequest
+        r"""SwitchGaussMySqlProxySslRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchGaussMySqlProxySslRequest.
+        r"""Gets the x_language of this SwitchGaussMySqlProxySslRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -73,7 +73,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchGaussMySqlProxySslRequest.
+        r"""Sets the x_language of this SwitchGaussMySqlProxySslRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -84,7 +84,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchGaussMySqlProxySslRequest.
+        r"""Gets the instance_id of this SwitchGaussMySqlProxySslRequest.
 
         租户在某一project下的实例ID。
 
@@ -95,7 +95,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchGaussMySqlProxySslRequest.
+        r"""Sets the instance_id of this SwitchGaussMySqlProxySslRequest.
 
         租户在某一project下的实例ID。
 
@@ -106,7 +106,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this SwitchGaussMySqlProxySslRequest.
+        r"""Gets the proxy_id of this SwitchGaussMySqlProxySslRequest.
 
         数据库代理ID。
 
@@ -117,7 +117,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this SwitchGaussMySqlProxySslRequest.
+        r"""Sets the proxy_id of this SwitchGaussMySqlProxySslRequest.
 
         数据库代理ID。
 
@@ -128,7 +128,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchGaussMySqlProxySslRequest.
+        r"""Gets the body of this SwitchGaussMySqlProxySslRequest.
 
         :return: The body of this SwitchGaussMySqlProxySslRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchProxySSLRequest`
@@ -137,7 +137,7 @@ class SwitchGaussMySqlProxySslRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchGaussMySqlProxySslRequest.
+        r"""Sets the body of this SwitchGaussMySqlProxySslRequest.
 
         :param body: The body of this SwitchGaussMySqlProxySslRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.SwitchProxySSLRequest`

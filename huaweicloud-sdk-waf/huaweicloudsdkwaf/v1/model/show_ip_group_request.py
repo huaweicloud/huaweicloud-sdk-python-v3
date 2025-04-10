@@ -27,7 +27,7 @@ class ShowIpGroupRequest:
     }
 
     def __init__(self, enterprise_project_id=None, id=None):
-        """ShowIpGroupRequest
+        r"""ShowIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowIpGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowIpGroupRequest.
+        r"""Gets the enterprise_project_id of this ShowIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -60,7 +60,7 @@ class ShowIpGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowIpGroupRequest.
+        r"""Sets the enterprise_project_id of this ShowIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -71,7 +71,7 @@ class ShowIpGroupRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowIpGroupRequest.
+        r"""Gets the id of this ShowIpGroupRequest.
 
         ip地址组id
 
@@ -82,7 +82,7 @@ class ShowIpGroupRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowIpGroupRequest.
+        r"""Sets the id of this ShowIpGroupRequest.
 
         ip地址组id
 

@@ -41,7 +41,7 @@ class UpdateAutoScalingPolicyRequestBody:
     }
 
     def __init__(self, status=None, monitor_cycle=None, silence_cycle=None, enlarge_threshold=None, max_flavor=None, reduce_enabled=None, max_read_only_count=None, read_only_weight=None, scaling_strategy=None):
-        """UpdateAutoScalingPolicyRequestBody
+        r"""UpdateAutoScalingPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the status of this UpdateAutoScalingPolicyRequestBody.
 
         自动变配开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -108,7 +108,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the status of this UpdateAutoScalingPolicyRequestBody.
 
         自动变配开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -119,7 +119,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def monitor_cycle(self):
-        """Gets the monitor_cycle of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the monitor_cycle of this UpdateAutoScalingPolicyRequestBody.
 
         监测周期（单位：秒）。 在整个观测窗口期内，若CPU平均使用率大于等于设定值，则在观测窗口结束后，进行扩容。  取值范围：300、600、900、1800。  status为ON时必填。
 
@@ -130,7 +130,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @monitor_cycle.setter
     def monitor_cycle(self, monitor_cycle):
-        """Sets the monitor_cycle of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the monitor_cycle of this UpdateAutoScalingPolicyRequestBody.
 
         监测周期（单位：秒）。 在整个观测窗口期内，若CPU平均使用率大于等于设定值，则在观测窗口结束后，进行扩容。  取值范围：300、600、900、1800。  status为ON时必填。
 
@@ -141,7 +141,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def silence_cycle(self):
-        """Gets the silence_cycle of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the silence_cycle of this UpdateAutoScalingPolicyRequestBody.
 
         静默周期（单位：秒）。 两次自动扩容或自动回缩的最小间隔时间。  取值范围：300、600、1800、3600、7200、10800、86400、604800。  status为ON时必填。
 
@@ -152,7 +152,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @silence_cycle.setter
     def silence_cycle(self, silence_cycle):
-        """Sets the silence_cycle of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the silence_cycle of this UpdateAutoScalingPolicyRequestBody.
 
         静默周期（单位：秒）。 两次自动扩容或自动回缩的最小间隔时间。  取值范围：300、600、1800、3600、7200、10800、86400、604800。  status为ON时必填。
 
@@ -163,7 +163,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def enlarge_threshold(self):
-        """Gets the enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
 
         CPU平均使用率（百分比数值）。  取值范围：50-100。  status为ON时必填。
 
@@ -174,7 +174,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @enlarge_threshold.setter
     def enlarge_threshold(self, enlarge_threshold):
-        """Sets the enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
 
         CPU平均使用率（百分比数值）。  取值范围：50-100。  status为ON时必填。
 
@@ -185,7 +185,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def max_flavor(self):
-        """Gets the max_flavor of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the max_flavor of this UpdateAutoScalingPolicyRequestBody.
 
         扩容规格上限。开启扩缩规格时必填。
 
@@ -196,7 +196,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @max_flavor.setter
     def max_flavor(self, max_flavor):
-        """Sets the max_flavor of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the max_flavor of this UpdateAutoScalingPolicyRequestBody.
 
         扩容规格上限。开启扩缩规格时必填。
 
@@ -207,7 +207,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def reduce_enabled(self):
-        """Gets the reduce_enabled of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the reduce_enabled of this UpdateAutoScalingPolicyRequestBody.
 
         是否开启自动回缩。开启自动变配时必填。 - true：是。 - false：否。
 
@@ -218,7 +218,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @reduce_enabled.setter
     def reduce_enabled(self, reduce_enabled):
-        """Sets the reduce_enabled of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the reduce_enabled of this UpdateAutoScalingPolicyRequestBody.
 
         是否开启自动回缩。开启自动变配时必填。 - true：是。 - false：否。
 
@@ -229,7 +229,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def max_read_only_count(self):
-        """Gets the max_read_only_count of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the max_read_only_count of this UpdateAutoScalingPolicyRequestBody.
 
         只读节点数量上限。开启增删只读节点时必填。
 
@@ -240,7 +240,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @max_read_only_count.setter
     def max_read_only_count(self, max_read_only_count):
-        """Sets the max_read_only_count of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the max_read_only_count of this UpdateAutoScalingPolicyRequestBody.
 
         只读节点数量上限。开启增删只读节点时必填。
 
@@ -251,7 +251,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def read_only_weight(self):
-        """Gets the read_only_weight of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the read_only_weight of this UpdateAutoScalingPolicyRequestBody.
 
         只读节点读写分离权重。开启增删只读节点时必填。
 
@@ -262,7 +262,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @read_only_weight.setter
     def read_only_weight(self, read_only_weight):
-        """Sets the read_only_weight of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the read_only_weight of this UpdateAutoScalingPolicyRequestBody.
 
         只读节点读写分离权重。开启增删只读节点时必填。
 
@@ -273,7 +273,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @property
     def scaling_strategy(self):
-        """Gets the scaling_strategy of this UpdateAutoScalingPolicyRequestBody.
+        r"""Gets the scaling_strategy of this UpdateAutoScalingPolicyRequestBody.
 
         :return: The scaling_strategy of this UpdateAutoScalingPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ScalingStrategyReqInfo`
@@ -282,7 +282,7 @@ class UpdateAutoScalingPolicyRequestBody:
 
     @scaling_strategy.setter
     def scaling_strategy(self, scaling_strategy):
-        """Sets the scaling_strategy of this UpdateAutoScalingPolicyRequestBody.
+        r"""Sets the scaling_strategy of this UpdateAutoScalingPolicyRequestBody.
 
         :param scaling_strategy: The scaling_strategy of this UpdateAutoScalingPolicyRequestBody.
         :type scaling_strategy: :class:`huaweicloudsdkgaussdb.v3.ScalingStrategyReqInfo`

@@ -28,7 +28,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
     }
 
     def __init__(self, links=None, roles=None):
-        """KeystoneListAllProjectPermissionsForGroupResponse
+        r"""KeystoneListAllProjectPermissionsForGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListAllProjectPermissionsForGroupResponse.
+        r"""Gets the links of this KeystoneListAllProjectPermissionsForGroupResponse.
 
         :return: The links of this KeystoneListAllProjectPermissionsForGroupResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListAllProjectPermissionsForGroupResponse.
+        r"""Sets the links of this KeystoneListAllProjectPermissionsForGroupResponse.
 
         :param links: The links of this KeystoneListAllProjectPermissionsForGroupResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this KeystoneListAllProjectPermissionsForGroupResponse.
+        r"""Gets the roles of this KeystoneListAllProjectPermissionsForGroupResponse.
 
         权限信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this KeystoneListAllProjectPermissionsForGroupResponse.
+        r"""Sets the roles of this KeystoneListAllProjectPermissionsForGroupResponse.
 
         权限信息列表。
 

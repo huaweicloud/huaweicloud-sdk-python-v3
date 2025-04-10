@@ -33,7 +33,7 @@ class CustomizeSourceCreateReq:
     }
 
     def __init__(self, name=None, description=None, channel_id=None, type=None, detail=None):
-        """CustomizeSourceCreateReq
+        r"""CustomizeSourceCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CustomizeSourceCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this CustomizeSourceCreateReq.
+        r"""Gets the name of this CustomizeSourceCreateReq.
 
         自定义事件源名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，且不能以hc.开头
 
@@ -81,7 +81,7 @@ class CustomizeSourceCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomizeSourceCreateReq.
+        r"""Sets the name of this CustomizeSourceCreateReq.
 
         自定义事件源名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，且不能以hc.开头
 
@@ -92,7 +92,7 @@ class CustomizeSourceCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this CustomizeSourceCreateReq.
+        r"""Gets the description of this CustomizeSourceCreateReq.
 
         事件源描述
 
@@ -103,7 +103,7 @@ class CustomizeSourceCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizeSourceCreateReq.
+        r"""Sets the description of this CustomizeSourceCreateReq.
 
         事件源描述
 
@@ -114,7 +114,7 @@ class CustomizeSourceCreateReq:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this CustomizeSourceCreateReq.
+        r"""Gets the channel_id of this CustomizeSourceCreateReq.
 
         指导事件源归属的事件通道ID
 
@@ -125,7 +125,7 @@ class CustomizeSourceCreateReq:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this CustomizeSourceCreateReq.
+        r"""Sets the channel_id of this CustomizeSourceCreateReq.
 
         指导事件源归属的事件通道ID
 
@@ -136,7 +136,7 @@ class CustomizeSourceCreateReq:
 
     @property
     def type(self):
-        """Gets the type of this CustomizeSourceCreateReq.
+        r"""Gets the type of this CustomizeSourceCreateReq.
 
         事件源类型
 
@@ -147,7 +147,7 @@ class CustomizeSourceCreateReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomizeSourceCreateReq.
+        r"""Sets the type of this CustomizeSourceCreateReq.
 
         事件源类型
 
@@ -158,7 +158,7 @@ class CustomizeSourceCreateReq:
 
     @property
     def detail(self):
-        """Gets the detail of this CustomizeSourceCreateReq.
+        r"""Gets the detail of this CustomizeSourceCreateReq.
 
         :return: The detail of this CustomizeSourceCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.RocketMqDetail`
@@ -167,7 +167,7 @@ class CustomizeSourceCreateReq:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CustomizeSourceCreateReq.
+        r"""Sets the detail of this CustomizeSourceCreateReq.
 
         :param detail: The detail of this CustomizeSourceCreateReq.
         :type detail: :class:`huaweicloudsdkeg.v1.RocketMqDetail`

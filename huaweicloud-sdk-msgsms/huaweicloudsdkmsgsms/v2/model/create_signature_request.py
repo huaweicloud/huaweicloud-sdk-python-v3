@@ -25,7 +25,7 @@ class CreateSignatureRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSignatureRequest
+        r"""CreateSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSignatureRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSignatureRequest.
+        r"""Gets the body of this CreateSignatureRequest.
 
         :return: The body of this CreateSignatureRequest.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.SmsSignatureReq`
@@ -52,7 +52,7 @@ class CreateSignatureRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSignatureRequest.
+        r"""Sets the body of this CreateSignatureRequest.
 
         :param body: The body of this CreateSignatureRequest.
         :type body: :class:`huaweicloudsdkmsgsms.v2.SmsSignatureReq`

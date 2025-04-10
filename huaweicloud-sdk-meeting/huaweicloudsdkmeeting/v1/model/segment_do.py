@@ -31,7 +31,7 @@ class SegmentDO:
     }
 
     def __init__(self, manual_order=None, segment_order=None, segment_size=None, file_list=None):
-        """SegmentDO
+        r"""SegmentDO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SegmentDO:
 
     @property
     def manual_order(self):
-        """Gets the manual_order of this SegmentDO.
+        r"""Gets the manual_order of this SegmentDO.
 
         录制人工分段序号，每次启动录制，生成一个分段
 
@@ -75,7 +75,7 @@ class SegmentDO:
 
     @manual_order.setter
     def manual_order(self, manual_order):
-        """Sets the manual_order of this SegmentDO.
+        r"""Sets the manual_order of this SegmentDO.
 
         录制人工分段序号，每次启动录制，生成一个分段
 
@@ -86,7 +86,7 @@ class SegmentDO:
 
     @property
     def segment_order(self):
-        """Gets the segment_order of this SegmentDO.
+        r"""Gets the segment_order of this SegmentDO.
 
         录制片段内的文件自动切片序号（每次启动录制后，每三小时一个分片文件，多次人工启动重新从1开始）
 
@@ -97,7 +97,7 @@ class SegmentDO:
 
     @segment_order.setter
     def segment_order(self, segment_order):
-        """Sets the segment_order of this SegmentDO.
+        r"""Sets the segment_order of this SegmentDO.
 
         录制片段内的文件自动切片序号（每次启动录制后，每三小时一个分片文件，多次人工启动重新从1开始）
 
@@ -108,7 +108,7 @@ class SegmentDO:
 
     @property
     def segment_size(self):
-        """Gets the segment_size of this SegmentDO.
+        r"""Gets the segment_size of this SegmentDO.
 
         录制分段总文件大小（字节）
 
@@ -119,7 +119,7 @@ class SegmentDO:
 
     @segment_size.setter
     def segment_size(self, segment_size):
-        """Sets the segment_size of this SegmentDO.
+        r"""Sets the segment_size of this SegmentDO.
 
         录制分段总文件大小（字节）
 
@@ -130,7 +130,7 @@ class SegmentDO:
 
     @property
     def file_list(self):
-        """Gets the file_list of this SegmentDO.
+        r"""Gets the file_list of this SegmentDO.
 
         录制文件自动切片列表，每3小时文件切片一次
 
@@ -141,7 +141,7 @@ class SegmentDO:
 
     @file_list.setter
     def file_list(self, file_list):
-        """Sets the file_list of this SegmentDO.
+        r"""Sets the file_list of this SegmentDO.
 
         录制文件自动切片列表，每3小时文件切片一次
 

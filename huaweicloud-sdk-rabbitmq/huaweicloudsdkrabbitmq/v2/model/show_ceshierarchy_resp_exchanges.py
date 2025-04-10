@@ -27,7 +27,7 @@ class ShowCeshierarchyRespExchanges:
     }
 
     def __init__(self, name=None, vhost=None):
-        """ShowCeshierarchyRespExchanges
+        r"""ShowCeshierarchyRespExchanges
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespExchanges:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespExchanges.
+        r"""Gets the name of this ShowCeshierarchyRespExchanges.
 
         Exchange名称。
 
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespExchanges:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespExchanges.
+        r"""Sets the name of this ShowCeshierarchyRespExchanges.
 
         Exchange名称。
 
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespExchanges:
 
     @property
     def vhost(self):
-        """Gets the vhost of this ShowCeshierarchyRespExchanges.
+        r"""Gets the vhost of this ShowCeshierarchyRespExchanges.
 
         对应的Vhost。
 
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespExchanges:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ShowCeshierarchyRespExchanges.
+        r"""Sets the vhost of this ShowCeshierarchyRespExchanges.
 
         对应的Vhost。
 

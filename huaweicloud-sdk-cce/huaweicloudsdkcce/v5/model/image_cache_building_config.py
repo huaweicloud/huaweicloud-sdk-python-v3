@@ -27,7 +27,7 @@ class ImageCacheBuildingConfig:
     }
 
     def __init__(self, cluster=None, image_pull_secrets=None):
-        """ImageCacheBuildingConfig
+        r"""ImageCacheBuildingConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImageCacheBuildingConfig:
 
     @property
     def cluster(self):
-        """Gets the cluster of this ImageCacheBuildingConfig.
+        r"""Gets the cluster of this ImageCacheBuildingConfig.
 
         **参数解释：** 构建镜像缓存所启动的临时Pod所在的Autopilot集群的UID。 **约束限制：** 要求使用的Autopilot集群版本为v1.28.8-r0或v1.31.4-r0以上版本。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
@@ -60,7 +60,7 @@ class ImageCacheBuildingConfig:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this ImageCacheBuildingConfig.
+        r"""Sets the cluster of this ImageCacheBuildingConfig.
 
         **参数解释：** 构建镜像缓存所启动的临时Pod所在的Autopilot集群的UID。 **约束限制：** 要求使用的Autopilot集群版本为v1.28.8-r0或v1.31.4-r0以上版本。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
@@ -71,7 +71,7 @@ class ImageCacheBuildingConfig:
 
     @property
     def image_pull_secrets(self):
-        """Gets the image_pull_secrets of this ImageCacheBuildingConfig.
+        r"""Gets the image_pull_secrets of this ImageCacheBuildingConfig.
 
         下载所需缓存镜像的访问凭证列表，不填写或无有效凭证时仅支持下载公共镜像。
 
@@ -82,7 +82,7 @@ class ImageCacheBuildingConfig:
 
     @image_pull_secrets.setter
     def image_pull_secrets(self, image_pull_secrets):
-        """Sets the image_pull_secrets of this ImageCacheBuildingConfig.
+        r"""Sets the image_pull_secrets of this ImageCacheBuildingConfig.
 
         下载所需缓存镜像的访问凭证列表，不填写或无有效凭证时仅支持下载公共镜像。
 

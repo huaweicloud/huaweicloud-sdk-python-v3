@@ -26,7 +26,7 @@ class ListSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None):
-        """ListSecurityGroupsResponse
+        r"""ListSecurityGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ListSecurityGroupsResponse.
+        r"""Gets the security_groups of this ListSecurityGroupsResponse.
 
         安全组列表对象
 
@@ -55,7 +55,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ListSecurityGroupsResponse.
+        r"""Sets the security_groups of this ListSecurityGroupsResponse.
 
         安全组列表对象
 

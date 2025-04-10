@@ -28,7 +28,7 @@ class CreateDeploymentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, locations=None):
-        """CreateDeploymentResponse
+        r"""CreateDeploymentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDeploymentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDeploymentResponse.
+        r"""Gets the id of this CreateDeploymentResponse.
 
         部署计划ID。
 
@@ -62,7 +62,7 @@ class CreateDeploymentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDeploymentResponse.
+        r"""Sets the id of this CreateDeploymentResponse.
 
         部署计划ID。
 
@@ -73,7 +73,7 @@ class CreateDeploymentResponse(SdkResponse):
 
     @property
     def locations(self):
-        """Gets the locations of this CreateDeploymentResponse.
+        r"""Gets the locations of this CreateDeploymentResponse.
 
         部署位置信息列表。
 
@@ -84,7 +84,7 @@ class CreateDeploymentResponse(SdkResponse):
 
     @locations.setter
     def locations(self, locations):
-        """Sets the locations of this CreateDeploymentResponse.
+        r"""Sets the locations of this CreateDeploymentResponse.
 
         部署位置信息列表。
 

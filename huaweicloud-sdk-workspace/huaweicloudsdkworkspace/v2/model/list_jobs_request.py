@@ -35,7 +35,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, offset=None, limit=None, instance_id=None, app_id=None, target=None, job_status=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         查询的偏移量。
 
@@ -89,7 +89,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         查询的偏移量。
 
@@ -100,7 +100,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         单次查询的大小[1-100]。
 
@@ -111,7 +111,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         单次查询的大小[1-100]。
 
@@ -122,7 +122,7 @@ class ListJobsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListJobsRequest.
+        r"""Gets the instance_id of this ListJobsRequest.
 
         实例ID
 
@@ -133,7 +133,7 @@ class ListJobsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListJobsRequest.
+        r"""Sets the instance_id of this ListJobsRequest.
 
         实例ID
 
@@ -144,7 +144,7 @@ class ListJobsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListJobsRequest.
+        r"""Gets the app_id of this ListJobsRequest.
 
         应用ID
 
@@ -155,7 +155,7 @@ class ListJobsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListJobsRequest.
+        r"""Sets the app_id of this ListJobsRequest.
 
         应用ID
 
@@ -166,7 +166,7 @@ class ListJobsRequest:
 
     @property
     def target(self):
-        """Gets the target of this ListJobsRequest.
+        r"""Gets the target of this ListJobsRequest.
 
         安装实例的用户
 
@@ -177,7 +177,7 @@ class ListJobsRequest:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this ListJobsRequest.
+        r"""Sets the target of this ListJobsRequest.
 
         安装实例的用户
 
@@ -188,7 +188,7 @@ class ListJobsRequest:
 
     @property
     def job_status(self):
-        """Gets the job_status of this ListJobsRequest.
+        r"""Gets the job_status of this ListJobsRequest.
 
         任务状态： * `INIT` - 初始化中 * `WAITING` - 等待安装结束 * `SUCCESS` - 成功 * `FAIL` - 失败任务状态
 
@@ -199,7 +199,7 @@ class ListJobsRequest:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ListJobsRequest.
+        r"""Sets the job_status of this ListJobsRequest.
 
         任务状态： * `INIT` - 初始化中 * `WAITING` - 等待安装结束 * `SUCCESS` - 成功 * `FAIL` - 失败任务状态
 

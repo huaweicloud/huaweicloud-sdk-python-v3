@@ -25,7 +25,7 @@ class ListSqlJobTemplatesRequest:
     }
 
     def __init__(self, keyword=None):
-        """ListSqlJobTemplatesRequest
+        r"""ListSqlJobTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSqlJobTemplatesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListSqlJobTemplatesRequest.
+        r"""Gets the keyword of this ListSqlJobTemplatesRequest.
 
         用于过滤SQL模板的名字。
 
@@ -54,7 +54,7 @@ class ListSqlJobTemplatesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListSqlJobTemplatesRequest.
+        r"""Sets the keyword of this ListSqlJobTemplatesRequest.
 
         用于过滤SQL模板的名字。
 

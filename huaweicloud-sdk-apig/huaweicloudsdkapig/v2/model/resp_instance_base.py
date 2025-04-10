@@ -51,7 +51,7 @@ class RespInstanceBase:
     }
 
     def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, cbc_operation_locks=None):
-        """RespInstanceBase
+        r"""RespInstanceBase
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class RespInstanceBase:
 
     @property
     def id(self):
-        """Gets the id of this RespInstanceBase.
+        r"""Gets the id of this RespInstanceBase.
 
         实例ID
 
@@ -145,7 +145,7 @@ class RespInstanceBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RespInstanceBase.
+        r"""Sets the id of this RespInstanceBase.
 
         实例ID
 
@@ -156,7 +156,7 @@ class RespInstanceBase:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RespInstanceBase.
+        r"""Gets the project_id of this RespInstanceBase.
 
         实例所属租户ID
 
@@ -167,7 +167,7 @@ class RespInstanceBase:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RespInstanceBase.
+        r"""Sets the project_id of this RespInstanceBase.
 
         实例所属租户ID
 
@@ -178,7 +178,7 @@ class RespInstanceBase:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this RespInstanceBase.
+        r"""Gets the instance_name of this RespInstanceBase.
 
         实例名称
 
@@ -189,7 +189,7 @@ class RespInstanceBase:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this RespInstanceBase.
+        r"""Sets the instance_name of this RespInstanceBase.
 
         实例名称
 
@@ -200,7 +200,7 @@ class RespInstanceBase:
 
     @property
     def status(self):
-        """Gets the status of this RespInstanceBase.
+        r"""Gets the status of this RespInstanceBase.
 
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时 - Resizing：规格变更中 - ResizeFailed：规格变更失败 - ResizeTimeout：规格变更超时
 
@@ -211,7 +211,7 @@ class RespInstanceBase:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RespInstanceBase.
+        r"""Sets the status of this RespInstanceBase.
 
         实例状态： - Creating：创建中 - CreateSuccess：创建成功 - CreateFail：创建失败 - Initing：初始化中 - Registering：注册中 - Running：运行中 - InitingFailed：初始化失败 - RegisterFailed：注册失败 - Installing：安装中 - InstallFailed：安装失败 - Updating：升级中 - UpdateFailed：升级失败 - Rollbacking：回滚中 - RollbackSuccess：回滚成功 - RollbackFailed：回滚失败 - Deleting：删除中 - DeleteFailed：删除失败 - Unregistering：注销中 - UnRegisterFailed：注销失败 - CreateTimeout：创建超时 - InitTimeout：初始化超时 - RegisterTimeout：注册超时 - InstallTimeout：安装超时 - UpdateTimeout：升级超时 - RollbackTimeout：回滚超时 - DeleteTimeout：删除超时 - UnregisterTimeout：注销超时 - Starting：启动中 - Freezing：冻结中 - Frozen：已冻结 - Restarting：重启中 - RestartFail：重启失败 - Unhealthy：实例异常 - RestartTimeout：重启超时 - Resizing：规格变更中 - ResizeFailed：规格变更失败 - ResizeTimeout：规格变更超时
 
@@ -222,7 +222,7 @@ class RespInstanceBase:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this RespInstanceBase.
+        r"""Gets the instance_status of this RespInstanceBase.
 
         实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时 - 42：规格变更中 - 43：规格变更失败 - 44：规格变更超时
 
@@ -233,7 +233,7 @@ class RespInstanceBase:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this RespInstanceBase.
+        r"""Sets the instance_status of this RespInstanceBase.
 
         实例状态对应编号 - 1：创建中 - 2：创建成功 - 3：创建失败 - 4：初始化中 - 5：注册中 - 6：运行中 - 7：初始化失败 - 8：注册失败 - 10：安装中 - 11：安装失败 - 12：升级中 - 13：升级失败 - 20：回滚中 - 21：回滚成功 - 22：回滚失败 - 23：删除中 - 24：删除失败 - 25：注销中 - 26：注销失败 - 27：创建超时 - 28：初始化超时 - 29：注册超时 - 30：安装超时 - 31：升级超时 - 32：回滚超时 - 33：删除超时 - 34：注销超时 - 35：启动中 - 36：冻结中 - 37：已冻结 - 38：重启中 - 39：重启失败 - 40：实例异常 - 41：重启超时 - 42：规格变更中 - 43：规格变更失败 - 44：规格变更超时
 
@@ -244,7 +244,7 @@ class RespInstanceBase:
 
     @property
     def type(self):
-        """Gets the type of this RespInstanceBase.
+        r"""Gets the type of this RespInstanceBase.
 
         实例类型  默认apig
 
@@ -255,7 +255,7 @@ class RespInstanceBase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RespInstanceBase.
+        r"""Sets the type of this RespInstanceBase.
 
         实例类型  默认apig
 
@@ -266,7 +266,7 @@ class RespInstanceBase:
 
     @property
     def spec(self):
-        """Gets the spec of this RespInstanceBase.
+        r"""Gets the spec of this RespInstanceBase.
 
         实例规格： - BASIC：基础版实例 - PROFESSIONAL：专业版实例 - ENTERPRISE：企业版实例 - PLATINUM：铂金版实例 - BASIC_IPV6：基础版IPV6实例 - PROFESSIONAL_IPV6：专业版IPV6实例 - ENTERPRISE_IPV6：企业版IPV6实例 - PLATINUM_IPV6：铂金版IPV6实例
 
@@ -277,7 +277,7 @@ class RespInstanceBase:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this RespInstanceBase.
+        r"""Sets the spec of this RespInstanceBase.
 
         实例规格： - BASIC：基础版实例 - PROFESSIONAL：专业版实例 - ENTERPRISE：企业版实例 - PLATINUM：铂金版实例 - BASIC_IPV6：基础版IPV6实例 - PROFESSIONAL_IPV6：专业版IPV6实例 - ENTERPRISE_IPV6：企业版IPV6实例 - PLATINUM_IPV6：铂金版IPV6实例
 
@@ -288,7 +288,7 @@ class RespInstanceBase:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RespInstanceBase.
+        r"""Gets the create_time of this RespInstanceBase.
 
         实例创建时间。unix时间戳格式。
 
@@ -299,7 +299,7 @@ class RespInstanceBase:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RespInstanceBase.
+        r"""Sets the create_time of this RespInstanceBase.
 
         实例创建时间。unix时间戳格式。
 
@@ -310,7 +310,7 @@ class RespInstanceBase:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RespInstanceBase.
+        r"""Gets the enterprise_project_id of this RespInstanceBase.
 
         企业项目ID，企业账号必填
 
@@ -321,7 +321,7 @@ class RespInstanceBase:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RespInstanceBase.
+        r"""Sets the enterprise_project_id of this RespInstanceBase.
 
         企业项目ID，企业账号必填
 
@@ -332,7 +332,7 @@ class RespInstanceBase:
 
     @property
     def eip_address(self):
-        """Gets the eip_address of this RespInstanceBase.
+        r"""Gets the eip_address of this RespInstanceBase.
 
         实例绑定的弹性IP地址
 
@@ -343,7 +343,7 @@ class RespInstanceBase:
 
     @eip_address.setter
     def eip_address(self, eip_address):
-        """Sets the eip_address of this RespInstanceBase.
+        r"""Sets the eip_address of this RespInstanceBase.
 
         实例绑定的弹性IP地址
 
@@ -354,7 +354,7 @@ class RespInstanceBase:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this RespInstanceBase.
+        r"""Gets the charging_mode of this RespInstanceBase.
 
         实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
@@ -365,7 +365,7 @@ class RespInstanceBase:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this RespInstanceBase.
+        r"""Sets the charging_mode of this RespInstanceBase.
 
         实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
@@ -376,7 +376,7 @@ class RespInstanceBase:
 
     @property
     def cbc_metadata(self):
-        """Gets the cbc_metadata of this RespInstanceBase.
+        r"""Gets the cbc_metadata of this RespInstanceBase.
 
         [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
@@ -387,7 +387,7 @@ class RespInstanceBase:
 
     @cbc_metadata.setter
     def cbc_metadata(self, cbc_metadata):
-        """Sets the cbc_metadata of this RespInstanceBase.
+        r"""Sets the cbc_metadata of this RespInstanceBase.
 
         [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
@@ -398,7 +398,7 @@ class RespInstanceBase:
 
     @property
     def loadbalancer_provider(self):
-        """Gets the loadbalancer_provider of this RespInstanceBase.
+        r"""Gets the loadbalancer_provider of this RespInstanceBase.
 
         实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
 
@@ -409,7 +409,7 @@ class RespInstanceBase:
 
     @loadbalancer_provider.setter
     def loadbalancer_provider(self, loadbalancer_provider):
-        """Sets the loadbalancer_provider of this RespInstanceBase.
+        r"""Sets the loadbalancer_provider of this RespInstanceBase.
 
         实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
 
@@ -420,7 +420,7 @@ class RespInstanceBase:
 
     @property
     def cbc_operation_locks(self):
-        """Gets the cbc_operation_locks of this RespInstanceBase.
+        r"""Gets the cbc_operation_locks of this RespInstanceBase.
 
         云运营限制操作锁
 
@@ -431,7 +431,7 @@ class RespInstanceBase:
 
     @cbc_operation_locks.setter
     def cbc_operation_locks(self, cbc_operation_locks):
-        """Sets the cbc_operation_locks of this RespInstanceBase.
+        r"""Sets the cbc_operation_locks of this RespInstanceBase.
 
         云运营限制操作锁
 

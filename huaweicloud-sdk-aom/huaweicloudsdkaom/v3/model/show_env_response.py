@@ -54,7 +54,7 @@ class ShowEnvResponse(SdkResponse):
     }
 
     def __init__(self, aom_id=None, component_id=None, create_time=None, creator=None, description=None, env_id=None, env_name=None, env_tags=None, env_type=None, eps_id=None, modified_time=None, modifier=None, os_type=None, region=None, register_type=None):
-        """ShowEnvResponse
+        r"""ShowEnvResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def aom_id(self):
-        """Gets the aom_id of this ShowEnvResponse.
+        r"""Gets the aom_id of this ShowEnvResponse.
 
         aomId
 
@@ -153,7 +153,7 @@ class ShowEnvResponse(SdkResponse):
 
     @aom_id.setter
     def aom_id(self, aom_id):
-        """Sets the aom_id of this ShowEnvResponse.
+        r"""Sets the aom_id of this ShowEnvResponse.
 
         aomId
 
@@ -164,7 +164,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowEnvResponse.
+        r"""Gets the component_id of this ShowEnvResponse.
 
         组件Id
 
@@ -175,7 +175,7 @@ class ShowEnvResponse(SdkResponse):
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowEnvResponse.
+        r"""Sets the component_id of this ShowEnvResponse.
 
         组件Id
 
@@ -186,7 +186,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowEnvResponse.
+        r"""Gets the create_time of this ShowEnvResponse.
 
         创建时间
 
@@ -197,7 +197,7 @@ class ShowEnvResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowEnvResponse.
+        r"""Sets the create_time of this ShowEnvResponse.
 
         创建时间
 
@@ -208,7 +208,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowEnvResponse.
+        r"""Gets the creator of this ShowEnvResponse.
 
         创建者
 
@@ -219,7 +219,7 @@ class ShowEnvResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowEnvResponse.
+        r"""Sets the creator of this ShowEnvResponse.
 
         创建者
 
@@ -230,7 +230,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEnvResponse.
+        r"""Gets the description of this ShowEnvResponse.
 
         描述
 
@@ -241,7 +241,7 @@ class ShowEnvResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEnvResponse.
+        r"""Sets the description of this ShowEnvResponse.
 
         描述
 
@@ -252,7 +252,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def env_id(self):
-        """Gets the env_id of this ShowEnvResponse.
+        r"""Gets the env_id of this ShowEnvResponse.
 
         环境Id
 
@@ -263,7 +263,7 @@ class ShowEnvResponse(SdkResponse):
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ShowEnvResponse.
+        r"""Sets the env_id of this ShowEnvResponse.
 
         环境Id
 
@@ -274,7 +274,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def env_name(self):
-        """Gets the env_name of this ShowEnvResponse.
+        r"""Gets the env_name of this ShowEnvResponse.
 
         环境名称
 
@@ -285,7 +285,7 @@ class ShowEnvResponse(SdkResponse):
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ShowEnvResponse.
+        r"""Sets the env_name of this ShowEnvResponse.
 
         环境名称
 
@@ -296,7 +296,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def env_tags(self):
-        """Gets the env_tags of this ShowEnvResponse.
+        r"""Gets the env_tags of this ShowEnvResponse.
 
         环境标签
 
@@ -307,7 +307,7 @@ class ShowEnvResponse(SdkResponse):
 
     @env_tags.setter
     def env_tags(self, env_tags):
-        """Sets the env_tags of this ShowEnvResponse.
+        r"""Sets the env_tags of this ShowEnvResponse.
 
         环境标签
 
@@ -318,7 +318,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def env_type(self):
-        """Gets the env_type of this ShowEnvResponse.
+        r"""Gets the env_type of this ShowEnvResponse.
 
         环境类型
 
@@ -329,7 +329,7 @@ class ShowEnvResponse(SdkResponse):
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this ShowEnvResponse.
+        r"""Sets the env_type of this ShowEnvResponse.
 
         环境类型
 
@@ -340,7 +340,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this ShowEnvResponse.
+        r"""Gets the eps_id of this ShowEnvResponse.
 
         企业项目Id
 
@@ -351,7 +351,7 @@ class ShowEnvResponse(SdkResponse):
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this ShowEnvResponse.
+        r"""Sets the eps_id of this ShowEnvResponse.
 
         企业项目Id
 
@@ -362,7 +362,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this ShowEnvResponse.
+        r"""Gets the modified_time of this ShowEnvResponse.
 
         修改时间
 
@@ -373,7 +373,7 @@ class ShowEnvResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this ShowEnvResponse.
+        r"""Sets the modified_time of this ShowEnvResponse.
 
         修改时间
 
@@ -384,7 +384,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def modifier(self):
-        """Gets the modifier of this ShowEnvResponse.
+        r"""Gets the modifier of this ShowEnvResponse.
 
         修改者
 
@@ -395,7 +395,7 @@ class ShowEnvResponse(SdkResponse):
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this ShowEnvResponse.
+        r"""Sets the modifier of this ShowEnvResponse.
 
         修改者
 
@@ -406,7 +406,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowEnvResponse.
+        r"""Gets the os_type of this ShowEnvResponse.
 
         os类型
 
@@ -417,7 +417,7 @@ class ShowEnvResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowEnvResponse.
+        r"""Sets the os_type of this ShowEnvResponse.
 
         os类型
 
@@ -428,7 +428,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowEnvResponse.
+        r"""Gets the region of this ShowEnvResponse.
 
         区域
 
@@ -439,7 +439,7 @@ class ShowEnvResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowEnvResponse.
+        r"""Sets the region of this ShowEnvResponse.
 
         区域
 
@@ -450,7 +450,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def register_type(self):
-        """Gets the register_type of this ShowEnvResponse.
+        r"""Gets the register_type of this ShowEnvResponse.
 
         注册方式
 
@@ -461,7 +461,7 @@ class ShowEnvResponse(SdkResponse):
 
     @register_type.setter
     def register_type(self, register_type):
-        """Sets the register_type of this ShowEnvResponse.
+        r"""Sets the register_type of this ShowEnvResponse.
 
         注册方式
 

@@ -27,7 +27,7 @@ class ContentHeader:
     }
 
     def __init__(self, key=None, value=None):
-        """ContentHeader
+        r"""ContentHeader
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ContentHeader:
 
     @property
     def key(self):
-        """Gets the key of this ContentHeader.
+        r"""Gets the key of this ContentHeader.
 
         键
 
@@ -61,7 +61,7 @@ class ContentHeader:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ContentHeader.
+        r"""Sets the key of this ContentHeader.
 
         键
 
@@ -72,7 +72,7 @@ class ContentHeader:
 
     @property
     def value(self):
-        """Gets the value of this ContentHeader.
+        r"""Gets the value of this ContentHeader.
 
         值
 
@@ -83,7 +83,7 @@ class ContentHeader:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ContentHeader.
+        r"""Sets the value of this ContentHeader.
 
         值
 

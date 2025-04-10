@@ -26,7 +26,7 @@ class CreateAnimatedGraphicsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateAnimatedGraphicsTaskResponse
+        r"""CreateAnimatedGraphicsTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAnimatedGraphicsTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateAnimatedGraphicsTaskResponse.
+        r"""Gets the task_id of this CreateAnimatedGraphicsTaskResponse.
 
         任务ID 
 
@@ -55,7 +55,7 @@ class CreateAnimatedGraphicsTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateAnimatedGraphicsTaskResponse.
+        r"""Sets the task_id of this CreateAnimatedGraphicsTaskResponse.
 
         任务ID 
 

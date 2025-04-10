@@ -31,7 +31,7 @@ class ListCategoryRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, accept=None):
-        """ListCategoryRequest
+        r"""ListCategoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListCategoryRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListCategoryRequest.
+        r"""Gets the workspace of this ListCategoryRequest.
 
         DataArts Studio工作空间ID
 
@@ -73,7 +73,7 @@ class ListCategoryRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListCategoryRequest.
+        r"""Sets the workspace of this ListCategoryRequest.
 
         DataArts Studio工作空间ID
 
@@ -84,7 +84,7 @@ class ListCategoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCategoryRequest.
+        r"""Gets the limit of this ListCategoryRequest.
 
         分页时每页的条数,最大值为100
 
@@ -95,7 +95,7 @@ class ListCategoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCategoryRequest.
+        r"""Sets the limit of this ListCategoryRequest.
 
         分页时每页的条数,最大值为100
 
@@ -106,7 +106,7 @@ class ListCategoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCategoryRequest.
+        r"""Gets the offset of this ListCategoryRequest.
 
         分页偏移量
 
@@ -117,7 +117,7 @@ class ListCategoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCategoryRequest.
+        r"""Sets the offset of this ListCategoryRequest.
 
         分页偏移量
 
@@ -128,7 +128,7 @@ class ListCategoryRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this ListCategoryRequest.
+        r"""Gets the accept of this ListCategoryRequest.
 
         application/json
 
@@ -139,7 +139,7 @@ class ListCategoryRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this ListCategoryRequest.
+        r"""Sets the accept of this ListCategoryRequest.
 
         application/json
 

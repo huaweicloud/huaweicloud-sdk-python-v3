@@ -29,7 +29,7 @@ class CheckedKey:
     }
 
     def __init__(self, key=None, is_etag_matching=None, is_object_existing=None):
-        """CheckedKey
+        r"""CheckedKey
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckedKey:
 
     @property
     def key(self):
-        """Gets the key of this CheckedKey.
+        r"""Gets the key of this CheckedKey.
 
         键
 
@@ -68,7 +68,7 @@ class CheckedKey:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CheckedKey.
+        r"""Sets the key of this CheckedKey.
 
         键
 
@@ -79,7 +79,7 @@ class CheckedKey:
 
     @property
     def is_etag_matching(self):
-        """Gets the is_etag_matching of this CheckedKey.
+        r"""Gets the is_etag_matching of this CheckedKey.
 
         是否电子标签匹配
 
@@ -90,7 +90,7 @@ class CheckedKey:
 
     @is_etag_matching.setter
     def is_etag_matching(self, is_etag_matching):
-        """Sets the is_etag_matching of this CheckedKey.
+        r"""Sets the is_etag_matching of this CheckedKey.
 
         是否电子标签匹配
 
@@ -101,7 +101,7 @@ class CheckedKey:
 
     @property
     def is_object_existing(self):
-        """Gets the is_object_existing of this CheckedKey.
+        r"""Gets the is_object_existing of this CheckedKey.
 
         是否存在对象
 
@@ -112,7 +112,7 @@ class CheckedKey:
 
     @is_object_existing.setter
     def is_object_existing(self, is_object_existing):
-        """Sets the is_object_existing of this CheckedKey.
+        r"""Sets the is_object_existing of this CheckedKey.
 
         是否存在对象
 

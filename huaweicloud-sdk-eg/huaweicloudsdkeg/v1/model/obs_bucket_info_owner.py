@@ -27,7 +27,7 @@ class ObsBucketInfoOwner:
     }
 
     def __init__(self, display_name=None, id=None):
-        """ObsBucketInfoOwner
+        r"""ObsBucketInfoOwner
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ObsBucketInfoOwner:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ObsBucketInfoOwner.
+        r"""Gets the display_name of this ObsBucketInfoOwner.
 
         显示名称
 
@@ -61,7 +61,7 @@ class ObsBucketInfoOwner:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ObsBucketInfoOwner.
+        r"""Sets the display_name of this ObsBucketInfoOwner.
 
         显示名称
 
@@ -72,7 +72,7 @@ class ObsBucketInfoOwner:
 
     @property
     def id(self):
-        """Gets the id of this ObsBucketInfoOwner.
+        r"""Gets the id of this ObsBucketInfoOwner.
 
         用户的DomainID，即帐号ID
 
@@ -83,7 +83,7 @@ class ObsBucketInfoOwner:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ObsBucketInfoOwner.
+        r"""Sets the id of this ObsBucketInfoOwner.
 
         用户的DomainID，即帐号ID
 

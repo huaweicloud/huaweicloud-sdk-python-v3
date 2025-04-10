@@ -26,7 +26,7 @@ class BatchDeleteImageServerResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteImageServerResponse
+        r"""BatchDeleteImageServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteImageServerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteImageServerResponse.
+        r"""Gets the job_id of this BatchDeleteImageServerResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class BatchDeleteImageServerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteImageServerResponse.
+        r"""Sets the job_id of this BatchDeleteImageServerResponse.
 
         任务ID。
 

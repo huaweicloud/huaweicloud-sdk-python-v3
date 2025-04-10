@@ -25,7 +25,7 @@ class DeployApplicationRequestBody:
     }
 
     def __init__(self, version=None):
-        """DeployApplicationRequestBody
+        r"""DeployApplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeployApplicationRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this DeployApplicationRequestBody.
+        r"""Gets the version of this DeployApplicationRequestBody.
 
         版本信息。
 
@@ -53,7 +53,7 @@ class DeployApplicationRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeployApplicationRequestBody.
+        r"""Sets the version of this DeployApplicationRequestBody.
 
         版本信息。
 

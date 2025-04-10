@@ -27,7 +27,7 @@ class DeleteReplicationRequestParams:
     }
 
     def __init__(self, server_group_id=None, delete_target_volume=None):
-        """DeleteReplicationRequestParams
+        r"""DeleteReplicationRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteReplicationRequestParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DeleteReplicationRequestParams.
+        r"""Gets the server_group_id of this DeleteReplicationRequestParams.
 
         保护组的ID。
 
@@ -61,7 +61,7 @@ class DeleteReplicationRequestParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DeleteReplicationRequestParams.
+        r"""Sets the server_group_id of this DeleteReplicationRequestParams.
 
         保护组的ID。
 
@@ -72,7 +72,7 @@ class DeleteReplicationRequestParams:
 
     @property
     def delete_target_volume(self):
-        """Gets the delete_target_volume of this DeleteReplicationRequestParams.
+        r"""Gets the delete_target_volume of this DeleteReplicationRequestParams.
 
         是否删除容灾站点磁盘，默认值为false。
 
@@ -83,7 +83,7 @@ class DeleteReplicationRequestParams:
 
     @delete_target_volume.setter
     def delete_target_volume(self, delete_target_volume):
-        """Sets the delete_target_volume of this DeleteReplicationRequestParams.
+        r"""Sets the delete_target_volume of this DeleteReplicationRequestParams.
 
         是否删除容灾站点磁盘，默认值为false。
 

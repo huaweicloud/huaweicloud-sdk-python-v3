@@ -43,7 +43,7 @@ class IpsRuleVO:
     }
 
     def __init__(self, affected_application=None, create_time=None, default_status=None, ips_cve=None, ips_group=None, ips_id=None, ips_level=None, ips_name=None, ips_rules_type=None, ips_status=None):
-        """IpsRuleVO
+        r"""IpsRuleVO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class IpsRuleVO:
 
     @property
     def affected_application(self):
-        """Gets the affected_application of this IpsRuleVO.
+        r"""Gets the affected_application of this IpsRuleVO.
 
         :return: The affected_application of this IpsRuleVO.
         :rtype: str
@@ -115,7 +115,7 @@ class IpsRuleVO:
 
     @affected_application.setter
     def affected_application(self, affected_application):
-        """Sets the affected_application of this IpsRuleVO.
+        r"""Sets the affected_application of this IpsRuleVO.
 
         :param affected_application: The affected_application of this IpsRuleVO.
         :type affected_application: str
@@ -124,7 +124,7 @@ class IpsRuleVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IpsRuleVO.
+        r"""Gets the create_time of this IpsRuleVO.
 
         :return: The create_time of this IpsRuleVO.
         :rtype: str
@@ -133,7 +133,7 @@ class IpsRuleVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IpsRuleVO.
+        r"""Sets the create_time of this IpsRuleVO.
 
         :param create_time: The create_time of this IpsRuleVO.
         :type create_time: str
@@ -142,7 +142,7 @@ class IpsRuleVO:
 
     @property
     def default_status(self):
-        """Gets the default_status of this IpsRuleVO.
+        r"""Gets the default_status of this IpsRuleVO.
 
         :return: The default_status of this IpsRuleVO.
         :rtype: str
@@ -151,7 +151,7 @@ class IpsRuleVO:
 
     @default_status.setter
     def default_status(self, default_status):
-        """Sets the default_status of this IpsRuleVO.
+        r"""Sets the default_status of this IpsRuleVO.
 
         :param default_status: The default_status of this IpsRuleVO.
         :type default_status: str
@@ -160,7 +160,7 @@ class IpsRuleVO:
 
     @property
     def ips_cve(self):
-        """Gets the ips_cve of this IpsRuleVO.
+        r"""Gets the ips_cve of this IpsRuleVO.
 
         :return: The ips_cve of this IpsRuleVO.
         :rtype: str
@@ -169,7 +169,7 @@ class IpsRuleVO:
 
     @ips_cve.setter
     def ips_cve(self, ips_cve):
-        """Sets the ips_cve of this IpsRuleVO.
+        r"""Sets the ips_cve of this IpsRuleVO.
 
         :param ips_cve: The ips_cve of this IpsRuleVO.
         :type ips_cve: str
@@ -178,7 +178,7 @@ class IpsRuleVO:
 
     @property
     def ips_group(self):
-        """Gets the ips_group of this IpsRuleVO.
+        r"""Gets the ips_group of this IpsRuleVO.
 
         :return: The ips_group of this IpsRuleVO.
         :rtype: str
@@ -187,7 +187,7 @@ class IpsRuleVO:
 
     @ips_group.setter
     def ips_group(self, ips_group):
-        """Sets the ips_group of this IpsRuleVO.
+        r"""Sets the ips_group of this IpsRuleVO.
 
         :param ips_group: The ips_group of this IpsRuleVO.
         :type ips_group: str
@@ -196,7 +196,7 @@ class IpsRuleVO:
 
     @property
     def ips_id(self):
-        """Gets the ips_id of this IpsRuleVO.
+        r"""Gets the ips_id of this IpsRuleVO.
 
         :return: The ips_id of this IpsRuleVO.
         :rtype: str
@@ -205,7 +205,7 @@ class IpsRuleVO:
 
     @ips_id.setter
     def ips_id(self, ips_id):
-        """Sets the ips_id of this IpsRuleVO.
+        r"""Sets the ips_id of this IpsRuleVO.
 
         :param ips_id: The ips_id of this IpsRuleVO.
         :type ips_id: str
@@ -214,7 +214,7 @@ class IpsRuleVO:
 
     @property
     def ips_level(self):
-        """Gets the ips_level of this IpsRuleVO.
+        r"""Gets the ips_level of this IpsRuleVO.
 
         :return: The ips_level of this IpsRuleVO.
         :rtype: str
@@ -223,7 +223,7 @@ class IpsRuleVO:
 
     @ips_level.setter
     def ips_level(self, ips_level):
-        """Sets the ips_level of this IpsRuleVO.
+        r"""Sets the ips_level of this IpsRuleVO.
 
         :param ips_level: The ips_level of this IpsRuleVO.
         :type ips_level: str
@@ -232,7 +232,7 @@ class IpsRuleVO:
 
     @property
     def ips_name(self):
-        """Gets the ips_name of this IpsRuleVO.
+        r"""Gets the ips_name of this IpsRuleVO.
 
         :return: The ips_name of this IpsRuleVO.
         :rtype: str
@@ -241,7 +241,7 @@ class IpsRuleVO:
 
     @ips_name.setter
     def ips_name(self, ips_name):
-        """Sets the ips_name of this IpsRuleVO.
+        r"""Sets the ips_name of this IpsRuleVO.
 
         :param ips_name: The ips_name of this IpsRuleVO.
         :type ips_name: str
@@ -250,7 +250,7 @@ class IpsRuleVO:
 
     @property
     def ips_rules_type(self):
-        """Gets the ips_rules_type of this IpsRuleVO.
+        r"""Gets the ips_rules_type of this IpsRuleVO.
 
         :return: The ips_rules_type of this IpsRuleVO.
         :rtype: str
@@ -259,7 +259,7 @@ class IpsRuleVO:
 
     @ips_rules_type.setter
     def ips_rules_type(self, ips_rules_type):
-        """Sets the ips_rules_type of this IpsRuleVO.
+        r"""Sets the ips_rules_type of this IpsRuleVO.
 
         :param ips_rules_type: The ips_rules_type of this IpsRuleVO.
         :type ips_rules_type: str
@@ -268,7 +268,7 @@ class IpsRuleVO:
 
     @property
     def ips_status(self):
-        """Gets the ips_status of this IpsRuleVO.
+        r"""Gets the ips_status of this IpsRuleVO.
 
         :return: The ips_status of this IpsRuleVO.
         :rtype: str
@@ -277,7 +277,7 @@ class IpsRuleVO:
 
     @ips_status.setter
     def ips_status(self, ips_status):
-        """Sets the ips_status of this IpsRuleVO.
+        r"""Sets the ips_status of this IpsRuleVO.
 
         :param ips_status: The ips_status of this IpsRuleVO.
         :type ips_status: str

@@ -29,7 +29,7 @@ class Position:
     }
 
     def __init__(self, line=None, column=None, offset=None):
-        """Position
+        r"""Position
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Position:
 
     @property
     def line(self):
-        """Gets the line of this Position.
+        r"""Gets the line of this Position.
 
         位置的行号，从1开始。
 
@@ -65,7 +65,7 @@ class Position:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this Position.
+        r"""Sets the line of this Position.
 
         位置的行号，从1开始。
 
@@ -76,7 +76,7 @@ class Position:
 
     @property
     def column(self):
-        """Gets the column of this Position.
+        r"""Gets the column of this Position.
 
         位置的列号，从0开始。
 
@@ -87,7 +87,7 @@ class Position:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this Position.
+        r"""Sets the column of this Position.
 
         位置的列号，从0开始。
 
@@ -98,7 +98,7 @@ class Position:
 
     @property
     def offset(self):
-        """Gets the offset of this Position.
+        r"""Gets the offset of this Position.
 
         策略中与位置对应的偏移量，从0开始。
 
@@ -109,7 +109,7 @@ class Position:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this Position.
+        r"""Sets the offset of this Position.
 
         策略中与位置对应的偏移量，从0开始。
 

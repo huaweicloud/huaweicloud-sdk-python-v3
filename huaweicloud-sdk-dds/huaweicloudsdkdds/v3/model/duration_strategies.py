@@ -27,7 +27,7 @@ class DurationStrategies:
     }
 
     def __init__(self, strategy=None, estimated_upgrade_duration=None):
-        """DurationStrategies
+        r"""DurationStrategies
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DurationStrategies:
 
     @property
     def strategy(self):
-        """Gets the strategy of this DurationStrategies.
+        r"""Gets the strategy of this DurationStrategies.
 
         升级策略 - minimized_interrupt_time，表示最短中断时间 - minimized_upgrade_time，最短升级时长
 
@@ -59,7 +59,7 @@ class DurationStrategies:
 
     @strategy.setter
     def strategy(self, strategy):
-        """Sets the strategy of this DurationStrategies.
+        r"""Sets the strategy of this DurationStrategies.
 
         升级策略 - minimized_interrupt_time，表示最短中断时间 - minimized_upgrade_time，最短升级时长
 
@@ -70,7 +70,7 @@ class DurationStrategies:
 
     @property
     def estimated_upgrade_duration(self):
-        """Gets the estimated_upgrade_duration of this DurationStrategies.
+        r"""Gets the estimated_upgrade_duration of this DurationStrategies.
 
         升级时长，单位为分钟
 
@@ -81,7 +81,7 @@ class DurationStrategies:
 
     @estimated_upgrade_duration.setter
     def estimated_upgrade_duration(self, estimated_upgrade_duration):
-        """Sets the estimated_upgrade_duration of this DurationStrategies.
+        r"""Sets the estimated_upgrade_duration of this DurationStrategies.
 
         升级时长，单位为分钟
 

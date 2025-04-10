@@ -25,7 +25,7 @@ class ShowIpWhitelistRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowIpWhitelistRequest
+        r"""ShowIpWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowIpWhitelistRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowIpWhitelistRequest.
+        r"""Gets the instance_id of this ShowIpWhitelistRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowIpWhitelistRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowIpWhitelistRequest.
+        r"""Sets the instance_id of this ShowIpWhitelistRequest.
 
         实例ID。
 

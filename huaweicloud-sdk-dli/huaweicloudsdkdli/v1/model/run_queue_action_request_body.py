@@ -29,7 +29,7 @@ class RunQueueActionRequestBody:
     }
 
     def __init__(self, action=None, force=None, cu_count=None):
-        """RunQueueActionRequestBody
+        r"""RunQueueActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunQueueActionRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this RunQueueActionRequestBody.
+        r"""Gets the action of this RunQueueActionRequestBody.
 
         执行动作：restart：重启scale_out：扩容scale_in：缩容，目前只支持restart、scale_out、scale_in。
 
@@ -67,7 +67,7 @@ class RunQueueActionRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RunQueueActionRequestBody.
+        r"""Sets the action of this RunQueueActionRequestBody.
 
         执行动作：restart：重启scale_out：扩容scale_in：缩容，目前只支持restart、scale_out、scale_in。
 
@@ -78,7 +78,7 @@ class RunQueueActionRequestBody:
 
     @property
     def force(self):
-        """Gets the force of this RunQueueActionRequestBody.
+        r"""Gets the force of this RunQueueActionRequestBody.
 
         是否强制重启，action为restart时可选择配置，默认为false。
 
@@ -89,7 +89,7 @@ class RunQueueActionRequestBody:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this RunQueueActionRequestBody.
+        r"""Sets the force of this RunQueueActionRequestBody.
 
         是否强制重启，action为restart时可选择配置，默认为false。
 
@@ -100,7 +100,7 @@ class RunQueueActionRequestBody:
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this RunQueueActionRequestBody.
+        r"""Gets the cu_count of this RunQueueActionRequestBody.
 
         队列的实际CU。
 
@@ -111,7 +111,7 @@ class RunQueueActionRequestBody:
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this RunQueueActionRequestBody.
+        r"""Sets the cu_count of this RunQueueActionRequestBody.
 
         队列的实际CU。
 

@@ -34,7 +34,7 @@ class ModerationClient(Client):
         return client_builder
 
     def batch_check_image_sync(self, request):
-        """图像审核批量同步接口
+        r"""图像审核批量同步接口
 
         图像审核批量同步接口
         
@@ -99,7 +99,7 @@ class ModerationClient(Client):
         return http_info
 
     def check_image_moderation(self, request):
-        """图像内容审核
+        r"""图像内容审核
 
         分析并识别用户上传的图像内容是否有敏感内容（如涉及暴恐元素、涉黄内容等），并将识别结果返回给用户。
         
@@ -166,7 +166,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_close_audio_stream_moderation_job(self, request):
-        """关闭音频流内容审核作业
+        r"""关闭音频流内容审核作业
 
         关闭音频流内容审核作业
         
@@ -231,7 +231,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_create_audio_moderation_job(self, request):
-        """创建音频内容审核作业
+        r"""创建音频内容审核作业
 
         分析并识别用户上传的音频内容是否有敏感内容（如色情、政治等），并将识别结果返回给用户
         
@@ -296,7 +296,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_create_audio_stream_moderation_job(self, request):
-        """创建音频流内容审核作业
+        r"""创建音频流内容审核作业
 
         创建音频流内容审核作业，创建成功会将作业ID返回给用户
         
@@ -361,7 +361,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_create_video_moderation_job(self, request):
-        """创建视频内容审核作业
+        r"""创建视频内容审核作业
 
         创建视频内容审核作业，创建成功会将作业ID返回给用户
         
@@ -426,7 +426,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_query_audio_moderation_job(self, request):
-        """查询音频内容审核作业
+        r"""查询音频内容审核作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -490,7 +490,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_query_video_moderation_job(self, request):
-        """查询视频内容审核作业
+        r"""查询视频内容审核作业
 
         查询视频审核作业处理状态与结果，并将识别结果返回给用户
         
@@ -555,7 +555,7 @@ class ModerationClient(Client):
         return http_info
 
     def run_text_moderation(self, request):
-        """文本内容审核
+        r"""文本内容审核
 
         分析并识别用户上传的文本内容是否有敏感内容（如色情、政治等），并将识别结果返回给用户
         

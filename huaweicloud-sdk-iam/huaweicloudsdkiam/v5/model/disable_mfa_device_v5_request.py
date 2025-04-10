@@ -25,7 +25,7 @@ class DisableMfaDeviceV5Request:
     }
 
     def __init__(self, body=None):
-        """DisableMfaDeviceV5Request
+        r"""DisableMfaDeviceV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisableMfaDeviceV5Request:
 
     @property
     def body(self):
-        """Gets the body of this DisableMfaDeviceV5Request.
+        r"""Gets the body of this DisableMfaDeviceV5Request.
 
         :return: The body of this DisableMfaDeviceV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.DisableMfaDeviceReqBody`
@@ -52,7 +52,7 @@ class DisableMfaDeviceV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisableMfaDeviceV5Request.
+        r"""Sets the body of this DisableMfaDeviceV5Request.
 
         :param body: The body of this DisableMfaDeviceV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.DisableMfaDeviceReqBody`

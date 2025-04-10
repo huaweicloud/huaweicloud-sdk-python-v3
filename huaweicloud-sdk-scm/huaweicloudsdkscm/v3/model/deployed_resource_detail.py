@@ -31,7 +31,7 @@ class DeployedResourceDetail:
     }
 
     def __init__(self, service=None, resource_num=None, resource_location=None, region_resources=None):
-        """DeployedResourceDetail
+        r"""DeployedResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeployedResourceDetail:
 
     @property
     def service(self):
-        """Gets the service of this DeployedResourceDetail.
+        r"""Gets the service of this DeployedResourceDetail.
 
         证书已部署资源服务名称。 - WAF：证书关联Web应用防火墙的资源。 - CDN：证书关联内容分发网络的资源。 - ELB：证书关联弹性负载均衡（经典型）的资源。
 
@@ -71,7 +71,7 @@ class DeployedResourceDetail:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this DeployedResourceDetail.
+        r"""Sets the service of this DeployedResourceDetail.
 
         证书已部署资源服务名称。 - WAF：证书关联Web应用防火墙的资源。 - CDN：证书关联内容分发网络的资源。 - ELB：证书关联弹性负载均衡（经典型）的资源。
 
@@ -82,7 +82,7 @@ class DeployedResourceDetail:
 
     @property
     def resource_num(self):
-        """Gets the resource_num of this DeployedResourceDetail.
+        r"""Gets the resource_num of this DeployedResourceDetail.
 
         证书在当前服务已部署资源数量。
 
@@ -93,7 +93,7 @@ class DeployedResourceDetail:
 
     @resource_num.setter
     def resource_num(self, resource_num):
-        """Sets the resource_num of this DeployedResourceDetail.
+        r"""Sets the resource_num of this DeployedResourceDetail.
 
         证书在当前服务已部署资源数量。
 
@@ -104,7 +104,7 @@ class DeployedResourceDetail:
 
     @property
     def resource_location(self):
-        """Gets the resource_location of this DeployedResourceDetail.
+        r"""Gets the resource_location of this DeployedResourceDetail.
 
         全局服务或Region级服务。
 
@@ -115,7 +115,7 @@ class DeployedResourceDetail:
 
     @resource_location.setter
     def resource_location(self, resource_location):
-        """Sets the resource_location of this DeployedResourceDetail.
+        r"""Sets the resource_location of this DeployedResourceDetail.
 
         全局服务或Region级服务。
 
@@ -126,7 +126,7 @@ class DeployedResourceDetail:
 
     @property
     def region_resources(self):
-        """Gets the region_resources of this DeployedResourceDetail.
+        r"""Gets the region_resources of this DeployedResourceDetail.
 
         局点资源列表，详情请参见RegionResourceDetail字段数据结构说明。
 
@@ -137,7 +137,7 @@ class DeployedResourceDetail:
 
     @region_resources.setter
     def region_resources(self, region_resources):
-        """Sets the region_resources of this DeployedResourceDetail.
+        r"""Sets the region_resources of this DeployedResourceDetail.
 
         局点资源列表，详情请参见RegionResourceDetail字段数据结构说明。
 

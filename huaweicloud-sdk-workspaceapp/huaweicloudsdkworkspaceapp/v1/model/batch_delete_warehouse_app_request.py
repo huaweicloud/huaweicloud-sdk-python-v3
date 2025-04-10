@@ -25,7 +25,7 @@ class BatchDeleteWarehouseAppRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteWarehouseAppRequest
+        r"""BatchDeleteWarehouseAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteWarehouseAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteWarehouseAppRequest.
+        r"""Gets the body of this BatchDeleteWarehouseAppRequest.
 
         :return: The body of this BatchDeleteWarehouseAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteWarehouseAppReq`
@@ -52,7 +52,7 @@ class BatchDeleteWarehouseAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteWarehouseAppRequest.
+        r"""Sets the body of this BatchDeleteWarehouseAppRequest.
 
         :param body: The body of this BatchDeleteWarehouseAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteWarehouseAppReq`

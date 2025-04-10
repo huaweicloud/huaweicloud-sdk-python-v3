@@ -41,7 +41,7 @@ class CreateAppRequestBody:
     }
 
     def __init__(self, project_id=None, name=None, description=None, group_id=None, is_draft=None, create_type=None, slave_cluster_id=None, trigger=None, arrange_infos=None):
-        """CreateAppRequestBody
+        r"""CreateAppRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class CreateAppRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAppRequestBody.
+        r"""Gets the project_id of this CreateAppRequestBody.
 
         项目id
 
@@ -106,7 +106,7 @@ class CreateAppRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAppRequestBody.
+        r"""Sets the project_id of this CreateAppRequestBody.
 
         项目id
 
@@ -117,7 +117,7 @@ class CreateAppRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateAppRequestBody.
+        r"""Gets the name of this CreateAppRequestBody.
 
         应用名称
 
@@ -128,7 +128,7 @@ class CreateAppRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAppRequestBody.
+        r"""Sets the name of this CreateAppRequestBody.
 
         应用名称
 
@@ -139,7 +139,7 @@ class CreateAppRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAppRequestBody.
+        r"""Gets the description of this CreateAppRequestBody.
 
         描述
 
@@ -150,7 +150,7 @@ class CreateAppRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAppRequestBody.
+        r"""Sets the description of this CreateAppRequestBody.
 
         描述
 
@@ -161,7 +161,7 @@ class CreateAppRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateAppRequestBody.
+        r"""Gets the group_id of this CreateAppRequestBody.
 
         分组id
 
@@ -172,7 +172,7 @@ class CreateAppRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateAppRequestBody.
+        r"""Sets the group_id of this CreateAppRequestBody.
 
         分组id
 
@@ -183,7 +183,7 @@ class CreateAppRequestBody:
 
     @property
     def is_draft(self):
-        """Gets the is_draft of this CreateAppRequestBody.
+        r"""Gets the is_draft of this CreateAppRequestBody.
 
         是否为草稿
 
@@ -194,7 +194,7 @@ class CreateAppRequestBody:
 
     @is_draft.setter
     def is_draft(self, is_draft):
-        """Sets the is_draft of this CreateAppRequestBody.
+        r"""Sets the is_draft of this CreateAppRequestBody.
 
         是否为草稿
 
@@ -205,7 +205,7 @@ class CreateAppRequestBody:
 
     @property
     def create_type(self):
-        """Gets the create_type of this CreateAppRequestBody.
+        r"""Gets the create_type of this CreateAppRequestBody.
 
         创建类型，创建类型只有一个'template'，即根据模板创建
 
@@ -216,7 +216,7 @@ class CreateAppRequestBody:
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this CreateAppRequestBody.
+        r"""Sets the create_type of this CreateAppRequestBody.
 
         创建类型，创建类型只有一个'template'，即根据模板创建
 
@@ -227,7 +227,7 @@ class CreateAppRequestBody:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this CreateAppRequestBody.
+        r"""Gets the slave_cluster_id of this CreateAppRequestBody.
 
         自定义slave资源池id
 
@@ -238,7 +238,7 @@ class CreateAppRequestBody:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this CreateAppRequestBody.
+        r"""Sets the slave_cluster_id of this CreateAppRequestBody.
 
         自定义slave资源池id
 
@@ -249,7 +249,7 @@ class CreateAppRequestBody:
 
     @property
     def trigger(self):
-        """Gets the trigger of this CreateAppRequestBody.
+        r"""Gets the trigger of this CreateAppRequestBody.
 
         :return: The trigger of this CreateAppRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.TaskTriggerVO`
@@ -258,7 +258,7 @@ class CreateAppRequestBody:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this CreateAppRequestBody.
+        r"""Sets the trigger of this CreateAppRequestBody.
 
         :param trigger: The trigger of this CreateAppRequestBody.
         :type trigger: :class:`huaweicloudsdkcodeartsdeploy.v2.TaskTriggerVO`
@@ -267,7 +267,7 @@ class CreateAppRequestBody:
 
     @property
     def arrange_infos(self):
-        """Gets the arrange_infos of this CreateAppRequestBody.
+        r"""Gets the arrange_infos of this CreateAppRequestBody.
 
         部署任务列表信息
 
@@ -278,7 +278,7 @@ class CreateAppRequestBody:
 
     @arrange_infos.setter
     def arrange_infos(self, arrange_infos):
-        """Sets the arrange_infos of this CreateAppRequestBody.
+        r"""Sets the arrange_infos of this CreateAppRequestBody.
 
         部署任务列表信息
 

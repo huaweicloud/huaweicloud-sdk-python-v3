@@ -26,7 +26,7 @@ class CreateVpcRouteResponse(SdkResponse):
     }
 
     def __init__(self, route=None):
-        """CreateVpcRouteResponse
+        r"""CreateVpcRouteResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateVpcRouteResponse(SdkResponse):
 
     @property
     def route(self):
-        """Gets the route of this CreateVpcRouteResponse.
+        r"""Gets the route of this CreateVpcRouteResponse.
 
         :return: The route of this CreateVpcRouteResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcRoute`
@@ -53,7 +53,7 @@ class CreateVpcRouteResponse(SdkResponse):
 
     @route.setter
     def route(self, route):
-        """Sets the route of this CreateVpcRouteResponse.
+        r"""Sets the route of this CreateVpcRouteResponse.
 
         :param route: The route of this CreateVpcRouteResponse.
         :type route: :class:`huaweicloudsdkvpc.v2.VpcRoute`

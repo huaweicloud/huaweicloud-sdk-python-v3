@@ -29,7 +29,7 @@ class CreateImageWatermarkRequestBody:
     }
 
     def __init__(self, file=None, blind_watermark=None, image_watermark=None):
-        """CreateImageWatermarkRequestBody
+        r"""CreateImageWatermarkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateImageWatermarkRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this CreateImageWatermarkRequestBody.
+        r"""Gets the file of this CreateImageWatermarkRequestBody.
 
         要添加水印的图片文件，添加的图片短边尺寸需要超过512像素。
 
@@ -67,7 +67,7 @@ class CreateImageWatermarkRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateImageWatermarkRequestBody.
+        r"""Sets the file of this CreateImageWatermarkRequestBody.
 
         要添加水印的图片文件，添加的图片短边尺寸需要超过512像素。
 
@@ -78,7 +78,7 @@ class CreateImageWatermarkRequestBody:
 
     @property
     def blind_watermark(self):
-        """Gets the blind_watermark of this CreateImageWatermarkRequestBody.
+        r"""Gets the blind_watermark of this CreateImageWatermarkRequestBody.
 
         待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一填充。
 
@@ -89,7 +89,7 @@ class CreateImageWatermarkRequestBody:
 
     @blind_watermark.setter
     def blind_watermark(self, blind_watermark):
-        """Sets the blind_watermark of this CreateImageWatermarkRequestBody.
+        r"""Sets the blind_watermark of this CreateImageWatermarkRequestBody.
 
         待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一填充。
 
@@ -100,7 +100,7 @@ class CreateImageWatermarkRequestBody:
 
     @property
     def image_watermark(self):
-        """Gets the image_watermark of this CreateImageWatermarkRequestBody.
+        r"""Gets the image_watermark of this CreateImageWatermarkRequestBody.
 
         待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
 
@@ -111,7 +111,7 @@ class CreateImageWatermarkRequestBody:
 
     @image_watermark.setter
     def image_watermark(self, image_watermark):
-        """Sets the image_watermark of this CreateImageWatermarkRequestBody.
+        r"""Sets the image_watermark of this CreateImageWatermarkRequestBody.
 
         待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
 

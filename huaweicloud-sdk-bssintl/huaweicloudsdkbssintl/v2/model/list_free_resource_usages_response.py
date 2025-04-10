@@ -26,7 +26,7 @@ class ListFreeResourceUsagesResponse(SdkResponse):
     }
 
     def __init__(self, free_resources=None):
-        """ListFreeResourceUsagesResponse
+        r"""ListFreeResourceUsagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFreeResourceUsagesResponse(SdkResponse):
 
     @property
     def free_resources(self):
-        """Gets the free_resources of this ListFreeResourceUsagesResponse.
+        r"""Gets the free_resources of this ListFreeResourceUsagesResponse.
 
         资源套餐内的资源项信息（资源项ID级的详情），具体参见表2。
 
@@ -55,7 +55,7 @@ class ListFreeResourceUsagesResponse(SdkResponse):
 
     @free_resources.setter
     def free_resources(self, free_resources):
-        """Sets the free_resources of this ListFreeResourceUsagesResponse.
+        r"""Sets the free_resources of this ListFreeResourceUsagesResponse.
 
         资源套餐内的资源项信息（资源项ID级的详情），具体参见表2。
 

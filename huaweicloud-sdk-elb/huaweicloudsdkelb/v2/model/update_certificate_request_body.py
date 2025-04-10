@@ -41,7 +41,7 @@ class UpdateCertificateRequestBody:
     }
 
     def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=None, source=None, protection_status=None, protection_reason=None):
-        """UpdateCertificateRequestBody
+        r"""UpdateCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateCertificateRequestBody.
+        r"""Gets the certificate of this UpdateCertificateRequestBody.
 
         SSL证书对象 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)
 
@@ -110,7 +110,7 @@ class UpdateCertificateRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateCertificateRequestBody.
+        r"""Sets the certificate of this UpdateCertificateRequestBody.
 
         SSL证书对象 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)
 
@@ -121,7 +121,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this UpdateCertificateRequestBody.
+        r"""Gets the private_key of this UpdateCertificateRequestBody.
 
         服务端的私有密钥。  格式：私钥为PEM格式。 最大长度8192字符。
 
@@ -132,7 +132,7 @@ class UpdateCertificateRequestBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this UpdateCertificateRequestBody.
+        r"""Sets the private_key of this UpdateCertificateRequestBody.
 
         服务端的私有密钥。  格式：私钥为PEM格式。 最大长度8192字符。
 
@@ -143,7 +143,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCertificateRequestBody.
+        r"""Gets the description of this UpdateCertificateRequestBody.
 
         SSL证书的描述信息。  支持的最大字符长度：255
 
@@ -154,7 +154,7 @@ class UpdateCertificateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCertificateRequestBody.
+        r"""Sets the description of this UpdateCertificateRequestBody.
 
         SSL证书的描述信息。  支持的最大字符长度：255
 
@@ -165,7 +165,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this UpdateCertificateRequestBody.
+        r"""Gets the domain of this UpdateCertificateRequestBody.
 
         服务端证书所签的域名。 取值：总长度为0-1024字符。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
 
@@ -176,7 +176,7 @@ class UpdateCertificateRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UpdateCertificateRequestBody.
+        r"""Sets the domain of this UpdateCertificateRequestBody.
 
         服务端证书所签的域名。 取值：总长度为0-1024字符。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
 
@@ -187,7 +187,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCertificateRequestBody.
+        r"""Gets the name of this UpdateCertificateRequestBody.
 
         SSL证书的名称。  支持的最大字符长度：255
 
@@ -198,7 +198,7 @@ class UpdateCertificateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCertificateRequestBody.
+        r"""Sets the name of this UpdateCertificateRequestBody.
 
         SSL证书的名称。  支持的最大字符长度：255
 
@@ -209,7 +209,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateCertificateRequestBody.
+        r"""Gets the admin_state_up of this UpdateCertificateRequestBody.
 
         SSL证书的管理状态；  取值范围： true/false。  该字段为预留字段，暂未启用。只支持设定为true。
 
@@ -220,7 +220,7 @@ class UpdateCertificateRequestBody:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateCertificateRequestBody.
+        r"""Sets the admin_state_up of this UpdateCertificateRequestBody.
 
         SSL证书的管理状态；  取值范围： true/false。  该字段为预留字段，暂未启用。只支持设定为true。
 
@@ -231,7 +231,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def source(self):
-        """Gets the source of this UpdateCertificateRequestBody.
+        r"""Gets the source of this UpdateCertificateRequestBody.
 
         参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
 
@@ -242,7 +242,7 @@ class UpdateCertificateRequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateCertificateRequestBody.
+        r"""Sets the source of this UpdateCertificateRequestBody.
 
         参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
 
@@ -253,7 +253,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this UpdateCertificateRequestBody.
+        r"""Gets the protection_status of this UpdateCertificateRequestBody.
 
         参数解释： 修改保护状态  约束限制： 无  取值范围： - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
 
@@ -264,7 +264,7 @@ class UpdateCertificateRequestBody:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this UpdateCertificateRequestBody.
+        r"""Sets the protection_status of this UpdateCertificateRequestBody.
 
         参数解释： 修改保护状态  约束限制： 无  取值范围： - nonProtection: 不保护 - consoleProtection: 控制台修改保护  默认取值： nonProtection
 
@@ -275,7 +275,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this UpdateCertificateRequestBody.
+        r"""Gets the protection_reason of this UpdateCertificateRequestBody.
 
         参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
 
@@ -286,7 +286,7 @@ class UpdateCertificateRequestBody:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this UpdateCertificateRequestBody.
+        r"""Sets the protection_reason of this UpdateCertificateRequestBody.
 
         参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
 

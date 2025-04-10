@@ -33,7 +33,7 @@ class AlarmTemplates:
     }
 
     def __init__(self, template_id=None, template_name=None, template_type=None, create_time=None, template_description=None):
-        """AlarmTemplates
+        r"""AlarmTemplates
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class AlarmTemplates:
 
     @property
     def template_id(self):
-        """Gets the template_id of this AlarmTemplates.
+        r"""Gets the template_id of this AlarmTemplates.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -78,7 +78,7 @@ class AlarmTemplates:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this AlarmTemplates.
+        r"""Sets the template_id of this AlarmTemplates.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -89,7 +89,7 @@ class AlarmTemplates:
 
     @property
     def template_name(self):
-        """Gets the template_name of this AlarmTemplates.
+        r"""Gets the template_name of this AlarmTemplates.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
 
@@ -100,7 +100,7 @@ class AlarmTemplates:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this AlarmTemplates.
+        r"""Sets the template_name of this AlarmTemplates.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
 
@@ -111,7 +111,7 @@ class AlarmTemplates:
 
     @property
     def template_type(self):
-        """Gets the template_type of this AlarmTemplates.
+        r"""Gets the template_type of this AlarmTemplates.
 
         :return: The template_type of this AlarmTemplates.
         :rtype: :class:`huaweicloudsdkces.v2.TemplateType`
@@ -120,7 +120,7 @@ class AlarmTemplates:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this AlarmTemplates.
+        r"""Sets the template_type of this AlarmTemplates.
 
         :param template_type: The template_type of this AlarmTemplates.
         :type template_type: :class:`huaweicloudsdkces.v2.TemplateType`
@@ -129,7 +129,7 @@ class AlarmTemplates:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlarmTemplates.
+        r"""Gets the create_time of this AlarmTemplates.
 
         告警模板的创建时间
 
@@ -140,7 +140,7 @@ class AlarmTemplates:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlarmTemplates.
+        r"""Sets the create_time of this AlarmTemplates.
 
         告警模板的创建时间
 
@@ -151,7 +151,7 @@ class AlarmTemplates:
 
     @property
     def template_description(self):
-        """Gets the template_description of this AlarmTemplates.
+        r"""Gets the template_description of this AlarmTemplates.
 
         告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -162,7 +162,7 @@ class AlarmTemplates:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this AlarmTemplates.
+        r"""Sets the template_description of this AlarmTemplates.
 
         告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
 

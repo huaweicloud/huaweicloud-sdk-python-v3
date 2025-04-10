@@ -25,7 +25,7 @@ class IefInfo:
     }
 
     def __init__(self, deploy_mode=None):
-        """IefInfo
+        r"""IefInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class IefInfo:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this IefInfo.
+        r"""Gets the deploy_mode of this IefInfo.
 
         BCS服务边缘节点部署模式，分为：随机模式（0），绑定模式（1）
 
@@ -54,7 +54,7 @@ class IefInfo:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this IefInfo.
+        r"""Sets the deploy_mode of this IefInfo.
 
         BCS服务边缘节点部署模式，分为：随机模式（0），绑定模式（1）
 

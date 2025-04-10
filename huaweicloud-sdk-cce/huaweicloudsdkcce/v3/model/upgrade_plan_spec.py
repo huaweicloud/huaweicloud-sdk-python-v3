@@ -35,7 +35,7 @@ class UpgradePlanSpec:
     }
 
     def __init__(self, cluster_id=None, cluster_version=None, target_version=None, not_before=None, not_after=None, not_before_deadline=None):
-        """UpgradePlanSpec
+        r"""UpgradePlanSpec
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpgradePlanSpec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpgradePlanSpec.
+        r"""Gets the cluster_id of this UpgradePlanSpec.
 
         集群ID
 
@@ -83,7 +83,7 @@ class UpgradePlanSpec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpgradePlanSpec.
+        r"""Sets the cluster_id of this UpgradePlanSpec.
 
         集群ID
 
@@ -94,7 +94,7 @@ class UpgradePlanSpec:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this UpgradePlanSpec.
+        r"""Gets the cluster_version of this UpgradePlanSpec.
 
         当前集群版本
 
@@ -105,7 +105,7 @@ class UpgradePlanSpec:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this UpgradePlanSpec.
+        r"""Sets the cluster_version of this UpgradePlanSpec.
 
         当前集群版本
 
@@ -116,7 +116,7 @@ class UpgradePlanSpec:
 
     @property
     def target_version(self):
-        """Gets the target_version of this UpgradePlanSpec.
+        r"""Gets the target_version of this UpgradePlanSpec.
 
         本次集群升级的目标版本
 
@@ -127,7 +127,7 @@ class UpgradePlanSpec:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this UpgradePlanSpec.
+        r"""Sets the target_version of this UpgradePlanSpec.
 
         本次集群升级的目标版本
 
@@ -138,7 +138,7 @@ class UpgradePlanSpec:
 
     @property
     def not_before(self):
-        """Gets the not_before of this UpgradePlanSpec.
+        r"""Gets the not_before of this UpgradePlanSpec.
 
         自动升级计划的最早时间（UTC时间），需要早于notBeforeDeadline
 
@@ -149,7 +149,7 @@ class UpgradePlanSpec:
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this UpgradePlanSpec.
+        r"""Sets the not_before of this UpgradePlanSpec.
 
         自动升级计划的最早时间（UTC时间），需要早于notBeforeDeadline
 
@@ -160,7 +160,7 @@ class UpgradePlanSpec:
 
     @property
     def not_after(self):
-        """Gets the not_after of this UpgradePlanSpec.
+        r"""Gets the not_after of this UpgradePlanSpec.
 
         自动升级计划的最晚时间（UTC时间）
 
@@ -171,7 +171,7 @@ class UpgradePlanSpec:
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this UpgradePlanSpec.
+        r"""Sets the not_after of this UpgradePlanSpec.
 
         自动升级计划的最晚时间（UTC时间）
 
@@ -182,7 +182,7 @@ class UpgradePlanSpec:
 
     @property
     def not_before_deadline(self):
-        """Gets the not_before_deadline of this UpgradePlanSpec.
+        r"""Gets the not_before_deadline of this UpgradePlanSpec.
 
         自动升级计划开始的截止时间（UTC时间）
 
@@ -193,7 +193,7 @@ class UpgradePlanSpec:
 
     @not_before_deadline.setter
     def not_before_deadline(self, not_before_deadline):
-        """Sets the not_before_deadline of this UpgradePlanSpec.
+        r"""Sets the not_before_deadline of this UpgradePlanSpec.
 
         自动升级计划开始的截止时间（UTC时间）
 

@@ -33,7 +33,7 @@ class Cron:
     }
 
     def __init__(self, start_time=None, end_time=None, expression=None, depend_pre_period=None, depend_jobs=None):
-        """Cron
+        r"""Cron
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Cron:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Cron.
+        r"""Gets the start_time of this Cron.
 
         :return: The start_time of this Cron.
         :rtype: str
@@ -80,7 +80,7 @@ class Cron:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Cron.
+        r"""Sets the start_time of this Cron.
 
         :param start_time: The start_time of this Cron.
         :type start_time: str
@@ -89,7 +89,7 @@ class Cron:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Cron.
+        r"""Gets the end_time of this Cron.
 
         :return: The end_time of this Cron.
         :rtype: str
@@ -98,7 +98,7 @@ class Cron:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Cron.
+        r"""Sets the end_time of this Cron.
 
         :param end_time: The end_time of this Cron.
         :type end_time: str
@@ -107,7 +107,7 @@ class Cron:
 
     @property
     def expression(self):
-        """Gets the expression of this Cron.
+        r"""Gets the expression of this Cron.
 
         Cron表达式
 
@@ -118,7 +118,7 @@ class Cron:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this Cron.
+        r"""Sets the expression of this Cron.
 
         Cron表达式
 
@@ -129,7 +129,7 @@ class Cron:
 
     @property
     def depend_pre_period(self):
-        """Gets the depend_pre_period of this Cron.
+        r"""Gets the depend_pre_period of this Cron.
 
         是否依赖本作业上一个运行周期任务的执行结果
 
@@ -140,7 +140,7 @@ class Cron:
 
     @depend_pre_period.setter
     def depend_pre_period(self, depend_pre_period):
-        """Sets the depend_pre_period of this Cron.
+        r"""Sets the depend_pre_period of this Cron.
 
         是否依赖本作业上一个运行周期任务的执行结果
 
@@ -151,7 +151,7 @@ class Cron:
 
     @property
     def depend_jobs(self):
-        """Gets the depend_jobs of this Cron.
+        r"""Gets the depend_jobs of this Cron.
 
         :return: The depend_jobs of this Cron.
         :rtype: :class:`huaweicloudsdkdlf.v1.DependJob`
@@ -160,7 +160,7 @@ class Cron:
 
     @depend_jobs.setter
     def depend_jobs(self, depend_jobs):
-        """Sets the depend_jobs of this Cron.
+        r"""Sets the depend_jobs of this Cron.
 
         :param depend_jobs: The depend_jobs of this Cron.
         :type depend_jobs: :class:`huaweicloudsdkdlf.v1.DependJob`

@@ -28,7 +28,7 @@ class CreateUnscopeTokenByIdpInitiatedResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """CreateUnscopeTokenByIdpInitiatedResponse
+        r"""CreateUnscopeTokenByIdpInitiatedResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateUnscopeTokenByIdpInitiatedResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this CreateUnscopeTokenByIdpInitiatedResponse.
+        r"""Gets the token of this CreateUnscopeTokenByIdpInitiatedResponse.
 
         :return: The token of this CreateUnscopeTokenByIdpInitiatedResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.IdpToken`
@@ -60,7 +60,7 @@ class CreateUnscopeTokenByIdpInitiatedResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CreateUnscopeTokenByIdpInitiatedResponse.
+        r"""Sets the token of this CreateUnscopeTokenByIdpInitiatedResponse.
 
         :param token: The token of this CreateUnscopeTokenByIdpInitiatedResponse.
         :type token: :class:`huaweicloudsdkiam.v3.IdpToken`
@@ -69,7 +69,7 @@ class CreateUnscopeTokenByIdpInitiatedResponse(SdkResponse):
 
     @property
     def x_subject_token(self):
-        """Gets the x_subject_token of this CreateUnscopeTokenByIdpInitiatedResponse.
+        r"""Gets the x_subject_token of this CreateUnscopeTokenByIdpInitiatedResponse.
 
         :return: The x_subject_token of this CreateUnscopeTokenByIdpInitiatedResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateUnscopeTokenByIdpInitiatedResponse(SdkResponse):
 
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
-        """Sets the x_subject_token of this CreateUnscopeTokenByIdpInitiatedResponse.
+        r"""Sets the x_subject_token of this CreateUnscopeTokenByIdpInitiatedResponse.
 
         :param x_subject_token: The x_subject_token of this CreateUnscopeTokenByIdpInitiatedResponse.
         :type x_subject_token: str

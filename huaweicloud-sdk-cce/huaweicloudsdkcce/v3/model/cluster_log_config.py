@@ -27,7 +27,7 @@ class ClusterLogConfig:
     }
 
     def __init__(self, ttl_in_days=None, log_configs=None):
-        """ClusterLogConfig
+        r"""ClusterLogConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterLogConfig:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this ClusterLogConfig.
+        r"""Gets the ttl_in_days of this ClusterLogConfig.
 
         存储时长
 
@@ -61,7 +61,7 @@ class ClusterLogConfig:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this ClusterLogConfig.
+        r"""Sets the ttl_in_days of this ClusterLogConfig.
 
         存储时长
 
@@ -72,7 +72,7 @@ class ClusterLogConfig:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this ClusterLogConfig.
+        r"""Gets the log_configs of this ClusterLogConfig.
 
         日志配置项
 
@@ -83,7 +83,7 @@ class ClusterLogConfig:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this ClusterLogConfig.
+        r"""Sets the log_configs of this ClusterLogConfig.
 
         日志配置项
 

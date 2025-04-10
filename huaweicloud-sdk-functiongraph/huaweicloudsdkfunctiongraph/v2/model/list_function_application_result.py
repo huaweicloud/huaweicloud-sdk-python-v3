@@ -33,7 +33,7 @@ class ListFunctionApplicationResult:
     }
 
     def __init__(self, id=None, name=None, status=None, last_modified_time=None, description=None):
-        """ListFunctionApplicationResult
+        r"""ListFunctionApplicationResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListFunctionApplicationResult:
 
     @property
     def id(self):
-        """Gets the id of this ListFunctionApplicationResult.
+        r"""Gets the id of this ListFunctionApplicationResult.
 
         应用id
 
@@ -82,7 +82,7 @@ class ListFunctionApplicationResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFunctionApplicationResult.
+        r"""Sets the id of this ListFunctionApplicationResult.
 
         应用id
 
@@ -93,7 +93,7 @@ class ListFunctionApplicationResult:
 
     @property
     def name(self):
-        """Gets the name of this ListFunctionApplicationResult.
+        r"""Gets the name of this ListFunctionApplicationResult.
 
         应用名称
 
@@ -104,7 +104,7 @@ class ListFunctionApplicationResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFunctionApplicationResult.
+        r"""Sets the name of this ListFunctionApplicationResult.
 
         应用名称
 
@@ -115,7 +115,7 @@ class ListFunctionApplicationResult:
 
     @property
     def status(self):
-        """Gets the status of this ListFunctionApplicationResult.
+        r"""Gets the status of this ListFunctionApplicationResult.
 
         应用状态
 
@@ -126,7 +126,7 @@ class ListFunctionApplicationResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFunctionApplicationResult.
+        r"""Sets the status of this ListFunctionApplicationResult.
 
         应用状态
 
@@ -137,7 +137,7 @@ class ListFunctionApplicationResult:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ListFunctionApplicationResult.
+        r"""Gets the last_modified_time of this ListFunctionApplicationResult.
 
         最后修改时间
 
@@ -148,7 +148,7 @@ class ListFunctionApplicationResult:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ListFunctionApplicationResult.
+        r"""Sets the last_modified_time of this ListFunctionApplicationResult.
 
         最后修改时间
 
@@ -159,7 +159,7 @@ class ListFunctionApplicationResult:
 
     @property
     def description(self):
-        """Gets the description of this ListFunctionApplicationResult.
+        r"""Gets the description of this ListFunctionApplicationResult.
 
         应用描述
 
@@ -170,7 +170,7 @@ class ListFunctionApplicationResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListFunctionApplicationResult.
+        r"""Sets the description of this ListFunctionApplicationResult.
 
         应用描述
 

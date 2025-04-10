@@ -27,7 +27,7 @@ class ScalingStrategyReqInfo:
     }
 
     def __init__(self, flavor_switch=None, read_only_switch=None):
-        """ScalingStrategyReqInfo
+        r"""ScalingStrategyReqInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScalingStrategyReqInfo:
 
     @property
     def flavor_switch(self):
-        """Gets the flavor_switch of this ScalingStrategyReqInfo.
+        r"""Gets the flavor_switch of this ScalingStrategyReqInfo.
 
         扩缩规格开关。 - ON：开启。 - OFF：关闭。
 
@@ -59,7 +59,7 @@ class ScalingStrategyReqInfo:
 
     @flavor_switch.setter
     def flavor_switch(self, flavor_switch):
-        """Sets the flavor_switch of this ScalingStrategyReqInfo.
+        r"""Sets the flavor_switch of this ScalingStrategyReqInfo.
 
         扩缩规格开关。 - ON：开启。 - OFF：关闭。
 
@@ -70,7 +70,7 @@ class ScalingStrategyReqInfo:
 
     @property
     def read_only_switch(self):
-        """Gets the read_only_switch of this ScalingStrategyReqInfo.
+        r"""Gets the read_only_switch of this ScalingStrategyReqInfo.
 
         增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-gaussdbformysql/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
 
@@ -81,7 +81,7 @@ class ScalingStrategyReqInfo:
 
     @read_only_switch.setter
     def read_only_switch(self, read_only_switch):
-        """Sets the read_only_switch of this ScalingStrategyReqInfo.
+        r"""Sets the read_only_switch of this ScalingStrategyReqInfo.
 
         增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-gaussdbformysql/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
 

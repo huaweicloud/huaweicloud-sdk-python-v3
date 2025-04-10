@@ -27,7 +27,7 @@ class FrozenStatus:
     }
 
     def __init__(self, is_frozen=None, frozen_scene=None):
-        """FrozenStatus
+        r"""FrozenStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FrozenStatus:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this FrozenStatus.
+        r"""Gets the is_frozen of this FrozenStatus.
 
         是否冻结
 
@@ -61,7 +61,7 @@ class FrozenStatus:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this FrozenStatus.
+        r"""Sets the is_frozen of this FrozenStatus.
 
         是否冻结
 
@@ -72,7 +72,7 @@ class FrozenStatus:
 
     @property
     def frozen_scene(self):
-        """Gets the frozen_scene of this FrozenStatus.
+        r"""Gets the frozen_scene of this FrozenStatus.
 
         冻结场景
 
@@ -83,7 +83,7 @@ class FrozenStatus:
 
     @frozen_scene.setter
     def frozen_scene(self, frozen_scene):
-        """Sets the frozen_scene of this FrozenStatus.
+        r"""Sets the frozen_scene of this FrozenStatus.
 
         冻结场景
 

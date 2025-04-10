@@ -25,7 +25,7 @@ class RunCreateVideoModerationJobRequest:
     }
 
     def __init__(self, body=None):
-        """RunCreateVideoModerationJobRequest
+        r"""RunCreateVideoModerationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunCreateVideoModerationJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunCreateVideoModerationJobRequest.
+        r"""Gets the body of this RunCreateVideoModerationJobRequest.
 
         :return: The body of this RunCreateVideoModerationJobRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequest`
@@ -52,7 +52,7 @@ class RunCreateVideoModerationJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCreateVideoModerationJobRequest.
+        r"""Sets the body of this RunCreateVideoModerationJobRequest.
 
         :param body: The body of this RunCreateVideoModerationJobRequest.
         :type body: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequest`

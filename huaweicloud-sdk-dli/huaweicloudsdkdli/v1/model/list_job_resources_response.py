@@ -32,7 +32,7 @@ class ListJobResourcesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, resources=None, modules=None, groups=None):
-        """ListJobResourcesResponse
+        r"""ListJobResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListJobResourcesResponse.
+        r"""Gets the total of this ListJobResourcesResponse.
 
         资源包返回总数
 
@@ -76,7 +76,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListJobResourcesResponse.
+        r"""Sets the total of this ListJobResourcesResponse.
 
         资源包返回总数
 
@@ -87,7 +87,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListJobResourcesResponse.
+        r"""Gets the resources of this ListJobResourcesResponse.
 
         已上传的用户资源名列表。
 
@@ -98,7 +98,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListJobResourcesResponse.
+        r"""Sets the resources of this ListJobResourcesResponse.
 
         已上传的用户资源名列表。
 
@@ -109,7 +109,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @property
     def modules(self):
-        """Gets the modules of this ListJobResourcesResponse.
+        r"""Gets the modules of this ListJobResourcesResponse.
 
         系统内置资源模块列表
 
@@ -120,7 +120,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @modules.setter
     def modules(self, modules):
-        """Sets the modules of this ListJobResourcesResponse.
+        r"""Sets the modules of this ListJobResourcesResponse.
 
         系统内置资源模块列表
 
@@ -131,7 +131,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListJobResourcesResponse.
+        r"""Gets the groups of this ListJobResourcesResponse.
 
         已上传的用户分组资源。
 
@@ -142,7 +142,7 @@ class ListJobResourcesResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListJobResourcesResponse.
+        r"""Sets the groups of this ListJobResourcesResponse.
 
         已上传的用户分组资源。
 

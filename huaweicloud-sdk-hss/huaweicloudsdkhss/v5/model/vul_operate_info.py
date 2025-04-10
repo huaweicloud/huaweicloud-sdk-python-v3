@@ -27,7 +27,7 @@ class VulOperateInfo:
     }
 
     def __init__(self, vul_id=None, host_id_list=None):
-        """VulOperateInfo
+        r"""VulOperateInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VulOperateInfo:
 
     @property
     def vul_id(self):
-        """Gets the vul_id of this VulOperateInfo.
+        r"""Gets the vul_id of this VulOperateInfo.
 
         漏洞ID
 
@@ -59,7 +59,7 @@ class VulOperateInfo:
 
     @vul_id.setter
     def vul_id(self, vul_id):
-        """Sets the vul_id of this VulOperateInfo.
+        r"""Sets the vul_id of this VulOperateInfo.
 
         漏洞ID
 
@@ -70,7 +70,7 @@ class VulOperateInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this VulOperateInfo.
+        r"""Gets the host_id_list of this VulOperateInfo.
 
         主机列表
 
@@ -81,7 +81,7 @@ class VulOperateInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this VulOperateInfo.
+        r"""Sets the host_id_list of this VulOperateInfo.
 
         主机列表
 

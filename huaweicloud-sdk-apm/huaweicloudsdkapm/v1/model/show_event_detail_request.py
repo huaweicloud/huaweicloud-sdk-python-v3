@@ -31,7 +31,7 @@ class ShowEventDetailRequest:
     }
 
     def __init__(self, trace_id=None, span_id=None, event_id=None, env_id=None):
-        """ShowEventDetailRequest
+        r"""ShowEventDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowEventDetailRequest:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ShowEventDetailRequest.
+        r"""Gets the trace_id of this ShowEventDetailRequest.
 
         trace id。
 
@@ -71,7 +71,7 @@ class ShowEventDetailRequest:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ShowEventDetailRequest.
+        r"""Sets the trace_id of this ShowEventDetailRequest.
 
         trace id。
 
@@ -82,7 +82,7 @@ class ShowEventDetailRequest:
 
     @property
     def span_id(self):
-        """Gets the span_id of this ShowEventDetailRequest.
+        r"""Gets the span_id of this ShowEventDetailRequest.
 
         span id。
 
@@ -93,7 +93,7 @@ class ShowEventDetailRequest:
 
     @span_id.setter
     def span_id(self, span_id):
-        """Sets the span_id of this ShowEventDetailRequest.
+        r"""Sets the span_id of this ShowEventDetailRequest.
 
         span id。
 
@@ -104,7 +104,7 @@ class ShowEventDetailRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ShowEventDetailRequest.
+        r"""Gets the event_id of this ShowEventDetailRequest.
 
         event id。
 
@@ -115,7 +115,7 @@ class ShowEventDetailRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ShowEventDetailRequest.
+        r"""Sets the event_id of this ShowEventDetailRequest.
 
         event id。
 
@@ -126,7 +126,7 @@ class ShowEventDetailRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ShowEventDetailRequest.
+        r"""Gets the env_id of this ShowEventDetailRequest.
 
         环境id。
 
@@ -137,7 +137,7 @@ class ShowEventDetailRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ShowEventDetailRequest.
+        r"""Sets the env_id of this ShowEventDetailRequest.
 
         环境id。
 

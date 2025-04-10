@@ -26,7 +26,7 @@ class CreateEnvResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateEnvResponse
+        r"""CreateEnvResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateEnvResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEnvResponse.
+        r"""Gets the id of this CreateEnvResponse.
 
         对象id
 
@@ -55,7 +55,7 @@ class CreateEnvResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEnvResponse.
+        r"""Sets the id of this CreateEnvResponse.
 
         对象id
 

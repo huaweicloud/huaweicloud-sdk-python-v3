@@ -28,7 +28,7 @@ class ListGaussMySqlInstancesUnifyStatusResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, total_count=None):
-        """ListGaussMySqlInstancesUnifyStatusResponse
+        r"""ListGaussMySqlInstancesUnifyStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGaussMySqlInstancesUnifyStatusResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListGaussMySqlInstancesUnifyStatusResponse.
+        r"""Gets the instances of this ListGaussMySqlInstancesUnifyStatusResponse.
 
         实例列表信息。
 
@@ -62,7 +62,7 @@ class ListGaussMySqlInstancesUnifyStatusResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListGaussMySqlInstancesUnifyStatusResponse.
+        r"""Sets the instances of this ListGaussMySqlInstancesUnifyStatusResponse.
 
         实例列表信息。
 
@@ -73,7 +73,7 @@ class ListGaussMySqlInstancesUnifyStatusResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGaussMySqlInstancesUnifyStatusResponse.
+        r"""Gets the total_count of this ListGaussMySqlInstancesUnifyStatusResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListGaussMySqlInstancesUnifyStatusResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGaussMySqlInstancesUnifyStatusResponse.
+        r"""Sets the total_count of this ListGaussMySqlInstancesUnifyStatusResponse.
 
         总记录数。
 

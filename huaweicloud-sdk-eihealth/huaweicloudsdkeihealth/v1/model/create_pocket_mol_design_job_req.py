@@ -37,7 +37,7 @@ class CreatePocketMolDesignJobReq:
     }
 
     def __init__(self, basic_info=None, receptor=None, ligands=None, num_trials=None, model_ids=None, molecular_weight=None, optimization_mode=None):
-        """CreatePocketMolDesignJobReq
+        r"""CreatePocketMolDesignJobReq
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreatePocketMolDesignJobReq.
+        r"""Gets the basic_info of this CreatePocketMolDesignJobReq.
 
         :return: The basic_info of this CreatePocketMolDesignJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -92,7 +92,7 @@ class CreatePocketMolDesignJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreatePocketMolDesignJobReq.
+        r"""Sets the basic_info of this CreatePocketMolDesignJobReq.
 
         :param basic_info: The basic_info of this CreatePocketMolDesignJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -101,7 +101,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def receptor(self):
-        """Gets the receptor of this CreatePocketMolDesignJobReq.
+        r"""Gets the receptor of this CreatePocketMolDesignJobReq.
 
         :return: The receptor of this CreatePocketMolDesignJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PocketMolDesignReceptorDto`
@@ -110,7 +110,7 @@ class CreatePocketMolDesignJobReq:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this CreatePocketMolDesignJobReq.
+        r"""Sets the receptor of this CreatePocketMolDesignJobReq.
 
         :param receptor: The receptor of this CreatePocketMolDesignJobReq.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.PocketMolDesignReceptorDto`
@@ -119,7 +119,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def ligands(self):
-        """Gets the ligands of this CreatePocketMolDesignJobReq.
+        r"""Gets the ligands of this CreatePocketMolDesignJobReq.
 
         配体文件列表，最多支持1个
 
@@ -130,7 +130,7 @@ class CreatePocketMolDesignJobReq:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this CreatePocketMolDesignJobReq.
+        r"""Sets the ligands of this CreatePocketMolDesignJobReq.
 
         配体文件列表，最多支持1个
 
@@ -141,7 +141,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this CreatePocketMolDesignJobReq.
+        r"""Gets the num_trials of this CreatePocketMolDesignJobReq.
 
         生成分子数量
 
@@ -152,7 +152,7 @@ class CreatePocketMolDesignJobReq:
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this CreatePocketMolDesignJobReq.
+        r"""Sets the num_trials of this CreatePocketMolDesignJobReq.
 
         生成分子数量
 
@@ -163,7 +163,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def model_ids(self):
-        """Gets the model_ids of this CreatePocketMolDesignJobReq.
+        r"""Gets the model_ids of this CreatePocketMolDesignJobReq.
 
         模型id列表
 
@@ -174,7 +174,7 @@ class CreatePocketMolDesignJobReq:
 
     @model_ids.setter
     def model_ids(self, model_ids):
-        """Sets the model_ids of this CreatePocketMolDesignJobReq.
+        r"""Sets the model_ids of this CreatePocketMolDesignJobReq.
 
         模型id列表
 
@@ -185,7 +185,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def molecular_weight(self):
-        """Gets the molecular_weight of this CreatePocketMolDesignJobReq.
+        r"""Gets the molecular_weight of this CreatePocketMolDesignJobReq.
 
         分子量范围
 
@@ -196,7 +196,7 @@ class CreatePocketMolDesignJobReq:
 
     @molecular_weight.setter
     def molecular_weight(self, molecular_weight):
-        """Sets the molecular_weight of this CreatePocketMolDesignJobReq.
+        r"""Sets the molecular_weight of this CreatePocketMolDesignJobReq.
 
         分子量范围
 
@@ -207,7 +207,7 @@ class CreatePocketMolDesignJobReq:
 
     @property
     def optimization_mode(self):
-        """Gets the optimization_mode of this CreatePocketMolDesignJobReq.
+        r"""Gets the optimization_mode of this CreatePocketMolDesignJobReq.
 
         :return: The optimization_mode of this CreatePocketMolDesignJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
@@ -216,7 +216,7 @@ class CreatePocketMolDesignJobReq:
 
     @optimization_mode.setter
     def optimization_mode(self, optimization_mode):
-        """Sets the optimization_mode of this CreatePocketMolDesignJobReq.
+        r"""Sets the optimization_mode of this CreatePocketMolDesignJobReq.
 
         :param optimization_mode: The optimization_mode of this CreatePocketMolDesignJobReq.
         :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`

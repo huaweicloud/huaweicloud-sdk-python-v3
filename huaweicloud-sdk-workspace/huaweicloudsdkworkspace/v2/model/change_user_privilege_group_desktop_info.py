@@ -27,7 +27,7 @@ class ChangeUserPrivilegeGroupDesktopInfo:
     }
 
     def __init__(self, desktop_id=None, attach_user_infos=None):
-        """ChangeUserPrivilegeGroupDesktopInfo
+        r"""ChangeUserPrivilegeGroupDesktopInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeUserPrivilegeGroupDesktopInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ChangeUserPrivilegeGroupDesktopInfo.
+        r"""Gets the desktop_id of this ChangeUserPrivilegeGroupDesktopInfo.
 
         待修改的桌面ID。
 
@@ -60,7 +60,7 @@ class ChangeUserPrivilegeGroupDesktopInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ChangeUserPrivilegeGroupDesktopInfo.
+        r"""Sets the desktop_id of this ChangeUserPrivilegeGroupDesktopInfo.
 
         待修改的桌面ID。
 
@@ -71,7 +71,7 @@ class ChangeUserPrivilegeGroupDesktopInfo:
 
     @property
     def attach_user_infos(self):
-        """Gets the attach_user_infos of this ChangeUserPrivilegeGroupDesktopInfo.
+        r"""Gets the attach_user_infos of this ChangeUserPrivilegeGroupDesktopInfo.
 
         待修改用户权限组的用户信息。未传该参数的桌面的用于将应用上层结构的参数user_privilege_group作为其用户的用户权限组。
 
@@ -82,7 +82,7 @@ class ChangeUserPrivilegeGroupDesktopInfo:
 
     @attach_user_infos.setter
     def attach_user_infos(self, attach_user_infos):
-        """Sets the attach_user_infos of this ChangeUserPrivilegeGroupDesktopInfo.
+        r"""Sets the attach_user_infos of this ChangeUserPrivilegeGroupDesktopInfo.
 
         待修改用户权限组的用户信息。未传该参数的桌面的用于将应用上层结构的参数user_privilege_group作为其用户的用户权限组。
 

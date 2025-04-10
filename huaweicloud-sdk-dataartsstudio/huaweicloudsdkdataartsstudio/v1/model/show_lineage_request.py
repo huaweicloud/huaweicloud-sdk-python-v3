@@ -31,7 +31,7 @@ class ShowLineageRequest:
     }
 
     def __init__(self, workspace=None, guid=None, direction=None, depth=None):
-        """ShowLineageRequest
+        r"""ShowLineageRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowLineageRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowLineageRequest.
+        r"""Gets the workspace of this ShowLineageRequest.
 
         DataArts Studio工作空间ID
 
@@ -73,7 +73,7 @@ class ShowLineageRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowLineageRequest.
+        r"""Sets the workspace of this ShowLineageRequest.
 
         DataArts Studio工作空间ID
 
@@ -84,7 +84,7 @@ class ShowLineageRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowLineageRequest.
+        r"""Gets the guid of this ShowLineageRequest.
 
         资产guid
 
@@ -95,7 +95,7 @@ class ShowLineageRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowLineageRequest.
+        r"""Sets the guid of this ShowLineageRequest.
 
         资产guid
 
@@ -106,7 +106,7 @@ class ShowLineageRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ShowLineageRequest.
+        r"""Gets the direction of this ShowLineageRequest.
 
         查询方向，取值范围：BOTH、IN、OUT。默认BOTH
 
@@ -117,7 +117,7 @@ class ShowLineageRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ShowLineageRequest.
+        r"""Sets the direction of this ShowLineageRequest.
 
         查询方向，取值范围：BOTH、IN、OUT。默认BOTH
 
@@ -128,7 +128,7 @@ class ShowLineageRequest:
 
     @property
     def depth(self):
-        """Gets the depth of this ShowLineageRequest.
+        r"""Gets the depth of this ShowLineageRequest.
 
         血缘链路长度，默认值5
 
@@ -139,7 +139,7 @@ class ShowLineageRequest:
 
     @depth.setter
     def depth(self, depth):
-        """Sets the depth of this ShowLineageRequest.
+        r"""Sets the depth of this ShowLineageRequest.
 
         血缘链路长度，默认值5
 

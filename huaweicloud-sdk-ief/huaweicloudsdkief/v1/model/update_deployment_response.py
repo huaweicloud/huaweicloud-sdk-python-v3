@@ -56,7 +56,7 @@ class UpdateDeploymentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, replicas=None, ready_replicas=None, description=None, group_id=None, node_ids=None, tags=None, api_version=None, source=None, project_id=None, created_at=None, updated_at=None, template=None, state=None, source_id=None):
-        """UpdateDeploymentResponse
+        r"""UpdateDeploymentResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateDeploymentResponse.
+        r"""Gets the id of this UpdateDeploymentResponse.
 
         应用部署uuid
 
@@ -160,7 +160,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateDeploymentResponse.
+        r"""Sets the id of this UpdateDeploymentResponse.
 
         应用部署uuid
 
@@ -171,7 +171,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateDeploymentResponse.
+        r"""Gets the name of this UpdateDeploymentResponse.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -182,7 +182,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDeploymentResponse.
+        r"""Sets the name of this UpdateDeploymentResponse.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -193,7 +193,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def replicas(self):
-        """Gets the replicas of this UpdateDeploymentResponse.
+        r"""Gets the replicas of this UpdateDeploymentResponse.
 
         应用部署总副本数
 
@@ -204,7 +204,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this UpdateDeploymentResponse.
+        r"""Sets the replicas of this UpdateDeploymentResponse.
 
         应用部署总副本数
 
@@ -215,7 +215,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def ready_replicas(self):
-        """Gets the ready_replicas of this UpdateDeploymentResponse.
+        r"""Gets the ready_replicas of this UpdateDeploymentResponse.
 
         应用部署正常副本数
 
@@ -226,7 +226,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @ready_replicas.setter
     def ready_replicas(self, ready_replicas):
-        """Sets the ready_replicas of this UpdateDeploymentResponse.
+        r"""Sets the ready_replicas of this UpdateDeploymentResponse.
 
         应用部署正常副本数
 
@@ -237,7 +237,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateDeploymentResponse.
+        r"""Gets the description of this UpdateDeploymentResponse.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -248,7 +248,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDeploymentResponse.
+        r"""Sets the description of this UpdateDeploymentResponse.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -259,7 +259,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDeploymentResponse.
+        r"""Gets the group_id of this UpdateDeploymentResponse.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -270,7 +270,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDeploymentResponse.
+        r"""Sets the group_id of this UpdateDeploymentResponse.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -281,7 +281,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this UpdateDeploymentResponse.
+        r"""Gets the node_ids of this UpdateDeploymentResponse.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -292,7 +292,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this UpdateDeploymentResponse.
+        r"""Sets the node_ids of this UpdateDeploymentResponse.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -303,7 +303,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDeploymentResponse.
+        r"""Gets the tags of this UpdateDeploymentResponse.
 
         节点属性
 
@@ -314,7 +314,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDeploymentResponse.
+        r"""Sets the tags of this UpdateDeploymentResponse.
 
         节点属性
 
@@ -325,7 +325,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateDeploymentResponse.
+        r"""Gets the api_version of this UpdateDeploymentResponse.
 
         应用部署版本
 
@@ -336,7 +336,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateDeploymentResponse.
+        r"""Sets the api_version of this UpdateDeploymentResponse.
 
         应用部署版本
 
@@ -347,7 +347,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this UpdateDeploymentResponse.
+        r"""Gets the source of this UpdateDeploymentResponse.
 
         应用部署来源：边缘市场（iem）或自定义（userdefined）
 
@@ -358,7 +358,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateDeploymentResponse.
+        r"""Sets the source of this UpdateDeploymentResponse.
 
         应用部署来源：边缘市场（iem）或自定义（userdefined）
 
@@ -369,7 +369,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateDeploymentResponse.
+        r"""Gets the project_id of this UpdateDeploymentResponse.
 
         项目ID
 
@@ -380,7 +380,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateDeploymentResponse.
+        r"""Sets the project_id of this UpdateDeploymentResponse.
 
         项目ID
 
@@ -391,7 +391,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateDeploymentResponse.
+        r"""Gets the created_at of this UpdateDeploymentResponse.
 
         应用部署创建时间
 
@@ -402,7 +402,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateDeploymentResponse.
+        r"""Sets the created_at of this UpdateDeploymentResponse.
 
         应用部署创建时间
 
@@ -413,7 +413,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateDeploymentResponse.
+        r"""Gets the updated_at of this UpdateDeploymentResponse.
 
         应用部署更新时间
 
@@ -424,7 +424,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateDeploymentResponse.
+        r"""Sets the updated_at of this UpdateDeploymentResponse.
 
         应用部署更新时间
 
@@ -435,7 +435,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this UpdateDeploymentResponse.
+        r"""Gets the template of this UpdateDeploymentResponse.
 
         :return: The template of this UpdateDeploymentResponse.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -444,7 +444,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this UpdateDeploymentResponse.
+        r"""Sets the template of this UpdateDeploymentResponse.
 
         :param template: The template of this UpdateDeploymentResponse.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -453,7 +453,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateDeploymentResponse.
+        r"""Gets the state of this UpdateDeploymentResponse.
 
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
@@ -464,7 +464,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateDeploymentResponse.
+        r"""Sets the state of this UpdateDeploymentResponse.
 
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
@@ -475,7 +475,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateDeploymentResponse.
+        r"""Gets the source_id of this UpdateDeploymentResponse.
 
         预留字段
 
@@ -486,7 +486,7 @@ class UpdateDeploymentResponse(SdkResponse):
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateDeploymentResponse.
+        r"""Sets the source_id of this UpdateDeploymentResponse.
 
         预留字段
 

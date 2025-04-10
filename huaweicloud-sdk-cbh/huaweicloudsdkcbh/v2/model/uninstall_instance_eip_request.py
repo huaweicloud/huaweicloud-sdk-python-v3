@@ -27,7 +27,7 @@ class UninstallInstanceEipRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UninstallInstanceEipRequest
+        r"""UninstallInstanceEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UninstallInstanceEipRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UninstallInstanceEipRequest.
+        r"""Gets the server_id of this UninstallInstanceEipRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -60,7 +60,7 @@ class UninstallInstanceEipRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UninstallInstanceEipRequest.
+        r"""Sets the server_id of this UninstallInstanceEipRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -71,7 +71,7 @@ class UninstallInstanceEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this UninstallInstanceEipRequest.
+        r"""Gets the body of this UninstallInstanceEipRequest.
 
         :return: The body of this UninstallInstanceEipRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.OperateEipRequestBody`
@@ -80,7 +80,7 @@ class UninstallInstanceEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UninstallInstanceEipRequest.
+        r"""Sets the body of this UninstallInstanceEipRequest.
 
         :param body: The body of this UninstallInstanceEipRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.OperateEipRequestBody`

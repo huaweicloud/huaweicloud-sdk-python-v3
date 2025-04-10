@@ -27,7 +27,7 @@ class UcbParam:
     }
 
     def __init__(self, alpha=None, min_used_num=None):
-        """UcbParam
+        r"""UcbParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UcbParam:
 
     @property
     def alpha(self):
-        """Gets the alpha of this UcbParam.
+        r"""Gets the alpha of this UcbParam.
 
         折中参数。
 
@@ -59,7 +59,7 @@ class UcbParam:
 
     @alpha.setter
     def alpha(self, alpha):
-        """Sets the alpha of this UcbParam.
+        r"""Sets the alpha of this UcbParam.
 
         折中参数。
 
@@ -70,7 +70,7 @@ class UcbParam:
 
     @property
     def min_used_num(self):
-        """Gets the min_used_num of this UcbParam.
+        r"""Gets the min_used_num of this UcbParam.
 
         最小行为次数。
 
@@ -81,7 +81,7 @@ class UcbParam:
 
     @min_used_num.setter
     def min_used_num(self, min_used_num):
-        """Sets the min_used_num of this UcbParam.
+        r"""Sets the min_used_num of this UcbParam.
 
         最小行为次数。
 

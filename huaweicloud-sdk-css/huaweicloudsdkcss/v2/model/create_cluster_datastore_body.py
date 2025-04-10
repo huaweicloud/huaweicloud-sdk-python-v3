@@ -27,7 +27,7 @@ class CreateClusterDatastoreBody:
     }
 
     def __init__(self, version=None, type=None):
-        """CreateClusterDatastoreBody
+        r"""CreateClusterDatastoreBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusterDatastoreBody:
 
     @property
     def version(self):
-        """Gets the version of this CreateClusterDatastoreBody.
+        r"""Gets the version of this CreateClusterDatastoreBody.
 
         CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -59,7 +59,7 @@ class CreateClusterDatastoreBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateClusterDatastoreBody.
+        r"""Sets the version of this CreateClusterDatastoreBody.
 
         CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -70,7 +70,7 @@ class CreateClusterDatastoreBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateClusterDatastoreBody.
+        r"""Gets the type of this CreateClusterDatastoreBody.
 
         引擎类型，支持elasticsearch。
 
@@ -81,7 +81,7 @@ class CreateClusterDatastoreBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateClusterDatastoreBody.
+        r"""Sets the type of this CreateClusterDatastoreBody.
 
         引擎类型，支持elasticsearch。
 

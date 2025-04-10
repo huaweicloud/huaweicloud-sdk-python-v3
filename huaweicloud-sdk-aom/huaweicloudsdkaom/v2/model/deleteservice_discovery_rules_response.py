@@ -32,7 +32,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, response_status=None, id=None):
-        """DeleteserviceDiscoveryRulesResponse
+        r"""DeleteserviceDiscoveryRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteserviceDiscoveryRulesResponse.
+        r"""Gets the error_code of this DeleteserviceDiscoveryRulesResponse.
 
         响应码。
 
@@ -76,7 +76,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteserviceDiscoveryRulesResponse.
+        r"""Sets the error_code of this DeleteserviceDiscoveryRulesResponse.
 
         响应码。
 
@@ -87,7 +87,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this DeleteserviceDiscoveryRulesResponse.
+        r"""Gets the error_message of this DeleteserviceDiscoveryRulesResponse.
 
         响应信息描述。
 
@@ -98,7 +98,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DeleteserviceDiscoveryRulesResponse.
+        r"""Sets the error_message of this DeleteserviceDiscoveryRulesResponse.
 
         响应信息描述。
 
@@ -109,7 +109,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def response_status(self):
-        """Gets the response_status of this DeleteserviceDiscoveryRulesResponse.
+        r"""Gets the response_status of this DeleteserviceDiscoveryRulesResponse.
 
         响应状态码（不再使用）。
 
@@ -120,7 +120,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @response_status.setter
     def response_status(self, response_status):
-        """Sets the response_status of this DeleteserviceDiscoveryRulesResponse.
+        r"""Sets the response_status of this DeleteserviceDiscoveryRulesResponse.
 
         响应状态码（不再使用）。
 
@@ -131,7 +131,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteserviceDiscoveryRulesResponse.
+        r"""Gets the id of this DeleteserviceDiscoveryRulesResponse.
 
         服务发现规则id列表，多AZ配置同步时使用。
 
@@ -142,7 +142,7 @@ class DeleteserviceDiscoveryRulesResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteserviceDiscoveryRulesResponse.
+        r"""Sets the id of this DeleteserviceDiscoveryRulesResponse.
 
         服务发现规则id列表，多AZ配置同步时使用。
 

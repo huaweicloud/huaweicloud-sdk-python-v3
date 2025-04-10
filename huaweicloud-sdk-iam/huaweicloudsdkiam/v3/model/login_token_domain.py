@@ -27,7 +27,7 @@ class LoginTokenDomain:
     }
 
     def __init__(self, name=None, id=None):
-        """LoginTokenDomain
+        r"""LoginTokenDomain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LoginTokenDomain:
 
     @property
     def name(self):
-        """Gets the name of this LoginTokenDomain.
+        r"""Gets the name of this LoginTokenDomain.
 
         被委托方用户所属账号名称。
 
@@ -61,7 +61,7 @@ class LoginTokenDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoginTokenDomain.
+        r"""Sets the name of this LoginTokenDomain.
 
         被委托方用户所属账号名称。
 
@@ -72,7 +72,7 @@ class LoginTokenDomain:
 
     @property
     def id(self):
-        """Gets the id of this LoginTokenDomain.
+        r"""Gets the id of this LoginTokenDomain.
 
         被委托方用户所属账号ID。
 
@@ -83,7 +83,7 @@ class LoginTokenDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoginTokenDomain.
+        r"""Sets the id of this LoginTokenDomain.
 
         被委托方用户所属账号ID。
 

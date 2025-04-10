@@ -29,7 +29,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """InvokeGaussMySqlInstanceSwitchOverRequest
+        r"""InvokeGaussMySqlInstanceSwitchOverRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this InvokeGaussMySqlInstanceSwitchOverRequest.
+        r"""Gets the x_language of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this InvokeGaussMySqlInstanceSwitchOverRequest.
+        r"""Sets the x_language of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
+        r"""Gets the instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
+        r"""Sets the instance_id of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
     @property
     def body(self):
-        """Gets the body of this InvokeGaussMySqlInstanceSwitchOverRequest.
+        r"""Gets the body of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
         :return: The body of this InvokeGaussMySqlInstanceSwitchOverRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TaurusSwitchoverRequest`
@@ -109,7 +109,7 @@ class InvokeGaussMySqlInstanceSwitchOverRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InvokeGaussMySqlInstanceSwitchOverRequest.
+        r"""Sets the body of this InvokeGaussMySqlInstanceSwitchOverRequest.
 
         :param body: The body of this InvokeGaussMySqlInstanceSwitchOverRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusSwitchoverRequest`

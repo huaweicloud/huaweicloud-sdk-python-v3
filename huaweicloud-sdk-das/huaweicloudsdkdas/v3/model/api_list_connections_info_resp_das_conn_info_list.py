@@ -59,7 +59,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
     }
 
     def __init__(self, connection_id=None, instance_id=None, instance_name=None, network_type=None, engine_type=None, datastore_version=None, user_name=None, database_name=None, is_save_password=None, ip_address=None, port=None, remarks=None, create_at=None, status=None, conn_share_type=None, shared_user_name=None, shared_user_id=None, expired_time=None):
-        """ApiListConnectionsInfoRespDasConnInfoList
+        r"""ApiListConnectionsInfoRespDasConnInfoList
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the connection_id of this ApiListConnectionsInfoRespDasConnInfoList.
 
         连接Id
 
@@ -173,7 +173,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the connection_id of this ApiListConnectionsInfoRespDasConnInfoList.
 
         连接Id
 
@@ -184,7 +184,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the instance_id of this ApiListConnectionsInfoRespDasConnInfoList.
 
         实例Id
 
@@ -195,7 +195,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the instance_id of this ApiListConnectionsInfoRespDasConnInfoList.
 
         实例Id
 
@@ -206,7 +206,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the instance_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         实例名称
 
@@ -217,7 +217,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the instance_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         实例名称
 
@@ -228,7 +228,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the network_type of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据库来源
 
@@ -239,7 +239,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the network_type of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据库来源
 
@@ -250,7 +250,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the engine_type of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据库引擎
 
@@ -261,7 +261,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the engine_type of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据库引擎
 
@@ -272,7 +272,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the datastore_version of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据存储版本
 
@@ -283,7 +283,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the datastore_version of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据存储版本
 
@@ -294,7 +294,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the user_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         用户名
 
@@ -305,7 +305,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the user_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         用户名
 
@@ -316,7 +316,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the database_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据库名称
 
@@ -327,7 +327,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the database_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         数据库名称
 
@@ -338,7 +338,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def is_save_password(self):
-        """Gets the is_save_password of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the is_save_password of this ApiListConnectionsInfoRespDasConnInfoList.
 
         是否保存密码
 
@@ -349,7 +349,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @is_save_password.setter
     def is_save_password(self, is_save_password):
-        """Sets the is_save_password of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the is_save_password of this ApiListConnectionsInfoRespDasConnInfoList.
 
         是否保存密码
 
@@ -360,7 +360,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the ip_address of this ApiListConnectionsInfoRespDasConnInfoList.
 
         ip地址
 
@@ -371,7 +371,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the ip_address of this ApiListConnectionsInfoRespDasConnInfoList.
 
         ip地址
 
@@ -382,7 +382,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def port(self):
-        """Gets the port of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the port of this ApiListConnectionsInfoRespDasConnInfoList.
 
         端口号
 
@@ -393,7 +393,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the port of this ApiListConnectionsInfoRespDasConnInfoList.
 
         端口号
 
@@ -404,7 +404,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def remarks(self):
-        """Gets the remarks of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the remarks of this ApiListConnectionsInfoRespDasConnInfoList.
 
         备注
 
@@ -415,7 +415,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the remarks of this ApiListConnectionsInfoRespDasConnInfoList.
 
         备注
 
@@ -426,7 +426,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the create_at of this ApiListConnectionsInfoRespDasConnInfoList.
 
         连接的创建时间
 
@@ -437,7 +437,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the create_at of this ApiListConnectionsInfoRespDasConnInfoList.
 
         连接的创建时间
 
@@ -448,7 +448,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def status(self):
-        """Gets the status of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the status of this ApiListConnectionsInfoRespDasConnInfoList.
 
         状态，NORMAL-正常，INSTANCE_DELETE-实例删除
 
@@ -459,7 +459,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the status of this ApiListConnectionsInfoRespDasConnInfoList.
 
         状态，NORMAL-正常，INSTANCE_DELETE-实例删除
 
@@ -470,7 +470,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def conn_share_type(self):
-        """Gets the conn_share_type of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the conn_share_type of this ApiListConnectionsInfoRespDasConnInfoList.
 
         连接类型，NORMAL-正常连接，SHARE-共享连接
 
@@ -481,7 +481,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @conn_share_type.setter
     def conn_share_type(self, conn_share_type):
-        """Sets the conn_share_type of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the conn_share_type of this ApiListConnectionsInfoRespDasConnInfoList.
 
         连接类型，NORMAL-正常连接，SHARE-共享连接
 
@@ -492,7 +492,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def shared_user_name(self):
-        """Gets the shared_user_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the shared_user_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         共享人名称
 
@@ -503,7 +503,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @shared_user_name.setter
     def shared_user_name(self, shared_user_name):
-        """Sets the shared_user_name of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the shared_user_name of this ApiListConnectionsInfoRespDasConnInfoList.
 
         共享人名称
 
@@ -514,7 +514,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def shared_user_id(self):
-        """Gets the shared_user_id of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the shared_user_id of this ApiListConnectionsInfoRespDasConnInfoList.
 
         共享人ID
 
@@ -525,7 +525,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @shared_user_id.setter
     def shared_user_id(self, shared_user_id):
-        """Sets the shared_user_id of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the shared_user_id of this ApiListConnectionsInfoRespDasConnInfoList.
 
         共享人ID
 
@@ -536,7 +536,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Gets the expired_time of this ApiListConnectionsInfoRespDasConnInfoList.
 
         共享过期时间
 
@@ -547,7 +547,7 @@ class ApiListConnectionsInfoRespDasConnInfoList:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this ApiListConnectionsInfoRespDasConnInfoList.
+        r"""Sets the expired_time of this ApiListConnectionsInfoRespDasConnInfoList.
 
         共享过期时间
 

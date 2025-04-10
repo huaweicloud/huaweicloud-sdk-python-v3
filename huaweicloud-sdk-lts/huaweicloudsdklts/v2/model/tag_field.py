@@ -31,7 +31,7 @@ class TagField:
     }
 
     def __init__(self, field_name=None, type=None, content=None, is_analysis=None):
-        """TagField
+        r"""TagField
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class TagField:
 
     @property
     def field_name(self):
-        """Gets the field_name of this TagField.
+        r"""Gets the field_name of this TagField.
 
         字段名称
 
@@ -73,7 +73,7 @@ class TagField:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this TagField.
+        r"""Sets the field_name of this TagField.
 
         字段名称
 
@@ -84,7 +84,7 @@ class TagField:
 
     @property
     def type(self):
-        """Gets the type of this TagField.
+        r"""Gets the type of this TagField.
 
         字段数据类型，例：string，long，float
 
@@ -95,7 +95,7 @@ class TagField:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TagField.
+        r"""Sets the type of this TagField.
 
         字段数据类型，例：string，long，float
 
@@ -106,7 +106,7 @@ class TagField:
 
     @property
     def content(self):
-        """Gets the content of this TagField.
+        r"""Gets the content of this TagField.
 
         内容
 
@@ -117,7 +117,7 @@ class TagField:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this TagField.
+        r"""Sets the content of this TagField.
 
         内容
 
@@ -128,7 +128,7 @@ class TagField:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this TagField.
+        r"""Gets the is_analysis of this TagField.
 
         是否开启快速分析
 
@@ -139,7 +139,7 @@ class TagField:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this TagField.
+        r"""Sets the is_analysis of this TagField.
 
         是否开启快速分析
 

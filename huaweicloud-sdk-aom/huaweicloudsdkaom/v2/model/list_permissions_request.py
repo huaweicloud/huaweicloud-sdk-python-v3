@@ -23,7 +23,7 @@ class ListPermissionsRequest:
     }
 
     def __init__(self):
-        """ListPermissionsRequest
+        r"""ListPermissionsRequest
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class SystemTemplates:
     }
 
     def __init__(self, id=None, name=None, conf_content=None, desc=None):
-        """SystemTemplates
+        r"""SystemTemplates
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SystemTemplates:
 
     @property
     def id(self):
-        """Gets the id of this SystemTemplates.
+        r"""Gets the id of this SystemTemplates.
 
         配置文件id。
 
@@ -75,7 +75,7 @@ class SystemTemplates:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SystemTemplates.
+        r"""Sets the id of this SystemTemplates.
 
         配置文件id。
 
@@ -86,7 +86,7 @@ class SystemTemplates:
 
     @property
     def name(self):
-        """Gets the name of this SystemTemplates.
+        r"""Gets the name of this SystemTemplates.
 
         配置文件名称。
 
@@ -97,7 +97,7 @@ class SystemTemplates:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SystemTemplates.
+        r"""Sets the name of this SystemTemplates.
 
         配置文件名称。
 
@@ -108,7 +108,7 @@ class SystemTemplates:
 
     @property
     def conf_content(self):
-        """Gets the conf_content of this SystemTemplates.
+        r"""Gets the conf_content of this SystemTemplates.
 
         配置文件内容。
 
@@ -119,7 +119,7 @@ class SystemTemplates:
 
     @conf_content.setter
     def conf_content(self, conf_content):
-        """Sets the conf_content of this SystemTemplates.
+        r"""Sets the conf_content of this SystemTemplates.
 
         配置文件内容。
 
@@ -130,7 +130,7 @@ class SystemTemplates:
 
     @property
     def desc(self):
-        """Gets the desc of this SystemTemplates.
+        r"""Gets the desc of this SystemTemplates.
 
         描述。
 
@@ -141,7 +141,7 @@ class SystemTemplates:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this SystemTemplates.
+        r"""Sets the desc of this SystemTemplates.
 
         描述。
 

@@ -25,7 +25,7 @@ class TaskStatus:
     }
 
     def __init__(self, job_id=None):
-        """TaskStatus
+        r"""TaskStatus
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskStatus:
 
     @property
     def job_id(self):
-        """Gets the job_id of this TaskStatus.
+        r"""Gets the job_id of this TaskStatus.
 
         任务ID，供调用者查询任务进度。
 
@@ -54,7 +54,7 @@ class TaskStatus:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this TaskStatus.
+        r"""Sets the job_id of this TaskStatus.
 
         任务ID，供调用者查询任务进度。
 

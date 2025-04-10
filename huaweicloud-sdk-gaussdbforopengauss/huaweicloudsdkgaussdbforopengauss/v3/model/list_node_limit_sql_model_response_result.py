@@ -27,7 +27,7 @@ class ListNodeLimitSqlModelResponseResult:
     }
 
     def __init__(self, sql_id=None, sql_model=None):
-        """ListNodeLimitSqlModelResponseResult
+        r"""ListNodeLimitSqlModelResponseResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListNodeLimitSqlModelResponseResult:
 
     @property
     def sql_id(self):
-        """Gets the sql_id of this ListNodeLimitSqlModelResponseResult.
+        r"""Gets the sql_id of this ListNodeLimitSqlModelResponseResult.
 
         限流任务SQL_ID。
 
@@ -61,7 +61,7 @@ class ListNodeLimitSqlModelResponseResult:
 
     @sql_id.setter
     def sql_id(self, sql_id):
-        """Sets the sql_id of this ListNodeLimitSqlModelResponseResult.
+        r"""Sets the sql_id of this ListNodeLimitSqlModelResponseResult.
 
         限流任务SQL_ID。
 
@@ -72,7 +72,7 @@ class ListNodeLimitSqlModelResponseResult:
 
     @property
     def sql_model(self):
-        """Gets the sql_model of this ListNodeLimitSqlModelResponseResult.
+        r"""Gets the sql_model of this ListNodeLimitSqlModelResponseResult.
 
         限流任务SQL模板。
 
@@ -83,7 +83,7 @@ class ListNodeLimitSqlModelResponseResult:
 
     @sql_model.setter
     def sql_model(self, sql_model):
-        """Sets the sql_model of this ListNodeLimitSqlModelResponseResult.
+        r"""Sets the sql_model of this ListNodeLimitSqlModelResponseResult.
 
         限流任务SQL模板。
 

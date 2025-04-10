@@ -33,7 +33,7 @@ class TestPointPageParam:
     }
 
     def __init__(self, deleted=None, limit=None, mindmap_id=None, node_id=None, offset=None):
-        """TestPointPageParam
+        r"""TestPointPageParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TestPointPageParam:
 
     @property
     def deleted(self):
-        """Gets the deleted of this TestPointPageParam.
+        r"""Gets the deleted of this TestPointPageParam.
 
         :return: The deleted of this TestPointPageParam.
         :rtype: str
@@ -80,7 +80,7 @@ class TestPointPageParam:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this TestPointPageParam.
+        r"""Sets the deleted of this TestPointPageParam.
 
         :param deleted: The deleted of this TestPointPageParam.
         :type deleted: str
@@ -89,7 +89,7 @@ class TestPointPageParam:
 
     @property
     def limit(self):
-        """Gets the limit of this TestPointPageParam.
+        r"""Gets the limit of this TestPointPageParam.
 
         :return: The limit of this TestPointPageParam.
         :rtype: int
@@ -98,7 +98,7 @@ class TestPointPageParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this TestPointPageParam.
+        r"""Sets the limit of this TestPointPageParam.
 
         :param limit: The limit of this TestPointPageParam.
         :type limit: int
@@ -107,7 +107,7 @@ class TestPointPageParam:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this TestPointPageParam.
+        r"""Gets the mindmap_id of this TestPointPageParam.
 
         :return: The mindmap_id of this TestPointPageParam.
         :rtype: str
@@ -116,7 +116,7 @@ class TestPointPageParam:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this TestPointPageParam.
+        r"""Sets the mindmap_id of this TestPointPageParam.
 
         :param mindmap_id: The mindmap_id of this TestPointPageParam.
         :type mindmap_id: str
@@ -125,7 +125,7 @@ class TestPointPageParam:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TestPointPageParam.
+        r"""Gets the node_id of this TestPointPageParam.
 
         :return: The node_id of this TestPointPageParam.
         :rtype: str
@@ -134,7 +134,7 @@ class TestPointPageParam:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TestPointPageParam.
+        r"""Sets the node_id of this TestPointPageParam.
 
         :param node_id: The node_id of this TestPointPageParam.
         :type node_id: str
@@ -143,7 +143,7 @@ class TestPointPageParam:
 
     @property
     def offset(self):
-        """Gets the offset of this TestPointPageParam.
+        r"""Gets the offset of this TestPointPageParam.
 
         :return: The offset of this TestPointPageParam.
         :rtype: int
@@ -152,7 +152,7 @@ class TestPointPageParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this TestPointPageParam.
+        r"""Sets the offset of this TestPointPageParam.
 
         :param offset: The offset of this TestPointPageParam.
         :type offset: int

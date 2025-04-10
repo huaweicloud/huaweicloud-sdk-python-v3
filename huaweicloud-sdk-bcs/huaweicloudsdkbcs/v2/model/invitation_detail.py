@@ -29,7 +29,7 @@ class InvitationDetail:
     }
 
     def __init__(self, invited_user=None, status=None, invited_bcs_id=None):
-        """InvitationDetail
+        r"""InvitationDetail
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class InvitationDetail:
 
     @property
     def invited_user(self):
-        """Gets the invited_user of this InvitationDetail.
+        r"""Gets the invited_user of this InvitationDetail.
 
         被邀请方租户名，IAM用户名
 
@@ -67,7 +67,7 @@ class InvitationDetail:
 
     @invited_user.setter
     def invited_user(self, invited_user):
-        """Sets the invited_user of this InvitationDetail.
+        r"""Sets the invited_user of this InvitationDetail.
 
         被邀请方租户名，IAM用户名
 
@@ -78,7 +78,7 @@ class InvitationDetail:
 
     @property
     def status(self):
-        """Gets the status of this InvitationDetail.
+        r"""Gets the status of this InvitationDetail.
 
         邀请状态，可选：已退出（quit），等待中（waiting），已拒绝（reject），已解散（released），其他状态不允许删除
 
@@ -89,7 +89,7 @@ class InvitationDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InvitationDetail.
+        r"""Sets the status of this InvitationDetail.
 
         邀请状态，可选：已退出（quit），等待中（waiting），已拒绝（reject），已解散（released），其他状态不允许删除
 
@@ -100,7 +100,7 @@ class InvitationDetail:
 
     @property
     def invited_bcs_id(self):
-        """Gets the invited_bcs_id of this InvitationDetail.
+        r"""Gets the invited_bcs_id of this InvitationDetail.
 
         被邀请方服务实例ID
 
@@ -111,7 +111,7 @@ class InvitationDetail:
 
     @invited_bcs_id.setter
     def invited_bcs_id(self, invited_bcs_id):
-        """Sets the invited_bcs_id of this InvitationDetail.
+        r"""Sets the invited_bcs_id of this InvitationDetail.
 
         被邀请方服务实例ID
 

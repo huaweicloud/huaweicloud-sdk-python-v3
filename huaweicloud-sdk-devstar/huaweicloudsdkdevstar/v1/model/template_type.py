@@ -33,7 +33,7 @@ class TemplateType:
     }
 
     def __init__(self):
-        """TemplateType
+        r"""TemplateType
 
         The model defined in huaweicloud sdk
 

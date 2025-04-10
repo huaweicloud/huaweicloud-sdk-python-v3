@@ -27,7 +27,7 @@ class ResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTag
+        r"""ResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTag.
+        r"""Gets the key of this ResourceTag.
 
         标签键，规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : = + - @。 - 3._sys_开头属于系统标签，租户不能输入。
 
@@ -59,7 +59,7 @@ class ResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTag.
+        r"""Sets the key of this ResourceTag.
 
         标签键，规则： - 1.key不能为空，长度1~128个字符（中文也可以输入128个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : = + - @。 - 3._sys_开头属于系统标签，租户不能输入。
 
@@ -70,7 +70,7 @@ class ResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTag.
+        r"""Gets the value of this ResourceTag.
 
         标签值，规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / = + - @。 - 3.资源标签值可以为空（empty or null）。
 
@@ -81,7 +81,7 @@ class ResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTag.
+        r"""Sets the value of this ResourceTag.
 
         标签值，规则： - 1.长度0~255个字符（中文也可以输入255个字符）。 - 2.可用 UTF-8 格式表示的字母（包含中文）、数字和空格，以及以下字符_ . : / = + - @。 - 3.资源标签值可以为空（empty or null）。
 

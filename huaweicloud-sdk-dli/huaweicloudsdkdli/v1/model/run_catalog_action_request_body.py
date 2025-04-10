@@ -29,7 +29,7 @@ class RunCatalogActionRequestBody:
     }
 
     def __init__(self, action=None, name=None, parameters=None):
-        """RunCatalogActionRequestBody
+        r"""RunCatalogActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RunCatalogActionRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this RunCatalogActionRequestBody.
+        r"""Gets the action of this RunCatalogActionRequestBody.
 
         catalog操作:bind或者unbind。
 
@@ -65,7 +65,7 @@ class RunCatalogActionRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RunCatalogActionRequestBody.
+        r"""Sets the action of this RunCatalogActionRequestBody.
 
         catalog操作:bind或者unbind。
 
@@ -76,7 +76,7 @@ class RunCatalogActionRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this RunCatalogActionRequestBody.
+        r"""Gets the name of this RunCatalogActionRequestBody.
 
         DLI侧catalog映射名称.
 
@@ -87,7 +87,7 @@ class RunCatalogActionRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RunCatalogActionRequestBody.
+        r"""Sets the name of this RunCatalogActionRequestBody.
 
         DLI侧catalog映射名称.
 
@@ -98,7 +98,7 @@ class RunCatalogActionRequestBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this RunCatalogActionRequestBody.
+        r"""Gets the parameters of this RunCatalogActionRequestBody.
 
         :return: The parameters of this RunCatalogActionRequestBody.
         :rtype: dict(str, str)
@@ -107,7 +107,7 @@ class RunCatalogActionRequestBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this RunCatalogActionRequestBody.
+        r"""Sets the parameters of this RunCatalogActionRequestBody.
 
         :param parameters: The parameters of this RunCatalogActionRequestBody.
         :type parameters: dict(str, str)

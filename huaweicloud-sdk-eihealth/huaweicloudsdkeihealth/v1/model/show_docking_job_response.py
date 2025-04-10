@@ -38,7 +38,7 @@ class ShowDockingJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, receptors=None, ligands=None, engine=None, job_result=None, part_failed_reason=None, cluster_result=None):
-        """ShowDockingJobResponse
+        r"""ShowDockingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowDockingJobResponse.
+        r"""Gets the basic_info of this ShowDockingJobResponse.
 
         :return: The basic_info of this ShowDockingJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -95,7 +95,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowDockingJobResponse.
+        r"""Sets the basic_info of this ShowDockingJobResponse.
 
         :param basic_info: The basic_info of this ShowDockingJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -104,7 +104,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def receptors(self):
-        """Gets the receptors of this ShowDockingJobResponse.
+        r"""Gets the receptors of this ShowDockingJobResponse.
 
         受体文件列表
 
@@ -115,7 +115,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @receptors.setter
     def receptors(self, receptors):
-        """Sets the receptors of this ShowDockingJobResponse.
+        r"""Sets the receptors of this ShowDockingJobResponse.
 
         受体文件列表
 
@@ -126,7 +126,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def ligands(self):
-        """Gets the ligands of this ShowDockingJobResponse.
+        r"""Gets the ligands of this ShowDockingJobResponse.
 
         配体文件列表，当前仅支持1个
 
@@ -137,7 +137,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this ShowDockingJobResponse.
+        r"""Sets the ligands of this ShowDockingJobResponse.
 
         配体文件列表，当前仅支持1个
 
@@ -148,7 +148,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def engine(self):
-        """Gets the engine of this ShowDockingJobResponse.
+        r"""Gets the engine of this ShowDockingJobResponse.
 
         引擎
 
@@ -159,7 +159,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowDockingJobResponse.
+        r"""Sets the engine of this ShowDockingJobResponse.
 
         引擎
 
@@ -170,7 +170,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def job_result(self):
-        """Gets the job_result of this ShowDockingJobResponse.
+        r"""Gets the job_result of this ShowDockingJobResponse.
 
         :return: The job_result of this ShowDockingJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -179,7 +179,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this ShowDockingJobResponse.
+        r"""Sets the job_result of this ShowDockingJobResponse.
 
         :param job_result: The job_result of this ShowDockingJobResponse.
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -188,7 +188,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def part_failed_reason(self):
-        """Gets the part_failed_reason of this ShowDockingJobResponse.
+        r"""Gets the part_failed_reason of this ShowDockingJobResponse.
 
         部分失败原因和数量
 
@@ -199,7 +199,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @part_failed_reason.setter
     def part_failed_reason(self, part_failed_reason):
-        """Sets the part_failed_reason of this ShowDockingJobResponse.
+        r"""Sets the part_failed_reason of this ShowDockingJobResponse.
 
         部分失败原因和数量
 
@@ -210,7 +210,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @property
     def cluster_result(self):
-        """Gets the cluster_result of this ShowDockingJobResponse.
+        r"""Gets the cluster_result of this ShowDockingJobResponse.
 
         :return: The cluster_result of this ShowDockingJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
@@ -219,7 +219,7 @@ class ShowDockingJobResponse(SdkResponse):
 
     @cluster_result.setter
     def cluster_result(self, cluster_result):
-        """Sets the cluster_result of this ShowDockingJobResponse.
+        r"""Sets the cluster_result of this ShowDockingJobResponse.
 
         :param cluster_result: The cluster_result of this ShowDockingJobResponse.
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`

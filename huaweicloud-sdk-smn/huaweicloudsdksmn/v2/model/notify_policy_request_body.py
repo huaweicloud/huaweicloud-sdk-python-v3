@@ -27,7 +27,7 @@ class NotifyPolicyRequestBody:
     }
 
     def __init__(self, protocol=None, polling=None):
-        """NotifyPolicyRequestBody
+        r"""NotifyPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NotifyPolicyRequestBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NotifyPolicyRequestBody.
+        r"""Gets the protocol of this NotifyPolicyRequestBody.
 
         通知策略类型，当前仅支持语音。
 
@@ -59,7 +59,7 @@ class NotifyPolicyRequestBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NotifyPolicyRequestBody.
+        r"""Sets the protocol of this NotifyPolicyRequestBody.
 
         通知策略类型，当前仅支持语音。
 
@@ -70,7 +70,7 @@ class NotifyPolicyRequestBody:
 
     @property
     def polling(self):
-        """Gets the polling of this NotifyPolicyRequestBody.
+        r"""Gets the polling of this NotifyPolicyRequestBody.
 
         轮询策略订阅终端。
 
@@ -81,7 +81,7 @@ class NotifyPolicyRequestBody:
 
     @polling.setter
     def polling(self, polling):
-        """Sets the polling of this NotifyPolicyRequestBody.
+        r"""Sets the polling of this NotifyPolicyRequestBody.
 
         轮询策略订阅终端。
 

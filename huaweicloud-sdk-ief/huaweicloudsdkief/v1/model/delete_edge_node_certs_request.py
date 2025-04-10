@@ -29,7 +29,7 @@ class DeleteEdgeNodeCertsRequest:
     }
 
     def __init__(self, node_id=None, cert_id=None, ief_instance_id=None):
-        """DeleteEdgeNodeCertsRequest
+        r"""DeleteEdgeNodeCertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteEdgeNodeCertsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteEdgeNodeCertsRequest.
+        r"""Gets the node_id of this DeleteEdgeNodeCertsRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class DeleteEdgeNodeCertsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteEdgeNodeCertsRequest.
+        r"""Sets the node_id of this DeleteEdgeNodeCertsRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class DeleteEdgeNodeCertsRequest:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this DeleteEdgeNodeCertsRequest.
+        r"""Gets the cert_id of this DeleteEdgeNodeCertsRequest.
 
         证书ID
 
@@ -88,7 +88,7 @@ class DeleteEdgeNodeCertsRequest:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this DeleteEdgeNodeCertsRequest.
+        r"""Sets the cert_id of this DeleteEdgeNodeCertsRequest.
 
         证书ID
 
@@ -99,7 +99,7 @@ class DeleteEdgeNodeCertsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteEdgeNodeCertsRequest.
+        r"""Gets the ief_instance_id of this DeleteEdgeNodeCertsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -110,7 +110,7 @@ class DeleteEdgeNodeCertsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteEdgeNodeCertsRequest.
+        r"""Sets the ief_instance_id of this DeleteEdgeNodeCertsRequest.
 
         铂金版实例ID，专业版实例为空值
 

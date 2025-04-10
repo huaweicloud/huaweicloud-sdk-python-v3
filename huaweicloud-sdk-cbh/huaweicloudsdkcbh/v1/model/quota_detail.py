@@ -29,7 +29,7 @@ class QuotaDetail:
     }
 
     def __init__(self, zh_cn=None, en_us=None, remaining=None):
-        """QuotaDetail
+        r"""QuotaDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class QuotaDetail:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this QuotaDetail.
+        r"""Gets the zh_cn of this QuotaDetail.
 
         中文配额描述。
 
@@ -65,7 +65,7 @@ class QuotaDetail:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this QuotaDetail.
+        r"""Sets the zh_cn of this QuotaDetail.
 
         中文配额描述。
 
@@ -76,7 +76,7 @@ class QuotaDetail:
 
     @property
     def en_us(self):
-        """Gets the en_us of this QuotaDetail.
+        r"""Gets the en_us of this QuotaDetail.
 
         英文配额描述。
 
@@ -87,7 +87,7 @@ class QuotaDetail:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this QuotaDetail.
+        r"""Sets the en_us of this QuotaDetail.
 
         英文配额描述。
 
@@ -98,7 +98,7 @@ class QuotaDetail:
 
     @property
     def remaining(self):
-        """Gets the remaining of this QuotaDetail.
+        r"""Gets the remaining of this QuotaDetail.
 
         租户剩余配额数量。
 
@@ -109,7 +109,7 @@ class QuotaDetail:
 
     @remaining.setter
     def remaining(self, remaining):
-        """Sets the remaining of this QuotaDetail.
+        r"""Sets the remaining of this QuotaDetail.
 
         租户剩余配额数量。
 

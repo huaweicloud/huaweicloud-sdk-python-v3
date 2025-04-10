@@ -26,7 +26,7 @@ class KeystoneShowPermissionResponse(SdkResponse):
     }
 
     def __init__(self, role=None):
-        """KeystoneShowPermissionResponse
+        r"""KeystoneShowPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowPermissionResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this KeystoneShowPermissionResponse.
+        r"""Gets the role of this KeystoneShowPermissionResponse.
 
         :return: The role of this KeystoneShowPermissionResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleResult`
@@ -53,7 +53,7 @@ class KeystoneShowPermissionResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this KeystoneShowPermissionResponse.
+        r"""Sets the role of this KeystoneShowPermissionResponse.
 
         :param role: The role of this KeystoneShowPermissionResponse.
         :type role: :class:`huaweicloudsdkiam.v3.RoleResult`

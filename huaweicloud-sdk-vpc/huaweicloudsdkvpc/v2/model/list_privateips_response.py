@@ -26,7 +26,7 @@ class ListPrivateipsResponse(SdkResponse):
     }
 
     def __init__(self, privateips=None):
-        """ListPrivateipsResponse
+        r"""ListPrivateipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPrivateipsResponse(SdkResponse):
 
     @property
     def privateips(self):
-        """Gets the privateips of this ListPrivateipsResponse.
+        r"""Gets the privateips of this ListPrivateipsResponse.
 
         私有IP列表对象
 
@@ -55,7 +55,7 @@ class ListPrivateipsResponse(SdkResponse):
 
     @privateips.setter
     def privateips(self, privateips):
-        """Sets the privateips of this ListPrivateipsResponse.
+        r"""Sets the privateips of this ListPrivateipsResponse.
 
         私有IP列表对象
 

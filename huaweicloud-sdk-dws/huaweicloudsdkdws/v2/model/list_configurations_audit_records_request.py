@@ -35,7 +35,7 @@ class ListConfigurationsAuditRecordsRequest:
     }
 
     def __init__(self, cluster_id=None, action_time=None, filter_by=None, filter=None, limit=None, offset=None):
-        """ListConfigurationsAuditRecordsRequest
+        r"""ListConfigurationsAuditRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListConfigurationsAuditRecordsRequest.
+        r"""Gets the cluster_id of this ListConfigurationsAuditRecordsRequest.
 
         集群ID
 
@@ -88,7 +88,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListConfigurationsAuditRecordsRequest.
+        r"""Sets the cluster_id of this ListConfigurationsAuditRecordsRequest.
 
         集群ID
 
@@ -99,7 +99,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @property
     def action_time(self):
-        """Gets the action_time of this ListConfigurationsAuditRecordsRequest.
+        r"""Gets the action_time of this ListConfigurationsAuditRecordsRequest.
 
         任务时间
 
@@ -110,7 +110,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @action_time.setter
     def action_time(self, action_time):
-        """Sets the action_time of this ListConfigurationsAuditRecordsRequest.
+        r"""Sets the action_time of this ListConfigurationsAuditRecordsRequest.
 
         任务时间
 
@@ -121,7 +121,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @property
     def filter_by(self):
-        """Gets the filter_by of this ListConfigurationsAuditRecordsRequest.
+        r"""Gets the filter_by of this ListConfigurationsAuditRecordsRequest.
 
         过滤配置信息
 
@@ -132,7 +132,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @filter_by.setter
     def filter_by(self, filter_by):
-        """Sets the filter_by of this ListConfigurationsAuditRecordsRequest.
+        r"""Sets the filter_by of this ListConfigurationsAuditRecordsRequest.
 
         过滤配置信息
 
@@ -143,7 +143,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListConfigurationsAuditRecordsRequest.
+        r"""Gets the filter of this ListConfigurationsAuditRecordsRequest.
 
         过滤条件
 
@@ -154,7 +154,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListConfigurationsAuditRecordsRequest.
+        r"""Sets the filter of this ListConfigurationsAuditRecordsRequest.
 
         过滤条件
 
@@ -165,7 +165,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigurationsAuditRecordsRequest.
+        r"""Gets the limit of this ListConfigurationsAuditRecordsRequest.
 
         查询条数
 
@@ -176,7 +176,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigurationsAuditRecordsRequest.
+        r"""Sets the limit of this ListConfigurationsAuditRecordsRequest.
 
         查询条数
 
@@ -187,7 +187,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConfigurationsAuditRecordsRequest.
+        r"""Gets the offset of this ListConfigurationsAuditRecordsRequest.
 
         偏移量
 
@@ -198,7 +198,7 @@ class ListConfigurationsAuditRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConfigurationsAuditRecordsRequest.
+        r"""Sets the offset of this ListConfigurationsAuditRecordsRequest.
 
         偏移量
 

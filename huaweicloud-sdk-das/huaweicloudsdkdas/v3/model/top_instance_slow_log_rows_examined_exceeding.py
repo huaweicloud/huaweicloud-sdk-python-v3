@@ -41,7 +41,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
     }
 
     def __init__(self, template_id=None, template=None, databases=None, times=None, avg_query_time=None, max_query_time=None, avg_rows_examined=None, sum_rows_examined=None, avg_rows_sent=None):
-        """TopInstanceSlowLogRowsExaminedExceeding
+        r"""TopInstanceSlowLogRowsExaminedExceeding
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the template_id of this TopInstanceSlowLogRowsExaminedExceeding.
 
         SQL模板ID
 
@@ -110,7 +110,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the template_id of this TopInstanceSlowLogRowsExaminedExceeding.
 
         SQL模板ID
 
@@ -121,7 +121,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def template(self):
-        """Gets the template of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the template of this TopInstanceSlowLogRowsExaminedExceeding.
 
         SQL模板
 
@@ -132,7 +132,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the template of this TopInstanceSlowLogRowsExaminedExceeding.
 
         SQL模板
 
@@ -143,7 +143,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def databases(self):
-        """Gets the databases of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the databases of this TopInstanceSlowLogRowsExaminedExceeding.
 
         数据库名称
 
@@ -154,7 +154,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the databases of this TopInstanceSlowLogRowsExaminedExceeding.
 
         数据库名称
 
@@ -165,7 +165,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def times(self):
-        """Gets the times of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the times of this TopInstanceSlowLogRowsExaminedExceeding.
 
         执行次数
 
@@ -176,7 +176,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @times.setter
     def times(self, times):
-        """Sets the times of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the times of this TopInstanceSlowLogRowsExaminedExceeding.
 
         执行次数
 
@@ -187,7 +187,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def avg_query_time(self):
-        """Gets the avg_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the avg_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
 
         平均执行时间
 
@@ -198,7 +198,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @avg_query_time.setter
     def avg_query_time(self, avg_query_time):
-        """Sets the avg_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the avg_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
 
         平均执行时间
 
@@ -209,7 +209,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def max_query_time(self):
-        """Gets the max_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the max_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
 
         最大执行时间
 
@@ -220,7 +220,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @max_query_time.setter
     def max_query_time(self, max_query_time):
-        """Sets the max_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the max_query_time of this TopInstanceSlowLogRowsExaminedExceeding.
 
         最大执行时间
 
@@ -231,7 +231,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def avg_rows_examined(self):
-        """Gets the avg_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the avg_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
 
         平均扫描行数
 
@@ -242,7 +242,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @avg_rows_examined.setter
     def avg_rows_examined(self, avg_rows_examined):
-        """Sets the avg_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the avg_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
 
         平均扫描行数
 
@@ -253,7 +253,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def sum_rows_examined(self):
-        """Gets the sum_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the sum_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
 
         最大执行时间
 
@@ -264,7 +264,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @sum_rows_examined.setter
     def sum_rows_examined(self, sum_rows_examined):
-        """Sets the sum_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the sum_rows_examined of this TopInstanceSlowLogRowsExaminedExceeding.
 
         最大执行时间
 
@@ -275,7 +275,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @property
     def avg_rows_sent(self):
-        """Gets the avg_rows_sent of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Gets the avg_rows_sent of this TopInstanceSlowLogRowsExaminedExceeding.
 
         平均返回行数
 
@@ -286,7 +286,7 @@ class TopInstanceSlowLogRowsExaminedExceeding:
 
     @avg_rows_sent.setter
     def avg_rows_sent(self, avg_rows_sent):
-        """Sets the avg_rows_sent of this TopInstanceSlowLogRowsExaminedExceeding.
+        r"""Sets the avg_rows_sent of this TopInstanceSlowLogRowsExaminedExceeding.
 
         平均返回行数
 

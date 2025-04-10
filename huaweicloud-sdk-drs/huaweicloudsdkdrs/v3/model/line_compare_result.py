@@ -35,7 +35,7 @@ class LineCompareResult:
     }
 
     def __init__(self, compare_task_id=None, line_compare_overview=None, line_compare_overview_count=None, line_compare_details=None, error_code=None, error_msg=None):
-        """LineCompareResult
+        r"""LineCompareResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LineCompareResult:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this LineCompareResult.
+        r"""Gets the compare_task_id of this LineCompareResult.
 
         行对比任务的id。
 
@@ -89,7 +89,7 @@ class LineCompareResult:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this LineCompareResult.
+        r"""Sets the compare_task_id of this LineCompareResult.
 
         行对比任务的id。
 
@@ -100,7 +100,7 @@ class LineCompareResult:
 
     @property
     def line_compare_overview(self):
-        """Gets the line_compare_overview of this LineCompareResult.
+        r"""Gets the line_compare_overview of this LineCompareResult.
 
         行对比结果概览。
 
@@ -111,7 +111,7 @@ class LineCompareResult:
 
     @line_compare_overview.setter
     def line_compare_overview(self, line_compare_overview):
-        """Sets the line_compare_overview of this LineCompareResult.
+        r"""Sets the line_compare_overview of this LineCompareResult.
 
         行对比结果概览。
 
@@ -122,7 +122,7 @@ class LineCompareResult:
 
     @property
     def line_compare_overview_count(self):
-        """Gets the line_compare_overview_count of this LineCompareResult.
+        r"""Gets the line_compare_overview_count of this LineCompareResult.
 
         行对比结果概览总数。
 
@@ -133,7 +133,7 @@ class LineCompareResult:
 
     @line_compare_overview_count.setter
     def line_compare_overview_count(self, line_compare_overview_count):
-        """Sets the line_compare_overview_count of this LineCompareResult.
+        r"""Sets the line_compare_overview_count of this LineCompareResult.
 
         行对比结果概览总数。
 
@@ -144,7 +144,7 @@ class LineCompareResult:
 
     @property
     def line_compare_details(self):
-        """Gets the line_compare_details of this LineCompareResult.
+        r"""Gets the line_compare_details of this LineCompareResult.
 
         行对比结果详情。
 
@@ -155,7 +155,7 @@ class LineCompareResult:
 
     @line_compare_details.setter
     def line_compare_details(self, line_compare_details):
-        """Sets the line_compare_details of this LineCompareResult.
+        r"""Sets the line_compare_details of this LineCompareResult.
 
         行对比结果详情。
 
@@ -166,7 +166,7 @@ class LineCompareResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this LineCompareResult.
+        r"""Gets the error_code of this LineCompareResult.
 
         错误码。
 
@@ -177,7 +177,7 @@ class LineCompareResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this LineCompareResult.
+        r"""Sets the error_code of this LineCompareResult.
 
         错误码。
 
@@ -188,7 +188,7 @@ class LineCompareResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this LineCompareResult.
+        r"""Gets the error_msg of this LineCompareResult.
 
         错误信息。
 
@@ -199,7 +199,7 @@ class LineCompareResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this LineCompareResult.
+        r"""Sets the error_msg of this LineCompareResult.
 
         错误信息。
 

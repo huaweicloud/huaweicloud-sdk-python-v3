@@ -30,7 +30,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
     }
 
     def __init__(self, routing_table=None, total_count=None, page_info=None):
-        """ShowVpnGatewayRoutingTableResponse
+        r"""ShowVpnGatewayRoutingTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
     @property
     def routing_table(self):
-        """Gets the routing_table of this ShowVpnGatewayRoutingTableResponse.
+        r"""Gets the routing_table of this ShowVpnGatewayRoutingTableResponse.
 
         :return: The routing_table of this ShowVpnGatewayRoutingTableResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnGatewayRoutingTableEntryVo`]
@@ -67,7 +67,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
     @routing_table.setter
     def routing_table(self, routing_table):
-        """Sets the routing_table of this ShowVpnGatewayRoutingTableResponse.
+        r"""Sets the routing_table of this ShowVpnGatewayRoutingTableResponse.
 
         :param routing_table: The routing_table of this ShowVpnGatewayRoutingTableResponse.
         :type routing_table: list[:class:`huaweicloudsdkvpn.v5.VpnGatewayRoutingTableEntryVo`]
@@ -76,7 +76,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowVpnGatewayRoutingTableResponse.
+        r"""Gets the total_count of this ShowVpnGatewayRoutingTableResponse.
 
         :return: The total_count of this ShowVpnGatewayRoutingTableResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowVpnGatewayRoutingTableResponse.
+        r"""Sets the total_count of this ShowVpnGatewayRoutingTableResponse.
 
         :param total_count: The total_count of this ShowVpnGatewayRoutingTableResponse.
         :type total_count: int
@@ -94,7 +94,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowVpnGatewayRoutingTableResponse.
+        r"""Gets the page_info of this ShowVpnGatewayRoutingTableResponse.
 
         :return: The page_info of this ShowVpnGatewayRoutingTableResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -103,7 +103,7 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowVpnGatewayRoutingTableResponse.
+        r"""Sets the page_info of this ShowVpnGatewayRoutingTableResponse.
 
         :param page_info: The page_info of this ShowVpnGatewayRoutingTableResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`

@@ -25,7 +25,7 @@ class ShowPrivateZoneNameServerRequest:
     }
 
     def __init__(self, zone_id=None):
-        """ShowPrivateZoneNameServerRequest
+        r"""ShowPrivateZoneNameServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPrivateZoneNameServerRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ShowPrivateZoneNameServerRequest.
+        r"""Gets the zone_id of this ShowPrivateZoneNameServerRequest.
 
         待查询内网zone的ID。
 
@@ -53,7 +53,7 @@ class ShowPrivateZoneNameServerRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ShowPrivateZoneNameServerRequest.
+        r"""Sets the zone_id of this ShowPrivateZoneNameServerRequest.
 
         待查询内网zone的ID。
 

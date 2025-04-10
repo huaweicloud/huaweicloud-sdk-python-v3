@@ -25,7 +25,7 @@ class IpBindingV3Body:
     }
 
     def __init__(self, ip_list=None):
-        """IpBindingV3Body
+        r"""IpBindingV3Body
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class IpBindingV3Body:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this IpBindingV3Body.
+        r"""Gets the ip_list of this IpBindingV3Body.
 
         防护ip列表
 
@@ -53,7 +53,7 @@ class IpBindingV3Body:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this IpBindingV3Body.
+        r"""Sets the ip_list of this IpBindingV3Body.
 
         防护ip列表
 

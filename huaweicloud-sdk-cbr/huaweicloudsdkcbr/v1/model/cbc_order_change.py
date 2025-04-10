@@ -33,7 +33,7 @@ class CbcOrderChange:
     }
 
     def __init__(self, cloud_service_console_url=None, product_info=None, resource_id=None, is_auto_pay=None, promotion_info=None):
-        """CbcOrderChange
+        r"""CbcOrderChange
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CbcOrderChange:
 
     @property
     def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this CbcOrderChange.
+        r"""Gets the cloud_service_console_url of this CbcOrderChange.
 
         云服务ConsoleURL。订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息
 
@@ -80,7 +80,7 @@ class CbcOrderChange:
 
     @cloud_service_console_url.setter
     def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this CbcOrderChange.
+        r"""Sets the cloud_service_console_url of this CbcOrderChange.
 
         云服务ConsoleURL。订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息
 
@@ -91,7 +91,7 @@ class CbcOrderChange:
 
     @property
     def product_info(self):
-        """Gets the product_info of this CbcOrderChange.
+        r"""Gets the product_info of this CbcOrderChange.
 
         :return: The product_info of this CbcOrderChange.
         :rtype: :class:`huaweicloudsdkcbr.v1.CbcProductInfoOrderChange`
@@ -100,7 +100,7 @@ class CbcOrderChange:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this CbcOrderChange.
+        r"""Sets the product_info of this CbcOrderChange.
 
         :param product_info: The product_info of this CbcOrderChange.
         :type product_info: :class:`huaweicloudsdkcbr.v1.CbcProductInfoOrderChange`
@@ -109,7 +109,7 @@ class CbcOrderChange:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CbcOrderChange.
+        r"""Gets the resource_id of this CbcOrderChange.
 
         待变更的资源ID
 
@@ -120,7 +120,7 @@ class CbcOrderChange:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CbcOrderChange.
+        r"""Sets the resource_id of this CbcOrderChange.
 
         待变更的资源ID
 
@@ -131,7 +131,7 @@ class CbcOrderChange:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CbcOrderChange.
+        r"""Gets the is_auto_pay of this CbcOrderChange.
 
         是否自动支付，默认非自动支付：false
 
@@ -142,7 +142,7 @@ class CbcOrderChange:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CbcOrderChange.
+        r"""Sets the is_auto_pay of this CbcOrderChange.
 
         是否自动支付，默认非自动支付：false
 
@@ -153,7 +153,7 @@ class CbcOrderChange:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CbcOrderChange.
+        r"""Gets the promotion_info of this CbcOrderChange.
 
         购买折扣
 
@@ -164,7 +164,7 @@ class CbcOrderChange:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CbcOrderChange.
+        r"""Sets the promotion_info of this CbcOrderChange.
 
         购买折扣
 

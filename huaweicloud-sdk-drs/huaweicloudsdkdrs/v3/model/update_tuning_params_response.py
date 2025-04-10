@@ -34,7 +34,7 @@ class UpdateTuningParamsResponse(SdkResponse):
     }
 
     def __init__(self, full_sync=None, incre_capture=None, incre_apply=None, incre_relay=None, modify_result=None):
-        """UpdateTuningParamsResponse
+        r"""UpdateTuningParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @property
     def full_sync(self):
-        """Gets the full_sync of this UpdateTuningParamsResponse.
+        r"""Gets the full_sync of this UpdateTuningParamsResponse.
 
         全量调优参数
 
@@ -83,7 +83,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @full_sync.setter
     def full_sync(self, full_sync):
-        """Sets the full_sync of this UpdateTuningParamsResponse.
+        r"""Sets the full_sync of this UpdateTuningParamsResponse.
 
         全量调优参数
 
@@ -94,7 +94,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @property
     def incre_capture(self):
-        """Gets the incre_capture of this UpdateTuningParamsResponse.
+        r"""Gets the incre_capture of this UpdateTuningParamsResponse.
 
         增量抓取调优参数
 
@@ -105,7 +105,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @incre_capture.setter
     def incre_capture(self, incre_capture):
-        """Sets the incre_capture of this UpdateTuningParamsResponse.
+        r"""Sets the incre_capture of this UpdateTuningParamsResponse.
 
         增量抓取调优参数
 
@@ -116,7 +116,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @property
     def incre_apply(self):
-        """Gets the incre_apply of this UpdateTuningParamsResponse.
+        r"""Gets the incre_apply of this UpdateTuningParamsResponse.
 
         增量回放调优参数
 
@@ -127,7 +127,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @incre_apply.setter
     def incre_apply(self, incre_apply):
-        """Sets the incre_apply of this UpdateTuningParamsResponse.
+        r"""Sets the incre_apply of this UpdateTuningParamsResponse.
 
         增量回放调优参数
 
@@ -138,7 +138,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @property
     def incre_relay(self):
-        """Gets the incre_relay of this UpdateTuningParamsResponse.
+        r"""Gets the incre_relay of this UpdateTuningParamsResponse.
 
         增量日志拉取调优参数
 
@@ -149,7 +149,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @incre_relay.setter
     def incre_relay(self, incre_relay):
-        """Sets the incre_relay of this UpdateTuningParamsResponse.
+        r"""Sets the incre_relay of this UpdateTuningParamsResponse.
 
         增量日志拉取调优参数
 
@@ -160,7 +160,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @property
     def modify_result(self):
-        """Gets the modify_result of this UpdateTuningParamsResponse.
+        r"""Gets the modify_result of this UpdateTuningParamsResponse.
 
         参数修改是否成功
 
@@ -171,7 +171,7 @@ class UpdateTuningParamsResponse(SdkResponse):
 
     @modify_result.setter
     def modify_result(self, modify_result):
-        """Sets the modify_result of this UpdateTuningParamsResponse.
+        r"""Sets the modify_result of this UpdateTuningParamsResponse.
 
         参数修改是否成功
 

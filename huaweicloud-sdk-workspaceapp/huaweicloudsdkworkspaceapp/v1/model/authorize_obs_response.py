@@ -40,7 +40,7 @@ class AuthorizeObsResponse(SdkResponse):
     }
 
     def __init__(self, server_end_point=None, bucket_name=None, directory=None, ak=None, sk=None, expires_at=None, policy=None, security_token=None):
-        """AuthorizeObsResponse
+        r"""AuthorizeObsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def server_end_point(self):
-        """Gets the server_end_point of this AuthorizeObsResponse.
+        r"""Gets the server_end_point of this AuthorizeObsResponse.
 
         访问的服务终端节点。
 
@@ -104,7 +104,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @server_end_point.setter
     def server_end_point(self, server_end_point):
-        """Sets the server_end_point of this AuthorizeObsResponse.
+        r"""Sets the server_end_point of this AuthorizeObsResponse.
 
         访问的服务终端节点。
 
@@ -115,7 +115,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this AuthorizeObsResponse.
+        r"""Gets the bucket_name of this AuthorizeObsResponse.
 
         存放的桶名称。
 
@@ -126,7 +126,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this AuthorizeObsResponse.
+        r"""Sets the bucket_name of this AuthorizeObsResponse.
 
         存放的桶名称。
 
@@ -137,7 +137,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def directory(self):
-        """Gets the directory of this AuthorizeObsResponse.
+        r"""Gets the directory of this AuthorizeObsResponse.
 
         存放目录。
 
@@ -148,7 +148,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this AuthorizeObsResponse.
+        r"""Sets the directory of this AuthorizeObsResponse.
 
         存放目录。
 
@@ -159,7 +159,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def ak(self):
-        """Gets the ak of this AuthorizeObsResponse.
+        r"""Gets the ak of this AuthorizeObsResponse.
 
         获取的AK。。
 
@@ -170,7 +170,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this AuthorizeObsResponse.
+        r"""Sets the ak of this AuthorizeObsResponse.
 
         获取的AK。。
 
@@ -181,7 +181,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def sk(self):
-        """Gets the sk of this AuthorizeObsResponse.
+        r"""Gets the sk of this AuthorizeObsResponse.
 
         获取的SK。
 
@@ -192,7 +192,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this AuthorizeObsResponse.
+        r"""Sets the sk of this AuthorizeObsResponse.
 
         获取的SK。
 
@@ -203,7 +203,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this AuthorizeObsResponse.
+        r"""Gets the expires_at of this AuthorizeObsResponse.
 
         AK/SK和securitytoken的过期时间。。
 
@@ -214,7 +214,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this AuthorizeObsResponse.
+        r"""Sets the expires_at of this AuthorizeObsResponse.
 
         AK/SK和securitytoken的过期时间。。
 
@@ -225,7 +225,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this AuthorizeObsResponse.
+        r"""Gets the policy of this AuthorizeObsResponse.
 
         :return: The policy of this AuthorizeObsResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Policy`
@@ -234,7 +234,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this AuthorizeObsResponse.
+        r"""Sets the policy of this AuthorizeObsResponse.
 
         :param policy: The policy of this AuthorizeObsResponse.
         :type policy: :class:`huaweicloudsdkworkspaceapp.v1.Policy`
@@ -243,7 +243,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @property
     def security_token(self):
-        """Gets the security_token of this AuthorizeObsResponse.
+        r"""Gets the security_token of this AuthorizeObsResponse.
 
         安全校验token，将所获的AK、SK等信息进行加密后的字符串。
 
@@ -254,7 +254,7 @@ class AuthorizeObsResponse(SdkResponse):
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this AuthorizeObsResponse.
+        r"""Sets the security_token of this AuthorizeObsResponse.
 
         安全校验token，将所获的AK、SK等信息进行加密后的字符串。
 

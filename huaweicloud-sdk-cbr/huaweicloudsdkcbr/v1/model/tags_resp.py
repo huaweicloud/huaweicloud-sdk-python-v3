@@ -27,7 +27,7 @@ class TagsResp:
     }
 
     def __init__(self, key=None, values=None):
-        """TagsResp
+        r"""TagsResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagsResp:
 
     @property
     def key(self):
-        """Gets the key of this TagsResp.
+        r"""Gets the key of this TagsResp.
 
         键。  key最大长度36个字符。  key不能为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
 
@@ -61,7 +61,7 @@ class TagsResp:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagsResp.
+        r"""Sets the key of this TagsResp.
 
         键。  key最大长度36个字符。  key不能为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
 
@@ -72,7 +72,7 @@ class TagsResp:
 
     @property
     def values(self):
-        """Gets the values of this TagsResp.
+        r"""Gets the values of this TagsResp.
 
         值列表。  value最大长度43个字符。  value可以为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
 
@@ -83,7 +83,7 @@ class TagsResp:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagsResp.
+        r"""Sets the values of this TagsResp.
 
         值列表。  value最大长度43个字符。  value可以为空字符串。  key只能由中文，字母，数字，“-”，“_”组成。
 

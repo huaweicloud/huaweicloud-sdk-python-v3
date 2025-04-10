@@ -26,7 +26,7 @@ class ShowApplicationConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration=None):
-        """ShowApplicationConfigurationResponse
+        r"""ShowApplicationConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowApplicationConfigurationResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this ShowApplicationConfigurationResponse.
+        r"""Gets the configuration of this ShowApplicationConfigurationResponse.
 
         应用配置列表。
 
@@ -55,7 +55,7 @@ class ShowApplicationConfigurationResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ShowApplicationConfigurationResponse.
+        r"""Sets the configuration of this ShowApplicationConfigurationResponse.
 
         应用配置列表。
 

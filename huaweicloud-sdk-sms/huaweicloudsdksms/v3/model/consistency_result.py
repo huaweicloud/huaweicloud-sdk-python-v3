@@ -33,7 +33,7 @@ class ConsistencyResult:
     }
 
     def __init__(self, dir_check=None, num_total_files=None, num_different_files=None, num_target_miss_files=None, num_target_more_files=None):
-        """ConsistencyResult
+        r"""ConsistencyResult
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ConsistencyResult:
 
     @property
     def dir_check(self):
-        """Gets the dir_check of this ConsistencyResult.
+        r"""Gets the dir_check of this ConsistencyResult.
 
         校验目录
 
@@ -77,7 +77,7 @@ class ConsistencyResult:
 
     @dir_check.setter
     def dir_check(self, dir_check):
-        """Sets the dir_check of this ConsistencyResult.
+        r"""Sets the dir_check of this ConsistencyResult.
 
         校验目录
 
@@ -88,7 +88,7 @@ class ConsistencyResult:
 
     @property
     def num_total_files(self):
-        """Gets the num_total_files of this ConsistencyResult.
+        r"""Gets the num_total_files of this ConsistencyResult.
 
         文件总数
 
@@ -99,7 +99,7 @@ class ConsistencyResult:
 
     @num_total_files.setter
     def num_total_files(self, num_total_files):
-        """Sets the num_total_files of this ConsistencyResult.
+        r"""Sets the num_total_files of this ConsistencyResult.
 
         文件总数
 
@@ -110,7 +110,7 @@ class ConsistencyResult:
 
     @property
     def num_different_files(self):
-        """Gets the num_different_files of this ConsistencyResult.
+        r"""Gets the num_different_files of this ConsistencyResult.
 
         差异文件数量
 
@@ -121,7 +121,7 @@ class ConsistencyResult:
 
     @num_different_files.setter
     def num_different_files(self, num_different_files):
-        """Sets the num_different_files of this ConsistencyResult.
+        r"""Sets the num_different_files of this ConsistencyResult.
 
         差异文件数量
 
@@ -132,7 +132,7 @@ class ConsistencyResult:
 
     @property
     def num_target_miss_files(self):
-        """Gets the num_target_miss_files of this ConsistencyResult.
+        r"""Gets the num_target_miss_files of this ConsistencyResult.
 
         目的端缺少文件数量
 
@@ -143,7 +143,7 @@ class ConsistencyResult:
 
     @num_target_miss_files.setter
     def num_target_miss_files(self, num_target_miss_files):
-        """Sets the num_target_miss_files of this ConsistencyResult.
+        r"""Sets the num_target_miss_files of this ConsistencyResult.
 
         目的端缺少文件数量
 
@@ -154,7 +154,7 @@ class ConsistencyResult:
 
     @property
     def num_target_more_files(self):
-        """Gets the num_target_more_files of this ConsistencyResult.
+        r"""Gets the num_target_more_files of this ConsistencyResult.
 
         目的端多余文件数量
 
@@ -165,7 +165,7 @@ class ConsistencyResult:
 
     @num_target_more_files.setter
     def num_target_more_files(self, num_target_more_files):
-        """Sets the num_target_more_files of this ConsistencyResult.
+        r"""Sets the num_target_more_files of this ConsistencyResult.
 
         目的端多余文件数量
 

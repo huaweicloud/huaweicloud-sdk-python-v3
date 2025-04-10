@@ -24,7 +24,7 @@ class KeystoneAddUserToGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneAddUserToGroupResponse
+        r"""KeystoneAddUserToGroupResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class PoliciesPeripheralsParallelPortRedirection:
     }
 
     def __init__(self, parallel_port_enable=None):
-        """PoliciesPeripheralsParallelPortRedirection
+        r"""PoliciesPeripheralsParallelPortRedirection
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesPeripheralsParallelPortRedirection:
 
     @property
     def parallel_port_enable(self):
-        """Gets the parallel_port_enable of this PoliciesPeripheralsParallelPortRedirection.
+        r"""Gets the parallel_port_enable of this PoliciesPeripheralsParallelPortRedirection.
 
         是否开启并口重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -54,7 +54,7 @@ class PoliciesPeripheralsParallelPortRedirection:
 
     @parallel_port_enable.setter
     def parallel_port_enable(self, parallel_port_enable):
-        """Sets the parallel_port_enable of this PoliciesPeripheralsParallelPortRedirection.
+        r"""Sets the parallel_port_enable of this PoliciesPeripheralsParallelPortRedirection.
 
         是否开启并口重定向。取值为： false：表示关闭。 true：表示开启。
 

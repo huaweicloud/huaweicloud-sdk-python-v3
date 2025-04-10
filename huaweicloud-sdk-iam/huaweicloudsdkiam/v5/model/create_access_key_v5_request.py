@@ -25,7 +25,7 @@ class CreateAccessKeyV5Request:
     }
 
     def __init__(self, user_id=None):
-        """CreateAccessKeyV5Request
+        r"""CreateAccessKeyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAccessKeyV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateAccessKeyV5Request.
+        r"""Gets the user_id of this CreateAccessKeyV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class CreateAccessKeyV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateAccessKeyV5Request.
+        r"""Sets the user_id of this CreateAccessKeyV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

@@ -34,7 +34,7 @@ class CcClient(Client):
         return client_builder
 
     def batch_create_delete_tags(self, request):
-        """批量创建和删除资源标签
+        r"""批量创建和删除资源标签
 
         批量创建和删除标签。此API为历史API，请优先使用《 创建云连接实例标签》、《 创建带宽包标签》、《 删除云连接实例标签》、《 删除带宽包标签》。
         
@@ -103,7 +103,7 @@ class CcClient(Client):
         return http_info
 
     def create_tag(self, request):
-        """添加资源标签
+        r"""添加资源标签
 
         添加资源标签。此API为历史API，请优先使用《 创建云连接实例标签》、《 创建带宽包标签》。
         
@@ -172,7 +172,7 @@ class CcClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除资源标签。此API为历史API，请优先使用《 删除云连接实例标签》或《 删除带宽包标签》。
         
@@ -241,7 +241,7 @@ class CcClient(Client):
         return http_info
 
     def list_domain_tags(self, request):
-        """查询账户资源标签
+        r"""查询账户资源标签
 
         查询账户资源标签。此API为历史API，请优先使用《查询云连接实例的标签信息》、《查询带宽包的标签信息》。
         
@@ -306,7 +306,7 @@ class CcClient(Client):
         return http_info
 
     def list_resource_by_filter_tag(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         查询资源实例。此API为历史API，请优先使用《通过标签过滤云连接实例》、《通过标签过滤带宽包实例》。
         
@@ -373,7 +373,7 @@ class CcClient(Client):
         return http_info
 
     def list_tags(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询资源标签。此API为历史API，请优先使用《查询云连接实例的标签信息》、《查询带宽包的标签信息》。
         

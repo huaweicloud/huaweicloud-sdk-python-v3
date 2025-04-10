@@ -39,7 +39,7 @@ class Image:
     }
 
     def __init__(self, create_time=None, update_time=None, id=None, image_frame=None, image_url=None, name=None, type=None, resolution_type=None):
-        """Image
+        r"""Image
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class Image:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Image.
+        r"""Gets the create_time of this Image.
 
         创建时间
 
@@ -97,7 +97,7 @@ class Image:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Image.
+        r"""Sets the create_time of this Image.
 
         创建时间
 
@@ -108,7 +108,7 @@ class Image:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Image.
+        r"""Gets the update_time of this Image.
 
         更新时间
 
@@ -119,7 +119,7 @@ class Image:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Image.
+        r"""Sets the update_time of this Image.
 
         更新时间
 
@@ -130,7 +130,7 @@ class Image:
 
     @property
     def id(self):
-        """Gets the id of this Image.
+        r"""Gets the id of this Image.
 
         :return: The id of this Image.
         :rtype: str
@@ -139,7 +139,7 @@ class Image:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Image.
+        r"""Sets the id of this Image.
 
         :param id: The id of this Image.
         :type id: str
@@ -148,7 +148,7 @@ class Image:
 
     @property
     def image_frame(self):
-        """Gets the image_frame of this Image.
+        r"""Gets the image_frame of this Image.
 
         :return: The image_frame of this Image.
         :rtype: :class:`huaweicloudsdkcbs.v1.ImageFrame`
@@ -157,7 +157,7 @@ class Image:
 
     @image_frame.setter
     def image_frame(self, image_frame):
-        """Sets the image_frame of this Image.
+        r"""Sets the image_frame of this Image.
 
         :param image_frame: The image_frame of this Image.
         :type image_frame: :class:`huaweicloudsdkcbs.v1.ImageFrame`
@@ -166,7 +166,7 @@ class Image:
 
     @property
     def image_url(self):
-        """Gets the image_url of this Image.
+        r"""Gets the image_url of this Image.
 
         图片的obs路径
 
@@ -177,7 +177,7 @@ class Image:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this Image.
+        r"""Sets the image_url of this Image.
 
         图片的obs路径
 
@@ -188,7 +188,7 @@ class Image:
 
     @property
     def name(self):
-        """Gets the name of this Image.
+        r"""Gets the name of this Image.
 
         :return: The name of this Image.
         :rtype: str
@@ -197,7 +197,7 @@ class Image:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Image.
+        r"""Sets the name of this Image.
 
         :param name: The name of this Image.
         :type name: str
@@ -206,7 +206,7 @@ class Image:
 
     @property
     def type(self):
-        """Gets the type of this Image.
+        r"""Gets the type of this Image.
 
         0：背景图 1：图标 2：系统背景
 
@@ -217,7 +217,7 @@ class Image:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Image.
+        r"""Sets the type of this Image.
 
         0：背景图 1：图标 2：系统背景
 
@@ -228,7 +228,7 @@ class Image:
 
     @property
     def resolution_type(self):
-        """Gets the resolution_type of this Image.
+        r"""Gets the resolution_type of this Image.
 
         横竖屏模式。0：横版1：竖版
 
@@ -239,7 +239,7 @@ class Image:
 
     @resolution_type.setter
     def resolution_type(self, resolution_type):
-        """Sets the resolution_type of this Image.
+        r"""Sets the resolution_type of this Image.
 
         横竖屏模式。0：横版1：竖版
 

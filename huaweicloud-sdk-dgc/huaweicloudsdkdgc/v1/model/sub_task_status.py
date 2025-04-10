@@ -33,7 +33,7 @@ class SubTaskStatus:
     }
 
     def __init__(self, id=None, name=None, last_update=None, status=None, message=None):
-        """SubTaskStatus
+        r"""SubTaskStatus
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SubTaskStatus:
 
     @property
     def id(self):
-        """Gets the id of this SubTaskStatus.
+        r"""Gets the id of this SubTaskStatus.
 
         作业ID
 
@@ -82,7 +82,7 @@ class SubTaskStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubTaskStatus.
+        r"""Sets the id of this SubTaskStatus.
 
         作业ID
 
@@ -93,7 +93,7 @@ class SubTaskStatus:
 
     @property
     def name(self):
-        """Gets the name of this SubTaskStatus.
+        r"""Gets the name of this SubTaskStatus.
 
         作业名称
 
@@ -104,7 +104,7 @@ class SubTaskStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubTaskStatus.
+        r"""Sets the name of this SubTaskStatus.
 
         作业名称
 
@@ -115,7 +115,7 @@ class SubTaskStatus:
 
     @property
     def last_update(self):
-        """Gets the last_update of this SubTaskStatus.
+        r"""Gets the last_update of this SubTaskStatus.
 
         作业最后更新日期
 
@@ -126,7 +126,7 @@ class SubTaskStatus:
 
     @last_update.setter
     def last_update(self, last_update):
-        """Sets the last_update of this SubTaskStatus.
+        r"""Sets the last_update of this SubTaskStatus.
 
         作业最后更新日期
 
@@ -137,7 +137,7 @@ class SubTaskStatus:
 
     @property
     def status(self):
-        """Gets the status of this SubTaskStatus.
+        r"""Gets the status of this SubTaskStatus.
 
         作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
 
@@ -148,7 +148,7 @@ class SubTaskStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubTaskStatus.
+        r"""Sets the status of this SubTaskStatus.
 
         作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
 
@@ -159,7 +159,7 @@ class SubTaskStatus:
 
     @property
     def message(self):
-        """Gets the message of this SubTaskStatus.
+        r"""Gets the message of this SubTaskStatus.
 
         作业消息
 
@@ -170,7 +170,7 @@ class SubTaskStatus:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SubTaskStatus.
+        r"""Sets the message of this SubTaskStatus.
 
         作业消息
 

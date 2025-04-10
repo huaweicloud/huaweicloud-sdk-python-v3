@@ -25,7 +25,7 @@ class EquipmentWanItemList:
     }
 
     def __init__(self, wan_interfaces=None):
-        """EquipmentWanItemList
+        r"""EquipmentWanItemList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EquipmentWanItemList:
 
     @property
     def wan_interfaces(self):
-        """Gets the wan_interfaces of this EquipmentWanItemList.
+        r"""Gets the wan_interfaces of this EquipmentWanItemList.
 
         设备WAN口配置列表
 
@@ -54,7 +54,7 @@ class EquipmentWanItemList:
 
     @wan_interfaces.setter
     def wan_interfaces(self, wan_interfaces):
-        """Sets the wan_interfaces of this EquipmentWanItemList.
+        r"""Sets the wan_interfaces of this EquipmentWanItemList.
 
         设备WAN口配置列表
 

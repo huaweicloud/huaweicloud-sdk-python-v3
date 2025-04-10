@@ -25,7 +25,7 @@ class UpdateNetworkInstanceRequestBody:
     }
 
     def __init__(self, network_instance=None):
-        """UpdateNetworkInstanceRequestBody
+        r"""UpdateNetworkInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNetworkInstanceRequestBody:
 
     @property
     def network_instance(self):
-        """Gets the network_instance of this UpdateNetworkInstanceRequestBody.
+        r"""Gets the network_instance of this UpdateNetworkInstanceRequestBody.
 
         :return: The network_instance of this UpdateNetworkInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstance`
@@ -51,7 +51,7 @@ class UpdateNetworkInstanceRequestBody:
 
     @network_instance.setter
     def network_instance(self, network_instance):
-        """Sets the network_instance of this UpdateNetworkInstanceRequestBody.
+        r"""Sets the network_instance of this UpdateNetworkInstanceRequestBody.
 
         :param network_instance: The network_instance of this UpdateNetworkInstanceRequestBody.
         :type network_instance: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstance`

@@ -25,7 +25,7 @@ class ShowFirewallRequest:
     }
 
     def __init__(self, firewall_id=None):
-        """ShowFirewallRequest
+        r"""ShowFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFirewallRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this ShowFirewallRequest.
+        r"""Gets the firewall_id of this ShowFirewallRequest.
 
         网络ACL的唯一标识
 
@@ -53,7 +53,7 @@ class ShowFirewallRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this ShowFirewallRequest.
+        r"""Sets the firewall_id of this ShowFirewallRequest.
 
         网络ACL的唯一标识
 

@@ -41,7 +41,7 @@ class CreateBasicAwReq:
     }
 
     def __init__(self, body_param_type=None, description=None, dft_check_point_list=None, dft_custom_header=None, dft_variable_list=None, extra_info=None, group_name=None, name=None, param_type_and_dft_value=None):
-        """CreateBasicAwReq
+        r"""CreateBasicAwReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CreateBasicAwReq:
 
     @property
     def body_param_type(self):
-        """Gets the body_param_type of this CreateBasicAwReq.
+        r"""Gets the body_param_type of this CreateBasicAwReq.
 
         body请求体的类型：text(包含JSON，参数内部区分)、form
 
@@ -110,7 +110,7 @@ class CreateBasicAwReq:
 
     @body_param_type.setter
     def body_param_type(self, body_param_type):
-        """Sets the body_param_type of this CreateBasicAwReq.
+        r"""Sets the body_param_type of this CreateBasicAwReq.
 
         body请求体的类型：text(包含JSON，参数内部区分)、form
 
@@ -121,7 +121,7 @@ class CreateBasicAwReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateBasicAwReq.
+        r"""Gets the description of this CreateBasicAwReq.
 
         描述
 
@@ -132,7 +132,7 @@ class CreateBasicAwReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateBasicAwReq.
+        r"""Sets the description of this CreateBasicAwReq.
 
         描述
 
@@ -143,7 +143,7 @@ class CreateBasicAwReq:
 
     @property
     def dft_check_point_list(self):
-        """Gets the dft_check_point_list of this CreateBasicAwReq.
+        r"""Gets the dft_check_point_list of this CreateBasicAwReq.
 
         默认检查点List
 
@@ -154,7 +154,7 @@ class CreateBasicAwReq:
 
     @dft_check_point_list.setter
     def dft_check_point_list(self, dft_check_point_list):
-        """Sets the dft_check_point_list of this CreateBasicAwReq.
+        r"""Sets the dft_check_point_list of this CreateBasicAwReq.
 
         默认检查点List
 
@@ -165,7 +165,7 @@ class CreateBasicAwReq:
 
     @property
     def dft_custom_header(self):
-        """Gets the dft_custom_header of this CreateBasicAwReq.
+        r"""Gets the dft_custom_header of this CreateBasicAwReq.
 
         默认请求头参数对象
 
@@ -176,7 +176,7 @@ class CreateBasicAwReq:
 
     @dft_custom_header.setter
     def dft_custom_header(self, dft_custom_header):
-        """Sets the dft_custom_header of this CreateBasicAwReq.
+        r"""Sets the dft_custom_header of this CreateBasicAwReq.
 
         默认请求头参数对象
 
@@ -187,7 +187,7 @@ class CreateBasicAwReq:
 
     @property
     def dft_variable_list(self):
-        """Gets the dft_variable_list of this CreateBasicAwReq.
+        r"""Gets the dft_variable_list of this CreateBasicAwReq.
 
         定义的变量信息
 
@@ -198,7 +198,7 @@ class CreateBasicAwReq:
 
     @dft_variable_list.setter
     def dft_variable_list(self, dft_variable_list):
-        """Sets the dft_variable_list of this CreateBasicAwReq.
+        r"""Sets the dft_variable_list of this CreateBasicAwReq.
 
         定义的变量信息
 
@@ -209,7 +209,7 @@ class CreateBasicAwReq:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this CreateBasicAwReq.
+        r"""Gets the extra_info of this CreateBasicAwReq.
 
         :return: The extra_info of this CreateBasicAwReq.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtraInfo`
@@ -218,7 +218,7 @@ class CreateBasicAwReq:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this CreateBasicAwReq.
+        r"""Sets the extra_info of this CreateBasicAwReq.
 
         :param extra_info: The extra_info of this CreateBasicAwReq.
         :type extra_info: :class:`huaweicloudsdkcloudtest.v1.ExtraInfo`
@@ -227,7 +227,7 @@ class CreateBasicAwReq:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateBasicAwReq.
+        r"""Gets the group_name of this CreateBasicAwReq.
 
         组名
 
@@ -238,7 +238,7 @@ class CreateBasicAwReq:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateBasicAwReq.
+        r"""Sets the group_name of this CreateBasicAwReq.
 
         组名
 
@@ -249,7 +249,7 @@ class CreateBasicAwReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateBasicAwReq.
+        r"""Gets the name of this CreateBasicAwReq.
 
         名称
 
@@ -260,7 +260,7 @@ class CreateBasicAwReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBasicAwReq.
+        r"""Sets the name of this CreateBasicAwReq.
 
         名称
 
@@ -271,7 +271,7 @@ class CreateBasicAwReq:
 
     @property
     def param_type_and_dft_value(self):
-        """Gets the param_type_and_dft_value of this CreateBasicAwReq.
+        r"""Gets the param_type_and_dft_value of this CreateBasicAwReq.
 
         参数类型和参数默认值对应List
 
@@ -282,7 +282,7 @@ class CreateBasicAwReq:
 
     @param_type_and_dft_value.setter
     def param_type_and_dft_value(self, param_type_and_dft_value):
-        """Sets the param_type_and_dft_value of this CreateBasicAwReq.
+        r"""Sets the param_type_and_dft_value of this CreateBasicAwReq.
 
         参数类型和参数默认值对应List
 

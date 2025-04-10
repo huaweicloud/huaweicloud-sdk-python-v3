@@ -25,7 +25,7 @@ class UUID32Identifier:
     }
 
     def __init__(self, id=None):
-        """UUID32Identifier
+        r"""UUID32Identifier
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UUID32Identifier:
 
     @property
     def id(self):
-        """Gets the id of this UUID32Identifier.
+        r"""Gets the id of this UUID32Identifier.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class UUID32Identifier:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UUID32Identifier.
+        r"""Sets the id of this UUID32Identifier.
 
         实例ID。
 

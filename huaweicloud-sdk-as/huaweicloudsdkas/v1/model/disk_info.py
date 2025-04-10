@@ -41,7 +41,7 @@ class DiskInfo:
     }
 
     def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None, iops=None, throughput=None):
-        """DiskInfo
+        r"""DiskInfo
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class DiskInfo:
 
     @property
     def size(self):
-        """Gets the size of this DiskInfo.
+        r"""Gets the size of this DiskInfo.
 
         磁盘大小，容量单位为GB。系统盘输入大小范围为1~1024，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
 
@@ -107,7 +107,7 @@ class DiskInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DiskInfo.
+        r"""Sets the size of this DiskInfo.
 
         磁盘大小，容量单位为GB。系统盘输入大小范围为1~1024，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
 
@@ -118,7 +118,7 @@ class DiskInfo:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this DiskInfo.
+        r"""Gets the volume_type of this DiskInfo.
 
         云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)GPSSD2: 通用型SSD V2云硬盘ESSD2: 极速型SSD V2云硬盘当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
@@ -129,7 +129,7 @@ class DiskInfo:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this DiskInfo.
+        r"""Sets the volume_type of this DiskInfo.
 
         云服务器系统盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。GPSSD：通用型SSD磁盘类型。co-p1：高IO (性能优化Ⅰ型)uh-l1：超高IO (时延优化)GPSSD2: 通用型SSD V2云硬盘ESSD2: 极速型SSD V2云硬盘当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。说明：对于HANA云服务器、HL1型云服务器、HL2型云服务器，需使用co-p1和uh-l1两种磁盘类型。对于其他类型的云服务器，不能使用co-p1和uh-l1两种磁盘类型。了解不同磁盘类型的详细信息，请参见[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
@@ -140,7 +140,7 @@ class DiskInfo:
 
     @property
     def disk_type(self):
-        """Gets the disk_type of this DiskInfo.
+        r"""Gets the disk_type of this DiskInfo.
 
         系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。 说明： 系统盘不支持加密。
 
@@ -151,7 +151,7 @@ class DiskInfo:
 
     @disk_type.setter
     def disk_type(self, disk_type):
-        """Sets the disk_type of this DiskInfo.
+        r"""Sets the disk_type of this DiskInfo.
 
         系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。 说明： 系统盘不支持加密。
 
@@ -162,7 +162,7 @@ class DiskInfo:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this DiskInfo.
+        r"""Gets the dedicated_storage_id of this DiskInfo.
 
         云服务器的磁盘可指定创建在用户的专属存储中，需要指定专属存储ID。说明：同一个伸缩配置中的磁盘需统一指定或统一不指定专属存储，不支持混用；当指定专属存储时，所有专属存储需要属于同一个可用分区，且每个磁盘选择的专属存储支持的磁盘类型都需要和参数volume_type保持一致。
 
@@ -173,7 +173,7 @@ class DiskInfo:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this DiskInfo.
+        r"""Sets the dedicated_storage_id of this DiskInfo.
 
         云服务器的磁盘可指定创建在用户的专属存储中，需要指定专属存储ID。说明：同一个伸缩配置中的磁盘需统一指定或统一不指定专属存储，不支持混用；当指定专属存储时，所有专属存储需要属于同一个可用分区，且每个磁盘选择的专属存储支持的磁盘类型都需要和参数volume_type保持一致。
 
@@ -184,7 +184,7 @@ class DiskInfo:
 
     @property
     def data_disk_image_id(self):
-        """Gets the data_disk_image_id of this DiskInfo.
+        r"""Gets the data_disk_image_id of this DiskInfo.
 
         云服务器的数据盘可指定从数据盘镜像导出，需要指定数据盘镜像ID。
 
@@ -195,7 +195,7 @@ class DiskInfo:
 
     @data_disk_image_id.setter
     def data_disk_image_id(self, data_disk_image_id):
-        """Sets the data_disk_image_id of this DiskInfo.
+        r"""Sets the data_disk_image_id of this DiskInfo.
 
         云服务器的数据盘可指定从数据盘镜像导出，需要指定数据盘镜像ID。
 
@@ -206,7 +206,7 @@ class DiskInfo:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this DiskInfo.
+        r"""Gets the snapshot_id of this DiskInfo.
 
         当选择使用整机镜像时，云服务器的系统盘及数据盘将通过整机备份恢复，需要指定磁盘备份的快照ID。说明：磁盘备份的快照ID可通过镜像的整机备份ID在CSBS查询备份详情获得；一个伸缩配置中的每一个disk需要通过snapshot_id和整机备份中的磁盘备份一一对应。
 
@@ -217,7 +217,7 @@ class DiskInfo:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this DiskInfo.
+        r"""Sets the snapshot_id of this DiskInfo.
 
         当选择使用整机镜像时，云服务器的系统盘及数据盘将通过整机备份恢复，需要指定磁盘备份的快照ID。说明：磁盘备份的快照ID可通过镜像的整机备份ID在CSBS查询备份详情获得；一个伸缩配置中的每一个disk需要通过snapshot_id和整机备份中的磁盘备份一一对应。
 
@@ -228,7 +228,7 @@ class DiskInfo:
 
     @property
     def metadata(self):
-        """Gets the metadata of this DiskInfo.
+        r"""Gets the metadata of this DiskInfo.
 
         :return: The metadata of this DiskInfo.
         :rtype: :class:`huaweicloudsdkas.v1.MetaData`
@@ -237,7 +237,7 @@ class DiskInfo:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DiskInfo.
+        r"""Sets the metadata of this DiskInfo.
 
         :param metadata: The metadata of this DiskInfo.
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
@@ -246,7 +246,7 @@ class DiskInfo:
 
     @property
     def iops(self):
-        """Gets the iops of this DiskInfo.
+        r"""Gets the iops of this DiskInfo.
 
         为云硬盘配置iops。当“volume_type”设置为GPSSD2、ESSD2类型的云硬盘时，该参数必填，其他类型无需设置。
 
@@ -257,7 +257,7 @@ class DiskInfo:
 
     @iops.setter
     def iops(self, iops):
-        """Sets the iops of this DiskInfo.
+        r"""Sets the iops of this DiskInfo.
 
         为云硬盘配置iops。当“volume_type”设置为GPSSD2、ESSD2类型的云硬盘时，该参数必填，其他类型无需设置。
 
@@ -268,7 +268,7 @@ class DiskInfo:
 
     @property
     def throughput(self):
-        """Gets the throughput of this DiskInfo.
+        r"""Gets the throughput of this DiskInfo.
 
         为云硬盘配置吞吐量，单位是MiB/s。当“volume_type”设置为GPSSD2类型的云硬盘时必填，其他类型不能设置。
 
@@ -279,7 +279,7 @@ class DiskInfo:
 
     @throughput.setter
     def throughput(self, throughput):
-        """Sets the throughput of this DiskInfo.
+        r"""Sets the throughput of this DiskInfo.
 
         为云硬盘配置吞吐量，单位是MiB/s。当“volume_type”设置为GPSSD2类型的云硬盘时必填，其他类型不能设置。
 

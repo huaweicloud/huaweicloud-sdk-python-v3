@@ -27,7 +27,7 @@ class CreatePeerLinkRequest:
     }
 
     def __init__(self, global_dc_gateway_id=None, body=None):
-        """CreatePeerLinkRequest
+        r"""CreatePeerLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePeerLinkRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this CreatePeerLinkRequest.
+        r"""Gets the global_dc_gateway_id of this CreatePeerLinkRequest.
 
         全域接入网关ID
 
@@ -60,7 +60,7 @@ class CreatePeerLinkRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this CreatePeerLinkRequest.
+        r"""Sets the global_dc_gateway_id of this CreatePeerLinkRequest.
 
         全域接入网关ID
 
@@ -71,7 +71,7 @@ class CreatePeerLinkRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePeerLinkRequest.
+        r"""Gets the body of this CreatePeerLinkRequest.
 
         :return: The body of this CreatePeerLinkRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBody`
@@ -80,7 +80,7 @@ class CreatePeerLinkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePeerLinkRequest.
+        r"""Sets the body of this CreatePeerLinkRequest.
 
         :param body: The body of this CreatePeerLinkRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBody`

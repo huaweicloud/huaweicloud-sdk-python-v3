@@ -43,7 +43,7 @@ class ShowCertificateResponseBodyApplicationInfo:
     }
 
     def __init__(self, country=None, company_name=None, company_province=None, company_city=None, applicant_name=None, applicant_phone=None, applicant_email=None, contact_name=None, contact_phone=None, contact_email=None):
-        """ShowCertificateResponseBodyApplicationInfo
+        r"""ShowCertificateResponseBodyApplicationInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def country(self):
-        """Gets the country of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the country of this ShowCertificateResponseBodyApplicationInfo.
 
         国家。
 
@@ -117,7 +117,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the country of this ShowCertificateResponseBodyApplicationInfo.
 
         国家。
 
@@ -128,7 +128,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def company_name(self):
-        """Gets the company_name of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the company_name of this ShowCertificateResponseBodyApplicationInfo.
 
         公司名称。
 
@@ -139,7 +139,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the company_name of this ShowCertificateResponseBodyApplicationInfo.
 
         公司名称。
 
@@ -150,7 +150,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def company_province(self):
-        """Gets the company_province of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the company_province of this ShowCertificateResponseBodyApplicationInfo.
 
         公司省份。
 
@@ -161,7 +161,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @company_province.setter
     def company_province(self, company_province):
-        """Sets the company_province of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the company_province of this ShowCertificateResponseBodyApplicationInfo.
 
         公司省份。
 
@@ -172,7 +172,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def company_city(self):
-        """Gets the company_city of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the company_city of this ShowCertificateResponseBodyApplicationInfo.
 
         公司所在城市。
 
@@ -183,7 +183,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @company_city.setter
     def company_city(self, company_city):
-        """Sets the company_city of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the company_city of this ShowCertificateResponseBodyApplicationInfo.
 
         公司所在城市。
 
@@ -194,7 +194,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def applicant_name(self):
-        """Gets the applicant_name of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the applicant_name of this ShowCertificateResponseBodyApplicationInfo.
 
         申请人名称。
 
@@ -205,7 +205,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @applicant_name.setter
     def applicant_name(self, applicant_name):
-        """Sets the applicant_name of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the applicant_name of this ShowCertificateResponseBodyApplicationInfo.
 
         申请人名称。
 
@@ -216,7 +216,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def applicant_phone(self):
-        """Gets the applicant_phone of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the applicant_phone of this ShowCertificateResponseBodyApplicationInfo.
 
         申请人电话。
 
@@ -227,7 +227,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @applicant_phone.setter
     def applicant_phone(self, applicant_phone):
-        """Sets the applicant_phone of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the applicant_phone of this ShowCertificateResponseBodyApplicationInfo.
 
         申请人电话。
 
@@ -238,7 +238,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def applicant_email(self):
-        """Gets the applicant_email of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the applicant_email of this ShowCertificateResponseBodyApplicationInfo.
 
         申请人邮箱。
 
@@ -249,7 +249,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @applicant_email.setter
     def applicant_email(self, applicant_email):
-        """Sets the applicant_email of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the applicant_email of this ShowCertificateResponseBodyApplicationInfo.
 
         申请人邮箱。
 
@@ -260,7 +260,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def contact_name(self):
-        """Gets the contact_name of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the contact_name of this ShowCertificateResponseBodyApplicationInfo.
 
         技术联系人名称。
 
@@ -271,7 +271,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @contact_name.setter
     def contact_name(self, contact_name):
-        """Sets the contact_name of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the contact_name of this ShowCertificateResponseBodyApplicationInfo.
 
         技术联系人名称。
 
@@ -282,7 +282,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def contact_phone(self):
-        """Gets the contact_phone of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the contact_phone of this ShowCertificateResponseBodyApplicationInfo.
 
         技术联系人电话。
 
@@ -293,7 +293,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @contact_phone.setter
     def contact_phone(self, contact_phone):
-        """Sets the contact_phone of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the contact_phone of this ShowCertificateResponseBodyApplicationInfo.
 
         技术联系人电话。
 
@@ -304,7 +304,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @property
     def contact_email(self):
-        """Gets the contact_email of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Gets the contact_email of this ShowCertificateResponseBodyApplicationInfo.
 
         技术联系人邮箱。
 
@@ -315,7 +315,7 @@ class ShowCertificateResponseBodyApplicationInfo:
 
     @contact_email.setter
     def contact_email(self, contact_email):
-        """Sets the contact_email of this ShowCertificateResponseBodyApplicationInfo.
+        r"""Sets the contact_email of this ShowCertificateResponseBodyApplicationInfo.
 
         技术联系人邮箱。
 

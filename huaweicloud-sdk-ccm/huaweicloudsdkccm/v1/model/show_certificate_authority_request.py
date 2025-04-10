@@ -25,7 +25,7 @@ class ShowCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None):
-        """ShowCertificateAuthorityRequest
+        r"""ShowCertificateAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCertificateAuthorityRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this ShowCertificateAuthorityRequest.
+        r"""Gets the ca_id of this ShowCertificateAuthorityRequest.
 
         CA证书ID。
 
@@ -53,7 +53,7 @@ class ShowCertificateAuthorityRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this ShowCertificateAuthorityRequest.
+        r"""Sets the ca_id of this ShowCertificateAuthorityRequest.
 
         CA证书ID。
 

@@ -37,7 +37,7 @@ class VideoMotionCaptureInfo:
     }
 
     def __init__(self, motion_capture_mode=None, input_info=None, output_info=None, job_id=None, state=None, start_time=None, end_time=None):
-        """VideoMotionCaptureInfo
+        r"""VideoMotionCaptureInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def motion_capture_mode(self):
-        """Gets the motion_capture_mode of this VideoMotionCaptureInfo.
+        r"""Gets the motion_capture_mode of this VideoMotionCaptureInfo.
 
         视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
@@ -96,7 +96,7 @@ class VideoMotionCaptureInfo:
 
     @motion_capture_mode.setter
     def motion_capture_mode(self, motion_capture_mode):
-        """Sets the motion_capture_mode of this VideoMotionCaptureInfo.
+        r"""Sets the motion_capture_mode of this VideoMotionCaptureInfo.
 
         视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
@@ -107,7 +107,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def input_info(self):
-        """Gets the input_info of this VideoMotionCaptureInfo.
+        r"""Gets the input_info of this VideoMotionCaptureInfo.
 
         :return: The input_info of this VideoMotionCaptureInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -116,7 +116,7 @@ class VideoMotionCaptureInfo:
 
     @input_info.setter
     def input_info(self, input_info):
-        """Sets the input_info of this VideoMotionCaptureInfo.
+        r"""Sets the input_info of this VideoMotionCaptureInfo.
 
         :param input_info: The input_info of this VideoMotionCaptureInfo.
         :type input_info: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -125,7 +125,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def output_info(self):
-        """Gets the output_info of this VideoMotionCaptureInfo.
+        r"""Gets the output_info of this VideoMotionCaptureInfo.
 
         :return: The output_info of this VideoMotionCaptureInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`
@@ -134,7 +134,7 @@ class VideoMotionCaptureInfo:
 
     @output_info.setter
     def output_info(self, output_info):
-        """Sets the output_info of this VideoMotionCaptureInfo.
+        r"""Sets the output_info of this VideoMotionCaptureInfo.
 
         :param output_info: The output_info of this VideoMotionCaptureInfo.
         :type output_info: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`
@@ -143,7 +143,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this VideoMotionCaptureInfo.
+        r"""Gets the job_id of this VideoMotionCaptureInfo.
 
         视频驱动任务ID。
 
@@ -154,7 +154,7 @@ class VideoMotionCaptureInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this VideoMotionCaptureInfo.
+        r"""Sets the job_id of this VideoMotionCaptureInfo.
 
         视频驱动任务ID。
 
@@ -165,7 +165,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def state(self):
-        """Gets the state of this VideoMotionCaptureInfo.
+        r"""Gets the state of this VideoMotionCaptureInfo.
 
         任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -176,7 +176,7 @@ class VideoMotionCaptureInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this VideoMotionCaptureInfo.
+        r"""Sets the state of this VideoMotionCaptureInfo.
 
         任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -187,7 +187,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this VideoMotionCaptureInfo.
+        r"""Gets the start_time of this VideoMotionCaptureInfo.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -198,7 +198,7 @@ class VideoMotionCaptureInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this VideoMotionCaptureInfo.
+        r"""Sets the start_time of this VideoMotionCaptureInfo.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -209,7 +209,7 @@ class VideoMotionCaptureInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this VideoMotionCaptureInfo.
+        r"""Gets the end_time of this VideoMotionCaptureInfo.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -220,7 +220,7 @@ class VideoMotionCaptureInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this VideoMotionCaptureInfo.
+        r"""Sets the end_time of this VideoMotionCaptureInfo.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 

@@ -27,7 +27,7 @@ class BaremetalServerTag:
     }
 
     def __init__(self, key=None, value=None):
-        """BaremetalServerTag
+        r"""BaremetalServerTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BaremetalServerTag:
 
     @property
     def key(self):
-        """Gets the key of this BaremetalServerTag.
+        r"""Gets the key of this BaremetalServerTag.
 
         键。  - 最大长度127个unicode字符。  - key不能为空。
 
@@ -60,7 +60,7 @@ class BaremetalServerTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BaremetalServerTag.
+        r"""Sets the key of this BaremetalServerTag.
 
         键。  - 最大长度127个unicode字符。  - key不能为空。
 
@@ -71,7 +71,7 @@ class BaremetalServerTag:
 
     @property
     def value(self):
-        """Gets the value of this BaremetalServerTag.
+        r"""Gets the value of this BaremetalServerTag.
 
         值列表。  - 最多20个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 
@@ -82,7 +82,7 @@ class BaremetalServerTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BaremetalServerTag.
+        r"""Sets the value of this BaremetalServerTag.
 
         值列表。  - 最多20个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 

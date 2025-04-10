@@ -41,7 +41,7 @@ class Frame:
     }
 
     def __init__(self, intention=None, confidence=None, current_slots=None, history_slots=None, reply=None, task_complete=None, flow_complete=None, candidate_words=None, intention_alias=None):
-        """Frame
+        r"""Frame
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class Frame:
 
     @property
     def intention(self):
-        """Gets the intention of this Frame.
+        r"""Gets the intention of this Frame.
 
         意图
 
@@ -102,7 +102,7 @@ class Frame:
 
     @intention.setter
     def intention(self, intention):
-        """Sets the intention of this Frame.
+        r"""Sets the intention of this Frame.
 
         意图
 
@@ -113,7 +113,7 @@ class Frame:
 
     @property
     def confidence(self):
-        """Gets the confidence of this Frame.
+        r"""Gets the confidence of this Frame.
 
         命中意图置信度。
 
@@ -124,7 +124,7 @@ class Frame:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this Frame.
+        r"""Sets the confidence of this Frame.
 
         命中意图置信度。
 
@@ -135,7 +135,7 @@ class Frame:
 
     @property
     def current_slots(self):
-        """Gets the current_slots of this Frame.
+        r"""Gets the current_slots of this Frame.
 
         当前槽位列表。
 
@@ -146,7 +146,7 @@ class Frame:
 
     @current_slots.setter
     def current_slots(self, current_slots):
-        """Sets the current_slots of this Frame.
+        r"""Sets the current_slots of this Frame.
 
         当前槽位列表。
 
@@ -157,7 +157,7 @@ class Frame:
 
     @property
     def history_slots(self):
-        """Gets the history_slots of this Frame.
+        r"""Gets the history_slots of this Frame.
 
         历史槽位列表。
 
@@ -168,7 +168,7 @@ class Frame:
 
     @history_slots.setter
     def history_slots(self, history_slots):
-        """Sets the history_slots of this Frame.
+        r"""Sets the history_slots of this Frame.
 
         历史槽位列表。
 
@@ -179,7 +179,7 @@ class Frame:
 
     @property
     def reply(self):
-        """Gets the reply of this Frame.
+        r"""Gets the reply of this Frame.
 
         机器人回复。
 
@@ -190,7 +190,7 @@ class Frame:
 
     @reply.setter
     def reply(self, reply):
-        """Sets the reply of this Frame.
+        r"""Sets the reply of this Frame.
 
         机器人回复。
 
@@ -201,7 +201,7 @@ class Frame:
 
     @property
     def task_complete(self):
-        """Gets the task_complete of this Frame.
+        r"""Gets the task_complete of this Frame.
 
         任务是否完成。
 
@@ -212,7 +212,7 @@ class Frame:
 
     @task_complete.setter
     def task_complete(self, task_complete):
-        """Sets the task_complete of this Frame.
+        r"""Sets the task_complete of this Frame.
 
         任务是否完成。
 
@@ -223,7 +223,7 @@ class Frame:
 
     @property
     def flow_complete(self):
-        """Gets the flow_complete of this Frame.
+        r"""Gets the flow_complete of this Frame.
 
         对话流程是否完成。
 
@@ -234,7 +234,7 @@ class Frame:
 
     @flow_complete.setter
     def flow_complete(self, flow_complete):
-        """Sets the flow_complete of this Frame.
+        r"""Sets the flow_complete of this Frame.
 
         对话流程是否完成。
 
@@ -245,7 +245,7 @@ class Frame:
 
     @property
     def candidate_words(self):
-        """Gets the candidate_words of this Frame.
+        r"""Gets the candidate_words of this Frame.
 
         候选词。
 
@@ -256,7 +256,7 @@ class Frame:
 
     @candidate_words.setter
     def candidate_words(self, candidate_words):
-        """Sets the candidate_words of this Frame.
+        r"""Sets the candidate_words of this Frame.
 
         候选词。
 
@@ -267,7 +267,7 @@ class Frame:
 
     @property
     def intention_alias(self):
-        """Gets the intention_alias of this Frame.
+        r"""Gets the intention_alias of this Frame.
 
         意图名称
 
@@ -278,7 +278,7 @@ class Frame:
 
     @intention_alias.setter
     def intention_alias(self, intention_alias):
-        """Sets the intention_alias of this Frame.
+        r"""Sets the intention_alias of this Frame.
 
         意图名称
 

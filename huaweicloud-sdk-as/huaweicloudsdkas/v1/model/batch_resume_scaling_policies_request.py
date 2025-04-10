@@ -25,7 +25,7 @@ class BatchResumeScalingPoliciesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchResumeScalingPoliciesRequest
+        r"""BatchResumeScalingPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchResumeScalingPoliciesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchResumeScalingPoliciesRequest.
+        r"""Gets the body of this BatchResumeScalingPoliciesRequest.
 
         :return: The body of this BatchResumeScalingPoliciesRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesOption`
@@ -52,7 +52,7 @@ class BatchResumeScalingPoliciesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchResumeScalingPoliciesRequest.
+        r"""Sets the body of this BatchResumeScalingPoliciesRequest.
 
         :param body: The body of this BatchResumeScalingPoliciesRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesOption`

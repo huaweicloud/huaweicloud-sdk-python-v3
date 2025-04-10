@@ -49,7 +49,7 @@ class VehicleLicenseback:
     }
 
     def __init__(self, number=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, energy_type=None, text_location=None):
-        """VehicleLicenseback
+        r"""VehicleLicenseback
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class VehicleLicenseback:
 
     @property
     def number(self):
-        """Gets the number of this VehicleLicenseback.
+        r"""Gets the number of this VehicleLicenseback.
 
         号牌号码。 
 
@@ -138,7 +138,7 @@ class VehicleLicenseback:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this VehicleLicenseback.
+        r"""Sets the number of this VehicleLicenseback.
 
         号牌号码。 
 
@@ -149,7 +149,7 @@ class VehicleLicenseback:
 
     @property
     def file_no(self):
-        """Gets the file_no of this VehicleLicenseback.
+        r"""Gets the file_no of this VehicleLicenseback.
 
         档案编码。 
 
@@ -160,7 +160,7 @@ class VehicleLicenseback:
 
     @file_no.setter
     def file_no(self, file_no):
-        """Sets the file_no of this VehicleLicenseback.
+        r"""Sets the file_no of this VehicleLicenseback.
 
         档案编码。 
 
@@ -171,7 +171,7 @@ class VehicleLicenseback:
 
     @property
     def approved_passengers(self):
-        """Gets the approved_passengers of this VehicleLicenseback.
+        r"""Gets the approved_passengers of this VehicleLicenseback.
 
         核定载人数。 
 
@@ -182,7 +182,7 @@ class VehicleLicenseback:
 
     @approved_passengers.setter
     def approved_passengers(self, approved_passengers):
-        """Sets the approved_passengers of this VehicleLicenseback.
+        r"""Sets the approved_passengers of this VehicleLicenseback.
 
         核定载人数。 
 
@@ -193,7 +193,7 @@ class VehicleLicenseback:
 
     @property
     def gross_mass(self):
-        """Gets the gross_mass of this VehicleLicenseback.
+        r"""Gets the gross_mass of this VehicleLicenseback.
 
         总质量。 
 
@@ -204,7 +204,7 @@ class VehicleLicenseback:
 
     @gross_mass.setter
     def gross_mass(self, gross_mass):
-        """Sets the gross_mass of this VehicleLicenseback.
+        r"""Sets the gross_mass of this VehicleLicenseback.
 
         总质量。 
 
@@ -215,7 +215,7 @@ class VehicleLicenseback:
 
     @property
     def unladen_mass(self):
-        """Gets the unladen_mass of this VehicleLicenseback.
+        r"""Gets the unladen_mass of this VehicleLicenseback.
 
         整备质量。 
 
@@ -226,7 +226,7 @@ class VehicleLicenseback:
 
     @unladen_mass.setter
     def unladen_mass(self, unladen_mass):
-        """Sets the unladen_mass of this VehicleLicenseback.
+        r"""Sets the unladen_mass of this VehicleLicenseback.
 
         整备质量。 
 
@@ -237,7 +237,7 @@ class VehicleLicenseback:
 
     @property
     def approved_load(self):
-        """Gets the approved_load of this VehicleLicenseback.
+        r"""Gets the approved_load of this VehicleLicenseback.
 
         核定载质量。 
 
@@ -248,7 +248,7 @@ class VehicleLicenseback:
 
     @approved_load.setter
     def approved_load(self, approved_load):
-        """Sets the approved_load of this VehicleLicenseback.
+        r"""Sets the approved_load of this VehicleLicenseback.
 
         核定载质量。 
 
@@ -259,7 +259,7 @@ class VehicleLicenseback:
 
     @property
     def dimension(self):
-        """Gets the dimension of this VehicleLicenseback.
+        r"""Gets the dimension of this VehicleLicenseback.
 
         外廓尺寸。 
 
@@ -270,7 +270,7 @@ class VehicleLicenseback:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this VehicleLicenseback.
+        r"""Sets the dimension of this VehicleLicenseback.
 
         外廓尺寸。 
 
@@ -281,7 +281,7 @@ class VehicleLicenseback:
 
     @property
     def traction_mass(self):
-        """Gets the traction_mass of this VehicleLicenseback.
+        r"""Gets the traction_mass of this VehicleLicenseback.
 
         准牵引总质量。 
 
@@ -292,7 +292,7 @@ class VehicleLicenseback:
 
     @traction_mass.setter
     def traction_mass(self, traction_mass):
-        """Sets the traction_mass of this VehicleLicenseback.
+        r"""Sets the traction_mass of this VehicleLicenseback.
 
         准牵引总质量。 
 
@@ -303,7 +303,7 @@ class VehicleLicenseback:
 
     @property
     def remarks(self):
-        """Gets the remarks of this VehicleLicenseback.
+        r"""Gets the remarks of this VehicleLicenseback.
 
         备注。 
 
@@ -314,7 +314,7 @@ class VehicleLicenseback:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this VehicleLicenseback.
+        r"""Sets the remarks of this VehicleLicenseback.
 
         备注。 
 
@@ -325,7 +325,7 @@ class VehicleLicenseback:
 
     @property
     def inspection_record(self):
-        """Gets the inspection_record of this VehicleLicenseback.
+        r"""Gets the inspection_record of this VehicleLicenseback.
 
         检验记录。 
 
@@ -336,7 +336,7 @@ class VehicleLicenseback:
 
     @inspection_record.setter
     def inspection_record(self, inspection_record):
-        """Sets the inspection_record of this VehicleLicenseback.
+        r"""Sets the inspection_record of this VehicleLicenseback.
 
         检验记录。 
 
@@ -347,7 +347,7 @@ class VehicleLicenseback:
 
     @property
     def code_number(self):
-        """Gets the code_number of this VehicleLicenseback.
+        r"""Gets the code_number of this VehicleLicenseback.
 
         条码号。           
 
@@ -358,7 +358,7 @@ class VehicleLicenseback:
 
     @code_number.setter
     def code_number(self, code_number):
-        """Sets the code_number of this VehicleLicenseback.
+        r"""Sets the code_number of this VehicleLicenseback.
 
         条码号。           
 
@@ -369,7 +369,7 @@ class VehicleLicenseback:
 
     @property
     def energy_type(self):
-        """Gets the energy_type of this VehicleLicenseback.
+        r"""Gets the energy_type of this VehicleLicenseback.
 
         能源类型。 
 
@@ -380,7 +380,7 @@ class VehicleLicenseback:
 
     @energy_type.setter
     def energy_type(self, energy_type):
-        """Sets the energy_type of this VehicleLicenseback.
+        r"""Sets the energy_type of this VehicleLicenseback.
 
         能源类型。 
 
@@ -391,7 +391,7 @@ class VehicleLicenseback:
 
     @property
     def text_location(self):
-        """Gets the text_location of this VehicleLicenseback.
+        r"""Gets the text_location of this VehicleLicenseback.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
 
@@ -402,7 +402,7 @@ class VehicleLicenseback:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this VehicleLicenseback.
+        r"""Sets the text_location of this VehicleLicenseback.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
 

@@ -49,7 +49,7 @@ class DatabaseDto:
     }
 
     def __init__(self, id=None, name=None, description=None, template_id=None, template_name=None, creator=None, create_time=None, update_time=None, data_count=None, source_project_name=None, source_project_id=None, source_id=None, is_prefab=None):
-        """DatabaseDto
+        r"""DatabaseDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class DatabaseDto:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseDto.
+        r"""Gets the id of this DatabaseDto.
 
         实例id
 
@@ -138,7 +138,7 @@ class DatabaseDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseDto.
+        r"""Sets the id of this DatabaseDto.
 
         实例id
 
@@ -149,7 +149,7 @@ class DatabaseDto:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseDto.
+        r"""Gets the name of this DatabaseDto.
 
         实例名称
 
@@ -160,7 +160,7 @@ class DatabaseDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseDto.
+        r"""Sets the name of this DatabaseDto.
 
         实例名称
 
@@ -171,7 +171,7 @@ class DatabaseDto:
 
     @property
     def description(self):
-        """Gets the description of this DatabaseDto.
+        r"""Gets the description of this DatabaseDto.
 
         描述
 
@@ -182,7 +182,7 @@ class DatabaseDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DatabaseDto.
+        r"""Sets the description of this DatabaseDto.
 
         描述
 
@@ -193,7 +193,7 @@ class DatabaseDto:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DatabaseDto.
+        r"""Gets the template_id of this DatabaseDto.
 
         模板id
 
@@ -204,7 +204,7 @@ class DatabaseDto:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DatabaseDto.
+        r"""Sets the template_id of this DatabaseDto.
 
         模板id
 
@@ -215,7 +215,7 @@ class DatabaseDto:
 
     @property
     def template_name(self):
-        """Gets the template_name of this DatabaseDto.
+        r"""Gets the template_name of this DatabaseDto.
 
         模板名称
 
@@ -226,7 +226,7 @@ class DatabaseDto:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this DatabaseDto.
+        r"""Sets the template_name of this DatabaseDto.
 
         模板名称
 
@@ -237,7 +237,7 @@ class DatabaseDto:
 
     @property
     def creator(self):
-        """Gets the creator of this DatabaseDto.
+        r"""Gets the creator of this DatabaseDto.
 
         创建者
 
@@ -248,7 +248,7 @@ class DatabaseDto:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this DatabaseDto.
+        r"""Sets the creator of this DatabaseDto.
 
         创建者
 
@@ -259,7 +259,7 @@ class DatabaseDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DatabaseDto.
+        r"""Gets the create_time of this DatabaseDto.
 
         创建时间
 
@@ -270,7 +270,7 @@ class DatabaseDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DatabaseDto.
+        r"""Sets the create_time of this DatabaseDto.
 
         创建时间
 
@@ -281,7 +281,7 @@ class DatabaseDto:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DatabaseDto.
+        r"""Gets the update_time of this DatabaseDto.
 
         更新时间
 
@@ -292,7 +292,7 @@ class DatabaseDto:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DatabaseDto.
+        r"""Sets the update_time of this DatabaseDto.
 
         更新时间
 
@@ -303,7 +303,7 @@ class DatabaseDto:
 
     @property
     def data_count(self):
-        """Gets the data_count of this DatabaseDto.
+        r"""Gets the data_count of this DatabaseDto.
 
         数据条目
 
@@ -314,7 +314,7 @@ class DatabaseDto:
 
     @data_count.setter
     def data_count(self, data_count):
-        """Sets the data_count of this DatabaseDto.
+        r"""Sets the data_count of this DatabaseDto.
 
         数据条目
 
@@ -325,7 +325,7 @@ class DatabaseDto:
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this DatabaseDto.
+        r"""Gets the source_project_name of this DatabaseDto.
 
         源项目名
 
@@ -336,7 +336,7 @@ class DatabaseDto:
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this DatabaseDto.
+        r"""Sets the source_project_name of this DatabaseDto.
 
         源项目名
 
@@ -347,7 +347,7 @@ class DatabaseDto:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this DatabaseDto.
+        r"""Gets the source_project_id of this DatabaseDto.
 
         源项目id
 
@@ -358,7 +358,7 @@ class DatabaseDto:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this DatabaseDto.
+        r"""Sets the source_project_id of this DatabaseDto.
 
         源项目id
 
@@ -369,7 +369,7 @@ class DatabaseDto:
 
     @property
     def source_id(self):
-        """Gets the source_id of this DatabaseDto.
+        r"""Gets the source_id of this DatabaseDto.
 
         源实例id
 
@@ -380,7 +380,7 @@ class DatabaseDto:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this DatabaseDto.
+        r"""Sets the source_id of this DatabaseDto.
 
         源实例id
 
@@ -391,7 +391,7 @@ class DatabaseDto:
 
     @property
     def is_prefab(self):
-        """Gets the is_prefab of this DatabaseDto.
+        r"""Gets the is_prefab of this DatabaseDto.
 
         是否为预置实例
 
@@ -402,7 +402,7 @@ class DatabaseDto:
 
     @is_prefab.setter
     def is_prefab(self, is_prefab):
-        """Sets the is_prefab of this DatabaseDto.
+        r"""Sets the is_prefab of this DatabaseDto.
 
         是否为预置实例
 

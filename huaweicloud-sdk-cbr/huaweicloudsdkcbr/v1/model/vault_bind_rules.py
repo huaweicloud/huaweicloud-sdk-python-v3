@@ -25,7 +25,7 @@ class VaultBindRules:
     }
 
     def __init__(self, tags=None):
-        """VaultBindRules
+        r"""VaultBindRules
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VaultBindRules:
 
     @property
     def tags(self):
-        """Gets the tags of this VaultBindRules.
+        r"""Gets the tags of this VaultBindRules.
 
         按tags过滤自动绑定的资源  最小长度：1  最大长度：5
 
@@ -54,7 +54,7 @@ class VaultBindRules:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VaultBindRules.
+        r"""Sets the tags of this VaultBindRules.
 
         按tags过滤自动绑定的资源  最小长度：1  最大长度：5
 

@@ -99,7 +99,7 @@ class TestReportVo:
     }
 
     def __init__(self, uri=None, name=None, creator=None, updator=None, version_uri=None, branch_uri=None, version_name=None, branch_name=None, test_conclusion=None, test_conclusion_details=None, defect_resolution_rate=None, defect_resolution_score=None, case_execution_rate=None, case_execution_score=None, case_pass_rate=None, case_pass_score=None, issue_pass_rate=None, issue_pass_score=None, issue_coverage_rate=None, issue_coverage_score=None, project_residual_defect_index=None, iterator_residual_defect_index=None, case_automation_details=None, case_validity_ratio=None, issue_details=None, case_details=None, defect_details_by_severity=None, defect_details_by_module=None, case_pass_rate_by_test_type=None, test_report_custom_report_detail=None, create_time=None, create_timestamp=None, creator_name=None, update_time=None, update_timestamp=None, updator_name=None, project_uuid=None, risk_analysis=None):
-        """TestReportVo
+        r"""TestReportVo
 
         The model defined in huaweicloud sdk
 
@@ -302,7 +302,7 @@ class TestReportVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestReportVo.
+        r"""Gets the uri of this TestReportVo.
 
         测试报告Uri
 
@@ -313,7 +313,7 @@ class TestReportVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestReportVo.
+        r"""Sets the uri of this TestReportVo.
 
         测试报告Uri
 
@@ -324,7 +324,7 @@ class TestReportVo:
 
     @property
     def name(self):
-        """Gets the name of this TestReportVo.
+        r"""Gets the name of this TestReportVo.
 
         测试报告名称
 
@@ -335,7 +335,7 @@ class TestReportVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestReportVo.
+        r"""Sets the name of this TestReportVo.
 
         测试报告名称
 
@@ -346,7 +346,7 @@ class TestReportVo:
 
     @property
     def creator(self):
-        """Gets the creator of this TestReportVo.
+        r"""Gets the creator of this TestReportVo.
 
         创建人ID
 
@@ -357,7 +357,7 @@ class TestReportVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TestReportVo.
+        r"""Sets the creator of this TestReportVo.
 
         创建人ID
 
@@ -368,7 +368,7 @@ class TestReportVo:
 
     @property
     def updator(self):
-        """Gets the updator of this TestReportVo.
+        r"""Gets the updator of this TestReportVo.
 
         修改人ID
 
@@ -379,7 +379,7 @@ class TestReportVo:
 
     @updator.setter
     def updator(self, updator):
-        """Sets the updator of this TestReportVo.
+        r"""Sets the updator of this TestReportVo.
 
         修改人ID
 
@@ -390,7 +390,7 @@ class TestReportVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestReportVo.
+        r"""Gets the version_uri of this TestReportVo.
 
         测试计划Uri
 
@@ -401,7 +401,7 @@ class TestReportVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestReportVo.
+        r"""Sets the version_uri of this TestReportVo.
 
         测试计划Uri
 
@@ -412,7 +412,7 @@ class TestReportVo:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this TestReportVo.
+        r"""Gets the branch_uri of this TestReportVo.
 
         分支Uri
 
@@ -423,7 +423,7 @@ class TestReportVo:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this TestReportVo.
+        r"""Sets the branch_uri of this TestReportVo.
 
         分支Uri
 
@@ -434,7 +434,7 @@ class TestReportVo:
 
     @property
     def version_name(self):
-        """Gets the version_name of this TestReportVo.
+        r"""Gets the version_name of this TestReportVo.
 
         测试计划名称
 
@@ -445,7 +445,7 @@ class TestReportVo:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this TestReportVo.
+        r"""Sets the version_name of this TestReportVo.
 
         测试计划名称
 
@@ -456,7 +456,7 @@ class TestReportVo:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this TestReportVo.
+        r"""Gets the branch_name of this TestReportVo.
 
         分支名称
 
@@ -467,7 +467,7 @@ class TestReportVo:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this TestReportVo.
+        r"""Sets the branch_name of this TestReportVo.
 
         分支名称
 
@@ -478,7 +478,7 @@ class TestReportVo:
 
     @property
     def test_conclusion(self):
-        """Gets the test_conclusion of this TestReportVo.
+        r"""Gets the test_conclusion of this TestReportVo.
 
         测试结论
 
@@ -489,7 +489,7 @@ class TestReportVo:
 
     @test_conclusion.setter
     def test_conclusion(self, test_conclusion):
-        """Sets the test_conclusion of this TestReportVo.
+        r"""Sets the test_conclusion of this TestReportVo.
 
         测试结论
 
@@ -500,7 +500,7 @@ class TestReportVo:
 
     @property
     def test_conclusion_details(self):
-        """Gets the test_conclusion_details of this TestReportVo.
+        r"""Gets the test_conclusion_details of this TestReportVo.
 
         测试结论描述
 
@@ -511,7 +511,7 @@ class TestReportVo:
 
     @test_conclusion_details.setter
     def test_conclusion_details(self, test_conclusion_details):
-        """Sets the test_conclusion_details of this TestReportVo.
+        r"""Sets the test_conclusion_details of this TestReportVo.
 
         测试结论描述
 
@@ -522,7 +522,7 @@ class TestReportVo:
 
     @property
     def defect_resolution_rate(self):
-        """Gets the defect_resolution_rate of this TestReportVo.
+        r"""Gets the defect_resolution_rate of this TestReportVo.
 
         缺陷解决率
 
@@ -533,7 +533,7 @@ class TestReportVo:
 
     @defect_resolution_rate.setter
     def defect_resolution_rate(self, defect_resolution_rate):
-        """Sets the defect_resolution_rate of this TestReportVo.
+        r"""Sets the defect_resolution_rate of this TestReportVo.
 
         缺陷解决率
 
@@ -544,7 +544,7 @@ class TestReportVo:
 
     @property
     def defect_resolution_score(self):
-        """Gets the defect_resolution_score of this TestReportVo.
+        r"""Gets the defect_resolution_score of this TestReportVo.
 
         缺陷解决分数
 
@@ -555,7 +555,7 @@ class TestReportVo:
 
     @defect_resolution_score.setter
     def defect_resolution_score(self, defect_resolution_score):
-        """Sets the defect_resolution_score of this TestReportVo.
+        r"""Sets the defect_resolution_score of this TestReportVo.
 
         缺陷解决分数
 
@@ -566,7 +566,7 @@ class TestReportVo:
 
     @property
     def case_execution_rate(self):
-        """Gets the case_execution_rate of this TestReportVo.
+        r"""Gets the case_execution_rate of this TestReportVo.
 
         用例执行率
 
@@ -577,7 +577,7 @@ class TestReportVo:
 
     @case_execution_rate.setter
     def case_execution_rate(self, case_execution_rate):
-        """Sets the case_execution_rate of this TestReportVo.
+        r"""Sets the case_execution_rate of this TestReportVo.
 
         用例执行率
 
@@ -588,7 +588,7 @@ class TestReportVo:
 
     @property
     def case_execution_score(self):
-        """Gets the case_execution_score of this TestReportVo.
+        r"""Gets the case_execution_score of this TestReportVo.
 
         用例执行分数
 
@@ -599,7 +599,7 @@ class TestReportVo:
 
     @case_execution_score.setter
     def case_execution_score(self, case_execution_score):
-        """Sets the case_execution_score of this TestReportVo.
+        r"""Sets the case_execution_score of this TestReportVo.
 
         用例执行分数
 
@@ -610,7 +610,7 @@ class TestReportVo:
 
     @property
     def case_pass_rate(self):
-        """Gets the case_pass_rate of this TestReportVo.
+        r"""Gets the case_pass_rate of this TestReportVo.
 
         用例通过率
 
@@ -621,7 +621,7 @@ class TestReportVo:
 
     @case_pass_rate.setter
     def case_pass_rate(self, case_pass_rate):
-        """Sets the case_pass_rate of this TestReportVo.
+        r"""Sets the case_pass_rate of this TestReportVo.
 
         用例通过率
 
@@ -632,7 +632,7 @@ class TestReportVo:
 
     @property
     def case_pass_score(self):
-        """Gets the case_pass_score of this TestReportVo.
+        r"""Gets the case_pass_score of this TestReportVo.
 
         用例通过分数
 
@@ -643,7 +643,7 @@ class TestReportVo:
 
     @case_pass_score.setter
     def case_pass_score(self, case_pass_score):
-        """Sets the case_pass_score of this TestReportVo.
+        r"""Sets the case_pass_score of this TestReportVo.
 
         用例通过分数
 
@@ -654,7 +654,7 @@ class TestReportVo:
 
     @property
     def issue_pass_rate(self):
-        """Gets the issue_pass_rate of this TestReportVo.
+        r"""Gets the issue_pass_rate of this TestReportVo.
 
         需求通过率
 
@@ -665,7 +665,7 @@ class TestReportVo:
 
     @issue_pass_rate.setter
     def issue_pass_rate(self, issue_pass_rate):
-        """Sets the issue_pass_rate of this TestReportVo.
+        r"""Sets the issue_pass_rate of this TestReportVo.
 
         需求通过率
 
@@ -676,7 +676,7 @@ class TestReportVo:
 
     @property
     def issue_pass_score(self):
-        """Gets the issue_pass_score of this TestReportVo.
+        r"""Gets the issue_pass_score of this TestReportVo.
 
         需求通过分数
 
@@ -687,7 +687,7 @@ class TestReportVo:
 
     @issue_pass_score.setter
     def issue_pass_score(self, issue_pass_score):
-        """Sets the issue_pass_score of this TestReportVo.
+        r"""Sets the issue_pass_score of this TestReportVo.
 
         需求通过分数
 
@@ -698,7 +698,7 @@ class TestReportVo:
 
     @property
     def issue_coverage_rate(self):
-        """Gets the issue_coverage_rate of this TestReportVo.
+        r"""Gets the issue_coverage_rate of this TestReportVo.
 
         需求覆盖率
 
@@ -709,7 +709,7 @@ class TestReportVo:
 
     @issue_coverage_rate.setter
     def issue_coverage_rate(self, issue_coverage_rate):
-        """Sets the issue_coverage_rate of this TestReportVo.
+        r"""Sets the issue_coverage_rate of this TestReportVo.
 
         需求覆盖率
 
@@ -720,7 +720,7 @@ class TestReportVo:
 
     @property
     def issue_coverage_score(self):
-        """Gets the issue_coverage_score of this TestReportVo.
+        r"""Gets the issue_coverage_score of this TestReportVo.
 
         需求覆盖分数
 
@@ -731,7 +731,7 @@ class TestReportVo:
 
     @issue_coverage_score.setter
     def issue_coverage_score(self, issue_coverage_score):
-        """Sets the issue_coverage_score of this TestReportVo.
+        r"""Sets the issue_coverage_score of this TestReportVo.
 
         需求覆盖分数
 
@@ -742,7 +742,7 @@ class TestReportVo:
 
     @property
     def project_residual_defect_index(self):
-        """Gets the project_residual_defect_index of this TestReportVo.
+        r"""Gets the project_residual_defect_index of this TestReportVo.
 
         项目总遗留DI
 
@@ -753,7 +753,7 @@ class TestReportVo:
 
     @project_residual_defect_index.setter
     def project_residual_defect_index(self, project_residual_defect_index):
-        """Sets the project_residual_defect_index of this TestReportVo.
+        r"""Sets the project_residual_defect_index of this TestReportVo.
 
         项目总遗留DI
 
@@ -764,7 +764,7 @@ class TestReportVo:
 
     @property
     def iterator_residual_defect_index(self):
-        """Gets the iterator_residual_defect_index of this TestReportVo.
+        r"""Gets the iterator_residual_defect_index of this TestReportVo.
 
         计划新增DI
 
@@ -775,7 +775,7 @@ class TestReportVo:
 
     @iterator_residual_defect_index.setter
     def iterator_residual_defect_index(self, iterator_residual_defect_index):
-        """Sets the iterator_residual_defect_index of this TestReportVo.
+        r"""Sets the iterator_residual_defect_index of this TestReportVo.
 
         计划新增DI
 
@@ -786,7 +786,7 @@ class TestReportVo:
 
     @property
     def case_automation_details(self):
-        """Gets the case_automation_details of this TestReportVo.
+        r"""Gets the case_automation_details of this TestReportVo.
 
         :return: The case_automation_details of this TestReportVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CaseAutomationDetailsVo`
@@ -795,7 +795,7 @@ class TestReportVo:
 
     @case_automation_details.setter
     def case_automation_details(self, case_automation_details):
-        """Sets the case_automation_details of this TestReportVo.
+        r"""Sets the case_automation_details of this TestReportVo.
 
         :param case_automation_details: The case_automation_details of this TestReportVo.
         :type case_automation_details: :class:`huaweicloudsdkcloudtest.v1.CaseAutomationDetailsVo`
@@ -804,7 +804,7 @@ class TestReportVo:
 
     @property
     def case_validity_ratio(self):
-        """Gets the case_validity_ratio of this TestReportVo.
+        r"""Gets the case_validity_ratio of this TestReportVo.
 
         用例有效性比例
 
@@ -815,7 +815,7 @@ class TestReportVo:
 
     @case_validity_ratio.setter
     def case_validity_ratio(self, case_validity_ratio):
-        """Sets the case_validity_ratio of this TestReportVo.
+        r"""Sets the case_validity_ratio of this TestReportVo.
 
         用例有效性比例
 
@@ -826,7 +826,7 @@ class TestReportVo:
 
     @property
     def issue_details(self):
-        """Gets the issue_details of this TestReportVo.
+        r"""Gets the issue_details of this TestReportVo.
 
         :return: The issue_details of this TestReportVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IssuePassDetailsVo`
@@ -835,7 +835,7 @@ class TestReportVo:
 
     @issue_details.setter
     def issue_details(self, issue_details):
-        """Sets the issue_details of this TestReportVo.
+        r"""Sets the issue_details of this TestReportVo.
 
         :param issue_details: The issue_details of this TestReportVo.
         :type issue_details: :class:`huaweicloudsdkcloudtest.v1.IssuePassDetailsVo`
@@ -844,7 +844,7 @@ class TestReportVo:
 
     @property
     def case_details(self):
-        """Gets the case_details of this TestReportVo.
+        r"""Gets the case_details of this TestReportVo.
 
         用例通过情况
 
@@ -855,7 +855,7 @@ class TestReportVo:
 
     @case_details.setter
     def case_details(self, case_details):
-        """Sets the case_details of this TestReportVo.
+        r"""Sets the case_details of this TestReportVo.
 
         用例通过情况
 
@@ -866,7 +866,7 @@ class TestReportVo:
 
     @property
     def defect_details_by_severity(self):
-        """Gets the defect_details_by_severity of this TestReportVo.
+        r"""Gets the defect_details_by_severity of this TestReportVo.
 
         缺陷严重程度
 
@@ -877,7 +877,7 @@ class TestReportVo:
 
     @defect_details_by_severity.setter
     def defect_details_by_severity(self, defect_details_by_severity):
-        """Sets the defect_details_by_severity of this TestReportVo.
+        r"""Sets the defect_details_by_severity of this TestReportVo.
 
         缺陷严重程度
 
@@ -888,7 +888,7 @@ class TestReportVo:
 
     @property
     def defect_details_by_module(self):
-        """Gets the defect_details_by_module of this TestReportVo.
+        r"""Gets the defect_details_by_module of this TestReportVo.
 
         缺陷按照模块分布情况
 
@@ -899,7 +899,7 @@ class TestReportVo:
 
     @defect_details_by_module.setter
     def defect_details_by_module(self, defect_details_by_module):
-        """Sets the defect_details_by_module of this TestReportVo.
+        r"""Sets the defect_details_by_module of this TestReportVo.
 
         缺陷按照模块分布情况
 
@@ -910,7 +910,7 @@ class TestReportVo:
 
     @property
     def case_pass_rate_by_test_type(self):
-        """Gets the case_pass_rate_by_test_type of this TestReportVo.
+        r"""Gets the case_pass_rate_by_test_type of this TestReportVo.
 
         每个测试类型的用例通过率
 
@@ -921,7 +921,7 @@ class TestReportVo:
 
     @case_pass_rate_by_test_type.setter
     def case_pass_rate_by_test_type(self, case_pass_rate_by_test_type):
-        """Sets the case_pass_rate_by_test_type of this TestReportVo.
+        r"""Sets the case_pass_rate_by_test_type of this TestReportVo.
 
         每个测试类型的用例通过率
 
@@ -932,7 +932,7 @@ class TestReportVo:
 
     @property
     def test_report_custom_report_detail(self):
-        """Gets the test_report_custom_report_detail of this TestReportVo.
+        r"""Gets the test_report_custom_report_detail of this TestReportVo.
 
         测试报告自定义报告详情
 
@@ -943,7 +943,7 @@ class TestReportVo:
 
     @test_report_custom_report_detail.setter
     def test_report_custom_report_detail(self, test_report_custom_report_detail):
-        """Sets the test_report_custom_report_detail of this TestReportVo.
+        r"""Sets the test_report_custom_report_detail of this TestReportVo.
 
         测试报告自定义报告详情
 
@@ -954,7 +954,7 @@ class TestReportVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TestReportVo.
+        r"""Gets the create_time of this TestReportVo.
 
         创建时间
 
@@ -965,7 +965,7 @@ class TestReportVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TestReportVo.
+        r"""Sets the create_time of this TestReportVo.
 
         创建时间
 
@@ -976,7 +976,7 @@ class TestReportVo:
 
     @property
     def create_timestamp(self):
-        """Gets the create_timestamp of this TestReportVo.
+        r"""Gets the create_timestamp of this TestReportVo.
 
         创建时间戳
 
@@ -987,7 +987,7 @@ class TestReportVo:
 
     @create_timestamp.setter
     def create_timestamp(self, create_timestamp):
-        """Sets the create_timestamp of this TestReportVo.
+        r"""Sets the create_timestamp of this TestReportVo.
 
         创建时间戳
 
@@ -998,7 +998,7 @@ class TestReportVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TestReportVo.
+        r"""Gets the creator_name of this TestReportVo.
 
         创建人名
 
@@ -1009,7 +1009,7 @@ class TestReportVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TestReportVo.
+        r"""Sets the creator_name of this TestReportVo.
 
         创建人名
 
@@ -1020,7 +1020,7 @@ class TestReportVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TestReportVo.
+        r"""Gets the update_time of this TestReportVo.
 
         修改时间
 
@@ -1031,7 +1031,7 @@ class TestReportVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TestReportVo.
+        r"""Sets the update_time of this TestReportVo.
 
         修改时间
 
@@ -1042,7 +1042,7 @@ class TestReportVo:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this TestReportVo.
+        r"""Gets the update_timestamp of this TestReportVo.
 
         修改时间戳
 
@@ -1053,7 +1053,7 @@ class TestReportVo:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this TestReportVo.
+        r"""Sets the update_timestamp of this TestReportVo.
 
         修改时间戳
 
@@ -1064,7 +1064,7 @@ class TestReportVo:
 
     @property
     def updator_name(self):
-        """Gets the updator_name of this TestReportVo.
+        r"""Gets the updator_name of this TestReportVo.
 
         修改人名
 
@@ -1075,7 +1075,7 @@ class TestReportVo:
 
     @updator_name.setter
     def updator_name(self, updator_name):
-        """Sets the updator_name of this TestReportVo.
+        r"""Sets the updator_name of this TestReportVo.
 
         修改人名
 
@@ -1086,7 +1086,7 @@ class TestReportVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestReportVo.
+        r"""Gets the project_uuid of this TestReportVo.
 
         项目ID
 
@@ -1097,7 +1097,7 @@ class TestReportVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestReportVo.
+        r"""Sets the project_uuid of this TestReportVo.
 
         项目ID
 
@@ -1108,7 +1108,7 @@ class TestReportVo:
 
     @property
     def risk_analysis(self):
-        """Gets the risk_analysis of this TestReportVo.
+        r"""Gets the risk_analysis of this TestReportVo.
 
         风险分析
 
@@ -1119,7 +1119,7 @@ class TestReportVo:
 
     @risk_analysis.setter
     def risk_analysis(self, risk_analysis):
-        """Sets the risk_analysis of this TestReportVo.
+        r"""Sets the risk_analysis of this TestReportVo.
 
         风险分析
 

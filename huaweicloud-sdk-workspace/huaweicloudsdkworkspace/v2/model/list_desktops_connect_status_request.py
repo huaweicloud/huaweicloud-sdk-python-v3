@@ -31,7 +31,7 @@ class ListDesktopsConnectStatusRequest:
     }
 
     def __init__(self, user_names=None, connect_status=None, offset=None, limit=None):
-        """ListDesktopsConnectStatusRequest
+        r"""ListDesktopsConnectStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListDesktopsConnectStatusRequest:
 
     @property
     def user_names(self):
-        """Gets the user_names of this ListDesktopsConnectStatusRequest.
+        r"""Gets the user_names of this ListDesktopsConnectStatusRequest.
 
         桌面所属用户，批量筛选，最多不超过100个用户。
 
@@ -75,7 +75,7 @@ class ListDesktopsConnectStatusRequest:
 
     @user_names.setter
     def user_names(self, user_names):
-        """Sets the user_names of this ListDesktopsConnectStatusRequest.
+        r"""Sets the user_names of this ListDesktopsConnectStatusRequest.
 
         桌面所属用户，批量筛选，最多不超过100个用户。
 
@@ -86,7 +86,7 @@ class ListDesktopsConnectStatusRequest:
 
     @property
     def connect_status(self):
-        """Gets the connect_status of this ListDesktopsConnectStatusRequest.
+        r"""Gets the connect_status of this ListDesktopsConnectStatusRequest.
 
         桌面的连接状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功连接，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -97,7 +97,7 @@ class ListDesktopsConnectStatusRequest:
 
     @connect_status.setter
     def connect_status(self, connect_status):
-        """Sets the connect_status of this ListDesktopsConnectStatusRequest.
+        r"""Sets the connect_status of this ListDesktopsConnectStatusRequest.
 
         桌面的连接状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功连接，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -108,7 +108,7 @@ class ListDesktopsConnectStatusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopsConnectStatusRequest.
+        r"""Gets the offset of this ListDesktopsConnectStatusRequest.
 
         从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
 
@@ -119,7 +119,7 @@ class ListDesktopsConnectStatusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopsConnectStatusRequest.
+        r"""Sets the offset of this ListDesktopsConnectStatusRequest.
 
         从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2000，默认从0开始。
 
@@ -130,7 +130,7 @@ class ListDesktopsConnectStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopsConnectStatusRequest.
+        r"""Gets the limit of this ListDesktopsConnectStatusRequest.
 
         查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-2000，默认值100。
 
@@ -141,7 +141,7 @@ class ListDesktopsConnectStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopsConnectStatusRequest.
+        r"""Sets the limit of this ListDesktopsConnectStatusRequest.
 
         查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-2000，默认值100。
 

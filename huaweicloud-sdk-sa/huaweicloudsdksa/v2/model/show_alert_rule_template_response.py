@@ -50,7 +50,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, update_time=None, template_name=None, data_source=None, version=None, query=None, query_type=None, severity=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None, x_request_id=None):
-        """ShowAlertRuleTemplateResponse
+        r"""ShowAlertRuleTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowAlertRuleTemplateResponse.
+        r"""Gets the template_id of this ShowAlertRuleTemplateResponse.
 
         template_id
 
@@ -139,7 +139,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowAlertRuleTemplateResponse.
+        r"""Sets the template_id of this ShowAlertRuleTemplateResponse.
 
         template_id
 
@@ -150,7 +150,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAlertRuleTemplateResponse.
+        r"""Gets the update_time of this ShowAlertRuleTemplateResponse.
 
         update_time
 
@@ -161,7 +161,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAlertRuleTemplateResponse.
+        r"""Sets the update_time of this ShowAlertRuleTemplateResponse.
 
         update_time
 
@@ -172,7 +172,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowAlertRuleTemplateResponse.
+        r"""Gets the template_name of this ShowAlertRuleTemplateResponse.
 
         template_name
 
@@ -183,7 +183,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowAlertRuleTemplateResponse.
+        r"""Sets the template_name of this ShowAlertRuleTemplateResponse.
 
         template_name
 
@@ -194,7 +194,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def data_source(self):
-        """Gets the data_source of this ShowAlertRuleTemplateResponse.
+        r"""Gets the data_source of this ShowAlertRuleTemplateResponse.
 
         data_source
 
@@ -205,7 +205,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this ShowAlertRuleTemplateResponse.
+        r"""Sets the data_source of this ShowAlertRuleTemplateResponse.
 
         data_source
 
@@ -216,7 +216,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowAlertRuleTemplateResponse.
+        r"""Gets the version of this ShowAlertRuleTemplateResponse.
 
         version
 
@@ -227,7 +227,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAlertRuleTemplateResponse.
+        r"""Sets the version of this ShowAlertRuleTemplateResponse.
 
         version
 
@@ -238,7 +238,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def query(self):
-        """Gets the query of this ShowAlertRuleTemplateResponse.
+        r"""Gets the query of this ShowAlertRuleTemplateResponse.
 
         query
 
@@ -249,7 +249,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ShowAlertRuleTemplateResponse.
+        r"""Sets the query of this ShowAlertRuleTemplateResponse.
 
         query
 
@@ -260,7 +260,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def query_type(self):
-        """Gets the query_type of this ShowAlertRuleTemplateResponse.
+        r"""Gets the query_type of this ShowAlertRuleTemplateResponse.
 
         query_type. SQL, CBSL.
 
@@ -271,7 +271,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ShowAlertRuleTemplateResponse.
+        r"""Sets the query_type of this ShowAlertRuleTemplateResponse.
 
         query_type. SQL, CBSL.
 
@@ -282,7 +282,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this ShowAlertRuleTemplateResponse.
+        r"""Gets the severity of this ShowAlertRuleTemplateResponse.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -293,7 +293,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ShowAlertRuleTemplateResponse.
+        r"""Sets the severity of this ShowAlertRuleTemplateResponse.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -304,7 +304,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this ShowAlertRuleTemplateResponse.
+        r"""Gets the custom_properties of this ShowAlertRuleTemplateResponse.
 
         custom_properties
 
@@ -315,7 +315,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this ShowAlertRuleTemplateResponse.
+        r"""Sets the custom_properties of this ShowAlertRuleTemplateResponse.
 
         custom_properties
 
@@ -326,7 +326,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this ShowAlertRuleTemplateResponse.
+        r"""Gets the event_grouping of this ShowAlertRuleTemplateResponse.
 
         event_grouping
 
@@ -337,7 +337,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this ShowAlertRuleTemplateResponse.
+        r"""Sets the event_grouping of this ShowAlertRuleTemplateResponse.
 
         event_grouping
 
@@ -348,7 +348,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def schedule(self):
-        """Gets the schedule of this ShowAlertRuleTemplateResponse.
+        r"""Gets the schedule of this ShowAlertRuleTemplateResponse.
 
         :return: The schedule of this ShowAlertRuleTemplateResponse.
         :rtype: :class:`huaweicloudsdksa.v2.Schedule`
@@ -357,7 +357,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this ShowAlertRuleTemplateResponse.
+        r"""Sets the schedule of this ShowAlertRuleTemplateResponse.
 
         :param schedule: The schedule of this ShowAlertRuleTemplateResponse.
         :type schedule: :class:`huaweicloudsdksa.v2.Schedule`
@@ -366,7 +366,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def triggers(self):
-        """Gets the triggers of this ShowAlertRuleTemplateResponse.
+        r"""Gets the triggers of this ShowAlertRuleTemplateResponse.
 
         triggers
 
@@ -377,7 +377,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ShowAlertRuleTemplateResponse.
+        r"""Sets the triggers of this ShowAlertRuleTemplateResponse.
 
         triggers
 
@@ -388,7 +388,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAlertRuleTemplateResponse.
+        r"""Gets the x_request_id of this ShowAlertRuleTemplateResponse.
 
         :return: The x_request_id of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAlertRuleTemplateResponse.
+        r"""Sets the x_request_id of this ShowAlertRuleTemplateResponse.
 
         :param x_request_id: The x_request_id of this ShowAlertRuleTemplateResponse.
         :type x_request_id: str

@@ -43,7 +43,7 @@ class CreateVifPeer:
     }
 
     def __init__(self, name=None, description=None, address_family=None, local_gateway_ip=None, remote_gateway_ip=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, vif_id=None):
-        """CreateVifPeer
+        r"""CreateVifPeer
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CreateVifPeer:
 
     @property
     def name(self):
-        """Gets the name of this CreateVifPeer.
+        r"""Gets the name of this CreateVifPeer.
 
         VIF对等体名字
 
@@ -117,7 +117,7 @@ class CreateVifPeer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVifPeer.
+        r"""Sets the name of this CreateVifPeer.
 
         VIF对等体名字
 
@@ -128,7 +128,7 @@ class CreateVifPeer:
 
     @property
     def description(self):
-        """Gets the description of this CreateVifPeer.
+        r"""Gets the description of this CreateVifPeer.
 
         VIF对等体名字描述信息
 
@@ -139,7 +139,7 @@ class CreateVifPeer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVifPeer.
+        r"""Sets the description of this CreateVifPeer.
 
         VIF对等体名字描述信息
 
@@ -150,7 +150,7 @@ class CreateVifPeer:
 
     @property
     def address_family(self):
-        """Gets the address_family of this CreateVifPeer.
+        r"""Gets the address_family of this CreateVifPeer.
 
         接口的地址簇类型，ipv4，ipv6
 
@@ -161,7 +161,7 @@ class CreateVifPeer:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this CreateVifPeer.
+        r"""Sets the address_family of this CreateVifPeer.
 
         接口的地址簇类型，ipv4，ipv6
 
@@ -172,7 +172,7 @@ class CreateVifPeer:
 
     @property
     def local_gateway_ip(self):
-        """Gets the local_gateway_ip of this CreateVifPeer.
+        r"""Gets the local_gateway_ip of this CreateVifPeer.
 
         VIF对等体云侧接口地址
 
@@ -183,7 +183,7 @@ class CreateVifPeer:
 
     @local_gateway_ip.setter
     def local_gateway_ip(self, local_gateway_ip):
-        """Sets the local_gateway_ip of this CreateVifPeer.
+        r"""Sets the local_gateway_ip of this CreateVifPeer.
 
         VIF对等体云侧接口地址
 
@@ -194,7 +194,7 @@ class CreateVifPeer:
 
     @property
     def remote_gateway_ip(self):
-        """Gets the remote_gateway_ip of this CreateVifPeer.
+        r"""Gets the remote_gateway_ip of this CreateVifPeer.
 
         VIF对等体客户侧接口地址
 
@@ -205,7 +205,7 @@ class CreateVifPeer:
 
     @remote_gateway_ip.setter
     def remote_gateway_ip(self, remote_gateway_ip):
-        """Sets the remote_gateway_ip of this CreateVifPeer.
+        r"""Sets the remote_gateway_ip of this CreateVifPeer.
 
         VIF对等体客户侧接口地址
 
@@ -216,7 +216,7 @@ class CreateVifPeer:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this CreateVifPeer.
+        r"""Gets the route_mode of this CreateVifPeer.
 
         路由模式：static/bgp
 
@@ -227,7 +227,7 @@ class CreateVifPeer:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this CreateVifPeer.
+        r"""Sets the route_mode of this CreateVifPeer.
 
         路由模式：static/bgp
 
@@ -238,7 +238,7 @@ class CreateVifPeer:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateVifPeer.
+        r"""Gets the bgp_asn of this CreateVifPeer.
 
         BGP邻居的AS号
 
@@ -249,7 +249,7 @@ class CreateVifPeer:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateVifPeer.
+        r"""Sets the bgp_asn of this CreateVifPeer.
 
         BGP邻居的AS号
 
@@ -260,7 +260,7 @@ class CreateVifPeer:
 
     @property
     def bgp_md5(self):
-        """Gets the bgp_md5 of this CreateVifPeer.
+        r"""Gets the bgp_md5 of this CreateVifPeer.
 
         BGP邻居的MD5密码
 
@@ -271,7 +271,7 @@ class CreateVifPeer:
 
     @bgp_md5.setter
     def bgp_md5(self, bgp_md5):
-        """Sets the bgp_md5 of this CreateVifPeer.
+        r"""Sets the bgp_md5 of this CreateVifPeer.
 
         BGP邻居的MD5密码
 
@@ -282,7 +282,7 @@ class CreateVifPeer:
 
     @property
     def remote_ep_group(self):
-        """Gets the remote_ep_group of this CreateVifPeer.
+        r"""Gets the remote_ep_group of this CreateVifPeer.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -293,7 +293,7 @@ class CreateVifPeer:
 
     @remote_ep_group.setter
     def remote_ep_group(self, remote_ep_group):
-        """Sets the remote_ep_group of this CreateVifPeer.
+        r"""Sets the remote_ep_group of this CreateVifPeer.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -304,7 +304,7 @@ class CreateVifPeer:
 
     @property
     def vif_id(self):
-        """Gets the vif_id of this CreateVifPeer.
+        r"""Gets the vif_id of this CreateVifPeer.
 
         vif对等体对应的虚拟接口ID
 
@@ -315,7 +315,7 @@ class CreateVifPeer:
 
     @vif_id.setter
     def vif_id(self, vif_id):
-        """Sets the vif_id of this CreateVifPeer.
+        r"""Sets the vif_id of this CreateVifPeer.
 
         vif对等体对应的虚拟接口ID
 

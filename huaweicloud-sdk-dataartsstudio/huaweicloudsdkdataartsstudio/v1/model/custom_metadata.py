@@ -29,7 +29,7 @@ class CustomMetadata:
     }
 
     def __init__(self, description=None, type=None, task_id=None):
-        """CustomMetadata
+        r"""CustomMetadata
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CustomMetadata:
 
     @property
     def description(self):
-        """Gets the description of this CustomMetadata.
+        r"""Gets the description of this CustomMetadata.
 
         描述
 
@@ -68,7 +68,7 @@ class CustomMetadata:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomMetadata.
+        r"""Sets the description of this CustomMetadata.
 
         描述
 
@@ -79,7 +79,7 @@ class CustomMetadata:
 
     @property
     def type(self):
-        """Gets the type of this CustomMetadata.
+        r"""Gets the type of this CustomMetadata.
 
         类型
 
@@ -90,7 +90,7 @@ class CustomMetadata:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomMetadata.
+        r"""Sets the type of this CustomMetadata.
 
         类型
 
@@ -101,7 +101,7 @@ class CustomMetadata:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CustomMetadata.
+        r"""Gets the task_id of this CustomMetadata.
 
         任务id
 
@@ -112,7 +112,7 @@ class CustomMetadata:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CustomMetadata.
+        r"""Sets the task_id of this CustomMetadata.
 
         任务id
 

@@ -27,7 +27,7 @@ class TrafficData:
     }
 
     def __init__(self, value=None, time=None):
-        """TrafficData
+        r"""TrafficData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TrafficData:
 
     @property
     def value(self):
-        """Gets the value of this TrafficData.
+        r"""Gets the value of this TrafficData.
 
         采样值，单位为byte。
 
@@ -61,7 +61,7 @@ class TrafficData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TrafficData.
+        r"""Sets the value of this TrafficData.
 
         采样值，单位为byte。
 
@@ -72,7 +72,7 @@ class TrafficData:
 
     @property
     def time(self):
-        """Gets the time of this TrafficData.
+        r"""Gets the time of this TrafficData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -83,7 +83,7 @@ class TrafficData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TrafficData.
+        r"""Sets the time of this TrafficData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 

@@ -30,7 +30,7 @@ class ListRepoMembersResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListRepoMembersResponse
+        r"""ListRepoMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRepoMembersResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListRepoMembersResponse.
+        r"""Gets the error of this ListRepoMembersResponse.
 
         :return: The error of this ListRepoMembersResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListRepoMembersResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListRepoMembersResponse.
+        r"""Sets the error of this ListRepoMembersResponse.
 
         :param error: The error of this ListRepoMembersResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListRepoMembersResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListRepoMembersResponse.
+        r"""Gets the result of this ListRepoMembersResponse.
 
         :return: The result of this ListRepoMembersResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`
@@ -85,7 +85,7 @@ class ListRepoMembersResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListRepoMembersResponse.
+        r"""Sets the result of this ListRepoMembersResponse.
 
         :param result: The result of this ListRepoMembersResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`
@@ -94,7 +94,7 @@ class ListRepoMembersResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListRepoMembersResponse.
+        r"""Gets the status of this ListRepoMembersResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListRepoMembersResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRepoMembersResponse.
+        r"""Sets the status of this ListRepoMembersResponse.
 
         响应状态
 

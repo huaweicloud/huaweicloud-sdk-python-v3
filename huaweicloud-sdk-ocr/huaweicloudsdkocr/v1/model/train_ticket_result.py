@@ -97,7 +97,7 @@ class TrainTicketResult:
     }
 
     def __init__(self, ticket_id=None, check_port=None, train_number=None, departure_station=None, destination_station=None, departure_station_en=None, destination_station_en=None, departure_time=None, seat_number=None, ticket_price=None, sale_method=None, seat_category=None, ticket_changing=None, id_number=None, name=None, log_id=None, sale_location=None, invoice_style=None, issue_date=None, discount_mark=None, serial_number=None, tax_amount=None, tax_rate=None, air_conditioning=None, original_invoice_number=None, unified_social_credit_code=None, buyer_name=None, total_amount_excluding_tax=None, invoice_number=None, seal_mark=None, title=None, area=None, receipt_number=None, amount_in_figures=None, amount_in_words=None, confidence=None, text_location=None):
-        """TrainTicketResult
+        r"""TrainTicketResult
 
         The model defined in huaweicloud sdk
 
@@ -295,7 +295,7 @@ class TrainTicketResult:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this TrainTicketResult.
+        r"""Gets the ticket_id of this TrainTicketResult.
 
         火车票左上角的车票ID。 
 
@@ -306,7 +306,7 @@ class TrainTicketResult:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this TrainTicketResult.
+        r"""Sets the ticket_id of this TrainTicketResult.
 
         火车票左上角的车票ID。 
 
@@ -317,7 +317,7 @@ class TrainTicketResult:
 
     @property
     def check_port(self):
-        """Gets the check_port of this TrainTicketResult.
+        r"""Gets the check_port of this TrainTicketResult.
 
         检票口信息。 
 
@@ -328,7 +328,7 @@ class TrainTicketResult:
 
     @check_port.setter
     def check_port(self, check_port):
-        """Sets the check_port of this TrainTicketResult.
+        r"""Sets the check_port of this TrainTicketResult.
 
         检票口信息。 
 
@@ -339,7 +339,7 @@ class TrainTicketResult:
 
     @property
     def train_number(self):
-        """Gets the train_number of this TrainTicketResult.
+        r"""Gets the train_number of this TrainTicketResult.
 
         车次。 
 
@@ -350,7 +350,7 @@ class TrainTicketResult:
 
     @train_number.setter
     def train_number(self, train_number):
-        """Sets the train_number of this TrainTicketResult.
+        r"""Sets the train_number of this TrainTicketResult.
 
         车次。 
 
@@ -361,7 +361,7 @@ class TrainTicketResult:
 
     @property
     def departure_station(self):
-        """Gets the departure_station of this TrainTicketResult.
+        r"""Gets the departure_station of this TrainTicketResult.
 
         始发站。 
 
@@ -372,7 +372,7 @@ class TrainTicketResult:
 
     @departure_station.setter
     def departure_station(self, departure_station):
-        """Sets the departure_station of this TrainTicketResult.
+        r"""Sets the departure_station of this TrainTicketResult.
 
         始发站。 
 
@@ -383,7 +383,7 @@ class TrainTicketResult:
 
     @property
     def destination_station(self):
-        """Gets the destination_station of this TrainTicketResult.
+        r"""Gets the destination_station of this TrainTicketResult.
 
         终点站。 
 
@@ -394,7 +394,7 @@ class TrainTicketResult:
 
     @destination_station.setter
     def destination_station(self, destination_station):
-        """Sets the destination_station of this TrainTicketResult.
+        r"""Sets the destination_station of this TrainTicketResult.
 
         终点站。 
 
@@ -405,7 +405,7 @@ class TrainTicketResult:
 
     @property
     def departure_station_en(self):
-        """Gets the departure_station_en of this TrainTicketResult.
+        r"""Gets the departure_station_en of this TrainTicketResult.
 
         始发站拼音。 
 
@@ -416,7 +416,7 @@ class TrainTicketResult:
 
     @departure_station_en.setter
     def departure_station_en(self, departure_station_en):
-        """Sets the departure_station_en of this TrainTicketResult.
+        r"""Sets the departure_station_en of this TrainTicketResult.
 
         始发站拼音。 
 
@@ -427,7 +427,7 @@ class TrainTicketResult:
 
     @property
     def destination_station_en(self):
-        """Gets the destination_station_en of this TrainTicketResult.
+        r"""Gets the destination_station_en of this TrainTicketResult.
 
         终点站拼音。 
 
@@ -438,7 +438,7 @@ class TrainTicketResult:
 
     @destination_station_en.setter
     def destination_station_en(self, destination_station_en):
-        """Sets the destination_station_en of this TrainTicketResult.
+        r"""Sets the destination_station_en of this TrainTicketResult.
 
         终点站拼音。 
 
@@ -449,7 +449,7 @@ class TrainTicketResult:
 
     @property
     def departure_time(self):
-        """Gets the departure_time of this TrainTicketResult.
+        r"""Gets the departure_time of this TrainTicketResult.
 
         开车时间。 
 
@@ -460,7 +460,7 @@ class TrainTicketResult:
 
     @departure_time.setter
     def departure_time(self, departure_time):
-        """Sets the departure_time of this TrainTicketResult.
+        r"""Sets the departure_time of this TrainTicketResult.
 
         开车时间。 
 
@@ -471,7 +471,7 @@ class TrainTicketResult:
 
     @property
     def seat_number(self):
-        """Gets the seat_number of this TrainTicketResult.
+        r"""Gets the seat_number of this TrainTicketResult.
 
         座位号。 
 
@@ -482,7 +482,7 @@ class TrainTicketResult:
 
     @seat_number.setter
     def seat_number(self, seat_number):
-        """Sets the seat_number of this TrainTicketResult.
+        r"""Sets the seat_number of this TrainTicketResult.
 
         座位号。 
 
@@ -493,7 +493,7 @@ class TrainTicketResult:
 
     @property
     def ticket_price(self):
-        """Gets the ticket_price of this TrainTicketResult.
+        r"""Gets the ticket_price of this TrainTicketResult.
 
         票价，当为退票凭证时，表示退票费。 
 
@@ -504,7 +504,7 @@ class TrainTicketResult:
 
     @ticket_price.setter
     def ticket_price(self, ticket_price):
-        """Sets the ticket_price of this TrainTicketResult.
+        r"""Sets the ticket_price of this TrainTicketResult.
 
         票价，当为退票凭证时，表示退票费。 
 
@@ -515,7 +515,7 @@ class TrainTicketResult:
 
     @property
     def sale_method(self):
-        """Gets the sale_method of this TrainTicketResult.
+        r"""Gets the sale_method of this TrainTicketResult.
 
         售票方式。 
 
@@ -526,7 +526,7 @@ class TrainTicketResult:
 
     @sale_method.setter
     def sale_method(self, sale_method):
-        """Sets the sale_method of this TrainTicketResult.
+        r"""Sets the sale_method of this TrainTicketResult.
 
         售票方式。 
 
@@ -537,7 +537,7 @@ class TrainTicketResult:
 
     @property
     def seat_category(self):
-        """Gets the seat_category of this TrainTicketResult.
+        r"""Gets the seat_category of this TrainTicketResult.
 
         座位类别。 
 
@@ -548,7 +548,7 @@ class TrainTicketResult:
 
     @seat_category.setter
     def seat_category(self, seat_category):
-        """Sets the seat_category of this TrainTicketResult.
+        r"""Sets the seat_category of this TrainTicketResult.
 
         座位类别。 
 
@@ -559,7 +559,7 @@ class TrainTicketResult:
 
     @property
     def ticket_changing(self):
-        """Gets the ticket_changing of this TrainTicketResult.
+        r"""Gets the ticket_changing of this TrainTicketResult.
 
         标识信息，包含始发改签、退票、差额退票等。 
 
@@ -570,7 +570,7 @@ class TrainTicketResult:
 
     @ticket_changing.setter
     def ticket_changing(self, ticket_changing):
-        """Sets the ticket_changing of this TrainTicketResult.
+        r"""Sets the ticket_changing of this TrainTicketResult.
 
         标识信息，包含始发改签、退票、差额退票等。 
 
@@ -581,7 +581,7 @@ class TrainTicketResult:
 
     @property
     def id_number(self):
-        """Gets the id_number of this TrainTicketResult.
+        r"""Gets the id_number of this TrainTicketResult.
 
         车票持有人的身份证号。 
 
@@ -592,7 +592,7 @@ class TrainTicketResult:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this TrainTicketResult.
+        r"""Sets the id_number of this TrainTicketResult.
 
         车票持有人的身份证号。 
 
@@ -603,7 +603,7 @@ class TrainTicketResult:
 
     @property
     def name(self):
-        """Gets the name of this TrainTicketResult.
+        r"""Gets the name of this TrainTicketResult.
 
         车票持有人姓名。 
 
@@ -614,7 +614,7 @@ class TrainTicketResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TrainTicketResult.
+        r"""Sets the name of this TrainTicketResult.
 
         车票持有人姓名。 
 
@@ -625,7 +625,7 @@ class TrainTicketResult:
 
     @property
     def log_id(self):
-        """Gets the log_id of this TrainTicketResult.
+        r"""Gets the log_id of this TrainTicketResult.
 
         车票最下方的序列号。 
 
@@ -636,7 +636,7 @@ class TrainTicketResult:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this TrainTicketResult.
+        r"""Sets the log_id of this TrainTicketResult.
 
         车票最下方的序列号。 
 
@@ -647,7 +647,7 @@ class TrainTicketResult:
 
     @property
     def sale_location(self):
-        """Gets the sale_location of this TrainTicketResult.
+        r"""Gets the sale_location of this TrainTicketResult.
 
         车票售票地点。 
 
@@ -658,7 +658,7 @@ class TrainTicketResult:
 
     @sale_location.setter
     def sale_location(self, sale_location):
-        """Sets the sale_location of this TrainTicketResult.
+        r"""Sets the sale_location of this TrainTicketResult.
 
         车票售票地点。 
 
@@ -669,7 +669,7 @@ class TrainTicketResult:
 
     @property
     def invoice_style(self):
-        """Gets the invoice_style of this TrainTicketResult.
+        r"""Gets the invoice_style of this TrainTicketResult.
 
         类型。包含以下几种类型： - paper：纸质火车票 - electronic：铁路电子客票 - refund_old：退票费报销凭证 - refund_new：纸质火车票退票凭证  - refund_electronic：铁路电子客票退票凭证 
 
@@ -680,7 +680,7 @@ class TrainTicketResult:
 
     @invoice_style.setter
     def invoice_style(self, invoice_style):
-        """Sets the invoice_style of this TrainTicketResult.
+        r"""Sets the invoice_style of this TrainTicketResult.
 
         类型。包含以下几种类型： - paper：纸质火车票 - electronic：铁路电子客票 - refund_old：退票费报销凭证 - refund_new：纸质火车票退票凭证  - refund_electronic：铁路电子客票退票凭证 
 
@@ -691,7 +691,7 @@ class TrainTicketResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this TrainTicketResult.
+        r"""Gets the issue_date of this TrainTicketResult.
 
         开票时间 
 
@@ -702,7 +702,7 @@ class TrainTicketResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this TrainTicketResult.
+        r"""Sets the issue_date of this TrainTicketResult.
 
         开票时间 
 
@@ -713,7 +713,7 @@ class TrainTicketResult:
 
     @property
     def discount_mark(self):
-        """Gets the discount_mark of this TrainTicketResult.
+        r"""Gets the discount_mark of this TrainTicketResult.
 
         打折标识 
 
@@ -724,7 +724,7 @@ class TrainTicketResult:
 
     @discount_mark.setter
     def discount_mark(self, discount_mark):
-        """Sets the discount_mark of this TrainTicketResult.
+        r"""Sets the discount_mark of this TrainTicketResult.
 
         打折标识 
 
@@ -735,7 +735,7 @@ class TrainTicketResult:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this TrainTicketResult.
+        r"""Gets the serial_number of this TrainTicketResult.
 
         电子客票号 
 
@@ -746,7 +746,7 @@ class TrainTicketResult:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this TrainTicketResult.
+        r"""Sets the serial_number of this TrainTicketResult.
 
         电子客票号 
 
@@ -757,7 +757,7 @@ class TrainTicketResult:
 
     @property
     def tax_amount(self):
-        """Gets the tax_amount of this TrainTicketResult.
+        r"""Gets the tax_amount of this TrainTicketResult.
 
         税金价格 
 
@@ -768,7 +768,7 @@ class TrainTicketResult:
 
     @tax_amount.setter
     def tax_amount(self, tax_amount):
-        """Sets the tax_amount of this TrainTicketResult.
+        r"""Sets the tax_amount of this TrainTicketResult.
 
         税金价格 
 
@@ -779,7 +779,7 @@ class TrainTicketResult:
 
     @property
     def tax_rate(self):
-        """Gets the tax_rate of this TrainTicketResult.
+        r"""Gets the tax_rate of this TrainTicketResult.
 
         税率 
 
@@ -790,7 +790,7 @@ class TrainTicketResult:
 
     @tax_rate.setter
     def tax_rate(self, tax_rate):
-        """Sets the tax_rate of this TrainTicketResult.
+        r"""Sets the tax_rate of this TrainTicketResult.
 
         税率 
 
@@ -801,7 +801,7 @@ class TrainTicketResult:
 
     @property
     def air_conditioning(self):
-        """Gets the air_conditioning of this TrainTicketResult.
+        r"""Gets the air_conditioning of this TrainTicketResult.
 
         是否是空调车厢 
 
@@ -812,7 +812,7 @@ class TrainTicketResult:
 
     @air_conditioning.setter
     def air_conditioning(self, air_conditioning):
-        """Sets the air_conditioning of this TrainTicketResult.
+        r"""Sets the air_conditioning of this TrainTicketResult.
 
         是否是空调车厢 
 
@@ -823,7 +823,7 @@ class TrainTicketResult:
 
     @property
     def original_invoice_number(self):
-        """Gets the original_invoice_number of this TrainTicketResult.
+        r"""Gets the original_invoice_number of this TrainTicketResult.
 
         原发票号码 
 
@@ -834,7 +834,7 @@ class TrainTicketResult:
 
     @original_invoice_number.setter
     def original_invoice_number(self, original_invoice_number):
-        """Sets the original_invoice_number of this TrainTicketResult.
+        r"""Sets the original_invoice_number of this TrainTicketResult.
 
         原发票号码 
 
@@ -845,7 +845,7 @@ class TrainTicketResult:
 
     @property
     def unified_social_credit_code(self):
-        """Gets the unified_social_credit_code of this TrainTicketResult.
+        r"""Gets the unified_social_credit_code of this TrainTicketResult.
 
         统一社会信用号码 
 
@@ -856,7 +856,7 @@ class TrainTicketResult:
 
     @unified_social_credit_code.setter
     def unified_social_credit_code(self, unified_social_credit_code):
-        """Sets the unified_social_credit_code of this TrainTicketResult.
+        r"""Sets the unified_social_credit_code of this TrainTicketResult.
 
         统一社会信用号码 
 
@@ -867,7 +867,7 @@ class TrainTicketResult:
 
     @property
     def buyer_name(self):
-        """Gets the buyer_name of this TrainTicketResult.
+        r"""Gets the buyer_name of this TrainTicketResult.
 
         购买方名称 
 
@@ -878,7 +878,7 @@ class TrainTicketResult:
 
     @buyer_name.setter
     def buyer_name(self, buyer_name):
-        """Sets the buyer_name of this TrainTicketResult.
+        r"""Sets the buyer_name of this TrainTicketResult.
 
         购买方名称 
 
@@ -889,7 +889,7 @@ class TrainTicketResult:
 
     @property
     def total_amount_excluding_tax(self):
-        """Gets the total_amount_excluding_tax of this TrainTicketResult.
+        r"""Gets the total_amount_excluding_tax of this TrainTicketResult.
 
         不含税价格 
 
@@ -900,7 +900,7 @@ class TrainTicketResult:
 
     @total_amount_excluding_tax.setter
     def total_amount_excluding_tax(self, total_amount_excluding_tax):
-        """Sets the total_amount_excluding_tax of this TrainTicketResult.
+        r"""Sets the total_amount_excluding_tax of this TrainTicketResult.
 
         不含税价格 
 
@@ -911,7 +911,7 @@ class TrainTicketResult:
 
     @property
     def invoice_number(self):
-        """Gets the invoice_number of this TrainTicketResult.
+        r"""Gets the invoice_number of this TrainTicketResult.
 
         发票号码 
 
@@ -922,7 +922,7 @@ class TrainTicketResult:
 
     @invoice_number.setter
     def invoice_number(self, invoice_number):
-        """Sets the invoice_number of this TrainTicketResult.
+        r"""Sets the invoice_number of this TrainTicketResult.
 
         发票号码 
 
@@ -933,7 +933,7 @@ class TrainTicketResult:
 
     @property
     def seal_mark(self):
-        """Gets the seal_mark of this TrainTicketResult.
+        r"""Gets the seal_mark of this TrainTicketResult.
 
         是否有印章，True表示有印章，False表示不含印章，字段默认为False 
 
@@ -944,7 +944,7 @@ class TrainTicketResult:
 
     @seal_mark.setter
     def seal_mark(self, seal_mark):
-        """Sets the seal_mark of this TrainTicketResult.
+        r"""Sets the seal_mark of this TrainTicketResult.
 
         是否有印章，True表示有印章，False表示不含印章，字段默认为False 
 
@@ -955,7 +955,7 @@ class TrainTicketResult:
 
     @property
     def title(self):
-        """Gets the title of this TrainTicketResult.
+        r"""Gets the title of this TrainTicketResult.
 
         标题 
 
@@ -966,7 +966,7 @@ class TrainTicketResult:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this TrainTicketResult.
+        r"""Sets the title of this TrainTicketResult.
 
         标题 
 
@@ -977,7 +977,7 @@ class TrainTicketResult:
 
     @property
     def area(self):
-        """Gets the area of this TrainTicketResult.
+        r"""Gets the area of this TrainTicketResult.
 
         地区 
 
@@ -988,7 +988,7 @@ class TrainTicketResult:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this TrainTicketResult.
+        r"""Sets the area of this TrainTicketResult.
 
         地区 
 
@@ -999,7 +999,7 @@ class TrainTicketResult:
 
     @property
     def receipt_number(self):
-        """Gets the receipt_number of this TrainTicketResult.
+        r"""Gets the receipt_number of this TrainTicketResult.
 
         收据编码 
 
@@ -1010,7 +1010,7 @@ class TrainTicketResult:
 
     @receipt_number.setter
     def receipt_number(self, receipt_number):
-        """Sets the receipt_number of this TrainTicketResult.
+        r"""Sets the receipt_number of this TrainTicketResult.
 
         收据编码 
 
@@ -1021,7 +1021,7 @@ class TrainTicketResult:
 
     @property
     def amount_in_figures(self):
-        """Gets the amount_in_figures of this TrainTicketResult.
+        r"""Gets the amount_in_figures of this TrainTicketResult.
 
         小写票据金额 
 
@@ -1032,7 +1032,7 @@ class TrainTicketResult:
 
     @amount_in_figures.setter
     def amount_in_figures(self, amount_in_figures):
-        """Sets the amount_in_figures of this TrainTicketResult.
+        r"""Sets the amount_in_figures of this TrainTicketResult.
 
         小写票据金额 
 
@@ -1043,7 +1043,7 @@ class TrainTicketResult:
 
     @property
     def amount_in_words(self):
-        """Gets the amount_in_words of this TrainTicketResult.
+        r"""Gets the amount_in_words of this TrainTicketResult.
 
         大写票据金额 
 
@@ -1054,7 +1054,7 @@ class TrainTicketResult:
 
     @amount_in_words.setter
     def amount_in_words(self, amount_in_words):
-        """Sets the amount_in_words of this TrainTicketResult.
+        r"""Sets the amount_in_words of this TrainTicketResult.
 
         大写票据金额 
 
@@ -1065,7 +1065,7 @@ class TrainTicketResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this TrainTicketResult.
+        r"""Gets the confidence of this TrainTicketResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -1076,7 +1076,7 @@ class TrainTicketResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this TrainTicketResult.
+        r"""Sets the confidence of this TrainTicketResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -1087,7 +1087,7 @@ class TrainTicketResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this TrainTicketResult.
+        r"""Gets the text_location of this TrainTicketResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。  > 说明：输入数据格式是OFD时，返回的字段坐标为空列表。 
 
@@ -1098,7 +1098,7 @@ class TrainTicketResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this TrainTicketResult.
+        r"""Sets the text_location of this TrainTicketResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。  > 说明：输入数据格式是OFD时，返回的字段坐标为空列表。 
 

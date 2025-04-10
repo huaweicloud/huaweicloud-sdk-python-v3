@@ -29,7 +29,7 @@ class ListAssociateEnvironmentsInfosRequest:
     }
 
     def __init__(self, group_id=None, page_index=None, page_size=None):
-        """ListAssociateEnvironmentsInfosRequest
+        r"""ListAssociateEnvironmentsInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAssociateEnvironmentsInfosRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListAssociateEnvironmentsInfosRequest.
+        r"""Gets the group_id of this ListAssociateEnvironmentsInfosRequest.
 
         主机集群id
 
@@ -67,7 +67,7 @@ class ListAssociateEnvironmentsInfosRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListAssociateEnvironmentsInfosRequest.
+        r"""Sets the group_id of this ListAssociateEnvironmentsInfosRequest.
 
         主机集群id
 
@@ -78,7 +78,7 @@ class ListAssociateEnvironmentsInfosRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListAssociateEnvironmentsInfosRequest.
+        r"""Gets the page_index of this ListAssociateEnvironmentsInfosRequest.
 
         页码
 
@@ -89,7 +89,7 @@ class ListAssociateEnvironmentsInfosRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListAssociateEnvironmentsInfosRequest.
+        r"""Sets the page_index of this ListAssociateEnvironmentsInfosRequest.
 
         页码
 
@@ -100,7 +100,7 @@ class ListAssociateEnvironmentsInfosRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAssociateEnvironmentsInfosRequest.
+        r"""Gets the page_size of this ListAssociateEnvironmentsInfosRequest.
 
         每页查询条数
 
@@ -111,7 +111,7 @@ class ListAssociateEnvironmentsInfosRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAssociateEnvironmentsInfosRequest.
+        r"""Sets the page_size of this ListAssociateEnvironmentsInfosRequest.
 
         每页查询条数
 

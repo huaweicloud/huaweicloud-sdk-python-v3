@@ -27,7 +27,7 @@ class ModifyInstanceConfigsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ModifyInstanceConfigsRequest
+        r"""ModifyInstanceConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyInstanceConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyInstanceConfigsRequest.
+        r"""Gets the instance_id of this ModifyInstanceConfigsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ModifyInstanceConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyInstanceConfigsRequest.
+        r"""Sets the instance_id of this ModifyInstanceConfigsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ModifyInstanceConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyInstanceConfigsRequest.
+        r"""Gets the body of this ModifyInstanceConfigsRequest.
 
         :return: The body of this ModifyInstanceConfigsRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ModifyInstanceConfigsReq`
@@ -80,7 +80,7 @@ class ModifyInstanceConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyInstanceConfigsRequest.
+        r"""Sets the body of this ModifyInstanceConfigsRequest.
 
         :param body: The body of this ModifyInstanceConfigsRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ModifyInstanceConfigsReq`

@@ -39,7 +39,7 @@ class HostItemWithId:
     }
 
     def __init__(self, ip=None, name=None, os_type=None, group_id=None, ssh_credential_id=None, jumper_server_id=None, smb_credential_id=None, id=None):
-        """HostItemWithId
+        r"""HostItemWithId
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class HostItemWithId:
 
     @property
     def ip(self):
-        """Gets the ip of this HostItemWithId.
+        r"""Gets the ip of this HostItemWithId.
 
         主机IP
 
@@ -100,7 +100,7 @@ class HostItemWithId:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this HostItemWithId.
+        r"""Sets the ip of this HostItemWithId.
 
         主机IP
 
@@ -111,7 +111,7 @@ class HostItemWithId:
 
     @property
     def name(self):
-        """Gets the name of this HostItemWithId.
+        r"""Gets the name of this HostItemWithId.
 
         主机名称
 
@@ -122,7 +122,7 @@ class HostItemWithId:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HostItemWithId.
+        r"""Sets the name of this HostItemWithId.
 
         主机名称
 
@@ -133,7 +133,7 @@ class HostItemWithId:
 
     @property
     def os_type(self):
-        """Gets the os_type of this HostItemWithId.
+        r"""Gets the os_type of this HostItemWithId.
 
         操作系统类型: * linux * windows 
 
@@ -144,7 +144,7 @@ class HostItemWithId:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this HostItemWithId.
+        r"""Sets the os_type of this HostItemWithId.
 
         操作系统类型: * linux * windows 
 
@@ -155,7 +155,7 @@ class HostItemWithId:
 
     @property
     def group_id(self):
-        """Gets the group_id of this HostItemWithId.
+        r"""Gets the group_id of this HostItemWithId.
 
         主机组id
 
@@ -166,7 +166,7 @@ class HostItemWithId:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this HostItemWithId.
+        r"""Sets the group_id of this HostItemWithId.
 
         主机组id
 
@@ -177,7 +177,7 @@ class HostItemWithId:
 
     @property
     def ssh_credential_id(self):
-        """Gets the ssh_credential_id of this HostItemWithId.
+        r"""Gets the ssh_credential_id of this HostItemWithId.
 
         linux主机ssh授权登录信息ID
 
@@ -188,7 +188,7 @@ class HostItemWithId:
 
     @ssh_credential_id.setter
     def ssh_credential_id(self, ssh_credential_id):
-        """Sets the ssh_credential_id of this HostItemWithId.
+        r"""Sets the ssh_credential_id of this HostItemWithId.
 
         linux主机ssh授权登录信息ID
 
@@ -199,7 +199,7 @@ class HostItemWithId:
 
     @property
     def jumper_server_id(self):
-        """Gets the jumper_server_id of this HostItemWithId.
+        r"""Gets the jumper_server_id of this HostItemWithId.
 
         linux跳板机信息ID
 
@@ -210,7 +210,7 @@ class HostItemWithId:
 
     @jumper_server_id.setter
     def jumper_server_id(self, jumper_server_id):
-        """Sets the jumper_server_id of this HostItemWithId.
+        r"""Sets the jumper_server_id of this HostItemWithId.
 
         linux跳板机信息ID
 
@@ -221,7 +221,7 @@ class HostItemWithId:
 
     @property
     def smb_credential_id(self):
-        """Gets the smb_credential_id of this HostItemWithId.
+        r"""Gets the smb_credential_id of this HostItemWithId.
 
         windows主机smb授权登录信息ID
 
@@ -232,7 +232,7 @@ class HostItemWithId:
 
     @smb_credential_id.setter
     def smb_credential_id(self, smb_credential_id):
-        """Sets the smb_credential_id of this HostItemWithId.
+        r"""Sets the smb_credential_id of this HostItemWithId.
 
         windows主机smb授权登录信息ID
 
@@ -243,7 +243,7 @@ class HostItemWithId:
 
     @property
     def id(self):
-        """Gets the id of this HostItemWithId.
+        r"""Gets the id of this HostItemWithId.
 
         主机ID
 
@@ -254,7 +254,7 @@ class HostItemWithId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HostItemWithId.
+        r"""Sets the id of this HostItemWithId.
 
         主机ID
 

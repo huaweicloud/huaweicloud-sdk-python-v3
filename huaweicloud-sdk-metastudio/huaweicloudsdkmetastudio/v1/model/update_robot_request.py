@@ -29,7 +29,7 @@ class UpdateRobotRequest:
     }
 
     def __init__(self, x_app_user_id=None, robot_id=None, body=None):
-        """UpdateRobotRequest
+        r"""UpdateRobotRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateRobotRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateRobotRequest.
+        r"""Gets the x_app_user_id of this UpdateRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateRobotRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateRobotRequest.
+        r"""Sets the x_app_user_id of this UpdateRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateRobotRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdateRobotRequest.
+        r"""Gets the robot_id of this UpdateRobotRequest.
 
         应用ID。
 
@@ -89,7 +89,7 @@ class UpdateRobotRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdateRobotRequest.
+        r"""Sets the robot_id of this UpdateRobotRequest.
 
         应用ID。
 
@@ -100,7 +100,7 @@ class UpdateRobotRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRobotRequest.
+        r"""Gets the body of this UpdateRobotRequest.
 
         :return: The body of this UpdateRobotRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateRobotReq`
@@ -109,7 +109,7 @@ class UpdateRobotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRobotRequest.
+        r"""Sets the body of this UpdateRobotRequest.
 
         :param body: The body of this UpdateRobotRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateRobotReq`

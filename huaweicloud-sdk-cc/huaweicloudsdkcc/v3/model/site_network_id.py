@@ -25,7 +25,7 @@ class SiteNetworkId:
     }
 
     def __init__(self, site_network_id=None):
-        """SiteNetworkId
+        r"""SiteNetworkId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SiteNetworkId:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this SiteNetworkId.
+        r"""Gets the site_network_id of this SiteNetworkId.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class SiteNetworkId:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this SiteNetworkId.
+        r"""Sets the site_network_id of this SiteNetworkId.
 
         实例ID。
 

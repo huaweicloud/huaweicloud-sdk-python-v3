@@ -35,7 +35,7 @@ class ShowPipelineLogRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None, job_run_id=None, step_run_id=None, body=None):
-        """ShowPipelineLogRequest
+        r"""ShowPipelineLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ShowPipelineLogRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPipelineLogRequest.
+        r"""Gets the project_id of this ShowPipelineLogRequest.
 
         项目ID
 
@@ -84,7 +84,7 @@ class ShowPipelineLogRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPipelineLogRequest.
+        r"""Sets the project_id of this ShowPipelineLogRequest.
 
         项目ID
 
@@ -95,7 +95,7 @@ class ShowPipelineLogRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipelineLogRequest.
+        r"""Gets the pipeline_id of this ShowPipelineLogRequest.
 
         流水线ID
 
@@ -106,7 +106,7 @@ class ShowPipelineLogRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipelineLogRequest.
+        r"""Sets the pipeline_id of this ShowPipelineLogRequest.
 
         流水线ID
 
@@ -117,7 +117,7 @@ class ShowPipelineLogRequest:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this ShowPipelineLogRequest.
+        r"""Gets the pipeline_run_id of this ShowPipelineLogRequest.
 
         流水线运行实例ID
 
@@ -128,7 +128,7 @@ class ShowPipelineLogRequest:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this ShowPipelineLogRequest.
+        r"""Sets the pipeline_run_id of this ShowPipelineLogRequest.
 
         流水线运行实例ID
 
@@ -139,7 +139,7 @@ class ShowPipelineLogRequest:
 
     @property
     def job_run_id(self):
-        """Gets the job_run_id of this ShowPipelineLogRequest.
+        r"""Gets the job_run_id of this ShowPipelineLogRequest.
 
         流水线任务ID
 
@@ -150,7 +150,7 @@ class ShowPipelineLogRequest:
 
     @job_run_id.setter
     def job_run_id(self, job_run_id):
-        """Sets the job_run_id of this ShowPipelineLogRequest.
+        r"""Sets the job_run_id of this ShowPipelineLogRequest.
 
         流水线任务ID
 
@@ -161,7 +161,7 @@ class ShowPipelineLogRequest:
 
     @property
     def step_run_id(self):
-        """Gets the step_run_id of this ShowPipelineLogRequest.
+        r"""Gets the step_run_id of this ShowPipelineLogRequest.
 
         流水线步骤ID
 
@@ -172,7 +172,7 @@ class ShowPipelineLogRequest:
 
     @step_run_id.setter
     def step_run_id(self, step_run_id):
-        """Sets the step_run_id of this ShowPipelineLogRequest.
+        r"""Sets the step_run_id of this ShowPipelineLogRequest.
 
         流水线步骤ID
 
@@ -183,7 +183,7 @@ class ShowPipelineLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPipelineLogRequest.
+        r"""Gets the body of this ShowPipelineLogRequest.
 
         :return: The body of this ShowPipelineLogRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.LogQuery`
@@ -192,7 +192,7 @@ class ShowPipelineLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPipelineLogRequest.
+        r"""Sets the body of this ShowPipelineLogRequest.
 
         :param body: The body of this ShowPipelineLogRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.LogQuery`

@@ -27,7 +27,7 @@ class EntityPrivilegeInfo:
     }
 
     def __init__(self, privileges=None, inherit_privileges=None):
-        """EntityPrivilegeInfo
+        r"""EntityPrivilegeInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EntityPrivilegeInfo:
 
     @property
     def privileges(self):
-        """Gets the privileges of this EntityPrivilegeInfo.
+        r"""Gets the privileges of this EntityPrivilegeInfo.
 
         特权列表
 
@@ -61,7 +61,7 @@ class EntityPrivilegeInfo:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this EntityPrivilegeInfo.
+        r"""Sets the privileges of this EntityPrivilegeInfo.
 
         特权列表
 
@@ -72,7 +72,7 @@ class EntityPrivilegeInfo:
 
     @property
     def inherit_privileges(self):
-        """Gets the inherit_privileges of this EntityPrivilegeInfo.
+        r"""Gets the inherit_privileges of this EntityPrivilegeInfo.
 
         继承特权列表
 
@@ -83,7 +83,7 @@ class EntityPrivilegeInfo:
 
     @inherit_privileges.setter
     def inherit_privileges(self, inherit_privileges):
-        """Sets the inherit_privileges of this EntityPrivilegeInfo.
+        r"""Sets the inherit_privileges of this EntityPrivilegeInfo.
 
         继承特权列表
 

@@ -31,7 +31,7 @@ class ResponseInfoResp:
     }
 
     def __init__(self, status=None, body=None, headers=None, default=None):
-        """ResponseInfoResp
+        r"""ResponseInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResponseInfoResp:
 
     @property
     def status(self):
-        """Gets the status of this ResponseInfoResp.
+        r"""Gets the status of this ResponseInfoResp.
 
         响应的HTTP状态码。范围为200-599，但不允许为444。
 
@@ -75,7 +75,7 @@ class ResponseInfoResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResponseInfoResp.
+        r"""Sets the status of this ResponseInfoResp.
 
         响应的HTTP状态码。范围为200-599，但不允许为444。
 
@@ -86,7 +86,7 @@ class ResponseInfoResp:
 
     @property
     def body(self):
-        """Gets the body of this ResponseInfoResp.
+        r"""Gets the body of this ResponseInfoResp.
 
         响应的Body模板
 
@@ -97,7 +97,7 @@ class ResponseInfoResp:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResponseInfoResp.
+        r"""Sets the body of this ResponseInfoResp.
 
         响应的Body模板
 
@@ -108,7 +108,7 @@ class ResponseInfoResp:
 
     @property
     def headers(self):
-        """Gets the headers of this ResponseInfoResp.
+        r"""Gets the headers of this ResponseInfoResp.
 
         自定义的响应头
 
@@ -119,7 +119,7 @@ class ResponseInfoResp:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ResponseInfoResp.
+        r"""Sets the headers of this ResponseInfoResp.
 
         自定义的响应头
 
@@ -130,7 +130,7 @@ class ResponseInfoResp:
 
     @property
     def default(self):
-        """Gets the default of this ResponseInfoResp.
+        r"""Gets the default of this ResponseInfoResp.
 
         是否为默认响应
 
@@ -141,7 +141,7 @@ class ResponseInfoResp:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ResponseInfoResp.
+        r"""Sets the default of this ResponseInfoResp.
 
         是否为默认响应
 

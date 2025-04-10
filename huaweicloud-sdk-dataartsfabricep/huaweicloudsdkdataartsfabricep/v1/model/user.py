@@ -27,7 +27,7 @@ class User:
     }
 
     def __init__(self, domain_name=None, user_name=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class User:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this User.
+        r"""Gets the domain_name of this User.
 
         账户名称
 
@@ -61,7 +61,7 @@ class User:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this User.
+        r"""Sets the domain_name of this User.
 
         账户名称
 
@@ -72,7 +72,7 @@ class User:
 
     @property
     def user_name(self):
-        """Gets the user_name of this User.
+        r"""Gets the user_name of this User.
 
         用户名称
 
@@ -83,7 +83,7 @@ class User:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this User.
+        r"""Sets the user_name of this User.
 
         用户名称
 

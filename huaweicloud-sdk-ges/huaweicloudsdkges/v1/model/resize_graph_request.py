@@ -27,7 +27,7 @@ class ResizeGraphRequest:
     }
 
     def __init__(self, graph_id=None, body=None):
-        """ResizeGraphRequest
+        r"""ResizeGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ResizeGraphRequest.
+        r"""Gets the graph_id of this ResizeGraphRequest.
 
         图ID。
 
@@ -60,7 +60,7 @@ class ResizeGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ResizeGraphRequest.
+        r"""Sets the graph_id of this ResizeGraphRequest.
 
         图ID。
 
@@ -71,7 +71,7 @@ class ResizeGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeGraphRequest.
+        r"""Gets the body of this ResizeGraphRequest.
 
         :return: The body of this ResizeGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.ResizeGraphReq`
@@ -80,7 +80,7 @@ class ResizeGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeGraphRequest.
+        r"""Sets the body of this ResizeGraphRequest.
 
         :param body: The body of this ResizeGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.ResizeGraphReq`

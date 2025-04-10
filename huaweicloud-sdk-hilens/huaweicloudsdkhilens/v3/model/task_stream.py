@@ -29,7 +29,7 @@ class TaskStream:
     }
 
     def __init__(self, common=None, input=None, outputs=None):
-        """TaskStream
+        r"""TaskStream
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TaskStream:
 
     @property
     def common(self):
-        """Gets the common of this TaskStream.
+        r"""Gets the common of this TaskStream.
 
         作业参数配置
 
@@ -66,7 +66,7 @@ class TaskStream:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TaskStream.
+        r"""Sets the common of this TaskStream.
 
         作业参数配置
 
@@ -77,7 +77,7 @@ class TaskStream:
 
     @property
     def input(self):
-        """Gets the input of this TaskStream.
+        r"""Gets the input of this TaskStream.
 
         :return: The input of this TaskStream.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskInput`
@@ -86,7 +86,7 @@ class TaskStream:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this TaskStream.
+        r"""Sets the input of this TaskStream.
 
         :param input: The input of this TaskStream.
         :type input: :class:`huaweicloudsdkhilens.v3.TaskInput`
@@ -95,7 +95,7 @@ class TaskStream:
 
     @property
     def outputs(self):
-        """Gets the outputs of this TaskStream.
+        r"""Gets the outputs of this TaskStream.
 
         输出详情
 
@@ -106,7 +106,7 @@ class TaskStream:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this TaskStream.
+        r"""Sets the outputs of this TaskStream.
 
         输出详情
 

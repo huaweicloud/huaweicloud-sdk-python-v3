@@ -27,7 +27,7 @@ class ChangeNodesStartStopStatusBody:
     }
 
     def __init__(self, node_ids=None, action=None):
-        """ChangeNodesStartStopStatusBody
+        r"""ChangeNodesStartStopStatusBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChangeNodesStartStopStatusBody:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ChangeNodesStartStopStatusBody.
+        r"""Gets the node_ids of this ChangeNodesStartStopStatusBody.
 
         实例需要启停的节点ID列表。未配置该参数时，默认启停实例全部节点。
 
@@ -61,7 +61,7 @@ class ChangeNodesStartStopStatusBody:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ChangeNodesStartStopStatusBody.
+        r"""Sets the node_ids of this ChangeNodesStartStopStatusBody.
 
         实例需要启停的节点ID列表。未配置该参数时，默认启停实例全部节点。
 
@@ -72,7 +72,7 @@ class ChangeNodesStartStopStatusBody:
 
     @property
     def action(self):
-        """Gets the action of this ChangeNodesStartStopStatusBody.
+        r"""Gets the action of this ChangeNodesStartStopStatusBody.
 
         对实例节点的操作：  start：开启节点  stop：关闭节点 
 
@@ -83,7 +83,7 @@ class ChangeNodesStartStopStatusBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ChangeNodesStartStopStatusBody.
+        r"""Sets the action of this ChangeNodesStartStopStatusBody.
 
         对实例节点的操作：  start：开启节点  stop：关闭节点 
 

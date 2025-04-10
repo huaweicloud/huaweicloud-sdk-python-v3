@@ -25,7 +25,7 @@ class UpdateVgwSpecificationRequestBodyContent:
     }
 
     def __init__(self, flavor=None):
-        """UpdateVgwSpecificationRequestBodyContent
+        r"""UpdateVgwSpecificationRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVgwSpecificationRequestBodyContent:
 
     @property
     def flavor(self):
-        """Gets the flavor of this UpdateVgwSpecificationRequestBodyContent.
+        r"""Gets the flavor of this UpdateVgwSpecificationRequestBodyContent.
 
         修改后的VPN网关的规格类型
 
@@ -53,7 +53,7 @@ class UpdateVgwSpecificationRequestBodyContent:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this UpdateVgwSpecificationRequestBodyContent.
+        r"""Sets the flavor of this UpdateVgwSpecificationRequestBodyContent.
 
         修改后的VPN网关的规格类型
 

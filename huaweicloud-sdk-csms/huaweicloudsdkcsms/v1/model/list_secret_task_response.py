@@ -30,7 +30,7 @@ class ListSecretTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None, next_marker=None):
-        """ListSecretTaskResponse
+        r"""ListSecretTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSecretTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecretTaskResponse.
+        r"""Gets the total of this ListSecretTaskResponse.
 
         任务数量
 
@@ -69,7 +69,7 @@ class ListSecretTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecretTaskResponse.
+        r"""Sets the total of this ListSecretTaskResponse.
 
         任务数量
 
@@ -80,7 +80,7 @@ class ListSecretTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListSecretTaskResponse.
+        r"""Gets the tasks of this ListSecretTaskResponse.
 
         凭据任务列表。
 
@@ -91,7 +91,7 @@ class ListSecretTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListSecretTaskResponse.
+        r"""Sets the tasks of this ListSecretTaskResponse.
 
         凭据任务列表。
 
@@ -102,7 +102,7 @@ class ListSecretTaskResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListSecretTaskResponse.
+        r"""Gets the next_marker of this ListSecretTaskResponse.
 
         下一页查询地址（本页的末尾任务ID）。
 
@@ -113,7 +113,7 @@ class ListSecretTaskResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListSecretTaskResponse.
+        r"""Sets the next_marker of this ListSecretTaskResponse.
 
         下一页查询地址（本页的末尾任务ID）。
 

@@ -29,7 +29,7 @@ class MappingResult:
     }
 
     def __init__(self, id=None, links=None, rules=None):
-        """MappingResult
+        r"""MappingResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MappingResult:
 
     @property
     def id(self):
-        """Gets the id of this MappingResult.
+        r"""Gets the id of this MappingResult.
 
         映射ID。
 
@@ -65,7 +65,7 @@ class MappingResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MappingResult.
+        r"""Sets the id of this MappingResult.
 
         映射ID。
 
@@ -76,7 +76,7 @@ class MappingResult:
 
     @property
     def links(self):
-        """Gets the links of this MappingResult.
+        r"""Gets the links of this MappingResult.
 
         :return: The links of this MappingResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -85,7 +85,7 @@ class MappingResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this MappingResult.
+        r"""Sets the links of this MappingResult.
 
         :param links: The links of this MappingResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -94,7 +94,7 @@ class MappingResult:
 
     @property
     def rules(self):
-        """Gets the rules of this MappingResult.
+        r"""Gets the rules of this MappingResult.
 
         将联邦用户映射为本地用户的规则列表。
 
@@ -105,7 +105,7 @@ class MappingResult:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this MappingResult.
+        r"""Sets the rules of this MappingResult.
 
         将联邦用户映射为本地用户的规则列表。
 

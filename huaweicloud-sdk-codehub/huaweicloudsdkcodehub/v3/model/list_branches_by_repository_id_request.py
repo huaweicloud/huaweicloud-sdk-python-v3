@@ -31,7 +31,7 @@ class ListBranchesByRepositoryIdRequest:
     }
 
     def __init__(self, repository_id=None, page=None, per_page=None, match=None):
-        """ListBranchesByRepositoryIdRequest
+        r"""ListBranchesByRepositoryIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ListBranchesByRepositoryIdRequest.
+        r"""Gets the repository_id of this ListBranchesByRepositoryIdRequest.
 
         仓库短id
 
@@ -74,7 +74,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ListBranchesByRepositoryIdRequest.
+        r"""Sets the repository_id of this ListBranchesByRepositoryIdRequest.
 
         仓库短id
 
@@ -85,7 +85,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListBranchesByRepositoryIdRequest.
+        r"""Gets the page of this ListBranchesByRepositoryIdRequest.
 
         分页页数
 
@@ -96,7 +96,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListBranchesByRepositoryIdRequest.
+        r"""Sets the page of this ListBranchesByRepositoryIdRequest.
 
         分页页数
 
@@ -107,7 +107,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ListBranchesByRepositoryIdRequest.
+        r"""Gets the per_page of this ListBranchesByRepositoryIdRequest.
 
         每页数据数
 
@@ -118,7 +118,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ListBranchesByRepositoryIdRequest.
+        r"""Sets the per_page of this ListBranchesByRepositoryIdRequest.
 
         每页数据数
 
@@ -129,7 +129,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @property
     def match(self):
-        """Gets the match of this ListBranchesByRepositoryIdRequest.
+        r"""Gets the match of this ListBranchesByRepositoryIdRequest.
 
         匹配条件
 
@@ -140,7 +140,7 @@ class ListBranchesByRepositoryIdRequest:
 
     @match.setter
     def match(self, match):
-        """Sets the match of this ListBranchesByRepositoryIdRequest.
+        r"""Sets the match of this ListBranchesByRepositoryIdRequest.
 
         匹配条件
 

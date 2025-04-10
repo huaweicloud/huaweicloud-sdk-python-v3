@@ -25,7 +25,7 @@ class RestSetCohostBody:
     }
 
     def __init__(self, is_cohost=None):
-        """RestSetCohostBody
+        r"""RestSetCohostBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestSetCohostBody:
 
     @property
     def is_cohost(self):
-        """Gets the is_cohost of this RestSetCohostBody.
+        r"""Gets the is_cohost of this RestSetCohostBody.
 
         - 0：撤销联席主持人 - 1：设置联席主持人
 
@@ -53,7 +53,7 @@ class RestSetCohostBody:
 
     @is_cohost.setter
     def is_cohost(self, is_cohost):
-        """Sets the is_cohost of this RestSetCohostBody.
+        r"""Sets the is_cohost of this RestSetCohostBody.
 
         - 0：撤销联席主持人 - 1：设置联席主持人
 

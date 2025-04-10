@@ -33,7 +33,7 @@ class NodeResponse:
     }
 
     def __init__(self, id=None, name=None, role=None, status=None, availability_zone=None):
-        """NodeResponse
+        r"""NodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class NodeResponse:
 
     @property
     def id(self):
-        """Gets the id of this NodeResponse.
+        r"""Gets the id of this NodeResponse.
 
         节点ID。
 
@@ -77,7 +77,7 @@ class NodeResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodeResponse.
+        r"""Sets the id of this NodeResponse.
 
         节点ID。
 
@@ -88,7 +88,7 @@ class NodeResponse:
 
     @property
     def name(self):
-        """Gets the name of this NodeResponse.
+        r"""Gets the name of this NodeResponse.
 
         节点名称。
 
@@ -99,7 +99,7 @@ class NodeResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeResponse.
+        r"""Sets the name of this NodeResponse.
 
         节点名称。
 
@@ -110,7 +110,7 @@ class NodeResponse:
 
     @property
     def role(self):
-        """Gets the role of this NodeResponse.
+        r"""Gets the role of this NodeResponse.
 
         节点类型，取值为“master”、“slave”或“readreplica”，分别对应于主节点、备节点和只读节点。
 
@@ -121,7 +121,7 @@ class NodeResponse:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this NodeResponse.
+        r"""Sets the role of this NodeResponse.
 
         节点类型，取值为“master”、“slave”或“readreplica”，分别对应于主节点、备节点和只读节点。
 
@@ -132,7 +132,7 @@ class NodeResponse:
 
     @property
     def status(self):
-        """Gets the status of this NodeResponse.
+        r"""Gets the status of this NodeResponse.
 
         节点状态。
 
@@ -143,7 +143,7 @@ class NodeResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeResponse.
+        r"""Sets the status of this NodeResponse.
 
         节点状态。
 
@@ -154,7 +154,7 @@ class NodeResponse:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this NodeResponse.
+        r"""Gets the availability_zone of this NodeResponse.
 
         可用区。
 
@@ -165,7 +165,7 @@ class NodeResponse:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this NodeResponse.
+        r"""Sets the availability_zone of this NodeResponse.
 
         可用区。
 

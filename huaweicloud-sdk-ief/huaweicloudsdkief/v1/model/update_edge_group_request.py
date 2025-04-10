@@ -29,7 +29,7 @@ class UpdateEdgeGroupRequest:
     }
 
     def __init__(self, ief_instance_id=None, group_id=None, body=None):
-        """UpdateEdgeGroupRequest
+        r"""UpdateEdgeGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateEdgeGroupRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateEdgeGroupRequest.
+        r"""Gets the ief_instance_id of this UpdateEdgeGroupRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateEdgeGroupRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateEdgeGroupRequest.
+        r"""Sets the ief_instance_id of this UpdateEdgeGroupRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateEdgeGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateEdgeGroupRequest.
+        r"""Gets the group_id of this UpdateEdgeGroupRequest.
 
         边缘节点组ID
 
@@ -89,7 +89,7 @@ class UpdateEdgeGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateEdgeGroupRequest.
+        r"""Sets the group_id of this UpdateEdgeGroupRequest.
 
         边缘节点组ID
 
@@ -100,7 +100,7 @@ class UpdateEdgeGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeGroupRequest.
+        r"""Gets the body of this UpdateEdgeGroupRequest.
 
         :return: The body of this UpdateEdgeGroupRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeGroupUpdateRequest`
@@ -109,7 +109,7 @@ class UpdateEdgeGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeGroupRequest.
+        r"""Sets the body of this UpdateEdgeGroupRequest.
 
         :param body: The body of this UpdateEdgeGroupRequest.
         :type body: :class:`huaweicloudsdkief.v1.EdgeGroupUpdateRequest`

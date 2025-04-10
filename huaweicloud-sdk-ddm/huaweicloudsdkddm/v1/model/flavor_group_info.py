@@ -33,7 +33,7 @@ class FlavorGroupInfo:
     }
 
     def __init__(self, group_type=None, flavors=None, offset=None, limit=None, total=None):
-        """FlavorGroupInfo
+        r"""FlavorGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class FlavorGroupInfo:
 
     @property
     def group_type(self):
-        """Gets the group_type of this FlavorGroupInfo.
+        r"""Gets the group_type of this FlavorGroupInfo.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -77,7 +77,7 @@ class FlavorGroupInfo:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this FlavorGroupInfo.
+        r"""Sets the group_type of this FlavorGroupInfo.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -88,7 +88,7 @@ class FlavorGroupInfo:
 
     @property
     def flavors(self):
-        """Gets the flavors of this FlavorGroupInfo.
+        r"""Gets the flavors of this FlavorGroupInfo.
 
         规格详情。
 
@@ -99,7 +99,7 @@ class FlavorGroupInfo:
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this FlavorGroupInfo.
+        r"""Sets the flavors of this FlavorGroupInfo.
 
         规格详情。
 
@@ -110,7 +110,7 @@ class FlavorGroupInfo:
 
     @property
     def offset(self):
-        """Gets the offset of this FlavorGroupInfo.
+        r"""Gets the offset of this FlavorGroupInfo.
 
         分页参数: 起始值。
 
@@ -121,7 +121,7 @@ class FlavorGroupInfo:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this FlavorGroupInfo.
+        r"""Sets the offset of this FlavorGroupInfo.
 
         分页参数: 起始值。
 
@@ -132,7 +132,7 @@ class FlavorGroupInfo:
 
     @property
     def limit(self):
-        """Gets the limit of this FlavorGroupInfo.
+        r"""Gets the limit of this FlavorGroupInfo.
 
         分页参数：每页多少条。
 
@@ -143,7 +143,7 @@ class FlavorGroupInfo:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this FlavorGroupInfo.
+        r"""Sets the limit of this FlavorGroupInfo.
 
         分页参数：每页多少条。
 
@@ -154,7 +154,7 @@ class FlavorGroupInfo:
 
     @property
     def total(self):
-        """Gets the total of this FlavorGroupInfo.
+        r"""Gets the total of this FlavorGroupInfo.
 
         计算类型规格总数。
 
@@ -165,7 +165,7 @@ class FlavorGroupInfo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this FlavorGroupInfo.
+        r"""Sets the total of this FlavorGroupInfo.
 
         计算类型规格总数。
 

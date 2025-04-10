@@ -25,7 +25,7 @@ class ListSnapshotPolicyRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListSnapshotPolicyRequest
+        r"""ListSnapshotPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSnapshotPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSnapshotPolicyRequest.
+        r"""Gets the cluster_id of this ListSnapshotPolicyRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class ListSnapshotPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSnapshotPolicyRequest.
+        r"""Sets the cluster_id of this ListSnapshotPolicyRequest.
 
         集群ID
 

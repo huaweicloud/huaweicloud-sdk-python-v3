@@ -37,7 +37,7 @@ class GeneralTableWordsBlockList:
     }
 
     def __init__(self, words=None, confidence=None, location=None, words_list=None, rows=None, columns=None, cell_location=None):
-        """GeneralTableWordsBlockList
+        r"""GeneralTableWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this GeneralTableWordsBlockList.
+        r"""Gets the words of this GeneralTableWordsBlockList.
 
         文字块识别结果。 
 
@@ -96,7 +96,7 @@ class GeneralTableWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this GeneralTableWordsBlockList.
+        r"""Sets the words of this GeneralTableWordsBlockList.
 
         文字块识别结果。 
 
@@ -107,7 +107,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this GeneralTableWordsBlockList.
+        r"""Gets the confidence of this GeneralTableWordsBlockList.
 
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -118,7 +118,7 @@ class GeneralTableWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this GeneralTableWordsBlockList.
+        r"""Sets the confidence of this GeneralTableWordsBlockList.
 
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -129,7 +129,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this GeneralTableWordsBlockList.
+        r"""Gets the location of this GeneralTableWordsBlockList.
 
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -140,7 +140,7 @@ class GeneralTableWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this GeneralTableWordsBlockList.
+        r"""Sets the location of this GeneralTableWordsBlockList.
 
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -151,7 +151,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def words_list(self):
-        """Gets the words_list of this GeneralTableWordsBlockList.
+        r"""Gets the words_list of this GeneralTableWordsBlockList.
 
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
@@ -162,7 +162,7 @@ class GeneralTableWordsBlockList:
 
     @words_list.setter
     def words_list(self, words_list):
-        """Sets the words_list of this GeneralTableWordsBlockList.
+        r"""Sets the words_list of this GeneralTableWordsBlockList.
 
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
@@ -173,7 +173,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def rows(self):
-        """Gets the rows of this GeneralTableWordsBlockList.
+        r"""Gets the rows of this GeneralTableWordsBlockList.
 
         文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\"table\"时该字段有效。 
 
@@ -184,7 +184,7 @@ class GeneralTableWordsBlockList:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this GeneralTableWordsBlockList.
+        r"""Sets the rows of this GeneralTableWordsBlockList.
 
         文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\"table\"时该字段有效。 
 
@@ -195,7 +195,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def columns(self):
-        """Gets the columns of this GeneralTableWordsBlockList.
+        r"""Gets the columns of this GeneralTableWordsBlockList.
 
         文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\"table\"时该字段有效。 
 
@@ -206,7 +206,7 @@ class GeneralTableWordsBlockList:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this GeneralTableWordsBlockList.
+        r"""Sets the columns of this GeneralTableWordsBlockList.
 
         文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\"table\"时该字段有效。 
 
@@ -217,7 +217,7 @@ class GeneralTableWordsBlockList:
 
     @property
     def cell_location(self):
-        """Gets the cell_location of this GeneralTableWordsBlockList.
+        r"""Gets the cell_location of this GeneralTableWordsBlockList.
 
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -228,7 +228,7 @@ class GeneralTableWordsBlockList:
 
     @cell_location.setter
     def cell_location(self, cell_location):
-        """Sets the cell_location of this GeneralTableWordsBlockList.
+        r"""Sets the cell_location of this GeneralTableWordsBlockList.
 
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

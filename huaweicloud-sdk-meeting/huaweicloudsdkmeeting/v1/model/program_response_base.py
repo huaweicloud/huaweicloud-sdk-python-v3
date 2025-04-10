@@ -35,7 +35,7 @@ class ProgramResponseBase:
     }
 
     def __init__(self, id=None, last_updated_by=None, update_time=None, program_name=None, material_size_str=None, play_time=None):
-        """ProgramResponseBase
+        r"""ProgramResponseBase
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProgramResponseBase:
 
     @property
     def id(self):
-        """Gets the id of this ProgramResponseBase.
+        r"""Gets the id of this ProgramResponseBase.
 
         节目ID。
 
@@ -89,7 +89,7 @@ class ProgramResponseBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProgramResponseBase.
+        r"""Sets the id of this ProgramResponseBase.
 
         节目ID。
 
@@ -100,7 +100,7 @@ class ProgramResponseBase:
 
     @property
     def last_updated_by(self):
-        """Gets the last_updated_by of this ProgramResponseBase.
+        r"""Gets the last_updated_by of this ProgramResponseBase.
 
         更新者。
 
@@ -111,7 +111,7 @@ class ProgramResponseBase:
 
     @last_updated_by.setter
     def last_updated_by(self, last_updated_by):
-        """Sets the last_updated_by of this ProgramResponseBase.
+        r"""Sets the last_updated_by of this ProgramResponseBase.
 
         更新者。
 
@@ -122,7 +122,7 @@ class ProgramResponseBase:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProgramResponseBase.
+        r"""Gets the update_time of this ProgramResponseBase.
 
         更新时间。
 
@@ -133,7 +133,7 @@ class ProgramResponseBase:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProgramResponseBase.
+        r"""Sets the update_time of this ProgramResponseBase.
 
         更新时间。
 
@@ -144,7 +144,7 @@ class ProgramResponseBase:
 
     @property
     def program_name(self):
-        """Gets the program_name of this ProgramResponseBase.
+        r"""Gets the program_name of this ProgramResponseBase.
 
         节目名称。
 
@@ -155,7 +155,7 @@ class ProgramResponseBase:
 
     @program_name.setter
     def program_name(self, program_name):
-        """Sets the program_name of this ProgramResponseBase.
+        r"""Sets the program_name of this ProgramResponseBase.
 
         节目名称。
 
@@ -166,7 +166,7 @@ class ProgramResponseBase:
 
     @property
     def material_size_str(self):
-        """Gets the material_size_str of this ProgramResponseBase.
+        r"""Gets the material_size_str of this ProgramResponseBase.
 
         节目的总素材大小（含单位）。
 
@@ -177,7 +177,7 @@ class ProgramResponseBase:
 
     @material_size_str.setter
     def material_size_str(self, material_size_str):
-        """Sets the material_size_str of this ProgramResponseBase.
+        r"""Sets the material_size_str of this ProgramResponseBase.
 
         节目的总素材大小（含单位）。
 
@@ -188,7 +188,7 @@ class ProgramResponseBase:
 
     @property
     def play_time(self):
-        """Gets the play_time of this ProgramResponseBase.
+        r"""Gets the play_time of this ProgramResponseBase.
 
         节目的总播放时长，单位秒。
 
@@ -199,7 +199,7 @@ class ProgramResponseBase:
 
     @play_time.setter
     def play_time(self, play_time):
-        """Sets the play_time of this ProgramResponseBase.
+        r"""Sets the play_time of this ProgramResponseBase.
 
         节目的总播放时长，单位秒。
 

@@ -25,7 +25,7 @@ class VdiNoOperationHibernateOptions:
     }
 
     def __init__(self, no_operation_hibernate_minutes=None):
-        """VdiNoOperationHibernateOptions
+        r"""VdiNoOperationHibernateOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VdiNoOperationHibernateOptions:
 
     @property
     def no_operation_hibernate_minutes(self):
-        """Gets the no_operation_hibernate_minutes of this VdiNoOperationHibernateOptions.
+        r"""Gets the no_operation_hibernate_minutes of this VdiNoOperationHibernateOptions.
 
         策略组ID。
 
@@ -54,7 +54,7 @@ class VdiNoOperationHibernateOptions:
 
     @no_operation_hibernate_minutes.setter
     def no_operation_hibernate_minutes(self, no_operation_hibernate_minutes):
-        """Sets the no_operation_hibernate_minutes of this VdiNoOperationHibernateOptions.
+        r"""Sets the no_operation_hibernate_minutes of this VdiNoOperationHibernateOptions.
 
         策略组ID。
 

@@ -25,7 +25,7 @@ class DeleteAppGroupReq:
     }
 
     def __init__(self, ids=None):
-        """DeleteAppGroupReq
+        r"""DeleteAppGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAppGroupReq:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteAppGroupReq.
+        r"""Gets the ids of this DeleteAppGroupReq.
 
         应用组ID,单次最多20个。
 
@@ -53,7 +53,7 @@ class DeleteAppGroupReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteAppGroupReq.
+        r"""Sets the ids of this DeleteAppGroupReq.
 
         应用组ID,单次最多20个。
 

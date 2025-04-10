@@ -34,7 +34,7 @@ class WorkspaceAppAsyncClient(Client):
         return client_builder
 
     def authorize_obs_async(self, request):
-        """获取上传至OBS桶的临时ak/sk
+        r"""获取上传至OBS桶的临时ak/sk
 
         获取上传至OBS桶的临时ak/sk。
         
@@ -99,7 +99,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_warehouse_app_async(self, request):
-        """批量删除应用仓库中的指定应用
+        r"""批量删除应用仓库中的指定应用
 
         批量删除应用仓库中的指定应用。
         
@@ -164,7 +164,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_bucket_or_acl_async(self, request):
-        """添加桶或者桶授权
+        r"""添加桶或者桶授权
 
         添加桶或者桶授权。
         
@@ -227,7 +227,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_warehouse_app_async(self, request):
-        """在应用仓库中新增应用
+        r"""在应用仓库中新增应用
 
         在应用仓库中新增应用。
         
@@ -292,7 +292,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_warehouse_app_async(self, request):
-        """删除应用仓库中的指定应用
+        r"""删除应用仓库中的指定应用
 
         删除应用仓库中的指定应用。
         
@@ -357,7 +357,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_warehouse_apps_async(self, request):
-        """查询租户应用仓库中的应用列表
+        r"""查询租户应用仓库中的应用列表
 
         查询租户应用仓库中的应用列表。
         
@@ -432,7 +432,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_warehouse_app_async(self, request):
-        """修改应用仓库中的指定应用信息
+        r"""修改应用仓库中的指定应用信息
 
         修改应用仓库中的指定应用信息
         
@@ -499,7 +499,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def upload_warehouse_app_icon_async(self, request):
-        """在应用仓库中上传图标文件
+        r"""在应用仓库中上传图标文件
 
         在应用仓库中上传图标文件。
         
@@ -566,7 +566,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_disable_app_async(self, request):
-        """批量禁用应用
+        r"""批量禁用应用
 
         批量禁用应用。
         
@@ -633,7 +633,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_enable_app_async(self, request):
-        """批量启用应用
+        r"""批量启用应用
 
         批量启用应用。
         
@@ -700,7 +700,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_app_icon_async(self, request):
-        """删除自定义应用图标
+        r"""删除自定义应用图标
 
         删除自定义应用应用图标，恢复使用默认应用图标，重复执行会按照成功处理(响应200)。
         
@@ -767,7 +767,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_published_app_async(self, request):
-        """查询已发布应用
+        r"""查询已发布应用
 
         查询已发布的应用。
         
@@ -842,7 +842,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def publish_app_async(self, request):
-        """发布应用
+        r"""发布应用
 
         批量发布应用，不允许发布同名的应用。
         
@@ -909,7 +909,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_app_detail_async(self, request):
-        """查询应用详细信息
+        r"""查询应用详细信息
 
         查询应用详细信息。
         
@@ -976,7 +976,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_publishable_app_async(self, request):
-        """可发布应用列表
+        r"""可发布应用列表
 
         查询应用组下可发布的应用。
         
@@ -1041,7 +1041,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def unpublish_app_async(self, request):
-        """批量取消应用发布
+        r"""批量取消应用发布
 
         批量取消应用发布。
         &gt; - 批量取消应用组下已经发布的应用，应用对应的授权会一起删除，重复执行会按照成功处理(响应200)。
@@ -1109,7 +1109,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_app_async(self, request):
-        """修改应用信息
+        r"""修改应用信息
 
         编辑修改应用信息。
         
@@ -1178,7 +1178,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def upload_app_icon_async(self, request):
-        """修改自定义应用图标
+        r"""修改自定义应用图标
 
         修改自定义应用图标。
         
@@ -1249,7 +1249,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def initialize_tenant_async(self, request):
-        """租户服务激活、初始化
+        r"""租户服务激活、初始化
 
         租户服务激活。
         
@@ -1314,7 +1314,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_corp_config_info_async(self, request):
-        """查询企业系统配置
+        r"""查询企业系统配置
 
         配置加载顺序： 查询企业级配置--&gt; 查不到则赋默认阿波罗配置--&gt; 阿波罗没有则不返回。
         
@@ -1379,7 +1379,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_tenant_profile_async(self, request):
-        """查询租户信息
+        r"""查询租户信息
 
         查询租户信息。
         
@@ -1442,7 +1442,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_app_group_async(self, request):
-        """批量删除应用组
+        r"""批量删除应用组
 
         批量删除应用组,重复执行会按照成功处理(响应200)。
         
@@ -1507,7 +1507,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_app_group_async(self, request):
-        """创建应用组
+        r"""创建应用组
 
         该API用于创建应用组。
         &gt; - 应用服务器中安装了不同的应用，这些应用可以组成不同的应用组，进行集中的管理和维护，向用户(组)发布。
@@ -1573,7 +1573,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_app_group_async(self, request):
-        """应用组删除
+        r"""应用组删除
 
         删除指定的应用组,重复执行会按照成功处理(响应200)。
         
@@ -1638,7 +1638,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def disassociate_app_group_async(self, request):
-        """解除服务组关联的所有应用组
+        r"""解除服务组关联的所有应用组
 
         解除服务组关联的所有应用组。
         
@@ -1703,7 +1703,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_app_group_async(self, request):
-        """查询应用组
+        r"""查询应用组
 
         查询用户创建的应用组，按照名称、授权类型分页查询。
         
@@ -1780,7 +1780,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_app_group_detail_async(self, request):
-        """查询应用组详情
+        r"""查询应用组详情
 
         查询应用组详情。
         
@@ -1845,7 +1845,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_app_group_async(self, request):
-        """修改应用组
+        r"""修改应用组
 
         修改应用组。
         
@@ -1912,7 +1912,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_order_async(self, request):
-        """创建订单
+        r"""创建订单
 
         创建订单。
         
@@ -1977,7 +1977,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_product_async(self, request):
-        """查询云应用套餐
+        r"""查询云应用套餐
 
         查询云应用套餐，按照条件过滤。
         
@@ -2054,7 +2054,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_session_type_async(self, request):
-        """查询会话套餐列表
+        r"""查询会话套餐列表
 
         该接口用于查询会话套餐列表。
         
@@ -2117,7 +2117,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_session_types_async(self, request):
-        """查询会话套餐列表
+        r"""查询会话套餐列表
 
         该接口用于查询会话套餐列表
         
@@ -2182,7 +2182,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def add_app_group_authorization_async(self, request):
-        """增加应用组授权
+        r"""增加应用组授权
 
         应用组添加用户授权，授权后用户就获得应用组下所有已发布应用的权限访问。
         
@@ -2249,7 +2249,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_app_group_authorization_async(self, request):
-        """移除应用组授权
+        r"""移除应用组授权
 
         移除应用组内的指定用户的授权，用户授权删除后，用户将没有权限访问应用组内的任何应用。注意：重复执行会按照操作成功处理。
         
@@ -2316,7 +2316,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_app_group_authorization_async(self, request):
-        """查询应用组授权记录
+        r"""查询应用组授权记录
 
         查询应用内已授权的用户列表。
         
@@ -2389,7 +2389,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_availability_zone_async(self, request):
-        """查询可用分区列表
+        r"""查询可用分区列表
 
         该接口用于查询支持的可用分区列表。
         
@@ -2452,7 +2452,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_az_async(self, request):
-        """查询可用分区列表
+        r"""查询可用分区列表
 
         该接口用于查询支持的可用分区列表，按站点分类。
         
@@ -2515,7 +2515,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def attach_image_server_app_async(self, request):
-        """分发软件信息至镜像实例
+        r"""分发软件信息至镜像实例
 
         分发应用软件信息至镜像实例，管理员可以按需下载并安装应用软件。
         * 目前只支持来自云应用仓库的软件信息。
@@ -2584,7 +2584,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_image_server_async(self, request):
-        """批量删除镜像实例
+        r"""批量删除镜像实例
 
         批量删除镜像实例。
         * 忽略不存在的镜像实例，响应正常。
@@ -2652,7 +2652,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_image_server_async(self, request):
-        """创建镜像实例
+        r"""创建镜像实例
 
         创建镜像实例。
         
@@ -2719,7 +2719,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_image_servers_async(self, request):
-        """查询镜像实例列表
+        r"""查询镜像实例列表
 
         查询镜像实例列表。
         
@@ -2792,7 +2792,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_latest_attached_server_app_async(self, request):
-        """查询最近一次分发软件信息列表
+        r"""查询最近一次分发软件信息列表
 
         查询最近一次分发软件信息列表，返回ID列表，不包含具体信息。
         
@@ -2857,7 +2857,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def recreate_server_image_async(self, request):
-        """构建云应用镜像
+        r"""构建云应用镜像
 
         构建云应用镜像。
         * 只允许对状态为 &#x60;实例正常运行&#x60;、&#x60;镜像任务结束&#x60; 的实例构建云应用镜像。
@@ -2925,7 +2925,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_image_server_async(self, request):
-        """查询指定镜像实例
+        r"""查询指定镜像实例
 
         查询指定的镜像实例当前这个接口的查询数据和list查询的一致
         
@@ -2990,7 +2990,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_image_server_async(self, request):
-        """修改镜像实例
+        r"""修改镜像实例
 
         修改镜像实例。
         
@@ -3057,7 +3057,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_app_sub_jobs_async(self, request):
-        """批量删除子任务
+        r"""批量删除子任务
 
         批量删除子任务，忽略不存在的服务器并且返回成功响应。
         只能删除以下的两种状态：
@@ -3125,7 +3125,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_image_sub_jobs_async(self, request):
-        """批量删除镜像子任务
+        r"""批量删除镜像子任务
 
         批量删除子任务，忽略不存在的服务器并且返回成功响应。
         只能删除以下的两种状态 SUCCESS：成功。 FAILED：失败
@@ -3191,7 +3191,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def count_sub_jobs_async(self, request):
-        """子任务数量查询
+        r"""子任务数量查询
 
         该接口用于查询异步子任务数量。
         
@@ -3260,7 +3260,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_image_jobs_async(self, request):
-        """查询租户的镜像任务列表
+        r"""查询租户的镜像任务列表
 
         该接口用于查询租户的异步任务执行情况
         
@@ -3331,7 +3331,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_image_sub_jobs_async(self, request):
-        """镜像子任务查询
+        r"""镜像子任务查询
 
         该接口用于查询异步子任务执行情况,sub_job_ids非空时offset和limit不会生效
         
@@ -3404,7 +3404,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_sub_jobs_async(self, request):
-        """子任务查询
+        r"""子任务查询
 
         该接口用于查询异步子任务执行情况,sub_job_ids非空时offset和limit不会生效。
         
@@ -3477,7 +3477,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_image_job_async(self, request):
-        """查询镜像任务详情
+        r"""查询镜像任务详情
 
         该接口用于查询异步任务的执行情况，比如查询创建镜像实例任务的执行状态。
         
@@ -3542,7 +3542,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_job_async(self, request):
-        """查询任务的执行状态
+        r"""查询任务的执行状态
 
         查询Job的执行状态。
         
@@ -3609,7 +3609,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_job_detail_async(self, request):
-        """查询任务的执行状态
+        r"""查询任务的执行状态
 
         查询Job的执行状态。
         
@@ -3676,7 +3676,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_authorization_mail_record_async(self, request):
-        """查询应用组授权邮件发送记录
+        r"""查询应用组授权邮件发送记录
 
         查询应用组授权邮件发送记录。
         
@@ -3751,7 +3751,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def send_authorization_mail_async(self, request):
-        """重发应用组授权邮件（根据授权邮件记录）
+        r"""重发应用组授权邮件（根据授权邮件记录）
 
         重发应用组授权邮件（根据授权邮件记录）。
         
@@ -3818,7 +3818,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def send_authorized_mail_async(self, request):
-        """重发应用组授权邮件（根据授权记录）
+        r"""重发应用组授权邮件（根据授权记录）
 
         重发应用组授权邮件（根据授权记录）。
         
@@ -3885,7 +3885,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_persistent_storage_async(self, request):
-        """删除WKS存储
+        r"""删除WKS存储
 
         删除WKS存储。
         
@@ -3950,7 +3950,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_or_update_storage_policy_statement_async(self, request):
-        """新增或更新存储目录访问权限自定义策略
+        r"""新增或更新存储目录访问权限自定义策略
 
         新增或更新存储目录访问权限自定义策略(已存在自定义策略时会对已有策略更新)。
         
@@ -4015,7 +4015,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_persistent_storage_async(self, request):
-        """创建WKS存储
+        r"""创建WKS存储
 
         创建WKS存储，目前仅支持创建 SFS3.0 容量型文件系统。
         
@@ -4080,7 +4080,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_share_folder_async(self, request):
-        """创建共享存储目录
+        r"""创建共享存储目录
 
         创建共享存储目录。
         
@@ -4147,7 +4147,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_persistent_storage_async(self, request):
-        """删除WKS存储
+        r"""删除WKS存储
 
         删除共享存储，只会解除NAS与文件系统之间的关联关系，不会删除文件系统和文件系统中的数据。
         
@@ -4212,7 +4212,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_storage_claim_async(self, request):
-        """删除共享目录
+        r"""删除共享目录
 
         删除共享存储目录。
         &gt; 需要删除绑定的用户及用户组，才能删除共享文目录。
@@ -4280,7 +4280,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_user_storage_attachment_async(self, request):
-        """删除个人存储目录
+        r"""删除个人存储目录
 
         删除个人存储目录，个人目录中的数据也将永久删除且无法恢复。
         
@@ -4347,7 +4347,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_persistent_storage_async(self, request):
-        """查询WKS存储
+        r"""查询WKS存储
 
         查询WKS存储。
         
@@ -4418,7 +4418,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_sfs3_storage_async(self, request):
-        """查询SFS3.0存储
+        r"""查询SFS3.0存储
 
         查询SFS3.0存储。
         
@@ -4487,7 +4487,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_share_folder_async(self, request):
-        """查询共享存储目录
+        r"""查询共享存储目录
 
         查询共享存储目录。
         
@@ -4560,7 +4560,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_storage_assignment_async(self, request):
-        """查询个人存储目录
+        r"""查询个人存储目录
 
         查询个人存储目录。
         
@@ -4637,7 +4637,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_storage_policy_statement_async(self, request):
-        """查询存储目录访问权限策略
+        r"""查询存储目录访问权限策略
 
         查询存储目录访问权限策略。
         
@@ -4704,7 +4704,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_share_folder_assignment_async(self, request):
-        """修改共享目录成员
+        r"""修改共享目录成员
 
         批量添加或者移除共享目录成员。
         
@@ -4771,7 +4771,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_user_folder_assignment_async(self, request):
-        """创建个人存储目录
+        r"""创建个人存储目录
 
         创建个人存储目录，已存在对应目录时，仅更新策略不会重复创建目录。
         
@@ -4838,7 +4838,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_policy_group_async(self, request):
-        """新增策略组
+        r"""新增策略组
 
         新增策略组，通过策略组能灵活的控制客户端访问与接入策略，如：文件、剪切板、会话等。
         
@@ -4903,7 +4903,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_policy_template_async(self, request):
-        """新增策略模板
+        r"""新增策略模板
 
         新增策略模板。策略模板创建好后，用户在创建策略组的时候，就可以根据已有策略模板按需调整配置，快速完成策略组的创建。
         
@@ -4968,7 +4968,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_policy_group_async(self, request):
-        """删除策略组
+        r"""删除策略组
 
         删除指定策略组，包含策略组对应的策略信息以及应用对象信息。
         
@@ -5033,7 +5033,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_policy_template_async(self, request):
-        """删除策略模板
+        r"""删除策略模板
 
         删除指定策略模板，包含策略模板对应的策略信息以及应用对象信息。
         
@@ -5098,7 +5098,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_policy_group_async(self, request):
-        """查询策略组列表
+        r"""查询策略组列表
 
         查询策略组概要信息列表,包括应用对象和详细策略项。
         
@@ -5169,7 +5169,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_policy_group_detail_info_async(self, request):
-        """查询策略组详情列表
+        r"""查询策略组详情列表
 
         包含策略信息以及应用对象的信息。
         
@@ -5240,7 +5240,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_policy_of_policy_group_async(self, request):
-        """查询策略组中的策略项
+        r"""查询策略组中的策略项
 
         查询指定策略组内的策略项。
         
@@ -5307,7 +5307,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_policy_template_async(self, request):
-        """查询策略模板列表
+        r"""查询策略模板列表
 
         查询策略模板概要信息列表，包含策略信息以及应用对象信息。用户在创建策略组的时候，可以根据已有策略模板按需调整配置，快速完成策略组的创建。
         
@@ -5376,7 +5376,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_targets_of_policy_group_async(self, request):
-        """查询策略组应用对象
+        r"""查询策略组应用对象
 
         查询指定策略组所应用的对象。
         
@@ -5443,7 +5443,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_original_policy_info_async(self, request):
-        """查询初始策略项
+        r"""查询初始策略项
 
         查询初始策略项，初始策略项是所有协议策略配置项的默认配置，用户可以在初始策略项的基础上根据需求修改指定的配置，创建新的策略组。
         
@@ -5506,7 +5506,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_policy_group_async(self, request):
-        """查询策略组详情
+        r"""查询策略组详情
 
         根据策略组ID查询策略组详细信息，包含策略信息以及应用对象信息。
         
@@ -5571,7 +5571,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_policy_group_async(self, request):
-        """修改策略组
+        r"""修改策略组
 
         修改指定策略组的信息。
         
@@ -5638,7 +5638,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_policy_template_async(self, request):
-        """修改策略模板
+        r"""修改策略模板
 
         修改指定策略模板的信息。
         
@@ -5705,7 +5705,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def check_quota_async(self, request):
-        """配额校验
+        r"""配额校验
 
         配额校验，购买服务器前可用调用该接口，校验本次创建服务器资源是否足够。
         
@@ -5784,7 +5784,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_or_update_scaling_policy_async(self, request):
-        """新增/修改弹性伸缩策略
+        r"""新增/修改弹性伸缩策略
 
         新增/修改弹性伸缩策略,仅按需的服务器支持。
         
@@ -5849,7 +5849,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_scaling_policy_async(self, request):
-        """删除弹性伸缩策略
+        r"""删除弹性伸缩策略
 
         删除弹性伸缩策略。
         
@@ -5914,7 +5914,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_scaling_policy_async(self, request):
-        """查询服务器组弹性伸缩策略
+        r"""查询服务器组弹性伸缩策略
 
         查询服务器组弹性伸缩策略,如果服务器未配置策略时响应默认策略。
         
@@ -5979,7 +5979,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_schedule_task_async(self, request):
-        """批量删除定时任务
+        r"""批量删除定时任务
 
         批量删除定时任务，忽略不存在的服务器组并且返回成功响应。
         
@@ -6044,7 +6044,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_schedule_task_async(self, request):
-        """新增定时任务
+        r"""新增定时任务
 
         新增定时任务。
         
@@ -6109,7 +6109,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_schedule_task_async(self, request):
-        """删除任务
+        r"""删除任务
 
         删除任务，忽略不存在的任务并且返回成功响应。
         
@@ -6174,7 +6174,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_future_executions_async(self, request):
-        """未来执行的具体时间列表
+        r"""未来执行的具体时间列表
 
         未来执行的具体时间列表。
         
@@ -6239,7 +6239,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_schedule_tasks_async(self, request):
-        """查询定时任务列表
+        r"""查询定时任务列表
 
         查询定时任务列表。
         
@@ -6310,7 +6310,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_task_execute_detail_async(self, request):
-        """查询定时任务执行子任务列表
+        r"""查询定时任务执行子任务列表
 
         查询定时任务执行子任务列表。
         
@@ -6379,7 +6379,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_task_execute_history_async(self, request):
-        """查询定时任务执行列表
+        r"""查询定时任务执行列表
 
         查询定时任务执行列表。
         
@@ -6448,7 +6448,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_schedule_task_async(self, request):
-        """查询指定定时任务详情
+        r"""查询指定定时任务详情
 
         查询指定定时任务详情。
         
@@ -6513,7 +6513,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_schedule_task_async(self, request):
-        """修改定时任务
+        r"""修改定时任务
 
         修改定时任务。
         
@@ -6580,7 +6580,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_change_server_image_async(self, request):
-        """批量修改服务器的镜像
+        r"""批量修改服务器的镜像
 
         批量修改服务器的镜像。
         &gt; - 服务器的镜像和服务器组的镜像不一样时，支持服务器的镜像切换为服务器组的镜像，并且仅允许同等镜像进行切换，例如：同操作系统，免费镜像切换，同源同价的付费镜像切换。如果服务器组的镜像和服务器的镜像为非同等镜像，建议您直接购买新的服务器，删除或者退订老的服务器。
@@ -6646,7 +6646,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_change_server_maintain_mode_async(self, request):
-        """标记服务器维护状态
+        r"""标记服务器维护状态
 
         标记服务器维护状态，处于维护状态中的服务器不再分配流量。
         
@@ -6711,7 +6711,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_server_async(self, request):
-        """批量删除服务器
+        r"""批量删除服务器
 
         批量删除服务器。
         &gt; - 仅支持删除按需订购的服务器，包周期订购的服务器需要到Console界面进行退订，订单退订成功后服务器将会自动删除。
@@ -6777,7 +6777,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_migrate_hosts_server_async(self, request):
-        """迁移云办公主机下面的服务器到目标云办公主机
+        r"""迁移云办公主机下面的服务器到目标云办公主机
 
         迁移云办公主机下面的服务器到目标云办公主机。
         
@@ -6842,7 +6842,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_reboot_server_async(self, request):
-        """重启服务器
+        r"""重启服务器
 
         重启服务器。
         
@@ -6907,7 +6907,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_reinstall_server_async(self, request):
-        """批量重装服务器
+        r"""批量重装服务器
 
         批量重装服务器。
         &gt; - 使用服务器原有的镜像进行重装，当服务器异常无法恢复时或者服务器运行时间久了，性能下降时，可选择重建服务器。注意：重装时系统盘的数据将会被清理掉。
@@ -6973,7 +6973,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_rejoin_domain_async(self, request):
-        """批量服务器重新加域
+        r"""批量服务器重新加域
 
         批量服务器重新加入AD域，一般用于解决服务器脱域的情况使用。
         
@@ -7038,7 +7038,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_start_server_async(self, request):
-        """启动服务器
+        r"""启动服务器
 
         启动服务器。
         
@@ -7103,7 +7103,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_stop_server_async(self, request):
-        """关闭服务器
+        r"""关闭服务器
 
         关闭服务器。
         
@@ -7168,7 +7168,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_update_tsvi_async(self, request):
-        """批量更新服务器虚拟会话IP配置
+        r"""批量更新服务器虚拟会话IP配置
 
         批量更新服务器虚拟会话IP配置，按需重启机器。
         
@@ -7233,7 +7233,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_upgrade_hda_version_async(self, request):
-        """批量升级服务器HDA版本
+        r"""批量升级服务器HDA版本
 
         批量升级服务器HDA版本。
         
@@ -7298,7 +7298,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def change_server_image_async(self, request):
-        """修改服务器的镜像
+        r"""修改服务器的镜像
 
         修改服务器的镜像。
         &gt; - 服务器的镜像和服务器组的镜像不一样时，支持服务器的镜像切换为服务器组的镜像，并且仅允许同等镜像进行切换，例如：同操作系统，免费镜像切换，同源同价的付费镜像切换。如果服务器组的镜像和服务器的镜像为非同等镜像，建议您直接购买新的服务器，删除或者退订老的服务器。
@@ -7366,7 +7366,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_app_servers_async(self, request):
-        """创建云服务器
+        r"""创建云服务器
 
         创建云服务器接口。
         
@@ -7431,7 +7431,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_server_async(self, request):
-        """删除服务器
+        r"""删除服务器
 
         删除服务器，忽略不存在的服务器并且返回成功响应。订单退订成功后调用。
         
@@ -7496,7 +7496,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_access_agent_latest_version_async(self, request):
-        """查询租户的所有HDA最新版本
+        r"""查询租户的所有HDA最新版本
 
         查询租户的所有HDA最新版本。
         
@@ -7559,7 +7559,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_server_hda_details_async(self, request):
-        """查询服务器的HDA相关信息
+        r"""查询服务器的HDA相关信息
 
         查询服务器的HDA相关信息。
         
@@ -7630,7 +7630,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_server_hda_upgrade_records_async(self, request):
-        """查询服务器的HDA升级跟踪记录
+        r"""查询服务器的HDA升级跟踪记录
 
         查询服务器的HDA升级跟踪记录。
         
@@ -7697,7 +7697,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_server_metric_data_async(self, request):
-        """查询指定时间范围指定指标的指定粒度的监控数据
+        r"""查询指定时间范围指定指标的指定粒度的监控数据
 
         查询指定时间范围指定指标的指定粒度的监控数据，可以通过参数指定需要查询的数据维度。
         
@@ -7774,7 +7774,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_servers_async(self, request):
-        """查询服务器列表
+        r"""查询服务器列表
 
         查询服务器列表。
         
@@ -7855,7 +7855,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def reinstall_server_async(self, request):
-        """重装服务器
+        r"""重装服务器
 
         重装服务器。
         &gt; - 使用服务器原有的镜像进行重装，当服务器异常无法恢复时或者服务器运行时间久了，性能下降时，可选择重建服务器。注意：重装时系统盘的数据将会被清理掉。
@@ -7923,7 +7923,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_access_agent_latest_version_async(self, request):
-        """查询租户的HDA最新版本
+        r"""查询租户的HDA最新版本
 
         查询租户的HDA最新版本。
         
@@ -7986,7 +7986,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_async(self, request):
-        """查询指定服务器
+        r"""查询指定服务器
 
         查询指定的服务器当前这个接口的查询数据和list查询的一致。
         
@@ -8051,7 +8051,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_metric_data_async(self, request):
-        """查询云应用服务器监控信息
+        r"""查询云应用服务器监控信息
 
         该接口可获取某一计算机在一段时间段(范围：1小时到30天)的数据信息（例如CPU占用率、内存占用率、用户的在线时间段等），最长数据保存时间不能超过180天。
         
@@ -8122,7 +8122,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_vnc_async(self, request):
-        """获取VNC远程登录地址
+        r"""获取VNC远程登录地址
 
         获取VNC远程登录地址。
         
@@ -8187,7 +8187,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_server_async(self, request):
-        """修改服务器
+        r"""修改服务器
 
         修改服务器。
         &gt; - 服务器的状态修改为维护模式后，用户打开应用，选择可用的服务器进行接入的时候，会过滤掉处于维护模式的服务器。
@@ -8255,7 +8255,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_server_group_async(self, request):
-        """创建服务器组
+        r"""创建服务器组
 
         创建服务器组。
         &gt; - 服务器组是一组相同配置的服务器集合，服务器组内的服务器使用同一镜像创建，配置相同，运行相同的应用程序。用户在打开云应用时，会根据调度规则选取组内的一台可用服务器进行连接。
@@ -8321,7 +8321,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_server_groups_async(self, request):
-        """删除服务器组
+        r"""删除服务器组
 
         删除服务器组。
         - &gt; 删除服务器组之前，需要先删除服务器组内的所有服务器。如果传服务器组已被删除，重复执行删除，则返回成功响应。
@@ -8387,7 +8387,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_server_groups_async(self, request):
-        """查询服务器组列表
+        r"""查询服务器组列表
 
         查询服务器组列表。
         
@@ -8466,7 +8466,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_tenant_server_groups_async(self, request):
-        """查询租户服务器组基础信息列表
+        r"""查询租户服务器组基础信息列表
 
         查询租户服务器组基础信息列表(用于创建应用组时绑定服务器组)。
         
@@ -8539,7 +8539,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_group_async(self, request):
-        """查询指定服务器组
+        r"""查询指定服务器组
 
         查询指定的服务器组。
         
@@ -8604,7 +8604,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_group_restrict_async(self, request):
-        """指定租户服务器组限制查询
+        r"""指定租户服务器组限制查询
 
         指定租户服务器组限制查询。
         
@@ -8667,7 +8667,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_group_state_async(self, request):
-        """查询指定服务器组内服务器状态
+        r"""查询指定服务器组内服务器状态
 
         查询指定的服务器组内服务器状态。
         
@@ -8732,7 +8732,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def update_server_group_async(self, request):
-        """修改服务器组
+        r"""修改服务器组
 
         修改服务器组。
         - &gt; 修改服务器组的镜像，系统盘大小，OU信息后，已创建的服务器配置不变，新添加的服务器会使用新的配置创建。修改最大会话数后，用户接入服务器组时，会按照最新的配置进行路由计算。
@@ -8800,7 +8800,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_app_connection_async(self, request):
-        """查询应用使用记录
+        r"""查询应用使用记录
 
         查询应用使用记录。
         
@@ -8869,7 +8869,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_session_by_user_name_async(self, request):
-        """根据用户名查询当前会话
+        r"""根据用户名查询当前会话
 
         根据用户名查询当前会话。
         
@@ -8934,7 +8934,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_sessions_async(self, request):
-        """查询用户会话列表
+        r"""查询用户会话列表
 
         查询用户会话列表。
         
@@ -9019,7 +9019,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_user_connection_async(self, request):
-        """查询用户登录记录
+        r"""查询用户登录记录
 
         查询用户登录记录。
         
@@ -9088,7 +9088,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def logoff_user_session_async(self, request):
-        """用户会话注销
+        r"""用户会话注销
 
         用户会话注销。
         
@@ -9153,7 +9153,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_create_server_group_tags_async(self, request):
-        """批量添加服务器组标签
+        r"""批量添加服务器组标签
 
         此接口为幂等接口：
         同时对多个服务器组批量添加标签，最大支持100个服务器组，每个服务器组最大20个标签
@@ -9221,7 +9221,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def batch_delete_server_group_tags_async(self, request):
-        """批量删除服务器组标签
+        r"""批量删除服务器组标签
 
         此接口为幂等接口：
         同时对多个服务器组批量删除标签，最大支持100个服务器组，每个服务器组最大20个标签。
@@ -9289,7 +9289,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def create_server_group_tags_async(self, request):
-        """添加服务器组标签
+        r"""添加服务器组标签
 
         此接口为幂等接口：
         创建时如果请求体中存在重复key则报错。
@@ -9359,7 +9359,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def delete_server_group_tags_async(self, request):
-        """删除服务器组标签
+        r"""删除服务器组标签
 
         此接口为幂等接口：
         删除时，如果删除的标签不存在，默认处理成功,删除时不对标签字符集范围做校验。
@@ -9429,7 +9429,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_server_group_tag_async(self, request):
-        """查询租户在所有服务器组上的标签
+        r"""查询租户在所有服务器组上的标签
 
         查询租户在所有服务器组上的资源标签集合
         
@@ -9492,7 +9492,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def show_server_group_tag_async(self, request):
-        """查询服务器组的标签
+        r"""查询服务器组的标签
 
         查询指定服务器组的标签信息
         
@@ -9557,7 +9557,7 @@ class WorkspaceAppAsyncClient(Client):
         return http_info
 
     def list_volume_type_async(self, request):
-        """查询可用磁盘类型
+        r"""查询可用磁盘类型
 
         该接口用于查询可用磁盘类型。
         

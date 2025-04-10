@@ -27,7 +27,7 @@ class ListDDoSAttackEventRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListDDoSAttackEventRequest
+        r"""ListDDoSAttackEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListDDoSAttackEventRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDDoSAttackEventRequest.
+        r"""Gets the instance_id of this ListDDoSAttackEventRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ListDDoSAttackEventRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDDoSAttackEventRequest.
+        r"""Sets the instance_id of this ListDDoSAttackEventRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ListDDoSAttackEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDDoSAttackEventRequest.
+        r"""Gets the body of this ListDDoSAttackEventRequest.
 
         :return: The body of this ListDDoSAttackEventRequest.
         :rtype: :class:`huaweicloudsdkaad.v2.ListDDoSAttackEventRequestBody`
@@ -80,7 +80,7 @@ class ListDDoSAttackEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDDoSAttackEventRequest.
+        r"""Sets the body of this ListDDoSAttackEventRequest.
 
         :param body: The body of this ListDDoSAttackEventRequest.
         :type body: :class:`huaweicloudsdkaad.v2.ListDDoSAttackEventRequestBody`

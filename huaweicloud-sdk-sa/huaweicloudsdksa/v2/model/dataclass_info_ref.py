@@ -27,7 +27,7 @@ class DataclassInfoRef:
     }
 
     def __init__(self, id=None, name=None):
-        """DataclassInfoRef
+        r"""DataclassInfoRef
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataclassInfoRef:
 
     @property
     def id(self):
-        """Gets the id of this DataclassInfoRef.
+        r"""Gets the id of this DataclassInfoRef.
 
         Id value
 
@@ -61,7 +61,7 @@ class DataclassInfoRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataclassInfoRef.
+        r"""Sets the id of this DataclassInfoRef.
 
         Id value
 
@@ -72,7 +72,7 @@ class DataclassInfoRef:
 
     @property
     def name(self):
-        """Gets the name of this DataclassInfoRef.
+        r"""Gets the name of this DataclassInfoRef.
 
         Id value
 
@@ -83,7 +83,7 @@ class DataclassInfoRef:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataclassInfoRef.
+        r"""Sets the name of this DataclassInfoRef.
 
         Id value
 

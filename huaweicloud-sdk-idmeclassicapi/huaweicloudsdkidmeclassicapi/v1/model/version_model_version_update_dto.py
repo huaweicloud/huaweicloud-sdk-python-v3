@@ -31,7 +31,7 @@ class VersionModelVersionUpdateDTO:
     }
 
     def __init__(self, id=None, iteration=None, version=None, modifier=None):
-        """VersionModelVersionUpdateDTO
+        r"""VersionModelVersionUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class VersionModelVersionUpdateDTO:
 
     @property
     def id(self):
-        """Gets the id of this VersionModelVersionUpdateDTO.
+        r"""Gets the id of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -73,7 +73,7 @@ class VersionModelVersionUpdateDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionModelVersionUpdateDTO.
+        r"""Sets the id of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -84,7 +84,7 @@ class VersionModelVersionUpdateDTO:
 
     @property
     def iteration(self):
-        """Gets the iteration of this VersionModelVersionUpdateDTO.
+        r"""Gets the iteration of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -95,7 +95,7 @@ class VersionModelVersionUpdateDTO:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this VersionModelVersionUpdateDTO.
+        r"""Sets the iteration of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -106,7 +106,7 @@ class VersionModelVersionUpdateDTO:
 
     @property
     def version(self):
-        """Gets the version of this VersionModelVersionUpdateDTO.
+        r"""Gets the version of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -117,7 +117,7 @@ class VersionModelVersionUpdateDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionModelVersionUpdateDTO.
+        r"""Sets the version of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -128,7 +128,7 @@ class VersionModelVersionUpdateDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelVersionUpdateDTO.
+        r"""Gets the modifier of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -139,7 +139,7 @@ class VersionModelVersionUpdateDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelVersionUpdateDTO.
+        r"""Sets the modifier of this VersionModelVersionUpdateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

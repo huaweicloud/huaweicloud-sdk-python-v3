@@ -41,7 +41,7 @@ class ListEdgeSitesRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, enterprise_project_id=None, id=None, name=None, availability_zone_id=None, status=None):
-        """ListEdgeSitesRequest
+        r"""ListEdgeSitesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListEdgeSitesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEdgeSitesRequest.
+        r"""Gets the limit of this ListEdgeSitesRequest.
 
         每页的数量
 
@@ -110,7 +110,7 @@ class ListEdgeSitesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEdgeSitesRequest.
+        r"""Sets the limit of this ListEdgeSitesRequest.
 
         每页的数量
 
@@ -121,7 +121,7 @@ class ListEdgeSitesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEdgeSitesRequest.
+        r"""Gets the marker of this ListEdgeSitesRequest.
 
         分页标识
 
@@ -132,7 +132,7 @@ class ListEdgeSitesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEdgeSitesRequest.
+        r"""Sets the marker of this ListEdgeSitesRequest.
 
         分页标识
 
@@ -143,7 +143,7 @@ class ListEdgeSitesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListEdgeSitesRequest.
+        r"""Gets the sort_key of this ListEdgeSitesRequest.
 
         排序字段
 
@@ -154,7 +154,7 @@ class ListEdgeSitesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListEdgeSitesRequest.
+        r"""Sets the sort_key of this ListEdgeSitesRequest.
 
         排序字段
 
@@ -165,7 +165,7 @@ class ListEdgeSitesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListEdgeSitesRequest.
+        r"""Gets the sort_dir of this ListEdgeSitesRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 
@@ -176,7 +176,7 @@ class ListEdgeSitesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListEdgeSitesRequest.
+        r"""Sets the sort_dir of this ListEdgeSitesRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 
@@ -187,7 +187,7 @@ class ListEdgeSitesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEdgeSitesRequest.
+        r"""Gets the enterprise_project_id of this ListEdgeSitesRequest.
 
         企业项目ID。可以使用该字段过滤某个企业项目下的边缘小站。 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 若需要查询当前用户所有企业项目绑定的边缘小站，请传参all_granted_eps。 不传则查询全部。
 
@@ -198,7 +198,7 @@ class ListEdgeSitesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEdgeSitesRequest.
+        r"""Sets the enterprise_project_id of this ListEdgeSitesRequest.
 
         企业项目ID。可以使用该字段过滤某个企业项目下的边缘小站。 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 若需要查询当前用户所有企业项目绑定的边缘小站，请传参all_granted_eps。 不传则查询全部。
 
@@ -209,7 +209,7 @@ class ListEdgeSitesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEdgeSitesRequest.
+        r"""Gets the id of this ListEdgeSitesRequest.
 
         根据边缘小站ID查询，支持排序
 
@@ -220,7 +220,7 @@ class ListEdgeSitesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEdgeSitesRequest.
+        r"""Sets the id of this ListEdgeSitesRequest.
 
         根据边缘小站ID查询，支持排序
 
@@ -231,7 +231,7 @@ class ListEdgeSitesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEdgeSitesRequest.
+        r"""Gets the name of this ListEdgeSitesRequest.
 
         根据边缘小站名称查询（精确），支持排序
 
@@ -242,7 +242,7 @@ class ListEdgeSitesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEdgeSitesRequest.
+        r"""Sets the name of this ListEdgeSitesRequest.
 
         根据边缘小站名称查询（精确），支持排序
 
@@ -253,7 +253,7 @@ class ListEdgeSitesRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListEdgeSitesRequest.
+        r"""Gets the availability_zone_id of this ListEdgeSitesRequest.
 
         根据边缘可用区ID查询
 
@@ -264,7 +264,7 @@ class ListEdgeSitesRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListEdgeSitesRequest.
+        r"""Sets the availability_zone_id of this ListEdgeSitesRequest.
 
         根据边缘可用区ID查询
 
@@ -275,7 +275,7 @@ class ListEdgeSitesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEdgeSitesRequest.
+        r"""Gets the status of this ListEdgeSitesRequest.
 
         根据边缘小站部署状态查询
 
@@ -286,7 +286,7 @@ class ListEdgeSitesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEdgeSitesRequest.
+        r"""Sets the status of this ListEdgeSitesRequest.
 
         根据边缘小站部署状态查询
 

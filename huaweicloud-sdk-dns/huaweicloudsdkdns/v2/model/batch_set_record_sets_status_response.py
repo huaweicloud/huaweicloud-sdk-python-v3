@@ -30,7 +30,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """BatchSetRecordSetsStatusResponse
+        r"""BatchSetRecordSetsStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this BatchSetRecordSetsStatusResponse.
+        r"""Gets the links of this BatchSetRecordSetsStatusResponse.
 
         :return: The links of this BatchSetRecordSetsStatusResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Link`
@@ -67,7 +67,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this BatchSetRecordSetsStatusResponse.
+        r"""Sets the links of this BatchSetRecordSetsStatusResponse.
 
         :param links: The links of this BatchSetRecordSetsStatusResponse.
         :type links: :class:`huaweicloudsdkdns.v2.Link`
@@ -76,7 +76,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this BatchSetRecordSetsStatusResponse.
+        r"""Gets the recordsets of this BatchSetRecordSetsStatusResponse.
 
         设置record set的列表响应。
 
@@ -87,7 +87,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this BatchSetRecordSetsStatusResponse.
+        r"""Sets the recordsets of this BatchSetRecordSetsStatusResponse.
 
         设置record set的列表响应。
 
@@ -98,7 +98,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this BatchSetRecordSetsStatusResponse.
+        r"""Gets the metadata of this BatchSetRecordSetsStatusResponse.
 
         :return: The metadata of this BatchSetRecordSetsStatusResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class BatchSetRecordSetsStatusResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this BatchSetRecordSetsStatusResponse.
+        r"""Sets the metadata of this BatchSetRecordSetsStatusResponse.
 
         :param metadata: The metadata of this BatchSetRecordSetsStatusResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

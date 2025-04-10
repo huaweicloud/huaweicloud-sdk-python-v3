@@ -33,7 +33,7 @@ class LiveJobLog:
     }
 
     def __init__(self, interaction_records_url=None, job_config_records_url=None, scripts_records_url=None, command_reviced_records_url=None, command_exec_records_url=None):
-        """LiveJobLog
+        r"""LiveJobLog
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LiveJobLog:
 
     @property
     def interaction_records_url(self):
-        """Gets the interaction_records_url of this LiveJobLog.
+        r"""Gets the interaction_records_url of this LiveJobLog.
 
         直播互动记录文件地址
 
@@ -82,7 +82,7 @@ class LiveJobLog:
 
     @interaction_records_url.setter
     def interaction_records_url(self, interaction_records_url):
-        """Sets the interaction_records_url of this LiveJobLog.
+        r"""Sets the interaction_records_url of this LiveJobLog.
 
         直播互动记录文件地址
 
@@ -93,7 +93,7 @@ class LiveJobLog:
 
     @property
     def job_config_records_url(self):
-        """Gets the job_config_records_url of this LiveJobLog.
+        r"""Gets the job_config_records_url of this LiveJobLog.
 
         任务配置记录文件地址
 
@@ -104,7 +104,7 @@ class LiveJobLog:
 
     @job_config_records_url.setter
     def job_config_records_url(self, job_config_records_url):
-        """Sets the job_config_records_url of this LiveJobLog.
+        r"""Sets the job_config_records_url of this LiveJobLog.
 
         任务配置记录文件地址
 
@@ -115,7 +115,7 @@ class LiveJobLog:
 
     @property
     def scripts_records_url(self):
-        """Gets the scripts_records_url of this LiveJobLog.
+        r"""Gets the scripts_records_url of this LiveJobLog.
 
         剧本播放记录文件地址
 
@@ -126,7 +126,7 @@ class LiveJobLog:
 
     @scripts_records_url.setter
     def scripts_records_url(self, scripts_records_url):
-        """Sets the scripts_records_url of this LiveJobLog.
+        r"""Sets the scripts_records_url of this LiveJobLog.
 
         剧本播放记录文件地址
 
@@ -137,7 +137,7 @@ class LiveJobLog:
 
     @property
     def command_reviced_records_url(self):
-        """Gets the command_reviced_records_url of this LiveJobLog.
+        r"""Gets the command_reviced_records_url of this LiveJobLog.
 
         命令接受记录文件地址
 
@@ -148,7 +148,7 @@ class LiveJobLog:
 
     @command_reviced_records_url.setter
     def command_reviced_records_url(self, command_reviced_records_url):
-        """Sets the command_reviced_records_url of this LiveJobLog.
+        r"""Sets the command_reviced_records_url of this LiveJobLog.
 
         命令接受记录文件地址
 
@@ -159,7 +159,7 @@ class LiveJobLog:
 
     @property
     def command_exec_records_url(self):
-        """Gets the command_exec_records_url of this LiveJobLog.
+        r"""Gets the command_exec_records_url of this LiveJobLog.
 
         命令执行记录文件地址
 
@@ -170,7 +170,7 @@ class LiveJobLog:
 
     @command_exec_records_url.setter
     def command_exec_records_url(self, command_exec_records_url):
-        """Sets the command_exec_records_url of this LiveJobLog.
+        r"""Sets the command_exec_records_url of this LiveJobLog.
 
         命令执行记录文件地址
 

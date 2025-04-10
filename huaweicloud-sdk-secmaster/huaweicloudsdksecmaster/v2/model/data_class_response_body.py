@@ -59,7 +59,7 @@ class DataClassResponseBody:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None, cloud_pack_version=None, region_id=None, project_id=None, workspace_id=None, domain_id=None, name=None, business_code=None, description=None, is_built_in=None, parent_id=None, type_num=None):
-        """DataClassResponseBody
+        r"""DataClassResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class DataClassResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this DataClassResponseBody.
+        r"""Gets the id of this DataClassResponseBody.
 
         数据类ID
 
@@ -173,7 +173,7 @@ class DataClassResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataClassResponseBody.
+        r"""Sets the id of this DataClassResponseBody.
 
         数据类ID
 
@@ -184,7 +184,7 @@ class DataClassResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataClassResponseBody.
+        r"""Gets the create_time of this DataClassResponseBody.
 
         创建时间
 
@@ -195,7 +195,7 @@ class DataClassResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataClassResponseBody.
+        r"""Sets the create_time of this DataClassResponseBody.
 
         创建时间
 
@@ -206,7 +206,7 @@ class DataClassResponseBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DataClassResponseBody.
+        r"""Gets the update_time of this DataClassResponseBody.
 
         更新时间
 
@@ -217,7 +217,7 @@ class DataClassResponseBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DataClassResponseBody.
+        r"""Sets the update_time of this DataClassResponseBody.
 
         更新时间
 
@@ -228,7 +228,7 @@ class DataClassResponseBody:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this DataClassResponseBody.
+        r"""Gets the creator_id of this DataClassResponseBody.
 
         创建者ID
 
@@ -239,7 +239,7 @@ class DataClassResponseBody:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this DataClassResponseBody.
+        r"""Sets the creator_id of this DataClassResponseBody.
 
         创建者ID
 
@@ -250,7 +250,7 @@ class DataClassResponseBody:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this DataClassResponseBody.
+        r"""Gets the creator_name of this DataClassResponseBody.
 
         创建者名称
 
@@ -261,7 +261,7 @@ class DataClassResponseBody:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this DataClassResponseBody.
+        r"""Sets the creator_name of this DataClassResponseBody.
 
         创建者名称
 
@@ -272,7 +272,7 @@ class DataClassResponseBody:
 
     @property
     def modifier_id(self):
-        """Gets the modifier_id of this DataClassResponseBody.
+        r"""Gets the modifier_id of this DataClassResponseBody.
 
         修改者ID
 
@@ -283,7 +283,7 @@ class DataClassResponseBody:
 
     @modifier_id.setter
     def modifier_id(self, modifier_id):
-        """Sets the modifier_id of this DataClassResponseBody.
+        r"""Sets the modifier_id of this DataClassResponseBody.
 
         修改者ID
 
@@ -294,7 +294,7 @@ class DataClassResponseBody:
 
     @property
     def modifier_name(self):
-        """Gets the modifier_name of this DataClassResponseBody.
+        r"""Gets the modifier_name of this DataClassResponseBody.
 
         修改这名称
 
@@ -305,7 +305,7 @@ class DataClassResponseBody:
 
     @modifier_name.setter
     def modifier_name(self, modifier_name):
-        """Sets the modifier_name of this DataClassResponseBody.
+        r"""Sets the modifier_name of this DataClassResponseBody.
 
         修改这名称
 
@@ -316,7 +316,7 @@ class DataClassResponseBody:
 
     @property
     def cloud_pack_version(self):
-        """Gets the cloud_pack_version of this DataClassResponseBody.
+        r"""Gets the cloud_pack_version of this DataClassResponseBody.
 
         订阅包版本
 
@@ -327,7 +327,7 @@ class DataClassResponseBody:
 
     @cloud_pack_version.setter
     def cloud_pack_version(self, cloud_pack_version):
-        """Sets the cloud_pack_version of this DataClassResponseBody.
+        r"""Sets the cloud_pack_version of this DataClassResponseBody.
 
         订阅包版本
 
@@ -338,7 +338,7 @@ class DataClassResponseBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DataClassResponseBody.
+        r"""Gets the region_id of this DataClassResponseBody.
 
         区域ID
 
@@ -349,7 +349,7 @@ class DataClassResponseBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DataClassResponseBody.
+        r"""Sets the region_id of this DataClassResponseBody.
 
         区域ID
 
@@ -360,7 +360,7 @@ class DataClassResponseBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataClassResponseBody.
+        r"""Gets the project_id of this DataClassResponseBody.
 
         租户ID
 
@@ -371,7 +371,7 @@ class DataClassResponseBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataClassResponseBody.
+        r"""Sets the project_id of this DataClassResponseBody.
 
         租户ID
 
@@ -382,7 +382,7 @@ class DataClassResponseBody:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DataClassResponseBody.
+        r"""Gets the workspace_id of this DataClassResponseBody.
 
         工作空间ID
 
@@ -393,7 +393,7 @@ class DataClassResponseBody:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DataClassResponseBody.
+        r"""Sets the workspace_id of this DataClassResponseBody.
 
         工作空间ID
 
@@ -404,7 +404,7 @@ class DataClassResponseBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DataClassResponseBody.
+        r"""Gets the domain_id of this DataClassResponseBody.
 
         domain id
 
@@ -415,7 +415,7 @@ class DataClassResponseBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DataClassResponseBody.
+        r"""Sets the domain_id of this DataClassResponseBody.
 
         domain id
 
@@ -426,7 +426,7 @@ class DataClassResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this DataClassResponseBody.
+        r"""Gets the name of this DataClassResponseBody.
 
         数据类名称
 
@@ -437,7 +437,7 @@ class DataClassResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassResponseBody.
+        r"""Sets the name of this DataClassResponseBody.
 
         数据类名称
 
@@ -448,7 +448,7 @@ class DataClassResponseBody:
 
     @property
     def business_code(self):
-        """Gets the business_code of this DataClassResponseBody.
+        r"""Gets the business_code of this DataClassResponseBody.
 
         数据类业务编码
 
@@ -459,7 +459,7 @@ class DataClassResponseBody:
 
     @business_code.setter
     def business_code(self, business_code):
-        """Sets the business_code of this DataClassResponseBody.
+        r"""Sets the business_code of this DataClassResponseBody.
 
         数据类业务编码
 
@@ -470,7 +470,7 @@ class DataClassResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this DataClassResponseBody.
+        r"""Gets the description of this DataClassResponseBody.
 
         数据类描述
 
@@ -481,7 +481,7 @@ class DataClassResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassResponseBody.
+        r"""Sets the description of this DataClassResponseBody.
 
         数据类描述
 
@@ -492,7 +492,7 @@ class DataClassResponseBody:
 
     @property
     def is_built_in(self):
-        """Gets the is_built_in of this DataClassResponseBody.
+        r"""Gets the is_built_in of this DataClassResponseBody.
 
         是否内置，true内置，false非内置
 
@@ -503,7 +503,7 @@ class DataClassResponseBody:
 
     @is_built_in.setter
     def is_built_in(self, is_built_in):
-        """Sets the is_built_in of this DataClassResponseBody.
+        r"""Sets the is_built_in of this DataClassResponseBody.
 
         是否内置，true内置，false非内置
 
@@ -514,7 +514,7 @@ class DataClassResponseBody:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this DataClassResponseBody.
+        r"""Gets the parent_id of this DataClassResponseBody.
 
         父级id
 
@@ -525,7 +525,7 @@ class DataClassResponseBody:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this DataClassResponseBody.
+        r"""Sets the parent_id of this DataClassResponseBody.
 
         父级id
 
@@ -536,7 +536,7 @@ class DataClassResponseBody:
 
     @property
     def type_num(self):
-        """Gets the type_num of this DataClassResponseBody.
+        r"""Gets the type_num of this DataClassResponseBody.
 
         子类型数量
 
@@ -547,7 +547,7 @@ class DataClassResponseBody:
 
     @type_num.setter
     def type_num(self, type_num):
-        """Sets the type_num of this DataClassResponseBody.
+        r"""Sets the type_num of this DataClassResponseBody.
 
         子类型数量
 

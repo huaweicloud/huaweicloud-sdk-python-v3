@@ -25,7 +25,7 @@ class DeleteMessageTemplateRequest:
     }
 
     def __init__(self, message_template_id=None):
-        """DeleteMessageTemplateRequest
+        r"""DeleteMessageTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMessageTemplateRequest:
 
     @property
     def message_template_id(self):
-        """Gets the message_template_id of this DeleteMessageTemplateRequest.
+        r"""Gets the message_template_id of this DeleteMessageTemplateRequest.
 
         模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class DeleteMessageTemplateRequest:
 
     @message_template_id.setter
     def message_template_id(self, message_template_id):
-        """Sets the message_template_id of this DeleteMessageTemplateRequest.
+        r"""Sets the message_template_id of this DeleteMessageTemplateRequest.
 
         模板唯一的资源标识，可通过查询[消息模板列表](ListMessageTemplates.xml)获取该标识。
 

@@ -27,7 +27,7 @@ class ListHookInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, instance_id=None):
-        """ListHookInstancesRequest
+        r"""ListHookInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListHookInstancesRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListHookInstancesRequest.
+        r"""Gets the scaling_group_id of this ListHookInstancesRequest.
 
         伸缩组ID。
 
@@ -60,7 +60,7 @@ class ListHookInstancesRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListHookInstancesRequest.
+        r"""Sets the scaling_group_id of this ListHookInstancesRequest.
 
         伸缩组ID。
 
@@ -71,7 +71,7 @@ class ListHookInstancesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListHookInstancesRequest.
+        r"""Gets the instance_id of this ListHookInstancesRequest.
 
         伸缩实例ID。
 
@@ -82,7 +82,7 @@ class ListHookInstancesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListHookInstancesRequest.
+        r"""Sets the instance_id of this ListHookInstancesRequest.
 
         伸缩实例ID。
 

@@ -29,7 +29,7 @@ class UpdateStarrocksParamsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateStarrocksParamsRequest
+        r"""UpdateStarrocksParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateStarrocksParamsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateStarrocksParamsRequest.
+        r"""Gets the instance_id of this UpdateStarrocksParamsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class UpdateStarrocksParamsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateStarrocksParamsRequest.
+        r"""Sets the instance_id of this UpdateStarrocksParamsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class UpdateStarrocksParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateStarrocksParamsRequest.
+        r"""Gets the x_language of this UpdateStarrocksParamsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class UpdateStarrocksParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateStarrocksParamsRequest.
+        r"""Sets the x_language of this UpdateStarrocksParamsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class UpdateStarrocksParamsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStarrocksParamsRequest.
+        r"""Gets the body of this UpdateStarrocksParamsRequest.
 
         :return: The body of this UpdateStarrocksParamsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateParamInfo`
@@ -109,7 +109,7 @@ class UpdateStarrocksParamsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStarrocksParamsRequest.
+        r"""Sets the body of this UpdateStarrocksParamsRequest.
 
         :param body: The body of this UpdateStarrocksParamsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateParamInfo`

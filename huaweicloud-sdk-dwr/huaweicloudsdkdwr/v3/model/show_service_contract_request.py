@@ -25,7 +25,7 @@ class ShowServiceContractRequest:
     }
 
     def __init__(self, type=None):
-        """ShowServiceContractRequest
+        r"""ShowServiceContractRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServiceContractRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowServiceContractRequest.
+        r"""Gets the type of this ShowServiceContractRequest.
 
         服务协议名称 使用公共Action的免责声明协议: use_public_action_privacy_statement 注册公共Action的免责声明协议: register_public_action_privacy_statement
 
@@ -53,7 +53,7 @@ class ShowServiceContractRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowServiceContractRequest.
+        r"""Sets the type of this ShowServiceContractRequest.
 
         服务协议名称 使用公共Action的免责声明协议: use_public_action_privacy_statement 注册公共Action的免责声明协议: register_public_action_privacy_statement
 

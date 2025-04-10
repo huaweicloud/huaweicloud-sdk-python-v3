@@ -28,7 +28,7 @@ class ShowAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, meta_data=None, thresholds=None):
-        """ShowAlarmRuleResponse
+        r"""ShowAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAlarmRuleResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ShowAlarmRuleResponse.
+        r"""Gets the meta_data of this ShowAlarmRuleResponse.
 
         :return: The meta_data of this ShowAlarmRuleResponse.
         :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
@@ -60,7 +60,7 @@ class ShowAlarmRuleResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ShowAlarmRuleResponse.
+        r"""Sets the meta_data of this ShowAlarmRuleResponse.
 
         :param meta_data: The meta_data of this ShowAlarmRuleResponse.
         :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
@@ -69,7 +69,7 @@ class ShowAlarmRuleResponse(SdkResponse):
 
     @property
     def thresholds(self):
-        """Gets the thresholds of this ShowAlarmRuleResponse.
+        r"""Gets the thresholds of this ShowAlarmRuleResponse.
 
         阈值规则列表。
 
@@ -80,7 +80,7 @@ class ShowAlarmRuleResponse(SdkResponse):
 
     @thresholds.setter
     def thresholds(self, thresholds):
-        """Sets the thresholds of this ShowAlarmRuleResponse.
+        r"""Sets the thresholds of this ShowAlarmRuleResponse.
 
         阈值规则列表。
 

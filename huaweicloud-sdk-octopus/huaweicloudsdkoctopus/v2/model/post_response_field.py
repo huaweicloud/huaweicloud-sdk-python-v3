@@ -35,7 +35,7 @@ class PostResponseField:
     }
 
     def __init__(self, key=None, x_amz_algorithm=None, x_amz_credential=None, x_amz_date=None, policy=None, x_amz_signature=None):
-        """PostResponseField
+        r"""PostResponseField
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PostResponseField:
 
     @property
     def key(self):
-        """Gets the key of this PostResponseField.
+        r"""Gets the key of this PostResponseField.
 
         :return: The key of this PostResponseField.
         :rtype: str
@@ -87,7 +87,7 @@ class PostResponseField:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PostResponseField.
+        r"""Sets the key of this PostResponseField.
 
         :param key: The key of this PostResponseField.
         :type key: str
@@ -96,7 +96,7 @@ class PostResponseField:
 
     @property
     def x_amz_algorithm(self):
-        """Gets the x_amz_algorithm of this PostResponseField.
+        r"""Gets the x_amz_algorithm of this PostResponseField.
 
         :return: The x_amz_algorithm of this PostResponseField.
         :rtype: str
@@ -105,7 +105,7 @@ class PostResponseField:
 
     @x_amz_algorithm.setter
     def x_amz_algorithm(self, x_amz_algorithm):
-        """Sets the x_amz_algorithm of this PostResponseField.
+        r"""Sets the x_amz_algorithm of this PostResponseField.
 
         :param x_amz_algorithm: The x_amz_algorithm of this PostResponseField.
         :type x_amz_algorithm: str
@@ -114,7 +114,7 @@ class PostResponseField:
 
     @property
     def x_amz_credential(self):
-        """Gets the x_amz_credential of this PostResponseField.
+        r"""Gets the x_amz_credential of this PostResponseField.
 
         :return: The x_amz_credential of this PostResponseField.
         :rtype: str
@@ -123,7 +123,7 @@ class PostResponseField:
 
     @x_amz_credential.setter
     def x_amz_credential(self, x_amz_credential):
-        """Sets the x_amz_credential of this PostResponseField.
+        r"""Sets the x_amz_credential of this PostResponseField.
 
         :param x_amz_credential: The x_amz_credential of this PostResponseField.
         :type x_amz_credential: str
@@ -132,7 +132,7 @@ class PostResponseField:
 
     @property
     def x_amz_date(self):
-        """Gets the x_amz_date of this PostResponseField.
+        r"""Gets the x_amz_date of this PostResponseField.
 
         :return: The x_amz_date of this PostResponseField.
         :rtype: str
@@ -141,7 +141,7 @@ class PostResponseField:
 
     @x_amz_date.setter
     def x_amz_date(self, x_amz_date):
-        """Sets the x_amz_date of this PostResponseField.
+        r"""Sets the x_amz_date of this PostResponseField.
 
         :param x_amz_date: The x_amz_date of this PostResponseField.
         :type x_amz_date: str
@@ -150,7 +150,7 @@ class PostResponseField:
 
     @property
     def policy(self):
-        """Gets the policy of this PostResponseField.
+        r"""Gets the policy of this PostResponseField.
 
         :return: The policy of this PostResponseField.
         :rtype: str
@@ -159,7 +159,7 @@ class PostResponseField:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this PostResponseField.
+        r"""Sets the policy of this PostResponseField.
 
         :param policy: The policy of this PostResponseField.
         :type policy: str
@@ -168,7 +168,7 @@ class PostResponseField:
 
     @property
     def x_amz_signature(self):
-        """Gets the x_amz_signature of this PostResponseField.
+        r"""Gets the x_amz_signature of this PostResponseField.
 
         :return: The x_amz_signature of this PostResponseField.
         :rtype: str
@@ -177,7 +177,7 @@ class PostResponseField:
 
     @x_amz_signature.setter
     def x_amz_signature(self, x_amz_signature):
-        """Sets the x_amz_signature of this PostResponseField.
+        r"""Sets the x_amz_signature of this PostResponseField.
 
         :param x_amz_signature: The x_amz_signature of this PostResponseField.
         :type x_amz_signature: str

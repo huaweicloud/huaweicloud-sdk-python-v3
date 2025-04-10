@@ -25,7 +25,7 @@ class BatchAttachSharebwReq:
     }
 
     def __init__(self, publicips=None):
-        """BatchAttachSharebwReq
+        r"""BatchAttachSharebwReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAttachSharebwReq:
 
     @property
     def publicips(self):
-        """Gets the publicips of this BatchAttachSharebwReq.
+        r"""Gets the publicips of this BatchAttachSharebwReq.
 
         - 功能说明：共享带宽数据 - 约束：共享带宽批量加入多个弹性公网IP时，请求参数publicips中的bandwidth_id必须为同一个共享带宽的id
 
@@ -54,7 +54,7 @@ class BatchAttachSharebwReq:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this BatchAttachSharebwReq.
+        r"""Sets the publicips of this BatchAttachSharebwReq.
 
         - 功能说明：共享带宽数据 - 约束：共享带宽批量加入多个弹性公网IP时，请求参数publicips中的bandwidth_id必须为同一个共享带宽的id
 

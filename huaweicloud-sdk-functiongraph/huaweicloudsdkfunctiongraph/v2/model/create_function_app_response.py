@@ -26,7 +26,7 @@ class CreateFunctionAppResponse(SdkResponse):
     }
 
     def __init__(self, application_id=None):
-        """CreateFunctionAppResponse
+        r"""CreateFunctionAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateFunctionAppResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateFunctionAppResponse.
+        r"""Gets the application_id of this CreateFunctionAppResponse.
 
         应用id
 
@@ -55,7 +55,7 @@ class CreateFunctionAppResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateFunctionAppResponse.
+        r"""Sets the application_id of this CreateFunctionAppResponse.
 
         应用id
 

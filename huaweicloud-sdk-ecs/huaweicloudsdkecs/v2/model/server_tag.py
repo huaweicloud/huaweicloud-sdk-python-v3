@@ -27,7 +27,7 @@ class ServerTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ServerTag
+        r"""ServerTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ServerTag:
 
     @property
     def key(self):
-        """Gets the key of this ServerTag.
+        r"""Gets the key of this ServerTag.
 
         键。  - 不能为空。  - 对于同一资源键值唯一。  - 长度不超过36个字符。  - 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。 
 
@@ -60,7 +60,7 @@ class ServerTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ServerTag.
+        r"""Sets the key of this ServerTag.
 
         键。  - 不能为空。  - 对于同一资源键值唯一。  - 长度不超过36个字符。  - 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。 
 
@@ -71,7 +71,7 @@ class ServerTag:
 
     @property
     def value(self):
-        """Gets the value of this ServerTag.
+        r"""Gets the value of this ServerTag.
 
         值。  - 长度不超过43个字符。  - 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。  - 只能包含数字、字母、中划线“-”、下划线“_”。
 
@@ -82,7 +82,7 @@ class ServerTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ServerTag.
+        r"""Sets the value of this ServerTag.
 
         值。  - 长度不超过43个字符。  - 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。  - 只能包含数字、字母、中划线“-”、下划线“_”。
 

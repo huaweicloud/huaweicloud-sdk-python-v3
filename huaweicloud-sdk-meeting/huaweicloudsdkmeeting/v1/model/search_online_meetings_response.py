@@ -32,7 +32,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchOnlineMeetingsResponse
+        r"""SearchOnlineMeetingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchOnlineMeetingsResponse.
+        r"""Gets the offset of this SearchOnlineMeetingsResponse.
 
         查询偏移量。
 
@@ -76,7 +76,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchOnlineMeetingsResponse.
+        r"""Sets the offset of this SearchOnlineMeetingsResponse.
 
         查询偏移量。
 
@@ -87,7 +87,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchOnlineMeetingsResponse.
+        r"""Gets the limit of this SearchOnlineMeetingsResponse.
 
         每页的记录数。
 
@@ -98,7 +98,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchOnlineMeetingsResponse.
+        r"""Sets the limit of this SearchOnlineMeetingsResponse.
 
         每页的记录数。
 
@@ -109,7 +109,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchOnlineMeetingsResponse.
+        r"""Gets the count of this SearchOnlineMeetingsResponse.
 
         总记录数。
 
@@ -120,7 +120,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchOnlineMeetingsResponse.
+        r"""Sets the count of this SearchOnlineMeetingsResponse.
 
         总记录数。
 
@@ -131,7 +131,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchOnlineMeetingsResponse.
+        r"""Gets the data of this SearchOnlineMeetingsResponse.
 
         会议列表。
 
@@ -142,7 +142,7 @@ class SearchOnlineMeetingsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchOnlineMeetingsResponse.
+        r"""Sets the data of this SearchOnlineMeetingsResponse.
 
         会议列表。
 

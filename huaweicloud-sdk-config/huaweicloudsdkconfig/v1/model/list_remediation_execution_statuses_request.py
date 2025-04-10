@@ -33,7 +33,7 @@ class ListRemediationExecutionStatusesRequest:
     }
 
     def __init__(self, policy_assignment_id=None, limit=None, marker=None, resource_id=None, resource_name=None):
-        """ListRemediationExecutionStatusesRequest
+        r"""ListRemediationExecutionStatusesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ListRemediationExecutionStatusesRequest.
+        r"""Gets the policy_assignment_id of this ListRemediationExecutionStatusesRequest.
 
         规则ID
 
@@ -81,7 +81,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ListRemediationExecutionStatusesRequest.
+        r"""Sets the policy_assignment_id of this ListRemediationExecutionStatusesRequest.
 
         规则ID
 
@@ -92,7 +92,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRemediationExecutionStatusesRequest.
+        r"""Gets the limit of this ListRemediationExecutionStatusesRequest.
 
         最大的返回数量
 
@@ -103,7 +103,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRemediationExecutionStatusesRequest.
+        r"""Sets the limit of this ListRemediationExecutionStatusesRequest.
 
         最大的返回数量
 
@@ -114,7 +114,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRemediationExecutionStatusesRequest.
+        r"""Gets the marker of this ListRemediationExecutionStatusesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -125,7 +125,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRemediationExecutionStatusesRequest.
+        r"""Sets the marker of this ListRemediationExecutionStatusesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -136,7 +136,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListRemediationExecutionStatusesRequest.
+        r"""Gets the resource_id of this ListRemediationExecutionStatusesRequest.
 
         资源ID
 
@@ -147,7 +147,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListRemediationExecutionStatusesRequest.
+        r"""Sets the resource_id of this ListRemediationExecutionStatusesRequest.
 
         资源ID
 
@@ -158,7 +158,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListRemediationExecutionStatusesRequest.
+        r"""Gets the resource_name of this ListRemediationExecutionStatusesRequest.
 
         资源名称
 
@@ -169,7 +169,7 @@ class ListRemediationExecutionStatusesRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListRemediationExecutionStatusesRequest.
+        r"""Sets the resource_name of this ListRemediationExecutionStatusesRequest.
 
         资源名称
 

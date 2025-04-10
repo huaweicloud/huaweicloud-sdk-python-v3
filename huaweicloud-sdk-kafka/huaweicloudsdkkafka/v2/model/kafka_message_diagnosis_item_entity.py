@@ -37,7 +37,7 @@ class KafkaMessageDiagnosisItemEntity:
     }
 
     def __init__(self, name=None, result=None, cause_ids=None, advice_ids=None, partitions=None, failed_partitions=None, broker_ids=None):
-        """KafkaMessageDiagnosisItemEntity
+        r"""KafkaMessageDiagnosisItemEntity
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def name(self):
-        """Gets the name of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the name of this KafkaMessageDiagnosisItemEntity.
 
         诊断项名称
 
@@ -94,7 +94,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the name of this KafkaMessageDiagnosisItemEntity.
 
         诊断项名称
 
@@ -105,7 +105,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def result(self):
-        """Gets the result of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the result of this KafkaMessageDiagnosisItemEntity.
 
         诊断结果
 
@@ -116,7 +116,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the result of this KafkaMessageDiagnosisItemEntity.
 
         诊断结果
 
@@ -127,7 +127,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def cause_ids(self):
-        """Gets the cause_ids of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the cause_ids of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常原因列表
 
@@ -138,7 +138,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @cause_ids.setter
     def cause_ids(self, cause_ids):
-        """Sets the cause_ids of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the cause_ids of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常原因列表
 
@@ -149,7 +149,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def advice_ids(self):
-        """Gets the advice_ids of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the advice_ids of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常建议列表
 
@@ -160,7 +160,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @advice_ids.setter
     def advice_ids(self, advice_ids):
-        """Sets the advice_ids of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the advice_ids of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常建议列表
 
@@ -171,7 +171,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def partitions(self):
-        """Gets the partitions of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the partitions of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常受影响的分区列表
 
@@ -182,7 +182,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the partitions of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常受影响的分区列表
 
@@ -193,7 +193,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def failed_partitions(self):
-        """Gets the failed_partitions of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the failed_partitions of this KafkaMessageDiagnosisItemEntity.
 
         诊断失败的分区列表
 
@@ -204,7 +204,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @failed_partitions.setter
     def failed_partitions(self, failed_partitions):
-        """Sets the failed_partitions of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the failed_partitions of this KafkaMessageDiagnosisItemEntity.
 
         诊断失败的分区列表
 
@@ -215,7 +215,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @property
     def broker_ids(self):
-        """Gets the broker_ids of this KafkaMessageDiagnosisItemEntity.
+        r"""Gets the broker_ids of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常受影响的broker列表
 
@@ -226,7 +226,7 @@ class KafkaMessageDiagnosisItemEntity:
 
     @broker_ids.setter
     def broker_ids(self, broker_ids):
-        """Sets the broker_ids of this KafkaMessageDiagnosisItemEntity.
+        r"""Sets the broker_ids of this KafkaMessageDiagnosisItemEntity.
 
         诊断异常受影响的broker列表
 

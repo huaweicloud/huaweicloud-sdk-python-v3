@@ -29,7 +29,7 @@ class GlanceUpdateImageMemberRequest:
     }
 
     def __init__(self, image_id=None, member_id=None, body=None):
-        """GlanceUpdateImageMemberRequest
+        r"""GlanceUpdateImageMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GlanceUpdateImageMemberRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceUpdateImageMemberRequest.
+        r"""Gets the image_id of this GlanceUpdateImageMemberRequest.
 
         镜像id
 
@@ -66,7 +66,7 @@ class GlanceUpdateImageMemberRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceUpdateImageMemberRequest.
+        r"""Sets the image_id of this GlanceUpdateImageMemberRequest.
 
         镜像id
 
@@ -77,7 +77,7 @@ class GlanceUpdateImageMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this GlanceUpdateImageMemberRequest.
+        r"""Gets the member_id of this GlanceUpdateImageMemberRequest.
 
         成员id
 
@@ -88,7 +88,7 @@ class GlanceUpdateImageMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GlanceUpdateImageMemberRequest.
+        r"""Sets the member_id of this GlanceUpdateImageMemberRequest.
 
         成员id
 
@@ -99,7 +99,7 @@ class GlanceUpdateImageMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this GlanceUpdateImageMemberRequest.
+        r"""Gets the body of this GlanceUpdateImageMemberRequest.
 
         :return: The body of this GlanceUpdateImageMemberRequest.
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequestBody`
@@ -108,7 +108,7 @@ class GlanceUpdateImageMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GlanceUpdateImageMemberRequest.
+        r"""Sets the body of this GlanceUpdateImageMemberRequest.
 
         :param body: The body of this GlanceUpdateImageMemberRequest.
         :type body: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequestBody`

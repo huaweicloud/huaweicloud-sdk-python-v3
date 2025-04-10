@@ -31,7 +31,7 @@ class FinancialStatementWordsRegionList:
     }
 
     def __init__(self, type=None, words_block_count=None, table_location=None, words_block_list=None):
-        """FinancialStatementWordsRegionList
+        r"""FinancialStatementWordsRegionList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FinancialStatementWordsRegionList:
 
     @property
     def type(self):
-        """Gets the type of this FinancialStatementWordsRegionList.
+        r"""Gets the type of this FinancialStatementWordsRegionList.
 
         区域属性：文本或表格。 
 
@@ -75,7 +75,7 @@ class FinancialStatementWordsRegionList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FinancialStatementWordsRegionList.
+        r"""Sets the type of this FinancialStatementWordsRegionList.
 
         区域属性：文本或表格。 
 
@@ -86,7 +86,7 @@ class FinancialStatementWordsRegionList:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this FinancialStatementWordsRegionList.
+        r"""Gets the words_block_count of this FinancialStatementWordsRegionList.
 
         区域内文字块数目。对文本区，文字块以文本字段为单位；对表格区，文字块以单元格内所有字段为单位。 
 
@@ -97,7 +97,7 @@ class FinancialStatementWordsRegionList:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this FinancialStatementWordsRegionList.
+        r"""Sets the words_block_count of this FinancialStatementWordsRegionList.
 
         区域内文字块数目。对文本区，文字块以文本字段为单位；对表格区，文字块以单元格内所有字段为单位。 
 
@@ -108,7 +108,7 @@ class FinancialStatementWordsRegionList:
 
     @property
     def table_location(self):
-        """Gets the table_location of this FinancialStatementWordsRegionList.
+        r"""Gets the table_location of this FinancialStatementWordsRegionList.
 
         表格位置信息，列表形式，分别表示表格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -119,7 +119,7 @@ class FinancialStatementWordsRegionList:
 
     @table_location.setter
     def table_location(self, table_location):
-        """Sets the table_location of this FinancialStatementWordsRegionList.
+        r"""Sets the table_location of this FinancialStatementWordsRegionList.
 
         表格位置信息，列表形式，分别表示表格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -130,7 +130,7 @@ class FinancialStatementWordsRegionList:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this FinancialStatementWordsRegionList.
+        r"""Gets the words_block_list of this FinancialStatementWordsRegionList.
 
         区域内文字块列表，输出顺序从左到右，从上到下。 
 
@@ -141,7 +141,7 @@ class FinancialStatementWordsRegionList:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this FinancialStatementWordsRegionList.
+        r"""Sets the words_block_list of this FinancialStatementWordsRegionList.
 
         区域内文字块列表，输出顺序从左到右，从上到下。 
 

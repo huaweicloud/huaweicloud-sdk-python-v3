@@ -55,7 +55,7 @@ class DataCategoryDTO:
     }
 
     def __init__(self, category_id=None, category_name=None, description=None, category_level=None, rule_list=None, root_id=None, parent_id=None, category_path=None, create_by=None, create_time=None, update_by=None, update_time=None, project_id=None, instance_id=None, synchronize=None, children=None):
-        """DataCategoryDTO
+        r"""DataCategoryDTO
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class DataCategoryDTO:
 
     @property
     def category_id(self):
-        """Gets the category_id of this DataCategoryDTO.
+        r"""Gets the category_id of this DataCategoryDTO.
 
         分类id
 
@@ -159,7 +159,7 @@ class DataCategoryDTO:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this DataCategoryDTO.
+        r"""Sets the category_id of this DataCategoryDTO.
 
         分类id
 
@@ -170,7 +170,7 @@ class DataCategoryDTO:
 
     @property
     def category_name(self):
-        """Gets the category_name of this DataCategoryDTO.
+        r"""Gets the category_name of this DataCategoryDTO.
 
         分类名称
 
@@ -181,7 +181,7 @@ class DataCategoryDTO:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this DataCategoryDTO.
+        r"""Sets the category_name of this DataCategoryDTO.
 
         分类名称
 
@@ -192,7 +192,7 @@ class DataCategoryDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataCategoryDTO.
+        r"""Gets the description of this DataCategoryDTO.
 
         分类描述
 
@@ -203,7 +203,7 @@ class DataCategoryDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataCategoryDTO.
+        r"""Sets the description of this DataCategoryDTO.
 
         分类描述
 
@@ -214,7 +214,7 @@ class DataCategoryDTO:
 
     @property
     def category_level(self):
-        """Gets the category_level of this DataCategoryDTO.
+        r"""Gets the category_level of this DataCategoryDTO.
 
         分类层级
 
@@ -225,7 +225,7 @@ class DataCategoryDTO:
 
     @category_level.setter
     def category_level(self, category_level):
-        """Sets the category_level of this DataCategoryDTO.
+        r"""Sets the category_level of this DataCategoryDTO.
 
         分类层级
 
@@ -236,7 +236,7 @@ class DataCategoryDTO:
 
     @property
     def rule_list(self):
-        """Gets the rule_list of this DataCategoryDTO.
+        r"""Gets the rule_list of this DataCategoryDTO.
 
         识别规则
 
@@ -247,7 +247,7 @@ class DataCategoryDTO:
 
     @rule_list.setter
     def rule_list(self, rule_list):
-        """Sets the rule_list of this DataCategoryDTO.
+        r"""Sets the rule_list of this DataCategoryDTO.
 
         识别规则
 
@@ -258,7 +258,7 @@ class DataCategoryDTO:
 
     @property
     def root_id(self):
-        """Gets the root_id of this DataCategoryDTO.
+        r"""Gets the root_id of this DataCategoryDTO.
 
         分类树根节点
 
@@ -269,7 +269,7 @@ class DataCategoryDTO:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this DataCategoryDTO.
+        r"""Sets the root_id of this DataCategoryDTO.
 
         分类树根节点
 
@@ -280,7 +280,7 @@ class DataCategoryDTO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this DataCategoryDTO.
+        r"""Gets the parent_id of this DataCategoryDTO.
 
         父分类节点
 
@@ -291,7 +291,7 @@ class DataCategoryDTO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this DataCategoryDTO.
+        r"""Sets the parent_id of this DataCategoryDTO.
 
         父分类节点
 
@@ -302,7 +302,7 @@ class DataCategoryDTO:
 
     @property
     def category_path(self):
-        """Gets the category_path of this DataCategoryDTO.
+        r"""Gets the category_path of this DataCategoryDTO.
 
         分类树路径
 
@@ -313,7 +313,7 @@ class DataCategoryDTO:
 
     @category_path.setter
     def category_path(self, category_path):
-        """Sets the category_path of this DataCategoryDTO.
+        r"""Sets the category_path of this DataCategoryDTO.
 
         分类树路径
 
@@ -324,7 +324,7 @@ class DataCategoryDTO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DataCategoryDTO.
+        r"""Gets the create_by of this DataCategoryDTO.
 
         创建者
 
@@ -335,7 +335,7 @@ class DataCategoryDTO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DataCategoryDTO.
+        r"""Sets the create_by of this DataCategoryDTO.
 
         创建者
 
@@ -346,7 +346,7 @@ class DataCategoryDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataCategoryDTO.
+        r"""Gets the create_time of this DataCategoryDTO.
 
         创建时间
 
@@ -357,7 +357,7 @@ class DataCategoryDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataCategoryDTO.
+        r"""Sets the create_time of this DataCategoryDTO.
 
         创建时间
 
@@ -368,7 +368,7 @@ class DataCategoryDTO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this DataCategoryDTO.
+        r"""Gets the update_by of this DataCategoryDTO.
 
         更新者
 
@@ -379,7 +379,7 @@ class DataCategoryDTO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this DataCategoryDTO.
+        r"""Sets the update_by of this DataCategoryDTO.
 
         更新者
 
@@ -390,7 +390,7 @@ class DataCategoryDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DataCategoryDTO.
+        r"""Gets the update_time of this DataCategoryDTO.
 
         更新时间
 
@@ -401,7 +401,7 @@ class DataCategoryDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DataCategoryDTO.
+        r"""Sets the update_time of this DataCategoryDTO.
 
         更新时间
 
@@ -412,7 +412,7 @@ class DataCategoryDTO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataCategoryDTO.
+        r"""Gets the project_id of this DataCategoryDTO.
 
         项目id
 
@@ -423,7 +423,7 @@ class DataCategoryDTO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataCategoryDTO.
+        r"""Sets the project_id of this DataCategoryDTO.
 
         项目id
 
@@ -434,7 +434,7 @@ class DataCategoryDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DataCategoryDTO.
+        r"""Gets the instance_id of this DataCategoryDTO.
 
         实例id
 
@@ -445,7 +445,7 @@ class DataCategoryDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DataCategoryDTO.
+        r"""Sets the instance_id of this DataCategoryDTO.
 
         实例id
 
@@ -456,7 +456,7 @@ class DataCategoryDTO:
 
     @property
     def synchronize(self):
-        """Gets the synchronize of this DataCategoryDTO.
+        r"""Gets the synchronize of this DataCategoryDTO.
 
         同步（默认都同步资产）
 
@@ -467,7 +467,7 @@ class DataCategoryDTO:
 
     @synchronize.setter
     def synchronize(self, synchronize):
-        """Sets the synchronize of this DataCategoryDTO.
+        r"""Sets the synchronize of this DataCategoryDTO.
 
         同步（默认都同步资产）
 
@@ -478,7 +478,7 @@ class DataCategoryDTO:
 
     @property
     def children(self):
-        """Gets the children of this DataCategoryDTO.
+        r"""Gets the children of this DataCategoryDTO.
 
         子分类
 
@@ -489,7 +489,7 @@ class DataCategoryDTO:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this DataCategoryDTO.
+        r"""Sets the children of this DataCategoryDTO.
 
         子分类
 

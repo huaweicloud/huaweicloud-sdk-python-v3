@@ -37,7 +37,7 @@ class ListInstanceSnapshotsRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, limit=None, offset=None, snapshot_order_by=None, order=None):
-        """ListInstanceSnapshotsRequest
+        r"""ListInstanceSnapshotsRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListInstanceSnapshotsRequest.
+        r"""Gets the application_id of this ListInstanceSnapshotsRequest.
 
         应用ID。
 
@@ -93,7 +93,7 @@ class ListInstanceSnapshotsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListInstanceSnapshotsRequest.
+        r"""Sets the application_id of this ListInstanceSnapshotsRequest.
 
         应用ID。
 
@@ -104,7 +104,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ListInstanceSnapshotsRequest.
+        r"""Gets the component_id of this ListInstanceSnapshotsRequest.
 
         组件ID。
 
@@ -115,7 +115,7 @@ class ListInstanceSnapshotsRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ListInstanceSnapshotsRequest.
+        r"""Sets the component_id of this ListInstanceSnapshotsRequest.
 
         组件ID。
 
@@ -126,7 +126,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceSnapshotsRequest.
+        r"""Gets the instance_id of this ListInstanceSnapshotsRequest.
 
         组件实例ID。
 
@@ -137,7 +137,7 @@ class ListInstanceSnapshotsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceSnapshotsRequest.
+        r"""Sets the instance_id of this ListInstanceSnapshotsRequest.
 
         组件实例ID。
 
@@ -148,7 +148,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceSnapshotsRequest.
+        r"""Gets the limit of this ListInstanceSnapshotsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -159,7 +159,7 @@ class ListInstanceSnapshotsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceSnapshotsRequest.
+        r"""Sets the limit of this ListInstanceSnapshotsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -170,7 +170,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceSnapshotsRequest.
+        r"""Gets the offset of this ListInstanceSnapshotsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -181,7 +181,7 @@ class ListInstanceSnapshotsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceSnapshotsRequest.
+        r"""Sets the offset of this ListInstanceSnapshotsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -192,7 +192,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def snapshot_order_by(self):
-        """Gets the snapshot_order_by of this ListInstanceSnapshotsRequest.
+        r"""Gets the snapshot_order_by of this ListInstanceSnapshotsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、version。 
 
@@ -203,7 +203,7 @@ class ListInstanceSnapshotsRequest:
 
     @snapshot_order_by.setter
     def snapshot_order_by(self, snapshot_order_by):
-        """Sets the snapshot_order_by of this ListInstanceSnapshotsRequest.
+        r"""Sets the snapshot_order_by of this ListInstanceSnapshotsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、version。 
 
@@ -214,7 +214,7 @@ class ListInstanceSnapshotsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListInstanceSnapshotsRequest.
+        r"""Gets the order of this ListInstanceSnapshotsRequest.
 
         desc/asc，默认desc。
 
@@ -225,7 +225,7 @@ class ListInstanceSnapshotsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListInstanceSnapshotsRequest.
+        r"""Sets the order of this ListInstanceSnapshotsRequest.
 
         desc/asc，默认desc。
 

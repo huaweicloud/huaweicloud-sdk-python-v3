@@ -27,7 +27,7 @@ class BackgroundMusicConfig:
     }
 
     def __init__(self, music_asset_id=None, volume=None):
-        """BackgroundMusicConfig
+        r"""BackgroundMusicConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BackgroundMusicConfig:
 
     @property
     def music_asset_id(self):
-        """Gets the music_asset_id of this BackgroundMusicConfig.
+        r"""Gets the music_asset_id of this BackgroundMusicConfig.
 
         **参数解释**： 音乐资产ID。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -61,7 +61,7 @@ class BackgroundMusicConfig:
 
     @music_asset_id.setter
     def music_asset_id(self, music_asset_id):
-        """Sets the music_asset_id of this BackgroundMusicConfig.
+        r"""Sets the music_asset_id of this BackgroundMusicConfig.
 
         **参数解释**： 音乐资产ID。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -72,7 +72,7 @@ class BackgroundMusicConfig:
 
     @property
     def volume(self):
-        """Gets the volume of this BackgroundMusicConfig.
+        r"""Gets the volume of this BackgroundMusicConfig.
 
         **参数解释**： 音乐音量。如100，表示音量100%，50表示音量50%。 **约束限制**： 不涉及。
 
@@ -83,7 +83,7 @@ class BackgroundMusicConfig:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this BackgroundMusicConfig.
+        r"""Sets the volume of this BackgroundMusicConfig.
 
         **参数解释**： 音乐音量。如100，表示音量100%，50表示音量50%。 **约束限制**： 不涉及。
 

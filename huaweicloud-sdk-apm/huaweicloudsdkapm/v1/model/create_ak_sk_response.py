@@ -28,7 +28,7 @@ class CreateAkSkResponse(SdkResponse):
     }
 
     def __init__(self, ak=None, sk=None):
-        """CreateAkSkResponse
+        r"""CreateAkSkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAkSkResponse(SdkResponse):
 
     @property
     def ak(self):
-        """Gets the ak of this CreateAkSkResponse.
+        r"""Gets the ak of this CreateAkSkResponse.
 
         创建/删除的ak信息。
 
@@ -62,7 +62,7 @@ class CreateAkSkResponse(SdkResponse):
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this CreateAkSkResponse.
+        r"""Sets the ak of this CreateAkSkResponse.
 
         创建/删除的ak信息。
 
@@ -73,7 +73,7 @@ class CreateAkSkResponse(SdkResponse):
 
     @property
     def sk(self):
-        """Gets the sk of this CreateAkSkResponse.
+        r"""Gets the sk of this CreateAkSkResponse.
 
         创建/删除的sk信息。
 
@@ -84,7 +84,7 @@ class CreateAkSkResponse(SdkResponse):
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this CreateAkSkResponse.
+        r"""Sets the sk of this CreateAkSkResponse.
 
         创建/删除的sk信息。
 

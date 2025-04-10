@@ -33,7 +33,7 @@ class TaskAssignCaseVo:
     }
 
     def __init__(self, sort=None, case_uri=None, is_available=None, test_case_name=None, test_case_number=None):
-        """TaskAssignCaseVo
+        r"""TaskAssignCaseVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TaskAssignCaseVo:
 
     @property
     def sort(self):
-        """Gets the sort of this TaskAssignCaseVo.
+        r"""Gets the sort of this TaskAssignCaseVo.
 
         排序顺序
 
@@ -82,7 +82,7 @@ class TaskAssignCaseVo:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this TaskAssignCaseVo.
+        r"""Sets the sort of this TaskAssignCaseVo.
 
         排序顺序
 
@@ -93,7 +93,7 @@ class TaskAssignCaseVo:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this TaskAssignCaseVo.
+        r"""Gets the case_uri of this TaskAssignCaseVo.
 
         用例uri
 
@@ -104,7 +104,7 @@ class TaskAssignCaseVo:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this TaskAssignCaseVo.
+        r"""Sets the case_uri of this TaskAssignCaseVo.
 
         用例uri
 
@@ -115,7 +115,7 @@ class TaskAssignCaseVo:
 
     @property
     def is_available(self):
-        """Gets the is_available of this TaskAssignCaseVo.
+        r"""Gets the is_available of this TaskAssignCaseVo.
 
         是否可用
 
@@ -126,7 +126,7 @@ class TaskAssignCaseVo:
 
     @is_available.setter
     def is_available(self, is_available):
-        """Sets the is_available of this TaskAssignCaseVo.
+        r"""Sets the is_available of this TaskAssignCaseVo.
 
         是否可用
 
@@ -137,7 +137,7 @@ class TaskAssignCaseVo:
 
     @property
     def test_case_name(self):
-        """Gets the test_case_name of this TaskAssignCaseVo.
+        r"""Gets the test_case_name of this TaskAssignCaseVo.
 
         用例名称
 
@@ -148,7 +148,7 @@ class TaskAssignCaseVo:
 
     @test_case_name.setter
     def test_case_name(self, test_case_name):
-        """Sets the test_case_name of this TaskAssignCaseVo.
+        r"""Sets the test_case_name of this TaskAssignCaseVo.
 
         用例名称
 
@@ -159,7 +159,7 @@ class TaskAssignCaseVo:
 
     @property
     def test_case_number(self):
-        """Gets the test_case_number of this TaskAssignCaseVo.
+        r"""Gets the test_case_number of this TaskAssignCaseVo.
 
         用例编号
 
@@ -170,7 +170,7 @@ class TaskAssignCaseVo:
 
     @test_case_number.setter
     def test_case_number(self, test_case_number):
-        """Sets the test_case_number of this TaskAssignCaseVo.
+        r"""Sets the test_case_number of this TaskAssignCaseVo.
 
         用例编号
 

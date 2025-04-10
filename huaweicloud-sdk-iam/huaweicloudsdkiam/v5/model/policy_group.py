@@ -27,7 +27,7 @@ class PolicyGroup:
     }
 
     def __init__(self, group_id=None, attached_at=None):
-        """PolicyGroup
+        r"""PolicyGroup
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PolicyGroup.
+        r"""Gets the group_id of this PolicyGroup.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class PolicyGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PolicyGroup.
+        r"""Sets the group_id of this PolicyGroup.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class PolicyGroup:
 
     @property
     def attached_at(self):
-        """Gets the attached_at of this PolicyGroup.
+        r"""Gets the attached_at of this PolicyGroup.
 
         身份策略的附加时间。
 
@@ -81,7 +81,7 @@ class PolicyGroup:
 
     @attached_at.setter
     def attached_at(self, attached_at):
-        """Sets the attached_at of this PolicyGroup.
+        r"""Sets the attached_at of this PolicyGroup.
 
         身份策略的附加时间。
 

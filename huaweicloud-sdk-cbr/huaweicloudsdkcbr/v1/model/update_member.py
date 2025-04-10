@@ -27,7 +27,7 @@ class UpdateMember:
     }
 
     def __init__(self, status=None, vault_id=None):
-        """UpdateMember
+        r"""UpdateMember
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMember:
 
     @property
     def status(self):
-        """Gets the status of this UpdateMember.
+        r"""Gets the status of this UpdateMember.
 
         备份共享状态
 
@@ -60,7 +60,7 @@ class UpdateMember:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateMember.
+        r"""Sets the status of this UpdateMember.
 
         备份共享状态
 
@@ -71,7 +71,7 @@ class UpdateMember:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this UpdateMember.
+        r"""Gets the vault_id of this UpdateMember.
 
         共享的备份将存入的存储库，仅支持uuid 更新member状态的时候，如果是接受，必须传入vault_id，如果是拒绝，则无需
 
@@ -82,7 +82,7 @@ class UpdateMember:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this UpdateMember.
+        r"""Sets the vault_id of this UpdateMember.
 
         共享的备份将存入的存储库，仅支持uuid 更新member状态的时候，如果是接受，必须传入vault_id，如果是拒绝，则无需
 

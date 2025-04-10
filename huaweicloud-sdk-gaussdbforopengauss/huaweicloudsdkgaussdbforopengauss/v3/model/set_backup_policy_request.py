@@ -29,7 +29,7 @@ class SetBackupPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetBackupPolicyRequest
+        r"""SetBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetBackupPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetBackupPolicyRequest.
+        r"""Gets the x_language of this SetBackupPolicyRequest.
 
         语言。默认值：en-us。
 
@@ -67,7 +67,7 @@ class SetBackupPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetBackupPolicyRequest.
+        r"""Sets the x_language of this SetBackupPolicyRequest.
 
         语言。默认值：en-us。
 
@@ -78,7 +78,7 @@ class SetBackupPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetBackupPolicyRequest.
+        r"""Gets the instance_id of this SetBackupPolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class SetBackupPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetBackupPolicyRequest.
+        r"""Sets the instance_id of this SetBackupPolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class SetBackupPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBackupPolicyRequest.
+        r"""Gets the body of this SetBackupPolicyRequest.
 
         :return: The body of this SetBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyRequestBody`
@@ -109,7 +109,7 @@ class SetBackupPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBackupPolicyRequest.
+        r"""Sets the body of this SetBackupPolicyRequest.
 
         :param body: The body of this SetBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyRequestBody`

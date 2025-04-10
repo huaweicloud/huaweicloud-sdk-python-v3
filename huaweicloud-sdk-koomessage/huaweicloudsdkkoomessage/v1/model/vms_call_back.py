@@ -29,7 +29,7 @@ class VmsCallBack:
     }
 
     def __init__(self, url_type=None, callback_url=None, remark=None):
-        """VmsCallBack
+        r"""VmsCallBack
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VmsCallBack:
 
     @property
     def url_type(self):
-        """Gets the url_type of this VmsCallBack.
+        r"""Gets the url_type of this VmsCallBack.
 
         回调类型。  - 0：发送状态回执 - 1：上行消息回执 
 
@@ -68,7 +68,7 @@ class VmsCallBack:
 
     @url_type.setter
     def url_type(self, url_type):
-        """Sets the url_type of this VmsCallBack.
+        r"""Sets the url_type of this VmsCallBack.
 
         回调类型。  - 0：发送状态回执 - 1：上行消息回执 
 
@@ -79,7 +79,7 @@ class VmsCallBack:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this VmsCallBack.
+        r"""Gets the callback_url of this VmsCallBack.
 
         回调地址。
 
@@ -90,7 +90,7 @@ class VmsCallBack:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this VmsCallBack.
+        r"""Sets the callback_url of this VmsCallBack.
 
         回调地址。
 
@@ -101,7 +101,7 @@ class VmsCallBack:
 
     @property
     def remark(self):
-        """Gets the remark of this VmsCallBack.
+        r"""Gets the remark of this VmsCallBack.
 
         备注。
 
@@ -112,7 +112,7 @@ class VmsCallBack:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this VmsCallBack.
+        r"""Sets the remark of this VmsCallBack.
 
         备注。
 

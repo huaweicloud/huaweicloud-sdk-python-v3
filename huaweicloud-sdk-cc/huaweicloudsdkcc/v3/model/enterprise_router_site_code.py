@@ -25,7 +25,7 @@ class EnterpriseRouterSiteCode:
     }
 
     def __init__(self, enterprise_router_site_code=None):
-        """EnterpriseRouterSiteCode
+        r"""EnterpriseRouterSiteCode
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnterpriseRouterSiteCode:
 
     @property
     def enterprise_router_site_code(self):
-        """Gets the enterprise_router_site_code of this EnterpriseRouterSiteCode.
+        r"""Gets the enterprise_router_site_code of this EnterpriseRouterSiteCode.
 
         中心网络企业路由器的站点编码。
 
@@ -53,7 +53,7 @@ class EnterpriseRouterSiteCode:
 
     @enterprise_router_site_code.setter
     def enterprise_router_site_code(self, enterprise_router_site_code):
-        """Sets the enterprise_router_site_code of this EnterpriseRouterSiteCode.
+        r"""Sets the enterprise_router_site_code of this EnterpriseRouterSiteCode.
 
         中心网络企业路由器的站点编码。
 

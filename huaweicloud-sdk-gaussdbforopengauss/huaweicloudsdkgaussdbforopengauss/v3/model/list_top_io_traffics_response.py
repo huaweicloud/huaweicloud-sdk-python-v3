@@ -26,7 +26,7 @@ class ListTopIoTrafficsResponse(SdkResponse):
     }
 
     def __init__(self, top_io_infos=None):
-        """ListTopIoTrafficsResponse
+        r"""ListTopIoTrafficsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTopIoTrafficsResponse(SdkResponse):
 
     @property
     def top_io_infos(self):
-        """Gets the top_io_infos of this ListTopIoTrafficsResponse.
+        r"""Gets the top_io_infos of this ListTopIoTrafficsResponse.
 
         Top IO列表
 
@@ -55,7 +55,7 @@ class ListTopIoTrafficsResponse(SdkResponse):
 
     @top_io_infos.setter
     def top_io_infos(self, top_io_infos):
-        """Sets the top_io_infos of this ListTopIoTrafficsResponse.
+        r"""Sets the top_io_infos of this ListTopIoTrafficsResponse.
 
         Top IO列表
 

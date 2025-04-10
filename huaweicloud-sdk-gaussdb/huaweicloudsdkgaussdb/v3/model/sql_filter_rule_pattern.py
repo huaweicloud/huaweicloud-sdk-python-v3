@@ -27,7 +27,7 @@ class SqlFilterRulePattern:
     }
 
     def __init__(self, pattern=None, max_concurrency=None):
-        """SqlFilterRulePattern
+        r"""SqlFilterRulePattern
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SqlFilterRulePattern:
 
     @property
     def pattern(self):
-        """Gets the pattern of this SqlFilterRulePattern.
+        r"""Gets the pattern of this SqlFilterRulePattern.
 
         SQL限流规则。
 
@@ -59,7 +59,7 @@ class SqlFilterRulePattern:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this SqlFilterRulePattern.
+        r"""Sets the pattern of this SqlFilterRulePattern.
 
         SQL限流规则。
 
@@ -70,7 +70,7 @@ class SqlFilterRulePattern:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this SqlFilterRulePattern.
+        r"""Gets the max_concurrency of this SqlFilterRulePattern.
 
         最大并发数。
 
@@ -81,7 +81,7 @@ class SqlFilterRulePattern:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this SqlFilterRulePattern.
+        r"""Sets the max_concurrency of this SqlFilterRulePattern.
 
         最大并发数。
 

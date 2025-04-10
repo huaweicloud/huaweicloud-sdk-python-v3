@@ -26,7 +26,7 @@ class ListSqlAlarmRulesResponse(SdkResponse):
     }
 
     def __init__(self, sql_alarm_rules=None):
-        """ListSqlAlarmRulesResponse
+        r"""ListSqlAlarmRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSqlAlarmRulesResponse(SdkResponse):
 
     @property
     def sql_alarm_rules(self):
-        """Gets the sql_alarm_rules of this ListSqlAlarmRulesResponse.
+        r"""Gets the sql_alarm_rules of this ListSqlAlarmRulesResponse.
 
         SQL告警
 
@@ -55,7 +55,7 @@ class ListSqlAlarmRulesResponse(SdkResponse):
 
     @sql_alarm_rules.setter
     def sql_alarm_rules(self, sql_alarm_rules):
-        """Sets the sql_alarm_rules of this ListSqlAlarmRulesResponse.
+        r"""Sets the sql_alarm_rules of this ListSqlAlarmRulesResponse.
 
         SQL告警
 

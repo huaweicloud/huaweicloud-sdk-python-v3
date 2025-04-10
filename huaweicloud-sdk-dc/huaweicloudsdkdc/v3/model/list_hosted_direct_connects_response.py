@@ -30,7 +30,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, hosted_connects=None, page_info=None):
-        """ListHostedDirectConnectsResponse
+        r"""ListHostedDirectConnectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListHostedDirectConnectsResponse.
+        r"""Gets the request_id of this ListHostedDirectConnectsResponse.
 
         本次操作的请求ID
 
@@ -69,7 +69,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListHostedDirectConnectsResponse.
+        r"""Sets the request_id of this ListHostedDirectConnectsResponse.
 
         本次操作的请求ID
 
@@ -80,7 +80,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
 
     @property
     def hosted_connects(self):
-        """Gets the hosted_connects of this ListHostedDirectConnectsResponse.
+        r"""Gets the hosted_connects of this ListHostedDirectConnectsResponse.
 
         :return: The hosted_connects of this ListHostedDirectConnectsResponse.
         :rtype: list[:class:`huaweicloudsdkdc.v3.HostedDirectConnect`]
@@ -89,7 +89,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
 
     @hosted_connects.setter
     def hosted_connects(self, hosted_connects):
-        """Sets the hosted_connects of this ListHostedDirectConnectsResponse.
+        r"""Sets the hosted_connects of this ListHostedDirectConnectsResponse.
 
         :param hosted_connects: The hosted_connects of this ListHostedDirectConnectsResponse.
         :type hosted_connects: list[:class:`huaweicloudsdkdc.v3.HostedDirectConnect`]
@@ -98,7 +98,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListHostedDirectConnectsResponse.
+        r"""Gets the page_info of this ListHostedDirectConnectsResponse.
 
         :return: The page_info of this ListHostedDirectConnectsResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -107,7 +107,7 @@ class ListHostedDirectConnectsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListHostedDirectConnectsResponse.
+        r"""Sets the page_info of this ListHostedDirectConnectsResponse.
 
         :param page_info: The page_info of this ListHostedDirectConnectsResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

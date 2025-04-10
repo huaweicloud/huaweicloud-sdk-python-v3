@@ -28,7 +28,7 @@ class ShowVpcResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, vpc=None):
-        """ShowVpcResponse
+        r"""ShowVpcResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVpcResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVpcResponse.
+        r"""Gets the request_id of this ShowVpcResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class ShowVpcResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVpcResponse.
+        r"""Sets the request_id of this ShowVpcResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class ShowVpcResponse(SdkResponse):
 
     @property
     def vpc(self):
-        """Gets the vpc of this ShowVpcResponse.
+        r"""Gets the vpc of this ShowVpcResponse.
 
         :return: The vpc of this ShowVpcResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.Vpc`
@@ -82,7 +82,7 @@ class ShowVpcResponse(SdkResponse):
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this ShowVpcResponse.
+        r"""Sets the vpc of this ShowVpcResponse.
 
         :param vpc: The vpc of this ShowVpcResponse.
         :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`

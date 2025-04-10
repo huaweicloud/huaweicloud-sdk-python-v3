@@ -26,7 +26,7 @@ class ListAppInstanceHistoryResponse(SdkResponse):
     }
 
     def __init__(self, history=None):
-        """ListAppInstanceHistoryResponse
+        r"""ListAppInstanceHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAppInstanceHistoryResponse(SdkResponse):
 
     @property
     def history(self):
-        """Gets the history of this ListAppInstanceHistoryResponse.
+        r"""Gets the history of this ListAppInstanceHistoryResponse.
 
         应用实例历史版本列表
 
@@ -55,7 +55,7 @@ class ListAppInstanceHistoryResponse(SdkResponse):
 
     @history.setter
     def history(self, history):
-        """Sets the history of this ListAppInstanceHistoryResponse.
+        r"""Sets the history of this ListAppInstanceHistoryResponse.
 
         应用实例历史版本列表
 

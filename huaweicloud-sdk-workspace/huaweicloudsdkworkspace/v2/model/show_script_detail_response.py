@@ -40,7 +40,7 @@ class ShowScriptDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, version=None, create_time=None, update_time=None, content=None):
-        """ShowScriptDetailResponse
+        r"""ShowScriptDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowScriptDetailResponse.
+        r"""Gets the id of this ShowScriptDetailResponse.
 
         脚本ID。
 
@@ -104,7 +104,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScriptDetailResponse.
+        r"""Sets the id of this ShowScriptDetailResponse.
 
         脚本ID。
 
@@ -115,7 +115,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowScriptDetailResponse.
+        r"""Gets the name of this ShowScriptDetailResponse.
 
         脚本名称。
 
@@ -126,7 +126,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowScriptDetailResponse.
+        r"""Sets the name of this ShowScriptDetailResponse.
 
         脚本名称。
 
@@ -137,7 +137,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowScriptDetailResponse.
+        r"""Gets the description of this ShowScriptDetailResponse.
 
         描述。
 
@@ -148,7 +148,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowScriptDetailResponse.
+        r"""Sets the description of this ShowScriptDetailResponse.
 
         描述。
 
@@ -159,7 +159,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowScriptDetailResponse.
+        r"""Gets the type of this ShowScriptDetailResponse.
 
         脚本类型：POWERSHELL/BAT/SHELL。
 
@@ -170,7 +170,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowScriptDetailResponse.
+        r"""Sets the type of this ShowScriptDetailResponse.
 
         脚本类型：POWERSHELL/BAT/SHELL。
 
@@ -181,7 +181,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowScriptDetailResponse.
+        r"""Gets the version of this ShowScriptDetailResponse.
 
         脚本版本。
 
@@ -192,7 +192,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowScriptDetailResponse.
+        r"""Sets the version of this ShowScriptDetailResponse.
 
         脚本版本。
 
@@ -203,7 +203,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowScriptDetailResponse.
+        r"""Gets the create_time of this ShowScriptDetailResponse.
 
         创建时间。
 
@@ -214,7 +214,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowScriptDetailResponse.
+        r"""Sets the create_time of this ShowScriptDetailResponse.
 
         创建时间。
 
@@ -225,7 +225,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowScriptDetailResponse.
+        r"""Gets the update_time of this ShowScriptDetailResponse.
 
         更新时间。
 
@@ -236,7 +236,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowScriptDetailResponse.
+        r"""Sets the update_time of this ShowScriptDetailResponse.
 
         更新时间。
 
@@ -247,7 +247,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowScriptDetailResponse.
+        r"""Gets the content of this ShowScriptDetailResponse.
 
         脚本内容。
 
@@ -258,7 +258,7 @@ class ShowScriptDetailResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowScriptDetailResponse.
+        r"""Sets the content of this ShowScriptDetailResponse.
 
         脚本内容。
 

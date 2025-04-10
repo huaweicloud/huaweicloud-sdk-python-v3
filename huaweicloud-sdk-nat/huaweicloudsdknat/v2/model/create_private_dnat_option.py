@@ -39,7 +39,7 @@ class CreatePrivateDnatOption:
     }
 
     def __init__(self, description=None, transit_ip_id=None, network_interface_id=None, gateway_id=None, protocol=None, private_ip_address=None, internal_service_port=None, transit_service_port=None):
-        """CreatePrivateDnatOption
+        r"""CreatePrivateDnatOption
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class CreatePrivateDnatOption:
 
     @property
     def description(self):
-        """Gets the description of this CreatePrivateDnatOption.
+        r"""Gets the description of this CreatePrivateDnatOption.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -101,7 +101,7 @@ class CreatePrivateDnatOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePrivateDnatOption.
+        r"""Sets the description of this CreatePrivateDnatOption.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -112,7 +112,7 @@ class CreatePrivateDnatOption:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this CreatePrivateDnatOption.
+        r"""Gets the transit_ip_id of this CreatePrivateDnatOption.
 
         中转IP的ID。
 
@@ -123,7 +123,7 @@ class CreatePrivateDnatOption:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this CreatePrivateDnatOption.
+        r"""Sets the transit_ip_id of this CreatePrivateDnatOption.
 
         中转IP的ID。
 
@@ -134,7 +134,7 @@ class CreatePrivateDnatOption:
 
     @property
     def network_interface_id(self):
-        """Gets the network_interface_id of this CreatePrivateDnatOption.
+        r"""Gets the network_interface_id of this CreatePrivateDnatOption.
 
         网络接口ID，支持计算、ELB、VIP等实例的网络接口。
 
@@ -145,7 +145,7 @@ class CreatePrivateDnatOption:
 
     @network_interface_id.setter
     def network_interface_id(self, network_interface_id):
-        """Sets the network_interface_id of this CreatePrivateDnatOption.
+        r"""Sets the network_interface_id of this CreatePrivateDnatOption.
 
         网络接口ID，支持计算、ELB、VIP等实例的网络接口。
 
@@ -156,7 +156,7 @@ class CreatePrivateDnatOption:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreatePrivateDnatOption.
+        r"""Gets the gateway_id of this CreatePrivateDnatOption.
 
         私网NAT网关实例的ID。
 
@@ -167,7 +167,7 @@ class CreatePrivateDnatOption:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreatePrivateDnatOption.
+        r"""Sets the gateway_id of this CreatePrivateDnatOption.
 
         私网NAT网关实例的ID。
 
@@ -178,7 +178,7 @@ class CreatePrivateDnatOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreatePrivateDnatOption.
+        r"""Gets the protocol of this CreatePrivateDnatOption.
 
         协议类型。 目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -189,7 +189,7 @@ class CreatePrivateDnatOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreatePrivateDnatOption.
+        r"""Sets the protocol of this CreatePrivateDnatOption.
 
         协议类型。 目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -200,7 +200,7 @@ class CreatePrivateDnatOption:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this CreatePrivateDnatOption.
+        r"""Gets the private_ip_address of this CreatePrivateDnatOption.
 
         后端实例的私网IP地址。
 
@@ -211,7 +211,7 @@ class CreatePrivateDnatOption:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this CreatePrivateDnatOption.
+        r"""Sets the private_ip_address of this CreatePrivateDnatOption.
 
         后端实例的私网IP地址。
 
@@ -222,7 +222,7 @@ class CreatePrivateDnatOption:
 
     @property
     def internal_service_port(self):
-        """Gets the internal_service_port of this CreatePrivateDnatOption.
+        r"""Gets the internal_service_port of this CreatePrivateDnatOption.
 
         后端实例的端口号。
 
@@ -233,7 +233,7 @@ class CreatePrivateDnatOption:
 
     @internal_service_port.setter
     def internal_service_port(self, internal_service_port):
-        """Sets the internal_service_port of this CreatePrivateDnatOption.
+        r"""Sets the internal_service_port of this CreatePrivateDnatOption.
 
         后端实例的端口号。
 
@@ -244,7 +244,7 @@ class CreatePrivateDnatOption:
 
     @property
     def transit_service_port(self):
-        """Gets the transit_service_port of this CreatePrivateDnatOption.
+        r"""Gets the transit_service_port of this CreatePrivateDnatOption.
 
         中转IP的端口号。
 
@@ -255,7 +255,7 @@ class CreatePrivateDnatOption:
 
     @transit_service_port.setter
     def transit_service_port(self, transit_service_port):
-        """Sets the transit_service_port of this CreatePrivateDnatOption.
+        r"""Sets the transit_service_port of this CreatePrivateDnatOption.
 
         中转IP的端口号。
 

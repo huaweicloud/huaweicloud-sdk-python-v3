@@ -27,7 +27,7 @@ class AssociateQueueToEnhancedConnectionRequestBody:
     }
 
     def __init__(self, queues=None, elastic_resource_pools=None):
-        """AssociateQueueToEnhancedConnectionRequestBody
+        r"""AssociateQueueToEnhancedConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociateQueueToEnhancedConnectionRequestBody:
 
     @property
     def queues(self):
-        """Gets the queues of this AssociateQueueToEnhancedConnectionRequestBody.
+        r"""Gets the queues of this AssociateQueueToEnhancedConnectionRequestBody.
 
         需要使用跨源的队列名列表。
 
@@ -61,7 +61,7 @@ class AssociateQueueToEnhancedConnectionRequestBody:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this AssociateQueueToEnhancedConnectionRequestBody.
+        r"""Sets the queues of this AssociateQueueToEnhancedConnectionRequestBody.
 
         需要使用跨源的队列名列表。
 
@@ -72,7 +72,7 @@ class AssociateQueueToEnhancedConnectionRequestBody:
 
     @property
     def elastic_resource_pools(self):
-        """Gets the elastic_resource_pools of this AssociateQueueToEnhancedConnectionRequestBody.
+        r"""Gets the elastic_resource_pools of this AssociateQueueToEnhancedConnectionRequestBody.
 
         需要使用跨源的弹性资源池名列表。
 
@@ -83,7 +83,7 @@ class AssociateQueueToEnhancedConnectionRequestBody:
 
     @elastic_resource_pools.setter
     def elastic_resource_pools(self, elastic_resource_pools):
-        """Sets the elastic_resource_pools of this AssociateQueueToEnhancedConnectionRequestBody.
+        r"""Sets the elastic_resource_pools of this AssociateQueueToEnhancedConnectionRequestBody.
 
         需要使用跨源的弹性资源池名列表。
 

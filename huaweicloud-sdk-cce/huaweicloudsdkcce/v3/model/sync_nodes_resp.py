@@ -23,7 +23,7 @@ class SyncNodesResp:
     }
 
     def __init__(self):
-        """SyncNodesResp
+        r"""SyncNodesResp
 
         The model defined in huaweicloud sdk
 

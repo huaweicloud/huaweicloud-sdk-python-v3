@@ -41,7 +41,7 @@ class UrlDomain:
     }
 
     def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None, verified_client_certificate_enabled=None, is_has_trusted_root_ca=None, ssl_infos=None):
-        """UrlDomain
+        r"""UrlDomain
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UrlDomain:
 
     @property
     def id(self):
-        """Gets the id of this UrlDomain.
+        r"""Gets the id of this UrlDomain.
 
         域名编号
 
@@ -110,7 +110,7 @@ class UrlDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UrlDomain.
+        r"""Sets the id of this UrlDomain.
 
         域名编号
 
@@ -121,7 +121,7 @@ class UrlDomain:
 
     @property
     def domain(self):
-        """Gets the domain of this UrlDomain.
+        r"""Gets the domain of this UrlDomain.
 
         访问域名
 
@@ -132,7 +132,7 @@ class UrlDomain:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UrlDomain.
+        r"""Sets the domain of this UrlDomain.
 
         访问域名
 
@@ -143,7 +143,7 @@ class UrlDomain:
 
     @property
     def cname_status(self):
-        """Gets the cname_status of this UrlDomain.
+        r"""Gets the cname_status of this UrlDomain.
 
         域名cname状态： - 1：未解析 - 2：解析中 - 3：解析成功 - 4：解析失败
 
@@ -154,7 +154,7 @@ class UrlDomain:
 
     @cname_status.setter
     def cname_status(self, cname_status):
-        """Sets the cname_status of this UrlDomain.
+        r"""Sets the cname_status of this UrlDomain.
 
         域名cname状态： - 1：未解析 - 2：解析中 - 3：解析成功 - 4：解析失败
 
@@ -165,7 +165,7 @@ class UrlDomain:
 
     @property
     def ssl_id(self):
-        """Gets the ssl_id of this UrlDomain.
+        r"""Gets the ssl_id of this UrlDomain.
 
         SSL证书编号
 
@@ -176,7 +176,7 @@ class UrlDomain:
 
     @ssl_id.setter
     def ssl_id(self, ssl_id):
-        """Sets the ssl_id of this UrlDomain.
+        r"""Sets the ssl_id of this UrlDomain.
 
         SSL证书编号
 
@@ -187,7 +187,7 @@ class UrlDomain:
 
     @property
     def ssl_name(self):
-        """Gets the ssl_name of this UrlDomain.
+        r"""Gets the ssl_name of this UrlDomain.
 
         SSL证书名称
 
@@ -198,7 +198,7 @@ class UrlDomain:
 
     @ssl_name.setter
     def ssl_name(self, ssl_name):
-        """Sets the ssl_name of this UrlDomain.
+        r"""Sets the ssl_name of this UrlDomain.
 
         SSL证书名称
 
@@ -209,7 +209,7 @@ class UrlDomain:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomain.
+        r"""Gets the min_ssl_version of this UrlDomain.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -220,7 +220,7 @@ class UrlDomain:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomain.
+        r"""Sets the min_ssl_version of this UrlDomain.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -231,7 +231,7 @@ class UrlDomain:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this UrlDomain.
+        r"""Gets the verified_client_certificate_enabled of this UrlDomain.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -242,7 +242,7 @@ class UrlDomain:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this UrlDomain.
+        r"""Sets the verified_client_certificate_enabled of this UrlDomain.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -253,7 +253,7 @@ class UrlDomain:
 
     @property
     def is_has_trusted_root_ca(self):
-        """Gets the is_has_trusted_root_ca of this UrlDomain.
+        r"""Gets the is_has_trusted_root_ca of this UrlDomain.
 
         是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:hcs;fcs;g42;Site)
 
@@ -264,7 +264,7 @@ class UrlDomain:
 
     @is_has_trusted_root_ca.setter
     def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
-        """Sets the is_has_trusted_root_ca of this UrlDomain.
+        r"""Sets the is_has_trusted_root_ca of this UrlDomain.
 
         是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:hcs;fcs;g42;Site)
 
@@ -275,7 +275,7 @@ class UrlDomain:
 
     @property
     def ssl_infos(self):
-        """Gets the ssl_infos of this UrlDomain.
+        r"""Gets the ssl_infos of this UrlDomain.
 
         SSL证书列表  [暂不支持](tag:hws;hws_hk;fcs;g42;Site)
 
@@ -286,7 +286,7 @@ class UrlDomain:
 
     @ssl_infos.setter
     def ssl_infos(self, ssl_infos):
-        """Sets the ssl_infos of this UrlDomain.
+        r"""Sets the ssl_infos of this UrlDomain.
 
         SSL证书列表  [暂不支持](tag:hws;hws_hk;fcs;g42;Site)
 

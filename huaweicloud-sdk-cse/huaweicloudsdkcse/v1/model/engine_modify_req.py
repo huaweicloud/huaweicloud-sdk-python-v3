@@ -27,7 +27,7 @@ class EngineModifyReq:
     }
 
     def __init__(self, flavor=None, inputs=None):
-        """EngineModifyReq
+        r"""EngineModifyReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EngineModifyReq:
 
     @property
     def flavor(self):
-        """Gets the flavor of this EngineModifyReq.
+        r"""Gets the flavor of this EngineModifyReq.
 
         变更的规格
 
@@ -61,7 +61,7 @@ class EngineModifyReq:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this EngineModifyReq.
+        r"""Sets the flavor of this EngineModifyReq.
 
         变更的规格
 
@@ -72,7 +72,7 @@ class EngineModifyReq:
 
     @property
     def inputs(self):
-        """Gets the inputs of this EngineModifyReq.
+        r"""Gets the inputs of this EngineModifyReq.
 
         变更的配置，覆盖组件bp的input参数
 
@@ -83,7 +83,7 @@ class EngineModifyReq:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this EngineModifyReq.
+        r"""Sets the inputs of this EngineModifyReq.
 
         变更的配置，覆盖组件bp的input参数
 

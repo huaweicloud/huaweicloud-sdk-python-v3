@@ -29,7 +29,7 @@ class DeleteClickHouseDataBaseConfigRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, database=None):
-        """DeleteClickHouseDataBaseConfigRequest
+        r"""DeleteClickHouseDataBaseConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteClickHouseDataBaseConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteClickHouseDataBaseConfigRequest.
+        r"""Gets the instance_id of this DeleteClickHouseDataBaseConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class DeleteClickHouseDataBaseConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteClickHouseDataBaseConfigRequest.
+        r"""Sets the instance_id of this DeleteClickHouseDataBaseConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class DeleteClickHouseDataBaseConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteClickHouseDataBaseConfigRequest.
+        r"""Gets the x_language of this DeleteClickHouseDataBaseConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -88,7 +88,7 @@ class DeleteClickHouseDataBaseConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteClickHouseDataBaseConfigRequest.
+        r"""Sets the x_language of this DeleteClickHouseDataBaseConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -99,7 +99,7 @@ class DeleteClickHouseDataBaseConfigRequest:
 
     @property
     def database(self):
-        """Gets the database of this DeleteClickHouseDataBaseConfigRequest.
+        r"""Gets the database of this DeleteClickHouseDataBaseConfigRequest.
 
         数据库名。
 
@@ -110,7 +110,7 @@ class DeleteClickHouseDataBaseConfigRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DeleteClickHouseDataBaseConfigRequest.
+        r"""Sets the database of this DeleteClickHouseDataBaseConfigRequest.
 
         数据库名。
 

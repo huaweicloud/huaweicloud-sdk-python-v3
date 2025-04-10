@@ -25,7 +25,7 @@ class DisassociateSubnetRequestBody:
     }
 
     def __init__(self, subnet_ids=None):
-        """DisassociateSubnetRequestBody
+        r"""DisassociateSubnetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateSubnetRequestBody:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this DisassociateSubnetRequestBody.
+        r"""Gets the subnet_ids of this DisassociateSubnetRequestBody.
 
         子网ID
 
@@ -53,7 +53,7 @@ class DisassociateSubnetRequestBody:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this DisassociateSubnetRequestBody.
+        r"""Sets the subnet_ids of this DisassociateSubnetRequestBody.
 
         子网ID
 

@@ -33,7 +33,7 @@ class ListAnticrawlerRulesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, type=None):
-        """ListAnticrawlerRulesRequest
+        r"""ListAnticrawlerRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListAnticrawlerRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAnticrawlerRulesRequest.
+        r"""Gets the enterprise_project_id of this ListAnticrawlerRulesRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -79,7 +79,7 @@ class ListAnticrawlerRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAnticrawlerRulesRequest.
+        r"""Sets the enterprise_project_id of this ListAnticrawlerRulesRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -90,7 +90,7 @@ class ListAnticrawlerRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListAnticrawlerRulesRequest.
+        r"""Gets the policy_id of this ListAnticrawlerRulesRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -101,7 +101,7 @@ class ListAnticrawlerRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListAnticrawlerRulesRequest.
+        r"""Sets the policy_id of this ListAnticrawlerRulesRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -112,7 +112,7 @@ class ListAnticrawlerRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAnticrawlerRulesRequest.
+        r"""Gets the offset of this ListAnticrawlerRulesRequest.
 
         偏移量，表示查询该偏移量之后的记录。
 
@@ -123,7 +123,7 @@ class ListAnticrawlerRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAnticrawlerRulesRequest.
+        r"""Sets the offset of this ListAnticrawlerRulesRequest.
 
         偏移量，表示查询该偏移量之后的记录。
 
@@ -134,7 +134,7 @@ class ListAnticrawlerRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAnticrawlerRulesRequest.
+        r"""Gets the limit of this ListAnticrawlerRulesRequest.
 
         查询返回记录的数量限制。
 
@@ -145,7 +145,7 @@ class ListAnticrawlerRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAnticrawlerRulesRequest.
+        r"""Sets the limit of this ListAnticrawlerRulesRequest.
 
         查询返回记录的数量限制。
 
@@ -156,7 +156,7 @@ class ListAnticrawlerRulesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAnticrawlerRulesRequest.
+        r"""Gets the type of this ListAnticrawlerRulesRequest.
 
         JS脚本反爬虫规则防护模式   - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则   - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则   - 默认值：anticrawler_except_url
 
@@ -167,7 +167,7 @@ class ListAnticrawlerRulesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAnticrawlerRulesRequest.
+        r"""Sets the type of this ListAnticrawlerRulesRequest.
 
         JS脚本反爬虫规则防护模式   - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则   - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则   - 默认值：anticrawler_except_url
 

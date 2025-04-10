@@ -27,7 +27,7 @@ class CreateUpgradeWorkFlowRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateUpgradeWorkFlowRequest
+        r"""CreateUpgradeWorkFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateUpgradeWorkFlowRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateUpgradeWorkFlowRequest.
+        r"""Gets the cluster_id of this CreateUpgradeWorkFlowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class CreateUpgradeWorkFlowRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateUpgradeWorkFlowRequest.
+        r"""Sets the cluster_id of this CreateUpgradeWorkFlowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class CreateUpgradeWorkFlowRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUpgradeWorkFlowRequest.
+        r"""Gets the body of this CreateUpgradeWorkFlowRequest.
 
         :return: The body of this CreateUpgradeWorkFlowRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.CreateUpgradeWorkFlowRequestBody`
@@ -80,7 +80,7 @@ class CreateUpgradeWorkFlowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUpgradeWorkFlowRequest.
+        r"""Sets the body of this CreateUpgradeWorkFlowRequest.
 
         :param body: The body of this CreateUpgradeWorkFlowRequest.
         :type body: :class:`huaweicloudsdkcce.v3.CreateUpgradeWorkFlowRequestBody`

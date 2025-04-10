@@ -26,7 +26,7 @@ class UpdateLeagueResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateLeagueResponse
+        r"""UpdateLeagueResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLeagueResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateLeagueResponse.
+        r"""Gets the body of this UpdateLeagueResponse.
 
         :return: The body of this UpdateLeagueResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateLeagueResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLeagueResponse.
+        r"""Sets the body of this UpdateLeagueResponse.
 
         :param body: The body of this UpdateLeagueResponse.
         :type body: str

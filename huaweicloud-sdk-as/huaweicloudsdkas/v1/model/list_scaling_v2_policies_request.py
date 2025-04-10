@@ -35,7 +35,7 @@ class ListScalingV2PoliciesRequest:
     }
 
     def __init__(self, scaling_resource_id=None, scaling_policy_name=None, scaling_policy_type=None, scaling_policy_id=None, start_number=None, limit=None):
-        """ListScalingV2PoliciesRequest
+        r"""ListScalingV2PoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListScalingV2PoliciesRequest:
 
     @property
     def scaling_resource_id(self):
-        """Gets the scaling_resource_id of this ListScalingV2PoliciesRequest.
+        r"""Gets the scaling_resource_id of this ListScalingV2PoliciesRequest.
 
         伸缩组ID。
 
@@ -88,7 +88,7 @@ class ListScalingV2PoliciesRequest:
 
     @scaling_resource_id.setter
     def scaling_resource_id(self, scaling_resource_id):
-        """Sets the scaling_resource_id of this ListScalingV2PoliciesRequest.
+        r"""Sets the scaling_resource_id of this ListScalingV2PoliciesRequest.
 
         伸缩组ID。
 
@@ -99,7 +99,7 @@ class ListScalingV2PoliciesRequest:
 
     @property
     def scaling_policy_name(self):
-        """Gets the scaling_policy_name of this ListScalingV2PoliciesRequest.
+        r"""Gets the scaling_policy_name of this ListScalingV2PoliciesRequest.
 
         伸缩策略名称。
 
@@ -110,7 +110,7 @@ class ListScalingV2PoliciesRequest:
 
     @scaling_policy_name.setter
     def scaling_policy_name(self, scaling_policy_name):
-        """Sets the scaling_policy_name of this ListScalingV2PoliciesRequest.
+        r"""Sets the scaling_policy_name of this ListScalingV2PoliciesRequest.
 
         伸缩策略名称。
 
@@ -121,7 +121,7 @@ class ListScalingV2PoliciesRequest:
 
     @property
     def scaling_policy_type(self):
-        """Gets the scaling_policy_type of this ListScalingV2PoliciesRequest.
+        r"""Gets the scaling_policy_type of this ListScalingV2PoliciesRequest.
 
         策略类型：  - 告警策略：ALARM - 定时策略：SCHEDULED - 周期策略：RECURRENCE
 
@@ -132,7 +132,7 @@ class ListScalingV2PoliciesRequest:
 
     @scaling_policy_type.setter
     def scaling_policy_type(self, scaling_policy_type):
-        """Sets the scaling_policy_type of this ListScalingV2PoliciesRequest.
+        r"""Sets the scaling_policy_type of this ListScalingV2PoliciesRequest.
 
         策略类型：  - 告警策略：ALARM - 定时策略：SCHEDULED - 周期策略：RECURRENCE
 
@@ -143,7 +143,7 @@ class ListScalingV2PoliciesRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ListScalingV2PoliciesRequest.
+        r"""Gets the scaling_policy_id of this ListScalingV2PoliciesRequest.
 
         伸缩策略ID。
 
@@ -154,7 +154,7 @@ class ListScalingV2PoliciesRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ListScalingV2PoliciesRequest.
+        r"""Sets the scaling_policy_id of this ListScalingV2PoliciesRequest.
 
         伸缩策略ID。
 
@@ -165,7 +165,7 @@ class ListScalingV2PoliciesRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingV2PoliciesRequest.
+        r"""Gets the start_number of this ListScalingV2PoliciesRequest.
 
         查询的起始行号，默认为0。
 
@@ -176,7 +176,7 @@ class ListScalingV2PoliciesRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingV2PoliciesRequest.
+        r"""Sets the start_number of this ListScalingV2PoliciesRequest.
 
         查询的起始行号，默认为0。
 
@@ -187,7 +187,7 @@ class ListScalingV2PoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingV2PoliciesRequest.
+        r"""Gets the limit of this ListScalingV2PoliciesRequest.
 
         查询记录数，默认20，最大100。
 
@@ -198,7 +198,7 @@ class ListScalingV2PoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingV2PoliciesRequest.
+        r"""Sets the limit of this ListScalingV2PoliciesRequest.
 
         查询记录数，默认20，最大100。
 

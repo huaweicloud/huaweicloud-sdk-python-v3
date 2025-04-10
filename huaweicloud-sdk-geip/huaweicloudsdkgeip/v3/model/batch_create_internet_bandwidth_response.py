@@ -30,7 +30,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, internet_bandwidths=None, x_request_id=None):
-        """BatchCreateInternetBandwidthResponse
+        r"""BatchCreateInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCreateInternetBandwidthResponse.
+        r"""Gets the request_id of this BatchCreateInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCreateInternetBandwidthResponse.
+        r"""Sets the request_id of this BatchCreateInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
 
     @property
     def internet_bandwidths(self):
-        """Gets the internet_bandwidths of this BatchCreateInternetBandwidthResponse.
+        r"""Gets the internet_bandwidths of this BatchCreateInternetBandwidthResponse.
 
         创建成功响应体对象
 
@@ -91,7 +91,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
 
     @internet_bandwidths.setter
     def internet_bandwidths(self, internet_bandwidths):
-        """Sets the internet_bandwidths of this BatchCreateInternetBandwidthResponse.
+        r"""Sets the internet_bandwidths of this BatchCreateInternetBandwidthResponse.
 
         创建成功响应体对象
 
@@ -102,7 +102,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchCreateInternetBandwidthResponse.
+        r"""Gets the x_request_id of this BatchCreateInternetBandwidthResponse.
 
         :return: The x_request_id of this BatchCreateInternetBandwidthResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class BatchCreateInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchCreateInternetBandwidthResponse.
+        r"""Sets the x_request_id of this BatchCreateInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this BatchCreateInternetBandwidthResponse.
         :type x_request_id: str

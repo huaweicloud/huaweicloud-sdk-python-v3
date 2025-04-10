@@ -26,7 +26,7 @@ class ListAuditLogDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, files=None):
-        """ListAuditLogDownloadLinkResponse
+        r"""ListAuditLogDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAuditLogDownloadLinkResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this ListAuditLogDownloadLinkResponse.
+        r"""Gets the files of this ListAuditLogDownloadLinkResponse.
 
         获取到的全量SQL文件信息。
 
@@ -55,7 +55,7 @@ class ListAuditLogDownloadLinkResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ListAuditLogDownloadLinkResponse.
+        r"""Sets the files of this ListAuditLogDownloadLinkResponse.
 
         获取到的全量SQL文件信息。
 

@@ -26,7 +26,7 @@ class CheckPrefixResponse(SdkResponse):
     }
 
     def __init__(self, exist=None):
-        """CheckPrefixResponse
+        r"""CheckPrefixResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckPrefixResponse(SdkResponse):
 
     @property
     def exist(self):
-        """Gets the exist of this CheckPrefixResponse.
+        r"""Gets the exist of this CheckPrefixResponse.
 
         是否存在
 
@@ -55,7 +55,7 @@ class CheckPrefixResponse(SdkResponse):
 
     @exist.setter
     def exist(self, exist):
-        """Sets the exist of this CheckPrefixResponse.
+        r"""Sets the exist of this CheckPrefixResponse.
 
         是否存在
 

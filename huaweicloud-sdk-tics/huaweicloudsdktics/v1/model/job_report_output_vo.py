@@ -29,7 +29,7 @@ class JobReportOutputVo:
     }
 
     def __init__(self, ext=None, result_storage_agent_name=None, result_storage_domain_alias=None):
-        """JobReportOutputVo
+        r"""JobReportOutputVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobReportOutputVo:
 
     @property
     def ext(self):
-        """Gets the ext of this JobReportOutputVo.
+        r"""Gets the ext of this JobReportOutputVo.
 
         参数等额外信息
 
@@ -68,7 +68,7 @@ class JobReportOutputVo:
 
     @ext.setter
     def ext(self, ext):
-        """Sets the ext of this JobReportOutputVo.
+        r"""Sets the ext of this JobReportOutputVo.
 
         参数等额外信息
 
@@ -79,7 +79,7 @@ class JobReportOutputVo:
 
     @property
     def result_storage_agent_name(self):
-        """Gets the result_storage_agent_name of this JobReportOutputVo.
+        r"""Gets the result_storage_agent_name of this JobReportOutputVo.
 
         结果存储agent名称
 
@@ -90,7 +90,7 @@ class JobReportOutputVo:
 
     @result_storage_agent_name.setter
     def result_storage_agent_name(self, result_storage_agent_name):
-        """Sets the result_storage_agent_name of this JobReportOutputVo.
+        r"""Sets the result_storage_agent_name of this JobReportOutputVo.
 
         结果存储agent名称
 
@@ -101,7 +101,7 @@ class JobReportOutputVo:
 
     @property
     def result_storage_domain_alias(self):
-        """Gets the result_storage_domain_alias of this JobReportOutputVo.
+        r"""Gets the result_storage_domain_alias of this JobReportOutputVo.
 
         结果存储方别名
 
@@ -112,7 +112,7 @@ class JobReportOutputVo:
 
     @result_storage_domain_alias.setter
     def result_storage_domain_alias(self, result_storage_domain_alias):
-        """Sets the result_storage_domain_alias of this JobReportOutputVo.
+        r"""Sets the result_storage_domain_alias of this JobReportOutputVo.
 
         结果存储方别名
 

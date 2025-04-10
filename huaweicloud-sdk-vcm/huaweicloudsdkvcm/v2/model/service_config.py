@@ -25,7 +25,7 @@ class ServiceConfig:
     }
 
     def __init__(self, common=None):
-        """ServiceConfig
+        r"""ServiceConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ServiceConfig:
 
     @property
     def common(self):
-        """Gets the common of this ServiceConfig.
+        r"""Gets the common of this ServiceConfig.
 
         :return: The common of this ServiceConfig.
         :rtype: :class:`huaweicloudsdkvcm.v2.ServiceConfigCommon`
@@ -52,7 +52,7 @@ class ServiceConfig:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this ServiceConfig.
+        r"""Sets the common of this ServiceConfig.
 
         :param common: The common of this ServiceConfig.
         :type common: :class:`huaweicloudsdkvcm.v2.ServiceConfigCommon`

@@ -28,7 +28,7 @@ class ListDDoSAttackEventResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListDDoSAttackEventResponse
+        r"""ListDDoSAttackEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDDoSAttackEventResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDDoSAttackEventResponse.
+        r"""Gets the total of this ListDDoSAttackEventResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ListDDoSAttackEventResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDDoSAttackEventResponse.
+        r"""Sets the total of this ListDDoSAttackEventResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ListDDoSAttackEventResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDDoSAttackEventResponse.
+        r"""Gets the data of this ListDDoSAttackEventResponse.
 
         data
 
@@ -84,7 +84,7 @@ class ListDDoSAttackEventResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDDoSAttackEventResponse.
+        r"""Sets the data of this ListDDoSAttackEventResponse.
 
         data
 

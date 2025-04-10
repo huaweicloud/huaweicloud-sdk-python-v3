@@ -31,7 +31,7 @@ class Domains:
     }
 
     def __init__(self, domain_name=None, create_time=None, certificate_id=None):
-        """Domains
+        r"""Domains
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Domains:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this Domains.
+        r"""Gets the domain_name of this Domains.
 
         Custom domain name
 
@@ -68,7 +68,7 @@ class Domains:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this Domains.
+        r"""Sets the domain_name of this Domains.
 
         Custom domain name
 
@@ -79,7 +79,7 @@ class Domains:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Domains.
+        r"""Gets the create_time of this Domains.
 
         Time when a custom domain name was created
 
@@ -90,7 +90,7 @@ class Domains:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Domains.
+        r"""Sets the create_time of this Domains.
 
         Time when a custom domain name was created
 
@@ -101,7 +101,7 @@ class Domains:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this Domains.
+        r"""Gets the certificate_id of this Domains.
 
         Certificate id 
 
@@ -112,7 +112,7 @@ class Domains:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this Domains.
+        r"""Sets the certificate_id of this Domains.
 
         Certificate id 
 

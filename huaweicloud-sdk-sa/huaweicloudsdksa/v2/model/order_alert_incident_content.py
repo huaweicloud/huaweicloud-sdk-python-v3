@@ -37,7 +37,7 @@ class OrderAlertIncidentContent:
     }
 
     def __init__(self, title=None, type_category=None, evidence_list=None, note_list=None, attachment_list=None, incident_type=None, description=None):
-        """OrderAlertIncidentContent
+        r"""OrderAlertIncidentContent
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OrderAlertIncidentContent:
 
     @property
     def title(self):
-        """Gets the title of this OrderAlertIncidentContent.
+        r"""Gets the title of this OrderAlertIncidentContent.
 
         事件名称
 
@@ -96,7 +96,7 @@ class OrderAlertIncidentContent:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this OrderAlertIncidentContent.
+        r"""Sets the title of this OrderAlertIncidentContent.
 
         事件名称
 
@@ -107,7 +107,7 @@ class OrderAlertIncidentContent:
 
     @property
     def type_category(self):
-        """Gets the type_category of this OrderAlertIncidentContent.
+        r"""Gets the type_category of this OrderAlertIncidentContent.
 
         事件类型
 
@@ -118,7 +118,7 @@ class OrderAlertIncidentContent:
 
     @type_category.setter
     def type_category(self, type_category):
-        """Sets the type_category of this OrderAlertIncidentContent.
+        r"""Sets the type_category of this OrderAlertIncidentContent.
 
         事件类型
 
@@ -129,7 +129,7 @@ class OrderAlertIncidentContent:
 
     @property
     def evidence_list(self):
-        """Gets the evidence_list of this OrderAlertIncidentContent.
+        r"""Gets the evidence_list of this OrderAlertIncidentContent.
 
         证据列表
 
@@ -140,7 +140,7 @@ class OrderAlertIncidentContent:
 
     @evidence_list.setter
     def evidence_list(self, evidence_list):
-        """Sets the evidence_list of this OrderAlertIncidentContent.
+        r"""Sets the evidence_list of this OrderAlertIncidentContent.
 
         证据列表
 
@@ -151,7 +151,7 @@ class OrderAlertIncidentContent:
 
     @property
     def note_list(self):
-        """Gets the note_list of this OrderAlertIncidentContent.
+        r"""Gets the note_list of this OrderAlertIncidentContent.
 
         评论列表
 
@@ -162,7 +162,7 @@ class OrderAlertIncidentContent:
 
     @note_list.setter
     def note_list(self, note_list):
-        """Sets the note_list of this OrderAlertIncidentContent.
+        r"""Sets the note_list of this OrderAlertIncidentContent.
 
         评论列表
 
@@ -173,7 +173,7 @@ class OrderAlertIncidentContent:
 
     @property
     def attachment_list(self):
-        """Gets the attachment_list of this OrderAlertIncidentContent.
+        r"""Gets the attachment_list of this OrderAlertIncidentContent.
 
         附件列表
 
@@ -184,7 +184,7 @@ class OrderAlertIncidentContent:
 
     @attachment_list.setter
     def attachment_list(self, attachment_list):
-        """Sets the attachment_list of this OrderAlertIncidentContent.
+        r"""Sets the attachment_list of this OrderAlertIncidentContent.
 
         附件列表
 
@@ -195,7 +195,7 @@ class OrderAlertIncidentContent:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this OrderAlertIncidentContent.
+        r"""Gets the incident_type of this OrderAlertIncidentContent.
 
         :return: The incident_type of this OrderAlertIncidentContent.
         :rtype: :class:`huaweicloudsdksa.v2.OrderAlertIncidentContentIncidentType`
@@ -204,7 +204,7 @@ class OrderAlertIncidentContent:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this OrderAlertIncidentContent.
+        r"""Sets the incident_type of this OrderAlertIncidentContent.
 
         :param incident_type: The incident_type of this OrderAlertIncidentContent.
         :type incident_type: :class:`huaweicloudsdksa.v2.OrderAlertIncidentContentIncidentType`
@@ -213,7 +213,7 @@ class OrderAlertIncidentContent:
 
     @property
     def description(self):
-        """Gets the description of this OrderAlertIncidentContent.
+        r"""Gets the description of this OrderAlertIncidentContent.
 
         Id value
 
@@ -224,7 +224,7 @@ class OrderAlertIncidentContent:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OrderAlertIncidentContent.
+        r"""Sets the description of this OrderAlertIncidentContent.
 
         Id value
 

@@ -25,7 +25,7 @@ class ListEventsResponsePageInfo:
     }
 
     def __init__(self, next_marker=None):
-        """ListEventsResponsePageInfo
+        r"""ListEventsResponsePageInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListEventsResponsePageInfo:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListEventsResponsePageInfo.
+        r"""Gets the next_marker of this ListEventsResponsePageInfo.
 
         :return: The next_marker of this ListEventsResponsePageInfo.
         :rtype: str
@@ -52,7 +52,7 @@ class ListEventsResponsePageInfo:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListEventsResponsePageInfo.
+        r"""Sets the next_marker of this ListEventsResponsePageInfo.
 
         :param next_marker: The next_marker of this ListEventsResponsePageInfo.
         :type next_marker: str

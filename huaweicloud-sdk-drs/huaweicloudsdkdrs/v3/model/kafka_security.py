@@ -49,7 +49,7 @@ class KafkaSecurity:
     }
 
     def __init__(self, type=None, trust_store_key_name=None, trust_store_key=None, trust_store_password=None, endpoint_algorithm=None, sasl_mechanism=None, delegation_tokens=None, enable_key_store=None, key_store_key=None, key_store_key_name=None, key_store_password=None, set_private_key_password=None, key_password=None):
-        """KafkaSecurity
+        r"""KafkaSecurity
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class KafkaSecurity:
 
     @property
     def type(self):
-        """Gets the type of this KafkaSecurity.
+        r"""Gets the type of this KafkaSecurity.
 
         安全协议，安全认证时必填，对应Kafka字段：security.protocol。 - PLAINTEXT：无安全认证方式，仅需输入IP和端口进行连接。 - SASL_PLAINTEXT：使用SASL机制连接Kafka，需要设置SASL相关配置。 - SSL：使用SSL加密方式连接Kafka，需要设置SSL相关配置。 - SASL_SSL：使用SASL及SSL加密认证方式，需要设置SSL及SASL相关参数配置信息。
 
@@ -138,7 +138,7 @@ class KafkaSecurity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this KafkaSecurity.
+        r"""Sets the type of this KafkaSecurity.
 
         安全协议，安全认证时必填，对应Kafka字段：security.protocol。 - PLAINTEXT：无安全认证方式，仅需输入IP和端口进行连接。 - SASL_PLAINTEXT：使用SASL机制连接Kafka，需要设置SASL相关配置。 - SSL：使用SSL加密方式连接Kafka，需要设置SSL相关配置。 - SASL_SSL：使用SASL及SSL加密认证方式，需要设置SSL及SASL相关参数配置信息。
 
@@ -149,7 +149,7 @@ class KafkaSecurity:
 
     @property
     def trust_store_key_name(self):
-        """Gets the trust_store_key_name of this KafkaSecurity.
+        r"""Gets the trust_store_key_name of this KafkaSecurity.
 
         证书名称，安全协议为SSL、SASL_SSL时必填。
 
@@ -160,7 +160,7 @@ class KafkaSecurity:
 
     @trust_store_key_name.setter
     def trust_store_key_name(self, trust_store_key_name):
-        """Sets the trust_store_key_name of this KafkaSecurity.
+        r"""Sets the trust_store_key_name of this KafkaSecurity.
 
         证书名称，安全协议为SSL、SASL_SSL时必填。
 
@@ -171,7 +171,7 @@ class KafkaSecurity:
 
     @property
     def trust_store_key(self):
-        """Gets the trust_store_key of this KafkaSecurity.
+        r"""Gets the trust_store_key of this KafkaSecurity.
 
         安全证书base64转码后的值，安全协议为SSL、SASL_SSL时必填。
 
@@ -182,7 +182,7 @@ class KafkaSecurity:
 
     @trust_store_key.setter
     def trust_store_key(self, trust_store_key):
-        """Sets the trust_store_key of this KafkaSecurity.
+        r"""Sets the trust_store_key of this KafkaSecurity.
 
         安全证书base64转码后的值，安全协议为SSL、SASL_SSL时必填。
 
@@ -193,7 +193,7 @@ class KafkaSecurity:
 
     @property
     def trust_store_password(self):
-        """Gets the trust_store_password of this KafkaSecurity.
+        r"""Gets the trust_store_password of this KafkaSecurity.
 
         证书密码，证书设置了密码时必填。
 
@@ -204,7 +204,7 @@ class KafkaSecurity:
 
     @trust_store_password.setter
     def trust_store_password(self, trust_store_password):
-        """Sets the trust_store_password of this KafkaSecurity.
+        r"""Sets the trust_store_password of this KafkaSecurity.
 
         证书密码，证书设置了密码时必填。
 
@@ -215,7 +215,7 @@ class KafkaSecurity:
 
     @property
     def endpoint_algorithm(self):
-        """Gets the endpoint_algorithm of this KafkaSecurity.
+        r"""Gets the endpoint_algorithm of this KafkaSecurity.
 
         主机名端点识别算法，指定通过服务端证书验证服务端主机名的端点识别算法，不填表示禁用主机名验证。对应Kafka字段：ssl.endpoint.identification.algorithm。
 
@@ -226,7 +226,7 @@ class KafkaSecurity:
 
     @endpoint_algorithm.setter
     def endpoint_algorithm(self, endpoint_algorithm):
-        """Sets the endpoint_algorithm of this KafkaSecurity.
+        r"""Sets the endpoint_algorithm of this KafkaSecurity.
 
         主机名端点识别算法，指定通过服务端证书验证服务端主机名的端点识别算法，不填表示禁用主机名验证。对应Kafka字段：ssl.endpoint.identification.algorithm。
 
@@ -237,7 +237,7 @@ class KafkaSecurity:
 
     @property
     def sasl_mechanism(self):
-        """Gets the sasl_mechanism of this KafkaSecurity.
+        r"""Gets the sasl_mechanism of this KafkaSecurity.
 
         SASL机制，用于客户端连接的SASL机制，对应Kafka字段：sasl.mechanism，支持以下四项，取值： - GSSAPI - PLAIN - SCRAM-SHA-256 - SCRAM-SHA-512
 
@@ -248,7 +248,7 @@ class KafkaSecurity:
 
     @sasl_mechanism.setter
     def sasl_mechanism(self, sasl_mechanism):
-        """Sets the sasl_mechanism of this KafkaSecurity.
+        r"""Sets the sasl_mechanism of this KafkaSecurity.
 
         SASL机制，用于客户端连接的SASL机制，对应Kafka字段：sasl.mechanism，支持以下四项，取值： - GSSAPI - PLAIN - SCRAM-SHA-256 - SCRAM-SHA-512
 
@@ -259,7 +259,7 @@ class KafkaSecurity:
 
     @property
     def delegation_tokens(self):
-        """Gets the delegation_tokens of this KafkaSecurity.
+        r"""Gets the delegation_tokens of this KafkaSecurity.
 
         是否为委托令牌鉴权，安全协议为SASL_SSL和SASL_PLAINTEXT时，SASL机制选择“SCRAM-SHA-256”或者“SCRAM-SHA-512”时生效。
 
@@ -270,7 +270,7 @@ class KafkaSecurity:
 
     @delegation_tokens.setter
     def delegation_tokens(self, delegation_tokens):
-        """Sets the delegation_tokens of this KafkaSecurity.
+        r"""Sets the delegation_tokens of this KafkaSecurity.
 
         是否为委托令牌鉴权，安全协议为SASL_SSL和SASL_PLAINTEXT时，SASL机制选择“SCRAM-SHA-256”或者“SCRAM-SHA-512”时生效。
 
@@ -281,7 +281,7 @@ class KafkaSecurity:
 
     @property
     def enable_key_store(self):
-        """Gets the enable_key_store of this KafkaSecurity.
+        r"""Gets the enable_key_store of this KafkaSecurity.
 
         是否开启SSL双向认证。
 
@@ -292,7 +292,7 @@ class KafkaSecurity:
 
     @enable_key_store.setter
     def enable_key_store(self, enable_key_store):
-        """Sets the enable_key_store of this KafkaSecurity.
+        r"""Sets the enable_key_store of this KafkaSecurity.
 
         是否开启SSL双向认证。
 
@@ -303,7 +303,7 @@ class KafkaSecurity:
 
     @property
     def key_store_key(self):
-        """Gets the key_store_key of this KafkaSecurity.
+        r"""Gets the key_store_key of this KafkaSecurity.
 
         Keystore证书，开启SSL双向认证时需要。
 
@@ -314,7 +314,7 @@ class KafkaSecurity:
 
     @key_store_key.setter
     def key_store_key(self, key_store_key):
-        """Sets the key_store_key of this KafkaSecurity.
+        r"""Sets the key_store_key of this KafkaSecurity.
 
         Keystore证书，开启SSL双向认证时需要。
 
@@ -325,7 +325,7 @@ class KafkaSecurity:
 
     @property
     def key_store_key_name(self):
-        """Gets the key_store_key_name of this KafkaSecurity.
+        r"""Gets the key_store_key_name of this KafkaSecurity.
 
         Keystore证书名称，开启SSL双向认证时需要。
 
@@ -336,7 +336,7 @@ class KafkaSecurity:
 
     @key_store_key_name.setter
     def key_store_key_name(self, key_store_key_name):
-        """Sets the key_store_key_name of this KafkaSecurity.
+        r"""Sets the key_store_key_name of this KafkaSecurity.
 
         Keystore证书名称，开启SSL双向认证时需要。
 
@@ -347,7 +347,7 @@ class KafkaSecurity:
 
     @property
     def key_store_password(self):
-        """Gets the key_store_password of this KafkaSecurity.
+        r"""Gets the key_store_password of this KafkaSecurity.
 
         Keystore证书密码，证书设置了密码时需要。对应Kafka字段：ssl.keystore.password。
 
@@ -358,7 +358,7 @@ class KafkaSecurity:
 
     @key_store_password.setter
     def key_store_password(self, key_store_password):
-        """Sets the key_store_password of this KafkaSecurity.
+        r"""Sets the key_store_password of this KafkaSecurity.
 
         Keystore证书密码，证书设置了密码时需要。对应Kafka字段：ssl.keystore.password。
 
@@ -369,7 +369,7 @@ class KafkaSecurity:
 
     @property
     def set_private_key_password(self):
-        """Gets the set_private_key_password of this KafkaSecurity.
+        r"""Gets the set_private_key_password of this KafkaSecurity.
 
         是否设置Keystore私钥密码，默认为false。
 
@@ -380,7 +380,7 @@ class KafkaSecurity:
 
     @set_private_key_password.setter
     def set_private_key_password(self, set_private_key_password):
-        """Sets the set_private_key_password of this KafkaSecurity.
+        r"""Sets the set_private_key_password of this KafkaSecurity.
 
         是否设置Keystore私钥密码，默认为false。
 
@@ -391,7 +391,7 @@ class KafkaSecurity:
 
     @property
     def key_password(self):
-        """Gets the key_password of this KafkaSecurity.
+        r"""Gets the key_password of this KafkaSecurity.
 
         Keystore私钥密码，开启SSL双向认证时，set_private_key_password为true时必填。对应Kafka字段：ssl.key.password。
 
@@ -402,7 +402,7 @@ class KafkaSecurity:
 
     @key_password.setter
     def key_password(self, key_password):
-        """Sets the key_password of this KafkaSecurity.
+        r"""Sets the key_password of this KafkaSecurity.
 
         Keystore私钥密码，开启SSL双向认证时，set_private_key_password为true时必填。对应Kafka字段：ssl.key.password。
 

@@ -28,7 +28,7 @@ class ListSlowlogForLtsResponse(SdkResponse):
     }
 
     def __init__(self, slow_log_list=None, long_query_time=None):
-        """ListSlowlogForLtsResponse
+        r"""ListSlowlogForLtsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSlowlogForLtsResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ListSlowlogForLtsResponse.
+        r"""Gets the slow_log_list of this ListSlowlogForLtsResponse.
 
         日志数据集合。
 
@@ -62,7 +62,7 @@ class ListSlowlogForLtsResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ListSlowlogForLtsResponse.
+        r"""Sets the slow_log_list of this ListSlowlogForLtsResponse.
 
         日志数据集合。
 
@@ -73,7 +73,7 @@ class ListSlowlogForLtsResponse(SdkResponse):
 
     @property
     def long_query_time(self):
-        """Gets the long_query_time of this ListSlowlogForLtsResponse.
+        r"""Gets the long_query_time of this ListSlowlogForLtsResponse.
 
         当前慢日志阈值时间。
 
@@ -84,7 +84,7 @@ class ListSlowlogForLtsResponse(SdkResponse):
 
     @long_query_time.setter
     def long_query_time(self, long_query_time):
-        """Sets the long_query_time of this ListSlowlogForLtsResponse.
+        r"""Sets the long_query_time of this ListSlowlogForLtsResponse.
 
         当前慢日志阈值时间。
 

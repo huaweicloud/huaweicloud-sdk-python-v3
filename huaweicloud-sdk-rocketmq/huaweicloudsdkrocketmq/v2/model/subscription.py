@@ -29,7 +29,7 @@ class Subscription:
     }
 
     def __init__(self, topic=None, type=None, expression=None):
-        """Subscription
+        r"""Subscription
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Subscription:
 
     @property
     def topic(self):
-        """Gets the topic of this Subscription.
+        r"""Gets the topic of this Subscription.
 
         订阅的Topic名称。
 
@@ -68,7 +68,7 @@ class Subscription:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this Subscription.
+        r"""Sets the topic of this Subscription.
 
         订阅的Topic名称。
 
@@ -79,7 +79,7 @@ class Subscription:
 
     @property
     def type(self):
-        """Gets the type of this Subscription.
+        r"""Gets the type of this Subscription.
 
         订阅类型，取值如下：TAG和SQL92。
 
@@ -90,7 +90,7 @@ class Subscription:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Subscription.
+        r"""Sets the type of this Subscription.
 
         订阅类型，取值如下：TAG和SQL92。
 
@@ -101,7 +101,7 @@ class Subscription:
 
     @property
     def expression(self):
-        """Gets the expression of this Subscription.
+        r"""Gets the expression of this Subscription.
 
         订阅tag字符。
 
@@ -112,7 +112,7 @@ class Subscription:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this Subscription.
+        r"""Sets the expression of this Subscription.
 
         订阅tag字符。
 

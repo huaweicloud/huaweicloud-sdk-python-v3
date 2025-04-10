@@ -25,7 +25,7 @@ class DeleteSecurityPolicyRequest:
     }
 
     def __init__(self, security_policy_id=None):
-        """DeleteSecurityPolicyRequest
+        r"""DeleteSecurityPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSecurityPolicyRequest:
 
     @property
     def security_policy_id(self):
-        """Gets the security_policy_id of this DeleteSecurityPolicyRequest.
+        r"""Gets the security_policy_id of this DeleteSecurityPolicyRequest.
 
         自定义安全策略的ID。
 
@@ -53,7 +53,7 @@ class DeleteSecurityPolicyRequest:
 
     @security_policy_id.setter
     def security_policy_id(self, security_policy_id):
-        """Sets the security_policy_id of this DeleteSecurityPolicyRequest.
+        r"""Sets the security_policy_id of this DeleteSecurityPolicyRequest.
 
         自定义安全策略的ID。
 

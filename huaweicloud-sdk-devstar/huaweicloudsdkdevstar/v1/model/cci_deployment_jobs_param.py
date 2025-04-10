@@ -25,7 +25,7 @@ class CciDeploymentJobsParam:
     }
 
     def __init__(self, image=None):
-        """CciDeploymentJobsParam
+        r"""CciDeploymentJobsParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CciDeploymentJobsParam:
 
     @property
     def image(self):
-        """Gets the image of this CciDeploymentJobsParam.
+        r"""Gets the image of this CciDeploymentJobsParam.
 
         软件包或者镜像地址
 
@@ -54,7 +54,7 @@ class CciDeploymentJobsParam:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CciDeploymentJobsParam.
+        r"""Sets the image of this CciDeploymentJobsParam.
 
         软件包或者镜像地址
 

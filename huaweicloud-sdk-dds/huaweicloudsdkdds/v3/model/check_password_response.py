@@ -24,7 +24,7 @@ class CheckPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckPasswordResponse
+        r"""CheckPasswordResponse
 
         The model defined in huaweicloud sdk
 

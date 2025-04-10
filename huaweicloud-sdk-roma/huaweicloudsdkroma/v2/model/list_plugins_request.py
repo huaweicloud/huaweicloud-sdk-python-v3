@@ -43,7 +43,7 @@ class ListPluginsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, plugin_type=None, plugin_scope=None, plugin_id=None, plugin_name=None, precise_search=None, roma_app_id=None, roma_app_name=None):
-        """ListPluginsRequest
+        r"""ListPluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListPluginsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPluginsRequest.
+        r"""Gets the instance_id of this ListPluginsRequest.
 
         实例ID
 
@@ -116,7 +116,7 @@ class ListPluginsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPluginsRequest.
+        r"""Sets the instance_id of this ListPluginsRequest.
 
         实例ID
 
@@ -127,7 +127,7 @@ class ListPluginsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPluginsRequest.
+        r"""Gets the offset of this ListPluginsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -138,7 +138,7 @@ class ListPluginsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPluginsRequest.
+        r"""Sets the offset of this ListPluginsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -149,7 +149,7 @@ class ListPluginsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPluginsRequest.
+        r"""Gets the limit of this ListPluginsRequest.
 
         每页显示的条目数量
 
@@ -160,7 +160,7 @@ class ListPluginsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPluginsRequest.
+        r"""Sets the limit of this ListPluginsRequest.
 
         每页显示的条目数量
 
@@ -171,7 +171,7 @@ class ListPluginsRequest:
 
     @property
     def plugin_type(self):
-        """Gets the plugin_type of this ListPluginsRequest.
+        r"""Gets the plugin_type of this ListPluginsRequest.
 
         插件类型
 
@@ -182,7 +182,7 @@ class ListPluginsRequest:
 
     @plugin_type.setter
     def plugin_type(self, plugin_type):
-        """Sets the plugin_type of this ListPluginsRequest.
+        r"""Sets the plugin_type of this ListPluginsRequest.
 
         插件类型
 
@@ -193,7 +193,7 @@ class ListPluginsRequest:
 
     @property
     def plugin_scope(self):
-        """Gets the plugin_scope of this ListPluginsRequest.
+        r"""Gets the plugin_scope of this ListPluginsRequest.
 
         插件可见范围
 
@@ -204,7 +204,7 @@ class ListPluginsRequest:
 
     @plugin_scope.setter
     def plugin_scope(self, plugin_scope):
-        """Sets the plugin_scope of this ListPluginsRequest.
+        r"""Sets the plugin_scope of this ListPluginsRequest.
 
         插件可见范围
 
@@ -215,7 +215,7 @@ class ListPluginsRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this ListPluginsRequest.
+        r"""Gets the plugin_id of this ListPluginsRequest.
 
         插件编码
 
@@ -226,7 +226,7 @@ class ListPluginsRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this ListPluginsRequest.
+        r"""Sets the plugin_id of this ListPluginsRequest.
 
         插件编码
 
@@ -237,7 +237,7 @@ class ListPluginsRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ListPluginsRequest.
+        r"""Gets the plugin_name of this ListPluginsRequest.
 
         插件名称，支持模糊查询
 
@@ -248,7 +248,7 @@ class ListPluginsRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ListPluginsRequest.
+        r"""Sets the plugin_name of this ListPluginsRequest.
 
         插件名称，支持模糊查询
 
@@ -259,7 +259,7 @@ class ListPluginsRequest:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListPluginsRequest.
+        r"""Gets the precise_search of this ListPluginsRequest.
 
         指定需要精确匹配查找的参数名称，目前支持插件名称
 
@@ -270,7 +270,7 @@ class ListPluginsRequest:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListPluginsRequest.
+        r"""Sets the precise_search of this ListPluginsRequest.
 
         指定需要精确匹配查找的参数名称，目前支持插件名称
 
@@ -281,7 +281,7 @@ class ListPluginsRequest:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ListPluginsRequest.
+        r"""Gets the roma_app_id of this ListPluginsRequest.
 
         集成应用编号
 
@@ -292,7 +292,7 @@ class ListPluginsRequest:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ListPluginsRequest.
+        r"""Sets the roma_app_id of this ListPluginsRequest.
 
         集成应用编号
 
@@ -303,7 +303,7 @@ class ListPluginsRequest:
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this ListPluginsRequest.
+        r"""Gets the roma_app_name of this ListPluginsRequest.
 
         集成应用名称
 
@@ -314,7 +314,7 @@ class ListPluginsRequest:
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this ListPluginsRequest.
+        r"""Sets the roma_app_name of this ListPluginsRequest.
 
         集成应用名称
 

@@ -30,7 +30,7 @@ class ShowJobInfoResponse(SdkResponse):
     }
 
     def __init__(self, task_count=None, job=None, tasks=None):
-        """ShowJobInfoResponse
+        r"""ShowJobInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def task_count(self):
-        """Gets the task_count of this ShowJobInfoResponse.
+        r"""Gets the task_count of this ShowJobInfoResponse.
 
         :return: The task_count of this ShowJobInfoResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @task_count.setter
     def task_count(self, task_count):
-        """Sets the task_count of this ShowJobInfoResponse.
+        r"""Sets the task_count of this ShowJobInfoResponse.
 
         :param task_count: The task_count of this ShowJobInfoResponse.
         :type task_count: int
@@ -76,7 +76,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this ShowJobInfoResponse.
+        r"""Gets the job of this ShowJobInfoResponse.
 
         :return: The job of this ShowJobInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.JobInfo`
@@ -85,7 +85,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this ShowJobInfoResponse.
+        r"""Sets the job of this ShowJobInfoResponse.
 
         :param job: The job of this ShowJobInfoResponse.
         :type job: :class:`huaweicloudsdkservicestage.v3.JobInfo`
@@ -94,7 +94,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowJobInfoResponse.
+        r"""Gets the tasks of this ShowJobInfoResponse.
 
         :return: The tasks of this ShowJobInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.TaskInfo`]
@@ -103,7 +103,7 @@ class ShowJobInfoResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowJobInfoResponse.
+        r"""Sets the tasks of this ShowJobInfoResponse.
 
         :param tasks: The tasks of this ShowJobInfoResponse.
         :type tasks: list[:class:`huaweicloudsdkservicestage.v3.TaskInfo`]

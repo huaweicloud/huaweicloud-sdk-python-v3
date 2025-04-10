@@ -35,7 +35,7 @@ class StopMixJobRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, job_id=None):
-        """StopMixJobRequest
+        r"""StopMixJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class StopMixJobRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this StopMixJobRequest.
+        r"""Gets the content_type of this StopMixJobRequest.
 
         内容类型。
 
@@ -86,7 +86,7 @@ class StopMixJobRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this StopMixJobRequest.
+        r"""Sets the content_type of this StopMixJobRequest.
 
         内容类型。
 
@@ -97,7 +97,7 @@ class StopMixJobRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this StopMixJobRequest.
+        r"""Gets the authorization of this StopMixJobRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -108,7 +108,7 @@ class StopMixJobRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this StopMixJobRequest.
+        r"""Sets the authorization of this StopMixJobRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -119,7 +119,7 @@ class StopMixJobRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this StopMixJobRequest.
+        r"""Gets the x_sdk_date of this StopMixJobRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -130,7 +130,7 @@ class StopMixJobRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this StopMixJobRequest.
+        r"""Sets the x_sdk_date of this StopMixJobRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -141,7 +141,7 @@ class StopMixJobRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this StopMixJobRequest.
+        r"""Gets the x_project_id of this StopMixJobRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -152,7 +152,7 @@ class StopMixJobRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this StopMixJobRequest.
+        r"""Sets the x_project_id of this StopMixJobRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -163,7 +163,7 @@ class StopMixJobRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this StopMixJobRequest.
+        r"""Gets the app_id of this StopMixJobRequest.
 
         应用id
 
@@ -174,7 +174,7 @@ class StopMixJobRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this StopMixJobRequest.
+        r"""Sets the app_id of this StopMixJobRequest.
 
         应用id
 
@@ -185,7 +185,7 @@ class StopMixJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopMixJobRequest.
+        r"""Gets the job_id of this StopMixJobRequest.
 
         任务编号
 
@@ -196,7 +196,7 @@ class StopMixJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopMixJobRequest.
+        r"""Sets the job_id of this StopMixJobRequest.
 
         任务编号
 

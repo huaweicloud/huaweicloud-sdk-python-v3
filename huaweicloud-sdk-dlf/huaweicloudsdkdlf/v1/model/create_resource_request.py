@@ -27,7 +27,7 @@ class CreateResourceRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateResourceRequest
+        r"""CreateResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateResourceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateResourceRequest.
+        r"""Gets the workspace of this CreateResourceRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class CreateResourceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateResourceRequest.
+        r"""Sets the workspace of this CreateResourceRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class CreateResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceRequest.
+        r"""Gets the body of this CreateResourceRequest.
 
         :return: The body of this CreateResourceRequest.
         :rtype: :class:`huaweicloudsdkdlf.v1.ResourceInfo`
@@ -81,7 +81,7 @@ class CreateResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceRequest.
+        r"""Sets the body of this CreateResourceRequest.
 
         :param body: The body of this CreateResourceRequest.
         :type body: :class:`huaweicloudsdkdlf.v1.ResourceInfo`

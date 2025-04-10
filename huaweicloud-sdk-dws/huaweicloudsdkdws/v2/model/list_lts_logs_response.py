@@ -30,7 +30,7 @@ class ListLtsLogsResponse(SdkResponse):
     }
 
     def __init__(self, access_status=None, lts_access_list=None, count=None):
-        """ListLtsLogsResponse
+        r"""ListLtsLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLtsLogsResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this ListLtsLogsResponse.
+        r"""Gets the access_status of this ListLtsLogsResponse.
 
         日志开启状态。
 
@@ -69,7 +69,7 @@ class ListLtsLogsResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this ListLtsLogsResponse.
+        r"""Sets the access_status of this ListLtsLogsResponse.
 
         日志开启状态。
 
@@ -80,7 +80,7 @@ class ListLtsLogsResponse(SdkResponse):
 
     @property
     def lts_access_list(self):
-        """Gets the lts_access_list of this ListLtsLogsResponse.
+        r"""Gets the lts_access_list of this ListLtsLogsResponse.
 
         LTS日志列表。
 
@@ -91,7 +91,7 @@ class ListLtsLogsResponse(SdkResponse):
 
     @lts_access_list.setter
     def lts_access_list(self, lts_access_list):
-        """Sets the lts_access_list of this ListLtsLogsResponse.
+        r"""Sets the lts_access_list of this ListLtsLogsResponse.
 
         LTS日志列表。
 
@@ -102,7 +102,7 @@ class ListLtsLogsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLtsLogsResponse.
+        r"""Gets the count of this ListLtsLogsResponse.
 
         总数量
 
@@ -113,7 +113,7 @@ class ListLtsLogsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLtsLogsResponse.
+        r"""Sets the count of this ListLtsLogsResponse.
 
         总数量
 

@@ -31,7 +31,7 @@ class ModifyLb:
     }
 
     def __init__(self, lbaas_listener=None, listener=None, failed_reason=None, failed_details=None):
-        """ModifyLb
+        r"""ModifyLb
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ModifyLb:
 
     @property
     def lbaas_listener(self):
-        """Gets the lbaas_listener of this ModifyLb.
+        r"""Gets the lbaas_listener of this ModifyLb.
 
         :return: The lbaas_listener of this ModifyLb.
         :rtype: :class:`huaweicloudsdkas.v1.LbaasListener`
@@ -73,7 +73,7 @@ class ModifyLb:
 
     @lbaas_listener.setter
     def lbaas_listener(self, lbaas_listener):
-        """Sets the lbaas_listener of this ModifyLb.
+        r"""Sets the lbaas_listener of this ModifyLb.
 
         :param lbaas_listener: The lbaas_listener of this ModifyLb.
         :type lbaas_listener: :class:`huaweicloudsdkas.v1.LbaasListener`
@@ -82,7 +82,7 @@ class ModifyLb:
 
     @property
     def listener(self):
-        """Gets the listener of this ModifyLb.
+        r"""Gets the listener of this ModifyLb.
 
         经典型负载均衡器信息
 
@@ -93,7 +93,7 @@ class ModifyLb:
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this ModifyLb.
+        r"""Sets the listener of this ModifyLb.
 
         经典型负载均衡器信息
 
@@ -104,7 +104,7 @@ class ModifyLb:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ModifyLb.
+        r"""Gets the failed_reason of this ModifyLb.
 
         负载均衡器迁移失败原因。
 
@@ -115,7 +115,7 @@ class ModifyLb:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ModifyLb.
+        r"""Sets the failed_reason of this ModifyLb.
 
         负载均衡器迁移失败原因。
 
@@ -126,7 +126,7 @@ class ModifyLb:
 
     @property
     def failed_details(self):
-        """Gets the failed_details of this ModifyLb.
+        r"""Gets the failed_details of this ModifyLb.
 
         负载均衡器迁移失败详情。
 
@@ -137,7 +137,7 @@ class ModifyLb:
 
     @failed_details.setter
     def failed_details(self, failed_details):
-        """Sets the failed_details of this ModifyLb.
+        r"""Sets the failed_details of this ModifyLb.
 
         负载均衡器迁移失败详情。
 

@@ -32,7 +32,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, database_limit=None, total_tables=None, table_limit=None, databases=None):
-        """ListReadOnlyReplayDatabaseResponse
+        r"""ListReadOnlyReplayDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @property
     def database_limit(self):
-        """Gets the database_limit of this ListReadOnlyReplayDatabaseResponse.
+        r"""Gets the database_limit of this ListReadOnlyReplayDatabaseResponse.
 
         每次返回的库上限数量
 
@@ -76,7 +76,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @database_limit.setter
     def database_limit(self, database_limit):
-        """Sets the database_limit of this ListReadOnlyReplayDatabaseResponse.
+        r"""Sets the database_limit of this ListReadOnlyReplayDatabaseResponse.
 
         每次返回的库上限数量
 
@@ -87,7 +87,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this ListReadOnlyReplayDatabaseResponse.
+        r"""Gets the total_tables of this ListReadOnlyReplayDatabaseResponse.
 
         返回的总表数量
 
@@ -98,7 +98,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this ListReadOnlyReplayDatabaseResponse.
+        r"""Sets the total_tables of this ListReadOnlyReplayDatabaseResponse.
 
         返回的总表数量
 
@@ -109,7 +109,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @property
     def table_limit(self):
-        """Gets the table_limit of this ListReadOnlyReplayDatabaseResponse.
+        r"""Gets the table_limit of this ListReadOnlyReplayDatabaseResponse.
 
         每次返回的表上限数量
 
@@ -120,7 +120,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @table_limit.setter
     def table_limit(self, table_limit):
-        """Sets the table_limit of this ListReadOnlyReplayDatabaseResponse.
+        r"""Sets the table_limit of this ListReadOnlyReplayDatabaseResponse.
 
         每次返回的表上限数量
 
@@ -131,7 +131,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListReadOnlyReplayDatabaseResponse.
+        r"""Gets the databases of this ListReadOnlyReplayDatabaseResponse.
 
         可恢复到主实例的数据库列表
 
@@ -142,7 +142,7 @@ class ListReadOnlyReplayDatabaseResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListReadOnlyReplayDatabaseResponse.
+        r"""Sets the databases of this ListReadOnlyReplayDatabaseResponse.
 
         可恢复到主实例的数据库列表
 

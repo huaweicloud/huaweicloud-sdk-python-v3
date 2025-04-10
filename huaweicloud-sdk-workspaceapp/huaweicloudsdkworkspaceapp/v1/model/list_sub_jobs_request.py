@@ -33,7 +33,7 @@ class ListSubJobsRequest:
     }
 
     def __init__(self, status=None, job_type=None, offset=None, limit=None, job_id=None):
-        """ListSubJobsRequest
+        r"""ListSubJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListSubJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSubJobsRequest.
+        r"""Gets the status of this ListSubJobsRequest.
 
         job详情的状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 成功 * `FAILED` - 失败 * `ABNORMAL` - 异常 * `ROLLBACK` - 回滚中 * `ABORTING` - 取消
 
@@ -81,7 +81,7 @@ class ListSubJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubJobsRequest.
+        r"""Sets the status of this ListSubJobsRequest.
 
         job详情的状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 成功 * `FAILED` - 失败 * `ABNORMAL` - 异常 * `ROLLBACK` - 回滚中 * `ABORTING` - 取消
 
@@ -92,7 +92,7 @@ class ListSubJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListSubJobsRequest.
+        r"""Gets the job_type of this ListSubJobsRequest.
 
         job类型 * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `REJOIN_DOMAIN` - 服务器重新加域 * `CHANGE_SERVER_IMAGE` - 修改服务器镜像 * `REINSTALL_OS` - 服务器重装操作系统 * `MIGRATE_SERVER` - 迁移服务器 * `UPDATE_SERVER_TSVI` - 更新虚拟IP配置 * `UPGRADE_ACCESS_AGENT` - hda升级 * `SCHEDULED_TASK` - 定时任务 * `UPDATE_FREEZE_STATUS` - 更新服务器冻结状态
 
@@ -103,7 +103,7 @@ class ListSubJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListSubJobsRequest.
+        r"""Sets the job_type of this ListSubJobsRequest.
 
         job类型 * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `REJOIN_DOMAIN` - 服务器重新加域 * `CHANGE_SERVER_IMAGE` - 修改服务器镜像 * `REINSTALL_OS` - 服务器重装操作系统 * `MIGRATE_SERVER` - 迁移服务器 * `UPDATE_SERVER_TSVI` - 更新虚拟IP配置 * `UPGRADE_ACCESS_AGENT` - hda升级 * `SCHEDULED_TASK` - 定时任务 * `UPDATE_FREEZE_STATUS` - 更新服务器冻结状态
 
@@ -114,7 +114,7 @@ class ListSubJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubJobsRequest.
+        r"""Gets the offset of this ListSubJobsRequest.
 
         查询的偏移量。
 
@@ -125,7 +125,7 @@ class ListSubJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubJobsRequest.
+        r"""Sets the offset of this ListSubJobsRequest.
 
         查询的偏移量。
 
@@ -136,7 +136,7 @@ class ListSubJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubJobsRequest.
+        r"""Gets the limit of this ListSubJobsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -147,7 +147,7 @@ class ListSubJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubJobsRequest.
+        r"""Sets the limit of this ListSubJobsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -158,7 +158,7 @@ class ListSubJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListSubJobsRequest.
+        r"""Gets the job_id of this ListSubJobsRequest.
 
         任务ID。
 
@@ -169,7 +169,7 @@ class ListSubJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListSubJobsRequest.
+        r"""Sets the job_id of this ListSubJobsRequest.
 
         任务ID。
 

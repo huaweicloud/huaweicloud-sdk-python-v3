@@ -30,7 +30,7 @@ class ListInstanceResponse(SdkResponse):
     }
 
     def __init__(self, total=None, purchased=None, items=None):
-        """ListInstanceResponse
+        r"""ListInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstanceResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceResponse.
+        r"""Gets the total of this ListInstanceResponse.
 
         独享引擎实例数量
 
@@ -69,7 +69,7 @@ class ListInstanceResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceResponse.
+        r"""Sets the total of this ListInstanceResponse.
 
         独享引擎实例数量
 
@@ -80,7 +80,7 @@ class ListInstanceResponse(SdkResponse):
 
     @property
     def purchased(self):
-        """Gets the purchased of this ListInstanceResponse.
+        r"""Gets the purchased of this ListInstanceResponse.
 
         是否曾经购买过独享引擎
 
@@ -91,7 +91,7 @@ class ListInstanceResponse(SdkResponse):
 
     @purchased.setter
     def purchased(self, purchased):
-        """Sets the purchased of this ListInstanceResponse.
+        r"""Sets the purchased of this ListInstanceResponse.
 
         是否曾经购买过独享引擎
 
@@ -102,7 +102,7 @@ class ListInstanceResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListInstanceResponse.
+        r"""Gets the items of this ListInstanceResponse.
 
         详细的独享引擎信息列表
 
@@ -113,7 +113,7 @@ class ListInstanceResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListInstanceResponse.
+        r"""Sets the items of this ListInstanceResponse.
 
         详细的独享引擎信息列表
 

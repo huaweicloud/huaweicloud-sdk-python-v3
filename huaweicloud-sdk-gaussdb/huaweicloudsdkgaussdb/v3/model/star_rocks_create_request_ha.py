@@ -25,7 +25,7 @@ class StarRocksCreateRequestHa:
     }
 
     def __init__(self, mode=None):
-        """StarRocksCreateRequestHa
+        r"""StarRocksCreateRequestHa
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StarRocksCreateRequestHa:
 
     @property
     def mode(self):
-        """Gets the mode of this StarRocksCreateRequestHa.
+        r"""Gets the mode of this StarRocksCreateRequestHa.
 
         部署模式。
 
@@ -53,7 +53,7 @@ class StarRocksCreateRequestHa:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this StarRocksCreateRequestHa.
+        r"""Sets the mode of this StarRocksCreateRequestHa.
 
         部署模式。
 

@@ -26,7 +26,7 @@ class UpdateStarRocksDatabaseUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateStarRocksDatabaseUserPasswordResponse
+        r"""UpdateStarRocksDatabaseUserPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateStarRocksDatabaseUserPasswordResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateStarRocksDatabaseUserPasswordResponse.
+        r"""Gets the result of this UpdateStarRocksDatabaseUserPasswordResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class UpdateStarRocksDatabaseUserPasswordResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateStarRocksDatabaseUserPasswordResponse.
+        r"""Sets the result of this UpdateStarRocksDatabaseUserPasswordResponse.
 
         请求结果。
 

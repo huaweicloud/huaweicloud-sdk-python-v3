@@ -33,7 +33,7 @@ class ListOpRecordRequest:
     }
 
     def __init__(self, blockchain_id=None, operation_status=None, resource_type=None, operation_type=None, operation_id=None):
-        """ListOpRecordRequest
+        r"""ListOpRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListOpRecordRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this ListOpRecordRequest.
+        r"""Gets the blockchain_id of this ListOpRecordRequest.
 
         区块链ID
 
@@ -82,7 +82,7 @@ class ListOpRecordRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this ListOpRecordRequest.
+        r"""Sets the blockchain_id of this ListOpRecordRequest.
 
         区块链ID
 
@@ -93,7 +93,7 @@ class ListOpRecordRequest:
 
     @property
     def operation_status(self):
-        """Gets the operation_status of this ListOpRecordRequest.
+        r"""Gets the operation_status of this ListOpRecordRequest.
 
         操作状态, 可选数值如下（括号中为该数值对应的操作状态含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
@@ -104,7 +104,7 @@ class ListOpRecordRequest:
 
     @operation_status.setter
     def operation_status(self, operation_status):
-        """Sets the operation_status of this ListOpRecordRequest.
+        r"""Sets the operation_status of this ListOpRecordRequest.
 
         操作状态, 可选数值如下（括号中为该数值对应的操作状态含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
@@ -115,7 +115,7 @@ class ListOpRecordRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListOpRecordRequest.
+        r"""Gets the resource_type of this ListOpRecordRequest.
 
         资源类型, 可选数值如下（括号中为该数值对应的资源类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
@@ -126,7 +126,7 @@ class ListOpRecordRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListOpRecordRequest.
+        r"""Sets the resource_type of this ListOpRecordRequest.
 
         资源类型, 可选数值如下（括号中为该数值对应的资源类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
@@ -137,7 +137,7 @@ class ListOpRecordRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ListOpRecordRequest.
+        r"""Gets the operation_type of this ListOpRecordRequest.
 
         操作类型, 可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
@@ -148,7 +148,7 @@ class ListOpRecordRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ListOpRecordRequest.
+        r"""Sets the operation_type of this ListOpRecordRequest.
 
         操作类型, 可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
@@ -159,7 +159,7 @@ class ListOpRecordRequest:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this ListOpRecordRequest.
+        r"""Gets the operation_id of this ListOpRecordRequest.
 
         操作记录ID
 
@@ -170,7 +170,7 @@ class ListOpRecordRequest:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this ListOpRecordRequest.
+        r"""Sets the operation_id of this ListOpRecordRequest.
 
         操作记录ID
 

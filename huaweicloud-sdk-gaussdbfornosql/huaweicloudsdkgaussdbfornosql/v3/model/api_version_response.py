@@ -35,7 +35,7 @@ class ApiVersionResponse:
     }
 
     def __init__(self, id=None, links=None, status=None, version=None, min_version=None, updated=None):
-        """ApiVersionResponse
+        r"""ApiVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ApiVersionResponse:
 
     @property
     def id(self):
-        """Gets the id of this ApiVersionResponse.
+        r"""Gets the id of this ApiVersionResponse.
 
         API版本号。
 
@@ -83,7 +83,7 @@ class ApiVersionResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiVersionResponse.
+        r"""Sets the id of this ApiVersionResponse.
 
         API版本号。
 
@@ -94,7 +94,7 @@ class ApiVersionResponse:
 
     @property
     def links(self):
-        """Gets the links of this ApiVersionResponse.
+        r"""Gets the links of this ApiVersionResponse.
 
         对应API的链接信息,v3版本该字段为[]。
 
@@ -105,7 +105,7 @@ class ApiVersionResponse:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ApiVersionResponse.
+        r"""Sets the links of this ApiVersionResponse.
 
         对应API的链接信息,v3版本该字段为[]。
 
@@ -116,7 +116,7 @@ class ApiVersionResponse:
 
     @property
     def status(self):
-        """Gets the status of this ApiVersionResponse.
+        r"""Gets the status of this ApiVersionResponse.
 
         版本状态。 取值为“CURRENT”，表示该版本目前已对外公布。
 
@@ -127,7 +127,7 @@ class ApiVersionResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiVersionResponse.
+        r"""Sets the status of this ApiVersionResponse.
 
         版本状态。 取值为“CURRENT”，表示该版本目前已对外公布。
 
@@ -138,7 +138,7 @@ class ApiVersionResponse:
 
     @property
     def version(self):
-        """Gets the version of this ApiVersionResponse.
+        r"""Gets the version of this ApiVersionResponse.
 
         API版本的子版本信息。
 
@@ -149,7 +149,7 @@ class ApiVersionResponse:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiVersionResponse.
+        r"""Sets the version of this ApiVersionResponse.
 
         API版本的子版本信息。
 
@@ -160,7 +160,7 @@ class ApiVersionResponse:
 
     @property
     def min_version(self):
-        """Gets the min_version of this ApiVersionResponse.
+        r"""Gets the min_version of this ApiVersionResponse.
 
         API版本的最小版本号。
 
@@ -171,7 +171,7 @@ class ApiVersionResponse:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this ApiVersionResponse.
+        r"""Sets the min_version of this ApiVersionResponse.
 
         API版本的最小版本号。
 
@@ -182,7 +182,7 @@ class ApiVersionResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this ApiVersionResponse.
+        r"""Gets the updated of this ApiVersionResponse.
 
         版本更新时间。格式为“yyyy-mm-dd Thh:mm:ssZ”。其中，T指某个时间的开始，Z指UTC时间。
 
@@ -193,7 +193,7 @@ class ApiVersionResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ApiVersionResponse.
+        r"""Sets the updated of this ApiVersionResponse.
 
         版本更新时间。格式为“yyyy-mm-dd Thh:mm:ssZ”。其中，T指某个时间的开始，Z指UTC时间。
 

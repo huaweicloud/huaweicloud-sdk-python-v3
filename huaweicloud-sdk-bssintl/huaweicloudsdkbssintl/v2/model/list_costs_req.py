@@ -37,7 +37,7 @@ class ListCostsReq:
     }
 
     def __init__(self, time_condition=None, groupby=None, cost_type=None, amount_type=None, offset=None, limit=None, filters=None):
-        """ListCostsReq
+        r"""ListCostsReq
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListCostsReq:
 
     @property
     def time_condition(self):
-        """Gets the time_condition of this ListCostsReq.
+        r"""Gets the time_condition of this ListCostsReq.
 
         :return: The time_condition of this ListCostsReq.
         :rtype: :class:`huaweicloudsdkbssintl.v2.TimeCondition`
@@ -90,7 +90,7 @@ class ListCostsReq:
 
     @time_condition.setter
     def time_condition(self, time_condition):
-        """Sets the time_condition of this ListCostsReq.
+        r"""Sets the time_condition of this ListCostsReq.
 
         :param time_condition: The time_condition of this ListCostsReq.
         :type time_condition: :class:`huaweicloudsdkbssintl.v2.TimeCondition`
@@ -99,7 +99,7 @@ class ListCostsReq:
 
     @property
     def groupby(self):
-        """Gets the groupby of this ListCostsReq.
+        r"""Gets the groupby of this ListCostsReq.
 
         查询维度，具体请参见表 GroupBy。
 
@@ -110,7 +110,7 @@ class ListCostsReq:
 
     @groupby.setter
     def groupby(self, groupby):
-        """Sets the groupby of this ListCostsReq.
+        r"""Sets the groupby of this ListCostsReq.
 
         查询维度，具体请参见表 GroupBy。
 
@@ -121,7 +121,7 @@ class ListCostsReq:
 
     @property
     def cost_type(self):
-        """Gets the cost_type of this ListCostsReq.
+        r"""Gets the cost_type of this ListCostsReq.
 
         成本类型。ORIGINAL_COST：原始成本AMORTIZED_COST：摊销成本
 
@@ -132,7 +132,7 @@ class ListCostsReq:
 
     @cost_type.setter
     def cost_type(self, cost_type):
-        """Sets the cost_type of this ListCostsReq.
+        r"""Sets the cost_type of this ListCostsReq.
 
         成本类型。ORIGINAL_COST：原始成本AMORTIZED_COST：摊销成本
 
@@ -143,7 +143,7 @@ class ListCostsReq:
 
     @property
     def amount_type(self):
-        """Gets the amount_type of this ListCostsReq.
+        r"""Gets the amount_type of this ListCostsReq.
 
         展示的金额类型。PAYMENT_AMOUNT：应付NET_AMOUNT：实付
 
@@ -154,7 +154,7 @@ class ListCostsReq:
 
     @amount_type.setter
     def amount_type(self, amount_type):
-        """Sets the amount_type of this ListCostsReq.
+        r"""Sets the amount_type of this ListCostsReq.
 
         展示的金额类型。PAYMENT_AMOUNT：应付NET_AMOUNT：实付
 
@@ -165,7 +165,7 @@ class ListCostsReq:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCostsReq.
+        r"""Gets the offset of this ListCostsReq.
 
         偏移量。从0开始，默认为0
 
@@ -176,7 +176,7 @@ class ListCostsReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCostsReq.
+        r"""Sets the offset of this ListCostsReq.
 
         偏移量。从0开始，默认为0
 
@@ -187,7 +187,7 @@ class ListCostsReq:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCostsReq.
+        r"""Gets the limit of this ListCostsReq.
 
         每次查询的记录数，默认为10
 
@@ -198,7 +198,7 @@ class ListCostsReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCostsReq.
+        r"""Sets the limit of this ListCostsReq.
 
         每次查询的记录数，默认为10
 
@@ -209,7 +209,7 @@ class ListCostsReq:
 
     @property
     def filters(self):
-        """Gets the filters of this ListCostsReq.
+        r"""Gets the filters of this ListCostsReq.
 
         过滤条件，具体请参见表 过滤条件。此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
@@ -220,7 +220,7 @@ class ListCostsReq:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this ListCostsReq.
+        r"""Sets the filters of this ListCostsReq.
 
         过滤条件，具体请参见表 过滤条件。此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 

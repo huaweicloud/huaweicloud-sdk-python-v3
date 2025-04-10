@@ -30,7 +30,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, order_info=None, order_line_items=None):
-        """ShowCustomerOrderDetailsResponse
+        r"""ShowCustomerOrderDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowCustomerOrderDetailsResponse.
+        r"""Gets the total_count of this ShowCustomerOrderDetailsResponse.
 
         订单项个数。
 
@@ -69,7 +69,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowCustomerOrderDetailsResponse.
+        r"""Sets the total_count of this ShowCustomerOrderDetailsResponse.
 
         订单项个数。
 
@@ -80,7 +80,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     @property
     def order_info(self):
-        """Gets the order_info of this ShowCustomerOrderDetailsResponse.
+        r"""Gets the order_info of this ShowCustomerOrderDetailsResponse.
 
         :return: The order_info of this ShowCustomerOrderDetailsResponse.
         :rtype: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`
@@ -89,7 +89,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     @order_info.setter
     def order_info(self, order_info):
-        """Sets the order_info of this ShowCustomerOrderDetailsResponse.
+        r"""Sets the order_info of this ShowCustomerOrderDetailsResponse.
 
         :param order_info: The order_info of this ShowCustomerOrderDetailsResponse.
         :type order_info: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`
@@ -98,7 +98,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     @property
     def order_line_items(self):
-        """Gets the order_line_items of this ShowCustomerOrderDetailsResponse.
+        r"""Gets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
         订单对应的订单项。 具体请参见表5。
 
@@ -109,7 +109,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     @order_line_items.setter
     def order_line_items(self, order_line_items):
-        """Sets the order_line_items of this ShowCustomerOrderDetailsResponse.
+        r"""Sets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
         订单对应的订单项。 具体请参见表5。
 

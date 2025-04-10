@@ -47,7 +47,7 @@ class ListPublicipPoolRequest:
     }
 
     def __init__(self, marker=None, limit=None, fields=None, sort_key=None, sort_dir=None, id=None, name=None, size=None, status=None, type=None, description=None, public_border_group=None):
-        """ListPublicipPoolRequest
+        r"""ListPublicipPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListPublicipPoolRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPublicipPoolRequest.
+        r"""Gets the marker of this ListPublicipPoolRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -131,7 +131,7 @@ class ListPublicipPoolRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPublicipPoolRequest.
+        r"""Sets the marker of this ListPublicipPoolRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -142,7 +142,7 @@ class ListPublicipPoolRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublicipPoolRequest.
+        r"""Gets the limit of this ListPublicipPoolRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -153,7 +153,7 @@ class ListPublicipPoolRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublicipPoolRequest.
+        r"""Sets the limit of this ListPublicipPoolRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -164,7 +164,7 @@ class ListPublicipPoolRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListPublicipPoolRequest.
+        r"""Gets the fields of this ListPublicipPoolRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
@@ -175,7 +175,7 @@ class ListPublicipPoolRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListPublicipPoolRequest.
+        r"""Sets the fields of this ListPublicipPoolRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
@@ -186,7 +186,7 @@ class ListPublicipPoolRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPublicipPoolRequest.
+        r"""Gets the sort_key of this ListPublicipPoolRequest.
 
         排序，形式为\"sort_key=id&sort_dir=asc\"  支持字段：id/name/created_at/updated_at/public_border_group
 
@@ -197,7 +197,7 @@ class ListPublicipPoolRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPublicipPoolRequest.
+        r"""Sets the sort_key of this ListPublicipPoolRequest.
 
         排序，形式为\"sort_key=id&sort_dir=asc\"  支持字段：id/name/created_at/updated_at/public_border_group
 
@@ -208,7 +208,7 @@ class ListPublicipPoolRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPublicipPoolRequest.
+        r"""Gets the sort_dir of this ListPublicipPoolRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -219,7 +219,7 @@ class ListPublicipPoolRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPublicipPoolRequest.
+        r"""Sets the sort_dir of this ListPublicipPoolRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -230,7 +230,7 @@ class ListPublicipPoolRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPublicipPoolRequest.
+        r"""Gets the id of this ListPublicipPoolRequest.
 
         根据id过滤
 
@@ -241,7 +241,7 @@ class ListPublicipPoolRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPublicipPoolRequest.
+        r"""Sets the id of this ListPublicipPoolRequest.
 
         根据id过滤
 
@@ -252,7 +252,7 @@ class ListPublicipPoolRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPublicipPoolRequest.
+        r"""Gets the name of this ListPublicipPoolRequest.
 
         根据name过滤
 
@@ -263,7 +263,7 @@ class ListPublicipPoolRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPublicipPoolRequest.
+        r"""Sets the name of this ListPublicipPoolRequest.
 
         根据name过滤
 
@@ -274,7 +274,7 @@ class ListPublicipPoolRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListPublicipPoolRequest.
+        r"""Gets the size of this ListPublicipPoolRequest.
 
         根据size过滤
 
@@ -285,7 +285,7 @@ class ListPublicipPoolRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListPublicipPoolRequest.
+        r"""Sets the size of this ListPublicipPoolRequest.
 
         根据size过滤
 
@@ -296,7 +296,7 @@ class ListPublicipPoolRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPublicipPoolRequest.
+        r"""Gets the status of this ListPublicipPoolRequest.
 
         根据status过滤
 
@@ -307,7 +307,7 @@ class ListPublicipPoolRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPublicipPoolRequest.
+        r"""Sets the status of this ListPublicipPoolRequest.
 
         根据status过滤
 
@@ -318,7 +318,7 @@ class ListPublicipPoolRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPublicipPoolRequest.
+        r"""Gets the type of this ListPublicipPoolRequest.
 
         根据type过滤
 
@@ -329,7 +329,7 @@ class ListPublicipPoolRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPublicipPoolRequest.
+        r"""Sets the type of this ListPublicipPoolRequest.
 
         根据type过滤
 
@@ -340,7 +340,7 @@ class ListPublicipPoolRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPublicipPoolRequest.
+        r"""Gets the description of this ListPublicipPoolRequest.
 
         根据description过滤
 
@@ -351,7 +351,7 @@ class ListPublicipPoolRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPublicipPoolRequest.
+        r"""Sets the description of this ListPublicipPoolRequest.
 
         根据description过滤
 
@@ -362,7 +362,7 @@ class ListPublicipPoolRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListPublicipPoolRequest.
+        r"""Gets the public_border_group of this ListPublicipPoolRequest.
 
         根据public_border_group过滤
 
@@ -373,7 +373,7 @@ class ListPublicipPoolRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListPublicipPoolRequest.
+        r"""Sets the public_border_group of this ListPublicipPoolRequest.
 
         根据public_border_group过滤
 

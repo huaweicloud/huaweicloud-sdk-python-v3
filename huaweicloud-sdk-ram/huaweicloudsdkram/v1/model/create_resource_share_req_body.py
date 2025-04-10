@@ -37,7 +37,7 @@ class CreateResourceShareReqBody:
     }
 
     def __init__(self, name=None, description=None, allow_external_principals=None, permission_ids=None, principals=None, resource_urns=None, tags=None):
-        """CreateResourceShareReqBody
+        r"""CreateResourceShareReqBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateResourceShareReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateResourceShareReqBody.
+        r"""Gets the name of this CreateResourceShareReqBody.
 
         资源共享实例的名称。
 
@@ -95,7 +95,7 @@ class CreateResourceShareReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateResourceShareReqBody.
+        r"""Sets the name of this CreateResourceShareReqBody.
 
         资源共享实例的名称。
 
@@ -106,7 +106,7 @@ class CreateResourceShareReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateResourceShareReqBody.
+        r"""Gets the description of this CreateResourceShareReqBody.
 
         资源共享实例的描述。
 
@@ -117,7 +117,7 @@ class CreateResourceShareReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateResourceShareReqBody.
+        r"""Sets the description of this CreateResourceShareReqBody.
 
         资源共享实例的描述。
 
@@ -128,7 +128,7 @@ class CreateResourceShareReqBody:
 
     @property
     def allow_external_principals(self):
-        """Gets the allow_external_principals of this CreateResourceShareReqBody.
+        r"""Gets the allow_external_principals of this CreateResourceShareReqBody.
 
         资源共享实例是否支持共享给组织外账号。
 
@@ -139,7 +139,7 @@ class CreateResourceShareReqBody:
 
     @allow_external_principals.setter
     def allow_external_principals(self, allow_external_principals):
-        """Sets the allow_external_principals of this CreateResourceShareReqBody.
+        r"""Sets the allow_external_principals of this CreateResourceShareReqBody.
 
         资源共享实例是否支持共享给组织外账号。
 
@@ -150,7 +150,7 @@ class CreateResourceShareReqBody:
 
     @property
     def permission_ids(self):
-        """Gets the permission_ids of this CreateResourceShareReqBody.
+        r"""Gets the permission_ids of this CreateResourceShareReqBody.
 
         资源共享实例关联的RAM权限列表。一种资源类型只能关联一个RAM权限。如果您没有指定权限ID，RAM将自动为每个资源类型关联默认权限。
 
@@ -161,7 +161,7 @@ class CreateResourceShareReqBody:
 
     @permission_ids.setter
     def permission_ids(self, permission_ids):
-        """Sets the permission_ids of this CreateResourceShareReqBody.
+        r"""Sets the permission_ids of this CreateResourceShareReqBody.
 
         资源共享实例关联的RAM权限列表。一种资源类型只能关联一个RAM权限。如果您没有指定权限ID，RAM将自动为每个资源类型关联默认权限。
 
@@ -172,7 +172,7 @@ class CreateResourceShareReqBody:
 
     @property
     def principals(self):
-        """Gets the principals of this CreateResourceShareReqBody.
+        r"""Gets the principals of this CreateResourceShareReqBody.
 
         资源共享实例关联的一个或多个资源使用者的列表。
 
@@ -183,7 +183,7 @@ class CreateResourceShareReqBody:
 
     @principals.setter
     def principals(self, principals):
-        """Sets the principals of this CreateResourceShareReqBody.
+        r"""Sets the principals of this CreateResourceShareReqBody.
 
         资源共享实例关联的一个或多个资源使用者的列表。
 
@@ -194,7 +194,7 @@ class CreateResourceShareReqBody:
 
     @property
     def resource_urns(self):
-        """Gets the resource_urns of this CreateResourceShareReqBody.
+        r"""Gets the resource_urns of this CreateResourceShareReqBody.
 
         资源共享实例关联的一个或多个共享资源URN的列表。
 
@@ -205,7 +205,7 @@ class CreateResourceShareReqBody:
 
     @resource_urns.setter
     def resource_urns(self, resource_urns):
-        """Sets the resource_urns of this CreateResourceShareReqBody.
+        r"""Sets the resource_urns of this CreateResourceShareReqBody.
 
         资源共享实例关联的一个或多个共享资源URN的列表。
 
@@ -216,7 +216,7 @@ class CreateResourceShareReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateResourceShareReqBody.
+        r"""Gets the tags of this CreateResourceShareReqBody.
 
         资源共享标签列表。
 
@@ -227,7 +227,7 @@ class CreateResourceShareReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateResourceShareReqBody.
+        r"""Sets the tags of this CreateResourceShareReqBody.
 
         资源共享标签列表。
 

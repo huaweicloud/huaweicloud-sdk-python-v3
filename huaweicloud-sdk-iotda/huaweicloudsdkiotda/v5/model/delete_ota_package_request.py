@@ -27,7 +27,7 @@ class DeleteOtaPackageRequest:
     }
 
     def __init__(self, instance_id=None, package_id=None):
-        """DeleteOtaPackageRequest
+        r"""DeleteOtaPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteOtaPackageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteOtaPackageRequest.
+        r"""Gets the instance_id of this DeleteOtaPackageRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -60,7 +60,7 @@ class DeleteOtaPackageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteOtaPackageRequest.
+        r"""Sets the instance_id of this DeleteOtaPackageRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -71,7 +71,7 @@ class DeleteOtaPackageRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this DeleteOtaPackageRequest.
+        r"""Gets the package_id of this DeleteOtaPackageRequest.
 
         **参数说明**：升级包ID，用于唯一标识一个升级包。由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -82,7 +82,7 @@ class DeleteOtaPackageRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this DeleteOtaPackageRequest.
+        r"""Sets the package_id of this DeleteOtaPackageRequest.
 
         **参数说明**：升级包ID，用于唯一标识一个升级包。由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、连接符（-）的组合。
 

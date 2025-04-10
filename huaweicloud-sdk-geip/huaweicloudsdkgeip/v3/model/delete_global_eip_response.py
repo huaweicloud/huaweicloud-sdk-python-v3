@@ -26,7 +26,7 @@ class DeleteGlobalEipResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteGlobalEipResponse
+        r"""DeleteGlobalEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteGlobalEipResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteGlobalEipResponse.
+        r"""Gets the x_request_id of this DeleteGlobalEipResponse.
 
         :return: The x_request_id of this DeleteGlobalEipResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteGlobalEipResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteGlobalEipResponse.
+        r"""Sets the x_request_id of this DeleteGlobalEipResponse.
 
         :param x_request_id: The x_request_id of this DeleteGlobalEipResponse.
         :type x_request_id: str

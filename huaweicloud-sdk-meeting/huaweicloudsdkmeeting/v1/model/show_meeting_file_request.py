@@ -29,7 +29,7 @@ class ShowMeetingFileRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, file_code=None):
-        """ShowMeetingFileRequest
+        r"""ShowMeetingFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowMeetingFileRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowMeetingFileRequest.
+        r"""Gets the x_request_id of this ShowMeetingFileRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class ShowMeetingFileRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowMeetingFileRequest.
+        r"""Sets the x_request_id of this ShowMeetingFileRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class ShowMeetingFileRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ShowMeetingFileRequest.
+        r"""Gets the accept_language of this ShowMeetingFileRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class ShowMeetingFileRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ShowMeetingFileRequest.
+        r"""Sets the accept_language of this ShowMeetingFileRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class ShowMeetingFileRequest:
 
     @property
     def file_code(self):
-        """Gets the file_code of this ShowMeetingFileRequest.
+        r"""Gets the file_code of this ShowMeetingFileRequest.
 
         会议纪要文件码。
 
@@ -111,7 +111,7 @@ class ShowMeetingFileRequest:
 
     @file_code.setter
     def file_code(self, file_code):
-        """Sets the file_code of this ShowMeetingFileRequest.
+        r"""Sets the file_code of this ShowMeetingFileRequest.
 
         会议纪要文件码。
 

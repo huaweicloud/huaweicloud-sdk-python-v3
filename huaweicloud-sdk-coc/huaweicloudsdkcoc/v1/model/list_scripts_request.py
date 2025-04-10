@@ -43,7 +43,7 @@ class ListScriptsRequest:
     }
 
     def __init__(self, limit=None, marker=None, name_like=None, creator=None, risk_level=None, type=None, enterprise_project_id=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """ListScriptsRequest
+        r"""ListScriptsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListScriptsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScriptsRequest.
+        r"""Gets the limit of this ListScriptsRequest.
 
         分页参数：每页返回记录个数限制
 
@@ -116,7 +116,7 @@ class ListScriptsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScriptsRequest.
+        r"""Sets the limit of this ListScriptsRequest.
 
         分页参数：每页返回记录个数限制
 
@@ -127,7 +127,7 @@ class ListScriptsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListScriptsRequest.
+        r"""Gets the marker of this ListScriptsRequest.
 
         分页参数：上一页最后一个记录id
 
@@ -138,7 +138,7 @@ class ListScriptsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListScriptsRequest.
+        r"""Sets the marker of this ListScriptsRequest.
 
         分页参数：上一页最后一个记录id
 
@@ -149,7 +149,7 @@ class ListScriptsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListScriptsRequest.
+        r"""Gets the name_like of this ListScriptsRequest.
 
         脚本名（模糊）
 
@@ -160,7 +160,7 @@ class ListScriptsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListScriptsRequest.
+        r"""Sets the name_like of this ListScriptsRequest.
 
         脚本名（模糊）
 
@@ -171,7 +171,7 @@ class ListScriptsRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListScriptsRequest.
+        r"""Gets the creator of this ListScriptsRequest.
 
         创建人
 
@@ -182,7 +182,7 @@ class ListScriptsRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListScriptsRequest.
+        r"""Sets the creator of this ListScriptsRequest.
 
         创建人
 
@@ -193,7 +193,7 @@ class ListScriptsRequest:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ListScriptsRequest.
+        r"""Gets the risk_level of this ListScriptsRequest.
 
         风险等级 LOW:低风险 MEDIUM：中风险 HIGH：高风险
 
@@ -204,7 +204,7 @@ class ListScriptsRequest:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ListScriptsRequest.
+        r"""Sets the risk_level of this ListScriptsRequest.
 
         风险等级 LOW:低风险 MEDIUM：中风险 HIGH：高风险
 
@@ -215,7 +215,7 @@ class ListScriptsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListScriptsRequest.
+        r"""Gets the type of this ListScriptsRequest.
 
         脚本类型 SHELL:shell脚本 PYTHON：python脚本 BAT：Bat脚本
 
@@ -226,7 +226,7 @@ class ListScriptsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListScriptsRequest.
+        r"""Sets the type of this ListScriptsRequest.
 
         脚本类型 SHELL:shell脚本 PYTHON：python脚本 BAT：Bat脚本
 
@@ -237,7 +237,7 @@ class ListScriptsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListScriptsRequest.
+        r"""Gets the enterprise_project_id of this ListScriptsRequest.
 
         企业项目id
 
@@ -248,7 +248,7 @@ class ListScriptsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListScriptsRequest.
+        r"""Sets the enterprise_project_id of this ListScriptsRequest.
 
         企业项目id
 
@@ -259,7 +259,7 @@ class ListScriptsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListScriptsRequest.
+        r"""Gets the x_language of this ListScriptsRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -270,7 +270,7 @@ class ListScriptsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListScriptsRequest.
+        r"""Sets the x_language of this ListScriptsRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -281,7 +281,7 @@ class ListScriptsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListScriptsRequest.
+        r"""Gets the x_project_id of this ListScriptsRequest.
 
         项目ID，一个项目对应一个region
 
@@ -292,7 +292,7 @@ class ListScriptsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListScriptsRequest.
+        r"""Sets the x_project_id of this ListScriptsRequest.
 
         项目ID，一个项目对应一个region
 
@@ -303,7 +303,7 @@ class ListScriptsRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this ListScriptsRequest.
+        r"""Gets the x_user_profile of this ListScriptsRequest.
 
         IAM5.0用户信息
 
@@ -314,7 +314,7 @@ class ListScriptsRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this ListScriptsRequest.
+        r"""Sets the x_user_profile of this ListScriptsRequest.
 
         IAM5.0用户信息
 

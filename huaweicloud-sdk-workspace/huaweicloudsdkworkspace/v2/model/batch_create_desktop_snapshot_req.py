@@ -31,7 +31,7 @@ class BatchCreateDesktopSnapshotReq:
     }
 
     def __init__(self, desktop_ids=None, disk_type=None, system_disk_snapshot=None, data_disk_snapshot=None):
-        """BatchCreateDesktopSnapshotReq
+        r"""BatchCreateDesktopSnapshotReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this BatchCreateDesktopSnapshotReq.
+        r"""Gets the desktop_ids of this BatchCreateDesktopSnapshotReq.
 
         桌面id数组，最多支持100。
 
@@ -75,7 +75,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this BatchCreateDesktopSnapshotReq.
+        r"""Sets the desktop_ids of this BatchCreateDesktopSnapshotReq.
 
         桌面id数组，最多支持100。
 
@@ -86,7 +86,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @property
     def disk_type(self):
-        """Gets the disk_type of this BatchCreateDesktopSnapshotReq.
+        r"""Gets the disk_type of this BatchCreateDesktopSnapshotReq.
 
         快照类型。 - SYSTEM_DISK 系统盘。 - DATA_DISKS 数据盘。 - ALL 系统盘和数据盘。
 
@@ -97,7 +97,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @disk_type.setter
     def disk_type(self, disk_type):
-        """Sets the disk_type of this BatchCreateDesktopSnapshotReq.
+        r"""Sets the disk_type of this BatchCreateDesktopSnapshotReq.
 
         快照类型。 - SYSTEM_DISK 系统盘。 - DATA_DISKS 数据盘。 - ALL 系统盘和数据盘。
 
@@ -108,7 +108,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @property
     def system_disk_snapshot(self):
-        """Gets the system_disk_snapshot of this BatchCreateDesktopSnapshotReq.
+        r"""Gets the system_disk_snapshot of this BatchCreateDesktopSnapshotReq.
 
         :return: The system_disk_snapshot of this BatchCreateDesktopSnapshotReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DiskSnapshotInfo`
@@ -117,7 +117,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @system_disk_snapshot.setter
     def system_disk_snapshot(self, system_disk_snapshot):
-        """Sets the system_disk_snapshot of this BatchCreateDesktopSnapshotReq.
+        r"""Sets the system_disk_snapshot of this BatchCreateDesktopSnapshotReq.
 
         :param system_disk_snapshot: The system_disk_snapshot of this BatchCreateDesktopSnapshotReq.
         :type system_disk_snapshot: :class:`huaweicloudsdkworkspace.v2.DiskSnapshotInfo`
@@ -126,7 +126,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @property
     def data_disk_snapshot(self):
-        """Gets the data_disk_snapshot of this BatchCreateDesktopSnapshotReq.
+        r"""Gets the data_disk_snapshot of this BatchCreateDesktopSnapshotReq.
 
         :return: The data_disk_snapshot of this BatchCreateDesktopSnapshotReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DiskSnapshotInfo`
@@ -135,7 +135,7 @@ class BatchCreateDesktopSnapshotReq:
 
     @data_disk_snapshot.setter
     def data_disk_snapshot(self, data_disk_snapshot):
-        """Sets the data_disk_snapshot of this BatchCreateDesktopSnapshotReq.
+        r"""Sets the data_disk_snapshot of this BatchCreateDesktopSnapshotReq.
 
         :param data_disk_snapshot: The data_disk_snapshot of this BatchCreateDesktopSnapshotReq.
         :type data_disk_snapshot: :class:`huaweicloudsdkworkspace.v2.DiskSnapshotInfo`

@@ -37,7 +37,7 @@ class CreateThumbReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=None, sync=None, original_dir=None):
-        """CreateThumbReq
+        r"""CreateThumbReq
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateThumbReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateThumbReq.
+        r"""Gets the input of this CreateThumbReq.
 
         :return: The input of this CreateThumbReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -91,7 +91,7 @@ class CreateThumbReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateThumbReq.
+        r"""Sets the input of this CreateThumbReq.
 
         :param input: The input of this CreateThumbReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -100,7 +100,7 @@ class CreateThumbReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateThumbReq.
+        r"""Gets the output of this CreateThumbReq.
 
         :return: The output of this CreateThumbReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -109,7 +109,7 @@ class CreateThumbReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateThumbReq.
+        r"""Sets the output of this CreateThumbReq.
 
         :param output: The output of this CreateThumbReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -118,7 +118,7 @@ class CreateThumbReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateThumbReq.
+        r"""Gets the user_data of this CreateThumbReq.
 
         用户自定义数据。 
 
@@ -129,7 +129,7 @@ class CreateThumbReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateThumbReq.
+        r"""Sets the user_data of this CreateThumbReq.
 
         用户自定义数据。 
 
@@ -140,7 +140,7 @@ class CreateThumbReq:
 
     @property
     def thumbnail_para(self):
-        """Gets the thumbnail_para of this CreateThumbReq.
+        r"""Gets the thumbnail_para of this CreateThumbReq.
 
         :return: The thumbnail_para of this CreateThumbReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
@@ -149,7 +149,7 @@ class CreateThumbReq:
 
     @thumbnail_para.setter
     def thumbnail_para(self, thumbnail_para):
-        """Sets the thumbnail_para of this CreateThumbReq.
+        r"""Sets the thumbnail_para of this CreateThumbReq.
 
         :param thumbnail_para: The thumbnail_para of this CreateThumbReq.
         :type thumbnail_para: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
@@ -158,7 +158,7 @@ class CreateThumbReq:
 
     @property
     def tar(self):
-        """Gets the tar of this CreateThumbReq.
+        r"""Gets the tar of this CreateThumbReq.
 
         是否压缩抽帧图片生成tar包。  取值如下： - 0：压缩。 - 1：不压缩 默认值：1 
 
@@ -169,7 +169,7 @@ class CreateThumbReq:
 
     @tar.setter
     def tar(self, tar):
-        """Sets the tar of this CreateThumbReq.
+        r"""Sets the tar of this CreateThumbReq.
 
         是否压缩抽帧图片生成tar包。  取值如下： - 0：压缩。 - 1：不压缩 默认值：1 
 
@@ -180,7 +180,7 @@ class CreateThumbReq:
 
     @property
     def sync(self):
-        """Gets the sync of this CreateThumbReq.
+        r"""Gets the sync of this CreateThumbReq.
 
         是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 默认值：0 
 
@@ -191,7 +191,7 @@ class CreateThumbReq:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this CreateThumbReq.
+        r"""Sets the sync of this CreateThumbReq.
 
         是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 默认值：0 
 
@@ -202,7 +202,7 @@ class CreateThumbReq:
 
     @property
     def original_dir(self):
-        """Gets the original_dir of this CreateThumbReq.
+        r"""Gets the original_dir of this CreateThumbReq.
 
         是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 默认值：0 
 
@@ -213,7 +213,7 @@ class CreateThumbReq:
 
     @original_dir.setter
     def original_dir(self, original_dir):
-        """Sets the original_dir of this CreateThumbReq.
+        r"""Sets the original_dir of this CreateThumbReq.
 
         是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 默认值：0 
 

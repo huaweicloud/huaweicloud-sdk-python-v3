@@ -26,7 +26,7 @@ class UpdateProtectionGroupNameResponse(SdkResponse):
     }
 
     def __init__(self, server_group=None):
-        """UpdateProtectionGroupNameResponse
+        r"""UpdateProtectionGroupNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateProtectionGroupNameResponse(SdkResponse):
 
     @property
     def server_group(self):
-        """Gets the server_group of this UpdateProtectionGroupNameResponse.
+        r"""Gets the server_group of this UpdateProtectionGroupNameResponse.
 
         :return: The server_group of this UpdateProtectionGroupNameResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`
@@ -53,7 +53,7 @@ class UpdateProtectionGroupNameResponse(SdkResponse):
 
     @server_group.setter
     def server_group(self, server_group):
-        """Sets the server_group of this UpdateProtectionGroupNameResponse.
+        r"""Sets the server_group of this UpdateProtectionGroupNameResponse.
 
         :param server_group: The server_group of this UpdateProtectionGroupNameResponse.
         :type server_group: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`

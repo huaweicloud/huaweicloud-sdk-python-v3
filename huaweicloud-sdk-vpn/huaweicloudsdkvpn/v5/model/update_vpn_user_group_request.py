@@ -29,7 +29,7 @@ class UpdateVpnUserGroupRequest:
     }
 
     def __init__(self, vpn_server_id=None, group_id=None, body=None):
-        """UpdateVpnUserGroupRequest
+        r"""UpdateVpnUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVpnUserGroupRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this UpdateVpnUserGroupRequest.
+        r"""Gets the vpn_server_id of this UpdateVpnUserGroupRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class UpdateVpnUserGroupRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this UpdateVpnUserGroupRequest.
+        r"""Sets the vpn_server_id of this UpdateVpnUserGroupRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class UpdateVpnUserGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateVpnUserGroupRequest.
+        r"""Gets the group_id of this UpdateVpnUserGroupRequest.
 
         用户组ID
 
@@ -88,7 +88,7 @@ class UpdateVpnUserGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateVpnUserGroupRequest.
+        r"""Sets the group_id of this UpdateVpnUserGroupRequest.
 
         用户组ID
 
@@ -99,7 +99,7 @@ class UpdateVpnUserGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpnUserGroupRequest.
+        r"""Gets the body of this UpdateVpnUserGroupRequest.
 
         :return: The body of this UpdateVpnUserGroupRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserGroupRequestBody`
@@ -108,7 +108,7 @@ class UpdateVpnUserGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpnUserGroupRequest.
+        r"""Sets the body of this UpdateVpnUserGroupRequest.
 
         :param body: The body of this UpdateVpnUserGroupRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserGroupRequestBody`

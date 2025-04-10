@@ -40,7 +40,7 @@ class ShowJobInstanceResponse(SdkResponse):
     }
 
     def __init__(self, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, instances_id=None, total=None, nodes=None):
-        """ShowJobInstanceResponse
+        r"""ShowJobInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobInstanceResponse.
+        r"""Gets the status of this ShowJobInstanceResponse.
 
         :return: The status of this ShowJobInstanceResponse.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobInstanceResponse.
+        r"""Sets the status of this ShowJobInstanceResponse.
 
         :param status: The status of this ShowJobInstanceResponse.
         :type status: str
@@ -111,7 +111,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def plan_time(self):
-        """Gets the plan_time of this ShowJobInstanceResponse.
+        r"""Gets the plan_time of this ShowJobInstanceResponse.
 
         :return: The plan_time of this ShowJobInstanceResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @plan_time.setter
     def plan_time(self, plan_time):
-        """Sets the plan_time of this ShowJobInstanceResponse.
+        r"""Sets the plan_time of this ShowJobInstanceResponse.
 
         :param plan_time: The plan_time of this ShowJobInstanceResponse.
         :type plan_time: int
@@ -129,7 +129,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowJobInstanceResponse.
+        r"""Gets the start_time of this ShowJobInstanceResponse.
 
         :return: The start_time of this ShowJobInstanceResponse.
         :rtype: int
@@ -138,7 +138,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowJobInstanceResponse.
+        r"""Sets the start_time of this ShowJobInstanceResponse.
 
         :param start_time: The start_time of this ShowJobInstanceResponse.
         :type start_time: int
@@ -147,7 +147,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobInstanceResponse.
+        r"""Gets the end_time of this ShowJobInstanceResponse.
 
         :return: The end_time of this ShowJobInstanceResponse.
         :rtype: int
@@ -156,7 +156,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobInstanceResponse.
+        r"""Sets the end_time of this ShowJobInstanceResponse.
 
         :param end_time: The end_time of this ShowJobInstanceResponse.
         :type end_time: int
@@ -165,7 +165,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def execute_time(self):
-        """Gets the execute_time of this ShowJobInstanceResponse.
+        r"""Gets the execute_time of this ShowJobInstanceResponse.
 
         :return: The execute_time of this ShowJobInstanceResponse.
         :rtype: int
@@ -174,7 +174,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @execute_time.setter
     def execute_time(self, execute_time):
-        """Sets the execute_time of this ShowJobInstanceResponse.
+        r"""Sets the execute_time of this ShowJobInstanceResponse.
 
         :param execute_time: The execute_time of this ShowJobInstanceResponse.
         :type execute_time: int
@@ -183,7 +183,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def instances_id(self):
-        """Gets the instances_id of this ShowJobInstanceResponse.
+        r"""Gets the instances_id of this ShowJobInstanceResponse.
 
         :return: The instances_id of this ShowJobInstanceResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @instances_id.setter
     def instances_id(self, instances_id):
-        """Sets the instances_id of this ShowJobInstanceResponse.
+        r"""Sets the instances_id of this ShowJobInstanceResponse.
 
         :param instances_id: The instances_id of this ShowJobInstanceResponse.
         :type instances_id: str
@@ -201,7 +201,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowJobInstanceResponse.
+        r"""Gets the total of this ShowJobInstanceResponse.
 
         :return: The total of this ShowJobInstanceResponse.
         :rtype: int
@@ -210,7 +210,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowJobInstanceResponse.
+        r"""Sets the total of this ShowJobInstanceResponse.
 
         :param total: The total of this ShowJobInstanceResponse.
         :type total: int
@@ -219,7 +219,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowJobInstanceResponse.
+        r"""Gets the nodes of this ShowJobInstanceResponse.
 
         :return: The nodes of this ShowJobInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.NodeInstance`]
@@ -228,7 +228,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowJobInstanceResponse.
+        r"""Sets the nodes of this ShowJobInstanceResponse.
 
         :param nodes: The nodes of this ShowJobInstanceResponse.
         :type nodes: list[:class:`huaweicloudsdkdlf.v1.NodeInstance`]

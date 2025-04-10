@@ -25,7 +25,7 @@ class DeletePortInfoRequest:
     }
 
     def __init__(self, port_id=None):
-        """DeletePortInfoRequest
+        r"""DeletePortInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePortInfoRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this DeletePortInfoRequest.
+        r"""Gets the port_id of this DeletePortInfoRequest.
 
         通道号ID。
 
@@ -53,7 +53,7 @@ class DeletePortInfoRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this DeletePortInfoRequest.
+        r"""Sets the port_id of this DeletePortInfoRequest.
 
         通道号ID。
 

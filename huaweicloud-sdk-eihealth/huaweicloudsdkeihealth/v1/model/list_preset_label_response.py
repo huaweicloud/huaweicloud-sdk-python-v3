@@ -28,7 +28,7 @@ class ListPresetLabelResponse(SdkResponse):
     }
 
     def __init__(self, count=None, labels=None):
-        """ListPresetLabelResponse
+        r"""ListPresetLabelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPresetLabelResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPresetLabelResponse.
+        r"""Gets the count of this ListPresetLabelResponse.
 
         预置标签数量
 
@@ -62,7 +62,7 @@ class ListPresetLabelResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPresetLabelResponse.
+        r"""Sets the count of this ListPresetLabelResponse.
 
         预置标签数量
 
@@ -73,7 +73,7 @@ class ListPresetLabelResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ListPresetLabelResponse.
+        r"""Gets the labels of this ListPresetLabelResponse.
 
         预置标签
 
@@ -84,7 +84,7 @@ class ListPresetLabelResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ListPresetLabelResponse.
+        r"""Sets the labels of this ListPresetLabelResponse.
 
         预置标签
 

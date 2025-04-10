@@ -39,7 +39,7 @@ class ExternalAccesses:
     }
 
     def __init__(self, id=None, protocol=None, address=None, forward_port=None, type=None, status=None, create_time=None, update_time=None):
-        """ExternalAccesses
+        r"""ExternalAccesses
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ExternalAccesses:
 
     @property
     def id(self):
-        """Gets the id of this ExternalAccesses.
+        r"""Gets the id of this ExternalAccesses.
 
         ID。
 
@@ -100,7 +100,7 @@ class ExternalAccesses:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalAccesses.
+        r"""Sets the id of this ExternalAccesses.
 
         ID。
 
@@ -111,7 +111,7 @@ class ExternalAccesses:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ExternalAccesses.
+        r"""Gets the protocol of this ExternalAccesses.
 
         :return: The protocol of this ExternalAccesses.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
@@ -120,7 +120,7 @@ class ExternalAccesses:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ExternalAccesses.
+        r"""Sets the protocol of this ExternalAccesses.
 
         :param protocol: The protocol of this ExternalAccesses.
         :type protocol: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
@@ -129,7 +129,7 @@ class ExternalAccesses:
 
     @property
     def address(self):
-        """Gets the address of this ExternalAccesses.
+        r"""Gets the address of this ExternalAccesses.
 
         访问地址。
 
@@ -140,7 +140,7 @@ class ExternalAccesses:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ExternalAccesses.
+        r"""Sets the address of this ExternalAccesses.
 
         访问地址。
 
@@ -151,7 +151,7 @@ class ExternalAccesses:
 
     @property
     def forward_port(self):
-        """Gets the forward_port of this ExternalAccesses.
+        r"""Gets the forward_port of this ExternalAccesses.
 
         应用组件进程监听端口
 
@@ -162,7 +162,7 @@ class ExternalAccesses:
 
     @forward_port.setter
     def forward_port(self, forward_port):
-        """Sets the forward_port of this ExternalAccesses.
+        r"""Sets the forward_port of this ExternalAccesses.
 
         应用组件进程监听端口
 
@@ -173,7 +173,7 @@ class ExternalAccesses:
 
     @property
     def type(self):
-        """Gets the type of this ExternalAccesses.
+        r"""Gets the type of this ExternalAccesses.
 
         :return: The type of this ExternalAccesses.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
@@ -182,7 +182,7 @@ class ExternalAccesses:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExternalAccesses.
+        r"""Sets the type of this ExternalAccesses.
 
         :param type: The type of this ExternalAccesses.
         :type type: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
@@ -191,7 +191,7 @@ class ExternalAccesses:
 
     @property
     def status(self):
-        """Gets the status of this ExternalAccesses.
+        r"""Gets the status of this ExternalAccesses.
 
         :return: The status of this ExternalAccesses.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
@@ -200,7 +200,7 @@ class ExternalAccesses:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExternalAccesses.
+        r"""Sets the status of this ExternalAccesses.
 
         :param status: The status of this ExternalAccesses.
         :type status: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
@@ -209,7 +209,7 @@ class ExternalAccesses:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ExternalAccesses.
+        r"""Gets the create_time of this ExternalAccesses.
 
         创建时间。
 
@@ -220,7 +220,7 @@ class ExternalAccesses:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ExternalAccesses.
+        r"""Sets the create_time of this ExternalAccesses.
 
         创建时间。
 
@@ -231,7 +231,7 @@ class ExternalAccesses:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ExternalAccesses.
+        r"""Gets the update_time of this ExternalAccesses.
 
         修改时间。
 
@@ -242,7 +242,7 @@ class ExternalAccesses:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ExternalAccesses.
+        r"""Sets the update_time of this ExternalAccesses.
 
         修改时间。
 

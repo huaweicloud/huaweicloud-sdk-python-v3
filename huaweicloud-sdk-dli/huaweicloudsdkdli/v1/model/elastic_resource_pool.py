@@ -63,7 +63,7 @@ class ElasticResourcePool:
     }
 
     def __init__(self, elastic_resource_pool_name=None, id=None, update_time=None, queues=None, owner=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None, manager=None, label=None):
-        """ElasticResourcePool
+        r"""ElasticResourcePool
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ElasticResourcePool:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ElasticResourcePool.
+        r"""Gets the elastic_resource_pool_name of this ElasticResourcePool.
 
         资源池名称
 
@@ -187,7 +187,7 @@ class ElasticResourcePool:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ElasticResourcePool.
+        r"""Sets the elastic_resource_pool_name of this ElasticResourcePool.
 
         资源池名称
 
@@ -198,7 +198,7 @@ class ElasticResourcePool:
 
     @property
     def id(self):
-        """Gets the id of this ElasticResourcePool.
+        r"""Gets the id of this ElasticResourcePool.
 
         资源池id
 
@@ -209,7 +209,7 @@ class ElasticResourcePool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ElasticResourcePool.
+        r"""Sets the id of this ElasticResourcePool.
 
         资源池id
 
@@ -220,7 +220,7 @@ class ElasticResourcePool:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ElasticResourcePool.
+        r"""Gets the update_time of this ElasticResourcePool.
 
         更新时间
 
@@ -231,7 +231,7 @@ class ElasticResourcePool:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ElasticResourcePool.
+        r"""Sets the update_time of this ElasticResourcePool.
 
         更新时间
 
@@ -242,7 +242,7 @@ class ElasticResourcePool:
 
     @property
     def queues(self):
-        """Gets the queues of this ElasticResourcePool.
+        r"""Gets the queues of this ElasticResourcePool.
 
         :return: The queues of this ElasticResourcePool.
         :rtype: list[str]
@@ -251,7 +251,7 @@ class ElasticResourcePool:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this ElasticResourcePool.
+        r"""Sets the queues of this ElasticResourcePool.
 
         :param queues: The queues of this ElasticResourcePool.
         :type queues: list[str]
@@ -260,7 +260,7 @@ class ElasticResourcePool:
 
     @property
     def owner(self):
-        """Gets the owner of this ElasticResourcePool.
+        r"""Gets the owner of this ElasticResourcePool.
 
         用户名
 
@@ -271,7 +271,7 @@ class ElasticResourcePool:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ElasticResourcePool.
+        r"""Sets the owner of this ElasticResourcePool.
 
         用户名
 
@@ -282,7 +282,7 @@ class ElasticResourcePool:
 
     @property
     def description(self):
-        """Gets the description of this ElasticResourcePool.
+        r"""Gets the description of this ElasticResourcePool.
 
         资源池描述
 
@@ -293,7 +293,7 @@ class ElasticResourcePool:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ElasticResourcePool.
+        r"""Sets the description of this ElasticResourcePool.
 
         资源池描述
 
@@ -304,7 +304,7 @@ class ElasticResourcePool:
 
     @property
     def max_cu(self):
-        """Gets the max_cu of this ElasticResourcePool.
+        r"""Gets the max_cu of this ElasticResourcePool.
 
         最大cu数量
 
@@ -315,7 +315,7 @@ class ElasticResourcePool:
 
     @max_cu.setter
     def max_cu(self, max_cu):
-        """Sets the max_cu of this ElasticResourcePool.
+        r"""Sets the max_cu of this ElasticResourcePool.
 
         最大cu数量
 
@@ -326,7 +326,7 @@ class ElasticResourcePool:
 
     @property
     def min_cu(self):
-        """Gets the min_cu of this ElasticResourcePool.
+        r"""Gets the min_cu of this ElasticResourcePool.
 
         最小cu数量
 
@@ -337,7 +337,7 @@ class ElasticResourcePool:
 
     @min_cu.setter
     def min_cu(self, min_cu):
-        """Sets the min_cu of this ElasticResourcePool.
+        r"""Sets the min_cu of this ElasticResourcePool.
 
         最小cu数量
 
@@ -348,7 +348,7 @@ class ElasticResourcePool:
 
     @property
     def actual_cu(self):
-        """Gets the actual_cu of this ElasticResourcePool.
+        r"""Gets the actual_cu of this ElasticResourcePool.
 
         实际cu数量
 
@@ -359,7 +359,7 @@ class ElasticResourcePool:
 
     @actual_cu.setter
     def actual_cu(self, actual_cu):
-        """Sets the actual_cu of this ElasticResourcePool.
+        r"""Sets the actual_cu of this ElasticResourcePool.
 
         实际cu数量
 
@@ -370,7 +370,7 @@ class ElasticResourcePool:
 
     @property
     def cidr_in_vpc(self):
-        """Gets the cidr_in_vpc of this ElasticResourcePool.
+        r"""Gets the cidr_in_vpc of this ElasticResourcePool.
 
         子网
 
@@ -381,7 +381,7 @@ class ElasticResourcePool:
 
     @cidr_in_vpc.setter
     def cidr_in_vpc(self, cidr_in_vpc):
-        """Sets the cidr_in_vpc of this ElasticResourcePool.
+        r"""Sets the cidr_in_vpc of this ElasticResourcePool.
 
         子网
 
@@ -392,7 +392,7 @@ class ElasticResourcePool:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ElasticResourcePool.
+        r"""Gets the create_time of this ElasticResourcePool.
 
         创建时间
 
@@ -403,7 +403,7 @@ class ElasticResourcePool:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ElasticResourcePool.
+        r"""Sets the create_time of this ElasticResourcePool.
 
         创建时间
 
@@ -414,7 +414,7 @@ class ElasticResourcePool:
 
     @property
     def current_cu(self):
-        """Gets the current_cu of this ElasticResourcePool.
+        r"""Gets the current_cu of this ElasticResourcePool.
 
         当前cu数量
 
@@ -425,7 +425,7 @@ class ElasticResourcePool:
 
     @current_cu.setter
     def current_cu(self, current_cu):
-        """Sets the current_cu of this ElasticResourcePool.
+        r"""Sets the current_cu of this ElasticResourcePool.
 
         当前cu数量
 
@@ -436,7 +436,7 @@ class ElasticResourcePool:
 
     @property
     def status(self):
-        """Gets the status of this ElasticResourcePool.
+        r"""Gets the status of this ElasticResourcePool.
 
         状态
 
@@ -447,7 +447,7 @@ class ElasticResourcePool:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ElasticResourcePool.
+        r"""Sets the status of this ElasticResourcePool.
 
         状态
 
@@ -458,7 +458,7 @@ class ElasticResourcePool:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ElasticResourcePool.
+        r"""Gets the resource_id of this ElasticResourcePool.
 
         资源ID
 
@@ -469,7 +469,7 @@ class ElasticResourcePool:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ElasticResourcePool.
+        r"""Sets the resource_id of this ElasticResourcePool.
 
         资源ID
 
@@ -480,7 +480,7 @@ class ElasticResourcePool:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ElasticResourcePool.
+        r"""Gets the fail_reason of this ElasticResourcePool.
 
         创建失败原因
 
@@ -491,7 +491,7 @@ class ElasticResourcePool:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ElasticResourcePool.
+        r"""Sets the fail_reason of this ElasticResourcePool.
 
         创建失败原因
 
@@ -502,7 +502,7 @@ class ElasticResourcePool:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ElasticResourcePool.
+        r"""Gets the enterprise_project_id of this ElasticResourcePool.
 
         企业项目ID
 
@@ -513,7 +513,7 @@ class ElasticResourcePool:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ElasticResourcePool.
+        r"""Sets the enterprise_project_id of this ElasticResourcePool.
 
         企业项目ID
 
@@ -524,7 +524,7 @@ class ElasticResourcePool:
 
     @property
     def prepay_cu(self):
-        """Gets the prepay_cu of this ElasticResourcePool.
+        r"""Gets the prepay_cu of this ElasticResourcePool.
 
         预付费cu数量
 
@@ -535,7 +535,7 @@ class ElasticResourcePool:
 
     @prepay_cu.setter
     def prepay_cu(self, prepay_cu):
-        """Sets the prepay_cu of this ElasticResourcePool.
+        r"""Sets the prepay_cu of this ElasticResourcePool.
 
         预付费cu数量
 
@@ -546,7 +546,7 @@ class ElasticResourcePool:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ElasticResourcePool.
+        r"""Gets the charging_mode of this ElasticResourcePool.
 
         计费类型
 
@@ -557,7 +557,7 @@ class ElasticResourcePool:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ElasticResourcePool.
+        r"""Sets the charging_mode of this ElasticResourcePool.
 
         计费类型
 
@@ -568,7 +568,7 @@ class ElasticResourcePool:
 
     @property
     def manager(self):
-        """Gets the manager of this ElasticResourcePool.
+        r"""Gets the manager of this ElasticResourcePool.
 
         弹性资源池类型
 
@@ -579,7 +579,7 @@ class ElasticResourcePool:
 
     @manager.setter
     def manager(self, manager):
-        """Sets the manager of this ElasticResourcePool.
+        r"""Sets the manager of this ElasticResourcePool.
 
         弹性资源池类型
 
@@ -590,7 +590,7 @@ class ElasticResourcePool:
 
     @property
     def label(self):
-        """Gets the label of this ElasticResourcePool.
+        r"""Gets the label of this ElasticResourcePool.
 
         弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
 
@@ -601,7 +601,7 @@ class ElasticResourcePool:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ElasticResourcePool.
+        r"""Sets the label of this ElasticResourcePool.
 
         弹性资源池属性字段。默认为标准版弹性资源池；{\"spec\":\"basic\"}标识基础版弹性资源池；{\"billing_spec_code\":\"developer\"}标识开发者弹性资源池。目前不支持其它属性设置。
 

@@ -29,7 +29,7 @@ class ListDevicesRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListDevicesRequest
+        r"""ListDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListDevicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDevicesRequest.
+        r"""Gets the offset of this ListDevicesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -68,7 +68,7 @@ class ListDevicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDevicesRequest.
+        r"""Sets the offset of this ListDevicesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -79,7 +79,7 @@ class ListDevicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDevicesRequest.
+        r"""Gets the limit of this ListDevicesRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -90,7 +90,7 @@ class ListDevicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDevicesRequest.
+        r"""Sets the limit of this ListDevicesRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -101,7 +101,7 @@ class ListDevicesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDevicesRequest.
+        r"""Gets the name of this ListDevicesRequest.
 
         设备名称，模糊匹配，只允许中英文、数字、下划线、中划线，长度1-60
 
@@ -112,7 +112,7 @@ class ListDevicesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDevicesRequest.
+        r"""Sets the name of this ListDevicesRequest.
 
         设备名称，模糊匹配，只允许中英文、数字、下划线、中划线，长度1-60
 

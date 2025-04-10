@@ -43,7 +43,7 @@ class AccountDto:
     }
 
     def __init__(self, id=None, urn=None, join_method=None, status=None, joined_at=None, name=None, mobile_phone=None, intl_number_prefix=None, email=None, description=None):
-        """AccountDto
+        r"""AccountDto
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class AccountDto:
 
     @property
     def id(self):
-        """Gets the id of this AccountDto.
+        r"""Gets the id of this AccountDto.
 
         账号的唯一标识符（ID）。
 
@@ -111,7 +111,7 @@ class AccountDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AccountDto.
+        r"""Sets the id of this AccountDto.
 
         账号的唯一标识符（ID）。
 
@@ -122,7 +122,7 @@ class AccountDto:
 
     @property
     def urn(self):
-        """Gets the urn of this AccountDto.
+        r"""Gets the urn of this AccountDto.
 
         账号的统一资源名称。
 
@@ -133,7 +133,7 @@ class AccountDto:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this AccountDto.
+        r"""Sets the urn of this AccountDto.
 
         账号的统一资源名称。
 
@@ -144,7 +144,7 @@ class AccountDto:
 
     @property
     def join_method(self):
-        """Gets the join_method of this AccountDto.
+        r"""Gets the join_method of this AccountDto.
 
         账号加入组织的方式。invited：邀请加入，created：创建加入。
 
@@ -155,7 +155,7 @@ class AccountDto:
 
     @join_method.setter
     def join_method(self, join_method):
-        """Sets the join_method of this AccountDto.
+        r"""Sets the join_method of this AccountDto.
 
         账号加入组织的方式。invited：邀请加入，created：创建加入。
 
@@ -166,7 +166,7 @@ class AccountDto:
 
     @property
     def status(self):
-        """Gets the status of this AccountDto.
+        r"""Gets the status of this AccountDto.
 
         账号当前的状态。active：有效； suspended：已关闭； pending_closure：关闭中。
 
@@ -177,7 +177,7 @@ class AccountDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccountDto.
+        r"""Sets the status of this AccountDto.
 
         账号当前的状态。active：有效； suspended：已关闭； pending_closure：关闭中。
 
@@ -188,7 +188,7 @@ class AccountDto:
 
     @property
     def joined_at(self):
-        """Gets the joined_at of this AccountDto.
+        r"""Gets the joined_at of this AccountDto.
 
         账号加入组织的日期。
 
@@ -199,7 +199,7 @@ class AccountDto:
 
     @joined_at.setter
     def joined_at(self, joined_at):
-        """Sets the joined_at of this AccountDto.
+        r"""Sets the joined_at of this AccountDto.
 
         账号加入组织的日期。
 
@@ -210,7 +210,7 @@ class AccountDto:
 
     @property
     def name(self):
-        """Gets the name of this AccountDto.
+        r"""Gets the name of this AccountDto.
 
         账号名称
 
@@ -221,7 +221,7 @@ class AccountDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccountDto.
+        r"""Sets the name of this AccountDto.
 
         账号名称
 
@@ -232,7 +232,7 @@ class AccountDto:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this AccountDto.
+        r"""Gets the mobile_phone of this AccountDto.
 
         手机号码
 
@@ -243,7 +243,7 @@ class AccountDto:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this AccountDto.
+        r"""Sets the mobile_phone of this AccountDto.
 
         手机号码
 
@@ -254,7 +254,7 @@ class AccountDto:
 
     @property
     def intl_number_prefix(self):
-        """Gets the intl_number_prefix of this AccountDto.
+        r"""Gets the intl_number_prefix of this AccountDto.
 
         手机号前缀。
 
@@ -265,7 +265,7 @@ class AccountDto:
 
     @intl_number_prefix.setter
     def intl_number_prefix(self, intl_number_prefix):
-        """Sets the intl_number_prefix of this AccountDto.
+        r"""Sets the intl_number_prefix of this AccountDto.
 
         手机号前缀。
 
@@ -276,7 +276,7 @@ class AccountDto:
 
     @property
     def email(self):
-        """Gets the email of this AccountDto.
+        r"""Gets the email of this AccountDto.
 
         与此账号关联的电子邮件地址。
 
@@ -287,7 +287,7 @@ class AccountDto:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this AccountDto.
+        r"""Sets the email of this AccountDto.
 
         与此账号关联的电子邮件地址。
 
@@ -298,7 +298,7 @@ class AccountDto:
 
     @property
     def description(self):
-        """Gets the description of this AccountDto.
+        r"""Gets the description of this AccountDto.
 
         描述信息。
 
@@ -309,7 +309,7 @@ class AccountDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AccountDto.
+        r"""Sets the description of this AccountDto.
 
         描述信息。
 

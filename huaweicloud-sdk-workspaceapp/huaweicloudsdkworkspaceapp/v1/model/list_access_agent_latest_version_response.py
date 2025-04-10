@@ -26,7 +26,7 @@ class ListAccessAgentLatestVersionResponse(SdkResponse):
     }
 
     def __init__(self, items=None):
-        """ListAccessAgentLatestVersionResponse
+        r"""ListAccessAgentLatestVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAccessAgentLatestVersionResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAccessAgentLatestVersionResponse.
+        r"""Gets the items of this ListAccessAgentLatestVersionResponse.
 
         租户的HDP最新版本信息列表。
 
@@ -55,7 +55,7 @@ class ListAccessAgentLatestVersionResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAccessAgentLatestVersionResponse.
+        r"""Sets the items of this ListAccessAgentLatestVersionResponse.
 
         租户的HDP最新版本信息列表。
 

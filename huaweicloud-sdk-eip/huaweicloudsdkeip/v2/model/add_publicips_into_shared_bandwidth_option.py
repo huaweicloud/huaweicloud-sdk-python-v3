@@ -25,7 +25,7 @@ class AddPublicipsIntoSharedBandwidthOption:
     }
 
     def __init__(self, publicip_info=None):
-        """AddPublicipsIntoSharedBandwidthOption
+        r"""AddPublicipsIntoSharedBandwidthOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddPublicipsIntoSharedBandwidthOption:
 
     @property
     def publicip_info(self):
-        """Gets the publicip_info of this AddPublicipsIntoSharedBandwidthOption.
+        r"""Gets the publicip_info of this AddPublicipsIntoSharedBandwidthOption.
 
         功能说明：要插入共享带宽的弹性公网IP或者IPv6端口信息  约束：WHOLE类型的带宽支持多个弹性公网IP或者IPv6端口，跟租户的配额相关，默认一个共享带宽的配额为20
 
@@ -53,7 +53,7 @@ class AddPublicipsIntoSharedBandwidthOption:
 
     @publicip_info.setter
     def publicip_info(self, publicip_info):
-        """Sets the publicip_info of this AddPublicipsIntoSharedBandwidthOption.
+        r"""Sets the publicip_info of this AddPublicipsIntoSharedBandwidthOption.
 
         功能说明：要插入共享带宽的弹性公网IP或者IPv6端口信息  约束：WHOLE类型的带宽支持多个弹性公网IP或者IPv6端口，跟租户的配额相关，默认一个共享带宽的配额为20
 

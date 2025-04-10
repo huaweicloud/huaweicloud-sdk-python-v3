@@ -35,7 +35,7 @@ class NewTaskInfo:
     }
 
     def __init__(self, name=None, parallel=None, enable_full_link=None, project_id=None, operate_mode=None, case_id_list=None):
-        """NewTaskInfo
+        r"""NewTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class NewTaskInfo:
 
     @property
     def name(self):
-        """Gets the name of this NewTaskInfo.
+        r"""Gets the name of this NewTaskInfo.
 
         任务名称
 
@@ -84,7 +84,7 @@ class NewTaskInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NewTaskInfo.
+        r"""Sets the name of this NewTaskInfo.
 
         任务名称
 
@@ -95,7 +95,7 @@ class NewTaskInfo:
 
     @property
     def parallel(self):
-        """Gets the parallel of this NewTaskInfo.
+        r"""Gets the parallel of this NewTaskInfo.
 
         是否并行
 
@@ -106,7 +106,7 @@ class NewTaskInfo:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this NewTaskInfo.
+        r"""Sets the parallel of this NewTaskInfo.
 
         是否并行
 
@@ -117,7 +117,7 @@ class NewTaskInfo:
 
     @property
     def enable_full_link(self):
-        """Gets the enable_full_link of this NewTaskInfo.
+        r"""Gets the enable_full_link of this NewTaskInfo.
 
         是否支持全链路压测
 
@@ -128,7 +128,7 @@ class NewTaskInfo:
 
     @enable_full_link.setter
     def enable_full_link(self, enable_full_link):
-        """Sets the enable_full_link of this NewTaskInfo.
+        r"""Sets the enable_full_link of this NewTaskInfo.
 
         是否支持全链路压测
 
@@ -139,7 +139,7 @@ class NewTaskInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NewTaskInfo.
+        r"""Gets the project_id of this NewTaskInfo.
 
         工程id
 
@@ -150,7 +150,7 @@ class NewTaskInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NewTaskInfo.
+        r"""Sets the project_id of this NewTaskInfo.
 
         工程id
 
@@ -161,7 +161,7 @@ class NewTaskInfo:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this NewTaskInfo.
+        r"""Gets the operate_mode of this NewTaskInfo.
 
         任务压测模式，0-时长模式；1-次数模式；2-混合模式；此处是兼容老版本遗留字段，填固定值2
 
@@ -172,7 +172,7 @@ class NewTaskInfo:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this NewTaskInfo.
+        r"""Sets the operate_mode of this NewTaskInfo.
 
         任务压测模式，0-时长模式；1-次数模式；2-混合模式；此处是兼容老版本遗留字段，填固定值2
 
@@ -183,7 +183,7 @@ class NewTaskInfo:
 
     @property
     def case_id_list(self):
-        """Gets the case_id_list of this NewTaskInfo.
+        r"""Gets the case_id_list of this NewTaskInfo.
 
         关联用例id列表
 
@@ -194,7 +194,7 @@ class NewTaskInfo:
 
     @case_id_list.setter
     def case_id_list(self, case_id_list):
-        """Sets the case_id_list of this NewTaskInfo.
+        r"""Sets the case_id_list of this NewTaskInfo.
 
         关联用例id列表
 

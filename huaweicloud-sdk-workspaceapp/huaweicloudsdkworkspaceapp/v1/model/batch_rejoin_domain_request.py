@@ -25,7 +25,7 @@ class BatchRejoinDomainRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRejoinDomainRequest
+        r"""BatchRejoinDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRejoinDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRejoinDomainRequest.
+        r"""Gets the body of this BatchRejoinDomainRequest.
 
         :return: The body of this BatchRejoinDomainRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchRejoinDomainReq`
@@ -52,7 +52,7 @@ class BatchRejoinDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRejoinDomainRequest.
+        r"""Sets the body of this BatchRejoinDomainRequest.
 
         :param body: The body of this BatchRejoinDomainRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchRejoinDomainReq`

@@ -30,7 +30,7 @@ class ShowMasterResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowMasterResponse
+        r"""ShowMasterResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMasterResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowMasterResponse.
+        r"""Gets the error of this ShowMasterResponse.
 
         :return: The error of this ShowMasterResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowMasterResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowMasterResponse.
+        r"""Sets the error of this ShowMasterResponse.
 
         :param error: The error of this ShowMasterResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowMasterResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowMasterResponse.
+        r"""Gets the result of this ShowMasterResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class ShowMasterResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowMasterResponse.
+        r"""Sets the result of this ShowMasterResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class ShowMasterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowMasterResponse.
+        r"""Gets the status of this ShowMasterResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class ShowMasterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMasterResponse.
+        r"""Sets the status of this ShowMasterResponse.
 
         响应状态
 

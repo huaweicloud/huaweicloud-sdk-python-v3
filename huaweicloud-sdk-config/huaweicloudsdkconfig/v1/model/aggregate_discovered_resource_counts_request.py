@@ -29,7 +29,7 @@ class AggregateDiscoveredResourceCountsRequest:
     }
 
     def __init__(self, aggregator_id=None, filter=None, group_by_key=None):
-        """AggregateDiscoveredResourceCountsRequest
+        r"""AggregateDiscoveredResourceCountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AggregateDiscoveredResourceCountsRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregateDiscoveredResourceCountsRequest.
+        r"""Gets the aggregator_id of this AggregateDiscoveredResourceCountsRequest.
 
         资源聚合器ID。
 
@@ -66,7 +66,7 @@ class AggregateDiscoveredResourceCountsRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregateDiscoveredResourceCountsRequest.
+        r"""Sets the aggregator_id of this AggregateDiscoveredResourceCountsRequest.
 
         资源聚合器ID。
 
@@ -77,7 +77,7 @@ class AggregateDiscoveredResourceCountsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this AggregateDiscoveredResourceCountsRequest.
+        r"""Gets the filter of this AggregateDiscoveredResourceCountsRequest.
 
         :return: The filter of this AggregateDiscoveredResourceCountsRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.ResourceCountsFilters`
@@ -86,7 +86,7 @@ class AggregateDiscoveredResourceCountsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this AggregateDiscoveredResourceCountsRequest.
+        r"""Sets the filter of this AggregateDiscoveredResourceCountsRequest.
 
         :param filter: The filter of this AggregateDiscoveredResourceCountsRequest.
         :type filter: :class:`huaweicloudsdkconfig.v1.ResourceCountsFilters`
@@ -95,7 +95,7 @@ class AggregateDiscoveredResourceCountsRequest:
 
     @property
     def group_by_key(self):
-        """Gets the group_by_key of this AggregateDiscoveredResourceCountsRequest.
+        r"""Gets the group_by_key of this AggregateDiscoveredResourceCountsRequest.
 
         用于对资源计数进行分组的键（RESOURCE_TYPE | ACCOUNT_ID）。
 
@@ -106,7 +106,7 @@ class AggregateDiscoveredResourceCountsRequest:
 
     @group_by_key.setter
     def group_by_key(self, group_by_key):
-        """Sets the group_by_key of this AggregateDiscoveredResourceCountsRequest.
+        r"""Sets the group_by_key of this AggregateDiscoveredResourceCountsRequest.
 
         用于对资源计数进行分组的键（RESOURCE_TYPE | ACCOUNT_ID）。
 

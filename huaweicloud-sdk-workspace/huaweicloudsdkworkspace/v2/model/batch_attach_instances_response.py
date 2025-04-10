@@ -26,7 +26,7 @@ class BatchAttachInstancesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchAttachInstancesResponse
+        r"""BatchAttachInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchAttachInstancesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchAttachInstancesResponse.
+        r"""Gets the job_id of this BatchAttachInstancesResponse.
 
         分配桌面总任务id
 
@@ -55,7 +55,7 @@ class BatchAttachInstancesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchAttachInstancesResponse.
+        r"""Sets the job_id of this BatchAttachInstancesResponse.
 
         分配桌面总任务id
 

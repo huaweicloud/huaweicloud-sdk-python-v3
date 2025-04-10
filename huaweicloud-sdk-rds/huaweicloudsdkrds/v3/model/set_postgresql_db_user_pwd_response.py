@@ -26,7 +26,7 @@ class SetPostgresqlDbUserPwdResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SetPostgresqlDbUserPwdResponse
+        r"""SetPostgresqlDbUserPwdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetPostgresqlDbUserPwdResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this SetPostgresqlDbUserPwdResponse.
+        r"""Gets the resp of this SetPostgresqlDbUserPwdResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class SetPostgresqlDbUserPwdResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this SetPostgresqlDbUserPwdResponse.
+        r"""Sets the resp of this SetPostgresqlDbUserPwdResponse.
 
         操作结果。
 

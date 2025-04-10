@@ -27,7 +27,7 @@ class DeleteLtsConfigsRequestBody:
     }
 
     def __init__(self, instance_ids=None, log_type=None):
-        """DeleteLtsConfigsRequestBody
+        r"""DeleteLtsConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLtsConfigsRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this DeleteLtsConfigsRequestBody.
+        r"""Gets the instance_ids of this DeleteLtsConfigsRequestBody.
 
         需要解除关联的实例ID列表。
 
@@ -59,7 +59,7 @@ class DeleteLtsConfigsRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this DeleteLtsConfigsRequestBody.
+        r"""Sets the instance_ids of this DeleteLtsConfigsRequestBody.
 
         需要解除关联的实例ID列表。
 
@@ -70,7 +70,7 @@ class DeleteLtsConfigsRequestBody:
 
     @property
     def log_type(self):
-        """Gets the log_type of this DeleteLtsConfigsRequestBody.
+        r"""Gets the log_type of this DeleteLtsConfigsRequestBody.
 
         日志类型。slow_log表示慢日志。
 
@@ -81,7 +81,7 @@ class DeleteLtsConfigsRequestBody:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this DeleteLtsConfigsRequestBody.
+        r"""Sets the log_type of this DeleteLtsConfigsRequestBody.
 
         日志类型。slow_log表示慢日志。
 

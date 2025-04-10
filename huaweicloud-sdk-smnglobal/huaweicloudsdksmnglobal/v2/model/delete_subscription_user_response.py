@@ -26,7 +26,7 @@ class DeleteSubscriptionUserResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """DeleteSubscriptionUserResponse
+        r"""DeleteSubscriptionUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteSubscriptionUserResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteSubscriptionUserResponse.
+        r"""Gets the request_id of this DeleteSubscriptionUserResponse.
 
         请求的唯一标识ID。
 
@@ -55,7 +55,7 @@ class DeleteSubscriptionUserResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteSubscriptionUserResponse.
+        r"""Sets the request_id of this DeleteSubscriptionUserResponse.
 
         请求的唯一标识ID。
 

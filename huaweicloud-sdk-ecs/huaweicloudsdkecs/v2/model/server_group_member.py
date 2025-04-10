@@ -25,7 +25,7 @@ class ServerGroupMember:
     }
 
     def __init__(self, instance_uuid=None):
-        """ServerGroupMember
+        r"""ServerGroupMember
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ServerGroupMember:
 
     @property
     def instance_uuid(self):
-        """Gets the instance_uuid of this ServerGroupMember.
+        r"""Gets the instance_uuid of this ServerGroupMember.
 
         云服务器UUID。
 
@@ -53,7 +53,7 @@ class ServerGroupMember:
 
     @instance_uuid.setter
     def instance_uuid(self, instance_uuid):
-        """Sets the instance_uuid of this ServerGroupMember.
+        r"""Sets the instance_uuid of this ServerGroupMember.
 
         云服务器UUID。
 

@@ -28,7 +28,7 @@ class ListShareBackupsResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, total=None):
-        """ListShareBackupsResponse
+        r"""ListShareBackupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListShareBackupsResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ListShareBackupsResponse.
+        r"""Gets the backups of this ListShareBackupsResponse.
 
         共享备份列表。
 
@@ -62,7 +62,7 @@ class ListShareBackupsResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ListShareBackupsResponse.
+        r"""Sets the backups of this ListShareBackupsResponse.
 
         共享备份列表。
 
@@ -73,7 +73,7 @@ class ListShareBackupsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListShareBackupsResponse.
+        r"""Gets the total of this ListShareBackupsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListShareBackupsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListShareBackupsResponse.
+        r"""Sets the total of this ListShareBackupsResponse.
 
         总记录数。
 

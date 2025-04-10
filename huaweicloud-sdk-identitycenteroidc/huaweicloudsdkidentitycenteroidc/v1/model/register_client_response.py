@@ -26,7 +26,7 @@ class RegisterClientResponse(SdkResponse):
     }
 
     def __init__(self, client_info=None):
-        """RegisterClientResponse
+        r"""RegisterClientResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterClientResponse(SdkResponse):
 
     @property
     def client_info(self):
-        """Gets the client_info of this RegisterClientResponse.
+        r"""Gets the client_info of this RegisterClientResponse.
 
         :return: The client_info of this RegisterClientResponse.
         :rtype: :class:`huaweicloudsdkidentitycenteroidc.v1.ClientInfoDto`
@@ -53,7 +53,7 @@ class RegisterClientResponse(SdkResponse):
 
     @client_info.setter
     def client_info(self, client_info):
-        """Sets the client_info of this RegisterClientResponse.
+        r"""Sets the client_info of this RegisterClientResponse.
 
         :param client_info: The client_info of this RegisterClientResponse.
         :type client_info: :class:`huaweicloudsdkidentitycenteroidc.v1.ClientInfoDto`

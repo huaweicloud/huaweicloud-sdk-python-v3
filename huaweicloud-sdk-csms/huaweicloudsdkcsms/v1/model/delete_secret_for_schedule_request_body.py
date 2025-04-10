@@ -25,7 +25,7 @@ class DeleteSecretForScheduleRequestBody:
     }
 
     def __init__(self, recovery_window_in_days=None):
-        """DeleteSecretForScheduleRequestBody
+        r"""DeleteSecretForScheduleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSecretForScheduleRequestBody:
 
     @property
     def recovery_window_in_days(self):
-        """Gets the recovery_window_in_days of this DeleteSecretForScheduleRequestBody.
+        r"""Gets the recovery_window_in_days of this DeleteSecretForScheduleRequestBody.
 
         创建定时删除凭据的任务，且指定可恢复的天数。  约束：7~30。  默认值：30。 
 
@@ -53,7 +53,7 @@ class DeleteSecretForScheduleRequestBody:
 
     @recovery_window_in_days.setter
     def recovery_window_in_days(self, recovery_window_in_days):
-        """Sets the recovery_window_in_days of this DeleteSecretForScheduleRequestBody.
+        r"""Sets the recovery_window_in_days of this DeleteSecretForScheduleRequestBody.
 
         创建定时删除凭据的任务，且指定可恢复的天数。  约束：7~30。  默认值：30。 
 

@@ -33,7 +33,7 @@ class ListAppsRequest:
     }
 
     def __init__(self, app_type=None, provider_type=None, app_id=None, limit=None, offset=None):
-        """ListAppsRequest
+        r"""ListAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListAppsRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ListAppsRequest.
+        r"""Gets the app_type of this ListAppsRequest.
 
         应用类型
 
@@ -82,7 +82,7 @@ class ListAppsRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ListAppsRequest.
+        r"""Sets the app_type of this ListAppsRequest.
 
         应用类型
 
@@ -93,7 +93,7 @@ class ListAppsRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListAppsRequest.
+        r"""Gets the provider_type of this ListAppsRequest.
 
         应用来源
 
@@ -104,7 +104,7 @@ class ListAppsRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListAppsRequest.
+        r"""Sets the provider_type of this ListAppsRequest.
 
         应用来源
 
@@ -115,7 +115,7 @@ class ListAppsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppsRequest.
+        r"""Gets the app_id of this ListAppsRequest.
 
         应用ID
 
@@ -126,7 +126,7 @@ class ListAppsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppsRequest.
+        r"""Sets the app_id of this ListAppsRequest.
 
         应用ID
 
@@ -137,7 +137,7 @@ class ListAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppsRequest.
+        r"""Gets the limit of this ListAppsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -148,7 +148,7 @@ class ListAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppsRequest.
+        r"""Sets the limit of this ListAppsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -159,7 +159,7 @@ class ListAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppsRequest.
+        r"""Gets the offset of this ListAppsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 
@@ -170,7 +170,7 @@ class ListAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppsRequest.
+        r"""Sets the offset of this ListAppsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 

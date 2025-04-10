@@ -31,7 +31,7 @@ class WordsListIem:
     }
 
     def __init__(self, words=None, confidence=None, location=None, char_list=None):
-        """WordsListIem
+        r"""WordsListIem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WordsListIem:
 
     @property
     def words(self):
-        """Gets the words of this WordsListIem.
+        r"""Gets the words of this WordsListIem.
 
         文字块识别结果。 
 
@@ -75,7 +75,7 @@ class WordsListIem:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this WordsListIem.
+        r"""Sets the words of this WordsListIem.
 
         文字块识别结果。 
 
@@ -86,7 +86,7 @@ class WordsListIem:
 
     @property
     def confidence(self):
-        """Gets the confidence of this WordsListIem.
+        r"""Gets the confidence of this WordsListIem.
 
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -97,7 +97,7 @@ class WordsListIem:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this WordsListIem.
+        r"""Sets the confidence of this WordsListIem.
 
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -108,7 +108,7 @@ class WordsListIem:
 
     @property
     def location(self):
-        """Gets the location of this WordsListIem.
+        r"""Gets the location of this WordsListIem.
 
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -119,7 +119,7 @@ class WordsListIem:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this WordsListIem.
+        r"""Sets the location of this WordsListIem.
 
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -130,7 +130,7 @@ class WordsListIem:
 
     @property
     def char_list(self):
-        """Gets the char_list of this WordsListIem.
+        r"""Gets the char_list of this WordsListIem.
 
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"和\"return_char_location\"同时为true时存在。 
 
@@ -141,7 +141,7 @@ class WordsListIem:
 
     @char_list.setter
     def char_list(self, char_list):
-        """Sets the char_list of this WordsListIem.
+        r"""Sets the char_list of this WordsListIem.
 
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"和\"return_char_location\"同时为true时存在。 
 

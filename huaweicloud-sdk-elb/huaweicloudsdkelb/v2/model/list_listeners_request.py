@@ -59,7 +59,7 @@ class ListListenersRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, loadbalancer_id=None, connection_limit=None, admin_state_up=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, protocol=None, protocol_port=None, tls_ciphers_policy=None, tls_container_id=None, http2_enable=None, enterprise_project_id=None):
-        """ListListenersRequest
+        r"""ListListenersRequest
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class ListListenersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListListenersRequest.
+        r"""Gets the limit of this ListListenersRequest.
 
         分页查询中每页的监听器个数
 
@@ -173,7 +173,7 @@ class ListListenersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListListenersRequest.
+        r"""Sets the limit of this ListListenersRequest.
 
         分页查询中每页的监听器个数
 
@@ -184,7 +184,7 @@ class ListListenersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListListenersRequest.
+        r"""Gets the marker of this ListListenersRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的监听器的id。不指定时表示查询第一页。
 
@@ -195,7 +195,7 @@ class ListListenersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListListenersRequest.
+        r"""Sets the marker of this ListListenersRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的监听器的id。不指定时表示查询第一页。
 
@@ -206,7 +206,7 @@ class ListListenersRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListListenersRequest.
+        r"""Gets the page_reverse of this ListListenersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -217,7 +217,7 @@ class ListListenersRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListListenersRequest.
+        r"""Sets the page_reverse of this ListListenersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -228,7 +228,7 @@ class ListListenersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListListenersRequest.
+        r"""Gets the id of this ListListenersRequest.
 
         监听器ID。
 
@@ -239,7 +239,7 @@ class ListListenersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListListenersRequest.
+        r"""Sets the id of this ListListenersRequest.
 
         监听器ID。
 
@@ -250,7 +250,7 @@ class ListListenersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListListenersRequest.
+        r"""Gets the name of this ListListenersRequest.
 
         监听器名称。
 
@@ -261,7 +261,7 @@ class ListListenersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListListenersRequest.
+        r"""Sets the name of this ListListenersRequest.
 
         监听器名称。
 
@@ -272,7 +272,7 @@ class ListListenersRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListListenersRequest.
+        r"""Gets the description of this ListListenersRequest.
 
         监听器的描述信息。
 
@@ -283,7 +283,7 @@ class ListListenersRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListListenersRequest.
+        r"""Sets the description of this ListListenersRequest.
 
         监听器的描述信息。
 
@@ -294,7 +294,7 @@ class ListListenersRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListListenersRequest.
+        r"""Gets the loadbalancer_id of this ListListenersRequest.
 
         监听器所在的负载均衡器ID。
 
@@ -305,7 +305,7 @@ class ListListenersRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListListenersRequest.
+        r"""Sets the loadbalancer_id of this ListListenersRequest.
 
         监听器所在的负载均衡器ID。
 
@@ -316,7 +316,7 @@ class ListListenersRequest:
 
     @property
     def connection_limit(self):
-        """Gets the connection_limit of this ListListenersRequest.
+        r"""Gets the connection_limit of this ListListenersRequest.
 
         监听器的最大连接数。
 
@@ -327,7 +327,7 @@ class ListListenersRequest:
 
     @connection_limit.setter
     def connection_limit(self, connection_limit):
-        """Sets the connection_limit of this ListListenersRequest.
+        r"""Sets the connection_limit of this ListListenersRequest.
 
         监听器的最大连接数。
 
@@ -338,7 +338,7 @@ class ListListenersRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListListenersRequest.
+        r"""Gets the admin_state_up of this ListListenersRequest.
 
         监听器的管理状态。该字段为预留字段，暂未启用。默认为true。
 
@@ -349,7 +349,7 @@ class ListListenersRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListListenersRequest.
+        r"""Sets the admin_state_up of this ListListenersRequest.
 
         监听器的管理状态。该字段为预留字段，暂未启用。默认为true。
 
@@ -360,7 +360,7 @@ class ListListenersRequest:
 
     @property
     def default_pool_id(self):
-        """Gets the default_pool_id of this ListListenersRequest.
+        r"""Gets the default_pool_id of this ListListenersRequest.
 
         监听器的默认后端云服务器组ID。
 
@@ -371,7 +371,7 @@ class ListListenersRequest:
 
     @default_pool_id.setter
     def default_pool_id(self, default_pool_id):
-        """Sets the default_pool_id of this ListListenersRequest.
+        r"""Sets the default_pool_id of this ListListenersRequest.
 
         监听器的默认后端云服务器组ID。
 
@@ -382,7 +382,7 @@ class ListListenersRequest:
 
     @property
     def default_tls_container_ref(self):
-        """Gets the default_tls_container_ref of this ListListenersRequest.
+        r"""Gets the default_tls_container_ref of this ListListenersRequest.
 
         监听器使用的服务器证书ID。
 
@@ -393,7 +393,7 @@ class ListListenersRequest:
 
     @default_tls_container_ref.setter
     def default_tls_container_ref(self, default_tls_container_ref):
-        """Sets the default_tls_container_ref of this ListListenersRequest.
+        r"""Sets the default_tls_container_ref of this ListListenersRequest.
 
         监听器使用的服务器证书ID。
 
@@ -404,7 +404,7 @@ class ListListenersRequest:
 
     @property
     def client_ca_tls_container_ref(self):
-        """Gets the client_ca_tls_container_ref of this ListListenersRequest.
+        r"""Gets the client_ca_tls_container_ref of this ListListenersRequest.
 
         监听器使用的CA证书ID。
 
@@ -415,7 +415,7 @@ class ListListenersRequest:
 
     @client_ca_tls_container_ref.setter
     def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
-        """Sets the client_ca_tls_container_ref of this ListListenersRequest.
+        r"""Sets the client_ca_tls_container_ref of this ListListenersRequest.
 
         监听器使用的CA证书ID。
 
@@ -426,7 +426,7 @@ class ListListenersRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListListenersRequest.
+        r"""Gets the protocol of this ListListenersRequest.
 
         监听器的监听协议。取值范围：TCP、HTTP、UDP、TERMINATED_HTTPS。
 
@@ -437,7 +437,7 @@ class ListListenersRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListListenersRequest.
+        r"""Sets the protocol of this ListListenersRequest.
 
         监听器的监听协议。取值范围：TCP、HTTP、UDP、TERMINATED_HTTPS。
 
@@ -448,7 +448,7 @@ class ListListenersRequest:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this ListListenersRequest.
+        r"""Gets the protocol_port of this ListListenersRequest.
 
         监听器的监听端口。
 
@@ -459,7 +459,7 @@ class ListListenersRequest:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this ListListenersRequest.
+        r"""Sets the protocol_port of this ListListenersRequest.
 
         监听器的监听端口。
 
@@ -470,7 +470,7 @@ class ListListenersRequest:
 
     @property
     def tls_ciphers_policy(self):
-        """Gets the tls_ciphers_policy of this ListListenersRequest.
+        r"""Gets the tls_ciphers_policy of this ListListenersRequest.
 
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict四种安全策略。
 
@@ -481,7 +481,7 @@ class ListListenersRequest:
 
     @tls_ciphers_policy.setter
     def tls_ciphers_policy(self, tls_ciphers_policy):
-        """Sets the tls_ciphers_policy of this ListListenersRequest.
+        r"""Sets the tls_ciphers_policy of this ListListenersRequest.
 
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict四种安全策略。
 
@@ -492,7 +492,7 @@ class ListListenersRequest:
 
     @property
     def tls_container_id(self):
-        """Gets the tls_container_id of this ListListenersRequest.
+        r"""Gets the tls_container_id of this ListListenersRequest.
 
         查询证书所关联的监听器
 
@@ -503,7 +503,7 @@ class ListListenersRequest:
 
     @tls_container_id.setter
     def tls_container_id(self, tls_container_id):
-        """Sets the tls_container_id of this ListListenersRequest.
+        r"""Sets the tls_container_id of this ListListenersRequest.
 
         查询证书所关联的监听器
 
@@ -514,7 +514,7 @@ class ListListenersRequest:
 
     @property
     def http2_enable(self):
-        """Gets the http2_enable of this ListListenersRequest.
+        r"""Gets the http2_enable of this ListListenersRequest.
 
         HTTP2功能的开启状态。取值范围：true/false。true：开启。false：关闭。
 
@@ -525,7 +525,7 @@ class ListListenersRequest:
 
     @http2_enable.setter
     def http2_enable(self, http2_enable):
-        """Sets the http2_enable of this ListListenersRequest.
+        r"""Sets the http2_enable of this ListListenersRequest.
 
         HTTP2功能的开启状态。取值范围：true/false。true：开启。false：关闭。
 
@@ -536,7 +536,7 @@ class ListListenersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListListenersRequest.
+        r"""Gets the enterprise_project_id of this ListListenersRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -547,7 +547,7 @@ class ListListenersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListListenersRequest.
+        r"""Sets the enterprise_project_id of this ListListenersRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 

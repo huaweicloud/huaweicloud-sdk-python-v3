@@ -27,7 +27,7 @@ class UpdateVaultRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """UpdateVaultRequest
+        r"""UpdateVaultRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVaultRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this UpdateVaultRequest.
+        r"""Gets the vault_id of this UpdateVaultRequest.
 
         存储库ID
 
@@ -60,7 +60,7 @@ class UpdateVaultRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this UpdateVaultRequest.
+        r"""Sets the vault_id of this UpdateVaultRequest.
 
         存储库ID
 
@@ -71,7 +71,7 @@ class UpdateVaultRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVaultRequest.
+        r"""Gets the body of this UpdateVaultRequest.
 
         :return: The body of this UpdateVaultRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultUpdateReq`
@@ -80,7 +80,7 @@ class UpdateVaultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVaultRequest.
+        r"""Sets the body of this UpdateVaultRequest.
 
         :param body: The body of this UpdateVaultRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultUpdateReq`

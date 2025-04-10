@@ -33,7 +33,7 @@ class PageInstancesVO:
     }
 
     def __init__(self, empty=None, items=None, items_before=None, size=None, total_items_count=None):
-        """PageInstancesVO
+        r"""PageInstancesVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PageInstancesVO:
 
     @property
     def empty(self):
-        """Gets the empty of this PageInstancesVO.
+        r"""Gets the empty of this PageInstancesVO.
 
         是否为空
 
@@ -82,7 +82,7 @@ class PageInstancesVO:
 
     @empty.setter
     def empty(self, empty):
-        """Sets the empty of this PageInstancesVO.
+        r"""Sets the empty of this PageInstancesVO.
 
         是否为空
 
@@ -93,7 +93,7 @@ class PageInstancesVO:
 
     @property
     def items(self):
-        """Gets the items of this PageInstancesVO.
+        r"""Gets the items of this PageInstancesVO.
 
         列表详情
 
@@ -104,7 +104,7 @@ class PageInstancesVO:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this PageInstancesVO.
+        r"""Sets the items of this PageInstancesVO.
 
         列表详情
 
@@ -115,7 +115,7 @@ class PageInstancesVO:
 
     @property
     def items_before(self):
-        """Gets the items_before of this PageInstancesVO.
+        r"""Gets the items_before of this PageInstancesVO.
 
         偏移量，表示从此偏移量开始查询
 
@@ -126,7 +126,7 @@ class PageInstancesVO:
 
     @items_before.setter
     def items_before(self, items_before):
-        """Sets the items_before of this PageInstancesVO.
+        r"""Sets the items_before of this PageInstancesVO.
 
         偏移量，表示从此偏移量开始查询
 
@@ -137,7 +137,7 @@ class PageInstancesVO:
 
     @property
     def size(self):
-        """Gets the size of this PageInstancesVO.
+        r"""Gets the size of this PageInstancesVO.
 
         每页显示的条目数量
 
@@ -148,7 +148,7 @@ class PageInstancesVO:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PageInstancesVO.
+        r"""Sets the size of this PageInstancesVO.
 
         每页显示的条目数量
 
@@ -159,7 +159,7 @@ class PageInstancesVO:
 
     @property
     def total_items_count(self):
-        """Gets the total_items_count of this PageInstancesVO.
+        r"""Gets the total_items_count of this PageInstancesVO.
 
         总数
 
@@ -170,7 +170,7 @@ class PageInstancesVO:
 
     @total_items_count.setter
     def total_items_count(self, total_items_count):
-        """Sets the total_items_count of this PageInstancesVO.
+        r"""Sets the total_items_count of this PageInstancesVO.
 
         总数
 

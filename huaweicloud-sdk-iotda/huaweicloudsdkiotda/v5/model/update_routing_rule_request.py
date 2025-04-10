@@ -29,7 +29,7 @@ class UpdateRoutingRuleRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """UpdateRoutingRuleRequest
+        r"""UpdateRoutingRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateRoutingRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateRoutingRuleRequest.
+        r"""Gets the instance_id of this UpdateRoutingRuleRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -67,7 +67,7 @@ class UpdateRoutingRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateRoutingRuleRequest.
+        r"""Sets the instance_id of this UpdateRoutingRuleRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -78,7 +78,7 @@ class UpdateRoutingRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateRoutingRuleRequest.
+        r"""Gets the rule_id of this UpdateRoutingRuleRequest.
 
         **参数说明**：规则条件ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -89,7 +89,7 @@ class UpdateRoutingRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateRoutingRuleRequest.
+        r"""Sets the rule_id of this UpdateRoutingRuleRequest.
 
         **参数说明**：规则条件ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -100,7 +100,7 @@ class UpdateRoutingRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRoutingRuleRequest.
+        r"""Gets the body of this UpdateRoutingRuleRequest.
 
         :return: The body of this UpdateRoutingRuleRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRuleReq`
@@ -109,7 +109,7 @@ class UpdateRoutingRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRoutingRuleRequest.
+        r"""Sets the body of this UpdateRoutingRuleRequest.
 
         :param body: The body of this UpdateRoutingRuleRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.UpdateRuleReq`

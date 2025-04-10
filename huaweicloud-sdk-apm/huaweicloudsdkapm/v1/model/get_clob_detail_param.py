@@ -27,7 +27,7 @@ class GetClobDetailParam:
     }
 
     def __init__(self, env_id=None, clob_id=None):
-        """GetClobDetailParam
+        r"""GetClobDetailParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetClobDetailParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this GetClobDetailParam.
+        r"""Gets the env_id of this GetClobDetailParam.
 
         环境id。
 
@@ -59,7 +59,7 @@ class GetClobDetailParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this GetClobDetailParam.
+        r"""Sets the env_id of this GetClobDetailParam.
 
         环境id。
 
@@ -70,7 +70,7 @@ class GetClobDetailParam:
 
     @property
     def clob_id(self):
-        """Gets the clob_id of this GetClobDetailParam.
+        r"""Gets the clob_id of this GetClobDetailParam.
 
         clobId。
 
@@ -81,7 +81,7 @@ class GetClobDetailParam:
 
     @clob_id.setter
     def clob_id(self, clob_id):
-        """Sets the clob_id of this GetClobDetailParam.
+        r"""Sets the clob_id of this GetClobDetailParam.
 
         clobId。
 

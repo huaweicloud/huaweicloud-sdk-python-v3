@@ -27,7 +27,7 @@ class ShowSecuritySecrecyLevelRequest:
     }
 
     def __init__(self, workspace=None, id=None):
-        """ShowSecuritySecrecyLevelRequest
+        r"""ShowSecuritySecrecyLevelRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecuritySecrecyLevelRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecuritySecrecyLevelRequest.
+        r"""Gets the workspace of this ShowSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowSecuritySecrecyLevelRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecuritySecrecyLevelRequest.
+        r"""Sets the workspace of this ShowSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowSecuritySecrecyLevelRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowSecuritySecrecyLevelRequest.
+        r"""Gets the id of this ShowSecuritySecrecyLevelRequest.
 
         密级id
 
@@ -81,7 +81,7 @@ class ShowSecuritySecrecyLevelRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSecuritySecrecyLevelRequest.
+        r"""Sets the id of this ShowSecuritySecrecyLevelRequest.
 
         密级id
 

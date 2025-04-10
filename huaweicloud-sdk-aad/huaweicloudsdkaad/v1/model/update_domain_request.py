@@ -27,7 +27,7 @@ class UpdateDomainRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdateDomainRequest
+        r"""UpdateDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDomainRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateDomainRequest.
+        r"""Gets the domain_id of this UpdateDomainRequest.
 
         域名ID
 
@@ -60,7 +60,7 @@ class UpdateDomainRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateDomainRequest.
+        r"""Sets the domain_id of this UpdateDomainRequest.
 
         域名ID
 
@@ -71,7 +71,7 @@ class UpdateDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainRequest.
+        r"""Gets the body of this UpdateDomainRequest.
 
         :return: The body of this UpdateDomainRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.DomainRealServerInfo`
@@ -80,7 +80,7 @@ class UpdateDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainRequest.
+        r"""Sets the body of this UpdateDomainRequest.
 
         :param body: The body of this UpdateDomainRequest.
         :type body: :class:`huaweicloudsdkaad.v1.DomainRealServerInfo`

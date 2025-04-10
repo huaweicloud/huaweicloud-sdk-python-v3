@@ -35,7 +35,7 @@ class ApiPolicyMockCreate:
     }
 
     def __init__(self, result_content=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
-        """ApiPolicyMockCreate
+        r"""ApiPolicyMockCreate
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ApiPolicyMockCreate:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiPolicyMockCreate.
+        r"""Gets the result_content of this ApiPolicyMockCreate.
 
         返回结果
 
@@ -86,7 +86,7 @@ class ApiPolicyMockCreate:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiPolicyMockCreate.
+        r"""Sets the result_content of this ApiPolicyMockCreate.
 
         返回结果
 
@@ -97,7 +97,7 @@ class ApiPolicyMockCreate:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyMockCreate.
+        r"""Gets the effect_mode of this ApiPolicyMockCreate.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -108,7 +108,7 @@ class ApiPolicyMockCreate:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyMockCreate.
+        r"""Sets the effect_mode of this ApiPolicyMockCreate.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -119,7 +119,7 @@ class ApiPolicyMockCreate:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyMockCreate.
+        r"""Gets the name of this ApiPolicyMockCreate.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -130,7 +130,7 @@ class ApiPolicyMockCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyMockCreate.
+        r"""Sets the name of this ApiPolicyMockCreate.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -141,7 +141,7 @@ class ApiPolicyMockCreate:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyMockCreate.
+        r"""Gets the backend_params of this ApiPolicyMockCreate.
 
         后端参数列表，后端类型为GRPC时不支持配置
 
@@ -152,7 +152,7 @@ class ApiPolicyMockCreate:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyMockCreate.
+        r"""Sets the backend_params of this ApiPolicyMockCreate.
 
         后端参数列表，后端类型为GRPC时不支持配置
 
@@ -163,7 +163,7 @@ class ApiPolicyMockCreate:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyMockCreate.
+        r"""Gets the conditions of this ApiPolicyMockCreate.
 
         策略条件列表
 
@@ -174,7 +174,7 @@ class ApiPolicyMockCreate:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyMockCreate.
+        r"""Sets the conditions of this ApiPolicyMockCreate.
 
         策略条件列表
 
@@ -185,7 +185,7 @@ class ApiPolicyMockCreate:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyMockCreate.
+        r"""Gets the authorizer_id of this ApiPolicyMockCreate.
 
         后端自定义认证对象的ID
 
@@ -196,7 +196,7 @@ class ApiPolicyMockCreate:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyMockCreate.
+        r"""Sets the authorizer_id of this ApiPolicyMockCreate.
 
         后端自定义认证对象的ID
 

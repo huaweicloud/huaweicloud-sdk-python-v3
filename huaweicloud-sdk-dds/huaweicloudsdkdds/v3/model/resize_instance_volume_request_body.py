@@ -27,7 +27,7 @@ class ResizeInstanceVolumeRequestBody:
     }
 
     def __init__(self, volume=None, is_auto_pay=None):
-        """ResizeInstanceVolumeRequestBody
+        r"""ResizeInstanceVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeInstanceVolumeRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this ResizeInstanceVolumeRequestBody.
+        r"""Gets the volume of this ResizeInstanceVolumeRequestBody.
 
         :return: The volume of this ResizeInstanceVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeOption`
@@ -58,7 +58,7 @@ class ResizeInstanceVolumeRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ResizeInstanceVolumeRequestBody.
+        r"""Sets the volume of this ResizeInstanceVolumeRequestBody.
 
         :param volume: The volume of this ResizeInstanceVolumeRequestBody.
         :type volume: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeOption`
@@ -67,7 +67,7 @@ class ResizeInstanceVolumeRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeInstanceVolumeRequestBody.
+        r"""Gets the is_auto_pay of this ResizeInstanceVolumeRequestBody.
 
         扩容包年包月实例的存储容量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
@@ -78,7 +78,7 @@ class ResizeInstanceVolumeRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeInstanceVolumeRequestBody.
+        r"""Sets the is_auto_pay of this ResizeInstanceVolumeRequestBody.
 
         扩容包年包月实例的存储容量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 

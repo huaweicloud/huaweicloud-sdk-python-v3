@@ -25,7 +25,7 @@ class DeleteSubscriptionUserRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteSubscriptionUserRequest
+        r"""DeleteSubscriptionUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSubscriptionUserRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSubscriptionUserRequest.
+        r"""Gets the id of this DeleteSubscriptionUserRequest.
 
         订阅用户ID。
 
@@ -53,7 +53,7 @@ class DeleteSubscriptionUserRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSubscriptionUserRequest.
+        r"""Sets the id of this DeleteSubscriptionUserRequest.
 
         订阅用户ID。
 

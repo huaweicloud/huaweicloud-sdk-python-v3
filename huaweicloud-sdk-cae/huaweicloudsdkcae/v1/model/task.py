@@ -35,7 +35,7 @@ class Task:
     }
 
     def __init__(self, index=None, name=None, status=None, detail=None, created_at=None, updated_at=None):
-        """Task
+        r"""Task
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Task:
 
     @property
     def index(self):
-        """Gets the index of this Task.
+        r"""Gets the index of this Task.
 
         任务序号。
 
@@ -89,7 +89,7 @@ class Task:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this Task.
+        r"""Sets the index of this Task.
 
         任务序号。
 
@@ -100,7 +100,7 @@ class Task:
 
     @property
     def name(self):
-        """Gets the name of this Task.
+        r"""Gets the name of this Task.
 
         任务名称。
 
@@ -111,7 +111,7 @@ class Task:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Task.
+        r"""Sets the name of this Task.
 
         任务名称。
 
@@ -122,7 +122,7 @@ class Task:
 
     @property
     def status(self):
-        """Gets the status of this Task.
+        r"""Gets the status of this Task.
 
         任务状态。
 
@@ -133,7 +133,7 @@ class Task:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Task.
+        r"""Sets the status of this Task.
 
         任务状态。
 
@@ -144,7 +144,7 @@ class Task:
 
     @property
     def detail(self):
-        """Gets the detail of this Task.
+        r"""Gets the detail of this Task.
 
         任务详情。
 
@@ -155,7 +155,7 @@ class Task:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this Task.
+        r"""Sets the detail of this Task.
 
         任务详情。
 
@@ -166,7 +166,7 @@ class Task:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Task.
+        r"""Gets the created_at of this Task.
 
         创建时间。
 
@@ -177,7 +177,7 @@ class Task:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Task.
+        r"""Sets the created_at of this Task.
 
         创建时间。
 
@@ -188,7 +188,7 @@ class Task:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Task.
+        r"""Gets the updated_at of this Task.
 
         更新时间。
 
@@ -199,7 +199,7 @@ class Task:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Task.
+        r"""Sets the updated_at of this Task.
 
         更新时间。
 

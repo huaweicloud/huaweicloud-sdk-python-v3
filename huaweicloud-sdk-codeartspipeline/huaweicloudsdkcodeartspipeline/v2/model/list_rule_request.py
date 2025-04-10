@@ -35,7 +35,7 @@ class ListRuleRequest:
     }
 
     def __init__(self, domain_id=None, cloud_project_id=None, offset=None, limit=None, type=None, name=None):
-        """ListRuleRequest
+        r"""ListRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListRuleRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListRuleRequest.
+        r"""Gets the domain_id of this ListRuleRequest.
 
         租户ID
 
@@ -86,7 +86,7 @@ class ListRuleRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListRuleRequest.
+        r"""Sets the domain_id of this ListRuleRequest.
 
         租户ID
 
@@ -97,7 +97,7 @@ class ListRuleRequest:
 
     @property
     def cloud_project_id(self):
-        """Gets the cloud_project_id of this ListRuleRequest.
+        r"""Gets the cloud_project_id of this ListRuleRequest.
 
         项目ID
 
@@ -108,7 +108,7 @@ class ListRuleRequest:
 
     @cloud_project_id.setter
     def cloud_project_id(self, cloud_project_id):
-        """Sets the cloud_project_id of this ListRuleRequest.
+        r"""Sets the cloud_project_id of this ListRuleRequest.
 
         项目ID
 
@@ -119,7 +119,7 @@ class ListRuleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRuleRequest.
+        r"""Gets the offset of this ListRuleRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -130,7 +130,7 @@ class ListRuleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRuleRequest.
+        r"""Sets the offset of this ListRuleRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -141,7 +141,7 @@ class ListRuleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRuleRequest.
+        r"""Gets the limit of this ListRuleRequest.
 
         每页显示的条目数量
 
@@ -152,7 +152,7 @@ class ListRuleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRuleRequest.
+        r"""Sets the limit of this ListRuleRequest.
 
         每页显示的条目数量
 
@@ -163,7 +163,7 @@ class ListRuleRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListRuleRequest.
+        r"""Gets the type of this ListRuleRequest.
 
         类型
 
@@ -174,7 +174,7 @@ class ListRuleRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRuleRequest.
+        r"""Sets the type of this ListRuleRequest.
 
         类型
 
@@ -185,7 +185,7 @@ class ListRuleRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRuleRequest.
+        r"""Gets the name of this ListRuleRequest.
 
         规则名称，用于模糊搜索
 
@@ -196,7 +196,7 @@ class ListRuleRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRuleRequest.
+        r"""Sets the name of this ListRuleRequest.
 
         规则名称，用于模糊搜索
 

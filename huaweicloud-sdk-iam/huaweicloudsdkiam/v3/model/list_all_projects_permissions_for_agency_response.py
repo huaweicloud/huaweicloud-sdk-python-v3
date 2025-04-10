@@ -28,7 +28,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
     }
 
     def __init__(self, roles=None, links=None):
-        """ListAllProjectsPermissionsForAgencyResponse
+        r"""ListAllProjectsPermissionsForAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListAllProjectsPermissionsForAgencyResponse.
+        r"""Gets the roles of this ListAllProjectsPermissionsForAgencyResponse.
 
         权限信息列表。
 
@@ -62,7 +62,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListAllProjectsPermissionsForAgencyResponse.
+        r"""Sets the roles of this ListAllProjectsPermissionsForAgencyResponse.
 
         权限信息列表。
 
@@ -73,7 +73,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListAllProjectsPermissionsForAgencyResponse.
+        r"""Gets the links of this ListAllProjectsPermissionsForAgencyResponse.
 
         :return: The links of this ListAllProjectsPermissionsForAgencyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -82,7 +82,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListAllProjectsPermissionsForAgencyResponse.
+        r"""Sets the links of this ListAllProjectsPermissionsForAgencyResponse.
 
         :param links: The links of this ListAllProjectsPermissionsForAgencyResponse.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

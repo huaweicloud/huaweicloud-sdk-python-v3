@@ -25,7 +25,7 @@ class ExportDesignModelTableDDLResultData:
     }
 
     def __init__(self, value=None):
-        """ExportDesignModelTableDDLResultData
+        r"""ExportDesignModelTableDDLResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExportDesignModelTableDDLResultData:
 
     @property
     def value(self):
-        """Gets the value of this ExportDesignModelTableDDLResultData.
+        r"""Gets the value of this ExportDesignModelTableDDLResultData.
 
         接口导出的表的DDL语句。
 
@@ -54,7 +54,7 @@ class ExportDesignModelTableDDLResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ExportDesignModelTableDDLResultData.
+        r"""Sets the value of this ExportDesignModelTableDDLResultData.
 
         接口导出的表的DDL语句。
 

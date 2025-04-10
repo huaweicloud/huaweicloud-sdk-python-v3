@@ -27,7 +27,7 @@ class PipelineGroupBindDTOPipelines:
     }
 
     def __init__(self, pipeline_id=None, pipeline_name=None):
-        """PipelineGroupBindDTOPipelines
+        r"""PipelineGroupBindDTOPipelines
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PipelineGroupBindDTOPipelines:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineGroupBindDTOPipelines.
+        r"""Gets the pipeline_id of this PipelineGroupBindDTOPipelines.
 
         流水线ID
 
@@ -59,7 +59,7 @@ class PipelineGroupBindDTOPipelines:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineGroupBindDTOPipelines.
+        r"""Sets the pipeline_id of this PipelineGroupBindDTOPipelines.
 
         流水线ID
 
@@ -70,7 +70,7 @@ class PipelineGroupBindDTOPipelines:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this PipelineGroupBindDTOPipelines.
+        r"""Gets the pipeline_name of this PipelineGroupBindDTOPipelines.
 
         流水线名
 
@@ -81,7 +81,7 @@ class PipelineGroupBindDTOPipelines:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this PipelineGroupBindDTOPipelines.
+        r"""Sets the pipeline_name of this PipelineGroupBindDTOPipelines.
 
         流水线名
 

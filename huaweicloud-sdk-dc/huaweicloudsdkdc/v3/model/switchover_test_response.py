@@ -28,7 +28,7 @@ class SwitchoverTestResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, switchover_test_record=None):
-        """SwitchoverTestResponse
+        r"""SwitchoverTestResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SwitchoverTestResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this SwitchoverTestResponse.
+        r"""Gets the request_id of this SwitchoverTestResponse.
 
         操作请求ID
 
@@ -62,7 +62,7 @@ class SwitchoverTestResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this SwitchoverTestResponse.
+        r"""Sets the request_id of this SwitchoverTestResponse.
 
         操作请求ID
 
@@ -73,7 +73,7 @@ class SwitchoverTestResponse(SdkResponse):
 
     @property
     def switchover_test_record(self):
-        """Gets the switchover_test_record of this SwitchoverTestResponse.
+        r"""Gets the switchover_test_record of this SwitchoverTestResponse.
 
         :return: The switchover_test_record of this SwitchoverTestResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.SwitchoverTestRecord`
@@ -82,7 +82,7 @@ class SwitchoverTestResponse(SdkResponse):
 
     @switchover_test_record.setter
     def switchover_test_record(self, switchover_test_record):
-        """Sets the switchover_test_record of this SwitchoverTestResponse.
+        r"""Sets the switchover_test_record of this SwitchoverTestResponse.
 
         :param switchover_test_record: The switchover_test_record of this SwitchoverTestResponse.
         :type switchover_test_record: :class:`huaweicloudsdkdc.v3.SwitchoverTestRecord`

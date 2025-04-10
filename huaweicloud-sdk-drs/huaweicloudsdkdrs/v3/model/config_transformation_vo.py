@@ -37,7 +37,7 @@ class ConfigTransformationVo:
     }
 
     def __init__(self, db_table_name=None, db_name=None, table_name=None, col_names=None, prim_key_or_index=None, indexs=None, values=None):
-        """ConfigTransformationVo
+        r"""ConfigTransformationVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigTransformationVo:
 
     @property
     def db_table_name(self):
-        """Gets the db_table_name of this ConfigTransformationVo.
+        r"""Gets the db_table_name of this ConfigTransformationVo.
 
         库名.表名。
 
@@ -89,7 +89,7 @@ class ConfigTransformationVo:
 
     @db_table_name.setter
     def db_table_name(self, db_table_name):
-        """Sets the db_table_name of this ConfigTransformationVo.
+        r"""Sets the db_table_name of this ConfigTransformationVo.
 
         库名.表名。
 
@@ -100,7 +100,7 @@ class ConfigTransformationVo:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ConfigTransformationVo.
+        r"""Gets the db_name of this ConfigTransformationVo.
 
         库名。长度限制256。
 
@@ -111,7 +111,7 @@ class ConfigTransformationVo:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ConfigTransformationVo.
+        r"""Sets the db_name of this ConfigTransformationVo.
 
         库名。长度限制256。
 
@@ -122,7 +122,7 @@ class ConfigTransformationVo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ConfigTransformationVo.
+        r"""Gets the table_name of this ConfigTransformationVo.
 
         表名。长度限制256。
 
@@ -133,7 +133,7 @@ class ConfigTransformationVo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ConfigTransformationVo.
+        r"""Sets the table_name of this ConfigTransformationVo.
 
         表名。长度限制256。
 
@@ -144,7 +144,7 @@ class ConfigTransformationVo:
 
     @property
     def col_names(self):
-        """Gets the col_names of this ConfigTransformationVo.
+        r"""Gets the col_names of this ConfigTransformationVo.
 
         列名。长度限制256。
 
@@ -155,7 +155,7 @@ class ConfigTransformationVo:
 
     @col_names.setter
     def col_names(self, col_names):
-        """Sets the col_names of this ConfigTransformationVo.
+        r"""Sets the col_names of this ConfigTransformationVo.
 
         列名。长度限制256。
 
@@ -166,7 +166,7 @@ class ConfigTransformationVo:
 
     @property
     def prim_key_or_index(self):
-        """Gets the prim_key_or_index of this ConfigTransformationVo.
+        r"""Gets the prim_key_or_index of this ConfigTransformationVo.
 
         主键或唯一索引。长度限制256。
 
@@ -177,7 +177,7 @@ class ConfigTransformationVo:
 
     @prim_key_or_index.setter
     def prim_key_or_index(self, prim_key_or_index):
-        """Sets the prim_key_or_index of this ConfigTransformationVo.
+        r"""Sets the prim_key_or_index of this ConfigTransformationVo.
 
         主键或唯一索引。长度限制256。
 
@@ -188,7 +188,7 @@ class ConfigTransformationVo:
 
     @property
     def indexs(self):
-        """Gets the indexs of this ConfigTransformationVo.
+        r"""Gets the indexs of this ConfigTransformationVo.
 
         优化查询所需的索引。长度限制256。
 
@@ -199,7 +199,7 @@ class ConfigTransformationVo:
 
     @indexs.setter
     def indexs(self, indexs):
-        """Sets the indexs of this ConfigTransformationVo.
+        r"""Sets the indexs of this ConfigTransformationVo.
 
         优化查询所需的索引。长度限制256。
 
@@ -210,7 +210,7 @@ class ConfigTransformationVo:
 
     @property
     def values(self):
-        """Gets the values of this ConfigTransformationVo.
+        r"""Gets the values of this ConfigTransformationVo.
 
         过滤条件。长度限制256。
 
@@ -221,7 +221,7 @@ class ConfigTransformationVo:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ConfigTransformationVo.
+        r"""Sets the values of this ConfigTransformationVo.
 
         过滤条件。长度限制256。
 

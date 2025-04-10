@@ -27,7 +27,7 @@ class UpdateRoutetableOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateRoutetableOption
+        r"""UpdateRoutetableOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateRoutetableOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRoutetableOption.
+        r"""Gets the name of this UpdateRoutetableOption.
 
         路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -61,7 +61,7 @@ class UpdateRoutetableOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRoutetableOption.
+        r"""Sets the name of this UpdateRoutetableOption.
 
         路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -72,7 +72,7 @@ class UpdateRoutetableOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRoutetableOption.
+        r"""Gets the description of this UpdateRoutetableOption.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -83,7 +83,7 @@ class UpdateRoutetableOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRoutetableOption.
+        r"""Sets the description of this UpdateRoutetableOption.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 

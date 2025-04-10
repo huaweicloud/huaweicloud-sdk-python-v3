@@ -27,7 +27,7 @@ class ExportOperationInfoRequest:
     }
 
     def __init__(self, job_id=None, x_language=None):
-        """ExportOperationInfoRequest
+        r"""ExportOperationInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportOperationInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExportOperationInfoRequest.
+        r"""Gets the job_id of this ExportOperationInfoRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class ExportOperationInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExportOperationInfoRequest.
+        r"""Sets the job_id of this ExportOperationInfoRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class ExportOperationInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportOperationInfoRequest.
+        r"""Gets the x_language of this ExportOperationInfoRequest.
 
         请求语言类型。
 
@@ -82,7 +82,7 @@ class ExportOperationInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportOperationInfoRequest.
+        r"""Sets the x_language of this ExportOperationInfoRequest.
 
         请求语言类型。
 

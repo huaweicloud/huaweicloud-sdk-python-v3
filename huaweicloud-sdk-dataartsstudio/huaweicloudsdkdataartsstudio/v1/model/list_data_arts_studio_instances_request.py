@@ -27,7 +27,7 @@ class ListDataArtsStudioInstancesRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListDataArtsStudioInstancesRequest
+        r"""ListDataArtsStudioInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDataArtsStudioInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataArtsStudioInstancesRequest.
+        r"""Gets the limit of this ListDataArtsStudioInstancesRequest.
 
         分页记录数。默认20
 
@@ -61,7 +61,7 @@ class ListDataArtsStudioInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataArtsStudioInstancesRequest.
+        r"""Sets the limit of this ListDataArtsStudioInstancesRequest.
 
         分页记录数。默认20
 
@@ -72,7 +72,7 @@ class ListDataArtsStudioInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataArtsStudioInstancesRequest.
+        r"""Gets the offset of this ListDataArtsStudioInstancesRequest.
 
         分页偏移量。默认0
 
@@ -83,7 +83,7 @@ class ListDataArtsStudioInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataArtsStudioInstancesRequest.
+        r"""Sets the offset of this ListDataArtsStudioInstancesRequest.
 
         分页偏移量。默认0
 

@@ -25,7 +25,7 @@ class ReqConfigHpcCacheBackend:
     }
 
     def __init__(self, update_hpc_cache=None):
-        """ReqConfigHpcCacheBackend
+        r"""ReqConfigHpcCacheBackend
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReqConfigHpcCacheBackend:
 
     @property
     def update_hpc_cache(self):
-        """Gets the update_hpc_cache of this ReqConfigHpcCacheBackend.
+        r"""Gets the update_hpc_cache of this ReqConfigHpcCacheBackend.
 
         :return: The update_hpc_cache of this ReqConfigHpcCacheBackend.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ReqUpdateHpcCacheInfo`
@@ -51,7 +51,7 @@ class ReqConfigHpcCacheBackend:
 
     @update_hpc_cache.setter
     def update_hpc_cache(self, update_hpc_cache):
-        """Sets the update_hpc_cache of this ReqConfigHpcCacheBackend.
+        r"""Sets the update_hpc_cache of this ReqConfigHpcCacheBackend.
 
         :param update_hpc_cache: The update_hpc_cache of this ReqConfigHpcCacheBackend.
         :type update_hpc_cache: :class:`huaweicloudsdksfsturbo.v1.ReqUpdateHpcCacheInfo`

@@ -26,7 +26,7 @@ class ListPartitionNamesWithoutLimitResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListPartitionNamesWithoutLimitResponse
+        r"""ListPartitionNamesWithoutLimitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPartitionNamesWithoutLimitResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListPartitionNamesWithoutLimitResponse.
+        r"""Gets the body of this ListPartitionNamesWithoutLimitResponse.
 
         :return: The body of this ListPartitionNamesWithoutLimitResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ListPartitionNamesWithoutLimitResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPartitionNamesWithoutLimitResponse.
+        r"""Sets the body of this ListPartitionNamesWithoutLimitResponse.
 
         :param body: The body of this ListPartitionNamesWithoutLimitResponse.
         :type body: list[str]

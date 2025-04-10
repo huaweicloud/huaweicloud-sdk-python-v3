@@ -30,7 +30,7 @@ class UpdateOrderResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, ret_code=None, ret_msg=None):
-        """UpdateOrderResponse
+        r"""UpdateOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpdateOrderResponse.
+        r"""Gets the order_id of this UpdateOrderResponse.
 
         订单ID
 
@@ -69,7 +69,7 @@ class UpdateOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpdateOrderResponse.
+        r"""Sets the order_id of this UpdateOrderResponse.
 
         订单ID
 
@@ -80,7 +80,7 @@ class UpdateOrderResponse(SdkResponse):
 
     @property
     def ret_code(self):
-        """Gets the ret_code of this UpdateOrderResponse.
+        r"""Gets the ret_code of this UpdateOrderResponse.
 
         变更状态码
 
@@ -91,7 +91,7 @@ class UpdateOrderResponse(SdkResponse):
 
     @ret_code.setter
     def ret_code(self, ret_code):
-        """Sets the ret_code of this UpdateOrderResponse.
+        r"""Sets the ret_code of this UpdateOrderResponse.
 
         变更状态码
 
@@ -102,7 +102,7 @@ class UpdateOrderResponse(SdkResponse):
 
     @property
     def ret_msg(self):
-        """Gets the ret_msg of this UpdateOrderResponse.
+        r"""Gets the ret_msg of this UpdateOrderResponse.
 
         变更信息
 
@@ -113,7 +113,7 @@ class UpdateOrderResponse(SdkResponse):
 
     @ret_msg.setter
     def ret_msg(self, ret_msg):
-        """Sets the ret_msg of this UpdateOrderResponse.
+        r"""Sets the ret_msg of this UpdateOrderResponse.
 
         变更信息
 

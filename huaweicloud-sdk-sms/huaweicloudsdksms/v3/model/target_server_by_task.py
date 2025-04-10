@@ -33,7 +33,7 @@ class TargetServerByTask:
     }
 
     def __init__(self, btrfs_list=None, disks=None, name=None, vm_id=None, volume_groups=None):
-        """TargetServerByTask
+        r"""TargetServerByTask
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class TargetServerByTask:
 
     @property
     def btrfs_list(self):
-        """Gets the btrfs_list of this TargetServerByTask.
+        r"""Gets the btrfs_list of this TargetServerByTask.
 
         btrfs信息，数据从源端获取
 
@@ -79,7 +79,7 @@ class TargetServerByTask:
 
     @btrfs_list.setter
     def btrfs_list(self, btrfs_list):
-        """Sets the btrfs_list of this TargetServerByTask.
+        r"""Sets the btrfs_list of this TargetServerByTask.
 
         btrfs信息，数据从源端获取
 
@@ -90,7 +90,7 @@ class TargetServerByTask:
 
     @property
     def disks(self):
-        """Gets the disks of this TargetServerByTask.
+        r"""Gets the disks of this TargetServerByTask.
 
         磁盘信息
 
@@ -101,7 +101,7 @@ class TargetServerByTask:
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this TargetServerByTask.
+        r"""Sets the disks of this TargetServerByTask.
 
         磁盘信息
 
@@ -112,7 +112,7 @@ class TargetServerByTask:
 
     @property
     def name(self):
-        """Gets the name of this TargetServerByTask.
+        r"""Gets the name of this TargetServerByTask.
 
         名称
 
@@ -123,7 +123,7 @@ class TargetServerByTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetServerByTask.
+        r"""Sets the name of this TargetServerByTask.
 
         名称
 
@@ -134,7 +134,7 @@ class TargetServerByTask:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this TargetServerByTask.
+        r"""Gets the vm_id of this TargetServerByTask.
 
         虚拟机ID
 
@@ -145,7 +145,7 @@ class TargetServerByTask:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this TargetServerByTask.
+        r"""Sets the vm_id of this TargetServerByTask.
 
         虚拟机ID
 
@@ -156,7 +156,7 @@ class TargetServerByTask:
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this TargetServerByTask.
+        r"""Gets the volume_groups of this TargetServerByTask.
 
         卷组，数据从源端获取
 
@@ -167,7 +167,7 @@ class TargetServerByTask:
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this TargetServerByTask.
+        r"""Sets the volume_groups of this TargetServerByTask.
 
         卷组，数据从源端获取
 

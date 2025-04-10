@@ -29,7 +29,7 @@ class ClickHouseNodeInfoDatastore:
     }
 
     def __init__(self, id=None, type=None, version=None):
-        """ClickHouseNodeInfoDatastore
+        r"""ClickHouseNodeInfoDatastore
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ClickHouseNodeInfoDatastore:
 
     @property
     def id(self):
-        """Gets the id of this ClickHouseNodeInfoDatastore.
+        r"""Gets the id of this ClickHouseNodeInfoDatastore.
 
         引擎ID。
 
@@ -65,7 +65,7 @@ class ClickHouseNodeInfoDatastore:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClickHouseNodeInfoDatastore.
+        r"""Sets the id of this ClickHouseNodeInfoDatastore.
 
         引擎ID。
 
@@ -76,7 +76,7 @@ class ClickHouseNodeInfoDatastore:
 
     @property
     def type(self):
-        """Gets the type of this ClickHouseNodeInfoDatastore.
+        r"""Gets the type of this ClickHouseNodeInfoDatastore.
 
         引擎类型，现在只支持click-house。
 
@@ -87,7 +87,7 @@ class ClickHouseNodeInfoDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClickHouseNodeInfoDatastore.
+        r"""Sets the type of this ClickHouseNodeInfoDatastore.
 
         引擎类型，现在只支持click-house。
 
@@ -98,7 +98,7 @@ class ClickHouseNodeInfoDatastore:
 
     @property
     def version(self):
-        """Gets the version of this ClickHouseNodeInfoDatastore.
+        r"""Gets the version of this ClickHouseNodeInfoDatastore.
 
         引擎版本。
 
@@ -109,7 +109,7 @@ class ClickHouseNodeInfoDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClickHouseNodeInfoDatastore.
+        r"""Sets the version of this ClickHouseNodeInfoDatastore.
 
         引擎版本。
 

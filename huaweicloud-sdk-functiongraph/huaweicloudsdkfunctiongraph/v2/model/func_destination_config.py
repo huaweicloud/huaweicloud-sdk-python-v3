@@ -27,7 +27,7 @@ class FuncDestinationConfig:
     }
 
     def __init__(self, destination=None, param=None):
-        """FuncDestinationConfig
+        r"""FuncDestinationConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FuncDestinationConfig:
 
     @property
     def destination(self):
-        """Gets the destination of this FuncDestinationConfig.
+        r"""Gets the destination of this FuncDestinationConfig.
 
         目标类型。  - OBS：通知到OBS服务。 - SMN：通知到SMN服务。 - DIS：通知到DIS服务。 - FunctionGraph： 通知到函数服务。
 
@@ -61,7 +61,7 @@ class FuncDestinationConfig:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this FuncDestinationConfig.
+        r"""Sets the destination of this FuncDestinationConfig.
 
         目标类型。  - OBS：通知到OBS服务。 - SMN：通知到SMN服务。 - DIS：通知到DIS服务。 - FunctionGraph： 通知到函数服务。
 
@@ -72,7 +72,7 @@ class FuncDestinationConfig:
 
     @property
     def param(self):
-        """Gets the param of this FuncDestinationConfig.
+        r"""Gets the param of this FuncDestinationConfig.
 
         通知目标服务对应参数,json字符串。  - OBS：包含bucket桶，对象目录前缀prefix，对象默认expires过期时间[0~365]天，0默认不过期。 - SMN：包含smn 主题topic_urn。 - DIS：包含DIS 通道名stream_name。 - FunctionGraph：包含func_urn，函数urn
 
@@ -83,7 +83,7 @@ class FuncDestinationConfig:
 
     @param.setter
     def param(self, param):
-        """Sets the param of this FuncDestinationConfig.
+        r"""Sets the param of this FuncDestinationConfig.
 
         通知目标服务对应参数,json字符串。  - OBS：包含bucket桶，对象目录前缀prefix，对象默认expires过期时间[0~365]天，0默认不过期。 - SMN：包含smn 主题topic_urn。 - DIS：包含DIS 通道名stream_name。 - FunctionGraph：包含func_urn，函数urn
 

@@ -25,7 +25,7 @@ class SetRefererChainRequest:
     }
 
     def __init__(self, body=None):
-        """SetRefererChainRequest
+        r"""SetRefererChainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetRefererChainRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetRefererChainRequest.
+        r"""Gets the body of this SetRefererChainRequest.
 
         :return: The body of this SetRefererChainRequest.
         :rtype: :class:`huaweicloudsdklive.v1.SetRefererChainInfo`
@@ -52,7 +52,7 @@ class SetRefererChainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetRefererChainRequest.
+        r"""Sets the body of this SetRefererChainRequest.
 
         :param body: The body of this SetRefererChainRequest.
         :type body: :class:`huaweicloudsdklive.v1.SetRefererChainInfo`

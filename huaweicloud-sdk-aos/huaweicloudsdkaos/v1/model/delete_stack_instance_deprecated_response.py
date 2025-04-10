@@ -26,7 +26,7 @@ class DeleteStackInstanceDeprecatedResponse(SdkResponse):
     }
 
     def __init__(self, stack_set_operation_id=None):
-        """DeleteStackInstanceDeprecatedResponse
+        r"""DeleteStackInstanceDeprecatedResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteStackInstanceDeprecatedResponse(SdkResponse):
 
     @property
     def stack_set_operation_id(self):
-        """Gets the stack_set_operation_id of this DeleteStackInstanceDeprecatedResponse.
+        r"""Gets the stack_set_operation_id of this DeleteStackInstanceDeprecatedResponse.
 
         资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
@@ -55,7 +55,7 @@ class DeleteStackInstanceDeprecatedResponse(SdkResponse):
 
     @stack_set_operation_id.setter
     def stack_set_operation_id(self, stack_set_operation_id):
-        """Sets the stack_set_operation_id of this DeleteStackInstanceDeprecatedResponse.
+        r"""Sets the stack_set_operation_id of this DeleteStackInstanceDeprecatedResponse.
 
         资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 

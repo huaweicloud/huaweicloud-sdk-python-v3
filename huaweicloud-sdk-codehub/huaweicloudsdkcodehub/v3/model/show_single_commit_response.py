@@ -30,7 +30,7 @@ class ShowSingleCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowSingleCommitResponse
+        r"""ShowSingleCommitResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowSingleCommitResponse.
+        r"""Gets the error of this ShowSingleCommitResponse.
 
         :return: The error of this ShowSingleCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowSingleCommitResponse.
+        r"""Sets the error of this ShowSingleCommitResponse.
 
         :param error: The error of this ShowSingleCommitResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowSingleCommitResponse.
+        r"""Gets the result of this ShowSingleCommitResponse.
 
         :return: The result of this ShowSingleCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfo`
@@ -85,7 +85,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowSingleCommitResponse.
+        r"""Sets the result of this ShowSingleCommitResponse.
 
         :param result: The result of this ShowSingleCommitResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfo`
@@ -94,7 +94,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSingleCommitResponse.
+        r"""Gets the status of this ShowSingleCommitResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowSingleCommitResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSingleCommitResponse.
+        r"""Sets the status of this ShowSingleCommitResponse.
 
         响应状态
 

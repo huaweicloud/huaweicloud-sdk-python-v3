@@ -26,7 +26,7 @@ class CreateSystemEventResponse(SdkResponse):
     }
 
     def __init__(self, systemevent=None):
-        """CreateSystemEventResponse
+        r"""CreateSystemEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSystemEventResponse(SdkResponse):
 
     @property
     def systemevent(self):
-        """Gets the systemevent of this CreateSystemEventResponse.
+        r"""Gets the systemevent of this CreateSystemEventResponse.
 
         :return: The systemevent of this CreateSystemEventResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Event`
@@ -53,7 +53,7 @@ class CreateSystemEventResponse(SdkResponse):
 
     @systemevent.setter
     def systemevent(self, systemevent):
-        """Sets the systemevent of this CreateSystemEventResponse.
+        r"""Sets the systemevent of this CreateSystemEventResponse.
 
         :param systemevent: The systemevent of this CreateSystemEventResponse.
         :type systemevent: :class:`huaweicloudsdkief.v1.Event`

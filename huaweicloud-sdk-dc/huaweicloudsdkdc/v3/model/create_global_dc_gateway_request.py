@@ -25,7 +25,7 @@ class CreateGlobalDcGatewayRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGlobalDcGatewayRequest
+        r"""CreateGlobalDcGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGlobalDcGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGlobalDcGatewayRequest.
+        r"""Gets the body of this CreateGlobalDcGatewayRequest.
 
         :return: The body of this CreateGlobalDcGatewayRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayRequestBody`
@@ -52,7 +52,7 @@ class CreateGlobalDcGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGlobalDcGatewayRequest.
+        r"""Sets the body of this CreateGlobalDcGatewayRequest.
 
         :param body: The body of this CreateGlobalDcGatewayRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateGlobalDcGatewayRequestBody`

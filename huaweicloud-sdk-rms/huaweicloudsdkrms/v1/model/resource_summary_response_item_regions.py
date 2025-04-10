@@ -27,7 +27,7 @@ class ResourceSummaryResponseItemRegions:
     }
 
     def __init__(self, region_id=None, count=None):
-        """ResourceSummaryResponseItemRegions
+        r"""ResourceSummaryResponseItemRegions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceSummaryResponseItemRegions:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceSummaryResponseItemRegions.
+        r"""Gets the region_id of this ResourceSummaryResponseItemRegions.
 
         区域id
 
@@ -61,7 +61,7 @@ class ResourceSummaryResponseItemRegions:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceSummaryResponseItemRegions.
+        r"""Sets the region_id of this ResourceSummaryResponseItemRegions.
 
         区域id
 
@@ -72,7 +72,7 @@ class ResourceSummaryResponseItemRegions:
 
     @property
     def count(self):
-        """Gets the count of this ResourceSummaryResponseItemRegions.
+        r"""Gets the count of this ResourceSummaryResponseItemRegions.
 
         该资源类型在当前区域的数量
 
@@ -83,7 +83,7 @@ class ResourceSummaryResponseItemRegions:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ResourceSummaryResponseItemRegions.
+        r"""Sets the count of this ResourceSummaryResponseItemRegions.
 
         该资源类型在当前区域的数量
 

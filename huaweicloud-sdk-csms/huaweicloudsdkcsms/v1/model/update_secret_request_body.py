@@ -35,7 +35,7 @@ class UpdateSecretRequestBody:
     }
 
     def __init__(self, kms_key_id=None, description=None, auto_rotation=None, rotation_period=None, event_subscriptions=None, rotation_func_urn=None):
-        """UpdateSecretRequestBody
+        r"""UpdateSecretRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateSecretRequestBody:
 
     @property
     def kms_key_id(self):
-        """Gets the kms_key_id of this UpdateSecretRequestBody.
+        r"""Gets the kms_key_id of this UpdateSecretRequestBody.
 
         用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。
 
@@ -89,7 +89,7 @@ class UpdateSecretRequestBody:
 
     @kms_key_id.setter
     def kms_key_id(self, kms_key_id):
-        """Sets the kms_key_id of this UpdateSecretRequestBody.
+        r"""Sets the kms_key_id of this UpdateSecretRequestBody.
 
         用于加密保护凭据值的KMS主密钥ID。更新凭据的主密钥后，仅新创建的凭据版本使用更新后的主密钥ID加密，之前的凭据版本依旧使用之前的主密钥ID解密。
 
@@ -100,7 +100,7 @@ class UpdateSecretRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSecretRequestBody.
+        r"""Gets the description of this UpdateSecretRequestBody.
 
         凭据的描述信息。 约束：2048字节。
 
@@ -111,7 +111,7 @@ class UpdateSecretRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSecretRequestBody.
+        r"""Sets the description of this UpdateSecretRequestBody.
 
         凭据的描述信息。 约束：2048字节。
 
@@ -122,7 +122,7 @@ class UpdateSecretRequestBody:
 
     @property
     def auto_rotation(self):
-        """Gets the auto_rotation of this UpdateSecretRequestBody.
+        r"""Gets the auto_rotation of this UpdateSecretRequestBody.
 
         自动轮转  取值：true 开启 false 关
 
@@ -133,7 +133,7 @@ class UpdateSecretRequestBody:
 
     @auto_rotation.setter
     def auto_rotation(self, auto_rotation):
-        """Sets the auto_rotation of this UpdateSecretRequestBody.
+        r"""Sets the auto_rotation of this UpdateSecretRequestBody.
 
         自动轮转  取值：true 开启 false 关
 
@@ -144,7 +144,7 @@ class UpdateSecretRequestBody:
 
     @property
     def rotation_period(self):
-        """Gets the rotation_period of this UpdateSecretRequestBody.
+        r"""Gets the rotation_period of this UpdateSecretRequestBody.
 
         轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
@@ -155,7 +155,7 @@ class UpdateSecretRequestBody:
 
     @rotation_period.setter
     def rotation_period(self, rotation_period):
-        """Sets the rotation_period of this UpdateSecretRequestBody.
+        r"""Sets the rotation_period of this UpdateSecretRequestBody.
 
         轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
@@ -166,7 +166,7 @@ class UpdateSecretRequestBody:
 
     @property
     def event_subscriptions(self):
-        """Gets the event_subscriptions of this UpdateSecretRequestBody.
+        r"""Gets the event_subscriptions of this UpdateSecretRequestBody.
 
         凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
@@ -177,7 +177,7 @@ class UpdateSecretRequestBody:
 
     @event_subscriptions.setter
     def event_subscriptions(self, event_subscriptions):
-        """Sets the event_subscriptions of this UpdateSecretRequestBody.
+        r"""Sets the event_subscriptions of this UpdateSecretRequestBody.
 
         凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
@@ -188,7 +188,7 @@ class UpdateSecretRequestBody:
 
     @property
     def rotation_func_urn(self):
-        """Gets the rotation_func_urn of this UpdateSecretRequestBody.
+        r"""Gets the rotation_func_urn of this UpdateSecretRequestBody.
 
         FunctionGraph函数的urn。
 
@@ -199,7 +199,7 @@ class UpdateSecretRequestBody:
 
     @rotation_func_urn.setter
     def rotation_func_urn(self, rotation_func_urn):
-        """Sets the rotation_func_urn of this UpdateSecretRequestBody.
+        r"""Sets the rotation_func_urn of this UpdateSecretRequestBody.
 
         FunctionGraph函数的urn。
 

@@ -27,7 +27,7 @@ class CandidateIntention:
     }
 
     def __init__(self, candidate_intention=None, candidate_confidence=None):
-        """CandidateIntention
+        r"""CandidateIntention
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CandidateIntention:
 
     @property
     def candidate_intention(self):
-        """Gets the candidate_intention of this CandidateIntention.
+        r"""Gets the candidate_intention of this CandidateIntention.
 
         候选意图。
 
@@ -59,7 +59,7 @@ class CandidateIntention:
 
     @candidate_intention.setter
     def candidate_intention(self, candidate_intention):
-        """Sets the candidate_intention of this CandidateIntention.
+        r"""Sets the candidate_intention of this CandidateIntention.
 
         候选意图。
 
@@ -70,7 +70,7 @@ class CandidateIntention:
 
     @property
     def candidate_confidence(self):
-        """Gets the candidate_confidence of this CandidateIntention.
+        r"""Gets the candidate_confidence of this CandidateIntention.
 
         候选意图置信度。
 
@@ -81,7 +81,7 @@ class CandidateIntention:
 
     @candidate_confidence.setter
     def candidate_confidence(self, candidate_confidence):
-        """Sets the candidate_confidence of this CandidateIntention.
+        r"""Sets the candidate_confidence of this CandidateIntention.
 
         候选意图置信度。
 

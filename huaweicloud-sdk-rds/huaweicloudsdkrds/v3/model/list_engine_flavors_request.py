@@ -39,7 +39,7 @@ class ListEngineFlavorsRequest:
     }
 
     def __init__(self, instance_id=None, availability_zone_ids=None, ha_mode=None, spec_code_like=None, flavor_category_type=None, is_rha_flavor=None, offset=None, limit=None):
-        """ListEngineFlavorsRequest
+        r"""ListEngineFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListEngineFlavorsRequest.
+        r"""Gets the instance_id of this ListEngineFlavorsRequest.
 
         实例ID
 
@@ -100,7 +100,7 @@ class ListEngineFlavorsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListEngineFlavorsRequest.
+        r"""Sets the instance_id of this ListEngineFlavorsRequest.
 
         实例ID
 
@@ -111,7 +111,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this ListEngineFlavorsRequest.
+        r"""Gets the availability_zone_ids of this ListEngineFlavorsRequest.
 
         可用区，多个用\",\"分割，如cn-southwest-244a,cn-southwest-244b
 
@@ -122,7 +122,7 @@ class ListEngineFlavorsRequest:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this ListEngineFlavorsRequest.
+        r"""Sets the availability_zone_ids of this ListEngineFlavorsRequest.
 
         可用区，多个用\",\"分割，如cn-southwest-244a,cn-southwest-244b
 
@@ -133,7 +133,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this ListEngineFlavorsRequest.
+        r"""Gets the ha_mode of this ListEngineFlavorsRequest.
 
         模式，包括如下类型： ha：主备实例。 replica：只读实例。 single：单实例。
 
@@ -144,7 +144,7 @@ class ListEngineFlavorsRequest:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this ListEngineFlavorsRequest.
+        r"""Sets the ha_mode of this ListEngineFlavorsRequest.
 
         模式，包括如下类型： ha：主备实例。 replica：只读实例。 single：单实例。
 
@@ -155,7 +155,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def spec_code_like(self):
-        """Gets the spec_code_like of this ListEngineFlavorsRequest.
+        r"""Gets the spec_code_like of this ListEngineFlavorsRequest.
 
         性能规格,如rds.dec.pg.s1.medium，模糊匹配该规格类型
 
@@ -166,7 +166,7 @@ class ListEngineFlavorsRequest:
 
     @spec_code_like.setter
     def spec_code_like(self, spec_code_like):
-        """Sets the spec_code_like of this ListEngineFlavorsRequest.
+        r"""Sets the spec_code_like of this ListEngineFlavorsRequest.
 
         性能规格,如rds.dec.pg.s1.medium，模糊匹配该规格类型
 
@@ -177,7 +177,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def flavor_category_type(self):
-        """Gets the flavor_category_type of this ListEngineFlavorsRequest.
+        r"""Gets the flavor_category_type of this ListEngineFlavorsRequest.
 
         规格类型，包括如下类型：simple、dec
 
@@ -188,7 +188,7 @@ class ListEngineFlavorsRequest:
 
     @flavor_category_type.setter
     def flavor_category_type(self, flavor_category_type):
-        """Sets the flavor_category_type of this ListEngineFlavorsRequest.
+        r"""Sets the flavor_category_type of this ListEngineFlavorsRequest.
 
         规格类型，包括如下类型：simple、dec
 
@@ -199,7 +199,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def is_rha_flavor(self):
-        """Gets the is_rha_flavor of this ListEngineFlavorsRequest.
+        r"""Gets the is_rha_flavor of this ListEngineFlavorsRequest.
 
         是否显示高可用只读类型
 
@@ -210,7 +210,7 @@ class ListEngineFlavorsRequest:
 
     @is_rha_flavor.setter
     def is_rha_flavor(self, is_rha_flavor):
-        """Sets the is_rha_flavor of this ListEngineFlavorsRequest.
+        r"""Sets the is_rha_flavor of this ListEngineFlavorsRequest.
 
         是否显示高可用只读类型
 
@@ -221,7 +221,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEngineFlavorsRequest.
+        r"""Gets the offset of this ListEngineFlavorsRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0。 取值必须为数字，且不能为负数。
 
@@ -232,7 +232,7 @@ class ListEngineFlavorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEngineFlavorsRequest.
+        r"""Sets the offset of this ListEngineFlavorsRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0。 取值必须为数字，且不能为负数。
 
@@ -243,7 +243,7 @@ class ListEngineFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEngineFlavorsRequest.
+        r"""Gets the limit of this ListEngineFlavorsRequest.
 
         查询个数上限值。 取值范围：1~100。 不传该参数时，默认查询前100条信息。
 
@@ -254,7 +254,7 @@ class ListEngineFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEngineFlavorsRequest.
+        r"""Sets the limit of this ListEngineFlavorsRequest.
 
         查询个数上限值。 取值范围：1~100。 不传该参数时，默认查询前100条信息。
 

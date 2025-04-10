@@ -29,7 +29,7 @@ class Config:
     }
 
     def __init__(self, key=None, value=None, config_file_name=None):
-        """Config
+        r"""Config
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Config:
 
     @property
     def key(self):
-        """Gets the key of this Config.
+        r"""Gets the key of this Config.
 
         配置名，仅支持MRS组件配置页面上所展示的配置名。
 
@@ -65,7 +65,7 @@ class Config:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Config.
+        r"""Sets the key of this Config.
 
         配置名，仅支持MRS组件配置页面上所展示的配置名。
 
@@ -76,7 +76,7 @@ class Config:
 
     @property
     def value(self):
-        """Gets the value of this Config.
+        r"""Gets the value of this Config.
 
         配置值
 
@@ -87,7 +87,7 @@ class Config:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Config.
+        r"""Sets the value of this Config.
 
         配置值
 
@@ -98,7 +98,7 @@ class Config:
 
     @property
     def config_file_name(self):
-        """Gets the config_file_name of this Config.
+        r"""Gets the config_file_name of this Config.
 
         配置文件名，仅支持MRS组件配置页面上所展示的文件名。
 
@@ -109,7 +109,7 @@ class Config:
 
     @config_file_name.setter
     def config_file_name(self, config_file_name):
-        """Sets the config_file_name of this Config.
+        r"""Sets the config_file_name of this Config.
 
         配置文件名，仅支持MRS组件配置页面上所展示的文件名。
 

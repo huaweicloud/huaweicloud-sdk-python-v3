@@ -27,7 +27,7 @@ class SimulatorEnum:
     }
 
     def __init__(self):
-        """SimulatorEnum
+        r"""SimulatorEnum
 
         The model defined in huaweicloud sdk
 

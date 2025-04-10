@@ -25,7 +25,7 @@ class UpdateJobConfigReq:
     }
 
     def __init__(self, job_retain_number=None):
-        """UpdateJobConfigReq
+        r"""UpdateJobConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateJobConfigReq:
 
     @property
     def job_retain_number(self):
-        """Gets the job_retain_number of this UpdateJobConfigReq.
+        r"""Gets the job_retain_number of this UpdateJobConfigReq.
 
         作业保存条数
 
@@ -53,7 +53,7 @@ class UpdateJobConfigReq:
 
     @job_retain_number.setter
     def job_retain_number(self, job_retain_number):
-        """Sets the job_retain_number of this UpdateJobConfigReq.
+        r"""Sets the job_retain_number of this UpdateJobConfigReq.
 
         作业保存条数
 

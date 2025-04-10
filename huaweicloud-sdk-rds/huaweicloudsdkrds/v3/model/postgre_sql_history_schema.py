@@ -29,7 +29,7 @@ class PostgreSQLHistorySchema:
     }
 
     def __init__(self, name=None, total_tables=None, tables=None):
-        """PostgreSQLHistorySchema
+        r"""PostgreSQLHistorySchema
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PostgreSQLHistorySchema:
 
     @property
     def name(self):
-        """Gets the name of this PostgreSQLHistorySchema.
+        r"""Gets the name of this PostgreSQLHistorySchema.
 
         模式名
 
@@ -68,7 +68,7 @@ class PostgreSQLHistorySchema:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgreSQLHistorySchema.
+        r"""Sets the name of this PostgreSQLHistorySchema.
 
         模式名
 
@@ -79,7 +79,7 @@ class PostgreSQLHistorySchema:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this PostgreSQLHistorySchema.
+        r"""Gets the total_tables of this PostgreSQLHistorySchema.
 
         可恢复表的数量
 
@@ -90,7 +90,7 @@ class PostgreSQLHistorySchema:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this PostgreSQLHistorySchema.
+        r"""Sets the total_tables of this PostgreSQLHistorySchema.
 
         可恢复表的数量
 
@@ -101,7 +101,7 @@ class PostgreSQLHistorySchema:
 
     @property
     def tables(self):
-        """Gets the tables of this PostgreSQLHistorySchema.
+        r"""Gets the tables of this PostgreSQLHistorySchema.
 
         表信息
 
@@ -112,7 +112,7 @@ class PostgreSQLHistorySchema:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this PostgreSQLHistorySchema.
+        r"""Sets the tables of this PostgreSQLHistorySchema.
 
         表信息
 

@@ -37,7 +37,7 @@ class PhoneImage:
     }
 
     def __init__(self, image_name=None, os_type=None, is_public=None, os_name=None, image_label=None, image_id=None, is_support_encrypt=None):
-        """PhoneImage
+        r"""PhoneImage
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PhoneImage:
 
     @property
     def image_name(self):
-        """Gets the image_name of this PhoneImage.
+        r"""Gets the image_name of this PhoneImage.
 
         手机镜像名称，不超过128个字节。
 
@@ -96,7 +96,7 @@ class PhoneImage:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this PhoneImage.
+        r"""Sets the image_name of this PhoneImage.
 
         手机镜像名称，不超过128个字节。
 
@@ -107,7 +107,7 @@ class PhoneImage:
 
     @property
     def os_type(self):
-        """Gets the os_type of this PhoneImage.
+        r"""Gets the os_type of this PhoneImage.
 
         镜像操作系统类型，不超过16个字节。
 
@@ -118,7 +118,7 @@ class PhoneImage:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this PhoneImage.
+        r"""Sets the os_type of this PhoneImage.
 
         镜像操作系统类型，不超过16个字节。
 
@@ -129,7 +129,7 @@ class PhoneImage:
 
     @property
     def is_public(self):
-        """Gets the is_public of this PhoneImage.
+        r"""Gets the is_public of this PhoneImage.
 
         镜像类型。 - 1：公有镜像 - 2 ：私有镜像
 
@@ -140,7 +140,7 @@ class PhoneImage:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this PhoneImage.
+        r"""Sets the is_public of this PhoneImage.
 
         镜像类型。 - 1：公有镜像 - 2 ：私有镜像
 
@@ -151,7 +151,7 @@ class PhoneImage:
 
     @property
     def os_name(self):
-        """Gets the os_name of this PhoneImage.
+        r"""Gets the os_name of this PhoneImage.
 
         手机操作系统，不超过36个字节。
 
@@ -162,7 +162,7 @@ class PhoneImage:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this PhoneImage.
+        r"""Sets the os_name of this PhoneImage.
 
         手机操作系统，不超过36个字节。
 
@@ -173,7 +173,7 @@ class PhoneImage:
 
     @property
     def image_label(self):
-        """Gets the image_label of this PhoneImage.
+        r"""Gets the image_label of this PhoneImage.
 
         镜像适用的云手机规格。 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
 
@@ -184,7 +184,7 @@ class PhoneImage:
 
     @image_label.setter
     def image_label(self, image_label):
-        """Sets the image_label of this PhoneImage.
+        r"""Sets the image_label of this PhoneImage.
 
         镜像适用的云手机规格。 - cloud_phone：适用于physical.rx1.xlarge 类型云手机服务器 - cloud_phone_1620：适用于physical.kg1.4xlarge.cp类型云手机服务器 - cloud_game：适用于physical.rx1.xlarge.cg 类型云手游服务器 - cloud_game_1620：适用于physical.kg1.4xlarge.cg 类型云手游服务器 - qemu_phone： 适用于physical.rx1.xlarge 类型云手机服务器中 qemu类型云手机规格
 
@@ -195,7 +195,7 @@ class PhoneImage:
 
     @property
     def image_id(self):
-        """Gets the image_id of this PhoneImage.
+        r"""Gets the image_id of this PhoneImage.
 
         手机镜像唯一标识ID，不超过32个字节。
 
@@ -206,7 +206,7 @@ class PhoneImage:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this PhoneImage.
+        r"""Sets the image_id of this PhoneImage.
 
         手机镜像唯一标识ID，不超过32个字节。
 
@@ -217,7 +217,7 @@ class PhoneImage:
 
     @property
     def is_support_encrypt(self):
-        """Gets the is_support_encrypt of this PhoneImage.
+        r"""Gets the is_support_encrypt of this PhoneImage.
 
         当前镜像是否支持文件级加密
 
@@ -228,7 +228,7 @@ class PhoneImage:
 
     @is_support_encrypt.setter
     def is_support_encrypt(self, is_support_encrypt):
-        """Sets the is_support_encrypt of this PhoneImage.
+        r"""Sets the is_support_encrypt of this PhoneImage.
 
         当前镜像是否支持文件级加密
 

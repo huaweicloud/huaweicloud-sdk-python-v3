@@ -25,7 +25,7 @@ class CreateChInstanceRequestBodyHa:
     }
 
     def __init__(self, mode=None):
-        """CreateChInstanceRequestBodyHa
+        r"""CreateChInstanceRequestBodyHa
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateChInstanceRequestBodyHa:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateChInstanceRequestBodyHa.
+        r"""Gets the mode of this CreateChInstanceRequestBodyHa.
 
         部署模式。 取值范围： - Single：单机 - Ha：主备
 
@@ -53,7 +53,7 @@ class CreateChInstanceRequestBodyHa:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateChInstanceRequestBodyHa.
+        r"""Sets the mode of this CreateChInstanceRequestBodyHa.
 
         部署模式。 取值范围： - Single：单机 - Ha：主备
 

@@ -28,7 +28,7 @@ class RunImageSynchronizeResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_description=None):
-        """RunImageSynchronizeResponse
+        r"""RunImageSynchronizeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunImageSynchronizeResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunImageSynchronizeResponse.
+        r"""Gets the error_code of this RunImageSynchronizeResponse.
 
         错误编码
 
@@ -62,7 +62,7 @@ class RunImageSynchronizeResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunImageSynchronizeResponse.
+        r"""Sets the error_code of this RunImageSynchronizeResponse.
 
         错误编码
 
@@ -73,7 +73,7 @@ class RunImageSynchronizeResponse(SdkResponse):
 
     @property
     def error_description(self):
-        """Gets the error_description of this RunImageSynchronizeResponse.
+        r"""Gets the error_description of this RunImageSynchronizeResponse.
 
         错误描述
 
@@ -84,7 +84,7 @@ class RunImageSynchronizeResponse(SdkResponse):
 
     @error_description.setter
     def error_description(self, error_description):
-        """Sets the error_description of this RunImageSynchronizeResponse.
+        r"""Sets the error_description of this RunImageSynchronizeResponse.
 
         错误描述
 

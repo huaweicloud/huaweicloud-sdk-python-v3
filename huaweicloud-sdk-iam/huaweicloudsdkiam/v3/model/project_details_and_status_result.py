@@ -39,7 +39,7 @@ class ProjectDetailsAndStatusResult:
     }
 
     def __init__(self, domain_id=None, is_domain=None, parent_id=None, name=None, description=None, id=None, enabled=None, status=None):
-        """ProjectDetailsAndStatusResult
+        r"""ProjectDetailsAndStatusResult
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ProjectDetailsAndStatusResult.
+        r"""Gets the domain_id of this ProjectDetailsAndStatusResult.
 
         项目所属账号ID。
 
@@ -95,7 +95,7 @@ class ProjectDetailsAndStatusResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ProjectDetailsAndStatusResult.
+        r"""Sets the domain_id of this ProjectDetailsAndStatusResult.
 
         项目所属账号ID。
 
@@ -106,7 +106,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def is_domain(self):
-        """Gets the is_domain of this ProjectDetailsAndStatusResult.
+        r"""Gets the is_domain of this ProjectDetailsAndStatusResult.
 
         false.
 
@@ -117,7 +117,7 @@ class ProjectDetailsAndStatusResult:
 
     @is_domain.setter
     def is_domain(self, is_domain):
-        """Sets the is_domain of this ProjectDetailsAndStatusResult.
+        r"""Sets the is_domain of this ProjectDetailsAndStatusResult.
 
         false.
 
@@ -128,7 +128,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ProjectDetailsAndStatusResult.
+        r"""Gets the parent_id of this ProjectDetailsAndStatusResult.
 
         如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
@@ -139,7 +139,7 @@ class ProjectDetailsAndStatusResult:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ProjectDetailsAndStatusResult.
+        r"""Sets the parent_id of this ProjectDetailsAndStatusResult.
 
         如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
@@ -150,7 +150,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def name(self):
-        """Gets the name of this ProjectDetailsAndStatusResult.
+        r"""Gets the name of this ProjectDetailsAndStatusResult.
 
         项目名称。
 
@@ -161,7 +161,7 @@ class ProjectDetailsAndStatusResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectDetailsAndStatusResult.
+        r"""Sets the name of this ProjectDetailsAndStatusResult.
 
         项目名称。
 
@@ -172,7 +172,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def description(self):
-        """Gets the description of this ProjectDetailsAndStatusResult.
+        r"""Gets the description of this ProjectDetailsAndStatusResult.
 
         项目描述信息。
 
@@ -183,7 +183,7 @@ class ProjectDetailsAndStatusResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectDetailsAndStatusResult.
+        r"""Sets the description of this ProjectDetailsAndStatusResult.
 
         项目描述信息。
 
@@ -194,7 +194,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def id(self):
-        """Gets the id of this ProjectDetailsAndStatusResult.
+        r"""Gets the id of this ProjectDetailsAndStatusResult.
 
         项目ID。
 
@@ -205,7 +205,7 @@ class ProjectDetailsAndStatusResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectDetailsAndStatusResult.
+        r"""Sets the id of this ProjectDetailsAndStatusResult.
 
         项目ID。
 
@@ -216,7 +216,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ProjectDetailsAndStatusResult.
+        r"""Gets the enabled of this ProjectDetailsAndStatusResult.
 
         项目是否可用。
 
@@ -227,7 +227,7 @@ class ProjectDetailsAndStatusResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ProjectDetailsAndStatusResult.
+        r"""Sets the enabled of this ProjectDetailsAndStatusResult.
 
         项目是否可用。
 
@@ -238,7 +238,7 @@ class ProjectDetailsAndStatusResult:
 
     @property
     def status(self):
-        """Gets the status of this ProjectDetailsAndStatusResult.
+        r"""Gets the status of this ProjectDetailsAndStatusResult.
 
         项目状态。
 
@@ -249,7 +249,7 @@ class ProjectDetailsAndStatusResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProjectDetailsAndStatusResult.
+        r"""Sets the status of this ProjectDetailsAndStatusResult.
 
         项目状态。
 

@@ -47,7 +47,7 @@ class AdInfo:
     }
 
     def __init__(self, domain_type=None, domain_name=None, domain_admin_account=None, active_domain_name=None, active_domain_ip=None, standby_domain_name=None, standby_domain_ip=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None):
-        """AdInfo
+        r"""AdInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AdInfo:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this AdInfo.
+        r"""Gets the domain_type of this AdInfo.
 
         域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。
 
@@ -131,7 +131,7 @@ class AdInfo:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this AdInfo.
+        r"""Sets the domain_type of this AdInfo.
 
         域类型。 - LITE_AS：本地认证。 - LOCAL_AD：本地AD。
 
@@ -142,7 +142,7 @@ class AdInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AdInfo.
+        r"""Gets the domain_name of this AdInfo.
 
         域名，域类型为LOCAL_AD时有值。
 
@@ -153,7 +153,7 @@ class AdInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AdInfo.
+        r"""Sets the domain_name of this AdInfo.
 
         域名，域类型为LOCAL_AD时有值。
 
@@ -164,7 +164,7 @@ class AdInfo:
 
     @property
     def domain_admin_account(self):
-        """Gets the domain_admin_account of this AdInfo.
+        r"""Gets the domain_admin_account of this AdInfo.
 
         域管理员帐号，域类型为LOCAL_AD时有值。
 
@@ -175,7 +175,7 @@ class AdInfo:
 
     @domain_admin_account.setter
     def domain_admin_account(self, domain_admin_account):
-        """Sets the domain_admin_account of this AdInfo.
+        r"""Sets the domain_admin_account of this AdInfo.
 
         域管理员帐号，域类型为LOCAL_AD时有值。
 
@@ -186,7 +186,7 @@ class AdInfo:
 
     @property
     def active_domain_name(self):
-        """Gets the active_domain_name of this AdInfo.
+        r"""Gets the active_domain_name of this AdInfo.
 
         主域控制器名称，域类型为LOCAL_AD时有值。
 
@@ -197,7 +197,7 @@ class AdInfo:
 
     @active_domain_name.setter
     def active_domain_name(self, active_domain_name):
-        """Sets the active_domain_name of this AdInfo.
+        r"""Sets the active_domain_name of this AdInfo.
 
         主域控制器名称，域类型为LOCAL_AD时有值。
 
@@ -208,7 +208,7 @@ class AdInfo:
 
     @property
     def active_domain_ip(self):
-        """Gets the active_domain_ip of this AdInfo.
+        r"""Gets the active_domain_ip of this AdInfo.
 
         主域控制器IP地址，域类型为LOCAL_AD时有值。
 
@@ -219,7 +219,7 @@ class AdInfo:
 
     @active_domain_ip.setter
     def active_domain_ip(self, active_domain_ip):
-        """Sets the active_domain_ip of this AdInfo.
+        r"""Sets the active_domain_ip of this AdInfo.
 
         主域控制器IP地址，域类型为LOCAL_AD时有值。
 
@@ -230,7 +230,7 @@ class AdInfo:
 
     @property
     def standby_domain_name(self):
-        """Gets the standby_domain_name of this AdInfo.
+        r"""Gets the standby_domain_name of this AdInfo.
 
         备域控制器名称，域类型为LOCAL_AD时有值。
 
@@ -241,7 +241,7 @@ class AdInfo:
 
     @standby_domain_name.setter
     def standby_domain_name(self, standby_domain_name):
-        """Sets the standby_domain_name of this AdInfo.
+        r"""Sets the standby_domain_name of this AdInfo.
 
         备域控制器名称，域类型为LOCAL_AD时有值。
 
@@ -252,7 +252,7 @@ class AdInfo:
 
     @property
     def standby_domain_ip(self):
-        """Gets the standby_domain_ip of this AdInfo.
+        r"""Gets the standby_domain_ip of this AdInfo.
 
         备域控制器IP地址，域类型为LOCAL_AD时有值。
 
@@ -263,7 +263,7 @@ class AdInfo:
 
     @standby_domain_ip.setter
     def standby_domain_ip(self, standby_domain_ip):
-        """Sets the standby_domain_ip of this AdInfo.
+        r"""Sets the standby_domain_ip of this AdInfo.
 
         备域控制器IP地址，域类型为LOCAL_AD时有值。
 
@@ -274,7 +274,7 @@ class AdInfo:
 
     @property
     def active_dns_ip(self):
-        """Gets the active_dns_ip of this AdInfo.
+        r"""Gets the active_dns_ip of this AdInfo.
 
         主DNS IP地址，域类型为LOCAL_AD时有值。
 
@@ -285,7 +285,7 @@ class AdInfo:
 
     @active_dns_ip.setter
     def active_dns_ip(self, active_dns_ip):
-        """Sets the active_dns_ip of this AdInfo.
+        r"""Sets the active_dns_ip of this AdInfo.
 
         主DNS IP地址，域类型为LOCAL_AD时有值。
 
@@ -296,7 +296,7 @@ class AdInfo:
 
     @property
     def standby_dns_ip(self):
-        """Gets the standby_dns_ip of this AdInfo.
+        r"""Gets the standby_dns_ip of this AdInfo.
 
         备DNS IP地址，域类型为LOCAL_AD时有值。
 
@@ -307,7 +307,7 @@ class AdInfo:
 
     @standby_dns_ip.setter
     def standby_dns_ip(self, standby_dns_ip):
-        """Sets the standby_dns_ip of this AdInfo.
+        r"""Sets the standby_dns_ip of this AdInfo.
 
         备DNS IP地址，域类型为LOCAL_AD时有值。
 
@@ -318,7 +318,7 @@ class AdInfo:
 
     @property
     def delete_computer_object(self):
-        """Gets the delete_computer_object of this AdInfo.
+        r"""Gets the delete_computer_object of this AdInfo.
 
         是否在删除桌面的同时删除AD上对应的计算机对象，'0'代表不删除，'1'代表删除。
 
@@ -329,7 +329,7 @@ class AdInfo:
 
     @delete_computer_object.setter
     def delete_computer_object(self, delete_computer_object):
-        """Sets the delete_computer_object of this AdInfo.
+        r"""Sets the delete_computer_object of this AdInfo.
 
         是否在删除桌面的同时删除AD上对应的计算机对象，'0'代表不删除，'1'代表删除。
 
@@ -340,7 +340,7 @@ class AdInfo:
 
     @property
     def use_ldaps(self):
-        """Gets the use_ldaps of this AdInfo.
+        r"""Gets the use_ldaps of this AdInfo.
 
         是否开启LDAPS。
 
@@ -351,7 +351,7 @@ class AdInfo:
 
     @use_ldaps.setter
     def use_ldaps(self, use_ldaps):
-        """Sets the use_ldaps of this AdInfo.
+        r"""Sets the use_ldaps of this AdInfo.
 
         是否开启LDAPS。
 
@@ -362,7 +362,7 @@ class AdInfo:
 
     @property
     def tls_config(self):
-        """Gets the tls_config of this AdInfo.
+        r"""Gets the tls_config of this AdInfo.
 
         :return: The tls_config of this AdInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.TlsConfig`
@@ -371,7 +371,7 @@ class AdInfo:
 
     @tls_config.setter
     def tls_config(self, tls_config):
-        """Sets the tls_config of this AdInfo.
+        r"""Sets the tls_config of this AdInfo.
 
         :param tls_config: The tls_config of this AdInfo.
         :type tls_config: :class:`huaweicloudsdkworkspace.v2.TlsConfig`

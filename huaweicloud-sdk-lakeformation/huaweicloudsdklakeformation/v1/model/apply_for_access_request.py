@@ -27,7 +27,7 @@ class ApplyForAccessRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ApplyForAccessRequest
+        r"""ApplyForAccessRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApplyForAccessRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApplyForAccessRequest.
+        r"""Gets the instance_id of this ApplyForAccessRequest.
 
         LakeFormation实例ID
 
@@ -60,7 +60,7 @@ class ApplyForAccessRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApplyForAccessRequest.
+        r"""Sets the instance_id of this ApplyForAccessRequest.
 
         LakeFormation实例ID
 
@@ -71,7 +71,7 @@ class ApplyForAccessRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyForAccessRequest.
+        r"""Gets the body of this ApplyForAccessRequest.
 
         申请接入服务的请求信息
 
@@ -82,7 +82,7 @@ class ApplyForAccessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyForAccessRequest.
+        r"""Sets the body of this ApplyForAccessRequest.
 
         申请接入服务的请求信息
 

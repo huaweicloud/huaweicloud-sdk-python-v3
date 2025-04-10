@@ -26,7 +26,7 @@ class AddProtectedInstanceNicResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """AddProtectedInstanceNicResponse
+        r"""AddProtectedInstanceNicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddProtectedInstanceNicResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AddProtectedInstanceNicResponse.
+        r"""Gets the job_id of this AddProtectedInstanceNicResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class AddProtectedInstanceNicResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AddProtectedInstanceNicResponse.
+        r"""Sets the job_id of this AddProtectedInstanceNicResponse.
 
         成功返回jobId信息
 

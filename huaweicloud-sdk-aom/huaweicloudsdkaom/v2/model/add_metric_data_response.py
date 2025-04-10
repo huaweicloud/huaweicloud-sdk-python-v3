@@ -28,7 +28,7 @@ class AddMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """AddMetricDataResponse
+        r"""AddMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddMetricDataResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this AddMetricDataResponse.
+        r"""Gets the error_code of this AddMetricDataResponse.
 
         响应码。
 
@@ -62,7 +62,7 @@ class AddMetricDataResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AddMetricDataResponse.
+        r"""Sets the error_code of this AddMetricDataResponse.
 
         响应码。
 
@@ -73,7 +73,7 @@ class AddMetricDataResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this AddMetricDataResponse.
+        r"""Gets the error_message of this AddMetricDataResponse.
 
         响应信息描述。
 
@@ -84,7 +84,7 @@ class AddMetricDataResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this AddMetricDataResponse.
+        r"""Sets the error_message of this AddMetricDataResponse.
 
         响应信息描述。
 

@@ -27,7 +27,7 @@ class ShowResourceBindEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """ShowResourceBindEnterpriseProjectRequest
+        r"""ShowResourceBindEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowResourceBindEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
 
         企业项目ID
 
@@ -60,7 +60,7 @@ class ShowResourceBindEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
 
         企业项目ID
 
@@ -71,7 +71,7 @@ class ShowResourceBindEnterpriseProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowResourceBindEnterpriseProjectRequest.
+        r"""Gets the body of this ShowResourceBindEnterpriseProjectRequest.
 
         :return: The body of this ShowResourceBindEnterpriseProjectRequest.
         :rtype: :class:`huaweicloudsdkeps.v1.ResqEpResouce`
@@ -80,7 +80,7 @@ class ShowResourceBindEnterpriseProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowResourceBindEnterpriseProjectRequest.
+        r"""Sets the body of this ShowResourceBindEnterpriseProjectRequest.
 
         :param body: The body of this ShowResourceBindEnterpriseProjectRequest.
         :type body: :class:`huaweicloudsdkeps.v1.ResqEpResouce`

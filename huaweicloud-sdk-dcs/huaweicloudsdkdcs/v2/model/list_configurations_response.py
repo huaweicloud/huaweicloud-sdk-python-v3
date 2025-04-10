@@ -34,7 +34,7 @@ class ListConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, config_time=None, instance_id=None, redis_config=None, config_status=None, status=None):
-        """ListConfigurationsResponse
+        r"""ListConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def config_time(self):
-        """Gets the config_time of this ListConfigurationsResponse.
+        r"""Gets the config_time of this ListConfigurationsResponse.
 
         实例操作时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -83,7 +83,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @config_time.setter
     def config_time(self, config_time):
-        """Sets the config_time of this ListConfigurationsResponse.
+        r"""Sets the config_time of this ListConfigurationsResponse.
 
         实例操作时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -94,7 +94,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConfigurationsResponse.
+        r"""Gets the instance_id of this ListConfigurationsResponse.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConfigurationsResponse.
+        r"""Sets the instance_id of this ListConfigurationsResponse.
 
         实例ID。
 
@@ -116,7 +116,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def redis_config(self):
-        """Gets the redis_config of this ListConfigurationsResponse.
+        r"""Gets the redis_config of this ListConfigurationsResponse.
 
         实例配置项数组。
 
@@ -127,7 +127,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @redis_config.setter
     def redis_config(self, redis_config):
-        """Sets the redis_config of this ListConfigurationsResponse.
+        r"""Sets the redis_config of this ListConfigurationsResponse.
 
         实例配置项数组。
 
@@ -138,7 +138,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def config_status(self):
-        """Gets the config_status of this ListConfigurationsResponse.
+        r"""Gets the config_status of this ListConfigurationsResponse.
 
         实例修改状态 - UPDATING - FAILURE - SUCCESS 
 
@@ -149,7 +149,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ListConfigurationsResponse.
+        r"""Sets the config_status of this ListConfigurationsResponse.
 
         实例修改状态 - UPDATING - FAILURE - SUCCESS 
 
@@ -160,7 +160,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListConfigurationsResponse.
+        r"""Gets the status of this ListConfigurationsResponse.
 
         实例运行状态。
 
@@ -171,7 +171,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListConfigurationsResponse.
+        r"""Sets the status of this ListConfigurationsResponse.
 
         实例运行状态。
 

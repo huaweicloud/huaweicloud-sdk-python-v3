@@ -33,7 +33,7 @@ class BatchSearchMetricHitsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, timespan=None, cache=None, body=None):
-        """BatchSearchMetricHitsRequest
+        r"""BatchSearchMetricHitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BatchSearchMetricHitsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchSearchMetricHitsRequest.
+        r"""Gets the project_id of this BatchSearchMetricHitsRequest.
 
         项目ID
 
@@ -80,7 +80,7 @@ class BatchSearchMetricHitsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchSearchMetricHitsRequest.
+        r"""Sets the project_id of this BatchSearchMetricHitsRequest.
 
         项目ID
 
@@ -91,7 +91,7 @@ class BatchSearchMetricHitsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this BatchSearchMetricHitsRequest.
+        r"""Gets the workspace_id of this BatchSearchMetricHitsRequest.
 
         工作空间ID
 
@@ -102,7 +102,7 @@ class BatchSearchMetricHitsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this BatchSearchMetricHitsRequest.
+        r"""Sets the workspace_id of this BatchSearchMetricHitsRequest.
 
         工作空间ID
 
@@ -113,7 +113,7 @@ class BatchSearchMetricHitsRequest:
 
     @property
     def timespan(self):
-        """Gets the timespan of this BatchSearchMetricHitsRequest.
+        r"""Gets the timespan of this BatchSearchMetricHitsRequest.
 
         查询指标的时间范围，ISO8601格式，例如：2007-03-01T13:00:00Z/2008-05-11T15:30:00Z或2007-03-01T13:00:00Z/P1Y2M10DT2H30M或P1Y2M10DT2H30M/2008-05-11T15:30:00Z
 
@@ -124,7 +124,7 @@ class BatchSearchMetricHitsRequest:
 
     @timespan.setter
     def timespan(self, timespan):
-        """Sets the timespan of this BatchSearchMetricHitsRequest.
+        r"""Sets the timespan of this BatchSearchMetricHitsRequest.
 
         查询指标的时间范围，ISO8601格式，例如：2007-03-01T13:00:00Z/2008-05-11T15:30:00Z或2007-03-01T13:00:00Z/P1Y2M10DT2H30M或P1Y2M10DT2H30M/2008-05-11T15:30:00Z
 
@@ -135,7 +135,7 @@ class BatchSearchMetricHitsRequest:
 
     @property
     def cache(self):
-        """Gets the cache of this BatchSearchMetricHitsRequest.
+        r"""Gets the cache of this BatchSearchMetricHitsRequest.
 
         是否启用缓存，默认true, 禁用缓存 false
 
@@ -146,7 +146,7 @@ class BatchSearchMetricHitsRequest:
 
     @cache.setter
     def cache(self, cache):
-        """Sets the cache of this BatchSearchMetricHitsRequest.
+        r"""Sets the cache of this BatchSearchMetricHitsRequest.
 
         是否启用缓存，默认true, 禁用缓存 false
 
@@ -157,7 +157,7 @@ class BatchSearchMetricHitsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSearchMetricHitsRequest.
+        r"""Gets the body of this BatchSearchMetricHitsRequest.
 
         :return: The body of this BatchSearchMetricHitsRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.BatchSearchMetricHitsRequestBody`
@@ -166,7 +166,7 @@ class BatchSearchMetricHitsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSearchMetricHitsRequest.
+        r"""Sets the body of this BatchSearchMetricHitsRequest.
 
         :param body: The body of this BatchSearchMetricHitsRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.BatchSearchMetricHitsRequestBody`

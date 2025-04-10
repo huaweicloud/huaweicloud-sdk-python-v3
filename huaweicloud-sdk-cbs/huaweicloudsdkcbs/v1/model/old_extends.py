@@ -27,7 +27,7 @@ class OldExtends:
     }
 
     def __init__(self, domains=None, top=None):
-        """OldExtends
+        r"""OldExtends
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OldExtends:
 
     @property
     def domains(self):
-        """Gets the domains of this OldExtends.
+        r"""Gets the domains of this OldExtends.
 
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
@@ -61,7 +61,7 @@ class OldExtends:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this OldExtends.
+        r"""Sets the domains of this OldExtends.
 
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
@@ -72,7 +72,7 @@ class OldExtends:
 
     @property
     def top(self):
-        """Gets the top of this OldExtends.
+        r"""Gets the top of this OldExtends.
 
         返回答案数量，默认为5，取值范围1~10。
 
@@ -83,7 +83,7 @@ class OldExtends:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this OldExtends.
+        r"""Sets the top of this OldExtends.
 
         返回答案数量，默认为5，取值范围1~10。
 

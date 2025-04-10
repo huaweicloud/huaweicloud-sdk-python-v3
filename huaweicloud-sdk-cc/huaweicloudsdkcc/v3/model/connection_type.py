@@ -25,7 +25,7 @@ class ConnectionType:
     }
 
     def __init__(self, connection_type=None):
-        """ConnectionType
+        r"""ConnectionType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConnectionType:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this ConnectionType.
+        r"""Gets the connection_type of this ConnectionType.
 
         :return: The connection_type of this ConnectionType.
         :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
@@ -51,7 +51,7 @@ class ConnectionType:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this ConnectionType.
+        r"""Sets the connection_type of this ConnectionType.
 
         :param connection_type: The connection_type of this ConnectionType.
         :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`

@@ -26,7 +26,7 @@ class CollectAllResourcesSummaryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CollectAllResourcesSummaryResponse
+        r"""CollectAllResourcesSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CollectAllResourcesSummaryResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CollectAllResourcesSummaryResponse.
+        r"""Gets the body of this CollectAllResourcesSummaryResponse.
 
         资源概要信息列表
 
@@ -55,7 +55,7 @@ class CollectAllResourcesSummaryResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectAllResourcesSummaryResponse.
+        r"""Sets the body of this CollectAllResourcesSummaryResponse.
 
         资源概要信息列表
 

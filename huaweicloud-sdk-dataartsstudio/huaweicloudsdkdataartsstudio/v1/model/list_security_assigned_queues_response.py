@@ -28,7 +28,7 @@ class ListSecurityAssignedQueuesResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, queue_sources=None):
-        """ListSecurityAssignedQueuesResponse
+        r"""ListSecurityAssignedQueuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityAssignedQueuesResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListSecurityAssignedQueuesResponse.
+        r"""Gets the project_id of this ListSecurityAssignedQueuesResponse.
 
         项目id。
 
@@ -62,7 +62,7 @@ class ListSecurityAssignedQueuesResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListSecurityAssignedQueuesResponse.
+        r"""Sets the project_id of this ListSecurityAssignedQueuesResponse.
 
         项目id。
 
@@ -73,7 +73,7 @@ class ListSecurityAssignedQueuesResponse(SdkResponse):
 
     @property
     def queue_sources(self):
-        """Gets the queue_sources of this ListSecurityAssignedQueuesResponse.
+        r"""Gets the queue_sources of this ListSecurityAssignedQueuesResponse.
 
         队列资源信息。
 
@@ -84,7 +84,7 @@ class ListSecurityAssignedQueuesResponse(SdkResponse):
 
     @queue_sources.setter
     def queue_sources(self, queue_sources):
-        """Sets the queue_sources of this ListSecurityAssignedQueuesResponse.
+        r"""Sets the queue_sources of this ListSecurityAssignedQueuesResponse.
 
         队列资源信息。
 

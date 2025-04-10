@@ -27,7 +27,7 @@ class ShowClientCaRequest:
     }
 
     def __init__(self, vpn_server_id=None, client_ca_certificate_id=None):
-        """ShowClientCaRequest
+        r"""ShowClientCaRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowClientCaRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ShowClientCaRequest.
+        r"""Gets the vpn_server_id of this ShowClientCaRequest.
 
         VPN服务端 ID
 
@@ -59,7 +59,7 @@ class ShowClientCaRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ShowClientCaRequest.
+        r"""Sets the vpn_server_id of this ShowClientCaRequest.
 
         VPN服务端 ID
 
@@ -70,7 +70,7 @@ class ShowClientCaRequest:
 
     @property
     def client_ca_certificate_id(self):
-        """Gets the client_ca_certificate_id of this ShowClientCaRequest.
+        r"""Gets the client_ca_certificate_id of this ShowClientCaRequest.
 
         客户端 CA 证书 ID
 
@@ -81,7 +81,7 @@ class ShowClientCaRequest:
 
     @client_ca_certificate_id.setter
     def client_ca_certificate_id(self, client_ca_certificate_id):
-        """Sets the client_ca_certificate_id of this ShowClientCaRequest.
+        r"""Sets the client_ca_certificate_id of this ShowClientCaRequest.
 
         客户端 CA 证书 ID
 

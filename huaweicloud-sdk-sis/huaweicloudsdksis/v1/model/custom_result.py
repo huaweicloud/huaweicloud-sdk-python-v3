@@ -25,7 +25,7 @@ class CustomResult:
     }
 
     def __init__(self, data=None):
-        """CustomResult
+        r"""CustomResult
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CustomResult:
 
     @property
     def data(self):
-        """Gets the data of this CustomResult.
+        r"""Gets the data of this CustomResult.
 
         语音数据， Base64编码格式返回。
 
@@ -53,7 +53,7 @@ class CustomResult:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CustomResult.
+        r"""Sets the data of this CustomResult.
 
         语音数据， Base64编码格式返回。
 

@@ -27,7 +27,7 @@ class ParseTemplateVariablesRequest:
     }
 
     def __init__(self, client_request_id=None, body=None):
-        """ParseTemplateVariablesRequest
+        r"""ParseTemplateVariablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ParseTemplateVariablesRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ParseTemplateVariablesRequest.
+        r"""Gets the client_request_id of this ParseTemplateVariablesRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -60,7 +60,7 @@ class ParseTemplateVariablesRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ParseTemplateVariablesRequest.
+        r"""Sets the client_request_id of this ParseTemplateVariablesRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -71,7 +71,7 @@ class ParseTemplateVariablesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ParseTemplateVariablesRequest.
+        r"""Gets the body of this ParseTemplateVariablesRequest.
 
         :return: The body of this ParseTemplateVariablesRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesRequestBody`
@@ -80,7 +80,7 @@ class ParseTemplateVariablesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ParseTemplateVariablesRequest.
+        r"""Sets the body of this ParseTemplateVariablesRequest.
 
         :param body: The body of this ParseTemplateVariablesRequest.
         :type body: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesRequestBody`

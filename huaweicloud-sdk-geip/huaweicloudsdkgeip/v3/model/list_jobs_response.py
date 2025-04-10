@@ -32,7 +32,7 @@ class ListJobsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None, page_info=None, x_request_id=None):
-        """ListJobsResponse
+        r"""ListJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListJobsResponse.
+        r"""Gets the request_id of this ListJobsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListJobsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListJobsResponse.
+        r"""Sets the request_id of this ListJobsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListJobsResponse.
+        r"""Gets the jobs of this ListJobsResponse.
 
         响应job对象
 
@@ -98,7 +98,7 @@ class ListJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListJobsResponse.
+        r"""Sets the jobs of this ListJobsResponse.
 
         响应job对象
 
@@ -109,7 +109,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListJobsResponse.
+        r"""Gets the page_info of this ListJobsResponse.
 
         :return: The page_info of this ListJobsResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -118,7 +118,7 @@ class ListJobsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListJobsResponse.
+        r"""Sets the page_info of this ListJobsResponse.
 
         :param page_info: The page_info of this ListJobsResponse.
         :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -127,7 +127,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListJobsResponse.
+        r"""Gets the x_request_id of this ListJobsResponse.
 
         :return: The x_request_id of this ListJobsResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ListJobsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListJobsResponse.
+        r"""Sets the x_request_id of this ListJobsResponse.
 
         :param x_request_id: The x_request_id of this ListJobsResponse.
         :type x_request_id: str

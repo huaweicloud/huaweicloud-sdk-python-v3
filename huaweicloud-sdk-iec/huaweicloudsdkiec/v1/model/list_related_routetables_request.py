@@ -25,7 +25,7 @@ class ListRelatedRoutetablesRequest:
     }
 
     def __init__(self, subnet_id=None):
-        """ListRelatedRoutetablesRequest
+        r"""ListRelatedRoutetablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListRelatedRoutetablesRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListRelatedRoutetablesRequest.
+        r"""Gets the subnet_id of this ListRelatedRoutetablesRequest.
 
         子网ID
 
@@ -53,7 +53,7 @@ class ListRelatedRoutetablesRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListRelatedRoutetablesRequest.
+        r"""Sets the subnet_id of this ListRelatedRoutetablesRequest.
 
         子网ID
 

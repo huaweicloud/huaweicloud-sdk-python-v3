@@ -27,7 +27,7 @@ class OsfederationGroups:
     }
 
     def __init__(self, id=None, name=None):
-        """OsfederationGroups
+        r"""OsfederationGroups
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OsfederationGroups:
 
     @property
     def id(self):
-        """Gets the id of this OsfederationGroups.
+        r"""Gets the id of this OsfederationGroups.
 
         用户组ID。
 
@@ -59,7 +59,7 @@ class OsfederationGroups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OsfederationGroups.
+        r"""Sets the id of this OsfederationGroups.
 
         用户组ID。
 
@@ -70,7 +70,7 @@ class OsfederationGroups:
 
     @property
     def name(self):
-        """Gets the name of this OsfederationGroups.
+        r"""Gets the name of this OsfederationGroups.
 
         用户组名称。
 
@@ -81,7 +81,7 @@ class OsfederationGroups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OsfederationGroups.
+        r"""Sets the name of this OsfederationGroups.
 
         用户组名称。
 

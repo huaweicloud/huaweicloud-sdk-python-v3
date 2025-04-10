@@ -29,7 +29,7 @@ class KeystoneCreateGroupOption:
     }
 
     def __init__(self, description=None, domain_id=None, name=None):
-        """KeystoneCreateGroupOption
+        r"""KeystoneCreateGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class KeystoneCreateGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneCreateGroupOption.
+        r"""Gets the description of this KeystoneCreateGroupOption.
 
         用户组描述信息，长度小于等于255字节。
 
@@ -67,7 +67,7 @@ class KeystoneCreateGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneCreateGroupOption.
+        r"""Sets the description of this KeystoneCreateGroupOption.
 
         用户组描述信息，长度小于等于255字节。
 
@@ -78,7 +78,7 @@ class KeystoneCreateGroupOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneCreateGroupOption.
+        r"""Gets the domain_id of this KeystoneCreateGroupOption.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -89,7 +89,7 @@ class KeystoneCreateGroupOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneCreateGroupOption.
+        r"""Sets the domain_id of this KeystoneCreateGroupOption.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -100,7 +100,7 @@ class KeystoneCreateGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneCreateGroupOption.
+        r"""Gets the name of this KeystoneCreateGroupOption.
 
         用户组名，长度小于等于128字符。
 
@@ -111,7 +111,7 @@ class KeystoneCreateGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneCreateGroupOption.
+        r"""Sets the name of this KeystoneCreateGroupOption.
 
         用户组名，长度小于等于128字符。
 

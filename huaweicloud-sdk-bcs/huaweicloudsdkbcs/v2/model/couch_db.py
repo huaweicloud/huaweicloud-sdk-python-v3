@@ -27,7 +27,7 @@ class CouchDb:
     }
 
     def __init__(self, user_name=None, password=None):
-        """CouchDb
+        r"""CouchDb
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CouchDb:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CouchDb.
+        r"""Gets the user_name of this CouchDb.
 
         couchDB用户名
 
@@ -59,7 +59,7 @@ class CouchDb:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CouchDb.
+        r"""Sets the user_name of this CouchDb.
 
         couchDB用户名
 
@@ -70,7 +70,7 @@ class CouchDb:
 
     @property
     def password(self):
-        """Gets the password of this CouchDb.
+        r"""Gets the password of this CouchDb.
 
         couchDB密码
 
@@ -81,7 +81,7 @@ class CouchDb:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CouchDb.
+        r"""Sets the password of this CouchDb.
 
         couchDB密码
 

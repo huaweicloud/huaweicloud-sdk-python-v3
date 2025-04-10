@@ -25,7 +25,7 @@ class SpeedLimit:
     }
 
     def __init__(self, speed_limit=None):
-        """SpeedLimit
+        r"""SpeedLimit
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SpeedLimit:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this SpeedLimit.
+        r"""Gets the speed_limit of this SpeedLimit.
 
         按时间段限速信息
 
@@ -53,7 +53,7 @@ class SpeedLimit:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this SpeedLimit.
+        r"""Sets the speed_limit of this SpeedLimit.
 
         按时间段限速信息
 

@@ -33,7 +33,7 @@ class QueryCorpResultDTO:
     }
 
     def __init__(self, basic_info=None, admin_info=None, res_info=None, group_dto=None, id=None):
-        """QueryCorpResultDTO
+        r"""QueryCorpResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryCorpResultDTO:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this QueryCorpResultDTO.
+        r"""Gets the basic_info of this QueryCorpResultDTO.
 
         :return: The basic_info of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
@@ -80,7 +80,7 @@ class QueryCorpResultDTO:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this QueryCorpResultDTO.
+        r"""Sets the basic_info of this QueryCorpResultDTO.
 
         :param basic_info: The basic_info of this QueryCorpResultDTO.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
@@ -89,7 +89,7 @@ class QueryCorpResultDTO:
 
     @property
     def admin_info(self):
-        """Gets the admin_info of this QueryCorpResultDTO.
+        r"""Gets the admin_info of this QueryCorpResultDTO.
 
         :return: The admin_info of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
@@ -98,7 +98,7 @@ class QueryCorpResultDTO:
 
     @admin_info.setter
     def admin_info(self, admin_info):
-        """Sets the admin_info of this QueryCorpResultDTO.
+        r"""Sets the admin_info of this QueryCorpResultDTO.
 
         :param admin_info: The admin_info of this QueryCorpResultDTO.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
@@ -107,7 +107,7 @@ class QueryCorpResultDTO:
 
     @property
     def res_info(self):
-        """Gets the res_info of this QueryCorpResultDTO.
+        r"""Gets the res_info of this QueryCorpResultDTO.
 
         :return: The res_info of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
@@ -116,7 +116,7 @@ class QueryCorpResultDTO:
 
     @res_info.setter
     def res_info(self, res_info):
-        """Sets the res_info of this QueryCorpResultDTO.
+        r"""Sets the res_info of this QueryCorpResultDTO.
 
         :param res_info: The res_info of this QueryCorpResultDTO.
         :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
@@ -125,7 +125,7 @@ class QueryCorpResultDTO:
 
     @property
     def group_dto(self):
-        """Gets the group_dto of this QueryCorpResultDTO.
+        r"""Gets the group_dto of this QueryCorpResultDTO.
 
         :return: The group_dto of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
@@ -134,7 +134,7 @@ class QueryCorpResultDTO:
 
     @group_dto.setter
     def group_dto(self, group_dto):
-        """Sets the group_dto of this QueryCorpResultDTO.
+        r"""Sets the group_dto of this QueryCorpResultDTO.
 
         :param group_dto: The group_dto of this QueryCorpResultDTO.
         :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
@@ -143,7 +143,7 @@ class QueryCorpResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryCorpResultDTO.
+        r"""Gets the id of this QueryCorpResultDTO.
 
         企业id。
 
@@ -154,7 +154,7 @@ class QueryCorpResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryCorpResultDTO.
+        r"""Sets the id of this QueryCorpResultDTO.
 
         企业id。
 

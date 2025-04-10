@@ -26,7 +26,7 @@ class ListAssetCategoryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAssetCategoryResponse
+        r"""ListAssetCategoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAssetCategoryResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAssetCategoryResponse.
+        r"""Gets the body of this ListAssetCategoryResponse.
 
         分类返回值
 
@@ -55,7 +55,7 @@ class ListAssetCategoryResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAssetCategoryResponse.
+        r"""Sets the body of this ListAssetCategoryResponse.
 
         分类返回值
 

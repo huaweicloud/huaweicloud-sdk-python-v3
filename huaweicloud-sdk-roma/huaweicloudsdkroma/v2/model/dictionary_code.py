@@ -23,7 +23,7 @@ class DictionaryCode:
     }
 
     def __init__(self):
-        """DictionaryCode
+        r"""DictionaryCode
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class IncidentEnvironment:
     }
 
     def __init__(self, vendor_type=None, domain_id=None, region_id=None, project_id=None):
-        """IncidentEnvironment
+        r"""IncidentEnvironment
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IncidentEnvironment:
 
     @property
     def vendor_type(self):
-        """Gets the vendor_type of this IncidentEnvironment.
+        r"""Gets the vendor_type of this IncidentEnvironment.
 
         The name, display only
 
@@ -75,7 +75,7 @@ class IncidentEnvironment:
 
     @vendor_type.setter
     def vendor_type(self, vendor_type):
-        """Sets the vendor_type of this IncidentEnvironment.
+        r"""Sets the vendor_type of this IncidentEnvironment.
 
         The name, display only
 
@@ -86,7 +86,7 @@ class IncidentEnvironment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IncidentEnvironment.
+        r"""Gets the domain_id of this IncidentEnvironment.
 
         Id value
 
@@ -97,7 +97,7 @@ class IncidentEnvironment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IncidentEnvironment.
+        r"""Sets the domain_id of this IncidentEnvironment.
 
         Id value
 
@@ -108,7 +108,7 @@ class IncidentEnvironment:
 
     @property
     def region_id(self):
-        """Gets the region_id of this IncidentEnvironment.
+        r"""Gets the region_id of this IncidentEnvironment.
 
         Id value
 
@@ -119,7 +119,7 @@ class IncidentEnvironment:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this IncidentEnvironment.
+        r"""Sets the region_id of this IncidentEnvironment.
 
         Id value
 
@@ -130,7 +130,7 @@ class IncidentEnvironment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IncidentEnvironment.
+        r"""Gets the project_id of this IncidentEnvironment.
 
         Id value
 
@@ -141,7 +141,7 @@ class IncidentEnvironment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IncidentEnvironment.
+        r"""Sets the project_id of this IncidentEnvironment.
 
         Id value
 

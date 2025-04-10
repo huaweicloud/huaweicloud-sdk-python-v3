@@ -31,7 +31,7 @@ class TraceTopologyLineInfo:
     }
 
     def __init__(self, start_time=None, time_used=None, argument=None, event_id=None):
-        """TraceTopologyLineInfo
+        r"""TraceTopologyLineInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TraceTopologyLineInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TraceTopologyLineInfo.
+        r"""Gets the start_time of this TraceTopologyLineInfo.
 
         开始时间。
 
@@ -75,7 +75,7 @@ class TraceTopologyLineInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TraceTopologyLineInfo.
+        r"""Sets the start_time of this TraceTopologyLineInfo.
 
         开始时间。
 
@@ -86,7 +86,7 @@ class TraceTopologyLineInfo:
 
     @property
     def time_used(self):
-        """Gets the time_used of this TraceTopologyLineInfo.
+        r"""Gets the time_used of this TraceTopologyLineInfo.
 
         耗时。
 
@@ -97,7 +97,7 @@ class TraceTopologyLineInfo:
 
     @time_used.setter
     def time_used(self, time_used):
-        """Sets the time_used of this TraceTopologyLineInfo.
+        r"""Sets the time_used of this TraceTopologyLineInfo.
 
         耗时。
 
@@ -108,7 +108,7 @@ class TraceTopologyLineInfo:
 
     @property
     def argument(self):
-        """Gets the argument of this TraceTopologyLineInfo.
+        r"""Gets the argument of this TraceTopologyLineInfo.
 
         参数信息，比如调用的url信息等。
 
@@ -119,7 +119,7 @@ class TraceTopologyLineInfo:
 
     @argument.setter
     def argument(self, argument):
-        """Sets the argument of this TraceTopologyLineInfo.
+        r"""Sets the argument of this TraceTopologyLineInfo.
 
         参数信息，比如调用的url信息等。
 
@@ -130,7 +130,7 @@ class TraceTopologyLineInfo:
 
     @property
     def event_id(self):
-        """Gets the event_id of this TraceTopologyLineInfo.
+        r"""Gets the event_id of this TraceTopologyLineInfo.
 
         event的id。
 
@@ -141,7 +141,7 @@ class TraceTopologyLineInfo:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this TraceTopologyLineInfo.
+        r"""Sets the event_id of this TraceTopologyLineInfo.
 
         event的id。
 

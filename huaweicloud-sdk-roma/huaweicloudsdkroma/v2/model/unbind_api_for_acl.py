@@ -47,7 +47,7 @@ class UnbindApiForAcl:
     }
 
     def __init__(self, auth_type=None, run_env_name=None, group_name=None, publish_id=None, group_id=None, name=None, remark=None, run_env_id=None, id=None, req_uri=None, type=None, acl_name=None):
-        """UnbindApiForAcl
+        r"""UnbindApiForAcl
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class UnbindApiForAcl:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this UnbindApiForAcl.
+        r"""Gets the auth_type of this UnbindApiForAcl.
 
         API的认证方式
 
@@ -131,7 +131,7 @@ class UnbindApiForAcl:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this UnbindApiForAcl.
+        r"""Sets the auth_type of this UnbindApiForAcl.
 
         API的认证方式
 
@@ -142,7 +142,7 @@ class UnbindApiForAcl:
 
     @property
     def run_env_name(self):
-        """Gets the run_env_name of this UnbindApiForAcl.
+        r"""Gets the run_env_name of this UnbindApiForAcl.
 
         发布的环境名
 
@@ -153,7 +153,7 @@ class UnbindApiForAcl:
 
     @run_env_name.setter
     def run_env_name(self, run_env_name):
-        """Sets the run_env_name of this UnbindApiForAcl.
+        r"""Sets the run_env_name of this UnbindApiForAcl.
 
         发布的环境名
 
@@ -164,7 +164,7 @@ class UnbindApiForAcl:
 
     @property
     def group_name(self):
-        """Gets the group_name of this UnbindApiForAcl.
+        r"""Gets the group_name of this UnbindApiForAcl.
 
         API所属分组的名称
 
@@ -175,7 +175,7 @@ class UnbindApiForAcl:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UnbindApiForAcl.
+        r"""Sets the group_name of this UnbindApiForAcl.
 
         API所属分组的名称
 
@@ -186,7 +186,7 @@ class UnbindApiForAcl:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this UnbindApiForAcl.
+        r"""Gets the publish_id of this UnbindApiForAcl.
 
         发布记录的编号
 
@@ -197,7 +197,7 @@ class UnbindApiForAcl:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this UnbindApiForAcl.
+        r"""Sets the publish_id of this UnbindApiForAcl.
 
         发布记录的编号
 
@@ -208,7 +208,7 @@ class UnbindApiForAcl:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UnbindApiForAcl.
+        r"""Gets the group_id of this UnbindApiForAcl.
 
         API所属分组的编号
 
@@ -219,7 +219,7 @@ class UnbindApiForAcl:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UnbindApiForAcl.
+        r"""Sets the group_id of this UnbindApiForAcl.
 
         API所属分组的编号
 
@@ -230,7 +230,7 @@ class UnbindApiForAcl:
 
     @property
     def name(self):
-        """Gets the name of this UnbindApiForAcl.
+        r"""Gets the name of this UnbindApiForAcl.
 
         API名称
 
@@ -241,7 +241,7 @@ class UnbindApiForAcl:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UnbindApiForAcl.
+        r"""Sets the name of this UnbindApiForAcl.
 
         API名称
 
@@ -252,7 +252,7 @@ class UnbindApiForAcl:
 
     @property
     def remark(self):
-        """Gets the remark of this UnbindApiForAcl.
+        r"""Gets the remark of this UnbindApiForAcl.
 
         API描述
 
@@ -263,7 +263,7 @@ class UnbindApiForAcl:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UnbindApiForAcl.
+        r"""Sets the remark of this UnbindApiForAcl.
 
         API描述
 
@@ -274,7 +274,7 @@ class UnbindApiForAcl:
 
     @property
     def run_env_id(self):
-        """Gets the run_env_id of this UnbindApiForAcl.
+        r"""Gets the run_env_id of this UnbindApiForAcl.
 
         发布的环境id
 
@@ -285,7 +285,7 @@ class UnbindApiForAcl:
 
     @run_env_id.setter
     def run_env_id(self, run_env_id):
-        """Sets the run_env_id of this UnbindApiForAcl.
+        r"""Sets the run_env_id of this UnbindApiForAcl.
 
         发布的环境id
 
@@ -296,7 +296,7 @@ class UnbindApiForAcl:
 
     @property
     def id(self):
-        """Gets the id of this UnbindApiForAcl.
+        r"""Gets the id of this UnbindApiForAcl.
 
         API编号
 
@@ -307,7 +307,7 @@ class UnbindApiForAcl:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnbindApiForAcl.
+        r"""Sets the id of this UnbindApiForAcl.
 
         API编号
 
@@ -318,7 +318,7 @@ class UnbindApiForAcl:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this UnbindApiForAcl.
+        r"""Gets the req_uri of this UnbindApiForAcl.
 
         API的请求地址
 
@@ -329,7 +329,7 @@ class UnbindApiForAcl:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this UnbindApiForAcl.
+        r"""Sets the req_uri of this UnbindApiForAcl.
 
         API的请求地址
 
@@ -340,7 +340,7 @@ class UnbindApiForAcl:
 
     @property
     def type(self):
-        """Gets the type of this UnbindApiForAcl.
+        r"""Gets the type of this UnbindApiForAcl.
 
         API类型
 
@@ -351,7 +351,7 @@ class UnbindApiForAcl:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UnbindApiForAcl.
+        r"""Sets the type of this UnbindApiForAcl.
 
         API类型
 
@@ -362,7 +362,7 @@ class UnbindApiForAcl:
 
     @property
     def acl_name(self):
-        """Gets the acl_name of this UnbindApiForAcl.
+        r"""Gets the acl_name of this UnbindApiForAcl.
 
         绑定的其他同类型的ACL策略名称
 
@@ -373,7 +373,7 @@ class UnbindApiForAcl:
 
     @acl_name.setter
     def acl_name(self, acl_name):
-        """Sets the acl_name of this UnbindApiForAcl.
+        r"""Sets the acl_name of this UnbindApiForAcl.
 
         绑定的其他同类型的ACL策略名称
 

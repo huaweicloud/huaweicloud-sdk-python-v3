@@ -27,7 +27,7 @@ class RetryTaskGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """RetryTaskGroupRequest
+        r"""RetryTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RetryTaskGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this RetryTaskGroupRequest.
+        r"""Gets the group_id of this RetryTaskGroupRequest.
 
         任务组id
 
@@ -60,7 +60,7 @@ class RetryTaskGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this RetryTaskGroupRequest.
+        r"""Sets the group_id of this RetryTaskGroupRequest.
 
         任务组id
 
@@ -71,7 +71,7 @@ class RetryTaskGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this RetryTaskGroupRequest.
+        r"""Gets the body of this RetryTaskGroupRequest.
 
         :return: The body of this RetryTaskGroupRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.RetryTaskGroupReq`
@@ -80,7 +80,7 @@ class RetryTaskGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RetryTaskGroupRequest.
+        r"""Sets the body of this RetryTaskGroupRequest.
 
         :param body: The body of this RetryTaskGroupRequest.
         :type body: :class:`huaweicloudsdkoms.v2.RetryTaskGroupReq`

@@ -25,7 +25,7 @@ class CreateOneDashboardRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOneDashboardRequest
+        r"""CreateOneDashboardRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOneDashboardRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOneDashboardRequest.
+        r"""Gets the body of this CreateOneDashboardRequest.
 
         :return: The body of this CreateOneDashboardRequest.
         :rtype: :class:`huaweicloudsdkces.v2.CreateDashboardRequestBody`
@@ -52,7 +52,7 @@ class CreateOneDashboardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOneDashboardRequest.
+        r"""Sets the body of this CreateOneDashboardRequest.
 
         :param body: The body of this CreateOneDashboardRequest.
         :type body: :class:`huaweicloudsdkces.v2.CreateDashboardRequestBody`

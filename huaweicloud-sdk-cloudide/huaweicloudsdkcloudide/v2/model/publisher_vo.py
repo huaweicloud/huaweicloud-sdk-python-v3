@@ -71,7 +71,7 @@ class PublisherVO:
     }
 
     def __init__(self, code_repo=None, created_time=None, description=None, eamap_info=None, email=None, espase_group=None, extension_count=None, id=None, identifier=None, is_open=None, is_org=None, logo_url=None, member_count=None, name=None, official=None, owners=None, publisher_review=None, role=None, status=None, suite_count=None, support_url=None, system_review=None, updated_time=None, web_url=None):
-        """PublisherVO
+        r"""PublisherVO
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class PublisherVO:
 
     @property
     def code_repo(self):
-        """Gets the code_repo of this PublisherVO.
+        r"""Gets the code_repo of this PublisherVO.
 
         代码地址
 
@@ -215,7 +215,7 @@ class PublisherVO:
 
     @code_repo.setter
     def code_repo(self, code_repo):
-        """Sets the code_repo of this PublisherVO.
+        r"""Sets the code_repo of this PublisherVO.
 
         代码地址
 
@@ -226,7 +226,7 @@ class PublisherVO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this PublisherVO.
+        r"""Gets the created_time of this PublisherVO.
 
         创建时间
 
@@ -237,7 +237,7 @@ class PublisherVO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this PublisherVO.
+        r"""Sets the created_time of this PublisherVO.
 
         创建时间
 
@@ -248,7 +248,7 @@ class PublisherVO:
 
     @property
     def description(self):
-        """Gets the description of this PublisherVO.
+        r"""Gets the description of this PublisherVO.
 
         发布商描述
 
@@ -259,7 +259,7 @@ class PublisherVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublisherVO.
+        r"""Sets the description of this PublisherVO.
 
         发布商描述
 
@@ -270,7 +270,7 @@ class PublisherVO:
 
     @property
     def eamap_info(self):
-        """Gets the eamap_info of this PublisherVO.
+        r"""Gets the eamap_info of this PublisherVO.
 
         EAMAP注册信息
 
@@ -281,7 +281,7 @@ class PublisherVO:
 
     @eamap_info.setter
     def eamap_info(self, eamap_info):
-        """Sets the eamap_info of this PublisherVO.
+        r"""Sets the eamap_info of this PublisherVO.
 
         EAMAP注册信息
 
@@ -292,7 +292,7 @@ class PublisherVO:
 
     @property
     def email(self):
-        """Gets the email of this PublisherVO.
+        r"""Gets the email of this PublisherVO.
 
         邮箱
 
@@ -303,7 +303,7 @@ class PublisherVO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PublisherVO.
+        r"""Sets the email of this PublisherVO.
 
         邮箱
 
@@ -314,7 +314,7 @@ class PublisherVO:
 
     @property
     def espase_group(self):
-        """Gets the espase_group of this PublisherVO.
+        r"""Gets the espase_group of this PublisherVO.
 
         espase交流群号
 
@@ -325,7 +325,7 @@ class PublisherVO:
 
     @espase_group.setter
     def espase_group(self, espase_group):
-        """Sets the espase_group of this PublisherVO.
+        r"""Sets the espase_group of this PublisherVO.
 
         espase交流群号
 
@@ -336,7 +336,7 @@ class PublisherVO:
 
     @property
     def extension_count(self):
-        """Gets the extension_count of this PublisherVO.
+        r"""Gets the extension_count of this PublisherVO.
 
         插件数量
 
@@ -347,7 +347,7 @@ class PublisherVO:
 
     @extension_count.setter
     def extension_count(self, extension_count):
-        """Sets the extension_count of this PublisherVO.
+        r"""Sets the extension_count of this PublisherVO.
 
         插件数量
 
@@ -358,7 +358,7 @@ class PublisherVO:
 
     @property
     def id(self):
-        """Gets the id of this PublisherVO.
+        r"""Gets the id of this PublisherVO.
 
         发布商ID
 
@@ -369,7 +369,7 @@ class PublisherVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublisherVO.
+        r"""Sets the id of this PublisherVO.
 
         发布商ID
 
@@ -380,7 +380,7 @@ class PublisherVO:
 
     @property
     def identifier(self):
-        """Gets the identifier of this PublisherVO.
+        r"""Gets the identifier of this PublisherVO.
 
         唯一标志
 
@@ -391,7 +391,7 @@ class PublisherVO:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this PublisherVO.
+        r"""Sets the identifier of this PublisherVO.
 
         唯一标志
 
@@ -402,7 +402,7 @@ class PublisherVO:
 
     @property
     def is_open(self):
-        """Gets the is_open of this PublisherVO.
+        r"""Gets the is_open of this PublisherVO.
 
         开源发布商,0:非开源; 1:开源;
 
@@ -413,7 +413,7 @@ class PublisherVO:
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this PublisherVO.
+        r"""Sets the is_open of this PublisherVO.
 
         开源发布商,0:非开源; 1:开源;
 
@@ -424,7 +424,7 @@ class PublisherVO:
 
     @property
     def is_org(self):
-        """Gets the is_org of this PublisherVO.
+        r"""Gets the is_org of this PublisherVO.
 
         发布商或组织,0:发布商; 1:组织;
 
@@ -435,7 +435,7 @@ class PublisherVO:
 
     @is_org.setter
     def is_org(self, is_org):
-        """Sets the is_org of this PublisherVO.
+        r"""Sets the is_org of this PublisherVO.
 
         发布商或组织,0:发布商; 1:组织;
 
@@ -446,7 +446,7 @@ class PublisherVO:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this PublisherVO.
+        r"""Gets the logo_url of this PublisherVO.
 
         发布商logo
 
@@ -457,7 +457,7 @@ class PublisherVO:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this PublisherVO.
+        r"""Sets the logo_url of this PublisherVO.
 
         发布商logo
 
@@ -468,7 +468,7 @@ class PublisherVO:
 
     @property
     def member_count(self):
-        """Gets the member_count of this PublisherVO.
+        r"""Gets the member_count of this PublisherVO.
 
         成员数量
 
@@ -479,7 +479,7 @@ class PublisherVO:
 
     @member_count.setter
     def member_count(self, member_count):
-        """Sets the member_count of this PublisherVO.
+        r"""Sets the member_count of this PublisherVO.
 
         成员数量
 
@@ -490,7 +490,7 @@ class PublisherVO:
 
     @property
     def name(self):
-        """Gets the name of this PublisherVO.
+        r"""Gets the name of this PublisherVO.
 
         发布商名称
 
@@ -501,7 +501,7 @@ class PublisherVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublisherVO.
+        r"""Sets the name of this PublisherVO.
 
         发布商名称
 
@@ -512,7 +512,7 @@ class PublisherVO:
 
     @property
     def official(self):
-        """Gets the official of this PublisherVO.
+        r"""Gets the official of this PublisherVO.
 
         是否是官方发布商
 
@@ -523,7 +523,7 @@ class PublisherVO:
 
     @official.setter
     def official(self, official):
-        """Sets the official of this PublisherVO.
+        r"""Sets the official of this PublisherVO.
 
         是否是官方发布商
 
@@ -534,7 +534,7 @@ class PublisherVO:
 
     @property
     def owners(self):
-        """Gets the owners of this PublisherVO.
+        r"""Gets the owners of this PublisherVO.
 
         成员角色
 
@@ -545,7 +545,7 @@ class PublisherVO:
 
     @owners.setter
     def owners(self, owners):
-        """Sets the owners of this PublisherVO.
+        r"""Sets the owners of this PublisherVO.
 
         成员角色
 
@@ -556,7 +556,7 @@ class PublisherVO:
 
     @property
     def publisher_review(self):
-        """Gets the publisher_review of this PublisherVO.
+        r"""Gets the publisher_review of this PublisherVO.
 
         是否开启发布商审核,1:开启；0:关闭
 
@@ -567,7 +567,7 @@ class PublisherVO:
 
     @publisher_review.setter
     def publisher_review(self, publisher_review):
-        """Sets the publisher_review of this PublisherVO.
+        r"""Sets the publisher_review of this PublisherVO.
 
         是否开启发布商审核,1:开启；0:关闭
 
@@ -578,7 +578,7 @@ class PublisherVO:
 
     @property
     def role(self):
-        """Gets the role of this PublisherVO.
+        r"""Gets the role of this PublisherVO.
 
         角色
 
@@ -589,7 +589,7 @@ class PublisherVO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this PublisherVO.
+        r"""Sets the role of this PublisherVO.
 
         角色
 
@@ -600,7 +600,7 @@ class PublisherVO:
 
     @property
     def status(self):
-        """Gets the status of this PublisherVO.
+        r"""Gets the status of this PublisherVO.
 
         状态,0:禁用; 1:正常;
 
@@ -611,7 +611,7 @@ class PublisherVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublisherVO.
+        r"""Sets the status of this PublisherVO.
 
         状态,0:禁用; 1:正常;
 
@@ -622,7 +622,7 @@ class PublisherVO:
 
     @property
     def suite_count(self):
-        """Gets the suite_count of this PublisherVO.
+        r"""Gets the suite_count of this PublisherVO.
 
         匹配数量
 
@@ -633,7 +633,7 @@ class PublisherVO:
 
     @suite_count.setter
     def suite_count(self, suite_count):
-        """Sets the suite_count of this PublisherVO.
+        r"""Sets the suite_count of this PublisherVO.
 
         匹配数量
 
@@ -644,7 +644,7 @@ class PublisherVO:
 
     @property
     def support_url(self):
-        """Gets the support_url of this PublisherVO.
+        r"""Gets the support_url of this PublisherVO.
 
         支持地址
 
@@ -655,7 +655,7 @@ class PublisherVO:
 
     @support_url.setter
     def support_url(self, support_url):
-        """Sets the support_url of this PublisherVO.
+        r"""Sets the support_url of this PublisherVO.
 
         支持地址
 
@@ -666,7 +666,7 @@ class PublisherVO:
 
     @property
     def system_review(self):
-        """Gets the system_review of this PublisherVO.
+        r"""Gets the system_review of this PublisherVO.
 
         是否忽略系统审核,1:忽略；0:不忽略
 
@@ -677,7 +677,7 @@ class PublisherVO:
 
     @system_review.setter
     def system_review(self, system_review):
-        """Sets the system_review of this PublisherVO.
+        r"""Sets the system_review of this PublisherVO.
 
         是否忽略系统审核,1:忽略；0:不忽略
 
@@ -688,7 +688,7 @@ class PublisherVO:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this PublisherVO.
+        r"""Gets the updated_time of this PublisherVO.
 
         更新时间
 
@@ -699,7 +699,7 @@ class PublisherVO:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this PublisherVO.
+        r"""Sets the updated_time of this PublisherVO.
 
         更新时间
 
@@ -710,7 +710,7 @@ class PublisherVO:
 
     @property
     def web_url(self):
-        """Gets the web_url of this PublisherVO.
+        r"""Gets the web_url of this PublisherVO.
 
         官网地址
 
@@ -721,7 +721,7 @@ class PublisherVO:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this PublisherVO.
+        r"""Sets the web_url of this PublisherVO.
 
         官网地址
 

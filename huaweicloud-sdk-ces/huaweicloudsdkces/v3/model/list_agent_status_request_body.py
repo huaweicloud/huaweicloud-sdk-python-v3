@@ -31,7 +31,7 @@ class ListAgentStatusRequestBody:
     }
 
     def __init__(self, instance_ids=None, uniagent_status=None, extension_name=None, extension_status=None):
-        """ListAgentStatusRequestBody
+        r"""ListAgentStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAgentStatusRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ListAgentStatusRequestBody.
+        r"""Gets the instance_ids of this ListAgentStatusRequestBody.
 
         机器实例id列表
 
@@ -74,7 +74,7 @@ class ListAgentStatusRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ListAgentStatusRequestBody.
+        r"""Sets the instance_ids of this ListAgentStatusRequestBody.
 
         机器实例id列表
 
@@ -85,7 +85,7 @@ class ListAgentStatusRequestBody:
 
     @property
     def uniagent_status(self):
-        """Gets the uniagent_status of this ListAgentStatusRequestBody.
+        r"""Gets the uniagent_status of this ListAgentStatusRequestBody.
 
         uniagent运行状态，不传查所有状态,none无，running运行中，silent静默中，unknown故障
 
@@ -96,7 +96,7 @@ class ListAgentStatusRequestBody:
 
     @uniagent_status.setter
     def uniagent_status(self, uniagent_status):
-        """Sets the uniagent_status of this ListAgentStatusRequestBody.
+        r"""Sets the uniagent_status of this ListAgentStatusRequestBody.
 
         uniagent运行状态，不传查所有状态,none无，running运行中，silent静默中，unknown故障
 
@@ -107,7 +107,7 @@ class ListAgentStatusRequestBody:
 
     @property
     def extension_name(self):
-        """Gets the extension_name of this ListAgentStatusRequestBody.
+        r"""Gets the extension_name of this ListAgentStatusRequestBody.
 
         插件名称，不传查所有插件，目前仅支持telescope
 
@@ -118,7 +118,7 @@ class ListAgentStatusRequestBody:
 
     @extension_name.setter
     def extension_name(self, extension_name):
-        """Sets the extension_name of this ListAgentStatusRequestBody.
+        r"""Sets the extension_name of this ListAgentStatusRequestBody.
 
         插件名称，不传查所有插件，目前仅支持telescope
 
@@ -129,7 +129,7 @@ class ListAgentStatusRequestBody:
 
     @property
     def extension_status(self):
-        """Gets the extension_status of this ListAgentStatusRequestBody.
+        r"""Gets the extension_status of this ListAgentStatusRequestBody.
 
         插件状态，不传查所有状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
 
@@ -140,7 +140,7 @@ class ListAgentStatusRequestBody:
 
     @extension_status.setter
     def extension_status(self, extension_status):
-        """Sets the extension_status of this ListAgentStatusRequestBody.
+        r"""Sets the extension_status of this ListAgentStatusRequestBody.
 
         插件状态，不传查所有状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
 

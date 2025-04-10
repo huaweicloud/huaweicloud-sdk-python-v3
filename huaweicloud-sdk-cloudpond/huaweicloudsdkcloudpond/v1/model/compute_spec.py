@@ -27,7 +27,7 @@ class ComputeSpec:
     }
 
     def __init__(self, flavor_type=None, count=None):
-        """ComputeSpec
+        r"""ComputeSpec
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ComputeSpec:
 
     @property
     def flavor_type(self):
-        """Gets the flavor_type of this ComputeSpec.
+        r"""Gets the flavor_type of this ComputeSpec.
 
         算力规格类型，如C6
 
@@ -59,7 +59,7 @@ class ComputeSpec:
 
     @flavor_type.setter
     def flavor_type(self, flavor_type):
-        """Sets the flavor_type of this ComputeSpec.
+        r"""Sets the flavor_type of this ComputeSpec.
 
         算力规格类型，如C6
 
@@ -70,7 +70,7 @@ class ComputeSpec:
 
     @property
     def count(self):
-        """Gets the count of this ComputeSpec.
+        r"""Gets the count of this ComputeSpec.
 
         计算单元设备数
 
@@ -81,7 +81,7 @@ class ComputeSpec:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ComputeSpec.
+        r"""Sets the count of this ComputeSpec.
 
         计算单元设备数
 

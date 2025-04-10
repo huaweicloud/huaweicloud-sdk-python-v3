@@ -27,7 +27,7 @@ class OrgPropertyDTO:
     }
 
     def __init__(self, property_key=None, property_value=None):
-        """OrgPropertyDTO
+        r"""OrgPropertyDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrgPropertyDTO:
 
     @property
     def property_key(self):
-        """Gets the property_key of this OrgPropertyDTO.
+        r"""Gets the property_key of this OrgPropertyDTO.
 
         配置项key。 开通本地录制功能，参数填写：enableClientRecord。 
 
@@ -61,7 +61,7 @@ class OrgPropertyDTO:
 
     @property_key.setter
     def property_key(self, property_key):
-        """Sets the property_key of this OrgPropertyDTO.
+        r"""Sets the property_key of this OrgPropertyDTO.
 
         配置项key。 开通本地录制功能，参数填写：enableClientRecord。 
 
@@ -72,7 +72,7 @@ class OrgPropertyDTO:
 
     @property
     def property_value(self):
-        """Gets the property_value of this OrgPropertyDTO.
+        r"""Gets the property_value of this OrgPropertyDTO.
 
         配置项值。 开通本地录制功能，参数填写：true。 
 
@@ -83,7 +83,7 @@ class OrgPropertyDTO:
 
     @property_value.setter
     def property_value(self, property_value):
-        """Sets the property_value of this OrgPropertyDTO.
+        r"""Sets the property_value of this OrgPropertyDTO.
 
         配置项值。 开通本地录制功能，参数填写：true。 
 

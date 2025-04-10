@@ -39,7 +39,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
     }
 
     def __init__(self, instance_id=None, start_at=None, end_at=None, datastore_type=None, db_name=None, x_language=None, offset=None, limit=None):
-        """ExportSlowSqlTemplatesDetailsRequest
+        r"""ExportSlowSqlTemplatesDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the instance_id of this ExportSlowSqlTemplatesDetailsRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the instance_id of this ExportSlowSqlTemplatesDetailsRequest.
 
         实例ID。
 
@@ -110,7 +110,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the start_at of this ExportSlowSqlTemplatesDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -121,7 +121,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the start_at of this ExportSlowSqlTemplatesDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -132,7 +132,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the end_at of this ExportSlowSqlTemplatesDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -143,7 +143,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the end_at of this ExportSlowSqlTemplatesDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -154,7 +154,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the datastore_type of this ExportSlowSqlTemplatesDetailsRequest.
 
         数据库类型。支持MySQL和GaussDB(for MySQL)。
 
@@ -165,7 +165,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the datastore_type of this ExportSlowSqlTemplatesDetailsRequest.
 
         数据库类型。支持MySQL和GaussDB(for MySQL)。
 
@@ -176,7 +176,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the db_name of this ExportSlowSqlTemplatesDetailsRequest.
 
         数据库名称。
 
@@ -187,7 +187,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the db_name of this ExportSlowSqlTemplatesDetailsRequest.
 
         数据库名称。
 
@@ -198,7 +198,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the x_language of this ExportSlowSqlTemplatesDetailsRequest.
 
         请求语言类型。
 
@@ -209,7 +209,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the x_language of this ExportSlowSqlTemplatesDetailsRequest.
 
         请求语言类型。
 
@@ -220,7 +220,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the offset of this ExportSlowSqlTemplatesDetailsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -231,7 +231,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the offset of this ExportSlowSqlTemplatesDetailsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -242,7 +242,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Gets the limit of this ExportSlowSqlTemplatesDetailsRequest.
 
         每页记录数，默认为20，最大取值100。
 
@@ -253,7 +253,7 @@ class ExportSlowSqlTemplatesDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExportSlowSqlTemplatesDetailsRequest.
+        r"""Sets the limit of this ExportSlowSqlTemplatesDetailsRequest.
 
         每页记录数，默认为20，最大取值100。
 

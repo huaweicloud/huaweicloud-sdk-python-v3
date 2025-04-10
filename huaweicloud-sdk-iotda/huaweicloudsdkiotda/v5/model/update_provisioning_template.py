@@ -27,7 +27,7 @@ class UpdateProvisioningTemplate:
     }
 
     def __init__(self, description=None, template_body=None):
-        """UpdateProvisioningTemplate
+        r"""UpdateProvisioningTemplate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateProvisioningTemplate:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProvisioningTemplate.
+        r"""Gets the description of this UpdateProvisioningTemplate.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -61,7 +61,7 @@ class UpdateProvisioningTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProvisioningTemplate.
+        r"""Sets the description of this UpdateProvisioningTemplate.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -72,7 +72,7 @@ class UpdateProvisioningTemplate:
 
     @property
     def template_body(self):
-        """Gets the template_body of this UpdateProvisioningTemplate.
+        r"""Gets the template_body of this UpdateProvisioningTemplate.
 
         :return: The template_body of this UpdateProvisioningTemplate.
         :rtype: :class:`huaweicloudsdkiotda.v5.ProvisioningTemplateBody`
@@ -81,7 +81,7 @@ class UpdateProvisioningTemplate:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this UpdateProvisioningTemplate.
+        r"""Sets the template_body of this UpdateProvisioningTemplate.
 
         :param template_body: The template_body of this UpdateProvisioningTemplate.
         :type template_body: :class:`huaweicloudsdkiotda.v5.ProvisioningTemplateBody`

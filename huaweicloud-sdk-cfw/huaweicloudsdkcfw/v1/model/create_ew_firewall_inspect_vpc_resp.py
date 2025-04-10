@@ -27,7 +27,7 @@ class CreateEWFirewallInspectVpcResp:
     }
 
     def __init__(self, vpc_id=None, subnet_ids=None):
-        """CreateEWFirewallInspectVpcResp
+        r"""CreateEWFirewallInspectVpcResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateEWFirewallInspectVpcResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateEWFirewallInspectVpcResp.
+        r"""Gets the vpc_id of this CreateEWFirewallInspectVpcResp.
 
         引流VPC的ID
 
@@ -61,7 +61,7 @@ class CreateEWFirewallInspectVpcResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateEWFirewallInspectVpcResp.
+        r"""Sets the vpc_id of this CreateEWFirewallInspectVpcResp.
 
         引流VPC的ID
 
@@ -72,7 +72,7 @@ class CreateEWFirewallInspectVpcResp:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this CreateEWFirewallInspectVpcResp.
+        r"""Gets the subnet_ids of this CreateEWFirewallInspectVpcResp.
 
         创建的引流VPC的子网ID列表
 
@@ -83,7 +83,7 @@ class CreateEWFirewallInspectVpcResp:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this CreateEWFirewallInspectVpcResp.
+        r"""Sets the subnet_ids of this CreateEWFirewallInspectVpcResp.
 
         创建的引流VPC的子网ID列表
 

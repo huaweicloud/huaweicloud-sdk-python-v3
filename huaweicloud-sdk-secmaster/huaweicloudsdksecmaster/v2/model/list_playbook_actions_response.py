@@ -38,7 +38,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, total=None, size=None, page=None, data=None, x_request_id=None):
-        """ListPlaybookActionsResponse
+        r"""ListPlaybookActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListPlaybookActionsResponse.
+        r"""Gets the code of this ListPlaybookActionsResponse.
 
         错误码
 
@@ -97,7 +97,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListPlaybookActionsResponse.
+        r"""Sets the code of this ListPlaybookActionsResponse.
 
         错误码
 
@@ -108,7 +108,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListPlaybookActionsResponse.
+        r"""Gets the message of this ListPlaybookActionsResponse.
 
         错误信息
 
@@ -119,7 +119,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListPlaybookActionsResponse.
+        r"""Sets the message of this ListPlaybookActionsResponse.
 
         错误信息
 
@@ -130,7 +130,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPlaybookActionsResponse.
+        r"""Gets the total of this ListPlaybookActionsResponse.
 
         总数
 
@@ -141,7 +141,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPlaybookActionsResponse.
+        r"""Sets the total of this ListPlaybookActionsResponse.
 
         总数
 
@@ -152,7 +152,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListPlaybookActionsResponse.
+        r"""Gets the size of this ListPlaybookActionsResponse.
 
         分页大小
 
@@ -163,7 +163,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListPlaybookActionsResponse.
+        r"""Sets the size of this ListPlaybookActionsResponse.
 
         分页大小
 
@@ -174,7 +174,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListPlaybookActionsResponse.
+        r"""Gets the page of this ListPlaybookActionsResponse.
 
         当前页数
 
@@ -185,7 +185,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListPlaybookActionsResponse.
+        r"""Sets the page of this ListPlaybookActionsResponse.
 
         当前页数
 
@@ -196,7 +196,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPlaybookActionsResponse.
+        r"""Gets the data of this ListPlaybookActionsResponse.
 
         剧本动作列表信息
 
@@ -207,7 +207,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPlaybookActionsResponse.
+        r"""Sets the data of this ListPlaybookActionsResponse.
 
         剧本动作列表信息
 
@@ -218,7 +218,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlaybookActionsResponse.
+        r"""Gets the x_request_id of this ListPlaybookActionsResponse.
 
         :return: The x_request_id of this ListPlaybookActionsResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class ListPlaybookActionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlaybookActionsResponse.
+        r"""Sets the x_request_id of this ListPlaybookActionsResponse.
 
         :param x_request_id: The x_request_id of this ListPlaybookActionsResponse.
         :type x_request_id: str

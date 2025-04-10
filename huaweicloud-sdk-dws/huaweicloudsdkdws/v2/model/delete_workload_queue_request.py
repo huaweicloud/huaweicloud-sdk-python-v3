@@ -29,7 +29,7 @@ class DeleteWorkloadQueueRequest:
     }
 
     def __init__(self, cluster_id=None, logical_cluster_name=None, workload_queue_name=None):
-        """DeleteWorkloadQueueRequest
+        r"""DeleteWorkloadQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteWorkloadQueueRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteWorkloadQueueRequest.
+        r"""Gets the cluster_id of this DeleteWorkloadQueueRequest.
 
         集群ID。
 
@@ -66,7 +66,7 @@ class DeleteWorkloadQueueRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteWorkloadQueueRequest.
+        r"""Sets the cluster_id of this DeleteWorkloadQueueRequest.
 
         集群ID。
 
@@ -77,7 +77,7 @@ class DeleteWorkloadQueueRequest:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this DeleteWorkloadQueueRequest.
+        r"""Gets the logical_cluster_name of this DeleteWorkloadQueueRequest.
 
         逻辑集群名称。逻辑集群模式下该字段必填。
 
@@ -88,7 +88,7 @@ class DeleteWorkloadQueueRequest:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this DeleteWorkloadQueueRequest.
+        r"""Sets the logical_cluster_name of this DeleteWorkloadQueueRequest.
 
         逻辑集群名称。逻辑集群模式下该字段必填。
 
@@ -99,7 +99,7 @@ class DeleteWorkloadQueueRequest:
 
     @property
     def workload_queue_name(self):
-        """Gets the workload_queue_name of this DeleteWorkloadQueueRequest.
+        r"""Gets the workload_queue_name of this DeleteWorkloadQueueRequest.
 
         工作负载队列名称。
 
@@ -110,7 +110,7 @@ class DeleteWorkloadQueueRequest:
 
     @workload_queue_name.setter
     def workload_queue_name(self, workload_queue_name):
-        """Sets the workload_queue_name of this DeleteWorkloadQueueRequest.
+        r"""Sets the workload_queue_name of this DeleteWorkloadQueueRequest.
 
         工作负载队列名称。
 

@@ -25,7 +25,7 @@ class CcrulesListInfoActionDetail:
     }
 
     def __init__(self, response=None):
-        """CcrulesListInfoActionDetail
+        r"""CcrulesListInfoActionDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CcrulesListInfoActionDetail:
 
     @property
     def response(self):
-        """Gets the response of this CcrulesListInfoActionDetail.
+        r"""Gets the response of this CcrulesListInfoActionDetail.
 
         :return: The response of this CcrulesListInfoActionDetail.
         :rtype: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoActionDetailResponse`
@@ -52,7 +52,7 @@ class CcrulesListInfoActionDetail:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this CcrulesListInfoActionDetail.
+        r"""Sets the response of this CcrulesListInfoActionDetail.
 
         :param response: The response of this CcrulesListInfoActionDetail.
         :type response: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoActionDetailResponse`

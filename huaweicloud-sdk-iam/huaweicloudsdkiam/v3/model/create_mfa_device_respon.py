@@ -27,7 +27,7 @@ class CreateMfaDeviceRespon:
     }
 
     def __init__(self, serial_number=None, base32_string_seed=None):
-        """CreateMfaDeviceRespon
+        r"""CreateMfaDeviceRespon
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateMfaDeviceRespon:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this CreateMfaDeviceRespon.
+        r"""Gets the serial_number of this CreateMfaDeviceRespon.
 
         MFA设备序列号。
 
@@ -59,7 +59,7 @@ class CreateMfaDeviceRespon:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this CreateMfaDeviceRespon.
+        r"""Sets the serial_number of this CreateMfaDeviceRespon.
 
         MFA设备序列号。
 
@@ -70,7 +70,7 @@ class CreateMfaDeviceRespon:
 
     @property
     def base32_string_seed(self):
-        """Gets the base32_string_seed of this CreateMfaDeviceRespon.
+        r"""Gets the base32_string_seed of this CreateMfaDeviceRespon.
 
         密钥信息，用于第三方生成图片验证码。
 
@@ -81,7 +81,7 @@ class CreateMfaDeviceRespon:
 
     @base32_string_seed.setter
     def base32_string_seed(self, base32_string_seed):
-        """Sets the base32_string_seed of this CreateMfaDeviceRespon.
+        r"""Sets the base32_string_seed of this CreateMfaDeviceRespon.
 
         密钥信息，用于第三方生成图片验证码。
 

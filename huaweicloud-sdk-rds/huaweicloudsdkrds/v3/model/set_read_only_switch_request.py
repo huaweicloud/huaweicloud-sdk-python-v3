@@ -29,7 +29,7 @@ class SetReadOnlySwitchRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetReadOnlySwitchRequest
+        r"""SetReadOnlySwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetReadOnlySwitchRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetReadOnlySwitchRequest.
+        r"""Gets the x_language of this SetReadOnlySwitchRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SetReadOnlySwitchRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetReadOnlySwitchRequest.
+        r"""Sets the x_language of this SetReadOnlySwitchRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SetReadOnlySwitchRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetReadOnlySwitchRequest.
+        r"""Gets the instance_id of this SetReadOnlySwitchRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetReadOnlySwitchRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetReadOnlySwitchRequest.
+        r"""Sets the instance_id of this SetReadOnlySwitchRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetReadOnlySwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetReadOnlySwitchRequest.
+        r"""Gets the body of this SetReadOnlySwitchRequest.
 
         :return: The body of this SetReadOnlySwitchRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.MysqlReadOnlySwitch`
@@ -109,7 +109,7 @@ class SetReadOnlySwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetReadOnlySwitchRequest.
+        r"""Sets the body of this SetReadOnlySwitchRequest.
 
         :param body: The body of this SetReadOnlySwitchRequest.
         :type body: :class:`huaweicloudsdkrds.v3.MysqlReadOnlySwitch`

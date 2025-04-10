@@ -95,7 +95,7 @@ class CreateDesktopReq:
     }
 
     def __init__(self, desktop_type=None, availability_zone=None, product_id=None, flavor_id=None, share_resource_sku=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_id=None, enterprise_project_id=None, order_id=None, ou_name=None, vpc_id=None, subnet_ids=None, tags=None, scheduler_hints=None, desktop_isv=None, access_mode=None, apply_shared_vpc_dedicated_param=None, dedicated_subnets=None, eip=None, adn=None, exclusive_host_id=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, root_resource_ids=None, inst_info_ids=None):
-        """CreateDesktopReq
+        r"""CreateDesktopReq
 
         The model defined in huaweicloud sdk
 
@@ -283,7 +283,7 @@ class CreateDesktopReq:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this CreateDesktopReq.
+        r"""Gets the desktop_type of this CreateDesktopReq.
 
         云桌面类型。 - DEDICATED：专属桌面，单用户。 - SHARED: 多用户共享桌面。
 
@@ -294,7 +294,7 @@ class CreateDesktopReq:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this CreateDesktopReq.
+        r"""Sets the desktop_type of this CreateDesktopReq.
 
         云桌面类型。 - DEDICATED：专属桌面，单用户。 - SHARED: 多用户共享桌面。
 
@@ -305,7 +305,7 @@ class CreateDesktopReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateDesktopReq.
+        r"""Gets the availability_zone of this CreateDesktopReq.
 
         可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
 
@@ -316,7 +316,7 @@ class CreateDesktopReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateDesktopReq.
+        r"""Sets the availability_zone of this CreateDesktopReq.
 
         可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
 
@@ -327,7 +327,7 @@ class CreateDesktopReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateDesktopReq.
+        r"""Gets the product_id of this CreateDesktopReq.
 
         套餐ID。
 
@@ -338,7 +338,7 @@ class CreateDesktopReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateDesktopReq.
+        r"""Sets the product_id of this CreateDesktopReq.
 
         套餐ID。
 
@@ -349,7 +349,7 @@ class CreateDesktopReq:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateDesktopReq.
+        r"""Gets the flavor_id of this CreateDesktopReq.
 
         套餐flavorID。
 
@@ -360,7 +360,7 @@ class CreateDesktopReq:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateDesktopReq.
+        r"""Sets the flavor_id of this CreateDesktopReq.
 
         套餐flavorID。
 
@@ -371,7 +371,7 @@ class CreateDesktopReq:
 
     @property
     def share_resource_sku(self):
-        """Gets the share_resource_sku of this CreateDesktopReq.
+        r"""Gets the share_resource_sku of this CreateDesktopReq.
 
         桌面协同资源SKU码
 
@@ -382,7 +382,7 @@ class CreateDesktopReq:
 
     @share_resource_sku.setter
     def share_resource_sku(self, share_resource_sku):
-        """Sets the share_resource_sku of this CreateDesktopReq.
+        r"""Sets the share_resource_sku of this CreateDesktopReq.
 
         桌面协同资源SKU码
 
@@ -393,7 +393,7 @@ class CreateDesktopReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this CreateDesktopReq.
+        r"""Gets the image_type of this CreateDesktopReq.
 
         镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
 
@@ -404,7 +404,7 @@ class CreateDesktopReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this CreateDesktopReq.
+        r"""Sets the image_type of this CreateDesktopReq.
 
         镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
 
@@ -415,7 +415,7 @@ class CreateDesktopReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CreateDesktopReq.
+        r"""Gets the image_id of this CreateDesktopReq.
 
         镜像ID，用于私有镜像创建桌面场景，配合product_id使用。
 
@@ -426,7 +426,7 @@ class CreateDesktopReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CreateDesktopReq.
+        r"""Sets the image_id of this CreateDesktopReq.
 
         镜像ID，用于私有镜像创建桌面场景，配合product_id使用。
 
@@ -437,7 +437,7 @@ class CreateDesktopReq:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateDesktopReq.
+        r"""Gets the root_volume of this CreateDesktopReq.
 
         :return: The root_volume of this CreateDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Volume`
@@ -446,7 +446,7 @@ class CreateDesktopReq:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateDesktopReq.
+        r"""Sets the root_volume of this CreateDesktopReq.
 
         :param root_volume: The root_volume of this CreateDesktopReq.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.Volume`
@@ -455,7 +455,7 @@ class CreateDesktopReq:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this CreateDesktopReq.
+        r"""Gets the data_volumes of this CreateDesktopReq.
 
         数据盘列表。
 
@@ -466,7 +466,7 @@ class CreateDesktopReq:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this CreateDesktopReq.
+        r"""Sets the data_volumes of this CreateDesktopReq.
 
         数据盘列表。
 
@@ -477,7 +477,7 @@ class CreateDesktopReq:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateDesktopReq.
+        r"""Gets the nics of this CreateDesktopReq.
 
         桌面对应的网卡信息，如果不指定则使用默认网卡。
 
@@ -488,7 +488,7 @@ class CreateDesktopReq:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateDesktopReq.
+        r"""Sets the nics of this CreateDesktopReq.
 
         桌面对应的网卡信息，如果不指定则使用默认网卡。
 
@@ -499,7 +499,7 @@ class CreateDesktopReq:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateDesktopReq.
+        r"""Gets the security_groups of this CreateDesktopReq.
 
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
@@ -510,7 +510,7 @@ class CreateDesktopReq:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateDesktopReq.
+        r"""Sets the security_groups of this CreateDesktopReq.
 
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
@@ -521,7 +521,7 @@ class CreateDesktopReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this CreateDesktopReq.
+        r"""Gets the desktops of this CreateDesktopReq.
 
         创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
 
@@ -532,7 +532,7 @@ class CreateDesktopReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this CreateDesktopReq.
+        r"""Sets the desktops of this CreateDesktopReq.
 
         创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
 
@@ -543,7 +543,7 @@ class CreateDesktopReq:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this CreateDesktopReq.
+        r"""Gets the desktop_name of this CreateDesktopReq.
 
         搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
 
@@ -554,7 +554,7 @@ class CreateDesktopReq:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this CreateDesktopReq.
+        r"""Sets the desktop_name of this CreateDesktopReq.
 
         搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
 
@@ -565,7 +565,7 @@ class CreateDesktopReq:
 
     @property
     def desktop_ips(self):
-        """Gets the desktop_ips of this CreateDesktopReq.
+        r"""Gets the desktop_ips of this CreateDesktopReq.
 
         桌面指定分配的ip地址列表,最小为0，最大为100。
 
@@ -576,7 +576,7 @@ class CreateDesktopReq:
 
     @desktop_ips.setter
     def desktop_ips(self, desktop_ips):
-        """Sets the desktop_ips of this CreateDesktopReq.
+        r"""Sets the desktop_ips of this CreateDesktopReq.
 
         桌面指定分配的ip地址列表,最小为0，最大为100。
 
@@ -587,7 +587,7 @@ class CreateDesktopReq:
 
     @property
     def size(self):
-        """Gets the size of this CreateDesktopReq.
+        r"""Gets the size of this CreateDesktopReq.
 
         创建不分配用户的桌面的个数，和desktops不能同时生效，搭配desktop_name使用。
 
@@ -598,7 +598,7 @@ class CreateDesktopReq:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateDesktopReq.
+        r"""Sets the size of this CreateDesktopReq.
 
         创建不分配用户的桌面的个数，和desktops不能同时生效，搭配desktop_name使用。
 
@@ -609,7 +609,7 @@ class CreateDesktopReq:
 
     @property
     def email_notification(self):
-        """Gets the email_notification of this CreateDesktopReq.
+        r"""Gets the email_notification of this CreateDesktopReq.
 
         创建成功后是否发送邮件通知桌面用户，默认为true。
 
@@ -620,7 +620,7 @@ class CreateDesktopReq:
 
     @email_notification.setter
     def email_notification(self, email_notification):
-        """Sets the email_notification of this CreateDesktopReq.
+        r"""Sets the email_notification of this CreateDesktopReq.
 
         创建成功后是否发送邮件通知桌面用户，默认为true。
 
@@ -631,7 +631,7 @@ class CreateDesktopReq:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this CreateDesktopReq.
+        r"""Gets the enterprise_id of this CreateDesktopReq.
 
         企业ID，在非对接AD场景首次创建桌面时使用。
 
@@ -642,7 +642,7 @@ class CreateDesktopReq:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this CreateDesktopReq.
+        r"""Sets the enterprise_id of this CreateDesktopReq.
 
         企业ID，在非对接AD场景首次创建桌面时使用。
 
@@ -653,7 +653,7 @@ class CreateDesktopReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDesktopReq.
+        r"""Gets the enterprise_project_id of this CreateDesktopReq.
 
         企业项目ID，默认\"0\"
 
@@ -664,7 +664,7 @@ class CreateDesktopReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDesktopReq.
+        r"""Sets the enterprise_project_id of this CreateDesktopReq.
 
         企业项目ID，默认\"0\"
 
@@ -675,7 +675,7 @@ class CreateDesktopReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateDesktopReq.
+        r"""Gets the order_id of this CreateDesktopReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -686,7 +686,7 @@ class CreateDesktopReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateDesktopReq.
+        r"""Sets the order_id of this CreateDesktopReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -697,7 +697,7 @@ class CreateDesktopReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this CreateDesktopReq.
+        r"""Gets the ou_name of this CreateDesktopReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -708,7 +708,7 @@ class CreateDesktopReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this CreateDesktopReq.
+        r"""Sets the ou_name of this CreateDesktopReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -719,7 +719,7 @@ class CreateDesktopReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateDesktopReq.
+        r"""Gets the vpc_id of this CreateDesktopReq.
 
         在非对接AD场景首次创建桌面时使用。
 
@@ -730,7 +730,7 @@ class CreateDesktopReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateDesktopReq.
+        r"""Sets the vpc_id of this CreateDesktopReq.
 
         在非对接AD场景首次创建桌面时使用。
 
@@ -741,7 +741,7 @@ class CreateDesktopReq:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this CreateDesktopReq.
+        r"""Gets the subnet_ids of this CreateDesktopReq.
 
         在非对接AD场景首次创建桌面时使用。
 
@@ -752,7 +752,7 @@ class CreateDesktopReq:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this CreateDesktopReq.
+        r"""Sets the subnet_ids of this CreateDesktopReq.
 
         在非对接AD场景首次创建桌面时使用。
 
@@ -763,7 +763,7 @@ class CreateDesktopReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDesktopReq.
+        r"""Gets the tags of this CreateDesktopReq.
 
         标签列表。
 
@@ -774,7 +774,7 @@ class CreateDesktopReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDesktopReq.
+        r"""Sets the tags of this CreateDesktopReq.
 
         标签列表。
 
@@ -785,7 +785,7 @@ class CreateDesktopReq:
 
     @property
     def scheduler_hints(self):
-        """Gets the scheduler_hints of this CreateDesktopReq.
+        r"""Gets the scheduler_hints of this CreateDesktopReq.
 
         :return: The scheduler_hints of this CreateDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.WdhParam`
@@ -794,7 +794,7 @@ class CreateDesktopReq:
 
     @scheduler_hints.setter
     def scheduler_hints(self, scheduler_hints):
-        """Sets the scheduler_hints of this CreateDesktopReq.
+        r"""Sets the scheduler_hints of this CreateDesktopReq.
 
         :param scheduler_hints: The scheduler_hints of this CreateDesktopReq.
         :type scheduler_hints: :class:`huaweicloudsdkworkspace.v2.WdhParam`
@@ -803,7 +803,7 @@ class CreateDesktopReq:
 
     @property
     def desktop_isv(self):
-        """Gets the desktop_isv of this CreateDesktopReq.
+        r"""Gets the desktop_isv of this CreateDesktopReq.
 
         桌面来源。  - DEFAULT：默认桌面来源 - ONEMOBILE：协同办公云桌面OneMobile
 
@@ -814,7 +814,7 @@ class CreateDesktopReq:
 
     @desktop_isv.setter
     def desktop_isv(self, desktop_isv):
-        """Sets the desktop_isv of this CreateDesktopReq.
+        r"""Sets the desktop_isv of this CreateDesktopReq.
 
         桌面来源。  - DEFAULT：默认桌面来源 - ONEMOBILE：协同办公云桌面OneMobile
 
@@ -825,7 +825,7 @@ class CreateDesktopReq:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this CreateDesktopReq.
+        r"""Gets the access_mode of this CreateDesktopReq.
 
         接入模式。在非对接AD场景首次创建桌面时使用。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
 
@@ -836,7 +836,7 @@ class CreateDesktopReq:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this CreateDesktopReq.
+        r"""Sets the access_mode of this CreateDesktopReq.
 
         接入模式。在非对接AD场景首次创建桌面时使用。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
 
@@ -847,7 +847,7 @@ class CreateDesktopReq:
 
     @property
     def apply_shared_vpc_dedicated_param(self):
-        """Gets the apply_shared_vpc_dedicated_param of this CreateDesktopReq.
+        r"""Gets the apply_shared_vpc_dedicated_param of this CreateDesktopReq.
 
         :return: The apply_shared_vpc_dedicated_param of this CreateDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -856,7 +856,7 @@ class CreateDesktopReq:
 
     @apply_shared_vpc_dedicated_param.setter
     def apply_shared_vpc_dedicated_param(self, apply_shared_vpc_dedicated_param):
-        """Sets the apply_shared_vpc_dedicated_param of this CreateDesktopReq.
+        r"""Sets the apply_shared_vpc_dedicated_param of this CreateDesktopReq.
 
         :param apply_shared_vpc_dedicated_param: The apply_shared_vpc_dedicated_param of this CreateDesktopReq.
         :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -865,7 +865,7 @@ class CreateDesktopReq:
 
     @property
     def dedicated_subnets(self):
-        """Gets the dedicated_subnets of this CreateDesktopReq.
+        r"""Gets the dedicated_subnets of this CreateDesktopReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。在非对接AD场景首次创建桌面时使用。
 
@@ -876,7 +876,7 @@ class CreateDesktopReq:
 
     @dedicated_subnets.setter
     def dedicated_subnets(self, dedicated_subnets):
-        """Sets the dedicated_subnets of this CreateDesktopReq.
+        r"""Sets the dedicated_subnets of this CreateDesktopReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。在非对接AD场景首次创建桌面时使用。
 
@@ -887,7 +887,7 @@ class CreateDesktopReq:
 
     @property
     def eip(self):
-        """Gets the eip of this CreateDesktopReq.
+        r"""Gets the eip of this CreateDesktopReq.
 
         :return: The eip of this CreateDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Eip`
@@ -896,7 +896,7 @@ class CreateDesktopReq:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this CreateDesktopReq.
+        r"""Sets the eip of this CreateDesktopReq.
 
         :param eip: The eip of this CreateDesktopReq.
         :type eip: :class:`huaweicloudsdkworkspace.v2.Eip`
@@ -905,7 +905,7 @@ class CreateDesktopReq:
 
     @property
     def adn(self):
-        """Gets the adn of this CreateDesktopReq.
+        r"""Gets the adn of this CreateDesktopReq.
 
         :return: The adn of this CreateDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Adn`
@@ -914,7 +914,7 @@ class CreateDesktopReq:
 
     @adn.setter
     def adn(self, adn):
-        """Sets the adn of this CreateDesktopReq.
+        r"""Sets the adn of this CreateDesktopReq.
 
         :param adn: The adn of this CreateDesktopReq.
         :type adn: :class:`huaweicloudsdkworkspace.v2.Adn`
@@ -923,7 +923,7 @@ class CreateDesktopReq:
 
     @property
     def exclusive_host_id(self):
-        """Gets the exclusive_host_id of this CreateDesktopReq.
+        r"""Gets the exclusive_host_id of this CreateDesktopReq.
 
         专享主机ID，创建专享桌面时如果在指定专享主机中创建则必选
 
@@ -934,7 +934,7 @@ class CreateDesktopReq:
 
     @exclusive_host_id.setter
     def exclusive_host_id(self, exclusive_host_id):
-        """Sets the exclusive_host_id of this CreateDesktopReq.
+        r"""Sets the exclusive_host_id of this CreateDesktopReq.
 
         专享主机ID，创建专享桌面时如果在指定专享主机中创建则必选
 
@@ -945,7 +945,7 @@ class CreateDesktopReq:
 
     @property
     def desktop_name_policy_id(self):
-        """Gets the desktop_name_policy_id of this CreateDesktopReq.
+        r"""Gets the desktop_name_policy_id of this CreateDesktopReq.
 
         策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
 
@@ -956,7 +956,7 @@ class CreateDesktopReq:
 
     @desktop_name_policy_id.setter
     def desktop_name_policy_id(self, desktop_name_policy_id):
-        """Sets the desktop_name_policy_id of this CreateDesktopReq.
+        r"""Sets the desktop_name_policy_id of this CreateDesktopReq.
 
         策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
 
@@ -967,7 +967,7 @@ class CreateDesktopReq:
 
     @property
     def hour_package_product_id(self):
-        """Gets the hour_package_product_id of this CreateDesktopReq.
+        r"""Gets the hour_package_product_id of this CreateDesktopReq.
 
         桌面小时包套餐ID。
 
@@ -978,7 +978,7 @@ class CreateDesktopReq:
 
     @hour_package_product_id.setter
     def hour_package_product_id(self, hour_package_product_id):
-        """Sets the hour_package_product_id of this CreateDesktopReq.
+        r"""Sets the hour_package_product_id of this CreateDesktopReq.
 
         桌面小时包套餐ID。
 
@@ -989,7 +989,7 @@ class CreateDesktopReq:
 
     @property
     def hour_package_offering_id(self):
-        """Gets the hour_package_offering_id of this CreateDesktopReq.
+        r"""Gets the hour_package_offering_id of this CreateDesktopReq.
 
         桌面小时包offeringID。
 
@@ -1000,7 +1000,7 @@ class CreateDesktopReq:
 
     @hour_package_offering_id.setter
     def hour_package_offering_id(self, hour_package_offering_id):
-        """Sets the hour_package_offering_id of this CreateDesktopReq.
+        r"""Sets the hour_package_offering_id of this CreateDesktopReq.
 
         桌面小时包offeringID。
 
@@ -1011,7 +1011,7 @@ class CreateDesktopReq:
 
     @property
     def root_resource_ids(self):
-        """Gets the root_resource_ids of this CreateDesktopReq.
+        r"""Gets the root_resource_ids of this CreateDesktopReq.
 
         根资源ID列表，创建小时包桌面时使用，最小为0，最大为100。
 
@@ -1022,7 +1022,7 @@ class CreateDesktopReq:
 
     @root_resource_ids.setter
     def root_resource_ids(self, root_resource_ids):
-        """Sets the root_resource_ids of this CreateDesktopReq.
+        r"""Sets the root_resource_ids of this CreateDesktopReq.
 
         根资源ID列表，创建小时包桌面时使用，最小为0，最大为100。
 
@@ -1033,7 +1033,7 @@ class CreateDesktopReq:
 
     @property
     def inst_info_ids(self):
-        """Gets the inst_info_ids of this CreateDesktopReq.
+        r"""Gets the inst_info_ids of this CreateDesktopReq.
 
         instInfoId列表，创建小时包桌面时使用，最小为0，最大为100。
 
@@ -1044,7 +1044,7 @@ class CreateDesktopReq:
 
     @inst_info_ids.setter
     def inst_info_ids(self, inst_info_ids):
-        """Sets the inst_info_ids of this CreateDesktopReq.
+        r"""Sets the inst_info_ids of this CreateDesktopReq.
 
         instInfoId列表，创建小时包桌面时使用，最小为0，最大为100。
 

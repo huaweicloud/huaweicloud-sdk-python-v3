@@ -27,7 +27,7 @@ class NeutronUpdateFirewallGroupRequest:
     }
 
     def __init__(self, firewall_group_id=None, body=None):
-        """NeutronUpdateFirewallGroupRequest
+        r"""NeutronUpdateFirewallGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NeutronUpdateFirewallGroupRequest:
 
     @property
     def firewall_group_id(self):
-        """Gets the firewall_group_id of this NeutronUpdateFirewallGroupRequest.
+        r"""Gets the firewall_group_id of this NeutronUpdateFirewallGroupRequest.
 
         网络ACL防火墙组ID
 
@@ -60,7 +60,7 @@ class NeutronUpdateFirewallGroupRequest:
 
     @firewall_group_id.setter
     def firewall_group_id(self, firewall_group_id):
-        """Sets the firewall_group_id of this NeutronUpdateFirewallGroupRequest.
+        r"""Sets the firewall_group_id of this NeutronUpdateFirewallGroupRequest.
 
         网络ACL防火墙组ID
 
@@ -71,7 +71,7 @@ class NeutronUpdateFirewallGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronUpdateFirewallGroupRequest.
+        r"""Gets the body of this NeutronUpdateFirewallGroupRequest.
 
         :return: The body of this NeutronUpdateFirewallGroupRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupRequestBody`
@@ -80,7 +80,7 @@ class NeutronUpdateFirewallGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronUpdateFirewallGroupRequest.
+        r"""Sets the body of this NeutronUpdateFirewallGroupRequest.
 
         :param body: The body of this NeutronUpdateFirewallGroupRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupRequestBody`

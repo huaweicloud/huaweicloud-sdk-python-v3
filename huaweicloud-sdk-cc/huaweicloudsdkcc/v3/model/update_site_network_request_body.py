@@ -25,7 +25,7 @@ class UpdateSiteNetworkRequestBody:
     }
 
     def __init__(self, site_network=None):
-        """UpdateSiteNetworkRequestBody
+        r"""UpdateSiteNetworkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSiteNetworkRequestBody:
 
     @property
     def site_network(self):
-        """Gets the site_network of this UpdateSiteNetworkRequestBody.
+        r"""Gets the site_network of this UpdateSiteNetworkRequestBody.
 
         :return: The site_network of this UpdateSiteNetworkRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteNetwork`
@@ -51,7 +51,7 @@ class UpdateSiteNetworkRequestBody:
 
     @site_network.setter
     def site_network(self, site_network):
-        """Sets the site_network of this UpdateSiteNetworkRequestBody.
+        r"""Sets the site_network of this UpdateSiteNetworkRequestBody.
 
         :param site_network: The site_network of this UpdateSiteNetworkRequestBody.
         :type site_network: :class:`huaweicloudsdkcc.v3.UpdateSiteNetwork`

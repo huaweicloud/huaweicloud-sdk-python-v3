@@ -29,7 +29,7 @@ class CreateIncidentRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreateIncidentRequest
+        r"""CreateIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateIncidentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateIncidentRequest.
+        r"""Gets the project_id of this CreateIncidentRequest.
 
         ID of project
 
@@ -66,7 +66,7 @@ class CreateIncidentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateIncidentRequest.
+        r"""Sets the project_id of this CreateIncidentRequest.
 
         ID of project
 
@@ -77,7 +77,7 @@ class CreateIncidentRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateIncidentRequest.
+        r"""Gets the workspace_id of this CreateIncidentRequest.
 
         ID of workspace
 
@@ -88,7 +88,7 @@ class CreateIncidentRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateIncidentRequest.
+        r"""Sets the workspace_id of this CreateIncidentRequest.
 
         ID of workspace
 
@@ -99,7 +99,7 @@ class CreateIncidentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateIncidentRequest.
+        r"""Gets the body of this CreateIncidentRequest.
 
         :return: The body of this CreateIncidentRequest.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIncidentRequestBody`
@@ -108,7 +108,7 @@ class CreateIncidentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateIncidentRequest.
+        r"""Sets the body of this CreateIncidentRequest.
 
         :param body: The body of this CreateIncidentRequest.
         :type body: :class:`huaweicloudsdksa.v2.CreateIncidentRequestBody`

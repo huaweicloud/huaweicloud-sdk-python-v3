@@ -25,7 +25,7 @@ class BatchUpdateDatabaseObjectReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchUpdateDatabaseObjectReq
+        r"""BatchUpdateDatabaseObjectReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateDatabaseObjectReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchUpdateDatabaseObjectReq.
+        r"""Gets the jobs of this BatchUpdateDatabaseObjectReq.
 
         批量更新数据库对象请求任务ID列表
 
@@ -53,7 +53,7 @@ class BatchUpdateDatabaseObjectReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchUpdateDatabaseObjectReq.
+        r"""Sets the jobs of this BatchUpdateDatabaseObjectReq.
 
         批量更新数据库对象请求任务ID列表
 

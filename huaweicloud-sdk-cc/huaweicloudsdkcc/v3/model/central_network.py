@@ -49,7 +49,7 @@ class CentralNetwork:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, domain_id=None, state=None, enterprise_project_id=None, tags=None, default_plane_id=None, planes=None, er_instances=None, connections=None):
-        """CentralNetwork
+        r"""CentralNetwork
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CentralNetwork:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetwork.
+        r"""Gets the id of this CentralNetwork.
 
         实例ID。
 
@@ -131,7 +131,7 @@ class CentralNetwork:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetwork.
+        r"""Sets the id of this CentralNetwork.
 
         实例ID。
 
@@ -142,7 +142,7 @@ class CentralNetwork:
 
     @property
     def name(self):
-        """Gets the name of this CentralNetwork.
+        r"""Gets the name of this CentralNetwork.
 
         实例名字。
 
@@ -153,7 +153,7 @@ class CentralNetwork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CentralNetwork.
+        r"""Sets the name of this CentralNetwork.
 
         实例名字。
 
@@ -164,7 +164,7 @@ class CentralNetwork:
 
     @property
     def description(self):
-        """Gets the description of this CentralNetwork.
+        r"""Gets the description of this CentralNetwork.
 
         实例描述。不支持 <>。
 
@@ -175,7 +175,7 @@ class CentralNetwork:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CentralNetwork.
+        r"""Sets the description of this CentralNetwork.
 
         实例描述。不支持 <>。
 
@@ -186,7 +186,7 @@ class CentralNetwork:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CentralNetwork.
+        r"""Gets the created_at of this CentralNetwork.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -197,7 +197,7 @@ class CentralNetwork:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CentralNetwork.
+        r"""Sets the created_at of this CentralNetwork.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -208,7 +208,7 @@ class CentralNetwork:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CentralNetwork.
+        r"""Gets the updated_at of this CentralNetwork.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -219,7 +219,7 @@ class CentralNetwork:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CentralNetwork.
+        r"""Sets the updated_at of this CentralNetwork.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -230,7 +230,7 @@ class CentralNetwork:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CentralNetwork.
+        r"""Gets the domain_id of this CentralNetwork.
 
         实例所属账号ID。
 
@@ -241,7 +241,7 @@ class CentralNetwork:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CentralNetwork.
+        r"""Sets the domain_id of this CentralNetwork.
 
         实例所属账号ID。
 
@@ -252,7 +252,7 @@ class CentralNetwork:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetwork.
+        r"""Gets the state of this CentralNetwork.
 
         :return: The state of this CentralNetwork.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
@@ -261,7 +261,7 @@ class CentralNetwork:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetwork.
+        r"""Sets the state of this CentralNetwork.
 
         :param state: The state of this CentralNetwork.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
@@ -270,7 +270,7 @@ class CentralNetwork:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CentralNetwork.
+        r"""Gets the enterprise_project_id of this CentralNetwork.
 
         实例所属企业项目ID。
 
@@ -281,7 +281,7 @@ class CentralNetwork:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CentralNetwork.
+        r"""Sets the enterprise_project_id of this CentralNetwork.
 
         实例所属企业项目ID。
 
@@ -292,7 +292,7 @@ class CentralNetwork:
 
     @property
     def tags(self):
-        """Gets the tags of this CentralNetwork.
+        r"""Gets the tags of this CentralNetwork.
 
         实例标签。
 
@@ -303,7 +303,7 @@ class CentralNetwork:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CentralNetwork.
+        r"""Sets the tags of this CentralNetwork.
 
         实例标签。
 
@@ -314,7 +314,7 @@ class CentralNetwork:
 
     @property
     def default_plane_id(self):
-        """Gets the default_plane_id of this CentralNetwork.
+        r"""Gets the default_plane_id of this CentralNetwork.
 
         中心网络默认平面的ID。
 
@@ -325,7 +325,7 @@ class CentralNetwork:
 
     @default_plane_id.setter
     def default_plane_id(self, default_plane_id):
-        """Sets the default_plane_id of this CentralNetwork.
+        r"""Sets the default_plane_id of this CentralNetwork.
 
         中心网络默认平面的ID。
 
@@ -336,7 +336,7 @@ class CentralNetwork:
 
     @property
     def planes(self):
-        """Gets the planes of this CentralNetwork.
+        r"""Gets the planes of this CentralNetwork.
 
         中心网平面列表。
 
@@ -347,7 +347,7 @@ class CentralNetwork:
 
     @planes.setter
     def planes(self, planes):
-        """Sets the planes of this CentralNetwork.
+        r"""Sets the planes of this CentralNetwork.
 
         中心网平面列表。
 
@@ -358,7 +358,7 @@ class CentralNetwork:
 
     @property
     def er_instances(self):
-        """Gets the er_instances of this CentralNetwork.
+        r"""Gets the er_instances of this CentralNetwork.
 
         中心网ER实例列表。
 
@@ -369,7 +369,7 @@ class CentralNetwork:
 
     @er_instances.setter
     def er_instances(self, er_instances):
-        """Sets the er_instances of this CentralNetwork.
+        r"""Sets the er_instances of this CentralNetwork.
 
         中心网ER实例列表。
 
@@ -380,7 +380,7 @@ class CentralNetwork:
 
     @property
     def connections(self):
-        """Gets the connections of this CentralNetwork.
+        r"""Gets the connections of this CentralNetwork.
 
         中心网ER连接列表。
 
@@ -391,7 +391,7 @@ class CentralNetwork:
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this CentralNetwork.
+        r"""Sets the connections of this CentralNetwork.
 
         中心网ER连接列表。
 

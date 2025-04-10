@@ -47,7 +47,7 @@ class AclBindApiInfo:
     }
 
     def __init__(self, api_id=None, api_name=None, api_type=None, api_remark=None, env_id=None, env_name=None, bind_id=None, group_name=None, bind_time=None, publish_id=None, req_method=None, tags=None):
-        """AclBindApiInfo
+        r"""AclBindApiInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AclBindApiInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this AclBindApiInfo.
+        r"""Gets the api_id of this AclBindApiInfo.
 
         API编号
 
@@ -131,7 +131,7 @@ class AclBindApiInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this AclBindApiInfo.
+        r"""Sets the api_id of this AclBindApiInfo.
 
         API编号
 
@@ -142,7 +142,7 @@ class AclBindApiInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this AclBindApiInfo.
+        r"""Gets the api_name of this AclBindApiInfo.
 
         API名称
 
@@ -153,7 +153,7 @@ class AclBindApiInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this AclBindApiInfo.
+        r"""Sets the api_name of this AclBindApiInfo.
 
         API名称
 
@@ -164,7 +164,7 @@ class AclBindApiInfo:
 
     @property
     def api_type(self):
-        """Gets the api_type of this AclBindApiInfo.
+        r"""Gets the api_type of this AclBindApiInfo.
 
         API类型
 
@@ -175,7 +175,7 @@ class AclBindApiInfo:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this AclBindApiInfo.
+        r"""Sets the api_type of this AclBindApiInfo.
 
         API类型
 
@@ -186,7 +186,7 @@ class AclBindApiInfo:
 
     @property
     def api_remark(self):
-        """Gets the api_remark of this AclBindApiInfo.
+        r"""Gets the api_remark of this AclBindApiInfo.
 
         API的描述信息
 
@@ -197,7 +197,7 @@ class AclBindApiInfo:
 
     @api_remark.setter
     def api_remark(self, api_remark):
-        """Sets the api_remark of this AclBindApiInfo.
+        r"""Sets the api_remark of this AclBindApiInfo.
 
         API的描述信息
 
@@ -208,7 +208,7 @@ class AclBindApiInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AclBindApiInfo.
+        r"""Gets the env_id of this AclBindApiInfo.
 
         生效的环境编号
 
@@ -219,7 +219,7 @@ class AclBindApiInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AclBindApiInfo.
+        r"""Sets the env_id of this AclBindApiInfo.
 
         生效的环境编号
 
@@ -230,7 +230,7 @@ class AclBindApiInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this AclBindApiInfo.
+        r"""Gets the env_name of this AclBindApiInfo.
 
         生效的环境名称
 
@@ -241,7 +241,7 @@ class AclBindApiInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this AclBindApiInfo.
+        r"""Sets the env_name of this AclBindApiInfo.
 
         生效的环境名称
 
@@ -252,7 +252,7 @@ class AclBindApiInfo:
 
     @property
     def bind_id(self):
-        """Gets the bind_id of this AclBindApiInfo.
+        r"""Gets the bind_id of this AclBindApiInfo.
 
         绑定关系编号
 
@@ -263,7 +263,7 @@ class AclBindApiInfo:
 
     @bind_id.setter
     def bind_id(self, bind_id):
-        """Sets the bind_id of this AclBindApiInfo.
+        r"""Sets the bind_id of this AclBindApiInfo.
 
         绑定关系编号
 
@@ -274,7 +274,7 @@ class AclBindApiInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this AclBindApiInfo.
+        r"""Gets the group_name of this AclBindApiInfo.
 
         API分组名称
 
@@ -285,7 +285,7 @@ class AclBindApiInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this AclBindApiInfo.
+        r"""Sets the group_name of this AclBindApiInfo.
 
         API分组名称
 
@@ -296,7 +296,7 @@ class AclBindApiInfo:
 
     @property
     def bind_time(self):
-        """Gets the bind_time of this AclBindApiInfo.
+        r"""Gets the bind_time of this AclBindApiInfo.
 
         绑定时间
 
@@ -307,7 +307,7 @@ class AclBindApiInfo:
 
     @bind_time.setter
     def bind_time(self, bind_time):
-        """Sets the bind_time of this AclBindApiInfo.
+        r"""Sets the bind_time of this AclBindApiInfo.
 
         绑定时间
 
@@ -318,7 +318,7 @@ class AclBindApiInfo:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this AclBindApiInfo.
+        r"""Gets the publish_id of this AclBindApiInfo.
 
         API发布记录编号
 
@@ -329,7 +329,7 @@ class AclBindApiInfo:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this AclBindApiInfo.
+        r"""Sets the publish_id of this AclBindApiInfo.
 
         API发布记录编号
 
@@ -340,7 +340,7 @@ class AclBindApiInfo:
 
     @property
     def req_method(self):
-        """Gets the req_method of this AclBindApiInfo.
+        r"""Gets the req_method of this AclBindApiInfo.
 
         API请求方法
 
@@ -351,7 +351,7 @@ class AclBindApiInfo:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this AclBindApiInfo.
+        r"""Sets the req_method of this AclBindApiInfo.
 
         API请求方法
 
@@ -362,7 +362,7 @@ class AclBindApiInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this AclBindApiInfo.
+        r"""Gets the tags of this AclBindApiInfo.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 
@@ -373,7 +373,7 @@ class AclBindApiInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AclBindApiInfo.
+        r"""Sets the tags of this AclBindApiInfo.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 

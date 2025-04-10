@@ -28,7 +28,7 @@ class ListManagedRolesInPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self, attached_managed_roles=None, page_info=None):
-        """ListManagedRolesInPermissionSetResponse
+        r"""ListManagedRolesInPermissionSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListManagedRolesInPermissionSetResponse(SdkResponse):
 
     @property
     def attached_managed_roles(self):
-        """Gets the attached_managed_roles of this ListManagedRolesInPermissionSetResponse.
+        r"""Gets the attached_managed_roles of this ListManagedRolesInPermissionSetResponse.
 
         IAM系统策略列表
 
@@ -62,7 +62,7 @@ class ListManagedRolesInPermissionSetResponse(SdkResponse):
 
     @attached_managed_roles.setter
     def attached_managed_roles(self, attached_managed_roles):
-        """Sets the attached_managed_roles of this ListManagedRolesInPermissionSetResponse.
+        r"""Sets the attached_managed_roles of this ListManagedRolesInPermissionSetResponse.
 
         IAM系统策略列表
 
@@ -73,7 +73,7 @@ class ListManagedRolesInPermissionSetResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListManagedRolesInPermissionSetResponse.
+        r"""Gets the page_info of this ListManagedRolesInPermissionSetResponse.
 
         :return: The page_info of this ListManagedRolesInPermissionSetResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListManagedRolesInPermissionSetResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListManagedRolesInPermissionSetResponse.
+        r"""Sets the page_info of this ListManagedRolesInPermissionSetResponse.
 
         :param page_info: The page_info of this ListManagedRolesInPermissionSetResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`

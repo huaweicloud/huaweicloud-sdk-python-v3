@@ -25,7 +25,7 @@ class TopoRingInfo:
     }
 
     def __init__(self, instance_info_lists=None):
-        """TopoRingInfo
+        r"""TopoRingInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TopoRingInfo:
 
     @property
     def instance_info_lists(self):
-        """Gets the instance_info_lists of this TopoRingInfo.
+        r"""Gets the instance_info_lists of this TopoRingInfo.
 
         集群实例列表信息
 
@@ -54,7 +54,7 @@ class TopoRingInfo:
 
     @instance_info_lists.setter
     def instance_info_lists(self, instance_info_lists):
-        """Sets the instance_info_lists of this TopoRingInfo.
+        r"""Sets the instance_info_lists of this TopoRingInfo.
 
         集群实例列表信息
 

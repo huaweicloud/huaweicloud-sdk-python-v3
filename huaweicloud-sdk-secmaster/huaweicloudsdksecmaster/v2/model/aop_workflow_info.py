@@ -57,7 +57,7 @@ class AopWorkflowInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, owner_id=None, creator_id=None, edit_role=None, use_role=None, approve_role=None, enabled=None, workspace_id=None, version_id=None, current_approval_version_id=None, current_rejected_versoin_id=None, aop_type=None, engine_type=None, dataclass_id=None):
-        """AopWorkflowInfo
+        r"""AopWorkflowInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class AopWorkflowInfo:
 
     @property
     def id(self):
-        """Gets the id of this AopWorkflowInfo.
+        r"""Gets the id of this AopWorkflowInfo.
 
         流程ID
 
@@ -166,7 +166,7 @@ class AopWorkflowInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AopWorkflowInfo.
+        r"""Sets the id of this AopWorkflowInfo.
 
         流程ID
 
@@ -177,7 +177,7 @@ class AopWorkflowInfo:
 
     @property
     def name(self):
-        """Gets the name of this AopWorkflowInfo.
+        r"""Gets the name of this AopWorkflowInfo.
 
         流程名称
 
@@ -188,7 +188,7 @@ class AopWorkflowInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AopWorkflowInfo.
+        r"""Sets the name of this AopWorkflowInfo.
 
         流程名称
 
@@ -199,7 +199,7 @@ class AopWorkflowInfo:
 
     @property
     def description(self):
-        """Gets the description of this AopWorkflowInfo.
+        r"""Gets the description of this AopWorkflowInfo.
 
         描述
 
@@ -210,7 +210,7 @@ class AopWorkflowInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AopWorkflowInfo.
+        r"""Sets the description of this AopWorkflowInfo.
 
         描述
 
@@ -221,7 +221,7 @@ class AopWorkflowInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AopWorkflowInfo.
+        r"""Gets the project_id of this AopWorkflowInfo.
 
         租户ID
 
@@ -232,7 +232,7 @@ class AopWorkflowInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AopWorkflowInfo.
+        r"""Sets the project_id of this AopWorkflowInfo.
 
         租户ID
 
@@ -243,7 +243,7 @@ class AopWorkflowInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this AopWorkflowInfo.
+        r"""Gets the owner_id of this AopWorkflowInfo.
 
         所有者ID
 
@@ -254,7 +254,7 @@ class AopWorkflowInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this AopWorkflowInfo.
+        r"""Sets the owner_id of this AopWorkflowInfo.
 
         所有者ID
 
@@ -265,7 +265,7 @@ class AopWorkflowInfo:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this AopWorkflowInfo.
+        r"""Gets the creator_id of this AopWorkflowInfo.
 
         创建者ID
 
@@ -276,7 +276,7 @@ class AopWorkflowInfo:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this AopWorkflowInfo.
+        r"""Sets the creator_id of this AopWorkflowInfo.
 
         创建者ID
 
@@ -287,7 +287,7 @@ class AopWorkflowInfo:
 
     @property
     def edit_role(self):
-        """Gets the edit_role of this AopWorkflowInfo.
+        r"""Gets the edit_role of this AopWorkflowInfo.
 
         编辑角色
 
@@ -298,7 +298,7 @@ class AopWorkflowInfo:
 
     @edit_role.setter
     def edit_role(self, edit_role):
-        """Sets the edit_role of this AopWorkflowInfo.
+        r"""Sets the edit_role of this AopWorkflowInfo.
 
         编辑角色
 
@@ -309,7 +309,7 @@ class AopWorkflowInfo:
 
     @property
     def use_role(self):
-        """Gets the use_role of this AopWorkflowInfo.
+        r"""Gets the use_role of this AopWorkflowInfo.
 
         是用角色
 
@@ -320,7 +320,7 @@ class AopWorkflowInfo:
 
     @use_role.setter
     def use_role(self, use_role):
-        """Sets the use_role of this AopWorkflowInfo.
+        r"""Sets the use_role of this AopWorkflowInfo.
 
         是用角色
 
@@ -331,7 +331,7 @@ class AopWorkflowInfo:
 
     @property
     def approve_role(self):
-        """Gets the approve_role of this AopWorkflowInfo.
+        r"""Gets the approve_role of this AopWorkflowInfo.
 
         审核人
 
@@ -342,7 +342,7 @@ class AopWorkflowInfo:
 
     @approve_role.setter
     def approve_role(self, approve_role):
-        """Sets the approve_role of this AopWorkflowInfo.
+        r"""Sets the approve_role of this AopWorkflowInfo.
 
         审核人
 
@@ -353,7 +353,7 @@ class AopWorkflowInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this AopWorkflowInfo.
+        r"""Gets the enabled of this AopWorkflowInfo.
 
         是否已启用
 
@@ -364,7 +364,7 @@ class AopWorkflowInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this AopWorkflowInfo.
+        r"""Sets the enabled of this AopWorkflowInfo.
 
         是否已启用
 
@@ -375,7 +375,7 @@ class AopWorkflowInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AopWorkflowInfo.
+        r"""Gets the workspace_id of this AopWorkflowInfo.
 
         工作空间ID
 
@@ -386,7 +386,7 @@ class AopWorkflowInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AopWorkflowInfo.
+        r"""Sets the workspace_id of this AopWorkflowInfo.
 
         工作空间ID
 
@@ -397,7 +397,7 @@ class AopWorkflowInfo:
 
     @property
     def version_id(self):
-        """Gets the version_id of this AopWorkflowInfo.
+        r"""Gets the version_id of this AopWorkflowInfo.
 
         流程版本ID
 
@@ -408,7 +408,7 @@ class AopWorkflowInfo:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this AopWorkflowInfo.
+        r"""Sets the version_id of this AopWorkflowInfo.
 
         流程版本ID
 
@@ -419,7 +419,7 @@ class AopWorkflowInfo:
 
     @property
     def current_approval_version_id(self):
-        """Gets the current_approval_version_id of this AopWorkflowInfo.
+        r"""Gets the current_approval_version_id of this AopWorkflowInfo.
 
         当前待审核版本号
 
@@ -430,7 +430,7 @@ class AopWorkflowInfo:
 
     @current_approval_version_id.setter
     def current_approval_version_id(self, current_approval_version_id):
-        """Sets the current_approval_version_id of this AopWorkflowInfo.
+        r"""Sets the current_approval_version_id of this AopWorkflowInfo.
 
         当前待审核版本号
 
@@ -441,7 +441,7 @@ class AopWorkflowInfo:
 
     @property
     def current_rejected_versoin_id(self):
-        """Gets the current_rejected_versoin_id of this AopWorkflowInfo.
+        r"""Gets the current_rejected_versoin_id of this AopWorkflowInfo.
 
         当前拒绝的版本号
 
@@ -452,7 +452,7 @@ class AopWorkflowInfo:
 
     @current_rejected_versoin_id.setter
     def current_rejected_versoin_id(self, current_rejected_versoin_id):
-        """Sets the current_rejected_versoin_id of this AopWorkflowInfo.
+        r"""Sets the current_rejected_versoin_id of this AopWorkflowInfo.
 
         当前拒绝的版本号
 
@@ -463,7 +463,7 @@ class AopWorkflowInfo:
 
     @property
     def aop_type(self):
-        """Gets the aop_type of this AopWorkflowInfo.
+        r"""Gets the aop_type of this AopWorkflowInfo.
 
         aop的类型有以下的值     NORMAL, 通用     SURVEY, 调查     HEMOSTASIS,止血     EASE;缓解
 
@@ -474,7 +474,7 @@ class AopWorkflowInfo:
 
     @aop_type.setter
     def aop_type(self, aop_type):
-        """Sets the aop_type of this AopWorkflowInfo.
+        r"""Sets the aop_type of this AopWorkflowInfo.
 
         aop的类型有以下的值     NORMAL, 通用     SURVEY, 调查     HEMOSTASIS,止血     EASE;缓解
 
@@ -485,7 +485,7 @@ class AopWorkflowInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this AopWorkflowInfo.
+        r"""Gets the engine_type of this AopWorkflowInfo.
 
         引擎的类型分为共享版和专项版
 
@@ -496,7 +496,7 @@ class AopWorkflowInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this AopWorkflowInfo.
+        r"""Sets the engine_type of this AopWorkflowInfo.
 
         引擎的类型分为共享版和专项版
 
@@ -507,7 +507,7 @@ class AopWorkflowInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this AopWorkflowInfo.
+        r"""Gets the dataclass_id of this AopWorkflowInfo.
 
         数据类的ID
 
@@ -518,7 +518,7 @@ class AopWorkflowInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this AopWorkflowInfo.
+        r"""Sets the dataclass_id of this AopWorkflowInfo.
 
         数据类的ID
 

@@ -27,7 +27,7 @@ class RoleInput:
     }
 
     def __init__(self, role_name=None, description=None):
-        """RoleInput
+        r"""RoleInput
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RoleInput:
 
     @property
     def role_name(self):
-        """Gets the role_name of this RoleInput.
+        r"""Gets the role_name of this RoleInput.
 
         role名字
 
@@ -60,7 +60,7 @@ class RoleInput:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this RoleInput.
+        r"""Sets the role_name of this RoleInput.
 
         role名字
 
@@ -71,7 +71,7 @@ class RoleInput:
 
     @property
     def description(self):
-        """Gets the description of this RoleInput.
+        r"""Gets the description of this RoleInput.
 
         描述信息
 
@@ -82,7 +82,7 @@ class RoleInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RoleInput.
+        r"""Sets the description of this RoleInput.
 
         描述信息
 

@@ -27,7 +27,7 @@ class UpdateDatabaseOwnerRequest:
     }
 
     def __init__(self, database_name=None, body=None):
-        """UpdateDatabaseOwnerRequest
+        r"""UpdateDatabaseOwnerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDatabaseOwnerRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateDatabaseOwnerRequest.
+        r"""Gets the database_name of this UpdateDatabaseOwnerRequest.
 
         删除的数据库名称。
 
@@ -60,7 +60,7 @@ class UpdateDatabaseOwnerRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateDatabaseOwnerRequest.
+        r"""Sets the database_name of this UpdateDatabaseOwnerRequest.
 
         删除的数据库名称。
 
@@ -71,7 +71,7 @@ class UpdateDatabaseOwnerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatabaseOwnerRequest.
+        r"""Gets the body of this UpdateDatabaseOwnerRequest.
 
         :return: The body of this UpdateDatabaseOwnerRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`
@@ -80,7 +80,7 @@ class UpdateDatabaseOwnerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatabaseOwnerRequest.
+        r"""Sets the body of this UpdateDatabaseOwnerRequest.
 
         :param body: The body of this UpdateDatabaseOwnerRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateOwnerRequestBody`

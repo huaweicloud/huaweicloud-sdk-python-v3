@@ -25,7 +25,7 @@ class UpdatePolicyGroupReq:
     }
 
     def __init__(self, policy_group=None):
-        """UpdatePolicyGroupReq
+        r"""UpdatePolicyGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePolicyGroupReq:
 
     @property
     def policy_group(self):
-        """Gets the policy_group of this UpdatePolicyGroupReq.
+        r"""Gets the policy_group of this UpdatePolicyGroupReq.
 
         :return: The policy_group of this UpdatePolicyGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PolicyGroupForUpdate`
@@ -51,7 +51,7 @@ class UpdatePolicyGroupReq:
 
     @policy_group.setter
     def policy_group(self, policy_group):
-        """Sets the policy_group of this UpdatePolicyGroupReq.
+        r"""Sets the policy_group of this UpdatePolicyGroupReq.
 
         :param policy_group: The policy_group of this UpdatePolicyGroupReq.
         :type policy_group: :class:`huaweicloudsdkworkspaceapp.v1.PolicyGroupForUpdate`

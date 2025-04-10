@@ -25,7 +25,7 @@ class ChangeCloudPhoneServerModelRequestBodyExtendParam:
     }
 
     def __init__(self, is_auto_pay=None):
-        """ChangeCloudPhoneServerModelRequestBodyExtendParam
+        r"""ChangeCloudPhoneServerModelRequestBodyExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeCloudPhoneServerModelRequestBodyExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
+        r"""Gets the is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
 
         否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 ：自动付款 - 0 ：不自动付款
 
@@ -54,7 +54,7 @@ class ChangeCloudPhoneServerModelRequestBodyExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
+        r"""Sets the is_auto_pay of this ChangeCloudPhoneServerModelRequestBodyExtendParam.
 
         否自动付款。默认不自动付款。如果是规格升配的变更，则需要支付额外的费用，如果是降配的变更，则会自动退款。 - 1 ：自动付款 - 0 ：不自动付款
 

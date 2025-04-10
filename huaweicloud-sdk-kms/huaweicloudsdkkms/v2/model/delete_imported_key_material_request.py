@@ -25,7 +25,7 @@ class DeleteImportedKeyMaterialRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteImportedKeyMaterialRequest
+        r"""DeleteImportedKeyMaterialRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteImportedKeyMaterialRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteImportedKeyMaterialRequest.
+        r"""Gets the body of this DeleteImportedKeyMaterialRequest.
 
         :return: The body of this DeleteImportedKeyMaterialRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class DeleteImportedKeyMaterialRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteImportedKeyMaterialRequest.
+        r"""Sets the body of this DeleteImportedKeyMaterialRequest.
 
         :param body: The body of this DeleteImportedKeyMaterialRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

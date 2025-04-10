@@ -26,7 +26,7 @@ class ShowBlockchainNodesResponse(SdkResponse):
     }
 
     def __init__(self, node_orgs=None):
-        """ShowBlockchainNodesResponse
+        r"""ShowBlockchainNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBlockchainNodesResponse(SdkResponse):
 
     @property
     def node_orgs(self):
-        """Gets the node_orgs of this ShowBlockchainNodesResponse.
+        r"""Gets the node_orgs of this ShowBlockchainNodesResponse.
 
         key:组织名，value：组织详细信息
 
@@ -55,7 +55,7 @@ class ShowBlockchainNodesResponse(SdkResponse):
 
     @node_orgs.setter
     def node_orgs(self, node_orgs):
-        """Sets the node_orgs of this ShowBlockchainNodesResponse.
+        r"""Sets the node_orgs of this ShowBlockchainNodesResponse.
 
         key:组织名，value：组织详细信息
 

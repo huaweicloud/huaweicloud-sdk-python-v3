@@ -33,7 +33,7 @@ class AvailableQueueInfo:
     }
 
     def __init__(self, status=None, name=None, uuid=None, err_msg=None, update_time=None):
-        """AvailableQueueInfo
+        r"""AvailableQueueInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AvailableQueueInfo:
 
     @property
     def status(self):
-        """Gets the status of this AvailableQueueInfo.
+        r"""Gets the status of this AvailableQueueInfo.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -82,7 +82,7 @@ class AvailableQueueInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AvailableQueueInfo.
+        r"""Sets the status of this AvailableQueueInfo.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -93,7 +93,7 @@ class AvailableQueueInfo:
 
     @property
     def name(self):
-        """Gets the name of this AvailableQueueInfo.
+        r"""Gets the name of this AvailableQueueInfo.
 
         队列名称。
 
@@ -104,7 +104,7 @@ class AvailableQueueInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AvailableQueueInfo.
+        r"""Sets the name of this AvailableQueueInfo.
 
         队列名称。
 
@@ -115,7 +115,7 @@ class AvailableQueueInfo:
 
     @property
     def uuid(self):
-        """Gets the uuid of this AvailableQueueInfo.
+        r"""Gets the uuid of this AvailableQueueInfo.
 
         uuid。
 
@@ -126,7 +126,7 @@ class AvailableQueueInfo:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this AvailableQueueInfo.
+        r"""Sets the uuid of this AvailableQueueInfo.
 
         uuid。
 
@@ -137,7 +137,7 @@ class AvailableQueueInfo:
 
     @property
     def err_msg(self):
-        """Gets the err_msg of this AvailableQueueInfo.
+        r"""Gets the err_msg of this AvailableQueueInfo.
 
         状态为失败时的详细报错信息。
 
@@ -148,7 +148,7 @@ class AvailableQueueInfo:
 
     @err_msg.setter
     def err_msg(self, err_msg):
-        """Sets the err_msg of this AvailableQueueInfo.
+        r"""Sets the err_msg of this AvailableQueueInfo.
 
         状态为失败时的详细报错信息。
 
@@ -159,7 +159,7 @@ class AvailableQueueInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AvailableQueueInfo.
+        r"""Gets the update_time of this AvailableQueueInfo.
 
         作业更新时间, 毫秒数。
 
@@ -170,7 +170,7 @@ class AvailableQueueInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AvailableQueueInfo.
+        r"""Sets the update_time of this AvailableQueueInfo.
 
         作业更新时间, 毫秒数。
 

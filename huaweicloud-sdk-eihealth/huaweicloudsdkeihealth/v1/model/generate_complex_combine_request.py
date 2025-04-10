@@ -27,7 +27,7 @@ class GenerateComplexCombineRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """GenerateComplexCombineRequest
+        r"""GenerateComplexCombineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GenerateComplexCombineRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this GenerateComplexCombineRequest.
+        r"""Gets the eihealth_project_id of this GenerateComplexCombineRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class GenerateComplexCombineRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this GenerateComplexCombineRequest.
+        r"""Sets the eihealth_project_id of this GenerateComplexCombineRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class GenerateComplexCombineRequest:
 
     @property
     def body(self):
-        """Gets the body of this GenerateComplexCombineRequest.
+        r"""Gets the body of this GenerateComplexCombineRequest.
 
         :return: The body of this GenerateComplexCombineRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.GenerateComplexCombineReq`
@@ -80,7 +80,7 @@ class GenerateComplexCombineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateComplexCombineRequest.
+        r"""Sets the body of this GenerateComplexCombineRequest.
 
         :param body: The body of this GenerateComplexCombineRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.GenerateComplexCombineReq`

@@ -27,7 +27,7 @@ class StateDataFilter:
     }
 
     def __init__(self, input=None, output=None):
-        """StateDataFilter
+        r"""StateDataFilter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StateDataFilter:
 
     @property
     def input(self):
-        """Gets the input of this StateDataFilter.
+        r"""Gets the input of this StateDataFilter.
 
         输入过滤表达式（JsonPath）
 
@@ -61,7 +61,7 @@ class StateDataFilter:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this StateDataFilter.
+        r"""Sets the input of this StateDataFilter.
 
         输入过滤表达式（JsonPath）
 
@@ -72,7 +72,7 @@ class StateDataFilter:
 
     @property
     def output(self):
-        """Gets the output of this StateDataFilter.
+        r"""Gets the output of this StateDataFilter.
 
         输出过滤表达式（JsonPath）
 
@@ -83,7 +83,7 @@ class StateDataFilter:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this StateDataFilter.
+        r"""Sets the output of this StateDataFilter.
 
         输出过滤表达式（JsonPath）
 

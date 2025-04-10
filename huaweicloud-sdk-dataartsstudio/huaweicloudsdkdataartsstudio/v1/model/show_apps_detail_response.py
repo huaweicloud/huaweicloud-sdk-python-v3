@@ -52,7 +52,7 @@ class ShowAppsDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, call_num=None, success_num=None, fail_num=None, legal_num=None, illegal_num=None, cost_time_avg=None, success_cost_time_avg=None, fail_cost_time_avg=None, success_rate=None, fail_rate=None, legal_rate=None, illegal_rate=None):
-        """ShowAppsDetailResponse
+        r"""ShowAppsDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAppsDetailResponse.
+        r"""Gets the id of this ShowAppsDetailResponse.
 
         统计对象编号
 
@@ -146,7 +146,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAppsDetailResponse.
+        r"""Sets the id of this ShowAppsDetailResponse.
 
         统计对象编号
 
@@ -157,7 +157,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppsDetailResponse.
+        r"""Gets the name of this ShowAppsDetailResponse.
 
         统计对象名称
 
@@ -168,7 +168,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppsDetailResponse.
+        r"""Sets the name of this ShowAppsDetailResponse.
 
         统计对象名称
 
@@ -179,7 +179,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def call_num(self):
-        """Gets the call_num of this ShowAppsDetailResponse.
+        r"""Gets the call_num of this ShowAppsDetailResponse.
 
         调用总量
 
@@ -190,7 +190,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this ShowAppsDetailResponse.
+        r"""Sets the call_num of this ShowAppsDetailResponse.
 
         调用总量
 
@@ -201,7 +201,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def success_num(self):
-        """Gets the success_num of this ShowAppsDetailResponse.
+        r"""Gets the success_num of this ShowAppsDetailResponse.
 
         成功调用量(取数成功)
 
@@ -212,7 +212,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ShowAppsDetailResponse.
+        r"""Sets the success_num of this ShowAppsDetailResponse.
 
         成功调用量(取数成功)
 
@@ -223,7 +223,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this ShowAppsDetailResponse.
+        r"""Gets the fail_num of this ShowAppsDetailResponse.
 
         失败调用量(取数失败)
 
@@ -234,7 +234,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this ShowAppsDetailResponse.
+        r"""Sets the fail_num of this ShowAppsDetailResponse.
 
         失败调用量(取数失败)
 
@@ -245,7 +245,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def legal_num(self):
-        """Gets the legal_num of this ShowAppsDetailResponse.
+        r"""Gets the legal_num of this ShowAppsDetailResponse.
 
         合法调用量(通过校验)
 
@@ -256,7 +256,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @legal_num.setter
     def legal_num(self, legal_num):
-        """Sets the legal_num of this ShowAppsDetailResponse.
+        r"""Sets the legal_num of this ShowAppsDetailResponse.
 
         合法调用量(通过校验)
 
@@ -267,7 +267,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def illegal_num(self):
-        """Gets the illegal_num of this ShowAppsDetailResponse.
+        r"""Gets the illegal_num of this ShowAppsDetailResponse.
 
         非法调用量(无法通过校验)
 
@@ -278,7 +278,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @illegal_num.setter
     def illegal_num(self, illegal_num):
-        """Sets the illegal_num of this ShowAppsDetailResponse.
+        r"""Sets the illegal_num of this ShowAppsDetailResponse.
 
         非法调用量(无法通过校验)
 
@@ -289,7 +289,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def cost_time_avg(self):
-        """Gets the cost_time_avg of this ShowAppsDetailResponse.
+        r"""Gets the cost_time_avg of this ShowAppsDetailResponse.
 
         请求平均时长
 
@@ -300,7 +300,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @cost_time_avg.setter
     def cost_time_avg(self, cost_time_avg):
-        """Sets the cost_time_avg of this ShowAppsDetailResponse.
+        r"""Sets the cost_time_avg of this ShowAppsDetailResponse.
 
         请求平均时长
 
@@ -311,7 +311,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def success_cost_time_avg(self):
-        """Gets the success_cost_time_avg of this ShowAppsDetailResponse.
+        r"""Gets the success_cost_time_avg of this ShowAppsDetailResponse.
 
         成功请求平均时长
 
@@ -322,7 +322,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @success_cost_time_avg.setter
     def success_cost_time_avg(self, success_cost_time_avg):
-        """Sets the success_cost_time_avg of this ShowAppsDetailResponse.
+        r"""Sets the success_cost_time_avg of this ShowAppsDetailResponse.
 
         成功请求平均时长
 
@@ -333,7 +333,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def fail_cost_time_avg(self):
-        """Gets the fail_cost_time_avg of this ShowAppsDetailResponse.
+        r"""Gets the fail_cost_time_avg of this ShowAppsDetailResponse.
 
         失败请求平均时长
 
@@ -344,7 +344,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @fail_cost_time_avg.setter
     def fail_cost_time_avg(self, fail_cost_time_avg):
-        """Sets the fail_cost_time_avg of this ShowAppsDetailResponse.
+        r"""Sets the fail_cost_time_avg of this ShowAppsDetailResponse.
 
         失败请求平均时长
 
@@ -355,7 +355,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this ShowAppsDetailResponse.
+        r"""Gets the success_rate of this ShowAppsDetailResponse.
 
         成功率
 
@@ -366,7 +366,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this ShowAppsDetailResponse.
+        r"""Sets the success_rate of this ShowAppsDetailResponse.
 
         成功率
 
@@ -377,7 +377,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def fail_rate(self):
-        """Gets the fail_rate of this ShowAppsDetailResponse.
+        r"""Gets the fail_rate of this ShowAppsDetailResponse.
 
         失败率
 
@@ -388,7 +388,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @fail_rate.setter
     def fail_rate(self, fail_rate):
-        """Sets the fail_rate of this ShowAppsDetailResponse.
+        r"""Sets the fail_rate of this ShowAppsDetailResponse.
 
         失败率
 
@@ -399,7 +399,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def legal_rate(self):
-        """Gets the legal_rate of this ShowAppsDetailResponse.
+        r"""Gets the legal_rate of this ShowAppsDetailResponse.
 
         合法率
 
@@ -410,7 +410,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @legal_rate.setter
     def legal_rate(self, legal_rate):
-        """Sets the legal_rate of this ShowAppsDetailResponse.
+        r"""Sets the legal_rate of this ShowAppsDetailResponse.
 
         合法率
 
@@ -421,7 +421,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @property
     def illegal_rate(self):
-        """Gets the illegal_rate of this ShowAppsDetailResponse.
+        r"""Gets the illegal_rate of this ShowAppsDetailResponse.
 
         非法率
 
@@ -432,7 +432,7 @@ class ShowAppsDetailResponse(SdkResponse):
 
     @illegal_rate.setter
     def illegal_rate(self, illegal_rate):
-        """Sets the illegal_rate of this ShowAppsDetailResponse.
+        r"""Sets the illegal_rate of this ShowAppsDetailResponse.
 
         非法率
 

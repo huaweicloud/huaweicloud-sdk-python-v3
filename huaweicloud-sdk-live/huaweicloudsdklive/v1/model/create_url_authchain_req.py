@@ -35,7 +35,7 @@ class CreateUrlAuthchainReq:
     }
 
     def __init__(self, domain=None, domain_type=None, stream=None, app=None, check_level=None, start_time=None):
-        """CreateUrlAuthchainReq
+        r"""CreateUrlAuthchainReq
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateUrlAuthchainReq:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateUrlAuthchainReq.
+        r"""Gets the domain of this CreateUrlAuthchainReq.
 
         播放域名或推流域名
 
@@ -85,7 +85,7 @@ class CreateUrlAuthchainReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateUrlAuthchainReq.
+        r"""Sets the domain of this CreateUrlAuthchainReq.
 
         播放域名或推流域名
 
@@ -96,7 +96,7 @@ class CreateUrlAuthchainReq:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this CreateUrlAuthchainReq.
+        r"""Gets the domain_type of this CreateUrlAuthchainReq.
 
         域名类型
 
@@ -107,7 +107,7 @@ class CreateUrlAuthchainReq:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this CreateUrlAuthchainReq.
+        r"""Sets the domain_type of this CreateUrlAuthchainReq.
 
         域名类型
 
@@ -118,7 +118,7 @@ class CreateUrlAuthchainReq:
 
     @property
     def stream(self):
-        """Gets the stream of this CreateUrlAuthchainReq.
+        r"""Gets the stream of this CreateUrlAuthchainReq.
 
         流名称，与推流或播放地址中的StreamName一致。
 
@@ -129,7 +129,7 @@ class CreateUrlAuthchainReq:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this CreateUrlAuthchainReq.
+        r"""Sets the stream of this CreateUrlAuthchainReq.
 
         流名称，与推流或播放地址中的StreamName一致。
 
@@ -140,7 +140,7 @@ class CreateUrlAuthchainReq:
 
     @property
     def app(self):
-        """Gets the app of this CreateUrlAuthchainReq.
+        r"""Gets the app of this CreateUrlAuthchainReq.
 
         应用名称，与推流或播放地址中的AppName一致。
 
@@ -151,7 +151,7 @@ class CreateUrlAuthchainReq:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this CreateUrlAuthchainReq.
+        r"""Sets the app of this CreateUrlAuthchainReq.
 
         应用名称，与推流或播放地址中的AppName一致。
 
@@ -162,7 +162,7 @@ class CreateUrlAuthchainReq:
 
     @property
     def check_level(self):
-        """Gets the check_level of this CreateUrlAuthchainReq.
+        r"""Gets the check_level of this CreateUrlAuthchainReq.
 
         鉴权方式C必选。 检查级别。LiveID由AppName和StreamName组成,即\"<app_name>/<stream_name>\"。 包含如下取值： - 3：只检查LiveID是否匹配，不检查鉴权URL是否过期。 - 5：检查LiveID是否匹配，Timestamp是否超时。 
 
@@ -173,7 +173,7 @@ class CreateUrlAuthchainReq:
 
     @check_level.setter
     def check_level(self, check_level):
-        """Sets the check_level of this CreateUrlAuthchainReq.
+        r"""Sets the check_level of this CreateUrlAuthchainReq.
 
         鉴权方式C必选。 检查级别。LiveID由AppName和StreamName组成,即\"<app_name>/<stream_name>\"。 包含如下取值： - 3：只检查LiveID是否匹配，不检查鉴权URL是否过期。 - 5：检查LiveID是否匹配，Timestamp是否超时。 
 
@@ -184,7 +184,7 @@ class CreateUrlAuthchainReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateUrlAuthchainReq.
+        r"""Gets the start_time of this CreateUrlAuthchainReq.
 
         用户定义的有效访问时间起始点；例如：2006-01-02T15:04:05Z07:00 不传或为空表示当前时间
 
@@ -195,7 +195,7 @@ class CreateUrlAuthchainReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateUrlAuthchainReq.
+        r"""Sets the start_time of this CreateUrlAuthchainReq.
 
         用户定义的有效访问时间起始点；例如：2006-01-02T15:04:05Z07:00 不传或为空表示当前时间
 

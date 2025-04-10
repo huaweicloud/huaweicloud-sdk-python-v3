@@ -41,7 +41,7 @@ class ClusterFlavorDetailInfo:
     }
 
     def __init__(self, id=None, spec_name=None, current_node=None, min_node=None, max_node=None, classify=None, datastore_version=None, attribute=None, volume_node=None):
-        """ClusterFlavorDetailInfo
+        r"""ClusterFlavorDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this ClusterFlavorDetailInfo.
+        r"""Gets the id of this ClusterFlavorDetailInfo.
 
         规格ID
 
@@ -101,7 +101,7 @@ class ClusterFlavorDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterFlavorDetailInfo.
+        r"""Sets the id of this ClusterFlavorDetailInfo.
 
         规格ID
 
@@ -112,7 +112,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def spec_name(self):
-        """Gets the spec_name of this ClusterFlavorDetailInfo.
+        r"""Gets the spec_name of this ClusterFlavorDetailInfo.
 
         规格编码
 
@@ -123,7 +123,7 @@ class ClusterFlavorDetailInfo:
 
     @spec_name.setter
     def spec_name(self, spec_name):
-        """Sets the spec_name of this ClusterFlavorDetailInfo.
+        r"""Sets the spec_name of this ClusterFlavorDetailInfo.
 
         规格编码
 
@@ -134,7 +134,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def current_node(self):
-        """Gets the current_node of this ClusterFlavorDetailInfo.
+        r"""Gets the current_node of this ClusterFlavorDetailInfo.
 
         当前节点数量
 
@@ -145,7 +145,7 @@ class ClusterFlavorDetailInfo:
 
     @current_node.setter
     def current_node(self, current_node):
-        """Sets the current_node of this ClusterFlavorDetailInfo.
+        r"""Sets the current_node of this ClusterFlavorDetailInfo.
 
         当前节点数量
 
@@ -156,7 +156,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def min_node(self):
-        """Gets the min_node of this ClusterFlavorDetailInfo.
+        r"""Gets the min_node of this ClusterFlavorDetailInfo.
 
         最小节点阈值
 
@@ -167,7 +167,7 @@ class ClusterFlavorDetailInfo:
 
     @min_node.setter
     def min_node(self, min_node):
-        """Sets the min_node of this ClusterFlavorDetailInfo.
+        r"""Sets the min_node of this ClusterFlavorDetailInfo.
 
         最小节点阈值
 
@@ -178,7 +178,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def max_node(self):
-        """Gets the max_node of this ClusterFlavorDetailInfo.
+        r"""Gets the max_node of this ClusterFlavorDetailInfo.
 
         最大节点阈值
 
@@ -189,7 +189,7 @@ class ClusterFlavorDetailInfo:
 
     @max_node.setter
     def max_node(self, max_node):
-        """Sets the max_node of this ClusterFlavorDetailInfo.
+        r"""Sets the max_node of this ClusterFlavorDetailInfo.
 
         最大节点阈值
 
@@ -200,7 +200,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def classify(self):
-        """Gets the classify of this ClusterFlavorDetailInfo.
+        r"""Gets the classify of this ClusterFlavorDetailInfo.
 
         规格类型
 
@@ -211,7 +211,7 @@ class ClusterFlavorDetailInfo:
 
     @classify.setter
     def classify(self, classify):
-        """Sets the classify of this ClusterFlavorDetailInfo.
+        r"""Sets the classify of this ClusterFlavorDetailInfo.
 
         规格类型
 
@@ -222,7 +222,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ClusterFlavorDetailInfo.
+        r"""Gets the datastore_version of this ClusterFlavorDetailInfo.
 
         数据仓库版本
 
@@ -233,7 +233,7 @@ class ClusterFlavorDetailInfo:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ClusterFlavorDetailInfo.
+        r"""Sets the datastore_version of this ClusterFlavorDetailInfo.
 
         数据仓库版本
 
@@ -244,7 +244,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def attribute(self):
-        """Gets the attribute of this ClusterFlavorDetailInfo.
+        r"""Gets the attribute of this ClusterFlavorDetailInfo.
 
         扩展信息
 
@@ -255,7 +255,7 @@ class ClusterFlavorDetailInfo:
 
     @attribute.setter
     def attribute(self, attribute):
-        """Sets the attribute of this ClusterFlavorDetailInfo.
+        r"""Sets the attribute of this ClusterFlavorDetailInfo.
 
         扩展信息
 
@@ -266,7 +266,7 @@ class ClusterFlavorDetailInfo:
 
     @property
     def volume_node(self):
-        """Gets the volume_node of this ClusterFlavorDetailInfo.
+        r"""Gets the volume_node of this ClusterFlavorDetailInfo.
 
         :return: The volume_node of this ClusterFlavorDetailInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.FlavorVolumeNodeInfo`
@@ -275,7 +275,7 @@ class ClusterFlavorDetailInfo:
 
     @volume_node.setter
     def volume_node(self, volume_node):
-        """Sets the volume_node of this ClusterFlavorDetailInfo.
+        r"""Sets the volume_node of this ClusterFlavorDetailInfo.
 
         :param volume_node: The volume_node of this ClusterFlavorDetailInfo.
         :type volume_node: :class:`huaweicloudsdkdws.v2.FlavorVolumeNodeInfo`

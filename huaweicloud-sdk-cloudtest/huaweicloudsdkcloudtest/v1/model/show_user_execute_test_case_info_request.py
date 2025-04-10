@@ -27,7 +27,7 @@ class ShowUserExecuteTestCaseInfoRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowUserExecuteTestCaseInfoRequest
+        r"""ShowUserExecuteTestCaseInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowUserExecuteTestCaseInfoRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowUserExecuteTestCaseInfoRequest.
+        r"""Gets the project_id of this ShowUserExecuteTestCaseInfoRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowUserExecuteTestCaseInfoRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowUserExecuteTestCaseInfoRequest.
+        r"""Sets the project_id of this ShowUserExecuteTestCaseInfoRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowUserExecuteTestCaseInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowUserExecuteTestCaseInfoRequest.
+        r"""Gets the body of this ShowUserExecuteTestCaseInfoRequest.
 
         :return: The body of this ShowUserExecuteTestCaseInfoRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowUserExecuteTestCaseInfoRequestBody`
@@ -80,7 +80,7 @@ class ShowUserExecuteTestCaseInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowUserExecuteTestCaseInfoRequest.
+        r"""Sets the body of this ShowUserExecuteTestCaseInfoRequest.
 
         :param body: The body of this ShowUserExecuteTestCaseInfoRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ShowUserExecuteTestCaseInfoRequestBody`

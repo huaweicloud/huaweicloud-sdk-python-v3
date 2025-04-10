@@ -47,7 +47,7 @@ class UpgradeReports:
     }
 
     def __init__(self, id=None, start_time=None, end_time=None, src_instance_id=None, src_database_version=None, dst_instance_id=None, dst_database_version=None, result=None, is_private_ip_changed=None, private_ip_change_time=None, statistics_collection_mode=None, detail=None):
-        """UpgradeReports
+        r"""UpgradeReports
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class UpgradeReports:
 
     @property
     def id(self):
-        """Gets the id of this UpgradeReports.
+        r"""Gets the id of this UpgradeReports.
 
         升级报告ID。
 
@@ -119,7 +119,7 @@ class UpgradeReports:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpgradeReports.
+        r"""Sets the id of this UpgradeReports.
 
         升级报告ID。
 
@@ -130,7 +130,7 @@ class UpgradeReports:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpgradeReports.
+        r"""Gets the start_time of this UpgradeReports.
 
         升级开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -141,7 +141,7 @@ class UpgradeReports:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpgradeReports.
+        r"""Sets the start_time of this UpgradeReports.
 
         升级开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -152,7 +152,7 @@ class UpgradeReports:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpgradeReports.
+        r"""Gets the end_time of this UpgradeReports.
 
         升级结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -163,7 +163,7 @@ class UpgradeReports:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpgradeReports.
+        r"""Sets the end_time of this UpgradeReports.
 
         升级结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -174,7 +174,7 @@ class UpgradeReports:
 
     @property
     def src_instance_id(self):
-        """Gets the src_instance_id of this UpgradeReports.
+        r"""Gets the src_instance_id of this UpgradeReports.
 
         原实例ID。
 
@@ -185,7 +185,7 @@ class UpgradeReports:
 
     @src_instance_id.setter
     def src_instance_id(self, src_instance_id):
-        """Sets the src_instance_id of this UpgradeReports.
+        r"""Sets the src_instance_id of this UpgradeReports.
 
         原实例ID。
 
@@ -196,7 +196,7 @@ class UpgradeReports:
 
     @property
     def src_database_version(self):
-        """Gets the src_database_version of this UpgradeReports.
+        r"""Gets the src_database_version of this UpgradeReports.
 
         原数据库版本。
 
@@ -207,7 +207,7 @@ class UpgradeReports:
 
     @src_database_version.setter
     def src_database_version(self, src_database_version):
-        """Sets the src_database_version of this UpgradeReports.
+        r"""Sets the src_database_version of this UpgradeReports.
 
         原数据库版本。
 
@@ -218,7 +218,7 @@ class UpgradeReports:
 
     @property
     def dst_instance_id(self):
-        """Gets the dst_instance_id of this UpgradeReports.
+        r"""Gets the dst_instance_id of this UpgradeReports.
 
         目标实例ID。
 
@@ -229,7 +229,7 @@ class UpgradeReports:
 
     @dst_instance_id.setter
     def dst_instance_id(self, dst_instance_id):
-        """Sets the dst_instance_id of this UpgradeReports.
+        r"""Sets the dst_instance_id of this UpgradeReports.
 
         目标实例ID。
 
@@ -240,7 +240,7 @@ class UpgradeReports:
 
     @property
     def dst_database_version(self):
-        """Gets the dst_database_version of this UpgradeReports.
+        r"""Gets the dst_database_version of this UpgradeReports.
 
         目标数据库版本。
 
@@ -251,7 +251,7 @@ class UpgradeReports:
 
     @dst_database_version.setter
     def dst_database_version(self, dst_database_version):
-        """Sets the dst_database_version of this UpgradeReports.
+        r"""Sets the dst_database_version of this UpgradeReports.
 
         目标数据库版本。
 
@@ -262,7 +262,7 @@ class UpgradeReports:
 
     @property
     def result(self):
-        """Gets the result of this UpgradeReports.
+        r"""Gets the result of this UpgradeReports.
 
         升级结果。 success，表示成功。 failed，表示失败。 running， 表示升级中。
 
@@ -273,7 +273,7 @@ class UpgradeReports:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpgradeReports.
+        r"""Sets the result of this UpgradeReports.
 
         升级结果。 success，表示成功。 failed，表示失败。 running， 表示升级中。
 
@@ -284,7 +284,7 @@ class UpgradeReports:
 
     @property
     def is_private_ip_changed(self):
-        """Gets the is_private_ip_changed of this UpgradeReports.
+        r"""Gets the is_private_ip_changed of this UpgradeReports.
 
         实例内网IP是否改变。 true，表示改变。 false，表示不改变。
 
@@ -295,7 +295,7 @@ class UpgradeReports:
 
     @is_private_ip_changed.setter
     def is_private_ip_changed(self, is_private_ip_changed):
-        """Sets the is_private_ip_changed of this UpgradeReports.
+        r"""Sets the is_private_ip_changed of this UpgradeReports.
 
         实例内网IP是否改变。 true，表示改变。 false，表示不改变。
 
@@ -306,7 +306,7 @@ class UpgradeReports:
 
     @property
     def private_ip_change_time(self):
-        """Gets the private_ip_change_time of this UpgradeReports.
+        r"""Gets the private_ip_change_time of this UpgradeReports.
 
         实例内网IP修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -317,7 +317,7 @@ class UpgradeReports:
 
     @private_ip_change_time.setter
     def private_ip_change_time(self, private_ip_change_time):
-        """Sets the private_ip_change_time of this UpgradeReports.
+        r"""Sets the private_ip_change_time of this UpgradeReports.
 
         实例内网IP修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -328,7 +328,7 @@ class UpgradeReports:
 
     @property
     def statistics_collection_mode(self):
-        """Gets the statistics_collection_mode of this UpgradeReports.
+        r"""Gets the statistics_collection_mode of this UpgradeReports.
 
         统计信息收集模式。 before_change_private_ip，修改实例内网IP前收集。 after_change_private_ip，修改实例内网IP后收集。
 
@@ -339,7 +339,7 @@ class UpgradeReports:
 
     @statistics_collection_mode.setter
     def statistics_collection_mode(self, statistics_collection_mode):
-        """Sets the statistics_collection_mode of this UpgradeReports.
+        r"""Sets the statistics_collection_mode of this UpgradeReports.
 
         统计信息收集模式。 before_change_private_ip，修改实例内网IP前收集。 after_change_private_ip，修改实例内网IP后收集。
 
@@ -350,7 +350,7 @@ class UpgradeReports:
 
     @property
     def detail(self):
-        """Gets the detail of this UpgradeReports.
+        r"""Gets the detail of this UpgradeReports.
 
         升级报告详情。
 
@@ -361,7 +361,7 @@ class UpgradeReports:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this UpgradeReports.
+        r"""Sets the detail of this UpgradeReports.
 
         升级报告详情。
 

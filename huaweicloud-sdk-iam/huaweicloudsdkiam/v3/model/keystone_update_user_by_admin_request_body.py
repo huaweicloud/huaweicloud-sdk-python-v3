@@ -25,7 +25,7 @@ class KeystoneUpdateUserByAdminRequestBody:
     }
 
     def __init__(self, user=None):
-        """KeystoneUpdateUserByAdminRequestBody
+        r"""KeystoneUpdateUserByAdminRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneUpdateUserByAdminRequestBody:
 
     @property
     def user(self):
-        """Gets the user of this KeystoneUpdateUserByAdminRequestBody.
+        r"""Gets the user of this KeystoneUpdateUserByAdminRequestBody.
 
         :return: The user of this KeystoneUpdateUserByAdminRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserOption`
@@ -51,7 +51,7 @@ class KeystoneUpdateUserByAdminRequestBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this KeystoneUpdateUserByAdminRequestBody.
+        r"""Sets the user of this KeystoneUpdateUserByAdminRequestBody.
 
         :param user: The user of this KeystoneUpdateUserByAdminRequestBody.
         :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserOption`

@@ -27,7 +27,7 @@ class PolicyAgency:
     }
 
     def __init__(self, agency_id=None, attached_at=None):
-        """PolicyAgency
+        r"""PolicyAgency
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyAgency:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this PolicyAgency.
+        r"""Gets the agency_id of this PolicyAgency.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class PolicyAgency:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this PolicyAgency.
+        r"""Sets the agency_id of this PolicyAgency.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class PolicyAgency:
 
     @property
     def attached_at(self):
-        """Gets the attached_at of this PolicyAgency.
+        r"""Gets the attached_at of this PolicyAgency.
 
         身份策略的附加时间。
 
@@ -81,7 +81,7 @@ class PolicyAgency:
 
     @attached_at.setter
     def attached_at(self, attached_at):
-        """Sets the attached_at of this PolicyAgency.
+        r"""Sets the attached_at of this PolicyAgency.
 
         身份策略的附加时间。
 

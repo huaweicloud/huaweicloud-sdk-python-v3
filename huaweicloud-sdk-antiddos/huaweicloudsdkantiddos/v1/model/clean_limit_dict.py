@@ -29,7 +29,7 @@ class CleanLimitDict:
     }
 
     def __init__(self, cleaning_access_pos_id=None, new_connection_limited=None, total_connection_limited=None):
-        """CleanLimitDict
+        r"""CleanLimitDict
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CleanLimitDict:
 
     @property
     def cleaning_access_pos_id(self):
-        """Gets the cleaning_access_pos_id of this CleanLimitDict.
+        r"""Gets the cleaning_access_pos_id of this CleanLimitDict.
 
         清洗时访问限制分段ID
 
@@ -65,7 +65,7 @@ class CleanLimitDict:
 
     @cleaning_access_pos_id.setter
     def cleaning_access_pos_id(self, cleaning_access_pos_id):
-        """Sets the cleaning_access_pos_id of this CleanLimitDict.
+        r"""Sets the cleaning_access_pos_id of this CleanLimitDict.
 
         清洗时访问限制分段ID
 
@@ -76,7 +76,7 @@ class CleanLimitDict:
 
     @property
     def new_connection_limited(self):
-        """Gets the new_connection_limited of this CleanLimitDict.
+        r"""Gets the new_connection_limited of this CleanLimitDict.
 
         单一源IP新建连接个数
 
@@ -87,7 +87,7 @@ class CleanLimitDict:
 
     @new_connection_limited.setter
     def new_connection_limited(self, new_connection_limited):
-        """Sets the new_connection_limited of this CleanLimitDict.
+        r"""Sets the new_connection_limited of this CleanLimitDict.
 
         单一源IP新建连接个数
 
@@ -98,7 +98,7 @@ class CleanLimitDict:
 
     @property
     def total_connection_limited(self):
-        """Gets the total_connection_limited of this CleanLimitDict.
+        r"""Gets the total_connection_limited of this CleanLimitDict.
 
         单一源IP连接数总个数
 
@@ -109,7 +109,7 @@ class CleanLimitDict:
 
     @total_connection_limited.setter
     def total_connection_limited(self, total_connection_limited):
-        """Sets the total_connection_limited of this CleanLimitDict.
+        r"""Sets the total_connection_limited of this CleanLimitDict.
 
         单一源IP连接数总个数
 

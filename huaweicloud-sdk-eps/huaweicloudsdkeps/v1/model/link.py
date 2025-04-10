@@ -27,7 +27,7 @@ class Link:
     }
 
     def __init__(self, href=None, rel=None):
-        """Link
+        r"""Link
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Link:
 
     @property
     def href(self):
-        """Gets the href of this Link.
+        r"""Gets the href of this Link.
 
         API的URL地址。
 
@@ -59,7 +59,7 @@ class Link:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this Link.
+        r"""Sets the href of this Link.
 
         API的URL地址。
 
@@ -70,7 +70,7 @@ class Link:
 
     @property
     def rel(self):
-        """Gets the rel of this Link.
+        r"""Gets the rel of this Link.
 
         self。
 
@@ -81,7 +81,7 @@ class Link:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this Link.
+        r"""Sets the rel of this Link.
 
         self。
 

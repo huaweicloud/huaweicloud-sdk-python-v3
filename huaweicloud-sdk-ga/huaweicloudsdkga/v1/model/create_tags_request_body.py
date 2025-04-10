@@ -25,7 +25,7 @@ class CreateTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """CreateTagsRequestBody
+        r"""CreateTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTagsRequestBody.
+        r"""Gets the tags of this CreateTagsRequestBody.
 
         标签列表。
 
@@ -53,7 +53,7 @@ class CreateTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTagsRequestBody.
+        r"""Sets the tags of this CreateTagsRequestBody.
 
         标签列表。
 

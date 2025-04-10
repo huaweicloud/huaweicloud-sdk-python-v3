@@ -30,7 +30,7 @@ class DeleteTableResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_mode=None):
-        """DeleteTableResponse
+        r"""DeleteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteTableResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this DeleteTableResponse.
+        r"""Gets the is_success of this DeleteTableResponse.
 
         执行请求是否成功。“true”表示请求执行成功
 
@@ -69,7 +69,7 @@ class DeleteTableResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this DeleteTableResponse.
+        r"""Sets the is_success of this DeleteTableResponse.
 
         执行请求是否成功。“true”表示请求执行成功
 
@@ -80,7 +80,7 @@ class DeleteTableResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteTableResponse.
+        r"""Gets the message of this DeleteTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class DeleteTableResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteTableResponse.
+        r"""Sets the message of this DeleteTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class DeleteTableResponse(SdkResponse):
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this DeleteTableResponse.
+        r"""Gets the job_mode of this DeleteTableResponse.
 
         删除表作业的时候类型，是同步删除还是异步删除
 
@@ -113,7 +113,7 @@ class DeleteTableResponse(SdkResponse):
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this DeleteTableResponse.
+        r"""Sets the job_mode of this DeleteTableResponse.
 
         删除表作业的时候类型，是同步删除还是异步删除
 

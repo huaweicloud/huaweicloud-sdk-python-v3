@@ -31,7 +31,7 @@ class ReplicationRecordMetadata:
     }
 
     def __init__(self, multiattach=None, bootable=None, volume_size=None, volume_type=None):
-        """ReplicationRecordMetadata
+        r"""ReplicationRecordMetadata
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ReplicationRecordMetadata:
 
     @property
     def multiattach(self):
-        """Gets the multiattach of this ReplicationRecordMetadata.
+        r"""Gets the multiattach of this ReplicationRecordMetadata.
 
         复制对中的云硬盘是否为共享云硬盘。
 
@@ -71,7 +71,7 @@ class ReplicationRecordMetadata:
 
     @multiattach.setter
     def multiattach(self, multiattach):
-        """Sets the multiattach of this ReplicationRecordMetadata.
+        r"""Sets the multiattach of this ReplicationRecordMetadata.
 
         复制对中的云硬盘是否为共享云硬盘。
 
@@ -82,7 +82,7 @@ class ReplicationRecordMetadata:
 
     @property
     def bootable(self):
-        """Gets the bootable of this ReplicationRecordMetadata.
+        r"""Gets the bootable of this ReplicationRecordMetadata.
 
         复制对中的云硬盘是否为系统盘。
 
@@ -93,7 +93,7 @@ class ReplicationRecordMetadata:
 
     @bootable.setter
     def bootable(self, bootable):
-        """Sets the bootable of this ReplicationRecordMetadata.
+        r"""Sets the bootable of this ReplicationRecordMetadata.
 
         复制对中的云硬盘是否为系统盘。
 
@@ -104,7 +104,7 @@ class ReplicationRecordMetadata:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this ReplicationRecordMetadata.
+        r"""Gets the volume_size of this ReplicationRecordMetadata.
 
         复制对中的云硬盘容量。单位：GB
 
@@ -115,7 +115,7 @@ class ReplicationRecordMetadata:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this ReplicationRecordMetadata.
+        r"""Sets the volume_size of this ReplicationRecordMetadata.
 
         复制对中的云硬盘容量。单位：GB
 
@@ -126,7 +126,7 @@ class ReplicationRecordMetadata:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ReplicationRecordMetadata.
+        r"""Gets the volume_type of this ReplicationRecordMetadata.
 
         复制对中的云硬盘类型。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。co-p1：高IO（性能优化I型）uh-l1：超高IO（时延优化）其中co-p1和uh-l1两种云硬盘只能使用在HANA云服务器、HL1型云服务器、HL2型云服务器上。
 
@@ -137,7 +137,7 @@ class ReplicationRecordMetadata:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ReplicationRecordMetadata.
+        r"""Sets the volume_type of this ReplicationRecordMetadata.
 
         复制对中的云硬盘类型。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。co-p1：高IO（性能优化I型）uh-l1：超高IO（时延优化）其中co-p1和uh-l1两种云硬盘只能使用在HANA云服务器、HL1型云服务器、HL2型云服务器上。
 

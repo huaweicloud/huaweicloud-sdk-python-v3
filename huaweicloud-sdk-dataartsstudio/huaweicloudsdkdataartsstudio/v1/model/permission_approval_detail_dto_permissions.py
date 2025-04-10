@@ -37,7 +37,7 @@ class PermissionApprovalDetailDTOPermissions:
     }
 
     def __init__(self, column_name=None, database_name=None, permission_action=None, permission_set_id=None, schema_name=None, secrecy_level_id=None, table_name=None):
-        """PermissionApprovalDetailDTOPermissions
+        r"""PermissionApprovalDetailDTOPermissions
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def column_name(self):
-        """Gets the column_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the column_name of this PermissionApprovalDetailDTOPermissions.
 
         列名称
 
@@ -96,7 +96,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the column_name of this PermissionApprovalDetailDTOPermissions.
 
         列名称
 
@@ -107,7 +107,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def database_name(self):
-        """Gets the database_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the database_name of this PermissionApprovalDetailDTOPermissions.
 
         库名称
 
@@ -118,7 +118,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the database_name of this PermissionApprovalDetailDTOPermissions.
 
         库名称
 
@@ -129,7 +129,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def permission_action(self):
-        """Gets the permission_action of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the permission_action of this PermissionApprovalDetailDTOPermissions.
 
         权限
 
@@ -140,7 +140,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @permission_action.setter
     def permission_action(self, permission_action):
-        """Sets the permission_action of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the permission_action of this PermissionApprovalDetailDTOPermissions.
 
         权限
 
@@ -151,7 +151,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the permission_set_id of this PermissionApprovalDetailDTOPermissions.
 
         申请权限所在的空间权限集
 
@@ -162,7 +162,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the permission_set_id of this PermissionApprovalDetailDTOPermissions.
 
         申请权限所在的空间权限集
 
@@ -173,7 +173,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the schema_name of this PermissionApprovalDetailDTOPermissions.
 
         schema名称
 
@@ -184,7 +184,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the schema_name of this PermissionApprovalDetailDTOPermissions.
 
         schema名称
 
@@ -195,7 +195,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def secrecy_level_id(self):
-        """Gets the secrecy_level_id of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the secrecy_level_id of this PermissionApprovalDetailDTOPermissions.
 
         密级
 
@@ -206,7 +206,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @secrecy_level_id.setter
     def secrecy_level_id(self, secrecy_level_id):
-        """Sets the secrecy_level_id of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the secrecy_level_id of this PermissionApprovalDetailDTOPermissions.
 
         密级
 
@@ -217,7 +217,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @property
     def table_name(self):
-        """Gets the table_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Gets the table_name of this PermissionApprovalDetailDTOPermissions.
 
         表名
 
@@ -228,7 +228,7 @@ class PermissionApprovalDetailDTOPermissions:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PermissionApprovalDetailDTOPermissions.
+        r"""Sets the table_name of this PermissionApprovalDetailDTOPermissions.
 
         表名
 

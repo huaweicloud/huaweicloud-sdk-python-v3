@@ -25,7 +25,7 @@ class RegisterCompetitionInfoRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterCompetitionInfoRequest
+        r"""RegisterCompetitionInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterCompetitionInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterCompetitionInfoRequest.
+        r"""Gets the body of this RegisterCompetitionInfoRequest.
 
         :return: The body of this RegisterCompetitionInfoRequest.
         :rtype: :class:`huaweicloudsdkcodecraft.v5.RegisterInfoRequestModel`
@@ -52,7 +52,7 @@ class RegisterCompetitionInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterCompetitionInfoRequest.
+        r"""Sets the body of this RegisterCompetitionInfoRequest.
 
         :param body: The body of this RegisterCompetitionInfoRequest.
         :type body: :class:`huaweicloudsdkcodecraft.v5.RegisterInfoRequestModel`

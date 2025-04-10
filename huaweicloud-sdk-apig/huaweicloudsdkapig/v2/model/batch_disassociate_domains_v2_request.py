@@ -27,7 +27,7 @@ class BatchDisassociateDomainsV2Request:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """BatchDisassociateDomainsV2Request
+        r"""BatchDisassociateDomainsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDisassociateDomainsV2Request:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this BatchDisassociateDomainsV2Request.
+        r"""Gets the certificate_id of this BatchDisassociateDomainsV2Request.
 
         证书的编号
 
@@ -60,7 +60,7 @@ class BatchDisassociateDomainsV2Request:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this BatchDisassociateDomainsV2Request.
+        r"""Sets the certificate_id of this BatchDisassociateDomainsV2Request.
 
         证书的编号
 
@@ -71,7 +71,7 @@ class BatchDisassociateDomainsV2Request:
 
     @property
     def body(self):
-        """Gets the body of this BatchDisassociateDomainsV2Request.
+        r"""Gets the body of this BatchDisassociateDomainsV2Request.
 
         :return: The body of this BatchDisassociateDomainsV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.AttachOrDetachDomainsReqBody`
@@ -80,7 +80,7 @@ class BatchDisassociateDomainsV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDisassociateDomainsV2Request.
+        r"""Sets the body of this BatchDisassociateDomainsV2Request.
 
         :param body: The body of this BatchDisassociateDomainsV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.AttachOrDetachDomainsReqBody`

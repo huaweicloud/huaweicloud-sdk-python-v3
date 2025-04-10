@@ -33,7 +33,7 @@ class CpiReceptor:
     }
 
     def __init__(self, source=None, url=None, format=None, data=None, fasta_count=None):
-        """CpiReceptor
+        r"""CpiReceptor
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CpiReceptor:
 
     @property
     def source(self):
-        """Gets the source of this CpiReceptor.
+        r"""Gets the source of this CpiReceptor.
 
         :return: The source of this CpiReceptor.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -79,7 +79,7 @@ class CpiReceptor:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CpiReceptor.
+        r"""Sets the source of this CpiReceptor.
 
         :param source: The source of this CpiReceptor.
         :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -88,7 +88,7 @@ class CpiReceptor:
 
     @property
     def url(self):
-        """Gets the url of this CpiReceptor.
+        r"""Gets the url of this CpiReceptor.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -99,7 +99,7 @@ class CpiReceptor:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CpiReceptor.
+        r"""Sets the url of this CpiReceptor.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -110,7 +110,7 @@ class CpiReceptor:
 
     @property
     def format(self):
-        """Gets the format of this CpiReceptor.
+        r"""Gets the format of this CpiReceptor.
 
         文件格式，仅支持FASTA，仅数据源为RAW时提供
 
@@ -121,7 +121,7 @@ class CpiReceptor:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CpiReceptor.
+        r"""Sets the format of this CpiReceptor.
 
         文件格式，仅支持FASTA，仅数据源为RAW时提供
 
@@ -132,7 +132,7 @@ class CpiReceptor:
 
     @property
     def data(self):
-        """Gets the data of this CpiReceptor.
+        r"""Gets the data of this CpiReceptor.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -143,7 +143,7 @@ class CpiReceptor:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CpiReceptor.
+        r"""Sets the data of this CpiReceptor.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -154,7 +154,7 @@ class CpiReceptor:
 
     @property
     def fasta_count(self):
-        """Gets the fasta_count of this CpiReceptor.
+        r"""Gets the fasta_count of this CpiReceptor.
 
         fasta文件中氨基酸数量
 
@@ -165,7 +165,7 @@ class CpiReceptor:
 
     @fasta_count.setter
     def fasta_count(self, fasta_count):
-        """Sets the fasta_count of this CpiReceptor.
+        r"""Sets the fasta_count of this CpiReceptor.
 
         fasta文件中氨基酸数量
 

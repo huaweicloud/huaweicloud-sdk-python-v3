@@ -29,7 +29,7 @@ class DeleteAlertRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """DeleteAlertRequest
+        r"""DeleteAlertRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteAlertRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteAlertRequest.
+        r"""Gets the project_id of this DeleteAlertRequest.
 
         ID of project
 
@@ -66,7 +66,7 @@ class DeleteAlertRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteAlertRequest.
+        r"""Sets the project_id of this DeleteAlertRequest.
 
         ID of project
 
@@ -77,7 +77,7 @@ class DeleteAlertRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteAlertRequest.
+        r"""Gets the workspace_id of this DeleteAlertRequest.
 
         ID of workspace
 
@@ -88,7 +88,7 @@ class DeleteAlertRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteAlertRequest.
+        r"""Sets the workspace_id of this DeleteAlertRequest.
 
         ID of workspace
 
@@ -99,7 +99,7 @@ class DeleteAlertRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAlertRequest.
+        r"""Gets the body of this DeleteAlertRequest.
 
         :return: The body of this DeleteAlertRequest.
         :rtype: :class:`huaweicloudsdksa.v2.DeleteAlert`
@@ -108,7 +108,7 @@ class DeleteAlertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAlertRequest.
+        r"""Sets the body of this DeleteAlertRequest.
 
         :param body: The body of this DeleteAlertRequest.
         :type body: :class:`huaweicloudsdksa.v2.DeleteAlert`

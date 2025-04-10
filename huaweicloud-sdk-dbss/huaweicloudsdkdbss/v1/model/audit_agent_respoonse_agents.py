@@ -49,7 +49,7 @@ class AuditAgentRespoonseAgents:
     }
 
     def __init__(self, agent_id=None, agent_type=None, agent_os=None, agent_ip=None, mem_threshold=None, cpu_threshold=None, status=None, agent_nic=None, db_name=None, datacap_status=None, agent_url=None, universal=None, sha256=None):
-        """AuditAgentRespoonseAgents
+        r"""AuditAgentRespoonseAgents
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AuditAgentRespoonseAgents.
+        r"""Gets the agent_id of this AuditAgentRespoonseAgents.
 
         agent ID
 
@@ -134,7 +134,7 @@ class AuditAgentRespoonseAgents:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AuditAgentRespoonseAgents.
+        r"""Sets the agent_id of this AuditAgentRespoonseAgents.
 
         agent ID
 
@@ -145,7 +145,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def agent_type(self):
-        """Gets the agent_type of this AuditAgentRespoonseAgents.
+        r"""Gets the agent_type of this AuditAgentRespoonseAgents.
 
         agent 类型
 
@@ -156,7 +156,7 @@ class AuditAgentRespoonseAgents:
 
     @agent_type.setter
     def agent_type(self, agent_type):
-        """Sets the agent_type of this AuditAgentRespoonseAgents.
+        r"""Sets the agent_type of this AuditAgentRespoonseAgents.
 
         agent 类型
 
@@ -167,7 +167,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def agent_os(self):
-        """Gets the agent_os of this AuditAgentRespoonseAgents.
+        r"""Gets the agent_os of this AuditAgentRespoonseAgents.
 
         agent OS
 
@@ -178,7 +178,7 @@ class AuditAgentRespoonseAgents:
 
     @agent_os.setter
     def agent_os(self, agent_os):
-        """Sets the agent_os of this AuditAgentRespoonseAgents.
+        r"""Sets the agent_os of this AuditAgentRespoonseAgents.
 
         agent OS
 
@@ -189,7 +189,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def agent_ip(self):
-        """Gets the agent_ip of this AuditAgentRespoonseAgents.
+        r"""Gets the agent_ip of this AuditAgentRespoonseAgents.
 
         agent安装节点IP
 
@@ -200,7 +200,7 @@ class AuditAgentRespoonseAgents:
 
     @agent_ip.setter
     def agent_ip(self, agent_ip):
-        """Sets the agent_ip of this AuditAgentRespoonseAgents.
+        r"""Sets the agent_ip of this AuditAgentRespoonseAgents.
 
         agent安装节点IP
 
@@ -211,7 +211,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def mem_threshold(self):
-        """Gets the mem_threshold of this AuditAgentRespoonseAgents.
+        r"""Gets the mem_threshold of this AuditAgentRespoonseAgents.
 
         内存阈值
 
@@ -222,7 +222,7 @@ class AuditAgentRespoonseAgents:
 
     @mem_threshold.setter
     def mem_threshold(self, mem_threshold):
-        """Sets the mem_threshold of this AuditAgentRespoonseAgents.
+        r"""Sets the mem_threshold of this AuditAgentRespoonseAgents.
 
         内存阈值
 
@@ -233,7 +233,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def cpu_threshold(self):
-        """Gets the cpu_threshold of this AuditAgentRespoonseAgents.
+        r"""Gets the cpu_threshold of this AuditAgentRespoonseAgents.
 
         cpu阈值
 
@@ -244,7 +244,7 @@ class AuditAgentRespoonseAgents:
 
     @cpu_threshold.setter
     def cpu_threshold(self, cpu_threshold):
-        """Sets the cpu_threshold of this AuditAgentRespoonseAgents.
+        r"""Sets the cpu_threshold of this AuditAgentRespoonseAgents.
 
         cpu阈值
 
@@ -255,7 +255,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def status(self):
-        """Gets the status of this AuditAgentRespoonseAgents.
+        r"""Gets the status of this AuditAgentRespoonseAgents.
 
         agent状态
 
@@ -266,7 +266,7 @@ class AuditAgentRespoonseAgents:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuditAgentRespoonseAgents.
+        r"""Sets the status of this AuditAgentRespoonseAgents.
 
         agent状态
 
@@ -277,7 +277,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def agent_nic(self):
-        """Gets the agent_nic of this AuditAgentRespoonseAgents.
+        r"""Gets the agent_nic of this AuditAgentRespoonseAgents.
 
         agent网卡
 
@@ -288,7 +288,7 @@ class AuditAgentRespoonseAgents:
 
     @agent_nic.setter
     def agent_nic(self, agent_nic):
-        """Sets the agent_nic of this AuditAgentRespoonseAgents.
+        r"""Sets the agent_nic of this AuditAgentRespoonseAgents.
 
         agent网卡
 
@@ -299,7 +299,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def db_name(self):
-        """Gets the db_name of this AuditAgentRespoonseAgents.
+        r"""Gets the db_name of this AuditAgentRespoonseAgents.
 
         数据库名称
 
@@ -310,7 +310,7 @@ class AuditAgentRespoonseAgents:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this AuditAgentRespoonseAgents.
+        r"""Sets the db_name of this AuditAgentRespoonseAgents.
 
         数据库名称
 
@@ -321,7 +321,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def datacap_status(self):
-        """Gets the datacap_status of this AuditAgentRespoonseAgents.
+        r"""Gets the datacap_status of this AuditAgentRespoonseAgents.
 
         数据流量抓取状态
 
@@ -332,7 +332,7 @@ class AuditAgentRespoonseAgents:
 
     @datacap_status.setter
     def datacap_status(self, datacap_status):
-        """Sets the datacap_status of this AuditAgentRespoonseAgents.
+        r"""Sets the datacap_status of this AuditAgentRespoonseAgents.
 
         数据流量抓取状态
 
@@ -343,7 +343,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def agent_url(self):
-        """Gets the agent_url of this AuditAgentRespoonseAgents.
+        r"""Gets the agent_url of this AuditAgentRespoonseAgents.
 
         agent安装地址
 
@@ -354,7 +354,7 @@ class AuditAgentRespoonseAgents:
 
     @agent_url.setter
     def agent_url(self, agent_url):
-        """Sets the agent_url of this AuditAgentRespoonseAgents.
+        r"""Sets the agent_url of this AuditAgentRespoonseAgents.
 
         agent安装地址
 
@@ -365,7 +365,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def universal(self):
-        """Gets the universal of this AuditAgentRespoonseAgents.
+        r"""Gets the universal of this AuditAgentRespoonseAgents.
 
         是否CCE场景
 
@@ -376,7 +376,7 @@ class AuditAgentRespoonseAgents:
 
     @universal.setter
     def universal(self, universal):
-        """Sets the universal of this AuditAgentRespoonseAgents.
+        r"""Sets the universal of this AuditAgentRespoonseAgents.
 
         是否CCE场景
 
@@ -387,7 +387,7 @@ class AuditAgentRespoonseAgents:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this AuditAgentRespoonseAgents.
+        r"""Gets the sha256 of this AuditAgentRespoonseAgents.
 
         sha256值
 
@@ -398,7 +398,7 @@ class AuditAgentRespoonseAgents:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this AuditAgentRespoonseAgents.
+        r"""Sets the sha256 of this AuditAgentRespoonseAgents.
 
         sha256值
 

@@ -26,7 +26,7 @@ class ShowHealthObjectCompareJobOverviewResponse(SdkResponse):
     }
 
     def __init__(self, compare_result=None):
-        """ShowHealthObjectCompareJobOverviewResponse
+        r"""ShowHealthObjectCompareJobOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowHealthObjectCompareJobOverviewResponse(SdkResponse):
 
     @property
     def compare_result(self):
-        """Gets the compare_result of this ShowHealthObjectCompareJobOverviewResponse.
+        r"""Gets the compare_result of this ShowHealthObjectCompareJobOverviewResponse.
 
         健康对比对象级对比结果。
 
@@ -55,7 +55,7 @@ class ShowHealthObjectCompareJobOverviewResponse(SdkResponse):
 
     @compare_result.setter
     def compare_result(self, compare_result):
-        """Sets the compare_result of this ShowHealthObjectCompareJobOverviewResponse.
+        r"""Sets the compare_result of this ShowHealthObjectCompareJobOverviewResponse.
 
         健康对比对象级对比结果。
 

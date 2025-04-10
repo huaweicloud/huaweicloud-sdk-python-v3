@@ -25,7 +25,7 @@ class ShowRedisPitrPolicyRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowRedisPitrPolicyRequest
+        r"""ShowRedisPitrPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRedisPitrPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRedisPitrPolicyRequest.
+        r"""Gets the instance_id of this ShowRedisPitrPolicyRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowRedisPitrPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRedisPitrPolicyRequest.
+        r"""Sets the instance_id of this ShowRedisPitrPolicyRequest.
 
         实例ID。
 

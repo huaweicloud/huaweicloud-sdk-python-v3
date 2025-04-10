@@ -23,7 +23,7 @@ class GroupDescription:
     }
 
     def __init__(self):
-        """GroupDescription
+        r"""GroupDescription
 
         The model defined in huaweicloud sdk
 

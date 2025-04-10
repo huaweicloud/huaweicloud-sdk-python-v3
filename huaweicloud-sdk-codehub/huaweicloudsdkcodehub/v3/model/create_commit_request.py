@@ -27,7 +27,7 @@ class CreateCommitRequest:
     }
 
     def __init__(self, repo_id=None, body=None):
-        """CreateCommitRequest
+        r"""CreateCommitRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCommitRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this CreateCommitRequest.
+        r"""Gets the repo_id of this CreateCommitRequest.
 
         仓库短id
 
@@ -60,7 +60,7 @@ class CreateCommitRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this CreateCommitRequest.
+        r"""Sets the repo_id of this CreateCommitRequest.
 
         仓库短id
 
@@ -71,7 +71,7 @@ class CreateCommitRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCommitRequest.
+        r"""Gets the body of this CreateCommitRequest.
 
         :return: The body of this CreateCommitRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`
@@ -80,7 +80,7 @@ class CreateCommitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCommitRequest.
+        r"""Sets the body of this CreateCommitRequest.
 
         :param body: The body of this CreateCommitRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`

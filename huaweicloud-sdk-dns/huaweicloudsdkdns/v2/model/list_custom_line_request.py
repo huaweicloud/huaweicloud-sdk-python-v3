@@ -37,7 +37,7 @@ class ListCustomLineRequest:
     }
 
     def __init__(self, line_id=None, name=None, limit=None, offset=None, show_detail=None, status=None, ip=None):
-        """ListCustomLineRequest
+        r"""ListCustomLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListCustomLineRequest:
 
     @property
     def line_id(self):
-        """Gets the line_id of this ListCustomLineRequest.
+        r"""Gets the line_id of this ListCustomLineRequest.
 
         解析线路ID。
 
@@ -96,7 +96,7 @@ class ListCustomLineRequest:
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this ListCustomLineRequest.
+        r"""Sets the line_id of this ListCustomLineRequest.
 
         解析线路ID。
 
@@ -107,7 +107,7 @@ class ListCustomLineRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCustomLineRequest.
+        r"""Gets the name of this ListCustomLineRequest.
 
         解析线路名称。
 
@@ -118,7 +118,7 @@ class ListCustomLineRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCustomLineRequest.
+        r"""Sets the name of this ListCustomLineRequest.
 
         解析线路名称。
 
@@ -129,7 +129,7 @@ class ListCustomLineRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomLineRequest.
+        r"""Gets the limit of this ListCustomLineRequest.
 
         每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
 
@@ -140,7 +140,7 @@ class ListCustomLineRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomLineRequest.
+        r"""Sets the limit of this ListCustomLineRequest.
 
         每页返回的资源个数。 当查询详细信息时：取值范围：0~100取值一般为10，20，50默认为100。 当查询概要信息时：取值范围：0~3000默认为3000。
 
@@ -151,7 +151,7 @@ class ListCustomLineRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomLineRequest.
+        r"""Gets the offset of this ListCustomLineRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -162,7 +162,7 @@ class ListCustomLineRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomLineRequest.
+        r"""Sets the offset of this ListCustomLineRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -173,7 +173,7 @@ class ListCustomLineRequest:
 
     @property
     def show_detail(self):
-        """Gets the show_detail of this ListCustomLineRequest.
+        r"""Gets the show_detail of this ListCustomLineRequest.
 
         是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
 
@@ -184,7 +184,7 @@ class ListCustomLineRequest:
 
     @show_detail.setter
     def show_detail(self, show_detail):
-        """Sets the show_detail of this ListCustomLineRequest.
+        r"""Sets the show_detail of this ListCustomLineRequest.
 
         是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
 
@@ -195,7 +195,7 @@ class ListCustomLineRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCustomLineRequest.
+        r"""Gets the status of this ListCustomLineRequest.
 
         资源状态。
 
@@ -206,7 +206,7 @@ class ListCustomLineRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCustomLineRequest.
+        r"""Sets the status of this ListCustomLineRequest.
 
         资源状态。
 
@@ -217,7 +217,7 @@ class ListCustomLineRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListCustomLineRequest.
+        r"""Gets the ip of this ListCustomLineRequest.
 
         IP地址范围。
 
@@ -228,7 +228,7 @@ class ListCustomLineRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListCustomLineRequest.
+        r"""Sets the ip of this ListCustomLineRequest.
 
         IP地址范围。
 

@@ -26,7 +26,7 @@ class CreateKafkaConsumerGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateKafkaConsumerGroupResponse
+        r"""CreateKafkaConsumerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateKafkaConsumerGroupResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateKafkaConsumerGroupResponse.
+        r"""Gets the body of this CreateKafkaConsumerGroupResponse.
 
         创建结果
 
@@ -55,7 +55,7 @@ class CreateKafkaConsumerGroupResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateKafkaConsumerGroupResponse.
+        r"""Sets the body of this CreateKafkaConsumerGroupResponse.
 
         创建结果
 

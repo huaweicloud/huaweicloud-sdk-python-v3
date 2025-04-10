@@ -32,7 +32,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, subnet_id=None, ip_address=None, ipv6_address=None):
-        """ChangeServerNetworkInterfaceResponse
+        r"""ChangeServerNetworkInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ChangeServerNetworkInterfaceResponse.
+        r"""Gets the id of this ChangeServerNetworkInterfaceResponse.
 
         网卡ID。
 
@@ -76,7 +76,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChangeServerNetworkInterfaceResponse.
+        r"""Sets the id of this ChangeServerNetworkInterfaceResponse.
 
         网卡ID。
 
@@ -87,7 +87,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ChangeServerNetworkInterfaceResponse.
+        r"""Gets the subnet_id of this ChangeServerNetworkInterfaceResponse.
 
         子网ID。
 
@@ -98,7 +98,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ChangeServerNetworkInterfaceResponse.
+        r"""Sets the subnet_id of this ChangeServerNetworkInterfaceResponse.
 
         子网ID。
 
@@ -109,7 +109,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ChangeServerNetworkInterfaceResponse.
+        r"""Gets the ip_address of this ChangeServerNetworkInterfaceResponse.
 
         网卡IPv4地址。
 
@@ -120,7 +120,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ChangeServerNetworkInterfaceResponse.
+        r"""Sets the ip_address of this ChangeServerNetworkInterfaceResponse.
 
         网卡IPv4地址。
 
@@ -131,7 +131,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this ChangeServerNetworkInterfaceResponse.
+        r"""Gets the ipv6_address of this ChangeServerNetworkInterfaceResponse.
 
         网卡IPv6地址，未开通IPv6协议的网卡不返回该字段。
 
@@ -142,7 +142,7 @@ class ChangeServerNetworkInterfaceResponse(SdkResponse):
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this ChangeServerNetworkInterfaceResponse.
+        r"""Sets the ipv6_address of this ChangeServerNetworkInterfaceResponse.
 
         网卡IPv6地址，未开通IPv6协议的网卡不返回该字段。
 

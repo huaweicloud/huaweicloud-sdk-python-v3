@@ -30,7 +30,7 @@ class ImportClientCaRequest:
     }
 
     def __init__(self, vpn_server_id=None, x_client_token=None, body=None):
-        """ImportClientCaRequest
+        r"""ImportClientCaRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ImportClientCaRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ImportClientCaRequest.
+        r"""Gets the vpn_server_id of this ImportClientCaRequest.
 
         VPN服务端 ID
 
@@ -68,7 +68,7 @@ class ImportClientCaRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ImportClientCaRequest.
+        r"""Sets the vpn_server_id of this ImportClientCaRequest.
 
         VPN服务端 ID
 
@@ -79,7 +79,7 @@ class ImportClientCaRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this ImportClientCaRequest.
+        r"""Gets the x_client_token of this ImportClientCaRequest.
 
         幂等性标识
 
@@ -90,7 +90,7 @@ class ImportClientCaRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this ImportClientCaRequest.
+        r"""Sets the x_client_token of this ImportClientCaRequest.
 
         幂等性标识
 
@@ -101,7 +101,7 @@ class ImportClientCaRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportClientCaRequest.
+        r"""Gets the body of this ImportClientCaRequest.
 
         :return: The body of this ImportClientCaRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateRequestBody`
@@ -110,7 +110,7 @@ class ImportClientCaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportClientCaRequest.
+        r"""Sets the body of this ImportClientCaRequest.
 
         :param body: The body of this ImportClientCaRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateRequestBody`

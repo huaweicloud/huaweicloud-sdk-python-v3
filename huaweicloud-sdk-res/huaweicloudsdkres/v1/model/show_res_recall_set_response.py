@@ -32,7 +32,7 @@ class ShowResRecallSetResponse(SdkResponse):
     }
 
     def __init__(self, result_set=None, is_success=None, message=None, error_code=None):
-        """ShowResRecallSetResponse
+        r"""ShowResRecallSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @property
     def result_set(self):
-        """Gets the result_set of this ShowResRecallSetResponse.
+        r"""Gets the result_set of this ShowResRecallSetResponse.
 
         候选集列表
 
@@ -76,7 +76,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @result_set.setter
     def result_set(self, result_set):
-        """Sets the result_set of this ShowResRecallSetResponse.
+        r"""Sets the result_set of this ShowResRecallSetResponse.
 
         候选集列表
 
@@ -87,7 +87,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowResRecallSetResponse.
+        r"""Gets the is_success of this ShowResRecallSetResponse.
 
         是否成功
 
@@ -98,7 +98,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowResRecallSetResponse.
+        r"""Sets the is_success of this ShowResRecallSetResponse.
 
         是否成功
 
@@ -109,7 +109,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowResRecallSetResponse.
+        r"""Gets the message of this ShowResRecallSetResponse.
 
         返回消息（请求成功时，不返回此字段）
 
@@ -120,7 +120,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowResRecallSetResponse.
+        r"""Sets the message of this ShowResRecallSetResponse.
 
         返回消息（请求成功时，不返回此字段）
 
@@ -131,7 +131,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowResRecallSetResponse.
+        r"""Gets the error_code of this ShowResRecallSetResponse.
 
         错误码（请求成功时，不返回此字段）
 
@@ -142,7 +142,7 @@ class ShowResRecallSetResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowResRecallSetResponse.
+        r"""Sets the error_code of this ShowResRecallSetResponse.
 
         错误码（请求成功时，不返回此字段）
 

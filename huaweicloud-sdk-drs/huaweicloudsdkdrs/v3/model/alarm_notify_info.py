@@ -33,7 +33,7 @@ class AlarmNotifyInfo:
     }
 
     def __init__(self, delay_time=None, rto_delay=None, rpo_delay=None, alarm_to_user=None, subscriptions=None):
-        """AlarmNotifyInfo
+        r"""AlarmNotifyInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AlarmNotifyInfo:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this AlarmNotifyInfo.
+        r"""Gets the delay_time of this AlarmNotifyInfo.
 
         订阅延迟时间(单位为s)
 
@@ -82,7 +82,7 @@ class AlarmNotifyInfo:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this AlarmNotifyInfo.
+        r"""Sets the delay_time of this AlarmNotifyInfo.
 
         订阅延迟时间(单位为s)
 
@@ -93,7 +93,7 @@ class AlarmNotifyInfo:
 
     @property
     def rto_delay(self):
-        """Gets the rto_delay of this AlarmNotifyInfo.
+        r"""Gets the rto_delay of this AlarmNotifyInfo.
 
         rto延迟时间
 
@@ -104,7 +104,7 @@ class AlarmNotifyInfo:
 
     @rto_delay.setter
     def rto_delay(self, rto_delay):
-        """Sets the rto_delay of this AlarmNotifyInfo.
+        r"""Sets the rto_delay of this AlarmNotifyInfo.
 
         rto延迟时间
 
@@ -115,7 +115,7 @@ class AlarmNotifyInfo:
 
     @property
     def rpo_delay(self):
-        """Gets the rpo_delay of this AlarmNotifyInfo.
+        r"""Gets the rpo_delay of this AlarmNotifyInfo.
 
         rpo延迟时间
 
@@ -126,7 +126,7 @@ class AlarmNotifyInfo:
 
     @rpo_delay.setter
     def rpo_delay(self, rpo_delay):
-        """Sets the rpo_delay of this AlarmNotifyInfo.
+        r"""Sets the rpo_delay of this AlarmNotifyInfo.
 
         rpo延迟时间
 
@@ -137,7 +137,7 @@ class AlarmNotifyInfo:
 
     @property
     def alarm_to_user(self):
-        """Gets the alarm_to_user of this AlarmNotifyInfo.
+        r"""Gets the alarm_to_user of this AlarmNotifyInfo.
 
         异常告警是否通知用户
 
@@ -148,7 +148,7 @@ class AlarmNotifyInfo:
 
     @alarm_to_user.setter
     def alarm_to_user(self, alarm_to_user):
-        """Sets the alarm_to_user of this AlarmNotifyInfo.
+        r"""Sets the alarm_to_user of this AlarmNotifyInfo.
 
         异常告警是否通知用户
 
@@ -159,7 +159,7 @@ class AlarmNotifyInfo:
 
     @property
     def subscriptions(self):
-        """Gets the subscriptions of this AlarmNotifyInfo.
+        r"""Gets the subscriptions of this AlarmNotifyInfo.
 
         收件方式与信息体
 
@@ -170,7 +170,7 @@ class AlarmNotifyInfo:
 
     @subscriptions.setter
     def subscriptions(self, subscriptions):
-        """Sets the subscriptions of this AlarmNotifyInfo.
+        r"""Sets the subscriptions of this AlarmNotifyInfo.
 
         收件方式与信息体
 

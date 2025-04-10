@@ -61,7 +61,7 @@ class ListScheduledTaskRequest:
     }
 
     def __init__(self, enterprise_project_id=None, task_id=None, task_name=None, scheduled_type=None, task_type=None, associated_task_type=None, risk_level=None, created_by=None, reviewer=None, reviewer_user_name=None, approve_status=None, last_execution_status=None, last_execution_start_time=None, last_execution_end_time=None, marker=None, region_id=None, resource_id=None, offset=None, limit=None):
-        """ListScheduledTaskRequest
+        r"""ListScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class ListScheduledTaskRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListScheduledTaskRequest.
+        r"""Gets the enterprise_project_id of this ListScheduledTaskRequest.
 
         企业项目id
 
@@ -180,7 +180,7 @@ class ListScheduledTaskRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListScheduledTaskRequest.
+        r"""Sets the enterprise_project_id of this ListScheduledTaskRequest.
 
         企业项目id
 
@@ -191,7 +191,7 @@ class ListScheduledTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListScheduledTaskRequest.
+        r"""Gets the task_id of this ListScheduledTaskRequest.
 
         任务ID
 
@@ -202,7 +202,7 @@ class ListScheduledTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListScheduledTaskRequest.
+        r"""Sets the task_id of this ListScheduledTaskRequest.
 
         任务ID
 
@@ -213,7 +213,7 @@ class ListScheduledTaskRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListScheduledTaskRequest.
+        r"""Gets the task_name of this ListScheduledTaskRequest.
 
         任务名称
 
@@ -224,7 +224,7 @@ class ListScheduledTaskRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListScheduledTaskRequest.
+        r"""Sets the task_name of this ListScheduledTaskRequest.
 
         任务名称
 
@@ -235,7 +235,7 @@ class ListScheduledTaskRequest:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ListScheduledTaskRequest.
+        r"""Gets the scheduled_type of this ListScheduledTaskRequest.
 
         定时类型(ONCE,PERIODIC,CRON)
 
@@ -246,7 +246,7 @@ class ListScheduledTaskRequest:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ListScheduledTaskRequest.
+        r"""Sets the scheduled_type of this ListScheduledTaskRequest.
 
         定时类型(ONCE,PERIODIC,CRON)
 
@@ -257,7 +257,7 @@ class ListScheduledTaskRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListScheduledTaskRequest.
+        r"""Gets the task_type of this ListScheduledTaskRequest.
 
         引用任务类型(SCRIPT,RUNBOOK)
 
@@ -268,7 +268,7 @@ class ListScheduledTaskRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListScheduledTaskRequest.
+        r"""Sets the task_type of this ListScheduledTaskRequest.
 
         引用任务类型(SCRIPT,RUNBOOK)
 
@@ -279,7 +279,7 @@ class ListScheduledTaskRequest:
 
     @property
     def associated_task_type(self):
-        """Gets the associated_task_type of this ListScheduledTaskRequest.
+        r"""Gets the associated_task_type of this ListScheduledTaskRequest.
 
         任务类型(CUSTOMIZATION,COMMUNAL)
 
@@ -290,7 +290,7 @@ class ListScheduledTaskRequest:
 
     @associated_task_type.setter
     def associated_task_type(self, associated_task_type):
-        """Sets the associated_task_type of this ListScheduledTaskRequest.
+        r"""Sets the associated_task_type of this ListScheduledTaskRequest.
 
         任务类型(CUSTOMIZATION,COMMUNAL)
 
@@ -301,7 +301,7 @@ class ListScheduledTaskRequest:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ListScheduledTaskRequest.
+        r"""Gets the risk_level of this ListScheduledTaskRequest.
 
         风险等级
 
@@ -312,7 +312,7 @@ class ListScheduledTaskRequest:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ListScheduledTaskRequest.
+        r"""Sets the risk_level of this ListScheduledTaskRequest.
 
         风险等级
 
@@ -323,7 +323,7 @@ class ListScheduledTaskRequest:
 
     @property
     def created_by(self):
-        """Gets the created_by of this ListScheduledTaskRequest.
+        r"""Gets the created_by of this ListScheduledTaskRequest.
 
         创建人
 
@@ -334,7 +334,7 @@ class ListScheduledTaskRequest:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ListScheduledTaskRequest.
+        r"""Sets the created_by of this ListScheduledTaskRequest.
 
         创建人
 
@@ -345,7 +345,7 @@ class ListScheduledTaskRequest:
 
     @property
     def reviewer(self):
-        """Gets the reviewer of this ListScheduledTaskRequest.
+        r"""Gets the reviewer of this ListScheduledTaskRequest.
 
         审批人ID
 
@@ -356,7 +356,7 @@ class ListScheduledTaskRequest:
 
     @reviewer.setter
     def reviewer(self, reviewer):
-        """Sets the reviewer of this ListScheduledTaskRequest.
+        r"""Sets the reviewer of this ListScheduledTaskRequest.
 
         审批人ID
 
@@ -367,7 +367,7 @@ class ListScheduledTaskRequest:
 
     @property
     def reviewer_user_name(self):
-        """Gets the reviewer_user_name of this ListScheduledTaskRequest.
+        r"""Gets the reviewer_user_name of this ListScheduledTaskRequest.
 
         审批人昵称
 
@@ -378,7 +378,7 @@ class ListScheduledTaskRequest:
 
     @reviewer_user_name.setter
     def reviewer_user_name(self, reviewer_user_name):
-        """Sets the reviewer_user_name of this ListScheduledTaskRequest.
+        r"""Sets the reviewer_user_name of this ListScheduledTaskRequest.
 
         审批人昵称
 
@@ -389,7 +389,7 @@ class ListScheduledTaskRequest:
 
     @property
     def approve_status(self):
-        """Gets the approve_status of this ListScheduledTaskRequest.
+        r"""Gets the approve_status of this ListScheduledTaskRequest.
 
         审批状态(PENDING,REJECTED,PASSED)
 
@@ -400,7 +400,7 @@ class ListScheduledTaskRequest:
 
     @approve_status.setter
     def approve_status(self, approve_status):
-        """Sets the approve_status of this ListScheduledTaskRequest.
+        r"""Sets the approve_status of this ListScheduledTaskRequest.
 
         审批状态(PENDING,REJECTED,PASSED)
 
@@ -411,7 +411,7 @@ class ListScheduledTaskRequest:
 
     @property
     def last_execution_status(self):
-        """Gets the last_execution_status of this ListScheduledTaskRequest.
+        r"""Gets the last_execution_status of this ListScheduledTaskRequest.
 
         最近执行状态(READY,PROCESSING,ABNORMAL,FINISHED,PAUSED,CANCELED)
 
@@ -422,7 +422,7 @@ class ListScheduledTaskRequest:
 
     @last_execution_status.setter
     def last_execution_status(self, last_execution_status):
-        """Sets the last_execution_status of this ListScheduledTaskRequest.
+        r"""Sets the last_execution_status of this ListScheduledTaskRequest.
 
         最近执行状态(READY,PROCESSING,ABNORMAL,FINISHED,PAUSED,CANCELED)
 
@@ -433,7 +433,7 @@ class ListScheduledTaskRequest:
 
     @property
     def last_execution_start_time(self):
-        """Gets the last_execution_start_time of this ListScheduledTaskRequest.
+        r"""Gets the last_execution_start_time of this ListScheduledTaskRequest.
 
         最近执行时间的查询开始时间
 
@@ -444,7 +444,7 @@ class ListScheduledTaskRequest:
 
     @last_execution_start_time.setter
     def last_execution_start_time(self, last_execution_start_time):
-        """Sets the last_execution_start_time of this ListScheduledTaskRequest.
+        r"""Sets the last_execution_start_time of this ListScheduledTaskRequest.
 
         最近执行时间的查询开始时间
 
@@ -455,7 +455,7 @@ class ListScheduledTaskRequest:
 
     @property
     def last_execution_end_time(self):
-        """Gets the last_execution_end_time of this ListScheduledTaskRequest.
+        r"""Gets the last_execution_end_time of this ListScheduledTaskRequest.
 
         最近执行时间的查询结束时间
 
@@ -466,7 +466,7 @@ class ListScheduledTaskRequest:
 
     @last_execution_end_time.setter
     def last_execution_end_time(self, last_execution_end_time):
-        """Sets the last_execution_end_time of this ListScheduledTaskRequest.
+        r"""Sets the last_execution_end_time of this ListScheduledTaskRequest.
 
         最近执行时间的查询结束时间
 
@@ -477,7 +477,7 @@ class ListScheduledTaskRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListScheduledTaskRequest.
+        r"""Gets the marker of this ListScheduledTaskRequest.
 
         上一页数据的最后一条记录的id
 
@@ -488,7 +488,7 @@ class ListScheduledTaskRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListScheduledTaskRequest.
+        r"""Sets the marker of this ListScheduledTaskRequest.
 
         上一页数据的最后一条记录的id
 
@@ -499,7 +499,7 @@ class ListScheduledTaskRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListScheduledTaskRequest.
+        r"""Gets the region_id of this ListScheduledTaskRequest.
 
         区域
 
@@ -510,7 +510,7 @@ class ListScheduledTaskRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListScheduledTaskRequest.
+        r"""Sets the region_id of this ListScheduledTaskRequest.
 
         区域
 
@@ -521,7 +521,7 @@ class ListScheduledTaskRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListScheduledTaskRequest.
+        r"""Gets the resource_id of this ListScheduledTaskRequest.
 
         资源ID
 
@@ -532,7 +532,7 @@ class ListScheduledTaskRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListScheduledTaskRequest.
+        r"""Sets the resource_id of this ListScheduledTaskRequest.
 
         资源ID
 
@@ -543,7 +543,7 @@ class ListScheduledTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduledTaskRequest.
+        r"""Gets the offset of this ListScheduledTaskRequest.
 
         分页指针
 
@@ -554,7 +554,7 @@ class ListScheduledTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduledTaskRequest.
+        r"""Sets the offset of this ListScheduledTaskRequest.
 
         分页指针
 
@@ -565,7 +565,7 @@ class ListScheduledTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduledTaskRequest.
+        r"""Gets the limit of this ListScheduledTaskRequest.
 
         每页数量
 
@@ -576,7 +576,7 @@ class ListScheduledTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduledTaskRequest.
+        r"""Sets the limit of this ListScheduledTaskRequest.
 
         每页数量
 

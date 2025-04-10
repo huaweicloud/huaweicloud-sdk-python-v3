@@ -53,7 +53,7 @@ class TemplateState:
     }
 
     def __init__(self, type=None, name=None, module_or_template_id=None, module_or_template_name=None, display_name=None, dsl_method=None, parameters=None, is_manual_execution=None, job_parameter_validate=None, is_show_codehub_url=None, is_execute=None, job_id=None, job_name=None, project_id=None, execution_mode=None):
-        """TemplateState
+        r"""TemplateState
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class TemplateState:
 
     @property
     def type(self):
-        """Gets the type of this TemplateState.
+        r"""Gets the type of this TemplateState.
 
         任务类型
 
@@ -137,7 +137,7 @@ class TemplateState:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TemplateState.
+        r"""Sets the type of this TemplateState.
 
         任务类型
 
@@ -148,7 +148,7 @@ class TemplateState:
 
     @property
     def name(self):
-        """Gets the name of this TemplateState.
+        r"""Gets the name of this TemplateState.
 
         任务名字
 
@@ -159,7 +159,7 @@ class TemplateState:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateState.
+        r"""Sets the name of this TemplateState.
 
         任务名字
 
@@ -170,7 +170,7 @@ class TemplateState:
 
     @property
     def module_or_template_id(self):
-        """Gets the module_or_template_id of this TemplateState.
+        r"""Gets the module_or_template_id of this TemplateState.
 
         模板任务ID
 
@@ -181,7 +181,7 @@ class TemplateState:
 
     @module_or_template_id.setter
     def module_or_template_id(self, module_or_template_id):
-        """Sets the module_or_template_id of this TemplateState.
+        r"""Sets the module_or_template_id of this TemplateState.
 
         模板任务ID
 
@@ -192,7 +192,7 @@ class TemplateState:
 
     @property
     def module_or_template_name(self):
-        """Gets the module_or_template_name of this TemplateState.
+        r"""Gets the module_or_template_name of this TemplateState.
 
         模板任务名字
 
@@ -203,7 +203,7 @@ class TemplateState:
 
     @module_or_template_name.setter
     def module_or_template_name(self, module_or_template_name):
-        """Sets the module_or_template_name of this TemplateState.
+        r"""Sets the module_or_template_name of this TemplateState.
 
         模板任务名字
 
@@ -214,7 +214,7 @@ class TemplateState:
 
     @property
     def display_name(self):
-        """Gets the display_name of this TemplateState.
+        r"""Gets the display_name of this TemplateState.
 
         任务在流水线页面展示名字
 
@@ -225,7 +225,7 @@ class TemplateState:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this TemplateState.
+        r"""Sets the display_name of this TemplateState.
 
         任务在流水线页面展示名字
 
@@ -236,7 +236,7 @@ class TemplateState:
 
     @property
     def dsl_method(self):
-        """Gets the dsl_method of this TemplateState.
+        r"""Gets the dsl_method of this TemplateState.
 
         流水线可挂载任务类型
 
@@ -247,7 +247,7 @@ class TemplateState:
 
     @dsl_method.setter
     def dsl_method(self, dsl_method):
-        """Sets the dsl_method of this TemplateState.
+        r"""Sets the dsl_method of this TemplateState.
 
         流水线可挂载任务类型
 
@@ -258,7 +258,7 @@ class TemplateState:
 
     @property
     def parameters(self):
-        """Gets the parameters of this TemplateState.
+        r"""Gets the parameters of this TemplateState.
 
         任务参数,map类型数据
 
@@ -269,7 +269,7 @@ class TemplateState:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this TemplateState.
+        r"""Sets the parameters of this TemplateState.
 
         任务参数,map类型数据
 
@@ -280,7 +280,7 @@ class TemplateState:
 
     @property
     def is_manual_execution(self):
-        """Gets the is_manual_execution of this TemplateState.
+        r"""Gets the is_manual_execution of this TemplateState.
 
         是否手动执行
 
@@ -291,7 +291,7 @@ class TemplateState:
 
     @is_manual_execution.setter
     def is_manual_execution(self, is_manual_execution):
-        """Sets the is_manual_execution of this TemplateState.
+        r"""Sets the is_manual_execution of this TemplateState.
 
         是否手动执行
 
@@ -302,7 +302,7 @@ class TemplateState:
 
     @property
     def job_parameter_validate(self):
-        """Gets the job_parameter_validate of this TemplateState.
+        r"""Gets the job_parameter_validate of this TemplateState.
 
         任务参数是否校验
 
@@ -313,7 +313,7 @@ class TemplateState:
 
     @job_parameter_validate.setter
     def job_parameter_validate(self, job_parameter_validate):
-        """Sets the job_parameter_validate of this TemplateState.
+        r"""Sets the job_parameter_validate of this TemplateState.
 
         任务参数是否校验
 
@@ -324,7 +324,7 @@ class TemplateState:
 
     @property
     def is_show_codehub_url(self):
-        """Gets the is_show_codehub_url of this TemplateState.
+        r"""Gets the is_show_codehub_url of this TemplateState.
 
         是否显示代码仓URL
 
@@ -335,7 +335,7 @@ class TemplateState:
 
     @is_show_codehub_url.setter
     def is_show_codehub_url(self, is_show_codehub_url):
-        """Sets the is_show_codehub_url of this TemplateState.
+        r"""Sets the is_show_codehub_url of this TemplateState.
 
         是否显示代码仓URL
 
@@ -346,7 +346,7 @@ class TemplateState:
 
     @property
     def is_execute(self):
-        """Gets the is_execute of this TemplateState.
+        r"""Gets the is_execute of this TemplateState.
 
         是否执行
 
@@ -357,7 +357,7 @@ class TemplateState:
 
     @is_execute.setter
     def is_execute(self, is_execute):
-        """Sets the is_execute of this TemplateState.
+        r"""Sets the is_execute of this TemplateState.
 
         是否执行
 
@@ -368,7 +368,7 @@ class TemplateState:
 
     @property
     def job_id(self):
-        """Gets the job_id of this TemplateState.
+        r"""Gets the job_id of this TemplateState.
 
         执行任务ID
 
@@ -379,7 +379,7 @@ class TemplateState:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this TemplateState.
+        r"""Sets the job_id of this TemplateState.
 
         执行任务ID
 
@@ -390,7 +390,7 @@ class TemplateState:
 
     @property
     def job_name(self):
-        """Gets the job_name of this TemplateState.
+        r"""Gets the job_name of this TemplateState.
 
         执行任务名字
 
@@ -401,7 +401,7 @@ class TemplateState:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this TemplateState.
+        r"""Sets the job_name of this TemplateState.
 
         执行任务名字
 
@@ -412,7 +412,7 @@ class TemplateState:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TemplateState.
+        r"""Gets the project_id of this TemplateState.
 
         任务所属项目ID
 
@@ -423,7 +423,7 @@ class TemplateState:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TemplateState.
+        r"""Sets the project_id of this TemplateState.
 
         任务所属项目ID
 
@@ -434,7 +434,7 @@ class TemplateState:
 
     @property
     def execution_mode(self):
-        """Gets the execution_mode of this TemplateState.
+        r"""Gets the execution_mode of this TemplateState.
 
         控制阶段下任务的串并行（type是task的execution_mode值为null，type是stage的execution_mode可选parallel（并行）或者serial（串行））
 
@@ -445,7 +445,7 @@ class TemplateState:
 
     @execution_mode.setter
     def execution_mode(self, execution_mode):
-        """Sets the execution_mode of this TemplateState.
+        r"""Sets the execution_mode of this TemplateState.
 
         控制阶段下任务的串并行（type是task的execution_mode值为null，type是stage的execution_mode可选parallel（并行）或者serial（串行））
 

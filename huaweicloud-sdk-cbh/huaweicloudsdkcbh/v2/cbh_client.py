@@ -34,7 +34,7 @@ class CbhClient(Client):
         return client_builder
 
     def batch_create_instance_tag(self, request):
-        """操作堡垒机实例资源标签
+        r"""操作堡垒机实例资源标签
 
         操作堡垒机实例资源标签。
         
@@ -101,7 +101,7 @@ class CbhClient(Client):
         return http_info
 
     def change_instance_type(self, request):
-        """修改单机堡垒机实例类型
+        r"""修改单机堡垒机实例类型
 
         修改单机堡垒机实例类型。
         
@@ -170,7 +170,7 @@ class CbhClient(Client):
         return http_info
 
     def count_instances_by_tag(self, request):
-        """统计符合标签条件的实例数量
+        r"""统计符合标签条件的实例数量
 
         统计符合标签条件的实例数量。
         
@@ -235,7 +235,7 @@ class CbhClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建堡垒机实例
+        r"""创建堡垒机实例
 
         创建云堡垒机实例。
         
@@ -300,7 +300,7 @@ class CbhClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除故障云堡垒机实例
+        r"""删除故障云堡垒机实例
 
         删除云堡垒机故障实例。
         
@@ -365,7 +365,7 @@ class CbhClient(Client):
         return http_info
 
     def install_instance_eip(self, request):
-        """堡垒机实例绑定弹性公网IP
+        r"""堡垒机实例绑定弹性公网IP
 
         云堡垒机实例绑定弹性公网IP。
         
@@ -432,7 +432,7 @@ class CbhClient(Client):
         return http_info
 
     def list_available_zones(self, request):
-        """获取服务可用区信息
+        r"""获取服务可用区信息
 
         获取云堡垒机服务可用区信息。
         
@@ -495,7 +495,7 @@ class CbhClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """获取堡垒机实例列表
+        r"""获取堡垒机实例列表
 
         获取当前租户下的堡垒机实例列表。
         
@@ -560,7 +560,7 @@ class CbhClient(Client):
         return http_info
 
     def list_instances_by_tag(self, request):
-        """使用标签过滤实例
+        r"""使用标签过滤实例
 
         使用标签过滤实例。
         
@@ -629,7 +629,7 @@ class CbhClient(Client):
         return http_info
 
     def list_specifications(self, request):
-        """查询云堡垒机规格信息
+        r"""查询云堡垒机规格信息
 
         查询云堡垒机规格信息。
         
@@ -696,7 +696,7 @@ class CbhClient(Client):
         return http_info
 
     def list_tags(self, request):
-        """查询租户在项目中的资源标签集合
+        r"""查询租户在项目中的资源标签集合
 
         查询租户在项目中的资源标签集合。
         
@@ -759,7 +759,7 @@ class CbhClient(Client):
         return http_info
 
     def login_instance(self, request):
-        """IAM用户登录堡垒机实例console
+        r"""IAM用户登录堡垒机实例console
 
         IAM用户登录堡垒机实例console。
         
@@ -824,7 +824,7 @@ class CbhClient(Client):
         return http_info
 
     def login_instance_admin(self, request):
-        """用户登录堡垒机实例admin的console
+        r"""用户登录堡垒机实例admin的console
 
         用户登录堡垒机实例admin的console。
         
@@ -889,7 +889,7 @@ class CbhClient(Client):
         return http_info
 
     def reboot_instance(self, request):
-        """重启堡垒机实例
+        r"""重启堡垒机实例
 
         重启云堡垒机实例。
         
@@ -954,7 +954,7 @@ class CbhClient(Client):
         return http_info
 
     def register_authorization(self, request):
-        """租户创建或取消云堡垒机服务的委托授权
+        r"""租户创建或取消云堡垒机服务的委托授权
 
         租户创建或取消云堡垒机服务的委托授权。
         
@@ -1019,7 +1019,7 @@ class CbhClient(Client):
         return http_info
 
     def reset_instance_login_method(self, request):
-        """重置堡垒机实例admin登录方式
+        r"""重置堡垒机实例admin登录方式
 
         重置堡垒机实例admin用户登录方式。
         
@@ -1084,7 +1084,7 @@ class CbhClient(Client):
         return http_info
 
     def reset_instance_password(self, request):
-        """重置堡垒机实例admin密码
+        r"""重置堡垒机实例admin密码
 
         重置云堡垒机实例web登录admin用户密码。
         
@@ -1149,7 +1149,7 @@ class CbhClient(Client):
         return http_info
 
     def resize_instance(self, request):
-        """变更堡垒机实例
+        r"""变更堡垒机实例
 
         变更云堡垒机实例。
         
@@ -1214,7 +1214,7 @@ class CbhClient(Client):
         return http_info
 
     def rollback_instance(self, request):
-        """回退升级的堡垒机实例
+        r"""回退升级的堡垒机实例
 
         回退升级的云堡垒机实例。
         
@@ -1279,7 +1279,7 @@ class CbhClient(Client):
         return http_info
 
     def show_authorization(self, request):
-        """获取租户给云堡垒机服务委托授权信息
+        r"""获取租户给云堡垒机服务委托授权信息
 
         获取租户给云堡垒机服务委托授权信息。
         
@@ -1342,7 +1342,7 @@ class CbhClient(Client):
         return http_info
 
     def show_ecs_quota(self, request):
-        """获取创建堡垒机实例所需ECS资源配额
+        r"""获取创建堡垒机实例所需ECS资源配额
 
         获取当前租户所选择的可用分区里的堡垒机ECS规格是否可用。
         
@@ -1409,7 +1409,7 @@ class CbhClient(Client):
         return http_info
 
     def show_instance_status(self, request):
-        """获取堡垒机实例状态信息
+        r"""获取堡垒机实例状态信息
 
         获取堡垒机实例状态信息（未删除实例）。
         
@@ -1474,7 +1474,7 @@ class CbhClient(Client):
         return http_info
 
     def show_instance_tags(self, request):
-        """查询堡垒机实例资源的标签信息
+        r"""查询堡垒机实例资源的标签信息
 
         查询堡垒机实例资源的标签信息。
         
@@ -1539,7 +1539,7 @@ class CbhClient(Client):
         return http_info
 
     def show_om_url(self, request):
-        """获取运维链接
+        r"""获取运维链接
 
         获取运维链接
         
@@ -1608,7 +1608,7 @@ class CbhClient(Client):
         return http_info
 
     def show_quota(self, request):
-        """获取堡垒机实例配额
+        r"""获取堡垒机实例配额
 
         获取堡垒机实例配额信息。
         
@@ -1671,7 +1671,7 @@ class CbhClient(Client):
         return http_info
 
     def start_instance(self, request):
-        """启动堡垒机实例
+        r"""启动堡垒机实例
 
         启动云堡垒机实例。
         
@@ -1736,7 +1736,7 @@ class CbhClient(Client):
         return http_info
 
     def stop_instance(self, request):
-        """关闭堡垒机实例
+        r"""关闭堡垒机实例
 
         关闭云堡垒机实例。
         
@@ -1801,7 +1801,7 @@ class CbhClient(Client):
         return http_info
 
     def switch_instance_vpc(self, request):
-        """切换堡垒机虚拟私有云
+        r"""切换堡垒机虚拟私有云
 
         切换堡垒机虚拟私有云
         
@@ -1866,7 +1866,7 @@ class CbhClient(Client):
         return http_info
 
     def uninstall_instance_eip(self, request):
-        """堡垒机实例解绑弹性公网IP
+        r"""堡垒机实例解绑弹性公网IP
 
         为云堡垒机实例解绑弹性公网IP。
         
@@ -1933,7 +1933,7 @@ class CbhClient(Client):
         return http_info
 
     def update_instance_security_group(self, request):
-        """修改堡垒机实例安全组
+        r"""修改堡垒机实例安全组
 
         修改堡垒机实例安全组。
         
@@ -2000,7 +2000,7 @@ class CbhClient(Client):
         return http_info
 
     def upgrade_instance(self, request):
-        """升级堡垒机实例
+        r"""升级堡垒机实例
 
         升级云堡垒机实例。
         

@@ -27,7 +27,7 @@ class NodesWeight:
     }
 
     def __init__(self, id=None, weight=None):
-        """NodesWeight
+        r"""NodesWeight
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodesWeight:
 
     @property
     def id(self):
-        """Gets the id of this NodesWeight.
+        r"""Gets the id of this NodesWeight.
 
         数据库节点ID。
 
@@ -61,7 +61,7 @@ class NodesWeight:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodesWeight.
+        r"""Sets the id of this NodesWeight.
 
         数据库节点ID。
 
@@ -72,7 +72,7 @@ class NodesWeight:
 
     @property
     def weight(self):
-        """Gets the weight of this NodesWeight.
+        r"""Gets the weight of this NodesWeight.
 
         权重。取值范围：0~1000。
 
@@ -83,7 +83,7 @@ class NodesWeight:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this NodesWeight.
+        r"""Sets the weight of this NodesWeight.
 
         权重。取值范围：0~1000。
 

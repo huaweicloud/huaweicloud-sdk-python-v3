@@ -25,7 +25,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOption
     }
 
     def __init__(self, linux_file_size_supported_threshold=None):
-        """PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOptions
+        r"""PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOption
 
     @property
     def linux_file_size_supported_threshold(self):
-        """Gets the linux_file_size_supported_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOptions.
+        r"""Gets the linux_file_size_supported_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOptions.
 
         Linux设置文件大小阈值（Byte）。取值范围为[0-4096]。默认：100。
 
@@ -54,7 +54,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOption
 
     @linux_file_size_supported_threshold.setter
     def linux_file_size_supported_threshold(self, linux_file_size_supported_threshold):
-        """Sets the linux_file_size_supported_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOptions.
+        r"""Sets the linux_file_size_supported_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsLinuxFileSizeSupportedOptions.
 
         Linux设置文件大小阈值（Byte）。取值范围为[0-4096]。默认：100。
 

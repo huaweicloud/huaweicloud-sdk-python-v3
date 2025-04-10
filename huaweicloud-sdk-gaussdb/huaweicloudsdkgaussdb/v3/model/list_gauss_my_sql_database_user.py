@@ -31,7 +31,7 @@ class ListGaussMySqlDatabaseUser:
     }
 
     def __init__(self, name=None, host=None, comment=None, databases=None):
-        """ListGaussMySqlDatabaseUser
+        r"""ListGaussMySqlDatabaseUser
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListGaussMySqlDatabaseUser:
 
     @property
     def name(self):
-        """Gets the name of this ListGaussMySqlDatabaseUser.
+        r"""Gets the name of this ListGaussMySqlDatabaseUser.
 
         数据库用户名。
 
@@ -75,7 +75,7 @@ class ListGaussMySqlDatabaseUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGaussMySqlDatabaseUser.
+        r"""Sets the name of this ListGaussMySqlDatabaseUser.
 
         数据库用户名。
 
@@ -86,7 +86,7 @@ class ListGaussMySqlDatabaseUser:
 
     @property
     def host(self):
-        """Gets the host of this ListGaussMySqlDatabaseUser.
+        r"""Gets the host of this ListGaussMySqlDatabaseUser.
 
         主机地址。
 
@@ -97,7 +97,7 @@ class ListGaussMySqlDatabaseUser:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ListGaussMySqlDatabaseUser.
+        r"""Sets the host of this ListGaussMySqlDatabaseUser.
 
         主机地址。
 
@@ -108,7 +108,7 @@ class ListGaussMySqlDatabaseUser:
 
     @property
     def comment(self):
-        """Gets the comment of this ListGaussMySqlDatabaseUser.
+        r"""Gets the comment of this ListGaussMySqlDatabaseUser.
 
         数据库用户备注。
 
@@ -119,7 +119,7 @@ class ListGaussMySqlDatabaseUser:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this ListGaussMySqlDatabaseUser.
+        r"""Sets the comment of this ListGaussMySqlDatabaseUser.
 
         数据库用户备注。
 
@@ -130,7 +130,7 @@ class ListGaussMySqlDatabaseUser:
 
     @property
     def databases(self):
-        """Gets the databases of this ListGaussMySqlDatabaseUser.
+        r"""Gets the databases of this ListGaussMySqlDatabaseUser.
 
         数据库列表。
 
@@ -141,7 +141,7 @@ class ListGaussMySqlDatabaseUser:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListGaussMySqlDatabaseUser.
+        r"""Sets the databases of this ListGaussMySqlDatabaseUser.
 
         数据库列表。
 

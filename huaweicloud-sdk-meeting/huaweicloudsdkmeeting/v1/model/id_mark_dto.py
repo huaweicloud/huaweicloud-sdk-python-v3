@@ -27,7 +27,7 @@ class IdMarkDTO:
     }
 
     def __init__(self, id=None, mark=None):
-        """IdMarkDTO
+        r"""IdMarkDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IdMarkDTO:
 
     @property
     def id(self):
-        """Gets the id of this IdMarkDTO.
+        r"""Gets the id of this IdMarkDTO.
 
         唯一标识。
 
@@ -61,7 +61,7 @@ class IdMarkDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IdMarkDTO.
+        r"""Sets the id of this IdMarkDTO.
 
         唯一标识。
 
@@ -72,7 +72,7 @@ class IdMarkDTO:
 
     @property
     def mark(self):
-        """Gets the mark of this IdMarkDTO.
+        r"""Gets the mark of this IdMarkDTO.
 
         id对应的回显描述，一般为名称等。
 
@@ -83,7 +83,7 @@ class IdMarkDTO:
 
     @mark.setter
     def mark(self, mark):
-        """Sets the mark of this IdMarkDTO.
+        r"""Sets the mark of this IdMarkDTO.
 
         id对应的回显描述，一般为名称等。
 

@@ -35,7 +35,7 @@ class NodeTemplate:
     }
 
     def __init__(self, os=None, image_id=None, login=None, life_cycle=None, runtime_config=None, extend_param=None):
-        """NodeTemplate
+        r"""NodeTemplate
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NodeTemplate:
 
     @property
     def os(self):
-        """Gets the os of this NodeTemplate.
+        r"""Gets the os of this NodeTemplate.
 
         :return: The os of this NodeTemplate.
         :rtype: str
@@ -87,7 +87,7 @@ class NodeTemplate:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this NodeTemplate.
+        r"""Sets the os of this NodeTemplate.
 
         :param os: The os of this NodeTemplate.
         :type os: str
@@ -96,7 +96,7 @@ class NodeTemplate:
 
     @property
     def image_id(self):
-        """Gets the image_id of this NodeTemplate.
+        r"""Gets the image_id of this NodeTemplate.
 
         :return: The image_id of this NodeTemplate.
         :rtype: str
@@ -105,7 +105,7 @@ class NodeTemplate:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this NodeTemplate.
+        r"""Sets the image_id of this NodeTemplate.
 
         :param image_id: The image_id of this NodeTemplate.
         :type image_id: str
@@ -114,7 +114,7 @@ class NodeTemplate:
 
     @property
     def login(self):
-        """Gets the login of this NodeTemplate.
+        r"""Gets the login of this NodeTemplate.
 
         :return: The login of this NodeTemplate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateLogin`
@@ -123,7 +123,7 @@ class NodeTemplate:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this NodeTemplate.
+        r"""Sets the login of this NodeTemplate.
 
         :param login: The login of this NodeTemplate.
         :type login: :class:`huaweicloudsdkcce.v3.NodeTemplateLogin`
@@ -132,7 +132,7 @@ class NodeTemplate:
 
     @property
     def life_cycle(self):
-        """Gets the life_cycle of this NodeTemplate.
+        r"""Gets the life_cycle of this NodeTemplate.
 
         :return: The life_cycle of this NodeTemplate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateLifeCycle`
@@ -141,7 +141,7 @@ class NodeTemplate:
 
     @life_cycle.setter
     def life_cycle(self, life_cycle):
-        """Sets the life_cycle of this NodeTemplate.
+        r"""Sets the life_cycle of this NodeTemplate.
 
         :param life_cycle: The life_cycle of this NodeTemplate.
         :type life_cycle: :class:`huaweicloudsdkcce.v3.NodeTemplateLifeCycle`
@@ -150,7 +150,7 @@ class NodeTemplate:
 
     @property
     def runtime_config(self):
-        """Gets the runtime_config of this NodeTemplate.
+        r"""Gets the runtime_config of this NodeTemplate.
 
         :return: The runtime_config of this NodeTemplate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateRuntimeConfig`
@@ -159,7 +159,7 @@ class NodeTemplate:
 
     @runtime_config.setter
     def runtime_config(self, runtime_config):
-        """Sets the runtime_config of this NodeTemplate.
+        r"""Sets the runtime_config of this NodeTemplate.
 
         :param runtime_config: The runtime_config of this NodeTemplate.
         :type runtime_config: :class:`huaweicloudsdkcce.v3.NodeTemplateRuntimeConfig`
@@ -168,7 +168,7 @@ class NodeTemplate:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this NodeTemplate.
+        r"""Gets the extend_param of this NodeTemplate.
 
         :return: The extend_param of this NodeTemplate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateExtendParam`
@@ -177,7 +177,7 @@ class NodeTemplate:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this NodeTemplate.
+        r"""Sets the extend_param of this NodeTemplate.
 
         :param extend_param: The extend_param of this NodeTemplate.
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeTemplateExtendParam`

@@ -25,7 +25,7 @@ class LoginTokenAssumedBy:
     }
 
     def __init__(self, user=None):
-        """LoginTokenAssumedBy
+        r"""LoginTokenAssumedBy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LoginTokenAssumedBy:
 
     @property
     def user(self):
-        """Gets the user of this LoginTokenAssumedBy.
+        r"""Gets the user of this LoginTokenAssumedBy.
 
         :return: The user of this LoginTokenAssumedBy.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenUser`
@@ -52,7 +52,7 @@ class LoginTokenAssumedBy:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this LoginTokenAssumedBy.
+        r"""Sets the user of this LoginTokenAssumedBy.
 
         :param user: The user of this LoginTokenAssumedBy.
         :type user: :class:`huaweicloudsdkiam.v3.LoginTokenUser`

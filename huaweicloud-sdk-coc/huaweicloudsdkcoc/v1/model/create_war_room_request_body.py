@@ -47,7 +47,7 @@ class CreateWarRoomRequestBody:
     }
 
     def __init__(self, war_room_name=None, description=None, region_code_list=None, application_id_list=None, incident_number=None, schedule_group=None, participant=None, war_room_admin=None, application_names=None, region_names=None, enterprise_project_id=None, notification_type=None):
-        """CreateWarRoomRequestBody
+        r"""CreateWarRoomRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def war_room_name(self):
-        """Gets the war_room_name of this CreateWarRoomRequestBody.
+        r"""Gets the war_room_name of this CreateWarRoomRequestBody.
 
         WarRoom名称
 
@@ -125,7 +125,7 @@ class CreateWarRoomRequestBody:
 
     @war_room_name.setter
     def war_room_name(self, war_room_name):
-        """Sets the war_room_name of this CreateWarRoomRequestBody.
+        r"""Sets the war_room_name of this CreateWarRoomRequestBody.
 
         WarRoom名称
 
@@ -136,7 +136,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateWarRoomRequestBody.
+        r"""Gets the description of this CreateWarRoomRequestBody.
 
         WarRoom描述
 
@@ -147,7 +147,7 @@ class CreateWarRoomRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWarRoomRequestBody.
+        r"""Sets the description of this CreateWarRoomRequestBody.
 
         WarRoom描述
 
@@ -158,7 +158,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def region_code_list(self):
-        """Gets the region_code_list of this CreateWarRoomRequestBody.
+        r"""Gets the region_code_list of this CreateWarRoomRequestBody.
 
         区域id
 
@@ -169,7 +169,7 @@ class CreateWarRoomRequestBody:
 
     @region_code_list.setter
     def region_code_list(self, region_code_list):
-        """Sets the region_code_list of this CreateWarRoomRequestBody.
+        r"""Sets the region_code_list of this CreateWarRoomRequestBody.
 
         区域id
 
@@ -180,7 +180,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def application_id_list(self):
-        """Gets the application_id_list of this CreateWarRoomRequestBody.
+        r"""Gets the application_id_list of this CreateWarRoomRequestBody.
 
         影响应用id
 
@@ -191,7 +191,7 @@ class CreateWarRoomRequestBody:
 
     @application_id_list.setter
     def application_id_list(self, application_id_list):
-        """Sets the application_id_list of this CreateWarRoomRequestBody.
+        r"""Sets the application_id_list of this CreateWarRoomRequestBody.
 
         影响应用id
 
@@ -202,7 +202,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def incident_number(self):
-        """Gets the incident_number of this CreateWarRoomRequestBody.
+        r"""Gets the incident_number of this CreateWarRoomRequestBody.
 
         事件单号
 
@@ -213,7 +213,7 @@ class CreateWarRoomRequestBody:
 
     @incident_number.setter
     def incident_number(self, incident_number):
-        """Sets the incident_number of this CreateWarRoomRequestBody.
+        r"""Sets the incident_number of this CreateWarRoomRequestBody.
 
         事件单号
 
@@ -224,7 +224,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def schedule_group(self):
-        """Gets the schedule_group of this CreateWarRoomRequestBody.
+        r"""Gets the schedule_group of this CreateWarRoomRequestBody.
 
         排班分组
 
@@ -235,7 +235,7 @@ class CreateWarRoomRequestBody:
 
     @schedule_group.setter
     def schedule_group(self, schedule_group):
-        """Sets the schedule_group of this CreateWarRoomRequestBody.
+        r"""Sets the schedule_group of this CreateWarRoomRequestBody.
 
         排班分组
 
@@ -246,7 +246,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def participant(self):
-        """Gets the participant of this CreateWarRoomRequestBody.
+        r"""Gets the participant of this CreateWarRoomRequestBody.
 
         参与者
 
@@ -257,7 +257,7 @@ class CreateWarRoomRequestBody:
 
     @participant.setter
     def participant(self, participant):
-        """Sets the participant of this CreateWarRoomRequestBody.
+        r"""Sets the participant of this CreateWarRoomRequestBody.
 
         参与者
 
@@ -268,7 +268,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def war_room_admin(self):
-        """Gets the war_room_admin of this CreateWarRoomRequestBody.
+        r"""Gets the war_room_admin of this CreateWarRoomRequestBody.
 
         WarRoom管理员
 
@@ -279,7 +279,7 @@ class CreateWarRoomRequestBody:
 
     @war_room_admin.setter
     def war_room_admin(self, war_room_admin):
-        """Sets the war_room_admin of this CreateWarRoomRequestBody.
+        r"""Sets the war_room_admin of this CreateWarRoomRequestBody.
 
         WarRoom管理员
 
@@ -290,7 +290,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def application_names(self):
-        """Gets the application_names of this CreateWarRoomRequestBody.
+        r"""Gets the application_names of this CreateWarRoomRequestBody.
 
         应用名称列表
 
@@ -301,7 +301,7 @@ class CreateWarRoomRequestBody:
 
     @application_names.setter
     def application_names(self, application_names):
-        """Sets the application_names of this CreateWarRoomRequestBody.
+        r"""Sets the application_names of this CreateWarRoomRequestBody.
 
         应用名称列表
 
@@ -312,7 +312,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def region_names(self):
-        """Gets the region_names of this CreateWarRoomRequestBody.
+        r"""Gets the region_names of this CreateWarRoomRequestBody.
 
         region名称列表
 
@@ -323,7 +323,7 @@ class CreateWarRoomRequestBody:
 
     @region_names.setter
     def region_names(self, region_names):
-        """Sets the region_names of this CreateWarRoomRequestBody.
+        r"""Sets the region_names of this CreateWarRoomRequestBody.
 
         region名称列表
 
@@ -334,7 +334,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateWarRoomRequestBody.
+        r"""Gets the enterprise_project_id of this CreateWarRoomRequestBody.
 
         企业项目id
 
@@ -345,7 +345,7 @@ class CreateWarRoomRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateWarRoomRequestBody.
+        r"""Sets the enterprise_project_id of this CreateWarRoomRequestBody.
 
         企业项目id
 
@@ -356,7 +356,7 @@ class CreateWarRoomRequestBody:
 
     @property
     def notification_type(self):
-        """Gets the notification_type of this CreateWarRoomRequestBody.
+        r"""Gets the notification_type of this CreateWarRoomRequestBody.
 
         创建群组方式
 
@@ -367,7 +367,7 @@ class CreateWarRoomRequestBody:
 
     @notification_type.setter
     def notification_type(self, notification_type):
-        """Sets the notification_type of this CreateWarRoomRequestBody.
+        r"""Sets the notification_type of this CreateWarRoomRequestBody.
 
         创建群组方式
 

@@ -31,7 +31,7 @@ class ListAppImageRequest:
     }
 
     def __init__(self, app_id=None, version=None, limit=None, offset=None):
-        """ListAppImageRequest
+        r"""ListAppImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAppImageRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppImageRequest.
+        r"""Gets the app_id of this ListAppImageRequest.
 
         应用ID
 
@@ -73,7 +73,7 @@ class ListAppImageRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppImageRequest.
+        r"""Sets the app_id of this ListAppImageRequest.
 
         应用ID
 
@@ -84,7 +84,7 @@ class ListAppImageRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListAppImageRequest.
+        r"""Gets the version of this ListAppImageRequest.
 
         应用版本
 
@@ -95,7 +95,7 @@ class ListAppImageRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListAppImageRequest.
+        r"""Sets the version of this ListAppImageRequest.
 
         应用版本
 
@@ -106,7 +106,7 @@ class ListAppImageRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppImageRequest.
+        r"""Gets the limit of this ListAppImageRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -117,7 +117,7 @@ class ListAppImageRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppImageRequest.
+        r"""Sets the limit of this ListAppImageRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -128,7 +128,7 @@ class ListAppImageRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppImageRequest.
+        r"""Gets the offset of this ListAppImageRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 
@@ -139,7 +139,7 @@ class ListAppImageRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppImageRequest.
+        r"""Sets the offset of this ListAppImageRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 

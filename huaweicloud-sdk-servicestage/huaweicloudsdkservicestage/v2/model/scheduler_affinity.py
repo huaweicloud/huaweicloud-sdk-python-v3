@@ -29,7 +29,7 @@ class SchedulerAffinity:
     }
 
     def __init__(self, az=None, node=None, application=None):
-        """SchedulerAffinity
+        r"""SchedulerAffinity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SchedulerAffinity:
 
     @property
     def az(self):
-        """Gets the az of this SchedulerAffinity.
+        r"""Gets the az of this SchedulerAffinity.
 
         :return: The az of this SchedulerAffinity.
         :rtype: list[str]
@@ -66,7 +66,7 @@ class SchedulerAffinity:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this SchedulerAffinity.
+        r"""Sets the az of this SchedulerAffinity.
 
         :param az: The az of this SchedulerAffinity.
         :type az: list[str]
@@ -75,7 +75,7 @@ class SchedulerAffinity:
 
     @property
     def node(self):
-        """Gets the node of this SchedulerAffinity.
+        r"""Gets the node of this SchedulerAffinity.
 
         :return: The node of this SchedulerAffinity.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class SchedulerAffinity:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this SchedulerAffinity.
+        r"""Sets the node of this SchedulerAffinity.
 
         :param node: The node of this SchedulerAffinity.
         :type node: list[str]
@@ -93,7 +93,7 @@ class SchedulerAffinity:
 
     @property
     def application(self):
-        """Gets the application of this SchedulerAffinity.
+        r"""Gets the application of this SchedulerAffinity.
 
         :return: The application of this SchedulerAffinity.
         :rtype: list[str]
@@ -102,7 +102,7 @@ class SchedulerAffinity:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this SchedulerAffinity.
+        r"""Sets the application of this SchedulerAffinity.
 
         :param application: The application of this SchedulerAffinity.
         :type application: list[str]

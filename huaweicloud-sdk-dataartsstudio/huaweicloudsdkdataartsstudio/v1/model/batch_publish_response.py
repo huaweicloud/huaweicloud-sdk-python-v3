@@ -26,7 +26,7 @@ class BatchPublishResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """BatchPublishResponse
+        r"""BatchPublishResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchPublishResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchPublishResponse.
+        r"""Gets the data of this BatchPublishResponse.
 
         :return: The data of this BatchPublishResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchPublishResultData`
@@ -53,7 +53,7 @@ class BatchPublishResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchPublishResponse.
+        r"""Sets the data of this BatchPublishResponse.
 
         :param data: The data of this BatchPublishResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.BatchPublishResultData`

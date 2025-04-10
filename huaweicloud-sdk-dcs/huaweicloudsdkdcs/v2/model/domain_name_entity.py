@@ -27,7 +27,7 @@ class DomainNameEntity:
     }
 
     def __init__(self, domain_name=None, is_readonly=None):
-        """DomainNameEntity
+        r"""DomainNameEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DomainNameEntity:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainNameEntity.
+        r"""Gets the domain_name of this DomainNameEntity.
 
         实例历史域名。
 
@@ -61,7 +61,7 @@ class DomainNameEntity:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainNameEntity.
+        r"""Sets the domain_name of this DomainNameEntity.
 
         实例历史域名。
 
@@ -72,7 +72,7 @@ class DomainNameEntity:
 
     @property
     def is_readonly(self):
-        """Gets the is_readonly of this DomainNameEntity.
+        r"""Gets the is_readonly of this DomainNameEntity.
 
         是否只读域名 - true：是 - false：否 
 
@@ -83,7 +83,7 @@ class DomainNameEntity:
 
     @is_readonly.setter
     def is_readonly(self, is_readonly):
-        """Sets the is_readonly of this DomainNameEntity.
+        r"""Sets the is_readonly of this DomainNameEntity.
 
         是否只读域名 - true：是 - false：否 
 

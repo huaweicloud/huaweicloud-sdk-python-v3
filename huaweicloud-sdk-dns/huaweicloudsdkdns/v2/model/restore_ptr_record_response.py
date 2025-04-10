@@ -24,7 +24,7 @@ class RestorePtrRecordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestorePtrRecordResponse
+        r"""RestorePtrRecordResponse
 
         The model defined in huaweicloud sdk
 

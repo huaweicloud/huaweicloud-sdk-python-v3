@@ -34,7 +34,7 @@ class DisAsyncClient(Client):
         return client_builder
 
     def batch_create_tags_async(self, request):
-        """批量添加资源标签
+        r"""批量添加资源标签
 
         该接口用于批量添加资源（通道等）标签。此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
         
@@ -101,7 +101,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def batch_delete_tags_async(self, request):
-        """批量删除资源标签
+        r"""批量删除资源标签
 
         该接口用于批量删除资源（通道等）标签。此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
         
@@ -168,7 +168,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def batch_start_transfer_task_async(self, request):
-        """批量启动转储任务
+        r"""批量启动转储任务
 
         此接口用于批量启动转储任务。
         
@@ -235,7 +235,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def batch_stop_transfer_task_async(self, request):
-        """批量暂停转储任务
+        r"""批量暂停转储任务
 
         此接口用于批量暂停转储任务。
         
@@ -302,7 +302,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def consume_records_async(self, request):
-        """下载数据
+        r"""下载数据
 
         本接口用于从DIS通道中下载数据。
         
@@ -369,7 +369,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def create_obs_transfer_task_async(self, request):
-        """添加OBS转储任务
+        r"""添加OBS转储任务
 
         本接口用于添加OBS转储任务。
         
@@ -436,7 +436,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def create_stream_async(self, request):
-        """创建通道
+        r"""创建通道
 
         本接口用于创建通道。
         
@@ -504,7 +504,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def create_tag_async(self, request):
-        """给指定通道添加标签
+        r"""给指定通道添加标签
 
         本接口用于给指定通道添加标签。
         
@@ -571,7 +571,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def delete_stream_async(self, request):
-        """删除指定通道
+        r"""删除指定通道
 
         本接口用于删除指定通道。
         
@@ -636,7 +636,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def delete_tag_async(self, request):
-        """删除指定通道的标签
+        r"""删除指定通道的标签
 
         该接口用于删除指定通道的标签。
         
@@ -703,7 +703,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def delete_transfer_task_async(self, request):
-        """删除转储任务
+        r"""删除转储任务
 
         该接口用于删除转储任务。
         
@@ -770,7 +770,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def list_policies_async(self, request):
-        """查询权限策略列表
+        r"""查询权限策略列表
 
         本接口用于查询指定通道的权限策略列表。
         
@@ -835,7 +835,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def list_resources_by_tags_async(self, request):
-        """使用标签过滤资源（通道等）
+        r"""使用标签过滤资源（通道等）
 
         该接口用于使用标签过滤资源（通道等）。
         
@@ -900,7 +900,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def list_streams_async(self, request):
-        """查询通道列表
+        r"""查询通道列表
 
         本接口用户查询当前租户创建的所有通道。
         
@@ -969,7 +969,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def list_tags_async(self, request):
-        """查询指定区域所有标签集合
+        r"""查询指定区域所有标签集合
 
         该接口用于查询指定区域所有标签集合。
         
@@ -1032,7 +1032,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def list_transfer_tasks_async(self, request):
-        """查询转储任务列表
+        r"""查询转储任务列表
 
         本接口用于查询转储任务列表。
         
@@ -1097,7 +1097,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def send_records_async(self, request):
-        """上传数据
+        r"""上传数据
 
         本接口用于上传数据到DIS通道中。
         
@@ -1162,7 +1162,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_cursor_async(self, request):
-        """获取数据游标
+        r"""获取数据游标
 
         本接口用于获取数据游标。
         
@@ -1235,7 +1235,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_partition_metrics_async(self, request):
-        """查询分区监控
+        r"""查询分区监控
 
         本接口用于查询通道指定分区的监控数据。
         
@@ -1310,7 +1310,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_stream_async(self, request):
-        """查看通道详情
+        r"""查看通道详情
 
         本接口用于查询指定通道的详情。
         
@@ -1379,7 +1379,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_stream_metrics_async(self, request):
-        """查询通道监控
+        r"""查询通道监控
 
         本接口用于查询指定通道的监控数据。
         
@@ -1452,7 +1452,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_stream_tags_async(self, request):
-        """查询指定通道的标签信息
+        r"""查询指定通道的标签信息
 
         该接口用于查询指定通道的标签信息。
         
@@ -1517,7 +1517,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_transfer_task_async(self, request):
-        """查询转储任务详情
+        r"""查询转储任务详情
 
         查询转储任务详情。
         
@@ -1584,7 +1584,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def update_partition_count_async(self, request):
-        """修改分区数量
+        r"""修改分区数量
 
         本接口用于变更指定通道中的分区数量。
         
@@ -1651,7 +1651,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def update_stream_async(self, request):
-        """更新通道信息
+        r"""更新通道信息
 
         本接口用于更新指定通道的通道信息。
         
@@ -1718,7 +1718,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def create_app_async(self, request):
-        """创建消费App
+        r"""创建消费App
 
         本接口用于创建消费APP。
         
@@ -1783,7 +1783,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def delete_app_async(self, request):
-        """删除App
+        r"""删除App
 
         本接口用于删除App。
         
@@ -1848,7 +1848,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def list_app_async(self, request):
-        """查询App列表
+        r"""查询App列表
 
         本接口用于查询APP列表。
         
@@ -1917,7 +1917,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_app_async(self, request):
-        """查看App详情
+        r"""查看App详情
 
         本接口用于查询APP详情。
         
@@ -1982,7 +1982,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_consumer_state_async(self, request):
-        """查看App消费状态
+        r"""查看App消费状态
 
         本接口用于查询APP消费状态。
         
@@ -2055,7 +2055,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def commit_checkpoint_async(self, request):
-        """提交Checkpoint
+        r"""提交Checkpoint
 
         本接口用于提交Checkpoint。
         
@@ -2120,7 +2120,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def delete_checkpoint_async(self, request):
-        """删除Checkpoint
+        r"""删除Checkpoint
 
         本接口用于删除Checkpoint。
         
@@ -2191,7 +2191,7 @@ class DisAsyncClient(Client):
         return http_info
 
     def show_checkpoint_async(self, request):
-        """查询Checkpoint详情
+        r"""查询Checkpoint详情
 
         本接口用于查询Checkpoint详情。
         

@@ -28,7 +28,7 @@ class ListEngineFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, optional_flavors=None, total_count=None):
-        """ListEngineFlavorsResponse
+        r"""ListEngineFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEngineFlavorsResponse(SdkResponse):
 
     @property
     def optional_flavors(self):
-        """Gets the optional_flavors of this ListEngineFlavorsResponse.
+        r"""Gets the optional_flavors of this ListEngineFlavorsResponse.
 
         可用的规格列表信息
 
@@ -62,7 +62,7 @@ class ListEngineFlavorsResponse(SdkResponse):
 
     @optional_flavors.setter
     def optional_flavors(self, optional_flavors):
-        """Sets the optional_flavors of this ListEngineFlavorsResponse.
+        r"""Sets the optional_flavors of this ListEngineFlavorsResponse.
 
         可用的规格列表信息
 
@@ -73,7 +73,7 @@ class ListEngineFlavorsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEngineFlavorsResponse.
+        r"""Gets the total_count of this ListEngineFlavorsResponse.
 
         可用的规格总数
 
@@ -84,7 +84,7 @@ class ListEngineFlavorsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEngineFlavorsResponse.
+        r"""Sets the total_count of this ListEngineFlavorsResponse.
 
         可用的规格总数
 

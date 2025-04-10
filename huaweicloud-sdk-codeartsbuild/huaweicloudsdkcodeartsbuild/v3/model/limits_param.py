@@ -29,7 +29,7 @@ class LimitsParam:
     }
 
     def __init__(self, disable=None, display_name=None, name=None):
-        """LimitsParam
+        r"""LimitsParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LimitsParam:
 
     @property
     def disable(self):
-        """Gets the disable of this LimitsParam.
+        r"""Gets the disable of this LimitsParam.
 
         是否生效，默认为\"0\"，为生效状态
 
@@ -68,7 +68,7 @@ class LimitsParam:
 
     @disable.setter
     def disable(self, disable):
-        """Sets the disable of this LimitsParam.
+        r"""Sets the disable of this LimitsParam.
 
         是否生效，默认为\"0\"，为生效状态
 
@@ -79,7 +79,7 @@ class LimitsParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this LimitsParam.
+        r"""Gets the display_name of this LimitsParam.
 
         参数展示的名字
 
@@ -90,7 +90,7 @@ class LimitsParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this LimitsParam.
+        r"""Sets the display_name of this LimitsParam.
 
         参数展示的名字
 
@@ -101,7 +101,7 @@ class LimitsParam:
 
     @property
     def name(self):
-        """Gets the name of this LimitsParam.
+        r"""Gets the name of this LimitsParam.
 
         参数名字
 
@@ -112,7 +112,7 @@ class LimitsParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LimitsParam.
+        r"""Sets the name of this LimitsParam.
 
         参数名字
 

@@ -30,7 +30,7 @@ class CancelEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, node_id=None, node_name=None):
-        """CancelEipResponse
+        r"""CancelEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CancelEipResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CancelEipResponse.
+        r"""Gets the job_id of this CancelEipResponse.
 
         任务ID。
 
@@ -69,7 +69,7 @@ class CancelEipResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CancelEipResponse.
+        r"""Sets the job_id of this CancelEipResponse.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class CancelEipResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this CancelEipResponse.
+        r"""Gets the node_id of this CancelEipResponse.
 
         节点ID。
 
@@ -91,7 +91,7 @@ class CancelEipResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CancelEipResponse.
+        r"""Sets the node_id of this CancelEipResponse.
 
         节点ID。
 
@@ -102,7 +102,7 @@ class CancelEipResponse(SdkResponse):
 
     @property
     def node_name(self):
-        """Gets the node_name of this CancelEipResponse.
+        r"""Gets the node_name of this CancelEipResponse.
 
         节点名称。
 
@@ -113,7 +113,7 @@ class CancelEipResponse(SdkResponse):
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this CancelEipResponse.
+        r"""Sets the node_name of this CancelEipResponse.
 
         节点名称。
 

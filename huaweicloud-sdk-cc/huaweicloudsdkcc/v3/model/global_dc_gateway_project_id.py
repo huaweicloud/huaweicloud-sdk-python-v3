@@ -25,7 +25,7 @@ class GlobalDcGatewayProjectId:
     }
 
     def __init__(self, global_dc_gateway_project_id=None):
-        """GlobalDcGatewayProjectId
+        r"""GlobalDcGatewayProjectId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GlobalDcGatewayProjectId:
 
     @property
     def global_dc_gateway_project_id(self):
-        """Gets the global_dc_gateway_project_id of this GlobalDcGatewayProjectId.
+        r"""Gets the global_dc_gateway_project_id of this GlobalDcGatewayProjectId.
 
         Gdgw的项目ID。
 
@@ -53,7 +53,7 @@ class GlobalDcGatewayProjectId:
 
     @global_dc_gateway_project_id.setter
     def global_dc_gateway_project_id(self, global_dc_gateway_project_id):
-        """Sets the global_dc_gateway_project_id of this GlobalDcGatewayProjectId.
+        r"""Sets the global_dc_gateway_project_id of this GlobalDcGatewayProjectId.
 
         Gdgw的项目ID。
 

@@ -32,7 +32,7 @@ class ListDesktopActionsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, desktop_actions=None, total_count=None):
-        """ListDesktopActionsResponse
+        r"""ListDesktopActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListDesktopActionsResponse.
+        r"""Gets the error_code of this ListDesktopActionsResponse.
 
         错误码，失败时返回。
 
@@ -76,7 +76,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListDesktopActionsResponse.
+        r"""Sets the error_code of this ListDesktopActionsResponse.
 
         错误码，失败时返回。
 
@@ -87,7 +87,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListDesktopActionsResponse.
+        r"""Gets the error_msg of this ListDesktopActionsResponse.
 
         错误描述。
 
@@ -98,7 +98,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListDesktopActionsResponse.
+        r"""Sets the error_msg of this ListDesktopActionsResponse.
 
         错误描述。
 
@@ -109,7 +109,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @property
     def desktop_actions(self):
-        """Gets the desktop_actions of this ListDesktopActionsResponse.
+        r"""Gets the desktop_actions of this ListDesktopActionsResponse.
 
         桌面开关列表
 
@@ -120,7 +120,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @desktop_actions.setter
     def desktop_actions(self, desktop_actions):
-        """Sets the desktop_actions of this ListDesktopActionsResponse.
+        r"""Sets the desktop_actions of this ListDesktopActionsResponse.
 
         桌面开关列表
 
@@ -131,7 +131,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopActionsResponse.
+        r"""Gets the total_count of this ListDesktopActionsResponse.
 
         总数
 
@@ -142,7 +142,7 @@ class ListDesktopActionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopActionsResponse.
+        r"""Sets the total_count of this ListDesktopActionsResponse.
 
         总数
 

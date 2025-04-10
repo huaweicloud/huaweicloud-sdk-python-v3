@@ -35,7 +35,7 @@ class AnalysisModelRequest:
     }
 
     def __init__(self, name=None, display_name=None, type=None, transform=None, aggregate=None, stream=None):
-        """AnalysisModelRequest
+        r"""AnalysisModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class AnalysisModelRequest:
 
     @property
     def name(self):
-        """Gets the name of this AnalysisModelRequest.
+        r"""Gets the name of this AnalysisModelRequest.
 
         分析任务名称，正则：\"^[a-zA-Z][a-zA-Z0-9_]{0,63}$\"
 
@@ -87,7 +87,7 @@ class AnalysisModelRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AnalysisModelRequest.
+        r"""Sets the name of this AnalysisModelRequest.
 
         分析任务名称，正则：\"^[a-zA-Z][a-zA-Z0-9_]{0,63}$\"
 
@@ -98,7 +98,7 @@ class AnalysisModelRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AnalysisModelRequest.
+        r"""Gets the display_name of this AnalysisModelRequest.
 
         分析任务显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -109,7 +109,7 @@ class AnalysisModelRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AnalysisModelRequest.
+        r"""Sets the display_name of this AnalysisModelRequest.
 
         分析任务显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -120,7 +120,7 @@ class AnalysisModelRequest:
 
     @property
     def type(self):
-        """Gets the type of this AnalysisModelRequest.
+        r"""Gets the type of this AnalysisModelRequest.
 
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
@@ -131,7 +131,7 @@ class AnalysisModelRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AnalysisModelRequest.
+        r"""Sets the type of this AnalysisModelRequest.
 
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
@@ -142,7 +142,7 @@ class AnalysisModelRequest:
 
     @property
     def transform(self):
-        """Gets the transform of this AnalysisModelRequest.
+        r"""Gets the transform of this AnalysisModelRequest.
 
         :return: The transform of this AnalysisModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
@@ -151,7 +151,7 @@ class AnalysisModelRequest:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this AnalysisModelRequest.
+        r"""Sets the transform of this AnalysisModelRequest.
 
         :param transform: The transform of this AnalysisModelRequest.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
@@ -160,7 +160,7 @@ class AnalysisModelRequest:
 
     @property
     def aggregate(self):
-        """Gets the aggregate of this AnalysisModelRequest.
+        r"""Gets the aggregate of this AnalysisModelRequest.
 
         :return: The aggregate of this AnalysisModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
@@ -169,7 +169,7 @@ class AnalysisModelRequest:
 
     @aggregate.setter
     def aggregate(self, aggregate):
-        """Sets the aggregate of this AnalysisModelRequest.
+        r"""Sets the aggregate of this AnalysisModelRequest.
 
         :param aggregate: The aggregate of this AnalysisModelRequest.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
@@ -178,7 +178,7 @@ class AnalysisModelRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this AnalysisModelRequest.
+        r"""Gets the stream of this AnalysisModelRequest.
 
         :return: The stream of this AnalysisModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`
@@ -187,7 +187,7 @@ class AnalysisModelRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this AnalysisModelRequest.
+        r"""Sets the stream of this AnalysisModelRequest.
 
         :param stream: The stream of this AnalysisModelRequest.
         :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`

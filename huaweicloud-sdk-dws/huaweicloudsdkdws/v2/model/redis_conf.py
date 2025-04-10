@@ -31,7 +31,7 @@ class RedisConf:
     }
 
     def __init__(self, redis_mode=None, schedule_conf=None, parallel_jobs=None, parallel_job=None):
-        """RedisConf
+        r"""RedisConf
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RedisConf:
 
     @property
     def redis_mode(self):
-        """Gets the redis_mode of this RedisConf.
+        r"""Gets the redis_mode of this RedisConf.
 
         重分布模式
 
@@ -72,7 +72,7 @@ class RedisConf:
 
     @redis_mode.setter
     def redis_mode(self, redis_mode):
-        """Sets the redis_mode of this RedisConf.
+        r"""Sets the redis_mode of this RedisConf.
 
         重分布模式
 
@@ -83,7 +83,7 @@ class RedisConf:
 
     @property
     def schedule_conf(self):
-        """Gets the schedule_conf of this RedisConf.
+        r"""Gets the schedule_conf of this RedisConf.
 
         :return: The schedule_conf of this RedisConf.
         :rtype: :class:`huaweicloudsdkdws.v2.ScheduleConf`
@@ -92,7 +92,7 @@ class RedisConf:
 
     @schedule_conf.setter
     def schedule_conf(self, schedule_conf):
-        """Sets the schedule_conf of this RedisConf.
+        r"""Sets the schedule_conf of this RedisConf.
 
         :param schedule_conf: The schedule_conf of this RedisConf.
         :type schedule_conf: :class:`huaweicloudsdkdws.v2.ScheduleConf`
@@ -101,7 +101,7 @@ class RedisConf:
 
     @property
     def parallel_jobs(self):
-        """Gets the parallel_jobs of this RedisConf.
+        r"""Gets the parallel_jobs of this RedisConf.
 
         并行作业数量
 
@@ -112,7 +112,7 @@ class RedisConf:
 
     @parallel_jobs.setter
     def parallel_jobs(self, parallel_jobs):
-        """Sets the parallel_jobs of this RedisConf.
+        r"""Sets the parallel_jobs of this RedisConf.
 
         并行作业数量
 
@@ -123,7 +123,7 @@ class RedisConf:
 
     @property
     def parallel_job(self):
-        """Gets the parallel_job of this RedisConf.
+        r"""Gets the parallel_job of this RedisConf.
 
         并行作业数量
 
@@ -134,7 +134,7 @@ class RedisConf:
 
     @parallel_job.setter
     def parallel_job(self, parallel_job):
-        """Sets the parallel_job of this RedisConf.
+        r"""Sets the parallel_job of this RedisConf.
 
         并行作业数量
 

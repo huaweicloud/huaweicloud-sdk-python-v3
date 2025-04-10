@@ -26,7 +26,7 @@ class UpdateTransactionSplitStatusResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateTransactionSplitStatusResponse
+        r"""UpdateTransactionSplitStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateTransactionSplitStatusResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateTransactionSplitStatusResponse.
+        r"""Gets the job_id of this UpdateTransactionSplitStatusResponse.
 
         工作流ID
 
@@ -55,7 +55,7 @@ class UpdateTransactionSplitStatusResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateTransactionSplitStatusResponse.
+        r"""Sets the job_id of this UpdateTransactionSplitStatusResponse.
 
         工作流ID
 

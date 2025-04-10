@@ -39,7 +39,7 @@ class ChQueryActionInfo:
     }
 
     def __init__(self, id=None, action=None, object_id=None, type=None, job_id=None, status=None, created_at=None, updated_at=None):
-        """ChQueryActionInfo
+        r"""ChQueryActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ChQueryActionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ChQueryActionInfo.
+        r"""Gets the id of this ChQueryActionInfo.
 
         实例动作ID。
 
@@ -103,7 +103,7 @@ class ChQueryActionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChQueryActionInfo.
+        r"""Sets the id of this ChQueryActionInfo.
 
         实例动作ID。
 
@@ -114,7 +114,7 @@ class ChQueryActionInfo:
 
     @property
     def action(self):
-        """Gets the action of this ChQueryActionInfo.
+        r"""Gets the action of this ChQueryActionInfo.
 
         实例动作名称。
 
@@ -125,7 +125,7 @@ class ChQueryActionInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ChQueryActionInfo.
+        r"""Sets the action of this ChQueryActionInfo.
 
         实例动作名称。
 
@@ -136,7 +136,7 @@ class ChQueryActionInfo:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ChQueryActionInfo.
+        r"""Gets the object_id of this ChQueryActionInfo.
 
         实例动作对象ID。
 
@@ -147,7 +147,7 @@ class ChQueryActionInfo:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ChQueryActionInfo.
+        r"""Sets the object_id of this ChQueryActionInfo.
 
         实例动作对象ID。
 
@@ -158,7 +158,7 @@ class ChQueryActionInfo:
 
     @property
     def type(self):
-        """Gets the type of this ChQueryActionInfo.
+        r"""Gets the type of this ChQueryActionInfo.
 
         实例动作类型。
 
@@ -169,7 +169,7 @@ class ChQueryActionInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChQueryActionInfo.
+        r"""Sets the type of this ChQueryActionInfo.
 
         实例动作类型。
 
@@ -180,7 +180,7 @@ class ChQueryActionInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChQueryActionInfo.
+        r"""Gets the job_id of this ChQueryActionInfo.
 
         实例动作任务ID。
 
@@ -191,7 +191,7 @@ class ChQueryActionInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChQueryActionInfo.
+        r"""Sets the job_id of this ChQueryActionInfo.
 
         实例动作任务ID。
 
@@ -202,7 +202,7 @@ class ChQueryActionInfo:
 
     @property
     def status(self):
-        """Gets the status of this ChQueryActionInfo.
+        r"""Gets the status of this ChQueryActionInfo.
 
         实例动作状态。
 
@@ -213,7 +213,7 @@ class ChQueryActionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChQueryActionInfo.
+        r"""Sets the status of this ChQueryActionInfo.
 
         实例动作状态。
 
@@ -224,7 +224,7 @@ class ChQueryActionInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ChQueryActionInfo.
+        r"""Gets the created_at of this ChQueryActionInfo.
 
         实例动作创建时间。
 
@@ -235,7 +235,7 @@ class ChQueryActionInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ChQueryActionInfo.
+        r"""Sets the created_at of this ChQueryActionInfo.
 
         实例动作创建时间。
 
@@ -246,7 +246,7 @@ class ChQueryActionInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ChQueryActionInfo.
+        r"""Gets the updated_at of this ChQueryActionInfo.
 
         实例动作更新时间。
 
@@ -257,7 +257,7 @@ class ChQueryActionInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ChQueryActionInfo.
+        r"""Sets the updated_at of this ChQueryActionInfo.
 
         实例动作更新时间。
 

@@ -39,7 +39,7 @@ class OperateLogInfo:
     }
 
     def __init__(self, id=None, user=None, time=None, action=None, function=None, name=None, description=None, result=None):
-        """OperateLogInfo
+        r"""OperateLogInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class OperateLogInfo:
 
     @property
     def id(self):
-        """Gets the id of this OperateLogInfo.
+        r"""Gets the id of this OperateLogInfo.
 
         操作日志ID
 
@@ -103,7 +103,7 @@ class OperateLogInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OperateLogInfo.
+        r"""Sets the id of this OperateLogInfo.
 
         操作日志ID
 
@@ -114,7 +114,7 @@ class OperateLogInfo:
 
     @property
     def user(self):
-        """Gets the user of this OperateLogInfo.
+        r"""Gets the user of this OperateLogInfo.
 
         操作日志用户名
 
@@ -125,7 +125,7 @@ class OperateLogInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this OperateLogInfo.
+        r"""Sets the user of this OperateLogInfo.
 
         操作日志用户名
 
@@ -136,7 +136,7 @@ class OperateLogInfo:
 
     @property
     def time(self):
-        """Gets the time of this OperateLogInfo.
+        r"""Gets the time of this OperateLogInfo.
 
         该条记录发生的时间，格式为时间戳。
 
@@ -147,7 +147,7 @@ class OperateLogInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this OperateLogInfo.
+        r"""Sets the time of this OperateLogInfo.
 
         该条记录发生的时间，格式为时间戳。
 
@@ -158,7 +158,7 @@ class OperateLogInfo:
 
     @property
     def action(self):
-        """Gets the action of this OperateLogInfo.
+        r"""Gets the action of this OperateLogInfo.
 
         该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
 
@@ -169,7 +169,7 @@ class OperateLogInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this OperateLogInfo.
+        r"""Sets the action of this OperateLogInfo.
 
         该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
 
@@ -180,7 +180,7 @@ class OperateLogInfo:
 
     @property
     def function(self):
-        """Gets the function of this OperateLogInfo.
+        r"""Gets the function of this OperateLogInfo.
 
         该条记录的功能类型
 
@@ -191,7 +191,7 @@ class OperateLogInfo:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this OperateLogInfo.
+        r"""Sets the function of this OperateLogInfo.
 
         该条记录的功能类型
 
@@ -202,7 +202,7 @@ class OperateLogInfo:
 
     @property
     def name(self):
-        """Gets the name of this OperateLogInfo.
+        r"""Gets the name of this OperateLogInfo.
 
         该条记录对应的用户操作对象
 
@@ -213,7 +213,7 @@ class OperateLogInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OperateLogInfo.
+        r"""Sets the name of this OperateLogInfo.
 
         该条记录对应的用户操作对象
 
@@ -224,7 +224,7 @@ class OperateLogInfo:
 
     @property
     def description(self):
-        """Gets the description of this OperateLogInfo.
+        r"""Gets the description of this OperateLogInfo.
 
         该条记录具体的描述
 
@@ -235,7 +235,7 @@ class OperateLogInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OperateLogInfo.
+        r"""Sets the description of this OperateLogInfo.
 
         该条记录具体的描述
 
@@ -246,7 +246,7 @@ class OperateLogInfo:
 
     @property
     def result(self):
-        """Gets the result of this OperateLogInfo.
+        r"""Gets the result of this OperateLogInfo.
 
         该条记录对应用户执行的结果 - success: 成功 - fail: 失败
 
@@ -257,7 +257,7 @@ class OperateLogInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this OperateLogInfo.
+        r"""Sets the result of this OperateLogInfo.
 
         该条记录对应用户执行的结果 - success: 成功 - fail: 失败
 

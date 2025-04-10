@@ -23,7 +23,7 @@ class CreateGroupResp:
     }
 
     def __init__(self):
-        """CreateGroupResp
+        r"""CreateGroupResp
 
         The model defined in huaweicloud sdk
 

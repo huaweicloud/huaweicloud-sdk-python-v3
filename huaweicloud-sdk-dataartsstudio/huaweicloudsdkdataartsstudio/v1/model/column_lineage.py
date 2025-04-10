@@ -29,7 +29,7 @@ class ColumnLineage:
     }
 
     def __init__(self, name=None, input_columns=None, output_columns=None):
-        """ColumnLineage
+        r"""ColumnLineage
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ColumnLineage:
 
     @property
     def name(self):
-        """Gets the name of this ColumnLineage.
+        r"""Gets the name of this ColumnLineage.
 
         作业算子名称
 
@@ -65,7 +65,7 @@ class ColumnLineage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ColumnLineage.
+        r"""Sets the name of this ColumnLineage.
 
         作业算子名称
 
@@ -76,7 +76,7 @@ class ColumnLineage:
 
     @property
     def input_columns(self):
-        """Gets the input_columns of this ColumnLineage.
+        r"""Gets the input_columns of this ColumnLineage.
 
         上游血缘字段列表，列表大小：1至100
 
@@ -87,7 +87,7 @@ class ColumnLineage:
 
     @input_columns.setter
     def input_columns(self, input_columns):
-        """Sets the input_columns of this ColumnLineage.
+        r"""Sets the input_columns of this ColumnLineage.
 
         上游血缘字段列表，列表大小：1至100
 
@@ -98,7 +98,7 @@ class ColumnLineage:
 
     @property
     def output_columns(self):
-        """Gets the output_columns of this ColumnLineage.
+        r"""Gets the output_columns of this ColumnLineage.
 
         下游血缘字段列表，列表大小：1至100
 
@@ -109,7 +109,7 @@ class ColumnLineage:
 
     @output_columns.setter
     def output_columns(self, output_columns):
-        """Sets the output_columns of this ColumnLineage.
+        r"""Sets the output_columns of this ColumnLineage.
 
         下游血缘字段列表，列表大小：1至100
 

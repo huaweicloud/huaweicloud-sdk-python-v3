@@ -36,7 +36,7 @@ class UpdateDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, content=None, created_time=None, modified_time=None):
-        """UpdateDataSourceResponse
+        r"""UpdateDataSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateDataSourceResponse.
+        r"""Gets the id of this UpdateDataSourceResponse.
 
         数据源id
 
@@ -90,7 +90,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateDataSourceResponse.
+        r"""Sets the id of this UpdateDataSourceResponse.
 
         数据源id
 
@@ -101,7 +101,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateDataSourceResponse.
+        r"""Gets the name of this UpdateDataSourceResponse.
 
         数据源名称
 
@@ -112,7 +112,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDataSourceResponse.
+        r"""Sets the name of this UpdateDataSourceResponse.
 
         数据源名称
 
@@ -123,7 +123,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateDataSourceResponse.
+        r"""Gets the type of this UpdateDataSourceResponse.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -134,7 +134,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateDataSourceResponse.
+        r"""Sets the type of this UpdateDataSourceResponse.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -145,7 +145,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this UpdateDataSourceResponse.
+        r"""Gets the content of this UpdateDataSourceResponse.
 
         :return: The content of this UpdateDataSourceResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
@@ -154,7 +154,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateDataSourceResponse.
+        r"""Sets the content of this UpdateDataSourceResponse.
 
         :param content: The content of this UpdateDataSourceResponse.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
@@ -163,7 +163,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateDataSourceResponse.
+        r"""Gets the created_time of this UpdateDataSourceResponse.
 
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -174,7 +174,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateDataSourceResponse.
+        r"""Sets the created_time of this UpdateDataSourceResponse.
 
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -185,7 +185,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this UpdateDataSourceResponse.
+        r"""Gets the modified_time of this UpdateDataSourceResponse.
 
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -196,7 +196,7 @@ class UpdateDataSourceResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this UpdateDataSourceResponse.
+        r"""Sets the modified_time of this UpdateDataSourceResponse.
 
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 

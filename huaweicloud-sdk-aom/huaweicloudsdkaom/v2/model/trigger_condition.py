@@ -69,7 +69,7 @@ class TriggerCondition:
     }
 
     def __init__(self, metric_query_mode=None, metric_namespace=None, metric_name=None, metric_unit=None, metric_labels=None, promql=None, promql_expr=None, trigger_times=None, trigger_interval=None, trigger_type=None, promql_for=None, aggregation_type=None, operator=None, thresholds=None, aggregation_window=None, cmdb=None, query_match=None, query_param=None, aom_monitor_level=None, aggregate_type=None, metric_statistic_method=None, expression=None, mix_promql=None):
-        """TriggerCondition
+        r"""TriggerCondition
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class TriggerCondition:
 
     @property
     def metric_query_mode(self):
-        """Gets the metric_query_mode of this TriggerCondition.
+        r"""Gets the metric_query_mode of this TriggerCondition.
 
         指标查询模式。 - “AOM”：AOM原生 - “PROM”：AOM Prometheus - “NATIVE_PROM”：原生Prometheus
 
@@ -201,7 +201,7 @@ class TriggerCondition:
 
     @metric_query_mode.setter
     def metric_query_mode(self, metric_query_mode):
-        """Sets the metric_query_mode of this TriggerCondition.
+        r"""Sets the metric_query_mode of this TriggerCondition.
 
         指标查询模式。 - “AOM”：AOM原生 - “PROM”：AOM Prometheus - “NATIVE_PROM”：原生Prometheus
 
@@ -212,7 +212,7 @@ class TriggerCondition:
 
     @property
     def metric_namespace(self):
-        """Gets the metric_namespace of this TriggerCondition.
+        r"""Gets the metric_namespace of this TriggerCondition.
 
         指标命名空间。
 
@@ -223,7 +223,7 @@ class TriggerCondition:
 
     @metric_namespace.setter
     def metric_namespace(self, metric_namespace):
-        """Sets the metric_namespace of this TriggerCondition.
+        r"""Sets the metric_namespace of this TriggerCondition.
 
         指标命名空间。
 
@@ -234,7 +234,7 @@ class TriggerCondition:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this TriggerCondition.
+        r"""Gets the metric_name of this TriggerCondition.
 
         指标名称。
 
@@ -245,7 +245,7 @@ class TriggerCondition:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this TriggerCondition.
+        r"""Sets the metric_name of this TriggerCondition.
 
         指标名称。
 
@@ -256,7 +256,7 @@ class TriggerCondition:
 
     @property
     def metric_unit(self):
-        """Gets the metric_unit of this TriggerCondition.
+        r"""Gets the metric_unit of this TriggerCondition.
 
         指标单位。
 
@@ -267,7 +267,7 @@ class TriggerCondition:
 
     @metric_unit.setter
     def metric_unit(self, metric_unit):
-        """Sets the metric_unit of this TriggerCondition.
+        r"""Sets the metric_unit of this TriggerCondition.
 
         指标单位。
 
@@ -278,7 +278,7 @@ class TriggerCondition:
 
     @property
     def metric_labels(self):
-        """Gets the metric_labels of this TriggerCondition.
+        r"""Gets the metric_labels of this TriggerCondition.
 
         指标维度。
 
@@ -289,7 +289,7 @@ class TriggerCondition:
 
     @metric_labels.setter
     def metric_labels(self, metric_labels):
-        """Sets the metric_labels of this TriggerCondition.
+        r"""Sets the metric_labels of this TriggerCondition.
 
         指标维度。
 
@@ -300,7 +300,7 @@ class TriggerCondition:
 
     @property
     def promql(self):
-        """Gets the promql of this TriggerCondition.
+        r"""Gets the promql of this TriggerCondition.
 
         Prometheus语句。
 
@@ -311,7 +311,7 @@ class TriggerCondition:
 
     @promql.setter
     def promql(self, promql):
-        """Sets the promql of this TriggerCondition.
+        r"""Sets the promql of this TriggerCondition.
 
         Prometheus语句。
 
@@ -322,7 +322,7 @@ class TriggerCondition:
 
     @property
     def promql_expr(self):
-        """Gets the promql_expr of this TriggerCondition.
+        r"""Gets the promql_expr of this TriggerCondition.
 
         Prometheus语句模板。
 
@@ -333,7 +333,7 @@ class TriggerCondition:
 
     @promql_expr.setter
     def promql_expr(self, promql_expr):
-        """Sets the promql_expr of this TriggerCondition.
+        r"""Sets the promql_expr of this TriggerCondition.
 
         Prometheus语句模板。
 
@@ -344,7 +344,7 @@ class TriggerCondition:
 
     @property
     def trigger_times(self):
-        """Gets the trigger_times of this TriggerCondition.
+        r"""Gets the trigger_times of this TriggerCondition.
 
         连续周期个数。
 
@@ -355,7 +355,7 @@ class TriggerCondition:
 
     @trigger_times.setter
     def trigger_times(self, trigger_times):
-        """Sets the trigger_times of this TriggerCondition.
+        r"""Sets the trigger_times of this TriggerCondition.
 
         连续周期个数。
 
@@ -366,7 +366,7 @@ class TriggerCondition:
 
     @property
     def trigger_interval(self):
-        """Gets the trigger_interval of this TriggerCondition.
+        r"""Gets the trigger_interval of this TriggerCondition.
 
         检查频率周期。 - 当trigger_type 为“HOURLY”时，填“” - 当trigger_type为“DAILY”时，格式为：“小时” 例如 每天凌晨三点\"03:00\" - 当trigger_type为“WEEKLY”时，格式为：“星期 小时”例如每周一凌晨三点 “1 03:00” - 当trigger_type为“CRON”时，格式为 标准CRON表达式 - 当trigger_type为“FIXED_RATE”时，秒的取值为15s，30s，分钟为 1~59，小时为 1~24。例如：“15s”，“30s”，“1min”，“1h”
 
@@ -377,7 +377,7 @@ class TriggerCondition:
 
     @trigger_interval.setter
     def trigger_interval(self, trigger_interval):
-        """Sets the trigger_interval of this TriggerCondition.
+        r"""Sets the trigger_interval of this TriggerCondition.
 
         检查频率周期。 - 当trigger_type 为“HOURLY”时，填“” - 当trigger_type为“DAILY”时，格式为：“小时” 例如 每天凌晨三点\"03:00\" - 当trigger_type为“WEEKLY”时，格式为：“星期 小时”例如每周一凌晨三点 “1 03:00” - 当trigger_type为“CRON”时，格式为 标准CRON表达式 - 当trigger_type为“FIXED_RATE”时，秒的取值为15s，30s，分钟为 1~59，小时为 1~24。例如：“15s”，“30s”，“1min”，“1h”
 
@@ -388,7 +388,7 @@ class TriggerCondition:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this TriggerCondition.
+        r"""Gets the trigger_type of this TriggerCondition.
 
         触发频率的类型： - “FIXED_RATE”：固定间隔 - “HOURLY”：每小时 - “DAILY”：每天 - “WEEKLY”：每周 - “CRON”：Cron表达式
 
@@ -399,7 +399,7 @@ class TriggerCondition:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this TriggerCondition.
+        r"""Sets the trigger_type of this TriggerCondition.
 
         触发频率的类型： - “FIXED_RATE”：固定间隔 - “HOURLY”：每小时 - “DAILY”：每天 - “WEEKLY”：每周 - “CRON”：Cron表达式
 
@@ -410,7 +410,7 @@ class TriggerCondition:
 
     @property
     def promql_for(self):
-        """Gets the promql_for of this TriggerCondition.
+        r"""Gets the promql_for of this TriggerCondition.
 
         Prometheus原生监控时长。
 
@@ -421,7 +421,7 @@ class TriggerCondition:
 
     @promql_for.setter
     def promql_for(self, promql_for):
-        """Sets the promql_for of this TriggerCondition.
+        r"""Sets the promql_for of this TriggerCondition.
 
         Prometheus原生监控时长。
 
@@ -432,7 +432,7 @@ class TriggerCondition:
 
     @property
     def aggregation_type(self):
-        """Gets the aggregation_type of this TriggerCondition.
+        r"""Gets the aggregation_type of this TriggerCondition.
 
         统计方式： - average - minimum - maximum - sum - sampleCount
 
@@ -443,7 +443,7 @@ class TriggerCondition:
 
     @aggregation_type.setter
     def aggregation_type(self, aggregation_type):
-        """Sets the aggregation_type of this TriggerCondition.
+        r"""Sets the aggregation_type of this TriggerCondition.
 
         统计方式： - average - minimum - maximum - sum - sampleCount
 
@@ -454,7 +454,7 @@ class TriggerCondition:
 
     @property
     def operator(self):
-        """Gets the operator of this TriggerCondition.
+        r"""Gets the operator of this TriggerCondition.
 
         判断条件：“>”,“<”,“=”,“>=”,“<=”
 
@@ -465,7 +465,7 @@ class TriggerCondition:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this TriggerCondition.
+        r"""Sets the operator of this TriggerCondition.
 
         判断条件：“>”,“<”,“=”,“>=”,“<=”
 
@@ -476,7 +476,7 @@ class TriggerCondition:
 
     @property
     def thresholds(self):
-        """Gets the thresholds of this TriggerCondition.
+        r"""Gets the thresholds of this TriggerCondition.
 
         键值对形式，键为告警级别，值为告警阈值
 
@@ -487,7 +487,7 @@ class TriggerCondition:
 
     @thresholds.setter
     def thresholds(self, thresholds):
-        """Sets the thresholds of this TriggerCondition.
+        r"""Sets the thresholds of this TriggerCondition.
 
         键值对形式，键为告警级别，值为告警阈值
 
@@ -498,7 +498,7 @@ class TriggerCondition:
 
     @property
     def aggregation_window(self):
-        """Gets the aggregation_window of this TriggerCondition.
+        r"""Gets the aggregation_window of this TriggerCondition.
 
         统计周期。 - “15s” - “30s” - “1m” - “5m” - “15m” - “1h”
 
@@ -509,7 +509,7 @@ class TriggerCondition:
 
     @aggregation_window.setter
     def aggregation_window(self, aggregation_window):
-        """Sets the aggregation_window of this TriggerCondition.
+        r"""Sets the aggregation_window of this TriggerCondition.
 
         统计周期。 - “15s” - “30s” - “1m” - “5m” - “15m” - “1h”
 
@@ -520,7 +520,7 @@ class TriggerCondition:
 
     @property
     def cmdb(self):
-        """Gets the cmdb of this TriggerCondition.
+        r"""Gets the cmdb of this TriggerCondition.
 
         :return: The cmdb of this TriggerCondition.
         :rtype: :class:`huaweicloudsdkaom.v2.CmdbInfo`
@@ -529,7 +529,7 @@ class TriggerCondition:
 
     @cmdb.setter
     def cmdb(self, cmdb):
-        """Sets the cmdb of this TriggerCondition.
+        r"""Sets the cmdb of this TriggerCondition.
 
         :param cmdb: The cmdb of this TriggerCondition.
         :type cmdb: :class:`huaweicloudsdkaom.v2.CmdbInfo`
@@ -538,7 +538,7 @@ class TriggerCondition:
 
     @property
     def query_match(self):
-        """Gets the query_match of this TriggerCondition.
+        r"""Gets the query_match of this TriggerCondition.
 
         查询筛选条件。
 
@@ -549,7 +549,7 @@ class TriggerCondition:
 
     @query_match.setter
     def query_match(self, query_match):
-        """Sets the query_match of this TriggerCondition.
+        r"""Sets the query_match of this TriggerCondition.
 
         查询筛选条件。
 
@@ -560,7 +560,7 @@ class TriggerCondition:
 
     @property
     def query_param(self):
-        """Gets the query_param of this TriggerCondition.
+        r"""Gets the query_param of this TriggerCondition.
 
         查询参数
 
@@ -571,7 +571,7 @@ class TriggerCondition:
 
     @query_param.setter
     def query_param(self, query_param):
-        """Sets the query_param of this TriggerCondition.
+        r"""Sets the query_param of this TriggerCondition.
 
         查询参数
 
@@ -582,7 +582,7 @@ class TriggerCondition:
 
     @property
     def aom_monitor_level(self):
-        """Gets the aom_monitor_level of this TriggerCondition.
+        r"""Gets the aom_monitor_level of this TriggerCondition.
 
         监控层级。
 
@@ -593,7 +593,7 @@ class TriggerCondition:
 
     @aom_monitor_level.setter
     def aom_monitor_level(self, aom_monitor_level):
-        """Sets the aom_monitor_level of this TriggerCondition.
+        r"""Sets the aom_monitor_level of this TriggerCondition.
 
         监控层级。
 
@@ -604,7 +604,7 @@ class TriggerCondition:
 
     @property
     def aggregate_type(self):
-        """Gets the aggregate_type of this TriggerCondition.
+        r"""Gets the aggregate_type of this TriggerCondition.
 
         聚合方式。 - “by”：不分组 - “avg” - “max” - “min” - “sum”
 
@@ -615,7 +615,7 @@ class TriggerCondition:
 
     @aggregate_type.setter
     def aggregate_type(self, aggregate_type):
-        """Sets the aggregate_type of this TriggerCondition.
+        r"""Sets the aggregate_type of this TriggerCondition.
 
         聚合方式。 - “by”：不分组 - “avg” - “max” - “min” - “sum”
 
@@ -626,7 +626,7 @@ class TriggerCondition:
 
     @property
     def metric_statistic_method(self):
-        """Gets the metric_statistic_method of this TriggerCondition.
+        r"""Gets the metric_statistic_method of this TriggerCondition.
 
         当配置方式为全量指标时可选择的指标运算方式。 - “single”：单个指标进行运算 - “mix”：多个指标进行混合运算
 
@@ -637,7 +637,7 @@ class TriggerCondition:
 
     @metric_statistic_method.setter
     def metric_statistic_method(self, metric_statistic_method):
-        """Sets the metric_statistic_method of this TriggerCondition.
+        r"""Sets the metric_statistic_method of this TriggerCondition.
 
         当配置方式为全量指标时可选择的指标运算方式。 - “single”：单个指标进行运算 - “mix”：多个指标进行混合运算
 
@@ -648,7 +648,7 @@ class TriggerCondition:
 
     @property
     def expression(self):
-        """Gets the expression of this TriggerCondition.
+        r"""Gets the expression of this TriggerCondition.
 
         混合运算的表达式。
 
@@ -659,7 +659,7 @@ class TriggerCondition:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this TriggerCondition.
+        r"""Sets the expression of this TriggerCondition.
 
         混合运算的表达式。
 
@@ -670,7 +670,7 @@ class TriggerCondition:
 
     @property
     def mix_promql(self):
-        """Gets the mix_promql of this TriggerCondition.
+        r"""Gets the mix_promql of this TriggerCondition.
 
         混合运算的promQL。
 
@@ -681,7 +681,7 @@ class TriggerCondition:
 
     @mix_promql.setter
     def mix_promql(self, mix_promql):
-        """Sets the mix_promql of this TriggerCondition.
+        r"""Sets the mix_promql of this TriggerCondition.
 
         混合运算的promQL。
 

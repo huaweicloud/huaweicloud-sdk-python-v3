@@ -25,7 +25,7 @@ class CreateGcbTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateGcbTagRequestBody
+        r"""CreateGcbTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateGcbTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateGcbTagRequestBody.
+        r"""Gets the tag of this CreateGcbTagRequestBody.
 
         :return: The tag of this CreateGcbTagRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.RequiredTag`
@@ -51,7 +51,7 @@ class CreateGcbTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateGcbTagRequestBody.
+        r"""Sets the tag of this CreateGcbTagRequestBody.
 
         :param tag: The tag of this CreateGcbTagRequestBody.
         :type tag: :class:`huaweicloudsdkcc.v3.RequiredTag`

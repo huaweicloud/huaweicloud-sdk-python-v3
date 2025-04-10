@@ -26,7 +26,7 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
     }
 
     def __init__(self, groups=None):
-        """ListConsumerGroupOfTopicResponse
+        r"""ListConsumerGroupOfTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListConsumerGroupOfTopicResponse.
+        r"""Gets the groups of this ListConsumerGroupOfTopicResponse.
 
         消费组列表。
 
@@ -55,7 +55,7 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListConsumerGroupOfTopicResponse.
+        r"""Sets the groups of this ListConsumerGroupOfTopicResponse.
 
         消费组列表。
 

@@ -24,7 +24,7 @@ class DeletePrivateipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePrivateipResponse
+        r"""DeletePrivateipResponse
 
         The model defined in huaweicloud sdk
 

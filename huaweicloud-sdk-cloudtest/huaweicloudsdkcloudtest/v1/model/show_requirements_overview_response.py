@@ -30,7 +30,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None):
-        """ShowRequirementsOverviewResponse
+        r"""ShowRequirementsOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRequirementsOverviewResponse.
+        r"""Gets the status of this ShowRequirementsOverviewResponse.
 
         success|error;
 
@@ -69,7 +69,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRequirementsOverviewResponse.
+        r"""Sets the status of this ShowRequirementsOverviewResponse.
 
         success|error;
 
@@ -80,7 +80,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowRequirementsOverviewResponse.
+        r"""Gets the result of this ShowRequirementsOverviewResponse.
 
         :return: The result of this ShowRequirementsOverviewResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueRequirementsOverviewVo`
@@ -89,7 +89,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowRequirementsOverviewResponse.
+        r"""Sets the result of this ShowRequirementsOverviewResponse.
 
         :param result: The result of this ShowRequirementsOverviewResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueRequirementsOverviewVo`
@@ -98,7 +98,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowRequirementsOverviewResponse.
+        r"""Gets the error of this ShowRequirementsOverviewResponse.
 
         :return: The error of this ShowRequirementsOverviewResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -107,7 +107,7 @@ class ShowRequirementsOverviewResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowRequirementsOverviewResponse.
+        r"""Sets the error of this ShowRequirementsOverviewResponse.
 
         :param error: The error of this ShowRequirementsOverviewResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`

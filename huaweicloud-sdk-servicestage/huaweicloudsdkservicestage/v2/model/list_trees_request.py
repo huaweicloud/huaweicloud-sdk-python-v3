@@ -31,7 +31,7 @@ class ListTreesRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, ref=None):
-        """ListTreesRequest
+        r"""ListTreesRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListTreesRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ListTreesRequest.
+        r"""Gets the x_repo_auth of this ListTreesRequest.
 
         授权名称。
 
@@ -71,7 +71,7 @@ class ListTreesRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ListTreesRequest.
+        r"""Sets the x_repo_auth of this ListTreesRequest.
 
         授权名称。
 
@@ -82,7 +82,7 @@ class ListTreesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListTreesRequest.
+        r"""Gets the namespace of this ListTreesRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -93,7 +93,7 @@ class ListTreesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListTreesRequest.
+        r"""Sets the namespace of this ListTreesRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -104,7 +104,7 @@ class ListTreesRequest:
 
     @property
     def project(self):
-        """Gets the project of this ListTreesRequest.
+        r"""Gets the project of this ListTreesRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -115,7 +115,7 @@ class ListTreesRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ListTreesRequest.
+        r"""Sets the project of this ListTreesRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -126,7 +126,7 @@ class ListTreesRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this ListTreesRequest.
+        r"""Gets the ref of this ListTreesRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -137,7 +137,7 @@ class ListTreesRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ListTreesRequest.
+        r"""Sets the ref of this ListTreesRequest.
 
         分支名称或者tag标签名称或者commit sha。
 

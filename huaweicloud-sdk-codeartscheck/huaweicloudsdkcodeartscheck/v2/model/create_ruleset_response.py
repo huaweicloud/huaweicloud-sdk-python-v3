@@ -26,7 +26,7 @@ class CreateRulesetResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateRulesetResponse
+        r"""CreateRulesetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRulesetResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateRulesetResponse.
+        r"""Gets the template_id of this CreateRulesetResponse.
 
         规则集ID
 
@@ -55,7 +55,7 @@ class CreateRulesetResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateRulesetResponse.
+        r"""Sets the template_id of this CreateRulesetResponse.
 
         规则集ID
 

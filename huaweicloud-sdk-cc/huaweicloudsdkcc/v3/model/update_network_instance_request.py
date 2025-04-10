@@ -27,7 +27,7 @@ class UpdateNetworkInstanceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateNetworkInstanceRequest
+        r"""UpdateNetworkInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNetworkInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateNetworkInstanceRequest.
+        r"""Gets the id of this UpdateNetworkInstanceRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateNetworkInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateNetworkInstanceRequest.
+        r"""Sets the id of this UpdateNetworkInstanceRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateNetworkInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNetworkInstanceRequest.
+        r"""Gets the body of this UpdateNetworkInstanceRequest.
 
         :return: The body of this UpdateNetworkInstanceRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequestBody`
@@ -80,7 +80,7 @@ class UpdateNetworkInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNetworkInstanceRequest.
+        r"""Sets the body of this UpdateNetworkInstanceRequest.
 
         :param body: The body of this UpdateNetworkInstanceRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequestBody`

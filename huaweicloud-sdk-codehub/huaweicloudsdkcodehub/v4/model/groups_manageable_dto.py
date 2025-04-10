@@ -29,7 +29,7 @@ class GroupsManageableDto:
     }
 
     def __init__(self, full_name=None, id=None, name=None):
-        """GroupsManageableDto
+        r"""GroupsManageableDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GroupsManageableDto:
 
     @property
     def full_name(self):
-        """Gets the full_name of this GroupsManageableDto.
+        r"""Gets the full_name of this GroupsManageableDto.
 
         代码组全名
 
@@ -68,7 +68,7 @@ class GroupsManageableDto:
 
     @full_name.setter
     def full_name(self, full_name):
-        """Sets the full_name of this GroupsManageableDto.
+        r"""Sets the full_name of this GroupsManageableDto.
 
         代码组全名
 
@@ -79,7 +79,7 @@ class GroupsManageableDto:
 
     @property
     def id(self):
-        """Gets the id of this GroupsManageableDto.
+        r"""Gets the id of this GroupsManageableDto.
 
         代码组id
 
@@ -90,7 +90,7 @@ class GroupsManageableDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupsManageableDto.
+        r"""Sets the id of this GroupsManageableDto.
 
         代码组id
 
@@ -101,7 +101,7 @@ class GroupsManageableDto:
 
     @property
     def name(self):
-        """Gets the name of this GroupsManageableDto.
+        r"""Gets the name of this GroupsManageableDto.
 
         代码组名
 
@@ -112,7 +112,7 @@ class GroupsManageableDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupsManageableDto.
+        r"""Sets the name of this GroupsManageableDto.
 
         代码组名
 

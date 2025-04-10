@@ -26,7 +26,7 @@ class ShowAccessKeyLastUsedV5Response(SdkResponse):
     }
 
     def __init__(self, access_key_last_used=None):
-        """ShowAccessKeyLastUsedV5Response
+        r"""ShowAccessKeyLastUsedV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAccessKeyLastUsedV5Response(SdkResponse):
 
     @property
     def access_key_last_used(self):
-        """Gets the access_key_last_used of this ShowAccessKeyLastUsedV5Response.
+        r"""Gets the access_key_last_used of this ShowAccessKeyLastUsedV5Response.
 
         :return: The access_key_last_used of this ShowAccessKeyLastUsedV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.AccessKeyLastUsed`
@@ -53,7 +53,7 @@ class ShowAccessKeyLastUsedV5Response(SdkResponse):
 
     @access_key_last_used.setter
     def access_key_last_used(self, access_key_last_used):
-        """Sets the access_key_last_used of this ShowAccessKeyLastUsedV5Response.
+        r"""Sets the access_key_last_used of this ShowAccessKeyLastUsedV5Response.
 
         :param access_key_last_used: The access_key_last_used of this ShowAccessKeyLastUsedV5Response.
         :type access_key_last_used: :class:`huaweicloudsdkiam.v5.AccessKeyLastUsed`

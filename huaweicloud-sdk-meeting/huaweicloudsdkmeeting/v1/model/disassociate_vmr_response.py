@@ -24,7 +24,7 @@ class DisassociateVmrResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateVmrResponse
+        r"""DisassociateVmrResponse
 
         The model defined in huaweicloud sdk
 

@@ -39,7 +39,7 @@ class Member:
     }
 
     def __init__(self, status=None, created_at=None, updated_at=None, backup_id=None, image_id=None, dest_project_id=None, vault_id=None, id=None):
-        """Member
+        r"""Member
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class Member:
 
     @property
     def status(self):
-        """Gets the status of this Member.
+        r"""Gets the status of this Member.
 
         共享状态
 
@@ -102,7 +102,7 @@ class Member:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Member.
+        r"""Sets the status of this Member.
 
         共享状态
 
@@ -113,7 +113,7 @@ class Member:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Member.
+        r"""Gets the created_at of this Member.
 
         共享时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -124,7 +124,7 @@ class Member:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Member.
+        r"""Sets the created_at of this Member.
 
         共享时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -135,7 +135,7 @@ class Member:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Member.
+        r"""Gets the updated_at of this Member.
 
         更新时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -146,7 +146,7 @@ class Member:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Member.
+        r"""Sets the updated_at of this Member.
 
         更新时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -157,7 +157,7 @@ class Member:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this Member.
+        r"""Gets the backup_id of this Member.
 
         备份副本id
 
@@ -168,7 +168,7 @@ class Member:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this Member.
+        r"""Sets the backup_id of this Member.
 
         备份副本id
 
@@ -179,7 +179,7 @@ class Member:
 
     @property
     def image_id(self):
-        """Gets the image_id of this Member.
+        r"""Gets the image_id of this Member.
 
         接受的共享备份副本注册的镜像id
 
@@ -190,7 +190,7 @@ class Member:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this Member.
+        r"""Sets the image_id of this Member.
 
         接受的共享备份副本注册的镜像id
 
@@ -201,7 +201,7 @@ class Member:
 
     @property
     def dest_project_id(self):
-        """Gets the dest_project_id of this Member.
+        r"""Gets the dest_project_id of this Member.
 
         接受备份共享的项目id
 
@@ -212,7 +212,7 @@ class Member:
 
     @dest_project_id.setter
     def dest_project_id(self, dest_project_id):
-        """Sets the dest_project_id of this Member.
+        r"""Sets the dest_project_id of this Member.
 
         接受备份共享的项目id
 
@@ -223,7 +223,7 @@ class Member:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this Member.
+        r"""Gets the vault_id of this Member.
 
         目标端接受共享备份的存储库id
 
@@ -234,7 +234,7 @@ class Member:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this Member.
+        r"""Sets the vault_id of this Member.
 
         目标端接受共享备份的存储库id
 
@@ -245,7 +245,7 @@ class Member:
 
     @property
     def id(self):
-        """Gets the id of this Member.
+        r"""Gets the id of this Member.
 
         共享记录id
 
@@ -256,7 +256,7 @@ class Member:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Member.
+        r"""Sets the id of this Member.
 
         共享记录id
 

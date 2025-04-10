@@ -27,7 +27,7 @@ class CreateBatchJobRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateBatchJobRequest
+        r"""CreateBatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateBatchJobRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateBatchJobRequest.
+        r"""Gets the ief_instance_id of this CreateBatchJobRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateBatchJobRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateBatchJobRequest.
+        r"""Sets the ief_instance_id of this CreateBatchJobRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateBatchJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBatchJobRequest.
+        r"""Gets the body of this CreateBatchJobRequest.
 
         :return: The body of this CreateBatchJobRequest.
         :rtype: :class:`huaweicloudsdkief.v1.BatchJobRequest`
@@ -81,7 +81,7 @@ class CreateBatchJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBatchJobRequest.
+        r"""Sets the body of this CreateBatchJobRequest.
 
         :param body: The body of this CreateBatchJobRequest.
         :type body: :class:`huaweicloudsdkief.v1.BatchJobRequest`

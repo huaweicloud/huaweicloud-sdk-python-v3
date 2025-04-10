@@ -27,7 +27,7 @@ class BatchUpdateMembersRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """BatchUpdateMembersRequest
+        r"""BatchUpdateMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateMembersRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this BatchUpdateMembersRequest.
+        r"""Gets the pool_id of this BatchUpdateMembersRequest.
 
         参数解释：后端服务器组ID。
 
@@ -60,7 +60,7 @@ class BatchUpdateMembersRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this BatchUpdateMembersRequest.
+        r"""Sets the pool_id of this BatchUpdateMembersRequest.
 
         参数解释：后端服务器组ID。
 
@@ -71,7 +71,7 @@ class BatchUpdateMembersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateMembersRequest.
+        r"""Gets the body of this BatchUpdateMembersRequest.
 
         :return: The body of this BatchUpdateMembersRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdateMembersRequestBody`
@@ -80,7 +80,7 @@ class BatchUpdateMembersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateMembersRequest.
+        r"""Sets the body of this BatchUpdateMembersRequest.
 
         :param body: The body of this BatchUpdateMembersRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchUpdateMembersRequestBody`

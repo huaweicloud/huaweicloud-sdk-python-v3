@@ -33,7 +33,7 @@ class ListTableColumnStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, body=None):
-        """ListTableColumnStatisticsRequest
+        r"""ListTableColumnStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListTableColumnStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTableColumnStatisticsRequest.
+        r"""Gets the instance_id of this ListTableColumnStatisticsRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ListTableColumnStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTableColumnStatisticsRequest.
+        r"""Sets the instance_id of this ListTableColumnStatisticsRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class ListTableColumnStatisticsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListTableColumnStatisticsRequest.
+        r"""Gets the catalog_name of this ListTableColumnStatisticsRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class ListTableColumnStatisticsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListTableColumnStatisticsRequest.
+        r"""Sets the catalog_name of this ListTableColumnStatisticsRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class ListTableColumnStatisticsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTableColumnStatisticsRequest.
+        r"""Gets the database_name of this ListTableColumnStatisticsRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class ListTableColumnStatisticsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTableColumnStatisticsRequest.
+        r"""Sets the database_name of this ListTableColumnStatisticsRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class ListTableColumnStatisticsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListTableColumnStatisticsRequest.
+        r"""Gets the table_name of this ListTableColumnStatisticsRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class ListTableColumnStatisticsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListTableColumnStatisticsRequest.
+        r"""Sets the table_name of this ListTableColumnStatisticsRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class ListTableColumnStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTableColumnStatisticsRequest.
+        r"""Gets the body of this ListTableColumnStatisticsRequest.
 
         :return: The body of this ListTableColumnStatisticsRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.GetTableColumnStatisticsInput`
@@ -164,7 +164,7 @@ class ListTableColumnStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTableColumnStatisticsRequest.
+        r"""Sets the body of this ListTableColumnStatisticsRequest.
 
         :param body: The body of this ListTableColumnStatisticsRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.GetTableColumnStatisticsInput`

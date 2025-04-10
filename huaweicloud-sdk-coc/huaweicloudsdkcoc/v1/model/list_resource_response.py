@@ -28,7 +28,7 @@ class ListResourceResponse(SdkResponse):
     }
 
     def __init__(self, data=None, x_request_id=None):
-        """ListResourceResponse
+        r"""ListResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListResourceResponse.
+        r"""Gets the data of this ListResourceResponse.
 
         资源列表
 
@@ -62,7 +62,7 @@ class ListResourceResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListResourceResponse.
+        r"""Sets the data of this ListResourceResponse.
 
         资源列表
 
@@ -73,7 +73,7 @@ class ListResourceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListResourceResponse.
+        r"""Gets the x_request_id of this ListResourceResponse.
 
         :return: The x_request_id of this ListResourceResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListResourceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListResourceResponse.
+        r"""Sets the x_request_id of this ListResourceResponse.
 
         :param x_request_id: The x_request_id of this ListResourceResponse.
         :type x_request_id: str

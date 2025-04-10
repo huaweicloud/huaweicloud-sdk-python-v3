@@ -27,7 +27,7 @@ class StopDatabaseProxyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """StopDatabaseProxyRequest
+        r"""StopDatabaseProxyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopDatabaseProxyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StopDatabaseProxyRequest.
+        r"""Gets the x_language of this StopDatabaseProxyRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class StopDatabaseProxyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StopDatabaseProxyRequest.
+        r"""Sets the x_language of this StopDatabaseProxyRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class StopDatabaseProxyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StopDatabaseProxyRequest.
+        r"""Gets the instance_id of this StopDatabaseProxyRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class StopDatabaseProxyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StopDatabaseProxyRequest.
+        r"""Sets the instance_id of this StopDatabaseProxyRequest.
 
         实例ID。
 

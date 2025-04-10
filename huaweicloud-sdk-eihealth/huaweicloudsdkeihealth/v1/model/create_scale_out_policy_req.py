@@ -49,7 +49,7 @@ class CreateScaleOutPolicyReq:
     }
 
     def __init__(self, name=None, availability_zone=None, spec_code=None, max_nodes=None, min_nodes=None, data_disk_spec_code=None, data_disk_size=None, cpu_rule_enable=None, cpu_percent=None, add_nodes_for_cpu_rule=None, mem_rule_enable=None, mem_percent=None, add_nodes_for_mem_rule=None):
-        """CreateScaleOutPolicyReq
+        r"""CreateScaleOutPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateScaleOutPolicyReq.
+        r"""Gets the name of this CreateScaleOutPolicyReq.
 
         策略名称
 
@@ -127,7 +127,7 @@ class CreateScaleOutPolicyReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateScaleOutPolicyReq.
+        r"""Sets the name of this CreateScaleOutPolicyReq.
 
         策略名称
 
@@ -138,7 +138,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateScaleOutPolicyReq.
+        r"""Gets the availability_zone of this CreateScaleOutPolicyReq.
 
         可用区
 
@@ -149,7 +149,7 @@ class CreateScaleOutPolicyReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateScaleOutPolicyReq.
+        r"""Sets the availability_zone of this CreateScaleOutPolicyReq.
 
         可用区
 
@@ -160,7 +160,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateScaleOutPolicyReq.
+        r"""Gets the spec_code of this CreateScaleOutPolicyReq.
 
         规格编码
 
@@ -171,7 +171,7 @@ class CreateScaleOutPolicyReq:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateScaleOutPolicyReq.
+        r"""Sets the spec_code of this CreateScaleOutPolicyReq.
 
         规格编码
 
@@ -182,7 +182,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def max_nodes(self):
-        """Gets the max_nodes of this CreateScaleOutPolicyReq.
+        r"""Gets the max_nodes of this CreateScaleOutPolicyReq.
 
         扩容节点数上限
 
@@ -193,7 +193,7 @@ class CreateScaleOutPolicyReq:
 
     @max_nodes.setter
     def max_nodes(self, max_nodes):
-        """Sets the max_nodes of this CreateScaleOutPolicyReq.
+        r"""Sets the max_nodes of this CreateScaleOutPolicyReq.
 
         扩容节点数上限
 
@@ -204,7 +204,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def min_nodes(self):
-        """Gets the min_nodes of this CreateScaleOutPolicyReq.
+        r"""Gets the min_nodes of this CreateScaleOutPolicyReq.
 
         扩容节点数下限
 
@@ -215,7 +215,7 @@ class CreateScaleOutPolicyReq:
 
     @min_nodes.setter
     def min_nodes(self, min_nodes):
-        """Sets the min_nodes of this CreateScaleOutPolicyReq.
+        r"""Sets the min_nodes of this CreateScaleOutPolicyReq.
 
         扩容节点数下限
 
@@ -226,7 +226,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def data_disk_spec_code(self):
-        """Gets the data_disk_spec_code of this CreateScaleOutPolicyReq.
+        r"""Gets the data_disk_spec_code of this CreateScaleOutPolicyReq.
 
         额外数据盘规格编码
 
@@ -237,7 +237,7 @@ class CreateScaleOutPolicyReq:
 
     @data_disk_spec_code.setter
     def data_disk_spec_code(self, data_disk_spec_code):
-        """Sets the data_disk_spec_code of this CreateScaleOutPolicyReq.
+        r"""Sets the data_disk_spec_code of this CreateScaleOutPolicyReq.
 
         额外数据盘规格编码
 
@@ -248,7 +248,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def data_disk_size(self):
-        """Gets the data_disk_size of this CreateScaleOutPolicyReq.
+        r"""Gets the data_disk_size of this CreateScaleOutPolicyReq.
 
         额外数据盘大小
 
@@ -259,7 +259,7 @@ class CreateScaleOutPolicyReq:
 
     @data_disk_size.setter
     def data_disk_size(self, data_disk_size):
-        """Sets the data_disk_size of this CreateScaleOutPolicyReq.
+        r"""Sets the data_disk_size of this CreateScaleOutPolicyReq.
 
         额外数据盘大小
 
@@ -270,7 +270,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def cpu_rule_enable(self):
-        """Gets the cpu_rule_enable of this CreateScaleOutPolicyReq.
+        r"""Gets the cpu_rule_enable of this CreateScaleOutPolicyReq.
 
         是否启用cpu规则
 
@@ -281,7 +281,7 @@ class CreateScaleOutPolicyReq:
 
     @cpu_rule_enable.setter
     def cpu_rule_enable(self, cpu_rule_enable):
-        """Sets the cpu_rule_enable of this CreateScaleOutPolicyReq.
+        r"""Sets the cpu_rule_enable of this CreateScaleOutPolicyReq.
 
         是否启用cpu规则
 
@@ -292,7 +292,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def cpu_percent(self):
-        """Gets the cpu_percent of this CreateScaleOutPolicyReq.
+        r"""Gets the cpu_percent of this CreateScaleOutPolicyReq.
 
         cpu分配率百分比
 
@@ -303,7 +303,7 @@ class CreateScaleOutPolicyReq:
 
     @cpu_percent.setter
     def cpu_percent(self, cpu_percent):
-        """Sets the cpu_percent of this CreateScaleOutPolicyReq.
+        r"""Sets the cpu_percent of this CreateScaleOutPolicyReq.
 
         cpu分配率百分比
 
@@ -314,7 +314,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def add_nodes_for_cpu_rule(self):
-        """Gets the add_nodes_for_cpu_rule of this CreateScaleOutPolicyReq.
+        r"""Gets the add_nodes_for_cpu_rule of this CreateScaleOutPolicyReq.
 
         满足扩容策略中cpu分配率时增加的节点数
 
@@ -325,7 +325,7 @@ class CreateScaleOutPolicyReq:
 
     @add_nodes_for_cpu_rule.setter
     def add_nodes_for_cpu_rule(self, add_nodes_for_cpu_rule):
-        """Sets the add_nodes_for_cpu_rule of this CreateScaleOutPolicyReq.
+        r"""Sets the add_nodes_for_cpu_rule of this CreateScaleOutPolicyReq.
 
         满足扩容策略中cpu分配率时增加的节点数
 
@@ -336,7 +336,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def mem_rule_enable(self):
-        """Gets the mem_rule_enable of this CreateScaleOutPolicyReq.
+        r"""Gets the mem_rule_enable of this CreateScaleOutPolicyReq.
 
         是否启用mem规则
 
@@ -347,7 +347,7 @@ class CreateScaleOutPolicyReq:
 
     @mem_rule_enable.setter
     def mem_rule_enable(self, mem_rule_enable):
-        """Sets the mem_rule_enable of this CreateScaleOutPolicyReq.
+        r"""Sets the mem_rule_enable of this CreateScaleOutPolicyReq.
 
         是否启用mem规则
 
@@ -358,7 +358,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def mem_percent(self):
-        """Gets the mem_percent of this CreateScaleOutPolicyReq.
+        r"""Gets the mem_percent of this CreateScaleOutPolicyReq.
 
         mem分配率百分比
 
@@ -369,7 +369,7 @@ class CreateScaleOutPolicyReq:
 
     @mem_percent.setter
     def mem_percent(self, mem_percent):
-        """Sets the mem_percent of this CreateScaleOutPolicyReq.
+        r"""Sets the mem_percent of this CreateScaleOutPolicyReq.
 
         mem分配率百分比
 
@@ -380,7 +380,7 @@ class CreateScaleOutPolicyReq:
 
     @property
     def add_nodes_for_mem_rule(self):
-        """Gets the add_nodes_for_mem_rule of this CreateScaleOutPolicyReq.
+        r"""Gets the add_nodes_for_mem_rule of this CreateScaleOutPolicyReq.
 
         满足扩容策略中mem分配率时增加的节点数
 
@@ -391,7 +391,7 @@ class CreateScaleOutPolicyReq:
 
     @add_nodes_for_mem_rule.setter
     def add_nodes_for_mem_rule(self, add_nodes_for_mem_rule):
-        """Sets the add_nodes_for_mem_rule of this CreateScaleOutPolicyReq.
+        r"""Sets the add_nodes_for_mem_rule of this CreateScaleOutPolicyReq.
 
         满足扩容策略中mem分配率时增加的节点数
 

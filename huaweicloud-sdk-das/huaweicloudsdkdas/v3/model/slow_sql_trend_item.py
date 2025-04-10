@@ -27,7 +27,7 @@ class SlowSqlTrendItem:
     }
 
     def __init__(self, timestamp=None, slow_log_count=None):
-        """SlowSqlTrendItem
+        r"""SlowSqlTrendItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SlowSqlTrendItem:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this SlowSqlTrendItem.
+        r"""Gets the timestamp of this SlowSqlTrendItem.
 
         毫秒时间戳。表示统计数据的时间范围为timestamp到timestamp + interval_millis。
 
@@ -59,7 +59,7 @@ class SlowSqlTrendItem:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this SlowSqlTrendItem.
+        r"""Sets the timestamp of this SlowSqlTrendItem.
 
         毫秒时间戳。表示统计数据的时间范围为timestamp到timestamp + interval_millis。
 
@@ -70,7 +70,7 @@ class SlowSqlTrendItem:
 
     @property
     def slow_log_count(self):
-        """Gets the slow_log_count of this SlowSqlTrendItem.
+        r"""Gets the slow_log_count of this SlowSqlTrendItem.
 
         慢SQL数量。
 
@@ -81,7 +81,7 @@ class SlowSqlTrendItem:
 
     @slow_log_count.setter
     def slow_log_count(self, slow_log_count):
-        """Sets the slow_log_count of this SlowSqlTrendItem.
+        r"""Sets the slow_log_count of this SlowSqlTrendItem.
 
         慢SQL数量。
 

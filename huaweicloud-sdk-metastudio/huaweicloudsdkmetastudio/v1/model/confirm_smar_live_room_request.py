@@ -29,7 +29,7 @@ class ConfirmSmarLiveRoomRequest:
     }
 
     def __init__(self, room_id=None, x_app_user_id=None, body=None):
-        """ConfirmSmarLiveRoomRequest
+        r"""ConfirmSmarLiveRoomRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ConfirmSmarLiveRoomRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ConfirmSmarLiveRoomRequest.
+        r"""Gets the room_id of this ConfirmSmarLiveRoomRequest.
 
         直播间ID。
 
@@ -67,7 +67,7 @@ class ConfirmSmarLiveRoomRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ConfirmSmarLiveRoomRequest.
+        r"""Sets the room_id of this ConfirmSmarLiveRoomRequest.
 
         直播间ID。
 
@@ -78,7 +78,7 @@ class ConfirmSmarLiveRoomRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ConfirmSmarLiveRoomRequest.
+        r"""Gets the x_app_user_id of this ConfirmSmarLiveRoomRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class ConfirmSmarLiveRoomRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ConfirmSmarLiveRoomRequest.
+        r"""Sets the x_app_user_id of this ConfirmSmarLiveRoomRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class ConfirmSmarLiveRoomRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmSmarLiveRoomRequest.
+        r"""Gets the body of this ConfirmSmarLiveRoomRequest.
 
         :return: The body of this ConfirmSmarLiveRoomRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmarLiveRoomReq`
@@ -109,7 +109,7 @@ class ConfirmSmarLiveRoomRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmSmarLiveRoomRequest.
+        r"""Sets the body of this ConfirmSmarLiveRoomRequest.
 
         :param body: The body of this ConfirmSmarLiveRoomRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ConfirmSmarLiveRoomReq`

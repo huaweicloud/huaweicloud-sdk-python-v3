@@ -27,7 +27,7 @@ class UpdateWebHookConfigStatusRequest:
     }
 
     def __init__(self, id=None, status=None):
-        """UpdateWebHookConfigStatusRequest
+        r"""UpdateWebHookConfigStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateWebHookConfigStatusRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateWebHookConfigStatusRequest.
+        r"""Gets the id of this UpdateWebHookConfigStatusRequest.
 
         订阅配置记录ID。
 
@@ -59,7 +59,7 @@ class UpdateWebHookConfigStatusRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateWebHookConfigStatusRequest.
+        r"""Sets the id of this UpdateWebHookConfigStatusRequest.
 
         订阅配置记录ID。
 
@@ -70,7 +70,7 @@ class UpdateWebHookConfigStatusRequest:
 
     @property
     def status(self):
-        """Gets the status of this UpdateWebHookConfigStatusRequest.
+        r"""Gets the status of this UpdateWebHookConfigStatusRequest.
 
         事件推送状态。 * 0：启用 * 1：禁用 * 2：锁定 
 
@@ -81,7 +81,7 @@ class UpdateWebHookConfigStatusRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateWebHookConfigStatusRequest.
+        r"""Sets the status of this UpdateWebHookConfigStatusRequest.
 
         事件推送状态。 * 0：启用 * 1：禁用 * 2：锁定 
 

@@ -24,7 +24,7 @@ class BatchAssociateClassificationToEntitiesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAssociateClassificationToEntitiesResponse
+        r"""BatchAssociateClassificationToEntitiesResponse
 
         The model defined in huaweicloud sdk
 

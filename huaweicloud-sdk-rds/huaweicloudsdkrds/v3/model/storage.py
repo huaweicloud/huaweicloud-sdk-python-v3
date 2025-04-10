@@ -29,7 +29,7 @@ class Storage:
     }
 
     def __init__(self, name=None, az_status=None, support_compute_group_type=None):
-        """Storage
+        r"""Storage
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Storage:
 
     @property
     def name(self):
-        """Gets the name of this Storage.
+        r"""Gets the name of this Storage.
 
         磁盘类型名称，可能取值如下： - ULTRAHIGH：表示SSD。 - LOCALSSD：表示本地SSD。 - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。 - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
@@ -66,7 +66,7 @@ class Storage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Storage.
+        r"""Sets the name of this Storage.
 
         磁盘类型名称，可能取值如下： - ULTRAHIGH：表示SSD。 - LOCALSSD：表示本地SSD。 - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。 - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
@@ -77,7 +77,7 @@ class Storage:
 
     @property
     def az_status(self):
-        """Gets the az_status of this Storage.
+        r"""Gets the az_status of this Storage.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -88,7 +88,7 @@ class Storage:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this Storage.
+        r"""Sets the az_status of this Storage.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -99,7 +99,7 @@ class Storage:
 
     @property
     def support_compute_group_type(self):
-        """Gets the support_compute_group_type of this Storage.
+        r"""Gets the support_compute_group_type of this Storage.
 
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。 - bigmen：超大内存型。
 
@@ -110,7 +110,7 @@ class Storage:
 
     @support_compute_group_type.setter
     def support_compute_group_type(self, support_compute_group_type):
-        """Sets the support_compute_group_type of this Storage.
+        r"""Sets the support_compute_group_type of this Storage.
 
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。 - bigmen：超大内存型。
 

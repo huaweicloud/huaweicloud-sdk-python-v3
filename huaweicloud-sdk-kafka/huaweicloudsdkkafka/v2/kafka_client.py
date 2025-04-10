@@ -34,7 +34,7 @@ class KafkaClient(Client):
         return client_builder
 
     def batch_create_or_delete_kafka_tag(self, request):
-        """批量添加或删除实例标签
+        r"""批量添加或删除实例标签
 
         批量添加或删除实例标签。
         
@@ -101,7 +101,7 @@ class KafkaClient(Client):
         return http_info
 
     def batch_delete_group(self, request):
-        """Kafka实例批量删除消费组
+        r"""Kafka实例批量删除消费组
 
         该接口用于向Kafka实例批量删除消费组。
         
@@ -168,7 +168,7 @@ class KafkaClient(Client):
         return http_info
 
     def batch_delete_instance_topic(self, request):
-        """Kafka实例批量删除Topic
+        r"""Kafka实例批量删除Topic
 
         该接口用于向Kafka实例批量删除Topic。批量删除多个Topic时，部分删除成功，部分失败，此时接口返回删除成功，并在返回中显示删除失败的Topic信息。
         
@@ -235,7 +235,7 @@ class KafkaClient(Client):
         return http_info
 
     def batch_delete_instance_users(self, request):
-        """批量删除用户
+        r"""批量删除用户
 
         批量删除Kafka实例的用户。
         
@@ -302,7 +302,7 @@ class KafkaClient(Client):
         return http_info
 
     def batch_delete_message_diagnosis_reports(self, request):
-        """批量删除消息积压诊断报告
+        r"""批量删除消息积压诊断报告
 
         批量删除消息积压诊断报告
         
@@ -369,7 +369,7 @@ class KafkaClient(Client):
         return http_info
 
     def batch_restart_or_delete_instances(self, request):
-        """批量重启或删除实例
+        r"""批量重启或删除实例
 
         批量重启或删除实例。
         
@@ -438,7 +438,7 @@ class KafkaClient(Client):
         return http_info
 
     def close_kafka_manager(self, request):
-        """关闭Kafka Manager
+        r"""关闭Kafka Manager
 
         关闭Kafka Manager，相应的原来开放出的management相关接口也将不可用。
         
@@ -503,7 +503,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_instance_by_engine(self, request):
-        """创建实例
+        r"""创建实例
 
         创建实例。
         
@@ -572,7 +572,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_instance_topic(self, request):
-        """Kafka实例创建Topic
+        r"""Kafka实例创建Topic
 
         该接口用于向Kafka实例创建Topic。
         
@@ -639,7 +639,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_instance_user(self, request):
-        """创建用户
+        r"""创建用户
 
         创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。 [ 2023年7月15日前创建的Kafka实例，一个实例最多创建20个用户。2023年7月15日及以后创建的Kafka实例，一个实例最多创建500个用户。](tag:hws,hws_hk)
         
@@ -706,7 +706,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_kafka_consumer_group(self, request):
-        """创建消费组
+        r"""创建消费组
 
         实例创建消费组
         
@@ -773,7 +773,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_kafka_user_client_quota_task(self, request):
-        """创建用户/客户端流控配置
+        r"""创建用户/客户端流控配置
 
         该接口用于向Kafka实例提交创建用户、客户端级别的流控任务，若成功则返回流控任务的job_id。
         
@@ -840,7 +840,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_message_diagnosis_task(self, request):
-        """创建消息积压诊断任务
+        r"""创建消息积压诊断任务
 
         创建消息积压诊断任务
         
@@ -907,7 +907,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_post_paid_instance(self, request):
-        """创建实例
+        r"""创建实例
 
         创建按需计费类型的Kafka实例。
         
@@ -972,7 +972,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_reassignment_task(self, request):
-        """Kafka实例开始分区重平衡任务
+        r"""Kafka实例开始分区重平衡任务
 
         该接口用于向Kafka实例提交分区重平衡任务或计算重平衡预估时间。
         
@@ -1039,7 +1039,7 @@ class KafkaClient(Client):
         return http_info
 
     def delete_background_task(self, request):
-        """删除后台任务管理中的指定记录
+        r"""删除后台任务管理中的指定记录
 
         删除后台任务管理中的指定记录。
         
@@ -1106,7 +1106,7 @@ class KafkaClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除指定的实例
+        r"""删除指定的实例
 
         删除指定的实例，释放该实例的所有资源。
         
@@ -1171,7 +1171,7 @@ class KafkaClient(Client):
         return http_info
 
     def delete_kafka_user_client_quota_task(self, request):
-        """删除用户/客户端流控配置
+        r"""删除用户/客户端流控配置
 
         该接口用于向Kafka实例提交删除用户、客户端级别的流控任务，若成功则返回流控任务的job_id。
         
@@ -1238,7 +1238,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_available_zones(self, request):
-        """查询可用区信息
+        r"""查询可用区信息
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
@@ -1301,7 +1301,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_background_tasks(self, request):
-        """查询实例的后台任务列表
+        r"""查询实例的后台任务列表
 
         查询实例的后台任务列表。
         
@@ -1374,7 +1374,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_engine_products(self, request):
-        """查询产品规格列表
+        r"""查询产品规格列表
 
         查询产品规格列表。
         
@@ -1441,7 +1441,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_instance_consumer_groups(self, request):
-        """查询所有消费组
+        r"""查询所有消费组
 
         查询所有消费组。
         
@@ -1512,7 +1512,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_instance_topics(self, request):
-        """Kafka实例查询Topic
+        r"""Kafka实例查询Topic
 
         该接口用于查询指定Kafka实例的Topic详情。
         
@@ -1581,7 +1581,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """查询所有实例列表
+        r"""查询所有实例列表
 
         查询租户的实例列表，支持按照条件查询。
         
@@ -1662,7 +1662,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_message_diagnosis_reports(self, request):
-        """查询消息积压诊断报告列表
+        r"""查询消息积压诊断报告列表
 
         查询消息积压诊断报告列表
         
@@ -1731,7 +1731,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_products(self, request):
-        """查询产品规格列表
+        r"""查询产品规格列表
 
         在创建kafka实例时，需要配置订购的产品ID（即product_id），可通过该接口查询产品规格。
         
@@ -1802,7 +1802,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_topic_partitions(self, request):
-        """查询Topic的分区列表
+        r"""查询Topic的分区列表
 
         查询Topic的分区列表
         
@@ -1873,7 +1873,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_topic_producers(self, request):
-        """查询Topic的当前生产者列表
+        r"""查询Topic的当前生产者列表
 
         查询Topic的当前生产者列表
         
@@ -1944,7 +1944,7 @@ class KafkaClient(Client):
         return http_info
 
     def modify_instance_configs(self, request):
-        """修改实例配置
+        r"""修改实例配置
 
         修改实例配置。
         
@@ -2011,7 +2011,7 @@ class KafkaClient(Client):
         return http_info
 
     def reset_manager_password(self, request):
-        """重置Manager密码
+        r"""重置Manager密码
 
         重置Manager密码。
         
@@ -2078,7 +2078,7 @@ class KafkaClient(Client):
         return http_info
 
     def reset_message_offset(self, request):
-        """重置消费组消费进度到指定位置
+        r"""重置消费组消费进度到指定位置
 
         Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。
         
@@ -2149,7 +2149,7 @@ class KafkaClient(Client):
         return http_info
 
     def reset_message_offset_with_engine(self, request):
-        """重置消费组消费进度到指定位置
+        r"""重置消费组消费进度到指定位置
 
         Kafka实例不支持在线重置消费进度。在执行重置消费进度之前，必须停止被重置消费组客户端。
         
@@ -2220,7 +2220,7 @@ class KafkaClient(Client):
         return http_info
 
     def reset_password(self, request):
-        """重置密码
+        r"""重置密码
 
         重置密码（只针对开通SSL的实例）。
         
@@ -2287,7 +2287,7 @@ class KafkaClient(Client):
         return http_info
 
     def reset_user_passwrod(self, request):
-        """重置用户密码
+        r"""重置用户密码
 
         重置用户密码
         
@@ -2356,7 +2356,7 @@ class KafkaClient(Client):
         return http_info
 
     def resize_engine_instance(self, request):
-        """实例扩容
+        r"""实例扩容
 
         实例规格变更。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
         
@@ -2425,7 +2425,7 @@ class KafkaClient(Client):
         return http_info
 
     def resize_instance(self, request):
-        """实例扩容
+        r"""实例扩容
 
         实例扩容。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
         
@@ -2492,7 +2492,7 @@ class KafkaClient(Client):
         return http_info
 
     def restart_manager(self, request):
-        """重启Manager
+        r"""重启Manager
 
         重启Manager。
         
@@ -2557,7 +2557,7 @@ class KafkaClient(Client):
         return http_info
 
     def send_kafka_message(self, request):
-        """Kafka生产消息
+        r"""Kafka生产消息
 
         在控制台发送指定消息到Kafka实例
         
@@ -2626,7 +2626,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_background_task(self, request):
-        """查询后台任务管理中的指定记录
+        r"""查询后台任务管理中的指定记录
 
         查询后台任务管理中的指定记录。
         
@@ -2693,7 +2693,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_ces_hierarchy(self, request):
-        """查询实例在CES的监控层级关系
+        r"""查询实例在CES的监控层级关系
 
         查询实例在CES的监控层级关系。
         
@@ -2758,7 +2758,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_cluster(self, request):
-        """查询Kafka集群元数据信息
+        r"""查询Kafka集群元数据信息
 
         查询Kafka集群元数据信息。
         
@@ -2823,7 +2823,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_coordinators(self, request):
-        """查询Kafka实例的协调器信息
+        r"""查询Kafka实例的协调器信息
 
         查询Kafka实例的协调器信息。
         
@@ -2888,7 +2888,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_diagnosis_pre_check(self, request):
-        """消息积压诊断预检查
+        r"""消息积压诊断预检查
 
         消息积压诊断预检查
         
@@ -2957,7 +2957,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_engine_instance_extend_product_info(self, request):
-        """查询实例的扩容规格列表
+        r"""查询实例的扩容规格列表
 
         查询实例的扩容规格列表。
         
@@ -3026,7 +3026,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_groups(self, request):
-        """查询消费组信息
+        r"""查询消费组信息
 
         查询消费组信息。
         
@@ -3093,7 +3093,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_instance(self, request):
-        """查询指定实例
+        r"""查询指定实例
 
         查询指定实例的详细信息。
         
@@ -3158,7 +3158,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_instance_configs(self, request):
-        """获取实例配置
+        r"""获取实例配置
 
         获取实例配置。
         
@@ -3223,7 +3223,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_instance_extend_product_info(self, request):
-        """查询实例的扩容规格列表
+        r"""查询实例的扩容规格列表
 
         查询实例的扩容规格列表。
         
@@ -3292,7 +3292,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_instance_messages(self, request):
-        """查询消息
+        r"""查询消息
 
         查询消息的偏移量和消息内容。
         先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
@@ -3378,7 +3378,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_instance_topic_detail(self, request):
-        """查询Kafka实例Topic详细信息
+        r"""查询Kafka实例Topic详细信息
 
         查询Kafka实例Topic详细信息。(单个实例调用不要超过1s一次)
         
@@ -3445,7 +3445,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_instance_users(self, request):
-        """查询用户列表
+        r"""查询用户列表
 
         查询用户列表。
         
@@ -3512,7 +3512,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_kafka_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签。
         
@@ -3575,7 +3575,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_kafka_tags(self, request):
-        """查询实例标签
+        r"""查询实例标签
 
         查询实例标签。
         
@@ -3640,7 +3640,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_kafka_topic_partition_diskusage(self, request):
-        """查询topic的磁盘存储情况
+        r"""查询topic的磁盘存储情况
 
         查询topic在Broker上磁盘占用情况。
         
@@ -3711,7 +3711,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_kafka_user_client_quota(self, request):
-        """查询用户/客户端流控配置
+        r"""查询用户/客户端流控配置
 
         该接口用于向Kafka实例查询流控的配置，若成功则返回流控配置的列表。
         
@@ -3780,7 +3780,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_maintain_windows(self, request):
-        """查询维护时间窗时间段
+        r"""查询维护时间窗时间段
 
         查询维护时间窗开始时间和结束时间。
         
@@ -3843,7 +3843,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_message_diagnosis_report(self, request):
-        """查询诊断报告详情
+        r"""查询诊断报告详情
 
         查询诊断报告详情
         
@@ -3910,7 +3910,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_messages(self, request):
-        """查询分区指定时间段的消息
+        r"""查询分区指定时间段的消息
 
         查询分区指定时间段的消息。
         
@@ -3987,7 +3987,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_partition_beginning_message(self, request):
-        """查询分区最早消息的位置
+        r"""查询分区最早消息的位置
 
         查询分区最早消息的位置。
         
@@ -4056,7 +4056,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_partition_end_message(self, request):
-        """查询分区最新消息的位置
+        r"""查询分区最新消息的位置
 
         查询分区最新消息的位置。
         
@@ -4125,7 +4125,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_partition_message(self, request):
-        """查询分区指定偏移量的消息
+        r"""查询分区指定偏移量的消息
 
         查询分区指定偏移量的消息。
         
@@ -4196,7 +4196,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_topic_access_policy(self, request):
-        """查询用户权限
+        r"""查询用户权限
 
         查询用户权限。
         
@@ -4265,7 +4265,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_instance(self, request):
-        """修改实例信息
+        r"""修改实例信息
 
         修改实例信息。
         
@@ -4332,7 +4332,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_instance_auto_create_topic(self, request):
-        """开启或关闭实例自动创建topic功能
+        r"""开启或关闭实例自动创建topic功能
 
         开启或关闭实例自动创建topic功能。
         
@@ -4399,7 +4399,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_instance_consumer_group(self, request):
-        """编辑消费组
+        r"""编辑消费组
 
         编辑消费组
         
@@ -4470,7 +4470,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_instance_cross_vpc_ip(self, request):
-        """修改实例跨VPC访问的内网IP
+        r"""修改实例跨VPC访问的内网IP
 
         修改实例跨VPC访问的内网IP。
         
@@ -4537,7 +4537,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_instance_topic(self, request):
-        """修改Kafka实例Topic
+        r"""修改Kafka实例Topic
 
         修改Kafka实例Topic
         
@@ -4604,7 +4604,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_instance_user(self, request):
-        """修改用户参数
+        r"""修改用户参数
 
         修改用户参数
         
@@ -4675,7 +4675,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_kafka_user_client_quota_task(self, request):
-        """修改用户/客户端流控配置
+        r"""修改用户/客户端流控配置
 
         该接口用于向Kafka实例提交修改用户、客户端级别的流控任务，若成功则返回流控任务的job_id。
         
@@ -4742,7 +4742,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_topic_access_policy(self, request):
-        """设置用户权限
+        r"""设置用户权限
 
         设置用户权限。
         
@@ -4811,7 +4811,7 @@ class KafkaClient(Client):
         return http_info
 
     def update_topic_replica(self, request):
-        """修改Kafka实例Topic分区的副本
+        r"""修改Kafka实例Topic分区的副本
 
         修改Kafka实例Topic分区的副本。
         
@@ -4880,7 +4880,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_connector(self, request):
-        """开启Smart Connect（按需实例）
+        r"""开启Smart Connect（按需实例）
 
         开启Smart Connect，提交创建Smart Connect节点任务。
         
@@ -4949,7 +4949,7 @@ class KafkaClient(Client):
         return http_info
 
     def create_connector_task(self, request):
-        """创建Smart Connect任务
+        r"""创建Smart Connect任务
 
         创建Smart Connect任务。
         
@@ -5016,7 +5016,7 @@ class KafkaClient(Client):
         return http_info
 
     def delete_connector(self, request):
-        """关闭Smart Connect（按需实例）
+        r"""关闭Smart Connect（按需实例）
 
         介绍按需实例如何关闭Smart Connect。
         
@@ -5081,7 +5081,7 @@ class KafkaClient(Client):
         return http_info
 
     def delete_connector_task(self, request):
-        """删除Smart Connector任务
+        r"""删除Smart Connector任务
 
         删除Smart Connector任务。
         
@@ -5148,7 +5148,7 @@ class KafkaClient(Client):
         return http_info
 
     def list_connector_tasks(self, request):
-        """查询Smart Connect任务列表
+        r"""查询Smart Connect任务列表
 
         查询Smart Connect任务列表。
         
@@ -5217,7 +5217,7 @@ class KafkaClient(Client):
         return http_info
 
     def pause_connector_task(self, request):
-        """暂停Smart Connect任务
+        r"""暂停Smart Connect任务
 
         暂停Smart Connect任务。
         
@@ -5284,7 +5284,7 @@ class KafkaClient(Client):
         return http_info
 
     def restart_connector_task(self, request):
-        """启动未启动的Smart Connect任务/重启已暂停或者运行中的Smart Connect任务
+        r"""启动未启动的Smart Connect任务/重启已暂停或者运行中的Smart Connect任务
 
         用于**启动未启动的Smart Connect任务**以及**重启已暂停或者运行中的Smart Connect任务**。注意，重启Smart Connect任务将重置同步进度，并重新开始同步任务。
         
@@ -5351,7 +5351,7 @@ class KafkaClient(Client):
         return http_info
 
     def resume_connector_task(self, request):
-        """启动已暂停的Smart Connect任务
+        r"""启动已暂停的Smart Connect任务
 
         启动已暂停的Smart Connect任务。
         
@@ -5418,7 +5418,7 @@ class KafkaClient(Client):
         return http_info
 
     def show_connector_task(self, request):
-        """查询Smart Connector任务详情
+        r"""查询Smart Connector任务详情
 
         查询Smart Connector任务详情。
         

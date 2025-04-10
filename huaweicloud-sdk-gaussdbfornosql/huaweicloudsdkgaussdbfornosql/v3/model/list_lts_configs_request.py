@@ -35,7 +35,7 @@ class ListLtsConfigsRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, instance_id=None, instance_name=None, enterprise_project_id=None):
-        """ListLtsConfigsRequest
+        r"""ListLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListLtsConfigsRequest.
+        r"""Gets the x_language of this ListLtsConfigsRequest.
 
         语言。
 
@@ -89,7 +89,7 @@ class ListLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListLtsConfigsRequest.
+        r"""Sets the x_language of this ListLtsConfigsRequest.
 
         语言。
 
@@ -100,7 +100,7 @@ class ListLtsConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLtsConfigsRequest.
+        r"""Gets the offset of this ListLtsConfigsRequest.
 
         索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。
 
@@ -111,7 +111,7 @@ class ListLtsConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLtsConfigsRequest.
+        r"""Sets the offset of this ListLtsConfigsRequest.
 
         索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。
 
@@ -122,7 +122,7 @@ class ListLtsConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLtsConfigsRequest.
+        r"""Gets the limit of this ListLtsConfigsRequest.
 
         查询记录数。取值范围：1~100，必须为数字。不传该参数时，默认查询前100条实例信息。
 
@@ -133,7 +133,7 @@ class ListLtsConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLtsConfigsRequest.
+        r"""Sets the limit of this ListLtsConfigsRequest.
 
         查询记录数。取值范围：1~100，必须为数字。不传该参数时，默认查询前100条实例信息。
 
@@ -144,7 +144,7 @@ class ListLtsConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLtsConfigsRequest.
+        r"""Gets the instance_id of this ListLtsConfigsRequest.
 
         根据实例ID精确搜索。
 
@@ -155,7 +155,7 @@ class ListLtsConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLtsConfigsRequest.
+        r"""Sets the instance_id of this ListLtsConfigsRequest.
 
         根据实例ID精确搜索。
 
@@ -166,7 +166,7 @@ class ListLtsConfigsRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListLtsConfigsRequest.
+        r"""Gets the instance_name of this ListLtsConfigsRequest.
 
         根据实例名称模糊搜索。
 
@@ -177,7 +177,7 @@ class ListLtsConfigsRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListLtsConfigsRequest.
+        r"""Sets the instance_name of this ListLtsConfigsRequest.
 
         根据实例名称模糊搜索。
 
@@ -188,7 +188,7 @@ class ListLtsConfigsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLtsConfigsRequest.
+        r"""Gets the enterprise_project_id of this ListLtsConfigsRequest.
 
         根据企业项目ID精确搜索。
 
@@ -199,7 +199,7 @@ class ListLtsConfigsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLtsConfigsRequest.
+        r"""Sets the enterprise_project_id of this ListLtsConfigsRequest.
 
         根据企业项目ID精确搜索。
 

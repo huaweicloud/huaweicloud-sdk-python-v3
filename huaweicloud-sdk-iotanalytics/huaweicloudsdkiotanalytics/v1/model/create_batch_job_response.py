@@ -44,7 +44,7 @@ class CreateBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, tags=None, created_time=None, modified_time=None, job_type=None, export_path=None, merge_result_file=None, sql_job=None, schedule=None):
-        """CreateBatchJobResponse
+        r"""CreateBatchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateBatchJobResponse.
+        r"""Gets the job_id of this CreateBatchJobResponse.
 
         仅在响应返回。作业ID。
 
@@ -118,7 +118,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateBatchJobResponse.
+        r"""Sets the job_id of this CreateBatchJobResponse.
 
         仅在响应返回。作业ID。
 
@@ -129,7 +129,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this CreateBatchJobResponse.
+        r"""Gets the job_name of this CreateBatchJobResponse.
 
         作业名称。只能包含数字、英文字母、中文字母、下划线以及中划线。长度为1~128。
 
@@ -140,7 +140,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this CreateBatchJobResponse.
+        r"""Sets the job_name of this CreateBatchJobResponse.
 
         作业名称。只能包含数字、英文字母、中文字母、下划线以及中划线。长度为1~128。
 
@@ -151,7 +151,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this CreateBatchJobResponse.
+        r"""Gets the tags of this CreateBatchJobResponse.
 
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
@@ -162,7 +162,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateBatchJobResponse.
+        r"""Sets the tags of this CreateBatchJobResponse.
 
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
@@ -173,7 +173,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateBatchJobResponse.
+        r"""Gets the created_time of this CreateBatchJobResponse.
 
         仅在响应返回。创建时间。
 
@@ -184,7 +184,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateBatchJobResponse.
+        r"""Sets the created_time of this CreateBatchJobResponse.
 
         仅在响应返回。创建时间。
 
@@ -195,7 +195,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this CreateBatchJobResponse.
+        r"""Gets the modified_time of this CreateBatchJobResponse.
 
         仅在响应返回。更新时间。
 
@@ -206,7 +206,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this CreateBatchJobResponse.
+        r"""Sets the modified_time of this CreateBatchJobResponse.
 
         仅在响应返回。更新时间。
 
@@ -217,7 +217,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateBatchJobResponse.
+        r"""Gets the job_type of this CreateBatchJobResponse.
 
         作业类型。目前仅支持SqlJob.
 
@@ -228,7 +228,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateBatchJobResponse.
+        r"""Sets the job_type of this CreateBatchJobResponse.
 
         作业类型。目前仅支持SqlJob.
 
@@ -239,7 +239,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def export_path(self):
-        """Gets the export_path of this CreateBatchJobResponse.
+        r"""Gets the export_path of this CreateBatchJobResponse.
 
         作业查询结果导出到OBS的路径。覆写已存在文件。
 
@@ -250,7 +250,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @export_path.setter
     def export_path(self, export_path):
-        """Sets the export_path of this CreateBatchJobResponse.
+        r"""Sets the export_path of this CreateBatchJobResponse.
 
         作业查询结果导出到OBS的路径。覆写已存在文件。
 
@@ -261,7 +261,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def merge_result_file(self):
-        """Gets the merge_result_file of this CreateBatchJobResponse.
+        r"""Gets the merge_result_file of this CreateBatchJobResponse.
 
         导出文件时是否合并结果文件。true：合并成一个结果文件；false：不合并结果文件。
 
@@ -272,7 +272,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @merge_result_file.setter
     def merge_result_file(self, merge_result_file):
-        """Sets the merge_result_file of this CreateBatchJobResponse.
+        r"""Sets the merge_result_file of this CreateBatchJobResponse.
 
         导出文件时是否合并结果文件。true：合并成一个结果文件；false：不合并结果文件。
 
@@ -283,7 +283,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def sql_job(self):
-        """Gets the sql_job of this CreateBatchJobResponse.
+        r"""Gets the sql_job of this CreateBatchJobResponse.
 
         :return: The sql_job of this CreateBatchJobResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
@@ -292,7 +292,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @sql_job.setter
     def sql_job(self, sql_job):
-        """Sets the sql_job of this CreateBatchJobResponse.
+        r"""Sets the sql_job of this CreateBatchJobResponse.
 
         :param sql_job: The sql_job of this CreateBatchJobResponse.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
@@ -301,7 +301,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def schedule(self):
-        """Gets the schedule of this CreateBatchJobResponse.
+        r"""Gets the schedule of this CreateBatchJobResponse.
 
         :return: The schedule of this CreateBatchJobResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
@@ -310,7 +310,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this CreateBatchJobResponse.
+        r"""Sets the schedule of this CreateBatchJobResponse.
 
         :param schedule: The schedule of this CreateBatchJobResponse.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.Schedule`

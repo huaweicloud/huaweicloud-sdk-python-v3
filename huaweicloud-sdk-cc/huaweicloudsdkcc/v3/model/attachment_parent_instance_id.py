@@ -25,7 +25,7 @@ class AttachmentParentInstanceId:
     }
 
     def __init__(self, attachment_parent_instance_id=None):
-        """AttachmentParentInstanceId
+        r"""AttachmentParentInstanceId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AttachmentParentInstanceId:
 
     @property
     def attachment_parent_instance_id(self):
-        """Gets the attachment_parent_instance_id of this AttachmentParentInstanceId.
+        r"""Gets the attachment_parent_instance_id of this AttachmentParentInstanceId.
 
         连接的父资源ID，这里表示企业路由器ID。
 
@@ -54,7 +54,7 @@ class AttachmentParentInstanceId:
 
     @attachment_parent_instance_id.setter
     def attachment_parent_instance_id(self, attachment_parent_instance_id):
-        """Sets the attachment_parent_instance_id of this AttachmentParentInstanceId.
+        r"""Sets the attachment_parent_instance_id of this AttachmentParentInstanceId.
 
         连接的父资源ID，这里表示企业路由器ID。
 

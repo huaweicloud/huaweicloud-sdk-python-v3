@@ -35,7 +35,7 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, host=None, exp_status=None):
-        """ListCertificatesRequest
+        r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListCertificatesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCertificatesRequest.
+        r"""Gets the enterprise_project_id of this ListCertificatesRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -89,7 +89,7 @@ class ListCertificatesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCertificatesRequest.
+        r"""Sets the enterprise_project_id of this ListCertificatesRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -100,7 +100,7 @@ class ListCertificatesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListCertificatesRequest.
+        r"""Gets the page of this ListCertificatesRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -111,7 +111,7 @@ class ListCertificatesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListCertificatesRequest.
+        r"""Sets the page of this ListCertificatesRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -122,7 +122,7 @@ class ListCertificatesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListCertificatesRequest.
+        r"""Gets the pagesize of this ListCertificatesRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -133,7 +133,7 @@ class ListCertificatesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListCertificatesRequest.
+        r"""Sets the pagesize of this ListCertificatesRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -144,7 +144,7 @@ class ListCertificatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCertificatesRequest.
+        r"""Gets the name of this ListCertificatesRequest.
 
         证书名称
 
@@ -155,7 +155,7 @@ class ListCertificatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCertificatesRequest.
+        r"""Sets the name of this ListCertificatesRequest.
 
         证书名称
 
@@ -166,7 +166,7 @@ class ListCertificatesRequest:
 
     @property
     def host(self):
-        """Gets the host of this ListCertificatesRequest.
+        r"""Gets the host of this ListCertificatesRequest.
 
         是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
 
@@ -177,7 +177,7 @@ class ListCertificatesRequest:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ListCertificatesRequest.
+        r"""Sets the host of this ListCertificatesRequest.
 
         是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
 
@@ -188,7 +188,7 @@ class ListCertificatesRequest:
 
     @property
     def exp_status(self):
-        """Gets the exp_status of this ListCertificatesRequest.
+        r"""Gets the exp_status of this ListCertificatesRequest.
 
         证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
 
@@ -199,7 +199,7 @@ class ListCertificatesRequest:
 
     @exp_status.setter
     def exp_status(self, exp_status):
-        """Sets the exp_status of this ListCertificatesRequest.
+        r"""Sets the exp_status of this ListCertificatesRequest.
 
         证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
 

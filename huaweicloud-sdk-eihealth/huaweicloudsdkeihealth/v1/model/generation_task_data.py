@@ -37,7 +37,7 @@ class GenerationTaskData:
     }
 
     def __init__(self, num_trials=None, strong_constraints=None, weak_constraints=None, num_expected=None, initial_dataset=None, binding_site=None, custom_props=None):
-        """GenerationTaskData
+        r"""GenerationTaskData
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GenerationTaskData:
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this GenerationTaskData.
+        r"""Gets the num_trials of this GenerationTaskData.
 
         生成分子数量
 
@@ -96,7 +96,7 @@ class GenerationTaskData:
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this GenerationTaskData.
+        r"""Sets the num_trials of this GenerationTaskData.
 
         生成分子数量
 
@@ -107,7 +107,7 @@ class GenerationTaskData:
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this GenerationTaskData.
+        r"""Gets the strong_constraints of this GenerationTaskData.
 
         强约束集合
 
@@ -118,7 +118,7 @@ class GenerationTaskData:
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this GenerationTaskData.
+        r"""Sets the strong_constraints of this GenerationTaskData.
 
         强约束集合
 
@@ -129,7 +129,7 @@ class GenerationTaskData:
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this GenerationTaskData.
+        r"""Gets the weak_constraints of this GenerationTaskData.
 
         弱约束集合
 
@@ -140,7 +140,7 @@ class GenerationTaskData:
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this GenerationTaskData.
+        r"""Sets the weak_constraints of this GenerationTaskData.
 
         弱约束集合
 
@@ -151,7 +151,7 @@ class GenerationTaskData:
 
     @property
     def num_expected(self):
-        """Gets the num_expected of this GenerationTaskData.
+        r"""Gets the num_expected of this GenerationTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -162,7 +162,7 @@ class GenerationTaskData:
 
     @num_expected.setter
     def num_expected(self, num_expected):
-        """Sets the num_expected of this GenerationTaskData.
+        r"""Sets the num_expected of this GenerationTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -173,7 +173,7 @@ class GenerationTaskData:
 
     @property
     def initial_dataset(self):
-        """Gets the initial_dataset of this GenerationTaskData.
+        r"""Gets the initial_dataset of this GenerationTaskData.
 
         初始化分子集合
 
@@ -184,7 +184,7 @@ class GenerationTaskData:
 
     @initial_dataset.setter
     def initial_dataset(self, initial_dataset):
-        """Sets the initial_dataset of this GenerationTaskData.
+        r"""Sets the initial_dataset of this GenerationTaskData.
 
         初始化分子集合
 
@@ -195,7 +195,7 @@ class GenerationTaskData:
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this GenerationTaskData.
+        r"""Gets the binding_site of this GenerationTaskData.
 
         :return: The binding_site of this GenerationTaskData.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -204,7 +204,7 @@ class GenerationTaskData:
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this GenerationTaskData.
+        r"""Sets the binding_site of this GenerationTaskData.
 
         :param binding_site: The binding_site of this GenerationTaskData.
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -213,7 +213,7 @@ class GenerationTaskData:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this GenerationTaskData.
+        r"""Gets the custom_props of this GenerationTaskData.
 
         用户已开启的自定义属性集合
 
@@ -224,7 +224,7 @@ class GenerationTaskData:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this GenerationTaskData.
+        r"""Sets the custom_props of this GenerationTaskData.
 
         用户已开启的自定义属性集合
 

@@ -28,7 +28,7 @@ class ListSfs3StorageResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListSfs3StorageResponse
+        r"""ListSfs3StorageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSfs3StorageResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSfs3StorageResponse.
+        r"""Gets the count of this ListSfs3StorageResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListSfs3StorageResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSfs3StorageResponse.
+        r"""Sets the count of this ListSfs3StorageResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListSfs3StorageResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListSfs3StorageResponse.
+        r"""Gets the items of this ListSfs3StorageResponse.
 
         存储列表。
 
@@ -84,7 +84,7 @@ class ListSfs3StorageResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListSfs3StorageResponse.
+        r"""Sets the items of this ListSfs3StorageResponse.
 
         存储列表。
 

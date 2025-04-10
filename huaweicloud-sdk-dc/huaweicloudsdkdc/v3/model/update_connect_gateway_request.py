@@ -27,7 +27,7 @@ class UpdateConnectGatewayRequest:
     }
 
     def __init__(self, connect_gateway_id=None, body=None):
-        """UpdateConnectGatewayRequest
+        r"""UpdateConnectGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConnectGatewayRequest:
 
     @property
     def connect_gateway_id(self):
-        """Gets the connect_gateway_id of this UpdateConnectGatewayRequest.
+        r"""Gets the connect_gateway_id of this UpdateConnectGatewayRequest.
 
         互联网关ID
 
@@ -60,7 +60,7 @@ class UpdateConnectGatewayRequest:
 
     @connect_gateway_id.setter
     def connect_gateway_id(self, connect_gateway_id):
-        """Sets the connect_gateway_id of this UpdateConnectGatewayRequest.
+        r"""Sets the connect_gateway_id of this UpdateConnectGatewayRequest.
 
         互联网关ID
 
@@ -71,7 +71,7 @@ class UpdateConnectGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConnectGatewayRequest.
+        r"""Gets the body of this UpdateConnectGatewayRequest.
 
         :return: The body of this UpdateConnectGatewayRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateConnectGatewayRequestBody`
@@ -80,7 +80,7 @@ class UpdateConnectGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConnectGatewayRequest.
+        r"""Sets the body of this UpdateConnectGatewayRequest.
 
         :param body: The body of this UpdateConnectGatewayRequest.
         :type body: :class:`huaweicloudsdkdc.v3.UpdateConnectGatewayRequestBody`

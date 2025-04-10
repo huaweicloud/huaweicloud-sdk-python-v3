@@ -31,7 +31,7 @@ class ListSubnetsRequest:
     }
 
     def __init__(self, vpc_id=None, limit=None, offset=None, site_id=None):
-        """ListSubnetsRequest
+        r"""ListSubnetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListSubnetsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListSubnetsRequest.
+        r"""Gets the vpc_id of this ListSubnetsRequest.
 
         虚拟私有云ID。
 
@@ -75,7 +75,7 @@ class ListSubnetsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListSubnetsRequest.
+        r"""Sets the vpc_id of this ListSubnetsRequest.
 
         虚拟私有云ID。
 
@@ -86,7 +86,7 @@ class ListSubnetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubnetsRequest.
+        r"""Gets the limit of this ListSubnetsRequest.
 
         查询返回边缘子网列表数量。取值范围：0~1000。
 
@@ -97,7 +97,7 @@ class ListSubnetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubnetsRequest.
+        r"""Sets the limit of this ListSubnetsRequest.
 
         查询返回边缘子网列表数量。取值范围：0~1000。
 
@@ -108,7 +108,7 @@ class ListSubnetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubnetsRequest.
+        r"""Gets the offset of this ListSubnetsRequest.
 
         查询的偏移量。
 
@@ -119,7 +119,7 @@ class ListSubnetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubnetsRequest.
+        r"""Sets the offset of this ListSubnetsRequest.
 
         查询的偏移量。
 
@@ -130,7 +130,7 @@ class ListSubnetsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListSubnetsRequest.
+        r"""Gets the site_id of this ListSubnetsRequest.
 
         站点ID。
 
@@ -141,7 +141,7 @@ class ListSubnetsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListSubnetsRequest.
+        r"""Sets the site_id of this ListSubnetsRequest.
 
         站点ID。
 

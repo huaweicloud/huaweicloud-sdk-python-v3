@@ -25,7 +25,7 @@ class DeleteDatasourceRequest:
     }
 
     def __init__(self, datasource_id=None):
-        """DeleteDatasourceRequest
+        r"""DeleteDatasourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDatasourceRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this DeleteDatasourceRequest.
+        r"""Gets the datasource_id of this DeleteDatasourceRequest.
 
         数据源id
 
@@ -53,7 +53,7 @@ class DeleteDatasourceRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this DeleteDatasourceRequest.
+        r"""Sets the datasource_id of this DeleteDatasourceRequest.
 
         数据源id
 

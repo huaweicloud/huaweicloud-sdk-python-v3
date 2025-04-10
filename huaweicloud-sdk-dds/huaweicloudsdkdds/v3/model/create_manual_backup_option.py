@@ -29,7 +29,7 @@ class CreateManualBackupOption:
     }
 
     def __init__(self, instance_id=None, name=None, description=None):
-        """CreateManualBackupOption
+        r"""CreateManualBackupOption
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateManualBackupOption:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateManualBackupOption.
+        r"""Gets the instance_id of this CreateManualBackupOption.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -66,7 +66,7 @@ class CreateManualBackupOption:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateManualBackupOption.
+        r"""Sets the instance_id of this CreateManualBackupOption.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -77,7 +77,7 @@ class CreateManualBackupOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateManualBackupOption.
+        r"""Gets the name of this CreateManualBackupOption.
 
         手动备份名称。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -88,7 +88,7 @@ class CreateManualBackupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateManualBackupOption.
+        r"""Sets the name of this CreateManualBackupOption.
 
         手动备份名称。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -99,7 +99,7 @@ class CreateManualBackupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateManualBackupOption.
+        r"""Gets the description of this CreateManualBackupOption.
 
         手动备份描述。 取值范围：长度不超过256位，且不能包含>!<\"&'=特殊字符。
 
@@ -110,7 +110,7 @@ class CreateManualBackupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateManualBackupOption.
+        r"""Sets the description of this CreateManualBackupOption.
 
         手动备份描述。 取值范围：长度不超过256位，且不能包含>!<\"&'=特殊字符。
 

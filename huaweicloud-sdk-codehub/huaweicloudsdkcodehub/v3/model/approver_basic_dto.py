@@ -39,7 +39,7 @@ class ApproverBasicDto:
     }
 
     def __init__(self, id=None, name=None, username=None, name_cn=None, email=None, state=None, updated_at=None, avatar_url=None):
-        """ApproverBasicDto
+        r"""ApproverBasicDto
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ApproverBasicDto:
 
     @property
     def id(self):
-        """Gets the id of this ApproverBasicDto.
+        r"""Gets the id of this ApproverBasicDto.
 
         用户id
 
@@ -103,7 +103,7 @@ class ApproverBasicDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApproverBasicDto.
+        r"""Sets the id of this ApproverBasicDto.
 
         用户id
 
@@ -114,7 +114,7 @@ class ApproverBasicDto:
 
     @property
     def name(self):
-        """Gets the name of this ApproverBasicDto.
+        r"""Gets the name of this ApproverBasicDto.
 
         姓名
 
@@ -125,7 +125,7 @@ class ApproverBasicDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApproverBasicDto.
+        r"""Sets the name of this ApproverBasicDto.
 
         姓名
 
@@ -136,7 +136,7 @@ class ApproverBasicDto:
 
     @property
     def username(self):
-        """Gets the username of this ApproverBasicDto.
+        r"""Gets the username of this ApproverBasicDto.
 
         用户名
 
@@ -147,7 +147,7 @@ class ApproverBasicDto:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ApproverBasicDto.
+        r"""Sets the username of this ApproverBasicDto.
 
         用户名
 
@@ -158,7 +158,7 @@ class ApproverBasicDto:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this ApproverBasicDto.
+        r"""Gets the name_cn of this ApproverBasicDto.
 
         操作类型
 
@@ -169,7 +169,7 @@ class ApproverBasicDto:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this ApproverBasicDto.
+        r"""Sets the name_cn of this ApproverBasicDto.
 
         操作类型
 
@@ -180,7 +180,7 @@ class ApproverBasicDto:
 
     @property
     def email(self):
-        """Gets the email of this ApproverBasicDto.
+        r"""Gets the email of this ApproverBasicDto.
 
         邮箱
 
@@ -191,7 +191,7 @@ class ApproverBasicDto:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ApproverBasicDto.
+        r"""Sets the email of this ApproverBasicDto.
 
         邮箱
 
@@ -202,7 +202,7 @@ class ApproverBasicDto:
 
     @property
     def state(self):
-        """Gets the state of this ApproverBasicDto.
+        r"""Gets the state of this ApproverBasicDto.
 
         状态
 
@@ -213,7 +213,7 @@ class ApproverBasicDto:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ApproverBasicDto.
+        r"""Sets the state of this ApproverBasicDto.
 
         状态
 
@@ -224,7 +224,7 @@ class ApproverBasicDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ApproverBasicDto.
+        r"""Gets the updated_at of this ApproverBasicDto.
 
         更新时间
 
@@ -235,7 +235,7 @@ class ApproverBasicDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ApproverBasicDto.
+        r"""Sets the updated_at of this ApproverBasicDto.
 
         更新时间
 
@@ -246,7 +246,7 @@ class ApproverBasicDto:
 
     @property
     def avatar_url(self):
-        """Gets the avatar_url of this ApproverBasicDto.
+        r"""Gets the avatar_url of this ApproverBasicDto.
 
         头像链接
 
@@ -257,7 +257,7 @@ class ApproverBasicDto:
 
     @avatar_url.setter
     def avatar_url(self, avatar_url):
-        """Sets the avatar_url of this ApproverBasicDto.
+        r"""Sets the avatar_url of this ApproverBasicDto.
 
         头像链接
 

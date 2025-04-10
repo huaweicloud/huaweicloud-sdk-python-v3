@@ -31,7 +31,7 @@ class DeleteBucketCustomdomainRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, customdomain=None):
-        """DeleteBucketCustomdomainRequest
+        r"""DeleteBucketCustomdomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeleteBucketCustomdomainRequest:
 
     @property
     def date(self):
-        """Gets the date of this DeleteBucketCustomdomainRequest.
+        r"""Gets the date of this DeleteBucketCustomdomainRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -68,7 +68,7 @@ class DeleteBucketCustomdomainRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteBucketCustomdomainRequest.
+        r"""Sets the date of this DeleteBucketCustomdomainRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -79,7 +79,7 @@ class DeleteBucketCustomdomainRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this DeleteBucketCustomdomainRequest.
+        r"""Gets the bucket_name of this DeleteBucketCustomdomainRequest.
 
         Name of the requested bucket
 
@@ -90,7 +90,7 @@ class DeleteBucketCustomdomainRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this DeleteBucketCustomdomainRequest.
+        r"""Sets the bucket_name of this DeleteBucketCustomdomainRequest.
 
         Name of the requested bucket
 
@@ -101,7 +101,7 @@ class DeleteBucketCustomdomainRequest:
 
     @property
     def customdomain(self):
-        """Gets the customdomain of this DeleteBucketCustomdomainRequest.
+        r"""Gets the customdomain of this DeleteBucketCustomdomainRequest.
 
         The custom domain name you want to delete. Type: string, which must meet the naming conventions of domain names.
 
@@ -112,7 +112,7 @@ class DeleteBucketCustomdomainRequest:
 
     @customdomain.setter
     def customdomain(self, customdomain):
-        """Sets the customdomain of this DeleteBucketCustomdomainRequest.
+        r"""Sets the customdomain of this DeleteBucketCustomdomainRequest.
 
         The custom domain name you want to delete. Type: string, which must meet the naming conventions of domain names.
 

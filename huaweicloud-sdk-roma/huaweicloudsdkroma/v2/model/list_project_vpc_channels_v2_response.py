@@ -30,7 +30,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, project_vpc_channels=None):
-        """ListProjectVpcChannelsV2Response
+        r"""ListProjectVpcChannelsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListProjectVpcChannelsV2Response.
+        r"""Gets the size of this ListProjectVpcChannelsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListProjectVpcChannelsV2Response.
+        r"""Sets the size of this ListProjectVpcChannelsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectVpcChannelsV2Response.
+        r"""Gets the total of this ListProjectVpcChannelsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectVpcChannelsV2Response.
+        r"""Sets the total of this ListProjectVpcChannelsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
 
     @property
     def project_vpc_channels(self):
-        """Gets the project_vpc_channels of this ListProjectVpcChannelsV2Response.
+        r"""Gets the project_vpc_channels of this ListProjectVpcChannelsV2Response.
 
         本次查询到的实例VPC通道列表
 
@@ -111,7 +111,7 @@ class ListProjectVpcChannelsV2Response(SdkResponse):
 
     @project_vpc_channels.setter
     def project_vpc_channels(self, project_vpc_channels):
-        """Sets the project_vpc_channels of this ListProjectVpcChannelsV2Response.
+        r"""Sets the project_vpc_channels of this ListProjectVpcChannelsV2Response.
 
         本次查询到的实例VPC通道列表
 

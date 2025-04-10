@@ -27,7 +27,7 @@ class ExecuteQaChatRequest:
     }
 
     def __init__(self, qabot_id=None, body=None):
-        """ExecuteQaChatRequest
+        r"""ExecuteQaChatRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteQaChatRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this ExecuteQaChatRequest.
+        r"""Gets the qabot_id of this ExecuteQaChatRequest.
 
         机器人标识符，qabot编号，UUID格式。
 
@@ -60,7 +60,7 @@ class ExecuteQaChatRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this ExecuteQaChatRequest.
+        r"""Sets the qabot_id of this ExecuteQaChatRequest.
 
         机器人标识符，qabot编号，UUID格式。
 
@@ -71,7 +71,7 @@ class ExecuteQaChatRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteQaChatRequest.
+        r"""Gets the body of this ExecuteQaChatRequest.
 
         :return: The body of this ExecuteQaChatRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`
@@ -80,7 +80,7 @@ class ExecuteQaChatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteQaChatRequest.
+        r"""Sets the body of this ExecuteQaChatRequest.
 
         :param body: The body of this ExecuteQaChatRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`

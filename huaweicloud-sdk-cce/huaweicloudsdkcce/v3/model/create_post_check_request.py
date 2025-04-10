@@ -27,7 +27,7 @@ class CreatePostCheckRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreatePostCheckRequest
+        r"""CreatePostCheckRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePostCheckRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreatePostCheckRequest.
+        r"""Gets the cluster_id of this CreatePostCheckRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class CreatePostCheckRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreatePostCheckRequest.
+        r"""Sets the cluster_id of this CreatePostCheckRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class CreatePostCheckRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostCheckRequest.
+        r"""Gets the body of this CreatePostCheckRequest.
 
         :return: The body of this CreatePostCheckRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.PostcheckClusterRequestBody`
@@ -80,7 +80,7 @@ class CreatePostCheckRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostCheckRequest.
+        r"""Sets the body of this CreatePostCheckRequest.
 
         :param body: The body of this CreatePostCheckRequest.
         :type body: :class:`huaweicloudsdkcce.v3.PostcheckClusterRequestBody`

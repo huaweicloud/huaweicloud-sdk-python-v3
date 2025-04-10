@@ -31,7 +31,7 @@ class UpdateDataServiceInstanceObsLogRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, instance_id=None, body=None):
-        """UpdateDataServiceInstanceObsLogRequest
+        r"""UpdateDataServiceInstanceObsLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Gets the workspace of this UpdateDataServiceInstanceObsLogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Sets the workspace of this UpdateDataServiceInstanceObsLogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Gets the dlm_type of this UpdateDataServiceInstanceObsLogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -95,7 +95,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Sets the dlm_type of this UpdateDataServiceInstanceObsLogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -106,7 +106,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Gets the instance_id of this UpdateDataServiceInstanceObsLogRequest.
 
         集群ID编号。
 
@@ -117,7 +117,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Sets the instance_id of this UpdateDataServiceInstanceObsLogRequest.
 
         集群ID编号。
 
@@ -128,7 +128,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Gets the body of this UpdateDataServiceInstanceObsLogRequest.
 
         :return: The body of this UpdateDataServiceInstanceObsLogRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ObsLogDump`
@@ -137,7 +137,7 @@ class UpdateDataServiceInstanceObsLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataServiceInstanceObsLogRequest.
+        r"""Sets the body of this UpdateDataServiceInstanceObsLogRequest.
 
         :param body: The body of this UpdateDataServiceInstanceObsLogRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ObsLogDump`

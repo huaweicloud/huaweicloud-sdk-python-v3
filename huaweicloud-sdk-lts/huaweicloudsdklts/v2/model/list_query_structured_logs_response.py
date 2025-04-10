@@ -26,7 +26,7 @@ class ListQueryStructuredLogsResponse(SdkResponse):
     }
 
     def __init__(self, struct_logs=None):
-        """ListQueryStructuredLogsResponse
+        r"""ListQueryStructuredLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListQueryStructuredLogsResponse(SdkResponse):
 
     @property
     def struct_logs(self):
-        """Gets the struct_logs of this ListQueryStructuredLogsResponse.
+        r"""Gets the struct_logs of this ListQueryStructuredLogsResponse.
 
         日志信息。
 
@@ -55,7 +55,7 @@ class ListQueryStructuredLogsResponse(SdkResponse):
 
     @struct_logs.setter
     def struct_logs(self, struct_logs):
-        """Sets the struct_logs of this ListQueryStructuredLogsResponse.
+        r"""Sets the struct_logs of this ListQueryStructuredLogsResponse.
 
         日志信息。
 

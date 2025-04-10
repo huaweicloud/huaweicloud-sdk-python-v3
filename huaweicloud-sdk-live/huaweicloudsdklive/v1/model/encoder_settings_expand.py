@@ -25,7 +25,7 @@ class EncoderSettingsExpand:
     }
 
     def __init__(self, audio_descriptions=None):
-        """EncoderSettingsExpand
+        r"""EncoderSettingsExpand
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EncoderSettingsExpand:
 
     @property
     def audio_descriptions(self):
-        """Gets the audio_descriptions of this EncoderSettingsExpand.
+        r"""Gets the audio_descriptions of this EncoderSettingsExpand.
 
         音频输出配置的描述信息
 
@@ -54,7 +54,7 @@ class EncoderSettingsExpand:
 
     @audio_descriptions.setter
     def audio_descriptions(self, audio_descriptions):
-        """Sets the audio_descriptions of this EncoderSettingsExpand.
+        r"""Sets the audio_descriptions of this EncoderSettingsExpand.
 
         音频输出配置的描述信息
 

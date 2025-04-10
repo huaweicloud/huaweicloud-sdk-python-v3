@@ -27,7 +27,7 @@ class TagList:
     }
 
     def __init__(self, tags=None, total=None):
-        """TagList
+        r"""TagList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagList:
 
     @property
     def tags(self):
-        """Gets the tags of this TagList.
+        r"""Gets the tags of this TagList.
 
         指定仓库的标签列表
 
@@ -61,7 +61,7 @@ class TagList:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagList.
+        r"""Sets the tags of this TagList.
 
         指定仓库的标签列表
 
@@ -72,7 +72,7 @@ class TagList:
 
     @property
     def total(self):
-        """Gets the total of this TagList.
+        r"""Gets the total of this TagList.
 
         指定仓库的标签总数
 
@@ -83,7 +83,7 @@ class TagList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TagList.
+        r"""Sets the total of this TagList.
 
         指定仓库的标签总数
 

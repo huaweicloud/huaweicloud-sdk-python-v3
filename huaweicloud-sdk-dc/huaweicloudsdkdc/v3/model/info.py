@@ -31,7 +31,7 @@ class Info:
     }
 
     def __init__(self, type=None, quota=None, used=None, unit=None):
-        """Info
+        r"""Info
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Info:
 
     @property
     def type(self):
-        """Gets the type of this Info.
+        r"""Gets the type of this Info.
 
         配额类型
 
@@ -75,7 +75,7 @@ class Info:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Info.
+        r"""Sets the type of this Info.
 
         配额类型
 
@@ -86,7 +86,7 @@ class Info:
 
     @property
     def quota(self):
-        """Gets the quota of this Info.
+        r"""Gets the quota of this Info.
 
         可用的配额数，-1 代表不受限制
 
@@ -97,7 +97,7 @@ class Info:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Info.
+        r"""Sets the quota of this Info.
 
         可用的配额数，-1 代表不受限制
 
@@ -108,7 +108,7 @@ class Info:
 
     @property
     def used(self):
-        """Gets the used of this Info.
+        r"""Gets the used of this Info.
 
         已使用的配额数量
 
@@ -119,7 +119,7 @@ class Info:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Info.
+        r"""Sets the used of this Info.
 
         已使用的配额数量
 
@@ -130,7 +130,7 @@ class Info:
 
     @property
     def unit(self):
-        """Gets the unit of this Info.
+        r"""Gets the unit of this Info.
 
         用量单位
 
@@ -141,7 +141,7 @@ class Info:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Info.
+        r"""Sets the unit of this Info.
 
         用量单位
 

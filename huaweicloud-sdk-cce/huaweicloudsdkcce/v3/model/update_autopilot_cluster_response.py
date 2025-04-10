@@ -34,7 +34,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """UpdateAutopilotClusterResponse
+        r"""UpdateAutopilotClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateAutopilotClusterResponse.
+        r"""Gets the kind of this UpdateAutopilotClusterResponse.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -83,7 +83,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateAutopilotClusterResponse.
+        r"""Sets the kind of this UpdateAutopilotClusterResponse.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -94,7 +94,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateAutopilotClusterResponse.
+        r"""Gets the api_version of this UpdateAutopilotClusterResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -105,7 +105,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateAutopilotClusterResponse.
+        r"""Sets the api_version of this UpdateAutopilotClusterResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -116,7 +116,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateAutopilotClusterResponse.
+        r"""Gets the metadata of this UpdateAutopilotClusterResponse.
 
         :return: The metadata of this UpdateAutopilotClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadata`
@@ -125,7 +125,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateAutopilotClusterResponse.
+        r"""Sets the metadata of this UpdateAutopilotClusterResponse.
 
         :param metadata: The metadata of this UpdateAutopilotClusterResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadata`
@@ -134,7 +134,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateAutopilotClusterResponse.
+        r"""Gets the spec of this UpdateAutopilotClusterResponse.
 
         :return: The spec of this UpdateAutopilotClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterSpec`
@@ -143,7 +143,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateAutopilotClusterResponse.
+        r"""Sets the spec of this UpdateAutopilotClusterResponse.
 
         :param spec: The spec of this UpdateAutopilotClusterResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.AutopilotClusterSpec`
@@ -152,7 +152,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAutopilotClusterResponse.
+        r"""Gets the status of this UpdateAutopilotClusterResponse.
 
         :return: The status of this UpdateAutopilotClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterStatus`
@@ -161,7 +161,7 @@ class UpdateAutopilotClusterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAutopilotClusterResponse.
+        r"""Sets the status of this UpdateAutopilotClusterResponse.
 
         :param status: The status of this UpdateAutopilotClusterResponse.
         :type status: :class:`huaweicloudsdkcce.v3.AutopilotClusterStatus`

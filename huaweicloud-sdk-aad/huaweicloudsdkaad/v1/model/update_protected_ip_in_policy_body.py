@@ -31,7 +31,7 @@ class UpdateProtectedIpInPolicyBody:
     }
 
     def __init__(self, id=None, ip=None, type=None, name=None):
-        """UpdateProtectedIpInPolicyBody
+        r"""UpdateProtectedIpInPolicyBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateProtectedIpInPolicyBody.
+        r"""Gets the id of this UpdateProtectedIpInPolicyBody.
 
         防护ip的id
 
@@ -72,7 +72,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateProtectedIpInPolicyBody.
+        r"""Sets the id of this UpdateProtectedIpInPolicyBody.
 
         防护ip的id
 
@@ -83,7 +83,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateProtectedIpInPolicyBody.
+        r"""Gets the ip of this UpdateProtectedIpInPolicyBody.
 
         防护ip
 
@@ -94,7 +94,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateProtectedIpInPolicyBody.
+        r"""Sets the ip of this UpdateProtectedIpInPolicyBody.
 
         防护ip
 
@@ -105,7 +105,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @property
     def type(self):
-        """Gets the type of this UpdateProtectedIpInPolicyBody.
+        r"""Gets the type of this UpdateProtectedIpInPolicyBody.
 
         类型。VPN：VPN；NAT：NAT；VIP：VIP；CCI：CCI；EIP：弹性公网IP；ELB：弹性负载均衡；REROUTING_IP：REROUTING_IP；SubEni：SubEni；NetInterFace：NetInterFace；
 
@@ -116,7 +116,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateProtectedIpInPolicyBody.
+        r"""Sets the type of this UpdateProtectedIpInPolicyBody.
 
         类型。VPN：VPN；NAT：NAT；VIP：VIP；CCI：CCI；EIP：弹性公网IP；ELB：弹性负载均衡；REROUTING_IP：REROUTING_IP；SubEni：SubEni；NetInterFace：NetInterFace；
 
@@ -127,7 +127,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateProtectedIpInPolicyBody.
+        r"""Gets the name of this UpdateProtectedIpInPolicyBody.
 
         名字
 
@@ -138,7 +138,7 @@ class UpdateProtectedIpInPolicyBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProtectedIpInPolicyBody.
+        r"""Sets the name of this UpdateProtectedIpInPolicyBody.
 
         名字
 

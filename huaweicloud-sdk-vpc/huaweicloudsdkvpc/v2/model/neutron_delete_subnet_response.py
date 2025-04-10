@@ -24,7 +24,7 @@ class NeutronDeleteSubnetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NeutronDeleteSubnetResponse
+        r"""NeutronDeleteSubnetResponse
 
         The model defined in huaweicloud sdk
 

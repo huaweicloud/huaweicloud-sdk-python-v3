@@ -31,7 +31,7 @@ class UpdateCondition:
     }
 
     def __init__(self, environment=None, space=None, transport=None, installation=None):
-        """UpdateCondition
+        r"""UpdateCondition
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateCondition:
 
     @property
     def environment(self):
-        """Gets the environment of this UpdateCondition.
+        r"""Gets the environment of this UpdateCondition.
 
         机房环境条件 取值范围：   - 0：机房条件不属于上述任何一种情况   - 1：机房使用模块化数据中心方案进行建设   - 2：机房已通过国家级或行业级标准化认证
 
@@ -75,7 +75,7 @@ class UpdateCondition:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this UpdateCondition.
+        r"""Sets the environment of this UpdateCondition.
 
         机房环境条件 取值范围：   - 0：机房条件不属于上述任何一种情况   - 1：机房使用模块化数据中心方案进行建设   - 2：机房已通过国家级或行业级标准化认证
 
@@ -86,7 +86,7 @@ class UpdateCondition:
 
     @property
     def space(self):
-        """Gets the space of this UpdateCondition.
+        r"""Gets the space of this UpdateCondition.
 
         机柜空间条件   - 0：暂无扩容计划，不考虑额外余量   - 1：机柜余量相对充裕，可放置空间超过3柜   - 2：机柜余量相对紧张，可放置空间3柜以内
 
@@ -97,7 +97,7 @@ class UpdateCondition:
 
     @space.setter
     def space(self, space):
-        """Sets the space of this UpdateCondition.
+        r"""Sets the space of this UpdateCondition.
 
         机柜空间条件   - 0：暂无扩容计划，不考虑额外余量   - 1：机柜余量相对充裕，可放置空间超过3柜   - 2：机柜余量相对紧张，可放置空间3柜以内
 
@@ -108,7 +108,7 @@ class UpdateCondition:
 
     @property
     def transport(self):
-        """Gets the transport of this UpdateCondition.
+        r"""Gets the transport of this UpdateCondition.
 
         运输条件 取值范围：   - 0：运输通道和机房门的高度或宽度不满足要求   - 1：运输通道，货梯，机房门均可满足整机柜滚轮搬运   - 2：运输通道，货梯，机房门不能支持整机柜滚轮搬运，沿途有台阶
 
@@ -119,7 +119,7 @@ class UpdateCondition:
 
     @transport.setter
     def transport(self, transport):
-        """Sets the transport of this UpdateCondition.
+        r"""Sets the transport of this UpdateCondition.
 
         运输条件 取值范围：   - 0：运输通道和机房门的高度或宽度不满足要求   - 1：运输通道，货梯，机房门均可满足整机柜滚轮搬运   - 2：运输通道，货梯，机房门不能支持整机柜滚轮搬运，沿途有台阶
 
@@ -130,7 +130,7 @@ class UpdateCondition:
 
     @property
     def installation(self):
-        """Gets the installation of this UpdateCondition.
+        r"""Gets the installation of this UpdateCondition.
 
         整柜安装评估 取值范围：   - UNCLEAR：不清楚是否允许整柜安装，需要评估   - UNSUPPORT：不允许整柜安装，需将设备放入现有机柜   - SUPPORT：可支持整柜安装，并入现有机柜组
 
@@ -141,7 +141,7 @@ class UpdateCondition:
 
     @installation.setter
     def installation(self, installation):
-        """Sets the installation of this UpdateCondition.
+        r"""Sets the installation of this UpdateCondition.
 
         整柜安装评估 取值范围：   - UNCLEAR：不清楚是否允许整柜安装，需要评估   - UNSUPPORT：不允许整柜安装，需将设备放入现有机柜   - SUPPORT：可支持整柜安装，并入现有机柜组
 

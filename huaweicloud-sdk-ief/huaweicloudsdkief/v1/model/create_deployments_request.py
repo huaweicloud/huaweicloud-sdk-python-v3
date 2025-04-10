@@ -27,7 +27,7 @@ class CreateDeploymentsRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateDeploymentsRequest
+        r"""CreateDeploymentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDeploymentsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateDeploymentsRequest.
+        r"""Gets the ief_instance_id of this CreateDeploymentsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateDeploymentsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateDeploymentsRequest.
+        r"""Sets the ief_instance_id of this CreateDeploymentsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateDeploymentsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeploymentsRequest.
+        r"""Gets the body of this CreateDeploymentsRequest.
 
         :return: The body of this CreateDeploymentsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Deployment`
@@ -81,7 +81,7 @@ class CreateDeploymentsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeploymentsRequest.
+        r"""Sets the body of this CreateDeploymentsRequest.
 
         :param body: The body of this CreateDeploymentsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Deployment`

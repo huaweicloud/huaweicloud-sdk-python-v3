@@ -25,7 +25,7 @@ class CreateUserGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateUserGroupRequest
+        r"""CreateUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateUserGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUserGroupRequest.
+        r"""Gets the body of this CreateUserGroupRequest.
 
         :return: The body of this CreateUserGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserGroupReq`
@@ -52,7 +52,7 @@ class CreateUserGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUserGroupRequest.
+        r"""Sets the body of this CreateUserGroupRequest.
 
         :param body: The body of this CreateUserGroupRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserGroupReq`

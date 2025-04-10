@@ -35,7 +35,7 @@ class ListInstanceParamHistoriesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, start_time=None, end_time=None, param_name=None):
-        """ListInstanceParamHistoriesRequest
+        r"""ListInstanceParamHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListInstanceParamHistoriesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceParamHistoriesRequest.
+        r"""Gets the instance_id of this ListInstanceParamHistoriesRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListInstanceParamHistoriesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceParamHistoriesRequest.
+        r"""Sets the instance_id of this ListInstanceParamHistoriesRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListInstanceParamHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceParamHistoriesRequest.
+        r"""Gets the offset of this ListInstanceParamHistoriesRequest.
 
         分页参数
 
@@ -110,7 +110,7 @@ class ListInstanceParamHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceParamHistoriesRequest.
+        r"""Sets the offset of this ListInstanceParamHistoriesRequest.
 
         分页参数
 
@@ -121,7 +121,7 @@ class ListInstanceParamHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceParamHistoriesRequest.
+        r"""Gets the limit of this ListInstanceParamHistoriesRequest.
 
         分页参数
 
@@ -132,7 +132,7 @@ class ListInstanceParamHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceParamHistoriesRequest.
+        r"""Sets the limit of this ListInstanceParamHistoriesRequest.
 
         分页参数
 
@@ -143,7 +143,7 @@ class ListInstanceParamHistoriesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListInstanceParamHistoriesRequest.
+        r"""Gets the start_time of this ListInstanceParamHistoriesRequest.
 
         开始时间 默认为当前时间的前7天 格式如 2020-09-01T18:50:20Z
 
@@ -154,7 +154,7 @@ class ListInstanceParamHistoriesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListInstanceParamHistoriesRequest.
+        r"""Sets the start_time of this ListInstanceParamHistoriesRequest.
 
         开始时间 默认为当前时间的前7天 格式如 2020-09-01T18:50:20Z
 
@@ -165,7 +165,7 @@ class ListInstanceParamHistoriesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListInstanceParamHistoriesRequest.
+        r"""Gets the end_time of this ListInstanceParamHistoriesRequest.
 
         结束时间 默认为当前时间 格式如 2020-09-01T18:50:20Z
 
@@ -176,7 +176,7 @@ class ListInstanceParamHistoriesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListInstanceParamHistoriesRequest.
+        r"""Sets the end_time of this ListInstanceParamHistoriesRequest.
 
         结束时间 默认为当前时间 格式如 2020-09-01T18:50:20Z
 
@@ -187,7 +187,7 @@ class ListInstanceParamHistoriesRequest:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ListInstanceParamHistoriesRequest.
+        r"""Gets the param_name of this ListInstanceParamHistoriesRequest.
 
         参数名称
 
@@ -198,7 +198,7 @@ class ListInstanceParamHistoriesRequest:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ListInstanceParamHistoriesRequest.
+        r"""Sets the param_name of this ListInstanceParamHistoriesRequest.
 
         参数名称
 

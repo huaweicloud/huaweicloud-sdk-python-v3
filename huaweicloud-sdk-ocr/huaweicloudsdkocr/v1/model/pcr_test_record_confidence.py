@@ -31,7 +31,7 @@ class PcrTestRecordConfidence:
     }
 
     def __init__(self, name=None, sampling_time=None, test_time=None, test_result=None):
-        """PcrTestRecordConfidence
+        r"""PcrTestRecordConfidence
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PcrTestRecordConfidence:
 
     @property
     def name(self):
-        """Gets the name of this PcrTestRecordConfidence.
+        r"""Gets the name of this PcrTestRecordConfidence.
 
         姓名的置信度 
 
@@ -75,7 +75,7 @@ class PcrTestRecordConfidence:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PcrTestRecordConfidence.
+        r"""Sets the name of this PcrTestRecordConfidence.
 
         姓名的置信度 
 
@@ -86,7 +86,7 @@ class PcrTestRecordConfidence:
 
     @property
     def sampling_time(self):
-        """Gets the sampling_time of this PcrTestRecordConfidence.
+        r"""Gets the sampling_time of this PcrTestRecordConfidence.
 
         核酸检测采样时间的置信度 
 
@@ -97,7 +97,7 @@ class PcrTestRecordConfidence:
 
     @sampling_time.setter
     def sampling_time(self, sampling_time):
-        """Sets the sampling_time of this PcrTestRecordConfidence.
+        r"""Sets the sampling_time of this PcrTestRecordConfidence.
 
         核酸检测采样时间的置信度 
 
@@ -108,7 +108,7 @@ class PcrTestRecordConfidence:
 
     @property
     def test_time(self):
-        """Gets the test_time of this PcrTestRecordConfidence.
+        r"""Gets the test_time of this PcrTestRecordConfidence.
 
         核酸检测结果更新时间的置信度 
 
@@ -119,7 +119,7 @@ class PcrTestRecordConfidence:
 
     @test_time.setter
     def test_time(self, test_time):
-        """Sets the test_time of this PcrTestRecordConfidence.
+        r"""Sets the test_time of this PcrTestRecordConfidence.
 
         核酸检测结果更新时间的置信度 
 
@@ -130,7 +130,7 @@ class PcrTestRecordConfidence:
 
     @property
     def test_result(self):
-        """Gets the test_result of this PcrTestRecordConfidence.
+        r"""Gets the test_result of this PcrTestRecordConfidence.
 
         核酸检测结果的置信度 
 
@@ -141,7 +141,7 @@ class PcrTestRecordConfidence:
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this PcrTestRecordConfidence.
+        r"""Sets the test_result of this PcrTestRecordConfidence.
 
         核酸检测结果的置信度 
 

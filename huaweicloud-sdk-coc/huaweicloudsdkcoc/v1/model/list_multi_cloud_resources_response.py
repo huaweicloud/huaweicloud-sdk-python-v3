@@ -26,7 +26,7 @@ class ListMultiCloudResourcesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListMultiCloudResourcesResponse
+        r"""ListMultiCloudResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMultiCloudResourcesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListMultiCloudResourcesResponse.
+        r"""Gets the data of this ListMultiCloudResourcesResponse.
 
         多云资源列表
 
@@ -55,7 +55,7 @@ class ListMultiCloudResourcesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListMultiCloudResourcesResponse.
+        r"""Sets the data of this ListMultiCloudResourcesResponse.
 
         多云资源列表
 

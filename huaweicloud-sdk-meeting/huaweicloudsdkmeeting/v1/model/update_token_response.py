@@ -60,7 +60,7 @@ class UpdateTokenResponse(SdkResponse):
     }
 
     def __init__(self, access_token=None, token_ip=None, valid_period=None, expire_time=None, create_time=None, user=None, client_type=None, force_login_ind=None, first_login=None, pwd_expired=None, days_pwd_available=None, proxy_token=None, delay_delete=None, token_type=None, refresh_token=None, refresh_valid_period=None, refresh_expire_time=None, refresh_create_time=None):
-        """UpdateTokenResponse
+        r"""UpdateTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def access_token(self):
-        """Gets the access_token of this UpdateTokenResponse.
+        r"""Gets the access_token of this UpdateTokenResponse.
 
         Access Token字符串。
 
@@ -174,7 +174,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this UpdateTokenResponse.
+        r"""Sets the access_token of this UpdateTokenResponse.
 
         Access Token字符串。
 
@@ -185,7 +185,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def token_ip(self):
-        """Gets the token_ip of this UpdateTokenResponse.
+        r"""Gets the token_ip of this UpdateTokenResponse.
 
         用户IP。
 
@@ -196,7 +196,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @token_ip.setter
     def token_ip(self, token_ip):
-        """Sets the token_ip of this UpdateTokenResponse.
+        r"""Sets the token_ip of this UpdateTokenResponse.
 
         用户IP。
 
@@ -207,7 +207,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this UpdateTokenResponse.
+        r"""Gets the valid_period of this UpdateTokenResponse.
 
         Access Token有效时长，单位：秒。
 
@@ -218,7 +218,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this UpdateTokenResponse.
+        r"""Sets the valid_period of this UpdateTokenResponse.
 
         Access Token有效时长，单位：秒。
 
@@ -229,7 +229,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UpdateTokenResponse.
+        r"""Gets the expire_time of this UpdateTokenResponse.
 
         Access Token的失效时间戳，单位：秒。
 
@@ -240,7 +240,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UpdateTokenResponse.
+        r"""Sets the expire_time of this UpdateTokenResponse.
 
         Access Token的失效时间戳，单位：秒。
 
@@ -251,7 +251,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateTokenResponse.
+        r"""Gets the create_time of this UpdateTokenResponse.
 
         Access Token的创建时间戳，单位：毫秒。
 
@@ -262,7 +262,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateTokenResponse.
+        r"""Sets the create_time of this UpdateTokenResponse.
 
         Access Token的创建时间戳，单位：毫秒。
 
@@ -273,7 +273,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this UpdateTokenResponse.
+        r"""Gets the user of this UpdateTokenResponse.
 
         :return: The user of this UpdateTokenResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserInfo`
@@ -282,7 +282,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UpdateTokenResponse.
+        r"""Sets the user of this UpdateTokenResponse.
 
         :param user: The user of this UpdateTokenResponse.
         :type user: :class:`huaweicloudsdkmeeting.v1.UserInfo`
@@ -291,7 +291,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def client_type(self):
-        """Gets the client_type of this UpdateTokenResponse.
+        r"""Gets the client_type of this UpdateTokenResponse.
 
         登录帐号类型。 * 72：API调用类型 
 
@@ -302,7 +302,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this UpdateTokenResponse.
+        r"""Sets the client_type of this UpdateTokenResponse.
 
         登录帐号类型。 * 72：API调用类型 
 
@@ -313,7 +313,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def force_login_ind(self):
-        """Gets the force_login_ind of this UpdateTokenResponse.
+        r"""Gets the force_login_ind of this UpdateTokenResponse.
 
         抢占登录标识。 * 0： 非抢占 * 1： 抢占 
 
@@ -324,7 +324,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @force_login_ind.setter
     def force_login_ind(self, force_login_ind):
-        """Sets the force_login_ind of this UpdateTokenResponse.
+        r"""Sets the force_login_ind of this UpdateTokenResponse.
 
         抢占登录标识。 * 0： 非抢占 * 1： 抢占 
 
@@ -335,7 +335,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def first_login(self):
-        """Gets the first_login of this UpdateTokenResponse.
+        r"""Gets the first_login of this UpdateTokenResponse.
 
         是否首次登录。 > 首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码。 默认值：false。 
 
@@ -346,7 +346,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @first_login.setter
     def first_login(self, first_login):
-        """Sets the first_login of this UpdateTokenResponse.
+        r"""Sets the first_login of this UpdateTokenResponse.
 
         是否首次登录。 > 首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码。 默认值：false。 
 
@@ -357,7 +357,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def pwd_expired(self):
-        """Gets the pwd_expired of this UpdateTokenResponse.
+        r"""Gets the pwd_expired of this UpdateTokenResponse.
 
         密码是否过期，默认值：false。
 
@@ -368,7 +368,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @pwd_expired.setter
     def pwd_expired(self, pwd_expired):
-        """Sets the pwd_expired of this UpdateTokenResponse.
+        r"""Sets the pwd_expired of this UpdateTokenResponse.
 
         密码是否过期，默认值：false。
 
@@ -379,7 +379,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def days_pwd_available(self):
-        """Gets the days_pwd_available of this UpdateTokenResponse.
+        r"""Gets the days_pwd_available of this UpdateTokenResponse.
 
         密码有效天数。
 
@@ -390,7 +390,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @days_pwd_available.setter
     def days_pwd_available(self, days_pwd_available):
-        """Sets the days_pwd_available of this UpdateTokenResponse.
+        r"""Sets the days_pwd_available of this UpdateTokenResponse.
 
         密码有效天数。
 
@@ -401,7 +401,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def proxy_token(self):
-        """Gets the proxy_token of this UpdateTokenResponse.
+        r"""Gets the proxy_token of this UpdateTokenResponse.
 
         :return: The proxy_token of this UpdateTokenResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
@@ -410,7 +410,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @proxy_token.setter
     def proxy_token(self, proxy_token):
-        """Sets the proxy_token of this UpdateTokenResponse.
+        r"""Sets the proxy_token of this UpdateTokenResponse.
 
         :param proxy_token: The proxy_token of this UpdateTokenResponse.
         :type proxy_token: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
@@ -419,7 +419,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def delay_delete(self):
-        """Gets the delay_delete of this UpdateTokenResponse.
+        r"""Gets the delay_delete of this UpdateTokenResponse.
 
         是否延时删除状态。
 
@@ -430,7 +430,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @delay_delete.setter
     def delay_delete(self, delay_delete):
-        """Sets the delay_delete of this UpdateTokenResponse.
+        r"""Sets the delay_delete of this UpdateTokenResponse.
 
         是否延时删除状态。
 
@@ -441,7 +441,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def token_type(self):
-        """Gets the token_type of this UpdateTokenResponse.
+        r"""Gets the token_type of this UpdateTokenResponse.
 
         Token类型。 * 0：用户Access Token * 1：会控TOKEN * 2：一次性TOKEN 
 
@@ -452,7 +452,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this UpdateTokenResponse.
+        r"""Sets the token_type of this UpdateTokenResponse.
 
         Token类型。 * 0：用户Access Token * 1：会控TOKEN * 2：一次性TOKEN 
 
@@ -463,7 +463,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def refresh_token(self):
-        """Gets the refresh_token of this UpdateTokenResponse.
+        r"""Gets the refresh_token of this UpdateTokenResponse.
 
         Refresh Token字符串。
 
@@ -474,7 +474,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @refresh_token.setter
     def refresh_token(self, refresh_token):
-        """Sets the refresh_token of this UpdateTokenResponse.
+        r"""Sets the refresh_token of this UpdateTokenResponse.
 
         Refresh Token字符串。
 
@@ -485,7 +485,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def refresh_valid_period(self):
-        """Gets the refresh_valid_period of this UpdateTokenResponse.
+        r"""Gets the refresh_valid_period of this UpdateTokenResponse.
 
         Refresh Token有效时长，单位：秒。
 
@@ -496,7 +496,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @refresh_valid_period.setter
     def refresh_valid_period(self, refresh_valid_period):
-        """Sets the refresh_valid_period of this UpdateTokenResponse.
+        r"""Sets the refresh_valid_period of this UpdateTokenResponse.
 
         Refresh Token有效时长，单位：秒。
 
@@ -507,7 +507,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def refresh_expire_time(self):
-        """Gets the refresh_expire_time of this UpdateTokenResponse.
+        r"""Gets the refresh_expire_time of this UpdateTokenResponse.
 
         Refresh Token的失效时间戳，单位：秒。
 
@@ -518,7 +518,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @refresh_expire_time.setter
     def refresh_expire_time(self, refresh_expire_time):
-        """Sets the refresh_expire_time of this UpdateTokenResponse.
+        r"""Sets the refresh_expire_time of this UpdateTokenResponse.
 
         Refresh Token的失效时间戳，单位：秒。
 
@@ -529,7 +529,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @property
     def refresh_create_time(self):
-        """Gets the refresh_create_time of this UpdateTokenResponse.
+        r"""Gets the refresh_create_time of this UpdateTokenResponse.
 
         Refresh Token的创建时间戳，单位：毫秒。
 
@@ -540,7 +540,7 @@ class UpdateTokenResponse(SdkResponse):
 
     @refresh_create_time.setter
     def refresh_create_time(self, refresh_create_time):
-        """Sets the refresh_create_time of this UpdateTokenResponse.
+        r"""Sets the refresh_create_time of this UpdateTokenResponse.
 
         Refresh Token的创建时间戳，单位：毫秒。
 

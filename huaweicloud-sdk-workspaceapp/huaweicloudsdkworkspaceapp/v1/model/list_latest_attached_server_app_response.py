@@ -26,7 +26,7 @@ class ListLatestAttachedServerAppResponse(SdkResponse):
     }
 
     def __init__(self, items=None):
-        """ListLatestAttachedServerAppResponse
+        r"""ListLatestAttachedServerAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLatestAttachedServerAppResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListLatestAttachedServerAppResponse.
+        r"""Gets the items of this ListLatestAttachedServerAppResponse.
 
         分发软件信息列表。
 
@@ -55,7 +55,7 @@ class ListLatestAttachedServerAppResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListLatestAttachedServerAppResponse.
+        r"""Sets the items of this ListLatestAttachedServerAppResponse.
 
         分发软件信息列表。
 

@@ -105,7 +105,7 @@ class InstanceListInfo:
     }
 
     def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, updated_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, readonly_domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None, features=None, sub_status=None):
-        """InstanceListInfo
+        r"""InstanceListInfo
 
         The model defined in huaweicloud sdk
 
@@ -323,7 +323,7 @@ class InstanceListInfo:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this InstanceListInfo.
+        r"""Gets the publicip_id of this InstanceListInfo.
 
         Redis缓存实例绑定的弹性IP地址的id。 如果未开启公网访问功能，该字段值为null。 
 
@@ -334,7 +334,7 @@ class InstanceListInfo:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this InstanceListInfo.
+        r"""Sets the publicip_id of this InstanceListInfo.
 
         Redis缓存实例绑定的弹性IP地址的id。 如果未开启公网访问功能，该字段值为null。 
 
@@ -345,7 +345,7 @@ class InstanceListInfo:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this InstanceListInfo.
+        r"""Gets the vpc_name of this InstanceListInfo.
 
         VPC的名称。
 
@@ -356,7 +356,7 @@ class InstanceListInfo:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this InstanceListInfo.
+        r"""Sets the vpc_name of this InstanceListInfo.
 
         VPC的名称。
 
@@ -367,7 +367,7 @@ class InstanceListInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this InstanceListInfo.
+        r"""Gets the charging_mode of this InstanceListInfo.
 
         计费模式，0表示按需计费，1表示包年/包月计费。
 
@@ -378,7 +378,7 @@ class InstanceListInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this InstanceListInfo.
+        r"""Sets the charging_mode of this InstanceListInfo.
 
         计费模式，0表示按需计费，1表示包年/包月计费。
 
@@ -389,7 +389,7 @@ class InstanceListInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this InstanceListInfo.
+        r"""Gets the vpc_id of this InstanceListInfo.
 
         VPC ID。
 
@@ -400,7 +400,7 @@ class InstanceListInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this InstanceListInfo.
+        r"""Sets the vpc_id of this InstanceListInfo.
 
         VPC ID。
 
@@ -411,7 +411,7 @@ class InstanceListInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this InstanceListInfo.
+        r"""Gets the subnet_id of this InstanceListInfo.
 
         子网ID。
 
@@ -422,7 +422,7 @@ class InstanceListInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this InstanceListInfo.
+        r"""Sets the subnet_id of this InstanceListInfo.
 
         子网ID。
 
@@ -433,7 +433,7 @@ class InstanceListInfo:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this InstanceListInfo.
+        r"""Gets the security_group_id of this InstanceListInfo.
 
         安全组ID。
 
@@ -444,7 +444,7 @@ class InstanceListInfo:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this InstanceListInfo.
+        r"""Sets the security_group_id of this InstanceListInfo.
 
         安全组ID。
 
@@ -455,7 +455,7 @@ class InstanceListInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this InstanceListInfo.
+        r"""Gets the created_at of this InstanceListInfo.
 
         创建时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -466,7 +466,7 @@ class InstanceListInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this InstanceListInfo.
+        r"""Sets the created_at of this InstanceListInfo.
 
         创建时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -477,7 +477,7 @@ class InstanceListInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this InstanceListInfo.
+        r"""Gets the updated_at of this InstanceListInfo.
 
         更新时间。格式为：2017-03-31T19:24:46.297Z
 
@@ -488,7 +488,7 @@ class InstanceListInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this InstanceListInfo.
+        r"""Sets the updated_at of this InstanceListInfo.
 
         更新时间。格式为：2017-03-31T19:24:46.297Z
 
@@ -499,7 +499,7 @@ class InstanceListInfo:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this InstanceListInfo.
+        r"""Gets the enable_ssl of this InstanceListInfo.
 
         Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
 
@@ -510,7 +510,7 @@ class InstanceListInfo:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this InstanceListInfo.
+        r"""Sets the enable_ssl of this InstanceListInfo.
 
         Redis缓存实例开启公网访问功能时，是否选择支持ssl。 - true：开启 - false：不开启 
 
@@ -521,7 +521,7 @@ class InstanceListInfo:
 
     @property
     def max_memory(self):
-        """Gets the max_memory of this InstanceListInfo.
+        r"""Gets the max_memory of this InstanceListInfo.
 
         总内存，单位：MB。
 
@@ -532,7 +532,7 @@ class InstanceListInfo:
 
     @max_memory.setter
     def max_memory(self, max_memory):
-        """Sets the max_memory of this InstanceListInfo.
+        r"""Sets the max_memory of this InstanceListInfo.
 
         总内存，单位：MB。
 
@@ -543,7 +543,7 @@ class InstanceListInfo:
 
     @property
     def used_memory(self):
-        """Gets the used_memory of this InstanceListInfo.
+        r"""Gets the used_memory of this InstanceListInfo.
 
         已使用的内存，单位：MB。
 
@@ -554,7 +554,7 @@ class InstanceListInfo:
 
     @used_memory.setter
     def used_memory(self, used_memory):
-        """Sets the used_memory of this InstanceListInfo.
+        r"""Sets the used_memory of this InstanceListInfo.
 
         已使用的内存，单位：MB。
 
@@ -565,7 +565,7 @@ class InstanceListInfo:
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this InstanceListInfo.
+        r"""Gets the publicip_address of this InstanceListInfo.
 
         Redis缓存实例绑定的弹性IP地址。 如果未开启公网访问功能，该字段值为null。 
 
@@ -576,7 +576,7 @@ class InstanceListInfo:
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this InstanceListInfo.
+        r"""Sets the publicip_address of this InstanceListInfo.
 
         Redis缓存实例绑定的弹性IP地址。 如果未开启公网访问功能，该字段值为null。 
 
@@ -587,7 +587,7 @@ class InstanceListInfo:
 
     @property
     def capacity(self):
-        """Gets the capacity of this InstanceListInfo.
+        r"""Gets the capacity of this InstanceListInfo.
 
         缓存容量（G Byte）。
 
@@ -598,7 +598,7 @@ class InstanceListInfo:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this InstanceListInfo.
+        r"""Sets the capacity of this InstanceListInfo.
 
         缓存容量（G Byte）。
 
@@ -609,7 +609,7 @@ class InstanceListInfo:
 
     @property
     def capacity_minor(self):
-        """Gets the capacity_minor of this InstanceListInfo.
+        r"""Gets the capacity_minor of this InstanceListInfo.
 
         小规格缓存容量（G Byte）。
 
@@ -620,7 +620,7 @@ class InstanceListInfo:
 
     @capacity_minor.setter
     def capacity_minor(self, capacity_minor):
-        """Sets the capacity_minor of this InstanceListInfo.
+        r"""Sets the capacity_minor of this InstanceListInfo.
 
         小规格缓存容量（G Byte）。
 
@@ -631,7 +631,7 @@ class InstanceListInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this InstanceListInfo.
+        r"""Gets the order_id of this InstanceListInfo.
 
         订单ID，仅在创建包周期实例时返回。按需实例时此值为null
 
@@ -642,7 +642,7 @@ class InstanceListInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this InstanceListInfo.
+        r"""Sets the order_id of this InstanceListInfo.
 
         订单ID，仅在创建包周期实例时返回。按需实例时此值为null
 
@@ -653,7 +653,7 @@ class InstanceListInfo:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this InstanceListInfo.
+        r"""Gets the maintain_begin of this InstanceListInfo.
 
         维护时间窗开始时间，为UTC时间，格式为HH:mm:ss。
 
@@ -664,7 +664,7 @@ class InstanceListInfo:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this InstanceListInfo.
+        r"""Sets the maintain_begin of this InstanceListInfo.
 
         维护时间窗开始时间，为UTC时间，格式为HH:mm:ss。
 
@@ -675,7 +675,7 @@ class InstanceListInfo:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this InstanceListInfo.
+        r"""Gets the maintain_end of this InstanceListInfo.
 
         维护时间窗结束时间，为UTC时间，格式为HH:mm:ss。
 
@@ -686,7 +686,7 @@ class InstanceListInfo:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this InstanceListInfo.
+        r"""Sets the maintain_end of this InstanceListInfo.
 
         维护时间窗结束时间，为UTC时间，格式为HH:mm:ss。
 
@@ -697,7 +697,7 @@ class InstanceListInfo:
 
     @property
     def engine(self):
-        """Gets the engine of this InstanceListInfo.
+        r"""Gets the engine of this InstanceListInfo.
 
         缓存引擎。
 
@@ -708,7 +708,7 @@ class InstanceListInfo:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this InstanceListInfo.
+        r"""Sets the engine of this InstanceListInfo.
 
         缓存引擎。
 
@@ -719,7 +719,7 @@ class InstanceListInfo:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this InstanceListInfo.
+        r"""Gets the engine_version of this InstanceListInfo.
 
         缓存版本。
 
@@ -730,7 +730,7 @@ class InstanceListInfo:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this InstanceListInfo.
+        r"""Sets the engine_version of this InstanceListInfo.
 
         缓存版本。
 
@@ -741,7 +741,7 @@ class InstanceListInfo:
 
     @property
     def service_upgrade(self):
-        """Gets the service_upgrade of this InstanceListInfo.
+        r"""Gets the service_upgrade of this InstanceListInfo.
 
         实例是否存在升级任务。 - true：存在 - false：不存在 
 
@@ -752,7 +752,7 @@ class InstanceListInfo:
 
     @service_upgrade.setter
     def service_upgrade(self, service_upgrade):
-        """Sets the service_upgrade of this InstanceListInfo.
+        r"""Sets the service_upgrade of this InstanceListInfo.
 
         实例是否存在升级任务。 - true：存在 - false：不存在 
 
@@ -763,7 +763,7 @@ class InstanceListInfo:
 
     @property
     def no_password_access(self):
-        """Gets the no_password_access of this InstanceListInfo.
+        r"""Gets the no_password_access of this InstanceListInfo.
 
         是否允许免密码访问缓存实例。 - true：该实例无需密码即可访问。 - false：该实例必须通过密码认证才能访问。 
 
@@ -774,7 +774,7 @@ class InstanceListInfo:
 
     @no_password_access.setter
     def no_password_access(self, no_password_access):
-        """Sets the no_password_access of this InstanceListInfo.
+        r"""Sets the no_password_access of this InstanceListInfo.
 
         是否允许免密码访问缓存实例。 - true：该实例无需密码即可访问。 - false：该实例必须通过密码认证才能访问。 
 
@@ -785,7 +785,7 @@ class InstanceListInfo:
 
     @property
     def service_task_id(self):
-        """Gets the service_task_id of this InstanceListInfo.
+        r"""Gets the service_task_id of this InstanceListInfo.
 
         升级任务的ID。 - 当service_upgrade为true时，为升级任务的ID。 - 当service_upgrade为false时，该参数为空。 
 
@@ -796,7 +796,7 @@ class InstanceListInfo:
 
     @service_task_id.setter
     def service_task_id(self, service_task_id):
-        """Sets the service_task_id of this InstanceListInfo.
+        r"""Sets the service_task_id of this InstanceListInfo.
 
         升级任务的ID。 - 当service_upgrade为true时，为升级任务的ID。 - 当service_upgrade为false时，该参数为空。 
 
@@ -807,7 +807,7 @@ class InstanceListInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this InstanceListInfo.
+        r"""Gets the ip of this InstanceListInfo.
 
         连接缓存实例的IP地址。如果是集群实例，返回多个IP地址，使用逗号分隔。如：192.168.0.1，192.168.0.2。
 
@@ -818,7 +818,7 @@ class InstanceListInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this InstanceListInfo.
+        r"""Sets the ip of this InstanceListInfo.
 
         连接缓存实例的IP地址。如果是集群实例，返回多个IP地址，使用逗号分隔。如：192.168.0.1，192.168.0.2。
 
@@ -829,7 +829,7 @@ class InstanceListInfo:
 
     @property
     def access_user(self):
-        """Gets the access_user of this InstanceListInfo.
+        r"""Gets the access_user of this InstanceListInfo.
 
         通过密码认证访问缓存实例的认证用户名。 
 
@@ -840,7 +840,7 @@ class InstanceListInfo:
 
     @access_user.setter
     def access_user(self, access_user):
-        """Sets the access_user of this InstanceListInfo.
+        r"""Sets the access_user of this InstanceListInfo.
 
         通过密码认证访问缓存实例的认证用户名。 
 
@@ -851,7 +851,7 @@ class InstanceListInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceListInfo.
+        r"""Gets the instance_id of this InstanceListInfo.
 
         实例ID。
 
@@ -862,7 +862,7 @@ class InstanceListInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceListInfo.
+        r"""Sets the instance_id of this InstanceListInfo.
 
         实例ID。
 
@@ -873,7 +873,7 @@ class InstanceListInfo:
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this InstanceListInfo.
+        r"""Gets the enable_publicip of this InstanceListInfo.
 
         Redis缓存实例是否开启公网访问功能。 - true：开启 - false：不开启 
 
@@ -884,7 +884,7 @@ class InstanceListInfo:
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this InstanceListInfo.
+        r"""Sets the enable_publicip of this InstanceListInfo.
 
         Redis缓存实例是否开启公网访问功能。 - true：开启 - false：不开启 
 
@@ -895,7 +895,7 @@ class InstanceListInfo:
 
     @property
     def port(self):
-        """Gets the port of this InstanceListInfo.
+        r"""Gets the port of this InstanceListInfo.
 
         缓存的端口。
 
@@ -906,7 +906,7 @@ class InstanceListInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this InstanceListInfo.
+        r"""Sets the port of this InstanceListInfo.
 
         缓存的端口。
 
@@ -917,7 +917,7 @@ class InstanceListInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this InstanceListInfo.
+        r"""Gets the user_id of this InstanceListInfo.
 
         用户id。
 
@@ -928,7 +928,7 @@ class InstanceListInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this InstanceListInfo.
+        r"""Sets the user_id of this InstanceListInfo.
 
         用户id。
 
@@ -939,7 +939,7 @@ class InstanceListInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this InstanceListInfo.
+        r"""Gets the user_name of this InstanceListInfo.
 
         用户名。
 
@@ -950,7 +950,7 @@ class InstanceListInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this InstanceListInfo.
+        r"""Sets the user_name of this InstanceListInfo.
 
         用户名。
 
@@ -961,7 +961,7 @@ class InstanceListInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this InstanceListInfo.
+        r"""Gets the domain_name of this InstanceListInfo.
 
         实例的域名。
 
@@ -972,7 +972,7 @@ class InstanceListInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this InstanceListInfo.
+        r"""Sets the domain_name of this InstanceListInfo.
 
         实例的域名。
 
@@ -983,7 +983,7 @@ class InstanceListInfo:
 
     @property
     def readonly_domain_name(self):
-        """Gets the readonly_domain_name of this InstanceListInfo.
+        r"""Gets the readonly_domain_name of this InstanceListInfo.
 
         实例的只读域名，只有主备实例有该字段。
 
@@ -994,7 +994,7 @@ class InstanceListInfo:
 
     @readonly_domain_name.setter
     def readonly_domain_name(self, readonly_domain_name):
-        """Sets the readonly_domain_name of this InstanceListInfo.
+        r"""Sets the readonly_domain_name of this InstanceListInfo.
 
         实例的只读域名，只有主备实例有该字段。
 
@@ -1005,7 +1005,7 @@ class InstanceListInfo:
 
     @property
     def name(self):
-        """Gets the name of this InstanceListInfo.
+        r"""Gets the name of this InstanceListInfo.
 
         实例名称。
 
@@ -1016,7 +1016,7 @@ class InstanceListInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceListInfo.
+        r"""Sets the name of this InstanceListInfo.
 
         实例名称。
 
@@ -1027,7 +1027,7 @@ class InstanceListInfo:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this InstanceListInfo.
+        r"""Gets the spec_code of this InstanceListInfo.
 
         产品规格编码。
 
@@ -1038,7 +1038,7 @@ class InstanceListInfo:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this InstanceListInfo.
+        r"""Sets the spec_code of this InstanceListInfo.
 
         产品规格编码。
 
@@ -1049,7 +1049,7 @@ class InstanceListInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceListInfo.
+        r"""Gets the status of this InstanceListInfo.
 
         实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)。
 
@@ -1060,7 +1060,7 @@ class InstanceListInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceListInfo.
+        r"""Sets the status of this InstanceListInfo.
 
         实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)。
 
@@ -1071,7 +1071,7 @@ class InstanceListInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this InstanceListInfo.
+        r"""Gets the tags of this InstanceListInfo.
 
         实例标签键值。
 
@@ -1082,7 +1082,7 @@ class InstanceListInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this InstanceListInfo.
+        r"""Sets the tags of this InstanceListInfo.
 
         实例标签键值。
 
@@ -1093,7 +1093,7 @@ class InstanceListInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceListInfo.
+        r"""Gets the enterprise_project_id of this InstanceListInfo.
 
         企业项目ID。
 
@@ -1104,7 +1104,7 @@ class InstanceListInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceListInfo.
+        r"""Sets the enterprise_project_id of this InstanceListInfo.
 
         企业项目ID。
 
@@ -1115,7 +1115,7 @@ class InstanceListInfo:
 
     @property
     def description(self):
-        """Gets the description of this InstanceListInfo.
+        r"""Gets the description of this InstanceListInfo.
 
         实例描述备注
 
@@ -1126,7 +1126,7 @@ class InstanceListInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceListInfo.
+        r"""Sets the description of this InstanceListInfo.
 
         实例描述备注
 
@@ -1137,7 +1137,7 @@ class InstanceListInfo:
 
     @property
     def cpu_type(self):
-        """Gets the cpu_type of this InstanceListInfo.
+        r"""Gets the cpu_type of this InstanceListInfo.
 
         实例CPU类型，通常为x86_64或aarch64
 
@@ -1148,7 +1148,7 @@ class InstanceListInfo:
 
     @cpu_type.setter
     def cpu_type(self, cpu_type):
-        """Sets the cpu_type of this InstanceListInfo.
+        r"""Sets the cpu_type of this InstanceListInfo.
 
         实例CPU类型，通常为x86_64或aarch64
 
@@ -1159,7 +1159,7 @@ class InstanceListInfo:
 
     @property
     def az_codes(self):
-        """Gets the az_codes of this InstanceListInfo.
+        r"""Gets the az_codes of this InstanceListInfo.
 
         有资源的可用区编码。
 
@@ -1170,7 +1170,7 @@ class InstanceListInfo:
 
     @az_codes.setter
     def az_codes(self, az_codes):
-        """Sets the az_codes of this InstanceListInfo.
+        r"""Sets the az_codes of this InstanceListInfo.
 
         有资源的可用区编码。
 
@@ -1181,7 +1181,7 @@ class InstanceListInfo:
 
     @property
     def features(self):
-        """Gets the features of this InstanceListInfo.
+        r"""Gets the features of this InstanceListInfo.
 
         :return: The features of this InstanceListInfo.
         :rtype: :class:`huaweicloudsdkdcs.v2.Features`
@@ -1190,7 +1190,7 @@ class InstanceListInfo:
 
     @features.setter
     def features(self, features):
-        """Sets the features of this InstanceListInfo.
+        r"""Sets the features of this InstanceListInfo.
 
         :param features: The features of this InstanceListInfo.
         :type features: :class:`huaweicloudsdkdcs.v2.Features`
@@ -1199,7 +1199,7 @@ class InstanceListInfo:
 
     @property
     def sub_status(self):
-        """Gets the sub_status of this InstanceListInfo.
+        r"""Gets the sub_status of this InstanceListInfo.
 
         实例子状态。
 
@@ -1210,7 +1210,7 @@ class InstanceListInfo:
 
     @sub_status.setter
     def sub_status(self, sub_status):
-        """Sets the sub_status of this InstanceListInfo.
+        r"""Sets the sub_status of this InstanceListInfo.
 
         实例子状态。
 

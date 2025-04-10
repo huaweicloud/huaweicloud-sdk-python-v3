@@ -26,7 +26,7 @@ class ListEcnWithIegResponse(SdkResponse):
     }
 
     def __init__(self, ecn_ieg_relationships=None):
-        """ListEcnWithIegResponse
+        r"""ListEcnWithIegResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEcnWithIegResponse(SdkResponse):
 
     @property
     def ecn_ieg_relationships(self):
-        """Gets the ecn_ieg_relationships of this ListEcnWithIegResponse.
+        r"""Gets the ecn_ieg_relationships of this ListEcnWithIegResponse.
 
         企业连接网络与智能企业网关的绑定关系列表
 
@@ -55,7 +55,7 @@ class ListEcnWithIegResponse(SdkResponse):
 
     @ecn_ieg_relationships.setter
     def ecn_ieg_relationships(self, ecn_ieg_relationships):
-        """Sets the ecn_ieg_relationships of this ListEcnWithIegResponse.
+        r"""Sets the ecn_ieg_relationships of this ListEcnWithIegResponse.
 
         企业连接网络与智能企业网关的绑定关系列表
 

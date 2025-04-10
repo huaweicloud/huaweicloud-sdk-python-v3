@@ -28,7 +28,7 @@ class ListBlockchainsResponse(SdkResponse):
     }
 
     def __init__(self, blockchains=None, count=None):
-        """ListBlockchainsResponse
+        r"""ListBlockchainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBlockchainsResponse(SdkResponse):
 
     @property
     def blockchains(self):
-        """Gets the blockchains of this ListBlockchainsResponse.
+        r"""Gets the blockchains of this ListBlockchainsResponse.
 
         服务实例简要信息
 
@@ -62,7 +62,7 @@ class ListBlockchainsResponse(SdkResponse):
 
     @blockchains.setter
     def blockchains(self, blockchains):
-        """Sets the blockchains of this ListBlockchainsResponse.
+        r"""Sets the blockchains of this ListBlockchainsResponse.
 
         服务实例简要信息
 
@@ -73,7 +73,7 @@ class ListBlockchainsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBlockchainsResponse.
+        r"""Gets the count of this ListBlockchainsResponse.
 
         实例总数
 
@@ -84,7 +84,7 @@ class ListBlockchainsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBlockchainsResponse.
+        r"""Sets the count of this ListBlockchainsResponse.
 
         实例总数
 

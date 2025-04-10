@@ -25,7 +25,7 @@ class OSChangeReq:
     }
 
     def __init__(self, os_change=None):
-        """OSChangeReq
+        r"""OSChangeReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OSChangeReq:
 
     @property
     def os_change(self):
-        """Gets the os_change of this OSChangeReq.
+        r"""Gets the os_change of this OSChangeReq.
 
         :return: The os_change of this OSChangeReq.
         :rtype: :class:`huaweicloudsdkbms.v1.OsChange`
@@ -51,7 +51,7 @@ class OSChangeReq:
 
     @os_change.setter
     def os_change(self, os_change):
-        """Sets the os_change of this OSChangeReq.
+        r"""Sets the os_change of this OSChangeReq.
 
         :param os_change: The os_change of this OSChangeReq.
         :type os_change: :class:`huaweicloudsdkbms.v1.OsChange`

@@ -29,7 +29,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """AllowSqlserverDbUserPrivilegeRequest
+        r"""AllowSqlserverDbUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AllowSqlserverDbUserPrivilegeRequest.
+        r"""Gets the x_language of this AllowSqlserverDbUserPrivilegeRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AllowSqlserverDbUserPrivilegeRequest.
+        r"""Sets the x_language of this AllowSqlserverDbUserPrivilegeRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AllowSqlserverDbUserPrivilegeRequest.
+        r"""Gets the instance_id of this AllowSqlserverDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AllowSqlserverDbUserPrivilegeRequest.
+        r"""Sets the instance_id of this AllowSqlserverDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AllowSqlserverDbUserPrivilegeRequest.
+        r"""Gets the body of this AllowSqlserverDbUserPrivilegeRequest.
 
         :return: The body of this AllowSqlserverDbUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SqlserverGrantRequest`
@@ -109,7 +109,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AllowSqlserverDbUserPrivilegeRequest.
+        r"""Sets the body of this AllowSqlserverDbUserPrivilegeRequest.
 
         :param body: The body of this AllowSqlserverDbUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SqlserverGrantRequest`

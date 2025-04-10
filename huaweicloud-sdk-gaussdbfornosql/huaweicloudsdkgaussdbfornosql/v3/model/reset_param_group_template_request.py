@@ -25,7 +25,7 @@ class ResetParamGroupTemplateRequest:
     }
 
     def __init__(self, config_id=None):
-        """ResetParamGroupTemplateRequest
+        r"""ResetParamGroupTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResetParamGroupTemplateRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ResetParamGroupTemplateRequest.
+        r"""Gets the config_id of this ResetParamGroupTemplateRequest.
 
         参数模板ID
 
@@ -53,7 +53,7 @@ class ResetParamGroupTemplateRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ResetParamGroupTemplateRequest.
+        r"""Sets the config_id of this ResetParamGroupTemplateRequest.
 
         参数模板ID
 

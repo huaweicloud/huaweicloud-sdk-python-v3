@@ -27,7 +27,7 @@ class ListAlarmSubsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListAlarmSubsRequest
+        r"""ListAlarmSubsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAlarmSubsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmSubsRequest.
+        r"""Gets the offset of this ListAlarmSubsRequest.
 
         偏移量
 
@@ -61,7 +61,7 @@ class ListAlarmSubsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmSubsRequest.
+        r"""Sets the offset of this ListAlarmSubsRequest.
 
         偏移量
 
@@ -72,7 +72,7 @@ class ListAlarmSubsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmSubsRequest.
+        r"""Gets the limit of this ListAlarmSubsRequest.
 
         限制条目数
 
@@ -83,7 +83,7 @@ class ListAlarmSubsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmSubsRequest.
+        r"""Sets the limit of this ListAlarmSubsRequest.
 
         限制条目数
 

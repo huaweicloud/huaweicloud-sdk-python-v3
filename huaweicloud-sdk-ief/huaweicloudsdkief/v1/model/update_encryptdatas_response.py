@@ -26,7 +26,7 @@ class UpdateEncryptdatasResponse(SdkResponse):
     }
 
     def __init__(self, encrypt_data=None):
-        """UpdateEncryptdatasResponse
+        r"""UpdateEncryptdatasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEncryptdatasResponse(SdkResponse):
 
     @property
     def encrypt_data(self):
-        """Gets the encrypt_data of this UpdateEncryptdatasResponse.
+        r"""Gets the encrypt_data of this UpdateEncryptdatasResponse.
 
         :return: The encrypt_data of this UpdateEncryptdatasResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptData`
@@ -53,7 +53,7 @@ class UpdateEncryptdatasResponse(SdkResponse):
 
     @encrypt_data.setter
     def encrypt_data(self, encrypt_data):
-        """Sets the encrypt_data of this UpdateEncryptdatasResponse.
+        r"""Sets the encrypt_data of this UpdateEncryptdatasResponse.
 
         :param encrypt_data: The encrypt_data of this UpdateEncryptdatasResponse.
         :type encrypt_data: :class:`huaweicloudsdkief.v1.EncryptData`

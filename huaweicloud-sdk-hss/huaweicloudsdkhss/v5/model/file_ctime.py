@@ -23,7 +23,7 @@ class FileCtime:
     }
 
     def __init__(self):
-        """FileCtime
+        r"""FileCtime
 
         The model defined in huaweicloud sdk
 

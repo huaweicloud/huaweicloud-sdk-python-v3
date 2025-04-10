@@ -25,7 +25,7 @@ class CreateCertificateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCertificateRequest
+        r"""CreateCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCertificateRequest.
+        r"""Gets the body of this CreateCertificateRequest.
 
         :return: The body of this CreateCertificateRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateCertificateRequestBody`
@@ -52,7 +52,7 @@ class CreateCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCertificateRequest.
+        r"""Sets the body of this CreateCertificateRequest.
 
         :param body: The body of this CreateCertificateRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateCertificateRequestBody`

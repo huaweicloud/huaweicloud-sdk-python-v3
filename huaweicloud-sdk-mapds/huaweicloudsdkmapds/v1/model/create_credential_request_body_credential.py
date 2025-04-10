@@ -25,7 +25,7 @@ class CreateCredentialRequestBodyCredential:
     }
 
     def __init__(self, description=None):
-        """CreateCredentialRequestBodyCredential
+        r"""CreateCredentialRequestBodyCredential
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCredentialRequestBodyCredential:
 
     @property
     def description(self):
-        """Gets the description of this CreateCredentialRequestBodyCredential.
+        r"""Gets the description of this CreateCredentialRequestBodyCredential.
 
         :return: The description of this CreateCredentialRequestBodyCredential.
         :rtype: str
@@ -52,7 +52,7 @@ class CreateCredentialRequestBodyCredential:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCredentialRequestBodyCredential.
+        r"""Sets the description of this CreateCredentialRequestBodyCredential.
 
         :param description: The description of this CreateCredentialRequestBodyCredential.
         :type description: str

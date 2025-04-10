@@ -49,7 +49,7 @@ class ChangeCloudPhoneServerRequestBody:
     }
 
     def __init__(self, phone_model_name=None, image_id=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, _property=None):
-        """ChangeCloudPhoneServerRequestBody
+        r"""ChangeCloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the phone_model_name of this ChangeCloudPhoneServerRequestBody.
 
         云手机规格，不超过64个字节。
 
@@ -132,7 +132,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the phone_model_name of this ChangeCloudPhoneServerRequestBody.
 
         云手机规格，不超过64个字节。
 
@@ -143,7 +143,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the image_id of this ChangeCloudPhoneServerRequestBody.
 
         云手机镜像ID，不超过32个字节。
 
@@ -154,7 +154,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the image_id of this ChangeCloudPhoneServerRequestBody.
 
         云手机镜像ID，不超过32个字节。
 
@@ -165,7 +165,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the keypair_name of this ChangeCloudPhoneServerRequestBody.
 
         密钥对名称，不超过64个字节，用于云手机ADB登录。
 
@@ -176,7 +176,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the keypair_name of this ChangeCloudPhoneServerRequestBody.
 
         密钥对名称，不超过64个字节，用于云手机ADB登录。
 
@@ -187,7 +187,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def ports(self):
-        """Gets the ports of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the ports of this ChangeCloudPhoneServerRequestBody.
 
         云手机启用的应用端口，云手机服务会做端口转发。
 
@@ -198,7 +198,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the ports of this ChangeCloudPhoneServerRequestBody.
 
         云手机启用的应用端口，云手机服务会做端口转发。
 
@@ -209,7 +209,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the extend_param of this ChangeCloudPhoneServerRequestBody.
 
         :return: The extend_param of this ChangeCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyExtendParam`
@@ -218,7 +218,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the extend_param of this ChangeCloudPhoneServerRequestBody.
 
         :param extend_param: The extend_param of this ChangeCloudPhoneServerRequestBody.
         :type extend_param: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyExtendParam`
@@ -227,7 +227,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def tenant_vpc_id(self):
-        """Gets the tenant_vpc_id of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the tenant_vpc_id of this ChangeCloudPhoneServerRequestBody.
 
         租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
 
@@ -238,7 +238,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @tenant_vpc_id.setter
     def tenant_vpc_id(self, tenant_vpc_id):
-        """Sets the tenant_vpc_id of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the tenant_vpc_id of this ChangeCloudPhoneServerRequestBody.
 
         租户自定义的VPC ID，为待创建的云服务器所属的虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
 
@@ -249,7 +249,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the nics of this ChangeCloudPhoneServerRequestBody.
 
         租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
 
@@ -260,7 +260,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the nics of this ChangeCloudPhoneServerRequestBody.
 
         租户自定义的网卡的结构体，为待创建的云服务器的网卡信息。
 
@@ -271,7 +271,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the public_ip of this ChangeCloudPhoneServerRequestBody.
 
         :return: The public_ip of this ChangeCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPublicIp`
@@ -280,7 +280,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the public_ip of this ChangeCloudPhoneServerRequestBody.
 
         :param public_ip: The public_ip of this ChangeCloudPhoneServerRequestBody.
         :type public_ip: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPublicIp`
@@ -289,7 +289,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def phone_count_per_ip(self):
-        """Gets the phone_count_per_ip of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the phone_count_per_ip of this ChangeCloudPhoneServerRequestBody.
 
         多少个手机共用一个vip。默认为手机开数，表示所有手机共享1个vip。取值范围：1到手机规格开数。
 
@@ -300,7 +300,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @phone_count_per_ip.setter
     def phone_count_per_ip(self, phone_count_per_ip):
-        """Sets the phone_count_per_ip of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the phone_count_per_ip of this ChangeCloudPhoneServerRequestBody.
 
         多少个手机共用一个vip。默认为手机开数，表示所有手机共享1个vip。取值范围：1到手机规格开数。
 
@@ -311,7 +311,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def phone_data_volume(self):
-        """Gets the phone_data_volume of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the phone_data_volume of this ChangeCloudPhoneServerRequestBody.
 
         :return: The phone_data_volume of this ChangeCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPhoneDataVolume`
@@ -320,7 +320,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @phone_data_volume.setter
     def phone_data_volume(self, phone_data_volume):
-        """Sets the phone_data_volume of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the phone_data_volume of this ChangeCloudPhoneServerRequestBody.
 
         :param phone_data_volume: The phone_data_volume of this ChangeCloudPhoneServerRequestBody.
         :type phone_data_volume: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyPhoneDataVolume`
@@ -329,7 +329,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def server_share_data_volume(self):
-        """Gets the server_share_data_volume of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the server_share_data_volume of this ChangeCloudPhoneServerRequestBody.
 
         :return: The server_share_data_volume of this ChangeCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyServerShareDataVolume`
@@ -338,7 +338,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @server_share_data_volume.setter
     def server_share_data_volume(self, server_share_data_volume):
-        """Sets the server_share_data_volume of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the server_share_data_volume of this ChangeCloudPhoneServerRequestBody.
 
         :param server_share_data_volume: The server_share_data_volume of this ChangeCloudPhoneServerRequestBody.
         :type server_share_data_volume: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyServerShareDataVolume`
@@ -347,7 +347,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def band_width(self):
-        """Gets the band_width of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the band_width of this ChangeCloudPhoneServerRequestBody.
 
         :return: The band_width of this ChangeCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyBandWidth`
@@ -356,7 +356,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the band_width of this ChangeCloudPhoneServerRequestBody.
 
         :param band_width: The band_width of this ChangeCloudPhoneServerRequestBody.
         :type band_width: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerRequestBodyBandWidth`
@@ -365,7 +365,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @property
     def _property(self):
-        """Gets the _property of this ChangeCloudPhoneServerRequestBody.
+        r"""Gets the _property of this ChangeCloudPhoneServerRequestBody.
 
         云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
 
@@ -376,7 +376,7 @@ class ChangeCloudPhoneServerRequestBody:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ChangeCloudPhoneServerRequestBody.
+        r"""Sets the _property of this ChangeCloudPhoneServerRequestBody.
 
         云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
 

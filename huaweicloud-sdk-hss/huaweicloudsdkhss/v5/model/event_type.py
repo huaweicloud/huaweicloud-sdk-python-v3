@@ -23,7 +23,7 @@ class EventType:
     }
 
     def __init__(self):
-        """EventType
+        r"""EventType
 
         The model defined in huaweicloud sdk
 

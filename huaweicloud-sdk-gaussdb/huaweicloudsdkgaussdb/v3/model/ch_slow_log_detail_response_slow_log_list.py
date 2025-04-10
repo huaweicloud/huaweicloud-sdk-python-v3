@@ -49,7 +49,7 @@ class ChSlowLogDetailResponseSlowLogList:
     }
 
     def __init__(self, node_id=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, client_ip=None, start_time=None, line_num=None, count=None):
-        """ChSlowLogDetailResponseSlowLogList
+        r"""ChSlowLogDetailResponseSlowLogList
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the node_id of this ChSlowLogDetailResponseSlowLogList.
 
         ClickHouse实例节点ID。
 
@@ -125,7 +125,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the node_id of this ChSlowLogDetailResponseSlowLogList.
 
         ClickHouse实例节点ID。
 
@@ -136,7 +136,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def time(self):
-        """Gets the time of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the time of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句执行时间。
 
@@ -147,7 +147,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the time of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句执行时间。
 
@@ -158,7 +158,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the lock_time of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句等待锁时间。
 
@@ -169,7 +169,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the lock_time of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句等待锁时间。
 
@@ -180,7 +180,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the rows_sent of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句执行结果行数。
 
@@ -191,7 +191,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the rows_sent of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句执行结果行数。
 
@@ -202,7 +202,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the rows_examined of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句扫描行数。
 
@@ -213,7 +213,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the rows_examined of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句扫描行数。
 
@@ -224,7 +224,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def database(self):
-        """Gets the database of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the database of this ChSlowLogDetailResponseSlowLogList.
 
         所属数据库名。
 
@@ -235,7 +235,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the database of this ChSlowLogDetailResponseSlowLogList.
 
         所属数据库名。
 
@@ -246,7 +246,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def users(self):
-        """Gets the users of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the users of this ChSlowLogDetailResponseSlowLogList.
 
         执行语句账号。
 
@@ -257,7 +257,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the users of this ChSlowLogDetailResponseSlowLogList.
 
         执行语句账号。
 
@@ -268,7 +268,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the query_sample of this ChSlowLogDetailResponseSlowLogList.
 
         数据库执行语句。
 
@@ -279,7 +279,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the query_sample of this ChSlowLogDetailResponseSlowLogList.
 
         数据库执行语句。
 
@@ -290,7 +290,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def type(self):
-        """Gets the type of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the type of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句类型。
 
@@ -301,7 +301,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the type of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句类型。
 
@@ -312,7 +312,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the client_ip of this ChSlowLogDetailResponseSlowLogList.
 
         IP地址。
 
@@ -323,7 +323,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the client_ip of this ChSlowLogDetailResponseSlowLogList.
 
         IP地址。
 
@@ -334,7 +334,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the start_time of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句发生时间。
 
@@ -345,7 +345,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the start_time of this ChSlowLogDetailResponseSlowLogList.
 
         数据库语句发生时间。
 
@@ -356,7 +356,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the line_num of this ChSlowLogDetailResponseSlowLogList.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。
 
@@ -367,7 +367,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the line_num of this ChSlowLogDetailResponseSlowLogList.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。
 
@@ -378,7 +378,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @property
     def count(self):
-        """Gets the count of this ChSlowLogDetailResponseSlowLogList.
+        r"""Gets the count of this ChSlowLogDetailResponseSlowLogList.
 
         慢日志数量。
 
@@ -389,7 +389,7 @@ class ChSlowLogDetailResponseSlowLogList:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ChSlowLogDetailResponseSlowLogList.
+        r"""Sets the count of this ChSlowLogDetailResponseSlowLogList.
 
         慢日志数量。
 

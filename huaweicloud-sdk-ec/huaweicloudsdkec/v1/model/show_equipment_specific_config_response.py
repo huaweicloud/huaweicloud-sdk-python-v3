@@ -32,7 +32,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
     }
 
     def __init__(self, type=None, wan_interfaces=None, lte_interfaces=None, lan_interfaces=None):
-        """ShowEquipmentSpecificConfigResponse
+        r"""ShowEquipmentSpecificConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowEquipmentSpecificConfigResponse.
+        r"""Gets the type of this ShowEquipmentSpecificConfigResponse.
 
         设备类型
 
@@ -76,7 +76,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowEquipmentSpecificConfigResponse.
+        r"""Sets the type of this ShowEquipmentSpecificConfigResponse.
 
         设备类型
 
@@ -87,7 +87,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @property
     def wan_interfaces(self):
-        """Gets the wan_interfaces of this ShowEquipmentSpecificConfigResponse.
+        r"""Gets the wan_interfaces of this ShowEquipmentSpecificConfigResponse.
 
         WAN口列表
 
@@ -98,7 +98,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @wan_interfaces.setter
     def wan_interfaces(self, wan_interfaces):
-        """Sets the wan_interfaces of this ShowEquipmentSpecificConfigResponse.
+        r"""Sets the wan_interfaces of this ShowEquipmentSpecificConfigResponse.
 
         WAN口列表
 
@@ -109,7 +109,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @property
     def lte_interfaces(self):
-        """Gets the lte_interfaces of this ShowEquipmentSpecificConfigResponse.
+        r"""Gets the lte_interfaces of this ShowEquipmentSpecificConfigResponse.
 
         LTE口列表
 
@@ -120,7 +120,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @lte_interfaces.setter
     def lte_interfaces(self, lte_interfaces):
-        """Sets the lte_interfaces of this ShowEquipmentSpecificConfigResponse.
+        r"""Sets the lte_interfaces of this ShowEquipmentSpecificConfigResponse.
 
         LTE口列表
 
@@ -131,7 +131,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @property
     def lan_interfaces(self):
-        """Gets the lan_interfaces of this ShowEquipmentSpecificConfigResponse.
+        r"""Gets the lan_interfaces of this ShowEquipmentSpecificConfigResponse.
 
         LAN口列表
 
@@ -142,7 +142,7 @@ class ShowEquipmentSpecificConfigResponse(SdkResponse):
 
     @lan_interfaces.setter
     def lan_interfaces(self, lan_interfaces):
-        """Sets the lan_interfaces of this ShowEquipmentSpecificConfigResponse.
+        r"""Sets the lan_interfaces of this ShowEquipmentSpecificConfigResponse.
 
         LAN口列表
 

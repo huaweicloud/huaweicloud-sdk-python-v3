@@ -27,7 +27,7 @@ class MatchOption:
     }
 
     def __init__(self, key=None, value=None):
-        """MatchOption
+        r"""MatchOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MatchOption:
 
     @property
     def key(self):
-        """Gets the key of this MatchOption.
+        r"""Gets the key of this MatchOption.
 
         取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
 
@@ -59,7 +59,7 @@ class MatchOption:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MatchOption.
+        r"""Sets the key of this MatchOption.
 
         取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
 
@@ -70,7 +70,7 @@ class MatchOption:
 
     @property
     def value(self):
-        """Gets the value of this MatchOption.
+        r"""Gets the value of this MatchOption.
 
         待匹配的实例名称或实例ID。
 
@@ -81,7 +81,7 @@ class MatchOption:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MatchOption.
+        r"""Sets the value of this MatchOption.
 
         待匹配的实例名称或实例ID。
 

@@ -27,7 +27,7 @@ class KeystoneUpdateGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """KeystoneUpdateGroupRequest
+        r"""KeystoneUpdateGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneUpdateGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneUpdateGroupRequest.
+        r"""Gets the group_id of this KeystoneUpdateGroupRequest.
 
         待更新的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class KeystoneUpdateGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneUpdateGroupRequest.
+        r"""Sets the group_id of this KeystoneUpdateGroupRequest.
 
         待更新的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class KeystoneUpdateGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateGroupRequest.
+        r"""Gets the body of this KeystoneUpdateGroupRequest.
 
         :return: The body of this KeystoneUpdateGroupRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequestBody`
@@ -80,7 +80,7 @@ class KeystoneUpdateGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateGroupRequest.
+        r"""Sets the body of this KeystoneUpdateGroupRequest.
 
         :param body: The body of this KeystoneUpdateGroupRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequestBody`

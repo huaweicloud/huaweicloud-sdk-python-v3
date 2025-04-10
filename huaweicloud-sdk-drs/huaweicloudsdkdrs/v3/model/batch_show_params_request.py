@@ -27,7 +27,7 @@ class BatchShowParamsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchShowParamsRequest
+        r"""BatchShowParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchShowParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchShowParamsRequest.
+        r"""Gets the x_language of this BatchShowParamsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchShowParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchShowParamsRequest.
+        r"""Sets the x_language of this BatchShowParamsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchShowParamsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchShowParamsRequest.
+        r"""Gets the body of this BatchShowParamsRequest.
 
         :return: The body of this BatchShowParamsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryParamReq`
@@ -81,7 +81,7 @@ class BatchShowParamsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowParamsRequest.
+        r"""Sets the body of this BatchShowParamsRequest.
 
         :param body: The body of this BatchShowParamsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryParamReq`

@@ -27,7 +27,7 @@ class CreateTagsOption:
     }
 
     def __init__(self, tags=None, action=None):
-        """CreateTagsOption
+        r"""CreateTagsOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateTagsOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTagsOption.
+        r"""Gets the tags of this CreateTagsOption.
 
         标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
 
@@ -59,7 +59,7 @@ class CreateTagsOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTagsOption.
+        r"""Sets the tags of this CreateTagsOption.
 
         标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
 
@@ -70,7 +70,7 @@ class CreateTagsOption:
 
     @property
     def action(self):
-        """Gets the action of this CreateTagsOption.
+        r"""Gets the action of this CreateTagsOption.
 
         操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
 
@@ -81,7 +81,7 @@ class CreateTagsOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateTagsOption.
+        r"""Sets the action of this CreateTagsOption.
 
         操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
 

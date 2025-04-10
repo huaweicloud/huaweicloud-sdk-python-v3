@@ -24,7 +24,7 @@ class CreateImageSyncRepoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateImageSyncRepoResponse
+        r"""CreateImageSyncRepoResponse
 
         The model defined in huaweicloud sdk
 

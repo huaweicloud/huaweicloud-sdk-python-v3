@@ -31,7 +31,7 @@ class ThresholdData:
     }
 
     def __init__(self, receiving=None, receiving_default=None, sending=None, sending_default=None):
-        """ThresholdData
+        r"""ThresholdData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ThresholdData:
 
     @property
     def receiving(self):
-        """Gets the receiving of this ThresholdData.
+        r"""Gets the receiving of this ThresholdData.
 
         自定义接收方向阈值，单位为毫秒(ms)
 
@@ -75,7 +75,7 @@ class ThresholdData:
 
     @receiving.setter
     def receiving(self, receiving):
-        """Sets the receiving of this ThresholdData.
+        r"""Sets the receiving of this ThresholdData.
 
         自定义接收方向阈值，单位为毫秒(ms)
 
@@ -86,7 +86,7 @@ class ThresholdData:
 
     @property
     def receiving_default(self):
-        """Gets the receiving_default of this ThresholdData.
+        r"""Gets the receiving_default of this ThresholdData.
 
         默认接收方向阈值，单位为毫秒(ms)
 
@@ -97,7 +97,7 @@ class ThresholdData:
 
     @receiving_default.setter
     def receiving_default(self, receiving_default):
-        """Sets the receiving_default of this ThresholdData.
+        r"""Sets the receiving_default of this ThresholdData.
 
         默认接收方向阈值，单位为毫秒(ms)
 
@@ -108,7 +108,7 @@ class ThresholdData:
 
     @property
     def sending(self):
-        """Gets the sending of this ThresholdData.
+        r"""Gets the sending of this ThresholdData.
 
         自定义发送方向阈值，单位为毫秒(ms)
 
@@ -119,7 +119,7 @@ class ThresholdData:
 
     @sending.setter
     def sending(self, sending):
-        """Sets the sending of this ThresholdData.
+        r"""Sets the sending of this ThresholdData.
 
         自定义发送方向阈值，单位为毫秒(ms)
 
@@ -130,7 +130,7 @@ class ThresholdData:
 
     @property
     def sending_default(self):
-        """Gets the sending_default of this ThresholdData.
+        r"""Gets the sending_default of this ThresholdData.
 
         默认发送方向阈值，单位为毫秒(ms)
 
@@ -141,7 +141,7 @@ class ThresholdData:
 
     @sending_default.setter
     def sending_default(self, sending_default):
-        """Sets the sending_default of this ThresholdData.
+        r"""Sets the sending_default of this ThresholdData.
 
         默认发送方向阈值，单位为毫秒(ms)
 

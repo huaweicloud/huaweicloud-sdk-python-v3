@@ -27,7 +27,7 @@ class CaseInfo:
     }
 
     def __init__(self, case_id=None, script_url=None):
-        """CaseInfo
+        r"""CaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaseInfo:
 
     @property
     def case_id(self):
-        """Gets the case_id of this CaseInfo.
+        r"""Gets the case_id of this CaseInfo.
 
         用例id
 
@@ -61,7 +61,7 @@ class CaseInfo:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this CaseInfo.
+        r"""Sets the case_id of this CaseInfo.
 
         用例id
 
@@ -72,7 +72,7 @@ class CaseInfo:
 
     @property
     def script_url(self):
-        """Gets the script_url of this CaseInfo.
+        r"""Gets the script_url of this CaseInfo.
 
         脚本路径
 
@@ -83,7 +83,7 @@ class CaseInfo:
 
     @script_url.setter
     def script_url(self, script_url):
-        """Sets the script_url of this CaseInfo.
+        r"""Sets the script_url of this CaseInfo.
 
         脚本路径
 

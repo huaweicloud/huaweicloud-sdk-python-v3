@@ -34,7 +34,7 @@ class ListObsObjectResponse(SdkResponse):
     }
 
     def __init__(self, object_names=None, location=None, prefix=None, bucket_name=None, next_marker=None):
-        """ListObsObjectResponse
+        r"""ListObsObjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @property
     def object_names(self):
-        """Gets the object_names of this ListObsObjectResponse.
+        r"""Gets the object_names of this ListObsObjectResponse.
 
         object名称列表
 
@@ -83,7 +83,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @object_names.setter
     def object_names(self, object_names):
-        """Sets the object_names of this ListObsObjectResponse.
+        r"""Sets the object_names of this ListObsObjectResponse.
 
         object名称列表
 
@@ -94,7 +94,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ListObsObjectResponse.
+        r"""Gets the location of this ListObsObjectResponse.
 
         region编码
 
@@ -105,7 +105,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ListObsObjectResponse.
+        r"""Sets the location of this ListObsObjectResponse.
 
         region编码
 
@@ -116,7 +116,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListObsObjectResponse.
+        r"""Gets the prefix of this ListObsObjectResponse.
 
         搜索前缀
 
@@ -127,7 +127,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListObsObjectResponse.
+        r"""Sets the prefix of this ListObsObjectResponse.
 
         搜索前缀
 
@@ -138,7 +138,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ListObsObjectResponse.
+        r"""Gets the bucket_name of this ListObsObjectResponse.
 
         obs桶名
 
@@ -149,7 +149,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ListObsObjectResponse.
+        r"""Sets the bucket_name of this ListObsObjectResponse.
 
         obs桶名
 
@@ -160,7 +160,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListObsObjectResponse.
+        r"""Gets the next_marker of this ListObsObjectResponse.
 
         下一个object起始位置
 
@@ -171,7 +171,7 @@ class ListObsObjectResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListObsObjectResponse.
+        r"""Sets the next_marker of this ListObsObjectResponse.
 
         下一个object起始位置
 

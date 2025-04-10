@@ -25,7 +25,7 @@ class BatchUpdateConsumerGroupReq:
     }
 
     def __init__(self, groups=None):
-        """BatchUpdateConsumerGroupReq
+        r"""BatchUpdateConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateConsumerGroupReq:
 
     @property
     def groups(self):
-        """Gets the groups of this BatchUpdateConsumerGroupReq.
+        r"""Gets the groups of this BatchUpdateConsumerGroupReq.
 
         消费组列表。
 
@@ -54,7 +54,7 @@ class BatchUpdateConsumerGroupReq:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this BatchUpdateConsumerGroupReq.
+        r"""Sets the groups of this BatchUpdateConsumerGroupReq.
 
         消费组列表。
 

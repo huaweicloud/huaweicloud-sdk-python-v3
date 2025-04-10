@@ -29,7 +29,7 @@ class TestPlanDetailCreator:
     }
 
     def __init__(self, id=None, nick_name=None, user_name=None):
-        """TestPlanDetailCreator
+        r"""TestPlanDetailCreator
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TestPlanDetailCreator:
 
     @property
     def id(self):
-        """Gets the id of this TestPlanDetailCreator.
+        r"""Gets the id of this TestPlanDetailCreator.
 
         测试计划创建者id
 
@@ -68,7 +68,7 @@ class TestPlanDetailCreator:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TestPlanDetailCreator.
+        r"""Sets the id of this TestPlanDetailCreator.
 
         测试计划创建者id
 
@@ -79,7 +79,7 @@ class TestPlanDetailCreator:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this TestPlanDetailCreator.
+        r"""Gets the nick_name of this TestPlanDetailCreator.
 
         测试计划创建者的昵称，当用户未设置昵称时不返回该字段
 
@@ -90,7 +90,7 @@ class TestPlanDetailCreator:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this TestPlanDetailCreator.
+        r"""Sets the nick_name of this TestPlanDetailCreator.
 
         测试计划创建者的昵称，当用户未设置昵称时不返回该字段
 
@@ -101,7 +101,7 @@ class TestPlanDetailCreator:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TestPlanDetailCreator.
+        r"""Gets the user_name of this TestPlanDetailCreator.
 
         测试计划创建者的用户名称
 
@@ -112,7 +112,7 @@ class TestPlanDetailCreator:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TestPlanDetailCreator.
+        r"""Sets the user_name of this TestPlanDetailCreator.
 
         测试计划创建者的用户名称
 

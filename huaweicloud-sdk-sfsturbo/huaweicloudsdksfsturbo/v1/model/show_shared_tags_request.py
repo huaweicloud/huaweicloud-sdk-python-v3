@@ -25,7 +25,7 @@ class ShowSharedTagsRequest:
     }
 
     def __init__(self, share_id=None):
-        """ShowSharedTagsRequest
+        r"""ShowSharedTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSharedTagsRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowSharedTagsRequest.
+        r"""Gets the share_id of this ShowSharedTagsRequest.
 
         共享ID
 
@@ -53,7 +53,7 @@ class ShowSharedTagsRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowSharedTagsRequest.
+        r"""Sets the share_id of this ShowSharedTagsRequest.
 
         共享ID
 

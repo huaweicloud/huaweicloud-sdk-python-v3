@@ -27,7 +27,7 @@ class StartSystemEventRequest:
     }
 
     def __init__(self, ief_instance_id=None, event_id=None):
-        """StartSystemEventRequest
+        r"""StartSystemEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartSystemEventRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this StartSystemEventRequest.
+        r"""Gets the ief_instance_id of this StartSystemEventRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class StartSystemEventRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this StartSystemEventRequest.
+        r"""Sets the ief_instance_id of this StartSystemEventRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class StartSystemEventRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this StartSystemEventRequest.
+        r"""Gets the event_id of this StartSystemEventRequest.
 
         系统订阅ID
 
@@ -82,7 +82,7 @@ class StartSystemEventRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this StartSystemEventRequest.
+        r"""Sets the event_id of this StartSystemEventRequest.
 
         系统订阅ID
 

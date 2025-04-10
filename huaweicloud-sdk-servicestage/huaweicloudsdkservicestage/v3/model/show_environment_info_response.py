@@ -48,7 +48,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, resources=None, labels=None):
-        """ShowEnvironmentInfoResponse
+        r"""ShowEnvironmentInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEnvironmentInfoResponse.
+        r"""Gets the id of this ShowEnvironmentInfoResponse.
 
         环境id
 
@@ -132,7 +132,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEnvironmentInfoResponse.
+        r"""Sets the id of this ShowEnvironmentInfoResponse.
 
         环境id
 
@@ -143,7 +143,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowEnvironmentInfoResponse.
+        r"""Gets the project_id of this ShowEnvironmentInfoResponse.
 
         :return: The project_id of this ShowEnvironmentInfoResponse.
         :rtype: str
@@ -152,7 +152,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowEnvironmentInfoResponse.
+        r"""Sets the project_id of this ShowEnvironmentInfoResponse.
 
         :param project_id: The project_id of this ShowEnvironmentInfoResponse.
         :type project_id: str
@@ -161,7 +161,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEnvironmentInfoResponse.
+        r"""Gets the name of this ShowEnvironmentInfoResponse.
 
         环境名称
 
@@ -172,7 +172,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEnvironmentInfoResponse.
+        r"""Sets the name of this ShowEnvironmentInfoResponse.
 
         环境名称
 
@@ -183,7 +183,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEnvironmentInfoResponse.
+        r"""Gets the description of this ShowEnvironmentInfoResponse.
 
         环境描述
 
@@ -194,7 +194,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEnvironmentInfoResponse.
+        r"""Sets the description of this ShowEnvironmentInfoResponse.
 
         环境描述
 
@@ -205,7 +205,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowEnvironmentInfoResponse.
+        r"""Gets the enterprise_project_id of this ShowEnvironmentInfoResponse.
 
         企业项目id
 
@@ -216,7 +216,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowEnvironmentInfoResponse.
+        r"""Sets the enterprise_project_id of this ShowEnvironmentInfoResponse.
 
         企业项目id
 
@@ -227,7 +227,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowEnvironmentInfoResponse.
+        r"""Gets the vpc_id of this ShowEnvironmentInfoResponse.
 
         虚拟私有云id
 
@@ -238,7 +238,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowEnvironmentInfoResponse.
+        r"""Sets the vpc_id of this ShowEnvironmentInfoResponse.
 
         虚拟私有云id
 
@@ -249,7 +249,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowEnvironmentInfoResponse.
+        r"""Gets the creator of this ShowEnvironmentInfoResponse.
 
         创建者
 
@@ -260,7 +260,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowEnvironmentInfoResponse.
+        r"""Sets the creator of this ShowEnvironmentInfoResponse.
 
         创建者
 
@@ -271,7 +271,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowEnvironmentInfoResponse.
+        r"""Gets the create_time of this ShowEnvironmentInfoResponse.
 
         创建时间。
 
@@ -282,7 +282,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowEnvironmentInfoResponse.
+        r"""Sets the create_time of this ShowEnvironmentInfoResponse.
 
         创建时间。
 
@@ -293,7 +293,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowEnvironmentInfoResponse.
+        r"""Gets the update_time of this ShowEnvironmentInfoResponse.
 
         更新时间。
 
@@ -304,7 +304,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowEnvironmentInfoResponse.
+        r"""Sets the update_time of this ShowEnvironmentInfoResponse.
 
         更新时间。
 
@@ -315,7 +315,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this ShowEnvironmentInfoResponse.
+        r"""Gets the deploy_mode of this ShowEnvironmentInfoResponse.
 
         环境类型
 
@@ -326,7 +326,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this ShowEnvironmentInfoResponse.
+        r"""Sets the deploy_mode of this ShowEnvironmentInfoResponse.
 
         环境类型
 
@@ -337,7 +337,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowEnvironmentInfoResponse.
+        r"""Gets the resources of this ShowEnvironmentInfoResponse.
 
         :return: The resources of this ShowEnvironmentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
@@ -346,7 +346,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowEnvironmentInfoResponse.
+        r"""Sets the resources of this ShowEnvironmentInfoResponse.
 
         :param resources: The resources of this ShowEnvironmentInfoResponse.
         :type resources: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
@@ -355,7 +355,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowEnvironmentInfoResponse.
+        r"""Gets the labels of this ShowEnvironmentInfoResponse.
 
         :return: The labels of this ShowEnvironmentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
@@ -364,7 +364,7 @@ class ShowEnvironmentInfoResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowEnvironmentInfoResponse.
+        r"""Sets the labels of this ShowEnvironmentInfoResponse.
 
         :param labels: The labels of this ShowEnvironmentInfoResponse.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]

@@ -31,7 +31,7 @@ class ListLinksRequest:
     }
 
     def __init__(self, x_language=None, job_type=None, offset=None, limit=None):
-        """ListLinksRequest
+        r"""ListLinksRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListLinksRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListLinksRequest.
+        r"""Gets the x_language of this ListLinksRequest.
 
         请求语言类型。
 
@@ -74,7 +74,7 @@ class ListLinksRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListLinksRequest.
+        r"""Sets the x_language of this ListLinksRequest.
 
         请求语言类型。
 
@@ -85,7 +85,7 @@ class ListLinksRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListLinksRequest.
+        r"""Gets the job_type of this ListLinksRequest.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -96,7 +96,7 @@ class ListLinksRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListLinksRequest.
+        r"""Sets the job_type of this ListLinksRequest.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -107,7 +107,7 @@ class ListLinksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLinksRequest.
+        r"""Gets the offset of this ListLinksRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -118,7 +118,7 @@ class ListLinksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLinksRequest.
+        r"""Sets the offset of this ListLinksRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -129,7 +129,7 @@ class ListLinksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLinksRequest.
+        r"""Gets the limit of this ListLinksRequest.
 
         查询返回记录的数量限制。
 
@@ -140,7 +140,7 @@ class ListLinksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLinksRequest.
+        r"""Sets the limit of this ListLinksRequest.
 
         查询返回记录的数量限制。
 

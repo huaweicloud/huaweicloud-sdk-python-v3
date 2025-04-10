@@ -31,7 +31,7 @@ class ListStarRocksDbParametersRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, add_task_scenario=None, main_task_name=None):
-        """ListStarRocksDbParametersRequest
+        r"""ListStarRocksDbParametersRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListStarRocksDbParametersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStarRocksDbParametersRequest.
+        r"""Gets the instance_id of this ListStarRocksDbParametersRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -73,7 +73,7 @@ class ListStarRocksDbParametersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStarRocksDbParametersRequest.
+        r"""Sets the instance_id of this ListStarRocksDbParametersRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -84,7 +84,7 @@ class ListStarRocksDbParametersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStarRocksDbParametersRequest.
+        r"""Gets the x_language of this ListStarRocksDbParametersRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -95,7 +95,7 @@ class ListStarRocksDbParametersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStarRocksDbParametersRequest.
+        r"""Sets the x_language of this ListStarRocksDbParametersRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -106,7 +106,7 @@ class ListStarRocksDbParametersRequest:
 
     @property
     def add_task_scenario(self):
-        """Gets the add_task_scenario of this ListStarRocksDbParametersRequest.
+        r"""Gets the add_task_scenario of this ListStarRocksDbParametersRequest.
 
         **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
 
@@ -117,7 +117,7 @@ class ListStarRocksDbParametersRequest:
 
     @add_task_scenario.setter
     def add_task_scenario(self, add_task_scenario):
-        """Sets the add_task_scenario of this ListStarRocksDbParametersRequest.
+        r"""Sets the add_task_scenario of this ListStarRocksDbParametersRequest.
 
         **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
 
@@ -128,7 +128,7 @@ class ListStarRocksDbParametersRequest:
 
     @property
     def main_task_name(self):
-        """Gets the main_task_name of this ListStarRocksDbParametersRequest.
+        r"""Gets the main_task_name of this ListStarRocksDbParametersRequest.
 
         **参数解释**：  新增子任务相应的主任务名。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
 
@@ -139,7 +139,7 @@ class ListStarRocksDbParametersRequest:
 
     @main_task_name.setter
     def main_task_name(self, main_task_name):
-        """Sets the main_task_name of this ListStarRocksDbParametersRequest.
+        r"""Sets the main_task_name of this ListStarRocksDbParametersRequest.
 
         **参数解释**：  新增子任务相应的主任务名。  **约束限制**：  非必填。  **取值范围**：  不涉及。  **默认值**：  不涉及。
 

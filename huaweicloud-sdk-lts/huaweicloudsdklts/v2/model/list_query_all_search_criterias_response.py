@@ -26,7 +26,7 @@ class ListQueryAllSearchCriteriasResponse(SdkResponse):
     }
 
     def __init__(self, search_criterias=None):
-        """ListQueryAllSearchCriteriasResponse
+        r"""ListQueryAllSearchCriteriasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListQueryAllSearchCriteriasResponse(SdkResponse):
 
     @property
     def search_criterias(self):
-        """Gets the search_criterias of this ListQueryAllSearchCriteriasResponse.
+        r"""Gets the search_criterias of this ListQueryAllSearchCriteriasResponse.
 
         快速查询
 
@@ -55,7 +55,7 @@ class ListQueryAllSearchCriteriasResponse(SdkResponse):
 
     @search_criterias.setter
     def search_criterias(self, search_criterias):
-        """Sets the search_criterias of this ListQueryAllSearchCriteriasResponse.
+        r"""Sets the search_criterias of this ListQueryAllSearchCriteriasResponse.
 
         快速查询
 

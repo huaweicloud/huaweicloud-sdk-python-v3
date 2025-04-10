@@ -27,7 +27,7 @@ class UpdateEndpointRequest:
     }
 
     def __init__(self, endpoint_id=None, body=None):
-        """UpdateEndpointRequest
+        r"""UpdateEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEndpointRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this UpdateEndpointRequest.
+        r"""Gets the endpoint_id of this UpdateEndpointRequest.
 
         指定查询访问端点的id
 
@@ -60,7 +60,7 @@ class UpdateEndpointRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this UpdateEndpointRequest.
+        r"""Sets the endpoint_id of this UpdateEndpointRequest.
 
         指定查询访问端点的id
 
@@ -71,7 +71,7 @@ class UpdateEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointRequest.
+        r"""Gets the body of this UpdateEndpointRequest.
 
         :return: The body of this UpdateEndpointRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.EndpointUpdateReq`
@@ -80,7 +80,7 @@ class UpdateEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointRequest.
+        r"""Sets the body of this UpdateEndpointRequest.
 
         :param body: The body of this UpdateEndpointRequest.
         :type body: :class:`huaweicloudsdkeg.v1.EndpointUpdateReq`

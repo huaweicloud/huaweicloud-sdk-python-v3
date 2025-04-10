@@ -37,7 +37,7 @@ class ListMessageRequest:
     }
 
     def __init__(self, eihealth_project_name=None, limit=None, message_type=None, offset=None, operator=None, resource_type=None, status=None):
-        """ListMessageRequest
+        r"""ListMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListMessageRequest:
 
     @property
     def eihealth_project_name(self):
-        """Gets the eihealth_project_name of this ListMessageRequest.
+        r"""Gets the eihealth_project_name of this ListMessageRequest.
 
         医疗智能体项目名
 
@@ -96,7 +96,7 @@ class ListMessageRequest:
 
     @eihealth_project_name.setter
     def eihealth_project_name(self, eihealth_project_name):
-        """Sets the eihealth_project_name of this ListMessageRequest.
+        r"""Sets the eihealth_project_name of this ListMessageRequest.
 
         医疗智能体项目名
 
@@ -107,7 +107,7 @@ class ListMessageRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMessageRequest.
+        r"""Gets the limit of this ListMessageRequest.
 
         查询条数
 
@@ -118,7 +118,7 @@ class ListMessageRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMessageRequest.
+        r"""Sets the limit of this ListMessageRequest.
 
         查询条数
 
@@ -129,7 +129,7 @@ class ListMessageRequest:
 
     @property
     def message_type(self):
-        """Gets the message_type of this ListMessageRequest.
+        r"""Gets the message_type of this ListMessageRequest.
 
         消息类型
 
@@ -140,7 +140,7 @@ class ListMessageRequest:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this ListMessageRequest.
+        r"""Sets the message_type of this ListMessageRequest.
 
         消息类型
 
@@ -151,7 +151,7 @@ class ListMessageRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMessageRequest.
+        r"""Gets the offset of this ListMessageRequest.
 
         查询偏移量
 
@@ -162,7 +162,7 @@ class ListMessageRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMessageRequest.
+        r"""Sets the offset of this ListMessageRequest.
 
         查询偏移量
 
@@ -173,7 +173,7 @@ class ListMessageRequest:
 
     @property
     def operator(self):
-        """Gets the operator of this ListMessageRequest.
+        r"""Gets the operator of this ListMessageRequest.
 
         操作者名称
 
@@ -184,7 +184,7 @@ class ListMessageRequest:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ListMessageRequest.
+        r"""Sets the operator of this ListMessageRequest.
 
         操作者名称
 
@@ -195,7 +195,7 @@ class ListMessageRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListMessageRequest.
+        r"""Gets the resource_type of this ListMessageRequest.
 
         资源类型
 
@@ -206,7 +206,7 @@ class ListMessageRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListMessageRequest.
+        r"""Sets the resource_type of this ListMessageRequest.
 
         资源类型
 
@@ -217,7 +217,7 @@ class ListMessageRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListMessageRequest.
+        r"""Gets the status of this ListMessageRequest.
 
         操作状态
 
@@ -228,7 +228,7 @@ class ListMessageRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMessageRequest.
+        r"""Sets the status of this ListMessageRequest.
 
         操作状态
 

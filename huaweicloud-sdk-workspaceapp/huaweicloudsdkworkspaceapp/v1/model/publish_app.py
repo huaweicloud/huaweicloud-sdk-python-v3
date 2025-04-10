@@ -49,7 +49,7 @@ class PublishApp:
     }
 
     def __init__(self, name=None, version=None, command_param=None, icon_uri=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, source_type=None, publisher=None, source_image_ids=None, sandbox_enable=None):
-        """PublishApp
+        r"""PublishApp
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class PublishApp:
 
     @property
     def name(self):
-        """Gets the name of this PublishApp.
+        r"""Gets the name of this PublishApp.
 
         应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 不允许包含如下字符:^;|~`{}[]<>。 3. 长度1~64个字符。
 
@@ -135,7 +135,7 @@ class PublishApp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublishApp.
+        r"""Sets the name of this PublishApp.
 
         应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 不允许包含如下字符:^;|~`{}[]<>。 3. 长度1~64个字符。
 
@@ -146,7 +146,7 @@ class PublishApp:
 
     @property
     def version(self):
-        """Gets the version of this PublishApp.
+        r"""Gets the version of this PublishApp.
 
         应用版本号。
 
@@ -157,7 +157,7 @@ class PublishApp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishApp.
+        r"""Sets the version of this PublishApp.
 
         应用版本号。
 
@@ -168,7 +168,7 @@ class PublishApp:
 
     @property
     def command_param(self):
-        """Gets the command_param of this PublishApp.
+        r"""Gets the command_param of this PublishApp.
 
         启动命令行参数。
 
@@ -179,7 +179,7 @@ class PublishApp:
 
     @command_param.setter
     def command_param(self, command_param):
-        """Sets the command_param of this PublishApp.
+        r"""Sets the command_param of this PublishApp.
 
         启动命令行参数。
 
@@ -190,7 +190,7 @@ class PublishApp:
 
     @property
     def icon_uri(self):
-        """Gets the icon_uri of this PublishApp.
+        r"""Gets the icon_uri of this PublishApp.
 
         图标地址，该字段当前未使用。 > - 图片的默认大小当前限制为8KB，即1024 * 8字节。 > - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
 
@@ -201,7 +201,7 @@ class PublishApp:
 
     @icon_uri.setter
     def icon_uri(self, icon_uri):
-        """Sets the icon_uri of this PublishApp.
+        r"""Sets the icon_uri of this PublishApp.
 
         图标地址，该字段当前未使用。 > - 图片的默认大小当前限制为8KB，即1024 * 8字节。 > - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
 
@@ -212,7 +212,7 @@ class PublishApp:
 
     @property
     def execute_path(self):
-        """Gets the execute_path of this PublishApp.
+        r"""Gets the execute_path of this PublishApp.
 
         执行路径。
 
@@ -223,7 +223,7 @@ class PublishApp:
 
     @execute_path.setter
     def execute_path(self, execute_path):
-        """Sets the execute_path of this PublishApp.
+        r"""Sets the execute_path of this PublishApp.
 
         执行路径。
 
@@ -234,7 +234,7 @@ class PublishApp:
 
     @property
     def work_path(self):
-        """Gets the work_path of this PublishApp.
+        r"""Gets the work_path of this PublishApp.
 
         应用工作目录。
 
@@ -245,7 +245,7 @@ class PublishApp:
 
     @work_path.setter
     def work_path(self, work_path):
-        """Sets the work_path of this PublishApp.
+        r"""Sets the work_path of this PublishApp.
 
         应用工作目录。
 
@@ -256,7 +256,7 @@ class PublishApp:
 
     @property
     def icon_path(self):
-        """Gets the icon_path of this PublishApp.
+        r"""Gets the icon_path of this PublishApp.
 
         应用图标的路径。
 
@@ -267,7 +267,7 @@ class PublishApp:
 
     @icon_path.setter
     def icon_path(self, icon_path):
-        """Sets the icon_path of this PublishApp.
+        r"""Sets the icon_path of this PublishApp.
 
         应用图标的路径。
 
@@ -278,7 +278,7 @@ class PublishApp:
 
     @property
     def icon_index(self):
-        """Gets the icon_index of this PublishApp.
+        r"""Gets the icon_index of this PublishApp.
 
         应用图标的索引。
 
@@ -289,7 +289,7 @@ class PublishApp:
 
     @icon_index.setter
     def icon_index(self, icon_index):
-        """Sets the icon_index of this PublishApp.
+        r"""Sets the icon_index of this PublishApp.
 
         应用图标的索引。
 
@@ -300,7 +300,7 @@ class PublishApp:
 
     @property
     def description(self):
-        """Gets the description of this PublishApp.
+        r"""Gets the description of this PublishApp.
 
         应用描述。
 
@@ -311,7 +311,7 @@ class PublishApp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishApp.
+        r"""Sets the description of this PublishApp.
 
         应用描述。
 
@@ -322,7 +322,7 @@ class PublishApp:
 
     @property
     def source_type(self):
-        """Gets the source_type of this PublishApp.
+        r"""Gets the source_type of this PublishApp.
 
         应用类型： - '1':系统保留不可用。 - '2':镜像应用。 - '3':自定义应用。
 
@@ -333,7 +333,7 @@ class PublishApp:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this PublishApp.
+        r"""Sets the source_type of this PublishApp.
 
         应用类型： - '1':系统保留不可用。 - '2':镜像应用。 - '3':自定义应用。
 
@@ -344,7 +344,7 @@ class PublishApp:
 
     @property
     def publisher(self):
-        """Gets the publisher of this PublishApp.
+        r"""Gets the publisher of this PublishApp.
 
         应用发布者。
 
@@ -355,7 +355,7 @@ class PublishApp:
 
     @publisher.setter
     def publisher(self, publisher):
-        """Sets the publisher of this PublishApp.
+        r"""Sets the publisher of this PublishApp.
 
         应用发布者。
 
@@ -366,7 +366,7 @@ class PublishApp:
 
     @property
     def source_image_ids(self):
-        """Gets the source_image_ids of this PublishApp.
+        r"""Gets the source_image_ids of this PublishApp.
 
         镜像ids,最多20个。
 
@@ -377,7 +377,7 @@ class PublishApp:
 
     @source_image_ids.setter
     def source_image_ids(self, source_image_ids):
-        """Sets the source_image_ids of this PublishApp.
+        r"""Sets the source_image_ids of this PublishApp.
 
         镜像ids,最多20个。
 
@@ -388,7 +388,7 @@ class PublishApp:
 
     @property
     def sandbox_enable(self):
-        """Gets the sandbox_enable of this PublishApp.
+        r"""Gets the sandbox_enable of this PublishApp.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 
@@ -399,7 +399,7 @@ class PublishApp:
 
     @sandbox_enable.setter
     def sandbox_enable(self, sandbox_enable):
-        """Sets the sandbox_enable of this PublishApp.
+        r"""Sets the sandbox_enable of this PublishApp.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 

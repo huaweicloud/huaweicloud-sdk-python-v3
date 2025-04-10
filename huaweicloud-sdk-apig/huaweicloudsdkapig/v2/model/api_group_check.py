@@ -27,7 +27,7 @@ class ApiGroupCheck:
     }
 
     def __init__(self, group_name=None, roma_app_id=None):
-        """ApiGroupCheck
+        r"""ApiGroupCheck
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApiGroupCheck:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApiGroupCheck.
+        r"""Gets the group_name of this ApiGroupCheck.
 
         待校验的API分组名称
 
@@ -60,7 +60,7 @@ class ApiGroupCheck:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApiGroupCheck.
+        r"""Sets the group_name of this ApiGroupCheck.
 
         待校验的API分组名称
 
@@ -71,7 +71,7 @@ class ApiGroupCheck:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiGroupCheck.
+        r"""Gets the roma_app_id of this ApiGroupCheck.
 
         集成应用ID  暂不支持
 
@@ -82,7 +82,7 @@ class ApiGroupCheck:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiGroupCheck.
+        r"""Sets the roma_app_id of this ApiGroupCheck.
 
         集成应用ID  暂不支持
 

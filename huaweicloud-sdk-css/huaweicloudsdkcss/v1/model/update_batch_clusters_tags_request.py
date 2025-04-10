@@ -29,7 +29,7 @@ class UpdateBatchClustersTagsRequest:
     }
 
     def __init__(self, cluster_id=None, resource_type=None, body=None):
-        """UpdateBatchClustersTagsRequest
+        r"""UpdateBatchClustersTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateBatchClustersTagsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateBatchClustersTagsRequest.
+        r"""Gets the cluster_id of this UpdateBatchClustersTagsRequest.
 
         指定批量添加标签的集群ID。
 
@@ -66,7 +66,7 @@ class UpdateBatchClustersTagsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateBatchClustersTagsRequest.
+        r"""Sets the cluster_id of this UpdateBatchClustersTagsRequest.
 
         指定批量添加标签的集群ID。
 
@@ -77,7 +77,7 @@ class UpdateBatchClustersTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this UpdateBatchClustersTagsRequest.
+        r"""Gets the resource_type of this UpdateBatchClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -88,7 +88,7 @@ class UpdateBatchClustersTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this UpdateBatchClustersTagsRequest.
+        r"""Sets the resource_type of this UpdateBatchClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -99,7 +99,7 @@ class UpdateBatchClustersTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBatchClustersTagsRequest.
+        r"""Gets the body of this UpdateBatchClustersTagsRequest.
 
         :return: The body of this UpdateBatchClustersTagsRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.BatchAddOrDeleteTagOnClusterReq`
@@ -108,7 +108,7 @@ class UpdateBatchClustersTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBatchClustersTagsRequest.
+        r"""Sets the body of this UpdateBatchClustersTagsRequest.
 
         :param body: The body of this UpdateBatchClustersTagsRequest.
         :type body: :class:`huaweicloudsdkcss.v1.BatchAddOrDeleteTagOnClusterReq`

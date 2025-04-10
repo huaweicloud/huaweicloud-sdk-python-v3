@@ -37,7 +37,7 @@ class CreateSqlJobRequestBody:
     }
 
     def __init__(self, sql=None, engine_type=None, current_catalog=None, currentdb=None, queue_name=None, conf=None, tags=None):
-        """CreateSqlJobRequestBody
+        r"""CreateSqlJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def sql(self):
-        """Gets the sql of this CreateSqlJobRequestBody.
+        r"""Gets the sql of this CreateSqlJobRequestBody.
 
         待执行的SQL语句。
 
@@ -95,7 +95,7 @@ class CreateSqlJobRequestBody:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this CreateSqlJobRequestBody.
+        r"""Sets the sql of this CreateSqlJobRequestBody.
 
         待执行的SQL语句。
 
@@ -106,7 +106,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this CreateSqlJobRequestBody.
+        r"""Gets the engine_type of this CreateSqlJobRequestBody.
 
         待提交作业的队列引擎名称，名称只能包含英文字母。
 
@@ -117,7 +117,7 @@ class CreateSqlJobRequestBody:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this CreateSqlJobRequestBody.
+        r"""Sets the engine_type of this CreateSqlJobRequestBody.
 
         待提交作业的队列引擎名称，名称只能包含英文字母。
 
@@ -128,7 +128,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def current_catalog(self):
-        """Gets the current_catalog of this CreateSqlJobRequestBody.
+        r"""Gets the current_catalog of this CreateSqlJobRequestBody.
 
         待提交作业的表默认catalog。
 
@@ -139,7 +139,7 @@ class CreateSqlJobRequestBody:
 
     @current_catalog.setter
     def current_catalog(self, current_catalog):
-        """Sets the current_catalog of this CreateSqlJobRequestBody.
+        r"""Sets the current_catalog of this CreateSqlJobRequestBody.
 
         待提交作业的表默认catalog。
 
@@ -150,7 +150,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def currentdb(self):
-        """Gets the currentdb of this CreateSqlJobRequestBody.
+        r"""Gets the currentdb of this CreateSqlJobRequestBody.
 
         SQL语句执行所在的数据库。当创建新数据库时，不需要提供此参数。
 
@@ -161,7 +161,7 @@ class CreateSqlJobRequestBody:
 
     @currentdb.setter
     def currentdb(self, currentdb):
-        """Sets the currentdb of this CreateSqlJobRequestBody.
+        r"""Sets the currentdb of this CreateSqlJobRequestBody.
 
         SQL语句执行所在的数据库。当创建新数据库时，不需要提供此参数。
 
@@ -172,7 +172,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this CreateSqlJobRequestBody.
+        r"""Gets the queue_name of this CreateSqlJobRequestBody.
 
         待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -183,7 +183,7 @@ class CreateSqlJobRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this CreateSqlJobRequestBody.
+        r"""Sets the queue_name of this CreateSqlJobRequestBody.
 
         待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -194,7 +194,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def conf(self):
-        """Gets the conf of this CreateSqlJobRequestBody.
+        r"""Gets the conf of this CreateSqlJobRequestBody.
 
         用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考表3。
 
@@ -205,7 +205,7 @@ class CreateSqlJobRequestBody:
 
     @conf.setter
     def conf(self, conf):
-        """Sets the conf of this CreateSqlJobRequestBody.
+        r"""Sets the conf of this CreateSqlJobRequestBody.
 
         用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考表3。
 
@@ -216,7 +216,7 @@ class CreateSqlJobRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateSqlJobRequestBody.
+        r"""Gets the tags of this CreateSqlJobRequestBody.
 
         作业标签
 
@@ -227,7 +227,7 @@ class CreateSqlJobRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateSqlJobRequestBody.
+        r"""Sets the tags of this CreateSqlJobRequestBody.
 
         作业标签
 

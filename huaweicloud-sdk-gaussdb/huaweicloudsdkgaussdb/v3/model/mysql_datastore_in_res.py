@@ -29,7 +29,7 @@ class MysqlDatastoreInRes:
     }
 
     def __init__(self, type=None, version=None, kernel_version=None):
-        """MysqlDatastoreInRes
+        r"""MysqlDatastoreInRes
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MysqlDatastoreInRes:
 
     @property
     def type(self):
-        """Gets the type of this MysqlDatastoreInRes.
+        r"""Gets the type of this MysqlDatastoreInRes.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -66,7 +66,7 @@ class MysqlDatastoreInRes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlDatastoreInRes.
+        r"""Sets the type of this MysqlDatastoreInRes.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -77,7 +77,7 @@ class MysqlDatastoreInRes:
 
     @property
     def version(self):
-        """Gets the version of this MysqlDatastoreInRes.
+        r"""Gets the version of this MysqlDatastoreInRes.
 
         兼容的三位开源数据库版本号。  获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的version字段。
 
@@ -88,7 +88,7 @@ class MysqlDatastoreInRes:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MysqlDatastoreInRes.
+        r"""Sets the version of this MysqlDatastoreInRes.
 
         兼容的三位开源数据库版本号。  获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的version字段。
 
@@ -99,7 +99,7 @@ class MysqlDatastoreInRes:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this MysqlDatastoreInRes.
+        r"""Gets the kernel_version of this MysqlDatastoreInRes.
 
         内核数据库版本。  完整的四位内核数据库版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
 
@@ -110,7 +110,7 @@ class MysqlDatastoreInRes:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this MysqlDatastoreInRes.
+        r"""Sets the kernel_version of this MysqlDatastoreInRes.
 
         内核数据库版本。  完整的四位内核数据库版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
 

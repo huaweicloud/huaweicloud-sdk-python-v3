@@ -26,7 +26,7 @@ class DeleteDesignLatestApprovalResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignLatestApprovalResponse
+        r"""DeleteDesignLatestApprovalResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignLatestApprovalResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignLatestApprovalResponse.
+        r"""Gets the data of this DeleteDesignLatestApprovalResponse.
 
         :return: The data of this DeleteDesignLatestApprovalResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignLatestApprovalResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignLatestApprovalResponse.
+        r"""Sets the data of this DeleteDesignLatestApprovalResponse.
 
         :param data: The data of this DeleteDesignLatestApprovalResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

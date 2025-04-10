@@ -25,7 +25,7 @@ class AddResourceTagsRequestBody:
     }
 
     def __init__(self, tag=None):
-        """AddResourceTagsRequestBody
+        r"""AddResourceTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddResourceTagsRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this AddResourceTagsRequestBody.
+        r"""Gets the tag of this AddResourceTagsRequestBody.
 
         :return: The tag of this AddResourceTagsRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.AddResourceTagsRequestBodyTag`
@@ -51,7 +51,7 @@ class AddResourceTagsRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AddResourceTagsRequestBody.
+        r"""Sets the tag of this AddResourceTagsRequestBody.
 
         :param tag: The tag of this AddResourceTagsRequestBody.
         :type tag: :class:`huaweicloudsdkvpc.v3.AddResourceTagsRequestBodyTag`

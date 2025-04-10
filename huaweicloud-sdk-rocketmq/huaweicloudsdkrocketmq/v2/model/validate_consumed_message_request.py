@@ -29,7 +29,7 @@ class ValidateConsumedMessageRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, body=None):
-        """ValidateConsumedMessageRequest
+        r"""ValidateConsumedMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ValidateConsumedMessageRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ValidateConsumedMessageRequest.
+        r"""Gets the engine of this ValidateConsumedMessageRequest.
 
         消息引擎。
 
@@ -66,7 +66,7 @@ class ValidateConsumedMessageRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ValidateConsumedMessageRequest.
+        r"""Sets the engine of this ValidateConsumedMessageRequest.
 
         消息引擎。
 
@@ -77,7 +77,7 @@ class ValidateConsumedMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ValidateConsumedMessageRequest.
+        r"""Gets the instance_id of this ValidateConsumedMessageRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class ValidateConsumedMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ValidateConsumedMessageRequest.
+        r"""Sets the instance_id of this ValidateConsumedMessageRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ValidateConsumedMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateConsumedMessageRequest.
+        r"""Gets the body of this ValidateConsumedMessageRequest.
 
         :return: The body of this ValidateConsumedMessageRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ResendReq`
@@ -108,7 +108,7 @@ class ValidateConsumedMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateConsumedMessageRequest.
+        r"""Sets the body of this ValidateConsumedMessageRequest.
 
         :param body: The body of this ValidateConsumedMessageRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.ResendReq`

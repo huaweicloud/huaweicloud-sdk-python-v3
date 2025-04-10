@@ -27,7 +27,7 @@ class UpdateAimMsgTemplateRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateAimMsgTemplateRequest
+        r"""UpdateAimMsgTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAimMsgTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateAimMsgTemplateRequest.
+        r"""Gets the template_id of this UpdateAimMsgTemplateRequest.
 
         短信模板ID。
 
@@ -60,7 +60,7 @@ class UpdateAimMsgTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateAimMsgTemplateRequest.
+        r"""Sets the template_id of this UpdateAimMsgTemplateRequest.
 
         短信模板ID。
 
@@ -71,7 +71,7 @@ class UpdateAimMsgTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAimMsgTemplateRequest.
+        r"""Gets the body of this UpdateAimMsgTemplateRequest.
 
         :return: The body of this UpdateAimMsgTemplateRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.MsgTemplateRequest`
@@ -80,7 +80,7 @@ class UpdateAimMsgTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAimMsgTemplateRequest.
+        r"""Sets the body of this UpdateAimMsgTemplateRequest.
 
         :param body: The body of this UpdateAimMsgTemplateRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.MsgTemplateRequest`

@@ -25,7 +25,7 @@ class ValuesItem:
     }
 
     def __init__(self, values=None):
-        """ValuesItem
+        r"""ValuesItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ValuesItem:
 
     @property
     def values(self):
-        """Gets the values of this ValuesItem.
+        r"""Gets the values of this ValuesItem.
 
         所有版本列表。
 
@@ -54,7 +54,7 @@ class ValuesItem:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ValuesItem.
+        r"""Sets the values of this ValuesItem.
 
         所有版本列表。
 

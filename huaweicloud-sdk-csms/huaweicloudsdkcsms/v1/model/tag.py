@@ -27,7 +27,7 @@ class Tag:
     }
 
     def __init__(self, key=None, values=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Tag:
 
     @property
     def key(self):
-        """Gets the key of this Tag.
+        r"""Gets the key of this Tag.
 
         标签键。
 
@@ -61,7 +61,7 @@ class Tag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tag.
+        r"""Sets the key of this Tag.
 
         标签键。
 
@@ -72,7 +72,7 @@ class Tag:
 
     @property
     def values(self):
-        """Gets the values of this Tag.
+        r"""Gets the values of this Tag.
 
         标签值集合。  约束：最多包含10个value。标签列表中的标签value值不允许重复。标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，满足请求中的某个value就会匹配出来。
 
@@ -83,7 +83,7 @@ class Tag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this Tag.
+        r"""Sets the values of this Tag.
 
         标签值集合。  约束：最多包含10个value。标签列表中的标签value值不允许重复。标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，满足请求中的某个value就会匹配出来。
 

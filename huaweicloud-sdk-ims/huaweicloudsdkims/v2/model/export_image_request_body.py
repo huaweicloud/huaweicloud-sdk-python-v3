@@ -29,7 +29,7 @@ class ExportImageRequestBody:
     }
 
     def __init__(self, bucket_url=None, file_format=None, is_quick_export=None):
-        """ExportImageRequestBody
+        r"""ExportImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExportImageRequestBody:
 
     @property
     def bucket_url(self):
-        """Gets the bucket_url of this ExportImageRequestBody.
+        r"""Gets the bucket_url of this ExportImageRequestBody.
 
         目的文件的URL，格式：<bucket>:<file>。 说明：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
@@ -66,7 +66,7 @@ class ExportImageRequestBody:
 
     @bucket_url.setter
     def bucket_url(self, bucket_url):
-        """Sets the bucket_url of this ExportImageRequestBody.
+        r"""Sets the bucket_url of this ExportImageRequestBody.
 
         目的文件的URL，格式：<bucket>:<file>。 说明：此处的OBS桶和镜像文件的存储类别必须是OBS标准存储。
 
@@ -77,7 +77,7 @@ class ExportImageRequestBody:
 
     @property
     def file_format(self):
-        """Gets the file_format of this ExportImageRequestBody.
+        r"""Gets the file_format of this ExportImageRequestBody.
 
         文件格式，支持qcow2、vhd、zvhd和vmdk。
 
@@ -88,7 +88,7 @@ class ExportImageRequestBody:
 
     @file_format.setter
     def file_format(self, file_format):
-        """Sets the file_format of this ExportImageRequestBody.
+        r"""Sets the file_format of this ExportImageRequestBody.
 
         文件格式，支持qcow2、vhd、zvhd和vmdk。
 
@@ -99,7 +99,7 @@ class ExportImageRequestBody:
 
     @property
     def is_quick_export(self):
-        """Gets the is_quick_export of this ExportImageRequestBody.
+        r"""Gets the is_quick_export of this ExportImageRequestBody.
 
         是否使用快速导出，取值为true或者false。 说明：若使用快速导出，则无法指定file_format参数。
 
@@ -110,7 +110,7 @@ class ExportImageRequestBody:
 
     @is_quick_export.setter
     def is_quick_export(self, is_quick_export):
-        """Sets the is_quick_export of this ExportImageRequestBody.
+        r"""Sets the is_quick_export of this ExportImageRequestBody.
 
         是否使用快速导出，取值为true或者false。 说明：若使用快速导出，则无法指定file_format参数。
 

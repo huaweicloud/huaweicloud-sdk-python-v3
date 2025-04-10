@@ -31,7 +31,7 @@ class ModifyPwdEndPoint:
     }
 
     def __init__(self, db_password=None, end_point_type=None, job_id=None, kerberos=None):
-        """ModifyPwdEndPoint
+        r"""ModifyPwdEndPoint
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ModifyPwdEndPoint:
 
     @property
     def db_password(self):
-        """Gets the db_password of this ModifyPwdEndPoint.
+        r"""Gets the db_password of this ModifyPwdEndPoint.
 
         数据库密码
 
@@ -72,7 +72,7 @@ class ModifyPwdEndPoint:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this ModifyPwdEndPoint.
+        r"""Sets the db_password of this ModifyPwdEndPoint.
 
         数据库密码
 
@@ -83,7 +83,7 @@ class ModifyPwdEndPoint:
 
     @property
     def end_point_type(self):
-        """Gets the end_point_type of this ModifyPwdEndPoint.
+        r"""Gets the end_point_type of this ModifyPwdEndPoint.
 
         类型，so：源库；ta：目标库。
 
@@ -94,7 +94,7 @@ class ModifyPwdEndPoint:
 
     @end_point_type.setter
     def end_point_type(self, end_point_type):
-        """Sets the end_point_type of this ModifyPwdEndPoint.
+        r"""Sets the end_point_type of this ModifyPwdEndPoint.
 
         类型，so：源库；ta：目标库。
 
@@ -105,7 +105,7 @@ class ModifyPwdEndPoint:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyPwdEndPoint.
+        r"""Gets the job_id of this ModifyPwdEndPoint.
 
         任务id
 
@@ -116,7 +116,7 @@ class ModifyPwdEndPoint:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyPwdEndPoint.
+        r"""Sets the job_id of this ModifyPwdEndPoint.
 
         任务id
 
@@ -127,7 +127,7 @@ class ModifyPwdEndPoint:
 
     @property
     def kerberos(self):
-        """Gets the kerberos of this ModifyPwdEndPoint.
+        r"""Gets the kerberos of this ModifyPwdEndPoint.
 
         :return: The kerberos of this ModifyPwdEndPoint.
         :rtype: :class:`huaweicloudsdkdrs.v3.KerberosVO`
@@ -136,7 +136,7 @@ class ModifyPwdEndPoint:
 
     @kerberos.setter
     def kerberos(self, kerberos):
-        """Sets the kerberos of this ModifyPwdEndPoint.
+        r"""Sets the kerberos of this ModifyPwdEndPoint.
 
         :param kerberos: The kerberos of this ModifyPwdEndPoint.
         :type kerberos: :class:`huaweicloudsdkdrs.v3.KerberosVO`

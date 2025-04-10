@@ -28,7 +28,7 @@ class ShowTrafficMirrorFilterRuleResponse(SdkResponse):
     }
 
     def __init__(self, traffic_mirror_filter_rule=None, request_id=None):
-        """ShowTrafficMirrorFilterRuleResponse
+        r"""ShowTrafficMirrorFilterRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTrafficMirrorFilterRuleResponse(SdkResponse):
 
     @property
     def traffic_mirror_filter_rule(self):
-        """Gets the traffic_mirror_filter_rule of this ShowTrafficMirrorFilterRuleResponse.
+        r"""Gets the traffic_mirror_filter_rule of this ShowTrafficMirrorFilterRuleResponse.
 
         :return: The traffic_mirror_filter_rule of this ShowTrafficMirrorFilterRuleResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.TrafficMirrorFilterRule`
@@ -60,7 +60,7 @@ class ShowTrafficMirrorFilterRuleResponse(SdkResponse):
 
     @traffic_mirror_filter_rule.setter
     def traffic_mirror_filter_rule(self, traffic_mirror_filter_rule):
-        """Sets the traffic_mirror_filter_rule of this ShowTrafficMirrorFilterRuleResponse.
+        r"""Sets the traffic_mirror_filter_rule of this ShowTrafficMirrorFilterRuleResponse.
 
         :param traffic_mirror_filter_rule: The traffic_mirror_filter_rule of this ShowTrafficMirrorFilterRuleResponse.
         :type traffic_mirror_filter_rule: :class:`huaweicloudsdkvpc.v3.TrafficMirrorFilterRule`
@@ -69,7 +69,7 @@ class ShowTrafficMirrorFilterRuleResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowTrafficMirrorFilterRuleResponse.
+        r"""Gets the request_id of this ShowTrafficMirrorFilterRuleResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowTrafficMirrorFilterRuleResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowTrafficMirrorFilterRuleResponse.
+        r"""Sets the request_id of this ShowTrafficMirrorFilterRuleResponse.
 
         请求ID
 

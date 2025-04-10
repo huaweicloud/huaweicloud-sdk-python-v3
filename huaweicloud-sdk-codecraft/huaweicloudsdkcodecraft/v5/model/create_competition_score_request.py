@@ -25,7 +25,7 @@ class CreateCompetitionScoreRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCompetitionScoreRequest
+        r"""CreateCompetitionScoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCompetitionScoreRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCompetitionScoreRequest.
+        r"""Gets the body of this CreateCompetitionScoreRequest.
 
         :return: The body of this CreateCompetitionScoreRequest.
         :rtype: :class:`huaweicloudsdkcodecraft.v5.CreateScoresRequestModel`
@@ -52,7 +52,7 @@ class CreateCompetitionScoreRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCompetitionScoreRequest.
+        r"""Sets the body of this CreateCompetitionScoreRequest.
 
         :param body: The body of this CreateCompetitionScoreRequest.
         :type body: :class:`huaweicloudsdkcodecraft.v5.CreateScoresRequestModel`

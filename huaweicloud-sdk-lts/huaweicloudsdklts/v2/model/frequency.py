@@ -35,7 +35,7 @@ class Frequency:
     }
 
     def __init__(self, type=None, cron_expr=None, hour_of_day=None, day_of_week=None, fixed_rate=None, fixed_rate_unit=None):
-        """Frequency
+        r"""Frequency
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class Frequency:
 
     @property
     def type(self):
-        """Gets the type of this Frequency.
+        r"""Gets the type of this Frequency.
 
         时间类型
 
@@ -88,7 +88,7 @@ class Frequency:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Frequency.
+        r"""Sets the type of this Frequency.
 
         时间类型
 
@@ -99,7 +99,7 @@ class Frequency:
 
     @property
     def cron_expr(self):
-        """Gets the cron_expr of this Frequency.
+        r"""Gets the cron_expr of this Frequency.
 
         当字段type为\"CRON\"时取该字段
 
@@ -110,7 +110,7 @@ class Frequency:
 
     @cron_expr.setter
     def cron_expr(self, cron_expr):
-        """Sets the cron_expr of this Frequency.
+        r"""Sets the cron_expr of this Frequency.
 
         当字段type为\"CRON\"时取该字段
 
@@ -121,7 +121,7 @@ class Frequency:
 
     @property
     def hour_of_day(self):
-        """Gets the hour_of_day of this Frequency.
+        r"""Gets the hour_of_day of this Frequency.
 
         当字段type为\"DAILY\"或者\"WEEKLY\"时取该字段
 
@@ -132,7 +132,7 @@ class Frequency:
 
     @hour_of_day.setter
     def hour_of_day(self, hour_of_day):
-        """Sets the hour_of_day of this Frequency.
+        r"""Sets the hour_of_day of this Frequency.
 
         当字段type为\"DAILY\"或者\"WEEKLY\"时取该字段
 
@@ -143,7 +143,7 @@ class Frequency:
 
     @property
     def day_of_week(self):
-        """Gets the day_of_week of this Frequency.
+        r"""Gets the day_of_week of this Frequency.
 
         当字段type为\"WEEKLY\"时取该字段(周日~周六)
 
@@ -154,7 +154,7 @@ class Frequency:
 
     @day_of_week.setter
     def day_of_week(self, day_of_week):
-        """Sets the day_of_week of this Frequency.
+        r"""Sets the day_of_week of this Frequency.
 
         当字段type为\"WEEKLY\"时取该字段(周日~周六)
 
@@ -165,7 +165,7 @@ class Frequency:
 
     @property
     def fixed_rate(self):
-        """Gets the fixed_rate of this Frequency.
+        r"""Gets the fixed_rate of this Frequency.
 
         当字段type为\"FIXED_RATE\"时取该字段(当fixed_rate_unit单位为minute，最大值60;当fixed_rate_unit单位为hour，最大值24)
 
@@ -176,7 +176,7 @@ class Frequency:
 
     @fixed_rate.setter
     def fixed_rate(self, fixed_rate):
-        """Sets the fixed_rate of this Frequency.
+        r"""Sets the fixed_rate of this Frequency.
 
         当字段type为\"FIXED_RATE\"时取该字段(当fixed_rate_unit单位为minute，最大值60;当fixed_rate_unit单位为hour，最大值24)
 
@@ -187,7 +187,7 @@ class Frequency:
 
     @property
     def fixed_rate_unit(self):
-        """Gets the fixed_rate_unit of this Frequency.
+        r"""Gets the fixed_rate_unit of this Frequency.
 
         时间单位
 
@@ -198,7 +198,7 @@ class Frequency:
 
     @fixed_rate_unit.setter
     def fixed_rate_unit(self, fixed_rate_unit):
-        """Sets the fixed_rate_unit of this Frequency.
+        r"""Sets the fixed_rate_unit of this Frequency.
 
         时间单位
 

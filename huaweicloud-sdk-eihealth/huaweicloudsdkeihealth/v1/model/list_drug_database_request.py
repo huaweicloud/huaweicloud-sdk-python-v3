@@ -35,7 +35,7 @@ class ListDrugDatabaseRequest:
     }
 
     def __init__(self, search_key=None, type=None, sort_key=None, sort_dir=None, limit=None, offset=None):
-        """ListDrugDatabaseRequest
+        r"""ListDrugDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListDrugDatabaseRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListDrugDatabaseRequest.
+        r"""Gets the search_key of this ListDrugDatabaseRequest.
 
         数据库名称搜索
 
@@ -89,7 +89,7 @@ class ListDrugDatabaseRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListDrugDatabaseRequest.
+        r"""Sets the search_key of this ListDrugDatabaseRequest.
 
         数据库名称搜索
 
@@ -100,7 +100,7 @@ class ListDrugDatabaseRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDrugDatabaseRequest.
+        r"""Gets the type of this ListDrugDatabaseRequest.
 
         数据库类型搜索
 
@@ -111,7 +111,7 @@ class ListDrugDatabaseRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDrugDatabaseRequest.
+        r"""Sets the type of this ListDrugDatabaseRequest.
 
         数据库类型搜索
 
@@ -122,7 +122,7 @@ class ListDrugDatabaseRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDrugDatabaseRequest.
+        r"""Gets the sort_key of this ListDrugDatabaseRequest.
 
         排序规则 目前默认时间降序，支持根据create_time|update_time
 
@@ -133,7 +133,7 @@ class ListDrugDatabaseRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDrugDatabaseRequest.
+        r"""Sets the sort_key of this ListDrugDatabaseRequest.
 
         排序规则 目前默认时间降序，支持根据create_time|update_time
 
@@ -144,7 +144,7 @@ class ListDrugDatabaseRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDrugDatabaseRequest.
+        r"""Gets the sort_dir of this ListDrugDatabaseRequest.
 
         排序规则 目前默认时间降序
 
@@ -155,7 +155,7 @@ class ListDrugDatabaseRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDrugDatabaseRequest.
+        r"""Sets the sort_dir of this ListDrugDatabaseRequest.
 
         排序规则 目前默认时间降序
 
@@ -166,7 +166,7 @@ class ListDrugDatabaseRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDrugDatabaseRequest.
+        r"""Gets the limit of this ListDrugDatabaseRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -177,7 +177,7 @@ class ListDrugDatabaseRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDrugDatabaseRequest.
+        r"""Sets the limit of this ListDrugDatabaseRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -188,7 +188,7 @@ class ListDrugDatabaseRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDrugDatabaseRequest.
+        r"""Gets the offset of this ListDrugDatabaseRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -199,7 +199,7 @@ class ListDrugDatabaseRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDrugDatabaseRequest.
+        r"""Sets the offset of this ListDrugDatabaseRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 

@@ -27,7 +27,7 @@ class AcceptOrRejectEndpointConnectionsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AcceptOrRejectEndpointConnectionsRequest
+        r"""AcceptOrRejectEndpointConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AcceptOrRejectEndpointConnectionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AcceptOrRejectEndpointConnectionsRequest.
+        r"""Gets the instance_id of this AcceptOrRejectEndpointConnectionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class AcceptOrRejectEndpointConnectionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AcceptOrRejectEndpointConnectionsRequest.
+        r"""Sets the instance_id of this AcceptOrRejectEndpointConnectionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class AcceptOrRejectEndpointConnectionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AcceptOrRejectEndpointConnectionsRequest.
+        r"""Gets the body of this AcceptOrRejectEndpointConnectionsRequest.
 
         :return: The body of this AcceptOrRejectEndpointConnectionsRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.ConnectionActionReq`
@@ -80,7 +80,7 @@ class AcceptOrRejectEndpointConnectionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AcceptOrRejectEndpointConnectionsRequest.
+        r"""Sets the body of this AcceptOrRejectEndpointConnectionsRequest.
 
         :param body: The body of this AcceptOrRejectEndpointConnectionsRequest.
         :type body: :class:`huaweicloudsdkapig.v2.ConnectionActionReq`

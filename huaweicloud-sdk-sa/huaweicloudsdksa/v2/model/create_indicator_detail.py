@@ -69,7 +69,7 @@ class CreateIndicatorDetail:
     }
 
     def __init__(self, data_source=None, verdict=None, confidence=None, status=None, labels=None, value=None, granular_marking=None, environment=None, defanged=None, first_report_time=None, last_report_time=None, id=None, indicator_type=None, name=None, dataclass_id=None, type=None, data_object=None, workspace_id=None, project_id=None, layout_id=None, dataclass=None, create_time=None, update_time=None):
-        """CreateIndicatorDetail
+        r"""CreateIndicatorDetail
 
         The model defined in huaweicloud sdk
 
@@ -196,7 +196,7 @@ class CreateIndicatorDetail:
 
     @property
     def data_source(self):
-        """Gets the data_source of this CreateIndicatorDetail.
+        r"""Gets the data_source of this CreateIndicatorDetail.
 
         :return: The data_source of this CreateIndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertDataSource`
@@ -205,7 +205,7 @@ class CreateIndicatorDetail:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this CreateIndicatorDetail.
+        r"""Sets the data_source of this CreateIndicatorDetail.
 
         :param data_source: The data_source of this CreateIndicatorDetail.
         :type data_source: :class:`huaweicloudsdksa.v2.CreateAlertDataSource`
@@ -214,7 +214,7 @@ class CreateIndicatorDetail:
 
     @property
     def verdict(self):
-        """Gets the verdict of this CreateIndicatorDetail.
+        r"""Gets the verdict of this CreateIndicatorDetail.
 
         威胁度
 
@@ -225,7 +225,7 @@ class CreateIndicatorDetail:
 
     @verdict.setter
     def verdict(self, verdict):
-        """Sets the verdict of this CreateIndicatorDetail.
+        r"""Sets the verdict of this CreateIndicatorDetail.
 
         威胁度
 
@@ -236,7 +236,7 @@ class CreateIndicatorDetail:
 
     @property
     def confidence(self):
-        """Gets the confidence of this CreateIndicatorDetail.
+        r"""Gets the confidence of this CreateIndicatorDetail.
 
         置信度
 
@@ -247,7 +247,7 @@ class CreateIndicatorDetail:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this CreateIndicatorDetail.
+        r"""Sets the confidence of this CreateIndicatorDetail.
 
         置信度
 
@@ -258,7 +258,7 @@ class CreateIndicatorDetail:
 
     @property
     def status(self):
-        """Gets the status of this CreateIndicatorDetail.
+        r"""Gets the status of this CreateIndicatorDetail.
 
         状态
 
@@ -269,7 +269,7 @@ class CreateIndicatorDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateIndicatorDetail.
+        r"""Sets the status of this CreateIndicatorDetail.
 
         状态
 
@@ -280,7 +280,7 @@ class CreateIndicatorDetail:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateIndicatorDetail.
+        r"""Gets the labels of this CreateIndicatorDetail.
 
         标签
 
@@ -291,7 +291,7 @@ class CreateIndicatorDetail:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateIndicatorDetail.
+        r"""Sets the labels of this CreateIndicatorDetail.
 
         标签
 
@@ -302,7 +302,7 @@ class CreateIndicatorDetail:
 
     @property
     def value(self):
-        """Gets the value of this CreateIndicatorDetail.
+        r"""Gets the value of this CreateIndicatorDetail.
 
         值
 
@@ -313,7 +313,7 @@ class CreateIndicatorDetail:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateIndicatorDetail.
+        r"""Sets the value of this CreateIndicatorDetail.
 
         值
 
@@ -324,7 +324,7 @@ class CreateIndicatorDetail:
 
     @property
     def granular_marking(self):
-        """Gets the granular_marking of this CreateIndicatorDetail.
+        r"""Gets the granular_marking of this CreateIndicatorDetail.
 
         粒度（保密等级），由高到低：1（首次发现）、2（自产数据）、3（需购买）、4（外网直接查询）
 
@@ -335,7 +335,7 @@ class CreateIndicatorDetail:
 
     @granular_marking.setter
     def granular_marking(self, granular_marking):
-        """Sets the granular_marking of this CreateIndicatorDetail.
+        r"""Sets the granular_marking of this CreateIndicatorDetail.
 
         粒度（保密等级），由高到低：1（首次发现）、2（自产数据）、3（需购买）、4（外网直接查询）
 
@@ -346,7 +346,7 @@ class CreateIndicatorDetail:
 
     @property
     def environment(self):
-        """Gets the environment of this CreateIndicatorDetail.
+        r"""Gets the environment of this CreateIndicatorDetail.
 
         :return: The environment of this CreateIndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -355,7 +355,7 @@ class CreateIndicatorDetail:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this CreateIndicatorDetail.
+        r"""Sets the environment of this CreateIndicatorDetail.
 
         :param environment: The environment of this CreateIndicatorDetail.
         :type environment: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -364,7 +364,7 @@ class CreateIndicatorDetail:
 
     @property
     def defanged(self):
-        """Gets the defanged of this CreateIndicatorDetail.
+        r"""Gets the defanged of this CreateIndicatorDetail.
 
         是否失效
 
@@ -375,7 +375,7 @@ class CreateIndicatorDetail:
 
     @defanged.setter
     def defanged(self, defanged):
-        """Sets the defanged of this CreateIndicatorDetail.
+        r"""Sets the defanged of this CreateIndicatorDetail.
 
         是否失效
 
@@ -386,7 +386,7 @@ class CreateIndicatorDetail:
 
     @property
     def first_report_time(self):
-        """Gets the first_report_time of this CreateIndicatorDetail.
+        r"""Gets the first_report_time of this CreateIndicatorDetail.
 
         Create time
 
@@ -397,7 +397,7 @@ class CreateIndicatorDetail:
 
     @first_report_time.setter
     def first_report_time(self, first_report_time):
-        """Sets the first_report_time of this CreateIndicatorDetail.
+        r"""Sets the first_report_time of this CreateIndicatorDetail.
 
         Create time
 
@@ -408,7 +408,7 @@ class CreateIndicatorDetail:
 
     @property
     def last_report_time(self):
-        """Gets the last_report_time of this CreateIndicatorDetail.
+        r"""Gets the last_report_time of this CreateIndicatorDetail.
 
         Update time
 
@@ -419,7 +419,7 @@ class CreateIndicatorDetail:
 
     @last_report_time.setter
     def last_report_time(self, last_report_time):
-        """Sets the last_report_time of this CreateIndicatorDetail.
+        r"""Sets the last_report_time of this CreateIndicatorDetail.
 
         Update time
 
@@ -430,7 +430,7 @@ class CreateIndicatorDetail:
 
     @property
     def id(self):
-        """Gets the id of this CreateIndicatorDetail.
+        r"""Gets the id of this CreateIndicatorDetail.
 
         指标ID
 
@@ -441,7 +441,7 @@ class CreateIndicatorDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIndicatorDetail.
+        r"""Sets the id of this CreateIndicatorDetail.
 
         指标ID
 
@@ -452,7 +452,7 @@ class CreateIndicatorDetail:
 
     @property
     def indicator_type(self):
-        """Gets the indicator_type of this CreateIndicatorDetail.
+        r"""Gets the indicator_type of this CreateIndicatorDetail.
 
         :return: The indicator_type of this CreateIndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIndicatorDetailIndicatorType`
@@ -461,7 +461,7 @@ class CreateIndicatorDetail:
 
     @indicator_type.setter
     def indicator_type(self, indicator_type):
-        """Sets the indicator_type of this CreateIndicatorDetail.
+        r"""Sets the indicator_type of this CreateIndicatorDetail.
 
         :param indicator_type: The indicator_type of this CreateIndicatorDetail.
         :type indicator_type: :class:`huaweicloudsdksa.v2.CreateIndicatorDetailIndicatorType`
@@ -470,7 +470,7 @@ class CreateIndicatorDetail:
 
     @property
     def name(self):
-        """Gets the name of this CreateIndicatorDetail.
+        r"""Gets the name of this CreateIndicatorDetail.
 
         指标名称
 
@@ -481,7 +481,7 @@ class CreateIndicatorDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIndicatorDetail.
+        r"""Sets the name of this CreateIndicatorDetail.
 
         指标名称
 
@@ -492,7 +492,7 @@ class CreateIndicatorDetail:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this CreateIndicatorDetail.
+        r"""Gets the dataclass_id of this CreateIndicatorDetail.
 
         数据类ID
 
@@ -503,7 +503,7 @@ class CreateIndicatorDetail:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this CreateIndicatorDetail.
+        r"""Sets the dataclass_id of this CreateIndicatorDetail.
 
         数据类ID
 
@@ -514,7 +514,7 @@ class CreateIndicatorDetail:
 
     @property
     def type(self):
-        """Gets the type of this CreateIndicatorDetail.
+        r"""Gets the type of this CreateIndicatorDetail.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -525,7 +525,7 @@ class CreateIndicatorDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateIndicatorDetail.
+        r"""Sets the type of this CreateIndicatorDetail.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -536,7 +536,7 @@ class CreateIndicatorDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this CreateIndicatorDetail.
+        r"""Gets the data_object of this CreateIndicatorDetail.
 
         :return: The data_object of this CreateIndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.IndicatorDataObjectDetail`
@@ -545,7 +545,7 @@ class CreateIndicatorDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this CreateIndicatorDetail.
+        r"""Sets the data_object of this CreateIndicatorDetail.
 
         :param data_object: The data_object of this CreateIndicatorDetail.
         :type data_object: :class:`huaweicloudsdksa.v2.IndicatorDataObjectDetail`
@@ -554,7 +554,7 @@ class CreateIndicatorDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateIndicatorDetail.
+        r"""Gets the workspace_id of this CreateIndicatorDetail.
 
         workspace id
 
@@ -565,7 +565,7 @@ class CreateIndicatorDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateIndicatorDetail.
+        r"""Sets the workspace_id of this CreateIndicatorDetail.
 
         workspace id
 
@@ -576,7 +576,7 @@ class CreateIndicatorDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateIndicatorDetail.
+        r"""Gets the project_id of this CreateIndicatorDetail.
 
         Project id value
 
@@ -587,7 +587,7 @@ class CreateIndicatorDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateIndicatorDetail.
+        r"""Sets the project_id of this CreateIndicatorDetail.
 
         Project id value
 
@@ -598,7 +598,7 @@ class CreateIndicatorDetail:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this CreateIndicatorDetail.
+        r"""Gets the layout_id of this CreateIndicatorDetail.
 
         布局ID
 
@@ -609,7 +609,7 @@ class CreateIndicatorDetail:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this CreateIndicatorDetail.
+        r"""Sets the layout_id of this CreateIndicatorDetail.
 
         布局ID
 
@@ -620,7 +620,7 @@ class CreateIndicatorDetail:
 
     @property
     def dataclass(self):
-        """Gets the dataclass of this CreateIndicatorDetail.
+        r"""Gets the dataclass of this CreateIndicatorDetail.
 
         :return: The dataclass of this CreateIndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.DataClassRefPojo`
@@ -629,7 +629,7 @@ class CreateIndicatorDetail:
 
     @dataclass.setter
     def dataclass(self, dataclass):
-        """Sets the dataclass of this CreateIndicatorDetail.
+        r"""Sets the dataclass of this CreateIndicatorDetail.
 
         :param dataclass: The dataclass of this CreateIndicatorDetail.
         :type dataclass: :class:`huaweicloudsdksa.v2.DataClassRefPojo`
@@ -638,7 +638,7 @@ class CreateIndicatorDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateIndicatorDetail.
+        r"""Gets the create_time of this CreateIndicatorDetail.
 
         Create time
 
@@ -649,7 +649,7 @@ class CreateIndicatorDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateIndicatorDetail.
+        r"""Sets the create_time of this CreateIndicatorDetail.
 
         Create time
 
@@ -660,7 +660,7 @@ class CreateIndicatorDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateIndicatorDetail.
+        r"""Gets the update_time of this CreateIndicatorDetail.
 
         Update time
 
@@ -671,7 +671,7 @@ class CreateIndicatorDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateIndicatorDetail.
+        r"""Sets the update_time of this CreateIndicatorDetail.
 
         Update time
 

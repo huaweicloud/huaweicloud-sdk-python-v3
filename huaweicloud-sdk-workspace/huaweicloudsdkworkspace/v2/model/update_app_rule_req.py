@@ -29,7 +29,7 @@ class UpdateAppRuleReq:
     }
 
     def __init__(self, name=None, description=None, rule=None):
-        """UpdateAppRuleReq
+        r"""UpdateAppRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAppRuleReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppRuleReq.
+        r"""Gets the name of this UpdateAppRuleReq.
 
         规则名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
@@ -68,7 +68,7 @@ class UpdateAppRuleReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppRuleReq.
+        r"""Sets the name of this UpdateAppRuleReq.
 
         规则名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
@@ -79,7 +79,7 @@ class UpdateAppRuleReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppRuleReq.
+        r"""Gets the description of this UpdateAppRuleReq.
 
         规则描述： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。
 
@@ -90,7 +90,7 @@ class UpdateAppRuleReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppRuleReq.
+        r"""Sets the description of this UpdateAppRuleReq.
 
         规则描述： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。
 
@@ -101,7 +101,7 @@ class UpdateAppRuleReq:
 
     @property
     def rule(self):
-        """Gets the rule of this UpdateAppRuleReq.
+        r"""Gets the rule of this UpdateAppRuleReq.
 
         :return: The rule of this UpdateAppRuleReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Rule`
@@ -110,7 +110,7 @@ class UpdateAppRuleReq:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this UpdateAppRuleReq.
+        r"""Sets the rule of this UpdateAppRuleReq.
 
         :param rule: The rule of this UpdateAppRuleReq.
         :type rule: :class:`huaweicloudsdkworkspace.v2.Rule`

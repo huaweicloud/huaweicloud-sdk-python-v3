@@ -31,7 +31,7 @@ class HLSRecordConfig:
     }
 
     def __init__(self, record_cycle=None, record_prefix=None, record_slice_duration=None, record_max_duration_to_merge_file=None):
-        """HLSRecordConfig
+        r"""HLSRecordConfig
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class HLSRecordConfig:
 
     @property
     def record_cycle(self):
-        """Gets the record_cycle of this HLSRecordConfig.
+        r"""Gets the record_cycle of this HLSRecordConfig.
 
          周期录制时长。  取值范围：[60，43200]或者0，如果为0则整个流录制为一个文件。  单位：秒。 
 
@@ -74,7 +74,7 @@ class HLSRecordConfig:
 
     @record_cycle.setter
     def record_cycle(self, record_cycle):
-        """Sets the record_cycle of this HLSRecordConfig.
+        r"""Sets the record_cycle of this HLSRecordConfig.
 
          周期录制时长。  取值范围：[60，43200]或者0，如果为0则整个流录制为一个文件。  单位：秒。 
 
@@ -85,7 +85,7 @@ class HLSRecordConfig:
 
     @property
     def record_prefix(self):
-        """Gets the record_prefix of this HLSRecordConfig.
+        r"""Gets the record_prefix of this HLSRecordConfig.
 
         录制m3u8文件含路径和文件名的前缀  默认{app_id}/{record_format}/{stream}\\_{file_start_time}/{stream}\\_{file_start_time}  可自定义以下特殊变量： - {app_id}：应用id - {record_format}：录制格式 - {stream}：流名 - {file_start_time}：文件生成时间 
 
@@ -96,7 +96,7 @@ class HLSRecordConfig:
 
     @record_prefix.setter
     def record_prefix(self, record_prefix):
-        """Sets the record_prefix of this HLSRecordConfig.
+        r"""Sets the record_prefix of this HLSRecordConfig.
 
         录制m3u8文件含路径和文件名的前缀  默认{app_id}/{record_format}/{stream}\\_{file_start_time}/{stream}\\_{file_start_time}  可自定义以下特殊变量： - {app_id}：应用id - {record_format}：录制格式 - {stream}：流名 - {file_start_time}：文件生成时间 
 
@@ -107,7 +107,7 @@ class HLSRecordConfig:
 
     @property
     def record_slice_duration(self):
-        """Gets the record_slice_duration of this HLSRecordConfig.
+        r"""Gets the record_slice_duration of this HLSRecordConfig.
 
          录制HLS时ts的切片时长，非必填。  取值范围：[2，60]，缺省为10。  单位：秒。 
 
@@ -118,7 +118,7 @@ class HLSRecordConfig:
 
     @record_slice_duration.setter
     def record_slice_duration(self, record_slice_duration):
-        """Sets the record_slice_duration of this HLSRecordConfig.
+        r"""Sets the record_slice_duration of this HLSRecordConfig.
 
          录制HLS时ts的切片时长，非必填。  取值范围：[2，60]，缺省为10。  单位：秒。 
 
@@ -129,7 +129,7 @@ class HLSRecordConfig:
 
     @property
     def record_max_duration_to_merge_file(self):
-        """Gets the record_max_duration_to_merge_file of this HLSRecordConfig.
+        r"""Gets the record_max_duration_to_merge_file of this HLSRecordConfig.
 
         录制HLS文件拼接时长，如果流中断超过该时间，则生成新文件。  取值范围：[-1，300]，缺省为0。  单位：秒。  - 如果为0表示流中断就生成新文件。 - 如果为-1则表示流中断恢复后追加到原来的文件中（相隔不超过30天）。 
 
@@ -140,7 +140,7 @@ class HLSRecordConfig:
 
     @record_max_duration_to_merge_file.setter
     def record_max_duration_to_merge_file(self, record_max_duration_to_merge_file):
-        """Sets the record_max_duration_to_merge_file of this HLSRecordConfig.
+        r"""Sets the record_max_duration_to_merge_file of this HLSRecordConfig.
 
         录制HLS文件拼接时长，如果流中断超过该时间，则生成新文件。  取值范围：[-1，300]，缺省为0。  单位：秒。  - 如果为0表示流中断就生成新文件。 - 如果为-1则表示流中断恢复后追加到原来的文件中（相隔不超过30天）。 
 

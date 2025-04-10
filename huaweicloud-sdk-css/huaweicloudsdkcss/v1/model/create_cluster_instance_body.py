@@ -31,7 +31,7 @@ class CreateClusterInstanceBody:
     }
 
     def __init__(self, flavor_ref=None, volume=None, nics=None, availability_zone=None):
-        """CreateClusterInstanceBody
+        r"""CreateClusterInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateClusterInstanceBody:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateClusterInstanceBody.
+        r"""Gets the flavor_ref of this CreateClusterInstanceBody.
 
         实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
 
@@ -72,7 +72,7 @@ class CreateClusterInstanceBody:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateClusterInstanceBody.
+        r"""Sets the flavor_ref of this CreateClusterInstanceBody.
 
         实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
 
@@ -83,7 +83,7 @@ class CreateClusterInstanceBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateClusterInstanceBody.
+        r"""Gets the volume of this CreateClusterInstanceBody.
 
         :return: The volume of this CreateClusterInstanceBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
@@ -92,7 +92,7 @@ class CreateClusterInstanceBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateClusterInstanceBody.
+        r"""Sets the volume of this CreateClusterInstanceBody.
 
         :param volume: The volume of this CreateClusterInstanceBody.
         :type volume: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
@@ -101,7 +101,7 @@ class CreateClusterInstanceBody:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateClusterInstanceBody.
+        r"""Gets the nics of this CreateClusterInstanceBody.
 
         :return: The nics of this CreateClusterInstanceBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`
@@ -110,7 +110,7 @@ class CreateClusterInstanceBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateClusterInstanceBody.
+        r"""Sets the nics of this CreateClusterInstanceBody.
 
         :param nics: The nics of this CreateClusterInstanceBody.
         :type nics: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`
@@ -119,7 +119,7 @@ class CreateClusterInstanceBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateClusterInstanceBody.
+        r"""Gets the availability_zone of this CreateClusterInstanceBody.
 
         可用区。需要指定可用区的名称（可用分区名称）。 默认指定单AZ。指定多AZ时，各个可用分区名称需要使用英文逗号（,）分隔，以“华北-北京四”为例，选择三AZ时，availability_zone取值为cn-north-4a,cn-north-4b,cn-north-4c。如果使用单AZ，availability_zone默认取值为空。 >说明   选择多AZ时，各个可用分区名称不能重复输入，并且要求节点个数大于等于AZ个数。      如果节点个数为AZ个数的倍数，节点将会均匀的分布到各个AZ。如果节点个数不为AZ个数的倍数时，各个AZ分布的节点数量之差的绝对值小于等于1。     可用分区名称，请在[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CSS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CSS)](tag:hk_hws)获取。
 
@@ -130,7 +130,7 @@ class CreateClusterInstanceBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateClusterInstanceBody.
+        r"""Sets the availability_zone of this CreateClusterInstanceBody.
 
         可用区。需要指定可用区的名称（可用分区名称）。 默认指定单AZ。指定多AZ时，各个可用分区名称需要使用英文逗号（,）分隔，以“华北-北京四”为例，选择三AZ时，availability_zone取值为cn-north-4a,cn-north-4b,cn-north-4c。如果使用单AZ，availability_zone默认取值为空。 >说明   选择多AZ时，各个可用分区名称不能重复输入，并且要求节点个数大于等于AZ个数。      如果节点个数为AZ个数的倍数，节点将会均匀的分布到各个AZ。如果节点个数不为AZ个数的倍数时，各个AZ分布的节点数量之差的绝对值小于等于1。     可用分区名称，请在[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CSS)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CSS)](tag:hk_hws)获取。
 

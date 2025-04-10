@@ -28,7 +28,7 @@ class AddSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, port=None):
-        """AddSecurityGroupsResponse
+        r"""AddSecurityGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddSecurityGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddSecurityGroupsResponse.
+        r"""Gets the request_id of this AddSecurityGroupsResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class AddSecurityGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddSecurityGroupsResponse.
+        r"""Sets the request_id of this AddSecurityGroupsResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class AddSecurityGroupsResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this AddSecurityGroupsResponse.
+        r"""Gets the port of this AddSecurityGroupsResponse.
 
         :return: The port of this AddSecurityGroupsResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.Port`
@@ -82,7 +82,7 @@ class AddSecurityGroupsResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AddSecurityGroupsResponse.
+        r"""Sets the port of this AddSecurityGroupsResponse.
 
         :param port: The port of this AddSecurityGroupsResponse.
         :type port: :class:`huaweicloudsdkvpc.v3.Port`

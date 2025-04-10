@@ -29,7 +29,7 @@ class ListNotificationTemplatesRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None):
-        """ListNotificationTemplatesRequest
+        r"""ListNotificationTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListNotificationTemplatesRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListNotificationTemplatesRequest.
+        r"""Gets the domain_id of this ListNotificationTemplatesRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -67,7 +67,7 @@ class ListNotificationTemplatesRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListNotificationTemplatesRequest.
+        r"""Sets the domain_id of this ListNotificationTemplatesRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -78,7 +78,7 @@ class ListNotificationTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNotificationTemplatesRequest.
+        r"""Gets the offset of this ListNotificationTemplatesRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -89,7 +89,7 @@ class ListNotificationTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNotificationTemplatesRequest.
+        r"""Sets the offset of this ListNotificationTemplatesRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -100,7 +100,7 @@ class ListNotificationTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNotificationTemplatesRequest.
+        r"""Gets the limit of this ListNotificationTemplatesRequest.
 
         每页数据量，最大值为100
 
@@ -111,7 +111,7 @@ class ListNotificationTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNotificationTemplatesRequest.
+        r"""Sets the limit of this ListNotificationTemplatesRequest.
 
         每页数据量，最大值为100
 

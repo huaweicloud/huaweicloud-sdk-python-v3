@@ -39,7 +39,7 @@ class QuitUnionFromMemberListRequestBody:
     }
 
     def __init__(self, inviter_bcsid=None, inviter_projectid=None, inviter_domainid=None, inviter_username=None, channel_name=None, invitee_bcsid=None, invitee_projectid=None, invitee_domainid=None):
-        """QuitUnionFromMemberListRequestBody
+        r"""QuitUnionFromMemberListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def inviter_bcsid(self):
-        """Gets the inviter_bcsid of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the inviter_bcsid of this QuitUnionFromMemberListRequestBody.
 
         邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的ID
 
@@ -95,7 +95,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @inviter_bcsid.setter
     def inviter_bcsid(self, inviter_bcsid):
-        """Sets the inviter_bcsid of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the inviter_bcsid of this QuitUnionFromMemberListRequestBody.
 
         邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的ID
 
@@ -106,7 +106,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def inviter_projectid(self):
-        """Gets the inviter_projectid of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the inviter_projectid of this QuitUnionFromMemberListRequestBody.
 
         邀请方项目ID。控制台->邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
@@ -117,7 +117,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @inviter_projectid.setter
     def inviter_projectid(self, inviter_projectid):
-        """Sets the inviter_projectid of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the inviter_projectid of this QuitUnionFromMemberListRequestBody.
 
         邀请方项目ID。控制台->邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
@@ -128,7 +128,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def inviter_domainid(self):
-        """Gets the inviter_domainid of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the inviter_domainid of this QuitUnionFromMemberListRequestBody.
 
         邀请方租户ID。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
@@ -139,7 +139,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @inviter_domainid.setter
     def inviter_domainid(self, inviter_domainid):
-        """Sets the inviter_domainid of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the inviter_domainid of this QuitUnionFromMemberListRequestBody.
 
         邀请方租户ID。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
@@ -150,7 +150,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def inviter_username(self):
-        """Gets the inviter_username of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the inviter_username of this QuitUnionFromMemberListRequestBody.
 
         邀请方租户名称。控制台->邀请方帐号->我的凭证->API凭证->帐号名
 
@@ -161,7 +161,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @inviter_username.setter
     def inviter_username(self, inviter_username):
-        """Sets the inviter_username of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the inviter_username of this QuitUnionFromMemberListRequestBody.
 
         邀请方租户名称。控制台->邀请方帐号->我的凭证->API凭证->帐号名
 
@@ -172,7 +172,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the channel_name of this QuitUnionFromMemberListRequestBody.
 
         联盟通道名称。BCS管理面->成员管理->通道，选择对应的邀请的通道
 
@@ -183,7 +183,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the channel_name of this QuitUnionFromMemberListRequestBody.
 
         联盟通道名称。BCS管理面->成员管理->通道，选择对应的邀请的通道
 
@@ -194,7 +194,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def invitee_bcsid(self):
-        """Gets the invitee_bcsid of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the invitee_bcsid of this QuitUnionFromMemberListRequestBody.
 
         被邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的id
 
@@ -205,7 +205,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @invitee_bcsid.setter
     def invitee_bcsid(self, invitee_bcsid):
-        """Sets the invitee_bcsid of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the invitee_bcsid of this QuitUnionFromMemberListRequestBody.
 
         被邀请方BCS服务实例ID。可调用“查询服务实例列表”接口获取对应的id
 
@@ -216,7 +216,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def invitee_projectid(self):
-        """Gets the invitee_projectid of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the invitee_projectid of this QuitUnionFromMemberListRequestBody.
 
         被邀请方项目ID。控制台->被邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
@@ -227,7 +227,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @invitee_projectid.setter
     def invitee_projectid(self, invitee_projectid):
-        """Sets the invitee_projectid of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the invitee_projectid of this QuitUnionFromMemberListRequestBody.
 
         被邀请方项目ID。控制台->被邀请方帐号->我的凭证->API凭证->项目列表，选择对应的项目ID
 
@@ -238,7 +238,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @property
     def invitee_domainid(self):
-        """Gets the invitee_domainid of this QuitUnionFromMemberListRequestBody.
+        r"""Gets the invitee_domainid of this QuitUnionFromMemberListRequestBody.
 
         被邀请方租户ID。控制台->被邀请方帐号->我的凭证->API凭证->帐号ID
 
@@ -249,7 +249,7 @@ class QuitUnionFromMemberListRequestBody:
 
     @invitee_domainid.setter
     def invitee_domainid(self, invitee_domainid):
-        """Sets the invitee_domainid of this QuitUnionFromMemberListRequestBody.
+        r"""Sets the invitee_domainid of this QuitUnionFromMemberListRequestBody.
 
         被邀请方租户ID。控制台->被邀请方帐号->我的凭证->API凭证->帐号ID
 

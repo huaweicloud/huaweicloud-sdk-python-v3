@@ -27,7 +27,7 @@ class SetBalancerWindowRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SetBalancerWindowRequest
+        r"""SetBalancerWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetBalancerWindowRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetBalancerWindowRequest.
+        r"""Gets the instance_id of this SetBalancerWindowRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class SetBalancerWindowRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetBalancerWindowRequest.
+        r"""Sets the instance_id of this SetBalancerWindowRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class SetBalancerWindowRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBalancerWindowRequest.
+        r"""Gets the body of this SetBalancerWindowRequest.
 
         :return: The body of this SetBalancerWindowRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
@@ -80,7 +80,7 @@ class SetBalancerWindowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBalancerWindowRequest.
+        r"""Sets the body of this SetBalancerWindowRequest.
 
         :param body: The body of this SetBalancerWindowRequest.
         :type body: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`

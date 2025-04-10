@@ -25,7 +25,7 @@ class UpdateTopicAccessPolicyReq:
     }
 
     def __init__(self, topics=None):
-        """UpdateTopicAccessPolicyReq
+        r"""UpdateTopicAccessPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTopicAccessPolicyReq:
 
     @property
     def topics(self):
-        """Gets the topics of this UpdateTopicAccessPolicyReq.
+        r"""Gets the topics of this UpdateTopicAccessPolicyReq.
 
         策略列表。
 
@@ -53,7 +53,7 @@ class UpdateTopicAccessPolicyReq:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this UpdateTopicAccessPolicyReq.
+        r"""Sets the topics of this UpdateTopicAccessPolicyReq.
 
         策略列表。
 

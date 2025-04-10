@@ -25,7 +25,7 @@ class LifeCycleConfigurationExec:
     }
 
     def __init__(self, command=None):
-        """LifeCycleConfigurationExec
+        r"""LifeCycleConfigurationExec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LifeCycleConfigurationExec:
 
     @property
     def command(self):
-        """Gets the command of this LifeCycleConfigurationExec.
+        r"""Gets the command of this LifeCycleConfigurationExec.
 
         shell语句。
 
@@ -54,7 +54,7 @@ class LifeCycleConfigurationExec:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this LifeCycleConfigurationExec.
+        r"""Sets the command of this LifeCycleConfigurationExec.
 
         shell语句。
 

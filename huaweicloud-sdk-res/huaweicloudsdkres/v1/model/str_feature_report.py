@@ -29,7 +29,7 @@ class StrFeatureReport:
     }
 
     def __init__(self, name=None, data_type=None, str_count=None):
-        """StrFeatureReport
+        r"""StrFeatureReport
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StrFeatureReport:
 
     @property
     def name(self):
-        """Gets the name of this StrFeatureReport.
+        r"""Gets the name of this StrFeatureReport.
 
         特征名。
 
@@ -68,7 +68,7 @@ class StrFeatureReport:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StrFeatureReport.
+        r"""Sets the name of this StrFeatureReport.
 
         特征名。
 
@@ -79,7 +79,7 @@ class StrFeatureReport:
 
     @property
     def data_type(self):
-        """Gets the data_type of this StrFeatureReport.
+        r"""Gets the data_type of this StrFeatureReport.
 
         特征类型。
 
@@ -90,7 +90,7 @@ class StrFeatureReport:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this StrFeatureReport.
+        r"""Sets the data_type of this StrFeatureReport.
 
         特征类型。
 
@@ -101,7 +101,7 @@ class StrFeatureReport:
 
     @property
     def str_count(self):
-        """Gets the str_count of this StrFeatureReport.
+        r"""Gets the str_count of this StrFeatureReport.
 
         离散类型特征出现次数统计。
 
@@ -112,7 +112,7 @@ class StrFeatureReport:
 
     @str_count.setter
     def str_count(self, str_count):
-        """Sets the str_count of this StrFeatureReport.
+        r"""Sets the str_count of this StrFeatureReport.
 
         离散类型特征出现次数统计。
 

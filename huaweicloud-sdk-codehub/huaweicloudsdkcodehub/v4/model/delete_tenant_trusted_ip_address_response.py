@@ -26,7 +26,7 @@ class DeleteTenantTrustedIpAddressResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """DeleteTenantTrustedIpAddressResponse
+        r"""DeleteTenantTrustedIpAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteTenantTrustedIpAddressResponse.
+        r"""Gets the status of this DeleteTenantTrustedIpAddressResponse.
 
         状态码
 
@@ -55,7 +55,7 @@ class DeleteTenantTrustedIpAddressResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteTenantTrustedIpAddressResponse.
+        r"""Sets the status of this DeleteTenantTrustedIpAddressResponse.
 
         状态码
 

@@ -27,7 +27,7 @@ class DebugRuleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DebugRuleRequest
+        r"""DebugRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DebugRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DebugRuleRequest.
+        r"""Gets the instance_id of this DebugRuleRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class DebugRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DebugRuleRequest.
+        r"""Sets the instance_id of this DebugRuleRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class DebugRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DebugRuleRequest.
+        r"""Gets the body of this DebugRuleRequest.
 
         :return: The body of this DebugRuleRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`
@@ -80,7 +80,7 @@ class DebugRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DebugRuleRequest.
+        r"""Sets the body of this DebugRuleRequest.
 
         :param body: The body of this DebugRuleRequest.
         :type body: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`

@@ -31,7 +31,7 @@ class ModifyOttChannelGeneral:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, name=None):
-        """ModifyOttChannelGeneral
+        r"""ModifyOttChannelGeneral
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ModifyOttChannelGeneral:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelGeneral.
+        r"""Gets the domain of this ModifyOttChannelGeneral.
 
         频道推流域名
 
@@ -71,7 +71,7 @@ class ModifyOttChannelGeneral:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelGeneral.
+        r"""Sets the domain of this ModifyOttChannelGeneral.
 
         频道推流域名
 
@@ -82,7 +82,7 @@ class ModifyOttChannelGeneral:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelGeneral.
+        r"""Gets the app_name of this ModifyOttChannelGeneral.
 
         组名或应用名
 
@@ -93,7 +93,7 @@ class ModifyOttChannelGeneral:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelGeneral.
+        r"""Sets the app_name of this ModifyOttChannelGeneral.
 
         组名或应用名
 
@@ -104,7 +104,7 @@ class ModifyOttChannelGeneral:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelGeneral.
+        r"""Gets the id of this ModifyOttChannelGeneral.
 
         频道ID。频道唯一标识，为必填项
 
@@ -115,7 +115,7 @@ class ModifyOttChannelGeneral:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelGeneral.
+        r"""Sets the id of this ModifyOttChannelGeneral.
 
         频道ID。频道唯一标识，为必填项
 
@@ -126,7 +126,7 @@ class ModifyOttChannelGeneral:
 
     @property
     def name(self):
-        """Gets the name of this ModifyOttChannelGeneral.
+        r"""Gets the name of this ModifyOttChannelGeneral.
 
         频道名称
 
@@ -137,7 +137,7 @@ class ModifyOttChannelGeneral:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyOttChannelGeneral.
+        r"""Sets the name of this ModifyOttChannelGeneral.
 
         频道名称
 

@@ -27,7 +27,7 @@ class UpdateSecurityPolicyRequest:
     }
 
     def __init__(self, security_policy_id=None, body=None):
-        """UpdateSecurityPolicyRequest
+        r"""UpdateSecurityPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSecurityPolicyRequest:
 
     @property
     def security_policy_id(self):
-        """Gets the security_policy_id of this UpdateSecurityPolicyRequest.
+        r"""Gets the security_policy_id of this UpdateSecurityPolicyRequest.
 
         自定义安全策略的ID。
 
@@ -60,7 +60,7 @@ class UpdateSecurityPolicyRequest:
 
     @security_policy_id.setter
     def security_policy_id(self, security_policy_id):
-        """Sets the security_policy_id of this UpdateSecurityPolicyRequest.
+        r"""Sets the security_policy_id of this UpdateSecurityPolicyRequest.
 
         自定义安全策略的ID。
 
@@ -71,7 +71,7 @@ class UpdateSecurityPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityPolicyRequest.
+        r"""Gets the body of this UpdateSecurityPolicyRequest.
 
         :return: The body of this UpdateSecurityPolicyRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateSecurityPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityPolicyRequest.
+        r"""Sets the body of this UpdateSecurityPolicyRequest.
 
         :param body: The body of this UpdateSecurityPolicyRequest.
         :type body: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequestBody`

@@ -33,7 +33,7 @@ class AccessPreviewSummary:
     }
 
     def __init__(self, access_preview_id=None, analyzer_id=None, created_at=None, status=None, status_reason=None):
-        """AccessPreviewSummary
+        r"""AccessPreviewSummary
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class AccessPreviewSummary:
 
     @property
     def access_preview_id(self):
-        """Gets the access_preview_id of this AccessPreviewSummary.
+        r"""Gets the access_preview_id of this AccessPreviewSummary.
 
         访问预览的唯一标识符。
 
@@ -78,7 +78,7 @@ class AccessPreviewSummary:
 
     @access_preview_id.setter
     def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this AccessPreviewSummary.
+        r"""Sets the access_preview_id of this AccessPreviewSummary.
 
         访问预览的唯一标识符。
 
@@ -89,7 +89,7 @@ class AccessPreviewSummary:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this AccessPreviewSummary.
+        r"""Gets the analyzer_id of this AccessPreviewSummary.
 
         分析器的唯一标识符。
 
@@ -100,7 +100,7 @@ class AccessPreviewSummary:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this AccessPreviewSummary.
+        r"""Sets the analyzer_id of this AccessPreviewSummary.
 
         分析器的唯一标识符。
 
@@ -111,7 +111,7 @@ class AccessPreviewSummary:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AccessPreviewSummary.
+        r"""Gets the created_at of this AccessPreviewSummary.
 
         访问预览创建时间。
 
@@ -122,7 +122,7 @@ class AccessPreviewSummary:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AccessPreviewSummary.
+        r"""Sets the created_at of this AccessPreviewSummary.
 
         访问预览创建时间。
 
@@ -133,7 +133,7 @@ class AccessPreviewSummary:
 
     @property
     def status(self):
-        """Gets the status of this AccessPreviewSummary.
+        r"""Gets the status of this AccessPreviewSummary.
 
         :return: The status of this AccessPreviewSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
@@ -142,7 +142,7 @@ class AccessPreviewSummary:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessPreviewSummary.
+        r"""Sets the status of this AccessPreviewSummary.
 
         :param status: The status of this AccessPreviewSummary.
         :type status: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
@@ -151,7 +151,7 @@ class AccessPreviewSummary:
 
     @property
     def status_reason(self):
-        """Gets the status_reason of this AccessPreviewSummary.
+        r"""Gets the status_reason of this AccessPreviewSummary.
 
         :return: The status_reason of this AccessPreviewSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewStatusReason`
@@ -160,7 +160,7 @@ class AccessPreviewSummary:
 
     @status_reason.setter
     def status_reason(self, status_reason):
-        """Sets the status_reason of this AccessPreviewSummary.
+        r"""Sets the status_reason of this AccessPreviewSummary.
 
         :param status_reason: The status_reason of this AccessPreviewSummary.
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewStatusReason`

@@ -29,7 +29,7 @@ class ChangeServerNetworkInterfaceRequest:
     }
 
     def __init__(self, port_id=None, server_id=None, body=None):
-        """ChangeServerNetworkInterfaceRequest
+        r"""ChangeServerNetworkInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChangeServerNetworkInterfaceRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ChangeServerNetworkInterfaceRequest.
+        r"""Gets the port_id of this ChangeServerNetworkInterfaceRequest.
 
         网卡port id
 
@@ -66,7 +66,7 @@ class ChangeServerNetworkInterfaceRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ChangeServerNetworkInterfaceRequest.
+        r"""Sets the port_id of this ChangeServerNetworkInterfaceRequest.
 
         网卡port id
 
@@ -77,7 +77,7 @@ class ChangeServerNetworkInterfaceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeServerNetworkInterfaceRequest.
+        r"""Gets the server_id of this ChangeServerNetworkInterfaceRequest.
 
         云服务器ID。
 
@@ -88,7 +88,7 @@ class ChangeServerNetworkInterfaceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeServerNetworkInterfaceRequest.
+        r"""Sets the server_id of this ChangeServerNetworkInterfaceRequest.
 
         云服务器ID。
 
@@ -99,7 +99,7 @@ class ChangeServerNetworkInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeServerNetworkInterfaceRequest.
+        r"""Gets the body of this ChangeServerNetworkInterfaceRequest.
 
         :return: The body of this ChangeServerNetworkInterfaceRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerNetworkInterfaceRequestBody`
@@ -108,7 +108,7 @@ class ChangeServerNetworkInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeServerNetworkInterfaceRequest.
+        r"""Sets the body of this ChangeServerNetworkInterfaceRequest.
 
         :param body: The body of this ChangeServerNetworkInterfaceRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ChangeServerNetworkInterfaceRequestBody`

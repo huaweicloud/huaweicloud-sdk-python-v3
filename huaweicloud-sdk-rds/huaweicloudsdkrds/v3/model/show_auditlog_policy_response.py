@@ -30,7 +30,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, keep_days=None, audit_types=None, all_audit_log_action=None):
-        """ShowAuditlogPolicyResponse
+        r"""ShowAuditlogPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this ShowAuditlogPolicyResponse.
+        r"""Gets the keep_days of this ShowAuditlogPolicyResponse.
 
         审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
 
@@ -69,7 +69,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this ShowAuditlogPolicyResponse.
+        r"""Sets the keep_days of this ShowAuditlogPolicyResponse.
 
         审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
 
@@ -80,7 +80,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @property
     def audit_types(self):
-        """Gets the audit_types of this ShowAuditlogPolicyResponse.
+        r"""Gets the audit_types of this ShowAuditlogPolicyResponse.
 
         审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
 
@@ -91,7 +91,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @audit_types.setter
     def audit_types(self, audit_types):
-        """Sets the audit_types of this ShowAuditlogPolicyResponse.
+        r"""Sets the audit_types of this ShowAuditlogPolicyResponse.
 
         审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
 
@@ -102,7 +102,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @property
     def all_audit_log_action(self):
-        """Gets the all_audit_log_action of this ShowAuditlogPolicyResponse.
+        r"""Gets the all_audit_log_action of this ShowAuditlogPolicyResponse.
 
         审计记录的所有操作类型。
 
@@ -113,7 +113,7 @@ class ShowAuditlogPolicyResponse(SdkResponse):
 
     @all_audit_log_action.setter
     def all_audit_log_action(self, all_audit_log_action):
-        """Sets the all_audit_log_action of this ShowAuditlogPolicyResponse.
+        r"""Sets the all_audit_log_action of this ShowAuditlogPolicyResponse.
 
         审计记录的所有操作类型。
 

@@ -27,7 +27,7 @@ class DownloadDataTypeEnum:
     }
 
     def __init__(self):
-        """DownloadDataTypeEnum
+        r"""DownloadDataTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class CreatePreheatingTasksRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreatePreheatingTasksRequest
+        r"""CreatePreheatingTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePreheatingTasksRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePreheatingTasksRequest.
+        r"""Gets the enterprise_project_id of this CreatePreheatingTasksRequest.
 
         当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存预热任务，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -61,7 +61,7 @@ class CreatePreheatingTasksRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePreheatingTasksRequest.
+        r"""Sets the enterprise_project_id of this CreatePreheatingTasksRequest.
 
         当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存预热任务，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -72,7 +72,7 @@ class CreatePreheatingTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePreheatingTasksRequest.
+        r"""Gets the body of this CreatePreheatingTasksRequest.
 
         :return: The body of this CreatePreheatingTasksRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.PreheatingTaskRequest`
@@ -81,7 +81,7 @@ class CreatePreheatingTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePreheatingTasksRequest.
+        r"""Sets the body of this CreatePreheatingTasksRequest.
 
         :param body: The body of this CreatePreheatingTasksRequest.
         :type body: :class:`huaweicloudsdkcdn.v2.PreheatingTaskRequest`

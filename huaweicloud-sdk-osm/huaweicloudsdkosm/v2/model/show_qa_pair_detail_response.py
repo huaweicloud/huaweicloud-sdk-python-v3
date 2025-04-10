@@ -30,7 +30,7 @@ class ShowQaPairDetailResponse(SdkResponse):
     }
 
     def __init__(self, qapair=None, error_code=None, error_msg=None):
-        """ShowQaPairDetailResponse
+        r"""ShowQaPairDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowQaPairDetailResponse(SdkResponse):
 
     @property
     def qapair(self):
-        """Gets the qapair of this ShowQaPairDetailResponse.
+        r"""Gets the qapair of this ShowQaPairDetailResponse.
 
         :return: The qapair of this ShowQaPairDetailResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.QaPair`
@@ -67,7 +67,7 @@ class ShowQaPairDetailResponse(SdkResponse):
 
     @qapair.setter
     def qapair(self, qapair):
-        """Sets the qapair of this ShowQaPairDetailResponse.
+        r"""Sets the qapair of this ShowQaPairDetailResponse.
 
         :param qapair: The qapair of this ShowQaPairDetailResponse.
         :type qapair: :class:`huaweicloudsdkosm.v2.QaPair`
@@ -76,7 +76,7 @@ class ShowQaPairDetailResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowQaPairDetailResponse.
+        r"""Gets the error_code of this ShowQaPairDetailResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class ShowQaPairDetailResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowQaPairDetailResponse.
+        r"""Sets the error_code of this ShowQaPairDetailResponse.
 
         错误码
 
@@ -98,7 +98,7 @@ class ShowQaPairDetailResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowQaPairDetailResponse.
+        r"""Gets the error_msg of this ShowQaPairDetailResponse.
 
         错误描述
 
@@ -109,7 +109,7 @@ class ShowQaPairDetailResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowQaPairDetailResponse.
+        r"""Sets the error_msg of this ShowQaPairDetailResponse.
 
         错误描述
 

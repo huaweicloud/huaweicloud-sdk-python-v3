@@ -32,7 +32,7 @@ class ListWorkOrdersResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, work_orders=None):
-        """ListWorkOrdersResponse
+        r"""ListWorkOrdersResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkOrdersResponse.
+        r"""Gets the limit of this ListWorkOrdersResponse.
 
         每页的记录数
 
@@ -76,7 +76,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkOrdersResponse.
+        r"""Sets the limit of this ListWorkOrdersResponse.
 
         每页的记录数
 
@@ -87,7 +87,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkOrdersResponse.
+        r"""Gets the offset of this ListWorkOrdersResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -98,7 +98,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkOrdersResponse.
+        r"""Sets the offset of this ListWorkOrdersResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -109,7 +109,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkOrdersResponse.
+        r"""Gets the count of this ListWorkOrdersResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkOrdersResponse.
+        r"""Sets the count of this ListWorkOrdersResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @property
     def work_orders(self):
-        """Gets the work_orders of this ListWorkOrdersResponse.
+        r"""Gets the work_orders of this ListWorkOrdersResponse.
 
         业务受理单列表
 
@@ -142,7 +142,7 @@ class ListWorkOrdersResponse(SdkResponse):
 
     @work_orders.setter
     def work_orders(self, work_orders):
-        """Sets the work_orders of this ListWorkOrdersResponse.
+        r"""Sets the work_orders of this ListWorkOrdersResponse.
 
         业务受理单列表
 

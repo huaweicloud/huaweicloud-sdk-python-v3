@@ -26,7 +26,7 @@ class ListEvent2alarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListEvent2alarmRuleResponse
+        r"""ListEvent2alarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEvent2alarmRuleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListEvent2alarmRuleResponse.
+        r"""Gets the body of this ListEvent2alarmRuleResponse.
 
         :return: The body of this ListEvent2alarmRuleResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v2.Event2alarmRuleBody`]
@@ -53,7 +53,7 @@ class ListEvent2alarmRuleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEvent2alarmRuleResponse.
+        r"""Sets the body of this ListEvent2alarmRuleResponse.
 
         :param body: The body of this ListEvent2alarmRuleResponse.
         :type body: list[:class:`huaweicloudsdkaom.v2.Event2alarmRuleBody`]

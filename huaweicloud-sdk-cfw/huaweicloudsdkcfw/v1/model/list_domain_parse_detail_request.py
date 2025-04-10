@@ -31,7 +31,7 @@ class ListDomainParseDetailRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, fw_instance_id=None, address_type=None):
-        """ListDomainParseDetailRequest
+        r"""ListDomainParseDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListDomainParseDetailRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListDomainParseDetailRequest.
+        r"""Gets the domain_name of this ListDomainParseDetailRequest.
 
         域名，如www.test.com
 
@@ -74,7 +74,7 @@ class ListDomainParseDetailRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListDomainParseDetailRequest.
+        r"""Sets the domain_name of this ListDomainParseDetailRequest.
 
         域名，如www.test.com
 
@@ -85,7 +85,7 @@ class ListDomainParseDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDomainParseDetailRequest.
+        r"""Gets the enterprise_project_id of this ListDomainParseDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -96,7 +96,7 @@ class ListDomainParseDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDomainParseDetailRequest.
+        r"""Sets the enterprise_project_id of this ListDomainParseDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -107,7 +107,7 @@ class ListDomainParseDetailRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListDomainParseDetailRequest.
+        r"""Gets the fw_instance_id of this ListDomainParseDetailRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -118,7 +118,7 @@ class ListDomainParseDetailRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListDomainParseDetailRequest.
+        r"""Sets the fw_instance_id of this ListDomainParseDetailRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -129,7 +129,7 @@ class ListDomainParseDetailRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this ListDomainParseDetailRequest.
+        r"""Gets the address_type of this ListDomainParseDetailRequest.
 
         地址类型，0 ipv4,1 ipv6
 
@@ -140,7 +140,7 @@ class ListDomainParseDetailRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this ListDomainParseDetailRequest.
+        r"""Sets the address_type of this ListDomainParseDetailRequest.
 
         地址类型，0 ipv4,1 ipv6
 

@@ -28,7 +28,7 @@ class ListCompetitionWorksResponse(SdkResponse):
     }
 
     def __init__(self, works=None, total=None):
-        """ListCompetitionWorksResponse
+        r"""ListCompetitionWorksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCompetitionWorksResponse(SdkResponse):
 
     @property
     def works(self):
-        """Gets the works of this ListCompetitionWorksResponse.
+        r"""Gets the works of this ListCompetitionWorksResponse.
 
         作品列表
 
@@ -62,7 +62,7 @@ class ListCompetitionWorksResponse(SdkResponse):
 
     @works.setter
     def works(self, works):
-        """Sets the works of this ListCompetitionWorksResponse.
+        r"""Sets the works of this ListCompetitionWorksResponse.
 
         作品列表
 
@@ -73,7 +73,7 @@ class ListCompetitionWorksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCompetitionWorksResponse.
+        r"""Gets the total of this ListCompetitionWorksResponse.
 
         作品总数
 
@@ -84,7 +84,7 @@ class ListCompetitionWorksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCompetitionWorksResponse.
+        r"""Sets the total of this ListCompetitionWorksResponse.
 
         作品总数
 

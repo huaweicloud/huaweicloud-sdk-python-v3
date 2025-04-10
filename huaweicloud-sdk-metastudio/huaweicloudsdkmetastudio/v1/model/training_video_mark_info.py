@@ -27,7 +27,7 @@ class TrainingVideoMarkInfo:
     }
 
     def __init__(self, video_start_time=None, video_end_time=None):
-        """TrainingVideoMarkInfo
+        r"""TrainingVideoMarkInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TrainingVideoMarkInfo:
 
     @property
     def video_start_time(self):
-        """Gets the video_start_time of this TrainingVideoMarkInfo.
+        r"""Gets the video_start_time of this TrainingVideoMarkInfo.
 
         训练视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -61,7 +61,7 @@ class TrainingVideoMarkInfo:
 
     @video_start_time.setter
     def video_start_time(self, video_start_time):
-        """Sets the video_start_time of this TrainingVideoMarkInfo.
+        r"""Sets the video_start_time of this TrainingVideoMarkInfo.
 
         训练视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -72,7 +72,7 @@ class TrainingVideoMarkInfo:
 
     @property
     def video_end_time(self):
-        """Gets the video_end_time of this TrainingVideoMarkInfo.
+        r"""Gets the video_end_time of this TrainingVideoMarkInfo.
 
         训练视频结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -83,7 +83,7 @@ class TrainingVideoMarkInfo:
 
     @video_end_time.setter
     def video_end_time(self, video_end_time):
-        """Sets the video_end_time of this TrainingVideoMarkInfo.
+        r"""Sets the video_end_time of this TrainingVideoMarkInfo.
 
         训练视频结束时间。格式：“HH:MM:SS.mmm”。
 

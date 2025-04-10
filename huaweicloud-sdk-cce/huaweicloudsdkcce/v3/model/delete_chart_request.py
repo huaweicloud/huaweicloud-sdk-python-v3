@@ -25,7 +25,7 @@ class DeleteChartRequest:
     }
 
     def __init__(self, chart_id=None):
-        """DeleteChartRequest
+        r"""DeleteChartRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteChartRequest:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this DeleteChartRequest.
+        r"""Gets the chart_id of this DeleteChartRequest.
 
         模板的ID
 
@@ -53,7 +53,7 @@ class DeleteChartRequest:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this DeleteChartRequest.
+        r"""Sets the chart_id of this DeleteChartRequest.
 
         模板的ID
 

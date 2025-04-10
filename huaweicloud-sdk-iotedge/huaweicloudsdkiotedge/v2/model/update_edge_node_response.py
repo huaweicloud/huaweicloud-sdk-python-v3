@@ -94,7 +94,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     }
 
     def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, npu_library_path=None, container_version=None, type=None, security_level=None, reliability_level=None, storage_period=None, base_path=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
-        """UpdateEdgeNodeResponse
+        r"""UpdateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -282,7 +282,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this UpdateEdgeNodeResponse.
+        r"""Gets the log_configs of this UpdateEdgeNodeResponse.
 
         边缘节点在IEF的日志配置
 
@@ -293,7 +293,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this UpdateEdgeNodeResponse.
+        r"""Sets the log_configs of this UpdateEdgeNodeResponse.
 
         边缘节点在IEF的日志配置
 
@@ -304,7 +304,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def ha_config(self):
-        """Gets the ha_config of this UpdateEdgeNodeResponse.
+        r"""Gets the ha_config of this UpdateEdgeNodeResponse.
 
         :return: The ha_config of this UpdateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
@@ -313,7 +313,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @ha_config.setter
     def ha_config(self, ha_config):
-        """Sets the ha_config of this UpdateEdgeNodeResponse.
+        r"""Sets the ha_config of this UpdateEdgeNodeResponse.
 
         :param ha_config: The ha_config of this UpdateEdgeNodeResponse.
         :type ha_config: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
@@ -322,7 +322,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateEdgeNodeResponse.
+        r"""Gets the edge_node_id of this UpdateEdgeNodeResponse.
 
         边缘节点Id
 
@@ -333,7 +333,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateEdgeNodeResponse.
+        r"""Sets the edge_node_id of this UpdateEdgeNodeResponse.
 
         边缘节点Id
 
@@ -344,7 +344,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateEdgeNodeResponse.
+        r"""Gets the instance_id of this UpdateEdgeNodeResponse.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -355,7 +355,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateEdgeNodeResponse.
+        r"""Sets the instance_id of this UpdateEdgeNodeResponse.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -366,7 +366,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this UpdateEdgeNodeResponse.
+        r"""Gets the product_id of this UpdateEdgeNodeResponse.
 
         边缘节点关联的产品ID，用于唯一标识一个产品模型。
 
@@ -377,7 +377,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this UpdateEdgeNodeResponse.
+        r"""Sets the product_id of this UpdateEdgeNodeResponse.
 
         边缘节点关联的产品ID，用于唯一标识一个产品模型。
 
@@ -388,7 +388,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def product_name(self):
-        """Gets the product_name of this UpdateEdgeNodeResponse.
+        r"""Gets the product_name of this UpdateEdgeNodeResponse.
 
         边缘节点关联的产品名称。
 
@@ -399,7 +399,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this UpdateEdgeNodeResponse.
+        r"""Sets the product_name of this UpdateEdgeNodeResponse.
 
         边缘节点关联的产品名称。
 
@@ -410,7 +410,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def space_id(self):
-        """Gets the space_id of this UpdateEdgeNodeResponse.
+        r"""Gets the space_id of this UpdateEdgeNodeResponse.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -421,7 +421,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this UpdateEdgeNodeResponse.
+        r"""Sets the space_id of this UpdateEdgeNodeResponse.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -432,7 +432,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def resource_spec_types(self):
-        """Gets the resource_spec_types of this UpdateEdgeNodeResponse.
+        r"""Gets the resource_spec_types of this UpdateEdgeNodeResponse.
 
         节点所购买的资源类型的列表
 
@@ -443,7 +443,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @resource_spec_types.setter
     def resource_spec_types(self, resource_spec_types):
-        """Sets the resource_spec_types of this UpdateEdgeNodeResponse.
+        r"""Sets the resource_spec_types of this UpdateEdgeNodeResponse.
 
         节点所购买的资源类型的列表
 
@@ -454,7 +454,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this UpdateEdgeNodeResponse.
+        r"""Gets the resource_ids of this UpdateEdgeNodeResponse.
 
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
@@ -465,7 +465,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this UpdateEdgeNodeResponse.
+        r"""Sets the resource_ids of this UpdateEdgeNodeResponse.
 
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
@@ -476,7 +476,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this UpdateEdgeNodeResponse.
+        r"""Gets the ips of this UpdateEdgeNodeResponse.
 
         边缘节点主机ip
 
@@ -487,7 +487,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this UpdateEdgeNodeResponse.
+        r"""Sets the ips of this UpdateEdgeNodeResponse.
 
         边缘节点主机ip
 
@@ -498,7 +498,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEdgeNodeResponse.
+        r"""Gets the name of this UpdateEdgeNodeResponse.
 
         边缘节点名称
 
@@ -509,7 +509,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEdgeNodeResponse.
+        r"""Sets the name of this UpdateEdgeNodeResponse.
 
         边缘节点名称
 
@@ -520,7 +520,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateEdgeNodeResponse.
+        r"""Gets the state of this UpdateEdgeNodeResponse.
 
         边缘节点状态
 
@@ -531,7 +531,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateEdgeNodeResponse.
+        r"""Sets the state of this UpdateEdgeNodeResponse.
 
         边缘节点状态
 
@@ -542,7 +542,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def software_version(self):
-        """Gets the software_version of this UpdateEdgeNodeResponse.
+        r"""Gets the software_version of this UpdateEdgeNodeResponse.
 
         边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
@@ -553,7 +553,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @software_version.setter
     def software_version(self, software_version):
-        """Sets the software_version of this UpdateEdgeNodeResponse.
+        r"""Sets the software_version of this UpdateEdgeNodeResponse.
 
         边缘应用id，只允许数字、英文小写、中划线，切必须以字母或数字结尾
 
@@ -564,7 +564,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateEdgeNodeResponse.
+        r"""Gets the create_time of this UpdateEdgeNodeResponse.
 
         边缘节点创建时间
 
@@ -575,7 +575,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateEdgeNodeResponse.
+        r"""Sets the create_time of this UpdateEdgeNodeResponse.
 
         边缘节点创建时间
 
@@ -586,7 +586,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateEdgeNodeResponse.
+        r"""Gets the update_time of this UpdateEdgeNodeResponse.
 
         边缘节点更新时间
 
@@ -597,7 +597,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateEdgeNodeResponse.
+        r"""Sets the update_time of this UpdateEdgeNodeResponse.
 
         边缘节点更新时间
 
@@ -608,7 +608,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def os_name(self):
-        """Gets the os_name of this UpdateEdgeNodeResponse.
+        r"""Gets the os_name of this UpdateEdgeNodeResponse.
 
         边缘节点操作系统名称
 
@@ -619,7 +619,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this UpdateEdgeNodeResponse.
+        r"""Sets the os_name of this UpdateEdgeNodeResponse.
 
         边缘节点操作系统名称
 
@@ -630,7 +630,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def arch(self):
-        """Gets the arch of this UpdateEdgeNodeResponse.
+        r"""Gets the arch of this UpdateEdgeNodeResponse.
 
         边缘节点操作系统架构
 
@@ -641,7 +641,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this UpdateEdgeNodeResponse.
+        r"""Sets the arch of this UpdateEdgeNodeResponse.
 
         边缘节点操作系统架构
 
@@ -652,7 +652,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def host_name(self):
-        """Gets the host_name of this UpdateEdgeNodeResponse.
+        r"""Gets the host_name of this UpdateEdgeNodeResponse.
 
         边缘节点主机名
 
@@ -663,7 +663,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this UpdateEdgeNodeResponse.
+        r"""Sets the host_name of this UpdateEdgeNodeResponse.
 
         边缘节点主机名
 
@@ -674,7 +674,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def nics(self):
-        """Gets the nics of this UpdateEdgeNodeResponse.
+        r"""Gets the nics of this UpdateEdgeNodeResponse.
 
         边缘节点网络网卡信息
 
@@ -685,7 +685,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this UpdateEdgeNodeResponse.
+        r"""Sets the nics of this UpdateEdgeNodeResponse.
 
         边缘节点网络网卡信息
 
@@ -696,7 +696,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def specification(self):
-        """Gets the specification of this UpdateEdgeNodeResponse.
+        r"""Gets the specification of this UpdateEdgeNodeResponse.
 
         网络规格，如4 cores | 3867 MB
 
@@ -707,7 +707,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this UpdateEdgeNodeResponse.
+        r"""Sets the specification of this UpdateEdgeNodeResponse.
 
         网络规格，如4 cores | 3867 MB
 
@@ -718,7 +718,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def ai_card_type(self):
-        """Gets the ai_card_type of this UpdateEdgeNodeResponse.
+        r"""Gets the ai_card_type of this UpdateEdgeNodeResponse.
 
         AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
@@ -729,7 +729,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @ai_card_type.setter
     def ai_card_type(self, ai_card_type):
-        """Sets the ai_card_type of this UpdateEdgeNodeResponse.
+        r"""Sets the ai_card_type of this UpdateEdgeNodeResponse.
 
         AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
@@ -740,7 +740,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def npu_library_path(self):
-        """Gets the npu_library_path of this UpdateEdgeNodeResponse.
+        r"""Gets the npu_library_path of this UpdateEdgeNodeResponse.
 
         npu驱动动态库路径
 
@@ -751,7 +751,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @npu_library_path.setter
     def npu_library_path(self, npu_library_path):
-        """Sets the npu_library_path of this UpdateEdgeNodeResponse.
+        r"""Sets the npu_library_path of this UpdateEdgeNodeResponse.
 
         npu驱动动态库路径
 
@@ -762,7 +762,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def container_version(self):
-        """Gets the container_version of this UpdateEdgeNodeResponse.
+        r"""Gets the container_version of this UpdateEdgeNodeResponse.
 
         容器运行时版本
 
@@ -773,7 +773,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @container_version.setter
     def container_version(self, container_version):
-        """Sets the container_version of this UpdateEdgeNodeResponse.
+        r"""Sets the container_version of this UpdateEdgeNodeResponse.
 
         容器运行时版本
 
@@ -784,7 +784,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateEdgeNodeResponse.
+        r"""Gets the type of this UpdateEdgeNodeResponse.
 
         节点所属资源类型：advanced|standard
 
@@ -795,7 +795,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateEdgeNodeResponse.
+        r"""Sets the type of this UpdateEdgeNodeResponse.
 
         节点所属资源类型：advanced|standard
 
@@ -806,7 +806,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def security_level(self):
-        """Gets the security_level of this UpdateEdgeNodeResponse.
+        r"""Gets the security_level of this UpdateEdgeNodeResponse.
 
         节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
 
@@ -817,7 +817,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this UpdateEdgeNodeResponse.
+        r"""Sets the security_level of this UpdateEdgeNodeResponse.
 
         节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
 
@@ -828,7 +828,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def reliability_level(self):
-        """Gets the reliability_level of this UpdateEdgeNodeResponse.
+        r"""Gets the reliability_level of this UpdateEdgeNodeResponse.
 
         节点的可靠性等级。
 
@@ -839,7 +839,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @reliability_level.setter
     def reliability_level(self, reliability_level):
-        """Sets the reliability_level of this UpdateEdgeNodeResponse.
+        r"""Sets the reliability_level of this UpdateEdgeNodeResponse.
 
         节点的可靠性等级。
 
@@ -850,7 +850,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def storage_period(self):
-        """Gets the storage_period of this UpdateEdgeNodeResponse.
+        r"""Gets the storage_period of this UpdateEdgeNodeResponse.
 
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
@@ -861,7 +861,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @storage_period.setter
     def storage_period(self, storage_period):
-        """Sets the storage_period of this UpdateEdgeNodeResponse.
+        r"""Sets the storage_period of this UpdateEdgeNodeResponse.
 
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
@@ -872,7 +872,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def base_path(self):
-        """Gets the base_path of this UpdateEdgeNodeResponse.
+        r"""Gets the base_path of this UpdateEdgeNodeResponse.
 
         :return: The base_path of this UpdateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
@@ -881,7 +881,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this UpdateEdgeNodeResponse.
+        r"""Sets the base_path of this UpdateEdgeNodeResponse.
 
         :param base_path: The base_path of this UpdateEdgeNodeResponse.
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
@@ -890,7 +890,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def hardware_model(self):
-        """Gets the hardware_model of this UpdateEdgeNodeResponse.
+        r"""Gets the hardware_model of this UpdateEdgeNodeResponse.
 
         注册节点网关配置
 
@@ -901,7 +901,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @hardware_model.setter
     def hardware_model(self, hardware_model):
-        """Sets the hardware_model of this UpdateEdgeNodeResponse.
+        r"""Sets the hardware_model of this UpdateEdgeNodeResponse.
 
         注册节点网关配置
 
@@ -912,7 +912,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def offline_cache_configs(self):
-        """Gets the offline_cache_configs of this UpdateEdgeNodeResponse.
+        r"""Gets the offline_cache_configs of this UpdateEdgeNodeResponse.
 
         :return: The offline_cache_configs of this UpdateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
@@ -921,7 +921,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @offline_cache_configs.setter
     def offline_cache_configs(self, offline_cache_configs):
-        """Sets the offline_cache_configs of this UpdateEdgeNodeResponse.
+        r"""Sets the offline_cache_configs of this UpdateEdgeNodeResponse.
 
         :param offline_cache_configs: The offline_cache_configs of this UpdateEdgeNodeResponse.
         :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
@@ -930,7 +930,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def device_auth_info(self):
-        """Gets the device_auth_info of this UpdateEdgeNodeResponse.
+        r"""Gets the device_auth_info of this UpdateEdgeNodeResponse.
 
         :return: The device_auth_info of this UpdateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
@@ -939,7 +939,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @device_auth_info.setter
     def device_auth_info(self, device_auth_info):
-        """Sets the device_auth_info of this UpdateEdgeNodeResponse.
+        r"""Sets the device_auth_info of this UpdateEdgeNodeResponse.
 
         :param device_auth_info: The device_auth_info of this UpdateEdgeNodeResponse.
         :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDisplayDTO`
@@ -948,7 +948,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def device_data_format(self):
-        """Gets the device_data_format of this UpdateEdgeNodeResponse.
+        r"""Gets the device_data_format of this UpdateEdgeNodeResponse.
 
         节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
 
@@ -959,7 +959,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @device_data_format.setter
     def device_data_format(self, device_data_format):
-        """Sets the device_data_format of this UpdateEdgeNodeResponse.
+        r"""Sets the device_data_format of this UpdateEdgeNodeResponse.
 
         节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
 
@@ -970,7 +970,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def automatic_upgrade(self):
-        """Gets the automatic_upgrade of this UpdateEdgeNodeResponse.
+        r"""Gets the automatic_upgrade of this UpdateEdgeNodeResponse.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -981,7 +981,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @automatic_upgrade.setter
     def automatic_upgrade(self, automatic_upgrade):
-        """Sets the automatic_upgrade of this UpdateEdgeNodeResponse.
+        r"""Sets the automatic_upgrade of this UpdateEdgeNodeResponse.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -992,7 +992,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def device_data_record(self):
-        """Gets the device_data_record of this UpdateEdgeNodeResponse.
+        r"""Gets the device_data_record of this UpdateEdgeNodeResponse.
 
         :return: The device_data_record of this UpdateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -1001,7 +1001,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @device_data_record.setter
     def device_data_record(self, device_data_record):
-        """Sets the device_data_record of this UpdateEdgeNodeResponse.
+        r"""Sets the device_data_record of this UpdateEdgeNodeResponse.
 
         :param device_data_record: The device_data_record of this UpdateEdgeNodeResponse.
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -1010,7 +1010,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def metric_report(self):
-        """Gets the metric_report of this UpdateEdgeNodeResponse.
+        r"""Gets the metric_report of this UpdateEdgeNodeResponse.
 
         omagent监控运维工具是否上报指标
 
@@ -1021,7 +1021,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @metric_report.setter
     def metric_report(self, metric_report):
-        """Sets the metric_report of this UpdateEdgeNodeResponse.
+        r"""Sets the metric_report of this UpdateEdgeNodeResponse.
 
         omagent监控运维工具是否上报指标
 

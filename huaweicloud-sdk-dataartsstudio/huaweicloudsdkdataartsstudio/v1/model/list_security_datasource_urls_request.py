@@ -31,7 +31,7 @@ class ListSecurityDatasourceUrlsRequest:
     }
 
     def __init__(self, workspace=None, cluster_id=None, datasource_type=None, parent_permission_set_id=None):
-        """ListSecurityDatasourceUrlsRequest
+        r"""ListSecurityDatasourceUrlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDatasourceUrlsRequest.
+        r"""Gets the workspace of this ListSecurityDatasourceUrlsRequest.
 
         DataArts Studio工作空间ID
 
@@ -74,7 +74,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDatasourceUrlsRequest.
+        r"""Sets the workspace of this ListSecurityDatasourceUrlsRequest.
 
         DataArts Studio工作空间ID
 
@@ -85,7 +85,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSecurityDatasourceUrlsRequest.
+        r"""Gets the cluster_id of this ListSecurityDatasourceUrlsRequest.
 
         集群id
 
@@ -96,7 +96,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSecurityDatasourceUrlsRequest.
+        r"""Sets the cluster_id of this ListSecurityDatasourceUrlsRequest.
 
         集群id
 
@@ -107,7 +107,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this ListSecurityDatasourceUrlsRequest.
+        r"""Gets the datasource_type of this ListSecurityDatasourceUrlsRequest.
 
         数据源类型,HIVE
 
@@ -118,7 +118,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this ListSecurityDatasourceUrlsRequest.
+        r"""Sets the datasource_type of this ListSecurityDatasourceUrlsRequest.
 
         数据源类型,HIVE
 
@@ -129,7 +129,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @property
     def parent_permission_set_id(self):
-        """Gets the parent_permission_set_id of this ListSecurityDatasourceUrlsRequest.
+        r"""Gets the parent_permission_set_id of this ListSecurityDatasourceUrlsRequest.
 
         父权限集ID。获取方法请参见[查询权限集列表](ListSecurityPermissionSets.xml) 注意： * 当该值为父权限集ID时，则基于父权限集中的权限查询
 
@@ -140,7 +140,7 @@ class ListSecurityDatasourceUrlsRequest:
 
     @parent_permission_set_id.setter
     def parent_permission_set_id(self, parent_permission_set_id):
-        """Sets the parent_permission_set_id of this ListSecurityDatasourceUrlsRequest.
+        r"""Sets the parent_permission_set_id of this ListSecurityDatasourceUrlsRequest.
 
         父权限集ID。获取方法请参见[查询权限集列表](ListSecurityPermissionSets.xml) 注意： * 当该值为父权限集ID时，则基于父权限集中的权限查询
 

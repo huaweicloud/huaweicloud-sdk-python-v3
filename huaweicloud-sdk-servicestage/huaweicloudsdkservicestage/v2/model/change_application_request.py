@@ -27,7 +27,7 @@ class ChangeApplicationRequest:
     }
 
     def __init__(self, application_id=None, body=None):
-        """ChangeApplicationRequest
+        r"""ChangeApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeApplicationRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ChangeApplicationRequest.
+        r"""Gets the application_id of this ChangeApplicationRequest.
 
         应用ID。
 
@@ -60,7 +60,7 @@ class ChangeApplicationRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ChangeApplicationRequest.
+        r"""Sets the application_id of this ChangeApplicationRequest.
 
         应用ID。
 
@@ -71,7 +71,7 @@ class ChangeApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeApplicationRequest.
+        r"""Gets the body of this ChangeApplicationRequest.
 
         :return: The body of this ChangeApplicationRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationModify`
@@ -80,7 +80,7 @@ class ChangeApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeApplicationRequest.
+        r"""Sets the body of this ChangeApplicationRequest.
 
         :param body: The body of this ChangeApplicationRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.ApplicationModify`

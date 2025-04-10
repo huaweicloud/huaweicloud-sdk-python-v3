@@ -29,7 +29,7 @@ class ObsObject:
     }
 
     def __init__(self, file_name=None, size=None, last_modified=None):
-        """ObsObject
+        r"""ObsObject
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObsObject:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ObsObject.
+        r"""Gets the file_name of this ObsObject.
 
         对象的key 
 
@@ -68,7 +68,7 @@ class ObsObject:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ObsObject.
+        r"""Sets the file_name of this ObsObject.
 
         对象的key 
 
@@ -79,7 +79,7 @@ class ObsObject:
 
     @property
     def size(self):
-        """Gets the size of this ObsObject.
+        r"""Gets the size of this ObsObject.
 
         文件大小 
 
@@ -90,7 +90,7 @@ class ObsObject:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ObsObject.
+        r"""Sets the size of this ObsObject.
 
         文件大小 
 
@@ -101,7 +101,7 @@ class ObsObject:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ObsObject.
+        r"""Gets the last_modified of this ObsObject.
 
         文件的最后修改时间 
 
@@ -112,7 +112,7 @@ class ObsObject:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ObsObject.
+        r"""Sets the last_modified of this ObsObject.
 
         文件的最后修改时间 
 

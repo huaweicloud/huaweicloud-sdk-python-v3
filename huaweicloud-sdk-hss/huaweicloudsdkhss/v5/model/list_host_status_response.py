@@ -28,7 +28,7 @@ class ListHostStatusResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListHostStatusResponse
+        r"""ListHostStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHostStatusResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListHostStatusResponse.
+        r"""Gets the total_num of this ListHostStatusResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListHostStatusResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListHostStatusResponse.
+        r"""Sets the total_num of this ListHostStatusResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListHostStatusResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListHostStatusResponse.
+        r"""Gets the data_list of this ListHostStatusResponse.
 
         查询弹性云服务器状态列表
 
@@ -84,7 +84,7 @@ class ListHostStatusResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListHostStatusResponse.
+        r"""Sets the data_list of this ListHostStatusResponse.
 
         查询弹性云服务器状态列表
 

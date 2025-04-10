@@ -33,7 +33,7 @@ class EdgeCloudOption:
     }
 
     def __init__(self, name=None, id=None, description=None, coverage=None, stack=None):
-        """EdgeCloudOption
+        r"""EdgeCloudOption
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class EdgeCloudOption:
 
     @property
     def name(self):
-        """Gets the name of this EdgeCloudOption.
+        r"""Gets the name of this EdgeCloudOption.
 
         边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
 
@@ -80,7 +80,7 @@ class EdgeCloudOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeCloudOption.
+        r"""Sets the name of this EdgeCloudOption.
 
         边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
 
@@ -91,7 +91,7 @@ class EdgeCloudOption:
 
     @property
     def id(self):
-        """Gets the id of this EdgeCloudOption.
+        r"""Gets the id of this EdgeCloudOption.
 
         已有边缘业务ID，该参数用于扩容边缘业务场景。 >-  id与name不可同时为空，同时有值时部署计划无效； - 通过id扩容场景要求区域分布层级与原边缘业务一致； - 区域分布层级为站点级的边缘业务不支持扩容。
 
@@ -102,7 +102,7 @@ class EdgeCloudOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EdgeCloudOption.
+        r"""Sets the id of this EdgeCloudOption.
 
         已有边缘业务ID，该参数用于扩容边缘业务场景。 >-  id与name不可同时为空，同时有值时部署计划无效； - 通过id扩容场景要求区域分布层级与原边缘业务一致； - 区域分布层级为站点级的边缘业务不支持扩容。
 
@@ -113,7 +113,7 @@ class EdgeCloudOption:
 
     @property
     def description(self):
-        """Gets the description of this EdgeCloudOption.
+        r"""Gets the description of this EdgeCloudOption.
 
         描述，缺省值为空字符串。
 
@@ -124,7 +124,7 @@ class EdgeCloudOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeCloudOption.
+        r"""Sets the description of this EdgeCloudOption.
 
         描述，缺省值为空字符串。
 
@@ -135,7 +135,7 @@ class EdgeCloudOption:
 
     @property
     def coverage(self):
-        """Gets the coverage of this EdgeCloudOption.
+        r"""Gets the coverage of this EdgeCloudOption.
 
         :return: The coverage of this EdgeCloudOption.
         :rtype: :class:`huaweicloudsdkiec.v1.Coverage`
@@ -144,7 +144,7 @@ class EdgeCloudOption:
 
     @coverage.setter
     def coverage(self, coverage):
-        """Sets the coverage of this EdgeCloudOption.
+        r"""Sets the coverage of this EdgeCloudOption.
 
         :param coverage: The coverage of this EdgeCloudOption.
         :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`
@@ -153,7 +153,7 @@ class EdgeCloudOption:
 
     @property
     def stack(self):
-        """Gets the stack of this EdgeCloudOption.
+        r"""Gets the stack of this EdgeCloudOption.
 
         :return: The stack of this EdgeCloudOption.
         :rtype: :class:`huaweicloudsdkiec.v1.Stack`
@@ -162,7 +162,7 @@ class EdgeCloudOption:
 
     @stack.setter
     def stack(self, stack):
-        """Sets the stack of this EdgeCloudOption.
+        r"""Sets the stack of this EdgeCloudOption.
 
         :param stack: The stack of this EdgeCloudOption.
         :type stack: :class:`huaweicloudsdkiec.v1.Stack`

@@ -29,7 +29,7 @@ class BackupJobEndpointInfo:
     }
 
     def __init__(self, target_instance_id=None, ms_file_stream_status=None, file_id=None):
-        """BackupJobEndpointInfo
+        r"""BackupJobEndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BackupJobEndpointInfo:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this BackupJobEndpointInfo.
+        r"""Gets the target_instance_id of this BackupJobEndpointInfo.
 
         备份迁移任务恢复目标RDS for SQL Server实例ID。
 
@@ -67,7 +67,7 @@ class BackupJobEndpointInfo:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this BackupJobEndpointInfo.
+        r"""Sets the target_instance_id of this BackupJobEndpointInfo.
 
         备份迁移任务恢复目标RDS for SQL Server实例ID。
 
@@ -78,7 +78,7 @@ class BackupJobEndpointInfo:
 
     @property
     def ms_file_stream_status(self):
-        """Gets the ms_file_stream_status of this BackupJobEndpointInfo.
+        r"""Gets the ms_file_stream_status of this BackupJobEndpointInfo.
 
         目标实例是否开启FileStream模式。可通过RDS for SQL Server详情接口获取。
 
@@ -89,7 +89,7 @@ class BackupJobEndpointInfo:
 
     @ms_file_stream_status.setter
     def ms_file_stream_status(self, ms_file_stream_status):
-        """Sets the ms_file_stream_status of this BackupJobEndpointInfo.
+        r"""Sets the ms_file_stream_status of this BackupJobEndpointInfo.
 
         目标实例是否开启FileStream模式。可通过RDS for SQL Server详情接口获取。
 
@@ -100,7 +100,7 @@ class BackupJobEndpointInfo:
 
     @property
     def file_id(self):
-        """Gets the file_id of this BackupJobEndpointInfo.
+        r"""Gets the file_id of this BackupJobEndpointInfo.
 
         RDS for SQL Server备份文件的文件ID，通过RDS全量恢复时必填。可通过云数据库RDS备份管理页面获取。
 
@@ -111,7 +111,7 @@ class BackupJobEndpointInfo:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this BackupJobEndpointInfo.
+        r"""Sets the file_id of this BackupJobEndpointInfo.
 
         RDS for SQL Server备份文件的文件ID，通过RDS全量恢复时必填。可通过云数据库RDS备份管理页面获取。
 

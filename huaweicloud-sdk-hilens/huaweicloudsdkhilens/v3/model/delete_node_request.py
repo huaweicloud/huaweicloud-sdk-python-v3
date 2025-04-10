@@ -27,7 +27,7 @@ class DeleteNodeRequest:
     }
 
     def __init__(self, node_id=None, force_delete=None):
-        """DeleteNodeRequest
+        r"""DeleteNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteNodeRequest.
+        r"""Gets the node_id of this DeleteNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -60,7 +60,7 @@ class DeleteNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteNodeRequest.
+        r"""Sets the node_id of this DeleteNodeRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -71,7 +71,7 @@ class DeleteNodeRequest:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this DeleteNodeRequest.
+        r"""Gets the force_delete of this DeleteNodeRequest.
 
         是否强制删除，true代表是，false代表否
 
@@ -82,7 +82,7 @@ class DeleteNodeRequest:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this DeleteNodeRequest.
+        r"""Sets the force_delete of this DeleteNodeRequest.
 
         是否强制删除，true代表是，false代表否
 

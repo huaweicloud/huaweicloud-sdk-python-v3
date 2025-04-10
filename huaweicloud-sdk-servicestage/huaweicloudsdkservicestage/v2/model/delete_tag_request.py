@@ -31,7 +31,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, tag_name=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeleteTagRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this DeleteTagRequest.
+        r"""Gets the x_repo_auth of this DeleteTagRequest.
 
         授权名称。
 
@@ -71,7 +71,7 @@ class DeleteTagRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this DeleteTagRequest.
+        r"""Sets the x_repo_auth of this DeleteTagRequest.
 
         授权名称。
 
@@ -82,7 +82,7 @@ class DeleteTagRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteTagRequest.
+        r"""Gets the namespace of this DeleteTagRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -93,7 +93,7 @@ class DeleteTagRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteTagRequest.
+        r"""Sets the namespace of this DeleteTagRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -104,7 +104,7 @@ class DeleteTagRequest:
 
     @property
     def project(self):
-        """Gets the project of this DeleteTagRequest.
+        r"""Gets the project of this DeleteTagRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -115,7 +115,7 @@ class DeleteTagRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this DeleteTagRequest.
+        r"""Sets the project of this DeleteTagRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -126,7 +126,7 @@ class DeleteTagRequest:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this DeleteTagRequest.
+        r"""Gets the tag_name of this DeleteTagRequest.
 
         tag标签名称。
 
@@ -137,7 +137,7 @@ class DeleteTagRequest:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this DeleteTagRequest.
+        r"""Sets the tag_name of this DeleteTagRequest.
 
         tag标签名称。
 

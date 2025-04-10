@@ -37,7 +37,7 @@ class TempRunningData:
     }
 
     def __init__(self, content_method_url=None, crawler_status=None, related_temp_running_id=None, task_run_info_id=None, temp_id=None, temp_name=None, temp_running_status=None):
-        """TempRunningData
+        r"""TempRunningData
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TempRunningData:
 
     @property
     def content_method_url(self):
-        """Gets the content_method_url of this TempRunningData.
+        r"""Gets the content_method_url of this TempRunningData.
 
         请求信息，包括请求名称，方法，url信息
 
@@ -96,7 +96,7 @@ class TempRunningData:
 
     @content_method_url.setter
     def content_method_url(self, content_method_url):
-        """Sets the content_method_url of this TempRunningData.
+        r"""Sets the content_method_url of this TempRunningData.
 
         请求信息，包括请求名称，方法，url信息
 
@@ -107,7 +107,7 @@ class TempRunningData:
 
     @property
     def crawler_status(self):
-        """Gets the crawler_status of this TempRunningData.
+        r"""Gets the crawler_status of this TempRunningData.
 
         请求运行状态（0：正常返回；1：解析失败； 2：比对失败； 3：响应超时；）
 
@@ -118,7 +118,7 @@ class TempRunningData:
 
     @crawler_status.setter
     def crawler_status(self, crawler_status):
-        """Sets the crawler_status of this TempRunningData.
+        r"""Sets the crawler_status of this TempRunningData.
 
         请求运行状态（0：正常返回；1：解析失败； 2：比对失败； 3：响应超时；）
 
@@ -129,7 +129,7 @@ class TempRunningData:
 
     @property
     def related_temp_running_id(self):
-        """Gets the related_temp_running_id of this TempRunningData.
+        r"""Gets the related_temp_running_id of this TempRunningData.
 
         运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
 
@@ -140,7 +140,7 @@ class TempRunningData:
 
     @related_temp_running_id.setter
     def related_temp_running_id(self, related_temp_running_id):
-        """Sets the related_temp_running_id of this TempRunningData.
+        r"""Sets the related_temp_running_id of this TempRunningData.
 
         运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
 
@@ -151,7 +151,7 @@ class TempRunningData:
 
     @property
     def task_run_info_id(self):
-        """Gets the task_run_info_id of this TempRunningData.
+        r"""Gets the task_run_info_id of this TempRunningData.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -162,7 +162,7 @@ class TempRunningData:
 
     @task_run_info_id.setter
     def task_run_info_id(self, task_run_info_id):
-        """Sets the task_run_info_id of this TempRunningData.
+        r"""Sets the task_run_info_id of this TempRunningData.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -173,7 +173,7 @@ class TempRunningData:
 
     @property
     def temp_id(self):
-        """Gets the temp_id of this TempRunningData.
+        r"""Gets the temp_id of this TempRunningData.
 
         用例或者事务id
 
@@ -184,7 +184,7 @@ class TempRunningData:
 
     @temp_id.setter
     def temp_id(self, temp_id):
-        """Sets the temp_id of this TempRunningData.
+        r"""Sets the temp_id of this TempRunningData.
 
         用例或者事务id
 
@@ -195,7 +195,7 @@ class TempRunningData:
 
     @property
     def temp_name(self):
-        """Gets the temp_name of this TempRunningData.
+        r"""Gets the temp_name of this TempRunningData.
 
         用例或者事务名称
 
@@ -206,7 +206,7 @@ class TempRunningData:
 
     @temp_name.setter
     def temp_name(self, temp_name):
-        """Sets the temp_name of this TempRunningData.
+        r"""Sets the temp_name of this TempRunningData.
 
         用例或者事务名称
 
@@ -217,7 +217,7 @@ class TempRunningData:
 
     @property
     def temp_running_status(self):
-        """Gets the temp_running_status of this TempRunningData.
+        r"""Gets the temp_running_status of this TempRunningData.
 
         运行状态（9：表示等待运行；0：表示运行中；2：表示结束；3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止（终止中状态））
 
@@ -228,7 +228,7 @@ class TempRunningData:
 
     @temp_running_status.setter
     def temp_running_status(self, temp_running_status):
-        """Sets the temp_running_status of this TempRunningData.
+        r"""Sets the temp_running_status of this TempRunningData.
 
         运行状态（9：表示等待运行；0：表示运行中；2：表示结束；3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止（终止中状态））
 

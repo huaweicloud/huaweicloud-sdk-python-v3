@@ -25,7 +25,7 @@ class OpVpnUser:
     }
 
     def __init__(self, id=None):
-        """OpVpnUser
+        r"""OpVpnUser
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OpVpnUser:
 
     @property
     def id(self):
-        """Gets the id of this OpVpnUser.
+        r"""Gets the id of this OpVpnUser.
 
         用户ID
 
@@ -53,7 +53,7 @@ class OpVpnUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OpVpnUser.
+        r"""Sets the id of this OpVpnUser.
 
         用户ID
 

@@ -31,7 +31,7 @@ class ShowHttpReferenceTablesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None):
-        """ShowHttpReferenceTablesRequest
+        r"""ShowHttpReferenceTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowHttpReferenceTablesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpReferenceTablesRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpReferenceTablesRequest.
 
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -75,7 +75,7 @@ class ShowHttpReferenceTablesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpReferenceTablesRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpReferenceTablesRequest.
 
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -86,7 +86,7 @@ class ShowHttpReferenceTablesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpReferenceTablesRequest.
+        r"""Gets the page of this ShowHttpReferenceTablesRequest.
 
         分页查询参数，第page页
 
@@ -97,7 +97,7 @@ class ShowHttpReferenceTablesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpReferenceTablesRequest.
+        r"""Sets the page of this ShowHttpReferenceTablesRequest.
 
         分页查询参数，第page页
 
@@ -108,7 +108,7 @@ class ShowHttpReferenceTablesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpReferenceTablesRequest.
+        r"""Gets the pagesize of this ShowHttpReferenceTablesRequest.
 
         分页查询参数，每页pagesize条记录
 
@@ -119,7 +119,7 @@ class ShowHttpReferenceTablesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpReferenceTablesRequest.
+        r"""Sets the pagesize of this ShowHttpReferenceTablesRequest.
 
         分页查询参数，每页pagesize条记录
 
@@ -130,7 +130,7 @@ class ShowHttpReferenceTablesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpReferenceTablesRequest.
+        r"""Gets the name of this ShowHttpReferenceTablesRequest.
 
         模糊查询引用表名称
 
@@ -141,7 +141,7 @@ class ShowHttpReferenceTablesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpReferenceTablesRequest.
+        r"""Sets the name of this ShowHttpReferenceTablesRequest.
 
         模糊查询引用表名称
 

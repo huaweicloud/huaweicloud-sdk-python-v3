@@ -45,7 +45,7 @@ class PostPaidServerExtendParam:
     }
 
     def __init__(self, charging_mode=None, region_id=None, support_auto_recovery=None, enterprise_project_id=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None, cb_csbs_backup=None):
-        """PostPaidServerExtendParam
+        r"""PostPaidServerExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PostPaidServerExtendParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this PostPaidServerExtendParam.
+        r"""Gets the charging_mode of this PostPaidServerExtendParam.
 
         计费模式：  - 0：按需计费。
 
@@ -124,7 +124,7 @@ class PostPaidServerExtendParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this PostPaidServerExtendParam.
+        r"""Sets the charging_mode of this PostPaidServerExtendParam.
 
         计费模式：  - 0：按需计费。
 
@@ -135,7 +135,7 @@ class PostPaidServerExtendParam:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PostPaidServerExtendParam.
+        r"""Gets the region_id of this PostPaidServerExtendParam.
 
         云服务器所在区域ID。  请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
@@ -146,7 +146,7 @@ class PostPaidServerExtendParam:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PostPaidServerExtendParam.
+        r"""Sets the region_id of this PostPaidServerExtendParam.
 
         云服务器所在区域ID。  请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
@@ -157,7 +157,7 @@ class PostPaidServerExtendParam:
 
     @property
     def support_auto_recovery(self):
-        """Gets the support_auto_recovery of this PostPaidServerExtendParam.
+        r"""Gets the support_auto_recovery of this PostPaidServerExtendParam.
 
         是否配置弹性云服务器自动恢复的功能。  - “true”：配置该功能 - “false”：不配置该功能  > 说明： >  > 此参数为boolean类型，若传入非boolean类型字符，程序将按照【“false”：不配置该功能】方式处理。 >  > 当marketType为spot时，不支持该功能。
 
@@ -168,7 +168,7 @@ class PostPaidServerExtendParam:
 
     @support_auto_recovery.setter
     def support_auto_recovery(self, support_auto_recovery):
-        """Sets the support_auto_recovery of this PostPaidServerExtendParam.
+        r"""Sets the support_auto_recovery of this PostPaidServerExtendParam.
 
         是否配置弹性云服务器自动恢复的功能。  - “true”：配置该功能 - “false”：不配置该功能  > 说明： >  > 此参数为boolean类型，若传入非boolean类型字符，程序将按照【“false”：不配置该功能】方式处理。 >  > 当marketType为spot时，不支持该功能。
 
@@ -179,7 +179,7 @@ class PostPaidServerExtendParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PostPaidServerExtendParam.
+        r"""Gets the enterprise_project_id of this PostPaidServerExtendParam.
 
         企业项目ID。  > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。 >  > 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
@@ -190,7 +190,7 @@ class PostPaidServerExtendParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PostPaidServerExtendParam.
+        r"""Sets the enterprise_project_id of this PostPaidServerExtendParam.
 
         企业项目ID。  > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。 >  > 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
@@ -201,7 +201,7 @@ class PostPaidServerExtendParam:
 
     @property
     def market_type(self):
-        """Gets the market_type of this PostPaidServerExtendParam.
+        r"""Gets the market_type of this PostPaidServerExtendParam.
 
         创建竞价实例时，需指定该参数的值为“spot”。  > 说明： >  > 当chargingMode=0时且marketType=spot时此参数生效。
 
@@ -212,7 +212,7 @@ class PostPaidServerExtendParam:
 
     @market_type.setter
     def market_type(self, market_type):
-        """Sets the market_type of this PostPaidServerExtendParam.
+        r"""Sets the market_type of this PostPaidServerExtendParam.
 
         创建竞价实例时，需指定该参数的值为“spot”。  > 说明： >  > 当chargingMode=0时且marketType=spot时此参数生效。
 
@@ -223,7 +223,7 @@ class PostPaidServerExtendParam:
 
     @property
     def spot_price(self):
-        """Gets the spot_price of this PostPaidServerExtendParam.
+        r"""Gets the spot_price of this PostPaidServerExtendParam.
 
         用户愿意为竞价实例每小时支付的最高价格。  > 说明： >  > 仅chargingMode=0且marketType=spot时，该参数设置后生效。 >  > 当chargingMode=0且marketType=spot时，如果不传递spotPrice，默认使用按需购买的价格作为竞价。
 
@@ -234,7 +234,7 @@ class PostPaidServerExtendParam:
 
     @spot_price.setter
     def spot_price(self, spot_price):
-        """Sets the spot_price of this PostPaidServerExtendParam.
+        r"""Sets the spot_price of this PostPaidServerExtendParam.
 
         用户愿意为竞价实例每小时支付的最高价格。  > 说明： >  > 仅chargingMode=0且marketType=spot时，该参数设置后生效。 >  > 当chargingMode=0且marketType=spot时，如果不传递spotPrice，默认使用按需购买的价格作为竞价。
 
@@ -245,7 +245,7 @@ class PostPaidServerExtendParam:
 
     @property
     def disk_prior(self):
-        """Gets the disk_prior of this PostPaidServerExtendParam.
+        r"""Gets the disk_prior of this PostPaidServerExtendParam.
 
         是否支持先创建卷，再创建虚拟机。  “true”：配置该功能 “false”：不配置该功能
 
@@ -256,7 +256,7 @@ class PostPaidServerExtendParam:
 
     @disk_prior.setter
     def disk_prior(self, disk_prior):
-        """Sets the disk_prior of this PostPaidServerExtendParam.
+        r"""Sets the disk_prior of this PostPaidServerExtendParam.
 
         是否支持先创建卷，再创建虚拟机。  “true”：配置该功能 “false”：不配置该功能
 
@@ -267,7 +267,7 @@ class PostPaidServerExtendParam:
 
     @property
     def spot_duration_hours(self):
-        """Gets the spot_duration_hours of this PostPaidServerExtendParam.
+        r"""Gets the spot_duration_hours of this PostPaidServerExtendParam.
 
         购买的竞价实例时长。  - 仅interruption_policy=immediate 时该字段有效 。 - pot_duration_hours大于0。最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_hours字段中查询。
 
@@ -278,7 +278,7 @@ class PostPaidServerExtendParam:
 
     @spot_duration_hours.setter
     def spot_duration_hours(self, spot_duration_hours):
-        """Sets the spot_duration_hours of this PostPaidServerExtendParam.
+        r"""Sets the spot_duration_hours of this PostPaidServerExtendParam.
 
         购买的竞价实例时长。  - 仅interruption_policy=immediate 时该字段有效 。 - pot_duration_hours大于0。最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_hours字段中查询。
 
@@ -289,7 +289,7 @@ class PostPaidServerExtendParam:
 
     @property
     def interruption_policy(self):
-        """Gets the interruption_policy of this PostPaidServerExtendParam.
+        r"""Gets the interruption_policy of this PostPaidServerExtendParam.
 
         竞价实例中断策略，当前支持immediate。  - 当interruption_policy=immediate时表示释放策略为立即释放。 
 
@@ -300,7 +300,7 @@ class PostPaidServerExtendParam:
 
     @interruption_policy.setter
     def interruption_policy(self, interruption_policy):
-        """Sets the interruption_policy of this PostPaidServerExtendParam.
+        r"""Sets the interruption_policy of this PostPaidServerExtendParam.
 
         竞价实例中断策略，当前支持immediate。  - 当interruption_policy=immediate时表示释放策略为立即释放。 
 
@@ -311,7 +311,7 @@ class PostPaidServerExtendParam:
 
     @property
     def spot_duration_count(self):
-        """Gets the spot_duration_count of this PostPaidServerExtendParam.
+        r"""Gets the spot_duration_count of this PostPaidServerExtendParam.
 
         表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours>0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。
 
@@ -322,7 +322,7 @@ class PostPaidServerExtendParam:
 
     @spot_duration_count.setter
     def spot_duration_count(self, spot_duration_count):
-        """Sets the spot_duration_count of this PostPaidServerExtendParam.
+        r"""Sets the spot_duration_count of this PostPaidServerExtendParam.
 
         表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours>0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。
 
@@ -333,7 +333,7 @@ class PostPaidServerExtendParam:
 
     @property
     def cb_csbs_backup(self):
-        """Gets the cb_csbs_backup of this PostPaidServerExtendParam.
+        r"""Gets the cb_csbs_backup of this PostPaidServerExtendParam.
 
         云备份策略和云备份存储库详情，取值包含备份策略ID和云备份存储库ID。
 
@@ -344,7 +344,7 @@ class PostPaidServerExtendParam:
 
     @cb_csbs_backup.setter
     def cb_csbs_backup(self, cb_csbs_backup):
-        """Sets the cb_csbs_backup of this PostPaidServerExtendParam.
+        r"""Sets the cb_csbs_backup of this PostPaidServerExtendParam.
 
         云备份策略和云备份存储库详情，取值包含备份策略ID和云备份存储库ID。
 

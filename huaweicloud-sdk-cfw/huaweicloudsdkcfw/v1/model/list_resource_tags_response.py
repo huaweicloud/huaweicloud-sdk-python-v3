@@ -30,7 +30,7 @@ class ListResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self, data=None, sys_tags=None, tags=None):
-        """ListResourceTagsResponse
+        r"""ListResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListResourceTagsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListResourceTagsResponse.
+        r"""Gets the data of this ListResourceTagsResponse.
 
         :return: The data of this ListResourceTagsResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ListResourceTagsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListResourceTagsResponse.
+        r"""Sets the data of this ListResourceTagsResponse.
 
         :param data: The data of this ListResourceTagsResponse.
         :type data: str
@@ -76,7 +76,7 @@ class ListResourceTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListResourceTagsResponse.
+        r"""Gets the sys_tags of this ListResourceTagsResponse.
 
         :return: The sys_tags of this ListResourceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]
@@ -85,7 +85,7 @@ class ListResourceTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListResourceTagsResponse.
+        r"""Sets the sys_tags of this ListResourceTagsResponse.
 
         :param sys_tags: The sys_tags of this ListResourceTagsResponse.
         :type sys_tags: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]
@@ -94,7 +94,7 @@ class ListResourceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourceTagsResponse.
+        r"""Gets the tags of this ListResourceTagsResponse.
 
         :return: The tags of this ListResourceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]
@@ -103,7 +103,7 @@ class ListResourceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourceTagsResponse.
+        r"""Sets the tags of this ListResourceTagsResponse.
 
         :param tags: The tags of this ListResourceTagsResponse.
         :type tags: list[:class:`huaweicloudsdkcfw.v1.ResourceTag`]

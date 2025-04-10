@@ -43,7 +43,7 @@ class SingleBackgroundTask:
     }
 
     def __init__(self, id=None, name=None, details=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None, enable_show=None):
-        """SingleBackgroundTask
+        r"""SingleBackgroundTask
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SingleBackgroundTask:
 
     @property
     def id(self):
-        """Gets the id of this SingleBackgroundTask.
+        r"""Gets the id of this SingleBackgroundTask.
 
         后台任务ID
 
@@ -117,7 +117,7 @@ class SingleBackgroundTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SingleBackgroundTask.
+        r"""Sets the id of this SingleBackgroundTask.
 
         后台任务ID
 
@@ -128,7 +128,7 @@ class SingleBackgroundTask:
 
     @property
     def name(self):
-        """Gets the name of this SingleBackgroundTask.
+        r"""Gets the name of this SingleBackgroundTask.
 
         后台任务名，目前支持以下取值：  ChangeInstanceSpec：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP 
 
@@ -139,7 +139,7 @@ class SingleBackgroundTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SingleBackgroundTask.
+        r"""Sets the name of this SingleBackgroundTask.
 
         后台任务名，目前支持以下取值：  ChangeInstanceSpec：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP 
 
@@ -150,7 +150,7 @@ class SingleBackgroundTask:
 
     @property
     def details(self):
-        """Gets the details of this SingleBackgroundTask.
+        r"""Gets the details of this SingleBackgroundTask.
 
         :return: The details of this SingleBackgroundTask.
         :rtype: :class:`huaweicloudsdkdcs.v2.DetailsBody`
@@ -159,7 +159,7 @@ class SingleBackgroundTask:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this SingleBackgroundTask.
+        r"""Sets the details of this SingleBackgroundTask.
 
         :param details: The details of this SingleBackgroundTask.
         :type details: :class:`huaweicloudsdkdcs.v2.DetailsBody`
@@ -168,7 +168,7 @@ class SingleBackgroundTask:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SingleBackgroundTask.
+        r"""Gets the user_name of this SingleBackgroundTask.
 
         用户名
 
@@ -179,7 +179,7 @@ class SingleBackgroundTask:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SingleBackgroundTask.
+        r"""Sets the user_name of this SingleBackgroundTask.
 
         用户名
 
@@ -190,7 +190,7 @@ class SingleBackgroundTask:
 
     @property
     def user_id(self):
-        """Gets the user_id of this SingleBackgroundTask.
+        r"""Gets the user_id of this SingleBackgroundTask.
 
         用户ID
 
@@ -201,7 +201,7 @@ class SingleBackgroundTask:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this SingleBackgroundTask.
+        r"""Sets the user_id of this SingleBackgroundTask.
 
         用户ID
 
@@ -212,7 +212,7 @@ class SingleBackgroundTask:
 
     @property
     def params(self):
-        """Gets the params of this SingleBackgroundTask.
+        r"""Gets the params of this SingleBackgroundTask.
 
         任务相关参数
 
@@ -223,7 +223,7 @@ class SingleBackgroundTask:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this SingleBackgroundTask.
+        r"""Sets the params of this SingleBackgroundTask.
 
         任务相关参数
 
@@ -234,7 +234,7 @@ class SingleBackgroundTask:
 
     @property
     def status(self):
-        """Gets the status of this SingleBackgroundTask.
+        r"""Gets the status of this SingleBackgroundTask.
 
         任务状态
 
@@ -245,7 +245,7 @@ class SingleBackgroundTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SingleBackgroundTask.
+        r"""Sets the status of this SingleBackgroundTask.
 
         任务状态
 
@@ -256,7 +256,7 @@ class SingleBackgroundTask:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SingleBackgroundTask.
+        r"""Gets the created_at of this SingleBackgroundTask.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -267,7 +267,7 @@ class SingleBackgroundTask:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SingleBackgroundTask.
+        r"""Sets the created_at of this SingleBackgroundTask.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -278,7 +278,7 @@ class SingleBackgroundTask:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SingleBackgroundTask.
+        r"""Gets the updated_at of this SingleBackgroundTask.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -289,7 +289,7 @@ class SingleBackgroundTask:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SingleBackgroundTask.
+        r"""Sets the updated_at of this SingleBackgroundTask.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -300,7 +300,7 @@ class SingleBackgroundTask:
 
     @property
     def enable_show(self):
-        """Gets the enable_show of this SingleBackgroundTask.
+        r"""Gets the enable_show of this SingleBackgroundTask.
 
         是否有详细任务进展，可以展开查看
 
@@ -311,7 +311,7 @@ class SingleBackgroundTask:
 
     @enable_show.setter
     def enable_show(self, enable_show):
-        """Sets the enable_show of this SingleBackgroundTask.
+        r"""Sets the enable_show of this SingleBackgroundTask.
 
         是否有详细任务进展，可以展开查看
 

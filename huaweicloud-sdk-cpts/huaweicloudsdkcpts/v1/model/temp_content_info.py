@@ -33,7 +33,7 @@ class TempContentInfo:
     }
 
     def __init__(self, content_id=None, content=None, index=None, data=None, data_type=None):
-        """TempContentInfo
+        r"""TempContentInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TempContentInfo:
 
     @property
     def content_id(self):
-        """Gets the content_id of this TempContentInfo.
+        r"""Gets the content_id of this TempContentInfo.
 
         报文id或者事务id或者插件id
 
@@ -82,7 +82,7 @@ class TempContentInfo:
 
     @content_id.setter
     def content_id(self, content_id):
-        """Sets the content_id of this TempContentInfo.
+        r"""Sets the content_id of this TempContentInfo.
 
         报文id或者事务id或者插件id
 
@@ -93,7 +93,7 @@ class TempContentInfo:
 
     @property
     def content(self):
-        """Gets the content of this TempContentInfo.
+        r"""Gets the content of this TempContentInfo.
 
         内容
 
@@ -104,7 +104,7 @@ class TempContentInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this TempContentInfo.
+        r"""Sets the content of this TempContentInfo.
 
         内容
 
@@ -115,7 +115,7 @@ class TempContentInfo:
 
     @property
     def index(self):
-        """Gets the index of this TempContentInfo.
+        r"""Gets the index of this TempContentInfo.
 
         索引
 
@@ -126,7 +126,7 @@ class TempContentInfo:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TempContentInfo.
+        r"""Sets the index of this TempContentInfo.
 
         索引
 
@@ -137,7 +137,7 @@ class TempContentInfo:
 
     @property
     def data(self):
-        """Gets the data of this TempContentInfo.
+        r"""Gets the data of this TempContentInfo.
 
         数据指令内容
 
@@ -148,7 +148,7 @@ class TempContentInfo:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TempContentInfo.
+        r"""Sets the data of this TempContentInfo.
 
         数据指令内容
 
@@ -159,7 +159,7 @@ class TempContentInfo:
 
     @property
     def data_type(self):
-        """Gets the data_type of this TempContentInfo.
+        r"""Gets the data_type of this TempContentInfo.
 
         数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 
@@ -170,7 +170,7 @@ class TempContentInfo:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this TempContentInfo.
+        r"""Sets the data_type of this TempContentInfo.
 
         数据指令类型（0：默认请求卡片；1：数据指令；201：循环指令；202：条件指令；301：集合点[；203：vu百分比控制器；204：吞吐量控制器；302：插件请求](tag:hws,hws_hk)）
 

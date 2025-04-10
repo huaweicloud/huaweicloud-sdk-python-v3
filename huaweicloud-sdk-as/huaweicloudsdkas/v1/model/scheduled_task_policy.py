@@ -33,7 +33,7 @@ class ScheduledTaskPolicy:
     }
 
     def __init__(self, start_time=None, end_time=None, launch_time=None, recurrence_type=None, recurrence_value=None):
-        """ScheduledTaskPolicy
+        r"""ScheduledTaskPolicy
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ScheduledTaskPolicy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduledTaskPolicy.
+        r"""Gets the start_time of this ScheduledTaskPolicy.
 
         非必选，仅当recurrence_type不为空时生效，表示计划任务的生效开始时间，格式为yyyy-MM-ddTHH:mmZ，不填写时默认为任务创建成功的时间
 
@@ -81,7 +81,7 @@ class ScheduledTaskPolicy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduledTaskPolicy.
+        r"""Sets the start_time of this ScheduledTaskPolicy.
 
         非必选，仅当recurrence_type不为空时生效，表示计划任务的生效开始时间，格式为yyyy-MM-ddTHH:mmZ，不填写时默认为任务创建成功的时间
 
@@ -92,7 +92,7 @@ class ScheduledTaskPolicy:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduledTaskPolicy.
+        r"""Gets the end_time of this ScheduledTaskPolicy.
 
         仅当recurrence_type不为空时生效且必选，表示计划任务的生效结束时间，格式为yyyy-MM-ddTHH:mmZ
 
@@ -103,7 +103,7 @@ class ScheduledTaskPolicy:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduledTaskPolicy.
+        r"""Sets the end_time of this ScheduledTaskPolicy.
 
         仅当recurrence_type不为空时生效且必选，表示计划任务的生效结束时间，格式为yyyy-MM-ddTHH:mmZ
 
@@ -114,7 +114,7 @@ class ScheduledTaskPolicy:
 
     @property
     def launch_time(self):
-        """Gets the launch_time of this ScheduledTaskPolicy.
+        r"""Gets the launch_time of this ScheduledTaskPolicy.
 
         必选，执行时间，采用UTC时间，recurrence_type不填写或为空时，格式为yyyy-MM-ddTHH:mmZ, recurrence_type不为空时，格式为 HH:mm
 
@@ -125,7 +125,7 @@ class ScheduledTaskPolicy:
 
     @launch_time.setter
     def launch_time(self, launch_time):
-        """Sets the launch_time of this ScheduledTaskPolicy.
+        r"""Sets the launch_time of this ScheduledTaskPolicy.
 
         必选，执行时间，采用UTC时间，recurrence_type不填写或为空时，格式为yyyy-MM-ddTHH:mmZ, recurrence_type不为空时，格式为 HH:mm
 
@@ -136,7 +136,7 @@ class ScheduledTaskPolicy:
 
     @property
     def recurrence_type(self):
-        """Gets the recurrence_type of this ScheduledTaskPolicy.
+        r"""Gets the recurrence_type of this ScheduledTaskPolicy.
 
         非必选，不填写时计划任务为定时执行， 填写时，为周期执行，且只能填写DAILY，WEEKLY，MONTHLY 中的一种，分别为按天，按周，按月周期执行
 
@@ -147,7 +147,7 @@ class ScheduledTaskPolicy:
 
     @recurrence_type.setter
     def recurrence_type(self, recurrence_type):
-        """Sets the recurrence_type of this ScheduledTaskPolicy.
+        r"""Sets the recurrence_type of this ScheduledTaskPolicy.
 
         非必选，不填写时计划任务为定时执行， 填写时，为周期执行，且只能填写DAILY，WEEKLY，MONTHLY 中的一种，分别为按天，按周，按月周期执行
 
@@ -158,7 +158,7 @@ class ScheduledTaskPolicy:
 
     @property
     def recurrence_value(self):
-        """Gets the recurrence_value of this ScheduledTaskPolicy.
+        r"""Gets the recurrence_value of this ScheduledTaskPolicy.
 
         仅当recurrence_type为WEEKLY，MONTHLY时必选，表示周期执行的具体日期，多个日期用,分割。recurrence_type为WEEKLY时，可填入1-7， recurrence_type为MONTHLY时，可填入1-31
 
@@ -169,7 +169,7 @@ class ScheduledTaskPolicy:
 
     @recurrence_value.setter
     def recurrence_value(self, recurrence_value):
-        """Sets the recurrence_value of this ScheduledTaskPolicy.
+        r"""Sets the recurrence_value of this ScheduledTaskPolicy.
 
         仅当recurrence_type为WEEKLY，MONTHLY时必选，表示周期执行的具体日期，多个日期用,分割。recurrence_type为WEEKLY时，可填入1-7， recurrence_type为MONTHLY时，可填入1-31
 

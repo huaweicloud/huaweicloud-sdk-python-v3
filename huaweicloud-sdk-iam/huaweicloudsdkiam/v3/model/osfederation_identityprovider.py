@@ -25,7 +25,7 @@ class OsfederationIdentityprovider:
     }
 
     def __init__(self, id=None):
-        """OsfederationIdentityprovider
+        r"""OsfederationIdentityprovider
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OsfederationIdentityprovider:
 
     @property
     def id(self):
-        """Gets the id of this OsfederationIdentityprovider.
+        r"""Gets the id of this OsfederationIdentityprovider.
 
         身份提供商ID。
 
@@ -53,7 +53,7 @@ class OsfederationIdentityprovider:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OsfederationIdentityprovider.
+        r"""Sets the id of this OsfederationIdentityprovider.
 
         身份提供商ID。
 

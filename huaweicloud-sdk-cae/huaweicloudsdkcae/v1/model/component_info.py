@@ -27,7 +27,7 @@ class ComponentInfo:
     }
 
     def __init__(self, component_id=None, component_name=None):
-        """ComponentInfo
+        r"""ComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ComponentInfo:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ComponentInfo.
+        r"""Gets the component_id of this ComponentInfo.
 
         组件ID。
 
@@ -61,7 +61,7 @@ class ComponentInfo:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ComponentInfo.
+        r"""Sets the component_id of this ComponentInfo.
 
         组件ID。
 
@@ -72,7 +72,7 @@ class ComponentInfo:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ComponentInfo.
+        r"""Gets the component_name of this ComponentInfo.
 
         组件名称。
 
@@ -83,7 +83,7 @@ class ComponentInfo:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ComponentInfo.
+        r"""Sets the component_name of this ComponentInfo.
 
         组件名称。
 

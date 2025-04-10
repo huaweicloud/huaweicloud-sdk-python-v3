@@ -32,7 +32,7 @@ class ShowProjectDetailResponse(SdkResponse):
     }
 
     def __init__(self, namespace_id=None, namespace=None, project_id=None, project=None):
-        """ShowProjectDetailResponse
+        r"""ShowProjectDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @property
     def namespace_id(self):
-        """Gets the namespace_id of this ShowProjectDetailResponse.
+        r"""Gets the namespace_id of this ShowProjectDetailResponse.
 
         命名空间ID。
 
@@ -76,7 +76,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @namespace_id.setter
     def namespace_id(self, namespace_id):
-        """Sets the namespace_id of this ShowProjectDetailResponse.
+        r"""Sets the namespace_id of this ShowProjectDetailResponse.
 
         命名空间ID。
 
@@ -87,7 +87,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowProjectDetailResponse.
+        r"""Gets the namespace of this ShowProjectDetailResponse.
 
         命名空间。
 
@@ -98,7 +98,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowProjectDetailResponse.
+        r"""Sets the namespace of this ShowProjectDetailResponse.
 
         命名空间。
 
@@ -109,7 +109,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectDetailResponse.
+        r"""Gets the project_id of this ShowProjectDetailResponse.
 
         仓库项目ID。
 
@@ -120,7 +120,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectDetailResponse.
+        r"""Sets the project_id of this ShowProjectDetailResponse.
 
         仓库项目ID。
 
@@ -131,7 +131,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this ShowProjectDetailResponse.
+        r"""Gets the project of this ShowProjectDetailResponse.
 
         仓库项目。
 
@@ -142,7 +142,7 @@ class ShowProjectDetailResponse(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ShowProjectDetailResponse.
+        r"""Sets the project of this ShowProjectDetailResponse.
 
         仓库项目。
 

@@ -24,7 +24,7 @@ class UpdateServerlessPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateServerlessPolicyResponse
+        r"""UpdateServerlessPolicyResponse
 
         The model defined in huaweicloud sdk
 

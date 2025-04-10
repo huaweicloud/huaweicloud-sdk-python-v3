@@ -55,7 +55,7 @@ class IdCardRequestBody:
     }
 
     def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None, return_portrait_location=None, return_portrait_image=None, return_adjusted_image=None, detect_tampering=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_interim=None, detect_glare=None):
-        """IdCardRequestBody
+        r"""IdCardRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class IdCardRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this IdCardRequestBody.
+        r"""Gets the image of this IdCardRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -159,7 +159,7 @@ class IdCardRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this IdCardRequestBody.
+        r"""Sets the image of this IdCardRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -170,7 +170,7 @@ class IdCardRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this IdCardRequestBody.
+        r"""Gets the url of this IdCardRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -181,7 +181,7 @@ class IdCardRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this IdCardRequestBody.
+        r"""Sets the url of this IdCardRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过8192px。支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -192,7 +192,7 @@ class IdCardRequestBody:
 
     @property
     def side(self):
-        """Gets the side of this IdCardRequestBody.
+        r"""Gets the side of this IdCardRequestBody.
 
          - front：身份证人像面。 - back：身份证国徽面。 - double_side：身份证双面信息 > 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
 
@@ -203,7 +203,7 @@ class IdCardRequestBody:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this IdCardRequestBody.
+        r"""Sets the side of this IdCardRequestBody.
 
          - front：身份证人像面。 - back：身份证国徽面。 - double_side：身份证双面信息 > 说明： 如果参数值为空或无该参数，系统自动识别，建议填写，准确率更高。 
 
@@ -214,7 +214,7 @@ class IdCardRequestBody:
 
     @property
     def return_verification(self):
-        """Gets the return_verification of this IdCardRequestBody.
+        r"""Gets the return_verification of this IdCardRequestBody.
 
         返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不返回校验信息 
 
@@ -225,7 +225,7 @@ class IdCardRequestBody:
 
     @return_verification.setter
     def return_verification(self, return_verification):
-        """Sets the return_verification of this IdCardRequestBody.
+        r"""Sets the return_verification of this IdCardRequestBody.
 
         返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不返回校验信息 
 
@@ -236,7 +236,7 @@ class IdCardRequestBody:
 
     @property
     def return_text_location(self):
-        """Gets the return_text_location of this IdCardRequestBody.
+        r"""Gets the return_text_location of this IdCardRequestBody.
 
         识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -247,7 +247,7 @@ class IdCardRequestBody:
 
     @return_text_location.setter
     def return_text_location(self, return_text_location):
-        """Sets the return_text_location of this IdCardRequestBody.
+        r"""Sets the return_text_location of this IdCardRequestBody.
 
         识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
 
@@ -258,7 +258,7 @@ class IdCardRequestBody:
 
     @property
     def detect_reproduce(self):
-        """Gets the detect_reproduce of this IdCardRequestBody.
+        r"""Gets the detect_reproduce of this IdCardRequestBody.
 
         返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否经过翻拍功能  - false：关闭判断身份证图像是否经过翻拍功能 
 
@@ -269,7 +269,7 @@ class IdCardRequestBody:
 
     @detect_reproduce.setter
     def detect_reproduce(self, detect_reproduce):
-        """Sets the detect_reproduce of this IdCardRequestBody.
+        r"""Sets the detect_reproduce of this IdCardRequestBody.
 
         返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否经过翻拍功能  - false：关闭判断身份证图像是否经过翻拍功能 
 
@@ -280,7 +280,7 @@ class IdCardRequestBody:
 
     @property
     def detect_copy(self):
-        """Gets the detect_copy of this IdCardRequestBody.
+        r"""Gets the detect_copy of this IdCardRequestBody.
 
         返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否是复印件功能  - false : 关闭身份证图像是否是复印件功能 
 
@@ -291,7 +291,7 @@ class IdCardRequestBody:
 
     @detect_copy.setter
     def detect_copy(self, detect_copy):
-        """Sets the detect_copy of this IdCardRequestBody.
+        r"""Sets the detect_copy of this IdCardRequestBody.
 
         返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：开启判断身份证图像是否是复印件功能  - false : 关闭身份证图像是否是复印件功能 
 
@@ -302,7 +302,7 @@ class IdCardRequestBody:
 
     @property
     def return_portrait_location(self):
-        """Gets the return_portrait_location of this IdCardRequestBody.
+        r"""Gets the return_portrait_location of this IdCardRequestBody.
 
         返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
 
@@ -313,7 +313,7 @@ class IdCardRequestBody:
 
     @return_portrait_location.setter
     def return_portrait_location(self, return_portrait_location):
-        """Sets the return_portrait_location of this IdCardRequestBody.
+        r"""Sets the return_portrait_location of this IdCardRequestBody.
 
         返回头像位置信息的开关，默认false，可选值如下所示：  - true ：开启返回头像位置信息的功能 - false : 关闭返回头像位置信息的功能 
 
@@ -324,7 +324,7 @@ class IdCardRequestBody:
 
     @property
     def return_portrait_image(self):
-        """Gets the return_portrait_image of this IdCardRequestBody.
+        r"""Gets the return_portrait_image of this IdCardRequestBody.
 
         返回头像图片信息（base64码）的开关，默认false，可选值如下所示：  - true ：开启头像图片信息（base64码）的功能 - false : 关闭头像图片信息（base64码）的功能 
 
@@ -335,7 +335,7 @@ class IdCardRequestBody:
 
     @return_portrait_image.setter
     def return_portrait_image(self, return_portrait_image):
-        """Sets the return_portrait_image of this IdCardRequestBody.
+        r"""Sets the return_portrait_image of this IdCardRequestBody.
 
         返回头像图片信息（base64码）的开关，默认false，可选值如下所示：  - true ：开启头像图片信息（base64码）的功能 - false : 关闭头像图片信息（base64码）的功能 
 
@@ -346,7 +346,7 @@ class IdCardRequestBody:
 
     @property
     def return_adjusted_image(self):
-        """Gets the return_adjusted_image of this IdCardRequestBody.
+        r"""Gets the return_adjusted_image of this IdCardRequestBody.
 
         返回身份证卡面（base64码）的开关，默认false，可选值如下所示：  - true ：开启身份证卡面（base64码）的功能 - false : 关闭身份证卡面（base64码）的功能 
 
@@ -357,7 +357,7 @@ class IdCardRequestBody:
 
     @return_adjusted_image.setter
     def return_adjusted_image(self, return_adjusted_image):
-        """Sets the return_adjusted_image of this IdCardRequestBody.
+        r"""Sets the return_adjusted_image of this IdCardRequestBody.
 
         返回身份证卡面（base64码）的开关，默认false，可选值如下所示：  - true ：开启身份证卡面（base64码）的功能 - false : 关闭身份证卡面（base64码）的功能 
 
@@ -368,7 +368,7 @@ class IdCardRequestBody:
 
     @property
     def detect_tampering(self):
-        """Gets the detect_tampering of this IdCardRequestBody.
+        r"""Gets the detect_tampering of this IdCardRequestBody.
 
         身份证图像PS告警功能开关，默认false，可选值如下：  - true ：开启身份证图像PS告警功能 - false : 关闭身份证图像告警功能 
 
@@ -379,7 +379,7 @@ class IdCardRequestBody:
 
     @detect_tampering.setter
     def detect_tampering(self, detect_tampering):
-        """Sets the detect_tampering of this IdCardRequestBody.
+        r"""Sets the detect_tampering of this IdCardRequestBody.
 
         身份证图像PS告警功能开关，默认false，可选值如下：  - true ：开启身份证图像PS告警功能 - false : 关闭身份证图像告警功能 
 
@@ -390,7 +390,7 @@ class IdCardRequestBody:
 
     @property
     def detect_border_integrity(self):
-        """Gets the detect_border_integrity of this IdCardRequestBody.
+        r"""Gets the detect_border_integrity of this IdCardRequestBody.
 
         身份证图像边框完整性告警功能开关，默认false，可选值如下：  - true ：打开身份证图像边框完整性告警功能 - false : 关闭身份证图像边框完整性告警功能 
 
@@ -401,7 +401,7 @@ class IdCardRequestBody:
 
     @detect_border_integrity.setter
     def detect_border_integrity(self, detect_border_integrity):
-        """Sets the detect_border_integrity of this IdCardRequestBody.
+        r"""Sets the detect_border_integrity of this IdCardRequestBody.
 
         身份证图像边框完整性告警功能开关，默认false，可选值如下：  - true ：打开身份证图像边框完整性告警功能 - false : 关闭身份证图像边框完整性告警功能 
 
@@ -412,7 +412,7 @@ class IdCardRequestBody:
 
     @property
     def detect_blocking_within_border(self):
-        """Gets the detect_blocking_within_border of this IdCardRequestBody.
+        r"""Gets the detect_blocking_within_border of this IdCardRequestBody.
 
         身份证图像边框内部是否有异物遮挡的告警功能开关，默认false，可选值如下：  - true ：开启身份证边框内部异物遮挡告警功能 - false : 关闭身份证边框内部异物遮挡告警功能 
 
@@ -423,7 +423,7 @@ class IdCardRequestBody:
 
     @detect_blocking_within_border.setter
     def detect_blocking_within_border(self, detect_blocking_within_border):
-        """Sets the detect_blocking_within_border of this IdCardRequestBody.
+        r"""Sets the detect_blocking_within_border of this IdCardRequestBody.
 
         身份证图像边框内部是否有异物遮挡的告警功能开关，默认false，可选值如下：  - true ：开启身份证边框内部异物遮挡告警功能 - false : 关闭身份证边框内部异物遮挡告警功能 
 
@@ -434,7 +434,7 @@ class IdCardRequestBody:
 
     @property
     def detect_blur(self):
-        """Gets the detect_blur of this IdCardRequestBody.
+        r"""Gets the detect_blur of this IdCardRequestBody.
 
         身份证图像模糊告警功能的开关，默认false，可选值如下：  - true ：开启身份证图像模糊告警功能 - false : 关闭身份证图像模糊告警功能 
 
@@ -445,7 +445,7 @@ class IdCardRequestBody:
 
     @detect_blur.setter
     def detect_blur(self, detect_blur):
-        """Sets the detect_blur of this IdCardRequestBody.
+        r"""Sets the detect_blur of this IdCardRequestBody.
 
         身份证图像模糊告警功能的开关，默认false，可选值如下：  - true ：开启身份证图像模糊告警功能 - false : 关闭身份证图像模糊告警功能 
 
@@ -456,7 +456,7 @@ class IdCardRequestBody:
 
     @property
     def detect_interim(self):
-        """Gets the detect_interim of this IdCardRequestBody.
+        r"""Gets the detect_interim of this IdCardRequestBody.
 
         临时身份证告警功能开关，默认false，可选值如下：  - true ：开启临时身份证告警功能 - false : 关闭临时身份证告警功能 
 
@@ -467,7 +467,7 @@ class IdCardRequestBody:
 
     @detect_interim.setter
     def detect_interim(self, detect_interim):
-        """Sets the detect_interim of this IdCardRequestBody.
+        r"""Sets the detect_interim of this IdCardRequestBody.
 
         临时身份证告警功能开关，默认false，可选值如下：  - true ：开启临时身份证告警功能 - false : 关闭临时身份证告警功能 
 
@@ -478,7 +478,7 @@ class IdCardRequestBody:
 
     @property
     def detect_glare(self):
-        """Gets the detect_glare of this IdCardRequestBody.
+        r"""Gets the detect_glare of this IdCardRequestBody.
 
         身份证反光告警功能开关，默认false，可选值如下：  - true ：开启身份证反光告警功能  - false : 关闭身份证反光告警功能 
 
@@ -489,7 +489,7 @@ class IdCardRequestBody:
 
     @detect_glare.setter
     def detect_glare(self, detect_glare):
-        """Sets the detect_glare of this IdCardRequestBody.
+        r"""Sets the detect_glare of this IdCardRequestBody.
 
         身份证反光告警功能开关，默认false，可选值如下：  - true ：开启身份证反光告警功能  - false : 关闭身份证反光告警功能 
 

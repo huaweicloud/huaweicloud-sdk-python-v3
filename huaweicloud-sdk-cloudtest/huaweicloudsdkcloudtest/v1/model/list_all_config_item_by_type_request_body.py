@@ -27,7 +27,7 @@ class ListAllConfigItemByTypeRequestBody:
     }
 
     def __init__(self, config_type=None, types=None):
-        """ListAllConfigItemByTypeRequestBody
+        r"""ListAllConfigItemByTypeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAllConfigItemByTypeRequestBody:
 
     @property
     def config_type(self):
-        """Gets the config_type of this ListAllConfigItemByTypeRequestBody.
+        r"""Gets the config_type of this ListAllConfigItemByTypeRequestBody.
 
         系统配置，服务自己配置{system、service}
 
@@ -61,7 +61,7 @@ class ListAllConfigItemByTypeRequestBody:
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this ListAllConfigItemByTypeRequestBody.
+        r"""Sets the config_type of this ListAllConfigItemByTypeRequestBody.
 
         系统配置，服务自己配置{system、service}
 
@@ -72,7 +72,7 @@ class ListAllConfigItemByTypeRequestBody:
 
     @property
     def types(self):
-        """Gets the types of this ListAllConfigItemByTypeRequestBody.
+        r"""Gets the types of this ListAllConfigItemByTypeRequestBody.
 
         配置类型集合
 
@@ -83,7 +83,7 @@ class ListAllConfigItemByTypeRequestBody:
 
     @types.setter
     def types(self, types):
-        """Sets the types of this ListAllConfigItemByTypeRequestBody.
+        r"""Sets the types of this ListAllConfigItemByTypeRequestBody.
 
         配置类型集合
 

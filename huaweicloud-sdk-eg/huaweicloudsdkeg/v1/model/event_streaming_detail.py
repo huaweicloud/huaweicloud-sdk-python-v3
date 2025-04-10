@@ -43,7 +43,7 @@ class EventStreamingDetail:
     }
 
     def __init__(self, name=None, description=None, source=None, sink=None, rule_config=None, option=None, status=None, id=None, created_time=None, updated_time=None):
-        """EventStreamingDetail
+        r"""EventStreamingDetail
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class EventStreamingDetail:
 
     @property
     def name(self):
-        """Gets the name of this EventStreamingDetail.
+        r"""Gets the name of this EventStreamingDetail.
 
         事件流名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -114,7 +114,7 @@ class EventStreamingDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventStreamingDetail.
+        r"""Sets the name of this EventStreamingDetail.
 
         事件流名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -125,7 +125,7 @@ class EventStreamingDetail:
 
     @property
     def description(self):
-        """Gets the description of this EventStreamingDetail.
+        r"""Gets the description of this EventStreamingDetail.
 
         事件流描述
 
@@ -136,7 +136,7 @@ class EventStreamingDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EventStreamingDetail.
+        r"""Sets the description of this EventStreamingDetail.
 
         事件流描述
 
@@ -147,7 +147,7 @@ class EventStreamingDetail:
 
     @property
     def source(self):
-        """Gets the source of this EventStreamingDetail.
+        r"""Gets the source of this EventStreamingDetail.
 
         :return: The source of this EventStreamingDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingSource`
@@ -156,7 +156,7 @@ class EventStreamingDetail:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this EventStreamingDetail.
+        r"""Sets the source of this EventStreamingDetail.
 
         :param source: The source of this EventStreamingDetail.
         :type source: :class:`huaweicloudsdkeg.v1.EventStreamingSource`
@@ -165,7 +165,7 @@ class EventStreamingDetail:
 
     @property
     def sink(self):
-        """Gets the sink of this EventStreamingDetail.
+        r"""Gets the sink of this EventStreamingDetail.
 
         :return: The sink of this EventStreamingDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingSink`
@@ -174,7 +174,7 @@ class EventStreamingDetail:
 
     @sink.setter
     def sink(self, sink):
-        """Sets the sink of this EventStreamingDetail.
+        r"""Sets the sink of this EventStreamingDetail.
 
         :param sink: The sink of this EventStreamingDetail.
         :type sink: :class:`huaweicloudsdkeg.v1.EventStreamingSink`
@@ -183,7 +183,7 @@ class EventStreamingDetail:
 
     @property
     def rule_config(self):
-        """Gets the rule_config of this EventStreamingDetail.
+        r"""Gets the rule_config of this EventStreamingDetail.
 
         :return: The rule_config of this EventStreamingDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReqRuleConfig`
@@ -192,7 +192,7 @@ class EventStreamingDetail:
 
     @rule_config.setter
     def rule_config(self, rule_config):
-        """Sets the rule_config of this EventStreamingDetail.
+        r"""Sets the rule_config of this EventStreamingDetail.
 
         :param rule_config: The rule_config of this EventStreamingDetail.
         :type rule_config: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReqRuleConfig`
@@ -201,7 +201,7 @@ class EventStreamingDetail:
 
     @property
     def option(self):
-        """Gets the option of this EventStreamingDetail.
+        r"""Gets the option of this EventStreamingDetail.
 
         :return: The option of this EventStreamingDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.RunOption`
@@ -210,7 +210,7 @@ class EventStreamingDetail:
 
     @option.setter
     def option(self, option):
-        """Sets the option of this EventStreamingDetail.
+        r"""Sets the option of this EventStreamingDetail.
 
         :param option: The option of this EventStreamingDetail.
         :type option: :class:`huaweicloudsdkeg.v1.RunOption`
@@ -219,7 +219,7 @@ class EventStreamingDetail:
 
     @property
     def status(self):
-        """Gets the status of this EventStreamingDetail.
+        r"""Gets the status of this EventStreamingDetail.
 
         事件流状态
 
@@ -230,7 +230,7 @@ class EventStreamingDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EventStreamingDetail.
+        r"""Sets the status of this EventStreamingDetail.
 
         事件流状态
 
@@ -241,7 +241,7 @@ class EventStreamingDetail:
 
     @property
     def id(self):
-        """Gets the id of this EventStreamingDetail.
+        r"""Gets the id of this EventStreamingDetail.
 
         事件流ID
 
@@ -252,7 +252,7 @@ class EventStreamingDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EventStreamingDetail.
+        r"""Sets the id of this EventStreamingDetail.
 
         事件流ID
 
@@ -263,7 +263,7 @@ class EventStreamingDetail:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EventStreamingDetail.
+        r"""Gets the created_time of this EventStreamingDetail.
 
         创建时间
 
@@ -274,7 +274,7 @@ class EventStreamingDetail:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EventStreamingDetail.
+        r"""Sets the created_time of this EventStreamingDetail.
 
         创建时间
 
@@ -285,7 +285,7 @@ class EventStreamingDetail:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this EventStreamingDetail.
+        r"""Gets the updated_time of this EventStreamingDetail.
 
         更新时间
 
@@ -296,7 +296,7 @@ class EventStreamingDetail:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this EventStreamingDetail.
+        r"""Sets the updated_time of this EventStreamingDetail.
 
         更新时间
 

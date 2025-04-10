@@ -25,7 +25,7 @@ class UploadMediaRequest:
     }
 
     def __init__(self, body=None):
-        """UploadMediaRequest
+        r"""UploadMediaRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadMediaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadMediaRequest.
+        r"""Gets the body of this UploadMediaRequest.
 
         :return: The body of this UploadMediaRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadMediaRequestBody`
@@ -52,7 +52,7 @@ class UploadMediaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadMediaRequest.
+        r"""Sets the body of this UploadMediaRequest.
 
         :param body: The body of this UploadMediaRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UploadMediaRequestBody`

@@ -25,7 +25,7 @@ class ImportTableRequest:
     }
 
     def __init__(self, body=None):
-        """ImportTableRequest
+        r"""ImportTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportTableRequest.
+        r"""Gets the body of this ImportTableRequest.
 
         :return: The body of this ImportTableRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ImportTableRequestBody`
@@ -52,7 +52,7 @@ class ImportTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportTableRequest.
+        r"""Sets the body of this ImportTableRequest.
 
         :param body: The body of this ImportTableRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ImportTableRequestBody`

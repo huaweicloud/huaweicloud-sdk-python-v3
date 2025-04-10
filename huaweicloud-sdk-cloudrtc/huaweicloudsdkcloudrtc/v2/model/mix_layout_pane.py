@@ -43,7 +43,7 @@ class MixLayoutPane:
     }
 
     def __init__(self, id=None, user_id=None, video_type=None, x=None, y=None, width=None, height=None, zorder=None, crop_mode=None, filling_policy=None):
-        """MixLayoutPane
+        r"""MixLayoutPane
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class MixLayoutPane:
 
     @property
     def id(self):
-        """Gets the id of this MixLayoutPane.
+        r"""Gets the id of this MixLayoutPane.
 
         窗口id，从1开始编号
 
@@ -117,7 +117,7 @@ class MixLayoutPane:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MixLayoutPane.
+        r"""Sets the id of this MixLayoutPane.
 
         窗口id，从1开始编号
 
@@ -128,7 +128,7 @@ class MixLayoutPane:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MixLayoutPane.
+        r"""Gets the user_id of this MixLayoutPane.
 
         加入房间的用户id
 
@@ -139,7 +139,7 @@ class MixLayoutPane:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MixLayoutPane.
+        r"""Sets the user_id of this MixLayoutPane.
 
         加入房间的用户id
 
@@ -150,7 +150,7 @@ class MixLayoutPane:
 
     @property
     def video_type(self):
-        """Gets the video_type of this MixLayoutPane.
+        r"""Gets the video_type of this MixLayoutPane.
 
         标识视频流的类型，可选摄像头流或者屏幕分享流。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
@@ -161,7 +161,7 @@ class MixLayoutPane:
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this MixLayoutPane.
+        r"""Sets the video_type of this MixLayoutPane.
 
         标识视频流的类型，可选摄像头流或者屏幕分享流。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
@@ -172,7 +172,7 @@ class MixLayoutPane:
 
     @property
     def x(self):
-        """Gets the x of this MixLayoutPane.
+        r"""Gets the x of this MixLayoutPane.
 
         坐标x，归一化百分比，画布上该画面左上角的横坐标的相对值，范围是 [0.0,1.0]。从左到右布局，0.0在最左端，1.0在最右端，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -183,7 +183,7 @@ class MixLayoutPane:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this MixLayoutPane.
+        r"""Sets the x of this MixLayoutPane.
 
         坐标x，归一化百分比，画布上该画面左上角的横坐标的相对值，范围是 [0.0,1.0]。从左到右布局，0.0在最左端，1.0在最右端，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -194,7 +194,7 @@ class MixLayoutPane:
 
     @property
     def y(self):
-        """Gets the y of this MixLayoutPane.
+        r"""Gets the y of this MixLayoutPane.
 
         坐标y，归一化百分比，画布上该画面左上角的纵坐标的相对值，范围是 [0.0,1.0]。从上到下布局，0.0在最上端，1.0在最下端，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -205,7 +205,7 @@ class MixLayoutPane:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this MixLayoutPane.
+        r"""Sets the y of this MixLayoutPane.
 
         坐标y，归一化百分比，画布上该画面左上角的纵坐标的相对值，范围是 [0.0,1.0]。从上到下布局，0.0在最上端，1.0在最下端，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -216,7 +216,7 @@ class MixLayoutPane:
 
     @property
     def width(self):
-        """Gets the width of this MixLayoutPane.
+        r"""Gets the width of this MixLayoutPane.
 
         窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -227,7 +227,7 @@ class MixLayoutPane:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this MixLayoutPane.
+        r"""Sets the width of this MixLayoutPane.
 
         窗格宽，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -238,7 +238,7 @@ class MixLayoutPane:
 
     @property
     def height(self):
-        """Gets the height of this MixLayoutPane.
+        r"""Gets the height of this MixLayoutPane.
 
         窗格高，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -249,7 +249,7 @@ class MixLayoutPane:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MixLayoutPane.
+        r"""Sets the height of this MixLayoutPane.
 
         窗格高，归一化百分比，小数取值范围在float内，自定义布局场景下填写本字段。
 
@@ -260,7 +260,7 @@ class MixLayoutPane:
 
     @property
     def zorder(self):
-        """Gets the zorder of this MixLayoutPane.
+        r"""Gets the zorder of this MixLayoutPane.
 
         叠放顺序，0为最底层，1层在0层之上，以此类推，最大支持25层，自定义布局场景下填写本字段。
 
@@ -271,7 +271,7 @@ class MixLayoutPane:
 
     @zorder.setter
     def zorder(self, zorder):
-        """Sets the zorder of this MixLayoutPane.
+        r"""Sets the zorder of this MixLayoutPane.
 
         叠放顺序，0为最底层，1层在0层之上，以此类推，最大支持25层，自定义布局场景下填写本字段。
 
@@ -282,7 +282,7 @@ class MixLayoutPane:
 
     @property
     def crop_mode(self):
-        """Gets the crop_mode of this MixLayoutPane.
+        r"""Gets the crop_mode of this MixLayoutPane.
 
         裁剪模式，自定义布局场景下填写本字段，支持两种模式：   - KEEP_RATIO_PADDING ：保持比例留边。   - KEEP_RATIO_CROP ：保持比例裁剪。 
 
@@ -293,7 +293,7 @@ class MixLayoutPane:
 
     @crop_mode.setter
     def crop_mode(self, crop_mode):
-        """Sets the crop_mode of this MixLayoutPane.
+        r"""Sets the crop_mode of this MixLayoutPane.
 
         裁剪模式，自定义布局场景下填写本字段，支持两种模式：   - KEEP_RATIO_PADDING ：保持比例留边。   - KEEP_RATIO_CROP ：保持比例裁剪。 
 
@@ -304,7 +304,7 @@ class MixLayoutPane:
 
     @property
     def filling_policy(self):
-        """Gets the filling_policy of this MixLayoutPane.
+        r"""Gets the filling_policy of this MixLayoutPane.
 
         填充策略，仅限屏幕共享模板(包括screen_share_right、screen_share_left)场景下填写本字段，支持两种模式：   - FIXED_USER ：固定用户填充。   - SHARED_SCREEN ：共享屏幕填充。 
 
@@ -315,7 +315,7 @@ class MixLayoutPane:
 
     @filling_policy.setter
     def filling_policy(self, filling_policy):
-        """Sets the filling_policy of this MixLayoutPane.
+        r"""Sets the filling_policy of this MixLayoutPane.
 
         填充策略，仅限屏幕共享模板(包括screen_share_right、screen_share_left)场景下填写本字段，支持两种模式：   - FIXED_USER ：固定用户填充。   - SHARED_SCREEN ：共享屏幕填充。 
 

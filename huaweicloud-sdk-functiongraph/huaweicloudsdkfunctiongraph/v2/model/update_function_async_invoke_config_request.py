@@ -27,7 +27,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateFunctionAsyncInvokeConfigRequest
+        r"""UpdateFunctionAsyncInvokeConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
+        r"""Gets the function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
+        r"""Sets the function_urn of this UpdateFunctionAsyncInvokeConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFunctionAsyncInvokeConfigRequest.
+        r"""Gets the body of this UpdateFunctionAsyncInvokeConfigRequest.
 
         :return: The body of this UpdateFunctionAsyncInvokeConfigRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`
@@ -80,7 +80,7 @@ class UpdateFunctionAsyncInvokeConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFunctionAsyncInvokeConfigRequest.
+        r"""Sets the body of this UpdateFunctionAsyncInvokeConfigRequest.
 
         :param body: The body of this UpdateFunctionAsyncInvokeConfigRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`

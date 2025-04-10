@@ -29,7 +29,7 @@ class TagsReq:
     }
 
     def __init__(self, action=None, tags=None, sys_tags=None):
-        """TagsReq
+        r"""TagsReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TagsReq:
 
     @property
     def action(self):
-        """Gets the action of this TagsReq.
+        r"""Gets the action of this TagsReq.
 
         操作字符串create或delete
 
@@ -68,7 +68,7 @@ class TagsReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this TagsReq.
+        r"""Sets the action of this TagsReq.
 
         操作字符串create或delete
 
@@ -79,7 +79,7 @@ class TagsReq:
 
     @property
     def tags(self):
-        """Gets the tags of this TagsReq.
+        r"""Gets the tags of this TagsReq.
 
         标签对象
 
@@ -90,7 +90,7 @@ class TagsReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagsReq.
+        r"""Sets the tags of this TagsReq.
 
         标签对象
 
@@ -101,7 +101,7 @@ class TagsReq:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this TagsReq.
+        r"""Gets the sys_tags of this TagsReq.
 
         标签对象（已废弃）
 
@@ -112,7 +112,7 @@ class TagsReq:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this TagsReq.
+        r"""Sets the sys_tags of this TagsReq.
 
         标签对象（已废弃）
 

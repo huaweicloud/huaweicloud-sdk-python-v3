@@ -25,7 +25,7 @@ class KeystoneCreateAgencyTokenRequestBody:
     }
 
     def __init__(self, auth=None):
-        """KeystoneCreateAgencyTokenRequestBody
+        r"""KeystoneCreateAgencyTokenRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneCreateAgencyTokenRequestBody:
 
     @property
     def auth(self):
-        """Gets the auth of this KeystoneCreateAgencyTokenRequestBody.
+        r"""Gets the auth of this KeystoneCreateAgencyTokenRequestBody.
 
         :return: The auth of this KeystoneCreateAgencyTokenRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenAuth`
@@ -51,7 +51,7 @@ class KeystoneCreateAgencyTokenRequestBody:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this KeystoneCreateAgencyTokenRequestBody.
+        r"""Sets the auth of this KeystoneCreateAgencyTokenRequestBody.
 
         :param auth: The auth of this KeystoneCreateAgencyTokenRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.AgencyTokenAuth`

@@ -24,7 +24,7 @@ class RenewDataProfileResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RenewDataProfileResponse
+        r"""RenewDataProfileResponse
 
         The model defined in huaweicloud sdk
 

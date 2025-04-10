@@ -45,7 +45,7 @@ class EventSubRequest:
     }
 
     def __init__(self, name=None, source_type=None, source_id=None, category=None, severity=None, tag=None, enable=None, notification_target=None, notification_target_name=None, notification_target_type=None, time_zone=None):
-        """EventSubRequest
+        r"""EventSubRequest
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class EventSubRequest:
 
     @property
     def name(self):
-        """Gets the name of this EventSubRequest.
+        r"""Gets the name of this EventSubRequest.
 
         事件订阅名称
 
@@ -120,7 +120,7 @@ class EventSubRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventSubRequest.
+        r"""Sets the name of this EventSubRequest.
 
         事件订阅名称
 
@@ -131,7 +131,7 @@ class EventSubRequest:
 
     @property
     def source_type(self):
-        """Gets the source_type of this EventSubRequest.
+        r"""Gets the source_type of this EventSubRequest.
 
         事件源类型支持cluster，backup，disaster-recovery
 
@@ -142,7 +142,7 @@ class EventSubRequest:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this EventSubRequest.
+        r"""Sets the source_type of this EventSubRequest.
 
         事件源类型支持cluster，backup，disaster-recovery
 
@@ -153,7 +153,7 @@ class EventSubRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this EventSubRequest.
+        r"""Gets the source_id of this EventSubRequest.
 
         事件源ID
 
@@ -164,7 +164,7 @@ class EventSubRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this EventSubRequest.
+        r"""Sets the source_id of this EventSubRequest.
 
         事件源ID
 
@@ -175,7 +175,7 @@ class EventSubRequest:
 
     @property
     def category(self):
-        """Gets the category of this EventSubRequest.
+        r"""Gets the category of this EventSubRequest.
 
         事件类别支持management，monitor，security，system alarm
 
@@ -186,7 +186,7 @@ class EventSubRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this EventSubRequest.
+        r"""Sets the category of this EventSubRequest.
 
         事件类别支持management，monitor，security，system alarm
 
@@ -197,7 +197,7 @@ class EventSubRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this EventSubRequest.
+        r"""Gets the severity of this EventSubRequest.
 
         事件级别支持normal，warning
 
@@ -208,7 +208,7 @@ class EventSubRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this EventSubRequest.
+        r"""Sets the severity of this EventSubRequest.
 
         事件级别支持normal，warning
 
@@ -219,7 +219,7 @@ class EventSubRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this EventSubRequest.
+        r"""Gets the tag of this EventSubRequest.
 
         事件标签
 
@@ -230,7 +230,7 @@ class EventSubRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this EventSubRequest.
+        r"""Sets the tag of this EventSubRequest.
 
         事件标签
 
@@ -241,7 +241,7 @@ class EventSubRequest:
 
     @property
     def enable(self):
-        """Gets the enable of this EventSubRequest.
+        r"""Gets the enable of this EventSubRequest.
 
         是否开启订阅 1为开启，0为关闭
 
@@ -252,7 +252,7 @@ class EventSubRequest:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this EventSubRequest.
+        r"""Sets the enable of this EventSubRequest.
 
         是否开启订阅 1为开启，0为关闭
 
@@ -263,7 +263,7 @@ class EventSubRequest:
 
     @property
     def notification_target(self):
-        """Gets the notification_target of this EventSubRequest.
+        r"""Gets the notification_target of this EventSubRequest.
 
         消息通知地址
 
@@ -274,7 +274,7 @@ class EventSubRequest:
 
     @notification_target.setter
     def notification_target(self, notification_target):
-        """Sets the notification_target of this EventSubRequest.
+        r"""Sets the notification_target of this EventSubRequest.
 
         消息通知地址
 
@@ -285,7 +285,7 @@ class EventSubRequest:
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this EventSubRequest.
+        r"""Gets the notification_target_name of this EventSubRequest.
 
         消息主题名称
 
@@ -296,7 +296,7 @@ class EventSubRequest:
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this EventSubRequest.
+        r"""Sets the notification_target_name of this EventSubRequest.
 
         消息主题名称
 
@@ -307,7 +307,7 @@ class EventSubRequest:
 
     @property
     def notification_target_type(self):
-        """Gets the notification_target_type of this EventSubRequest.
+        r"""Gets the notification_target_type of this EventSubRequest.
 
         消息通知类型只支持SMN
 
@@ -318,7 +318,7 @@ class EventSubRequest:
 
     @notification_target_type.setter
     def notification_target_type(self, notification_target_type):
-        """Sets the notification_target_type of this EventSubRequest.
+        r"""Sets the notification_target_type of this EventSubRequest.
 
         消息通知类型只支持SMN
 
@@ -329,7 +329,7 @@ class EventSubRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this EventSubRequest.
+        r"""Gets the time_zone of this EventSubRequest.
 
         时区
 
@@ -340,7 +340,7 @@ class EventSubRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this EventSubRequest.
+        r"""Sets the time_zone of this EventSubRequest.
 
         时区
 

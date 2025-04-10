@@ -25,7 +25,7 @@ class CreateTakeOverTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTakeOverTaskRequest
+        r"""CreateTakeOverTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTakeOverTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTakeOverTaskRequest.
+        r"""Gets the body of this CreateTakeOverTaskRequest.
 
         :return: The body of this CreateTakeOverTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`
@@ -52,7 +52,7 @@ class CreateTakeOverTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTakeOverTaskRequest.
+        r"""Sets the body of this CreateTakeOverTaskRequest.
 
         :param body: The body of this CreateTakeOverTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`

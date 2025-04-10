@@ -31,7 +31,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
     }
 
     def __init__(self, resource_id=None, resource_type=None, region_id=None, project_id=None):
-        """AssociateGlobalConnectionBandwidthInstanceRequestInfo
+        r"""AssociateGlobalConnectionBandwidthInstanceRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Gets the resource_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例ID。 取值范围：1-36个字符，支持数字、字母、_(下划线)、-（中划线）
 
@@ -72,7 +72,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Sets the resource_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例ID。 取值范围：1-36个字符，支持数字、字母、_(下划线)、-（中划线）
 
@@ -83,7 +83,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Gets the resource_type of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例类型。
 
@@ -94,7 +94,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Sets the resource_type of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例类型。
 
@@ -105,7 +105,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Gets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例所在region，不填默认\"global\"。
 
@@ -116,7 +116,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Sets the region_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例所在region，不填默认\"global\"。
 
@@ -127,7 +127,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Gets the project_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例所在region对应的projectId。
 
@@ -138,7 +138,7 @@ class AssociateGlobalConnectionBandwidthInstanceRequestInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
+        r"""Sets the project_id of this AssociateGlobalConnectionBandwidthInstanceRequestInfo.
 
         功能说明：实例所在region对应的projectId。
 

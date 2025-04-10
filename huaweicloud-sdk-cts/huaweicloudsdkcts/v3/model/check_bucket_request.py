@@ -31,7 +31,7 @@ class CheckBucketRequest:
     }
 
     def __init__(self, bucket_name=None, bucket_location=None, kms_id=None, is_support_trace_files_encryption=None):
-        """CheckBucketRequest
+        r"""CheckBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CheckBucketRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CheckBucketRequest.
+        r"""Gets the bucket_name of this CheckBucketRequest.
 
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
@@ -73,7 +73,7 @@ class CheckBucketRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CheckBucketRequest.
+        r"""Sets the bucket_name of this CheckBucketRequest.
 
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
@@ -84,7 +84,7 @@ class CheckBucketRequest:
 
     @property
     def bucket_location(self):
-        """Gets the bucket_location of this CheckBucketRequest.
+        r"""Gets the bucket_location of this CheckBucketRequest.
 
         标识OBS桶位置。
 
@@ -95,7 +95,7 @@ class CheckBucketRequest:
 
     @bucket_location.setter
     def bucket_location(self, bucket_location):
-        """Sets the bucket_location of this CheckBucketRequest.
+        r"""Sets the bucket_location of this CheckBucketRequest.
 
         标识OBS桶位置。
 
@@ -106,7 +106,7 @@ class CheckBucketRequest:
 
     @property
     def kms_id(self):
-        """Gets the kms_id of this CheckBucketRequest.
+        r"""Gets the kms_id of this CheckBucketRequest.
 
         事件文件转储加密所采用的秘钥id，is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -117,7 +117,7 @@ class CheckBucketRequest:
 
     @kms_id.setter
     def kms_id(self, kms_id):
-        """Sets the kms_id of this CheckBucketRequest.
+        r"""Sets the kms_id of this CheckBucketRequest.
 
         事件文件转储加密所采用的秘钥id，is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -128,7 +128,7 @@ class CheckBucketRequest:
 
     @property
     def is_support_trace_files_encryption(self):
-        """Gets the is_support_trace_files_encryption of this CheckBucketRequest.
+        r"""Gets the is_support_trace_files_encryption of this CheckBucketRequest.
 
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。
 
@@ -139,7 +139,7 @@ class CheckBucketRequest:
 
     @is_support_trace_files_encryption.setter
     def is_support_trace_files_encryption(self, is_support_trace_files_encryption):
-        """Sets the is_support_trace_files_encryption of this CheckBucketRequest.
+        r"""Sets the is_support_trace_files_encryption of this CheckBucketRequest.
 
         事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。
 

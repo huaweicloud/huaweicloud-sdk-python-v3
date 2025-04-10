@@ -27,7 +27,7 @@ class UpdateEndpointRoutetableRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None, body=None):
-        """UpdateEndpointRoutetableRequest
+        r"""UpdateEndpointRoutetableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEndpointRoutetableRequest:
 
     @property
     def vpc_endpoint_id(self):
-        """Gets the vpc_endpoint_id of this UpdateEndpointRoutetableRequest.
+        r"""Gets the vpc_endpoint_id of this UpdateEndpointRoutetableRequest.
 
         终端节点的ID。
 
@@ -60,7 +60,7 @@ class UpdateEndpointRoutetableRequest:
 
     @vpc_endpoint_id.setter
     def vpc_endpoint_id(self, vpc_endpoint_id):
-        """Sets the vpc_endpoint_id of this UpdateEndpointRoutetableRequest.
+        r"""Sets the vpc_endpoint_id of this UpdateEndpointRoutetableRequest.
 
         终端节点的ID。
 
@@ -71,7 +71,7 @@ class UpdateEndpointRoutetableRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointRoutetableRequest.
+        r"""Gets the body of this UpdateEndpointRoutetableRequest.
 
         :return: The body of this UpdateEndpointRoutetableRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`
@@ -80,7 +80,7 @@ class UpdateEndpointRoutetableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointRoutetableRequest.
+        r"""Sets the body of this UpdateEndpointRoutetableRequest.
 
         :param body: The body of this UpdateEndpointRoutetableRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`

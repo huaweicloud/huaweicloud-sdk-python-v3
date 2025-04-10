@@ -29,7 +29,7 @@ class ListGraphBackups2Request:
     }
 
     def __init__(self, graph_id=None, offset=None, limit=None):
-        """ListGraphBackups2Request
+        r"""ListGraphBackups2Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGraphBackups2Request:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ListGraphBackups2Request.
+        r"""Gets the graph_id of this ListGraphBackups2Request.
 
         图ID。
 
@@ -67,7 +67,7 @@ class ListGraphBackups2Request:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ListGraphBackups2Request.
+        r"""Sets the graph_id of this ListGraphBackups2Request.
 
         图ID。
 
@@ -78,7 +78,7 @@ class ListGraphBackups2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGraphBackups2Request.
+        r"""Gets the offset of this ListGraphBackups2Request.
 
         本次请求的起始位置，默认为0。
 
@@ -89,7 +89,7 @@ class ListGraphBackups2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGraphBackups2Request.
+        r"""Sets the offset of this ListGraphBackups2Request.
 
         本次请求的起始位置，默认为0。
 
@@ -100,7 +100,7 @@ class ListGraphBackups2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGraphBackups2Request.
+        r"""Gets the limit of this ListGraphBackups2Request.
 
         每页资源数量的最大值，默认为10。
 
@@ -111,7 +111,7 @@ class ListGraphBackups2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGraphBackups2Request.
+        r"""Sets the limit of this ListGraphBackups2Request.
 
         每页资源数量的最大值，默认为10。
 

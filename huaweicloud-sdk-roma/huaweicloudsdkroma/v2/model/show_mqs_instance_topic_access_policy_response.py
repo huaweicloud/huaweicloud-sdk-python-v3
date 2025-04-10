@@ -34,7 +34,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self, name=None, policies=None, total=None, size=None, operation=None):
-        """ShowMqsInstanceTopicAccessPolicyResponse
+        r"""ShowMqsInstanceTopicAccessPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Gets the name of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         topic名称。
 
@@ -83,7 +83,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Sets the name of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         topic名称。
 
@@ -94,7 +94,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Gets the policies of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         策略列表。
 
@@ -105,7 +105,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Sets the policies of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         策略列表。
 
@@ -116,7 +116,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Gets the total of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         权限策略的总数。
 
@@ -127,7 +127,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Sets the total of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         权限策略的总数。
 
@@ -138,7 +138,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Gets the size of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         查询权限策略的数量。
 
@@ -149,7 +149,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Sets the size of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         查询权限策略的数量。
 
@@ -160,7 +160,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def operation(self):
-        """Gets the operation of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Gets the operation of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         topic名称。
 
@@ -171,7 +171,7 @@ class ShowMqsInstanceTopicAccessPolicyResponse(SdkResponse):
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ShowMqsInstanceTopicAccessPolicyResponse.
+        r"""Sets the operation of this ShowMqsInstanceTopicAccessPolicyResponse.
 
         topic名称。
 

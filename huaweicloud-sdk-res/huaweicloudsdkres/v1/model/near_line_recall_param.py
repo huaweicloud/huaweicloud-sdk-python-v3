@@ -33,7 +33,7 @@ class NearLineRecallParam:
     }
 
     def __init__(self, time_limit=None, time_feature=None, retain_days=None, recall_fileds=None, item_cf_job_name=None):
-        """NearLineRecallParam
+        r"""NearLineRecallParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NearLineRecallParam:
 
     @property
     def time_limit(self):
-        """Gets the time_limit of this NearLineRecallParam.
+        r"""Gets the time_limit of this NearLineRecallParam.
 
         时间过滤。
 
@@ -82,7 +82,7 @@ class NearLineRecallParam:
 
     @time_limit.setter
     def time_limit(self, time_limit):
-        """Sets the time_limit of this NearLineRecallParam.
+        r"""Sets the time_limit of this NearLineRecallParam.
 
         时间过滤。
 
@@ -93,7 +93,7 @@ class NearLineRecallParam:
 
     @property
     def time_feature(self):
-        """Gets the time_feature of this NearLineRecallParam.
+        r"""Gets the time_feature of this NearLineRecallParam.
 
         时间特征。
 
@@ -104,7 +104,7 @@ class NearLineRecallParam:
 
     @time_feature.setter
     def time_feature(self, time_feature):
-        """Sets the time_feature of this NearLineRecallParam.
+        r"""Sets the time_feature of this NearLineRecallParam.
 
         时间特征。
 
@@ -115,7 +115,7 @@ class NearLineRecallParam:
 
     @property
     def retain_days(self):
-        """Gets the retain_days of this NearLineRecallParam.
+        r"""Gets the retain_days of this NearLineRecallParam.
 
         保留期(天)。
 
@@ -126,7 +126,7 @@ class NearLineRecallParam:
 
     @retain_days.setter
     def retain_days(self, retain_days):
-        """Sets the retain_days of this NearLineRecallParam.
+        r"""Sets the retain_days of this NearLineRecallParam.
 
         保留期(天)。
 
@@ -137,7 +137,7 @@ class NearLineRecallParam:
 
     @property
     def recall_fileds(self):
-        """Gets the recall_fileds of this NearLineRecallParam.
+        r"""Gets the recall_fileds of this NearLineRecallParam.
 
         召回字段。
 
@@ -148,7 +148,7 @@ class NearLineRecallParam:
 
     @recall_fileds.setter
     def recall_fileds(self, recall_fileds):
-        """Sets the recall_fileds of this NearLineRecallParam.
+        r"""Sets the recall_fileds of this NearLineRecallParam.
 
         召回字段。
 
@@ -159,7 +159,7 @@ class NearLineRecallParam:
 
     @property
     def item_cf_job_name(self):
-        """Gets the item_cf_job_name of this NearLineRecallParam.
+        r"""Gets the item_cf_job_name of this NearLineRecallParam.
 
         物品协同过滤作业名称。
 
@@ -170,7 +170,7 @@ class NearLineRecallParam:
 
     @item_cf_job_name.setter
     def item_cf_job_name(self, item_cf_job_name):
-        """Sets the item_cf_job_name of this NearLineRecallParam.
+        r"""Sets the item_cf_job_name of this NearLineRecallParam.
 
         物品协同过滤作业名称。
 

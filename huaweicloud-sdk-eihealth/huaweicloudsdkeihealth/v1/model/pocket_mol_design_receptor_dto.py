@@ -35,7 +35,7 @@ class PocketMolDesignReceptorDto:
     }
 
     def __init__(self, file=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
-        """PocketMolDesignReceptorDto
+        r"""PocketMolDesignReceptorDto
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class PocketMolDesignReceptorDto:
 
     @property
     def file(self):
-        """Gets the file of this PocketMolDesignReceptorDto.
+        r"""Gets the file of this PocketMolDesignReceptorDto.
 
         :return: The file of this PocketMolDesignReceptorDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -86,7 +86,7 @@ class PocketMolDesignReceptorDto:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this PocketMolDesignReceptorDto.
+        r"""Sets the file of this PocketMolDesignReceptorDto.
 
         :param file: The file of this PocketMolDesignReceptorDto.
         :type file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -95,7 +95,7 @@ class PocketMolDesignReceptorDto:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this PocketMolDesignReceptorDto.
+        r"""Gets the bounding_box of this PocketMolDesignReceptorDto.
 
         :return: The bounding_box of this PocketMolDesignReceptorDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
@@ -104,7 +104,7 @@ class PocketMolDesignReceptorDto:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this PocketMolDesignReceptorDto.
+        r"""Sets the bounding_box of this PocketMolDesignReceptorDto.
 
         :param bounding_box: The bounding_box of this PocketMolDesignReceptorDto.
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
@@ -113,7 +113,7 @@ class PocketMolDesignReceptorDto:
 
     @property
     def remove_ion(self):
-        """Gets the remove_ion of this PocketMolDesignReceptorDto.
+        r"""Gets the remove_ion of this PocketMolDesignReceptorDto.
 
         去除受体中的离子
 
@@ -124,7 +124,7 @@ class PocketMolDesignReceptorDto:
 
     @remove_ion.setter
     def remove_ion(self, remove_ion):
-        """Sets the remove_ion of this PocketMolDesignReceptorDto.
+        r"""Sets the remove_ion of this PocketMolDesignReceptorDto.
 
         去除受体中的离子
 
@@ -135,7 +135,7 @@ class PocketMolDesignReceptorDto:
 
     @property
     def remove_water(self):
-        """Gets the remove_water of this PocketMolDesignReceptorDto.
+        r"""Gets the remove_water of this PocketMolDesignReceptorDto.
 
         去除受体中的水分子
 
@@ -146,7 +146,7 @@ class PocketMolDesignReceptorDto:
 
     @remove_water.setter
     def remove_water(self, remove_water):
-        """Sets the remove_water of this PocketMolDesignReceptorDto.
+        r"""Sets the remove_water of this PocketMolDesignReceptorDto.
 
         去除受体中的水分子
 
@@ -157,7 +157,7 @@ class PocketMolDesignReceptorDto:
 
     @property
     def remove_ligand(self):
-        """Gets the remove_ligand of this PocketMolDesignReceptorDto.
+        r"""Gets the remove_ligand of this PocketMolDesignReceptorDto.
 
         去除受体中的配体分子
 
@@ -168,7 +168,7 @@ class PocketMolDesignReceptorDto:
 
     @remove_ligand.setter
     def remove_ligand(self, remove_ligand):
-        """Sets the remove_ligand of this PocketMolDesignReceptorDto.
+        r"""Sets the remove_ligand of this PocketMolDesignReceptorDto.
 
         去除受体中的配体分子
 
@@ -179,7 +179,7 @@ class PocketMolDesignReceptorDto:
 
     @property
     def add_hydrogen(self):
-        """Gets the add_hydrogen of this PocketMolDesignReceptorDto.
+        r"""Gets the add_hydrogen of this PocketMolDesignReceptorDto.
 
         增加氢原子
 
@@ -190,7 +190,7 @@ class PocketMolDesignReceptorDto:
 
     @add_hydrogen.setter
     def add_hydrogen(self, add_hydrogen):
-        """Sets the add_hydrogen of this PocketMolDesignReceptorDto.
+        r"""Sets the add_hydrogen of this PocketMolDesignReceptorDto.
 
         增加氢原子
 

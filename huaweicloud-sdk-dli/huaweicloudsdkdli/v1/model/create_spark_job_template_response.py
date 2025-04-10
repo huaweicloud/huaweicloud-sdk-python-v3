@@ -26,7 +26,7 @@ class CreateSparkJobTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateSparkJobTemplateResponse
+        r"""CreateSparkJobTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSparkJobTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSparkJobTemplateResponse.
+        r"""Gets the id of this CreateSparkJobTemplateResponse.
 
         模板ID。
 
@@ -55,7 +55,7 @@ class CreateSparkJobTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSparkJobTemplateResponse.
+        r"""Sets the id of this CreateSparkJobTemplateResponse.
 
         模板ID。
 

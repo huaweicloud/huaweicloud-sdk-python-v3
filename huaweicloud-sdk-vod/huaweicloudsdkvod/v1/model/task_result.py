@@ -27,7 +27,7 @@ class TaskResult:
     }
 
     def __init__(self, asset_id=None, status=None):
-        """TaskResult
+        r"""TaskResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskResult:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this TaskResult.
+        r"""Gets the asset_id of this TaskResult.
 
         媒资ID 
 
@@ -61,7 +61,7 @@ class TaskResult:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this TaskResult.
+        r"""Sets the asset_id of this TaskResult.
 
         媒资ID 
 
@@ -72,7 +72,7 @@ class TaskResult:
 
     @property
     def status(self):
-        """Gets the status of this TaskResult.
+        r"""Gets the status of this TaskResult.
 
         修改媒资存储状态任务下发成功与否，SUCCEED成功，FAILED失败 
 
@@ -83,7 +83,7 @@ class TaskResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskResult.
+        r"""Sets the status of this TaskResult.
 
         修改媒资存储状态任务下发成功与否，SUCCEED成功，FAILED失败 
 

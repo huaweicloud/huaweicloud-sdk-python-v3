@@ -26,7 +26,7 @@ class StopDatabaseProxyResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """StopDatabaseProxyResponse
+        r"""StopDatabaseProxyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopDatabaseProxyResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this StopDatabaseProxyResponse.
+        r"""Gets the workflow_id of this StopDatabaseProxyResponse.
 
         工作流ID
 
@@ -55,7 +55,7 @@ class StopDatabaseProxyResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StopDatabaseProxyResponse.
+        r"""Sets the workflow_id of this StopDatabaseProxyResponse.
 
         工作流ID
 

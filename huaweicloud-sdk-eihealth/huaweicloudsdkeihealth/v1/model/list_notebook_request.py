@@ -33,7 +33,7 @@ class ListNotebookRequest:
     }
 
     def __init__(self, eihealth_project_id=None, limit=None, name=None, offset=None, status=None):
-        """ListNotebookRequest
+        r"""ListNotebookRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListNotebookRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListNotebookRequest.
+        r"""Gets the eihealth_project_id of this ListNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -81,7 +81,7 @@ class ListNotebookRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListNotebookRequest.
+        r"""Sets the eihealth_project_id of this ListNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -92,7 +92,7 @@ class ListNotebookRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNotebookRequest.
+        r"""Gets the limit of this ListNotebookRequest.
 
         读取条数
 
@@ -103,7 +103,7 @@ class ListNotebookRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNotebookRequest.
+        r"""Sets the limit of this ListNotebookRequest.
 
         读取条数
 
@@ -114,7 +114,7 @@ class ListNotebookRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListNotebookRequest.
+        r"""Gets the name of this ListNotebookRequest.
 
         notebook名称
 
@@ -125,7 +125,7 @@ class ListNotebookRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListNotebookRequest.
+        r"""Sets the name of this ListNotebookRequest.
 
         notebook名称
 
@@ -136,7 +136,7 @@ class ListNotebookRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNotebookRequest.
+        r"""Gets the offset of this ListNotebookRequest.
 
         读取偏移量
 
@@ -147,7 +147,7 @@ class ListNotebookRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNotebookRequest.
+        r"""Sets the offset of this ListNotebookRequest.
 
         读取偏移量
 
@@ -158,7 +158,7 @@ class ListNotebookRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListNotebookRequest.
+        r"""Gets the status of this ListNotebookRequest.
 
         notebook状态
 
@@ -169,7 +169,7 @@ class ListNotebookRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNotebookRequest.
+        r"""Sets the status of this ListNotebookRequest.
 
         notebook状态
 

@@ -27,7 +27,7 @@ class ConnectionRequestBody:
     }
 
     def __init__(self, phone_ids=None, client_type=None):
-        """ConnectionRequestBody
+        r"""ConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConnectionRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this ConnectionRequestBody.
+        r"""Gets the phone_ids of this ConnectionRequestBody.
 
         phone_id数组，单次请求最大限制10
 
@@ -59,7 +59,7 @@ class ConnectionRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this ConnectionRequestBody.
+        r"""Sets the phone_ids of this ConnectionRequestBody.
 
         phone_id数组，单次请求最大限制10
 
@@ -70,7 +70,7 @@ class ConnectionRequestBody:
 
     @property
     def client_type(self):
-        """Gets the client_type of this ConnectionRequestBody.
+        r"""Gets the client_type of this ConnectionRequestBody.
 
         申请接入的客户端类型 - ANDROID: 安卓平台SDK - WINDOWS: Windows平台SDK - H5_MOBILE: H5移动端SDK - H5_PC: H5 PC端SDK - IOS: iOS平台SDK
 
@@ -81,7 +81,7 @@ class ConnectionRequestBody:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this ConnectionRequestBody.
+        r"""Sets the client_type of this ConnectionRequestBody.
 
         申请接入的客户端类型 - ANDROID: 安卓平台SDK - WINDOWS: Windows平台SDK - H5_MOBILE: H5移动端SDK - H5_PC: H5 PC端SDK - IOS: iOS平台SDK
 

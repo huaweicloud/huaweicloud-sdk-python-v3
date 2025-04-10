@@ -32,7 +32,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, connections=None, count=None):
-        """ListDatasourceConnectionsResponse
+        r"""ListDatasourceConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListDatasourceConnectionsResponse.
+        r"""Gets the is_success of this ListDatasourceConnectionsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListDatasourceConnectionsResponse.
+        r"""Sets the is_success of this ListDatasourceConnectionsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListDatasourceConnectionsResponse.
+        r"""Gets the message of this ListDatasourceConnectionsResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListDatasourceConnectionsResponse.
+        r"""Sets the message of this ListDatasourceConnectionsResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this ListDatasourceConnectionsResponse.
+        r"""Gets the connections of this ListDatasourceConnectionsResponse.
 
         跨源连接信息列表。
 
@@ -120,7 +120,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this ListDatasourceConnectionsResponse.
+        r"""Sets the connections of this ListDatasourceConnectionsResponse.
 
         跨源连接信息列表。
 
@@ -131,7 +131,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDatasourceConnectionsResponse.
+        r"""Gets the count of this ListDatasourceConnectionsResponse.
 
         总数
 
@@ -142,7 +142,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDatasourceConnectionsResponse.
+        r"""Sets the count of this ListDatasourceConnectionsResponse.
 
         总数
 

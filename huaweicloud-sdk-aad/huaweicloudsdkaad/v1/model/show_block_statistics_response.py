@@ -32,7 +32,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, total_unblocking_times=None, manual_unblocking_times=None, automatic_unblocking_times=None, current_blocked_ip_numbers=None):
-        """ShowBlockStatisticsResponse
+        r"""ShowBlockStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @property
     def total_unblocking_times(self):
-        """Gets the total_unblocking_times of this ShowBlockStatisticsResponse.
+        r"""Gets the total_unblocking_times of this ShowBlockStatisticsResponse.
 
         总解封次数
 
@@ -76,7 +76,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @total_unblocking_times.setter
     def total_unblocking_times(self, total_unblocking_times):
-        """Sets the total_unblocking_times of this ShowBlockStatisticsResponse.
+        r"""Sets the total_unblocking_times of this ShowBlockStatisticsResponse.
 
         总解封次数
 
@@ -87,7 +87,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @property
     def manual_unblocking_times(self):
-        """Gets the manual_unblocking_times of this ShowBlockStatisticsResponse.
+        r"""Gets the manual_unblocking_times of this ShowBlockStatisticsResponse.
 
         人工解封次数
 
@@ -98,7 +98,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @manual_unblocking_times.setter
     def manual_unblocking_times(self, manual_unblocking_times):
-        """Sets the manual_unblocking_times of this ShowBlockStatisticsResponse.
+        r"""Sets the manual_unblocking_times of this ShowBlockStatisticsResponse.
 
         人工解封次数
 
@@ -109,7 +109,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @property
     def automatic_unblocking_times(self):
-        """Gets the automatic_unblocking_times of this ShowBlockStatisticsResponse.
+        r"""Gets the automatic_unblocking_times of this ShowBlockStatisticsResponse.
 
         自动解封次数
 
@@ -120,7 +120,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @automatic_unblocking_times.setter
     def automatic_unblocking_times(self, automatic_unblocking_times):
-        """Sets the automatic_unblocking_times of this ShowBlockStatisticsResponse.
+        r"""Sets the automatic_unblocking_times of this ShowBlockStatisticsResponse.
 
         自动解封次数
 
@@ -131,7 +131,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @property
     def current_blocked_ip_numbers(self):
-        """Gets the current_blocked_ip_numbers of this ShowBlockStatisticsResponse.
+        r"""Gets the current_blocked_ip_numbers of this ShowBlockStatisticsResponse.
 
         当前封堵Ip数
 
@@ -142,7 +142,7 @@ class ShowBlockStatisticsResponse(SdkResponse):
 
     @current_blocked_ip_numbers.setter
     def current_blocked_ip_numbers(self, current_blocked_ip_numbers):
-        """Sets the current_blocked_ip_numbers of this ShowBlockStatisticsResponse.
+        r"""Sets the current_blocked_ip_numbers of this ShowBlockStatisticsResponse.
 
         当前封堵Ip数
 

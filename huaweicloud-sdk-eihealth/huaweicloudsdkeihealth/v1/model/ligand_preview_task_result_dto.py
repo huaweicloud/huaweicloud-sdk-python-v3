@@ -29,7 +29,7 @@ class LigandPreviewTaskResultDto:
     }
 
     def __init__(self, count=None, ligands=None, has_more=None):
-        """LigandPreviewTaskResultDto
+        r"""LigandPreviewTaskResultDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LigandPreviewTaskResultDto:
 
     @property
     def count(self):
-        """Gets the count of this LigandPreviewTaskResultDto.
+        r"""Gets the count of this LigandPreviewTaskResultDto.
 
         已知的配体数量
 
@@ -65,7 +65,7 @@ class LigandPreviewTaskResultDto:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this LigandPreviewTaskResultDto.
+        r"""Sets the count of this LigandPreviewTaskResultDto.
 
         已知的配体数量
 
@@ -76,7 +76,7 @@ class LigandPreviewTaskResultDto:
 
     @property
     def ligands(self):
-        """Gets the ligands of this LigandPreviewTaskResultDto.
+        r"""Gets the ligands of this LigandPreviewTaskResultDto.
 
         预览配体信息列表
 
@@ -87,7 +87,7 @@ class LigandPreviewTaskResultDto:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this LigandPreviewTaskResultDto.
+        r"""Sets the ligands of this LigandPreviewTaskResultDto.
 
         预览配体信息列表
 
@@ -98,7 +98,7 @@ class LigandPreviewTaskResultDto:
 
     @property
     def has_more(self):
-        """Gets the has_more of this LigandPreviewTaskResultDto.
+        r"""Gets the has_more of this LigandPreviewTaskResultDto.
 
         文件中是否还有更多配体没有处理；即当前数量是否表示整个文件的配体数量，若该值为false则表该配体文件含有count数量个配体；若该值为true则表示改配体文件含有大于count数量个配体（即count不完全统计）；例如：count=100且has_more=true，则前端可显示该配体文件含有\"100+个\"小分子
 
@@ -109,7 +109,7 @@ class LigandPreviewTaskResultDto:
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this LigandPreviewTaskResultDto.
+        r"""Sets the has_more of this LigandPreviewTaskResultDto.
 
         文件中是否还有更多配体没有处理；即当前数量是否表示整个文件的配体数量，若该值为false则表该配体文件含有count数量个配体；若该值为true则表示改配体文件含有大于count数量个配体（即count不完全统计）；例如：count=100且has_more=true，则前端可显示该配体文件含有\"100+个\"小分子
 

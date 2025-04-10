@@ -27,7 +27,7 @@ class HistoryValues:
     }
 
     def __init__(self, property_name=None, values=None):
-        """HistoryValues
+        r"""HistoryValues
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HistoryValues:
 
     @property
     def property_name(self):
-        """Gets the property_name of this HistoryValues.
+        r"""Gets the property_name of this HistoryValues.
 
         属性名称
 
@@ -61,7 +61,7 @@ class HistoryValues:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this HistoryValues.
+        r"""Sets the property_name of this HistoryValues.
 
         属性名称
 
@@ -72,7 +72,7 @@ class HistoryValues:
 
     @property
     def values(self):
-        """Gets the values of this HistoryValues.
+        r"""Gets the values of this HistoryValues.
 
         属性值
 
@@ -83,7 +83,7 @@ class HistoryValues:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this HistoryValues.
+        r"""Sets the values of this HistoryValues.
 
         属性值
 

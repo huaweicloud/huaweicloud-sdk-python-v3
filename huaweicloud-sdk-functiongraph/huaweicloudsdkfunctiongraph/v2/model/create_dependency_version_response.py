@@ -48,7 +48,7 @@ class CreateDependencyVersionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, dep_id=None, last_modified=None):
-        """CreateDependencyVersionResponse
+        r"""CreateDependencyVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDependencyVersionResponse.
+        r"""Gets the id of this CreateDependencyVersionResponse.
 
         依赖包版本ID。
 
@@ -132,7 +132,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDependencyVersionResponse.
+        r"""Sets the id of this CreateDependencyVersionResponse.
 
         依赖包版本ID。
 
@@ -143,7 +143,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this CreateDependencyVersionResponse.
+        r"""Gets the owner of this CreateDependencyVersionResponse.
 
         依赖包拥有者。
 
@@ -154,7 +154,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CreateDependencyVersionResponse.
+        r"""Sets the owner of this CreateDependencyVersionResponse.
 
         依赖包拥有者。
 
@@ -165,7 +165,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def link(self):
-        """Gets the link of this CreateDependencyVersionResponse.
+        r"""Gets the link of this CreateDependencyVersionResponse.
 
         依赖包在obs的存储地址。
 
@@ -176,7 +176,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @link.setter
     def link(self, link):
-        """Sets the link of this CreateDependencyVersionResponse.
+        r"""Sets the link of this CreateDependencyVersionResponse.
 
         依赖包在obs的存储地址。
 
@@ -187,7 +187,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def runtime(self):
-        """Gets the runtime of this CreateDependencyVersionResponse.
+        r"""Gets the runtime of this CreateDependencyVersionResponse.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -198,7 +198,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this CreateDependencyVersionResponse.
+        r"""Sets the runtime of this CreateDependencyVersionResponse.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -209,7 +209,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def etag(self):
-        """Gets the etag of this CreateDependencyVersionResponse.
+        r"""Gets the etag of this CreateDependencyVersionResponse.
 
         依赖包唯一标志。
 
@@ -220,7 +220,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this CreateDependencyVersionResponse.
+        r"""Sets the etag of this CreateDependencyVersionResponse.
 
         依赖包唯一标志。
 
@@ -231,7 +231,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this CreateDependencyVersionResponse.
+        r"""Gets the size of this CreateDependencyVersionResponse.
 
         依赖包大小。
 
@@ -242,7 +242,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateDependencyVersionResponse.
+        r"""Sets the size of this CreateDependencyVersionResponse.
 
         依赖包大小。
 
@@ -253,7 +253,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateDependencyVersionResponse.
+        r"""Gets the name of this CreateDependencyVersionResponse.
 
         依赖包名。
 
@@ -264,7 +264,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDependencyVersionResponse.
+        r"""Sets the name of this CreateDependencyVersionResponse.
 
         依赖包名。
 
@@ -275,7 +275,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateDependencyVersionResponse.
+        r"""Gets the description of this CreateDependencyVersionResponse.
 
         依赖包描述。
 
@@ -286,7 +286,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDependencyVersionResponse.
+        r"""Sets the description of this CreateDependencyVersionResponse.
 
         依赖包描述。
 
@@ -297,7 +297,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this CreateDependencyVersionResponse.
+        r"""Gets the file_name of this CreateDependencyVersionResponse.
 
         依赖包文件名。
 
@@ -308,7 +308,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CreateDependencyVersionResponse.
+        r"""Sets the file_name of this CreateDependencyVersionResponse.
 
         依赖包文件名。
 
@@ -319,7 +319,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateDependencyVersionResponse.
+        r"""Gets the version of this CreateDependencyVersionResponse.
 
         依赖包版本号
 
@@ -330,7 +330,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateDependencyVersionResponse.
+        r"""Sets the version of this CreateDependencyVersionResponse.
 
         依赖包版本号
 
@@ -341,7 +341,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def dep_id(self):
-        """Gets the dep_id of this CreateDependencyVersionResponse.
+        r"""Gets the dep_id of this CreateDependencyVersionResponse.
 
         依赖包ID
 
@@ -352,7 +352,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @dep_id.setter
     def dep_id(self, dep_id):
-        """Sets the dep_id of this CreateDependencyVersionResponse.
+        r"""Sets the dep_id of this CreateDependencyVersionResponse.
 
         依赖包ID
 
@@ -363,7 +363,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this CreateDependencyVersionResponse.
+        r"""Gets the last_modified of this CreateDependencyVersionResponse.
 
         依赖包更新时间
 
@@ -374,7 +374,7 @@ class CreateDependencyVersionResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this CreateDependencyVersionResponse.
+        r"""Sets the last_modified of this CreateDependencyVersionResponse.
 
         依赖包更新时间
 

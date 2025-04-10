@@ -25,7 +25,7 @@ class UntagBandwidthPackageRequestBody:
     }
 
     def __init__(self, tags=None):
-        """UntagBandwidthPackageRequestBody
+        r"""UntagBandwidthPackageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UntagBandwidthPackageRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this UntagBandwidthPackageRequestBody.
+        r"""Gets the tags of this UntagBandwidthPackageRequestBody.
 
         包含标签。
 
@@ -53,7 +53,7 @@ class UntagBandwidthPackageRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UntagBandwidthPackageRequestBody.
+        r"""Sets the tags of this UntagBandwidthPackageRequestBody.
 
         包含标签。
 

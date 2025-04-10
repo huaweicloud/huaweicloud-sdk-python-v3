@@ -41,7 +41,7 @@ class AlertTemplateVo:
     }
 
     def __init__(self, alert_levels=None, create_time=None, create_user=None, id=None, name=None, remarks=None, test_service_id=None, update_time=None, update_user=None):
-        """AlertTemplateVo
+        r"""AlertTemplateVo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AlertTemplateVo:
 
     @property
     def alert_levels(self):
-        """Gets the alert_levels of this AlertTemplateVo.
+        r"""Gets the alert_levels of this AlertTemplateVo.
 
         告警级别列表
 
@@ -110,7 +110,7 @@ class AlertTemplateVo:
 
     @alert_levels.setter
     def alert_levels(self, alert_levels):
-        """Sets the alert_levels of this AlertTemplateVo.
+        r"""Sets the alert_levels of this AlertTemplateVo.
 
         告警级别列表
 
@@ -121,7 +121,7 @@ class AlertTemplateVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlertTemplateVo.
+        r"""Gets the create_time of this AlertTemplateVo.
 
         创建时间
 
@@ -132,7 +132,7 @@ class AlertTemplateVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlertTemplateVo.
+        r"""Sets the create_time of this AlertTemplateVo.
 
         创建时间
 
@@ -143,7 +143,7 @@ class AlertTemplateVo:
 
     @property
     def create_user(self):
-        """Gets the create_user of this AlertTemplateVo.
+        r"""Gets the create_user of this AlertTemplateVo.
 
         创建人
 
@@ -154,7 +154,7 @@ class AlertTemplateVo:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this AlertTemplateVo.
+        r"""Sets the create_user of this AlertTemplateVo.
 
         创建人
 
@@ -165,7 +165,7 @@ class AlertTemplateVo:
 
     @property
     def id(self):
-        """Gets the id of this AlertTemplateVo.
+        r"""Gets the id of this AlertTemplateVo.
 
         唯一ID，主键
 
@@ -176,7 +176,7 @@ class AlertTemplateVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlertTemplateVo.
+        r"""Sets the id of this AlertTemplateVo.
 
         唯一ID，主键
 
@@ -187,7 +187,7 @@ class AlertTemplateVo:
 
     @property
     def name(self):
-        """Gets the name of this AlertTemplateVo.
+        r"""Gets the name of this AlertTemplateVo.
 
         告警模板名称
 
@@ -198,7 +198,7 @@ class AlertTemplateVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlertTemplateVo.
+        r"""Sets the name of this AlertTemplateVo.
 
         告警模板名称
 
@@ -209,7 +209,7 @@ class AlertTemplateVo:
 
     @property
     def remarks(self):
-        """Gets the remarks of this AlertTemplateVo.
+        r"""Gets the remarks of this AlertTemplateVo.
 
         备注
 
@@ -220,7 +220,7 @@ class AlertTemplateVo:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this AlertTemplateVo.
+        r"""Sets the remarks of this AlertTemplateVo.
 
         备注
 
@@ -231,7 +231,7 @@ class AlertTemplateVo:
 
     @property
     def test_service_id(self):
-        """Gets the test_service_id of this AlertTemplateVo.
+        r"""Gets the test_service_id of this AlertTemplateVo.
 
         服务ID
 
@@ -242,7 +242,7 @@ class AlertTemplateVo:
 
     @test_service_id.setter
     def test_service_id(self, test_service_id):
-        """Sets the test_service_id of this AlertTemplateVo.
+        r"""Sets the test_service_id of this AlertTemplateVo.
 
         服务ID
 
@@ -253,7 +253,7 @@ class AlertTemplateVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlertTemplateVo.
+        r"""Gets the update_time of this AlertTemplateVo.
 
         创建时间
 
@@ -264,7 +264,7 @@ class AlertTemplateVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlertTemplateVo.
+        r"""Sets the update_time of this AlertTemplateVo.
 
         创建时间
 
@@ -275,7 +275,7 @@ class AlertTemplateVo:
 
     @property
     def update_user(self):
-        """Gets the update_user of this AlertTemplateVo.
+        r"""Gets the update_user of this AlertTemplateVo.
 
         更新人
 
@@ -286,7 +286,7 @@ class AlertTemplateVo:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this AlertTemplateVo.
+        r"""Sets the update_user of this AlertTemplateVo.
 
         更新人
 

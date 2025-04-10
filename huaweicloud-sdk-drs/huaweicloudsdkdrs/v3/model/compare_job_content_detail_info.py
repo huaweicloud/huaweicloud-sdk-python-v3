@@ -31,7 +31,7 @@ class CompareJobContentDetailInfo:
     }
 
     def __init__(self, source_key_value=None, target_key_value=None, select_sql=None, target_select_sql=None):
-        """CompareJobContentDetailInfo
+        r"""CompareJobContentDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CompareJobContentDetailInfo:
 
     @property
     def source_key_value(self):
-        """Gets the source_key_value of this CompareJobContentDetailInfo.
+        r"""Gets the source_key_value of this CompareJobContentDetailInfo.
 
         源库KEY值列表。
 
@@ -75,7 +75,7 @@ class CompareJobContentDetailInfo:
 
     @source_key_value.setter
     def source_key_value(self, source_key_value):
-        """Sets the source_key_value of this CompareJobContentDetailInfo.
+        r"""Sets the source_key_value of this CompareJobContentDetailInfo.
 
         源库KEY值列表。
 
@@ -86,7 +86,7 @@ class CompareJobContentDetailInfo:
 
     @property
     def target_key_value(self):
-        """Gets the target_key_value of this CompareJobContentDetailInfo.
+        r"""Gets the target_key_value of this CompareJobContentDetailInfo.
 
         目标库KEY值列表。
 
@@ -97,7 +97,7 @@ class CompareJobContentDetailInfo:
 
     @target_key_value.setter
     def target_key_value(self, target_key_value):
-        """Sets the target_key_value of this CompareJobContentDetailInfo.
+        r"""Sets the target_key_value of this CompareJobContentDetailInfo.
 
         目标库KEY值列表。
 
@@ -108,7 +108,7 @@ class CompareJobContentDetailInfo:
 
     @property
     def select_sql(self):
-        """Gets the select_sql of this CompareJobContentDetailInfo.
+        r"""Gets the select_sql of this CompareJobContentDetailInfo.
 
         查询源库的SQL。
 
@@ -119,7 +119,7 @@ class CompareJobContentDetailInfo:
 
     @select_sql.setter
     def select_sql(self, select_sql):
-        """Sets the select_sql of this CompareJobContentDetailInfo.
+        r"""Sets the select_sql of this CompareJobContentDetailInfo.
 
         查询源库的SQL。
 
@@ -130,7 +130,7 @@ class CompareJobContentDetailInfo:
 
     @property
     def target_select_sql(self):
-        """Gets the target_select_sql of this CompareJobContentDetailInfo.
+        r"""Gets the target_select_sql of this CompareJobContentDetailInfo.
 
         查询目标库的SQL。
 
@@ -141,7 +141,7 @@ class CompareJobContentDetailInfo:
 
     @target_select_sql.setter
     def target_select_sql(self, target_select_sql):
-        """Sets the target_select_sql of this CompareJobContentDetailInfo.
+        r"""Sets the target_select_sql of this CompareJobContentDetailInfo.
 
         查询目标库的SQL。
 

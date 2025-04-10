@@ -29,7 +29,7 @@ class UpdateLtsInfoConfigRequestBody:
     }
 
     def __init__(self, enabled=None, lts_id_info=None, enabale=None):
-        """UpdateLtsInfoConfigRequestBody
+        r"""UpdateLtsInfoConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateLtsInfoConfigRequestBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateLtsInfoConfigRequestBody.
+        r"""Gets the enabled of this UpdateLtsInfoConfigRequestBody.
 
         是否开启全量日志   - false: 不开启   - true: 开启
 
@@ -68,7 +68,7 @@ class UpdateLtsInfoConfigRequestBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateLtsInfoConfigRequestBody.
+        r"""Sets the enabled of this UpdateLtsInfoConfigRequestBody.
 
         是否开启全量日志   - false: 不开启   - true: 开启
 
@@ -79,7 +79,7 @@ class UpdateLtsInfoConfigRequestBody:
 
     @property
     def lts_id_info(self):
-        """Gets the lts_id_info of this UpdateLtsInfoConfigRequestBody.
+        r"""Gets the lts_id_info of this UpdateLtsInfoConfigRequestBody.
 
         :return: The lts_id_info of this UpdateLtsInfoConfigRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
@@ -88,7 +88,7 @@ class UpdateLtsInfoConfigRequestBody:
 
     @lts_id_info.setter
     def lts_id_info(self, lts_id_info):
-        """Sets the lts_id_info of this UpdateLtsInfoConfigRequestBody.
+        r"""Sets the lts_id_info of this UpdateLtsInfoConfigRequestBody.
 
         :param lts_id_info: The lts_id_info of this UpdateLtsInfoConfigRequestBody.
         :type lts_id_info: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
@@ -97,7 +97,7 @@ class UpdateLtsInfoConfigRequestBody:
 
     @property
     def enabale(self):
-        """Gets the enabale of this UpdateLtsInfoConfigRequestBody.
+        r"""Gets the enabale of this UpdateLtsInfoConfigRequestBody.
 
         该参数废弃，请忽略
 
@@ -108,7 +108,7 @@ class UpdateLtsInfoConfigRequestBody:
 
     @enabale.setter
     def enabale(self, enabale):
-        """Sets the enabale of this UpdateLtsInfoConfigRequestBody.
+        r"""Sets the enabale of this UpdateLtsInfoConfigRequestBody.
 
         该参数废弃，请忽略
 

@@ -27,7 +27,7 @@ class PeakBandwidthData:
     }
 
     def __init__(self, value=None, domain=None):
-        """PeakBandwidthData
+        r"""PeakBandwidthData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PeakBandwidthData:
 
     @property
     def value(self):
-        """Gets the value of this PeakBandwidthData.
+        r"""Gets the value of this PeakBandwidthData.
 
         带宽峰值，单位为bps。
 
@@ -61,7 +61,7 @@ class PeakBandwidthData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PeakBandwidthData.
+        r"""Sets the value of this PeakBandwidthData.
 
         带宽峰值，单位为bps。
 
@@ -72,7 +72,7 @@ class PeakBandwidthData:
 
     @property
     def domain(self):
-        """Gets the domain of this PeakBandwidthData.
+        r"""Gets the domain of this PeakBandwidthData.
 
         播放域名。
 
@@ -83,7 +83,7 @@ class PeakBandwidthData:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this PeakBandwidthData.
+        r"""Sets the domain of this PeakBandwidthData.
 
         播放域名。
 

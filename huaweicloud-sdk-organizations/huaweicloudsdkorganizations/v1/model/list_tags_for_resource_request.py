@@ -32,7 +32,7 @@ class ListTagsForResourceRequest:
     }
 
     def __init__(self, x_security_token=None, resource_id=None, limit=None, marker=None):
-        """ListTagsForResourceRequest
+        r"""ListTagsForResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTagsForResourceRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListTagsForResourceRequest.
+        r"""Gets the x_security_token of this ListTagsForResourceRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -75,7 +75,7 @@ class ListTagsForResourceRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListTagsForResourceRequest.
+        r"""Sets the x_security_token of this ListTagsForResourceRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -86,7 +86,7 @@ class ListTagsForResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListTagsForResourceRequest.
+        r"""Gets the resource_id of this ListTagsForResourceRequest.
 
         根、组织单元、账号或策略的唯一标识符（ID）。
 
@@ -97,7 +97,7 @@ class ListTagsForResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListTagsForResourceRequest.
+        r"""Sets the resource_id of this ListTagsForResourceRequest.
 
         根、组织单元、账号或策略的唯一标识符（ID）。
 
@@ -108,7 +108,7 @@ class ListTagsForResourceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagsForResourceRequest.
+        r"""Gets the limit of this ListTagsForResourceRequest.
 
         页面中最大结果数量。
 
@@ -119,7 +119,7 @@ class ListTagsForResourceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagsForResourceRequest.
+        r"""Sets the limit of this ListTagsForResourceRequest.
 
         页面中最大结果数量。
 
@@ -130,7 +130,7 @@ class ListTagsForResourceRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTagsForResourceRequest.
+        r"""Gets the marker of this ListTagsForResourceRequest.
 
         分页标记。
 
@@ -141,7 +141,7 @@ class ListTagsForResourceRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTagsForResourceRequest.
+        r"""Sets the marker of this ListTagsForResourceRequest.
 
         分页标记。
 

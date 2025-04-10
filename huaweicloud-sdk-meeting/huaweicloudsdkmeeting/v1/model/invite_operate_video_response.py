@@ -24,7 +24,7 @@ class InviteOperateVideoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """InviteOperateVideoResponse
+        r"""InviteOperateVideoResponse
 
         The model defined in huaweicloud sdk
 

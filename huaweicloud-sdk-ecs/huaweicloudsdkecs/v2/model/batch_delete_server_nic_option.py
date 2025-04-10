@@ -25,7 +25,7 @@ class BatchDeleteServerNicOption:
     }
 
     def __init__(self, id=None):
-        """BatchDeleteServerNicOption
+        r"""BatchDeleteServerNicOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteServerNicOption:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteServerNicOption.
+        r"""Gets the id of this BatchDeleteServerNicOption.
 
         网卡Port ID。
 
@@ -53,7 +53,7 @@ class BatchDeleteServerNicOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteServerNicOption.
+        r"""Sets the id of this BatchDeleteServerNicOption.
 
         网卡Port ID。
 

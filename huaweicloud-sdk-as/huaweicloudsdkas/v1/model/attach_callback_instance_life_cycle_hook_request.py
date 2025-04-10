@@ -27,7 +27,7 @@ class AttachCallbackInstanceLifeCycleHookRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """AttachCallbackInstanceLifeCycleHookRequest
+        r"""AttachCallbackInstanceLifeCycleHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachCallbackInstanceLifeCycleHookRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this AttachCallbackInstanceLifeCycleHookRequest.
+        r"""Gets the scaling_group_id of this AttachCallbackInstanceLifeCycleHookRequest.
 
         伸缩组标识。
 
@@ -60,7 +60,7 @@ class AttachCallbackInstanceLifeCycleHookRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this AttachCallbackInstanceLifeCycleHookRequest.
+        r"""Sets the scaling_group_id of this AttachCallbackInstanceLifeCycleHookRequest.
 
         伸缩组标识。
 
@@ -71,7 +71,7 @@ class AttachCallbackInstanceLifeCycleHookRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachCallbackInstanceLifeCycleHookRequest.
+        r"""Gets the body of this AttachCallbackInstanceLifeCycleHookRequest.
 
         :return: The body of this AttachCallbackInstanceLifeCycleHookRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CallbackLifeCycleHookOption`
@@ -80,7 +80,7 @@ class AttachCallbackInstanceLifeCycleHookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachCallbackInstanceLifeCycleHookRequest.
+        r"""Sets the body of this AttachCallbackInstanceLifeCycleHookRequest.
 
         :param body: The body of this AttachCallbackInstanceLifeCycleHookRequest.
         :type body: :class:`huaweicloudsdkas.v1.CallbackLifeCycleHookOption`

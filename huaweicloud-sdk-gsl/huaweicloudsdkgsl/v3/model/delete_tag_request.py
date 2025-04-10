@@ -25,7 +25,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, tag_id=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTagRequest:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this DeleteTagRequest.
+        r"""Gets the tag_id of this DeleteTagRequest.
 
         标签标识
 
@@ -53,7 +53,7 @@ class DeleteTagRequest:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this DeleteTagRequest.
+        r"""Sets the tag_id of this DeleteTagRequest.
 
         标签标识
 

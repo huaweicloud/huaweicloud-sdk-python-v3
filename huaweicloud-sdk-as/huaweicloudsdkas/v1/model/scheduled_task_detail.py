@@ -41,7 +41,7 @@ class ScheduledTaskDetail:
     }
 
     def __init__(self, task_id=None, scaling_group_id=None, name=None, scheduled_policy=None, instance_number=None, create_time=None, tenant_id=None, domain_id=None, update_time=None):
-        """ScheduledTaskDetail
+        r"""ScheduledTaskDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ScheduledTaskDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ScheduledTaskDetail.
+        r"""Gets the task_id of this ScheduledTaskDetail.
 
         计划任务ID
 
@@ -110,7 +110,7 @@ class ScheduledTaskDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ScheduledTaskDetail.
+        r"""Sets the task_id of this ScheduledTaskDetail.
 
         计划任务ID
 
@@ -121,7 +121,7 @@ class ScheduledTaskDetail:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ScheduledTaskDetail.
+        r"""Gets the scaling_group_id of this ScheduledTaskDetail.
 
         伸缩组ID
 
@@ -132,7 +132,7 @@ class ScheduledTaskDetail:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ScheduledTaskDetail.
+        r"""Sets the scaling_group_id of this ScheduledTaskDetail.
 
         伸缩组ID
 
@@ -143,7 +143,7 @@ class ScheduledTaskDetail:
 
     @property
     def name(self):
-        """Gets the name of this ScheduledTaskDetail.
+        r"""Gets the name of this ScheduledTaskDetail.
 
         名称
 
@@ -154,7 +154,7 @@ class ScheduledTaskDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduledTaskDetail.
+        r"""Sets the name of this ScheduledTaskDetail.
 
         名称
 
@@ -165,7 +165,7 @@ class ScheduledTaskDetail:
 
     @property
     def scheduled_policy(self):
-        """Gets the scheduled_policy of this ScheduledTaskDetail.
+        r"""Gets the scheduled_policy of this ScheduledTaskDetail.
 
         :return: The scheduled_policy of this ScheduledTaskDetail.
         :rtype: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
@@ -174,7 +174,7 @@ class ScheduledTaskDetail:
 
     @scheduled_policy.setter
     def scheduled_policy(self, scheduled_policy):
-        """Sets the scheduled_policy of this ScheduledTaskDetail.
+        r"""Sets the scheduled_policy of this ScheduledTaskDetail.
 
         :param scheduled_policy: The scheduled_policy of this ScheduledTaskDetail.
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
@@ -183,7 +183,7 @@ class ScheduledTaskDetail:
 
     @property
     def instance_number(self):
-        """Gets the instance_number of this ScheduledTaskDetail.
+        r"""Gets the instance_number of this ScheduledTaskDetail.
 
         :return: The instance_number of this ScheduledTaskDetail.
         :rtype: :class:`huaweicloudsdkas.v1.IntegerRange`
@@ -192,7 +192,7 @@ class ScheduledTaskDetail:
 
     @instance_number.setter
     def instance_number(self, instance_number):
-        """Sets the instance_number of this ScheduledTaskDetail.
+        r"""Sets the instance_number of this ScheduledTaskDetail.
 
         :param instance_number: The instance_number of this ScheduledTaskDetail.
         :type instance_number: :class:`huaweicloudsdkas.v1.IntegerRange`
@@ -201,7 +201,7 @@ class ScheduledTaskDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScheduledTaskDetail.
+        r"""Gets the create_time of this ScheduledTaskDetail.
 
         创建时间
 
@@ -212,7 +212,7 @@ class ScheduledTaskDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScheduledTaskDetail.
+        r"""Sets the create_time of this ScheduledTaskDetail.
 
         创建时间
 
@@ -223,7 +223,7 @@ class ScheduledTaskDetail:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ScheduledTaskDetail.
+        r"""Gets the tenant_id of this ScheduledTaskDetail.
 
         租户ID
 
@@ -234,7 +234,7 @@ class ScheduledTaskDetail:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ScheduledTaskDetail.
+        r"""Sets the tenant_id of this ScheduledTaskDetail.
 
         租户ID
 
@@ -245,7 +245,7 @@ class ScheduledTaskDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ScheduledTaskDetail.
+        r"""Gets the domain_id of this ScheduledTaskDetail.
 
         账号ID
 
@@ -256,7 +256,7 @@ class ScheduledTaskDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ScheduledTaskDetail.
+        r"""Sets the domain_id of this ScheduledTaskDetail.
 
         账号ID
 
@@ -267,7 +267,7 @@ class ScheduledTaskDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ScheduledTaskDetail.
+        r"""Gets the update_time of this ScheduledTaskDetail.
 
         更新时间
 
@@ -278,7 +278,7 @@ class ScheduledTaskDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ScheduledTaskDetail.
+        r"""Sets the update_time of this ScheduledTaskDetail.
 
         更新时间
 

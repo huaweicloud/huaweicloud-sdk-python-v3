@@ -29,7 +29,7 @@ class CreateShareConnectionsRequestBody:
     }
 
     def __init__(self, shared_conn_id=None, expired_time=None, users=None):
-        """CreateShareConnectionsRequestBody
+        r"""CreateShareConnectionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateShareConnectionsRequestBody:
 
     @property
     def shared_conn_id(self):
-        """Gets the shared_conn_id of this CreateShareConnectionsRequestBody.
+        r"""Gets the shared_conn_id of this CreateShareConnectionsRequestBody.
 
         共享连接ID
 
@@ -66,7 +66,7 @@ class CreateShareConnectionsRequestBody:
 
     @shared_conn_id.setter
     def shared_conn_id(self, shared_conn_id):
-        """Sets the shared_conn_id of this CreateShareConnectionsRequestBody.
+        r"""Sets the shared_conn_id of this CreateShareConnectionsRequestBody.
 
         共享连接ID
 
@@ -77,7 +77,7 @@ class CreateShareConnectionsRequestBody:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this CreateShareConnectionsRequestBody.
+        r"""Gets the expired_time of this CreateShareConnectionsRequestBody.
 
         过期时间
 
@@ -88,7 +88,7 @@ class CreateShareConnectionsRequestBody:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this CreateShareConnectionsRequestBody.
+        r"""Sets the expired_time of this CreateShareConnectionsRequestBody.
 
         过期时间
 
@@ -99,7 +99,7 @@ class CreateShareConnectionsRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this CreateShareConnectionsRequestBody.
+        r"""Gets the users of this CreateShareConnectionsRequestBody.
 
         用户
 
@@ -110,7 +110,7 @@ class CreateShareConnectionsRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateShareConnectionsRequestBody.
+        r"""Sets the users of this CreateShareConnectionsRequestBody.
 
         用户
 

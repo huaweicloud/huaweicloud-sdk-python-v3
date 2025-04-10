@@ -29,7 +29,7 @@ class HealthReportLostPointsDetail:
     }
 
     def __init__(self, metric=None, lost_points=None, risk_level=None):
-        """HealthReportLostPointsDetail
+        r"""HealthReportLostPointsDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class HealthReportLostPointsDetail:
 
     @property
     def metric(self):
-        """Gets the metric of this HealthReportLostPointsDetail.
+        r"""Gets the metric of this HealthReportLostPointsDetail.
 
         扣分项。
 
@@ -65,7 +65,7 @@ class HealthReportLostPointsDetail:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this HealthReportLostPointsDetail.
+        r"""Sets the metric of this HealthReportLostPointsDetail.
 
         扣分项。
 
@@ -76,7 +76,7 @@ class HealthReportLostPointsDetail:
 
     @property
     def lost_points(self):
-        """Gets the lost_points of this HealthReportLostPointsDetail.
+        r"""Gets the lost_points of this HealthReportLostPointsDetail.
 
         所扣分数。
 
@@ -87,7 +87,7 @@ class HealthReportLostPointsDetail:
 
     @lost_points.setter
     def lost_points(self, lost_points):
-        """Sets the lost_points of this HealthReportLostPointsDetail.
+        r"""Sets the lost_points of this HealthReportLostPointsDetail.
 
         所扣分数。
 
@@ -98,7 +98,7 @@ class HealthReportLostPointsDetail:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this HealthReportLostPointsDetail.
+        r"""Gets the risk_level of this HealthReportLostPointsDetail.
 
         事件等级。
 
@@ -109,7 +109,7 @@ class HealthReportLostPointsDetail:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this HealthReportLostPointsDetail.
+        r"""Sets the risk_level of this HealthReportLostPointsDetail.
 
         事件等级。
 

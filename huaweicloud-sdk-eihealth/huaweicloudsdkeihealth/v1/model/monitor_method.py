@@ -28,7 +28,7 @@ class MonitorMethod:
     }
 
     def __init__(self):
-        """MonitorMethod
+        r"""MonitorMethod
 
         The model defined in huaweicloud sdk
 

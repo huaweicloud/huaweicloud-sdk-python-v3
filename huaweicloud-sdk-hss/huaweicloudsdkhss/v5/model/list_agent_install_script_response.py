@@ -26,7 +26,7 @@ class ListAgentInstallScriptResponse(SdkResponse):
     }
 
     def __init__(self, install_script_list=None):
-        """ListAgentInstallScriptResponse
+        r"""ListAgentInstallScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAgentInstallScriptResponse(SdkResponse):
 
     @property
     def install_script_list(self):
-        """Gets the install_script_list of this ListAgentInstallScriptResponse.
+        r"""Gets the install_script_list of this ListAgentInstallScriptResponse.
 
         agent安装脚本
 
@@ -55,7 +55,7 @@ class ListAgentInstallScriptResponse(SdkResponse):
 
     @install_script_list.setter
     def install_script_list(self, install_script_list):
-        """Sets the install_script_list of this ListAgentInstallScriptResponse.
+        r"""Sets the install_script_list of this ListAgentInstallScriptResponse.
 
         agent安装脚本
 

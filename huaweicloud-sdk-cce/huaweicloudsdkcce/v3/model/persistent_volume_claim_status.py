@@ -29,7 +29,7 @@ class PersistentVolumeClaimStatus:
     }
 
     def __init__(self, access_modes=None, capacity=None, phase=None):
-        """PersistentVolumeClaimStatus
+        r"""PersistentVolumeClaimStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PersistentVolumeClaimStatus:
 
     @property
     def access_modes(self):
-        """Gets the access_modes of this PersistentVolumeClaimStatus.
+        r"""Gets the access_modes of this PersistentVolumeClaimStatus.
 
         显示volume实际具有的访问模式。
 
@@ -68,7 +68,7 @@ class PersistentVolumeClaimStatus:
 
     @access_modes.setter
     def access_modes(self, access_modes):
-        """Sets the access_modes of this PersistentVolumeClaimStatus.
+        r"""Sets the access_modes of this PersistentVolumeClaimStatus.
 
         显示volume实际具有的访问模式。
 
@@ -79,7 +79,7 @@ class PersistentVolumeClaimStatus:
 
     @property
     def capacity(self):
-        """Gets the capacity of this PersistentVolumeClaimStatus.
+        r"""Gets the capacity of this PersistentVolumeClaimStatus.
 
         底层卷的实际资源
 
@@ -90,7 +90,7 @@ class PersistentVolumeClaimStatus:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this PersistentVolumeClaimStatus.
+        r"""Sets the capacity of this PersistentVolumeClaimStatus.
 
         底层卷的实际资源
 
@@ -101,7 +101,7 @@ class PersistentVolumeClaimStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this PersistentVolumeClaimStatus.
+        r"""Gets the phase of this PersistentVolumeClaimStatus.
 
         PersistentVolumeClaim当前所处的状态
 
@@ -112,7 +112,7 @@ class PersistentVolumeClaimStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this PersistentVolumeClaimStatus.
+        r"""Sets the phase of this PersistentVolumeClaimStatus.
 
         PersistentVolumeClaim当前所处的状态
 

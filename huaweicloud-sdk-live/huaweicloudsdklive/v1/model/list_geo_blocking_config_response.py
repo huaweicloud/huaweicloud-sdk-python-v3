@@ -30,7 +30,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
     }
 
     def __init__(self, play_domain=None, apps=None, x_request_id=None):
-        """ListGeoBlockingConfigResponse
+        r"""ListGeoBlockingConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ListGeoBlockingConfigResponse.
+        r"""Gets the play_domain of this ListGeoBlockingConfigResponse.
 
         直播播放域名
 
@@ -69,7 +69,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ListGeoBlockingConfigResponse.
+        r"""Sets the play_domain of this ListGeoBlockingConfigResponse.
 
         直播播放域名
 
@@ -80,7 +80,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListGeoBlockingConfigResponse.
+        r"""Gets the apps of this ListGeoBlockingConfigResponse.
 
         应用列表
 
@@ -91,7 +91,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListGeoBlockingConfigResponse.
+        r"""Sets the apps of this ListGeoBlockingConfigResponse.
 
         应用列表
 
@@ -102,7 +102,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGeoBlockingConfigResponse.
+        r"""Gets the x_request_id of this ListGeoBlockingConfigResponse.
 
         :return: The x_request_id of this ListGeoBlockingConfigResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListGeoBlockingConfigResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGeoBlockingConfigResponse.
+        r"""Sets the x_request_id of this ListGeoBlockingConfigResponse.
 
         :param x_request_id: The x_request_id of this ListGeoBlockingConfigResponse.
         :type x_request_id: str

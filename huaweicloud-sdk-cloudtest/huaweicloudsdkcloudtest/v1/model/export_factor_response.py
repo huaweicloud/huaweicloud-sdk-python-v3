@@ -30,7 +30,7 @@ class ExportFactorResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ExportFactorResponse
+        r"""ExportFactorResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ExportFactorResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ExportFactorResponse.
+        r"""Gets the code of this ExportFactorResponse.
 
         :return: The code of this ExportFactorResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ExportFactorResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ExportFactorResponse.
+        r"""Sets the code of this ExportFactorResponse.
 
         :param code: The code of this ExportFactorResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ExportFactorResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ExportFactorResponse.
+        r"""Gets the data of this ExportFactorResponse.
 
         :return: The data of this ExportFactorResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class ExportFactorResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ExportFactorResponse.
+        r"""Sets the data of this ExportFactorResponse.
 
         :param data: The data of this ExportFactorResponse.
         :type data: object
@@ -94,7 +94,7 @@ class ExportFactorResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ExportFactorResponse.
+        r"""Gets the message of this ExportFactorResponse.
 
         :return: The message of this ExportFactorResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ExportFactorResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ExportFactorResponse.
+        r"""Sets the message of this ExportFactorResponse.
 
         :param message: The message of this ExportFactorResponse.
         :type message: str

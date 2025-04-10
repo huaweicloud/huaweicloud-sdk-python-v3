@@ -29,7 +29,7 @@ class UpdateByConditionUsingPostRequest:
     }
 
     def __init__(self, identifier=None, model_name=None, body=None):
-        """UpdateByConditionUsingPostRequest
+        r"""UpdateByConditionUsingPostRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateByConditionUsingPostRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this UpdateByConditionUsingPostRequest.
+        r"""Gets the identifier of this UpdateByConditionUsingPostRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class UpdateByConditionUsingPostRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this UpdateByConditionUsingPostRequest.
+        r"""Sets the identifier of this UpdateByConditionUsingPostRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class UpdateByConditionUsingPostRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this UpdateByConditionUsingPostRequest.
+        r"""Gets the model_name of this UpdateByConditionUsingPostRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class UpdateByConditionUsingPostRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this UpdateByConditionUsingPostRequest.
+        r"""Sets the model_name of this UpdateByConditionUsingPostRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class UpdateByConditionUsingPostRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateByConditionUsingPostRequest.
+        r"""Gets the body of this UpdateByConditionUsingPostRequest.
 
         :return: The body of this UpdateByConditionUsingPostRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOUpdateByConditionVoPersistableModelUpdateDTO`
@@ -108,7 +108,7 @@ class UpdateByConditionUsingPostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateByConditionUsingPostRequest.
+        r"""Sets the body of this UpdateByConditionUsingPostRequest.
 
         :param body: The body of this UpdateByConditionUsingPostRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOUpdateByConditionVoPersistableModelUpdateDTO`

@@ -60,7 +60,7 @@ class ListAlertTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, end_row=None, has_next_page=None, has_previous_page=None, is_first_page=None, is_last_page=None, list=None, navigate_first_page=None, navigate_last_page=None, navigate_pages=None, navigatepage_nums=None, next_page=None, page_num=None, page_size=None, pages=None, pre_page=None, size=None, start_row=None, total=None):
-        """ListAlertTemplatesResponse
+        r"""ListAlertTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def end_row(self):
-        """Gets the end_row of this ListAlertTemplatesResponse.
+        r"""Gets the end_row of this ListAlertTemplatesResponse.
 
         当前页面最后一个元素在数据库中的行号
 
@@ -174,7 +174,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @end_row.setter
     def end_row(self, end_row):
-        """Sets the end_row of this ListAlertTemplatesResponse.
+        r"""Sets the end_row of this ListAlertTemplatesResponse.
 
         当前页面最后一个元素在数据库中的行号
 
@@ -185,7 +185,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def has_next_page(self):
-        """Gets the has_next_page of this ListAlertTemplatesResponse.
+        r"""Gets the has_next_page of this ListAlertTemplatesResponse.
 
         是否有下一页
 
@@ -196,7 +196,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @has_next_page.setter
     def has_next_page(self, has_next_page):
-        """Sets the has_next_page of this ListAlertTemplatesResponse.
+        r"""Sets the has_next_page of this ListAlertTemplatesResponse.
 
         是否有下一页
 
@@ -207,7 +207,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def has_previous_page(self):
-        """Gets the has_previous_page of this ListAlertTemplatesResponse.
+        r"""Gets the has_previous_page of this ListAlertTemplatesResponse.
 
         是否有前一页
 
@@ -218,7 +218,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @has_previous_page.setter
     def has_previous_page(self, has_previous_page):
-        """Sets the has_previous_page of this ListAlertTemplatesResponse.
+        r"""Sets the has_previous_page of this ListAlertTemplatesResponse.
 
         是否有前一页
 
@@ -229,7 +229,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def is_first_page(self):
-        """Gets the is_first_page of this ListAlertTemplatesResponse.
+        r"""Gets the is_first_page of this ListAlertTemplatesResponse.
 
         是否为第一页
 
@@ -240,7 +240,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @is_first_page.setter
     def is_first_page(self, is_first_page):
-        """Sets the is_first_page of this ListAlertTemplatesResponse.
+        r"""Sets the is_first_page of this ListAlertTemplatesResponse.
 
         是否为第一页
 
@@ -251,7 +251,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def is_last_page(self):
-        """Gets the is_last_page of this ListAlertTemplatesResponse.
+        r"""Gets the is_last_page of this ListAlertTemplatesResponse.
 
         是否为最后一页
 
@@ -262,7 +262,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @is_last_page.setter
     def is_last_page(self, is_last_page):
-        """Sets the is_last_page of this ListAlertTemplatesResponse.
+        r"""Sets the is_last_page of this ListAlertTemplatesResponse.
 
         是否为最后一页
 
@@ -273,7 +273,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ListAlertTemplatesResponse.
+        r"""Gets the list of this ListAlertTemplatesResponse.
 
         返回结果
 
@@ -284,7 +284,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListAlertTemplatesResponse.
+        r"""Sets the list of this ListAlertTemplatesResponse.
 
         返回结果
 
@@ -295,7 +295,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def navigate_first_page(self):
-        """Gets the navigate_first_page of this ListAlertTemplatesResponse.
+        r"""Gets the navigate_first_page of this ListAlertTemplatesResponse.
 
         导航条上的第一页
 
@@ -306,7 +306,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @navigate_first_page.setter
     def navigate_first_page(self, navigate_first_page):
-        """Sets the navigate_first_page of this ListAlertTemplatesResponse.
+        r"""Sets the navigate_first_page of this ListAlertTemplatesResponse.
 
         导航条上的第一页
 
@@ -317,7 +317,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def navigate_last_page(self):
-        """Gets the navigate_last_page of this ListAlertTemplatesResponse.
+        r"""Gets the navigate_last_page of this ListAlertTemplatesResponse.
 
         导航条上的最后一页
 
@@ -328,7 +328,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @navigate_last_page.setter
     def navigate_last_page(self, navigate_last_page):
-        """Sets the navigate_last_page of this ListAlertTemplatesResponse.
+        r"""Sets the navigate_last_page of this ListAlertTemplatesResponse.
 
         导航条上的最后一页
 
@@ -339,7 +339,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def navigate_pages(self):
-        """Gets the navigate_pages of this ListAlertTemplatesResponse.
+        r"""Gets the navigate_pages of this ListAlertTemplatesResponse.
 
         导航页码数
 
@@ -350,7 +350,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @navigate_pages.setter
     def navigate_pages(self, navigate_pages):
-        """Sets the navigate_pages of this ListAlertTemplatesResponse.
+        r"""Sets the navigate_pages of this ListAlertTemplatesResponse.
 
         导航页码数
 
@@ -361,7 +361,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def navigatepage_nums(self):
-        """Gets the navigatepage_nums of this ListAlertTemplatesResponse.
+        r"""Gets the navigatepage_nums of this ListAlertTemplatesResponse.
 
         所有导航页号
 
@@ -372,7 +372,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @navigatepage_nums.setter
     def navigatepage_nums(self, navigatepage_nums):
-        """Sets the navigatepage_nums of this ListAlertTemplatesResponse.
+        r"""Sets the navigatepage_nums of this ListAlertTemplatesResponse.
 
         所有导航页号
 
@@ -383,7 +383,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def next_page(self):
-        """Gets the next_page of this ListAlertTemplatesResponse.
+        r"""Gets the next_page of this ListAlertTemplatesResponse.
 
         下一页
 
@@ -394,7 +394,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @next_page.setter
     def next_page(self, next_page):
-        """Sets the next_page of this ListAlertTemplatesResponse.
+        r"""Sets the next_page of this ListAlertTemplatesResponse.
 
         下一页
 
@@ -405,7 +405,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListAlertTemplatesResponse.
+        r"""Gets the page_num of this ListAlertTemplatesResponse.
 
         当前页
 
@@ -416,7 +416,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListAlertTemplatesResponse.
+        r"""Sets the page_num of this ListAlertTemplatesResponse.
 
         当前页
 
@@ -427,7 +427,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAlertTemplatesResponse.
+        r"""Gets the page_size of this ListAlertTemplatesResponse.
 
         每页的数量
 
@@ -438,7 +438,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAlertTemplatesResponse.
+        r"""Sets the page_size of this ListAlertTemplatesResponse.
 
         每页的数量
 
@@ -449,7 +449,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def pages(self):
-        """Gets the pages of this ListAlertTemplatesResponse.
+        r"""Gets the pages of this ListAlertTemplatesResponse.
 
         总页数
 
@@ -460,7 +460,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this ListAlertTemplatesResponse.
+        r"""Sets the pages of this ListAlertTemplatesResponse.
 
         总页数
 
@@ -471,7 +471,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def pre_page(self):
-        """Gets the pre_page of this ListAlertTemplatesResponse.
+        r"""Gets the pre_page of this ListAlertTemplatesResponse.
 
         前一页
 
@@ -482,7 +482,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @pre_page.setter
     def pre_page(self, pre_page):
-        """Sets the pre_page of this ListAlertTemplatesResponse.
+        r"""Sets the pre_page of this ListAlertTemplatesResponse.
 
         前一页
 
@@ -493,7 +493,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListAlertTemplatesResponse.
+        r"""Gets the size of this ListAlertTemplatesResponse.
 
         当前页的数量
 
@@ -504,7 +504,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAlertTemplatesResponse.
+        r"""Sets the size of this ListAlertTemplatesResponse.
 
         当前页的数量
 
@@ -515,7 +515,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def start_row(self):
-        """Gets the start_row of this ListAlertTemplatesResponse.
+        r"""Gets the start_row of this ListAlertTemplatesResponse.
 
         当前页面第一个元素在数据库中的行号
 
@@ -526,7 +526,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @start_row.setter
     def start_row(self, start_row):
-        """Sets the start_row of this ListAlertTemplatesResponse.
+        r"""Sets the start_row of this ListAlertTemplatesResponse.
 
         当前页面第一个元素在数据库中的行号
 
@@ -537,7 +537,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAlertTemplatesResponse.
+        r"""Gets the total of this ListAlertTemplatesResponse.
 
         总条数
 
@@ -548,7 +548,7 @@ class ListAlertTemplatesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAlertTemplatesResponse.
+        r"""Sets the total of this ListAlertTemplatesResponse.
 
         总条数
 

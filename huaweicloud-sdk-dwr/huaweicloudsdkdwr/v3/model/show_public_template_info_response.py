@@ -34,7 +34,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
     }
 
     def __init__(self, provided_actions=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ShowPublicTemplateInfoResponse
+        r"""ShowPublicTemplateInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @property
     def provided_actions(self):
-        """Gets the provided_actions of this ShowPublicTemplateInfoResponse.
+        r"""Gets the provided_actions of this ShowPublicTemplateInfoResponse.
 
         :return: The provided_actions of this ShowPublicTemplateInfoResponse.
         :rtype: :class:`huaweicloudsdkdwr.v3.ProvidedAction`
@@ -81,7 +81,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @provided_actions.setter
     def provided_actions(self, provided_actions):
-        """Sets the provided_actions of this ShowPublicTemplateInfoResponse.
+        r"""Sets the provided_actions of this ShowPublicTemplateInfoResponse.
 
         :param provided_actions: The provided_actions of this ShowPublicTemplateInfoResponse.
         :type provided_actions: :class:`huaweicloudsdkdwr.v3.ProvidedAction`
@@ -90,7 +90,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPublicTemplateInfoResponse.
+        r"""Gets the x_request_id of this ShowPublicTemplateInfoResponse.
 
         :return: The x_request_id of this ShowPublicTemplateInfoResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPublicTemplateInfoResponse.
+        r"""Sets the x_request_id of this ShowPublicTemplateInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowPublicTemplateInfoResponse.
         :type x_request_id: str
@@ -108,7 +108,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ShowPublicTemplateInfoResponse.
+        r"""Gets the connection of this ShowPublicTemplateInfoResponse.
 
         :return: The connection of this ShowPublicTemplateInfoResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ShowPublicTemplateInfoResponse.
+        r"""Sets the connection of this ShowPublicTemplateInfoResponse.
 
         :param connection: The connection of this ShowPublicTemplateInfoResponse.
         :type connection: str
@@ -126,7 +126,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ShowPublicTemplateInfoResponse.
+        r"""Gets the content_length of this ShowPublicTemplateInfoResponse.
 
         :return: The content_length of this ShowPublicTemplateInfoResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ShowPublicTemplateInfoResponse.
+        r"""Sets the content_length of this ShowPublicTemplateInfoResponse.
 
         :param content_length: The content_length of this ShowPublicTemplateInfoResponse.
         :type content_length: str
@@ -144,7 +144,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ShowPublicTemplateInfoResponse.
+        r"""Gets the date of this ShowPublicTemplateInfoResponse.
 
         :return: The date of this ShowPublicTemplateInfoResponse.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowPublicTemplateInfoResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowPublicTemplateInfoResponse.
+        r"""Sets the date of this ShowPublicTemplateInfoResponse.
 
         :param date: The date of this ShowPublicTemplateInfoResponse.
         :type date: str

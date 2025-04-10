@@ -27,7 +27,7 @@ class DeleteDatabaseSchemaRequestBody:
     }
 
     def __init__(self, db_name=None, schema=None):
-        """DeleteDatabaseSchemaRequestBody
+        r"""DeleteDatabaseSchemaRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDatabaseSchemaRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeleteDatabaseSchemaRequestBody.
+        r"""Gets the db_name of this DeleteDatabaseSchemaRequestBody.
 
         数据库名称。 使用已存在的数据库名称，且不能为模板库。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。
 
@@ -59,7 +59,7 @@ class DeleteDatabaseSchemaRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeleteDatabaseSchemaRequestBody.
+        r"""Sets the db_name of this DeleteDatabaseSchemaRequestBody.
 
         数据库名称。 使用已存在的数据库名称，且不能为模板库。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。
 
@@ -70,7 +70,7 @@ class DeleteDatabaseSchemaRequestBody:
 
     @property
     def schema(self):
-        """Gets the schema of this DeleteDatabaseSchemaRequestBody.
+        r"""Gets the schema of this DeleteDatabaseSchemaRequestBody.
 
         SCHEMA名称。 SCHEMA名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和模板库和已存在的SCHEMA重名。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。 已存在的SCHEMA包括public，information_schema。
 
@@ -81,7 +81,7 @@ class DeleteDatabaseSchemaRequestBody:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this DeleteDatabaseSchemaRequestBody.
+        r"""Sets the schema of this DeleteDatabaseSchemaRequestBody.
 
         SCHEMA名称。 SCHEMA名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和模板库和已存在的SCHEMA重名。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。 已存在的SCHEMA包括public，information_schema。
 

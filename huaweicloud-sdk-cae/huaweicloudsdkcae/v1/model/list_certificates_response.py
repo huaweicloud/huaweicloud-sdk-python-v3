@@ -30,7 +30,7 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListCertificatesResponse
+        r"""ListCertificatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListCertificatesResponse.
+        r"""Gets the api_version of this ListCertificatesResponse.
 
         :return: The api_version of this ListCertificatesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListCertificatesResponse.
+        r"""Sets the api_version of this ListCertificatesResponse.
 
         :param api_version: The api_version of this ListCertificatesResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListCertificatesResponse.
+        r"""Gets the kind of this ListCertificatesResponse.
 
         :return: The kind of this ListCertificatesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -85,7 +85,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListCertificatesResponse.
+        r"""Sets the kind of this ListCertificatesResponse.
 
         :param kind: The kind of this ListCertificatesResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.CertificateKindObj`
@@ -94,7 +94,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListCertificatesResponse.
+        r"""Gets the items of this ListCertificatesResponse.
 
         证书列表。
 
@@ -105,7 +105,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListCertificatesResponse.
+        r"""Sets the items of this ListCertificatesResponse.
 
         证书列表。
 

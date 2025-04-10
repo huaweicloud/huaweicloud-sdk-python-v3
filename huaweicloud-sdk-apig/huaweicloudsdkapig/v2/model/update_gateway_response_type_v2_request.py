@@ -33,7 +33,7 @@ class UpdateGatewayResponseTypeV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, response_id=None, response_type=None, body=None):
-        """UpdateGatewayResponseTypeV2Request
+        r"""UpdateGatewayResponseTypeV2Request
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGatewayResponseTypeV2Request.
+        r"""Gets the instance_id of this UpdateGatewayResponseTypeV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -78,7 +78,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGatewayResponseTypeV2Request.
+        r"""Sets the instance_id of this UpdateGatewayResponseTypeV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -89,7 +89,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateGatewayResponseTypeV2Request.
+        r"""Gets the group_id of this UpdateGatewayResponseTypeV2Request.
 
         分组的编号
 
@@ -100,7 +100,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateGatewayResponseTypeV2Request.
+        r"""Sets the group_id of this UpdateGatewayResponseTypeV2Request.
 
         分组的编号
 
@@ -111,7 +111,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @property
     def response_id(self):
-        """Gets the response_id of this UpdateGatewayResponseTypeV2Request.
+        r"""Gets the response_id of this UpdateGatewayResponseTypeV2Request.
 
         响应编号
 
@@ -122,7 +122,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this UpdateGatewayResponseTypeV2Request.
+        r"""Sets the response_id of this UpdateGatewayResponseTypeV2Request.
 
         响应编号
 
@@ -133,7 +133,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @property
     def response_type(self):
-        """Gets the response_type of this UpdateGatewayResponseTypeV2Request.
+        r"""Gets the response_type of this UpdateGatewayResponseTypeV2Request.
 
         错误类型 - AUTH_FAILURE: 认证失败，IAM或APP认证校验失败 - AUTH_HEADER_MISSING: 认证身份来源信息缺失 - AUTHORIZER_FAILURE: 自定义认证方返回认证失败 - AUTHORIZER_CONF_FAILURE:自定义认证方异常，通信失败、返回异常响应等错误 - AUTHORIZER_IDENTITIES_FAILURE: 前端自定义认证的身份来源信息缺失或不合法错误 - BACKEND_UNAVAILABLE: 后端不可用，网络不可达错误 - BACKEND_TIMEOUT: 后端超时，与后端的网络交互超过预配置的时间错误 - THROTTLED: API调用次数超出所配置的流量策略阈值 - UNAUTHORIZED: 使用的凭据未被授权访问该API - ACCESS_DENIED: 拒绝访问，如触发配置的访问控制策略、或异常攻击检测拦截 - NOT_FOUND: 未匹配到API错误 - REQUEST_PARAMETERS_FAILURE: 请求参数校验失败、不支持的HTTP方法 - DEFAULT_4XX: 其它4XX类错误 - DEFAULT_5XX: 其它5XX类错误 - THIRD_AUTH_FAILURE: 第三方认证方返回认证失败 - THIRD_AUTH_IDENTITIES_FAILURE: 第三方认证的身份来源信息缺失或不合法错误 - THIRD_AUTH_CONF_FAILURE: 第三方认证方异常，通信失败、返回异常响应等错误 - ORCHESTRATION_PARAMETER_NOT_FOUND: 参数编排失败，请求中没有待编排的入参 - ORCHESTRATION_FAILURE: 参数编排失败，没有编排规则匹配成功
 
@@ -144,7 +144,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @response_type.setter
     def response_type(self, response_type):
-        """Sets the response_type of this UpdateGatewayResponseTypeV2Request.
+        r"""Sets the response_type of this UpdateGatewayResponseTypeV2Request.
 
         错误类型 - AUTH_FAILURE: 认证失败，IAM或APP认证校验失败 - AUTH_HEADER_MISSING: 认证身份来源信息缺失 - AUTHORIZER_FAILURE: 自定义认证方返回认证失败 - AUTHORIZER_CONF_FAILURE:自定义认证方异常，通信失败、返回异常响应等错误 - AUTHORIZER_IDENTITIES_FAILURE: 前端自定义认证的身份来源信息缺失或不合法错误 - BACKEND_UNAVAILABLE: 后端不可用，网络不可达错误 - BACKEND_TIMEOUT: 后端超时，与后端的网络交互超过预配置的时间错误 - THROTTLED: API调用次数超出所配置的流量策略阈值 - UNAUTHORIZED: 使用的凭据未被授权访问该API - ACCESS_DENIED: 拒绝访问，如触发配置的访问控制策略、或异常攻击检测拦截 - NOT_FOUND: 未匹配到API错误 - REQUEST_PARAMETERS_FAILURE: 请求参数校验失败、不支持的HTTP方法 - DEFAULT_4XX: 其它4XX类错误 - DEFAULT_5XX: 其它5XX类错误 - THIRD_AUTH_FAILURE: 第三方认证方返回认证失败 - THIRD_AUTH_IDENTITIES_FAILURE: 第三方认证的身份来源信息缺失或不合法错误 - THIRD_AUTH_CONF_FAILURE: 第三方认证方异常，通信失败、返回异常响应等错误 - ORCHESTRATION_PARAMETER_NOT_FOUND: 参数编排失败，请求中没有待编排的入参 - ORCHESTRATION_FAILURE: 参数编排失败，没有编排规则匹配成功
 
@@ -155,7 +155,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGatewayResponseTypeV2Request.
+        r"""Gets the body of this UpdateGatewayResponseTypeV2Request.
 
         :return: The body of this UpdateGatewayResponseTypeV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.ResponseInfo`
@@ -164,7 +164,7 @@ class UpdateGatewayResponseTypeV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGatewayResponseTypeV2Request.
+        r"""Sets the body of this UpdateGatewayResponseTypeV2Request.
 
         :param body: The body of this UpdateGatewayResponseTypeV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.ResponseInfo`

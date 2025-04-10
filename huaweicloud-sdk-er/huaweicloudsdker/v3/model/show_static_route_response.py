@@ -28,7 +28,7 @@ class ShowStaticRouteResponse(SdkResponse):
     }
 
     def __init__(self, route=None, request_id=None):
-        """ShowStaticRouteResponse
+        r"""ShowStaticRouteResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStaticRouteResponse(SdkResponse):
 
     @property
     def route(self):
-        """Gets the route of this ShowStaticRouteResponse.
+        r"""Gets the route of this ShowStaticRouteResponse.
 
         :return: The route of this ShowStaticRouteResponse.
         :rtype: :class:`huaweicloudsdker.v3.Route`
@@ -60,7 +60,7 @@ class ShowStaticRouteResponse(SdkResponse):
 
     @route.setter
     def route(self, route):
-        """Sets the route of this ShowStaticRouteResponse.
+        r"""Sets the route of this ShowStaticRouteResponse.
 
         :param route: The route of this ShowStaticRouteResponse.
         :type route: :class:`huaweicloudsdker.v3.Route`
@@ -69,7 +69,7 @@ class ShowStaticRouteResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowStaticRouteResponse.
+        r"""Gets the request_id of this ShowStaticRouteResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowStaticRouteResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowStaticRouteResponse.
+        r"""Sets the request_id of this ShowStaticRouteResponse.
 
         请求ID
 

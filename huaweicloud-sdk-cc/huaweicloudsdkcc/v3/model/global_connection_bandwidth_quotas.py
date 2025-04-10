@@ -29,7 +29,7 @@ class GlobalConnectionBandwidthQuotas:
     }
 
     def __init__(self, quota=None, used=None, type=None):
-        """GlobalConnectionBandwidthQuotas
+        r"""GlobalConnectionBandwidthQuotas
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GlobalConnectionBandwidthQuotas:
 
     @property
     def quota(self):
-        """Gets the quota of this GlobalConnectionBandwidthQuotas.
+        r"""Gets the quota of this GlobalConnectionBandwidthQuotas.
 
         配额大小。
 
@@ -68,7 +68,7 @@ class GlobalConnectionBandwidthQuotas:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this GlobalConnectionBandwidthQuotas.
+        r"""Sets the quota of this GlobalConnectionBandwidthQuotas.
 
         配额大小。
 
@@ -79,7 +79,7 @@ class GlobalConnectionBandwidthQuotas:
 
     @property
     def used(self):
-        """Gets the used of this GlobalConnectionBandwidthQuotas.
+        r"""Gets the used of this GlobalConnectionBandwidthQuotas.
 
         已使用值。
 
@@ -90,7 +90,7 @@ class GlobalConnectionBandwidthQuotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this GlobalConnectionBandwidthQuotas.
+        r"""Sets the used of this GlobalConnectionBandwidthQuotas.
 
         已使用值。
 
@@ -101,7 +101,7 @@ class GlobalConnectionBandwidthQuotas:
 
     @property
     def type(self):
-        """Gets the type of this GlobalConnectionBandwidthQuotas.
+        r"""Gets the type of this GlobalConnectionBandwidthQuotas.
 
         配额类型。 gcb.size：全域互联带宽大小 gcb.count：全域互联带宽数量 
 
@@ -112,7 +112,7 @@ class GlobalConnectionBandwidthQuotas:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GlobalConnectionBandwidthQuotas.
+        r"""Sets the type of this GlobalConnectionBandwidthQuotas.
 
         配额类型。 gcb.size：全域互联带宽大小 gcb.count：全域互联带宽数量 
 

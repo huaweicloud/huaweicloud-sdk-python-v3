@@ -35,7 +35,7 @@ class DefaultConstraintInput:
     }
 
     def __init__(self, column_name=None, constraint_name=None, default_value=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """DefaultConstraintInput
+        r"""DefaultConstraintInput
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class DefaultConstraintInput:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DefaultConstraintInput.
+        r"""Gets the column_name of this DefaultConstraintInput.
 
         列名
 
@@ -84,7 +84,7 @@ class DefaultConstraintInput:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DefaultConstraintInput.
+        r"""Sets the column_name of this DefaultConstraintInput.
 
         列名
 
@@ -95,7 +95,7 @@ class DefaultConstraintInput:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this DefaultConstraintInput.
+        r"""Gets the constraint_name of this DefaultConstraintInput.
 
         constraint Name
 
@@ -106,7 +106,7 @@ class DefaultConstraintInput:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this DefaultConstraintInput.
+        r"""Sets the constraint_name of this DefaultConstraintInput.
 
         constraint Name
 
@@ -117,7 +117,7 @@ class DefaultConstraintInput:
 
     @property
     def default_value(self):
-        """Gets the default_value of this DefaultConstraintInput.
+        r"""Gets the default_value of this DefaultConstraintInput.
 
         默认值
 
@@ -128,7 +128,7 @@ class DefaultConstraintInput:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this DefaultConstraintInput.
+        r"""Sets the default_value of this DefaultConstraintInput.
 
         默认值
 
@@ -139,7 +139,7 @@ class DefaultConstraintInput:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this DefaultConstraintInput.
+        r"""Gets the enable_constraint of this DefaultConstraintInput.
 
         enable constraint
 
@@ -150,7 +150,7 @@ class DefaultConstraintInput:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this DefaultConstraintInput.
+        r"""Sets the enable_constraint of this DefaultConstraintInput.
 
         enable constraint
 
@@ -161,7 +161,7 @@ class DefaultConstraintInput:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this DefaultConstraintInput.
+        r"""Gets the rely_constraint of this DefaultConstraintInput.
 
         constraint is rely when Query
 
@@ -172,7 +172,7 @@ class DefaultConstraintInput:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this DefaultConstraintInput.
+        r"""Sets the rely_constraint of this DefaultConstraintInput.
 
         constraint is rely when Query
 
@@ -183,7 +183,7 @@ class DefaultConstraintInput:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this DefaultConstraintInput.
+        r"""Gets the validate_constraint of this DefaultConstraintInput.
 
         constraint is validated
 
@@ -194,7 +194,7 @@ class DefaultConstraintInput:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this DefaultConstraintInput.
+        r"""Sets the validate_constraint of this DefaultConstraintInput.
 
         constraint is validated
 

@@ -25,7 +25,7 @@ class ShowJobStatusRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowJobStatusRequest
+        r"""ShowJobStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowJobStatusRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobStatusRequest.
+        r"""Gets the job_id of this ShowJobStatusRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -53,7 +53,7 @@ class ShowJobStatusRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobStatusRequest.
+        r"""Sets the job_id of this ShowJobStatusRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 

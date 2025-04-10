@@ -25,7 +25,7 @@ class UpdateCouponQuotasRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateCouponQuotasRequest
+        r"""UpdateCouponQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateCouponQuotasRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCouponQuotasRequest.
+        r"""Gets the body of this UpdateCouponQuotasRequest.
 
         :return: The body of this UpdateCouponQuotasRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.AdjustCouponQuotasReq`
@@ -52,7 +52,7 @@ class UpdateCouponQuotasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCouponQuotasRequest.
+        r"""Sets the body of this UpdateCouponQuotasRequest.
 
         :param body: The body of this UpdateCouponQuotasRequest.
         :type body: :class:`huaweicloudsdkbss.v2.AdjustCouponQuotasReq`

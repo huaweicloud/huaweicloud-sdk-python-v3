@@ -27,7 +27,7 @@ class CreateReassignmentTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateReassignmentTaskRequest
+        r"""CreateReassignmentTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateReassignmentTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateReassignmentTaskRequest.
+        r"""Gets the instance_id of this CreateReassignmentTaskRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateReassignmentTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateReassignmentTaskRequest.
+        r"""Sets the instance_id of this CreateReassignmentTaskRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateReassignmentTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateReassignmentTaskRequest.
+        r"""Gets the body of this CreateReassignmentTaskRequest.
 
         :return: The body of this CreateReassignmentTaskRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.PartitionReassignRequest`
@@ -80,7 +80,7 @@ class CreateReassignmentTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateReassignmentTaskRequest.
+        r"""Sets the body of this CreateReassignmentTaskRequest.
 
         :param body: The body of this CreateReassignmentTaskRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.PartitionReassignRequest`

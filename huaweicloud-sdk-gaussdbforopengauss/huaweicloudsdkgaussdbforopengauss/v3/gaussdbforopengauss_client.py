@@ -34,7 +34,7 @@ class GaussDBforopenGaussClient(Client):
         return client_builder
 
     def add_instance_tags(self, request):
-        """添加实例标签。
+        r"""添加实例标签。
 
         对指定实例添加用户标签信息。
         
@@ -103,7 +103,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def allow_db_privileges(self, request):
-        """授权数据库帐号
+        r"""授权数据库帐号
 
         在指定实例的数据库中, 设置帐号的权限。
         
@@ -172,7 +172,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def allow_db_role_privileges(self, request):
-        """授权数据库角色
+        r"""授权数据库角色
 
         在数据库中设置角色的权限。
         
@@ -241,7 +241,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def attach_eip(self, request):
-        """绑定/解绑弹性公网IP
+        r"""绑定/解绑弹性公网IP
 
         实例下的节点绑定弹性公网IP/解绑弹性公网IP
         
@@ -312,7 +312,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def batch_show_upgrade_candidate_versions(self, request):
-        """查询批量实例可升级的版本和升级类型。
+        r"""查询批量实例可升级的版本和升级类型。
 
         查询批量实例可升级的版本和升级类型。
         
@@ -379,7 +379,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def cancel_schedule_task(self, request):
-        """取消定时任务
+        r"""取消定时任务
 
         取消定时任务
         
@@ -446,7 +446,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def confirm_restored_data(self, request):
-        """备份恢复到目标实例数据后执行数据确认
+        r"""备份恢复到目标实例数据后执行数据确认
 
         确认备份恢复到目标实例的数据正常。
         
@@ -513,7 +513,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def copy_configuration(self, request):
-        """复制参数模板
+        r"""复制参数模板
 
         复制参数模板。
         
@@ -582,7 +582,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_configuration_template(self, request):
-        """创建参数模板
+        r"""创建参数模板
 
         创建参数模板。
         
@@ -648,8 +648,77 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def create_cross_cloud_construct_disaster(self, request):
+        r"""搭建容灾关系
+
+        搭建容灾关系（从主实例端下发）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCrossCloudConstructDisaster
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateCrossCloudConstructDisasterRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateCrossCloudConstructDisasterResponse`
+        """
+        http_info = self._create_cross_cloud_construct_disaster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cross_cloud_construct_disaster_invoker(self, request):
+        http_info = self._create_cross_cloud_construct_disaster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cross_cloud_construct_disaster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/construct",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCrossCloudConstructDisasterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_database(self, request):
-        """创建数据库
+        r"""创建数据库
 
         在指定实例中创建数据库。
         
@@ -718,7 +787,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_database_instance(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建数据库实例
         
@@ -785,7 +854,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_database_schemas(self, request):
-        """创建数据库SCHEMA
+        r"""创建数据库SCHEMA
 
         在指定实例的数据库中, 创建数据库schema。
         
@@ -854,7 +923,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_db_instance(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建数据库实例
         
@@ -921,7 +990,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_db_role(self, request):
-        """创建数据库角色
+        r"""创建数据库角色
 
         创建数据库角色。
         
@@ -990,7 +1059,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_db_user(self, request):
-        """创建数据库用户
+        r"""创建数据库用户
 
         在指定实例中创建数据库用户。
         
@@ -1059,7 +1128,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_gauss_db_instance(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建数据库实例，仅支持IAM5的新平面认证方式（AK/SK认证方式）。
         
@@ -1128,7 +1197,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建数据库企业版和集中式实例
         
@@ -1195,7 +1264,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_manual_backup(self, request):
-        """创建手动备份
+        r"""创建手动备份
 
         创建手动备份。
         
@@ -1262,7 +1331,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_restore_instance(self, request):
-        """恢复到新实例
+        r"""恢复到新实例
 
         根据备份恢复新实例。
         
@@ -1329,7 +1398,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_schedule_task(self, request):
-        """批量实例内核版本定时升级
+        r"""批量实例内核版本定时升级
 
         批量实例内核版本定时升级
         
@@ -1396,7 +1465,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_slow_log_download(self, request):
-        """创建慢日志下载信息
+        r"""创建慢日志下载信息
 
         创建慢日志下载信息
         
@@ -1463,7 +1532,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_configuration(self, request):
-        """删除参数模板
+        r"""删除参数模板
 
         删除参数模板。
         
@@ -1530,7 +1599,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_database(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除指定实例的数据库。
         
@@ -1599,7 +1668,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_database_schema(self, request):
-        """删除数据库SCHEMA
+        r"""删除数据库SCHEMA
 
         删除数据库schema。
         
@@ -1668,7 +1737,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除实例
+        r"""删除实例
 
         删除数据库实例。
         
@@ -1735,7 +1804,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_instance_tag(self, request):
-        """删除实例标签
+        r"""删除实例标签
 
         删除实例标签
         
@@ -1804,7 +1873,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_job(self, request):
-        """删除任务记录
+        r"""删除任务记录
 
         删除任务记录。
         
@@ -1871,7 +1940,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_manual_backup(self, request):
-        """删除手动备份
+        r"""删除手动备份
 
         删除手动备份。
         
@@ -1938,7 +2007,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_schedule_task(self, request):
-        """删除定时任务信息
+        r"""删除定时任务信息
 
         删除定时任务信息
         
@@ -2005,7 +2074,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def download_backup(self, request):
-        """获取备份下载链接
+        r"""获取备份下载链接
 
         获取备份下载链接。
         
@@ -2071,8 +2140,560 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def execute_cross_cloud_disaster_data_cache_end(self, request):
+        r"""主实例结束容灾日志保持
+
+        结束stream流式容灾的日志保持功能，目前只有stream流容灾支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterDataCacheEnd
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterDataCacheEndRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterDataCacheEndResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_data_cache_end_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_data_cache_end_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_data_cache_end_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_data_cache_end_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/keep-log-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterDataCacheEndResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_disaster_data_cache_start(self, request):
+        r"""开始日志保持
+
+        主实例开始容灾日志保持，目前只有stream流容灾支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterDataCacheStart
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterDataCacheStartRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterDataCacheStartResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_data_cache_start_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_data_cache_start_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_data_cache_start_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_data_cache_start_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/keep-log-start",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterDataCacheStartResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_disaster_end_simulation(self, request):
+        r"""结束容灾演练
+
+        灾备实例结束容灾演练，目前只有stream流容灾支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterEndSimulation
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterEndSimulationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterEndSimulationResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_end_simulation_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_end_simulation_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_end_simulation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_end_simulation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/simulation-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterEndSimulationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_disaster_recovery_failover(self, request):
+        r"""备实例容灾升主
+
+        容灾升主failover（灾备实例端下发）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterRecoveryFailover
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterRecoveryFailoverRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterRecoveryFailoverResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_recovery_failover_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_recovery_failover_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_recovery_failover_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_recovery_failover_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/failover",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterRecoveryFailoverResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_disaster_restore(self, request):
+        r"""重建容灾关系
+
+        流容灾备升主选择支持容灾回切，实现容灾关系的重建任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterRestore
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterRestoreRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterRestoreResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_restore_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_restore_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_restore_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_restore_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterRestoreResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_disaster_start_simulation(self, request):
+        r"""开始容灾演练
+
+        开始容灾演练，目前只有stream流容灾支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterStartSimulation
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterStartSimulationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterStartSimulationResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_start_simulation_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_start_simulation_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_start_simulation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_start_simulation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/simulation-start",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterStartSimulationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_disaster_switchover(self, request):
+        r"""灾备实例主从切换
+
+        容灾switchover（可在主备任一一端下发）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudDisasterSwitchover
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterSwitchoverRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudDisasterSwitchoverResponse`
+        """
+        http_info = self._execute_cross_cloud_disaster_switchover_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_disaster_switchover_invoker(self, request):
+        http_info = self._execute_cross_cloud_disaster_switchover_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_disaster_switchover_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudDisasterSwitchoverResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_cross_cloud_release_disaster(self, request):
+        r"""解除容灾关系
+
+        解除容灾（从容灾主集群下发）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteCrossCloudReleaseDisaster
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudReleaseDisasterRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ExecuteCrossCloudReleaseDisasterResponse`
+        """
+        http_info = self._execute_cross_cloud_release_disaster_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_cross_cloud_release_disaster_invoker(self, request):
+        http_info = self._execute_cross_cloud_release_disaster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cross_cloud_release_disaster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/release",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCrossCloudReleaseDisasterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def install_kernel_plugin(self, request):
-        """安装插件
+        r"""安装插件
 
         安装插件
         
@@ -2141,7 +2762,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_applicable_instances(self, request):
-        """查询可应用实例列表
+        r"""查询可应用实例列表
 
         查询可应用当前参数组模板的实例列表。
         
@@ -2212,7 +2833,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_applied_histories(self, request):
-        """查询参数模板的应用记录
+        r"""查询参数模板的应用记录
 
         查询参数模板的应用记录，以实例级别为维度。
         
@@ -2283,7 +2904,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_available_flavors(self, request):
-        """查询实例可变更规格
+        r"""查询实例可变更规格
 
         查询实例可变更规格列表。
         
@@ -2354,7 +2975,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_backups(self, request):
-        """查询备份列表
+        r"""查询备份列表
 
         获取备份列表。
         
@@ -2433,7 +3054,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_backups_details(self, request):
-        """查询备份列表
+        r"""查询备份列表
 
         获取备份列表。
         
@@ -2512,7 +3133,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_binded_eips(self, request):
-        """查询实例已绑定EIP列表
+        r"""查询实例已绑定EIP列表
 
         查询实例已绑定EIP列表。
         
@@ -2583,7 +3204,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_cn_infos_before_reduce(self, request):
-        """查询协调节点列表
+        r"""查询协调节点列表
 
         查询协调节点列表
         
@@ -2650,7 +3271,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_component_infos(self, request):
-        """查询实例的组件列表
+        r"""查询实例的组件列表
 
         查询实例的组件列表
         
@@ -2725,7 +3346,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_configurations(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -2794,7 +3415,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_configurations_diff(self, request):
-        """比较两个参数组模板之间的差异
+        r"""比较两个参数组模板之间的差异
 
         获取两个参数配置模板的差异列表。
         
@@ -2861,7 +3482,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_database_instances(self, request):
-        """查询数据库实例列表/查询实例详情
+        r"""查询数据库实例列表/查询实例详情
 
         查询数据库实例列表/查询实例详情
         
@@ -2947,7 +3568,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_database_roles(self, request):
-        """查询数据库角色列表
+        r"""查询数据库角色列表
 
         查询数据库角色列表。
         
@@ -3018,7 +3639,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_database_schemas(self, request):
-        """查询数据库SCHEMA列表
+        r"""查询数据库SCHEMA列表
 
         查询指定实例的数据库SCHEMA列表。
         
@@ -3091,7 +3712,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_databases(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询指定实例中的数据库列表。
         
@@ -3162,7 +3783,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_datastores(self, request):
-        """查询数据库引擎的版本
+        r"""查询数据库引擎的版本
 
         查询指定数据库引擎对应的版本信息。
         
@@ -3227,7 +3848,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_datastores_details(self, request):
-        """查询引擎列表
+        r"""查询引擎列表
 
         查询引擎列表。
         
@@ -3292,7 +3913,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_db_backups(self, request):
-        """查询备份列表
+        r"""查询备份列表
 
         获取备份列表。
         
@@ -3371,7 +3992,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_db_flavors(self, request):
-        """查询数据库规格
+        r"""查询数据库规格
 
         查询数据库的规格信息。
         
@@ -3446,7 +4067,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_db_users(self, request):
-        """查询数据库用户列表
+        r"""查询数据库用户列表
 
         在指定实例中查询数据库用户列表。
         
@@ -3516,8 +4137,83 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_disaster_recovery_record(self, request):
+        r"""查询操作记录
+
+        查询容灾操作记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDisasterRecoveryRecord
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDisasterRecoveryRecordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDisasterRecoveryRecordResponse`
+        """
+        http_info = self._list_disaster_recovery_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_disaster_recovery_record_invoker(self, request):
+        http_info = self._list_disaster_recovery_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_disaster_recovery_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDisasterRecoveryRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'entity_id' in local_var_params:
+            query_params.append(('entity_id', local_var_params['entity_id']))
+        if 'entity_type' in local_var_params:
+            query_params.append(('entity_type', local_var_params['entity_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_eps_quotas(self, request):
-        """查询企业项目配额组
+        r"""查询企业项目配额组
 
         查询企业项目配额组信息。
         
@@ -3588,7 +4284,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_features(self, request):
-        """查询实例特性列表
+        r"""查询实例特性列表
 
         查询当前实例高级特性列表。
         
@@ -3655,7 +4351,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_flavors(self, request):
-        """查询数据库规格
+        r"""查询数据库规格
 
         查询数据库的规格信息。
         
@@ -3730,7 +4426,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_flavors_details(self, request):
-        """查询数据库规格
+        r"""查询数据库规格
 
         查询数据库的规格信息。
         
@@ -3805,7 +4501,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_gauss_db_datastores(self, request):
-        """查询引擎列表
+        r"""查询引擎列表
 
         查询引擎列表。
         
@@ -3870,7 +4566,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_history_operations(self, request):
-        """查询参数模板的修改历史
+        r"""查询参数模板的修改历史
 
         查询参数模板的修改历史记录。
         
@@ -3941,7 +4637,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_instance_details(self, request):
-        """查询数据库实例列表/查询实例详情
+        r"""查询数据库实例列表/查询实例详情
 
         查询数据库实例列表/查询实例详情
         
@@ -4027,7 +4723,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_instance_engine_detail(self, request):
-        """查看实例引擎版本分布
+        r"""查看实例引擎版本分布
 
         查看实例引擎版本分布
         
@@ -4096,7 +4792,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_instance_error_logs(self, request):
-        """查询错误日志下载链接
+        r"""查询错误日志下载链接
 
         查询数据库错误日志下载链接。
         
@@ -4171,7 +4867,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_instance_tags(self, request):
-        """查询实例标签
+        r"""查询实例标签
 
         查询指定实例的用户标签信息。
         
@@ -4238,7 +4934,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """查询数据库实例列表/查询实例详情
+        r"""查询数据库实例列表/查询实例详情
 
         查询数据库实例列表/查询实例详情
         
@@ -4324,7 +5020,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_instances_details(self, request):
-        """查询数据库实例列表/查询实例详情
+        r"""查询数据库实例列表/查询实例详情
 
         查询数据库实例列表/查询实例详情
         
@@ -4410,7 +5106,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_kernel_plugins(self, request):
-        """查询实例已安装的插件列表
+        r"""查询实例已安装的插件列表
 
         查询实例已安装的插件列表
         
@@ -4477,7 +5173,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_param_group_templates(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -4546,7 +5242,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_parameter_group_templates(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -4615,7 +5311,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_plugin_extensions(self, request):
-        """查询实例插件拓展信息
+        r"""查询实例插件拓展信息
 
         查询实例插件拓展信息
         
@@ -4684,7 +5380,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_predefined_tags(self, request):
-        """查询预定义标签
+        r"""查询预定义标签
 
         查询预预定义标签。
         
@@ -4749,7 +5445,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目下所有用户标签信息。
         
@@ -4814,7 +5510,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_recycle_instances(self, request):
-        """查询回收站所有引擎实例列表。
+        r"""查询回收站所有引擎实例列表。
 
         查询回收站所有引擎实例列表。
         
@@ -4885,7 +5581,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_recycle_instances_details(self, request):
-        """查询回收站所有引擎实例列表。
+        r"""查询回收站所有引擎实例列表。
 
         查询回收站所有引擎实例列表。
         
@@ -4956,7 +5652,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_restorable_instances(self, request):
-        """查询可用于备份恢复的实例列表
+        r"""查询可用于备份恢复的实例列表
 
         查询可用于备份恢复的实例列表，实例信息要符合备份条件。
         
@@ -5031,7 +5727,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_restorable_instances_details(self, request):
-        """查询可用于备份恢复的实例列表
+        r"""查询可用于备份恢复的实例列表
 
         查询可用于备份恢复的实例列表，实例信息要符合备份条件。
         
@@ -5106,7 +5802,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_restore_times(self, request):
-        """查询可恢复时间段
+        r"""查询可恢复时间段
 
         查询可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
@@ -5176,7 +5872,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_schedule_task(self, request):
-        """查看定时任务列表
+        r"""查看定时任务列表
 
         查看定时任务列表
         
@@ -5255,7 +5951,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_storage_types(self, request):
-        """查询数据库磁盘类型
+        r"""查询数据库磁盘类型
 
         查询指定数据库引擎对应的磁盘类型。
         
@@ -5324,7 +6020,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_support_kernel_plugins(self, request):
-        """查询支持的插件列表
+        r"""查询支持的插件列表
 
         查询支持的插件列表
         
@@ -5389,7 +6085,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_tasks(self, request):
-        """查询任务列表
+        r"""查询任务列表
 
         获取任务中心的任务列表。
         
@@ -5466,7 +6162,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_top_io_traffics(self, request):
-        """查询Top IO列表
+        r"""查询Top IO列表
 
         查询实例数据库进程下的Top IO流量数据，返回与会话信息相关联后的结果
         
@@ -5541,7 +6237,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def modify_eps_quota(self, request):
-        """修改企业项目配额
+        r"""修改企业项目配额
 
         修改企业项目配额。
         
@@ -5608,7 +6304,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def reset_configuration(self, request):
-        """重置参数模板
+        r"""重置参数模板
 
         重置参数模板。
         
@@ -5674,8 +6370,77 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def reset_dr_config(self, request):
+        r"""重置容灾配置
+
+        重置容灾网络等配置。1.将自动“创建委托”以授权DBS云服务访问VPC资源信息、查询IAAS接口。2.重置实例容灾网络等配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetDrConfig
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetDrConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetDrConfigResponse`
+        """
+        http_info = self._reset_dr_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_dr_config_invoker(self, request):
+        http_info = self._reset_dr_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_dr_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/reset-dr-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetDrConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_pwd(self, request):
-        """重置数据库密码。
+        r"""重置数据库密码。
 
         重置数据库密码。
         
@@ -5744,7 +6509,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def resize_instance_flavor(self, request):
-        """GaussDB数据库实例规格变更
+        r"""GaussDB数据库实例规格变更
 
         GaussDB数据库实例规格变更
         
@@ -5813,7 +6578,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def restart_instance(self, request):
-        """重启数据库实例
+        r"""重启数据库实例
 
         重启数据库实例。
         
@@ -5880,7 +6645,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def restore_instance(self, request):
-        """备份恢复到当前实例
+        r"""备份恢复到当前实例
 
         备份恢复到当前实例
         
@@ -5947,7 +6712,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def resume_plugin_extensions(self, request):
-        """配置插件拓展能力
+        r"""配置插件拓展能力
 
         配置插件拓展能力
         
@@ -6016,7 +6781,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def run_instance_action(self, request):
-        """CN横向扩容/DN分片扩容/磁盘扩容
+        r"""CN横向扩容/DN分片扩容/磁盘扩容
 
         CN横向扩容/DN分片扩容/磁盘扩容
         
@@ -6085,7 +6850,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def search_auto_enlarge_policy(self, request):
-        """查询磁盘自动扩容策略
+        r"""查询磁盘自动扩容策略
 
         查询磁盘自动扩容策略
         
@@ -6152,7 +6917,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def set_backup_policy(self, request):
-        """设置自动备份策略。
+        r"""设置自动备份策略。
 
         设置自动备份策略。
         
@@ -6221,7 +6986,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def set_db_user_pwd(self, request):
-        """重置数据库帐号密码
+        r"""重置数据库帐号密码
 
         重置指定数据库帐号的密码。
         
@@ -6290,7 +7055,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def set_kernel_plugin_license(self, request):
-        """配置插件license
+        r"""配置插件license
 
         配置插件license
         
@@ -6359,7 +7124,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def set_new_backup_policy(self, request):
-        """设置自动备份策略
+        r"""设置自动备份策略
 
         设置自动备份策略
         
@@ -6428,7 +7193,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def set_recycle_policy(self, request):
-        """设置回收站策略
+        r"""设置回收站策略
 
         设置回收站策略。
         
@@ -6493,7 +7258,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_backup_policy(self, request):
-        """查询自动备份策略
+        r"""查询自动备份策略
 
         查询自动备份策略。
         
@@ -6560,7 +7325,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_balance_status(self, request):
-        """查询实例主备平衡状态
+        r"""查询实例主备平衡状态
 
         查询实例是否发生过主备切换而导致主机负载不均衡。
         
@@ -6627,7 +7392,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_batch_upgrade_candidate_versions(self, request):
-        """查询批量实例可升级的版本和升级类型。
+        r"""查询批量实例可升级的版本和升级类型。
 
         查询批量实例可升级的版本和升级类型。
         
@@ -6694,7 +7459,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_configuration_detail(self, request):
-        """查询参数模板详情
+        r"""查询参数模板详情
 
         根据参数模板ID获取指定参数模板详情。
         
@@ -6760,8 +7525,156 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def show_cross_cloud_disaster_instance_monitor(self, request):
+        r"""查询实例容灾监控实时状态
+
+        查询实例容灾监控实时状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCrossCloudDisasterInstanceMonitor
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowCrossCloudDisasterInstanceMonitorRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowCrossCloudDisasterInstanceMonitorResponse`
+        """
+        http_info = self._show_cross_cloud_disaster_instance_monitor_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cross_cloud_disaster_instance_monitor_invoker(self, request):
+        http_info = self._show_cross_cloud_disaster_instance_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cross_cloud_disaster_instance_monitor_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.5/{project_id}/instances/{instance_id}/disaster-recovery/monitor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCrossCloudDisasterInstanceMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'disaster_type' in local_var_params:
+            query_params.append(('disaster_type', local_var_params['disaster_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_cross_cloud_disaster_relations(self, request):
+        r"""查询容灾关系列表
+
+        查询容灾关系列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCrossCloudDisasterRelations
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowCrossCloudDisasterRelationsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowCrossCloudDisasterRelationsResponse`
+        """
+        http_info = self._show_cross_cloud_disaster_relations_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cross_cloud_disaster_relations_invoker(self, request):
+        http_info = self._show_cross_cloud_disaster_relations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cross_cloud_disaster_relations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.5/{project_id}/disaster-recovery/relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCrossCloudDisasterRelationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'dr_role' in local_var_params:
+            query_params.append(('dr_role', local_var_params['dr_role']))
+        if 'dr_type' in local_var_params:
+            query_params.append(('dr_type', local_var_params['dr_type']))
+        if 'dr_status' in local_var_params:
+            query_params.append(('dr_status', local_var_params['dr_status']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_deployment_form(self, request):
-        """查询解决方案模板配置
+        r"""查询解决方案模板配置
 
         根据解决方案模板名称或实例ID查询副本数、分片数、节点数
         
@@ -6830,7 +7743,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_error_log_switch_status(self, request):
-        """查询错误日志采集开关状态
+        r"""查询错误日志采集开关状态
 
         查询数据库错误日志采集的开关状态。
         
@@ -6897,7 +7810,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_instance_configuration(self, request):
-        """获取指定实例的参数模板
+        r"""获取指定实例的参数模板
 
         获取指定实例的参数模板。
         
@@ -6964,7 +7877,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_instance_disk(self, request):
-        """查询实例存储空间使用信息
+        r"""查询实例存储空间使用信息
 
         查询指定实例的存储使用空间和最大空间。
         
@@ -7031,7 +7944,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_instance_param_group(self, request):
-        """获取指定实例的参数模板
+        r"""获取指定实例的参数模板
 
         获取指定实例的参数模板。
         
@@ -7098,7 +8011,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_instance_param_group_detail(self, request):
-        """获取指定实例的参数模板
+        r"""获取指定实例的参数模板
 
         获取指定实例的参数模板。
         
@@ -7165,7 +8078,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_instance_snapshot(self, request):
-        """根据时间点或者备份文件查询原实例信息
+        r"""根据时间点或者备份文件查询原实例信息
 
         根据时间点或者备份文件查询原实例信息。
         
@@ -7236,7 +8149,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_job_detail(self, request):
-        """获取指定ID的任务信息。
+        r"""获取指定ID的任务信息。
 
         获取指定ID的任务信息。
         
@@ -7301,7 +8214,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_parameter_group_detail(self, request):
-        """查询参数模板详情
+        r"""查询参数模板详情
 
         根据参数模板ID获取指定参数模板详情。
         
@@ -7368,7 +8281,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_project_quotas(self, request):
-        """查询租户的实例配额
+        r"""查询租户的实例配额
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -7434,7 +8347,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_recycle_policy(self, request):
-        """查看回收站策略
+        r"""查看回收站策略
 
         查看回收站的回收策略。
         
@@ -7499,7 +8412,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_slow_log_download(self, request):
-        """查询慢日志下载信息
+        r"""查询慢日志下载信息
 
         查询慢日志下载信息
         
@@ -7566,7 +8479,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_source_instance_detail(self, request):
-        """根据时间点或者备份文件查询原实例信息
+        r"""根据时间点或者备份文件查询原实例信息
 
         根据时间点或者备份文件查询原实例信息。
         
@@ -7637,7 +8550,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_ssl_cert_download_link(self, request):
-        """查询实例SSL证书下载地址
+        r"""查询实例SSL证书下载地址
 
         查询实例SSL证书下载地址。
         
@@ -7704,7 +8617,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_upgrade_candidate_versions(self, request):
-        """查询实例可升级版本
+        r"""查询实例可升级版本
 
         查询实例可升级版本。
         
@@ -7771,7 +8684,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_upgrade_candidate_versions_details(self, request):
-        """查询实例可升级版本
+        r"""查询实例可升级版本
 
         查询实例可升级版本。
         
@@ -7838,7 +8751,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def start_instance(self, request):
-        """启动数据库
+        r"""启动数据库
 
         启动数据库，同时支持节点级别的启动操作
         
@@ -7907,7 +8820,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def start_mysql_compatibility(self, request):
-        """开启M兼容端口服务
+        r"""开启M兼容端口服务
 
         开启指定实例的M兼容端口。
         
@@ -7976,7 +8889,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def stop_backup(self, request):
-        """停止备份
+        r"""停止备份
 
         停止进行中的备份，包括全备和差备。
         
@@ -8043,7 +8956,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def stop_instance(self, request):
-        """停止数据库
+        r"""停止数据库
 
         停止数据库,同时支持节点级别的停止操作
         
@@ -8112,7 +9025,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def switch_configuration(self, request):
-        """应用参数模板
+        r"""应用参数模板
 
         指定实例变更参数模板。
         
@@ -8181,7 +9094,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def switch_shard(self, request):
-        """分片节点主备切换。
+        r"""分片节点主备切换。
 
         支持用户对单个或多个DN分片做主备切换，同一分组内只能指定一个新的备节点进行升主操作。
         
@@ -8250,7 +9163,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def update_features(self, request):
-        """开启特性
+        r"""开启特性
 
         打开高级特性开关。
         
@@ -8319,7 +9232,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def update_instance_configuration(self, request):
-        """修改指定实例的参数
+        r"""修改指定实例的参数
 
         修改指定实例的参数。
         
@@ -8388,7 +9301,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def update_instance_name(self, request):
-        """修改实例名称
+        r"""修改实例名称
 
         修改实例名称。
         
@@ -8457,7 +9370,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def update_mysql_compatibility(self, request):
-        """更新/关闭M兼容端口服务
+        r"""更新/关闭M兼容端口服务
 
         更新指定实例的M兼容端口服务配置。
         
@@ -8526,7 +9439,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def upgrade_instance_version(self, request):
-        """实例内核版本升级
+        r"""实例内核版本升级
 
         GaussDB(for openGauss)实例版本升级。包括灰度升级，就地升级，热补丁升级等三种升级方式。 
         就地升级：
@@ -8605,7 +9518,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def upgrade_instances_version(self, request):
-        """批量实例内核版本升级
+        r"""批量实例内核版本升级
 
         GaussDB批量实例版本升级。包括灰度升级，就地升级、热补丁升级三种升级方式。
         就地升级：
@@ -8683,7 +9596,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def validate_para_group_name(self, request):
-        """校验参数组名称是否存在
+        r"""校验参数组名称是否存在
 
         校验参数组名称是否存在。
         
@@ -8750,7 +9663,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def validate_weak_password(self, request):
-        """弱密码校验
+        r"""弱密码校验
 
         校验数据库root用户密码的安全性。
         
@@ -8817,7 +9730,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def create_limit_task(self, request):
-        """创建限流任务
+        r"""创建限流任务
 
         根据具体范围和类型，进行限流任务的创建
         
@@ -8884,7 +9797,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def delete_limit_task(self, request):
-        """删除限流任务
+        r"""删除限流任务
 
         根据task_id进行限流任务的删除
         
@@ -8951,7 +9864,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_limit_task(self, request):
-        """根据指定条件查询限流任务列表
+        r"""根据指定条件查询限流任务列表
 
         根据指定条件查询限流任务列表
         
@@ -9036,7 +9949,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def list_node_limit_sql_model(self, request):
-        """查询节点的sql模板列表
+        r"""查询节点的sql模板列表
 
         查询节点的sql模板列表
         
@@ -9109,7 +10022,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def show_limit_task(self, request):
-        """查询限流任务详情
+        r"""查询限流任务详情
 
         查询限流任务详情
         
@@ -9176,7 +10089,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def sync_limit_data(self, request):
-        """同步内核侧sql限流数据至管控侧
+        r"""同步内核侧sql限流数据至管控侧
 
         同步内核侧sql限流数据至管控侧
         
@@ -9241,7 +10154,7 @@ class GaussDBforopenGaussClient(Client):
         return http_info
 
     def update_limit_task(self, request):
-        """修改限流任务
+        r"""修改限流任务
 
         根据新的条件进行限流任务的更新
         

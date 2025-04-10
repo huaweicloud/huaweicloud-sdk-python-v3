@@ -45,7 +45,7 @@ class ListHarvestTaskRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, domain=None, app_name=None, id=None, job_id=None, start_time=None, end_time=None, event_name=None, limit=None, offset=None):
-        """ListHarvestTaskRequest
+        r"""ListHarvestTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListHarvestTaskRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this ListHarvestTaskRequest.
+        r"""Gets the access_control_allow_internal of this ListHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -124,7 +124,7 @@ class ListHarvestTaskRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this ListHarvestTaskRequest.
+        r"""Sets the access_control_allow_internal of this ListHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -135,7 +135,7 @@ class ListHarvestTaskRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this ListHarvestTaskRequest.
+        r"""Gets the access_control_allow_external of this ListHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -146,7 +146,7 @@ class ListHarvestTaskRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this ListHarvestTaskRequest.
+        r"""Sets the access_control_allow_external of this ListHarvestTaskRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -157,7 +157,7 @@ class ListHarvestTaskRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListHarvestTaskRequest.
+        r"""Gets the domain of this ListHarvestTaskRequest.
 
         推流域名
 
@@ -168,7 +168,7 @@ class ListHarvestTaskRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListHarvestTaskRequest.
+        r"""Sets the domain of this ListHarvestTaskRequest.
 
         推流域名
 
@@ -179,7 +179,7 @@ class ListHarvestTaskRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListHarvestTaskRequest.
+        r"""Gets the app_name of this ListHarvestTaskRequest.
 
         组名或应用名
 
@@ -190,7 +190,7 @@ class ListHarvestTaskRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListHarvestTaskRequest.
+        r"""Sets the app_name of this ListHarvestTaskRequest.
 
         组名或应用名
 
@@ -201,7 +201,7 @@ class ListHarvestTaskRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListHarvestTaskRequest.
+        r"""Gets the id of this ListHarvestTaskRequest.
 
         频道ID
 
@@ -212,7 +212,7 @@ class ListHarvestTaskRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListHarvestTaskRequest.
+        r"""Sets the id of this ListHarvestTaskRequest.
 
         频道ID
 
@@ -223,7 +223,7 @@ class ListHarvestTaskRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListHarvestTaskRequest.
+        r"""Gets the job_id of this ListHarvestTaskRequest.
 
         任务ID
 
@@ -234,7 +234,7 @@ class ListHarvestTaskRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListHarvestTaskRequest.
+        r"""Sets the job_id of this ListHarvestTaskRequest.
 
         任务ID
 
@@ -245,7 +245,7 @@ class ListHarvestTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHarvestTaskRequest.
+        r"""Gets the start_time of this ListHarvestTaskRequest.
 
         开始时间，Unix时间戳：单位是秒
 
@@ -256,7 +256,7 @@ class ListHarvestTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHarvestTaskRequest.
+        r"""Sets the start_time of this ListHarvestTaskRequest.
 
         开始时间，Unix时间戳：单位是秒
 
@@ -267,7 +267,7 @@ class ListHarvestTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHarvestTaskRequest.
+        r"""Gets the end_time of this ListHarvestTaskRequest.
 
         结束，Unix时间戳：单位是秒
 
@@ -278,7 +278,7 @@ class ListHarvestTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHarvestTaskRequest.
+        r"""Sets the end_time of this ListHarvestTaskRequest.
 
         结束，Unix时间戳：单位是秒
 
@@ -289,7 +289,7 @@ class ListHarvestTaskRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListHarvestTaskRequest.
+        r"""Gets the event_name of this ListHarvestTaskRequest.
 
         事件名称
 
@@ -300,7 +300,7 @@ class ListHarvestTaskRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListHarvestTaskRequest.
+        r"""Sets the event_name of this ListHarvestTaskRequest.
 
         事件名称
 
@@ -311,7 +311,7 @@ class ListHarvestTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHarvestTaskRequest.
+        r"""Gets the limit of this ListHarvestTaskRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -322,7 +322,7 @@ class ListHarvestTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHarvestTaskRequest.
+        r"""Sets the limit of this ListHarvestTaskRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -333,7 +333,7 @@ class ListHarvestTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHarvestTaskRequest.
+        r"""Gets the offset of this ListHarvestTaskRequest.
 
         偏移量。表示从此偏移量开始查询，offset大于等于0
 
@@ -344,7 +344,7 @@ class ListHarvestTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHarvestTaskRequest.
+        r"""Sets the offset of this ListHarvestTaskRequest.
 
         偏移量。表示从此偏移量开始查询，offset大于等于0
 

@@ -44,7 +44,7 @@ class CreateManagedAccountRequest:
     }
 
     def __init__(self, account_name=None, account_email=None, phone=None, identity_store_user_name=None, identity_store_email=None, parent_organizational_unit_id=None, parent_organizational_unit_name=None, blueprint=None):
-        """CreateManagedAccountRequest
+        r"""CreateManagedAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class CreateManagedAccountRequest:
 
     @property
     def account_name(self):
-        """Gets the account_name of this CreateManagedAccountRequest.
+        r"""Gets the account_name of this CreateManagedAccountRequest.
 
         纳管账号名。
 
@@ -105,7 +105,7 @@ class CreateManagedAccountRequest:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this CreateManagedAccountRequest.
+        r"""Sets the account_name of this CreateManagedAccountRequest.
 
         纳管账号名。
 
@@ -116,7 +116,7 @@ class CreateManagedAccountRequest:
 
     @property
     def account_email(self):
-        """Gets the account_email of this CreateManagedAccountRequest.
+        r"""Gets the account_email of this CreateManagedAccountRequest.
 
         纳管账号邮箱。
 
@@ -127,7 +127,7 @@ class CreateManagedAccountRequest:
 
     @account_email.setter
     def account_email(self, account_email):
-        """Sets the account_email of this CreateManagedAccountRequest.
+        r"""Sets the account_email of this CreateManagedAccountRequest.
 
         纳管账号邮箱。
 
@@ -138,7 +138,7 @@ class CreateManagedAccountRequest:
 
     @property
     def phone(self):
-        """Gets the phone of this CreateManagedAccountRequest.
+        r"""Gets the phone of this CreateManagedAccountRequest.
 
         手机号码。
 
@@ -149,7 +149,7 @@ class CreateManagedAccountRequest:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CreateManagedAccountRequest.
+        r"""Sets the phone of this CreateManagedAccountRequest.
 
         手机号码。
 
@@ -160,7 +160,7 @@ class CreateManagedAccountRequest:
 
     @property
     def identity_store_user_name(self):
-        """Gets the identity_store_user_name of this CreateManagedAccountRequest.
+        r"""Gets the identity_store_user_name of this CreateManagedAccountRequest.
 
         Identity Center用户名。
 
@@ -171,7 +171,7 @@ class CreateManagedAccountRequest:
 
     @identity_store_user_name.setter
     def identity_store_user_name(self, identity_store_user_name):
-        """Sets the identity_store_user_name of this CreateManagedAccountRequest.
+        r"""Sets the identity_store_user_name of this CreateManagedAccountRequest.
 
         Identity Center用户名。
 
@@ -182,7 +182,7 @@ class CreateManagedAccountRequest:
 
     @property
     def identity_store_email(self):
-        """Gets the identity_store_email of this CreateManagedAccountRequest.
+        r"""Gets the identity_store_email of this CreateManagedAccountRequest.
 
         Identity Center邮箱。
 
@@ -193,7 +193,7 @@ class CreateManagedAccountRequest:
 
     @identity_store_email.setter
     def identity_store_email(self, identity_store_email):
-        """Sets the identity_store_email of this CreateManagedAccountRequest.
+        r"""Sets the identity_store_email of this CreateManagedAccountRequest.
 
         Identity Center邮箱。
 
@@ -204,7 +204,7 @@ class CreateManagedAccountRequest:
 
     @property
     def parent_organizational_unit_id(self):
-        """Gets the parent_organizational_unit_id of this CreateManagedAccountRequest.
+        r"""Gets the parent_organizational_unit_id of this CreateManagedAccountRequest.
 
         父注册OU ID。
 
@@ -215,7 +215,7 @@ class CreateManagedAccountRequest:
 
     @parent_organizational_unit_id.setter
     def parent_organizational_unit_id(self, parent_organizational_unit_id):
-        """Sets the parent_organizational_unit_id of this CreateManagedAccountRequest.
+        r"""Sets the parent_organizational_unit_id of this CreateManagedAccountRequest.
 
         父注册OU ID。
 
@@ -226,7 +226,7 @@ class CreateManagedAccountRequest:
 
     @property
     def parent_organizational_unit_name(self):
-        """Gets the parent_organizational_unit_name of this CreateManagedAccountRequest.
+        r"""Gets the parent_organizational_unit_name of this CreateManagedAccountRequest.
 
         父注册OU名称。
 
@@ -237,7 +237,7 @@ class CreateManagedAccountRequest:
 
     @parent_organizational_unit_name.setter
     def parent_organizational_unit_name(self, parent_organizational_unit_name):
-        """Sets the parent_organizational_unit_name of this CreateManagedAccountRequest.
+        r"""Sets the parent_organizational_unit_name of this CreateManagedAccountRequest.
 
         父注册OU名称。
 
@@ -248,7 +248,7 @@ class CreateManagedAccountRequest:
 
     @property
     def blueprint(self):
-        """Gets the blueprint of this CreateManagedAccountRequest.
+        r"""Gets the blueprint of this CreateManagedAccountRequest.
 
         :return: The blueprint of this CreateManagedAccountRequest.
         :rtype: :class:`huaweicloudsdkrgc.v1.Blueprint`
@@ -257,7 +257,7 @@ class CreateManagedAccountRequest:
 
     @blueprint.setter
     def blueprint(self, blueprint):
-        """Sets the blueprint of this CreateManagedAccountRequest.
+        r"""Sets the blueprint of this CreateManagedAccountRequest.
 
         :param blueprint: The blueprint of this CreateManagedAccountRequest.
         :type blueprint: :class:`huaweicloudsdkrgc.v1.Blueprint`

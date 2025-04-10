@@ -35,7 +35,7 @@ class RealTimeAttendee:
     }
 
     def __init__(self, account_id=None, user_uuid=None, name=None, phone=None, phone_left=None, phone_right=None):
-        """RealTimeAttendee
+        r"""RealTimeAttendee
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RealTimeAttendee:
 
     @property
     def account_id(self):
-        """Gets the account_id of this RealTimeAttendee.
+        r"""Gets the account_id of this RealTimeAttendee.
 
         与会者的华为云会议帐号。
 
@@ -89,7 +89,7 @@ class RealTimeAttendee:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this RealTimeAttendee.
+        r"""Sets the account_id of this RealTimeAttendee.
 
         与会者的华为云会议帐号。
 
@@ -100,7 +100,7 @@ class RealTimeAttendee:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this RealTimeAttendee.
+        r"""Gets the user_uuid of this RealTimeAttendee.
 
         与会者的用户UUID。
 
@@ -111,7 +111,7 @@ class RealTimeAttendee:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this RealTimeAttendee.
+        r"""Sets the user_uuid of this RealTimeAttendee.
 
         与会者的用户UUID。
 
@@ -122,7 +122,7 @@ class RealTimeAttendee:
 
     @property
     def name(self):
-        """Gets the name of this RealTimeAttendee.
+        r"""Gets the name of this RealTimeAttendee.
 
         与会者名称。
 
@@ -133,7 +133,7 @@ class RealTimeAttendee:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RealTimeAttendee.
+        r"""Sets the name of this RealTimeAttendee.
 
         与会者名称。
 
@@ -144,7 +144,7 @@ class RealTimeAttendee:
 
     @property
     def phone(self):
-        """Gets the phone of this RealTimeAttendee.
+        r"""Gets the phone of this RealTimeAttendee.
 
         与会者号码。
 
@@ -155,7 +155,7 @@ class RealTimeAttendee:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this RealTimeAttendee.
+        r"""Sets the phone of this RealTimeAttendee.
 
         与会者号码。
 
@@ -166,7 +166,7 @@ class RealTimeAttendee:
 
     @property
     def phone_left(self):
-        """Gets the phone_left of this RealTimeAttendee.
+        r"""Gets the phone_left of this RealTimeAttendee.
 
         设备为三屏智真时的左屏号码。 > 该参数将废弃，请勿使用。 
 
@@ -177,7 +177,7 @@ class RealTimeAttendee:
 
     @phone_left.setter
     def phone_left(self, phone_left):
-        """Sets the phone_left of this RealTimeAttendee.
+        r"""Sets the phone_left of this RealTimeAttendee.
 
         设备为三屏智真时的左屏号码。 > 该参数将废弃，请勿使用。 
 
@@ -188,7 +188,7 @@ class RealTimeAttendee:
 
     @property
     def phone_right(self):
-        """Gets the phone_right of this RealTimeAttendee.
+        r"""Gets the phone_right of this RealTimeAttendee.
 
         设备为三屏智真时的右屏号码。 > 该参数将废弃，请勿使用。 
 
@@ -199,7 +199,7 @@ class RealTimeAttendee:
 
     @phone_right.setter
     def phone_right(self, phone_right):
-        """Sets the phone_right of this RealTimeAttendee.
+        r"""Sets the phone_right of this RealTimeAttendee.
 
         设备为三屏智真时的右屏号码。 > 该参数将废弃，请勿使用。 
 

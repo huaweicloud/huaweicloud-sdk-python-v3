@@ -39,13 +39,13 @@ class ListBlockedIpRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, last_days=None, host_name=None, src_ip=None, intercept_status=None, offset=None, limit=None):
-        """ListBlockedIpRequest
+        r"""ListBlockedIpRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
@@ -91,7 +91,7 @@ class ListBlockedIpRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListBlockedIpRequest.
+        r"""Gets the region of this ListBlockedIpRequest.
 
         Region ID
 
@@ -102,7 +102,7 @@ class ListBlockedIpRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListBlockedIpRequest.
+        r"""Sets the region of this ListBlockedIpRequest.
 
         Region ID
 
@@ -113,9 +113,9 @@ class ListBlockedIpRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListBlockedIpRequest.
+        r"""Gets the enterprise_project_id of this ListBlockedIpRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListBlockedIpRequest.
         :rtype: str
@@ -124,9 +124,9 @@ class ListBlockedIpRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListBlockedIpRequest.
+        r"""Sets the enterprise_project_id of this ListBlockedIpRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListBlockedIpRequest.
         :type enterprise_project_id: str
@@ -135,7 +135,7 @@ class ListBlockedIpRequest:
 
     @property
     def last_days(self):
-        """Gets the last_days of this ListBlockedIpRequest.
+        r"""Gets the last_days of this ListBlockedIpRequest.
 
         查询时间范围天数，与自定义查询时间begin_time，end_time互斥
 
@@ -146,7 +146,7 @@ class ListBlockedIpRequest:
 
     @last_days.setter
     def last_days(self, last_days):
-        """Sets the last_days of this ListBlockedIpRequest.
+        r"""Sets the last_days of this ListBlockedIpRequest.
 
         查询时间范围天数，与自定义查询时间begin_time，end_time互斥
 
@@ -157,7 +157,7 @@ class ListBlockedIpRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListBlockedIpRequest.
+        r"""Gets the host_name of this ListBlockedIpRequest.
 
         服务器名称
 
@@ -168,7 +168,7 @@ class ListBlockedIpRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListBlockedIpRequest.
+        r"""Sets the host_name of this ListBlockedIpRequest.
 
         服务器名称
 
@@ -179,7 +179,7 @@ class ListBlockedIpRequest:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this ListBlockedIpRequest.
+        r"""Gets the src_ip of this ListBlockedIpRequest.
 
         攻击源IP
 
@@ -190,7 +190,7 @@ class ListBlockedIpRequest:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this ListBlockedIpRequest.
+        r"""Sets the src_ip of this ListBlockedIpRequest.
 
         攻击源IP
 
@@ -201,7 +201,7 @@ class ListBlockedIpRequest:
 
     @property
     def intercept_status(self):
-        """Gets the intercept_status of this ListBlockedIpRequest.
+        r"""Gets the intercept_status of this ListBlockedIpRequest.
 
         拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
 
@@ -212,7 +212,7 @@ class ListBlockedIpRequest:
 
     @intercept_status.setter
     def intercept_status(self, intercept_status):
-        """Sets the intercept_status of this ListBlockedIpRequest.
+        r"""Sets the intercept_status of this ListBlockedIpRequest.
 
         拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
 
@@ -223,7 +223,7 @@ class ListBlockedIpRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBlockedIpRequest.
+        r"""Gets the offset of this ListBlockedIpRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -234,7 +234,7 @@ class ListBlockedIpRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBlockedIpRequest.
+        r"""Sets the offset of this ListBlockedIpRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -245,7 +245,7 @@ class ListBlockedIpRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBlockedIpRequest.
+        r"""Gets the limit of this ListBlockedIpRequest.
 
         每页显示个数
 
@@ -256,7 +256,7 @@ class ListBlockedIpRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBlockedIpRequest.
+        r"""Sets the limit of this ListBlockedIpRequest.
 
         每页显示个数
 

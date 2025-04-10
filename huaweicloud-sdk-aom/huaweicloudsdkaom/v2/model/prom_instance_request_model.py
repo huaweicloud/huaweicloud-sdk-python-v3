@@ -33,7 +33,7 @@ class PromInstanceRequestModel:
     }
 
     def __init__(self, prom_name=None, prom_type=None, prom_version=None, enterprise_project_id=None, project_id=None):
-        """PromInstanceRequestModel
+        r"""PromInstanceRequestModel
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PromInstanceRequestModel:
 
     @property
     def prom_name(self):
-        """Gets the prom_name of this PromInstanceRequestModel.
+        r"""Gets the prom_name of this PromInstanceRequestModel.
 
         Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
 
@@ -80,7 +80,7 @@ class PromInstanceRequestModel:
 
     @prom_name.setter
     def prom_name(self, prom_name):
-        """Sets the prom_name of this PromInstanceRequestModel.
+        r"""Sets the prom_name of this PromInstanceRequestModel.
 
         Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
 
@@ -91,7 +91,7 @@ class PromInstanceRequestModel:
 
     @property
     def prom_type(self):
-        """Gets the prom_type of this PromInstanceRequestModel.
+        r"""Gets the prom_type of this PromInstanceRequestModel.
 
         Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
@@ -102,7 +102,7 @@ class PromInstanceRequestModel:
 
     @prom_type.setter
     def prom_type(self, prom_type):
-        """Sets the prom_type of this PromInstanceRequestModel.
+        r"""Sets the prom_type of this PromInstanceRequestModel.
 
         Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
 
@@ -113,7 +113,7 @@ class PromInstanceRequestModel:
 
     @property
     def prom_version(self):
-        """Gets the prom_version of this PromInstanceRequestModel.
+        r"""Gets the prom_version of this PromInstanceRequestModel.
 
         Prometheus实例版本号。
 
@@ -124,7 +124,7 @@ class PromInstanceRequestModel:
 
     @prom_version.setter
     def prom_version(self, prom_version):
-        """Sets the prom_version of this PromInstanceRequestModel.
+        r"""Sets the prom_version of this PromInstanceRequestModel.
 
         Prometheus实例版本号。
 
@@ -135,7 +135,7 @@ class PromInstanceRequestModel:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PromInstanceRequestModel.
+        r"""Gets the enterprise_project_id of this PromInstanceRequestModel.
 
         Prometheus实例所属的企业项目。
 
@@ -146,7 +146,7 @@ class PromInstanceRequestModel:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PromInstanceRequestModel.
+        r"""Sets the enterprise_project_id of this PromInstanceRequestModel.
 
         Prometheus实例所属的企业项目。
 
@@ -157,7 +157,7 @@ class PromInstanceRequestModel:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PromInstanceRequestModel.
+        r"""Gets the project_id of this PromInstanceRequestModel.
 
         Prometheus实例所属projectId。
 
@@ -168,7 +168,7 @@ class PromInstanceRequestModel:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PromInstanceRequestModel.
+        r"""Sets the project_id of this PromInstanceRequestModel.
 
         Prometheus实例所属projectId。
 

@@ -31,7 +31,7 @@ class StatisticStandardCoverageVO:
     }
 
     def __init__(self, all_col_num=None, col_num=None, coverage=None, details=None):
-        """StatisticStandardCoverageVO
+        r"""StatisticStandardCoverageVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StatisticStandardCoverageVO:
 
     @property
     def all_col_num(self):
-        """Gets the all_col_num of this StatisticStandardCoverageVO.
+        r"""Gets the all_col_num of this StatisticStandardCoverageVO.
 
         字段总数，ID字符串。
 
@@ -75,7 +75,7 @@ class StatisticStandardCoverageVO:
 
     @all_col_num.setter
     def all_col_num(self, all_col_num):
-        """Sets the all_col_num of this StatisticStandardCoverageVO.
+        r"""Sets the all_col_num of this StatisticStandardCoverageVO.
 
         字段总数，ID字符串。
 
@@ -86,7 +86,7 @@ class StatisticStandardCoverageVO:
 
     @property
     def col_num(self):
-        """Gets the col_num of this StatisticStandardCoverageVO.
+        r"""Gets the col_num of this StatisticStandardCoverageVO.
 
         关联标准字段数，ID字符串。
 
@@ -97,7 +97,7 @@ class StatisticStandardCoverageVO:
 
     @col_num.setter
     def col_num(self, col_num):
-        """Sets the col_num of this StatisticStandardCoverageVO.
+        r"""Sets the col_num of this StatisticStandardCoverageVO.
 
         关联标准字段数，ID字符串。
 
@@ -108,7 +108,7 @@ class StatisticStandardCoverageVO:
 
     @property
     def coverage(self):
-        """Gets the coverage of this StatisticStandardCoverageVO.
+        r"""Gets the coverage of this StatisticStandardCoverageVO.
 
         标准覆盖率。
 
@@ -119,7 +119,7 @@ class StatisticStandardCoverageVO:
 
     @coverage.setter
     def coverage(self, coverage):
-        """Sets the coverage of this StatisticStandardCoverageVO.
+        r"""Sets the coverage of this StatisticStandardCoverageVO.
 
         标准覆盖率。
 
@@ -130,7 +130,7 @@ class StatisticStandardCoverageVO:
 
     @property
     def details(self):
-        """Gets the details of this StatisticStandardCoverageVO.
+        r"""Gets the details of this StatisticStandardCoverageVO.
 
         引用表数组。
 
@@ -141,7 +141,7 @@ class StatisticStandardCoverageVO:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this StatisticStandardCoverageVO.
+        r"""Sets the details of this StatisticStandardCoverageVO.
 
         引用表数组。
 

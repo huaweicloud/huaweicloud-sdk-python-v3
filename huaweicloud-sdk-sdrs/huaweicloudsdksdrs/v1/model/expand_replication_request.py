@@ -27,7 +27,7 @@ class ExpandReplicationRequest:
     }
 
     def __init__(self, replication_id=None, body=None):
-        """ExpandReplicationRequest
+        r"""ExpandReplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandReplicationRequest:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this ExpandReplicationRequest.
+        r"""Gets the replication_id of this ExpandReplicationRequest.
 
         复制对的ID。
 
@@ -60,7 +60,7 @@ class ExpandReplicationRequest:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this ExpandReplicationRequest.
+        r"""Sets the replication_id of this ExpandReplicationRequest.
 
         复制对的ID。
 
@@ -71,7 +71,7 @@ class ExpandReplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandReplicationRequest.
+        r"""Gets the body of this ExpandReplicationRequest.
 
         :return: The body of this ExpandReplicationRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestBody`
@@ -80,7 +80,7 @@ class ExpandReplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandReplicationRequest.
+        r"""Sets the body of this ExpandReplicationRequest.
 
         :param body: The body of this ExpandReplicationRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestBody`

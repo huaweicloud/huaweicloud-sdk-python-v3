@@ -34,7 +34,7 @@ class ShowQosThresholdResponse(SdkResponse):
     }
 
     def __init__(self, latency=None, jitter=None, packet_loss=None, client_cpu_max=None, system_cpu_max=None):
-        """ShowQosThresholdResponse
+        r"""ShowQosThresholdResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @property
     def latency(self):
-        """Gets the latency of this ShowQosThresholdResponse.
+        r"""Gets the latency of this ShowQosThresholdResponse.
 
         :return: The latency of this ShowQosThresholdResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
@@ -81,7 +81,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @latency.setter
     def latency(self, latency):
-        """Sets the latency of this ShowQosThresholdResponse.
+        r"""Sets the latency of this ShowQosThresholdResponse.
 
         :param latency: The latency of this ShowQosThresholdResponse.
         :type latency: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
@@ -90,7 +90,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @property
     def jitter(self):
-        """Gets the jitter of this ShowQosThresholdResponse.
+        r"""Gets the jitter of this ShowQosThresholdResponse.
 
         :return: The jitter of this ShowQosThresholdResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
@@ -99,7 +99,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @jitter.setter
     def jitter(self, jitter):
-        """Sets the jitter of this ShowQosThresholdResponse.
+        r"""Sets the jitter of this ShowQosThresholdResponse.
 
         :param jitter: The jitter of this ShowQosThresholdResponse.
         :type jitter: :class:`huaweicloudsdkmeeting.v1.ThresholdData`
@@ -108,7 +108,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @property
     def packet_loss(self):
-        """Gets the packet_loss of this ShowQosThresholdResponse.
+        r"""Gets the packet_loss of this ShowQosThresholdResponse.
 
         :return: The packet_loss of this ShowQosThresholdResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.PacketThresholdData`
@@ -117,7 +117,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @packet_loss.setter
     def packet_loss(self, packet_loss):
-        """Sets the packet_loss of this ShowQosThresholdResponse.
+        r"""Sets the packet_loss of this ShowQosThresholdResponse.
 
         :param packet_loss: The packet_loss of this ShowQosThresholdResponse.
         :type packet_loss: :class:`huaweicloudsdkmeeting.v1.PacketThresholdData`
@@ -126,7 +126,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @property
     def client_cpu_max(self):
-        """Gets the client_cpu_max of this ShowQosThresholdResponse.
+        r"""Gets the client_cpu_max of this ShowQosThresholdResponse.
 
         :return: The client_cpu_max of this ShowQosThresholdResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
@@ -135,7 +135,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @client_cpu_max.setter
     def client_cpu_max(self, client_cpu_max):
-        """Sets the client_cpu_max of this ShowQosThresholdResponse.
+        r"""Sets the client_cpu_max of this ShowQosThresholdResponse.
 
         :param client_cpu_max: The client_cpu_max of this ShowQosThresholdResponse.
         :type client_cpu_max: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
@@ -144,7 +144,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @property
     def system_cpu_max(self):
-        """Gets the system_cpu_max of this ShowQosThresholdResponse.
+        r"""Gets the system_cpu_max of this ShowQosThresholdResponse.
 
         :return: The system_cpu_max of this ShowQosThresholdResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`
@@ -153,7 +153,7 @@ class ShowQosThresholdResponse(SdkResponse):
 
     @system_cpu_max.setter
     def system_cpu_max(self, system_cpu_max):
-        """Sets the system_cpu_max of this ShowQosThresholdResponse.
+        r"""Sets the system_cpu_max of this ShowQosThresholdResponse.
 
         :param system_cpu_max: The system_cpu_max of this ShowQosThresholdResponse.
         :type system_cpu_max: :class:`huaweicloudsdkmeeting.v1.CPUThresholdData`

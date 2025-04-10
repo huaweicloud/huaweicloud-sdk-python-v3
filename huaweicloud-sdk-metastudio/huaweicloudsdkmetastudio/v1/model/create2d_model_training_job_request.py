@@ -27,7 +27,7 @@ class Create2dModelTrainingJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """Create2dModelTrainingJobRequest
+        r"""Create2dModelTrainingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Create2dModelTrainingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this Create2dModelTrainingJobRequest.
+        r"""Gets the x_app_user_id of this Create2dModelTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class Create2dModelTrainingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this Create2dModelTrainingJobRequest.
+        r"""Sets the x_app_user_id of this Create2dModelTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class Create2dModelTrainingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this Create2dModelTrainingJobRequest.
+        r"""Gets the body of this Create2dModelTrainingJobRequest.
 
         :return: The body of this Create2dModelTrainingJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.Create2dModelTrainingJobReq`
@@ -81,7 +81,7 @@ class Create2dModelTrainingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this Create2dModelTrainingJobRequest.
+        r"""Sets the body of this Create2dModelTrainingJobRequest.
 
         :param body: The body of this Create2dModelTrainingJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.Create2dModelTrainingJobReq`

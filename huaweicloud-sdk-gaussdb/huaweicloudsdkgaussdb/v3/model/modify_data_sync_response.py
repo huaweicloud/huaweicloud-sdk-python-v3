@@ -36,7 +36,7 @@ class ModifyDataSyncResponse(SdkResponse):
     }
 
     def __init__(self, source_database_name=None, target_database_name=None, source_db_config_check_results=None, tbl_config_check_results=None, task_name=None, job_id=None):
-        """ModifyDataSyncResponse
+        r"""ModifyDataSyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this ModifyDataSyncResponse.
+        r"""Gets the source_database_name of this ModifyDataSyncResponse.
 
         **参数解释**：  TaurusDB数据库名。  **取值范围**：  长度限制3~1024位，仅支持英文大小写字母、数字以及下划线。
 
@@ -90,7 +90,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this ModifyDataSyncResponse.
+        r"""Sets the source_database_name of this ModifyDataSyncResponse.
 
         **参数解释**：  TaurusDB数据库名。  **取值范围**：  长度限制3~1024位，仅支持英文大小写字母、数字以及下划线。
 
@@ -101,7 +101,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @property
     def target_database_name(self):
-        """Gets the target_database_name of this ModifyDataSyncResponse.
+        r"""Gets the target_database_name of this ModifyDataSyncResponse.
 
         **参数解释**：  目标数据库名。  **取值范围**：  长度限制3~1024位，仅支持英文大小写字母、数字以及下划线。
 
@@ -112,7 +112,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @target_database_name.setter
     def target_database_name(self, target_database_name):
-        """Sets the target_database_name of this ModifyDataSyncResponse.
+        r"""Sets the target_database_name of this ModifyDataSyncResponse.
 
         **参数解释**：  目标数据库名。  **取值范围**：  长度限制3~1024位，仅支持英文大小写字母、数字以及下划线。
 
@@ -123,7 +123,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @property
     def source_db_config_check_results(self):
-        """Gets the source_db_config_check_results of this ModifyDataSyncResponse.
+        r"""Gets the source_db_config_check_results of this ModifyDataSyncResponse.
 
         **参数解释**：  TaurusDB数据库配置检查结果。  **取值范围**：  不涉及。
 
@@ -134,7 +134,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @source_db_config_check_results.setter
     def source_db_config_check_results(self, source_db_config_check_results):
-        """Sets the source_db_config_check_results of this ModifyDataSyncResponse.
+        r"""Sets the source_db_config_check_results of this ModifyDataSyncResponse.
 
         **参数解释**：  TaurusDB数据库配置检查结果。  **取值范围**：  不涉及。
 
@@ -145,7 +145,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @property
     def tbl_config_check_results(self):
-        """Gets the tbl_config_check_results of this ModifyDataSyncResponse.
+        r"""Gets the tbl_config_check_results of this ModifyDataSyncResponse.
 
         **参数解释**：  表配置检查结果。  **取值范围**：  不涉及。
 
@@ -156,7 +156,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @tbl_config_check_results.setter
     def tbl_config_check_results(self, tbl_config_check_results):
-        """Sets the tbl_config_check_results of this ModifyDataSyncResponse.
+        r"""Sets the tbl_config_check_results of this ModifyDataSyncResponse.
 
         **参数解释**：  表配置检查结果。  **取值范围**：  不涉及。
 
@@ -167,7 +167,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ModifyDataSyncResponse.
+        r"""Gets the task_name of this ModifyDataSyncResponse.
 
         **参数解释**：  同步任务名称。  **取值范围**：  长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
 
@@ -178,7 +178,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ModifyDataSyncResponse.
+        r"""Sets the task_name of this ModifyDataSyncResponse.
 
         **参数解释**：  同步任务名称。  **取值范围**：  长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
 
@@ -189,7 +189,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyDataSyncResponse.
+        r"""Gets the job_id of this ModifyDataSyncResponse.
 
         **参数解释**：  修改同步配置工作流ID。  **取值范围**：  不涉及。
 
@@ -200,7 +200,7 @@ class ModifyDataSyncResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyDataSyncResponse.
+        r"""Sets the job_id of this ModifyDataSyncResponse.
 
         **参数解释**：  修改同步配置工作流ID。  **取值范围**：  不涉及。
 

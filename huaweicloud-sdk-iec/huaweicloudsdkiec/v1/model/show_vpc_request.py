@@ -25,7 +25,7 @@ class ShowVpcRequest:
     }
 
     def __init__(self, vpc_id=None):
-        """ShowVpcRequest
+        r"""ShowVpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpcRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowVpcRequest.
+        r"""Gets the vpc_id of this ShowVpcRequest.
 
         虚拟私有云ID。
 
@@ -53,7 +53,7 @@ class ShowVpcRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowVpcRequest.
+        r"""Sets the vpc_id of this ShowVpcRequest.
 
         虚拟私有云ID。
 

@@ -38,7 +38,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, instance_ids=None, nodes=None, queues=None, vhosts=None, exchanges=None, groups=None):
-        """ShowCesHierarchyResponse
+        r"""ShowCesHierarchyResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ShowCesHierarchyResponse.
+        r"""Gets the dimensions of this ShowCesHierarchyResponse.
 
         监控维度。
 
@@ -97,7 +97,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ShowCesHierarchyResponse.
+        r"""Sets the dimensions of this ShowCesHierarchyResponse.
 
         监控维度。
 
@@ -108,7 +108,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ShowCesHierarchyResponse.
+        r"""Gets the instance_ids of this ShowCesHierarchyResponse.
 
         实例信息。
 
@@ -119,7 +119,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ShowCesHierarchyResponse.
+        r"""Sets the instance_ids of this ShowCesHierarchyResponse.
 
         实例信息。
 
@@ -130,7 +130,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowCesHierarchyResponse.
+        r"""Gets the nodes of this ShowCesHierarchyResponse.
 
         节点信息。
 
@@ -141,7 +141,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowCesHierarchyResponse.
+        r"""Sets the nodes of this ShowCesHierarchyResponse.
 
         节点信息。
 
@@ -152,7 +152,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def queues(self):
-        """Gets the queues of this ShowCesHierarchyResponse.
+        r"""Gets the queues of this ShowCesHierarchyResponse.
 
         Queue信息。
 
@@ -163,7 +163,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this ShowCesHierarchyResponse.
+        r"""Sets the queues of this ShowCesHierarchyResponse.
 
         Queue信息。
 
@@ -174,7 +174,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def vhosts(self):
-        """Gets the vhosts of this ShowCesHierarchyResponse.
+        r"""Gets the vhosts of this ShowCesHierarchyResponse.
 
         Vhost信息
 
@@ -185,7 +185,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @vhosts.setter
     def vhosts(self, vhosts):
-        """Sets the vhosts of this ShowCesHierarchyResponse.
+        r"""Sets the vhosts of this ShowCesHierarchyResponse.
 
         Vhost信息
 
@@ -196,7 +196,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def exchanges(self):
-        """Gets the exchanges of this ShowCesHierarchyResponse.
+        r"""Gets the exchanges of this ShowCesHierarchyResponse.
 
         exchange信息
 
@@ -207,7 +207,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @exchanges.setter
     def exchanges(self, exchanges):
-        """Sets the exchanges of this ShowCesHierarchyResponse.
+        r"""Sets the exchanges of this ShowCesHierarchyResponse.
 
         exchange信息
 
@@ -218,7 +218,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ShowCesHierarchyResponse.
+        r"""Gets the groups of this ShowCesHierarchyResponse.
 
         消费组信息。
 
@@ -229,7 +229,7 @@ class ShowCesHierarchyResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ShowCesHierarchyResponse.
+        r"""Sets the groups of this ShowCesHierarchyResponse.
 
         消费组信息。
 

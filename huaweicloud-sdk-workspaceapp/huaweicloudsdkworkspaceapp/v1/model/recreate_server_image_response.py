@@ -26,7 +26,7 @@ class RecreateServerImageResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RecreateServerImageResponse
+        r"""RecreateServerImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RecreateServerImageResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RecreateServerImageResponse.
+        r"""Gets the job_id of this RecreateServerImageResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class RecreateServerImageResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RecreateServerImageResponse.
+        r"""Sets the job_id of this RecreateServerImageResponse.
 
         任务ID。
 

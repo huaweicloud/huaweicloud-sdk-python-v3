@@ -29,7 +29,7 @@ class CreateClusterInstanceNicsBody:
     }
 
     def __init__(self, vpc_id=None, net_id=None, security_group_id=None):
-        """CreateClusterInstanceNicsBody
+        r"""CreateClusterInstanceNicsBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateClusterInstanceNicsBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateClusterInstanceNicsBody.
+        r"""Gets the vpc_id of this CreateClusterInstanceNicsBody.
 
         指定虚拟私有云ID，用于集群网络配置。
 
@@ -65,7 +65,7 @@ class CreateClusterInstanceNicsBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateClusterInstanceNicsBody.
+        r"""Sets the vpc_id of this CreateClusterInstanceNicsBody.
 
         指定虚拟私有云ID，用于集群网络配置。
 
@@ -76,7 +76,7 @@ class CreateClusterInstanceNicsBody:
 
     @property
     def net_id(self):
-        """Gets the net_id of this CreateClusterInstanceNicsBody.
+        r"""Gets the net_id of this CreateClusterInstanceNicsBody.
 
         子网ID(网络ID)。
 
@@ -87,7 +87,7 @@ class CreateClusterInstanceNicsBody:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this CreateClusterInstanceNicsBody.
+        r"""Sets the net_id of this CreateClusterInstanceNicsBody.
 
         子网ID(网络ID)。
 
@@ -98,7 +98,7 @@ class CreateClusterInstanceNicsBody:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateClusterInstanceNicsBody.
+        r"""Gets the security_group_id of this CreateClusterInstanceNicsBody.
 
         安全组ID。
 
@@ -109,7 +109,7 @@ class CreateClusterInstanceNicsBody:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateClusterInstanceNicsBody.
+        r"""Sets the security_group_id of this CreateClusterInstanceNicsBody.
 
         安全组ID。
 

@@ -26,7 +26,7 @@ class ListGaussDbDatastoresResponse(SdkResponse):
     }
 
     def __init__(self, datastores=None):
-        """ListGaussDbDatastoresResponse
+        r"""ListGaussDbDatastoresResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListGaussDbDatastoresResponse(SdkResponse):
 
     @property
     def datastores(self):
-        """Gets the datastores of this ListGaussDbDatastoresResponse.
+        r"""Gets the datastores of this ListGaussDbDatastoresResponse.
 
         :return: The datastores of this ListGaussDbDatastoresResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatastoresResult`]
@@ -53,7 +53,7 @@ class ListGaussDbDatastoresResponse(SdkResponse):
 
     @datastores.setter
     def datastores(self, datastores):
-        """Sets the datastores of this ListGaussDbDatastoresResponse.
+        r"""Sets the datastores of this ListGaussDbDatastoresResponse.
 
         :param datastores: The datastores of this ListGaussDbDatastoresResponse.
         :type datastores: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatastoresResult`]

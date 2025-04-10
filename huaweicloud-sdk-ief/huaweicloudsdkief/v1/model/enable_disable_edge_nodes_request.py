@@ -29,7 +29,7 @@ class EnableDisableEdgeNodesRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None, body=None):
-        """EnableDisableEdgeNodesRequest
+        r"""EnableDisableEdgeNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EnableDisableEdgeNodesRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this EnableDisableEdgeNodesRequest.
+        r"""Gets the node_id of this EnableDisableEdgeNodesRequest.
 
         节点ID
 
@@ -67,7 +67,7 @@ class EnableDisableEdgeNodesRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this EnableDisableEdgeNodesRequest.
+        r"""Sets the node_id of this EnableDisableEdgeNodesRequest.
 
         节点ID
 
@@ -78,7 +78,7 @@ class EnableDisableEdgeNodesRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this EnableDisableEdgeNodesRequest.
+        r"""Gets the ief_instance_id of this EnableDisableEdgeNodesRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -89,7 +89,7 @@ class EnableDisableEdgeNodesRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this EnableDisableEdgeNodesRequest.
+        r"""Sets the ief_instance_id of this EnableDisableEdgeNodesRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -100,7 +100,7 @@ class EnableDisableEdgeNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableDisableEdgeNodesRequest.
+        r"""Gets the body of this EnableDisableEdgeNodesRequest.
 
         :return: The body of this EnableDisableEdgeNodesRequest.
         :rtype: :class:`huaweicloudsdkief.v1.NodeAction`
@@ -109,7 +109,7 @@ class EnableDisableEdgeNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableDisableEdgeNodesRequest.
+        r"""Sets the body of this EnableDisableEdgeNodesRequest.
 
         :param body: The body of this EnableDisableEdgeNodesRequest.
         :type body: :class:`huaweicloudsdkief.v1.NodeAction`

@@ -26,7 +26,7 @@ class CreateScheduleTaskResponse(SdkResponse):
     }
 
     def __init__(self, instance_tasks=None):
-        """CreateScheduleTaskResponse
+        r"""CreateScheduleTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateScheduleTaskResponse(SdkResponse):
 
     @property
     def instance_tasks(self):
-        """Gets the instance_tasks of this CreateScheduleTaskResponse.
+        r"""Gets the instance_tasks of this CreateScheduleTaskResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class CreateScheduleTaskResponse(SdkResponse):
 
     @instance_tasks.setter
     def instance_tasks(self, instance_tasks):
-        """Sets the instance_tasks of this CreateScheduleTaskResponse.
+        r"""Sets the instance_tasks of this CreateScheduleTaskResponse.
 
         任务ID。
 

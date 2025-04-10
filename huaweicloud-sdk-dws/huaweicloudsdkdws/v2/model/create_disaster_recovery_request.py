@@ -25,7 +25,7 @@ class CreateDisasterRecoveryRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDisasterRecoveryRequest
+        r"""CreateDisasterRecoveryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDisasterRecoveryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDisasterRecoveryRequest.
+        r"""Gets the body of this CreateDisasterRecoveryRequest.
 
         :return: The body of this CreateDisasterRecoveryRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryReq`
@@ -52,7 +52,7 @@ class CreateDisasterRecoveryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDisasterRecoveryRequest.
+        r"""Sets the body of this CreateDisasterRecoveryRequest.
 
         :param body: The body of this CreateDisasterRecoveryRequest.
         :type body: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryReq`

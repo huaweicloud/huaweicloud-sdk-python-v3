@@ -25,7 +25,7 @@ class OperateUserReq:
     }
 
     def __init__(self, op_type=None):
-        """OperateUserReq
+        r"""OperateUserReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OperateUserReq:
 
     @property
     def op_type(self):
-        """Gets the op_type of this OperateUserReq.
+        r"""Gets the op_type of this OperateUserReq.
 
         操作类型，可选值为： - LOCK：锁定用户。 - UNLOCK：解锁用户。 - RESET_PWD：重置用户密码。
 
@@ -53,7 +53,7 @@ class OperateUserReq:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this OperateUserReq.
+        r"""Sets the op_type of this OperateUserReq.
 
         操作类型，可选值为： - LOCK：锁定用户。 - UNLOCK：解锁用户。 - RESET_PWD：重置用户密码。
 

@@ -33,7 +33,7 @@ class StartSyncTaskReq:
     }
 
     def __init__(self, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None):
-        """StartSyncTaskReq
+        r"""StartSyncTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class StartSyncTaskReq:
 
     @property
     def src_ak(self):
-        """Gets the src_ak of this StartSyncTaskReq.
+        r"""Gets the src_ak of this StartSyncTaskReq.
 
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -78,7 +78,7 @@ class StartSyncTaskReq:
 
     @src_ak.setter
     def src_ak(self, src_ak):
-        """Sets the src_ak of this StartSyncTaskReq.
+        r"""Sets the src_ak of this StartSyncTaskReq.
 
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -89,7 +89,7 @@ class StartSyncTaskReq:
 
     @property
     def src_sk(self):
-        """Gets the src_sk of this StartSyncTaskReq.
+        r"""Gets the src_sk of this StartSyncTaskReq.
 
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -100,7 +100,7 @@ class StartSyncTaskReq:
 
     @src_sk.setter
     def src_sk(self, src_sk):
-        """Sets the src_sk of this StartSyncTaskReq.
+        r"""Sets the src_sk of this StartSyncTaskReq.
 
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -111,7 +111,7 @@ class StartSyncTaskReq:
 
     @property
     def dst_ak(self):
-        """Gets the dst_ak of this StartSyncTaskReq.
+        r"""Gets the dst_ak of this StartSyncTaskReq.
 
         目的端节点AK（最大长度100个字符）。
 
@@ -122,7 +122,7 @@ class StartSyncTaskReq:
 
     @dst_ak.setter
     def dst_ak(self, dst_ak):
-        """Sets the dst_ak of this StartSyncTaskReq.
+        r"""Sets the dst_ak of this StartSyncTaskReq.
 
         目的端节点AK（最大长度100个字符）。
 
@@ -133,7 +133,7 @@ class StartSyncTaskReq:
 
     @property
     def dst_sk(self):
-        """Gets the dst_sk of this StartSyncTaskReq.
+        r"""Gets the dst_sk of this StartSyncTaskReq.
 
         目的端节点SK（最大长度100个字符）。
 
@@ -144,7 +144,7 @@ class StartSyncTaskReq:
 
     @dst_sk.setter
     def dst_sk(self, dst_sk):
-        """Sets the dst_sk of this StartSyncTaskReq.
+        r"""Sets the dst_sk of this StartSyncTaskReq.
 
         目的端节点SK（最大长度100个字符）。
 
@@ -155,7 +155,7 @@ class StartSyncTaskReq:
 
     @property
     def source_cdn_authentication_key(self):
-        """Gets the source_cdn_authentication_key of this StartSyncTaskReq.
+        r"""Gets the source_cdn_authentication_key of this StartSyncTaskReq.
 
         CDN鉴权秘钥。
 
@@ -166,7 +166,7 @@ class StartSyncTaskReq:
 
     @source_cdn_authentication_key.setter
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
-        """Sets the source_cdn_authentication_key of this StartSyncTaskReq.
+        r"""Sets the source_cdn_authentication_key of this StartSyncTaskReq.
 
         CDN鉴权秘钥。
 

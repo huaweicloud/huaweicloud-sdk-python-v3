@@ -33,7 +33,7 @@ class NetworkTraffic:
     }
 
     def __init__(self, avg_network_traffic=None, max_down_stream=None, max_network_traffic=None, max_upstream=None, min_network_traffic=None):
-        """NetworkTraffic
+        r"""NetworkTraffic
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NetworkTraffic:
 
     @property
     def avg_network_traffic(self):
-        """Gets the avg_network_traffic of this NetworkTraffic.
+        r"""Gets the avg_network_traffic of this NetworkTraffic.
 
         平均网络流量
 
@@ -82,7 +82,7 @@ class NetworkTraffic:
 
     @avg_network_traffic.setter
     def avg_network_traffic(self, avg_network_traffic):
-        """Sets the avg_network_traffic of this NetworkTraffic.
+        r"""Sets the avg_network_traffic of this NetworkTraffic.
 
         平均网络流量
 
@@ -93,7 +93,7 @@ class NetworkTraffic:
 
     @property
     def max_down_stream(self):
-        """Gets the max_down_stream of this NetworkTraffic.
+        r"""Gets the max_down_stream of this NetworkTraffic.
 
         最大下行带宽
 
@@ -104,7 +104,7 @@ class NetworkTraffic:
 
     @max_down_stream.setter
     def max_down_stream(self, max_down_stream):
-        """Sets the max_down_stream of this NetworkTraffic.
+        r"""Sets the max_down_stream of this NetworkTraffic.
 
         最大下行带宽
 
@@ -115,7 +115,7 @@ class NetworkTraffic:
 
     @property
     def max_network_traffic(self):
-        """Gets the max_network_traffic of this NetworkTraffic.
+        r"""Gets the max_network_traffic of this NetworkTraffic.
 
         最大网络流量（流量峰值）
 
@@ -126,7 +126,7 @@ class NetworkTraffic:
 
     @max_network_traffic.setter
     def max_network_traffic(self, max_network_traffic):
-        """Sets the max_network_traffic of this NetworkTraffic.
+        r"""Sets the max_network_traffic of this NetworkTraffic.
 
         最大网络流量（流量峰值）
 
@@ -137,7 +137,7 @@ class NetworkTraffic:
 
     @property
     def max_upstream(self):
-        """Gets the max_upstream of this NetworkTraffic.
+        r"""Gets the max_upstream of this NetworkTraffic.
 
         最大上行带宽
 
@@ -148,7 +148,7 @@ class NetworkTraffic:
 
     @max_upstream.setter
     def max_upstream(self, max_upstream):
-        """Sets the max_upstream of this NetworkTraffic.
+        r"""Sets the max_upstream of this NetworkTraffic.
 
         最大上行带宽
 
@@ -159,7 +159,7 @@ class NetworkTraffic:
 
     @property
     def min_network_traffic(self):
-        """Gets the min_network_traffic of this NetworkTraffic.
+        r"""Gets the min_network_traffic of this NetworkTraffic.
 
         最小网络流量
 
@@ -170,7 +170,7 @@ class NetworkTraffic:
 
     @min_network_traffic.setter
     def min_network_traffic(self, min_network_traffic):
-        """Sets the min_network_traffic of this NetworkTraffic.
+        r"""Sets the min_network_traffic of this NetworkTraffic.
 
         最小网络流量
 

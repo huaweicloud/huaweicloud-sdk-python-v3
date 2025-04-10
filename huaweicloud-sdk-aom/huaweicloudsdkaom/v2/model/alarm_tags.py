@@ -29,7 +29,7 @@ class AlarmTags:
     }
 
     def __init__(self, auto_tags=None, custom_tags=None, custom_annotations=None):
-        """AlarmTags
+        r"""AlarmTags
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AlarmTags:
 
     @property
     def auto_tags(self):
-        """Gets the auto_tags of this AlarmTags.
+        r"""Gets the auto_tags of this AlarmTags.
 
         自动标签。
 
@@ -68,7 +68,7 @@ class AlarmTags:
 
     @auto_tags.setter
     def auto_tags(self, auto_tags):
-        """Sets the auto_tags of this AlarmTags.
+        r"""Sets the auto_tags of this AlarmTags.
 
         自动标签。
 
@@ -79,7 +79,7 @@ class AlarmTags:
 
     @property
     def custom_tags(self):
-        """Gets the custom_tags of this AlarmTags.
+        r"""Gets the custom_tags of this AlarmTags.
 
         自定义标签。
 
@@ -90,7 +90,7 @@ class AlarmTags:
 
     @custom_tags.setter
     def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this AlarmTags.
+        r"""Sets the custom_tags of this AlarmTags.
 
         自定义标签。
 
@@ -101,7 +101,7 @@ class AlarmTags:
 
     @property
     def custom_annotations(self):
-        """Gets the custom_annotations of this AlarmTags.
+        r"""Gets the custom_annotations of this AlarmTags.
 
         告警标注。
 
@@ -112,7 +112,7 @@ class AlarmTags:
 
     @custom_annotations.setter
     def custom_annotations(self, custom_annotations):
-        """Sets the custom_annotations of this AlarmTags.
+        r"""Sets the custom_annotations of this AlarmTags.
 
         告警标注。
 

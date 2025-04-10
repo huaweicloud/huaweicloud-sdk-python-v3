@@ -25,7 +25,7 @@ class UpdatePredefineTagsRequest:
     }
 
     def __init__(self, body=None):
-        """UpdatePredefineTagsRequest
+        r"""UpdatePredefineTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePredefineTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePredefineTagsRequest.
+        r"""Gets the body of this UpdatePredefineTagsRequest.
 
         :return: The body of this UpdatePredefineTagsRequest.
         :rtype: :class:`huaweicloudsdktms.v1.ModifyPrefineTag`
@@ -52,7 +52,7 @@ class UpdatePredefineTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePredefineTagsRequest.
+        r"""Sets the body of this UpdatePredefineTagsRequest.
 
         :param body: The body of this UpdatePredefineTagsRequest.
         :type body: :class:`huaweicloudsdktms.v1.ModifyPrefineTag`

@@ -28,7 +28,7 @@ class CountTenantResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources_count=None, x_request_id=None):
-        """CountTenantResourcesResponse
+        r"""CountTenantResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CountTenantResourcesResponse(SdkResponse):
 
     @property
     def resources_count(self):
-        """Gets the resources_count of this CountTenantResourcesResponse.
+        r"""Gets the resources_count of this CountTenantResourcesResponse.
 
         资源总数列表
 
@@ -62,7 +62,7 @@ class CountTenantResourcesResponse(SdkResponse):
 
     @resources_count.setter
     def resources_count(self, resources_count):
-        """Sets the resources_count of this CountTenantResourcesResponse.
+        r"""Sets the resources_count of this CountTenantResourcesResponse.
 
         资源总数列表
 
@@ -73,7 +73,7 @@ class CountTenantResourcesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CountTenantResourcesResponse.
+        r"""Gets the x_request_id of this CountTenantResourcesResponse.
 
         :return: The x_request_id of this CountTenantResourcesResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CountTenantResourcesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CountTenantResourcesResponse.
+        r"""Sets the x_request_id of this CountTenantResourcesResponse.
 
         :param x_request_id: The x_request_id of this CountTenantResourcesResponse.
         :type x_request_id: str

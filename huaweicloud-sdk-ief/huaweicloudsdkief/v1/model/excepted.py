@@ -27,7 +27,7 @@ class Excepted:
     }
 
     def __init__(self, value=None, metadata=None):
-        """Excepted
+        r"""Excepted
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Excepted:
 
     @property
     def value(self):
-        """Gets the value of this Excepted.
+        r"""Gets the value of this Excepted.
 
         动态属性的初始值，最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
@@ -61,7 +61,7 @@ class Excepted:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Excepted.
+        r"""Sets the value of this Excepted.
 
         动态属性的初始值，最大长度512，value允许英文字母、数字、下划线、中划线、点、逗号、冒号、/、@、+、?、^、=、%、&、~、#、!、*
 
@@ -72,7 +72,7 @@ class Excepted:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Excepted.
+        r"""Gets the metadata of this Excepted.
 
         :return: The metadata of this Excepted.
         :rtype: :class:`huaweicloudsdkief.v1.ExceptedMetadata`
@@ -81,7 +81,7 @@ class Excepted:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Excepted.
+        r"""Sets the metadata of this Excepted.
 
         :param metadata: The metadata of this Excepted.
         :type metadata: :class:`huaweicloudsdkief.v1.ExceptedMetadata`

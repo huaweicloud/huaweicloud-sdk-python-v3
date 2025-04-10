@@ -35,7 +35,7 @@ class InstanceSpaceInfo:
     }
 
     def __init__(self, total_size=None, used_size=None, data_size=None, log_size=None, avg_daily_growth=None, last_result_time=None):
-        """InstanceSpaceInfo
+        r"""InstanceSpaceInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class InstanceSpaceInfo:
 
     @property
     def total_size(self):
-        """Gets the total_size of this InstanceSpaceInfo.
+        r"""Gets the total_size of this InstanceSpaceInfo.
 
         实例总空间，以字节为单位。GaussDB(for MySQL)不会返回总空间
 
@@ -89,7 +89,7 @@ class InstanceSpaceInfo:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this InstanceSpaceInfo.
+        r"""Sets the total_size of this InstanceSpaceInfo.
 
         实例总空间，以字节为单位。GaussDB(for MySQL)不会返回总空间
 
@@ -100,7 +100,7 @@ class InstanceSpaceInfo:
 
     @property
     def used_size(self):
-        """Gets the used_size of this InstanceSpaceInfo.
+        r"""Gets the used_size of this InstanceSpaceInfo.
 
         已使用空间，以字节为单位
 
@@ -111,7 +111,7 @@ class InstanceSpaceInfo:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this InstanceSpaceInfo.
+        r"""Sets the used_size of this InstanceSpaceInfo.
 
         已使用空间，以字节为单位
 
@@ -122,7 +122,7 @@ class InstanceSpaceInfo:
 
     @property
     def data_size(self):
-        """Gets the data_size of this InstanceSpaceInfo.
+        r"""Gets the data_size of this InstanceSpaceInfo.
 
         数据空间，以字节为单位
 
@@ -133,7 +133,7 @@ class InstanceSpaceInfo:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this InstanceSpaceInfo.
+        r"""Sets the data_size of this InstanceSpaceInfo.
 
         数据空间，以字节为单位
 
@@ -144,7 +144,7 @@ class InstanceSpaceInfo:
 
     @property
     def log_size(self):
-        """Gets the log_size of this InstanceSpaceInfo.
+        r"""Gets the log_size of this InstanceSpaceInfo.
 
         日志空间，以字节为单位
 
@@ -155,7 +155,7 @@ class InstanceSpaceInfo:
 
     @log_size.setter
     def log_size(self, log_size):
-        """Sets the log_size of this InstanceSpaceInfo.
+        r"""Sets the log_size of this InstanceSpaceInfo.
 
         日志空间，以字节为单位
 
@@ -166,7 +166,7 @@ class InstanceSpaceInfo:
 
     @property
     def avg_daily_growth(self):
-        """Gets the avg_daily_growth of this InstanceSpaceInfo.
+        r"""Gets the avg_daily_growth of this InstanceSpaceInfo.
 
         近七日的数据平均日增长量，以字节为单位
 
@@ -177,7 +177,7 @@ class InstanceSpaceInfo:
 
     @avg_daily_growth.setter
     def avg_daily_growth(self, avg_daily_growth):
-        """Sets the avg_daily_growth of this InstanceSpaceInfo.
+        r"""Sets the avg_daily_growth of this InstanceSpaceInfo.
 
         近七日的数据平均日增长量，以字节为单位
 
@@ -188,7 +188,7 @@ class InstanceSpaceInfo:
 
     @property
     def last_result_time(self):
-        """Gets the last_result_time of this InstanceSpaceInfo.
+        r"""Gets the last_result_time of this InstanceSpaceInfo.
 
         最后一次分析的结果时间，毫秒单位时间戳
 
@@ -199,7 +199,7 @@ class InstanceSpaceInfo:
 
     @last_result_time.setter
     def last_result_time(self, last_result_time):
-        """Sets the last_result_time of this InstanceSpaceInfo.
+        r"""Sets the last_result_time of this InstanceSpaceInfo.
 
         最后一次分析的结果时间，毫秒单位时间戳
 

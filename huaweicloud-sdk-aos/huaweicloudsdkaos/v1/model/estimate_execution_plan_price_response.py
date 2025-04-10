@@ -28,7 +28,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
     }
 
     def __init__(self, currency=None, items=None):
-        """EstimateExecutionPlanPriceResponse
+        r"""EstimateExecutionPlanPriceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this EstimateExecutionPlanPriceResponse.
+        r"""Gets the currency of this EstimateExecutionPlanPriceResponse.
 
         币种，枚举值   * [`CNY` - 元，中国站返回的币种](tag:hws)[`USD` - 美元，国际站返回的币种](tag:hws_hk)[`USD` - 美元，欧洲站返回的币种](tag:hws_eu)
 
@@ -62,7 +62,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this EstimateExecutionPlanPriceResponse.
+        r"""Sets the currency of this EstimateExecutionPlanPriceResponse.
 
         币种，枚举值   * [`CNY` - 元，中国站返回的币种](tag:hws)[`USD` - 美元，国际站返回的币种](tag:hws_hk)[`USD` - 美元，欧洲站返回的币种](tag:hws_eu)
 
@@ -73,7 +73,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this EstimateExecutionPlanPriceResponse.
+        r"""Gets the items of this EstimateExecutionPlanPriceResponse.
 
         执行计划中所有资源的询价结果
 
@@ -84,7 +84,7 @@ class EstimateExecutionPlanPriceResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this EstimateExecutionPlanPriceResponse.
+        r"""Sets the items of this EstimateExecutionPlanPriceResponse.
 
         执行计划中所有资源的询价结果
 

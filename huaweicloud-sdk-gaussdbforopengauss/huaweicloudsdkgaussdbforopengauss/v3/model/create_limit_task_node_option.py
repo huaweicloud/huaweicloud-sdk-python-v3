@@ -27,7 +27,7 @@ class CreateLimitTaskNodeOption:
     }
 
     def __init__(self, node_id=None, sql_id=None):
-        """CreateLimitTaskNodeOption
+        r"""CreateLimitTaskNodeOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateLimitTaskNodeOption:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateLimitTaskNodeOption.
+        r"""Gets the node_id of this CreateLimitTaskNodeOption.
 
         节点id。
 
@@ -59,7 +59,7 @@ class CreateLimitTaskNodeOption:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateLimitTaskNodeOption.
+        r"""Sets the node_id of this CreateLimitTaskNodeOption.
 
         节点id。
 
@@ -70,7 +70,7 @@ class CreateLimitTaskNodeOption:
 
     @property
     def sql_id(self):
-        """Gets the sql_id of this CreateLimitTaskNodeOption.
+        r"""Gets the sql_id of this CreateLimitTaskNodeOption.
 
         该节点执行的sql语句id。如果类型为SQL_ID，必须与limit_type_value值一致。
 
@@ -81,7 +81,7 @@ class CreateLimitTaskNodeOption:
 
     @sql_id.setter
     def sql_id(self, sql_id):
-        """Sets the sql_id of this CreateLimitTaskNodeOption.
+        r"""Sets the sql_id of this CreateLimitTaskNodeOption.
 
         该节点执行的sql语句id。如果类型为SQL_ID，必须与limit_type_value值一致。
 

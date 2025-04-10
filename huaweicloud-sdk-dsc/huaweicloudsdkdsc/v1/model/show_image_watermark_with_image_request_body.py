@@ -25,7 +25,7 @@ class ShowImageWatermarkWithImageRequestBody:
     }
 
     def __init__(self, file=None):
-        """ShowImageWatermarkWithImageRequestBody
+        r"""ShowImageWatermarkWithImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowImageWatermarkWithImageRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ShowImageWatermarkWithImageRequestBody.
+        r"""Gets the file of this ShowImageWatermarkWithImageRequestBody.
 
         待提取暗水印的图片文件。
 
@@ -53,7 +53,7 @@ class ShowImageWatermarkWithImageRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ShowImageWatermarkWithImageRequestBody.
+        r"""Sets the file of this ShowImageWatermarkWithImageRequestBody.
 
         待提取暗水印的图片文件。
 

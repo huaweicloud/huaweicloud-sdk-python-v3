@@ -31,7 +31,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """UpdateNewNodeAutoAddSwitchRequest
+        r"""UpdateNewNodeAutoAddSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Gets the x_language of this UpdateNewNodeAutoAddSwitchRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -73,7 +73,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Sets the x_language of this UpdateNewNodeAutoAddSwitchRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -84,7 +84,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Gets the instance_id of this UpdateNewNodeAutoAddSwitchRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Sets the instance_id of this UpdateNewNodeAutoAddSwitchRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Gets the proxy_id of this UpdateNewNodeAutoAddSwitchRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -117,7 +117,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Sets the proxy_id of this UpdateNewNodeAutoAddSwitchRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -128,7 +128,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Gets the body of this UpdateNewNodeAutoAddSwitchRequest.
 
         :return: The body of this UpdateNewNodeAutoAddSwitchRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateNewNodeAutoAddSwitchRequestBody`
@@ -137,7 +137,7 @@ class UpdateNewNodeAutoAddSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNewNodeAutoAddSwitchRequest.
+        r"""Sets the body of this UpdateNewNodeAutoAddSwitchRequest.
 
         :param body: The body of this UpdateNewNodeAutoAddSwitchRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateNewNodeAutoAddSwitchRequestBody`

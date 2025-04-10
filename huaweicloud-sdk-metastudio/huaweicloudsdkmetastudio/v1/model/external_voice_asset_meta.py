@@ -25,7 +25,7 @@ class ExternalVoiceAssetMeta:
     }
 
     def __init__(self, provider=None):
-        """ExternalVoiceAssetMeta
+        r"""ExternalVoiceAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExternalVoiceAssetMeta:
 
     @property
     def provider(self):
-        """Gets the provider of this ExternalVoiceAssetMeta.
+        r"""Gets the provider of this ExternalVoiceAssetMeta.
 
         第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：华为云EI TTS * MOBVOI：出门问问 TTS * AUDIOX：逻辑智能 TTS * SINOVOICE：捷通华声 TTS * DATABAKER：标贝 TTS * AISPEECH：思必驰 TTS
 
@@ -53,7 +53,7 @@ class ExternalVoiceAssetMeta:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ExternalVoiceAssetMeta.
+        r"""Sets the provider of this ExternalVoiceAssetMeta.
 
         第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：华为云EI TTS * MOBVOI：出门问问 TTS * AUDIOX：逻辑智能 TTS * SINOVOICE：捷通华声 TTS * DATABAKER：标贝 TTS * AISPEECH：思必驰 TTS
 

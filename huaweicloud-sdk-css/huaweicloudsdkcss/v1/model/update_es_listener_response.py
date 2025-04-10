@@ -26,7 +26,7 @@ class UpdateEsListenerResponse(SdkResponse):
     }
 
     def __init__(self, listener=None):
-        """UpdateEsListenerResponse
+        r"""UpdateEsListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEsListenerResponse(SdkResponse):
 
     @property
     def listener(self):
-        """Gets the listener of this UpdateEsListenerResponse.
+        r"""Gets the listener of this UpdateEsListenerResponse.
 
         :return: The listener of this UpdateEsListenerResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.EsListenerResponse`
@@ -53,7 +53,7 @@ class UpdateEsListenerResponse(SdkResponse):
 
     @listener.setter
     def listener(self, listener):
-        """Sets the listener of this UpdateEsListenerResponse.
+        r"""Sets the listener of this UpdateEsListenerResponse.
 
         :param listener: The listener of this UpdateEsListenerResponse.
         :type listener: :class:`huaweicloudsdkcss.v1.EsListenerResponse`

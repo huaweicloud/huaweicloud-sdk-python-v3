@@ -24,7 +24,7 @@ class NeutronDeletePortResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NeutronDeletePortResponse
+        r"""NeutronDeletePortResponse
 
         The model defined in huaweicloud sdk
 

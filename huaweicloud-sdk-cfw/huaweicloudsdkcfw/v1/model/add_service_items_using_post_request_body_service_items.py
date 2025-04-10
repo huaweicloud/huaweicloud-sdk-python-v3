@@ -31,7 +31,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
     }
 
     def __init__(self, protocol=None, source_port=None, dest_port=None, description=None):
-        """AddServiceItemsUsingPOSTRequestBodyServiceItems
+        r"""AddServiceItemsUsingPOSTRequestBodyServiceItems
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @property
     def protocol(self):
-        """Gets the protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Gets the protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
@@ -72,7 +72,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Sets the protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
@@ -83,7 +83,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @property
     def source_port(self):
-        """Gets the source_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Gets the source_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         源端口
 
@@ -94,7 +94,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Sets the source_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         源端口
 
@@ -105,7 +105,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Gets the dest_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         目的端口
 
@@ -116,7 +116,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Sets the dest_port of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         目的端口
 
@@ -127,7 +127,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @property
     def description(self):
-        """Gets the description of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Gets the description of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         服务成员描述
 
@@ -138,7 +138,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
+        r"""Sets the description of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
         服务成员描述
 

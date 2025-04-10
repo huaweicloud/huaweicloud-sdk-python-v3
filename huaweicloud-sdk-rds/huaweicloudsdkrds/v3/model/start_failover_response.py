@@ -30,7 +30,7 @@ class StartFailoverResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, node_id=None, workflow_id=None):
-        """StartFailoverResponse
+        r"""StartFailoverResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class StartFailoverResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartFailoverResponse.
+        r"""Gets the instance_id of this StartFailoverResponse.
 
         实例Id
 
@@ -69,7 +69,7 @@ class StartFailoverResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartFailoverResponse.
+        r"""Sets the instance_id of this StartFailoverResponse.
 
         实例Id
 
@@ -80,7 +80,7 @@ class StartFailoverResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this StartFailoverResponse.
+        r"""Gets the node_id of this StartFailoverResponse.
 
         节点Id
 
@@ -91,7 +91,7 @@ class StartFailoverResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this StartFailoverResponse.
+        r"""Sets the node_id of this StartFailoverResponse.
 
         节点Id
 
@@ -102,7 +102,7 @@ class StartFailoverResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this StartFailoverResponse.
+        r"""Gets the workflow_id of this StartFailoverResponse.
 
         任务Id
 
@@ -113,7 +113,7 @@ class StartFailoverResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StartFailoverResponse.
+        r"""Sets the workflow_id of this StartFailoverResponse.
 
         任务Id
 

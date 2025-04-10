@@ -45,7 +45,7 @@ class GetEastWestFirewallResponseBody:
     }
 
     def __init__(self, object_id=None, project_id=None, status=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protect_infos=None, total=None, offset=None, limit=None, mode=None):
-        """GetEastWestFirewallResponseBody
+        r"""GetEastWestFirewallResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def object_id(self):
-        """Gets the object_id of this GetEastWestFirewallResponseBody.
+        r"""Gets the object_id of this GetEastWestFirewallResponseBody.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -124,7 +124,7 @@ class GetEastWestFirewallResponseBody:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this GetEastWestFirewallResponseBody.
+        r"""Sets the object_id of this GetEastWestFirewallResponseBody.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -135,7 +135,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this GetEastWestFirewallResponseBody.
+        r"""Gets the project_id of this GetEastWestFirewallResponseBody.
 
         项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
@@ -146,7 +146,7 @@ class GetEastWestFirewallResponseBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GetEastWestFirewallResponseBody.
+        r"""Sets the project_id of this GetEastWestFirewallResponseBody.
 
         项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
@@ -157,7 +157,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this GetEastWestFirewallResponseBody.
+        r"""Gets the status of this GetEastWestFirewallResponseBody.
 
         防护状态：0 已开启防护， 1 未开启防护
 
@@ -168,7 +168,7 @@ class GetEastWestFirewallResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetEastWestFirewallResponseBody.
+        r"""Sets the status of this GetEastWestFirewallResponseBody.
 
         防护状态：0 已开启防护， 1 未开启防护
 
@@ -179,7 +179,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def firewall_associated_subnets(self):
-        """Gets the firewall_associated_subnets of this GetEastWestFirewallResponseBody.
+        r"""Gets the firewall_associated_subnets of this GetEastWestFirewallResponseBody.
 
         云防火墙关联子网信息
 
@@ -190,7 +190,7 @@ class GetEastWestFirewallResponseBody:
 
     @firewall_associated_subnets.setter
     def firewall_associated_subnets(self, firewall_associated_subnets):
-        """Sets the firewall_associated_subnets of this GetEastWestFirewallResponseBody.
+        r"""Sets the firewall_associated_subnets of this GetEastWestFirewallResponseBody.
 
         云防火墙关联子网信息
 
@@ -201,7 +201,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def er(self):
-        """Gets the er of this GetEastWestFirewallResponseBody.
+        r"""Gets the er of this GetEastWestFirewallResponseBody.
 
         :return: The er of this GetEastWestFirewallResponseBody.
         :rtype: :class:`huaweicloudsdkcfw.v1.ErInstance`
@@ -210,7 +210,7 @@ class GetEastWestFirewallResponseBody:
 
     @er.setter
     def er(self, er):
-        """Sets the er of this GetEastWestFirewallResponseBody.
+        r"""Sets the er of this GetEastWestFirewallResponseBody.
 
         :param er: The er of this GetEastWestFirewallResponseBody.
         :type er: :class:`huaweicloudsdkcfw.v1.ErInstance`
@@ -219,7 +219,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def inspection_vpc(self):
-        """Gets the inspection_vpc of this GetEastWestFirewallResponseBody.
+        r"""Gets the inspection_vpc of this GetEastWestFirewallResponseBody.
 
         :return: The inspection_vpc of this GetEastWestFirewallResponseBody.
         :rtype: :class:`huaweicloudsdkcfw.v1.VpcDetail`
@@ -228,7 +228,7 @@ class GetEastWestFirewallResponseBody:
 
     @inspection_vpc.setter
     def inspection_vpc(self, inspection_vpc):
-        """Sets the inspection_vpc of this GetEastWestFirewallResponseBody.
+        r"""Sets the inspection_vpc of this GetEastWestFirewallResponseBody.
 
         :param inspection_vpc: The inspection_vpc of this GetEastWestFirewallResponseBody.
         :type inspection_vpc: :class:`huaweicloudsdkcfw.v1.VpcDetail`
@@ -237,7 +237,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def protect_infos(self):
-        """Gets the protect_infos of this GetEastWestFirewallResponseBody.
+        r"""Gets the protect_infos of this GetEastWestFirewallResponseBody.
 
         东西向防护资源信息
 
@@ -248,7 +248,7 @@ class GetEastWestFirewallResponseBody:
 
     @protect_infos.setter
     def protect_infos(self, protect_infos):
-        """Sets the protect_infos of this GetEastWestFirewallResponseBody.
+        r"""Sets the protect_infos of this GetEastWestFirewallResponseBody.
 
         东西向防护资源信息
 
@@ -259,7 +259,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def total(self):
-        """Gets the total of this GetEastWestFirewallResponseBody.
+        r"""Gets the total of this GetEastWestFirewallResponseBody.
 
         防护VPC总数
 
@@ -270,7 +270,7 @@ class GetEastWestFirewallResponseBody:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this GetEastWestFirewallResponseBody.
+        r"""Sets the total of this GetEastWestFirewallResponseBody.
 
         防护VPC总数
 
@@ -281,7 +281,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def offset(self):
-        """Gets the offset of this GetEastWestFirewallResponseBody.
+        r"""Gets the offset of this GetEastWestFirewallResponseBody.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -292,7 +292,7 @@ class GetEastWestFirewallResponseBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this GetEastWestFirewallResponseBody.
+        r"""Sets the offset of this GetEastWestFirewallResponseBody.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -303,7 +303,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def limit(self):
-        """Gets the limit of this GetEastWestFirewallResponseBody.
+        r"""Gets the limit of this GetEastWestFirewallResponseBody.
 
         每页显示个数，范围为1-1024
 
@@ -314,7 +314,7 @@ class GetEastWestFirewallResponseBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this GetEastWestFirewallResponseBody.
+        r"""Sets the limit of this GetEastWestFirewallResponseBody.
 
         每页显示个数，范围为1-1024
 
@@ -325,7 +325,7 @@ class GetEastWestFirewallResponseBody:
 
     @property
     def mode(self):
-        """Gets the mode of this GetEastWestFirewallResponseBody.
+        r"""Gets the mode of this GetEastWestFirewallResponseBody.
 
         防护模式，值为er
 
@@ -336,7 +336,7 @@ class GetEastWestFirewallResponseBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this GetEastWestFirewallResponseBody.
+        r"""Sets the mode of this GetEastWestFirewallResponseBody.
 
         防护模式，值为er
 

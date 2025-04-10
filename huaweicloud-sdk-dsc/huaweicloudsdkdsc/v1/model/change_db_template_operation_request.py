@@ -27,7 +27,7 @@ class ChangeDbTemplateOperationRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """ChangeDbTemplateOperationRequest
+        r"""ChangeDbTemplateOperationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeDbTemplateOperationRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ChangeDbTemplateOperationRequest.
+        r"""Gets the template_id of this ChangeDbTemplateOperationRequest.
 
         模板ID
 
@@ -60,7 +60,7 @@ class ChangeDbTemplateOperationRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ChangeDbTemplateOperationRequest.
+        r"""Sets the template_id of this ChangeDbTemplateOperationRequest.
 
         模板ID
 
@@ -71,7 +71,7 @@ class ChangeDbTemplateOperationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeDbTemplateOperationRequest.
+        r"""Gets the body of this ChangeDbTemplateOperationRequest.
 
         :return: The body of this ChangeDbTemplateOperationRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.MaskSwitchRequest`
@@ -80,7 +80,7 @@ class ChangeDbTemplateOperationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeDbTemplateOperationRequest.
+        r"""Sets the body of this ChangeDbTemplateOperationRequest.
 
         :param body: The body of this ChangeDbTemplateOperationRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.MaskSwitchRequest`

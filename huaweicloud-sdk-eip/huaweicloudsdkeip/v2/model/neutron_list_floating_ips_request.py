@@ -43,7 +43,7 @@ class NeutronListFloatingIpsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, floating_ip_address=None, router_id=None, port_id=None, fixed_ip_address=None, tenant_id=None, floating_network_id=None):
-        """NeutronListFloatingIpsRequest
+        r"""NeutronListFloatingIpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListFloatingIpsRequest.
+        r"""Gets the limit of this NeutronListFloatingIpsRequest.
 
         每页显示的条目数量。
 
@@ -117,7 +117,7 @@ class NeutronListFloatingIpsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListFloatingIpsRequest.
+        r"""Sets the limit of this NeutronListFloatingIpsRequest.
 
         每页显示的条目数量。
 
@@ -128,7 +128,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListFloatingIpsRequest.
+        r"""Gets the marker of this NeutronListFloatingIpsRequest.
 
         取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400
 
@@ -139,7 +139,7 @@ class NeutronListFloatingIpsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListFloatingIpsRequest.
+        r"""Sets the marker of this NeutronListFloatingIpsRequest.
 
         取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400
 
@@ -150,7 +150,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this NeutronListFloatingIpsRequest.
+        r"""Gets the page_reverse of this NeutronListFloatingIpsRequest.
 
         False/True，是否设置分页的顺序。
 
@@ -161,7 +161,7 @@ class NeutronListFloatingIpsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this NeutronListFloatingIpsRequest.
+        r"""Sets the page_reverse of this NeutronListFloatingIpsRequest.
 
         False/True，是否设置分页的顺序。
 
@@ -172,7 +172,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListFloatingIpsRequest.
+        r"""Gets the id of this NeutronListFloatingIpsRequest.
 
         浮动IP的id。
 
@@ -183,7 +183,7 @@ class NeutronListFloatingIpsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListFloatingIpsRequest.
+        r"""Sets the id of this NeutronListFloatingIpsRequest.
 
         浮动IP的id。
 
@@ -194,7 +194,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this NeutronListFloatingIpsRequest.
+        r"""Gets the floating_ip_address of this NeutronListFloatingIpsRequest.
 
         浮动IP地址。
 
@@ -205,7 +205,7 @@ class NeutronListFloatingIpsRequest:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this NeutronListFloatingIpsRequest.
+        r"""Sets the floating_ip_address of this NeutronListFloatingIpsRequest.
 
         浮动IP地址。
 
@@ -216,7 +216,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def router_id(self):
-        """Gets the router_id of this NeutronListFloatingIpsRequest.
+        r"""Gets the router_id of this NeutronListFloatingIpsRequest.
 
         所属路由器id。
 
@@ -227,7 +227,7 @@ class NeutronListFloatingIpsRequest:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this NeutronListFloatingIpsRequest.
+        r"""Sets the router_id of this NeutronListFloatingIpsRequest.
 
         所属路由器id。
 
@@ -238,7 +238,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this NeutronListFloatingIpsRequest.
+        r"""Gets the port_id of this NeutronListFloatingIpsRequest.
 
         端口id。
 
@@ -249,7 +249,7 @@ class NeutronListFloatingIpsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NeutronListFloatingIpsRequest.
+        r"""Sets the port_id of this NeutronListFloatingIpsRequest.
 
         端口id。
 
@@ -260,7 +260,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def fixed_ip_address(self):
-        """Gets the fixed_ip_address of this NeutronListFloatingIpsRequest.
+        r"""Gets the fixed_ip_address of this NeutronListFloatingIpsRequest.
 
         关联端口的私有IP地址。
 
@@ -271,7 +271,7 @@ class NeutronListFloatingIpsRequest:
 
     @fixed_ip_address.setter
     def fixed_ip_address(self, fixed_ip_address):
-        """Sets the fixed_ip_address of this NeutronListFloatingIpsRequest.
+        r"""Sets the fixed_ip_address of this NeutronListFloatingIpsRequest.
 
         关联端口的私有IP地址。
 
@@ -282,7 +282,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListFloatingIpsRequest.
+        r"""Gets the tenant_id of this NeutronListFloatingIpsRequest.
 
         项目ID。
 
@@ -293,7 +293,7 @@ class NeutronListFloatingIpsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListFloatingIpsRequest.
+        r"""Sets the tenant_id of this NeutronListFloatingIpsRequest.
 
         项目ID。
 
@@ -304,7 +304,7 @@ class NeutronListFloatingIpsRequest:
 
     @property
     def floating_network_id(self):
-        """Gets the floating_network_id of this NeutronListFloatingIpsRequest.
+        r"""Gets the floating_network_id of this NeutronListFloatingIpsRequest.
 
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询
 
@@ -315,7 +315,7 @@ class NeutronListFloatingIpsRequest:
 
     @floating_network_id.setter
     def floating_network_id(self, floating_network_id):
-        """Sets the floating_network_id of this NeutronListFloatingIpsRequest.
+        r"""Sets the floating_network_id of this NeutronListFloatingIpsRequest.
 
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询
 

@@ -29,7 +29,7 @@ class CreateAntiTamperRulesRequestBody:
     }
 
     def __init__(self, hostname=None, url=None, description=None):
-        """CreateAntiTamperRulesRequestBody
+        r"""CreateAntiTamperRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAntiTamperRulesRequestBody:
 
     @property
     def hostname(self):
-        """Gets the hostname of this CreateAntiTamperRulesRequestBody.
+        r"""Gets the hostname of this CreateAntiTamperRulesRequestBody.
 
         防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
 
@@ -66,7 +66,7 @@ class CreateAntiTamperRulesRequestBody:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CreateAntiTamperRulesRequestBody.
+        r"""Sets the hostname of this CreateAntiTamperRulesRequestBody.
 
         防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
 
@@ -77,7 +77,7 @@ class CreateAntiTamperRulesRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this CreateAntiTamperRulesRequestBody.
+        r"""Gets the url of this CreateAntiTamperRulesRequestBody.
 
         防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
@@ -88,7 +88,7 @@ class CreateAntiTamperRulesRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateAntiTamperRulesRequestBody.
+        r"""Sets the url of this CreateAntiTamperRulesRequestBody.
 
         防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
@@ -99,7 +99,7 @@ class CreateAntiTamperRulesRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAntiTamperRulesRequestBody.
+        r"""Gets the description of this CreateAntiTamperRulesRequestBody.
 
         规则描述
 
@@ -110,7 +110,7 @@ class CreateAntiTamperRulesRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAntiTamperRulesRequestBody.
+        r"""Sets the description of this CreateAntiTamperRulesRequestBody.
 
         规则描述
 

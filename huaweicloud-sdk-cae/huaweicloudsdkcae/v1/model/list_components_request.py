@@ -37,7 +37,7 @@ class ListComponentsRequest:
     }
 
     def __init__(self, application_id=None, x_enterprise_project_id=None, x_environment_id=None, limit=None, offset=None, sort_key=None, sort=None):
-        """ListComponentsRequest
+        r"""ListComponentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListComponentsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListComponentsRequest.
+        r"""Gets the application_id of this ListComponentsRequest.
 
         应用ID。
 
@@ -94,7 +94,7 @@ class ListComponentsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListComponentsRequest.
+        r"""Sets the application_id of this ListComponentsRequest.
 
         应用ID。
 
@@ -105,7 +105,7 @@ class ListComponentsRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListComponentsRequest.
+        r"""Gets the x_enterprise_project_id of this ListComponentsRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -116,7 +116,7 @@ class ListComponentsRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListComponentsRequest.
+        r"""Sets the x_enterprise_project_id of this ListComponentsRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -127,7 +127,7 @@ class ListComponentsRequest:
 
     @property
     def x_environment_id(self):
-        """Gets the x_environment_id of this ListComponentsRequest.
+        r"""Gets the x_environment_id of this ListComponentsRequest.
 
         环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
 
@@ -138,7 +138,7 @@ class ListComponentsRequest:
 
     @x_environment_id.setter
     def x_environment_id(self, x_environment_id):
-        """Sets the x_environment_id of this ListComponentsRequest.
+        r"""Sets the x_environment_id of this ListComponentsRequest.
 
         环境ID。      - 获取环境ID，通过《[云应用引擎API参考](https://support.huaweicloud.com/api-cae/ListEnvironments.html)》的“获取环境列表”章节获取环境信息。     - 请求响应成功后在响应体的items数组中的一个元素即为一个环境的信息，其中id字段即是环境ID。
 
@@ -149,7 +149,7 @@ class ListComponentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListComponentsRequest.
+        r"""Gets the limit of this ListComponentsRequest.
 
         限制本次返回结果的条数。
 
@@ -160,7 +160,7 @@ class ListComponentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListComponentsRequest.
+        r"""Sets the limit of this ListComponentsRequest.
 
         限制本次返回结果的条数。
 
@@ -171,7 +171,7 @@ class ListComponentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListComponentsRequest.
+        r"""Gets the offset of this ListComponentsRequest.
 
         分页偏移位，查询起始位置。
 
@@ -182,7 +182,7 @@ class ListComponentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListComponentsRequest.
+        r"""Sets the offset of this ListComponentsRequest.
 
         分页偏移位，查询起始位置。
 
@@ -193,7 +193,7 @@ class ListComponentsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListComponentsRequest.
+        r"""Gets the sort_key of this ListComponentsRequest.
 
         排序字段。
 
@@ -204,7 +204,7 @@ class ListComponentsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListComponentsRequest.
+        r"""Sets the sort_key of this ListComponentsRequest.
 
         排序字段。
 
@@ -215,7 +215,7 @@ class ListComponentsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListComponentsRequest.
+        r"""Gets the sort of this ListComponentsRequest.
 
         升降序规则。
 
@@ -226,7 +226,7 @@ class ListComponentsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListComponentsRequest.
+        r"""Sets the sort of this ListComponentsRequest.
 
         升降序规则。
 

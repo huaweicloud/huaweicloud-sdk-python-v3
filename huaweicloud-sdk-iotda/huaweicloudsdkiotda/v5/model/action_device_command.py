@@ -27,7 +27,7 @@ class ActionDeviceCommand:
     }
 
     def __init__(self, device_id=None, cmd=None):
-        """ActionDeviceCommand
+        r"""ActionDeviceCommand
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ActionDeviceCommand:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ActionDeviceCommand.
+        r"""Gets the device_id of this ActionDeviceCommand.
 
         **参数说明**：下发命令的设备ID。 - 当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。  - 当创建定时规则时，不允许为空。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -60,7 +60,7 @@ class ActionDeviceCommand:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ActionDeviceCommand.
+        r"""Sets the device_id of this ActionDeviceCommand.
 
         **参数说明**：下发命令的设备ID。 - 当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。  - 当创建定时规则时，不允许为空。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -71,7 +71,7 @@ class ActionDeviceCommand:
 
     @property
     def cmd(self):
-        """Gets the cmd of this ActionDeviceCommand.
+        r"""Gets the cmd of this ActionDeviceCommand.
 
         :return: The cmd of this ActionDeviceCommand.
         :rtype: :class:`huaweicloudsdkiotda.v5.Cmd`
@@ -80,7 +80,7 @@ class ActionDeviceCommand:
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this ActionDeviceCommand.
+        r"""Sets the cmd of this ActionDeviceCommand.
 
         :param cmd: The cmd of this ActionDeviceCommand.
         :type cmd: :class:`huaweicloudsdkiotda.v5.Cmd`

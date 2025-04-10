@@ -29,7 +29,7 @@ class UpdateRouteTableReq:
     }
 
     def __init__(self, name=None, description=None, routes=None):
-        """UpdateRouteTableReq
+        r"""UpdateRouteTableReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateRouteTableReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRouteTableReq.
+        r"""Gets the name of this UpdateRouteTableReq.
 
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -68,7 +68,7 @@ class UpdateRouteTableReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRouteTableReq.
+        r"""Sets the name of this UpdateRouteTableReq.
 
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -79,7 +79,7 @@ class UpdateRouteTableReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRouteTableReq.
+        r"""Gets the description of this UpdateRouteTableReq.
 
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -90,7 +90,7 @@ class UpdateRouteTableReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRouteTableReq.
+        r"""Sets the description of this UpdateRouteTableReq.
 
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -101,7 +101,7 @@ class UpdateRouteTableReq:
 
     @property
     def routes(self):
-        """Gets the routes of this UpdateRouteTableReq.
+        r"""Gets the routes of this UpdateRouteTableReq.
 
         :return: The routes of this UpdateRouteTableReq.
         :rtype: :class:`huaweicloudsdkvpc.v2.RouteTableRouteAction`
@@ -110,7 +110,7 @@ class UpdateRouteTableReq:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this UpdateRouteTableReq.
+        r"""Sets the routes of this UpdateRouteTableReq.
 
         :param routes: The routes of this UpdateRouteTableReq.
         :type routes: :class:`huaweicloudsdkvpc.v2.RouteTableRouteAction`

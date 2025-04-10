@@ -27,7 +27,7 @@ class CreateLogicalClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateLogicalClusterRequest
+        r"""CreateLogicalClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLogicalClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateLogicalClusterRequest.
+        r"""Gets the cluster_id of this CreateLogicalClusterRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class CreateLogicalClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateLogicalClusterRequest.
+        r"""Sets the cluster_id of this CreateLogicalClusterRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class CreateLogicalClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogicalClusterRequest.
+        r"""Gets the body of this CreateLogicalClusterRequest.
 
         :return: The body of this CreateLogicalClusterRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterRequestBody`
@@ -80,7 +80,7 @@ class CreateLogicalClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogicalClusterRequest.
+        r"""Sets the body of this CreateLogicalClusterRequest.
 
         :param body: The body of this CreateLogicalClusterRequest.
         :type body: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterRequestBody`

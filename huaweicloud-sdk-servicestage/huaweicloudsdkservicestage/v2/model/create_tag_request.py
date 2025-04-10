@@ -33,7 +33,7 @@ class CreateTagRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, ref=None, body=None):
-        """CreateTagRequest
+        r"""CreateTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateTagRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this CreateTagRequest.
+        r"""Gets the x_repo_auth of this CreateTagRequest.
 
         授权名称。
 
@@ -78,7 +78,7 @@ class CreateTagRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this CreateTagRequest.
+        r"""Sets the x_repo_auth of this CreateTagRequest.
 
         授权名称。
 
@@ -89,7 +89,7 @@ class CreateTagRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateTagRequest.
+        r"""Gets the namespace of this CreateTagRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -100,7 +100,7 @@ class CreateTagRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateTagRequest.
+        r"""Sets the namespace of this CreateTagRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -111,7 +111,7 @@ class CreateTagRequest:
 
     @property
     def project(self):
-        """Gets the project of this CreateTagRequest.
+        r"""Gets the project of this CreateTagRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -122,7 +122,7 @@ class CreateTagRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this CreateTagRequest.
+        r"""Sets the project of this CreateTagRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -133,7 +133,7 @@ class CreateTagRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this CreateTagRequest.
+        r"""Gets the ref of this CreateTagRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -144,7 +144,7 @@ class CreateTagRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this CreateTagRequest.
+        r"""Sets the ref of this CreateTagRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -155,7 +155,7 @@ class CreateTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagRequest.
+        r"""Gets the body of this CreateTagRequest.
 
         :return: The body of this CreateTagRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.TagCreate`
@@ -164,7 +164,7 @@ class CreateTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagRequest.
+        r"""Sets the body of this CreateTagRequest.
 
         :param body: The body of this CreateTagRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.TagCreate`

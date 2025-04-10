@@ -37,7 +37,7 @@ class ResourceResponse:
     }
 
     def __init__(self, resource_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, status=None, expire_time=None, resource_size=None):
-        """ResourceResponse
+        r"""ResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ResourceResponse:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceResponse.
+        r"""Gets the resource_id of this ResourceResponse.
 
         资源id
 
@@ -96,7 +96,7 @@ class ResourceResponse:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceResponse.
+        r"""Sets the resource_id of this ResourceResponse.
 
         资源id
 
@@ -107,7 +107,7 @@ class ResourceResponse:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ResourceResponse.
+        r"""Gets the cloud_service_type of this ResourceResponse.
 
         云服务产品对应的云服务类型
 
@@ -118,7 +118,7 @@ class ResourceResponse:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ResourceResponse.
+        r"""Sets the cloud_service_type of this ResourceResponse.
 
         云服务产品对应的云服务类型
 
@@ -129,7 +129,7 @@ class ResourceResponse:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceResponse.
+        r"""Gets the resource_type of this ResourceResponse.
 
         云服务产品的资源类型   - hws.resource.type.waf：云模式包周期WAF   - hws.resource.type.waf.domain：云模式包周期WAF域名扩展包   - hws.resource.type.waf.bandwidth：云模式包周期WAF带宽扩展包   - hws.resource.type.waf.rule：云模式包周期WAF规则扩展包   - hws.resource.type.waf.instance：独享实例WAF   - hws.resource.type.waf.payperuserequest : Web应用防火墙按需请求   - hws.resource.type.waf.payperusedomain：Web应用防火墙按需域名   - hws.resource.type.waf.payperuserule: Web应用防火墙按需规则
 
@@ -140,7 +140,7 @@ class ResourceResponse:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceResponse.
+        r"""Sets the resource_type of this ResourceResponse.
 
         云服务产品的资源类型   - hws.resource.type.waf：云模式包周期WAF   - hws.resource.type.waf.domain：云模式包周期WAF域名扩展包   - hws.resource.type.waf.bandwidth：云模式包周期WAF带宽扩展包   - hws.resource.type.waf.rule：云模式包周期WAF规则扩展包   - hws.resource.type.waf.instance：独享实例WAF   - hws.resource.type.waf.payperuserequest : Web应用防火墙按需请求   - hws.resource.type.waf.payperusedomain：Web应用防火墙按需域名   - hws.resource.type.waf.payperuserule: Web应用防火墙按需规则
 
@@ -151,7 +151,7 @@ class ResourceResponse:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ResourceResponse.
+        r"""Gets the resource_spec_code of this ResourceResponse.
 
         云服务产品的资源规格
 
@@ -162,7 +162,7 @@ class ResourceResponse:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ResourceResponse.
+        r"""Sets the resource_spec_code of this ResourceResponse.
 
         云服务产品的资源规格
 
@@ -173,7 +173,7 @@ class ResourceResponse:
 
     @property
     def status(self):
-        """Gets the status of this ResourceResponse.
+        r"""Gets the status of this ResourceResponse.
 
         资源状态   - 0：解冻/正常   - 1：冻结   - 2：删除
 
@@ -184,7 +184,7 @@ class ResourceResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResourceResponse.
+        r"""Sets the status of this ResourceResponse.
 
         资源状态   - 0：解冻/正常   - 1：冻结   - 2：删除
 
@@ -195,7 +195,7 @@ class ResourceResponse:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ResourceResponse.
+        r"""Gets the expire_time of this ResourceResponse.
 
         资源到期时间
 
@@ -206,7 +206,7 @@ class ResourceResponse:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ResourceResponse.
+        r"""Sets the expire_time of this ResourceResponse.
 
         资源到期时间
 
@@ -217,7 +217,7 @@ class ResourceResponse:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ResourceResponse.
+        r"""Gets the resource_size of this ResourceResponse.
 
         资源数量
 
@@ -228,7 +228,7 @@ class ResourceResponse:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ResourceResponse.
+        r"""Sets the resource_size of this ResourceResponse.
 
         资源数量
 

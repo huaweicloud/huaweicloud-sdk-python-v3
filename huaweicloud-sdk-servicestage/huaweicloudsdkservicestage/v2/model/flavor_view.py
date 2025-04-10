@@ -39,7 +39,7 @@ class FlavorView:
     }
 
     def __init__(self, flavor_id=None, storage_size=None, num_cpu=None, num_cpu_init=None, memory_size=None, memory_size_init=None, label=None, custom=None):
-        """FlavorView
+        r"""FlavorView
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FlavorView:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this FlavorView.
+        r"""Gets the flavor_id of this FlavorView.
 
         :return: The flavor_id of this FlavorView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -101,7 +101,7 @@ class FlavorView:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this FlavorView.
+        r"""Sets the flavor_id of this FlavorView.
 
         :param flavor_id: The flavor_id of this FlavorView.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -110,7 +110,7 @@ class FlavorView:
 
     @property
     def storage_size(self):
-        """Gets the storage_size of this FlavorView.
+        r"""Gets the storage_size of this FlavorView.
 
         存储大小。
 
@@ -121,7 +121,7 @@ class FlavorView:
 
     @storage_size.setter
     def storage_size(self, storage_size):
-        """Sets the storage_size of this FlavorView.
+        r"""Sets the storage_size of this FlavorView.
 
         存储大小。
 
@@ -132,7 +132,7 @@ class FlavorView:
 
     @property
     def num_cpu(self):
-        """Gets the num_cpu of this FlavorView.
+        r"""Gets the num_cpu of this FlavorView.
 
         CPU限制。
 
@@ -143,7 +143,7 @@ class FlavorView:
 
     @num_cpu.setter
     def num_cpu(self, num_cpu):
-        """Sets the num_cpu of this FlavorView.
+        r"""Sets the num_cpu of this FlavorView.
 
         CPU限制。
 
@@ -154,7 +154,7 @@ class FlavorView:
 
     @property
     def num_cpu_init(self):
-        """Gets the num_cpu_init of this FlavorView.
+        r"""Gets the num_cpu_init of this FlavorView.
 
         CPU初始。
 
@@ -165,7 +165,7 @@ class FlavorView:
 
     @num_cpu_init.setter
     def num_cpu_init(self, num_cpu_init):
-        """Sets the num_cpu_init of this FlavorView.
+        r"""Sets the num_cpu_init of this FlavorView.
 
         CPU初始。
 
@@ -176,7 +176,7 @@ class FlavorView:
 
     @property
     def memory_size(self):
-        """Gets the memory_size of this FlavorView.
+        r"""Gets the memory_size of this FlavorView.
 
         内存限制。
 
@@ -187,7 +187,7 @@ class FlavorView:
 
     @memory_size.setter
     def memory_size(self, memory_size):
-        """Sets the memory_size of this FlavorView.
+        r"""Sets the memory_size of this FlavorView.
 
         内存限制。
 
@@ -198,7 +198,7 @@ class FlavorView:
 
     @property
     def memory_size_init(self):
-        """Gets the memory_size_init of this FlavorView.
+        r"""Gets the memory_size_init of this FlavorView.
 
         内存初始。
 
@@ -209,7 +209,7 @@ class FlavorView:
 
     @memory_size_init.setter
     def memory_size_init(self, memory_size_init):
-        """Sets the memory_size_init of this FlavorView.
+        r"""Sets the memory_size_init of this FlavorView.
 
         内存初始。
 
@@ -220,7 +220,7 @@ class FlavorView:
 
     @property
     def label(self):
-        """Gets the label of this FlavorView.
+        r"""Gets the label of this FlavorView.
 
         展示标签。
 
@@ -231,7 +231,7 @@ class FlavorView:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this FlavorView.
+        r"""Sets the label of this FlavorView.
 
         展示标签。
 
@@ -242,7 +242,7 @@ class FlavorView:
 
     @property
     def custom(self):
-        """Gets the custom of this FlavorView.
+        r"""Gets the custom of this FlavorView.
 
         是否是自定义资源规格。
 
@@ -253,7 +253,7 @@ class FlavorView:
 
     @custom.setter
     def custom(self, custom):
-        """Sets the custom of this FlavorView.
+        r"""Sets the custom of this FlavorView.
 
         是否是自定义资源规格。
 

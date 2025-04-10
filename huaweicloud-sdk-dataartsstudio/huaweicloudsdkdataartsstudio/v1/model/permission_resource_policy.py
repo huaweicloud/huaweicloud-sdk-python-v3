@@ -37,7 +37,7 @@ class PermissionResourcePolicy:
     }
 
     def __init__(self, policy_id=None, policy_name=None, resources=None, members=None, create_time=None, create_user=None, update_time=None):
-        """PermissionResourcePolicy
+        r"""PermissionResourcePolicy
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class PermissionResourcePolicy:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this PermissionResourcePolicy.
+        r"""Gets the policy_id of this PermissionResourcePolicy.
 
         策略id
 
@@ -92,7 +92,7 @@ class PermissionResourcePolicy:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this PermissionResourcePolicy.
+        r"""Sets the policy_id of this PermissionResourcePolicy.
 
         策略id
 
@@ -103,7 +103,7 @@ class PermissionResourcePolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this PermissionResourcePolicy.
+        r"""Gets the policy_name of this PermissionResourcePolicy.
 
         策略名称
 
@@ -114,7 +114,7 @@ class PermissionResourcePolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this PermissionResourcePolicy.
+        r"""Sets the policy_name of this PermissionResourcePolicy.
 
         策略名称
 
@@ -125,7 +125,7 @@ class PermissionResourcePolicy:
 
     @property
     def resources(self):
-        """Gets the resources of this PermissionResourcePolicy.
+        r"""Gets the resources of this PermissionResourcePolicy.
 
         资源对象列表
 
@@ -136,7 +136,7 @@ class PermissionResourcePolicy:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this PermissionResourcePolicy.
+        r"""Sets the resources of this PermissionResourcePolicy.
 
         资源对象列表
 
@@ -147,7 +147,7 @@ class PermissionResourcePolicy:
 
     @property
     def members(self):
-        """Gets the members of this PermissionResourcePolicy.
+        r"""Gets the members of this PermissionResourcePolicy.
 
         成员列表
 
@@ -158,7 +158,7 @@ class PermissionResourcePolicy:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this PermissionResourcePolicy.
+        r"""Sets the members of this PermissionResourcePolicy.
 
         成员列表
 
@@ -169,7 +169,7 @@ class PermissionResourcePolicy:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PermissionResourcePolicy.
+        r"""Gets the create_time of this PermissionResourcePolicy.
 
         创建时间
 
@@ -180,7 +180,7 @@ class PermissionResourcePolicy:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PermissionResourcePolicy.
+        r"""Sets the create_time of this PermissionResourcePolicy.
 
         创建时间
 
@@ -191,7 +191,7 @@ class PermissionResourcePolicy:
 
     @property
     def create_user(self):
-        """Gets the create_user of this PermissionResourcePolicy.
+        r"""Gets the create_user of this PermissionResourcePolicy.
 
         创建用户
 
@@ -202,7 +202,7 @@ class PermissionResourcePolicy:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this PermissionResourcePolicy.
+        r"""Sets the create_user of this PermissionResourcePolicy.
 
         创建用户
 
@@ -213,7 +213,7 @@ class PermissionResourcePolicy:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PermissionResourcePolicy.
+        r"""Gets the update_time of this PermissionResourcePolicy.
 
         修改时间
 
@@ -224,7 +224,7 @@ class PermissionResourcePolicy:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PermissionResourcePolicy.
+        r"""Sets the update_time of this PermissionResourcePolicy.
 
         修改时间
 

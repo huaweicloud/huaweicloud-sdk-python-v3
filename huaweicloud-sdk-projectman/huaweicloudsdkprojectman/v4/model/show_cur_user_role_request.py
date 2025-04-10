@@ -25,7 +25,7 @@ class ShowCurUserRoleRequest:
     }
 
     def __init__(self, project_id=None):
-        """ShowCurUserRoleRequest
+        r"""ShowCurUserRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCurUserRoleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowCurUserRoleRequest.
+        r"""Gets the project_id of this ShowCurUserRoleRequest.
 
         devcloud项目的32位id
 
@@ -53,7 +53,7 @@ class ShowCurUserRoleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowCurUserRoleRequest.
+        r"""Sets the project_id of this ShowCurUserRoleRequest.
 
         devcloud项目的32位id
 

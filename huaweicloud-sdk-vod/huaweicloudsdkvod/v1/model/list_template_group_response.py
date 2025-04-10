@@ -32,7 +32,7 @@ class ListTemplateGroupResponse(SdkResponse):
     }
 
     def __init__(self, template_group_list=None, total=None, error_code=None, error_msg=None):
-        """ListTemplateGroupResponse
+        r"""ListTemplateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @property
     def template_group_list(self):
-        """Gets the template_group_list of this ListTemplateGroupResponse.
+        r"""Gets the template_group_list of this ListTemplateGroupResponse.
 
         模板组信息<br/> 
 
@@ -76,7 +76,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @template_group_list.setter
     def template_group_list(self, template_group_list):
-        """Sets the template_group_list of this ListTemplateGroupResponse.
+        r"""Sets the template_group_list of this ListTemplateGroupResponse.
 
         模板组信息<br/> 
 
@@ -87,7 +87,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTemplateGroupResponse.
+        r"""Gets the total of this ListTemplateGroupResponse.
 
         总记录条数<br/> 
 
@@ -98,7 +98,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTemplateGroupResponse.
+        r"""Sets the total of this ListTemplateGroupResponse.
 
         总记录条数<br/> 
 
@@ -109,7 +109,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListTemplateGroupResponse.
+        r"""Gets the error_code of this ListTemplateGroupResponse.
 
         错误码<br/> 
 
@@ -120,7 +120,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListTemplateGroupResponse.
+        r"""Sets the error_code of this ListTemplateGroupResponse.
 
         错误码<br/> 
 
@@ -131,7 +131,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListTemplateGroupResponse.
+        r"""Gets the error_msg of this ListTemplateGroupResponse.
 
         错误描述<br/> 
 
@@ -142,7 +142,7 @@ class ListTemplateGroupResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListTemplateGroupResponse.
+        r"""Sets the error_msg of this ListTemplateGroupResponse.
 
         错误描述<br/> 
 

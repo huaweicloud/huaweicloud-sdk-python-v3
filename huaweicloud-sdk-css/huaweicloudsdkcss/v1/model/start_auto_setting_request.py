@@ -25,7 +25,7 @@ class StartAutoSettingRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StartAutoSettingRequest
+        r"""StartAutoSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartAutoSettingRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartAutoSettingRequest.
+        r"""Gets the cluster_id of this StartAutoSettingRequest.
 
         指定要备份的集群ID。
 
@@ -53,7 +53,7 @@ class StartAutoSettingRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartAutoSettingRequest.
+        r"""Sets the cluster_id of this StartAutoSettingRequest.
 
         指定要备份的集群ID。
 

@@ -25,7 +25,7 @@ class ParamTypeLimits:
     }
 
     def __init__(self, name=None):
-        """ParamTypeLimits
+        r"""ParamTypeLimits
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ParamTypeLimits:
 
     @property
     def name(self):
-        """Gets the name of this ParamTypeLimits.
+        r"""Gets the name of this ParamTypeLimits.
 
         枚举值可选参数
 
@@ -54,7 +54,7 @@ class ParamTypeLimits:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParamTypeLimits.
+        r"""Sets the name of this ParamTypeLimits.
 
         枚举值可选参数
 

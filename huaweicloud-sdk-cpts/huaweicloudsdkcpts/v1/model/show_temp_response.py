@@ -30,7 +30,7 @@ class ShowTempResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, temp_info=None):
-        """ShowTempResponse
+        r"""ShowTempResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTempResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTempResponse.
+        r"""Gets the code of this ShowTempResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowTempResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTempResponse.
+        r"""Sets the code of this ShowTempResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowTempResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTempResponse.
+        r"""Gets the message of this ShowTempResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ShowTempResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTempResponse.
+        r"""Sets the message of this ShowTempResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ShowTempResponse(SdkResponse):
 
     @property
     def temp_info(self):
-        """Gets the temp_info of this ShowTempResponse.
+        r"""Gets the temp_info of this ShowTempResponse.
 
         :return: The temp_info of this ShowTempResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.TempInfo`
@@ -111,7 +111,7 @@ class ShowTempResponse(SdkResponse):
 
     @temp_info.setter
     def temp_info(self, temp_info):
-        """Sets the temp_info of this ShowTempResponse.
+        r"""Sets the temp_info of this ShowTempResponse.
 
         :param temp_info: The temp_info of this ShowTempResponse.
         :type temp_info: :class:`huaweicloudsdkcpts.v1.TempInfo`

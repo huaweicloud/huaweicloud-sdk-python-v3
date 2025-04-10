@@ -30,7 +30,7 @@ class ListEipsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """ListEipsResponse
+        r"""ListEipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEipsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListEipsResponse.
+        r"""Gets the api_version of this ListEipsResponse.
 
         :return: The api_version of this ListEipsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListEipsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListEipsResponse.
+        r"""Sets the api_version of this ListEipsResponse.
 
         :param api_version: The api_version of this ListEipsResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListEipsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListEipsResponse.
+        r"""Gets the kind of this ListEipsResponse.
 
         :return: The kind of this ListEipsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.EipKindObj`
@@ -85,7 +85,7 @@ class ListEipsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListEipsResponse.
+        r"""Sets the kind of this ListEipsResponse.
 
         :param kind: The kind of this ListEipsResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.EipKindObj`
@@ -94,7 +94,7 @@ class ListEipsResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ListEipsResponse.
+        r"""Gets the spec of this ListEipsResponse.
 
         :return: The spec of this ListEipsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ListEipResponseBodySpec`
@@ -103,7 +103,7 @@ class ListEipsResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ListEipsResponse.
+        r"""Sets the spec of this ListEipsResponse.
 
         :param spec: The spec of this ListEipsResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.ListEipResponseBodySpec`

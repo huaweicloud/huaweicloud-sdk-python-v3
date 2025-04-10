@@ -30,7 +30,7 @@ class CreateDataChannelResponse(SdkResponse):
     }
 
     def __init__(self, platform_type=None, platform_para=None, channel_status=None):
-        """CreateDataChannelResponse
+        r"""CreateDataChannelResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDataChannelResponse(SdkResponse):
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this CreateDataChannelResponse.
+        r"""Gets the platform_type of this CreateDataChannelResponse.
 
         **参数说明**：平台类型。   **取值范围**：  - DRIS：华为路网数字化平台  - LITONG：利通  - ZHONGQIYAN：中汽研
 
@@ -69,7 +69,7 @@ class CreateDataChannelResponse(SdkResponse):
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this CreateDataChannelResponse.
+        r"""Sets the platform_type of this CreateDataChannelResponse.
 
         **参数说明**：平台类型。   **取值范围**：  - DRIS：华为路网数字化平台  - LITONG：利通  - ZHONGQIYAN：中汽研
 
@@ -80,7 +80,7 @@ class CreateDataChannelResponse(SdkResponse):
 
     @property
     def platform_para(self):
-        """Gets the platform_para of this CreateDataChannelResponse.
+        r"""Gets the platform_para of this CreateDataChannelResponse.
 
         :return: The platform_para of this CreateDataChannelResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.PlatformPara`
@@ -89,7 +89,7 @@ class CreateDataChannelResponse(SdkResponse):
 
     @platform_para.setter
     def platform_para(self, platform_para):
-        """Sets the platform_para of this CreateDataChannelResponse.
+        r"""Sets the platform_para of this CreateDataChannelResponse.
 
         :param platform_para: The platform_para of this CreateDataChannelResponse.
         :type platform_para: :class:`huaweicloudsdkdris.v1.PlatformPara`
@@ -98,7 +98,7 @@ class CreateDataChannelResponse(SdkResponse):
 
     @property
     def channel_status(self):
-        """Gets the channel_status of this CreateDataChannelResponse.
+        r"""Gets the channel_status of this CreateDataChannelResponse.
 
         **参数说明**：华为路网数字化平台或第三方业务平台连接状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化
 
@@ -109,7 +109,7 @@ class CreateDataChannelResponse(SdkResponse):
 
     @channel_status.setter
     def channel_status(self, channel_status):
-        """Sets the channel_status of this CreateDataChannelResponse.
+        r"""Sets the channel_status of this CreateDataChannelResponse.
 
         **参数说明**：华为路网数字化平台或第三方业务平台连接状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化
 

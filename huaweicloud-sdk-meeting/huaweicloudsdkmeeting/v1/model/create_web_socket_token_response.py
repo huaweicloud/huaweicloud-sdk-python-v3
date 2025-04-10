@@ -26,7 +26,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
     }
 
     def __init__(self, web_socket_token=None):
-        """CreateWebSocketTokenResponse
+        r"""CreateWebSocketTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
 
     @property
     def web_socket_token(self):
-        """Gets the web_socket_token of this CreateWebSocketTokenResponse.
+        r"""Gets the web_socket_token of this CreateWebSocketTokenResponse.
 
         WebSocket建链Token(有效期1分钟，且一次有效)。
 
@@ -55,7 +55,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
 
     @web_socket_token.setter
     def web_socket_token(self, web_socket_token):
-        """Sets the web_socket_token of this CreateWebSocketTokenResponse.
+        r"""Sets the web_socket_token of this CreateWebSocketTokenResponse.
 
         WebSocket建链Token(有效期1分钟，且一次有效)。
 

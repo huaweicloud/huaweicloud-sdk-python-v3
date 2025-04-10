@@ -28,7 +28,7 @@ class ListUpdateRecordResponse(SdkResponse):
     }
 
     def __init__(self, count=None, records=None):
-        """ListUpdateRecordResponse
+        r"""ListUpdateRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUpdateRecordResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListUpdateRecordResponse.
+        r"""Gets the count of this ListUpdateRecordResponse.
 
         集群升级记录总数
 
@@ -62,7 +62,7 @@ class ListUpdateRecordResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListUpdateRecordResponse.
+        r"""Sets the count of this ListUpdateRecordResponse.
 
         集群升级记录总数
 
@@ -73,7 +73,7 @@ class ListUpdateRecordResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListUpdateRecordResponse.
+        r"""Gets the records of this ListUpdateRecordResponse.
 
         集群升级记录列表
 
@@ -84,7 +84,7 @@ class ListUpdateRecordResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListUpdateRecordResponse.
+        r"""Sets the records of this ListUpdateRecordResponse.
 
         集群升级记录列表
 

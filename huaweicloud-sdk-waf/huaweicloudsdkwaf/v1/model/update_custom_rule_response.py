@@ -50,7 +50,7 @@ class UpdateCustomRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, time=None, start=None, terminal=None, producer=None):
-        """UpdateCustomRuleResponse
+        r"""UpdateCustomRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateCustomRuleResponse.
+        r"""Gets the id of this UpdateCustomRuleResponse.
 
         规则id
 
@@ -139,7 +139,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateCustomRuleResponse.
+        r"""Sets the id of this UpdateCustomRuleResponse.
 
         规则id
 
@@ -150,7 +150,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateCustomRuleResponse.
+        r"""Gets the name of this UpdateCustomRuleResponse.
 
         规则名称
 
@@ -161,7 +161,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCustomRuleResponse.
+        r"""Sets the name of this UpdateCustomRuleResponse.
 
         规则名称
 
@@ -172,7 +172,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateCustomRuleResponse.
+        r"""Gets the policyid of this UpdateCustomRuleResponse.
 
         策略id
 
@@ -183,7 +183,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateCustomRuleResponse.
+        r"""Sets the policyid of this UpdateCustomRuleResponse.
 
         策略id
 
@@ -194,7 +194,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateCustomRuleResponse.
+        r"""Gets the description of this UpdateCustomRuleResponse.
 
         规则描述
 
@@ -205,7 +205,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCustomRuleResponse.
+        r"""Sets the description of this UpdateCustomRuleResponse.
 
         规则描述
 
@@ -216,7 +216,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateCustomRuleResponse.
+        r"""Gets the status of this UpdateCustomRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -227,7 +227,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateCustomRuleResponse.
+        r"""Sets the status of this UpdateCustomRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -238,7 +238,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateCustomRuleResponse.
+        r"""Gets the conditions of this UpdateCustomRuleResponse.
 
         匹配条件列表，匹配条件必须同时满足。
 
@@ -249,7 +249,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateCustomRuleResponse.
+        r"""Sets the conditions of this UpdateCustomRuleResponse.
 
         匹配条件列表，匹配条件必须同时满足。
 
@@ -260,7 +260,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this UpdateCustomRuleResponse.
+        r"""Gets the action of this UpdateCustomRuleResponse.
 
         :return: The action of this UpdateCustomRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -269,7 +269,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateCustomRuleResponse.
+        r"""Sets the action of this UpdateCustomRuleResponse.
 
         :param action: The action of this UpdateCustomRuleResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -278,7 +278,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def action_mode(self):
-        """Gets the action_mode of this UpdateCustomRuleResponse.
+        r"""Gets the action_mode of this UpdateCustomRuleResponse.
 
         预留参数，可忽略。
 
@@ -289,7 +289,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        """Sets the action_mode of this UpdateCustomRuleResponse.
+        r"""Sets the action_mode of this UpdateCustomRuleResponse.
 
         预留参数，可忽略。
 
@@ -300,7 +300,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateCustomRuleResponse.
+        r"""Gets the priority of this UpdateCustomRuleResponse.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -311,7 +311,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateCustomRuleResponse.
+        r"""Sets the priority of this UpdateCustomRuleResponse.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -322,7 +322,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def time(self):
-        """Gets the time of this UpdateCustomRuleResponse.
+        r"""Gets the time of this UpdateCustomRuleResponse.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -333,7 +333,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @time.setter
     def time(self, time):
-        """Sets the time of this UpdateCustomRuleResponse.
+        r"""Sets the time of this UpdateCustomRuleResponse.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -344,7 +344,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def start(self):
-        """Gets the start of this UpdateCustomRuleResponse.
+        r"""Gets the start of this UpdateCustomRuleResponse.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
@@ -355,7 +355,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @start.setter
     def start(self, start):
-        """Sets the start of this UpdateCustomRuleResponse.
+        r"""Sets the start of this UpdateCustomRuleResponse.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
@@ -366,7 +366,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def terminal(self):
-        """Gets the terminal of this UpdateCustomRuleResponse.
+        r"""Gets the terminal of this UpdateCustomRuleResponse.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
@@ -377,7 +377,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this UpdateCustomRuleResponse.
+        r"""Sets the terminal of this UpdateCustomRuleResponse.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
@@ -388,7 +388,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this UpdateCustomRuleResponse.
+        r"""Gets the producer of this UpdateCustomRuleResponse.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -399,7 +399,7 @@ class UpdateCustomRuleResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this UpdateCustomRuleResponse.
+        r"""Sets the producer of this UpdateCustomRuleResponse.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 

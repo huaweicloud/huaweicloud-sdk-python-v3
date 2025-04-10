@@ -41,7 +41,7 @@ class CreateLocation:
     }
 
     def __init__(self, name=None, address=None, zone_code=None, province=None, city=None, district=None, country=None, condition=None, description=None):
-        """CreateLocation
+        r"""CreateLocation
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CreateLocation:
 
     @property
     def name(self):
-        """Gets the name of this CreateLocation.
+        r"""Gets the name of this CreateLocation.
 
         场地名称（已废弃）,该参数不会再持久化存储，新建站点也不会再返回该字段
 
@@ -109,7 +109,7 @@ class CreateLocation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLocation.
+        r"""Sets the name of this CreateLocation.
 
         场地名称（已废弃）,该参数不会再持久化存储，新建站点也不会再返回该字段
 
@@ -120,7 +120,7 @@ class CreateLocation:
 
     @property
     def address(self):
-        """Gets the address of this CreateLocation.
+        r"""Gets the address of this CreateLocation.
 
         场地所在省/自治区/直辖市
 
@@ -131,7 +131,7 @@ class CreateLocation:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CreateLocation.
+        r"""Sets the address of this CreateLocation.
 
         场地所在省/自治区/直辖市
 
@@ -142,7 +142,7 @@ class CreateLocation:
 
     @property
     def zone_code(self):
-        """Gets the zone_code of this CreateLocation.
+        r"""Gets the zone_code of this CreateLocation.
 
         场地所在地区
 
@@ -153,7 +153,7 @@ class CreateLocation:
 
     @zone_code.setter
     def zone_code(self, zone_code):
-        """Sets the zone_code of this CreateLocation.
+        r"""Sets the zone_code of this CreateLocation.
 
         场地所在地区
 
@@ -164,7 +164,7 @@ class CreateLocation:
 
     @property
     def province(self):
-        """Gets the province of this CreateLocation.
+        r"""Gets the province of this CreateLocation.
 
         场地所在省/自治区/直辖市
 
@@ -175,7 +175,7 @@ class CreateLocation:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this CreateLocation.
+        r"""Sets the province of this CreateLocation.
 
         场地所在省/自治区/直辖市
 
@@ -186,7 +186,7 @@ class CreateLocation:
 
     @property
     def city(self):
-        """Gets the city of this CreateLocation.
+        r"""Gets the city of this CreateLocation.
 
         场地所在市/区
 
@@ -197,7 +197,7 @@ class CreateLocation:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this CreateLocation.
+        r"""Sets the city of this CreateLocation.
 
         场地所在市/区
 
@@ -208,7 +208,7 @@ class CreateLocation:
 
     @property
     def district(self):
-        """Gets the district of this CreateLocation.
+        r"""Gets the district of this CreateLocation.
 
         场地所在区/县
 
@@ -219,7 +219,7 @@ class CreateLocation:
 
     @district.setter
     def district(self, district):
-        """Sets the district of this CreateLocation.
+        r"""Sets the district of this CreateLocation.
 
         场地所在区/县
 
@@ -230,7 +230,7 @@ class CreateLocation:
 
     @property
     def country(self):
-        """Gets the country of this CreateLocation.
+        r"""Gets the country of this CreateLocation.
 
         场地所在国家（逐步下线，使用zone_code替代）
 
@@ -241,7 +241,7 @@ class CreateLocation:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this CreateLocation.
+        r"""Sets the country of this CreateLocation.
 
         场地所在国家（逐步下线，使用zone_code替代）
 
@@ -252,7 +252,7 @@ class CreateLocation:
 
     @property
     def condition(self):
-        """Gets the condition of this CreateLocation.
+        r"""Gets the condition of this CreateLocation.
 
         :return: The condition of this CreateLocation.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.Condition`
@@ -261,7 +261,7 @@ class CreateLocation:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this CreateLocation.
+        r"""Sets the condition of this CreateLocation.
 
         :param condition: The condition of this CreateLocation.
         :type condition: :class:`huaweicloudsdkcloudpond.v1.Condition`
@@ -270,7 +270,7 @@ class CreateLocation:
 
     @property
     def description(self):
-        """Gets the description of this CreateLocation.
+        r"""Gets the description of this CreateLocation.
 
         场地描述，最大支持长度为255个字节，不允许包含<>
 
@@ -281,7 +281,7 @@ class CreateLocation:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLocation.
+        r"""Sets the description of this CreateLocation.
 
         场地描述，最大支持长度为255个字节，不允许包含<>
 

@@ -25,7 +25,7 @@ class CreateProjectV4Request:
     }
 
     def __init__(self, body=None):
-        """CreateProjectV4Request
+        r"""CreateProjectV4Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProjectV4Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectV4Request.
+        r"""Gets the body of this CreateProjectV4Request.
 
         :return: The body of this CreateProjectV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4RequestBody`
@@ -52,7 +52,7 @@ class CreateProjectV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectV4Request.
+        r"""Sets the body of this CreateProjectV4Request.
 
         :param body: The body of this CreateProjectV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4RequestBody`

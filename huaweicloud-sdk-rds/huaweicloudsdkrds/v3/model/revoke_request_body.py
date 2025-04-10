@@ -27,7 +27,7 @@ class RevokeRequestBody:
     }
 
     def __init__(self, db_name=None, users=None):
-        """RevokeRequestBody
+        r"""RevokeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RevokeRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this RevokeRequestBody.
+        r"""Gets the db_name of this RevokeRequestBody.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class RevokeRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this RevokeRequestBody.
+        r"""Sets the db_name of this RevokeRequestBody.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class RevokeRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this RevokeRequestBody.
+        r"""Gets the users of this RevokeRequestBody.
 
         解除授权的用户列表。
 
@@ -81,7 +81,7 @@ class RevokeRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RevokeRequestBody.
+        r"""Sets the users of this RevokeRequestBody.
 
         解除授权的用户列表。
 

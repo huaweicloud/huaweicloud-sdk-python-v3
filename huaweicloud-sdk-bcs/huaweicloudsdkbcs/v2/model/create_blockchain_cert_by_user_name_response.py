@@ -24,7 +24,7 @@ class CreateBlockchainCertByUserNameResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """CreateBlockchainCertByUserNameResponse
+        r"""CreateBlockchainCertByUserNameResponse
 
         The model defined in huaweicloud sdk
 

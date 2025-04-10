@@ -29,7 +29,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
     }
 
     def __init__(self, dry_run=None, sub_network_interface=None, count=None):
-        """BatchCreateSubNetworkInterfaceRequestBody
+        r"""BatchCreateSubNetworkInterfaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this BatchCreateSubNetworkInterfaceRequestBody.
+        r"""Gets the dry_run of this BatchCreateSubNetworkInterfaceRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建辅助弹性网卡。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建辅助弹性网卡。
 
@@ -66,7 +66,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this BatchCreateSubNetworkInterfaceRequestBody.
+        r"""Sets the dry_run of this BatchCreateSubNetworkInterfaceRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建辅助弹性网卡。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建辅助弹性网卡。
 
@@ -77,7 +77,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
 
     @property
     def sub_network_interface(self):
-        """Gets the sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
+        r"""Gets the sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
 
         :return: The sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceOption`
@@ -86,7 +86,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
 
     @sub_network_interface.setter
     def sub_network_interface(self, sub_network_interface):
-        """Sets the sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
+        r"""Sets the sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
 
         :param sub_network_interface: The sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
         :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceOption`
@@ -95,7 +95,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
 
     @property
     def count(self):
-        """Gets the count of this BatchCreateSubNetworkInterfaceRequestBody.
+        r"""Gets the count of this BatchCreateSubNetworkInterfaceRequestBody.
 
         批量创建辅助弹性网卡的个数
 
@@ -106,7 +106,7 @@ class BatchCreateSubNetworkInterfaceRequestBody:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchCreateSubNetworkInterfaceRequestBody.
+        r"""Sets the count of this BatchCreateSubNetworkInterfaceRequestBody.
 
         批量创建辅助弹性网卡的个数
 

@@ -25,7 +25,7 @@ class UpdateMemberRequestBody:
     }
 
     def __init__(self, member=None):
-        """UpdateMemberRequestBody
+        r"""UpdateMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMemberRequestBody:
 
     @property
     def member(self):
-        """Gets the member of this UpdateMemberRequestBody.
+        r"""Gets the member of this UpdateMemberRequestBody.
 
         :return: The member of this UpdateMemberRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateMemberOption`
@@ -51,7 +51,7 @@ class UpdateMemberRequestBody:
 
     @member.setter
     def member(self, member):
-        """Sets the member of this UpdateMemberRequestBody.
+        r"""Sets the member of this UpdateMemberRequestBody.
 
         :param member: The member of this UpdateMemberRequestBody.
         :type member: :class:`huaweicloudsdkelb.v3.UpdateMemberOption`

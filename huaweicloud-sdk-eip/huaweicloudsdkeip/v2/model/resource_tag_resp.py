@@ -27,7 +27,7 @@ class ResourceTagResp:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTagResp
+        r"""ResourceTagResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceTagResp:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTagResp.
+        r"""Gets the key of this ResourceTagResp.
 
         键。同一资源的key值不能重复。
 
@@ -61,7 +61,7 @@ class ResourceTagResp:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTagResp.
+        r"""Sets the key of this ResourceTagResp.
 
         键。同一资源的key值不能重复。
 
@@ -72,7 +72,7 @@ class ResourceTagResp:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTagResp.
+        r"""Gets the value of this ResourceTagResp.
 
         值列表。
 
@@ -83,7 +83,7 @@ class ResourceTagResp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTagResp.
+        r"""Sets the value of this ResourceTagResp.
 
         值列表。
 

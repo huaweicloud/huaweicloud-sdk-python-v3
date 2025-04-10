@@ -29,7 +29,7 @@ class UpdateProjectModuleRequestBody:
     }
 
     def __init__(self, description=None, module_name=None, owner=None):
-        """UpdateProjectModuleRequestBody
+        r"""UpdateProjectModuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateProjectModuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProjectModuleRequestBody.
+        r"""Gets the description of this UpdateProjectModuleRequestBody.
 
         模块描述
 
@@ -66,7 +66,7 @@ class UpdateProjectModuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProjectModuleRequestBody.
+        r"""Sets the description of this UpdateProjectModuleRequestBody.
 
         模块描述
 
@@ -77,7 +77,7 @@ class UpdateProjectModuleRequestBody:
 
     @property
     def module_name(self):
-        """Gets the module_name of this UpdateProjectModuleRequestBody.
+        r"""Gets the module_name of this UpdateProjectModuleRequestBody.
 
         模块名称
 
@@ -88,7 +88,7 @@ class UpdateProjectModuleRequestBody:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this UpdateProjectModuleRequestBody.
+        r"""Sets the module_name of this UpdateProjectModuleRequestBody.
 
         模块名称
 
@@ -99,7 +99,7 @@ class UpdateProjectModuleRequestBody:
 
     @property
     def owner(self):
-        """Gets the owner of this UpdateProjectModuleRequestBody.
+        r"""Gets the owner of this UpdateProjectModuleRequestBody.
 
         :return: The owner of this UpdateProjectModuleRequestBody.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UserRequest`
@@ -108,7 +108,7 @@ class UpdateProjectModuleRequestBody:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UpdateProjectModuleRequestBody.
+        r"""Sets the owner of this UpdateProjectModuleRequestBody.
 
         :param owner: The owner of this UpdateProjectModuleRequestBody.
         :type owner: :class:`huaweicloudsdkprojectman.v4.UserRequest`

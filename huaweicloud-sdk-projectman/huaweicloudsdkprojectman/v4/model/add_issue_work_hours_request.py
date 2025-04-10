@@ -29,7 +29,7 @@ class AddIssueWorkHoursRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, body=None):
-        """AddIssueWorkHoursRequest
+        r"""AddIssueWorkHoursRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddIssueWorkHoursRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AddIssueWorkHoursRequest.
+        r"""Gets the project_id of this AddIssueWorkHoursRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class AddIssueWorkHoursRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AddIssueWorkHoursRequest.
+        r"""Sets the project_id of this AddIssueWorkHoursRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class AddIssueWorkHoursRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this AddIssueWorkHoursRequest.
+        r"""Gets the issue_id of this AddIssueWorkHoursRequest.
 
         工作项id
 
@@ -88,7 +88,7 @@ class AddIssueWorkHoursRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this AddIssueWorkHoursRequest.
+        r"""Sets the issue_id of this AddIssueWorkHoursRequest.
 
         工作项id
 
@@ -99,7 +99,7 @@ class AddIssueWorkHoursRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddIssueWorkHoursRequest.
+        r"""Gets the body of this AddIssueWorkHoursRequest.
 
         :return: The body of this AddIssueWorkHoursRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddIssueWorkHoursRequestBody`
@@ -108,7 +108,7 @@ class AddIssueWorkHoursRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddIssueWorkHoursRequest.
+        r"""Sets the body of this AddIssueWorkHoursRequest.
 
         :param body: The body of this AddIssueWorkHoursRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.AddIssueWorkHoursRequestBody`

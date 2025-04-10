@@ -23,7 +23,7 @@ class ShowCertificatePrivateKeyEchoRequest:
     }
 
     def __init__(self):
-        """ShowCertificatePrivateKeyEchoRequest
+        r"""ShowCertificatePrivateKeyEchoRequest
 
         The model defined in huaweicloud sdk
 

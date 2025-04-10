@@ -29,7 +29,7 @@ class PointScalingDTO:
     }
 
     def __init__(self, ratio=None, base=None, accuracy=None):
-        """PointScalingDTO
+        r"""PointScalingDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PointScalingDTO:
 
     @property
     def ratio(self):
-        """Gets the ratio of this PointScalingDTO.
+        r"""Gets the ratio of this PointScalingDTO.
 
         缩放的倍率
 
@@ -66,7 +66,7 @@ class PointScalingDTO:
 
     @ratio.setter
     def ratio(self, ratio):
-        """Sets the ratio of this PointScalingDTO.
+        r"""Sets the ratio of this PointScalingDTO.
 
         缩放的倍率
 
@@ -77,7 +77,7 @@ class PointScalingDTO:
 
     @property
     def base(self):
-        """Gets the base of this PointScalingDTO.
+        r"""Gets the base of this PointScalingDTO.
 
         基准值
 
@@ -88,7 +88,7 @@ class PointScalingDTO:
 
     @base.setter
     def base(self, base):
-        """Sets the base of this PointScalingDTO.
+        r"""Sets the base of this PointScalingDTO.
 
         基准值
 
@@ -99,7 +99,7 @@ class PointScalingDTO:
 
     @property
     def accuracy(self):
-        """Gets the accuracy of this PointScalingDTO.
+        r"""Gets the accuracy of this PointScalingDTO.
 
         缩放后结果的精度，精确到小数点后几位,-1表示全部保留，0表示只保留整数位
 
@@ -110,7 +110,7 @@ class PointScalingDTO:
 
     @accuracy.setter
     def accuracy(self, accuracy):
-        """Sets the accuracy of this PointScalingDTO.
+        r"""Sets the accuracy of this PointScalingDTO.
 
         缩放后结果的精度，精确到小数点后几位,-1表示全部保留，0表示只保留整数位
 

@@ -26,7 +26,7 @@ class UpdateUserResponse(SdkResponse):
     }
 
     def __init__(self, name=None):
-        """UpdateUserResponse
+        r"""UpdateUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateUserResponse.
+        r"""Gets the name of this UpdateUserResponse.
 
         DDM实例帐号名称。
 
@@ -55,7 +55,7 @@ class UpdateUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateUserResponse.
+        r"""Sets the name of this UpdateUserResponse.
 
         DDM实例帐号名称。
 

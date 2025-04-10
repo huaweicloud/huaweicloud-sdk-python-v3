@@ -25,7 +25,7 @@ class Node:
     }
 
     def __init__(self, node=None):
-        """Node
+        r"""Node
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Node:
 
     @property
     def node(self):
-        """Gets the node of this Node.
+        r"""Gets the node of this Node.
 
         :return: The node of this Node.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNode`
@@ -51,7 +51,7 @@ class Node:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this Node.
+        r"""Sets the node of this Node.
 
         :param node: The node of this Node.
         :type node: :class:`huaweicloudsdkief.v1.EdgeNode`

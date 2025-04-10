@@ -29,7 +29,7 @@ class MultiViewModelMasterIdModifierDTO:
     }
 
     def __init__(self, master_id=None, modifier=None, item=None):
-        """MultiViewModelMasterIdModifierDTO
+        r"""MultiViewModelMasterIdModifierDTO
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class MultiViewModelMasterIdModifierDTO:
 
     @property
     def master_id(self):
-        """Gets the master_id of this MultiViewModelMasterIdModifierDTO.
+        r"""Gets the master_id of this MultiViewModelMasterIdModifierDTO.
 
         主对象ID。
 
@@ -67,7 +67,7 @@ class MultiViewModelMasterIdModifierDTO:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this MultiViewModelMasterIdModifierDTO.
+        r"""Sets the master_id of this MultiViewModelMasterIdModifierDTO.
 
         主对象ID。
 
@@ -78,7 +78,7 @@ class MultiViewModelMasterIdModifierDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this MultiViewModelMasterIdModifierDTO.
+        r"""Gets the modifier of this MultiViewModelMasterIdModifierDTO.
 
         处理人。
 
@@ -89,7 +89,7 @@ class MultiViewModelMasterIdModifierDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this MultiViewModelMasterIdModifierDTO.
+        r"""Sets the modifier of this MultiViewModelMasterIdModifierDTO.
 
         处理人。
 
@@ -100,7 +100,7 @@ class MultiViewModelMasterIdModifierDTO:
 
     @property
     def item(self):
-        """Gets the item of this MultiViewModelMasterIdModifierDTO.
+        r"""Gets the item of this MultiViewModelMasterIdModifierDTO.
 
         :return: The item of this MultiViewModelMasterIdModifierDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -109,7 +109,7 @@ class MultiViewModelMasterIdModifierDTO:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this MultiViewModelMasterIdModifierDTO.
+        r"""Sets the item of this MultiViewModelMasterIdModifierDTO.
 
         :param item: The item of this MultiViewModelMasterIdModifierDTO.
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`

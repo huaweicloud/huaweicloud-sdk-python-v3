@@ -110,7 +110,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     }
 
     def __init__(self, templated=None, created_at=None, updated_at=None, id=None, tenant_id=None, job_id=None, job_name=None, input_id=None, output_id=None, start_time=None, end_time=None, cluster_id=None, engine_job_id=None, return_code=None, is_public=None, is_protected=None, group_id=None, jar_path=None, input=None, output=None, job_log=None, job_type=None, file_action=None, arguments=None, hql=None, job_state=None, job_final_status=None, hive_script_path=None, create_by=None, finished_step=None, job_main_id=None, job_step_id=None, postpone_at=None, step_name=None, step_num=None, task_num=None, update_by=None, credentials=None, user_id=None, job_configs=None, extra=None, data_source_urls=None, info=None):
-        """CreateAndExecuteJobResponse
+        r"""CreateAndExecuteJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -338,7 +338,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def templated(self):
-        """Gets the templated of this CreateAndExecuteJobResponse.
+        r"""Gets the templated of this CreateAndExecuteJobResponse.
 
         作业执行对象是否由作业模板生成。
 
@@ -349,7 +349,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @templated.setter
     def templated(self, templated):
-        """Sets the templated of this CreateAndExecuteJobResponse.
+        r"""Sets the templated of this CreateAndExecuteJobResponse.
 
         作业执行对象是否由作业模板生成。
 
@@ -360,7 +360,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateAndExecuteJobResponse.
+        r"""Gets the created_at of this CreateAndExecuteJobResponse.
 
         作业创建时间，十位时间戳。
 
@@ -371,7 +371,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateAndExecuteJobResponse.
+        r"""Sets the created_at of this CreateAndExecuteJobResponse.
 
         作业创建时间，十位时间戳。
 
@@ -382,7 +382,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateAndExecuteJobResponse.
+        r"""Gets the updated_at of this CreateAndExecuteJobResponse.
 
         作业更新时间，十位时间戳。
 
@@ -393,7 +393,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateAndExecuteJobResponse.
+        r"""Sets the updated_at of this CreateAndExecuteJobResponse.
 
         作业更新时间，十位时间戳。
 
@@ -404,7 +404,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAndExecuteJobResponse.
+        r"""Gets the id of this CreateAndExecuteJobResponse.
 
         作业ID。
 
@@ -415,7 +415,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAndExecuteJobResponse.
+        r"""Sets the id of this CreateAndExecuteJobResponse.
 
         作业ID。
 
@@ -426,7 +426,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateAndExecuteJobResponse.
+        r"""Gets the tenant_id of this CreateAndExecuteJobResponse.
 
         项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
 
@@ -437,7 +437,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateAndExecuteJobResponse.
+        r"""Sets the tenant_id of this CreateAndExecuteJobResponse.
 
         项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
 
@@ -448,7 +448,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateAndExecuteJobResponse.
+        r"""Gets the job_id of this CreateAndExecuteJobResponse.
 
         作业应用ID。
 
@@ -459,7 +459,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateAndExecuteJobResponse.
+        r"""Sets the job_id of this CreateAndExecuteJobResponse.
 
         作业应用ID。
 
@@ -470,7 +470,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this CreateAndExecuteJobResponse.
+        r"""Gets the job_name of this CreateAndExecuteJobResponse.
 
         作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  说明： 不同作业的名称允许相同，但不建议设置相同。
 
@@ -481,7 +481,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this CreateAndExecuteJobResponse.
+        r"""Sets the job_name of this CreateAndExecuteJobResponse.
 
         作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  说明： 不同作业的名称允许相同，但不建议设置相同。
 
@@ -492,7 +492,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def input_id(self):
-        """Gets the input_id of this CreateAndExecuteJobResponse.
+        r"""Gets the input_id of this CreateAndExecuteJobResponse.
 
         数据输入ID。
 
@@ -503,7 +503,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @input_id.setter
     def input_id(self, input_id):
-        """Sets the input_id of this CreateAndExecuteJobResponse.
+        r"""Sets the input_id of this CreateAndExecuteJobResponse.
 
         数据输入ID。
 
@@ -514,7 +514,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def output_id(self):
-        """Gets the output_id of this CreateAndExecuteJobResponse.
+        r"""Gets the output_id of this CreateAndExecuteJobResponse.
 
         数据输出ID。
 
@@ -525,7 +525,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @output_id.setter
     def output_id(self, output_id):
-        """Sets the output_id of this CreateAndExecuteJobResponse.
+        r"""Sets the output_id of this CreateAndExecuteJobResponse.
 
         数据输出ID。
 
@@ -536,7 +536,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateAndExecuteJobResponse.
+        r"""Gets the start_time of this CreateAndExecuteJobResponse.
 
         作业执行开始时间，十位时间戳。
 
@@ -547,7 +547,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateAndExecuteJobResponse.
+        r"""Sets the start_time of this CreateAndExecuteJobResponse.
 
         作业执行开始时间，十位时间戳。
 
@@ -558,7 +558,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateAndExecuteJobResponse.
+        r"""Gets the end_time of this CreateAndExecuteJobResponse.
 
         作业执行结束时间，十位时间戳。
 
@@ -569,7 +569,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateAndExecuteJobResponse.
+        r"""Sets the end_time of this CreateAndExecuteJobResponse.
 
         作业执行结束时间，十位时间戳。
 
@@ -580,7 +580,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAndExecuteJobResponse.
+        r"""Gets the cluster_id of this CreateAndExecuteJobResponse.
 
         集群ID。
 
@@ -591,7 +591,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAndExecuteJobResponse.
+        r"""Sets the cluster_id of this CreateAndExecuteJobResponse.
 
         集群ID。
 
@@ -602,7 +602,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def engine_job_id(self):
-        """Gets the engine_job_id of this CreateAndExecuteJobResponse.
+        r"""Gets the engine_job_id of this CreateAndExecuteJobResponse.
 
         Oozie工作流ID。
 
@@ -613,7 +613,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @engine_job_id.setter
     def engine_job_id(self, engine_job_id):
-        """Sets the engine_job_id of this CreateAndExecuteJobResponse.
+        r"""Sets the engine_job_id of this CreateAndExecuteJobResponse.
 
         Oozie工作流ID。
 
@@ -624,7 +624,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def return_code(self):
-        """Gets the return_code of this CreateAndExecuteJobResponse.
+        r"""Gets the return_code of this CreateAndExecuteJobResponse.
 
         运行结果返回码。
 
@@ -635,7 +635,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @return_code.setter
     def return_code(self, return_code):
-        """Sets the return_code of this CreateAndExecuteJobResponse.
+        r"""Sets the return_code of this CreateAndExecuteJobResponse.
 
         运行结果返回码。
 
@@ -646,7 +646,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def is_public(self):
-        """Gets the is_public of this CreateAndExecuteJobResponse.
+        r"""Gets the is_public of this CreateAndExecuteJobResponse.
 
         是否公开。 当前版本不支持该功能。
 
@@ -657,7 +657,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this CreateAndExecuteJobResponse.
+        r"""Sets the is_public of this CreateAndExecuteJobResponse.
 
         是否公开。 当前版本不支持该功能。
 
@@ -668,7 +668,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def is_protected(self):
-        """Gets the is_protected of this CreateAndExecuteJobResponse.
+        r"""Gets the is_protected of this CreateAndExecuteJobResponse.
 
         是否受保护。 当前版本不支持该功能。
 
@@ -679,7 +679,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @is_protected.setter
     def is_protected(self, is_protected):
-        """Sets the is_protected of this CreateAndExecuteJobResponse.
+        r"""Sets the is_protected of this CreateAndExecuteJobResponse.
 
         是否受保护。 当前版本不支持该功能。
 
@@ -690,7 +690,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateAndExecuteJobResponse.
+        r"""Gets the group_id of this CreateAndExecuteJobResponse.
 
         作业执行组ID。
 
@@ -701,7 +701,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateAndExecuteJobResponse.
+        r"""Sets the group_id of this CreateAndExecuteJobResponse.
 
         作业执行组ID。
 
@@ -712,7 +712,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def jar_path(self):
-        """Gets the jar_path of this CreateAndExecuteJobResponse.
+        r"""Gets the jar_path of this CreateAndExecuteJobResponse.
 
         执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
@@ -723,7 +723,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @jar_path.setter
     def jar_path(self, jar_path):
-        """Sets the jar_path of this CreateAndExecuteJobResponse.
+        r"""Sets the jar_path of this CreateAndExecuteJobResponse.
 
         执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
@@ -734,7 +734,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def input(self):
-        """Gets the input of this CreateAndExecuteJobResponse.
+        r"""Gets the input of this CreateAndExecuteJobResponse.
 
         数据输入地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，OBS路径不支持KMS加密的文件或程序。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -745,7 +745,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateAndExecuteJobResponse.
+        r"""Sets the input of this CreateAndExecuteJobResponse.
 
         数据输入地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，OBS路径不支持KMS加密的文件或程序。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -756,7 +756,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this CreateAndExecuteJobResponse.
+        r"""Gets the output of this CreateAndExecuteJobResponse.
 
         数据输出地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，如果该路径不存在，系统会自动创建。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -767,7 +767,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateAndExecuteJobResponse.
+        r"""Sets the output of this CreateAndExecuteJobResponse.
 
         数据输出地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，如果该路径不存在，系统会自动创建。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -778,7 +778,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_log(self):
-        """Gets the job_log of this CreateAndExecuteJobResponse.
+        r"""Gets the job_log of this CreateAndExecuteJobResponse.
 
         作业日志存储地址，该日志信息记录作业运行状态。必须以“/”或“s3a://”开头，请配置为正确的OBS路径。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -789,7 +789,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_log.setter
     def job_log(self, job_log):
-        """Sets the job_log of this CreateAndExecuteJobResponse.
+        r"""Sets the job_log of this CreateAndExecuteJobResponse.
 
         作业日志存储地址，该日志信息记录作业运行状态。必须以“/”或“s3a://”开头，请配置为正确的OBS路径。  最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -800,7 +800,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateAndExecuteJobResponse.
+        r"""Gets the job_type of this CreateAndExecuteJobResponse.
 
         作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（该接口当前不支持）  说明： 只有包含Spark和Hive组件的集群才能新增Spark和Hive类型的作业。
 
@@ -811,7 +811,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateAndExecuteJobResponse.
+        r"""Sets the job_type of this CreateAndExecuteJobResponse.
 
         作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（该接口当前不支持）  说明： 只有包含Spark和Hive组件的集群才能新增Spark和Hive类型的作业。
 
@@ -822,7 +822,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def file_action(self):
-        """Gets the file_action of this CreateAndExecuteJobResponse.
+        r"""Gets the file_action of this CreateAndExecuteJobResponse.
 
         文件操作类型，包括：  - export：从HDFS导出数据至OBS  - import：从OBS导入数据至HDFS
 
@@ -833,7 +833,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @file_action.setter
     def file_action(self, file_action):
-        """Sets the file_action of this CreateAndExecuteJobResponse.
+        r"""Sets the file_action of this CreateAndExecuteJobResponse.
 
         文件操作类型，包括：  - export：从HDFS导出数据至OBS  - import：从OBS导入数据至HDFS
 
@@ -844,7 +844,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def arguments(self):
-        """Gets the arguments of this CreateAndExecuteJobResponse.
+        r"""Gets the arguments of this CreateAndExecuteJobResponse.
 
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$!\\\"\\特殊字符，可为空。 说明： 用户输入带有敏感信息（如登录密码）的参数时，可通过在参数名前添加“@”的方式，为该参数值加密，以防止敏感信息被明文形式持久化。在查看作业信息时，敏感信息显示为“*”。 例如：username=admin @password=admin_123
 
@@ -855,7 +855,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this CreateAndExecuteJobResponse.
+        r"""Sets the arguments of this CreateAndExecuteJobResponse.
 
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$!\\\"\\特殊字符，可为空。 说明： 用户输入带有敏感信息（如登录密码）的参数时，可通过在参数名前添加“@”的方式，为该参数值加密，以防止敏感信息被明文形式持久化。在查看作业信息时，敏感信息显示为“*”。 例如：username=admin @password=admin_123
 
@@ -866,7 +866,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def hql(self):
-        """Gets the hql of this CreateAndExecuteJobResponse.
+        r"""Gets the hql of this CreateAndExecuteJobResponse.
 
         Hive&Spark Sql语句
 
@@ -877,7 +877,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @hql.setter
     def hql(self, hql):
-        """Sets the hql of this CreateAndExecuteJobResponse.
+        r"""Sets the hql of this CreateAndExecuteJobResponse.
 
         Hive&Spark Sql语句
 
@@ -888,7 +888,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_state(self):
-        """Gets the job_state of this CreateAndExecuteJobResponse.
+        r"""Gets the job_state of this CreateAndExecuteJobResponse.
 
         作业状态码。  - 1：Terminated - 2：Starting - 3：Running - 4：Completed - 5：Abnormal - 6：Error
 
@@ -899,7 +899,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this CreateAndExecuteJobResponse.
+        r"""Sets the job_state of this CreateAndExecuteJobResponse.
 
         作业状态码。  - 1：Terminated - 2：Starting - 3：Running - 4：Completed - 5：Abnormal - 6：Error
 
@@ -910,7 +910,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_final_status(self):
-        """Gets the job_final_status of this CreateAndExecuteJobResponse.
+        r"""Gets the job_final_status of this CreateAndExecuteJobResponse.
 
         作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
 
@@ -921,7 +921,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_final_status.setter
     def job_final_status(self, job_final_status):
-        """Sets the job_final_status of this CreateAndExecuteJobResponse.
+        r"""Sets the job_final_status of this CreateAndExecuteJobResponse.
 
         作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
 
@@ -932,7 +932,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def hive_script_path(self):
-        """Gets the hive_script_path of this CreateAndExecuteJobResponse.
+        r"""Gets the hive_script_path of this CreateAndExecuteJobResponse.
 
         sql程序路径，仅Spark Script和Hive Script作业需要使用此参数。需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。 - 需要以“/”或“s3a://”开头，OBS路径不支持KMS加密的文件或程序。 - 需要以“.sql”结尾，sql不区分大小写。
 
@@ -943,7 +943,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @hive_script_path.setter
     def hive_script_path(self, hive_script_path):
-        """Sets the hive_script_path of this CreateAndExecuteJobResponse.
+        r"""Sets the hive_script_path of this CreateAndExecuteJobResponse.
 
         sql程序路径，仅Spark Script和Hive Script作业需要使用此参数。需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。 - 需要以“/”或“s3a://”开头，OBS路径不支持KMS加密的文件或程序。 - 需要以“.sql”结尾，sql不区分大小写。
 
@@ -954,7 +954,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def create_by(self):
-        """Gets the create_by of this CreateAndExecuteJobResponse.
+        r"""Gets the create_by of this CreateAndExecuteJobResponse.
 
         创建作业的用户ID。  为兼容历史版本，保留此参数。
 
@@ -965,7 +965,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CreateAndExecuteJobResponse.
+        r"""Sets the create_by of this CreateAndExecuteJobResponse.
 
         创建作业的用户ID。  为兼容历史版本，保留此参数。
 
@@ -976,7 +976,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def finished_step(self):
-        """Gets the finished_step of this CreateAndExecuteJobResponse.
+        r"""Gets the finished_step of this CreateAndExecuteJobResponse.
 
         当前已完成的步骤数。  为兼容历史版本，保留此参数。
 
@@ -987,7 +987,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @finished_step.setter
     def finished_step(self, finished_step):
-        """Sets the finished_step of this CreateAndExecuteJobResponse.
+        r"""Sets the finished_step of this CreateAndExecuteJobResponse.
 
         当前已完成的步骤数。  为兼容历史版本，保留此参数。
 
@@ -998,7 +998,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_main_id(self):
-        """Gets the job_main_id of this CreateAndExecuteJobResponse.
+        r"""Gets the job_main_id of this CreateAndExecuteJobResponse.
 
         作业主ID。  为兼容历史版本，保留此参数。
 
@@ -1009,7 +1009,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_main_id.setter
     def job_main_id(self, job_main_id):
-        """Sets the job_main_id of this CreateAndExecuteJobResponse.
+        r"""Sets the job_main_id of this CreateAndExecuteJobResponse.
 
         作业主ID。  为兼容历史版本，保留此参数。
 
@@ -1020,7 +1020,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_step_id(self):
-        """Gets the job_step_id of this CreateAndExecuteJobResponse.
+        r"""Gets the job_step_id of this CreateAndExecuteJobResponse.
 
         作业步骤ID。  为兼容历史版本，保留此参数。
 
@@ -1031,7 +1031,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_step_id.setter
     def job_step_id(self, job_step_id):
-        """Sets the job_step_id of this CreateAndExecuteJobResponse.
+        r"""Sets the job_step_id of this CreateAndExecuteJobResponse.
 
         作业步骤ID。  为兼容历史版本，保留此参数。
 
@@ -1042,7 +1042,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def postpone_at(self):
-        """Gets the postpone_at of this CreateAndExecuteJobResponse.
+        r"""Gets the postpone_at of this CreateAndExecuteJobResponse.
 
         延迟时间，十位时间戳。  为兼容历史版本，保留此参数。
 
@@ -1053,7 +1053,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @postpone_at.setter
     def postpone_at(self, postpone_at):
-        """Sets the postpone_at of this CreateAndExecuteJobResponse.
+        r"""Sets the postpone_at of this CreateAndExecuteJobResponse.
 
         延迟时间，十位时间戳。  为兼容历史版本，保留此参数。
 
@@ -1064,7 +1064,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def step_name(self):
-        """Gets the step_name of this CreateAndExecuteJobResponse.
+        r"""Gets the step_name of this CreateAndExecuteJobResponse.
 
         作业步骤名。  为兼容历史版本，保留此参数。
 
@@ -1075,7 +1075,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @step_name.setter
     def step_name(self, step_name):
-        """Sets the step_name of this CreateAndExecuteJobResponse.
+        r"""Sets the step_name of this CreateAndExecuteJobResponse.
 
         作业步骤名。  为兼容历史版本，保留此参数。
 
@@ -1086,7 +1086,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def step_num(self):
-        """Gets the step_num of this CreateAndExecuteJobResponse.
+        r"""Gets the step_num of this CreateAndExecuteJobResponse.
 
         步骤数量  为兼容历史版本，保留此参数。
 
@@ -1097,7 +1097,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @step_num.setter
     def step_num(self, step_num):
-        """Sets the step_num of this CreateAndExecuteJobResponse.
+        r"""Sets the step_num of this CreateAndExecuteJobResponse.
 
         步骤数量  为兼容历史版本，保留此参数。
 
@@ -1108,7 +1108,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def task_num(self):
-        """Gets the task_num of this CreateAndExecuteJobResponse.
+        r"""Gets the task_num of this CreateAndExecuteJobResponse.
 
         任务数量。为兼容历史版本，保留此参数。
 
@@ -1119,7 +1119,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @task_num.setter
     def task_num(self, task_num):
-        """Sets the task_num of this CreateAndExecuteJobResponse.
+        r"""Sets the task_num of this CreateAndExecuteJobResponse.
 
         任务数量。为兼容历史版本，保留此参数。
 
@@ -1130,7 +1130,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def update_by(self):
-        """Gets the update_by of this CreateAndExecuteJobResponse.
+        r"""Gets the update_by of this CreateAndExecuteJobResponse.
 
         更新作业的用户ID。
 
@@ -1141,7 +1141,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this CreateAndExecuteJobResponse.
+        r"""Sets the update_by of this CreateAndExecuteJobResponse.
 
         更新作业的用户ID。
 
@@ -1152,7 +1152,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def credentials(self):
-        """Gets the credentials of this CreateAndExecuteJobResponse.
+        r"""Gets the credentials of this CreateAndExecuteJobResponse.
 
         令牌，当前版本不支持。
 
@@ -1163,7 +1163,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @credentials.setter
     def credentials(self, credentials):
-        """Sets the credentials of this CreateAndExecuteJobResponse.
+        r"""Sets the credentials of this CreateAndExecuteJobResponse.
 
         令牌，当前版本不支持。
 
@@ -1174,7 +1174,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateAndExecuteJobResponse.
+        r"""Gets the user_id of this CreateAndExecuteJobResponse.
 
         创建作业的用户ID。  历史版本兼容，不再使用。
 
@@ -1185,7 +1185,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateAndExecuteJobResponse.
+        r"""Sets the user_id of this CreateAndExecuteJobResponse.
 
         创建作业的用户ID。  历史版本兼容，不再使用。
 
@@ -1196,7 +1196,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def job_configs(self):
-        """Gets the job_configs of this CreateAndExecuteJobResponse.
+        r"""Gets the job_configs of this CreateAndExecuteJobResponse.
 
         键值对集合，用于保存作业运行配置。
 
@@ -1207,7 +1207,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @job_configs.setter
     def job_configs(self, job_configs):
-        """Sets the job_configs of this CreateAndExecuteJobResponse.
+        r"""Sets the job_configs of this CreateAndExecuteJobResponse.
 
         键值对集合，用于保存作业运行配置。
 
@@ -1218,7 +1218,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def extra(self):
-        """Gets the extra of this CreateAndExecuteJobResponse.
+        r"""Gets the extra of this CreateAndExecuteJobResponse.
 
         认证信息，当前版本不支持。
 
@@ -1229,7 +1229,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @extra.setter
     def extra(self, extra):
-        """Sets the extra of this CreateAndExecuteJobResponse.
+        r"""Sets the extra of this CreateAndExecuteJobResponse.
 
         认证信息，当前版本不支持。
 
@@ -1240,7 +1240,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def data_source_urls(self):
-        """Gets the data_source_urls of this CreateAndExecuteJobResponse.
+        r"""Gets the data_source_urls of this CreateAndExecuteJobResponse.
 
         数据源URL。
 
@@ -1251,7 +1251,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @data_source_urls.setter
     def data_source_urls(self, data_source_urls):
-        """Sets the data_source_urls of this CreateAndExecuteJobResponse.
+        r"""Sets the data_source_urls of this CreateAndExecuteJobResponse.
 
         数据源URL。
 
@@ -1262,7 +1262,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @property
     def info(self):
-        """Gets the info of this CreateAndExecuteJobResponse.
+        r"""Gets the info of this CreateAndExecuteJobResponse.
 
         键值对集合，包含oozie返回的作业运行信息。
 
@@ -1273,7 +1273,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
 
     @info.setter
     def info(self, info):
-        """Sets the info of this CreateAndExecuteJobResponse.
+        r"""Sets the info of this CreateAndExecuteJobResponse.
 
         键值对集合，包含oozie返回的作业运行信息。
 

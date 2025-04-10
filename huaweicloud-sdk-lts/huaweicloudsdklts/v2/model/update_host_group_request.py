@@ -25,7 +25,7 @@ class UpdateHostGroupRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateHostGroupRequest
+        r"""UpdateHostGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateHostGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHostGroupRequest.
+        r"""Gets the body of this UpdateHostGroupRequest.
 
         :return: The body of this UpdateHostGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateHostGroupRequestBody`
@@ -52,7 +52,7 @@ class UpdateHostGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHostGroupRequest.
+        r"""Sets the body of this UpdateHostGroupRequest.
 
         :param body: The body of this UpdateHostGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateHostGroupRequestBody`

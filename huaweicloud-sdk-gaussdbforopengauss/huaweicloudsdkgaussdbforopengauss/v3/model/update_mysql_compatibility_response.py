@@ -26,7 +26,7 @@ class UpdateMysqlCompatibilityResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateMysqlCompatibilityResponse
+        r"""UpdateMysqlCompatibilityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMysqlCompatibilityResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateMysqlCompatibilityResponse.
+        r"""Gets the job_id of this UpdateMysqlCompatibilityResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class UpdateMysqlCompatibilityResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateMysqlCompatibilityResponse.
+        r"""Sets the job_id of this UpdateMysqlCompatibilityResponse.
 
         任务ID。
 

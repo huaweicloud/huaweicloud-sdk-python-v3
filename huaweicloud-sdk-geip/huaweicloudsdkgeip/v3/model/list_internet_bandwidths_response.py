@@ -32,7 +32,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, internet_bandwidths=None, page_info=None, x_request_id=None):
-        """ListInternetBandwidthsResponse
+        r"""ListInternetBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListInternetBandwidthsResponse.
+        r"""Gets the request_id of this ListInternetBandwidthsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListInternetBandwidthsResponse.
+        r"""Sets the request_id of this ListInternetBandwidthsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @property
     def internet_bandwidths(self):
-        """Gets the internet_bandwidths of this ListInternetBandwidthsResponse.
+        r"""Gets the internet_bandwidths of this ListInternetBandwidthsResponse.
 
         全域公网带宽列表
 
@@ -98,7 +98,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @internet_bandwidths.setter
     def internet_bandwidths(self, internet_bandwidths):
-        """Sets the internet_bandwidths of this ListInternetBandwidthsResponse.
+        r"""Sets the internet_bandwidths of this ListInternetBandwidthsResponse.
 
         全域公网带宽列表
 
@@ -109,7 +109,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListInternetBandwidthsResponse.
+        r"""Gets the page_info of this ListInternetBandwidthsResponse.
 
         :return: The page_info of this ListInternetBandwidthsResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -118,7 +118,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListInternetBandwidthsResponse.
+        r"""Sets the page_info of this ListInternetBandwidthsResponse.
 
         :param page_info: The page_info of this ListInternetBandwidthsResponse.
         :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -127,7 +127,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListInternetBandwidthsResponse.
+        r"""Gets the x_request_id of this ListInternetBandwidthsResponse.
 
         :return: The x_request_id of this ListInternetBandwidthsResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ListInternetBandwidthsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListInternetBandwidthsResponse.
+        r"""Sets the x_request_id of this ListInternetBandwidthsResponse.
 
         :param x_request_id: The x_request_id of this ListInternetBandwidthsResponse.
         :type x_request_id: str

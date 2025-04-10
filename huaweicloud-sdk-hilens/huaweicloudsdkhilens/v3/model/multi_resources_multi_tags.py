@@ -27,7 +27,7 @@ class MultiResourcesMultiTags:
     }
 
     def __init__(self, resources=None, tags=None):
-        """MultiResourcesMultiTags
+        r"""MultiResourcesMultiTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MultiResourcesMultiTags:
 
     @property
     def resources(self):
-        """Gets the resources of this MultiResourcesMultiTags.
+        r"""Gets the resources of this MultiResourcesMultiTags.
 
         资源列表
 
@@ -61,7 +61,7 @@ class MultiResourcesMultiTags:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this MultiResourcesMultiTags.
+        r"""Sets the resources of this MultiResourcesMultiTags.
 
         资源列表
 
@@ -72,7 +72,7 @@ class MultiResourcesMultiTags:
 
     @property
     def tags(self):
-        """Gets the tags of this MultiResourcesMultiTags.
+        r"""Gets the tags of this MultiResourcesMultiTags.
 
         标签列表
 
@@ -83,7 +83,7 @@ class MultiResourcesMultiTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this MultiResourcesMultiTags.
+        r"""Sets the tags of this MultiResourcesMultiTags.
 
         标签列表
 

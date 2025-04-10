@@ -29,7 +29,7 @@ class DeleteSqlLimitRulesBody:
     }
 
     def __init__(self, datastore_type=None, sql_limit_rule_ids=None, database_name=None):
-        """DeleteSqlLimitRulesBody
+        r"""DeleteSqlLimitRulesBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteSqlLimitRulesBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this DeleteSqlLimitRulesBody.
+        r"""Gets the datastore_type of this DeleteSqlLimitRulesBody.
 
         数据库类型
 
@@ -66,7 +66,7 @@ class DeleteSqlLimitRulesBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this DeleteSqlLimitRulesBody.
+        r"""Sets the datastore_type of this DeleteSqlLimitRulesBody.
 
         数据库类型
 
@@ -77,7 +77,7 @@ class DeleteSqlLimitRulesBody:
 
     @property
     def sql_limit_rule_ids(self):
-        """Gets the sql_limit_rule_ids of this DeleteSqlLimitRulesBody.
+        r"""Gets the sql_limit_rule_ids of this DeleteSqlLimitRulesBody.
 
         SQL限流规则ID
 
@@ -88,7 +88,7 @@ class DeleteSqlLimitRulesBody:
 
     @sql_limit_rule_ids.setter
     def sql_limit_rule_ids(self, sql_limit_rule_ids):
-        """Sets the sql_limit_rule_ids of this DeleteSqlLimitRulesBody.
+        r"""Sets the sql_limit_rule_ids of this DeleteSqlLimitRulesBody.
 
         SQL限流规则ID
 
@@ -99,7 +99,7 @@ class DeleteSqlLimitRulesBody:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteSqlLimitRulesBody.
+        r"""Gets the database_name of this DeleteSqlLimitRulesBody.
 
         数据库名（PostgreSQL必填）
 
@@ -110,7 +110,7 @@ class DeleteSqlLimitRulesBody:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteSqlLimitRulesBody.
+        r"""Sets the database_name of this DeleteSqlLimitRulesBody.
 
         数据库名（PostgreSQL必填）
 

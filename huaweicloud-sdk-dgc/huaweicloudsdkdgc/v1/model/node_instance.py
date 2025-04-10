@@ -47,7 +47,7 @@ class NodeInstance:
     }
 
     def __init__(self, node_name=None, status=None, queue=None, plan_time=None, start_time=None, end_time=None, type=None, retry_times=None, instance_id=None, input_row_count=None, speed=None, log_path=None):
-        """NodeInstance
+        r"""NodeInstance
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class NodeInstance:
 
     @property
     def node_name(self):
-        """Gets the node_name of this NodeInstance.
+        r"""Gets the node_name of this NodeInstance.
 
         节点名称
 
@@ -124,7 +124,7 @@ class NodeInstance:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this NodeInstance.
+        r"""Sets the node_name of this NodeInstance.
 
         节点名称
 
@@ -135,7 +135,7 @@ class NodeInstance:
 
     @property
     def status(self):
-        """Gets the status of this NodeInstance.
+        r"""Gets the status of this NodeInstance.
 
         节点状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - skip：跳过 - pause： 暂停 - manual-stop：取消
 
@@ -146,7 +146,7 @@ class NodeInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeInstance.
+        r"""Sets the status of this NodeInstance.
 
         节点状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - skip：跳过 - pause： 暂停 - manual-stop：取消
 
@@ -157,7 +157,7 @@ class NodeInstance:
 
     @property
     def queue(self):
-        """Gets the queue of this NodeInstance.
+        r"""Gets the queue of this NodeInstance.
 
         DLI资源队列名称。在返回响应中，仅DLI SQL或者DLI SPARK算子会返回DLI队列名称。
 
@@ -168,7 +168,7 @@ class NodeInstance:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this NodeInstance.
+        r"""Sets the queue of this NodeInstance.
 
         DLI资源队列名称。在返回响应中，仅DLI SQL或者DLI SPARK算子会返回DLI队列名称。
 
@@ -179,7 +179,7 @@ class NodeInstance:
 
     @property
     def plan_time(self):
-        """Gets the plan_time of this NodeInstance.
+        r"""Gets the plan_time of this NodeInstance.
 
         作业实例计划执行时间
 
@@ -190,7 +190,7 @@ class NodeInstance:
 
     @plan_time.setter
     def plan_time(self, plan_time):
-        """Sets the plan_time of this NodeInstance.
+        r"""Sets the plan_time of this NodeInstance.
 
         作业实例计划执行时间
 
@@ -201,7 +201,7 @@ class NodeInstance:
 
     @property
     def start_time(self):
-        """Gets the start_time of this NodeInstance.
+        r"""Gets the start_time of this NodeInstance.
 
         节点实际执行开始时间
 
@@ -212,7 +212,7 @@ class NodeInstance:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this NodeInstance.
+        r"""Sets the start_time of this NodeInstance.
 
         节点实际执行开始时间
 
@@ -223,7 +223,7 @@ class NodeInstance:
 
     @property
     def end_time(self):
-        """Gets the end_time of this NodeInstance.
+        r"""Gets the end_time of this NodeInstance.
 
         节点实际执行结束时间
 
@@ -234,7 +234,7 @@ class NodeInstance:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this NodeInstance.
+        r"""Sets the end_time of this NodeInstance.
 
         节点实际执行结束时间
 
@@ -245,7 +245,7 @@ class NodeInstance:
 
     @property
     def type(self):
-        """Gets the type of this NodeInstance.
+        r"""Gets the type of this NodeInstance.
 
         节点类型： - HiveSQL：执行Hive SQL脚本 - SparkSQL：执行Spark SQL脚本 - DWSSQL：执行DWS SQL脚本 - DLISQL：执行DLI SQL脚本 - Shell：执行Shell SQL脚本 - CDMJob：执行CDM作业 - DISTransferTask：创建DIS转储任务 - CloudTableManager：CloudTable表管理，创建和删除表。 - OBSManager：OBS路径管理，包括创建和删除路径。 - RestClient：REST API请求 - SMN：发送短信或邮件 - MRSSpark：执行MRS服务的Spark作业 - MapReduce：执行MRS服务的MapReduce作业 - MRSFlinkJob：执行MRS服务的FlinkJob作业。 - MRSHetuEngine：执行MRS服务的HetuEngine作业。 - DLISpark：执行DLF服务的Spark作业 - RDSSQL：传递SQL语句到RDS中执行。 - ModelArts Train：执行ModelArts服务的workflow作业。
 
@@ -256,7 +256,7 @@ class NodeInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NodeInstance.
+        r"""Sets the type of this NodeInstance.
 
         节点类型： - HiveSQL：执行Hive SQL脚本 - SparkSQL：执行Spark SQL脚本 - DWSSQL：执行DWS SQL脚本 - DLISQL：执行DLI SQL脚本 - Shell：执行Shell SQL脚本 - CDMJob：执行CDM作业 - DISTransferTask：创建DIS转储任务 - CloudTableManager：CloudTable表管理，创建和删除表。 - OBSManager：OBS路径管理，包括创建和删除路径。 - RestClient：REST API请求 - SMN：发送短信或邮件 - MRSSpark：执行MRS服务的Spark作业 - MapReduce：执行MRS服务的MapReduce作业 - MRSFlinkJob：执行MRS服务的FlinkJob作业。 - MRSHetuEngine：执行MRS服务的HetuEngine作业。 - DLISpark：执行DLF服务的Spark作业 - RDSSQL：传递SQL语句到RDS中执行。 - ModelArts Train：执行ModelArts服务的workflow作业。
 
@@ -267,7 +267,7 @@ class NodeInstance:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this NodeInstance.
+        r"""Gets the retry_times of this NodeInstance.
 
         失败重试次数
 
@@ -278,7 +278,7 @@ class NodeInstance:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this NodeInstance.
+        r"""Sets the retry_times of this NodeInstance.
 
         失败重试次数
 
@@ -289,7 +289,7 @@ class NodeInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this NodeInstance.
+        r"""Gets the instance_id of this NodeInstance.
 
         作业实例id
 
@@ -300,7 +300,7 @@ class NodeInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this NodeInstance.
+        r"""Sets the instance_id of this NodeInstance.
 
         作业实例id
 
@@ -311,7 +311,7 @@ class NodeInstance:
 
     @property
     def input_row_count(self):
-        """Gets the input_row_count of this NodeInstance.
+        r"""Gets the input_row_count of this NodeInstance.
 
         写入数据行数
 
@@ -322,7 +322,7 @@ class NodeInstance:
 
     @input_row_count.setter
     def input_row_count(self, input_row_count):
-        """Sets the input_row_count of this NodeInstance.
+        r"""Sets the input_row_count of this NodeInstance.
 
         写入数据行数
 
@@ -333,7 +333,7 @@ class NodeInstance:
 
     @property
     def speed(self):
-        """Gets the speed of this NodeInstance.
+        r"""Gets the speed of this NodeInstance.
 
         写入速度(行/秒)
 
@@ -344,7 +344,7 @@ class NodeInstance:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this NodeInstance.
+        r"""Sets the speed of this NodeInstance.
 
         写入速度(行/秒)
 
@@ -355,7 +355,7 @@ class NodeInstance:
 
     @property
     def log_path(self):
-        """Gets the log_path of this NodeInstance.
+        r"""Gets the log_path of this NodeInstance.
 
         节点执行的日志路径
 
@@ -366,7 +366,7 @@ class NodeInstance:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this NodeInstance.
+        r"""Sets the log_path of this NodeInstance.
 
         节点执行的日志路径
 

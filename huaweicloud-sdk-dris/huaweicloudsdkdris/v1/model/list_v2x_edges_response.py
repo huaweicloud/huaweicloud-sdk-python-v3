@@ -28,7 +28,7 @@ class ListV2xEdgesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, edges=None):
-        """ListV2xEdgesResponse
+        r"""ListV2xEdgesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListV2xEdgesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListV2xEdgesResponse.
+        r"""Gets the count of this ListV2xEdgesResponse.
 
         **参数说明**：总数。
 
@@ -62,7 +62,7 @@ class ListV2xEdgesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListV2xEdgesResponse.
+        r"""Sets the count of this ListV2xEdgesResponse.
 
         **参数说明**：总数。
 
@@ -73,7 +73,7 @@ class ListV2xEdgesResponse(SdkResponse):
 
     @property
     def edges(self):
-        """Gets the edges of this ListV2xEdgesResponse.
+        r"""Gets the edges of this ListV2xEdgesResponse.
 
         **参数说明**：数据列表。
 
@@ -84,7 +84,7 @@ class ListV2xEdgesResponse(SdkResponse):
 
     @edges.setter
     def edges(self, edges):
-        """Sets the edges of this ListV2xEdgesResponse.
+        r"""Sets the edges of this ListV2xEdgesResponse.
 
         **参数说明**：数据列表。
 

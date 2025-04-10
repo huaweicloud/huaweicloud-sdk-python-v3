@@ -31,7 +31,7 @@ class UpdateProxyPortRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """UpdateProxyPortRequest
+        r"""UpdateProxyPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateProxyPortRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateProxyPortRequest.
+        r"""Gets the x_language of this UpdateProxyPortRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class UpdateProxyPortRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateProxyPortRequest.
+        r"""Sets the x_language of this UpdateProxyPortRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class UpdateProxyPortRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateProxyPortRequest.
+        r"""Gets the instance_id of this UpdateProxyPortRequest.
 
         租户在某一project下的实例ID。
 
@@ -95,7 +95,7 @@ class UpdateProxyPortRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateProxyPortRequest.
+        r"""Sets the instance_id of this UpdateProxyPortRequest.
 
         租户在某一project下的实例ID。
 
@@ -106,7 +106,7 @@ class UpdateProxyPortRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this UpdateProxyPortRequest.
+        r"""Gets the proxy_id of this UpdateProxyPortRequest.
 
         租户在某一实下的数据库代理ID。
 
@@ -117,7 +117,7 @@ class UpdateProxyPortRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this UpdateProxyPortRequest.
+        r"""Sets the proxy_id of this UpdateProxyPortRequest.
 
         租户在某一实下的数据库代理ID。
 
@@ -128,7 +128,7 @@ class UpdateProxyPortRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProxyPortRequest.
+        r"""Gets the body of this UpdateProxyPortRequest.
 
         :return: The body of this UpdateProxyPortRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPortRequestBody`
@@ -137,7 +137,7 @@ class UpdateProxyPortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProxyPortRequest.
+        r"""Sets the body of this UpdateProxyPortRequest.
 
         :param body: The body of this UpdateProxyPortRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPortRequestBody`

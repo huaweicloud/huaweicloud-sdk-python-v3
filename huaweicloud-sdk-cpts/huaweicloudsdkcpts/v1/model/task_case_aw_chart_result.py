@@ -29,7 +29,7 @@ class TaskCaseAwChartResult:
     }
 
     def __init__(self, broken_list=None, err_message=None, resp_time_range=None):
-        """TaskCaseAwChartResult
+        r"""TaskCaseAwChartResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskCaseAwChartResult:
 
     @property
     def broken_list(self):
-        """Gets the broken_list of this TaskCaseAwChartResult.
+        r"""Gets the broken_list of this TaskCaseAwChartResult.
 
         :return: The broken_list of this TaskCaseAwChartResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.BrokenList`
@@ -66,7 +66,7 @@ class TaskCaseAwChartResult:
 
     @broken_list.setter
     def broken_list(self, broken_list):
-        """Sets the broken_list of this TaskCaseAwChartResult.
+        r"""Sets the broken_list of this TaskCaseAwChartResult.
 
         :param broken_list: The broken_list of this TaskCaseAwChartResult.
         :type broken_list: :class:`huaweicloudsdkcpts.v1.BrokenList`
@@ -75,7 +75,7 @@ class TaskCaseAwChartResult:
 
     @property
     def err_message(self):
-        """Gets the err_message of this TaskCaseAwChartResult.
+        r"""Gets the err_message of this TaskCaseAwChartResult.
 
         错误信息
 
@@ -86,7 +86,7 @@ class TaskCaseAwChartResult:
 
     @err_message.setter
     def err_message(self, err_message):
-        """Sets the err_message of this TaskCaseAwChartResult.
+        r"""Sets the err_message of this TaskCaseAwChartResult.
 
         错误信息
 
@@ -97,7 +97,7 @@ class TaskCaseAwChartResult:
 
     @property
     def resp_time_range(self):
-        """Gets the resp_time_range of this TaskCaseAwChartResult.
+        r"""Gets the resp_time_range of this TaskCaseAwChartResult.
 
         响应时间区间与出现次数的汇总信息
 
@@ -108,7 +108,7 @@ class TaskCaseAwChartResult:
 
     @resp_time_range.setter
     def resp_time_range(self, resp_time_range):
-        """Sets the resp_time_range of this TaskCaseAwChartResult.
+        r"""Sets the resp_time_range of this TaskCaseAwChartResult.
 
         响应时间区间与出现次数的汇总信息
 

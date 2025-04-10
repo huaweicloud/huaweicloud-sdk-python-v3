@@ -27,7 +27,7 @@ class ExecuteDesktopPoolActionRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """ExecuteDesktopPoolActionRequest
+        r"""ExecuteDesktopPoolActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteDesktopPoolActionRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ExecuteDesktopPoolActionRequest.
+        r"""Gets the pool_id of this ExecuteDesktopPoolActionRequest.
 
         桌面池ID。
 
@@ -60,7 +60,7 @@ class ExecuteDesktopPoolActionRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ExecuteDesktopPoolActionRequest.
+        r"""Sets the pool_id of this ExecuteDesktopPoolActionRequest.
 
         桌面池ID。
 
@@ -71,7 +71,7 @@ class ExecuteDesktopPoolActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteDesktopPoolActionRequest.
+        r"""Gets the body of this ExecuteDesktopPoolActionRequest.
 
         :return: The body of this ExecuteDesktopPoolActionRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopPoolActionReq`
@@ -80,7 +80,7 @@ class ExecuteDesktopPoolActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteDesktopPoolActionRequest.
+        r"""Sets the body of this ExecuteDesktopPoolActionRequest.
 
         :param body: The body of this ExecuteDesktopPoolActionRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DesktopPoolActionReq`

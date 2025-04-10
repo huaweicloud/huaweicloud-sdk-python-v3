@@ -29,7 +29,7 @@ class EnvironmentModify:
     }
 
     def __init__(self, name=None, description=None, labels=None):
-        """EnvironmentModify
+        r"""EnvironmentModify
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EnvironmentModify:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentModify.
+        r"""Gets the name of this EnvironmentModify.
 
         :return: The name of this EnvironmentModify.
         :rtype: str
@@ -65,7 +65,7 @@ class EnvironmentModify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentModify.
+        r"""Sets the name of this EnvironmentModify.
 
         :param name: The name of this EnvironmentModify.
         :type name: str
@@ -74,7 +74,7 @@ class EnvironmentModify:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentModify.
+        r"""Gets the description of this EnvironmentModify.
 
         :return: The description of this EnvironmentModify.
         :rtype: str
@@ -83,7 +83,7 @@ class EnvironmentModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentModify.
+        r"""Sets the description of this EnvironmentModify.
 
         :param description: The description of this EnvironmentModify.
         :type description: str
@@ -92,7 +92,7 @@ class EnvironmentModify:
 
     @property
     def labels(self):
-        """Gets the labels of this EnvironmentModify.
+        r"""Gets the labels of this EnvironmentModify.
 
         :return: The labels of this EnvironmentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
@@ -101,7 +101,7 @@ class EnvironmentModify:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this EnvironmentModify.
+        r"""Sets the labels of this EnvironmentModify.
 
         :param labels: The labels of this EnvironmentModify.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]

@@ -25,7 +25,7 @@ class StandElementFieldVOList:
     }
 
     def __init__(self, fields=None):
-        """StandElementFieldVOList
+        r"""StandElementFieldVOList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StandElementFieldVOList:
 
     @property
     def fields(self):
-        """Gets the fields of this StandElementFieldVOList.
+        r"""Gets the fields of this StandElementFieldVOList.
 
         属性信息，只读。
 
@@ -54,7 +54,7 @@ class StandElementFieldVOList:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this StandElementFieldVOList.
+        r"""Sets the fields of this StandElementFieldVOList.
 
         属性信息，只读。
 

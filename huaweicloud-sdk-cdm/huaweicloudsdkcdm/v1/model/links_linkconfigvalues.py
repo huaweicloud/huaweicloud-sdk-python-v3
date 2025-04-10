@@ -29,7 +29,7 @@ class LinksLinkconfigvalues:
     }
 
     def __init__(self, configs=None, extended_configs=None, validators=None):
-        """LinksLinkconfigvalues
+        r"""LinksLinkconfigvalues
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class LinksLinkconfigvalues:
 
     @property
     def configs(self):
-        """Gets the configs of this LinksLinkconfigvalues.
+        r"""Gets the configs of this LinksLinkconfigvalues.
 
         连接配置参数数据结构，请参见configs参数说明。
 
@@ -67,7 +67,7 @@ class LinksLinkconfigvalues:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this LinksLinkconfigvalues.
+        r"""Sets the configs of this LinksLinkconfigvalues.
 
         连接配置参数数据结构，请参见configs参数说明。
 
@@ -78,7 +78,7 @@ class LinksLinkconfigvalues:
 
     @property
     def extended_configs(self):
-        """Gets the extended_configs of this LinksLinkconfigvalues.
+        r"""Gets the extended_configs of this LinksLinkconfigvalues.
 
         :return: The extended_configs of this LinksLinkconfigvalues.
         :rtype: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvaluesExtendedconfigs`
@@ -87,7 +87,7 @@ class LinksLinkconfigvalues:
 
     @extended_configs.setter
     def extended_configs(self, extended_configs):
-        """Sets the extended_configs of this LinksLinkconfigvalues.
+        r"""Sets the extended_configs of this LinksLinkconfigvalues.
 
         :param extended_configs: The extended_configs of this LinksLinkconfigvalues.
         :type extended_configs: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvaluesExtendedconfigs`
@@ -96,7 +96,7 @@ class LinksLinkconfigvalues:
 
     @property
     def validators(self):
-        """Gets the validators of this LinksLinkconfigvalues.
+        r"""Gets the validators of this LinksLinkconfigvalues.
 
         校验器
 
@@ -107,7 +107,7 @@ class LinksLinkconfigvalues:
 
     @validators.setter
     def validators(self, validators):
-        """Sets the validators of this LinksLinkconfigvalues.
+        r"""Sets the validators of this LinksLinkconfigvalues.
 
         校验器
 

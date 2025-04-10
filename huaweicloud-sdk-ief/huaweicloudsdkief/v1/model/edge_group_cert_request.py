@@ -29,7 +29,7 @@ class EdgeGroupCertRequest:
     }
 
     def __init__(self, name=None, type=None, description=None):
-        """EdgeGroupCertRequest
+        r"""EdgeGroupCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EdgeGroupCertRequest:
 
     @property
     def name(self):
-        """Gets the name of this EdgeGroupCertRequest.
+        r"""Gets the name of this EdgeGroupCertRequest.
 
         证书名称。只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -68,7 +68,7 @@ class EdgeGroupCertRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeGroupCertRequest.
+        r"""Sets the name of this EdgeGroupCertRequest.
 
         证书名称。只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -79,7 +79,7 @@ class EdgeGroupCertRequest:
 
     @property
     def type(self):
-        """Gets the type of this EdgeGroupCertRequest.
+        r"""Gets the type of this EdgeGroupCertRequest.
 
         证书类型，支持填写： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -90,7 +90,7 @@ class EdgeGroupCertRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EdgeGroupCertRequest.
+        r"""Sets the type of this EdgeGroupCertRequest.
 
         证书类型，支持填写： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -101,7 +101,7 @@ class EdgeGroupCertRequest:
 
     @property
     def description(self):
-        """Gets the description of this EdgeGroupCertRequest.
+        r"""Gets the description of this EdgeGroupCertRequest.
 
         证书描述。最大长度为255个字符
 
@@ -112,7 +112,7 @@ class EdgeGroupCertRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeGroupCertRequest.
+        r"""Sets the description of this EdgeGroupCertRequest.
 
         证书描述。最大长度为255个字符
 

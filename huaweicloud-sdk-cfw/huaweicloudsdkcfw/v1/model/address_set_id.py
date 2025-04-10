@@ -27,7 +27,7 @@ class AddressSetId:
     }
 
     def __init__(self, id=None, name=None):
-        """AddressSetId
+        r"""AddressSetId
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddressSetId:
 
     @property
     def id(self):
-        """Gets the id of this AddressSetId.
+        r"""Gets the id of this AddressSetId.
 
         地址组id
 
@@ -61,7 +61,7 @@ class AddressSetId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddressSetId.
+        r"""Sets the id of this AddressSetId.
 
         地址组id
 
@@ -72,7 +72,7 @@ class AddressSetId:
 
     @property
     def name(self):
-        """Gets the name of this AddressSetId.
+        r"""Gets the name of this AddressSetId.
 
         地址组名称
 
@@ -83,7 +83,7 @@ class AddressSetId:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddressSetId.
+        r"""Sets the name of this AddressSetId.
 
         地址组名称
 

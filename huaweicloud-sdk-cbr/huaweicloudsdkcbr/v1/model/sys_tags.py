@@ -27,7 +27,7 @@ class SysTags:
     }
 
     def __init__(self, key=None, values=None):
-        """SysTags
+        r"""SysTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SysTags:
 
     @property
     def key(self):
-        """Gets the key of this SysTags.
+        r"""Gets the key of this SysTags.
 
         键。  系统标签的key，从白名单中取，不能随意定义。 目前仅支持 _sys_enterprise_project_id字段，对应 的value为企业项目ID。
 
@@ -59,7 +59,7 @@ class SysTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SysTags.
+        r"""Sets the key of this SysTags.
 
         键。  系统标签的key，从白名单中取，不能随意定义。 目前仅支持 _sys_enterprise_project_id字段，对应 的value为企业项目ID。
 
@@ -70,7 +70,7 @@ class SysTags:
 
     @property
     def values(self):
-        """Gets the values of this SysTags.
+        r"""Gets the values of this SysTags.
 
         值列表。  目前仅会用到企业项目ID，其中默 认的企业项目ID为“0”。
 
@@ -81,7 +81,7 @@ class SysTags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this SysTags.
+        r"""Sets the values of this SysTags.
 
         值列表。  目前仅会用到企业项目ID，其中默 认的企业项目ID为“0”。
 

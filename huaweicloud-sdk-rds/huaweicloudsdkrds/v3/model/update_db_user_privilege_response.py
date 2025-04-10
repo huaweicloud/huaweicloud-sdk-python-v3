@@ -24,7 +24,7 @@ class UpdateDbUserPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDbUserPrivilegeResponse
+        r"""UpdateDbUserPrivilegeResponse
 
         The model defined in huaweicloud sdk
 

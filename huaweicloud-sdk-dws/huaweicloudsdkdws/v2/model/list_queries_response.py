@@ -32,7 +32,7 @@ class ListQueriesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, msg=None, data=None, count=None):
-        """ListQueriesResponse
+        r"""ListQueriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListQueriesResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListQueriesResponse.
+        r"""Gets the code of this ListQueriesResponse.
 
         响应码。
 
@@ -76,7 +76,7 @@ class ListQueriesResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListQueriesResponse.
+        r"""Sets the code of this ListQueriesResponse.
 
         响应码。
 
@@ -87,7 +87,7 @@ class ListQueriesResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ListQueriesResponse.
+        r"""Gets the msg of this ListQueriesResponse.
 
         响应信息。
 
@@ -98,7 +98,7 @@ class ListQueriesResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ListQueriesResponse.
+        r"""Sets the msg of this ListQueriesResponse.
 
         响应信息。
 
@@ -109,7 +109,7 @@ class ListQueriesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListQueriesResponse.
+        r"""Gets the data of this ListQueriesResponse.
 
         :return: The data of this ListQueriesResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.ListQueriesData`
@@ -118,7 +118,7 @@ class ListQueriesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListQueriesResponse.
+        r"""Sets the data of this ListQueriesResponse.
 
         :param data: The data of this ListQueriesResponse.
         :type data: :class:`huaweicloudsdkdws.v2.ListQueriesData`
@@ -127,7 +127,7 @@ class ListQueriesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListQueriesResponse.
+        r"""Gets the count of this ListQueriesResponse.
 
         总条数。
 
@@ -138,7 +138,7 @@ class ListQueriesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListQueriesResponse.
+        r"""Sets the count of this ListQueriesResponse.
 
         总条数。
 

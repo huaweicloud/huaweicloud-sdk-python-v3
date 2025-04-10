@@ -32,7 +32,7 @@ class CreateCbhResponse(SdkResponse):
     }
 
     def __init__(self, instance_key=None, slave_instance_key=None, request_info=None, job_id=None):
-        """CreateCbhResponse
+        r"""CreateCbhResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateCbhResponse(SdkResponse):
 
     @property
     def instance_key(self):
-        """Gets the instance_key of this CreateCbhResponse.
+        r"""Gets the instance_key of this CreateCbhResponse.
 
         云堡垒机实例key。
 
@@ -76,7 +76,7 @@ class CreateCbhResponse(SdkResponse):
 
     @instance_key.setter
     def instance_key(self, instance_key):
-        """Sets the instance_key of this CreateCbhResponse.
+        r"""Sets the instance_key of this CreateCbhResponse.
 
         云堡垒机实例key。
 
@@ -87,7 +87,7 @@ class CreateCbhResponse(SdkResponse):
 
     @property
     def slave_instance_key(self):
-        """Gets the slave_instance_key of this CreateCbhResponse.
+        r"""Gets the slave_instance_key of this CreateCbhResponse.
 
         云堡垒机备机实例key。（当前字段未启用，返回默认值null）
 
@@ -98,7 +98,7 @@ class CreateCbhResponse(SdkResponse):
 
     @slave_instance_key.setter
     def slave_instance_key(self, slave_instance_key):
-        """Sets the slave_instance_key of this CreateCbhResponse.
+        r"""Sets the slave_instance_key of this CreateCbhResponse.
 
         云堡垒机备机实例key。（当前字段未启用，返回默认值null）
 
@@ -109,7 +109,7 @@ class CreateCbhResponse(SdkResponse):
 
     @property
     def request_info(self):
-        """Gets the request_info of this CreateCbhResponse.
+        r"""Gets the request_info of this CreateCbhResponse.
 
         返回创建云堡垒机实例信息。
 
@@ -120,7 +120,7 @@ class CreateCbhResponse(SdkResponse):
 
     @request_info.setter
     def request_info(self, request_info):
-        """Sets the request_info of this CreateCbhResponse.
+        r"""Sets the request_info of this CreateCbhResponse.
 
         返回创建云堡垒机实例信息。
 
@@ -131,7 +131,7 @@ class CreateCbhResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateCbhResponse.
+        r"""Gets the job_id of this CreateCbhResponse.
 
         job任务ID。（当前字段未启用，返回默认值null）
 
@@ -142,7 +142,7 @@ class CreateCbhResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateCbhResponse.
+        r"""Sets the job_id of this CreateCbhResponse.
 
         job任务ID。（当前字段未启用，返回默认值null）
 

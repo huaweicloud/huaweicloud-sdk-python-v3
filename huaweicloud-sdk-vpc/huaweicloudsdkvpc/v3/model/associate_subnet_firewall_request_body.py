@@ -25,7 +25,7 @@ class AssociateSubnetFirewallRequestBody:
     }
 
     def __init__(self, subnets=None):
-        """AssociateSubnetFirewallRequestBody
+        r"""AssociateSubnetFirewallRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssociateSubnetFirewallRequestBody:
 
     @property
     def subnets(self):
-        """Gets the subnets of this AssociateSubnetFirewallRequestBody.
+        r"""Gets the subnets of this AssociateSubnetFirewallRequestBody.
 
         绑定ACL的子网列表
 
@@ -53,7 +53,7 @@ class AssociateSubnetFirewallRequestBody:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this AssociateSubnetFirewallRequestBody.
+        r"""Sets the subnets of this AssociateSubnetFirewallRequestBody.
 
         绑定ACL的子网列表
 

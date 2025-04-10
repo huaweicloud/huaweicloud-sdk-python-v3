@@ -27,7 +27,7 @@ class ShowUserRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None):
-        """ShowUserRequest
+        r"""ShowUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowUserRequest.
+        r"""Gets the instance_id of this ShowUserRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowUserRequest.
+        r"""Sets the instance_id of this ShowUserRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowUserRequest.
+        r"""Gets the user_name of this ShowUserRequest.
 
         用户名。
 
@@ -81,7 +81,7 @@ class ShowUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowUserRequest.
+        r"""Sets the user_name of this ShowUserRequest.
 
         用户名。
 

@@ -35,7 +35,7 @@ class ListApicGroupsRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, apig_instance_id=None, apig_type=None, limit=None, offset=None):
-        """ListApicGroupsRequest
+        r"""ListApicGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListApicGroupsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListApicGroupsRequest.
+        r"""Gets the workspace of this ListApicGroupsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -86,7 +86,7 @@ class ListApicGroupsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListApicGroupsRequest.
+        r"""Sets the workspace of this ListApicGroupsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -97,7 +97,7 @@ class ListApicGroupsRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListApicGroupsRequest.
+        r"""Gets the dlm_type of this ListApicGroupsRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -108,7 +108,7 @@ class ListApicGroupsRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListApicGroupsRequest.
+        r"""Sets the dlm_type of this ListApicGroupsRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -119,7 +119,7 @@ class ListApicGroupsRequest:
 
     @property
     def apig_instance_id(self):
-        """Gets the apig_instance_id of this ListApicGroupsRequest.
+        r"""Gets the apig_instance_id of this ListApicGroupsRequest.
 
         网关实例编号，共享版为固定值：APIG。
 
@@ -130,7 +130,7 @@ class ListApicGroupsRequest:
 
     @apig_instance_id.setter
     def apig_instance_id(self, apig_instance_id):
-        """Sets the apig_instance_id of this ListApicGroupsRequest.
+        r"""Sets the apig_instance_id of this ListApicGroupsRequest.
 
         网关实例编号，共享版为固定值：APIG。
 
@@ -141,7 +141,7 @@ class ListApicGroupsRequest:
 
     @property
     def apig_type(self):
-        """Gets the apig_type of this ListApicGroupsRequest.
+        r"""Gets the apig_type of this ListApicGroupsRequest.
 
         网关类型。
 
@@ -152,7 +152,7 @@ class ListApicGroupsRequest:
 
     @apig_type.setter
     def apig_type(self, apig_type):
-        """Sets the apig_type of this ListApicGroupsRequest.
+        r"""Sets the apig_type of this ListApicGroupsRequest.
 
         网关类型。
 
@@ -163,7 +163,7 @@ class ListApicGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApicGroupsRequest.
+        r"""Gets the limit of this ListApicGroupsRequest.
 
         limit。
 
@@ -174,7 +174,7 @@ class ListApicGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApicGroupsRequest.
+        r"""Sets the limit of this ListApicGroupsRequest.
 
         limit。
 
@@ -185,7 +185,7 @@ class ListApicGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApicGroupsRequest.
+        r"""Gets the offset of this ListApicGroupsRequest.
 
         offset。
 
@@ -196,7 +196,7 @@ class ListApicGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApicGroupsRequest.
+        r"""Sets the offset of this ListApicGroupsRequest.
 
         offset。
 

@@ -45,7 +45,7 @@ class ClusterElbInfo:
     }
 
     def __init__(self, id=None, cluster_id=None, name=None, description=None, vip_address=None, vip_subnet_id=None, tenant_id=None, type=None, admin_state_up=None, bandwidth=None, vpc_id=None):
-        """ClusterElbInfo
+        r"""ClusterElbInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ClusterElbInfo:
 
     @property
     def id(self):
-        """Gets the id of this ClusterElbInfo.
+        r"""Gets the id of this ClusterElbInfo.
 
         弹性负载均衡ID
 
@@ -124,7 +124,7 @@ class ClusterElbInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterElbInfo.
+        r"""Sets the id of this ClusterElbInfo.
 
         弹性负载均衡ID
 
@@ -135,7 +135,7 @@ class ClusterElbInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ClusterElbInfo.
+        r"""Gets the cluster_id of this ClusterElbInfo.
 
         集群ID
 
@@ -146,7 +146,7 @@ class ClusterElbInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ClusterElbInfo.
+        r"""Sets the cluster_id of this ClusterElbInfo.
 
         集群ID
 
@@ -157,7 +157,7 @@ class ClusterElbInfo:
 
     @property
     def name(self):
-        """Gets the name of this ClusterElbInfo.
+        r"""Gets the name of this ClusterElbInfo.
 
         弹性负载均衡名称
 
@@ -168,7 +168,7 @@ class ClusterElbInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterElbInfo.
+        r"""Sets the name of this ClusterElbInfo.
 
         弹性负载均衡名称
 
@@ -179,7 +179,7 @@ class ClusterElbInfo:
 
     @property
     def description(self):
-        """Gets the description of this ClusterElbInfo.
+        r"""Gets the description of this ClusterElbInfo.
 
         弹性负载均衡描述
 
@@ -190,7 +190,7 @@ class ClusterElbInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClusterElbInfo.
+        r"""Sets the description of this ClusterElbInfo.
 
         弹性负载均衡描述
 
@@ -201,7 +201,7 @@ class ClusterElbInfo:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this ClusterElbInfo.
+        r"""Gets the vip_address of this ClusterElbInfo.
 
         弹性负载均衡地址
 
@@ -212,7 +212,7 @@ class ClusterElbInfo:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this ClusterElbInfo.
+        r"""Sets the vip_address of this ClusterElbInfo.
 
         弹性负载均衡地址
 
@@ -223,7 +223,7 @@ class ClusterElbInfo:
 
     @property
     def vip_subnet_id(self):
-        """Gets the vip_subnet_id of this ClusterElbInfo.
+        r"""Gets the vip_subnet_id of this ClusterElbInfo.
 
         子网ID
 
@@ -234,7 +234,7 @@ class ClusterElbInfo:
 
     @vip_subnet_id.setter
     def vip_subnet_id(self, vip_subnet_id):
-        """Sets the vip_subnet_id of this ClusterElbInfo.
+        r"""Sets the vip_subnet_id of this ClusterElbInfo.
 
         子网ID
 
@@ -245,7 +245,7 @@ class ClusterElbInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ClusterElbInfo.
+        r"""Gets the tenant_id of this ClusterElbInfo.
 
         租户ID
 
@@ -256,7 +256,7 @@ class ClusterElbInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ClusterElbInfo.
+        r"""Sets the tenant_id of this ClusterElbInfo.
 
         租户ID
 
@@ -267,7 +267,7 @@ class ClusterElbInfo:
 
     @property
     def type(self):
-        """Gets the type of this ClusterElbInfo.
+        r"""Gets the type of this ClusterElbInfo.
 
         弹性负载均衡类型。枚举值：Internal,External
 
@@ -278,7 +278,7 @@ class ClusterElbInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterElbInfo.
+        r"""Sets the type of this ClusterElbInfo.
 
         弹性负载均衡类型。枚举值：Internal,External
 
@@ -289,7 +289,7 @@ class ClusterElbInfo:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ClusterElbInfo.
+        r"""Gets the admin_state_up of this ClusterElbInfo.
 
         弹性负载均衡的管理状态。枚举值：ACTIVE,PENDING_CREATE,ERROR
 
@@ -300,7 +300,7 @@ class ClusterElbInfo:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ClusterElbInfo.
+        r"""Sets the admin_state_up of this ClusterElbInfo.
 
         弹性负载均衡的管理状态。枚举值：ACTIVE,PENDING_CREATE,ERROR
 
@@ -311,7 +311,7 @@ class ClusterElbInfo:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this ClusterElbInfo.
+        r"""Gets the bandwidth of this ClusterElbInfo.
 
         绑定状态： 0为未绑定，1为已绑定
 
@@ -322,7 +322,7 @@ class ClusterElbInfo:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this ClusterElbInfo.
+        r"""Sets the bandwidth of this ClusterElbInfo.
 
         绑定状态： 0为未绑定，1为已绑定
 
@@ -333,7 +333,7 @@ class ClusterElbInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ClusterElbInfo.
+        r"""Gets the vpc_id of this ClusterElbInfo.
 
         虚拟私有云ID
 
@@ -344,7 +344,7 @@ class ClusterElbInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ClusterElbInfo.
+        r"""Sets the vpc_id of this ClusterElbInfo.
 
         虚拟私有云ID
 

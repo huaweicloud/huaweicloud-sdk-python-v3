@@ -29,7 +29,7 @@ class BatchAutoInstallAppsReq:
     }
 
     def __init__(self, app_ids=None, assign_scope=None, users=None):
-        """BatchAutoInstallAppsReq
+        r"""BatchAutoInstallAppsReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAutoInstallAppsReq:
 
     @property
     def app_ids(self):
-        """Gets the app_ids of this BatchAutoInstallAppsReq.
+        r"""Gets the app_ids of this BatchAutoInstallAppsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 
@@ -66,7 +66,7 @@ class BatchAutoInstallAppsReq:
 
     @app_ids.setter
     def app_ids(self, app_ids):
-        """Sets the app_ids of this BatchAutoInstallAppsReq.
+        r"""Sets the app_ids of this BatchAutoInstallAppsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 
@@ -77,7 +77,7 @@ class BatchAutoInstallAppsReq:
 
     @property
     def assign_scope(self):
-        """Gets the assign_scope of this BatchAutoInstallAppsReq.
+        r"""Gets the assign_scope of this BatchAutoInstallAppsReq.
 
         :return: The assign_scope of this BatchAutoInstallAppsReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -86,7 +86,7 @@ class BatchAutoInstallAppsReq:
 
     @assign_scope.setter
     def assign_scope(self, assign_scope):
-        """Sets the assign_scope of this BatchAutoInstallAppsReq.
+        r"""Sets the assign_scope of this BatchAutoInstallAppsReq.
 
         :param assign_scope: The assign_scope of this BatchAutoInstallAppsReq.
         :type assign_scope: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -95,7 +95,7 @@ class BatchAutoInstallAppsReq:
 
     @property
     def users(self):
-        """Gets the users of this BatchAutoInstallAppsReq.
+        r"""Gets the users of this BatchAutoInstallAppsReq.
 
         用户列表，一次请求数量区间 [1, 50]。
 
@@ -106,7 +106,7 @@ class BatchAutoInstallAppsReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchAutoInstallAppsReq.
+        r"""Sets the users of this BatchAutoInstallAppsReq.
 
         用户列表，一次请求数量区间 [1, 50]。
 

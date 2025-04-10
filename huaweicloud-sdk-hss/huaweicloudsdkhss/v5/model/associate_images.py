@@ -35,7 +35,7 @@ class AssociateImages:
     }
 
     def __init__(self, image_name=None, image_version=None, image_type=None, namespace=None, image_digest=None, scan_status=None):
-        """AssociateImages
+        r"""AssociateImages
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AssociateImages:
 
     @property
     def image_name(self):
-        """Gets the image_name of this AssociateImages.
+        r"""Gets the image_name of this AssociateImages.
 
         镜像名称
 
@@ -89,7 +89,7 @@ class AssociateImages:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this AssociateImages.
+        r"""Sets the image_name of this AssociateImages.
 
         镜像名称
 
@@ -100,7 +100,7 @@ class AssociateImages:
 
     @property
     def image_version(self):
-        """Gets the image_version of this AssociateImages.
+        r"""Gets the image_version of this AssociateImages.
 
         镜像版本
 
@@ -111,7 +111,7 @@ class AssociateImages:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this AssociateImages.
+        r"""Sets the image_version of this AssociateImages.
 
         镜像版本
 
@@ -122,7 +122,7 @@ class AssociateImages:
 
     @property
     def image_type(self):
-        """Gets the image_type of this AssociateImages.
+        r"""Gets the image_type of this AssociateImages.
 
         镜像类型
 
@@ -133,7 +133,7 @@ class AssociateImages:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this AssociateImages.
+        r"""Sets the image_type of this AssociateImages.
 
         镜像类型
 
@@ -144,7 +144,7 @@ class AssociateImages:
 
     @property
     def namespace(self):
-        """Gets the namespace of this AssociateImages.
+        r"""Gets the namespace of this AssociateImages.
 
         命名空间
 
@@ -155,7 +155,7 @@ class AssociateImages:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this AssociateImages.
+        r"""Sets the namespace of this AssociateImages.
 
         命名空间
 
@@ -166,7 +166,7 @@ class AssociateImages:
 
     @property
     def image_digest(self):
-        """Gets the image_digest of this AssociateImages.
+        r"""Gets the image_digest of this AssociateImages.
 
         镜像digest
 
@@ -177,7 +177,7 @@ class AssociateImages:
 
     @image_digest.setter
     def image_digest(self, image_digest):
-        """Sets the image_digest of this AssociateImages.
+        r"""Sets the image_digest of this AssociateImages.
 
         镜像digest
 
@@ -188,7 +188,7 @@ class AssociateImages:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this AssociateImages.
+        r"""Gets the scan_status of this AssociateImages.
 
         扫描状态，包含如下2种。   - unscan ：未扫描。   - success ：扫描完成。   - scanning ：正在扫描。   - failed ：扫描失败。   - download_failed ：下载失败。   - image_oversized ：镜像超大。   - waiting_for_scan ：等待扫描。
 
@@ -199,7 +199,7 @@ class AssociateImages:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this AssociateImages.
+        r"""Sets the scan_status of this AssociateImages.
 
         扫描状态，包含如下2种。   - unscan ：未扫描。   - success ：扫描完成。   - scanning ：正在扫描。   - failed ：扫描失败。   - download_failed ：下载失败。   - image_oversized ：镜像超大。   - waiting_for_scan ：等待扫描。
 

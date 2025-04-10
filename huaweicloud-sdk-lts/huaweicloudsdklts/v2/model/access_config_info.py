@@ -63,7 +63,7 @@ class AccessConfigInfo:
     }
 
     def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, encoding_format=None, incremental_collect=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
-        """AccessConfigInfo
+        r"""AccessConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class AccessConfigInfo:
 
     @property
     def access_config_id(self):
-        """Gets the access_config_id of this AccessConfigInfo.
+        r"""Gets the access_config_id of this AccessConfigInfo.
 
         日志接入ID
 
@@ -187,7 +187,7 @@ class AccessConfigInfo:
 
     @access_config_id.setter
     def access_config_id(self, access_config_id):
-        """Sets the access_config_id of this AccessConfigInfo.
+        r"""Sets the access_config_id of this AccessConfigInfo.
 
         日志接入ID
 
@@ -198,7 +198,7 @@ class AccessConfigInfo:
 
     @property
     def access_config_name(self):
-        """Gets the access_config_name of this AccessConfigInfo.
+        r"""Gets the access_config_name of this AccessConfigInfo.
 
         日志接入名称
 
@@ -209,7 +209,7 @@ class AccessConfigInfo:
 
     @access_config_name.setter
     def access_config_name(self, access_config_name):
-        """Sets the access_config_name of this AccessConfigInfo.
+        r"""Sets the access_config_name of this AccessConfigInfo.
 
         日志接入名称
 
@@ -220,7 +220,7 @@ class AccessConfigInfo:
 
     @property
     def access_config_type(self):
-        """Gets the access_config_type of this AccessConfigInfo.
+        r"""Gets the access_config_type of this AccessConfigInfo.
 
         日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
 
@@ -231,7 +231,7 @@ class AccessConfigInfo:
 
     @access_config_type.setter
     def access_config_type(self, access_config_type):
-        """Sets the access_config_type of this AccessConfigInfo.
+        r"""Sets the access_config_type of this AccessConfigInfo.
 
         日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
 
@@ -242,7 +242,7 @@ class AccessConfigInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AccessConfigInfo.
+        r"""Gets the create_time of this AccessConfigInfo.
 
         创建时间
 
@@ -253,7 +253,7 @@ class AccessConfigInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AccessConfigInfo.
+        r"""Sets the create_time of this AccessConfigInfo.
 
         创建时间
 
@@ -264,7 +264,7 @@ class AccessConfigInfo:
 
     @property
     def access_config_detail(self):
-        """Gets the access_config_detail of this AccessConfigInfo.
+        r"""Gets the access_config_detail of this AccessConfigInfo.
 
         :return: The access_config_detail of this AccessConfigInfo.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -273,7 +273,7 @@ class AccessConfigInfo:
 
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
-        """Sets the access_config_detail of this AccessConfigInfo.
+        r"""Sets the access_config_detail of this AccessConfigInfo.
 
         :param access_config_detail: The access_config_detail of this AccessConfigInfo.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -282,7 +282,7 @@ class AccessConfigInfo:
 
     @property
     def log_info(self):
-        """Gets the log_info of this AccessConfigInfo.
+        r"""Gets the log_info of this AccessConfigInfo.
 
         :return: The log_info of this AccessConfigInfo.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
@@ -291,7 +291,7 @@ class AccessConfigInfo:
 
     @log_info.setter
     def log_info(self, log_info):
-        """Sets the log_info of this AccessConfigInfo.
+        r"""Sets the log_info of this AccessConfigInfo.
 
         :param log_info: The log_info of this AccessConfigInfo.
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
@@ -300,7 +300,7 @@ class AccessConfigInfo:
 
     @property
     def host_group_info(self):
-        """Gets the host_group_info of this AccessConfigInfo.
+        r"""Gets the host_group_info of this AccessConfigInfo.
 
         :return: The host_group_info of this AccessConfigInfo.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -309,7 +309,7 @@ class AccessConfigInfo:
 
     @host_group_info.setter
     def host_group_info(self, host_group_info):
-        """Sets the host_group_info of this AccessConfigInfo.
+        r"""Sets the host_group_info of this AccessConfigInfo.
 
         :param host_group_info: The host_group_info of this AccessConfigInfo.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -318,7 +318,7 @@ class AccessConfigInfo:
 
     @property
     def access_config_tag(self):
-        """Gets the access_config_tag of this AccessConfigInfo.
+        r"""Gets the access_config_tag of this AccessConfigInfo.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -329,7 +329,7 @@ class AccessConfigInfo:
 
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
-        """Sets the access_config_tag of this AccessConfigInfo.
+        r"""Sets the access_config_tag of this AccessConfigInfo.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -340,7 +340,7 @@ class AccessConfigInfo:
 
     @property
     def log_split(self):
-        """Gets the log_split of this AccessConfigInfo.
+        r"""Gets the log_split of this AccessConfigInfo.
 
         二进制采集
 
@@ -351,7 +351,7 @@ class AccessConfigInfo:
 
     @log_split.setter
     def log_split(self, log_split):
-        """Sets the log_split of this AccessConfigInfo.
+        r"""Sets the log_split of this AccessConfigInfo.
 
         二进制采集
 
@@ -362,7 +362,7 @@ class AccessConfigInfo:
 
     @property
     def binary_collect(self):
-        """Gets the binary_collect of this AccessConfigInfo.
+        r"""Gets the binary_collect of this AccessConfigInfo.
 
         日志拆分
 
@@ -373,7 +373,7 @@ class AccessConfigInfo:
 
     @binary_collect.setter
     def binary_collect(self, binary_collect):
-        """Sets the binary_collect of this AccessConfigInfo.
+        r"""Sets the binary_collect of this AccessConfigInfo.
 
         日志拆分
 
@@ -384,7 +384,7 @@ class AccessConfigInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AccessConfigInfo.
+        r"""Gets the cluster_id of this AccessConfigInfo.
 
         CCE集群ID
 
@@ -395,7 +395,7 @@ class AccessConfigInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AccessConfigInfo.
+        r"""Sets the cluster_id of this AccessConfigInfo.
 
         CCE集群ID
 
@@ -406,7 +406,7 @@ class AccessConfigInfo:
 
     @property
     def encoding_format(self):
-        """Gets the encoding_format of this AccessConfigInfo.
+        r"""Gets the encoding_format of this AccessConfigInfo.
 
         编码格式，默认UTF-8
 
@@ -417,7 +417,7 @@ class AccessConfigInfo:
 
     @encoding_format.setter
     def encoding_format(self, encoding_format):
-        """Sets the encoding_format of this AccessConfigInfo.
+        r"""Sets the encoding_format of this AccessConfigInfo.
 
         编码格式，默认UTF-8
 
@@ -428,7 +428,7 @@ class AccessConfigInfo:
 
     @property
     def incremental_collect(self):
-        """Gets the incremental_collect of this AccessConfigInfo.
+        r"""Gets the incremental_collect of this AccessConfigInfo.
 
         采集策略：增量/全量
 
@@ -439,7 +439,7 @@ class AccessConfigInfo:
 
     @incremental_collect.setter
     def incremental_collect(self, incremental_collect):
-        """Sets the incremental_collect of this AccessConfigInfo.
+        r"""Sets the incremental_collect of this AccessConfigInfo.
 
         采集策略：增量/全量
 
@@ -450,7 +450,7 @@ class AccessConfigInfo:
 
     @property
     def processor_type(self):
-        """Gets the processor_type of this AccessConfigInfo.
+        r"""Gets the processor_type of this AccessConfigInfo.
 
         IC结构化解析类型
 
@@ -461,7 +461,7 @@ class AccessConfigInfo:
 
     @processor_type.setter
     def processor_type(self, processor_type):
-        """Sets the processor_type of this AccessConfigInfo.
+        r"""Sets the processor_type of this AccessConfigInfo.
 
         IC结构化解析类型
 
@@ -472,7 +472,7 @@ class AccessConfigInfo:
 
     @property
     def demo_log(self):
-        """Gets the demo_log of this AccessConfigInfo.
+        r"""Gets the demo_log of this AccessConfigInfo.
 
         示例日志
 
@@ -483,7 +483,7 @@ class AccessConfigInfo:
 
     @demo_log.setter
     def demo_log(self, demo_log):
-        """Sets the demo_log of this AccessConfigInfo.
+        r"""Sets the demo_log of this AccessConfigInfo.
 
         示例日志
 
@@ -494,7 +494,7 @@ class AccessConfigInfo:
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this AccessConfigInfo.
+        r"""Gets the demo_fields of this AccessConfigInfo.
 
         示例日志解析字段
 
@@ -505,7 +505,7 @@ class AccessConfigInfo:
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this AccessConfigInfo.
+        r"""Sets the demo_fields of this AccessConfigInfo.
 
         示例日志解析字段
 
@@ -516,7 +516,7 @@ class AccessConfigInfo:
 
     @property
     def processors(self):
-        """Gets the processors of this AccessConfigInfo.
+        r"""Gets the processors of this AccessConfigInfo.
 
         IC结构化解析器
 
@@ -527,7 +527,7 @@ class AccessConfigInfo:
 
     @processors.setter
     def processors(self, processors):
-        """Sets the processors of this AccessConfigInfo.
+        r"""Sets the processors of this AccessConfigInfo.
 
         IC结构化解析器
 
@@ -538,7 +538,7 @@ class AccessConfigInfo:
 
     @property
     def application_id(self):
-        """Gets the application_id of this AccessConfigInfo.
+        r"""Gets the application_id of this AccessConfigInfo.
 
         ServiceStage应用ID
 
@@ -549,7 +549,7 @@ class AccessConfigInfo:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this AccessConfigInfo.
+        r"""Sets the application_id of this AccessConfigInfo.
 
         ServiceStage应用ID
 
@@ -560,7 +560,7 @@ class AccessConfigInfo:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this AccessConfigInfo.
+        r"""Gets the environment_id of this AccessConfigInfo.
 
         ServiceStage环境ID
 
@@ -571,7 +571,7 @@ class AccessConfigInfo:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this AccessConfigInfo.
+        r"""Sets the environment_id of this AccessConfigInfo.
 
         ServiceStage环境ID
 
@@ -582,7 +582,7 @@ class AccessConfigInfo:
 
     @property
     def component_id(self):
-        """Gets the component_id of this AccessConfigInfo.
+        r"""Gets the component_id of this AccessConfigInfo.
 
         ServiceStage组件ID
 
@@ -593,7 +593,7 @@ class AccessConfigInfo:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this AccessConfigInfo.
+        r"""Sets the component_id of this AccessConfigInfo.
 
         ServiceStage组件ID
 

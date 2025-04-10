@@ -29,7 +29,7 @@ class SetChargeModesBody:
     }
 
     def __init__(self, charge_mode=None, product_type=None, service_area=None):
-        """SetChargeModesBody
+        r"""SetChargeModesBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SetChargeModesBody:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this SetChargeModesBody.
+        r"""Gets the charge_mode of this SetChargeModesBody.
 
         计费模式，支持flux（流量），v2及以上客户支持bw（带宽）
 
@@ -65,7 +65,7 @@ class SetChargeModesBody:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this SetChargeModesBody.
+        r"""Sets the charge_mode of this SetChargeModesBody.
 
         计费模式，支持flux（流量），v2及以上客户支持bw（带宽）
 
@@ -76,7 +76,7 @@ class SetChargeModesBody:
 
     @property
     def product_type(self):
-        """Gets the product_type of this SetChargeModesBody.
+        r"""Gets the product_type of this SetChargeModesBody.
 
         产品模式，仅支持base（基础加速）
 
@@ -87,7 +87,7 @@ class SetChargeModesBody:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this SetChargeModesBody.
+        r"""Sets the product_type of this SetChargeModesBody.
 
         产品模式，仅支持base（基础加速）
 
@@ -98,7 +98,7 @@ class SetChargeModesBody:
 
     @property
     def service_area(self):
-        """Gets the service_area of this SetChargeModesBody.
+        r"""Gets the service_area of this SetChargeModesBody.
 
         服务区域，仅支持mainland_china（国内）
 
@@ -109,7 +109,7 @@ class SetChargeModesBody:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this SetChargeModesBody.
+        r"""Sets the service_area of this SetChargeModesBody.
 
         服务区域，仅支持mainland_china（国内）
 

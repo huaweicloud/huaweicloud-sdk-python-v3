@@ -27,7 +27,7 @@ class CreateChInstanceInfoTagsInfo:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """CreateChInstanceInfoTagsInfo
+        r"""CreateChInstanceInfoTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateChInstanceInfoTagsInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateChInstanceInfoTagsInfo.
+        r"""Gets the tags of this CreateChInstanceInfoTagsInfo.
 
         用户标签。
 
@@ -61,7 +61,7 @@ class CreateChInstanceInfoTagsInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateChInstanceInfoTagsInfo.
+        r"""Sets the tags of this CreateChInstanceInfoTagsInfo.
 
         用户标签。
 
@@ -72,7 +72,7 @@ class CreateChInstanceInfoTagsInfo:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CreateChInstanceInfoTagsInfo.
+        r"""Gets the sys_tags of this CreateChInstanceInfoTagsInfo.
 
         系统标签。
 
@@ -83,7 +83,7 @@ class CreateChInstanceInfoTagsInfo:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CreateChInstanceInfoTagsInfo.
+        r"""Sets the sys_tags of this CreateChInstanceInfoTagsInfo.
 
         系统标签。
 

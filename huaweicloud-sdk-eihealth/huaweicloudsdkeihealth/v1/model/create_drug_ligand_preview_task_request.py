@@ -27,7 +27,7 @@ class CreateDrugLigandPreviewTaskRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateDrugLigandPreviewTaskRequest
+        r"""CreateDrugLigandPreviewTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDrugLigandPreviewTaskRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateDrugLigandPreviewTaskRequest.
+        r"""Gets the eihealth_project_id of this CreateDrugLigandPreviewTaskRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateDrugLigandPreviewTaskRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateDrugLigandPreviewTaskRequest.
+        r"""Sets the eihealth_project_id of this CreateDrugLigandPreviewTaskRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateDrugLigandPreviewTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDrugLigandPreviewTaskRequest.
+        r"""Gets the body of this CreateDrugLigandPreviewTaskRequest.
 
         :return: The body of this CreateDrugLigandPreviewTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLigandPreviewTaskReq`
@@ -80,7 +80,7 @@ class CreateDrugLigandPreviewTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDrugLigandPreviewTaskRequest.
+        r"""Sets the body of this CreateDrugLigandPreviewTaskRequest.
 
         :param body: The body of this CreateDrugLigandPreviewTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateLigandPreviewTaskReq`

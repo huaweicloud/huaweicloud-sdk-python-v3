@@ -27,7 +27,7 @@ class ShowMetricsDataRequest:
     }
 
     def __init__(self, fill_value=None, body=None):
-        """ShowMetricsDataRequest
+        r"""ShowMetricsDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowMetricsDataRequest:
 
     @property
     def fill_value(self):
-        """Gets the fill_value of this ShowMetricsDataRequest.
+        r"""Gets the fill_value of this ShowMetricsDataRequest.
 
         用于对查询到的监控数据进行断点插值，默认值为-1。 -1：断点处使用-1进行表示。 0 ：断点处使用0进行表示。 null：断点处使用null进行表示。 average：断点处使用前后邻近的有效数据的平均值进行表示，如果不存在有效数据则使用null进行表示。
 
@@ -61,7 +61,7 @@ class ShowMetricsDataRequest:
 
     @fill_value.setter
     def fill_value(self, fill_value):
-        """Sets the fill_value of this ShowMetricsDataRequest.
+        r"""Sets the fill_value of this ShowMetricsDataRequest.
 
         用于对查询到的监控数据进行断点插值，默认值为-1。 -1：断点处使用-1进行表示。 0 ：断点处使用0进行表示。 null：断点处使用null进行表示。 average：断点处使用前后邻近的有效数据的平均值进行表示，如果不存在有效数据则使用null进行表示。
 
@@ -72,7 +72,7 @@ class ShowMetricsDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowMetricsDataRequest.
+        r"""Gets the body of this ShowMetricsDataRequest.
 
         :return: The body of this ShowMetricsDataRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.QueryMetricDataParam`
@@ -81,7 +81,7 @@ class ShowMetricsDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowMetricsDataRequest.
+        r"""Sets the body of this ShowMetricsDataRequest.
 
         :param body: The body of this ShowMetricsDataRequest.
         :type body: :class:`huaweicloudsdkaom.v2.QueryMetricDataParam`

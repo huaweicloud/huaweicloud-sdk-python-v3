@@ -25,7 +25,7 @@ class StopLogsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopLogsRequest
+        r"""StopLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopLogsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopLogsRequest.
+        r"""Gets the cluster_id of this StopLogsRequest.
 
         指定关闭日志的集群ID。
 
@@ -53,7 +53,7 @@ class StopLogsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopLogsRequest.
+        r"""Sets the cluster_id of this StopLogsRequest.
 
         指定关闭日志的集群ID。
 

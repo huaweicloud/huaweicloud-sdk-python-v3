@@ -90,7 +90,7 @@ class ShowComponentInfoResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, application_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, swimlane_id=None, envs=None, storages=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, deploy_strategy=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, status=None):
-        """ShowComponentInfoResponse
+        r"""ShowComponentInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -268,7 +268,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowComponentInfoResponse.
+        r"""Gets the name of this ShowComponentInfoResponse.
 
         :return: The name of this ShowComponentInfoResponse.
         :rtype: str
@@ -277,7 +277,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowComponentInfoResponse.
+        r"""Sets the name of this ShowComponentInfoResponse.
 
         :param name: The name of this ShowComponentInfoResponse.
         :type name: str
@@ -286,7 +286,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowComponentInfoResponse.
+        r"""Gets the description of this ShowComponentInfoResponse.
 
         :return: The description of this ShowComponentInfoResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowComponentInfoResponse.
+        r"""Sets the description of this ShowComponentInfoResponse.
 
         :param description: The description of this ShowComponentInfoResponse.
         :type description: str
@@ -304,7 +304,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowComponentInfoResponse.
+        r"""Gets the labels of this ShowComponentInfoResponse.
 
         :return: The labels of this ShowComponentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -313,7 +313,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowComponentInfoResponse.
+        r"""Sets the labels of this ShowComponentInfoResponse.
 
         :param labels: The labels of this ShowComponentInfoResponse.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -322,7 +322,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def runtime_stack(self):
-        """Gets the runtime_stack of this ShowComponentInfoResponse.
+        r"""Gets the runtime_stack of this ShowComponentInfoResponse.
 
         :return: The runtime_stack of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -331,7 +331,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @runtime_stack.setter
     def runtime_stack(self, runtime_stack):
-        """Sets the runtime_stack of this ShowComponentInfoResponse.
+        r"""Sets the runtime_stack of this ShowComponentInfoResponse.
 
         :param runtime_stack: The runtime_stack of this ShowComponentInfoResponse.
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -340,7 +340,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this ShowComponentInfoResponse.
+        r"""Gets the source of this ShowComponentInfoResponse.
 
         :return: The source of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -349,7 +349,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ShowComponentInfoResponse.
+        r"""Sets the source of this ShowComponentInfoResponse.
 
         :param source: The source of this ShowComponentInfoResponse.
         :type source: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -358,7 +358,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def build(self):
-        """Gets the build of this ShowComponentInfoResponse.
+        r"""Gets the build of this ShowComponentInfoResponse.
 
         :return: The build of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.Build`
@@ -367,7 +367,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ShowComponentInfoResponse.
+        r"""Sets the build of this ShowComponentInfoResponse.
 
         :param build: The build of this ShowComponentInfoResponse.
         :type build: :class:`huaweicloudsdkservicestage.v3.Build`
@@ -376,7 +376,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ShowComponentInfoResponse.
+        r"""Gets the environment_id of this ShowComponentInfoResponse.
 
         :return: The environment_id of this ShowComponentInfoResponse.
         :rtype: str
@@ -385,7 +385,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ShowComponentInfoResponse.
+        r"""Sets the environment_id of this ShowComponentInfoResponse.
 
         :param environment_id: The environment_id of this ShowComponentInfoResponse.
         :type environment_id: str
@@ -394,7 +394,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowComponentInfoResponse.
+        r"""Gets the application_id of this ShowComponentInfoResponse.
 
         :return: The application_id of this ShowComponentInfoResponse.
         :rtype: str
@@ -403,7 +403,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowComponentInfoResponse.
+        r"""Sets the application_id of this ShowComponentInfoResponse.
 
         :param application_id: The application_id of this ShowComponentInfoResponse.
         :type application_id: str
@@ -412,7 +412,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def limit_cpu(self):
-        """Gets the limit_cpu of this ShowComponentInfoResponse.
+        r"""Gets the limit_cpu of this ShowComponentInfoResponse.
 
         单位为Core
 
@@ -423,7 +423,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @limit_cpu.setter
     def limit_cpu(self, limit_cpu):
-        """Sets the limit_cpu of this ShowComponentInfoResponse.
+        r"""Sets the limit_cpu of this ShowComponentInfoResponse.
 
         单位为Core
 
@@ -434,7 +434,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def limit_memory(self):
-        """Gets the limit_memory of this ShowComponentInfoResponse.
+        r"""Gets the limit_memory of this ShowComponentInfoResponse.
 
         单位为GiB
 
@@ -445,7 +445,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @limit_memory.setter
     def limit_memory(self, limit_memory):
-        """Sets the limit_memory of this ShowComponentInfoResponse.
+        r"""Sets the limit_memory of this ShowComponentInfoResponse.
 
         单位为GiB
 
@@ -456,7 +456,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def request_cpu(self):
-        """Gets the request_cpu of this ShowComponentInfoResponse.
+        r"""Gets the request_cpu of this ShowComponentInfoResponse.
 
         单位为Core
 
@@ -467,7 +467,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @request_cpu.setter
     def request_cpu(self, request_cpu):
-        """Sets the request_cpu of this ShowComponentInfoResponse.
+        r"""Sets the request_cpu of this ShowComponentInfoResponse.
 
         单位为Core
 
@@ -478,7 +478,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def request_memory(self):
-        """Gets the request_memory of this ShowComponentInfoResponse.
+        r"""Gets the request_memory of this ShowComponentInfoResponse.
 
         单位为GiB
 
@@ -489,7 +489,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @request_memory.setter
     def request_memory(self, request_memory):
-        """Sets the request_memory of this ShowComponentInfoResponse.
+        r"""Sets the request_memory of this ShowComponentInfoResponse.
 
         单位为GiB
 
@@ -500,7 +500,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def replica(self):
-        """Gets the replica of this ShowComponentInfoResponse.
+        r"""Gets the replica of this ShowComponentInfoResponse.
 
         :return: The replica of this ShowComponentInfoResponse.
         :rtype: int
@@ -509,7 +509,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ShowComponentInfoResponse.
+        r"""Sets the replica of this ShowComponentInfoResponse.
 
         :param replica: The replica of this ShowComponentInfoResponse.
         :type replica: int
@@ -518,7 +518,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowComponentInfoResponse.
+        r"""Gets the version of this ShowComponentInfoResponse.
 
         :return: The version of this ShowComponentInfoResponse.
         :rtype: str
@@ -527,7 +527,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowComponentInfoResponse.
+        r"""Sets the version of this ShowComponentInfoResponse.
 
         :param version: The version of this ShowComponentInfoResponse.
         :type version: str
@@ -536,7 +536,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def swimlane_id(self):
-        """Gets the swimlane_id of this ShowComponentInfoResponse.
+        r"""Gets the swimlane_id of this ShowComponentInfoResponse.
 
         泳道id
 
@@ -547,7 +547,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @swimlane_id.setter
     def swimlane_id(self, swimlane_id):
-        """Sets the swimlane_id of this ShowComponentInfoResponse.
+        r"""Sets the swimlane_id of this ShowComponentInfoResponse.
 
         泳道id
 
@@ -558,7 +558,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def envs(self):
-        """Gets the envs of this ShowComponentInfoResponse.
+        r"""Gets the envs of this ShowComponentInfoResponse.
 
         :return: The envs of this ShowComponentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
@@ -567,7 +567,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ShowComponentInfoResponse.
+        r"""Sets the envs of this ShowComponentInfoResponse.
 
         :param envs: The envs of this ShowComponentInfoResponse.
         :type envs: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
@@ -576,7 +576,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def storages(self):
-        """Gets the storages of this ShowComponentInfoResponse.
+        r"""Gets the storages of this ShowComponentInfoResponse.
 
         :return: The storages of this ShowComponentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentStorage`]
@@ -585,7 +585,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @storages.setter
     def storages(self, storages):
-        """Sets the storages of this ShowComponentInfoResponse.
+        r"""Sets the storages of this ShowComponentInfoResponse.
 
         :param storages: The storages of this ShowComponentInfoResponse.
         :type storages: list[:class:`huaweicloudsdkservicestage.v3.ComponentStorage`]
@@ -594,7 +594,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def command(self):
-        """Gets the command of this ShowComponentInfoResponse.
+        r"""Gets the command of this ShowComponentInfoResponse.
 
         :return: The command of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCommand`
@@ -603,7 +603,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ShowComponentInfoResponse.
+        r"""Sets the command of this ShowComponentInfoResponse.
 
         :param command: The command of this ShowComponentInfoResponse.
         :type command: :class:`huaweicloudsdkservicestage.v3.ComponentCommand`
@@ -612,7 +612,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def post_start(self):
-        """Gets the post_start of this ShowComponentInfoResponse.
+        r"""Gets the post_start of this ShowComponentInfoResponse.
 
         :return: The post_start of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -621,7 +621,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @post_start.setter
     def post_start(self, post_start):
-        """Sets the post_start of this ShowComponentInfoResponse.
+        r"""Sets the post_start of this ShowComponentInfoResponse.
 
         :param post_start: The post_start of this ShowComponentInfoResponse.
         :type post_start: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -630,7 +630,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def pre_stop(self):
-        """Gets the pre_stop of this ShowComponentInfoResponse.
+        r"""Gets the pre_stop of this ShowComponentInfoResponse.
 
         :return: The pre_stop of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -639,7 +639,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @pre_stop.setter
     def pre_stop(self, pre_stop):
-        """Sets the pre_stop of this ShowComponentInfoResponse.
+        r"""Sets the pre_stop of this ShowComponentInfoResponse.
 
         :param pre_stop: The pre_stop of this ShowComponentInfoResponse.
         :type pre_stop: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -648,7 +648,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def timezone(self):
-        """Gets the timezone of this ShowComponentInfoResponse.
+        r"""Gets the timezone of this ShowComponentInfoResponse.
 
         指定组件运行的时区，比如Asia/Shanghai
 
@@ -659,7 +659,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this ShowComponentInfoResponse.
+        r"""Sets the timezone of this ShowComponentInfoResponse.
 
         指定组件运行的时区，比如Asia/Shanghai
 
@@ -670,7 +670,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def mesher(self):
-        """Gets the mesher of this ShowComponentInfoResponse.
+        r"""Gets the mesher of this ShowComponentInfoResponse.
 
         :return: The mesher of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.Mesher`
@@ -679,7 +679,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @mesher.setter
     def mesher(self, mesher):
-        """Sets the mesher of this ShowComponentInfoResponse.
+        r"""Sets the mesher of this ShowComponentInfoResponse.
 
         :param mesher: The mesher of this ShowComponentInfoResponse.
         :type mesher: :class:`huaweicloudsdkservicestage.v3.Mesher`
@@ -688,7 +688,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def deploy_strategy(self):
-        """Gets the deploy_strategy of this ShowComponentInfoResponse.
+        r"""Gets the deploy_strategy of this ShowComponentInfoResponse.
 
         :return: The deploy_strategy of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
@@ -697,7 +697,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @deploy_strategy.setter
     def deploy_strategy(self, deploy_strategy):
-        """Sets the deploy_strategy of this ShowComponentInfoResponse.
+        r"""Sets the deploy_strategy of this ShowComponentInfoResponse.
 
         :param deploy_strategy: The deploy_strategy of this ShowComponentInfoResponse.
         :type deploy_strategy: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
@@ -706,7 +706,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def jvm_opts(self):
-        """Gets the jvm_opts of this ShowComponentInfoResponse.
+        r"""Gets the jvm_opts of this ShowComponentInfoResponse.
 
         jvm参数
 
@@ -717,7 +717,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @jvm_opts.setter
     def jvm_opts(self, jvm_opts):
-        """Sets the jvm_opts of this ShowComponentInfoResponse.
+        r"""Sets the jvm_opts of this ShowComponentInfoResponse.
 
         jvm参数
 
@@ -728,7 +728,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def tomcat_opts(self):
-        """Gets the tomcat_opts of this ShowComponentInfoResponse.
+        r"""Gets the tomcat_opts of this ShowComponentInfoResponse.
 
         :return: The tomcat_opts of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentInfoTomcatOpts`
@@ -737,7 +737,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @tomcat_opts.setter
     def tomcat_opts(self, tomcat_opts):
-        """Sets the tomcat_opts of this ShowComponentInfoResponse.
+        r"""Sets the tomcat_opts of this ShowComponentInfoResponse.
 
         :param tomcat_opts: The tomcat_opts of this ShowComponentInfoResponse.
         :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentInfoTomcatOpts`
@@ -746,7 +746,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ShowComponentInfoResponse.
+        r"""Gets the logs of this ShowComponentInfoResponse.
 
         :return: The logs of this ShowComponentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
@@ -755,7 +755,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ShowComponentInfoResponse.
+        r"""Sets the logs of this ShowComponentInfoResponse.
 
         :param logs: The logs of this ShowComponentInfoResponse.
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
@@ -764,7 +764,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def custom_metric(self):
-        """Gets the custom_metric of this ShowComponentInfoResponse.
+        r"""Gets the custom_metric of this ShowComponentInfoResponse.
 
         :return: The custom_metric of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentInfoCustomMetric`
@@ -773,7 +773,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @custom_metric.setter
     def custom_metric(self, custom_metric):
-        """Sets the custom_metric of this ShowComponentInfoResponse.
+        r"""Sets the custom_metric of this ShowComponentInfoResponse.
 
         :param custom_metric: The custom_metric of this ShowComponentInfoResponse.
         :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentInfoCustomMetric`
@@ -782,7 +782,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def affinity(self):
-        """Gets the affinity of this ShowComponentInfoResponse.
+        r"""Gets the affinity of this ShowComponentInfoResponse.
 
         :return: The affinity of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -791,7 +791,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this ShowComponentInfoResponse.
+        r"""Sets the affinity of this ShowComponentInfoResponse.
 
         :param affinity: The affinity of this ShowComponentInfoResponse.
         :type affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -800,7 +800,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def anti_affinity(self):
-        """Gets the anti_affinity of this ShowComponentInfoResponse.
+        r"""Gets the anti_affinity of this ShowComponentInfoResponse.
 
         :return: The anti_affinity of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -809,7 +809,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @anti_affinity.setter
     def anti_affinity(self, anti_affinity):
-        """Sets the anti_affinity of this ShowComponentInfoResponse.
+        r"""Sets the anti_affinity of this ShowComponentInfoResponse.
 
         :param anti_affinity: The anti_affinity of this ShowComponentInfoResponse.
         :type anti_affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -818,7 +818,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ShowComponentInfoResponse.
+        r"""Gets the liveness_probe of this ShowComponentInfoResponse.
 
         :return: The liveness_probe of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -827,7 +827,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ShowComponentInfoResponse.
+        r"""Sets the liveness_probe of this ShowComponentInfoResponse.
 
         :param liveness_probe: The liveness_probe of this ShowComponentInfoResponse.
         :type liveness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -836,7 +836,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ShowComponentInfoResponse.
+        r"""Gets the readiness_probe of this ShowComponentInfoResponse.
 
         :return: The readiness_probe of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -845,7 +845,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ShowComponentInfoResponse.
+        r"""Sets the readiness_probe of this ShowComponentInfoResponse.
 
         :param readiness_probe: The readiness_probe of this ShowComponentInfoResponse.
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -854,7 +854,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this ShowComponentInfoResponse.
+        r"""Gets the refer_resources of this ShowComponentInfoResponse.
 
         :return: The refer_resources of this ShowComponentInfoResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
@@ -863,7 +863,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this ShowComponentInfoResponse.
+        r"""Sets the refer_resources of this ShowComponentInfoResponse.
 
         :param refer_resources: The refer_resources of this ShowComponentInfoResponse.
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
@@ -872,7 +872,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowComponentInfoResponse.
+        r"""Gets the status of this ShowComponentInfoResponse.
 
         :return: The status of this ShowComponentInfoResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentStatusView`
@@ -881,7 +881,7 @@ class ShowComponentInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowComponentInfoResponse.
+        r"""Sets the status of this ShowComponentInfoResponse.
 
         :param status: The status of this ShowComponentInfoResponse.
         :type status: :class:`huaweicloudsdkservicestage.v3.ComponentStatusView`

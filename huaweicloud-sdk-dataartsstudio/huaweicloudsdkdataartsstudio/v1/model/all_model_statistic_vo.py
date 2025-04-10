@@ -35,7 +35,7 @@ class AllModelStatisticVO:
     }
 
     def __init__(self, frequent=None, top=None, logic=None, physical=None, dwr=None, dm=None):
-        """AllModelStatisticVO
+        r"""AllModelStatisticVO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AllModelStatisticVO:
 
     @property
     def frequent(self):
-        """Gets the frequent of this AllModelStatisticVO.
+        r"""Gets the frequent of this AllModelStatisticVO.
 
         是否为常用。
 
@@ -89,7 +89,7 @@ class AllModelStatisticVO:
 
     @frequent.setter
     def frequent(self, frequent):
-        """Sets the frequent of this AllModelStatisticVO.
+        r"""Sets the frequent of this AllModelStatisticVO.
 
         是否为常用。
 
@@ -100,7 +100,7 @@ class AllModelStatisticVO:
 
     @property
     def top(self):
-        """Gets the top of this AllModelStatisticVO.
+        r"""Gets the top of this AllModelStatisticVO.
 
         首层模型。
 
@@ -111,7 +111,7 @@ class AllModelStatisticVO:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this AllModelStatisticVO.
+        r"""Sets the top of this AllModelStatisticVO.
 
         首层模型。
 
@@ -122,7 +122,7 @@ class AllModelStatisticVO:
 
     @property
     def logic(self):
-        """Gets the logic of this AllModelStatisticVO.
+        r"""Gets the logic of this AllModelStatisticVO.
 
         逻辑模型。
 
@@ -133,7 +133,7 @@ class AllModelStatisticVO:
 
     @logic.setter
     def logic(self, logic):
-        """Sets the logic of this AllModelStatisticVO.
+        r"""Sets the logic of this AllModelStatisticVO.
 
         逻辑模型。
 
@@ -144,7 +144,7 @@ class AllModelStatisticVO:
 
     @property
     def physical(self):
-        """Gets the physical of this AllModelStatisticVO.
+        r"""Gets the physical of this AllModelStatisticVO.
 
         物理模型。
 
@@ -155,7 +155,7 @@ class AllModelStatisticVO:
 
     @physical.setter
     def physical(self, physical):
-        """Sets the physical of this AllModelStatisticVO.
+        r"""Sets the physical of this AllModelStatisticVO.
 
         物理模型。
 
@@ -166,7 +166,7 @@ class AllModelStatisticVO:
 
     @property
     def dwr(self):
-        """Gets the dwr of this AllModelStatisticVO.
+        r"""Gets the dwr of this AllModelStatisticVO.
 
         :return: The dwr of this AllModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModelStatisticVO`
@@ -175,7 +175,7 @@ class AllModelStatisticVO:
 
     @dwr.setter
     def dwr(self, dwr):
-        """Sets the dwr of this AllModelStatisticVO.
+        r"""Sets the dwr of this AllModelStatisticVO.
 
         :param dwr: The dwr of this AllModelStatisticVO.
         :type dwr: :class:`huaweicloudsdkdataartsstudio.v1.ModelStatisticVO`
@@ -184,7 +184,7 @@ class AllModelStatisticVO:
 
     @property
     def dm(self):
-        """Gets the dm of this AllModelStatisticVO.
+        r"""Gets the dm of this AllModelStatisticVO.
 
         :return: The dm of this AllModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModelStatisticVO`
@@ -193,7 +193,7 @@ class AllModelStatisticVO:
 
     @dm.setter
     def dm(self, dm):
-        """Sets the dm of this AllModelStatisticVO.
+        r"""Sets the dm of this AllModelStatisticVO.
 
         :param dm: The dm of this AllModelStatisticVO.
         :type dm: :class:`huaweicloudsdkdataartsstudio.v1.ModelStatisticVO`

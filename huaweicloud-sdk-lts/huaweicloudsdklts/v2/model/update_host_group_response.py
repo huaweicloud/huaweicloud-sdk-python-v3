@@ -38,7 +38,7 @@ class UpdateHostGroupResponse(SdkResponse):
     }
 
     def __init__(self, host_group_id=None, host_group_name=None, host_group_type=None, host_id_list=None, host_group_tag=None, create_time=None, update_time=None):
-        """UpdateHostGroupResponse
+        r"""UpdateHostGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def host_group_id(self):
-        """Gets the host_group_id of this UpdateHostGroupResponse.
+        r"""Gets the host_group_id of this UpdateHostGroupResponse.
 
         主机组ID
 
@@ -97,7 +97,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @host_group_id.setter
     def host_group_id(self, host_group_id):
-        """Sets the host_group_id of this UpdateHostGroupResponse.
+        r"""Sets the host_group_id of this UpdateHostGroupResponse.
 
         主机组ID
 
@@ -108,7 +108,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def host_group_name(self):
-        """Gets the host_group_name of this UpdateHostGroupResponse.
+        r"""Gets the host_group_name of this UpdateHostGroupResponse.
 
         主机组名称
 
@@ -119,7 +119,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @host_group_name.setter
     def host_group_name(self, host_group_name):
-        """Sets the host_group_name of this UpdateHostGroupResponse.
+        r"""Sets the host_group_name of this UpdateHostGroupResponse.
 
         主机组名称
 
@@ -130,7 +130,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def host_group_type(self):
-        """Gets the host_group_type of this UpdateHostGroupResponse.
+        r"""Gets the host_group_type of this UpdateHostGroupResponse.
 
         主机组类型。linux：linux类型，windows：windows类型
 
@@ -141,7 +141,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @host_group_type.setter
     def host_group_type(self, host_group_type):
-        """Sets the host_group_type of this UpdateHostGroupResponse.
+        r"""Sets the host_group_type of this UpdateHostGroupResponse.
 
         主机组类型。linux：linux类型，windows：windows类型
 
@@ -152,7 +152,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this UpdateHostGroupResponse.
+        r"""Gets the host_id_list of this UpdateHostGroupResponse.
 
         主机ID列表
 
@@ -163,7 +163,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this UpdateHostGroupResponse.
+        r"""Sets the host_id_list of this UpdateHostGroupResponse.
 
         主机ID列表
 
@@ -174,7 +174,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def host_group_tag(self):
-        """Gets the host_group_tag of this UpdateHostGroupResponse.
+        r"""Gets the host_group_tag of this UpdateHostGroupResponse.
 
         标签信息
 
@@ -185,7 +185,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @host_group_tag.setter
     def host_group_tag(self, host_group_tag):
-        """Sets the host_group_tag of this UpdateHostGroupResponse.
+        r"""Sets the host_group_tag of this UpdateHostGroupResponse.
 
         标签信息
 
@@ -196,7 +196,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateHostGroupResponse.
+        r"""Gets the create_time of this UpdateHostGroupResponse.
 
         创建时间
 
@@ -207,7 +207,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateHostGroupResponse.
+        r"""Sets the create_time of this UpdateHostGroupResponse.
 
         创建时间
 
@@ -218,7 +218,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateHostGroupResponse.
+        r"""Gets the update_time of this UpdateHostGroupResponse.
 
         更新时间
 
@@ -229,7 +229,7 @@ class UpdateHostGroupResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateHostGroupResponse.
+        r"""Sets the update_time of this UpdateHostGroupResponse.
 
         更新时间
 

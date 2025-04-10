@@ -53,7 +53,7 @@ class OpenEntitySearchRequest:
     }
 
     def __init__(self, query=None, type_names=None, connection_names=None, search_all_attributes=None, tags=None, limit=None, offset=None, attributes=None, filter_criteria=None, time_range=None, scroll_id=None, security_levels=None, is_import=None, classifications=None, description=None):
-        """OpenEntitySearchRequest
+        r"""OpenEntitySearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -138,7 +138,7 @@ class OpenEntitySearchRequest:
 
     @property
     def query(self):
-        """Gets the query of this OpenEntitySearchRequest.
+        r"""Gets the query of this OpenEntitySearchRequest.
 
         查询关键字
 
@@ -149,7 +149,7 @@ class OpenEntitySearchRequest:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this OpenEntitySearchRequest.
+        r"""Sets the query of this OpenEntitySearchRequest.
 
         查询关键字
 
@@ -160,7 +160,7 @@ class OpenEntitySearchRequest:
 
     @property
     def type_names(self):
-        """Gets the type_names of this OpenEntitySearchRequest.
+        r"""Gets the type_names of this OpenEntitySearchRequest.
 
         分类名称 List<String>
 
@@ -171,7 +171,7 @@ class OpenEntitySearchRequest:
 
     @type_names.setter
     def type_names(self, type_names):
-        """Sets the type_names of this OpenEntitySearchRequest.
+        r"""Sets the type_names of this OpenEntitySearchRequest.
 
         分类名称 List<String>
 
@@ -182,7 +182,7 @@ class OpenEntitySearchRequest:
 
     @property
     def connection_names(self):
-        """Gets the connection_names of this OpenEntitySearchRequest.
+        r"""Gets the connection_names of this OpenEntitySearchRequest.
 
         List<String> 连接名称
 
@@ -193,7 +193,7 @@ class OpenEntitySearchRequest:
 
     @connection_names.setter
     def connection_names(self, connection_names):
-        """Sets the connection_names of this OpenEntitySearchRequest.
+        r"""Sets the connection_names of this OpenEntitySearchRequest.
 
         List<String> 连接名称
 
@@ -204,7 +204,7 @@ class OpenEntitySearchRequest:
 
     @property
     def search_all_attributes(self):
-        """Gets the search_all_attributes of this OpenEntitySearchRequest.
+        r"""Gets the search_all_attributes of this OpenEntitySearchRequest.
 
         查询关键字是否匹配资产的名称描述信息，true:匹配所有属性，false:只匹配名称、描述，默认false
 
@@ -215,7 +215,7 @@ class OpenEntitySearchRequest:
 
     @search_all_attributes.setter
     def search_all_attributes(self, search_all_attributes):
-        """Sets the search_all_attributes of this OpenEntitySearchRequest.
+        r"""Sets the search_all_attributes of this OpenEntitySearchRequest.
 
         查询关键字是否匹配资产的名称描述信息，true:匹配所有属性，false:只匹配名称、描述，默认false
 
@@ -226,7 +226,7 @@ class OpenEntitySearchRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this OpenEntitySearchRequest.
+        r"""Gets the tags of this OpenEntitySearchRequest.
 
         List<String> 标签的名称
 
@@ -237,7 +237,7 @@ class OpenEntitySearchRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this OpenEntitySearchRequest.
+        r"""Sets the tags of this OpenEntitySearchRequest.
 
         List<String> 标签的名称
 
@@ -248,7 +248,7 @@ class OpenEntitySearchRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this OpenEntitySearchRequest.
+        r"""Gets the limit of this OpenEntitySearchRequest.
 
         分页显示每页返回结果数。默认值，10
 
@@ -259,7 +259,7 @@ class OpenEntitySearchRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this OpenEntitySearchRequest.
+        r"""Sets the limit of this OpenEntitySearchRequest.
 
         分页显示每页返回结果数。默认值，10
 
@@ -270,7 +270,7 @@ class OpenEntitySearchRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this OpenEntitySearchRequest.
+        r"""Gets the offset of this OpenEntitySearchRequest.
 
         偏移量，默认值，0
 
@@ -281,7 +281,7 @@ class OpenEntitySearchRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this OpenEntitySearchRequest.
+        r"""Sets the offset of this OpenEntitySearchRequest.
 
         偏移量，默认值，0
 
@@ -292,7 +292,7 @@ class OpenEntitySearchRequest:
 
     @property
     def attributes(self):
-        """Gets the attributes of this OpenEntitySearchRequest.
+        r"""Gets the attributes of this OpenEntitySearchRequest.
 
         key当前支持Table，value可为以下中的一个或多个：rowCounts、tableSize、database、schema、namespace、ddlUpdateTime、dataUpdateTime、ddlCreateTime Map<String,Set<String>>
 
@@ -303,7 +303,7 @@ class OpenEntitySearchRequest:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this OpenEntitySearchRequest.
+        r"""Sets the attributes of this OpenEntitySearchRequest.
 
         key当前支持Table，value可为以下中的一个或多个：rowCounts、tableSize、database、schema、namespace、ddlUpdateTime、dataUpdateTime、ddlCreateTime Map<String,Set<String>>
 
@@ -314,7 +314,7 @@ class OpenEntitySearchRequest:
 
     @property
     def filter_criteria(self):
-        """Gets the filter_criteria of this OpenEntitySearchRequest.
+        r"""Gets the filter_criteria of this OpenEntitySearchRequest.
 
         :return: The filter_criteria of this OpenEntitySearchRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.FilterCriteria`
@@ -323,7 +323,7 @@ class OpenEntitySearchRequest:
 
     @filter_criteria.setter
     def filter_criteria(self, filter_criteria):
-        """Sets the filter_criteria of this OpenEntitySearchRequest.
+        r"""Sets the filter_criteria of this OpenEntitySearchRequest.
 
         :param filter_criteria: The filter_criteria of this OpenEntitySearchRequest.
         :type filter_criteria: :class:`huaweicloudsdkdataartsstudio.v1.FilterCriteria`
@@ -332,7 +332,7 @@ class OpenEntitySearchRequest:
 
     @property
     def time_range(self):
-        """Gets the time_range of this OpenEntitySearchRequest.
+        r"""Gets the time_range of this OpenEntitySearchRequest.
 
         :return: The time_range of this OpenEntitySearchRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TimeRange`
@@ -341,7 +341,7 @@ class OpenEntitySearchRequest:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this OpenEntitySearchRequest.
+        r"""Sets the time_range of this OpenEntitySearchRequest.
 
         :param time_range: The time_range of this OpenEntitySearchRequest.
         :type time_range: :class:`huaweicloudsdkdataartsstudio.v1.TimeRange`
@@ -350,7 +350,7 @@ class OpenEntitySearchRequest:
 
     @property
     def scroll_id(self):
-        """Gets the scroll_id of this OpenEntitySearchRequest.
+        r"""Gets the scroll_id of this OpenEntitySearchRequest.
 
         scroll_id
 
@@ -361,7 +361,7 @@ class OpenEntitySearchRequest:
 
     @scroll_id.setter
     def scroll_id(self, scroll_id):
-        """Sets the scroll_id of this OpenEntitySearchRequest.
+        r"""Sets the scroll_id of this OpenEntitySearchRequest.
 
         scroll_id
 
@@ -372,7 +372,7 @@ class OpenEntitySearchRequest:
 
     @property
     def security_levels(self):
-        """Gets the security_levels of this OpenEntitySearchRequest.
+        r"""Gets the security_levels of this OpenEntitySearchRequest.
 
         List<String> 安全级别
 
@@ -383,7 +383,7 @@ class OpenEntitySearchRequest:
 
     @security_levels.setter
     def security_levels(self, security_levels):
-        """Sets the security_levels of this OpenEntitySearchRequest.
+        r"""Sets the security_levels of this OpenEntitySearchRequest.
 
         List<String> 安全级别
 
@@ -394,7 +394,7 @@ class OpenEntitySearchRequest:
 
     @property
     def is_import(self):
-        """Gets the is_import of this OpenEntitySearchRequest.
+        r"""Gets the is_import of this OpenEntitySearchRequest.
 
         是否导入
 
@@ -405,7 +405,7 @@ class OpenEntitySearchRequest:
 
     @is_import.setter
     def is_import(self, is_import):
-        """Sets the is_import of this OpenEntitySearchRequest.
+        r"""Sets the is_import of this OpenEntitySearchRequest.
 
         是否导入
 
@@ -416,7 +416,7 @@ class OpenEntitySearchRequest:
 
     @property
     def classifications(self):
-        """Gets the classifications of this OpenEntitySearchRequest.
+        r"""Gets the classifications of this OpenEntitySearchRequest.
 
         List<String> 分类
 
@@ -427,7 +427,7 @@ class OpenEntitySearchRequest:
 
     @classifications.setter
     def classifications(self, classifications):
-        """Sets the classifications of this OpenEntitySearchRequest.
+        r"""Sets the classifications of this OpenEntitySearchRequest.
 
         List<String> 分类
 
@@ -438,7 +438,7 @@ class OpenEntitySearchRequest:
 
     @property
     def description(self):
-        """Gets the description of this OpenEntitySearchRequest.
+        r"""Gets the description of this OpenEntitySearchRequest.
 
         描述
 
@@ -449,7 +449,7 @@ class OpenEntitySearchRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenEntitySearchRequest.
+        r"""Sets the description of this OpenEntitySearchRequest.
 
         描述
 

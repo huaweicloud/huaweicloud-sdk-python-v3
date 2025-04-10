@@ -23,7 +23,7 @@ class ListDomainCertTagsRequest:
     }
 
     def __init__(self):
-        """ListDomainCertTagsRequest
+        r"""ListDomainCertTagsRequest
 
         The model defined in huaweicloud sdk
 

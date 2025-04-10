@@ -47,7 +47,7 @@ class MetaData:
     }
 
     def __init__(self, pack_type=None, codec=None, duration=None, duration_ms=None, video_size=None, width=None, hight=None, height=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
-        """MetaData
+        r"""MetaData
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class MetaData:
 
     @property
     def pack_type(self):
-        """Gets the pack_type of this MetaData.
+        r"""Gets the pack_type of this MetaData.
 
         视频封装格式。  取值如下： - MP4 - TS - MOV - MXF - MPG - FLV - WMV - MP3 - WMA - APE - FLAC - AAC - AC3 - MMF - AMR - M4A - M4R - OGG - WAV - WV - MP2 - AVI - F4V - M4V - MPEG - HLS - DASH
 
@@ -131,7 +131,7 @@ class MetaData:
 
     @pack_type.setter
     def pack_type(self, pack_type):
-        """Sets the pack_type of this MetaData.
+        r"""Sets the pack_type of this MetaData.
 
         视频封装格式。  取值如下： - MP4 - TS - MOV - MXF - MPG - FLV - WMV - MP3 - WMA - APE - FLAC - AAC - AC3 - MMF - AMR - M4A - M4R - OGG - WAV - WV - MP2 - AVI - F4V - M4V - MPEG - HLS - DASH
 
@@ -142,7 +142,7 @@ class MetaData:
 
     @property
     def codec(self):
-        """Gets the codec of this MetaData.
+        r"""Gets the codec of this MetaData.
 
         视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
@@ -153,7 +153,7 @@ class MetaData:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this MetaData.
+        r"""Sets the codec of this MetaData.
 
         视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
@@ -164,7 +164,7 @@ class MetaData:
 
     @property
     def duration(self):
-        """Gets the duration of this MetaData.
+        r"""Gets the duration of this MetaData.
 
         视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
 
@@ -175,7 +175,7 @@ class MetaData:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this MetaData.
+        r"""Sets the duration of this MetaData.
 
         视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
 
@@ -186,7 +186,7 @@ class MetaData:
 
     @property
     def duration_ms(self):
-        """Gets the duration_ms of this MetaData.
+        r"""Gets the duration_ms of this MetaData.
 
         视频时长，单位毫秒。
 
@@ -197,7 +197,7 @@ class MetaData:
 
     @duration_ms.setter
     def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this MetaData.
+        r"""Sets the duration_ms of this MetaData.
 
         视频时长，单位毫秒。
 
@@ -208,7 +208,7 @@ class MetaData:
 
     @property
     def video_size(self):
-        """Gets the video_size of this MetaData.
+        r"""Gets the video_size of this MetaData.
 
         视频文件大小。  单位：字节。
 
@@ -219,7 +219,7 @@ class MetaData:
 
     @video_size.setter
     def video_size(self, video_size):
-        """Sets the video_size of this MetaData.
+        r"""Sets the video_size of this MetaData.
 
         视频文件大小。  单位：字节。
 
@@ -230,7 +230,7 @@ class MetaData:
 
     @property
     def width(self):
-        """Gets the width of this MetaData.
+        r"""Gets the width of this MetaData.
 
         视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
 
@@ -241,7 +241,7 @@ class MetaData:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this MetaData.
+        r"""Sets the width of this MetaData.
 
         视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
 
@@ -252,7 +252,7 @@ class MetaData:
 
     @property
     def hight(self):
-        """Gets the hight of this MetaData.
+        r"""Gets the hight of this MetaData.
 
         视频高度（单位：像素）。该字段会逐渐废弃，请使用height字段。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
@@ -263,7 +263,7 @@ class MetaData:
 
     @hight.setter
     def hight(self, hight):
-        """Sets the hight of this MetaData.
+        r"""Sets the hight of this MetaData.
 
         视频高度（单位：像素）。该字段会逐渐废弃，请使用height字段。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
@@ -274,7 +274,7 @@ class MetaData:
 
     @property
     def height(self):
-        """Gets the height of this MetaData.
+        r"""Gets the height of this MetaData.
 
         视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
@@ -285,7 +285,7 @@ class MetaData:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MetaData.
+        r"""Sets the height of this MetaData.
 
         视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
@@ -296,7 +296,7 @@ class MetaData:
 
     @property
     def bit_rate(self):
-        """Gets the bit_rate of this MetaData.
+        r"""Gets the bit_rate of this MetaData.
 
         视频平均码率。
 
@@ -307,7 +307,7 @@ class MetaData:
 
     @bit_rate.setter
     def bit_rate(self, bit_rate):
-        """Sets the bit_rate of this MetaData.
+        r"""Sets the bit_rate of this MetaData.
 
         视频平均码率。
 
@@ -318,7 +318,7 @@ class MetaData:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this MetaData.
+        r"""Gets the frame_rate of this MetaData.
 
         帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10  默认值：1。  单位：帧每秒。
 
@@ -329,7 +329,7 @@ class MetaData:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this MetaData.
+        r"""Sets the frame_rate of this MetaData.
 
         帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10  默认值：1。  单位：帧每秒。
 
@@ -340,7 +340,7 @@ class MetaData:
 
     @property
     def quality(self):
-        """Gets the quality of this MetaData.
+        r"""Gets the quality of this MetaData.
 
         清晰度。  取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
@@ -351,7 +351,7 @@ class MetaData:
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this MetaData.
+        r"""Sets the quality of this MetaData.
 
         清晰度。  取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
@@ -362,7 +362,7 @@ class MetaData:
 
     @property
     def audio_channels(self):
-        """Gets the audio_channels of this MetaData.
+        r"""Gets the audio_channels of this MetaData.
 
         音频的声道数。
 
@@ -373,7 +373,7 @@ class MetaData:
 
     @audio_channels.setter
     def audio_channels(self, audio_channels):
-        """Sets the audio_channels of this MetaData.
+        r"""Sets the audio_channels of this MetaData.
 
         音频的声道数。
 

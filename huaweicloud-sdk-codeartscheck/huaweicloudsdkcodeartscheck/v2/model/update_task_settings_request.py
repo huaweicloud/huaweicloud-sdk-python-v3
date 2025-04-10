@@ -29,7 +29,7 @@ class UpdateTaskSettingsRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, body=None):
-        """UpdateTaskSettingsRequest
+        r"""UpdateTaskSettingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTaskSettingsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTaskSettingsRequest.
+        r"""Gets the project_id of this UpdateTaskSettingsRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class UpdateTaskSettingsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTaskSettingsRequest.
+        r"""Sets the project_id of this UpdateTaskSettingsRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class UpdateTaskSettingsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskSettingsRequest.
+        r"""Gets the task_id of this UpdateTaskSettingsRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class UpdateTaskSettingsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskSettingsRequest.
+        r"""Sets the task_id of this UpdateTaskSettingsRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class UpdateTaskSettingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskSettingsRequest.
+        r"""Gets the body of this UpdateTaskSettingsRequest.
 
         :return: The body of this UpdateTaskSettingsRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskSettingsRequestBody`
@@ -108,7 +108,7 @@ class UpdateTaskSettingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskSettingsRequest.
+        r"""Sets the body of this UpdateTaskSettingsRequest.
 
         :param body: The body of this UpdateTaskSettingsRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskSettingsRequestBody`

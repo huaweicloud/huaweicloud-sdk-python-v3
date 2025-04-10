@@ -31,7 +31,7 @@ class TenantAgreeAuthDetailV2:
     }
 
     def __init__(self, port=None, account=None, password=None, auth_detail_id=None):
-        """TenantAgreeAuthDetailV2
+        r"""TenantAgreeAuthDetailV2
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class TenantAgreeAuthDetailV2:
 
     @property
     def port(self):
-        """Gets the port of this TenantAgreeAuthDetailV2.
+        r"""Gets the port of this TenantAgreeAuthDetailV2.
 
         端口
 
@@ -74,7 +74,7 @@ class TenantAgreeAuthDetailV2:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this TenantAgreeAuthDetailV2.
+        r"""Sets the port of this TenantAgreeAuthDetailV2.
 
         端口
 
@@ -85,7 +85,7 @@ class TenantAgreeAuthDetailV2:
 
     @property
     def account(self):
-        """Gets the account of this TenantAgreeAuthDetailV2.
+        r"""Gets the account of this TenantAgreeAuthDetailV2.
 
         账号
 
@@ -96,7 +96,7 @@ class TenantAgreeAuthDetailV2:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this TenantAgreeAuthDetailV2.
+        r"""Sets the account of this TenantAgreeAuthDetailV2.
 
         账号
 
@@ -107,7 +107,7 @@ class TenantAgreeAuthDetailV2:
 
     @property
     def password(self):
-        """Gets the password of this TenantAgreeAuthDetailV2.
+        r"""Gets the password of this TenantAgreeAuthDetailV2.
 
         密码
 
@@ -118,7 +118,7 @@ class TenantAgreeAuthDetailV2:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this TenantAgreeAuthDetailV2.
+        r"""Sets the password of this TenantAgreeAuthDetailV2.
 
         密码
 
@@ -129,7 +129,7 @@ class TenantAgreeAuthDetailV2:
 
     @property
     def auth_detail_id(self):
-        """Gets the auth_detail_id of this TenantAgreeAuthDetailV2.
+        r"""Gets the auth_detail_id of this TenantAgreeAuthDetailV2.
 
         授权详情id
 
@@ -140,7 +140,7 @@ class TenantAgreeAuthDetailV2:
 
     @auth_detail_id.setter
     def auth_detail_id(self, auth_detail_id):
-        """Sets the auth_detail_id of this TenantAgreeAuthDetailV2.
+        r"""Sets the auth_detail_id of this TenantAgreeAuthDetailV2.
 
         授权详情id
 

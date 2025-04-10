@@ -29,7 +29,7 @@ class AddDataRestInfoImageInfoObjects:
     }
 
     def __init__(self, box=None, category=None, category_name=None):
-        """AddDataRestInfoImageInfoObjects
+        r"""AddDataRestInfoImageInfoObjects
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AddDataRestInfoImageInfoObjects:
 
     @property
     def box(self):
-        """Gets the box of this AddDataRestInfoImageInfoObjects.
+        r"""Gets the box of this AddDataRestInfoImageInfoObjects.
 
         主体目标框。
 
@@ -68,7 +68,7 @@ class AddDataRestInfoImageInfoObjects:
 
     @box.setter
     def box(self, box):
-        """Sets the box of this AddDataRestInfoImageInfoObjects.
+        r"""Sets the box of this AddDataRestInfoImageInfoObjects.
 
         主体目标框。
 
@@ -79,7 +79,7 @@ class AddDataRestInfoImageInfoObjects:
 
     @property
     def category(self):
-        """Gets the category of this AddDataRestInfoImageInfoObjects.
+        r"""Gets the category of this AddDataRestInfoImageInfoObjects.
 
         主体类目序号。
 
@@ -90,7 +90,7 @@ class AddDataRestInfoImageInfoObjects:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AddDataRestInfoImageInfoObjects.
+        r"""Sets the category of this AddDataRestInfoImageInfoObjects.
 
         主体类目序号。
 
@@ -101,7 +101,7 @@ class AddDataRestInfoImageInfoObjects:
 
     @property
     def category_name(self):
-        """Gets the category_name of this AddDataRestInfoImageInfoObjects.
+        r"""Gets the category_name of this AddDataRestInfoImageInfoObjects.
 
         主体类目名称。
 
@@ -112,7 +112,7 @@ class AddDataRestInfoImageInfoObjects:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this AddDataRestInfoImageInfoObjects.
+        r"""Sets the category_name of this AddDataRestInfoImageInfoObjects.
 
         主体类目名称。
 

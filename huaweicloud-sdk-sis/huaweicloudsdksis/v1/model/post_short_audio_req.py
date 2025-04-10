@@ -27,7 +27,7 @@ class PostShortAudioReq:
     }
 
     def __init__(self, config=None, data=None):
-        """PostShortAudioReq
+        r"""PostShortAudioReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PostShortAudioReq:
 
     @property
     def config(self):
-        """Gets the config of this PostShortAudioReq.
+        r"""Gets the config of this PostShortAudioReq.
 
         :return: The config of this PostShortAudioReq.
         :rtype: :class:`huaweicloudsdksis.v1.Config`
@@ -57,7 +57,7 @@ class PostShortAudioReq:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this PostShortAudioReq.
+        r"""Sets the config of this PostShortAudioReq.
 
         :param config: The config of this PostShortAudioReq.
         :type config: :class:`huaweicloudsdksis.v1.Config`
@@ -66,7 +66,7 @@ class PostShortAudioReq:
 
     @property
     def data(self):
-        """Gets the data of this PostShortAudioReq.
+        r"""Gets the data of this PostShortAudioReq.
 
         语音数据，base64编码，要求base64编码后大小不超过4M，音频时长不超过1分钟。
 
@@ -77,7 +77,7 @@ class PostShortAudioReq:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PostShortAudioReq.
+        r"""Sets the data of this PostShortAudioReq.
 
         语音数据，base64编码，要求base64编码后大小不超过4M，音频时长不超过1分钟。
 

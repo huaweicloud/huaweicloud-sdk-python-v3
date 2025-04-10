@@ -30,7 +30,7 @@ class ShowAlertConfigResponse(SdkResponse):
     }
 
     def __init__(self, topic_urn=None, display_name=None, warn_config=None):
-        """ShowAlertConfigResponse
+        r"""ShowAlertConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ShowAlertConfigResponse.
+        r"""Gets the topic_urn of this ShowAlertConfigResponse.
 
         告警群组的唯一标识
 
@@ -69,7 +69,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ShowAlertConfigResponse.
+        r"""Sets the topic_urn of this ShowAlertConfigResponse.
 
         告警群组的唯一标识
 
@@ -80,7 +80,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowAlertConfigResponse.
+        r"""Gets the display_name of this ShowAlertConfigResponse.
 
         告警群组描述
 
@@ -91,7 +91,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowAlertConfigResponse.
+        r"""Sets the display_name of this ShowAlertConfigResponse.
 
         告警群组描述
 
@@ -102,7 +102,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
     @property
     def warn_config(self):
-        """Gets the warn_config of this ShowAlertConfigResponse.
+        r"""Gets the warn_config of this ShowAlertConfigResponse.
 
         :return: The warn_config of this ShowAlertConfigResponse.
         :rtype: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`
@@ -111,7 +111,7 @@ class ShowAlertConfigResponse(SdkResponse):
 
     @warn_config.setter
     def warn_config(self, warn_config):
-        """Sets the warn_config of this ShowAlertConfigResponse.
+        r"""Sets the warn_config of this ShowAlertConfigResponse.
 
         :param warn_config: The warn_config of this ShowAlertConfigResponse.
         :type warn_config: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`

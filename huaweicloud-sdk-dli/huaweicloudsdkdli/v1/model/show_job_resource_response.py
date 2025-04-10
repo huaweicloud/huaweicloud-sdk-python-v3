@@ -38,7 +38,7 @@ class ShowJobResourceResponse(SdkResponse):
     }
 
     def __init__(self, create_time=None, update_time=None, resource_type=None, resource_name=None, status=None, underlying_name=None, owner=None):
-        """ShowJobResourceResponse
+        r"""ShowJobResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowJobResourceResponse.
+        r"""Gets the create_time of this ShowJobResourceResponse.
 
         资源包上传的unix时间。是单位为“毫秒”的时间戳。
 
@@ -97,7 +97,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowJobResourceResponse.
+        r"""Sets the create_time of this ShowJobResourceResponse.
 
         资源包上传的unix时间。是单位为“毫秒”的时间戳。
 
@@ -108,7 +108,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowJobResourceResponse.
+        r"""Gets the update_time of this ShowJobResourceResponse.
 
         更新已上传资源包的unix时间。是单位为“毫秒”的时间戳。
 
@@ -119,7 +119,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowJobResourceResponse.
+        r"""Sets the update_time of this ShowJobResourceResponse.
 
         更新已上传资源包的unix时间。是单位为“毫秒”的时间戳。
 
@@ -130,7 +130,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowJobResourceResponse.
+        r"""Gets the resource_type of this ShowJobResourceResponse.
 
         资源类型。
 
@@ -141,7 +141,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowJobResourceResponse.
+        r"""Sets the resource_type of this ShowJobResourceResponse.
 
         资源类型。
 
@@ -152,7 +152,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ShowJobResourceResponse.
+        r"""Gets the resource_name of this ShowJobResourceResponse.
 
         资源名。
 
@@ -163,7 +163,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ShowJobResourceResponse.
+        r"""Sets the resource_name of this ShowJobResourceResponse.
 
         资源名。
 
@@ -174,7 +174,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobResourceResponse.
+        r"""Gets the status of this ShowJobResourceResponse.
 
         \"UPLOADING\"表示正在上传 \"READY\"表示资源包已上传 \"FAILED\"表示资源包上传失败
 
@@ -185,7 +185,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobResourceResponse.
+        r"""Sets the status of this ShowJobResourceResponse.
 
         \"UPLOADING\"表示正在上传 \"READY\"表示资源包已上传 \"FAILED\"表示资源包上传失败
 
@@ -196,7 +196,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def underlying_name(self):
-        """Gets the underlying_name of this ShowJobResourceResponse.
+        r"""Gets the underlying_name of this ShowJobResourceResponse.
 
         资源包在队列中的名字。
 
@@ -207,7 +207,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @underlying_name.setter
     def underlying_name(self, underlying_name):
-        """Sets the underlying_name of this ShowJobResourceResponse.
+        r"""Sets the underlying_name of this ShowJobResourceResponse.
 
         资源包在队列中的名字。
 
@@ -218,7 +218,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowJobResourceResponse.
+        r"""Gets the owner of this ShowJobResourceResponse.
 
         资源包拥有者
 
@@ -229,7 +229,7 @@ class ShowJobResourceResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowJobResourceResponse.
+        r"""Sets the owner of this ShowJobResourceResponse.
 
         资源包拥有者
 

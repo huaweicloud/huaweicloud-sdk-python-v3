@@ -29,7 +29,7 @@ class ListTestCaseHistoriesRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, version_id=None):
-        """ListTestCaseHistoriesRequestBody
+        r"""ListTestCaseHistoriesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListTestCaseHistoriesRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTestCaseHistoriesRequestBody.
+        r"""Gets the offset of this ListTestCaseHistoriesRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于20000
 
@@ -65,7 +65,7 @@ class ListTestCaseHistoriesRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTestCaseHistoriesRequestBody.
+        r"""Sets the offset of this ListTestCaseHistoriesRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于20000
 
@@ -76,7 +76,7 @@ class ListTestCaseHistoriesRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTestCaseHistoriesRequestBody.
+        r"""Gets the limit of this ListTestCaseHistoriesRequestBody.
 
         每页显示的条目数量,最大支持200条
 
@@ -87,7 +87,7 @@ class ListTestCaseHistoriesRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTestCaseHistoriesRequestBody.
+        r"""Sets the limit of this ListTestCaseHistoriesRequestBody.
 
         每页显示的条目数量,最大支持200条
 
@@ -98,7 +98,7 @@ class ListTestCaseHistoriesRequestBody:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListTestCaseHistoriesRequestBody.
+        r"""Gets the version_id of this ListTestCaseHistoriesRequestBody.
 
         版本ID（分支ID或测试计划ID），长度11-34位字符（字母和数字）。
 
@@ -109,7 +109,7 @@ class ListTestCaseHistoriesRequestBody:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListTestCaseHistoriesRequestBody.
+        r"""Sets the version_id of this ListTestCaseHistoriesRequestBody.
 
         版本ID（分支ID或测试计划ID），长度11-34位字符（字母和数字）。
 

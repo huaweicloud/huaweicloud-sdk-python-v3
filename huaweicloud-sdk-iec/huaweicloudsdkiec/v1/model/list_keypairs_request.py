@@ -29,7 +29,7 @@ class ListKeypairsRequest:
     }
 
     def __init__(self, limit=None, offset=None, name=None):
-        """ListKeypairsRequest
+        r"""ListKeypairsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListKeypairsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListKeypairsRequest.
+        r"""Gets the limit of this ListKeypairsRequest.
 
         查询返回keypair列表当前页面的数量。 取值范围：0~1000。
 
@@ -68,7 +68,7 @@ class ListKeypairsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListKeypairsRequest.
+        r"""Sets the limit of this ListKeypairsRequest.
 
         查询返回keypair列表当前页面的数量。 取值范围：0~1000。
 
@@ -79,7 +79,7 @@ class ListKeypairsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListKeypairsRequest.
+        r"""Gets the offset of this ListKeypairsRequest.
 
         偏移量。 当前偏移量，默认为0。
 
@@ -90,7 +90,7 @@ class ListKeypairsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListKeypairsRequest.
+        r"""Sets the offset of this ListKeypairsRequest.
 
         偏移量。 当前偏移量，默认为0。
 
@@ -101,7 +101,7 @@ class ListKeypairsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListKeypairsRequest.
+        r"""Gets the name of this ListKeypairsRequest.
 
         根据名称查询keypair列表。
 
@@ -112,7 +112,7 @@ class ListKeypairsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListKeypairsRequest.
+        r"""Sets the name of this ListKeypairsRequest.
 
         根据名称查询keypair列表。
 

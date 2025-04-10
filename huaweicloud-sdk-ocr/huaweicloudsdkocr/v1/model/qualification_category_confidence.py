@@ -31,7 +31,7 @@ class QualificationCategoryConfidence:
     }
 
     def __init__(self, category=None, initial_issue_date=None, issue_date=None, expiry_date=None):
-        """QualificationCategoryConfidence
+        r"""QualificationCategoryConfidence
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QualificationCategoryConfidence:
 
     @property
     def category(self):
-        """Gets the category of this QualificationCategoryConfidence.
+        r"""Gets the category of this QualificationCategoryConfidence.
 
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
@@ -75,7 +75,7 @@ class QualificationCategoryConfidence:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this QualificationCategoryConfidence.
+        r"""Sets the category of this QualificationCategoryConfidence.
 
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
@@ -86,7 +86,7 @@ class QualificationCategoryConfidence:
 
     @property
     def initial_issue_date(self):
-        """Gets the initial_issue_date of this QualificationCategoryConfidence.
+        r"""Gets the initial_issue_date of this QualificationCategoryConfidence.
 
         初次领证日期（非必有，依赖对应从业资格证板式） 
 
@@ -97,7 +97,7 @@ class QualificationCategoryConfidence:
 
     @initial_issue_date.setter
     def initial_issue_date(self, initial_issue_date):
-        """Sets the initial_issue_date of this QualificationCategoryConfidence.
+        r"""Sets the initial_issue_date of this QualificationCategoryConfidence.
 
         初次领证日期（非必有，依赖对应从业资格证板式） 
 
@@ -108,7 +108,7 @@ class QualificationCategoryConfidence:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this QualificationCategoryConfidence.
+        r"""Gets the issue_date of this QualificationCategoryConfidence.
 
         有效起始日期（非必有，依赖对应从业资格证板式） 
 
@@ -119,7 +119,7 @@ class QualificationCategoryConfidence:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this QualificationCategoryConfidence.
+        r"""Sets the issue_date of this QualificationCategoryConfidence.
 
         有效起始日期（非必有，依赖对应从业资格证板式） 
 
@@ -130,7 +130,7 @@ class QualificationCategoryConfidence:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this QualificationCategoryConfidence.
+        r"""Gets the expiry_date of this QualificationCategoryConfidence.
 
         有效期至 
 
@@ -141,7 +141,7 @@ class QualificationCategoryConfidence:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this QualificationCategoryConfidence.
+        r"""Sets the expiry_date of this QualificationCategoryConfidence.
 
         有效期至 
 

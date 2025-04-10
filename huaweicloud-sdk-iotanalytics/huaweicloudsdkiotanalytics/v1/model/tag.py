@@ -27,7 +27,7 @@ class Tag:
     }
 
     def __init__(self, name=None, description=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Tag:
 
     @property
     def name(self):
-        """Gets the name of this Tag.
+        r"""Gets the name of this Tag.
 
         标签名称
 
@@ -61,7 +61,7 @@ class Tag:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Tag.
+        r"""Sets the name of this Tag.
 
         标签名称
 
@@ -72,7 +72,7 @@ class Tag:
 
     @property
     def description(self):
-        """Gets the description of this Tag.
+        r"""Gets the description of this Tag.
 
         标签描述
 
@@ -83,7 +83,7 @@ class Tag:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Tag.
+        r"""Sets the description of this Tag.
 
         标签描述
 

@@ -29,7 +29,7 @@ class BatchCreateApplicationViewRequestBody:
     }
 
     def __init__(self, application_list=None, component_list=None, group_list=None):
-        """BatchCreateApplicationViewRequestBody
+        r"""BatchCreateApplicationViewRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchCreateApplicationViewRequestBody:
 
     @property
     def application_list(self):
-        """Gets the application_list of this BatchCreateApplicationViewRequestBody.
+        r"""Gets the application_list of this BatchCreateApplicationViewRequestBody.
 
         应用列表
 
@@ -67,7 +67,7 @@ class BatchCreateApplicationViewRequestBody:
 
     @application_list.setter
     def application_list(self, application_list):
-        """Sets the application_list of this BatchCreateApplicationViewRequestBody.
+        r"""Sets the application_list of this BatchCreateApplicationViewRequestBody.
 
         应用列表
 
@@ -78,7 +78,7 @@ class BatchCreateApplicationViewRequestBody:
 
     @property
     def component_list(self):
-        """Gets the component_list of this BatchCreateApplicationViewRequestBody.
+        r"""Gets the component_list of this BatchCreateApplicationViewRequestBody.
 
         组件列表
 
@@ -89,7 +89,7 @@ class BatchCreateApplicationViewRequestBody:
 
     @component_list.setter
     def component_list(self, component_list):
-        """Sets the component_list of this BatchCreateApplicationViewRequestBody.
+        r"""Sets the component_list of this BatchCreateApplicationViewRequestBody.
 
         组件列表
 
@@ -100,7 +100,7 @@ class BatchCreateApplicationViewRequestBody:
 
     @property
     def group_list(self):
-        """Gets the group_list of this BatchCreateApplicationViewRequestBody.
+        r"""Gets the group_list of this BatchCreateApplicationViewRequestBody.
 
         分组列表
 
@@ -111,7 +111,7 @@ class BatchCreateApplicationViewRequestBody:
 
     @group_list.setter
     def group_list(self, group_list):
-        """Sets the group_list of this BatchCreateApplicationViewRequestBody.
+        r"""Sets the group_list of this BatchCreateApplicationViewRequestBody.
 
         分组列表
 

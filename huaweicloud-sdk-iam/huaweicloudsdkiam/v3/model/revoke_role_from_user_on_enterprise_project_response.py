@@ -24,7 +24,7 @@ class RevokeRoleFromUserOnEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RevokeRoleFromUserOnEnterpriseProjectResponse
+        r"""RevokeRoleFromUserOnEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 

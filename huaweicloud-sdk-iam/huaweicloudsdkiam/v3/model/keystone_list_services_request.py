@@ -25,7 +25,7 @@ class KeystoneListServicesRequest:
     }
 
     def __init__(self, type=None):
-        """KeystoneListServicesRequest
+        r"""KeystoneListServicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class KeystoneListServicesRequest:
 
     @property
     def type(self):
-        """Gets the type of this KeystoneListServicesRequest.
+        r"""Gets the type of this KeystoneListServicesRequest.
 
         服务类型。
 
@@ -54,7 +54,7 @@ class KeystoneListServicesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this KeystoneListServicesRequest.
+        r"""Sets the type of this KeystoneListServicesRequest.
 
         服务类型。
 

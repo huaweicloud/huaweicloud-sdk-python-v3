@@ -27,7 +27,7 @@ class ShowWafPolicyRequest:
     }
 
     def __init__(self, domain_name=None, overseas_type=None):
-        """ShowWafPolicyRequest
+        r"""ShowWafPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowWafPolicyRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowWafPolicyRequest.
+        r"""Gets the domain_name of this ShowWafPolicyRequest.
 
         域名
 
@@ -59,7 +59,7 @@ class ShowWafPolicyRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowWafPolicyRequest.
+        r"""Sets the domain_name of this ShowWafPolicyRequest.
 
         域名
 
@@ -70,7 +70,7 @@ class ShowWafPolicyRequest:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this ShowWafPolicyRequest.
+        r"""Gets the overseas_type of this ShowWafPolicyRequest.
 
         防护区域，0-大陆，1-海外
 
@@ -81,7 +81,7 @@ class ShowWafPolicyRequest:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this ShowWafPolicyRequest.
+        r"""Sets the overseas_type of this ShowWafPolicyRequest.
 
         防护区域，0-大陆，1-海外
 

@@ -24,7 +24,7 @@ class SetRefererChainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetRefererChainResponse
+        r"""SetRefererChainResponse
 
         The model defined in huaweicloud sdk
 

@@ -53,7 +53,7 @@ class ListResizeFlavorsResult:
     }
 
     def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, extra_specs=None, instance_quota=None):
-        """ListResizeFlavorsResult
+        r"""ListResizeFlavorsResult
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ListResizeFlavorsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListResizeFlavorsResult.
+        r"""Gets the id of this ListResizeFlavorsResult.
 
         云服务器规格的ID。
 
@@ -137,7 +137,7 @@ class ListResizeFlavorsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListResizeFlavorsResult.
+        r"""Sets the id of this ListResizeFlavorsResult.
 
         云服务器规格的ID。
 
@@ -148,7 +148,7 @@ class ListResizeFlavorsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListResizeFlavorsResult.
+        r"""Gets the name of this ListResizeFlavorsResult.
 
         云服务器规格的名称。
 
@@ -159,7 +159,7 @@ class ListResizeFlavorsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListResizeFlavorsResult.
+        r"""Sets the name of this ListResizeFlavorsResult.
 
         云服务器规格的名称。
 
@@ -170,7 +170,7 @@ class ListResizeFlavorsResult:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ListResizeFlavorsResult.
+        r"""Gets the vcpus of this ListResizeFlavorsResult.
 
         云服务器规格对应的CPU核数。
 
@@ -181,7 +181,7 @@ class ListResizeFlavorsResult:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ListResizeFlavorsResult.
+        r"""Sets the vcpus of this ListResizeFlavorsResult.
 
         云服务器规格对应的CPU核数。
 
@@ -192,7 +192,7 @@ class ListResizeFlavorsResult:
 
     @property
     def ram(self):
-        """Gets the ram of this ListResizeFlavorsResult.
+        r"""Gets the ram of this ListResizeFlavorsResult.
 
         云服务器规格对应的内存大小，单位为MB。
 
@@ -203,7 +203,7 @@ class ListResizeFlavorsResult:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ListResizeFlavorsResult.
+        r"""Sets the ram of this ListResizeFlavorsResult.
 
         云服务器规格对应的内存大小，单位为MB。
 
@@ -214,7 +214,7 @@ class ListResizeFlavorsResult:
 
     @property
     def disk(self):
-        """Gets the disk of this ListResizeFlavorsResult.
+        r"""Gets the disk of this ListResizeFlavorsResult.
 
         云服务器规格对应要求的系统盘大小。  当前未使用该参数，缺省值为0。
 
@@ -225,7 +225,7 @@ class ListResizeFlavorsResult:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this ListResizeFlavorsResult.
+        r"""Sets the disk of this ListResizeFlavorsResult.
 
         云服务器规格对应要求的系统盘大小。  当前未使用该参数，缺省值为0。
 
@@ -236,7 +236,7 @@ class ListResizeFlavorsResult:
 
     @property
     def swap(self):
-        """Gets the swap of this ListResizeFlavorsResult.
+        r"""Gets the swap of this ListResizeFlavorsResult.
 
         云服务器规格对应要求的交换分区大小。  当前未使用该参数，缺省值为\"\"。
 
@@ -247,7 +247,7 @@ class ListResizeFlavorsResult:
 
     @swap.setter
     def swap(self, swap):
-        """Sets the swap of this ListResizeFlavorsResult.
+        r"""Sets the swap of this ListResizeFlavorsResult.
 
         云服务器规格对应要求的交换分区大小。  当前未使用该参数，缺省值为\"\"。
 
@@ -258,7 +258,7 @@ class ListResizeFlavorsResult:
 
     @property
     def os_flv_ext_dat_aephemeral(self):
-        """Gets the os_flv_ext_dat_aephemeral of this ListResizeFlavorsResult.
+        r"""Gets the os_flv_ext_dat_aephemeral of this ListResizeFlavorsResult.
 
         扩展属性，临时盘大小。  当前未使用该参数，缺省值为0
 
@@ -269,7 +269,7 @@ class ListResizeFlavorsResult:
 
     @os_flv_ext_dat_aephemeral.setter
     def os_flv_ext_dat_aephemeral(self, os_flv_ext_dat_aephemeral):
-        """Sets the os_flv_ext_dat_aephemeral of this ListResizeFlavorsResult.
+        r"""Sets the os_flv_ext_dat_aephemeral of this ListResizeFlavorsResult.
 
         扩展属性，临时盘大小。  当前未使用该参数，缺省值为0
 
@@ -280,7 +280,7 @@ class ListResizeFlavorsResult:
 
     @property
     def os_flv_disable_ddisabled(self):
-        """Gets the os_flv_disable_ddisabled of this ListResizeFlavorsResult.
+        r"""Gets the os_flv_disable_ddisabled of this ListResizeFlavorsResult.
 
         扩展属性，该云服务器规格是否禁用。  当前未使用该参数，缺省值为false。
 
@@ -291,7 +291,7 @@ class ListResizeFlavorsResult:
 
     @os_flv_disable_ddisabled.setter
     def os_flv_disable_ddisabled(self, os_flv_disable_ddisabled):
-        """Sets the os_flv_disable_ddisabled of this ListResizeFlavorsResult.
+        r"""Sets the os_flv_disable_ddisabled of this ListResizeFlavorsResult.
 
         扩展属性，该云服务器规格是否禁用。  当前未使用该参数，缺省值为false。
 
@@ -302,7 +302,7 @@ class ListResizeFlavorsResult:
 
     @property
     def rxtx_factor(self):
-        """Gets the rxtx_factor of this ListResizeFlavorsResult.
+        r"""Gets the rxtx_factor of this ListResizeFlavorsResult.
 
         云服务器可使用网络带宽与网络硬件带宽的比例。  当前未使用该参数，缺省值为1.0。
 
@@ -313,7 +313,7 @@ class ListResizeFlavorsResult:
 
     @rxtx_factor.setter
     def rxtx_factor(self, rxtx_factor):
-        """Sets the rxtx_factor of this ListResizeFlavorsResult.
+        r"""Sets the rxtx_factor of this ListResizeFlavorsResult.
 
         云服务器可使用网络带宽与网络硬件带宽的比例。  当前未使用该参数，缺省值为1.0。
 
@@ -324,7 +324,7 @@ class ListResizeFlavorsResult:
 
     @property
     def rxtx_quota(self):
-        """Gets the rxtx_quota of this ListResizeFlavorsResult.
+        r"""Gets the rxtx_quota of this ListResizeFlavorsResult.
 
         云服务器可使用网络带宽的软限制。  当前未使用该参数，缺省值为null。
 
@@ -335,7 +335,7 @@ class ListResizeFlavorsResult:
 
     @rxtx_quota.setter
     def rxtx_quota(self, rxtx_quota):
-        """Sets the rxtx_quota of this ListResizeFlavorsResult.
+        r"""Sets the rxtx_quota of this ListResizeFlavorsResult.
 
         云服务器可使用网络带宽的软限制。  当前未使用该参数，缺省值为null。
 
@@ -346,7 +346,7 @@ class ListResizeFlavorsResult:
 
     @property
     def rxtx_cap(self):
-        """Gets the rxtx_cap of this ListResizeFlavorsResult.
+        r"""Gets the rxtx_cap of this ListResizeFlavorsResult.
 
           云服务器可使用网络带宽的硬限制。  当前未使用该参数，缺省值为null。
 
@@ -357,7 +357,7 @@ class ListResizeFlavorsResult:
 
     @rxtx_cap.setter
     def rxtx_cap(self, rxtx_cap):
-        """Sets the rxtx_cap of this ListResizeFlavorsResult.
+        r"""Sets the rxtx_cap of this ListResizeFlavorsResult.
 
           云服务器可使用网络带宽的硬限制。  当前未使用该参数，缺省值为null。
 
@@ -368,7 +368,7 @@ class ListResizeFlavorsResult:
 
     @property
     def os_flavor_accessis_public(self):
-        """Gets the os_flavor_accessis_public of this ListResizeFlavorsResult.
+        r"""Gets the os_flavor_accessis_public of this ListResizeFlavorsResult.
 
         扩展属性，flavor是否给所有租户使用。  - true：表示给所有租户使用。 - false：表示给指定租户使用。  缺省值为true。
 
@@ -379,7 +379,7 @@ class ListResizeFlavorsResult:
 
     @os_flavor_accessis_public.setter
     def os_flavor_accessis_public(self, os_flavor_accessis_public):
-        """Sets the os_flavor_accessis_public of this ListResizeFlavorsResult.
+        r"""Sets the os_flavor_accessis_public of this ListResizeFlavorsResult.
 
         扩展属性，flavor是否给所有租户使用。  - true：表示给所有租户使用。 - false：表示给指定租户使用。  缺省值为true。
 
@@ -390,7 +390,7 @@ class ListResizeFlavorsResult:
 
     @property
     def links(self):
-        """Gets the links of this ListResizeFlavorsResult.
+        r"""Gets the links of this ListResizeFlavorsResult.
 
         规格相关快捷链接地址。
 
@@ -401,7 +401,7 @@ class ListResizeFlavorsResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListResizeFlavorsResult.
+        r"""Sets the links of this ListResizeFlavorsResult.
 
         规格相关快捷链接地址。
 
@@ -412,7 +412,7 @@ class ListResizeFlavorsResult:
 
     @property
     def extra_specs(self):
-        """Gets the extra_specs of this ListResizeFlavorsResult.
+        r"""Gets the extra_specs of this ListResizeFlavorsResult.
 
         :return: The extra_specs of this ListResizeFlavorsResult.
         :rtype: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
@@ -421,7 +421,7 @@ class ListResizeFlavorsResult:
 
     @extra_specs.setter
     def extra_specs(self, extra_specs):
-        """Sets the extra_specs of this ListResizeFlavorsResult.
+        r"""Sets the extra_specs of this ListResizeFlavorsResult.
 
         :param extra_specs: The extra_specs of this ListResizeFlavorsResult.
         :type extra_specs: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
@@ -430,7 +430,7 @@ class ListResizeFlavorsResult:
 
     @property
     def instance_quota(self):
-        """Gets the instance_quota of this ListResizeFlavorsResult.
+        r"""Gets the instance_quota of this ListResizeFlavorsResult.
 
         预留属性。
 
@@ -441,7 +441,7 @@ class ListResizeFlavorsResult:
 
     @instance_quota.setter
     def instance_quota(self, instance_quota):
-        """Sets the instance_quota of this ListResizeFlavorsResult.
+        r"""Sets the instance_quota of this ListResizeFlavorsResult.
 
         预留属性。
 

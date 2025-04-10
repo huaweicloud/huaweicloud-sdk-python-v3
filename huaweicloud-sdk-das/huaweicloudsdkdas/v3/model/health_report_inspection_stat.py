@@ -29,7 +29,7 @@ class HealthReportInspectionStat:
     }
 
     def __init__(self, inspection_score=None, analyze_success=None, error_message=None):
-        """HealthReportInspectionStat
+        r"""HealthReportInspectionStat
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class HealthReportInspectionStat:
 
     @property
     def inspection_score(self):
-        """Gets the inspection_score of this HealthReportInspectionStat.
+        r"""Gets the inspection_score of this HealthReportInspectionStat.
 
         巡检评分。
 
@@ -65,7 +65,7 @@ class HealthReportInspectionStat:
 
     @inspection_score.setter
     def inspection_score(self, inspection_score):
-        """Sets the inspection_score of this HealthReportInspectionStat.
+        r"""Sets the inspection_score of this HealthReportInspectionStat.
 
         巡检评分。
 
@@ -76,7 +76,7 @@ class HealthReportInspectionStat:
 
     @property
     def analyze_success(self):
-        """Gets the analyze_success of this HealthReportInspectionStat.
+        r"""Gets the analyze_success of this HealthReportInspectionStat.
 
         统计分析是否成功。
 
@@ -87,7 +87,7 @@ class HealthReportInspectionStat:
 
     @analyze_success.setter
     def analyze_success(self, analyze_success):
-        """Sets the analyze_success of this HealthReportInspectionStat.
+        r"""Sets the analyze_success of this HealthReportInspectionStat.
 
         统计分析是否成功。
 
@@ -98,7 +98,7 @@ class HealthReportInspectionStat:
 
     @property
     def error_message(self):
-        """Gets the error_message of this HealthReportInspectionStat.
+        r"""Gets the error_message of this HealthReportInspectionStat.
 
         错误信息。
 
@@ -109,7 +109,7 @@ class HealthReportInspectionStat:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this HealthReportInspectionStat.
+        r"""Sets the error_message of this HealthReportInspectionStat.
 
         错误信息。
 

@@ -30,7 +30,7 @@ class UpdateAppResponse(SdkResponse):
     }
 
     def __init__(self, app_key=None, app_name=None, id=None):
-        """UpdateAppResponse
+        r"""UpdateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateAppResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this UpdateAppResponse.
+        r"""Gets the app_key of this UpdateAppResponse.
 
         应用KEY
 
@@ -69,7 +69,7 @@ class UpdateAppResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this UpdateAppResponse.
+        r"""Sets the app_key of this UpdateAppResponse.
 
         应用KEY
 
@@ -80,7 +80,7 @@ class UpdateAppResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateAppResponse.
+        r"""Gets the app_name of this UpdateAppResponse.
 
         应用名称
 
@@ -91,7 +91,7 @@ class UpdateAppResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateAppResponse.
+        r"""Sets the app_name of this UpdateAppResponse.
 
         应用名称
 
@@ -102,7 +102,7 @@ class UpdateAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAppResponse.
+        r"""Gets the id of this UpdateAppResponse.
 
         应用主键ID
 
@@ -113,7 +113,7 @@ class UpdateAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAppResponse.
+        r"""Sets the id of this UpdateAppResponse.
 
         应用主键ID
 

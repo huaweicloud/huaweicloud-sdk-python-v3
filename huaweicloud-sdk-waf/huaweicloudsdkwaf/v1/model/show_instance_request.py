@@ -27,7 +27,7 @@ class ShowInstanceRequest:
     }
 
     def __init__(self, enterprise_project_id=None, instance_id=None):
-        """ShowInstanceRequest
+        r"""ShowInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowInstanceRequest.
+        r"""Gets the enterprise_project_id of this ShowInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -60,7 +60,7 @@ class ShowInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowInstanceRequest.
+        r"""Sets the enterprise_project_id of this ShowInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -71,7 +71,7 @@ class ShowInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceRequest.
+        r"""Gets the instance_id of this ShowInstanceRequest.
 
         独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
 
@@ -82,7 +82,7 @@ class ShowInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceRequest.
+        r"""Sets the instance_id of this ShowInstanceRequest.
 
         独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
 

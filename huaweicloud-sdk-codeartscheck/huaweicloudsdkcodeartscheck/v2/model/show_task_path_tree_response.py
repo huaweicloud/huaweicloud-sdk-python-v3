@@ -28,7 +28,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
     }
 
     def __init__(self, info=None, total=None):
-        """ShowTaskPathTreeResponse
+        r"""ShowTaskPathTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
 
     @property
     def info(self):
-        """Gets the info of this ShowTaskPathTreeResponse.
+        r"""Gets the info of this ShowTaskPathTreeResponse.
 
         任务的目录树信息
 
@@ -62,7 +62,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
 
     @info.setter
     def info(self, info):
-        """Sets the info of this ShowTaskPathTreeResponse.
+        r"""Sets the info of this ShowTaskPathTreeResponse.
 
         任务的目录树信息
 
@@ -73,7 +73,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTaskPathTreeResponse.
+        r"""Gets the total of this ShowTaskPathTreeResponse.
 
         数目
 
@@ -84,7 +84,7 @@ class ShowTaskPathTreeResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTaskPathTreeResponse.
+        r"""Sets the total of this ShowTaskPathTreeResponse.
 
         数目
 

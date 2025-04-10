@@ -26,7 +26,7 @@ class DeleteAssetResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteAssetResponse
+        r"""DeleteAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAssetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteAssetResponse.
+        r"""Gets the x_request_id of this DeleteAssetResponse.
 
         :return: The x_request_id of this DeleteAssetResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteAssetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteAssetResponse.
+        r"""Sets the x_request_id of this DeleteAssetResponse.
 
         :param x_request_id: The x_request_id of this DeleteAssetResponse.
         :type x_request_id: str

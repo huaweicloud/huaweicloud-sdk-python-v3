@@ -29,7 +29,7 @@ class ChangeFlinkJobStatusReportRequestBody:
     }
 
     def __init__(self, jobs=None, message_id=None, msg_confirm_topic=None):
-        """ChangeFlinkJobStatusReportRequestBody
+        r"""ChangeFlinkJobStatusReportRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChangeFlinkJobStatusReportRequestBody:
 
     @property
     def jobs(self):
-        """Gets the jobs of this ChangeFlinkJobStatusReportRequestBody.
+        r"""Gets the jobs of this ChangeFlinkJobStatusReportRequestBody.
 
         作业信息列表
 
@@ -66,7 +66,7 @@ class ChangeFlinkJobStatusReportRequestBody:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ChangeFlinkJobStatusReportRequestBody.
+        r"""Sets the jobs of this ChangeFlinkJobStatusReportRequestBody.
 
         作业信息列表
 
@@ -77,7 +77,7 @@ class ChangeFlinkJobStatusReportRequestBody:
 
     @property
     def message_id(self):
-        """Gets the message_id of this ChangeFlinkJobStatusReportRequestBody.
+        r"""Gets the message_id of this ChangeFlinkJobStatusReportRequestBody.
 
         消息id
 
@@ -88,7 +88,7 @@ class ChangeFlinkJobStatusReportRequestBody:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this ChangeFlinkJobStatusReportRequestBody.
+        r"""Sets the message_id of this ChangeFlinkJobStatusReportRequestBody.
 
         消息id
 
@@ -99,7 +99,7 @@ class ChangeFlinkJobStatusReportRequestBody:
 
     @property
     def msg_confirm_topic(self):
-        """Gets the msg_confirm_topic of this ChangeFlinkJobStatusReportRequestBody.
+        r"""Gets the msg_confirm_topic of this ChangeFlinkJobStatusReportRequestBody.
 
         消息确认topic
 
@@ -110,7 +110,7 @@ class ChangeFlinkJobStatusReportRequestBody:
 
     @msg_confirm_topic.setter
     def msg_confirm_topic(self, msg_confirm_topic):
-        """Sets the msg_confirm_topic of this ChangeFlinkJobStatusReportRequestBody.
+        r"""Sets the msg_confirm_topic of this ChangeFlinkJobStatusReportRequestBody.
 
         消息确认topic
 

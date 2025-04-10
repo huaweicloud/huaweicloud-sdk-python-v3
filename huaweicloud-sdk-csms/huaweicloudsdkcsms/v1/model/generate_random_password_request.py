@@ -25,7 +25,7 @@ class GenerateRandomPasswordRequest:
     }
 
     def __init__(self, body=None):
-        """GenerateRandomPasswordRequest
+        r"""GenerateRandomPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GenerateRandomPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this GenerateRandomPasswordRequest.
+        r"""Gets the body of this GenerateRandomPasswordRequest.
 
         :return: The body of this GenerateRandomPasswordRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.CreatePasswordRequestBody`
@@ -52,7 +52,7 @@ class GenerateRandomPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateRandomPasswordRequest.
+        r"""Sets the body of this GenerateRandomPasswordRequest.
 
         :param body: The body of this GenerateRandomPasswordRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.CreatePasswordRequestBody`

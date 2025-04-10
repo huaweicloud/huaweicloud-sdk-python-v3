@@ -27,7 +27,7 @@ class ShowMemberRequest:
     }
 
     def __init__(self, pool_id=None, member_id=None):
-        """ShowMemberRequest
+        r"""ShowMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMemberRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ShowMemberRequest.
+        r"""Gets the pool_id of this ShowMemberRequest.
 
         后端云服务器组id
 
@@ -59,7 +59,7 @@ class ShowMemberRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ShowMemberRequest.
+        r"""Sets the pool_id of this ShowMemberRequest.
 
         后端云服务器组id
 
@@ -70,7 +70,7 @@ class ShowMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ShowMemberRequest.
+        r"""Gets the member_id of this ShowMemberRequest.
 
         后端云服务器id
 
@@ -81,7 +81,7 @@ class ShowMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ShowMemberRequest.
+        r"""Sets the member_id of this ShowMemberRequest.
 
         后端云服务器id
 

@@ -33,7 +33,7 @@ class Workflow:
     }
 
     def __init__(self, parameter=None, source=None, name=None, project_id=None, project_name=None):
-        """Workflow
+        r"""Workflow
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Workflow:
 
     @property
     def parameter(self):
-        """Gets the parameter of this Workflow.
+        r"""Gets the parameter of this Workflow.
 
         任务类型,list类型数据
 
@@ -77,7 +77,7 @@ class Workflow:
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this Workflow.
+        r"""Sets the parameter of this Workflow.
 
         任务类型,list类型数据
 
@@ -88,7 +88,7 @@ class Workflow:
 
     @property
     def source(self):
-        """Gets the source of this Workflow.
+        r"""Gets the source of this Workflow.
 
         源码仓,list类型数据
 
@@ -99,7 +99,7 @@ class Workflow:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this Workflow.
+        r"""Sets the source of this Workflow.
 
         源码仓,list类型数据
 
@@ -110,7 +110,7 @@ class Workflow:
 
     @property
     def name(self):
-        """Gets the name of this Workflow.
+        r"""Gets the name of this Workflow.
 
         流水线名字
 
@@ -121,7 +121,7 @@ class Workflow:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Workflow.
+        r"""Sets the name of this Workflow.
 
         流水线名字
 
@@ -132,7 +132,7 @@ class Workflow:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Workflow.
+        r"""Gets the project_id of this Workflow.
 
         项目ID
 
@@ -143,7 +143,7 @@ class Workflow:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Workflow.
+        r"""Sets the project_id of this Workflow.
 
         项目ID
 
@@ -154,7 +154,7 @@ class Workflow:
 
     @property
     def project_name(self):
-        """Gets the project_name of this Workflow.
+        r"""Gets the project_name of this Workflow.
 
         项目名字
 
@@ -165,7 +165,7 @@ class Workflow:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this Workflow.
+        r"""Sets the project_name of this Workflow.
 
         项目名字
 

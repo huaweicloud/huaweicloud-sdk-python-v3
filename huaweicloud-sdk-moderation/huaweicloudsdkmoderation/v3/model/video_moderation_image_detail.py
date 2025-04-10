@@ -33,7 +33,7 @@ class VideoModerationImageDetail:
     }
 
     def __init__(self, suggestion=None, category=None, ocr_text=None, time=None, detail=None):
-        """VideoModerationImageDetail
+        r"""VideoModerationImageDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VideoModerationImageDetail:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this VideoModerationImageDetail.
+        r"""Gets the suggestion of this VideoModerationImageDetail.
 
         图像审核结果是否通过。 block：包含敏感信息，不通过  review：需要人工复检
 
@@ -82,7 +82,7 @@ class VideoModerationImageDetail:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this VideoModerationImageDetail.
+        r"""Sets the suggestion of this VideoModerationImageDetail.
 
         图像审核结果是否通过。 block：包含敏感信息，不通过  review：需要人工复检
 
@@ -93,7 +93,7 @@ class VideoModerationImageDetail:
 
     @property
     def category(self):
-        """Gets the category of this VideoModerationImageDetail.
+        r"""Gets the category of this VideoModerationImageDetail.
 
         检测结果的一级标签。 支持category列表如下： politics: 涉政  terrorism: 暴恐  porn: 色情  image_text: 图文审核
 
@@ -104,7 +104,7 @@ class VideoModerationImageDetail:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this VideoModerationImageDetail.
+        r"""Sets the category of this VideoModerationImageDetail.
 
         检测结果的一级标签。 支持category列表如下： politics: 涉政  terrorism: 暴恐  porn: 色情  image_text: 图文审核
 
@@ -115,7 +115,7 @@ class VideoModerationImageDetail:
 
     @property
     def ocr_text(self):
-        """Gets the ocr_text of this VideoModerationImageDetail.
+        r"""Gets the ocr_text of this VideoModerationImageDetail.
 
         图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
 
@@ -126,7 +126,7 @@ class VideoModerationImageDetail:
 
     @ocr_text.setter
     def ocr_text(self, ocr_text):
-        """Sets the ocr_text of this VideoModerationImageDetail.
+        r"""Sets the ocr_text of this VideoModerationImageDetail.
 
         图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
 
@@ -137,7 +137,7 @@ class VideoModerationImageDetail:
 
     @property
     def time(self):
-        """Gets the time of this VideoModerationImageDetail.
+        r"""Gets the time of this VideoModerationImageDetail.
 
         截帧在视频文件中的时间，单位为秒
 
@@ -148,7 +148,7 @@ class VideoModerationImageDetail:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this VideoModerationImageDetail.
+        r"""Sets the time of this VideoModerationImageDetail.
 
         截帧在视频文件中的时间，单位为秒
 
@@ -159,7 +159,7 @@ class VideoModerationImageDetail:
 
     @property
     def detail(self):
-        """Gets the detail of this VideoModerationImageDetail.
+        r"""Gets the detail of this VideoModerationImageDetail.
 
         图像帧审核详情
 
@@ -170,7 +170,7 @@ class VideoModerationImageDetail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this VideoModerationImageDetail.
+        r"""Sets the detail of this VideoModerationImageDetail.
 
         图像帧审核详情
 

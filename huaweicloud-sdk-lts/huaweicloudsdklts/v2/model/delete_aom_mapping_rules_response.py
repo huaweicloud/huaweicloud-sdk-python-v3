@@ -26,7 +26,7 @@ class DeleteAomMappingRulesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteAomMappingRulesResponse
+        r"""DeleteAomMappingRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAomMappingRulesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteAomMappingRulesResponse.
+        r"""Gets the body of this DeleteAomMappingRulesResponse.
 
         :return: The body of this DeleteAomMappingRulesResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class DeleteAomMappingRulesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAomMappingRulesResponse.
+        r"""Sets the body of this DeleteAomMappingRulesResponse.
 
         :param body: The body of this DeleteAomMappingRulesResponse.
         :type body: list[str]

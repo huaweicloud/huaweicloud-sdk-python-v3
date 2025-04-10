@@ -31,7 +31,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """ModifyGaussMySqlProxyRouteModeRequest
+        r"""ModifyGaussMySqlProxyRouteModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Gets the x_language of this ModifyGaussMySqlProxyRouteModeRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Sets the x_language of this ModifyGaussMySqlProxyRouteModeRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Gets the instance_id of this ModifyGaussMySqlProxyRouteModeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Sets the instance_id of this ModifyGaussMySqlProxyRouteModeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Gets the proxy_id of this ModifyGaussMySqlProxyRouteModeRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -117,7 +117,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Sets the proxy_id of this ModifyGaussMySqlProxyRouteModeRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -128,7 +128,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Gets the body of this ModifyGaussMySqlProxyRouteModeRequest.
 
         :return: The body of this ModifyGaussMySqlProxyRouteModeRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMySqlProxyRouteModeRequestBody`
@@ -137,7 +137,7 @@ class ModifyGaussMySqlProxyRouteModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyGaussMySqlProxyRouteModeRequest.
+        r"""Sets the body of this ModifyGaussMySqlProxyRouteModeRequest.
 
         :param body: The body of this ModifyGaussMySqlProxyRouteModeRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMySqlProxyRouteModeRequestBody`

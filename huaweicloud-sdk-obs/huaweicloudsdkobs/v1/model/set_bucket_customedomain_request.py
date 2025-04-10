@@ -33,7 +33,7 @@ class SetBucketCustomedomainRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, customdomain=None, body=None):
-        """SetBucketCustomedomainRequest
+        r"""SetBucketCustomedomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SetBucketCustomedomainRequest:
 
     @property
     def date(self):
-        """Gets the date of this SetBucketCustomedomainRequest.
+        r"""Gets the date of this SetBucketCustomedomainRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -75,7 +75,7 @@ class SetBucketCustomedomainRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SetBucketCustomedomainRequest.
+        r"""Sets the date of this SetBucketCustomedomainRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -86,7 +86,7 @@ class SetBucketCustomedomainRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this SetBucketCustomedomainRequest.
+        r"""Gets the bucket_name of this SetBucketCustomedomainRequest.
 
         Name of the requested bucket
 
@@ -97,7 +97,7 @@ class SetBucketCustomedomainRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this SetBucketCustomedomainRequest.
+        r"""Sets the bucket_name of this SetBucketCustomedomainRequest.
 
         Name of the requested bucket
 
@@ -108,7 +108,7 @@ class SetBucketCustomedomainRequest:
 
     @property
     def customdomain(self):
-        """Gets the customdomain of this SetBucketCustomedomainRequest.
+        r"""Gets the customdomain of this SetBucketCustomedomainRequest.
 
         Custom domain name of the bucket.  Type: string, which must meet the naming conventions of domain names.  Specifications: The value contains a maximum of 256 bytes.  Default value: none  Restriction: A bucket can have a maximum of 30 domain names. A custom domain name can be used for only one bucket.
 
@@ -119,7 +119,7 @@ class SetBucketCustomedomainRequest:
 
     @customdomain.setter
     def customdomain(self, customdomain):
-        """Sets the customdomain of this SetBucketCustomedomainRequest.
+        r"""Sets the customdomain of this SetBucketCustomedomainRequest.
 
         Custom domain name of the bucket.  Type: string, which must meet the naming conventions of domain names.  Specifications: The value contains a maximum of 256 bytes.  Default value: none  Restriction: A bucket can have a maximum of 30 domain names. A custom domain name can be used for only one bucket.
 
@@ -130,7 +130,7 @@ class SetBucketCustomedomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBucketCustomedomainRequest.
+        r"""Gets the body of this SetBucketCustomedomainRequest.
 
         :return: The body of this SetBucketCustomedomainRequest.
         :rtype: :class:`huaweicloudsdkobs.v1.SetBucketCustomDomainBody`
@@ -139,7 +139,7 @@ class SetBucketCustomedomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBucketCustomedomainRequest.
+        r"""Sets the body of this SetBucketCustomedomainRequest.
 
         :param body: The body of this SetBucketCustomedomainRequest.
         :type body: :class:`huaweicloudsdkobs.v1.SetBucketCustomDomainBody`

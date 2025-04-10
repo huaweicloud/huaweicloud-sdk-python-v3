@@ -27,7 +27,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions:
     }
 
     def __init__(self, compression_threshold=None, minimum_compression_rate=None):
-        """PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions
+        r"""PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions:
 
     @property
     def compression_threshold(self):
-        """Gets the compression_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
+        r"""Gets the compression_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
 
         压缩阈值（Byte）。取值范围为[0-10240]。默认：512。
 
@@ -61,7 +61,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions:
 
     @compression_threshold.setter
     def compression_threshold(self, compression_threshold):
-        """Sets the compression_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
+        r"""Sets the compression_threshold of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
 
         压缩阈值（Byte）。取值范围为[0-10240]。默认：512。
 
@@ -72,7 +72,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions:
 
     @property
     def minimum_compression_rate(self):
-        """Gets the minimum_compression_rate of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
+        r"""Gets the minimum_compression_rate of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
 
         最小压缩率。取值范围为[0-1000]。默认：900。
 
@@ -83,7 +83,7 @@ class PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions:
 
     @minimum_compression_rate.setter
     def minimum_compression_rate(self, minimum_compression_rate):
-        """Sets the minimum_compression_rate of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
+        r"""Sets the minimum_compression_rate of this PoliciesFileAndClipboardFileRedirectionOptionsCompressionSwitchOptions.
 
         最小压缩率。取值范围为[0-1000]。默认：900。
 

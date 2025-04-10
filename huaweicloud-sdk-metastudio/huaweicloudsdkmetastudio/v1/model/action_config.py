@@ -25,7 +25,7 @@ class ActionConfig:
     }
 
     def __init__(self, action_interval=None):
-        """ActionConfig
+        r"""ActionConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ActionConfig:
 
     @property
     def action_interval(self):
-        """Gets the action_interval of this ActionConfig.
+        r"""Gets the action_interval of this ActionConfig.
 
         算法自动插入无语义动作的时间间隔。这个参数填0或者不填默认是间隔4秒，设置成255时不自动插入无语义动作。
 
@@ -54,7 +54,7 @@ class ActionConfig:
 
     @action_interval.setter
     def action_interval(self, action_interval):
-        """Sets the action_interval of this ActionConfig.
+        r"""Sets the action_interval of this ActionConfig.
 
         算法自动插入无语义动作的时间间隔。这个参数填0或者不填默认是间隔4秒，设置成255时不自动插入无语义动作。
 

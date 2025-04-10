@@ -26,7 +26,7 @@ class CreateResourceTagResponse(SdkResponse):
     }
 
     def __init__(self, failed_resources=None):
-        """CreateResourceTagResponse
+        r"""CreateResourceTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateResourceTagResponse(SdkResponse):
 
     @property
     def failed_resources(self):
-        """Gets the failed_resources of this CreateResourceTagResponse.
+        r"""Gets the failed_resources of this CreateResourceTagResponse.
 
         查询标签下的资源
 
@@ -55,7 +55,7 @@ class CreateResourceTagResponse(SdkResponse):
 
     @failed_resources.setter
     def failed_resources(self, failed_resources):
-        """Sets the failed_resources of this CreateResourceTagResponse.
+        r"""Sets the failed_resources of this CreateResourceTagResponse.
 
         查询标签下的资源
 

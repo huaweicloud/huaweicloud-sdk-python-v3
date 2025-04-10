@@ -26,7 +26,7 @@ class ListEastWestFirewallResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListEastWestFirewallResponse
+        r"""ListEastWestFirewallResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEastWestFirewallResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListEastWestFirewallResponse.
+        r"""Gets the data of this ListEastWestFirewallResponse.
 
         :return: The data of this ListEastWestFirewallResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.GetEastWestFirewallResponseBody`
@@ -53,7 +53,7 @@ class ListEastWestFirewallResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListEastWestFirewallResponse.
+        r"""Sets the data of this ListEastWestFirewallResponse.
 
         :param data: The data of this ListEastWestFirewallResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.GetEastWestFirewallResponseBody`

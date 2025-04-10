@@ -29,7 +29,7 @@ class ActionParamsRepairInfoObjects:
     }
 
     def __init__(self, database=None, schema=None, table=None):
-        """ActionParamsRepairInfoObjects
+        r"""ActionParamsRepairInfoObjects
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ActionParamsRepairInfoObjects:
 
     @property
     def database(self):
-        """Gets the database of this ActionParamsRepairInfoObjects.
+        r"""Gets the database of this ActionParamsRepairInfoObjects.
 
         数据库名称。
 
@@ -68,7 +68,7 @@ class ActionParamsRepairInfoObjects:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ActionParamsRepairInfoObjects.
+        r"""Sets the database of this ActionParamsRepairInfoObjects.
 
         数据库名称。
 
@@ -79,7 +79,7 @@ class ActionParamsRepairInfoObjects:
 
     @property
     def schema(self):
-        """Gets the schema of this ActionParamsRepairInfoObjects.
+        r"""Gets the schema of this ActionParamsRepairInfoObjects.
 
         schema名称。
 
@@ -90,7 +90,7 @@ class ActionParamsRepairInfoObjects:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ActionParamsRepairInfoObjects.
+        r"""Sets the schema of this ActionParamsRepairInfoObjects.
 
         schema名称。
 
@@ -101,7 +101,7 @@ class ActionParamsRepairInfoObjects:
 
     @property
     def table(self):
-        """Gets the table of this ActionParamsRepairInfoObjects.
+        r"""Gets the table of this ActionParamsRepairInfoObjects.
 
         表名称。
 
@@ -112,7 +112,7 @@ class ActionParamsRepairInfoObjects:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ActionParamsRepairInfoObjects.
+        r"""Sets the table of this ActionParamsRepairInfoObjects.
 
         表名称。
 

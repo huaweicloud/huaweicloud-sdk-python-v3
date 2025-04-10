@@ -27,7 +27,7 @@ class UpdateEcnWithVpcRequestBody:
     }
 
     def __init__(self, local_subnet_list=None, refresh_remote_subnet_route=None):
-        """UpdateEcnWithVpcRequestBody
+        r"""UpdateEcnWithVpcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEcnWithVpcRequestBody:
 
     @property
     def local_subnet_list(self):
-        """Gets the local_subnet_list of this UpdateEcnWithVpcRequestBody.
+        r"""Gets the local_subnet_list of this UpdateEcnWithVpcRequestBody.
 
         本端子网列表
 
@@ -60,7 +60,7 @@ class UpdateEcnWithVpcRequestBody:
 
     @local_subnet_list.setter
     def local_subnet_list(self, local_subnet_list):
-        """Sets the local_subnet_list of this UpdateEcnWithVpcRequestBody.
+        r"""Sets the local_subnet_list of this UpdateEcnWithVpcRequestBody.
 
         本端子网列表
 
@@ -71,7 +71,7 @@ class UpdateEcnWithVpcRequestBody:
 
     @property
     def refresh_remote_subnet_route(self):
-        """Gets the refresh_remote_subnet_route of this UpdateEcnWithVpcRequestBody.
+        r"""Gets the refresh_remote_subnet_route of this UpdateEcnWithVpcRequestBody.
 
         是否刷新对端子网路由
 
@@ -82,7 +82,7 @@ class UpdateEcnWithVpcRequestBody:
 
     @refresh_remote_subnet_route.setter
     def refresh_remote_subnet_route(self, refresh_remote_subnet_route):
-        """Sets the refresh_remote_subnet_route of this UpdateEcnWithVpcRequestBody.
+        r"""Sets the refresh_remote_subnet_route of this UpdateEcnWithVpcRequestBody.
 
         是否刷新对端子网路由
 

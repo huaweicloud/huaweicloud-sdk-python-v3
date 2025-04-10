@@ -30,7 +30,7 @@ class CreateVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None, volume_ids=None):
-        """CreateVolumeResponse
+        r"""CreateVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVolumeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateVolumeResponse.
+        r"""Gets the job_id of this CreateVolumeResponse.
 
         任务ID，云硬盘为按需计费时返回该参数。 > 说明： >  > 如果需要查询job的状态，请参考：\"[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)\"。
 
@@ -69,7 +69,7 @@ class CreateVolumeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateVolumeResponse.
+        r"""Sets the job_id of this CreateVolumeResponse.
 
         任务ID，云硬盘为按需计费时返回该参数。 > 说明： >  > 如果需要查询job的状态，请参考：\"[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)\"。
 
@@ -80,7 +80,7 @@ class CreateVolumeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateVolumeResponse.
+        r"""Gets the order_id of this CreateVolumeResponse.
 
         订单ID，云硬盘为包周期计费时返回该参数。 > 说明： > 直接在包周期云服务器上新增云硬盘，系统会自动将云硬盘挂载到包周期云服务器上。该情形下也会返回该参数。  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 
@@ -91,7 +91,7 @@ class CreateVolumeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateVolumeResponse.
+        r"""Sets the order_id of this CreateVolumeResponse.
 
         订单ID，云硬盘为包周期计费时返回该参数。 > 说明： > 直接在包周期云服务器上新增云硬盘，系统会自动将云硬盘挂载到包周期云服务器上。该情形下也会返回该参数。  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 
@@ -102,7 +102,7 @@ class CreateVolumeResponse(SdkResponse):
 
     @property
     def volume_ids(self):
-        """Gets the volume_ids of this CreateVolumeResponse.
+        r"""Gets the volume_ids of this CreateVolumeResponse.
 
         待创建的云硬盘ID列表。 > 说明： > 通过云硬盘ID查询云硬盘详情 ，若返回404 可能云硬盘正在创建中或者已经创建失败。 > 通过JobId查询云硬盘创建任务是否完成[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)。
 
@@ -113,7 +113,7 @@ class CreateVolumeResponse(SdkResponse):
 
     @volume_ids.setter
     def volume_ids(self, volume_ids):
-        """Sets the volume_ids of this CreateVolumeResponse.
+        r"""Sets the volume_ids of this CreateVolumeResponse.
 
         待创建的云硬盘ID列表。 > 说明： > 通过云硬盘ID查询云硬盘详情 ，若返回404 可能云硬盘正在创建中或者已经创建失败。 > 通过JobId查询云硬盘创建任务是否完成[查询job的状态](https://support.huaweicloud.com/api-evs/evs_04_0054.html)。
 

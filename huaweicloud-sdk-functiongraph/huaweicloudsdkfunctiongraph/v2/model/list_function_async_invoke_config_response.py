@@ -30,7 +30,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
     }
 
     def __init__(self, async_invoke_configs=None, count=None, page_info=None):
-        """ListFunctionAsyncInvokeConfigResponse
+        r"""ListFunctionAsyncInvokeConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def async_invoke_configs(self):
-        """Gets the async_invoke_configs of this ListFunctionAsyncInvokeConfigResponse.
+        r"""Gets the async_invoke_configs of this ListFunctionAsyncInvokeConfigResponse.
 
         函数异步配置列表。
 
@@ -69,7 +69,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @async_invoke_configs.setter
     def async_invoke_configs(self, async_invoke_configs):
-        """Sets the async_invoke_configs of this ListFunctionAsyncInvokeConfigResponse.
+        r"""Sets the async_invoke_configs of this ListFunctionAsyncInvokeConfigResponse.
 
         函数异步配置列表。
 
@@ -80,7 +80,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionAsyncInvokeConfigResponse.
+        r"""Gets the count of this ListFunctionAsyncInvokeConfigResponse.
 
         列表总数。
 
@@ -91,7 +91,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionAsyncInvokeConfigResponse.
+        r"""Sets the count of this ListFunctionAsyncInvokeConfigResponse.
 
         列表总数。
 
@@ -102,7 +102,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFunctionAsyncInvokeConfigResponse.
+        r"""Gets the page_info of this ListFunctionAsyncInvokeConfigResponse.
 
         :return: The page_info of this ListFunctionAsyncInvokeConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
@@ -111,7 +111,7 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFunctionAsyncInvokeConfigResponse.
+        r"""Sets the page_info of this ListFunctionAsyncInvokeConfigResponse.
 
         :param page_info: The page_info of this ListFunctionAsyncInvokeConfigResponse.
         :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`

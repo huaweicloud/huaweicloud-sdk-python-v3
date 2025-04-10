@@ -27,7 +27,7 @@ class UpdateAssetTreeParam:
     }
 
     def __init__(self, id=None, name=None):
-        """UpdateAssetTreeParam
+        r"""UpdateAssetTreeParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAssetTreeParam:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAssetTreeParam.
+        r"""Gets the id of this UpdateAssetTreeParam.
 
         资产树id
 
@@ -61,7 +61,7 @@ class UpdateAssetTreeParam:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAssetTreeParam.
+        r"""Sets the id of this UpdateAssetTreeParam.
 
         资产树id
 
@@ -72,7 +72,7 @@ class UpdateAssetTreeParam:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAssetTreeParam.
+        r"""Gets the name of this UpdateAssetTreeParam.
 
         资产树目录名称
 
@@ -83,7 +83,7 @@ class UpdateAssetTreeParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAssetTreeParam.
+        r"""Sets the name of this UpdateAssetTreeParam.
 
         资产树目录名称
 

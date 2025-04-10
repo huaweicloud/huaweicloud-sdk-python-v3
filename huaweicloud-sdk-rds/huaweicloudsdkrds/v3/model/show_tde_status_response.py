@@ -28,7 +28,7 @@ class ShowTdeStatusResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, tde_status=None):
-        """ShowTdeStatusResponse
+        r"""ShowTdeStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTdeStatusResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowTdeStatusResponse.
+        r"""Gets the instance_id of this ShowTdeStatusResponse.
 
         实例ID
 
@@ -62,7 +62,7 @@ class ShowTdeStatusResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowTdeStatusResponse.
+        r"""Sets the instance_id of this ShowTdeStatusResponse.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ShowTdeStatusResponse(SdkResponse):
 
     @property
     def tde_status(self):
-        """Gets the tde_status of this ShowTdeStatusResponse.
+        r"""Gets the tde_status of this ShowTdeStatusResponse.
 
         TDE状态
 
@@ -84,7 +84,7 @@ class ShowTdeStatusResponse(SdkResponse):
 
     @tde_status.setter
     def tde_status(self, tde_status):
-        """Sets the tde_status of this ShowTdeStatusResponse.
+        r"""Sets the tde_status of this ShowTdeStatusResponse.
 
         TDE状态
 

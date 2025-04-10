@@ -27,7 +27,7 @@ class ListAssetSummaryRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """ListAssetSummaryRequest
+        r"""ListAssetSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAssetSummaryRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListAssetSummaryRequest.
+        r"""Gets the x_app_user_id of this ListAssetSummaryRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class ListAssetSummaryRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListAssetSummaryRequest.
+        r"""Sets the x_app_user_id of this ListAssetSummaryRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class ListAssetSummaryRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAssetSummaryRequest.
+        r"""Gets the body of this ListAssetSummaryRequest.
 
         :return: The body of this ListAssetSummaryRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListAssetSummarysReq`
@@ -81,7 +81,7 @@ class ListAssetSummaryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAssetSummaryRequest.
+        r"""Sets the body of this ListAssetSummaryRequest.
 
         :param body: The body of this ListAssetSummaryRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ListAssetSummarysReq`

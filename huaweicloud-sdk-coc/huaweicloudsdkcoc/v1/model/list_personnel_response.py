@@ -28,7 +28,7 @@ class ListPersonnelResponse(SdkResponse):
     }
 
     def __init__(self, personnel=None, count=None):
-        """ListPersonnelResponse
+        r"""ListPersonnelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPersonnelResponse(SdkResponse):
 
     @property
     def personnel(self):
-        """Gets the personnel of this ListPersonnelResponse.
+        r"""Gets the personnel of this ListPersonnelResponse.
 
         人员信息
 
@@ -62,7 +62,7 @@ class ListPersonnelResponse(SdkResponse):
 
     @personnel.setter
     def personnel(self, personnel):
-        """Sets the personnel of this ListPersonnelResponse.
+        r"""Sets the personnel of this ListPersonnelResponse.
 
         人员信息
 
@@ -73,7 +73,7 @@ class ListPersonnelResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPersonnelResponse.
+        r"""Gets the count of this ListPersonnelResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListPersonnelResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPersonnelResponse.
+        r"""Sets the count of this ListPersonnelResponse.
 
         总数
 

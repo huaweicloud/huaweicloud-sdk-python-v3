@@ -26,7 +26,7 @@ class CreateResetTracksTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateResetTracksTaskResponse
+        r"""CreateResetTracksTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateResetTracksTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateResetTracksTaskResponse.
+        r"""Gets the task_id of this CreateResetTracksTaskResponse.
 
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 
@@ -55,7 +55,7 @@ class CreateResetTracksTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateResetTracksTaskResponse.
+        r"""Sets the task_id of this CreateResetTracksTaskResponse.
 
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 

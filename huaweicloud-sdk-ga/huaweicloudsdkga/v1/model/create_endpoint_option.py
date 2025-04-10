@@ -31,7 +31,7 @@ class CreateEndpointOption:
     }
 
     def __init__(self, resource_id=None, resource_type=None, weight=None, ip_address=None):
-        """CreateEndpointOption
+        r"""CreateEndpointOption
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateEndpointOption:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateEndpointOption.
+        r"""Gets the resource_id of this CreateEndpointOption.
 
         对应后端资源的ID，比如EIP的ID。
 
@@ -72,7 +72,7 @@ class CreateEndpointOption:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateEndpointOption.
+        r"""Sets the resource_id of this CreateEndpointOption.
 
         对应后端资源的ID，比如EIP的ID。
 
@@ -83,7 +83,7 @@ class CreateEndpointOption:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateEndpointOption.
+        r"""Gets the resource_type of this CreateEndpointOption.
 
         :return: The resource_type of this CreateEndpointOption.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointType`
@@ -92,7 +92,7 @@ class CreateEndpointOption:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateEndpointOption.
+        r"""Sets the resource_type of this CreateEndpointOption.
 
         :param resource_type: The resource_type of this CreateEndpointOption.
         :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
@@ -101,7 +101,7 @@ class CreateEndpointOption:
 
     @property
     def weight(self):
-        """Gets the weight of this CreateEndpointOption.
+        r"""Gets the weight of this CreateEndpointOption.
 
         终端节点权重。
 
@@ -112,7 +112,7 @@ class CreateEndpointOption:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this CreateEndpointOption.
+        r"""Sets the weight of this CreateEndpointOption.
 
         终端节点权重。
 
@@ -123,7 +123,7 @@ class CreateEndpointOption:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this CreateEndpointOption.
+        r"""Gets the ip_address of this CreateEndpointOption.
 
         IP地址。
 
@@ -134,7 +134,7 @@ class CreateEndpointOption:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this CreateEndpointOption.
+        r"""Sets the ip_address of this CreateEndpointOption.
 
         IP地址。
 

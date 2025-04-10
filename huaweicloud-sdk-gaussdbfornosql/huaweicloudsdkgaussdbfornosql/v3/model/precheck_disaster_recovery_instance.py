@@ -29,7 +29,7 @@ class PrecheckDisasterRecoveryInstance:
     }
 
     def __init__(self, vpc_cidr=None, spec_code=None, node_ips=None):
-        """PrecheckDisasterRecoveryInstance
+        r"""PrecheckDisasterRecoveryInstance
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PrecheckDisasterRecoveryInstance:
 
     @property
     def vpc_cidr(self):
-        """Gets the vpc_cidr of this PrecheckDisasterRecoveryInstance.
+        r"""Gets the vpc_cidr of this PrecheckDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的vpc网段。
 
@@ -65,7 +65,7 @@ class PrecheckDisasterRecoveryInstance:
 
     @vpc_cidr.setter
     def vpc_cidr(self, vpc_cidr):
-        """Sets the vpc_cidr of this PrecheckDisasterRecoveryInstance.
+        r"""Sets the vpc_cidr of this PrecheckDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的vpc网段。
 
@@ -76,7 +76,7 @@ class PrecheckDisasterRecoveryInstance:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this PrecheckDisasterRecoveryInstance.
+        r"""Gets the spec_code of this PrecheckDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的规格码。
 
@@ -87,7 +87,7 @@ class PrecheckDisasterRecoveryInstance:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this PrecheckDisasterRecoveryInstance.
+        r"""Sets the spec_code of this PrecheckDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的规格码。
 
@@ -98,7 +98,7 @@ class PrecheckDisasterRecoveryInstance:
 
     @property
     def node_ips(self):
-        """Gets the node_ips of this PrecheckDisasterRecoveryInstance.
+        r"""Gets the node_ips of this PrecheckDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的节点IP列表。
 
@@ -109,7 +109,7 @@ class PrecheckDisasterRecoveryInstance:
 
     @node_ips.setter
     def node_ips(self, node_ips):
-        """Sets the node_ips of this PrecheckDisasterRecoveryInstance.
+        r"""Sets the node_ips of this PrecheckDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的节点IP列表。
 

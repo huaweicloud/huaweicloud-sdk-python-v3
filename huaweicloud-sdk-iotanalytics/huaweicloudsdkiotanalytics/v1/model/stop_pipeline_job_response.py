@@ -26,7 +26,7 @@ class StopPipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None):
-        """StopPipelineJobResponse
+        r"""StopPipelineJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopPipelineJobResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StopPipelineJobResponse.
+        r"""Gets the pipeline_id of this StopPipelineJobResponse.
 
         管道ID
 
@@ -55,7 +55,7 @@ class StopPipelineJobResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StopPipelineJobResponse.
+        r"""Sets the pipeline_id of this StopPipelineJobResponse.
 
         管道ID
 

@@ -55,7 +55,7 @@ class DynamicMaskingPolicySet:
     }
 
     def __init__(self, id=None, name=None, datasource_type=None, cluster_id=None, cluster_name=None, database_name=None, table_name=None, user_groups=None, users=None, sync_status=None, sync_time=None, sync_msg=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """DynamicMaskingPolicySet
+        r"""DynamicMaskingPolicySet
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def id(self):
-        """Gets the id of this DynamicMaskingPolicySet.
+        r"""Gets the id of this DynamicMaskingPolicySet.
 
         动态脱敏策略id。
 
@@ -159,7 +159,7 @@ class DynamicMaskingPolicySet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DynamicMaskingPolicySet.
+        r"""Sets the id of this DynamicMaskingPolicySet.
 
         动态脱敏策略id。
 
@@ -170,7 +170,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def name(self):
-        """Gets the name of this DynamicMaskingPolicySet.
+        r"""Gets the name of this DynamicMaskingPolicySet.
 
         动态脱敏策略名称。英文和汉字开头, 支持英文、汉字、数字、下划线, 2-64字符。
 
@@ -181,7 +181,7 @@ class DynamicMaskingPolicySet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DynamicMaskingPolicySet.
+        r"""Sets the name of this DynamicMaskingPolicySet.
 
         动态脱敏策略名称。英文和汉字开头, 支持英文、汉字、数字、下划线, 2-64字符。
 
@@ -192,7 +192,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DynamicMaskingPolicySet.
+        r"""Gets the datasource_type of this DynamicMaskingPolicySet.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -203,7 +203,7 @@ class DynamicMaskingPolicySet:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DynamicMaskingPolicySet.
+        r"""Sets the datasource_type of this DynamicMaskingPolicySet.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -214,7 +214,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DynamicMaskingPolicySet.
+        r"""Gets the cluster_id of this DynamicMaskingPolicySet.
 
         集群id。请于集群管理页面查看集群ID信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -225,7 +225,7 @@ class DynamicMaskingPolicySet:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DynamicMaskingPolicySet.
+        r"""Sets the cluster_id of this DynamicMaskingPolicySet.
 
         集群id。请于集群管理页面查看集群ID信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -236,7 +236,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this DynamicMaskingPolicySet.
+        r"""Gets the cluster_name of this DynamicMaskingPolicySet.
 
         集群名称。请于集群管理页面查看集群名称信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -247,7 +247,7 @@ class DynamicMaskingPolicySet:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this DynamicMaskingPolicySet.
+        r"""Sets the cluster_name of this DynamicMaskingPolicySet.
 
         集群名称。请于集群管理页面查看集群名称信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -258,7 +258,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DynamicMaskingPolicySet.
+        r"""Gets the database_name of this DynamicMaskingPolicySet.
 
         数据库名称。获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -269,7 +269,7 @@ class DynamicMaskingPolicySet:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DynamicMaskingPolicySet.
+        r"""Sets the database_name of this DynamicMaskingPolicySet.
 
         数据库名称。获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -280,7 +280,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DynamicMaskingPolicySet.
+        r"""Gets the table_name of this DynamicMaskingPolicySet.
 
         数据表名称, 获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -291,7 +291,7 @@ class DynamicMaskingPolicySet:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DynamicMaskingPolicySet.
+        r"""Sets the table_name of this DynamicMaskingPolicySet.
 
         数据表名称, 获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -302,7 +302,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def user_groups(self):
-        """Gets the user_groups of this DynamicMaskingPolicySet.
+        r"""Gets the user_groups of this DynamicMaskingPolicySet.
 
         用户组列表，用户组名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置）。例如：\"userGroup1,userGroup2\"。
 
@@ -313,7 +313,7 @@ class DynamicMaskingPolicySet:
 
     @user_groups.setter
     def user_groups(self, user_groups):
-        """Sets the user_groups of this DynamicMaskingPolicySet.
+        r"""Sets the user_groups of this DynamicMaskingPolicySet.
 
         用户组列表，用户组名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置）。例如：\"userGroup1,userGroup2\"。
 
@@ -324,7 +324,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def users(self):
-        """Gets the users of this DynamicMaskingPolicySet.
+        r"""Gets the users of this DynamicMaskingPolicySet.
 
         用户列表，用户名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置），例如：\"user1,user2\"。
 
@@ -335,7 +335,7 @@ class DynamicMaskingPolicySet:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this DynamicMaskingPolicySet.
+        r"""Sets the users of this DynamicMaskingPolicySet.
 
         用户列表，用户名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置），例如：\"user1,user2\"。
 
@@ -346,7 +346,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this DynamicMaskingPolicySet.
+        r"""Gets the sync_status of this DynamicMaskingPolicySet.
 
         同步状态： - UNKNOWN 未知状态 - NOT_SYNC 未同步 - SYNCING 同步中 - SYNC_SUCCESS 同步成功 - SYNC_FAIL 同步失败 - SYNC_PARTIAL_FAIL 存在失败 - DELETE_FAIL 删除失败 - DELETING 删除中 - UPDATING 更新中 - DATA_UPDATED 数据存在更新
 
@@ -357,7 +357,7 @@ class DynamicMaskingPolicySet:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this DynamicMaskingPolicySet.
+        r"""Sets the sync_status of this DynamicMaskingPolicySet.
 
         同步状态： - UNKNOWN 未知状态 - NOT_SYNC 未同步 - SYNCING 同步中 - SYNC_SUCCESS 同步成功 - SYNC_FAIL 同步失败 - SYNC_PARTIAL_FAIL 存在失败 - DELETE_FAIL 删除失败 - DELETING 删除中 - UPDATING 更新中 - DATA_UPDATED 数据存在更新
 
@@ -368,7 +368,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def sync_time(self):
-        """Gets the sync_time of this DynamicMaskingPolicySet.
+        r"""Gets the sync_time of this DynamicMaskingPolicySet.
 
         策略同步时间。
 
@@ -379,7 +379,7 @@ class DynamicMaskingPolicySet:
 
     @sync_time.setter
     def sync_time(self, sync_time):
-        """Sets the sync_time of this DynamicMaskingPolicySet.
+        r"""Sets the sync_time of this DynamicMaskingPolicySet.
 
         策略同步时间。
 
@@ -390,7 +390,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this DynamicMaskingPolicySet.
+        r"""Gets the sync_msg of this DynamicMaskingPolicySet.
 
         策略同步日志。
 
@@ -401,7 +401,7 @@ class DynamicMaskingPolicySet:
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this DynamicMaskingPolicySet.
+        r"""Sets the sync_msg of this DynamicMaskingPolicySet.
 
         策略同步日志。
 
@@ -412,7 +412,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DynamicMaskingPolicySet.
+        r"""Gets the create_time of this DynamicMaskingPolicySet.
 
         策略创建时间。
 
@@ -423,7 +423,7 @@ class DynamicMaskingPolicySet:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DynamicMaskingPolicySet.
+        r"""Sets the create_time of this DynamicMaskingPolicySet.
 
         策略创建时间。
 
@@ -434,7 +434,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def create_user(self):
-        """Gets the create_user of this DynamicMaskingPolicySet.
+        r"""Gets the create_user of this DynamicMaskingPolicySet.
 
         策略创建者。
 
@@ -445,7 +445,7 @@ class DynamicMaskingPolicySet:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this DynamicMaskingPolicySet.
+        r"""Sets the create_user of this DynamicMaskingPolicySet.
 
         策略创建者。
 
@@ -456,7 +456,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DynamicMaskingPolicySet.
+        r"""Gets the update_time of this DynamicMaskingPolicySet.
 
         策略更新时间。
 
@@ -467,7 +467,7 @@ class DynamicMaskingPolicySet:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DynamicMaskingPolicySet.
+        r"""Sets the update_time of this DynamicMaskingPolicySet.
 
         策略更新时间。
 
@@ -478,7 +478,7 @@ class DynamicMaskingPolicySet:
 
     @property
     def update_user(self):
-        """Gets the update_user of this DynamicMaskingPolicySet.
+        r"""Gets the update_user of this DynamicMaskingPolicySet.
 
         策略更新者。
 
@@ -489,7 +489,7 @@ class DynamicMaskingPolicySet:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this DynamicMaskingPolicySet.
+        r"""Sets the update_user of this DynamicMaskingPolicySet.
 
         策略更新者。
 

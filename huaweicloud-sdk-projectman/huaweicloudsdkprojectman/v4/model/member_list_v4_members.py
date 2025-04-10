@@ -43,7 +43,7 @@ class MemberListV4Members:
     }
 
     def __init__(self, domain_id=None, domain_name=None, user_id=None, user_name=None, user_num_id=None, role_id=None, nick_name=None, role_name=None, user_type=None, forbidden=None):
-        """MemberListV4Members
+        r"""MemberListV4Members
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class MemberListV4Members:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this MemberListV4Members.
+        r"""Gets the domain_id of this MemberListV4Members.
 
         租户id
 
@@ -117,7 +117,7 @@ class MemberListV4Members:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this MemberListV4Members.
+        r"""Sets the domain_id of this MemberListV4Members.
 
         租户id
 
@@ -128,7 +128,7 @@ class MemberListV4Members:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this MemberListV4Members.
+        r"""Gets the domain_name of this MemberListV4Members.
 
         租户名
 
@@ -139,7 +139,7 @@ class MemberListV4Members:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this MemberListV4Members.
+        r"""Sets the domain_name of this MemberListV4Members.
 
         租户名
 
@@ -150,7 +150,7 @@ class MemberListV4Members:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MemberListV4Members.
+        r"""Gets the user_id of this MemberListV4Members.
 
         用户id
 
@@ -161,7 +161,7 @@ class MemberListV4Members:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MemberListV4Members.
+        r"""Sets the user_id of this MemberListV4Members.
 
         用户id
 
@@ -172,7 +172,7 @@ class MemberListV4Members:
 
     @property
     def user_name(self):
-        """Gets the user_name of this MemberListV4Members.
+        r"""Gets the user_name of this MemberListV4Members.
 
         用户名
 
@@ -183,7 +183,7 @@ class MemberListV4Members:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this MemberListV4Members.
+        r"""Sets the user_name of this MemberListV4Members.
 
         用户名
 
@@ -194,7 +194,7 @@ class MemberListV4Members:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this MemberListV4Members.
+        r"""Gets the user_num_id of this MemberListV4Members.
 
         创建人numId
 
@@ -205,7 +205,7 @@ class MemberListV4Members:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this MemberListV4Members.
+        r"""Sets the user_num_id of this MemberListV4Members.
 
         创建人numId
 
@@ -216,7 +216,7 @@ class MemberListV4Members:
 
     @property
     def role_id(self):
-        """Gets the role_id of this MemberListV4Members.
+        r"""Gets the role_id of this MemberListV4Members.
 
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -227,7 +227,7 @@ class MemberListV4Members:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this MemberListV4Members.
+        r"""Sets the role_id of this MemberListV4Members.
 
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -238,7 +238,7 @@ class MemberListV4Members:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this MemberListV4Members.
+        r"""Gets the nick_name of this MemberListV4Members.
 
         用户昵称
 
@@ -249,7 +249,7 @@ class MemberListV4Members:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this MemberListV4Members.
+        r"""Sets the nick_name of this MemberListV4Members.
 
         用户昵称
 
@@ -260,7 +260,7 @@ class MemberListV4Members:
 
     @property
     def role_name(self):
-        """Gets the role_name of this MemberListV4Members.
+        r"""Gets the role_name of this MemberListV4Members.
 
         用户角色
 
@@ -271,7 +271,7 @@ class MemberListV4Members:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this MemberListV4Members.
+        r"""Sets the role_name of this MemberListV4Members.
 
         用户角色
 
@@ -282,7 +282,7 @@ class MemberListV4Members:
 
     @property
     def user_type(self):
-        """Gets the user_type of this MemberListV4Members.
+        r"""Gets the user_type of this MemberListV4Members.
 
         用户类型, User iam用户, Federation 联邦账号,
 
@@ -293,7 +293,7 @@ class MemberListV4Members:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this MemberListV4Members.
+        r"""Sets the user_type of this MemberListV4Members.
 
         用户类型, User iam用户, Federation 联邦账号,
 
@@ -304,7 +304,7 @@ class MemberListV4Members:
 
     @property
     def forbidden(self):
-        """Gets the forbidden of this MemberListV4Members.
+        r"""Gets the forbidden of this MemberListV4Members.
 
         是否是禁用账号，1 禁用账号， 0非禁用账号
 
@@ -315,7 +315,7 @@ class MemberListV4Members:
 
     @forbidden.setter
     def forbidden(self, forbidden):
-        """Sets the forbidden of this MemberListV4Members.
+        r"""Sets the forbidden of this MemberListV4Members.
 
         是否是禁用账号，1 禁用账号， 0非禁用账号
 

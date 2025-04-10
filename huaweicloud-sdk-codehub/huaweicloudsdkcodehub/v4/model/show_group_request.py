@@ -27,7 +27,7 @@ class ShowGroupRequest:
     }
 
     def __init__(self, project_id=None, group_id=None):
-        """ShowGroupRequest
+        r"""ShowGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowGroupRequest.
+        r"""Gets the project_id of this ShowGroupRequest.
 
         项目id
 
@@ -59,7 +59,7 @@ class ShowGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowGroupRequest.
+        r"""Sets the project_id of this ShowGroupRequest.
 
         项目id
 
@@ -70,7 +70,7 @@ class ShowGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowGroupRequest.
+        r"""Gets the group_id of this ShowGroupRequest.
 
         代码组id
 
@@ -81,7 +81,7 @@ class ShowGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowGroupRequest.
+        r"""Sets the group_id of this ShowGroupRequest.
 
         代码组id
 

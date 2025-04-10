@@ -25,7 +25,7 @@ class RequestId:
     }
 
     def __init__(self, request_id=None):
-        """RequestId
+        r"""RequestId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RequestId:
 
     @property
     def request_id(self):
-        """Gets the request_id of this RequestId.
+        r"""Gets the request_id of this RequestId.
 
         请求ID。
 
@@ -53,7 +53,7 @@ class RequestId:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this RequestId.
+        r"""Sets the request_id of this RequestId.
 
         请求ID。
 

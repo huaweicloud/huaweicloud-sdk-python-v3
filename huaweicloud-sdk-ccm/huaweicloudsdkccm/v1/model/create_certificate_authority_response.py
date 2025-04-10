@@ -26,7 +26,7 @@ class CreateCertificateAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, ca_id=None):
-        """CreateCertificateAuthorityResponse
+        r"""CreateCertificateAuthorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCertificateAuthorityResponse(SdkResponse):
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this CreateCertificateAuthorityResponse.
+        r"""Gets the ca_id of this CreateCertificateAuthorityResponse.
 
         当前签发的CA证书ID。
 
@@ -55,7 +55,7 @@ class CreateCertificateAuthorityResponse(SdkResponse):
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this CreateCertificateAuthorityResponse.
+        r"""Sets the ca_id of this CreateCertificateAuthorityResponse.
 
         当前签发的CA证书ID。
 

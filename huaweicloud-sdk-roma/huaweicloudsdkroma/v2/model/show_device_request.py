@@ -27,7 +27,7 @@ class ShowDeviceRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None):
-        """ShowDeviceRequest
+        r"""ShowDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDeviceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDeviceRequest.
+        r"""Gets the instance_id of this ShowDeviceRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDeviceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDeviceRequest.
+        r"""Sets the instance_id of this ShowDeviceRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDeviceRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowDeviceRequest.
+        r"""Gets the device_id of this ShowDeviceRequest.
 
         设备ID
 
@@ -81,7 +81,7 @@ class ShowDeviceRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowDeviceRequest.
+        r"""Sets the device_id of this ShowDeviceRequest.
 
         设备ID
 

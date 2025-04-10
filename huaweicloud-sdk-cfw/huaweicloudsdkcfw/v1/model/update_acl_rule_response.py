@@ -26,7 +26,7 @@ class UpdateAclRuleResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateAclRuleResponse
+        r"""UpdateAclRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAclRuleResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateAclRuleResponse.
+        r"""Gets the data of this UpdateAclRuleResponse.
 
         :return: The data of this UpdateAclRuleResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleId`
@@ -53,7 +53,7 @@ class UpdateAclRuleResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateAclRuleResponse.
+        r"""Sets the data of this UpdateAclRuleResponse.
 
         :param data: The data of this UpdateAclRuleResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.RuleId`

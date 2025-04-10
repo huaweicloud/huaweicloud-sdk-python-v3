@@ -28,7 +28,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
     }
 
     def __init__(self, max_session=None, max_group_count=None):
-        """ShowServerGroupRestrictResponse
+        r"""ShowServerGroupRestrictResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
 
     @property
     def max_session(self):
-        """Gets the max_session of this ShowServerGroupRestrictResponse.
+        r"""Gets the max_session of this ShowServerGroupRestrictResponse.
 
         单台服务器最大的链接会话数。
 
@@ -62,7 +62,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
 
     @max_session.setter
     def max_session(self, max_session):
-        """Sets the max_session of this ShowServerGroupRestrictResponse.
+        r"""Sets the max_session of this ShowServerGroupRestrictResponse.
 
         单台服务器最大的链接会话数。
 
@@ -73,7 +73,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
 
     @property
     def max_group_count(self):
-        """Gets the max_group_count of this ShowServerGroupRestrictResponse.
+        r"""Gets the max_group_count of this ShowServerGroupRestrictResponse.
 
         该租户可创建的最多服务器组数量。
 
@@ -84,7 +84,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
 
     @max_group_count.setter
     def max_group_count(self, max_group_count):
-        """Sets the max_group_count of this ShowServerGroupRestrictResponse.
+        r"""Sets the max_group_count of this ShowServerGroupRestrictResponse.
 
         该租户可创建的最多服务器组数量。
 

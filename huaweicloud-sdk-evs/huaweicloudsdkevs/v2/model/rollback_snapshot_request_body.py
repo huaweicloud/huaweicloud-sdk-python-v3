@@ -25,7 +25,7 @@ class RollbackSnapshotRequestBody:
     }
 
     def __init__(self, rollback=None):
-        """RollbackSnapshotRequestBody
+        r"""RollbackSnapshotRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RollbackSnapshotRequestBody:
 
     @property
     def rollback(self):
-        """Gets the rollback of this RollbackSnapshotRequestBody.
+        r"""Gets the rollback of this RollbackSnapshotRequestBody.
 
         :return: The rollback of this RollbackSnapshotRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackSnapshotOption`
@@ -51,7 +51,7 @@ class RollbackSnapshotRequestBody:
 
     @rollback.setter
     def rollback(self, rollback):
-        """Sets the rollback of this RollbackSnapshotRequestBody.
+        r"""Sets the rollback of this RollbackSnapshotRequestBody.
 
         :param rollback: The rollback of this RollbackSnapshotRequestBody.
         :type rollback: :class:`huaweicloudsdkevs.v2.RollbackSnapshotOption`

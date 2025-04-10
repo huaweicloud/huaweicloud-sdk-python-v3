@@ -29,7 +29,7 @@ class PutKvRequestBody:
     }
 
     def __init__(self, table_name=None, condition_expression=None, kv_doc=None):
-        """PutKvRequestBody
+        r"""PutKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PutKvRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this PutKvRequestBody.
+        r"""Gets the table_name of this PutKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -67,7 +67,7 @@ class PutKvRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PutKvRequestBody.
+        r"""Sets the table_name of this PutKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -78,7 +78,7 @@ class PutKvRequestBody:
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this PutKvRequestBody.
+        r"""Gets the condition_expression of this PutKvRequestBody.
 
         :return: The condition_expression of this PutKvRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -87,7 +87,7 @@ class PutKvRequestBody:
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this PutKvRequestBody.
+        r"""Sets the condition_expression of this PutKvRequestBody.
 
         :param condition_expression: The condition_expression of this PutKvRequestBody.
         :type condition_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -96,7 +96,7 @@ class PutKvRequestBody:
 
     @property
     def kv_doc(self):
-        """Gets the kv_doc of this PutKvRequestBody.
+        r"""Gets the kv_doc of this PutKvRequestBody.
 
         用户文档。
 
@@ -107,7 +107,7 @@ class PutKvRequestBody:
 
     @kv_doc.setter
     def kv_doc(self, kv_doc):
-        """Sets the kv_doc of this PutKvRequestBody.
+        r"""Sets the kv_doc of this PutKvRequestBody.
 
         用户文档。
 

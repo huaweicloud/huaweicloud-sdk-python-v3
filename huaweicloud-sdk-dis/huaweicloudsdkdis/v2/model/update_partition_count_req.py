@@ -27,7 +27,7 @@ class UpdatePartitionCountReq:
     }
 
     def __init__(self, stream_name=None, target_partition_count=None):
-        """UpdatePartitionCountReq
+        r"""UpdatePartitionCountReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdatePartitionCountReq:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this UpdatePartitionCountReq.
+        r"""Gets the stream_name of this UpdatePartitionCountReq.
 
         需要变更分区数量的通道名称。
 
@@ -59,7 +59,7 @@ class UpdatePartitionCountReq:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this UpdatePartitionCountReq.
+        r"""Sets the stream_name of this UpdatePartitionCountReq.
 
         需要变更分区数量的通道名称。
 
@@ -70,7 +70,7 @@ class UpdatePartitionCountReq:
 
     @property
     def target_partition_count(self):
-        """Gets the target_partition_count of this UpdatePartitionCountReq.
+        r"""Gets the target_partition_count of this UpdatePartitionCountReq.
 
         变更的目标分区数量。  取值为大于0的整数。  设置的值大于当前分区数量表示扩容，小于当前分区数量表示缩容。  注意：  每个通道在一小时内扩容和缩容总次数最多5次，且一小时内扩容或缩容操作有一次成功则最近一小时内不允许再次进行扩容或缩容操作。
 
@@ -81,7 +81,7 @@ class UpdatePartitionCountReq:
 
     @target_partition_count.setter
     def target_partition_count(self, target_partition_count):
-        """Sets the target_partition_count of this UpdatePartitionCountReq.
+        r"""Sets the target_partition_count of this UpdatePartitionCountReq.
 
         变更的目标分区数量。  取值为大于0的整数。  设置的值大于当前分区数量表示扩容，小于当前分区数量表示缩容。  注意：  每个通道在一小时内扩容和缩容总次数最多5次，且一小时内扩容或缩容操作有一次成功则最近一小时内不允许再次进行扩容或缩容操作。
 

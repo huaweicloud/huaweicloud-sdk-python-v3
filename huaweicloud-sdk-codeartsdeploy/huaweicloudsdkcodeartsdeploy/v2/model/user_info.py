@@ -27,7 +27,7 @@ class UserInfo:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """UserInfo
+        r"""UserInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UserInfo.
+        r"""Gets the user_id of this UserInfo.
 
         用户id
 
@@ -61,7 +61,7 @@ class UserInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UserInfo.
+        r"""Sets the user_id of this UserInfo.
 
         用户id
 
@@ -72,7 +72,7 @@ class UserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserInfo.
+        r"""Gets the user_name of this UserInfo.
 
         用户名
 
@@ -83,7 +83,7 @@ class UserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserInfo.
+        r"""Sets the user_name of this UserInfo.
 
         用户名
 

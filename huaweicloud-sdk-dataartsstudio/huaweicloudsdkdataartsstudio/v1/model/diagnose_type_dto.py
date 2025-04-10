@@ -25,7 +25,7 @@ class DiagnoseTypeDTO:
     }
 
     def __init__(self, type=None):
-        """DiagnoseTypeDTO
+        r"""DiagnoseTypeDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DiagnoseTypeDTO:
 
     @property
     def type(self):
-        """Gets the type of this DiagnoseTypeDTO.
+        r"""Gets the type of this DiagnoseTypeDTO.
 
         数据安全诊断项 * SENSITIVE_DATA 敏感数据保护 * PERMISSION_MANAGEMENT 数据权限控制 * DATASOURCE_PROTECTION 数据源防护
 
@@ -54,7 +54,7 @@ class DiagnoseTypeDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DiagnoseTypeDTO.
+        r"""Sets the type of this DiagnoseTypeDTO.
 
         数据安全诊断项 * SENSITIVE_DATA 敏感数据保护 * PERMISSION_MANAGEMENT 数据权限控制 * DATASOURCE_PROTECTION 数据源防护
 

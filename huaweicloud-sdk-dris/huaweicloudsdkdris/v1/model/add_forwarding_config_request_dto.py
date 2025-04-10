@@ -27,7 +27,7 @@ class AddForwardingConfigRequestDTO:
     }
 
     def __init__(self, forwarding_type=None, forwarding_config=None):
-        """AddForwardingConfigRequestDTO
+        r"""AddForwardingConfigRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddForwardingConfigRequestDTO:
 
     @property
     def forwarding_type(self):
-        """Gets the forwarding_type of this AddForwardingConfigRequestDTO.
+        r"""Gets the forwarding_type of this AddForwardingConfigRequestDTO.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka，mrskafka”。
 
@@ -59,7 +59,7 @@ class AddForwardingConfigRequestDTO:
 
     @forwarding_type.setter
     def forwarding_type(self, forwarding_type):
-        """Sets the forwarding_type of this AddForwardingConfigRequestDTO.
+        r"""Sets the forwarding_type of this AddForwardingConfigRequestDTO.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka，mrskafka”。
 
@@ -70,7 +70,7 @@ class AddForwardingConfigRequestDTO:
 
     @property
     def forwarding_config(self):
-        """Gets the forwarding_config of this AddForwardingConfigRequestDTO.
+        r"""Gets the forwarding_config of this AddForwardingConfigRequestDTO.
 
         :return: The forwarding_config of this AddForwardingConfigRequestDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ForwardingConfigRequestDTO`
@@ -79,7 +79,7 @@ class AddForwardingConfigRequestDTO:
 
     @forwarding_config.setter
     def forwarding_config(self, forwarding_config):
-        """Sets the forwarding_config of this AddForwardingConfigRequestDTO.
+        r"""Sets the forwarding_config of this AddForwardingConfigRequestDTO.
 
         :param forwarding_config: The forwarding_config of this AddForwardingConfigRequestDTO.
         :type forwarding_config: :class:`huaweicloudsdkdris.v1.ForwardingConfigRequestDTO`

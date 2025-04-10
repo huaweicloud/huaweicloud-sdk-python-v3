@@ -26,7 +26,7 @@ class ChangeServerChargeModeResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """ChangeServerChargeModeResponse
+        r"""ChangeServerChargeModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeServerChargeModeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeServerChargeModeResponse.
+        r"""Gets the order_id of this ChangeServerChargeModeResponse.
 
         按需转包提交后返回的订单ID，用户可以使用该ID对订单结果进行查询。
 
@@ -55,7 +55,7 @@ class ChangeServerChargeModeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeServerChargeModeResponse.
+        r"""Sets the order_id of this ChangeServerChargeModeResponse.
 
         按需转包提交后返回的订单ID，用户可以使用该ID对订单结果进行查询。
 

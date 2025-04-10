@@ -34,7 +34,7 @@ class ListRtcRoomListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, limit=None, offset=None, room_info_list=None, x_request_id=None):
-        """ListRtcRoomListResponse
+        r"""ListRtcRoomListResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRtcRoomListResponse.
+        r"""Gets the total of this ListRtcRoomListResponse.
 
         总数
 
@@ -83,7 +83,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRtcRoomListResponse.
+        r"""Sets the total of this ListRtcRoomListResponse.
 
         总数
 
@@ -94,7 +94,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListRtcRoomListResponse.
+        r"""Gets the limit of this ListRtcRoomListResponse.
 
         查询结果限制
 
@@ -105,7 +105,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRtcRoomListResponse.
+        r"""Sets the limit of this ListRtcRoomListResponse.
 
         查询结果限制
 
@@ -116,7 +116,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListRtcRoomListResponse.
+        r"""Gets the offset of this ListRtcRoomListResponse.
 
         查询偏移量
 
@@ -127,7 +127,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRtcRoomListResponse.
+        r"""Sets the offset of this ListRtcRoomListResponse.
 
         查询偏移量
 
@@ -138,7 +138,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @property
     def room_info_list(self):
-        """Gets the room_info_list of this ListRtcRoomListResponse.
+        r"""Gets the room_info_list of this ListRtcRoomListResponse.
 
         房间列表信息
 
@@ -149,7 +149,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @room_info_list.setter
     def room_info_list(self, room_info_list):
-        """Sets the room_info_list of this ListRtcRoomListResponse.
+        r"""Sets the room_info_list of this ListRtcRoomListResponse.
 
         房间列表信息
 
@@ -160,7 +160,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcRoomListResponse.
+        r"""Gets the x_request_id of this ListRtcRoomListResponse.
 
         :return: The x_request_id of this ListRtcRoomListResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListRtcRoomListResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcRoomListResponse.
+        r"""Sets the x_request_id of this ListRtcRoomListResponse.
 
         :param x_request_id: The x_request_id of this ListRtcRoomListResponse.
         :type x_request_id: str

@@ -31,7 +31,7 @@ class ListTopicAccessPolicyRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, offset=None, limit=None):
-        """ListTopicAccessPolicyRequest
+        r"""ListTopicAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListTopicAccessPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTopicAccessPolicyRequest.
+        r"""Gets the instance_id of this ListTopicAccessPolicyRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class ListTopicAccessPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTopicAccessPolicyRequest.
+        r"""Sets the instance_id of this ListTopicAccessPolicyRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class ListTopicAccessPolicyRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ListTopicAccessPolicyRequest.
+        r"""Gets the topic of this ListTopicAccessPolicyRequest.
 
         主题名称。
 
@@ -95,7 +95,7 @@ class ListTopicAccessPolicyRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ListTopicAccessPolicyRequest.
+        r"""Sets the topic of this ListTopicAccessPolicyRequest.
 
         主题名称。
 
@@ -106,7 +106,7 @@ class ListTopicAccessPolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTopicAccessPolicyRequest.
+        r"""Gets the offset of this ListTopicAccessPolicyRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -117,7 +117,7 @@ class ListTopicAccessPolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTopicAccessPolicyRequest.
+        r"""Sets the offset of this ListTopicAccessPolicyRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -128,7 +128,7 @@ class ListTopicAccessPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTopicAccessPolicyRequest.
+        r"""Gets the limit of this ListTopicAccessPolicyRequest.
 
         查询数量。
 
@@ -139,7 +139,7 @@ class ListTopicAccessPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTopicAccessPolicyRequest.
+        r"""Sets the limit of this ListTopicAccessPolicyRequest.
 
         查询数量。
 

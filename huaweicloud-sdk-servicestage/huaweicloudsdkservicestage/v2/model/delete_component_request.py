@@ -29,7 +29,7 @@ class DeleteComponentRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, force=None):
-        """DeleteComponentRequest
+        r"""DeleteComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteComponentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this DeleteComponentRequest.
+        r"""Gets the application_id of this DeleteComponentRequest.
 
         应用ID。
 
@@ -66,7 +66,7 @@ class DeleteComponentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this DeleteComponentRequest.
+        r"""Sets the application_id of this DeleteComponentRequest.
 
         应用ID。
 
@@ -77,7 +77,7 @@ class DeleteComponentRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this DeleteComponentRequest.
+        r"""Gets the component_id of this DeleteComponentRequest.
 
         组件ID。
 
@@ -88,7 +88,7 @@ class DeleteComponentRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this DeleteComponentRequest.
+        r"""Sets the component_id of this DeleteComponentRequest.
 
         组件ID。
 
@@ -99,7 +99,7 @@ class DeleteComponentRequest:
 
     @property
     def force(self):
-        """Gets the force of this DeleteComponentRequest.
+        r"""Gets the force of this DeleteComponentRequest.
 
         是否强制删除。
 
@@ -110,7 +110,7 @@ class DeleteComponentRequest:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this DeleteComponentRequest.
+        r"""Sets the force of this DeleteComponentRequest.
 
         是否强制删除。
 

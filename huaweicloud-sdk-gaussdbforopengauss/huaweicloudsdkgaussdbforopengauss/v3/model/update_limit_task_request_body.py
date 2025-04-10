@@ -39,7 +39,7 @@ class UpdateLimitTaskRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None, key_words=None, parallel_size=None, task_name=None, cpu_utilization=None, memory_utilization=None, databases=None):
-        """UpdateLimitTaskRequestBody
+        r"""UpdateLimitTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateLimitTaskRequestBody.
+        r"""Gets the start_time of this UpdateLimitTaskRequestBody.
 
         任务开始时间，格式为yyyy-mm-ddThh:mm:ssZ，如果存在更改，需大于当前时间前俩分钟，当前时间指UTC时，SQL范围必传。
 
@@ -103,7 +103,7 @@ class UpdateLimitTaskRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateLimitTaskRequestBody.
+        r"""Sets the start_time of this UpdateLimitTaskRequestBody.
 
         任务开始时间，格式为yyyy-mm-ddThh:mm:ssZ，如果存在更改，需大于当前时间前俩分钟，当前时间指UTC时，SQL范围必传。
 
@@ -114,7 +114,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateLimitTaskRequestBody.
+        r"""Gets the end_time of this UpdateLimitTaskRequestBody.
 
         任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，大于任务开始时间，当前时间指UTC时间，SQL范围必传。
 
@@ -125,7 +125,7 @@ class UpdateLimitTaskRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateLimitTaskRequestBody.
+        r"""Sets the end_time of this UpdateLimitTaskRequestBody.
 
         任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，大于任务开始时间，当前时间指UTC时间，SQL范围必传。
 
@@ -136,7 +136,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def key_words(self):
-        """Gets the key_words of this UpdateLimitTaskRequestBody.
+        r"""Gets the key_words of this UpdateLimitTaskRequestBody.
 
         关键词，当且仅当类型为SQL_TYPE，必传，多个关键词以逗号隔开，数量范围为[2，100]个，每个关键词长度范围[2，64]位，关键词不允许包含 \" 或 \\ 或 {} 或 null值 以及非首尾的空格符。
 
@@ -147,7 +147,7 @@ class UpdateLimitTaskRequestBody:
 
     @key_words.setter
     def key_words(self, key_words):
-        """Sets the key_words of this UpdateLimitTaskRequestBody.
+        r"""Sets the key_words of this UpdateLimitTaskRequestBody.
 
         关键词，当且仅当类型为SQL_TYPE，必传，多个关键词以逗号隔开，数量范围为[2，100]个，每个关键词长度范围[2，64]位，关键词不允许包含 \" 或 \\ 或 {} 或 null值 以及非首尾的空格符。
 
@@ -158,7 +158,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def parallel_size(self):
-        """Gets the parallel_size of this UpdateLimitTaskRequestBody.
+        r"""Gets the parallel_size of this UpdateLimitTaskRequestBody.
 
         并发数，大于等于零的正整数，取值范围[0, 2147483647]。
 
@@ -169,7 +169,7 @@ class UpdateLimitTaskRequestBody:
 
     @parallel_size.setter
     def parallel_size(self, parallel_size):
-        """Sets the parallel_size of this UpdateLimitTaskRequestBody.
+        r"""Sets the parallel_size of this UpdateLimitTaskRequestBody.
 
         并发数，大于等于零的正整数，取值范围[0, 2147483647]。
 
@@ -180,7 +180,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this UpdateLimitTaskRequestBody.
+        r"""Gets the task_name of this UpdateLimitTaskRequestBody.
 
         限流任务名，只能为英文字母大小写，下划线，数字和$符，最大长度为100个字符。
 
@@ -191,7 +191,7 @@ class UpdateLimitTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this UpdateLimitTaskRequestBody.
+        r"""Sets the task_name of this UpdateLimitTaskRequestBody.
 
         限流任务名，只能为英文字母大小写，下划线，数字和$符，最大长度为100个字符。
 
@@ -202,7 +202,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def cpu_utilization(self):
-        """Gets the cpu_utilization of this UpdateLimitTaskRequestBody.
+        r"""Gets the cpu_utilization of this UpdateLimitTaskRequestBody.
 
         cpu利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和内存利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -213,7 +213,7 @@ class UpdateLimitTaskRequestBody:
 
     @cpu_utilization.setter
     def cpu_utilization(self, cpu_utilization):
-        """Sets the cpu_utilization of this UpdateLimitTaskRequestBody.
+        r"""Sets the cpu_utilization of this UpdateLimitTaskRequestBody.
 
         cpu利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和内存利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -224,7 +224,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def memory_utilization(self):
-        """Gets the memory_utilization of this UpdateLimitTaskRequestBody.
+        r"""Gets the memory_utilization of this UpdateLimitTaskRequestBody.
 
         内存利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和cpu利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -235,7 +235,7 @@ class UpdateLimitTaskRequestBody:
 
     @memory_utilization.setter
     def memory_utilization(self, memory_utilization):
-        """Sets the memory_utilization of this UpdateLimitTaskRequestBody.
+        r"""Sets the memory_utilization of this UpdateLimitTaskRequestBody.
 
         内存利用率阈值，正整数，取值范围[0,100）,如果类型为SESSION_ACTIVE_MAX_COUNT，必传，不支持和cpu利用率阈值同时为0，如果选择只限制CPU、内存中的其中一个，则另一个必须传值0。
 
@@ -246,7 +246,7 @@ class UpdateLimitTaskRequestBody:
 
     @property
     def databases(self):
-        """Gets the databases of this UpdateLimitTaskRequestBody.
+        r"""Gets the databases of this UpdateLimitTaskRequestBody.
 
         CN节点数据库组，每个数据库字符串以逗号形式隔开。
 
@@ -257,7 +257,7 @@ class UpdateLimitTaskRequestBody:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this UpdateLimitTaskRequestBody.
+        r"""Sets the databases of this UpdateLimitTaskRequestBody.
 
         CN节点数据库组，每个数据库字符串以逗号形式隔开。
 

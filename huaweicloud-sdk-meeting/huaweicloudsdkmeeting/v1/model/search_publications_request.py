@@ -33,7 +33,7 @@ class SearchPublicationsRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None):
-        """SearchPublicationsRequest
+        r"""SearchPublicationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SearchPublicationsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchPublicationsRequest.
+        r"""Gets the x_request_id of this SearchPublicationsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -82,7 +82,7 @@ class SearchPublicationsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchPublicationsRequest.
+        r"""Sets the x_request_id of this SearchPublicationsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -93,7 +93,7 @@ class SearchPublicationsRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchPublicationsRequest.
+        r"""Gets the accept_language of this SearchPublicationsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -104,7 +104,7 @@ class SearchPublicationsRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchPublicationsRequest.
+        r"""Sets the accept_language of this SearchPublicationsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -115,7 +115,7 @@ class SearchPublicationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchPublicationsRequest.
+        r"""Gets the offset of this SearchPublicationsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -126,7 +126,7 @@ class SearchPublicationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchPublicationsRequest.
+        r"""Sets the offset of this SearchPublicationsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -137,7 +137,7 @@ class SearchPublicationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchPublicationsRequest.
+        r"""Gets the limit of this SearchPublicationsRequest.
 
         查询数量。 默认值：10。 
 
@@ -148,7 +148,7 @@ class SearchPublicationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchPublicationsRequest.
+        r"""Sets the limit of this SearchPublicationsRequest.
 
         查询数量。 默认值：10。 
 
@@ -159,7 +159,7 @@ class SearchPublicationsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchPublicationsRequest.
+        r"""Gets the search_key of this SearchPublicationsRequest.
 
         搜索条件，支持名称模糊搜索。
 
@@ -170,7 +170,7 @@ class SearchPublicationsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchPublicationsRequest.
+        r"""Sets the search_key of this SearchPublicationsRequest.
 
         搜索条件，支持名称模糊搜索。
 

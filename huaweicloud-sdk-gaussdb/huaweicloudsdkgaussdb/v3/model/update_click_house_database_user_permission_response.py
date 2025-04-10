@@ -26,7 +26,7 @@ class UpdateClickHouseDatabaseUserPermissionResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateClickHouseDatabaseUserPermissionResponse
+        r"""UpdateClickHouseDatabaseUserPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateClickHouseDatabaseUserPermissionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateClickHouseDatabaseUserPermissionResponse.
+        r"""Gets the result of this UpdateClickHouseDatabaseUserPermissionResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class UpdateClickHouseDatabaseUserPermissionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateClickHouseDatabaseUserPermissionResponse.
+        r"""Sets the result of this UpdateClickHouseDatabaseUserPermissionResponse.
 
         请求结果。
 

@@ -32,7 +32,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """DeleteDataobjectRelationsResponse
+        r"""DeleteDataobjectRelationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteDataobjectRelationsResponse.
+        r"""Gets the code of this DeleteDataobjectRelationsResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteDataobjectRelationsResponse.
+        r"""Sets the code of this DeleteDataobjectRelationsResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteDataobjectRelationsResponse.
+        r"""Gets the message of this DeleteDataobjectRelationsResponse.
 
         错误信息
 
@@ -98,7 +98,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteDataobjectRelationsResponse.
+        r"""Sets the message of this DeleteDataobjectRelationsResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDataobjectRelationsResponse.
+        r"""Gets the data of this DeleteDataobjectRelationsResponse.
 
         :return: The data of this DeleteDataobjectRelationsResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
@@ -118,7 +118,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDataobjectRelationsResponse.
+        r"""Sets the data of this DeleteDataobjectRelationsResponse.
 
         :param data: The data of this DeleteDataobjectRelationsResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
@@ -127,7 +127,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteDataobjectRelationsResponse.
+        r"""Gets the x_request_id of this DeleteDataobjectRelationsResponse.
 
         :return: The x_request_id of this DeleteDataobjectRelationsResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class DeleteDataobjectRelationsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteDataobjectRelationsResponse.
+        r"""Sets the x_request_id of this DeleteDataobjectRelationsResponse.
 
         :param x_request_id: The x_request_id of this DeleteDataobjectRelationsResponse.
         :type x_request_id: str

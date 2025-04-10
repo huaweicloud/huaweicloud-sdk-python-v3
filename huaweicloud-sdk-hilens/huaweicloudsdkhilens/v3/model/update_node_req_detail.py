@@ -37,7 +37,7 @@ class UpdateNodeReqDetail:
     }
 
     def __init__(self, description=None, log_configs=None, tags=None, event_validity_period=None, enable_gpu=None, enable_npu=None, npu_type=None):
-        """UpdateNodeReqDetail
+        r"""UpdateNodeReqDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateNodeReqDetail:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNodeReqDetail.
+        r"""Gets the description of this UpdateNodeReqDetail.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -96,7 +96,7 @@ class UpdateNodeReqDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNodeReqDetail.
+        r"""Sets the description of this UpdateNodeReqDetail.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -107,7 +107,7 @@ class UpdateNodeReqDetail:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this UpdateNodeReqDetail.
+        r"""Gets the log_configs of this UpdateNodeReqDetail.
 
         设备日志配置
 
@@ -118,7 +118,7 @@ class UpdateNodeReqDetail:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this UpdateNodeReqDetail.
+        r"""Sets the log_configs of this UpdateNodeReqDetail.
 
         设备日志配置
 
@@ -129,7 +129,7 @@ class UpdateNodeReqDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateNodeReqDetail.
+        r"""Gets the tags of this UpdateNodeReqDetail.
 
         设备标签，标签个数最多为20个
 
@@ -140,7 +140,7 @@ class UpdateNodeReqDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateNodeReqDetail.
+        r"""Sets the tags of this UpdateNodeReqDetail.
 
         设备标签，标签个数最多为20个
 
@@ -151,7 +151,7 @@ class UpdateNodeReqDetail:
 
     @property
     def event_validity_period(self):
-        """Gets the event_validity_period of this UpdateNodeReqDetail.
+        r"""Gets the event_validity_period of this UpdateNodeReqDetail.
 
         事件有效时间(单位：分钟)
 
@@ -162,7 +162,7 @@ class UpdateNodeReqDetail:
 
     @event_validity_period.setter
     def event_validity_period(self, event_validity_period):
-        """Sets the event_validity_period of this UpdateNodeReqDetail.
+        r"""Sets the event_validity_period of this UpdateNodeReqDetail.
 
         事件有效时间(单位：分钟)
 
@@ -173,7 +173,7 @@ class UpdateNodeReqDetail:
 
     @property
     def enable_gpu(self):
-        """Gets the enable_gpu of this UpdateNodeReqDetail.
+        r"""Gets the enable_gpu of this UpdateNodeReqDetail.
 
         是否开启gpu
 
@@ -184,7 +184,7 @@ class UpdateNodeReqDetail:
 
     @enable_gpu.setter
     def enable_gpu(self, enable_gpu):
-        """Sets the enable_gpu of this UpdateNodeReqDetail.
+        r"""Sets the enable_gpu of this UpdateNodeReqDetail.
 
         是否开启gpu
 
@@ -195,7 +195,7 @@ class UpdateNodeReqDetail:
 
     @property
     def enable_npu(self):
-        """Gets the enable_npu of this UpdateNodeReqDetail.
+        r"""Gets the enable_npu of this UpdateNodeReqDetail.
 
         是否开启npu
 
@@ -206,7 +206,7 @@ class UpdateNodeReqDetail:
 
     @enable_npu.setter
     def enable_npu(self, enable_npu):
-        """Sets the enable_npu of this UpdateNodeReqDetail.
+        r"""Sets the enable_npu of this UpdateNodeReqDetail.
 
         是否开启npu
 
@@ -217,7 +217,7 @@ class UpdateNodeReqDetail:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this UpdateNodeReqDetail.
+        r"""Gets the npu_type of this UpdateNodeReqDetail.
 
         npu类型，如果选择开启npu, 可设置类型Ascend 310/ Ascend 710, 如果选择开启gpu，请设置值为null。
 
@@ -228,7 +228,7 @@ class UpdateNodeReqDetail:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this UpdateNodeReqDetail.
+        r"""Sets the npu_type of this UpdateNodeReqDetail.
 
         npu类型，如果选择开启npu, 可设置类型Ascend 310/ Ascend 710, 如果选择开启gpu，请设置值为null。
 

@@ -29,7 +29,7 @@ class OpExtendInfoRemoveResources:
     }
 
     def __init__(self, fail_count=None, total_count=None, resources=None):
-        """OpExtendInfoRemoveResources
+        r"""OpExtendInfoRemoveResources
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OpExtendInfoRemoveResources:
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this OpExtendInfoRemoveResources.
+        r"""Gets the fail_count of this OpExtendInfoRemoveResources.
 
         删除失败的资源数量
 
@@ -68,7 +68,7 @@ class OpExtendInfoRemoveResources:
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this OpExtendInfoRemoveResources.
+        r"""Sets the fail_count of this OpExtendInfoRemoveResources.
 
         删除失败的资源数量
 
@@ -79,7 +79,7 @@ class OpExtendInfoRemoveResources:
 
     @property
     def total_count(self):
-        """Gets the total_count of this OpExtendInfoRemoveResources.
+        r"""Gets the total_count of this OpExtendInfoRemoveResources.
 
         删除的备份数量
 
@@ -90,7 +90,7 @@ class OpExtendInfoRemoveResources:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this OpExtendInfoRemoveResources.
+        r"""Sets the total_count of this OpExtendInfoRemoveResources.
 
         删除的备份数量
 
@@ -101,7 +101,7 @@ class OpExtendInfoRemoveResources:
 
     @property
     def resources(self):
-        """Gets the resources of this OpExtendInfoRemoveResources.
+        r"""Gets the resources of this OpExtendInfoRemoveResources.
 
         
 
@@ -112,7 +112,7 @@ class OpExtendInfoRemoveResources:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this OpExtendInfoRemoveResources.
+        r"""Sets the resources of this OpExtendInfoRemoveResources.
 
         
 

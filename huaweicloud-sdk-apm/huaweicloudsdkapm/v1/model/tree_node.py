@@ -49,7 +49,7 @@ class TreeNode:
     }
 
     def __init__(self, id=None, parent=None, real_id=None, name=None, display_name=None, app_name=None, app_id=None, is_admin=None, is_root=None, business_id=None, node_type=None, region=None, is_default=None):
-        """TreeNode
+        r"""TreeNode
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TreeNode:
 
     @property
     def id(self):
-        """Gets the id of this TreeNode.
+        r"""Gets the id of this TreeNode.
 
         拓扑树节点id。
 
@@ -138,7 +138,7 @@ class TreeNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TreeNode.
+        r"""Sets the id of this TreeNode.
 
         拓扑树节点id。
 
@@ -149,7 +149,7 @@ class TreeNode:
 
     @property
     def parent(self):
-        """Gets the parent of this TreeNode.
+        r"""Gets the parent of this TreeNode.
 
         拓扑树节点的父节点。
 
@@ -160,7 +160,7 @@ class TreeNode:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this TreeNode.
+        r"""Sets the parent of this TreeNode.
 
         拓扑树节点的父节点。
 
@@ -171,7 +171,7 @@ class TreeNode:
 
     @property
     def real_id(self):
-        """Gets the real_id of this TreeNode.
+        r"""Gets the real_id of this TreeNode.
 
         拓扑树节点的实际id。
 
@@ -182,7 +182,7 @@ class TreeNode:
 
     @real_id.setter
     def real_id(self, real_id):
-        """Sets the real_id of this TreeNode.
+        r"""Sets the real_id of this TreeNode.
 
         拓扑树节点的实际id。
 
@@ -193,7 +193,7 @@ class TreeNode:
 
     @property
     def name(self):
-        """Gets the name of this TreeNode.
+        r"""Gets the name of this TreeNode.
 
         拓扑树节点名称。
 
@@ -204,7 +204,7 @@ class TreeNode:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TreeNode.
+        r"""Sets the name of this TreeNode.
 
         拓扑树节点名称。
 
@@ -215,7 +215,7 @@ class TreeNode:
 
     @property
     def display_name(self):
-        """Gets the display_name of this TreeNode.
+        r"""Gets the display_name of this TreeNode.
 
         拓扑树节点展示名称。
 
@@ -226,7 +226,7 @@ class TreeNode:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this TreeNode.
+        r"""Sets the display_name of this TreeNode.
 
         拓扑树节点展示名称。
 
@@ -237,7 +237,7 @@ class TreeNode:
 
     @property
     def app_name(self):
-        """Gets the app_name of this TreeNode.
+        r"""Gets the app_name of this TreeNode.
 
         组件名称。
 
@@ -248,7 +248,7 @@ class TreeNode:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this TreeNode.
+        r"""Sets the app_name of this TreeNode.
 
         组件名称。
 
@@ -259,7 +259,7 @@ class TreeNode:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TreeNode.
+        r"""Gets the app_id of this TreeNode.
 
         组件id。
 
@@ -270,7 +270,7 @@ class TreeNode:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TreeNode.
+        r"""Sets the app_id of this TreeNode.
 
         组件id。
 
@@ -281,7 +281,7 @@ class TreeNode:
 
     @property
     def is_admin(self):
-        """Gets the is_admin of this TreeNode.
+        r"""Gets the is_admin of this TreeNode.
 
         是否是管理节点。
 
@@ -292,7 +292,7 @@ class TreeNode:
 
     @is_admin.setter
     def is_admin(self, is_admin):
-        """Sets the is_admin of this TreeNode.
+        r"""Sets the is_admin of this TreeNode.
 
         是否是管理节点。
 
@@ -303,7 +303,7 @@ class TreeNode:
 
     @property
     def is_root(self):
-        """Gets the is_root of this TreeNode.
+        r"""Gets the is_root of this TreeNode.
 
         是否是根节点。
 
@@ -314,7 +314,7 @@ class TreeNode:
 
     @is_root.setter
     def is_root(self, is_root):
-        """Sets the is_root of this TreeNode.
+        r"""Sets the is_root of this TreeNode.
 
         是否是根节点。
 
@@ -325,7 +325,7 @@ class TreeNode:
 
     @property
     def business_id(self):
-        """Gets the business_id of this TreeNode.
+        r"""Gets the business_id of this TreeNode.
 
         应用id。
 
@@ -336,7 +336,7 @@ class TreeNode:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this TreeNode.
+        r"""Sets the business_id of this TreeNode.
 
         应用id。
 
@@ -347,7 +347,7 @@ class TreeNode:
 
     @property
     def node_type(self):
-        """Gets the node_type of this TreeNode.
+        r"""Gets the node_type of this TreeNode.
 
         节点类型。
 
@@ -358,7 +358,7 @@ class TreeNode:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this TreeNode.
+        r"""Sets the node_type of this TreeNode.
 
         节点类型。
 
@@ -369,7 +369,7 @@ class TreeNode:
 
     @property
     def region(self):
-        """Gets the region of this TreeNode.
+        r"""Gets the region of this TreeNode.
 
         区域。
 
@@ -380,7 +380,7 @@ class TreeNode:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TreeNode.
+        r"""Sets the region of this TreeNode.
 
         区域。
 
@@ -391,7 +391,7 @@ class TreeNode:
 
     @property
     def is_default(self):
-        """Gets the is_default of this TreeNode.
+        r"""Gets the is_default of this TreeNode.
 
         是否是默认的节点。
 
@@ -402,7 +402,7 @@ class TreeNode:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this TreeNode.
+        r"""Sets the is_default of this TreeNode.
 
         是否是默认的节点。
 

@@ -25,7 +25,7 @@ class TargetInstanceRequest:
     }
 
     def __init__(self, instance_id=None):
-        """TargetInstanceRequest
+        r"""TargetInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TargetInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TargetInstanceRequest.
+        r"""Gets the instance_id of this TargetInstanceRequest.
 
         实例ID
 
@@ -53,7 +53,7 @@ class TargetInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TargetInstanceRequest.
+        r"""Sets the instance_id of this TargetInstanceRequest.
 
         实例ID
 

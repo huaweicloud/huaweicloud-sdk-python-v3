@@ -26,7 +26,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
     }
 
     def __init__(self, maintain_windows=None):
-        """ShowMaintainWindowsResponse
+        r"""ShowMaintainWindowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
 
     @property
     def maintain_windows(self):
-        """Gets the maintain_windows of this ShowMaintainWindowsResponse.
+        r"""Gets the maintain_windows of this ShowMaintainWindowsResponse.
 
         支持的维护时间窗列表。
 
@@ -55,7 +55,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
 
     @maintain_windows.setter
     def maintain_windows(self, maintain_windows):
-        """Sets the maintain_windows of this ShowMaintainWindowsResponse.
+        r"""Sets the maintain_windows of this ShowMaintainWindowsResponse.
 
         支持的维护时间窗列表。
 

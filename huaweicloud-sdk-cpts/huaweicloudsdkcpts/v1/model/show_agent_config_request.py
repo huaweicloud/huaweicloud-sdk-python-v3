@@ -25,7 +25,7 @@ class ShowAgentConfigRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAgentConfigRequest
+        r"""ShowAgentConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAgentConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAgentConfigRequest.
+        r"""Gets the body of this ShowAgentConfigRequest.
 
         :return: The body of this ShowAgentConfigRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowAgentConfigRequestBody`
@@ -52,7 +52,7 @@ class ShowAgentConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAgentConfigRequest.
+        r"""Sets the body of this ShowAgentConfigRequest.
 
         :param body: The body of this ShowAgentConfigRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.ShowAgentConfigRequestBody`

@@ -25,7 +25,7 @@ class ListBareMetalServerDetailsRequest:
     }
 
     def __init__(self, server_id=None):
-        """ListBareMetalServerDetailsRequest
+        r"""ListBareMetalServerDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListBareMetalServerDetailsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListBareMetalServerDetailsRequest.
+        r"""Gets the server_id of this ListBareMetalServerDetailsRequest.
 
         裸金属服务器ID
 
@@ -53,7 +53,7 @@ class ListBareMetalServerDetailsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListBareMetalServerDetailsRequest.
+        r"""Sets the server_id of this ListBareMetalServerDetailsRequest.
 
         裸金属服务器ID
 

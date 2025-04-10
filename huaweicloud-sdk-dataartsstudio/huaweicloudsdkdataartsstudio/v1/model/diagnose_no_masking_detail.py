@@ -41,7 +41,7 @@ class DiagnoseNoMaskingDetail:
     }
 
     def __init__(self, id=None, project_id=None, task_id=None, datasource_type=None, cluster_name=None, database=None, schema=None, table=None, remark=None):
-        """DiagnoseNoMaskingDetail
+        r"""DiagnoseNoMaskingDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def id(self):
-        """Gets the id of this DiagnoseNoMaskingDetail.
+        r"""Gets the id of this DiagnoseNoMaskingDetail.
 
         详情uuid
 
@@ -110,7 +110,7 @@ class DiagnoseNoMaskingDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DiagnoseNoMaskingDetail.
+        r"""Sets the id of this DiagnoseNoMaskingDetail.
 
         详情uuid
 
@@ -121,7 +121,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DiagnoseNoMaskingDetail.
+        r"""Gets the project_id of this DiagnoseNoMaskingDetail.
 
         项目ID
 
@@ -132,7 +132,7 @@ class DiagnoseNoMaskingDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DiagnoseNoMaskingDetail.
+        r"""Sets the project_id of this DiagnoseNoMaskingDetail.
 
         项目ID
 
@@ -143,7 +143,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DiagnoseNoMaskingDetail.
+        r"""Gets the task_id of this DiagnoseNoMaskingDetail.
 
         诊断任务id
 
@@ -154,7 +154,7 @@ class DiagnoseNoMaskingDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DiagnoseNoMaskingDetail.
+        r"""Sets the task_id of this DiagnoseNoMaskingDetail.
 
         诊断任务id
 
@@ -165,7 +165,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DiagnoseNoMaskingDetail.
+        r"""Gets the datasource_type of this DiagnoseNoMaskingDetail.
 
         数据源类型
 
@@ -176,7 +176,7 @@ class DiagnoseNoMaskingDetail:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DiagnoseNoMaskingDetail.
+        r"""Sets the datasource_type of this DiagnoseNoMaskingDetail.
 
         数据源类型
 
@@ -187,7 +187,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this DiagnoseNoMaskingDetail.
+        r"""Gets the cluster_name of this DiagnoseNoMaskingDetail.
 
         集群名称
 
@@ -198,7 +198,7 @@ class DiagnoseNoMaskingDetail:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this DiagnoseNoMaskingDetail.
+        r"""Sets the cluster_name of this DiagnoseNoMaskingDetail.
 
         集群名称
 
@@ -209,7 +209,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def database(self):
-        """Gets the database of this DiagnoseNoMaskingDetail.
+        r"""Gets the database of this DiagnoseNoMaskingDetail.
 
         数据库名称
 
@@ -220,7 +220,7 @@ class DiagnoseNoMaskingDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DiagnoseNoMaskingDetail.
+        r"""Sets the database of this DiagnoseNoMaskingDetail.
 
         数据库名称
 
@@ -231,7 +231,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def schema(self):
-        """Gets the schema of this DiagnoseNoMaskingDetail.
+        r"""Gets the schema of this DiagnoseNoMaskingDetail.
 
         schema名称
 
@@ -242,7 +242,7 @@ class DiagnoseNoMaskingDetail:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this DiagnoseNoMaskingDetail.
+        r"""Sets the schema of this DiagnoseNoMaskingDetail.
 
         schema名称
 
@@ -253,7 +253,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def table(self):
-        """Gets the table of this DiagnoseNoMaskingDetail.
+        r"""Gets the table of this DiagnoseNoMaskingDetail.
 
         表名称
 
@@ -264,7 +264,7 @@ class DiagnoseNoMaskingDetail:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this DiagnoseNoMaskingDetail.
+        r"""Sets the table of this DiagnoseNoMaskingDetail.
 
         表名称
 
@@ -275,7 +275,7 @@ class DiagnoseNoMaskingDetail:
 
     @property
     def remark(self):
-        """Gets the remark of this DiagnoseNoMaskingDetail.
+        r"""Gets the remark of this DiagnoseNoMaskingDetail.
 
         详情评价
 
@@ -286,7 +286,7 @@ class DiagnoseNoMaskingDetail:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this DiagnoseNoMaskingDetail.
+        r"""Sets the remark of this DiagnoseNoMaskingDetail.
 
         详情评价
 

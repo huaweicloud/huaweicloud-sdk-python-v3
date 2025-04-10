@@ -33,7 +33,7 @@ class ListDataconnectionsRequest:
     }
 
     def __init__(self, workspace=None, name=None, type=None, limit=None, offset=None):
-        """ListDataconnectionsRequest
+        r"""ListDataconnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListDataconnectionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDataconnectionsRequest.
+        r"""Gets the workspace of this ListDataconnectionsRequest.
 
         工作空间id
 
@@ -81,7 +81,7 @@ class ListDataconnectionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDataconnectionsRequest.
+        r"""Sets the workspace of this ListDataconnectionsRequest.
 
         工作空间id
 
@@ -92,7 +92,7 @@ class ListDataconnectionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDataconnectionsRequest.
+        r"""Gets the name of this ListDataconnectionsRequest.
 
         数据连接名称
 
@@ -103,7 +103,7 @@ class ListDataconnectionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDataconnectionsRequest.
+        r"""Sets the name of this ListDataconnectionsRequest.
 
         数据连接名称
 
@@ -114,7 +114,7 @@ class ListDataconnectionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListDataconnectionsRequest.
+        r"""Gets the type of this ListDataconnectionsRequest.
 
         数据连接类型,有HIVE,MYSQL,ORALCLE,DWS,HBASE等。
 
@@ -125,7 +125,7 @@ class ListDataconnectionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDataconnectionsRequest.
+        r"""Sets the type of this ListDataconnectionsRequest.
 
         数据连接类型,有HIVE,MYSQL,ORALCLE,DWS,HBASE等。
 
@@ -136,7 +136,7 @@ class ListDataconnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataconnectionsRequest.
+        r"""Gets the limit of this ListDataconnectionsRequest.
 
         数据条数限制
 
@@ -147,7 +147,7 @@ class ListDataconnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataconnectionsRequest.
+        r"""Sets the limit of this ListDataconnectionsRequest.
 
         数据条数限制
 
@@ -158,7 +158,7 @@ class ListDataconnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataconnectionsRequest.
+        r"""Gets the offset of this ListDataconnectionsRequest.
 
         偏移量
 
@@ -169,7 +169,7 @@ class ListDataconnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataconnectionsRequest.
+        r"""Sets the offset of this ListDataconnectionsRequest.
 
         偏移量
 

@@ -25,7 +25,7 @@ class AssociateDesktopsEipRequest:
     }
 
     def __init__(self, body=None):
-        """AssociateDesktopsEipRequest
+        r"""AssociateDesktopsEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AssociateDesktopsEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateDesktopsEipRequest.
+        r"""Gets the body of this AssociateDesktopsEipRequest.
 
         :return: The body of this AssociateDesktopsEipRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssociateDesktopsEipReq`
@@ -52,7 +52,7 @@ class AssociateDesktopsEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateDesktopsEipRequest.
+        r"""Sets the body of this AssociateDesktopsEipRequest.
 
         :param body: The body of this AssociateDesktopsEipRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AssociateDesktopsEipReq`

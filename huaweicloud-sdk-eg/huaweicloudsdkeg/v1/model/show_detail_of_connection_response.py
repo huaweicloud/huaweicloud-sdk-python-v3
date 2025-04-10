@@ -50,7 +50,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, error_info=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, type=None, kafka_detail=None, created_time=None, updated_time=None):
-        """ShowDetailOfConnectionResponse
+        r"""ShowDetailOfConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailOfConnectionResponse.
+        r"""Gets the id of this ShowDetailOfConnectionResponse.
 
         事件源ID
 
@@ -139,7 +139,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailOfConnectionResponse.
+        r"""Sets the id of this ShowDetailOfConnectionResponse.
 
         事件源ID
 
@@ -150,7 +150,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailOfConnectionResponse.
+        r"""Gets the name of this ShowDetailOfConnectionResponse.
 
         目标连接名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -161,7 +161,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailOfConnectionResponse.
+        r"""Sets the name of this ShowDetailOfConnectionResponse.
 
         目标连接名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -172,7 +172,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDetailOfConnectionResponse.
+        r"""Gets the description of this ShowDetailOfConnectionResponse.
 
         目标连接描述
 
@@ -183,7 +183,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDetailOfConnectionResponse.
+        r"""Sets the description of this ShowDetailOfConnectionResponse.
 
         目标连接描述
 
@@ -194,7 +194,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailOfConnectionResponse.
+        r"""Gets the status of this ShowDetailOfConnectionResponse.
 
         目标连接状态
 
@@ -205,7 +205,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailOfConnectionResponse.
+        r"""Sets the status of this ShowDetailOfConnectionResponse.
 
         目标连接状态
 
@@ -216,7 +216,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowDetailOfConnectionResponse.
+        r"""Gets the error_info of this ShowDetailOfConnectionResponse.
 
         :return: The error_info of this ShowDetailOfConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -225,7 +225,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowDetailOfConnectionResponse.
+        r"""Sets the error_info of this ShowDetailOfConnectionResponse.
 
         :param error_info: The error_info of this ShowDetailOfConnectionResponse.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -234,7 +234,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowDetailOfConnectionResponse.
+        r"""Gets the vpc_id of this ShowDetailOfConnectionResponse.
 
         待连接的VPC ID
 
@@ -245,7 +245,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowDetailOfConnectionResponse.
+        r"""Sets the vpc_id of this ShowDetailOfConnectionResponse.
 
         待连接的VPC ID
 
@@ -256,7 +256,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowDetailOfConnectionResponse.
+        r"""Gets the subnet_id of this ShowDetailOfConnectionResponse.
 
         待连接的子网ID
 
@@ -267,7 +267,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowDetailOfConnectionResponse.
+        r"""Sets the subnet_id of this ShowDetailOfConnectionResponse.
 
         待连接的子网ID
 
@@ -278,7 +278,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def agency(self):
-        """Gets the agency of this ShowDetailOfConnectionResponse.
+        r"""Gets the agency of this ShowDetailOfConnectionResponse.
 
         私网目标连接使用的用户委托名称
 
@@ -289,7 +289,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this ShowDetailOfConnectionResponse.
+        r"""Sets the agency of this ShowDetailOfConnectionResponse.
 
         私网目标连接使用的用户委托名称
 
@@ -300,7 +300,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowDetailOfConnectionResponse.
+        r"""Gets the flavor of this ShowDetailOfConnectionResponse.
 
         :return: The flavor of this ShowDetailOfConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -309,7 +309,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowDetailOfConnectionResponse.
+        r"""Sets the flavor of this ShowDetailOfConnectionResponse.
 
         :param flavor: The flavor of this ShowDetailOfConnectionResponse.
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -318,7 +318,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDetailOfConnectionResponse.
+        r"""Gets the type of this ShowDetailOfConnectionResponse.
 
         :return: The type of this ShowDetailOfConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -327,7 +327,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDetailOfConnectionResponse.
+        r"""Sets the type of this ShowDetailOfConnectionResponse.
 
         :param type: The type of this ShowDetailOfConnectionResponse.
         :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -336,7 +336,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def kafka_detail(self):
-        """Gets the kafka_detail of this ShowDetailOfConnectionResponse.
+        r"""Gets the kafka_detail of this ShowDetailOfConnectionResponse.
 
         :return: The kafka_detail of this ShowDetailOfConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -345,7 +345,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @kafka_detail.setter
     def kafka_detail(self, kafka_detail):
-        """Sets the kafka_detail of this ShowDetailOfConnectionResponse.
+        r"""Sets the kafka_detail of this ShowDetailOfConnectionResponse.
 
         :param kafka_detail: The kafka_detail of this ShowDetailOfConnectionResponse.
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -354,7 +354,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDetailOfConnectionResponse.
+        r"""Gets the created_time of this ShowDetailOfConnectionResponse.
 
         创建UTC时间
 
@@ -365,7 +365,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDetailOfConnectionResponse.
+        r"""Sets the created_time of this ShowDetailOfConnectionResponse.
 
         创建UTC时间
 
@@ -376,7 +376,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowDetailOfConnectionResponse.
+        r"""Gets the updated_time of this ShowDetailOfConnectionResponse.
 
         更新UTC时间
 
@@ -387,7 +387,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowDetailOfConnectionResponse.
+        r"""Sets the updated_time of this ShowDetailOfConnectionResponse.
 
         更新UTC时间
 

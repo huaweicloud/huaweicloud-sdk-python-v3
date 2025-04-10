@@ -30,7 +30,7 @@ class ListObsBucketsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, buckets=None, x_request_id=None):
-        """ListObsBucketsResponse
+        r"""ListObsBucketsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListObsBucketsResponse.
+        r"""Gets the count of this ListObsBucketsResponse.
 
         桶的总数
 
@@ -69,7 +69,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListObsBucketsResponse.
+        r"""Sets the count of this ListObsBucketsResponse.
 
         桶的总数
 
@@ -80,7 +80,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this ListObsBucketsResponse.
+        r"""Gets the buckets of this ListObsBucketsResponse.
 
         桶信息
 
@@ -91,7 +91,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this ListObsBucketsResponse.
+        r"""Sets the buckets of this ListObsBucketsResponse.
 
         桶信息
 
@@ -102,7 +102,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListObsBucketsResponse.
+        r"""Gets the x_request_id of this ListObsBucketsResponse.
 
         :return: The x_request_id of this ListObsBucketsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListObsBucketsResponse.
+        r"""Sets the x_request_id of this ListObsBucketsResponse.
 
         :param x_request_id: The x_request_id of this ListObsBucketsResponse.
         :type x_request_id: str

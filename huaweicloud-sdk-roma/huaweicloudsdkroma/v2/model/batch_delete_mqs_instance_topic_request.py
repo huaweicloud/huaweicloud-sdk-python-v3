@@ -27,7 +27,7 @@ class BatchDeleteMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchDeleteMqsInstanceTopicRequest
+        r"""BatchDeleteMqsInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteMqsInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeleteMqsInstanceTopicRequest.
+        r"""Gets the instance_id of this BatchDeleteMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteMqsInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeleteMqsInstanceTopicRequest.
+        r"""Sets the instance_id of this BatchDeleteMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteMqsInstanceTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteMqsInstanceTopicRequest.
+        r"""Gets the body of this BatchDeleteMqsInstanceTopicRequest.
 
         :return: The body of this BatchDeleteMqsInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`
@@ -80,7 +80,7 @@ class BatchDeleteMqsInstanceTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteMqsInstanceTopicRequest.
+        r"""Sets the body of this BatchDeleteMqsInstanceTopicRequest.
 
         :param body: The body of this BatchDeleteMqsInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`

@@ -27,7 +27,7 @@ class ExternalAccessStatus:
     }
 
     def __init__(self):
-        """ExternalAccessStatus
+        r"""ExternalAccessStatus
 
         The model defined in huaweicloud sdk
 

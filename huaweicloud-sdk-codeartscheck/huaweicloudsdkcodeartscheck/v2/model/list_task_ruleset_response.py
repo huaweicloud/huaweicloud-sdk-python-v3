@@ -26,7 +26,7 @@ class ListTaskRulesetResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTaskRulesetResponse
+        r"""ListTaskRulesetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTaskRulesetResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTaskRulesetResponse.
+        r"""Gets the body of this ListTaskRulesetResponse.
 
         :return: The body of this ListTaskRulesetResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]
@@ -53,7 +53,7 @@ class ListTaskRulesetResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTaskRulesetResponse.
+        r"""Sets the body of this ListTaskRulesetResponse.
 
         :param body: The body of this ListTaskRulesetResponse.
         :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskRulesetInfo`]

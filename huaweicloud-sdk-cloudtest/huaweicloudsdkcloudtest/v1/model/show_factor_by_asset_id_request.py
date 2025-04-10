@@ -29,7 +29,7 @@ class ShowFactorByAssetIdRequest:
     }
 
     def __init__(self, project_id=None, id=None, body=None):
-        """ShowFactorByAssetIdRequest
+        r"""ShowFactorByAssetIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowFactorByAssetIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowFactorByAssetIdRequest.
+        r"""Gets the project_id of this ShowFactorByAssetIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ShowFactorByAssetIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowFactorByAssetIdRequest.
+        r"""Sets the project_id of this ShowFactorByAssetIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ShowFactorByAssetIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowFactorByAssetIdRequest.
+        r"""Gets the id of this ShowFactorByAssetIdRequest.
 
         资产库ID
 
@@ -88,7 +88,7 @@ class ShowFactorByAssetIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowFactorByAssetIdRequest.
+        r"""Sets the id of this ShowFactorByAssetIdRequest.
 
         资产库ID
 
@@ -99,7 +99,7 @@ class ShowFactorByAssetIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowFactorByAssetIdRequest.
+        r"""Gets the body of this ShowFactorByAssetIdRequest.
 
         :return: The body of this ShowFactorByAssetIdRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestListFactorParam`
@@ -108,7 +108,7 @@ class ShowFactorByAssetIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowFactorByAssetIdRequest.
+        r"""Sets the body of this ShowFactorByAssetIdRequest.
 
         :param body: The body of this ShowFactorByAssetIdRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestListFactorParam`

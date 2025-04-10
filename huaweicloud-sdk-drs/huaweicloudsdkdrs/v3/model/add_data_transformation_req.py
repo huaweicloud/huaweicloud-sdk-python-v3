@@ -27,7 +27,7 @@ class AddDataTransformationReq:
     }
 
     def __init__(self, object_info=None, transformation_info=None):
-        """AddDataTransformationReq
+        r"""AddDataTransformationReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddDataTransformationReq:
 
     @property
     def object_info(self):
-        """Gets the object_info of this AddDataTransformationReq.
+        r"""Gets the object_info of this AddDataTransformationReq.
 
         对象信息。
 
@@ -59,7 +59,7 @@ class AddDataTransformationReq:
 
     @object_info.setter
     def object_info(self, object_info):
-        """Sets the object_info of this AddDataTransformationReq.
+        r"""Sets the object_info of this AddDataTransformationReq.
 
         对象信息。
 
@@ -70,7 +70,7 @@ class AddDataTransformationReq:
 
     @property
     def transformation_info(self):
-        """Gets the transformation_info of this AddDataTransformationReq.
+        r"""Gets the transformation_info of this AddDataTransformationReq.
 
         :return: The transformation_info of this AddDataTransformationReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateDataCompareTransformationInfo`
@@ -79,7 +79,7 @@ class AddDataTransformationReq:
 
     @transformation_info.setter
     def transformation_info(self, transformation_info):
-        """Sets the transformation_info of this AddDataTransformationReq.
+        r"""Sets the transformation_info of this AddDataTransformationReq.
 
         :param transformation_info: The transformation_info of this AddDataTransformationReq.
         :type transformation_info: :class:`huaweicloudsdkdrs.v3.CreateDataCompareTransformationInfo`

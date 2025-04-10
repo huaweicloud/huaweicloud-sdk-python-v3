@@ -54,7 +54,7 @@ class VpnGatewayCertificateConfig:
     }
 
     def __init__(self, id=None, name=None, vgw_id=None, issuer=None, signature_algorithm=None, certificate_serial_number=None, certificate_subject=None, certificate_expire_time=None, certificate_chain_serial_number=None, certificate_chain_subject=None, certificate_chain_expire_time=None, enc_certificate_serial_number=None, enc_certificate_subject=None, enc_certificate_expire_time=None, created_at=None):
-        """VpnGatewayCertificateConfig
+        r"""VpnGatewayCertificateConfig
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def id(self):
-        """Gets the id of this VpnGatewayCertificateConfig.
+        r"""Gets the id of this VpnGatewayCertificateConfig.
 
         VPN网关证书ID
 
@@ -153,7 +153,7 @@ class VpnGatewayCertificateConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpnGatewayCertificateConfig.
+        r"""Sets the id of this VpnGatewayCertificateConfig.
 
         VPN网关证书ID
 
@@ -164,7 +164,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def name(self):
-        """Gets the name of this VpnGatewayCertificateConfig.
+        r"""Gets the name of this VpnGatewayCertificateConfig.
 
         VPN网关证书名称
 
@@ -175,7 +175,7 @@ class VpnGatewayCertificateConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpnGatewayCertificateConfig.
+        r"""Sets the name of this VpnGatewayCertificateConfig.
 
         VPN网关证书名称
 
@@ -186,7 +186,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this VpnGatewayCertificateConfig.
+        r"""Gets the vgw_id of this VpnGatewayCertificateConfig.
 
         VPN网关ID
 
@@ -197,7 +197,7 @@ class VpnGatewayCertificateConfig:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this VpnGatewayCertificateConfig.
+        r"""Sets the vgw_id of this VpnGatewayCertificateConfig.
 
         VPN网关ID
 
@@ -208,7 +208,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def issuer(self):
-        """Gets the issuer of this VpnGatewayCertificateConfig.
+        r"""Gets the issuer of this VpnGatewayCertificateConfig.
 
         证书颁发者，国密证书时为签名证书颁发者
 
@@ -219,7 +219,7 @@ class VpnGatewayCertificateConfig:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this VpnGatewayCertificateConfig.
+        r"""Sets the issuer of this VpnGatewayCertificateConfig.
 
         证书颁发者，国密证书时为签名证书颁发者
 
@@ -230,7 +230,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this VpnGatewayCertificateConfig.
+        r"""Gets the signature_algorithm of this VpnGatewayCertificateConfig.
 
         证书签名算法，国密证书时为签名证书签名算法
 
@@ -241,7 +241,7 @@ class VpnGatewayCertificateConfig:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this VpnGatewayCertificateConfig.
+        r"""Sets the signature_algorithm of this VpnGatewayCertificateConfig.
 
         证书签名算法，国密证书时为签名证书签名算法
 
@@ -252,7 +252,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def certificate_serial_number(self):
-        """Gets the certificate_serial_number of this VpnGatewayCertificateConfig.
+        r"""Gets the certificate_serial_number of this VpnGatewayCertificateConfig.
 
         证书序列号，国密证书时为签名证书序列号
 
@@ -263,7 +263,7 @@ class VpnGatewayCertificateConfig:
 
     @certificate_serial_number.setter
     def certificate_serial_number(self, certificate_serial_number):
-        """Sets the certificate_serial_number of this VpnGatewayCertificateConfig.
+        r"""Sets the certificate_serial_number of this VpnGatewayCertificateConfig.
 
         证书序列号，国密证书时为签名证书序列号
 
@@ -274,7 +274,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def certificate_subject(self):
-        """Gets the certificate_subject of this VpnGatewayCertificateConfig.
+        r"""Gets the certificate_subject of this VpnGatewayCertificateConfig.
 
         证书主题，国密证书时为签名证书主题
 
@@ -285,7 +285,7 @@ class VpnGatewayCertificateConfig:
 
     @certificate_subject.setter
     def certificate_subject(self, certificate_subject):
-        """Sets the certificate_subject of this VpnGatewayCertificateConfig.
+        r"""Sets the certificate_subject of this VpnGatewayCertificateConfig.
 
         证书主题，国密证书时为签名证书主题
 
@@ -296,7 +296,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def certificate_expire_time(self):
-        """Gets the certificate_expire_time of this VpnGatewayCertificateConfig.
+        r"""Gets the certificate_expire_time of this VpnGatewayCertificateConfig.
 
         证书过期时间，国密证书时为签名证书过期时间
 
@@ -307,7 +307,7 @@ class VpnGatewayCertificateConfig:
 
     @certificate_expire_time.setter
     def certificate_expire_time(self, certificate_expire_time):
-        """Sets the certificate_expire_time of this VpnGatewayCertificateConfig.
+        r"""Sets the certificate_expire_time of this VpnGatewayCertificateConfig.
 
         证书过期时间，国密证书时为签名证书过期时间
 
@@ -318,7 +318,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def certificate_chain_serial_number(self):
-        """Gets the certificate_chain_serial_number of this VpnGatewayCertificateConfig.
+        r"""Gets the certificate_chain_serial_number of this VpnGatewayCertificateConfig.
 
         CA证书序列号
 
@@ -329,7 +329,7 @@ class VpnGatewayCertificateConfig:
 
     @certificate_chain_serial_number.setter
     def certificate_chain_serial_number(self, certificate_chain_serial_number):
-        """Sets the certificate_chain_serial_number of this VpnGatewayCertificateConfig.
+        r"""Sets the certificate_chain_serial_number of this VpnGatewayCertificateConfig.
 
         CA证书序列号
 
@@ -340,7 +340,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def certificate_chain_subject(self):
-        """Gets the certificate_chain_subject of this VpnGatewayCertificateConfig.
+        r"""Gets the certificate_chain_subject of this VpnGatewayCertificateConfig.
 
         CA证书主题
 
@@ -351,7 +351,7 @@ class VpnGatewayCertificateConfig:
 
     @certificate_chain_subject.setter
     def certificate_chain_subject(self, certificate_chain_subject):
-        """Sets the certificate_chain_subject of this VpnGatewayCertificateConfig.
+        r"""Sets the certificate_chain_subject of this VpnGatewayCertificateConfig.
 
         CA证书主题
 
@@ -362,7 +362,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def certificate_chain_expire_time(self):
-        """Gets the certificate_chain_expire_time of this VpnGatewayCertificateConfig.
+        r"""Gets the certificate_chain_expire_time of this VpnGatewayCertificateConfig.
 
         CA证书过期时间
 
@@ -373,7 +373,7 @@ class VpnGatewayCertificateConfig:
 
     @certificate_chain_expire_time.setter
     def certificate_chain_expire_time(self, certificate_chain_expire_time):
-        """Sets the certificate_chain_expire_time of this VpnGatewayCertificateConfig.
+        r"""Sets the certificate_chain_expire_time of this VpnGatewayCertificateConfig.
 
         CA证书过期时间
 
@@ -384,7 +384,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def enc_certificate_serial_number(self):
-        """Gets the enc_certificate_serial_number of this VpnGatewayCertificateConfig.
+        r"""Gets the enc_certificate_serial_number of this VpnGatewayCertificateConfig.
 
         国密证书的加密证书序列号，
 
@@ -395,7 +395,7 @@ class VpnGatewayCertificateConfig:
 
     @enc_certificate_serial_number.setter
     def enc_certificate_serial_number(self, enc_certificate_serial_number):
-        """Sets the enc_certificate_serial_number of this VpnGatewayCertificateConfig.
+        r"""Sets the enc_certificate_serial_number of this VpnGatewayCertificateConfig.
 
         国密证书的加密证书序列号，
 
@@ -406,7 +406,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def enc_certificate_subject(self):
-        """Gets the enc_certificate_subject of this VpnGatewayCertificateConfig.
+        r"""Gets the enc_certificate_subject of this VpnGatewayCertificateConfig.
 
         国密证书的加密证书主题
 
@@ -417,7 +417,7 @@ class VpnGatewayCertificateConfig:
 
     @enc_certificate_subject.setter
     def enc_certificate_subject(self, enc_certificate_subject):
-        """Sets the enc_certificate_subject of this VpnGatewayCertificateConfig.
+        r"""Sets the enc_certificate_subject of this VpnGatewayCertificateConfig.
 
         国密证书的加密证书主题
 
@@ -428,7 +428,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def enc_certificate_expire_time(self):
-        """Gets the enc_certificate_expire_time of this VpnGatewayCertificateConfig.
+        r"""Gets the enc_certificate_expire_time of this VpnGatewayCertificateConfig.
 
         国密证书的加密证书过期时间
 
@@ -439,7 +439,7 @@ class VpnGatewayCertificateConfig:
 
     @enc_certificate_expire_time.setter
     def enc_certificate_expire_time(self, enc_certificate_expire_time):
-        """Sets the enc_certificate_expire_time of this VpnGatewayCertificateConfig.
+        r"""Sets the enc_certificate_expire_time of this VpnGatewayCertificateConfig.
 
         国密证书的加密证书过期时间
 
@@ -450,7 +450,7 @@ class VpnGatewayCertificateConfig:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpnGatewayCertificateConfig.
+        r"""Gets the created_at of this VpnGatewayCertificateConfig.
 
         创建时间
 
@@ -461,7 +461,7 @@ class VpnGatewayCertificateConfig:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpnGatewayCertificateConfig.
+        r"""Sets the created_at of this VpnGatewayCertificateConfig.
 
         创建时间
 

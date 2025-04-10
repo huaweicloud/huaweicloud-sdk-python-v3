@@ -29,7 +29,7 @@ class TaskCheckSettingsItem:
     }
 
     def __init__(self, cfg_key=None, status=None, cfg_value=None):
-        """TaskCheckSettingsItem
+        r"""TaskCheckSettingsItem
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TaskCheckSettingsItem:
 
     @property
     def cfg_key(self):
-        """Gets the cfg_key of this TaskCheckSettingsItem.
+        r"""Gets the cfg_key of this TaskCheckSettingsItem.
 
         检查参数对应的key值
 
@@ -66,7 +66,7 @@ class TaskCheckSettingsItem:
 
     @cfg_key.setter
     def cfg_key(self, cfg_key):
-        """Sets the cfg_key of this TaskCheckSettingsItem.
+        r"""Sets the cfg_key of this TaskCheckSettingsItem.
 
         检查参数对应的key值
 
@@ -77,7 +77,7 @@ class TaskCheckSettingsItem:
 
     @property
     def status(self):
-        """Gets the status of this TaskCheckSettingsItem.
+        r"""Gets the status of this TaskCheckSettingsItem.
 
         参数状态
 
@@ -88,7 +88,7 @@ class TaskCheckSettingsItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskCheckSettingsItem.
+        r"""Sets the status of this TaskCheckSettingsItem.
 
         参数状态
 
@@ -99,7 +99,7 @@ class TaskCheckSettingsItem:
 
     @property
     def cfg_value(self):
-        """Gets the cfg_value of this TaskCheckSettingsItem.
+        r"""Gets the cfg_value of this TaskCheckSettingsItem.
 
         检查参数值
 
@@ -110,7 +110,7 @@ class TaskCheckSettingsItem:
 
     @cfg_value.setter
     def cfg_value(self, cfg_value):
-        """Sets the cfg_value of this TaskCheckSettingsItem.
+        r"""Sets the cfg_value of this TaskCheckSettingsItem.
 
         检查参数值
 

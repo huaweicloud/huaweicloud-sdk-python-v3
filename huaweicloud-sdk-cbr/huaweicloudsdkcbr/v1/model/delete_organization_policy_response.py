@@ -24,7 +24,7 @@ class DeleteOrganizationPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteOrganizationPolicyResponse
+        r"""DeleteOrganizationPolicyResponse
 
         The model defined in huaweicloud sdk
 

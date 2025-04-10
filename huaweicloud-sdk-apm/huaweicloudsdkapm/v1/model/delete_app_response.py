@@ -26,7 +26,7 @@ class DeleteAppResponse(SdkResponse):
     }
 
     def __init__(self, ok=None):
-        """DeleteAppResponse
+        r"""DeleteAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAppResponse(SdkResponse):
 
     @property
     def ok(self):
-        """Gets the ok of this DeleteAppResponse.
+        r"""Gets the ok of this DeleteAppResponse.
 
         返回ok的结果，表示删除成功。
 
@@ -55,7 +55,7 @@ class DeleteAppResponse(SdkResponse):
 
     @ok.setter
     def ok(self, ok):
-        """Sets the ok of this DeleteAppResponse.
+        r"""Sets the ok of this DeleteAppResponse.
 
         返回ok的结果，表示删除成功。
 

@@ -29,7 +29,7 @@ class UpdateInteractionRuleGroupRequest:
     }
 
     def __init__(self, x_app_user_id=None, group_id=None, body=None):
-        """UpdateInteractionRuleGroupRequest
+        r"""UpdateInteractionRuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateInteractionRuleGroupRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateInteractionRuleGroupRequest.
+        r"""Gets the x_app_user_id of this UpdateInteractionRuleGroupRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateInteractionRuleGroupRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateInteractionRuleGroupRequest.
+        r"""Sets the x_app_user_id of this UpdateInteractionRuleGroupRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateInteractionRuleGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateInteractionRuleGroupRequest.
+        r"""Gets the group_id of this UpdateInteractionRuleGroupRequest.
 
         互动规则库ID。
 
@@ -89,7 +89,7 @@ class UpdateInteractionRuleGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateInteractionRuleGroupRequest.
+        r"""Sets the group_id of this UpdateInteractionRuleGroupRequest.
 
         互动规则库ID。
 
@@ -100,7 +100,7 @@ class UpdateInteractionRuleGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInteractionRuleGroupRequest.
+        r"""Gets the body of this UpdateInteractionRuleGroupRequest.
 
         :return: The body of this UpdateInteractionRuleGroupRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InteractionRuleGroup`
@@ -109,7 +109,7 @@ class UpdateInteractionRuleGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInteractionRuleGroupRequest.
+        r"""Sets the body of this UpdateInteractionRuleGroupRequest.
 
         :param body: The body of this UpdateInteractionRuleGroupRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.InteractionRuleGroup`

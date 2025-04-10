@@ -41,7 +41,7 @@ class CassandraSlowLogDetail:
     }
 
     def __init__(self, node_name=None, node_id=None, whole_message=None, operate_type=None, cost_time=None, keyspace=None, table=None, log_time=None, line_num=None):
-        """CassandraSlowLogDetail
+        r"""CassandraSlowLogDetail
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class CassandraSlowLogDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this CassandraSlowLogDetail.
+        r"""Gets the node_name of this CassandraSlowLogDetail.
 
         节点名称。
 
@@ -101,7 +101,7 @@ class CassandraSlowLogDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this CassandraSlowLogDetail.
+        r"""Sets the node_name of this CassandraSlowLogDetail.
 
         节点名称。
 
@@ -112,7 +112,7 @@ class CassandraSlowLogDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CassandraSlowLogDetail.
+        r"""Gets the node_id of this CassandraSlowLogDetail.
 
         节点ID。
 
@@ -123,7 +123,7 @@ class CassandraSlowLogDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CassandraSlowLogDetail.
+        r"""Sets the node_id of this CassandraSlowLogDetail.
 
         节点ID。
 
@@ -134,7 +134,7 @@ class CassandraSlowLogDetail:
 
     @property
     def whole_message(self):
-        """Gets the whole_message of this CassandraSlowLogDetail.
+        r"""Gets the whole_message of this CassandraSlowLogDetail.
 
         执行语句。
 
@@ -145,7 +145,7 @@ class CassandraSlowLogDetail:
 
     @whole_message.setter
     def whole_message(self, whole_message):
-        """Sets the whole_message of this CassandraSlowLogDetail.
+        r"""Sets the whole_message of this CassandraSlowLogDetail.
 
         执行语句。
 
@@ -156,7 +156,7 @@ class CassandraSlowLogDetail:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this CassandraSlowLogDetail.
+        r"""Gets the operate_type of this CassandraSlowLogDetail.
 
         语句类型。
 
@@ -167,7 +167,7 @@ class CassandraSlowLogDetail:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this CassandraSlowLogDetail.
+        r"""Sets the operate_type of this CassandraSlowLogDetail.
 
         语句类型。
 
@@ -178,7 +178,7 @@ class CassandraSlowLogDetail:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this CassandraSlowLogDetail.
+        r"""Gets the cost_time of this CassandraSlowLogDetail.
 
         执行时间。单位：ms
 
@@ -189,7 +189,7 @@ class CassandraSlowLogDetail:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this CassandraSlowLogDetail.
+        r"""Sets the cost_time of this CassandraSlowLogDetail.
 
         执行时间。单位：ms
 
@@ -200,7 +200,7 @@ class CassandraSlowLogDetail:
 
     @property
     def keyspace(self):
-        """Gets the keyspace of this CassandraSlowLogDetail.
+        r"""Gets the keyspace of this CassandraSlowLogDetail.
 
         数据库键空间
 
@@ -211,7 +211,7 @@ class CassandraSlowLogDetail:
 
     @keyspace.setter
     def keyspace(self, keyspace):
-        """Sets the keyspace of this CassandraSlowLogDetail.
+        r"""Sets the keyspace of this CassandraSlowLogDetail.
 
         数据库键空间
 
@@ -222,7 +222,7 @@ class CassandraSlowLogDetail:
 
     @property
     def table(self):
-        """Gets the table of this CassandraSlowLogDetail.
+        r"""Gets the table of this CassandraSlowLogDetail.
 
         数据库表名
 
@@ -233,7 +233,7 @@ class CassandraSlowLogDetail:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this CassandraSlowLogDetail.
+        r"""Sets the table of this CassandraSlowLogDetail.
 
         数据库表名
 
@@ -244,7 +244,7 @@ class CassandraSlowLogDetail:
 
     @property
     def log_time(self):
-        """Gets the log_time of this CassandraSlowLogDetail.
+        r"""Gets the log_time of this CassandraSlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -255,7 +255,7 @@ class CassandraSlowLogDetail:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this CassandraSlowLogDetail.
+        r"""Sets the log_time of this CassandraSlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -266,7 +266,7 @@ class CassandraSlowLogDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this CassandraSlowLogDetail.
+        r"""Gets the line_num of this CassandraSlowLogDetail.
 
         日志单行序列号
 
@@ -277,7 +277,7 @@ class CassandraSlowLogDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this CassandraSlowLogDetail.
+        r"""Sets the line_num of this CassandraSlowLogDetail.
 
         日志单行序列号
 

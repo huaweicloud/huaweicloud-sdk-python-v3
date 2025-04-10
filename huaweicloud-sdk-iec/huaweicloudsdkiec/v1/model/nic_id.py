@@ -25,7 +25,7 @@ class NicId:
     }
 
     def __init__(self, id=None):
-        """NicId
+        r"""NicId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NicId:
 
     @property
     def id(self):
-        """Gets the id of this NicId.
+        r"""Gets the id of this NicId.
 
         网卡ID。
 
@@ -53,7 +53,7 @@ class NicId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NicId.
+        r"""Sets the id of this NicId.
 
         网卡ID。
 

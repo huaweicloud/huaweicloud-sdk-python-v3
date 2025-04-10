@@ -25,7 +25,7 @@ class BatchModifyPwdReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchModifyPwdReq
+        r"""BatchModifyPwdReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchModifyPwdReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchModifyPwdReq.
+        r"""Gets the jobs of this BatchModifyPwdReq.
 
         批量修改数据库密码信息列表
 
@@ -53,7 +53,7 @@ class BatchModifyPwdReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchModifyPwdReq.
+        r"""Sets the jobs of this BatchModifyPwdReq.
 
         批量修改数据库密码信息列表
 

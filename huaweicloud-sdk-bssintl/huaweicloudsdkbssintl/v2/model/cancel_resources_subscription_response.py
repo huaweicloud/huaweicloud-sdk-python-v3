@@ -28,7 +28,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, order_ids=None, fail_resource_infos=None):
-        """CancelResourcesSubscriptionResponse
+        r"""CancelResourcesSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
 
     @property
     def order_ids(self):
-        """Gets the order_ids of this CancelResourcesSubscriptionResponse.
+        r"""Gets the order_ids of this CancelResourcesSubscriptionResponse.
 
         客户退订订单ID的列表信息。
 
@@ -62,7 +62,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
 
     @order_ids.setter
     def order_ids(self, order_ids):
-        """Sets the order_ids of this CancelResourcesSubscriptionResponse.
+        r"""Sets the order_ids of this CancelResourcesSubscriptionResponse.
 
         客户退订订单ID的列表信息。
 
@@ -73,7 +73,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
 
     @property
     def fail_resource_infos(self):
-        """Gets the fail_resource_infos of this CancelResourcesSubscriptionResponse.
+        r"""Gets the fail_resource_infos of this CancelResourcesSubscriptionResponse.
 
         |参数名称：失败的资源信息列表| |参数的约束及描述：套餐包使用量信息|
 
@@ -84,7 +84,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
 
     @fail_resource_infos.setter
     def fail_resource_infos(self, fail_resource_infos):
-        """Sets the fail_resource_infos of this CancelResourcesSubscriptionResponse.
+        r"""Sets the fail_resource_infos of this CancelResourcesSubscriptionResponse.
 
         |参数名称：失败的资源信息列表| |参数的约束及描述：套餐包使用量信息|
 

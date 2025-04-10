@@ -26,7 +26,7 @@ class AllowDbUserPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """AllowDbUserPrivilegeResponse
+        r"""AllowDbUserPrivilegeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AllowDbUserPrivilegeResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this AllowDbUserPrivilegeResponse.
+        r"""Gets the resp of this AllowDbUserPrivilegeResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class AllowDbUserPrivilegeResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this AllowDbUserPrivilegeResponse.
+        r"""Sets the resp of this AllowDbUserPrivilegeResponse.
 
         操作结果。
 

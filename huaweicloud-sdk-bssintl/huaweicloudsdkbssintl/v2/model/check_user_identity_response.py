@@ -30,7 +30,7 @@ class CheckUserIdentityResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, check_result=None):
-        """CheckUserIdentityResponse
+        r"""CheckUserIdentityResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckUserIdentityResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CheckUserIdentityResponse.
+        r"""Gets the error_code of this CheckUserIdentityResponse.
 
         状态码。具体请参考状态码。只有失败才会返回这个参数。
 
@@ -69,7 +69,7 @@ class CheckUserIdentityResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CheckUserIdentityResponse.
+        r"""Sets the error_code of this CheckUserIdentityResponse.
 
         状态码。具体请参考状态码。只有失败才会返回这个参数。
 
@@ -80,7 +80,7 @@ class CheckUserIdentityResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CheckUserIdentityResponse.
+        r"""Gets the error_msg of this CheckUserIdentityResponse.
 
         错误描述信息。只有失败才会返回这个参数。
 
@@ -91,7 +91,7 @@ class CheckUserIdentityResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CheckUserIdentityResponse.
+        r"""Sets the error_msg of this CheckUserIdentityResponse.
 
         错误描述信息。只有失败才会返回这个参数。
 
@@ -102,7 +102,7 @@ class CheckUserIdentityResponse(SdkResponse):
 
     @property
     def check_result(self):
-        """Gets the check_result of this CheckUserIdentityResponse.
+        r"""Gets the check_result of this CheckUserIdentityResponse.
 
         available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
 
@@ -113,7 +113,7 @@ class CheckUserIdentityResponse(SdkResponse):
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this CheckUserIdentityResponse.
+        r"""Sets the check_result of this CheckUserIdentityResponse.
 
         available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
 

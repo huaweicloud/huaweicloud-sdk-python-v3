@@ -27,7 +27,7 @@ class ShowLastHistoryRequest:
     }
 
     def __init__(self, project_id=None, repository_name=None):
-        """ShowLastHistoryRequest
+        r"""ShowLastHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowLastHistoryRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowLastHistoryRequest.
+        r"""Gets the project_id of this ShowLastHistoryRequest.
 
         CodeArts项目ID，32位数字、小写字母组合。
 
@@ -59,7 +59,7 @@ class ShowLastHistoryRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowLastHistoryRequest.
+        r"""Sets the project_id of this ShowLastHistoryRequest.
 
         CodeArts项目ID，32位数字、小写字母组合。
 
@@ -70,7 +70,7 @@ class ShowLastHistoryRequest:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this ShowLastHistoryRequest.
+        r"""Gets the repository_name of this ShowLastHistoryRequest.
 
         代码仓库名，不支持中文
 
@@ -81,7 +81,7 @@ class ShowLastHistoryRequest:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this ShowLastHistoryRequest.
+        r"""Sets the repository_name of this ShowLastHistoryRequest.
 
         代码仓库名，不支持中文
 

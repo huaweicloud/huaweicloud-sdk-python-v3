@@ -27,7 +27,7 @@ class ListWorkflowExecutionsRequest:
     }
 
     def __init__(self, workflow_id=None, x_enterprise_project_id=None):
-        """ListWorkflowExecutionsRequest
+        r"""ListWorkflowExecutionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListWorkflowExecutionsRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ListWorkflowExecutionsRequest.
+        r"""Gets the workflow_id of this ListWorkflowExecutionsRequest.
 
         任务id，从工作流命令列表中获取的工作流id。
 
@@ -60,7 +60,7 @@ class ListWorkflowExecutionsRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ListWorkflowExecutionsRequest.
+        r"""Sets the workflow_id of this ListWorkflowExecutionsRequest.
 
         任务id，从工作流命令列表中获取的工作流id。
 
@@ -71,7 +71,7 @@ class ListWorkflowExecutionsRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListWorkflowExecutionsRequest.
+        r"""Gets the x_enterprise_project_id of this ListWorkflowExecutionsRequest.
 
         所属的企业项目id。
 
@@ -82,7 +82,7 @@ class ListWorkflowExecutionsRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListWorkflowExecutionsRequest.
+        r"""Sets the x_enterprise_project_id of this ListWorkflowExecutionsRequest.
 
         所属的企业项目id。
 

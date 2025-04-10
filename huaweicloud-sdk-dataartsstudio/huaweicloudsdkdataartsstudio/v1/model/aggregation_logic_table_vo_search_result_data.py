@@ -25,7 +25,7 @@ class AggregationLogicTableVOSearchResultData:
     }
 
     def __init__(self, value=None):
-        """AggregationLogicTableVOSearchResultData
+        r"""AggregationLogicTableVOSearchResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AggregationLogicTableVOSearchResultData:
 
     @property
     def value(self):
-        """Gets the value of this AggregationLogicTableVOSearchResultData.
+        r"""Gets the value of this AggregationLogicTableVOSearchResultData.
 
         :return: The value of this AggregationLogicTableVOSearchResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVOSearchResultDataValue`
@@ -52,7 +52,7 @@ class AggregationLogicTableVOSearchResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AggregationLogicTableVOSearchResultData.
+        r"""Sets the value of this AggregationLogicTableVOSearchResultData.
 
         :param value: The value of this AggregationLogicTableVOSearchResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableVOSearchResultDataValue`

@@ -27,7 +27,7 @@ class ClassificationReq:
     }
 
     def __init__(self, content=None, domain=None):
-        """ClassificationReq
+        r"""ClassificationReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ClassificationReq:
 
     @property
     def content(self):
-        """Gets the content of this ClassificationReq.
+        r"""Gets the content of this ClassificationReq.
 
         待分析文本。文本编码要求为utf-8。 限定400个字符以内，文本长度超过400个字符时，只检测前400个字符。
 
@@ -60,7 +60,7 @@ class ClassificationReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ClassificationReq.
+        r"""Sets the content of this ClassificationReq.
 
         待分析文本。文本编码要求为utf-8。 限定400个字符以内，文本长度超过400个字符时，只检测前400个字符。
 
@@ -71,7 +71,7 @@ class ClassificationReq:
 
     @property
     def domain(self):
-        """Gets the domain of this ClassificationReq.
+        r"""Gets the domain of this ClassificationReq.
 
         1 广告检测
 
@@ -82,7 +82,7 @@ class ClassificationReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ClassificationReq.
+        r"""Sets the domain of this ClassificationReq.
 
         1 广告检测
 

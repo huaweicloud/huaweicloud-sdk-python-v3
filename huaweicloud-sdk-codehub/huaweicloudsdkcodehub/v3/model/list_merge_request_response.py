@@ -30,7 +30,7 @@ class ListMergeRequestResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListMergeRequestResponse
+        r"""ListMergeRequestResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMergeRequestResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListMergeRequestResponse.
+        r"""Gets the error of this ListMergeRequestResponse.
 
         :return: The error of this ListMergeRequestResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListMergeRequestResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListMergeRequestResponse.
+        r"""Sets the error of this ListMergeRequestResponse.
 
         :param error: The error of this ListMergeRequestResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListMergeRequestResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListMergeRequestResponse.
+        r"""Gets the result of this ListMergeRequestResponse.
 
         :return: The result of this ListMergeRequestResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeResult`
@@ -85,7 +85,7 @@ class ListMergeRequestResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListMergeRequestResponse.
+        r"""Sets the result of this ListMergeRequestResponse.
 
         :param result: The result of this ListMergeRequestResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.MergeResult`
@@ -94,7 +94,7 @@ class ListMergeRequestResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListMergeRequestResponse.
+        r"""Gets the status of this ListMergeRequestResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListMergeRequestResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMergeRequestResponse.
+        r"""Sets the status of this ListMergeRequestResponse.
 
         响应状态
 

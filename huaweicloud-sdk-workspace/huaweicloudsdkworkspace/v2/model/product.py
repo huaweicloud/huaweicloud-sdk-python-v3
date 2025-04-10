@@ -81,7 +81,7 @@ class Product:
     }
 
     def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, sub_product_list=None, package_type=None, series_type=None, name=None, default_desktop_num=None, max_apply_desktop_num=None, share_space_size=None):
-        """Product
+        r"""Product
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class Product:
 
     @property
     def product_id(self):
-        """Gets the product_id of this Product.
+        r"""Gets the product_id of this Product.
 
         产品id。
 
@@ -250,7 +250,7 @@ class Product:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this Product.
+        r"""Sets the product_id of this Product.
 
         产品id。
 
@@ -261,7 +261,7 @@ class Product:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this Product.
+        r"""Gets the flavor_id of this Product.
 
         规格ID。
 
@@ -272,7 +272,7 @@ class Product:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this Product.
+        r"""Sets the flavor_id of this Product.
 
         规格ID。
 
@@ -283,7 +283,7 @@ class Product:
 
     @property
     def type(self):
-        """Gets the type of this Product.
+        r"""Gets the type of this Product.
 
         产品类型。取值为： BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
 
@@ -294,7 +294,7 @@ class Product:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Product.
+        r"""Sets the type of this Product.
 
         产品类型。取值为： BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
 
@@ -305,7 +305,7 @@ class Product:
 
     @property
     def architecture(self):
-        """Gets the architecture of this Product.
+        r"""Gets the architecture of this Product.
 
         产品架构，当前支持：arm、x86。
 
@@ -316,7 +316,7 @@ class Product:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this Product.
+        r"""Sets the architecture of this Product.
 
         产品架构，当前支持：arm、x86。
 
@@ -327,7 +327,7 @@ class Product:
 
     @property
     def cpu(self):
-        """Gets the cpu of this Product.
+        r"""Gets the cpu of this Product.
 
         cpu。
 
@@ -338,7 +338,7 @@ class Product:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this Product.
+        r"""Sets the cpu of this Product.
 
         cpu。
 
@@ -349,7 +349,7 @@ class Product:
 
     @property
     def cpu_desc(self):
-        """Gets the cpu_desc of this Product.
+        r"""Gets the cpu_desc of this Product.
 
         cpu描述。
 
@@ -360,7 +360,7 @@ class Product:
 
     @cpu_desc.setter
     def cpu_desc(self, cpu_desc):
-        """Sets the cpu_desc of this Product.
+        r"""Sets the cpu_desc of this Product.
 
         cpu描述。
 
@@ -371,7 +371,7 @@ class Product:
 
     @property
     def memory(self):
-        """Gets the memory of this Product.
+        r"""Gets the memory of this Product.
 
         内存。
 
@@ -382,7 +382,7 @@ class Product:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this Product.
+        r"""Sets the memory of this Product.
 
         内存。
 
@@ -393,7 +393,7 @@ class Product:
 
     @property
     def is_gpu(self):
-        """Gets the is_gpu of this Product.
+        r"""Gets the is_gpu of this Product.
 
         是否是GPU类型的规格。
 
@@ -404,7 +404,7 @@ class Product:
 
     @is_gpu.setter
     def is_gpu(self, is_gpu):
-        """Sets the is_gpu of this Product.
+        r"""Sets the is_gpu of this Product.
 
         是否是GPU类型的规格。
 
@@ -415,7 +415,7 @@ class Product:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this Product.
+        r"""Gets the system_disk_type of this Product.
 
         系统盘类型。
 
@@ -426,7 +426,7 @@ class Product:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this Product.
+        r"""Sets the system_disk_type of this Product.
 
         系统盘类型。
 
@@ -437,7 +437,7 @@ class Product:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this Product.
+        r"""Gets the system_disk_size of this Product.
 
         系统盘大小，单位GB。
 
@@ -448,7 +448,7 @@ class Product:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this Product.
+        r"""Sets the system_disk_size of this Product.
 
         系统盘大小，单位GB。
 
@@ -459,7 +459,7 @@ class Product:
 
     @property
     def data_disk_size(self):
-        """Gets the data_disk_size of this Product.
+        r"""Gets the data_disk_size of this Product.
 
         数据盘大小，单位GB。
 
@@ -470,7 +470,7 @@ class Product:
 
     @data_disk_size.setter
     def data_disk_size(self, data_disk_size):
-        """Sets the data_disk_size of this Product.
+        r"""Sets the data_disk_size of this Product.
 
         数据盘大小，单位GB。
 
@@ -481,7 +481,7 @@ class Product:
 
     @property
     def gpu_desc(self):
-        """Gets the gpu_desc of this Product.
+        r"""Gets the gpu_desc of this Product.
 
         GPU描述。
 
@@ -492,7 +492,7 @@ class Product:
 
     @gpu_desc.setter
     def gpu_desc(self, gpu_desc):
-        """Sets the gpu_desc of this Product.
+        r"""Sets the gpu_desc of this Product.
 
         GPU描述。
 
@@ -503,7 +503,7 @@ class Product:
 
     @property
     def bill_switch(self):
-        """Gets the bill_switch of this Product.
+        r"""Gets the bill_switch of this Product.
 
         话单开关，默认on,on-出话单模式,off-关话单模式,只支持反序列化，不支持序列化，不在接口中展示。
 
@@ -514,7 +514,7 @@ class Product:
 
     @bill_switch.setter
     def bill_switch(self, bill_switch):
-        """Sets the bill_switch of this Product.
+        r"""Sets the bill_switch of this Product.
 
         话单开关，默认on,on-出话单模式,off-关话单模式,只支持反序列化，不支持序列化，不在接口中展示。
 
@@ -525,7 +525,7 @@ class Product:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this Product.
+        r"""Gets the descriptions of this Product.
 
         产品描述。
 
@@ -536,7 +536,7 @@ class Product:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this Product.
+        r"""Sets the descriptions of this Product.
 
         产品描述。
 
@@ -547,7 +547,7 @@ class Product:
 
     @property
     def product_desc(self):
-        """Gets the product_desc of this Product.
+        r"""Gets the product_desc of this Product.
 
         产品名称<语言，各语言对应的产品描述>。
 
@@ -558,7 +558,7 @@ class Product:
 
     @product_desc.setter
     def product_desc(self, product_desc):
-        """Sets the product_desc of this Product.
+        r"""Sets the product_desc of this Product.
 
         产品名称<语言，各语言对应的产品描述>。
 
@@ -569,7 +569,7 @@ class Product:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this Product.
+        r"""Gets the charge_mode of this Product.
 
         周期套餐标识。0表示包周期，1表示按需。
 
@@ -580,7 +580,7 @@ class Product:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this Product.
+        r"""Sets the charge_mode of this Product.
 
         周期套餐标识。0表示包周期，1表示按需。
 
@@ -591,7 +591,7 @@ class Product:
 
     @property
     def contain_data_disk(self):
-        """Gets the contain_data_disk of this Product.
+        r"""Gets the contain_data_disk of this Product.
 
         套餐计费是否包含了数据盘,off-不包含。
 
@@ -602,7 +602,7 @@ class Product:
 
     @contain_data_disk.setter
     def contain_data_disk(self, contain_data_disk):
-        """Sets the contain_data_disk of this Product.
+        r"""Sets the contain_data_disk of this Product.
 
         套餐计费是否包含了数据盘,off-不包含。
 
@@ -613,7 +613,7 @@ class Product:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Product.
+        r"""Gets the resource_type of this Product.
 
         资源规格。
 
@@ -624,7 +624,7 @@ class Product:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Product.
+        r"""Sets the resource_type of this Product.
 
         资源规格。
 
@@ -635,7 +635,7 @@ class Product:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this Product.
+        r"""Gets the cloud_service_type of this Product.
 
         云服务编码。
 
@@ -646,7 +646,7 @@ class Product:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this Product.
+        r"""Sets the cloud_service_type of this Product.
 
         云服务编码。
 
@@ -657,7 +657,7 @@ class Product:
 
     @property
     def volume_product_type(self):
-        """Gets the volume_product_type of this Product.
+        r"""Gets the volume_product_type of this Product.
 
         磁盘产品类型。
 
@@ -668,7 +668,7 @@ class Product:
 
     @volume_product_type.setter
     def volume_product_type(self, volume_product_type):
-        """Sets the volume_product_type of this Product.
+        r"""Sets the volume_product_type of this Product.
 
         磁盘产品类型。
 
@@ -679,7 +679,7 @@ class Product:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this Product.
+        r"""Gets the domain_ids of this Product.
 
         该产品套餐支持的专有域id（domainId）。
 
@@ -690,7 +690,7 @@ class Product:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this Product.
+        r"""Sets the domain_ids of this Product.
 
         该产品套餐支持的专有域id（domainId）。
 
@@ -701,7 +701,7 @@ class Product:
 
     @property
     def status(self):
-        """Gets the status of this Product.
+        r"""Gets the status of this Product.
 
         产品状态，normal：正常、sellout：售空、abandon：下线。
 
@@ -712,7 +712,7 @@ class Product:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Product.
+        r"""Sets the status of this Product.
 
         产品状态，normal：正常、sellout：售空、abandon：下线。
 
@@ -723,7 +723,7 @@ class Product:
 
     @property
     def sub_product_list(self):
-        """Gets the sub_product_list of this Product.
+        r"""Gets the sub_product_list of this Product.
 
         专属主机的子产品。
 
@@ -734,7 +734,7 @@ class Product:
 
     @sub_product_list.setter
     def sub_product_list(self, sub_product_list):
-        """Sets the sub_product_list of this Product.
+        r"""Sets the sub_product_list of this Product.
 
         专属主机的子产品。
 
@@ -745,7 +745,7 @@ class Product:
 
     @property
     def package_type(self):
-        """Gets the package_type of this Product.
+        r"""Gets the package_type of this Product.
 
         套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
 
@@ -756,7 +756,7 @@ class Product:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this Product.
+        r"""Sets the package_type of this Product.
 
         套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
 
@@ -767,7 +767,7 @@ class Product:
 
     @property
     def series_type(self):
-        """Gets the series_type of this Product.
+        r"""Gets the series_type of this Product.
 
         套餐下的系列类型。 - 云工作站下分为云工作站D5、云工作站D7 - 专属办公版下分为鲲鹏专属、通用专属、G6a、G6r、G7a
 
@@ -778,7 +778,7 @@ class Product:
 
     @series_type.setter
     def series_type(self, series_type):
-        """Sets the series_type of this Product.
+        r"""Sets the series_type of this Product.
 
         套餐下的系列类型。 - 云工作站下分为云工作站D5、云工作站D7 - 专属办公版下分为鲲鹏专属、通用专属、G6a、G6r、G7a
 
@@ -789,7 +789,7 @@ class Product:
 
     @property
     def name(self):
-        """Gets the name of this Product.
+        r"""Gets the name of this Product.
 
         产品名称<语言，各语言对应的产品名>。
 
@@ -800,7 +800,7 @@ class Product:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Product.
+        r"""Sets the name of this Product.
 
         产品名称<语言，各语言对应的产品名>。
 
@@ -811,7 +811,7 @@ class Product:
 
     @property
     def default_desktop_num(self):
-        """Gets the default_desktop_num of this Product.
+        r"""Gets the default_desktop_num of this Product.
 
         专享主机套餐默认的桌面数。
 
@@ -822,7 +822,7 @@ class Product:
 
     @default_desktop_num.setter
     def default_desktop_num(self, default_desktop_num):
-        """Sets the default_desktop_num of this Product.
+        r"""Sets the default_desktop_num of this Product.
 
         专享主机套餐默认的桌面数。
 
@@ -833,7 +833,7 @@ class Product:
 
     @property
     def max_apply_desktop_num(self):
-        """Gets the max_apply_desktop_num of this Product.
+        r"""Gets the max_apply_desktop_num of this Product.
 
         专享主机支持创建的最大桌面数。
 
@@ -844,7 +844,7 @@ class Product:
 
     @max_apply_desktop_num.setter
     def max_apply_desktop_num(self, max_apply_desktop_num):
-        """Sets the max_apply_desktop_num of this Product.
+        r"""Sets the max_apply_desktop_num of this Product.
 
         专享主机支持创建的最大桌面数。
 
@@ -855,7 +855,7 @@ class Product:
 
     @property
     def share_space_size(self):
-        """Gets the share_space_size of this Product.
+        r"""Gets the share_space_size of this Product.
 
         协同方数。该套餐支持的最大协同人数。
 
@@ -866,7 +866,7 @@ class Product:
 
     @share_space_size.setter
     def share_space_size(self, share_space_size):
-        """Sets the share_space_size of this Product.
+        r"""Sets the share_space_size of this Product.
 
         协同方数。该套餐支持的最大协同人数。
 

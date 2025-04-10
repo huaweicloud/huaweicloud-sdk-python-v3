@@ -25,7 +25,7 @@ class IndependentReq:
     }
 
     def __init__(self, type=None):
-        """IndependentReq
+        r"""IndependentReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class IndependentReq:
 
     @property
     def type(self):
-        """Gets the type of this IndependentReq.
+        r"""Gets the type of this IndependentReq.
 
         :return: The type of this IndependentReq.
         :rtype: :class:`huaweicloudsdkcss.v1.IndependentBodyReq`
@@ -51,7 +51,7 @@ class IndependentReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IndependentReq.
+        r"""Sets the type of this IndependentReq.
 
         :param type: The type of this IndependentReq.
         :type type: :class:`huaweicloudsdkcss.v1.IndependentBodyReq`

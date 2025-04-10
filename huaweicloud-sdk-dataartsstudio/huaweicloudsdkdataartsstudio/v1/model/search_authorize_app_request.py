@@ -33,7 +33,7 @@ class SearchAuthorizeAppRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, offset=None, limit=None):
-        """SearchAuthorizeAppRequest
+        r"""SearchAuthorizeAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchAuthorizeAppRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchAuthorizeAppRequest.
+        r"""Gets the workspace of this SearchAuthorizeAppRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class SearchAuthorizeAppRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchAuthorizeAppRequest.
+        r"""Sets the workspace of this SearchAuthorizeAppRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class SearchAuthorizeAppRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this SearchAuthorizeAppRequest.
+        r"""Gets the dlm_type of this SearchAuthorizeAppRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class SearchAuthorizeAppRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this SearchAuthorizeAppRequest.
+        r"""Sets the dlm_type of this SearchAuthorizeAppRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class SearchAuthorizeAppRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this SearchAuthorizeAppRequest.
+        r"""Gets the api_id of this SearchAuthorizeAppRequest.
 
         api编号。
 
@@ -124,7 +124,7 @@ class SearchAuthorizeAppRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this SearchAuthorizeAppRequest.
+        r"""Sets the api_id of this SearchAuthorizeAppRequest.
 
         api编号。
 
@@ -135,7 +135,7 @@ class SearchAuthorizeAppRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchAuthorizeAppRequest.
+        r"""Gets the offset of this SearchAuthorizeAppRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -146,7 +146,7 @@ class SearchAuthorizeAppRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchAuthorizeAppRequest.
+        r"""Sets the offset of this SearchAuthorizeAppRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -157,7 +157,7 @@ class SearchAuthorizeAppRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchAuthorizeAppRequest.
+        r"""Gets the limit of this SearchAuthorizeAppRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -168,7 +168,7 @@ class SearchAuthorizeAppRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchAuthorizeAppRequest.
+        r"""Sets the limit of this SearchAuthorizeAppRequest.
 
         查询条数, 即查询Y条数据。
 

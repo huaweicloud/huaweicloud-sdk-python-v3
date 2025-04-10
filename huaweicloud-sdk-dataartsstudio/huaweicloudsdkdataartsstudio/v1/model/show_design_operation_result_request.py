@@ -35,7 +35,7 @@ class ShowDesignOperationResultRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, operation_type=None, limit=None, offset=None, operation_id=None):
-        """ShowDesignOperationResultRequest
+        r"""ShowDesignOperationResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowDesignOperationResultRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowDesignOperationResultRequest.
+        r"""Gets the workspace of this ShowDesignOperationResultRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -87,7 +87,7 @@ class ShowDesignOperationResultRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowDesignOperationResultRequest.
+        r"""Sets the workspace of this ShowDesignOperationResultRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -98,7 +98,7 @@ class ShowDesignOperationResultRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ShowDesignOperationResultRequest.
+        r"""Gets the x_project_id of this ShowDesignOperationResultRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -109,7 +109,7 @@ class ShowDesignOperationResultRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ShowDesignOperationResultRequest.
+        r"""Sets the x_project_id of this ShowDesignOperationResultRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -120,7 +120,7 @@ class ShowDesignOperationResultRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ShowDesignOperationResultRequest.
+        r"""Gets the operation_type of this ShowDesignOperationResultRequest.
 
         批量操作类型。 枚举值：   - ER_REVERSE_DB: 关系建模逆向数据库   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型 
 
@@ -131,7 +131,7 @@ class ShowDesignOperationResultRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ShowDesignOperationResultRequest.
+        r"""Sets the operation_type of this ShowDesignOperationResultRequest.
 
         批量操作类型。 枚举值：   - ER_REVERSE_DB: 关系建模逆向数据库   - TRANSFORM_LOGIC_MODEL: 逻辑模型转物理模型 
 
@@ -142,7 +142,7 @@ class ShowDesignOperationResultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDesignOperationResultRequest.
+        r"""Gets the limit of this ShowDesignOperationResultRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -153,7 +153,7 @@ class ShowDesignOperationResultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDesignOperationResultRequest.
+        r"""Sets the limit of this ShowDesignOperationResultRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -164,7 +164,7 @@ class ShowDesignOperationResultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDesignOperationResultRequest.
+        r"""Gets the offset of this ShowDesignOperationResultRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -175,7 +175,7 @@ class ShowDesignOperationResultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDesignOperationResultRequest.
+        r"""Sets the offset of this ShowDesignOperationResultRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -186,7 +186,7 @@ class ShowDesignOperationResultRequest:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this ShowDesignOperationResultRequest.
+        r"""Gets the operation_id of this ShowDesignOperationResultRequest.
 
         批量操作id，在逻辑模型转物理表时，填写的是逻辑模型的model_id，在逆向数据库时，填写的是目标模型的model_id。model_id可从接口[获取模型](ListWorkspaces.xml)中获取。
 
@@ -197,7 +197,7 @@ class ShowDesignOperationResultRequest:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this ShowDesignOperationResultRequest.
+        r"""Sets the operation_id of this ShowDesignOperationResultRequest.
 
         批量操作id，在逻辑模型转物理表时，填写的是逻辑模型的model_id，在逆向数据库时，填写的是目标模型的model_id。model_id可从接口[获取模型](ListWorkspaces.xml)中获取。
 

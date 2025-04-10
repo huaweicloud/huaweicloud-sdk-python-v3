@@ -55,7 +55,7 @@ class SourceDMSMQParameters:
     }
 
     def __init__(self, instance_name=None, instance_id=None, group=None, topic=None, tag=None, ssl_enable=None, enable_acl=None, access_key=None, secret_key=None, message_type=None, engine_version=None, consume_timeout=None, consumer_thread_nums=None, consumer_batch_max_size=None, max_reconsume_times=None, suspend_current_queue_time_millis=None):
-        """SourceDMSMQParameters
+        r"""SourceDMSMQParameters
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class SourceDMSMQParameters:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this SourceDMSMQParameters.
+        r"""Gets the instance_name of this SourceDMSMQParameters.
 
         实例名称，仅dms的rockectMq需要该字段
 
@@ -156,7 +156,7 @@ class SourceDMSMQParameters:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this SourceDMSMQParameters.
+        r"""Sets the instance_name of this SourceDMSMQParameters.
 
         实例名称，仅dms的rockectMq需要该字段
 
@@ -167,7 +167,7 @@ class SourceDMSMQParameters:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SourceDMSMQParameters.
+        r"""Gets the instance_id of this SourceDMSMQParameters.
 
         实例ID，仅dms的rockectMq需要该字段
 
@@ -178,7 +178,7 @@ class SourceDMSMQParameters:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SourceDMSMQParameters.
+        r"""Sets the instance_id of this SourceDMSMQParameters.
 
         实例ID，仅dms的rockectMq需要该字段
 
@@ -189,7 +189,7 @@ class SourceDMSMQParameters:
 
     @property
     def group(self):
-        """Gets the group of this SourceDMSMQParameters.
+        r"""Gets the group of this SourceDMSMQParameters.
 
         消费组
 
@@ -200,7 +200,7 @@ class SourceDMSMQParameters:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this SourceDMSMQParameters.
+        r"""Sets the group of this SourceDMSMQParameters.
 
         消费组
 
@@ -211,7 +211,7 @@ class SourceDMSMQParameters:
 
     @property
     def topic(self):
-        """Gets the topic of this SourceDMSMQParameters.
+        r"""Gets the topic of this SourceDMSMQParameters.
 
         topic名称
 
@@ -222,7 +222,7 @@ class SourceDMSMQParameters:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SourceDMSMQParameters.
+        r"""Sets the topic of this SourceDMSMQParameters.
 
         topic名称
 
@@ -233,7 +233,7 @@ class SourceDMSMQParameters:
 
     @property
     def tag(self):
-        """Gets the tag of this SourceDMSMQParameters.
+        r"""Gets the tag of this SourceDMSMQParameters.
 
         标签
 
@@ -244,7 +244,7 @@ class SourceDMSMQParameters:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this SourceDMSMQParameters.
+        r"""Sets the tag of this SourceDMSMQParameters.
 
         标签
 
@@ -255,7 +255,7 @@ class SourceDMSMQParameters:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this SourceDMSMQParameters.
+        r"""Gets the ssl_enable of this SourceDMSMQParameters.
 
         开启SSL
 
@@ -266,7 +266,7 @@ class SourceDMSMQParameters:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this SourceDMSMQParameters.
+        r"""Sets the ssl_enable of this SourceDMSMQParameters.
 
         开启SSL
 
@@ -277,7 +277,7 @@ class SourceDMSMQParameters:
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this SourceDMSMQParameters.
+        r"""Gets the enable_acl of this SourceDMSMQParameters.
 
         ACL访问控制
 
@@ -288,7 +288,7 @@ class SourceDMSMQParameters:
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this SourceDMSMQParameters.
+        r"""Sets the enable_acl of this SourceDMSMQParameters.
 
         ACL访问控制
 
@@ -299,7 +299,7 @@ class SourceDMSMQParameters:
 
     @property
     def access_key(self):
-        """Gets the access_key of this SourceDMSMQParameters.
+        r"""Gets the access_key of this SourceDMSMQParameters.
 
         用户名
 
@@ -310,7 +310,7 @@ class SourceDMSMQParameters:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this SourceDMSMQParameters.
+        r"""Sets the access_key of this SourceDMSMQParameters.
 
         用户名
 
@@ -321,7 +321,7 @@ class SourceDMSMQParameters:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this SourceDMSMQParameters.
+        r"""Gets the secret_key of this SourceDMSMQParameters.
 
         密码
 
@@ -332,7 +332,7 @@ class SourceDMSMQParameters:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this SourceDMSMQParameters.
+        r"""Sets the secret_key of this SourceDMSMQParameters.
 
         密码
 
@@ -343,7 +343,7 @@ class SourceDMSMQParameters:
 
     @property
     def message_type(self):
-        """Gets the message_type of this SourceDMSMQParameters.
+        r"""Gets the message_type of this SourceDMSMQParameters.
 
         消费方式，针对不同生产顺序消息类型，选择消费方式会导致不同结果，请严格按照需求选择消费方式。1、生产顺序为：设置消息组，保证消息顺序发送。消费方式为：顺序消费，实际消息处理结果：按照消息组粒度，严格保证消息顺序。 同一消息组内的消息的消费顺序和发送顺序完全一致。2、生产顺序为：设置消息组，保证消息顺序发送。消费方式为：并发消费，实际消息处理结果：并发消费，尽可能按时间顺序处理。3、生产顺序为：未设置消息组，消息乱序发送。消费方式为：顺序消费，实际消息处理结果：按队列存储粒度，严格顺序。 基于 Apache RocketMQ 本身队列的属性，消费顺序和队列存储的顺序一致，但不保证和发送顺序一致。4、生产顺序为：未设置消息组，消息乱序发送。消费方式为：并发消费，实际消息处理结果：并发消费，尽可能按照时间顺序处理。
 
@@ -354,7 +354,7 @@ class SourceDMSMQParameters:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this SourceDMSMQParameters.
+        r"""Sets the message_type of this SourceDMSMQParameters.
 
         消费方式，针对不同生产顺序消息类型，选择消费方式会导致不同结果，请严格按照需求选择消费方式。1、生产顺序为：设置消息组，保证消息顺序发送。消费方式为：顺序消费，实际消息处理结果：按照消息组粒度，严格保证消息顺序。 同一消息组内的消息的消费顺序和发送顺序完全一致。2、生产顺序为：设置消息组，保证消息顺序发送。消费方式为：并发消费，实际消息处理结果：并发消费，尽可能按时间顺序处理。3、生产顺序为：未设置消息组，消息乱序发送。消费方式为：顺序消费，实际消息处理结果：按队列存储粒度，严格顺序。 基于 Apache RocketMQ 本身队列的属性，消费顺序和队列存储的顺序一致，但不保证和发送顺序一致。4、生产顺序为：未设置消息组，消息乱序发送。消费方式为：并发消费，实际消息处理结果：并发消费，尽可能按照时间顺序处理。
 
@@ -365,7 +365,7 @@ class SourceDMSMQParameters:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this SourceDMSMQParameters.
+        r"""Gets the engine_version of this SourceDMSMQParameters.
 
         mq实例版本
 
@@ -376,7 +376,7 @@ class SourceDMSMQParameters:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this SourceDMSMQParameters.
+        r"""Sets the engine_version of this SourceDMSMQParameters.
 
         mq实例版本
 
@@ -387,7 +387,7 @@ class SourceDMSMQParameters:
 
     @property
     def consume_timeout(self):
-        """Gets the consume_timeout of this SourceDMSMQParameters.
+        r"""Gets the consume_timeout of this SourceDMSMQParameters.
 
         消费超时时间
 
@@ -398,7 +398,7 @@ class SourceDMSMQParameters:
 
     @consume_timeout.setter
     def consume_timeout(self, consume_timeout):
-        """Sets the consume_timeout of this SourceDMSMQParameters.
+        r"""Sets the consume_timeout of this SourceDMSMQParameters.
 
         消费超时时间
 
@@ -409,7 +409,7 @@ class SourceDMSMQParameters:
 
     @property
     def consumer_thread_nums(self):
-        """Gets the consumer_thread_nums of this SourceDMSMQParameters.
+        r"""Gets the consumer_thread_nums of this SourceDMSMQParameters.
 
         线程消费数
 
@@ -420,7 +420,7 @@ class SourceDMSMQParameters:
 
     @consumer_thread_nums.setter
     def consumer_thread_nums(self, consumer_thread_nums):
-        """Sets the consumer_thread_nums of this SourceDMSMQParameters.
+        r"""Sets the consumer_thread_nums of this SourceDMSMQParameters.
 
         线程消费数
 
@@ -431,7 +431,7 @@ class SourceDMSMQParameters:
 
     @property
     def consumer_batch_max_size(self):
-        """Gets the consumer_batch_max_size of this SourceDMSMQParameters.
+        r"""Gets the consumer_batch_max_size of this SourceDMSMQParameters.
 
         批量消费最大消息数
 
@@ -442,7 +442,7 @@ class SourceDMSMQParameters:
 
     @consumer_batch_max_size.setter
     def consumer_batch_max_size(self, consumer_batch_max_size):
-        """Sets the consumer_batch_max_size of this SourceDMSMQParameters.
+        r"""Sets the consumer_batch_max_size of this SourceDMSMQParameters.
 
         批量消费最大消息数
 
@@ -453,7 +453,7 @@ class SourceDMSMQParameters:
 
     @property
     def max_reconsume_times(self):
-        """Gets the max_reconsume_times of this SourceDMSMQParameters.
+        r"""Gets the max_reconsume_times of this SourceDMSMQParameters.
 
         最大重试次数，-1表示一直重试
 
@@ -464,7 +464,7 @@ class SourceDMSMQParameters:
 
     @max_reconsume_times.setter
     def max_reconsume_times(self, max_reconsume_times):
-        """Sets the max_reconsume_times of this SourceDMSMQParameters.
+        r"""Sets the max_reconsume_times of this SourceDMSMQParameters.
 
         最大重试次数，-1表示一直重试
 
@@ -475,7 +475,7 @@ class SourceDMSMQParameters:
 
     @property
     def suspend_current_queue_time_millis(self):
-        """Gets the suspend_current_queue_time_millis of this SourceDMSMQParameters.
+        r"""Gets the suspend_current_queue_time_millis of this SourceDMSMQParameters.
 
         重试间隔，单位ms
 
@@ -486,7 +486,7 @@ class SourceDMSMQParameters:
 
     @suspend_current_queue_time_millis.setter
     def suspend_current_queue_time_millis(self, suspend_current_queue_time_millis):
-        """Sets the suspend_current_queue_time_millis of this SourceDMSMQParameters.
+        r"""Sets the suspend_current_queue_time_millis of this SourceDMSMQParameters.
 
         重试间隔，单位ms
 

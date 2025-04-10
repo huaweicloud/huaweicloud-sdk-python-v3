@@ -28,7 +28,7 @@ class ShowPeerLinkResponse(SdkResponse):
     }
 
     def __init__(self, peer_link=None, request_id=None):
-        """ShowPeerLinkResponse
+        r"""ShowPeerLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPeerLinkResponse(SdkResponse):
 
     @property
     def peer_link(self):
-        """Gets the peer_link of this ShowPeerLinkResponse.
+        r"""Gets the peer_link of this ShowPeerLinkResponse.
 
         :return: The peer_link of this ShowPeerLinkResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PeerLinkEntry`
@@ -60,7 +60,7 @@ class ShowPeerLinkResponse(SdkResponse):
 
     @peer_link.setter
     def peer_link(self, peer_link):
-        """Sets the peer_link of this ShowPeerLinkResponse.
+        r"""Sets the peer_link of this ShowPeerLinkResponse.
 
         :param peer_link: The peer_link of this ShowPeerLinkResponse.
         :type peer_link: :class:`huaweicloudsdkdc.v3.PeerLinkEntry`
@@ -69,7 +69,7 @@ class ShowPeerLinkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPeerLinkResponse.
+        r"""Gets the request_id of this ShowPeerLinkResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowPeerLinkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPeerLinkResponse.
+        r"""Sets the request_id of this ShowPeerLinkResponse.
 
         请求ID。
 

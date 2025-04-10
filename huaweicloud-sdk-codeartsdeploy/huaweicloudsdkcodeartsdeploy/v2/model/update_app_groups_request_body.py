@@ -25,7 +25,7 @@ class UpdateAppGroupsRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdateAppGroupsRequestBody
+        r"""UpdateAppGroupsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAppGroupsRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppGroupsRequestBody.
+        r"""Gets the name of this UpdateAppGroupsRequestBody.
 
         分组名称
 
@@ -53,7 +53,7 @@ class UpdateAppGroupsRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppGroupsRequestBody.
+        r"""Sets the name of this UpdateAppGroupsRequestBody.
 
         分组名称
 

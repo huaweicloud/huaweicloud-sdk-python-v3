@@ -31,7 +31,7 @@ class SceneComponentInfo:
     }
 
     def __init__(self, index=None, component_name=None, component_type=None, component_desc=None):
-        """SceneComponentInfo
+        r"""SceneComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SceneComponentInfo:
 
     @property
     def index(self):
-        """Gets the index of this SceneComponentInfo.
+        r"""Gets the index of this SceneComponentInfo.
 
         组件索引。
 
@@ -73,7 +73,7 @@ class SceneComponentInfo:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this SceneComponentInfo.
+        r"""Sets the index of this SceneComponentInfo.
 
         组件索引。
 
@@ -84,7 +84,7 @@ class SceneComponentInfo:
 
     @property
     def component_name(self):
-        """Gets the component_name of this SceneComponentInfo.
+        r"""Gets the component_name of this SceneComponentInfo.
 
         组件名称。
 
@@ -95,7 +95,7 @@ class SceneComponentInfo:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this SceneComponentInfo.
+        r"""Sets the component_name of this SceneComponentInfo.
 
         组件名称。
 
@@ -106,7 +106,7 @@ class SceneComponentInfo:
 
     @property
     def component_type(self):
-        """Gets the component_type of this SceneComponentInfo.
+        r"""Gets the component_type of this SceneComponentInfo.
 
         组件类型。 * CAMERA：摄像机 * PANEL：屏幕 * LIGHT：灯光
 
@@ -117,7 +117,7 @@ class SceneComponentInfo:
 
     @component_type.setter
     def component_type(self, component_type):
-        """Sets the component_type of this SceneComponentInfo.
+        r"""Sets the component_type of this SceneComponentInfo.
 
         组件类型。 * CAMERA：摄像机 * PANEL：屏幕 * LIGHT：灯光
 
@@ -128,7 +128,7 @@ class SceneComponentInfo:
 
     @property
     def component_desc(self):
-        """Gets the component_desc of this SceneComponentInfo.
+        r"""Gets the component_desc of this SceneComponentInfo.
 
         组件描述。
 
@@ -139,7 +139,7 @@ class SceneComponentInfo:
 
     @component_desc.setter
     def component_desc(self, component_desc):
-        """Sets the component_desc of this SceneComponentInfo.
+        r"""Sets the component_desc of this SceneComponentInfo.
 
         组件描述。
 

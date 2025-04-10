@@ -37,7 +37,7 @@ class HostRaspProtectHistoryResponseInfo:
     }
 
     def __init__(self, host_ip=None, host_name=None, alarm_time=None, threat_type=None, alarm_level=None, source_ip=None, attacked_url=None):
-        """HostRaspProtectHistoryResponseInfo
+        r"""HostRaspProtectHistoryResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the host_ip of this HostRaspProtectHistoryResponseInfo.
 
         服务器ip
 
@@ -96,7 +96,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the host_ip of this HostRaspProtectHistoryResponseInfo.
 
         服务器ip
 
@@ -107,7 +107,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the host_name of this HostRaspProtectHistoryResponseInfo.
 
         服务器名称
 
@@ -118,7 +118,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the host_name of this HostRaspProtectHistoryResponseInfo.
 
         服务器名称
 
@@ -129,7 +129,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def alarm_time(self):
-        """Gets the alarm_time of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the alarm_time of this HostRaspProtectHistoryResponseInfo.
 
         动态网页防篡改的告警时间(ms)
 
@@ -140,7 +140,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @alarm_time.setter
     def alarm_time(self, alarm_time):
-        """Sets the alarm_time of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the alarm_time of this HostRaspProtectHistoryResponseInfo.
 
         动态网页防篡改的告警时间(ms)
 
@@ -151,7 +151,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def threat_type(self):
-        """Gets the threat_type of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the threat_type of this HostRaspProtectHistoryResponseInfo.
 
         威胁类型
 
@@ -162,7 +162,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @threat_type.setter
     def threat_type(self, threat_type):
-        """Sets the threat_type of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the threat_type of this HostRaspProtectHistoryResponseInfo.
 
         威胁类型
 
@@ -173,7 +173,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the alarm_level of this HostRaspProtectHistoryResponseInfo.
 
         告警级别
 
@@ -184,7 +184,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the alarm_level of this HostRaspProtectHistoryResponseInfo.
 
         告警级别
 
@@ -195,7 +195,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the source_ip of this HostRaspProtectHistoryResponseInfo.
 
         攻击主机的源IP
 
@@ -206,7 +206,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the source_ip of this HostRaspProtectHistoryResponseInfo.
 
         攻击主机的源IP
 
@@ -217,7 +217,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @property
     def attacked_url(self):
-        """Gets the attacked_url of this HostRaspProtectHistoryResponseInfo.
+        r"""Gets the attacked_url of this HostRaspProtectHistoryResponseInfo.
 
         攻击请求的URL
 
@@ -228,7 +228,7 @@ class HostRaspProtectHistoryResponseInfo:
 
     @attacked_url.setter
     def attacked_url(self, attacked_url):
-        """Sets the attacked_url of this HostRaspProtectHistoryResponseInfo.
+        r"""Sets the attacked_url of this HostRaspProtectHistoryResponseInfo.
 
         攻击请求的URL
 

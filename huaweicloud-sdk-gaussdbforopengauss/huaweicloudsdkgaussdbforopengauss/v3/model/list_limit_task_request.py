@@ -45,7 +45,7 @@ class ListLimitTaskRequest:
     }
 
     def __init__(self, instance_id=None, task_scope=None, limit_type=None, limit_type_value=None, task_name=None, sql_model=None, rule_name=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListLimitTaskRequest
+        r"""ListLimitTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class ListLimitTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLimitTaskRequest.
+        r"""Gets the instance_id of this ListLimitTaskRequest.
 
         实例ID。
 
@@ -123,7 +123,7 @@ class ListLimitTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLimitTaskRequest.
+        r"""Sets the instance_id of this ListLimitTaskRequest.
 
         实例ID。
 
@@ -134,7 +134,7 @@ class ListLimitTaskRequest:
 
     @property
     def task_scope(self):
-        """Gets the task_scope of this ListLimitTaskRequest.
+        r"""Gets the task_scope of this ListLimitTaskRequest.
 
         限流任务范围，目前支持SQL,SESSION。
 
@@ -145,7 +145,7 @@ class ListLimitTaskRequest:
 
     @task_scope.setter
     def task_scope(self, task_scope):
-        """Sets the task_scope of this ListLimitTaskRequest.
+        r"""Sets the task_scope of this ListLimitTaskRequest.
 
         限流任务范围，目前支持SQL,SESSION。
 
@@ -156,7 +156,7 @@ class ListLimitTaskRequest:
 
     @property
     def limit_type(self):
-        """Gets the limit_type of this ListLimitTaskRequest.
+        r"""Gets the limit_type of this ListLimitTaskRequest.
 
         限流类型，支持SQL_ID、SQL_TYPE、SESSION_ACTIVE_MAX_COUNT类型。
 
@@ -167,7 +167,7 @@ class ListLimitTaskRequest:
 
     @limit_type.setter
     def limit_type(self, limit_type):
-        """Sets the limit_type of this ListLimitTaskRequest.
+        r"""Sets the limit_type of this ListLimitTaskRequest.
 
         限流类型，支持SQL_ID、SQL_TYPE、SESSION_ACTIVE_MAX_COUNT类型。
 
@@ -178,7 +178,7 @@ class ListLimitTaskRequest:
 
     @property
     def limit_type_value(self):
-        """Gets the limit_type_value of this ListLimitTaskRequest.
+        r"""Gets the limit_type_value of this ListLimitTaskRequest.
 
         限流类型值，支持模糊匹配。
 
@@ -189,7 +189,7 @@ class ListLimitTaskRequest:
 
     @limit_type_value.setter
     def limit_type_value(self, limit_type_value):
-        """Sets the limit_type_value of this ListLimitTaskRequest.
+        r"""Sets the limit_type_value of this ListLimitTaskRequest.
 
         限流类型值，支持模糊匹配。
 
@@ -200,7 +200,7 @@ class ListLimitTaskRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListLimitTaskRequest.
+        r"""Gets the task_name of this ListLimitTaskRequest.
 
         限流任务名，支持模糊匹配。
 
@@ -211,7 +211,7 @@ class ListLimitTaskRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListLimitTaskRequest.
+        r"""Sets the task_name of this ListLimitTaskRequest.
 
         限流任务名，支持模糊匹配。
 
@@ -222,7 +222,7 @@ class ListLimitTaskRequest:
 
     @property
     def sql_model(self):
-        """Gets the sql_model of this ListLimitTaskRequest.
+        r"""Gets the sql_model of this ListLimitTaskRequest.
 
         sql模板，支持模糊匹配。
 
@@ -233,7 +233,7 @@ class ListLimitTaskRequest:
 
     @sql_model.setter
     def sql_model(self, sql_model):
-        """Sets the sql_model of this ListLimitTaskRequest.
+        r"""Sets the sql_model of this ListLimitTaskRequest.
 
         sql模板，支持模糊匹配。
 
@@ -244,7 +244,7 @@ class ListLimitTaskRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ListLimitTaskRequest.
+        r"""Gets the rule_name of this ListLimitTaskRequest.
 
         规则名。
 
@@ -255,7 +255,7 @@ class ListLimitTaskRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ListLimitTaskRequest.
+        r"""Sets the rule_name of this ListLimitTaskRequest.
 
         规则名。
 
@@ -266,7 +266,7 @@ class ListLimitTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListLimitTaskRequest.
+        r"""Gets the start_time of this ListLimitTaskRequest.
 
         限流任务开始时间，格式为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间。
 
@@ -277,7 +277,7 @@ class ListLimitTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListLimitTaskRequest.
+        r"""Sets the start_time of this ListLimitTaskRequest.
 
         限流任务开始时间，格式为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间。
 
@@ -288,7 +288,7 @@ class ListLimitTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListLimitTaskRequest.
+        r"""Gets the end_time of this ListLimitTaskRequest.
 
         限流任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间。
 
@@ -299,7 +299,7 @@ class ListLimitTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListLimitTaskRequest.
+        r"""Sets the end_time of this ListLimitTaskRequest.
 
         限流任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ,当前时间指UTC时间。
 
@@ -310,7 +310,7 @@ class ListLimitTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLimitTaskRequest.
+        r"""Gets the offset of this ListLimitTaskRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
@@ -321,7 +321,7 @@ class ListLimitTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLimitTaskRequest.
+        r"""Sets the offset of this ListLimitTaskRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
@@ -332,7 +332,7 @@ class ListLimitTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLimitTaskRequest.
+        r"""Gets the limit of this ListLimitTaskRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -343,7 +343,7 @@ class ListLimitTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLimitTaskRequest.
+        r"""Sets the limit of this ListLimitTaskRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 

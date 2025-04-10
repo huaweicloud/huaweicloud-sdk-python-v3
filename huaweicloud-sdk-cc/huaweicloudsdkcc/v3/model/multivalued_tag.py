@@ -27,7 +27,7 @@ class MultivaluedTag:
     }
 
     def __init__(self, key=None, values=None):
-        """MultivaluedTag
+        r"""MultivaluedTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MultivaluedTag:
 
     @property
     def key(self):
-        """Gets the key of this MultivaluedTag.
+        r"""Gets the key of this MultivaluedTag.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -59,7 +59,7 @@ class MultivaluedTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MultivaluedTag.
+        r"""Sets the key of this MultivaluedTag.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -70,7 +70,7 @@ class MultivaluedTag:
 
     @property
     def values(self):
-        """Gets the values of this MultivaluedTag.
+        r"""Gets the values of this MultivaluedTag.
 
         相同键的值列表
 
@@ -81,7 +81,7 @@ class MultivaluedTag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this MultivaluedTag.
+        r"""Sets the values of this MultivaluedTag.
 
         相同键的值列表
 

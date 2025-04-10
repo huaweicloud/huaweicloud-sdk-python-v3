@@ -51,7 +51,7 @@ class CreateTableRequestBody:
     }
 
     def __init__(self, tags=None, table_name=None, table_alias=None, description=None, columns=None, data_type=None, data_source=None, data_store_id=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None):
-        """CreateTableRequestBody
+        r"""CreateTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class CreateTableRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTableRequestBody.
+        r"""Gets the tags of this CreateTableRequestBody.
 
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
@@ -142,7 +142,7 @@ class CreateTableRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTableRequestBody.
+        r"""Sets the tags of this CreateTableRequestBody.
 
         标签。只能包含数字、英文字母、中文字符、下划线、中划线、逗号以及斜杠。长度为0~128。
 
@@ -153,7 +153,7 @@ class CreateTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this CreateTableRequestBody.
+        r"""Gets the table_name of this CreateTableRequestBody.
 
         新增表名称。
 
@@ -164,7 +164,7 @@ class CreateTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CreateTableRequestBody.
+        r"""Sets the table_name of this CreateTableRequestBody.
 
         新增表名称。
 
@@ -175,7 +175,7 @@ class CreateTableRequestBody:
 
     @property
     def table_alias(self):
-        """Gets the table_alias of this CreateTableRequestBody.
+        r"""Gets the table_alias of this CreateTableRequestBody.
 
         新增表别名。只能包含数字、英文字母、中文字符、下划线以及中划线。长度为0~32。
 
@@ -186,7 +186,7 @@ class CreateTableRequestBody:
 
     @table_alias.setter
     def table_alias(self, table_alias):
-        """Sets the table_alias of this CreateTableRequestBody.
+        r"""Sets the table_alias of this CreateTableRequestBody.
 
         新增表别名。只能包含数字、英文字母、中文字符、下划线以及中划线。长度为0~32。
 
@@ -197,7 +197,7 @@ class CreateTableRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateTableRequestBody.
+        r"""Gets the description of this CreateTableRequestBody.
 
         新增表的描述信息。
 
@@ -208,7 +208,7 @@ class CreateTableRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTableRequestBody.
+        r"""Sets the description of this CreateTableRequestBody.
 
         新增表的描述信息。
 
@@ -219,7 +219,7 @@ class CreateTableRequestBody:
 
     @property
     def columns(self):
-        """Gets the columns of this CreateTableRequestBody.
+        r"""Gets the columns of this CreateTableRequestBody.
 
         新增表的描述信息。
 
@@ -230,7 +230,7 @@ class CreateTableRequestBody:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this CreateTableRequestBody.
+        r"""Sets the columns of this CreateTableRequestBody.
 
         新增表的描述信息。
 
@@ -241,7 +241,7 @@ class CreateTableRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateTableRequestBody.
+        r"""Gets the data_type of this CreateTableRequestBody.
 
         新增表的数据类型，目前支持：Parquet、CSV格式。
 
@@ -252,7 +252,7 @@ class CreateTableRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateTableRequestBody.
+        r"""Sets the data_type of this CreateTableRequestBody.
 
         新增表的数据类型，目前支持：Parquet、CSV格式。
 
@@ -263,7 +263,7 @@ class CreateTableRequestBody:
 
     @property
     def data_source(self):
-        """Gets the data_source of this CreateTableRequestBody.
+        r"""Gets the data_source of this CreateTableRequestBody.
 
         数据来源。来源类型有：pipeline, default. 默认为default.
 
@@ -274,7 +274,7 @@ class CreateTableRequestBody:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this CreateTableRequestBody.
+        r"""Sets the data_source of this CreateTableRequestBody.
 
         数据来源。来源类型有：pipeline, default. 默认为default.
 
@@ -285,7 +285,7 @@ class CreateTableRequestBody:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this CreateTableRequestBody.
+        r"""Gets the data_store_id of this CreateTableRequestBody.
 
         仅当数据来源为pipeline时使用。数据的Data Store ID.
 
@@ -296,7 +296,7 @@ class CreateTableRequestBody:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this CreateTableRequestBody.
+        r"""Sets the data_store_id of this CreateTableRequestBody.
 
         仅当数据来源为pipeline时使用。数据的Data Store ID.
 
@@ -307,7 +307,7 @@ class CreateTableRequestBody:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this CreateTableRequestBody.
+        r"""Gets the with_column_header of this CreateTableRequestBody.
 
         表数据是否包含表头。只有CSV类型数据具有该属性。
 
@@ -318,7 +318,7 @@ class CreateTableRequestBody:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this CreateTableRequestBody.
+        r"""Sets the with_column_header of this CreateTableRequestBody.
 
         表数据是否包含表头。只有CSV类型数据具有该属性。
 
@@ -329,7 +329,7 @@ class CreateTableRequestBody:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this CreateTableRequestBody.
+        r"""Gets the delimiter of this CreateTableRequestBody.
 
         用户自定义数据分隔符。只有CSV类型数据具有该属性。
 
@@ -340,7 +340,7 @@ class CreateTableRequestBody:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this CreateTableRequestBody.
+        r"""Sets the delimiter of this CreateTableRequestBody.
 
         用户自定义数据分隔符。只有CSV类型数据具有该属性。
 
@@ -351,7 +351,7 @@ class CreateTableRequestBody:
 
     @property
     def quote_char(self):
-        """Gets the quote_char of this CreateTableRequestBody.
+        r"""Gets the quote_char of this CreateTableRequestBody.
 
         用户自定义引用字符，默认为双引号（即“\"”）。只有CSV类型数据具有该属性。
 
@@ -362,7 +362,7 @@ class CreateTableRequestBody:
 
     @quote_char.setter
     def quote_char(self, quote_char):
-        """Sets the quote_char of this CreateTableRequestBody.
+        r"""Sets the quote_char of this CreateTableRequestBody.
 
         用户自定义引用字符，默认为双引号（即“\"”）。只有CSV类型数据具有该属性。
 
@@ -373,7 +373,7 @@ class CreateTableRequestBody:
 
     @property
     def escape_char(self):
-        """Gets the escape_char of this CreateTableRequestBody.
+        r"""Gets the escape_char of this CreateTableRequestBody.
 
         用户自定义转义字符，默认为反斜杠（即\\）。只有CSV类型数据具有该属性。
 
@@ -384,7 +384,7 @@ class CreateTableRequestBody:
 
     @escape_char.setter
     def escape_char(self, escape_char):
-        """Sets the escape_char of this CreateTableRequestBody.
+        r"""Sets the escape_char of this CreateTableRequestBody.
 
         用户自定义转义字符，默认为反斜杠（即\\）。只有CSV类型数据具有该属性。
 
@@ -395,7 +395,7 @@ class CreateTableRequestBody:
 
     @property
     def date_format(self):
-        """Gets the date_format of this CreateTableRequestBody.
+        r"""Gets the date_format of this CreateTableRequestBody.
 
         用户自定义日期类型，默认格式为“yyyy-MM-dd”。日期格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
 
@@ -406,7 +406,7 @@ class CreateTableRequestBody:
 
     @date_format.setter
     def date_format(self, date_format):
-        """Sets the date_format of this CreateTableRequestBody.
+        r"""Sets the date_format of this CreateTableRequestBody.
 
         用户自定义日期类型，默认格式为“yyyy-MM-dd”。日期格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
 
@@ -417,7 +417,7 @@ class CreateTableRequestBody:
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this CreateTableRequestBody.
+        r"""Gets the timestamp_format of this CreateTableRequestBody.
 
         用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。时间戳格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
 
@@ -428,7 +428,7 @@ class CreateTableRequestBody:
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this CreateTableRequestBody.
+        r"""Sets the timestamp_format of this CreateTableRequestBody.
 
         用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。时间戳格式字符定义详见表3。只有CSV和JSON类型数据具有该属性。
 

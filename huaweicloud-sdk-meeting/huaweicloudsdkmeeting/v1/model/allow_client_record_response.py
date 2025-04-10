@@ -24,7 +24,7 @@ class AllowClientRecordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AllowClientRecordResponse
+        r"""AllowClientRecordResponse
 
         The model defined in huaweicloud sdk
 

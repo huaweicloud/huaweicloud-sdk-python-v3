@@ -29,7 +29,7 @@ class RateOnDemandReq:
     }
 
     def __init__(self, project_id=None, inquiry_precision=None, product_infos=None):
-        """RateOnDemandReq
+        r"""RateOnDemandReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RateOnDemandReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RateOnDemandReq.
+        r"""Gets the project_id of this RateOnDemandReq.
 
         项目ID。  说明： 使用客户Token，可以调用通过assume_role方式获取用户token接口获取“regionId”的取值对应的“project id”。具体请参见如何将合作伙伴Token置换为客户Token的步骤2。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
 
@@ -66,7 +66,7 @@ class RateOnDemandReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RateOnDemandReq.
+        r"""Sets the project_id of this RateOnDemandReq.
 
         项目ID。  说明： 使用客户Token，可以调用通过assume_role方式获取用户token接口获取“regionId”的取值对应的“project id”。具体请参见如何将合作伙伴Token置换为客户Token的步骤2。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
 
@@ -77,7 +77,7 @@ class RateOnDemandReq:
 
     @property
     def inquiry_precision(self):
-        """Gets the inquiry_precision of this RateOnDemandReq.
+        r"""Gets the inquiry_precision of this RateOnDemandReq.
 
         查询价格结果的精度模式。 0：询价结果默认精度截取，即最长保留到元后6位小数点，如0.000001元1：询价结果保留10位精度，即最长保留到元后10位小数点，如1.0000000001元  说明： 如果询价结果只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者传1都一样，只有询价结果到了小数点后面6位以上，传0和传1才有区别。
 
@@ -88,7 +88,7 @@ class RateOnDemandReq:
 
     @inquiry_precision.setter
     def inquiry_precision(self, inquiry_precision):
-        """Sets the inquiry_precision of this RateOnDemandReq.
+        r"""Sets the inquiry_precision of this RateOnDemandReq.
 
         查询价格结果的精度模式。 0：询价结果默认精度截取，即最长保留到元后6位小数点，如0.000001元1：询价结果保留10位精度，即最长保留到元后10位小数点，如1.0000000001元  说明： 如果询价结果只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者传1都一样，只有询价结果到了小数点后面6位以上，传0和传1才有区别。
 
@@ -99,7 +99,7 @@ class RateOnDemandReq:
 
     @property
     def product_infos(self):
-        """Gets the product_infos of this RateOnDemandReq.
+        r"""Gets the product_infos of this RateOnDemandReq.
 
         产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
@@ -110,7 +110,7 @@ class RateOnDemandReq:
 
     @product_infos.setter
     def product_infos(self, product_infos):
-        """Sets the product_infos of this RateOnDemandReq.
+        r"""Sets the product_infos of this RateOnDemandReq.
 
         产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 

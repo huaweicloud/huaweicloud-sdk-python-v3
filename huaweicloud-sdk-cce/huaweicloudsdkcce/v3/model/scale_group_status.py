@@ -45,7 +45,7 @@ class ScaleGroupStatus:
     }
 
     def __init__(self, name=None, uid=None, creation_timestamp=None, update_timestamp=None, phase=None, desired_node_count=None, unpaid_scale_node_count=None, existing_node_count=None, upcoming_node_count=None, scale_down_disabled_node_count=None, conditions=None):
-        """ScaleGroupStatus
+        r"""ScaleGroupStatus
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScaleGroupStatus:
 
     @property
     def name(self):
-        """Gets the name of this ScaleGroupStatus.
+        r"""Gets the name of this ScaleGroupStatus.
 
         伸缩组名称
 
@@ -124,7 +124,7 @@ class ScaleGroupStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScaleGroupStatus.
+        r"""Sets the name of this ScaleGroupStatus.
 
         伸缩组名称
 
@@ -135,7 +135,7 @@ class ScaleGroupStatus:
 
     @property
     def uid(self):
-        """Gets the uid of this ScaleGroupStatus.
+        r"""Gets the uid of this ScaleGroupStatus.
 
         伸缩组uuid
 
@@ -146,7 +146,7 @@ class ScaleGroupStatus:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this ScaleGroupStatus.
+        r"""Sets the uid of this ScaleGroupStatus.
 
         伸缩组uuid
 
@@ -157,7 +157,7 @@ class ScaleGroupStatus:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this ScaleGroupStatus.
+        r"""Gets the creation_timestamp of this ScaleGroupStatus.
 
         伸缩组创建时间
 
@@ -168,7 +168,7 @@ class ScaleGroupStatus:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this ScaleGroupStatus.
+        r"""Sets the creation_timestamp of this ScaleGroupStatus.
 
         伸缩组创建时间
 
@@ -179,7 +179,7 @@ class ScaleGroupStatus:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this ScaleGroupStatus.
+        r"""Gets the update_timestamp of this ScaleGroupStatus.
 
         伸缩组更新时间
 
@@ -190,7 +190,7 @@ class ScaleGroupStatus:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this ScaleGroupStatus.
+        r"""Sets the update_timestamp of this ScaleGroupStatus.
 
         伸缩组更新时间
 
@@ -201,7 +201,7 @@ class ScaleGroupStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this ScaleGroupStatus.
+        r"""Gets the phase of this ScaleGroupStatus.
 
         伸缩组状态。 - 空值：可用（伸缩组当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（伸缩组当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（伸缩组当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：伸缩组当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） > 上述伸缩组状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： > - 伸缩组扩缩状态：可通过desiredNodeCount/existingNodeCount/upcomingNodeCount节点状态统计信息，精确感知当前伸缩组扩缩状态。 > - 伸缩组可扩容状态：可通过conditions感知伸缩组详细状态，其中\"Scalable\"可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
 
@@ -212,7 +212,7 @@ class ScaleGroupStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this ScaleGroupStatus.
+        r"""Sets the phase of this ScaleGroupStatus.
 
         伸缩组状态。 - 空值：可用（伸缩组当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（伸缩组当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（伸缩组当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：伸缩组当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） > 上述伸缩组状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： > - 伸缩组扩缩状态：可通过desiredNodeCount/existingNodeCount/upcomingNodeCount节点状态统计信息，精确感知当前伸缩组扩缩状态。 > - 伸缩组可扩容状态：可通过conditions感知伸缩组详细状态，其中\"Scalable\"可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
 
@@ -223,7 +223,7 @@ class ScaleGroupStatus:
 
     @property
     def desired_node_count(self):
-        """Gets the desired_node_count of this ScaleGroupStatus.
+        r"""Gets the desired_node_count of this ScaleGroupStatus.
 
         伸缩组期望节点数
 
@@ -234,7 +234,7 @@ class ScaleGroupStatus:
 
     @desired_node_count.setter
     def desired_node_count(self, desired_node_count):
-        """Sets the desired_node_count of this ScaleGroupStatus.
+        r"""Sets the desired_node_count of this ScaleGroupStatus.
 
         伸缩组期望节点数
 
@@ -245,7 +245,7 @@ class ScaleGroupStatus:
 
     @property
     def unpaid_scale_node_count(self):
-        """Gets the unpaid_scale_node_count of this ScaleGroupStatus.
+        r"""Gets the unpaid_scale_node_count of this ScaleGroupStatus.
 
         订单未支付节点个数
 
@@ -256,7 +256,7 @@ class ScaleGroupStatus:
 
     @unpaid_scale_node_count.setter
     def unpaid_scale_node_count(self, unpaid_scale_node_count):
-        """Sets the unpaid_scale_node_count of this ScaleGroupStatus.
+        r"""Sets the unpaid_scale_node_count of this ScaleGroupStatus.
 
         订单未支付节点个数
 
@@ -267,7 +267,7 @@ class ScaleGroupStatus:
 
     @property
     def existing_node_count(self):
-        """Gets the existing_node_count of this ScaleGroupStatus.
+        r"""Gets the existing_node_count of this ScaleGroupStatus.
 
         :return: The existing_node_count of this ScaleGroupStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleGroupStatusExistingNodeCount`
@@ -276,7 +276,7 @@ class ScaleGroupStatus:
 
     @existing_node_count.setter
     def existing_node_count(self, existing_node_count):
-        """Sets the existing_node_count of this ScaleGroupStatus.
+        r"""Sets the existing_node_count of this ScaleGroupStatus.
 
         :param existing_node_count: The existing_node_count of this ScaleGroupStatus.
         :type existing_node_count: :class:`huaweicloudsdkcce.v3.ScaleGroupStatusExistingNodeCount`
@@ -285,7 +285,7 @@ class ScaleGroupStatus:
 
     @property
     def upcoming_node_count(self):
-        """Gets the upcoming_node_count of this ScaleGroupStatus.
+        r"""Gets the upcoming_node_count of this ScaleGroupStatus.
 
         :return: The upcoming_node_count of this ScaleGroupStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleGroupStatusUpcomingNodeCount`
@@ -294,7 +294,7 @@ class ScaleGroupStatus:
 
     @upcoming_node_count.setter
     def upcoming_node_count(self, upcoming_node_count):
-        """Sets the upcoming_node_count of this ScaleGroupStatus.
+        r"""Sets the upcoming_node_count of this ScaleGroupStatus.
 
         :param upcoming_node_count: The upcoming_node_count of this ScaleGroupStatus.
         :type upcoming_node_count: :class:`huaweicloudsdkcce.v3.ScaleGroupStatusUpcomingNodeCount`
@@ -303,7 +303,7 @@ class ScaleGroupStatus:
 
     @property
     def scale_down_disabled_node_count(self):
-        """Gets the scale_down_disabled_node_count of this ScaleGroupStatus.
+        r"""Gets the scale_down_disabled_node_count of this ScaleGroupStatus.
 
         伸缩组禁止缩容的节点数
 
@@ -314,7 +314,7 @@ class ScaleGroupStatus:
 
     @scale_down_disabled_node_count.setter
     def scale_down_disabled_node_count(self, scale_down_disabled_node_count):
-        """Sets the scale_down_disabled_node_count of this ScaleGroupStatus.
+        r"""Sets the scale_down_disabled_node_count of this ScaleGroupStatus.
 
         伸缩组禁止缩容的节点数
 
@@ -325,7 +325,7 @@ class ScaleGroupStatus:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ScaleGroupStatus.
+        r"""Gets the conditions of this ScaleGroupStatus.
 
         伸缩组当前详细状态列表，详情参见Condition类型定义。
 
@@ -336,7 +336,7 @@ class ScaleGroupStatus:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ScaleGroupStatus.
+        r"""Sets the conditions of this ScaleGroupStatus.
 
         伸缩组当前详细状态列表，详情参见Condition类型定义。
 

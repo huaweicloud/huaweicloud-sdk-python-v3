@@ -25,7 +25,7 @@ class UpgradeFeatureGates:
     }
 
     def __init__(self, support_upgrade_page_v4=None):
-        """UpgradeFeatureGates
+        r"""UpgradeFeatureGates
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeFeatureGates:
 
     @property
     def support_upgrade_page_v4(self):
-        """Gets the support_upgrade_page_v4 of this UpgradeFeatureGates.
+        r"""Gets the support_upgrade_page_v4 of this UpgradeFeatureGates.
 
         集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。
 
@@ -54,7 +54,7 @@ class UpgradeFeatureGates:
 
     @support_upgrade_page_v4.setter
     def support_upgrade_page_v4(self, support_upgrade_page_v4):
-        """Sets the support_upgrade_page_v4 of this UpgradeFeatureGates.
+        r"""Sets the support_upgrade_page_v4 of this UpgradeFeatureGates.
 
         集群升级Console界面是否支持V4版本，该字段一般由CCE Console使用。
 

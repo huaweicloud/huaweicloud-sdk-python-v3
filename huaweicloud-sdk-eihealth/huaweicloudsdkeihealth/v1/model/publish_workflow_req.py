@@ -37,7 +37,7 @@ class PublishWorkflowReq:
     }
 
     def __init__(self, name=None, version=None, picture=None, title=None, summary=None, description=None, labels=None):
-        """PublishWorkflowReq
+        r"""PublishWorkflowReq
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class PublishWorkflowReq:
 
     @property
     def name(self):
-        """Gets the name of this PublishWorkflowReq.
+        r"""Gets the name of this PublishWorkflowReq.
 
         资产名称
 
@@ -94,7 +94,7 @@ class PublishWorkflowReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublishWorkflowReq.
+        r"""Sets the name of this PublishWorkflowReq.
 
         资产名称
 
@@ -105,7 +105,7 @@ class PublishWorkflowReq:
 
     @property
     def version(self):
-        """Gets the version of this PublishWorkflowReq.
+        r"""Gets the version of this PublishWorkflowReq.
 
         资产版本
 
@@ -116,7 +116,7 @@ class PublishWorkflowReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishWorkflowReq.
+        r"""Sets the version of this PublishWorkflowReq.
 
         资产版本
 
@@ -127,7 +127,7 @@ class PublishWorkflowReq:
 
     @property
     def picture(self):
-        """Gets the picture of this PublishWorkflowReq.
+        r"""Gets the picture of this PublishWorkflowReq.
 
         封面图片base64编码
 
@@ -138,7 +138,7 @@ class PublishWorkflowReq:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this PublishWorkflowReq.
+        r"""Sets the picture of this PublishWorkflowReq.
 
         封面图片base64编码
 
@@ -149,7 +149,7 @@ class PublishWorkflowReq:
 
     @property
     def title(self):
-        """Gets the title of this PublishWorkflowReq.
+        r"""Gets the title of this PublishWorkflowReq.
 
         展示名
 
@@ -160,7 +160,7 @@ class PublishWorkflowReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this PublishWorkflowReq.
+        r"""Sets the title of this PublishWorkflowReq.
 
         展示名
 
@@ -171,7 +171,7 @@ class PublishWorkflowReq:
 
     @property
     def summary(self):
-        """Gets the summary of this PublishWorkflowReq.
+        r"""Gets the summary of this PublishWorkflowReq.
 
         短描述
 
@@ -182,7 +182,7 @@ class PublishWorkflowReq:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this PublishWorkflowReq.
+        r"""Sets the summary of this PublishWorkflowReq.
 
         短描述
 
@@ -193,7 +193,7 @@ class PublishWorkflowReq:
 
     @property
     def description(self):
-        """Gets the description of this PublishWorkflowReq.
+        r"""Gets the description of this PublishWorkflowReq.
 
         长描述
 
@@ -204,7 +204,7 @@ class PublishWorkflowReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishWorkflowReq.
+        r"""Sets the description of this PublishWorkflowReq.
 
         长描述
 
@@ -215,7 +215,7 @@ class PublishWorkflowReq:
 
     @property
     def labels(self):
-        """Gets the labels of this PublishWorkflowReq.
+        r"""Gets the labels of this PublishWorkflowReq.
 
         标签列表
 
@@ -226,7 +226,7 @@ class PublishWorkflowReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this PublishWorkflowReq.
+        r"""Sets the labels of this PublishWorkflowReq.
 
         标签列表
 

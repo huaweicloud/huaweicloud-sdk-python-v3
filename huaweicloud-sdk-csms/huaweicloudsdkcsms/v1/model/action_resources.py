@@ -33,7 +33,7 @@ class ActionResources:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, resource_name=None, tags=None, sys_tags=None):
-        """ActionResources
+        r"""ActionResources
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ActionResources:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ActionResources.
+        r"""Gets the resource_id of this ActionResources.
 
         资源ID。
 
@@ -82,7 +82,7 @@ class ActionResources:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ActionResources.
+        r"""Sets the resource_id of this ActionResources.
 
         资源ID。
 
@@ -93,7 +93,7 @@ class ActionResources:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ActionResources.
+        r"""Gets the resource_detail of this ActionResources.
 
         :return: The resource_detail of this ActionResources.
         :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
@@ -102,7 +102,7 @@ class ActionResources:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ActionResources.
+        r"""Sets the resource_detail of this ActionResources.
 
         :param resource_detail: The resource_detail of this ActionResources.
         :type resource_detail: :class:`huaweicloudsdkcsms.v1.Secret`
@@ -111,7 +111,7 @@ class ActionResources:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ActionResources.
+        r"""Gets the resource_name of this ActionResources.
 
         资源名称，默认为空字符串。
 
@@ -122,7 +122,7 @@ class ActionResources:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ActionResources.
+        r"""Sets the resource_name of this ActionResources.
 
         资源名称，默认为空字符串。
 
@@ -133,7 +133,7 @@ class ActionResources:
 
     @property
     def tags(self):
-        """Gets the tags of this ActionResources.
+        r"""Gets the tags of this ActionResources.
 
         标签列表，没有标签，数组默认为空。
 
@@ -144,7 +144,7 @@ class ActionResources:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ActionResources.
+        r"""Sets the tags of this ActionResources.
 
         标签列表，没有标签，数组默认为空。
 
@@ -155,7 +155,7 @@ class ActionResources:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ActionResources.
+        r"""Gets the sys_tags of this ActionResources.
 
         系统标签列表，没有标签，数组默认为空
 
@@ -166,7 +166,7 @@ class ActionResources:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ActionResources.
+        r"""Sets the sys_tags of this ActionResources.
 
         系统标签列表，没有标签，数组默认为空
 

@@ -27,7 +27,7 @@ class BatchUpdateUserRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchUpdateUserRequest
+        r"""BatchUpdateUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchUpdateUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchUpdateUserRequest.
+        r"""Gets the x_language of this BatchUpdateUserRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchUpdateUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchUpdateUserRequest.
+        r"""Sets the x_language of this BatchUpdateUserRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchUpdateUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateUserRequest.
+        r"""Gets the body of this BatchUpdateUserRequest.
 
         :return: The body of this BatchUpdateUserRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateSrcUserReq`
@@ -81,7 +81,7 @@ class BatchUpdateUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateUserRequest.
+        r"""Sets the body of this BatchUpdateUserRequest.
 
         :param body: The body of this BatchUpdateUserRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchUpdateSrcUserReq`

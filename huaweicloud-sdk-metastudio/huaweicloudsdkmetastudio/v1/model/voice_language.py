@@ -52,7 +52,7 @@ class VoiceLanguage:
     }
 
     def __init__(self):
-        """VoiceLanguage
+        r"""VoiceLanguage
 
         The model defined in huaweicloud sdk
 

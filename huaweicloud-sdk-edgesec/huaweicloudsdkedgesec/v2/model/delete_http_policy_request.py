@@ -25,7 +25,7 @@ class DeleteHttpPolicyRequest:
     }
 
     def __init__(self, policy_id=None):
-        """DeleteHttpPolicyRequest
+        r"""DeleteHttpPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteHttpPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteHttpPolicyRequest.
+        r"""Gets the policy_id of this DeleteHttpPolicyRequest.
 
         防护策略id
 
@@ -53,7 +53,7 @@ class DeleteHttpPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteHttpPolicyRequest.
+        r"""Sets the policy_id of this DeleteHttpPolicyRequest.
 
         防护策略id
 

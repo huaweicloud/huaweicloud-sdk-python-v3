@@ -28,7 +28,7 @@ class ListStorageResourcesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, resources=None):
-        """ListStorageResourcesResponse
+        r"""ListStorageResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStorageResourcesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListStorageResourcesResponse.
+        r"""Gets the count of this ListStorageResourcesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListStorageResourcesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListStorageResourcesResponse.
+        r"""Sets the count of this ListStorageResourcesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListStorageResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListStorageResourcesResponse.
+        r"""Gets the resources of this ListStorageResourcesResponse.
 
         存储资源列表
 
@@ -84,7 +84,7 @@ class ListStorageResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListStorageResourcesResponse.
+        r"""Sets the resources of this ListStorageResourcesResponse.
 
         存储资源列表
 

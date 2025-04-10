@@ -45,7 +45,7 @@ class EventDetailResponseInfo:
     }
 
     def __init__(self, agent_id=None, process_pid=None, is_parent=None, file_hash=None, file_path=None, file_attr=None, private_ip=None, login_ip=None, login_user_name=None, keyword=None, hash=None):
-        """EventDetailResponseInfo
+        r"""EventDetailResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EventDetailResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this EventDetailResponseInfo.
+        r"""Gets the agent_id of this EventDetailResponseInfo.
 
         Agent ID
 
@@ -124,7 +124,7 @@ class EventDetailResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this EventDetailResponseInfo.
+        r"""Sets the agent_id of this EventDetailResponseInfo.
 
         Agent ID
 
@@ -135,7 +135,7 @@ class EventDetailResponseInfo:
 
     @property
     def process_pid(self):
-        """Gets the process_pid of this EventDetailResponseInfo.
+        r"""Gets the process_pid of this EventDetailResponseInfo.
 
         进程id
 
@@ -146,7 +146,7 @@ class EventDetailResponseInfo:
 
     @process_pid.setter
     def process_pid(self, process_pid):
-        """Sets the process_pid of this EventDetailResponseInfo.
+        r"""Sets the process_pid of this EventDetailResponseInfo.
 
         进程id
 
@@ -157,7 +157,7 @@ class EventDetailResponseInfo:
 
     @property
     def is_parent(self):
-        """Gets the is_parent of this EventDetailResponseInfo.
+        r"""Gets the is_parent of this EventDetailResponseInfo.
 
         是否是父进程
 
@@ -168,7 +168,7 @@ class EventDetailResponseInfo:
 
     @is_parent.setter
     def is_parent(self, is_parent):
-        """Sets the is_parent of this EventDetailResponseInfo.
+        r"""Sets the is_parent of this EventDetailResponseInfo.
 
         是否是父进程
 
@@ -179,7 +179,7 @@ class EventDetailResponseInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this EventDetailResponseInfo.
+        r"""Gets the file_hash of this EventDetailResponseInfo.
 
         文件哈希
 
@@ -190,7 +190,7 @@ class EventDetailResponseInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this EventDetailResponseInfo.
+        r"""Sets the file_hash of this EventDetailResponseInfo.
 
         文件哈希
 
@@ -201,7 +201,7 @@ class EventDetailResponseInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this EventDetailResponseInfo.
+        r"""Gets the file_path of this EventDetailResponseInfo.
 
         文件路径
 
@@ -212,7 +212,7 @@ class EventDetailResponseInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this EventDetailResponseInfo.
+        r"""Sets the file_path of this EventDetailResponseInfo.
 
         文件路径
 
@@ -223,7 +223,7 @@ class EventDetailResponseInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this EventDetailResponseInfo.
+        r"""Gets the file_attr of this EventDetailResponseInfo.
 
         文件属性
 
@@ -234,7 +234,7 @@ class EventDetailResponseInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this EventDetailResponseInfo.
+        r"""Sets the file_attr of this EventDetailResponseInfo.
 
         文件属性
 
@@ -245,7 +245,7 @@ class EventDetailResponseInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this EventDetailResponseInfo.
+        r"""Gets the private_ip of this EventDetailResponseInfo.
 
         服务器私有IP
 
@@ -256,7 +256,7 @@ class EventDetailResponseInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this EventDetailResponseInfo.
+        r"""Sets the private_ip of this EventDetailResponseInfo.
 
         服务器私有IP
 
@@ -267,7 +267,7 @@ class EventDetailResponseInfo:
 
     @property
     def login_ip(self):
-        """Gets the login_ip of this EventDetailResponseInfo.
+        r"""Gets the login_ip of this EventDetailResponseInfo.
 
         登录源IP
 
@@ -278,7 +278,7 @@ class EventDetailResponseInfo:
 
     @login_ip.setter
     def login_ip(self, login_ip):
-        """Sets the login_ip of this EventDetailResponseInfo.
+        r"""Sets the login_ip of this EventDetailResponseInfo.
 
         登录源IP
 
@@ -289,7 +289,7 @@ class EventDetailResponseInfo:
 
     @property
     def login_user_name(self):
-        """Gets the login_user_name of this EventDetailResponseInfo.
+        r"""Gets the login_user_name of this EventDetailResponseInfo.
 
         登录用户名
 
@@ -300,7 +300,7 @@ class EventDetailResponseInfo:
 
     @login_user_name.setter
     def login_user_name(self, login_user_name):
-        """Sets the login_user_name of this EventDetailResponseInfo.
+        r"""Sets the login_user_name of this EventDetailResponseInfo.
 
         登录用户名
 
@@ -311,7 +311,7 @@ class EventDetailResponseInfo:
 
     @property
     def keyword(self):
-        """Gets the keyword of this EventDetailResponseInfo.
+        r"""Gets the keyword of this EventDetailResponseInfo.
 
         告警事件关键字，仅用于告警白名单
 
@@ -322,7 +322,7 @@ class EventDetailResponseInfo:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this EventDetailResponseInfo.
+        r"""Sets the keyword of this EventDetailResponseInfo.
 
         告警事件关键字，仅用于告警白名单
 
@@ -333,7 +333,7 @@ class EventDetailResponseInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this EventDetailResponseInfo.
+        r"""Gets the hash of this EventDetailResponseInfo.
 
         告警事件hash，仅用于告警白名单
 
@@ -344,7 +344,7 @@ class EventDetailResponseInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this EventDetailResponseInfo.
+        r"""Sets the hash of this EventDetailResponseInfo.
 
         告警事件hash，仅用于告警白名单
 

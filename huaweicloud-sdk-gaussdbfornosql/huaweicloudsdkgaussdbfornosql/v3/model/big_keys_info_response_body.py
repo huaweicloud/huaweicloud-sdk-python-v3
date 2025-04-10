@@ -31,7 +31,7 @@ class BigKeysInfoResponseBody:
     }
 
     def __init__(self, db_id=None, key_type=None, key_name=None, key_size=None):
-        """BigKeysInfoResponseBody
+        r"""BigKeysInfoResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BigKeysInfoResponseBody:
 
     @property
     def db_id(self):
-        """Gets the db_id of this BigKeysInfoResponseBody.
+        r"""Gets the db_id of this BigKeysInfoResponseBody.
 
         大Key所在的DB。
 
@@ -75,7 +75,7 @@ class BigKeysInfoResponseBody:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this BigKeysInfoResponseBody.
+        r"""Sets the db_id of this BigKeysInfoResponseBody.
 
         大Key所在的DB。
 
@@ -86,7 +86,7 @@ class BigKeysInfoResponseBody:
 
     @property
     def key_type(self):
-        """Gets the key_type of this BigKeysInfoResponseBody.
+        r"""Gets the key_type of this BigKeysInfoResponseBody.
 
         大Key类型。
 
@@ -97,7 +97,7 @@ class BigKeysInfoResponseBody:
 
     @key_type.setter
     def key_type(self, key_type):
-        """Sets the key_type of this BigKeysInfoResponseBody.
+        r"""Sets the key_type of this BigKeysInfoResponseBody.
 
         大Key类型。
 
@@ -108,7 +108,7 @@ class BigKeysInfoResponseBody:
 
     @property
     def key_name(self):
-        """Gets the key_name of this BigKeysInfoResponseBody.
+        r"""Gets the key_name of this BigKeysInfoResponseBody.
 
         大Key名。
 
@@ -119,7 +119,7 @@ class BigKeysInfoResponseBody:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this BigKeysInfoResponseBody.
+        r"""Sets the key_name of this BigKeysInfoResponseBody.
 
         大Key名。
 
@@ -130,7 +130,7 @@ class BigKeysInfoResponseBody:
 
     @property
     def key_size(self):
-        """Gets the key_size of this BigKeysInfoResponseBody.
+        r"""Gets the key_size of this BigKeysInfoResponseBody.
 
         大Key的长度。
 
@@ -141,7 +141,7 @@ class BigKeysInfoResponseBody:
 
     @key_size.setter
     def key_size(self, key_size):
-        """Sets the key_size of this BigKeysInfoResponseBody.
+        r"""Sets the key_size of this BigKeysInfoResponseBody.
 
         大Key的长度。
 

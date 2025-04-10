@@ -25,7 +25,7 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
     }
 
     def __init__(self, phase=None):
-        """UpgradeWorkFlowUpdateRequestBodyStatus
+        r"""UpgradeWorkFlowUpdateRequestBodyStatus
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
+        r"""Gets the phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
 
         :return: The phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
@@ -52,7 +52,7 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
+        r"""Sets the phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
 
         :param phase: The phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
         :type phase: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`

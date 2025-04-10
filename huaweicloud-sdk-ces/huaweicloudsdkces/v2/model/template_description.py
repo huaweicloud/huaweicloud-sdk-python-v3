@@ -23,7 +23,7 @@ class TemplateDescription:
     }
 
     def __init__(self):
-        """TemplateDescription
+        r"""TemplateDescription
 
         The model defined in huaweicloud sdk
 

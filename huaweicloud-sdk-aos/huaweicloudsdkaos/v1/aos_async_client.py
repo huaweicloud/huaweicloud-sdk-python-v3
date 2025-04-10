@@ -34,7 +34,7 @@ class AosAsyncClient(Client):
         return client_builder
 
     def create_private_provider_async(self, request):
-        """创建私有provider
+        r"""创建私有provider
 
         创建私有provider（CreatePrivateProvider）
         
@@ -218,7 +218,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_private_provider_version_async(self, request):
-        """创建私有provider版本
+        r"""创建私有provider版本
 
         创建私有provider版本（CreatePrivateProviderVersion）
         
@@ -291,7 +291,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def apply_execution_plan_async(self, request):
-        """执行执行计划
+        r"""执行执行计划
 
         执行执行计划（ApplyExecutionPlan）
         
@@ -380,7 +380,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_execution_plan_async(self, request):
-        """创建执行计划
+        r"""创建执行计划
 
         创建执行计划（CreateExecutionPlan）
         
@@ -463,7 +463,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_execution_plan_async(self, request):
-        """删除执行计划
+        r"""删除执行计划
 
         删除执行计划（DeleteExecutionPlan）
         
@@ -540,7 +540,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def estimate_execution_plan_price_async(self, request):
-        """预估执行计划价格
+        r"""预估执行计划价格
 
         预估执行计划价格（EstimateExecutionPlanPrice）
         
@@ -719,7 +719,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def get_execution_plan_async(self, request):
-        """获取执行计划
+        r"""获取执行计划
 
         获取执行计划（GetExecutionPlan）
         
@@ -796,7 +796,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def get_execution_plan_metadata_async(self, request):
-        """获取执行计划元数据
+        r"""获取执行计划元数据
 
         获取执行计划元数据（GetExecutionPlanMetadata）
         
@@ -875,7 +875,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_execution_plans_async(self, request):
-        """列举执行计划
+        r"""列举执行计划
 
         列举执行计划（ListExecutionPlans）
         
@@ -953,7 +953,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_private_hook_async(self, request):
-        """创建私有hook
+        r"""创建私有hook
 
         创建私有hook（CreatePrivateHook）
         
@@ -1062,7 +1062,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_private_hook_version_async(self, request):
-        """创建私有hook版本
+        r"""创建私有hook版本
 
         创建私有hook版本（CreatePrivateHookVersion）
         
@@ -1137,7 +1137,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_private_hook_async(self, request):
-        """删除私有hook
+        r"""删除私有hook
 
         删除私有hook（DeletePrivateHook）
         
@@ -1213,7 +1213,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_private_hook_version_async(self, request):
-        """删除私有hook版本
+        r"""删除私有hook版本
 
         删除私有hook版本（DeletePrivateHookVersion）
         
@@ -1291,7 +1291,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_private_hooks_async(self, request):
-        """列举私有hook
+        r"""列举私有hook
 
         列举私有hook（ListPrivateHooks）
         
@@ -1369,7 +1369,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_private_hook_metadata_async(self, request):
-        """获取私有hook元数据
+        r"""获取私有hook元数据
 
         获取私有hook元数据（ShowPrivateHookMetadata）
         
@@ -1443,7 +1443,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_private_hook_version_metadata_async(self, request):
-        """获取私有hook版本的元数据
+        r"""获取私有hook版本的元数据
 
         获取私有hook版本的元数据（ShowPrivateHookVersionMetadata）
         
@@ -1519,7 +1519,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_private_hook_version_policy_async(self, request):
-        """获取私有hook版本策略
+        r"""获取私有hook版本策略
 
         获取私有hook版本策略（ShowPrivateHookVersionPolicy）
         
@@ -1595,7 +1595,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def update_private_hook_metadata_async(self, request):
-        """更新私有hook元数据
+        r"""更新私有hook元数据
 
         更新私有hook元数据（UpdatePrivateHookMetadata）
         
@@ -1673,7 +1673,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_private_module_async(self, request):
-        """创建私有模块
+        r"""创建私有模块
 
         创建私有模块（CreatePrivateModule）
         
@@ -1765,7 +1765,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_private_module_version_async(self, request):
-        """创建私有模块版本
+        r"""创建私有模块版本
 
         创建私有模块版本（CreatePrivateModuleVersion）
         
@@ -1840,7 +1840,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_private_module_async(self, request):
-        """删除私有模块
+        r"""删除私有模块
 
         删除私有模块（DeletePrivateModule）
         
@@ -1915,7 +1915,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_private_module_version_async(self, request):
-        """删除私有模块版本
+        r"""删除私有模块版本
 
         删除私有模块版本（DeletePrivateModuleVersion）
         
@@ -1992,7 +1992,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_private_module_versions_async(self, request):
-        """列举私有模块版本
+        r"""列举私有模块版本
 
         列举私有模块版本（ListPrivateModuleVersions）
         
@@ -2075,7 +2075,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_private_modules_async(self, request):
-        """列举私有模块
+        r"""列举私有模块
 
         列举私有模块（ListPrivateModules）
         
@@ -2154,7 +2154,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_private_module_metadata_async(self, request):
-        """获取私有模块元数据
+        r"""获取私有模块元数据
 
         获取私有模块元数据（ShowPrivateModuleMetadata）
         
@@ -2228,7 +2228,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_private_module_version_content_async(self, request):
-        """获取私有模块版本内容
+        r"""获取私有模块版本内容
 
         获取私有模块版本内容（ShowPrivateModuleVersionContent）
         
@@ -2304,7 +2304,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_private_module_version_metadata_async(self, request):
-        """获取私有模块版本元数据
+        r"""获取私有模块版本元数据
 
         获取私有模块版本元数据（ShowPrivateModuleVersionMetadata）
         
@@ -2380,7 +2380,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def update_private_module_metadata_async(self, request):
-        """更新私有模块元数据
+        r"""更新私有模块元数据
 
         更新私有模块元数据（UpdatePrivateModuleMetadata）
         
@@ -2458,7 +2458,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def continue_deploy_stack_async(self, request):
-        """继续部署资源栈
+        r"""继续部署资源栈
 
         继续部署资源栈（ContinueDeployStack）
         
@@ -2533,7 +2533,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def continue_rollback_stack_async(self, request):
-        """继续回滚资源栈
+        r"""继续回滚资源栈
 
         继续回滚资源栈（ContinueRollbackStack）
         
@@ -2609,7 +2609,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_stack_async(self, request):
-        """创建资源栈
+        r"""创建资源栈
 
         CreateStack用于生成一个资源栈
         
@@ -2679,7 +2679,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_stack_async(self, request):
-        """删除资源栈
+        r"""删除资源栈
 
         删除资源栈（DeleteStack）
         
@@ -2761,7 +2761,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_stack_enhanced_async(self, request):
-        """条件删除资源栈
+        r"""条件删除资源栈
 
         条件删除资源栈（DeleteStackEnhanced）
         
@@ -2845,7 +2845,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def deploy_stack_async(self, request):
-        """部署资源栈
+        r"""部署资源栈
 
         部署资源栈（DeployStack）
         
@@ -2926,7 +2926,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def get_stack_metadata_async(self, request):
-        """获取资源栈元数据
+        r"""获取资源栈元数据
 
         获取资源栈元数据（GetStackMetadata）
         
@@ -3016,7 +3016,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def get_stack_template_async(self, request):
-        """获取资源栈模板
+        r"""获取资源栈模板
 
         获取资源栈模板（GetStackTemplate）
         
@@ -3113,7 +3113,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stack_events_async(self, request):
-        """列举资源栈事件
+        r"""列举资源栈事件
 
         列举资源栈事件（ListStackEvents）
         
@@ -3196,7 +3196,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stack_outputs_async(self, request):
-        """列举资源栈输出
+        r"""列举资源栈输出
 
         列举资源栈输出（ListStackOutputs）
         
@@ -3276,7 +3276,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stack_resources_async(self, request):
-        """列举资源栈资源
+        r"""列举资源栈资源
 
         列举资源栈资源（ListStackResources）
         
@@ -3354,7 +3354,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stacks_async(self, request):
-        """列举资源栈
+        r"""列举资源栈
 
         列举资源栈（ListStacks）
         
@@ -3427,7 +3427,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def update_stack_async(self, request):
-        """更新资源栈
+        r"""更新资源栈
 
         更新资源栈（UpdateStack）
         
@@ -3514,7 +3514,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_stack_instance_async(self, request):
-        """创建资源栈实例
+        r"""创建资源栈实例
 
         创建资源栈实例（CreateStackInstance）
         
@@ -3593,7 +3593,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def create_stack_set_async(self, request):
-        """创建资源栈集
+        r"""创建资源栈集
 
         创建资源栈集（CreateStackSet）
         
@@ -3662,7 +3662,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_stack_instance_async(self, request):
-        """删除资源栈实例
+        r"""删除资源栈实例
 
         删除资源栈实例（DeleteStackInstance）
         
@@ -3737,7 +3737,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_stack_instance_deprecated_async(self, request):
-        """删除资源栈实例-已废弃
+        r"""删除资源栈实例-已废弃
 
         删除资源栈实例-被废弃（DeleteStackInstanceDeprecated）
         
@@ -3812,7 +3812,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_stack_set_async(self, request):
-        """删除资源栈集
+        r"""删除资源栈集
 
         删除资源栈集（DeleteStackSet）
         
@@ -3889,7 +3889,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def deploy_stack_set_async(self, request):
-        """部署资源栈集
+        r"""部署资源栈集
 
         部署资源栈集（DeployStackSet）
         
@@ -3970,7 +3970,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stack_instances_async(self, request):
-        """列举资源栈实例
+        r"""列举资源栈实例
 
         列举资源栈实例（ListStackInstances）
         
@@ -4055,7 +4055,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stack_set_operations_async(self, request):
-        """列举资源栈集操作
+        r"""列举资源栈集操作
 
         列举资源栈集操作（ListStackSetOperations）
         
@@ -4140,7 +4140,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_stack_sets_async(self, request):
-        """列举资源栈集
+        r"""列举资源栈集
 
         列举资源栈集（ListStackSets）
         
@@ -4222,7 +4222,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_stack_instance_async(self, request):
-        """获取资源栈实例
+        r"""获取资源栈实例
 
         获取资源栈实例（ShowStackInstance）
         
@@ -4297,7 +4297,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_stack_set_metadata_async(self, request):
-        """获取资源栈集元数据
+        r"""获取资源栈集元数据
 
         获取资源栈集元数据（ShowStackSetMetadata）
         
@@ -4370,7 +4370,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_stack_set_operation_metadata_async(self, request):
-        """获取资源栈集操作的元数据
+        r"""获取资源栈集操作的元数据
 
         获取资源栈集操作元数据（ShowStackSetOperationMetadata）
         
@@ -4447,7 +4447,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_stack_set_template_async(self, request):
-        """获取资源栈集模板
+        r"""获取资源栈集模板
 
         获取资源栈集模板（ShowStackSetTemplate）
         
@@ -4529,7 +4529,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def update_stack_instances_async(self, request):
-        """更新资源栈实例
+        r"""更新资源栈实例
 
         更新资源栈实例（UpdateStackInstances）
         
@@ -4610,7 +4610,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def update_stack_set_async(self, request):
-        """更新资源栈集
+        r"""更新资源栈集
 
         更新资源栈集（UpdateStackSet）
         
@@ -4689,7 +4689,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def parse_template_variables_async(self, request):
-        """解析模板参数
+        r"""解析模板参数
 
         解析模板参数（ParseTemplateVariables）
         
@@ -4762,7 +4762,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_template_async(self, request):
-        """删除模板
+        r"""删除模板
 
         删除模板（DeleteTemplate）
         
@@ -4836,7 +4836,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def delete_template_version_async(self, request):
-        """删除模板版本
+        r"""删除模板版本
 
         删除模板版本（DeleteTemplateVersion）
         
@@ -4914,7 +4914,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_template_versions_async(self, request):
-        """列举模板版本
+        r"""列举模板版本
 
         列举模板版本信息（ListTemplateVersions）
         
@@ -4993,7 +4993,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def list_templates_async(self, request):
-        """列举模板
+        r"""列举模板
 
         列举模板（ListTemplates）
         
@@ -5067,7 +5067,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_template_metadata_async(self, request):
-        """获取模板元数据
+        r"""获取模板元数据
 
         获取模板元数据（ShowTemplateMetadata）
         
@@ -5142,7 +5142,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_template_version_content_async(self, request):
-        """获取模板版本内容
+        r"""获取模板版本内容
 
         获取模板版本内容（ShowTemplateVersionContent）
         
@@ -5227,7 +5227,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def show_template_version_metadata_async(self, request):
-        """获取模板版本元数据
+        r"""获取模板版本元数据
 
         获取模板版本元数据（ShowTemplateVersionMetadata）
         
@@ -5304,7 +5304,7 @@ class AosAsyncClient(Client):
         return http_info
 
     def update_template_metadata_async(self, request):
-        """更新模板元数据
+        r"""更新模板元数据
 
         更新模板元数据（UpdateTemplateMetadata）
         

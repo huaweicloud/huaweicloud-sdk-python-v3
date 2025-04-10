@@ -26,7 +26,7 @@ class ShowAccessAgentLatestVersionResponse(SdkResponse):
     }
 
     def __init__(self, latest_version=None):
-        """ShowAccessAgentLatestVersionResponse
+        r"""ShowAccessAgentLatestVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAccessAgentLatestVersionResponse(SdkResponse):
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this ShowAccessAgentLatestVersionResponse.
+        r"""Gets the latest_version of this ShowAccessAgentLatestVersionResponse.
 
         租户的HDA最新版本。
 
@@ -55,7 +55,7 @@ class ShowAccessAgentLatestVersionResponse(SdkResponse):
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this ShowAccessAgentLatestVersionResponse.
+        r"""Sets the latest_version of this ShowAccessAgentLatestVersionResponse.
 
         租户的HDA最新版本。
 

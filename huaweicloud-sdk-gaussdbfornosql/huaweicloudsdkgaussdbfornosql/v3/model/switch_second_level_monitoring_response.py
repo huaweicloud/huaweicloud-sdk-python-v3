@@ -24,7 +24,7 @@ class SwitchSecondLevelMonitoringResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchSecondLevelMonitoringResponse
+        r"""SwitchSecondLevelMonitoringResponse
 
         The model defined in huaweicloud sdk
 

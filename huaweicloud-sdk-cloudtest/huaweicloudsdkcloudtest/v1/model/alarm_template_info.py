@@ -39,7 +39,7 @@ class AlarmTemplateInfo:
     }
 
     def __init__(self, create_time=None, create_user=None, id=None, remarks=None, test_service_id=None, update_time=None, update_user=None, name=None):
-        """AlarmTemplateInfo
+        r"""AlarmTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AlarmTemplateInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlarmTemplateInfo.
+        r"""Gets the create_time of this AlarmTemplateInfo.
 
         创建时间
 
@@ -103,7 +103,7 @@ class AlarmTemplateInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlarmTemplateInfo.
+        r"""Sets the create_time of this AlarmTemplateInfo.
 
         创建时间
 
@@ -114,7 +114,7 @@ class AlarmTemplateInfo:
 
     @property
     def create_user(self):
-        """Gets the create_user of this AlarmTemplateInfo.
+        r"""Gets the create_user of this AlarmTemplateInfo.
 
         创建者
 
@@ -125,7 +125,7 @@ class AlarmTemplateInfo:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this AlarmTemplateInfo.
+        r"""Sets the create_user of this AlarmTemplateInfo.
 
         创建者
 
@@ -136,7 +136,7 @@ class AlarmTemplateInfo:
 
     @property
     def id(self):
-        """Gets the id of this AlarmTemplateInfo.
+        r"""Gets the id of this AlarmTemplateInfo.
 
         UUID
 
@@ -147,7 +147,7 @@ class AlarmTemplateInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlarmTemplateInfo.
+        r"""Sets the id of this AlarmTemplateInfo.
 
         UUID
 
@@ -158,7 +158,7 @@ class AlarmTemplateInfo:
 
     @property
     def remarks(self):
-        """Gets the remarks of this AlarmTemplateInfo.
+        r"""Gets the remarks of this AlarmTemplateInfo.
 
         备注
 
@@ -169,7 +169,7 @@ class AlarmTemplateInfo:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this AlarmTemplateInfo.
+        r"""Sets the remarks of this AlarmTemplateInfo.
 
         备注
 
@@ -180,7 +180,7 @@ class AlarmTemplateInfo:
 
     @property
     def test_service_id(self):
-        """Gets the test_service_id of this AlarmTemplateInfo.
+        r"""Gets the test_service_id of this AlarmTemplateInfo.
 
         服务id
 
@@ -191,7 +191,7 @@ class AlarmTemplateInfo:
 
     @test_service_id.setter
     def test_service_id(self, test_service_id):
-        """Sets the test_service_id of this AlarmTemplateInfo.
+        r"""Sets the test_service_id of this AlarmTemplateInfo.
 
         服务id
 
@@ -202,7 +202,7 @@ class AlarmTemplateInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlarmTemplateInfo.
+        r"""Gets the update_time of this AlarmTemplateInfo.
 
         修改时间
 
@@ -213,7 +213,7 @@ class AlarmTemplateInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlarmTemplateInfo.
+        r"""Sets the update_time of this AlarmTemplateInfo.
 
         修改时间
 
@@ -224,7 +224,7 @@ class AlarmTemplateInfo:
 
     @property
     def update_user(self):
-        """Gets the update_user of this AlarmTemplateInfo.
+        r"""Gets the update_user of this AlarmTemplateInfo.
 
         修改者
 
@@ -235,7 +235,7 @@ class AlarmTemplateInfo:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this AlarmTemplateInfo.
+        r"""Sets the update_user of this AlarmTemplateInfo.
 
         修改者
 
@@ -246,7 +246,7 @@ class AlarmTemplateInfo:
 
     @property
     def name(self):
-        """Gets the name of this AlarmTemplateInfo.
+        r"""Gets the name of this AlarmTemplateInfo.
 
         模板名称
 
@@ -257,7 +257,7 @@ class AlarmTemplateInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmTemplateInfo.
+        r"""Sets the name of this AlarmTemplateInfo.
 
         模板名称
 

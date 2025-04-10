@@ -32,7 +32,7 @@ class ListSupplementdataResponse(SdkResponse):
     }
 
     def __init__(self, msg=None, rows=None, success=None, total=None):
-        """ListSupplementdataResponse
+        r"""ListSupplementdataResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ListSupplementdataResponse.
+        r"""Gets the msg of this ListSupplementdataResponse.
 
         :return: The msg of this ListSupplementdataResponse.
         :rtype: str
@@ -74,7 +74,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ListSupplementdataResponse.
+        r"""Sets the msg of this ListSupplementdataResponse.
 
         :param msg: The msg of this ListSupplementdataResponse.
         :type msg: str
@@ -83,7 +83,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this ListSupplementdataResponse.
+        r"""Gets the rows of this ListSupplementdataResponse.
 
         包含若干补数据实例信息
 
@@ -94,7 +94,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this ListSupplementdataResponse.
+        r"""Sets the rows of this ListSupplementdataResponse.
 
         包含若干补数据实例信息
 
@@ -105,7 +105,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ListSupplementdataResponse.
+        r"""Gets the success of this ListSupplementdataResponse.
 
         查询是否成功，取值为true或者false
 
@@ -116,7 +116,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ListSupplementdataResponse.
+        r"""Sets the success of this ListSupplementdataResponse.
 
         查询是否成功，取值为true或者false
 
@@ -127,7 +127,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSupplementdataResponse.
+        r"""Gets the total of this ListSupplementdataResponse.
 
         补数据实例数量
 
@@ -138,7 +138,7 @@ class ListSupplementdataResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSupplementdataResponse.
+        r"""Sets the total of this ListSupplementdataResponse.
 
         补数据实例数量
 

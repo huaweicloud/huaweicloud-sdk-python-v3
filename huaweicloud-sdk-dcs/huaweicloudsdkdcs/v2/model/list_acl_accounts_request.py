@@ -25,7 +25,7 @@ class ListAclAccountsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListAclAccountsRequest
+        r"""ListAclAccountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAclAccountsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAclAccountsRequest.
+        r"""Gets the instance_id of this ListAclAccountsRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ListAclAccountsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAclAccountsRequest.
+        r"""Sets the instance_id of this ListAclAccountsRequest.
 
         实例ID。
 

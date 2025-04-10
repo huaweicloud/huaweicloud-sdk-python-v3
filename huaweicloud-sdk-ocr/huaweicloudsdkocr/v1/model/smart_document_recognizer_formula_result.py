@@ -27,7 +27,7 @@ class SmartDocumentRecognizerFormulaResult:
     }
 
     def __init__(self, formula_count=None, formula_list=None):
-        """SmartDocumentRecognizerFormulaResult
+        r"""SmartDocumentRecognizerFormulaResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SmartDocumentRecognizerFormulaResult:
 
     @property
     def formula_count(self):
-        """Gets the formula_count of this SmartDocumentRecognizerFormulaResult.
+        r"""Gets the formula_count of this SmartDocumentRecognizerFormulaResult.
 
         数学公式数量。 
 
@@ -61,7 +61,7 @@ class SmartDocumentRecognizerFormulaResult:
 
     @formula_count.setter
     def formula_count(self, formula_count):
-        """Sets the formula_count of this SmartDocumentRecognizerFormulaResult.
+        r"""Sets the formula_count of this SmartDocumentRecognizerFormulaResult.
 
         数学公式数量。 
 
@@ -72,7 +72,7 @@ class SmartDocumentRecognizerFormulaResult:
 
     @property
     def formula_list(self):
-        """Gets the formula_list of this SmartDocumentRecognizerFormulaResult.
+        r"""Gets the formula_list of this SmartDocumentRecognizerFormulaResult.
 
         数学公式识别结果列表。 
 
@@ -83,7 +83,7 @@ class SmartDocumentRecognizerFormulaResult:
 
     @formula_list.setter
     def formula_list(self, formula_list):
-        """Sets the formula_list of this SmartDocumentRecognizerFormulaResult.
+        r"""Sets the formula_list of this SmartDocumentRecognizerFormulaResult.
 
         数学公式识别结果列表。 
 

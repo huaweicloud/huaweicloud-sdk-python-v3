@@ -26,7 +26,7 @@ class DeleteSecretForScheduleResponse(SdkResponse):
     }
 
     def __init__(self, secret=None):
-        """DeleteSecretForScheduleResponse
+        r"""DeleteSecretForScheduleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteSecretForScheduleResponse(SdkResponse):
 
     @property
     def secret(self):
-        """Gets the secret of this DeleteSecretForScheduleResponse.
+        r"""Gets the secret of this DeleteSecretForScheduleResponse.
 
         :return: The secret of this DeleteSecretForScheduleResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
@@ -53,7 +53,7 @@ class DeleteSecretForScheduleResponse(SdkResponse):
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this DeleteSecretForScheduleResponse.
+        r"""Sets the secret of this DeleteSecretForScheduleResponse.
 
         :param secret: The secret of this DeleteSecretForScheduleResponse.
         :type secret: :class:`huaweicloudsdkcsms.v1.Secret`

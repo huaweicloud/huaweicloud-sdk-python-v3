@@ -35,7 +35,7 @@ class NetworkIpAvailability:
     }
 
     def __init__(self, network_id=None, network_name=None, tenant_id=None, total_ips=None, used_ips=None, subnet_ip_availability=None):
-        """NetworkIpAvailability
+        r"""NetworkIpAvailability
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class NetworkIpAvailability:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NetworkIpAvailability.
+        r"""Gets the network_id of this NetworkIpAvailability.
 
         网络ID
 
@@ -83,7 +83,7 @@ class NetworkIpAvailability:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NetworkIpAvailability.
+        r"""Sets the network_id of this NetworkIpAvailability.
 
         网络ID
 
@@ -94,7 +94,7 @@ class NetworkIpAvailability:
 
     @property
     def network_name(self):
-        """Gets the network_name of this NetworkIpAvailability.
+        r"""Gets the network_name of this NetworkIpAvailability.
 
         网络名称
 
@@ -105,7 +105,7 @@ class NetworkIpAvailability:
 
     @network_name.setter
     def network_name(self, network_name):
-        """Sets the network_name of this NetworkIpAvailability.
+        r"""Sets the network_name of this NetworkIpAvailability.
 
         网络名称
 
@@ -116,7 +116,7 @@ class NetworkIpAvailability:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NetworkIpAvailability.
+        r"""Gets the tenant_id of this NetworkIpAvailability.
 
         项目ID
 
@@ -127,7 +127,7 @@ class NetworkIpAvailability:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NetworkIpAvailability.
+        r"""Sets the tenant_id of this NetworkIpAvailability.
 
         项目ID
 
@@ -138,7 +138,7 @@ class NetworkIpAvailability:
 
     @property
     def total_ips(self):
-        """Gets the total_ips of this NetworkIpAvailability.
+        r"""Gets the total_ips of this NetworkIpAvailability.
 
         网络中IP总数（不包含系统预留地址）
 
@@ -149,7 +149,7 @@ class NetworkIpAvailability:
 
     @total_ips.setter
     def total_ips(self, total_ips):
-        """Sets the total_ips of this NetworkIpAvailability.
+        r"""Sets the total_ips of this NetworkIpAvailability.
 
         网络中IP总数（不包含系统预留地址）
 
@@ -160,7 +160,7 @@ class NetworkIpAvailability:
 
     @property
     def used_ips(self):
-        """Gets the used_ips of this NetworkIpAvailability.
+        r"""Gets the used_ips of this NetworkIpAvailability.
 
         网络中已经使用的IP数目（不包含系统预留地址）
 
@@ -171,7 +171,7 @@ class NetworkIpAvailability:
 
     @used_ips.setter
     def used_ips(self, used_ips):
-        """Sets the used_ips of this NetworkIpAvailability.
+        r"""Sets the used_ips of this NetworkIpAvailability.
 
         网络中已经使用的IP数目（不包含系统预留地址）
 
@@ -182,7 +182,7 @@ class NetworkIpAvailability:
 
     @property
     def subnet_ip_availability(self):
-        """Gets the subnet_ip_availability of this NetworkIpAvailability.
+        r"""Gets the subnet_ip_availability of this NetworkIpAvailability.
 
         子网IP使用情况的对象
 
@@ -193,7 +193,7 @@ class NetworkIpAvailability:
 
     @subnet_ip_availability.setter
     def subnet_ip_availability(self, subnet_ip_availability):
-        """Sets the subnet_ip_availability of this NetworkIpAvailability.
+        r"""Sets the subnet_ip_availability of this NetworkIpAvailability.
 
         子网IP使用情况的对象
 

@@ -35,7 +35,7 @@ class ListWafQpsRequest:
     }
 
     def __init__(self, domains=None, value_type=None, start_time=None, end_time=None, recent=None, overseas_type=None):
-        """ListWafQpsRequest
+        r"""ListWafQpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListWafQpsRequest:
 
     @property
     def domains(self):
-        """Gets the domains of this ListWafQpsRequest.
+        r"""Gets the domains of this ListWafQpsRequest.
 
         不传时代表全部域名
 
@@ -88,7 +88,7 @@ class ListWafQpsRequest:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListWafQpsRequest.
+        r"""Sets the domains of this ListWafQpsRequest.
 
         不传时代表全部域名
 
@@ -99,7 +99,7 @@ class ListWafQpsRequest:
 
     @property
     def value_type(self):
-        """Gets the value_type of this ListWafQpsRequest.
+        r"""Gets the value_type of this ListWafQpsRequest.
 
         用于 QPS、带宽: 平均值 mean、峰值 peak;用于 响应状态码: 源站返回值 source 、高防返回值 proxy
 
@@ -110,7 +110,7 @@ class ListWafQpsRequest:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this ListWafQpsRequest.
+        r"""Sets the value_type of this ListWafQpsRequest.
 
         用于 QPS、带宽: 平均值 mean、峰值 peak;用于 响应状态码: 源站返回值 source 、高防返回值 proxy
 
@@ -121,7 +121,7 @@ class ListWafQpsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListWafQpsRequest.
+        r"""Gets the start_time of this ListWafQpsRequest.
 
         开始时间（毫秒时间戳）
 
@@ -132,7 +132,7 @@ class ListWafQpsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListWafQpsRequest.
+        r"""Sets the start_time of this ListWafQpsRequest.
 
         开始时间（毫秒时间戳）
 
@@ -143,7 +143,7 @@ class ListWafQpsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListWafQpsRequest.
+        r"""Gets the end_time of this ListWafQpsRequest.
 
         结束时间（毫秒时间戳）
 
@@ -154,7 +154,7 @@ class ListWafQpsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListWafQpsRequest.
+        r"""Sets the end_time of this ListWafQpsRequest.
 
         结束时间（毫秒时间戳）
 
@@ -165,7 +165,7 @@ class ListWafQpsRequest:
 
     @property
     def recent(self):
-        """Gets the recent of this ListWafQpsRequest.
+        r"""Gets the recent of this ListWafQpsRequest.
 
         枚举值：yesterday,today,3days,1week,1month 与开始结束时间不同时为空
 
@@ -176,7 +176,7 @@ class ListWafQpsRequest:
 
     @recent.setter
     def recent(self, recent):
-        """Sets the recent of this ListWafQpsRequest.
+        r"""Sets the recent of this ListWafQpsRequest.
 
         枚举值：yesterday,today,3days,1week,1month 与开始结束时间不同时为空
 
@@ -187,7 +187,7 @@ class ListWafQpsRequest:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this ListWafQpsRequest.
+        r"""Gets the overseas_type of this ListWafQpsRequest.
 
         实例类型，0-大陆，1-海外
 
@@ -198,7 +198,7 @@ class ListWafQpsRequest:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this ListWafQpsRequest.
+        r"""Sets the overseas_type of this ListWafQpsRequest.
 
         实例类型，0-大陆，1-海外
 

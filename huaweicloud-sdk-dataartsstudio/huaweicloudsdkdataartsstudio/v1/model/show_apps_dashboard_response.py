@@ -26,7 +26,7 @@ class ShowAppsDashboardResponse(SdkResponse):
     }
 
     def __init__(self, dashboards=None):
-        """ShowAppsDashboardResponse
+        r"""ShowAppsDashboardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAppsDashboardResponse(SdkResponse):
 
     @property
     def dashboards(self):
-        """Gets the dashboards of this ShowAppsDashboardResponse.
+        r"""Gets the dashboards of this ShowAppsDashboardResponse.
 
         统计信息仪表板
 
@@ -55,7 +55,7 @@ class ShowAppsDashboardResponse(SdkResponse):
 
     @dashboards.setter
     def dashboards(self, dashboards):
-        """Sets the dashboards of this ShowAppsDashboardResponse.
+        r"""Sets the dashboards of this ShowAppsDashboardResponse.
 
         统计信息仪表板
 

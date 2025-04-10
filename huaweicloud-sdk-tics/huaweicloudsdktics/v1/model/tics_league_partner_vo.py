@@ -31,7 +31,7 @@ class TicsLeaguePartnerVo:
     }
 
     def __init__(self, id=None, partner_domain_alias=None, partner_domain_name=None, partner_status=None):
-        """TicsLeaguePartnerVo
+        r"""TicsLeaguePartnerVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TicsLeaguePartnerVo:
 
     @property
     def id(self):
-        """Gets the id of this TicsLeaguePartnerVo.
+        r"""Gets the id of this TicsLeaguePartnerVo.
 
         联盟合作方Id
 
@@ -75,7 +75,7 @@ class TicsLeaguePartnerVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicsLeaguePartnerVo.
+        r"""Sets the id of this TicsLeaguePartnerVo.
 
         联盟合作方Id
 
@@ -86,7 +86,7 @@ class TicsLeaguePartnerVo:
 
     @property
     def partner_domain_alias(self):
-        """Gets the partner_domain_alias of this TicsLeaguePartnerVo.
+        r"""Gets the partner_domain_alias of this TicsLeaguePartnerVo.
 
         联盟合作方别名
 
@@ -97,7 +97,7 @@ class TicsLeaguePartnerVo:
 
     @partner_domain_alias.setter
     def partner_domain_alias(self, partner_domain_alias):
-        """Sets the partner_domain_alias of this TicsLeaguePartnerVo.
+        r"""Sets the partner_domain_alias of this TicsLeaguePartnerVo.
 
         联盟合作方别名
 
@@ -108,7 +108,7 @@ class TicsLeaguePartnerVo:
 
     @property
     def partner_domain_name(self):
-        """Gets the partner_domain_name of this TicsLeaguePartnerVo.
+        r"""Gets the partner_domain_name of this TicsLeaguePartnerVo.
 
         联盟合作方租户名
 
@@ -119,7 +119,7 @@ class TicsLeaguePartnerVo:
 
     @partner_domain_name.setter
     def partner_domain_name(self, partner_domain_name):
-        """Sets the partner_domain_name of this TicsLeaguePartnerVo.
+        r"""Sets the partner_domain_name of this TicsLeaguePartnerVo.
 
         联盟合作方租户名
 
@@ -130,7 +130,7 @@ class TicsLeaguePartnerVo:
 
     @property
     def partner_status(self):
-        """Gets the partner_status of this TicsLeaguePartnerVo.
+        r"""Gets the partner_status of this TicsLeaguePartnerVo.
 
         联盟合作方状态
 
@@ -141,7 +141,7 @@ class TicsLeaguePartnerVo:
 
     @partner_status.setter
     def partner_status(self, partner_status):
-        """Sets the partner_status of this TicsLeaguePartnerVo.
+        r"""Sets the partner_status of this TicsLeaguePartnerVo.
 
         联盟合作方状态
 

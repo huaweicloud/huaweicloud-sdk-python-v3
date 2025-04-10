@@ -41,7 +41,7 @@ class ListModelsRequest:
     }
 
     def __init__(self, workspace_id=None, offset=None, limit=None, name=None, id=None, type=None, visibility=None, sort_by=None, order_by=None):
-        """ListModelsRequest
+        r"""ListModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListModelsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListModelsRequest.
+        r"""Gets the workspace_id of this ListModelsRequest.
 
         工作空间ID
 
@@ -109,7 +109,7 @@ class ListModelsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListModelsRequest.
+        r"""Sets the workspace_id of this ListModelsRequest.
 
         工作空间ID
 
@@ -120,7 +120,7 @@ class ListModelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListModelsRequest.
+        r"""Gets the offset of this ListModelsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -131,7 +131,7 @@ class ListModelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListModelsRequest.
+        r"""Sets the offset of this ListModelsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -142,7 +142,7 @@ class ListModelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListModelsRequest.
+        r"""Gets the limit of this ListModelsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -153,7 +153,7 @@ class ListModelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListModelsRequest.
+        r"""Sets the limit of this ListModelsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -164,7 +164,7 @@ class ListModelsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListModelsRequest.
+        r"""Gets the name of this ListModelsRequest.
 
         通过名字搜索Model，支持模糊查询
 
@@ -175,7 +175,7 @@ class ListModelsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListModelsRequest.
+        r"""Sets the name of this ListModelsRequest.
 
         通过名字搜索Model，支持模糊查询
 
@@ -186,7 +186,7 @@ class ListModelsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListModelsRequest.
+        r"""Gets the id of this ListModelsRequest.
 
         通过模型ID检索，32~36位的英文、数字、短横组合
 
@@ -197,7 +197,7 @@ class ListModelsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListModelsRequest.
+        r"""Sets the id of this ListModelsRequest.
 
         通过模型ID检索，32~36位的英文、数字、短横组合
 
@@ -208,7 +208,7 @@ class ListModelsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListModelsRequest.
+        r"""Gets the type of this ListModelsRequest.
 
         通过模型类型检索
 
@@ -219,7 +219,7 @@ class ListModelsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListModelsRequest.
+        r"""Sets the type of this ListModelsRequest.
 
         通过模型类型检索
 
@@ -230,7 +230,7 @@ class ListModelsRequest:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ListModelsRequest.
+        r"""Gets the visibility of this ListModelsRequest.
 
         可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - ALL: 所有的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
 
@@ -241,7 +241,7 @@ class ListModelsRequest:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ListModelsRequest.
+        r"""Sets the visibility of this ListModelsRequest.
 
         可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - ALL: 所有的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
 
@@ -252,7 +252,7 @@ class ListModelsRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListModelsRequest.
+        r"""Gets the sort_by of this ListModelsRequest.
 
         指定排序字段，可选值为： CREATE_TIME：创建时间，默认值 UPDATE_TIME：更新时间 NAME: 服务名称
 
@@ -263,7 +263,7 @@ class ListModelsRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListModelsRequest.
+        r"""Sets the sort_by of this ListModelsRequest.
 
         指定排序字段，可选值为： CREATE_TIME：创建时间，默认值 UPDATE_TIME：更新时间 NAME: 服务名称
 
@@ -274,7 +274,7 @@ class ListModelsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListModelsRequest.
+        r"""Gets the order_by of this ListModelsRequest.
 
         排序方式，可选值如下： ASC : 递增排序 DESC: 递减排序，默认值
 
@@ -285,7 +285,7 @@ class ListModelsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListModelsRequest.
+        r"""Sets the order_by of this ListModelsRequest.
 
         排序方式，可选值如下： ASC : 递增排序 DESC: 递减排序，默认值
 

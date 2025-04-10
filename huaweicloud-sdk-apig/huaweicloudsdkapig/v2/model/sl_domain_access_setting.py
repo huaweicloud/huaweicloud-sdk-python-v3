@@ -25,7 +25,7 @@ class SlDomainAccessSetting:
     }
 
     def __init__(self, sl_domain_access_enabled=None):
-        """SlDomainAccessSetting
+        r"""SlDomainAccessSetting
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SlDomainAccessSetting:
 
     @property
     def sl_domain_access_enabled(self):
-        """Gets the sl_domain_access_enabled of this SlDomainAccessSetting.
+        r"""Gets the sl_domain_access_enabled of this SlDomainAccessSetting.
 
         设置调试域名是否可以访问，true为可以访问，false为禁止访问
 
@@ -53,7 +53,7 @@ class SlDomainAccessSetting:
 
     @sl_domain_access_enabled.setter
     def sl_domain_access_enabled(self, sl_domain_access_enabled):
-        """Sets the sl_domain_access_enabled of this SlDomainAccessSetting.
+        r"""Sets the sl_domain_access_enabled of this SlDomainAccessSetting.
 
         设置调试域名是否可以访问，true为可以访问，false为禁止访问
 

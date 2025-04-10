@@ -35,7 +35,7 @@ class SmartDocumentRecognizerResult:
     }
 
     def __init__(self, ocr_result=None, kv_result=None, table_result=None, layout_result=None, form_result=None, formula_result=None):
-        """SmartDocumentRecognizerResult
+        r"""SmartDocumentRecognizerResult
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SmartDocumentRecognizerResult:
 
     @property
     def ocr_result(self):
-        """Gets the ocr_result of this SmartDocumentRecognizerResult.
+        r"""Gets the ocr_result of this SmartDocumentRecognizerResult.
 
         :return: The ocr_result of this SmartDocumentRecognizerResult.
         :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerOcrResult`
@@ -86,7 +86,7 @@ class SmartDocumentRecognizerResult:
 
     @ocr_result.setter
     def ocr_result(self, ocr_result):
-        """Sets the ocr_result of this SmartDocumentRecognizerResult.
+        r"""Sets the ocr_result of this SmartDocumentRecognizerResult.
 
         :param ocr_result: The ocr_result of this SmartDocumentRecognizerResult.
         :type ocr_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerOcrResult`
@@ -95,7 +95,7 @@ class SmartDocumentRecognizerResult:
 
     @property
     def kv_result(self):
-        """Gets the kv_result of this SmartDocumentRecognizerResult.
+        r"""Gets the kv_result of this SmartDocumentRecognizerResult.
 
         :return: The kv_result of this SmartDocumentRecognizerResult.
         :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerKvResult`
@@ -104,7 +104,7 @@ class SmartDocumentRecognizerResult:
 
     @kv_result.setter
     def kv_result(self, kv_result):
-        """Sets the kv_result of this SmartDocumentRecognizerResult.
+        r"""Sets the kv_result of this SmartDocumentRecognizerResult.
 
         :param kv_result: The kv_result of this SmartDocumentRecognizerResult.
         :type kv_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerKvResult`
@@ -113,7 +113,7 @@ class SmartDocumentRecognizerResult:
 
     @property
     def table_result(self):
-        """Gets the table_result of this SmartDocumentRecognizerResult.
+        r"""Gets the table_result of this SmartDocumentRecognizerResult.
 
         :return: The table_result of this SmartDocumentRecognizerResult.
         :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerTableResult`
@@ -122,7 +122,7 @@ class SmartDocumentRecognizerResult:
 
     @table_result.setter
     def table_result(self, table_result):
-        """Sets the table_result of this SmartDocumentRecognizerResult.
+        r"""Sets the table_result of this SmartDocumentRecognizerResult.
 
         :param table_result: The table_result of this SmartDocumentRecognizerResult.
         :type table_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerTableResult`
@@ -131,7 +131,7 @@ class SmartDocumentRecognizerResult:
 
     @property
     def layout_result(self):
-        """Gets the layout_result of this SmartDocumentRecognizerResult.
+        r"""Gets the layout_result of this SmartDocumentRecognizerResult.
 
         :return: The layout_result of this SmartDocumentRecognizerResult.
         :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerLayoutResult`
@@ -140,7 +140,7 @@ class SmartDocumentRecognizerResult:
 
     @layout_result.setter
     def layout_result(self, layout_result):
-        """Sets the layout_result of this SmartDocumentRecognizerResult.
+        r"""Sets the layout_result of this SmartDocumentRecognizerResult.
 
         :param layout_result: The layout_result of this SmartDocumentRecognizerResult.
         :type layout_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerLayoutResult`
@@ -149,7 +149,7 @@ class SmartDocumentRecognizerResult:
 
     @property
     def form_result(self):
-        """Gets the form_result of this SmartDocumentRecognizerResult.
+        r"""Gets the form_result of this SmartDocumentRecognizerResult.
 
         :return: The form_result of this SmartDocumentRecognizerResult.
         :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormResult`
@@ -158,7 +158,7 @@ class SmartDocumentRecognizerResult:
 
     @form_result.setter
     def form_result(self, form_result):
-        """Sets the form_result of this SmartDocumentRecognizerResult.
+        r"""Sets the form_result of this SmartDocumentRecognizerResult.
 
         :param form_result: The form_result of this SmartDocumentRecognizerResult.
         :type form_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormResult`
@@ -167,7 +167,7 @@ class SmartDocumentRecognizerResult:
 
     @property
     def formula_result(self):
-        """Gets the formula_result of this SmartDocumentRecognizerResult.
+        r"""Gets the formula_result of this SmartDocumentRecognizerResult.
 
         :return: The formula_result of this SmartDocumentRecognizerResult.
         :rtype: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormulaResult`
@@ -176,7 +176,7 @@ class SmartDocumentRecognizerResult:
 
     @formula_result.setter
     def formula_result(self, formula_result):
-        """Sets the formula_result of this SmartDocumentRecognizerResult.
+        r"""Sets the formula_result of this SmartDocumentRecognizerResult.
 
         :param formula_result: The formula_result of this SmartDocumentRecognizerResult.
         :type formula_result: :class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerFormulaResult`

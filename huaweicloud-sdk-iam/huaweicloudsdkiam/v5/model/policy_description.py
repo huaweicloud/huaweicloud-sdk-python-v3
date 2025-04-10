@@ -23,7 +23,7 @@ class PolicyDescription:
     }
 
     def __init__(self):
-        """PolicyDescription
+        r"""PolicyDescription
 
         The model defined in huaweicloud sdk
 

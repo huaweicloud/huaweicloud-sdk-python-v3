@@ -30,7 +30,7 @@ class CreateTimerRuleResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """CreateTimerRuleResponse
+        r"""CreateTimerRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateTimerRuleResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateTimerRuleResponse.
+        r"""Gets the api_version of this CreateTimerRuleResponse.
 
         :return: The api_version of this CreateTimerRuleResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class CreateTimerRuleResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateTimerRuleResponse.
+        r"""Sets the api_version of this CreateTimerRuleResponse.
 
         :param api_version: The api_version of this CreateTimerRuleResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class CreateTimerRuleResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateTimerRuleResponse.
+        r"""Gets the kind of this CreateTimerRuleResponse.
 
         :return: The kind of this CreateTimerRuleResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
@@ -85,7 +85,7 @@ class CreateTimerRuleResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateTimerRuleResponse.
+        r"""Sets the kind of this CreateTimerRuleResponse.
 
         :param kind: The kind of this CreateTimerRuleResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
@@ -94,7 +94,7 @@ class CreateTimerRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this CreateTimerRuleResponse.
+        r"""Gets the items of this CreateTimerRuleResponse.
 
         :return: The items of this CreateTimerRuleResponse.
         :rtype: list[:class:`huaweicloudsdkcae.v1.TimerRuleDetails`]
@@ -103,7 +103,7 @@ class CreateTimerRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this CreateTimerRuleResponse.
+        r"""Sets the items of this CreateTimerRuleResponse.
 
         :param items: The items of this CreateTimerRuleResponse.
         :type items: list[:class:`huaweicloudsdkcae.v1.TimerRuleDetails`]

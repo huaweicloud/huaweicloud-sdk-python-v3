@@ -25,7 +25,7 @@ class ProviderAgencyNamePrimitiveTypeHolder:
     }
 
     def __init__(self, provider_agency_name=None):
-        """ProviderAgencyNamePrimitiveTypeHolder
+        r"""ProviderAgencyNamePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProviderAgencyNamePrimitiveTypeHolder:
 
     @property
     def provider_agency_name(self):
-        """Gets the provider_agency_name of this ProviderAgencyNamePrimitiveTypeHolder.
+        r"""Gets the provider_agency_name of this ProviderAgencyNamePrimitiveTypeHolder.
 
         自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
 
@@ -54,7 +54,7 @@ class ProviderAgencyNamePrimitiveTypeHolder:
 
     @provider_agency_name.setter
     def provider_agency_name(self, provider_agency_name):
-        """Sets the provider_agency_name of this ProviderAgencyNamePrimitiveTypeHolder.
+        r"""Sets the provider_agency_name of this ProviderAgencyNamePrimitiveTypeHolder.
 
         自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
 

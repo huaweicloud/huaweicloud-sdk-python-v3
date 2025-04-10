@@ -25,7 +25,7 @@ class UpdateInstanceConfigurationsRequestBody:
     }
 
     def __init__(self, parameter_values=None):
-        """UpdateInstanceConfigurationsRequestBody
+        r"""UpdateInstanceConfigurationsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceConfigurationsRequestBody:
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this UpdateInstanceConfigurationsRequestBody.
+        r"""Gets the parameter_values of this UpdateInstanceConfigurationsRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。不传入该参数，则保持原参数信息。
 
@@ -53,7 +53,7 @@ class UpdateInstanceConfigurationsRequestBody:
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this UpdateInstanceConfigurationsRequestBody.
+        r"""Sets the parameter_values of this UpdateInstanceConfigurationsRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。不传入该参数，则保持原参数信息。
 

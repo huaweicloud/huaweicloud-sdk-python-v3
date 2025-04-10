@@ -25,7 +25,7 @@ class StopTaskGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """StopTaskGroupRequest
+        r"""StopTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopTaskGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this StopTaskGroupRequest.
+        r"""Gets the group_id of this StopTaskGroupRequest.
 
         任务组id
 
@@ -53,7 +53,7 @@ class StopTaskGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this StopTaskGroupRequest.
+        r"""Sets the group_id of this StopTaskGroupRequest.
 
         任务组id
 

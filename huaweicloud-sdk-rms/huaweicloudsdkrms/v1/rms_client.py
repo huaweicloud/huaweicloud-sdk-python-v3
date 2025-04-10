@@ -34,7 +34,7 @@ class RmsClient(Client):
         return client_builder
 
     def create_aggregation_authorization(self, request):
-        """创建资源聚合器授权
+        r"""创建资源聚合器授权
 
         给资源聚合器帐号授予从源帐号收集数据的权限。
         
@@ -99,7 +99,7 @@ class RmsClient(Client):
         return http_info
 
     def create_configuration_aggregator(self, request):
-        """创建资源聚合器
+        r"""创建资源聚合器
 
         创建资源聚合器。
         
@@ -164,7 +164,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_aggregation_authorization(self, request):
-        """删除资源聚合器授权
+        r"""删除资源聚合器授权
 
         删除指定资源聚合器帐号的授权。
         
@@ -229,7 +229,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_configuration_aggregator(self, request):
-        """删除资源聚合器
+        r"""删除资源聚合器
 
         删除资源聚合器。
         
@@ -294,7 +294,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_pending_aggregation_request(self, request):
-        """删除聚合器帐号中挂起的授权请求
+        r"""删除聚合器帐号中挂起的授权请求
 
         删除聚合器帐号中挂起的授权请求。
         
@@ -359,7 +359,7 @@ class RmsClient(Client):
         return http_info
 
     def list_aggregate_compliance_by_policy_assignment(self, request):
-        """查询聚合合规规则列表
+        r"""查询聚合合规规则列表
 
         查询合规和不合规规则的列表，其中包含合规和不合规规则的资源数量。
         
@@ -428,7 +428,7 @@ class RmsClient(Client):
         return http_info
 
     def list_aggregate_discovered_resources(self, request):
-        """查询聚合器中资源的列表
+        r"""查询聚合器中资源的列表
 
         查询资源聚合器中特定资源的列表。
         
@@ -497,7 +497,7 @@ class RmsClient(Client):
         return http_info
 
     def list_aggregation_authorizations(self, request):
-        """查询资源聚合器授权列表
+        r"""查询资源聚合器授权列表
 
         查询授权过的资源聚合器列表。
         
@@ -566,7 +566,7 @@ class RmsClient(Client):
         return http_info
 
     def list_configuration_aggregators(self, request):
-        """查询资源聚合器列表
+        r"""查询资源聚合器列表
 
         查询资源聚合器列表。
         
@@ -635,7 +635,7 @@ class RmsClient(Client):
         return http_info
 
     def list_pending_aggregation_requests(self, request):
-        """查询所有挂起的聚合请求列表
+        r"""查询所有挂起的聚合请求列表
 
         查询所有挂起的聚合请求列表。
         
@@ -704,7 +704,7 @@ class RmsClient(Client):
         return http_info
 
     def run_aggregate_resource_query(self, request):
-        """对指定聚合器执行高级查询
+        r"""对指定聚合器执行高级查询
 
         对指定聚合器执行高级查询。
         
@@ -771,7 +771,7 @@ class RmsClient(Client):
         return http_info
 
     def show_aggregate_compliance_details_by_policy_assignment(self, request):
-        """查询指定聚合合规规则的评估结果详情
+        r"""查询指定聚合合规规则的评估结果详情
 
         返回指定聚合合规规则的评估结果详情。包含评估了哪些资源，以及每个资源是否符合规则。
         
@@ -840,7 +840,7 @@ class RmsClient(Client):
         return http_info
 
     def show_aggregate_discovered_resource_counts(self, request):
-        """查询聚合器中帐号资源的计数
+        r"""查询聚合器中帐号资源的计数
 
         查询聚合器中帐号资源的计数，支持通过过滤器和GroupByKey来统计资源数量。
         
@@ -905,7 +905,7 @@ class RmsClient(Client):
         return http_info
 
     def show_aggregate_policy_assignment_detail(self, request):
-        """查询指定聚合合规规则详情
+        r"""查询指定聚合合规规则详情
 
         返回指定聚合合规规则详情。
         
@@ -970,7 +970,7 @@ class RmsClient(Client):
         return http_info
 
     def show_aggregate_policy_state_compliance_summary(self, request):
-        """查询聚合器中一个或多个帐户的合规概况
+        r"""查询聚合器中一个或多个帐户的合规概况
 
         查询聚合器中一个或多个帐户的合规和不合规规则数。
         
@@ -1035,7 +1035,7 @@ class RmsClient(Client):
         return http_info
 
     def show_aggregate_resource_config(self, request):
-        """查询源帐号中资源的详情
+        r"""查询源帐号中资源的详情
 
         查询源帐号中特定资源的详情。
         
@@ -1100,7 +1100,7 @@ class RmsClient(Client):
         return http_info
 
     def show_configuration_aggregator(self, request):
-        """查询指定资源聚合器
+        r"""查询指定资源聚合器
 
         查询指定资源聚合器。
         
@@ -1165,7 +1165,7 @@ class RmsClient(Client):
         return http_info
 
     def show_configuration_aggregator_sources_status(self, request):
-        """查询指定资源聚合器聚合帐号的状态信息
+        r"""查询指定资源聚合器聚合帐号的状态信息
 
         查询指定资源聚合器聚合帐号的状态信息，状态包括验证源帐号和聚合器帐号之间授权的信息。如果失败，状态包含相关的错误码或消息。
         
@@ -1236,7 +1236,7 @@ class RmsClient(Client):
         return http_info
 
     def update_configuration_aggregator(self, request):
-        """更新资源聚合器
+        r"""更新资源聚合器
 
         更新资源聚合器。
         
@@ -1303,7 +1303,7 @@ class RmsClient(Client):
         return http_info
 
     def show_resource_history(self, request):
-        """查询资源历史
+        r"""查询资源历史
 
         查询资源与资源关系的变更历史
         
@@ -1378,7 +1378,7 @@ class RmsClient(Client):
         return http_info
 
     def create_organization_policy_assignment(self, request):
-        """创建或更新组织合规规则
+        r"""创建或更新组织合规规则
 
         创建或更新组织合规规则，如果规则名称已存在，则为更新操作。
         
@@ -1445,7 +1445,7 @@ class RmsClient(Client):
         return http_info
 
     def create_policy_assignments(self, request):
-        """创建合规规则
+        r"""创建合规规则
 
         创建新的合规规则
         
@@ -1510,7 +1510,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_organization_policy_assignment(self, request):
-        """删除组织合规规则
+        r"""删除组织合规规则
 
         删除组织合规规则。
         
@@ -1577,7 +1577,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_policy_assignment(self, request):
-        """删除合规规则
+        r"""删除合规规则
 
         根据规则ID删除此规则
         
@@ -1642,7 +1642,7 @@ class RmsClient(Client):
         return http_info
 
     def disable_policy_assignment(self, request):
-        """停用合规规则
+        r"""停用合规规则
 
         根据规则ID停用此规则
         
@@ -1707,7 +1707,7 @@ class RmsClient(Client):
         return http_info
 
     def enable_policy_assignment(self, request):
-        """启用合规规则
+        r"""启用合规规则
 
         根据规则ID启用此规则
         
@@ -1772,7 +1772,7 @@ class RmsClient(Client):
         return http_info
 
     def list_built_in_policy_definitions(self, request):
-        """列出内置策略
+        r"""列出内置策略
 
         列出用户的内置策略
         
@@ -1837,7 +1837,7 @@ class RmsClient(Client):
         return http_info
 
     def list_organization_policy_assignments(self, request):
-        """查询组织合规规则列表
+        r"""查询组织合规规则列表
 
         查询组织合规规则列表。
         
@@ -1908,7 +1908,7 @@ class RmsClient(Client):
         return http_info
 
     def list_policy_assignments(self, request):
-        """列出合规规则
+        r"""列出合规规则
 
         列出用户的合规规则
         
@@ -1971,7 +1971,7 @@ class RmsClient(Client):
         return http_info
 
     def list_policy_states_by_assignment_id(self, request):
-        """获取规则的合规结果
+        r"""获取规则的合规结果
 
         根据规则ID查询所有的合规结果
         
@@ -2046,7 +2046,7 @@ class RmsClient(Client):
         return http_info
 
     def list_policy_states_by_domain_id(self, request):
-        """获取用户的合规结果
+        r"""获取用户的合规结果
 
         查询用户所有的合规结果
         
@@ -2119,7 +2119,7 @@ class RmsClient(Client):
         return http_info
 
     def list_policy_states_by_resource_id(self, request):
-        """获取资源的合规结果
+        r"""获取资源的合规结果
 
         根据资源ID查询所有合规结果
         
@@ -2190,7 +2190,7 @@ class RmsClient(Client):
         return http_info
 
     def run_evaluation_by_policy_assignment_id(self, request):
-        """运行合规评估
+        r"""运行合规评估
 
         根据规则ID评估此规则
         
@@ -2255,7 +2255,7 @@ class RmsClient(Client):
         return http_info
 
     def show_built_in_policy_definition(self, request):
-        """查询单个内置策略
+        r"""查询单个内置策略
 
         根据策略ID查询单个内置策略
         
@@ -2322,7 +2322,7 @@ class RmsClient(Client):
         return http_info
 
     def show_evaluation_state_by_assignment_id(self, request):
-        """获取规则的评估状态
+        r"""获取规则的评估状态
 
         根据规则ID查询此规则的评估状态
         
@@ -2387,7 +2387,7 @@ class RmsClient(Client):
         return http_info
 
     def show_organization_policy_assignment(self, request):
-        """查询指定组织合规规则
+        r"""查询指定组织合规规则
 
         查询指定组织合规规则。
         
@@ -2454,7 +2454,7 @@ class RmsClient(Client):
         return http_info
 
     def show_organization_policy_assignment_detailed_status(self, request):
-        """查询组织内每个成员帐号合规规则部署的详细状态
+        r"""查询组织内每个成员帐号合规规则部署的详细状态
 
         查询组织内每个成员帐号合规规则部署的详细状态。
         
@@ -2527,7 +2527,7 @@ class RmsClient(Client):
         return http_info
 
     def show_organization_policy_assignment_statuses(self, request):
-        """查询组织合规规则部署状态
+        r"""查询组织合规规则部署状态
 
         查询组织合规规则部署状态。
         
@@ -2598,7 +2598,7 @@ class RmsClient(Client):
         return http_info
 
     def show_policy_assignment(self, request):
-        """获取单个合规规则
+        r"""获取单个合规规则
 
         根据规则ID获取单个规则
         
@@ -2663,7 +2663,7 @@ class RmsClient(Client):
         return http_info
 
     def update_policy_assignment(self, request):
-        """更新合规规则
+        r"""更新合规规则
 
         更新用户的合规规则
         
@@ -2730,7 +2730,7 @@ class RmsClient(Client):
         return http_info
 
     def update_policy_state(self, request):
-        """更新合规评估结果
+        r"""更新合规评估结果
 
         更新用户自定义合规规则的合规评估结果
         
@@ -2795,7 +2795,7 @@ class RmsClient(Client):
         return http_info
 
     def create_stored_query(self, request):
-        """创建高级查询
+        r"""创建高级查询
 
         创建新的高级查询
         
@@ -2860,7 +2860,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_stored_query(self, request):
-        """删除高级查询
+        r"""删除高级查询
 
         删除单个高级查询
         
@@ -2925,7 +2925,7 @@ class RmsClient(Client):
         return http_info
 
     def list_schemas(self, request):
-        """列举高级查询Schema
+        r"""列举高级查询Schema
 
         List Schemas
         
@@ -2992,7 +2992,7 @@ class RmsClient(Client):
         return http_info
 
     def list_stored_queries(self, request):
-        """列出高级查询
+        r"""列出高级查询
 
         列举所有高级查询
         
@@ -3061,7 +3061,7 @@ class RmsClient(Client):
         return http_info
 
     def run_query(self, request):
-        """运行高级查询
+        r"""运行高级查询
 
         执行高级查询
         
@@ -3126,7 +3126,7 @@ class RmsClient(Client):
         return http_info
 
     def show_stored_query(self, request):
-        """查询单个高级查询
+        r"""查询单个高级查询
 
         Show Resource Query Language
         
@@ -3191,7 +3191,7 @@ class RmsClient(Client):
         return http_info
 
     def update_stored_query(self, request):
-        """更新单个高级查询
+        r"""更新单个高级查询
 
         更新自定义查询
         
@@ -3258,7 +3258,7 @@ class RmsClient(Client):
         return http_info
 
     def list_regions(self, request):
-        """查询用户可见的区域
+        r"""查询用户可见的区域
 
         查询用户可见的区域
         
@@ -3323,7 +3323,7 @@ class RmsClient(Client):
         return http_info
 
     def show_resource_relations(self, request):
-        """列举资源关系
+        r"""列举资源关系
 
         指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为\&quot;in\&quot; 或者\&quot;out\&quot;
         
@@ -3394,7 +3394,7 @@ class RmsClient(Client):
         return http_info
 
     def show_resource_relations_detail(self, request):
-        """列举资源关系详情
+        r"""列举资源关系详情
 
         指定资源ID，查询该资源与其他资源的关联关系，可以指定关系方向为“in”或者“out”，需要当帐号有rms:resources:getRelation权限。
         
@@ -3465,7 +3465,7 @@ class RmsClient(Client):
         return http_info
 
     def collect_all_resources_summary(self, request):
-        """列举资源概要
+        r"""列举资源概要
 
         查询当前帐号的资源概览。
         
@@ -3545,7 +3545,7 @@ class RmsClient(Client):
         return http_info
 
     def count_all_resources(self, request):
-        """查询资源数量
+        r"""查询资源数量
 
         查询当前帐号的资源数量。
         
@@ -3627,7 +3627,7 @@ class RmsClient(Client):
         return http_info
 
     def list_all_resources(self, request):
-        """列举所有资源
+        r"""列举所有资源
 
         返回当前用户下所有资源，需要当前用户有rms:resources:list权限。
         
@@ -3707,7 +3707,7 @@ class RmsClient(Client):
         return http_info
 
     def list_all_tags(self, request):
-        """列举资源标签
+        r"""列举资源标签
 
         查询当前帐号下所有资源的标签。
         
@@ -3776,7 +3776,7 @@ class RmsClient(Client):
         return http_info
 
     def list_providers(self, request):
-        """列举云服务
+        r"""列举云服务
 
         查询RMS支持的云服务、资源、区域列表
         
@@ -3847,7 +3847,7 @@ class RmsClient(Client):
         return http_info
 
     def list_resources(self, request):
-        """列举指定类型的资源
+        r"""列举指定类型的资源
 
         返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。 RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
         
@@ -3924,7 +3924,7 @@ class RmsClient(Client):
         return http_info
 
     def show_resource_by_id(self, request):
-        """查询单个资源
+        r"""查询单个资源
 
         指定资源ID，返回该资源的详细信息，需要当前用户有rms:resources:get权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
         
@@ -3993,7 +3993,7 @@ class RmsClient(Client):
         return http_info
 
     def show_resource_detail(self, request):
-        """查询帐号下的单个资源
+        r"""查询帐号下的单个资源
 
         查询当前帐号下的单个资源。
         
@@ -4058,7 +4058,7 @@ class RmsClient(Client):
         return http_info
 
     def create_tracker_config(self, request):
-        """创建或更新记录器
+        r"""创建或更新记录器
 
         创建或更新资源记录器，只能存在一个资源记录器
         
@@ -4123,7 +4123,7 @@ class RmsClient(Client):
         return http_info
 
     def delete_tracker_config(self, request):
-        """删除记录器
+        r"""删除记录器
 
         删除资源记录器
         
@@ -4186,7 +4186,7 @@ class RmsClient(Client):
         return http_info
 
     def show_tracker_config(self, request):
-        """查询记录器
+        r"""查询记录器
 
         查询资源记录器的详细信息
         

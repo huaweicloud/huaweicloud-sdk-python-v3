@@ -33,13 +33,13 @@ class ListHostGroupsRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, group_name=None):
-        """ListHostGroupsRequest
+        r"""ListHostGroupsRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
@@ -70,7 +70,7 @@ class ListHostGroupsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListHostGroupsRequest.
+        r"""Gets the region of this ListHostGroupsRequest.
 
         Region ID
 
@@ -81,7 +81,7 @@ class ListHostGroupsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListHostGroupsRequest.
+        r"""Sets the region of this ListHostGroupsRequest.
 
         Region ID
 
@@ -92,9 +92,9 @@ class ListHostGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHostGroupsRequest.
+        r"""Gets the enterprise_project_id of this ListHostGroupsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListHostGroupsRequest.
         :rtype: str
@@ -103,9 +103,9 @@ class ListHostGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHostGroupsRequest.
+        r"""Sets the enterprise_project_id of this ListHostGroupsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostGroupsRequest.
         :type enterprise_project_id: str
@@ -114,7 +114,7 @@ class ListHostGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostGroupsRequest.
+        r"""Gets the offset of this ListHostGroupsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -125,7 +125,7 @@ class ListHostGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostGroupsRequest.
+        r"""Sets the offset of this ListHostGroupsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -136,7 +136,7 @@ class ListHostGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostGroupsRequest.
+        r"""Gets the limit of this ListHostGroupsRequest.
 
         每页显示个数
 
@@ -147,7 +147,7 @@ class ListHostGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostGroupsRequest.
+        r"""Sets the limit of this ListHostGroupsRequest.
 
         每页显示个数
 
@@ -158,7 +158,7 @@ class ListHostGroupsRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListHostGroupsRequest.
+        r"""Gets the group_name of this ListHostGroupsRequest.
 
         服务器组名称
 
@@ -169,7 +169,7 @@ class ListHostGroupsRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListHostGroupsRequest.
+        r"""Sets the group_name of this ListHostGroupsRequest.
 
         服务器组名称
 

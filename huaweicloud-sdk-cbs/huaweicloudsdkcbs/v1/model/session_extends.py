@@ -29,7 +29,7 @@ class SessionExtends:
     }
 
     def __init__(self, tag_ids=None, domain_ids=None, source=None):
-        """SessionExtends
+        r"""SessionExtends
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SessionExtends:
 
     @property
     def tag_ids(self):
-        """Gets the tag_ids of this SessionExtends.
+        r"""Gets the tag_ids of this SessionExtends.
 
         :return: The tag_ids of this SessionExtends.
         :rtype: :class:`huaweicloudsdkcbs.v1.Tag`
@@ -66,7 +66,7 @@ class SessionExtends:
 
     @tag_ids.setter
     def tag_ids(self, tag_ids):
-        """Sets the tag_ids of this SessionExtends.
+        r"""Sets the tag_ids of this SessionExtends.
 
         :param tag_ids: The tag_ids of this SessionExtends.
         :type tag_ids: :class:`huaweicloudsdkcbs.v1.Tag`
@@ -75,7 +75,7 @@ class SessionExtends:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this SessionExtends.
+        r"""Gets the domain_ids of this SessionExtends.
 
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
@@ -86,7 +86,7 @@ class SessionExtends:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this SessionExtends.
+        r"""Sets the domain_ids of this SessionExtends.
 
         领域列表，多个领域用分号隔开。如果设置了领域且领域不为空，就从这些领域中匹配答案，否则就从该用户的全部知识库匹配答案。  当前最多支持10个领域。 
 
@@ -97,7 +97,7 @@ class SessionExtends:
 
     @property
     def source(self):
-        """Gets the source of this SessionExtends.
+        r"""Gets the source of this SessionExtends.
 
         问题来源 其他支持用户自定义，最终体现在问答日志里
 
@@ -108,7 +108,7 @@ class SessionExtends:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this SessionExtends.
+        r"""Sets the source of this SessionExtends.
 
         问题来源 其他支持用户自定义，最终体现在问答日志里
 

@@ -25,7 +25,7 @@ class DeleteCloudPhoneServerRequestBody:
     }
 
     def __init__(self, server_ids=None):
-        """DeleteCloudPhoneServerRequestBody
+        r"""DeleteCloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteCloudPhoneServerRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this DeleteCloudPhoneServerRequestBody.
+        r"""Gets the server_ids of this DeleteCloudPhoneServerRequestBody.
 
         云手机服务器id列表。
 
@@ -53,7 +53,7 @@ class DeleteCloudPhoneServerRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this DeleteCloudPhoneServerRequestBody.
+        r"""Sets the server_ids of this DeleteCloudPhoneServerRequestBody.
 
         云手机服务器id列表。
 

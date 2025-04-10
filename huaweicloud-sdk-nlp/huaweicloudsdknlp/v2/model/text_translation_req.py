@@ -31,7 +31,7 @@ class TextTranslationReq:
     }
 
     def __init__(self, text=None, _from=None, to=None, scene=None):
-        """TextTranslationReq
+        r"""TextTranslationReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class TextTranslationReq:
 
     @property
     def text(self):
-        """Gets the text of this TextTranslationReq.
+        r"""Gets the text of this TextTranslationReq.
 
         待翻译文本，仅支持utf-8编码，长度不超过2000字符。
 
@@ -72,7 +72,7 @@ class TextTranslationReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this TextTranslationReq.
+        r"""Sets the text of this TextTranslationReq.
 
         待翻译文本，仅支持utf-8编码，长度不超过2000字符。
 
@@ -83,7 +83,7 @@ class TextTranslationReq:
 
     @property
     def _from(self):
-        """Gets the _from of this TextTranslationReq.
+        r"""Gets the _from of this TextTranslationReq.
 
         翻译原语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw 自动检测输入语种并翻译成目标语种，您需要指定目标语种。 auto
 
@@ -94,7 +94,7 @@ class TextTranslationReq:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this TextTranslationReq.
+        r"""Sets the _from of this TextTranslationReq.
 
         翻译原语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw 自动检测输入语种并翻译成目标语种，您需要指定目标语种。 auto
 
@@ -105,7 +105,7 @@ class TextTranslationReq:
 
     @property
     def to(self):
-        """Gets the to of this TextTranslationReq.
+        r"""Gets the to of this TextTranslationReq.
 
         翻译目标语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw
 
@@ -116,7 +116,7 @@ class TextTranslationReq:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this TextTranslationReq.
+        r"""Sets the to of this TextTranslationReq.
 
         翻译目标语言，具体取值见支持的语言列表: 阿拉伯语 ar 德语 de 俄语 ru 法语 fr 韩语 ko 葡萄牙语 pt 日语 ja 泰语 th 土耳其语 tr 西班牙语 es 英语 en 越南语 vi 中文（简体） zh 中文（繁体） zh-tw
 
@@ -127,7 +127,7 @@ class TextTranslationReq:
 
     @property
     def scene(self):
-        """Gets the scene of this TextTranslationReq.
+        r"""Gets the scene of this TextTranslationReq.
 
         默认为“common”，当前只有通用场景
 
@@ -138,7 +138,7 @@ class TextTranslationReq:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this TextTranslationReq.
+        r"""Sets the scene of this TextTranslationReq.
 
         默认为“common”，当前只有通用场景
 

@@ -26,7 +26,7 @@ class RestartProxyInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestartProxyInstanceResponse
+        r"""RestartProxyInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartProxyInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartProxyInstanceResponse.
+        r"""Gets the job_id of this RestartProxyInstanceResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class RestartProxyInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartProxyInstanceResponse.
+        r"""Sets the job_id of this RestartProxyInstanceResponse.
 
         工作流ID。
 

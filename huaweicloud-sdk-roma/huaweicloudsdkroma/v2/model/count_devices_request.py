@@ -25,7 +25,7 @@ class CountDevicesRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CountDevicesRequest
+        r"""CountDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CountDevicesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CountDevicesRequest.
+        r"""Gets the instance_id of this CountDevicesRequest.
 
         实例ID
 
@@ -53,7 +53,7 @@ class CountDevicesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CountDevicesRequest.
+        r"""Sets the instance_id of this CountDevicesRequest.
 
         实例ID
 

@@ -26,7 +26,7 @@ class BatchUpdateVaultResponse(SdkResponse):
     }
 
     def __init__(self, updated_vaults_id=None):
-        """BatchUpdateVaultResponse
+        r"""BatchUpdateVaultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateVaultResponse(SdkResponse):
 
     @property
     def updated_vaults_id(self):
-        """Gets the updated_vaults_id of this BatchUpdateVaultResponse.
+        r"""Gets the updated_vaults_id of this BatchUpdateVaultResponse.
 
         已批量修改id列表
 
@@ -55,7 +55,7 @@ class BatchUpdateVaultResponse(SdkResponse):
 
     @updated_vaults_id.setter
     def updated_vaults_id(self, updated_vaults_id):
-        """Sets the updated_vaults_id of this BatchUpdateVaultResponse.
+        r"""Sets the updated_vaults_id of this BatchUpdateVaultResponse.
 
         已批量修改id列表
 

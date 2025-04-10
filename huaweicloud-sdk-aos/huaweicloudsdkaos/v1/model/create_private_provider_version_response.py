@@ -24,7 +24,7 @@ class CreatePrivateProviderVersionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreatePrivateProviderVersionResponse
+        r"""CreatePrivateProviderVersionResponse
 
         The model defined in huaweicloud sdk
 

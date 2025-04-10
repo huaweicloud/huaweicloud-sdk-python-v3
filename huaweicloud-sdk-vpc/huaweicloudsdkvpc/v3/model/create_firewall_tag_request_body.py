@@ -25,7 +25,7 @@ class CreateFirewallTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateFirewallTagRequestBody
+        r"""CreateFirewallTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateFirewallTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateFirewallTagRequestBody.
+        r"""Gets the tag of this CreateFirewallTagRequestBody.
 
         :return: The tag of this CreateFirewallTagRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.ResourceTag`
@@ -51,7 +51,7 @@ class CreateFirewallTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateFirewallTagRequestBody.
+        r"""Sets the tag of this CreateFirewallTagRequestBody.
 
         :param tag: The tag of this CreateFirewallTagRequestBody.
         :type tag: :class:`huaweicloudsdkvpc.v3.ResourceTag`

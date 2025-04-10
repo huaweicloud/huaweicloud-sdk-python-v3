@@ -33,7 +33,7 @@ class DeleteDisasterRecoveryRequestBody:
     }
 
     def __init__(self, target_instance_id=None, target_project_id=None, target_region=None, target_ip=None, is_master=None):
-        """DeleteDisasterRecoveryRequestBody
+        r"""DeleteDisasterRecoveryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this DeleteDisasterRecoveryRequestBody.
+        r"""Gets the target_instance_id of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的实例id
 
@@ -77,7 +77,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this DeleteDisasterRecoveryRequestBody.
+        r"""Sets the target_instance_id of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的实例id
 
@@ -88,7 +88,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @property
     def target_project_id(self):
-        """Gets the target_project_id of this DeleteDisasterRecoveryRequestBody.
+        r"""Gets the target_project_id of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的project id
 
@@ -99,7 +99,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @target_project_id.setter
     def target_project_id(self, target_project_id):
-        """Sets the target_project_id of this DeleteDisasterRecoveryRequestBody.
+        r"""Sets the target_project_id of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的project id
 
@@ -110,7 +110,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @property
     def target_region(self):
-        """Gets the target_region of this DeleteDisasterRecoveryRequestBody.
+        r"""Gets the target_region of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的region
 
@@ -121,7 +121,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @target_region.setter
     def target_region(self, target_region):
-        """Sets the target_region of this DeleteDisasterRecoveryRequestBody.
+        r"""Sets the target_region of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的region
 
@@ -132,7 +132,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @property
     def target_ip(self):
-        """Gets the target_ip of this DeleteDisasterRecoveryRequestBody.
+        r"""Gets the target_ip of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的数据浮动ip
 
@@ -143,7 +143,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @target_ip.setter
     def target_ip(self, target_ip):
-        """Sets the target_ip of this DeleteDisasterRecoveryRequestBody.
+        r"""Sets the target_ip of this DeleteDisasterRecoveryRequestBody.
 
         解除目标的数据浮动ip
 
@@ -154,7 +154,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @property
     def is_master(self):
-        """Gets the is_master of this DeleteDisasterRecoveryRequestBody.
+        r"""Gets the is_master of this DeleteDisasterRecoveryRequestBody.
 
         当前操作对象是否是主实例
 
@@ -165,7 +165,7 @@ class DeleteDisasterRecoveryRequestBody:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this DeleteDisasterRecoveryRequestBody.
+        r"""Sets the is_master of this DeleteDisasterRecoveryRequestBody.
 
         当前操作对象是否是主实例
 

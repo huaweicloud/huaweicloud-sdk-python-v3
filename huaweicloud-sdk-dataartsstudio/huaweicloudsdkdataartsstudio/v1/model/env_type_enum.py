@@ -29,7 +29,7 @@ class EnvTypeEnum:
     }
 
     def __init__(self):
-        """EnvTypeEnum
+        r"""EnvTypeEnum
 
         The model defined in huaweicloud sdk
 

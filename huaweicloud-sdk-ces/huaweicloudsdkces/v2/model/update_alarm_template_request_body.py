@@ -31,7 +31,7 @@ class UpdateAlarmTemplateRequestBody:
     }
 
     def __init__(self, template_name=None, template_type=None, template_description=None, policies=None):
-        """UpdateAlarmTemplateRequestBody
+        r"""UpdateAlarmTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @property
     def template_name(self):
-        """Gets the template_name of this UpdateAlarmTemplateRequestBody.
+        r"""Gets the template_name of this UpdateAlarmTemplateRequestBody.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
 
@@ -73,7 +73,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this UpdateAlarmTemplateRequestBody.
+        r"""Sets the template_name of this UpdateAlarmTemplateRequestBody.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
 
@@ -84,7 +84,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @property
     def template_type(self):
-        """Gets the template_type of this UpdateAlarmTemplateRequestBody.
+        r"""Gets the template_type of this UpdateAlarmTemplateRequestBody.
 
         自定义告警模板类型 0：指标 2： 事件
 
@@ -95,7 +95,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this UpdateAlarmTemplateRequestBody.
+        r"""Sets the template_type of this UpdateAlarmTemplateRequestBody.
 
         自定义告警模板类型 0：指标 2： 事件
 
@@ -106,7 +106,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @property
     def template_description(self):
-        """Gets the template_description of this UpdateAlarmTemplateRequestBody.
+        r"""Gets the template_description of this UpdateAlarmTemplateRequestBody.
 
         告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -117,7 +117,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this UpdateAlarmTemplateRequestBody.
+        r"""Sets the template_description of this UpdateAlarmTemplateRequestBody.
 
         告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -128,7 +128,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @property
     def policies(self):
-        """Gets the policies of this UpdateAlarmTemplateRequestBody.
+        r"""Gets the policies of this UpdateAlarmTemplateRequestBody.
 
         告警模板策略列表
 
@@ -139,7 +139,7 @@ class UpdateAlarmTemplateRequestBody:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this UpdateAlarmTemplateRequestBody.
+        r"""Sets the policies of this UpdateAlarmTemplateRequestBody.
 
         告警模板策略列表
 

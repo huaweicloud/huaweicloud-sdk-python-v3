@@ -29,7 +29,7 @@ class BaseAddRouteAction:
     }
 
     def __init__(self, destination=None, nexthop=None, description=None):
-        """BaseAddRouteAction
+        r"""BaseAddRouteAction
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BaseAddRouteAction:
 
     @property
     def destination(self):
-        """Gets the destination of this BaseAddRouteAction.
+        r"""Gets the destination of this BaseAddRouteAction.
 
         路由子网
 
@@ -66,7 +66,7 @@ class BaseAddRouteAction:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this BaseAddRouteAction.
+        r"""Sets the destination of this BaseAddRouteAction.
 
         路由子网
 
@@ -77,7 +77,7 @@ class BaseAddRouteAction:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this BaseAddRouteAction.
+        r"""Gets the nexthop of this BaseAddRouteAction.
 
         下一跳id
 
@@ -88,7 +88,7 @@ class BaseAddRouteAction:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this BaseAddRouteAction.
+        r"""Sets the nexthop of this BaseAddRouteAction.
 
         下一跳id
 
@@ -99,7 +99,7 @@ class BaseAddRouteAction:
 
     @property
     def description(self):
-        """Gets the description of this BaseAddRouteAction.
+        r"""Gets the description of this BaseAddRouteAction.
 
         路由描述
 
@@ -110,7 +110,7 @@ class BaseAddRouteAction:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseAddRouteAction.
+        r"""Sets the description of this BaseAddRouteAction.
 
         路由描述
 

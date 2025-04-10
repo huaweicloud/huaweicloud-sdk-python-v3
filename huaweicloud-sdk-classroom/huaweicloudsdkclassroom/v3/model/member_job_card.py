@@ -33,7 +33,7 @@ class MemberJobCard:
     }
 
     def __init__(self, name=None, average_score=None, score=None, send_time=None, last_submit_time=None):
-        """MemberJobCard
+        r"""MemberJobCard
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class MemberJobCard:
 
     @property
     def name(self):
-        """Gets the name of this MemberJobCard.
+        r"""Gets the name of this MemberJobCard.
 
         作业名称
 
@@ -77,7 +77,7 @@ class MemberJobCard:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MemberJobCard.
+        r"""Sets the name of this MemberJobCard.
 
         作业名称
 
@@ -88,7 +88,7 @@ class MemberJobCard:
 
     @property
     def average_score(self):
-        """Gets the average_score of this MemberJobCard.
+        r"""Gets the average_score of this MemberJobCard.
 
         作业均分(作业有均分该字段才返回)
 
@@ -99,7 +99,7 @@ class MemberJobCard:
 
     @average_score.setter
     def average_score(self, average_score):
-        """Sets the average_score of this MemberJobCard.
+        r"""Sets the average_score of this MemberJobCard.
 
         作业均分(作业有均分该字段才返回)
 
@@ -110,7 +110,7 @@ class MemberJobCard:
 
     @property
     def score(self):
-        """Gets the score of this MemberJobCard.
+        r"""Gets the score of this MemberJobCard.
 
         作业得分(作业有分数该字段才返回)
 
@@ -121,7 +121,7 @@ class MemberJobCard:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this MemberJobCard.
+        r"""Sets the score of this MemberJobCard.
 
         作业得分(作业有分数该字段才返回)
 
@@ -132,7 +132,7 @@ class MemberJobCard:
 
     @property
     def send_time(self):
-        """Gets the send_time of this MemberJobCard.
+        r"""Gets the send_time of this MemberJobCard.
 
         作业下发时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -143,7 +143,7 @@ class MemberJobCard:
 
     @send_time.setter
     def send_time(self, send_time):
-        """Sets the send_time of this MemberJobCard.
+        r"""Sets the send_time of this MemberJobCard.
 
         作业下发时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -154,7 +154,7 @@ class MemberJobCard:
 
     @property
     def last_submit_time(self):
-        """Gets the last_submit_time of this MemberJobCard.
+        r"""Gets the last_submit_time of this MemberJobCard.
 
         作业最后一次提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -165,7 +165,7 @@ class MemberJobCard:
 
     @last_submit_time.setter
     def last_submit_time(self, last_submit_time):
-        """Sets the last_submit_time of this MemberJobCard.
+        r"""Sets the last_submit_time of this MemberJobCard.
 
         作业最后一次提交时间, 日期格式：yyyy-MM-dd HH:mm:ss
 

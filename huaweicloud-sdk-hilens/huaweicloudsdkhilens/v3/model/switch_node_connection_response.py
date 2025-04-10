@@ -24,7 +24,7 @@ class SwitchNodeConnectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchNodeConnectionResponse
+        r"""SwitchNodeConnectionResponse
 
         The model defined in huaweicloud sdk
 

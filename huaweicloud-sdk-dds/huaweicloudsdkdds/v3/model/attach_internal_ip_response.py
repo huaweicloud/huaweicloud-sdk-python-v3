@@ -30,7 +30,7 @@ class AttachInternalIpResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, node_id=None, new_ip=None):
-        """AttachInternalIpResponse
+        r"""AttachInternalIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AttachInternalIpResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AttachInternalIpResponse.
+        r"""Gets the job_id of this AttachInternalIpResponse.
 
         任务ID。
 
@@ -69,7 +69,7 @@ class AttachInternalIpResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AttachInternalIpResponse.
+        r"""Sets the job_id of this AttachInternalIpResponse.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class AttachInternalIpResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this AttachInternalIpResponse.
+        r"""Gets the node_id of this AttachInternalIpResponse.
 
         节点ID。
 
@@ -91,7 +91,7 @@ class AttachInternalIpResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AttachInternalIpResponse.
+        r"""Sets the node_id of this AttachInternalIpResponse.
 
         节点ID。
 
@@ -102,7 +102,7 @@ class AttachInternalIpResponse(SdkResponse):
 
     @property
     def new_ip(self):
-        """Gets the new_ip of this AttachInternalIpResponse.
+        r"""Gets the new_ip of this AttachInternalIpResponse.
 
         新的内网IP。
 
@@ -113,7 +113,7 @@ class AttachInternalIpResponse(SdkResponse):
 
     @new_ip.setter
     def new_ip(self, new_ip):
-        """Sets the new_ip of this AttachInternalIpResponse.
+        r"""Sets the new_ip of this AttachInternalIpResponse.
 
         新的内网IP。
 

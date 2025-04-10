@@ -43,7 +43,7 @@ class RunPipelineSourceParams:
     }
 
     def __init__(self, git_type=None, git_url=None, ssh_git_url=None, web_url=None, repo_name=None, default_branch=None, endpoint_id=None, codehub_id=None, alias=None, build_params=None):
-        """RunPipelineSourceParams
+        r"""RunPipelineSourceParams
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RunPipelineSourceParams:
 
     @property
     def git_type(self):
-        """Gets the git_type of this RunPipelineSourceParams.
+        r"""Gets the git_type of this RunPipelineSourceParams.
 
         代码仓类型
 
@@ -117,7 +117,7 @@ class RunPipelineSourceParams:
 
     @git_type.setter
     def git_type(self, git_type):
-        """Sets the git_type of this RunPipelineSourceParams.
+        r"""Sets the git_type of this RunPipelineSourceParams.
 
         代码仓类型
 
@@ -128,7 +128,7 @@ class RunPipelineSourceParams:
 
     @property
     def git_url(self):
-        """Gets the git_url of this RunPipelineSourceParams.
+        r"""Gets the git_url of this RunPipelineSourceParams.
 
         代码仓https地址
 
@@ -139,7 +139,7 @@ class RunPipelineSourceParams:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this RunPipelineSourceParams.
+        r"""Sets the git_url of this RunPipelineSourceParams.
 
         代码仓https地址
 
@@ -150,7 +150,7 @@ class RunPipelineSourceParams:
 
     @property
     def ssh_git_url(self):
-        """Gets the ssh_git_url of this RunPipelineSourceParams.
+        r"""Gets the ssh_git_url of this RunPipelineSourceParams.
 
         代码仓ssh地址
 
@@ -161,7 +161,7 @@ class RunPipelineSourceParams:
 
     @ssh_git_url.setter
     def ssh_git_url(self, ssh_git_url):
-        """Sets the ssh_git_url of this RunPipelineSourceParams.
+        r"""Sets the ssh_git_url of this RunPipelineSourceParams.
 
         代码仓ssh地址
 
@@ -172,7 +172,7 @@ class RunPipelineSourceParams:
 
     @property
     def web_url(self):
-        """Gets the web_url of this RunPipelineSourceParams.
+        r"""Gets the web_url of this RunPipelineSourceParams.
 
         代码仓页面地址
 
@@ -183,7 +183,7 @@ class RunPipelineSourceParams:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this RunPipelineSourceParams.
+        r"""Sets the web_url of this RunPipelineSourceParams.
 
         代码仓页面地址
 
@@ -194,7 +194,7 @@ class RunPipelineSourceParams:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this RunPipelineSourceParams.
+        r"""Gets the repo_name of this RunPipelineSourceParams.
 
         代码仓名
 
@@ -205,7 +205,7 @@ class RunPipelineSourceParams:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this RunPipelineSourceParams.
+        r"""Sets the repo_name of this RunPipelineSourceParams.
 
         代码仓名
 
@@ -216,7 +216,7 @@ class RunPipelineSourceParams:
 
     @property
     def default_branch(self):
-        """Gets the default_branch of this RunPipelineSourceParams.
+        r"""Gets the default_branch of this RunPipelineSourceParams.
 
         默认分支
 
@@ -227,7 +227,7 @@ class RunPipelineSourceParams:
 
     @default_branch.setter
     def default_branch(self, default_branch):
-        """Sets the default_branch of this RunPipelineSourceParams.
+        r"""Sets the default_branch of this RunPipelineSourceParams.
 
         默认分支
 
@@ -238,7 +238,7 @@ class RunPipelineSourceParams:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this RunPipelineSourceParams.
+        r"""Gets the endpoint_id of this RunPipelineSourceParams.
 
         扩展点ID
 
@@ -249,7 +249,7 @@ class RunPipelineSourceParams:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this RunPipelineSourceParams.
+        r"""Sets the endpoint_id of this RunPipelineSourceParams.
 
         扩展点ID
 
@@ -260,7 +260,7 @@ class RunPipelineSourceParams:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this RunPipelineSourceParams.
+        r"""Gets the codehub_id of this RunPipelineSourceParams.
 
         codehub代码仓ID
 
@@ -271,7 +271,7 @@ class RunPipelineSourceParams:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this RunPipelineSourceParams.
+        r"""Sets the codehub_id of this RunPipelineSourceParams.
 
         codehub代码仓ID
 
@@ -282,7 +282,7 @@ class RunPipelineSourceParams:
 
     @property
     def alias(self):
-        """Gets the alias of this RunPipelineSourceParams.
+        r"""Gets the alias of this RunPipelineSourceParams.
 
         代码仓别名
 
@@ -293,7 +293,7 @@ class RunPipelineSourceParams:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this RunPipelineSourceParams.
+        r"""Sets the alias of this RunPipelineSourceParams.
 
         代码仓别名
 
@@ -304,7 +304,7 @@ class RunPipelineSourceParams:
 
     @property
     def build_params(self):
-        """Gets the build_params of this RunPipelineSourceParams.
+        r"""Gets the build_params of this RunPipelineSourceParams.
 
         :return: The build_params of this RunPipelineSourceParams.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSourceParamsBuildParams`
@@ -313,7 +313,7 @@ class RunPipelineSourceParams:
 
     @build_params.setter
     def build_params(self, build_params):
-        """Sets the build_params of this RunPipelineSourceParams.
+        r"""Sets the build_params of this RunPipelineSourceParams.
 
         :param build_params: The build_params of this RunPipelineSourceParams.
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSourceParamsBuildParams`

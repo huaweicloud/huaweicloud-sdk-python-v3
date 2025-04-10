@@ -28,7 +28,7 @@ class ListWorkitemsResponse(SdkResponse):
     }
 
     def __init__(self, work_items=None, total=None):
-        """ListWorkitemsResponse
+        r"""ListWorkitemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWorkitemsResponse(SdkResponse):
 
     @property
     def work_items(self):
-        """Gets the work_items of this ListWorkitemsResponse.
+        r"""Gets the work_items of this ListWorkitemsResponse.
 
         工作项
 
@@ -62,7 +62,7 @@ class ListWorkitemsResponse(SdkResponse):
 
     @work_items.setter
     def work_items(self, work_items):
-        """Sets the work_items of this ListWorkitemsResponse.
+        r"""Sets the work_items of this ListWorkitemsResponse.
 
         工作项
 
@@ -73,7 +73,7 @@ class ListWorkitemsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWorkitemsResponse.
+        r"""Gets the total of this ListWorkitemsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListWorkitemsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkitemsResponse.
+        r"""Sets the total of this ListWorkitemsResponse.
 
         总数
 

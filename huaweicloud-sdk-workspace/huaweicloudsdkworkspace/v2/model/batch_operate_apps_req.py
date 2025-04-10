@@ -25,7 +25,7 @@ class BatchOperateAppsReq:
     }
 
     def __init__(self, items=None):
-        """BatchOperateAppsReq
+        r"""BatchOperateAppsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchOperateAppsReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchOperateAppsReq.
+        r"""Gets the items of this BatchOperateAppsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 
@@ -53,7 +53,7 @@ class BatchOperateAppsReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchOperateAppsReq.
+        r"""Sets the items of this BatchOperateAppsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 50]。
 

@@ -31,7 +31,7 @@ class ListNetworkSwitchPoliciesRequest:
     }
 
     def __init__(self, policy_name=None, version=None, limit=None, offset=None):
-        """ListNetworkSwitchPoliciesRequest
+        r"""ListNetworkSwitchPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ListNetworkSwitchPoliciesRequest.
+        r"""Gets the policy_name of this ListNetworkSwitchPoliciesRequest.
 
         策略名称
 
@@ -75,7 +75,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ListNetworkSwitchPoliciesRequest.
+        r"""Sets the policy_name of this ListNetworkSwitchPoliciesRequest.
 
         策略名称
 
@@ -86,7 +86,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListNetworkSwitchPoliciesRequest.
+        r"""Gets the version of this ListNetworkSwitchPoliciesRequest.
 
         三网卡版本信息
 
@@ -97,7 +97,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListNetworkSwitchPoliciesRequest.
+        r"""Sets the version of this ListNetworkSwitchPoliciesRequest.
 
         三网卡版本信息
 
@@ -108,7 +108,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNetworkSwitchPoliciesRequest.
+        r"""Gets the limit of this ListNetworkSwitchPoliciesRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -119,7 +119,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNetworkSwitchPoliciesRequest.
+        r"""Sets the limit of this ListNetworkSwitchPoliciesRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -130,7 +130,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNetworkSwitchPoliciesRequest.
+        r"""Gets the offset of this ListNetworkSwitchPoliciesRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -141,7 +141,7 @@ class ListNetworkSwitchPoliciesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNetworkSwitchPoliciesRequest.
+        r"""Sets the offset of this ListNetworkSwitchPoliciesRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 

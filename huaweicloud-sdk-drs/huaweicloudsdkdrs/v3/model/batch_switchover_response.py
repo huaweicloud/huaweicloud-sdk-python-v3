@@ -28,7 +28,7 @@ class BatchSwitchoverResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchSwitchoverResponse
+        r"""BatchSwitchoverResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchSwitchoverResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchSwitchoverResponse.
+        r"""Gets the results of this BatchSwitchoverResponse.
 
         批量主备倒换任务返回列表
 
@@ -62,7 +62,7 @@ class BatchSwitchoverResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchSwitchoverResponse.
+        r"""Sets the results of this BatchSwitchoverResponse.
 
         批量主备倒换任务返回列表
 
@@ -73,7 +73,7 @@ class BatchSwitchoverResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchSwitchoverResponse.
+        r"""Gets the count of this BatchSwitchoverResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchSwitchoverResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchSwitchoverResponse.
+        r"""Sets the count of this BatchSwitchoverResponse.
 
         总数
 

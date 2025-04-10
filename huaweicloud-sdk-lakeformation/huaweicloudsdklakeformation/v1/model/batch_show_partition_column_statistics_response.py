@@ -28,7 +28,7 @@ class BatchShowPartitionColumnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, found_partition_number=None, column_statistics=None):
-        """BatchShowPartitionColumnStatisticsResponse
+        r"""BatchShowPartitionColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowPartitionColumnStatisticsResponse(SdkResponse):
 
     @property
     def found_partition_number(self):
-        """Gets the found_partition_number of this BatchShowPartitionColumnStatisticsResponse.
+        r"""Gets the found_partition_number of this BatchShowPartitionColumnStatisticsResponse.
 
         分区统计信息的数量
 
@@ -62,7 +62,7 @@ class BatchShowPartitionColumnStatisticsResponse(SdkResponse):
 
     @found_partition_number.setter
     def found_partition_number(self, found_partition_number):
-        """Sets the found_partition_number of this BatchShowPartitionColumnStatisticsResponse.
+        r"""Sets the found_partition_number of this BatchShowPartitionColumnStatisticsResponse.
 
         分区统计信息的数量
 
@@ -73,7 +73,7 @@ class BatchShowPartitionColumnStatisticsResponse(SdkResponse):
 
     @property
     def column_statistics(self):
-        """Gets the column_statistics of this BatchShowPartitionColumnStatisticsResponse.
+        r"""Gets the column_statistics of this BatchShowPartitionColumnStatisticsResponse.
 
         分区统计信息的列表
 
@@ -84,7 +84,7 @@ class BatchShowPartitionColumnStatisticsResponse(SdkResponse):
 
     @column_statistics.setter
     def column_statistics(self, column_statistics):
-        """Sets the column_statistics of this BatchShowPartitionColumnStatisticsResponse.
+        r"""Sets the column_statistics of this BatchShowPartitionColumnStatisticsResponse.
 
         分区统计信息的列表
 

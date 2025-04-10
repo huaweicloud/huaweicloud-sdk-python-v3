@@ -35,7 +35,7 @@ class VersionInfo:
     }
 
     def __init__(self, id=None, links=None, min_version=None, status=None, update=None, version=None):
-        """VersionInfo
+        r"""VersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VersionInfo:
 
     @property
     def id(self):
-        """Gets the id of this VersionInfo.
+        r"""Gets the id of this VersionInfo.
 
         API版本ID。
 
@@ -89,7 +89,7 @@ class VersionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionInfo.
+        r"""Sets the id of this VersionInfo.
 
         API版本ID。
 
@@ -100,7 +100,7 @@ class VersionInfo:
 
     @property
     def links(self):
-        """Gets the links of this VersionInfo.
+        r"""Gets the links of this VersionInfo.
 
         API的URL相关信息。
 
@@ -111,7 +111,7 @@ class VersionInfo:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VersionInfo.
+        r"""Sets the links of this VersionInfo.
 
         API的URL相关信息。
 
@@ -122,7 +122,7 @@ class VersionInfo:
 
     @property
     def min_version(self):
-        """Gets the min_version of this VersionInfo.
+        r"""Gets the min_version of this VersionInfo.
 
         该版本API支持的最小微版本号。
 
@@ -133,7 +133,7 @@ class VersionInfo:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this VersionInfo.
+        r"""Sets the min_version of this VersionInfo.
 
         该版本API支持的最小微版本号。
 
@@ -144,7 +144,7 @@ class VersionInfo:
 
     @property
     def status(self):
-        """Gets the status of this VersionInfo.
+        r"""Gets the status of this VersionInfo.
 
         版本状态，为如下3种：CURRENT：表示该版本为主推版本；SUPPORT：表示为老版本，但是现在还继续支持；DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -155,7 +155,7 @@ class VersionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionInfo.
+        r"""Sets the status of this VersionInfo.
 
         版本状态，为如下3种：CURRENT：表示该版本为主推版本；SUPPORT：表示为老版本，但是现在还继续支持；DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -166,7 +166,7 @@ class VersionInfo:
 
     @property
     def update(self):
-        """Gets the update of this VersionInfo.
+        r"""Gets the update of this VersionInfo.
 
         版本发布时间，使用UTC时间。
 
@@ -177,7 +177,7 @@ class VersionInfo:
 
     @update.setter
     def update(self, update):
-        """Sets the update of this VersionInfo.
+        r"""Sets the update of this VersionInfo.
 
         版本发布时间，使用UTC时间。
 
@@ -188,7 +188,7 @@ class VersionInfo:
 
     @property
     def version(self):
-        """Gets the version of this VersionInfo.
+        r"""Gets the version of this VersionInfo.
 
         该版本API支持的最大微版本号。
 
@@ -199,7 +199,7 @@ class VersionInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionInfo.
+        r"""Sets the version of this VersionInfo.
 
         该版本API支持的最大微版本号。
 

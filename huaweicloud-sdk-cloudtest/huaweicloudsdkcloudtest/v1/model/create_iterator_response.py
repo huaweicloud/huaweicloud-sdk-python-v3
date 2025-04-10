@@ -34,7 +34,7 @@ class CreateIteratorResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """CreateIteratorResponse
+        r"""CreateIteratorResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateIteratorResponse.
+        r"""Gets the status of this CreateIteratorResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -83,7 +83,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateIteratorResponse.
+        r"""Sets the status of this CreateIteratorResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -94,7 +94,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateIteratorResponse.
+        r"""Gets the result of this CreateIteratorResponse.
 
         :return: The result of this CreateIteratorResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestVersionVo`
@@ -103,7 +103,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateIteratorResponse.
+        r"""Sets the result of this CreateIteratorResponse.
 
         :param result: The result of this CreateIteratorResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueTestVersionVo`
@@ -112,7 +112,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateIteratorResponse.
+        r"""Gets the error of this CreateIteratorResponse.
 
         :return: The error of this CreateIteratorResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateIteratorResponse.
+        r"""Sets the error of this CreateIteratorResponse.
 
         :param error: The error of this CreateIteratorResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateIteratorResponse.
+        r"""Gets the request_id of this CreateIteratorResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateIteratorResponse.
+        r"""Sets the request_id of this CreateIteratorResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this CreateIteratorResponse.
+        r"""Gets the server_address of this CreateIteratorResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class CreateIteratorResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this CreateIteratorResponse.
+        r"""Sets the server_address of this CreateIteratorResponse.
 
         对内接口才有此属性
 

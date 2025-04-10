@@ -26,7 +26,7 @@ class CollectLogResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CollectLogResponse
+        r"""CollectLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CollectLogResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CollectLogResponse.
+        r"""Gets the body of this CollectLogResponse.
 
         上传迁移任务的日志成功
 
@@ -55,7 +55,7 @@ class CollectLogResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectLogResponse.
+        r"""Sets the body of this CollectLogResponse.
 
         上传迁移任务的日志成功
 

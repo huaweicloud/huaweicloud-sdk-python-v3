@@ -35,7 +35,7 @@ class UpdateDcPointReqDTO:
     }
 
     def __init__(self, name=None, collection_config=None, device_id=None, _property=None, data_type=None, processing_config=None):
-        """UpdateDcPointReqDTO
+        r"""UpdateDcPointReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class UpdateDcPointReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDcPointReqDTO.
+        r"""Gets the name of this UpdateDcPointReqDTO.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -87,7 +87,7 @@ class UpdateDcPointReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDcPointReqDTO.
+        r"""Sets the name of this UpdateDcPointReqDTO.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -98,7 +98,7 @@ class UpdateDcPointReqDTO:
 
     @property
     def collection_config(self):
-        """Gets the collection_config of this UpdateDcPointReqDTO.
+        r"""Gets the collection_config of this UpdateDcPointReqDTO.
 
         点位采集配置
 
@@ -109,7 +109,7 @@ class UpdateDcPointReqDTO:
 
     @collection_config.setter
     def collection_config(self, collection_config):
-        """Sets the collection_config of this UpdateDcPointReqDTO.
+        r"""Sets the collection_config of this UpdateDcPointReqDTO.
 
         点位采集配置
 
@@ -120,7 +120,7 @@ class UpdateDcPointReqDTO:
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateDcPointReqDTO.
+        r"""Gets the device_id of this UpdateDcPointReqDTO.
 
         设备id
 
@@ -131,7 +131,7 @@ class UpdateDcPointReqDTO:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateDcPointReqDTO.
+        r"""Sets the device_id of this UpdateDcPointReqDTO.
 
         设备id
 
@@ -142,7 +142,7 @@ class UpdateDcPointReqDTO:
 
     @property
     def _property(self):
-        """Gets the _property of this UpdateDcPointReqDTO.
+        r"""Gets the _property of this UpdateDcPointReqDTO.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -153,7 +153,7 @@ class UpdateDcPointReqDTO:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this UpdateDcPointReqDTO.
+        r"""Sets the _property of this UpdateDcPointReqDTO.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -164,7 +164,7 @@ class UpdateDcPointReqDTO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this UpdateDcPointReqDTO.
+        r"""Gets the data_type of this UpdateDcPointReqDTO.
 
         点位数据类型
 
@@ -175,7 +175,7 @@ class UpdateDcPointReqDTO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this UpdateDcPointReqDTO.
+        r"""Sets the data_type of this UpdateDcPointReqDTO.
 
         点位数据类型
 
@@ -186,7 +186,7 @@ class UpdateDcPointReqDTO:
 
     @property
     def processing_config(self):
-        """Gets the processing_config of this UpdateDcPointReqDTO.
+        r"""Gets the processing_config of this UpdateDcPointReqDTO.
 
         :return: The processing_config of this UpdateDcPointReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
@@ -195,7 +195,7 @@ class UpdateDcPointReqDTO:
 
     @processing_config.setter
     def processing_config(self, processing_config):
-        """Sets the processing_config of this UpdateDcPointReqDTO.
+        r"""Sets the processing_config of this UpdateDcPointReqDTO.
 
         :param processing_config: The processing_config of this UpdateDcPointReqDTO.
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`

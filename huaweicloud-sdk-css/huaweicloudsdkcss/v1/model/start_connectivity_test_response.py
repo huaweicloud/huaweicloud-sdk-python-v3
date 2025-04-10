@@ -26,7 +26,7 @@ class StartConnectivityTestResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """StartConnectivityTestResponse
+        r"""StartConnectivityTestResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartConnectivityTestResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StartConnectivityTestResponse.
+        r"""Gets the result of this StartConnectivityTestResponse.
 
         连通性测试结果。
 
@@ -55,7 +55,7 @@ class StartConnectivityTestResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StartConnectivityTestResponse.
+        r"""Sets the result of this StartConnectivityTestResponse.
 
         连通性测试结果。
 

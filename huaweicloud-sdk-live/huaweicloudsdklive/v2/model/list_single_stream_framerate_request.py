@@ -33,7 +33,7 @@ class ListSingleStreamFramerateRequest:
     }
 
     def __init__(self, domain=None, app=None, stream=None, start_time=None, end_time=None):
-        """ListSingleStreamFramerateRequest
+        r"""ListSingleStreamFramerateRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListSingleStreamFramerateRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListSingleStreamFramerateRequest.
+        r"""Gets the domain of this ListSingleStreamFramerateRequest.
 
         推流域名。 
 
@@ -79,7 +79,7 @@ class ListSingleStreamFramerateRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListSingleStreamFramerateRequest.
+        r"""Sets the domain of this ListSingleStreamFramerateRequest.
 
         推流域名。 
 
@@ -90,7 +90,7 @@ class ListSingleStreamFramerateRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListSingleStreamFramerateRequest.
+        r"""Gets the app of this ListSingleStreamFramerateRequest.
 
         App名。 
 
@@ -101,7 +101,7 @@ class ListSingleStreamFramerateRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListSingleStreamFramerateRequest.
+        r"""Sets the app of this ListSingleStreamFramerateRequest.
 
         App名。 
 
@@ -112,7 +112,7 @@ class ListSingleStreamFramerateRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListSingleStreamFramerateRequest.
+        r"""Gets the stream of this ListSingleStreamFramerateRequest.
 
         流名。 
 
@@ -123,7 +123,7 @@ class ListSingleStreamFramerateRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListSingleStreamFramerateRequest.
+        r"""Sets the stream of this ListSingleStreamFramerateRequest.
 
         流名。 
 
@@ -134,7 +134,7 @@ class ListSingleStreamFramerateRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSingleStreamFramerateRequest.
+        r"""Gets the start_time of this ListSingleStreamFramerateRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询最近1小时数据。 
 
@@ -145,7 +145,7 @@ class ListSingleStreamFramerateRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSingleStreamFramerateRequest.
+        r"""Sets the start_time of this ListSingleStreamFramerateRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询最近1小时数据。 
 
@@ -156,7 +156,7 @@ class ListSingleStreamFramerateRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSingleStreamFramerateRequest.
+        r"""Gets the end_time of this ListSingleStreamFramerateRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -167,7 +167,7 @@ class ListSingleStreamFramerateRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSingleStreamFramerateRequest.
+        r"""Sets the end_time of this ListSingleStreamFramerateRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 

@@ -27,7 +27,7 @@ class CouponSimpleInfo:
     }
 
     def __init__(self, id=None, coupon_id=None):
-        """CouponSimpleInfo
+        r"""CouponSimpleInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CouponSimpleInfo:
 
     @property
     def id(self):
-        """Gets the id of this CouponSimpleInfo.
+        r"""Gets the id of this CouponSimpleInfo.
 
         批量发放优惠券成功的客户ID。
 
@@ -59,7 +59,7 @@ class CouponSimpleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CouponSimpleInfo.
+        r"""Sets the id of this CouponSimpleInfo.
 
         批量发放优惠券成功的客户ID。
 
@@ -70,7 +70,7 @@ class CouponSimpleInfo:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this CouponSimpleInfo.
+        r"""Gets the coupon_id of this CouponSimpleInfo.
 
         发放成功的券ID。
 
@@ -81,7 +81,7 @@ class CouponSimpleInfo:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this CouponSimpleInfo.
+        r"""Sets the coupon_id of this CouponSimpleInfo.
 
         发放成功的券ID。
 

@@ -28,7 +28,7 @@ class KeystoneListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, regions=None):
-        """KeystoneListRegionsResponse
+        r"""KeystoneListRegionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListRegionsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListRegionsResponse.
+        r"""Gets the links of this KeystoneListRegionsResponse.
 
         :return: The links of this KeystoneListRegionsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListRegionsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListRegionsResponse.
+        r"""Sets the links of this KeystoneListRegionsResponse.
 
         :param links: The links of this KeystoneListRegionsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListRegionsResponse(SdkResponse):
 
     @property
     def regions(self):
-        """Gets the regions of this KeystoneListRegionsResponse.
+        r"""Gets the regions of this KeystoneListRegionsResponse.
 
         区域信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListRegionsResponse(SdkResponse):
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this KeystoneListRegionsResponse.
+        r"""Sets the regions of this KeystoneListRegionsResponse.
 
         区域信息列表。
 

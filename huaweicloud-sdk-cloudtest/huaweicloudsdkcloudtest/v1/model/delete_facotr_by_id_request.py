@@ -27,7 +27,7 @@ class DeleteFacotrByIdRequest:
     }
 
     def __init__(self, project_id=None, id=None):
-        """DeleteFacotrByIdRequest
+        r"""DeleteFacotrByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteFacotrByIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteFacotrByIdRequest.
+        r"""Gets the project_id of this DeleteFacotrByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class DeleteFacotrByIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteFacotrByIdRequest.
+        r"""Sets the project_id of this DeleteFacotrByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class DeleteFacotrByIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteFacotrByIdRequest.
+        r"""Gets the id of this DeleteFacotrByIdRequest.
 
         因子ID
 
@@ -81,7 +81,7 @@ class DeleteFacotrByIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteFacotrByIdRequest.
+        r"""Sets the id of this DeleteFacotrByIdRequest.
 
         因子ID
 

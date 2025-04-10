@@ -32,7 +32,7 @@ class ShowMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None, messages_count=None, offsets_count=None, offset=None):
-        """ShowMessagesResponse
+        r"""ShowMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @property
     def messages(self):
-        """Gets the messages of this ShowMessagesResponse.
+        r"""Gets the messages of this ShowMessagesResponse.
 
         消息列表。
 
@@ -76,7 +76,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this ShowMessagesResponse.
+        r"""Sets the messages of this ShowMessagesResponse.
 
         消息列表。
 
@@ -87,7 +87,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @property
     def messages_count(self):
-        """Gets the messages_count of this ShowMessagesResponse.
+        r"""Gets the messages_count of this ShowMessagesResponse.
 
         消息总数。
 
@@ -98,7 +98,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @messages_count.setter
     def messages_count(self, messages_count):
-        """Sets the messages_count of this ShowMessagesResponse.
+        r"""Sets the messages_count of this ShowMessagesResponse.
 
         消息总数。
 
@@ -109,7 +109,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @property
     def offsets_count(self):
-        """Gets the offsets_count of this ShowMessagesResponse.
+        r"""Gets the offsets_count of this ShowMessagesResponse.
 
         总页数。
 
@@ -120,7 +120,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @offsets_count.setter
     def offsets_count(self, offsets_count):
-        """Sets the offsets_count of this ShowMessagesResponse.
+        r"""Sets the offsets_count of this ShowMessagesResponse.
 
         总页数。
 
@@ -131,7 +131,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMessagesResponse.
+        r"""Gets the offset of this ShowMessagesResponse.
 
         当前页数。
 
@@ -142,7 +142,7 @@ class ShowMessagesResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMessagesResponse.
+        r"""Sets the offset of this ShowMessagesResponse.
 
         当前页数。
 

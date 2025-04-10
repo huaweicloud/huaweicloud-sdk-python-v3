@@ -28,7 +28,7 @@ class ResetRomaAppSecretResponse(SdkResponse):
     }
 
     def __init__(self, id=None, secret=None):
-        """ResetRomaAppSecretResponse
+        r"""ResetRomaAppSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResetRomaAppSecretResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ResetRomaAppSecretResponse.
+        r"""Gets the id of this ResetRomaAppSecretResponse.
 
         应用ID
 
@@ -62,7 +62,7 @@ class ResetRomaAppSecretResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResetRomaAppSecretResponse.
+        r"""Sets the id of this ResetRomaAppSecretResponse.
 
         应用ID
 
@@ -73,7 +73,7 @@ class ResetRomaAppSecretResponse(SdkResponse):
 
     @property
     def secret(self):
-        """Gets the secret of this ResetRomaAppSecretResponse.
+        r"""Gets the secret of this ResetRomaAppSecretResponse.
 
         应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、=、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
 
@@ -84,7 +84,7 @@ class ResetRomaAppSecretResponse(SdkResponse):
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ResetRomaAppSecretResponse.
+        r"""Sets the secret of this ResetRomaAppSecretResponse.
 
         应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、=、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
 

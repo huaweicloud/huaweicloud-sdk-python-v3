@@ -45,7 +45,7 @@ class RuleServiceDtoForResponse:
     }
 
     def __init__(self, type=None, protocol=None, protocols=None, source_port=None, dest_port=None, service_set_id=None, service_set_name=None, custom_service=None, service_group=None, service_group_names=None, service_set_type=None):
-        """RuleServiceDtoForResponse
+        r"""RuleServiceDtoForResponse
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def type(self):
-        """Gets the type of this RuleServiceDtoForResponse.
+        r"""Gets the type of this RuleServiceDtoForResponse.
 
         服务输入类型，0为手动输入类型，1为自动输入类型
 
@@ -123,7 +123,7 @@ class RuleServiceDtoForResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleServiceDtoForResponse.
+        r"""Sets the type of this RuleServiceDtoForResponse.
 
         服务输入类型，0为手动输入类型，1为自动输入类型
 
@@ -134,7 +134,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def protocol(self):
-        """Gets the protocol of this RuleServiceDtoForResponse.
+        r"""Gets the protocol of this RuleServiceDtoForResponse.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
 
@@ -145,7 +145,7 @@ class RuleServiceDtoForResponse:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this RuleServiceDtoForResponse.
+        r"""Sets the protocol of this RuleServiceDtoForResponse.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
 
@@ -156,7 +156,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def protocols(self):
-        """Gets the protocols of this RuleServiceDtoForResponse.
+        r"""Gets the protocols of this RuleServiceDtoForResponse.
 
         协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
 
@@ -167,7 +167,7 @@ class RuleServiceDtoForResponse:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this RuleServiceDtoForResponse.
+        r"""Sets the protocols of this RuleServiceDtoForResponse.
 
         协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
 
@@ -178,7 +178,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def source_port(self):
-        """Gets the source_port of this RuleServiceDtoForResponse.
+        r"""Gets the source_port of this RuleServiceDtoForResponse.
 
         源端口
 
@@ -189,7 +189,7 @@ class RuleServiceDtoForResponse:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this RuleServiceDtoForResponse.
+        r"""Sets the source_port of this RuleServiceDtoForResponse.
 
         源端口
 
@@ -200,7 +200,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this RuleServiceDtoForResponse.
+        r"""Gets the dest_port of this RuleServiceDtoForResponse.
 
         目的端口
 
@@ -211,7 +211,7 @@ class RuleServiceDtoForResponse:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this RuleServiceDtoForResponse.
+        r"""Sets the dest_port of this RuleServiceDtoForResponse.
 
         目的端口
 
@@ -222,7 +222,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def service_set_id(self):
-        """Gets the service_set_id of this RuleServiceDtoForResponse.
+        r"""Gets the service_set_id of this RuleServiceDtoForResponse.
 
         服务组id
 
@@ -233,7 +233,7 @@ class RuleServiceDtoForResponse:
 
     @service_set_id.setter
     def service_set_id(self, service_set_id):
-        """Sets the service_set_id of this RuleServiceDtoForResponse.
+        r"""Sets the service_set_id of this RuleServiceDtoForResponse.
 
         服务组id
 
@@ -244,7 +244,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def service_set_name(self):
-        """Gets the service_set_name of this RuleServiceDtoForResponse.
+        r"""Gets the service_set_name of this RuleServiceDtoForResponse.
 
         服务组名称
 
@@ -255,7 +255,7 @@ class RuleServiceDtoForResponse:
 
     @service_set_name.setter
     def service_set_name(self, service_set_name):
-        """Sets the service_set_name of this RuleServiceDtoForResponse.
+        r"""Sets the service_set_name of this RuleServiceDtoForResponse.
 
         服务组名称
 
@@ -266,7 +266,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def custom_service(self):
-        """Gets the custom_service of this RuleServiceDtoForResponse.
+        r"""Gets the custom_service of this RuleServiceDtoForResponse.
 
         自定义服务
 
@@ -277,7 +277,7 @@ class RuleServiceDtoForResponse:
 
     @custom_service.setter
     def custom_service(self, custom_service):
-        """Sets the custom_service of this RuleServiceDtoForResponse.
+        r"""Sets the custom_service of this RuleServiceDtoForResponse.
 
         自定义服务
 
@@ -288,7 +288,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def service_group(self):
-        """Gets the service_group of this RuleServiceDtoForResponse.
+        r"""Gets the service_group of this RuleServiceDtoForResponse.
 
         服务组id列表
 
@@ -299,7 +299,7 @@ class RuleServiceDtoForResponse:
 
     @service_group.setter
     def service_group(self, service_group):
-        """Sets the service_group of this RuleServiceDtoForResponse.
+        r"""Sets the service_group of this RuleServiceDtoForResponse.
 
         服务组id列表
 
@@ -310,7 +310,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def service_group_names(self):
-        """Gets the service_group_names of this RuleServiceDtoForResponse.
+        r"""Gets the service_group_names of this RuleServiceDtoForResponse.
 
         服务组名称列表
 
@@ -321,7 +321,7 @@ class RuleServiceDtoForResponse:
 
     @service_group_names.setter
     def service_group_names(self, service_group_names):
-        """Sets the service_group_names of this RuleServiceDtoForResponse.
+        r"""Sets the service_group_names of this RuleServiceDtoForResponse.
 
         服务组名称列表
 
@@ -332,7 +332,7 @@ class RuleServiceDtoForResponse:
 
     @property
     def service_set_type(self):
-        """Gets the service_set_type of this RuleServiceDtoForResponse.
+        r"""Gets the service_set_type of this RuleServiceDtoForResponse.
 
         服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
@@ -343,7 +343,7 @@ class RuleServiceDtoForResponse:
 
     @service_set_type.setter
     def service_set_type(self, service_set_type):
-        """Sets the service_set_type of this RuleServiceDtoForResponse.
+        r"""Sets the service_set_type of this RuleServiceDtoForResponse.
 
         服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 

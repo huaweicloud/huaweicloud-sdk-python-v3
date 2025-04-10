@@ -31,7 +31,7 @@ class ListModifyHistoryRequest:
     }
 
     def __init__(self, x_language=None, configuration_id=None, offset=None, limit=None):
-        """ListModifyHistoryRequest
+        r"""ListModifyHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListModifyHistoryRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListModifyHistoryRequest.
+        r"""Gets the x_language of this ListModifyHistoryRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -74,7 +74,7 @@ class ListModifyHistoryRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListModifyHistoryRequest.
+        r"""Sets the x_language of this ListModifyHistoryRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -85,7 +85,7 @@ class ListModifyHistoryRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this ListModifyHistoryRequest.
+        r"""Gets the configuration_id of this ListModifyHistoryRequest.
 
         参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
@@ -96,7 +96,7 @@ class ListModifyHistoryRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this ListModifyHistoryRequest.
+        r"""Sets the configuration_id of this ListModifyHistoryRequest.
 
         参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
@@ -107,7 +107,7 @@ class ListModifyHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListModifyHistoryRequest.
+        r"""Gets the offset of this ListModifyHistoryRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -118,7 +118,7 @@ class ListModifyHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListModifyHistoryRequest.
+        r"""Sets the offset of this ListModifyHistoryRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -129,7 +129,7 @@ class ListModifyHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListModifyHistoryRequest.
+        r"""Gets the limit of this ListModifyHistoryRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -140,7 +140,7 @@ class ListModifyHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListModifyHistoryRequest.
+        r"""Sets the limit of this ListModifyHistoryRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 

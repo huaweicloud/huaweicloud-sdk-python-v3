@@ -29,7 +29,7 @@ class ListProjectModulesRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ListProjectModulesRequest
+        r"""ListProjectModulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProjectModulesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectModulesRequest.
+        r"""Gets the project_id of this ListProjectModulesRequest.
 
         devcloud项目的32位id
 
@@ -67,7 +67,7 @@ class ListProjectModulesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectModulesRequest.
+        r"""Sets the project_id of this ListProjectModulesRequest.
 
         devcloud项目的32位id
 
@@ -78,7 +78,7 @@ class ListProjectModulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectModulesRequest.
+        r"""Gets the offset of this ListProjectModulesRequest.
 
         查询偏移量
 
@@ -89,7 +89,7 @@ class ListProjectModulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectModulesRequest.
+        r"""Sets the offset of this ListProjectModulesRequest.
 
         查询偏移量
 
@@ -100,7 +100,7 @@ class ListProjectModulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectModulesRequest.
+        r"""Gets the limit of this ListProjectModulesRequest.
 
         一次返回的数据,最小1,最大100
 
@@ -111,7 +111,7 @@ class ListProjectModulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectModulesRequest.
+        r"""Sets the limit of this ListProjectModulesRequest.
 
         一次返回的数据,最小1,最大100
 

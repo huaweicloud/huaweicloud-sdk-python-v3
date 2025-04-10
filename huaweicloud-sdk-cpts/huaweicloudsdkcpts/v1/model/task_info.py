@@ -45,7 +45,7 @@ class TaskInfo:
     }
 
     def __init__(self, bench_concurrent=None, case_list=None, create_time=None, description=None, name=None, operate_mode=None, project_id=None, related_temp_running_data=None, run_status=None, update_time=None, parallel=None):
-        """TaskInfo
+        r"""TaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TaskInfo:
 
     @property
     def bench_concurrent(self):
-        """Gets the bench_concurrent of this TaskInfo.
+        r"""Gets the bench_concurrent of this TaskInfo.
 
         基准并发
 
@@ -124,7 +124,7 @@ class TaskInfo:
 
     @bench_concurrent.setter
     def bench_concurrent(self, bench_concurrent):
-        """Sets the bench_concurrent of this TaskInfo.
+        r"""Sets the bench_concurrent of this TaskInfo.
 
         基准并发
 
@@ -135,7 +135,7 @@ class TaskInfo:
 
     @property
     def case_list(self):
-        """Gets the case_list of this TaskInfo.
+        r"""Gets the case_list of this TaskInfo.
 
         用例Id列表
 
@@ -146,7 +146,7 @@ class TaskInfo:
 
     @case_list.setter
     def case_list(self, case_list):
-        """Sets the case_list of this TaskInfo.
+        r"""Sets the case_list of this TaskInfo.
 
         用例Id列表
 
@@ -157,7 +157,7 @@ class TaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskInfo.
+        r"""Gets the create_time of this TaskInfo.
 
         创建时间
 
@@ -168,7 +168,7 @@ class TaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskInfo.
+        r"""Sets the create_time of this TaskInfo.
 
         创建时间
 
@@ -179,7 +179,7 @@ class TaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this TaskInfo.
+        r"""Gets the description of this TaskInfo.
 
         描述信息
 
@@ -190,7 +190,7 @@ class TaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskInfo.
+        r"""Sets the description of this TaskInfo.
 
         描述信息
 
@@ -201,7 +201,7 @@ class TaskInfo:
 
     @property
     def name(self):
-        """Gets the name of this TaskInfo.
+        r"""Gets the name of this TaskInfo.
 
         任务名称
 
@@ -212,7 +212,7 @@ class TaskInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskInfo.
+        r"""Sets the name of this TaskInfo.
 
         任务名称
 
@@ -223,7 +223,7 @@ class TaskInfo:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this TaskInfo.
+        r"""Gets the operate_mode of this TaskInfo.
 
         任务模式（0：时长模式；1：次数模式；2：混合模式）
 
@@ -234,7 +234,7 @@ class TaskInfo:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this TaskInfo.
+        r"""Sets the operate_mode of this TaskInfo.
 
         任务模式（0：时长模式；1：次数模式；2：混合模式）
 
@@ -245,7 +245,7 @@ class TaskInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TaskInfo.
+        r"""Gets the project_id of this TaskInfo.
 
         任务所属工程id
 
@@ -256,7 +256,7 @@ class TaskInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TaskInfo.
+        r"""Sets the project_id of this TaskInfo.
 
         任务所属工程id
 
@@ -267,7 +267,7 @@ class TaskInfo:
 
     @property
     def related_temp_running_data(self):
-        """Gets the related_temp_running_data of this TaskInfo.
+        r"""Gets the related_temp_running_data of this TaskInfo.
 
         最近一次运行的报告简略信息，包括运行任务id，即本对象的task_run_info_id。运行用例id，即本对象的related_temp_running_id。
 
@@ -278,7 +278,7 @@ class TaskInfo:
 
     @related_temp_running_data.setter
     def related_temp_running_data(self, related_temp_running_data):
-        """Sets the related_temp_running_data of this TaskInfo.
+        r"""Sets the related_temp_running_data of this TaskInfo.
 
         最近一次运行的报告简略信息，包括运行任务id，即本对象的task_run_info_id。运行用例id，即本对象的related_temp_running_id。
 
@@ -289,7 +289,7 @@ class TaskInfo:
 
     @property
     def run_status(self):
-        """Gets the run_status of this TaskInfo.
+        r"""Gets the run_status of this TaskInfo.
 
         任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
@@ -300,7 +300,7 @@ class TaskInfo:
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this TaskInfo.
+        r"""Sets the run_status of this TaskInfo.
 
         任务运行状态（9：等待运行；0：运行中；1：暂停；2：结束； 3：异常中止；4：用户主动终止（完成状态）；5：用户主动终止）
 
@@ -311,7 +311,7 @@ class TaskInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TaskInfo.
+        r"""Gets the update_time of this TaskInfo.
 
         任务更新时间
 
@@ -322,7 +322,7 @@ class TaskInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TaskInfo.
+        r"""Sets the update_time of this TaskInfo.
 
         任务更新时间
 
@@ -333,7 +333,7 @@ class TaskInfo:
 
     @property
     def parallel(self):
-        """Gets the parallel of this TaskInfo.
+        r"""Gets the parallel of this TaskInfo.
 
         任务间用例是否并行执行
 
@@ -344,7 +344,7 @@ class TaskInfo:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this TaskInfo.
+        r"""Sets the parallel of this TaskInfo.
 
         任务间用例是否并行执行
 

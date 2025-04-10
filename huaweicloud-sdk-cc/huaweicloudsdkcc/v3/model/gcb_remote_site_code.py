@@ -25,7 +25,7 @@ class GcbRemoteSiteCode:
     }
 
     def __init__(self, remote_site_code=None):
-        """GcbRemoteSiteCode
+        r"""GcbRemoteSiteCode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbRemoteSiteCode:
 
     @property
     def remote_site_code(self):
-        """Gets the remote_site_code of this GcbRemoteSiteCode.
+        r"""Gets the remote_site_code of this GcbRemoteSiteCode.
 
         功能说明：远端接入点的编码。
 
@@ -54,7 +54,7 @@ class GcbRemoteSiteCode:
 
     @remote_site_code.setter
     def remote_site_code(self, remote_site_code):
-        """Sets the remote_site_code of this GcbRemoteSiteCode.
+        r"""Sets the remote_site_code of this GcbRemoteSiteCode.
 
         功能说明：远端接入点的编码。
 

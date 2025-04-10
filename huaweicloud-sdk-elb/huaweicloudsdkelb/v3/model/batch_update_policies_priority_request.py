@@ -25,7 +25,7 @@ class BatchUpdatePoliciesPriorityRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdatePoliciesPriorityRequest
+        r"""BatchUpdatePoliciesPriorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdatePoliciesPriorityRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdatePoliciesPriorityRequest.
+        r"""Gets the body of this BatchUpdatePoliciesPriorityRequest.
 
         :return: The body of this BatchUpdatePoliciesPriorityRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdatePoliciesPriorityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdatePoliciesPriorityRequest.
+        r"""Sets the body of this BatchUpdatePoliciesPriorityRequest.
 
         :param body: The body of this BatchUpdatePoliciesPriorityRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityRequestBody`

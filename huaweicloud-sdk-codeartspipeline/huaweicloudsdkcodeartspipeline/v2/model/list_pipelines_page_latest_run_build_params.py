@@ -51,7 +51,7 @@ class ListPipelinesPageLatestRunBuildParams:
     }
 
     def __init__(self, action=None, build_type=None, commit_id=None, event_type=None, merge_id=None, message=None, source_branch=None, tag=None, target_branch=None, codehub_id=None, git_url=None, source_codehub_id=None, source_codehub_url=None, source_codehub_http_url=None):
-        """ListPipelinesPageLatestRunBuildParams
+        r"""ListPipelinesPageLatestRunBuildParams
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def action(self):
-        """Gets the action of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the action of this ListPipelinesPageLatestRunBuildParams.
 
         合并请求事件类型
 
@@ -145,7 +145,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the action of this ListPipelinesPageLatestRunBuildParams.
 
         合并请求事件类型
 
@@ -156,7 +156,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def build_type(self):
-        """Gets the build_type of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the build_type of this ListPipelinesPageLatestRunBuildParams.
 
         基于分支还是tag运行
 
@@ -167,7 +167,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @build_type.setter
     def build_type(self, build_type):
-        """Sets the build_type of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the build_type of this ListPipelinesPageLatestRunBuildParams.
 
         基于分支还是tag运行
 
@@ -178,7 +178,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the commit_id of this ListPipelinesPageLatestRunBuildParams.
 
         代码仓提交ID
 
@@ -189,7 +189,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the commit_id of this ListPipelinesPageLatestRunBuildParams.
 
         代码仓提交ID
 
@@ -200,7 +200,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the event_type of this ListPipelinesPageLatestRunBuildParams.
 
         运行事件类型
 
@@ -211,7 +211,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the event_type of this ListPipelinesPageLatestRunBuildParams.
 
         运行事件类型
 
@@ -222,7 +222,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def merge_id(self):
-        """Gets the merge_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the merge_id of this ListPipelinesPageLatestRunBuildParams.
 
         合并请求ID
 
@@ -233,7 +233,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @merge_id.setter
     def merge_id(self, merge_id):
-        """Sets the merge_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the merge_id of this ListPipelinesPageLatestRunBuildParams.
 
         合并请求ID
 
@@ -244,7 +244,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def message(self):
-        """Gets the message of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the message of this ListPipelinesPageLatestRunBuildParams.
 
         代码仓提交信息
 
@@ -255,7 +255,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the message of this ListPipelinesPageLatestRunBuildParams.
 
         代码仓提交信息
 
@@ -266,7 +266,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def source_branch(self):
-        """Gets the source_branch of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the source_branch of this ListPipelinesPageLatestRunBuildParams.
 
         源分支
 
@@ -277,7 +277,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @source_branch.setter
     def source_branch(self, source_branch):
-        """Sets the source_branch of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the source_branch of this ListPipelinesPageLatestRunBuildParams.
 
         源分支
 
@@ -288,7 +288,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def tag(self):
-        """Gets the tag of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the tag of this ListPipelinesPageLatestRunBuildParams.
 
         标签
 
@@ -299,7 +299,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the tag of this ListPipelinesPageLatestRunBuildParams.
 
         标签
 
@@ -310,7 +310,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the target_branch of this ListPipelinesPageLatestRunBuildParams.
 
         目标分支
 
@@ -321,7 +321,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the target_branch of this ListPipelinesPageLatestRunBuildParams.
 
         目标分支
 
@@ -332,7 +332,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the codehub_id of this ListPipelinesPageLatestRunBuildParams.
 
         codehub仓库ID
 
@@ -343,7 +343,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the codehub_id of this ListPipelinesPageLatestRunBuildParams.
 
         codehub仓库ID
 
@@ -354,7 +354,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def git_url(self):
-        """Gets the git_url of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the git_url of this ListPipelinesPageLatestRunBuildParams.
 
         代码仓https地址
 
@@ -365,7 +365,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the git_url of this ListPipelinesPageLatestRunBuildParams.
 
         代码仓https地址
 
@@ -376,7 +376,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def source_codehub_id(self):
-        """Gets the source_codehub_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the source_codehub_id of this ListPipelinesPageLatestRunBuildParams.
 
         源codehub代码仓ID
 
@@ -387,7 +387,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @source_codehub_id.setter
     def source_codehub_id(self, source_codehub_id):
-        """Sets the source_codehub_id of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the source_codehub_id of this ListPipelinesPageLatestRunBuildParams.
 
         源codehub代码仓ID
 
@@ -398,7 +398,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def source_codehub_url(self):
-        """Gets the source_codehub_url of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the source_codehub_url of this ListPipelinesPageLatestRunBuildParams.
 
         源codehub代码仓地址
 
@@ -409,7 +409,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @source_codehub_url.setter
     def source_codehub_url(self, source_codehub_url):
-        """Sets the source_codehub_url of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the source_codehub_url of this ListPipelinesPageLatestRunBuildParams.
 
         源codehub代码仓地址
 
@@ -420,7 +420,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @property
     def source_codehub_http_url(self):
-        """Gets the source_codehub_http_url of this ListPipelinesPageLatestRunBuildParams.
+        r"""Gets the source_codehub_http_url of this ListPipelinesPageLatestRunBuildParams.
 
         源codehub代码仓http地址
 
@@ -431,7 +431,7 @@ class ListPipelinesPageLatestRunBuildParams:
 
     @source_codehub_http_url.setter
     def source_codehub_http_url(self, source_codehub_http_url):
-        """Sets the source_codehub_http_url of this ListPipelinesPageLatestRunBuildParams.
+        r"""Sets the source_codehub_http_url of this ListPipelinesPageLatestRunBuildParams.
 
         源codehub代码仓http地址
 

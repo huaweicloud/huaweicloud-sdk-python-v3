@@ -28,7 +28,7 @@ class ListRiskItemsResponse(SdkResponse):
     }
 
     def __init__(self, datastore_type=None, items=None):
-        """ListRiskItemsResponse
+        r"""ListRiskItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRiskItemsResponse(SdkResponse):
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListRiskItemsResponse.
+        r"""Gets the datastore_type of this ListRiskItemsResponse.
 
         数据库类型
 
@@ -62,7 +62,7 @@ class ListRiskItemsResponse(SdkResponse):
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListRiskItemsResponse.
+        r"""Sets the datastore_type of this ListRiskItemsResponse.
 
         数据库类型
 
@@ -73,7 +73,7 @@ class ListRiskItemsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListRiskItemsResponse.
+        r"""Gets the items of this ListRiskItemsResponse.
 
         风险指标项
 
@@ -84,7 +84,7 @@ class ListRiskItemsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListRiskItemsResponse.
+        r"""Sets the items of this ListRiskItemsResponse.
 
         风险指标项
 

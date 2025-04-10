@@ -27,7 +27,7 @@ class BatchSetMaintenanceModeReq:
     }
 
     def __init__(self, desktop_ids=None, in_maintenance_mode=None):
-        """BatchSetMaintenanceModeReq
+        r"""BatchSetMaintenanceModeReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchSetMaintenanceModeReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this BatchSetMaintenanceModeReq.
+        r"""Gets the desktop_ids of this BatchSetMaintenanceModeReq.
 
         需要设置维护模式的desktopId列表
 
@@ -59,7 +59,7 @@ class BatchSetMaintenanceModeReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this BatchSetMaintenanceModeReq.
+        r"""Sets the desktop_ids of this BatchSetMaintenanceModeReq.
 
         需要设置维护模式的desktopId列表
 
@@ -70,7 +70,7 @@ class BatchSetMaintenanceModeReq:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this BatchSetMaintenanceModeReq.
+        r"""Gets the in_maintenance_mode of this BatchSetMaintenanceModeReq.
 
         进入或退出管理员维护模式 false:  退出维护模式 true: 维护模式
 
@@ -81,7 +81,7 @@ class BatchSetMaintenanceModeReq:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this BatchSetMaintenanceModeReq.
+        r"""Sets the in_maintenance_mode of this BatchSetMaintenanceModeReq.
 
         进入或退出管理员维护模式 false:  退出维护模式 true: 维护模式
 

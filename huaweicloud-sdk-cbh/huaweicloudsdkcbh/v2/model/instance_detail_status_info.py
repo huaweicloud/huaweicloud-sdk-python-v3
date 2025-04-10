@@ -35,7 +35,7 @@ class InstanceDetailStatusInfo:
     }
 
     def __init__(self, status=None, task_status=None, create_instance_status=None, instance_status=None, instance_description=None, fail_reason=None):
-        """InstanceDetailStatusInfo
+        r"""InstanceDetailStatusInfo
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class InstanceDetailStatusInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceDetailStatusInfo.
+        r"""Gets the status of this InstanceDetailStatusInfo.
 
         云堡垒机实例状态。 - SHUTOFF：已关闭 - ACTIVE：运行中 - DELETING：删除中 - BUILD：创建中 - DELETED：已删除 - ERROR：故障 - HAWAIT：等待备机创建成功 - FROZEN：已冻结 - UPGRADING：升级中 - UNPAID：待支付 - RESIZE：规格变更中 - DILATATION：扩容中 - HA：配置HA中
 
@@ -83,7 +83,7 @@ class InstanceDetailStatusInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceDetailStatusInfo.
+        r"""Sets the status of this InstanceDetailStatusInfo.
 
         云堡垒机实例状态。 - SHUTOFF：已关闭 - ACTIVE：运行中 - DELETING：删除中 - BUILD：创建中 - DELETED：已删除 - ERROR：故障 - HAWAIT：等待备机创建成功 - FROZEN：已冻结 - UPGRADING：升级中 - UNPAID：待支付 - RESIZE：规格变更中 - DILATATION：扩容中 - HA：配置HA中
 
@@ -94,7 +94,7 @@ class InstanceDetailStatusInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this InstanceDetailStatusInfo.
+        r"""Gets the task_status of this InstanceDetailStatusInfo.
 
         云堡垒机实例当前的任务状态。 - powering-on：开启 - powering-off：关闭 - rebooting：重启 - delete_wait：删除 - frozen：冻结 - NO_TASK：运行 - unfrozen：解冻 - alter：变更 - updating：升级中 - configuring-ha：配置HA - data-migrating：数据迁移中 - rollback：版本回滚中 - traffic-switchover：流量切换中
 
@@ -105,7 +105,7 @@ class InstanceDetailStatusInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this InstanceDetailStatusInfo.
+        r"""Sets the task_status of this InstanceDetailStatusInfo.
 
         云堡垒机实例当前的任务状态。 - powering-on：开启 - powering-off：关闭 - rebooting：重启 - delete_wait：删除 - frozen：冻结 - NO_TASK：运行 - unfrozen：解冻 - alter：变更 - updating：升级中 - configuring-ha：配置HA - data-migrating：数据迁移中 - rollback：版本回滚中 - traffic-switchover：流量切换中
 
@@ -116,7 +116,7 @@ class InstanceDetailStatusInfo:
 
     @property
     def create_instance_status(self):
-        """Gets the create_instance_status of this InstanceDetailStatusInfo.
+        r"""Gets the create_instance_status of this InstanceDetailStatusInfo.
 
         云堡垒机实例在创建实例过程中的状态信息。 - Waiting for payment：等待支付 - creating-network：创建网络 - creating-server：创建服务 - tranfering-horizontal-network：网络打通 - adding-policy-route：添加路由策略 - configing-dns：配置DNS - starting-cbs-service：服务运行中 - setting-init-conf：初始化 - buying-EIP：购买弹性公网IP
 
@@ -127,7 +127,7 @@ class InstanceDetailStatusInfo:
 
     @create_instance_status.setter
     def create_instance_status(self, create_instance_status):
-        """Sets the create_instance_status of this InstanceDetailStatusInfo.
+        r"""Sets the create_instance_status of this InstanceDetailStatusInfo.
 
         云堡垒机实例在创建实例过程中的状态信息。 - Waiting for payment：等待支付 - creating-network：创建网络 - creating-server：创建服务 - tranfering-horizontal-network：网络打通 - adding-policy-route：添加路由策略 - configing-dns：配置DNS - starting-cbs-service：服务运行中 - setting-init-conf：初始化 - buying-EIP：购买弹性公网IP
 
@@ -138,7 +138,7 @@ class InstanceDetailStatusInfo:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this InstanceDetailStatusInfo.
+        r"""Gets the instance_status of this InstanceDetailStatusInfo.
 
         云堡垒机实例状态。 - building：创建中 - deleting：删除中 - deleted：删除了 - unpaid：未支付 - upgrading：升级中 - resizing：扩容中 - abnormal：异常 - error：故障 - ok：正常
 
@@ -149,7 +149,7 @@ class InstanceDetailStatusInfo:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this InstanceDetailStatusInfo.
+        r"""Sets the instance_status of this InstanceDetailStatusInfo.
 
         云堡垒机实例状态。 - building：创建中 - deleting：删除中 - deleted：删除了 - unpaid：未支付 - upgrading：升级中 - resizing：扩容中 - abnormal：异常 - error：故障 - ok：正常
 
@@ -160,7 +160,7 @@ class InstanceDetailStatusInfo:
 
     @property
     def instance_description(self):
-        """Gets the instance_description of this InstanceDetailStatusInfo.
+        r"""Gets the instance_description of this InstanceDetailStatusInfo.
 
         云堡垒机实例信息描述。
 
@@ -171,7 +171,7 @@ class InstanceDetailStatusInfo:
 
     @instance_description.setter
     def instance_description(self, instance_description):
-        """Sets the instance_description of this InstanceDetailStatusInfo.
+        r"""Sets the instance_description of this InstanceDetailStatusInfo.
 
         云堡垒机实例信息描述。
 
@@ -182,7 +182,7 @@ class InstanceDetailStatusInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this InstanceDetailStatusInfo.
+        r"""Gets the fail_reason of this InstanceDetailStatusInfo.
 
         云堡垒机实例创建实例失败原因。
 
@@ -193,7 +193,7 @@ class InstanceDetailStatusInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this InstanceDetailStatusInfo.
+        r"""Sets the fail_reason of this InstanceDetailStatusInfo.
 
         云堡垒机实例创建实例失败原因。
 

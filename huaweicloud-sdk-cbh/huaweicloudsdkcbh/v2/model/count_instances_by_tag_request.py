@@ -25,7 +25,7 @@ class CountInstancesByTagRequest:
     }
 
     def __init__(self, body=None):
-        """CountInstancesByTagRequest
+        r"""CountInstancesByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountInstancesByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountInstancesByTagRequest.
+        r"""Gets the body of this CountInstancesByTagRequest.
 
         :return: The body of this CountInstancesByTagRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.ListCBHByTagsRequestBody`
@@ -52,7 +52,7 @@ class CountInstancesByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountInstancesByTagRequest.
+        r"""Sets the body of this CountInstancesByTagRequest.
 
         :param body: The body of this CountInstancesByTagRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.ListCBHByTagsRequestBody`

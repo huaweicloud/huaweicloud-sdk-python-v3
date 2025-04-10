@@ -63,7 +63,7 @@ class OrderReq:
     }
 
     def __init__(self, region_id=None, commodity_id=None, product_id=None, period_type=None, period_num=None, availability_zone=None, vpc_id=None, security_group_id=None, net_id=None, instance_name=None, eps_id=None, is_auto_renew=None, promotion_info=None, extesion_package_type=None, binding_instance_id=None, cdm_version=None, resource_spec_code=None, cloud_service_type=None, resource_type=None, tags=None):
-        """OrderReq
+        r"""OrderReq
 
         The model defined in huaweicloud sdk
 
@@ -165,7 +165,7 @@ class OrderReq:
 
     @property
     def region_id(self):
-        """Gets the region_id of this OrderReq.
+        r"""Gets the region_id of this OrderReq.
 
         区域Id
 
@@ -176,7 +176,7 @@ class OrderReq:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this OrderReq.
+        r"""Sets the region_id of this OrderReq.
 
         区域Id
 
@@ -187,7 +187,7 @@ class OrderReq:
 
     @property
     def commodity_id(self):
-        """Gets the commodity_id of this OrderReq.
+        r"""Gets the commodity_id of this OrderReq.
 
         订单Id
 
@@ -198,7 +198,7 @@ class OrderReq:
 
     @commodity_id.setter
     def commodity_id(self, commodity_id):
-        """Sets the commodity_id of this OrderReq.
+        r"""Sets the commodity_id of this OrderReq.
 
         订单Id
 
@@ -209,7 +209,7 @@ class OrderReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this OrderReq.
+        r"""Gets the product_id of this OrderReq.
 
         产品Id
 
@@ -220,7 +220,7 @@ class OrderReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this OrderReq.
+        r"""Sets the product_id of this OrderReq.
 
         产品Id
 
@@ -231,7 +231,7 @@ class OrderReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this OrderReq.
+        r"""Gets the period_type of this OrderReq.
 
         购买周期类型（日月年）
 
@@ -242,7 +242,7 @@ class OrderReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this OrderReq.
+        r"""Sets the period_type of this OrderReq.
 
         购买周期类型（日月年）
 
@@ -253,7 +253,7 @@ class OrderReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this OrderReq.
+        r"""Gets the period_num of this OrderReq.
 
         购买周期数
 
@@ -264,7 +264,7 @@ class OrderReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this OrderReq.
+        r"""Sets the period_num of this OrderReq.
 
         购买周期数
 
@@ -275,7 +275,7 @@ class OrderReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this OrderReq.
+        r"""Gets the availability_zone of this OrderReq.
 
         可用区
 
@@ -286,7 +286,7 @@ class OrderReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this OrderReq.
+        r"""Sets the availability_zone of this OrderReq.
 
         可用区
 
@@ -297,7 +297,7 @@ class OrderReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this OrderReq.
+        r"""Gets the vpc_id of this OrderReq.
 
         虚拟网卡Id
 
@@ -308,7 +308,7 @@ class OrderReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this OrderReq.
+        r"""Sets the vpc_id of this OrderReq.
 
         虚拟网卡Id
 
@@ -319,7 +319,7 @@ class OrderReq:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this OrderReq.
+        r"""Gets the security_group_id of this OrderReq.
 
         安全组Id
 
@@ -330,7 +330,7 @@ class OrderReq:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this OrderReq.
+        r"""Sets the security_group_id of this OrderReq.
 
         安全组Id
 
@@ -341,7 +341,7 @@ class OrderReq:
 
     @property
     def net_id(self):
-        """Gets the net_id of this OrderReq.
+        r"""Gets the net_id of this OrderReq.
 
         子网Id
 
@@ -352,7 +352,7 @@ class OrderReq:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this OrderReq.
+        r"""Sets the net_id of this OrderReq.
 
         子网Id
 
@@ -363,7 +363,7 @@ class OrderReq:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this OrderReq.
+        r"""Gets the instance_name of this OrderReq.
 
         实例名
 
@@ -374,7 +374,7 @@ class OrderReq:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this OrderReq.
+        r"""Sets the instance_name of this OrderReq.
 
         实例名
 
@@ -385,7 +385,7 @@ class OrderReq:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this OrderReq.
+        r"""Gets the eps_id of this OrderReq.
 
         企业项目Id
 
@@ -396,7 +396,7 @@ class OrderReq:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this OrderReq.
+        r"""Sets the eps_id of this OrderReq.
 
         企业项目Id
 
@@ -407,7 +407,7 @@ class OrderReq:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this OrderReq.
+        r"""Gets the is_auto_renew of this OrderReq.
 
         是否续订
 
@@ -418,7 +418,7 @@ class OrderReq:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this OrderReq.
+        r"""Sets the is_auto_renew of this OrderReq.
 
         是否续订
 
@@ -429,7 +429,7 @@ class OrderReq:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this OrderReq.
+        r"""Gets the promotion_info of this OrderReq.
 
         促销信息
 
@@ -440,7 +440,7 @@ class OrderReq:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this OrderReq.
+        r"""Sets the promotion_info of this OrderReq.
 
         促销信息
 
@@ -451,7 +451,7 @@ class OrderReq:
 
     @property
     def extesion_package_type(self):
-        """Gets the extesion_package_type of this OrderReq.
+        r"""Gets the extesion_package_type of this OrderReq.
 
         实例附加增量包类型
 
@@ -462,7 +462,7 @@ class OrderReq:
 
     @extesion_package_type.setter
     def extesion_package_type(self, extesion_package_type):
-        """Sets the extesion_package_type of this OrderReq.
+        r"""Sets the extesion_package_type of this OrderReq.
 
         实例附加增量包类型
 
@@ -473,7 +473,7 @@ class OrderReq:
 
     @property
     def binding_instance_id(self):
-        """Gets the binding_instance_id of this OrderReq.
+        r"""Gets the binding_instance_id of this OrderReq.
 
         增量包绑定的实例id
 
@@ -484,7 +484,7 @@ class OrderReq:
 
     @binding_instance_id.setter
     def binding_instance_id(self, binding_instance_id):
-        """Sets the binding_instance_id of this OrderReq.
+        r"""Sets the binding_instance_id of this OrderReq.
 
         增量包绑定的实例id
 
@@ -495,7 +495,7 @@ class OrderReq:
 
     @property
     def cdm_version(self):
-        """Gets the cdm_version of this OrderReq.
+        r"""Gets the cdm_version of this OrderReq.
 
         cdm版本号
 
@@ -506,7 +506,7 @@ class OrderReq:
 
     @cdm_version.setter
     def cdm_version(self, cdm_version):
-        """Sets the cdm_version of this OrderReq.
+        r"""Sets the cdm_version of this OrderReq.
 
         cdm版本号
 
@@ -517,7 +517,7 @@ class OrderReq:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this OrderReq.
+        r"""Gets the resource_spec_code of this OrderReq.
 
         实例规格编码
 
@@ -528,7 +528,7 @@ class OrderReq:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this OrderReq.
+        r"""Sets the resource_spec_code of this OrderReq.
 
         实例规格编码
 
@@ -539,7 +539,7 @@ class OrderReq:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this OrderReq.
+        r"""Gets the cloud_service_type of this OrderReq.
 
         云服务类型
 
@@ -550,7 +550,7 @@ class OrderReq:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this OrderReq.
+        r"""Sets the cloud_service_type of this OrderReq.
 
         云服务类型
 
@@ -561,7 +561,7 @@ class OrderReq:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this OrderReq.
+        r"""Gets the resource_type of this OrderReq.
 
         资源类型
 
@@ -572,7 +572,7 @@ class OrderReq:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this OrderReq.
+        r"""Sets the resource_type of this OrderReq.
 
         资源类型
 
@@ -583,7 +583,7 @@ class OrderReq:
 
     @property
     def tags(self):
-        """Gets the tags of this OrderReq.
+        r"""Gets the tags of this OrderReq.
 
         tms标签
 
@@ -594,7 +594,7 @@ class OrderReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this OrderReq.
+        r"""Sets the tags of this OrderReq.
 
         tms标签
 

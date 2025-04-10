@@ -33,7 +33,7 @@ class AttachServerVolumeOption:
     }
 
     def __init__(self, device=None, volume_id=None, volume_type=None, count=None, hwpassthrough=None):
-        """AttachServerVolumeOption
+        r"""AttachServerVolumeOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AttachServerVolumeOption:
 
     @property
     def device(self):
-        """Gets the device of this AttachServerVolumeOption.
+        r"""Gets the device of this AttachServerVolumeOption.
 
         磁盘挂载点。  > 说明：  - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。  - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。  - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
@@ -81,7 +81,7 @@ class AttachServerVolumeOption:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this AttachServerVolumeOption.
+        r"""Sets the device of this AttachServerVolumeOption.
 
         磁盘挂载点。  > 说明：  - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。  - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。  - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
@@ -92,7 +92,7 @@ class AttachServerVolumeOption:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this AttachServerVolumeOption.
+        r"""Gets the volume_id of this AttachServerVolumeOption.
 
         待挂载磁盘的磁盘ID，UUID格式。
 
@@ -103,7 +103,7 @@ class AttachServerVolumeOption:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this AttachServerVolumeOption.
+        r"""Sets the volume_id of this AttachServerVolumeOption.
 
         待挂载磁盘的磁盘ID，UUID格式。
 
@@ -114,7 +114,7 @@ class AttachServerVolumeOption:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this AttachServerVolumeOption.
+        r"""Gets the volume_type of this AttachServerVolumeOption.
 
         云硬盘类型。  该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
 
@@ -125,7 +125,7 @@ class AttachServerVolumeOption:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this AttachServerVolumeOption.
+        r"""Sets the volume_type of this AttachServerVolumeOption.
 
         云硬盘类型。  该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
 
@@ -136,7 +136,7 @@ class AttachServerVolumeOption:
 
     @property
     def count(self):
-        """Gets the count of this AttachServerVolumeOption.
+        r"""Gets the count of this AttachServerVolumeOption.
 
         云硬盘的个数。  该字段于dry_run为true并且volumeId不存在时有效，如果该字段不存在，默认为1。
 
@@ -147,7 +147,7 @@ class AttachServerVolumeOption:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this AttachServerVolumeOption.
+        r"""Sets the count of this AttachServerVolumeOption.
 
         云硬盘的个数。  该字段于dry_run为true并且volumeId不存在时有效，如果该字段不存在，默认为1。
 
@@ -158,7 +158,7 @@ class AttachServerVolumeOption:
 
     @property
     def hwpassthrough(self):
-        """Gets the hwpassthrough of this AttachServerVolumeOption.
+        r"""Gets the hwpassthrough of this AttachServerVolumeOption.
 
         - true: 表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令 - false: 表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，VBD只能支持简单的SCSI读写命令。 该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
 
@@ -169,7 +169,7 @@ class AttachServerVolumeOption:
 
     @hwpassthrough.setter
     def hwpassthrough(self, hwpassthrough):
-        """Sets the hwpassthrough of this AttachServerVolumeOption.
+        r"""Sets the hwpassthrough of this AttachServerVolumeOption.
 
         - true: 表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令 - false: 表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，VBD只能支持简单的SCSI读写命令。 该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
 

@@ -25,7 +25,7 @@ class CreateSubjectResultData:
     }
 
     def __init__(self, value=None):
-        """CreateSubjectResultData
+        r"""CreateSubjectResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSubjectResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateSubjectResultData.
+        r"""Gets the value of this CreateSubjectResultData.
 
         :return: The value of this CreateSubjectResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogVO`
@@ -52,7 +52,7 @@ class CreateSubjectResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateSubjectResultData.
+        r"""Sets the value of this CreateSubjectResultData.
 
         :param value: The value of this CreateSubjectResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.CatalogVO`

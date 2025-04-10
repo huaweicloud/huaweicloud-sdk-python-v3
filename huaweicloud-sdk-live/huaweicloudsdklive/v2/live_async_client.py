@@ -34,7 +34,7 @@ class LiveAsyncClient(Client):
         return client_builder
 
     def list_area_detail_async(self, request):
-        """查询直播各区域指标分布接口
+        r"""查询直播各区域指标分布接口
 
         查询直播全球区域维度的详细数据接口。
         
@@ -128,7 +128,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_bandwidth_detail_async(self, request):
-        """查询播放带宽趋势接口
+        r"""查询播放带宽趋势接口
 
         查询播放域名带宽数据。
         
@@ -223,7 +223,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_domain_bandwidth_peak_async(self, request):
-        """查询播放带宽峰值接口
+        r"""查询播放带宽峰值接口
 
         查询指定时间范围内播放带宽峰值。
         
@@ -313,7 +313,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_domain_traffic_detail_async(self, request):
-        """查询播放流量趋势接口
+        r"""查询播放流量趋势接口
 
         查询播放域名流量数据。
         
@@ -405,7 +405,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_domain_traffic_summary_async(self, request):
-        """查询播放流量汇总接口
+        r"""查询播放流量汇总接口
 
         查询指定时间范围内流量汇总量。
         
@@ -495,7 +495,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_history_streams_async(self, request):
-        """查询历史推流列表接口
+        r"""查询历史推流列表接口
 
         查询历史推流列表。
         
@@ -576,7 +576,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_play_domain_stream_info_async(self, request):
-        """查询播放域名下的流数据
+        r"""查询播放域名下的流数据
 
         查询播放域名下的监控数据，根据输入时间点，返回查询该时间点所有流的带宽、在线人数、协议。
         返回的数据粒度为1分钟。
@@ -646,7 +646,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_query_http_code_async(self, request):
-        """查询直播拉流HTTP状态码接口
+        r"""查询直播拉流HTTP状态码接口
 
         查询直播拉流HTTP状态码接口。  获取加速域名1分钟粒度的HTTP返回码  最大查询跨度不能超过24小时，最大查询周期7天。
         
@@ -725,7 +725,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_record_data_async(self, request):
-        """查询录制用量接口
+        r"""查询录制用量接口
 
         查询直播租户每小时录制的最大并发数，计算1小时内每分钟的并发总路数，取最大值做为统计值。  最大查询跨度31天，最大查询周期90天。
         
@@ -794,7 +794,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_snapshot_data_async(self, request):
-        """查询截图用量接口
+        r"""查询截图用量接口
 
         查询直播域名每小时的截图数量。  最大查询跨度31天，最大查询周期90天。
         
@@ -863,7 +863,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_transcode_data_async(self, request):
-        """查询转码用量接口
+        r"""查询转码用量接口
 
         查询直播域名每小时的转码时长数据。  最大查询跨度31天，最大查询周期90天。
         
@@ -934,7 +934,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_users_of_stream_async(self, request):
-        """查询观众趋势接口
+        r"""查询观众趋势接口
 
         查询观众趋势。  最大查询跨度31天，最大查询周期一年。
         
@@ -1022,7 +1022,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def show_stream_count_async(self, request):
-        """查询域名维度推流路数接口
+        r"""查询域名维度推流路数接口
 
         查询域名维度推流路数接口。  最大查询跨度31天，最大查询周期1年。
         
@@ -1092,7 +1092,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def show_stream_portrait_async(self, request):
-        """查询播放画像信息接口
+        r"""查询播放画像信息接口
 
         查询播放画像信息。  最大查询跨度1天，最大查询周期31天。
         不统计协议为HLS的播放时长（play_duration）信息。
@@ -1162,7 +1162,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def show_up_bandwidth_async(self, request):
-        """查询上行带宽数据接口
+        r"""查询上行带宽数据接口
 
         查询上行带宽数据。  最大查询跨度31天，最大查询周期1年。
         
@@ -1246,7 +1246,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_single_stream_bitrate_async(self, request):
-        """查询推流码率数据接口
+        r"""查询推流码率数据接口
 
         查询推流监控码率数据接口。
         
@@ -1323,7 +1323,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_single_stream_detail_async(self, request):
-        """查询推流监控数据接口
+        r"""查询推流监控数据接口
 
         查询流监控数据接口，包括帧率码率断流情况。
         
@@ -1400,7 +1400,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_single_stream_framerate_async(self, request):
-        """查询推流帧率数据接口
+        r"""查询推流帧率数据接口
 
         查询推流帧率数据接口。
         
@@ -1477,7 +1477,7 @@ class LiveAsyncClient(Client):
         return http_info
 
     def list_up_stream_detail_async(self, request):
-        """查询CDN上行推流质量数据接口
+        r"""查询CDN上行推流质量数据接口
 
         查询CDN上行推流质量数据。
         

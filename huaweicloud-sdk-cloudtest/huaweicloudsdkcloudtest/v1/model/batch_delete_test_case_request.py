@@ -27,7 +27,7 @@ class BatchDeleteTestCaseRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchDeleteTestCaseRequest
+        r"""BatchDeleteTestCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteTestCaseRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchDeleteTestCaseRequest.
+        r"""Gets the project_id of this BatchDeleteTestCaseRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -60,7 +60,7 @@ class BatchDeleteTestCaseRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchDeleteTestCaseRequest.
+        r"""Sets the project_id of this BatchDeleteTestCaseRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -71,7 +71,7 @@ class BatchDeleteTestCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTestCaseRequest.
+        r"""Gets the body of this BatchDeleteTestCaseRequest.
 
         :return: The body of this BatchDeleteTestCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteTestCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTestCaseRequest.
+        r"""Sets the body of this BatchDeleteTestCaseRequest.
 
         :param body: The body of this BatchDeleteTestCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`

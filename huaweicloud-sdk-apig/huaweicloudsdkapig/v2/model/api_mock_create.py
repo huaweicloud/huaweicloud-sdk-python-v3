@@ -31,7 +31,7 @@ class ApiMockCreate:
     }
 
     def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None):
-        """ApiMockCreate
+        r"""ApiMockCreate
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApiMockCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiMockCreate.
+        r"""Gets the remark of this ApiMockCreate.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -75,7 +75,7 @@ class ApiMockCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiMockCreate.
+        r"""Sets the remark of this ApiMockCreate.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -86,7 +86,7 @@ class ApiMockCreate:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiMockCreate.
+        r"""Gets the result_content of this ApiMockCreate.
 
         返回结果
 
@@ -97,7 +97,7 @@ class ApiMockCreate:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiMockCreate.
+        r"""Sets the result_content of this ApiMockCreate.
 
         返回结果
 
@@ -108,7 +108,7 @@ class ApiMockCreate:
 
     @property
     def version(self):
-        """Gets the version of this ApiMockCreate.
+        r"""Gets the version of this ApiMockCreate.
 
         版本。字符长度不超过64
 
@@ -119,7 +119,7 @@ class ApiMockCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiMockCreate.
+        r"""Sets the version of this ApiMockCreate.
 
         版本。字符长度不超过64
 
@@ -130,7 +130,7 @@ class ApiMockCreate:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiMockCreate.
+        r"""Gets the authorizer_id of this ApiMockCreate.
 
         后端自定义认证ID
 
@@ -141,7 +141,7 @@ class ApiMockCreate:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiMockCreate.
+        r"""Sets the authorizer_id of this ApiMockCreate.
 
         后端自定义认证ID
 

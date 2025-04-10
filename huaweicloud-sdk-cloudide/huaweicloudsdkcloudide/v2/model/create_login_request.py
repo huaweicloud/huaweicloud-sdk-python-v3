@@ -25,7 +25,7 @@ class CreateLoginRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLoginRequest
+        r"""CreateLoginRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLoginRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLoginRequest.
+        r"""Gets the body of this CreateLoginRequest.
 
         :return: The body of this CreateLoginRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.LoginSchema`
@@ -52,7 +52,7 @@ class CreateLoginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLoginRequest.
+        r"""Sets the body of this CreateLoginRequest.
 
         :param body: The body of this CreateLoginRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.LoginSchema`

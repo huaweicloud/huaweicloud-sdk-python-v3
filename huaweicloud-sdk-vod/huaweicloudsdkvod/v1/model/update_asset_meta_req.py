@@ -33,7 +33,7 @@ class UpdateAssetMetaReq:
     }
 
     def __init__(self, asset_id=None, title=None, description=None, category_id=None, tags=None):
-        """UpdateAssetMetaReq
+        r"""UpdateAssetMetaReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UpdateAssetMetaReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateAssetMetaReq.
+        r"""Gets the asset_id of this UpdateAssetMetaReq.
 
         媒资ID。
 
@@ -81,7 +81,7 @@ class UpdateAssetMetaReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateAssetMetaReq.
+        r"""Sets the asset_id of this UpdateAssetMetaReq.
 
         媒资ID。
 
@@ -92,7 +92,7 @@ class UpdateAssetMetaReq:
 
     @property
     def title(self):
-        """Gets the title of this UpdateAssetMetaReq.
+        r"""Gets the title of this UpdateAssetMetaReq.
 
         媒资标题，长度不超过128个字节，UTF-8编码。
 
@@ -103,7 +103,7 @@ class UpdateAssetMetaReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this UpdateAssetMetaReq.
+        r"""Sets the title of this UpdateAssetMetaReq.
 
         媒资标题，长度不超过128个字节，UTF-8编码。
 
@@ -114,7 +114,7 @@ class UpdateAssetMetaReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAssetMetaReq.
+        r"""Gets the description of this UpdateAssetMetaReq.
 
         媒资描述，长度不超过1024个字节。
 
@@ -125,7 +125,7 @@ class UpdateAssetMetaReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAssetMetaReq.
+        r"""Sets the description of this UpdateAssetMetaReq.
 
         媒资描述，长度不超过1024个字节。
 
@@ -136,7 +136,7 @@ class UpdateAssetMetaReq:
 
     @property
     def category_id(self):
-        """Gets the category_id of this UpdateAssetMetaReq.
+        r"""Gets the category_id of this UpdateAssetMetaReq.
 
         媒资分类id。
 
@@ -147,7 +147,7 @@ class UpdateAssetMetaReq:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this UpdateAssetMetaReq.
+        r"""Sets the category_id of this UpdateAssetMetaReq.
 
         媒资分类id。
 
@@ -158,7 +158,7 @@ class UpdateAssetMetaReq:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateAssetMetaReq.
+        r"""Gets the tags of this UpdateAssetMetaReq.
 
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF-8编码。
 
@@ -169,7 +169,7 @@ class UpdateAssetMetaReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateAssetMetaReq.
+        r"""Sets the tags of this UpdateAssetMetaReq.
 
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF-8编码。
 

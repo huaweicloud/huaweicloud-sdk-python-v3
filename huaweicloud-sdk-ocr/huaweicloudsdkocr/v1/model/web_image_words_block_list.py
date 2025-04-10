@@ -33,7 +33,7 @@ class WebImageWordsBlockList:
     }
 
     def __init__(self, words=None, confidence=None, location=None, font_list=None, font_scores=None):
-        """WebImageWordsBlockList
+        r"""WebImageWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class WebImageWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this WebImageWordsBlockList.
+        r"""Gets the words of this WebImageWordsBlockList.
 
         文字块识别结果。 
 
@@ -82,7 +82,7 @@ class WebImageWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this WebImageWordsBlockList.
+        r"""Sets the words of this WebImageWordsBlockList.
 
         文字块识别结果。 
 
@@ -93,7 +93,7 @@ class WebImageWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this WebImageWordsBlockList.
+        r"""Gets the confidence of this WebImageWordsBlockList.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -104,7 +104,7 @@ class WebImageWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this WebImageWordsBlockList.
+        r"""Sets the confidence of this WebImageWordsBlockList.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -115,7 +115,7 @@ class WebImageWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this WebImageWordsBlockList.
+        r"""Gets the location of this WebImageWordsBlockList.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -126,7 +126,7 @@ class WebImageWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this WebImageWordsBlockList.
+        r"""Sets the location of this WebImageWordsBlockList.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -137,7 +137,7 @@ class WebImageWordsBlockList:
 
     @property
     def font_list(self):
-        """Gets the font_list of this WebImageWordsBlockList.
+        r"""Gets the font_list of this WebImageWordsBlockList.
 
         文字块所属字体类型，列表形式，表示与文字块的文字最接近的字体类型。 
 
@@ -148,7 +148,7 @@ class WebImageWordsBlockList:
 
     @font_list.setter
     def font_list(self, font_list):
-        """Sets the font_list of this WebImageWordsBlockList.
+        r"""Sets the font_list of this WebImageWordsBlockList.
 
         文字块所属字体类型，列表形式，表示与文字块的文字最接近的字体类型。 
 
@@ -159,7 +159,7 @@ class WebImageWordsBlockList:
 
     @property
     def font_scores(self):
-        """Gets the font_scores of this WebImageWordsBlockList.
+        r"""Gets the font_scores of this WebImageWordsBlockList.
 
         文字块所属字体类型的概率，列表形式，与font_list一一对应，表示文字块的文字属于某种字体类型的概率。 
 
@@ -170,7 +170,7 @@ class WebImageWordsBlockList:
 
     @font_scores.setter
     def font_scores(self, font_scores):
-        """Sets the font_scores of this WebImageWordsBlockList.
+        r"""Sets the font_scores of this WebImageWordsBlockList.
 
         文字块所属字体类型的概率，列表形式，与font_list一一对应，表示文字块的文字属于某种字体类型的概率。 
 

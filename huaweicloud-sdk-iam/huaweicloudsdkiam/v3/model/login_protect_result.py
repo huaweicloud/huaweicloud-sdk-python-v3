@@ -29,7 +29,7 @@ class LoginProtectResult:
     }
 
     def __init__(self, enabled=None, user_id=None, verification_method=None):
-        """LoginProtectResult
+        r"""LoginProtectResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LoginProtectResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this LoginProtectResult.
+        r"""Gets the enabled of this LoginProtectResult.
 
         IAM用户是否开启登录保护，开启为\"true\"，未开启为\"false\"。
 
@@ -65,7 +65,7 @@ class LoginProtectResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this LoginProtectResult.
+        r"""Sets the enabled of this LoginProtectResult.
 
         IAM用户是否开启登录保护，开启为\"true\"，未开启为\"false\"。
 
@@ -76,7 +76,7 @@ class LoginProtectResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this LoginProtectResult.
+        r"""Gets the user_id of this LoginProtectResult.
 
         IAM用户ID。
 
@@ -87,7 +87,7 @@ class LoginProtectResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this LoginProtectResult.
+        r"""Sets the user_id of this LoginProtectResult.
 
         IAM用户ID。
 
@@ -98,7 +98,7 @@ class LoginProtectResult:
 
     @property
     def verification_method(self):
-        """Gets the verification_method of this LoginProtectResult.
+        r"""Gets the verification_method of this LoginProtectResult.
 
         IAM用户登录验证方式。
 
@@ -109,7 +109,7 @@ class LoginProtectResult:
 
     @verification_method.setter
     def verification_method(self, verification_method):
-        """Sets the verification_method of this LoginProtectResult.
+        r"""Sets the verification_method of this LoginProtectResult.
 
         IAM用户登录验证方式。
 

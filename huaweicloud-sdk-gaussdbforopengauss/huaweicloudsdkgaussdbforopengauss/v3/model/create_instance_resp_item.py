@@ -55,7 +55,7 @@ class CreateInstanceRespItem:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, ha=None, port=None, volume=None, replica_num=None, region=None, backup_strategy=None, flavor_ref=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None):
-        """CreateInstanceRespItem
+        r"""CreateInstanceRespItem
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class CreateInstanceRespItem:
 
     @property
     def id(self):
-        """Gets the id of this CreateInstanceRespItem.
+        r"""Gets the id of this CreateInstanceRespItem.
 
         实例id
 
@@ -143,7 +143,7 @@ class CreateInstanceRespItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInstanceRespItem.
+        r"""Sets the id of this CreateInstanceRespItem.
 
         实例id
 
@@ -154,7 +154,7 @@ class CreateInstanceRespItem:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceRespItem.
+        r"""Gets the name of this CreateInstanceRespItem.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -165,7 +165,7 @@ class CreateInstanceRespItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceRespItem.
+        r"""Sets the name of this CreateInstanceRespItem.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -176,7 +176,7 @@ class CreateInstanceRespItem:
 
     @property
     def status(self):
-        """Gets the status of this CreateInstanceRespItem.
+        r"""Gets the status of this CreateInstanceRespItem.
 
         实例状态。如BUILD，表示创建中。 仅创建按需实例时会返回该参数。
 
@@ -187,7 +187,7 @@ class CreateInstanceRespItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateInstanceRespItem.
+        r"""Sets the status of this CreateInstanceRespItem.
 
         实例状态。如BUILD，表示创建中。 仅创建按需实例时会返回该参数。
 
@@ -198,7 +198,7 @@ class CreateInstanceRespItem:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateInstanceRespItem.
+        r"""Gets the datastore of this CreateInstanceRespItem.
 
         :return: The datastore of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
@@ -207,7 +207,7 @@ class CreateInstanceRespItem:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateInstanceRespItem.
+        r"""Sets the datastore of this CreateInstanceRespItem.
 
         :param datastore: The datastore of this CreateInstanceRespItem.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
@@ -216,7 +216,7 @@ class CreateInstanceRespItem:
 
     @property
     def ha(self):
-        """Gets the ha of this CreateInstanceRespItem.
+        r"""Gets the ha of this CreateInstanceRespItem.
 
         :return: The ha of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
@@ -225,7 +225,7 @@ class CreateInstanceRespItem:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this CreateInstanceRespItem.
+        r"""Sets the ha of this CreateInstanceRespItem.
 
         :param ha: The ha of this CreateInstanceRespItem.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
@@ -234,7 +234,7 @@ class CreateInstanceRespItem:
 
     @property
     def port(self):
-        """Gets the port of this CreateInstanceRespItem.
+        r"""Gets the port of this CreateInstanceRespItem.
 
         数据库端口信息。 当不传该参数时，默认端口8000。
 
@@ -245,7 +245,7 @@ class CreateInstanceRespItem:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateInstanceRespItem.
+        r"""Sets the port of this CreateInstanceRespItem.
 
         数据库端口信息。 当不传该参数时，默认端口8000。
 
@@ -256,7 +256,7 @@ class CreateInstanceRespItem:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateInstanceRespItem.
+        r"""Gets the volume of this CreateInstanceRespItem.
 
         :return: The volume of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -265,7 +265,7 @@ class CreateInstanceRespItem:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateInstanceRespItem.
+        r"""Sets the volume of this CreateInstanceRespItem.
 
         :param volume: The volume of this CreateInstanceRespItem.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -274,7 +274,7 @@ class CreateInstanceRespItem:
 
     @property
     def replica_num(self):
-        """Gets the replica_num of this CreateInstanceRespItem.
+        r"""Gets the replica_num of this CreateInstanceRespItem.
 
         实例副本数。
 
@@ -285,7 +285,7 @@ class CreateInstanceRespItem:
 
     @replica_num.setter
     def replica_num(self, replica_num):
-        """Sets the replica_num of this CreateInstanceRespItem.
+        r"""Sets the replica_num of this CreateInstanceRespItem.
 
         实例副本数。
 
@@ -296,7 +296,7 @@ class CreateInstanceRespItem:
 
     @property
     def region(self):
-        """Gets the region of this CreateInstanceRespItem.
+        r"""Gets the region of this CreateInstanceRespItem.
 
         区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -307,7 +307,7 @@ class CreateInstanceRespItem:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstanceRespItem.
+        r"""Sets the region of this CreateInstanceRespItem.
 
         区域ID。创建主实例时必选，其它场景不可选。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -318,7 +318,7 @@ class CreateInstanceRespItem:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this CreateInstanceRespItem.
+        r"""Gets the backup_strategy of this CreateInstanceRespItem.
 
         :return: The backup_strategy of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
@@ -327,7 +327,7 @@ class CreateInstanceRespItem:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this CreateInstanceRespItem.
+        r"""Sets the backup_strategy of this CreateInstanceRespItem.
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRespItem.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
@@ -336,7 +336,7 @@ class CreateInstanceRespItem:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateInstanceRespItem.
+        r"""Gets the flavor_ref of this CreateInstanceRespItem.
 
         规格码。
 
@@ -347,7 +347,7 @@ class CreateInstanceRespItem:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateInstanceRespItem.
+        r"""Sets the flavor_ref of this CreateInstanceRespItem.
 
         规格码。
 
@@ -358,7 +358,7 @@ class CreateInstanceRespItem:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateInstanceRespItem.
+        r"""Gets the availability_zone of this CreateInstanceRespItem.
 
         可用区ID。GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -369,7 +369,7 @@ class CreateInstanceRespItem:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateInstanceRespItem.
+        r"""Sets the availability_zone of this CreateInstanceRespItem.
 
         可用区ID。GaussDB取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。 取值参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -380,7 +380,7 @@ class CreateInstanceRespItem:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceRespItem.
+        r"""Gets the vpc_id of this CreateInstanceRespItem.
 
         虚拟私有云ID。
 
@@ -391,7 +391,7 @@ class CreateInstanceRespItem:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceRespItem.
+        r"""Sets the vpc_id of this CreateInstanceRespItem.
 
         虚拟私有云ID。
 
@@ -402,7 +402,7 @@ class CreateInstanceRespItem:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceRespItem.
+        r"""Gets the subnet_id of this CreateInstanceRespItem.
 
         子网ID。
 
@@ -413,7 +413,7 @@ class CreateInstanceRespItem:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceRespItem.
+        r"""Sets the subnet_id of this CreateInstanceRespItem.
 
         子网ID。
 
@@ -424,7 +424,7 @@ class CreateInstanceRespItem:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceRespItem.
+        r"""Gets the security_group_id of this CreateInstanceRespItem.
 
         安全组ID。
 
@@ -435,7 +435,7 @@ class CreateInstanceRespItem:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceRespItem.
+        r"""Sets the security_group_id of this CreateInstanceRespItem.
 
         安全组ID。
 
@@ -446,7 +446,7 @@ class CreateInstanceRespItem:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateInstanceRespItem.
+        r"""Gets the charge_info of this CreateInstanceRespItem.
 
         :return: The charge_info of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
@@ -455,7 +455,7 @@ class CreateInstanceRespItem:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateInstanceRespItem.
+        r"""Sets the charge_info of this CreateInstanceRespItem.
 
         :param charge_info: The charge_info of this CreateInstanceRespItem.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`

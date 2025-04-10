@@ -33,7 +33,7 @@ class ListSecuritySecrecyLevelsRequest:
     }
 
     def __init__(self, workspace=None, offset=None, limit=None, order_by=None, desc=None):
-        """ListSecuritySecrecyLevelsRequest
+        r"""ListSecuritySecrecyLevelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecuritySecrecyLevelsRequest.
+        r"""Gets the workspace of this ListSecuritySecrecyLevelsRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecuritySecrecyLevelsRequest.
+        r"""Sets the workspace of this ListSecuritySecrecyLevelsRequest.
 
         DataArts Studio工作空间ID
 
@@ -92,7 +92,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecuritySecrecyLevelsRequest.
+        r"""Gets the offset of this ListSecuritySecrecyLevelsRequest.
 
         offset
 
@@ -103,7 +103,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecuritySecrecyLevelsRequest.
+        r"""Sets the offset of this ListSecuritySecrecyLevelsRequest.
 
         offset
 
@@ -114,7 +114,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecuritySecrecyLevelsRequest.
+        r"""Gets the limit of this ListSecuritySecrecyLevelsRequest.
 
         limit
 
@@ -125,7 +125,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecuritySecrecyLevelsRequest.
+        r"""Sets the limit of this ListSecuritySecrecyLevelsRequest.
 
         limit
 
@@ -136,7 +136,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecuritySecrecyLevelsRequest.
+        r"""Gets the order_by of this ListSecuritySecrecyLevelsRequest.
 
         排序字段, createdAt, createdBy, updatedAt, updatedBy, name, description
 
@@ -147,7 +147,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecuritySecrecyLevelsRequest.
+        r"""Sets the order_by of this ListSecuritySecrecyLevelsRequest.
 
         排序字段, createdAt, createdBy, updatedAt, updatedBy, name, description
 
@@ -158,7 +158,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @property
     def desc(self):
-        """Gets the desc of this ListSecuritySecrecyLevelsRequest.
+        r"""Gets the desc of this ListSecuritySecrecyLevelsRequest.
 
         排序规则
 
@@ -169,7 +169,7 @@ class ListSecuritySecrecyLevelsRequest:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ListSecuritySecrecyLevelsRequest.
+        r"""Sets the desc of this ListSecuritySecrecyLevelsRequest.
 
         排序规则
 

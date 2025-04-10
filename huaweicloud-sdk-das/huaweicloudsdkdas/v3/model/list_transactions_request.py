@@ -45,7 +45,7 @@ class ListTransactionsRequest:
     }
 
     def __init__(self, instance_id=None, datastore_type=None, x_language=None, start_at=None, end_at=None, page_num=None, page_size=None, order=None, order_by=None, last_sec_min=None, last_sec_max=None):
-        """ListTransactionsRequest
+        r"""ListTransactionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class ListTransactionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTransactionsRequest.
+        r"""Gets the instance_id of this ListTransactionsRequest.
 
         实例ID
 
@@ -120,7 +120,7 @@ class ListTransactionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTransactionsRequest.
+        r"""Sets the instance_id of this ListTransactionsRequest.
 
         实例ID
 
@@ -131,7 +131,7 @@ class ListTransactionsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListTransactionsRequest.
+        r"""Gets the datastore_type of this ListTransactionsRequest.
 
         数据库类型。仅支持MySQL
 
@@ -142,7 +142,7 @@ class ListTransactionsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListTransactionsRequest.
+        r"""Sets the datastore_type of this ListTransactionsRequest.
 
         数据库类型。仅支持MySQL
 
@@ -153,7 +153,7 @@ class ListTransactionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTransactionsRequest.
+        r"""Gets the x_language of this ListTransactionsRequest.
 
         语言
 
@@ -164,7 +164,7 @@ class ListTransactionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTransactionsRequest.
+        r"""Sets the x_language of this ListTransactionsRequest.
 
         语言
 
@@ -175,7 +175,7 @@ class ListTransactionsRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ListTransactionsRequest.
+        r"""Gets the start_at of this ListTransactionsRequest.
 
         采集开始时间（Unix timestamp），单位：毫秒。
 
@@ -186,7 +186,7 @@ class ListTransactionsRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ListTransactionsRequest.
+        r"""Sets the start_at of this ListTransactionsRequest.
 
         采集开始时间（Unix timestamp），单位：毫秒。
 
@@ -197,7 +197,7 @@ class ListTransactionsRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ListTransactionsRequest.
+        r"""Gets the end_at of this ListTransactionsRequest.
 
         采集结束时间（Unix timestamp），单位：毫秒。
 
@@ -208,7 +208,7 @@ class ListTransactionsRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ListTransactionsRequest.
+        r"""Sets the end_at of this ListTransactionsRequest.
 
         采集结束时间（Unix timestamp），单位：毫秒。
 
@@ -219,7 +219,7 @@ class ListTransactionsRequest:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListTransactionsRequest.
+        r"""Gets the page_num of this ListTransactionsRequest.
 
         页数
 
@@ -230,7 +230,7 @@ class ListTransactionsRequest:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListTransactionsRequest.
+        r"""Sets the page_num of this ListTransactionsRequest.
 
         页数
 
@@ -241,7 +241,7 @@ class ListTransactionsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTransactionsRequest.
+        r"""Gets the page_size of this ListTransactionsRequest.
 
         页大小
 
@@ -252,7 +252,7 @@ class ListTransactionsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTransactionsRequest.
+        r"""Sets the page_size of this ListTransactionsRequest.
 
         页大小
 
@@ -263,7 +263,7 @@ class ListTransactionsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListTransactionsRequest.
+        r"""Gets the order of this ListTransactionsRequest.
 
         排序字段
 
@@ -274,7 +274,7 @@ class ListTransactionsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListTransactionsRequest.
+        r"""Sets the order of this ListTransactionsRequest.
 
         排序字段
 
@@ -285,7 +285,7 @@ class ListTransactionsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListTransactionsRequest.
+        r"""Gets the order_by of this ListTransactionsRequest.
 
         升序|降序
 
@@ -296,7 +296,7 @@ class ListTransactionsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListTransactionsRequest.
+        r"""Sets the order_by of this ListTransactionsRequest.
 
         升序|降序
 
@@ -307,7 +307,7 @@ class ListTransactionsRequest:
 
     @property
     def last_sec_min(self):
-        """Gets the last_sec_min of this ListTransactionsRequest.
+        r"""Gets the last_sec_min of this ListTransactionsRequest.
 
         持续时间下限
 
@@ -318,7 +318,7 @@ class ListTransactionsRequest:
 
     @last_sec_min.setter
     def last_sec_min(self, last_sec_min):
-        """Sets the last_sec_min of this ListTransactionsRequest.
+        r"""Sets the last_sec_min of this ListTransactionsRequest.
 
         持续时间下限
 
@@ -329,7 +329,7 @@ class ListTransactionsRequest:
 
     @property
     def last_sec_max(self):
-        """Gets the last_sec_max of this ListTransactionsRequest.
+        r"""Gets the last_sec_max of this ListTransactionsRequest.
 
         持续时间上限
 
@@ -340,7 +340,7 @@ class ListTransactionsRequest:
 
     @last_sec_max.setter
     def last_sec_max(self, last_sec_max):
-        """Sets the last_sec_max of this ListTransactionsRequest.
+        r"""Sets the last_sec_max of this ListTransactionsRequest.
 
         持续时间上限
 

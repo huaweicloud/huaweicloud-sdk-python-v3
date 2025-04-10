@@ -29,7 +29,7 @@ class CreateRestoreTablesRequestBody:
     }
 
     def __init__(self, restore_time=None, last_table_info=None, restore_tables=None):
-        """CreateRestoreTablesRequestBody
+        r"""CreateRestoreTablesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateRestoreTablesRequestBody:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this CreateRestoreTablesRequestBody.
+        r"""Gets the restore_time of this CreateRestoreTablesRequestBody.
 
         备份时间点，时间戳格式。
 
@@ -66,7 +66,7 @@ class CreateRestoreTablesRequestBody:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this CreateRestoreTablesRequestBody.
+        r"""Sets the restore_time of this CreateRestoreTablesRequestBody.
 
         备份时间点，时间戳格式。
 
@@ -77,7 +77,7 @@ class CreateRestoreTablesRequestBody:
 
     @property
     def last_table_info(self):
-        """Gets the last_table_info of this CreateRestoreTablesRequestBody.
+        r"""Gets the last_table_info of this CreateRestoreTablesRequestBody.
 
         是否是最新库表。默认为false。 - true：是最新库表。 - false：是恢复时间点库表。
 
@@ -88,7 +88,7 @@ class CreateRestoreTablesRequestBody:
 
     @last_table_info.setter
     def last_table_info(self, last_table_info):
-        """Sets the last_table_info of this CreateRestoreTablesRequestBody.
+        r"""Sets the last_table_info of this CreateRestoreTablesRequestBody.
 
         是否是最新库表。默认为false。 - true：是最新库表。 - false：是恢复时间点库表。
 
@@ -99,7 +99,7 @@ class CreateRestoreTablesRequestBody:
 
     @property
     def restore_tables(self):
-        """Gets the restore_tables of this CreateRestoreTablesRequestBody.
+        r"""Gets the restore_tables of this CreateRestoreTablesRequestBody.
 
         数据库信息。
 
@@ -110,7 +110,7 @@ class CreateRestoreTablesRequestBody:
 
     @restore_tables.setter
     def restore_tables(self, restore_tables):
-        """Sets the restore_tables of this CreateRestoreTablesRequestBody.
+        r"""Sets the restore_tables of this CreateRestoreTablesRequestBody.
 
         数据库信息。
 

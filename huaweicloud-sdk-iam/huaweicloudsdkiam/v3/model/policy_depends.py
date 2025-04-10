@@ -27,7 +27,7 @@ class PolicyDepends:
     }
 
     def __init__(self, catalog=None, display_name=None):
-        """PolicyDepends
+        r"""PolicyDepends
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyDepends:
 
     @property
     def catalog(self):
-        """Gets the catalog of this PolicyDepends.
+        r"""Gets the catalog of this PolicyDepends.
 
         权限所在目录。
 
@@ -59,7 +59,7 @@ class PolicyDepends:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this PolicyDepends.
+        r"""Sets the catalog of this PolicyDepends.
 
         权限所在目录。
 
@@ -70,7 +70,7 @@ class PolicyDepends:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PolicyDepends.
+        r"""Gets the display_name of this PolicyDepends.
 
         权限展示名。
 
@@ -81,7 +81,7 @@ class PolicyDepends:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PolicyDepends.
+        r"""Sets the display_name of this PolicyDepends.
 
         权限展示名。
 

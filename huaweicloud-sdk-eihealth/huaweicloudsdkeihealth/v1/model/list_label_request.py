@@ -23,7 +23,7 @@ class ListLabelRequest:
     }
 
     def __init__(self):
-        """ListLabelRequest
+        r"""ListLabelRequest
 
         The model defined in huaweicloud sdk
 

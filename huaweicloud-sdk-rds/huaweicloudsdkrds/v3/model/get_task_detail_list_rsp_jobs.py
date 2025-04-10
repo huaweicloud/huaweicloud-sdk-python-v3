@@ -43,7 +43,7 @@ class GetTaskDetailListRspJobs:
     }
 
     def __init__(self, id=None, name=None, status=None, created=None, ended=None, process=None, task_detail=None, instance=None, entities=None, fail_reason=None):
-        """GetTaskDetailListRspJobs
+        r"""GetTaskDetailListRspJobs
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def id(self):
-        """Gets the id of this GetTaskDetailListRspJobs.
+        r"""Gets the id of this GetTaskDetailListRspJobs.
 
         任务ID。
 
@@ -112,7 +112,7 @@ class GetTaskDetailListRspJobs:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetTaskDetailListRspJobs.
+        r"""Sets the id of this GetTaskDetailListRspJobs.
 
         任务ID。
 
@@ -123,7 +123,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def name(self):
-        """Gets the name of this GetTaskDetailListRspJobs.
+        r"""Gets the name of this GetTaskDetailListRspJobs.
 
         任务名称。
 
@@ -134,7 +134,7 @@ class GetTaskDetailListRspJobs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetTaskDetailListRspJobs.
+        r"""Sets the name of this GetTaskDetailListRspJobs.
 
         任务名称。
 
@@ -145,7 +145,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def status(self):
-        """Gets the status of this GetTaskDetailListRspJobs.
+        r"""Gets the status of this GetTaskDetailListRspJobs.
 
         任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -156,7 +156,7 @@ class GetTaskDetailListRspJobs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetTaskDetailListRspJobs.
+        r"""Sets the status of this GetTaskDetailListRspJobs.
 
         任务执行状态。  取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -167,7 +167,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def created(self):
-        """Gets the created of this GetTaskDetailListRspJobs.
+        r"""Gets the created of this GetTaskDetailListRspJobs.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -178,7 +178,7 @@ class GetTaskDetailListRspJobs:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetTaskDetailListRspJobs.
+        r"""Sets the created of this GetTaskDetailListRspJobs.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -189,7 +189,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def ended(self):
-        """Gets the ended of this GetTaskDetailListRspJobs.
+        r"""Gets the ended of this GetTaskDetailListRspJobs.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -200,7 +200,7 @@ class GetTaskDetailListRspJobs:
 
     @ended.setter
     def ended(self, ended):
-        """Sets the ended of this GetTaskDetailListRspJobs.
+        r"""Sets the ended of this GetTaskDetailListRspJobs.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -211,7 +211,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def process(self):
-        """Gets the process of this GetTaskDetailListRspJobs.
+        r"""Gets the process of this GetTaskDetailListRspJobs.
 
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回“”。
 
@@ -222,7 +222,7 @@ class GetTaskDetailListRspJobs:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this GetTaskDetailListRspJobs.
+        r"""Sets the process of this GetTaskDetailListRspJobs.
 
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回“”。
 
@@ -233,7 +233,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def task_detail(self):
-        """Gets the task_detail of this GetTaskDetailListRspJobs.
+        r"""Gets the task_detail of this GetTaskDetailListRspJobs.
 
         任务执行的具体的参数信息，为空则不返回该字段。
 
@@ -244,7 +244,7 @@ class GetTaskDetailListRspJobs:
 
     @task_detail.setter
     def task_detail(self, task_detail):
-        """Sets the task_detail of this GetTaskDetailListRspJobs.
+        r"""Sets the task_detail of this GetTaskDetailListRspJobs.
 
         任务执行的具体的参数信息，为空则不返回该字段。
 
@@ -255,7 +255,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def instance(self):
-        """Gets the instance of this GetTaskDetailListRspJobs.
+        r"""Gets the instance of this GetTaskDetailListRspJobs.
 
         :return: The instance of this GetTaskDetailListRspJobs.
         :rtype: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
@@ -264,7 +264,7 @@ class GetTaskDetailListRspJobs:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this GetTaskDetailListRspJobs.
+        r"""Sets the instance of this GetTaskDetailListRspJobs.
 
         :param instance: The instance of this GetTaskDetailListRspJobs.
         :type instance: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
@@ -273,7 +273,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def entities(self):
-        """Gets the entities of this GetTaskDetailListRspJobs.
+        r"""Gets the entities of this GetTaskDetailListRspJobs.
 
         根据不同的任务，显示不同的内容。
 
@@ -284,7 +284,7 @@ class GetTaskDetailListRspJobs:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this GetTaskDetailListRspJobs.
+        r"""Sets the entities of this GetTaskDetailListRspJobs.
 
         根据不同的任务，显示不同的内容。
 
@@ -295,7 +295,7 @@ class GetTaskDetailListRspJobs:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this GetTaskDetailListRspJobs.
+        r"""Gets the fail_reason of this GetTaskDetailListRspJobs.
 
         任务执行失败时的错误信息。
 
@@ -306,7 +306,7 @@ class GetTaskDetailListRspJobs:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this GetTaskDetailListRspJobs.
+        r"""Sets the fail_reason of this GetTaskDetailListRspJobs.
 
         任务执行失败时的错误信息。
 

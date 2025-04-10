@@ -28,7 +28,7 @@ class SyncAddPersonnelResponse(SdkResponse):
     }
 
     def __init__(self, added_ids=None, error_ids=None):
-        """SyncAddPersonnelResponse
+        r"""SyncAddPersonnelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SyncAddPersonnelResponse(SdkResponse):
 
     @property
     def added_ids(self):
-        """Gets the added_ids of this SyncAddPersonnelResponse.
+        r"""Gets the added_ids of this SyncAddPersonnelResponse.
 
         添加成功的ID
 
@@ -62,7 +62,7 @@ class SyncAddPersonnelResponse(SdkResponse):
 
     @added_ids.setter
     def added_ids(self, added_ids):
-        """Sets the added_ids of this SyncAddPersonnelResponse.
+        r"""Sets the added_ids of this SyncAddPersonnelResponse.
 
         添加成功的ID
 
@@ -73,7 +73,7 @@ class SyncAddPersonnelResponse(SdkResponse):
 
     @property
     def error_ids(self):
-        """Gets the error_ids of this SyncAddPersonnelResponse.
+        r"""Gets the error_ids of this SyncAddPersonnelResponse.
 
         添加失败的ID
 
@@ -84,7 +84,7 @@ class SyncAddPersonnelResponse(SdkResponse):
 
     @error_ids.setter
     def error_ids(self, error_ids):
-        """Sets the error_ids of this SyncAddPersonnelResponse.
+        r"""Sets the error_ids of this SyncAddPersonnelResponse.
 
         添加失败的ID
 

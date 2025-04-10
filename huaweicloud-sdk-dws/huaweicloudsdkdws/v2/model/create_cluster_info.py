@@ -51,7 +51,7 @@ class CreateClusterInfo:
     }
 
     def __init__(self, node_type=None, number_of_node=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, name=None, user_name=None, user_pwd=None, public_ip=None, number_of_cn=None, enterprise_project_id=None, tags=None):
-        """CreateClusterInfo
+        r"""CreateClusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class CreateClusterInfo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this CreateClusterInfo.
+        r"""Gets the node_type of this CreateClusterInfo.
 
         节点类型
 
@@ -137,7 +137,7 @@ class CreateClusterInfo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this CreateClusterInfo.
+        r"""Sets the node_type of this CreateClusterInfo.
 
         节点类型
 
@@ -148,7 +148,7 @@ class CreateClusterInfo:
 
     @property
     def number_of_node(self):
-        """Gets the number_of_node of this CreateClusterInfo.
+        r"""Gets the number_of_node of this CreateClusterInfo.
 
         集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
 
@@ -159,7 +159,7 @@ class CreateClusterInfo:
 
     @number_of_node.setter
     def number_of_node(self, number_of_node):
-        """Sets the number_of_node of this CreateClusterInfo.
+        r"""Sets the number_of_node of this CreateClusterInfo.
 
         集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
 
@@ -170,7 +170,7 @@ class CreateClusterInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateClusterInfo.
+        r"""Gets the subnet_id of this CreateClusterInfo.
 
         指定子网ID，用于集群网络配置。
 
@@ -181,7 +181,7 @@ class CreateClusterInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateClusterInfo.
+        r"""Sets the subnet_id of this CreateClusterInfo.
 
         指定子网ID，用于集群网络配置。
 
@@ -192,7 +192,7 @@ class CreateClusterInfo:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateClusterInfo.
+        r"""Gets the security_group_id of this CreateClusterInfo.
 
         指定安全组ID，用于集群网络配置。
 
@@ -203,7 +203,7 @@ class CreateClusterInfo:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateClusterInfo.
+        r"""Sets the security_group_id of this CreateClusterInfo.
 
         指定安全组ID，用于集群网络配置。
 
@@ -214,7 +214,7 @@ class CreateClusterInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateClusterInfo.
+        r"""Gets the vpc_id of this CreateClusterInfo.
 
         指定虚拟私有云ID，用于集群网络配置。
 
@@ -225,7 +225,7 @@ class CreateClusterInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateClusterInfo.
+        r"""Sets the vpc_id of this CreateClusterInfo.
 
         指定虚拟私有云ID，用于集群网络配置。
 
@@ -236,7 +236,7 @@ class CreateClusterInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateClusterInfo.
+        r"""Gets the availability_zone of this CreateClusterInfo.
 
         配置集群可用区。
 
@@ -247,7 +247,7 @@ class CreateClusterInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateClusterInfo.
+        r"""Sets the availability_zone of this CreateClusterInfo.
 
         配置集群可用区。
 
@@ -258,7 +258,7 @@ class CreateClusterInfo:
 
     @property
     def port(self):
-        """Gets the port of this CreateClusterInfo.
+        r"""Gets the port of this CreateClusterInfo.
 
         集群服务端口，取值范围为8000~30000，默认值：8000。
 
@@ -269,7 +269,7 @@ class CreateClusterInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateClusterInfo.
+        r"""Sets the port of this CreateClusterInfo.
 
         集群服务端口，取值范围为8000~30000，默认值：8000。
 
@@ -280,7 +280,7 @@ class CreateClusterInfo:
 
     @property
     def name(self):
-        """Gets the name of this CreateClusterInfo.
+        r"""Gets the name of this CreateClusterInfo.
 
         集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
 
@@ -291,7 +291,7 @@ class CreateClusterInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateClusterInfo.
+        r"""Sets the name of this CreateClusterInfo.
 
         集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
 
@@ -302,7 +302,7 @@ class CreateClusterInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateClusterInfo.
+        r"""Gets the user_name of this CreateClusterInfo.
 
         DWS集群管理员用户名。用户命名要求如下：  - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。
 
@@ -313,7 +313,7 @@ class CreateClusterInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateClusterInfo.
+        r"""Sets the user_name of this CreateClusterInfo.
 
         DWS集群管理员用户名。用户命名要求如下：  - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。
 
@@ -324,7 +324,7 @@ class CreateClusterInfo:
 
     @property
     def user_pwd(self):
-        """Gets the user_pwd of this CreateClusterInfo.
+        r"""Gets the user_pwd of this CreateClusterInfo.
 
         DWS集群管理员密码。
 
@@ -335,7 +335,7 @@ class CreateClusterInfo:
 
     @user_pwd.setter
     def user_pwd(self, user_pwd):
-        """Sets the user_pwd of this CreateClusterInfo.
+        r"""Sets the user_pwd of this CreateClusterInfo.
 
         DWS集群管理员密码。
 
@@ -346,7 +346,7 @@ class CreateClusterInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this CreateClusterInfo.
+        r"""Gets the public_ip of this CreateClusterInfo.
 
         :return: The public_ip of this CreateClusterInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -355,7 +355,7 @@ class CreateClusterInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this CreateClusterInfo.
+        r"""Sets the public_ip of this CreateClusterInfo.
 
         :param public_ip: The public_ip of this CreateClusterInfo.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -364,7 +364,7 @@ class CreateClusterInfo:
 
     @property
     def number_of_cn(self):
-        """Gets the number_of_cn of this CreateClusterInfo.
+        r"""Gets the number_of_cn of this CreateClusterInfo.
 
         CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
 
@@ -375,7 +375,7 @@ class CreateClusterInfo:
 
     @number_of_cn.setter
     def number_of_cn(self, number_of_cn):
-        """Sets the number_of_cn of this CreateClusterInfo.
+        r"""Sets the number_of_cn of this CreateClusterInfo.
 
         CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
 
@@ -386,7 +386,7 @@ class CreateClusterInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateClusterInfo.
+        r"""Gets the enterprise_project_id of this CreateClusterInfo.
 
         企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
 
@@ -397,7 +397,7 @@ class CreateClusterInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateClusterInfo.
+        r"""Sets the enterprise_project_id of this CreateClusterInfo.
 
         企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
 
@@ -408,7 +408,7 @@ class CreateClusterInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateClusterInfo.
+        r"""Gets the tags of this CreateClusterInfo.
 
         :return: The tags of this CreateClusterInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.Tags`
@@ -417,7 +417,7 @@ class CreateClusterInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateClusterInfo.
+        r"""Sets the tags of this CreateClusterInfo.
 
         :param tags: The tags of this CreateClusterInfo.
         :type tags: :class:`huaweicloudsdkdws.v2.Tags`

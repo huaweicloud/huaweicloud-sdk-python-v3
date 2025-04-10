@@ -39,7 +39,7 @@ class ReqListDehByTags:
     }
 
     def __init__(self, tags=None, not_tags=None, limit=None, offset=None, action=None, tags_any=None, not_tags_any=None, matches=None):
-        """ReqListDehByTags
+        r"""ReqListDehByTags
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ReqListDehByTags:
 
     @property
     def tags(self):
-        """Gets the tags of this ReqListDehByTags.
+        r"""Gets the tags of this ReqListDehByTags.
 
         查询包含所有指定标签的专属主机结构体不能缺失。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
@@ -102,7 +102,7 @@ class ReqListDehByTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ReqListDehByTags.
+        r"""Sets the tags of this ReqListDehByTags.
 
         查询包含所有指定标签的专属主机结构体不能缺失。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
@@ -113,7 +113,7 @@ class ReqListDehByTags:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ReqListDehByTags.
+        r"""Gets the not_tags of this ReqListDehByTags.
 
         查询不包含所有指定标签的专属主机。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
@@ -124,7 +124,7 @@ class ReqListDehByTags:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ReqListDehByTags.
+        r"""Sets the not_tags of this ReqListDehByTags.
 
         查询不包含所有指定标签的专属主机。 1.最多包含10个key，每个key下面的value最多10个。 2.结构体不能缺失。 3.key不能为空或者空字符串。 4.key不能重复。 5.同一个key中value不能重复。
 
@@ -135,7 +135,7 @@ class ReqListDehByTags:
 
     @property
     def limit(self):
-        """Gets the limit of this ReqListDehByTags.
+        r"""Gets the limit of this ReqListDehByTags.
 
         查询返回的专属主机数量限制，最多为1000，不能为负数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，limit默认为1000。
 
@@ -146,7 +146,7 @@ class ReqListDehByTags:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ReqListDehByTags.
+        r"""Sets the limit of this ReqListDehByTags.
 
         查询返回的专属主机数量限制，最多为1000，不能为负数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，limit默认为1000。
 
@@ -157,7 +157,7 @@ class ReqListDehByTags:
 
     @property
     def offset(self):
-        """Gets the offset of this ReqListDehByTags.
+        r"""Gets the offset of this ReqListDehByTags.
 
         索引位置，从offset指定的下一条数据开始查询。必须为数字，不能为负数。 查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，offset默认为0。
 
@@ -168,7 +168,7 @@ class ReqListDehByTags:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ReqListDehByTags.
+        r"""Sets the offset of this ReqListDehByTags.
 
         索引位置，从offset指定的下一条数据开始查询。必须为数字，不能为负数。 查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 1.如果action的值为count，此参数无效。 2.如果action的值为filter，offset默认为0。
 
@@ -179,7 +179,7 @@ class ReqListDehByTags:
 
     @property
     def action(self):
-        """Gets the action of this ReqListDehByTags.
+        r"""Gets the action of this ReqListDehByTags.
 
         操作标识，包括filter和count两种。 1.filter：表示按标签过滤专属主机，返回符合条件的专属主机列表。此时，为分页查询。 2.count：表示按标签搜索专属主机，返回符合条件的专属主机个数。
 
@@ -190,7 +190,7 @@ class ReqListDehByTags:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ReqListDehByTags.
+        r"""Sets the action of this ReqListDehByTags.
 
         操作标识，包括filter和count两种。 1.filter：表示按标签过滤专属主机，返回符合条件的专属主机列表。此时，为分页查询。 2.count：表示按标签搜索专属主机，返回符合条件的专属主机个数。
 
@@ -201,7 +201,7 @@ class ReqListDehByTags:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this ReqListDehByTags.
+        r"""Gets the tags_any of this ReqListDehByTags.
 
         包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回包含标签的资源列表，key之间是“或”的关系，key-value结构中value是“或”的关系。 4.无过滤条件时返回全量数据。
 
@@ -212,7 +212,7 @@ class ReqListDehByTags:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this ReqListDehByTags.
+        r"""Sets the tags_any of this ReqListDehByTags.
 
         包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回包含标签的资源列表，key之间是“或”的关系，key-value结构中value是“或”的关系。 4.无过滤条件时返回全量数据。
 
@@ -223,7 +223,7 @@ class ReqListDehByTags:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this ReqListDehByTags.
+        r"""Gets the not_tags_any of this ReqListDehByTags.
 
         不包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回不包含标签的资源列表，key之间是“或”的关系，key-value结构中value是或的关系。 4.无过滤条件时返回全量数据。
 
@@ -234,7 +234,7 @@ class ReqListDehByTags:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this ReqListDehByTags.
+        r"""Sets the not_tags_any of this ReqListDehByTags.
 
         不包含任意标签。 1.最多包含10个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。 2.key不能重复，同一个key中value不能重复。 3.结果返回不包含标签的资源列表，key之间是“或”的关系，key-value结构中value是或的关系。 4.无过滤条件时返回全量数据。
 
@@ -245,7 +245,7 @@ class ReqListDehByTags:
 
     @property
     def matches(self):
-        """Gets the matches of this ReqListDehByTags.
+        r"""Gets the matches of this ReqListDehByTags.
 
         搜索字段，用于按条件搜索专属主机。  当前仅支持按resource_name进行搜索。
 
@@ -256,7 +256,7 @@ class ReqListDehByTags:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ReqListDehByTags.
+        r"""Sets the matches of this ReqListDehByTags.
 
         搜索字段，用于按条件搜索专属主机。  当前仅支持按resource_name进行搜索。
 

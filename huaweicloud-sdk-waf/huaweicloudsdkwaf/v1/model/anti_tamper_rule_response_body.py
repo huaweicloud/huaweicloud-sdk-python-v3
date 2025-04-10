@@ -37,7 +37,7 @@ class AntiTamperRuleResponseBody:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, hostname=None, url=None):
-        """AntiTamperRuleResponseBody
+        r"""AntiTamperRuleResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this AntiTamperRuleResponseBody.
+        r"""Gets the id of this AntiTamperRuleResponseBody.
 
         规则id
 
@@ -96,7 +96,7 @@ class AntiTamperRuleResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AntiTamperRuleResponseBody.
+        r"""Sets the id of this AntiTamperRuleResponseBody.
 
         规则id
 
@@ -107,7 +107,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def policyid(self):
-        """Gets the policyid of this AntiTamperRuleResponseBody.
+        r"""Gets the policyid of this AntiTamperRuleResponseBody.
 
         该规则所属防护策略的id
 
@@ -118,7 +118,7 @@ class AntiTamperRuleResponseBody:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this AntiTamperRuleResponseBody.
+        r"""Sets the policyid of this AntiTamperRuleResponseBody.
 
         该规则所属防护策略的id
 
@@ -129,7 +129,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this AntiTamperRuleResponseBody.
+        r"""Gets the timestamp of this AntiTamperRuleResponseBody.
 
         创建规则的时间戳
 
@@ -140,7 +140,7 @@ class AntiTamperRuleResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this AntiTamperRuleResponseBody.
+        r"""Sets the timestamp of this AntiTamperRuleResponseBody.
 
         创建规则的时间戳
 
@@ -151,7 +151,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this AntiTamperRuleResponseBody.
+        r"""Gets the description of this AntiTamperRuleResponseBody.
 
         该规则备注
 
@@ -162,7 +162,7 @@ class AntiTamperRuleResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AntiTamperRuleResponseBody.
+        r"""Sets the description of this AntiTamperRuleResponseBody.
 
         该规则备注
 
@@ -173,7 +173,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this AntiTamperRuleResponseBody.
+        r"""Gets the status of this AntiTamperRuleResponseBody.
 
         规则状态，0：关闭，1：开启
 
@@ -184,7 +184,7 @@ class AntiTamperRuleResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AntiTamperRuleResponseBody.
+        r"""Sets the status of this AntiTamperRuleResponseBody.
 
         规则状态，0：关闭，1：开启
 
@@ -195,7 +195,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def hostname(self):
-        """Gets the hostname of this AntiTamperRuleResponseBody.
+        r"""Gets the hostname of this AntiTamperRuleResponseBody.
 
         防篡改的域名
 
@@ -206,7 +206,7 @@ class AntiTamperRuleResponseBody:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this AntiTamperRuleResponseBody.
+        r"""Sets the hostname of this AntiTamperRuleResponseBody.
 
         防篡改的域名
 
@@ -217,7 +217,7 @@ class AntiTamperRuleResponseBody:
 
     @property
     def url(self):
-        """Gets the url of this AntiTamperRuleResponseBody.
+        r"""Gets the url of this AntiTamperRuleResponseBody.
 
         防篡改的url
 
@@ -228,7 +228,7 @@ class AntiTamperRuleResponseBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AntiTamperRuleResponseBody.
+        r"""Sets the url of this AntiTamperRuleResponseBody.
 
         防篡改的url
 

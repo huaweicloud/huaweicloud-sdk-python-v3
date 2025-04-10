@@ -30,7 +30,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, feedback_id=None):
-        """CreateQaFeedbacksResponse
+        r"""CreateQaFeedbacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateQaFeedbacksResponse.
+        r"""Gets the error_code of this CreateQaFeedbacksResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateQaFeedbacksResponse.
+        r"""Sets the error_code of this CreateQaFeedbacksResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateQaFeedbacksResponse.
+        r"""Gets the error_msg of this CreateQaFeedbacksResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateQaFeedbacksResponse.
+        r"""Sets the error_msg of this CreateQaFeedbacksResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
 
     @property
     def feedback_id(self):
-        """Gets the feedback_id of this CreateQaFeedbacksResponse.
+        r"""Gets the feedback_id of this CreateQaFeedbacksResponse.
 
         反馈记录id
 
@@ -113,7 +113,7 @@ class CreateQaFeedbacksResponse(SdkResponse):
 
     @feedback_id.setter
     def feedback_id(self, feedback_id):
-        """Sets the feedback_id of this CreateQaFeedbacksResponse.
+        r"""Sets the feedback_id of this CreateQaFeedbacksResponse.
 
         反馈记录id
 

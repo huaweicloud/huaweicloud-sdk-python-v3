@@ -25,7 +25,7 @@ class DeletePerformanceResourceRequest:
     }
 
     def __init__(self, id=None):
-        """DeletePerformanceResourceRequest
+        r"""DeletePerformanceResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePerformanceResourceRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeletePerformanceResourceRequest.
+        r"""Gets the id of this DeletePerformanceResourceRequest.
 
         性能加速ID
 
@@ -53,7 +53,7 @@ class DeletePerformanceResourceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeletePerformanceResourceRequest.
+        r"""Sets the id of this DeletePerformanceResourceRequest.
 
         性能加速ID
 

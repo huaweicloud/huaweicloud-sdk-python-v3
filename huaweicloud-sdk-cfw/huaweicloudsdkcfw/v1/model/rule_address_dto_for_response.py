@@ -51,7 +51,7 @@ class RuleAddressDtoForResponse:
     }
 
     def __init__(self, type=None, address_type=None, address=None, address_set_id=None, address_set_name=None, domain_address_name=None, region_list_json=None, region_list=None, domain_set_id=None, domain_set_name=None, ip_address=None, address_group=None, address_group_names=None, address_set_type=None):
-        """RuleAddressDtoForResponse
+        r"""RuleAddressDtoForResponse
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def type(self):
-        """Gets the type of this RuleAddressDtoForResponse.
+        r"""Gets the type of this RuleAddressDtoForResponse.
 
         地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
 
@@ -144,7 +144,7 @@ class RuleAddressDtoForResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleAddressDtoForResponse.
+        r"""Sets the type of this RuleAddressDtoForResponse.
 
         地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
 
@@ -155,7 +155,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address_type(self):
-        """Gets the address_type of this RuleAddressDtoForResponse.
+        r"""Gets the address_type of this RuleAddressDtoForResponse.
 
         地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
 
@@ -166,7 +166,7 @@ class RuleAddressDtoForResponse:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this RuleAddressDtoForResponse.
+        r"""Sets the address_type of this RuleAddressDtoForResponse.
 
         地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
 
@@ -177,7 +177,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address(self):
-        """Gets the address of this RuleAddressDtoForResponse.
+        r"""Gets the address of this RuleAddressDtoForResponse.
 
         IP地址信息
 
@@ -188,7 +188,7 @@ class RuleAddressDtoForResponse:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this RuleAddressDtoForResponse.
+        r"""Sets the address of this RuleAddressDtoForResponse.
 
         IP地址信息
 
@@ -199,7 +199,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address_set_id(self):
-        """Gets the address_set_id of this RuleAddressDtoForResponse.
+        r"""Gets the address_set_id of this RuleAddressDtoForResponse.
 
         关联IP地址组ID
 
@@ -210,7 +210,7 @@ class RuleAddressDtoForResponse:
 
     @address_set_id.setter
     def address_set_id(self, address_set_id):
-        """Sets the address_set_id of this RuleAddressDtoForResponse.
+        r"""Sets the address_set_id of this RuleAddressDtoForResponse.
 
         关联IP地址组ID
 
@@ -221,7 +221,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address_set_name(self):
-        """Gets the address_set_name of this RuleAddressDtoForResponse.
+        r"""Gets the address_set_name of this RuleAddressDtoForResponse.
 
         地址组名称
 
@@ -232,7 +232,7 @@ class RuleAddressDtoForResponse:
 
     @address_set_name.setter
     def address_set_name(self, address_set_name):
-        """Sets the address_set_name of this RuleAddressDtoForResponse.
+        r"""Sets the address_set_name of this RuleAddressDtoForResponse.
 
         地址组名称
 
@@ -243,7 +243,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def domain_address_name(self):
-        """Gets the domain_address_name of this RuleAddressDtoForResponse.
+        r"""Gets the domain_address_name of this RuleAddressDtoForResponse.
 
         域名地址名称
 
@@ -254,7 +254,7 @@ class RuleAddressDtoForResponse:
 
     @domain_address_name.setter
     def domain_address_name(self, domain_address_name):
-        """Sets the domain_address_name of this RuleAddressDtoForResponse.
+        r"""Sets the domain_address_name of this RuleAddressDtoForResponse.
 
         域名地址名称
 
@@ -265,7 +265,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def region_list_json(self):
-        """Gets the region_list_json of this RuleAddressDtoForResponse.
+        r"""Gets the region_list_json of this RuleAddressDtoForResponse.
 
         规则地域列表json值
 
@@ -276,7 +276,7 @@ class RuleAddressDtoForResponse:
 
     @region_list_json.setter
     def region_list_json(self, region_list_json):
-        """Sets the region_list_json of this RuleAddressDtoForResponse.
+        r"""Sets the region_list_json of this RuleAddressDtoForResponse.
 
         规则地域列表json值
 
@@ -287,7 +287,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def region_list(self):
-        """Gets the region_list of this RuleAddressDtoForResponse.
+        r"""Gets the region_list of this RuleAddressDtoForResponse.
 
         规则地域列表
 
@@ -298,7 +298,7 @@ class RuleAddressDtoForResponse:
 
     @region_list.setter
     def region_list(self, region_list):
-        """Sets the region_list of this RuleAddressDtoForResponse.
+        r"""Sets the region_list of this RuleAddressDtoForResponse.
 
         规则地域列表
 
@@ -309,7 +309,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def domain_set_id(self):
-        """Gets the domain_set_id of this RuleAddressDtoForResponse.
+        r"""Gets the domain_set_id of this RuleAddressDtoForResponse.
 
         域名组id
 
@@ -320,7 +320,7 @@ class RuleAddressDtoForResponse:
 
     @domain_set_id.setter
     def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this RuleAddressDtoForResponse.
+        r"""Sets the domain_set_id of this RuleAddressDtoForResponse.
 
         域名组id
 
@@ -331,7 +331,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def domain_set_name(self):
-        """Gets the domain_set_name of this RuleAddressDtoForResponse.
+        r"""Gets the domain_set_name of this RuleAddressDtoForResponse.
 
         域名组名称
 
@@ -342,7 +342,7 @@ class RuleAddressDtoForResponse:
 
     @domain_set_name.setter
     def domain_set_name(self, domain_set_name):
-        """Sets the domain_set_name of this RuleAddressDtoForResponse.
+        r"""Sets the domain_set_name of this RuleAddressDtoForResponse.
 
         域名组名称
 
@@ -353,7 +353,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this RuleAddressDtoForResponse.
+        r"""Gets the ip_address of this RuleAddressDtoForResponse.
 
         IP地址列表
 
@@ -364,7 +364,7 @@ class RuleAddressDtoForResponse:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this RuleAddressDtoForResponse.
+        r"""Sets the ip_address of this RuleAddressDtoForResponse.
 
         IP地址列表
 
@@ -375,7 +375,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address_group(self):
-        """Gets the address_group of this RuleAddressDtoForResponse.
+        r"""Gets the address_group of this RuleAddressDtoForResponse.
 
         地址组id列表
 
@@ -386,7 +386,7 @@ class RuleAddressDtoForResponse:
 
     @address_group.setter
     def address_group(self, address_group):
-        """Sets the address_group of this RuleAddressDtoForResponse.
+        r"""Sets the address_group of this RuleAddressDtoForResponse.
 
         地址组id列表
 
@@ -397,7 +397,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address_group_names(self):
-        """Gets the address_group_names of this RuleAddressDtoForResponse.
+        r"""Gets the address_group_names of this RuleAddressDtoForResponse.
 
         地址组名称列表
 
@@ -408,7 +408,7 @@ class RuleAddressDtoForResponse:
 
     @address_group_names.setter
     def address_group_names(self, address_group_names):
-        """Sets the address_group_names of this RuleAddressDtoForResponse.
+        r"""Sets the address_group_names of this RuleAddressDtoForResponse.
 
         地址组名称列表
 
@@ -419,7 +419,7 @@ class RuleAddressDtoForResponse:
 
     @property
     def address_set_type(self):
-        """Gets the address_set_type of this RuleAddressDtoForResponse.
+        r"""Gets the address_set_type of this RuleAddressDtoForResponse.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -430,7 +430,7 @@ class RuleAddressDtoForResponse:
 
     @address_set_type.setter
     def address_set_type(self, address_set_type):
-        """Sets the address_set_type of this RuleAddressDtoForResponse.
+        r"""Sets the address_set_type of this RuleAddressDtoForResponse.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 

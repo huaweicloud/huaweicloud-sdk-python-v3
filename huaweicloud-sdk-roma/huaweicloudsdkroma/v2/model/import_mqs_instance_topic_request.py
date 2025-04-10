@@ -31,7 +31,7 @@ class ImportMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, mode=None, prefix=None, body=None):
-        """ImportMqsInstanceTopicRequest
+        r"""ImportMqsInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ImportMqsInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ImportMqsInstanceTopicRequest.
+        r"""Gets the instance_id of this ImportMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -74,7 +74,7 @@ class ImportMqsInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ImportMqsInstanceTopicRequest.
+        r"""Sets the instance_id of this ImportMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -85,7 +85,7 @@ class ImportMqsInstanceTopicRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this ImportMqsInstanceTopicRequest.
+        r"""Gets the mode of this ImportMqsInstanceTopicRequest.
 
         导入topic的模式。 - AddNew：全量新增导入。 - Merge：合并导入。  默认为AddNew模式。
 
@@ -96,7 +96,7 @@ class ImportMqsInstanceTopicRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ImportMqsInstanceTopicRequest.
+        r"""Sets the mode of this ImportMqsInstanceTopicRequest.
 
         导入topic的模式。 - AddNew：全量新增导入。 - Merge：合并导入。  默认为AddNew模式。
 
@@ -107,7 +107,7 @@ class ImportMqsInstanceTopicRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ImportMqsInstanceTopicRequest.
+        r"""Gets the prefix of this ImportMqsInstanceTopicRequest.
 
         App应用的前缀。  若加上前缀，导入Topic时会拼接前缀和已有的App应用，形成新的App应用名称，再根据新的App应用名称导入Topic。
 
@@ -118,7 +118,7 @@ class ImportMqsInstanceTopicRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ImportMqsInstanceTopicRequest.
+        r"""Sets the prefix of this ImportMqsInstanceTopicRequest.
 
         App应用的前缀。  若加上前缀，导入Topic时会拼接前缀和已有的App应用，形成新的App应用名称，再根据新的App应用名称导入Topic。
 
@@ -129,7 +129,7 @@ class ImportMqsInstanceTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportMqsInstanceTopicRequest.
+        r"""Gets the body of this ImportMqsInstanceTopicRequest.
 
         :return: The body of this ImportMqsInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`
@@ -138,7 +138,7 @@ class ImportMqsInstanceTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportMqsInstanceTopicRequest.
+        r"""Sets the body of this ImportMqsInstanceTopicRequest.
 
         :param body: The body of this ImportMqsInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`

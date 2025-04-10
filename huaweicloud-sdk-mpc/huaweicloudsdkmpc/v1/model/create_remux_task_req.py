@@ -31,7 +31,7 @@ class CreateRemuxTaskReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, output_param=None):
-        """CreateRemuxTaskReq
+        r"""CreateRemuxTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateRemuxTaskReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateRemuxTaskReq.
+        r"""Gets the input of this CreateRemuxTaskReq.
 
         :return: The input of this CreateRemuxTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -73,7 +73,7 @@ class CreateRemuxTaskReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateRemuxTaskReq.
+        r"""Sets the input of this CreateRemuxTaskReq.
 
         :param input: The input of this CreateRemuxTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -82,7 +82,7 @@ class CreateRemuxTaskReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateRemuxTaskReq.
+        r"""Gets the output of this CreateRemuxTaskReq.
 
         :return: The output of this CreateRemuxTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -91,7 +91,7 @@ class CreateRemuxTaskReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateRemuxTaskReq.
+        r"""Sets the output of this CreateRemuxTaskReq.
 
         :param output: The output of this CreateRemuxTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -100,7 +100,7 @@ class CreateRemuxTaskReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateRemuxTaskReq.
+        r"""Gets the user_data of this CreateRemuxTaskReq.
 
         用户自定义数据。 
 
@@ -111,7 +111,7 @@ class CreateRemuxTaskReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateRemuxTaskReq.
+        r"""Sets the user_data of this CreateRemuxTaskReq.
 
         用户自定义数据。 
 
@@ -122,7 +122,7 @@ class CreateRemuxTaskReq:
 
     @property
     def output_param(self):
-        """Gets the output_param of this CreateRemuxTaskReq.
+        r"""Gets the output_param of this CreateRemuxTaskReq.
 
         :return: The output_param of this CreateRemuxTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
@@ -131,7 +131,7 @@ class CreateRemuxTaskReq:
 
     @output_param.setter
     def output_param(self, output_param):
-        """Sets the output_param of this CreateRemuxTaskReq.
+        r"""Sets the output_param of this CreateRemuxTaskReq.
 
         :param output_param: The output_param of this CreateRemuxTaskReq.
         :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`

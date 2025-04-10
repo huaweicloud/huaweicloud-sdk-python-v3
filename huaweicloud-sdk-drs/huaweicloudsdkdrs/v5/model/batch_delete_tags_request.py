@@ -31,7 +31,7 @@ class BatchDeleteTagsRequest:
     }
 
     def __init__(self, resource_type=None, x_language=None, resource_id=None, body=None):
-        """BatchDeleteTagsRequest
+        r"""BatchDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchDeleteTagsRequest.
+        r"""Gets the resource_type of this BatchDeleteTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -73,7 +73,7 @@ class BatchDeleteTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchDeleteTagsRequest.
+        r"""Sets the resource_type of this BatchDeleteTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -84,7 +84,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchDeleteTagsRequest.
+        r"""Gets the x_language of this BatchDeleteTagsRequest.
 
         请求语言类型。
 
@@ -95,7 +95,7 @@ class BatchDeleteTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchDeleteTagsRequest.
+        r"""Sets the x_language of this BatchDeleteTagsRequest.
 
         请求语言类型。
 
@@ -106,7 +106,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteTagsRequest.
+        r"""Gets the resource_id of this BatchDeleteTagsRequest.
 
         资源ID，即DRS任务ID。
 
@@ -117,7 +117,7 @@ class BatchDeleteTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteTagsRequest.
+        r"""Sets the resource_id of this BatchDeleteTagsRequest.
 
         资源ID，即DRS任务ID。
 
@@ -128,7 +128,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTagsRequest.
+        r"""Gets the body of this BatchDeleteTagsRequest.
 
         :return: The body of this BatchDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchDeleteTagReq`
@@ -137,7 +137,7 @@ class BatchDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTagsRequest.
+        r"""Sets the body of this BatchDeleteTagsRequest.
 
         :param body: The body of this BatchDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.BatchDeleteTagReq`

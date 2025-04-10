@@ -27,7 +27,7 @@ class NovaDisassociateSecurityGroupRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """NovaDisassociateSecurityGroupRequest
+        r"""NovaDisassociateSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaDisassociateSecurityGroupRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaDisassociateSecurityGroupRequest.
+        r"""Gets the server_id of this NovaDisassociateSecurityGroupRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class NovaDisassociateSecurityGroupRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaDisassociateSecurityGroupRequest.
+        r"""Sets the server_id of this NovaDisassociateSecurityGroupRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class NovaDisassociateSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this NovaDisassociateSecurityGroupRequest.
+        r"""Gets the body of this NovaDisassociateSecurityGroupRequest.
 
         :return: The body of this NovaDisassociateSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`
@@ -80,7 +80,7 @@ class NovaDisassociateSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NovaDisassociateSecurityGroupRequest.
+        r"""Sets the body of this NovaDisassociateSecurityGroupRequest.
 
         :param body: The body of this NovaDisassociateSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`

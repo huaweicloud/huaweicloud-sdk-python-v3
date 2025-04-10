@@ -31,7 +31,7 @@ class AddressSetListResponseDTOData:
     }
 
     def __init__(self, offset=None, limit=None, total=None, records=None):
-        """AddressSetListResponseDTOData
+        r"""AddressSetListResponseDTOData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AddressSetListResponseDTOData:
 
     @property
     def offset(self):
-        """Gets the offset of this AddressSetListResponseDTOData.
+        r"""Gets the offset of this AddressSetListResponseDTOData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -75,7 +75,7 @@ class AddressSetListResponseDTOData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this AddressSetListResponseDTOData.
+        r"""Sets the offset of this AddressSetListResponseDTOData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -86,7 +86,7 @@ class AddressSetListResponseDTOData:
 
     @property
     def limit(self):
-        """Gets the limit of this AddressSetListResponseDTOData.
+        r"""Gets the limit of this AddressSetListResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -97,7 +97,7 @@ class AddressSetListResponseDTOData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this AddressSetListResponseDTOData.
+        r"""Sets the limit of this AddressSetListResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -108,7 +108,7 @@ class AddressSetListResponseDTOData:
 
     @property
     def total(self):
-        """Gets the total of this AddressSetListResponseDTOData.
+        r"""Gets the total of this AddressSetListResponseDTOData.
 
         地址组总数
 
@@ -119,7 +119,7 @@ class AddressSetListResponseDTOData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AddressSetListResponseDTOData.
+        r"""Sets the total of this AddressSetListResponseDTOData.
 
         地址组总数
 
@@ -130,7 +130,7 @@ class AddressSetListResponseDTOData:
 
     @property
     def records(self):
-        """Gets the records of this AddressSetListResponseDTOData.
+        r"""Gets the records of this AddressSetListResponseDTOData.
 
         地址组列表
 
@@ -141,7 +141,7 @@ class AddressSetListResponseDTOData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this AddressSetListResponseDTOData.
+        r"""Sets the records of this AddressSetListResponseDTOData.
 
         地址组列表
 

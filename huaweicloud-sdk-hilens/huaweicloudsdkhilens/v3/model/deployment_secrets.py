@@ -27,7 +27,7 @@ class DeploymentSecrets:
     }
 
     def __init__(self, name=None, key=None):
-        """DeploymentSecrets
+        r"""DeploymentSecrets
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeploymentSecrets:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentSecrets.
+        r"""Gets the name of this DeploymentSecrets.
 
         密钥的名称，以英文小写字母开头，由中文字符，英文字母，数字，下划线和中划线组成，不能以中划线结尾，长度4-64位
 
@@ -61,7 +61,7 @@ class DeploymentSecrets:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentSecrets.
+        r"""Sets the name of this DeploymentSecrets.
 
         密钥的名称，以英文小写字母开头，由中文字符，英文字母，数字，下划线和中划线组成，不能以中划线结尾，长度4-64位
 
@@ -72,7 +72,7 @@ class DeploymentSecrets:
 
     @property
     def key(self):
-        """Gets the key of this DeploymentSecrets.
+        r"""Gets the key of this DeploymentSecrets.
 
         密钥的属性名，以英文字母和中划线开头，由英文字母、数字、点号、中划线和下划线组成，长度1-63位
 
@@ -83,7 +83,7 @@ class DeploymentSecrets:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeploymentSecrets.
+        r"""Sets the key of this DeploymentSecrets.
 
         密钥的属性名，以英文字母和中划线开头，由英文字母、数字、点号、中划线和下划线组成，长度1-63位
 

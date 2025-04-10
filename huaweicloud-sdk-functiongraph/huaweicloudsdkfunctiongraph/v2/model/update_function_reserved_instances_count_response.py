@@ -30,7 +30,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
     }
 
     def __init__(self, count=None, idle_mode=None, tactics_config=None):
-        """UpdateFunctionReservedInstancesCountResponse
+        r"""UpdateFunctionReservedInstancesCountResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this UpdateFunctionReservedInstancesCountResponse.
+        r"""Gets the count of this UpdateFunctionReservedInstancesCountResponse.
 
         预留实例个数
 
@@ -69,7 +69,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this UpdateFunctionReservedInstancesCountResponse.
+        r"""Sets the count of this UpdateFunctionReservedInstancesCountResponse.
 
         预留实例个数
 
@@ -80,7 +80,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
 
     @property
     def idle_mode(self):
-        """Gets the idle_mode of this UpdateFunctionReservedInstancesCountResponse.
+        r"""Gets the idle_mode of this UpdateFunctionReservedInstancesCountResponse.
 
         是否开启闲置模式配置
 
@@ -91,7 +91,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
 
     @idle_mode.setter
     def idle_mode(self, idle_mode):
-        """Sets the idle_mode of this UpdateFunctionReservedInstancesCountResponse.
+        r"""Sets the idle_mode of this UpdateFunctionReservedInstancesCountResponse.
 
         是否开启闲置模式配置
 
@@ -102,7 +102,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
 
     @property
     def tactics_config(self):
-        """Gets the tactics_config of this UpdateFunctionReservedInstancesCountResponse.
+        r"""Gets the tactics_config of this UpdateFunctionReservedInstancesCountResponse.
 
         :return: The tactics_config of this UpdateFunctionReservedInstancesCountResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
@@ -111,7 +111,7 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
 
     @tactics_config.setter
     def tactics_config(self, tactics_config):
-        """Sets the tactics_config of this UpdateFunctionReservedInstancesCountResponse.
+        r"""Sets the tactics_config of this UpdateFunctionReservedInstancesCountResponse.
 
         :param tactics_config: The tactics_config of this UpdateFunctionReservedInstancesCountResponse.
         :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`

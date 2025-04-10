@@ -29,7 +29,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListClouddcnSubnetsFilterTagsRequest
+        r"""ListClouddcnSubnetsFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClouddcnSubnetsFilterTagsRequest.
+        r"""Gets the limit of this ListClouddcnSubnetsFilterTagsRequest.
 
         每页返回的个数
 
@@ -68,7 +68,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClouddcnSubnetsFilterTagsRequest.
+        r"""Sets the limit of this ListClouddcnSubnetsFilterTagsRequest.
 
         每页返回的个数
 
@@ -79,7 +79,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClouddcnSubnetsFilterTagsRequest.
+        r"""Gets the offset of this ListClouddcnSubnetsFilterTagsRequest.
 
         分页起始点
 
@@ -90,7 +90,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClouddcnSubnetsFilterTagsRequest.
+        r"""Sets the offset of this ListClouddcnSubnetsFilterTagsRequest.
 
         分页起始点
 
@@ -101,7 +101,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListClouddcnSubnetsFilterTagsRequest.
+        r"""Gets the body of this ListClouddcnSubnetsFilterTagsRequest.
 
         :return: The body of this ListClouddcnSubnetsFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.ListResourcesByTagsRequestBody`
@@ -110,7 +110,7 @@ class ListClouddcnSubnetsFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListClouddcnSubnetsFilterTagsRequest.
+        r"""Sets the body of this ListClouddcnSubnetsFilterTagsRequest.
 
         :param body: The body of this ListClouddcnSubnetsFilterTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.ListResourcesByTagsRequestBody`

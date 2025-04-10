@@ -31,7 +31,7 @@ class ShowJobRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, version=None, dependencies=None):
-        """ShowJobRequest
+        r"""ShowJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowJobRequest.
+        r"""Gets the workspace of this ShowJobRequest.
 
         工作空间id
 
@@ -74,7 +74,7 @@ class ShowJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowJobRequest.
+        r"""Sets the workspace of this ShowJobRequest.
 
         工作空间id
 
@@ -85,7 +85,7 @@ class ShowJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobRequest.
+        r"""Gets the job_name of this ShowJobRequest.
 
         作业名称.
 
@@ -96,7 +96,7 @@ class ShowJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobRequest.
+        r"""Sets the job_name of this ShowJobRequest.
 
         作业名称.
 
@@ -107,7 +107,7 @@ class ShowJobRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowJobRequest.
+        r"""Gets the version of this ShowJobRequest.
 
         作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
 
@@ -118,7 +118,7 @@ class ShowJobRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowJobRequest.
+        r"""Sets the version of this ShowJobRequest.
 
         作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
 
@@ -129,7 +129,7 @@ class ShowJobRequest:
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this ShowJobRequest.
+        r"""Gets the dependencies of this ShowJobRequest.
 
         返回下游依赖当前作业的作业，只返回第一层。
 
@@ -140,7 +140,7 @@ class ShowJobRequest:
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this ShowJobRequest.
+        r"""Sets the dependencies of this ShowJobRequest.
 
         返回下游依赖当前作业的作业，只返回第一层。
 

@@ -29,7 +29,7 @@ class CreateDnsNameRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateDnsNameRequest
+        r"""CreateDnsNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDnsNameRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDnsNameRequest.
+        r"""Gets the x_language of this CreateDnsNameRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreateDnsNameRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDnsNameRequest.
+        r"""Sets the x_language of this CreateDnsNameRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreateDnsNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDnsNameRequest.
+        r"""Gets the instance_id of this CreateDnsNameRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateDnsNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDnsNameRequest.
+        r"""Sets the instance_id of this CreateDnsNameRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateDnsNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDnsNameRequest.
+        r"""Gets the body of this CreateDnsNameRequest.
 
         :return: The body of this CreateDnsNameRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequestBody`
@@ -109,7 +109,7 @@ class CreateDnsNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDnsNameRequest.
+        r"""Sets the body of this CreateDnsNameRequest.
 
         :param body: The body of this CreateDnsNameRequest.
         :type body: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequestBody`

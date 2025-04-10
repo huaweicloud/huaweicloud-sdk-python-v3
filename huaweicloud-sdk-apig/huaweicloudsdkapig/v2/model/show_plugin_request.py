@@ -27,7 +27,7 @@ class ShowPluginRequest:
     }
 
     def __init__(self, instance_id=None, plugin_id=None):
-        """ShowPluginRequest
+        r"""ShowPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowPluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPluginRequest.
+        r"""Gets the instance_id of this ShowPluginRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class ShowPluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPluginRequest.
+        r"""Sets the instance_id of this ShowPluginRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class ShowPluginRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this ShowPluginRequest.
+        r"""Gets the plugin_id of this ShowPluginRequest.
 
         插件编号
 
@@ -81,7 +81,7 @@ class ShowPluginRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this ShowPluginRequest.
+        r"""Sets the plugin_id of this ShowPluginRequest.
 
         插件编号
 

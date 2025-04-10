@@ -25,7 +25,7 @@ class ComponentModifyTomcatOpts:
     }
 
     def __init__(self, server_xml=None):
-        """ComponentModifyTomcatOpts
+        r"""ComponentModifyTomcatOpts
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ComponentModifyTomcatOpts:
 
     @property
     def server_xml(self):
-        """Gets the server_xml of this ComponentModifyTomcatOpts.
+        r"""Gets the server_xml of this ComponentModifyTomcatOpts.
 
         :return: The server_xml of this ComponentModifyTomcatOpts.
         :rtype: str
@@ -51,7 +51,7 @@ class ComponentModifyTomcatOpts:
 
     @server_xml.setter
     def server_xml(self, server_xml):
-        """Sets the server_xml of this ComponentModifyTomcatOpts.
+        r"""Sets the server_xml of this ComponentModifyTomcatOpts.
 
         :param server_xml: The server_xml of this ComponentModifyTomcatOpts.
         :type server_xml: str

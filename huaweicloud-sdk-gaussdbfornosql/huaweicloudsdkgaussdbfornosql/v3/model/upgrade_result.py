@@ -31,7 +31,7 @@ class UpgradeResult:
     }
 
     def __init__(self, job_id=None, instance_id=None, error_code=None, error_message=None):
-        """UpgradeResult
+        r"""UpgradeResult
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpgradeResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpgradeResult.
+        r"""Gets the job_id of this UpgradeResult.
 
         任务ID。仅当补丁版本升级任务提交成功时返回该字段。
 
@@ -74,7 +74,7 @@ class UpgradeResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpgradeResult.
+        r"""Sets the job_id of this UpgradeResult.
 
         任务ID。仅当补丁版本升级任务提交成功时返回该字段。
 
@@ -85,7 +85,7 @@ class UpgradeResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeResult.
+        r"""Gets the instance_id of this UpgradeResult.
 
         实例ID。
 
@@ -96,7 +96,7 @@ class UpgradeResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeResult.
+        r"""Sets the instance_id of this UpgradeResult.
 
         实例ID。
 
@@ -107,7 +107,7 @@ class UpgradeResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpgradeResult.
+        r"""Gets the error_code of this UpgradeResult.
 
         错误码。仅当补丁版本升级任务提交失败时返回该字段。
 
@@ -118,7 +118,7 @@ class UpgradeResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpgradeResult.
+        r"""Sets the error_code of this UpgradeResult.
 
         错误码。仅当补丁版本升级任务提交失败时返回该字段。
 
@@ -129,7 +129,7 @@ class UpgradeResult:
 
     @property
     def error_message(self):
-        """Gets the error_message of this UpgradeResult.
+        r"""Gets the error_message of this UpgradeResult.
 
         失败原因。仅当补丁版本升级任务提交失败时返回该字段。
 
@@ -140,7 +140,7 @@ class UpgradeResult:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this UpgradeResult.
+        r"""Sets the error_message of this UpgradeResult.
 
         失败原因。仅当补丁版本升级任务提交失败时返回该字段。
 

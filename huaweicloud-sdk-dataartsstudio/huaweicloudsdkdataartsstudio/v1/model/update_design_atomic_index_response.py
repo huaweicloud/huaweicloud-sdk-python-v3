@@ -26,7 +26,7 @@ class UpdateDesignAtomicIndexResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateDesignAtomicIndexResponse
+        r"""UpdateDesignAtomicIndexResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDesignAtomicIndexResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateDesignAtomicIndexResponse.
+        r"""Gets the data of this UpdateDesignAtomicIndexResponse.
 
         :return: The data of this UpdateDesignAtomicIndexResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVODetailData`
@@ -53,7 +53,7 @@ class UpdateDesignAtomicIndexResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateDesignAtomicIndexResponse.
+        r"""Sets the data of this UpdateDesignAtomicIndexResponse.
 
         :param data: The data of this UpdateDesignAtomicIndexResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVODetailData`

@@ -34,7 +34,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
-        """ShowInstanceConfigurationResponse
+        r"""ShowInstanceConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this ShowInstanceConfigurationResponse.
+        r"""Gets the datastore_version_name of this ShowInstanceConfigurationResponse.
 
         引擎版本。
 
@@ -83,7 +83,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this ShowInstanceConfigurationResponse.
+        r"""Sets the datastore_version_name of this ShowInstanceConfigurationResponse.
 
         引擎版本。
 
@@ -94,7 +94,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ShowInstanceConfigurationResponse.
+        r"""Gets the datastore_name of this ShowInstanceConfigurationResponse.
 
         引擎名。
 
@@ -105,7 +105,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ShowInstanceConfigurationResponse.
+        r"""Sets the datastore_name of this ShowInstanceConfigurationResponse.
 
         引擎名。
 
@@ -116,7 +116,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowInstanceConfigurationResponse.
+        r"""Gets the created of this ShowInstanceConfigurationResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -127,7 +127,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowInstanceConfigurationResponse.
+        r"""Sets the created of this ShowInstanceConfigurationResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -138,7 +138,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowInstanceConfigurationResponse.
+        r"""Gets the updated of this ShowInstanceConfigurationResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -149,7 +149,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowInstanceConfigurationResponse.
+        r"""Sets the updated of this ShowInstanceConfigurationResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -160,7 +160,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @property
     def configuration_parameters(self):
-        """Gets the configuration_parameters of this ShowInstanceConfigurationResponse.
+        r"""Gets the configuration_parameters of this ShowInstanceConfigurationResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 
@@ -171,7 +171,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
 
     @configuration_parameters.setter
     def configuration_parameters(self, configuration_parameters):
-        """Sets the configuration_parameters of this ShowInstanceConfigurationResponse.
+        r"""Sets the configuration_parameters of this ShowInstanceConfigurationResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 

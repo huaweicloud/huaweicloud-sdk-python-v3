@@ -27,7 +27,7 @@ class ResourceSummaryResponseItemTypes:
     }
 
     def __init__(self, type=None, regions=None):
-        """ResourceSummaryResponseItemTypes
+        r"""ResourceSummaryResponseItemTypes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceSummaryResponseItemTypes:
 
     @property
     def type(self):
-        """Gets the type of this ResourceSummaryResponseItemTypes.
+        r"""Gets the type of this ResourceSummaryResponseItemTypes.
 
         资源类型名称
 
@@ -61,7 +61,7 @@ class ResourceSummaryResponseItemTypes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceSummaryResponseItemTypes.
+        r"""Sets the type of this ResourceSummaryResponseItemTypes.
 
         资源类型名称
 
@@ -72,7 +72,7 @@ class ResourceSummaryResponseItemTypes:
 
     @property
     def regions(self):
-        """Gets the regions of this ResourceSummaryResponseItemTypes.
+        r"""Gets the regions of this ResourceSummaryResponseItemTypes.
 
         区域列表
 
@@ -83,7 +83,7 @@ class ResourceSummaryResponseItemTypes:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ResourceSummaryResponseItemTypes.
+        r"""Sets the regions of this ResourceSummaryResponseItemTypes.
 
         区域列表
 

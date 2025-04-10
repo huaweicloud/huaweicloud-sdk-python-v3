@@ -25,7 +25,7 @@ class ShowOpenIdConnectConfigRequest:
     }
 
     def __init__(self, idp_id=None):
-        """ShowOpenIdConnectConfigRequest
+        r"""ShowOpenIdConnectConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowOpenIdConnectConfigRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this ShowOpenIdConnectConfigRequest.
+        r"""Gets the idp_id of this ShowOpenIdConnectConfigRequest.
 
         身份提供商ID
 
@@ -53,7 +53,7 @@ class ShowOpenIdConnectConfigRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this ShowOpenIdConnectConfigRequest.
+        r"""Sets the idp_id of this ShowOpenIdConnectConfigRequest.
 
         身份提供商ID
 

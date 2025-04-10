@@ -27,7 +27,7 @@ class ShowUnrelatedTableRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ShowUnrelatedTableRequest
+        r"""ShowUnrelatedTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowUnrelatedTableRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowUnrelatedTableRequest.
+        r"""Gets the workspace of this ShowUnrelatedTableRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ShowUnrelatedTableRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowUnrelatedTableRequest.
+        r"""Sets the workspace of this ShowUnrelatedTableRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ShowUnrelatedTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowUnrelatedTableRequest.
+        r"""Gets the body of this ShowUnrelatedTableRequest.
 
         :return: The body of this ShowUnrelatedTableRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchParametersExt`
@@ -80,7 +80,7 @@ class ShowUnrelatedTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowUnrelatedTableRequest.
+        r"""Sets the body of this ShowUnrelatedTableRequest.
 
         :param body: The body of this ShowUnrelatedTableRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.SearchParametersExt`

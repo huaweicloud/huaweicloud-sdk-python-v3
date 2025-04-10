@@ -27,7 +27,7 @@ class UpdatePersonalTemplateStateRequest:
     }
 
     def __init__(self, tpl_id=None, body=None):
-        """UpdatePersonalTemplateStateRequest
+        r"""UpdatePersonalTemplateStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePersonalTemplateStateRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this UpdatePersonalTemplateStateRequest.
+        r"""Gets the tpl_id of this UpdatePersonalTemplateStateRequest.
 
         智能信息模板ID。
 
@@ -60,7 +60,7 @@ class UpdatePersonalTemplateStateRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this UpdatePersonalTemplateStateRequest.
+        r"""Sets the tpl_id of this UpdatePersonalTemplateStateRequest.
 
         智能信息模板ID。
 
@@ -71,7 +71,7 @@ class UpdatePersonalTemplateStateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePersonalTemplateStateRequest.
+        r"""Gets the body of this UpdatePersonalTemplateStateRequest.
 
         :return: The body of this UpdatePersonalTemplateStateRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePersonalTemplateStateDataRequest`
@@ -80,7 +80,7 @@ class UpdatePersonalTemplateStateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePersonalTemplateStateRequest.
+        r"""Sets the body of this UpdatePersonalTemplateStateRequest.
 
         :param body: The body of this UpdatePersonalTemplateStateRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UpdatePersonalTemplateStateDataRequest`

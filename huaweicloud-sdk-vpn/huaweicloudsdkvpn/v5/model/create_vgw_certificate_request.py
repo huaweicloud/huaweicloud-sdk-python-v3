@@ -27,7 +27,7 @@ class CreateVgwCertificateRequest:
     }
 
     def __init__(self, vgw_id=None, body=None):
-        """CreateVgwCertificateRequest
+        r"""CreateVgwCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVgwCertificateRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this CreateVgwCertificateRequest.
+        r"""Gets the vgw_id of this CreateVgwCertificateRequest.
 
         VPN网关实例ID
 
@@ -60,7 +60,7 @@ class CreateVgwCertificateRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this CreateVgwCertificateRequest.
+        r"""Sets the vgw_id of this CreateVgwCertificateRequest.
 
         VPN网关实例ID
 
@@ -71,7 +71,7 @@ class CreateVgwCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVgwCertificateRequest.
+        r"""Gets the body of this CreateVgwCertificateRequest.
 
         :return: The body of this CreateVgwCertificateRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBody`
@@ -80,7 +80,7 @@ class CreateVgwCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVgwCertificateRequest.
+        r"""Sets the body of this CreateVgwCertificateRequest.
 
         :param body: The body of this CreateVgwCertificateRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateVpnGatewayCertificateRequestBody`

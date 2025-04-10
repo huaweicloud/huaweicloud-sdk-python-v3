@@ -29,7 +29,7 @@ class UpdateEdgeNodeRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None, body=None):
-        """UpdateEdgeNodeRequest
+        r"""UpdateEdgeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateEdgeNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateEdgeNodeRequest.
+        r"""Gets the node_id of this UpdateEdgeNodeRequest.
 
         边缘节点ID
 
@@ -67,7 +67,7 @@ class UpdateEdgeNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateEdgeNodeRequest.
+        r"""Sets the node_id of this UpdateEdgeNodeRequest.
 
         边缘节点ID
 
@@ -78,7 +78,7 @@ class UpdateEdgeNodeRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateEdgeNodeRequest.
+        r"""Gets the ief_instance_id of this UpdateEdgeNodeRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -89,7 +89,7 @@ class UpdateEdgeNodeRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateEdgeNodeRequest.
+        r"""Sets the ief_instance_id of this UpdateEdgeNodeRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -100,7 +100,7 @@ class UpdateEdgeNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeNodeRequest.
+        r"""Gets the body of this UpdateEdgeNodeRequest.
 
         :return: The body of this UpdateEdgeNodeRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`
@@ -109,7 +109,7 @@ class UpdateEdgeNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeNodeRequest.
+        r"""Sets the body of this UpdateEdgeNodeRequest.
 
         :param body: The body of this UpdateEdgeNodeRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`

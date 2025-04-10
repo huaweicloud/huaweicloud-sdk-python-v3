@@ -25,7 +25,7 @@ class QueryRunRequestBody:
     }
 
     def __init__(self, expression=None):
-        """QueryRunRequestBody
+        r"""QueryRunRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QueryRunRequestBody:
 
     @property
     def expression(self):
-        """Gets the expression of this QueryRunRequestBody.
+        r"""Gets the expression of this QueryRunRequestBody.
 
         ResourceQL 表达式
 
@@ -53,7 +53,7 @@ class QueryRunRequestBody:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this QueryRunRequestBody.
+        r"""Sets the expression of this QueryRunRequestBody.
 
         ResourceQL 表达式
 

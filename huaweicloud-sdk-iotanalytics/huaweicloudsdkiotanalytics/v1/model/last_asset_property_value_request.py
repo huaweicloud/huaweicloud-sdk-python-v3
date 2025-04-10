@@ -29,7 +29,7 @@ class LastAssetPropertyValueRequest:
     }
 
     def __init__(self, tags=None, property_filter=None, property_names=None):
-        """LastAssetPropertyValueRequest
+        r"""LastAssetPropertyValueRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LastAssetPropertyValueRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this LastAssetPropertyValueRequest.
+        r"""Gets the tags of this LastAssetPropertyValueRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -68,7 +68,7 @@ class LastAssetPropertyValueRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this LastAssetPropertyValueRequest.
+        r"""Sets the tags of this LastAssetPropertyValueRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -79,7 +79,7 @@ class LastAssetPropertyValueRequest:
 
     @property
     def property_filter(self):
-        """Gets the property_filter of this LastAssetPropertyValueRequest.
+        r"""Gets the property_filter of this LastAssetPropertyValueRequest.
 
         属性过滤器，最多5个
 
@@ -90,7 +90,7 @@ class LastAssetPropertyValueRequest:
 
     @property_filter.setter
     def property_filter(self, property_filter):
-        """Sets the property_filter of this LastAssetPropertyValueRequest.
+        r"""Sets the property_filter of this LastAssetPropertyValueRequest.
 
         属性过滤器，最多5个
 
@@ -101,7 +101,7 @@ class LastAssetPropertyValueRequest:
 
     @property
     def property_names(self):
-        """Gets the property_names of this LastAssetPropertyValueRequest.
+        r"""Gets the property_names of this LastAssetPropertyValueRequest.
 
         待查询的资产属性名列表,不携带该字段表示查询全部
 
@@ -112,7 +112,7 @@ class LastAssetPropertyValueRequest:
 
     @property_names.setter
     def property_names(self, property_names):
-        """Sets the property_names of this LastAssetPropertyValueRequest.
+        r"""Sets the property_names of this LastAssetPropertyValueRequest.
 
         待查询的资产属性名列表,不携带该字段表示查询全部
 

@@ -24,7 +24,7 @@ class UpdateAccessAddressBackupConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAccessAddressBackupConfigResponse
+        r"""UpdateAccessAddressBackupConfigResponse
 
         The model defined in huaweicloud sdk
 

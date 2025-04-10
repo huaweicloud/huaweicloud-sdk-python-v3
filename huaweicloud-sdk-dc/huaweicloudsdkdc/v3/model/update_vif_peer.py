@@ -29,7 +29,7 @@ class UpdateVifPeer:
     }
 
     def __init__(self, name=None, description=None, remote_ep_group=None):
-        """UpdateVifPeer
+        r"""UpdateVifPeer
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateVifPeer:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVifPeer.
+        r"""Gets the name of this UpdateVifPeer.
 
         VIF对等体名字
 
@@ -68,7 +68,7 @@ class UpdateVifPeer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVifPeer.
+        r"""Sets the name of this UpdateVifPeer.
 
         VIF对等体名字
 
@@ -79,7 +79,7 @@ class UpdateVifPeer:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVifPeer.
+        r"""Gets the description of this UpdateVifPeer.
 
         VIF对等体名字描述信息
 
@@ -90,7 +90,7 @@ class UpdateVifPeer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVifPeer.
+        r"""Sets the description of this UpdateVifPeer.
 
         VIF对等体名字描述信息
 
@@ -101,7 +101,7 @@ class UpdateVifPeer:
 
     @property
     def remote_ep_group(self):
-        """Gets the remote_ep_group of this UpdateVifPeer.
+        r"""Gets the remote_ep_group of this UpdateVifPeer.
 
         远端子网列表，记录用户侧的cidrs
 
@@ -112,7 +112,7 @@ class UpdateVifPeer:
 
     @remote_ep_group.setter
     def remote_ep_group(self, remote_ep_group):
-        """Sets the remote_ep_group of this UpdateVifPeer.
+        r"""Sets the remote_ep_group of this UpdateVifPeer.
 
         远端子网列表，记录用户侧的cidrs
 

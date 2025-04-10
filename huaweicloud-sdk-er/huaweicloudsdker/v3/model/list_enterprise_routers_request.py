@@ -41,7 +41,7 @@ class ListEnterpriseRoutersRequest:
     }
 
     def __init__(self, limit=None, marker=None, enterprise_project_id=None, state=None, id=None, resource_id=None, owned_by_self=None, sort_key=None, sort_dir=None):
-        """ListEnterpriseRoutersRequest
+        r"""ListEnterpriseRoutersRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnterpriseRoutersRequest.
+        r"""Gets the limit of this ListEnterpriseRoutersRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -110,7 +110,7 @@ class ListEnterpriseRoutersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnterpriseRoutersRequest.
+        r"""Sets the limit of this ListEnterpriseRoutersRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -121,7 +121,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEnterpriseRoutersRequest.
+        r"""Gets the marker of this ListEnterpriseRoutersRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -132,7 +132,7 @@ class ListEnterpriseRoutersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEnterpriseRoutersRequest.
+        r"""Sets the marker of this ListEnterpriseRoutersRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -143,7 +143,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEnterpriseRoutersRequest.
+        r"""Gets the enterprise_project_id of this ListEnterpriseRoutersRequest.
 
         企业项目ID
 
@@ -154,7 +154,7 @@ class ListEnterpriseRoutersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEnterpriseRoutersRequest.
+        r"""Sets the enterprise_project_id of this ListEnterpriseRoutersRequest.
 
         企业项目ID
 
@@ -165,7 +165,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListEnterpriseRoutersRequest.
+        r"""Gets the state of this ListEnterpriseRoutersRequest.
 
         企业路由器实例状态
 
@@ -176,7 +176,7 @@ class ListEnterpriseRoutersRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListEnterpriseRoutersRequest.
+        r"""Sets the state of this ListEnterpriseRoutersRequest.
 
         企业路由器实例状态
 
@@ -187,7 +187,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEnterpriseRoutersRequest.
+        r"""Gets the id of this ListEnterpriseRoutersRequest.
 
         根据资源ID查询，可同时查询多个。
 
@@ -198,7 +198,7 @@ class ListEnterpriseRoutersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEnterpriseRoutersRequest.
+        r"""Sets the id of this ListEnterpriseRoutersRequest.
 
         根据资源ID查询，可同时查询多个。
 
@@ -209,7 +209,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListEnterpriseRoutersRequest.
+        r"""Gets the resource_id of this ListEnterpriseRoutersRequest.
 
         连接对应的资源ID列表
 
@@ -220,7 +220,7 @@ class ListEnterpriseRoutersRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListEnterpriseRoutersRequest.
+        r"""Sets the resource_id of this ListEnterpriseRoutersRequest.
 
         连接对应的资源ID列表
 
@@ -231,7 +231,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def owned_by_self(self):
-        """Gets the owned_by_self of this ListEnterpriseRoutersRequest.
+        r"""Gets the owned_by_self of this ListEnterpriseRoutersRequest.
 
         过滤资源是否属于当前租户；取值为true时，只查属于当前租户的资源，不包括共享资源；为false时，查询当前租户及共享给该租户的资源；
 
@@ -242,7 +242,7 @@ class ListEnterpriseRoutersRequest:
 
     @owned_by_self.setter
     def owned_by_self(self, owned_by_self):
-        """Sets the owned_by_self of this ListEnterpriseRoutersRequest.
+        r"""Sets the owned_by_self of this ListEnterpriseRoutersRequest.
 
         过滤资源是否属于当前租户；取值为true时，只查属于当前租户的资源，不包括共享资源；为false时，查询当前租户及共享给该租户的资源；
 
@@ -253,7 +253,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListEnterpriseRoutersRequest.
+        r"""Gets the sort_key of this ListEnterpriseRoutersRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -264,7 +264,7 @@ class ListEnterpriseRoutersRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListEnterpriseRoutersRequest.
+        r"""Sets the sort_key of this ListEnterpriseRoutersRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -275,7 +275,7 @@ class ListEnterpriseRoutersRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListEnterpriseRoutersRequest.
+        r"""Gets the sort_dir of this ListEnterpriseRoutersRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -286,7 +286,7 @@ class ListEnterpriseRoutersRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListEnterpriseRoutersRequest.
+        r"""Sets the sort_dir of this ListEnterpriseRoutersRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 

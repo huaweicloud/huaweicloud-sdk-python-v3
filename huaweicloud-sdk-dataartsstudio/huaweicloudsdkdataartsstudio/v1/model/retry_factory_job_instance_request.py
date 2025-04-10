@@ -31,7 +31,7 @@ class RetryFactoryJobInstanceRequest:
     }
 
     def __init__(self, job_name=None, workspace=None, x_project_id=None, body=None):
-        """RetryFactoryJobInstanceRequest
+        r"""RetryFactoryJobInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RetryFactoryJobInstanceRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this RetryFactoryJobInstanceRequest.
+        r"""Gets the job_name of this RetryFactoryJobInstanceRequest.
 
         当前作业名称
 
@@ -73,7 +73,7 @@ class RetryFactoryJobInstanceRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this RetryFactoryJobInstanceRequest.
+        r"""Sets the job_name of this RetryFactoryJobInstanceRequest.
 
         当前作业名称
 
@@ -84,7 +84,7 @@ class RetryFactoryJobInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this RetryFactoryJobInstanceRequest.
+        r"""Gets the workspace of this RetryFactoryJobInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -95,7 +95,7 @@ class RetryFactoryJobInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this RetryFactoryJobInstanceRequest.
+        r"""Sets the workspace of this RetryFactoryJobInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -106,7 +106,7 @@ class RetryFactoryJobInstanceRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this RetryFactoryJobInstanceRequest.
+        r"""Gets the x_project_id of this RetryFactoryJobInstanceRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -117,7 +117,7 @@ class RetryFactoryJobInstanceRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this RetryFactoryJobInstanceRequest.
+        r"""Sets the x_project_id of this RetryFactoryJobInstanceRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -128,7 +128,7 @@ class RetryFactoryJobInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RetryFactoryJobInstanceRequest.
+        r"""Gets the body of this RetryFactoryJobInstanceRequest.
 
         :return: The body of this RetryFactoryJobInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RetryFactoryJobInstanceBody`
@@ -137,7 +137,7 @@ class RetryFactoryJobInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RetryFactoryJobInstanceRequest.
+        r"""Sets the body of this RetryFactoryJobInstanceRequest.
 
         :param body: The body of this RetryFactoryJobInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.RetryFactoryJobInstanceBody`

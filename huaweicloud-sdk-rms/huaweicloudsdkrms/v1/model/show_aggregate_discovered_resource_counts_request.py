@@ -25,7 +25,7 @@ class ShowAggregateDiscoveredResourceCountsRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAggregateDiscoveredResourceCountsRequest
+        r"""ShowAggregateDiscoveredResourceCountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAggregateDiscoveredResourceCountsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAggregateDiscoveredResourceCountsRequest.
+        r"""Gets the body of this ShowAggregateDiscoveredResourceCountsRequest.
 
         :return: The body of this ShowAggregateDiscoveredResourceCountsRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.AggregateDiscoveredResourceCountsRequest`
@@ -52,7 +52,7 @@ class ShowAggregateDiscoveredResourceCountsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAggregateDiscoveredResourceCountsRequest.
+        r"""Sets the body of this ShowAggregateDiscoveredResourceCountsRequest.
 
         :param body: The body of this ShowAggregateDiscoveredResourceCountsRequest.
         :type body: :class:`huaweicloudsdkrms.v1.AggregateDiscoveredResourceCountsRequest`

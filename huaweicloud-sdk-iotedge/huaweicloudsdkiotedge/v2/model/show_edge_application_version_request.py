@@ -27,7 +27,7 @@ class ShowEdgeApplicationVersionRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None):
-        """ShowEdgeApplicationVersionRequest
+        r"""ShowEdgeApplicationVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEdgeApplicationVersionRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this ShowEdgeApplicationVersionRequest.
+        r"""Gets the edge_app_id of this ShowEdgeApplicationVersionRequest.
 
         应用ID，应用唯一。
 
@@ -59,7 +59,7 @@ class ShowEdgeApplicationVersionRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this ShowEdgeApplicationVersionRequest.
+        r"""Sets the edge_app_id of this ShowEdgeApplicationVersionRequest.
 
         应用ID，应用唯一。
 
@@ -70,7 +70,7 @@ class ShowEdgeApplicationVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowEdgeApplicationVersionRequest.
+        r"""Gets the version of this ShowEdgeApplicationVersionRequest.
 
         应用版本,应用内版本唯一。
 
@@ -81,7 +81,7 @@ class ShowEdgeApplicationVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowEdgeApplicationVersionRequest.
+        r"""Sets the version of this ShowEdgeApplicationVersionRequest.
 
         应用版本,应用内版本唯一。
 

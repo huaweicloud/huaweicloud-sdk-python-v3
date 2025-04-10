@@ -33,7 +33,7 @@ class GroupBandwidthInfo:
     }
 
     def __init__(self, group_id=None, updated_at=None, bandwidth=None, max_bandwidth=None, assured_bandwidth=None):
-        """GroupBandwidthInfo
+        r"""GroupBandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class GroupBandwidthInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GroupBandwidthInfo.
+        r"""Gets the group_id of this GroupBandwidthInfo.
 
         分片ID。
 
@@ -82,7 +82,7 @@ class GroupBandwidthInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GroupBandwidthInfo.
+        r"""Sets the group_id of this GroupBandwidthInfo.
 
         分片ID。
 
@@ -93,7 +93,7 @@ class GroupBandwidthInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GroupBandwidthInfo.
+        r"""Gets the updated_at of this GroupBandwidthInfo.
 
         更新时间，UTC时间。
 
@@ -104,7 +104,7 @@ class GroupBandwidthInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GroupBandwidthInfo.
+        r"""Sets the updated_at of this GroupBandwidthInfo.
 
         更新时间，UTC时间。
 
@@ -115,7 +115,7 @@ class GroupBandwidthInfo:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this GroupBandwidthInfo.
+        r"""Gets the bandwidth of this GroupBandwidthInfo.
 
         当前带宽(Mbit/s)。
 
@@ -126,7 +126,7 @@ class GroupBandwidthInfo:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this GroupBandwidthInfo.
+        r"""Sets the bandwidth of this GroupBandwidthInfo.
 
         当前带宽(Mbit/s)。
 
@@ -137,7 +137,7 @@ class GroupBandwidthInfo:
 
     @property
     def max_bandwidth(self):
-        """Gets the max_bandwidth of this GroupBandwidthInfo.
+        r"""Gets the max_bandwidth of this GroupBandwidthInfo.
 
         最大带宽(Mbit/s)。
 
@@ -148,7 +148,7 @@ class GroupBandwidthInfo:
 
     @max_bandwidth.setter
     def max_bandwidth(self, max_bandwidth):
-        """Sets the max_bandwidth of this GroupBandwidthInfo.
+        r"""Sets the max_bandwidth of this GroupBandwidthInfo.
 
         最大带宽(Mbit/s)。
 
@@ -159,7 +159,7 @@ class GroupBandwidthInfo:
 
     @property
     def assured_bandwidth(self):
-        """Gets the assured_bandwidth of this GroupBandwidthInfo.
+        r"""Gets the assured_bandwidth of this GroupBandwidthInfo.
 
         基准带宽(Mbit/s)。
 
@@ -170,7 +170,7 @@ class GroupBandwidthInfo:
 
     @assured_bandwidth.setter
     def assured_bandwidth(self, assured_bandwidth):
-        """Sets the assured_bandwidth of this GroupBandwidthInfo.
+        r"""Sets the assured_bandwidth of this GroupBandwidthInfo.
 
         基准带宽(Mbit/s)。
 

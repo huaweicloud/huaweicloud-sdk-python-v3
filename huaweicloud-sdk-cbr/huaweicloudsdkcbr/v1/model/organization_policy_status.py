@@ -31,7 +31,7 @@ class OrganizationPolicyStatus:
     }
 
     def __init__(self, policy_id=None, domain_id=None, project_id=None, status=None):
-        """OrganizationPolicyStatus
+        r"""OrganizationPolicyStatus
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OrganizationPolicyStatus:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this OrganizationPolicyStatus.
+        r"""Gets the policy_id of this OrganizationPolicyStatus.
 
         策略ID
 
@@ -71,7 +71,7 @@ class OrganizationPolicyStatus:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this OrganizationPolicyStatus.
+        r"""Sets the policy_id of this OrganizationPolicyStatus.
 
         策略ID
 
@@ -82,7 +82,7 @@ class OrganizationPolicyStatus:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this OrganizationPolicyStatus.
+        r"""Gets the domain_id of this OrganizationPolicyStatus.
 
         账号ID
 
@@ -93,7 +93,7 @@ class OrganizationPolicyStatus:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this OrganizationPolicyStatus.
+        r"""Sets the domain_id of this OrganizationPolicyStatus.
 
         账号ID
 
@@ -104,7 +104,7 @@ class OrganizationPolicyStatus:
 
     @property
     def project_id(self):
-        """Gets the project_id of this OrganizationPolicyStatus.
+        r"""Gets the project_id of this OrganizationPolicyStatus.
 
         项目ID
 
@@ -115,7 +115,7 @@ class OrganizationPolicyStatus:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this OrganizationPolicyStatus.
+        r"""Sets the project_id of this OrganizationPolicyStatus.
 
         项目ID
 
@@ -126,7 +126,7 @@ class OrganizationPolicyStatus:
 
     @property
     def status(self):
-        """Gets the status of this OrganizationPolicyStatus.
+        r"""Gets the status of this OrganizationPolicyStatus.
 
         状态
 
@@ -137,7 +137,7 @@ class OrganizationPolicyStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OrganizationPolicyStatus.
+        r"""Sets the status of this OrganizationPolicyStatus.
 
         状态
 

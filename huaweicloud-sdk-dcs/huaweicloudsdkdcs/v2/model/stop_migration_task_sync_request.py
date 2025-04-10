@@ -25,7 +25,7 @@ class StopMigrationTaskSyncRequest:
     }
 
     def __init__(self, task_id=None):
-        """StopMigrationTaskSyncRequest
+        r"""StopMigrationTaskSyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopMigrationTaskSyncRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this StopMigrationTaskSyncRequest.
+        r"""Gets the task_id of this StopMigrationTaskSyncRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class StopMigrationTaskSyncRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StopMigrationTaskSyncRequest.
+        r"""Sets the task_id of this StopMigrationTaskSyncRequest.
 
         任务ID
 

@@ -29,7 +29,7 @@ class ModelVersionInput:
     }
 
     def __init__(self, name=None, description=None, config=None):
-        """ModelVersionInput
+        r"""ModelVersionInput
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ModelVersionInput:
 
     @property
     def name(self):
-        """Gets the name of this ModelVersionInput.
+        r"""Gets the name of this ModelVersionInput.
 
         模型版本名称, 只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -67,7 +67,7 @@ class ModelVersionInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModelVersionInput.
+        r"""Sets the name of this ModelVersionInput.
 
         模型版本名称, 只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -78,7 +78,7 @@ class ModelVersionInput:
 
     @property
     def description(self):
-        """Gets the description of this ModelVersionInput.
+        r"""Gets the description of this ModelVersionInput.
 
         描述信息
 
@@ -89,7 +89,7 @@ class ModelVersionInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModelVersionInput.
+        r"""Sets the description of this ModelVersionInput.
 
         描述信息
 
@@ -100,7 +100,7 @@ class ModelVersionInput:
 
     @property
     def config(self):
-        """Gets the config of this ModelVersionInput.
+        r"""Gets the config of this ModelVersionInput.
 
         :return: The config of this ModelVersionInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelConfig`
@@ -109,7 +109,7 @@ class ModelVersionInput:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ModelVersionInput.
+        r"""Sets the config of this ModelVersionInput.
 
         :param config: The config of this ModelVersionInput.
         :type config: :class:`huaweicloudsdkdataartsfabric.v1.ModelConfig`

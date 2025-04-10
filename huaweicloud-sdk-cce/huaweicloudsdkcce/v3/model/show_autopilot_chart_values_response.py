@@ -26,7 +26,7 @@ class ShowAutopilotChartValuesResponse(SdkResponse):
     }
 
     def __init__(self, values=None):
-        """ShowAutopilotChartValuesResponse
+        r"""ShowAutopilotChartValuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAutopilotChartValuesResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowAutopilotChartValuesResponse.
+        r"""Gets the values of this ShowAutopilotChartValuesResponse.
 
         :return: The values of this ShowAutopilotChartValuesResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ChartValueValues`
@@ -53,7 +53,7 @@ class ShowAutopilotChartValuesResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowAutopilotChartValuesResponse.
+        r"""Sets the values of this ShowAutopilotChartValuesResponse.
 
         :param values: The values of this ShowAutopilotChartValuesResponse.
         :type values: :class:`huaweicloudsdkcce.v3.ChartValueValues`

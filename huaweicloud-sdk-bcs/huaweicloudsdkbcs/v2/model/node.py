@@ -27,7 +27,7 @@ class Node:
     }
 
     def __init__(self, ip_port=None, channels=None):
-        """Node
+        r"""Node
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Node:
 
     @property
     def ip_port(self):
-        """Gets the ip_port of this Node.
+        r"""Gets the ip_port of this Node.
 
         节点EIP信息
 
@@ -61,7 +61,7 @@ class Node:
 
     @ip_port.setter
     def ip_port(self, ip_port):
-        """Sets the ip_port of this Node.
+        r"""Sets the ip_port of this Node.
 
         节点EIP信息
 
@@ -72,7 +72,7 @@ class Node:
 
     @property
     def channels(self):
-        """Gets the channels of this Node.
+        r"""Gets the channels of this Node.
 
         节点所在通道数组
 
@@ -83,7 +83,7 @@ class Node:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this Node.
+        r"""Sets the channels of this Node.
 
         节点所在通道数组
 

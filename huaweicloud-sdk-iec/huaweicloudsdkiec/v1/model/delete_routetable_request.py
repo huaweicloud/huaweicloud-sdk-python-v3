@@ -25,7 +25,7 @@ class DeleteRoutetableRequest:
     }
 
     def __init__(self, routetable_id=None):
-        """DeleteRoutetableRequest
+        r"""DeleteRoutetableRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRoutetableRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this DeleteRoutetableRequest.
+        r"""Gets the routetable_id of this DeleteRoutetableRequest.
 
         路由表ID
 
@@ -53,7 +53,7 @@ class DeleteRoutetableRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this DeleteRoutetableRequest.
+        r"""Sets the routetable_id of this DeleteRoutetableRequest.
 
         路由表ID
 

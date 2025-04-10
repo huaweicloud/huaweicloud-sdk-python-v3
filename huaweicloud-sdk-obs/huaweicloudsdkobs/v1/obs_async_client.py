@@ -34,7 +34,7 @@ class ObsAsyncClient(Client):
         return client_builder
 
     def delete_bucket_customdomain_async(self, request):
-        """Deleting a Custom Domain Name of a Bucket
+        r"""Deleting a Custom Domain Name of a Bucket
 
         This operation deletes a custom domain name of a bucket.
         
@@ -105,7 +105,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_bucket_acl_async(self, request):
-        """Obtaining a Bucket ACL
+        r"""Obtaining a Bucket ACL
 
         This operation returns the ACL of a bucket. To use this operation, you must have the **READ_ACP** or **FULL_CONTROL** permission for the bucket.
         
@@ -174,7 +174,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_bucket_customdomain_async(self, request):
-        """Getting a Custom Domain Name of a Bucket
+        r"""Getting a Custom Domain Name of a Bucket
 
         This operation gets a custom domain name of a bucket.
         
@@ -249,7 +249,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_bucket_notification_async(self, request):
-        """Getting the Notification Configuration of a Bucket
+        r"""Getting the Notification Configuration of a Bucket
 
         This operation returns the notification configuration of a bucket.
         
@@ -320,7 +320,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def set_bucket_acl_async(self, request):
-        """Configuring a Bucket ACL
+        r"""Configuring a Bucket ACL
 
         This operation controls access to a bucket. By default, only the bucket creator has the read and write permissions on the bucket. You can also customize access policies for a bucket, for example, configuring a public read policy for the bucket to allow all users to read it.
         
@@ -397,7 +397,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def set_bucket_customedomain_async(self, request):
-        """Configuring a Custom Domain Name for a Bucket
+        r"""Configuring a Custom Domain Name for a Bucket
 
         This operation configures a custom domain name for a bucket. After the configuration is successful, you can access the bucket using its custom domain name.
         
@@ -472,7 +472,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def set_bucket_notification_async(self, request):
-        """Configuring Notifications for a Bucket
+        r"""Configuring Notifications for a Bucket
 
         This operation configures event notifications for your OBS bucket so that you can receive notifications when certain events happen in your bucket.
         
@@ -552,7 +552,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def create_bucket_async(self, request):
-        """Creating a Bucket
+        r"""Creating a Bucket
 
         This operation creates a new bucket.
         
@@ -666,7 +666,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def delete_bucket_async(self, request):
-        """Deleting a Bucket
+        r"""Deleting a Bucket
 
         This operation deletes a bucket. Only the bucket owner or the user who has the bucket delete permission can delete the bucket. Before a bucket itself can be deleted, all objects in the bucket must be deleted. A bucket is not empty if it has any object or multipart upload in it. You can list objects and multipart uploads in the bucket to check whether the bucket is empty.
         Note:
@@ -735,7 +735,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_bucket_metadata_async(self, request):
-        """Getting Metadata of a Bucket
+        r"""Getting Metadata of a Bucket
 
         This operation queries the metadata of a bucket. To use this operation, you must have the permission to read the bucket.
         
@@ -806,7 +806,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def list_buckets_async(self, request):
-        """Getting a List of Buckets
+        r"""Getting a List of Buckets
 
         This operation returns a list of all buckets you created.
         
@@ -873,7 +873,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def list_objects_async(self, request):
-        """Listing Objects in a Bucket
+        r"""Listing Objects in a Bucket
 
         This operation returns objects in a bucket.
         
@@ -954,7 +954,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def copy_object_async(self, request):
-        """Copying an Object
+        r"""Copying an Object
 
         This operation creates a copy of an object in OBS.
         
@@ -1094,7 +1094,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def delete_object_async(self, request):
-        """Deleting an Object
+        r"""Deleting an Object
 
         This operation deletes an object. If you try to delete an object that does not exist, OBS still returns a success message.
         
@@ -1170,7 +1170,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def delete_objects_async(self, request):
-        """Batch Deleting Objects
+        r"""Batch Deleting Objects
 
         This operation deletes some objects in a bucket at a time. The operation cannot be undone.  OBS synchronously deletes objects in a batch. The deletion result of each object is returned.
         
@@ -1247,7 +1247,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_object_async(self, request):
-        """Downloading an Object
+        r"""Downloading an Object
 
         This operation downloads an object from OBS. To use this operation, you must have the read permission for the object. If the object owner has granted anonymous users the read permission for the object, anonymous users can access this object without using the authentication header field.
         
@@ -1359,7 +1359,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def get_object_metadata_async(self, request):
-        """Getting Metadata of an Object
+        r"""Getting Metadata of an Object
 
         This operation returns the metadata of an object. To use this operation, you must have the read permission on the object.
         This operation supports server-side encryption.
@@ -1448,7 +1448,7 @@ class ObsAsyncClient(Client):
         return http_info
 
     def put_object_async(self, request):
-        """Uploading an Object - PUT
+        r"""Uploading an Object - PUT
 
         After you create a bucket in OBS, you can use this operation to upload an object to your bucket. This operation adds an object to a bucket. To use this operation, you must have write permissions on the bucket.The name of each object in a bucket must be unique.With versioning not enabled, if an object to be uploaded has the same name as an existing object in the bucket, the newly uploaded object will overwrite the existing one. To protect data from being corrupted during transmission, you can add the **Content-MD5** parameter in the request header. After receiving the request, OBS will perform an MD5 consistency check. If the two MD5 values are inconsistent, the system returns an error message.You can also specify the **x-obs-acl** parameter to configure an access control policy for the object. If an anonymous user does not specify **x-obs-acl** when uploading an object, the object can be accessed by all OBS users by default.This operation supports server-side encryption.The object size in a single upload is up to 5 GB. To upload a file larger than 5 GB, use the multipart upload.OBS does not have real folders. For easy data management, OBS allows you to simulate a folder by adding a slash (/) to the object name, for example, **test/123.jpg**. OBS will present **test** to you as a folder and **123.jpg** as the name of a file stored inside of **test**, but the object key is still actually **test/123.jpg**. Objects named this way appear as folders on OBS Console.**Differences Between PUT and POST**  In the PUT method, parameters are passed using request headers. In the POST method, parameters are passed using form fields in the message body.To upload an object with PUT, you need to specify the object name in the URL. The object name is not required with the POST method that uses the bucket domain name as the URL. An example of an upload with PUT or POST is as follows:PUT /ObjectName HTTP/1.1POST / HTTP/1.1For POST upload, see the corresponding section.**Versioning**   If versioning is enabled on a bucket, OBS assigns a unique version ID for the object you upload to the bucket and returns this version ID in the **x-obs-version-id** header in the response. If versioning is suspended for the bucket, the object version ID is **null**. For details about the bucket versioning status, see the configuration of bucket versioning.
         

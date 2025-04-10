@@ -27,7 +27,7 @@ class IpsProtectDTO:
     }
 
     def __init__(self, object_id=None, mode=None):
-        """IpsProtectDTO
+        r"""IpsProtectDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpsProtectDTO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this IpsProtectDTO.
+        r"""Gets the object_id of this IpsProtectDTO.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
 
@@ -59,7 +59,7 @@ class IpsProtectDTO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this IpsProtectDTO.
+        r"""Sets the object_id of this IpsProtectDTO.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
 
@@ -70,7 +70,7 @@ class IpsProtectDTO:
 
     @property
     def mode(self):
-        """Gets the mode of this IpsProtectDTO.
+        r"""Gets the mode of this IpsProtectDTO.
 
         ips防护模式，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
 
@@ -81,7 +81,7 @@ class IpsProtectDTO:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this IpsProtectDTO.
+        r"""Sets the mode of this IpsProtectDTO.
 
         ips防护模式，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
 

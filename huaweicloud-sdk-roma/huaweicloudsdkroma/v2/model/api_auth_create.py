@@ -37,7 +37,7 @@ class ApiAuthCreate:
     }
 
     def __init__(self, env_id=None, app_ids=None, api_ids=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_params=None):
-        """ApiAuthCreate
+        r"""ApiAuthCreate
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ApiAuthCreate:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiAuthCreate.
+        r"""Gets the env_id of this ApiAuthCreate.
 
         需要授权的环境编号
 
@@ -93,7 +93,7 @@ class ApiAuthCreate:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiAuthCreate.
+        r"""Sets the env_id of this ApiAuthCreate.
 
         需要授权的环境编号
 
@@ -104,7 +104,7 @@ class ApiAuthCreate:
 
     @property
     def app_ids(self):
-        """Gets the app_ids of this ApiAuthCreate.
+        r"""Gets the app_ids of this ApiAuthCreate.
 
         APP的编号列表
 
@@ -115,7 +115,7 @@ class ApiAuthCreate:
 
     @app_ids.setter
     def app_ids(self, app_ids):
-        """Sets the app_ids of this ApiAuthCreate.
+        r"""Sets the app_ids of this ApiAuthCreate.
 
         APP的编号列表
 
@@ -126,7 +126,7 @@ class ApiAuthCreate:
 
     @property
     def api_ids(self):
-        """Gets the api_ids of this ApiAuthCreate.
+        r"""Gets the api_ids of this ApiAuthCreate.
 
         API的编号列表。
 
@@ -137,7 +137,7 @@ class ApiAuthCreate:
 
     @api_ids.setter
     def api_ids(self, api_ids):
-        """Sets the api_ids of this ApiAuthCreate.
+        r"""Sets the api_ids of this ApiAuthCreate.
 
         API的编号列表。
 
@@ -148,7 +148,7 @@ class ApiAuthCreate:
 
     @property
     def auth_tunnel(self):
-        """Gets the auth_tunnel of this ApiAuthCreate.
+        r"""Gets the auth_tunnel of this ApiAuthCreate.
 
         授权通道类型： - GREEN：绿色通道 - NORMAL：非绿色通道  实例开启green_tunnel特性时可以开启绿色通道，此字段不填默认为不使用绿色通道
 
@@ -159,7 +159,7 @@ class ApiAuthCreate:
 
     @auth_tunnel.setter
     def auth_tunnel(self, auth_tunnel):
-        """Sets the auth_tunnel of this ApiAuthCreate.
+        r"""Sets the auth_tunnel of this ApiAuthCreate.
 
         授权通道类型： - GREEN：绿色通道 - NORMAL：非绿色通道  实例开启green_tunnel特性时可以开启绿色通道，此字段不填默认为不使用绿色通道
 
@@ -170,7 +170,7 @@ class ApiAuthCreate:
 
     @property
     def auth_whitelist(self):
-        """Gets the auth_whitelist of this ApiAuthCreate.
+        r"""Gets the auth_whitelist of this ApiAuthCreate.
 
         绿色通道授权白名单。  允许白名单中的IP不使用认证信息访问，auth_tunnel = GREEN时生效
 
@@ -181,7 +181,7 @@ class ApiAuthCreate:
 
     @auth_whitelist.setter
     def auth_whitelist(self, auth_whitelist):
-        """Sets the auth_whitelist of this ApiAuthCreate.
+        r"""Sets the auth_whitelist of this ApiAuthCreate.
 
         绿色通道授权白名单。  允许白名单中的IP不使用认证信息访问，auth_tunnel = GREEN时生效
 
@@ -192,7 +192,7 @@ class ApiAuthCreate:
 
     @property
     def auth_blacklist(self):
-        """Gets the auth_blacklist of this ApiAuthCreate.
+        r"""Gets the auth_blacklist of this ApiAuthCreate.
 
         绿色通道授权黑名单。  auth_tunnel = GREEN时生效
 
@@ -203,7 +203,7 @@ class ApiAuthCreate:
 
     @auth_blacklist.setter
     def auth_blacklist(self, auth_blacklist):
-        """Sets the auth_blacklist of this ApiAuthCreate.
+        r"""Sets the auth_blacklist of this ApiAuthCreate.
 
         绿色通道授权黑名单。  auth_tunnel = GREEN时生效
 
@@ -214,7 +214,7 @@ class ApiAuthCreate:
 
     @property
     def visit_params(self):
-        """Gets the visit_params of this ApiAuthCreate.
+        r"""Gets the visit_params of this ApiAuthCreate.
 
         访问参数列表。
 
@@ -225,7 +225,7 @@ class ApiAuthCreate:
 
     @visit_params.setter
     def visit_params(self, visit_params):
-        """Sets the visit_params of this ApiAuthCreate.
+        r"""Sets the visit_params of this ApiAuthCreate.
 
         访问参数列表。
 

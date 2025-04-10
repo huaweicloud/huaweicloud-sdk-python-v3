@@ -54,7 +54,7 @@ class ChangeComponentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, runtime=None, category=None, sub_category=None, description=None, project_id=None, application_id=None, source=None, build=None, pipeline_ids=None, create_time=None, creator=None, update_time=None):
-        """ChangeComponentResponse
+        r"""ChangeComponentResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ChangeComponentResponse.
+        r"""Gets the id of this ChangeComponentResponse.
 
         应用组件ID。
 
@@ -153,7 +153,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChangeComponentResponse.
+        r"""Sets the id of this ChangeComponentResponse.
 
         应用组件ID。
 
@@ -164,7 +164,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ChangeComponentResponse.
+        r"""Gets the name of this ChangeComponentResponse.
 
         应用组件名称
 
@@ -175,7 +175,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChangeComponentResponse.
+        r"""Sets the name of this ChangeComponentResponse.
 
         应用组件名称
 
@@ -186,7 +186,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ChangeComponentResponse.
+        r"""Gets the status of this ChangeComponentResponse.
 
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
@@ -197,7 +197,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeComponentResponse.
+        r"""Sets the status of this ChangeComponentResponse.
 
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
@@ -208,7 +208,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def runtime(self):
-        """Gets the runtime of this ChangeComponentResponse.
+        r"""Gets the runtime of this ChangeComponentResponse.
 
         :return: The runtime of this ChangeComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -217,7 +217,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ChangeComponentResponse.
+        r"""Sets the runtime of this ChangeComponentResponse.
 
         :param runtime: The runtime of this ChangeComponentResponse.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -226,7 +226,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ChangeComponentResponse.
+        r"""Gets the category of this ChangeComponentResponse.
 
         :return: The category of this ChangeComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -235,7 +235,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ChangeComponentResponse.
+        r"""Sets the category of this ChangeComponentResponse.
 
         :param category: The category of this ChangeComponentResponse.
         :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -244,7 +244,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def sub_category(self):
-        """Gets the sub_category of this ChangeComponentResponse.
+        r"""Gets the sub_category of this ChangeComponentResponse.
 
         :return: The sub_category of this ChangeComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -253,7 +253,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @sub_category.setter
     def sub_category(self, sub_category):
-        """Sets the sub_category of this ChangeComponentResponse.
+        r"""Sets the sub_category of this ChangeComponentResponse.
 
         :param sub_category: The sub_category of this ChangeComponentResponse.
         :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -262,7 +262,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ChangeComponentResponse.
+        r"""Gets the description of this ChangeComponentResponse.
 
         描述。
 
@@ -273,7 +273,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChangeComponentResponse.
+        r"""Sets the description of this ChangeComponentResponse.
 
         描述。
 
@@ -284,7 +284,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ChangeComponentResponse.
+        r"""Gets the project_id of this ChangeComponentResponse.
 
         项目ID。
 
@@ -295,7 +295,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ChangeComponentResponse.
+        r"""Sets the project_id of this ChangeComponentResponse.
 
         项目ID。
 
@@ -306,7 +306,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this ChangeComponentResponse.
+        r"""Gets the application_id of this ChangeComponentResponse.
 
         应用ID。
 
@@ -317,7 +317,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ChangeComponentResponse.
+        r"""Sets the application_id of this ChangeComponentResponse.
 
         应用ID。
 
@@ -328,7 +328,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this ChangeComponentResponse.
+        r"""Gets the source of this ChangeComponentResponse.
 
         :return: The source of this ChangeComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -337,7 +337,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ChangeComponentResponse.
+        r"""Sets the source of this ChangeComponentResponse.
 
         :param source: The source of this ChangeComponentResponse.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -346,7 +346,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def build(self):
-        """Gets the build of this ChangeComponentResponse.
+        r"""Gets the build of this ChangeComponentResponse.
 
         :return: The build of this ChangeComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
@@ -355,7 +355,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ChangeComponentResponse.
+        r"""Sets the build of this ChangeComponentResponse.
 
         :param build: The build of this ChangeComponentResponse.
         :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
@@ -364,7 +364,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def pipeline_ids(self):
-        """Gets the pipeline_ids of this ChangeComponentResponse.
+        r"""Gets the pipeline_ids of this ChangeComponentResponse.
 
         流水线Id列表，最多10个。
 
@@ -375,7 +375,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @pipeline_ids.setter
     def pipeline_ids(self, pipeline_ids):
-        """Sets the pipeline_ids of this ChangeComponentResponse.
+        r"""Sets the pipeline_ids of this ChangeComponentResponse.
 
         流水线Id列表，最多10个。
 
@@ -386,7 +386,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ChangeComponentResponse.
+        r"""Gets the create_time of this ChangeComponentResponse.
 
         创建时间。
 
@@ -397,7 +397,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ChangeComponentResponse.
+        r"""Sets the create_time of this ChangeComponentResponse.
 
         创建时间。
 
@@ -408,7 +408,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ChangeComponentResponse.
+        r"""Gets the creator of this ChangeComponentResponse.
 
         创建者
 
@@ -419,7 +419,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ChangeComponentResponse.
+        r"""Sets the creator of this ChangeComponentResponse.
 
         创建者
 
@@ -430,7 +430,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ChangeComponentResponse.
+        r"""Gets the update_time of this ChangeComponentResponse.
 
         修改时间。
 
@@ -441,7 +441,7 @@ class ChangeComponentResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ChangeComponentResponse.
+        r"""Sets the update_time of this ChangeComponentResponse.
 
         修改时间。
 

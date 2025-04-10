@@ -29,7 +29,7 @@ class RestoreTablesRequestBody:
     }
 
     def __init__(self, restore_time=None, restore_tables=None, is_fast_restore=None):
-        """RestoreTablesRequestBody
+        r"""RestoreTablesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestoreTablesRequestBody:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestoreTablesRequestBody.
+        r"""Gets the restore_time of this RestoreTablesRequestBody.
 
         恢复时间戳
 
@@ -66,7 +66,7 @@ class RestoreTablesRequestBody:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestoreTablesRequestBody.
+        r"""Sets the restore_time of this RestoreTablesRequestBody.
 
         恢复时间戳
 
@@ -77,7 +77,7 @@ class RestoreTablesRequestBody:
 
     @property
     def restore_tables(self):
-        """Gets the restore_tables of this RestoreTablesRequestBody.
+        r"""Gets the restore_tables of this RestoreTablesRequestBody.
 
         表信息
 
@@ -88,7 +88,7 @@ class RestoreTablesRequestBody:
 
     @restore_tables.setter
     def restore_tables(self, restore_tables):
-        """Sets the restore_tables of this RestoreTablesRequestBody.
+        r"""Sets the restore_tables of this RestoreTablesRequestBody.
 
         表信息
 
@@ -99,7 +99,7 @@ class RestoreTablesRequestBody:
 
     @property
     def is_fast_restore(self):
-        """Gets the is_fast_restore of this RestoreTablesRequestBody.
+        r"""Gets the is_fast_restore of this RestoreTablesRequestBody.
 
         是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
 
@@ -110,7 +110,7 @@ class RestoreTablesRequestBody:
 
     @is_fast_restore.setter
     def is_fast_restore(self, is_fast_restore):
-        """Sets the is_fast_restore of this RestoreTablesRequestBody.
+        r"""Sets the is_fast_restore of this RestoreTablesRequestBody.
 
         是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
 

@@ -31,7 +31,7 @@ class AddIssueWorkHoursRequestBody:
     }
 
     def __init__(self, start_date=None, due_date=None, work_hours=None, work_hours_type_id=None):
-        """AddIssueWorkHoursRequestBody
+        r"""AddIssueWorkHoursRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AddIssueWorkHoursRequestBody:
 
     @property
     def start_date(self):
-        """Gets the start_date of this AddIssueWorkHoursRequestBody.
+        r"""Gets the start_date of this AddIssueWorkHoursRequestBody.
 
         工时开始日期，年-月-日
 
@@ -72,7 +72,7 @@ class AddIssueWorkHoursRequestBody:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this AddIssueWorkHoursRequestBody.
+        r"""Sets the start_date of this AddIssueWorkHoursRequestBody.
 
         工时开始日期，年-月-日
 
@@ -83,7 +83,7 @@ class AddIssueWorkHoursRequestBody:
 
     @property
     def due_date(self):
-        """Gets the due_date of this AddIssueWorkHoursRequestBody.
+        r"""Gets the due_date of this AddIssueWorkHoursRequestBody.
 
         工时结束日期，年-月-日
 
@@ -94,7 +94,7 @@ class AddIssueWorkHoursRequestBody:
 
     @due_date.setter
     def due_date(self, due_date):
-        """Sets the due_date of this AddIssueWorkHoursRequestBody.
+        r"""Sets the due_date of this AddIssueWorkHoursRequestBody.
 
         工时结束日期，年-月-日
 
@@ -105,7 +105,7 @@ class AddIssueWorkHoursRequestBody:
 
     @property
     def work_hours(self):
-        """Gets the work_hours of this AddIssueWorkHoursRequestBody.
+        r"""Gets the work_hours of this AddIssueWorkHoursRequestBody.
 
         工时总数（若工时日期范围包含多天，单日工时将设为“工时总数/天数”）
 
@@ -116,7 +116,7 @@ class AddIssueWorkHoursRequestBody:
 
     @work_hours.setter
     def work_hours(self, work_hours):
-        """Sets the work_hours of this AddIssueWorkHoursRequestBody.
+        r"""Sets the work_hours of this AddIssueWorkHoursRequestBody.
 
         工时总数（若工时日期范围包含多天，单日工时将设为“工时总数/天数”）
 
@@ -127,7 +127,7 @@ class AddIssueWorkHoursRequestBody:
 
     @property
     def work_hours_type_id(self):
-        """Gets the work_hours_type_id of this AddIssueWorkHoursRequestBody.
+        r"""Gets the work_hours_type_id of this AddIssueWorkHoursRequestBody.
 
         工时类型id（项目预设工时类型id及名称对照：21:研发设计，22:后端开发，23:前端开发(Web)，24:前端开发(小程序)，25:前端开发(App)， 26:测试验证，27:缺陷修复，28:UI设计，29:会议，30:公共事务，31:培训，32:研究，33:其它，34:调休请假）
 
@@ -138,7 +138,7 @@ class AddIssueWorkHoursRequestBody:
 
     @work_hours_type_id.setter
     def work_hours_type_id(self, work_hours_type_id):
-        """Sets the work_hours_type_id of this AddIssueWorkHoursRequestBody.
+        r"""Sets the work_hours_type_id of this AddIssueWorkHoursRequestBody.
 
         工时类型id（项目预设工时类型id及名称对照：21:研发设计，22:后端开发，23:前端开发(Web)，24:前端开发(小程序)，25:前端开发(App)， 26:测试验证，27:缺陷修复，28:UI设计，29:会议，30:公共事务，31:培训，32:研究，33:其它，34:调休请假）
 

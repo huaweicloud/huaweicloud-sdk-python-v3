@@ -31,7 +31,7 @@ class SetGaussMySqlProxyWeightRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """SetGaussMySqlProxyWeightRequest
+        r"""SetGaussMySqlProxyWeightRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetGaussMySqlProxyWeightRequest.
+        r"""Gets the x_language of this SetGaussMySqlProxyWeightRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetGaussMySqlProxyWeightRequest.
+        r"""Sets the x_language of this SetGaussMySqlProxyWeightRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetGaussMySqlProxyWeightRequest.
+        r"""Gets the instance_id of this SetGaussMySqlProxyWeightRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetGaussMySqlProxyWeightRequest.
+        r"""Sets the instance_id of this SetGaussMySqlProxyWeightRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this SetGaussMySqlProxyWeightRequest.
+        r"""Gets the proxy_id of this SetGaussMySqlProxyWeightRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -117,7 +117,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this SetGaussMySqlProxyWeightRequest.
+        r"""Sets the proxy_id of this SetGaussMySqlProxyWeightRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -128,7 +128,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetGaussMySqlProxyWeightRequest.
+        r"""Gets the body of this SetGaussMySqlProxyWeightRequest.
 
         :return: The body of this SetGaussMySqlProxyWeightRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightRequest`
@@ -137,7 +137,7 @@ class SetGaussMySqlProxyWeightRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetGaussMySqlProxyWeightRequest.
+        r"""Sets the body of this SetGaussMySqlProxyWeightRequest.
 
         :param body: The body of this SetGaussMySqlProxyWeightRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightRequest`

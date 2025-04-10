@@ -45,7 +45,7 @@ class ReplaySlowSqlTemplateResp:
     }
 
     def __init__(self, sql_template=None, sql_template_md5=None, target_name=None, schema_name=None, query_type=None, min_latency=None, max_latency=None, avg_latency=None, total_latency=None, target_type=None, count=None):
-        """ReplaySlowSqlTemplateResp
+        r"""ReplaySlowSqlTemplateResp
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def sql_template(self):
-        """Gets the sql_template of this ReplaySlowSqlTemplateResp.
+        r"""Gets the sql_template of this ReplaySlowSqlTemplateResp.
 
         SQL语句模板
 
@@ -121,7 +121,7 @@ class ReplaySlowSqlTemplateResp:
 
     @sql_template.setter
     def sql_template(self, sql_template):
-        """Sets the sql_template of this ReplaySlowSqlTemplateResp.
+        r"""Sets the sql_template of this ReplaySlowSqlTemplateResp.
 
         SQL语句模板
 
@@ -132,7 +132,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def sql_template_md5(self):
-        """Gets the sql_template_md5 of this ReplaySlowSqlTemplateResp.
+        r"""Gets the sql_template_md5 of this ReplaySlowSqlTemplateResp.
 
         SQL语句模板MD5
 
@@ -143,7 +143,7 @@ class ReplaySlowSqlTemplateResp:
 
     @sql_template_md5.setter
     def sql_template_md5(self, sql_template_md5):
-        """Sets the sql_template_md5 of this ReplaySlowSqlTemplateResp.
+        r"""Sets the sql_template_md5 of this ReplaySlowSqlTemplateResp.
 
         SQL语句模板MD5
 
@@ -154,7 +154,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def target_name(self):
-        """Gets the target_name of this ReplaySlowSqlTemplateResp.
+        r"""Gets the target_name of this ReplaySlowSqlTemplateResp.
 
         目标库别名
 
@@ -165,7 +165,7 @@ class ReplaySlowSqlTemplateResp:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this ReplaySlowSqlTemplateResp.
+        r"""Sets the target_name of this ReplaySlowSqlTemplateResp.
 
         目标库别名
 
@@ -176,7 +176,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ReplaySlowSqlTemplateResp.
+        r"""Gets the schema_name of this ReplaySlowSqlTemplateResp.
 
         schema名称
 
@@ -187,7 +187,7 @@ class ReplaySlowSqlTemplateResp:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ReplaySlowSqlTemplateResp.
+        r"""Sets the schema_name of this ReplaySlowSqlTemplateResp.
 
         schema名称
 
@@ -198,7 +198,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ReplaySlowSqlTemplateResp.
+        r"""Gets the query_type of this ReplaySlowSqlTemplateResp.
 
         SQL类型
 
@@ -209,7 +209,7 @@ class ReplaySlowSqlTemplateResp:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ReplaySlowSqlTemplateResp.
+        r"""Sets the query_type of this ReplaySlowSqlTemplateResp.
 
         SQL类型
 
@@ -220,7 +220,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def min_latency(self):
-        """Gets the min_latency of this ReplaySlowSqlTemplateResp.
+        r"""Gets the min_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行最小耗时
 
@@ -231,7 +231,7 @@ class ReplaySlowSqlTemplateResp:
 
     @min_latency.setter
     def min_latency(self, min_latency):
-        """Sets the min_latency of this ReplaySlowSqlTemplateResp.
+        r"""Sets the min_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行最小耗时
 
@@ -242,7 +242,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def max_latency(self):
-        """Gets the max_latency of this ReplaySlowSqlTemplateResp.
+        r"""Gets the max_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行最大耗时
 
@@ -253,7 +253,7 @@ class ReplaySlowSqlTemplateResp:
 
     @max_latency.setter
     def max_latency(self, max_latency):
-        """Sets the max_latency of this ReplaySlowSqlTemplateResp.
+        r"""Sets the max_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行最大耗时
 
@@ -264,7 +264,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def avg_latency(self):
-        """Gets the avg_latency of this ReplaySlowSqlTemplateResp.
+        r"""Gets the avg_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行平均耗时
 
@@ -275,7 +275,7 @@ class ReplaySlowSqlTemplateResp:
 
     @avg_latency.setter
     def avg_latency(self, avg_latency):
-        """Sets the avg_latency of this ReplaySlowSqlTemplateResp.
+        r"""Sets the avg_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行平均耗时
 
@@ -286,7 +286,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def total_latency(self):
-        """Gets the total_latency of this ReplaySlowSqlTemplateResp.
+        r"""Gets the total_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行总的耗时
 
@@ -297,7 +297,7 @@ class ReplaySlowSqlTemplateResp:
 
     @total_latency.setter
     def total_latency(self, total_latency):
-        """Sets the total_latency of this ReplaySlowSqlTemplateResp.
+        r"""Sets the total_latency of this ReplaySlowSqlTemplateResp.
 
         SQL执行总的耗时
 
@@ -308,7 +308,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ReplaySlowSqlTemplateResp.
+        r"""Gets the target_type of this ReplaySlowSqlTemplateResp.
 
         目标库类型
 
@@ -319,7 +319,7 @@ class ReplaySlowSqlTemplateResp:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ReplaySlowSqlTemplateResp.
+        r"""Sets the target_type of this ReplaySlowSqlTemplateResp.
 
         目标库类型
 
@@ -330,7 +330,7 @@ class ReplaySlowSqlTemplateResp:
 
     @property
     def count(self):
-        """Gets the count of this ReplaySlowSqlTemplateResp.
+        r"""Gets the count of this ReplaySlowSqlTemplateResp.
 
         SQL数量
 
@@ -341,7 +341,7 @@ class ReplaySlowSqlTemplateResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ReplaySlowSqlTemplateResp.
+        r"""Sets the count of this ReplaySlowSqlTemplateResp.
 
         SQL数量
 

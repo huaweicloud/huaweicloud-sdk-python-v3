@@ -28,7 +28,7 @@ class UpdateCentralNetworkConnectionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network_connection=None):
-        """UpdateCentralNetworkConnectionResponse
+        r"""UpdateCentralNetworkConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCentralNetworkConnectionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateCentralNetworkConnectionResponse.
+        r"""Gets the request_id of this UpdateCentralNetworkConnectionResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class UpdateCentralNetworkConnectionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateCentralNetworkConnectionResponse.
+        r"""Sets the request_id of this UpdateCentralNetworkConnectionResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class UpdateCentralNetworkConnectionResponse(SdkResponse):
 
     @property
     def central_network_connection(self):
-        """Gets the central_network_connection of this UpdateCentralNetworkConnectionResponse.
+        r"""Gets the central_network_connection of this UpdateCentralNetworkConnectionResponse.
 
         :return: The central_network_connection of this UpdateCentralNetworkConnectionResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnection`
@@ -80,7 +80,7 @@ class UpdateCentralNetworkConnectionResponse(SdkResponse):
 
     @central_network_connection.setter
     def central_network_connection(self, central_network_connection):
-        """Sets the central_network_connection of this UpdateCentralNetworkConnectionResponse.
+        r"""Sets the central_network_connection of this UpdateCentralNetworkConnectionResponse.
 
         :param central_network_connection: The central_network_connection of this UpdateCentralNetworkConnectionResponse.
         :type central_network_connection: :class:`huaweicloudsdkcc.v3.CentralNetworkConnection`

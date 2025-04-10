@@ -31,7 +31,7 @@ class InnodbLockWaits:
     }
 
     def __init__(self, requesting_trx_id=None, requested_lock_id=None, blocking_trx_id=None, blocking_lock_id=None):
-        """InnodbLockWaits
+        r"""InnodbLockWaits
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class InnodbLockWaits:
 
     @property
     def requesting_trx_id(self):
-        """Gets the requesting_trx_id of this InnodbLockWaits.
+        r"""Gets the requesting_trx_id of this InnodbLockWaits.
 
         申请锁资源的事务ID
 
@@ -71,7 +71,7 @@ class InnodbLockWaits:
 
     @requesting_trx_id.setter
     def requesting_trx_id(self, requesting_trx_id):
-        """Sets the requesting_trx_id of this InnodbLockWaits.
+        r"""Sets the requesting_trx_id of this InnodbLockWaits.
 
         申请锁资源的事务ID
 
@@ -82,7 +82,7 @@ class InnodbLockWaits:
 
     @property
     def requested_lock_id(self):
-        """Gets the requested_lock_id of this InnodbLockWaits.
+        r"""Gets the requested_lock_id of this InnodbLockWaits.
 
         申请的锁的ID
 
@@ -93,7 +93,7 @@ class InnodbLockWaits:
 
     @requested_lock_id.setter
     def requested_lock_id(self, requested_lock_id):
-        """Sets the requested_lock_id of this InnodbLockWaits.
+        r"""Sets the requested_lock_id of this InnodbLockWaits.
 
         申请的锁的ID
 
@@ -104,7 +104,7 @@ class InnodbLockWaits:
 
     @property
     def blocking_trx_id(self):
-        """Gets the blocking_trx_id of this InnodbLockWaits.
+        r"""Gets the blocking_trx_id of this InnodbLockWaits.
 
         阻塞的事务ID
 
@@ -115,7 +115,7 @@ class InnodbLockWaits:
 
     @blocking_trx_id.setter
     def blocking_trx_id(self, blocking_trx_id):
-        """Sets the blocking_trx_id of this InnodbLockWaits.
+        r"""Sets the blocking_trx_id of this InnodbLockWaits.
 
         阻塞的事务ID
 
@@ -126,7 +126,7 @@ class InnodbLockWaits:
 
     @property
     def blocking_lock_id(self):
-        """Gets the blocking_lock_id of this InnodbLockWaits.
+        r"""Gets the blocking_lock_id of this InnodbLockWaits.
 
         阻塞的锁的ID
 
@@ -137,7 +137,7 @@ class InnodbLockWaits:
 
     @blocking_lock_id.setter
     def blocking_lock_id(self, blocking_lock_id):
-        """Sets the blocking_lock_id of this InnodbLockWaits.
+        r"""Sets the blocking_lock_id of this InnodbLockWaits.
 
         阻塞的锁的ID
 

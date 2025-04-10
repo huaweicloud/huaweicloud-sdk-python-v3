@@ -24,7 +24,7 @@ class SetDefaulTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetDefaulTemplateResponse
+        r"""SetDefaulTemplateResponse
 
         The model defined in huaweicloud sdk
 

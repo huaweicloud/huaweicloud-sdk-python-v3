@@ -26,7 +26,7 @@ class ListSecurityDlfDataWareHousesResponse(SdkResponse):
     }
 
     def __init__(self, dw_lists=None):
-        """ListSecurityDlfDataWareHousesResponse
+        r"""ListSecurityDlfDataWareHousesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSecurityDlfDataWareHousesResponse(SdkResponse):
 
     @property
     def dw_lists(self):
-        """Gets the dw_lists of this ListSecurityDlfDataWareHousesResponse.
+        r"""Gets the dw_lists of this ListSecurityDlfDataWareHousesResponse.
 
         数据开发细粒度连接列表
 
@@ -55,7 +55,7 @@ class ListSecurityDlfDataWareHousesResponse(SdkResponse):
 
     @dw_lists.setter
     def dw_lists(self, dw_lists):
-        """Sets the dw_lists of this ListSecurityDlfDataWareHousesResponse.
+        r"""Sets the dw_lists of this ListSecurityDlfDataWareHousesResponse.
 
         数据开发细粒度连接列表
 

@@ -61,7 +61,7 @@ class ProfileInfo:
     }
 
     def __init__(self, db_type=None, cancel=None, table_size=None, database_name=None, obs_common_config=None, total_row_count=None, fields_name=None, table_name=None, sample=None, update_date=None, row_count=None, column_count=None, unique=None, auto_stop=None, time_profile=None, queue=None, dw_id=None, colunms_metric=None, columns_list=None):
-        """ProfileInfo
+        r"""ProfileInfo
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class ProfileInfo:
 
     @property
     def db_type(self):
-        """Gets the db_type of this ProfileInfo.
+        r"""Gets the db_type of this ProfileInfo.
 
         数据库类型
 
@@ -180,7 +180,7 @@ class ProfileInfo:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this ProfileInfo.
+        r"""Sets the db_type of this ProfileInfo.
 
         数据库类型
 
@@ -191,7 +191,7 @@ class ProfileInfo:
 
     @property
     def cancel(self):
-        """Gets the cancel of this ProfileInfo.
+        r"""Gets the cancel of this ProfileInfo.
 
         是否取消
 
@@ -202,7 +202,7 @@ class ProfileInfo:
 
     @cancel.setter
     def cancel(self, cancel):
-        """Sets the cancel of this ProfileInfo.
+        r"""Sets the cancel of this ProfileInfo.
 
         是否取消
 
@@ -213,7 +213,7 @@ class ProfileInfo:
 
     @property
     def table_size(self):
-        """Gets the table_size of this ProfileInfo.
+        r"""Gets the table_size of this ProfileInfo.
 
         表大小
 
@@ -224,7 +224,7 @@ class ProfileInfo:
 
     @table_size.setter
     def table_size(self, table_size):
-        """Sets the table_size of this ProfileInfo.
+        r"""Sets the table_size of this ProfileInfo.
 
         表大小
 
@@ -235,7 +235,7 @@ class ProfileInfo:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ProfileInfo.
+        r"""Gets the database_name of this ProfileInfo.
 
         数据库名
 
@@ -246,7 +246,7 @@ class ProfileInfo:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ProfileInfo.
+        r"""Sets the database_name of this ProfileInfo.
 
         数据库名
 
@@ -257,7 +257,7 @@ class ProfileInfo:
 
     @property
     def obs_common_config(self):
-        """Gets the obs_common_config of this ProfileInfo.
+        r"""Gets the obs_common_config of this ProfileInfo.
 
         obs公共配置
 
@@ -268,7 +268,7 @@ class ProfileInfo:
 
     @obs_common_config.setter
     def obs_common_config(self, obs_common_config):
-        """Sets the obs_common_config of this ProfileInfo.
+        r"""Sets the obs_common_config of this ProfileInfo.
 
         obs公共配置
 
@@ -279,7 +279,7 @@ class ProfileInfo:
 
     @property
     def total_row_count(self):
-        """Gets the total_row_count of this ProfileInfo.
+        r"""Gets the total_row_count of this ProfileInfo.
 
         总行数
 
@@ -290,7 +290,7 @@ class ProfileInfo:
 
     @total_row_count.setter
     def total_row_count(self, total_row_count):
-        """Sets the total_row_count of this ProfileInfo.
+        r"""Sets the total_row_count of this ProfileInfo.
 
         总行数
 
@@ -301,7 +301,7 @@ class ProfileInfo:
 
     @property
     def fields_name(self):
-        """Gets the fields_name of this ProfileInfo.
+        r"""Gets the fields_name of this ProfileInfo.
 
         文件列表
 
@@ -312,7 +312,7 @@ class ProfileInfo:
 
     @fields_name.setter
     def fields_name(self, fields_name):
-        """Sets the fields_name of this ProfileInfo.
+        r"""Sets the fields_name of this ProfileInfo.
 
         文件列表
 
@@ -323,7 +323,7 @@ class ProfileInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ProfileInfo.
+        r"""Gets the table_name of this ProfileInfo.
 
         表名
 
@@ -334,7 +334,7 @@ class ProfileInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ProfileInfo.
+        r"""Sets the table_name of this ProfileInfo.
 
         表名
 
@@ -345,7 +345,7 @@ class ProfileInfo:
 
     @property
     def sample(self):
-        """Gets the sample of this ProfileInfo.
+        r"""Gets the sample of this ProfileInfo.
 
         样本
 
@@ -356,7 +356,7 @@ class ProfileInfo:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this ProfileInfo.
+        r"""Sets the sample of this ProfileInfo.
 
         样本
 
@@ -367,7 +367,7 @@ class ProfileInfo:
 
     @property
     def update_date(self):
-        """Gets the update_date of this ProfileInfo.
+        r"""Gets the update_date of this ProfileInfo.
 
         修改时间
 
@@ -378,7 +378,7 @@ class ProfileInfo:
 
     @update_date.setter
     def update_date(self, update_date):
-        """Sets the update_date of this ProfileInfo.
+        r"""Sets the update_date of this ProfileInfo.
 
         修改时间
 
@@ -389,7 +389,7 @@ class ProfileInfo:
 
     @property
     def row_count(self):
-        """Gets the row_count of this ProfileInfo.
+        r"""Gets the row_count of this ProfileInfo.
 
         采样行数
 
@@ -400,7 +400,7 @@ class ProfileInfo:
 
     @row_count.setter
     def row_count(self, row_count):
-        """Sets the row_count of this ProfileInfo.
+        r"""Sets the row_count of this ProfileInfo.
 
         采样行数
 
@@ -411,7 +411,7 @@ class ProfileInfo:
 
     @property
     def column_count(self):
-        """Gets the column_count of this ProfileInfo.
+        r"""Gets the column_count of this ProfileInfo.
 
         列数
 
@@ -422,7 +422,7 @@ class ProfileInfo:
 
     @column_count.setter
     def column_count(self, column_count):
-        """Sets the column_count of this ProfileInfo.
+        r"""Sets the column_count of this ProfileInfo.
 
         列数
 
@@ -433,7 +433,7 @@ class ProfileInfo:
 
     @property
     def unique(self):
-        """Gets the unique of this ProfileInfo.
+        r"""Gets the unique of this ProfileInfo.
 
         是否唯一
 
@@ -444,7 +444,7 @@ class ProfileInfo:
 
     @unique.setter
     def unique(self, unique):
-        """Sets the unique of this ProfileInfo.
+        r"""Sets the unique of this ProfileInfo.
 
         是否唯一
 
@@ -455,7 +455,7 @@ class ProfileInfo:
 
     @property
     def auto_stop(self):
-        """Gets the auto_stop of this ProfileInfo.
+        r"""Gets the auto_stop of this ProfileInfo.
 
         自动停止
 
@@ -466,7 +466,7 @@ class ProfileInfo:
 
     @auto_stop.setter
     def auto_stop(self, auto_stop):
-        """Sets the auto_stop of this ProfileInfo.
+        r"""Sets the auto_stop of this ProfileInfo.
 
         自动停止
 
@@ -477,7 +477,7 @@ class ProfileInfo:
 
     @property
     def time_profile(self):
-        """Gets the time_profile of this ProfileInfo.
+        r"""Gets the time_profile of this ProfileInfo.
 
         时间档案
 
@@ -488,7 +488,7 @@ class ProfileInfo:
 
     @time_profile.setter
     def time_profile(self, time_profile):
-        """Sets the time_profile of this ProfileInfo.
+        r"""Sets the time_profile of this ProfileInfo.
 
         时间档案
 
@@ -499,7 +499,7 @@ class ProfileInfo:
 
     @property
     def queue(self):
-        """Gets the queue of this ProfileInfo.
+        r"""Gets the queue of this ProfileInfo.
 
         duilie
 
@@ -510,7 +510,7 @@ class ProfileInfo:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this ProfileInfo.
+        r"""Sets the queue of this ProfileInfo.
 
         duilie
 
@@ -521,7 +521,7 @@ class ProfileInfo:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this ProfileInfo.
+        r"""Gets the dw_id of this ProfileInfo.
 
         连接id
 
@@ -532,7 +532,7 @@ class ProfileInfo:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this ProfileInfo.
+        r"""Sets the dw_id of this ProfileInfo.
 
         连接id
 
@@ -543,7 +543,7 @@ class ProfileInfo:
 
     @property
     def colunms_metric(self):
-        """Gets the colunms_metric of this ProfileInfo.
+        r"""Gets the colunms_metric of this ProfileInfo.
 
         列概要信息
 
@@ -554,7 +554,7 @@ class ProfileInfo:
 
     @colunms_metric.setter
     def colunms_metric(self, colunms_metric):
-        """Sets the colunms_metric of this ProfileInfo.
+        r"""Sets the colunms_metric of this ProfileInfo.
 
         列概要信息
 
@@ -565,7 +565,7 @@ class ProfileInfo:
 
     @property
     def columns_list(self):
-        """Gets the columns_list of this ProfileInfo.
+        r"""Gets the columns_list of this ProfileInfo.
 
         列信息
 
@@ -576,7 +576,7 @@ class ProfileInfo:
 
     @columns_list.setter
     def columns_list(self, columns_list):
-        """Sets the columns_list of this ProfileInfo.
+        r"""Sets the columns_list of this ProfileInfo.
 
         列信息
 

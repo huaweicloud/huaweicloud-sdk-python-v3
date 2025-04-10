@@ -29,7 +29,7 @@ class RollcallParticipantRequest:
     }
 
     def __init__(self, conference_id=None, participant_id=None, x_conference_authorization=None):
-        """RollcallParticipantRequest
+        r"""RollcallParticipantRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RollcallParticipantRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this RollcallParticipantRequest.
+        r"""Gets the conference_id of this RollcallParticipantRequest.
 
         会议ID。
 
@@ -65,7 +65,7 @@ class RollcallParticipantRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this RollcallParticipantRequest.
+        r"""Sets the conference_id of this RollcallParticipantRequest.
 
         会议ID。
 
@@ -76,7 +76,7 @@ class RollcallParticipantRequest:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RollcallParticipantRequest.
+        r"""Gets the participant_id of this RollcallParticipantRequest.
 
         与会者标识。
 
@@ -87,7 +87,7 @@ class RollcallParticipantRequest:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RollcallParticipantRequest.
+        r"""Sets the participant_id of this RollcallParticipantRequest.
 
         与会者标识。
 
@@ -98,7 +98,7 @@ class RollcallParticipantRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this RollcallParticipantRequest.
+        r"""Gets the x_conference_authorization of this RollcallParticipantRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -109,7 +109,7 @@ class RollcallParticipantRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this RollcallParticipantRequest.
+        r"""Sets the x_conference_authorization of this RollcallParticipantRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 

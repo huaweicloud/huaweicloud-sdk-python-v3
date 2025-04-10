@@ -24,7 +24,7 @@ class DeleteRomaAppResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRomaAppResponse
+        r"""DeleteRomaAppResponse
 
         The model defined in huaweicloud sdk
 

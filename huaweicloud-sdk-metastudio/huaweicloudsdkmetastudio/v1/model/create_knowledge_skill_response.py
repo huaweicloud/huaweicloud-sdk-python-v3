@@ -30,7 +30,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
     }
 
     def __init__(self, skill_id=None, identify=None, x_request_id=None):
-        """CreateKnowledgeSkillResponse
+        r"""CreateKnowledgeSkillResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this CreateKnowledgeSkillResponse.
+        r"""Gets the skill_id of this CreateKnowledgeSkillResponse.
 
         技能ID。
 
@@ -69,7 +69,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this CreateKnowledgeSkillResponse.
+        r"""Sets the skill_id of this CreateKnowledgeSkillResponse.
 
         技能ID。
 
@@ -80,7 +80,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
 
     @property
     def identify(self):
-        """Gets the identify of this CreateKnowledgeSkillResponse.
+        r"""Gets the identify of this CreateKnowledgeSkillResponse.
 
         技能标识。
 
@@ -91,7 +91,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this CreateKnowledgeSkillResponse.
+        r"""Sets the identify of this CreateKnowledgeSkillResponse.
 
         技能标识。
 
@@ -102,7 +102,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateKnowledgeSkillResponse.
+        r"""Gets the x_request_id of this CreateKnowledgeSkillResponse.
 
         :return: The x_request_id of this CreateKnowledgeSkillResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateKnowledgeSkillResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateKnowledgeSkillResponse.
+        r"""Sets the x_request_id of this CreateKnowledgeSkillResponse.
 
         :param x_request_id: The x_request_id of this CreateKnowledgeSkillResponse.
         :type x_request_id: str

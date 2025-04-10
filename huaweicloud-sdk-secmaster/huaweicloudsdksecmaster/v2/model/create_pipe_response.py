@@ -52,7 +52,7 @@ class CreatePipeResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, project_id=None, dataspace_id=None, dataspace_name=None, pipe_id=None, pipe_name=None, pipe_type=None, description=None, storage_period=None, shards=None, create_by=None, create_time=None, update_by=None, update_time=None):
-        """CreatePipeResponse
+        r"""CreatePipeResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreatePipeResponse.
+        r"""Gets the domain_id of this CreatePipeResponse.
 
         用户domainId
 
@@ -146,7 +146,7 @@ class CreatePipeResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreatePipeResponse.
+        r"""Sets the domain_id of this CreatePipeResponse.
 
         用户domainId
 
@@ -157,7 +157,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePipeResponse.
+        r"""Gets the project_id of this CreatePipeResponse.
 
         项目id
 
@@ -168,7 +168,7 @@ class CreatePipeResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePipeResponse.
+        r"""Sets the project_id of this CreatePipeResponse.
 
         项目id
 
@@ -179,7 +179,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def dataspace_id(self):
-        """Gets the dataspace_id of this CreatePipeResponse.
+        r"""Gets the dataspace_id of this CreatePipeResponse.
 
         数据空间id
 
@@ -190,7 +190,7 @@ class CreatePipeResponse(SdkResponse):
 
     @dataspace_id.setter
     def dataspace_id(self, dataspace_id):
-        """Sets the dataspace_id of this CreatePipeResponse.
+        r"""Sets the dataspace_id of this CreatePipeResponse.
 
         数据空间id
 
@@ -201,7 +201,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def dataspace_name(self):
-        """Gets the dataspace_name of this CreatePipeResponse.
+        r"""Gets the dataspace_name of this CreatePipeResponse.
 
         数据空间名称
 
@@ -212,7 +212,7 @@ class CreatePipeResponse(SdkResponse):
 
     @dataspace_name.setter
     def dataspace_name(self, dataspace_name):
-        """Sets the dataspace_name of this CreatePipeResponse.
+        r"""Sets the dataspace_name of this CreatePipeResponse.
 
         数据空间名称
 
@@ -223,7 +223,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this CreatePipeResponse.
+        r"""Gets the pipe_id of this CreatePipeResponse.
 
         管道id
 
@@ -234,7 +234,7 @@ class CreatePipeResponse(SdkResponse):
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this CreatePipeResponse.
+        r"""Sets the pipe_id of this CreatePipeResponse.
 
         管道id
 
@@ -245,7 +245,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def pipe_name(self):
-        """Gets the pipe_name of this CreatePipeResponse.
+        r"""Gets the pipe_name of this CreatePipeResponse.
 
         管道名称
 
@@ -256,7 +256,7 @@ class CreatePipeResponse(SdkResponse):
 
     @pipe_name.setter
     def pipe_name(self, pipe_name):
-        """Sets the pipe_name of this CreatePipeResponse.
+        r"""Sets the pipe_name of this CreatePipeResponse.
 
         管道名称
 
@@ -267,7 +267,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def pipe_type(self):
-        """Gets the pipe_type of this CreatePipeResponse.
+        r"""Gets the pipe_type of this CreatePipeResponse.
 
         管道类型（system-defined，系统预定义)、1（user-defined，用户自定义)
 
@@ -278,7 +278,7 @@ class CreatePipeResponse(SdkResponse):
 
     @pipe_type.setter
     def pipe_type(self, pipe_type):
-        """Sets the pipe_type of this CreatePipeResponse.
+        r"""Sets the pipe_type of this CreatePipeResponse.
 
         管道类型（system-defined，系统预定义)、1（user-defined，用户自定义)
 
@@ -289,7 +289,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreatePipeResponse.
+        r"""Gets the description of this CreatePipeResponse.
 
         描述信息
 
@@ -300,7 +300,7 @@ class CreatePipeResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePipeResponse.
+        r"""Sets the description of this CreatePipeResponse.
 
         描述信息
 
@@ -311,7 +311,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def storage_period(self):
-        """Gets the storage_period of this CreatePipeResponse.
+        r"""Gets the storage_period of this CreatePipeResponse.
 
         索引存储天数
 
@@ -322,7 +322,7 @@ class CreatePipeResponse(SdkResponse):
 
     @storage_period.setter
     def storage_period(self, storage_period):
-        """Sets the storage_period of this CreatePipeResponse.
+        r"""Sets the storage_period of this CreatePipeResponse.
 
         索引存储天数
 
@@ -333,7 +333,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def shards(self):
-        """Gets the shards of this CreatePipeResponse.
+        r"""Gets the shards of this CreatePipeResponse.
 
         索引分片数量
 
@@ -344,7 +344,7 @@ class CreatePipeResponse(SdkResponse):
 
     @shards.setter
     def shards(self, shards):
-        """Sets the shards of this CreatePipeResponse.
+        r"""Sets the shards of this CreatePipeResponse.
 
         索引分片数量
 
@@ -355,7 +355,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def create_by(self):
-        """Gets the create_by of this CreatePipeResponse.
+        r"""Gets the create_by of this CreatePipeResponse.
 
         创建者
 
@@ -366,7 +366,7 @@ class CreatePipeResponse(SdkResponse):
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CreatePipeResponse.
+        r"""Sets the create_by of this CreatePipeResponse.
 
         创建者
 
@@ -377,7 +377,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreatePipeResponse.
+        r"""Gets the create_time of this CreatePipeResponse.
 
         创建时间
 
@@ -388,7 +388,7 @@ class CreatePipeResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreatePipeResponse.
+        r"""Sets the create_time of this CreatePipeResponse.
 
         创建时间
 
@@ -399,7 +399,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def update_by(self):
-        """Gets the update_by of this CreatePipeResponse.
+        r"""Gets the update_by of this CreatePipeResponse.
 
         更新者
 
@@ -410,7 +410,7 @@ class CreatePipeResponse(SdkResponse):
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this CreatePipeResponse.
+        r"""Sets the update_by of this CreatePipeResponse.
 
         更新者
 
@@ -421,7 +421,7 @@ class CreatePipeResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreatePipeResponse.
+        r"""Gets the update_time of this CreatePipeResponse.
 
         更新时间
 
@@ -432,7 +432,7 @@ class CreatePipeResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreatePipeResponse.
+        r"""Sets the update_time of this CreatePipeResponse.
 
         更新时间
 

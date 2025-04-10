@@ -27,7 +27,7 @@ class ListVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """ListVolume
+        r"""ListVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListVolume:
 
     @property
     def type(self):
-        """Gets the type of this ListVolume.
+        r"""Gets the type of this ListVolume.
 
         磁盘类型。
 
@@ -59,7 +59,7 @@ class ListVolume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListVolume.
+        r"""Sets the type of this ListVolume.
 
         磁盘类型。
 
@@ -70,7 +70,7 @@ class ListVolume:
 
     @property
     def size(self):
-        """Gets the size of this ListVolume.
+        r"""Gets the size of this ListVolume.
 
         磁盘大小。
 
@@ -81,7 +81,7 @@ class ListVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListVolume.
+        r"""Sets the size of this ListVolume.
 
         磁盘大小。
 

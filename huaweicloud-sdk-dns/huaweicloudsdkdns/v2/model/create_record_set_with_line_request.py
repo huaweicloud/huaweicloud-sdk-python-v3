@@ -27,7 +27,7 @@ class CreateRecordSetWithLineRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """CreateRecordSetWithLineRequest
+        r"""CreateRecordSetWithLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRecordSetWithLineRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this CreateRecordSetWithLineRequest.
+        r"""Gets the zone_id of this CreateRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -60,7 +60,7 @@ class CreateRecordSetWithLineRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this CreateRecordSetWithLineRequest.
+        r"""Sets the zone_id of this CreateRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -71,7 +71,7 @@ class CreateRecordSetWithLineRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordSetWithLineRequest.
+        r"""Gets the body of this CreateRecordSetWithLineRequest.
 
         :return: The body of this CreateRecordSetWithLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequestBody`
@@ -80,7 +80,7 @@ class CreateRecordSetWithLineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordSetWithLineRequest.
+        r"""Sets the body of this CreateRecordSetWithLineRequest.
 
         :param body: The body of this CreateRecordSetWithLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequestBody`

@@ -27,7 +27,7 @@ class ResourceTypesSummary:
     }
 
     def __init__(self, region_id=None, resource_type=None):
-        """ResourceTypesSummary
+        r"""ResourceTypesSummary
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceTypesSummary:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceTypesSummary.
+        r"""Gets the region_id of this ResourceTypesSummary.
 
         资源所在区域名称。
 
@@ -59,7 +59,7 @@ class ResourceTypesSummary:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceTypesSummary.
+        r"""Sets the region_id of this ResourceTypesSummary.
 
         资源所在区域名称。
 
@@ -70,7 +70,7 @@ class ResourceTypesSummary:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceTypesSummary.
+        r"""Gets the resource_type of this ResourceTypesSummary.
 
         资源类型名称。
 
@@ -81,7 +81,7 @@ class ResourceTypesSummary:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceTypesSummary.
+        r"""Sets the resource_type of this ResourceTypesSummary.
 
         资源类型名称。
 

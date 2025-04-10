@@ -26,7 +26,7 @@ class BatchUpdateAclRuleActionsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """BatchUpdateAclRuleActionsResponse
+        r"""BatchUpdateAclRuleActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateAclRuleActionsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchUpdateAclRuleActionsResponse.
+        r"""Gets the data of this BatchUpdateAclRuleActionsResponse.
 
         批量更新acl规则id，为请求体中传入的规则id
 
@@ -55,7 +55,7 @@ class BatchUpdateAclRuleActionsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchUpdateAclRuleActionsResponse.
+        r"""Sets the data of this BatchUpdateAclRuleActionsResponse.
 
         批量更新acl规则id，为请求体中传入的规则id
 

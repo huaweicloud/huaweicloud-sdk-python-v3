@@ -25,7 +25,7 @@ class UpdateSecrecyLevelDTO:
     }
 
     def __init__(self, description=None):
-        """UpdateSecrecyLevelDTO
+        r"""UpdateSecrecyLevelDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateSecrecyLevelDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSecrecyLevelDTO.
+        r"""Gets the description of this UpdateSecrecyLevelDTO.
 
         密级描述
 
@@ -54,7 +54,7 @@ class UpdateSecrecyLevelDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSecrecyLevelDTO.
+        r"""Sets the description of this UpdateSecrecyLevelDTO.
 
         密级描述
 

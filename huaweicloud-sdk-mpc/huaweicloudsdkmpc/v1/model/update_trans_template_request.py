@@ -25,7 +25,7 @@ class UpdateTransTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTransTemplateRequest
+        r"""UpdateTransTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTransTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTransTemplateRequest.
+        r"""Gets the body of this UpdateTransTemplateRequest.
 
         :return: The body of this UpdateTransTemplateRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`
@@ -52,7 +52,7 @@ class UpdateTransTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTransTemplateRequest.
+        r"""Sets the body of this UpdateTransTemplateRequest.
 
         :param body: The body of this UpdateTransTemplateRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`

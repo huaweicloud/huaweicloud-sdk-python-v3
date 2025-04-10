@@ -29,7 +29,7 @@ class GlobalDcGatewayStatus:
     }
 
     def __init__(self):
-        """GlobalDcGatewayStatus
+        r"""GlobalDcGatewayStatus
 
         The model defined in huaweicloud sdk
 

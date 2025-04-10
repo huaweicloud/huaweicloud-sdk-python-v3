@@ -31,7 +31,7 @@ class ResizeInfo:
     }
 
     def __init__(self, target_node_num=None, origin_node_num=None, resize_status=None, start_time=None):
-        """ResizeInfo
+        r"""ResizeInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResizeInfo:
 
     @property
     def target_node_num(self):
-        """Gets the target_node_num of this ResizeInfo.
+        r"""Gets the target_node_num of this ResizeInfo.
 
         扩容后的节点数量
 
@@ -75,7 +75,7 @@ class ResizeInfo:
 
     @target_node_num.setter
     def target_node_num(self, target_node_num):
-        """Sets the target_node_num of this ResizeInfo.
+        r"""Sets the target_node_num of this ResizeInfo.
 
         扩容后的节点数量
 
@@ -86,7 +86,7 @@ class ResizeInfo:
 
     @property
     def origin_node_num(self):
-        """Gets the origin_node_num of this ResizeInfo.
+        r"""Gets the origin_node_num of this ResizeInfo.
 
         扩容前的节点数量
 
@@ -97,7 +97,7 @@ class ResizeInfo:
 
     @origin_node_num.setter
     def origin_node_num(self, origin_node_num):
-        """Sets the origin_node_num of this ResizeInfo.
+        r"""Sets the origin_node_num of this ResizeInfo.
 
         扩容前的节点数量
 
@@ -108,7 +108,7 @@ class ResizeInfo:
 
     @property
     def resize_status(self):
-        """Gets the resize_status of this ResizeInfo.
+        r"""Gets the resize_status of this ResizeInfo.
 
         扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
 
@@ -119,7 +119,7 @@ class ResizeInfo:
 
     @resize_status.setter
     def resize_status(self, resize_status):
-        """Sets the resize_status of this ResizeInfo.
+        r"""Sets the resize_status of this ResizeInfo.
 
         扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
 
@@ -130,7 +130,7 @@ class ResizeInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ResizeInfo.
+        r"""Gets the start_time of this ResizeInfo.
 
         扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
 
@@ -141,7 +141,7 @@ class ResizeInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ResizeInfo.
+        r"""Sets the start_time of this ResizeInfo.
 
         扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
 

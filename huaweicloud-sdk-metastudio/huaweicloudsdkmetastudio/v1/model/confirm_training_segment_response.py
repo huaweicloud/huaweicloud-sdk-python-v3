@@ -28,7 +28,7 @@ class ConfirmTrainingSegmentResponse(SdkResponse):
     }
 
     def __init__(self, confirm_result=None, unmatched_index_hit=None):
-        """ConfirmTrainingSegmentResponse
+        r"""ConfirmTrainingSegmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ConfirmTrainingSegmentResponse(SdkResponse):
 
     @property
     def confirm_result(self):
-        """Gets the confirm_result of this ConfirmTrainingSegmentResponse.
+        r"""Gets the confirm_result of this ConfirmTrainingSegmentResponse.
 
         是否确认成功。
 
@@ -62,7 +62,7 @@ class ConfirmTrainingSegmentResponse(SdkResponse):
 
     @confirm_result.setter
     def confirm_result(self, confirm_result):
-        """Sets the confirm_result of this ConfirmTrainingSegmentResponse.
+        r"""Sets the confirm_result of this ConfirmTrainingSegmentResponse.
 
         是否确认成功。
 
@@ -73,7 +73,7 @@ class ConfirmTrainingSegmentResponse(SdkResponse):
 
     @property
     def unmatched_index_hit(self):
-        """Gets the unmatched_index_hit of this ConfirmTrainingSegmentResponse.
+        r"""Gets the unmatched_index_hit of this ConfirmTrainingSegmentResponse.
 
         讲解不匹配的文本索引。
 
@@ -84,7 +84,7 @@ class ConfirmTrainingSegmentResponse(SdkResponse):
 
     @unmatched_index_hit.setter
     def unmatched_index_hit(self, unmatched_index_hit):
-        """Sets the unmatched_index_hit of this ConfirmTrainingSegmentResponse.
+        r"""Sets the unmatched_index_hit of this ConfirmTrainingSegmentResponse.
 
         讲解不匹配的文本索引。
 

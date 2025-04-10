@@ -43,7 +43,7 @@ class ListResolveTasksRequest:
     }
 
     def __init__(self, task_id=None, task_name=None, tpl_id=None, tpl_name=None, cust_flag=None, aim_url=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ListResolveTasksRequest
+        r"""ListResolveTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListResolveTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListResolveTasksRequest.
+        r"""Gets the task_id of this ListResolveTasksRequest.
 
         解析任务ID。
 
@@ -117,7 +117,7 @@ class ListResolveTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListResolveTasksRequest.
+        r"""Sets the task_id of this ListResolveTasksRequest.
 
         解析任务ID。
 
@@ -128,7 +128,7 @@ class ListResolveTasksRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListResolveTasksRequest.
+        r"""Gets the task_name of this ListResolveTasksRequest.
 
         任务名称。
 
@@ -139,7 +139,7 @@ class ListResolveTasksRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListResolveTasksRequest.
+        r"""Sets the task_name of this ListResolveTasksRequest.
 
         任务名称。
 
@@ -150,7 +150,7 @@ class ListResolveTasksRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListResolveTasksRequest.
+        r"""Gets the tpl_id of this ListResolveTasksRequest.
 
         智能信息模板ID。
 
@@ -161,7 +161,7 @@ class ListResolveTasksRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListResolveTasksRequest.
+        r"""Sets the tpl_id of this ListResolveTasksRequest.
 
         智能信息模板ID。
 
@@ -172,7 +172,7 @@ class ListResolveTasksRequest:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListResolveTasksRequest.
+        r"""Gets the tpl_name of this ListResolveTasksRequest.
 
         智能信息模板名称。
 
@@ -183,7 +183,7 @@ class ListResolveTasksRequest:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListResolveTasksRequest.
+        r"""Sets the tpl_name of this ListResolveTasksRequest.
 
         智能信息模板名称。
 
@@ -194,7 +194,7 @@ class ListResolveTasksRequest:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this ListResolveTasksRequest.
+        r"""Gets the cust_flag of this ListResolveTasksRequest.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -205,7 +205,7 @@ class ListResolveTasksRequest:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this ListResolveTasksRequest.
+        r"""Sets the cust_flag of this ListResolveTasksRequest.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。 发送智能信息时则必须填客户的手机号码。样例为：130****0001。
 
@@ -216,7 +216,7 @@ class ListResolveTasksRequest:
 
     @property
     def aim_url(self):
-        """Gets the aim_url of this ListResolveTasksRequest.
+        r"""Gets the aim_url of this ListResolveTasksRequest.
 
         完整的短链连接地址。样例：km2g.cn/PDiWqc。
 
@@ -227,7 +227,7 @@ class ListResolveTasksRequest:
 
     @aim_url.setter
     def aim_url(self, aim_url):
-        """Sets the aim_url of this ListResolveTasksRequest.
+        r"""Sets the aim_url of this ListResolveTasksRequest.
 
         完整的短链连接地址。样例：km2g.cn/PDiWqc。
 
@@ -238,7 +238,7 @@ class ListResolveTasksRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListResolveTasksRequest.
+        r"""Gets the begin_time of this ListResolveTasksRequest.
 
          智能信息解析任务创建开始时间。格式为：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。 > > 若不填，则默认查询24小时内创建的解析任务。 > > 仅支持查询最近1年内创建的解析任务。 
 
@@ -249,7 +249,7 @@ class ListResolveTasksRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListResolveTasksRequest.
+        r"""Sets the begin_time of this ListResolveTasksRequest.
 
          智能信息解析任务创建开始时间。格式为：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。 > > 若不填，则默认查询24小时内创建的解析任务。 > > 仅支持查询最近1年内创建的解析任务。 
 
@@ -260,7 +260,7 @@ class ListResolveTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListResolveTasksRequest.
+        r"""Gets the end_time of this ListResolveTasksRequest.
 
          智能信息解析任务创建结束时间。格式为：2019-10-12T07:20:50.522Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。 > > 若不填，则默认查询24小时内创建的解析任务。 
 
@@ -271,7 +271,7 @@ class ListResolveTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListResolveTasksRequest.
+        r"""Sets the end_time of this ListResolveTasksRequest.
 
          智能信息解析任务创建结束时间。格式为：2019-10-12T07:20:50.522Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。 > > 若不填，则默认查询24小时内创建的解析任务。 
 
@@ -282,7 +282,7 @@ class ListResolveTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResolveTasksRequest.
+        r"""Gets the offset of this ListResolveTasksRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -293,7 +293,7 @@ class ListResolveTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResolveTasksRequest.
+        r"""Sets the offset of this ListResolveTasksRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -304,7 +304,7 @@ class ListResolveTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResolveTasksRequest.
+        r"""Gets the limit of this ListResolveTasksRequest.
 
         每页显示的条目数量。 
 
@@ -315,7 +315,7 @@ class ListResolveTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResolveTasksRequest.
+        r"""Sets the limit of this ListResolveTasksRequest.
 
         每页显示的条目数量。 
 

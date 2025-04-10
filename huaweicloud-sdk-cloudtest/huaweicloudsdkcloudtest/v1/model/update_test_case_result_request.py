@@ -27,7 +27,7 @@ class UpdateTestCaseResultRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UpdateTestCaseResultRequest
+        r"""UpdateTestCaseResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTestCaseResultRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTestCaseResultRequest.
+        r"""Gets the project_id of this UpdateTestCaseResultRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -60,7 +60,7 @@ class UpdateTestCaseResultRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTestCaseResultRequest.
+        r"""Sets the project_id of this UpdateTestCaseResultRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -71,7 +71,7 @@ class UpdateTestCaseResultRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTestCaseResultRequest.
+        r"""Gets the body of this UpdateTestCaseResultRequest.
 
         :return: The body of this UpdateTestCaseResultRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultRequestBody`
@@ -80,7 +80,7 @@ class UpdateTestCaseResultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTestCaseResultRequest.
+        r"""Sets the body of this UpdateTestCaseResultRequest.
 
         :param body: The body of this UpdateTestCaseResultRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultRequestBody`

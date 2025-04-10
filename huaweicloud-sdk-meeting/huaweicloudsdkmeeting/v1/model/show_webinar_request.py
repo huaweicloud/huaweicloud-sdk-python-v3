@@ -29,7 +29,7 @@ class ShowWebinarRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, conference_id=None):
-        """ShowWebinarRequest
+        r"""ShowWebinarRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowWebinarRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowWebinarRequest.
+        r"""Gets the x_request_id of this ShowWebinarRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class ShowWebinarRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowWebinarRequest.
+        r"""Sets the x_request_id of this ShowWebinarRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class ShowWebinarRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ShowWebinarRequest.
+        r"""Gets the accept_language of this ShowWebinarRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class ShowWebinarRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ShowWebinarRequest.
+        r"""Sets the accept_language of this ShowWebinarRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class ShowWebinarRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ShowWebinarRequest.
+        r"""Gets the conference_id of this ShowWebinarRequest.
 
         网络研讨会ID。
 
@@ -111,7 +111,7 @@ class ShowWebinarRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ShowWebinarRequest.
+        r"""Sets the conference_id of this ShowWebinarRequest.
 
         网络研讨会ID。
 

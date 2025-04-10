@@ -35,7 +35,7 @@ class TaskRequest:
     }
 
     def __init__(self, business=None, data=None, description=None, instance_id=None, name=None, timestamp=None):
-        """TaskRequest
+        r"""TaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class TaskRequest:
 
     @property
     def business(self):
-        """Gets the business of this TaskRequest.
+        r"""Gets the business of this TaskRequest.
 
         作业动作，创建作业或者是删除作业又或是更新作业等
 
@@ -87,7 +87,7 @@ class TaskRequest:
 
     @business.setter
     def business(self, business):
-        """Sets the business of this TaskRequest.
+        r"""Sets the business of this TaskRequest.
 
         作业动作，创建作业或者是删除作业又或是更新作业等
 
@@ -98,7 +98,7 @@ class TaskRequest:
 
     @property
     def data(self):
-        """Gets the data of this TaskRequest.
+        r"""Gets the data of this TaskRequest.
 
         :return: The data of this TaskRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskData`
@@ -107,7 +107,7 @@ class TaskRequest:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TaskRequest.
+        r"""Sets the data of this TaskRequest.
 
         :param data: The data of this TaskRequest.
         :type data: :class:`huaweicloudsdkhilens.v3.TaskData`
@@ -116,7 +116,7 @@ class TaskRequest:
 
     @property
     def description(self):
-        """Gets the description of this TaskRequest.
+        r"""Gets the description of this TaskRequest.
 
         作业描述
 
@@ -127,7 +127,7 @@ class TaskRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskRequest.
+        r"""Sets the description of this TaskRequest.
 
         作业描述
 
@@ -138,7 +138,7 @@ class TaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TaskRequest.
+        r"""Gets the instance_id of this TaskRequest.
 
         实例ID，非必选
 
@@ -149,7 +149,7 @@ class TaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TaskRequest.
+        r"""Sets the instance_id of this TaskRequest.
 
         实例ID，非必选
 
@@ -160,7 +160,7 @@ class TaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this TaskRequest.
+        r"""Gets the name of this TaskRequest.
 
         作业名称
 
@@ -171,7 +171,7 @@ class TaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskRequest.
+        r"""Sets the name of this TaskRequest.
 
         作业名称
 
@@ -182,7 +182,7 @@ class TaskRequest:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this TaskRequest.
+        r"""Gets the timestamp of this TaskRequest.
 
         时间戳，非必选
 
@@ -193,7 +193,7 @@ class TaskRequest:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this TaskRequest.
+        r"""Sets the timestamp of this TaskRequest.
 
         时间戳，非必选
 

@@ -25,7 +25,7 @@ class StartNodeRequest:
     }
 
     def __init__(self, id=None):
-        """StartNodeRequest
+        r"""StartNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartNodeRequest:
 
     @property
     def id(self):
-        """Gets the id of this StartNodeRequest.
+        r"""Gets the id of this StartNodeRequest.
 
         计算资源id
 
@@ -53,7 +53,7 @@ class StartNodeRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StartNodeRequest.
+        r"""Sets the id of this StartNodeRequest.
 
         计算资源id
 

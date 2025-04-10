@@ -27,7 +27,7 @@ class IssueCompletionRateResponseV4:
     }
 
     def __init__(self, issue_status=None, tracker_id=None):
-        """IssueCompletionRateResponseV4
+        r"""IssueCompletionRateResponseV4
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueCompletionRateResponseV4:
 
     @property
     def issue_status(self):
-        """Gets the issue_status of this IssueCompletionRateResponseV4.
+        r"""Gets the issue_status of this IssueCompletionRateResponseV4.
 
         :return: The issue_status of this IssueCompletionRateResponseV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`
@@ -59,7 +59,7 @@ class IssueCompletionRateResponseV4:
 
     @issue_status.setter
     def issue_status(self, issue_status):
-        """Sets the issue_status of this IssueCompletionRateResponseV4.
+        r"""Sets the issue_status of this IssueCompletionRateResponseV4.
 
         :param issue_status: The issue_status of this IssueCompletionRateResponseV4.
         :type issue_status: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`
@@ -68,7 +68,7 @@ class IssueCompletionRateResponseV4:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this IssueCompletionRateResponseV4.
+        r"""Gets the tracker_id of this IssueCompletionRateResponseV4.
 
         工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -79,7 +79,7 @@ class IssueCompletionRateResponseV4:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this IssueCompletionRateResponseV4.
+        r"""Sets the tracker_id of this IssueCompletionRateResponseV4.
 
         工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 

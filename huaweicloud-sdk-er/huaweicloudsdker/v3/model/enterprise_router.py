@@ -57,7 +57,7 @@ class EnterpriseRouter:
     }
 
     def __init__(self, id=None, name=None, description=None, state=None, tags=None, charge_mode=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, asn=None, enable_default_propagation=None, enable_default_association=None, default_propagation_route_table_id=None, default_association_route_table_id=None, availability_zone_ids=None, auto_accept_shared_attachments=None):
-        """EnterpriseRouter
+        r"""EnterpriseRouter
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class EnterpriseRouter:
 
     @property
     def id(self):
-        """Gets the id of this EnterpriseRouter.
+        r"""Gets the id of this EnterpriseRouter.
 
         企业路由器实例的ID
 
@@ -156,7 +156,7 @@ class EnterpriseRouter:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnterpriseRouter.
+        r"""Sets the id of this EnterpriseRouter.
 
         企业路由器实例的ID
 
@@ -167,7 +167,7 @@ class EnterpriseRouter:
 
     @property
     def name(self):
-        """Gets the name of this EnterpriseRouter.
+        r"""Gets the name of this EnterpriseRouter.
 
         企业路由器实例名称
 
@@ -178,7 +178,7 @@ class EnterpriseRouter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnterpriseRouter.
+        r"""Sets the name of this EnterpriseRouter.
 
         企业路由器实例名称
 
@@ -189,7 +189,7 @@ class EnterpriseRouter:
 
     @property
     def description(self):
-        """Gets the description of this EnterpriseRouter.
+        r"""Gets the description of this EnterpriseRouter.
 
         企业路由器实例描述信息
 
@@ -200,7 +200,7 @@ class EnterpriseRouter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnterpriseRouter.
+        r"""Sets the description of this EnterpriseRouter.
 
         企业路由器实例描述信息
 
@@ -211,7 +211,7 @@ class EnterpriseRouter:
 
     @property
     def state(self):
-        """Gets the state of this EnterpriseRouter.
+        r"""Gets the state of this EnterpriseRouter.
 
         运行状态
 
@@ -222,7 +222,7 @@ class EnterpriseRouter:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this EnterpriseRouter.
+        r"""Sets the state of this EnterpriseRouter.
 
         运行状态
 
@@ -233,7 +233,7 @@ class EnterpriseRouter:
 
     @property
     def tags(self):
-        """Gets the tags of this EnterpriseRouter.
+        r"""Gets the tags of this EnterpriseRouter.
 
         标签信息
 
@@ -244,7 +244,7 @@ class EnterpriseRouter:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EnterpriseRouter.
+        r"""Sets the tags of this EnterpriseRouter.
 
         标签信息
 
@@ -255,7 +255,7 @@ class EnterpriseRouter:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this EnterpriseRouter.
+        r"""Gets the charge_mode of this EnterpriseRouter.
 
         计费模式 按需
 
@@ -266,7 +266,7 @@ class EnterpriseRouter:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this EnterpriseRouter.
+        r"""Sets the charge_mode of this EnterpriseRouter.
 
         计费模式 按需
 
@@ -277,7 +277,7 @@ class EnterpriseRouter:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EnterpriseRouter.
+        r"""Gets the created_at of this EnterpriseRouter.
 
         创建时间
 
@@ -288,7 +288,7 @@ class EnterpriseRouter:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EnterpriseRouter.
+        r"""Sets the created_at of this EnterpriseRouter.
 
         创建时间
 
@@ -299,7 +299,7 @@ class EnterpriseRouter:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EnterpriseRouter.
+        r"""Gets the updated_at of this EnterpriseRouter.
 
         更新时间
 
@@ -310,7 +310,7 @@ class EnterpriseRouter:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EnterpriseRouter.
+        r"""Sets the updated_at of this EnterpriseRouter.
 
         更新时间
 
@@ -321,7 +321,7 @@ class EnterpriseRouter:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EnterpriseRouter.
+        r"""Gets the enterprise_project_id of this EnterpriseRouter.
 
         企业项目ID
 
@@ -332,7 +332,7 @@ class EnterpriseRouter:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EnterpriseRouter.
+        r"""Sets the enterprise_project_id of this EnterpriseRouter.
 
         企业项目ID
 
@@ -343,7 +343,7 @@ class EnterpriseRouter:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EnterpriseRouter.
+        r"""Gets the project_id of this EnterpriseRouter.
 
         项目ID
 
@@ -354,7 +354,7 @@ class EnterpriseRouter:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EnterpriseRouter.
+        r"""Sets the project_id of this EnterpriseRouter.
 
         项目ID
 
@@ -365,7 +365,7 @@ class EnterpriseRouter:
 
     @property
     def asn(self):
-        """Gets the asn of this EnterpriseRouter.
+        r"""Gets the asn of this EnterpriseRouter.
 
         企业路由器实例的BGP AS号
 
@@ -376,7 +376,7 @@ class EnterpriseRouter:
 
     @asn.setter
     def asn(self, asn):
-        """Sets the asn of this EnterpriseRouter.
+        r"""Sets the asn of this EnterpriseRouter.
 
         企业路由器实例的BGP AS号
 
@@ -387,7 +387,7 @@ class EnterpriseRouter:
 
     @property
     def enable_default_propagation(self):
-        """Gets the enable_default_propagation of this EnterpriseRouter.
+        r"""Gets the enable_default_propagation of this EnterpriseRouter.
 
         是否开启默认路由表传播，默认false不开启
 
@@ -398,7 +398,7 @@ class EnterpriseRouter:
 
     @enable_default_propagation.setter
     def enable_default_propagation(self, enable_default_propagation):
-        """Sets the enable_default_propagation of this EnterpriseRouter.
+        r"""Sets the enable_default_propagation of this EnterpriseRouter.
 
         是否开启默认路由表传播，默认false不开启
 
@@ -409,7 +409,7 @@ class EnterpriseRouter:
 
     @property
     def enable_default_association(self):
-        """Gets the enable_default_association of this EnterpriseRouter.
+        r"""Gets the enable_default_association of this EnterpriseRouter.
 
         是否开启默认路由表关联，默认false不开启
 
@@ -420,7 +420,7 @@ class EnterpriseRouter:
 
     @enable_default_association.setter
     def enable_default_association(self, enable_default_association):
-        """Sets the enable_default_association of this EnterpriseRouter.
+        r"""Sets the enable_default_association of this EnterpriseRouter.
 
         是否开启默认路由表关联，默认false不开启
 
@@ -431,7 +431,7 @@ class EnterpriseRouter:
 
     @property
     def default_propagation_route_table_id(self):
-        """Gets the default_propagation_route_table_id of this EnterpriseRouter.
+        r"""Gets the default_propagation_route_table_id of this EnterpriseRouter.
 
         默认传播路由表id
 
@@ -442,7 +442,7 @@ class EnterpriseRouter:
 
     @default_propagation_route_table_id.setter
     def default_propagation_route_table_id(self, default_propagation_route_table_id):
-        """Sets the default_propagation_route_table_id of this EnterpriseRouter.
+        r"""Sets the default_propagation_route_table_id of this EnterpriseRouter.
 
         默认传播路由表id
 
@@ -453,7 +453,7 @@ class EnterpriseRouter:
 
     @property
     def default_association_route_table_id(self):
-        """Gets the default_association_route_table_id of this EnterpriseRouter.
+        r"""Gets the default_association_route_table_id of this EnterpriseRouter.
 
         默认关联路由表id
 
@@ -464,7 +464,7 @@ class EnterpriseRouter:
 
     @default_association_route_table_id.setter
     def default_association_route_table_id(self, default_association_route_table_id):
-        """Sets the default_association_route_table_id of this EnterpriseRouter.
+        r"""Sets the default_association_route_table_id of this EnterpriseRouter.
 
         默认关联路由表id
 
@@ -475,7 +475,7 @@ class EnterpriseRouter:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this EnterpriseRouter.
+        r"""Gets the availability_zone_ids of this EnterpriseRouter.
 
         企业路由器所在可用区信息
 
@@ -486,7 +486,7 @@ class EnterpriseRouter:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this EnterpriseRouter.
+        r"""Sets the availability_zone_ids of this EnterpriseRouter.
 
         企业路由器所在可用区信息
 
@@ -497,7 +497,7 @@ class EnterpriseRouter:
 
     @property
     def auto_accept_shared_attachments(self):
-        """Gets the auto_accept_shared_attachments of this EnterpriseRouter.
+        r"""Gets the auto_accept_shared_attachments of this EnterpriseRouter.
 
         是否自动接受共享连接创建，默认false不开启
 
@@ -508,7 +508,7 @@ class EnterpriseRouter:
 
     @auto_accept_shared_attachments.setter
     def auto_accept_shared_attachments(self, auto_accept_shared_attachments):
-        """Sets the auto_accept_shared_attachments of this EnterpriseRouter.
+        r"""Sets the auto_accept_shared_attachments of this EnterpriseRouter.
 
         是否自动接受共享连接创建，默认false不开启
 

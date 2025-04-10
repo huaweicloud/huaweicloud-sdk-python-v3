@@ -25,7 +25,7 @@ class CancelInstanceScheduleWindowRequest:
     }
 
     def __init__(self, job_id=None):
-        """CancelInstanceScheduleWindowRequest
+        r"""CancelInstanceScheduleWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelInstanceScheduleWindowRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CancelInstanceScheduleWindowRequest.
+        r"""Gets the job_id of this CancelInstanceScheduleWindowRequest.
 
         任务ID，取值为定时任务列表返回job_id字段。
 
@@ -53,7 +53,7 @@ class CancelInstanceScheduleWindowRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CancelInstanceScheduleWindowRequest.
+        r"""Sets the job_id of this CancelInstanceScheduleWindowRequest.
 
         任务ID，取值为定时任务列表返回job_id字段。
 

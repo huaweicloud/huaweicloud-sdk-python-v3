@@ -53,7 +53,7 @@ class QueryDeviceResultDTO:
     }
 
     def __init__(self, name=None, type=None, model=None, sn=None, account=None, number=None, prj_code_mode=None, dept_code=None, dept_name=None, dept_name_path=None, phone=None, country=None, email=None, description=None, status=None):
-        """QueryDeviceResultDTO
+        r"""QueryDeviceResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class QueryDeviceResultDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryDeviceResultDTO.
+        r"""Gets the name of this QueryDeviceResultDTO.
 
         终端名称。
 
@@ -152,7 +152,7 @@ class QueryDeviceResultDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryDeviceResultDTO.
+        r"""Sets the name of this QueryDeviceResultDTO.
 
         终端名称。
 
@@ -163,7 +163,7 @@ class QueryDeviceResultDTO:
 
     @property
     def type(self):
-        """Gets the type of this QueryDeviceResultDTO.
+        r"""Gets the type of this QueryDeviceResultDTO.
 
         终端类型，区分自研和第三方终端。
 
@@ -174,7 +174,7 @@ class QueryDeviceResultDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryDeviceResultDTO.
+        r"""Sets the type of this QueryDeviceResultDTO.
 
         终端类型，区分自研和第三方终端。
 
@@ -185,7 +185,7 @@ class QueryDeviceResultDTO:
 
     @property
     def model(self):
-        """Gets the model of this QueryDeviceResultDTO.
+        r"""Gets the model of this QueryDeviceResultDTO.
 
         终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
@@ -196,7 +196,7 @@ class QueryDeviceResultDTO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this QueryDeviceResultDTO.
+        r"""Sets the model of this QueryDeviceResultDTO.
 
         终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
@@ -207,7 +207,7 @@ class QueryDeviceResultDTO:
 
     @property
     def sn(self):
-        """Gets the sn of this QueryDeviceResultDTO.
+        r"""Gets the sn of this QueryDeviceResultDTO.
 
         终端SN号，仅可包含数字、字母和下划线。
 
@@ -218,7 +218,7 @@ class QueryDeviceResultDTO:
 
     @sn.setter
     def sn(self, sn):
-        """Sets the sn of this QueryDeviceResultDTO.
+        r"""Sets the sn of this QueryDeviceResultDTO.
 
         终端SN号，仅可包含数字、字母和下划线。
 
@@ -229,7 +229,7 @@ class QueryDeviceResultDTO:
 
     @property
     def account(self):
-        """Gets the account of this QueryDeviceResultDTO.
+        r"""Gets the account of this QueryDeviceResultDTO.
 
         硬终端对应的内置帐号。
 
@@ -240,7 +240,7 @@ class QueryDeviceResultDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this QueryDeviceResultDTO.
+        r"""Sets the account of this QueryDeviceResultDTO.
 
         硬终端对应的内置帐号。
 
@@ -251,7 +251,7 @@ class QueryDeviceResultDTO:
 
     @property
     def number(self):
-        """Gets the number of this QueryDeviceResultDTO.
+        r"""Gets the number of this QueryDeviceResultDTO.
 
         终端绑定的号码。
 
@@ -262,7 +262,7 @@ class QueryDeviceResultDTO:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this QueryDeviceResultDTO.
+        r"""Sets the number of this QueryDeviceResultDTO.
 
         终端绑定的号码。
 
@@ -273,7 +273,7 @@ class QueryDeviceResultDTO:
 
     @property
     def prj_code_mode(self):
-        """Gets the prj_code_mode of this QueryDeviceResultDTO.
+        r"""Gets the prj_code_mode of this QueryDeviceResultDTO.
 
         投影码生成模式。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1：简单 * 2：复杂 
 
@@ -284,7 +284,7 @@ class QueryDeviceResultDTO:
 
     @prj_code_mode.setter
     def prj_code_mode(self, prj_code_mode):
-        """Sets the prj_code_mode of this QueryDeviceResultDTO.
+        r"""Sets the prj_code_mode of this QueryDeviceResultDTO.
 
         投影码生成模式。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1：简单 * 2：复杂 
 
@@ -295,7 +295,7 @@ class QueryDeviceResultDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this QueryDeviceResultDTO.
+        r"""Gets the dept_code of this QueryDeviceResultDTO.
 
         部门编码。
 
@@ -306,7 +306,7 @@ class QueryDeviceResultDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this QueryDeviceResultDTO.
+        r"""Sets the dept_code of this QueryDeviceResultDTO.
 
         部门编码。
 
@@ -317,7 +317,7 @@ class QueryDeviceResultDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this QueryDeviceResultDTO.
+        r"""Gets the dept_name of this QueryDeviceResultDTO.
 
         部门名称。
 
@@ -328,7 +328,7 @@ class QueryDeviceResultDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this QueryDeviceResultDTO.
+        r"""Sets the dept_name of this QueryDeviceResultDTO.
 
         部门名称。
 
@@ -339,7 +339,7 @@ class QueryDeviceResultDTO:
 
     @property
     def dept_name_path(self):
-        """Gets the dept_name_path of this QueryDeviceResultDTO.
+        r"""Gets the dept_name_path of this QueryDeviceResultDTO.
 
         部门名称路径。
 
@@ -350,7 +350,7 @@ class QueryDeviceResultDTO:
 
     @dept_name_path.setter
     def dept_name_path(self, dept_name_path):
-        """Sets the dept_name_path of this QueryDeviceResultDTO.
+        r"""Sets the dept_name_path of this QueryDeviceResultDTO.
 
         部门名称路径。
 
@@ -361,7 +361,7 @@ class QueryDeviceResultDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this QueryDeviceResultDTO.
+        r"""Gets the phone of this QueryDeviceResultDTO.
 
         手机号。
 
@@ -372,7 +372,7 @@ class QueryDeviceResultDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this QueryDeviceResultDTO.
+        r"""Sets the phone of this QueryDeviceResultDTO.
 
         手机号。
 
@@ -383,7 +383,7 @@ class QueryDeviceResultDTO:
 
     @property
     def country(self):
-        """Gets the country of this QueryDeviceResultDTO.
+        r"""Gets the country of this QueryDeviceResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -394,7 +394,7 @@ class QueryDeviceResultDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this QueryDeviceResultDTO.
+        r"""Sets the country of this QueryDeviceResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -405,7 +405,7 @@ class QueryDeviceResultDTO:
 
     @property
     def email(self):
-        """Gets the email of this QueryDeviceResultDTO.
+        r"""Gets the email of this QueryDeviceResultDTO.
 
         邮箱地址。
 
@@ -416,7 +416,7 @@ class QueryDeviceResultDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this QueryDeviceResultDTO.
+        r"""Sets the email of this QueryDeviceResultDTO.
 
         邮箱地址。
 
@@ -427,7 +427,7 @@ class QueryDeviceResultDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryDeviceResultDTO.
+        r"""Gets the description of this QueryDeviceResultDTO.
 
         终端描述。
 
@@ -438,7 +438,7 @@ class QueryDeviceResultDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryDeviceResultDTO.
+        r"""Sets the description of this QueryDeviceResultDTO.
 
         终端描述。
 
@@ -449,7 +449,7 @@ class QueryDeviceResultDTO:
 
     @property
     def status(self):
-        """Gets the status of this QueryDeviceResultDTO.
+        r"""Gets the status of this QueryDeviceResultDTO.
 
         终端状态。 * 0、正常 * 1、停用\" 
 
@@ -460,7 +460,7 @@ class QueryDeviceResultDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryDeviceResultDTO.
+        r"""Sets the status of this QueryDeviceResultDTO.
 
         终端状态。 * 0、正常 * 1、停用\" 
 

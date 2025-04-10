@@ -29,7 +29,7 @@ class UpdateRouteAction:
     }
 
     def __init__(self, destination=None, nexthop=None, description=None):
-        """UpdateRouteAction
+        r"""UpdateRouteAction
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRouteAction:
 
     @property
     def destination(self):
-        """Gets the destination of this UpdateRouteAction.
+        r"""Gets the destination of this UpdateRouteAction.
 
         路由子网
 
@@ -66,7 +66,7 @@ class UpdateRouteAction:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this UpdateRouteAction.
+        r"""Sets the destination of this UpdateRouteAction.
 
         路由子网
 
@@ -77,7 +77,7 @@ class UpdateRouteAction:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this UpdateRouteAction.
+        r"""Gets the nexthop of this UpdateRouteAction.
 
         下一跳id
 
@@ -88,7 +88,7 @@ class UpdateRouteAction:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this UpdateRouteAction.
+        r"""Sets the nexthop of this UpdateRouteAction.
 
         下一跳id
 
@@ -99,7 +99,7 @@ class UpdateRouteAction:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRouteAction.
+        r"""Gets the description of this UpdateRouteAction.
 
         路由描述
 
@@ -110,7 +110,7 @@ class UpdateRouteAction:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRouteAction.
+        r"""Sets the description of this UpdateRouteAction.
 
         路由描述
 

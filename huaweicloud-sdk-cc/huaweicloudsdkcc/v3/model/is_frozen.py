@@ -25,7 +25,7 @@ class IsFrozen:
     }
 
     def __init__(self, is_frozen=None):
-        """IsFrozen
+        r"""IsFrozen
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class IsFrozen:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this IsFrozen.
+        r"""Gets the is_frozen of this IsFrozen.
 
         是否冻结
 
@@ -53,7 +53,7 @@ class IsFrozen:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this IsFrozen.
+        r"""Sets the is_frozen of this IsFrozen.
 
         是否冻结
 

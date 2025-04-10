@@ -33,7 +33,7 @@ class ShowStreamMetricsRequest:
     }
 
     def __init__(self, stream_name=None, label=None, label_list=None, start_time=None, end_time=None):
-        """ShowStreamMetricsRequest
+        r"""ShowStreamMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowStreamMetricsRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowStreamMetricsRequest.
+        r"""Gets the stream_name of this ShowStreamMetricsRequest.
 
         通道名称。
 
@@ -79,7 +79,7 @@ class ShowStreamMetricsRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowStreamMetricsRequest.
+        r"""Sets the stream_name of this ShowStreamMetricsRequest.
 
         通道名称。
 
@@ -90,7 +90,7 @@ class ShowStreamMetricsRequest:
 
     @property
     def label(self):
-        """Gets the label of this ShowStreamMetricsRequest.
+        r"""Gets the label of this ShowStreamMetricsRequest.
 
         通道监控指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）  - total_put_bytes_per_stream：总输入流量（Byte） - total_get_bytes_per_stream：总输出流量（Byte） - total_put_records_per_stream：总输入记录数（个） - total_get_records_per_stream：总输出记录数（个） - total_put_req_latency：上传请求平均处理时间（毫秒） - total_get_req_latency：下载请求平均处理时间（毫秒） - total_put_req_suc_per_stream：上传请求成功次数（个） - total_get_req_suc_per_stream：下载请求成功次数（个） - traffic_control_put：因流控拒绝的上传请求次数 （个） - traffic_control_get：因流控拒绝的下载请求次数 （个）
 
@@ -101,7 +101,7 @@ class ShowStreamMetricsRequest:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ShowStreamMetricsRequest.
+        r"""Sets the label of this ShowStreamMetricsRequest.
 
         通道监控指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）  - total_put_bytes_per_stream：总输入流量（Byte） - total_get_bytes_per_stream：总输出流量（Byte） - total_put_records_per_stream：总输入记录数（个） - total_get_records_per_stream：总输出记录数（个） - total_put_req_latency：上传请求平均处理时间（毫秒） - total_get_req_latency：下载请求平均处理时间（毫秒） - total_put_req_suc_per_stream：上传请求成功次数（个） - total_get_req_suc_per_stream：下载请求成功次数（个） - traffic_control_put：因流控拒绝的上传请求次数 （个） - traffic_control_get：因流控拒绝的下载请求次数 （个）
 
@@ -112,7 +112,7 @@ class ShowStreamMetricsRequest:
 
     @property
     def label_list(self):
-        """Gets the label_list of this ShowStreamMetricsRequest.
+        r"""Gets the label_list of this ShowStreamMetricsRequest.
 
         使用label用逗号拼接组成，用于批量查询多个label的指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）
 
@@ -123,7 +123,7 @@ class ShowStreamMetricsRequest:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this ShowStreamMetricsRequest.
+        r"""Sets the label_list of this ShowStreamMetricsRequest.
 
         使用label用逗号拼接组成，用于批量查询多个label的指标。（label与label_list必须二选一，label_list与label同时存在时，以label_list为准）
 
@@ -134,7 +134,7 @@ class ShowStreamMetricsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowStreamMetricsRequest.
+        r"""Gets the start_time of this ShowStreamMetricsRequest.
 
         监控开始时间点，10位时间戳。
 
@@ -145,7 +145,7 @@ class ShowStreamMetricsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowStreamMetricsRequest.
+        r"""Sets the start_time of this ShowStreamMetricsRequest.
 
         监控开始时间点，10位时间戳。
 
@@ -156,7 +156,7 @@ class ShowStreamMetricsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowStreamMetricsRequest.
+        r"""Gets the end_time of this ShowStreamMetricsRequest.
 
         监控结束时间点，10位时间戳。
 
@@ -167,7 +167,7 @@ class ShowStreamMetricsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowStreamMetricsRequest.
+        r"""Sets the end_time of this ShowStreamMetricsRequest.
 
         监控结束时间点，10位时间戳。
 

@@ -29,7 +29,7 @@ class UpdateChannelRequest:
     }
 
     def __init__(self, channel_id=None, enterprise_project_id=None, body=None):
-        """UpdateChannelRequest
+        r"""UpdateChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateChannelRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this UpdateChannelRequest.
+        r"""Gets the channel_id of this UpdateChannelRequest.
 
         指定查询的事件通道ID
 
@@ -67,7 +67,7 @@ class UpdateChannelRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this UpdateChannelRequest.
+        r"""Sets the channel_id of this UpdateChannelRequest.
 
         指定查询的事件通道ID
 
@@ -78,7 +78,7 @@ class UpdateChannelRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateChannelRequest.
+        r"""Gets the enterprise_project_id of this UpdateChannelRequest.
 
         企业项目id
 
@@ -89,7 +89,7 @@ class UpdateChannelRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateChannelRequest.
+        r"""Sets the enterprise_project_id of this UpdateChannelRequest.
 
         企业项目id
 
@@ -100,7 +100,7 @@ class UpdateChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateChannelRequest.
+        r"""Gets the body of this UpdateChannelRequest.
 
         :return: The body of this UpdateChannelRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.ChannelUpdateReq`
@@ -109,7 +109,7 @@ class UpdateChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateChannelRequest.
+        r"""Sets the body of this UpdateChannelRequest.
 
         :param body: The body of this UpdateChannelRequest.
         :type body: :class:`huaweicloudsdkeg.v1.ChannelUpdateReq`

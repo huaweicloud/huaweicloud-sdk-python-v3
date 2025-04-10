@@ -27,7 +27,7 @@ class ShowWorkloadPlanRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None):
-        """ShowWorkloadPlanRequest
+        r"""ShowWorkloadPlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowWorkloadPlanRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowWorkloadPlanRequest.
+        r"""Gets the cluster_id of this ShowWorkloadPlanRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class ShowWorkloadPlanRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowWorkloadPlanRequest.
+        r"""Sets the cluster_id of this ShowWorkloadPlanRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class ShowWorkloadPlanRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ShowWorkloadPlanRequest.
+        r"""Gets the plan_id of this ShowWorkloadPlanRequest.
 
         计划ID
 
@@ -81,7 +81,7 @@ class ShowWorkloadPlanRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ShowWorkloadPlanRequest.
+        r"""Sets the plan_id of this ShowWorkloadPlanRequest.
 
         计划ID
 

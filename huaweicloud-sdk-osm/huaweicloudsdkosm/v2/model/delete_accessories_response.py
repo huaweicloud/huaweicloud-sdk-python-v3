@@ -28,7 +28,7 @@ class DeleteAccessoriesResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """DeleteAccessoriesResponse
+        r"""DeleteAccessoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteAccessoriesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteAccessoriesResponse.
+        r"""Gets the error_code of this DeleteAccessoriesResponse.
 
         错误码
 
@@ -62,7 +62,7 @@ class DeleteAccessoriesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteAccessoriesResponse.
+        r"""Sets the error_code of this DeleteAccessoriesResponse.
 
         错误码
 
@@ -73,7 +73,7 @@ class DeleteAccessoriesResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteAccessoriesResponse.
+        r"""Gets the error_msg of this DeleteAccessoriesResponse.
 
         错误描述
 
@@ -84,7 +84,7 @@ class DeleteAccessoriesResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteAccessoriesResponse.
+        r"""Sets the error_msg of this DeleteAccessoriesResponse.
 
         错误描述
 

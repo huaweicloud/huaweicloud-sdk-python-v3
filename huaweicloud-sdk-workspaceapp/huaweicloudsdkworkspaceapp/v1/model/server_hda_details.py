@@ -43,7 +43,7 @@ class ServerHdaDetails:
     }
 
     def __init__(self, server_id=None, machine_name=None, maintain_status=None, server_name=None, server_group_id=None, server_group_name=None, sid=None, session_count=None, status=None, current_version=None):
-        """ServerHdaDetails
+        r"""ServerHdaDetails
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ServerHdaDetails:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerHdaDetails.
+        r"""Gets the server_id of this ServerHdaDetails.
 
         服务器id。
 
@@ -117,7 +117,7 @@ class ServerHdaDetails:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerHdaDetails.
+        r"""Sets the server_id of this ServerHdaDetails.
 
         服务器id。
 
@@ -128,7 +128,7 @@ class ServerHdaDetails:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ServerHdaDetails.
+        r"""Gets the machine_name of this ServerHdaDetails.
 
         机器名称。
 
@@ -139,7 +139,7 @@ class ServerHdaDetails:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ServerHdaDetails.
+        r"""Sets the machine_name of this ServerHdaDetails.
 
         机器名称。
 
@@ -150,7 +150,7 @@ class ServerHdaDetails:
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this ServerHdaDetails.
+        r"""Gets the maintain_status of this ServerHdaDetails.
 
         是否是维护状态。
 
@@ -161,7 +161,7 @@ class ServerHdaDetails:
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this ServerHdaDetails.
+        r"""Sets the maintain_status of this ServerHdaDetails.
 
         是否是维护状态。
 
@@ -172,7 +172,7 @@ class ServerHdaDetails:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ServerHdaDetails.
+        r"""Gets the server_name of this ServerHdaDetails.
 
         服务器名称。
 
@@ -183,7 +183,7 @@ class ServerHdaDetails:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ServerHdaDetails.
+        r"""Sets the server_name of this ServerHdaDetails.
 
         服务器名称。
 
@@ -194,7 +194,7 @@ class ServerHdaDetails:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ServerHdaDetails.
+        r"""Gets the server_group_id of this ServerHdaDetails.
 
         服务器组id。
 
@@ -205,7 +205,7 @@ class ServerHdaDetails:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ServerHdaDetails.
+        r"""Sets the server_group_id of this ServerHdaDetails.
 
         服务器组id。
 
@@ -216,7 +216,7 @@ class ServerHdaDetails:
 
     @property
     def server_group_name(self):
-        """Gets the server_group_name of this ServerHdaDetails.
+        r"""Gets the server_group_name of this ServerHdaDetails.
 
         服务器组名称。
 
@@ -227,7 +227,7 @@ class ServerHdaDetails:
 
     @server_group_name.setter
     def server_group_name(self, server_group_name):
-        """Sets the server_group_name of this ServerHdaDetails.
+        r"""Sets the server_group_name of this ServerHdaDetails.
 
         服务器组名称。
 
@@ -238,7 +238,7 @@ class ServerHdaDetails:
 
     @property
     def sid(self):
-        """Gets the sid of this ServerHdaDetails.
+        r"""Gets the sid of this ServerHdaDetails.
 
         服务器的sid。
 
@@ -249,7 +249,7 @@ class ServerHdaDetails:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this ServerHdaDetails.
+        r"""Sets the sid of this ServerHdaDetails.
 
         服务器的sid。
 
@@ -260,7 +260,7 @@ class ServerHdaDetails:
 
     @property
     def session_count(self):
-        """Gets the session_count of this ServerHdaDetails.
+        r"""Gets the session_count of this ServerHdaDetails.
 
         会话数量。
 
@@ -271,7 +271,7 @@ class ServerHdaDetails:
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this ServerHdaDetails.
+        r"""Sets the session_count of this ServerHdaDetails.
 
         会话数量。
 
@@ -282,7 +282,7 @@ class ServerHdaDetails:
 
     @property
     def status(self):
-        """Gets the status of this ServerHdaDetails.
+        r"""Gets the status of this ServerHdaDetails.
 
         :return: The status of this ServerHdaDetails.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -291,7 +291,7 @@ class ServerHdaDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ServerHdaDetails.
+        r"""Sets the status of this ServerHdaDetails.
 
         :param status: The status of this ServerHdaDetails.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -300,7 +300,7 @@ class ServerHdaDetails:
 
     @property
     def current_version(self):
-        """Gets the current_version of this ServerHdaDetails.
+        r"""Gets the current_version of this ServerHdaDetails.
 
         当前的accessAgent版本。
 
@@ -311,7 +311,7 @@ class ServerHdaDetails:
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this ServerHdaDetails.
+        r"""Sets the current_version of this ServerHdaDetails.
 
         当前的accessAgent版本。
 

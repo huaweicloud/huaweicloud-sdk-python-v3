@@ -27,7 +27,7 @@ class PostPaidServerTag:
     }
 
     def __init__(self, key=None, value=None):
-        """PostPaidServerTag
+        r"""PostPaidServerTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PostPaidServerTag:
 
     @property
     def key(self):
-        """Gets the key of this PostPaidServerTag.
+        r"""Gets the key of this PostPaidServerTag.
 
         键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\"=\", \"*\",“<”,“>”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
 
@@ -59,7 +59,7 @@ class PostPaidServerTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PostPaidServerTag.
+        r"""Sets the key of this PostPaidServerTag.
 
         键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\"=\", \"*\",“<”,“>”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
 
@@ -70,7 +70,7 @@ class PostPaidServerTag:
 
     @property
     def value(self):
-        """Gets the value of this PostPaidServerTag.
+        r"""Gets the value of this PostPaidServerTag.
 
           值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”。
 
@@ -81,7 +81,7 @@ class PostPaidServerTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PostPaidServerTag.
+        r"""Sets the value of this PostPaidServerTag.
 
           值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”。
 

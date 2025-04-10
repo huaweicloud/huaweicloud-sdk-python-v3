@@ -31,7 +31,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
     }
 
     def __init__(self, instance_id=None, log_type=None, lts_group_id=None, lts_stream_id=None):
-        """UpdateLtsConfigRequestBodyLtsConfigs
+        r"""UpdateLtsConfigRequestBodyLtsConfigs
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Gets the instance_id of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -71,7 +71,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Sets the instance_id of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -82,7 +82,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @property
     def log_type(self):
-        """Gets the log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Gets the log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         :return: The log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
         :rtype: :class:`huaweicloudsdkdds.v3.LtsLogType`
@@ -91,7 +91,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Sets the log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         :param log_type: The log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
         :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
@@ -100,7 +100,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Gets the lts_group_id of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         LTS日志组ID。可通过云日志服务-“查询账号下所有日志组”API接口获取。
 
@@ -111,7 +111,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Sets the lts_group_id of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         LTS日志组ID。可通过云日志服务-“查询账号下所有日志组”API接口获取。
 
@@ -122,7 +122,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Gets the lts_stream_id of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         LTS日志流ID。可通过云日志服务-“查询指定日志组下的所有日志流”API接口获取。
 
@@ -133,7 +133,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this UpdateLtsConfigRequestBodyLtsConfigs.
+        r"""Sets the lts_stream_id of this UpdateLtsConfigRequestBodyLtsConfigs.
 
         LTS日志流ID。可通过云日志服务-“查询指定日志组下的所有日志流”API接口获取。
 

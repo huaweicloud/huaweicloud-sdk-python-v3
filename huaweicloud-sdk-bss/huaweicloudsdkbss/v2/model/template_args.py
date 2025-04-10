@@ -27,7 +27,7 @@ class TemplateArgs:
     }
 
     def __init__(self, key=None, value=None):
-        """TemplateArgs
+        r"""TemplateArgs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TemplateArgs:
 
     @property
     def key(self):
-        """Gets the key of this TemplateArgs.
+        r"""Gets the key of this TemplateArgs.
 
         模板参数名。 目前仅支持sub_customer_name：表明企业主创建企业子的名字
 
@@ -59,7 +59,7 @@ class TemplateArgs:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TemplateArgs.
+        r"""Sets the key of this TemplateArgs.
 
         模板参数名。 目前仅支持sub_customer_name：表明企业主创建企业子的名字
 
@@ -70,7 +70,7 @@ class TemplateArgs:
 
     @property
     def value(self):
-        """Gets the value of this TemplateArgs.
+        r"""Gets the value of this TemplateArgs.
 
         模板参数值。 key对应的取值。
 
@@ -81,7 +81,7 @@ class TemplateArgs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TemplateArgs.
+        r"""Sets the value of this TemplateArgs.
 
         模板参数值。 key对应的取值。
 

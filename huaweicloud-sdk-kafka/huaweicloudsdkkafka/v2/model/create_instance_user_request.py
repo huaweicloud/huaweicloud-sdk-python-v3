@@ -27,7 +27,7 @@ class CreateInstanceUserRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateInstanceUserRequest
+        r"""CreateInstanceUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateInstanceUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateInstanceUserRequest.
+        r"""Gets the instance_id of this CreateInstanceUserRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateInstanceUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateInstanceUserRequest.
+        r"""Sets the instance_id of this CreateInstanceUserRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateInstanceUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceUserRequest.
+        r"""Gets the body of this CreateInstanceUserRequest.
 
         :return: The body of this CreateInstanceUserRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserReq`
@@ -80,7 +80,7 @@ class CreateInstanceUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceUserRequest.
+        r"""Sets the body of this CreateInstanceUserRequest.
 
         :param body: The body of this CreateInstanceUserRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserReq`

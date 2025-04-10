@@ -32,7 +32,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     }
 
     def __init__(self, target_id=None, delete_data_in_file_system=None, lifecycle=None, x_request_id=None):
-        """DeleteBackendTargetResponse
+        r"""DeleteBackendTargetResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @property
     def target_id(self):
-        """Gets the target_id of this DeleteBackendTargetResponse.
+        r"""Gets the target_id of this DeleteBackendTargetResponse.
 
         绑定关系id
 
@@ -76,7 +76,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this DeleteBackendTargetResponse.
+        r"""Sets the target_id of this DeleteBackendTargetResponse.
 
         绑定关系id
 
@@ -87,7 +87,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @property
     def delete_data_in_file_system(self):
-        """Gets the delete_data_in_file_system of this DeleteBackendTargetResponse.
+        r"""Gets the delete_data_in_file_system of this DeleteBackendTargetResponse.
 
         删除后端存储时是否同时删除文件系统内的联动目录及其数据文件
 
@@ -98,7 +98,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @delete_data_in_file_system.setter
     def delete_data_in_file_system(self, delete_data_in_file_system):
-        """Sets the delete_data_in_file_system of this DeleteBackendTargetResponse.
+        r"""Sets the delete_data_in_file_system of this DeleteBackendTargetResponse.
 
         删除后端存储时是否同时删除文件系统内的联动目录及其数据文件
 
@@ -109,7 +109,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this DeleteBackendTargetResponse.
+        r"""Gets the lifecycle of this DeleteBackendTargetResponse.
 
         绑定状态。只支持DELETING和FAILED
 
@@ -120,7 +120,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this DeleteBackendTargetResponse.
+        r"""Sets the lifecycle of this DeleteBackendTargetResponse.
 
         绑定状态。只支持DELETING和FAILED
 
@@ -131,7 +131,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteBackendTargetResponse.
+        r"""Gets the x_request_id of this DeleteBackendTargetResponse.
 
         :return: The x_request_id of this DeleteBackendTargetResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteBackendTargetResponse.
+        r"""Sets the x_request_id of this DeleteBackendTargetResponse.
 
         :param x_request_id: The x_request_id of this DeleteBackendTargetResponse.
         :type x_request_id: str

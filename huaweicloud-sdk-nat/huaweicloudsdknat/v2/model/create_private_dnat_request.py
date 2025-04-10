@@ -25,7 +25,7 @@ class CreatePrivateDnatRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePrivateDnatRequest
+        r"""CreatePrivateDnatRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePrivateDnatRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateDnatRequest.
+        r"""Gets the body of this CreatePrivateDnatRequest.
 
         :return: The body of this CreatePrivateDnatRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateDnatOptionBody`
@@ -52,7 +52,7 @@ class CreatePrivateDnatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateDnatRequest.
+        r"""Sets the body of this CreatePrivateDnatRequest.
 
         :param body: The body of this CreatePrivateDnatRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreatePrivateDnatOptionBody`

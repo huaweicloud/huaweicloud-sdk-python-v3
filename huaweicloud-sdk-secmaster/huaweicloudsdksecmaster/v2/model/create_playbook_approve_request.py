@@ -31,7 +31,7 @@ class CreatePlaybookApproveRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, body=None):
-        """CreatePlaybookApproveRequest
+        r"""CreatePlaybookApproveRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePlaybookApproveRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePlaybookApproveRequest.
+        r"""Gets the project_id of this CreatePlaybookApproveRequest.
 
         项目ID
 
@@ -72,7 +72,7 @@ class CreatePlaybookApproveRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePlaybookApproveRequest.
+        r"""Sets the project_id of this CreatePlaybookApproveRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class CreatePlaybookApproveRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookApproveRequest.
+        r"""Gets the workspace_id of this CreatePlaybookApproveRequest.
 
         工作空间ID
 
@@ -94,7 +94,7 @@ class CreatePlaybookApproveRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookApproveRequest.
+        r"""Sets the workspace_id of this CreatePlaybookApproveRequest.
 
         工作空间ID
 
@@ -105,7 +105,7 @@ class CreatePlaybookApproveRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreatePlaybookApproveRequest.
+        r"""Gets the version_id of this CreatePlaybookApproveRequest.
 
         版本ID
 
@@ -116,7 +116,7 @@ class CreatePlaybookApproveRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreatePlaybookApproveRequest.
+        r"""Sets the version_id of this CreatePlaybookApproveRequest.
 
         版本ID
 
@@ -127,7 +127,7 @@ class CreatePlaybookApproveRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePlaybookApproveRequest.
+        r"""Gets the body of this CreatePlaybookApproveRequest.
 
         :return: The body of this CreatePlaybookApproveRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ApprovePlaybookInfo`
@@ -136,7 +136,7 @@ class CreatePlaybookApproveRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePlaybookApproveRequest.
+        r"""Sets the body of this CreatePlaybookApproveRequest.
 
         :param body: The body of this CreatePlaybookApproveRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.ApprovePlaybookInfo`

@@ -26,7 +26,7 @@ class DeleteDashboardsResponse(SdkResponse):
     }
 
     def __init__(self, dashboards=None):
-        """DeleteDashboardsResponse
+        r"""DeleteDashboardsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDashboardsResponse(SdkResponse):
 
     @property
     def dashboards(self):
-        """Gets the dashboards of this DeleteDashboardsResponse.
+        r"""Gets the dashboards of this DeleteDashboardsResponse.
 
         批量删除监控看板返回结果
 
@@ -55,7 +55,7 @@ class DeleteDashboardsResponse(SdkResponse):
 
     @dashboards.setter
     def dashboards(self, dashboards):
-        """Sets the dashboards of this DeleteDashboardsResponse.
+        r"""Sets the dashboards of this DeleteDashboardsResponse.
 
         批量删除监控看板返回结果
 

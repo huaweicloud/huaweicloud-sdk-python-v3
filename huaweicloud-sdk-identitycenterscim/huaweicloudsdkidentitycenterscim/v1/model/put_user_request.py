@@ -31,7 +31,7 @@ class PutUserRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, user_id=None, body=None):
-        """PutUserRequest
+        r"""PutUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PutUserRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this PutUserRequest.
+        r"""Gets the authorization of this PutUserRequest.
 
         承载令牌
 
@@ -72,7 +72,7 @@ class PutUserRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this PutUserRequest.
+        r"""Sets the authorization of this PutUserRequest.
 
         承载令牌
 
@@ -83,7 +83,7 @@ class PutUserRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PutUserRequest.
+        r"""Gets the tenant_id of this PutUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -94,7 +94,7 @@ class PutUserRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PutUserRequest.
+        r"""Sets the tenant_id of this PutUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -105,7 +105,7 @@ class PutUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PutUserRequest.
+        r"""Gets the user_id of this PutUserRequest.
 
         用户的全局唯一标识符（ID）
 
@@ -116,7 +116,7 @@ class PutUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PutUserRequest.
+        r"""Sets the user_id of this PutUserRequest.
 
         用户的全局唯一标识符（ID）
 
@@ -127,7 +127,7 @@ class PutUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this PutUserRequest.
+        r"""Gets the body of this PutUserRequest.
 
         :return: The body of this PutUserRequest.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.UpdateUserReqBody`
@@ -136,7 +136,7 @@ class PutUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PutUserRequest.
+        r"""Sets the body of this PutUserRequest.
 
         :param body: The body of this PutUserRequest.
         :type body: :class:`huaweicloudsdkidentitycenterscim.v1.UpdateUserReqBody`

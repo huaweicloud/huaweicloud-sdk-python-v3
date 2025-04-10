@@ -27,7 +27,7 @@ class FileCreateReqSrlz:
     }
 
     def __init__(self, sha256=None, filename=None):
-        """FileCreateReqSrlz
+        r"""FileCreateReqSrlz
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FileCreateReqSrlz:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this FileCreateReqSrlz.
+        r"""Gets the sha256 of this FileCreateReqSrlz.
 
         文件sha256值
 
@@ -59,7 +59,7 @@ class FileCreateReqSrlz:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this FileCreateReqSrlz.
+        r"""Sets the sha256 of this FileCreateReqSrlz.
 
         文件sha256值
 
@@ -70,7 +70,7 @@ class FileCreateReqSrlz:
 
     @property
     def filename(self):
-        """Gets the filename of this FileCreateReqSrlz.
+        r"""Gets the filename of this FileCreateReqSrlz.
 
         文件名
 
@@ -81,7 +81,7 @@ class FileCreateReqSrlz:
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this FileCreateReqSrlz.
+        r"""Sets the filename of this FileCreateReqSrlz.
 
         文件名
 

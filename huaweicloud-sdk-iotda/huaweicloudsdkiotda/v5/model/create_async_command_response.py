@@ -42,7 +42,7 @@ class CreateAsyncCommandResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, command_id=None, service_id=None, command_name=None, paras=None, expire_time=None, status=None, created_time=None, send_strategy=None):
-        """CreateAsyncCommandResponse
+        r"""CreateAsyncCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateAsyncCommandResponse.
+        r"""Gets the device_id of this CreateAsyncCommandResponse.
 
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -111,7 +111,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateAsyncCommandResponse.
+        r"""Sets the device_id of this CreateAsyncCommandResponse.
 
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -122,7 +122,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def command_id(self):
-        """Gets the command_id of this CreateAsyncCommandResponse.
+        r"""Gets the command_id of this CreateAsyncCommandResponse.
 
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
@@ -133,7 +133,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this CreateAsyncCommandResponse.
+        r"""Sets the command_id of this CreateAsyncCommandResponse.
 
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
@@ -144,7 +144,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this CreateAsyncCommandResponse.
+        r"""Gets the service_id of this CreateAsyncCommandResponse.
 
         设备命令所属的设备服务ID，在设备关联的产品模型中定义。
 
@@ -155,7 +155,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this CreateAsyncCommandResponse.
+        r"""Sets the service_id of this CreateAsyncCommandResponse.
 
         设备命令所属的设备服务ID，在设备关联的产品模型中定义。
 
@@ -166,7 +166,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def command_name(self):
-        """Gets the command_name of this CreateAsyncCommandResponse.
+        r"""Gets the command_name of this CreateAsyncCommandResponse.
 
         设备命令名称，在设备关联的产品模型中定义。
 
@@ -177,7 +177,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this CreateAsyncCommandResponse.
+        r"""Sets the command_name of this CreateAsyncCommandResponse.
 
         设备命令名称，在设备关联的产品模型中定义。
 
@@ -188,7 +188,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def paras(self):
-        """Gets the paras of this CreateAsyncCommandResponse.
+        r"""Gets the paras of this CreateAsyncCommandResponse.
 
         设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。
 
@@ -199,7 +199,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this CreateAsyncCommandResponse.
+        r"""Sets the paras of this CreateAsyncCommandResponse.
 
         设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。
 
@@ -210,7 +210,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CreateAsyncCommandResponse.
+        r"""Gets the expire_time of this CreateAsyncCommandResponse.
 
         物联网平台缓存命令的时长， 单位秒。
 
@@ -221,7 +221,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CreateAsyncCommandResponse.
+        r"""Sets the expire_time of this CreateAsyncCommandResponse.
 
         物联网平台缓存命令的时长， 单位秒。
 
@@ -232,7 +232,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAsyncCommandResponse.
+        r"""Gets the status of this CreateAsyncCommandResponse.
 
         设备命令状态,如果命令被缓存，返回PENDING, 如果命令下发给设备，返回SENT。
 
@@ -243,7 +243,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAsyncCommandResponse.
+        r"""Sets the status of this CreateAsyncCommandResponse.
 
         设备命令状态,如果命令被缓存，返回PENDING, 如果命令下发给设备，返回SENT。
 
@@ -254,7 +254,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateAsyncCommandResponse.
+        r"""Gets the created_time of this CreateAsyncCommandResponse.
 
         命令的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -265,7 +265,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateAsyncCommandResponse.
+        r"""Sets the created_time of this CreateAsyncCommandResponse.
 
         命令的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -276,7 +276,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @property
     def send_strategy(self):
-        """Gets the send_strategy of this CreateAsyncCommandResponse.
+        r"""Gets the send_strategy of this CreateAsyncCommandResponse.
 
         下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
 
@@ -287,7 +287,7 @@ class CreateAsyncCommandResponse(SdkResponse):
 
     @send_strategy.setter
     def send_strategy(self, send_strategy):
-        """Sets the send_strategy of this CreateAsyncCommandResponse.
+        r"""Sets the send_strategy of this CreateAsyncCommandResponse.
 
         下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
 

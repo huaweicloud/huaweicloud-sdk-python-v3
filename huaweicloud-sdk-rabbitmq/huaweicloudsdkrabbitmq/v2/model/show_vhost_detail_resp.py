@@ -27,7 +27,7 @@ class ShowVhostDetailResp:
     }
 
     def __init__(self, name=None, tracing=None):
-        """ShowVhostDetailResp
+        r"""ShowVhostDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowVhostDetailResp:
 
     @property
     def name(self):
-        """Gets the name of this ShowVhostDetailResp.
+        r"""Gets the name of this ShowVhostDetailResp.
 
         Vhost名称。
 
@@ -61,7 +61,7 @@ class ShowVhostDetailResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowVhostDetailResp.
+        r"""Sets the name of this ShowVhostDetailResp.
 
         Vhost名称。
 
@@ -72,7 +72,7 @@ class ShowVhostDetailResp:
 
     @property
     def tracing(self):
-        """Gets the tracing of this ShowVhostDetailResp.
+        r"""Gets the tracing of this ShowVhostDetailResp.
 
         是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
 
@@ -83,7 +83,7 @@ class ShowVhostDetailResp:
 
     @tracing.setter
     def tracing(self, tracing):
-        """Sets the tracing of this ShowVhostDetailResp.
+        r"""Sets the tracing of this ShowVhostDetailResp.
 
         是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
 

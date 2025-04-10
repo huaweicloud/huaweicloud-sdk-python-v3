@@ -36,7 +36,7 @@ class CreateAliasResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, key_id=None, alias=None, alias_urn=None, create_time=None, update_time=None):
-        """CreateAliasResponse
+        r"""CreateAliasResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateAliasResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateAliasResponse.
+        r"""Gets the domain_id of this CreateAliasResponse.
 
         账号ID
 
@@ -90,7 +90,7 @@ class CreateAliasResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateAliasResponse.
+        r"""Sets the domain_id of this CreateAliasResponse.
 
         账号ID
 
@@ -101,7 +101,7 @@ class CreateAliasResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateAliasResponse.
+        r"""Gets the key_id of this CreateAliasResponse.
 
         密钥ID
 
@@ -112,7 +112,7 @@ class CreateAliasResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateAliasResponse.
+        r"""Sets the key_id of this CreateAliasResponse.
 
         密钥ID
 
@@ -123,7 +123,7 @@ class CreateAliasResponse(SdkResponse):
 
     @property
     def alias(self):
-        """Gets the alias of this CreateAliasResponse.
+        r"""Gets the alias of this CreateAliasResponse.
 
         别名
 
@@ -134,7 +134,7 @@ class CreateAliasResponse(SdkResponse):
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CreateAliasResponse.
+        r"""Sets the alias of this CreateAliasResponse.
 
         别名
 
@@ -145,7 +145,7 @@ class CreateAliasResponse(SdkResponse):
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this CreateAliasResponse.
+        r"""Gets the alias_urn of this CreateAliasResponse.
 
         别名资源定位符
 
@@ -156,7 +156,7 @@ class CreateAliasResponse(SdkResponse):
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this CreateAliasResponse.
+        r"""Sets the alias_urn of this CreateAliasResponse.
 
         别名资源定位符
 
@@ -167,7 +167,7 @@ class CreateAliasResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateAliasResponse.
+        r"""Gets the create_time of this CreateAliasResponse.
 
         创建时间
 
@@ -178,7 +178,7 @@ class CreateAliasResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateAliasResponse.
+        r"""Sets the create_time of this CreateAliasResponse.
 
         创建时间
 
@@ -189,7 +189,7 @@ class CreateAliasResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateAliasResponse.
+        r"""Gets the update_time of this CreateAliasResponse.
 
         更新时间
 
@@ -200,7 +200,7 @@ class CreateAliasResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateAliasResponse.
+        r"""Sets the update_time of this CreateAliasResponse.
 
         更新时间
 

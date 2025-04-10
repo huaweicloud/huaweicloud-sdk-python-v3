@@ -25,7 +25,7 @@ class MysqlReadOnlySwitch:
     }
 
     def __init__(self, readonly=None):
-        """MysqlReadOnlySwitch
+        r"""MysqlReadOnlySwitch
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MysqlReadOnlySwitch:
 
     @property
     def readonly(self):
-        """Gets the readonly of this MysqlReadOnlySwitch.
+        r"""Gets the readonly of this MysqlReadOnlySwitch.
 
         是否设置为只读权限 - true，表示设置为只读权限 - false，表示解除已设置的只读权限
 
@@ -53,7 +53,7 @@ class MysqlReadOnlySwitch:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this MysqlReadOnlySwitch.
+        r"""Sets the readonly of this MysqlReadOnlySwitch.
 
         是否设置为只读权限 - true，表示设置为只读权限 - false，表示解除已设置的只读权限
 

@@ -26,7 +26,7 @@ class CreateLogStreamResponse(SdkResponse):
     }
 
     def __init__(self, log_stream_id=None):
-        """CreateLogStreamResponse
+        r"""CreateLogStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateLogStreamResponse(SdkResponse):
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this CreateLogStreamResponse.
+        r"""Gets the log_stream_id of this CreateLogStreamResponse.
 
         创建的日志流的Id。
 
@@ -55,7 +55,7 @@ class CreateLogStreamResponse(SdkResponse):
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this CreateLogStreamResponse.
+        r"""Sets the log_stream_id of this CreateLogStreamResponse.
 
         创建的日志流的Id。
 

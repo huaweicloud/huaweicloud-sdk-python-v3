@@ -35,7 +35,7 @@ class VpcInfo:
     }
 
     def __init__(self, ecs_id=None, ecs_name=None, cascade_flag=None, vpc_channel_proxy_host=None, vpc_channel_id=None, vpc_channel_port=None):
-        """VpcInfo
+        r"""VpcInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VpcInfo:
 
     @property
     def ecs_id(self):
-        """Gets the ecs_id of this VpcInfo.
+        r"""Gets the ecs_id of this VpcInfo.
 
         云服务器ID
 
@@ -89,7 +89,7 @@ class VpcInfo:
 
     @ecs_id.setter
     def ecs_id(self, ecs_id):
-        """Sets the ecs_id of this VpcInfo.
+        r"""Sets the ecs_id of this VpcInfo.
 
         云服务器ID
 
@@ -100,7 +100,7 @@ class VpcInfo:
 
     @property
     def ecs_name(self):
-        """Gets the ecs_name of this VpcInfo.
+        r"""Gets the ecs_name of this VpcInfo.
 
         云服务器名称
 
@@ -111,7 +111,7 @@ class VpcInfo:
 
     @ecs_name.setter
     def ecs_name(self, ecs_name):
-        """Sets the ecs_name of this VpcInfo.
+        r"""Sets the ecs_name of this VpcInfo.
 
         云服务器名称
 
@@ -122,7 +122,7 @@ class VpcInfo:
 
     @property
     def cascade_flag(self):
-        """Gets the cascade_flag of this VpcInfo.
+        r"""Gets the cascade_flag of this VpcInfo.
 
         是否使用级联方式  暂不支持
 
@@ -133,7 +133,7 @@ class VpcInfo:
 
     @cascade_flag.setter
     def cascade_flag(self, cascade_flag):
-        """Sets the cascade_flag of this VpcInfo.
+        r"""Sets the cascade_flag of this VpcInfo.
 
         是否使用级联方式  暂不支持
 
@@ -144,7 +144,7 @@ class VpcInfo:
 
     @property
     def vpc_channel_proxy_host(self):
-        """Gets the vpc_channel_proxy_host of this VpcInfo.
+        r"""Gets the vpc_channel_proxy_host of this VpcInfo.
 
         代理主机
 
@@ -155,7 +155,7 @@ class VpcInfo:
 
     @vpc_channel_proxy_host.setter
     def vpc_channel_proxy_host(self, vpc_channel_proxy_host):
-        """Sets the vpc_channel_proxy_host of this VpcInfo.
+        r"""Sets the vpc_channel_proxy_host of this VpcInfo.
 
         代理主机
 
@@ -166,7 +166,7 @@ class VpcInfo:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this VpcInfo.
+        r"""Gets the vpc_channel_id of this VpcInfo.
 
         VPC通道编号
 
@@ -177,7 +177,7 @@ class VpcInfo:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this VpcInfo.
+        r"""Sets the vpc_channel_id of this VpcInfo.
 
         VPC通道编号
 
@@ -188,7 +188,7 @@ class VpcInfo:
 
     @property
     def vpc_channel_port(self):
-        """Gets the vpc_channel_port of this VpcInfo.
+        r"""Gets the vpc_channel_port of this VpcInfo.
 
         VPC通道端口
 
@@ -199,7 +199,7 @@ class VpcInfo:
 
     @vpc_channel_port.setter
     def vpc_channel_port(self, vpc_channel_port):
-        """Sets the vpc_channel_port of this VpcInfo.
+        r"""Sets the vpc_channel_port of this VpcInfo.
 
         VPC通道端口
 

@@ -29,7 +29,7 @@ class CreateRouteTable:
     }
 
     def __init__(self, name=None, description=None, tags=None):
-        """CreateRouteTable
+        r"""CreateRouteTable
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateRouteTable:
 
     @property
     def name(self):
-        """Gets the name of this CreateRouteTable.
+        r"""Gets the name of this CreateRouteTable.
 
         路由器表名称
 
@@ -67,7 +67,7 @@ class CreateRouteTable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRouteTable.
+        r"""Sets the name of this CreateRouteTable.
 
         路由器表名称
 
@@ -78,7 +78,7 @@ class CreateRouteTable:
 
     @property
     def description(self):
-        """Gets the description of this CreateRouteTable.
+        r"""Gets the description of this CreateRouteTable.
 
         路由器表描述信息
 
@@ -89,7 +89,7 @@ class CreateRouteTable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRouteTable.
+        r"""Sets the description of this CreateRouteTable.
 
         路由器表描述信息
 
@@ -100,7 +100,7 @@ class CreateRouteTable:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateRouteTable.
+        r"""Gets the tags of this CreateRouteTable.
 
         标签信息
 
@@ -111,7 +111,7 @@ class CreateRouteTable:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateRouteTable.
+        r"""Sets the tags of this CreateRouteTable.
 
         标签信息
 

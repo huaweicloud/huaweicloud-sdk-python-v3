@@ -25,7 +25,7 @@ class AddRuleGroupRequest:
     }
 
     def __init__(self, body=None):
-        """AddRuleGroupRequest
+        r"""AddRuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddRuleGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddRuleGroupRequest.
+        r"""Gets the body of this AddRuleGroupRequest.
 
         :return: The body of this AddRuleGroupRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.RuleGroupRequest`
@@ -52,7 +52,7 @@ class AddRuleGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddRuleGroupRequest.
+        r"""Sets the body of this AddRuleGroupRequest.
 
         :param body: The body of this AddRuleGroupRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.RuleGroupRequest`

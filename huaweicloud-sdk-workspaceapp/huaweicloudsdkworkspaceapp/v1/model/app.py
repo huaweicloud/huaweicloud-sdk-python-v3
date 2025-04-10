@@ -59,7 +59,7 @@ class App:
     }
 
     def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None):
-        """App
+        r"""App
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class App:
 
     @property
     def id(self):
-        """Gets the id of this App.
+        r"""Gets the id of this App.
 
         应用ID。
 
@@ -173,7 +173,7 @@ class App:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this App.
+        r"""Sets the id of this App.
 
         应用ID。
 
@@ -184,7 +184,7 @@ class App:
 
     @property
     def name(self):
-        """Gets the name of this App.
+        r"""Gets the name of this App.
 
         应用名称。
 
@@ -195,7 +195,7 @@ class App:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this App.
+        r"""Sets the name of this App.
 
         应用名称。
 
@@ -206,7 +206,7 @@ class App:
 
     @property
     def version(self):
-        """Gets the version of this App.
+        r"""Gets the version of this App.
 
         应用版本号。
 
@@ -217,7 +217,7 @@ class App:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this App.
+        r"""Sets the version of this App.
 
         应用版本号。
 
@@ -228,7 +228,7 @@ class App:
 
     @property
     def command_param(self):
-        """Gets the command_param of this App.
+        r"""Gets the command_param of this App.
 
         启动命令行参数。
 
@@ -239,7 +239,7 @@ class App:
 
     @command_param.setter
     def command_param(self, command_param):
-        """Sets the command_param of this App.
+        r"""Sets the command_param of this App.
 
         启动命令行参数。
 
@@ -250,7 +250,7 @@ class App:
 
     @property
     def execute_path(self):
-        """Gets the execute_path of this App.
+        r"""Gets the execute_path of this App.
 
         执行路径。
 
@@ -261,7 +261,7 @@ class App:
 
     @execute_path.setter
     def execute_path(self, execute_path):
-        """Sets the execute_path of this App.
+        r"""Sets the execute_path of this App.
 
         执行路径。
 
@@ -272,7 +272,7 @@ class App:
 
     @property
     def work_path(self):
-        """Gets the work_path of this App.
+        r"""Gets the work_path of this App.
 
         应用工作目录。
 
@@ -283,7 +283,7 @@ class App:
 
     @work_path.setter
     def work_path(self, work_path):
-        """Sets the work_path of this App.
+        r"""Sets the work_path of this App.
 
         应用工作目录。
 
@@ -294,7 +294,7 @@ class App:
 
     @property
     def icon_path(self):
-        """Gets the icon_path of this App.
+        r"""Gets the icon_path of this App.
 
         应用图标的路径。
 
@@ -305,7 +305,7 @@ class App:
 
     @icon_path.setter
     def icon_path(self, icon_path):
-        """Sets the icon_path of this App.
+        r"""Sets the icon_path of this App.
 
         应用图标的路径。
 
@@ -316,7 +316,7 @@ class App:
 
     @property
     def icon_index(self):
-        """Gets the icon_index of this App.
+        r"""Gets the icon_index of this App.
 
         应用图标的索引。
 
@@ -327,7 +327,7 @@ class App:
 
     @icon_index.setter
     def icon_index(self, icon_index):
-        """Sets the icon_index of this App.
+        r"""Sets the icon_index of this App.
 
         应用图标的索引。
 
@@ -338,7 +338,7 @@ class App:
 
     @property
     def description(self):
-        """Gets the description of this App.
+        r"""Gets the description of this App.
 
         应用描述。
 
@@ -349,7 +349,7 @@ class App:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this App.
+        r"""Sets the description of this App.
 
         应用描述。
 
@@ -360,7 +360,7 @@ class App:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this App.
+        r"""Gets the app_group_id of this App.
 
         应用组标识Id。
 
@@ -371,7 +371,7 @@ class App:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this App.
+        r"""Sets the app_group_id of this App.
 
         应用组标识Id。
 
@@ -382,7 +382,7 @@ class App:
 
     @property
     def state(self):
-        """Gets the state of this App.
+        r"""Gets the state of this App.
 
         :return: The state of this App.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -391,7 +391,7 @@ class App:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this App.
+        r"""Sets the state of this App.
 
         :param state: The state of this App.
         :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -400,7 +400,7 @@ class App:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this App.
+        r"""Gets the tenant_id of this App.
 
         所在的租户ID。
 
@@ -411,7 +411,7 @@ class App:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this App.
+        r"""Sets the tenant_id of this App.
 
         所在的租户ID。
 
@@ -422,7 +422,7 @@ class App:
 
     @property
     def publish_at(self):
-        """Gets the publish_at of this App.
+        r"""Gets the publish_at of this App.
 
         发布时间。
 
@@ -433,7 +433,7 @@ class App:
 
     @publish_at.setter
     def publish_at(self, publish_at):
-        """Sets the publish_at of this App.
+        r"""Sets the publish_at of this App.
 
         发布时间。
 
@@ -444,7 +444,7 @@ class App:
 
     @property
     def source_type(self):
-        """Gets the source_type of this App.
+        r"""Gets the source_type of this App.
 
         应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
 
@@ -455,7 +455,7 @@ class App:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this App.
+        r"""Sets the source_type of this App.
 
         应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
 
@@ -466,7 +466,7 @@ class App:
 
     @property
     def publisher(self):
-        """Gets the publisher of this App.
+        r"""Gets the publisher of this App.
 
         应用发布者。
 
@@ -477,7 +477,7 @@ class App:
 
     @publisher.setter
     def publisher(self, publisher):
-        """Sets the publisher of this App.
+        r"""Sets the publisher of this App.
 
         应用发布者。
 
@@ -488,7 +488,7 @@ class App:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this App.
+        r"""Gets the icon_url of this App.
 
         图标url。
 
@@ -499,7 +499,7 @@ class App:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this App.
+        r"""Sets the icon_url of this App.
 
         图标url。
 
@@ -510,7 +510,7 @@ class App:
 
     @property
     def publishable(self):
-        """Gets the publishable of this App.
+        r"""Gets the publishable of this App.
 
         是否可发布应用： - true: 可发布。 - false: 不可发布。
 
@@ -521,7 +521,7 @@ class App:
 
     @publishable.setter
     def publishable(self, publishable):
-        """Sets the publishable of this App.
+        r"""Sets the publishable of this App.
 
         是否可发布应用： - true: 可发布。 - false: 不可发布。
 
@@ -532,7 +532,7 @@ class App:
 
     @property
     def sandbox_enable(self):
-        """Gets the sandbox_enable of this App.
+        r"""Gets the sandbox_enable of this App.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 
@@ -543,7 +543,7 @@ class App:
 
     @sandbox_enable.setter
     def sandbox_enable(self, sandbox_enable):
-        """Sets the sandbox_enable of this App.
+        r"""Sets the sandbox_enable of this App.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 

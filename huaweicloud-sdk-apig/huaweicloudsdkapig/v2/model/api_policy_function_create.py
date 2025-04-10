@@ -47,7 +47,7 @@ class ApiPolicyFunctionCreate:
     }
 
     def __init__(self, function_urn=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, req_protocol=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
-        """ApiPolicyFunctionCreate
+        r"""ApiPolicyFunctionCreate
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ApiPolicyFunctionCreate.
+        r"""Gets the function_urn of this ApiPolicyFunctionCreate.
 
         函数URN
 
@@ -125,7 +125,7 @@ class ApiPolicyFunctionCreate:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ApiPolicyFunctionCreate.
+        r"""Sets the function_urn of this ApiPolicyFunctionCreate.
 
         函数URN
 
@@ -136,7 +136,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this ApiPolicyFunctionCreate.
+        r"""Gets the invocation_type of this ApiPolicyFunctionCreate.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -147,7 +147,7 @@ class ApiPolicyFunctionCreate:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this ApiPolicyFunctionCreate.
+        r"""Sets the invocation_type of this ApiPolicyFunctionCreate.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -158,7 +158,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ApiPolicyFunctionCreate.
+        r"""Gets the network_type of this ApiPolicyFunctionCreate.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -169,7 +169,7 @@ class ApiPolicyFunctionCreate:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ApiPolicyFunctionCreate.
+        r"""Sets the network_type of this ApiPolicyFunctionCreate.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -180,7 +180,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def version(self):
-        """Gets the version of this ApiPolicyFunctionCreate.
+        r"""Gets the version of this ApiPolicyFunctionCreate.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -191,7 +191,7 @@ class ApiPolicyFunctionCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiPolicyFunctionCreate.
+        r"""Sets the version of this ApiPolicyFunctionCreate.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -202,7 +202,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this ApiPolicyFunctionCreate.
+        r"""Gets the alias_urn of this ApiPolicyFunctionCreate.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -213,7 +213,7 @@ class ApiPolicyFunctionCreate:
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this ApiPolicyFunctionCreate.
+        r"""Sets the alias_urn of this ApiPolicyFunctionCreate.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -224,7 +224,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApiPolicyFunctionCreate.
+        r"""Gets the timeout of this ApiPolicyFunctionCreate.
 
         API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
@@ -235,7 +235,7 @@ class ApiPolicyFunctionCreate:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApiPolicyFunctionCreate.
+        r"""Sets the timeout of this ApiPolicyFunctionCreate.
 
         API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
@@ -246,7 +246,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiPolicyFunctionCreate.
+        r"""Gets the req_protocol of this ApiPolicyFunctionCreate.
 
         函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
 
@@ -257,7 +257,7 @@ class ApiPolicyFunctionCreate:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiPolicyFunctionCreate.
+        r"""Sets the req_protocol of this ApiPolicyFunctionCreate.
 
         函数后端的请求协议：HTTPS、GRPCS，默认值为HTTPS，前端配置中的请求协议为GRPCS时可选GRPCS。
 
@@ -268,7 +268,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyFunctionCreate.
+        r"""Gets the effect_mode of this ApiPolicyFunctionCreate.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -279,7 +279,7 @@ class ApiPolicyFunctionCreate:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyFunctionCreate.
+        r"""Sets the effect_mode of this ApiPolicyFunctionCreate.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -290,7 +290,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyFunctionCreate.
+        r"""Gets the name of this ApiPolicyFunctionCreate.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -301,7 +301,7 @@ class ApiPolicyFunctionCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyFunctionCreate.
+        r"""Sets the name of this ApiPolicyFunctionCreate.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -312,7 +312,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyFunctionCreate.
+        r"""Gets the backend_params of this ApiPolicyFunctionCreate.
 
         后端参数列表，后端类型为GRPC时不支持配置
 
@@ -323,7 +323,7 @@ class ApiPolicyFunctionCreate:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyFunctionCreate.
+        r"""Sets the backend_params of this ApiPolicyFunctionCreate.
 
         后端参数列表，后端类型为GRPC时不支持配置
 
@@ -334,7 +334,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyFunctionCreate.
+        r"""Gets the conditions of this ApiPolicyFunctionCreate.
 
         策略条件列表
 
@@ -345,7 +345,7 @@ class ApiPolicyFunctionCreate:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyFunctionCreate.
+        r"""Sets the conditions of this ApiPolicyFunctionCreate.
 
         策略条件列表
 
@@ -356,7 +356,7 @@ class ApiPolicyFunctionCreate:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyFunctionCreate.
+        r"""Gets the authorizer_id of this ApiPolicyFunctionCreate.
 
         后端自定义认证对象的ID
 
@@ -367,7 +367,7 @@ class ApiPolicyFunctionCreate:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyFunctionCreate.
+        r"""Sets the authorizer_id of this ApiPolicyFunctionCreate.
 
         后端自定义认证对象的ID
 

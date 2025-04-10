@@ -32,7 +32,7 @@ class DeleteValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, timestamp=None):
-        """DeleteValueListResponse
+        r"""DeleteValueListResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteValueListResponse.
+        r"""Gets the id of this DeleteValueListResponse.
 
         引用表id
 
@@ -76,7 +76,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteValueListResponse.
+        r"""Sets the id of this DeleteValueListResponse.
 
         引用表id
 
@@ -87,7 +87,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteValueListResponse.
+        r"""Gets the name of this DeleteValueListResponse.
 
         引用表名称
 
@@ -98,7 +98,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteValueListResponse.
+        r"""Sets the name of this DeleteValueListResponse.
 
         引用表名称
 
@@ -109,7 +109,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this DeleteValueListResponse.
+        r"""Gets the type of this DeleteValueListResponse.
 
         引用表类型
 
@@ -120,7 +120,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteValueListResponse.
+        r"""Sets the type of this DeleteValueListResponse.
 
         引用表类型
 
@@ -131,7 +131,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DeleteValueListResponse.
+        r"""Gets the timestamp of this DeleteValueListResponse.
 
         删除引用表的时间，时间为13位毫秒时间戳
 
@@ -142,7 +142,7 @@ class DeleteValueListResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DeleteValueListResponse.
+        r"""Sets the timestamp of this DeleteValueListResponse.
 
         删除引用表的时间，时间为13位毫秒时间戳
 

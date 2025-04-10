@@ -26,7 +26,7 @@ class SetBinlogClearPolicyResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SetBinlogClearPolicyResponse
+        r"""SetBinlogClearPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetBinlogClearPolicyResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this SetBinlogClearPolicyResponse.
+        r"""Gets the resp of this SetBinlogClearPolicyResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class SetBinlogClearPolicyResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this SetBinlogClearPolicyResponse.
+        r"""Sets the resp of this SetBinlogClearPolicyResponse.
 
         操作结果。
 

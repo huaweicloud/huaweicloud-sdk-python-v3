@@ -25,7 +25,7 @@ class CreateResponseBody:
     }
 
     def __init__(self, id=None):
-        """CreateResponseBody
+        r"""CreateResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this CreateResponseBody.
+        r"""Gets the id of this CreateResponseBody.
 
         创建出的服务作业ID
 
@@ -53,7 +53,7 @@ class CreateResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateResponseBody.
+        r"""Sets the id of this CreateResponseBody.
 
         创建出的服务作业ID
 

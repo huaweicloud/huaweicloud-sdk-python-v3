@@ -25,7 +25,7 @@ class DeleteAlarmRuleV4RequestBody:
     }
 
     def __init__(self, alarm_rules=None):
-        """DeleteAlarmRuleV4RequestBody
+        r"""DeleteAlarmRuleV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAlarmRuleV4RequestBody:
 
     @property
     def alarm_rules(self):
-        """Gets the alarm_rules of this DeleteAlarmRuleV4RequestBody.
+        r"""Gets the alarm_rules of this DeleteAlarmRuleV4RequestBody.
 
         告警规则名称列表。
 
@@ -53,7 +53,7 @@ class DeleteAlarmRuleV4RequestBody:
 
     @alarm_rules.setter
     def alarm_rules(self, alarm_rules):
-        """Sets the alarm_rules of this DeleteAlarmRuleV4RequestBody.
+        r"""Sets the alarm_rules of this DeleteAlarmRuleV4RequestBody.
 
         告警规则名称列表。
 

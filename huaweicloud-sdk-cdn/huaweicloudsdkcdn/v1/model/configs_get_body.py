@@ -87,7 +87,7 @@ class ConfigsGetBody:
     }
 
     def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None):
-        """ConfigsGetBody
+        r"""ConfigsGetBody
 
         The model defined in huaweicloud sdk
 
@@ -260,7 +260,7 @@ class ConfigsGetBody:
 
     @property
     def business_type(self):
-        """Gets the business_type of this ConfigsGetBody.
+        r"""Gets the business_type of this ConfigsGetBody.
 
         业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
 
@@ -271,7 +271,7 @@ class ConfigsGetBody:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this ConfigsGetBody.
+        r"""Sets the business_type of this ConfigsGetBody.
 
         业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
 
@@ -282,7 +282,7 @@ class ConfigsGetBody:
 
     @property
     def service_area(self):
-        """Gets the service_area of this ConfigsGetBody.
+        r"""Gets the service_area of this ConfigsGetBody.
 
         服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
 
@@ -293,7 +293,7 @@ class ConfigsGetBody:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ConfigsGetBody.
+        r"""Sets the service_area of this ConfigsGetBody.
 
         服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
 
@@ -304,7 +304,7 @@ class ConfigsGetBody:
 
     @property
     def remark(self):
-        """Gets the remark of this ConfigsGetBody.
+        r"""Gets the remark of this ConfigsGetBody.
 
         域名备注。
 
@@ -315,7 +315,7 @@ class ConfigsGetBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ConfigsGetBody.
+        r"""Sets the remark of this ConfigsGetBody.
 
         域名备注。
 
@@ -326,7 +326,7 @@ class ConfigsGetBody:
 
     @property
     def origin_request_header(self):
-        """Gets the origin_request_header of this ConfigsGetBody.
+        r"""Gets the origin_request_header of this ConfigsGetBody.
 
         回源请求头配置。
 
@@ -337,7 +337,7 @@ class ConfigsGetBody:
 
     @origin_request_header.setter
     def origin_request_header(self, origin_request_header):
-        """Sets the origin_request_header of this ConfigsGetBody.
+        r"""Sets the origin_request_header of this ConfigsGetBody.
 
         回源请求头配置。
 
@@ -348,7 +348,7 @@ class ConfigsGetBody:
 
     @property
     def http_response_header(self):
-        """Gets the http_response_header of this ConfigsGetBody.
+        r"""Gets the http_response_header of this ConfigsGetBody.
 
         http header配置
 
@@ -359,7 +359,7 @@ class ConfigsGetBody:
 
     @http_response_header.setter
     def http_response_header(self, http_response_header):
-        """Sets the http_response_header of this ConfigsGetBody.
+        r"""Sets the http_response_header of this ConfigsGetBody.
 
         http header配置
 
@@ -370,7 +370,7 @@ class ConfigsGetBody:
 
     @property
     def url_auth(self):
-        """Gets the url_auth of this ConfigsGetBody.
+        r"""Gets the url_auth of this ConfigsGetBody.
 
         :return: The url_auth of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.UrlAuthGetBody`
@@ -379,7 +379,7 @@ class ConfigsGetBody:
 
     @url_auth.setter
     def url_auth(self, url_auth):
-        """Sets the url_auth of this ConfigsGetBody.
+        r"""Sets the url_auth of this ConfigsGetBody.
 
         :param url_auth: The url_auth of this ConfigsGetBody.
         :type url_auth: :class:`huaweicloudsdkcdn.v1.UrlAuthGetBody`
@@ -388,7 +388,7 @@ class ConfigsGetBody:
 
     @property
     def https(self):
-        """Gets the https of this ConfigsGetBody.
+        r"""Gets the https of this ConfigsGetBody.
 
         :return: The https of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
@@ -397,7 +397,7 @@ class ConfigsGetBody:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this ConfigsGetBody.
+        r"""Sets the https of this ConfigsGetBody.
 
         :param https: The https of this ConfigsGetBody.
         :type https: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
@@ -406,7 +406,7 @@ class ConfigsGetBody:
 
     @property
     def sources(self):
-        """Gets the sources of this ConfigsGetBody.
+        r"""Gets the sources of this ConfigsGetBody.
 
         源站配置。
 
@@ -417,7 +417,7 @@ class ConfigsGetBody:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ConfigsGetBody.
+        r"""Sets the sources of this ConfigsGetBody.
 
         源站配置。
 
@@ -428,7 +428,7 @@ class ConfigsGetBody:
 
     @property
     def origin_protocol(self):
-        """Gets the origin_protocol of this ConfigsGetBody.
+        r"""Gets the origin_protocol of this ConfigsGetBody.
 
         回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
@@ -439,7 +439,7 @@ class ConfigsGetBody:
 
     @origin_protocol.setter
     def origin_protocol(self, origin_protocol):
-        """Sets the origin_protocol of this ConfigsGetBody.
+        r"""Sets the origin_protocol of this ConfigsGetBody.
 
         回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
@@ -450,7 +450,7 @@ class ConfigsGetBody:
 
     @property
     def origin_follow302_status(self):
-        """Gets the origin_follow302_status of this ConfigsGetBody.
+        r"""Gets the origin_follow302_status of this ConfigsGetBody.
 
         回源跟随，on：开启，off：关闭。
 
@@ -461,7 +461,7 @@ class ConfigsGetBody:
 
     @origin_follow302_status.setter
     def origin_follow302_status(self, origin_follow302_status):
-        """Sets the origin_follow302_status of this ConfigsGetBody.
+        r"""Sets the origin_follow302_status of this ConfigsGetBody.
 
         回源跟随，on：开启，off：关闭。
 
@@ -472,7 +472,7 @@ class ConfigsGetBody:
 
     @property
     def cache_rules(self):
-        """Gets the cache_rules of this ConfigsGetBody.
+        r"""Gets the cache_rules of this ConfigsGetBody.
 
         缓存规则。
 
@@ -483,7 +483,7 @@ class ConfigsGetBody:
 
     @cache_rules.setter
     def cache_rules(self, cache_rules):
-        """Sets the cache_rules of this ConfigsGetBody.
+        r"""Sets the cache_rules of this ConfigsGetBody.
 
         缓存规则。
 
@@ -494,7 +494,7 @@ class ConfigsGetBody:
 
     @property
     def ip_filter(self):
-        """Gets the ip_filter of this ConfigsGetBody.
+        r"""Gets the ip_filter of this ConfigsGetBody.
 
         :return: The ip_filter of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.IpFilter`
@@ -503,7 +503,7 @@ class ConfigsGetBody:
 
     @ip_filter.setter
     def ip_filter(self, ip_filter):
-        """Sets the ip_filter of this ConfigsGetBody.
+        r"""Sets the ip_filter of this ConfigsGetBody.
 
         :param ip_filter: The ip_filter of this ConfigsGetBody.
         :type ip_filter: :class:`huaweicloudsdkcdn.v1.IpFilter`
@@ -512,7 +512,7 @@ class ConfigsGetBody:
 
     @property
     def referer(self):
-        """Gets the referer of this ConfigsGetBody.
+        r"""Gets the referer of this ConfigsGetBody.
 
         :return: The referer of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.RefererConfig`
@@ -521,7 +521,7 @@ class ConfigsGetBody:
 
     @referer.setter
     def referer(self, referer):
-        """Sets the referer of this ConfigsGetBody.
+        r"""Sets the referer of this ConfigsGetBody.
 
         :param referer: The referer of this ConfigsGetBody.
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererConfig`
@@ -530,7 +530,7 @@ class ConfigsGetBody:
 
     @property
     def force_redirect(self):
-        """Gets the force_redirect of this ConfigsGetBody.
+        r"""Gets the force_redirect of this ConfigsGetBody.
 
         :return: The force_redirect of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
@@ -539,7 +539,7 @@ class ConfigsGetBody:
 
     @force_redirect.setter
     def force_redirect(self, force_redirect):
-        """Sets the force_redirect of this ConfigsGetBody.
+        r"""Sets the force_redirect of this ConfigsGetBody.
 
         :param force_redirect: The force_redirect of this ConfigsGetBody.
         :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
@@ -548,7 +548,7 @@ class ConfigsGetBody:
 
     @property
     def compress(self):
-        """Gets the compress of this ConfigsGetBody.
+        r"""Gets the compress of this ConfigsGetBody.
 
         :return: The compress of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Compress`
@@ -557,7 +557,7 @@ class ConfigsGetBody:
 
     @compress.setter
     def compress(self, compress):
-        """Sets the compress of this ConfigsGetBody.
+        r"""Sets the compress of this ConfigsGetBody.
 
         :param compress: The compress of this ConfigsGetBody.
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
@@ -566,7 +566,7 @@ class ConfigsGetBody:
 
     @property
     def cache_url_parameter_filter(self):
-        """Gets the cache_url_parameter_filter of this ConfigsGetBody.
+        r"""Gets the cache_url_parameter_filter of this ConfigsGetBody.
 
         :return: The cache_url_parameter_filter of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
@@ -575,7 +575,7 @@ class ConfigsGetBody:
 
     @cache_url_parameter_filter.setter
     def cache_url_parameter_filter(self, cache_url_parameter_filter):
-        """Sets the cache_url_parameter_filter of this ConfigsGetBody.
+        r"""Sets the cache_url_parameter_filter of this ConfigsGetBody.
 
         :param cache_url_parameter_filter: The cache_url_parameter_filter of this ConfigsGetBody.
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
@@ -584,7 +584,7 @@ class ConfigsGetBody:
 
     @property
     def ipv6_accelerate(self):
-        """Gets the ipv6_accelerate of this ConfigsGetBody.
+        r"""Gets the ipv6_accelerate of this ConfigsGetBody.
 
         ipv6设置，1：打开；0：关闭。
 
@@ -595,7 +595,7 @@ class ConfigsGetBody:
 
     @ipv6_accelerate.setter
     def ipv6_accelerate(self, ipv6_accelerate):
-        """Sets the ipv6_accelerate of this ConfigsGetBody.
+        r"""Sets the ipv6_accelerate of this ConfigsGetBody.
 
         ipv6设置，1：打开；0：关闭。
 
@@ -606,7 +606,7 @@ class ConfigsGetBody:
 
     @property
     def error_code_cache(self):
-        """Gets the error_code_cache of this ConfigsGetBody.
+        r"""Gets the error_code_cache of this ConfigsGetBody.
 
         状态码缓存时间。
 
@@ -617,7 +617,7 @@ class ConfigsGetBody:
 
     @error_code_cache.setter
     def error_code_cache(self, error_code_cache):
-        """Sets the error_code_cache of this ConfigsGetBody.
+        r"""Sets the error_code_cache of this ConfigsGetBody.
 
         状态码缓存时间。
 
@@ -628,7 +628,7 @@ class ConfigsGetBody:
 
     @property
     def origin_range_status(self):
-        """Gets the origin_range_status of this ConfigsGetBody.
+        r"""Gets the origin_range_status of this ConfigsGetBody.
 
         Range回源，开启: on，off:关闭。
 
@@ -639,7 +639,7 @@ class ConfigsGetBody:
 
     @origin_range_status.setter
     def origin_range_status(self, origin_range_status):
-        """Sets the origin_range_status of this ConfigsGetBody.
+        r"""Sets the origin_range_status of this ConfigsGetBody.
 
         Range回源，开启: on，off:关闭。
 
@@ -650,7 +650,7 @@ class ConfigsGetBody:
 
     @property
     def user_agent_filter(self):
-        """Gets the user_agent_filter of this ConfigsGetBody.
+        r"""Gets the user_agent_filter of this ConfigsGetBody.
 
         :return: The user_agent_filter of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`
@@ -659,7 +659,7 @@ class ConfigsGetBody:
 
     @user_agent_filter.setter
     def user_agent_filter(self, user_agent_filter):
-        """Sets the user_agent_filter of this ConfigsGetBody.
+        r"""Sets the user_agent_filter of this ConfigsGetBody.
 
         :param user_agent_filter: The user_agent_filter of this ConfigsGetBody.
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`
@@ -668,7 +668,7 @@ class ConfigsGetBody:
 
     @property
     def origin_request_url_rewrite(self):
-        """Gets the origin_request_url_rewrite of this ConfigsGetBody.
+        r"""Gets the origin_request_url_rewrite of this ConfigsGetBody.
 
         改写回源URL。
 
@@ -679,7 +679,7 @@ class ConfigsGetBody:
 
     @origin_request_url_rewrite.setter
     def origin_request_url_rewrite(self, origin_request_url_rewrite):
-        """Sets the origin_request_url_rewrite of this ConfigsGetBody.
+        r"""Sets the origin_request_url_rewrite of this ConfigsGetBody.
 
         改写回源URL。
 
@@ -690,7 +690,7 @@ class ConfigsGetBody:
 
     @property
     def flexible_origin(self):
-        """Gets the flexible_origin of this ConfigsGetBody.
+        r"""Gets the flexible_origin of this ConfigsGetBody.
 
         高级回源。
 
@@ -701,7 +701,7 @@ class ConfigsGetBody:
 
     @flexible_origin.setter
     def flexible_origin(self, flexible_origin):
-        """Sets the flexible_origin of this ConfigsGetBody.
+        r"""Sets the flexible_origin of this ConfigsGetBody.
 
         高级回源。
 
@@ -712,7 +712,7 @@ class ConfigsGetBody:
 
     @property
     def slice_etag_status(self):
-        """Gets the slice_etag_status of this ConfigsGetBody.
+        r"""Gets the slice_etag_status of this ConfigsGetBody.
 
         回源是否校验ETag，on：开启，off：关闭。
 
@@ -723,7 +723,7 @@ class ConfigsGetBody:
 
     @slice_etag_status.setter
     def slice_etag_status(self, slice_etag_status):
-        """Sets the slice_etag_status of this ConfigsGetBody.
+        r"""Sets the slice_etag_status of this ConfigsGetBody.
 
         回源是否校验ETag，on：开启，off：关闭。
 
@@ -734,7 +734,7 @@ class ConfigsGetBody:
 
     @property
     def origin_receive_timeout(self):
-        """Gets the origin_receive_timeout of this ConfigsGetBody.
+        r"""Gets the origin_receive_timeout of this ConfigsGetBody.
 
         回源超时时间，单位：秒。
 
@@ -745,7 +745,7 @@ class ConfigsGetBody:
 
     @origin_receive_timeout.setter
     def origin_receive_timeout(self, origin_receive_timeout):
-        """Sets the origin_receive_timeout of this ConfigsGetBody.
+        r"""Sets the origin_receive_timeout of this ConfigsGetBody.
 
         回源超时时间，单位：秒。
 
@@ -756,7 +756,7 @@ class ConfigsGetBody:
 
     @property
     def remote_auth(self):
-        """Gets the remote_auth of this ConfigsGetBody.
+        r"""Gets the remote_auth of this ConfigsGetBody.
 
         :return: The remote_auth of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.CommonRemoteAuth`
@@ -765,7 +765,7 @@ class ConfigsGetBody:
 
     @remote_auth.setter
     def remote_auth(self, remote_auth):
-        """Sets the remote_auth of this ConfigsGetBody.
+        r"""Sets the remote_auth of this ConfigsGetBody.
 
         :param remote_auth: The remote_auth of this ConfigsGetBody.
         :type remote_auth: :class:`huaweicloudsdkcdn.v1.CommonRemoteAuth`
@@ -774,7 +774,7 @@ class ConfigsGetBody:
 
     @property
     def websocket(self):
-        """Gets the websocket of this ConfigsGetBody.
+        r"""Gets the websocket of this ConfigsGetBody.
 
         :return: The websocket of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.WebSocketSeek`
@@ -783,7 +783,7 @@ class ConfigsGetBody:
 
     @websocket.setter
     def websocket(self, websocket):
-        """Sets the websocket of this ConfigsGetBody.
+        r"""Sets the websocket of this ConfigsGetBody.
 
         :param websocket: The websocket of this ConfigsGetBody.
         :type websocket: :class:`huaweicloudsdkcdn.v1.WebSocketSeek`
@@ -792,7 +792,7 @@ class ConfigsGetBody:
 
     @property
     def video_seek(self):
-        """Gets the video_seek of this ConfigsGetBody.
+        r"""Gets the video_seek of this ConfigsGetBody.
 
         :return: The video_seek of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.VideoSeek`
@@ -801,7 +801,7 @@ class ConfigsGetBody:
 
     @video_seek.setter
     def video_seek(self, video_seek):
-        """Sets the video_seek of this ConfigsGetBody.
+        r"""Sets the video_seek of this ConfigsGetBody.
 
         :param video_seek: The video_seek of this ConfigsGetBody.
         :type video_seek: :class:`huaweicloudsdkcdn.v1.VideoSeek`
@@ -810,7 +810,7 @@ class ConfigsGetBody:
 
     @property
     def request_limit_rules(self):
-        """Gets the request_limit_rules of this ConfigsGetBody.
+        r"""Gets the request_limit_rules of this ConfigsGetBody.
 
         请求限速。
 
@@ -821,7 +821,7 @@ class ConfigsGetBody:
 
     @request_limit_rules.setter
     def request_limit_rules(self, request_limit_rules):
-        """Sets the request_limit_rules of this ConfigsGetBody.
+        r"""Sets the request_limit_rules of this ConfigsGetBody.
 
         请求限速。
 
@@ -832,7 +832,7 @@ class ConfigsGetBody:
 
     @property
     def ip_frequency_limit(self):
-        """Gets the ip_frequency_limit of this ConfigsGetBody.
+        r"""Gets the ip_frequency_limit of this ConfigsGetBody.
 
         :return: The ip_frequency_limit of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.IpFrequencyLimitQuery`
@@ -841,7 +841,7 @@ class ConfigsGetBody:
 
     @ip_frequency_limit.setter
     def ip_frequency_limit(self, ip_frequency_limit):
-        """Sets the ip_frequency_limit of this ConfigsGetBody.
+        r"""Sets the ip_frequency_limit of this ConfigsGetBody.
 
         :param ip_frequency_limit: The ip_frequency_limit of this ConfigsGetBody.
         :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v1.IpFrequencyLimitQuery`
@@ -850,7 +850,7 @@ class ConfigsGetBody:
 
     @property
     def hsts(self):
-        """Gets the hsts of this ConfigsGetBody.
+        r"""Gets the hsts of this ConfigsGetBody.
 
         :return: The hsts of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.HstsQuery`
@@ -859,7 +859,7 @@ class ConfigsGetBody:
 
     @hsts.setter
     def hsts(self, hsts):
-        """Sets the hsts of this ConfigsGetBody.
+        r"""Sets the hsts of this ConfigsGetBody.
 
         :param hsts: The hsts of this ConfigsGetBody.
         :type hsts: :class:`huaweicloudsdkcdn.v1.HstsQuery`
@@ -868,7 +868,7 @@ class ConfigsGetBody:
 
     @property
     def quic(self):
-        """Gets the quic of this ConfigsGetBody.
+        r"""Gets the quic of this ConfigsGetBody.
 
         :return: The quic of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Quic`
@@ -877,7 +877,7 @@ class ConfigsGetBody:
 
     @quic.setter
     def quic(self, quic):
-        """Sets the quic of this ConfigsGetBody.
+        r"""Sets the quic of this ConfigsGetBody.
 
         :param quic: The quic of this ConfigsGetBody.
         :type quic: :class:`huaweicloudsdkcdn.v1.Quic`
@@ -886,7 +886,7 @@ class ConfigsGetBody:
 
     @property
     def error_code_redirect_rules(self):
-        """Gets the error_code_redirect_rules of this ConfigsGetBody.
+        r"""Gets the error_code_redirect_rules of this ConfigsGetBody.
 
         自定义错误页面。
 
@@ -897,7 +897,7 @@ class ConfigsGetBody:
 
     @error_code_redirect_rules.setter
     def error_code_redirect_rules(self, error_code_redirect_rules):
-        """Sets the error_code_redirect_rules of this ConfigsGetBody.
+        r"""Sets the error_code_redirect_rules of this ConfigsGetBody.
 
         自定义错误页面。
 

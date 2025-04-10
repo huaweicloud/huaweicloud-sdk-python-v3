@@ -31,7 +31,7 @@ class AssetModelAddRequest:
     }
 
     def __init__(self, name=None, display_name=None, properties=None, analyses=None):
-        """AssetModelAddRequest
+        r"""AssetModelAddRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AssetModelAddRequest:
 
     @property
     def name(self):
-        """Gets the name of this AssetModelAddRequest.
+        r"""Gets the name of this AssetModelAddRequest.
 
         模型名称，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
@@ -74,7 +74,7 @@ class AssetModelAddRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetModelAddRequest.
+        r"""Sets the name of this AssetModelAddRequest.
 
         模型名称，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
@@ -85,7 +85,7 @@ class AssetModelAddRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AssetModelAddRequest.
+        r"""Gets the display_name of this AssetModelAddRequest.
 
         模型显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -96,7 +96,7 @@ class AssetModelAddRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AssetModelAddRequest.
+        r"""Sets the display_name of this AssetModelAddRequest.
 
         模型显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -107,7 +107,7 @@ class AssetModelAddRequest:
 
     @property
     def properties(self):
-        """Gets the properties of this AssetModelAddRequest.
+        r"""Gets the properties of this AssetModelAddRequest.
 
         属性集，最多200个
 
@@ -118,7 +118,7 @@ class AssetModelAddRequest:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AssetModelAddRequest.
+        r"""Sets the properties of this AssetModelAddRequest.
 
         属性集，最多200个
 
@@ -129,7 +129,7 @@ class AssetModelAddRequest:
 
     @property
     def analyses(self):
-        """Gets the analyses of this AssetModelAddRequest.
+        r"""Gets the analyses of this AssetModelAddRequest.
 
         分析任务集，最多50个
 
@@ -140,7 +140,7 @@ class AssetModelAddRequest:
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this AssetModelAddRequest.
+        r"""Sets the analyses of this AssetModelAddRequest.
 
         分析任务集，最多50个
 

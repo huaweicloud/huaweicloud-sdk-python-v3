@@ -28,7 +28,7 @@ class UpdateEventStreamingResponse(SdkResponse):
     }
 
     def __init__(self, event_streaming_id=None, x_request_id=None):
-        """UpdateEventStreamingResponse
+        r"""UpdateEventStreamingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateEventStreamingResponse(SdkResponse):
 
     @property
     def event_streaming_id(self):
-        """Gets the event_streaming_id of this UpdateEventStreamingResponse.
+        r"""Gets the event_streaming_id of this UpdateEventStreamingResponse.
 
         事件流ID
 
@@ -62,7 +62,7 @@ class UpdateEventStreamingResponse(SdkResponse):
 
     @event_streaming_id.setter
     def event_streaming_id(self, event_streaming_id):
-        """Sets the event_streaming_id of this UpdateEventStreamingResponse.
+        r"""Sets the event_streaming_id of this UpdateEventStreamingResponse.
 
         事件流ID
 
@@ -73,7 +73,7 @@ class UpdateEventStreamingResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateEventStreamingResponse.
+        r"""Gets the x_request_id of this UpdateEventStreamingResponse.
 
         :return: The x_request_id of this UpdateEventStreamingResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateEventStreamingResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateEventStreamingResponse.
+        r"""Sets the x_request_id of this UpdateEventStreamingResponse.
 
         :param x_request_id: The x_request_id of this UpdateEventStreamingResponse.
         :type x_request_id: str

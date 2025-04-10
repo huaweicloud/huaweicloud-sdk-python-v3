@@ -27,7 +27,7 @@ class AlternateIdentifierDto:
     }
 
     def __init__(self, external_id=None, unique_attribute=None):
-        """AlternateIdentifierDto
+        r"""AlternateIdentifierDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlternateIdentifierDto:
 
     @property
     def external_id(self):
-        """Gets the external_id of this AlternateIdentifierDto.
+        r"""Gets the external_id of this AlternateIdentifierDto.
 
         :return: The external_id of this AlternateIdentifierDto.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.ExternalIdDto`
@@ -59,7 +59,7 @@ class AlternateIdentifierDto:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this AlternateIdentifierDto.
+        r"""Sets the external_id of this AlternateIdentifierDto.
 
         :param external_id: The external_id of this AlternateIdentifierDto.
         :type external_id: :class:`huaweicloudsdkidentitycenterstore.v1.ExternalIdDto`
@@ -68,7 +68,7 @@ class AlternateIdentifierDto:
 
     @property
     def unique_attribute(self):
-        """Gets the unique_attribute of this AlternateIdentifierDto.
+        r"""Gets the unique_attribute of this AlternateIdentifierDto.
 
         :return: The unique_attribute of this AlternateIdentifierDto.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.UniqueAttributeDto`
@@ -77,7 +77,7 @@ class AlternateIdentifierDto:
 
     @unique_attribute.setter
     def unique_attribute(self, unique_attribute):
-        """Sets the unique_attribute of this AlternateIdentifierDto.
+        r"""Sets the unique_attribute of this AlternateIdentifierDto.
 
         :param unique_attribute: The unique_attribute of this AlternateIdentifierDto.
         :type unique_attribute: :class:`huaweicloudsdkidentitycenterstore.v1.UniqueAttributeDto`

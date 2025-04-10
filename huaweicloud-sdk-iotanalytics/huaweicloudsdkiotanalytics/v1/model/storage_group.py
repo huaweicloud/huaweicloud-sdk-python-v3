@@ -31,7 +31,7 @@ class StorageGroup:
     }
 
     def __init__(self, name=None, description=None, warm_data_retention_policy=None, cold_data_retention_policy=None):
-        """StorageGroup
+        r"""StorageGroup
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StorageGroup:
 
     @property
     def name(self):
-        """Gets the name of this StorageGroup.
+        r"""Gets the name of this StorageGroup.
 
         存储组名称
 
@@ -75,7 +75,7 @@ class StorageGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StorageGroup.
+        r"""Sets the name of this StorageGroup.
 
         存储组名称
 
@@ -86,7 +86,7 @@ class StorageGroup:
 
     @property
     def description(self):
-        """Gets the description of this StorageGroup.
+        r"""Gets the description of this StorageGroup.
 
         描述
 
@@ -97,7 +97,7 @@ class StorageGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StorageGroup.
+        r"""Sets the description of this StorageGroup.
 
         描述
 
@@ -108,7 +108,7 @@ class StorageGroup:
 
     @property
     def warm_data_retention_policy(self):
-        """Gets the warm_data_retention_policy of this StorageGroup.
+        r"""Gets the warm_data_retention_policy of this StorageGroup.
 
         温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -119,7 +119,7 @@ class StorageGroup:
 
     @warm_data_retention_policy.setter
     def warm_data_retention_policy(self, warm_data_retention_policy):
-        """Sets the warm_data_retention_policy of this StorageGroup.
+        r"""Sets the warm_data_retention_policy of this StorageGroup.
 
         温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -130,7 +130,7 @@ class StorageGroup:
 
     @property
     def cold_data_retention_policy(self):
-        """Gets the cold_data_retention_policy of this StorageGroup.
+        r"""Gets the cold_data_retention_policy of this StorageGroup.
 
         冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -141,7 +141,7 @@ class StorageGroup:
 
     @cold_data_retention_policy.setter
     def cold_data_retention_policy(self, cold_data_retention_policy):
-        """Sets the cold_data_retention_policy of this StorageGroup.
+        r"""Sets the cold_data_retention_policy of this StorageGroup.
 
         冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 

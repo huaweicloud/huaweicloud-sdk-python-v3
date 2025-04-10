@@ -47,7 +47,7 @@ class FirewallRule:
     }
 
     def __init__(self, action=None, description=None, destination_ip_address=None, destination_port=None, enabled=None, id=None, ip_version=None, name=None, operate_type=None, protocol=None, source_ip_address=None, source_port=None):
-        """FirewallRule
+        r"""FirewallRule
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class FirewallRule:
 
     @property
     def action(self):
-        """Gets the action of this FirewallRule.
+        r"""Gets the action of this FirewallRule.
 
         策略是否允许  取值范围：allow，deny，reject
 
@@ -120,7 +120,7 @@ class FirewallRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this FirewallRule.
+        r"""Sets the action of this FirewallRule.
 
         策略是否允许  取值范围：allow，deny，reject
 
@@ -131,7 +131,7 @@ class FirewallRule:
 
     @property
     def description(self):
-        """Gets the description of this FirewallRule.
+        r"""Gets the description of this FirewallRule.
 
         网络ACL规则描述。
 
@@ -142,7 +142,7 @@ class FirewallRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FirewallRule.
+        r"""Sets the description of this FirewallRule.
 
         网络ACL规则描述。
 
@@ -153,7 +153,7 @@ class FirewallRule:
 
     @property
     def destination_ip_address(self):
-        """Gets the destination_ip_address of this FirewallRule.
+        r"""Gets the destination_ip_address of this FirewallRule.
 
         目的地IP地址，IPv4或IPv6的CIDR格式
 
@@ -164,7 +164,7 @@ class FirewallRule:
 
     @destination_ip_address.setter
     def destination_ip_address(self, destination_ip_address):
-        """Sets the destination_ip_address of this FirewallRule.
+        r"""Sets the destination_ip_address of this FirewallRule.
 
         目的地IP地址，IPv4或IPv6的CIDR格式
 
@@ -175,7 +175,7 @@ class FirewallRule:
 
     @property
     def destination_port(self):
-        """Gets the destination_port of this FirewallRule.
+        r"""Gets the destination_port of this FirewallRule.
 
         目的地端口范围  取值范围：整数，比如80，或者以\"-\"隔开的范围，比如80-90
 
@@ -186,7 +186,7 @@ class FirewallRule:
 
     @destination_port.setter
     def destination_port(self, destination_port):
-        """Sets the destination_port of this FirewallRule.
+        r"""Sets the destination_port of this FirewallRule.
 
         目的地端口范围  取值范围：整数，比如80，或者以\"-\"隔开的范围，比如80-90
 
@@ -197,7 +197,7 @@ class FirewallRule:
 
     @property
     def enabled(self):
-        """Gets the enabled of this FirewallRule.
+        r"""Gets the enabled of this FirewallRule.
 
         网络ACL规则使能开关。  取值范围：true，false
 
@@ -208,7 +208,7 @@ class FirewallRule:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this FirewallRule.
+        r"""Sets the enabled of this FirewallRule.
 
         网络ACL规则使能开关。  取值范围：true，false
 
@@ -219,7 +219,7 @@ class FirewallRule:
 
     @property
     def id(self):
-        """Gets the id of this FirewallRule.
+        r"""Gets the id of this FirewallRule.
 
         网络ACL规则ID。  进行更新规则时，如果operate_type为add，则该值为空。
 
@@ -230,7 +230,7 @@ class FirewallRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FirewallRule.
+        r"""Sets the id of this FirewallRule.
 
         网络ACL规则ID。  进行更新规则时，如果operate_type为add，则该值为空。
 
@@ -241,7 +241,7 @@ class FirewallRule:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this FirewallRule.
+        r"""Gets the ip_version of this FirewallRule.
 
         IP协议版本  取值范围：4、6
 
@@ -252,7 +252,7 @@ class FirewallRule:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this FirewallRule.
+        r"""Sets the ip_version of this FirewallRule.
 
         IP协议版本  取值范围：4、6
 
@@ -263,7 +263,7 @@ class FirewallRule:
 
     @property
     def name(self):
-        """Gets the name of this FirewallRule.
+        r"""Gets the name of this FirewallRule.
 
         网络ACL规则名称。
 
@@ -274,7 +274,7 @@ class FirewallRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FirewallRule.
+        r"""Sets the name of this FirewallRule.
 
         网络ACL规则名称。
 
@@ -285,7 +285,7 @@ class FirewallRule:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this FirewallRule.
+        r"""Gets the operate_type of this FirewallRule.
 
         网络ACL规则操作状态，作为请求时取值为\"add\"/\"modify\"/\"delete\"，作为返回值时为\"normal\"。 当请求更新规则时，本参数值为delete时，除id之外，本请求体其他参数均可为空。
 
@@ -296,7 +296,7 @@ class FirewallRule:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this FirewallRule.
+        r"""Sets the operate_type of this FirewallRule.
 
         网络ACL规则操作状态，作为请求时取值为\"add\"/\"modify\"/\"delete\"，作为返回值时为\"normal\"。 当请求更新规则时，本参数值为delete时，除id之外，本请求体其他参数均可为空。
 
@@ -307,7 +307,7 @@ class FirewallRule:
 
     @property
     def protocol(self):
-        """Gets the protocol of this FirewallRule.
+        r"""Gets the protocol of this FirewallRule.
 
         IP协议，为any时代表所有协议  取值范围：icmp，tcp，udp，[icmpv6，](tag:hide)any 
 
@@ -318,7 +318,7 @@ class FirewallRule:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this FirewallRule.
+        r"""Sets the protocol of this FirewallRule.
 
         IP协议，为any时代表所有协议  取值范围：icmp，tcp，udp，[icmpv6，](tag:hide)any 
 
@@ -329,7 +329,7 @@ class FirewallRule:
 
     @property
     def source_ip_address(self):
-        """Gets the source_ip_address of this FirewallRule.
+        r"""Gets the source_ip_address of this FirewallRule.
 
         源IP地址，IPv4或IPv6的CIDR格式
 
@@ -340,7 +340,7 @@ class FirewallRule:
 
     @source_ip_address.setter
     def source_ip_address(self, source_ip_address):
-        """Sets the source_ip_address of this FirewallRule.
+        r"""Sets the source_ip_address of this FirewallRule.
 
         源IP地址，IPv4或IPv6的CIDR格式
 
@@ -351,7 +351,7 @@ class FirewallRule:
 
     @property
     def source_port(self):
-        """Gets the source_port of this FirewallRule.
+        r"""Gets the source_port of this FirewallRule.
 
         源地端口范围  取值范围：整数，比如80，或者以\"-\"隔开的范围，比如80-90
 
@@ -362,7 +362,7 @@ class FirewallRule:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this FirewallRule.
+        r"""Sets the source_port of this FirewallRule.
 
         源地端口范围  取值范围：整数，比如80，或者以\"-\"隔开的范围，比如80-90
 

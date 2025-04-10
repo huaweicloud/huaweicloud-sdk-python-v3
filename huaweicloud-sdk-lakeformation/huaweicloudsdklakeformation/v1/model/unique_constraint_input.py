@@ -35,7 +35,7 @@ class UniqueConstraintInput:
     }
 
     def __init__(self, column_name=None, constraint_name=None, key_sequence=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """UniqueConstraintInput
+        r"""UniqueConstraintInput
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class UniqueConstraintInput:
 
     @property
     def column_name(self):
-        """Gets the column_name of this UniqueConstraintInput.
+        r"""Gets the column_name of this UniqueConstraintInput.
 
         列名
 
@@ -84,7 +84,7 @@ class UniqueConstraintInput:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this UniqueConstraintInput.
+        r"""Sets the column_name of this UniqueConstraintInput.
 
         列名
 
@@ -95,7 +95,7 @@ class UniqueConstraintInput:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this UniqueConstraintInput.
+        r"""Gets the constraint_name of this UniqueConstraintInput.
 
         constraint Name
 
@@ -106,7 +106,7 @@ class UniqueConstraintInput:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this UniqueConstraintInput.
+        r"""Sets the constraint_name of this UniqueConstraintInput.
 
         constraint Name
 
@@ -117,7 +117,7 @@ class UniqueConstraintInput:
 
     @property
     def key_sequence(self):
-        """Gets the key_sequence of this UniqueConstraintInput.
+        r"""Gets the key_sequence of this UniqueConstraintInput.
 
         列序号（限制条件中第几位）
 
@@ -128,7 +128,7 @@ class UniqueConstraintInput:
 
     @key_sequence.setter
     def key_sequence(self, key_sequence):
-        """Sets the key_sequence of this UniqueConstraintInput.
+        r"""Sets the key_sequence of this UniqueConstraintInput.
 
         列序号（限制条件中第几位）
 
@@ -139,7 +139,7 @@ class UniqueConstraintInput:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this UniqueConstraintInput.
+        r"""Gets the enable_constraint of this UniqueConstraintInput.
 
         enable constraint
 
@@ -150,7 +150,7 @@ class UniqueConstraintInput:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this UniqueConstraintInput.
+        r"""Sets the enable_constraint of this UniqueConstraintInput.
 
         enable constraint
 
@@ -161,7 +161,7 @@ class UniqueConstraintInput:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this UniqueConstraintInput.
+        r"""Gets the rely_constraint of this UniqueConstraintInput.
 
         constraint is rely when Query
 
@@ -172,7 +172,7 @@ class UniqueConstraintInput:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this UniqueConstraintInput.
+        r"""Sets the rely_constraint of this UniqueConstraintInput.
 
         constraint is rely when Query
 
@@ -183,7 +183,7 @@ class UniqueConstraintInput:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this UniqueConstraintInput.
+        r"""Gets the validate_constraint of this UniqueConstraintInput.
 
         constraint is validated
 
@@ -194,7 +194,7 @@ class UniqueConstraintInput:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this UniqueConstraintInput.
+        r"""Sets the validate_constraint of this UniqueConstraintInput.
 
         constraint is validated
 

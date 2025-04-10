@@ -29,7 +29,7 @@ class ListTagKeysRequest:
     }
 
     def __init__(self, region_id=None, limit=None, marker=None):
-        """ListTagKeysRequest
+        r"""ListTagKeysRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTagKeysRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListTagKeysRequest.
+        r"""Gets the region_id of this ListTagKeysRequest.
 
         区域ID
 
@@ -68,7 +68,7 @@ class ListTagKeysRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListTagKeysRequest.
+        r"""Sets the region_id of this ListTagKeysRequest.
 
         区域ID
 
@@ -79,7 +79,7 @@ class ListTagKeysRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagKeysRequest.
+        r"""Gets the limit of this ListTagKeysRequest.
 
         查询记录数。 最小为1，最大为200，未输入时默认为200。
 
@@ -90,7 +90,7 @@ class ListTagKeysRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagKeysRequest.
+        r"""Sets the limit of this ListTagKeysRequest.
 
         查询记录数。 最小为1，最大为200，未输入时默认为200。
 
@@ -101,7 +101,7 @@ class ListTagKeysRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTagKeysRequest.
+        r"""Gets the marker of this ListTagKeysRequest.
 
         分页位置标识（索引）。 从marker指定索引的下一条数据开始查询。 说明： 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数，当返回的next_marker为空时表示查询到最后一页。
 
@@ -112,7 +112,7 @@ class ListTagKeysRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTagKeysRequest.
+        r"""Sets the marker of this ListTagKeysRequest.
 
         分页位置标识（索引）。 从marker指定索引的下一条数据开始查询。 说明： 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数，当返回的next_marker为空时表示查询到最后一页。
 

@@ -27,7 +27,7 @@ class UpdateSqlLimitRuleOption:
     }
 
     def __init__(self, max_concurrency=None, max_waiting=None):
-        """UpdateSqlLimitRuleOption
+        r"""UpdateSqlLimitRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSqlLimitRuleOption:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this UpdateSqlLimitRuleOption.
+        r"""Gets the max_concurrency of this UpdateSqlLimitRuleOption.
 
         最大并发数
 
@@ -60,7 +60,7 @@ class UpdateSqlLimitRuleOption:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this UpdateSqlLimitRuleOption.
+        r"""Sets the max_concurrency of this UpdateSqlLimitRuleOption.
 
         最大并发数
 
@@ -71,7 +71,7 @@ class UpdateSqlLimitRuleOption:
 
     @property
     def max_waiting(self):
-        """Gets the max_waiting of this UpdateSqlLimitRuleOption.
+        r"""Gets the max_waiting of this UpdateSqlLimitRuleOption.
 
         最大等待时间
 
@@ -82,7 +82,7 @@ class UpdateSqlLimitRuleOption:
 
     @max_waiting.setter
     def max_waiting(self, max_waiting):
-        """Sets the max_waiting of this UpdateSqlLimitRuleOption.
+        r"""Sets the max_waiting of this UpdateSqlLimitRuleOption.
 
         最大等待时间
 

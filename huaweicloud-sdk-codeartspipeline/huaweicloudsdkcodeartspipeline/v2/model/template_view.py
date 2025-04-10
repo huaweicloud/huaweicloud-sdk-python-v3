@@ -67,7 +67,7 @@ class TemplateView:
     }
 
     def __init__(self, template_id=None, template_name=None, template_type=None, template_url=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, create_time=None, last_modify_time=None, is_watch=None, description=None, parameter=None, flow=None, states=None, can_update=None, can_delete=None, need_hub=None):
-        """TemplateView
+        r"""TemplateView
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class TemplateView:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TemplateView.
+        r"""Gets the template_id of this TemplateView.
 
         模板ID
 
@@ -179,7 +179,7 @@ class TemplateView:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TemplateView.
+        r"""Sets the template_id of this TemplateView.
 
         模板ID
 
@@ -190,7 +190,7 @@ class TemplateView:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TemplateView.
+        r"""Gets the template_name of this TemplateView.
 
         模板名字
 
@@ -201,7 +201,7 @@ class TemplateView:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TemplateView.
+        r"""Sets the template_name of this TemplateView.
 
         模板名字
 
@@ -212,7 +212,7 @@ class TemplateView:
 
     @property
     def template_type(self):
-        """Gets the template_type of this TemplateView.
+        r"""Gets the template_type of this TemplateView.
 
         模板类型
 
@@ -223,7 +223,7 @@ class TemplateView:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this TemplateView.
+        r"""Sets the template_type of this TemplateView.
 
         模板类型
 
@@ -234,7 +234,7 @@ class TemplateView:
 
     @property
     def template_url(self):
-        """Gets the template_url of this TemplateView.
+        r"""Gets the template_url of this TemplateView.
 
         模板编辑URL
 
@@ -245,7 +245,7 @@ class TemplateView:
 
     @template_url.setter
     def template_url(self, template_url):
-        """Sets the template_url of this TemplateView.
+        r"""Sets the template_url of this TemplateView.
 
         模板编辑URL
 
@@ -256,7 +256,7 @@ class TemplateView:
 
     @property
     def user_id(self):
-        """Gets the user_id of this TemplateView.
+        r"""Gets the user_id of this TemplateView.
 
         用户ID
 
@@ -267,7 +267,7 @@ class TemplateView:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this TemplateView.
+        r"""Sets the user_id of this TemplateView.
 
         用户ID
 
@@ -278,7 +278,7 @@ class TemplateView:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TemplateView.
+        r"""Gets the user_name of this TemplateView.
 
         用户名字
 
@@ -289,7 +289,7 @@ class TemplateView:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TemplateView.
+        r"""Sets the user_name of this TemplateView.
 
         用户名字
 
@@ -300,7 +300,7 @@ class TemplateView:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this TemplateView.
+        r"""Gets the domain_id of this TemplateView.
 
         租户ID
 
@@ -311,7 +311,7 @@ class TemplateView:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this TemplateView.
+        r"""Sets the domain_id of this TemplateView.
 
         租户ID
 
@@ -322,7 +322,7 @@ class TemplateView:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this TemplateView.
+        r"""Gets the domain_name of this TemplateView.
 
         租户名字
 
@@ -333,7 +333,7 @@ class TemplateView:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this TemplateView.
+        r"""Sets the domain_name of this TemplateView.
 
         租户名字
 
@@ -344,7 +344,7 @@ class TemplateView:
 
     @property
     def is_build_in(self):
-        """Gets the is_build_in of this TemplateView.
+        r"""Gets the is_build_in of this TemplateView.
 
         是否内置模板
 
@@ -355,7 +355,7 @@ class TemplateView:
 
     @is_build_in.setter
     def is_build_in(self, is_build_in):
-        """Sets the is_build_in of this TemplateView.
+        r"""Sets the is_build_in of this TemplateView.
 
         是否内置模板
 
@@ -366,7 +366,7 @@ class TemplateView:
 
     @property
     def region(self):
-        """Gets the region of this TemplateView.
+        r"""Gets the region of this TemplateView.
 
         系统模板region为Cloud Pipeline。自定义模板region为实际region
 
@@ -377,7 +377,7 @@ class TemplateView:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TemplateView.
+        r"""Sets the region of this TemplateView.
 
         系统模板region为Cloud Pipeline。自定义模板region为实际region
 
@@ -388,7 +388,7 @@ class TemplateView:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TemplateView.
+        r"""Gets the project_id of this TemplateView.
 
         项目ID
 
@@ -399,7 +399,7 @@ class TemplateView:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TemplateView.
+        r"""Sets the project_id of this TemplateView.
 
         项目ID
 
@@ -410,7 +410,7 @@ class TemplateView:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TemplateView.
+        r"""Gets the project_name of this TemplateView.
 
         项目名字
 
@@ -421,7 +421,7 @@ class TemplateView:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TemplateView.
+        r"""Sets the project_name of this TemplateView.
 
         项目名字
 
@@ -432,7 +432,7 @@ class TemplateView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TemplateView.
+        r"""Gets the create_time of this TemplateView.
 
         创建时间
 
@@ -443,7 +443,7 @@ class TemplateView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TemplateView.
+        r"""Sets the create_time of this TemplateView.
 
         创建时间
 
@@ -454,7 +454,7 @@ class TemplateView:
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this TemplateView.
+        r"""Gets the last_modify_time of this TemplateView.
 
         修改时间
 
@@ -465,7 +465,7 @@ class TemplateView:
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this TemplateView.
+        r"""Sets the last_modify_time of this TemplateView.
 
         修改时间
 
@@ -476,7 +476,7 @@ class TemplateView:
 
     @property
     def is_watch(self):
-        """Gets the is_watch of this TemplateView.
+        r"""Gets the is_watch of this TemplateView.
 
         是否关注
 
@@ -487,7 +487,7 @@ class TemplateView:
 
     @is_watch.setter
     def is_watch(self, is_watch):
-        """Sets the is_watch of this TemplateView.
+        r"""Sets the is_watch of this TemplateView.
 
         是否关注
 
@@ -498,7 +498,7 @@ class TemplateView:
 
     @property
     def description(self):
-        """Gets the description of this TemplateView.
+        r"""Gets the description of this TemplateView.
 
         模板描述
 
@@ -509,7 +509,7 @@ class TemplateView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateView.
+        r"""Sets the description of this TemplateView.
 
         模板描述
 
@@ -520,7 +520,7 @@ class TemplateView:
 
     @property
     def parameter(self):
-        """Gets the parameter of this TemplateView.
+        r"""Gets the parameter of this TemplateView.
 
         模板参数
 
@@ -531,7 +531,7 @@ class TemplateView:
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this TemplateView.
+        r"""Sets the parameter of this TemplateView.
 
         模板参数
 
@@ -542,7 +542,7 @@ class TemplateView:
 
     @property
     def flow(self):
-        """Gets the flow of this TemplateView.
+        r"""Gets the flow of this TemplateView.
 
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -553,7 +553,7 @@ class TemplateView:
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this TemplateView.
+        r"""Sets the flow of this TemplateView.
 
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -564,7 +564,7 @@ class TemplateView:
 
     @property
     def states(self):
-        """Gets the states of this TemplateView.
+        r"""Gets the states of this TemplateView.
 
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -575,7 +575,7 @@ class TemplateView:
 
     @states.setter
     def states(self, states):
-        """Sets the states of this TemplateView.
+        r"""Sets the states of this TemplateView.
 
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -586,7 +586,7 @@ class TemplateView:
 
     @property
     def can_update(self):
-        """Gets the can_update of this TemplateView.
+        r"""Gets the can_update of this TemplateView.
 
         是否可以修改
 
@@ -597,7 +597,7 @@ class TemplateView:
 
     @can_update.setter
     def can_update(self, can_update):
-        """Sets the can_update of this TemplateView.
+        r"""Sets the can_update of this TemplateView.
 
         是否可以修改
 
@@ -608,7 +608,7 @@ class TemplateView:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this TemplateView.
+        r"""Gets the can_delete of this TemplateView.
 
         是否可以删除
 
@@ -619,7 +619,7 @@ class TemplateView:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this TemplateView.
+        r"""Sets the can_delete of this TemplateView.
 
         是否可以删除
 
@@ -630,7 +630,7 @@ class TemplateView:
 
     @property
     def need_hub(self):
-        """Gets the need_hub of this TemplateView.
+        r"""Gets the need_hub of this TemplateView.
 
         是否需要代码仓库
 
@@ -641,7 +641,7 @@ class TemplateView:
 
     @need_hub.setter
     def need_hub(self, need_hub):
-        """Sets the need_hub of this TemplateView.
+        r"""Sets the need_hub of this TemplateView.
 
         是否需要代码仓库
 

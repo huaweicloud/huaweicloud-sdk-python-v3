@@ -27,7 +27,7 @@ class InitTargetServer:
     }
 
     def __init__(self, disks=None, volume_groups=None):
-        """InitTargetServer
+        r"""InitTargetServer
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InitTargetServer:
 
     @property
     def disks(self):
-        """Gets the disks of this InitTargetServer.
+        r"""Gets the disks of this InitTargetServer.
 
         推荐的目的端服务器的磁盘信息
 
@@ -60,7 +60,7 @@ class InitTargetServer:
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this InitTargetServer.
+        r"""Sets the disks of this InitTargetServer.
 
         推荐的目的端服务器的磁盘信息
 
@@ -71,7 +71,7 @@ class InitTargetServer:
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this InitTargetServer.
+        r"""Gets the volume_groups of this InitTargetServer.
 
         Linux必选，如果没有卷组，输入[]
 
@@ -82,7 +82,7 @@ class InitTargetServer:
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this InitTargetServer.
+        r"""Sets the volume_groups of this InitTargetServer.
 
         Linux必选，如果没有卷组，输入[]
 

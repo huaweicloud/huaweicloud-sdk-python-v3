@@ -25,7 +25,7 @@ class AddSourcesToTrafficMirrorSessionRequestBody:
     }
 
     def __init__(self, traffic_mirror_session=None):
-        """AddSourcesToTrafficMirrorSessionRequestBody
+        r"""AddSourcesToTrafficMirrorSessionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddSourcesToTrafficMirrorSessionRequestBody:
 
     @property
     def traffic_mirror_session(self):
-        """Gets the traffic_mirror_session of this AddSourcesToTrafficMirrorSessionRequestBody.
+        r"""Gets the traffic_mirror_session of this AddSourcesToTrafficMirrorSessionRequestBody.
 
         :return: The traffic_mirror_session of this AddSourcesToTrafficMirrorSessionRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.TrafficMirrorSourcesOption`
@@ -51,7 +51,7 @@ class AddSourcesToTrafficMirrorSessionRequestBody:
 
     @traffic_mirror_session.setter
     def traffic_mirror_session(self, traffic_mirror_session):
-        """Sets the traffic_mirror_session of this AddSourcesToTrafficMirrorSessionRequestBody.
+        r"""Sets the traffic_mirror_session of this AddSourcesToTrafficMirrorSessionRequestBody.
 
         :param traffic_mirror_session: The traffic_mirror_session of this AddSourcesToTrafficMirrorSessionRequestBody.
         :type traffic_mirror_session: :class:`huaweicloudsdkvpc.v3.TrafficMirrorSourcesOption`

@@ -35,7 +35,7 @@ class GlanceImageMembers:
     }
 
     def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):
-        """GlanceImageMembers
+        r"""GlanceImageMembers
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class GlanceImageMembers:
 
     @property
     def status(self):
-        """Gets the status of this GlanceImageMembers.
+        r"""Gets the status of this GlanceImageMembers.
 
         共享状态。
 
@@ -83,7 +83,7 @@ class GlanceImageMembers:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlanceImageMembers.
+        r"""Sets the status of this GlanceImageMembers.
 
         共享状态。
 
@@ -94,7 +94,7 @@ class GlanceImageMembers:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlanceImageMembers.
+        r"""Gets the created_at of this GlanceImageMembers.
 
         共享时间，格式为UTC时间。
 
@@ -105,7 +105,7 @@ class GlanceImageMembers:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlanceImageMembers.
+        r"""Sets the created_at of this GlanceImageMembers.
 
         共享时间，格式为UTC时间。
 
@@ -116,7 +116,7 @@ class GlanceImageMembers:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlanceImageMembers.
+        r"""Gets the updated_at of this GlanceImageMembers.
 
         更新时间，格式为UTC时间。
 
@@ -127,7 +127,7 @@ class GlanceImageMembers:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlanceImageMembers.
+        r"""Sets the updated_at of this GlanceImageMembers.
 
         更新时间，格式为UTC时间。
 
@@ -138,7 +138,7 @@ class GlanceImageMembers:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceImageMembers.
+        r"""Gets the image_id of this GlanceImageMembers.
 
         镜像ID。
 
@@ -149,7 +149,7 @@ class GlanceImageMembers:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceImageMembers.
+        r"""Sets the image_id of this GlanceImageMembers.
 
         镜像ID。
 
@@ -160,7 +160,7 @@ class GlanceImageMembers:
 
     @property
     def member_id(self):
-        """Gets the member_id of this GlanceImageMembers.
+        r"""Gets the member_id of this GlanceImageMembers.
 
         成员ID。
 
@@ -171,7 +171,7 @@ class GlanceImageMembers:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GlanceImageMembers.
+        r"""Sets the member_id of this GlanceImageMembers.
 
         成员ID。
 
@@ -182,7 +182,7 @@ class GlanceImageMembers:
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceImageMembers.
+        r"""Gets the schema of this GlanceImageMembers.
 
         共享视图。
 
@@ -193,7 +193,7 @@ class GlanceImageMembers:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceImageMembers.
+        r"""Sets the schema of this GlanceImageMembers.
 
         共享视图。
 

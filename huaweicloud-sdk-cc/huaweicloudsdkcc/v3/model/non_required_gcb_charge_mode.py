@@ -25,7 +25,7 @@ class NonRequiredGcbChargeMode:
     }
 
     def __init__(self, charge_mode=None):
-        """NonRequiredGcbChargeMode
+        r"""NonRequiredGcbChargeMode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NonRequiredGcbChargeMode:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this NonRequiredGcbChargeMode.
+        r"""Gets the charge_mode of this NonRequiredGcbChargeMode.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -54,7 +54,7 @@ class NonRequiredGcbChargeMode:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this NonRequiredGcbChargeMode.
+        r"""Sets the charge_mode of this NonRequiredGcbChargeMode.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 

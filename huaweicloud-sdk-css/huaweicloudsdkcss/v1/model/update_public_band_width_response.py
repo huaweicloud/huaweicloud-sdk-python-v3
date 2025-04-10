@@ -24,7 +24,7 @@ class UpdatePublicBandWidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePublicBandWidthResponse
+        r"""UpdatePublicBandWidthResponse
 
         The model defined in huaweicloud sdk
 

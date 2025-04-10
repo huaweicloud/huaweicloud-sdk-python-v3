@@ -28,7 +28,7 @@ class RecognizeAcceptanceBillResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeAcceptanceBillResponse
+        r"""RecognizeAcceptanceBillResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeAcceptanceBillResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeAcceptanceBillResponse.
+        r"""Gets the result of this RecognizeAcceptanceBillResponse.
 
         :return: The result of this RecognizeAcceptanceBillResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.AcceptanceBillResult`
@@ -60,7 +60,7 @@ class RecognizeAcceptanceBillResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeAcceptanceBillResponse.
+        r"""Sets the result of this RecognizeAcceptanceBillResponse.
 
         :param result: The result of this RecognizeAcceptanceBillResponse.
         :type result: :class:`huaweicloudsdkocr.v1.AcceptanceBillResult`
@@ -69,7 +69,7 @@ class RecognizeAcceptanceBillResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeAcceptanceBillResponse.
+        r"""Gets the x_request_id of this RecognizeAcceptanceBillResponse.
 
         :return: The x_request_id of this RecognizeAcceptanceBillResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeAcceptanceBillResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeAcceptanceBillResponse.
+        r"""Sets the x_request_id of this RecognizeAcceptanceBillResponse.
 
         :param x_request_id: The x_request_id of this RecognizeAcceptanceBillResponse.
         :type x_request_id: str

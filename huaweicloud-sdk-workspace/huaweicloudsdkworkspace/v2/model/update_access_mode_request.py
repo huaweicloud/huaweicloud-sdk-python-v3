@@ -27,7 +27,7 @@ class UpdateAccessModeRequest:
     }
 
     def __init__(self, site_id=None, body=None):
-        """UpdateAccessModeRequest
+        r"""UpdateAccessModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAccessModeRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this UpdateAccessModeRequest.
+        r"""Gets the site_id of this UpdateAccessModeRequest.
 
         站点ID。
 
@@ -60,7 +60,7 @@ class UpdateAccessModeRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this UpdateAccessModeRequest.
+        r"""Sets the site_id of this UpdateAccessModeRequest.
 
         站点ID。
 
@@ -71,7 +71,7 @@ class UpdateAccessModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAccessModeRequest.
+        r"""Gets the body of this UpdateAccessModeRequest.
 
         :return: The body of this UpdateAccessModeRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAccessModeReq`
@@ -80,7 +80,7 @@ class UpdateAccessModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAccessModeRequest.
+        r"""Sets the body of this UpdateAccessModeRequest.
 
         :param body: The body of this UpdateAccessModeRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateAccessModeReq`

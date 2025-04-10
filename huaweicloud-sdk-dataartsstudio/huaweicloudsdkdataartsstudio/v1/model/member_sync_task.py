@@ -67,7 +67,7 @@ class MemberSyncTask:
     }
 
     def __init__(self, id=None, project_id=None, domain_id=None, instance_id=None, data_connection_workspace=None, cluster_type=None, data_connection_id=None, data_connection_name=None, cluster_id=None, cluster_name=None, schedule_start_hour=None, schedule_end_hour=None, schedule_period=None, schedule_interval=None, schedule_status=None, sync_status=None, sync_msg=None, sync_time=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """MemberSyncTask
+        r"""MemberSyncTask
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class MemberSyncTask:
 
     @property
     def id(self):
-        """Gets the id of this MemberSyncTask.
+        r"""Gets the id of this MemberSyncTask.
 
         用户同步任务id。
 
@@ -201,7 +201,7 @@ class MemberSyncTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MemberSyncTask.
+        r"""Sets the id of this MemberSyncTask.
 
         用户同步任务id。
 
@@ -212,7 +212,7 @@ class MemberSyncTask:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MemberSyncTask.
+        r"""Gets the project_id of this MemberSyncTask.
 
         项目ID。
 
@@ -223,7 +223,7 @@ class MemberSyncTask:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MemberSyncTask.
+        r"""Sets the project_id of this MemberSyncTask.
 
         项目ID。
 
@@ -234,7 +234,7 @@ class MemberSyncTask:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this MemberSyncTask.
+        r"""Gets the domain_id of this MemberSyncTask.
 
         租户ID。
 
@@ -245,7 +245,7 @@ class MemberSyncTask:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this MemberSyncTask.
+        r"""Sets the domain_id of this MemberSyncTask.
 
         租户ID。
 
@@ -256,7 +256,7 @@ class MemberSyncTask:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MemberSyncTask.
+        r"""Gets the instance_id of this MemberSyncTask.
 
         实例ID。
 
@@ -267,7 +267,7 @@ class MemberSyncTask:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MemberSyncTask.
+        r"""Sets the instance_id of this MemberSyncTask.
 
         实例ID。
 
@@ -278,7 +278,7 @@ class MemberSyncTask:
 
     @property
     def data_connection_workspace(self):
-        """Gets the data_connection_workspace of this MemberSyncTask.
+        r"""Gets the data_connection_workspace of this MemberSyncTask.
 
         数据连接工作空间ID。
 
@@ -289,7 +289,7 @@ class MemberSyncTask:
 
     @data_connection_workspace.setter
     def data_connection_workspace(self, data_connection_workspace):
-        """Sets the data_connection_workspace of this MemberSyncTask.
+        r"""Sets the data_connection_workspace of this MemberSyncTask.
 
         数据连接工作空间ID。
 
@@ -300,7 +300,7 @@ class MemberSyncTask:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this MemberSyncTask.
+        r"""Gets the cluster_type of this MemberSyncTask.
 
         集群类型 * MRS集群 * DWS集群
 
@@ -311,7 +311,7 @@ class MemberSyncTask:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this MemberSyncTask.
+        r"""Sets the cluster_type of this MemberSyncTask.
 
         集群类型 * MRS集群 * DWS集群
 
@@ -322,7 +322,7 @@ class MemberSyncTask:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this MemberSyncTask.
+        r"""Gets the data_connection_id of this MemberSyncTask.
 
         数据连接id。
 
@@ -333,7 +333,7 @@ class MemberSyncTask:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this MemberSyncTask.
+        r"""Sets the data_connection_id of this MemberSyncTask.
 
         数据连接id。
 
@@ -344,7 +344,7 @@ class MemberSyncTask:
 
     @property
     def data_connection_name(self):
-        """Gets the data_connection_name of this MemberSyncTask.
+        r"""Gets the data_connection_name of this MemberSyncTask.
 
         数据连接名称。
 
@@ -355,7 +355,7 @@ class MemberSyncTask:
 
     @data_connection_name.setter
     def data_connection_name(self, data_connection_name):
-        """Sets the data_connection_name of this MemberSyncTask.
+        r"""Sets the data_connection_name of this MemberSyncTask.
 
         数据连接名称。
 
@@ -366,7 +366,7 @@ class MemberSyncTask:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MemberSyncTask.
+        r"""Gets the cluster_id of this MemberSyncTask.
 
         集群id。
 
@@ -377,7 +377,7 @@ class MemberSyncTask:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MemberSyncTask.
+        r"""Sets the cluster_id of this MemberSyncTask.
 
         集群id。
 
@@ -388,7 +388,7 @@ class MemberSyncTask:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this MemberSyncTask.
+        r"""Gets the cluster_name of this MemberSyncTask.
 
         集群名称。
 
@@ -399,7 +399,7 @@ class MemberSyncTask:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this MemberSyncTask.
+        r"""Sets the cluster_name of this MemberSyncTask.
 
         集群名称。
 
@@ -410,7 +410,7 @@ class MemberSyncTask:
 
     @property
     def schedule_start_hour(self):
-        """Gets the schedule_start_hour of this MemberSyncTask.
+        r"""Gets the schedule_start_hour of this MemberSyncTask.
 
         调度开始时间, 单位为小时, 0~23。
 
@@ -421,7 +421,7 @@ class MemberSyncTask:
 
     @schedule_start_hour.setter
     def schedule_start_hour(self, schedule_start_hour):
-        """Sets the schedule_start_hour of this MemberSyncTask.
+        r"""Sets the schedule_start_hour of this MemberSyncTask.
 
         调度开始时间, 单位为小时, 0~23。
 
@@ -432,7 +432,7 @@ class MemberSyncTask:
 
     @property
     def schedule_end_hour(self):
-        """Gets the schedule_end_hour of this MemberSyncTask.
+        r"""Gets the schedule_end_hour of this MemberSyncTask.
 
         调度结束时间, 单位为小时, 0~23。
 
@@ -443,7 +443,7 @@ class MemberSyncTask:
 
     @schedule_end_hour.setter
     def schedule_end_hour(self, schedule_end_hour):
-        """Sets the schedule_end_hour of this MemberSyncTask.
+        r"""Sets the schedule_end_hour of this MemberSyncTask.
 
         调度结束时间, 单位为小时, 0~23。
 
@@ -454,7 +454,7 @@ class MemberSyncTask:
 
     @property
     def schedule_period(self):
-        """Gets the schedule_period of this MemberSyncTask.
+        r"""Gets the schedule_period of this MemberSyncTask.
 
         调度周期 * MINUTE  分钟为单位调度 * HOUR    小时为单位调度
 
@@ -465,7 +465,7 @@ class MemberSyncTask:
 
     @schedule_period.setter
     def schedule_period(self, schedule_period):
-        """Sets the schedule_period of this MemberSyncTask.
+        r"""Sets the schedule_period of this MemberSyncTask.
 
         调度周期 * MINUTE  分钟为单位调度 * HOUR    小时为单位调度
 
@@ -476,7 +476,7 @@ class MemberSyncTask:
 
     @property
     def schedule_interval(self):
-        """Gets the schedule_interval of this MemberSyncTask.
+        r"""Gets the schedule_interval of this MemberSyncTask.
 
         调度间隔。
 
@@ -487,7 +487,7 @@ class MemberSyncTask:
 
     @schedule_interval.setter
     def schedule_interval(self, schedule_interval):
-        """Sets the schedule_interval of this MemberSyncTask.
+        r"""Sets the schedule_interval of this MemberSyncTask.
 
         调度间隔。
 
@@ -498,7 +498,7 @@ class MemberSyncTask:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this MemberSyncTask.
+        r"""Gets the schedule_status of this MemberSyncTask.
 
         调度状态 * NOT_SCHEDULE  未启用任务调度 * SCHEDULING    任务调度中
 
@@ -509,7 +509,7 @@ class MemberSyncTask:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this MemberSyncTask.
+        r"""Sets the schedule_status of this MemberSyncTask.
 
         调度状态 * NOT_SCHEDULE  未启用任务调度 * SCHEDULING    任务调度中
 
@@ -520,7 +520,7 @@ class MemberSyncTask:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this MemberSyncTask.
+        r"""Gets the sync_status of this MemberSyncTask.
 
         同步状态 * UNKNOWN 未知 * NOT_SYNC 未同步 * SYNCING 同步中 * SYNC_SUCCESS 同步成功 * SYNC_FAIL 同步失败
 
@@ -531,7 +531,7 @@ class MemberSyncTask:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this MemberSyncTask.
+        r"""Sets the sync_status of this MemberSyncTask.
 
         同步状态 * UNKNOWN 未知 * NOT_SYNC 未同步 * SYNCING 同步中 * SYNC_SUCCESS 同步成功 * SYNC_FAIL 同步失败
 
@@ -542,7 +542,7 @@ class MemberSyncTask:
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this MemberSyncTask.
+        r"""Gets the sync_msg of this MemberSyncTask.
 
         同步日志。
 
@@ -553,7 +553,7 @@ class MemberSyncTask:
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this MemberSyncTask.
+        r"""Sets the sync_msg of this MemberSyncTask.
 
         同步日志。
 
@@ -564,7 +564,7 @@ class MemberSyncTask:
 
     @property
     def sync_time(self):
-        """Gets the sync_time of this MemberSyncTask.
+        r"""Gets the sync_time of this MemberSyncTask.
 
         同步时间。
 
@@ -575,7 +575,7 @@ class MemberSyncTask:
 
     @sync_time.setter
     def sync_time(self, sync_time):
-        """Sets the sync_time of this MemberSyncTask.
+        r"""Sets the sync_time of this MemberSyncTask.
 
         同步时间。
 
@@ -586,7 +586,7 @@ class MemberSyncTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MemberSyncTask.
+        r"""Gets the create_time of this MemberSyncTask.
 
         创建时间。
 
@@ -597,7 +597,7 @@ class MemberSyncTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MemberSyncTask.
+        r"""Sets the create_time of this MemberSyncTask.
 
         创建时间。
 
@@ -608,7 +608,7 @@ class MemberSyncTask:
 
     @property
     def create_user(self):
-        """Gets the create_user of this MemberSyncTask.
+        r"""Gets the create_user of this MemberSyncTask.
 
         创建者。
 
@@ -619,7 +619,7 @@ class MemberSyncTask:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this MemberSyncTask.
+        r"""Sets the create_user of this MemberSyncTask.
 
         创建者。
 
@@ -630,7 +630,7 @@ class MemberSyncTask:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MemberSyncTask.
+        r"""Gets the update_time of this MemberSyncTask.
 
         更新时间。
 
@@ -641,7 +641,7 @@ class MemberSyncTask:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MemberSyncTask.
+        r"""Sets the update_time of this MemberSyncTask.
 
         更新时间。
 
@@ -652,7 +652,7 @@ class MemberSyncTask:
 
     @property
     def update_user(self):
-        """Gets the update_user of this MemberSyncTask.
+        r"""Gets the update_user of this MemberSyncTask.
 
         更新者。
 
@@ -663,7 +663,7 @@ class MemberSyncTask:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this MemberSyncTask.
+        r"""Sets the update_user of this MemberSyncTask.
 
         更新者。
 

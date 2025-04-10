@@ -27,7 +27,7 @@ class UpdatePublicBandWidthRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdatePublicBandWidthRequest
+        r"""UpdatePublicBandWidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePublicBandWidthRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdatePublicBandWidthRequest.
+        r"""Gets the cluster_id of this UpdatePublicBandWidthRequest.
 
         指定修改公网访问带宽集群ID。
 
@@ -60,7 +60,7 @@ class UpdatePublicBandWidthRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdatePublicBandWidthRequest.
+        r"""Sets the cluster_id of this UpdatePublicBandWidthRequest.
 
         指定修改公网访问带宽集群ID。
 
@@ -71,7 +71,7 @@ class UpdatePublicBandWidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePublicBandWidthRequest.
+        r"""Gets the body of this UpdatePublicBandWidthRequest.
 
         :return: The body of this UpdatePublicBandWidthRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
@@ -80,7 +80,7 @@ class UpdatePublicBandWidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePublicBandWidthRequest.
+        r"""Sets the body of this UpdatePublicBandWidthRequest.
 
         :param body: The body of this UpdatePublicBandWidthRequest.
         :type body: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`

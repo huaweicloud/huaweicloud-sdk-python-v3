@@ -25,7 +25,7 @@ class VINResult:
     }
 
     def __init__(self, vin=None):
-        """VINResult
+        r"""VINResult
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VINResult:
 
     @property
     def vin(self):
-        """Gets the vin of this VINResult.
+        r"""Gets the vin of this VINResult.
 
         识别检测到的车架号。 
 
@@ -53,7 +53,7 @@ class VINResult:
 
     @vin.setter
     def vin(self, vin):
-        """Sets the vin of this VINResult.
+        r"""Sets the vin of this VINResult.
 
         识别检测到的车架号。 
 

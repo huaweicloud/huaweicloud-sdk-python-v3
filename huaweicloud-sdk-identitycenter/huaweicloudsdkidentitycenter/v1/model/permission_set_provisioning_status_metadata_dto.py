@@ -29,7 +29,7 @@ class PermissionSetProvisioningStatusMetadataDto:
     }
 
     def __init__(self, created_date=None, request_id=None, status=None):
-        """PermissionSetProvisioningStatusMetadataDto
+        r"""PermissionSetProvisioningStatusMetadataDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PermissionSetProvisioningStatusMetadataDto:
 
     @property
     def created_date(self):
-        """Gets the created_date of this PermissionSetProvisioningStatusMetadataDto.
+        r"""Gets the created_date of this PermissionSetProvisioningStatusMetadataDto.
 
         权限集创建日期.
 
@@ -68,7 +68,7 @@ class PermissionSetProvisioningStatusMetadataDto:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this PermissionSetProvisioningStatusMetadataDto.
+        r"""Sets the created_date of this PermissionSetProvisioningStatusMetadataDto.
 
         权限集创建日期.
 
@@ -79,7 +79,7 @@ class PermissionSetProvisioningStatusMetadataDto:
 
     @property
     def request_id(self):
-        """Gets the request_id of this PermissionSetProvisioningStatusMetadataDto.
+        r"""Gets the request_id of this PermissionSetProvisioningStatusMetadataDto.
 
         请求唯一标识
 
@@ -90,7 +90,7 @@ class PermissionSetProvisioningStatusMetadataDto:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this PermissionSetProvisioningStatusMetadataDto.
+        r"""Sets the request_id of this PermissionSetProvisioningStatusMetadataDto.
 
         请求唯一标识
 
@@ -101,7 +101,7 @@ class PermissionSetProvisioningStatusMetadataDto:
 
     @property
     def status(self):
-        """Gets the status of this PermissionSetProvisioningStatusMetadataDto.
+        r"""Gets the status of this PermissionSetProvisioningStatusMetadataDto.
 
         权限集授权状态
 
@@ -112,7 +112,7 @@ class PermissionSetProvisioningStatusMetadataDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PermissionSetProvisioningStatusMetadataDto.
+        r"""Sets the status of this PermissionSetProvisioningStatusMetadataDto.
 
         权限集授权状态
 

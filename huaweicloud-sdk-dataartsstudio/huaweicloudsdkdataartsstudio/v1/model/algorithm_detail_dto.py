@@ -31,7 +31,7 @@ class AlgorithmDetailDTO:
     }
 
     def __init__(self, start=None, end=None, int_target=None, string_target=None):
-        """AlgorithmDetailDTO
+        r"""AlgorithmDetailDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AlgorithmDetailDTO:
 
     @property
     def start(self):
-        """Gets the start of this AlgorithmDetailDTO.
+        r"""Gets the start of this AlgorithmDetailDTO.
 
         开始位数，该值需要大于0且小于end值。
 
@@ -75,7 +75,7 @@ class AlgorithmDetailDTO:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this AlgorithmDetailDTO.
+        r"""Sets the start of this AlgorithmDetailDTO.
 
         开始位数，该值需要大于0且小于end值。
 
@@ -86,7 +86,7 @@ class AlgorithmDetailDTO:
 
     @property
     def end(self):
-        """Gets the end of this AlgorithmDetailDTO.
+        r"""Gets the end of this AlgorithmDetailDTO.
 
         结束位数，该值需要大于或等于start值。
 
@@ -97,7 +97,7 @@ class AlgorithmDetailDTO:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this AlgorithmDetailDTO.
+        r"""Sets the end of this AlgorithmDetailDTO.
 
         结束位数，该值需要大于或等于start值。
 
@@ -108,7 +108,7 @@ class AlgorithmDetailDTO:
 
     @property
     def int_target(self):
-        """Gets the int_target of this AlgorithmDetailDTO.
+        r"""Gets the int_target of this AlgorithmDetailDTO.
 
         数值类型。
 
@@ -119,7 +119,7 @@ class AlgorithmDetailDTO:
 
     @int_target.setter
     def int_target(self, int_target):
-        """Sets the int_target of this AlgorithmDetailDTO.
+        r"""Sets the int_target of this AlgorithmDetailDTO.
 
         数值类型。
 
@@ -130,7 +130,7 @@ class AlgorithmDetailDTO:
 
     @property
     def string_target(self):
-        """Gets the string_target of this AlgorithmDetailDTO.
+        r"""Gets the string_target of this AlgorithmDetailDTO.
 
         字符串类型。可输入参数为\"*\"或者\"#\"。
 
@@ -141,7 +141,7 @@ class AlgorithmDetailDTO:
 
     @string_target.setter
     def string_target(self, string_target):
-        """Sets the string_target of this AlgorithmDetailDTO.
+        r"""Sets the string_target of this AlgorithmDetailDTO.
 
         字符串类型。可输入参数为\"*\"或者\"#\"。
 

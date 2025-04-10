@@ -72,7 +72,7 @@ class CreatePremiumHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostname=None, protocol=None, server=None, proxy=None, locked=None, timestamp=None, tls=None, cipher=None, extend=None, flag=None, mode=None, loadbalancer_id=None, listener_id=None, protocol_port=None, description=None, policyid=None, domainid=None, projectid=None, enterprise_project_id=None, protect_status=None, access_status=None, block_page=None, forward_header_map=None):
-        """CreatePremiumHostResponse
+        r"""CreatePremiumHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -205,7 +205,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePremiumHostResponse.
+        r"""Gets the id of this CreatePremiumHostResponse.
 
         域名id
 
@@ -216,7 +216,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePremiumHostResponse.
+        r"""Sets the id of this CreatePremiumHostResponse.
 
         域名id
 
@@ -227,7 +227,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this CreatePremiumHostResponse.
+        r"""Gets the hostname of this CreatePremiumHostResponse.
 
         防护域名
 
@@ -238,7 +238,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CreatePremiumHostResponse.
+        r"""Sets the hostname of this CreatePremiumHostResponse.
 
         防护域名
 
@@ -249,7 +249,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreatePremiumHostResponse.
+        r"""Gets the protocol of this CreatePremiumHostResponse.
 
         对外协议，客户端（例如浏览器）请求访问网站的协议类型
 
@@ -260,7 +260,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreatePremiumHostResponse.
+        r"""Sets the protocol of this CreatePremiumHostResponse.
 
         对外协议，客户端（例如浏览器）请求访问网站的协议类型
 
@@ -271,7 +271,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this CreatePremiumHostResponse.
+        r"""Gets the server of this CreatePremiumHostResponse.
 
         防护域名的源站服务器配置信息
 
@@ -282,7 +282,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreatePremiumHostResponse.
+        r"""Sets the server of this CreatePremiumHostResponse.
 
         防护域名的源站服务器配置信息
 
@@ -293,7 +293,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def proxy(self):
-        """Gets the proxy of this CreatePremiumHostResponse.
+        r"""Gets the proxy of this CreatePremiumHostResponse.
 
         是否使用代理   - true：代表使用代理   - false：代表未使用代理
 
@@ -304,7 +304,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this CreatePremiumHostResponse.
+        r"""Sets the proxy of this CreatePremiumHostResponse.
 
         是否使用代理   - true：代表使用代理   - false：代表未使用代理
 
@@ -315,7 +315,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def locked(self):
-        """Gets the locked of this CreatePremiumHostResponse.
+        r"""Gets the locked of this CreatePremiumHostResponse.
 
         域名冻结状态，0表示未冻结，1表示为冻结，冗余参数
 
@@ -326,7 +326,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this CreatePremiumHostResponse.
+        r"""Sets the locked of this CreatePremiumHostResponse.
 
         域名冻结状态，0表示未冻结，1表示为冻结，冗余参数
 
@@ -337,7 +337,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreatePremiumHostResponse.
+        r"""Gets the timestamp of this CreatePremiumHostResponse.
 
         创建域名的时间，13位毫秒时间戳
 
@@ -348,7 +348,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreatePremiumHostResponse.
+        r"""Sets the timestamp of this CreatePremiumHostResponse.
 
         创建域名的时间，13位毫秒时间戳
 
@@ -359,7 +359,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def tls(self):
-        """Gets the tls of this CreatePremiumHostResponse.
+        r"""Gets the tls of this CreatePremiumHostResponse.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -370,7 +370,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @tls.setter
     def tls(self, tls):
-        """Sets the tls of this CreatePremiumHostResponse.
+        r"""Sets the tls of this CreatePremiumHostResponse.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -381,7 +381,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def cipher(self):
-        """Gets the cipher of this CreatePremiumHostResponse.
+        r"""Gets the cipher of this CreatePremiumHostResponse.
 
         对外协议为https时才有cipher参数，加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -392,7 +392,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @cipher.setter
     def cipher(self, cipher):
-        """Sets the cipher of this CreatePremiumHostResponse.
+        r"""Sets the cipher of this CreatePremiumHostResponse.
 
         对外协议为https时才有cipher参数，加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -403,7 +403,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this CreatePremiumHostResponse.
+        r"""Gets the extend of this CreatePremiumHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -414,7 +414,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this CreatePremiumHostResponse.
+        r"""Sets the extend of this CreatePremiumHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -425,7 +425,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this CreatePremiumHostResponse.
+        r"""Gets the flag of this CreatePremiumHostResponse.
 
         :return: The flag of this CreatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -434,7 +434,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this CreatePremiumHostResponse.
+        r"""Sets the flag of this CreatePremiumHostResponse.
 
         :param flag: The flag of this CreatePremiumHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -443,7 +443,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this CreatePremiumHostResponse.
+        r"""Gets the mode of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段：elb-shared
 
@@ -454,7 +454,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreatePremiumHostResponse.
+        r"""Sets the mode of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段：elb-shared
 
@@ -465,7 +465,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreatePremiumHostResponse.
+        r"""Gets the loadbalancer_id of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
 
@@ -476,7 +476,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreatePremiumHostResponse.
+        r"""Sets the loadbalancer_id of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
 
@@ -487,7 +487,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreatePremiumHostResponse.
+        r"""Gets the listener_id of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段，表示监听器id
 
@@ -498,7 +498,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreatePremiumHostResponse.
+        r"""Sets the listener_id of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段，表示监听器id
 
@@ -509,7 +509,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this CreatePremiumHostResponse.
+        r"""Gets the protocol_port of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段， 表示业务端口
 
@@ -520,7 +520,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this CreatePremiumHostResponse.
+        r"""Sets the protocol_port of this CreatePremiumHostResponse.
 
         云模式elb接入域名返回此字段， 表示业务端口
 
@@ -531,7 +531,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreatePremiumHostResponse.
+        r"""Gets the description of this CreatePremiumHostResponse.
 
         域名描述
 
@@ -542,7 +542,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePremiumHostResponse.
+        r"""Sets the description of this CreatePremiumHostResponse.
 
         域名描述
 
@@ -553,7 +553,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreatePremiumHostResponse.
+        r"""Gets the policyid of this CreatePremiumHostResponse.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -564,7 +564,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreatePremiumHostResponse.
+        r"""Sets the policyid of this CreatePremiumHostResponse.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -575,7 +575,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def domainid(self):
-        """Gets the domainid of this CreatePremiumHostResponse.
+        r"""Gets the domainid of this CreatePremiumHostResponse.
 
         账号ID,对应华为云控制台用户名->我的凭证->账号ID
 
@@ -586,7 +586,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @domainid.setter
     def domainid(self, domainid):
-        """Sets the domainid of this CreatePremiumHostResponse.
+        r"""Sets the domainid of this CreatePremiumHostResponse.
 
         账号ID,对应华为云控制台用户名->我的凭证->账号ID
 
@@ -597,7 +597,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def projectid(self):
-        """Gets the projectid of this CreatePremiumHostResponse.
+        r"""Gets the projectid of this CreatePremiumHostResponse.
 
         项目ID，对应华为云控制台用户名->我的凭证->项目列表->项目ID
 
@@ -608,7 +608,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @projectid.setter
     def projectid(self, projectid):
-        """Sets the projectid of this CreatePremiumHostResponse.
+        r"""Sets the projectid of this CreatePremiumHostResponse.
 
         项目ID，对应华为云控制台用户名->我的凭证->项目列表->项目ID
 
@@ -619,7 +619,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePremiumHostResponse.
+        r"""Gets the enterprise_project_id of this CreatePremiumHostResponse.
 
         企业项目ID，对应华为云控制台用户名->企业->项目管理->点击项目名称->ID
 
@@ -630,7 +630,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePremiumHostResponse.
+        r"""Sets the enterprise_project_id of this CreatePremiumHostResponse.
 
         企业项目ID，对应华为云控制台用户名->企业->项目管理->点击项目名称->ID
 
@@ -641,7 +641,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this CreatePremiumHostResponse.
+        r"""Gets the protect_status of this CreatePremiumHostResponse.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -652,7 +652,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this CreatePremiumHostResponse.
+        r"""Sets the protect_status of this CreatePremiumHostResponse.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -663,7 +663,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this CreatePremiumHostResponse.
+        r"""Gets the access_status of this CreatePremiumHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -674,7 +674,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this CreatePremiumHostResponse.
+        r"""Sets the access_status of this CreatePremiumHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -685,7 +685,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def block_page(self):
-        """Gets the block_page of this CreatePremiumHostResponse.
+        r"""Gets the block_page of this CreatePremiumHostResponse.
 
         :return: The block_page of this CreatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -694,7 +694,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @block_page.setter
     def block_page(self, block_page):
-        """Sets the block_page of this CreatePremiumHostResponse.
+        r"""Sets the block_page of this CreatePremiumHostResponse.
 
         :param block_page: The block_page of this CreatePremiumHostResponse.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -703,7 +703,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this CreatePremiumHostResponse.
+        r"""Gets the forward_header_map of this CreatePremiumHostResponse.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -714,7 +714,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this CreatePremiumHostResponse.
+        r"""Sets the forward_header_map of this CreatePremiumHostResponse.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 

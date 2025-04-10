@@ -25,7 +25,7 @@ class VaultBackupReq:
     }
 
     def __init__(self, checkpoint=None):
-        """VaultBackupReq
+        r"""VaultBackupReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VaultBackupReq:
 
     @property
     def checkpoint(self):
-        """Gets the checkpoint of this VaultBackupReq.
+        r"""Gets the checkpoint of this VaultBackupReq.
 
         :return: The checkpoint of this VaultBackupReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBackup`
@@ -51,7 +51,7 @@ class VaultBackupReq:
 
     @checkpoint.setter
     def checkpoint(self, checkpoint):
-        """Sets the checkpoint of this VaultBackupReq.
+        r"""Sets the checkpoint of this VaultBackupReq.
 
         :param checkpoint: The checkpoint of this VaultBackupReq.
         :type checkpoint: :class:`huaweicloudsdkcbr.v1.VaultBackup`

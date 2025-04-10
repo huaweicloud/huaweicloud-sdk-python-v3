@@ -23,7 +23,7 @@ class OneClickAlarmID:
     }
 
     def __init__(self):
-        """OneClickAlarmID
+        r"""OneClickAlarmID
 
         The model defined in huaweicloud sdk
 

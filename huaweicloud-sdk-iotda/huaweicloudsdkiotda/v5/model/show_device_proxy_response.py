@@ -34,7 +34,7 @@ class ShowDeviceProxyResponse(SdkResponse):
     }
 
     def __init__(self, proxy_id=None, proxy_name=None, proxy_devices=None, effective_time_range=None, app_id=None):
-        """ShowDeviceProxyResponse
+        r"""ShowDeviceProxyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ShowDeviceProxyResponse.
+        r"""Gets the proxy_id of this ShowDeviceProxyResponse.
 
         **参数说明**：代理ID。用来唯一标识一个代理规则
 
@@ -83,7 +83,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ShowDeviceProxyResponse.
+        r"""Sets the proxy_id of this ShowDeviceProxyResponse.
 
         **参数说明**：代理ID。用来唯一标识一个代理规则
 
@@ -94,7 +94,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @property
     def proxy_name(self):
-        """Gets the proxy_name of this ShowDeviceProxyResponse.
+        r"""Gets the proxy_name of this ShowDeviceProxyResponse.
 
         **参数说明**：设备代理名称
 
@@ -105,7 +105,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @proxy_name.setter
     def proxy_name(self, proxy_name):
-        """Sets the proxy_name of this ShowDeviceProxyResponse.
+        r"""Sets the proxy_name of this ShowDeviceProxyResponse.
 
         **参数说明**：设备代理名称
 
@@ -116,7 +116,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @property
     def proxy_devices(self):
-        """Gets the proxy_devices of this ShowDeviceProxyResponse.
+        r"""Gets the proxy_devices of this ShowDeviceProxyResponse.
 
         **参数说明**：代理设备组，组内所有设备共享网关权限，即组内任意一个网关下的子设备可以通过组里任意一个网关上线然后进行数据上报。
 
@@ -127,7 +127,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @proxy_devices.setter
     def proxy_devices(self, proxy_devices):
-        """Sets the proxy_devices of this ShowDeviceProxyResponse.
+        r"""Sets the proxy_devices of this ShowDeviceProxyResponse.
 
         **参数说明**：代理设备组，组内所有设备共享网关权限，即组内任意一个网关下的子设备可以通过组里任意一个网关上线然后进行数据上报。
 
@@ -138,7 +138,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @property
     def effective_time_range(self):
-        """Gets the effective_time_range of this ShowDeviceProxyResponse.
+        r"""Gets the effective_time_range of this ShowDeviceProxyResponse.
 
         :return: The effective_time_range of this ShowDeviceProxyResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRangeResponseDTO`
@@ -147,7 +147,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @effective_time_range.setter
     def effective_time_range(self, effective_time_range):
-        """Sets the effective_time_range of this ShowDeviceProxyResponse.
+        r"""Sets the effective_time_range of this ShowDeviceProxyResponse.
 
         :param effective_time_range: The effective_time_range of this ShowDeviceProxyResponse.
         :type effective_time_range: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRangeResponseDTO`
@@ -156,7 +156,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDeviceProxyResponse.
+        r"""Gets the app_id of this ShowDeviceProxyResponse.
 
         **参数说明**：资源空间ID。
 
@@ -167,7 +167,7 @@ class ShowDeviceProxyResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDeviceProxyResponse.
+        r"""Sets the app_id of this ShowDeviceProxyResponse.
 
         **参数说明**：资源空间ID。
 

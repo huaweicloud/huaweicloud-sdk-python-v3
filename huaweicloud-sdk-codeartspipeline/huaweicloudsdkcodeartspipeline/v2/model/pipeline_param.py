@@ -35,7 +35,7 @@ class PipelineParam:
     }
 
     def __init__(self, name=None, value=None, description=None, param_type=None, is_static=None, is_default=None):
-        """PipelineParam
+        r"""PipelineParam
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class PipelineParam:
 
     @property
     def name(self):
-        """Gets the name of this PipelineParam.
+        r"""Gets the name of this PipelineParam.
 
         流水线参数名字
 
@@ -83,7 +83,7 @@ class PipelineParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineParam.
+        r"""Sets the name of this PipelineParam.
 
         流水线参数名字
 
@@ -94,7 +94,7 @@ class PipelineParam:
 
     @property
     def value(self):
-        """Gets the value of this PipelineParam.
+        r"""Gets the value of this PipelineParam.
 
         流水线参数值
 
@@ -105,7 +105,7 @@ class PipelineParam:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PipelineParam.
+        r"""Sets the value of this PipelineParam.
 
         流水线参数值
 
@@ -116,7 +116,7 @@ class PipelineParam:
 
     @property
     def description(self):
-        """Gets the description of this PipelineParam.
+        r"""Gets the description of this PipelineParam.
 
         流水线参数描述
 
@@ -127,7 +127,7 @@ class PipelineParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineParam.
+        r"""Sets the description of this PipelineParam.
 
         流水线参数描述
 
@@ -138,7 +138,7 @@ class PipelineParam:
 
     @property
     def param_type(self):
-        """Gets the param_type of this PipelineParam.
+        r"""Gets the param_type of this PipelineParam.
 
         流水线参数类型
 
@@ -149,7 +149,7 @@ class PipelineParam:
 
     @param_type.setter
     def param_type(self, param_type):
-        """Sets the param_type of this PipelineParam.
+        r"""Sets the param_type of this PipelineParam.
 
         流水线参数类型
 
@@ -160,7 +160,7 @@ class PipelineParam:
 
     @property
     def is_static(self):
-        """Gets the is_static of this PipelineParam.
+        r"""Gets the is_static of this PipelineParam.
 
         是否静态参数
 
@@ -171,7 +171,7 @@ class PipelineParam:
 
     @is_static.setter
     def is_static(self, is_static):
-        """Sets the is_static of this PipelineParam.
+        r"""Sets the is_static of this PipelineParam.
 
         是否静态参数
 
@@ -182,7 +182,7 @@ class PipelineParam:
 
     @property
     def is_default(self):
-        """Gets the is_default of this PipelineParam.
+        r"""Gets the is_default of this PipelineParam.
 
         是否默认参数
 
@@ -193,7 +193,7 @@ class PipelineParam:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this PipelineParam.
+        r"""Sets the is_default of this PipelineParam.
 
         是否默认参数
 

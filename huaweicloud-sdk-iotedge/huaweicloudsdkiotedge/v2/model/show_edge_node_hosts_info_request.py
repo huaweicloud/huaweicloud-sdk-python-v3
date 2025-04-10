@@ -25,7 +25,7 @@ class ShowEdgeNodeHostsInfoRequest:
     }
 
     def __init__(self, edge_node_id=None):
-        """ShowEdgeNodeHostsInfoRequest
+        r"""ShowEdgeNodeHostsInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEdgeNodeHostsInfoRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ShowEdgeNodeHostsInfoRequest.
+        r"""Gets the edge_node_id of this ShowEdgeNodeHostsInfoRequest.
 
         边缘节点ID
 
@@ -53,7 +53,7 @@ class ShowEdgeNodeHostsInfoRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ShowEdgeNodeHostsInfoRequest.
+        r"""Sets the edge_node_id of this ShowEdgeNodeHostsInfoRequest.
 
         边缘节点ID
 

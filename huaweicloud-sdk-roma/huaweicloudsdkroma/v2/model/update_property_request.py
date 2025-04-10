@@ -31,7 +31,7 @@ class UpdatePropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, property_id=None, body=None):
-        """UpdatePropertyRequest
+        r"""UpdatePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdatePropertyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePropertyRequest.
+        r"""Gets the instance_id of this UpdatePropertyRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class UpdatePropertyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePropertyRequest.
+        r"""Sets the instance_id of this UpdatePropertyRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class UpdatePropertyRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdatePropertyRequest.
+        r"""Gets the service_id of this UpdatePropertyRequest.
 
         服务ID
 
@@ -94,7 +94,7 @@ class UpdatePropertyRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdatePropertyRequest.
+        r"""Sets the service_id of this UpdatePropertyRequest.
 
         服务ID
 
@@ -105,7 +105,7 @@ class UpdatePropertyRequest:
 
     @property
     def property_id(self):
-        """Gets the property_id of this UpdatePropertyRequest.
+        r"""Gets the property_id of this UpdatePropertyRequest.
 
         属性/请求属性/响应属性ID
 
@@ -116,7 +116,7 @@ class UpdatePropertyRequest:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this UpdatePropertyRequest.
+        r"""Sets the property_id of this UpdatePropertyRequest.
 
         属性/请求属性/响应属性ID
 
@@ -127,7 +127,7 @@ class UpdatePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePropertyRequest.
+        r"""Gets the body of this UpdatePropertyRequest.
 
         :return: The body of this UpdatePropertyRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`
@@ -136,7 +136,7 @@ class UpdatePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePropertyRequest.
+        r"""Sets the body of this UpdatePropertyRequest.
 
         :param body: The body of this UpdatePropertyRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`

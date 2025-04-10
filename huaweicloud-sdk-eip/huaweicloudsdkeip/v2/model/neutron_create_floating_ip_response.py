@@ -26,7 +26,7 @@ class NeutronCreateFloatingIpResponse(SdkResponse):
     }
 
     def __init__(self, floatingip=None):
-        """NeutronCreateFloatingIpResponse
+        r"""NeutronCreateFloatingIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronCreateFloatingIpResponse(SdkResponse):
 
     @property
     def floatingip(self):
-        """Gets the floatingip of this NeutronCreateFloatingIpResponse.
+        r"""Gets the floatingip of this NeutronCreateFloatingIpResponse.
 
         :return: The floatingip of this NeutronCreateFloatingIpResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.PostAndPutFloatingIpResp`
@@ -53,7 +53,7 @@ class NeutronCreateFloatingIpResponse(SdkResponse):
 
     @floatingip.setter
     def floatingip(self, floatingip):
-        """Sets the floatingip of this NeutronCreateFloatingIpResponse.
+        r"""Sets the floatingip of this NeutronCreateFloatingIpResponse.
 
         :param floatingip: The floatingip of this NeutronCreateFloatingIpResponse.
         :type floatingip: :class:`huaweicloudsdkeip.v2.PostAndPutFloatingIpResp`

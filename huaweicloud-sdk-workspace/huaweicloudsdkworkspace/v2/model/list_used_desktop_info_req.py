@@ -37,7 +37,7 @@ class ListUsedDesktopInfoReq:
     }
 
     def __init__(self, desktop_ids=None, start_time=None, end_time=None, group_by_type=None, desktop_username=None, offset=None, limit=None):
-        """ListUsedDesktopInfoReq
+        r"""ListUsedDesktopInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this ListUsedDesktopInfoReq.
+        r"""Gets the desktop_ids of this ListUsedDesktopInfoReq.
 
         桌面id集合。
 
@@ -96,7 +96,7 @@ class ListUsedDesktopInfoReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this ListUsedDesktopInfoReq.
+        r"""Sets the desktop_ids of this ListUsedDesktopInfoReq.
 
         桌面id集合。
 
@@ -107,7 +107,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUsedDesktopInfoReq.
+        r"""Gets the start_time of this ListUsedDesktopInfoReq.
 
         开始时间，格式：yyyy-MM-dd（UTC时间，不传查默认最近15天）最多查31天数据。
 
@@ -118,7 +118,7 @@ class ListUsedDesktopInfoReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUsedDesktopInfoReq.
+        r"""Sets the start_time of this ListUsedDesktopInfoReq.
 
         开始时间，格式：yyyy-MM-dd（UTC时间，不传查默认最近15天）最多查31天数据。
 
@@ -129,7 +129,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUsedDesktopInfoReq.
+        r"""Gets the end_time of this ListUsedDesktopInfoReq.
 
         结束时间，格式：yyyy-MM-dd（UTC时间，不传查默认最近15天）最多查31天数据。
 
@@ -140,7 +140,7 @@ class ListUsedDesktopInfoReq:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUsedDesktopInfoReq.
+        r"""Sets the end_time of this ListUsedDesktopInfoReq.
 
         结束时间，格式：yyyy-MM-dd（UTC时间，不传查默认最近15天）最多查31天数据。
 
@@ -151,7 +151,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def group_by_type(self):
-        """Gets the group_by_type of this ListUsedDesktopInfoReq.
+        r"""Gets the group_by_type of this ListUsedDesktopInfoReq.
 
         统计方式，不传则默认按天。可选值为： - DAY: 按天。 - HOUR: 按小时。
 
@@ -162,7 +162,7 @@ class ListUsedDesktopInfoReq:
 
     @group_by_type.setter
     def group_by_type(self, group_by_type):
-        """Sets the group_by_type of this ListUsedDesktopInfoReq.
+        r"""Sets the group_by_type of this ListUsedDesktopInfoReq.
 
         统计方式，不传则默认按天。可选值为： - DAY: 按天。 - HOUR: 按小时。
 
@@ -173,7 +173,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def desktop_username(self):
-        """Gets the desktop_username of this ListUsedDesktopInfoReq.
+        r"""Gets the desktop_username of this ListUsedDesktopInfoReq.
 
         若传桌面的用户名，则查询使用时间只有该用户的使用时间。
 
@@ -184,7 +184,7 @@ class ListUsedDesktopInfoReq:
 
     @desktop_username.setter
     def desktop_username(self, desktop_username):
-        """Sets the desktop_username of this ListUsedDesktopInfoReq.
+        r"""Sets the desktop_username of this ListUsedDesktopInfoReq.
 
         若传桌面的用户名，则查询使用时间只有该用户的使用时间。
 
@@ -195,7 +195,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsedDesktopInfoReq.
+        r"""Gets the offset of this ListUsedDesktopInfoReq.
 
         从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2147483647，默认从0开始。
 
@@ -206,7 +206,7 @@ class ListUsedDesktopInfoReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsedDesktopInfoReq.
+        r"""Sets the offset of this ListUsedDesktopInfoReq.
 
         从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2147483647，默认从0开始。
 
@@ -217,7 +217,7 @@ class ListUsedDesktopInfoReq:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsedDesktopInfoReq.
+        r"""Gets the limit of this ListUsedDesktopInfoReq.
 
         查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-100，默认值100。
 
@@ -228,7 +228,7 @@ class ListUsedDesktopInfoReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsedDesktopInfoReq.
+        r"""Sets the limit of this ListUsedDesktopInfoReq.
 
         查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-100，默认值100。
 

@@ -28,7 +28,7 @@ class ListNotifySmnTopicConfigResponse(SdkResponse):
     }
 
     def __init__(self, notifications=None, total=None):
-        """ListNotifySmnTopicConfigResponse
+        r"""ListNotifySmnTopicConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNotifySmnTopicConfigResponse(SdkResponse):
 
     @property
     def notifications(self):
-        """Gets the notifications of this ListNotifySmnTopicConfigResponse.
+        r"""Gets the notifications of this ListNotifySmnTopicConfigResponse.
 
         事件通知模板信息 
 
@@ -62,7 +62,7 @@ class ListNotifySmnTopicConfigResponse(SdkResponse):
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this ListNotifySmnTopicConfigResponse.
+        r"""Sets the notifications of this ListNotifySmnTopicConfigResponse.
 
         事件通知模板信息 
 
@@ -73,7 +73,7 @@ class ListNotifySmnTopicConfigResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListNotifySmnTopicConfigResponse.
+        r"""Gets the total of this ListNotifySmnTopicConfigResponse.
 
         事件通知模板总数
 
@@ -84,7 +84,7 @@ class ListNotifySmnTopicConfigResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListNotifySmnTopicConfigResponse.
+        r"""Sets the total of this ListNotifySmnTopicConfigResponse.
 
         事件通知模板总数
 

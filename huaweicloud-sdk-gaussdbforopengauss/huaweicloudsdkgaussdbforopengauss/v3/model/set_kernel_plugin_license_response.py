@@ -26,7 +26,7 @@ class SetKernelPluginLicenseResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SetKernelPluginLicenseResponse
+        r"""SetKernelPluginLicenseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetKernelPluginLicenseResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SetKernelPluginLicenseResponse.
+        r"""Gets the body of this SetKernelPluginLicenseResponse.
 
         :return: The body of this SetKernelPluginLicenseResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SetKernelPluginLicenseResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetKernelPluginLicenseResponse.
+        r"""Sets the body of this SetKernelPluginLicenseResponse.
 
         :param body: The body of this SetKernelPluginLicenseResponse.
         :type body: str

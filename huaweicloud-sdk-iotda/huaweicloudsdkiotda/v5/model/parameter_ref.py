@@ -25,7 +25,7 @@ class ParameterRef:
     }
 
     def __init__(self, ref=None):
-        """ParameterRef
+        r"""ParameterRef
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ParameterRef:
 
     @property
     def ref(self):
-        """Gets the ref of this ParameterRef.
+        r"""Gets the ref of this ParameterRef.
 
         参数引用名称
 
@@ -53,7 +53,7 @@ class ParameterRef:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ParameterRef.
+        r"""Sets the ref of this ParameterRef.
 
         参数引用名称
 

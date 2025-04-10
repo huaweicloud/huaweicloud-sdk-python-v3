@@ -33,7 +33,7 @@ class PartitionReassignRequest:
     }
 
     def __init__(self, reassignments=None, throttle=None, is_schedule=None, execute_at=None, time_estimate=None):
-        """PartitionReassignRequest
+        r"""PartitionReassignRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PartitionReassignRequest:
 
     @property
     def reassignments(self):
-        """Gets the reassignments of this PartitionReassignRequest.
+        r"""Gets the reassignments of this PartitionReassignRequest.
 
         重平衡分配方案。
 
@@ -81,7 +81,7 @@ class PartitionReassignRequest:
 
     @reassignments.setter
     def reassignments(self, reassignments):
-        """Sets the reassignments of this PartitionReassignRequest.
+        r"""Sets the reassignments of this PartitionReassignRequest.
 
         重平衡分配方案。
 
@@ -92,7 +92,7 @@ class PartitionReassignRequest:
 
     @property
     def throttle(self):
-        """Gets the throttle of this PartitionReassignRequest.
+        r"""Gets the throttle of this PartitionReassignRequest.
 
         重平衡门限值。
 
@@ -103,7 +103,7 @@ class PartitionReassignRequest:
 
     @throttle.setter
     def throttle(self, throttle):
-        """Sets the throttle of this PartitionReassignRequest.
+        r"""Sets the throttle of this PartitionReassignRequest.
 
         重平衡门限值。
 
@@ -114,7 +114,7 @@ class PartitionReassignRequest:
 
     @property
     def is_schedule(self):
-        """Gets the is_schedule of this PartitionReassignRequest.
+        r"""Gets the is_schedule of this PartitionReassignRequest.
 
         是否作为定时任务执行。若非定时执行，则is_schedule 和execute_at字段可为空；若为定时执行，is_schedule为true，execute_at字段非空。
 
@@ -125,7 +125,7 @@ class PartitionReassignRequest:
 
     @is_schedule.setter
     def is_schedule(self, is_schedule):
-        """Sets the is_schedule of this PartitionReassignRequest.
+        r"""Sets the is_schedule of this PartitionReassignRequest.
 
         是否作为定时任务执行。若非定时执行，则is_schedule 和execute_at字段可为空；若为定时执行，is_schedule为true，execute_at字段非空。
 
@@ -136,7 +136,7 @@ class PartitionReassignRequest:
 
     @property
     def execute_at(self):
-        """Gets the execute_at of this PartitionReassignRequest.
+        r"""Gets the execute_at of this PartitionReassignRequest.
 
         定时时间，格式为Unix时间戳，单位为毫秒
 
@@ -147,7 +147,7 @@ class PartitionReassignRequest:
 
     @execute_at.setter
     def execute_at(self, execute_at):
-        """Sets the execute_at of this PartitionReassignRequest.
+        r"""Sets the execute_at of this PartitionReassignRequest.
 
         定时时间，格式为Unix时间戳，单位为毫秒
 
@@ -158,7 +158,7 @@ class PartitionReassignRequest:
 
     @property
     def time_estimate(self):
-        """Gets the time_estimate of this PartitionReassignRequest.
+        r"""Gets the time_estimate of this PartitionReassignRequest.
 
         设为true表示执行时间预估任务，false为执行重平衡任务。
 
@@ -169,7 +169,7 @@ class PartitionReassignRequest:
 
     @time_estimate.setter
     def time_estimate(self, time_estimate):
-        """Sets the time_estimate of this PartitionReassignRequest.
+        r"""Sets the time_estimate of this PartitionReassignRequest.
 
         设为true表示执行时间预估任务，false为执行重平衡任务。
 

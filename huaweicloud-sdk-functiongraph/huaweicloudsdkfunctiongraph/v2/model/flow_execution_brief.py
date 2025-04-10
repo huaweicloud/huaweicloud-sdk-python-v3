@@ -39,7 +39,7 @@ class FlowExecutionBrief:
     }
 
     def __init__(self, workflow_id=None, workflow_urn=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None):
-        """FlowExecutionBrief
+        r"""FlowExecutionBrief
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FlowExecutionBrief:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this FlowExecutionBrief.
+        r"""Gets the workflow_id of this FlowExecutionBrief.
 
         流程定义ID
 
@@ -103,7 +103,7 @@ class FlowExecutionBrief:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this FlowExecutionBrief.
+        r"""Sets the workflow_id of this FlowExecutionBrief.
 
         流程定义ID
 
@@ -114,7 +114,7 @@ class FlowExecutionBrief:
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this FlowExecutionBrief.
+        r"""Gets the workflow_urn of this FlowExecutionBrief.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -125,7 +125,7 @@ class FlowExecutionBrief:
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this FlowExecutionBrief.
+        r"""Sets the workflow_urn of this FlowExecutionBrief.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -136,7 +136,7 @@ class FlowExecutionBrief:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this FlowExecutionBrief.
+        r"""Gets the execution_id of this FlowExecutionBrief.
 
         流程执行实例ID
 
@@ -147,7 +147,7 @@ class FlowExecutionBrief:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this FlowExecutionBrief.
+        r"""Sets the execution_id of this FlowExecutionBrief.
 
         流程执行实例ID
 
@@ -158,7 +158,7 @@ class FlowExecutionBrief:
 
     @property
     def status(self):
-        """Gets the status of this FlowExecutionBrief.
+        r"""Gets the status of this FlowExecutionBrief.
 
         流程实例执行状态
 
@@ -169,7 +169,7 @@ class FlowExecutionBrief:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FlowExecutionBrief.
+        r"""Sets the status of this FlowExecutionBrief.
 
         流程实例执行状态
 
@@ -180,7 +180,7 @@ class FlowExecutionBrief:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this FlowExecutionBrief.
+        r"""Gets the begin_time of this FlowExecutionBrief.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -191,7 +191,7 @@ class FlowExecutionBrief:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this FlowExecutionBrief.
+        r"""Sets the begin_time of this FlowExecutionBrief.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -202,7 +202,7 @@ class FlowExecutionBrief:
 
     @property
     def end_time(self):
-        """Gets the end_time of this FlowExecutionBrief.
+        r"""Gets the end_time of this FlowExecutionBrief.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -213,7 +213,7 @@ class FlowExecutionBrief:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this FlowExecutionBrief.
+        r"""Sets the end_time of this FlowExecutionBrief.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -224,7 +224,7 @@ class FlowExecutionBrief:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this FlowExecutionBrief.
+        r"""Gets the last_update_time of this FlowExecutionBrief.
 
         流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -235,7 +235,7 @@ class FlowExecutionBrief:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this FlowExecutionBrief.
+        r"""Sets the last_update_time of this FlowExecutionBrief.
 
         流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -246,7 +246,7 @@ class FlowExecutionBrief:
 
     @property
     def created_by(self):
-        """Gets the created_by of this FlowExecutionBrief.
+        r"""Gets the created_by of this FlowExecutionBrief.
 
         流程实例创建者
 
@@ -257,7 +257,7 @@ class FlowExecutionBrief:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this FlowExecutionBrief.
+        r"""Sets the created_by of this FlowExecutionBrief.
 
         流程实例创建者
 

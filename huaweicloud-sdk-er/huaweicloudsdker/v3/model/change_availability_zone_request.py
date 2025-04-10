@@ -27,7 +27,7 @@ class ChangeAvailabilityZoneRequest:
     }
 
     def __init__(self, er_id=None, body=None):
-        """ChangeAvailabilityZoneRequest
+        r"""ChangeAvailabilityZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeAvailabilityZoneRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ChangeAvailabilityZoneRequest.
+        r"""Gets the er_id of this ChangeAvailabilityZoneRequest.
 
         企业路由器实例ID
 
@@ -60,7 +60,7 @@ class ChangeAvailabilityZoneRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ChangeAvailabilityZoneRequest.
+        r"""Sets the er_id of this ChangeAvailabilityZoneRequest.
 
         企业路由器实例ID
 
@@ -71,7 +71,7 @@ class ChangeAvailabilityZoneRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeAvailabilityZoneRequest.
+        r"""Gets the body of this ChangeAvailabilityZoneRequest.
 
         :return: The body of this ChangeAvailabilityZoneRequest.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouterAZ`
@@ -80,7 +80,7 @@ class ChangeAvailabilityZoneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeAvailabilityZoneRequest.
+        r"""Sets the body of this ChangeAvailabilityZoneRequest.
 
         :param body: The body of this ChangeAvailabilityZoneRequest.
         :type body: :class:`huaweicloudsdker.v3.EnterpriseRouterAZ`

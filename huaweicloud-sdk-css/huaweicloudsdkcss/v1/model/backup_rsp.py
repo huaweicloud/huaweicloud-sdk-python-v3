@@ -27,7 +27,7 @@ class BackupRsp:
     }
 
     def __init__(self, id=None, name=None):
-        """BackupRsp
+        r"""BackupRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BackupRsp:
 
     @property
     def id(self):
-        """Gets the id of this BackupRsp.
+        r"""Gets the id of this BackupRsp.
 
         快照id。
 
@@ -61,7 +61,7 @@ class BackupRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupRsp.
+        r"""Sets the id of this BackupRsp.
 
         快照id。
 
@@ -72,7 +72,7 @@ class BackupRsp:
 
     @property
     def name(self):
-        """Gets the name of this BackupRsp.
+        r"""Gets the name of this BackupRsp.
 
         快照名称。
 
@@ -83,7 +83,7 @@ class BackupRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupRsp.
+        r"""Sets the name of this BackupRsp.
 
         快照名称。
 

@@ -25,7 +25,7 @@ class CreateGlobalEipSegmentRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGlobalEipSegmentRequest
+        r"""CreateGlobalEipSegmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGlobalEipSegmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGlobalEipSegmentRequest.
+        r"""Gets the body of this CreateGlobalEipSegmentRequest.
 
         :return: The body of this CreateGlobalEipSegmentRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipSegmentRequestBody`
@@ -52,7 +52,7 @@ class CreateGlobalEipSegmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGlobalEipSegmentRequest.
+        r"""Sets the body of this CreateGlobalEipSegmentRequest.
 
         :param body: The body of this CreateGlobalEipSegmentRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipSegmentRequestBody`

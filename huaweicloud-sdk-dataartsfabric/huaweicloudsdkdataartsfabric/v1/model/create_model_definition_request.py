@@ -27,7 +27,7 @@ class CreateModelDefinitionRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """CreateModelDefinitionRequest
+        r"""CreateModelDefinitionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateModelDefinitionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateModelDefinitionRequest.
+        r"""Gets the workspace_id of this CreateModelDefinitionRequest.
 
         工作空间ID
 
@@ -60,7 +60,7 @@ class CreateModelDefinitionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateModelDefinitionRequest.
+        r"""Sets the workspace_id of this CreateModelDefinitionRequest.
 
         工作空间ID
 
@@ -71,7 +71,7 @@ class CreateModelDefinitionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateModelDefinitionRequest.
+        r"""Gets the body of this CreateModelDefinitionRequest.
 
         :return: The body of this CreateModelDefinitionRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CreateModelInput`
@@ -80,7 +80,7 @@ class CreateModelDefinitionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateModelDefinitionRequest.
+        r"""Sets the body of this CreateModelDefinitionRequest.
 
         :param body: The body of this CreateModelDefinitionRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.CreateModelInput`

@@ -27,7 +27,7 @@ class DataMaskingResult:
     }
 
     def __init__(self, result=None, count=None):
-        """DataMaskingResult
+        r"""DataMaskingResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataMaskingResult:
 
     @property
     def result(self):
-        """Gets the result of this DataMaskingResult.
+        r"""Gets the result of this DataMaskingResult.
 
         :return: The result of this DataMaskingResult.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -59,7 +59,7 @@ class DataMaskingResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DataMaskingResult.
+        r"""Sets the result of this DataMaskingResult.
 
         :param result: The result of this DataMaskingResult.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -68,7 +68,7 @@ class DataMaskingResult:
 
     @property
     def count(self):
-        """Gets the count of this DataMaskingResult.
+        r"""Gets the count of this DataMaskingResult.
 
         没有配置脱敏任务的表数量
 
@@ -79,7 +79,7 @@ class DataMaskingResult:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DataMaskingResult.
+        r"""Sets the count of this DataMaskingResult.
 
         没有配置脱敏任务的表数量
 

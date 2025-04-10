@@ -27,7 +27,7 @@ class ListHistoryRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """ListHistoryRequest
+        r"""ListHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListHistoryRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this ListHistoryRequest.
+        r"""Gets the data_store_id of this ListHistoryRequest.
 
         存储ID
 
@@ -60,7 +60,7 @@ class ListHistoryRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this ListHistoryRequest.
+        r"""Sets the data_store_id of this ListHistoryRequest.
 
         存储ID
 
@@ -71,7 +71,7 @@ class ListHistoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListHistoryRequest.
+        r"""Gets the body of this ListHistoryRequest.
 
         :return: The body of this ListHistoryRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`
@@ -80,7 +80,7 @@ class ListHistoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListHistoryRequest.
+        r"""Sets the body of this ListHistoryRequest.
 
         :param body: The body of this ListHistoryRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`

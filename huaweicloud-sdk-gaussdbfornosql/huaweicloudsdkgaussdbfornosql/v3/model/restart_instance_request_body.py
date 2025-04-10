@@ -25,7 +25,7 @@ class RestartInstanceRequestBody:
     }
 
     def __init__(self, node_id=None):
-        """RestartInstanceRequestBody
+        r"""RestartInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartInstanceRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this RestartInstanceRequestBody.
+        r"""Gets the node_id of this RestartInstanceRequestBody.
 
         待重启的节点ID。 仅GeminiDB Redis云原生部署模式集群实例支持传入节点ID重启对应节点。 不传则重启整个实例。
 
@@ -54,7 +54,7 @@ class RestartInstanceRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this RestartInstanceRequestBody.
+        r"""Sets the node_id of this RestartInstanceRequestBody.
 
         待重启的节点ID。 仅GeminiDB Redis云原生部署模式集群实例支持传入节点ID重启对应节点。 不传则重启整个实例。
 

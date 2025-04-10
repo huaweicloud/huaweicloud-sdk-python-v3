@@ -26,7 +26,7 @@ class DescribePermissionSetResponse(SdkResponse):
     }
 
     def __init__(self, permission_set=None):
-        """DescribePermissionSetResponse
+        r"""DescribePermissionSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DescribePermissionSetResponse(SdkResponse):
 
     @property
     def permission_set(self):
-        """Gets the permission_set of this DescribePermissionSetResponse.
+        r"""Gets the permission_set of this DescribePermissionSetResponse.
 
         :return: The permission_set of this DescribePermissionSetResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PermissionSetDto`
@@ -53,7 +53,7 @@ class DescribePermissionSetResponse(SdkResponse):
 
     @permission_set.setter
     def permission_set(self, permission_set):
-        """Sets the permission_set of this DescribePermissionSetResponse.
+        r"""Sets the permission_set of this DescribePermissionSetResponse.
 
         :param permission_set: The permission_set of this DescribePermissionSetResponse.
         :type permission_set: :class:`huaweicloudsdkidentitycenter.v1.PermissionSetDto`

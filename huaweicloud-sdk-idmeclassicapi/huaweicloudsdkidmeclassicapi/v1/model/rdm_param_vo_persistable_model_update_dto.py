@@ -27,7 +27,7 @@ class RDMParamVOPersistableModelUpdateDTO:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOPersistableModelUpdateDTO
+        r"""RDMParamVOPersistableModelUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOPersistableModelUpdateDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOPersistableModelUpdateDTO.
+        r"""Gets the application_id of this RDMParamVOPersistableModelUpdateDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -61,7 +61,7 @@ class RDMParamVOPersistableModelUpdateDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOPersistableModelUpdateDTO.
+        r"""Sets the application_id of this RDMParamVOPersistableModelUpdateDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -72,7 +72,7 @@ class RDMParamVOPersistableModelUpdateDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOPersistableModelUpdateDTO.
+        r"""Gets the params of this RDMParamVOPersistableModelUpdateDTO.
 
         :return: The params of this RDMParamVOPersistableModelUpdateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelUpdateDTO`
@@ -81,7 +81,7 @@ class RDMParamVOPersistableModelUpdateDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOPersistableModelUpdateDTO.
+        r"""Sets the params of this RDMParamVOPersistableModelUpdateDTO.
 
         :param params: The params of this RDMParamVOPersistableModelUpdateDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelUpdateDTO`

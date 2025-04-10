@@ -61,7 +61,7 @@ class QueryRecordSetWithLineAndTagsResp:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, tags=None, line=None, weight=None, health_check_id=None, alias_target=None):
-        """QueryRecordSetWithLineAndTagsResp
+        r"""QueryRecordSetWithLineAndTagsResp
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def id(self):
-        """Gets the id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the id of this QueryRecordSetWithLineAndTagsResp.
 
         Record Set的ID。
 
@@ -180,7 +180,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the id of this QueryRecordSetWithLineAndTagsResp.
 
         Record Set的ID。
 
@@ -191,7 +191,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def name(self):
-        """Gets the name of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the name of this QueryRecordSetWithLineAndTagsResp.
 
         Record Set的名称。
 
@@ -202,7 +202,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the name of this QueryRecordSetWithLineAndTagsResp.
 
         Record Set的名称。
 
@@ -213,7 +213,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def description(self):
-        """Gets the description of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the description of this QueryRecordSetWithLineAndTagsResp.
 
         Record Set的描述信息。
 
@@ -224,7 +224,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the description of this QueryRecordSetWithLineAndTagsResp.
 
         Record Set的描述信息。
 
@@ -235,7 +235,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the zone_id of this QueryRecordSetWithLineAndTagsResp.
 
         托管该记录的zone_id。
 
@@ -246,7 +246,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the zone_id of this QueryRecordSetWithLineAndTagsResp.
 
         托管该记录的zone_id。
 
@@ -257,7 +257,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the zone_name of this QueryRecordSetWithLineAndTagsResp.
 
         托管该记录的zone_name。
 
@@ -268,7 +268,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the zone_name of this QueryRecordSetWithLineAndTagsResp.
 
         托管该记录的zone_name。
 
@@ -279,7 +279,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def type(self):
-        """Gets the type of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the type of this QueryRecordSetWithLineAndTagsResp.
 
         记录类型。
 
@@ -290,7 +290,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the type of this QueryRecordSetWithLineAndTagsResp.
 
         记录类型。
 
@@ -301,7 +301,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def ttl(self):
-        """Gets the ttl of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the ttl of this QueryRecordSetWithLineAndTagsResp.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -312,7 +312,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the ttl of this QueryRecordSetWithLineAndTagsResp.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -323,7 +323,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def records(self):
-        """Gets the records of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the records of this QueryRecordSetWithLineAndTagsResp.
 
         域名解析后的值。
 
@@ -334,7 +334,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the records of this QueryRecordSetWithLineAndTagsResp.
 
         域名解析后的值。
 
@@ -345,7 +345,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the created_at of this QueryRecordSetWithLineAndTagsResp.
 
         创建时间。
 
@@ -356,7 +356,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the created_at of this QueryRecordSetWithLineAndTagsResp.
 
         创建时间。
 
@@ -367,7 +367,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the updated_at of this QueryRecordSetWithLineAndTagsResp.
 
         更新时间。
 
@@ -378,7 +378,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the updated_at of this QueryRecordSetWithLineAndTagsResp.
 
         更新时间。
 
@@ -389,7 +389,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def status(self):
-        """Gets the status of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the status of this QueryRecordSetWithLineAndTagsResp.
 
         资源状态。
 
@@ -400,7 +400,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the status of this QueryRecordSetWithLineAndTagsResp.
 
         资源状态。
 
@@ -411,7 +411,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def default(self):
-        """Gets the default of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the default of this QueryRecordSetWithLineAndTagsResp.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -422,7 +422,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the default of this QueryRecordSetWithLineAndTagsResp.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -433,7 +433,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the project_id of this QueryRecordSetWithLineAndTagsResp.
 
         该Record Set所属的项目ID。
 
@@ -444,7 +444,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the project_id of this QueryRecordSetWithLineAndTagsResp.
 
         该Record Set所属的项目ID。
 
@@ -455,7 +455,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def links(self):
-        """Gets the links of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the links of this QueryRecordSetWithLineAndTagsResp.
 
         :return: The links of this QueryRecordSetWithLineAndTagsResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -464,7 +464,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the links of this QueryRecordSetWithLineAndTagsResp.
 
         :param links: The links of this QueryRecordSetWithLineAndTagsResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -473,7 +473,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the tags of this QueryRecordSetWithLineAndTagsResp.
 
         资源标签。
 
@@ -484,7 +484,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the tags of this QueryRecordSetWithLineAndTagsResp.
 
         资源标签。
 
@@ -495,7 +495,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def line(self):
-        """Gets the line of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the line of this QueryRecordSetWithLineAndTagsResp.
 
         解析线路ID。
 
@@ -506,7 +506,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the line of this QueryRecordSetWithLineAndTagsResp.
 
         解析线路ID。
 
@@ -517,7 +517,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def weight(self):
-        """Gets the weight of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the weight of this QueryRecordSetWithLineAndTagsResp.
 
         解析记录的权重。
 
@@ -528,7 +528,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the weight of this QueryRecordSetWithLineAndTagsResp.
 
         解析记录的权重。
 
@@ -539,7 +539,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the health_check_id of this QueryRecordSetWithLineAndTagsResp.
 
         健康检查ID。
 
@@ -550,7 +550,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the health_check_id of this QueryRecordSetWithLineAndTagsResp.
 
         健康检查ID。
 
@@ -561,7 +561,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this QueryRecordSetWithLineAndTagsResp.
+        r"""Gets the alias_target of this QueryRecordSetWithLineAndTagsResp.
 
         :return: The alias_target of this QueryRecordSetWithLineAndTagsResp.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -570,7 +570,7 @@ class QueryRecordSetWithLineAndTagsResp:
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this QueryRecordSetWithLineAndTagsResp.
+        r"""Sets the alias_target of this QueryRecordSetWithLineAndTagsResp.
 
         :param alias_target: The alias_target of this QueryRecordSetWithLineAndTagsResp.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

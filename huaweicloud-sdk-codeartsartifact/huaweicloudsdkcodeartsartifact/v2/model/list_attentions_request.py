@@ -29,7 +29,7 @@ class ListAttentionsRequest:
     }
 
     def __init__(self, page_no=None, page_size=None, project_id=None):
-        """ListAttentionsRequest
+        r"""ListAttentionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAttentionsRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListAttentionsRequest.
+        r"""Gets the page_no of this ListAttentionsRequest.
 
         页码
 
@@ -68,7 +68,7 @@ class ListAttentionsRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListAttentionsRequest.
+        r"""Sets the page_no of this ListAttentionsRequest.
 
         页码
 
@@ -79,7 +79,7 @@ class ListAttentionsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAttentionsRequest.
+        r"""Gets the page_size of this ListAttentionsRequest.
 
         每页大小
 
@@ -90,7 +90,7 @@ class ListAttentionsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAttentionsRequest.
+        r"""Sets the page_size of this ListAttentionsRequest.
 
         每页大小
 
@@ -101,7 +101,7 @@ class ListAttentionsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAttentionsRequest.
+        r"""Gets the project_id of this ListAttentionsRequest.
 
         项目id
 
@@ -112,7 +112,7 @@ class ListAttentionsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAttentionsRequest.
+        r"""Sets the project_id of this ListAttentionsRequest.
 
         项目id
 

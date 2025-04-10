@@ -27,7 +27,7 @@ class GlanceDeleteTagRequest:
     }
 
     def __init__(self, image_id=None, tag=None):
-        """GlanceDeleteTagRequest
+        r"""GlanceDeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GlanceDeleteTagRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceDeleteTagRequest.
+        r"""Gets the image_id of this GlanceDeleteTagRequest.
 
         镜像id
 
@@ -59,7 +59,7 @@ class GlanceDeleteTagRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceDeleteTagRequest.
+        r"""Sets the image_id of this GlanceDeleteTagRequest.
 
         镜像id
 
@@ -70,7 +70,7 @@ class GlanceDeleteTagRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this GlanceDeleteTagRequest.
+        r"""Gets the tag of this GlanceDeleteTagRequest.
 
         新增的tag。字符串中不能包含“=”和“.”。
 
@@ -81,7 +81,7 @@ class GlanceDeleteTagRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this GlanceDeleteTagRequest.
+        r"""Sets the tag of this GlanceDeleteTagRequest.
 
         新增的tag。字符串中不能包含“=”和“.”。
 

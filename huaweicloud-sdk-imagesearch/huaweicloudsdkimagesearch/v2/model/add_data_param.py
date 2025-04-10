@@ -41,7 +41,7 @@ class AddDataParam:
     }
 
     def __init__(self, force=None, item_id=None, desc=None, custom_tags=None, custom_num_tags=None, image_base64=None, image_url=None, keywords=None, optional_params=None):
-        """AddDataParam
+        r"""AddDataParam
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class AddDataParam:
 
     @property
     def force(self):
-        """Gets the force of this AddDataParam.
+        r"""Gets the force of this AddDataParam.
 
         是否强制添加数据，默认为false。 - false: 数据已存在则不进行添加。 - true: 数据已存在仍然覆盖添加。
 
@@ -109,7 +109,7 @@ class AddDataParam:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this AddDataParam.
+        r"""Sets the force of this AddDataParam.
 
         是否强制添加数据，默认为false。 - false: 数据已存在则不进行添加。 - true: 数据已存在仍然覆盖添加。
 
@@ -120,7 +120,7 @@ class AddDataParam:
 
     @property
     def item_id(self):
-        """Gets the item_id of this AddDataParam.
+        r"""Gets the item_id of this AddDataParam.
 
         数据的服务实例级唯一标识，字符长度范围为[1, 256]。
 
@@ -131,7 +131,7 @@ class AddDataParam:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this AddDataParam.
+        r"""Sets the item_id of this AddDataParam.
 
         数据的服务实例级唯一标识，字符长度范围为[1, 256]。
 
@@ -142,7 +142,7 @@ class AddDataParam:
 
     @property
     def desc(self):
-        """Gets the desc of this AddDataParam.
+        r"""Gets the desc of this AddDataParam.
 
         数据的描述信息，字符长度范围为[1, 2048]。
 
@@ -153,7 +153,7 @@ class AddDataParam:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this AddDataParam.
+        r"""Sets the desc of this AddDataParam.
 
         数据的描述信息，字符长度范围为[1, 2048]。
 
@@ -164,7 +164,7 @@ class AddDataParam:
 
     @property
     def custom_tags(self):
-        """Gets the custom_tags of this AddDataParam.
+        r"""Gets the custom_tags of this AddDataParam.
 
         数据的自定义字符标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为字符串，字符长度范围为[1, 64]。
 
@@ -175,7 +175,7 @@ class AddDataParam:
 
     @custom_tags.setter
     def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this AddDataParam.
+        r"""Sets the custom_tags of this AddDataParam.
 
         数据的自定义字符标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为字符串，字符长度范围为[1, 64]。
 
@@ -186,7 +186,7 @@ class AddDataParam:
 
     @property
     def custom_num_tags(self):
-        """Gets the custom_num_tags of this AddDataParam.
+        r"""Gets the custom_num_tags of this AddDataParam.
 
         数据的自定义数值标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为数值，格式为double。
 
@@ -197,7 +197,7 @@ class AddDataParam:
 
     @custom_num_tags.setter
     def custom_num_tags(self, custom_num_tags):
-        """Sets the custom_num_tags of this AddDataParam.
+        r"""Sets the custom_num_tags of this AddDataParam.
 
         数据的自定义数值标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为数值，格式为double。
 
@@ -208,7 +208,7 @@ class AddDataParam:
 
     @property
     def image_base64(self):
-        """Gets the image_base64 of this AddDataParam.
+        r"""Gets the image_base64 of this AddDataParam.
 
         图像文件的base64字符串，图像入库时，与image_url二选一。要求如下： - 格式：目前仅支持JPEG/JPG/PNG/BMP/WEBP格式的图像。 - 大小：图像文件大小要求不超过5M。 - 尺寸：默认情况下，要求图像的最短边大于64px，最长边小于4096px。部分服务类型有特殊要求，可参见服务类型说明。 - 其他：图片中不能包含旋转信息。
 
@@ -219,7 +219,7 @@ class AddDataParam:
 
     @image_base64.setter
     def image_base64(self, image_base64):
-        """Sets the image_base64 of this AddDataParam.
+        r"""Sets the image_base64 of this AddDataParam.
 
         图像文件的base64字符串，图像入库时，与image_url二选一。要求如下： - 格式：目前仅支持JPEG/JPG/PNG/BMP/WEBP格式的图像。 - 大小：图像文件大小要求不超过5M。 - 尺寸：默认情况下，要求图像的最短边大于64px，最长边小于4096px。部分服务类型有特殊要求，可参见服务类型说明。 - 其他：图片中不能包含旋转信息。
 
@@ -230,7 +230,7 @@ class AddDataParam:
 
     @property
     def image_url(self):
-        """Gets the image_url of this AddDataParam.
+        r"""Gets the image_url of this AddDataParam.
 
         图像文件的服务可访问URL，字符长度范围为[1, 4096]。图像入库时，与image_base64二选一。
 
@@ -241,7 +241,7 @@ class AddDataParam:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this AddDataParam.
+        r"""Sets the image_url of this AddDataParam.
 
         图像文件的服务可访问URL，字符长度范围为[1, 4096]。图像入库时，与image_base64二选一。
 
@@ -252,7 +252,7 @@ class AddDataParam:
 
     @property
     def keywords(self):
-        """Gets the keywords of this AddDataParam.
+        r"""Gets the keywords of this AddDataParam.
 
         关键词列表，关键词数量范围为[1, 100]，关键词字符长度范围为[1, 64]。支持关键词搜索的服务实例添加数据时，如给定此参数，则直接使用给定的keywords作为关键词，否则会自动生成对应的keywords。
 
@@ -263,7 +263,7 @@ class AddDataParam:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this AddDataParam.
+        r"""Sets the keywords of this AddDataParam.
 
         关键词列表，关键词数量范围为[1, 100]，关键词字符长度范围为[1, 64]。支持关键词搜索的服务实例添加数据时，如给定此参数，则直接使用给定的keywords作为关键词，否则会自动生成对应的keywords。
 
@@ -274,7 +274,7 @@ class AddDataParam:
 
     @property
     def optional_params(self):
-        """Gets the optional_params of this AddDataParam.
+        r"""Gets the optional_params of this AddDataParam.
 
         :return: The optional_params of this AddDataParam.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.AddDataOptionalParam`
@@ -283,7 +283,7 @@ class AddDataParam:
 
     @optional_params.setter
     def optional_params(self, optional_params):
-        """Sets the optional_params of this AddDataParam.
+        r"""Sets the optional_params of this AddDataParam.
 
         :param optional_params: The optional_params of this AddDataParam.
         :type optional_params: :class:`huaweicloudsdkimagesearch.v2.AddDataOptionalParam`

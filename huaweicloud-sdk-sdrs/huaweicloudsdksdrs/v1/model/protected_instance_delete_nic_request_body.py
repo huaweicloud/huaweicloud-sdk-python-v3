@@ -25,7 +25,7 @@ class ProtectedInstanceDeleteNicRequestBody:
     }
 
     def __init__(self, nic_id=None):
-        """ProtectedInstanceDeleteNicRequestBody
+        r"""ProtectedInstanceDeleteNicRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProtectedInstanceDeleteNicRequestBody:
 
     @property
     def nic_id(self):
-        """Gets the nic_id of this ProtectedInstanceDeleteNicRequestBody.
+        r"""Gets the nic_id of this ProtectedInstanceDeleteNicRequestBody.
 
         网卡Port ID。
 
@@ -53,7 +53,7 @@ class ProtectedInstanceDeleteNicRequestBody:
 
     @nic_id.setter
     def nic_id(self, nic_id):
-        """Sets the nic_id of this ProtectedInstanceDeleteNicRequestBody.
+        r"""Sets the nic_id of this ProtectedInstanceDeleteNicRequestBody.
 
         网卡Port ID。
 

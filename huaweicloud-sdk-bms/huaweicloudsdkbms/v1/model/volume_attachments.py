@@ -31,7 +31,7 @@ class VolumeAttachments:
     }
 
     def __init__(self, id=None, server_id=None, volume_id=None, device=None):
-        """VolumeAttachments
+        r"""VolumeAttachments
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VolumeAttachments:
 
     @property
     def id(self):
-        """Gets the id of this VolumeAttachments.
+        r"""Gets the id of this VolumeAttachments.
 
         挂载资源ID
 
@@ -75,7 +75,7 @@ class VolumeAttachments:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeAttachments.
+        r"""Sets the id of this VolumeAttachments.
 
         挂载资源ID
 
@@ -86,7 +86,7 @@ class VolumeAttachments:
 
     @property
     def server_id(self):
-        """Gets the server_id of this VolumeAttachments.
+        r"""Gets the server_id of this VolumeAttachments.
 
         所属裸金属服务器ID
 
@@ -97,7 +97,7 @@ class VolumeAttachments:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this VolumeAttachments.
+        r"""Sets the server_id of this VolumeAttachments.
 
         所属裸金属服务器ID
 
@@ -108,7 +108,7 @@ class VolumeAttachments:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this VolumeAttachments.
+        r"""Gets the volume_id of this VolumeAttachments.
 
         挂载云磁盘ID
 
@@ -119,7 +119,7 @@ class VolumeAttachments:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this VolumeAttachments.
+        r"""Sets the volume_id of this VolumeAttachments.
 
         挂载云磁盘ID
 
@@ -130,7 +130,7 @@ class VolumeAttachments:
 
     @property
     def device(self):
-        """Gets the device of this VolumeAttachments.
+        r"""Gets the device of this VolumeAttachments.
 
         挂载目录，例如“/dev/sdd”。
 
@@ -141,7 +141,7 @@ class VolumeAttachments:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this VolumeAttachments.
+        r"""Sets the device of this VolumeAttachments.
 
         挂载目录，例如“/dev/sdd”。
 

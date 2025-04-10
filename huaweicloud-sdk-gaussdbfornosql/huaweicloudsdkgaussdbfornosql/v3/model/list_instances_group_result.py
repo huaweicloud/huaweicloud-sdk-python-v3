@@ -31,7 +31,7 @@ class ListInstancesGroupResult:
     }
 
     def __init__(self, id=None, status=None, volume=None, nodes=None):
-        """ListInstancesGroupResult
+        r"""ListInstancesGroupResult
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListInstancesGroupResult:
 
     @property
     def id(self):
-        """Gets the id of this ListInstancesGroupResult.
+        r"""Gets the id of this ListInstancesGroupResult.
 
         组ID。
 
@@ -71,7 +71,7 @@ class ListInstancesGroupResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstancesGroupResult.
+        r"""Sets the id of this ListInstancesGroupResult.
 
         组ID。
 
@@ -82,7 +82,7 @@ class ListInstancesGroupResult:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesGroupResult.
+        r"""Gets the status of this ListInstancesGroupResult.
 
         组状态。
 
@@ -93,7 +93,7 @@ class ListInstancesGroupResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesGroupResult.
+        r"""Sets the status of this ListInstancesGroupResult.
 
         组状态。
 
@@ -104,7 +104,7 @@ class ListInstancesGroupResult:
 
     @property
     def volume(self):
-        """Gets the volume of this ListInstancesGroupResult.
+        r"""Gets the volume of this ListInstancesGroupResult.
 
         :return: The volume of this ListInstancesGroupResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`
@@ -113,7 +113,7 @@ class ListInstancesGroupResult:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ListInstancesGroupResult.
+        r"""Sets the volume of this ListInstancesGroupResult.
 
         :param volume: The volume of this ListInstancesGroupResult.
         :type volume: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`
@@ -122,7 +122,7 @@ class ListInstancesGroupResult:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListInstancesGroupResult.
+        r"""Gets the nodes of this ListInstancesGroupResult.
 
         节点信息。
 
@@ -133,7 +133,7 @@ class ListInstancesGroupResult:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListInstancesGroupResult.
+        r"""Sets the nodes of this ListInstancesGroupResult.
 
         节点信息。
 

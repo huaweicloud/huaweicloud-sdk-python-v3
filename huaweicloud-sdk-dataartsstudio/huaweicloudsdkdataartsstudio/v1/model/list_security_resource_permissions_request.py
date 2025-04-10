@@ -39,7 +39,7 @@ class ListSecurityResourcePermissionsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, policy_name=None, resource_name=None, member_name=None, order_by=None, order_by_asc=None):
-        """ListSecurityResourcePermissionsRequest
+        r"""ListSecurityResourcePermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the workspace of this ListSecurityResourcePermissionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -102,7 +102,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the workspace of this ListSecurityResourcePermissionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -113,7 +113,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the limit of this ListSecurityResourcePermissionsRequest.
 
         limit
 
@@ -124,7 +124,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the limit of this ListSecurityResourcePermissionsRequest.
 
         limit
 
@@ -135,7 +135,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the offset of this ListSecurityResourcePermissionsRequest.
 
         offset
 
@@ -146,7 +146,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the offset of this ListSecurityResourcePermissionsRequest.
 
         offset
 
@@ -157,7 +157,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the policy_name of this ListSecurityResourcePermissionsRequest.
 
         策略名称。
 
@@ -168,7 +168,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the policy_name of this ListSecurityResourcePermissionsRequest.
 
         策略名称。
 
@@ -179,7 +179,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the resource_name of this ListSecurityResourcePermissionsRequest.
 
         授权资源名称。
 
@@ -190,7 +190,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the resource_name of this ListSecurityResourcePermissionsRequest.
 
         授权资源名称。
 
@@ -201,7 +201,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def member_name(self):
-        """Gets the member_name of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the member_name of this ListSecurityResourcePermissionsRequest.
 
         成员名称
 
@@ -212,7 +212,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the member_name of this ListSecurityResourcePermissionsRequest.
 
         成员名称
 
@@ -223,7 +223,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the order_by of this ListSecurityResourcePermissionsRequest.
 
         排序参数, NAME,UPDATE_TIME。
 
@@ -234,7 +234,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the order_by of this ListSecurityResourcePermissionsRequest.
 
         排序参数, NAME,UPDATE_TIME。
 
@@ -245,7 +245,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @property
     def order_by_asc(self):
-        """Gets the order_by_asc of this ListSecurityResourcePermissionsRequest.
+        r"""Gets the order_by_asc of this ListSecurityResourcePermissionsRequest.
 
         是否升序（仅指定排序参数时有效）
 
@@ -256,7 +256,7 @@ class ListSecurityResourcePermissionsRequest:
 
     @order_by_asc.setter
     def order_by_asc(self, order_by_asc):
-        """Sets the order_by_asc of this ListSecurityResourcePermissionsRequest.
+        r"""Sets the order_by_asc of this ListSecurityResourcePermissionsRequest.
 
         是否升序（仅指定排序参数时有效）
 

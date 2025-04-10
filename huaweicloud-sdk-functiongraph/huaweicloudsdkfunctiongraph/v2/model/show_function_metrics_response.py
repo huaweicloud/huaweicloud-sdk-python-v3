@@ -46,7 +46,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
     }
 
     def __init__(self, concurrency_num=None, count=None, duration=None, fail_count=None, function_error_count=None, system_error_count=None, instance_num=None, max_duration=None, min_duration=None, reject_count=None, reserved_instance_num=None):
-        """ShowFunctionMetricsResponse
+        r"""ShowFunctionMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def concurrency_num(self):
-        """Gets the concurrency_num of this ShowFunctionMetricsResponse.
+        r"""Gets the concurrency_num of this ShowFunctionMetricsResponse.
 
         并发数
 
@@ -125,7 +125,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @concurrency_num.setter
     def concurrency_num(self, concurrency_num):
-        """Sets the concurrency_num of this ShowFunctionMetricsResponse.
+        r"""Sets the concurrency_num of this ShowFunctionMetricsResponse.
 
         并发数
 
@@ -136,7 +136,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowFunctionMetricsResponse.
+        r"""Gets the count of this ShowFunctionMetricsResponse.
 
         调用次数
 
@@ -147,7 +147,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowFunctionMetricsResponse.
+        r"""Sets the count of this ShowFunctionMetricsResponse.
 
         调用次数
 
@@ -158,7 +158,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowFunctionMetricsResponse.
+        r"""Gets the duration of this ShowFunctionMetricsResponse.
 
         平均时延，单位毫秒
 
@@ -169,7 +169,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowFunctionMetricsResponse.
+        r"""Sets the duration of this ShowFunctionMetricsResponse.
 
         平均时延，单位毫秒
 
@@ -180,7 +180,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this ShowFunctionMetricsResponse.
+        r"""Gets the fail_count of this ShowFunctionMetricsResponse.
 
         错误次数
 
@@ -191,7 +191,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this ShowFunctionMetricsResponse.
+        r"""Sets the fail_count of this ShowFunctionMetricsResponse.
 
         错误次数
 
@@ -202,7 +202,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def function_error_count(self):
-        """Gets the function_error_count of this ShowFunctionMetricsResponse.
+        r"""Gets the function_error_count of this ShowFunctionMetricsResponse.
 
         函数错误次数
 
@@ -213,7 +213,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @function_error_count.setter
     def function_error_count(self, function_error_count):
-        """Sets the function_error_count of this ShowFunctionMetricsResponse.
+        r"""Sets the function_error_count of this ShowFunctionMetricsResponse.
 
         函数错误次数
 
@@ -224,7 +224,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def system_error_count(self):
-        """Gets the system_error_count of this ShowFunctionMetricsResponse.
+        r"""Gets the system_error_count of this ShowFunctionMetricsResponse.
 
         系统错误次数
 
@@ -235,7 +235,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @system_error_count.setter
     def system_error_count(self, system_error_count):
-        """Sets the system_error_count of this ShowFunctionMetricsResponse.
+        r"""Sets the system_error_count of this ShowFunctionMetricsResponse.
 
         系统错误次数
 
@@ -246,7 +246,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ShowFunctionMetricsResponse.
+        r"""Gets the instance_num of this ShowFunctionMetricsResponse.
 
         弹性实例数
 
@@ -257,7 +257,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ShowFunctionMetricsResponse.
+        r"""Sets the instance_num of this ShowFunctionMetricsResponse.
 
         弹性实例数
 
@@ -268,7 +268,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def max_duration(self):
-        """Gets the max_duration of this ShowFunctionMetricsResponse.
+        r"""Gets the max_duration of this ShowFunctionMetricsResponse.
 
         最大时延，单位毫秒
 
@@ -279,7 +279,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @max_duration.setter
     def max_duration(self, max_duration):
-        """Sets the max_duration of this ShowFunctionMetricsResponse.
+        r"""Sets the max_duration of this ShowFunctionMetricsResponse.
 
         最大时延，单位毫秒
 
@@ -290,7 +290,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def min_duration(self):
-        """Gets the min_duration of this ShowFunctionMetricsResponse.
+        r"""Gets the min_duration of this ShowFunctionMetricsResponse.
 
         最小时延，单位毫秒
 
@@ -301,7 +301,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @min_duration.setter
     def min_duration(self, min_duration):
-        """Sets the min_duration of this ShowFunctionMetricsResponse.
+        r"""Sets the min_duration of this ShowFunctionMetricsResponse.
 
         最小时延，单位毫秒
 
@@ -312,7 +312,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def reject_count(self):
-        """Gets the reject_count of this ShowFunctionMetricsResponse.
+        r"""Gets the reject_count of this ShowFunctionMetricsResponse.
 
         被拒绝次数
 
@@ -323,7 +323,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @reject_count.setter
     def reject_count(self, reject_count):
-        """Sets the reject_count of this ShowFunctionMetricsResponse.
+        r"""Sets the reject_count of this ShowFunctionMetricsResponse.
 
         被拒绝次数
 
@@ -334,7 +334,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @property
     def reserved_instance_num(self):
-        """Gets the reserved_instance_num of this ShowFunctionMetricsResponse.
+        r"""Gets the reserved_instance_num of this ShowFunctionMetricsResponse.
 
         预留实例数
 
@@ -345,7 +345,7 @@ class ShowFunctionMetricsResponse(SdkResponse):
 
     @reserved_instance_num.setter
     def reserved_instance_num(self, reserved_instance_num):
-        """Sets the reserved_instance_num of this ShowFunctionMetricsResponse.
+        r"""Sets the reserved_instance_num of this ShowFunctionMetricsResponse.
 
         预留实例数
 

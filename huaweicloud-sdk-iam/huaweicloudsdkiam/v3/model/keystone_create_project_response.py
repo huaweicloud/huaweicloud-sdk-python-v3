@@ -26,7 +26,7 @@ class KeystoneCreateProjectResponse(SdkResponse):
     }
 
     def __init__(self, project=None):
-        """KeystoneCreateProjectResponse
+        r"""KeystoneCreateProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneCreateProjectResponse(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this KeystoneCreateProjectResponse.
+        r"""Gets the project of this KeystoneCreateProjectResponse.
 
         :return: The project of this KeystoneCreateProjectResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthProjectResult`
@@ -53,7 +53,7 @@ class KeystoneCreateProjectResponse(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this KeystoneCreateProjectResponse.
+        r"""Sets the project of this KeystoneCreateProjectResponse.
 
         :param project: The project of this KeystoneCreateProjectResponse.
         :type project: :class:`huaweicloudsdkiam.v3.AuthProjectResult`

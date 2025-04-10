@@ -29,7 +29,7 @@ class ASICAcceleratorInfo:
     }
 
     def __init__(self, name=None, count=None, memory_mb=None):
-        """ASICAcceleratorInfo
+        r"""ASICAcceleratorInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ASICAcceleratorInfo:
 
     @property
     def name(self):
-        """Gets the name of this ASICAcceleratorInfo.
+        r"""Gets the name of this ASICAcceleratorInfo.
 
         ASIC设备名称。
 
@@ -68,7 +68,7 @@ class ASICAcceleratorInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ASICAcceleratorInfo.
+        r"""Sets the name of this ASICAcceleratorInfo.
 
         ASIC设备名称。
 
@@ -79,7 +79,7 @@ class ASICAcceleratorInfo:
 
     @property
     def count(self):
-        """Gets the count of this ASICAcceleratorInfo.
+        r"""Gets the count of this ASICAcceleratorInfo.
 
         ASIC设备数量。
 
@@ -90,7 +90,7 @@ class ASICAcceleratorInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ASICAcceleratorInfo.
+        r"""Sets the count of this ASICAcceleratorInfo.
 
         ASIC设备数量。
 
@@ -101,7 +101,7 @@ class ASICAcceleratorInfo:
 
     @property
     def memory_mb(self):
-        """Gets the memory_mb of this ASICAcceleratorInfo.
+        r"""Gets the memory_mb of this ASICAcceleratorInfo.
 
         ASIC设备的内存，单位为MB。
 
@@ -112,7 +112,7 @@ class ASICAcceleratorInfo:
 
     @memory_mb.setter
     def memory_mb(self, memory_mb):
-        """Sets the memory_mb of this ASICAcceleratorInfo.
+        r"""Sets the memory_mb of this ASICAcceleratorInfo.
 
         ASIC设备的内存，单位为MB。
 

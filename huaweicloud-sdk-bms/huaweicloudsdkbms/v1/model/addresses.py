@@ -25,7 +25,7 @@ class Addresses:
     }
 
     def __init__(self, vpc_id=None):
-        """Addresses
+        r"""Addresses
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Addresses:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Addresses.
+        r"""Gets the vpc_id of this Addresses.
 
         裸金属服务器所属网络信息。key表示裸金属服务器使用的虚拟私有云的ID。value为网络详细信息
 
@@ -53,7 +53,7 @@ class Addresses:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Addresses.
+        r"""Sets the vpc_id of this Addresses.
 
         裸金属服务器所属网络信息。key表示裸金属服务器使用的虚拟私有云的ID。value为网络详细信息
 

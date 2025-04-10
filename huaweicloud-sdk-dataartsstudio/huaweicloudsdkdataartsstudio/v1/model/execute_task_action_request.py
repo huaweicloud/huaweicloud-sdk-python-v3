@@ -29,7 +29,7 @@ class ExecuteTaskActionRequest:
     }
 
     def __init__(self, workspace=None, task_id=None, action=None):
-        """ExecuteTaskActionRequest
+        r"""ExecuteTaskActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExecuteTaskActionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExecuteTaskActionRequest.
+        r"""Gets the workspace of this ExecuteTaskActionRequest.
 
         DataArts Studio工作空间ID
 
@@ -65,7 +65,7 @@ class ExecuteTaskActionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExecuteTaskActionRequest.
+        r"""Sets the workspace of this ExecuteTaskActionRequest.
 
         DataArts Studio工作空间ID
 
@@ -76,7 +76,7 @@ class ExecuteTaskActionRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExecuteTaskActionRequest.
+        r"""Gets the task_id of this ExecuteTaskActionRequest.
 
         任务id
 
@@ -87,7 +87,7 @@ class ExecuteTaskActionRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExecuteTaskActionRequest.
+        r"""Sets the task_id of this ExecuteTaskActionRequest.
 
         任务id
 
@@ -98,7 +98,7 @@ class ExecuteTaskActionRequest:
 
     @property
     def action(self):
-        """Gets the action of this ExecuteTaskActionRequest.
+        r"""Gets the action of this ExecuteTaskActionRequest.
 
         启动、调度、停止操作标识
 
@@ -109,7 +109,7 @@ class ExecuteTaskActionRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ExecuteTaskActionRequest.
+        r"""Sets the action of this ExecuteTaskActionRequest.
 
         启动、调度、停止操作标识
 

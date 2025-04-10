@@ -26,7 +26,7 @@ class GatewayTypeEnum:
     }
 
     def __init__(self):
-        """GatewayTypeEnum
+        r"""GatewayTypeEnum
 
         The model defined in huaweicloud sdk
 

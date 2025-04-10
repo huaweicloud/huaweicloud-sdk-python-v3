@@ -31,7 +31,7 @@ class VersionStrategyRules:
     }
 
     def __init__(self, rule_type=None, param=None, op=None, value=None):
-        """VersionStrategyRules
+        r"""VersionStrategyRules
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VersionStrategyRules:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this VersionStrategyRules.
+        r"""Gets the rule_type of this VersionStrategyRules.
 
         参数类型。
 
@@ -75,7 +75,7 @@ class VersionStrategyRules:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this VersionStrategyRules.
+        r"""Sets the rule_type of this VersionStrategyRules.
 
         参数类型。
 
@@ -86,7 +86,7 @@ class VersionStrategyRules:
 
     @property
     def param(self):
-        """Gets the param of this VersionStrategyRules.
+        r"""Gets the param of this VersionStrategyRules.
 
         规则参数名, 只支持大小写字母，数字，下划线，中划线。
 
@@ -97,7 +97,7 @@ class VersionStrategyRules:
 
     @param.setter
     def param(self, param):
-        """Sets the param of this VersionStrategyRules.
+        r"""Sets the param of this VersionStrategyRules.
 
         规则参数名, 只支持大小写字母，数字，下划线，中划线。
 
@@ -108,7 +108,7 @@ class VersionStrategyRules:
 
     @property
     def op(self):
-        """Gets the op of this VersionStrategyRules.
+        r"""Gets the op of this VersionStrategyRules.
 
         规则匹配操作符，目前仅需支持 = 或者in。
 
@@ -119,7 +119,7 @@ class VersionStrategyRules:
 
     @op.setter
     def op(self, op):
-        """Sets the op of this VersionStrategyRules.
+        r"""Sets the op of this VersionStrategyRules.
 
         规则匹配操作符，目前仅需支持 = 或者in。
 
@@ -130,7 +130,7 @@ class VersionStrategyRules:
 
     @property
     def value(self):
-        """Gets the value of this VersionStrategyRules.
+        r"""Gets the value of this VersionStrategyRules.
 
         规则值，如果op为in，则为逗号分隔的多值字符串
 
@@ -141,7 +141,7 @@ class VersionStrategyRules:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this VersionStrategyRules.
+        r"""Sets the value of this VersionStrategyRules.
 
         规则值，如果op为in，则为逗号分隔的多值字符串
 

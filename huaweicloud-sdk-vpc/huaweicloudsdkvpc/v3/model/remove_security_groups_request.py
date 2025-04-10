@@ -27,7 +27,7 @@ class RemoveSecurityGroupsRequest:
     }
 
     def __init__(self, port_id=None, body=None):
-        """RemoveSecurityGroupsRequest
+        r"""RemoveSecurityGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveSecurityGroupsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this RemoveSecurityGroupsRequest.
+        r"""Gets the port_id of this RemoveSecurityGroupsRequest.
 
         端口的唯一标识
 
@@ -60,7 +60,7 @@ class RemoveSecurityGroupsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this RemoveSecurityGroupsRequest.
+        r"""Sets the port_id of this RemoveSecurityGroupsRequest.
 
         端口的唯一标识
 
@@ -71,7 +71,7 @@ class RemoveSecurityGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveSecurityGroupsRequest.
+        r"""Gets the body of this RemoveSecurityGroupsRequest.
 
         :return: The body of this RemoveSecurityGroupsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveSecurityGroupsRequestBody`
@@ -80,7 +80,7 @@ class RemoveSecurityGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveSecurityGroupsRequest.
+        r"""Sets the body of this RemoveSecurityGroupsRequest.
 
         :param body: The body of this RemoveSecurityGroupsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.RemoveSecurityGroupsRequestBody`

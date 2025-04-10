@@ -60,7 +60,7 @@ class UploadAppResponse(SdkResponse):
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, version=None, description=None, authorization_type=None, app_file_store=None, app_icon_url=None, install_type=None, install_command=None, uninstall_command=None, support_os=None, status=None, application_source=None, create_time=None, catalog_id=None, catalog=None, install_info=None):
-        """UploadAppResponse
+        r"""UploadAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UploadAppResponse.
+        r"""Gets the id of this UploadAppResponse.
 
         唯一标识。
 
@@ -174,7 +174,7 @@ class UploadAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadAppResponse.
+        r"""Sets the id of this UploadAppResponse.
 
         唯一标识。
 
@@ -185,7 +185,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this UploadAppResponse.
+        r"""Gets the tenant_id of this UploadAppResponse.
 
         租户id。
 
@@ -196,7 +196,7 @@ class UploadAppResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this UploadAppResponse.
+        r"""Sets the tenant_id of this UploadAppResponse.
 
         租户id。
 
@@ -207,7 +207,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UploadAppResponse.
+        r"""Gets the name of this UploadAppResponse.
 
         应用名称。
 
@@ -218,7 +218,7 @@ class UploadAppResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadAppResponse.
+        r"""Sets the name of this UploadAppResponse.
 
         应用名称。
 
@@ -229,7 +229,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UploadAppResponse.
+        r"""Gets the version of this UploadAppResponse.
 
         版本号。
 
@@ -240,7 +240,7 @@ class UploadAppResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UploadAppResponse.
+        r"""Sets the version of this UploadAppResponse.
 
         版本号。
 
@@ -251,7 +251,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UploadAppResponse.
+        r"""Gets the description of this UploadAppResponse.
 
         描述。
 
@@ -262,7 +262,7 @@ class UploadAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadAppResponse.
+        r"""Sets the description of this UploadAppResponse.
 
         描述。
 
@@ -273,7 +273,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this UploadAppResponse.
+        r"""Gets the authorization_type of this UploadAppResponse.
 
         :return: The authorization_type of this UploadAppResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -282,7 +282,7 @@ class UploadAppResponse(SdkResponse):
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this UploadAppResponse.
+        r"""Sets the authorization_type of this UploadAppResponse.
 
         :param authorization_type: The authorization_type of this UploadAppResponse.
         :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -291,7 +291,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def app_file_store(self):
-        """Gets the app_file_store of this UploadAppResponse.
+        r"""Gets the app_file_store of this UploadAppResponse.
 
         :return: The app_file_store of this UploadAppResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -300,7 +300,7 @@ class UploadAppResponse(SdkResponse):
 
     @app_file_store.setter
     def app_file_store(self, app_file_store):
-        """Sets the app_file_store of this UploadAppResponse.
+        r"""Sets the app_file_store of this UploadAppResponse.
 
         :param app_file_store: The app_file_store of this UploadAppResponse.
         :type app_file_store: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -309,7 +309,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def app_icon_url(self):
-        """Gets the app_icon_url of this UploadAppResponse.
+        r"""Gets the app_icon_url of this UploadAppResponse.
 
         应用图标路径。
 
@@ -320,7 +320,7 @@ class UploadAppResponse(SdkResponse):
 
     @app_icon_url.setter
     def app_icon_url(self, app_icon_url):
-        """Sets the app_icon_url of this UploadAppResponse.
+        r"""Sets the app_icon_url of this UploadAppResponse.
 
         应用图标路径。
 
@@ -331,7 +331,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def install_type(self):
-        """Gets the install_type of this UploadAppResponse.
+        r"""Gets the install_type of this UploadAppResponse.
 
         :return: The install_type of this UploadAppResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -340,7 +340,7 @@ class UploadAppResponse(SdkResponse):
 
     @install_type.setter
     def install_type(self, install_type):
-        """Sets the install_type of this UploadAppResponse.
+        r"""Sets the install_type of this UploadAppResponse.
 
         :param install_type: The install_type of this UploadAppResponse.
         :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -349,7 +349,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def install_command(self):
-        """Gets the install_command of this UploadAppResponse.
+        r"""Gets the install_command of this UploadAppResponse.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -360,7 +360,7 @@ class UploadAppResponse(SdkResponse):
 
     @install_command.setter
     def install_command(self, install_command):
-        """Sets the install_command of this UploadAppResponse.
+        r"""Sets the install_command of this UploadAppResponse.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -371,7 +371,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def uninstall_command(self):
-        """Gets the uninstall_command of this UploadAppResponse.
+        r"""Gets the uninstall_command of this UploadAppResponse.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -382,7 +382,7 @@ class UploadAppResponse(SdkResponse):
 
     @uninstall_command.setter
     def uninstall_command(self, uninstall_command):
-        """Sets the uninstall_command of this UploadAppResponse.
+        r"""Sets the uninstall_command of this UploadAppResponse.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -393,7 +393,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def support_os(self):
-        """Gets the support_os of this UploadAppResponse.
+        r"""Gets the support_os of this UploadAppResponse.
 
         :return: The support_os of this UploadAppResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -402,7 +402,7 @@ class UploadAppResponse(SdkResponse):
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this UploadAppResponse.
+        r"""Sets the support_os of this UploadAppResponse.
 
         :param support_os: The support_os of this UploadAppResponse.
         :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -411,7 +411,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UploadAppResponse.
+        r"""Gets the status of this UploadAppResponse.
 
         :return: The status of this UploadAppResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
@@ -420,7 +420,7 @@ class UploadAppResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadAppResponse.
+        r"""Sets the status of this UploadAppResponse.
 
         :param status: The status of this UploadAppResponse.
         :type status: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
@@ -429,7 +429,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def application_source(self):
-        """Gets the application_source of this UploadAppResponse.
+        r"""Gets the application_source of this UploadAppResponse.
 
         :return: The application_source of this UploadAppResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
@@ -438,7 +438,7 @@ class UploadAppResponse(SdkResponse):
 
     @application_source.setter
     def application_source(self, application_source):
-        """Sets the application_source of this UploadAppResponse.
+        r"""Sets the application_source of this UploadAppResponse.
 
         :param application_source: The application_source of this UploadAppResponse.
         :type application_source: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
@@ -447,7 +447,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UploadAppResponse.
+        r"""Gets the create_time of this UploadAppResponse.
 
         应用创建时间。
 
@@ -458,7 +458,7 @@ class UploadAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UploadAppResponse.
+        r"""Sets the create_time of this UploadAppResponse.
 
         应用创建时间。
 
@@ -469,7 +469,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this UploadAppResponse.
+        r"""Gets the catalog_id of this UploadAppResponse.
 
         分类ID。
 
@@ -480,7 +480,7 @@ class UploadAppResponse(SdkResponse):
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this UploadAppResponse.
+        r"""Sets the catalog_id of this UploadAppResponse.
 
         分类ID。
 
@@ -491,7 +491,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def catalog(self):
-        """Gets the catalog of this UploadAppResponse.
+        r"""Gets the catalog of this UploadAppResponse.
 
         分类名称。
 
@@ -502,7 +502,7 @@ class UploadAppResponse(SdkResponse):
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this UploadAppResponse.
+        r"""Sets the catalog of this UploadAppResponse.
 
         分类名称。
 
@@ -513,7 +513,7 @@ class UploadAppResponse(SdkResponse):
 
     @property
     def install_info(self):
-        """Gets the install_info of this UploadAppResponse.
+        r"""Gets the install_info of this UploadAppResponse.
 
         安装信息。
 
@@ -524,7 +524,7 @@ class UploadAppResponse(SdkResponse):
 
     @install_info.setter
     def install_info(self, install_info):
-        """Sets the install_info of this UploadAppResponse.
+        r"""Sets the install_info of this UploadAppResponse.
 
         安装信息。
 

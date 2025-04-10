@@ -29,7 +29,7 @@ class CreateExchangeRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, body=None):
-        """CreateExchangeRequest
+        r"""CreateExchangeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateExchangeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateExchangeRequest.
+        r"""Gets the instance_id of this CreateExchangeRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateExchangeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateExchangeRequest.
+        r"""Sets the instance_id of this CreateExchangeRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateExchangeRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this CreateExchangeRequest.
+        r"""Gets the vhost of this CreateExchangeRequest.
 
         Vhost名称
 
@@ -88,7 +88,7 @@ class CreateExchangeRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this CreateExchangeRequest.
+        r"""Sets the vhost of this CreateExchangeRequest.
 
         Vhost名称
 
@@ -99,7 +99,7 @@ class CreateExchangeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateExchangeRequest.
+        r"""Gets the body of this CreateExchangeRequest.
 
         :return: The body of this CreateExchangeRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateExchangeBody`
@@ -108,7 +108,7 @@ class CreateExchangeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateExchangeRequest.
+        r"""Sets the body of this CreateExchangeRequest.
 
         :param body: The body of this CreateExchangeRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateExchangeBody`

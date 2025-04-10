@@ -27,7 +27,7 @@ class CreateGroupScheduledTaskRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """CreateGroupScheduledTaskRequest
+        r"""CreateGroupScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGroupScheduledTaskRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this CreateGroupScheduledTaskRequest.
+        r"""Gets the scaling_group_id of this CreateGroupScheduledTaskRequest.
 
         伸缩组ID
 
@@ -60,7 +60,7 @@ class CreateGroupScheduledTaskRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this CreateGroupScheduledTaskRequest.
+        r"""Sets the scaling_group_id of this CreateGroupScheduledTaskRequest.
 
         伸缩组ID
 
@@ -71,7 +71,7 @@ class CreateGroupScheduledTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGroupScheduledTaskRequest.
+        r"""Gets the body of this CreateGroupScheduledTaskRequest.
 
         :return: The body of this CreateGroupScheduledTaskRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateScheduledTaskOption`
@@ -80,7 +80,7 @@ class CreateGroupScheduledTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGroupScheduledTaskRequest.
+        r"""Sets the body of this CreateGroupScheduledTaskRequest.
 
         :param body: The body of this CreateGroupScheduledTaskRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateScheduledTaskOption`

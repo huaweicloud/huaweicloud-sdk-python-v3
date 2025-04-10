@@ -26,7 +26,7 @@ class ListTemplateVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """ListTemplateVersionsResponse
+        r"""ListTemplateVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTemplateVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListTemplateVersionsResponse.
+        r"""Gets the versions of this ListTemplateVersionsResponse.
 
         模板版本列表
 
@@ -55,7 +55,7 @@ class ListTemplateVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListTemplateVersionsResponse.
+        r"""Sets the versions of this ListTemplateVersionsResponse.
 
         模板版本列表
 

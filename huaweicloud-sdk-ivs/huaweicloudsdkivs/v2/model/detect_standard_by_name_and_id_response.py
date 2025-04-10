@@ -30,7 +30,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None, x_request_id=None):
-        """DetectStandardByNameAndIdResponse
+        r"""DetectStandardByNameAndIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this DetectStandardByNameAndIdResponse.
+        r"""Gets the meta of this DetectStandardByNameAndIdResponse.
 
         :return: The meta of this DetectStandardByNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -67,7 +67,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this DetectStandardByNameAndIdResponse.
+        r"""Sets the meta of this DetectStandardByNameAndIdResponse.
 
         :param meta: The meta of this DetectStandardByNameAndIdResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +76,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectStandardByNameAndIdResponse.
+        r"""Gets the result of this DetectStandardByNameAndIdResponse.
 
         :return: The result of this DetectStandardByNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`
@@ -85,7 +85,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectStandardByNameAndIdResponse.
+        r"""Sets the result of this DetectStandardByNameAndIdResponse.
 
         :param result: The result of this DetectStandardByNameAndIdResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`
@@ -94,7 +94,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectStandardByNameAndIdResponse.
+        r"""Gets the x_request_id of this DetectStandardByNameAndIdResponse.
 
         :return: The x_request_id of this DetectStandardByNameAndIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectStandardByNameAndIdResponse.
+        r"""Sets the x_request_id of this DetectStandardByNameAndIdResponse.
 
         :param x_request_id: The x_request_id of this DetectStandardByNameAndIdResponse.
         :type x_request_id: str

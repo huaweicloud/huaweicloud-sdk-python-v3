@@ -45,7 +45,7 @@ class AuthorizerBase:
     }
 
     def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, authorizer_version=None, authorizer_alias_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None):
-        """AuthorizerBase
+        r"""AuthorizerBase
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class AuthorizerBase:
 
     @property
     def name(self):
-        """Gets the name of this AuthorizerBase.
+        r"""Gets the name of this AuthorizerBase.
 
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
@@ -120,7 +120,7 @@ class AuthorizerBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthorizerBase.
+        r"""Sets the name of this AuthorizerBase.
 
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
@@ -131,7 +131,7 @@ class AuthorizerBase:
 
     @property
     def type(self):
-        """Gets the type of this AuthorizerBase.
+        r"""Gets the type of this AuthorizerBase.
 
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端
 
@@ -142,7 +142,7 @@ class AuthorizerBase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AuthorizerBase.
+        r"""Sets the type of this AuthorizerBase.
 
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端
 
@@ -153,7 +153,7 @@ class AuthorizerBase:
 
     @property
     def authorizer_type(self):
-        """Gets the authorizer_type of this AuthorizerBase.
+        r"""Gets the authorizer_type of this AuthorizerBase.
 
         自定义认证函数类型： - LD：自定义后端函数 - FUNC：[函数服务函数](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
 
@@ -164,7 +164,7 @@ class AuthorizerBase:
 
     @authorizer_type.setter
     def authorizer_type(self, authorizer_type):
-        """Sets the authorizer_type of this AuthorizerBase.
+        r"""Sets the authorizer_type of this AuthorizerBase.
 
         自定义认证函数类型： - LD：自定义后端函数 - FUNC：[函数服务函数](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
 
@@ -175,7 +175,7 @@ class AuthorizerBase:
 
     @property
     def authorizer_uri(self):
-        """Gets the authorizer_uri of this AuthorizerBase.
+        r"""Gets the authorizer_uri of this AuthorizerBase.
 
         函数地址。  注意：使用自定义后端的函数API，API请求方法必须为POST，且API状态必须为已部署。
 
@@ -186,7 +186,7 @@ class AuthorizerBase:
 
     @authorizer_uri.setter
     def authorizer_uri(self, authorizer_uri):
-        """Sets the authorizer_uri of this AuthorizerBase.
+        r"""Sets the authorizer_uri of this AuthorizerBase.
 
         函数地址。  注意：使用自定义后端的函数API，API请求方法必须为POST，且API状态必须为已部署。
 
@@ -197,7 +197,7 @@ class AuthorizerBase:
 
     @property
     def authorizer_version(self):
-        """Gets the authorizer_version of this AuthorizerBase.
+        r"""Gets the authorizer_version of this AuthorizerBase.
 
         函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -208,7 +208,7 @@ class AuthorizerBase:
 
     @authorizer_version.setter
     def authorizer_version(self, authorizer_version):
-        """Sets the authorizer_version of this AuthorizerBase.
+        r"""Sets the authorizer_version of this AuthorizerBase.
 
         函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -219,7 +219,7 @@ class AuthorizerBase:
 
     @property
     def authorizer_alias_uri(self):
-        """Gets the authorizer_alias_uri of this AuthorizerBase.
+        r"""Gets the authorizer_alias_uri of this AuthorizerBase.
 
         函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -230,7 +230,7 @@ class AuthorizerBase:
 
     @authorizer_alias_uri.setter
     def authorizer_alias_uri(self, authorizer_alias_uri):
-        """Sets the authorizer_alias_uri of this AuthorizerBase.
+        r"""Sets the authorizer_alias_uri of this AuthorizerBase.
 
         函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -241,7 +241,7 @@ class AuthorizerBase:
 
     @property
     def identities(self):
-        """Gets the identities of this AuthorizerBase.
+        r"""Gets the identities of this AuthorizerBase.
 
         认证来源
 
@@ -252,7 +252,7 @@ class AuthorizerBase:
 
     @identities.setter
     def identities(self, identities):
-        """Sets the identities of this AuthorizerBase.
+        r"""Sets the identities of this AuthorizerBase.
 
         认证来源
 
@@ -263,7 +263,7 @@ class AuthorizerBase:
 
     @property
     def ttl(self):
-        """Gets the ttl of this AuthorizerBase.
+        r"""Gets the ttl of this AuthorizerBase.
 
         缓存时间
 
@@ -274,7 +274,7 @@ class AuthorizerBase:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this AuthorizerBase.
+        r"""Sets the ttl of this AuthorizerBase.
 
         缓存时间
 
@@ -285,7 +285,7 @@ class AuthorizerBase:
 
     @property
     def user_data(self):
-        """Gets the user_data of this AuthorizerBase.
+        r"""Gets the user_data of this AuthorizerBase.
 
         用户数据
 
@@ -296,7 +296,7 @@ class AuthorizerBase:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this AuthorizerBase.
+        r"""Sets the user_data of this AuthorizerBase.
 
         用户数据
 
@@ -307,7 +307,7 @@ class AuthorizerBase:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this AuthorizerBase.
+        r"""Gets the ld_api_id of this AuthorizerBase.
 
         自定义后端服务ID。  自定义认证函数类型为LD时必填
 
@@ -318,7 +318,7 @@ class AuthorizerBase:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this AuthorizerBase.
+        r"""Sets the ld_api_id of this AuthorizerBase.
 
         自定义后端服务ID。  自定义认证函数类型为LD时必填
 
@@ -329,7 +329,7 @@ class AuthorizerBase:
 
     @property
     def need_body(self):
-        """Gets the need_body of this AuthorizerBase.
+        r"""Gets the need_body of this AuthorizerBase.
 
         是否发送body
 
@@ -340,7 +340,7 @@ class AuthorizerBase:
 
     @need_body.setter
     def need_body(self, need_body):
-        """Sets the need_body of this AuthorizerBase.
+        r"""Sets the need_body of this AuthorizerBase.
 
         是否发送body
 

@@ -34,7 +34,7 @@ class DnsClient(Client):
         return client_builder
 
     def batch_delete_record_sets(self, request):
-        """批量删除Record Set
+        r"""批量删除Record Set
 
         批量删除Record Set。
         响应结果中只包含本次实际删除的Record Set。
@@ -101,7 +101,7 @@ class DnsClient(Client):
         return http_info
 
     def batch_delete_zones(self, request):
-        """批量删除Zone
+        r"""批量删除Zone
 
         批量删除Zone。
         本接口为原子操作，所有记录应全部删除成功或全部失败。
@@ -168,7 +168,7 @@ class DnsClient(Client):
         return http_info
 
     def batch_set_record_sets_status(self, request):
-        """批量设置Record Set状态
+        r"""批量设置Record Set状态
 
         批量设置Record Set状态。
         响应结果中只包含本次实际更新的Record Set。
@@ -235,7 +235,7 @@ class DnsClient(Client):
         return http_info
 
     def batch_set_zones_status(self, request):
-        """批量设置Zone状态
+        r"""批量设置Zone状态
 
         批量设置Zone状态。
         响应结果中只包含本次实际更新的Zone。
@@ -302,7 +302,7 @@ class DnsClient(Client):
         return http_info
 
     def create_custom_line(self, request):
-        """创建单个自定义线路
+        r"""创建单个自定义线路
 
         创建单个自定义线路
         
@@ -367,7 +367,7 @@ class DnsClient(Client):
         return http_info
 
     def create_line_group(self, request):
-        """创建线路分组
+        r"""创建线路分组
 
         创建一个线路分组。 该接口部分区域未上线、如需使用请提交工单申请开通。
         
@@ -432,7 +432,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_custom_line(self, request):
-        """删除单个自定义线路
+        r"""删除单个自定义线路
 
         删除单个自定义线路
         
@@ -497,7 +497,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_line_group(self, request):
-        """删除线路分组
+        r"""删除线路分组
 
         删除单个线路分组。该接口部分区域未上线、如需使用请提交工单申请开通。
         
@@ -562,7 +562,7 @@ class DnsClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询所有的云解析服务API版本号
+        r"""查询所有的云解析服务API版本号
 
         查询所有的云解析服务API版本号列表
         
@@ -625,7 +625,7 @@ class DnsClient(Client):
         return http_info
 
     def list_custom_line(self, request):
-        """查询自定义线路
+        r"""查询自定义线路
 
         查询自定义线路
         
@@ -702,7 +702,7 @@ class DnsClient(Client):
         return http_info
 
     def list_line_groups(self, request):
-        """查询线路分组列表
+        r"""查询线路分组列表
 
         查询线路分组列表。该接口部分区域未上线、如需使用请提交工单申请开通。
         
@@ -773,7 +773,7 @@ class DnsClient(Client):
         return http_info
 
     def list_name_servers(self, request):
-        """查询名称服务器列表
+        r"""查询名称服务器列表
 
         查询名称服务器列表
         
@@ -840,7 +840,7 @@ class DnsClient(Client):
         return http_info
 
     def show_api_info(self, request):
-        """查询指定的云解析服务API版本号
+        r"""查询指定的云解析服务API版本号
 
         查询指定的云解析服务API版本号
         
@@ -905,7 +905,7 @@ class DnsClient(Client):
         return http_info
 
     def show_domain_quota(self, request):
-        """查询租户配额
+        r"""查询租户配额
 
         查询单租户在DNS服务下的资源配额，包括公网zone配额、内网zone配额、Record Set配额、PTR Record配额、入站终端节点配额、出站终端节点配额、自定义线路配额、线路分组配额等。
         
@@ -970,7 +970,7 @@ class DnsClient(Client):
         return http_info
 
     def show_line_group(self, request):
-        """查询线路分组
+        r"""查询线路分组
 
         查询线路分组。该接口部分区域未上线、如需使用请提交工单申请开通。
         
@@ -1035,7 +1035,7 @@ class DnsClient(Client):
         return http_info
 
     def update_custom_line(self, request):
-        """更新单个自定义线路
+        r"""更新单个自定义线路
 
         更新单个自定义线路
         
@@ -1102,7 +1102,7 @@ class DnsClient(Client):
         return http_info
 
     def update_line_groups(self, request):
-        """更新线路分组
+        r"""更新线路分组
 
         更新单个线路分组。该接口部分区域未上线、如需使用请提交工单申请开通。
         
@@ -1169,7 +1169,7 @@ class DnsClient(Client):
         return http_info
 
     def create_eip_record_set(self, request):
-        """设置弹性公网IP的PTR记录
+        r"""设置弹性公网IP的PTR记录
 
         设置弹性公网IP的PTR记录
         
@@ -1238,7 +1238,7 @@ class DnsClient(Client):
         return http_info
 
     def list_ptr_records(self, request):
-        """查询租户弹性公网IP的PTR记录列表
+        r"""查询租户弹性公网IP的PTR记录列表
 
         查询租户弹性公网IP的PTR记录列表
         
@@ -1313,7 +1313,7 @@ class DnsClient(Client):
         return http_info
 
     def restore_ptr_record(self, request):
-        """将弹性公网IP的PTR记录恢复为默认值
+        r"""将弹性公网IP的PTR记录恢复为默认值
 
         将弹性公网IP的PTR记录恢复为默认值
         
@@ -1382,7 +1382,7 @@ class DnsClient(Client):
         return http_info
 
     def show_ptr_record_set(self, request):
-        """查询单个弹性公网IP的PTR记录
+        r"""查询单个弹性公网IP的PTR记录
 
         查询单个弹性公网IP的PTR记录
         
@@ -1449,7 +1449,7 @@ class DnsClient(Client):
         return http_info
 
     def update_ptr_record(self, request):
-        """修改弹性公网IP的PTR记录
+        r"""修改弹性公网IP的PTR记录
 
         修改弹性公网IP的PTR记录
         
@@ -1518,7 +1518,7 @@ class DnsClient(Client):
         return http_info
 
     def batch_delete_record_set_with_line(self, request):
-        """批量删除某个Zone下的Record Set资源
+        r"""批量删除某个Zone下的Record Set资源
 
         批量删除某个Zone下的Record Set资源，当删除的资源不存在时，则默认删除成功。
         响应结果中只包含本次实际删除的资源。
@@ -1586,7 +1586,7 @@ class DnsClient(Client):
         return http_info
 
     def batch_update_record_set_with_line(self, request):
-        """批量修改RecordSet
+        r"""批量修改RecordSet
 
         批量修改RecordSet。属于原子性操作，请求Record Set将全部完成修改，或不做任何修改。
         仅公网Zone支持。
@@ -1654,7 +1654,7 @@ class DnsClient(Client):
         return http_info
 
     def create_record_set(self, request):
-        """创建单个Record Set
+        r"""创建单个Record Set
 
         创建单个Record Set
         
@@ -1721,7 +1721,7 @@ class DnsClient(Client):
         return http_info
 
     def create_record_set_with_batch_lines(self, request):
-        """批量线路创建RecordSet
+        r"""批量线路创建RecordSet
 
         批量线路创建RecordSet。属于原子性操作，如果存在一个参数校验不通过，则创建失败。仅公网Zone支持。
         
@@ -1788,7 +1788,7 @@ class DnsClient(Client):
         return http_info
 
     def create_record_set_with_line(self, request):
-        """创建单个Record Set
+        r"""创建单个Record Set
 
         创建单个Record Set，仅适用于公网DNS
         
@@ -1855,7 +1855,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_record_set(self, request):
-        """删除单个Record Set
+        r"""删除单个Record Set
 
         删除单个Record Set。删除有添加智能解析的记录集时，需要用Record Set多线路管理模块中删除接口进行删除。
         
@@ -1922,7 +1922,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_record_sets(self, request):
-        """删除单个Record Set
+        r"""删除单个Record Set
 
         删除单个Record Set
         
@@ -1989,7 +1989,7 @@ class DnsClient(Client):
         return http_info
 
     def list_record_sets(self, request):
-        """查询租户Record Set资源列表
+        r"""查询租户Record Set资源列表
 
         查询租户Record Set资源列表
         
@@ -2078,7 +2078,7 @@ class DnsClient(Client):
         return http_info
 
     def list_record_sets_by_zone(self, request):
-        """查询单个Zone下Record Set列表
+        r"""查询单个Zone下Record Set列表
 
         查询单个Zone下Record Set列表
         
@@ -2165,7 +2165,7 @@ class DnsClient(Client):
         return http_info
 
     def list_record_sets_with_line(self, request):
-        """查询租户Record Set资源列表
+        r"""查询租户Record Set资源列表
 
         查询租户Record Set资源列表
         
@@ -2260,7 +2260,7 @@ class DnsClient(Client):
         return http_info
 
     def set_record_sets_status(self, request):
-        """设置Record Set状态
+        r"""设置Record Set状态
 
         设置Record Set状态
         
@@ -2327,7 +2327,7 @@ class DnsClient(Client):
         return http_info
 
     def show_record_set(self, request):
-        """查询单个Record Set
+        r"""查询单个Record Set
 
         查询单个Record Set。
         
@@ -2394,7 +2394,7 @@ class DnsClient(Client):
         return http_info
 
     def show_record_set_by_zone(self, request):
-        """查询单个Zone下Record Set列表
+        r"""查询单个Zone下Record Set列表
 
         查询单个Zone下Record Set列表
         
@@ -2483,7 +2483,7 @@ class DnsClient(Client):
         return http_info
 
     def show_record_set_with_line(self, request):
-        """查询单个Record Set
+        r"""查询单个Record Set
 
         查询单个Record Set，仅适用于公网DNS
         
@@ -2550,7 +2550,7 @@ class DnsClient(Client):
         return http_info
 
     def update_record_set(self, request):
-        """修改单个Record Set
+        r"""修改单个Record Set
 
         修改单个Record Set
         
@@ -2619,7 +2619,7 @@ class DnsClient(Client):
         return http_info
 
     def update_record_sets(self, request):
-        """修改单个Record Set
+        r"""修改单个Record Set
 
         修改单个Record Set
         
@@ -2688,7 +2688,7 @@ class DnsClient(Client):
         return http_info
 
     def batch_create_tag(self, request):
-        """为指定实例批量添加或删除标签
+        r"""为指定实例批量添加或删除标签
 
         为指定实例批量添加或删除标签
         
@@ -2757,7 +2757,7 @@ class DnsClient(Client):
         return http_info
 
     def create_tag(self, request):
-        """为指定实例添加标签
+        r"""为指定实例添加标签
 
         为指定实例添加标签
         
@@ -2826,7 +2826,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除资源标签
         
@@ -2895,7 +2895,7 @@ class DnsClient(Client):
         return http_info
 
     def list_tag(self, request):
-        """使用标签查询资源实例
+        r"""使用标签查询资源实例
 
         使用标签查询资源实例
         
@@ -2962,7 +2962,7 @@ class DnsClient(Client):
         return http_info
 
     def list_tags(self, request):
-        """查询指定实例类型的所有标签集合
+        r"""查询指定实例类型的所有标签集合
 
         查询指定实例类型的所有标签集合
         
@@ -3027,7 +3027,7 @@ class DnsClient(Client):
         return http_info
 
     def show_resource_tag(self, request):
-        """查询指定实例的标签信息
+        r"""查询指定实例的标签信息
 
         查询指定实例的标签信息
         
@@ -3094,7 +3094,7 @@ class DnsClient(Client):
         return http_info
 
     def associate_router(self, request):
-        """在内网Zone上关联VPC
+        r"""在内网Zone上关联VPC
 
         在内网Zone上关联VPC
         
@@ -3161,7 +3161,7 @@ class DnsClient(Client):
         return http_info
 
     def create_private_zone(self, request):
-        """创建单个内网Zone
+        r"""创建单个内网Zone
 
         创建单个内网Zone
         
@@ -3226,7 +3226,7 @@ class DnsClient(Client):
         return http_info
 
     def create_public_zone(self, request):
-        """创建单个公网Zone
+        r"""创建单个公网Zone
 
         创建单个公网Zone
         
@@ -3291,7 +3291,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_private_zone(self, request):
-        """删除单个内网Zone
+        r"""删除单个内网Zone
 
         删除单个内网Zone
         
@@ -3356,7 +3356,7 @@ class DnsClient(Client):
         return http_info
 
     def delete_public_zone(self, request):
-        """删除单个公网Zone
+        r"""删除单个公网Zone
 
         删除单个公网Zone
         
@@ -3421,7 +3421,7 @@ class DnsClient(Client):
         return http_info
 
     def disassociate_router(self, request):
-        """在内网Zone上解关联VPC
+        r"""在内网Zone上解关联VPC
 
         在内网Zone上解关联VPC
         
@@ -3488,7 +3488,7 @@ class DnsClient(Client):
         return http_info
 
     def list_private_zones(self, request):
-        """查询内网Zone列表
+        r"""查询内网Zone列表
 
         查询内网Zone列表
         
@@ -3577,7 +3577,7 @@ class DnsClient(Client):
         return http_info
 
     def list_public_zones(self, request):
-        """查询公网Zone列表
+        r"""查询公网Zone列表
 
         查询公网Zone列表
         
@@ -3664,7 +3664,7 @@ class DnsClient(Client):
         return http_info
 
     def show_private_zone(self, request):
-        """查询单个内网Zone
+        r"""查询单个内网Zone
 
         查询单个内网Zone
         
@@ -3729,7 +3729,7 @@ class DnsClient(Client):
         return http_info
 
     def show_private_zone_name_server(self, request):
-        """查询单个内网Zone的名称服务器
+        r"""查询单个内网Zone的名称服务器
 
         查询单个内网Zone的名称服务器
         
@@ -3794,7 +3794,7 @@ class DnsClient(Client):
         return http_info
 
     def show_public_zone(self, request):
-        """查询单个公网Zone
+        r"""查询单个公网Zone
 
         查询单个公网Zone
         
@@ -3859,7 +3859,7 @@ class DnsClient(Client):
         return http_info
 
     def show_public_zone_name_server(self, request):
-        """查询单个公网Zone的名称服务器
+        r"""查询单个公网Zone的名称服务器
 
         查询单个公网Zone的名称服务器
         
@@ -3924,7 +3924,7 @@ class DnsClient(Client):
         return http_info
 
     def update_private_zone(self, request):
-        """修改单个内网Zone
+        r"""修改单个内网Zone
 
         修改单个内网Zone
         
@@ -3991,7 +3991,7 @@ class DnsClient(Client):
         return http_info
 
     def update_public_zone(self, request):
-        """修改单个公网Zone
+        r"""修改单个公网Zone
 
         修改单个公网Zone
         
@@ -4058,7 +4058,7 @@ class DnsClient(Client):
         return http_info
 
     def update_public_zone_status(self, request):
-        """设置单个公网Zone状态
+        r"""设置单个公网Zone状态
 
         设置单个公网Zone状态，支持暂停、启用Zone
         

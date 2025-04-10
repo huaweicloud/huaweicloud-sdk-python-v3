@@ -29,7 +29,7 @@ class Router:
     }
 
     def __init__(self, router_id=None, router_region=None, status=None):
-        """Router
+        r"""Router
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Router:
 
     @property
     def router_id(self):
-        """Gets the router_id of this Router.
+        r"""Gets the router_id of this Router.
 
         关联VPC的ID。
 
@@ -67,7 +67,7 @@ class Router:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this Router.
+        r"""Sets the router_id of this Router.
 
         关联VPC的ID。
 
@@ -78,7 +78,7 @@ class Router:
 
     @property
     def router_region(self):
-        """Gets the router_region of this Router.
+        r"""Gets the router_region of this Router.
 
         关联VPC所在的region。
 
@@ -89,7 +89,7 @@ class Router:
 
     @router_region.setter
     def router_region(self, router_region):
-        """Sets the router_region of this Router.
+        r"""Sets the router_region of this Router.
 
         关联VPC所在的region。
 
@@ -100,7 +100,7 @@ class Router:
 
     @property
     def status(self):
-        """Gets the status of this Router.
+        r"""Gets the status of this Router.
 
         资源状态。
 
@@ -111,7 +111,7 @@ class Router:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Router.
+        r"""Sets the status of this Router.
 
         资源状态。
 

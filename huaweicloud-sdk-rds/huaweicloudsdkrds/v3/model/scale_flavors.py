@@ -29,7 +29,7 @@ class ScaleFlavors:
     }
 
     def __init__(self, code=None, cpu=None, mem=None):
-        """ScaleFlavors
+        r"""ScaleFlavors
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ScaleFlavors:
 
     @property
     def code(self):
-        """Gets the code of this ScaleFlavors.
+        r"""Gets the code of this ScaleFlavors.
 
         规格码。
 
@@ -68,7 +68,7 @@ class ScaleFlavors:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ScaleFlavors.
+        r"""Sets the code of this ScaleFlavors.
 
         规格码。
 
@@ -79,7 +79,7 @@ class ScaleFlavors:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ScaleFlavors.
+        r"""Gets the cpu of this ScaleFlavors.
 
         CPU个数。
 
@@ -90,7 +90,7 @@ class ScaleFlavors:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ScaleFlavors.
+        r"""Sets the cpu of this ScaleFlavors.
 
         CPU个数。
 
@@ -101,7 +101,7 @@ class ScaleFlavors:
 
     @property
     def mem(self):
-        """Gets the mem of this ScaleFlavors.
+        r"""Gets the mem of this ScaleFlavors.
 
         内存大小（单位：GB）。
 
@@ -112,7 +112,7 @@ class ScaleFlavors:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this ScaleFlavors.
+        r"""Sets the mem of this ScaleFlavors.
 
         内存大小（单位：GB）。
 

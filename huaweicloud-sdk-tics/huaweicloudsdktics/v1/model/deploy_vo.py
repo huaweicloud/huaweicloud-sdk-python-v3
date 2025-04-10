@@ -33,7 +33,7 @@ class DeployVo:
     }
 
     def __init__(self, node_id=None, node_name=None, node_partner_alias=None, node_type=None, stages=None):
-        """DeployVo
+        r"""DeployVo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DeployVo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeployVo.
+        r"""Gets the node_id of this DeployVo.
 
         节点Id
 
@@ -79,7 +79,7 @@ class DeployVo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeployVo.
+        r"""Sets the node_id of this DeployVo.
 
         节点Id
 
@@ -90,7 +90,7 @@ class DeployVo:
 
     @property
     def node_name(self):
-        """Gets the node_name of this DeployVo.
+        r"""Gets the node_name of this DeployVo.
 
         节点名称
 
@@ -101,7 +101,7 @@ class DeployVo:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this DeployVo.
+        r"""Sets the node_name of this DeployVo.
 
         节点名称
 
@@ -112,7 +112,7 @@ class DeployVo:
 
     @property
     def node_partner_alias(self):
-        """Gets the node_partner_alias of this DeployVo.
+        r"""Gets the node_partner_alias of this DeployVo.
 
         参与方别名
 
@@ -123,7 +123,7 @@ class DeployVo:
 
     @node_partner_alias.setter
     def node_partner_alias(self, node_partner_alias):
-        """Sets the node_partner_alias of this DeployVo.
+        r"""Sets the node_partner_alias of this DeployVo.
 
         参与方别名
 
@@ -134,7 +134,7 @@ class DeployVo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this DeployVo.
+        r"""Gets the node_type of this DeployVo.
 
         节点类型,AGENT.计算节点，AGG.聚合节点，AGG_MANAGER.聚合器管理节点,SERVER.控制节点
 
@@ -145,7 +145,7 @@ class DeployVo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this DeployVo.
+        r"""Sets the node_type of this DeployVo.
 
         节点类型,AGENT.计算节点，AGG.聚合节点，AGG_MANAGER.聚合器管理节点,SERVER.控制节点
 
@@ -156,7 +156,7 @@ class DeployVo:
 
     @property
     def stages(self):
-        """Gets the stages of this DeployVo.
+        r"""Gets the stages of this DeployVo.
 
         执行阶段
 
@@ -167,7 +167,7 @@ class DeployVo:
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this DeployVo.
+        r"""Sets the stages of this DeployVo.
 
         执行阶段
 

@@ -35,7 +35,7 @@ class ListPrincipalsRequest:
     }
 
     def __init__(self, instance_id=None, principal_pattern=None, limit=None, marker=None, reverse_page=None, role_name=None):
-        """ListPrincipalsRequest
+        r"""ListPrincipalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListPrincipalsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPrincipalsRequest.
+        r"""Gets the instance_id of this ListPrincipalsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -87,7 +87,7 @@ class ListPrincipalsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPrincipalsRequest.
+        r"""Sets the instance_id of this ListPrincipalsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -98,7 +98,7 @@ class ListPrincipalsRequest:
 
     @property
     def principal_pattern(self):
-        """Gets the principal_pattern of this ListPrincipalsRequest.
+        r"""Gets the principal_pattern of this ListPrincipalsRequest.
 
         模糊匹配主体名称。只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~49个字符。
 
@@ -109,7 +109,7 @@ class ListPrincipalsRequest:
 
     @principal_pattern.setter
     def principal_pattern(self, principal_pattern):
-        """Sets the principal_pattern of this ListPrincipalsRequest.
+        r"""Sets the principal_pattern of this ListPrincipalsRequest.
 
         模糊匹配主体名称。只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~49个字符。
 
@@ -120,7 +120,7 @@ class ListPrincipalsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPrincipalsRequest.
+        r"""Gets the limit of this ListPrincipalsRequest.
 
         查询返回条数。默认值为100。最小值为1，最大值为1000。
 
@@ -131,7 +131,7 @@ class ListPrincipalsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPrincipalsRequest.
+        r"""Sets the limit of this ListPrincipalsRequest.
 
         查询返回条数。默认值为100。最小值为1，最大值为1000。
 
@@ -142,7 +142,7 @@ class ListPrincipalsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPrincipalsRequest.
+        r"""Gets the marker of this ListPrincipalsRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为1024。
 
@@ -153,7 +153,7 @@ class ListPrincipalsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPrincipalsRequest.
+        r"""Sets the marker of this ListPrincipalsRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为1024。
 
@@ -164,7 +164,7 @@ class ListPrincipalsRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListPrincipalsRequest.
+        r"""Gets the reverse_page of this ListPrincipalsRequest.
 
         是否查询上一页。默认为false。
 
@@ -175,7 +175,7 @@ class ListPrincipalsRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListPrincipalsRequest.
+        r"""Sets the reverse_page of this ListPrincipalsRequest.
 
         是否查询上一页。默认为false。
 
@@ -186,7 +186,7 @@ class ListPrincipalsRequest:
 
     @property
     def role_name(self):
-        """Gets the role_name of this ListPrincipalsRequest.
+        r"""Gets the role_name of this ListPrincipalsRequest.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -197,7 +197,7 @@ class ListPrincipalsRequest:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this ListPrincipalsRequest.
+        r"""Sets the role_name of this ListPrincipalsRequest.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 

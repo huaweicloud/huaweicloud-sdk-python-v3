@@ -27,7 +27,7 @@ class ExportAssetRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExportAssetRequest
+        r"""ExportAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportAssetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportAssetRequest.
+        r"""Gets the instance_id of this ExportAssetRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ExportAssetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportAssetRequest.
+        r"""Sets the instance_id of this ExportAssetRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ExportAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportAssetRequest.
+        r"""Gets the body of this ExportAssetRequest.
 
         :return: The body of this ExportAssetRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AssetExportRequest`
@@ -80,7 +80,7 @@ class ExportAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportAssetRequest.
+        r"""Sets the body of this ExportAssetRequest.
 
         :param body: The body of this ExportAssetRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AssetExportRequest`

@@ -27,7 +27,7 @@ class GenerateComplexCombineReq:
     }
 
     def __init__(self, receptor=None, ligand=None):
-        """GenerateComplexCombineReq
+        r"""GenerateComplexCombineReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GenerateComplexCombineReq:
 
     @property
     def receptor(self):
-        """Gets the receptor of this GenerateComplexCombineReq.
+        r"""Gets the receptor of this GenerateComplexCombineReq.
 
         :return: The receptor of this GenerateComplexCombineReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunReceptorPreprocessReq`
@@ -57,7 +57,7 @@ class GenerateComplexCombineReq:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this GenerateComplexCombineReq.
+        r"""Sets the receptor of this GenerateComplexCombineReq.
 
         :param receptor: The receptor of this GenerateComplexCombineReq.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.RunReceptorPreprocessReq`
@@ -66,7 +66,7 @@ class GenerateComplexCombineReq:
 
     @property
     def ligand(self):
-        """Gets the ligand of this GenerateComplexCombineReq.
+        r"""Gets the ligand of this GenerateComplexCombineReq.
 
         :return: The ligand of this GenerateComplexCombineReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -75,7 +75,7 @@ class GenerateComplexCombineReq:
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this GenerateComplexCombineReq.
+        r"""Sets the ligand of this GenerateComplexCombineReq.
 
         :param ligand: The ligand of this GenerateComplexCombineReq.
         :type ligand: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`

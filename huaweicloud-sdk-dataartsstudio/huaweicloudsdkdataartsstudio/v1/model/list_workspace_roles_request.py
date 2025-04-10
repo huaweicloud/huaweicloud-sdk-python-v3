@@ -27,7 +27,7 @@ class ListWorkspaceRolesRequest:
     }
 
     def __init__(self, instance_id=None, workspace_id=None):
-        """ListWorkspaceRolesRequest
+        r"""ListWorkspaceRolesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListWorkspaceRolesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListWorkspaceRolesRequest.
+        r"""Gets the instance_id of this ListWorkspaceRolesRequest.
 
         实例id
 
@@ -61,7 +61,7 @@ class ListWorkspaceRolesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListWorkspaceRolesRequest.
+        r"""Sets the instance_id of this ListWorkspaceRolesRequest.
 
         实例id
 
@@ -72,7 +72,7 @@ class ListWorkspaceRolesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListWorkspaceRolesRequest.
+        r"""Gets the workspace_id of this ListWorkspaceRolesRequest.
 
         工作空间id
 
@@ -83,7 +83,7 @@ class ListWorkspaceRolesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListWorkspaceRolesRequest.
+        r"""Sets the workspace_id of this ListWorkspaceRolesRequest.
 
         工作空间id
 

@@ -37,7 +37,7 @@ class GetDatabaseInfo:
     }
 
     def __init__(self, name=None, shard_mode=None, shard_number=None, status=None, created=None, used_rds=None, shard_unit=None):
-        """GetDatabaseInfo
+        r"""GetDatabaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GetDatabaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this GetDatabaseInfo.
+        r"""Gets the name of this GetDatabaseInfo.
 
         逻辑库名称。
 
@@ -89,7 +89,7 @@ class GetDatabaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDatabaseInfo.
+        r"""Sets the name of this GetDatabaseInfo.
 
         逻辑库名称。
 
@@ -100,7 +100,7 @@ class GetDatabaseInfo:
 
     @property
     def shard_mode(self):
-        """Gets the shard_mode of this GetDatabaseInfo.
+        r"""Gets the shard_mode of this GetDatabaseInfo.
 
         逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -111,7 +111,7 @@ class GetDatabaseInfo:
 
     @shard_mode.setter
     def shard_mode(self, shard_mode):
-        """Sets the shard_mode of this GetDatabaseInfo.
+        r"""Sets the shard_mode of this GetDatabaseInfo.
 
         逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -122,7 +122,7 @@ class GetDatabaseInfo:
 
     @property
     def shard_number(self):
-        """Gets the shard_number of this GetDatabaseInfo.
+        r"""Gets the shard_number of this GetDatabaseInfo.
 
         同一种工作模式下逻辑库分片的数量。
 
@@ -133,7 +133,7 @@ class GetDatabaseInfo:
 
     @shard_number.setter
     def shard_number(self, shard_number):
-        """Sets the shard_number of this GetDatabaseInfo.
+        r"""Sets the shard_number of this GetDatabaseInfo.
 
         同一种工作模式下逻辑库分片的数量。
 
@@ -144,7 +144,7 @@ class GetDatabaseInfo:
 
     @property
     def status(self):
-        """Gets the status of this GetDatabaseInfo.
+        r"""Gets the status of this GetDatabaseInfo.
 
         逻辑库状态。
 
@@ -155,7 +155,7 @@ class GetDatabaseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetDatabaseInfo.
+        r"""Sets the status of this GetDatabaseInfo.
 
         逻辑库状态。
 
@@ -166,7 +166,7 @@ class GetDatabaseInfo:
 
     @property
     def created(self):
-        """Gets the created of this GetDatabaseInfo.
+        r"""Gets the created of this GetDatabaseInfo.
 
         逻辑库的创建时间。
 
@@ -177,7 +177,7 @@ class GetDatabaseInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetDatabaseInfo.
+        r"""Sets the created of this GetDatabaseInfo.
 
         逻辑库的创建时间。
 
@@ -188,7 +188,7 @@ class GetDatabaseInfo:
 
     @property
     def used_rds(self):
-        """Gets the used_rds of this GetDatabaseInfo.
+        r"""Gets the used_rds of this GetDatabaseInfo.
 
         逻辑库关联的RDS实例信息。
 
@@ -199,7 +199,7 @@ class GetDatabaseInfo:
 
     @used_rds.setter
     def used_rds(self, used_rds):
-        """Sets the used_rds of this GetDatabaseInfo.
+        r"""Sets the used_rds of this GetDatabaseInfo.
 
         逻辑库关联的RDS实例信息。
 
@@ -210,7 +210,7 @@ class GetDatabaseInfo:
 
     @property
     def shard_unit(self):
-        """Gets the shard_unit of this GetDatabaseInfo.
+        r"""Gets the shard_unit of this GetDatabaseInfo.
 
         单个RDS上的逻辑库分片数。
 
@@ -221,7 +221,7 @@ class GetDatabaseInfo:
 
     @shard_unit.setter
     def shard_unit(self, shard_unit):
-        """Sets the shard_unit of this GetDatabaseInfo.
+        r"""Sets the shard_unit of this GetDatabaseInfo.
 
         单个RDS上的逻辑库分片数。
 

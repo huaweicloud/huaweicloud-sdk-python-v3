@@ -33,7 +33,7 @@ class QueueSrcAssignCreateDTO:
     }
 
     def __init__(self, source_type=None, queue_name=None, conn_id=None, cluster_id=None, description=None):
-        """QueueSrcAssignCreateDTO
+        r"""QueueSrcAssignCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueueSrcAssignCreateDTO:
 
     @property
     def source_type(self):
-        """Gets the source_type of this QueueSrcAssignCreateDTO.
+        r"""Gets the source_type of this QueueSrcAssignCreateDTO.
 
         队列资源服务(当前只支持mrs、dli)。
 
@@ -82,7 +82,7 @@ class QueueSrcAssignCreateDTO:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this QueueSrcAssignCreateDTO.
+        r"""Sets the source_type of this QueueSrcAssignCreateDTO.
 
         队列资源服务(当前只支持mrs、dli)。
 
@@ -93,7 +93,7 @@ class QueueSrcAssignCreateDTO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this QueueSrcAssignCreateDTO.
+        r"""Gets the queue_name of this QueueSrcAssignCreateDTO.
 
         队列名称。
 
@@ -104,7 +104,7 @@ class QueueSrcAssignCreateDTO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this QueueSrcAssignCreateDTO.
+        r"""Sets the queue_name of this QueueSrcAssignCreateDTO.
 
         队列名称。
 
@@ -115,7 +115,7 @@ class QueueSrcAssignCreateDTO:
 
     @property
     def conn_id(self):
-        """Gets the conn_id of this QueueSrcAssignCreateDTO.
+        r"""Gets the conn_id of this QueueSrcAssignCreateDTO.
 
         数据连接id。
 
@@ -126,7 +126,7 @@ class QueueSrcAssignCreateDTO:
 
     @conn_id.setter
     def conn_id(self, conn_id):
-        """Sets the conn_id of this QueueSrcAssignCreateDTO.
+        r"""Sets the conn_id of this QueueSrcAssignCreateDTO.
 
         数据连接id。
 
@@ -137,7 +137,7 @@ class QueueSrcAssignCreateDTO:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this QueueSrcAssignCreateDTO.
+        r"""Gets the cluster_id of this QueueSrcAssignCreateDTO.
 
         集群id。
 
@@ -148,7 +148,7 @@ class QueueSrcAssignCreateDTO:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this QueueSrcAssignCreateDTO.
+        r"""Sets the cluster_id of this QueueSrcAssignCreateDTO.
 
         集群id。
 
@@ -159,7 +159,7 @@ class QueueSrcAssignCreateDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueueSrcAssignCreateDTO.
+        r"""Gets the description of this QueueSrcAssignCreateDTO.
 
         当前空间分配资源附加的描述信息。
 
@@ -170,7 +170,7 @@ class QueueSrcAssignCreateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueueSrcAssignCreateDTO.
+        r"""Sets the description of this QueueSrcAssignCreateDTO.
 
         当前空间分配资源附加的描述信息。
 

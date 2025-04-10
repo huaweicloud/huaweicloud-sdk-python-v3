@@ -27,7 +27,7 @@ class DeletePipelineTemplateRequest:
     }
 
     def __init__(self, tenant_id=None, template_id=None):
-        """DeletePipelineTemplateRequest
+        r"""DeletePipelineTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePipelineTemplateRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this DeletePipelineTemplateRequest.
+        r"""Gets the tenant_id of this DeletePipelineTemplateRequest.
 
         租户ID
 
@@ -59,7 +59,7 @@ class DeletePipelineTemplateRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this DeletePipelineTemplateRequest.
+        r"""Sets the tenant_id of this DeletePipelineTemplateRequest.
 
         租户ID
 
@@ -70,7 +70,7 @@ class DeletePipelineTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeletePipelineTemplateRequest.
+        r"""Gets the template_id of this DeletePipelineTemplateRequest.
 
         模板ID
 
@@ -81,7 +81,7 @@ class DeletePipelineTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeletePipelineTemplateRequest.
+        r"""Sets the template_id of this DeletePipelineTemplateRequest.
 
         模板ID
 

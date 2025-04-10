@@ -27,7 +27,7 @@ class DatabaseOmUserInfo:
     }
 
     def __init__(self, om_user_status=None, om_user_expires_time=None):
-        """DatabaseOmUserInfo
+        r"""DatabaseOmUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DatabaseOmUserInfo:
 
     @property
     def om_user_status(self):
-        """Gets the om_user_status of this DatabaseOmUserInfo.
+        r"""Gets the om_user_status of this DatabaseOmUserInfo.
 
         运维账户状态
 
@@ -61,7 +61,7 @@ class DatabaseOmUserInfo:
 
     @om_user_status.setter
     def om_user_status(self, om_user_status):
-        """Sets the om_user_status of this DatabaseOmUserInfo.
+        r"""Sets the om_user_status of this DatabaseOmUserInfo.
 
         运维账户状态
 
@@ -72,7 +72,7 @@ class DatabaseOmUserInfo:
 
     @property
     def om_user_expires_time(self):
-        """Gets the om_user_expires_time of this DatabaseOmUserInfo.
+        r"""Gets the om_user_expires_time of this DatabaseOmUserInfo.
 
         运维账户过期状态
 
@@ -83,7 +83,7 @@ class DatabaseOmUserInfo:
 
     @om_user_expires_time.setter
     def om_user_expires_time(self, om_user_expires_time):
-        """Sets the om_user_expires_time of this DatabaseOmUserInfo.
+        r"""Sets the om_user_expires_time of this DatabaseOmUserInfo.
 
         运维账户过期状态
 

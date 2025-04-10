@@ -28,7 +28,7 @@ class ShowDrugLigandPreviewTaskResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ShowDrugLigandPreviewTaskResponse
+        r"""ShowDrugLigandPreviewTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDrugLigandPreviewTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDrugLigandPreviewTaskResponse.
+        r"""Gets the status of this ShowDrugLigandPreviewTaskResponse.
 
         任务状态
 
@@ -62,7 +62,7 @@ class ShowDrugLigandPreviewTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDrugLigandPreviewTaskResponse.
+        r"""Sets the status of this ShowDrugLigandPreviewTaskResponse.
 
         任务状态
 
@@ -73,7 +73,7 @@ class ShowDrugLigandPreviewTaskResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowDrugLigandPreviewTaskResponse.
+        r"""Gets the result of this ShowDrugLigandPreviewTaskResponse.
 
         :return: The result of this ShowDrugLigandPreviewTaskResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LigandPreviewTaskResultDto`
@@ -82,7 +82,7 @@ class ShowDrugLigandPreviewTaskResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowDrugLigandPreviewTaskResponse.
+        r"""Sets the result of this ShowDrugLigandPreviewTaskResponse.
 
         :param result: The result of this ShowDrugLigandPreviewTaskResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.LigandPreviewTaskResultDto`

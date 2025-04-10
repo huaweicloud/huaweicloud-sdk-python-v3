@@ -25,7 +25,7 @@ class ShowCesHierarchyRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowCesHierarchyRequest
+        r"""ShowCesHierarchyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCesHierarchyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowCesHierarchyRequest.
+        r"""Gets the instance_id of this ShowCesHierarchyRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowCesHierarchyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowCesHierarchyRequest.
+        r"""Sets the instance_id of this ShowCesHierarchyRequest.
 
         实例ID。
 

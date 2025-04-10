@@ -29,7 +29,7 @@ class ScopeProjectOption:
     }
 
     def __init__(self, id=None, name=None, domain=None):
-        """ScopeProjectOption
+        r"""ScopeProjectOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ScopeProjectOption:
 
     @property
     def id(self):
-        """Gets the id of this ScopeProjectOption.
+        r"""Gets the id of this ScopeProjectOption.
 
         项目ID，id与name二选一即可。
 
@@ -68,7 +68,7 @@ class ScopeProjectOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScopeProjectOption.
+        r"""Sets the id of this ScopeProjectOption.
 
         项目ID，id与name二选一即可。
 
@@ -79,7 +79,7 @@ class ScopeProjectOption:
 
     @property
     def name(self):
-        """Gets the name of this ScopeProjectOption.
+        r"""Gets the name of this ScopeProjectOption.
 
         项目名，id与name二选一即可。
 
@@ -90,7 +90,7 @@ class ScopeProjectOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScopeProjectOption.
+        r"""Sets the name of this ScopeProjectOption.
 
         项目名，id与name二选一即可。
 
@@ -101,7 +101,7 @@ class ScopeProjectOption:
 
     @property
     def domain(self):
-        """Gets the domain of this ScopeProjectOption.
+        r"""Gets the domain of this ScopeProjectOption.
 
         :return: The domain of this ScopeProjectOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
@@ -110,7 +110,7 @@ class ScopeProjectOption:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ScopeProjectOption.
+        r"""Sets the domain of this ScopeProjectOption.
 
         :param domain: The domain of this ScopeProjectOption.
         :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`

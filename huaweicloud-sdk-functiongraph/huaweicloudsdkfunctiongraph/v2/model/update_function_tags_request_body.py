@@ -29,7 +29,7 @@ class UpdateFunctionTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None, sys_tags=None):
-        """UpdateFunctionTagsRequestBody
+        r"""UpdateFunctionTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateFunctionTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateFunctionTagsRequestBody.
+        r"""Gets the action of this UpdateFunctionTagsRequestBody.
 
         action名称
 
@@ -68,7 +68,7 @@ class UpdateFunctionTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateFunctionTagsRequestBody.
+        r"""Sets the action of this UpdateFunctionTagsRequestBody.
 
         action名称
 
@@ -79,7 +79,7 @@ class UpdateFunctionTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateFunctionTagsRequestBody.
+        r"""Gets the tags of this UpdateFunctionTagsRequestBody.
 
         标签列表
 
@@ -90,7 +90,7 @@ class UpdateFunctionTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateFunctionTagsRequestBody.
+        r"""Sets the tags of this UpdateFunctionTagsRequestBody.
 
         标签列表
 
@@ -101,7 +101,7 @@ class UpdateFunctionTagsRequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this UpdateFunctionTagsRequestBody.
+        r"""Gets the sys_tags of this UpdateFunctionTagsRequestBody.
 
         系统标签列表
 
@@ -112,7 +112,7 @@ class UpdateFunctionTagsRequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this UpdateFunctionTagsRequestBody.
+        r"""Sets the sys_tags of this UpdateFunctionTagsRequestBody.
 
         系统标签列表
 

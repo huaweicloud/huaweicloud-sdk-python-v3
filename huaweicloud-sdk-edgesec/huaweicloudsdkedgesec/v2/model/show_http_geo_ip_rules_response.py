@@ -28,7 +28,7 @@ class ShowHttpGeoIpRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowHttpGeoIpRulesResponse
+        r"""ShowHttpGeoIpRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttpGeoIpRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpGeoIpRulesResponse.
+        r"""Gets the total of this ShowHttpGeoIpRulesResponse.
 
         策略下防护规则数量
 
@@ -62,7 +62,7 @@ class ShowHttpGeoIpRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpGeoIpRulesResponse.
+        r"""Sets the total of this ShowHttpGeoIpRulesResponse.
 
         策略下防护规则数量
 
@@ -73,7 +73,7 @@ class ShowHttpGeoIpRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpGeoIpRulesResponse.
+        r"""Gets the items of this ShowHttpGeoIpRulesResponse.
 
         防护规则列表
 
@@ -84,7 +84,7 @@ class ShowHttpGeoIpRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpGeoIpRulesResponse.
+        r"""Sets the items of this ShowHttpGeoIpRulesResponse.
 
         防护规则列表
 

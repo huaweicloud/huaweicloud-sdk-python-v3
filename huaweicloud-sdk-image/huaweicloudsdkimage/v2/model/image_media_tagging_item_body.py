@@ -35,7 +35,7 @@ class ImageMediaTaggingItemBody:
     }
 
     def __init__(self, confidence=None, type=None, tag=None, i18n_tag=None, i18n_type=None, instances=None):
-        """ImageMediaTaggingItemBody
+        r"""ImageMediaTaggingItemBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ImageMediaTaggingItemBody:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageMediaTaggingItemBody.
+        r"""Gets the confidence of this ImageMediaTaggingItemBody.
 
         置信度，将Float型置信度转为String类型返回,取值范围：0-100。
 
@@ -89,7 +89,7 @@ class ImageMediaTaggingItemBody:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageMediaTaggingItemBody.
+        r"""Sets the confidence of this ImageMediaTaggingItemBody.
 
         置信度，将Float型置信度转为String类型返回,取值范围：0-100。
 
@@ -100,7 +100,7 @@ class ImageMediaTaggingItemBody:
 
     @property
     def type(self):
-        """Gets the type of this ImageMediaTaggingItemBody.
+        r"""Gets the type of this ImageMediaTaggingItemBody.
 
         标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)](tag:hc)[[图像标签](https://support.huaweicloud.com/intl/zh-cn/image_faq/image_01_0037.html)](tag:hk) 
 
@@ -111,7 +111,7 @@ class ImageMediaTaggingItemBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImageMediaTaggingItemBody.
+        r"""Sets the type of this ImageMediaTaggingItemBody.
 
         标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)](tag:hc)[[图像标签](https://support.huaweicloud.com/intl/zh-cn/image_faq/image_01_0037.html)](tag:hk) 
 
@@ -122,7 +122,7 @@ class ImageMediaTaggingItemBody:
 
     @property
     def tag(self):
-        """Gets the tag of this ImageMediaTaggingItemBody.
+        r"""Gets the tag of this ImageMediaTaggingItemBody.
 
         标签名称。
 
@@ -133,7 +133,7 @@ class ImageMediaTaggingItemBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ImageMediaTaggingItemBody.
+        r"""Sets the tag of this ImageMediaTaggingItemBody.
 
         标签名称。
 
@@ -144,7 +144,7 @@ class ImageMediaTaggingItemBody:
 
     @property
     def i18n_tag(self):
-        """Gets the i18n_tag of this ImageMediaTaggingItemBody.
+        r"""Gets the i18n_tag of this ImageMediaTaggingItemBody.
 
         :return: The i18n_tag of this ImageMediaTaggingItemBody.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nTag`
@@ -153,7 +153,7 @@ class ImageMediaTaggingItemBody:
 
     @i18n_tag.setter
     def i18n_tag(self, i18n_tag):
-        """Sets the i18n_tag of this ImageMediaTaggingItemBody.
+        r"""Sets the i18n_tag of this ImageMediaTaggingItemBody.
 
         :param i18n_tag: The i18n_tag of this ImageMediaTaggingItemBody.
         :type i18n_tag: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nTag`
@@ -162,7 +162,7 @@ class ImageMediaTaggingItemBody:
 
     @property
     def i18n_type(self):
-        """Gets the i18n_type of this ImageMediaTaggingItemBody.
+        r"""Gets the i18n_type of this ImageMediaTaggingItemBody.
 
         :return: The i18n_type of this ImageMediaTaggingItemBody.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nType`
@@ -171,7 +171,7 @@ class ImageMediaTaggingItemBody:
 
     @i18n_type.setter
     def i18n_type(self, i18n_type):
-        """Sets the i18n_type of this ImageMediaTaggingItemBody.
+        r"""Sets the i18n_type of this ImageMediaTaggingItemBody.
 
         :param i18n_type: The i18n_type of this ImageMediaTaggingItemBody.
         :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nType`
@@ -180,7 +180,7 @@ class ImageMediaTaggingItemBody:
 
     @property
     def instances(self):
-        """Gets the instances of this ImageMediaTaggingItemBody.
+        r"""Gets the instances of this ImageMediaTaggingItemBody.
 
         目标检测框信息，为空则表示没有目标检测框。
 
@@ -191,7 +191,7 @@ class ImageMediaTaggingItemBody:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ImageMediaTaggingItemBody.
+        r"""Sets the instances of this ImageMediaTaggingItemBody.
 
         目标检测框信息，为空则表示没有目标检测框。
 

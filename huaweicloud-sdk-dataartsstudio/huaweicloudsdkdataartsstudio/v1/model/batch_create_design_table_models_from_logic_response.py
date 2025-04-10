@@ -26,7 +26,7 @@ class BatchCreateDesignTableModelsFromLogicResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """BatchCreateDesignTableModelsFromLogicResponse
+        r"""BatchCreateDesignTableModelsFromLogicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateDesignTableModelsFromLogicResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchCreateDesignTableModelsFromLogicResponse.
+        r"""Gets the data of this BatchCreateDesignTableModelsFromLogicResponse.
 
         :return: The data of this BatchCreateDesignTableModelsFromLogicResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`
@@ -53,7 +53,7 @@ class BatchCreateDesignTableModelsFromLogicResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchCreateDesignTableModelsFromLogicResponse.
+        r"""Sets the data of this BatchCreateDesignTableModelsFromLogicResponse.
 
         :param data: The data of this BatchCreateDesignTableModelsFromLogicResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`

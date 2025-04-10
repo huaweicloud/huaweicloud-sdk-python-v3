@@ -29,7 +29,7 @@ class PublishWorkflowRequest:
     }
 
     def __init__(self, eihealth_project_id=None, workflow_id=None, body=None):
-        """PublishWorkflowRequest
+        r"""PublishWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PublishWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this PublishWorkflowRequest.
+        r"""Gets the eihealth_project_id of this PublishWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class PublishWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this PublishWorkflowRequest.
+        r"""Sets the eihealth_project_id of this PublishWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class PublishWorkflowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this PublishWorkflowRequest.
+        r"""Gets the workflow_id of this PublishWorkflowRequest.
 
         流程id
 
@@ -88,7 +88,7 @@ class PublishWorkflowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this PublishWorkflowRequest.
+        r"""Sets the workflow_id of this PublishWorkflowRequest.
 
         流程id
 
@@ -99,7 +99,7 @@ class PublishWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishWorkflowRequest.
+        r"""Gets the body of this PublishWorkflowRequest.
 
         :return: The body of this PublishWorkflowRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowReq`
@@ -108,7 +108,7 @@ class PublishWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishWorkflowRequest.
+        r"""Sets the body of this PublishWorkflowRequest.
 
         :param body: The body of this PublishWorkflowRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowReq`

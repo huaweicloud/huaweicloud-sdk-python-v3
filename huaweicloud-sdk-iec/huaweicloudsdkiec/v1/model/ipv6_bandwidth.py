@@ -27,7 +27,7 @@ class Ipv6Bandwidth:
     }
 
     def __init__(self, id=None, bandwidth_type=None):
-        """Ipv6Bandwidth
+        r"""Ipv6Bandwidth
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Ipv6Bandwidth:
 
     @property
     def id(self):
-        """Gets the id of this Ipv6Bandwidth.
+        r"""Gets the id of this Ipv6Bandwidth.
 
         IPv6带宽的ID。
 
@@ -61,7 +61,7 @@ class Ipv6Bandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Ipv6Bandwidth.
+        r"""Sets the id of this Ipv6Bandwidth.
 
         IPv6带宽的ID。
 
@@ -72,7 +72,7 @@ class Ipv6Bandwidth:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this Ipv6Bandwidth.
+        r"""Gets the bandwidth_type of this Ipv6Bandwidth.
 
         带宽类型。  指定带宽ID，则该参数不生效。 不指定带宽的情况下，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽，有则使用最近创建的带宽。 约束：指定的bandwidth_type必须在对应弹性公网IP类型的allow_share_bandwidth_types中才能使用
 
@@ -83,7 +83,7 @@ class Ipv6Bandwidth:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this Ipv6Bandwidth.
+        r"""Sets the bandwidth_type of this Ipv6Bandwidth.
 
         带宽类型。  指定带宽ID，则该参数不生效。 不指定带宽的情况下，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽，有则使用最近创建的带宽。 约束：指定的bandwidth_type必须在对应弹性公网IP类型的allow_share_bandwidth_types中才能使用
 

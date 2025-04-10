@@ -29,7 +29,7 @@ class EcnWithErRequest:
     }
 
     def __init__(self, er_id=None, region_project_id=None, region_id=None):
-        """EcnWithErRequest
+        r"""EcnWithErRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EcnWithErRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this EcnWithErRequest.
+        r"""Gets the er_id of this EcnWithErRequest.
 
         企业路由器ID
 
@@ -65,7 +65,7 @@ class EcnWithErRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this EcnWithErRequest.
+        r"""Sets the er_id of this EcnWithErRequest.
 
         企业路由器ID
 
@@ -76,7 +76,7 @@ class EcnWithErRequest:
 
     @property
     def region_project_id(self):
-        """Gets the region_project_id of this EcnWithErRequest.
+        r"""Gets the region_project_id of this EcnWithErRequest.
 
         企业路由器区域项目ID
 
@@ -87,7 +87,7 @@ class EcnWithErRequest:
 
     @region_project_id.setter
     def region_project_id(self, region_project_id):
-        """Sets the region_project_id of this EcnWithErRequest.
+        r"""Sets the region_project_id of this EcnWithErRequest.
 
         企业路由器区域项目ID
 
@@ -98,7 +98,7 @@ class EcnWithErRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EcnWithErRequest.
+        r"""Gets the region_id of this EcnWithErRequest.
 
         区域ID
 
@@ -109,7 +109,7 @@ class EcnWithErRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EcnWithErRequest.
+        r"""Sets the region_id of this EcnWithErRequest.
 
         区域ID
 

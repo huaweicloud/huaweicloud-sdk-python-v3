@@ -25,7 +25,7 @@ class PolicyParameterValue:
     }
 
     def __init__(self, value=None):
-        """PolicyParameterValue
+        r"""PolicyParameterValue
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PolicyParameterValue:
 
     @property
     def value(self):
-        """Gets the value of this PolicyParameterValue.
+        r"""Gets the value of this PolicyParameterValue.
 
         规则参数值
 
@@ -54,7 +54,7 @@ class PolicyParameterValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PolicyParameterValue.
+        r"""Sets the value of this PolicyParameterValue.
 
         规则参数值
 

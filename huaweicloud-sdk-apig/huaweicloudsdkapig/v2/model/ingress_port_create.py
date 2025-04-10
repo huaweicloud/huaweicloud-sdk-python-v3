@@ -27,7 +27,7 @@ class IngressPortCreate:
     }
 
     def __init__(self, protocol=None, ingress_port=None):
-        """IngressPortCreate
+        r"""IngressPortCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IngressPortCreate:
 
     @property
     def protocol(self):
-        """Gets the protocol of this IngressPortCreate.
+        r"""Gets the protocol of this IngressPortCreate.
 
         实例自定义入方向端口协议。 - HTTP：实例自定义入方向端口使用HTTP协议。 - HTTPS：实例自定义入方向端口使用HTTPS协议。 
 
@@ -59,7 +59,7 @@ class IngressPortCreate:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this IngressPortCreate.
+        r"""Sets the protocol of this IngressPortCreate.
 
         实例自定义入方向端口协议。 - HTTP：实例自定义入方向端口使用HTTP协议。 - HTTPS：实例自定义入方向端口使用HTTPS协议。 
 
@@ -70,7 +70,7 @@ class IngressPortCreate:
 
     @property
     def ingress_port(self):
-        """Gets the ingress_port of this IngressPortCreate.
+        r"""Gets the ingress_port of this IngressPortCreate.
 
         实例自定义入方向端口，支持的端口范围为1024~49151。
 
@@ -81,7 +81,7 @@ class IngressPortCreate:
 
     @ingress_port.setter
     def ingress_port(self, ingress_port):
-        """Sets the ingress_port of this IngressPortCreate.
+        r"""Sets the ingress_port of this IngressPortCreate.
 
         实例自定义入方向端口，支持的端口范围为1024~49151。
 

@@ -26,7 +26,7 @@ class CinderShowVolumeTransferResponse(SdkResponse):
     }
 
     def __init__(self, transfer=None):
-        """CinderShowVolumeTransferResponse
+        r"""CinderShowVolumeTransferResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CinderShowVolumeTransferResponse(SdkResponse):
 
     @property
     def transfer(self):
-        """Gets the transfer of this CinderShowVolumeTransferResponse.
+        r"""Gets the transfer of this CinderShowVolumeTransferResponse.
 
         :return: The transfer of this CinderShowVolumeTransferResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeTransfer`
@@ -53,7 +53,7 @@ class CinderShowVolumeTransferResponse(SdkResponse):
 
     @transfer.setter
     def transfer(self, transfer):
-        """Sets the transfer of this CinderShowVolumeTransferResponse.
+        r"""Sets the transfer of this CinderShowVolumeTransferResponse.
 
         :param transfer: The transfer of this CinderShowVolumeTransferResponse.
         :type transfer: :class:`huaweicloudsdkevs.v2.VolumeTransfer`

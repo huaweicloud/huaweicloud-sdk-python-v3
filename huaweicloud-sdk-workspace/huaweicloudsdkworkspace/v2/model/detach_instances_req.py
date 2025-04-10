@@ -27,7 +27,7 @@ class DetachInstancesReq:
     }
 
     def __init__(self, desktop_ids=None, shutoff_after_detach=None):
-        """DetachInstancesReq
+        r"""DetachInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DetachInstancesReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this DetachInstancesReq.
+        r"""Gets the desktop_ids of this DetachInstancesReq.
 
         桌面id,不能为空
 
@@ -61,7 +61,7 @@ class DetachInstancesReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this DetachInstancesReq.
+        r"""Sets the desktop_ids of this DetachInstancesReq.
 
         桌面id,不能为空
 
@@ -72,7 +72,7 @@ class DetachInstancesReq:
 
     @property
     def shutoff_after_detach(self):
-        """Gets the shutoff_after_detach of this DetachInstancesReq.
+        r"""Gets the shutoff_after_detach of this DetachInstancesReq.
 
         解绑后是否关机。
 
@@ -83,7 +83,7 @@ class DetachInstancesReq:
 
     @shutoff_after_detach.setter
     def shutoff_after_detach(self, shutoff_after_detach):
-        """Sets the shutoff_after_detach of this DetachInstancesReq.
+        r"""Sets the shutoff_after_detach of this DetachInstancesReq.
 
         解绑后是否关机。
 

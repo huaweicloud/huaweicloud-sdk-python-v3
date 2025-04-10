@@ -25,7 +25,7 @@ class RunSyncCommandRequest:
     }
 
     def __init__(self, body=None):
-        """RunSyncCommandRequest
+        r"""RunSyncCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunSyncCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSyncCommandRequest.
+        r"""Gets the body of this RunSyncCommandRequest.
 
         :return: The body of this RunSyncCommandRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequestBody`
@@ -52,7 +52,7 @@ class RunSyncCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSyncCommandRequest.
+        r"""Sets the body of this RunSyncCommandRequest.
 
         :param body: The body of this RunSyncCommandRequest.
         :type body: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequestBody`

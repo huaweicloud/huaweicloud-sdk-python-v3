@@ -27,7 +27,7 @@ class ShareTemplatesRequest:
     }
 
     def __init__(self, repository_uuid=None, body=None):
-        """ShareTemplatesRequest
+        r"""ShareTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShareTemplatesRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShareTemplatesRequest.
+        r"""Gets the repository_uuid of this ShareTemplatesRequest.
 
         仓库id
 
@@ -60,7 +60,7 @@ class ShareTemplatesRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShareTemplatesRequest.
+        r"""Sets the repository_uuid of this ShareTemplatesRequest.
 
         仓库id
 
@@ -71,7 +71,7 @@ class ShareTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShareTemplatesRequest.
+        r"""Gets the body of this ShareTemplatesRequest.
 
         :return: The body of this ShareTemplatesRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO`
@@ -80,7 +80,7 @@ class ShareTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShareTemplatesRequest.
+        r"""Sets the body of this ShareTemplatesRequest.
 
         :param body: The body of this ShareTemplatesRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO`

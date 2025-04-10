@@ -24,7 +24,7 @@ class ScaleNodePoolResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ScaleNodePoolResponse
+        r"""ScaleNodePoolResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class Catalog:
     }
 
     def __init__(self, id=None, catalog_zh=None, catalog_en=None):
-        """Catalog
+        r"""Catalog
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Catalog:
 
     @property
     def id(self):
-        """Gets the id of this Catalog.
+        r"""Gets the id of this Catalog.
 
         唯一标识ID。
 
@@ -68,7 +68,7 @@ class Catalog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Catalog.
+        r"""Sets the id of this Catalog.
 
         唯一标识ID。
 
@@ -79,7 +79,7 @@ class Catalog:
 
     @property
     def catalog_zh(self):
-        """Gets the catalog_zh of this Catalog.
+        r"""Gets the catalog_zh of this Catalog.
 
         分类描述(中文)。
 
@@ -90,7 +90,7 @@ class Catalog:
 
     @catalog_zh.setter
     def catalog_zh(self, catalog_zh):
-        """Sets the catalog_zh of this Catalog.
+        r"""Sets the catalog_zh of this Catalog.
 
         分类描述(中文)。
 
@@ -101,7 +101,7 @@ class Catalog:
 
     @property
     def catalog_en(self):
-        """Gets the catalog_en of this Catalog.
+        r"""Gets the catalog_en of this Catalog.
 
         分类描述(英文)。
 
@@ -112,7 +112,7 @@ class Catalog:
 
     @catalog_en.setter
     def catalog_en(self, catalog_en):
-        """Sets the catalog_en of this Catalog.
+        r"""Sets the catalog_en of this Catalog.
 
         分类描述(英文)。
 

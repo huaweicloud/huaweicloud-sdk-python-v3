@@ -29,7 +29,7 @@ class ModelFile:
     }
 
     def __init__(self, source=None, url=None, eihealth_project_id=None):
-        """ModelFile
+        r"""ModelFile
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ModelFile:
 
     @property
     def source(self):
-        """Gets the source of this ModelFile.
+        r"""Gets the source of this ModelFile.
 
         :return: The source of this ModelFile.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ModelFileSource`
@@ -64,7 +64,7 @@ class ModelFile:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ModelFile.
+        r"""Sets the source of this ModelFile.
 
         :param source: The source of this ModelFile.
         :type source: :class:`huaweicloudsdkeihealth.v1.ModelFileSource`
@@ -73,7 +73,7 @@ class ModelFile:
 
     @property
     def url(self):
-        """Gets the url of this ModelFile.
+        r"""Gets the url of this ModelFile.
 
         文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -84,7 +84,7 @@ class ModelFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ModelFile.
+        r"""Sets the url of this ModelFile.
 
         文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -95,7 +95,7 @@ class ModelFile:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ModelFile.
+        r"""Gets the eihealth_project_id of this ModelFile.
 
         模型文件所在项目id，仅文件为数据中心时填写
 
@@ -106,7 +106,7 @@ class ModelFile:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ModelFile.
+        r"""Sets the eihealth_project_id of this ModelFile.
 
         模型文件所在项目id，仅文件为数据中心时填写
 

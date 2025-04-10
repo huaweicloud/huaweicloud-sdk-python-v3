@@ -27,7 +27,7 @@ class DomainIpv6SwitchReq:
     }
 
     def __init__(self, domain=None, is_ipv6=None):
-        """DomainIpv6SwitchReq
+        r"""DomainIpv6SwitchReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DomainIpv6SwitchReq:
 
     @property
     def domain(self):
-        """Gets the domain of this DomainIpv6SwitchReq.
+        r"""Gets the domain of this DomainIpv6SwitchReq.
 
         域名
 
@@ -60,7 +60,7 @@ class DomainIpv6SwitchReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DomainIpv6SwitchReq.
+        r"""Sets the domain of this DomainIpv6SwitchReq.
 
         域名
 
@@ -71,7 +71,7 @@ class DomainIpv6SwitchReq:
 
     @property
     def is_ipv6(self):
-        """Gets the is_ipv6 of this DomainIpv6SwitchReq.
+        r"""Gets the is_ipv6 of this DomainIpv6SwitchReq.
 
         IPV6开关配置，默认关闭，true为开启，false为关闭
 
@@ -82,7 +82,7 @@ class DomainIpv6SwitchReq:
 
     @is_ipv6.setter
     def is_ipv6(self, is_ipv6):
-        """Sets the is_ipv6 of this DomainIpv6SwitchReq.
+        r"""Sets the is_ipv6 of this DomainIpv6SwitchReq.
 
         IPV6开关配置，默认关闭，true为开启，false为关闭
 

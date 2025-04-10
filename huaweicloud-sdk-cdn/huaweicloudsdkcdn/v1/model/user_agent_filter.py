@@ -29,7 +29,7 @@ class UserAgentFilter:
     }
 
     def __init__(self, type=None, value=None, ua_list=None):
-        """UserAgentFilter
+        r"""UserAgentFilter
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UserAgentFilter:
 
     @property
     def type(self):
-        """Gets the type of this UserAgentFilter.
+        r"""Gets the type of this UserAgentFilter.
 
         UA黑白名单类型 off：关闭UA黑白名单; black：UA黑名单; white：UA白名单;
 
@@ -67,7 +67,7 @@ class UserAgentFilter:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UserAgentFilter.
+        r"""Sets the type of this UserAgentFilter.
 
         UA黑白名单类型 off：关闭UA黑白名单; black：UA黑名单; white：UA白名单;
 
@@ -78,7 +78,7 @@ class UserAgentFilter:
 
     @property
     def value(self):
-        """Gets the value of this UserAgentFilter.
+        r"""Gets the value of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符，多条规则用“,”分割。
 
@@ -89,7 +89,7 @@ class UserAgentFilter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UserAgentFilter.
+        r"""Sets the value of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符，多条规则用“,”分割。
 
@@ -100,7 +100,7 @@ class UserAgentFilter:
 
     @property
     def ua_list(self):
-        """Gets the ua_list of this UserAgentFilter.
+        r"""Gets the ua_list of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
 
@@ -111,7 +111,7 @@ class UserAgentFilter:
 
     @ua_list.setter
     def ua_list(self, ua_list):
-        """Sets the ua_list of this UserAgentFilter.
+        r"""Sets the ua_list of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
 

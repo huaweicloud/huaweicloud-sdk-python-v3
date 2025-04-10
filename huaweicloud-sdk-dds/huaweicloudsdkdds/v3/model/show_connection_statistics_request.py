@@ -27,7 +27,7 @@ class ShowConnectionStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None):
-        """ShowConnectionStatisticsRequest
+        r"""ShowConnectionStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowConnectionStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowConnectionStatisticsRequest.
+        r"""Gets the instance_id of this ShowConnectionStatisticsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class ShowConnectionStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowConnectionStatisticsRequest.
+        r"""Sets the instance_id of this ShowConnectionStatisticsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class ShowConnectionStatisticsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowConnectionStatisticsRequest.
+        r"""Gets the node_id of this ShowConnectionStatisticsRequest.
 
         节点ID。 - 如取空值，则默认查询实例下所有允许连接的节点的连接数信息。
 
@@ -82,7 +82,7 @@ class ShowConnectionStatisticsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowConnectionStatisticsRequest.
+        r"""Sets the node_id of this ShowConnectionStatisticsRequest.
 
         节点ID。 - 如取空值，则默认查询实例下所有允许连接的节点的连接数信息。
 

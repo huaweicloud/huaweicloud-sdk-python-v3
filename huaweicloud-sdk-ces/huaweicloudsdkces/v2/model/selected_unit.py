@@ -23,7 +23,7 @@ class SelectedUnit:
     }
 
     def __init__(self):
-        """SelectedUnit
+        r"""SelectedUnit
 
         The model defined in huaweicloud sdk
 

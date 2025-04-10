@@ -31,7 +31,7 @@ class CbcOrderResult:
     }
 
     def __init__(self, cloud_service_id=None, order_id=None, subscribe_result=None, resource_id=None):
-        """CbcOrderResult
+        r"""CbcOrderResult
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CbcOrderResult:
 
     @property
     def cloud_service_id(self):
-        """Gets the cloud_service_id of this CbcOrderResult.
+        r"""Gets the cloud_service_id of this CbcOrderResult.
 
         云服务ID
 
@@ -73,7 +73,7 @@ class CbcOrderResult:
 
     @cloud_service_id.setter
     def cloud_service_id(self, cloud_service_id):
-        """Sets the cloud_service_id of this CbcOrderResult.
+        r"""Sets the cloud_service_id of this CbcOrderResult.
 
         云服务ID
 
@@ -84,7 +84,7 @@ class CbcOrderResult:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CbcOrderResult.
+        r"""Gets the order_id of this CbcOrderResult.
 
         订单ID
 
@@ -95,7 +95,7 @@ class CbcOrderResult:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CbcOrderResult.
+        r"""Sets the order_id of this CbcOrderResult.
 
         订单ID
 
@@ -106,7 +106,7 @@ class CbcOrderResult:
 
     @property
     def subscribe_result(self):
-        """Gets the subscribe_result of this CbcOrderResult.
+        r"""Gets the subscribe_result of this CbcOrderResult.
 
         订购结果，1：成功；0：失败
 
@@ -117,7 +117,7 @@ class CbcOrderResult:
 
     @subscribe_result.setter
     def subscribe_result(self, subscribe_result):
-        """Sets the subscribe_result of this CbcOrderResult.
+        r"""Sets the subscribe_result of this CbcOrderResult.
 
         订购结果，1：成功；0：失败
 
@@ -128,7 +128,7 @@ class CbcOrderResult:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CbcOrderResult.
+        r"""Gets the resource_id of this CbcOrderResult.
 
         包周期资源预生成资源id。
 
@@ -139,7 +139,7 @@ class CbcOrderResult:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CbcOrderResult.
+        r"""Sets the resource_id of this CbcOrderResult.
 
         包周期资源预生成资源id。
 

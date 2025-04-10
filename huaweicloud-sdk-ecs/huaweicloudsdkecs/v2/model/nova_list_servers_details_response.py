@@ -28,7 +28,7 @@ class NovaListServersDetailsResponse(SdkResponse):
     }
 
     def __init__(self, servers=None, servers_links=None):
-        """NovaListServersDetailsResponse
+        r"""NovaListServersDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NovaListServersDetailsResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this NovaListServersDetailsResponse.
+        r"""Gets the servers of this NovaListServersDetailsResponse.
 
         查询云服务器信息列表。
 
@@ -62,7 +62,7 @@ class NovaListServersDetailsResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this NovaListServersDetailsResponse.
+        r"""Sets the servers of this NovaListServersDetailsResponse.
 
         查询云服务器信息列表。
 
@@ -73,7 +73,7 @@ class NovaListServersDetailsResponse(SdkResponse):
 
     @property
     def servers_links(self):
-        """Gets the servers_links of this NovaListServersDetailsResponse.
+        r"""Gets the servers_links of this NovaListServersDetailsResponse.
 
         分页查询时，查询下一页数据链接。
 
@@ -84,7 +84,7 @@ class NovaListServersDetailsResponse(SdkResponse):
 
     @servers_links.setter
     def servers_links(self, servers_links):
-        """Sets the servers_links of this NovaListServersDetailsResponse.
+        r"""Sets the servers_links of this NovaListServersDetailsResponse.
 
         分页查询时，查询下一页数据链接。
 

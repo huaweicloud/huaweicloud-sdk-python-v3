@@ -27,7 +27,7 @@ class UpdateIegRequestBody:
     }
 
     def __init__(self, name=None, high_availability=None):
-        """UpdateIegRequestBody
+        r"""UpdateIegRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateIegRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIegRequestBody.
+        r"""Gets the name of this UpdateIegRequestBody.
 
         智能企业网关名字
 
@@ -61,7 +61,7 @@ class UpdateIegRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIegRequestBody.
+        r"""Sets the name of this UpdateIegRequestBody.
 
         智能企业网关名字
 
@@ -72,7 +72,7 @@ class UpdateIegRequestBody:
 
     @property
     def high_availability(self):
-        """Gets the high_availability of this UpdateIegRequestBody.
+        r"""Gets the high_availability of this UpdateIegRequestBody.
 
         高可用性
 
@@ -83,7 +83,7 @@ class UpdateIegRequestBody:
 
     @high_availability.setter
     def high_availability(self, high_availability):
-        """Sets the high_availability of this UpdateIegRequestBody.
+        r"""Sets the high_availability of this UpdateIegRequestBody.
 
         高可用性
 

@@ -47,7 +47,7 @@ class CustomizedFieldsVO:
     }
 
     def __init__(self, id=None, name_ch=None, name_en=None, not_null=None, optional_values=None, type=None, ordinal=None, description=None, create_by=None, update_by=None, create_time=None, update_time=None):
-        """CustomizedFieldsVO
+        r"""CustomizedFieldsVO
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class CustomizedFieldsVO:
 
     @property
     def id(self):
-        """Gets the id of this CustomizedFieldsVO.
+        r"""Gets the id of this CustomizedFieldsVO.
 
         编码，ID字符串。
 
@@ -127,7 +127,7 @@ class CustomizedFieldsVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomizedFieldsVO.
+        r"""Sets the id of this CustomizedFieldsVO.
 
         编码，ID字符串。
 
@@ -138,7 +138,7 @@ class CustomizedFieldsVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this CustomizedFieldsVO.
+        r"""Gets the name_ch of this CustomizedFieldsVO.
 
         自定义项中文名称。
 
@@ -149,7 +149,7 @@ class CustomizedFieldsVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this CustomizedFieldsVO.
+        r"""Sets the name_ch of this CustomizedFieldsVO.
 
         自定义项中文名称。
 
@@ -160,7 +160,7 @@ class CustomizedFieldsVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CustomizedFieldsVO.
+        r"""Gets the name_en of this CustomizedFieldsVO.
 
         自定义项英文名称。
 
@@ -171,7 +171,7 @@ class CustomizedFieldsVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CustomizedFieldsVO.
+        r"""Sets the name_en of this CustomizedFieldsVO.
 
         自定义项英文名称。
 
@@ -182,7 +182,7 @@ class CustomizedFieldsVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this CustomizedFieldsVO.
+        r"""Gets the not_null of this CustomizedFieldsVO.
 
         是否必填。
 
@@ -193,7 +193,7 @@ class CustomizedFieldsVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this CustomizedFieldsVO.
+        r"""Sets the not_null of this CustomizedFieldsVO.
 
         是否必填。
 
@@ -204,7 +204,7 @@ class CustomizedFieldsVO:
 
     @property
     def optional_values(self):
-        """Gets the optional_values of this CustomizedFieldsVO.
+        r"""Gets the optional_values of this CustomizedFieldsVO.
 
         可选值。当可选值有多个时，用分号分隔。
 
@@ -215,7 +215,7 @@ class CustomizedFieldsVO:
 
     @optional_values.setter
     def optional_values(self, optional_values):
-        """Sets the optional_values of this CustomizedFieldsVO.
+        r"""Sets the optional_values of this CustomizedFieldsVO.
 
         可选值。当可选值有多个时，用分号分隔。
 
@@ -226,7 +226,7 @@ class CustomizedFieldsVO:
 
     @property
     def type(self):
-        """Gets the type of this CustomizedFieldsVO.
+        r"""Gets the type of this CustomizedFieldsVO.
 
         自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
@@ -237,7 +237,7 @@ class CustomizedFieldsVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomizedFieldsVO.
+        r"""Sets the type of this CustomizedFieldsVO.
 
         自定义项类型。 枚举值：   - TABLE: 表自定义项   - ATTRIBUTE: 属性自定义项   - SUBJECT: 主题自定义项   - METRIC: 业务指标自定义项 
 
@@ -248,7 +248,7 @@ class CustomizedFieldsVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this CustomizedFieldsVO.
+        r"""Gets the ordinal of this CustomizedFieldsVO.
 
         系统排序字段，新建、修改时不需要填写。
 
@@ -259,7 +259,7 @@ class CustomizedFieldsVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this CustomizedFieldsVO.
+        r"""Sets the ordinal of this CustomizedFieldsVO.
 
         系统排序字段，新建、修改时不需要填写。
 
@@ -270,7 +270,7 @@ class CustomizedFieldsVO:
 
     @property
     def description(self):
-        """Gets the description of this CustomizedFieldsVO.
+        r"""Gets the description of this CustomizedFieldsVO.
 
         自定义项描述。
 
@@ -281,7 +281,7 @@ class CustomizedFieldsVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizedFieldsVO.
+        r"""Sets the description of this CustomizedFieldsVO.
 
         自定义项描述。
 
@@ -292,7 +292,7 @@ class CustomizedFieldsVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this CustomizedFieldsVO.
+        r"""Gets the create_by of this CustomizedFieldsVO.
 
         创建人，只读。
 
@@ -303,7 +303,7 @@ class CustomizedFieldsVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CustomizedFieldsVO.
+        r"""Sets the create_by of this CustomizedFieldsVO.
 
         创建人，只读。
 
@@ -314,7 +314,7 @@ class CustomizedFieldsVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this CustomizedFieldsVO.
+        r"""Gets the update_by of this CustomizedFieldsVO.
 
         更新人，只读。
 
@@ -325,7 +325,7 @@ class CustomizedFieldsVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this CustomizedFieldsVO.
+        r"""Sets the update_by of this CustomizedFieldsVO.
 
         更新人，只读。
 
@@ -336,7 +336,7 @@ class CustomizedFieldsVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CustomizedFieldsVO.
+        r"""Gets the create_time of this CustomizedFieldsVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -347,7 +347,7 @@ class CustomizedFieldsVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CustomizedFieldsVO.
+        r"""Sets the create_time of this CustomizedFieldsVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -358,7 +358,7 @@ class CustomizedFieldsVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CustomizedFieldsVO.
+        r"""Gets the update_time of this CustomizedFieldsVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -369,7 +369,7 @@ class CustomizedFieldsVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CustomizedFieldsVO.
+        r"""Sets the update_time of this CustomizedFieldsVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

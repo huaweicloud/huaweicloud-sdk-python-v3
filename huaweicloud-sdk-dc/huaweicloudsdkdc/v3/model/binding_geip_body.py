@@ -27,7 +27,7 @@ class BindingGeipBody:
     }
 
     def __init__(self, global_eip_id=None, type=None):
-        """BindingGeipBody
+        r"""BindingGeipBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BindingGeipBody:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this BindingGeipBody.
+        r"""Gets the global_eip_id of this BindingGeipBody.
 
         全局弹性公网IP的ID
 
@@ -60,7 +60,7 @@ class BindingGeipBody:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this BindingGeipBody.
+        r"""Sets the global_eip_id of this BindingGeipBody.
 
         全局弹性公网IP的ID
 
@@ -71,7 +71,7 @@ class BindingGeipBody:
 
     @property
     def type(self):
-        """Gets the type of this BindingGeipBody.
+        r"""Gets the type of this BindingGeipBody.
 
         geip子网类型
 
@@ -82,7 +82,7 @@ class BindingGeipBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BindingGeipBody.
+        r"""Sets the type of this BindingGeipBody.
 
         geip子网类型
 

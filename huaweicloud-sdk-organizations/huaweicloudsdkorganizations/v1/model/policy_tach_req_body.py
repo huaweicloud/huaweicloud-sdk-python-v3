@@ -25,7 +25,7 @@ class PolicyTachReqBody:
     }
 
     def __init__(self, entity_id=None):
-        """PolicyTachReqBody
+        r"""PolicyTachReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PolicyTachReqBody:
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this PolicyTachReqBody.
+        r"""Gets the entity_id of this PolicyTachReqBody.
 
         根、组织单元或账号的唯一标识符（ID）。
 
@@ -53,7 +53,7 @@ class PolicyTachReqBody:
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this PolicyTachReqBody.
+        r"""Sets the entity_id of this PolicyTachReqBody.
 
         根、组织单元或账号的唯一标识符（ID）。
 

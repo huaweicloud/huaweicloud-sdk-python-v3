@@ -27,7 +27,7 @@ class NodeTemplateLoginUserPassword:
     }
 
     def __init__(self, username=None, password=None):
-        """NodeTemplateLoginUserPassword
+        r"""NodeTemplateLoginUserPassword
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeTemplateLoginUserPassword:
 
     @property
     def username(self):
-        """Gets the username of this NodeTemplateLoginUserPassword.
+        r"""Gets the username of this NodeTemplateLoginUserPassword.
 
         :return: The username of this NodeTemplateLoginUserPassword.
         :rtype: str
@@ -59,7 +59,7 @@ class NodeTemplateLoginUserPassword:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this NodeTemplateLoginUserPassword.
+        r"""Sets the username of this NodeTemplateLoginUserPassword.
 
         :param username: The username of this NodeTemplateLoginUserPassword.
         :type username: str
@@ -68,7 +68,7 @@ class NodeTemplateLoginUserPassword:
 
     @property
     def password(self):
-        """Gets the password of this NodeTemplateLoginUserPassword.
+        r"""Gets the password of this NodeTemplateLoginUserPassword.
 
         :return: The password of this NodeTemplateLoginUserPassword.
         :rtype: str
@@ -77,7 +77,7 @@ class NodeTemplateLoginUserPassword:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this NodeTemplateLoginUserPassword.
+        r"""Sets the password of this NodeTemplateLoginUserPassword.
 
         :param password: The password of this NodeTemplateLoginUserPassword.
         :type password: str

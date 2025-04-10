@@ -26,7 +26,7 @@ class CreateDirectoryResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateDirectoryResponse
+        r"""CreateDirectoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateDirectoryResponse.
+        r"""Gets the data of this CreateDirectoryResponse.
 
         :return: The data of this CreateDirectoryResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryResultData`
@@ -53,7 +53,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateDirectoryResponse.
+        r"""Sets the data of this CreateDirectoryResponse.
 
         :param data: The data of this CreateDirectoryResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryResultData`

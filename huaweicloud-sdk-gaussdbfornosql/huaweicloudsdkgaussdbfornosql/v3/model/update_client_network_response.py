@@ -26,7 +26,7 @@ class UpdateClientNetworkResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateClientNetworkResponse
+        r"""UpdateClientNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateClientNetworkResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateClientNetworkResponse.
+        r"""Gets the job_id of this UpdateClientNetworkResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class UpdateClientNetworkResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateClientNetworkResponse.
+        r"""Sets the job_id of this UpdateClientNetworkResponse.
 
         任务ID。
 

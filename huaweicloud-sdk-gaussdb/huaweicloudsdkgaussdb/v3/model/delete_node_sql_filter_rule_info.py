@@ -27,7 +27,7 @@ class DeleteNodeSqlFilterRuleInfo:
     }
 
     def __init__(self, node_id=None, rules=None):
-        """DeleteNodeSqlFilterRuleInfo
+        r"""DeleteNodeSqlFilterRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNodeSqlFilterRuleInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteNodeSqlFilterRuleInfo.
+        r"""Gets the node_id of this DeleteNodeSqlFilterRuleInfo.
 
         节点ID
 
@@ -59,7 +59,7 @@ class DeleteNodeSqlFilterRuleInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteNodeSqlFilterRuleInfo.
+        r"""Sets the node_id of this DeleteNodeSqlFilterRuleInfo.
 
         节点ID
 
@@ -70,7 +70,7 @@ class DeleteNodeSqlFilterRuleInfo:
 
     @property
     def rules(self):
-        """Gets the rules of this DeleteNodeSqlFilterRuleInfo.
+        r"""Gets the rules of this DeleteNodeSqlFilterRuleInfo.
 
         SQL限流规则。
 
@@ -81,7 +81,7 @@ class DeleteNodeSqlFilterRuleInfo:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this DeleteNodeSqlFilterRuleInfo.
+        r"""Sets the rules of this DeleteNodeSqlFilterRuleInfo.
 
         SQL限流规则。
 

@@ -33,7 +33,7 @@ class LtsLogErrorDetail:
     }
 
     def __init__(self, node_id=None, time=None, level=None, content=None, line_num=None):
-        """LtsLogErrorDetail
+        r"""LtsLogErrorDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LtsLogErrorDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this LtsLogErrorDetail.
+        r"""Gets the node_id of this LtsLogErrorDetail.
 
         节点ID。
 
@@ -82,7 +82,7 @@ class LtsLogErrorDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this LtsLogErrorDetail.
+        r"""Sets the node_id of this LtsLogErrorDetail.
 
         节点ID。
 
@@ -93,7 +93,7 @@ class LtsLogErrorDetail:
 
     @property
     def time(self):
-        """Gets the time of this LtsLogErrorDetail.
+        r"""Gets the time of this LtsLogErrorDetail.
 
         执行时间。
 
@@ -104,7 +104,7 @@ class LtsLogErrorDetail:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this LtsLogErrorDetail.
+        r"""Sets the time of this LtsLogErrorDetail.
 
         执行时间。
 
@@ -115,7 +115,7 @@ class LtsLogErrorDetail:
 
     @property
     def level(self):
-        """Gets the level of this LtsLogErrorDetail.
+        r"""Gets the level of this LtsLogErrorDetail.
 
         日志级别。
 
@@ -126,7 +126,7 @@ class LtsLogErrorDetail:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LtsLogErrorDetail.
+        r"""Sets the level of this LtsLogErrorDetail.
 
         日志级别。
 
@@ -137,7 +137,7 @@ class LtsLogErrorDetail:
 
     @property
     def content(self):
-        """Gets the content of this LtsLogErrorDetail.
+        r"""Gets the content of this LtsLogErrorDetail.
 
         错误日志内容。
 
@@ -148,7 +148,7 @@ class LtsLogErrorDetail:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this LtsLogErrorDetail.
+        r"""Sets the content of this LtsLogErrorDetail.
 
         错误日志内容。
 
@@ -159,7 +159,7 @@ class LtsLogErrorDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this LtsLogErrorDetail.
+        r"""Gets the line_num of this LtsLogErrorDetail.
 
         日志单行序列号。
 
@@ -170,7 +170,7 @@ class LtsLogErrorDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this LtsLogErrorDetail.
+        r"""Sets the line_num of this LtsLogErrorDetail.
 
         日志单行序列号。
 

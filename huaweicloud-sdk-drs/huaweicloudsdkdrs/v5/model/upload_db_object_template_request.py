@@ -31,7 +31,7 @@ class UploadDbObjectTemplateRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, file_import_db_level=None, body=None):
-        """UploadDbObjectTemplateRequest
+        r"""UploadDbObjectTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UploadDbObjectTemplateRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UploadDbObjectTemplateRequest.
+        r"""Gets the job_id of this UploadDbObjectTemplateRequest.
 
         任务ID。
 
@@ -74,7 +74,7 @@ class UploadDbObjectTemplateRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UploadDbObjectTemplateRequest.
+        r"""Sets the job_id of this UploadDbObjectTemplateRequest.
 
         任务ID。
 
@@ -85,7 +85,7 @@ class UploadDbObjectTemplateRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UploadDbObjectTemplateRequest.
+        r"""Gets the x_language of this UploadDbObjectTemplateRequest.
 
         请求语言类型。
 
@@ -96,7 +96,7 @@ class UploadDbObjectTemplateRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UploadDbObjectTemplateRequest.
+        r"""Sets the x_language of this UploadDbObjectTemplateRequest.
 
         请求语言类型。
 
@@ -107,7 +107,7 @@ class UploadDbObjectTemplateRequest:
 
     @property
     def file_import_db_level(self):
-        """Gets the file_import_db_level of this UploadDbObjectTemplateRequest.
+        r"""Gets the file_import_db_level of this UploadDbObjectTemplateRequest.
 
         文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
 
@@ -118,7 +118,7 @@ class UploadDbObjectTemplateRequest:
 
     @file_import_db_level.setter
     def file_import_db_level(self, file_import_db_level):
-        """Sets the file_import_db_level of this UploadDbObjectTemplateRequest.
+        r"""Sets the file_import_db_level of this UploadDbObjectTemplateRequest.
 
         文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
 
@@ -129,7 +129,7 @@ class UploadDbObjectTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadDbObjectTemplateRequest.
+        r"""Gets the body of this UploadDbObjectTemplateRequest.
 
         :return: The body of this UploadDbObjectTemplateRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateRequestBody`
@@ -138,7 +138,7 @@ class UploadDbObjectTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadDbObjectTemplateRequest.
+        r"""Sets the body of this UploadDbObjectTemplateRequest.
 
         :param body: The body of this UploadDbObjectTemplateRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateRequestBody`

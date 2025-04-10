@@ -25,7 +25,7 @@ class BatchDeleteAppsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteAppsRequest
+        r"""BatchDeleteAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteAppsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteAppsRequest.
+        r"""Gets the body of this BatchDeleteAppsRequest.
 
         :return: The body of this BatchDeleteAppsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAppsReq`
@@ -52,7 +52,7 @@ class BatchDeleteAppsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteAppsRequest.
+        r"""Sets the body of this BatchDeleteAppsRequest.
 
         :param body: The body of this BatchDeleteAppsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAppsReq`

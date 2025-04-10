@@ -25,7 +25,7 @@ class GetAgencyV5Request:
     }
 
     def __init__(self, agency_id=None):
-        """GetAgencyV5Request
+        r"""GetAgencyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetAgencyV5Request:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this GetAgencyV5Request.
+        r"""Gets the agency_id of this GetAgencyV5Request.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class GetAgencyV5Request:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this GetAgencyV5Request.
+        r"""Sets the agency_id of this GetAgencyV5Request.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

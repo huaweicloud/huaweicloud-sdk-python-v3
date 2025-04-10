@@ -83,7 +83,7 @@ class ListGlobalEipSegmentsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, internet_bandwidth_id=None, name=None, name_like=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, cidr=None, cidr_v6=None, freezen=None, internet_bandwidth_is_null=None, status=None, associate_instance_region=None, associate_instance_instance_type=None, associate_instance_public_border_group=None, associate_instance_instance_site=None, associate_instance_instance_id=None, associate_instance_project_id=None, associate_instance_service_id=None, associate_instance_service_type=None, enterprise_project_id=None, tags=None):
-        """ListGlobalEipSegmentsRequest
+        r"""ListGlobalEipSegmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalEipSegmentsRequest.
+        r"""Gets the limit of this ListGlobalEipSegmentsRequest.
 
         每页条数
 
@@ -257,7 +257,7 @@ class ListGlobalEipSegmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalEipSegmentsRequest.
+        r"""Sets the limit of this ListGlobalEipSegmentsRequest.
 
         每页条数
 
@@ -268,7 +268,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGlobalEipSegmentsRequest.
+        r"""Gets the offset of this ListGlobalEipSegmentsRequest.
 
         分页起始点
 
@@ -279,7 +279,7 @@ class ListGlobalEipSegmentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGlobalEipSegmentsRequest.
+        r"""Sets the offset of this ListGlobalEipSegmentsRequest.
 
         分页起始点
 
@@ -290,7 +290,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalEipSegmentsRequest.
+        r"""Gets the marker of this ListGlobalEipSegmentsRequest.
 
         分页起始点
 
@@ -301,7 +301,7 @@ class ListGlobalEipSegmentsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalEipSegmentsRequest.
+        r"""Sets the marker of this ListGlobalEipSegmentsRequest.
 
         分页起始点
 
@@ -312,7 +312,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListGlobalEipSegmentsRequest.
+        r"""Gets the page_reverse of this ListGlobalEipSegmentsRequest.
 
         翻页方向
 
@@ -323,7 +323,7 @@ class ListGlobalEipSegmentsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListGlobalEipSegmentsRequest.
+        r"""Sets the page_reverse of this ListGlobalEipSegmentsRequest.
 
         翻页方向
 
@@ -334,7 +334,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGlobalEipSegmentsRequest.
+        r"""Gets the fields of this ListGlobalEipSegmentsRequest.
 
         :return: The fields of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -343,7 +343,7 @@ class ListGlobalEipSegmentsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGlobalEipSegmentsRequest.
+        r"""Sets the fields of this ListGlobalEipSegmentsRequest.
 
         :param fields: The fields of this ListGlobalEipSegmentsRequest.
         :type fields: list[str]
@@ -352,7 +352,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListGlobalEipSegmentsRequest.
+        r"""Gets the sort_key of this ListGlobalEipSegmentsRequest.
 
         按照sort_key指定的字段排序
 
@@ -363,7 +363,7 @@ class ListGlobalEipSegmentsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListGlobalEipSegmentsRequest.
+        r"""Sets the sort_key of this ListGlobalEipSegmentsRequest.
 
         按照sort_key指定的字段排序
 
@@ -374,7 +374,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListGlobalEipSegmentsRequest.
+        r"""Gets the sort_dir of this ListGlobalEipSegmentsRequest.
 
         排序的方向，倒序或者正序
 
@@ -385,7 +385,7 @@ class ListGlobalEipSegmentsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListGlobalEipSegmentsRequest.
+        r"""Sets the sort_dir of this ListGlobalEipSegmentsRequest.
 
         排序的方向，倒序或者正序
 
@@ -396,7 +396,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGlobalEipSegmentsRequest.
+        r"""Gets the id of this ListGlobalEipSegmentsRequest.
 
         :return: The id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -405,7 +405,7 @@ class ListGlobalEipSegmentsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGlobalEipSegmentsRequest.
+        r"""Sets the id of this ListGlobalEipSegmentsRequest.
 
         :param id: The id of this ListGlobalEipSegmentsRequest.
         :type id: list[str]
@@ -414,7 +414,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
+        r"""Gets the internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
 
         :return: The internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -423,7 +423,7 @@ class ListGlobalEipSegmentsRequest:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
+        r"""Sets the internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this ListGlobalEipSegmentsRequest.
         :type internet_bandwidth_id: list[str]
@@ -432,7 +432,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGlobalEipSegmentsRequest.
+        r"""Gets the name of this ListGlobalEipSegmentsRequest.
 
         :return: The name of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -441,7 +441,7 @@ class ListGlobalEipSegmentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGlobalEipSegmentsRequest.
+        r"""Sets the name of this ListGlobalEipSegmentsRequest.
 
         :param name: The name of this ListGlobalEipSegmentsRequest.
         :type name: list[str]
@@ -450,7 +450,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListGlobalEipSegmentsRequest.
+        r"""Gets the name_like of this ListGlobalEipSegmentsRequest.
 
         :return: The name_like of this ListGlobalEipSegmentsRequest.
         :rtype: str
@@ -459,7 +459,7 @@ class ListGlobalEipSegmentsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListGlobalEipSegmentsRequest.
+        r"""Sets the name_like of this ListGlobalEipSegmentsRequest.
 
         :param name_like: The name_like of this ListGlobalEipSegmentsRequest.
         :type name_like: str
@@ -468,7 +468,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListGlobalEipSegmentsRequest.
+        r"""Gets the access_site of this ListGlobalEipSegmentsRequest.
 
         :return: The access_site of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -477,7 +477,7 @@ class ListGlobalEipSegmentsRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListGlobalEipSegmentsRequest.
+        r"""Sets the access_site of this ListGlobalEipSegmentsRequest.
 
         :param access_site: The access_site of this ListGlobalEipSegmentsRequest.
         :type access_site: list[str]
@@ -486,7 +486,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this ListGlobalEipSegmentsRequest.
+        r"""Gets the geip_pool_name of this ListGlobalEipSegmentsRequest.
 
         :return: The geip_pool_name of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -495,7 +495,7 @@ class ListGlobalEipSegmentsRequest:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this ListGlobalEipSegmentsRequest.
+        r"""Sets the geip_pool_name of this ListGlobalEipSegmentsRequest.
 
         :param geip_pool_name: The geip_pool_name of this ListGlobalEipSegmentsRequest.
         :type geip_pool_name: list[str]
@@ -504,7 +504,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListGlobalEipSegmentsRequest.
+        r"""Gets the isp of this ListGlobalEipSegmentsRequest.
 
         :return: The isp of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -513,7 +513,7 @@ class ListGlobalEipSegmentsRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListGlobalEipSegmentsRequest.
+        r"""Sets the isp of this ListGlobalEipSegmentsRequest.
 
         :param isp: The isp of this ListGlobalEipSegmentsRequest.
         :type isp: list[str]
@@ -522,7 +522,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListGlobalEipSegmentsRequest.
+        r"""Gets the ip_version of this ListGlobalEipSegmentsRequest.
 
         :return: The ip_version of this ListGlobalEipSegmentsRequest.
         :rtype: list[int]
@@ -531,7 +531,7 @@ class ListGlobalEipSegmentsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListGlobalEipSegmentsRequest.
+        r"""Sets the ip_version of this ListGlobalEipSegmentsRequest.
 
         :param ip_version: The ip_version of this ListGlobalEipSegmentsRequest.
         :type ip_version: list[int]
@@ -540,7 +540,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ListGlobalEipSegmentsRequest.
+        r"""Gets the cidr of this ListGlobalEipSegmentsRequest.
 
         :return: The cidr of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -549,7 +549,7 @@ class ListGlobalEipSegmentsRequest:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ListGlobalEipSegmentsRequest.
+        r"""Sets the cidr of this ListGlobalEipSegmentsRequest.
 
         :param cidr: The cidr of this ListGlobalEipSegmentsRequest.
         :type cidr: list[str]
@@ -558,7 +558,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def cidr_v6(self):
-        """Gets the cidr_v6 of this ListGlobalEipSegmentsRequest.
+        r"""Gets the cidr_v6 of this ListGlobalEipSegmentsRequest.
 
         :return: The cidr_v6 of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -567,7 +567,7 @@ class ListGlobalEipSegmentsRequest:
 
     @cidr_v6.setter
     def cidr_v6(self, cidr_v6):
-        """Sets the cidr_v6 of this ListGlobalEipSegmentsRequest.
+        r"""Sets the cidr_v6 of this ListGlobalEipSegmentsRequest.
 
         :param cidr_v6: The cidr_v6 of this ListGlobalEipSegmentsRequest.
         :type cidr_v6: list[str]
@@ -576,7 +576,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def freezen(self):
-        """Gets the freezen of this ListGlobalEipSegmentsRequest.
+        r"""Gets the freezen of this ListGlobalEipSegmentsRequest.
 
         :return: The freezen of this ListGlobalEipSegmentsRequest.
         :rtype: list[bool]
@@ -585,7 +585,7 @@ class ListGlobalEipSegmentsRequest:
 
     @freezen.setter
     def freezen(self, freezen):
-        """Sets the freezen of this ListGlobalEipSegmentsRequest.
+        r"""Sets the freezen of this ListGlobalEipSegmentsRequest.
 
         :param freezen: The freezen of this ListGlobalEipSegmentsRequest.
         :type freezen: list[bool]
@@ -594,7 +594,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def internet_bandwidth_is_null(self):
-        """Gets the internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
+        r"""Gets the internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
 
         :return: The internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
         :rtype: list[bool]
@@ -603,7 +603,7 @@ class ListGlobalEipSegmentsRequest:
 
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
-        """Sets the internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
+        r"""Sets the internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this ListGlobalEipSegmentsRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -612,7 +612,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListGlobalEipSegmentsRequest.
+        r"""Gets the status of this ListGlobalEipSegmentsRequest.
 
         :return: The status of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -621,7 +621,7 @@ class ListGlobalEipSegmentsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGlobalEipSegmentsRequest.
+        r"""Sets the status of this ListGlobalEipSegmentsRequest.
 
         :param status: The status of this ListGlobalEipSegmentsRequest.
         :type status: list[str]
@@ -630,7 +630,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_region(self):
-        """Gets the associate_instance_region of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_region of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_region of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -639,7 +639,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_region.setter
     def associate_instance_region(self, associate_instance_region):
-        """Sets the associate_instance_region of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_region of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_region: The associate_instance_region of this ListGlobalEipSegmentsRequest.
         :type associate_instance_region: list[str]
@@ -648,7 +648,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_instance_type(self):
-        """Gets the associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -657,7 +657,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_instance_type.setter
     def associate_instance_instance_type(self, associate_instance_instance_type):
-        """Sets the associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_instance_type: The associate_instance_instance_type of this ListGlobalEipSegmentsRequest.
         :type associate_instance_instance_type: list[str]
@@ -666,7 +666,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_public_border_group(self):
-        """Gets the associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -675,7 +675,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_public_border_group.setter
     def associate_instance_public_border_group(self, associate_instance_public_border_group):
-        """Sets the associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_public_border_group: The associate_instance_public_border_group of this ListGlobalEipSegmentsRequest.
         :type associate_instance_public_border_group: list[str]
@@ -684,7 +684,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_instance_site(self):
-        """Gets the associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -693,7 +693,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_instance_site.setter
     def associate_instance_instance_site(self, associate_instance_instance_site):
-        """Sets the associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_instance_site: The associate_instance_instance_site of this ListGlobalEipSegmentsRequest.
         :type associate_instance_instance_site: list[str]
@@ -702,7 +702,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_instance_id(self):
-        """Gets the associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -711,7 +711,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_instance_id.setter
     def associate_instance_instance_id(self, associate_instance_instance_id):
-        """Sets the associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_instance_id: The associate_instance_instance_id of this ListGlobalEipSegmentsRequest.
         :type associate_instance_instance_id: list[str]
@@ -720,7 +720,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_project_id(self):
-        """Gets the associate_instance_project_id of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_project_id of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_project_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -729,7 +729,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_project_id.setter
     def associate_instance_project_id(self, associate_instance_project_id):
-        """Sets the associate_instance_project_id of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_project_id of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_project_id: The associate_instance_project_id of this ListGlobalEipSegmentsRequest.
         :type associate_instance_project_id: list[str]
@@ -738,7 +738,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_service_id(self):
-        """Gets the associate_instance_service_id of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_service_id of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_service_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -747,7 +747,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_service_id.setter
     def associate_instance_service_id(self, associate_instance_service_id):
-        """Sets the associate_instance_service_id of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_service_id of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_service_id: The associate_instance_service_id of this ListGlobalEipSegmentsRequest.
         :type associate_instance_service_id: list[str]
@@ -756,7 +756,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def associate_instance_service_type(self):
-        """Gets the associate_instance_service_type of this ListGlobalEipSegmentsRequest.
+        r"""Gets the associate_instance_service_type of this ListGlobalEipSegmentsRequest.
 
         :return: The associate_instance_service_type of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -765,7 +765,7 @@ class ListGlobalEipSegmentsRequest:
 
     @associate_instance_service_type.setter
     def associate_instance_service_type(self, associate_instance_service_type):
-        """Sets the associate_instance_service_type of this ListGlobalEipSegmentsRequest.
+        r"""Sets the associate_instance_service_type of this ListGlobalEipSegmentsRequest.
 
         :param associate_instance_service_type: The associate_instance_service_type of this ListGlobalEipSegmentsRequest.
         :type associate_instance_service_type: list[str]
@@ -774,7 +774,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListGlobalEipSegmentsRequest.
+        r"""Gets the enterprise_project_id of this ListGlobalEipSegmentsRequest.
 
         :return: The enterprise_project_id of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -783,7 +783,7 @@ class ListGlobalEipSegmentsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListGlobalEipSegmentsRequest.
+        r"""Sets the enterprise_project_id of this ListGlobalEipSegmentsRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this ListGlobalEipSegmentsRequest.
         :type enterprise_project_id: list[str]
@@ -792,7 +792,7 @@ class ListGlobalEipSegmentsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListGlobalEipSegmentsRequest.
+        r"""Gets the tags of this ListGlobalEipSegmentsRequest.
 
         :return: The tags of this ListGlobalEipSegmentsRequest.
         :rtype: list[str]
@@ -801,7 +801,7 @@ class ListGlobalEipSegmentsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGlobalEipSegmentsRequest.
+        r"""Sets the tags of this ListGlobalEipSegmentsRequest.
 
         :param tags: The tags of this ListGlobalEipSegmentsRequest.
         :type tags: list[str]

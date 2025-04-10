@@ -23,7 +23,7 @@ class CreateAndAuthorizeBucketRequest:
     }
 
     def __init__(self):
-        """CreateAndAuthorizeBucketRequest
+        r"""CreateAndAuthorizeBucketRequest
 
         The model defined in huaweicloud sdk
 

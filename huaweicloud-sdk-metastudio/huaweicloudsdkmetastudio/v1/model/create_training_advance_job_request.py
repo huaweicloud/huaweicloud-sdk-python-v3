@@ -27,7 +27,7 @@ class CreateTrainingAdvanceJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateTrainingAdvanceJobRequest
+        r"""CreateTrainingAdvanceJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTrainingAdvanceJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateTrainingAdvanceJobRequest.
+        r"""Gets the x_app_user_id of this CreateTrainingAdvanceJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateTrainingAdvanceJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateTrainingAdvanceJobRequest.
+        r"""Sets the x_app_user_id of this CreateTrainingAdvanceJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateTrainingAdvanceJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTrainingAdvanceJobRequest.
+        r"""Gets the body of this CreateTrainingAdvanceJobRequest.
 
         :return: The body of this CreateTrainingAdvanceJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobReq`
@@ -81,7 +81,7 @@ class CreateTrainingAdvanceJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTrainingAdvanceJobRequest.
+        r"""Sets the body of this CreateTrainingAdvanceJobRequest.
 
         :param body: The body of this CreateTrainingAdvanceJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobReq`

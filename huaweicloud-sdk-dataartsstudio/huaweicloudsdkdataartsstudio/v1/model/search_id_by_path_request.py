@@ -33,7 +33,7 @@ class SearchIdByPathRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, path=None, limit=None, offset=None):
-        """SearchIdByPathRequest
+        r"""SearchIdByPathRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchIdByPathRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchIdByPathRequest.
+        r"""Gets the workspace of this SearchIdByPathRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class SearchIdByPathRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchIdByPathRequest.
+        r"""Sets the workspace of this SearchIdByPathRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class SearchIdByPathRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this SearchIdByPathRequest.
+        r"""Gets the dlm_type of this SearchIdByPathRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class SearchIdByPathRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this SearchIdByPathRequest.
+        r"""Sets the dlm_type of this SearchIdByPathRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class SearchIdByPathRequest:
 
     @property
     def path(self):
-        """Gets the path of this SearchIdByPathRequest.
+        r"""Gets the path of this SearchIdByPathRequest.
 
         路径。
 
@@ -124,7 +124,7 @@ class SearchIdByPathRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this SearchIdByPathRequest.
+        r"""Sets the path of this SearchIdByPathRequest.
 
         路径。
 
@@ -135,7 +135,7 @@ class SearchIdByPathRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchIdByPathRequest.
+        r"""Gets the limit of this SearchIdByPathRequest.
 
         limit。
 
@@ -146,7 +146,7 @@ class SearchIdByPathRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchIdByPathRequest.
+        r"""Sets the limit of this SearchIdByPathRequest.
 
         limit。
 
@@ -157,7 +157,7 @@ class SearchIdByPathRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchIdByPathRequest.
+        r"""Gets the offset of this SearchIdByPathRequest.
 
         offset。
 
@@ -168,7 +168,7 @@ class SearchIdByPathRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchIdByPathRequest.
+        r"""Sets the offset of this SearchIdByPathRequest.
 
         offset。
 

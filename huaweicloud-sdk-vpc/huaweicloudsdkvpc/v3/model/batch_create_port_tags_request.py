@@ -27,7 +27,7 @@ class BatchCreatePortTagsRequest:
     }
 
     def __init__(self, port_id=None, body=None):
-        """BatchCreatePortTagsRequest
+        r"""BatchCreatePortTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreatePortTagsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this BatchCreatePortTagsRequest.
+        r"""Gets the port_id of this BatchCreatePortTagsRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -60,7 +60,7 @@ class BatchCreatePortTagsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this BatchCreatePortTagsRequest.
+        r"""Sets the port_id of this BatchCreatePortTagsRequest.
 
         功能说明：端口唯一标识 取值范围：合法UUID 约束：ID对应的端口必须存在
 
@@ -71,7 +71,7 @@ class BatchCreatePortTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreatePortTagsRequest.
+        r"""Gets the body of this BatchCreatePortTagsRequest.
 
         :return: The body of this BatchCreatePortTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreatePortTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreatePortTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreatePortTagsRequest.
+        r"""Sets the body of this BatchCreatePortTagsRequest.
 
         :param body: The body of this BatchCreatePortTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.BatchCreatePortTagsRequestBody`

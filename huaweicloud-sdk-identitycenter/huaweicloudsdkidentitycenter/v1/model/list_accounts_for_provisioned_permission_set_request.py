@@ -36,7 +36,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None, limit=None, marker=None, provisioning_status=None):
-        """ListAccountsForProvisionedPermissionSetRequest
+        r"""ListAccountsForProvisionedPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Gets the x_security_token of this ListAccountsForProvisionedPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -88,7 +88,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Sets the x_security_token of this ListAccountsForProvisionedPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -99,7 +99,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Gets the instance_id of this ListAccountsForProvisionedPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -110,7 +110,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Sets the instance_id of this ListAccountsForProvisionedPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -121,7 +121,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Gets the permission_set_id of this ListAccountsForProvisionedPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -132,7 +132,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Sets the permission_set_id of this ListAccountsForProvisionedPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -143,7 +143,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Gets the limit of this ListAccountsForProvisionedPermissionSetRequest.
 
         每个请求返回的最大结果数
 
@@ -154,7 +154,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Sets the limit of this ListAccountsForProvisionedPermissionSetRequest.
 
         每个请求返回的最大结果数
 
@@ -165,7 +165,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Gets the marker of this ListAccountsForProvisionedPermissionSetRequest.
 
         分页标记
 
@@ -176,7 +176,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Sets the marker of this ListAccountsForProvisionedPermissionSetRequest.
 
         分页标记
 
@@ -187,7 +187,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Gets the provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
 
         权限集分配状态.
 
@@ -198,7 +198,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
+        r"""Sets the provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
 
         权限集分配状态.
 

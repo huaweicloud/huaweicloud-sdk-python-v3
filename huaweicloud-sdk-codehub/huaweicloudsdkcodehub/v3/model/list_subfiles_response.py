@@ -30,7 +30,7 @@ class ListSubfilesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListSubfilesResponse
+        r"""ListSubfilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubfilesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListSubfilesResponse.
+        r"""Gets the error of this ListSubfilesResponse.
 
         :return: The error of this ListSubfilesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListSubfilesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListSubfilesResponse.
+        r"""Sets the error of this ListSubfilesResponse.
 
         :param error: The error of this ListSubfilesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListSubfilesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListSubfilesResponse.
+        r"""Gets the result of this ListSubfilesResponse.
 
         :return: The result of this ListSubfilesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.LogsTreeList`
@@ -85,7 +85,7 @@ class ListSubfilesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListSubfilesResponse.
+        r"""Sets the result of this ListSubfilesResponse.
 
         :param result: The result of this ListSubfilesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.LogsTreeList`
@@ -94,7 +94,7 @@ class ListSubfilesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListSubfilesResponse.
+        r"""Gets the status of this ListSubfilesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListSubfilesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubfilesResponse.
+        r"""Sets the status of this ListSubfilesResponse.
 
         响应状态
 

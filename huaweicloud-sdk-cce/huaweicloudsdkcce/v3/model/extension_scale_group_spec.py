@@ -31,7 +31,7 @@ class ExtensionScaleGroupSpec:
     }
 
     def __init__(self, flavor=None, az=None, capacity_reservation_specification=None, autoscaling=None):
-        """ExtensionScaleGroupSpec
+        r"""ExtensionScaleGroupSpec
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ExtensionScaleGroupSpec:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ExtensionScaleGroupSpec.
+        r"""Gets the flavor of this ExtensionScaleGroupSpec.
 
         节点规格
 
@@ -75,7 +75,7 @@ class ExtensionScaleGroupSpec:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ExtensionScaleGroupSpec.
+        r"""Sets the flavor of this ExtensionScaleGroupSpec.
 
         节点规格
 
@@ -86,7 +86,7 @@ class ExtensionScaleGroupSpec:
 
     @property
     def az(self):
-        """Gets the az of this ExtensionScaleGroupSpec.
+        r"""Gets the az of this ExtensionScaleGroupSpec.
 
         节点可用区，未指定或者为空则以默认伸缩组中配置为准
 
@@ -97,7 +97,7 @@ class ExtensionScaleGroupSpec:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this ExtensionScaleGroupSpec.
+        r"""Sets the az of this ExtensionScaleGroupSpec.
 
         节点可用区，未指定或者为空则以默认伸缩组中配置为准
 
@@ -108,7 +108,7 @@ class ExtensionScaleGroupSpec:
 
     @property
     def capacity_reservation_specification(self):
-        """Gets the capacity_reservation_specification of this ExtensionScaleGroupSpec.
+        r"""Gets the capacity_reservation_specification of this ExtensionScaleGroupSpec.
 
         :return: The capacity_reservation_specification of this ExtensionScaleGroupSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.CapacityReservationSpecification`
@@ -117,7 +117,7 @@ class ExtensionScaleGroupSpec:
 
     @capacity_reservation_specification.setter
     def capacity_reservation_specification(self, capacity_reservation_specification):
-        """Sets the capacity_reservation_specification of this ExtensionScaleGroupSpec.
+        r"""Sets the capacity_reservation_specification of this ExtensionScaleGroupSpec.
 
         :param capacity_reservation_specification: The capacity_reservation_specification of this ExtensionScaleGroupSpec.
         :type capacity_reservation_specification: :class:`huaweicloudsdkcce.v3.CapacityReservationSpecification`
@@ -126,7 +126,7 @@ class ExtensionScaleGroupSpec:
 
     @property
     def autoscaling(self):
-        """Gets the autoscaling of this ExtensionScaleGroupSpec.
+        r"""Gets the autoscaling of this ExtensionScaleGroupSpec.
 
         :return: The autoscaling of this ExtensionScaleGroupSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleGroupAutoscaling`
@@ -135,7 +135,7 @@ class ExtensionScaleGroupSpec:
 
     @autoscaling.setter
     def autoscaling(self, autoscaling):
-        """Sets the autoscaling of this ExtensionScaleGroupSpec.
+        r"""Sets the autoscaling of this ExtensionScaleGroupSpec.
 
         :param autoscaling: The autoscaling of this ExtensionScaleGroupSpec.
         :type autoscaling: :class:`huaweicloudsdkcce.v3.ScaleGroupAutoscaling`

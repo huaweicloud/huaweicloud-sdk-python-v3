@@ -35,7 +35,7 @@ class LtsLogErrorQueryRequest:
     }
 
     def __init__(self, node_id=None, start_time=None, end_time=None, limit=None, line_num=None, level=None):
-        """LtsLogErrorQueryRequest
+        r"""LtsLogErrorQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class LtsLogErrorQueryRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this LtsLogErrorQueryRequest.
+        r"""Gets the node_id of this LtsLogErrorQueryRequest.
 
         节点ID。
 
@@ -85,7 +85,7 @@ class LtsLogErrorQueryRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this LtsLogErrorQueryRequest.
+        r"""Sets the node_id of this LtsLogErrorQueryRequest.
 
         节点ID。
 
@@ -96,7 +96,7 @@ class LtsLogErrorQueryRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this LtsLogErrorQueryRequest.
+        r"""Gets the start_time of this LtsLogErrorQueryRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -107,7 +107,7 @@ class LtsLogErrorQueryRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this LtsLogErrorQueryRequest.
+        r"""Sets the start_time of this LtsLogErrorQueryRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -118,7 +118,7 @@ class LtsLogErrorQueryRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this LtsLogErrorQueryRequest.
+        r"""Gets the end_time of this LtsLogErrorQueryRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -129,7 +129,7 @@ class LtsLogErrorQueryRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this LtsLogErrorQueryRequest.
+        r"""Sets the end_time of this LtsLogErrorQueryRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -140,7 +140,7 @@ class LtsLogErrorQueryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this LtsLogErrorQueryRequest.
+        r"""Gets the limit of this LtsLogErrorQueryRequest.
 
         查询记录数。
 
@@ -151,7 +151,7 @@ class LtsLogErrorQueryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this LtsLogErrorQueryRequest.
+        r"""Sets the limit of this LtsLogErrorQueryRequest.
 
         查询记录数。
 
@@ -162,7 +162,7 @@ class LtsLogErrorQueryRequest:
 
     @property
     def line_num(self):
-        """Gets the line_num of this LtsLogErrorQueryRequest.
+        r"""Gets the line_num of this LtsLogErrorQueryRequest.
 
         日志单行序列号，第一次查询时不需要此参数,后续分页查询时需要使用,可从上次查询的返回信息中获取。
 
@@ -173,7 +173,7 @@ class LtsLogErrorQueryRequest:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this LtsLogErrorQueryRequest.
+        r"""Sets the line_num of this LtsLogErrorQueryRequest.
 
         日志单行序列号，第一次查询时不需要此参数,后续分页查询时需要使用,可从上次查询的返回信息中获取。
 
@@ -184,7 +184,7 @@ class LtsLogErrorQueryRequest:
 
     @property
     def level(self):
-        """Gets the level of this LtsLogErrorQueryRequest.
+        r"""Gets the level of this LtsLogErrorQueryRequest.
 
         日志级别，默认为ALL。  取值范围： - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
 
@@ -195,7 +195,7 @@ class LtsLogErrorQueryRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LtsLogErrorQueryRequest.
+        r"""Sets the level of this LtsLogErrorQueryRequest.
 
         日志级别，默认为ALL。  取值范围： - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
 

@@ -33,7 +33,7 @@ class ShowPathObjectByIdRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None, limit=None, offset=None):
-        """ShowPathObjectByIdRequest
+        r"""ShowPathObjectByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowPathObjectByIdRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowPathObjectByIdRequest.
+        r"""Gets the workspace of this ShowPathObjectByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ShowPathObjectByIdRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowPathObjectByIdRequest.
+        r"""Sets the workspace of this ShowPathObjectByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ShowPathObjectByIdRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowPathObjectByIdRequest.
+        r"""Gets the dlm_type of this ShowPathObjectByIdRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class ShowPathObjectByIdRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowPathObjectByIdRequest.
+        r"""Sets the dlm_type of this ShowPathObjectByIdRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class ShowPathObjectByIdRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this ShowPathObjectByIdRequest.
+        r"""Gets the catalog_id of this ShowPathObjectByIdRequest.
 
         目录编号。
 
@@ -124,7 +124,7 @@ class ShowPathObjectByIdRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this ShowPathObjectByIdRequest.
+        r"""Sets the catalog_id of this ShowPathObjectByIdRequest.
 
         目录编号。
 
@@ -135,7 +135,7 @@ class ShowPathObjectByIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPathObjectByIdRequest.
+        r"""Gets the limit of this ShowPathObjectByIdRequest.
 
         limit。
 
@@ -146,7 +146,7 @@ class ShowPathObjectByIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPathObjectByIdRequest.
+        r"""Sets the limit of this ShowPathObjectByIdRequest.
 
         limit。
 
@@ -157,7 +157,7 @@ class ShowPathObjectByIdRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPathObjectByIdRequest.
+        r"""Gets the offset of this ShowPathObjectByIdRequest.
 
         offset。
 
@@ -168,7 +168,7 @@ class ShowPathObjectByIdRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPathObjectByIdRequest.
+        r"""Sets the offset of this ShowPathObjectByIdRequest.
 
         offset。
 

@@ -27,7 +27,7 @@ class DeleteRulesetRequest:
     }
 
     def __init__(self, project_id=None, ruleset_id=None):
-        """DeleteRulesetRequest
+        r"""DeleteRulesetRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRulesetRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteRulesetRequest.
+        r"""Gets the project_id of this DeleteRulesetRequest.
 
         项目ID
 
@@ -59,7 +59,7 @@ class DeleteRulesetRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteRulesetRequest.
+        r"""Sets the project_id of this DeleteRulesetRequest.
 
         项目ID
 
@@ -70,7 +70,7 @@ class DeleteRulesetRequest:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this DeleteRulesetRequest.
+        r"""Gets the ruleset_id of this DeleteRulesetRequest.
 
         规则集ID
 
@@ -81,7 +81,7 @@ class DeleteRulesetRequest:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this DeleteRulesetRequest.
+        r"""Sets the ruleset_id of this DeleteRulesetRequest.
 
         规则集ID
 

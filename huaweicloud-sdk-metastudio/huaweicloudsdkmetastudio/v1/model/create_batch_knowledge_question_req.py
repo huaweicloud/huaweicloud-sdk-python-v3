@@ -27,7 +27,7 @@ class CreateBatchKnowledgeQuestionReq:
     }
 
     def __init__(self, intent_id=None, question_list=None):
-        """CreateBatchKnowledgeQuestionReq
+        r"""CreateBatchKnowledgeQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateBatchKnowledgeQuestionReq:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this CreateBatchKnowledgeQuestionReq.
+        r"""Gets the intent_id of this CreateBatchKnowledgeQuestionReq.
 
         意图ID。
 
@@ -59,7 +59,7 @@ class CreateBatchKnowledgeQuestionReq:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this CreateBatchKnowledgeQuestionReq.
+        r"""Sets the intent_id of this CreateBatchKnowledgeQuestionReq.
 
         意图ID。
 
@@ -70,7 +70,7 @@ class CreateBatchKnowledgeQuestionReq:
 
     @property
     def question_list(self):
-        """Gets the question_list of this CreateBatchKnowledgeQuestionReq.
+        r"""Gets the question_list of this CreateBatchKnowledgeQuestionReq.
 
         问法列表
 
@@ -81,7 +81,7 @@ class CreateBatchKnowledgeQuestionReq:
 
     @question_list.setter
     def question_list(self, question_list):
-        """Sets the question_list of this CreateBatchKnowledgeQuestionReq.
+        r"""Sets the question_list of this CreateBatchKnowledgeQuestionReq.
 
         问法列表
 

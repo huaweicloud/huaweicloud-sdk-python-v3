@@ -24,7 +24,7 @@ class ContinueUpgradeClusterTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ContinueUpgradeClusterTaskResponse
+        r"""ContinueUpgradeClusterTaskResponse
 
         The model defined in huaweicloud sdk
 

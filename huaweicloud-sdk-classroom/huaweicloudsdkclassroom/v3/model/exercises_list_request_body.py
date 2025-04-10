@@ -29,7 +29,7 @@ class ExercisesListRequestBody:
     }
 
     def __init__(self, filter=None, page_size=None, start_index=None):
-        """ExercisesListRequestBody
+        r"""ExercisesListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExercisesListRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this ExercisesListRequestBody.
+        r"""Gets the filter of this ExercisesListRequestBody.
 
         :return: The filter of this ExercisesListRequestBody.
         :rtype: :class:`huaweicloudsdkclassroom.v3.ExerciseFilter`
@@ -66,7 +66,7 @@ class ExercisesListRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ExercisesListRequestBody.
+        r"""Sets the filter of this ExercisesListRequestBody.
 
         :param filter: The filter of this ExercisesListRequestBody.
         :type filter: :class:`huaweicloudsdkclassroom.v3.ExerciseFilter`
@@ -75,7 +75,7 @@ class ExercisesListRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ExercisesListRequestBody.
+        r"""Gets the page_size of this ExercisesListRequestBody.
 
         每页数量
 
@@ -86,7 +86,7 @@ class ExercisesListRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ExercisesListRequestBody.
+        r"""Sets the page_size of this ExercisesListRequestBody.
 
         每页数量
 
@@ -97,7 +97,7 @@ class ExercisesListRequestBody:
 
     @property
     def start_index(self):
-        """Gets the start_index of this ExercisesListRequestBody.
+        r"""Gets the start_index of this ExercisesListRequestBody.
 
         起始页
 
@@ -108,7 +108,7 @@ class ExercisesListRequestBody:
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this ExercisesListRequestBody.
+        r"""Sets the start_index of this ExercisesListRequestBody.
 
         起始页
 

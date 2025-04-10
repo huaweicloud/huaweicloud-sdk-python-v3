@@ -29,7 +29,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlInstanceSecurityGroupRequest
+        r"""UpdateGaussMySqlInstanceSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlInstanceSecurityGroupRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlInstanceSecurityGroupRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
+        r"""Gets the instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
+        r"""Sets the instance_id of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlInstanceSecurityGroupRequest.
+        r"""Gets the body of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
         :return: The body of this UpdateGaussMySqlInstanceSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifySecurityGroupRequest`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlInstanceSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlInstanceSecurityGroupRequest.
+        r"""Sets the body of this UpdateGaussMySqlInstanceSecurityGroupRequest.
 
         :param body: The body of this UpdateGaussMySqlInstanceSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifySecurityGroupRequest`

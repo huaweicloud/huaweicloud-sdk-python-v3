@@ -25,7 +25,7 @@ class RowDataReq:
     }
 
     def __init__(self, column_values=None):
-        """RowDataReq
+        r"""RowDataReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RowDataReq:
 
     @property
     def column_values(self):
-        """Gets the column_values of this RowDataReq.
+        r"""Gets the column_values of this RowDataReq.
 
         列及对应值列表
 
@@ -53,7 +53,7 @@ class RowDataReq:
 
     @column_values.setter
     def column_values(self, column_values):
-        """Sets the column_values of this RowDataReq.
+        r"""Sets the column_values of this RowDataReq.
 
         列及对应值列表
 

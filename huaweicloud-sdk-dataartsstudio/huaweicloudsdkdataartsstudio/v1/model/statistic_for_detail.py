@@ -51,7 +51,7 @@ class StatisticForDetail:
     }
 
     def __init__(self, id=None, name=None, call_num=None, success_num=None, fail_num=None, legal_num=None, illegal_num=None, cost_time_avg=None, success_cost_time_avg=None, fail_cost_time_avg=None, success_rate=None, fail_rate=None, legal_rate=None, illegal_rate=None):
-        """StatisticForDetail
+        r"""StatisticForDetail
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class StatisticForDetail:
 
     @property
     def id(self):
-        """Gets the id of this StatisticForDetail.
+        r"""Gets the id of this StatisticForDetail.
 
         统计对象编号
 
@@ -145,7 +145,7 @@ class StatisticForDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StatisticForDetail.
+        r"""Sets the id of this StatisticForDetail.
 
         统计对象编号
 
@@ -156,7 +156,7 @@ class StatisticForDetail:
 
     @property
     def name(self):
-        """Gets the name of this StatisticForDetail.
+        r"""Gets the name of this StatisticForDetail.
 
         统计对象名称
 
@@ -167,7 +167,7 @@ class StatisticForDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StatisticForDetail.
+        r"""Sets the name of this StatisticForDetail.
 
         统计对象名称
 
@@ -178,7 +178,7 @@ class StatisticForDetail:
 
     @property
     def call_num(self):
-        """Gets the call_num of this StatisticForDetail.
+        r"""Gets the call_num of this StatisticForDetail.
 
         调用总量
 
@@ -189,7 +189,7 @@ class StatisticForDetail:
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this StatisticForDetail.
+        r"""Sets the call_num of this StatisticForDetail.
 
         调用总量
 
@@ -200,7 +200,7 @@ class StatisticForDetail:
 
     @property
     def success_num(self):
-        """Gets the success_num of this StatisticForDetail.
+        r"""Gets the success_num of this StatisticForDetail.
 
         成功调用量(取数成功)
 
@@ -211,7 +211,7 @@ class StatisticForDetail:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this StatisticForDetail.
+        r"""Sets the success_num of this StatisticForDetail.
 
         成功调用量(取数成功)
 
@@ -222,7 +222,7 @@ class StatisticForDetail:
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this StatisticForDetail.
+        r"""Gets the fail_num of this StatisticForDetail.
 
         失败调用量(取数失败)
 
@@ -233,7 +233,7 @@ class StatisticForDetail:
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this StatisticForDetail.
+        r"""Sets the fail_num of this StatisticForDetail.
 
         失败调用量(取数失败)
 
@@ -244,7 +244,7 @@ class StatisticForDetail:
 
     @property
     def legal_num(self):
-        """Gets the legal_num of this StatisticForDetail.
+        r"""Gets the legal_num of this StatisticForDetail.
 
         合法调用量(通过校验)
 
@@ -255,7 +255,7 @@ class StatisticForDetail:
 
     @legal_num.setter
     def legal_num(self, legal_num):
-        """Sets the legal_num of this StatisticForDetail.
+        r"""Sets the legal_num of this StatisticForDetail.
 
         合法调用量(通过校验)
 
@@ -266,7 +266,7 @@ class StatisticForDetail:
 
     @property
     def illegal_num(self):
-        """Gets the illegal_num of this StatisticForDetail.
+        r"""Gets the illegal_num of this StatisticForDetail.
 
         非法调用量(无法通过校验)
 
@@ -277,7 +277,7 @@ class StatisticForDetail:
 
     @illegal_num.setter
     def illegal_num(self, illegal_num):
-        """Sets the illegal_num of this StatisticForDetail.
+        r"""Sets the illegal_num of this StatisticForDetail.
 
         非法调用量(无法通过校验)
 
@@ -288,7 +288,7 @@ class StatisticForDetail:
 
     @property
     def cost_time_avg(self):
-        """Gets the cost_time_avg of this StatisticForDetail.
+        r"""Gets the cost_time_avg of this StatisticForDetail.
 
         请求平均时长
 
@@ -299,7 +299,7 @@ class StatisticForDetail:
 
     @cost_time_avg.setter
     def cost_time_avg(self, cost_time_avg):
-        """Sets the cost_time_avg of this StatisticForDetail.
+        r"""Sets the cost_time_avg of this StatisticForDetail.
 
         请求平均时长
 
@@ -310,7 +310,7 @@ class StatisticForDetail:
 
     @property
     def success_cost_time_avg(self):
-        """Gets the success_cost_time_avg of this StatisticForDetail.
+        r"""Gets the success_cost_time_avg of this StatisticForDetail.
 
         成功请求平均时长
 
@@ -321,7 +321,7 @@ class StatisticForDetail:
 
     @success_cost_time_avg.setter
     def success_cost_time_avg(self, success_cost_time_avg):
-        """Sets the success_cost_time_avg of this StatisticForDetail.
+        r"""Sets the success_cost_time_avg of this StatisticForDetail.
 
         成功请求平均时长
 
@@ -332,7 +332,7 @@ class StatisticForDetail:
 
     @property
     def fail_cost_time_avg(self):
-        """Gets the fail_cost_time_avg of this StatisticForDetail.
+        r"""Gets the fail_cost_time_avg of this StatisticForDetail.
 
         失败请求平均时长
 
@@ -343,7 +343,7 @@ class StatisticForDetail:
 
     @fail_cost_time_avg.setter
     def fail_cost_time_avg(self, fail_cost_time_avg):
-        """Sets the fail_cost_time_avg of this StatisticForDetail.
+        r"""Sets the fail_cost_time_avg of this StatisticForDetail.
 
         失败请求平均时长
 
@@ -354,7 +354,7 @@ class StatisticForDetail:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this StatisticForDetail.
+        r"""Gets the success_rate of this StatisticForDetail.
 
         成功率
 
@@ -365,7 +365,7 @@ class StatisticForDetail:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this StatisticForDetail.
+        r"""Sets the success_rate of this StatisticForDetail.
 
         成功率
 
@@ -376,7 +376,7 @@ class StatisticForDetail:
 
     @property
     def fail_rate(self):
-        """Gets the fail_rate of this StatisticForDetail.
+        r"""Gets the fail_rate of this StatisticForDetail.
 
         失败率
 
@@ -387,7 +387,7 @@ class StatisticForDetail:
 
     @fail_rate.setter
     def fail_rate(self, fail_rate):
-        """Sets the fail_rate of this StatisticForDetail.
+        r"""Sets the fail_rate of this StatisticForDetail.
 
         失败率
 
@@ -398,7 +398,7 @@ class StatisticForDetail:
 
     @property
     def legal_rate(self):
-        """Gets the legal_rate of this StatisticForDetail.
+        r"""Gets the legal_rate of this StatisticForDetail.
 
         合法率
 
@@ -409,7 +409,7 @@ class StatisticForDetail:
 
     @legal_rate.setter
     def legal_rate(self, legal_rate):
-        """Sets the legal_rate of this StatisticForDetail.
+        r"""Sets the legal_rate of this StatisticForDetail.
 
         合法率
 
@@ -420,7 +420,7 @@ class StatisticForDetail:
 
     @property
     def illegal_rate(self):
-        """Gets the illegal_rate of this StatisticForDetail.
+        r"""Gets the illegal_rate of this StatisticForDetail.
 
         非法率
 
@@ -431,7 +431,7 @@ class StatisticForDetail:
 
     @illegal_rate.setter
     def illegal_rate(self, illegal_rate):
-        """Sets the illegal_rate of this StatisticForDetail.
+        r"""Sets the illegal_rate of this StatisticForDetail.
 
         非法率
 

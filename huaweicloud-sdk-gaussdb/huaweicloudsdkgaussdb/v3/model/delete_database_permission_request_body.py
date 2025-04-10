@@ -25,7 +25,7 @@ class DeleteDatabasePermissionRequestBody:
     }
 
     def __init__(self, users=None):
-        """DeleteDatabasePermissionRequestBody
+        r"""DeleteDatabasePermissionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDatabasePermissionRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this DeleteDatabasePermissionRequestBody.
+        r"""Gets the users of this DeleteDatabasePermissionRequestBody.
 
         数据库用户列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class DeleteDatabasePermissionRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this DeleteDatabasePermissionRequestBody.
+        r"""Sets the users of this DeleteDatabasePermissionRequestBody.
 
         数据库用户列表，列表最大长度为50。
 

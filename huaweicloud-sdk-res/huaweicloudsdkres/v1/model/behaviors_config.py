@@ -27,7 +27,7 @@ class BehaviorsConfig:
     }
 
     def __init__(self, positive_behaviors=None, negative_behaviors=None):
-        """BehaviorsConfig
+        r"""BehaviorsConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BehaviorsConfig:
 
     @property
     def positive_behaviors(self):
-        """Gets the positive_behaviors of this BehaviorsConfig.
+        r"""Gets the positive_behaviors of this BehaviorsConfig.
 
         正向行为。
 
@@ -61,7 +61,7 @@ class BehaviorsConfig:
 
     @positive_behaviors.setter
     def positive_behaviors(self, positive_behaviors):
-        """Sets the positive_behaviors of this BehaviorsConfig.
+        r"""Sets the positive_behaviors of this BehaviorsConfig.
 
         正向行为。
 
@@ -72,7 +72,7 @@ class BehaviorsConfig:
 
     @property
     def negative_behaviors(self):
-        """Gets the negative_behaviors of this BehaviorsConfig.
+        r"""Gets the negative_behaviors of this BehaviorsConfig.
 
         负向行为。
 
@@ -83,7 +83,7 @@ class BehaviorsConfig:
 
     @negative_behaviors.setter
     def negative_behaviors(self, negative_behaviors):
-        """Sets the negative_behaviors of this BehaviorsConfig.
+        r"""Sets the negative_behaviors of this BehaviorsConfig.
 
         负向行为。
 

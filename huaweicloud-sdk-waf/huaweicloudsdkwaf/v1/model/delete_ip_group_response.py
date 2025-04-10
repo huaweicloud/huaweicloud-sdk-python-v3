@@ -34,7 +34,7 @@ class DeleteIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, ips=None, size=None, rules=None):
-        """DeleteIpGroupResponse
+        r"""DeleteIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteIpGroupResponse.
+        r"""Gets the id of this DeleteIpGroupResponse.
 
         地址组id
 
@@ -83,7 +83,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteIpGroupResponse.
+        r"""Sets the id of this DeleteIpGroupResponse.
 
         地址组id
 
@@ -94,7 +94,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteIpGroupResponse.
+        r"""Gets the name of this DeleteIpGroupResponse.
 
         地址组名称
 
@@ -105,7 +105,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteIpGroupResponse.
+        r"""Sets the name of this DeleteIpGroupResponse.
 
         地址组名称
 
@@ -116,7 +116,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this DeleteIpGroupResponse.
+        r"""Gets the ips of this DeleteIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -127,7 +127,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this DeleteIpGroupResponse.
+        r"""Sets the ips of this DeleteIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -138,7 +138,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this DeleteIpGroupResponse.
+        r"""Gets the size of this DeleteIpGroupResponse.
 
         地址组长度
 
@@ -149,7 +149,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DeleteIpGroupResponse.
+        r"""Sets the size of this DeleteIpGroupResponse.
 
         地址组长度
 
@@ -160,7 +160,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this DeleteIpGroupResponse.
+        r"""Gets the rules of this DeleteIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -171,7 +171,7 @@ class DeleteIpGroupResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this DeleteIpGroupResponse.
+        r"""Sets the rules of this DeleteIpGroupResponse.
 
         ip地址组绑定的规则列表
 

@@ -28,7 +28,7 @@ class ListFindingsResponse(SdkResponse):
     }
 
     def __init__(self, findings=None, page_info=None):
-        """ListFindingsResponse
+        r"""ListFindingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFindingsResponse(SdkResponse):
 
     @property
     def findings(self):
-        """Gets the findings of this ListFindingsResponse.
+        r"""Gets the findings of this ListFindingsResponse.
 
         访问分析结果列表。
 
@@ -62,7 +62,7 @@ class ListFindingsResponse(SdkResponse):
 
     @findings.setter
     def findings(self, findings):
-        """Sets the findings of this ListFindingsResponse.
+        r"""Sets the findings of this ListFindingsResponse.
 
         访问分析结果列表。
 
@@ -73,7 +73,7 @@ class ListFindingsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFindingsResponse.
+        r"""Gets the page_info of this ListFindingsResponse.
 
         :return: The page_info of this ListFindingsResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListFindingsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFindingsResponse.
+        r"""Sets the page_info of this ListFindingsResponse.
 
         :param page_info: The page_info of this ListFindingsResponse.
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`

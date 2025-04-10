@@ -27,7 +27,7 @@ class UpgradeClusterRequestMetadata:
     }
 
     def __init__(self, api_version=None, kind=None):
-        """UpgradeClusterRequestMetadata
+        r"""UpgradeClusterRequestMetadata
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpgradeClusterRequestMetadata:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpgradeClusterRequestMetadata.
+        r"""Gets the api_version of this UpgradeClusterRequestMetadata.
 
         api版本，默认为v3
 
@@ -59,7 +59,7 @@ class UpgradeClusterRequestMetadata:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpgradeClusterRequestMetadata.
+        r"""Sets the api_version of this UpgradeClusterRequestMetadata.
 
         api版本，默认为v3
 
@@ -70,7 +70,7 @@ class UpgradeClusterRequestMetadata:
 
     @property
     def kind(self):
-        """Gets the kind of this UpgradeClusterRequestMetadata.
+        r"""Gets the kind of this UpgradeClusterRequestMetadata.
 
         资源类型，默认为UpgradeTask
 
@@ -81,7 +81,7 @@ class UpgradeClusterRequestMetadata:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpgradeClusterRequestMetadata.
+        r"""Sets the kind of this UpgradeClusterRequestMetadata.
 
         资源类型，默认为UpgradeTask
 

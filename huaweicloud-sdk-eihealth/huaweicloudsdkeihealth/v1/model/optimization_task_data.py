@@ -37,7 +37,7 @@ class OptimizationTaskData:
     }
 
     def __init__(self, smiles=None, num_trials=None, strong_constraints=None, weak_constraints=None, num_expected=None, binding_site=None, custom_props=None):
-        """OptimizationTaskData
+        r"""OptimizationTaskData
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class OptimizationTaskData:
 
     @property
     def smiles(self):
-        """Gets the smiles of this OptimizationTaskData.
+        r"""Gets the smiles of this OptimizationTaskData.
 
         分子SMILES表达式
 
@@ -95,7 +95,7 @@ class OptimizationTaskData:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this OptimizationTaskData.
+        r"""Sets the smiles of this OptimizationTaskData.
 
         分子SMILES表达式
 
@@ -106,7 +106,7 @@ class OptimizationTaskData:
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this OptimizationTaskData.
+        r"""Gets the num_trials of this OptimizationTaskData.
 
         生成分子数量
 
@@ -117,7 +117,7 @@ class OptimizationTaskData:
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this OptimizationTaskData.
+        r"""Sets the num_trials of this OptimizationTaskData.
 
         生成分子数量
 
@@ -128,7 +128,7 @@ class OptimizationTaskData:
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this OptimizationTaskData.
+        r"""Gets the strong_constraints of this OptimizationTaskData.
 
         强约束集合
 
@@ -139,7 +139,7 @@ class OptimizationTaskData:
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this OptimizationTaskData.
+        r"""Sets the strong_constraints of this OptimizationTaskData.
 
         强约束集合
 
@@ -150,7 +150,7 @@ class OptimizationTaskData:
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this OptimizationTaskData.
+        r"""Gets the weak_constraints of this OptimizationTaskData.
 
         弱约束集合
 
@@ -161,7 +161,7 @@ class OptimizationTaskData:
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this OptimizationTaskData.
+        r"""Sets the weak_constraints of this OptimizationTaskData.
 
         弱约束集合
 
@@ -172,7 +172,7 @@ class OptimizationTaskData:
 
     @property
     def num_expected(self):
-        """Gets the num_expected of this OptimizationTaskData.
+        r"""Gets the num_expected of this OptimizationTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -183,7 +183,7 @@ class OptimizationTaskData:
 
     @num_expected.setter
     def num_expected(self, num_expected):
-        """Sets the num_expected of this OptimizationTaskData.
+        r"""Sets the num_expected of this OptimizationTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -194,7 +194,7 @@ class OptimizationTaskData:
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this OptimizationTaskData.
+        r"""Gets the binding_site of this OptimizationTaskData.
 
         :return: The binding_site of this OptimizationTaskData.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -203,7 +203,7 @@ class OptimizationTaskData:
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this OptimizationTaskData.
+        r"""Sets the binding_site of this OptimizationTaskData.
 
         :param binding_site: The binding_site of this OptimizationTaskData.
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -212,7 +212,7 @@ class OptimizationTaskData:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this OptimizationTaskData.
+        r"""Gets the custom_props of this OptimizationTaskData.
 
         用户已开启的自定义属性集合
 
@@ -223,7 +223,7 @@ class OptimizationTaskData:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this OptimizationTaskData.
+        r"""Sets the custom_props of this OptimizationTaskData.
 
         用户已开启的自定义属性集合
 

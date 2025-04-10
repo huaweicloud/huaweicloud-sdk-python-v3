@@ -23,7 +23,7 @@ class BillingResult:
     }
 
     def __init__(self):
-        """BillingResult
+        r"""BillingResult
 
         The model defined in huaweicloud sdk
 

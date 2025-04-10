@@ -35,7 +35,7 @@ class GetTransactionListRespTransactionInfoList:
     }
 
     def __init__(self, last_sec=None, wait_locks=None, hold_locks=None, occurrence_time=None, detail=None, collect_time=None):
-        """GetTransactionListRespTransactionInfoList
+        r"""GetTransactionListRespTransactionInfoList
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @property
     def last_sec(self):
-        """Gets the last_sec of this GetTransactionListRespTransactionInfoList.
+        r"""Gets the last_sec of this GetTransactionListRespTransactionInfoList.
 
         事务持续时间
 
@@ -83,7 +83,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @last_sec.setter
     def last_sec(self, last_sec):
-        """Sets the last_sec of this GetTransactionListRespTransactionInfoList.
+        r"""Sets the last_sec of this GetTransactionListRespTransactionInfoList.
 
         事务持续时间
 
@@ -94,7 +94,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @property
     def wait_locks(self):
-        """Gets the wait_locks of this GetTransactionListRespTransactionInfoList.
+        r"""Gets the wait_locks of this GetTransactionListRespTransactionInfoList.
 
         等待锁数量
 
@@ -105,7 +105,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @wait_locks.setter
     def wait_locks(self, wait_locks):
-        """Sets the wait_locks of this GetTransactionListRespTransactionInfoList.
+        r"""Sets the wait_locks of this GetTransactionListRespTransactionInfoList.
 
         等待锁数量
 
@@ -116,7 +116,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @property
     def hold_locks(self):
-        """Gets the hold_locks of this GetTransactionListRespTransactionInfoList.
+        r"""Gets the hold_locks of this GetTransactionListRespTransactionInfoList.
 
         持有锁数量
 
@@ -127,7 +127,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @hold_locks.setter
     def hold_locks(self, hold_locks):
-        """Sets the hold_locks of this GetTransactionListRespTransactionInfoList.
+        r"""Sets the hold_locks of this GetTransactionListRespTransactionInfoList.
 
         持有锁数量
 
@@ -138,7 +138,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @property
     def occurrence_time(self):
-        """Gets the occurrence_time of this GetTransactionListRespTransactionInfoList.
+        r"""Gets the occurrence_time of this GetTransactionListRespTransactionInfoList.
 
         发生时间
 
@@ -149,7 +149,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @occurrence_time.setter
     def occurrence_time(self, occurrence_time):
-        """Sets the occurrence_time of this GetTransactionListRespTransactionInfoList.
+        r"""Sets the occurrence_time of this GetTransactionListRespTransactionInfoList.
 
         发生时间
 
@@ -160,7 +160,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @property
     def detail(self):
-        """Gets the detail of this GetTransactionListRespTransactionInfoList.
+        r"""Gets the detail of this GetTransactionListRespTransactionInfoList.
 
         事务内容
 
@@ -171,7 +171,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this GetTransactionListRespTransactionInfoList.
+        r"""Sets the detail of this GetTransactionListRespTransactionInfoList.
 
         事务内容
 
@@ -182,7 +182,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @property
     def collect_time(self):
-        """Gets the collect_time of this GetTransactionListRespTransactionInfoList.
+        r"""Gets the collect_time of this GetTransactionListRespTransactionInfoList.
 
         收集时间
 
@@ -193,7 +193,7 @@ class GetTransactionListRespTransactionInfoList:
 
     @collect_time.setter
     def collect_time(self, collect_time):
-        """Sets the collect_time of this GetTransactionListRespTransactionInfoList.
+        r"""Sets the collect_time of this GetTransactionListRespTransactionInfoList.
 
         收集时间
 

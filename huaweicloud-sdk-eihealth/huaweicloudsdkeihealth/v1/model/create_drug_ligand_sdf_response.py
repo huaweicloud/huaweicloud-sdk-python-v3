@@ -26,7 +26,7 @@ class CreateDrugLigandSdfResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateDrugLigandSdfResponse
+        r"""CreateDrugLigandSdfResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDrugLigandSdfResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateDrugLigandSdfResponse.
+        r"""Gets the body of this CreateDrugLigandSdfResponse.
 
         :return: The body of this CreateDrugLigandSdfResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateDrugLigandSdfResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDrugLigandSdfResponse.
+        r"""Sets the body of this CreateDrugLigandSdfResponse.
 
         :param body: The body of this CreateDrugLigandSdfResponse.
         :type body: str

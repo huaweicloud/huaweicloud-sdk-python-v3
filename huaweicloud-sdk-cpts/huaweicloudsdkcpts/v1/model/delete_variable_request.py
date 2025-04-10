@@ -27,7 +27,7 @@ class DeleteVariableRequest:
     }
 
     def __init__(self, variable_id=None, test_suite_id=None):
-        """DeleteVariableRequest
+        r"""DeleteVariableRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVariableRequest:
 
     @property
     def variable_id(self):
-        """Gets the variable_id of this DeleteVariableRequest.
+        r"""Gets the variable_id of this DeleteVariableRequest.
 
         全局变量id
 
@@ -59,7 +59,7 @@ class DeleteVariableRequest:
 
     @variable_id.setter
     def variable_id(self, variable_id):
-        """Sets the variable_id of this DeleteVariableRequest.
+        r"""Sets the variable_id of this DeleteVariableRequest.
 
         全局变量id
 
@@ -70,7 +70,7 @@ class DeleteVariableRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this DeleteVariableRequest.
+        r"""Gets the test_suite_id of this DeleteVariableRequest.
 
         工程id
 
@@ -81,7 +81,7 @@ class DeleteVariableRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this DeleteVariableRequest.
+        r"""Sets the test_suite_id of this DeleteVariableRequest.
 
         工程id
 

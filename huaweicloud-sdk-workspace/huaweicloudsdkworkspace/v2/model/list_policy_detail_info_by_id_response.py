@@ -26,7 +26,7 @@ class ListPolicyDetailInfoByIdResponse(SdkResponse):
     }
 
     def __init__(self, policy_group=None):
-        """ListPolicyDetailInfoByIdResponse
+        r"""ListPolicyDetailInfoByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPolicyDetailInfoByIdResponse(SdkResponse):
 
     @property
     def policy_group(self):
-        """Gets the policy_group of this ListPolicyDetailInfoByIdResponse.
+        r"""Gets the policy_group of this ListPolicyDetailInfoByIdResponse.
 
         :return: The policy_group of this ListPolicyDetailInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PolicyGroup`
@@ -53,7 +53,7 @@ class ListPolicyDetailInfoByIdResponse(SdkResponse):
 
     @policy_group.setter
     def policy_group(self, policy_group):
-        """Sets the policy_group of this ListPolicyDetailInfoByIdResponse.
+        r"""Sets the policy_group of this ListPolicyDetailInfoByIdResponse.
 
         :param policy_group: The policy_group of this ListPolicyDetailInfoByIdResponse.
         :type policy_group: :class:`huaweicloudsdkworkspace.v2.PolicyGroup`

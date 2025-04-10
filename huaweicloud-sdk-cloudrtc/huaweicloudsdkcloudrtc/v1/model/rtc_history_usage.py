@@ -35,7 +35,7 @@ class RtcHistoryUsage:
     }
 
     def __init__(self, date=None, video_sd=None, video_hd=None, video_hdp=None, audio=None, total_duration=None):
-        """RtcHistoryUsage
+        r"""RtcHistoryUsage
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RtcHistoryUsage:
 
     @property
     def date(self):
-        """Gets the date of this RtcHistoryUsage.
+        r"""Gets the date of this RtcHistoryUsage.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
@@ -89,7 +89,7 @@ class RtcHistoryUsage:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this RtcHistoryUsage.
+        r"""Sets the date of this RtcHistoryUsage.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
@@ -100,7 +100,7 @@ class RtcHistoryUsage:
 
     @property
     def video_sd(self):
-        """Gets the video_sd of this RtcHistoryUsage.
+        r"""Gets the video_sd of this RtcHistoryUsage.
 
         标清视频时长，单位秒
 
@@ -111,7 +111,7 @@ class RtcHistoryUsage:
 
     @video_sd.setter
     def video_sd(self, video_sd):
-        """Sets the video_sd of this RtcHistoryUsage.
+        r"""Sets the video_sd of this RtcHistoryUsage.
 
         标清视频时长，单位秒
 
@@ -122,7 +122,7 @@ class RtcHistoryUsage:
 
     @property
     def video_hd(self):
-        """Gets the video_hd of this RtcHistoryUsage.
+        r"""Gets the video_hd of this RtcHistoryUsage.
 
         高清视频时长，单位秒
 
@@ -133,7 +133,7 @@ class RtcHistoryUsage:
 
     @video_hd.setter
     def video_hd(self, video_hd):
-        """Sets the video_hd of this RtcHistoryUsage.
+        r"""Sets the video_hd of this RtcHistoryUsage.
 
         高清视频时长，单位秒
 
@@ -144,7 +144,7 @@ class RtcHistoryUsage:
 
     @property
     def video_hdp(self):
-        """Gets the video_hdp of this RtcHistoryUsage.
+        r"""Gets the video_hdp of this RtcHistoryUsage.
 
         超高清视频时长，单位秒
 
@@ -155,7 +155,7 @@ class RtcHistoryUsage:
 
     @video_hdp.setter
     def video_hdp(self, video_hdp):
-        """Sets the video_hdp of this RtcHistoryUsage.
+        r"""Sets the video_hdp of this RtcHistoryUsage.
 
         超高清视频时长，单位秒
 
@@ -166,7 +166,7 @@ class RtcHistoryUsage:
 
     @property
     def audio(self):
-        """Gets the audio of this RtcHistoryUsage.
+        r"""Gets the audio of this RtcHistoryUsage.
 
         音频时长，单位秒
 
@@ -177,7 +177,7 @@ class RtcHistoryUsage:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this RtcHistoryUsage.
+        r"""Sets the audio of this RtcHistoryUsage.
 
         音频时长，单位秒
 
@@ -188,7 +188,7 @@ class RtcHistoryUsage:
 
     @property
     def total_duration(self):
-        """Gets the total_duration of this RtcHistoryUsage.
+        r"""Gets the total_duration of this RtcHistoryUsage.
 
         音视频总时长，单位秒
 
@@ -199,7 +199,7 @@ class RtcHistoryUsage:
 
     @total_duration.setter
     def total_duration(self, total_duration):
-        """Sets the total_duration of this RtcHistoryUsage.
+        r"""Sets the total_duration of this RtcHistoryUsage.
 
         音视频总时长，单位秒
 

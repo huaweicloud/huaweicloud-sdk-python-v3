@@ -25,7 +25,7 @@ class DeleteSecurityGroupRuleRequest:
     }
 
     def __init__(self, security_group_rule_id=None):
-        """DeleteSecurityGroupRuleRequest
+        r"""DeleteSecurityGroupRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSecurityGroupRuleRequest:
 
     @property
     def security_group_rule_id(self):
-        """Gets the security_group_rule_id of this DeleteSecurityGroupRuleRequest.
+        r"""Gets the security_group_rule_id of this DeleteSecurityGroupRuleRequest.
 
         安全组规则ID。
 
@@ -53,7 +53,7 @@ class DeleteSecurityGroupRuleRequest:
 
     @security_group_rule_id.setter
     def security_group_rule_id(self, security_group_rule_id):
-        """Sets the security_group_rule_id of this DeleteSecurityGroupRuleRequest.
+        r"""Sets the security_group_rule_id of this DeleteSecurityGroupRuleRequest.
 
         安全组规则ID。
 

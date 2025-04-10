@@ -29,7 +29,7 @@ class UpdateSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, sign_id=None, body=None):
-        """UpdateSignatureKeyV2Request
+        r"""UpdateSignatureKeyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSignatureKeyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSignatureKeyV2Request.
+        r"""Gets the instance_id of this UpdateSignatureKeyV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateSignatureKeyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSignatureKeyV2Request.
+        r"""Sets the instance_id of this UpdateSignatureKeyV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateSignatureKeyV2Request:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this UpdateSignatureKeyV2Request.
+        r"""Gets the sign_id of this UpdateSignatureKeyV2Request.
 
         签名密钥编号
 
@@ -88,7 +88,7 @@ class UpdateSignatureKeyV2Request:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this UpdateSignatureKeyV2Request.
+        r"""Sets the sign_id of this UpdateSignatureKeyV2Request.
 
         签名密钥编号
 
@@ -99,7 +99,7 @@ class UpdateSignatureKeyV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSignatureKeyV2Request.
+        r"""Gets the body of this UpdateSignatureKeyV2Request.
 
         :return: The body of this UpdateSignatureKeyV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.BaseSignature`
@@ -108,7 +108,7 @@ class UpdateSignatureKeyV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSignatureKeyV2Request.
+        r"""Sets the body of this UpdateSignatureKeyV2Request.
 
         :param body: The body of this UpdateSignatureKeyV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.BaseSignature`

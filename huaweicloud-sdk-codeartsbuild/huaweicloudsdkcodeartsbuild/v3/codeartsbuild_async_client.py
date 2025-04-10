@@ -34,7 +34,7 @@ class CodeArtsBuildAsyncClient(Client):
         return client_builder
 
     def create_build_job_async(self, request):
-        """创建构建任务
+        r"""创建构建任务
 
         创建构建任务
         
@@ -99,7 +99,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def create_templates_async(self, request):
-        """创建构建模板
+        r"""创建构建模板
 
         创建构建模板
         
@@ -164,7 +164,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def delete_build_job_async(self, request):
-        """删除构建任务
+        r"""删除构建任务
 
         删除构建任务
         
@@ -229,7 +229,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def delete_templates_async(self, request):
-        """删除构建模板
+        r"""删除构建模板
 
         删除构建模板
         
@@ -294,7 +294,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def disable_build_job_async(self, request):
-        """禁用构建任务
+        r"""禁用构建任务
 
         禁用构建任务
         
@@ -359,7 +359,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def disable_notice_async(self, request):
-        """取消通知
+        r"""取消通知
 
         取消通知
         
@@ -426,7 +426,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def download_build_log_async(self, request):
-        """下载全量构建日志
+        r"""下载全量构建日志
 
         下载全量构建日志
         
@@ -493,7 +493,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def download_keystore_async(self, request):
-        """KeyStore文件下载
+        r"""KeyStore文件下载
 
         下载指定租户下的KeyStore文件
         
@@ -560,7 +560,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def download_task_log_async(self, request):
-        """下载构建步骤日志
+        r"""下载构建步骤日志
 
         下载构建步骤日志
         
@@ -629,7 +629,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def enable_build_job_async(self, request):
-        """恢复构建任务
+        r"""恢复构建任务
 
         恢复构建任务
         
@@ -694,7 +694,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def list_job_config_async(self, request):
-        """获取构建任务详情
+        r"""获取构建任务详情
 
         获取构建任务详情
         
@@ -761,7 +761,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def list_notice_async(self, request):
-        """查询通知
+        r"""查询通知
 
         查询通知
         
@@ -826,7 +826,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def list_templates_async(self, request):
-        """查询构建模板
+        r"""查询构建模板
 
         查询构建模板
         
@@ -895,7 +895,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def run_job_async(self, request):
-        """执行构建任务
+        r"""执行构建任务
 
         执行构建任务,可传自定义参数
         
@@ -960,7 +960,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_history_details_async(self, request):
-        """获取构建历史详情信息接口
+        r"""获取构建历史详情信息接口
 
         获取构建历史详情信息接口
         
@@ -1027,7 +1027,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_job_list_by_project_id_async(self, request):
-        """查看项目下用户的构建任务列表
+        r"""查看项目下用户的构建任务列表
 
         查看项目下用户的构建任务列表
         
@@ -1096,7 +1096,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_job_status_async(self, request):
-        """查看任务运行状态
+        r"""查看任务运行状态
 
         查看任务运行状态
         
@@ -1161,7 +1161,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_job_success_ratio_async(self, request):
-        """根据开始时间和结束时间查看构建任务的构建成功率
+        r"""根据开始时间和结束时间查看构建任务的构建成功率
 
         根据开始时间和结束时间查看构建任务的构建成功率
         
@@ -1230,7 +1230,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_last_history_async(self, request):
-        """查询指定代码仓库最近一次成功的构建历史
+        r"""查询指定代码仓库最近一次成功的构建历史
 
         查询指定代码仓库最近一次成功的构建历史
         
@@ -1297,7 +1297,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_list_history_async(self, request):
-        """查看构建任务的构建历史列表
+        r"""查看构建任务的构建历史列表
 
         查看构建任务的构建历史列表
         
@@ -1368,7 +1368,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_list_period_history_async(self, request):
-        """根据开始时间和结束时间查看构建任务的构建历史列表
+        r"""根据开始时间和结束时间查看构建任务的构建历史列表
 
         根据开始时间和结束时间查看构建任务的构建历史列表
         
@@ -1441,7 +1441,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_output_info_async(self, request):
-        """获取构建产物详情信息
+        r"""获取构建产物详情信息
 
         获取构建产物详情信息
         
@@ -1508,7 +1508,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_record_detail_async(self, request):
-        """获取构建记录信息
+        r"""获取构建记录信息
 
         获取构建记录信息
         
@@ -1575,7 +1575,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def stop_build_job_async(self, request):
-        """停止构建任务
+        r"""停止构建任务
 
         停止构建任务
         
@@ -1642,7 +1642,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def update_build_job_async(self, request):
-        """更新构建任务
+        r"""更新构建任务
 
         更新构建任务
         
@@ -1707,7 +1707,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def update_notice_async(self, request):
-        """更新通知
+        r"""更新通知
 
         更新通知
         
@@ -1774,7 +1774,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def download_log_by_record_id_async(self, request):
-        """下载构建日志(待下线)
+        r"""下载构建日志(待下线)
 
         下载构建日志(待下线)
         
@@ -1839,7 +1839,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_flow_graph_async(self, request):
-        """获取构建记录的有向无环图(待下线)
+        r"""获取构建记录的有向无环图(待下线)
 
         获取构建记录的有向无环图(待下线)
         
@@ -1904,7 +1904,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def show_record_info_async(self, request):
-        """获取构建记录信息(待下线)
+        r"""获取构建记录信息(待下线)
 
         获取构建记录信息(待下线)
         
@@ -1971,7 +1971,7 @@ class CodeArtsBuildAsyncClient(Client):
         return http_info
 
     def stop_job_async(self, request):
-        """停止构建任务(待下线)
+        r"""停止构建任务(待下线)
 
         停止构建任务(待下线)
         

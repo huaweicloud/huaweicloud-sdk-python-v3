@@ -34,7 +34,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     }
 
     def __init__(self, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
-        """UpdateAlarmNotificationsResponse
+        r"""UpdateAlarmNotificationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @property
     def notification_enabled(self):
-        """Gets the notification_enabled of this UpdateAlarmNotificationsResponse.
+        r"""Gets the notification_enabled of this UpdateAlarmNotificationsResponse.
 
         是否开启告警通知
 
@@ -83,7 +83,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @notification_enabled.setter
     def notification_enabled(self, notification_enabled):
-        """Sets the notification_enabled of this UpdateAlarmNotificationsResponse.
+        r"""Sets the notification_enabled of this UpdateAlarmNotificationsResponse.
 
         是否开启告警通知
 
@@ -94,7 +94,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this UpdateAlarmNotificationsResponse.
+        r"""Gets the alarm_notifications of this UpdateAlarmNotificationsResponse.
 
         告警触发的动作
 
@@ -105,7 +105,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this UpdateAlarmNotificationsResponse.
+        r"""Sets the alarm_notifications of this UpdateAlarmNotificationsResponse.
 
         告警触发的动作
 
@@ -116,7 +116,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @property
     def ok_notifications(self):
-        """Gets the ok_notifications of this UpdateAlarmNotificationsResponse.
+        r"""Gets the ok_notifications of this UpdateAlarmNotificationsResponse.
 
         告警恢复触发的动作
 
@@ -127,7 +127,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @ok_notifications.setter
     def ok_notifications(self, ok_notifications):
-        """Sets the ok_notifications of this UpdateAlarmNotificationsResponse.
+        r"""Sets the ok_notifications of this UpdateAlarmNotificationsResponse.
 
         告警恢复触发的动作
 
@@ -138,7 +138,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @property
     def notification_begin_time(self):
-        """Gets the notification_begin_time of this UpdateAlarmNotificationsResponse.
+        r"""Gets the notification_begin_time of this UpdateAlarmNotificationsResponse.
 
         告警通知开启时间
 
@@ -149,7 +149,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @notification_begin_time.setter
     def notification_begin_time(self, notification_begin_time):
-        """Sets the notification_begin_time of this UpdateAlarmNotificationsResponse.
+        r"""Sets the notification_begin_time of this UpdateAlarmNotificationsResponse.
 
         告警通知开启时间
 
@@ -160,7 +160,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @property
     def notification_end_time(self):
-        """Gets the notification_end_time of this UpdateAlarmNotificationsResponse.
+        r"""Gets the notification_end_time of this UpdateAlarmNotificationsResponse.
 
         告警通知关闭时间
 
@@ -171,7 +171,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     @notification_end_time.setter
     def notification_end_time(self, notification_end_time):
-        """Sets the notification_end_time of this UpdateAlarmNotificationsResponse.
+        r"""Sets the notification_end_time of this UpdateAlarmNotificationsResponse.
 
         告警通知关闭时间
 

@@ -31,7 +31,7 @@ class TextReviewRet:
     }
 
     def __init__(self, suggestion=None, politics=None, porn=None, abuse=None):
-        """TextReviewRet
+        r"""TextReviewRet
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class TextReviewRet:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this TextReviewRet.
+        r"""Gets the suggestion of this TextReviewRet.
 
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
@@ -74,7 +74,7 @@ class TextReviewRet:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this TextReviewRet.
+        r"""Sets the suggestion of this TextReviewRet.
 
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
@@ -85,7 +85,7 @@ class TextReviewRet:
 
     @property
     def politics(self):
-        """Gets the politics of this TextReviewRet.
+        r"""Gets the politics of this TextReviewRet.
 
         涉政敏感词列表
 
@@ -96,7 +96,7 @@ class TextReviewRet:
 
     @politics.setter
     def politics(self, politics):
-        """Sets the politics of this TextReviewRet.
+        r"""Sets the politics of this TextReviewRet.
 
         涉政敏感词列表
 
@@ -107,7 +107,7 @@ class TextReviewRet:
 
     @property
     def porn(self):
-        """Gets the porn of this TextReviewRet.
+        r"""Gets the porn of this TextReviewRet.
 
         涉黄敏感词列表
 
@@ -118,7 +118,7 @@ class TextReviewRet:
 
     @porn.setter
     def porn(self, porn):
-        """Sets the porn of this TextReviewRet.
+        r"""Sets the porn of this TextReviewRet.
 
         涉黄敏感词列表
 
@@ -129,7 +129,7 @@ class TextReviewRet:
 
     @property
     def abuse(self):
-        """Gets the abuse of this TextReviewRet.
+        r"""Gets the abuse of this TextReviewRet.
 
         辱骂敏感词列表
 
@@ -140,7 +140,7 @@ class TextReviewRet:
 
     @abuse.setter
     def abuse(self, abuse):
-        """Sets the abuse of this TextReviewRet.
+        r"""Sets the abuse of this TextReviewRet.
 
         辱骂敏感词列表
 

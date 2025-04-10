@@ -27,7 +27,7 @@ class DownloadInfoRsp:
     }
 
     def __init__(self, download_link=None, category=None):
-        """DownloadInfoRsp
+        r"""DownloadInfoRsp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadInfoRsp:
 
     @property
     def download_link(self):
-        """Gets the download_link of this DownloadInfoRsp.
+        r"""Gets the download_link of this DownloadInfoRsp.
 
         证书下载地址
 
@@ -59,7 +59,7 @@ class DownloadInfoRsp:
 
     @download_link.setter
     def download_link(self, download_link):
-        """Sets the download_link of this DownloadInfoRsp.
+        r"""Sets the download_link of this DownloadInfoRsp.
 
         证书下载地址
 
@@ -70,7 +70,7 @@ class DownloadInfoRsp:
 
     @property
     def category(self):
-        """Gets the category of this DownloadInfoRsp.
+        r"""Gets the category of this DownloadInfoRsp.
 
         证书类型
 
@@ -81,7 +81,7 @@ class DownloadInfoRsp:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this DownloadInfoRsp.
+        r"""Sets the category of this DownloadInfoRsp.
 
         证书类型
 

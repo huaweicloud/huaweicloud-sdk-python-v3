@@ -27,7 +27,7 @@ class ShowL7RuleRequest:
     }
 
     def __init__(self, l7policy_id=None, l7rule_id=None):
-        """ShowL7RuleRequest
+        r"""ShowL7RuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowL7RuleRequest:
 
     @property
     def l7policy_id(self):
-        """Gets the l7policy_id of this ShowL7RuleRequest.
+        r"""Gets the l7policy_id of this ShowL7RuleRequest.
 
         7层转发策略。
 
@@ -59,7 +59,7 @@ class ShowL7RuleRequest:
 
     @l7policy_id.setter
     def l7policy_id(self, l7policy_id):
-        """Sets the l7policy_id of this ShowL7RuleRequest.
+        r"""Sets the l7policy_id of this ShowL7RuleRequest.
 
         7层转发策略。
 
@@ -70,7 +70,7 @@ class ShowL7RuleRequest:
 
     @property
     def l7rule_id(self):
-        """Gets the l7rule_id of this ShowL7RuleRequest.
+        r"""Gets the l7rule_id of this ShowL7RuleRequest.
 
         7层转发规则。
 
@@ -81,7 +81,7 @@ class ShowL7RuleRequest:
 
     @l7rule_id.setter
     def l7rule_id(self, l7rule_id):
-        """Sets the l7rule_id of this ShowL7RuleRequest.
+        r"""Sets the l7rule_id of this ShowL7RuleRequest.
 
         7层转发规则。
 

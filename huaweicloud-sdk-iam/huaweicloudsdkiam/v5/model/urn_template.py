@@ -23,7 +23,7 @@ class UrnTemplate:
     }
 
     def __init__(self):
-        """UrnTemplate
+        r"""UrnTemplate
 
         The model defined in huaweicloud sdk
 

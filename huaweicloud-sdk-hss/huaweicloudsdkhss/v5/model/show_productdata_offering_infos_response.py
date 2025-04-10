@@ -26,7 +26,7 @@ class ShowProductdataOfferingInfosResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowProductdataOfferingInfosResponse
+        r"""ShowProductdataOfferingInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowProductdataOfferingInfosResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowProductdataOfferingInfosResponse.
+        r"""Gets the body of this ShowProductdataOfferingInfosResponse.
 
         商品数据列表
 
@@ -55,7 +55,7 @@ class ShowProductdataOfferingInfosResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowProductdataOfferingInfosResponse.
+        r"""Sets the body of this ShowProductdataOfferingInfosResponse.
 
         商品数据列表
 

@@ -33,7 +33,7 @@ class CancelRecurringMeetingRequest:
     }
 
     def __init__(self, x_authorization_type=None, user_uuid=None, x_site_id=None, conference_id=None, type=None):
-        """CancelRecurringMeetingRequest
+        r"""CancelRecurringMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CancelRecurringMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this CancelRecurringMeetingRequest.
+        r"""Gets the x_authorization_type of this CancelRecurringMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -81,7 +81,7 @@ class CancelRecurringMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this CancelRecurringMeetingRequest.
+        r"""Sets the x_authorization_type of this CancelRecurringMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -92,7 +92,7 @@ class CancelRecurringMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this CancelRecurringMeetingRequest.
+        r"""Gets the user_uuid of this CancelRecurringMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -103,7 +103,7 @@ class CancelRecurringMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this CancelRecurringMeetingRequest.
+        r"""Sets the user_uuid of this CancelRecurringMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -114,7 +114,7 @@ class CancelRecurringMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this CancelRecurringMeetingRequest.
+        r"""Gets the x_site_id of this CancelRecurringMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -125,7 +125,7 @@ class CancelRecurringMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this CancelRecurringMeetingRequest.
+        r"""Sets the x_site_id of this CancelRecurringMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -136,7 +136,7 @@ class CancelRecurringMeetingRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this CancelRecurringMeetingRequest.
+        r"""Gets the conference_id of this CancelRecurringMeetingRequest.
 
         会议ID。
 
@@ -147,7 +147,7 @@ class CancelRecurringMeetingRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this CancelRecurringMeetingRequest.
+        r"""Sets the conference_id of this CancelRecurringMeetingRequest.
 
         会议ID。
 
@@ -158,7 +158,7 @@ class CancelRecurringMeetingRequest:
 
     @property
     def type(self):
-        """Gets the type of this CancelRecurringMeetingRequest.
+        r"""Gets the type of this CancelRecurringMeetingRequest.
 
         取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
 
@@ -169,7 +169,7 @@ class CancelRecurringMeetingRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CancelRecurringMeetingRequest.
+        r"""Sets the type of this CancelRecurringMeetingRequest.
 
         取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
 

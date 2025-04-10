@@ -26,7 +26,7 @@ class ListInstanceDiagnosisResponse(SdkResponse):
     }
 
     def __init__(self, diagnosis=None):
-        """ListInstanceDiagnosisResponse
+        r"""ListInstanceDiagnosisResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstanceDiagnosisResponse(SdkResponse):
 
     @property
     def diagnosis(self):
-        """Gets the diagnosis of this ListInstanceDiagnosisResponse.
+        r"""Gets the diagnosis of this ListInstanceDiagnosisResponse.
 
         diagnosis info
 
@@ -55,7 +55,7 @@ class ListInstanceDiagnosisResponse(SdkResponse):
 
     @diagnosis.setter
     def diagnosis(self, diagnosis):
-        """Sets the diagnosis of this ListInstanceDiagnosisResponse.
+        r"""Sets the diagnosis of this ListInstanceDiagnosisResponse.
 
         diagnosis info
 

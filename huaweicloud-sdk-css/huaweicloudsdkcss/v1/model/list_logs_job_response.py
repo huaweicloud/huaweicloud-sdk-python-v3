@@ -26,7 +26,7 @@ class ListLogsJobResponse(SdkResponse):
     }
 
     def __init__(self, cluster_log_record=None):
-        """ListLogsJobResponse
+        r"""ListLogsJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLogsJobResponse(SdkResponse):
 
     @property
     def cluster_log_record(self):
-        """Gets the cluster_log_record of this ListLogsJobResponse.
+        r"""Gets the cluster_log_record of this ListLogsJobResponse.
 
         :return: The cluster_log_record of this ListLogsJobResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
@@ -53,7 +53,7 @@ class ListLogsJobResponse(SdkResponse):
 
     @cluster_log_record.setter
     def cluster_log_record(self, cluster_log_record):
-        """Sets the cluster_log_record of this ListLogsJobResponse.
+        r"""Sets the cluster_log_record of this ListLogsJobResponse.
 
         :param cluster_log_record: The cluster_log_record of this ListLogsJobResponse.
         :type cluster_log_record: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]

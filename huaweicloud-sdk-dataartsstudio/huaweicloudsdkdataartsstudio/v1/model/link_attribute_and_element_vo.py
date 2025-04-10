@@ -31,7 +31,7 @@ class LinkAttributeAndElementVO:
     }
 
     def __init__(self, ids=None, stand_row_id=None, table_id=None, biz_type=None):
-        """LinkAttributeAndElementVO
+        r"""LinkAttributeAndElementVO
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class LinkAttributeAndElementVO:
 
     @property
     def ids(self):
-        """Gets the ids of this LinkAttributeAndElementVO.
+        r"""Gets the ids of this LinkAttributeAndElementVO.
 
         属性ID列表，ID字符串。
 
@@ -71,7 +71,7 @@ class LinkAttributeAndElementVO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this LinkAttributeAndElementVO.
+        r"""Sets the ids of this LinkAttributeAndElementVO.
 
         属性ID列表，ID字符串。
 
@@ -82,7 +82,7 @@ class LinkAttributeAndElementVO:
 
     @property
     def stand_row_id(self):
-        """Gets the stand_row_id of this LinkAttributeAndElementVO.
+        r"""Gets the stand_row_id of this LinkAttributeAndElementVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -93,7 +93,7 @@ class LinkAttributeAndElementVO:
 
     @stand_row_id.setter
     def stand_row_id(self, stand_row_id):
-        """Sets the stand_row_id of this LinkAttributeAndElementVO.
+        r"""Sets the stand_row_id of this LinkAttributeAndElementVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -104,7 +104,7 @@ class LinkAttributeAndElementVO:
 
     @property
     def table_id(self):
-        """Gets the table_id of this LinkAttributeAndElementVO.
+        r"""Gets the table_id of this LinkAttributeAndElementVO.
 
         表ID，ID字符串。
 
@@ -115,7 +115,7 @@ class LinkAttributeAndElementVO:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this LinkAttributeAndElementVO.
+        r"""Sets the table_id of this LinkAttributeAndElementVO.
 
         表ID，ID字符串。
 
@@ -126,7 +126,7 @@ class LinkAttributeAndElementVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this LinkAttributeAndElementVO.
+        r"""Gets the biz_type of this LinkAttributeAndElementVO.
 
         表类型，默认是TABLE_MODEL。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
@@ -137,7 +137,7 @@ class LinkAttributeAndElementVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this LinkAttributeAndElementVO.
+        r"""Sets the biz_type of this LinkAttributeAndElementVO.
 
         表类型，默认是TABLE_MODEL。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 

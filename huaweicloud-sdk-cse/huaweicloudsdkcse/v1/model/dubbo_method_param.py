@@ -29,7 +29,7 @@ class DubboMethodParam:
     }
 
     def __init__(self, param_key=None, param_source=None, param_type=None):
-        """DubboMethodParam
+        r"""DubboMethodParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DubboMethodParam:
 
     @property
     def param_key(self):
-        """Gets the param_key of this DubboMethodParam.
+        r"""Gets the param_key of this DubboMethodParam.
 
         参数键。
 
@@ -68,7 +68,7 @@ class DubboMethodParam:
 
     @param_key.setter
     def param_key(self, param_key):
-        """Sets the param_key of this DubboMethodParam.
+        r"""Sets the param_key of this DubboMethodParam.
 
         参数键。
 
@@ -79,7 +79,7 @@ class DubboMethodParam:
 
     @property
     def param_source(self):
-        """Gets the param_source of this DubboMethodParam.
+        r"""Gets the param_source of this DubboMethodParam.
 
         参数来源。
 
@@ -90,7 +90,7 @@ class DubboMethodParam:
 
     @param_source.setter
     def param_source(self, param_source):
-        """Sets the param_source of this DubboMethodParam.
+        r"""Sets the param_source of this DubboMethodParam.
 
         参数来源。
 
@@ -101,7 +101,7 @@ class DubboMethodParam:
 
     @property
     def param_type(self):
-        """Gets the param_type of this DubboMethodParam.
+        r"""Gets the param_type of this DubboMethodParam.
 
         参数类型。
 
@@ -112,7 +112,7 @@ class DubboMethodParam:
 
     @param_type.setter
     def param_type(self, param_type):
-        """Sets the param_type of this DubboMethodParam.
+        r"""Sets the param_type of this DubboMethodParam.
 
         参数类型。
 

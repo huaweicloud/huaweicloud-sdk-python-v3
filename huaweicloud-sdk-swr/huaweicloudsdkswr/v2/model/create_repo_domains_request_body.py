@@ -31,7 +31,7 @@ class CreateRepoDomainsRequestBody:
     }
 
     def __init__(self, access_domain=None, permit=None, deadline=None, description=None):
-        """CreateRepoDomainsRequestBody
+        r"""CreateRepoDomainsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateRepoDomainsRequestBody:
 
     @property
     def access_domain(self):
-        """Gets the access_domain of this CreateRepoDomainsRequestBody.
+        r"""Gets the access_domain of this CreateRepoDomainsRequestBody.
 
         共享租户名称
 
@@ -72,7 +72,7 @@ class CreateRepoDomainsRequestBody:
 
     @access_domain.setter
     def access_domain(self, access_domain):
-        """Sets the access_domain of this CreateRepoDomainsRequestBody.
+        r"""Sets the access_domain of this CreateRepoDomainsRequestBody.
 
         共享租户名称
 
@@ -83,7 +83,7 @@ class CreateRepoDomainsRequestBody:
 
     @property
     def permit(self):
-        """Gets the permit of this CreateRepoDomainsRequestBody.
+        r"""Gets the permit of this CreateRepoDomainsRequestBody.
 
         当前只支持read权限
 
@@ -94,7 +94,7 @@ class CreateRepoDomainsRequestBody:
 
     @permit.setter
     def permit(self, permit):
-        """Sets the permit of this CreateRepoDomainsRequestBody.
+        r"""Sets the permit of this CreateRepoDomainsRequestBody.
 
         当前只支持read权限
 
@@ -105,7 +105,7 @@ class CreateRepoDomainsRequestBody:
 
     @property
     def deadline(self):
-        """Gets the deadline of this CreateRepoDomainsRequestBody.
+        r"""Gets the deadline of this CreateRepoDomainsRequestBody.
 
         截止时间，UTC时间格式。永久有效为forever
 
@@ -116,7 +116,7 @@ class CreateRepoDomainsRequestBody:
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this CreateRepoDomainsRequestBody.
+        r"""Sets the deadline of this CreateRepoDomainsRequestBody.
 
         截止时间，UTC时间格式。永久有效为forever
 
@@ -127,7 +127,7 @@ class CreateRepoDomainsRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateRepoDomainsRequestBody.
+        r"""Gets the description of this CreateRepoDomainsRequestBody.
 
         描述
 
@@ -138,7 +138,7 @@ class CreateRepoDomainsRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRepoDomainsRequestBody.
+        r"""Sets the description of this CreateRepoDomainsRequestBody.
 
         描述
 

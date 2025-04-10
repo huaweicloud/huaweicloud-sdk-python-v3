@@ -27,7 +27,7 @@ class CreateEndpointRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateEndpointRequest
+        r"""CreateEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateEndpointRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateEndpointRequest.
+        r"""Gets the ief_instance_id of this CreateEndpointRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateEndpointRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateEndpointRequest.
+        r"""Sets the ief_instance_id of this CreateEndpointRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEndpointRequest.
+        r"""Gets the body of this CreateEndpointRequest.
 
         :return: The body of this CreateEndpointRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Endpoint`
@@ -81,7 +81,7 @@ class CreateEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEndpointRequest.
+        r"""Sets the body of this CreateEndpointRequest.
 
         :param body: The body of this CreateEndpointRequest.
         :type body: :class:`huaweicloudsdkief.v1.Endpoint`

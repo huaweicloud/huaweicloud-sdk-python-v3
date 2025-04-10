@@ -27,7 +27,7 @@ class SyncRespBody:
     }
 
     def __init__(self, operation_log_id=None, vault_id=None):
-        """SyncRespBody
+        r"""SyncRespBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SyncRespBody:
 
     @property
     def operation_log_id(self):
-        """Gets the operation_log_id of this SyncRespBody.
+        r"""Gets the operation_log_id of this SyncRespBody.
 
         是否自动触发
 
@@ -59,7 +59,7 @@ class SyncRespBody:
 
     @operation_log_id.setter
     def operation_log_id(self, operation_log_id):
-        """Sets the operation_log_id of this SyncRespBody.
+        r"""Sets the operation_log_id of this SyncRespBody.
 
         是否自动触发
 
@@ -70,7 +70,7 @@ class SyncRespBody:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this SyncRespBody.
+        r"""Gets the vault_id of this SyncRespBody.
 
         混合云vault id
 
@@ -81,7 +81,7 @@ class SyncRespBody:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this SyncRespBody.
+        r"""Sets the vault_id of this SyncRespBody.
 
         混合云vault id
 

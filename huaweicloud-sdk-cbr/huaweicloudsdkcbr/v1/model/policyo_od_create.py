@@ -45,7 +45,7 @@ class PolicyoODCreate:
     }
 
     def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None, full_backup_interval=None):
-        """PolicyoODCreate
+        r"""PolicyoODCreate
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PolicyoODCreate:
 
     @property
     def day_backups(self):
-        """Gets the day_backups of this PolicyoODCreate.
+        r"""Gets the day_backups of this PolicyoODCreate.
 
         保留日备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -124,7 +124,7 @@ class PolicyoODCreate:
 
     @day_backups.setter
     def day_backups(self, day_backups):
-        """Sets the day_backups of this PolicyoODCreate.
+        r"""Sets the day_backups of this PolicyoODCreate.
 
         保留日备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -135,7 +135,7 @@ class PolicyoODCreate:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this PolicyoODCreate.
+        r"""Gets the destination_project_id of this PolicyoODCreate.
 
         复制的目标项目ID，仅在跨区域复制时才会使用并且必须指定。
 
@@ -146,7 +146,7 @@ class PolicyoODCreate:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this PolicyoODCreate.
+        r"""Sets the destination_project_id of this PolicyoODCreate.
 
         复制的目标项目ID，仅在跨区域复制时才会使用并且必须指定。
 
@@ -157,7 +157,7 @@ class PolicyoODCreate:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this PolicyoODCreate.
+        r"""Gets the destination_region of this PolicyoODCreate.
 
         复制的目标区域，仅在跨区域复制时才会使用并且必须指定。长度限制：0- 255，只能由字母、数字、“_”、“-”组成
 
@@ -168,7 +168,7 @@ class PolicyoODCreate:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this PolicyoODCreate.
+        r"""Sets the destination_region of this PolicyoODCreate.
 
         复制的目标区域，仅在跨区域复制时才会使用并且必须指定。长度限制：0- 255，只能由字母、数字、“_”、“-”组成
 
@@ -179,7 +179,7 @@ class PolicyoODCreate:
 
     @property
     def enable_acceleration(self):
-        """Gets the enable_acceleration of this PolicyoODCreate.
+        r"""Gets the enable_acceleration of this PolicyoODCreate.
 
         跨区域复制时，是否启用加速从而缩减复制的时间，如果不指定，默认不启用加速。
 
@@ -190,7 +190,7 @@ class PolicyoODCreate:
 
     @enable_acceleration.setter
     def enable_acceleration(self, enable_acceleration):
-        """Sets the enable_acceleration of this PolicyoODCreate.
+        r"""Sets the enable_acceleration of this PolicyoODCreate.
 
         跨区域复制时，是否启用加速从而缩减复制的时间，如果不指定，默认不启用加速。
 
@@ -201,7 +201,7 @@ class PolicyoODCreate:
 
     @property
     def max_backups(self):
-        """Gets the max_backups of this PolicyoODCreate.
+        r"""Gets the max_backups of this PolicyoODCreate.
 
         单个备份对象自动备份的最大备份数。取值为-1或0-99999。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。
 
@@ -212,7 +212,7 @@ class PolicyoODCreate:
 
     @max_backups.setter
     def max_backups(self, max_backups):
-        """Sets the max_backups of this PolicyoODCreate.
+        r"""Sets the max_backups of this PolicyoODCreate.
 
         单个备份对象自动备份的最大备份数。取值为-1或0-99999。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。
 
@@ -223,7 +223,7 @@ class PolicyoODCreate:
 
     @property
     def month_backups(self):
-        """Gets the month_backups of this PolicyoODCreate.
+        r"""Gets the month_backups of this PolicyoODCreate.
 
         保留月备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -234,7 +234,7 @@ class PolicyoODCreate:
 
     @month_backups.setter
     def month_backups(self, month_backups):
-        """Sets the month_backups of this PolicyoODCreate.
+        r"""Sets the month_backups of this PolicyoODCreate.
 
         保留月备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -245,7 +245,7 @@ class PolicyoODCreate:
 
     @property
     def retention_duration_days(self):
-        """Gets the retention_duration_days of this PolicyoODCreate.
+        r"""Gets the retention_duration_days of this PolicyoODCreate.
 
         备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。
 
@@ -256,7 +256,7 @@ class PolicyoODCreate:
 
     @retention_duration_days.setter
     def retention_duration_days(self, retention_duration_days):
-        """Sets the retention_duration_days of this PolicyoODCreate.
+        r"""Sets the retention_duration_days of this PolicyoODCreate.
 
         备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。
 
@@ -267,7 +267,7 @@ class PolicyoODCreate:
 
     @property
     def timezone(self):
-        """Gets the timezone of this PolicyoODCreate.
+        r"""Gets the timezone of this PolicyoODCreate.
 
         用户所在时区,格式形如UTC+08:00, 若选择年备，月备，周备，日备中任一参数，则该参数不能为空。
 
@@ -278,7 +278,7 @@ class PolicyoODCreate:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this PolicyoODCreate.
+        r"""Sets the timezone of this PolicyoODCreate.
 
         用户所在时区,格式形如UTC+08:00, 若选择年备，月备，周备，日备中任一参数，则该参数不能为空。
 
@@ -289,7 +289,7 @@ class PolicyoODCreate:
 
     @property
     def week_backups(self):
-        """Gets the week_backups of this PolicyoODCreate.
+        r"""Gets the week_backups of this PolicyoODCreate.
 
         保留周备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -300,7 +300,7 @@ class PolicyoODCreate:
 
     @week_backups.setter
     def week_backups(self, week_backups):
-        """Sets the week_backups of this PolicyoODCreate.
+        r"""Sets the week_backups of this PolicyoODCreate.
 
         保留周备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -311,7 +311,7 @@ class PolicyoODCreate:
 
     @property
     def year_backups(self):
-        """Gets the year_backups of this PolicyoODCreate.
+        r"""Gets the year_backups of this PolicyoODCreate.
 
         保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -322,7 +322,7 @@ class PolicyoODCreate:
 
     @year_backups.setter
     def year_backups(self, year_backups):
-        """Sets the year_backups of this PolicyoODCreate.
+        r"""Sets the year_backups of this PolicyoODCreate.
 
         保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -333,7 +333,7 @@ class PolicyoODCreate:
 
     @property
     def full_backup_interval(self):
-        """Gets the full_backup_interval of this PolicyoODCreate.
+        r"""Gets the full_backup_interval of this PolicyoODCreate.
 
         每间隔多少次执行一次全量备份，当取值为 -1 时，不执行全量备份。  最小值：-1  最大值：100
 
@@ -344,7 +344,7 @@ class PolicyoODCreate:
 
     @full_backup_interval.setter
     def full_backup_interval(self, full_backup_interval):
-        """Sets the full_backup_interval of this PolicyoODCreate.
+        r"""Sets the full_backup_interval of this PolicyoODCreate.
 
         每间隔多少次执行一次全量备份，当取值为 -1 时，不执行全量备份。  最小值：-1  最大值：100
 

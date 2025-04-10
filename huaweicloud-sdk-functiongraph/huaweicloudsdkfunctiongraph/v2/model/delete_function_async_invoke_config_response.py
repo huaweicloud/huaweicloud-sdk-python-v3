@@ -24,7 +24,7 @@ class DeleteFunctionAsyncInvokeConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteFunctionAsyncInvokeConfigResponse
+        r"""DeleteFunctionAsyncInvokeConfigResponse
 
         The model defined in huaweicloud sdk
 

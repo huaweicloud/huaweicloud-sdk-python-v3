@@ -28,7 +28,7 @@ class CreateCertificatePrivateKeyEchoResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, private_key_echo=None):
-        """CreateCertificatePrivateKeyEchoResponse
+        r"""CreateCertificatePrivateKeyEchoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateCertificatePrivateKeyEchoResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateCertificatePrivateKeyEchoResponse.
+        r"""Gets the request_id of this CreateCertificatePrivateKeyEchoResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class CreateCertificatePrivateKeyEchoResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateCertificatePrivateKeyEchoResponse.
+        r"""Sets the request_id of this CreateCertificatePrivateKeyEchoResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class CreateCertificatePrivateKeyEchoResponse(SdkResponse):
 
     @property
     def private_key_echo(self):
-        """Gets the private_key_echo of this CreateCertificatePrivateKeyEchoResponse.
+        r"""Gets the private_key_echo of this CreateCertificatePrivateKeyEchoResponse.
 
         证书回显开关，项目粒度的,默认情况下,\"private_key_echo\"是true,证书的返回体中展示私钥。 当值为false时,证书的返回体中不展示私钥。
 
@@ -84,7 +84,7 @@ class CreateCertificatePrivateKeyEchoResponse(SdkResponse):
 
     @private_key_echo.setter
     def private_key_echo(self, private_key_echo):
-        """Sets the private_key_echo of this CreateCertificatePrivateKeyEchoResponse.
+        r"""Sets the private_key_echo of this CreateCertificatePrivateKeyEchoResponse.
 
         证书回显开关，项目粒度的,默认情况下,\"private_key_echo\"是true,证书的返回体中展示私钥。 当值为false时,证书的返回体中不展示私钥。
 

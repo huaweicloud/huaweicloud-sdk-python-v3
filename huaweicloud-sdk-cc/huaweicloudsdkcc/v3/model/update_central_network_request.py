@@ -27,7 +27,7 @@ class UpdateCentralNetworkRequest:
     }
 
     def __init__(self, central_network_id=None, body=None):
-        """UpdateCentralNetworkRequest
+        r"""UpdateCentralNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCentralNetworkRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this UpdateCentralNetworkRequest.
+        r"""Gets the central_network_id of this UpdateCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -60,7 +60,7 @@ class UpdateCentralNetworkRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this UpdateCentralNetworkRequest.
+        r"""Sets the central_network_id of this UpdateCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -71,7 +71,7 @@ class UpdateCentralNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCentralNetworkRequest.
+        r"""Gets the body of this UpdateCentralNetworkRequest.
 
         :return: The body of this UpdateCentralNetworkRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkRequestBody`
@@ -80,7 +80,7 @@ class UpdateCentralNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCentralNetworkRequest.
+        r"""Sets the body of this UpdateCentralNetworkRequest.
 
         :param body: The body of this UpdateCentralNetworkRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkRequestBody`

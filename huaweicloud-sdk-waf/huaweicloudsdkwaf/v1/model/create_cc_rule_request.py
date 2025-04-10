@@ -29,7 +29,7 @@ class CreateCcRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
-        """CreateCcRuleRequest
+        r"""CreateCcRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCcRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCcRuleRequest.
+        r"""Gets the enterprise_project_id of this CreateCcRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class CreateCcRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCcRuleRequest.
+        r"""Sets the enterprise_project_id of this CreateCcRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class CreateCcRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateCcRuleRequest.
+        r"""Gets the policy_id of this CreateCcRuleRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -89,7 +89,7 @@ class CreateCcRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateCcRuleRequest.
+        r"""Sets the policy_id of this CreateCcRuleRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -100,7 +100,7 @@ class CreateCcRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCcRuleRequest.
+        r"""Gets the body of this CreateCcRuleRequest.
 
         :return: The body of this CreateCcRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBody`
@@ -109,7 +109,7 @@ class CreateCcRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCcRuleRequest.
+        r"""Sets the body of this CreateCcRuleRequest.
 
         :param body: The body of this CreateCcRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBody`

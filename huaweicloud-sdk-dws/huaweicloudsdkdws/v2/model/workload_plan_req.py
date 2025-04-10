@@ -27,7 +27,7 @@ class WorkloadPlanReq:
     }
 
     def __init__(self, plan_name=None, logical_cluster_name=None):
-        """WorkloadPlanReq
+        r"""WorkloadPlanReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class WorkloadPlanReq:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this WorkloadPlanReq.
+        r"""Gets the plan_name of this WorkloadPlanReq.
 
         计划名称
 
@@ -60,7 +60,7 @@ class WorkloadPlanReq:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this WorkloadPlanReq.
+        r"""Sets the plan_name of this WorkloadPlanReq.
 
         计划名称
 
@@ -71,7 +71,7 @@ class WorkloadPlanReq:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this WorkloadPlanReq.
+        r"""Gets the logical_cluster_name of this WorkloadPlanReq.
 
         逻辑集群名称
 
@@ -82,7 +82,7 @@ class WorkloadPlanReq:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this WorkloadPlanReq.
+        r"""Sets the logical_cluster_name of this WorkloadPlanReq.
 
         逻辑集群名称
 

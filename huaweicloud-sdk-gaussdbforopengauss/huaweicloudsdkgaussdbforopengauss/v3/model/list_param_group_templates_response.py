@@ -28,7 +28,7 @@ class ListParamGroupTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, configurations=None):
-        """ListParamGroupTemplatesResponse
+        r"""ListParamGroupTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListParamGroupTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListParamGroupTemplatesResponse.
+        r"""Gets the count of this ListParamGroupTemplatesResponse.
 
         参数模板数量。
 
@@ -62,7 +62,7 @@ class ListParamGroupTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListParamGroupTemplatesResponse.
+        r"""Sets the count of this ListParamGroupTemplatesResponse.
 
         参数模板数量。
 
@@ -73,7 +73,7 @@ class ListParamGroupTemplatesResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListParamGroupTemplatesResponse.
+        r"""Gets the configurations of this ListParamGroupTemplatesResponse.
 
         参数模板列表。
 
@@ -84,7 +84,7 @@ class ListParamGroupTemplatesResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListParamGroupTemplatesResponse.
+        r"""Sets the configurations of this ListParamGroupTemplatesResponse.
 
         参数模板列表。
 

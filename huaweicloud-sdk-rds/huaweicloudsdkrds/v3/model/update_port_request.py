@@ -29,7 +29,7 @@ class UpdatePortRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdatePortRequest
+        r"""UpdatePortRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePortRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdatePortRequest.
+        r"""Gets the x_language of this UpdatePortRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdatePortRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdatePortRequest.
+        r"""Sets the x_language of this UpdatePortRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdatePortRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePortRequest.
+        r"""Gets the instance_id of this UpdatePortRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdatePortRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePortRequest.
+        r"""Sets the instance_id of this UpdatePortRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdatePortRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePortRequest.
+        r"""Gets the body of this UpdatePortRequest.
 
         :return: The body of this UpdatePortRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbPortRequest`
@@ -109,7 +109,7 @@ class UpdatePortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePortRequest.
+        r"""Sets the body of this UpdatePortRequest.
 
         :param body: The body of this UpdatePortRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateDbPortRequest`

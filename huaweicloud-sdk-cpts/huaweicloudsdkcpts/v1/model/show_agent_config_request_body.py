@@ -33,7 +33,7 @@ class ShowAgentConfigRequestBody:
     }
 
     def __init__(self, app_id=None, address=None, version=None, agent_id=None, alias=None):
-        """ShowAgentConfigRequestBody
+        r"""ShowAgentConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowAgentConfigRequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAgentConfigRequestBody.
+        r"""Gets the app_id of this ShowAgentConfigRequestBody.
 
         应用id
 
@@ -79,7 +79,7 @@ class ShowAgentConfigRequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAgentConfigRequestBody.
+        r"""Sets the app_id of this ShowAgentConfigRequestBody.
 
         应用id
 
@@ -90,7 +90,7 @@ class ShowAgentConfigRequestBody:
 
     @property
     def address(self):
-        """Gets the address of this ShowAgentConfigRequestBody.
+        r"""Gets the address of this ShowAgentConfigRequestBody.
 
         探针的内网地址
 
@@ -101,7 +101,7 @@ class ShowAgentConfigRequestBody:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ShowAgentConfigRequestBody.
+        r"""Sets the address of this ShowAgentConfigRequestBody.
 
         探针的内网地址
 
@@ -112,7 +112,7 @@ class ShowAgentConfigRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this ShowAgentConfigRequestBody.
+        r"""Gets the version of this ShowAgentConfigRequestBody.
 
         探针的版本
 
@@ -123,7 +123,7 @@ class ShowAgentConfigRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAgentConfigRequestBody.
+        r"""Sets the version of this ShowAgentConfigRequestBody.
 
         探针的版本
 
@@ -134,7 +134,7 @@ class ShowAgentConfigRequestBody:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ShowAgentConfigRequestBody.
+        r"""Gets the agent_id of this ShowAgentConfigRequestBody.
 
         探针id，非必填，不填是注册探针，填了是更新探针配置
 
@@ -145,7 +145,7 @@ class ShowAgentConfigRequestBody:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ShowAgentConfigRequestBody.
+        r"""Sets the agent_id of this ShowAgentConfigRequestBody.
 
         探针id，非必填，不填是注册探针，填了是更新探针配置
 
@@ -156,7 +156,7 @@ class ShowAgentConfigRequestBody:
 
     @property
     def alias(self):
-        """Gets the alias of this ShowAgentConfigRequestBody.
+        r"""Gets the alias of this ShowAgentConfigRequestBody.
 
         探针别名
 
@@ -167,7 +167,7 @@ class ShowAgentConfigRequestBody:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ShowAgentConfigRequestBody.
+        r"""Sets the alias of this ShowAgentConfigRequestBody.
 
         探针别名
 

@@ -28,7 +28,7 @@ class ShowAccessServiceResponse(SdkResponse):
     }
 
     def __init__(self, access_services=None, x_request_id=None):
-        """ShowAccessServiceResponse
+        r"""ShowAccessServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAccessServiceResponse(SdkResponse):
 
     @property
     def access_services(self):
-        """Gets the access_services of this ShowAccessServiceResponse.
+        r"""Gets the access_services of this ShowAccessServiceResponse.
 
         接入服务授权信息列表
 
@@ -62,7 +62,7 @@ class ShowAccessServiceResponse(SdkResponse):
 
     @access_services.setter
     def access_services(self, access_services):
-        """Sets the access_services of this ShowAccessServiceResponse.
+        r"""Sets the access_services of this ShowAccessServiceResponse.
 
         接入服务授权信息列表
 
@@ -73,7 +73,7 @@ class ShowAccessServiceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAccessServiceResponse.
+        r"""Gets the x_request_id of this ShowAccessServiceResponse.
 
         :return: The x_request_id of this ShowAccessServiceResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowAccessServiceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAccessServiceResponse.
+        r"""Sets the x_request_id of this ShowAccessServiceResponse.
 
         :param x_request_id: The x_request_id of this ShowAccessServiceResponse.
         :type x_request_id: str

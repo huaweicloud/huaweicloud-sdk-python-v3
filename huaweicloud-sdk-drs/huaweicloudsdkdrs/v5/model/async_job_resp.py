@@ -33,7 +33,7 @@ class AsyncJobResp:
     }
 
     def __init__(self, async_job_id=None, status=None, domain_name=None, user_name=None, create_time=None):
-        """AsyncJobResp
+        r"""AsyncJobResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AsyncJobResp:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this AsyncJobResp.
+        r"""Gets the async_job_id of this AsyncJobResp.
 
         批量异步创建的任务ID。
 
@@ -77,7 +77,7 @@ class AsyncJobResp:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this AsyncJobResp.
+        r"""Sets the async_job_id of this AsyncJobResp.
 
         批量异步创建的任务ID。
 
@@ -88,7 +88,7 @@ class AsyncJobResp:
 
     @property
     def status(self):
-        """Gets the status of this AsyncJobResp.
+        r"""Gets the status of this AsyncJobResp.
 
         批量异步创建的任务状态。取值： - ASYNC_JOB_VALIDATING：批量异步任务参数校验中。 - ASYNC_JOB_VALIDATE_FAILED：批量异步任务参数校验失败。 - AUTO_PARAM_VALIDATE_SUCCESS：批量异步任务参数校验成功。 - COMMIT_SUCCESS：批量异步任务提交成功。
 
@@ -99,7 +99,7 @@ class AsyncJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AsyncJobResp.
+        r"""Sets the status of this AsyncJobResp.
 
         批量异步创建的任务状态。取值： - ASYNC_JOB_VALIDATING：批量异步任务参数校验中。 - ASYNC_JOB_VALIDATE_FAILED：批量异步任务参数校验失败。 - AUTO_PARAM_VALIDATE_SUCCESS：批量异步任务参数校验成功。 - COMMIT_SUCCESS：批量异步任务提交成功。
 
@@ -110,7 +110,7 @@ class AsyncJobResp:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AsyncJobResp.
+        r"""Gets the domain_name of this AsyncJobResp.
 
         批量异步创建的任务的租户名。
 
@@ -121,7 +121,7 @@ class AsyncJobResp:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AsyncJobResp.
+        r"""Sets the domain_name of this AsyncJobResp.
 
         批量异步创建的任务的租户名。
 
@@ -132,7 +132,7 @@ class AsyncJobResp:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AsyncJobResp.
+        r"""Gets the user_name of this AsyncJobResp.
 
         批量异步创建的任务的用户名。
 
@@ -143,7 +143,7 @@ class AsyncJobResp:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AsyncJobResp.
+        r"""Sets the user_name of this AsyncJobResp.
 
         批量异步创建的任务的用户名。
 
@@ -154,7 +154,7 @@ class AsyncJobResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AsyncJobResp.
+        r"""Gets the create_time of this AsyncJobResp.
 
         批量异步创建的任务的创建时间。
 
@@ -165,7 +165,7 @@ class AsyncJobResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AsyncJobResp.
+        r"""Sets the create_time of this AsyncJobResp.
 
         批量异步创建的任务的创建时间。
 

@@ -29,7 +29,7 @@ class NodeDeviceInfos:
     }
 
     def __init__(self, relation=None, comment=None, node_ids=None):
-        """NodeDeviceInfos
+        r"""NodeDeviceInfos
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class NodeDeviceInfos:
 
     @property
     def relation(self):
-        """Gets the relation of this NodeDeviceInfos.
+        r"""Gets the relation of this NodeDeviceInfos.
 
         终端设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -67,7 +67,7 @@ class NodeDeviceInfos:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this NodeDeviceInfos.
+        r"""Sets the relation of this NodeDeviceInfos.
 
         终端设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -78,7 +78,7 @@ class NodeDeviceInfos:
 
     @property
     def comment(self):
-        """Gets the comment of this NodeDeviceInfos.
+        r"""Gets the comment of this NodeDeviceInfos.
 
         终端设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -89,7 +89,7 @@ class NodeDeviceInfos:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this NodeDeviceInfos.
+        r"""Sets the comment of this NodeDeviceInfos.
 
         终端设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -100,7 +100,7 @@ class NodeDeviceInfos:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this NodeDeviceInfos.
+        r"""Gets the node_ids of this NodeDeviceInfos.
 
         节点ID列表，一个设备只可以被绑定于一个边缘节点。
 
@@ -111,7 +111,7 @@ class NodeDeviceInfos:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this NodeDeviceInfos.
+        r"""Sets the node_ids of this NodeDeviceInfos.
 
         节点ID列表，一个设备只可以被绑定于一个边缘节点。
 

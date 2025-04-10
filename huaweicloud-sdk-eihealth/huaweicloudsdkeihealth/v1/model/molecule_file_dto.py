@@ -27,7 +27,7 @@ class MoleculeFileDto:
     }
 
     def __init__(self, file=None, count=None):
-        """MoleculeFileDto
+        r"""MoleculeFileDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MoleculeFileDto:
 
     @property
     def file(self):
-        """Gets the file of this MoleculeFileDto.
+        r"""Gets the file of this MoleculeFileDto.
 
         :return: The file of this MoleculeFileDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MoleculeFile`
@@ -57,7 +57,7 @@ class MoleculeFileDto:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this MoleculeFileDto.
+        r"""Sets the file of this MoleculeFileDto.
 
         :param file: The file of this MoleculeFileDto.
         :type file: :class:`huaweicloudsdkeihealth.v1.MoleculeFile`
@@ -66,7 +66,7 @@ class MoleculeFileDto:
 
     @property
     def count(self):
-        """Gets the count of this MoleculeFileDto.
+        r"""Gets the count of this MoleculeFileDto.
 
         分子个数
 
@@ -77,7 +77,7 @@ class MoleculeFileDto:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this MoleculeFileDto.
+        r"""Sets the count of this MoleculeFileDto.
 
         分子个数
 

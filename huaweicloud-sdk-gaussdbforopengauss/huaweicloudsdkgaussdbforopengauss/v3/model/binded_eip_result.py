@@ -43,7 +43,7 @@ class BindedEipResult:
     }
 
     def __init__(self, public_ip_id=None, public_ip_type=None, port_id=None, public_ip_address=None, private_ip_address=None, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, applied_at=None):
-        """BindedEipResult
+        r"""BindedEipResult
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class BindedEipResult:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this BindedEipResult.
+        r"""Gets the public_ip_id of this BindedEipResult.
 
         弹性公网ID。
 
@@ -107,7 +107,7 @@ class BindedEipResult:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this BindedEipResult.
+        r"""Sets the public_ip_id of this BindedEipResult.
 
         弹性公网ID。
 
@@ -118,7 +118,7 @@ class BindedEipResult:
 
     @property
     def public_ip_type(self):
-        """Gets the public_ip_type of this BindedEipResult.
+        r"""Gets the public_ip_type of this BindedEipResult.
 
         弹性公网类型。
 
@@ -129,7 +129,7 @@ class BindedEipResult:
 
     @public_ip_type.setter
     def public_ip_type(self, public_ip_type):
-        """Sets the public_ip_type of this BindedEipResult.
+        r"""Sets the public_ip_type of this BindedEipResult.
 
         弹性公网类型。
 
@@ -140,7 +140,7 @@ class BindedEipResult:
 
     @property
     def port_id(self):
-        """Gets the port_id of this BindedEipResult.
+        r"""Gets the port_id of this BindedEipResult.
 
         端口ID。
 
@@ -151,7 +151,7 @@ class BindedEipResult:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this BindedEipResult.
+        r"""Sets the port_id of this BindedEipResult.
 
         端口ID。
 
@@ -162,7 +162,7 @@ class BindedEipResult:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this BindedEipResult.
+        r"""Gets the public_ip_address of this BindedEipResult.
 
         弹性公网IP。
 
@@ -173,7 +173,7 @@ class BindedEipResult:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this BindedEipResult.
+        r"""Sets the public_ip_address of this BindedEipResult.
 
         弹性公网IP。
 
@@ -184,7 +184,7 @@ class BindedEipResult:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this BindedEipResult.
+        r"""Gets the private_ip_address of this BindedEipResult.
 
         内网地址。
 
@@ -195,7 +195,7 @@ class BindedEipResult:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this BindedEipResult.
+        r"""Sets the private_ip_address of this BindedEipResult.
 
         内网地址。
 
@@ -206,7 +206,7 @@ class BindedEipResult:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this BindedEipResult.
+        r"""Gets the bandwidth_id of this BindedEipResult.
 
         带宽ID。
 
@@ -217,7 +217,7 @@ class BindedEipResult:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this BindedEipResult.
+        r"""Sets the bandwidth_id of this BindedEipResult.
 
         带宽ID。
 
@@ -228,7 +228,7 @@ class BindedEipResult:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this BindedEipResult.
+        r"""Gets the bandwidth_name of this BindedEipResult.
 
         带宽名称。
 
@@ -239,7 +239,7 @@ class BindedEipResult:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this BindedEipResult.
+        r"""Sets the bandwidth_name of this BindedEipResult.
 
         带宽名称。
 
@@ -250,7 +250,7 @@ class BindedEipResult:
 
     @property
     def bandwidth_share_type(self):
-        """Gets the bandwidth_share_type of this BindedEipResult.
+        r"""Gets the bandwidth_share_type of this BindedEipResult.
 
         带宽共享类型。
 
@@ -261,7 +261,7 @@ class BindedEipResult:
 
     @bandwidth_share_type.setter
     def bandwidth_share_type(self, bandwidth_share_type):
-        """Sets the bandwidth_share_type of this BindedEipResult.
+        r"""Sets the bandwidth_share_type of this BindedEipResult.
 
         带宽共享类型。
 
@@ -272,7 +272,7 @@ class BindedEipResult:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this BindedEipResult.
+        r"""Gets the bandwidth_size of this BindedEipResult.
 
         带宽大小。
 
@@ -283,7 +283,7 @@ class BindedEipResult:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this BindedEipResult.
+        r"""Sets the bandwidth_size of this BindedEipResult.
 
         带宽大小。
 
@@ -294,7 +294,7 @@ class BindedEipResult:
 
     @property
     def applied_at(self):
-        """Gets the applied_at of this BindedEipResult.
+        r"""Gets the applied_at of this BindedEipResult.
 
         修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+08:00。
 
@@ -305,7 +305,7 @@ class BindedEipResult:
 
     @applied_at.setter
     def applied_at(self, applied_at):
-        """Sets the applied_at of this BindedEipResult.
+        r"""Sets the applied_at of this BindedEipResult.
 
         修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+08:00。
 

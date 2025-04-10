@@ -32,7 +32,7 @@ class CreateProjectModuleResponse(SdkResponse):
     }
 
     def __init__(self, description=None, module_name=None, module_id=None, owner=None):
-        """CreateProjectModuleResponse
+        r"""CreateProjectModuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateProjectModuleResponse.
+        r"""Gets the description of this CreateProjectModuleResponse.
 
         模块描述
 
@@ -76,7 +76,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProjectModuleResponse.
+        r"""Sets the description of this CreateProjectModuleResponse.
 
         模块描述
 
@@ -87,7 +87,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @property
     def module_name(self):
-        """Gets the module_name of this CreateProjectModuleResponse.
+        r"""Gets the module_name of this CreateProjectModuleResponse.
 
         模块名称
 
@@ -98,7 +98,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this CreateProjectModuleResponse.
+        r"""Sets the module_name of this CreateProjectModuleResponse.
 
         模块名称
 
@@ -109,7 +109,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @property
     def module_id(self):
-        """Gets the module_id of this CreateProjectModuleResponse.
+        r"""Gets the module_id of this CreateProjectModuleResponse.
 
         模块id
 
@@ -120,7 +120,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this CreateProjectModuleResponse.
+        r"""Sets the module_id of this CreateProjectModuleResponse.
 
         模块id
 
@@ -131,7 +131,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this CreateProjectModuleResponse.
+        r"""Gets the owner of this CreateProjectModuleResponse.
 
         :return: The owner of this CreateProjectModuleResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`
@@ -140,7 +140,7 @@ class CreateProjectModuleResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CreateProjectModuleResponse.
+        r"""Sets the owner of this CreateProjectModuleResponse.
 
         :param owner: The owner of this CreateProjectModuleResponse.
         :type owner: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`

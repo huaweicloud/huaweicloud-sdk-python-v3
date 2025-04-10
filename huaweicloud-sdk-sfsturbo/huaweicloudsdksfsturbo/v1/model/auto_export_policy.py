@@ -25,7 +25,7 @@ class AutoExportPolicy:
     }
 
     def __init__(self, events=None):
-        """AutoExportPolicy
+        r"""AutoExportPolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AutoExportPolicy:
 
     @property
     def events(self):
-        """Gets the events of this AutoExportPolicy.
+        r"""Gets the events of this AutoExportPolicy.
 
         后端存储自动导出到OBS桶的数据更新类型。 - NEW：表示新增数据，SFS Turbo联动目录下创建的文件，及之后对这些文件进行的元数据和数据修改，会被自动同步到OBS桶里。 - CHANGED：表示修改数据，从OBS桶里导入到SFS Turbo联动目录下的文件，在SFS Turbo上对这些文件所进行的数据和元数据的修改，会被自动同步到OBS桶里。 - DELETED：表示删除数据，在SFS Turbo联动目录下删除文件，OBS桶对应的对象也会被删除，只有被SFS Turbo写入的OBS对象才会被删除。 
 
@@ -54,7 +54,7 @@ class AutoExportPolicy:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this AutoExportPolicy.
+        r"""Sets the events of this AutoExportPolicy.
 
         后端存储自动导出到OBS桶的数据更新类型。 - NEW：表示新增数据，SFS Turbo联动目录下创建的文件，及之后对这些文件进行的元数据和数据修改，会被自动同步到OBS桶里。 - CHANGED：表示修改数据，从OBS桶里导入到SFS Turbo联动目录下的文件，在SFS Turbo上对这些文件所进行的数据和元数据的修改，会被自动同步到OBS桶里。 - DELETED：表示删除数据，在SFS Turbo联动目录下删除文件，OBS桶对应的对象也会被删除，只有被SFS Turbo写入的OBS对象才会被删除。 
 

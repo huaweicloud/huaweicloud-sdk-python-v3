@@ -27,7 +27,7 @@ class CharacterConfig:
     }
 
     def __init__(self, character_id=None, position=None):
-        """CharacterConfig
+        r"""CharacterConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CharacterConfig:
 
     @property
     def character_id(self):
-        """Gets the character_id of this CharacterConfig.
+        r"""Gets the character_id of this CharacterConfig.
 
         形象id
 
@@ -60,7 +60,7 @@ class CharacterConfig:
 
     @character_id.setter
     def character_id(self, character_id):
-        """Sets the character_id of this CharacterConfig.
+        r"""Sets the character_id of this CharacterConfig.
 
         形象id
 
@@ -71,7 +71,7 @@ class CharacterConfig:
 
     @property
     def position(self):
-        """Gets the position of this CharacterConfig.
+        r"""Gets the position of this CharacterConfig.
 
         :return: The position of this CharacterConfig.
         :rtype: :class:`huaweicloudsdkcbs.v1.Position`
@@ -80,7 +80,7 @@ class CharacterConfig:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this CharacterConfig.
+        r"""Sets the position of this CharacterConfig.
 
         :param position: The position of this CharacterConfig.
         :type position: :class:`huaweicloudsdkcbs.v1.Position`

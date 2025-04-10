@@ -61,7 +61,7 @@ class MyanmarIdcardResult:
     }
 
     def __init__(self, side=None, _class=None, nrc_id=None, issue_date=None, name=None, father_name=None, birth=None, bloodlines_religion=None, height=None, blood_group=None, card_id=None, nrc_id_back=None, profession=None, address=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, translation_info=None):
-        """MyanmarIdcardResult
+        r"""MyanmarIdcardResult
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class MyanmarIdcardResult:
 
     @property
     def side(self):
-        """Gets the side of this MyanmarIdcardResult.
+        r"""Gets the side of this MyanmarIdcardResult.
 
         标示正面还是反面，取值为front或back。 
 
@@ -180,7 +180,7 @@ class MyanmarIdcardResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this MyanmarIdcardResult.
+        r"""Sets the side of this MyanmarIdcardResult.
 
         标示正面还是反面，取值为front或back。 
 
@@ -191,7 +191,7 @@ class MyanmarIdcardResult:
 
     @property
     def _class(self):
-        """Gets the _class of this MyanmarIdcardResult.
+        r"""Gets the _class of this MyanmarIdcardResult.
 
         身份证类型。取值如下所示： - new_version：新版身份证 - old_version：旧版 
 
@@ -202,7 +202,7 @@ class MyanmarIdcardResult:
 
     @_class.setter
     def _class(self, _class):
-        """Sets the _class of this MyanmarIdcardResult.
+        r"""Sets the _class of this MyanmarIdcardResult.
 
         身份证类型。取值如下所示： - new_version：新版身份证 - old_version：旧版 
 
@@ -213,7 +213,7 @@ class MyanmarIdcardResult:
 
     @property
     def nrc_id(self):
-        """Gets the nrc_id of this MyanmarIdcardResult.
+        r"""Gets the nrc_id of this MyanmarIdcardResult.
 
         身份证号码。 
 
@@ -224,7 +224,7 @@ class MyanmarIdcardResult:
 
     @nrc_id.setter
     def nrc_id(self, nrc_id):
-        """Sets the nrc_id of this MyanmarIdcardResult.
+        r"""Sets the nrc_id of this MyanmarIdcardResult.
 
         身份证号码。 
 
@@ -235,7 +235,7 @@ class MyanmarIdcardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this MyanmarIdcardResult.
+        r"""Gets the issue_date of this MyanmarIdcardResult.
 
         签发日期。 
 
@@ -246,7 +246,7 @@ class MyanmarIdcardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this MyanmarIdcardResult.
+        r"""Sets the issue_date of this MyanmarIdcardResult.
 
         签发日期。 
 
@@ -257,7 +257,7 @@ class MyanmarIdcardResult:
 
     @property
     def name(self):
-        """Gets the name of this MyanmarIdcardResult.
+        r"""Gets the name of this MyanmarIdcardResult.
 
         姓名。 
 
@@ -268,7 +268,7 @@ class MyanmarIdcardResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MyanmarIdcardResult.
+        r"""Sets the name of this MyanmarIdcardResult.
 
         姓名。 
 
@@ -279,7 +279,7 @@ class MyanmarIdcardResult:
 
     @property
     def father_name(self):
-        """Gets the father_name of this MyanmarIdcardResult.
+        r"""Gets the father_name of this MyanmarIdcardResult.
 
         父亲名字。 
 
@@ -290,7 +290,7 @@ class MyanmarIdcardResult:
 
     @father_name.setter
     def father_name(self, father_name):
-        """Sets the father_name of this MyanmarIdcardResult.
+        r"""Sets the father_name of this MyanmarIdcardResult.
 
         父亲名字。 
 
@@ -301,7 +301,7 @@ class MyanmarIdcardResult:
 
     @property
     def birth(self):
-        """Gets the birth of this MyanmarIdcardResult.
+        r"""Gets the birth of this MyanmarIdcardResult.
 
         出生日期。 
 
@@ -312,7 +312,7 @@ class MyanmarIdcardResult:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this MyanmarIdcardResult.
+        r"""Sets the birth of this MyanmarIdcardResult.
 
         出生日期。 
 
@@ -323,7 +323,7 @@ class MyanmarIdcardResult:
 
     @property
     def bloodlines_religion(self):
-        """Gets the bloodlines_religion of this MyanmarIdcardResult.
+        r"""Gets the bloodlines_religion of this MyanmarIdcardResult.
 
         族群或宗教。 
 
@@ -334,7 +334,7 @@ class MyanmarIdcardResult:
 
     @bloodlines_religion.setter
     def bloodlines_religion(self, bloodlines_religion):
-        """Sets the bloodlines_religion of this MyanmarIdcardResult.
+        r"""Sets the bloodlines_religion of this MyanmarIdcardResult.
 
         族群或宗教。 
 
@@ -345,7 +345,7 @@ class MyanmarIdcardResult:
 
     @property
     def height(self):
-        """Gets the height of this MyanmarIdcardResult.
+        r"""Gets the height of this MyanmarIdcardResult.
 
         身高。 
 
@@ -356,7 +356,7 @@ class MyanmarIdcardResult:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MyanmarIdcardResult.
+        r"""Sets the height of this MyanmarIdcardResult.
 
         身高。 
 
@@ -367,7 +367,7 @@ class MyanmarIdcardResult:
 
     @property
     def blood_group(self):
-        """Gets the blood_group of this MyanmarIdcardResult.
+        r"""Gets the blood_group of this MyanmarIdcardResult.
 
         血型。 
 
@@ -378,7 +378,7 @@ class MyanmarIdcardResult:
 
     @blood_group.setter
     def blood_group(self, blood_group):
-        """Sets the blood_group of this MyanmarIdcardResult.
+        r"""Sets the blood_group of this MyanmarIdcardResult.
 
         血型。 
 
@@ -389,7 +389,7 @@ class MyanmarIdcardResult:
 
     @property
     def card_id(self):
-        """Gets the card_id of this MyanmarIdcardResult.
+        r"""Gets the card_id of this MyanmarIdcardResult.
 
         身份证的卡号（背面）。 
 
@@ -400,7 +400,7 @@ class MyanmarIdcardResult:
 
     @card_id.setter
     def card_id(self, card_id):
-        """Sets the card_id of this MyanmarIdcardResult.
+        r"""Sets the card_id of this MyanmarIdcardResult.
 
         身份证的卡号（背面）。 
 
@@ -411,7 +411,7 @@ class MyanmarIdcardResult:
 
     @property
     def nrc_id_back(self):
-        """Gets the nrc_id_back of this MyanmarIdcardResult.
+        r"""Gets the nrc_id_back of this MyanmarIdcardResult.
 
         背面的身份证号码。 
 
@@ -422,7 +422,7 @@ class MyanmarIdcardResult:
 
     @nrc_id_back.setter
     def nrc_id_back(self, nrc_id_back):
-        """Sets the nrc_id_back of this MyanmarIdcardResult.
+        r"""Sets the nrc_id_back of this MyanmarIdcardResult.
 
         背面的身份证号码。 
 
@@ -433,7 +433,7 @@ class MyanmarIdcardResult:
 
     @property
     def profession(self):
-        """Gets the profession of this MyanmarIdcardResult.
+        r"""Gets the profession of this MyanmarIdcardResult.
 
         职业。 
 
@@ -444,7 +444,7 @@ class MyanmarIdcardResult:
 
     @profession.setter
     def profession(self, profession):
-        """Sets the profession of this MyanmarIdcardResult.
+        r"""Sets the profession of this MyanmarIdcardResult.
 
         职业。 
 
@@ -455,7 +455,7 @@ class MyanmarIdcardResult:
 
     @property
     def address(self):
-        """Gets the address of this MyanmarIdcardResult.
+        r"""Gets the address of this MyanmarIdcardResult.
 
         地址。 
 
@@ -466,7 +466,7 @@ class MyanmarIdcardResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MyanmarIdcardResult.
+        r"""Sets the address of this MyanmarIdcardResult.
 
         地址。 
 
@@ -477,7 +477,7 @@ class MyanmarIdcardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this MyanmarIdcardResult.
+        r"""Gets the confidence of this MyanmarIdcardResult.
 
         :return: The confidence of this MyanmarIdcardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`
@@ -486,7 +486,7 @@ class MyanmarIdcardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this MyanmarIdcardResult.
+        r"""Sets the confidence of this MyanmarIdcardResult.
 
         :param confidence: The confidence of this MyanmarIdcardResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`
@@ -495,7 +495,7 @@ class MyanmarIdcardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this MyanmarIdcardResult.
+        r"""Gets the portrait_image of this MyanmarIdcardResult.
 
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -506,7 +506,7 @@ class MyanmarIdcardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this MyanmarIdcardResult.
+        r"""Sets the portrait_image of this MyanmarIdcardResult.
 
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -517,7 +517,7 @@ class MyanmarIdcardResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this MyanmarIdcardResult.
+        r"""Gets the portrait_location of this MyanmarIdcardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
 
@@ -528,7 +528,7 @@ class MyanmarIdcardResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this MyanmarIdcardResult.
+        r"""Sets the portrait_location of this MyanmarIdcardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
 
@@ -539,7 +539,7 @@ class MyanmarIdcardResult:
 
     @property
     def idcard_type(self):
-        """Gets the idcard_type of this MyanmarIdcardResult.
+        r"""Gets the idcard_type of this MyanmarIdcardResult.
 
         身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
@@ -550,7 +550,7 @@ class MyanmarIdcardResult:
 
     @idcard_type.setter
     def idcard_type(self, idcard_type):
-        """Sets the idcard_type of this MyanmarIdcardResult.
+        r"""Sets the idcard_type of this MyanmarIdcardResult.
 
         身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
@@ -561,7 +561,7 @@ class MyanmarIdcardResult:
 
     @property
     def translation_info(self):
-        """Gets the translation_info of this MyanmarIdcardResult.
+        r"""Gets the translation_info of this MyanmarIdcardResult.
 
         :return: The translation_info of this MyanmarIdcardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.MyanmarIdcardTranslationInfo`
@@ -570,7 +570,7 @@ class MyanmarIdcardResult:
 
     @translation_info.setter
     def translation_info(self, translation_info):
-        """Sets the translation_info of this MyanmarIdcardResult.
+        r"""Sets the translation_info of this MyanmarIdcardResult.
 
         :param translation_info: The translation_info of this MyanmarIdcardResult.
         :type translation_info: :class:`huaweicloudsdkocr.v1.MyanmarIdcardTranslationInfo`

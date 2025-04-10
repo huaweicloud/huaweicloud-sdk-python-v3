@@ -38,7 +38,7 @@ class ShowResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_name=None, group_id=None, create_time=None, enterprise_project_id=None, type=None, association_ep_ids=None, tags=None):
-        """ShowResourceGroupResponse
+        r"""ShowResourceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowResourceGroupResponse.
+        r"""Gets the group_name of this ShowResourceGroupResponse.
 
         资源分组的名称
 
@@ -97,7 +97,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowResourceGroupResponse.
+        r"""Sets the group_name of this ShowResourceGroupResponse.
 
         资源分组的名称
 
@@ -108,7 +108,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowResourceGroupResponse.
+        r"""Gets the group_id of this ShowResourceGroupResponse.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -119,7 +119,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowResourceGroupResponse.
+        r"""Sets the group_id of this ShowResourceGroupResponse.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -130,7 +130,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowResourceGroupResponse.
+        r"""Gets the create_time of this ShowResourceGroupResponse.
 
         资源分组的创建时间
 
@@ -141,7 +141,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowResourceGroupResponse.
+        r"""Sets the create_time of this ShowResourceGroupResponse.
 
         资源分组的创建时间
 
@@ -152,7 +152,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowResourceGroupResponse.
+        r"""Gets the enterprise_project_id of this ShowResourceGroupResponse.
 
         资源分组归属企业项目ID
 
@@ -163,7 +163,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowResourceGroupResponse.
+        r"""Sets the enterprise_project_id of this ShowResourceGroupResponse.
 
         资源分组归属企业项目ID
 
@@ -174,7 +174,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowResourceGroupResponse.
+        r"""Gets the type of this ShowResourceGroupResponse.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
@@ -185,7 +185,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResourceGroupResponse.
+        r"""Sets the type of this ShowResourceGroupResponse.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加）
 
@@ -196,7 +196,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def association_ep_ids(self):
-        """Gets the association_ep_ids of this ShowResourceGroupResponse.
+        r"""Gets the association_ep_ids of this ShowResourceGroupResponse.
 
         该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
 
@@ -207,7 +207,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @association_ep_ids.setter
     def association_ep_ids(self, association_ep_ids):
-        """Sets the association_ep_ids of this ShowResourceGroupResponse.
+        r"""Sets the association_ep_ids of this ShowResourceGroupResponse.
 
         该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
 
@@ -218,7 +218,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowResourceGroupResponse.
+        r"""Gets the tags of this ShowResourceGroupResponse.
 
         标签动态匹配时的关联标签,type为TAG时该字段不为空
 
@@ -229,7 +229,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowResourceGroupResponse.
+        r"""Sets the tags of this ShowResourceGroupResponse.
 
         标签动态匹配时的关联标签,type为TAG时该字段不为空
 

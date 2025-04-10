@@ -27,7 +27,7 @@ class CopyHostsToTargetRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """CopyHostsToTargetRequest
+        r"""CopyHostsToTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyHostsToTargetRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CopyHostsToTargetRequest.
+        r"""Gets the group_id of this CopyHostsToTargetRequest.
 
         源主机集群id
 
@@ -60,7 +60,7 @@ class CopyHostsToTargetRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CopyHostsToTargetRequest.
+        r"""Sets the group_id of this CopyHostsToTargetRequest.
 
         源主机集群id
 
@@ -71,7 +71,7 @@ class CopyHostsToTargetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyHostsToTargetRequest.
+        r"""Gets the body of this CopyHostsToTargetRequest.
 
         :return: The body of this CopyHostsToTargetRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostsCopyRequest`
@@ -80,7 +80,7 @@ class CopyHostsToTargetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyHostsToTargetRequest.
+        r"""Sets the body of this CopyHostsToTargetRequest.
 
         :param body: The body of this CopyHostsToTargetRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostsCopyRequest`

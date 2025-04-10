@@ -26,7 +26,7 @@ class DeleteMemberInviteResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteMemberInviteResponse
+        r"""DeleteMemberInviteResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMemberInviteResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteMemberInviteResponse.
+        r"""Gets the result of this DeleteMemberInviteResponse.
 
         请求成功的结果
 
@@ -55,7 +55,7 @@ class DeleteMemberInviteResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteMemberInviteResponse.
+        r"""Sets the result of this DeleteMemberInviteResponse.
 
         请求成功的结果
 

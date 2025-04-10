@@ -27,7 +27,7 @@ class DeleteRedisDisabledCommandsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteRedisDisabledCommandsRequest
+        r"""DeleteRedisDisabledCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteRedisDisabledCommandsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteRedisDisabledCommandsRequest.
+        r"""Gets the instance_id of this DeleteRedisDisabledCommandsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class DeleteRedisDisabledCommandsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteRedisDisabledCommandsRequest.
+        r"""Sets the instance_id of this DeleteRedisDisabledCommandsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class DeleteRedisDisabledCommandsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRedisDisabledCommandsRequest.
+        r"""Gets the body of this DeleteRedisDisabledCommandsRequest.
 
         :return: The body of this DeleteRedisDisabledCommandsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteRedisDisabledCommandsRequestBody`
@@ -80,7 +80,7 @@ class DeleteRedisDisabledCommandsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRedisDisabledCommandsRequest.
+        r"""Sets the body of this DeleteRedisDisabledCommandsRequest.
 
         :param body: The body of this DeleteRedisDisabledCommandsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteRedisDisabledCommandsRequestBody`

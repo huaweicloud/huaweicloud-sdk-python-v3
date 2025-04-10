@@ -29,7 +29,7 @@ class HostClusterRequest:
     }
 
     def __init__(self, name=None, description=None, slave_cluster_id=None):
-        """HostClusterRequest
+        r"""HostClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class HostClusterRequest:
 
     @property
     def name(self):
-        """Gets the name of this HostClusterRequest.
+        r"""Gets the name of this HostClusterRequest.
 
         主机集群名称
 
@@ -67,7 +67,7 @@ class HostClusterRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HostClusterRequest.
+        r"""Sets the name of this HostClusterRequest.
 
         主机集群名称
 
@@ -78,7 +78,7 @@ class HostClusterRequest:
 
     @property
     def description(self):
-        """Gets the description of this HostClusterRequest.
+        r"""Gets the description of this HostClusterRequest.
 
         主机集群描述
 
@@ -89,7 +89,7 @@ class HostClusterRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HostClusterRequest.
+        r"""Sets the description of this HostClusterRequest.
 
         主机集群描述
 
@@ -100,7 +100,7 @@ class HostClusterRequest:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this HostClusterRequest.
+        r"""Gets the slave_cluster_id of this HostClusterRequest.
 
         slave集群id，默认为null时使用八爪鱼slave集群，用户自定义slave时为slave集群id
 
@@ -111,7 +111,7 @@ class HostClusterRequest:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this HostClusterRequest.
+        r"""Sets the slave_cluster_id of this HostClusterRequest.
 
         slave集群id，默认为null时使用八爪鱼slave集群，用户自定义slave时为slave集群id
 

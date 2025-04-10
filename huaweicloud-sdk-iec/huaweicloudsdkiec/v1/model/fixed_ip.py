@@ -27,7 +27,7 @@ class FixedIp:
     }
 
     def __init__(self, subnet_id=None, ip_address=None):
-        """FixedIp
+        r"""FixedIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FixedIp:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this FixedIp.
+        r"""Gets the subnet_id of this FixedIp.
 
         所属子网ID
 
@@ -61,7 +61,7 @@ class FixedIp:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this FixedIp.
+        r"""Sets the subnet_id of this FixedIp.
 
         所属子网ID
 
@@ -72,7 +72,7 @@ class FixedIp:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this FixedIp.
+        r"""Gets the ip_address of this FixedIp.
 
         端口IP地址
 
@@ -83,7 +83,7 @@ class FixedIp:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this FixedIp.
+        r"""Sets the ip_address of this FixedIp.
 
         端口IP地址
 

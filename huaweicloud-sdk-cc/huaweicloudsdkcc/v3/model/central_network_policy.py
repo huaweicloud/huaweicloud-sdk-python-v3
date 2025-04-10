@@ -41,7 +41,7 @@ class CentralNetworkPolicy:
     }
 
     def __init__(self, id=None, created_at=None, domain_id=None, state=None, central_network_id=None, document_template_version=None, is_applied=None, version=None, document=None):
-        """CentralNetworkPolicy
+        r"""CentralNetworkPolicy
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class CentralNetworkPolicy:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkPolicy.
+        r"""Gets the id of this CentralNetworkPolicy.
 
         实例ID。
 
@@ -101,7 +101,7 @@ class CentralNetworkPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkPolicy.
+        r"""Sets the id of this CentralNetworkPolicy.
 
         实例ID。
 
@@ -112,7 +112,7 @@ class CentralNetworkPolicy:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CentralNetworkPolicy.
+        r"""Gets the created_at of this CentralNetworkPolicy.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -123,7 +123,7 @@ class CentralNetworkPolicy:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CentralNetworkPolicy.
+        r"""Sets the created_at of this CentralNetworkPolicy.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -134,7 +134,7 @@ class CentralNetworkPolicy:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CentralNetworkPolicy.
+        r"""Gets the domain_id of this CentralNetworkPolicy.
 
         实例所属账号ID。
 
@@ -145,7 +145,7 @@ class CentralNetworkPolicy:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CentralNetworkPolicy.
+        r"""Sets the domain_id of this CentralNetworkPolicy.
 
         实例所属账号ID。
 
@@ -156,7 +156,7 @@ class CentralNetworkPolicy:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetworkPolicy.
+        r"""Gets the state of this CentralNetworkPolicy.
 
         :return: The state of this CentralNetworkPolicy.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
@@ -165,7 +165,7 @@ class CentralNetworkPolicy:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetworkPolicy.
+        r"""Sets the state of this CentralNetworkPolicy.
 
         :param state: The state of this CentralNetworkPolicy.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
@@ -174,7 +174,7 @@ class CentralNetworkPolicy:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CentralNetworkPolicy.
+        r"""Gets the central_network_id of this CentralNetworkPolicy.
 
         中心网络ID。
 
@@ -185,7 +185,7 @@ class CentralNetworkPolicy:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CentralNetworkPolicy.
+        r"""Sets the central_network_id of this CentralNetworkPolicy.
 
         中心网络ID。
 
@@ -196,7 +196,7 @@ class CentralNetworkPolicy:
 
     @property
     def document_template_version(self):
-        """Gets the document_template_version of this CentralNetworkPolicy.
+        r"""Gets the document_template_version of this CentralNetworkPolicy.
 
         :return: The document_template_version of this CentralNetworkPolicy.
         :rtype: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
@@ -205,7 +205,7 @@ class CentralNetworkPolicy:
 
     @document_template_version.setter
     def document_template_version(self, document_template_version):
-        """Sets the document_template_version of this CentralNetworkPolicy.
+        r"""Sets the document_template_version of this CentralNetworkPolicy.
 
         :param document_template_version: The document_template_version of this CentralNetworkPolicy.
         :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
@@ -214,7 +214,7 @@ class CentralNetworkPolicy:
 
     @property
     def is_applied(self):
-        """Gets the is_applied of this CentralNetworkPolicy.
+        r"""Gets the is_applied of this CentralNetworkPolicy.
 
         是否被应用。
 
@@ -225,7 +225,7 @@ class CentralNetworkPolicy:
 
     @is_applied.setter
     def is_applied(self, is_applied):
-        """Sets the is_applied of this CentralNetworkPolicy.
+        r"""Sets the is_applied of this CentralNetworkPolicy.
 
         是否被应用。
 
@@ -236,7 +236,7 @@ class CentralNetworkPolicy:
 
     @property
     def version(self):
-        """Gets the version of this CentralNetworkPolicy.
+        r"""Gets the version of this CentralNetworkPolicy.
 
         中心网络策略的版本。
 
@@ -247,7 +247,7 @@ class CentralNetworkPolicy:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CentralNetworkPolicy.
+        r"""Sets the version of this CentralNetworkPolicy.
 
         中心网络策略的版本。
 
@@ -258,7 +258,7 @@ class CentralNetworkPolicy:
 
     @property
     def document(self):
-        """Gets the document of this CentralNetworkPolicy.
+        r"""Gets the document of this CentralNetworkPolicy.
 
         :return: The document of this CentralNetworkPolicy.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyDocument`
@@ -267,7 +267,7 @@ class CentralNetworkPolicy:
 
     @document.setter
     def document(self, document):
-        """Sets the document of this CentralNetworkPolicy.
+        r"""Sets the document of this CentralNetworkPolicy.
 
         :param document: The document of this CentralNetworkPolicy.
         :type document: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyDocument`

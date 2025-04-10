@@ -27,7 +27,7 @@ class ScheduleTaskTargetTypeEnum:
     }
 
     def __init__(self):
-        """ScheduleTaskTargetTypeEnum
+        r"""ScheduleTaskTargetTypeEnum
 
         The model defined in huaweicloud sdk
 

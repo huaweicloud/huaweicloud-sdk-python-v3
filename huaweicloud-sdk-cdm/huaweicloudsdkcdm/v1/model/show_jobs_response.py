@@ -32,7 +32,7 @@ class ShowJobsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, jobs=None, page_no=None, page_size=None):
-        """ShowJobsResponse
+        r"""ShowJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowJobsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowJobsResponse.
+        r"""Gets the total of this ShowJobsResponse.
 
         作业数,查询单个作业时为0
 
@@ -76,7 +76,7 @@ class ShowJobsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowJobsResponse.
+        r"""Sets the total of this ShowJobsResponse.
 
         作业数,查询单个作业时为0
 
@@ -87,7 +87,7 @@ class ShowJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ShowJobsResponse.
+        r"""Gets the jobs of this ShowJobsResponse.
 
         作业列表，请参见jobs参数说明
 
@@ -98,7 +98,7 @@ class ShowJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ShowJobsResponse.
+        r"""Sets the jobs of this ShowJobsResponse.
 
         作业列表，请参见jobs参数说明
 
@@ -109,7 +109,7 @@ class ShowJobsResponse(SdkResponse):
 
     @property
     def page_no(self):
-        """Gets the page_no of this ShowJobsResponse.
+        r"""Gets the page_no of this ShowJobsResponse.
 
         返回指定页号的作业
 
@@ -120,7 +120,7 @@ class ShowJobsResponse(SdkResponse):
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ShowJobsResponse.
+        r"""Sets the page_no of this ShowJobsResponse.
 
         返回指定页号的作业
 
@@ -131,7 +131,7 @@ class ShowJobsResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowJobsResponse.
+        r"""Gets the page_size of this ShowJobsResponse.
 
         每页作业数
 
@@ -142,7 +142,7 @@ class ShowJobsResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowJobsResponse.
+        r"""Sets the page_size of this ShowJobsResponse.
 
         每页作业数
 

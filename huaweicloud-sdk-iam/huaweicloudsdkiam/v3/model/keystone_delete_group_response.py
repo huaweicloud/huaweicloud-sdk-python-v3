@@ -24,7 +24,7 @@ class KeystoneDeleteGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneDeleteGroupResponse
+        r"""KeystoneDeleteGroupResponse
 
         The model defined in huaweicloud sdk
 

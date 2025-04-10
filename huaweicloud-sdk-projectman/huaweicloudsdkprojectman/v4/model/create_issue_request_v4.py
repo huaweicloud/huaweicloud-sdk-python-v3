@@ -59,7 +59,7 @@ class CreateIssueRequestV4:
     }
 
     def __init__(self, actual_work_hours=None, assigned_id=None, begin_time=None, description=None, developer_id=None, domain_id=None, done_ratio=None, end_time=None, expected_work_hours=None, iteration_id=None, module_id=None, name=None, parent_issue_id=None, priority_id=None, severity_id=None, status_id=None, tracker_id=None, new_custom_fields=None):
-        """CreateIssueRequestV4
+        r"""CreateIssueRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -159,7 +159,7 @@ class CreateIssueRequestV4:
 
     @property
     def actual_work_hours(self):
-        """Gets the actual_work_hours of this CreateIssueRequestV4.
+        r"""Gets the actual_work_hours of this CreateIssueRequestV4.
 
         实际工时
 
@@ -170,7 +170,7 @@ class CreateIssueRequestV4:
 
     @actual_work_hours.setter
     def actual_work_hours(self, actual_work_hours):
-        """Sets the actual_work_hours of this CreateIssueRequestV4.
+        r"""Sets the actual_work_hours of this CreateIssueRequestV4.
 
         实际工时
 
@@ -181,7 +181,7 @@ class CreateIssueRequestV4:
 
     @property
     def assigned_id(self):
-        """Gets the assigned_id of this CreateIssueRequestV4.
+        r"""Gets the assigned_id of this CreateIssueRequestV4.
 
         处理人id,对应用户信息的数字id
 
@@ -192,7 +192,7 @@ class CreateIssueRequestV4:
 
     @assigned_id.setter
     def assigned_id(self, assigned_id):
-        """Sets the assigned_id of this CreateIssueRequestV4.
+        r"""Sets the assigned_id of this CreateIssueRequestV4.
 
         处理人id,对应用户信息的数字id
 
@@ -203,7 +203,7 @@ class CreateIssueRequestV4:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this CreateIssueRequestV4.
+        r"""Gets the begin_time of this CreateIssueRequestV4.
 
         开始时间，年-月-日
 
@@ -214,7 +214,7 @@ class CreateIssueRequestV4:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this CreateIssueRequestV4.
+        r"""Sets the begin_time of this CreateIssueRequestV4.
 
         开始时间，年-月-日
 
@@ -225,7 +225,7 @@ class CreateIssueRequestV4:
 
     @property
     def description(self):
-        """Gets the description of this CreateIssueRequestV4.
+        r"""Gets the description of this CreateIssueRequestV4.
 
         描述信息
 
@@ -236,7 +236,7 @@ class CreateIssueRequestV4:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIssueRequestV4.
+        r"""Sets the description of this CreateIssueRequestV4.
 
         描述信息
 
@@ -247,7 +247,7 @@ class CreateIssueRequestV4:
 
     @property
     def developer_id(self):
-        """Gets the developer_id of this CreateIssueRequestV4.
+        r"""Gets the developer_id of this CreateIssueRequestV4.
 
         开发者id,对应用户信息的数字id
 
@@ -258,7 +258,7 @@ class CreateIssueRequestV4:
 
     @developer_id.setter
     def developer_id(self, developer_id):
-        """Sets the developer_id of this CreateIssueRequestV4.
+        r"""Sets the developer_id of this CreateIssueRequestV4.
 
         开发者id,对应用户信息的数字id
 
@@ -269,7 +269,7 @@ class CreateIssueRequestV4:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateIssueRequestV4.
+        r"""Gets the domain_id of this CreateIssueRequestV4.
 
         id 领域, 14 '性能', 15 '功能', 16 '可靠性' 17 '网络安全' 18 '可维护性' 19 '其他DFX' 20 '可用性'
 
@@ -280,7 +280,7 @@ class CreateIssueRequestV4:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateIssueRequestV4.
+        r"""Sets the domain_id of this CreateIssueRequestV4.
 
         id 领域, 14 '性能', 15 '功能', 16 '可靠性' 17 '网络安全' 18 '可维护性' 19 '其他DFX' 20 '可用性'
 
@@ -291,7 +291,7 @@ class CreateIssueRequestV4:
 
     @property
     def done_ratio(self):
-        """Gets the done_ratio of this CreateIssueRequestV4.
+        r"""Gets the done_ratio of this CreateIssueRequestV4.
 
         工作项进度值
 
@@ -302,7 +302,7 @@ class CreateIssueRequestV4:
 
     @done_ratio.setter
     def done_ratio(self, done_ratio):
-        """Sets the done_ratio of this CreateIssueRequestV4.
+        r"""Sets the done_ratio of this CreateIssueRequestV4.
 
         工作项进度值
 
@@ -313,7 +313,7 @@ class CreateIssueRequestV4:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateIssueRequestV4.
+        r"""Gets the end_time of this CreateIssueRequestV4.
 
         结束时间，年-月-日
 
@@ -324,7 +324,7 @@ class CreateIssueRequestV4:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateIssueRequestV4.
+        r"""Sets the end_time of this CreateIssueRequestV4.
 
         结束时间，年-月-日
 
@@ -335,7 +335,7 @@ class CreateIssueRequestV4:
 
     @property
     def expected_work_hours(self):
-        """Gets the expected_work_hours of this CreateIssueRequestV4.
+        r"""Gets the expected_work_hours of this CreateIssueRequestV4.
 
         预计工时
 
@@ -346,7 +346,7 @@ class CreateIssueRequestV4:
 
     @expected_work_hours.setter
     def expected_work_hours(self, expected_work_hours):
-        """Sets the expected_work_hours of this CreateIssueRequestV4.
+        r"""Sets the expected_work_hours of this CreateIssueRequestV4.
 
         预计工时
 
@@ -357,7 +357,7 @@ class CreateIssueRequestV4:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this CreateIssueRequestV4.
+        r"""Gets the iteration_id of this CreateIssueRequestV4.
 
         迭代id
 
@@ -368,7 +368,7 @@ class CreateIssueRequestV4:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this CreateIssueRequestV4.
+        r"""Sets the iteration_id of this CreateIssueRequestV4.
 
         迭代id
 
@@ -379,7 +379,7 @@ class CreateIssueRequestV4:
 
     @property
     def module_id(self):
-        """Gets the module_id of this CreateIssueRequestV4.
+        r"""Gets the module_id of this CreateIssueRequestV4.
 
         模块id
 
@@ -390,7 +390,7 @@ class CreateIssueRequestV4:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this CreateIssueRequestV4.
+        r"""Sets the module_id of this CreateIssueRequestV4.
 
         模块id
 
@@ -401,7 +401,7 @@ class CreateIssueRequestV4:
 
     @property
     def name(self):
-        """Gets the name of this CreateIssueRequestV4.
+        r"""Gets the name of this CreateIssueRequestV4.
 
         标题
 
@@ -412,7 +412,7 @@ class CreateIssueRequestV4:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIssueRequestV4.
+        r"""Sets the name of this CreateIssueRequestV4.
 
         标题
 
@@ -423,7 +423,7 @@ class CreateIssueRequestV4:
 
     @property
     def parent_issue_id(self):
-        """Gets the parent_issue_id of this CreateIssueRequestV4.
+        r"""Gets the parent_issue_id of this CreateIssueRequestV4.
 
         父工作项的id,创建子工作项时必填，父工作项的类型tracker_id不能为2,3
 
@@ -434,7 +434,7 @@ class CreateIssueRequestV4:
 
     @parent_issue_id.setter
     def parent_issue_id(self, parent_issue_id):
-        """Sets the parent_issue_id of this CreateIssueRequestV4.
+        r"""Sets the parent_issue_id of this CreateIssueRequestV4.
 
         父工作项的id,创建子工作项时必填，父工作项的类型tracker_id不能为2,3
 
@@ -445,7 +445,7 @@ class CreateIssueRequestV4:
 
     @property
     def priority_id(self):
-        """Gets the priority_id of this CreateIssueRequestV4.
+        r"""Gets the priority_id of this CreateIssueRequestV4.
 
         优先级,   1 低,   2 中,   3 高,
 
@@ -456,7 +456,7 @@ class CreateIssueRequestV4:
 
     @priority_id.setter
     def priority_id(self, priority_id):
-        """Sets the priority_id of this CreateIssueRequestV4.
+        r"""Sets the priority_id of this CreateIssueRequestV4.
 
         优先级,   1 低,   2 中,   3 高,
 
@@ -467,7 +467,7 @@ class CreateIssueRequestV4:
 
     @property
     def severity_id(self):
-        """Gets the severity_id of this CreateIssueRequestV4.
+        r"""Gets the severity_id of this CreateIssueRequestV4.
 
         重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
@@ -478,7 +478,7 @@ class CreateIssueRequestV4:
 
     @severity_id.setter
     def severity_id(self, severity_id):
-        """Sets the severity_id of this CreateIssueRequestV4.
+        r"""Sets the severity_id of this CreateIssueRequestV4.
 
         重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
@@ -489,7 +489,7 @@ class CreateIssueRequestV4:
 
     @property
     def status_id(self):
-        """Gets the status_id of this CreateIssueRequestV4.
+        r"""Gets the status_id of this CreateIssueRequestV4.
 
         状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
@@ -500,7 +500,7 @@ class CreateIssueRequestV4:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this CreateIssueRequestV4.
+        r"""Sets the status_id of this CreateIssueRequestV4.
 
         状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
@@ -511,7 +511,7 @@ class CreateIssueRequestV4:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this CreateIssueRequestV4.
+        r"""Gets the tracker_id of this CreateIssueRequestV4.
 
         工作项类型, 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
@@ -522,7 +522,7 @@ class CreateIssueRequestV4:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this CreateIssueRequestV4.
+        r"""Sets the tracker_id of this CreateIssueRequestV4.
 
         工作项类型, 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
@@ -533,7 +533,7 @@ class CreateIssueRequestV4:
 
     @property
     def new_custom_fields(self):
-        """Gets the new_custom_fields of this CreateIssueRequestV4.
+        r"""Gets the new_custom_fields of this CreateIssueRequestV4.
 
         用户自定义字段
 
@@ -544,7 +544,7 @@ class CreateIssueRequestV4:
 
     @new_custom_fields.setter
     def new_custom_fields(self, new_custom_fields):
-        """Sets the new_custom_fields of this CreateIssueRequestV4.
+        r"""Sets the new_custom_fields of this CreateIssueRequestV4.
 
         用户自定义字段
 

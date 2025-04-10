@@ -34,7 +34,7 @@ class EipAsyncClient(Client):
         return client_builder
 
     def add_publicips_into_shared_bandwidth_async(self, request):
-        """共享带宽插入弹性公网IP
+        r"""共享带宽插入弹性公网IP
 
         共享带宽插入弹性公网IP。
         
@@ -101,7 +101,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_create_shared_bandwidths_async(self, request):
-        """批量创建共享带宽
+        r"""批量创建共享带宽
 
         批量创建共享带宽。
         
@@ -166,7 +166,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_modify_bandwidth_async(self, request):
-        """批量更新带宽
+        r"""批量更新带宽
 
         批量更新带宽，共享带宽和包周期带宽该接口不适用。
         
@@ -231,7 +231,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def change_bandwidth_to_period_async(self, request):
-        """按需转包API
+        r"""按需转包API
 
         租户按需转包接口。
         
@@ -296,7 +296,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def create_shared_bandwidth_async(self, request):
-        """创建共享带宽
+        r"""创建共享带宽
 
         创建共享带宽。
         
@@ -361,7 +361,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def delete_shared_bandwidth_async(self, request):
-        """删除共享带宽
+        r"""删除共享带宽
 
         删除共享带宽。
         
@@ -426,7 +426,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def list_bandwidth_pkg_async(self, request):
-        """查询带宽加油包列表
+        r"""查询带宽加油包列表
 
         查询带宽加油包列表信息
         
@@ -495,7 +495,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def list_bandwidths_async(self, request):
-        """查询带宽列表
+        r"""查询带宽列表
 
         查询带宽列表。
         
@@ -566,7 +566,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def list_quotas_async(self, request):
-        """查询配额接口
+        r"""查询配额接口
 
         查询配额
         
@@ -631,7 +631,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def remove_publicips_from_shared_bandwidth_async(self, request):
-        """共享带宽移除弹性公网IP
+        r"""共享带宽移除弹性公网IP
 
         共享带宽移除弹性公网IP。
         
@@ -698,7 +698,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def show_bandwidth_async(self, request):
-        """查询带宽
+        r"""查询带宽
 
         查询带宽
         
@@ -763,7 +763,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def update_bandwidth_async(self, request):
-        """更新带宽
+        r"""更新带宽
 
         更新带宽。
         
@@ -830,7 +830,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def update_pre_paid_bandwidth_async(self, request):
-        """更新包周期带宽
+        r"""更新包周期带宽
 
         更新带宽。
         
@@ -897,7 +897,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_create_publicip_tags_async(self, request):
-        """批量创建弹性公网IP资源标签
+        r"""批量创建弹性公网IP资源标签
 
         为指定的弹性公网IP资源实例批量添加标签。
         
@@ -964,7 +964,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_create_publicips_async(self, request):
-        """批量创建弹性公网IP
+        r"""批量创建弹性公网IP
 
         批量创建弹性公网IP
         
@@ -1029,7 +1029,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_delete_public_ip_async(self, request):
-        """批量删除弹性公网IP
+        r"""批量删除弹性公网IP
 
         批量删除弹性公网IP
         
@@ -1094,7 +1094,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_delete_publicip_tags_async(self, request):
-        """批量删除弹性公网IP资源标签
+        r"""批量删除弹性公网IP资源标签
 
         为指定的弹性公网IP资源实例批量删除标签。
         
@@ -1161,7 +1161,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def batch_disassociate_publicips_async(self, request):
-        """批量解绑弹性公网IP
+        r"""批量解绑弹性公网IP
 
         批量解绑弹性公网IP
         
@@ -1226,7 +1226,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def change_publicip_to_period_async(self, request):
-        """按需转包接口
+        r"""按需转包接口
 
         租户按需转包接口。
         
@@ -1291,7 +1291,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def count_public_ip_async(self, request):
-        """查询PublicIp数量
+        r"""查询PublicIp数量
 
         查询PublicIp数量
         
@@ -1354,7 +1354,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def count_public_ip_instance_async(self, request):
-        """查询PublicIp实例数
+        r"""查询PublicIp实例数
 
         查询PublicIp实例数
         
@@ -1417,7 +1417,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def create_pre_paid_publicip_async(self, request):
-        """申请包周期弹性公网IP
+        r"""申请包周期弹性公网IP
 
         申请包年包月的弹性公网IP。
         
@@ -1482,7 +1482,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def create_publicip_async(self, request):
-        """申请弹性公网IP
+        r"""申请弹性公网IP
 
         申请弹性公网IP，支持IPv4和IPv6。
          弹性公网IP（Elastic IP）提供独立的公网IP资源，包括公网IP地址与公网出口带宽服务。可以与弹性云服务器、裸金属服务器、虚拟IP、弹性负载均衡、NAT网关等资源灵活地绑定及解绑。拥有多种灵活的计费方式，可以满足各种业务场景的需要。
@@ -1548,7 +1548,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def create_publicip_tag_async(self, request):
-        """创建弹性公网IP资源标签
+        r"""创建弹性公网IP资源标签
 
         给指定弹性IP资源实例增加标签信息。
         
@@ -1615,7 +1615,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def delete_publicip_async(self, request):
-        """删除弹性公网IP
+        r"""删除弹性公网IP
 
         删除弹性公网IP,绑定状态eip不允许直接删除。
         
@@ -1680,7 +1680,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def delete_publicip_tag_async(self, request):
-        """删除弹性公网IP的标签
+        r"""删除弹性公网IP的标签
 
         删除指定弹性公网IP的标签信息。其中project_id是项目ID，publicip_id 是要操作的弹性公网IP的id。key是要删除标签的键。
         
@@ -1747,7 +1747,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def list_publicip_tags_async(self, request):
-        """查询租户的弹性公网IP标签
+        r"""查询租户的弹性公网IP标签
 
         查询租户在指定区域和实例类型的所有标签集合。
         
@@ -1810,7 +1810,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def list_publicips_async(self, request):
-        """查询弹性公网IP列表
+        r"""查询弹性公网IP列表
 
         查询弹性公网IP列表
         
@@ -1896,7 +1896,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def list_publicips_by_tags_async(self, request):
-        """按标签查询弹性公网IP列表
+        r"""按标签查询弹性公网IP列表
 
         使用标签过滤弹性公网IP。
         
@@ -1961,7 +1961,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def show_public_ip_type_async(self, request):
-        """查询PublicIp类型
+        r"""查询PublicIp类型
 
         查询PublicIp类型
         
@@ -2024,7 +2024,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def show_publicip_async(self, request):
-        """查询弹性公网IP
+        r"""查询弹性公网IP
 
         查询指定的弹性公网IP。
         
@@ -2089,7 +2089,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def show_publicip_tags_async(self, request):
-        """查询弹性公网IP的标签
+        r"""查询弹性公网IP的标签
 
         查询指定弹性IP实例的标签信息。
         
@@ -2154,7 +2154,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def update_publicip_async(self, request):
-        """更新弹性公网IP
+        r"""更新弹性公网IP
 
         更新弹性公网IP，将弹性公网IP跟一个网卡绑定或者解绑定，转换IP地址版本类型。
         
@@ -2221,7 +2221,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def show_resources_job_detail_async(self, request):
-        """查询Job状态接口
+        r"""查询Job状态接口
 
         查询Job状态接口
         
@@ -2286,7 +2286,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def neutron_create_floating_ip_async(self, request):
-        """创建浮动IP
+        r"""创建浮动IP
 
         创建浮动IP的外部网络UUID，请使用GET /v2.0/networks?router:external&#x3D;True或neutron net-external-list方式获取。
         
@@ -2351,7 +2351,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def neutron_delete_floating_ip_async(self, request):
-        """删除浮动IP
+        r"""删除浮动IP
 
         删除指定的浮动IP。
         
@@ -2416,7 +2416,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def neutron_list_floating_ips_async(self, request):
-        """查询浮动IP列表
+        r"""查询浮动IP列表
 
         查询提交请求的租户有权限操作的所有浮动IP地址。
         
@@ -2499,7 +2499,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def neutron_show_floating_ip_async(self, request):
-        """查询浮动IP
+        r"""查询浮动IP
 
         查询浮动IP详情，包括浮动IP状态，浮动IP所属路由器ID，浮动IP的外部网络ID等等。
         
@@ -2564,7 +2564,7 @@ class EipAsyncClient(Client):
         return http_info
 
     def neutron_update_floating_ip_async(self, request):
-        """更新浮动IP
+        r"""更新浮动IP
 
         更新浮动IP。
          更新时需在URL中给出浮动IP地址的ID。

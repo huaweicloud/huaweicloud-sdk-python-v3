@@ -27,7 +27,7 @@ class AppAclCreate:
     }
 
     def __init__(self, app_acl_type=None, app_acl_values=None):
-        """AppAclCreate
+        r"""AppAclCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AppAclCreate:
 
     @property
     def app_acl_type(self):
-        """Gets the app_acl_type of this AppAclCreate.
+        r"""Gets the app_acl_type of this AppAclCreate.
 
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
@@ -59,7 +59,7 @@ class AppAclCreate:
 
     @app_acl_type.setter
     def app_acl_type(self, app_acl_type):
-        """Sets the app_acl_type of this AppAclCreate.
+        r"""Sets the app_acl_type of this AppAclCreate.
 
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
@@ -70,7 +70,7 @@ class AppAclCreate:
 
     @property
     def app_acl_values(self):
-        """Gets the app_acl_values of this AppAclCreate.
+        r"""Gets the app_acl_values of this AppAclCreate.
 
         ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
 
@@ -81,7 +81,7 @@ class AppAclCreate:
 
     @app_acl_values.setter
     def app_acl_values(self, app_acl_values):
-        """Sets the app_acl_values of this AppAclCreate.
+        r"""Sets the app_acl_values of this AppAclCreate.
 
         ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
 

@@ -30,7 +30,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, instance_access_control_attribute_configuration=None, status=None, status_reason=None):
-        """DescribeInstanceAccessControlAttributeConfigurationResponse
+        r"""DescribeInstanceAccessControlAttributeConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
 
     @property
     def instance_access_control_attribute_configuration(self):
-        """Gets the instance_access_control_attribute_configuration of this DescribeInstanceAccessControlAttributeConfigurationResponse.
+        r"""Gets the instance_access_control_attribute_configuration of this DescribeInstanceAccessControlAttributeConfigurationResponse.
 
         :return: The instance_access_control_attribute_configuration of this DescribeInstanceAccessControlAttributeConfigurationResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.InstanceAccessControlAttributeConfigurationDto`
@@ -67,7 +67,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
 
     @instance_access_control_attribute_configuration.setter
     def instance_access_control_attribute_configuration(self, instance_access_control_attribute_configuration):
-        """Sets the instance_access_control_attribute_configuration of this DescribeInstanceAccessControlAttributeConfigurationResponse.
+        r"""Sets the instance_access_control_attribute_configuration of this DescribeInstanceAccessControlAttributeConfigurationResponse.
 
         :param instance_access_control_attribute_configuration: The instance_access_control_attribute_configuration of this DescribeInstanceAccessControlAttributeConfigurationResponse.
         :type instance_access_control_attribute_configuration: :class:`huaweicloudsdkidentitycenter.v1.InstanceAccessControlAttributeConfigurationDto`
@@ -76,7 +76,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DescribeInstanceAccessControlAttributeConfigurationResponse.
+        r"""Gets the status of this DescribeInstanceAccessControlAttributeConfigurationResponse.
 
         ABAC属性配置的状态
 
@@ -87,7 +87,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DescribeInstanceAccessControlAttributeConfigurationResponse.
+        r"""Sets the status of this DescribeInstanceAccessControlAttributeConfigurationResponse.
 
         ABAC属性配置的状态
 
@@ -98,7 +98,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
 
     @property
     def status_reason(self):
-        """Gets the status_reason of this DescribeInstanceAccessControlAttributeConfigurationResponse.
+        r"""Gets the status_reason of this DescribeInstanceAccessControlAttributeConfigurationResponse.
 
         提供有关指定属性的当前状态的更多详细信息
 
@@ -109,7 +109,7 @@ class DescribeInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
 
     @status_reason.setter
     def status_reason(self, status_reason):
-        """Sets the status_reason of this DescribeInstanceAccessControlAttributeConfigurationResponse.
+        r"""Sets the status_reason of this DescribeInstanceAccessControlAttributeConfigurationResponse.
 
         提供有关指定属性的当前状态的更多详细信息
 

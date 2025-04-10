@@ -27,7 +27,7 @@ class RunDevstarTemplateJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """RunDevstarTemplateJobRequest
+        r"""RunDevstarTemplateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RunDevstarTemplateJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RunDevstarTemplateJobRequest.
+        r"""Gets the x_language of this RunDevstarTemplateJobRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -61,7 +61,7 @@ class RunDevstarTemplateJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RunDevstarTemplateJobRequest.
+        r"""Sets the x_language of this RunDevstarTemplateJobRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -72,7 +72,7 @@ class RunDevstarTemplateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunDevstarTemplateJobRequest.
+        r"""Gets the body of this RunDevstarTemplateJobRequest.
 
         :return: The body of this RunDevstarTemplateJobRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.TemplateJobInfo`
@@ -81,7 +81,7 @@ class RunDevstarTemplateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunDevstarTemplateJobRequest.
+        r"""Sets the body of this RunDevstarTemplateJobRequest.
 
         :param body: The body of this RunDevstarTemplateJobRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.TemplateJobInfo`

@@ -39,7 +39,7 @@ class DomainInfo:
     }
 
     def __init__(self, domain_id=None, domain_name=None, cname=None, protocol=None, real_server_type=None, real_servers=None, waf_status=None, enterprise_project_id=None):
-        """DomainInfo
+        r"""DomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DomainInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DomainInfo.
+        r"""Gets the domain_id of this DomainInfo.
 
         域名ID
 
@@ -103,7 +103,7 @@ class DomainInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DomainInfo.
+        r"""Sets the domain_id of this DomainInfo.
 
         域名ID
 
@@ -114,7 +114,7 @@ class DomainInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainInfo.
+        r"""Gets the domain_name of this DomainInfo.
 
         域名
 
@@ -125,7 +125,7 @@ class DomainInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainInfo.
+        r"""Sets the domain_name of this DomainInfo.
 
         域名
 
@@ -136,7 +136,7 @@ class DomainInfo:
 
     @property
     def cname(self):
-        """Gets the cname of this DomainInfo.
+        r"""Gets the cname of this DomainInfo.
 
         域名cname
 
@@ -147,7 +147,7 @@ class DomainInfo:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this DomainInfo.
+        r"""Sets the cname of this DomainInfo.
 
         域名cname
 
@@ -158,7 +158,7 @@ class DomainInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this DomainInfo.
+        r"""Gets the protocol of this DomainInfo.
 
         域名协议
 
@@ -169,7 +169,7 @@ class DomainInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this DomainInfo.
+        r"""Sets the protocol of this DomainInfo.
 
         域名协议
 
@@ -180,7 +180,7 @@ class DomainInfo:
 
     @property
     def real_server_type(self):
-        """Gets the real_server_type of this DomainInfo.
+        r"""Gets the real_server_type of this DomainInfo.
 
         源站类型
 
@@ -191,7 +191,7 @@ class DomainInfo:
 
     @real_server_type.setter
     def real_server_type(self, real_server_type):
-        """Sets the real_server_type of this DomainInfo.
+        r"""Sets the real_server_type of this DomainInfo.
 
         源站类型
 
@@ -202,7 +202,7 @@ class DomainInfo:
 
     @property
     def real_servers(self):
-        """Gets the real_servers of this DomainInfo.
+        r"""Gets the real_servers of this DomainInfo.
 
         源站
 
@@ -213,7 +213,7 @@ class DomainInfo:
 
     @real_servers.setter
     def real_servers(self, real_servers):
-        """Sets the real_servers of this DomainInfo.
+        r"""Sets the real_servers of this DomainInfo.
 
         源站
 
@@ -224,7 +224,7 @@ class DomainInfo:
 
     @property
     def waf_status(self):
-        """Gets the waf_status of this DomainInfo.
+        r"""Gets the waf_status of this DomainInfo.
 
         waf防护状态
 
@@ -235,7 +235,7 @@ class DomainInfo:
 
     @waf_status.setter
     def waf_status(self, waf_status):
-        """Sets the waf_status of this DomainInfo.
+        r"""Sets the waf_status of this DomainInfo.
 
         waf防护状态
 
@@ -246,7 +246,7 @@ class DomainInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DomainInfo.
+        r"""Gets the enterprise_project_id of this DomainInfo.
 
         企业项目ID
 
@@ -257,7 +257,7 @@ class DomainInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DomainInfo.
+        r"""Sets the enterprise_project_id of this DomainInfo.
 
         企业项目ID
 

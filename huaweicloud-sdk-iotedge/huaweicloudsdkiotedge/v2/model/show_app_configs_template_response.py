@@ -38,7 +38,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
     }
 
     def __init__(self, tpl_id=None, name=None, description=None, config_tabs=None, default_values=None, create_time=None, update_time=None):
-        """ShowAppConfigsTemplateResponse
+        r"""ShowAppConfigsTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ShowAppConfigsTemplateResponse.
+        r"""Gets the tpl_id of this ShowAppConfigsTemplateResponse.
 
         模板id
 
@@ -97,7 +97,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ShowAppConfigsTemplateResponse.
+        r"""Sets the tpl_id of this ShowAppConfigsTemplateResponse.
 
         模板id
 
@@ -108,7 +108,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppConfigsTemplateResponse.
+        r"""Gets the name of this ShowAppConfigsTemplateResponse.
 
         模板名称
 
@@ -119,7 +119,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppConfigsTemplateResponse.
+        r"""Sets the name of this ShowAppConfigsTemplateResponse.
 
         模板名称
 
@@ -130,7 +130,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppConfigsTemplateResponse.
+        r"""Gets the description of this ShowAppConfigsTemplateResponse.
 
         描述
 
@@ -141,7 +141,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppConfigsTemplateResponse.
+        r"""Sets the description of this ShowAppConfigsTemplateResponse.
 
         描述
 
@@ -152,7 +152,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def config_tabs(self):
-        """Gets the config_tabs of this ShowAppConfigsTemplateResponse.
+        r"""Gets the config_tabs of this ShowAppConfigsTemplateResponse.
 
         配置项数据
 
@@ -163,7 +163,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @config_tabs.setter
     def config_tabs(self, config_tabs):
-        """Sets the config_tabs of this ShowAppConfigsTemplateResponse.
+        r"""Sets the config_tabs of this ShowAppConfigsTemplateResponse.
 
         配置项数据
 
@@ -174,7 +174,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def default_values(self):
-        """Gets the default_values of this ShowAppConfigsTemplateResponse.
+        r"""Gets the default_values of this ShowAppConfigsTemplateResponse.
 
         默认数据
 
@@ -185,7 +185,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @default_values.setter
     def default_values(self, default_values):
-        """Sets the default_values of this ShowAppConfigsTemplateResponse.
+        r"""Sets the default_values of this ShowAppConfigsTemplateResponse.
 
         默认数据
 
@@ -196,7 +196,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAppConfigsTemplateResponse.
+        r"""Gets the create_time of this ShowAppConfigsTemplateResponse.
 
         创建时间
 
@@ -207,7 +207,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAppConfigsTemplateResponse.
+        r"""Sets the create_time of this ShowAppConfigsTemplateResponse.
 
         创建时间
 
@@ -218,7 +218,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAppConfigsTemplateResponse.
+        r"""Gets the update_time of this ShowAppConfigsTemplateResponse.
 
         最后一次修改时间
 
@@ -229,7 +229,7 @@ class ShowAppConfigsTemplateResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAppConfigsTemplateResponse.
+        r"""Sets the update_time of this ShowAppConfigsTemplateResponse.
 
         最后一次修改时间
 

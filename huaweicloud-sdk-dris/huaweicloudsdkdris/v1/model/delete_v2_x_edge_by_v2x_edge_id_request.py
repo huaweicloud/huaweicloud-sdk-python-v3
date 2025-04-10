@@ -27,7 +27,7 @@ class DeleteV2XEdgeByV2xEdgeIdRequest:
     }
 
     def __init__(self, instance_id=None, v2x_edge_id=None):
-        """DeleteV2XEdgeByV2xEdgeIdRequest
+        r"""DeleteV2XEdgeByV2xEdgeIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteV2XEdgeByV2xEdgeIdRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
+        r"""Gets the instance_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -60,7 +60,7 @@ class DeleteV2XEdgeByV2xEdgeIdRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
+        r"""Sets the instance_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -71,7 +71,7 @@ class DeleteV2XEdgeByV2xEdgeIdRequest:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
+        r"""Gets the v2x_edge_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -82,7 +82,7 @@ class DeleteV2XEdgeByV2xEdgeIdRequest:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
+        r"""Sets the v2x_edge_id of this DeleteV2XEdgeByV2xEdgeIdRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 

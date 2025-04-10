@@ -28,7 +28,7 @@ class ListMetadataLocksResponse(SdkResponse):
     }
 
     def __init__(self, metadata_locks=None, count=None):
-        """ListMetadataLocksResponse
+        r"""ListMetadataLocksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMetadataLocksResponse(SdkResponse):
 
     @property
     def metadata_locks(self):
-        """Gets the metadata_locks of this ListMetadataLocksResponse.
+        r"""Gets the metadata_locks of this ListMetadataLocksResponse.
 
         元数据锁列表
 
@@ -62,7 +62,7 @@ class ListMetadataLocksResponse(SdkResponse):
 
     @metadata_locks.setter
     def metadata_locks(self, metadata_locks):
-        """Sets the metadata_locks of this ListMetadataLocksResponse.
+        r"""Sets the metadata_locks of this ListMetadataLocksResponse.
 
         元数据锁列表
 
@@ -73,7 +73,7 @@ class ListMetadataLocksResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMetadataLocksResponse.
+        r"""Gets the count of this ListMetadataLocksResponse.
 
         元数据锁数量
 
@@ -84,7 +84,7 @@ class ListMetadataLocksResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMetadataLocksResponse.
+        r"""Sets the count of this ListMetadataLocksResponse.
 
         元数据锁数量
 

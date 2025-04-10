@@ -30,7 +30,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, template_list=None):
-        """ListFlinkSqlJobTemplatesResponse
+        r"""ListFlinkSqlJobTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListFlinkSqlJobTemplatesResponse.
+        r"""Gets the is_success of this ListFlinkSqlJobTemplatesResponse.
 
         请求是否成功
 
@@ -69,7 +69,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListFlinkSqlJobTemplatesResponse.
+        r"""Sets the is_success of this ListFlinkSqlJobTemplatesResponse.
 
         请求是否成功
 
@@ -80,7 +80,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListFlinkSqlJobTemplatesResponse.
+        r"""Gets the message of this ListFlinkSqlJobTemplatesResponse.
 
         消息内容。
 
@@ -91,7 +91,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListFlinkSqlJobTemplatesResponse.
+        r"""Sets the message of this ListFlinkSqlJobTemplatesResponse.
 
         消息内容。
 
@@ -102,7 +102,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def template_list(self):
-        """Gets the template_list of this ListFlinkSqlJobTemplatesResponse.
+        r"""Gets the template_list of this ListFlinkSqlJobTemplatesResponse.
 
         :return: The template_list of this ListFlinkSqlJobTemplatesResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateList`
@@ -111,7 +111,7 @@ class ListFlinkSqlJobTemplatesResponse(SdkResponse):
 
     @template_list.setter
     def template_list(self, template_list):
-        """Sets the template_list of this ListFlinkSqlJobTemplatesResponse.
+        r"""Sets the template_list of this ListFlinkSqlJobTemplatesResponse.
 
         :param template_list: The template_list of this ListFlinkSqlJobTemplatesResponse.
         :type template_list: :class:`huaweicloudsdkdli.v1.FlinkSqlJobTemplateList`

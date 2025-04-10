@@ -27,7 +27,7 @@ class ModifyPolicyTargetReq:
     }
 
     def __init__(self, add=None, delete=None):
-        """ModifyPolicyTargetReq
+        r"""ModifyPolicyTargetReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ModifyPolicyTargetReq:
 
     @property
     def add(self):
-        """Gets the add of this ModifyPolicyTargetReq.
+        r"""Gets the add of this ModifyPolicyTargetReq.
 
         添加应用。
 
@@ -61,7 +61,7 @@ class ModifyPolicyTargetReq:
 
     @add.setter
     def add(self, add):
-        """Sets the add of this ModifyPolicyTargetReq.
+        r"""Sets the add of this ModifyPolicyTargetReq.
 
         添加应用。
 
@@ -72,7 +72,7 @@ class ModifyPolicyTargetReq:
 
     @property
     def delete(self):
-        """Gets the delete of this ModifyPolicyTargetReq.
+        r"""Gets the delete of this ModifyPolicyTargetReq.
 
         删除应用。
 
@@ -83,7 +83,7 @@ class ModifyPolicyTargetReq:
 
     @delete.setter
     def delete(self, delete):
-        """Sets the delete of this ModifyPolicyTargetReq.
+        r"""Sets the delete of this ModifyPolicyTargetReq.
 
         删除应用。
 

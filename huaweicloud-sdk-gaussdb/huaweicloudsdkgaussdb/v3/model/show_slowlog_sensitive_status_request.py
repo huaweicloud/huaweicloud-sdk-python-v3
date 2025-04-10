@@ -27,7 +27,7 @@ class ShowSlowlogSensitiveStatusRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowSlowlogSensitiveStatusRequest
+        r"""ShowSlowlogSensitiveStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSlowlogSensitiveStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSlowlogSensitiveStatusRequest.
+        r"""Gets the x_language of this ShowSlowlogSensitiveStatusRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowSlowlogSensitiveStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSlowlogSensitiveStatusRequest.
+        r"""Sets the x_language of this ShowSlowlogSensitiveStatusRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowSlowlogSensitiveStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSlowlogSensitiveStatusRequest.
+        r"""Gets the instance_id of this ShowSlowlogSensitiveStatusRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ShowSlowlogSensitiveStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSlowlogSensitiveStatusRequest.
+        r"""Sets the instance_id of this ShowSlowlogSensitiveStatusRequest.
 
         实例ID。
 

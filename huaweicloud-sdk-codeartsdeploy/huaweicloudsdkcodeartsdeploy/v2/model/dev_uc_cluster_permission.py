@@ -51,7 +51,7 @@ class DevUcClusterPermission:
     }
 
     def __init__(self, region=None, role_id=None, devuc_role_id_list=None, name=None, group_id=None, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_manage=None, can_copy=None, create_time=None, update_time=None, role_type=None):
-        """DevUcClusterPermission
+        r"""DevUcClusterPermission
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DevUcClusterPermission:
 
     @property
     def region(self):
-        """Gets the region of this DevUcClusterPermission.
+        r"""Gets the region of this DevUcClusterPermission.
 
         局点信息
 
@@ -145,7 +145,7 @@ class DevUcClusterPermission:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DevUcClusterPermission.
+        r"""Sets the region of this DevUcClusterPermission.
 
         局点信息
 
@@ -156,7 +156,7 @@ class DevUcClusterPermission:
 
     @property
     def role_id(self):
-        """Gets the role_id of this DevUcClusterPermission.
+        r"""Gets the role_id of this DevUcClusterPermission.
 
         角色id
 
@@ -167,7 +167,7 @@ class DevUcClusterPermission:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this DevUcClusterPermission.
+        r"""Sets the role_id of this DevUcClusterPermission.
 
         角色id
 
@@ -178,7 +178,7 @@ class DevUcClusterPermission:
 
     @property
     def devuc_role_id_list(self):
-        """Gets the devuc_role_id_list of this DevUcClusterPermission.
+        r"""Gets the devuc_role_id_list of this DevUcClusterPermission.
 
         角色id列表
 
@@ -189,7 +189,7 @@ class DevUcClusterPermission:
 
     @devuc_role_id_list.setter
     def devuc_role_id_list(self, devuc_role_id_list):
-        """Sets the devuc_role_id_list of this DevUcClusterPermission.
+        r"""Sets the devuc_role_id_list of this DevUcClusterPermission.
 
         角色id列表
 
@@ -200,7 +200,7 @@ class DevUcClusterPermission:
 
     @property
     def name(self):
-        """Gets the name of this DevUcClusterPermission.
+        r"""Gets the name of this DevUcClusterPermission.
 
         角色名称
 
@@ -211,7 +211,7 @@ class DevUcClusterPermission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DevUcClusterPermission.
+        r"""Sets the name of this DevUcClusterPermission.
 
         角色名称
 
@@ -222,7 +222,7 @@ class DevUcClusterPermission:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DevUcClusterPermission.
+        r"""Gets the group_id of this DevUcClusterPermission.
 
         主机集群id
 
@@ -233,7 +233,7 @@ class DevUcClusterPermission:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DevUcClusterPermission.
+        r"""Sets the group_id of this DevUcClusterPermission.
 
         主机集群id
 
@@ -244,7 +244,7 @@ class DevUcClusterPermission:
 
     @property
     def can_view(self):
-        """Gets the can_view of this DevUcClusterPermission.
+        r"""Gets the can_view of this DevUcClusterPermission.
 
         是否有查看权限
 
@@ -255,7 +255,7 @@ class DevUcClusterPermission:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this DevUcClusterPermission.
+        r"""Sets the can_view of this DevUcClusterPermission.
 
         是否有查看权限
 
@@ -266,7 +266,7 @@ class DevUcClusterPermission:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this DevUcClusterPermission.
+        r"""Gets the can_edit of this DevUcClusterPermission.
 
         是否有编辑权限
 
@@ -277,7 +277,7 @@ class DevUcClusterPermission:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this DevUcClusterPermission.
+        r"""Sets the can_edit of this DevUcClusterPermission.
 
         是否有编辑权限
 
@@ -288,7 +288,7 @@ class DevUcClusterPermission:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this DevUcClusterPermission.
+        r"""Gets the can_delete of this DevUcClusterPermission.
 
         是否有删除权限
 
@@ -299,7 +299,7 @@ class DevUcClusterPermission:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this DevUcClusterPermission.
+        r"""Sets the can_delete of this DevUcClusterPermission.
 
         是否有删除权限
 
@@ -310,7 +310,7 @@ class DevUcClusterPermission:
 
     @property
     def can_add_host(self):
-        """Gets the can_add_host of this DevUcClusterPermission.
+        r"""Gets the can_add_host of this DevUcClusterPermission.
 
         是否有添加主机权限
 
@@ -321,7 +321,7 @@ class DevUcClusterPermission:
 
     @can_add_host.setter
     def can_add_host(self, can_add_host):
-        """Sets the can_add_host of this DevUcClusterPermission.
+        r"""Sets the can_add_host of this DevUcClusterPermission.
 
         是否有添加主机权限
 
@@ -332,7 +332,7 @@ class DevUcClusterPermission:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this DevUcClusterPermission.
+        r"""Gets the can_manage of this DevUcClusterPermission.
 
         是否有权限管理权限
 
@@ -343,7 +343,7 @@ class DevUcClusterPermission:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this DevUcClusterPermission.
+        r"""Sets the can_manage of this DevUcClusterPermission.
 
         是否有权限管理权限
 
@@ -354,7 +354,7 @@ class DevUcClusterPermission:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this DevUcClusterPermission.
+        r"""Gets the can_copy of this DevUcClusterPermission.
 
         是否有拷贝权限
 
@@ -365,7 +365,7 @@ class DevUcClusterPermission:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this DevUcClusterPermission.
+        r"""Sets the can_copy of this DevUcClusterPermission.
 
         是否有拷贝权限
 
@@ -376,7 +376,7 @@ class DevUcClusterPermission:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DevUcClusterPermission.
+        r"""Gets the create_time of this DevUcClusterPermission.
 
         创建时间
 
@@ -387,7 +387,7 @@ class DevUcClusterPermission:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DevUcClusterPermission.
+        r"""Sets the create_time of this DevUcClusterPermission.
 
         创建时间
 
@@ -398,7 +398,7 @@ class DevUcClusterPermission:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DevUcClusterPermission.
+        r"""Gets the update_time of this DevUcClusterPermission.
 
         修改时间
 
@@ -409,7 +409,7 @@ class DevUcClusterPermission:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DevUcClusterPermission.
+        r"""Sets the update_time of this DevUcClusterPermission.
 
         修改时间
 
@@ -420,7 +420,7 @@ class DevUcClusterPermission:
 
     @property
     def role_type(self):
-        """Gets the role_type of this DevUcClusterPermission.
+        r"""Gets the role_type of this DevUcClusterPermission.
 
         角色类型，project-customized：自定义角色；template-project-customized：系统自定义角色； template-customized-inst：系统角色；cluster-creator：集群创建者；project_admin：项目创建者
 
@@ -431,7 +431,7 @@ class DevUcClusterPermission:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this DevUcClusterPermission.
+        r"""Sets the role_type of this DevUcClusterPermission.
 
         角色类型，project-customized：自定义角色；template-project-customized：系统自定义角色； template-customized-inst：系统角色；cluster-creator：集群创建者；project_admin：项目创建者
 

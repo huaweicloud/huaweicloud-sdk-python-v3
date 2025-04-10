@@ -29,7 +29,7 @@ class BatchRemovePeersFromChannelRequest:
     }
 
     def __init__(self, blockchain_id=None, channel_id=None, body=None):
-        """BatchRemovePeersFromChannelRequest
+        r"""BatchRemovePeersFromChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchRemovePeersFromChannelRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this BatchRemovePeersFromChannelRequest.
+        r"""Gets the blockchain_id of this BatchRemovePeersFromChannelRequest.
 
         区块链服务id。可调用“查询服务实例列表”接口获取ID
 
@@ -66,7 +66,7 @@ class BatchRemovePeersFromChannelRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this BatchRemovePeersFromChannelRequest.
+        r"""Sets the blockchain_id of this BatchRemovePeersFromChannelRequest.
 
         区块链服务id。可调用“查询服务实例列表”接口获取ID
 
@@ -77,7 +77,7 @@ class BatchRemovePeersFromChannelRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this BatchRemovePeersFromChannelRequest.
+        r"""Gets the channel_id of this BatchRemovePeersFromChannelRequest.
 
         区块链通道名称。可调用“查询实例信息”接口获取，接口返回的“channels”中的name字段值
 
@@ -88,7 +88,7 @@ class BatchRemovePeersFromChannelRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this BatchRemovePeersFromChannelRequest.
+        r"""Sets the channel_id of this BatchRemovePeersFromChannelRequest.
 
         区块链通道名称。可调用“查询实例信息”接口获取，接口返回的“channels”中的name字段值
 
@@ -99,7 +99,7 @@ class BatchRemovePeersFromChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRemovePeersFromChannelRequest.
+        r"""Gets the body of this BatchRemovePeersFromChannelRequest.
 
         :return: The body of this BatchRemovePeersFromChannelRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelRequestBody`
@@ -108,7 +108,7 @@ class BatchRemovePeersFromChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRemovePeersFromChannelRequest.
+        r"""Sets the body of this BatchRemovePeersFromChannelRequest.
 
         :param body: The body of this BatchRemovePeersFromChannelRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelRequestBody`

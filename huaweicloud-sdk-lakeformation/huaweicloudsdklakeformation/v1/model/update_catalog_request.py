@@ -29,7 +29,7 @@ class UpdateCatalogRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, body=None):
-        """UpdateCatalogRequest
+        r"""UpdateCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateCatalogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateCatalogRequest.
+        r"""Gets the instance_id of this UpdateCatalogRequest.
 
         实例Id
 
@@ -66,7 +66,7 @@ class UpdateCatalogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateCatalogRequest.
+        r"""Sets the instance_id of this UpdateCatalogRequest.
 
         实例Id
 
@@ -77,7 +77,7 @@ class UpdateCatalogRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this UpdateCatalogRequest.
+        r"""Gets the catalog_name of this UpdateCatalogRequest.
 
         catalog名字
 
@@ -88,7 +88,7 @@ class UpdateCatalogRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this UpdateCatalogRequest.
+        r"""Sets the catalog_name of this UpdateCatalogRequest.
 
         catalog名字
 
@@ -99,7 +99,7 @@ class UpdateCatalogRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCatalogRequest.
+        r"""Gets the body of this UpdateCatalogRequest.
 
         :return: The body of this UpdateCatalogRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.CatalogInput`
@@ -108,7 +108,7 @@ class UpdateCatalogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCatalogRequest.
+        r"""Sets the body of this UpdateCatalogRequest.
 
         :param body: The body of this UpdateCatalogRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.CatalogInput`

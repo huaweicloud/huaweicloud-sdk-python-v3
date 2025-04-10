@@ -25,7 +25,7 @@ class UpdateLoadbalancerRequestBody:
     }
 
     def __init__(self, loadbalancer=None):
-        """UpdateLoadbalancerRequestBody
+        r"""UpdateLoadbalancerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateLoadbalancerRequestBody:
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this UpdateLoadbalancerRequestBody.
+        r"""Gets the loadbalancer of this UpdateLoadbalancerRequestBody.
 
         :return: The loadbalancer of this UpdateLoadbalancerRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerReq`
@@ -51,7 +51,7 @@ class UpdateLoadbalancerRequestBody:
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this UpdateLoadbalancerRequestBody.
+        r"""Sets the loadbalancer of this UpdateLoadbalancerRequestBody.
 
         :param loadbalancer: The loadbalancer of this UpdateLoadbalancerRequestBody.
         :type loadbalancer: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerReq`

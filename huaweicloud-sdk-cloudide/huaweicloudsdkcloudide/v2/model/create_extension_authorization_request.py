@@ -27,7 +27,7 @@ class CreateExtensionAuthorizationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateExtensionAuthorizationRequest
+        r"""CreateExtensionAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateExtensionAuthorizationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateExtensionAuthorizationRequest.
+        r"""Gets the instance_id of this CreateExtensionAuthorizationRequest.
 
         CodeArtsIDEOnline实例ID
 
@@ -60,7 +60,7 @@ class CreateExtensionAuthorizationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateExtensionAuthorizationRequest.
+        r"""Sets the instance_id of this CreateExtensionAuthorizationRequest.
 
         CodeArtsIDEOnline实例ID
 
@@ -71,7 +71,7 @@ class CreateExtensionAuthorizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateExtensionAuthorizationRequest.
+        r"""Gets the body of this CreateExtensionAuthorizationRequest.
 
         :return: The body of this CreateExtensionAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionAuthorization`
@@ -80,7 +80,7 @@ class CreateExtensionAuthorizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateExtensionAuthorizationRequest.
+        r"""Sets the body of this CreateExtensionAuthorizationRequest.
 
         :param body: The body of this CreateExtensionAuthorizationRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionAuthorization`

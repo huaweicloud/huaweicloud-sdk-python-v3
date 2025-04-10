@@ -30,7 +30,7 @@ class ShowServerVncResponse(SdkResponse):
     }
 
     def __init__(self, type=None, url=None, protocol=None):
-        """ShowServerVncResponse
+        r"""ShowServerVncResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowServerVncResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowServerVncResponse.
+        r"""Gets the type of this ShowServerVncResponse.
 
         登录类型: * `novnc` * `vnc`
 
@@ -69,7 +69,7 @@ class ShowServerVncResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowServerVncResponse.
+        r"""Sets the type of this ShowServerVncResponse.
 
         登录类型: * `novnc` * `vnc`
 
@@ -80,7 +80,7 @@ class ShowServerVncResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowServerVncResponse.
+        r"""Gets the url of this ShowServerVncResponse.
 
         远程登录控制台地址。
 
@@ -91,7 +91,7 @@ class ShowServerVncResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowServerVncResponse.
+        r"""Sets the url of this ShowServerVncResponse.
 
         远程登录控制台地址。
 
@@ -102,7 +102,7 @@ class ShowServerVncResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this ShowServerVncResponse.
+        r"""Gets the protocol of this ShowServerVncResponse.
 
         登录协议。
 
@@ -113,7 +113,7 @@ class ShowServerVncResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ShowServerVncResponse.
+        r"""Sets the protocol of this ShowServerVncResponse.
 
         登录协议。
 

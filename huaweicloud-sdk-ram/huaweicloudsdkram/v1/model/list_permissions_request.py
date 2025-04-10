@@ -34,7 +34,7 @@ class ListPermissionsRequest:
     }
 
     def __init__(self, x_security_token=None, limit=None, marker=None, resource_type=None, permission_type=None):
-        """ListPermissionsRequest
+        r"""ListPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListPermissionsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListPermissionsRequest.
+        r"""Gets the x_security_token of this ListPermissionsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -83,7 +83,7 @@ class ListPermissionsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListPermissionsRequest.
+        r"""Sets the x_security_token of this ListPermissionsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -94,7 +94,7 @@ class ListPermissionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermissionsRequest.
+        r"""Gets the limit of this ListPermissionsRequest.
 
         分页页面的最大值。
 
@@ -105,7 +105,7 @@ class ListPermissionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermissionsRequest.
+        r"""Sets the limit of this ListPermissionsRequest.
 
         分页页面的最大值。
 
@@ -116,7 +116,7 @@ class ListPermissionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPermissionsRequest.
+        r"""Gets the marker of this ListPermissionsRequest.
 
         页面标记。
 
@@ -127,7 +127,7 @@ class ListPermissionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPermissionsRequest.
+        r"""Sets the marker of this ListPermissionsRequest.
 
         页面标记。
 
@@ -138,7 +138,7 @@ class ListPermissionsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListPermissionsRequest.
+        r"""Gets the resource_type of this ListPermissionsRequest.
 
         资源类型的名称。
 
@@ -149,7 +149,7 @@ class ListPermissionsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListPermissionsRequest.
+        r"""Sets the resource_type of this ListPermissionsRequest.
 
         资源类型的名称。
 
@@ -160,7 +160,7 @@ class ListPermissionsRequest:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this ListPermissionsRequest.
+        r"""Gets the permission_type of this ListPermissionsRequest.
 
         权限类型。RAM_MANAGED表示RAM托管的权限，CUSTOMER_MANAGED表示租户创建的自定义的权限，ALL表示所有的权限。
 
@@ -171,7 +171,7 @@ class ListPermissionsRequest:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this ListPermissionsRequest.
+        r"""Sets the permission_type of this ListPermissionsRequest.
 
         权限类型。RAM_MANAGED表示RAM托管的权限，CUSTOMER_MANAGED表示租户创建的自定义的权限，ALL表示所有的权限。
 

@@ -29,7 +29,7 @@ class AttentionDO:
     }
 
     def __init__(self, attention=None, ids=None, format=None):
-        """AttentionDO
+        r"""AttentionDO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AttentionDO:
 
     @property
     def attention(self):
-        """Gets the attention of this AttentionDO.
+        r"""Gets the attention of this AttentionDO.
 
         关注/取消关注
 
@@ -66,7 +66,7 @@ class AttentionDO:
 
     @attention.setter
     def attention(self, attention):
-        """Sets the attention of this AttentionDO.
+        r"""Sets the attention of this AttentionDO.
 
         关注/取消关注
 
@@ -77,7 +77,7 @@ class AttentionDO:
 
     @property
     def ids(self):
-        """Gets the ids of this AttentionDO.
+        r"""Gets the ids of this AttentionDO.
 
         组件id列表
 
@@ -88,7 +88,7 @@ class AttentionDO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this AttentionDO.
+        r"""Sets the ids of this AttentionDO.
 
         组件id列表
 
@@ -99,7 +99,7 @@ class AttentionDO:
 
     @property
     def format(self):
-        """Gets the format of this AttentionDO.
+        r"""Gets the format of this AttentionDO.
 
         格式
 
@@ -110,7 +110,7 @@ class AttentionDO:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this AttentionDO.
+        r"""Sets the format of this AttentionDO.
 
         格式
 

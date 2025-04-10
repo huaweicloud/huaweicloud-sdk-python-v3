@@ -41,7 +41,7 @@ class ResourceUsageInfo:
     }
 
     def __init__(self, resource_type=None, business_type=None, sub_resource_type=None, is_sub_resource=None, charging_mode=None, resource_source=None, amount=None, usage=None, unit=None):
-        """ResourceUsageInfo
+        r"""ResourceUsageInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResourceUsageInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceUsageInfo.
+        r"""Gets the resource_type of this ResourceUsageInfo.
 
         资源类型。详见[资源类型](metastudio_02_0042.xml)。
 
@@ -110,7 +110,7 @@ class ResourceUsageInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceUsageInfo.
+        r"""Sets the resource_type of this ResourceUsageInfo.
 
         资源类型。详见[资源类型](metastudio_02_0042.xml)。
 
@@ -121,7 +121,7 @@ class ResourceUsageInfo:
 
     @property
     def business_type(self):
-        """Gets the business_type of this ResourceUsageInfo.
+        r"""Gets the business_type of this ResourceUsageInfo.
 
         业务类型。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
@@ -132,7 +132,7 @@ class ResourceUsageInfo:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this ResourceUsageInfo.
+        r"""Sets the business_type of this ResourceUsageInfo.
 
         业务类型。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
@@ -143,7 +143,7 @@ class ResourceUsageInfo:
 
     @property
     def sub_resource_type(self):
-        """Gets the sub_resource_type of this ResourceUsageInfo.
+        r"""Gets the sub_resource_type of this ResourceUsageInfo.
 
         子资源类型。
 
@@ -154,7 +154,7 @@ class ResourceUsageInfo:
 
     @sub_resource_type.setter
     def sub_resource_type(self, sub_resource_type):
-        """Sets the sub_resource_type of this ResourceUsageInfo.
+        r"""Sets the sub_resource_type of this ResourceUsageInfo.
 
         子资源类型。
 
@@ -165,7 +165,7 @@ class ResourceUsageInfo:
 
     @property
     def is_sub_resource(self):
-        """Gets the is_sub_resource of this ResourceUsageInfo.
+        r"""Gets the is_sub_resource of this ResourceUsageInfo.
 
         是否子资源。子资源描述的是子资源的数量和单位
 
@@ -176,7 +176,7 @@ class ResourceUsageInfo:
 
     @is_sub_resource.setter
     def is_sub_resource(self, is_sub_resource):
-        """Sets the is_sub_resource of this ResourceUsageInfo.
+        r"""Sets the is_sub_resource of this ResourceUsageInfo.
 
         是否子资源。子资源描述的是子资源的数量和单位
 
@@ -187,7 +187,7 @@ class ResourceUsageInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ResourceUsageInfo.
+        r"""Gets the charging_mode of this ResourceUsageInfo.
 
         计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性 * ON_DEMAND：按需
 
@@ -198,7 +198,7 @@ class ResourceUsageInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ResourceUsageInfo.
+        r"""Sets the charging_mode of this ResourceUsageInfo.
 
         计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性 * ON_DEMAND：按需
 
@@ -209,7 +209,7 @@ class ResourceUsageInfo:
 
     @property
     def resource_source(self):
-        """Gets the resource_source of this ResourceUsageInfo.
+        r"""Gets the resource_source of this ResourceUsageInfo.
 
         资源来源。 * PURCHASED: 购买 * SP_ALLOCATED：SP分配 * ADMIN_ALLOCATED：系统管理员分配
 
@@ -220,7 +220,7 @@ class ResourceUsageInfo:
 
     @resource_source.setter
     def resource_source(self, resource_source):
-        """Sets the resource_source of this ResourceUsageInfo.
+        r"""Sets the resource_source of this ResourceUsageInfo.
 
         资源来源。 * PURCHASED: 购买 * SP_ALLOCATED：SP分配 * ADMIN_ALLOCATED：系统管理员分配
 
@@ -231,7 +231,7 @@ class ResourceUsageInfo:
 
     @property
     def amount(self):
-        """Gets the amount of this ResourceUsageInfo.
+        r"""Gets the amount of this ResourceUsageInfo.
 
         总量
 
@@ -242,7 +242,7 @@ class ResourceUsageInfo:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ResourceUsageInfo.
+        r"""Sets the amount of this ResourceUsageInfo.
 
         总量
 
@@ -253,7 +253,7 @@ class ResourceUsageInfo:
 
     @property
     def usage(self):
-        """Gets the usage of this ResourceUsageInfo.
+        r"""Gets the usage of this ResourceUsageInfo.
 
         使用量
 
@@ -264,7 +264,7 @@ class ResourceUsageInfo:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ResourceUsageInfo.
+        r"""Sets the usage of this ResourceUsageInfo.
 
         使用量
 
@@ -275,7 +275,7 @@ class ResourceUsageInfo:
 
     @property
     def unit(self):
-        """Gets the unit of this ResourceUsageInfo.
+        r"""Gets the unit of this ResourceUsageInfo.
 
         单位。 * NUM：个数(形象/声音) * MIN：分钟（视频制作） * HOUR：小时 （直播） * CHANNEL：路（直播/交互） * GB：GB(资产管理) * MILLION_WORDS：百万字 * TEN_THOUSAND_WORDS：万字 * TIME：次
 
@@ -286,7 +286,7 @@ class ResourceUsageInfo:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ResourceUsageInfo.
+        r"""Sets the unit of this ResourceUsageInfo.
 
         单位。 * NUM：个数(形象/声音) * MIN：分钟（视频制作） * HOUR：小时 （直播） * CHANNEL：路（直播/交互） * GB：GB(资产管理) * MILLION_WORDS：百万字 * TEN_THOUSAND_WORDS：万字 * TIME：次
 

@@ -35,7 +35,7 @@ class CreateAlertDataSource:
     }
 
     def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None, product_name=None, product_feature=None):
-        """CreateAlertDataSource
+        r"""CreateAlertDataSource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateAlertDataSource:
 
     @property
     def source_type(self):
-        """Gets the source_type of this CreateAlertDataSource.
+        r"""Gets the source_type of this CreateAlertDataSource.
 
         current page count
 
@@ -89,7 +89,7 @@ class CreateAlertDataSource:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this CreateAlertDataSource.
+        r"""Sets the source_type of this CreateAlertDataSource.
 
         current page count
 
@@ -100,7 +100,7 @@ class CreateAlertDataSource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateAlertDataSource.
+        r"""Gets the domain_id of this CreateAlertDataSource.
 
         Id value
 
@@ -111,7 +111,7 @@ class CreateAlertDataSource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateAlertDataSource.
+        r"""Sets the domain_id of this CreateAlertDataSource.
 
         Id value
 
@@ -122,7 +122,7 @@ class CreateAlertDataSource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAlertDataSource.
+        r"""Gets the project_id of this CreateAlertDataSource.
 
         Id value
 
@@ -133,7 +133,7 @@ class CreateAlertDataSource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAlertDataSource.
+        r"""Sets the project_id of this CreateAlertDataSource.
 
         Id value
 
@@ -144,7 +144,7 @@ class CreateAlertDataSource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateAlertDataSource.
+        r"""Gets the region_id of this CreateAlertDataSource.
 
         Id value
 
@@ -155,7 +155,7 @@ class CreateAlertDataSource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateAlertDataSource.
+        r"""Sets the region_id of this CreateAlertDataSource.
 
         Id value
 
@@ -166,7 +166,7 @@ class CreateAlertDataSource:
 
     @property
     def product_name(self):
-        """Gets the product_name of this CreateAlertDataSource.
+        r"""Gets the product_name of this CreateAlertDataSource.
 
         Id value
 
@@ -177,7 +177,7 @@ class CreateAlertDataSource:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this CreateAlertDataSource.
+        r"""Sets the product_name of this CreateAlertDataSource.
 
         Id value
 
@@ -188,7 +188,7 @@ class CreateAlertDataSource:
 
     @property
     def product_feature(self):
-        """Gets the product_feature of this CreateAlertDataSource.
+        r"""Gets the product_feature of this CreateAlertDataSource.
 
         Id value
 
@@ -199,7 +199,7 @@ class CreateAlertDataSource:
 
     @product_feature.setter
     def product_feature(self, product_feature):
-        """Sets the product_feature of this CreateAlertDataSource.
+        r"""Sets the product_feature of this CreateAlertDataSource.
 
         Id value
 

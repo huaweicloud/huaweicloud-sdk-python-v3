@@ -29,7 +29,7 @@ class ReservedResource:
     }
 
     def __init__(self, apu=None, dpu=None, mu=None):
-        """ReservedResource
+        r"""ReservedResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReservedResource:
 
     @property
     def apu(self):
-        """Gets the apu of this ReservedResource.
+        r"""Gets the apu of this ReservedResource.
 
         :return: The apu of this ReservedResource.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDef`
@@ -66,7 +66,7 @@ class ReservedResource:
 
     @apu.setter
     def apu(self, apu):
-        """Sets the apu of this ReservedResource.
+        r"""Sets the apu of this ReservedResource.
 
         :param apu: The apu of this ReservedResource.
         :type apu: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDef`
@@ -75,7 +75,7 @@ class ReservedResource:
 
     @property
     def dpu(self):
-        """Gets the dpu of this ReservedResource.
+        r"""Gets the dpu of this ReservedResource.
 
         :return: The dpu of this ReservedResource.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDef`
@@ -84,7 +84,7 @@ class ReservedResource:
 
     @dpu.setter
     def dpu(self, dpu):
-        """Sets the dpu of this ReservedResource.
+        r"""Sets the dpu of this ReservedResource.
 
         :param dpu: The dpu of this ReservedResource.
         :type dpu: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDef`
@@ -93,7 +93,7 @@ class ReservedResource:
 
     @property
     def mu(self):
-        """Gets the mu of this ReservedResource.
+        r"""Gets the mu of this ReservedResource.
 
         :return: The mu of this ReservedResource.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDemand`
@@ -102,7 +102,7 @@ class ReservedResource:
 
     @mu.setter
     def mu(self, mu):
-        """Sets the mu of this ReservedResource.
+        r"""Sets the mu of this ReservedResource.
 
         :param mu: The mu of this ReservedResource.
         :type mu: :class:`huaweicloudsdkdataartsfabric.v1.ResourceDemand`

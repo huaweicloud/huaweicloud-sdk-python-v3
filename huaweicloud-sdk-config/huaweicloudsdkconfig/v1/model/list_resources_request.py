@@ -37,7 +37,7 @@ class ListResourcesRequest:
     }
 
     def __init__(self, provider=None, type=None, region_id=None, ep_id=None, tag=None, limit=None, marker=None):
-        """ListResourcesRequest
+        r"""ListResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListResourcesRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ListResourcesRequest.
+        r"""Gets the provider of this ListResourcesRequest.
 
         云服务名称
 
@@ -94,7 +94,7 @@ class ListResourcesRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ListResourcesRequest.
+        r"""Sets the provider of this ListResourcesRequest.
 
         云服务名称
 
@@ -105,7 +105,7 @@ class ListResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListResourcesRequest.
+        r"""Gets the type of this ListResourcesRequest.
 
         资源类型名称
 
@@ -116,7 +116,7 @@ class ListResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListResourcesRequest.
+        r"""Sets the type of this ListResourcesRequest.
 
         资源类型名称
 
@@ -127,7 +127,7 @@ class ListResourcesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListResourcesRequest.
+        r"""Gets the region_id of this ListResourcesRequest.
 
         区域ID
 
@@ -138,7 +138,7 @@ class ListResourcesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListResourcesRequest.
+        r"""Sets the region_id of this ListResourcesRequest.
 
         区域ID
 
@@ -149,7 +149,7 @@ class ListResourcesRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ListResourcesRequest.
+        r"""Gets the ep_id of this ListResourcesRequest.
 
         企业项目ID
 
@@ -160,7 +160,7 @@ class ListResourcesRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ListResourcesRequest.
+        r"""Sets the ep_id of this ListResourcesRequest.
 
         企业项目ID
 
@@ -171,7 +171,7 @@ class ListResourcesRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListResourcesRequest.
+        r"""Gets the tag of this ListResourcesRequest.
 
         标签
 
@@ -182,7 +182,7 @@ class ListResourcesRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListResourcesRequest.
+        r"""Sets the tag of this ListResourcesRequest.
 
         标签
 
@@ -193,7 +193,7 @@ class ListResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourcesRequest.
+        r"""Gets the limit of this ListResourcesRequest.
 
         最大的返回数量
 
@@ -204,7 +204,7 @@ class ListResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourcesRequest.
+        r"""Sets the limit of this ListResourcesRequest.
 
         最大的返回数量
 
@@ -215,7 +215,7 @@ class ListResourcesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListResourcesRequest.
+        r"""Gets the marker of this ListResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -226,7 +226,7 @@ class ListResourcesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListResourcesRequest.
+        r"""Sets the marker of this ListResourcesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

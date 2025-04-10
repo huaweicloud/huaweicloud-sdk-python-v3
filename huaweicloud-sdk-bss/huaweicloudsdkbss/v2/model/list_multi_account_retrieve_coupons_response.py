@@ -28,7 +28,7 @@ class ListMultiAccountRetrieveCouponsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, avail_retrieve_coupons=None):
-        """ListMultiAccountRetrieveCouponsResponse
+        r"""ListMultiAccountRetrieveCouponsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMultiAccountRetrieveCouponsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListMultiAccountRetrieveCouponsResponse.
+        r"""Gets the total_count of this ListMultiAccountRetrieveCouponsResponse.
 
         记录条数。
 
@@ -62,7 +62,7 @@ class ListMultiAccountRetrieveCouponsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListMultiAccountRetrieveCouponsResponse.
+        r"""Sets the total_count of this ListMultiAccountRetrieveCouponsResponse.
 
         记录条数。
 
@@ -73,7 +73,7 @@ class ListMultiAccountRetrieveCouponsResponse(SdkResponse):
 
     @property
     def avail_retrieve_coupons(self):
-        """Gets the avail_retrieve_coupons of this ListMultiAccountRetrieveCouponsResponse.
+        r"""Gets the avail_retrieve_coupons of this ListMultiAccountRetrieveCouponsResponse.
 
         可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListMultiAccountRetrieveCouponsResponse(SdkResponse):
 
     @avail_retrieve_coupons.setter
     def avail_retrieve_coupons(self, avail_retrieve_coupons):
-        """Sets the avail_retrieve_coupons of this ListMultiAccountRetrieveCouponsResponse.
+        r"""Sets the avail_retrieve_coupons of this ListMultiAccountRetrieveCouponsResponse.
 
         可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 

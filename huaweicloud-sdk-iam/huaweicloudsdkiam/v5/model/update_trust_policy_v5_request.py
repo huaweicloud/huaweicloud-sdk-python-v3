@@ -27,7 +27,7 @@ class UpdateTrustPolicyV5Request:
     }
 
     def __init__(self, agency_id=None, body=None):
-        """UpdateTrustPolicyV5Request
+        r"""UpdateTrustPolicyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTrustPolicyV5Request:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this UpdateTrustPolicyV5Request.
+        r"""Gets the agency_id of this UpdateTrustPolicyV5Request.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -60,7 +60,7 @@ class UpdateTrustPolicyV5Request:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this UpdateTrustPolicyV5Request.
+        r"""Sets the agency_id of this UpdateTrustPolicyV5Request.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class UpdateTrustPolicyV5Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTrustPolicyV5Request.
+        r"""Gets the body of this UpdateTrustPolicyV5Request.
 
         :return: The body of this UpdateTrustPolicyV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.UpdateTrustPolicyReqBody`
@@ -80,7 +80,7 @@ class UpdateTrustPolicyV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTrustPolicyV5Request.
+        r"""Sets the body of this UpdateTrustPolicyV5Request.
 
         :param body: The body of this UpdateTrustPolicyV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.UpdateTrustPolicyReqBody`

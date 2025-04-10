@@ -49,7 +49,7 @@ class RemuxTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None, output_param=None, complete_ratio=None, output_metadata=None):
-        """RemuxTask
+        r"""RemuxTask
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class RemuxTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this RemuxTask.
+        r"""Gets the task_id of this RemuxTask.
 
         任务ID 
 
@@ -138,7 +138,7 @@ class RemuxTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this RemuxTask.
+        r"""Sets the task_id of this RemuxTask.
 
         任务ID 
 
@@ -149,7 +149,7 @@ class RemuxTask:
 
     @property
     def status(self):
-        """Gets the status of this RemuxTask.
+        r"""Gets the status of this RemuxTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -160,7 +160,7 @@ class RemuxTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RemuxTask.
+        r"""Sets the status of this RemuxTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -171,7 +171,7 @@ class RemuxTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RemuxTask.
+        r"""Gets the create_time of this RemuxTask.
 
         任务创建时间 
 
@@ -182,7 +182,7 @@ class RemuxTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RemuxTask.
+        r"""Sets the create_time of this RemuxTask.
 
         任务创建时间 
 
@@ -193,7 +193,7 @@ class RemuxTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RemuxTask.
+        r"""Gets the start_time of this RemuxTask.
 
         任务启动时间 
 
@@ -204,7 +204,7 @@ class RemuxTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RemuxTask.
+        r"""Sets the start_time of this RemuxTask.
 
         任务启动时间 
 
@@ -215,7 +215,7 @@ class RemuxTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RemuxTask.
+        r"""Gets the end_time of this RemuxTask.
 
         任务结束时间 
 
@@ -226,7 +226,7 @@ class RemuxTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RemuxTask.
+        r"""Sets the end_time of this RemuxTask.
 
         任务结束时间 
 
@@ -237,7 +237,7 @@ class RemuxTask:
 
     @property
     def error_code(self):
-        """Gets the error_code of this RemuxTask.
+        r"""Gets the error_code of this RemuxTask.
 
         任务的返回码。 
 
@@ -248,7 +248,7 @@ class RemuxTask:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RemuxTask.
+        r"""Sets the error_code of this RemuxTask.
 
         任务的返回码。 
 
@@ -259,7 +259,7 @@ class RemuxTask:
 
     @property
     def description(self):
-        """Gets the description of this RemuxTask.
+        r"""Gets the description of this RemuxTask.
 
         错误描述 
 
@@ -270,7 +270,7 @@ class RemuxTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RemuxTask.
+        r"""Sets the description of this RemuxTask.
 
         错误描述 
 
@@ -281,7 +281,7 @@ class RemuxTask:
 
     @property
     def user_data(self):
-        """Gets the user_data of this RemuxTask.
+        r"""Gets the user_data of this RemuxTask.
 
         用户数据。 
 
@@ -292,7 +292,7 @@ class RemuxTask:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this RemuxTask.
+        r"""Sets the user_data of this RemuxTask.
 
         用户数据。 
 
@@ -303,7 +303,7 @@ class RemuxTask:
 
     @property
     def input(self):
-        """Gets the input of this RemuxTask.
+        r"""Gets the input of this RemuxTask.
 
         :return: The input of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -312,7 +312,7 @@ class RemuxTask:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this RemuxTask.
+        r"""Sets the input of this RemuxTask.
 
         :param input: The input of this RemuxTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -321,7 +321,7 @@ class RemuxTask:
 
     @property
     def output(self):
-        """Gets the output of this RemuxTask.
+        r"""Gets the output of this RemuxTask.
 
         :return: The output of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -330,7 +330,7 @@ class RemuxTask:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this RemuxTask.
+        r"""Sets the output of this RemuxTask.
 
         :param output: The output of this RemuxTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -339,7 +339,7 @@ class RemuxTask:
 
     @property
     def output_param(self):
-        """Gets the output_param of this RemuxTask.
+        r"""Gets the output_param of this RemuxTask.
 
         :return: The output_param of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
@@ -348,7 +348,7 @@ class RemuxTask:
 
     @output_param.setter
     def output_param(self, output_param):
-        """Sets the output_param of this RemuxTask.
+        r"""Sets the output_param of this RemuxTask.
 
         :param output_param: The output_param of this RemuxTask.
         :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
@@ -357,7 +357,7 @@ class RemuxTask:
 
     @property
     def complete_ratio(self):
-        """Gets the complete_ratio of this RemuxTask.
+        r"""Gets the complete_ratio of this RemuxTask.
 
         任务完成进度百分比值。 
 
@@ -368,7 +368,7 @@ class RemuxTask:
 
     @complete_ratio.setter
     def complete_ratio(self, complete_ratio):
-        """Sets the complete_ratio of this RemuxTask.
+        r"""Sets the complete_ratio of this RemuxTask.
 
         任务完成进度百分比值。 
 
@@ -379,7 +379,7 @@ class RemuxTask:
 
     @property
     def output_metadata(self):
-        """Gets the output_metadata of this RemuxTask.
+        r"""Gets the output_metadata of this RemuxTask.
 
         :return: The output_metadata of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
@@ -388,7 +388,7 @@ class RemuxTask:
 
     @output_metadata.setter
     def output_metadata(self, output_metadata):
-        """Sets the output_metadata of this RemuxTask.
+        r"""Sets the output_metadata of this RemuxTask.
 
         :param output_metadata: The output_metadata of this RemuxTask.
         :type output_metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

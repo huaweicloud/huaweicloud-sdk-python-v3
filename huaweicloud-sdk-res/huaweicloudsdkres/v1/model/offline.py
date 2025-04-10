@@ -29,7 +29,7 @@ class Offline:
     }
 
     def __init__(self, user_url=None, item_url=None, behavior_url=None):
-        """Offline
+        r"""Offline
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Offline:
 
     @property
     def user_url(self):
-        """Gets the user_url of this Offline.
+        r"""Gets the user_url of this Offline.
 
         用户数据url。
 
@@ -65,7 +65,7 @@ class Offline:
 
     @user_url.setter
     def user_url(self, user_url):
-        """Sets the user_url of this Offline.
+        r"""Sets the user_url of this Offline.
 
         用户数据url。
 
@@ -76,7 +76,7 @@ class Offline:
 
     @property
     def item_url(self):
-        """Gets the item_url of this Offline.
+        r"""Gets the item_url of this Offline.
 
         物品数据url。
 
@@ -87,7 +87,7 @@ class Offline:
 
     @item_url.setter
     def item_url(self, item_url):
-        """Sets the item_url of this Offline.
+        r"""Sets the item_url of this Offline.
 
         物品数据url。
 
@@ -98,7 +98,7 @@ class Offline:
 
     @property
     def behavior_url(self):
-        """Gets the behavior_url of this Offline.
+        r"""Gets the behavior_url of this Offline.
 
         行为数据url。
 
@@ -109,7 +109,7 @@ class Offline:
 
     @behavior_url.setter
     def behavior_url(self, behavior_url):
-        """Sets the behavior_url of this Offline.
+        r"""Sets the behavior_url of this Offline.
 
         行为数据url。
 

@@ -29,7 +29,7 @@ class SwitchNodeConnectionRequest:
     }
 
     def __init__(self, node_id=None, provider=None, action=None):
-        """SwitchNodeConnectionRequest
+        r"""SwitchNodeConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SwitchNodeConnectionRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SwitchNodeConnectionRequest.
+        r"""Gets the node_id of this SwitchNodeConnectionRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -66,7 +66,7 @@ class SwitchNodeConnectionRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SwitchNodeConnectionRequest.
+        r"""Sets the node_id of this SwitchNodeConnectionRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -77,7 +77,7 @@ class SwitchNodeConnectionRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this SwitchNodeConnectionRequest.
+        r"""Gets the provider of this SwitchNodeConnectionRequest.
 
         服务提供者：ief或hilens，选择设备纳管到不同的平台。不填默认为hilens平台
 
@@ -88,7 +88,7 @@ class SwitchNodeConnectionRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this SwitchNodeConnectionRequest.
+        r"""Sets the provider of this SwitchNodeConnectionRequest.
 
         服务提供者：ief或hilens，选择设备纳管到不同的平台。不填默认为hilens平台
 
@@ -99,7 +99,7 @@ class SwitchNodeConnectionRequest:
 
     @property
     def action(self):
-        """Gets the action of this SwitchNodeConnectionRequest.
+        r"""Gets the action of this SwitchNodeConnectionRequest.
 
         设备启用/停用动作，启用（start）,停用（stop）
 
@@ -110,7 +110,7 @@ class SwitchNodeConnectionRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this SwitchNodeConnectionRequest.
+        r"""Sets the action of this SwitchNodeConnectionRequest.
 
         设备启用/停用动作，启用（start）,停用（stop）
 

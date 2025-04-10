@@ -24,7 +24,7 @@ class DeletePermanentAccessKeyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePermanentAccessKeyResponse
+        r"""DeletePermanentAccessKeyResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ShowDomainHttpsCertRequest:
     }
 
     def __init__(self, domain=None):
-        """ShowDomainHttpsCertRequest
+        r"""ShowDomainHttpsCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDomainHttpsCertRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ShowDomainHttpsCertRequest.
+        r"""Gets the domain of this ShowDomainHttpsCertRequest.
 
         直播播放域名
 
@@ -53,7 +53,7 @@ class ShowDomainHttpsCertRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowDomainHttpsCertRequest.
+        r"""Sets the domain of this ShowDomainHttpsCertRequest.
 
         直播播放域名
 

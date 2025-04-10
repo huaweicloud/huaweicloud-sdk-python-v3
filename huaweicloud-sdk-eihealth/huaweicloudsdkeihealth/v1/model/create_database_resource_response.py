@@ -24,7 +24,7 @@ class CreateDatabaseResourceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateDatabaseResourceResponse
+        r"""CreateDatabaseResourceResponse
 
         The model defined in huaweicloud sdk
 

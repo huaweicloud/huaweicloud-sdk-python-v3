@@ -27,7 +27,7 @@ class CreateProjectRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateProjectRequestBody
+        r"""CreateProjectRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateProjectRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateProjectRequestBody.
+        r"""Gets the name of this CreateProjectRequestBody.
 
         名称
 
@@ -60,7 +60,7 @@ class CreateProjectRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProjectRequestBody.
+        r"""Sets the name of this CreateProjectRequestBody.
 
         名称
 
@@ -71,7 +71,7 @@ class CreateProjectRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateProjectRequestBody.
+        r"""Gets the description of this CreateProjectRequestBody.
 
         描述
 
@@ -82,7 +82,7 @@ class CreateProjectRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProjectRequestBody.
+        r"""Sets the description of this CreateProjectRequestBody.
 
         描述
 

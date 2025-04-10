@@ -31,7 +31,7 @@ class CreateRoute:
     }
 
     def __init__(self, destination=None, attachment_id=None, is_blackhole=None, description=None):
-        """CreateRoute
+        r"""CreateRoute
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateRoute:
 
     @property
     def destination(self):
-        """Gets the destination of this CreateRoute.
+        r"""Gets the destination of this CreateRoute.
 
         路由目的地址
 
@@ -74,7 +74,7 @@ class CreateRoute:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CreateRoute.
+        r"""Sets the destination of this CreateRoute.
 
         路由目的地址
 
@@ -85,7 +85,7 @@ class CreateRoute:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this CreateRoute.
+        r"""Gets the attachment_id of this CreateRoute.
 
         路由下一跳指向的连接ID
 
@@ -96,7 +96,7 @@ class CreateRoute:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this CreateRoute.
+        r"""Sets the attachment_id of this CreateRoute.
 
         路由下一跳指向的连接ID
 
@@ -107,7 +107,7 @@ class CreateRoute:
 
     @property
     def is_blackhole(self):
-        """Gets the is_blackhole of this CreateRoute.
+        r"""Gets the is_blackhole of this CreateRoute.
 
         是否为黑洞路由，默认为false
 
@@ -118,7 +118,7 @@ class CreateRoute:
 
     @is_blackhole.setter
     def is_blackhole(self, is_blackhole):
-        """Sets the is_blackhole of this CreateRoute.
+        r"""Sets the is_blackhole of this CreateRoute.
 
         是否为黑洞路由，默认为false
 
@@ -129,7 +129,7 @@ class CreateRoute:
 
     @property
     def description(self):
-        """Gets the description of this CreateRoute.
+        r"""Gets the description of this CreateRoute.
 
         路由描述信息
 
@@ -140,7 +140,7 @@ class CreateRoute:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRoute.
+        r"""Sets the description of this CreateRoute.
 
         路由描述信息
 

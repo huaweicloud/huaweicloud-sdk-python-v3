@@ -25,7 +25,7 @@ class SignRequest:
     }
 
     def __init__(self, body=None):
-        """SignRequest
+        r"""SignRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SignRequest:
 
     @property
     def body(self):
-        """Gets the body of this SignRequest.
+        r"""Gets the body of this SignRequest.
 
         :return: The body of this SignRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.SignRequestBody`
@@ -52,7 +52,7 @@ class SignRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SignRequest.
+        r"""Sets the body of this SignRequest.
 
         :param body: The body of this SignRequest.
         :type body: :class:`huaweicloudsdkkms.v2.SignRequestBody`

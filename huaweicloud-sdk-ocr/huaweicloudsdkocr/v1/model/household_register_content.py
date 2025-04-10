@@ -81,7 +81,7 @@ class HouseholdRegisterContent:
     }
 
     def __init__(self, name=None, householder_relationship=None, former_name=None, sex=None, birthplace=None, ethnicity=None, origin_place=None, birth_date=None, other_address=None, religious_belief=None, id_card_number=None, height=None, blood_type=None, education=None, marital_status=None, military_service_status=None, work_place=None, occupation=None, migrated_to_city=None, migrated_to_address=None, registrar_signature_seal=None, registration_date=None, household_type=None, household_number=None, householder_name=None, community=None, address=None, issue_date=None, police_station=None):
-        """HouseholdRegisterContent
+        r"""HouseholdRegisterContent
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class HouseholdRegisterContent:
 
     @property
     def name(self):
-        """Gets the name of this HouseholdRegisterContent.
+        r"""Gets the name of this HouseholdRegisterContent.
 
         姓名。 
 
@@ -250,7 +250,7 @@ class HouseholdRegisterContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HouseholdRegisterContent.
+        r"""Sets the name of this HouseholdRegisterContent.
 
         姓名。 
 
@@ -261,7 +261,7 @@ class HouseholdRegisterContent:
 
     @property
     def householder_relationship(self):
-        """Gets the householder_relationship of this HouseholdRegisterContent.
+        r"""Gets the householder_relationship of this HouseholdRegisterContent.
 
         户主或与户主关系。 
 
@@ -272,7 +272,7 @@ class HouseholdRegisterContent:
 
     @householder_relationship.setter
     def householder_relationship(self, householder_relationship):
-        """Sets the householder_relationship of this HouseholdRegisterContent.
+        r"""Sets the householder_relationship of this HouseholdRegisterContent.
 
         户主或与户主关系。 
 
@@ -283,7 +283,7 @@ class HouseholdRegisterContent:
 
     @property
     def former_name(self):
-        """Gets the former_name of this HouseholdRegisterContent.
+        r"""Gets the former_name of this HouseholdRegisterContent.
 
         曾用名。 
 
@@ -294,7 +294,7 @@ class HouseholdRegisterContent:
 
     @former_name.setter
     def former_name(self, former_name):
-        """Sets the former_name of this HouseholdRegisterContent.
+        r"""Sets the former_name of this HouseholdRegisterContent.
 
         曾用名。 
 
@@ -305,7 +305,7 @@ class HouseholdRegisterContent:
 
     @property
     def sex(self):
-        """Gets the sex of this HouseholdRegisterContent.
+        r"""Gets the sex of this HouseholdRegisterContent.
 
         性别。 
 
@@ -316,7 +316,7 @@ class HouseholdRegisterContent:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this HouseholdRegisterContent.
+        r"""Sets the sex of this HouseholdRegisterContent.
 
         性别。 
 
@@ -327,7 +327,7 @@ class HouseholdRegisterContent:
 
     @property
     def birthplace(self):
-        """Gets the birthplace of this HouseholdRegisterContent.
+        r"""Gets the birthplace of this HouseholdRegisterContent.
 
         出生地。 
 
@@ -338,7 +338,7 @@ class HouseholdRegisterContent:
 
     @birthplace.setter
     def birthplace(self, birthplace):
-        """Sets the birthplace of this HouseholdRegisterContent.
+        r"""Sets the birthplace of this HouseholdRegisterContent.
 
         出生地。 
 
@@ -349,7 +349,7 @@ class HouseholdRegisterContent:
 
     @property
     def ethnicity(self):
-        """Gets the ethnicity of this HouseholdRegisterContent.
+        r"""Gets the ethnicity of this HouseholdRegisterContent.
 
         民族。 
 
@@ -360,7 +360,7 @@ class HouseholdRegisterContent:
 
     @ethnicity.setter
     def ethnicity(self, ethnicity):
-        """Sets the ethnicity of this HouseholdRegisterContent.
+        r"""Sets the ethnicity of this HouseholdRegisterContent.
 
         民族。 
 
@@ -371,7 +371,7 @@ class HouseholdRegisterContent:
 
     @property
     def origin_place(self):
-        """Gets the origin_place of this HouseholdRegisterContent.
+        r"""Gets the origin_place of this HouseholdRegisterContent.
 
         籍贯。 
 
@@ -382,7 +382,7 @@ class HouseholdRegisterContent:
 
     @origin_place.setter
     def origin_place(self, origin_place):
-        """Sets the origin_place of this HouseholdRegisterContent.
+        r"""Sets the origin_place of this HouseholdRegisterContent.
 
         籍贯。 
 
@@ -393,7 +393,7 @@ class HouseholdRegisterContent:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this HouseholdRegisterContent.
+        r"""Gets the birth_date of this HouseholdRegisterContent.
 
         出生日期。 
 
@@ -404,7 +404,7 @@ class HouseholdRegisterContent:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this HouseholdRegisterContent.
+        r"""Sets the birth_date of this HouseholdRegisterContent.
 
         出生日期。 
 
@@ -415,7 +415,7 @@ class HouseholdRegisterContent:
 
     @property
     def other_address(self):
-        """Gets the other_address of this HouseholdRegisterContent.
+        r"""Gets the other_address of this HouseholdRegisterContent.
 
         本市(县)其他住址。 
 
@@ -426,7 +426,7 @@ class HouseholdRegisterContent:
 
     @other_address.setter
     def other_address(self, other_address):
-        """Sets the other_address of this HouseholdRegisterContent.
+        r"""Sets the other_address of this HouseholdRegisterContent.
 
         本市(县)其他住址。 
 
@@ -437,7 +437,7 @@ class HouseholdRegisterContent:
 
     @property
     def religious_belief(self):
-        """Gets the religious_belief of this HouseholdRegisterContent.
+        r"""Gets the religious_belief of this HouseholdRegisterContent.
 
         宗教信仰。 
 
@@ -448,7 +448,7 @@ class HouseholdRegisterContent:
 
     @religious_belief.setter
     def religious_belief(self, religious_belief):
-        """Sets the religious_belief of this HouseholdRegisterContent.
+        r"""Sets the religious_belief of this HouseholdRegisterContent.
 
         宗教信仰。 
 
@@ -459,7 +459,7 @@ class HouseholdRegisterContent:
 
     @property
     def id_card_number(self):
-        """Gets the id_card_number of this HouseholdRegisterContent.
+        r"""Gets the id_card_number of this HouseholdRegisterContent.
 
         公民身份证件编号。 
 
@@ -470,7 +470,7 @@ class HouseholdRegisterContent:
 
     @id_card_number.setter
     def id_card_number(self, id_card_number):
-        """Sets the id_card_number of this HouseholdRegisterContent.
+        r"""Sets the id_card_number of this HouseholdRegisterContent.
 
         公民身份证件编号。 
 
@@ -481,7 +481,7 @@ class HouseholdRegisterContent:
 
     @property
     def height(self):
-        """Gets the height of this HouseholdRegisterContent.
+        r"""Gets the height of this HouseholdRegisterContent.
 
         身高。 
 
@@ -492,7 +492,7 @@ class HouseholdRegisterContent:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this HouseholdRegisterContent.
+        r"""Sets the height of this HouseholdRegisterContent.
 
         身高。 
 
@@ -503,7 +503,7 @@ class HouseholdRegisterContent:
 
     @property
     def blood_type(self):
-        """Gets the blood_type of this HouseholdRegisterContent.
+        r"""Gets the blood_type of this HouseholdRegisterContent.
 
         血型。 
 
@@ -514,7 +514,7 @@ class HouseholdRegisterContent:
 
     @blood_type.setter
     def blood_type(self, blood_type):
-        """Sets the blood_type of this HouseholdRegisterContent.
+        r"""Sets the blood_type of this HouseholdRegisterContent.
 
         血型。 
 
@@ -525,7 +525,7 @@ class HouseholdRegisterContent:
 
     @property
     def education(self):
-        """Gets the education of this HouseholdRegisterContent.
+        r"""Gets the education of this HouseholdRegisterContent.
 
         文化程度。 
 
@@ -536,7 +536,7 @@ class HouseholdRegisterContent:
 
     @education.setter
     def education(self, education):
-        """Sets the education of this HouseholdRegisterContent.
+        r"""Sets the education of this HouseholdRegisterContent.
 
         文化程度。 
 
@@ -547,7 +547,7 @@ class HouseholdRegisterContent:
 
     @property
     def marital_status(self):
-        """Gets the marital_status of this HouseholdRegisterContent.
+        r"""Gets the marital_status of this HouseholdRegisterContent.
 
         婚姻状况。   
 
@@ -558,7 +558,7 @@ class HouseholdRegisterContent:
 
     @marital_status.setter
     def marital_status(self, marital_status):
-        """Sets the marital_status of this HouseholdRegisterContent.
+        r"""Sets the marital_status of this HouseholdRegisterContent.
 
         婚姻状况。   
 
@@ -569,7 +569,7 @@ class HouseholdRegisterContent:
 
     @property
     def military_service_status(self):
-        """Gets the military_service_status of this HouseholdRegisterContent.
+        r"""Gets the military_service_status of this HouseholdRegisterContent.
 
         兵役情况。 
 
@@ -580,7 +580,7 @@ class HouseholdRegisterContent:
 
     @military_service_status.setter
     def military_service_status(self, military_service_status):
-        """Sets the military_service_status of this HouseholdRegisterContent.
+        r"""Sets the military_service_status of this HouseholdRegisterContent.
 
         兵役情况。 
 
@@ -591,7 +591,7 @@ class HouseholdRegisterContent:
 
     @property
     def work_place(self):
-        """Gets the work_place of this HouseholdRegisterContent.
+        r"""Gets the work_place of this HouseholdRegisterContent.
 
         服务处所。 
 
@@ -602,7 +602,7 @@ class HouseholdRegisterContent:
 
     @work_place.setter
     def work_place(self, work_place):
-        """Sets the work_place of this HouseholdRegisterContent.
+        r"""Sets the work_place of this HouseholdRegisterContent.
 
         服务处所。 
 
@@ -613,7 +613,7 @@ class HouseholdRegisterContent:
 
     @property
     def occupation(self):
-        """Gets the occupation of this HouseholdRegisterContent.
+        r"""Gets the occupation of this HouseholdRegisterContent.
 
         职业。 
 
@@ -624,7 +624,7 @@ class HouseholdRegisterContent:
 
     @occupation.setter
     def occupation(self, occupation):
-        """Sets the occupation of this HouseholdRegisterContent.
+        r"""Sets the occupation of this HouseholdRegisterContent.
 
         职业。 
 
@@ -635,7 +635,7 @@ class HouseholdRegisterContent:
 
     @property
     def migrated_to_city(self):
-        """Gets the migrated_to_city of this HouseholdRegisterContent.
+        r"""Gets the migrated_to_city of this HouseholdRegisterContent.
 
         何时由何地迁来本市(县)。 
 
@@ -646,7 +646,7 @@ class HouseholdRegisterContent:
 
     @migrated_to_city.setter
     def migrated_to_city(self, migrated_to_city):
-        """Sets the migrated_to_city of this HouseholdRegisterContent.
+        r"""Sets the migrated_to_city of this HouseholdRegisterContent.
 
         何时由何地迁来本市(县)。 
 
@@ -657,7 +657,7 @@ class HouseholdRegisterContent:
 
     @property
     def migrated_to_address(self):
-        """Gets the migrated_to_address of this HouseholdRegisterContent.
+        r"""Gets the migrated_to_address of this HouseholdRegisterContent.
 
         何时由何地迁来本址。 
 
@@ -668,7 +668,7 @@ class HouseholdRegisterContent:
 
     @migrated_to_address.setter
     def migrated_to_address(self, migrated_to_address):
-        """Sets the migrated_to_address of this HouseholdRegisterContent.
+        r"""Sets the migrated_to_address of this HouseholdRegisterContent.
 
         何时由何地迁来本址。 
 
@@ -679,7 +679,7 @@ class HouseholdRegisterContent:
 
     @property
     def registrar_signature_seal(self):
-        """Gets the registrar_signature_seal of this HouseholdRegisterContent.
+        r"""Gets the registrar_signature_seal of this HouseholdRegisterContent.
 
         承办人签章。 
 
@@ -690,7 +690,7 @@ class HouseholdRegisterContent:
 
     @registrar_signature_seal.setter
     def registrar_signature_seal(self, registrar_signature_seal):
-        """Sets the registrar_signature_seal of this HouseholdRegisterContent.
+        r"""Sets the registrar_signature_seal of this HouseholdRegisterContent.
 
         承办人签章。 
 
@@ -701,7 +701,7 @@ class HouseholdRegisterContent:
 
     @property
     def registration_date(self):
-        """Gets the registration_date of this HouseholdRegisterContent.
+        r"""Gets the registration_date of this HouseholdRegisterContent.
 
         登记日期。 
 
@@ -712,7 +712,7 @@ class HouseholdRegisterContent:
 
     @registration_date.setter
     def registration_date(self, registration_date):
-        """Sets the registration_date of this HouseholdRegisterContent.
+        r"""Sets the registration_date of this HouseholdRegisterContent.
 
         登记日期。 
 
@@ -723,7 +723,7 @@ class HouseholdRegisterContent:
 
     @property
     def household_type(self):
-        """Gets the household_type of this HouseholdRegisterContent.
+        r"""Gets the household_type of this HouseholdRegisterContent.
 
         户别。 
 
@@ -734,7 +734,7 @@ class HouseholdRegisterContent:
 
     @household_type.setter
     def household_type(self, household_type):
-        """Sets the household_type of this HouseholdRegisterContent.
+        r"""Sets the household_type of this HouseholdRegisterContent.
 
         户别。 
 
@@ -745,7 +745,7 @@ class HouseholdRegisterContent:
 
     @property
     def household_number(self):
-        """Gets the household_number of this HouseholdRegisterContent.
+        r"""Gets the household_number of this HouseholdRegisterContent.
 
         户号。 
 
@@ -756,7 +756,7 @@ class HouseholdRegisterContent:
 
     @household_number.setter
     def household_number(self, household_number):
-        """Sets the household_number of this HouseholdRegisterContent.
+        r"""Sets the household_number of this HouseholdRegisterContent.
 
         户号。 
 
@@ -767,7 +767,7 @@ class HouseholdRegisterContent:
 
     @property
     def householder_name(self):
-        """Gets the householder_name of this HouseholdRegisterContent.
+        r"""Gets the householder_name of this HouseholdRegisterContent.
 
         户主姓名。当type参数为“首页”时，返回此参数。 
 
@@ -778,7 +778,7 @@ class HouseholdRegisterContent:
 
     @householder_name.setter
     def householder_name(self, householder_name):
-        """Sets the householder_name of this HouseholdRegisterContent.
+        r"""Sets the householder_name of this HouseholdRegisterContent.
 
         户主姓名。当type参数为“首页”时，返回此参数。 
 
@@ -789,7 +789,7 @@ class HouseholdRegisterContent:
 
     @property
     def community(self):
-        """Gets the community of this HouseholdRegisterContent.
+        r"""Gets the community of this HouseholdRegisterContent.
 
         社区。当type参数为“首页”时，返回此参数。 
 
@@ -800,7 +800,7 @@ class HouseholdRegisterContent:
 
     @community.setter
     def community(self, community):
-        """Sets the community of this HouseholdRegisterContent.
+        r"""Sets the community of this HouseholdRegisterContent.
 
         社区。当type参数为“首页”时，返回此参数。 
 
@@ -811,7 +811,7 @@ class HouseholdRegisterContent:
 
     @property
     def address(self):
-        """Gets the address of this HouseholdRegisterContent.
+        r"""Gets the address of this HouseholdRegisterContent.
 
         住址。当type参数为“首页”时，返回此参数。 
 
@@ -822,7 +822,7 @@ class HouseholdRegisterContent:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this HouseholdRegisterContent.
+        r"""Sets the address of this HouseholdRegisterContent.
 
         住址。当type参数为“首页”时，返回此参数。 
 
@@ -833,7 +833,7 @@ class HouseholdRegisterContent:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this HouseholdRegisterContent.
+        r"""Gets the issue_date of this HouseholdRegisterContent.
 
         签发日期。当type参数为“首页”时，返回此参数。 
 
@@ -844,7 +844,7 @@ class HouseholdRegisterContent:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this HouseholdRegisterContent.
+        r"""Sets the issue_date of this HouseholdRegisterContent.
 
         签发日期。当type参数为“首页”时，返回此参数。 
 
@@ -855,7 +855,7 @@ class HouseholdRegisterContent:
 
     @property
     def police_station(self):
-        """Gets the police_station of this HouseholdRegisterContent.
+        r"""Gets the police_station of this HouseholdRegisterContent.
 
         户口登记机关。当type参数为“首页”时，返回此参数。 
 
@@ -866,7 +866,7 @@ class HouseholdRegisterContent:
 
     @police_station.setter
     def police_station(self, police_station):
-        """Sets the police_station of this HouseholdRegisterContent.
+        r"""Sets the police_station of this HouseholdRegisterContent.
 
         户口登记机关。当type参数为“首页”时，返回此参数。 
 

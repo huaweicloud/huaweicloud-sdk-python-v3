@@ -29,7 +29,7 @@ class UpdateAppGroupReq:
     }
 
     def __init__(self, name=None, app_server_group_id=None, description=None):
-        """UpdateAppGroupReq
+        r"""UpdateAppGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAppGroupReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppGroupReq.
+        r"""Gets the name of this UpdateAppGroupReq.
 
         应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -68,7 +68,7 @@ class UpdateAppGroupReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppGroupReq.
+        r"""Sets the name of this UpdateAppGroupReq.
 
         应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -79,7 +79,7 @@ class UpdateAppGroupReq:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this UpdateAppGroupReq.
+        r"""Gets the app_server_group_id of this UpdateAppGroupReq.
 
         应用服务器组ID(仅允许未设置的情形下进行绑定)。
 
@@ -90,7 +90,7 @@ class UpdateAppGroupReq:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this UpdateAppGroupReq.
+        r"""Sets the app_server_group_id of this UpdateAppGroupReq.
 
         应用服务器组ID(仅允许未设置的情形下进行绑定)。
 
@@ -101,7 +101,7 @@ class UpdateAppGroupReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppGroupReq.
+        r"""Gets the description of this UpdateAppGroupReq.
 
         应用组描述。
 
@@ -112,7 +112,7 @@ class UpdateAppGroupReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppGroupReq.
+        r"""Sets the description of this UpdateAppGroupReq.
 
         应用组描述。
 

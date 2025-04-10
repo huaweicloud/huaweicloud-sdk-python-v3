@@ -27,7 +27,7 @@ class ModifyVolumeQoSRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """ModifyVolumeQoSRequest
+        r"""ModifyVolumeQoSRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyVolumeQoSRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ModifyVolumeQoSRequest.
+        r"""Gets the volume_id of this ModifyVolumeQoSRequest.
 
         云硬盘ID。
 
@@ -60,7 +60,7 @@ class ModifyVolumeQoSRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ModifyVolumeQoSRequest.
+        r"""Sets the volume_id of this ModifyVolumeQoSRequest.
 
         云硬盘ID。
 
@@ -71,7 +71,7 @@ class ModifyVolumeQoSRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyVolumeQoSRequest.
+        r"""Gets the body of this ModifyVolumeQoSRequest.
 
         :return: The body of this ModifyVolumeQoSRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSRequestBody`
@@ -80,7 +80,7 @@ class ModifyVolumeQoSRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyVolumeQoSRequest.
+        r"""Sets the body of this ModifyVolumeQoSRequest.
 
         :param body: The body of this ModifyVolumeQoSRequest.
         :type body: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSRequestBody`

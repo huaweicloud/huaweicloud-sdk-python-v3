@@ -26,7 +26,7 @@ class AddVolumesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """AddVolumesResponse
+        r"""AddVolumesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddVolumesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AddVolumesResponse.
+        r"""Gets the job_id of this AddVolumesResponse.
 
         增加磁盘任务ID
 
@@ -55,7 +55,7 @@ class AddVolumesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AddVolumesResponse.
+        r"""Sets the job_id of this AddVolumesResponse.
 
         增加磁盘任务ID
 

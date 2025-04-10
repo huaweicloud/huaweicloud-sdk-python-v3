@@ -29,7 +29,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ChangeGaussMySqlInstanceSpecificationRequest
+        r"""ChangeGaussMySqlInstanceSpecificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeGaussMySqlInstanceSpecificationRequest.
+        r"""Gets the x_language of this ChangeGaussMySqlInstanceSpecificationRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeGaussMySqlInstanceSpecificationRequest.
+        r"""Sets the x_language of this ChangeGaussMySqlInstanceSpecificationRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeGaussMySqlInstanceSpecificationRequest.
+        r"""Gets the instance_id of this ChangeGaussMySqlInstanceSpecificationRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeGaussMySqlInstanceSpecificationRequest.
+        r"""Sets the instance_id of this ChangeGaussMySqlInstanceSpecificationRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeGaussMySqlInstanceSpecificationRequest.
+        r"""Gets the body of this ChangeGaussMySqlInstanceSpecificationRequest.
 
         :return: The body of this ChangeGaussMySqlInstanceSpecificationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChangeSpecificationRequest`
@@ -109,7 +109,7 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeGaussMySqlInstanceSpecificationRequest.
+        r"""Sets the body of this ChangeGaussMySqlInstanceSpecificationRequest.
 
         :param body: The body of this ChangeGaussMySqlInstanceSpecificationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlChangeSpecificationRequest`

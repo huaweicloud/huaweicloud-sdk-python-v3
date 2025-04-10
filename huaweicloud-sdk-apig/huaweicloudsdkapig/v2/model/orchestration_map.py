@@ -31,7 +31,7 @@ class OrchestrationMap:
     }
 
     def __init__(self, map_param_list=None, map_param_range=None, mapped_param_value=None, intercept_length=None):
-        """OrchestrationMap
+        r"""OrchestrationMap
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OrchestrationMap:
 
     @property
     def map_param_list(self):
-        """Gets the map_param_list of this OrchestrationMap.
+        r"""Gets the map_param_list of this OrchestrationMap.
 
         用于映射编排后参数的列表配置，当orchestration_strategy=list时必填，列表长度范围为0-3000。  列表的取值只支持英文，数字，中划线和下划线，1-128个字符。
 
@@ -75,7 +75,7 @@ class OrchestrationMap:
 
     @map_param_list.setter
     def map_param_list(self, map_param_list):
-        """Sets the map_param_list of this OrchestrationMap.
+        r"""Sets the map_param_list of this OrchestrationMap.
 
         用于映射编排后参数的列表配置，当orchestration_strategy=list时必填，列表长度范围为0-3000。  列表的取值只支持英文，数字，中划线和下划线，1-128个字符。
 
@@ -86,7 +86,7 @@ class OrchestrationMap:
 
     @property
     def map_param_range(self):
-        """Gets the map_param_range of this OrchestrationMap.
+        r"""Gets the map_param_range of this OrchestrationMap.
 
         :return: The map_param_range of this OrchestrationMap.
         :rtype: :class:`huaweicloudsdkapig.v2.OrchestrationMapParamRange`
@@ -95,7 +95,7 @@ class OrchestrationMap:
 
     @map_param_range.setter
     def map_param_range(self, map_param_range):
-        """Sets the map_param_range of this OrchestrationMap.
+        r"""Sets the map_param_range of this OrchestrationMap.
 
         :param map_param_range: The map_param_range of this OrchestrationMap.
         :type map_param_range: :class:`huaweicloudsdkapig.v2.OrchestrationMapParamRange`
@@ -104,7 +104,7 @@ class OrchestrationMap:
 
     @property
     def mapped_param_value(self):
-        """Gets the mapped_param_value of this OrchestrationMap.
+        r"""Gets the mapped_param_value of this OrchestrationMap.
 
         编排后的参数取值，只支持英文和数字，1-128个字符。 当orchestration_strategy为hash、head_n、tail_n，或者is_preprocessing为false时，非必填，其他情况必填。
 
@@ -115,7 +115,7 @@ class OrchestrationMap:
 
     @mapped_param_value.setter
     def mapped_param_value(self, mapped_param_value):
-        """Sets the mapped_param_value of this OrchestrationMap.
+        r"""Sets the mapped_param_value of this OrchestrationMap.
 
         编排后的参数取值，只支持英文和数字，1-128个字符。 当orchestration_strategy为hash、head_n、tail_n，或者is_preprocessing为false时，非必填，其他情况必填。
 
@@ -126,7 +126,7 @@ class OrchestrationMap:
 
     @property
     def intercept_length(self):
-        """Gets the intercept_length of this OrchestrationMap.
+        r"""Gets the intercept_length of this OrchestrationMap.
 
         截取长度，取值范围为1-100，当策略类型为head_n和tail_n时必填，当截取长度大于参数长度时，截取参数的结果为完整参数。
 
@@ -137,7 +137,7 @@ class OrchestrationMap:
 
     @intercept_length.setter
     def intercept_length(self, intercept_length):
-        """Sets the intercept_length of this OrchestrationMap.
+        r"""Sets the intercept_length of this OrchestrationMap.
 
         截取长度，取值范围为1-100，当策略类型为head_n和tail_n时必填，当截取长度大于参数长度时，截取参数的结果为完整参数。
 

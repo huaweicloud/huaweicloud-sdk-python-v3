@@ -32,7 +32,7 @@ class ShowEventResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, content=None, last_modified=None):
-        """ShowEventResponse
+        r"""ShowEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowEventResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEventResponse.
+        r"""Gets the id of this ShowEventResponse.
 
         测试事件ID。
 
@@ -76,7 +76,7 @@ class ShowEventResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEventResponse.
+        r"""Sets the id of this ShowEventResponse.
 
         测试事件ID。
 
@@ -87,7 +87,7 @@ class ShowEventResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEventResponse.
+        r"""Gets the name of this ShowEventResponse.
 
         测试事件名称。
 
@@ -98,7 +98,7 @@ class ShowEventResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEventResponse.
+        r"""Sets the name of this ShowEventResponse.
 
         测试事件名称。
 
@@ -109,7 +109,7 @@ class ShowEventResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowEventResponse.
+        r"""Gets the content of this ShowEventResponse.
 
         测试事件content。
 
@@ -120,7 +120,7 @@ class ShowEventResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowEventResponse.
+        r"""Sets the content of this ShowEventResponse.
 
         测试事件content。
 
@@ -131,7 +131,7 @@ class ShowEventResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ShowEventResponse.
+        r"""Gets the last_modified of this ShowEventResponse.
 
         上次修改的时间。
 
@@ -142,7 +142,7 @@ class ShowEventResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ShowEventResponse.
+        r"""Sets the last_modified of this ShowEventResponse.
 
         上次修改的时间。
 

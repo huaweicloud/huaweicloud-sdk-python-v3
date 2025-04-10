@@ -41,7 +41,7 @@ class BusinessNodeModel:
     }
 
     def __init__(self, default=None, display_name=None, eps_id=None, gmt_create=None, gmt_modify=None, id=None, inner_domain_id=None, is_default=None, name=None):
-        """BusinessNodeModel
+        r"""BusinessNodeModel
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class BusinessNodeModel:
 
     @property
     def default(self):
-        """Gets the default of this BusinessNodeModel.
+        r"""Gets the default of this BusinessNodeModel.
 
         默认应用。
 
@@ -110,7 +110,7 @@ class BusinessNodeModel:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this BusinessNodeModel.
+        r"""Sets the default of this BusinessNodeModel.
 
         默认应用。
 
@@ -121,7 +121,7 @@ class BusinessNodeModel:
 
     @property
     def display_name(self):
-        """Gets the display_name of this BusinessNodeModel.
+        r"""Gets the display_name of this BusinessNodeModel.
 
         应用展示名称。
 
@@ -132,7 +132,7 @@ class BusinessNodeModel:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this BusinessNodeModel.
+        r"""Sets the display_name of this BusinessNodeModel.
 
         应用展示名称。
 
@@ -143,7 +143,7 @@ class BusinessNodeModel:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this BusinessNodeModel.
+        r"""Gets the eps_id of this BusinessNodeModel.
 
         企业项目的id。
 
@@ -154,7 +154,7 @@ class BusinessNodeModel:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this BusinessNodeModel.
+        r"""Sets the eps_id of this BusinessNodeModel.
 
         企业项目的id。
 
@@ -165,7 +165,7 @@ class BusinessNodeModel:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this BusinessNodeModel.
+        r"""Gets the gmt_create of this BusinessNodeModel.
 
         创建时间。
 
@@ -176,7 +176,7 @@ class BusinessNodeModel:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this BusinessNodeModel.
+        r"""Sets the gmt_create of this BusinessNodeModel.
 
         创建时间。
 
@@ -187,7 +187,7 @@ class BusinessNodeModel:
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this BusinessNodeModel.
+        r"""Gets the gmt_modify of this BusinessNodeModel.
 
         修改时间。
 
@@ -198,7 +198,7 @@ class BusinessNodeModel:
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this BusinessNodeModel.
+        r"""Sets the gmt_modify of this BusinessNodeModel.
 
         修改时间。
 
@@ -209,7 +209,7 @@ class BusinessNodeModel:
 
     @property
     def id(self):
-        """Gets the id of this BusinessNodeModel.
+        r"""Gets the id of this BusinessNodeModel.
 
         应用id。
 
@@ -220,7 +220,7 @@ class BusinessNodeModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BusinessNodeModel.
+        r"""Sets the id of this BusinessNodeModel.
 
         应用id。
 
@@ -231,7 +231,7 @@ class BusinessNodeModel:
 
     @property
     def inner_domain_id(self):
-        """Gets the inner_domain_id of this BusinessNodeModel.
+        r"""Gets the inner_domain_id of this BusinessNodeModel.
 
         内部租户id。
 
@@ -242,7 +242,7 @@ class BusinessNodeModel:
 
     @inner_domain_id.setter
     def inner_domain_id(self, inner_domain_id):
-        """Sets the inner_domain_id of this BusinessNodeModel.
+        r"""Sets the inner_domain_id of this BusinessNodeModel.
 
         内部租户id。
 
@@ -253,7 +253,7 @@ class BusinessNodeModel:
 
     @property
     def is_default(self):
-        """Gets the is_default of this BusinessNodeModel.
+        r"""Gets the is_default of this BusinessNodeModel.
 
         是否是默认的应用。
 
@@ -264,7 +264,7 @@ class BusinessNodeModel:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this BusinessNodeModel.
+        r"""Sets the is_default of this BusinessNodeModel.
 
         是否是默认的应用。
 
@@ -275,7 +275,7 @@ class BusinessNodeModel:
 
     @property
     def name(self):
-        """Gets the name of this BusinessNodeModel.
+        r"""Gets the name of this BusinessNodeModel.
 
         应用的英文名称。
 
@@ -286,7 +286,7 @@ class BusinessNodeModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BusinessNodeModel.
+        r"""Sets the name of this BusinessNodeModel.
 
         应用的英文名称。
 

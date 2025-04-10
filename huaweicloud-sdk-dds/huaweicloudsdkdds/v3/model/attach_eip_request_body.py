@@ -27,7 +27,7 @@ class AttachEipRequestBody:
     }
 
     def __init__(self, public_ip_id=None, public_ip=None):
-        """AttachEipRequestBody
+        r"""AttachEipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AttachEipRequestBody:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this AttachEipRequestBody.
+        r"""Gets the public_ip_id of this AttachEipRequestBody.
 
         公网IP的ID。
 
@@ -59,7 +59,7 @@ class AttachEipRequestBody:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this AttachEipRequestBody.
+        r"""Sets the public_ip_id of this AttachEipRequestBody.
 
         公网IP的ID。
 
@@ -70,7 +70,7 @@ class AttachEipRequestBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this AttachEipRequestBody.
+        r"""Gets the public_ip of this AttachEipRequestBody.
 
         公网IP。
 
@@ -81,7 +81,7 @@ class AttachEipRequestBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this AttachEipRequestBody.
+        r"""Sets the public_ip of this AttachEipRequestBody.
 
         公网IP。
 

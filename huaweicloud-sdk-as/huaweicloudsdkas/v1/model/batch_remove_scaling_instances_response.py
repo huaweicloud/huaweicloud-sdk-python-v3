@@ -24,7 +24,7 @@ class BatchRemoveScalingInstancesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchRemoveScalingInstancesResponse
+        r"""BatchRemoveScalingInstancesResponse
 
         The model defined in huaweicloud sdk
 

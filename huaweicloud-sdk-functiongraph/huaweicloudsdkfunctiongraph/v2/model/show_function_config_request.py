@@ -25,7 +25,7 @@ class ShowFunctionConfigRequest:
     }
 
     def __init__(self, function_urn=None):
-        """ShowFunctionConfigRequest
+        r"""ShowFunctionConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFunctionConfigRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ShowFunctionConfigRequest.
+        r"""Gets the function_urn of this ShowFunctionConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -53,7 +53,7 @@ class ShowFunctionConfigRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ShowFunctionConfigRequest.
+        r"""Sets the function_urn of this ShowFunctionConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 

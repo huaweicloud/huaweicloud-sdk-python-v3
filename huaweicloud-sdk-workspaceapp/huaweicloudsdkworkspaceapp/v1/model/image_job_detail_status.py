@@ -32,7 +32,7 @@ class ImageJobDetailStatus:
     }
 
     def __init__(self):
-        """ImageJobDetailStatus
+        r"""ImageJobDetailStatus
 
         The model defined in huaweicloud sdk
 

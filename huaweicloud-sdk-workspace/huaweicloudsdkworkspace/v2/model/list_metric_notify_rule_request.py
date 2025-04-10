@@ -31,7 +31,7 @@ class ListMetricNotifyRuleRequest:
     }
 
     def __init__(self, metric_name=None, rule_id=None, offset=None, limit=None):
-        """ListMetricNotifyRuleRequest
+        r"""ListMetricNotifyRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListMetricNotifyRuleRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListMetricNotifyRuleRequest.
+        r"""Gets the metric_name of this ListMetricNotifyRuleRequest.
 
         指标名称(精确匹配)
 
@@ -75,7 +75,7 @@ class ListMetricNotifyRuleRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListMetricNotifyRuleRequest.
+        r"""Sets the metric_name of this ListMetricNotifyRuleRequest.
 
         指标名称(精确匹配)
 
@@ -86,7 +86,7 @@ class ListMetricNotifyRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ListMetricNotifyRuleRequest.
+        r"""Gets the rule_id of this ListMetricNotifyRuleRequest.
 
         通知规则ID
 
@@ -97,7 +97,7 @@ class ListMetricNotifyRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ListMetricNotifyRuleRequest.
+        r"""Sets the rule_id of this ListMetricNotifyRuleRequest.
 
         通知规则ID
 
@@ -108,7 +108,7 @@ class ListMetricNotifyRuleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMetricNotifyRuleRequest.
+        r"""Gets the offset of this ListMetricNotifyRuleRequest.
 
         查询的偏移量,默认值0
 
@@ -119,7 +119,7 @@ class ListMetricNotifyRuleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMetricNotifyRuleRequest.
+        r"""Sets the offset of this ListMetricNotifyRuleRequest.
 
         查询的偏移量,默认值0
 
@@ -130,7 +130,7 @@ class ListMetricNotifyRuleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetricNotifyRuleRequest.
+        r"""Gets the limit of this ListMetricNotifyRuleRequest.
 
         单次查询的大小[1-100],默认值10
 
@@ -141,7 +141,7 @@ class ListMetricNotifyRuleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetricNotifyRuleRequest.
+        r"""Sets the limit of this ListMetricNotifyRuleRequest.
 
         单次查询的大小[1-100],默认值10
 

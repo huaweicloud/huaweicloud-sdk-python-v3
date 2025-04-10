@@ -30,7 +30,7 @@ class ListCatalogsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, total_count=None, catalogs=None):
-        """ListCatalogsResponse
+        r"""ListCatalogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCatalogsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListCatalogsResponse.
+        r"""Gets the is_success of this ListCatalogsResponse.
 
         是否成功
 
@@ -69,7 +69,7 @@ class ListCatalogsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListCatalogsResponse.
+        r"""Sets the is_success of this ListCatalogsResponse.
 
         是否成功
 
@@ -80,7 +80,7 @@ class ListCatalogsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCatalogsResponse.
+        r"""Gets the total_count of this ListCatalogsResponse.
 
         catalog总数量
 
@@ -91,7 +91,7 @@ class ListCatalogsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCatalogsResponse.
+        r"""Sets the total_count of this ListCatalogsResponse.
 
         catalog总数量
 
@@ -102,7 +102,7 @@ class ListCatalogsResponse(SdkResponse):
 
     @property
     def catalogs(self):
-        """Gets the catalogs of this ListCatalogsResponse.
+        r"""Gets the catalogs of this ListCatalogsResponse.
 
         项目下所有catalog信息
 
@@ -113,7 +113,7 @@ class ListCatalogsResponse(SdkResponse):
 
     @catalogs.setter
     def catalogs(self, catalogs):
-        """Sets the catalogs of this ListCatalogsResponse.
+        r"""Sets the catalogs of this ListCatalogsResponse.
 
         项目下所有catalog信息
 

@@ -34,7 +34,7 @@ class SyncStatusEnum:
     }
 
     def __init__(self):
-        """SyncStatusEnum
+        r"""SyncStatusEnum
 
         The model defined in huaweicloud sdk
 

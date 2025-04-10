@@ -27,7 +27,7 @@ class AttachImageServerAppRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """AttachImageServerAppRequest
+        r"""AttachImageServerAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachImageServerAppRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this AttachImageServerAppRequest.
+        r"""Gets the server_id of this AttachImageServerAppRequest.
 
         镜像实例唯一标识。
 
@@ -60,7 +60,7 @@ class AttachImageServerAppRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AttachImageServerAppRequest.
+        r"""Sets the server_id of this AttachImageServerAppRequest.
 
         镜像实例唯一标识。
 
@@ -71,7 +71,7 @@ class AttachImageServerAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachImageServerAppRequest.
+        r"""Gets the body of this AttachImageServerAppRequest.
 
         :return: The body of this AttachImageServerAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AttachServerAppReq`
@@ -80,7 +80,7 @@ class AttachImageServerAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachImageServerAppRequest.
+        r"""Sets the body of this AttachImageServerAppRequest.
 
         :param body: The body of this AttachImageServerAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AttachServerAppReq`

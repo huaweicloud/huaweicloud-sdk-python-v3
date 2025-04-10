@@ -39,7 +39,7 @@ class SwitchoverResp:
     }
 
     def __init__(self, job_id=None, updated_at=None, source_db=None, target_db=None, job_direction=None, is_target_readonly=None, error_msg=None, error_code=None):
-        """SwitchoverResp
+        r"""SwitchoverResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SwitchoverResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchoverResp.
+        r"""Gets the job_id of this SwitchoverResp.
 
         任务ID
 
@@ -103,7 +103,7 @@ class SwitchoverResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchoverResp.
+        r"""Sets the job_id of this SwitchoverResp.
 
         任务ID
 
@@ -114,7 +114,7 @@ class SwitchoverResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SwitchoverResp.
+        r"""Gets the updated_at of this SwitchoverResp.
 
         更新时间，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -125,7 +125,7 @@ class SwitchoverResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SwitchoverResp.
+        r"""Sets the updated_at of this SwitchoverResp.
 
         更新时间，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -136,7 +136,7 @@ class SwitchoverResp:
 
     @property
     def source_db(self):
-        """Gets the source_db of this SwitchoverResp.
+        r"""Gets the source_db of this SwitchoverResp.
 
         :return: The source_db of this SwitchoverResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.EndpointVO`
@@ -145,7 +145,7 @@ class SwitchoverResp:
 
     @source_db.setter
     def source_db(self, source_db):
-        """Sets the source_db of this SwitchoverResp.
+        r"""Sets the source_db of this SwitchoverResp.
 
         :param source_db: The source_db of this SwitchoverResp.
         :type source_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
@@ -154,7 +154,7 @@ class SwitchoverResp:
 
     @property
     def target_db(self):
-        """Gets the target_db of this SwitchoverResp.
+        r"""Gets the target_db of this SwitchoverResp.
 
         :return: The target_db of this SwitchoverResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.EndpointVO`
@@ -163,7 +163,7 @@ class SwitchoverResp:
 
     @target_db.setter
     def target_db(self, target_db):
-        """Sets the target_db of this SwitchoverResp.
+        r"""Sets the target_db of this SwitchoverResp.
 
         :param target_db: The target_db of this SwitchoverResp.
         :type target_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
@@ -172,7 +172,7 @@ class SwitchoverResp:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this SwitchoverResp.
+        r"""Gets the job_direction of this SwitchoverResp.
 
         任务方向。 - up 入云 灾备场景时对应本云为备 - down 出云 灾备场景时对应本云为主 - non-dbs 自建
 
@@ -183,7 +183,7 @@ class SwitchoverResp:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this SwitchoverResp.
+        r"""Sets the job_direction of this SwitchoverResp.
 
         任务方向。 - up 入云 灾备场景时对应本云为备 - down 出云 灾备场景时对应本云为主 - non-dbs 自建
 
@@ -194,7 +194,7 @@ class SwitchoverResp:
 
     @property
     def is_target_readonly(self):
-        """Gets the is_target_readonly of this SwitchoverResp.
+        r"""Gets the is_target_readonly of this SwitchoverResp.
 
         目标库是否只读。
 
@@ -205,7 +205,7 @@ class SwitchoverResp:
 
     @is_target_readonly.setter
     def is_target_readonly(self, is_target_readonly):
-        """Sets the is_target_readonly of this SwitchoverResp.
+        r"""Sets the is_target_readonly of this SwitchoverResp.
 
         目标库是否只读。
 
@@ -216,7 +216,7 @@ class SwitchoverResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this SwitchoverResp.
+        r"""Gets the error_msg of this SwitchoverResp.
 
         错误信息。
 
@@ -227,7 +227,7 @@ class SwitchoverResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this SwitchoverResp.
+        r"""Sets the error_msg of this SwitchoverResp.
 
         错误信息。
 
@@ -238,7 +238,7 @@ class SwitchoverResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this SwitchoverResp.
+        r"""Gets the error_code of this SwitchoverResp.
 
         错误码。
 
@@ -249,7 +249,7 @@ class SwitchoverResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this SwitchoverResp.
+        r"""Sets the error_code of this SwitchoverResp.
 
         错误码。
 

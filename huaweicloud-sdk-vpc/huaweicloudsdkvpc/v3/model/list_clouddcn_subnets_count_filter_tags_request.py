@@ -25,7 +25,7 @@ class ListClouddcnSubnetsCountFilterTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListClouddcnSubnetsCountFilterTagsRequest
+        r"""ListClouddcnSubnetsCountFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListClouddcnSubnetsCountFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListClouddcnSubnetsCountFilterTagsRequest.
+        r"""Gets the body of this ListClouddcnSubnetsCountFilterTagsRequest.
 
         :return: The body of this ListClouddcnSubnetsCountFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.ListResourcesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListClouddcnSubnetsCountFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListClouddcnSubnetsCountFilterTagsRequest.
+        r"""Sets the body of this ListClouddcnSubnetsCountFilterTagsRequest.
 
         :param body: The body of this ListClouddcnSubnetsCountFilterTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.ListResourcesByTagsRequestBody`

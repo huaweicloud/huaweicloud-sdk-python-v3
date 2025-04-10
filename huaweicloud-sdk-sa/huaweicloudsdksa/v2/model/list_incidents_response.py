@@ -40,7 +40,7 @@ class ListIncidentsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
-        """ListIncidentsResponse
+        r"""ListIncidentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListIncidentsResponse.
+        r"""Gets the code of this ListIncidentsResponse.
 
         Id value
 
@@ -104,7 +104,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListIncidentsResponse.
+        r"""Sets the code of this ListIncidentsResponse.
 
         Id value
 
@@ -115,7 +115,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListIncidentsResponse.
+        r"""Gets the message of this ListIncidentsResponse.
 
         Error message
 
@@ -126,7 +126,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListIncidentsResponse.
+        r"""Sets the message of this ListIncidentsResponse.
 
         Error message
 
@@ -137,7 +137,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIncidentsResponse.
+        r"""Gets the total of this ListIncidentsResponse.
 
         tatal count
 
@@ -148,7 +148,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIncidentsResponse.
+        r"""Sets the total of this ListIncidentsResponse.
 
         tatal count
 
@@ -159,7 +159,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListIncidentsResponse.
+        r"""Gets the limit of this ListIncidentsResponse.
 
         当前页大小
 
@@ -170,7 +170,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIncidentsResponse.
+        r"""Sets the limit of this ListIncidentsResponse.
 
         当前页大小
 
@@ -181,7 +181,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListIncidentsResponse.
+        r"""Gets the offset of this ListIncidentsResponse.
 
         当前页码
 
@@ -192,7 +192,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIncidentsResponse.
+        r"""Sets the offset of this ListIncidentsResponse.
 
         当前页码
 
@@ -203,7 +203,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ListIncidentsResponse.
+        r"""Gets the success of this ListIncidentsResponse.
 
         success
 
@@ -214,7 +214,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ListIncidentsResponse.
+        r"""Sets the success of this ListIncidentsResponse.
 
         success
 
@@ -225,7 +225,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListIncidentsResponse.
+        r"""Gets the data of this ListIncidentsResponse.
 
         事件列表
 
@@ -236,7 +236,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListIncidentsResponse.
+        r"""Sets the data of this ListIncidentsResponse.
 
         事件列表
 
@@ -247,7 +247,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListIncidentsResponse.
+        r"""Gets the x_request_id of this ListIncidentsResponse.
 
         :return: The x_request_id of this ListIncidentsResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class ListIncidentsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListIncidentsResponse.
+        r"""Sets the x_request_id of this ListIncidentsResponse.
 
         :param x_request_id: The x_request_id of this ListIncidentsResponse.
         :type x_request_id: str

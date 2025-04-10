@@ -29,7 +29,7 @@ class CustomizedDns:
     }
 
     def __init__(self, is_set_dns=None, set_dns_action=None, dns_ip=None):
-        """CustomizedDns
+        r"""CustomizedDns
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CustomizedDns:
 
     @property
     def is_set_dns(self):
-        """Gets the is_set_dns of this CustomizedDns.
+        r"""Gets the is_set_dns of this CustomizedDns.
 
         是否设置客户自定义DNS。
 
@@ -65,7 +65,7 @@ class CustomizedDns:
 
     @is_set_dns.setter
     def is_set_dns(self, is_set_dns):
-        """Sets the is_set_dns of this CustomizedDns.
+        r"""Sets the is_set_dns of this CustomizedDns.
 
         是否设置客户自定义DNS。
 
@@ -76,7 +76,7 @@ class CustomizedDns:
 
     @property
     def set_dns_action(self):
-        """Gets the set_dns_action of this CustomizedDns.
+        r"""Gets the set_dns_action of this CustomizedDns.
 
         设置客户自定义DNS的行为。 - add：新增客户自定义DNS IP。 - keep：保持客户自定义DNS IP。 - update：更新客户自定义DNS IP（当DNS IP变化时更新生效）。 - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）。
 
@@ -87,7 +87,7 @@ class CustomizedDns:
 
     @set_dns_action.setter
     def set_dns_action(self, set_dns_action):
-        """Sets the set_dns_action of this CustomizedDns.
+        r"""Sets the set_dns_action of this CustomizedDns.
 
         设置客户自定义DNS的行为。 - add：新增客户自定义DNS IP。 - keep：保持客户自定义DNS IP。 - update：更新客户自定义DNS IP（当DNS IP变化时更新生效）。 - recover：还原系统默认DNS IP（还原时可能会导致域名解析失败，请谨慎操作）。
 
@@ -98,7 +98,7 @@ class CustomizedDns:
 
     @property
     def dns_ip(self):
-        """Gets the dns_ip of this CustomizedDns.
+        r"""Gets the dns_ip of this CustomizedDns.
 
         设置客户自定义DNS IP。
 
@@ -109,7 +109,7 @@ class CustomizedDns:
 
     @dns_ip.setter
     def dns_ip(self, dns_ip):
-        """Sets the dns_ip of this CustomizedDns.
+        r"""Sets the dns_ip of this CustomizedDns.
 
         设置客户自定义DNS IP。
 

@@ -28,7 +28,7 @@ class CreateWorkflowAuthenticationResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None, content_length=None):
-        """CreateWorkflowAuthenticationResponse
+        r"""CreateWorkflowAuthenticationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateWorkflowAuthenticationResponse.
+        r"""Gets the x_request_id of this CreateWorkflowAuthenticationResponse.
 
         :return: The x_request_id of this CreateWorkflowAuthenticationResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateWorkflowAuthenticationResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateWorkflowAuthenticationResponse.
+        r"""Sets the x_request_id of this CreateWorkflowAuthenticationResponse.
 
         :param x_request_id: The x_request_id of this CreateWorkflowAuthenticationResponse.
         :type x_request_id: str
@@ -69,7 +69,7 @@ class CreateWorkflowAuthenticationResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this CreateWorkflowAuthenticationResponse.
+        r"""Gets the content_length of this CreateWorkflowAuthenticationResponse.
 
         :return: The content_length of this CreateWorkflowAuthenticationResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateWorkflowAuthenticationResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this CreateWorkflowAuthenticationResponse.
+        r"""Sets the content_length of this CreateWorkflowAuthenticationResponse.
 
         :param content_length: The content_length of this CreateWorkflowAuthenticationResponse.
         :type content_length: str

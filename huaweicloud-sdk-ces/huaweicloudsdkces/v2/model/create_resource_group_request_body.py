@@ -33,7 +33,7 @@ class CreateResourceGroupRequestBody:
     }
 
     def __init__(self, group_name=None, enterprise_project_id=None, type=None, tags=None, association_ep_ids=None):
-        """CreateResourceGroupRequestBody
+        r"""CreateResourceGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateResourceGroupRequestBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateResourceGroupRequestBody.
+        r"""Gets the group_name of this CreateResourceGroupRequestBody.
 
         资源分组的名称，只能为字母、数字、汉字、-、_，最大长度为128
 
@@ -81,7 +81,7 @@ class CreateResourceGroupRequestBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateResourceGroupRequestBody.
+        r"""Sets the group_name of this CreateResourceGroupRequestBody.
 
         资源分组的名称，只能为字母、数字、汉字、-、_，最大长度为128
 
@@ -92,7 +92,7 @@ class CreateResourceGroupRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateResourceGroupRequestBody.
+        r"""Gets the enterprise_project_id of this CreateResourceGroupRequestBody.
 
         资源分组归属企业项目ID
 
@@ -103,7 +103,7 @@ class CreateResourceGroupRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateResourceGroupRequestBody.
+        r"""Sets the enterprise_project_id of this CreateResourceGroupRequestBody.
 
         资源分组归属企业项目ID
 
@@ -114,7 +114,7 @@ class CreateResourceGroupRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateResourceGroupRequestBody.
+        r"""Gets the type of this CreateResourceGroupRequestBody.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
 
@@ -125,7 +125,7 @@ class CreateResourceGroupRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateResourceGroupRequestBody.
+        r"""Sets the type of this CreateResourceGroupRequestBody.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,不传为手动添加
 
@@ -136,7 +136,7 @@ class CreateResourceGroupRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateResourceGroupRequestBody.
+        r"""Gets the tags of this CreateResourceGroupRequestBody.
 
         标签动态匹配时的关联标签,type为TAG时必传
 
@@ -147,7 +147,7 @@ class CreateResourceGroupRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateResourceGroupRequestBody.
+        r"""Sets the tags of this CreateResourceGroupRequestBody.
 
         标签动态匹配时的关联标签,type为TAG时必传
 
@@ -158,7 +158,7 @@ class CreateResourceGroupRequestBody:
 
     @property
     def association_ep_ids(self):
-        """Gets the association_ep_ids of this CreateResourceGroupRequestBody.
+        r"""Gets the association_ep_ids of this CreateResourceGroupRequestBody.
 
         该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
 
@@ -169,7 +169,7 @@ class CreateResourceGroupRequestBody:
 
     @association_ep_ids.setter
     def association_ep_ids(self, association_ep_ids):
-        """Sets the association_ep_ids of this CreateResourceGroupRequestBody.
+        r"""Sets the association_ep_ids of this CreateResourceGroupRequestBody.
 
         该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
 

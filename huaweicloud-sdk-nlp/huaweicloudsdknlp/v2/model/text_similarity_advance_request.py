@@ -29,7 +29,7 @@ class TextSimilarityAdvanceRequest:
     }
 
     def __init__(self, text1=None, text2=None, lang=None):
-        """TextSimilarityAdvanceRequest
+        r"""TextSimilarityAdvanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TextSimilarityAdvanceRequest:
 
     @property
     def text1(self):
-        """Gets the text1 of this TextSimilarityAdvanceRequest.
+        r"""Gets the text1 of this TextSimilarityAdvanceRequest.
 
         待计算文本1，长度1~512，文本编码为UTF-8。
 
@@ -66,7 +66,7 @@ class TextSimilarityAdvanceRequest:
 
     @text1.setter
     def text1(self, text1):
-        """Sets the text1 of this TextSimilarityAdvanceRequest.
+        r"""Sets the text1 of this TextSimilarityAdvanceRequest.
 
         待计算文本1，长度1~512，文本编码为UTF-8。
 
@@ -77,7 +77,7 @@ class TextSimilarityAdvanceRequest:
 
     @property
     def text2(self):
-        """Gets the text2 of this TextSimilarityAdvanceRequest.
+        r"""Gets the text2 of this TextSimilarityAdvanceRequest.
 
         待计算文本1，长度1~512，文本编码为UTF-8。
 
@@ -88,7 +88,7 @@ class TextSimilarityAdvanceRequest:
 
     @text2.setter
     def text2(self, text2):
-        """Sets the text2 of this TextSimilarityAdvanceRequest.
+        r"""Sets the text2 of this TextSimilarityAdvanceRequest.
 
         待计算文本1，长度1~512，文本编码为UTF-8。
 
@@ -99,7 +99,7 @@ class TextSimilarityAdvanceRequest:
 
     @property
     def lang(self):
-        """Gets the lang of this TextSimilarityAdvanceRequest.
+        r"""Gets the lang of this TextSimilarityAdvanceRequest.
 
         支持的文本语言类型，目前只支持中文（zh），默认为中文。
 
@@ -110,7 +110,7 @@ class TextSimilarityAdvanceRequest:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this TextSimilarityAdvanceRequest.
+        r"""Sets the lang of this TextSimilarityAdvanceRequest.
 
         支持的文本语言类型，目前只支持中文（zh），默认为中文。
 

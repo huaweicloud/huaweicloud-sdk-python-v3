@@ -25,7 +25,7 @@ class RestoreDetails:
     }
 
     def __init__(self, destination_path=None):
-        """RestoreDetails
+        r"""RestoreDetails
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestoreDetails:
 
     @property
     def destination_path(self):
-        """Gets the destination_path of this RestoreDetails.
+        r"""Gets the destination_path of this RestoreDetails.
 
         目的路径
 
@@ -53,7 +53,7 @@ class RestoreDetails:
 
     @destination_path.setter
     def destination_path(self, destination_path):
-        """Sets the destination_path of this RestoreDetails.
+        r"""Sets the destination_path of this RestoreDetails.
 
         目的路径
 

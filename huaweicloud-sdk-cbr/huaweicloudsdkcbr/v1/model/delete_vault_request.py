@@ -25,7 +25,7 @@ class DeleteVaultRequest:
     }
 
     def __init__(self, vault_id=None):
-        """DeleteVaultRequest
+        r"""DeleteVaultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVaultRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this DeleteVaultRequest.
+        r"""Gets the vault_id of this DeleteVaultRequest.
 
         存储库ID
 
@@ -53,7 +53,7 @@ class DeleteVaultRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this DeleteVaultRequest.
+        r"""Sets the vault_id of this DeleteVaultRequest.
 
         存储库ID
 

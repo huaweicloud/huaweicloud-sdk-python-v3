@@ -23,7 +23,7 @@ class ListSessionTypeRequest:
     }
 
     def __init__(self):
-        """ListSessionTypeRequest
+        r"""ListSessionTypeRequest
 
         The model defined in huaweicloud sdk
 

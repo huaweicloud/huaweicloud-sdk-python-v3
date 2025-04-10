@@ -49,7 +49,7 @@ class PeerLinkEntry:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, reason=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, created_time=None, updated_time=None, create_owner=None, instance_id=None):
-        """PeerLinkEntry
+        r"""PeerLinkEntry
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class PeerLinkEntry:
 
     @property
     def id(self):
-        """Gets the id of this PeerLinkEntry.
+        r"""Gets the id of this PeerLinkEntry.
 
         peer link ID。
 
@@ -138,7 +138,7 @@ class PeerLinkEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PeerLinkEntry.
+        r"""Sets the id of this PeerLinkEntry.
 
         peer link ID。
 
@@ -149,7 +149,7 @@ class PeerLinkEntry:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PeerLinkEntry.
+        r"""Gets the tenant_id of this PeerLinkEntry.
 
         租户项目ID
 
@@ -160,7 +160,7 @@ class PeerLinkEntry:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PeerLinkEntry.
+        r"""Sets the tenant_id of this PeerLinkEntry.
 
         租户项目ID
 
@@ -171,7 +171,7 @@ class PeerLinkEntry:
 
     @property
     def name(self):
-        """Gets the name of this PeerLinkEntry.
+        r"""Gets the name of this PeerLinkEntry.
 
         专线内部连接(peer link)名字
 
@@ -182,7 +182,7 @@ class PeerLinkEntry:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PeerLinkEntry.
+        r"""Sets the name of this PeerLinkEntry.
 
         专线内部连接(peer link)名字
 
@@ -193,7 +193,7 @@ class PeerLinkEntry:
 
     @property
     def description(self):
-        """Gets the description of this PeerLinkEntry.
+        r"""Gets the description of this PeerLinkEntry.
 
         描述信息
 
@@ -204,7 +204,7 @@ class PeerLinkEntry:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PeerLinkEntry.
+        r"""Sets the description of this PeerLinkEntry.
 
         描述信息
 
@@ -215,7 +215,7 @@ class PeerLinkEntry:
 
     @property
     def reason(self):
-        """Gets the reason of this PeerLinkEntry.
+        r"""Gets the reason of this PeerLinkEntry.
 
         失败原因
 
@@ -226,7 +226,7 @@ class PeerLinkEntry:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this PeerLinkEntry.
+        r"""Sets the reason of this PeerLinkEntry.
 
         失败原因
 
@@ -237,7 +237,7 @@ class PeerLinkEntry:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this PeerLinkEntry.
+        r"""Gets the global_dc_gateway_id of this PeerLinkEntry.
 
         对应的专线全域接入网关ID
 
@@ -248,7 +248,7 @@ class PeerLinkEntry:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this PeerLinkEntry.
+        r"""Sets the global_dc_gateway_id of this PeerLinkEntry.
 
         对应的专线全域接入网关ID
 
@@ -259,7 +259,7 @@ class PeerLinkEntry:
 
     @property
     def bandwidth_info(self):
-        """Gets the bandwidth_info of this PeerLinkEntry.
+        r"""Gets the bandwidth_info of this PeerLinkEntry.
 
         :return: The bandwidth_info of this PeerLinkEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.BandWidthInfo`
@@ -268,7 +268,7 @@ class PeerLinkEntry:
 
     @bandwidth_info.setter
     def bandwidth_info(self, bandwidth_info):
-        """Sets the bandwidth_info of this PeerLinkEntry.
+        r"""Sets the bandwidth_info of this PeerLinkEntry.
 
         :param bandwidth_info: The bandwidth_info of this PeerLinkEntry.
         :type bandwidth_info: :class:`huaweicloudsdkdc.v3.BandWidthInfo`
@@ -277,7 +277,7 @@ class PeerLinkEntry:
 
     @property
     def peer_site(self):
-        """Gets the peer_site of this PeerLinkEntry.
+        r"""Gets the peer_site of this PeerLinkEntry.
 
         :return: The peer_site of this PeerLinkEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.PeerSite`
@@ -286,7 +286,7 @@ class PeerLinkEntry:
 
     @peer_site.setter
     def peer_site(self, peer_site):
-        """Sets the peer_site of this PeerLinkEntry.
+        r"""Sets the peer_site of this PeerLinkEntry.
 
         :param peer_site: The peer_site of this PeerLinkEntry.
         :type peer_site: :class:`huaweicloudsdkdc.v3.PeerSite`
@@ -295,7 +295,7 @@ class PeerLinkEntry:
 
     @property
     def status(self):
-        """Gets the status of this PeerLinkEntry.
+        r"""Gets the status of this PeerLinkEntry.
 
         :return: The status of this PeerLinkEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.PeerLinkStatus`
@@ -304,7 +304,7 @@ class PeerLinkEntry:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PeerLinkEntry.
+        r"""Sets the status of this PeerLinkEntry.
 
         :param status: The status of this PeerLinkEntry.
         :type status: :class:`huaweicloudsdkdc.v3.PeerLinkStatus`
@@ -313,7 +313,7 @@ class PeerLinkEntry:
 
     @property
     def created_time(self):
-        """Gets the created_time of this PeerLinkEntry.
+        r"""Gets the created_time of this PeerLinkEntry.
 
         创建时间。
 
@@ -324,7 +324,7 @@ class PeerLinkEntry:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this PeerLinkEntry.
+        r"""Sets the created_time of this PeerLinkEntry.
 
         创建时间。
 
@@ -335,7 +335,7 @@ class PeerLinkEntry:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this PeerLinkEntry.
+        r"""Gets the updated_time of this PeerLinkEntry.
 
         更新时间。
 
@@ -346,7 +346,7 @@ class PeerLinkEntry:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this PeerLinkEntry.
+        r"""Sets the updated_time of this PeerLinkEntry.
 
         更新时间。
 
@@ -357,7 +357,7 @@ class PeerLinkEntry:
 
     @property
     def create_owner(self):
-        """Gets the create_owner of this PeerLinkEntry.
+        r"""Gets the create_owner of this PeerLinkEntry.
 
         创建归属服务名 - cc 云连接 - dc 云专线
 
@@ -368,7 +368,7 @@ class PeerLinkEntry:
 
     @create_owner.setter
     def create_owner(self, create_owner):
-        """Sets the create_owner of this PeerLinkEntry.
+        r"""Sets the create_owner of this PeerLinkEntry.
 
         创建归属服务名 - cc 云连接 - dc 云专线
 
@@ -379,7 +379,7 @@ class PeerLinkEntry:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PeerLinkEntry.
+        r"""Gets the instance_id of this PeerLinkEntry.
 
         实例ID
 
@@ -390,7 +390,7 @@ class PeerLinkEntry:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PeerLinkEntry.
+        r"""Sets the instance_id of this PeerLinkEntry.
 
         实例ID
 

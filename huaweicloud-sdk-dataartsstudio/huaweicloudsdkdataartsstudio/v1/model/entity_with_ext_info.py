@@ -27,7 +27,7 @@ class EntityWithExtInfo:
     }
 
     def __init__(self, entity=None, referred_entities=None):
-        """EntityWithExtInfo
+        r"""EntityWithExtInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EntityWithExtInfo:
 
     @property
     def entity(self):
-        """Gets the entity of this EntityWithExtInfo.
+        r"""Gets the entity of this EntityWithExtInfo.
 
         :return: The entity of this EntityWithExtInfo.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AtlasAssetEntity`
@@ -58,7 +58,7 @@ class EntityWithExtInfo:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this EntityWithExtInfo.
+        r"""Sets the entity of this EntityWithExtInfo.
 
         :param entity: The entity of this EntityWithExtInfo.
         :type entity: :class:`huaweicloudsdkdataartsstudio.v1.AtlasAssetEntity`
@@ -67,7 +67,7 @@ class EntityWithExtInfo:
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this EntityWithExtInfo.
+        r"""Gets the referred_entities of this EntityWithExtInfo.
 
         关联资产map Map<String, AtlasAssetEntity>
 
@@ -78,7 +78,7 @@ class EntityWithExtInfo:
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this EntityWithExtInfo.
+        r"""Sets the referred_entities of this EntityWithExtInfo.
 
         关联资产map Map<String, AtlasAssetEntity>
 

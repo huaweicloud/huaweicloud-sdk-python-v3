@@ -26,7 +26,7 @@ class CreateGenerationTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateGenerationTaskResponse
+        r"""CreateGenerationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGenerationTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateGenerationTaskResponse.
+        r"""Gets the body of this CreateGenerationTaskResponse.
 
         分子生成任务ID
 
@@ -55,7 +55,7 @@ class CreateGenerationTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGenerationTaskResponse.
+        r"""Sets the body of this CreateGenerationTaskResponse.
 
         分子生成任务ID
 

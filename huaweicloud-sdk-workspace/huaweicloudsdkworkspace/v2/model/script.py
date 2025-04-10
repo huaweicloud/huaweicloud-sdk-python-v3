@@ -27,7 +27,7 @@ class Script:
     }
 
     def __init__(self, id=None, name=None):
-        """Script
+        r"""Script
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Script:
 
     @property
     def id(self):
-        """Gets the id of this Script.
+        r"""Gets the id of this Script.
 
         脚本id。
 
@@ -61,7 +61,7 @@ class Script:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Script.
+        r"""Sets the id of this Script.
 
         脚本id。
 
@@ -72,7 +72,7 @@ class Script:
 
     @property
     def name(self):
-        """Gets the name of this Script.
+        r"""Gets the name of this Script.
 
         脚本名称。
 
@@ -83,7 +83,7 @@ class Script:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Script.
+        r"""Sets the name of this Script.
 
         脚本名称。
 

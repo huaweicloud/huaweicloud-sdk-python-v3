@@ -32,7 +32,7 @@ class CreateMetadataResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, id=None, name=None):
-        """CreateMetadataResponse
+        r"""CreateMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this CreateMetadataResponse.
+        r"""Gets the error_message of this CreateMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -76,7 +76,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CreateMetadataResponse.
+        r"""Sets the error_message of this CreateMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -87,7 +87,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateMetadataResponse.
+        r"""Gets the error_code of this CreateMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -98,7 +98,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateMetadataResponse.
+        r"""Sets the error_code of this CreateMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -109,7 +109,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateMetadataResponse.
+        r"""Gets the id of this CreateMetadataResponse.
 
         元数据ID。
 
@@ -120,7 +120,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateMetadataResponse.
+        r"""Sets the id of this CreateMetadataResponse.
 
         元数据ID。
 
@@ -131,7 +131,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateMetadataResponse.
+        r"""Gets the name of this CreateMetadataResponse.
 
         元数据名字。
 
@@ -142,7 +142,7 @@ class CreateMetadataResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMetadataResponse.
+        r"""Sets the name of this CreateMetadataResponse.
 
         元数据名字。
 

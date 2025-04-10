@@ -25,7 +25,7 @@ class BackupUpdateReq:
     }
 
     def __init__(self, backup=None):
-        """BackupUpdateReq
+        r"""BackupUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BackupUpdateReq:
 
     @property
     def backup(self):
-        """Gets the backup of this BackupUpdateReq.
+        r"""Gets the backup of this BackupUpdateReq.
 
         :return: The backup of this BackupUpdateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupUpdate`
@@ -52,7 +52,7 @@ class BackupUpdateReq:
 
     @backup.setter
     def backup(self, backup):
-        """Sets the backup of this BackupUpdateReq.
+        r"""Sets the backup of this BackupUpdateReq.
 
         :param backup: The backup of this BackupUpdateReq.
         :type backup: :class:`huaweicloudsdkcbr.v1.BackupUpdate`

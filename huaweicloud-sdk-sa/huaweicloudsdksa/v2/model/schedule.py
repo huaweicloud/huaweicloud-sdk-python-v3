@@ -35,7 +35,7 @@ class Schedule:
     }
 
     def __init__(self, frequency_interval=None, frequency_unit=None, period_interval=None, period_unit=None, delay_interval=None, overtime_interval=None):
-        """Schedule
+        r"""Schedule
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class Schedule:
 
     @property
     def frequency_interval(self):
-        """Gets the frequency_interval of this Schedule.
+        r"""Gets the frequency_interval of this Schedule.
 
         frequency_interval
 
@@ -85,7 +85,7 @@ class Schedule:
 
     @frequency_interval.setter
     def frequency_interval(self, frequency_interval):
-        """Sets the frequency_interval of this Schedule.
+        r"""Sets the frequency_interval of this Schedule.
 
         frequency_interval
 
@@ -96,7 +96,7 @@ class Schedule:
 
     @property
     def frequency_unit(self):
-        """Gets the frequency_unit of this Schedule.
+        r"""Gets the frequency_unit of this Schedule.
 
         frequency_unit. MINUTE, HOUR, DAY.
 
@@ -107,7 +107,7 @@ class Schedule:
 
     @frequency_unit.setter
     def frequency_unit(self, frequency_unit):
-        """Sets the frequency_unit of this Schedule.
+        r"""Sets the frequency_unit of this Schedule.
 
         frequency_unit. MINUTE, HOUR, DAY.
 
@@ -118,7 +118,7 @@ class Schedule:
 
     @property
     def period_interval(self):
-        """Gets the period_interval of this Schedule.
+        r"""Gets the period_interval of this Schedule.
 
         frequency_interval
 
@@ -129,7 +129,7 @@ class Schedule:
 
     @period_interval.setter
     def period_interval(self, period_interval):
-        """Sets the period_interval of this Schedule.
+        r"""Sets the period_interval of this Schedule.
 
         frequency_interval
 
@@ -140,7 +140,7 @@ class Schedule:
 
     @property
     def period_unit(self):
-        """Gets the period_unit of this Schedule.
+        r"""Gets the period_unit of this Schedule.
 
         period_unit. MINUTE, HOUR, DAY.
 
@@ -151,7 +151,7 @@ class Schedule:
 
     @period_unit.setter
     def period_unit(self, period_unit):
-        """Sets the period_unit of this Schedule.
+        r"""Sets the period_unit of this Schedule.
 
         period_unit. MINUTE, HOUR, DAY.
 
@@ -162,7 +162,7 @@ class Schedule:
 
     @property
     def delay_interval(self):
-        """Gets the delay_interval of this Schedule.
+        r"""Gets the delay_interval of this Schedule.
 
         delay_interval
 
@@ -173,7 +173,7 @@ class Schedule:
 
     @delay_interval.setter
     def delay_interval(self, delay_interval):
-        """Sets the delay_interval of this Schedule.
+        r"""Sets the delay_interval of this Schedule.
 
         delay_interval
 
@@ -184,7 +184,7 @@ class Schedule:
 
     @property
     def overtime_interval(self):
-        """Gets the overtime_interval of this Schedule.
+        r"""Gets the overtime_interval of this Schedule.
 
         overtime_interval
 
@@ -195,7 +195,7 @@ class Schedule:
 
     @overtime_interval.setter
     def overtime_interval(self, overtime_interval):
-        """Sets the overtime_interval of this Schedule.
+        r"""Sets the overtime_interval of this Schedule.
 
         overtime_interval
 

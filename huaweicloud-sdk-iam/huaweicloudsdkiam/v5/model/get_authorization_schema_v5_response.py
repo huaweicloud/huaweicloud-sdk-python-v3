@@ -34,7 +34,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
     }
 
     def __init__(self, version=None, actions=None, resources=None, conditions=None, operations=None):
-        """GetAuthorizationSchemaV5Response
+        r"""GetAuthorizationSchemaV5Response
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this GetAuthorizationSchemaV5Response.
+        r"""Gets the version of this GetAuthorizationSchemaV5Response.
 
         服务授权概要的版本号。
 
@@ -83,7 +83,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this GetAuthorizationSchemaV5Response.
+        r"""Sets the version of this GetAuthorizationSchemaV5Response.
 
         服务授权概要的版本号。
 
@@ -94,7 +94,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @property
     def actions(self):
-        """Gets the actions of this GetAuthorizationSchemaV5Response.
+        r"""Gets the actions of this GetAuthorizationSchemaV5Response.
 
         云服务支持的授权项列表。
 
@@ -105,7 +105,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this GetAuthorizationSchemaV5Response.
+        r"""Sets the actions of this GetAuthorizationSchemaV5Response.
 
         云服务支持的授权项列表。
 
@@ -116,7 +116,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this GetAuthorizationSchemaV5Response.
+        r"""Gets the resources of this GetAuthorizationSchemaV5Response.
 
         云服务支持的资源列表。
 
@@ -127,7 +127,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this GetAuthorizationSchemaV5Response.
+        r"""Sets the resources of this GetAuthorizationSchemaV5Response.
 
         云服务支持的资源列表。
 
@@ -138,7 +138,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this GetAuthorizationSchemaV5Response.
+        r"""Gets the conditions of this GetAuthorizationSchemaV5Response.
 
         云服务支持的条件键列表。
 
@@ -149,7 +149,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this GetAuthorizationSchemaV5Response.
+        r"""Sets the conditions of this GetAuthorizationSchemaV5Response.
 
         云服务支持的条件键列表。
 
@@ -160,7 +160,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @property
     def operations(self):
-        """Gets the operations of this GetAuthorizationSchemaV5Response.
+        r"""Gets the operations of this GetAuthorizationSchemaV5Response.
 
         云服务支持的操作列表。
 
@@ -171,7 +171,7 @@ class GetAuthorizationSchemaV5Response(SdkResponse):
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this GetAuthorizationSchemaV5Response.
+        r"""Sets the operations of this GetAuthorizationSchemaV5Response.
 
         云服务支持的操作列表。
 

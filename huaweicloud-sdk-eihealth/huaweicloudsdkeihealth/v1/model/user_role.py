@@ -27,7 +27,7 @@ class UserRole:
     }
 
     def __init__(self):
-        """UserRole
+        r"""UserRole
 
         The model defined in huaweicloud sdk
 

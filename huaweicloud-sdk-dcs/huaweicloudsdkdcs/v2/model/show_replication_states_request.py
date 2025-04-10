@@ -27,7 +27,7 @@ class ShowReplicationStatesRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None):
-        """ShowReplicationStatesRequest
+        r"""ShowReplicationStatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowReplicationStatesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowReplicationStatesRequest.
+        r"""Gets the instance_id of this ShowReplicationStatesRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowReplicationStatesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowReplicationStatesRequest.
+        r"""Sets the instance_id of this ShowReplicationStatesRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowReplicationStatesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowReplicationStatesRequest.
+        r"""Gets the group_id of this ShowReplicationStatesRequest.
 
         分片ID。
 
@@ -81,7 +81,7 @@ class ShowReplicationStatesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowReplicationStatesRequest.
+        r"""Sets the group_id of this ShowReplicationStatesRequest.
 
         分片ID。
 

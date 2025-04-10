@@ -28,7 +28,7 @@ class ListRoutetablesResponse(SdkResponse):
     }
 
     def __init__(self, routetables=None, count=None):
-        """ListRoutetablesResponse
+        r"""ListRoutetablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRoutetablesResponse(SdkResponse):
 
     @property
     def routetables(self):
-        """Gets the routetables of this ListRoutetablesResponse.
+        r"""Gets the routetables of this ListRoutetablesResponse.
 
         路由表
 
@@ -62,7 +62,7 @@ class ListRoutetablesResponse(SdkResponse):
 
     @routetables.setter
     def routetables(self, routetables):
-        """Sets the routetables of this ListRoutetablesResponse.
+        r"""Sets the routetables of this ListRoutetablesResponse.
 
         路由表
 
@@ -73,7 +73,7 @@ class ListRoutetablesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRoutetablesResponse.
+        r"""Gets the count of this ListRoutetablesResponse.
 
         数量
 
@@ -84,7 +84,7 @@ class ListRoutetablesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRoutetablesResponse.
+        r"""Sets the count of this ListRoutetablesResponse.
 
         数量
 

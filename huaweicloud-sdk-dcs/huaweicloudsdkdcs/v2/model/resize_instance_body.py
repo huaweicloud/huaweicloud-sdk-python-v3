@@ -39,7 +39,7 @@ class ResizeInstanceBody:
     }
 
     def __init__(self, spec_code=None, new_capacity=None, bss_param=None, reserved_ip=None, change_type=None, available_zones=None, node_list=None, execute_immediately=None):
-        """ResizeInstanceBody
+        r"""ResizeInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ResizeInstanceBody:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ResizeInstanceBody.
+        r"""Gets the spec_code of this ResizeInstanceBody.
 
         产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。
 
@@ -101,7 +101,7 @@ class ResizeInstanceBody:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ResizeInstanceBody.
+        r"""Sets the spec_code of this ResizeInstanceBody.
 
         产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。
 
@@ -112,7 +112,7 @@ class ResizeInstanceBody:
 
     @property
     def new_capacity(self):
-        """Gets the new_capacity of this ResizeInstanceBody.
+        r"""Gets the new_capacity of this ResizeInstanceBody.
 
         新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
@@ -123,7 +123,7 @@ class ResizeInstanceBody:
 
     @new_capacity.setter
     def new_capacity(self, new_capacity):
-        """Sets the new_capacity of this ResizeInstanceBody.
+        r"""Sets the new_capacity of this ResizeInstanceBody.
 
         新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
@@ -134,7 +134,7 @@ class ResizeInstanceBody:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this ResizeInstanceBody.
+        r"""Gets the bss_param of this ResizeInstanceBody.
 
         :return: The bss_param of this ResizeInstanceBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
@@ -143,7 +143,7 @@ class ResizeInstanceBody:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this ResizeInstanceBody.
+        r"""Sets the bss_param of this ResizeInstanceBody.
 
         :param bss_param: The bss_param of this ResizeInstanceBody.
         :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
@@ -152,7 +152,7 @@ class ResizeInstanceBody:
 
     @property
     def reserved_ip(self):
-        """Gets the reserved_ip of this ResizeInstanceBody.
+        r"""Gets the reserved_ip of this ResizeInstanceBody.
 
         需要保留的节点ip。cluster集群缩容时需要填写，不填写时系统将随机删除多余的分片
 
@@ -163,7 +163,7 @@ class ResizeInstanceBody:
 
     @reserved_ip.setter
     def reserved_ip(self, reserved_ip):
-        """Sets the reserved_ip of this ResizeInstanceBody.
+        r"""Sets the reserved_ip of this ResizeInstanceBody.
 
         需要保留的节点ip。cluster集群缩容时需要填写，不填写时系统将随机删除多余的分片
 
@@ -174,7 +174,7 @@ class ResizeInstanceBody:
 
     @property
     def change_type(self):
-        """Gets the change_type of this ResizeInstanceBody.
+        r"""Gets the change_type of this ResizeInstanceBody.
 
         变更类型，Redis 4.0或者5.0实例进行副本数变更时必选。 - createReplication: 添加副本 - deleteReplication: 删除副本 - addSharding: 添加分片 - instanceType: 实例类型变更[，目前仅支持Redis 4.0/5.0/6.0实例中的主备实例/读写分离实例变更为proxy集群实例、proxy集群实例变更为主备实例/读写分离实例](tag:hws,hws_hk,hws_eu,ctc,sbc,hk_sbc,g42,hk_g42,otc)。 
 
@@ -185,7 +185,7 @@ class ResizeInstanceBody:
 
     @change_type.setter
     def change_type(self, change_type):
-        """Sets the change_type of this ResizeInstanceBody.
+        r"""Sets the change_type of this ResizeInstanceBody.
 
         变更类型，Redis 4.0或者5.0实例进行副本数变更时必选。 - createReplication: 添加副本 - deleteReplication: 删除副本 - addSharding: 添加分片 - instanceType: 实例类型变更[，目前仅支持Redis 4.0/5.0/6.0实例中的主备实例/读写分离实例变更为proxy集群实例、proxy集群实例变更为主备实例/读写分离实例](tag:hws,hws_hk,hws_eu,ctc,sbc,hk_sbc,g42,hk_g42,otc)。 
 
@@ -196,7 +196,7 @@ class ResizeInstanceBody:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ResizeInstanceBody.
+        r"""Gets the available_zones of this ResizeInstanceBody.
 
         Redis 4.0或者5.0主备实例进行添加副本时必选，指定每个副本所在的可用区Code，使用前需要先确认该可用区资源是否售罄。  具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html) 
 
@@ -207,7 +207,7 @@ class ResizeInstanceBody:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ResizeInstanceBody.
+        r"""Sets the available_zones of this ResizeInstanceBody.
 
         Redis 4.0或者5.0主备实例进行添加副本时必选，指定每个副本所在的可用区Code，使用前需要先确认该可用区资源是否售罄。  具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html) 
 
@@ -218,7 +218,7 @@ class ResizeInstanceBody:
 
     @property
     def node_list(self):
-        """Gets the node_list of this ResizeInstanceBody.
+        r"""Gets the node_list of this ResizeInstanceBody.
 
         Redis 4.0或者5.0主备实例进行删除副本时必选，指定需要删除的节点ID，目前仅支持一次删除一个副本。  节点ID查询方法，请参考[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html) 
 
@@ -229,7 +229,7 @@ class ResizeInstanceBody:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ResizeInstanceBody.
+        r"""Sets the node_list of this ResizeInstanceBody.
 
         Redis 4.0或者5.0主备实例进行删除副本时必选，指定需要删除的节点ID，目前仅支持一次删除一个副本。  节点ID查询方法，请参考[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html) 
 
@@ -240,7 +240,7 @@ class ResizeInstanceBody:
 
     @property
     def execute_immediately(self):
-        """Gets the execute_immediately of this ResizeInstanceBody.
+        r"""Gets the execute_immediately of this ResizeInstanceBody.
 
         是否立即变更。默认值为true。 - true: 立即变更 - false: 可维护时间窗内进行变更 
 
@@ -251,7 +251,7 @@ class ResizeInstanceBody:
 
     @execute_immediately.setter
     def execute_immediately(self, execute_immediately):
-        """Sets the execute_immediately of this ResizeInstanceBody.
+        r"""Sets the execute_immediately of this ResizeInstanceBody.
 
         是否立即变更。默认值为true。 - true: 立即变更 - false: 可维护时间窗内进行变更 
 

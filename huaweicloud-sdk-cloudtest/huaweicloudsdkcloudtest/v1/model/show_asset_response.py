@@ -30,7 +30,7 @@ class ShowAssetResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowAssetResponse
+        r"""ShowAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowAssetResponse.
+        r"""Gets the code of this ShowAssetResponse.
 
         :return: The code of this ShowAssetResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowAssetResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowAssetResponse.
+        r"""Sets the code of this ShowAssetResponse.
 
         :param code: The code of this ShowAssetResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowAssetResponse.
+        r"""Gets the data of this ShowAssetResponse.
 
         :return: The data of this ShowAssetResponse.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.Asset`]
@@ -85,7 +85,7 @@ class ShowAssetResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowAssetResponse.
+        r"""Sets the data of this ShowAssetResponse.
 
         :param data: The data of this ShowAssetResponse.
         :type data: list[:class:`huaweicloudsdkcloudtest.v1.Asset`]
@@ -94,7 +94,7 @@ class ShowAssetResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowAssetResponse.
+        r"""Gets the message of this ShowAssetResponse.
 
         :return: The message of this ShowAssetResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowAssetResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowAssetResponse.
+        r"""Sets the message of this ShowAssetResponse.
 
         :param message: The message of this ShowAssetResponse.
         :type message: str

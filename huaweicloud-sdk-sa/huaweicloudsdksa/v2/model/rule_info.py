@@ -29,7 +29,7 @@ class RuleInfo:
     }
 
     def __init__(self, id=None, project_id=None, rule=None):
-        """RuleInfo
+        r"""RuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RuleInfo:
 
     @property
     def id(self):
-        """Gets the id of this RuleInfo.
+        r"""Gets the id of this RuleInfo.
 
         Id value
 
@@ -68,7 +68,7 @@ class RuleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleInfo.
+        r"""Sets the id of this RuleInfo.
 
         Id value
 
@@ -79,7 +79,7 @@ class RuleInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RuleInfo.
+        r"""Gets the project_id of this RuleInfo.
 
         Project id value
 
@@ -90,7 +90,7 @@ class RuleInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RuleInfo.
+        r"""Sets the project_id of this RuleInfo.
 
         Project id value
 
@@ -101,7 +101,7 @@ class RuleInfo:
 
     @property
     def rule(self):
-        """Gets the rule of this RuleInfo.
+        r"""Gets the rule of this RuleInfo.
 
         Project id value
 
@@ -112,7 +112,7 @@ class RuleInfo:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this RuleInfo.
+        r"""Sets the rule of this RuleInfo.
 
         Project id value
 

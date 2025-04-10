@@ -31,7 +31,7 @@ class CustomizeParameter:
     }
 
     def __init__(self, alias=None, behavior_type=None, threshold=None, deduplication=None):
-        """CustomizeParameter
+        r"""CustomizeParameter
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CustomizeParameter:
 
     @property
     def alias(self):
-        """Gets the alias of this CustomizeParameter.
+        r"""Gets the alias of this CustomizeParameter.
 
         别名。
 
@@ -72,7 +72,7 @@ class CustomizeParameter:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CustomizeParameter.
+        r"""Sets the alias of this CustomizeParameter.
 
         别名。
 
@@ -83,7 +83,7 @@ class CustomizeParameter:
 
     @property
     def behavior_type(self):
-        """Gets the behavior_type of this CustomizeParameter.
+        r"""Gets the behavior_type of this CustomizeParameter.
 
         行为类型。
 
@@ -94,7 +94,7 @@ class CustomizeParameter:
 
     @behavior_type.setter
     def behavior_type(self, behavior_type):
-        """Sets the behavior_type of this CustomizeParameter.
+        r"""Sets the behavior_type of this CustomizeParameter.
 
         行为类型。
 
@@ -105,7 +105,7 @@ class CustomizeParameter:
 
     @property
     def threshold(self):
-        """Gets the threshold of this CustomizeParameter.
+        r"""Gets the threshold of this CustomizeParameter.
 
         阈值。
 
@@ -116,7 +116,7 @@ class CustomizeParameter:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this CustomizeParameter.
+        r"""Sets the threshold of this CustomizeParameter.
 
         阈值。
 
@@ -127,7 +127,7 @@ class CustomizeParameter:
 
     @property
     def deduplication(self):
-        """Gets the deduplication of this CustomizeParameter.
+        r"""Gets the deduplication of this CustomizeParameter.
 
         去重。
 
@@ -138,7 +138,7 @@ class CustomizeParameter:
 
     @deduplication.setter
     def deduplication(self, deduplication):
-        """Sets the deduplication of this CustomizeParameter.
+        r"""Sets the deduplication of this CustomizeParameter.
 
         去重。
 

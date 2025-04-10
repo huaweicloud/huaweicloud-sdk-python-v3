@@ -18,7 +18,7 @@ class ListNosqlTaskListResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'int',
+        'total_count': 'str',
         'schedules': 'list[ScheduleDetailInfo]'
     }
 
@@ -28,12 +28,12 @@ class ListNosqlTaskListResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, schedules=None):
-        """ListNosqlTaskListResponse
+        r"""ListNosqlTaskListResponse
 
         The model defined in huaweicloud sdk
 
         :param total_count: 记录总数。
-        :type total_count: int
+        :type total_count: str
         :param schedules: 任务详情。
         :type schedules: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ScheduleDetailInfo`]
         """
@@ -51,29 +51,29 @@ class ListNosqlTaskListResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListNosqlTaskListResponse.
+        r"""Gets the total_count of this ListNosqlTaskListResponse.
 
         记录总数。
 
         :return: The total_count of this ListNosqlTaskListResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._total_count
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListNosqlTaskListResponse.
+        r"""Sets the total_count of this ListNosqlTaskListResponse.
 
         记录总数。
 
         :param total_count: The total_count of this ListNosqlTaskListResponse.
-        :type total_count: int
+        :type total_count: str
         """
         self._total_count = total_count
 
     @property
     def schedules(self):
-        """Gets the schedules of this ListNosqlTaskListResponse.
+        r"""Gets the schedules of this ListNosqlTaskListResponse.
 
         任务详情。
 
@@ -84,7 +84,7 @@ class ListNosqlTaskListResponse(SdkResponse):
 
     @schedules.setter
     def schedules(self, schedules):
-        """Sets the schedules of this ListNosqlTaskListResponse.
+        r"""Sets the schedules of this ListNosqlTaskListResponse.
 
         任务详情。
 

@@ -25,7 +25,7 @@ class LogoutWebCliBody:
     }
 
     def __init__(self, client_id=None):
-        """LogoutWebCliBody
+        r"""LogoutWebCliBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LogoutWebCliBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this LogoutWebCliBody.
+        r"""Gets the client_id of this LogoutWebCliBody.
 
         客户端ID
 
@@ -54,7 +54,7 @@ class LogoutWebCliBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this LogoutWebCliBody.
+        r"""Sets the client_id of this LogoutWebCliBody.
 
         客户端ID
 

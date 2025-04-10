@@ -24,7 +24,7 @@ class BatchCreateFirewallTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateFirewallTagsResponse
+        r"""BatchCreateFirewallTagsResponse
 
         The model defined in huaweicloud sdk
 

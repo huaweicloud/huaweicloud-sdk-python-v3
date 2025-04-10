@@ -28,7 +28,7 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeInvoiceVerificationResponse
+        r"""RecognizeInvoiceVerificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeInvoiceVerificationResponse.
+        r"""Gets the result of this RecognizeInvoiceVerificationResponse.
 
         调用成功时表示调用结果，详情参见[响应参数](https://support.huaweicloud.com/api-ocr/ocr_03_0134.html#ocr_03_0134__table266mcpsimp)。  调用失败时无此字段。 依据发票类型不同，返回参数不同。 - 增值税发票   含增值税专用发票、增值税普通发票、增值税普通发票（卷式）、增值税电子专用发票、增值税电子普通发票、增值税电子普通发票（通行费）、区块链电子发票。 - 机动车销售统一发票 - 二手车销售统一发票 - 航空运输电子客票行程单 - 铁路电子客票 
 
@@ -62,7 +62,7 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeInvoiceVerificationResponse.
+        r"""Sets the result of this RecognizeInvoiceVerificationResponse.
 
         调用成功时表示调用结果，详情参见[响应参数](https://support.huaweicloud.com/api-ocr/ocr_03_0134.html#ocr_03_0134__table266mcpsimp)。  调用失败时无此字段。 依据发票类型不同，返回参数不同。 - 增值税发票   含增值税专用发票、增值税普通发票、增值税普通发票（卷式）、增值税电子专用发票、增值税电子普通发票、增值税电子普通发票（通行费）、区块链电子发票。 - 机动车销售统一发票 - 二手车销售统一发票 - 航空运输电子客票行程单 - 铁路电子客票 
 
@@ -73,7 +73,7 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeInvoiceVerificationResponse.
+        r"""Gets the x_request_id of this RecognizeInvoiceVerificationResponse.
 
         :return: The x_request_id of this RecognizeInvoiceVerificationResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class RecognizeInvoiceVerificationResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeInvoiceVerificationResponse.
+        r"""Sets the x_request_id of this RecognizeInvoiceVerificationResponse.
 
         :param x_request_id: The x_request_id of this RecognizeInvoiceVerificationResponse.
         :type x_request_id: str

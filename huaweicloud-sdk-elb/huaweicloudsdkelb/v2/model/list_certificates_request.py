@@ -49,7 +49,7 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, type=None, domain=None, private_key=None, certificate=None, source=None, protection_status=None, protection_reason=None):
-        """ListCertificatesRequest
+        r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListCertificatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertificatesRequest.
+        r"""Gets the limit of this ListCertificatesRequest.
 
         每页返回的个数。 取值范围：0~intmax。
 
@@ -138,7 +138,7 @@ class ListCertificatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertificatesRequest.
+        r"""Sets the limit of this ListCertificatesRequest.
 
         每页返回的个数。 取值范围：0~intmax。
 
@@ -149,7 +149,7 @@ class ListCertificatesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCertificatesRequest.
+        r"""Gets the marker of this ListCertificatesRequest.
 
         分页查询起始的证书id，为空时为查询第一页。 仅当和limit一起使用时生效
 
@@ -160,7 +160,7 @@ class ListCertificatesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCertificatesRequest.
+        r"""Sets the marker of this ListCertificatesRequest.
 
         分页查询起始的证书id，为空时为查询第一页。 仅当和limit一起使用时生效
 
@@ -171,7 +171,7 @@ class ListCertificatesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListCertificatesRequest.
+        r"""Gets the page_reverse of this ListCertificatesRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 仅当和limit一起使用时生效。
 
@@ -182,7 +182,7 @@ class ListCertificatesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListCertificatesRequest.
+        r"""Sets the page_reverse of this ListCertificatesRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 仅当和limit一起使用时生效。
 
@@ -193,7 +193,7 @@ class ListCertificatesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCertificatesRequest.
+        r"""Gets the id of this ListCertificatesRequest.
 
         SSL证书ID。
 
@@ -204,7 +204,7 @@ class ListCertificatesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCertificatesRequest.
+        r"""Sets the id of this ListCertificatesRequest.
 
         SSL证书ID。
 
@@ -215,7 +215,7 @@ class ListCertificatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCertificatesRequest.
+        r"""Gets the name of this ListCertificatesRequest.
 
         SSL证书的名称。
 
@@ -226,7 +226,7 @@ class ListCertificatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCertificatesRequest.
+        r"""Sets the name of this ListCertificatesRequest.
 
         SSL证书的名称。
 
@@ -237,7 +237,7 @@ class ListCertificatesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListCertificatesRequest.
+        r"""Gets the description of this ListCertificatesRequest.
 
         证书描述SSL证书描述。
 
@@ -248,7 +248,7 @@ class ListCertificatesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListCertificatesRequest.
+        r"""Sets the description of this ListCertificatesRequest.
 
         证书描述SSL证书描述。
 
@@ -259,7 +259,7 @@ class ListCertificatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListCertificatesRequest.
+        r"""Gets the type of this ListCertificatesRequest.
 
         SSL证书的类型。默认值：server；取值范围：server：服务端证书；client：客户端证书；
 
@@ -270,7 +270,7 @@ class ListCertificatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListCertificatesRequest.
+        r"""Sets the type of this ListCertificatesRequest.
 
         SSL证书的类型。默认值：server；取值范围：server：服务端证书；client：客户端证书；
 
@@ -281,7 +281,7 @@ class ListCertificatesRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListCertificatesRequest.
+        r"""Gets the domain of this ListCertificatesRequest.
 
         服务端证书所签的域名。 取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
 
@@ -292,7 +292,7 @@ class ListCertificatesRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListCertificatesRequest.
+        r"""Sets the domain of this ListCertificatesRequest.
 
         服务端证书所签的域名。 取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
 
@@ -303,7 +303,7 @@ class ListCertificatesRequest:
 
     @property
     def private_key(self):
-        """Gets the private_key of this ListCertificatesRequest.
+        r"""Gets the private_key of this ListCertificatesRequest.
 
         PEM格式的服务端私有密钥。
 
@@ -314,7 +314,7 @@ class ListCertificatesRequest:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ListCertificatesRequest.
+        r"""Sets the private_key of this ListCertificatesRequest.
 
         PEM格式的服务端私有密钥。
 
@@ -325,7 +325,7 @@ class ListCertificatesRequest:
 
     @property
     def certificate(self):
-        """Gets the certificate of this ListCertificatesRequest.
+        r"""Gets the certificate of this ListCertificatesRequest.
 
         PEM格式的服务端公有密钥或者用于认证客户端证书的CA证书，由type字段区分。
 
@@ -336,7 +336,7 @@ class ListCertificatesRequest:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ListCertificatesRequest.
+        r"""Sets the certificate of this ListCertificatesRequest.
 
         PEM格式的服务端公有密钥或者用于认证客户端证书的CA证书，由type字段区分。
 
@@ -347,7 +347,7 @@ class ListCertificatesRequest:
 
     @property
     def source(self):
-        """Gets the source of this ListCertificatesRequest.
+        r"""Gets the source of this ListCertificatesRequest.
 
         参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
 
@@ -358,7 +358,7 @@ class ListCertificatesRequest:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ListCertificatesRequest.
+        r"""Sets the source of this ListCertificatesRequest.
 
         参数解释： 证书来源  约束限制： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”。  取值范围： 无  默认取值： 当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
 
@@ -369,7 +369,7 @@ class ListCertificatesRequest:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this ListCertificatesRequest.
+        r"""Gets the protection_status of this ListCertificatesRequest.
 
         参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值： nonProtection
 
@@ -380,7 +380,7 @@ class ListCertificatesRequest:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this ListCertificatesRequest.
+        r"""Sets the protection_status of this ListCertificatesRequest.
 
         参数解释： 修改保护状态  约束限制： 无  取值范围：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值： nonProtection
 
@@ -391,7 +391,7 @@ class ListCertificatesRequest:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this ListCertificatesRequest.
+        r"""Gets the protection_reason of this ListCertificatesRequest.
 
         参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
 
@@ -402,7 +402,7 @@ class ListCertificatesRequest:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this ListCertificatesRequest.
+        r"""Sets the protection_reason of this ListCertificatesRequest.
 
         参数解释： 设置修改保护的原因  约束限制： 仅当protection_status为consoleProtection时有效  取值范围： 无  默认取值： 空
 

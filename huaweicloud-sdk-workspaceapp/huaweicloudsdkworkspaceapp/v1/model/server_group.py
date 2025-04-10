@@ -85,7 +85,7 @@ class ServerGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None, enterprise_project_id=None, primary_server_group_ids=None, secondary_server_group_ids=None, server_group_status=None, site_type=None, site_id=None, app_server_flavor_count=None, app_server_count=None, app_group_count=None, image_name=None, product_info=None, subnet_name=None, scaling_policy=None, tags=None, ou_name=None):
-        """ServerGroup
+        r"""ServerGroup
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class ServerGroup:
 
     @property
     def id(self):
-        """Gets the id of this ServerGroup.
+        r"""Gets the id of this ServerGroup.
 
         服务器组的唯一标识。
 
@@ -264,7 +264,7 @@ class ServerGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerGroup.
+        r"""Sets the id of this ServerGroup.
 
         服务器组的唯一标识。
 
@@ -275,7 +275,7 @@ class ServerGroup:
 
     @property
     def name(self):
-        """Gets the name of this ServerGroup.
+        r"""Gets the name of this ServerGroup.
 
         服务器组名称。
 
@@ -286,7 +286,7 @@ class ServerGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerGroup.
+        r"""Sets the name of this ServerGroup.
 
         服务器组名称。
 
@@ -297,7 +297,7 @@ class ServerGroup:
 
     @property
     def description(self):
-        """Gets the description of this ServerGroup.
+        r"""Gets the description of this ServerGroup.
 
         服务器组描述。
 
@@ -308,7 +308,7 @@ class ServerGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServerGroup.
+        r"""Sets the description of this ServerGroup.
 
         服务器组描述。
 
@@ -319,7 +319,7 @@ class ServerGroup:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ServerGroup.
+        r"""Gets the image_id of this ServerGroup.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -330,7 +330,7 @@ class ServerGroup:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ServerGroup.
+        r"""Sets the image_id of this ServerGroup.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -341,7 +341,7 @@ class ServerGroup:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ServerGroup.
+        r"""Gets the os_type of this ServerGroup.
 
         :return: The os_type of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -350,7 +350,7 @@ class ServerGroup:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ServerGroup.
+        r"""Sets the os_type of this ServerGroup.
 
         :param os_type: The os_type of this ServerGroup.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -359,7 +359,7 @@ class ServerGroup:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ServerGroup.
+        r"""Gets the product_id of this ServerGroup.
 
         产品id。
 
@@ -370,7 +370,7 @@ class ServerGroup:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ServerGroup.
+        r"""Sets the product_id of this ServerGroup.
 
         产品id。
 
@@ -381,7 +381,7 @@ class ServerGroup:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ServerGroup.
+        r"""Gets the subnet_id of this ServerGroup.
 
         网卡对应的子网ID。
 
@@ -392,7 +392,7 @@ class ServerGroup:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ServerGroup.
+        r"""Sets the subnet_id of this ServerGroup.
 
         网卡对应的子网ID。
 
@@ -403,7 +403,7 @@ class ServerGroup:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this ServerGroup.
+        r"""Gets the system_disk_type of this ServerGroup.
 
         :return: The system_disk_type of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -412,7 +412,7 @@ class ServerGroup:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this ServerGroup.
+        r"""Sets the system_disk_type of this ServerGroup.
 
         :param system_disk_type: The system_disk_type of this ServerGroup.
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -421,7 +421,7 @@ class ServerGroup:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this ServerGroup.
+        r"""Gets the system_disk_size of this ServerGroup.
 
         磁盘容量，单位GB。
 
@@ -432,7 +432,7 @@ class ServerGroup:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this ServerGroup.
+        r"""Sets the system_disk_size of this ServerGroup.
 
         磁盘容量，单位GB。
 
@@ -443,7 +443,7 @@ class ServerGroup:
 
     @property
     def is_vdi(self):
-        """Gets the is_vdi of this ServerGroup.
+        r"""Gets the is_vdi of this ServerGroup.
 
         是否为vdi单会话模式。
 
@@ -454,7 +454,7 @@ class ServerGroup:
 
     @is_vdi.setter
     def is_vdi(self, is_vdi):
-        """Sets the is_vdi of this ServerGroup.
+        r"""Sets the is_vdi of this ServerGroup.
 
         是否为vdi单会话模式。
 
@@ -465,7 +465,7 @@ class ServerGroup:
 
     @property
     def extra_session_type(self):
-        """Gets the extra_session_type of this ServerGroup.
+        r"""Gets the extra_session_type of this ServerGroup.
 
         :return: The extra_session_type of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -474,7 +474,7 @@ class ServerGroup:
 
     @extra_session_type.setter
     def extra_session_type(self, extra_session_type):
-        """Sets the extra_session_type of this ServerGroup.
+        r"""Sets the extra_session_type of this ServerGroup.
 
         :param extra_session_type: The extra_session_type of this ServerGroup.
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -483,7 +483,7 @@ class ServerGroup:
 
     @property
     def extra_session_size(self):
-        """Gets the extra_session_size of this ServerGroup.
+        r"""Gets the extra_session_size of this ServerGroup.
 
         付费会话个数。
 
@@ -494,7 +494,7 @@ class ServerGroup:
 
     @extra_session_size.setter
     def extra_session_size(self, extra_session_size):
-        """Sets the extra_session_size of this ServerGroup.
+        r"""Sets the extra_session_size of this ServerGroup.
 
         付费会话个数。
 
@@ -505,7 +505,7 @@ class ServerGroup:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ServerGroup.
+        r"""Gets the app_type of this ServerGroup.
 
         :return: The app_type of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -514,7 +514,7 @@ class ServerGroup:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ServerGroup.
+        r"""Sets the app_type of this ServerGroup.
 
         :param app_type: The app_type of this ServerGroup.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -523,7 +523,7 @@ class ServerGroup:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ServerGroup.
+        r"""Gets the create_time of this ServerGroup.
 
         服务器组创建时间
 
@@ -534,7 +534,7 @@ class ServerGroup:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ServerGroup.
+        r"""Sets the create_time of this ServerGroup.
 
         服务器组创建时间
 
@@ -545,7 +545,7 @@ class ServerGroup:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ServerGroup.
+        r"""Gets the update_time of this ServerGroup.
 
         服务器组更新时间
 
@@ -556,7 +556,7 @@ class ServerGroup:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ServerGroup.
+        r"""Sets the update_time of this ServerGroup.
 
         服务器组更新时间
 
@@ -567,7 +567,7 @@ class ServerGroup:
 
     @property
     def storage_mount_policy(self):
-        """Gets the storage_mount_policy of this ServerGroup.
+        r"""Gets the storage_mount_policy of this ServerGroup.
 
         :return: The storage_mount_policy of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -576,7 +576,7 @@ class ServerGroup:
 
     @storage_mount_policy.setter
     def storage_mount_policy(self, storage_mount_policy):
-        """Sets the storage_mount_policy of this ServerGroup.
+        r"""Sets the storage_mount_policy of this ServerGroup.
 
         :param storage_mount_policy: The storage_mount_policy of this ServerGroup.
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -585,7 +585,7 @@ class ServerGroup:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ServerGroup.
+        r"""Gets the enterprise_project_id of this ServerGroup.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -596,7 +596,7 @@ class ServerGroup:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ServerGroup.
+        r"""Sets the enterprise_project_id of this ServerGroup.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -607,7 +607,7 @@ class ServerGroup:
 
     @property
     def primary_server_group_ids(self):
-        """Gets the primary_server_group_ids of this ServerGroup.
+        r"""Gets the primary_server_group_ids of this ServerGroup.
 
         主服务器组id列表。
 
@@ -618,7 +618,7 @@ class ServerGroup:
 
     @primary_server_group_ids.setter
     def primary_server_group_ids(self, primary_server_group_ids):
-        """Sets the primary_server_group_ids of this ServerGroup.
+        r"""Sets the primary_server_group_ids of this ServerGroup.
 
         主服务器组id列表。
 
@@ -629,7 +629,7 @@ class ServerGroup:
 
     @property
     def secondary_server_group_ids(self):
-        """Gets the secondary_server_group_ids of this ServerGroup.
+        r"""Gets the secondary_server_group_ids of this ServerGroup.
 
         备服务器组id列表。
 
@@ -640,7 +640,7 @@ class ServerGroup:
 
     @secondary_server_group_ids.setter
     def secondary_server_group_ids(self, secondary_server_group_ids):
-        """Sets the secondary_server_group_ids of this ServerGroup.
+        r"""Sets the secondary_server_group_ids of this ServerGroup.
 
         备服务器组id列表。
 
@@ -651,7 +651,7 @@ class ServerGroup:
 
     @property
     def server_group_status(self):
-        """Gets the server_group_status of this ServerGroup.
+        r"""Gets the server_group_status of this ServerGroup.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -662,7 +662,7 @@ class ServerGroup:
 
     @server_group_status.setter
     def server_group_status(self, server_group_status):
-        """Sets the server_group_status of this ServerGroup.
+        r"""Sets the server_group_status of this ServerGroup.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -673,7 +673,7 @@ class ServerGroup:
 
     @property
     def site_type(self):
-        """Gets the site_type of this ServerGroup.
+        r"""Gets the site_type of this ServerGroup.
 
         站点类型 - CENTER/IES
 
@@ -684,7 +684,7 @@ class ServerGroup:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this ServerGroup.
+        r"""Sets the site_type of this ServerGroup.
 
         站点类型 - CENTER/IES
 
@@ -695,7 +695,7 @@ class ServerGroup:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ServerGroup.
+        r"""Gets the site_id of this ServerGroup.
 
         站点id
 
@@ -706,7 +706,7 @@ class ServerGroup:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ServerGroup.
+        r"""Sets the site_id of this ServerGroup.
 
         站点id
 
@@ -717,7 +717,7 @@ class ServerGroup:
 
     @property
     def app_server_flavor_count(self):
-        """Gets the app_server_flavor_count of this ServerGroup.
+        r"""Gets the app_server_flavor_count of this ServerGroup.
 
         服务器配置总数量。
 
@@ -728,7 +728,7 @@ class ServerGroup:
 
     @app_server_flavor_count.setter
     def app_server_flavor_count(self, app_server_flavor_count):
-        """Sets the app_server_flavor_count of this ServerGroup.
+        r"""Sets the app_server_flavor_count of this ServerGroup.
 
         服务器配置总数量。
 
@@ -739,7 +739,7 @@ class ServerGroup:
 
     @property
     def app_server_count(self):
-        """Gets the app_server_count of this ServerGroup.
+        r"""Gets the app_server_count of this ServerGroup.
 
         服务器总数量。
 
@@ -750,7 +750,7 @@ class ServerGroup:
 
     @app_server_count.setter
     def app_server_count(self, app_server_count):
-        """Sets the app_server_count of this ServerGroup.
+        r"""Sets the app_server_count of this ServerGroup.
 
         服务器总数量。
 
@@ -761,7 +761,7 @@ class ServerGroup:
 
     @property
     def app_group_count(self):
-        """Gets the app_group_count of this ServerGroup.
+        r"""Gets the app_group_count of this ServerGroup.
 
         关联应用组的总数量。
 
@@ -772,7 +772,7 @@ class ServerGroup:
 
     @app_group_count.setter
     def app_group_count(self, app_group_count):
-        """Sets the app_group_count of this ServerGroup.
+        r"""Sets the app_group_count of this ServerGroup.
 
         关联应用组的总数量。
 
@@ -783,7 +783,7 @@ class ServerGroup:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ServerGroup.
+        r"""Gets the image_name of this ServerGroup.
 
         镜像名称。
 
@@ -794,7 +794,7 @@ class ServerGroup:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ServerGroup.
+        r"""Sets the image_name of this ServerGroup.
 
         镜像名称。
 
@@ -805,7 +805,7 @@ class ServerGroup:
 
     @property
     def product_info(self):
-        """Gets the product_info of this ServerGroup.
+        r"""Gets the product_info of this ServerGroup.
 
         :return: The product_info of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -814,7 +814,7 @@ class ServerGroup:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this ServerGroup.
+        r"""Sets the product_info of this ServerGroup.
 
         :param product_info: The product_info of this ServerGroup.
         :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -823,7 +823,7 @@ class ServerGroup:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this ServerGroup.
+        r"""Gets the subnet_name of this ServerGroup.
 
         子网名称。
 
@@ -834,7 +834,7 @@ class ServerGroup:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ServerGroup.
+        r"""Sets the subnet_name of this ServerGroup.
 
         子网名称。
 
@@ -845,7 +845,7 @@ class ServerGroup:
 
     @property
     def scaling_policy(self):
-        """Gets the scaling_policy of this ServerGroup.
+        r"""Gets the scaling_policy of this ServerGroup.
 
         :return: The scaling_policy of this ServerGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicy`
@@ -854,7 +854,7 @@ class ServerGroup:
 
     @scaling_policy.setter
     def scaling_policy(self, scaling_policy):
-        """Sets the scaling_policy of this ServerGroup.
+        r"""Sets the scaling_policy of this ServerGroup.
 
         :param scaling_policy: The scaling_policy of this ServerGroup.
         :type scaling_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicy`
@@ -863,7 +863,7 @@ class ServerGroup:
 
     @property
     def tags(self):
-        """Gets the tags of this ServerGroup.
+        r"""Gets the tags of this ServerGroup.
 
         标签信息
 
@@ -874,7 +874,7 @@ class ServerGroup:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ServerGroup.
+        r"""Sets the tags of this ServerGroup.
 
         标签信息
 
@@ -885,7 +885,7 @@ class ServerGroup:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this ServerGroup.
+        r"""Gets the ou_name of this ServerGroup.
 
         默认组织名称。
 
@@ -896,7 +896,7 @@ class ServerGroup:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this ServerGroup.
+        r"""Sets the ou_name of this ServerGroup.
 
         默认组织名称。
 

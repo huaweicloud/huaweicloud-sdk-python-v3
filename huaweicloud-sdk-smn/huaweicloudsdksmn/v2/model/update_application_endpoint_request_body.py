@@ -27,7 +27,7 @@ class UpdateApplicationEndpointRequestBody:
     }
 
     def __init__(self, enabled=None, user_data=None):
-        """UpdateApplicationEndpointRequestBody
+        r"""UpdateApplicationEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateApplicationEndpointRequestBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateApplicationEndpointRequestBody.
+        r"""Gets the enabled of this UpdateApplicationEndpointRequestBody.
 
         设备是否可用，值为true或false字符串。
 
@@ -61,7 +61,7 @@ class UpdateApplicationEndpointRequestBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateApplicationEndpointRequestBody.
+        r"""Sets the enabled of this UpdateApplicationEndpointRequestBody.
 
         设备是否可用，值为true或false字符串。
 
@@ -72,7 +72,7 @@ class UpdateApplicationEndpointRequestBody:
 
     @property
     def user_data(self):
-        """Gets the user_data of this UpdateApplicationEndpointRequestBody.
+        r"""Gets the user_data of this UpdateApplicationEndpointRequestBody.
 
         用户自定义数据，最大长度支持UTF-8编码后2048字节。
 
@@ -83,7 +83,7 @@ class UpdateApplicationEndpointRequestBody:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this UpdateApplicationEndpointRequestBody.
+        r"""Sets the user_data of this UpdateApplicationEndpointRequestBody.
 
         用户自定义数据，最大长度支持UTF-8编码后2048字节。
 

@@ -25,7 +25,7 @@ class ModifyDomainConfigRequestBody:
     }
 
     def __init__(self, configs=None):
-        """ModifyDomainConfigRequestBody
+        r"""ModifyDomainConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyDomainConfigRequestBody:
 
     @property
     def configs(self):
-        """Gets the configs of this ModifyDomainConfigRequestBody.
+        r"""Gets the configs of this ModifyDomainConfigRequestBody.
 
         :return: The configs of this ModifyDomainConfigRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Configs`
@@ -52,7 +52,7 @@ class ModifyDomainConfigRequestBody:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ModifyDomainConfigRequestBody.
+        r"""Sets the configs of this ModifyDomainConfigRequestBody.
 
         :param configs: The configs of this ModifyDomainConfigRequestBody.
         :type configs: :class:`huaweicloudsdkcdn.v1.Configs`

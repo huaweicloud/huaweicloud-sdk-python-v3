@@ -29,7 +29,7 @@ class OpenGaussHaResponse:
     }
 
     def __init__(self, mode=None, replication_mode=None, consistency=None):
-        """OpenGaussHaResponse
+        r"""OpenGaussHaResponse
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OpenGaussHaResponse:
 
     @property
     def mode(self):
-        """Gets the mode of this OpenGaussHaResponse.
+        r"""Gets the mode of this OpenGaussHaResponse.
 
         GaussDB 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
@@ -65,7 +65,7 @@ class OpenGaussHaResponse:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this OpenGaussHaResponse.
+        r"""Sets the mode of this OpenGaussHaResponse.
 
         GaussDB 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
@@ -76,7 +76,7 @@ class OpenGaussHaResponse:
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this OpenGaussHaResponse.
+        r"""Gets the replication_mode of this OpenGaussHaResponse.
 
         备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
 
@@ -87,7 +87,7 @@ class OpenGaussHaResponse:
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this OpenGaussHaResponse.
+        r"""Sets the replication_mode of this OpenGaussHaResponse.
 
         备机同步参数。  取值：  GaussDB为“sync”。 说明： - “sync”为同步模式。
 
@@ -98,7 +98,7 @@ class OpenGaussHaResponse:
 
     @property
     def consistency(self):
-        """Gets the consistency of this OpenGaussHaResponse.
+        r"""Gets the consistency of this OpenGaussHaResponse.
 
         GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 
@@ -109,7 +109,7 @@ class OpenGaussHaResponse:
 
     @consistency.setter
     def consistency(self, consistency):
-        """Sets the consistency of this OpenGaussHaResponse.
+        r"""Sets the consistency of this OpenGaussHaResponse.
 
         GaussDB的预留参数：指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)。
 

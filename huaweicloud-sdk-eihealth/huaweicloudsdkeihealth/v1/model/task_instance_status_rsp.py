@@ -35,7 +35,7 @@ class TaskInstanceStatusRsp:
     }
 
     def __init__(self, phase=None, pod_ip=None, host_ip=None, host_name=None, start_time=None, container_statuses=None):
-        """TaskInstanceStatusRsp
+        r"""TaskInstanceStatusRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TaskInstanceStatusRsp:
 
     @property
     def phase(self):
-        """Gets the phase of this TaskInstanceStatusRsp.
+        r"""Gets the phase of this TaskInstanceStatusRsp.
 
         实例执行状态
 
@@ -89,7 +89,7 @@ class TaskInstanceStatusRsp:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this TaskInstanceStatusRsp.
+        r"""Sets the phase of this TaskInstanceStatusRsp.
 
         实例执行状态
 
@@ -100,7 +100,7 @@ class TaskInstanceStatusRsp:
 
     @property
     def pod_ip(self):
-        """Gets the pod_ip of this TaskInstanceStatusRsp.
+        r"""Gets the pod_ip of this TaskInstanceStatusRsp.
 
         实例IP
 
@@ -111,7 +111,7 @@ class TaskInstanceStatusRsp:
 
     @pod_ip.setter
     def pod_ip(self, pod_ip):
-        """Sets the pod_ip of this TaskInstanceStatusRsp.
+        r"""Sets the pod_ip of this TaskInstanceStatusRsp.
 
         实例IP
 
@@ -122,7 +122,7 @@ class TaskInstanceStatusRsp:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this TaskInstanceStatusRsp.
+        r"""Gets the host_ip of this TaskInstanceStatusRsp.
 
         实例所在节点IP
 
@@ -133,7 +133,7 @@ class TaskInstanceStatusRsp:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this TaskInstanceStatusRsp.
+        r"""Sets the host_ip of this TaskInstanceStatusRsp.
 
         实例所在节点IP
 
@@ -144,7 +144,7 @@ class TaskInstanceStatusRsp:
 
     @property
     def host_name(self):
-        """Gets the host_name of this TaskInstanceStatusRsp.
+        r"""Gets the host_name of this TaskInstanceStatusRsp.
 
         计算节点的名称
 
@@ -155,7 +155,7 @@ class TaskInstanceStatusRsp:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this TaskInstanceStatusRsp.
+        r"""Sets the host_name of this TaskInstanceStatusRsp.
 
         计算节点的名称
 
@@ -166,7 +166,7 @@ class TaskInstanceStatusRsp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskInstanceStatusRsp.
+        r"""Gets the start_time of this TaskInstanceStatusRsp.
 
         实例创建时间
 
@@ -177,7 +177,7 @@ class TaskInstanceStatusRsp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskInstanceStatusRsp.
+        r"""Sets the start_time of this TaskInstanceStatusRsp.
 
         实例创建时间
 
@@ -188,7 +188,7 @@ class TaskInstanceStatusRsp:
 
     @property
     def container_statuses(self):
-        """Gets the container_statuses of this TaskInstanceStatusRsp.
+        r"""Gets the container_statuses of this TaskInstanceStatusRsp.
 
         实例状态信息
 
@@ -199,7 +199,7 @@ class TaskInstanceStatusRsp:
 
     @container_statuses.setter
     def container_statuses(self, container_statuses):
-        """Sets the container_statuses of this TaskInstanceStatusRsp.
+        r"""Sets the container_statuses of this TaskInstanceStatusRsp.
 
         实例状态信息
 

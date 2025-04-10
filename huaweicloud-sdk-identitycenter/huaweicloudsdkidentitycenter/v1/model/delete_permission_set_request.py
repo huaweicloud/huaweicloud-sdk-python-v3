@@ -30,7 +30,7 @@ class DeletePermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None):
-        """DeletePermissionSetRequest
+        r"""DeletePermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeletePermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeletePermissionSetRequest.
+        r"""Gets the x_security_token of this DeletePermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class DeletePermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeletePermissionSetRequest.
+        r"""Sets the x_security_token of this DeletePermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class DeletePermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePermissionSetRequest.
+        r"""Gets the instance_id of this DeletePermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -89,7 +89,7 @@ class DeletePermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePermissionSetRequest.
+        r"""Sets the instance_id of this DeletePermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -100,7 +100,7 @@ class DeletePermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this DeletePermissionSetRequest.
+        r"""Gets the permission_set_id of this DeletePermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -111,7 +111,7 @@ class DeletePermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this DeletePermissionSetRequest.
+        r"""Sets the permission_set_id of this DeletePermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 

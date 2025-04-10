@@ -30,7 +30,7 @@ class CountDevicesResponse(SdkResponse):
     }
 
     def __init__(self, product_templates=None, products=None, devices=None):
-        """CountDevicesResponse
+        r"""CountDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CountDevicesResponse(SdkResponse):
 
     @property
     def product_templates(self):
-        """Gets the product_templates of this CountDevicesResponse.
+        r"""Gets the product_templates of this CountDevicesResponse.
 
         :return: The product_templates of this CountDevicesResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
@@ -67,7 +67,7 @@ class CountDevicesResponse(SdkResponse):
 
     @product_templates.setter
     def product_templates(self, product_templates):
-        """Sets the product_templates of this CountDevicesResponse.
+        r"""Sets the product_templates of this CountDevicesResponse.
 
         :param product_templates: The product_templates of this CountDevicesResponse.
         :type product_templates: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
@@ -76,7 +76,7 @@ class CountDevicesResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this CountDevicesResponse.
+        r"""Gets the products of this CountDevicesResponse.
 
         :return: The products of this CountDevicesResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
@@ -85,7 +85,7 @@ class CountDevicesResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this CountDevicesResponse.
+        r"""Sets the products of this CountDevicesResponse.
 
         :param products: The products of this CountDevicesResponse.
         :type products: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
@@ -94,7 +94,7 @@ class CountDevicesResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this CountDevicesResponse.
+        r"""Gets the devices of this CountDevicesResponse.
 
         :return: The devices of this CountDevicesResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.DevicesCalculation`
@@ -103,7 +103,7 @@ class CountDevicesResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this CountDevicesResponse.
+        r"""Sets the devices of this CountDevicesResponse.
 
         :param devices: The devices of this CountDevicesResponse.
         :type devices: :class:`huaweicloudsdkroma.v2.DevicesCalculation`

@@ -27,7 +27,7 @@ class ProjectRoleRsp:
     }
 
     def __init__(self, role_type=None, users=None):
-        """ProjectRoleRsp
+        r"""ProjectRoleRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProjectRoleRsp:
 
     @property
     def role_type(self):
-        """Gets the role_type of this ProjectRoleRsp.
+        r"""Gets the role_type of this ProjectRoleRsp.
 
         项目角色名
 
@@ -61,7 +61,7 @@ class ProjectRoleRsp:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this ProjectRoleRsp.
+        r"""Sets the role_type of this ProjectRoleRsp.
 
         项目角色名
 
@@ -72,7 +72,7 @@ class ProjectRoleRsp:
 
     @property
     def users(self):
-        """Gets the users of this ProjectRoleRsp.
+        r"""Gets the users of this ProjectRoleRsp.
 
         项目成员列表
 
@@ -83,7 +83,7 @@ class ProjectRoleRsp:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ProjectRoleRsp.
+        r"""Sets the users of this ProjectRoleRsp.
 
         项目成员列表
 

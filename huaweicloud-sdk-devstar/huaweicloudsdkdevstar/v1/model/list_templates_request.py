@@ -27,7 +27,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListTemplatesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTemplatesRequest.
+        r"""Gets the x_language of this ListTemplatesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -61,7 +61,7 @@ class ListTemplatesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTemplatesRequest.
+        r"""Sets the x_language of this ListTemplatesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -72,7 +72,7 @@ class ListTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTemplatesRequest.
+        r"""Gets the body of this ListTemplatesRequest.
 
         :return: The body of this ListTemplatesRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.TemplateQuery`
@@ -81,7 +81,7 @@ class ListTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTemplatesRequest.
+        r"""Sets the body of this ListTemplatesRequest.
 
         :param body: The body of this ListTemplatesRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.TemplateQuery`

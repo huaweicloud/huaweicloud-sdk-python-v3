@@ -32,7 +32,7 @@ class ListAgentResponse(SdkResponse):
     }
 
     def __init__(self, agents=None, count=None, limit=None, offset=None):
-        """ListAgentResponse
+        r"""ListAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAgentResponse(SdkResponse):
 
     @property
     def agents(self):
-        """Gets the agents of this ListAgentResponse.
+        r"""Gets the agents of this ListAgentResponse.
 
         客户端实例列表
 
@@ -76,7 +76,7 @@ class ListAgentResponse(SdkResponse):
 
     @agents.setter
     def agents(self, agents):
-        """Sets the agents of this ListAgentResponse.
+        r"""Sets the agents of this ListAgentResponse.
 
         客户端实例列表
 
@@ -87,7 +87,7 @@ class ListAgentResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAgentResponse.
+        r"""Gets the count of this ListAgentResponse.
 
         客户端个数 
 
@@ -98,7 +98,7 @@ class ListAgentResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAgentResponse.
+        r"""Sets the count of this ListAgentResponse.
 
         客户端个数 
 
@@ -109,7 +109,7 @@ class ListAgentResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgentResponse.
+        r"""Gets the limit of this ListAgentResponse.
 
         每页显示的条目数量 
 
@@ -120,7 +120,7 @@ class ListAgentResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgentResponse.
+        r"""Sets the limit of this ListAgentResponse.
 
         每页显示的条目数量 
 
@@ -131,7 +131,7 @@ class ListAgentResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListAgentResponse.
+        r"""Gets the offset of this ListAgentResponse.
 
         偏移量，表示从此偏移量开始查询 
 
@@ -142,7 +142,7 @@ class ListAgentResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAgentResponse.
+        r"""Sets the offset of this ListAgentResponse.
 
         偏移量，表示从此偏移量开始查询 
 

@@ -27,7 +27,7 @@ class ReinstallServerRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ReinstallServerRequest
+        r"""ReinstallServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReinstallServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ReinstallServerRequest.
+        r"""Gets the server_id of this ReinstallServerRequest.
 
         服务器唯一标识。
 
@@ -60,7 +60,7 @@ class ReinstallServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ReinstallServerRequest.
+        r"""Sets the server_id of this ReinstallServerRequest.
 
         服务器唯一标识。
 
@@ -71,7 +71,7 @@ class ReinstallServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this ReinstallServerRequest.
+        r"""Gets the body of this ReinstallServerRequest.
 
         :return: The body of this ReinstallServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ReinstallServerReq`
@@ -80,7 +80,7 @@ class ReinstallServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ReinstallServerRequest.
+        r"""Sets the body of this ReinstallServerRequest.
 
         :param body: The body of this ReinstallServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ReinstallServerReq`

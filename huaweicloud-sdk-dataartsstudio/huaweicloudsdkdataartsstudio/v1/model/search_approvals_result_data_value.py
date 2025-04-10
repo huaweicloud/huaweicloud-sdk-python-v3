@@ -27,7 +27,7 @@ class SearchApprovalsResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """SearchApprovalsResultDataValue
+        r"""SearchApprovalsResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchApprovalsResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this SearchApprovalsResultDataValue.
+        r"""Gets the total of this SearchApprovalsResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class SearchApprovalsResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchApprovalsResultDataValue.
+        r"""Sets the total of this SearchApprovalsResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class SearchApprovalsResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this SearchApprovalsResultDataValue.
+        r"""Gets the records of this SearchApprovalsResultDataValue.
 
         查询到的审批单对象（ApprovalVO）数组。
 
@@ -83,7 +83,7 @@ class SearchApprovalsResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this SearchApprovalsResultDataValue.
+        r"""Sets the records of this SearchApprovalsResultDataValue.
 
         查询到的审批单对象（ApprovalVO）数组。
 

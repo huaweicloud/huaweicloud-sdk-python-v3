@@ -25,7 +25,7 @@ class ChangingTheDelayThresholdRequestBody:
     }
 
     def __init__(self, delay_threshold_in_kilobytes=None):
-        """ChangingTheDelayThresholdRequestBody
+        r"""ChangingTheDelayThresholdRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangingTheDelayThresholdRequestBody:
 
     @property
     def delay_threshold_in_kilobytes(self):
-        """Gets the delay_threshold_in_kilobytes of this ChangingTheDelayThresholdRequestBody.
+        r"""Gets the delay_threshold_in_kilobytes of this ChangingTheDelayThresholdRequestBody.
 
         延时阈值（单位：KB），取值范围为0~10485760。
 
@@ -53,7 +53,7 @@ class ChangingTheDelayThresholdRequestBody:
 
     @delay_threshold_in_kilobytes.setter
     def delay_threshold_in_kilobytes(self, delay_threshold_in_kilobytes):
-        """Sets the delay_threshold_in_kilobytes of this ChangingTheDelayThresholdRequestBody.
+        r"""Sets the delay_threshold_in_kilobytes of this ChangingTheDelayThresholdRequestBody.
 
         延时阈值（单位：KB），取值范围为0~10485760。
 

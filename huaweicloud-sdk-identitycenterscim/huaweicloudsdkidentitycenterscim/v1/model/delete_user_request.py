@@ -29,7 +29,7 @@ class DeleteUserRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, user_id=None):
-        """DeleteUserRequest
+        r"""DeleteUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteUserRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeleteUserRequest.
+        r"""Gets the authorization of this DeleteUserRequest.
 
         承载令牌
 
@@ -65,7 +65,7 @@ class DeleteUserRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeleteUserRequest.
+        r"""Sets the authorization of this DeleteUserRequest.
 
         承载令牌
 
@@ -76,7 +76,7 @@ class DeleteUserRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this DeleteUserRequest.
+        r"""Gets the tenant_id of this DeleteUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -87,7 +87,7 @@ class DeleteUserRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this DeleteUserRequest.
+        r"""Sets the tenant_id of this DeleteUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -98,7 +98,7 @@ class DeleteUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DeleteUserRequest.
+        r"""Gets the user_id of this DeleteUserRequest.
 
         用户的全局唯一标识符（ID）
 
@@ -109,7 +109,7 @@ class DeleteUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DeleteUserRequest.
+        r"""Sets the user_id of this DeleteUserRequest.
 
         用户的全局唯一标识符（ID）
 

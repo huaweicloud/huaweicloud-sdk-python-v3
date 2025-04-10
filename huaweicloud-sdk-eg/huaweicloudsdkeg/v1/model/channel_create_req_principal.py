@@ -25,7 +25,7 @@ class ChannelCreateReqPrincipal:
     }
 
     def __init__(self, iam=None):
-        """ChannelCreateReqPrincipal
+        r"""ChannelCreateReqPrincipal
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChannelCreateReqPrincipal:
 
     @property
     def iam(self):
-        """Gets the iam of this ChannelCreateReqPrincipal.
+        r"""Gets the iam of this ChannelCreateReqPrincipal.
 
         :return: The iam of this ChannelCreateReqPrincipal.
         :rtype: list[str]
@@ -52,7 +52,7 @@ class ChannelCreateReqPrincipal:
 
     @iam.setter
     def iam(self, iam):
-        """Sets the iam of this ChannelCreateReqPrincipal.
+        r"""Sets the iam of this ChannelCreateReqPrincipal.
 
         :param iam: The iam of this ChannelCreateReqPrincipal.
         :type iam: list[str]

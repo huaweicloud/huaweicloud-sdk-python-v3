@@ -25,7 +25,7 @@ class ImportTrafficRequest:
     }
 
     def __init__(self, body=None):
-        """ImportTrafficRequest
+        r"""ImportTrafficRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportTrafficRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportTrafficRequest.
+        r"""Gets the body of this ImportTrafficRequest.
 
         :return: The body of this ImportTrafficRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.ImportTrafficRequestBody`
@@ -52,7 +52,7 @@ class ImportTrafficRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportTrafficRequest.
+        r"""Sets the body of this ImportTrafficRequest.
 
         :param body: The body of this ImportTrafficRequest.
         :type body: :class:`huaweicloudsdkcph.v1.ImportTrafficRequestBody`

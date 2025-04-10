@@ -26,7 +26,7 @@ class BatchDeleteDomainSetResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """BatchDeleteDomainSetResponse
+        r"""BatchDeleteDomainSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteDomainSetResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchDeleteDomainSetResponse.
+        r"""Gets the data of this BatchDeleteDomainSetResponse.
 
         :return: The data of this BatchDeleteDomainSetResponse.
         :rtype: dict(str, list[Mapstringstring])
@@ -53,7 +53,7 @@ class BatchDeleteDomainSetResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchDeleteDomainSetResponse.
+        r"""Sets the data of this BatchDeleteDomainSetResponse.
 
         :param data: The data of this BatchDeleteDomainSetResponse.
         :type data: dict(str, list[Mapstringstring])

@@ -46,7 +46,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None):
-        """ShowEnhancedConnectionResponse
+        r"""ShowEnhancedConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowEnhancedConnectionResponse.
+        r"""Gets the is_success of this ShowEnhancedConnectionResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -125,7 +125,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowEnhancedConnectionResponse.
+        r"""Sets the is_success of this ShowEnhancedConnectionResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -136,7 +136,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowEnhancedConnectionResponse.
+        r"""Gets the message of this ShowEnhancedConnectionResponse.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -147,7 +147,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowEnhancedConnectionResponse.
+        r"""Sets the message of this ShowEnhancedConnectionResponse.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -158,7 +158,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEnhancedConnectionResponse.
+        r"""Gets the id of this ShowEnhancedConnectionResponse.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -169,7 +169,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEnhancedConnectionResponse.
+        r"""Sets the id of this ShowEnhancedConnectionResponse.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -180,7 +180,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEnhancedConnectionResponse.
+        r"""Gets the name of this ShowEnhancedConnectionResponse.
 
         创建连接时，用户自定义的连接名称。
 
@@ -191,7 +191,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEnhancedConnectionResponse.
+        r"""Sets the name of this ShowEnhancedConnectionResponse.
 
         创建连接时，用户自定义的连接名称。
 
@@ -202,7 +202,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEnhancedConnectionResponse.
+        r"""Gets the status of this ShowEnhancedConnectionResponse.
 
         连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
 
@@ -213,7 +213,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEnhancedConnectionResponse.
+        r"""Sets the status of this ShowEnhancedConnectionResponse.
 
         连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
 
@@ -224,7 +224,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def available_queue_info(self):
-        """Gets the available_queue_info of this ShowEnhancedConnectionResponse.
+        r"""Gets the available_queue_info of this ShowEnhancedConnectionResponse.
 
         各个队列创建对等连接的信息。
 
@@ -235,7 +235,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @available_queue_info.setter
     def available_queue_info(self, available_queue_info):
-        """Sets the available_queue_info of this ShowEnhancedConnectionResponse.
+        r"""Sets the available_queue_info of this ShowEnhancedConnectionResponse.
 
         各个队列创建对等连接的信息。
 
@@ -246,7 +246,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def elastic_resource_pools(self):
-        """Gets the elastic_resource_pools of this ShowEnhancedConnectionResponse.
+        r"""Gets the elastic_resource_pools of this ShowEnhancedConnectionResponse.
 
         各个弹性资源池创建对等连接的信息。
 
@@ -257,7 +257,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @elastic_resource_pools.setter
     def elastic_resource_pools(self, elastic_resource_pools):
-        """Sets the elastic_resource_pools of this ShowEnhancedConnectionResponse.
+        r"""Sets the elastic_resource_pools of this ShowEnhancedConnectionResponse.
 
         各个弹性资源池创建对等连接的信息。
 
@@ -268,7 +268,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def dest_vpc_id(self):
-        """Gets the dest_vpc_id of this ShowEnhancedConnectionResponse.
+        r"""Gets the dest_vpc_id of this ShowEnhancedConnectionResponse.
 
         对应服务的虚拟私有云标识。
 
@@ -279,7 +279,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @dest_vpc_id.setter
     def dest_vpc_id(self, dest_vpc_id):
-        """Sets the dest_vpc_id of this ShowEnhancedConnectionResponse.
+        r"""Sets the dest_vpc_id of this ShowEnhancedConnectionResponse.
 
         对应服务的虚拟私有云标识。
 
@@ -290,7 +290,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def dest_network_id(self):
-        """Gets the dest_network_id of this ShowEnhancedConnectionResponse.
+        r"""Gets the dest_network_id of this ShowEnhancedConnectionResponse.
 
         对应服务的子网网络标识。
 
@@ -301,7 +301,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @dest_network_id.setter
     def dest_network_id(self, dest_network_id):
-        """Sets the dest_network_id of this ShowEnhancedConnectionResponse.
+        r"""Sets the dest_network_id of this ShowEnhancedConnectionResponse.
 
         对应服务的子网网络标识。
 
@@ -312,7 +312,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowEnhancedConnectionResponse.
+        r"""Gets the create_time of this ShowEnhancedConnectionResponse.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -323,7 +323,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowEnhancedConnectionResponse.
+        r"""Sets the create_time of this ShowEnhancedConnectionResponse.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -334,7 +334,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @property
     def hosts(self):
-        """Gets the hosts of this ShowEnhancedConnectionResponse.
+        r"""Gets the hosts of this ShowEnhancedConnectionResponse.
 
         用户自定义主机信息。
 
@@ -345,7 +345,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ShowEnhancedConnectionResponse.
+        r"""Sets the hosts of this ShowEnhancedConnectionResponse.
 
         用户自定义主机信息。
 

@@ -29,7 +29,7 @@ class BatchCopyConfigs:
     }
 
     def __init__(self, target_domain=None, source_domain=None, config_list=None):
-        """BatchCopyConfigs
+        r"""BatchCopyConfigs
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BatchCopyConfigs:
 
     @property
     def target_domain(self):
-        """Gets the target_domain of this BatchCopyConfigs.
+        r"""Gets the target_domain of this BatchCopyConfigs.
 
         目标域名列表,多个域名以逗号（半角）分隔,域名数最大10个。
 
@@ -65,7 +65,7 @@ class BatchCopyConfigs:
 
     @target_domain.setter
     def target_domain(self, target_domain):
-        """Sets the target_domain of this BatchCopyConfigs.
+        r"""Sets the target_domain of this BatchCopyConfigs.
 
         目标域名列表,多个域名以逗号（半角）分隔,域名数最大10个。
 
@@ -76,7 +76,7 @@ class BatchCopyConfigs:
 
     @property
     def source_domain(self):
-        """Gets the source_domain of this BatchCopyConfigs.
+        r"""Gets the source_domain of this BatchCopyConfigs.
 
         原域名。
 
@@ -87,7 +87,7 @@ class BatchCopyConfigs:
 
     @source_domain.setter
     def source_domain(self, source_domain):
-        """Sets the source_domain of this BatchCopyConfigs.
+        r"""Sets the source_domain of this BatchCopyConfigs.
 
         原域名。
 
@@ -98,7 +98,7 @@ class BatchCopyConfigs:
 
     @property
     def config_list(self):
-        """Gets the config_list of this BatchCopyConfigs.
+        r"""Gets the config_list of this BatchCopyConfigs.
 
         需要复制的域名配置项,多个配置项以逗号（半角）分隔，支持复制的配置项： - originRequestHeader（回源请求头） - httpResponseHeader（HTTP header配置） - cacheUrlParamsConfig（URL参数） - urlAuth（URL鉴权配置） - userAgentBlackAndWhiteList（User-Agent黑白名单） - ipv6Accelerate（IPv6开关） - rangeStatus（Range回源） - cacheRules（缓存规则） - followOrigin（缓存遵循源站） - privateBucketRetrieval（私有桶回源） - follow302Status（回源跟随） - sources（源站配置） - compress（智能压缩） - referer（防盗链） - ipBlackAndWhiteList（IP黑白名单）
 
@@ -109,7 +109,7 @@ class BatchCopyConfigs:
 
     @config_list.setter
     def config_list(self, config_list):
-        """Sets the config_list of this BatchCopyConfigs.
+        r"""Sets the config_list of this BatchCopyConfigs.
 
         需要复制的域名配置项,多个配置项以逗号（半角）分隔，支持复制的配置项： - originRequestHeader（回源请求头） - httpResponseHeader（HTTP header配置） - cacheUrlParamsConfig（URL参数） - urlAuth（URL鉴权配置） - userAgentBlackAndWhiteList（User-Agent黑白名单） - ipv6Accelerate（IPv6开关） - rangeStatus（Range回源） - cacheRules（缓存规则） - followOrigin（缓存遵循源站） - privateBucketRetrieval（私有桶回源） - follow302Status（回源跟随） - sources（源站配置） - compress（智能压缩） - referer（防盗链） - ipBlackAndWhiteList（IP黑白名单）
 

@@ -33,7 +33,7 @@ class Record:
     }
 
     def __init__(self, partition_key=None, sequence_number=None, data=None, timestamp=None, timestamp_type=None):
-        """Record
+        r"""Record
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Record:
 
     @property
     def partition_key(self):
-        """Gets the partition_key of this Record.
+        r"""Gets the partition_key of this Record.
 
         用户上传数据时设置的partition_key。  说明：  上传数据时，如果传了partition_key参数，则下载数据时可返回此参数。如果上传数据时，未传partition_key参数，而是传入partition_id，则不返回partition_key。
 
@@ -82,7 +82,7 @@ class Record:
 
     @partition_key.setter
     def partition_key(self, partition_key):
-        """Sets the partition_key of this Record.
+        r"""Sets the partition_key of this Record.
 
         用户上传数据时设置的partition_key。  说明：  上传数据时，如果传了partition_key参数，则下载数据时可返回此参数。如果上传数据时，未传partition_key参数，而是传入partition_id，则不返回partition_key。
 
@@ -93,7 +93,7 @@ class Record:
 
     @property
     def sequence_number(self):
-        """Gets the sequence_number of this Record.
+        r"""Gets the sequence_number of this Record.
 
         该条数据的序列号。
 
@@ -104,7 +104,7 @@ class Record:
 
     @sequence_number.setter
     def sequence_number(self, sequence_number):
-        """Sets the sequence_number of this Record.
+        r"""Sets the sequence_number of this Record.
 
         该条数据的序列号。
 
@@ -115,7 +115,7 @@ class Record:
 
     @property
     def data(self):
-        """Gets the data of this Record.
+        r"""Gets the data of this Record.
 
         下载的数据。  下载的数据为序列化之后的二进制数据（Base64编码后的字符串）。  比如下载数据接口返回的数据是“ZGF0YQ==”，“ZGF0YQ==”经过Base64解码之后是“data”。
 
@@ -126,7 +126,7 @@ class Record:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this Record.
+        r"""Sets the data of this Record.
 
         下载的数据。  下载的数据为序列化之后的二进制数据（Base64编码后的字符串）。  比如下载数据接口返回的数据是“ZGF0YQ==”，“ZGF0YQ==”经过Base64解码之后是“data”。
 
@@ -137,7 +137,7 @@ class Record:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this Record.
+        r"""Gets the timestamp of this Record.
 
         记录写入DIS的时间戳。
 
@@ -148,7 +148,7 @@ class Record:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this Record.
+        r"""Sets the timestamp of this Record.
 
         记录写入DIS的时间戳。
 
@@ -159,7 +159,7 @@ class Record:
 
     @property
     def timestamp_type(self):
-        """Gets the timestamp_type of this Record.
+        r"""Gets the timestamp_type of this Record.
 
         时间戳类型。  - CreateTime：创建时间。
 
@@ -170,7 +170,7 @@ class Record:
 
     @timestamp_type.setter
     def timestamp_type(self, timestamp_type):
-        """Sets the timestamp_type of this Record.
+        r"""Sets the timestamp_type of this Record.
 
         时间戳类型。  - CreateTime：创建时间。
 

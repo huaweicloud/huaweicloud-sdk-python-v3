@@ -31,7 +31,7 @@ class RepositoryCreationResult:
     }
 
     def __init__(self, repository=None, task_id=None, status=None, failure_reason=None):
-        """RepositoryCreationResult
+        r"""RepositoryCreationResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RepositoryCreationResult:
 
     @property
     def repository(self):
-        """Gets the repository of this RepositoryCreationResult.
+        r"""Gets the repository of this RepositoryCreationResult.
 
         :return: The repository of this RepositoryCreationResult.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`
@@ -73,7 +73,7 @@ class RepositoryCreationResult:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this RepositoryCreationResult.
+        r"""Sets the repository of this RepositoryCreationResult.
 
         :param repository: The repository of this RepositoryCreationResult.
         :type repository: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`
@@ -82,7 +82,7 @@ class RepositoryCreationResult:
 
     @property
     def task_id(self):
-        """Gets the task_id of this RepositoryCreationResult.
+        r"""Gets the task_id of this RepositoryCreationResult.
 
         任务id
 
@@ -93,7 +93,7 @@ class RepositoryCreationResult:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this RepositoryCreationResult.
+        r"""Sets the task_id of this RepositoryCreationResult.
 
         任务id
 
@@ -104,7 +104,7 @@ class RepositoryCreationResult:
 
     @property
     def status(self):
-        """Gets the status of this RepositoryCreationResult.
+        r"""Gets the status of this RepositoryCreationResult.
 
         任务状态, success:成功,failed:失败,creating:创建中
 
@@ -115,7 +115,7 @@ class RepositoryCreationResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RepositoryCreationResult.
+        r"""Sets the status of this RepositoryCreationResult.
 
         任务状态, success:成功,failed:失败,creating:创建中
 
@@ -126,7 +126,7 @@ class RepositoryCreationResult:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this RepositoryCreationResult.
+        r"""Gets the failure_reason of this RepositoryCreationResult.
 
         失败原因
 
@@ -137,7 +137,7 @@ class RepositoryCreationResult:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this RepositoryCreationResult.
+        r"""Sets the failure_reason of this RepositoryCreationResult.
 
         失败原因
 

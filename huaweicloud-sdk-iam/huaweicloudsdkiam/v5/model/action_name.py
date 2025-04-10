@@ -23,7 +23,7 @@ class ActionName:
     }
 
     def __init__(self):
-        """ActionName
+        r"""ActionName
 
         The model defined in huaweicloud sdk
 

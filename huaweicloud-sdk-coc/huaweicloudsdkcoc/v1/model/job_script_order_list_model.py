@@ -41,7 +41,7 @@ class JobScriptOrderListModel:
     }
 
     def __init__(self, order_id=None, order_name=None, execute_uuid=None, gmt_created=None, gmt_finished=None, execute_costs=None, creator=None, status=None, properties=None):
-        """JobScriptOrderListModel
+        r"""JobScriptOrderListModel
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class JobScriptOrderListModel:
 
     @property
     def order_id(self):
-        """Gets the order_id of this JobScriptOrderListModel.
+        r"""Gets the order_id of this JobScriptOrderListModel.
 
         主键id，对应job_order_do的主键
 
@@ -107,7 +107,7 @@ class JobScriptOrderListModel:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this JobScriptOrderListModel.
+        r"""Sets the order_id of this JobScriptOrderListModel.
 
         主键id，对应job_order_do的主键
 
@@ -118,7 +118,7 @@ class JobScriptOrderListModel:
 
     @property
     def order_name(self):
-        """Gets the order_name of this JobScriptOrderListModel.
+        r"""Gets the order_name of this JobScriptOrderListModel.
 
         工单名称
 
@@ -129,7 +129,7 @@ class JobScriptOrderListModel:
 
     @order_name.setter
     def order_name(self, order_name):
-        """Sets the order_name of this JobScriptOrderListModel.
+        r"""Sets the order_name of this JobScriptOrderListModel.
 
         工单名称
 
@@ -140,7 +140,7 @@ class JobScriptOrderListModel:
 
     @property
     def execute_uuid(self):
-        """Gets the execute_uuid of this JobScriptOrderListModel.
+        r"""Gets the execute_uuid of this JobScriptOrderListModel.
 
         列表跳转到详情时，用这个uuid，对应execute_data_do的execute_uuid
 
@@ -151,7 +151,7 @@ class JobScriptOrderListModel:
 
     @execute_uuid.setter
     def execute_uuid(self, execute_uuid):
-        """Sets the execute_uuid of this JobScriptOrderListModel.
+        r"""Sets the execute_uuid of this JobScriptOrderListModel.
 
         列表跳转到详情时，用这个uuid，对应execute_data_do的execute_uuid
 
@@ -162,7 +162,7 @@ class JobScriptOrderListModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this JobScriptOrderListModel.
+        r"""Gets the gmt_created of this JobScriptOrderListModel.
 
         创建时间
 
@@ -173,7 +173,7 @@ class JobScriptOrderListModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this JobScriptOrderListModel.
+        r"""Sets the gmt_created of this JobScriptOrderListModel.
 
         创建时间
 
@@ -184,7 +184,7 @@ class JobScriptOrderListModel:
 
     @property
     def gmt_finished(self):
-        """Gets the gmt_finished of this JobScriptOrderListModel.
+        r"""Gets the gmt_finished of this JobScriptOrderListModel.
 
         完成时间
 
@@ -195,7 +195,7 @@ class JobScriptOrderListModel:
 
     @gmt_finished.setter
     def gmt_finished(self, gmt_finished):
-        """Sets the gmt_finished of this JobScriptOrderListModel.
+        r"""Sets the gmt_finished of this JobScriptOrderListModel.
 
         完成时间
 
@@ -206,7 +206,7 @@ class JobScriptOrderListModel:
 
     @property
     def execute_costs(self):
-        """Gets the execute_costs of this JobScriptOrderListModel.
+        r"""Gets the execute_costs of this JobScriptOrderListModel.
 
         执行耗时，单位：秒
 
@@ -217,7 +217,7 @@ class JobScriptOrderListModel:
 
     @execute_costs.setter
     def execute_costs(self, execute_costs):
-        """Sets the execute_costs of this JobScriptOrderListModel.
+        r"""Sets the execute_costs of this JobScriptOrderListModel.
 
         执行耗时，单位：秒
 
@@ -228,7 +228,7 @@ class JobScriptOrderListModel:
 
     @property
     def creator(self):
-        """Gets the creator of this JobScriptOrderListModel.
+        r"""Gets the creator of this JobScriptOrderListModel.
 
         创建人
 
@@ -239,7 +239,7 @@ class JobScriptOrderListModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this JobScriptOrderListModel.
+        r"""Sets the creator of this JobScriptOrderListModel.
 
         创建人
 
@@ -250,7 +250,7 @@ class JobScriptOrderListModel:
 
     @property
     def status(self):
-        """Gets the status of this JobScriptOrderListModel.
+        r"""Gets the status of this JobScriptOrderListModel.
 
         工单状态
 
@@ -261,7 +261,7 @@ class JobScriptOrderListModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobScriptOrderListModel.
+        r"""Sets the status of this JobScriptOrderListModel.
 
         工单状态
 
@@ -272,7 +272,7 @@ class JobScriptOrderListModel:
 
     @property
     def properties(self):
-        """Gets the properties of this JobScriptOrderListModel.
+        r"""Gets the properties of this JobScriptOrderListModel.
 
         :return: The properties of this JobScriptOrderListModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.JobScriptOrderListProp`
@@ -281,7 +281,7 @@ class JobScriptOrderListModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this JobScriptOrderListModel.
+        r"""Sets the properties of this JobScriptOrderListModel.
 
         :param properties: The properties of this JobScriptOrderListModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.JobScriptOrderListProp`

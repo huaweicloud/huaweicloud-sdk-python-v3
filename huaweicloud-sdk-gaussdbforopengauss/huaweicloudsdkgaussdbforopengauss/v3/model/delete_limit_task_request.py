@@ -27,7 +27,7 @@ class DeleteLimitTaskRequest:
     }
 
     def __init__(self, task_id=None, instance_id=None):
-        """DeleteLimitTaskRequest
+        r"""DeleteLimitTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLimitTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteLimitTaskRequest.
+        r"""Gets the task_id of this DeleteLimitTaskRequest.
 
         限流任务id。
 
@@ -59,7 +59,7 @@ class DeleteLimitTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteLimitTaskRequest.
+        r"""Sets the task_id of this DeleteLimitTaskRequest.
 
         限流任务id。
 
@@ -70,7 +70,7 @@ class DeleteLimitTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteLimitTaskRequest.
+        r"""Gets the instance_id of this DeleteLimitTaskRequest.
 
         实例ID。
 
@@ -81,7 +81,7 @@ class DeleteLimitTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteLimitTaskRequest.
+        r"""Sets the instance_id of this DeleteLimitTaskRequest.
 
         实例ID。
 

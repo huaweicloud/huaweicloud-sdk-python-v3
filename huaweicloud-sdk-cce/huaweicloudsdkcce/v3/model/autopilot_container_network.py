@@ -25,7 +25,7 @@ class AutopilotContainerNetwork:
     }
 
     def __init__(self, mode=None):
-        """AutopilotContainerNetwork
+        r"""AutopilotContainerNetwork
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AutopilotContainerNetwork:
 
     @property
     def mode(self):
-        """Gets the mode of this AutopilotContainerNetwork.
+        r"""Gets the mode of this AutopilotContainerNetwork.
 
         容器网络类型 - eni：云原生网络2.0，深度整合VPC原生ENI弹性网卡能力，采用VPC网段分配容器地址，支持ELB直通容器，享有高性能，创建集群时指定。 
 
@@ -53,7 +53,7 @@ class AutopilotContainerNetwork:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AutopilotContainerNetwork.
+        r"""Sets the mode of this AutopilotContainerNetwork.
 
         容器网络类型 - eni：云原生网络2.0，深度整合VPC原生ENI弹性网卡能力，采用VPC网段分配容器地址，支持ELB直通容器，享有高性能，创建集群时指定。 
 

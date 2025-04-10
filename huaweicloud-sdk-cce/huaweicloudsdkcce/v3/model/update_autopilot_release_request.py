@@ -31,7 +31,7 @@ class UpdateAutopilotReleaseRequest:
     }
 
     def __init__(self, name=None, namespace=None, cluster_id=None, body=None):
-        """UpdateAutopilotReleaseRequest
+        r"""UpdateAutopilotReleaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateAutopilotReleaseRequest:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAutopilotReleaseRequest.
+        r"""Gets the name of this UpdateAutopilotReleaseRequest.
 
         模板实例名称
 
@@ -72,7 +72,7 @@ class UpdateAutopilotReleaseRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAutopilotReleaseRequest.
+        r"""Sets the name of this UpdateAutopilotReleaseRequest.
 
         模板实例名称
 
@@ -83,7 +83,7 @@ class UpdateAutopilotReleaseRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateAutopilotReleaseRequest.
+        r"""Gets the namespace of this UpdateAutopilotReleaseRequest.
 
         模板实例所在的命名空间
 
@@ -94,7 +94,7 @@ class UpdateAutopilotReleaseRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateAutopilotReleaseRequest.
+        r"""Sets the namespace of this UpdateAutopilotReleaseRequest.
 
         模板实例所在的命名空间
 
@@ -105,7 +105,7 @@ class UpdateAutopilotReleaseRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAutopilotReleaseRequest.
+        r"""Gets the cluster_id of this UpdateAutopilotReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -116,7 +116,7 @@ class UpdateAutopilotReleaseRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAutopilotReleaseRequest.
+        r"""Sets the cluster_id of this UpdateAutopilotReleaseRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -127,7 +127,7 @@ class UpdateAutopilotReleaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutopilotReleaseRequest.
+        r"""Gets the body of this UpdateAutopilotReleaseRequest.
 
         :return: The body of this UpdateAutopilotReleaseRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateReleaseReqBody`
@@ -136,7 +136,7 @@ class UpdateAutopilotReleaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutopilotReleaseRequest.
+        r"""Sets the body of this UpdateAutopilotReleaseRequest.
 
         :param body: The body of this UpdateAutopilotReleaseRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpdateReleaseReqBody`

@@ -34,7 +34,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, attach_statistics=None, run_state_statistics=None, login_state_statistics=None, desktop_pool_statistics=None):
-        """ListDesktopsStatisticsResponse
+        r"""ListDesktopsStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListDesktopsStatisticsResponse.
+        r"""Gets the total_num of this ListDesktopsStatisticsResponse.
 
         桌面总数。
 
@@ -83,7 +83,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListDesktopsStatisticsResponse.
+        r"""Sets the total_num of this ListDesktopsStatisticsResponse.
 
         桌面总数。
 
@@ -94,7 +94,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @property
     def attach_statistics(self):
-        """Gets the attach_statistics of this ListDesktopsStatisticsResponse.
+        r"""Gets the attach_statistics of this ListDesktopsStatisticsResponse.
 
         :return: The attach_statistics of this ListDesktopsStatisticsResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AttachStatistics`
@@ -103,7 +103,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @attach_statistics.setter
     def attach_statistics(self, attach_statistics):
-        """Sets the attach_statistics of this ListDesktopsStatisticsResponse.
+        r"""Sets the attach_statistics of this ListDesktopsStatisticsResponse.
 
         :param attach_statistics: The attach_statistics of this ListDesktopsStatisticsResponse.
         :type attach_statistics: :class:`huaweicloudsdkworkspace.v2.AttachStatistics`
@@ -112,7 +112,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @property
     def run_state_statistics(self):
-        """Gets the run_state_statistics of this ListDesktopsStatisticsResponse.
+        r"""Gets the run_state_statistics of this ListDesktopsStatisticsResponse.
 
         :return: The run_state_statistics of this ListDesktopsStatisticsResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopRunStatisticsRsp`
@@ -121,7 +121,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @run_state_statistics.setter
     def run_state_statistics(self, run_state_statistics):
-        """Sets the run_state_statistics of this ListDesktopsStatisticsResponse.
+        r"""Sets the run_state_statistics of this ListDesktopsStatisticsResponse.
 
         :param run_state_statistics: The run_state_statistics of this ListDesktopsStatisticsResponse.
         :type run_state_statistics: :class:`huaweicloudsdkworkspace.v2.DesktopRunStatisticsRsp`
@@ -130,7 +130,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @property
     def login_state_statistics(self):
-        """Gets the login_state_statistics of this ListDesktopsStatisticsResponse.
+        r"""Gets the login_state_statistics of this ListDesktopsStatisticsResponse.
 
         :return: The login_state_statistics of this ListDesktopsStatisticsResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopLoginStatisticsRsp`
@@ -139,7 +139,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @login_state_statistics.setter
     def login_state_statistics(self, login_state_statistics):
-        """Sets the login_state_statistics of this ListDesktopsStatisticsResponse.
+        r"""Sets the login_state_statistics of this ListDesktopsStatisticsResponse.
 
         :param login_state_statistics: The login_state_statistics of this ListDesktopsStatisticsResponse.
         :type login_state_statistics: :class:`huaweicloudsdkworkspace.v2.DesktopLoginStatisticsRsp`
@@ -148,7 +148,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @property
     def desktop_pool_statistics(self):
-        """Gets the desktop_pool_statistics of this ListDesktopsStatisticsResponse.
+        r"""Gets the desktop_pool_statistics of this ListDesktopsStatisticsResponse.
 
         每个桌面池的情况统计，当desktop_type指定为POOL时返回
 
@@ -159,7 +159,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
 
     @desktop_pool_statistics.setter
     def desktop_pool_statistics(self, desktop_pool_statistics):
-        """Sets the desktop_pool_statistics of this ListDesktopsStatisticsResponse.
+        r"""Sets the desktop_pool_statistics of this ListDesktopsStatisticsResponse.
 
         每个桌面池的情况统计，当desktop_type指定为POOL时返回
 

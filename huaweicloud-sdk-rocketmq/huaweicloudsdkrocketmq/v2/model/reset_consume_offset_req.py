@@ -27,7 +27,7 @@ class ResetConsumeOffsetReq:
     }
 
     def __init__(self, topic=None, timestamp=None):
-        """ResetConsumeOffsetReq
+        r"""ResetConsumeOffsetReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResetConsumeOffsetReq:
 
     @property
     def topic(self):
-        """Gets the topic of this ResetConsumeOffsetReq.
+        r"""Gets the topic of this ResetConsumeOffsetReq.
 
         重置的主题。
 
@@ -59,7 +59,7 @@ class ResetConsumeOffsetReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ResetConsumeOffsetReq.
+        r"""Sets the topic of this ResetConsumeOffsetReq.
 
         重置的主题。
 
@@ -70,7 +70,7 @@ class ResetConsumeOffsetReq:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ResetConsumeOffsetReq.
+        r"""Gets the timestamp of this ResetConsumeOffsetReq.
 
         重置的时间。
 
@@ -81,7 +81,7 @@ class ResetConsumeOffsetReq:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ResetConsumeOffsetReq.
+        r"""Sets the timestamp of this ResetConsumeOffsetReq.
 
         重置的时间。
 

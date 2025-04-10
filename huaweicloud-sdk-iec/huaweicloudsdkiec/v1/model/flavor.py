@@ -37,7 +37,7 @@ class Flavor:
     }
 
     def __init__(self, id=None, name=None, disk=None, ram=None, vcpus=None, os_extra_specs=None, os_flavor_access_is_public=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Flavor:
 
     @property
     def id(self):
-        """Gets the id of this Flavor.
+        r"""Gets the id of this Flavor.
 
         边缘实例规格的ID。
 
@@ -96,7 +96,7 @@ class Flavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Flavor.
+        r"""Sets the id of this Flavor.
 
         边缘实例规格的ID。
 
@@ -107,7 +107,7 @@ class Flavor:
 
     @property
     def name(self):
-        """Gets the name of this Flavor.
+        r"""Gets the name of this Flavor.
 
         边缘实例规格的名称。
 
@@ -118,7 +118,7 @@ class Flavor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Flavor.
+        r"""Sets the name of this Flavor.
 
         边缘实例规格的名称。
 
@@ -129,7 +129,7 @@ class Flavor:
 
     @property
     def disk(self):
-        """Gets the disk of this Flavor.
+        r"""Gets the disk of this Flavor.
 
         边缘实例规格对应要求系统盘大小。  当前未使用该参数，缺省值为0。
 
@@ -140,7 +140,7 @@ class Flavor:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this Flavor.
+        r"""Sets the disk of this Flavor.
 
         边缘实例规格对应要求系统盘大小。  当前未使用该参数，缺省值为0。
 
@@ -151,7 +151,7 @@ class Flavor:
 
     @property
     def ram(self):
-        """Gets the ram of this Flavor.
+        r"""Gets the ram of this Flavor.
 
         边缘实例规格对应的内存大小，单位为MB。
 
@@ -162,7 +162,7 @@ class Flavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this Flavor.
+        r"""Sets the ram of this Flavor.
 
         边缘实例规格对应的内存大小，单位为MB。
 
@@ -173,7 +173,7 @@ class Flavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this Flavor.
+        r"""Gets the vcpus of this Flavor.
 
         边缘实例规格对应的CPU核数。
 
@@ -184,7 +184,7 @@ class Flavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this Flavor.
+        r"""Sets the vcpus of this Flavor.
 
         边缘实例规格对应的CPU核数。
 
@@ -195,7 +195,7 @@ class Flavor:
 
     @property
     def os_extra_specs(self):
-        """Gets the os_extra_specs of this Flavor.
+        r"""Gets the os_extra_specs of this Flavor.
 
         :return: The os_extra_specs of this Flavor.
         :rtype: :class:`huaweicloudsdkiec.v1.OsExtraSpecs`
@@ -204,7 +204,7 @@ class Flavor:
 
     @os_extra_specs.setter
     def os_extra_specs(self, os_extra_specs):
-        """Sets the os_extra_specs of this Flavor.
+        r"""Sets the os_extra_specs of this Flavor.
 
         :param os_extra_specs: The os_extra_specs of this Flavor.
         :type os_extra_specs: :class:`huaweicloudsdkiec.v1.OsExtraSpecs`
@@ -213,7 +213,7 @@ class Flavor:
 
     @property
     def os_flavor_access_is_public(self):
-        """Gets the os_flavor_access_is_public of this Flavor.
+        r"""Gets the os_flavor_access_is_public of this Flavor.
 
         扩展属性，flavor是否给所有租户使用。
 
@@ -224,7 +224,7 @@ class Flavor:
 
     @os_flavor_access_is_public.setter
     def os_flavor_access_is_public(self, os_flavor_access_is_public):
-        """Sets the os_flavor_access_is_public of this Flavor.
+        r"""Sets the os_flavor_access_is_public of this Flavor.
 
         扩展属性，flavor是否给所有租户使用。
 

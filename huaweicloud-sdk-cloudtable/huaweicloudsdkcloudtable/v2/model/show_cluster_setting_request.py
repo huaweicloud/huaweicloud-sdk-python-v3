@@ -27,7 +27,7 @@ class ShowClusterSettingRequest:
     }
 
     def __init__(self, cluster_id=None, x_language=None):
-        """ShowClusterSettingRequest
+        r"""ShowClusterSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowClusterSettingRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterSettingRequest.
+        r"""Gets the cluster_id of this ShowClusterSettingRequest.
 
         项目ID
 
@@ -60,7 +60,7 @@ class ShowClusterSettingRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterSettingRequest.
+        r"""Sets the cluster_id of this ShowClusterSettingRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class ShowClusterSettingRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowClusterSettingRequest.
+        r"""Gets the x_language of this ShowClusterSettingRequest.
 
         语言类型
 
@@ -82,7 +82,7 @@ class ShowClusterSettingRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowClusterSettingRequest.
+        r"""Sets the x_language of this ShowClusterSettingRequest.
 
         语言类型
 

@@ -45,7 +45,7 @@ class UpdateNatGatewayDnatRuleOption:
     }
 
     def __init__(self, nat_gateway_id=None, description=None, port_id=None, private_ip=None, protocol=None, floating_ip_id=None, internal_service_port=None, external_service_port=None, internal_service_port_range=None, external_service_port_range=None, global_eip_id=None):
-        """UpdateNatGatewayDnatRuleOption
+        r"""UpdateNatGatewayDnatRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the nat_gateway_id of this UpdateNatGatewayDnatRuleOption.
 
         NAT网关的id。
 
@@ -123,7 +123,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the nat_gateway_id of this UpdateNatGatewayDnatRuleOption.
 
         NAT网关的id。
 
@@ -134,7 +134,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the description of this UpdateNatGatewayDnatRuleOption.
 
         DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -145,7 +145,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the description of this UpdateNatGatewayDnatRuleOption.
 
         DNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -156,7 +156,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the port_id of this UpdateNatGatewayDnatRuleOption.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -167,7 +167,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the port_id of this UpdateNatGatewayDnatRuleOption.
 
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
@@ -178,7 +178,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the private_ip of this UpdateNatGatewayDnatRuleOption.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -189,7 +189,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the private_ip of this UpdateNatGatewayDnatRuleOption.
 
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
@@ -200,7 +200,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the protocol of this UpdateNatGatewayDnatRuleOption.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -211,7 +211,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the protocol of this UpdateNatGatewayDnatRuleOption.
 
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
@@ -222,7 +222,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the floating_ip_id of this UpdateNatGatewayDnatRuleOption.
 
         弹性公网IP的id。
 
@@ -233,7 +233,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the floating_ip_id of this UpdateNatGatewayDnatRuleOption.
 
         弹性公网IP的id。
 
@@ -244,7 +244,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def internal_service_port(self):
-        """Gets the internal_service_port of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the internal_service_port of this UpdateNatGatewayDnatRuleOption.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -255,7 +255,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @internal_service_port.setter
     def internal_service_port(self, internal_service_port):
-        """Sets the internal_service_port of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the internal_service_port of this UpdateNatGatewayDnatRuleOption.
 
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
@@ -266,7 +266,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def external_service_port(self):
-        """Gets the external_service_port of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the external_service_port of this UpdateNatGatewayDnatRuleOption.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -277,7 +277,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @external_service_port.setter
     def external_service_port(self, external_service_port):
-        """Sets the external_service_port of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the external_service_port of this UpdateNatGatewayDnatRuleOption.
 
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
@@ -288,7 +288,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def internal_service_port_range(self):
-        """Gets the internal_service_port_range of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the internal_service_port_range of this UpdateNatGatewayDnatRuleOption.
 
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。
 
@@ -299,7 +299,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @internal_service_port_range.setter
     def internal_service_port_range(self, internal_service_port_range):
-        """Sets the internal_service_port_range of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the internal_service_port_range of this UpdateNatGatewayDnatRuleOption.
 
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。
 
@@ -310,7 +310,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def external_service_port_range(self):
-        """Gets the external_service_port_range of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the external_service_port_range of this UpdateNatGatewayDnatRuleOption.
 
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。
 
@@ -321,7 +321,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @external_service_port_range.setter
     def external_service_port_range(self, external_service_port_range):
-        """Sets the external_service_port_range of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the external_service_port_range of this UpdateNatGatewayDnatRuleOption.
 
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。
 
@@ -332,7 +332,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Gets the global_eip_id of this UpdateNatGatewayDnatRuleOption.
 
         全域弹性公网IP的id。
 
@@ -343,7 +343,7 @@ class UpdateNatGatewayDnatRuleOption:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this UpdateNatGatewayDnatRuleOption.
+        r"""Sets the global_eip_id of this UpdateNatGatewayDnatRuleOption.
 
         全域弹性公网IP的id。
 

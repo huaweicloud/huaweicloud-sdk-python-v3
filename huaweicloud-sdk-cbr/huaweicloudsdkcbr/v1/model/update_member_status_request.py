@@ -29,7 +29,7 @@ class UpdateMemberStatusRequest:
     }
 
     def __init__(self, member_id=None, backup_id=None, body=None):
-        """UpdateMemberStatusRequest
+        r"""UpdateMemberStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateMemberStatusRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this UpdateMemberStatusRequest.
+        r"""Gets the member_id of this UpdateMemberStatusRequest.
 
         成员id，成员id与项目id为同一个。
 
@@ -66,7 +66,7 @@ class UpdateMemberStatusRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this UpdateMemberStatusRequest.
+        r"""Sets the member_id of this UpdateMemberStatusRequest.
 
         成员id，成员id与项目id为同一个。
 
@@ -77,7 +77,7 @@ class UpdateMemberStatusRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this UpdateMemberStatusRequest.
+        r"""Gets the backup_id of this UpdateMemberStatusRequest.
 
         备份副本id
 
@@ -88,7 +88,7 @@ class UpdateMemberStatusRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this UpdateMemberStatusRequest.
+        r"""Sets the backup_id of this UpdateMemberStatusRequest.
 
         备份副本id
 
@@ -99,7 +99,7 @@ class UpdateMemberStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMemberStatusRequest.
+        r"""Gets the body of this UpdateMemberStatusRequest.
 
         :return: The body of this UpdateMemberStatusRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateMember`
@@ -108,7 +108,7 @@ class UpdateMemberStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMemberStatusRequest.
+        r"""Sets the body of this UpdateMemberStatusRequest.
 
         :param body: The body of this UpdateMemberStatusRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.UpdateMember`

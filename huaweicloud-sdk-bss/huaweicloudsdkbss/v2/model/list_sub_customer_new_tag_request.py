@@ -25,7 +25,7 @@ class ListSubCustomerNewTagRequest:
     }
 
     def __init__(self, body=None):
-        """ListSubCustomerNewTagRequest
+        r"""ListSubCustomerNewTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSubCustomerNewTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSubCustomerNewTagRequest.
+        r"""Gets the body of this ListSubCustomerNewTagRequest.
 
         :return: The body of this ListSubCustomerNewTagRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerNewTagReq`
@@ -52,7 +52,7 @@ class ListSubCustomerNewTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSubCustomerNewTagRequest.
+        r"""Sets the body of this ListSubCustomerNewTagRequest.
 
         :param body: The body of this ListSubCustomerNewTagRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ListSubCustomerNewTagReq`

@@ -31,7 +31,7 @@ class Stage:
     }
 
     def __init__(self, name=None, update_time=None, secret_name=None, version_id=None):
-        """Stage
+        r"""Stage
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Stage:
 
     @property
     def name(self):
-        """Gets the name of this Stage.
+        r"""Gets the name of this Stage.
 
         凭据的版本状态名称。  约束：最小长度1，最大长度64。 
 
@@ -75,7 +75,7 @@ class Stage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Stage.
+        r"""Sets the name of this Stage.
 
         凭据的版本状态名称。  约束：最小长度1，最大长度64。 
 
@@ -86,7 +86,7 @@ class Stage:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Stage.
+        r"""Gets the update_time of this Stage.
 
         凭据的版本状态更新的时间戳，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -97,7 +97,7 @@ class Stage:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Stage.
+        r"""Sets the update_time of this Stage.
 
         凭据的版本状态更新的时间戳，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -108,7 +108,7 @@ class Stage:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this Stage.
+        r"""Gets the secret_name of this Stage.
 
         凭据名称。
 
@@ -119,7 +119,7 @@ class Stage:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this Stage.
+        r"""Sets the secret_name of this Stage.
 
         凭据名称。
 
@@ -130,7 +130,7 @@ class Stage:
 
     @property
     def version_id(self):
-        """Gets the version_id of this Stage.
+        r"""Gets the version_id of this Stage.
 
         凭据的版本号标识符。 
 
@@ -141,7 +141,7 @@ class Stage:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this Stage.
+        r"""Sets the version_id of this Stage.
 
         凭据的版本号标识符。 
 

@@ -25,7 +25,7 @@ class ApplicationConfigConfiguration:
     }
 
     def __init__(self, env=None):
-        """ApplicationConfigConfiguration
+        r"""ApplicationConfigConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApplicationConfigConfiguration:
 
     @property
     def env(self):
-        """Gets the env of this ApplicationConfigConfiguration.
+        r"""Gets the env of this ApplicationConfigConfiguration.
 
         application environment parameters
 
@@ -54,7 +54,7 @@ class ApplicationConfigConfiguration:
 
     @env.setter
     def env(self, env):
-        """Sets the env of this ApplicationConfigConfiguration.
+        r"""Sets the env of this ApplicationConfigConfiguration.
 
         application environment parameters
 

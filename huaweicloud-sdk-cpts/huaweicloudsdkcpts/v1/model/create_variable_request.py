@@ -27,7 +27,7 @@ class CreateVariableRequest:
     }
 
     def __init__(self, test_suite_id=None, body=None):
-        """CreateVariableRequest
+        r"""CreateVariableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVariableRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this CreateVariableRequest.
+        r"""Gets the test_suite_id of this CreateVariableRequest.
 
         测试工程id
 
@@ -60,7 +60,7 @@ class CreateVariableRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this CreateVariableRequest.
+        r"""Sets the test_suite_id of this CreateVariableRequest.
 
         测试工程id
 
@@ -71,7 +71,7 @@ class CreateVariableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVariableRequest.
+        r"""Gets the body of this CreateVariableRequest.
 
         :return: The body of this CreateVariableRequest.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.CreateVariableRequestBody`]
@@ -80,7 +80,7 @@ class CreateVariableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVariableRequest.
+        r"""Sets the body of this CreateVariableRequest.
 
         :param body: The body of this CreateVariableRequest.
         :type body: list[:class:`huaweicloudsdkcpts.v1.CreateVariableRequestBody`]

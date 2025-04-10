@@ -30,7 +30,7 @@ class ListVolumesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, volumes_links=None, volumes=None):
-        """ListVolumesResponse
+        r"""ListVolumesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVolumesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVolumesResponse.
+        r"""Gets the count of this ListVolumesResponse.
 
         查询到的云硬盘总数量，不受分页影响。
 
@@ -69,7 +69,7 @@ class ListVolumesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVolumesResponse.
+        r"""Sets the count of this ListVolumesResponse.
 
         查询到的云硬盘总数量，不受分页影响。
 
@@ -80,7 +80,7 @@ class ListVolumesResponse(SdkResponse):
 
     @property
     def volumes_links(self):
-        """Gets the volumes_links of this ListVolumesResponse.
+        r"""Gets the volumes_links of this ListVolumesResponse.
 
         云硬盘列表查询位置标记。如果本次查询只返回部分列表信息时，会返回查询到的当前磁盘mark标记的url，可以继续使用这个url查询剩余列表信息。
 
@@ -91,7 +91,7 @@ class ListVolumesResponse(SdkResponse):
 
     @volumes_links.setter
     def volumes_links(self, volumes_links):
-        """Sets the volumes_links of this ListVolumesResponse.
+        r"""Sets the volumes_links of this ListVolumesResponse.
 
         云硬盘列表查询位置标记。如果本次查询只返回部分列表信息时，会返回查询到的当前磁盘mark标记的url，可以继续使用这个url查询剩余列表信息。
 
@@ -102,7 +102,7 @@ class ListVolumesResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ListVolumesResponse.
+        r"""Gets the volumes of this ListVolumesResponse.
 
         查询请求返回的云硬盘列表。
 
@@ -113,7 +113,7 @@ class ListVolumesResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ListVolumesResponse.
+        r"""Sets the volumes of this ListVolumesResponse.
 
         查询请求返回的云硬盘列表。
 

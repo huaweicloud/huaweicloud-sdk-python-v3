@@ -29,7 +29,7 @@ class AlarmLogRequestTime:
     }
 
     def __init__(self, time_range=None, start_time=None, end_time=None):
-        """AlarmLogRequestTime
+        r"""AlarmLogRequestTime
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AlarmLogRequestTime:
 
     @property
     def time_range(self):
-        """Gets the time_range of this AlarmLogRequestTime.
+        r"""Gets the time_range of this AlarmLogRequestTime.
 
         时间范围。和start_time，end_time不能同时使用，同时传该参数优先级更高。枚举值 HALF_HOUR, HOUR, THREE_HOUR, TWELVE_HOUR, DAY, WEEK, MONTH;
 
@@ -68,7 +68,7 @@ class AlarmLogRequestTime:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this AlarmLogRequestTime.
+        r"""Sets the time_range of this AlarmLogRequestTime.
 
         时间范围。和start_time，end_time不能同时使用，同时传该参数优先级更高。枚举值 HALF_HOUR, HOUR, THREE_HOUR, TWELVE_HOUR, DAY, WEEK, MONTH;
 
@@ -79,7 +79,7 @@ class AlarmLogRequestTime:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AlarmLogRequestTime.
+        r"""Gets the start_time of this AlarmLogRequestTime.
 
         开始时间，必须和end_time成对出现。格式必须为yyyy-MM-dd HH:mm:ss。UTC时间
 
@@ -90,7 +90,7 @@ class AlarmLogRequestTime:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AlarmLogRequestTime.
+        r"""Sets the start_time of this AlarmLogRequestTime.
 
         开始时间，必须和end_time成对出现。格式必须为yyyy-MM-dd HH:mm:ss。UTC时间
 
@@ -101,7 +101,7 @@ class AlarmLogRequestTime:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AlarmLogRequestTime.
+        r"""Gets the end_time of this AlarmLogRequestTime.
 
         结束时间，必须和start_time成对出现。格式必须为yyyy-MM-dd HH:mm:ss。UTC时间
 
@@ -112,7 +112,7 @@ class AlarmLogRequestTime:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AlarmLogRequestTime.
+        r"""Sets the end_time of this AlarmLogRequestTime.
 
         结束时间，必须和start_time成对出现。格式必须为yyyy-MM-dd HH:mm:ss。UTC时间
 

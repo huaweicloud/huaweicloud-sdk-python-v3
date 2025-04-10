@@ -27,7 +27,7 @@ class ShowDomainRequest:
     }
 
     def __init__(self, domain=None, enterprise_project_id=None):
-        """ShowDomainRequest
+        r"""ShowDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowDomainRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ShowDomainRequest.
+        r"""Gets the domain of this ShowDomainRequest.
 
         直播域名，如果不设置此字段，则返回租户所有的域名信息
 
@@ -61,7 +61,7 @@ class ShowDomainRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowDomainRequest.
+        r"""Sets the domain of this ShowDomainRequest.
 
         直播域名，如果不设置此字段，则返回租户所有的域名信息
 
@@ -72,7 +72,7 @@ class ShowDomainRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainRequest.
 
         企业项目ID，如果不设置此字段，则不进行该字段过滤，返回所有域名信息
 
@@ -83,7 +83,7 @@ class ShowDomainRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainRequest.
 
         企业项目ID，如果不设置此字段，则不进行该字段过滤，返回所有域名信息
 

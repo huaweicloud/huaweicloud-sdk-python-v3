@@ -27,7 +27,7 @@ class CreateClusteringJobReq:
     }
 
     def __init__(self, basic_info=None, file=None):
-        """CreateClusteringJobReq
+        r"""CreateClusteringJobReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusteringJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateClusteringJobReq.
+        r"""Gets the basic_info of this CreateClusteringJobReq.
 
         :return: The basic_info of this CreateClusteringJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -57,7 +57,7 @@ class CreateClusteringJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateClusteringJobReq.
+        r"""Sets the basic_info of this CreateClusteringJobReq.
 
         :param basic_info: The basic_info of this CreateClusteringJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -66,7 +66,7 @@ class CreateClusteringJobReq:
 
     @property
     def file(self):
-        """Gets the file of this CreateClusteringJobReq.
+        r"""Gets the file of this CreateClusteringJobReq.
 
         :return: The file of this CreateClusteringJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ClusteringDrugFile`
@@ -75,7 +75,7 @@ class CreateClusteringJobReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateClusteringJobReq.
+        r"""Sets the file of this CreateClusteringJobReq.
 
         :param file: The file of this CreateClusteringJobReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.ClusteringDrugFile`

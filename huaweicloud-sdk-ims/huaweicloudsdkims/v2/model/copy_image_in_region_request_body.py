@@ -31,7 +31,7 @@ class CopyImageInRegionRequestBody:
     }
 
     def __init__(self, cmk_id=None, description=None, enterprise_project_id=None, name=None):
-        """CopyImageInRegionRequestBody
+        r"""CopyImageInRegionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CopyImageInRegionRequestBody:
 
     @property
     def cmk_id(self):
-        """Gets the cmk_id of this CopyImageInRegionRequestBody.
+        r"""Gets the cmk_id of this CopyImageInRegionRequestBody.
 
         加密密钥。默认为空。
 
@@ -74,7 +74,7 @@ class CopyImageInRegionRequestBody:
 
     @cmk_id.setter
     def cmk_id(self, cmk_id):
-        """Sets the cmk_id of this CopyImageInRegionRequestBody.
+        r"""Sets the cmk_id of this CopyImageInRegionRequestBody.
 
         加密密钥。默认为空。
 
@@ -85,7 +85,7 @@ class CopyImageInRegionRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CopyImageInRegionRequestBody.
+        r"""Gets the description of this CopyImageInRegionRequestBody.
 
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -96,7 +96,7 @@ class CopyImageInRegionRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CopyImageInRegionRequestBody.
+        r"""Sets the description of this CopyImageInRegionRequestBody.
 
         镜像描述信息。_description参数说明请参考镜像属性。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -107,7 +107,7 @@ class CopyImageInRegionRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CopyImageInRegionRequestBody.
+        r"""Gets the enterprise_project_id of this CopyImageInRegionRequestBody.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -118,7 +118,7 @@ class CopyImageInRegionRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CopyImageInRegionRequestBody.
+        r"""Sets the enterprise_project_id of this CopyImageInRegionRequestBody.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -129,7 +129,7 @@ class CopyImageInRegionRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CopyImageInRegionRequestBody.
+        r"""Gets the name of this CopyImageInRegionRequestBody.
 
         镜像名称
 
@@ -140,7 +140,7 @@ class CopyImageInRegionRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyImageInRegionRequestBody.
+        r"""Sets the name of this CopyImageInRegionRequestBody.
 
         镜像名称
 

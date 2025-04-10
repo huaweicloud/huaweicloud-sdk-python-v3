@@ -27,7 +27,7 @@ class BatchAddOrRemoveResourceInstanceRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchAddOrRemoveResourceInstanceRequestBody
+        r"""BatchAddOrRemoveResourceInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddOrRemoveResourceInstanceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchAddOrRemoveResourceInstanceRequestBody.
+        r"""Gets the tags of this BatchAddOrRemoveResourceInstanceRequestBody.
 
         标签列表，没有标签默认为空数组。
 
@@ -60,7 +60,7 @@ class BatchAddOrRemoveResourceInstanceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchAddOrRemoveResourceInstanceRequestBody.
+        r"""Sets the tags of this BatchAddOrRemoveResourceInstanceRequestBody.
 
         标签列表，没有标签默认为空数组。
 
@@ -71,7 +71,7 @@ class BatchAddOrRemoveResourceInstanceRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchAddOrRemoveResourceInstanceRequestBody.
+        r"""Gets the action of this BatchAddOrRemoveResourceInstanceRequestBody.
 
         操作标识：仅限于 create（创建） delete（删除）
 
@@ -82,7 +82,7 @@ class BatchAddOrRemoveResourceInstanceRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchAddOrRemoveResourceInstanceRequestBody.
+        r"""Sets the action of this BatchAddOrRemoveResourceInstanceRequestBody.
 
         操作标识：仅限于 create（创建） delete（删除）
 

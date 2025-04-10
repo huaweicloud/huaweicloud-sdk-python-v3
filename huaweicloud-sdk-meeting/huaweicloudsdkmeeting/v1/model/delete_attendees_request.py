@@ -29,7 +29,7 @@ class DeleteAttendeesRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """DeleteAttendeesRequest
+        r"""DeleteAttendeesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteAttendeesRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this DeleteAttendeesRequest.
+        r"""Gets the conference_id of this DeleteAttendeesRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class DeleteAttendeesRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this DeleteAttendeesRequest.
+        r"""Sets the conference_id of this DeleteAttendeesRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class DeleteAttendeesRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this DeleteAttendeesRequest.
+        r"""Gets the x_conference_authorization of this DeleteAttendeesRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class DeleteAttendeesRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this DeleteAttendeesRequest.
+        r"""Sets the x_conference_authorization of this DeleteAttendeesRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class DeleteAttendeesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAttendeesRequest.
+        r"""Gets the body of this DeleteAttendeesRequest.
 
         :return: The body of this DeleteAttendeesRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestBulkDelAttendReqBody`
@@ -108,7 +108,7 @@ class DeleteAttendeesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAttendeesRequest.
+        r"""Sets the body of this DeleteAttendeesRequest.
 
         :param body: The body of this DeleteAttendeesRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestBulkDelAttendReqBody`

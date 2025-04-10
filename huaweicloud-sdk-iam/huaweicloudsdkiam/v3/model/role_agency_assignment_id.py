@@ -25,7 +25,7 @@ class RoleAgencyAssignmentId:
     }
 
     def __init__(self, id=None):
-        """RoleAgencyAssignmentId
+        r"""RoleAgencyAssignmentId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RoleAgencyAssignmentId:
 
     @property
     def id(self):
-        """Gets the id of this RoleAgencyAssignmentId.
+        r"""Gets the id of this RoleAgencyAssignmentId.
 
         委托ID。
 
@@ -54,7 +54,7 @@ class RoleAgencyAssignmentId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RoleAgencyAssignmentId.
+        r"""Sets the id of this RoleAgencyAssignmentId.
 
         委托ID。
 

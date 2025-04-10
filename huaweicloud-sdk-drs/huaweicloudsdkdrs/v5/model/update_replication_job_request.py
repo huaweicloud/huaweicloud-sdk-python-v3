@@ -29,7 +29,7 @@ class UpdateReplicationJobRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateReplicationJobRequest
+        r"""UpdateReplicationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateReplicationJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateReplicationJobRequest.
+        r"""Gets the job_id of this UpdateReplicationJobRequest.
 
         备份迁移任务ID。
 
@@ -67,7 +67,7 @@ class UpdateReplicationJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateReplicationJobRequest.
+        r"""Sets the job_id of this UpdateReplicationJobRequest.
 
         备份迁移任务ID。
 
@@ -78,7 +78,7 @@ class UpdateReplicationJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateReplicationJobRequest.
+        r"""Gets the x_language of this UpdateReplicationJobRequest.
 
         请求语言类型。 en-us：英文 zh-cn：中文
 
@@ -89,7 +89,7 @@ class UpdateReplicationJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateReplicationJobRequest.
+        r"""Sets the x_language of this UpdateReplicationJobRequest.
 
         请求语言类型。 en-us：英文 zh-cn：中文
 
@@ -100,7 +100,7 @@ class UpdateReplicationJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateReplicationJobRequest.
+        r"""Gets the body of this UpdateReplicationJobRequest.
 
         :return: The body of this UpdateReplicationJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.ModifyOfflineTaskReq`
@@ -109,7 +109,7 @@ class UpdateReplicationJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateReplicationJobRequest.
+        r"""Sets the body of this UpdateReplicationJobRequest.
 
         :param body: The body of this UpdateReplicationJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.ModifyOfflineTaskReq`

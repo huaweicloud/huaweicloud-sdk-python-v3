@@ -27,7 +27,7 @@ class ServerInterfaceFixedIp:
     }
 
     def __init__(self, ip_address=None, subnet_id=None):
-        """ServerInterfaceFixedIp
+        r"""ServerInterfaceFixedIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServerInterfaceFixedIp:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ServerInterfaceFixedIp.
+        r"""Gets the ip_address of this ServerInterfaceFixedIp.
 
         网卡私网IP信息。
 
@@ -61,7 +61,7 @@ class ServerInterfaceFixedIp:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ServerInterfaceFixedIp.
+        r"""Sets the ip_address of this ServerInterfaceFixedIp.
 
         网卡私网IP信息。
 
@@ -72,7 +72,7 @@ class ServerInterfaceFixedIp:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ServerInterfaceFixedIp.
+        r"""Gets the subnet_id of this ServerInterfaceFixedIp.
 
         网卡私网IP对应子网信息。
 
@@ -83,7 +83,7 @@ class ServerInterfaceFixedIp:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ServerInterfaceFixedIp.
+        r"""Sets the subnet_id of this ServerInterfaceFixedIp.
 
         网卡私网IP对应子网信息。
 

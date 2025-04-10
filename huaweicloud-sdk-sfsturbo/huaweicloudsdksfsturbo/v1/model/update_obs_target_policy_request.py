@@ -29,7 +29,7 @@ class UpdateObsTargetPolicyRequest:
     }
 
     def __init__(self, share_id=None, target_id=None, body=None):
-        """UpdateObsTargetPolicyRequest
+        r"""UpdateObsTargetPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateObsTargetPolicyRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this UpdateObsTargetPolicyRequest.
+        r"""Gets the share_id of this UpdateObsTargetPolicyRequest.
 
         文件系统id
 
@@ -66,7 +66,7 @@ class UpdateObsTargetPolicyRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this UpdateObsTargetPolicyRequest.
+        r"""Sets the share_id of this UpdateObsTargetPolicyRequest.
 
         文件系统id
 
@@ -77,7 +77,7 @@ class UpdateObsTargetPolicyRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this UpdateObsTargetPolicyRequest.
+        r"""Gets the target_id of this UpdateObsTargetPolicyRequest.
 
         绑定关系id
 
@@ -88,7 +88,7 @@ class UpdateObsTargetPolicyRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this UpdateObsTargetPolicyRequest.
+        r"""Sets the target_id of this UpdateObsTargetPolicyRequest.
 
         绑定关系id
 
@@ -99,7 +99,7 @@ class UpdateObsTargetPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateObsTargetPolicyRequest.
+        r"""Gets the body of this UpdateObsTargetPolicyRequest.
 
         :return: The body of this UpdateObsTargetPolicyRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetPolicyRequestBody`
@@ -108,7 +108,7 @@ class UpdateObsTargetPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateObsTargetPolicyRequest.
+        r"""Sets the body of this UpdateObsTargetPolicyRequest.
 
         :param body: The body of this UpdateObsTargetPolicyRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetPolicyRequestBody`

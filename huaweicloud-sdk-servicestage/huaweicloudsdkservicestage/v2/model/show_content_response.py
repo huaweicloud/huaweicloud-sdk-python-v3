@@ -32,7 +32,7 @@ class ShowContentResponse(SdkResponse):
     }
 
     def __init__(self, path=None, sha=None, encoding=None, content=None):
-        """ShowContentResponse
+        r"""ShowContentResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowContentResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowContentResponse.
+        r"""Gets the path of this ShowContentResponse.
 
         文件路径。
 
@@ -76,7 +76,7 @@ class ShowContentResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowContentResponse.
+        r"""Sets the path of this ShowContentResponse.
 
         文件路径。
 
@@ -87,7 +87,7 @@ class ShowContentResponse(SdkResponse):
 
     @property
     def sha(self):
-        """Gets the sha of this ShowContentResponse.
+        r"""Gets the sha of this ShowContentResponse.
 
         commit 哈希。
 
@@ -98,7 +98,7 @@ class ShowContentResponse(SdkResponse):
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this ShowContentResponse.
+        r"""Sets the sha of this ShowContentResponse.
 
         commit 哈希。
 
@@ -109,7 +109,7 @@ class ShowContentResponse(SdkResponse):
 
     @property
     def encoding(self):
-        """Gets the encoding of this ShowContentResponse.
+        r"""Gets the encoding of this ShowContentResponse.
 
         编码方式：base64或者text/plain。
 
@@ -120,7 +120,7 @@ class ShowContentResponse(SdkResponse):
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this ShowContentResponse.
+        r"""Sets the encoding of this ShowContentResponse.
 
         编码方式：base64或者text/plain。
 
@@ -131,7 +131,7 @@ class ShowContentResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowContentResponse.
+        r"""Gets the content of this ShowContentResponse.
 
         文件内容。
 
@@ -142,7 +142,7 @@ class ShowContentResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowContentResponse.
+        r"""Sets the content of this ShowContentResponse.
 
         文件内容。
 

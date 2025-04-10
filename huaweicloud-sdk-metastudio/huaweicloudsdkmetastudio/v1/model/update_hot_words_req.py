@@ -27,7 +27,7 @@ class UpdateHotWordsReq:
     }
 
     def __init__(self, hot_words_type=None, sis_hot_words=None):
-        """UpdateHotWordsReq
+        r"""UpdateHotWordsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateHotWordsReq:
 
     @property
     def hot_words_type(self):
-        """Gets the hot_words_type of this UpdateHotWordsReq.
+        r"""Gets the hot_words_type of this UpdateHotWordsReq.
 
         :return: The hot_words_type of this UpdateHotWordsReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -57,7 +57,7 @@ class UpdateHotWordsReq:
 
     @hot_words_type.setter
     def hot_words_type(self, hot_words_type):
-        """Sets the hot_words_type of this UpdateHotWordsReq.
+        r"""Sets the hot_words_type of this UpdateHotWordsReq.
 
         :param hot_words_type: The hot_words_type of this UpdateHotWordsReq.
         :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -66,7 +66,7 @@ class UpdateHotWordsReq:
 
     @property
     def sis_hot_words(self):
-        """Gets the sis_hot_words of this UpdateHotWordsReq.
+        r"""Gets the sis_hot_words of this UpdateHotWordsReq.
 
         :return: The sis_hot_words of this UpdateHotWordsReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateSisHotWords`
@@ -75,7 +75,7 @@ class UpdateHotWordsReq:
 
     @sis_hot_words.setter
     def sis_hot_words(self, sis_hot_words):
-        """Sets the sis_hot_words of this UpdateHotWordsReq.
+        r"""Sets the sis_hot_words of this UpdateHotWordsReq.
 
         :param sis_hot_words: The sis_hot_words of this UpdateHotWordsReq.
         :type sis_hot_words: :class:`huaweicloudsdkmetastudio.v1.UpdateSisHotWords`

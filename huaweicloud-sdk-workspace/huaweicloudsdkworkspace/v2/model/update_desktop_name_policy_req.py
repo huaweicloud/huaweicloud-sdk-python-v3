@@ -35,7 +35,7 @@ class UpdateDesktopNamePolicyReq:
     }
 
     def __init__(self, policy_name=None, name_prefix=None, digit_number=None, start_number=None, single_domain_user_inc=None, is_default_policy=None):
-        """UpdateDesktopNamePolicyReq
+        r"""UpdateDesktopNamePolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateDesktopNamePolicyReq:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateDesktopNamePolicyReq.
+        r"""Gets the policy_name of this UpdateDesktopNamePolicyReq.
 
         策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
 
@@ -89,7 +89,7 @@ class UpdateDesktopNamePolicyReq:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateDesktopNamePolicyReq.
+        r"""Sets the policy_name of this UpdateDesktopNamePolicyReq.
 
         策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符。
 
@@ -100,7 +100,7 @@ class UpdateDesktopNamePolicyReq:
 
     @property
     def name_prefix(self):
-        """Gets the name_prefix of this UpdateDesktopNamePolicyReq.
+        r"""Gets the name_prefix of this UpdateDesktopNamePolicyReq.
 
         策略前缀。
 
@@ -111,7 +111,7 @@ class UpdateDesktopNamePolicyReq:
 
     @name_prefix.setter
     def name_prefix(self, name_prefix):
-        """Sets the name_prefix of this UpdateDesktopNamePolicyReq.
+        r"""Sets the name_prefix of this UpdateDesktopNamePolicyReq.
 
         策略前缀。
 
@@ -122,7 +122,7 @@ class UpdateDesktopNamePolicyReq:
 
     @property
     def digit_number(self):
-        """Gets the digit_number of this UpdateDesktopNamePolicyReq.
+        r"""Gets the digit_number of this UpdateDesktopNamePolicyReq.
 
         策略后缀有效位数。
 
@@ -133,7 +133,7 @@ class UpdateDesktopNamePolicyReq:
 
     @digit_number.setter
     def digit_number(self, digit_number):
-        """Sets the digit_number of this UpdateDesktopNamePolicyReq.
+        r"""Sets the digit_number of this UpdateDesktopNamePolicyReq.
 
         策略后缀有效位数。
 
@@ -144,7 +144,7 @@ class UpdateDesktopNamePolicyReq:
 
     @property
     def start_number(self):
-        """Gets the start_number of this UpdateDesktopNamePolicyReq.
+        r"""Gets the start_number of this UpdateDesktopNamePolicyReq.
 
         策略后缀起始数字。
 
@@ -155,7 +155,7 @@ class UpdateDesktopNamePolicyReq:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this UpdateDesktopNamePolicyReq.
+        r"""Sets the start_number of this UpdateDesktopNamePolicyReq.
 
         策略后缀起始数字。
 
@@ -166,7 +166,7 @@ class UpdateDesktopNamePolicyReq:
 
     @property
     def single_domain_user_inc(self):
-        """Gets the single_domain_user_inc of this UpdateDesktopNamePolicyReq.
+        r"""Gets the single_domain_user_inc of this UpdateDesktopNamePolicyReq.
 
         是否单用户名递增。 - 1 单用户名递增。 - 0 租户递增。
 
@@ -177,7 +177,7 @@ class UpdateDesktopNamePolicyReq:
 
     @single_domain_user_inc.setter
     def single_domain_user_inc(self, single_domain_user_inc):
-        """Sets the single_domain_user_inc of this UpdateDesktopNamePolicyReq.
+        r"""Sets the single_domain_user_inc of this UpdateDesktopNamePolicyReq.
 
         是否单用户名递增。 - 1 单用户名递增。 - 0 租户递增。
 
@@ -188,7 +188,7 @@ class UpdateDesktopNamePolicyReq:
 
     @property
     def is_default_policy(self):
-        """Gets the is_default_policy of this UpdateDesktopNamePolicyReq.
+        r"""Gets the is_default_policy of this UpdateDesktopNamePolicyReq.
 
         是否为默认策略，true默认策略。
 
@@ -199,7 +199,7 @@ class UpdateDesktopNamePolicyReq:
 
     @is_default_policy.setter
     def is_default_policy(self, is_default_policy):
-        """Sets the is_default_policy of this UpdateDesktopNamePolicyReq.
+        r"""Sets the is_default_policy of this UpdateDesktopNamePolicyReq.
 
         是否为默认策略，true默认策略。
 

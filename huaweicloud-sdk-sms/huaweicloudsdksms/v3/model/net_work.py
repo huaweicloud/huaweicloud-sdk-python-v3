@@ -39,7 +39,7 @@ class NetWork:
     }
 
     def __init__(self, name=None, ip=None, ipv6=None, netmask=None, gateway=None, mtu=None, mac=None, id=None):
-        """NetWork
+        r"""NetWork
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class NetWork:
 
     @property
     def name(self):
-        """Gets the name of this NetWork.
+        r"""Gets the name of this NetWork.
 
         网卡的名称
 
@@ -98,7 +98,7 @@ class NetWork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NetWork.
+        r"""Sets the name of this NetWork.
 
         网卡的名称
 
@@ -109,7 +109,7 @@ class NetWork:
 
     @property
     def ip(self):
-        """Gets the ip of this NetWork.
+        r"""Gets the ip of this NetWork.
 
         该网卡绑定的IP
 
@@ -120,7 +120,7 @@ class NetWork:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this NetWork.
+        r"""Sets the ip of this NetWork.
 
         该网卡绑定的IP
 
@@ -131,7 +131,7 @@ class NetWork:
 
     @property
     def ipv6(self):
-        """Gets the ipv6 of this NetWork.
+        r"""Gets the ipv6 of this NetWork.
 
         IPv6地址
 
@@ -142,7 +142,7 @@ class NetWork:
 
     @ipv6.setter
     def ipv6(self, ipv6):
-        """Sets the ipv6 of this NetWork.
+        r"""Sets the ipv6 of this NetWork.
 
         IPv6地址
 
@@ -153,7 +153,7 @@ class NetWork:
 
     @property
     def netmask(self):
-        """Gets the netmask of this NetWork.
+        r"""Gets the netmask of this NetWork.
 
         掩码
 
@@ -164,7 +164,7 @@ class NetWork:
 
     @netmask.setter
     def netmask(self, netmask):
-        """Sets the netmask of this NetWork.
+        r"""Sets the netmask of this NetWork.
 
         掩码
 
@@ -175,7 +175,7 @@ class NetWork:
 
     @property
     def gateway(self):
-        """Gets the gateway of this NetWork.
+        r"""Gets the gateway of this NetWork.
 
         网关
 
@@ -186,7 +186,7 @@ class NetWork:
 
     @gateway.setter
     def gateway(self, gateway):
-        """Sets the gateway of this NetWork.
+        r"""Sets the gateway of this NetWork.
 
         网关
 
@@ -197,7 +197,7 @@ class NetWork:
 
     @property
     def mtu(self):
-        """Gets the mtu of this NetWork.
+        r"""Gets the mtu of this NetWork.
 
         Linux必选，网卡的MTU
 
@@ -208,7 +208,7 @@ class NetWork:
 
     @mtu.setter
     def mtu(self, mtu):
-        """Sets the mtu of this NetWork.
+        r"""Sets the mtu of this NetWork.
 
         Linux必选，网卡的MTU
 
@@ -219,7 +219,7 @@ class NetWork:
 
     @property
     def mac(self):
-        """Gets the mac of this NetWork.
+        r"""Gets the mac of this NetWork.
 
         Mac地址
 
@@ -230,7 +230,7 @@ class NetWork:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this NetWork.
+        r"""Sets the mac of this NetWork.
 
         Mac地址
 
@@ -241,7 +241,7 @@ class NetWork:
 
     @property
     def id(self):
-        """Gets the id of this NetWork.
+        r"""Gets the id of this NetWork.
 
         数据库ID
 
@@ -252,7 +252,7 @@ class NetWork:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NetWork.
+        r"""Sets the id of this NetWork.
 
         数据库ID
 

@@ -32,7 +32,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, url=None, error_code=None, error_msg=None):
-        """RunGetFileTranslationResultResponse
+        r"""RunGetFileTranslationResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this RunGetFileTranslationResultResponse.
+        r"""Gets the status of this RunGetFileTranslationResultResponse.
 
         当前翻译状态。具体状态如下所示： WAITING 等待翻译。 FINISHED 翻译已经完成。 ERROR 翻译过程中发生错误。 调用失败时无此字段。
 
@@ -76,7 +76,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RunGetFileTranslationResultResponse.
+        r"""Sets the status of this RunGetFileTranslationResultResponse.
 
         当前翻译状态。具体状态如下所示： WAITING 等待翻译。 FINISHED 翻译已经完成。 ERROR 翻译过程中发生错误。 调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this RunGetFileTranslationResultResponse.
+        r"""Gets the url of this RunGetFileTranslationResultResponse.
 
         临时url，用于获取翻译结果，有效期十分钟。过期后请再次调用接口获取新的url。调用失败时或翻译状态非FINISHED时无此字段。
 
@@ -98,7 +98,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this RunGetFileTranslationResultResponse.
+        r"""Sets the url of this RunGetFileTranslationResultResponse.
 
         临时url，用于获取翻译结果，有效期十分钟。过期后请再次调用接口获取新的url。调用失败时或翻译状态非FINISHED时无此字段。
 
@@ -109,7 +109,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunGetFileTranslationResultResponse.
+        r"""Gets the error_code of this RunGetFileTranslationResultResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -120,7 +120,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunGetFileTranslationResultResponse.
+        r"""Sets the error_code of this RunGetFileTranslationResultResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -131,7 +131,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunGetFileTranslationResultResponse.
+        r"""Gets the error_msg of this RunGetFileTranslationResultResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -142,7 +142,7 @@ class RunGetFileTranslationResultResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunGetFileTranslationResultResponse.
+        r"""Sets the error_msg of this RunGetFileTranslationResultResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

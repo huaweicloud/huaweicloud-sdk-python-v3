@@ -30,7 +30,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, request_id=None, total_count=None):
-        """ListResourceByFilterTagResponse
+        r"""ListResourceByFilterTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourceByFilterTagResponse.
+        r"""Gets the resources of this ListResourceByFilterTagResponse.
 
         资源实例实例列表。
 
@@ -69,7 +69,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourceByFilterTagResponse.
+        r"""Sets the resources of this ListResourceByFilterTagResponse.
 
         资源实例实例列表。
 
@@ -80,7 +80,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListResourceByFilterTagResponse.
+        r"""Gets the request_id of this ListResourceByFilterTagResponse.
 
         请求ID。
 
@@ -91,7 +91,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListResourceByFilterTagResponse.
+        r"""Sets the request_id of this ListResourceByFilterTagResponse.
 
         请求ID。
 
@@ -102,7 +102,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourceByFilterTagResponse.
+        r"""Gets the total_count of this ListResourceByFilterTagResponse.
 
         符合过滤条件的资源总数量。
 
@@ -113,7 +113,7 @@ class ListResourceByFilterTagResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourceByFilterTagResponse.
+        r"""Sets the total_count of this ListResourceByFilterTagResponse.
 
         符合过滤条件的资源总数量。
 

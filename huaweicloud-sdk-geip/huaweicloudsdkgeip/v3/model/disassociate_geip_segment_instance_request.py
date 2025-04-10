@@ -25,7 +25,7 @@ class DisassociateGeipSegmentInstanceRequest:
     }
 
     def __init__(self, global_eip_segment_id=None):
-        """DisassociateGeipSegmentInstanceRequest
+        r"""DisassociateGeipSegmentInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateGeipSegmentInstanceRequest:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
+        r"""Gets the global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
 
         :return: The global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class DisassociateGeipSegmentInstanceRequest:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
+        r"""Sets the global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
 
         :param global_eip_segment_id: The global_eip_segment_id of this DisassociateGeipSegmentInstanceRequest.
         :type global_eip_segment_id: str

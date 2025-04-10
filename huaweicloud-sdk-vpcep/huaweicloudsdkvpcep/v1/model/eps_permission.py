@@ -33,7 +33,7 @@ class EpsPermission:
     }
 
     def __init__(self, id=None, permission=None, permission_type=None, description=None, created_at=None):
-        """EpsPermission
+        r"""EpsPermission
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EpsPermission:
 
     @property
     def id(self):
-        """Gets the id of this EpsPermission.
+        r"""Gets the id of this EpsPermission.
 
         白名单表主键ID
 
@@ -82,7 +82,7 @@ class EpsPermission:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EpsPermission.
+        r"""Sets the id of this EpsPermission.
 
         白名单表主键ID
 
@@ -93,7 +93,7 @@ class EpsPermission:
 
     @property
     def permission(self):
-        """Gets the permission of this EpsPermission.
+        r"""Gets the permission of this EpsPermission.
 
         权限格式为：iam:domain::domain_id或者organizations:orgPath::org_path其中，  - “iam:domain::”和“organizations:orgPath::”为固定格式。  - “domain_id”为可连接用户的账号ID，org_path可连接用户的组织路径 domain_id类型支持输入包括“a~z”、“A~Z”、“0~9”或者“*”，org_path类型支持“a~z”、“A~Z”、“0~9”、“/-*?”或者“*”。 “*”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd或者organizations:orgPath::o-3j59d1231uprgk9yuvlidra7zbzfi578/r-rldbu1vmxdw5ahdkknxnvd5rgag77m2z/ou-7tuddd8nh99rebxltawsm6qct5z7rklv/*
 
@@ -104,7 +104,7 @@ class EpsPermission:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this EpsPermission.
+        r"""Sets the permission of this EpsPermission.
 
         权限格式为：iam:domain::domain_id或者organizations:orgPath::org_path其中，  - “iam:domain::”和“organizations:orgPath::”为固定格式。  - “domain_id”为可连接用户的账号ID，org_path可连接用户的组织路径 domain_id类型支持输入包括“a~z”、“A~Z”、“0~9”或者“*”，org_path类型支持“a~z”、“A~Z”、“0~9”、“/-*?”或者“*”。 “*”表示所有终端节点可连接。 例如：iam:domain::6e9dfd51d1124e8d8498dce894923a0dd或者organizations:orgPath::o-3j59d1231uprgk9yuvlidra7zbzfi578/r-rldbu1vmxdw5ahdkknxnvd5rgag77m2z/ou-7tuddd8nh99rebxltawsm6qct5z7rklv/*
 
@@ -115,7 +115,7 @@ class EpsPermission:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this EpsPermission.
+        r"""Gets the permission_type of this EpsPermission.
 
         终端节点服务白名单类型。  - domainId：基于账户ID配置终端节点服务白名单。  - orgPath：基于账户所在组织路径配置终端节点服务白名单。
 
@@ -126,7 +126,7 @@ class EpsPermission:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this EpsPermission.
+        r"""Sets the permission_type of this EpsPermission.
 
         终端节点服务白名单类型。  - domainId：基于账户ID配置终端节点服务白名单。  - orgPath：基于账户所在组织路径配置终端节点服务白名单。
 
@@ -137,7 +137,7 @@ class EpsPermission:
 
     @property
     def description(self):
-        """Gets the description of this EpsPermission.
+        r"""Gets the description of this EpsPermission.
 
         终端节点服务白名单描述
 
@@ -148,7 +148,7 @@ class EpsPermission:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EpsPermission.
+        r"""Sets the description of this EpsPermission.
 
         终端节点服务白名单描述
 
@@ -159,7 +159,7 @@ class EpsPermission:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EpsPermission.
+        r"""Gets the created_at of this EpsPermission.
 
         白名单创建时间
 
@@ -170,7 +170,7 @@ class EpsPermission:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EpsPermission.
+        r"""Sets the created_at of this EpsPermission.
 
         白名单创建时间
 

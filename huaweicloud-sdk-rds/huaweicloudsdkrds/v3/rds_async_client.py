@@ -34,7 +34,7 @@ class RdsAsyncClient(Client):
         return client_builder
 
     def add_postgresql_hba_conf_async(self, request):
-        """在pg_hba.conf文件最后新增单个或多个配置
+        r"""在pg_hba.conf文件最后新增单个或多个配置
 
         以传入配置全量覆盖当前pg_hba.conf文件内容，入参为空时用默认配置覆盖当前文件内容
         
@@ -101,7 +101,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def apply_configuration_async_async(self, request):
-        """应用参数模板
+        r"""应用参数模板
 
         应用参数模板。
         
@@ -170,7 +170,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def attach_eip_async(self, request):
-        """绑定和解绑弹性公网IP
+        r"""绑定和解绑弹性公网IP
 
         绑定和解绑弹性公网IP。
         
@@ -239,7 +239,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_delete_manual_backup_async(self, request):
-        """批量删除手动备份
+        r"""批量删除手动备份
 
         批量删除手动备份。
         
@@ -306,7 +306,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_restore_database_async(self, request):
-        """库级时间点恢复
+        r"""库级时间点恢复
 
         库级时间点恢复
         
@@ -371,7 +371,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_restore_postgre_sql_tables_async(self, request):
-        """表级时间点恢复（PostgreSQL）
+        r"""表级时间点恢复（PostgreSQL）
 
         表级时间点恢复（PostgreSQL）
         
@@ -436,7 +436,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_stop_instance_async(self, request):
-        """批量停止实例
+        r"""批量停止实例
 
         批量停止实例
         
@@ -501,7 +501,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_tag_add_action_async(self, request):
-        """批量添加标签
+        r"""批量添加标签
 
         批量添加标签。
         
@@ -570,7 +570,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_tag_del_action_async(self, request):
-        """批量删除标签
+        r"""批量删除标签
 
         批量删除标签。
         
@@ -639,7 +639,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def change_failover_mode_async(self, request):
-        """更改主备实例的数据同步方式
+        r"""更改主备实例的数据同步方式
 
         更改主备实例的数据同步方式。
         
@@ -708,7 +708,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def change_failover_strategy_async(self, request):
-        """切换主备实例的倒换策略
+        r"""切换主备实例的倒换策略
 
         切换主备实例的倒换策略.
         
@@ -777,7 +777,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def change_ops_window_async(self, request):
-        """设置可维护时间段
+        r"""设置可维护时间段
 
         设置可维护时间段
         
@@ -846,7 +846,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def copy_configuration_async(self, request):
-        """复制参数模板
+        r"""复制参数模板
 
         复制参数模板
         
@@ -913,7 +913,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_configuration_async(self, request):
-        """创建参数模板
+        r"""创建参数模板
 
         创建参数模板。
         
@@ -980,7 +980,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_dns_name_async(self, request):
-        """申请域名
+        r"""申请域名
 
         申请域名
         
@@ -1049,7 +1049,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_instance_async(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建数据库实例。
         
@@ -1118,7 +1118,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_instance_iam5_async(self, request):
-        """创建数据库实例V5接口，仅支持IAM5的新平面认证方式（AK/SK认证方式）
+        r"""创建数据库实例V5接口，仅支持IAM5的新平面认证方式（AK/SK认证方式）
 
         创建数据库实例V5接口，仅支持IAM5的新平面认证方式（AK/SK认证方式）
         
@@ -1187,7 +1187,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_manual_backup_async(self, request):
-        """创建手动备份
+        r"""创建手动备份
 
         创建手动备份。
         
@@ -1254,7 +1254,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_rd_sfor_my_sql_proxy_async(self, request):
-        """开启数据库代理
+        r"""开启数据库代理
 
         开启数据库代理。
         
@@ -1323,7 +1323,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_restore_instance_async(self, request):
-        """恢复到新实例
+        r"""恢复到新实例
 
         恢复到新实例。
         
@@ -1390,7 +1390,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_sql_limit_async(self, request):
-        """新增SQL限流
+        r"""新增SQL限流
 
         新增SQL限流
         
@@ -1457,7 +1457,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_xel_log_download_async(self, request):
-        """获取扩展日志下载信息
+        r"""获取扩展日志下载信息
 
         获取扩展日志下载信息
         
@@ -1526,7 +1526,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_configuration_async(self, request):
-        """删除参数模板
+        r"""删除参数模板
 
         删除参数模板。
         
@@ -1593,7 +1593,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_disaster_recovery_async(self, request):
-        """解除实例容灾关系接口
+        r"""解除实例容灾关系接口
 
         解除实例容灾关系接口
         
@@ -1662,7 +1662,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_instance_async(self, request):
-        """删除数据库实例
+        r"""删除数据库实例
 
         删除数据库实例。
         
@@ -1729,7 +1729,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_job_async(self, request):
-        """删除即时任务
+        r"""删除即时任务
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1793,7 +1793,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_log_lts_configs_async(self, request):
-        """delete_log_lts_configs
+        r"""delete_log_lts_configs
 
         解除LTS配置信息
         
@@ -1862,7 +1862,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_manual_backup_async(self, request):
-        """删除手动备份
+        r"""删除手动备份
 
         删除手动备份。
         
@@ -1929,7 +1929,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_postgresql_hba_conf_async(self, request):
-        """删除pg_hba.conf文件的单个或多个配置
+        r"""删除pg_hba.conf文件的单个或多个配置
 
         删除pg_hba.conf文件的单个或多个配置，以priority做唯一标识
         
@@ -1996,7 +1996,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_rd_sfor_my_sql_proxy_async(self, request):
-        """关闭数据库代理
+        r"""关闭数据库代理
 
         关闭数据库代理。
         
@@ -2065,7 +2065,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_sql_limit_async(self, request):
-        """删除SQL限流
+        r"""删除SQL限流
 
         删除SQL限流
         
@@ -2132,7 +2132,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def download_errorlog_async(self, request):
-        """获取错误日志下载链接
+        r"""获取错误日志下载链接
 
         获取错误日志下载链接。
         
@@ -2199,7 +2199,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def download_slowlog_async(self, request):
-        """获取慢日志下载链接
+        r"""获取慢日志下载链接
 
         获取慢日志下载链接。
         
@@ -2268,7 +2268,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def enable_configuration_async(self, request):
-        """应用参数模板
+        r"""应用参数模板
 
         应用参数模板。
         
@@ -2337,7 +2337,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_auditlogs_async(self, request):
-        """获取审计日志列表
+        r"""获取审计日志列表
 
         获取审计日志列表。
         
@@ -2412,7 +2412,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_backups_async(self, request):
-        """获取备份列表
+        r"""获取备份列表
 
         获取备份列表。
         
@@ -2493,7 +2493,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_collations_async(self, request):
-        """查询SQLServer可用字符集
+        r"""查询SQLServer可用字符集
 
         查询SQLServer可用字符集
         
@@ -2558,7 +2558,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_configurations_async(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -2623,7 +2623,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_datastores_async(self, request):
-        """查询数据库引擎的版本
+        r"""查询数据库引擎的版本
 
         查询数据库引擎的版本。
         
@@ -2690,7 +2690,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_dr_infos_async(self, request):
-        """查询容灾管理列表
+        r"""查询容灾管理列表
 
         查询容灾管理列表。
         
@@ -2757,7 +2757,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_dr_relations_async(self, request):
-        """批量查询容灾实例信息
+        r"""批量查询容灾实例信息
 
         批量查询容灾实例信息
         
@@ -2822,7 +2822,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_engine_flavors_async(self, request):
-        """查询实例可变更规格
+        r"""查询实例可变更规格
 
         查询实例可变更规格
         
@@ -2901,7 +2901,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_error_logs_async(self, request):
-        """查询数据库错误日志
+        r"""查询数据库错误日志
 
         查询数据库错误日志。
         
@@ -2978,7 +2978,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_error_logs_new_async(self, request):
-        """查询数据库错误日志
+        r"""查询数据库错误日志
 
         查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
         
@@ -3055,7 +3055,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_errorlog_for_lts_async(self, request):
-        """list_errorlog_for_lts
+        r"""list_errorlog_for_lts
 
         查询实例的错误日志数据。
         
@@ -3124,7 +3124,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        """查询数据库规格
+        r"""查询数据库规格
 
         查询数据库规格。
         
@@ -3197,7 +3197,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_flavors_resize_async(self, request):
-        """查询数据库可变更规格接口
+        r"""查询数据库可变更规格接口
 
         查询数据库可变更规格接口
         
@@ -3264,7 +3264,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_history_database_async(self, request):
-        """查询指定时间点可恢复的库
+        r"""查询指定时间点可恢复的库
 
         查询指定时间点可恢复的库
         
@@ -3333,7 +3333,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_inspection_histories_async(self, request):
-        """list_inspection_histories
+        r"""list_inspection_histories
 
         查询实例大版本升级检查历史。
         
@@ -3412,7 +3412,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_instance_diagnosis_async(self, request):
-        """获取诊断后的实例数量
+        r"""获取诊断后的实例数量
 
         获取诊断后的实例数量
         
@@ -3477,7 +3477,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_instance_param_histories_async(self, request):
-        """查询实例参数修改历史
+        r"""查询实例参数修改历史
 
         实例参数修改历史。
         
@@ -3552,7 +3552,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_instance_tags_async(self, request):
-        """查询实例标签
+        r"""查询实例标签
 
         查询实例标签。
         
@@ -3619,7 +3619,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_instances_async(self, request):
-        """查询数据库实例列表
+        r"""查询数据库实例列表
 
         查询数据库实例列表。
         
@@ -3704,7 +3704,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_instances_info_diagnosis_async(self, request):
-        """获取指定诊断项的诊断结果
+        r"""获取指定诊断项的诊断结果
 
         获取指定诊断项的诊断结果
         
@@ -3775,7 +3775,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_instances_support_fast_restore_async(self, request):
-        """获取实例是否能使用极速恢复
+        r"""获取实例是否能使用极速恢复
 
         批量获取实例是否能在库表恢复时使用极速恢复。
         
@@ -3844,7 +3844,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_job_info_async(self, request):
-        """获取指定ID的任务信息
+        r"""获取指定ID的任务信息
 
         获取指定ID的任务信息。
         
@@ -3911,7 +3911,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_job_info_detail_async(self, request):
-        """获取指定实例和时间范围的任务信息（SQL Server）
+        r"""获取指定实例和时间范围的任务信息（SQL Server）
 
         获取指定实例和时间范围的任务信息（SQL Server）。
         
@@ -3982,7 +3982,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_log_lts_configs_async(self, request):
-        """list_log_lts_configs
+        r"""list_log_lts_configs
 
         获取LTS配置信息
         
@@ -4063,7 +4063,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_off_site_backups_async(self, request):
-        """查询跨区域备份列表
+        r"""查询跨区域备份列表
 
         查询跨区域备份列表。
         
@@ -4142,7 +4142,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_off_site_instances_async(self, request):
-        """查询跨区域备份实例列表
+        r"""查询跨区域备份实例列表
 
         查询跨区域备份实例列表。
         
@@ -4211,7 +4211,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_off_site_restore_times_async(self, request):
-        """查询跨区域备份可恢复时间段
+        r"""查询跨区域备份可恢复时间段
 
         查询跨区域备份可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
@@ -4281,7 +4281,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_hba_info_async(self, request):
-        """查询实例的pg_hba.conf文件配置
+        r"""查询实例的pg_hba.conf文件配置
 
         查询实例的pg_hba.conf文件配置
         
@@ -4346,7 +4346,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_hba_info_history_async(self, request):
-        """查询实例的pg_hba.conf文件修改历史
+        r"""查询实例的pg_hba.conf文件修改历史
 
         查询实例的pg_hba.conf文件修改历史
         
@@ -4415,7 +4415,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_list_history_tables_async(self, request):
-        """查询指定时间点可恢复的表(PostgreSQL)
+        r"""查询指定时间点可恢复的表(PostgreSQL)
 
         查询指定时间点可恢复的表(PostgreSQL)
         
@@ -4484,7 +4484,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_predefined_tag_async(self, request):
-        """list_predefined_tag
+        r"""list_predefined_tag
 
         查询预定义标签
         
@@ -4549,7 +4549,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签。
         
@@ -4614,7 +4614,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_rd_sfor_my_sql_proxy_async(self, request):
-        """查询数据库代理信息列表
+        r"""查询数据库代理信息列表
 
         查询数据库代理信息列表。
         
@@ -4681,7 +4681,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_rd_sfor_mysql_proxy_flavors_async(self, request):
-        """查询数据库代理规格信息
+        r"""查询数据库代理规格信息
 
         查询数据库代理规格信息。
         
@@ -4752,7 +4752,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_read_only_replay_database_async(self, request):
-        """查询只读实例可恢复到主实例的库
+        r"""查询只读实例可恢复到主实例的库
 
         查询只读实例可恢复到主实例的库
         
@@ -4817,7 +4817,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_recycle_instances_async(self, request):
-        """查询回收站
+        r"""查询回收站
 
         查询回收站实例信息
         
@@ -4886,7 +4886,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_restore_times_async(self, request):
-        """查询可恢复时间段
+        r"""查询可恢复时间段
 
         查询可恢复时间段。
         如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
@@ -4956,7 +4956,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_share_backups_async(self, request):
-        """查询共享备份列表
+        r"""查询共享备份列表
 
         查询共享备份列表
         
@@ -5029,7 +5029,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_simplified_instances_async(self, request):
-        """list_simplified_instances
+        r"""list_simplified_instances
 
         获取指定实例详情
         
@@ -5096,7 +5096,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slow_log_file_async(self, request):
-        """查询慢日志文件列表
+        r"""查询慢日志文件列表
 
         查询慢日志文件列表。
         调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
@@ -5168,7 +5168,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slow_log_statistics_for_lts_async(self, request):
-        """list_slow_log_statistics_for_lts
+        r"""list_slow_log_statistics_for_lts
 
         查询实例慢日志的统计数据。
         
@@ -5237,7 +5237,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slow_logs_async(self, request):
-        """查询数据库慢日志
+        r"""查询数据库慢日志
 
         查询数据库慢日志。
         
@@ -5314,7 +5314,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slow_logs_new_async(self, request):
-        """查询数据库慢日志
+        r"""查询数据库慢日志
 
         查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
         
@@ -5391,7 +5391,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slowlog_for_lts_async(self, request):
-        """list_slowlog_for_lts
+        r"""list_slowlog_for_lts
 
         查询实例的慢日志数据。
         
@@ -5460,7 +5460,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slowlog_statistics_async(self, request):
-        """获取慢日志统计信息
+        r"""获取慢日志统计信息
 
         获取慢日志统计信息
         
@@ -5539,7 +5539,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_sql_limit_async(self, request):
-        """查询SQL限流列表
+        r"""查询SQL限流列表
 
         查询SQL限流列表
         
@@ -5610,7 +5610,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_ssl_cert_download_link_async(self, request):
-        """获取SSL证书下载地址
+        r"""获取SSL证书下载地址
 
         获取SSL证书下载地址
         
@@ -5677,7 +5677,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_storage_types_async(self, request):
-        """查询数据库磁盘类型
+        r"""查询数据库磁盘类型
 
         查询数据库磁盘类型。
         
@@ -5748,7 +5748,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_update_backup_enhance_policy_async(self, request):
-        """查询高级备份策略
+        r"""查询高级备份策略
 
         查询高级备份策略，可查看自定义稀疏备份等
         
@@ -5815,7 +5815,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_upgrade_histories_async(self, request):
-        """list_upgrade_histories
+        r"""list_upgrade_histories
 
         查询实例大版本升级历史信息。
         
@@ -5890,7 +5890,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_volume_info_async(self, request):
-        """查询实例的磁盘信息
+        r"""查询实例的磁盘信息
 
         查询实例的磁盘信息
         
@@ -5957,7 +5957,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_xellog_files_async(self, request):
-        """查询扩展日志文件列表
+        r"""查询扩展日志文件列表
 
         查询扩展日志文件列表。
         查询扩展日志文件列表，可以调用接口/v3/{project_id}/instances/{instance_id}/xellog-download 获取扩展日志下载链接
@@ -6029,7 +6029,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def migrate_follower_async(self, request):
-        """迁移主备实例的备机
+        r"""迁移主备实例的备机
 
         迁移主备实例的备机
         
@@ -6098,7 +6098,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def modify_postgresql_hba_conf_async(self, request):
-        """修改pg_hba.conf文件的单个或多个配置
+        r"""修改pg_hba.conf文件的单个或多个配置
 
         修改/新增pg_hba.conf文件的单个或多个配置，以priority做唯一标识，priority不存在的新增，存在的修改
         
@@ -6165,7 +6165,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def modify_rd_sfor_my_sql_proxy_route_mode_async(self, request):
-        """设置读写分离路由模式
+        r"""设置读写分离路由模式
 
         设置读写分离路由模式。
         
@@ -6236,7 +6236,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def restore_exist_instance_async(self, request):
-        """恢复到已有实例
+        r"""恢复到已有实例
 
         恢复到已有实例。
         
@@ -6303,7 +6303,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def restore_log_replay_database_async(self, request):
-        """延迟库只读，恢复库到主实例
+        r"""延迟库只读，恢复库到主实例
 
         延迟库只读，恢复库到主实例
         
@@ -6372,7 +6372,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def restore_tables_async(self, request):
-        """表级时间点恢复(MySQL)
+        r"""表级时间点恢复(MySQL)
 
         表级时间点恢复(MySQL)。
         
@@ -6441,7 +6441,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def restore_tables_new_async(self, request):
-        """表级时间点恢复(MySQL)
+        r"""表级时间点恢复(MySQL)
 
         表级时间点恢复(MySQL)。
         
@@ -6510,7 +6510,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def restore_to_existing_instance_async(self, request):
-        """恢复到已有实例
+        r"""恢复到已有实例
 
         恢复到已有实例。
         
@@ -6577,7 +6577,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_auditlog_policy_async(self, request):
-        """设置审计日志策略
+        r"""设置审计日志策略
 
         设置审计日志策略。
         
@@ -6646,7 +6646,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_auto_enlarge_policy_async(self, request):
-        """设置自动扩容策略
+        r"""设置自动扩容策略
 
         设置实例存储空间自动扩容策略，按扩容量扣除存储费用。
         可用存储空间小于设置值或者10GB时，自动扩容当前存储空间的15%（非10倍数向上取整，账户余额不足，会导致自动扩容失败）。
@@ -6717,7 +6717,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_auto_upgrade_policy_async(self, request):
-        """设置实例内核小版本自动升级策略
+        r"""设置实例内核小版本自动升级策略
 
         设置实例内核小版本自动升级策略
         
@@ -6786,7 +6786,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_backup_policy_async(self, request):
-        """设置自动备份策略
+        r"""设置自动备份策略
 
         设置自动备份策略。
         
@@ -6855,7 +6855,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_binlog_clear_policy_async(self, request):
-        """设置binlog本地保留时长
+        r"""设置binlog本地保留时长
 
         修改指定实例的binlog本地保留时长。
         
@@ -6924,7 +6924,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_instances_proxy_restart_async(self, request):
-        """重启数据库代理
+        r"""重启数据库代理
 
         重启数据库代理。
         
@@ -6993,7 +6993,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_log_lts_configs_async(self, request):
-        """set_log_lts_configs
+        r"""set_log_lts_configs
 
         关联LTS配置信息
         
@@ -7062,7 +7062,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_off_site_backup_policy_async(self, request):
-        """设置跨区域备份策略
+        r"""设置跨区域备份策略
 
         设置跨区域备份策略。
         
@@ -7131,7 +7131,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_second_level_monitor_async(self, request):
-        """设置秒级监控策略
+        r"""设置秒级监控策略
 
         设置实例秒级监控策略，约五分钟后生效，对于1秒监控和5秒监控，计费方式为按需付费（每小时扣费一次）。
         设置只读实例秒级监控与主实例互不影响。
@@ -7202,7 +7202,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_security_group_async(self, request):
-        """修改安全组
+        r"""修改安全组
 
         修改安全组
         
@@ -7271,7 +7271,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_sensitive_slow_log_async(self, request):
-        """慢日志敏感信息的开关
+        r"""慢日志敏感信息的开关
 
         V3慢日志敏感信息的开关
         
@@ -7340,7 +7340,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_auditlog_download_link_async(self, request):
-        """生成审计日志下载链接
+        r"""生成审计日志下载链接
 
         生成审计日志下载链接。
         
@@ -7409,7 +7409,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_auditlog_policy_async(self, request):
-        """查询审计日志策略
+        r"""查询审计日志策略
 
         查询审计日志策略。
         
@@ -7476,7 +7476,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_auto_enlarge_policy_async(self, request):
-        """查询自动扩容策略
+        r"""查询自动扩容策略
 
         查询实例存储空间自动扩容策略
         
@@ -7543,7 +7543,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_auto_upgrade_policy_async(self, request):
-        """查询实例内核小版本自动升级策略
+        r"""查询实例内核小版本自动升级策略
 
         查询实例内核小版本自动升级策略
         
@@ -7610,7 +7610,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_available_version_async(self, request):
-        """show_available_version
+        r"""show_available_version
 
         查询实例可升级的目标版本
         
@@ -7677,7 +7677,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_backup_download_link_async(self, request):
-        """获取备份下载链接
+        r"""获取备份下载链接
 
         获取备份下载链接。
         
@@ -7744,7 +7744,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_backup_policy_async(self, request):
-        """查询自动备份策略
+        r"""查询自动备份策略
 
         查询自动备份策略。
         
@@ -7811,7 +7811,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_binlog_clear_policy_async(self, request):
-        """获取binlog本地保留时长
+        r"""获取binlog本地保留时长
 
         查寻指定实例的binlog本地保留时长。
         
@@ -7878,7 +7878,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_configuration_async(self, request):
-        """获取指定参数模板的参数
+        r"""获取指定参数模板的参数
 
         获取指定参数模板的参数。
         
@@ -7945,7 +7945,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_database_level_database_async(self, request):
-        """查询库级备份包含的库
+        r"""查询库级备份包含的库
 
         查询库级备份包含的库
         
@@ -8014,7 +8014,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_dns_name_async(self, request):
-        """查询实例ipv6域名。
+        r"""查询实例ipv6域名。
 
         查询实例ipv6域名。
         
@@ -8083,7 +8083,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_domain_name_async(self, request):
-        """show_domain_name
+        r"""show_domain_name
 
         查询实例ipv4域名
         
@@ -8152,7 +8152,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_dr_replica_status_async(self, request):
-        """查询跨云容灾复制状态
+        r"""查询跨云容灾复制状态
 
         建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
         
@@ -8219,7 +8219,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_incre_backup_policy1_async(self, request):
-        """获取增备策略
+        r"""获取增备策略
 
         获取增备策略
         
@@ -8284,7 +8284,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_instance_configuration_async(self, request):
-        """获取指定实例的参数模板
+        r"""获取指定实例的参数模板
 
         获取指定实例的参数模板。
         
@@ -8351,7 +8351,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_off_site_backup_policy_async(self, request):
-        """查询跨区域备份策略
+        r"""查询跨区域备份策略
 
         查询跨区域备份策略。
         
@@ -8418,7 +8418,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_quotas_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询当前项目下资源配额情况。
         
@@ -8483,7 +8483,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_recycle_policy_async(self, request):
-        """查询回收站的回收策略。
+        r"""查询回收站的回收策略。
 
         查询回收站的回收策略。
         
@@ -8548,7 +8548,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_replication_status_async(self, request):
-        """获取实例的复制状态。
+        r"""获取实例的复制状态。
 
         获取实例的复制状态。
         
@@ -8615,7 +8615,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_second_level_monitoring_async(self, request):
-        """查询秒级监控策略
+        r"""查询秒级监控策略
 
         查询实例秒级监控策略
         
@@ -8682,7 +8682,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_storage_used_space_async(self, request):
-        """查询实例磁盘空间使用量
+        r"""查询实例磁盘空间使用量
 
         查询实例磁盘空间使用量。
         
@@ -8747,7 +8747,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_tde_status_async(self, request):
-        """根据实例id查询sqlserver TDE状态
+        r"""根据实例id查询sqlserver TDE状态
 
         根据实例id查询sqlserver TDE状态
         
@@ -8812,7 +8812,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_upgrade_db_major_version_status_async(self, request):
-        """show_upgrade_db_major_version_status
+        r"""show_upgrade_db_major_version_status
 
         查询大版本检查状态或升级状态。
         
@@ -8881,7 +8881,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_failover_async(self, request):
-        """手动倒换主备
+        r"""手动倒换主备
 
         手动倒换主备.
         
@@ -8950,7 +8950,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_instance_enlarge_volume_action_async(self, request):
-        """扩容数据库实例的磁盘空间
+        r"""扩容数据库实例的磁盘空间
 
         扩容数据库实例的磁盘空间。
         
@@ -9019,7 +9019,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_instance_reduce_volume_action_async(self, request):
-        """数据库实例的磁盘空间缩容
+        r"""数据库实例的磁盘空间缩容
 
         数据库实例的磁盘空间缩容。
         
@@ -9088,7 +9088,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_instance_restart_action_async(self, request):
-        """重启数据库实例
+        r"""重启数据库实例
 
         重启数据库实例。
         
@@ -9157,7 +9157,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_instance_single_to_ha_action_async(self, request):
-        """单机转主备实例
+        r"""单机转主备实例
 
         单机转主备实例。
         
@@ -9226,7 +9226,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_recycle_policy_async(self, request):
-        """设置回收站策略
+        r"""设置回收站策略
 
         设置回收站策略。
         
@@ -9293,7 +9293,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_resize_flavor_action_async(self, request):
-        """变更数据库实例的规格
+        r"""变更数据库实例的规格
 
         变更数据库实例的规格。
         
@@ -9362,7 +9362,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def startup_instance_async(self, request):
-        """开启实例
+        r"""开启实例
 
         停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
         
@@ -9429,7 +9429,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def stop_backup_async(self, request):
-        """停止备份
+        r"""停止备份
 
         停止创建备份
         
@@ -9496,7 +9496,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def stop_instance_async(self, request):
-        """停止实例
+        r"""停止实例
 
         实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
         
@@ -9563,7 +9563,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def switch_sql_limit_async(self, request):
-        """开启/关闭/禁用所有SQL限流
+        r"""开启/关闭/禁用所有SQL限流
 
         开启/关闭/禁用所有SQL限流
         
@@ -9630,7 +9630,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def switch_ssl_async(self, request):
-        """设置SSL数据加密
+        r"""设置SSL数据加密
 
         设置SSL数据加密。
         
@@ -9699,7 +9699,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def unlock_node_readonly_status_async(self, request):
-        """解除节点只读状态接口
+        r"""解除节点只读状态接口
 
         解除节点只读状态接口
         
@@ -9768,7 +9768,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_configuration_async(self, request):
-        """修改参数模板参数
+        r"""修改参数模板参数
 
         修改参数模板参数。
         
@@ -9837,7 +9837,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_data_ip_async(self, request):
-        """修改内网地址
+        r"""修改内网地址
 
         修改内网地址
         
@@ -9906,7 +9906,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_dns_name_async(self, request):
-        """修改域名
+        r"""修改域名
 
         修改域名
         
@@ -9975,7 +9975,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_incre_backup_policy1_async(self, request):
-        """修改增备策略
+        r"""修改增备策略
 
         修改增备策略
         
@@ -10042,7 +10042,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_instance_configuration_async(self, request):
-        """修改指定实例的参数
+        r"""修改指定实例的参数
 
         修改指定实例的参数。
         
@@ -10111,7 +10111,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_instance_configuration_async_async(self, request):
-        """修改指定实例的参数
+        r"""修改指定实例的参数
 
         修改指定实例的参数。
         
@@ -10180,7 +10180,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_instance_name_async(self, request):
-        """修改实例名称
+        r"""修改实例名称
 
         修改实例名称。
         
@@ -10249,7 +10249,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_port_async(self, request):
-        """修改数据库端口
+        r"""修改数据库端口
 
         修改数据库端口
         
@@ -10318,7 +10318,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_postgresql_instance_alias_async(self, request):
-        """修改实例备注信息
+        r"""修改实例备注信息
 
         修改指定数据库实例的备注信息。
         
@@ -10387,7 +10387,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_sql_limit_async(self, request):
-        """修改SQL限流
+        r"""修改SQL限流
 
         修改SQL限流
         
@@ -10454,7 +10454,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_tde_status_async(self, request):
-        """sqlserverTDE开关
+        r"""sqlserverTDE开关
 
         sqlserverTDE开关。
         
@@ -10521,7 +10521,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_to_period_async(self, request):
-        """RDS实例按需转包周期
+        r"""RDS实例按需转包周期
 
         RDS实例按需转包周期
         
@@ -10590,7 +10590,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def upgrade_db_major_version_async(self, request):
-        """upgrade_db_major_version
+        r"""upgrade_db_major_version
 
         PostgreSQL数据库升级大版本。
         
@@ -10657,7 +10657,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def upgrade_db_major_version_pre_check_async(self, request):
-        """upgrade_db_major_version_pre_check
+        r"""upgrade_db_major_version_pre_check
 
         大版本升级前进行升级检查。
         
@@ -10726,7 +10726,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def upgrade_db_version_async(self, request):
-        """升级内核小版本
+        r"""升级内核小版本
 
         对实例进行小版本升级。
         
@@ -10795,7 +10795,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def upgrade_db_version_new_async(self, request):
-        """升级内核小版本
+        r"""升级内核小版本
 
         对实例进行小版本升级。
         
@@ -10864,7 +10864,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_api_version_async(self, request):
-        """查询API版本列表
+        r"""查询API版本列表
 
         查询API版本列表。
         
@@ -10927,7 +10927,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_api_version_new_async(self, request):
-        """查询API版本列表
+        r"""查询API版本列表
 
         查询API版本列表。
         
@@ -10990,7 +10990,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_api_version_async(self, request):
-        """查询指定的API版本信息
+        r"""查询指定的API版本信息
 
         查询指定的API版本信息。
         
@@ -11055,7 +11055,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def execute_privilege_database_user_role_async(self, request):
-        """授予用户角色
+        r"""授予用户角色
 
         授予用户角色
         
@@ -11122,7 +11122,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def execute_revoke_database_user_role_async(self, request):
-        """撤回用户角色
+        r"""撤回用户角色
 
         撤回用户角色
         
@@ -11189,7 +11189,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_database_user_role_async(self, request):
-        """查询数据库角色信息
+        r"""查询数据库角色信息
 
         查询数据库角色信息
         
@@ -11256,7 +11256,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def revoke_postgresql_db_privilege_async(self, request):
-        """解除数据库帐号权限
+        r"""解除数据库帐号权限
 
         解除数据库帐号权限
         
@@ -11323,7 +11323,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_database_owner_async(self, request):
-        """修改数据库owner
+        r"""修改数据库owner
 
         修改数据库owner
         
@@ -11390,7 +11390,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def allow_db_user_privilege_async(self, request):
-        """授权数据库帐号
+        r"""授权数据库帐号
 
         授权数据库帐号。
         
@@ -11459,7 +11459,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_database_async(self, request):
-        """创建数据库
+        r"""创建数据库
 
         创建数据库。
         
@@ -11528,7 +11528,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_db_user_async(self, request):
-        """创建数据库用户
+        r"""创建数据库用户
 
         在指定实例中创建数据库帐号。
         
@@ -11597,7 +11597,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_database_async(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除数据库。
         
@@ -11666,7 +11666,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_db_user_async(self, request):
-        """删除数据库用户
+        r"""删除数据库用户
 
         删除数据库用户。
         
@@ -11735,7 +11735,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_authorized_databases_async(self, request):
-        """查询指定用户的已授权数据库
+        r"""查询指定用户的已授权数据库
 
         查询指定用户的已授权数据库。
         
@@ -11808,7 +11808,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_authorized_db_users_async(self, request):
-        """查询指定数据库的已授权用户
+        r"""查询指定数据库的已授权用户
 
         查询指定数据库的已授权用户。
         
@@ -11881,7 +11881,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_databases_async(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询数据库列表。
         
@@ -11952,7 +11952,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_db_users_async(self, request):
-        """查询数据库用户列表
+        r"""查询数据库用户列表
 
         查询数据库用户列表。
         
@@ -12023,7 +12023,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def reset_pwd_async(self, request):
-        """重置数据库密码
+        r"""重置数据库密码
 
         重置数据库密码.
         
@@ -12092,7 +12092,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def revoke_async(self, request):
-        """解除数据库帐号权限
+        r"""解除数据库帐号权限
 
         解除数据库帐号权限。
         
@@ -12161,7 +12161,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_db_user_pwd_async(self, request):
-        """设置数据库账号密码
+        r"""设置数据库账号密码
 
         设置数据库账号密码
         
@@ -12230,7 +12230,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_read_only_switch_async(self, request):
-        """设置数据库用户只读参数
+        r"""设置数据库用户只读参数
 
         根据业务需求，设置数据库用户只读
         
@@ -12299,7 +12299,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_database_async(self, request):
-        """修改指定实例的数据库备注
+        r"""修改指定实例的数据库备注
 
         修改指定实例中的数据库备注。
         
@@ -12368,7 +12368,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_db_user_comment_async(self, request):
-        """修改数据库用户名备注
+        r"""修改数据库用户名备注
 
         修改数据库用户名备注
         
@@ -12437,7 +12437,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_host_privilege_async(self, request):
-        """修改实例下用户host信息
+        r"""修改实例下用户host信息
 
         修改实例下用户host信息。
         
@@ -12504,7 +12504,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def allow_db_privilege_async(self, request):
-        """授权数据库帐号
+        r"""授权数据库帐号
 
         在指定实例的数据库中, 设置帐号的权限。
         
@@ -12573,7 +12573,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def change_proxy_scale_async(self, request):
-        """数据库代理规格变更
+        r"""数据库代理规格变更
 
         数据库代理实例进行规格变更。
         
@@ -12644,7 +12644,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def change_the_delay_threshold_async(self, request):
-        """修改读写分离阈值
+        r"""修改读写分离阈值
 
         修改指定实例的读写分离延时阈值。
         
@@ -12713,7 +12713,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_postgresql_database_async(self, request):
-        """创建数据库
+        r"""创建数据库
 
         在指定实例中创建数据库。
         
@@ -12782,7 +12782,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_postgresql_database_schema_async(self, request):
-        """创建数据库SCHEMA
+        r"""创建数据库SCHEMA
 
         在指定实例的数据库中, 创建数据库schema。
         
@@ -12851,7 +12851,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_postgresql_db_user_async(self, request):
-        """创建数据库用户
+        r"""创建数据库用户
 
         在指定实例中创建数据库用户。
         
@@ -12920,7 +12920,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_postgresql_extension_async(self, request):
-        """创建插件
+        r"""创建插件
 
         在指定数据库上创建插件。
         
@@ -12989,7 +12989,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_postgresql_database_async(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除数据库。
         
@@ -13058,7 +13058,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_postgresql_db_user_async(self, request):
-        """删除数据库用户
+        r"""删除数据库用户
 
         删除数据库用户。
         
@@ -13127,7 +13127,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_postgresql_extension_async(self, request):
-        """删除插件
+        r"""删除插件
 
         在指定数据库上删除插件。
         
@@ -13196,7 +13196,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_database_schemas_async(self, request):
-        """查询数据库SCHEMA列表
+        r"""查询数据库SCHEMA列表
 
         查询指定实例的数据库SCHEMA列表。
         
@@ -13269,7 +13269,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_databases_async(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询指定实例中的数据库列表。
         
@@ -13342,7 +13342,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_db_user_paginated_async(self, request):
-        """查询数据库用户列表
+        r"""查询数据库用户列表
 
         在指定实例中查询数据库用户列表。
         
@@ -13413,7 +13413,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_postgresql_extension_async(self, request):
-        """查询插件
+        r"""查询插件
 
         获取指定数据库的插件信息。
         
@@ -13486,7 +13486,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def search_query_scale_compute_flavors_async(self, request):
-        """查询数据库代理可变更的规格
+        r"""查询数据库代理可变更的规格
 
         查询数据库代理可变更的规格信息。
         
@@ -13559,7 +13559,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def search_query_scale_flavors_async(self, request):
-        """查询数据库代理可变更的规格
+        r"""查询数据库代理可变更的规格
 
         查询数据库代理可变更的规格信息。
         
@@ -13628,7 +13628,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_database_user_privilege_async(self, request):
-        """设置数据库用户权限
+        r"""设置数据库用户权限
 
         设置数据库用户权限：只读或可读写。
         
@@ -13697,7 +13697,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_postgresql_db_user_pwd_async(self, request):
-        """重置数据库帐号密码
+        r"""重置数据库帐号密码
 
         重置指定数据库帐号的密码。
         
@@ -13766,7 +13766,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_information_about_database_proxy_async(self, request):
-        """查询数据库代理信息
+        r"""查询数据库代理信息
 
         查询指定实例的数据库代理详细信息。
         
@@ -13833,7 +13833,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_postgresql_param_value_async(self, request):
-        """获取实例指定参数的值
+        r"""获取实例指定参数的值
 
         获取实例指定参数的值。
         
@@ -13902,7 +13902,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_recovery_time_window_async(self, request):
-        """查询wal日志恢复时间窗
+        r"""查询wal日志恢复时间窗
 
         查询wal日志恢复时间窗
         
@@ -13969,7 +13969,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_replay_delay_status_async(self, request):
-        """获取wal日志延迟回放状态
+        r"""获取wal日志延迟回放状态
 
         获取wal日志延迟回放状态
         
@@ -14036,7 +14036,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def start_database_proxy_async(self, request):
-        """开启数据库代理
+        r"""开启数据库代理
 
         为指定实例开启数据库代理。
         
@@ -14105,7 +14105,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def stop_database_proxy_async(self, request):
-        """关闭数据库代理
+        r"""关闭数据库代理
 
         为指定实例关闭数据库代理。
         
@@ -14172,7 +14172,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def switch_log_replay_async(self, request):
-        """中止/恢复wal日志回放
+        r"""中止/恢复wal日志回放
 
         中止/恢复wal日志回放
         
@@ -14241,7 +14241,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_db_user_privilege_async(self, request):
-        """update_db_user_privilege
+        r"""update_db_user_privilege
 
         数据库帐号授权。
         
@@ -14308,7 +14308,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_postgresql_database_async(self, request):
-        """修改指定实例的数据库备注
+        r"""修改指定实例的数据库备注
 
         修改指定实例中的数据库备注。
         
@@ -14377,7 +14377,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_postgresql_db_user_comment_async(self, request):
-        """修改数据库用户名备注
+        r"""修改数据库用户名备注
 
         修改数据库用户名备注
         
@@ -14446,7 +14446,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_postgresql_extension_async(self, request):
-        """更新插件
+        r"""更新插件
 
         在指定数据库上更新插件。
         
@@ -14515,7 +14515,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_postgresql_parameter_value_async(self, request):
-        """修改实例指定参数的值
+        r"""修改实例指定参数的值
 
         修改实例指定参数的值。
         
@@ -14586,7 +14586,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_read_weight_async(self, request):
-        """修改读写分离权重
+        r"""修改读写分离权重
 
         修改指定实例的读写分离权重。
         
@@ -14655,7 +14655,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def allow_sqlserver_db_user_privilege_async(self, request):
-        """授权数据库帐号
+        r"""授权数据库帐号
 
         授权数据库帐号。
         
@@ -14724,7 +14724,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def batch_add_msdtcs_async(self, request):
-        """添加MSDTC
+        r"""添加MSDTC
 
         添加MSDTC相关主机host地址
         
@@ -14791,7 +14791,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def copy_database_async(self, request):
-        """复制数据库
+        r"""复制数据库
 
         复制数据库
         
@@ -14858,7 +14858,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_sqlserver_database_async(self, request):
-        """创建数据库
+        r"""创建数据库
 
         创建数据库。
         
@@ -14927,7 +14927,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def create_sqlserver_db_user_async(self, request):
-        """创建数据库用户
+        r"""创建数据库用户
 
         创建数据库用户。
         
@@ -14996,7 +14996,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_msdtc_local_host_async(self, request):
-        """删除MSDTC
+        r"""删除MSDTC
 
         删除MSDTC相关主机host地址
         
@@ -15063,7 +15063,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_sqlserver_database_async(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除数据库。
         
@@ -15134,7 +15134,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_sqlserver_database_ex_async(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除数据库。
         
@@ -15205,7 +15205,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_sqlserver_db_user_async(self, request):
-        """删除数据库用户
+        r"""删除数据库用户
 
         删除数据库用户。
         
@@ -15274,7 +15274,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_authorized_sqlserver_db_users_async(self, request):
-        """查询指定数据库的已授权用户
+        r"""查询指定数据库的已授权用户
 
         查询指定数据库的已授权用户。
         
@@ -15347,7 +15347,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_msdtc_hosts_async(self, request):
-        """查询MSDTC的hosts信息
+        r"""查询MSDTC的hosts信息
 
         查询MSDTC的hosts信息
         
@@ -15416,7 +15416,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_sqlserver_databases_async(self, request):
-        """查询数据库列表
+        r"""查询数据库列表
 
         查询数据库列表。
         
@@ -15491,7 +15491,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_sqlserver_db_users_async(self, request):
-        """查询数据库用户列表
+        r"""查询数据库用户列表
 
         查询数据库用户列表。
         
@@ -15562,7 +15562,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def modify_collation_async(self, request):
-        """修改实例字符集
+        r"""修改实例字符集
 
         修改实例字符集。
         
@@ -15631,7 +15631,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def revoke_sqlserver_db_user_privilege_async(self, request):
-        """解除数据库帐号权限
+        r"""解除数据库帐号权限
 
         解除数据库帐号权限。
         
@@ -15700,7 +15700,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_instances_db_shrink_async(self, request):
-        """收缩数据库日志
+        r"""收缩数据库日志
 
         收缩数据库日志
         
@@ -15767,7 +15767,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_instances_new_db_shrink_async(self, request):
-        """收缩数据库日志
+        r"""收缩数据库日志
 
         收缩数据库日志
         

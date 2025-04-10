@@ -27,7 +27,7 @@ class SubjectAlternativeName:
     }
 
     def __init__(self, type=None, value=None):
-        """SubjectAlternativeName
+        r"""SubjectAlternativeName
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SubjectAlternativeName:
 
     @property
     def type(self):
-        """Gets the type of this SubjectAlternativeName.
+        r"""Gets the type of this SubjectAlternativeName.
 
         备用名称类型，当前仅支持DNS、IP、EMAIL、URI。 - **DNS** - **IP** - **EMAIL** - **URI**
 
@@ -59,7 +59,7 @@ class SubjectAlternativeName:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SubjectAlternativeName.
+        r"""Sets the type of this SubjectAlternativeName.
 
         备用名称类型，当前仅支持DNS、IP、EMAIL、URI。 - **DNS** - **IP** - **EMAIL** - **URI**
 
@@ -70,7 +70,7 @@ class SubjectAlternativeName:
 
     @property
     def value(self):
-        """Gets the value of this SubjectAlternativeName.
+        r"""Gets the value of this SubjectAlternativeName.
 
         对应备用名称类型的值。   - DNS类型，长度为不超过253；   - IP类型，长度不超过39，支持IPV4、IPV6；   - EMAIL类型，长度不超过256；   - URI类型，长度不超过253。
 
@@ -81,7 +81,7 @@ class SubjectAlternativeName:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SubjectAlternativeName.
+        r"""Sets the value of this SubjectAlternativeName.
 
         对应备用名称类型的值。   - DNS类型，长度为不超过253；   - IP类型，长度不超过39，支持IPV4、IPV6；   - EMAIL类型，长度不超过256；   - URI类型，长度不超过253。
 

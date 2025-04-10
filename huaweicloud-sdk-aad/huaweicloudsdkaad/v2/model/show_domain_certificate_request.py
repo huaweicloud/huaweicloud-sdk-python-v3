@@ -25,7 +25,7 @@ class ShowDomainCertificateRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ShowDomainCertificateRequest
+        r"""ShowDomainCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDomainCertificateRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainCertificateRequest.
+        r"""Gets the domain_id of this ShowDomainCertificateRequest.
 
         域名id
 
@@ -53,7 +53,7 @@ class ShowDomainCertificateRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainCertificateRequest.
+        r"""Sets the domain_id of this ShowDomainCertificateRequest.
 
         域名id
 

@@ -27,7 +27,7 @@ class UpdateMyActionTemplateRequest:
     }
 
     def __init__(self, template_name=None, body=None):
-        """UpdateMyActionTemplateRequest
+        r"""UpdateMyActionTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMyActionTemplateRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this UpdateMyActionTemplateRequest.
+        r"""Gets the template_name of this UpdateMyActionTemplateRequest.
 
         模板名称。名称必须以third开头，只能由字母、数字、下划线和中划线组成，长度小于等于32个字符。
 
@@ -60,7 +60,7 @@ class UpdateMyActionTemplateRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this UpdateMyActionTemplateRequest.
+        r"""Sets the template_name of this UpdateMyActionTemplateRequest.
 
         模板名称。名称必须以third开头，只能由字母、数字、下划线和中划线组成，长度小于等于32个字符。
 
@@ -71,7 +71,7 @@ class UpdateMyActionTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMyActionTemplateRequest.
+        r"""Gets the body of this UpdateMyActionTemplateRequest.
 
         :return: The body of this UpdateMyActionTemplateRequest.
         :rtype: :class:`huaweicloudsdkdwr.v3.ThirdTemplateRequestBody`
@@ -80,7 +80,7 @@ class UpdateMyActionTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMyActionTemplateRequest.
+        r"""Sets the body of this UpdateMyActionTemplateRequest.
 
         :param body: The body of this UpdateMyActionTemplateRequest.
         :type body: :class:`huaweicloudsdkdwr.v3.ThirdTemplateRequestBody`

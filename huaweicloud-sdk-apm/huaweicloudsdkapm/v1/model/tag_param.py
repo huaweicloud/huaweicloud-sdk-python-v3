@@ -33,7 +33,7 @@ class TagParam:
     }
 
     def __init__(self, business_id=None, keyword=None, page_enable=None, page_number=None, page_size=None):
-        """TagParam
+        r"""TagParam
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class TagParam:
 
     @property
     def business_id(self):
-        """Gets the business_id of this TagParam.
+        r"""Gets the business_id of this TagParam.
 
         应用id。
 
@@ -81,7 +81,7 @@ class TagParam:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this TagParam.
+        r"""Sets the business_id of this TagParam.
 
         应用id。
 
@@ -92,7 +92,7 @@ class TagParam:
 
     @property
     def keyword(self):
-        """Gets the keyword of this TagParam.
+        r"""Gets the keyword of this TagParam.
 
         关键字。
 
@@ -103,7 +103,7 @@ class TagParam:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this TagParam.
+        r"""Sets the keyword of this TagParam.
 
         关键字。
 
@@ -114,7 +114,7 @@ class TagParam:
 
     @property
     def page_enable(self):
-        """Gets the page_enable of this TagParam.
+        r"""Gets the page_enable of this TagParam.
 
         是否分页。
 
@@ -125,7 +125,7 @@ class TagParam:
 
     @page_enable.setter
     def page_enable(self, page_enable):
-        """Sets the page_enable of this TagParam.
+        r"""Sets the page_enable of this TagParam.
 
         是否分页。
 
@@ -136,7 +136,7 @@ class TagParam:
 
     @property
     def page_number(self):
-        """Gets the page_number of this TagParam.
+        r"""Gets the page_number of this TagParam.
 
         每页容量。
 
@@ -147,7 +147,7 @@ class TagParam:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this TagParam.
+        r"""Sets the page_number of this TagParam.
 
         每页容量。
 
@@ -158,7 +158,7 @@ class TagParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this TagParam.
+        r"""Gets the page_size of this TagParam.
 
         当前页码。
 
@@ -169,7 +169,7 @@ class TagParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this TagParam.
+        r"""Sets the page_size of this TagParam.
 
         当前页码。
 

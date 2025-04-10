@@ -37,7 +37,7 @@ class LogConfigs:
     }
 
     def __init__(self, id=None, size=None, level=None, rotate_num=None, rotate_period=None, type=None, component=None):
-        """LogConfigs
+        r"""LogConfigs
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class LogConfigs:
 
     @property
     def id(self):
-        """Gets the id of this LogConfigs.
+        r"""Gets the id of this LogConfigs.
 
         数据库保存的主键，不需要关注此字段。
 
@@ -94,7 +94,7 @@ class LogConfigs:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LogConfigs.
+        r"""Sets the id of this LogConfigs.
 
         数据库保存的主键，不需要关注此字段。
 
@@ -105,7 +105,7 @@ class LogConfigs:
 
     @property
     def size(self):
-        """Gets the size of this LogConfigs.
+        r"""Gets the size of this LogConfigs.
 
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000。
 
@@ -116,7 +116,7 @@ class LogConfigs:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LogConfigs.
+        r"""Sets the size of this LogConfigs.
 
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000。
 
@@ -127,7 +127,7 @@ class LogConfigs:
 
     @property
     def level(self):
-        """Gets the level of this LogConfigs.
+        r"""Gets the level of this LogConfigs.
 
         - 当type为LTS时，应用级日志可配置为On或Off；系统级日志可配置为Off/Error/Warning/Info/Debug； - 当type为local时，无需配置level。
 
@@ -138,7 +138,7 @@ class LogConfigs:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LogConfigs.
+        r"""Sets the level of this LogConfigs.
 
         - 当type为LTS时，应用级日志可配置为On或Off；系统级日志可配置为Off/Error/Warning/Info/Debug； - 当type为local时，无需配置level。
 
@@ -149,7 +149,7 @@ class LogConfigs:
 
     @property
     def rotate_num(self):
-        """Gets the rotate_num of this LogConfigs.
+        r"""Gets the rotate_num of this LogConfigs.
 
         应用日志rotate个数，默认5，取值范围1-10。
 
@@ -160,7 +160,7 @@ class LogConfigs:
 
     @rotate_num.setter
     def rotate_num(self, rotate_num):
-        """Sets the rotate_num of this LogConfigs.
+        r"""Sets the rotate_num of this LogConfigs.
 
         应用日志rotate个数，默认5，取值范围1-10。
 
@@ -171,7 +171,7 @@ class LogConfigs:
 
     @property
     def rotate_period(self):
-        """Gets the rotate_period of this LogConfigs.
+        r"""Gets the rotate_period of this LogConfigs.
 
         应用日志rotate周期，可选项： - daily - monthly - weekly - yearly
 
@@ -182,7 +182,7 @@ class LogConfigs:
 
     @rotate_period.setter
     def rotate_period(self, rotate_period):
-        """Sets the rotate_period of this LogConfigs.
+        r"""Sets the rotate_period of this LogConfigs.
 
         应用日志rotate周期，可选项： - daily - monthly - weekly - yearly
 
@@ -193,7 +193,7 @@ class LogConfigs:
 
     @property
     def type(self):
-        """Gets the type of this LogConfigs.
+        r"""Gets the type of this LogConfigs.
 
         - LTS：将日志发送到AOM - local：本地日志
 
@@ -204,7 +204,7 @@ class LogConfigs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LogConfigs.
+        r"""Sets the type of this LogConfigs.
 
         - LTS：将日志发送到AOM - local：本地日志
 
@@ -215,7 +215,7 @@ class LogConfigs:
 
     @property
     def component(self):
-        """Gets the component of this LogConfigs.
+        r"""Gets the component of this LogConfigs.
 
         - app：部署到边缘节点上的应用的日志 - system：边缘节点上系统的日志
 
@@ -226,7 +226,7 @@ class LogConfigs:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this LogConfigs.
+        r"""Sets the component of this LogConfigs.
 
         - app：部署到边缘节点上的应用的日志 - system：边缘节点上系统的日志
 

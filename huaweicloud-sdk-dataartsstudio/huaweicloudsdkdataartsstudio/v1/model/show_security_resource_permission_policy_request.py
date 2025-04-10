@@ -27,7 +27,7 @@ class ShowSecurityResourcePermissionPolicyRequest:
     }
 
     def __init__(self, workspace=None, policy_id=None):
-        """ShowSecurityResourcePermissionPolicyRequest
+        r"""ShowSecurityResourcePermissionPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecurityResourcePermissionPolicyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityResourcePermissionPolicyRequest.
+        r"""Gets the workspace of this ShowSecurityResourcePermissionPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowSecurityResourcePermissionPolicyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityResourcePermissionPolicyRequest.
+        r"""Sets the workspace of this ShowSecurityResourcePermissionPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowSecurityResourcePermissionPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowSecurityResourcePermissionPolicyRequest.
+        r"""Gets the policy_id of this ShowSecurityResourcePermissionPolicyRequest.
 
         空间资源权限策略id。
 
@@ -81,7 +81,7 @@ class ShowSecurityResourcePermissionPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowSecurityResourcePermissionPolicyRequest.
+        r"""Sets the policy_id of this ShowSecurityResourcePermissionPolicyRequest.
 
         空间资源权限策略id。
 

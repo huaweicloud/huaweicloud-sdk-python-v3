@@ -29,7 +29,7 @@ class RelationModel:
     }
 
     def __init__(self, key=None, value=None, relation=None):
-        """RelationModel
+        r"""RelationModel
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RelationModel:
 
     @property
     def key(self):
-        """Gets the key of this RelationModel.
+        r"""Gets the key of this RelationModel.
 
         指定查询字段的key，对应metadata里面的key 。
 
@@ -68,7 +68,7 @@ class RelationModel:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this RelationModel.
+        r"""Sets the key of this RelationModel.
 
         指定查询字段的key，对应metadata里面的key 。
 
@@ -79,7 +79,7 @@ class RelationModel:
 
     @property
     def value(self):
-        """Gets the value of this RelationModel.
+        r"""Gets the value of this RelationModel.
 
         查询条件中指定key的值。
 
@@ -90,7 +90,7 @@ class RelationModel:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RelationModel.
+        r"""Sets the value of this RelationModel.
 
         查询条件中指定key的值。
 
@@ -101,7 +101,7 @@ class RelationModel:
 
     @property
     def relation(self):
-        """Gets the relation of this RelationModel.
+        r"""Gets the relation of this RelationModel.
 
         该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
 
@@ -112,7 +112,7 @@ class RelationModel:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this RelationModel.
+        r"""Sets the relation of this RelationModel.
 
         该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
 

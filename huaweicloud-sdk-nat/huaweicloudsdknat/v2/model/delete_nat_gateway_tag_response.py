@@ -26,7 +26,7 @@ class DeleteNatGatewayTagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteNatGatewayTagResponse
+        r"""DeleteNatGatewayTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteNatGatewayTagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteNatGatewayTagResponse.
+        r"""Gets the body of this DeleteNatGatewayTagResponse.
 
         :return: The body of this DeleteNatGatewayTagResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteNatGatewayTagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteNatGatewayTagResponse.
+        r"""Sets the body of this DeleteNatGatewayTagResponse.
 
         :param body: The body of this DeleteNatGatewayTagResponse.
         :type body: str

@@ -25,7 +25,7 @@ class AutoLogoutOptions:
     }
 
     def __init__(self, sbc_logout_waiting_time=None):
-        """AutoLogoutOptions
+        r"""AutoLogoutOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AutoLogoutOptions:
 
     @property
     def sbc_logout_waiting_time(self):
-        """Gets the sbc_logout_waiting_time of this AutoLogoutOptions.
+        r"""Gets the sbc_logout_waiting_time of this AutoLogoutOptions.
 
         会话断连保留时长（分钟）。
 
@@ -54,7 +54,7 @@ class AutoLogoutOptions:
 
     @sbc_logout_waiting_time.setter
     def sbc_logout_waiting_time(self, sbc_logout_waiting_time):
-        """Sets the sbc_logout_waiting_time of this AutoLogoutOptions.
+        r"""Sets the sbc_logout_waiting_time of this AutoLogoutOptions.
 
         会话断连保留时长（分钟）。
 

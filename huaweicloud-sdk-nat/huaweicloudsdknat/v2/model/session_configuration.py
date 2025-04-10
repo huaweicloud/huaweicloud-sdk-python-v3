@@ -31,7 +31,7 @@ class SessionConfiguration:
     }
 
     def __init__(self, tcp_session_expire_time=None, udp_session_expire_time=None, icmp_session_expire_time=None, tcp_time_wait_time=None):
-        """SessionConfiguration
+        r"""SessionConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SessionConfiguration:
 
     @property
     def tcp_session_expire_time(self):
-        """Gets the tcp_session_expire_time of this SessionConfiguration.
+        r"""Gets the tcp_session_expire_time of this SessionConfiguration.
 
         TCP会话过期时间。
 
@@ -75,7 +75,7 @@ class SessionConfiguration:
 
     @tcp_session_expire_time.setter
     def tcp_session_expire_time(self, tcp_session_expire_time):
-        """Sets the tcp_session_expire_time of this SessionConfiguration.
+        r"""Sets the tcp_session_expire_time of this SessionConfiguration.
 
         TCP会话过期时间。
 
@@ -86,7 +86,7 @@ class SessionConfiguration:
 
     @property
     def udp_session_expire_time(self):
-        """Gets the udp_session_expire_time of this SessionConfiguration.
+        r"""Gets the udp_session_expire_time of this SessionConfiguration.
 
         UDP会话过期时间。
 
@@ -97,7 +97,7 @@ class SessionConfiguration:
 
     @udp_session_expire_time.setter
     def udp_session_expire_time(self, udp_session_expire_time):
-        """Sets the udp_session_expire_time of this SessionConfiguration.
+        r"""Sets the udp_session_expire_time of this SessionConfiguration.
 
         UDP会话过期时间。
 
@@ -108,7 +108,7 @@ class SessionConfiguration:
 
     @property
     def icmp_session_expire_time(self):
-        """Gets the icmp_session_expire_time of this SessionConfiguration.
+        r"""Gets the icmp_session_expire_time of this SessionConfiguration.
 
         ICMP会话过期时间。
 
@@ -119,7 +119,7 @@ class SessionConfiguration:
 
     @icmp_session_expire_time.setter
     def icmp_session_expire_time(self, icmp_session_expire_time):
-        """Sets the icmp_session_expire_time of this SessionConfiguration.
+        r"""Sets the icmp_session_expire_time of this SessionConfiguration.
 
         ICMP会话过期时间。
 
@@ -130,7 +130,7 @@ class SessionConfiguration:
 
     @property
     def tcp_time_wait_time(self):
-        """Gets the tcp_time_wait_time of this SessionConfiguration.
+        r"""Gets the tcp_time_wait_time of this SessionConfiguration.
 
         TCP连接关闭时TIME_WAIT状态持续时间。
 
@@ -141,7 +141,7 @@ class SessionConfiguration:
 
     @tcp_time_wait_time.setter
     def tcp_time_wait_time(self, tcp_time_wait_time):
-        """Sets the tcp_time_wait_time of this SessionConfiguration.
+        r"""Sets the tcp_time_wait_time of this SessionConfiguration.
 
         TCP连接关闭时TIME_WAIT状态持续时间。
 

@@ -29,7 +29,7 @@ class Tag:
     }
 
     def __init__(self, type=None, key=None, values=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Tag:
 
     @property
     def type(self):
-        """Gets the type of this Tag.
+        r"""Gets the type of this Tag.
 
         标签类型: - user - system
 
@@ -65,7 +65,7 @@ class Tag:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Tag.
+        r"""Sets the type of this Tag.
 
         标签类型: - user - system
 
@@ -76,7 +76,7 @@ class Tag:
 
     @property
     def key(self):
-        """Gets the key of this Tag.
+        r"""Gets the key of this Tag.
 
         标签键。最大长度36个unicode字符，key不能为空。  字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -87,7 +87,7 @@ class Tag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tag.
+        r"""Sets the key of this Tag.
 
         标签键。最大长度36个unicode字符，key不能为空。  字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -98,7 +98,7 @@ class Tag:
 
     @property
     def values(self):
-        """Gets the values of this Tag.
+        r"""Gets the values of this Tag.
 
          标签值列表。每个标签值最大长度43个unicode字符，可以为空字符串。  字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
@@ -109,7 +109,7 @@ class Tag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this Tag.
+        r"""Sets the values of this Tag.
 
          标签值列表。每个标签值最大长度43个unicode字符，可以为空字符串。  字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 

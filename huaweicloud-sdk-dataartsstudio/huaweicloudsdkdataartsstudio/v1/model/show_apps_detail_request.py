@@ -35,7 +35,7 @@ class ShowAppsDetailRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, app_id=None, start_time=None, end_time=None, time_unit=None):
-        """ShowAppsDetailRequest
+        r"""ShowAppsDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ShowAppsDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowAppsDetailRequest.
+        r"""Gets the workspace of this ShowAppsDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class ShowAppsDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowAppsDetailRequest.
+        r"""Sets the workspace of this ShowAppsDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -95,7 +95,7 @@ class ShowAppsDetailRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowAppsDetailRequest.
+        r"""Gets the dlm_type of this ShowAppsDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -106,7 +106,7 @@ class ShowAppsDetailRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowAppsDetailRequest.
+        r"""Sets the dlm_type of this ShowAppsDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -117,7 +117,7 @@ class ShowAppsDetailRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppsDetailRequest.
+        r"""Gets the app_id of this ShowAppsDetailRequest.
 
         app编号。
 
@@ -128,7 +128,7 @@ class ShowAppsDetailRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppsDetailRequest.
+        r"""Sets the app_id of this ShowAppsDetailRequest.
 
         app编号。
 
@@ -139,7 +139,7 @@ class ShowAppsDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowAppsDetailRequest.
+        r"""Gets the start_time of this ShowAppsDetailRequest.
 
         开始时间（13位时间戳）。
 
@@ -150,7 +150,7 @@ class ShowAppsDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowAppsDetailRequest.
+        r"""Sets the start_time of this ShowAppsDetailRequest.
 
         开始时间（13位时间戳）。
 
@@ -161,7 +161,7 @@ class ShowAppsDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowAppsDetailRequest.
+        r"""Gets the end_time of this ShowAppsDetailRequest.
 
         结束时间（13位时间戳）。
 
@@ -172,7 +172,7 @@ class ShowAppsDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowAppsDetailRequest.
+        r"""Sets the end_time of this ShowAppsDetailRequest.
 
         结束时间（13位时间戳）。
 
@@ -183,7 +183,7 @@ class ShowAppsDetailRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ShowAppsDetailRequest.
+        r"""Gets the time_unit of this ShowAppsDetailRequest.
 
         时间单位。
 
@@ -194,7 +194,7 @@ class ShowAppsDetailRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ShowAppsDetailRequest.
+        r"""Sets the time_unit of this ShowAppsDetailRequest.
 
         时间单位。
 

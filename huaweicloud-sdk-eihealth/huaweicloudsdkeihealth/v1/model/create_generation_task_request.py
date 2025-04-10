@@ -25,7 +25,7 @@ class CreateGenerationTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGenerationTaskRequest
+        r"""CreateGenerationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGenerationTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGenerationTaskRequest.
+        r"""Gets the body of this CreateGenerationTaskRequest.
 
         :return: The body of this CreateGenerationTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.GenerationTaskData`
@@ -52,7 +52,7 @@ class CreateGenerationTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGenerationTaskRequest.
+        r"""Sets the body of this CreateGenerationTaskRequest.
 
         :param body: The body of this CreateGenerationTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.GenerationTaskData`

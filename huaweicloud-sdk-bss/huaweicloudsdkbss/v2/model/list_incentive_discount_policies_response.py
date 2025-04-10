@@ -28,7 +28,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, total_count=None):
-        """ListIncentiveDiscountPoliciesResponse
+        r"""ListIncentiveDiscountPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListIncentiveDiscountPoliciesResponse.
+        r"""Gets the policies of this ListIncentiveDiscountPoliciesResponse.
 
         产品折扣和激励策略信息列表。 具体请参见表2。
 
@@ -62,7 +62,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListIncentiveDiscountPoliciesResponse.
+        r"""Sets the policies of this ListIncentiveDiscountPoliciesResponse.
 
         产品折扣和激励策略信息列表。 具体请参见表2。
 
@@ -73,7 +73,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListIncentiveDiscountPoliciesResponse.
+        r"""Gets the total_count of this ListIncentiveDiscountPoliciesResponse.
 
         查询总条数。
 
@@ -84,7 +84,7 @@ class ListIncentiveDiscountPoliciesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListIncentiveDiscountPoliciesResponse.
+        r"""Sets the total_count of this ListIncentiveDiscountPoliciesResponse.
 
         查询总条数。
 

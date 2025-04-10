@@ -39,7 +39,7 @@ class EquipmentWanItem:
     }
 
     def __init__(self, interface_name=None, ip_type=None, ip_address=None, gateway_ip_address=None, uplink_bandwidth_size=None, priority=None, nat_outbound=None, tunnel_bandwidth_size=None):
-        """EquipmentWanItem
+        r"""EquipmentWanItem
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class EquipmentWanItem:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this EquipmentWanItem.
+        r"""Gets the interface_name of this EquipmentWanItem.
 
         接口名字
 
@@ -101,7 +101,7 @@ class EquipmentWanItem:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this EquipmentWanItem.
+        r"""Sets the interface_name of this EquipmentWanItem.
 
         接口名字
 
@@ -112,7 +112,7 @@ class EquipmentWanItem:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this EquipmentWanItem.
+        r"""Gets the ip_type of this EquipmentWanItem.
 
         IP类型
 
@@ -123,7 +123,7 @@ class EquipmentWanItem:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this EquipmentWanItem.
+        r"""Sets the ip_type of this EquipmentWanItem.
 
         IP类型
 
@@ -134,7 +134,7 @@ class EquipmentWanItem:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this EquipmentWanItem.
+        r"""Gets the ip_address of this EquipmentWanItem.
 
         IPv4地址
 
@@ -145,7 +145,7 @@ class EquipmentWanItem:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this EquipmentWanItem.
+        r"""Sets the ip_address of this EquipmentWanItem.
 
         IPv4地址
 
@@ -156,7 +156,7 @@ class EquipmentWanItem:
 
     @property
     def gateway_ip_address(self):
-        """Gets the gateway_ip_address of this EquipmentWanItem.
+        r"""Gets the gateway_ip_address of this EquipmentWanItem.
 
         网关IP
 
@@ -167,7 +167,7 @@ class EquipmentWanItem:
 
     @gateway_ip_address.setter
     def gateway_ip_address(self, gateway_ip_address):
-        """Sets the gateway_ip_address of this EquipmentWanItem.
+        r"""Sets the gateway_ip_address of this EquipmentWanItem.
 
         网关IP
 
@@ -178,7 +178,7 @@ class EquipmentWanItem:
 
     @property
     def uplink_bandwidth_size(self):
-        """Gets the uplink_bandwidth_size of this EquipmentWanItem.
+        r"""Gets the uplink_bandwidth_size of this EquipmentWanItem.
 
         最大上行带宽
 
@@ -189,7 +189,7 @@ class EquipmentWanItem:
 
     @uplink_bandwidth_size.setter
     def uplink_bandwidth_size(self, uplink_bandwidth_size):
-        """Sets the uplink_bandwidth_size of this EquipmentWanItem.
+        r"""Sets the uplink_bandwidth_size of this EquipmentWanItem.
 
         最大上行带宽
 
@@ -200,7 +200,7 @@ class EquipmentWanItem:
 
     @property
     def priority(self):
-        """Gets the priority of this EquipmentWanItem.
+        r"""Gets the priority of this EquipmentWanItem.
 
         优先级
 
@@ -211,7 +211,7 @@ class EquipmentWanItem:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this EquipmentWanItem.
+        r"""Sets the priority of this EquipmentWanItem.
 
         优先级
 
@@ -222,7 +222,7 @@ class EquipmentWanItem:
 
     @property
     def nat_outbound(self):
-        """Gets the nat_outbound of this EquipmentWanItem.
+        r"""Gets the nat_outbound of this EquipmentWanItem.
 
         是否使能本地上网
 
@@ -233,7 +233,7 @@ class EquipmentWanItem:
 
     @nat_outbound.setter
     def nat_outbound(self, nat_outbound):
-        """Sets the nat_outbound of this EquipmentWanItem.
+        r"""Sets the nat_outbound of this EquipmentWanItem.
 
         是否使能本地上网
 
@@ -244,7 +244,7 @@ class EquipmentWanItem:
 
     @property
     def tunnel_bandwidth_size(self):
-        """Gets the tunnel_bandwidth_size of this EquipmentWanItem.
+        r"""Gets the tunnel_bandwidth_size of this EquipmentWanItem.
 
         最大上云带宽
 
@@ -255,7 +255,7 @@ class EquipmentWanItem:
 
     @tunnel_bandwidth_size.setter
     def tunnel_bandwidth_size(self, tunnel_bandwidth_size):
-        """Sets the tunnel_bandwidth_size of this EquipmentWanItem.
+        r"""Sets the tunnel_bandwidth_size of this EquipmentWanItem.
 
         最大上云带宽
 

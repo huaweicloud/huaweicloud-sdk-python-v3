@@ -41,7 +41,7 @@ class ServerDisk:
     }
 
     def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, os_disk=None, relation_name=None, inode_size=None):
-        """ServerDisk
+        r"""ServerDisk
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class ServerDisk:
 
     @property
     def name(self):
-        """Gets the name of this ServerDisk.
+        r"""Gets the name of this ServerDisk.
 
         磁盘名称
 
@@ -105,7 +105,7 @@ class ServerDisk:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerDisk.
+        r"""Sets the name of this ServerDisk.
 
         磁盘名称
 
@@ -116,7 +116,7 @@ class ServerDisk:
 
     @property
     def partition_style(self):
-        """Gets the partition_style of this ServerDisk.
+        r"""Gets the partition_style of this ServerDisk.
 
         磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
@@ -127,7 +127,7 @@ class ServerDisk:
 
     @partition_style.setter
     def partition_style(self, partition_style):
-        """Sets the partition_style of this ServerDisk.
+        r"""Sets the partition_style of this ServerDisk.
 
         磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
@@ -138,7 +138,7 @@ class ServerDisk:
 
     @property
     def device_use(self):
-        """Gets the device_use of this ServerDisk.
+        r"""Gets the device_use of this ServerDisk.
 
         磁盘类型 BOOT：BOOT设备 OS：系统设备
 
@@ -149,7 +149,7 @@ class ServerDisk:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this ServerDisk.
+        r"""Sets the device_use of this ServerDisk.
 
         磁盘类型 BOOT：BOOT设备 OS：系统设备
 
@@ -160,7 +160,7 @@ class ServerDisk:
 
     @property
     def size(self):
-        """Gets the size of this ServerDisk.
+        r"""Gets the size of this ServerDisk.
 
         磁盘总大小，以字节为单位
 
@@ -171,7 +171,7 @@ class ServerDisk:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ServerDisk.
+        r"""Sets the size of this ServerDisk.
 
         磁盘总大小，以字节为单位
 
@@ -182,7 +182,7 @@ class ServerDisk:
 
     @property
     def used_size(self):
-        """Gets the used_size of this ServerDisk.
+        r"""Gets the used_size of this ServerDisk.
 
         磁盘已使用大小，以字节为单位
 
@@ -193,7 +193,7 @@ class ServerDisk:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this ServerDisk.
+        r"""Sets the used_size of this ServerDisk.
 
         磁盘已使用大小，以字节为单位
 
@@ -204,7 +204,7 @@ class ServerDisk:
 
     @property
     def physical_volumes(self):
-        """Gets the physical_volumes of this ServerDisk.
+        r"""Gets the physical_volumes of this ServerDisk.
 
         磁盘上的物理分区信息
 
@@ -215,7 +215,7 @@ class ServerDisk:
 
     @physical_volumes.setter
     def physical_volumes(self, physical_volumes):
-        """Sets the physical_volumes of this ServerDisk.
+        r"""Sets the physical_volumes of this ServerDisk.
 
         磁盘上的物理分区信息
 
@@ -226,7 +226,7 @@ class ServerDisk:
 
     @property
     def os_disk(self):
-        """Gets the os_disk of this ServerDisk.
+        r"""Gets the os_disk of this ServerDisk.
 
         是否为系统盘
 
@@ -237,7 +237,7 @@ class ServerDisk:
 
     @os_disk.setter
     def os_disk(self, os_disk):
-        """Sets the os_disk of this ServerDisk.
+        r"""Sets the os_disk of this ServerDisk.
 
         是否为系统盘
 
@@ -248,7 +248,7 @@ class ServerDisk:
 
     @property
     def relation_name(self):
-        """Gets the relation_name of this ServerDisk.
+        r"""Gets the relation_name of this ServerDisk.
 
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
@@ -259,7 +259,7 @@ class ServerDisk:
 
     @relation_name.setter
     def relation_name(self, relation_name):
-        """Sets the relation_name of this ServerDisk.
+        r"""Sets the relation_name of this ServerDisk.
 
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
@@ -270,7 +270,7 @@ class ServerDisk:
 
     @property
     def inode_size(self):
-        """Gets the inode_size of this ServerDisk.
+        r"""Gets the inode_size of this ServerDisk.
 
         inode数量
 
@@ -281,7 +281,7 @@ class ServerDisk:
 
     @inode_size.setter
     def inode_size(self, inode_size):
-        """Sets the inode_size of this ServerDisk.
+        r"""Sets the inode_size of this ServerDisk.
 
         inode数量
 

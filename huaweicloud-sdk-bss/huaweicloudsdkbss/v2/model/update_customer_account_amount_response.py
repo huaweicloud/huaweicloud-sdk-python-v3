@@ -26,7 +26,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
     }
 
     def __init__(self, transfer_id=None):
-        """UpdateCustomerAccountAmountResponse
+        r"""UpdateCustomerAccountAmountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
 
     @property
     def transfer_id(self):
-        """Gets the transfer_id of this UpdateCustomerAccountAmountResponse.
+        r"""Gets the transfer_id of this UpdateCustomerAccountAmountResponse.
 
         事务流水ID，只有成功响应才会返回。
 
@@ -55,7 +55,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
 
     @transfer_id.setter
     def transfer_id(self, transfer_id):
-        """Sets the transfer_id of this UpdateCustomerAccountAmountResponse.
+        r"""Sets the transfer_id of this UpdateCustomerAccountAmountResponse.
 
         事务流水ID，只有成功响应才会返回。
 

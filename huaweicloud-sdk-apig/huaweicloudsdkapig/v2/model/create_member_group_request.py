@@ -29,7 +29,7 @@ class CreateMemberGroupRequest:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, body=None):
-        """CreateMemberGroupRequest
+        r"""CreateMemberGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateMemberGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateMemberGroupRequest.
+        r"""Gets the instance_id of this CreateMemberGroupRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -66,7 +66,7 @@ class CreateMemberGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateMemberGroupRequest.
+        r"""Sets the instance_id of this CreateMemberGroupRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -77,7 +77,7 @@ class CreateMemberGroupRequest:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this CreateMemberGroupRequest.
+        r"""Gets the vpc_channel_id of this CreateMemberGroupRequest.
 
         VPC通道的编号
 
@@ -88,7 +88,7 @@ class CreateMemberGroupRequest:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this CreateMemberGroupRequest.
+        r"""Sets the vpc_channel_id of this CreateMemberGroupRequest.
 
         VPC通道的编号
 
@@ -99,7 +99,7 @@ class CreateMemberGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMemberGroupRequest.
+        r"""Gets the body of this CreateMemberGroupRequest.
 
         :return: The body of this CreateMemberGroupRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.MemberGroupCreateBatch`
@@ -108,7 +108,7 @@ class CreateMemberGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMemberGroupRequest.
+        r"""Sets the body of this CreateMemberGroupRequest.
 
         :param body: The body of this CreateMemberGroupRequest.
         :type body: :class:`huaweicloudsdkapig.v2.MemberGroupCreateBatch`

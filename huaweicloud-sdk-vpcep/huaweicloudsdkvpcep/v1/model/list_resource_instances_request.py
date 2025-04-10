@@ -27,7 +27,7 @@ class ListResourceInstancesRequest:
     }
 
     def __init__(self, resource_type=None, body=None):
-        """ListResourceInstancesRequest
+        r"""ListResourceInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListResourceInstancesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourceInstancesRequest.
+        r"""Gets the resource_type of this ListResourceInstancesRequest.
 
         资源类型，值为：endpoint_service或endpoint。 - endpoint_service：云服务器，适用于作为服务器使用。 - endpoint：虚拟IP，适用于作为虚IP场景使用
 
@@ -60,7 +60,7 @@ class ListResourceInstancesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourceInstancesRequest.
+        r"""Sets the resource_type of this ListResourceInstancesRequest.
 
         资源类型，值为：endpoint_service或endpoint。 - endpoint_service：云服务器，适用于作为服务器使用。 - endpoint：虚拟IP，适用于作为虚IP场景使用
 
@@ -71,7 +71,7 @@ class ListResourceInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceInstancesRequest.
+        r"""Gets the body of this ListResourceInstancesRequest.
 
         :return: The body of this ListResourceInstancesRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.QueryResourceInstanceTagsBody`
@@ -80,7 +80,7 @@ class ListResourceInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceInstancesRequest.
+        r"""Sets the body of this ListResourceInstancesRequest.
 
         :param body: The body of this ListResourceInstancesRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.QueryResourceInstanceTagsBody`

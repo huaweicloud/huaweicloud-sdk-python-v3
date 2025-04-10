@@ -33,7 +33,7 @@ class CentralNetworkCapability:
     }
 
     def __init__(self, id=None, domain_id=None, capability=None):
-        """CentralNetworkCapability
+        r"""CentralNetworkCapability
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CentralNetworkCapability:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkCapability.
+        r"""Gets the id of this CentralNetworkCapability.
 
         实例ID。
 
@@ -69,7 +69,7 @@ class CentralNetworkCapability:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkCapability.
+        r"""Sets the id of this CentralNetworkCapability.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class CentralNetworkCapability:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CentralNetworkCapability.
+        r"""Gets the domain_id of this CentralNetworkCapability.
 
         实例所属账号ID。
 
@@ -91,7 +91,7 @@ class CentralNetworkCapability:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CentralNetworkCapability.
+        r"""Sets the domain_id of this CentralNetworkCapability.
 
         实例所属账号ID。
 
@@ -102,7 +102,7 @@ class CentralNetworkCapability:
 
     @property
     def capability(self):
-        """Gets the capability of this CentralNetworkCapability.
+        r"""Gets the capability of this CentralNetworkCapability.
 
         :return: The capability of this CentralNetworkCapability.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkCapabilityEnum`
@@ -111,7 +111,7 @@ class CentralNetworkCapability:
 
     @capability.setter
     def capability(self, capability):
-        """Sets the capability of this CentralNetworkCapability.
+        r"""Sets the capability of this CentralNetworkCapability.
 
         :param capability: The capability of this CentralNetworkCapability.
         :type capability: :class:`huaweicloudsdkcc.v3.CentralNetworkCapabilityEnum`

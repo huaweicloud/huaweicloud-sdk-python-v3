@@ -26,7 +26,7 @@ class SetAuditlogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """SetAuditlogPolicyResponse
+        r"""SetAuditlogPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetAuditlogPolicyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SetAuditlogPolicyResponse.
+        r"""Gets the status of this SetAuditlogPolicyResponse.
 
         设置审计日志策略的操作结果。 - COMPLETED：已完成。
 
@@ -55,7 +55,7 @@ class SetAuditlogPolicyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetAuditlogPolicyResponse.
+        r"""Sets the status of this SetAuditlogPolicyResponse.
 
         设置审计日志策略的操作结果。 - COMPLETED：已完成。
 

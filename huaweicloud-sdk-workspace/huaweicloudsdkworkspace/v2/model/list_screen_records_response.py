@@ -28,7 +28,7 @@ class ListScreenRecordsResponse(SdkResponse):
     }
 
     def __init__(self, screen_records=None, total_count=None):
-        """ListScreenRecordsResponse
+        r"""ListScreenRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScreenRecordsResponse(SdkResponse):
 
     @property
     def screen_records(self):
-        """Gets the screen_records of this ListScreenRecordsResponse.
+        r"""Gets the screen_records of this ListScreenRecordsResponse.
 
         录屏记录。
 
@@ -62,7 +62,7 @@ class ListScreenRecordsResponse(SdkResponse):
 
     @screen_records.setter
     def screen_records(self, screen_records):
-        """Sets the screen_records of this ListScreenRecordsResponse.
+        r"""Sets the screen_records of this ListScreenRecordsResponse.
 
         录屏记录。
 
@@ -73,7 +73,7 @@ class ListScreenRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListScreenRecordsResponse.
+        r"""Gets the total_count of this ListScreenRecordsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListScreenRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListScreenRecordsResponse.
+        r"""Sets the total_count of this ListScreenRecordsResponse.
 
         总数。
 

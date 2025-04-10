@@ -27,7 +27,7 @@ class RequirementsOverviewVo:
     }
 
     def __init__(self, total_number=None, requirement_overview_list=None):
-        """RequirementsOverviewVo
+        r"""RequirementsOverviewVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RequirementsOverviewVo:
 
     @property
     def total_number(self):
-        """Gets the total_number of this RequirementsOverviewVo.
+        r"""Gets the total_number of this RequirementsOverviewVo.
 
         质量报告需求测试情况总数
 
@@ -61,7 +61,7 @@ class RequirementsOverviewVo:
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this RequirementsOverviewVo.
+        r"""Sets the total_number of this RequirementsOverviewVo.
 
         质量报告需求测试情况总数
 
@@ -72,7 +72,7 @@ class RequirementsOverviewVo:
 
     @property
     def requirement_overview_list(self):
-        """Gets the requirement_overview_list of this RequirementsOverviewVo.
+        r"""Gets the requirement_overview_list of this RequirementsOverviewVo.
 
         质量报告需求测试情况列表
 
@@ -83,7 +83,7 @@ class RequirementsOverviewVo:
 
     @requirement_overview_list.setter
     def requirement_overview_list(self, requirement_overview_list):
-        """Sets the requirement_overview_list of this RequirementsOverviewVo.
+        r"""Sets the requirement_overview_list of this RequirementsOverviewVo.
 
         质量报告需求测试情况列表
 

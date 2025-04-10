@@ -25,7 +25,7 @@ class BatchShutdownInsReq:
     }
 
     def __init__(self, instance_ids=None):
-        """BatchShutdownInsReq
+        r"""BatchShutdownInsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchShutdownInsReq:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this BatchShutdownInsReq.
+        r"""Gets the instance_ids of this BatchShutdownInsReq.
 
         实例id列表
 
@@ -53,7 +53,7 @@ class BatchShutdownInsReq:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this BatchShutdownInsReq.
+        r"""Sets the instance_ids of this BatchShutdownInsReq.
 
         实例id列表
 

@@ -25,7 +25,7 @@ class ListNoticeConfigsRequest:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ListNoticeConfigsRequest
+        r"""ListNoticeConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListNoticeConfigsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListNoticeConfigsRequest.
+        r"""Gets the enterprise_project_id of this ListNoticeConfigsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -54,7 +54,7 @@ class ListNoticeConfigsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListNoticeConfigsRequest.
+        r"""Sets the enterprise_project_id of this ListNoticeConfigsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 

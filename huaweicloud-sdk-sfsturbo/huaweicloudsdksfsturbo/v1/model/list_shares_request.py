@@ -27,7 +27,7 @@ class ListSharesRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListSharesRequest
+        r"""ListSharesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSharesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSharesRequest.
+        r"""Gets the limit of this ListSharesRequest.
 
         设置返回的文件系统个数的最大值，不填默认为1000个
 
@@ -61,7 +61,7 @@ class ListSharesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSharesRequest.
+        r"""Sets the limit of this ListSharesRequest.
 
         设置返回的文件系统个数的最大值，不填默认为1000个
 
@@ -72,7 +72,7 @@ class ListSharesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSharesRequest.
+        r"""Gets the offset of this ListSharesRequest.
 
         设置返回的文件系统的偏移量。
 
@@ -83,7 +83,7 @@ class ListSharesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSharesRequest.
+        r"""Sets the offset of this ListSharesRequest.
 
         设置返回的文件系统的偏移量。
 

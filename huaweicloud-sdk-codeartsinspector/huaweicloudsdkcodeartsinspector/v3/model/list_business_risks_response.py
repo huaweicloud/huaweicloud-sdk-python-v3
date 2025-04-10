@@ -28,7 +28,7 @@ class ListBusinessRisksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListBusinessRisksResponse
+        r"""ListBusinessRisksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBusinessRisksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListBusinessRisksResponse.
+        r"""Gets the total of this ListBusinessRisksResponse.
 
         业务风险总数
 
@@ -62,7 +62,7 @@ class ListBusinessRisksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBusinessRisksResponse.
+        r"""Sets the total of this ListBusinessRisksResponse.
 
         业务风险总数
 
@@ -73,7 +73,7 @@ class ListBusinessRisksResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListBusinessRisksResponse.
+        r"""Gets the data of this ListBusinessRisksResponse.
 
         业务风险列表
 
@@ -84,7 +84,7 @@ class ListBusinessRisksResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListBusinessRisksResponse.
+        r"""Sets the data of this ListBusinessRisksResponse.
 
         业务风险列表
 

@@ -25,7 +25,7 @@ class StopBackupRequestBody:
     }
 
     def __init__(self, action=None):
-        """StopBackupRequestBody
+        r"""StopBackupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopBackupRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this StopBackupRequestBody.
+        r"""Gets the action of this StopBackupRequestBody.
 
         操作。stop代表停止。
 
@@ -53,7 +53,7 @@ class StopBackupRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StopBackupRequestBody.
+        r"""Sets the action of this StopBackupRequestBody.
 
         操作。stop代表停止。
 

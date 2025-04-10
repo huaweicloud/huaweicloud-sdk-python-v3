@@ -50,7 +50,7 @@ class CreateRecordIndexResponse(SdkResponse):
     }
 
     def __init__(self, index_url=None, publish_domain=None, app=None, stream=None, start_time=None, end_time=None, duration=None, width=None, height=None, location=None, bucket=None, object=None, x_request_id=None):
-        """CreateRecordIndexResponse
+        r"""CreateRecordIndexResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def index_url(self):
-        """Gets the index_url of this CreateRecordIndexResponse.
+        r"""Gets the index_url of this CreateRecordIndexResponse.
 
         索引文件地址
 
@@ -139,7 +139,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @index_url.setter
     def index_url(self, index_url):
-        """Sets the index_url of this CreateRecordIndexResponse.
+        r"""Sets the index_url of this CreateRecordIndexResponse.
 
         索引文件地址
 
@@ -150,7 +150,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this CreateRecordIndexResponse.
+        r"""Gets the publish_domain of this CreateRecordIndexResponse.
 
         直播推流域名
 
@@ -161,7 +161,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this CreateRecordIndexResponse.
+        r"""Sets the publish_domain of this CreateRecordIndexResponse.
 
         直播推流域名
 
@@ -172,7 +172,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def app(self):
-        """Gets the app of this CreateRecordIndexResponse.
+        r"""Gets the app of this CreateRecordIndexResponse.
 
         应用名，如果任意应用填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
@@ -183,7 +183,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @app.setter
     def app(self, app):
-        """Sets the app of this CreateRecordIndexResponse.
+        r"""Sets the app of this CreateRecordIndexResponse.
 
         应用名，如果任意应用填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
@@ -194,7 +194,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def stream(self):
-        """Gets the stream of this CreateRecordIndexResponse.
+        r"""Gets the stream of this CreateRecordIndexResponse.
 
         录制的流名，如果任意流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
 
@@ -205,7 +205,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this CreateRecordIndexResponse.
+        r"""Sets the stream of this CreateRecordIndexResponse.
 
         录制的流名，如果任意流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
 
@@ -216,7 +216,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateRecordIndexResponse.
+        r"""Gets the start_time of this CreateRecordIndexResponse.
 
         开始时间。格式为：yyyy-MM-ddTHH:mm:ssZ（UTC时间）。(实际视频的开始时间)
 
@@ -227,7 +227,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateRecordIndexResponse.
+        r"""Sets the start_time of this CreateRecordIndexResponse.
 
         开始时间。格式为：yyyy-MM-ddTHH:mm:ssZ（UTC时间）。(实际视频的开始时间)
 
@@ -238,7 +238,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateRecordIndexResponse.
+        r"""Gets the end_time of this CreateRecordIndexResponse.
 
         结束时间。格式为：yyyy-MM-ddTHH:mm:ssZ（UTC时间）。(实际视频的结束时间)
 
@@ -249,7 +249,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateRecordIndexResponse.
+        r"""Sets the end_time of this CreateRecordIndexResponse.
 
         结束时间。格式为：yyyy-MM-ddTHH:mm:ssZ（UTC时间）。(实际视频的结束时间)
 
@@ -260,7 +260,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this CreateRecordIndexResponse.
+        r"""Gets the duration of this CreateRecordIndexResponse.
 
         录制时长。单位：秒。
 
@@ -271,7 +271,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CreateRecordIndexResponse.
+        r"""Sets the duration of this CreateRecordIndexResponse.
 
         录制时长。单位：秒。
 
@@ -282,7 +282,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def width(self):
-        """Gets the width of this CreateRecordIndexResponse.
+        r"""Gets the width of this CreateRecordIndexResponse.
 
         视频宽。
 
@@ -293,7 +293,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @width.setter
     def width(self, width):
-        """Sets the width of this CreateRecordIndexResponse.
+        r"""Sets the width of this CreateRecordIndexResponse.
 
         视频宽。
 
@@ -304,7 +304,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def height(self):
-        """Gets the height of this CreateRecordIndexResponse.
+        r"""Gets the height of this CreateRecordIndexResponse.
 
         视频高。
 
@@ -315,7 +315,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @height.setter
     def height(self, height):
-        """Sets the height of this CreateRecordIndexResponse.
+        r"""Sets the height of this CreateRecordIndexResponse.
 
         视频高。
 
@@ -326,7 +326,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this CreateRecordIndexResponse.
+        r"""Gets the location of this CreateRecordIndexResponse.
 
         OBS Bucket所在RegionID
 
@@ -337,7 +337,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this CreateRecordIndexResponse.
+        r"""Sets the location of this CreateRecordIndexResponse.
 
         OBS Bucket所在RegionID
 
@@ -348,7 +348,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def bucket(self):
-        """Gets the bucket of this CreateRecordIndexResponse.
+        r"""Gets the bucket of this CreateRecordIndexResponse.
 
         桶名称
 
@@ -359,7 +359,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this CreateRecordIndexResponse.
+        r"""Sets the bucket of this CreateRecordIndexResponse.
 
         桶名称
 
@@ -370,7 +370,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def object(self):
-        """Gets the object of this CreateRecordIndexResponse.
+        r"""Gets the object of this CreateRecordIndexResponse.
 
         m3u8文件路径。默认Index/{publish_domain}/{app}/{stream}-{start_time}-{end_time}
 
@@ -381,7 +381,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @object.setter
     def object(self, object):
-        """Sets the object of this CreateRecordIndexResponse.
+        r"""Sets the object of this CreateRecordIndexResponse.
 
         m3u8文件路径。默认Index/{publish_domain}/{app}/{stream}-{start_time}-{end_time}
 
@@ -392,7 +392,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateRecordIndexResponse.
+        r"""Gets the x_request_id of this CreateRecordIndexResponse.
 
         :return: The x_request_id of this CreateRecordIndexResponse.
         :rtype: str
@@ -401,7 +401,7 @@ class CreateRecordIndexResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateRecordIndexResponse.
+        r"""Sets the x_request_id of this CreateRecordIndexResponse.
 
         :param x_request_id: The x_request_id of this CreateRecordIndexResponse.
         :type x_request_id: str

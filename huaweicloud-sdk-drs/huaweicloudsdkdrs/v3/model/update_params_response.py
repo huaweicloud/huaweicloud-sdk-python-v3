@@ -32,7 +32,7 @@ class UpdateParamsResponse(SdkResponse):
     }
 
     def __init__(self, success=None, should_restart=None, error_code=None, error_msg=None):
-        """UpdateParamsResponse
+        r"""UpdateParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this UpdateParamsResponse.
+        r"""Gets the success of this UpdateParamsResponse.
 
         修改参数是否成功
 
@@ -76,7 +76,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UpdateParamsResponse.
+        r"""Sets the success of this UpdateParamsResponse.
 
         修改参数是否成功
 
@@ -87,7 +87,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @property
     def should_restart(self):
-        """Gets the should_restart of this UpdateParamsResponse.
+        r"""Gets the should_restart of this UpdateParamsResponse.
 
         是否需要重启
 
@@ -98,7 +98,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @should_restart.setter
     def should_restart(self, should_restart):
-        """Sets the should_restart of this UpdateParamsResponse.
+        r"""Sets the should_restart of this UpdateParamsResponse.
 
         是否需要重启
 
@@ -109,7 +109,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateParamsResponse.
+        r"""Gets the error_code of this UpdateParamsResponse.
 
         错误码
 
@@ -120,7 +120,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateParamsResponse.
+        r"""Sets the error_code of this UpdateParamsResponse.
 
         错误码
 
@@ -131,7 +131,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UpdateParamsResponse.
+        r"""Gets the error_msg of this UpdateParamsResponse.
 
         错误信息
 
@@ -142,7 +142,7 @@ class UpdateParamsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdateParamsResponse.
+        r"""Sets the error_msg of this UpdateParamsResponse.
 
         错误信息
 

@@ -29,7 +29,7 @@ class HstsQuery:
     }
 
     def __init__(self, status=None, max_age=None, include_subdomains=None):
-        """HstsQuery
+        r"""HstsQuery
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class HstsQuery:
 
     @property
     def status(self):
-        """Gets the status of this HstsQuery.
+        r"""Gets the status of this HstsQuery.
 
         状态，on：打开，off：关闭。
 
@@ -67,7 +67,7 @@ class HstsQuery:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HstsQuery.
+        r"""Sets the status of this HstsQuery.
 
         状态，on：打开，off：关闭。
 
@@ -78,7 +78,7 @@ class HstsQuery:
 
     @property
     def max_age(self):
-        """Gets the max_age of this HstsQuery.
+        r"""Gets the max_age of this HstsQuery.
 
         过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒。
 
@@ -89,7 +89,7 @@ class HstsQuery:
 
     @max_age.setter
     def max_age(self, max_age):
-        """Sets the max_age of this HstsQuery.
+        r"""Sets the max_age of this HstsQuery.
 
         过期时间,即：响应头“Strict-Transport-Security”在客户端的缓存时间。单位:秒。
 
@@ -100,7 +100,7 @@ class HstsQuery:
 
     @property
     def include_subdomains(self):
-        """Gets the include_subdomains of this HstsQuery.
+        r"""Gets the include_subdomains of this HstsQuery.
 
         包含子域名，on：包含，off：不包含。
 
@@ -111,7 +111,7 @@ class HstsQuery:
 
     @include_subdomains.setter
     def include_subdomains(self, include_subdomains):
-        """Sets the include_subdomains of this HstsQuery.
+        r"""Sets the include_subdomains of this HstsQuery.
 
         包含子域名，on：包含，off：不包含。
 

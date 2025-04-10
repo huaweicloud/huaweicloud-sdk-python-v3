@@ -27,7 +27,7 @@ class ApplyHttpPolicyRequestBody:
     }
 
     def __init__(self, enterprise_project_id=None, hosts=None):
-        """ApplyHttpPolicyRequestBody
+        r"""ApplyHttpPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApplyHttpPolicyRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplyHttpPolicyRequestBody.
+        r"""Gets the enterprise_project_id of this ApplyHttpPolicyRequestBody.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -60,7 +60,7 @@ class ApplyHttpPolicyRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplyHttpPolicyRequestBody.
+        r"""Sets the enterprise_project_id of this ApplyHttpPolicyRequestBody.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -71,7 +71,7 @@ class ApplyHttpPolicyRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ApplyHttpPolicyRequestBody.
+        r"""Gets the hosts of this ApplyHttpPolicyRequestBody.
 
         待关联域名的id
 
@@ -82,7 +82,7 @@ class ApplyHttpPolicyRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ApplyHttpPolicyRequestBody.
+        r"""Sets the hosts of this ApplyHttpPolicyRequestBody.
 
         待关联域名的id
 

@@ -25,7 +25,7 @@ class RunCatalogActionRequest:
     }
 
     def __init__(self, body=None):
-        """RunCatalogActionRequest
+        r"""RunCatalogActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunCatalogActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunCatalogActionRequest.
+        r"""Gets the body of this RunCatalogActionRequest.
 
         :return: The body of this RunCatalogActionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.RunCatalogActionRequestBody`
@@ -52,7 +52,7 @@ class RunCatalogActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCatalogActionRequest.
+        r"""Sets the body of this RunCatalogActionRequest.
 
         :param body: The body of this RunCatalogActionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.RunCatalogActionRequestBody`

@@ -25,7 +25,7 @@ class ListCloudPhoneImagesRequest:
     }
 
     def __init__(self, image_type=None):
-        """ListCloudPhoneImagesRequest
+        r"""ListCloudPhoneImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCloudPhoneImagesRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListCloudPhoneImagesRequest.
+        r"""Gets the image_type of this ListCloudPhoneImagesRequest.
 
         镜像类型 公共镜像：public 私有镜像：private 共享镜像：share 所有类型镜像：all
 
@@ -54,7 +54,7 @@ class ListCloudPhoneImagesRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListCloudPhoneImagesRequest.
+        r"""Sets the image_type of this ListCloudPhoneImagesRequest.
 
         镜像类型 公共镜像：public 私有镜像：private 共享镜像：share 所有类型镜像：all
 

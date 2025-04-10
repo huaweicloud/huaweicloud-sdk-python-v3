@@ -25,7 +25,7 @@ class ShowPermanentAccessKeyRequest:
     }
 
     def __init__(self, access_key=None):
-        """ShowPermanentAccessKeyRequest
+        r"""ShowPermanentAccessKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPermanentAccessKeyRequest:
 
     @property
     def access_key(self):
-        """Gets the access_key of this ShowPermanentAccessKeyRequest.
+        r"""Gets the access_key of this ShowPermanentAccessKeyRequest.
 
         待查询的指定AK。
 
@@ -53,7 +53,7 @@ class ShowPermanentAccessKeyRequest:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this ShowPermanentAccessKeyRequest.
+        r"""Sets the access_key of this ShowPermanentAccessKeyRequest.
 
         待查询的指定AK。
 

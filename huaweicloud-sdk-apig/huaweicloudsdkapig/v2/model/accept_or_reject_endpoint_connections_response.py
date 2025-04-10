@@ -32,7 +32,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, connections=None, x_request_id=None):
-        """AcceptOrRejectEndpointConnectionsResponse
+        r"""AcceptOrRejectEndpointConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Gets the size of this AcceptOrRejectEndpointConnectionsResponse.
 
         本次返回的列表长度
 
@@ -74,7 +74,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Sets the size of this AcceptOrRejectEndpointConnectionsResponse.
 
         本次返回的列表长度
 
@@ -85,7 +85,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Gets the total of this AcceptOrRejectEndpointConnectionsResponse.
 
         满足条件的记录数
 
@@ -96,7 +96,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Sets the total of this AcceptOrRejectEndpointConnectionsResponse.
 
         满足条件的记录数
 
@@ -107,7 +107,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Gets the connections of this AcceptOrRejectEndpointConnectionsResponse.
 
         连接列表
 
@@ -118,7 +118,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Sets the connections of this AcceptOrRejectEndpointConnectionsResponse.
 
         连接列表
 
@@ -129,7 +129,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Gets the x_request_id of this AcceptOrRejectEndpointConnectionsResponse.
 
         :return: The x_request_id of this AcceptOrRejectEndpointConnectionsResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class AcceptOrRejectEndpointConnectionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AcceptOrRejectEndpointConnectionsResponse.
+        r"""Sets the x_request_id of this AcceptOrRejectEndpointConnectionsResponse.
 
         :param x_request_id: The x_request_id of this AcceptOrRejectEndpointConnectionsResponse.
         :type x_request_id: str

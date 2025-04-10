@@ -27,7 +27,7 @@ class UpdateDisasterRecoveryDrillNameRequest:
     }
 
     def __init__(self, disaster_recovery_drill_id=None, body=None):
-        """UpdateDisasterRecoveryDrillNameRequest
+        r"""UpdateDisasterRecoveryDrillNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDisasterRecoveryDrillNameRequest:
 
     @property
     def disaster_recovery_drill_id(self):
-        """Gets the disaster_recovery_drill_id of this UpdateDisasterRecoveryDrillNameRequest.
+        r"""Gets the disaster_recovery_drill_id of this UpdateDisasterRecoveryDrillNameRequest.
 
         容灾演练的ID。
 
@@ -60,7 +60,7 @@ class UpdateDisasterRecoveryDrillNameRequest:
 
     @disaster_recovery_drill_id.setter
     def disaster_recovery_drill_id(self, disaster_recovery_drill_id):
-        """Sets the disaster_recovery_drill_id of this UpdateDisasterRecoveryDrillNameRequest.
+        r"""Sets the disaster_recovery_drill_id of this UpdateDisasterRecoveryDrillNameRequest.
 
         容灾演练的ID。
 
@@ -71,7 +71,7 @@ class UpdateDisasterRecoveryDrillNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDisasterRecoveryDrillNameRequest.
+        r"""Gets the body of this UpdateDisasterRecoveryDrillNameRequest.
 
         :return: The body of this UpdateDisasterRecoveryDrillNameRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequestBody`
@@ -80,7 +80,7 @@ class UpdateDisasterRecoveryDrillNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDisasterRecoveryDrillNameRequest.
+        r"""Sets the body of this UpdateDisasterRecoveryDrillNameRequest.
 
         :param body: The body of this UpdateDisasterRecoveryDrillNameRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequestBody`

@@ -37,7 +37,7 @@ class ListPermissionsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, cloud_connection_id=None, instance_id=None):
-        """ListPermissionsRequest
+        r"""ListPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListPermissionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermissionsRequest.
+        r"""Gets the limit of this ListPermissionsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -96,7 +96,7 @@ class ListPermissionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermissionsRequest.
+        r"""Sets the limit of this ListPermissionsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -107,7 +107,7 @@ class ListPermissionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPermissionsRequest.
+        r"""Gets the marker of this ListPermissionsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -118,7 +118,7 @@ class ListPermissionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPermissionsRequest.
+        r"""Sets the marker of this ListPermissionsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -129,7 +129,7 @@ class ListPermissionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPermissionsRequest.
+        r"""Gets the id of this ListPermissionsRequest.
 
         根据id查询，可查询多个id。
 
@@ -140,7 +140,7 @@ class ListPermissionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPermissionsRequest.
+        r"""Sets the id of this ListPermissionsRequest.
 
         根据id查询，可查询多个id。
 
@@ -151,7 +151,7 @@ class ListPermissionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPermissionsRequest.
+        r"""Gets the name of this ListPermissionsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -162,7 +162,7 @@ class ListPermissionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPermissionsRequest.
+        r"""Sets the name of this ListPermissionsRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -173,7 +173,7 @@ class ListPermissionsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPermissionsRequest.
+        r"""Gets the description of this ListPermissionsRequest.
 
         根据描述查询，可查询多个描述。
 
@@ -184,7 +184,7 @@ class ListPermissionsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPermissionsRequest.
+        r"""Sets the description of this ListPermissionsRequest.
 
         根据描述查询，可查询多个描述。
 
@@ -195,7 +195,7 @@ class ListPermissionsRequest:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListPermissionsRequest.
+        r"""Gets the cloud_connection_id of this ListPermissionsRequest.
 
         根据云连接的ID过滤列表。
 
@@ -206,7 +206,7 @@ class ListPermissionsRequest:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListPermissionsRequest.
+        r"""Sets the cloud_connection_id of this ListPermissionsRequest.
 
         根据云连接的ID过滤列表。
 
@@ -217,7 +217,7 @@ class ListPermissionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPermissionsRequest.
+        r"""Gets the instance_id of this ListPermissionsRequest.
 
         根据实例ID过滤授权列表。
 
@@ -228,7 +228,7 @@ class ListPermissionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPermissionsRequest.
+        r"""Sets the instance_id of this ListPermissionsRequest.
 
         根据实例ID过滤授权列表。
 

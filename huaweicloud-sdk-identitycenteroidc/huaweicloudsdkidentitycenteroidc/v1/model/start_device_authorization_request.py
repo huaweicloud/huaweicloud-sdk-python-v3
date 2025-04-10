@@ -25,7 +25,7 @@ class StartDeviceAuthorizationRequest:
     }
 
     def __init__(self, body=None):
-        """StartDeviceAuthorizationRequest
+        r"""StartDeviceAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartDeviceAuthorizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartDeviceAuthorizationRequest.
+        r"""Gets the body of this StartDeviceAuthorizationRequest.
 
         :return: The body of this StartDeviceAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkidentitycenteroidc.v1.StartDeviceAuthorizationReqBody`
@@ -52,7 +52,7 @@ class StartDeviceAuthorizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartDeviceAuthorizationRequest.
+        r"""Sets the body of this StartDeviceAuthorizationRequest.
 
         :param body: The body of this StartDeviceAuthorizationRequest.
         :type body: :class:`huaweicloudsdkidentitycenteroidc.v1.StartDeviceAuthorizationReqBody`

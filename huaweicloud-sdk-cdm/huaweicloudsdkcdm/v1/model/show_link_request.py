@@ -27,7 +27,7 @@ class ShowLinkRequest:
     }
 
     def __init__(self, cluster_id=None, link_name=None):
-        """ShowLinkRequest
+        r"""ShowLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowLinkRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowLinkRequest.
+        r"""Gets the cluster_id of this ShowLinkRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class ShowLinkRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowLinkRequest.
+        r"""Sets the cluster_id of this ShowLinkRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class ShowLinkRequest:
 
     @property
     def link_name(self):
-        """Gets the link_name of this ShowLinkRequest.
+        r"""Gets the link_name of this ShowLinkRequest.
 
         连接名称
 
@@ -81,7 +81,7 @@ class ShowLinkRequest:
 
     @link_name.setter
     def link_name(self, link_name):
-        """Sets the link_name of this ShowLinkRequest.
+        r"""Sets the link_name of this ShowLinkRequest.
 
         连接名称
 

@@ -27,7 +27,7 @@ class LatestVersionInfo:
     }
 
     def __init__(self, latest_version=None, hda_type=None):
-        """LatestVersionInfo
+        r"""LatestVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LatestVersionInfo:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this LatestVersionInfo.
+        r"""Gets the latest_version of this LatestVersionInfo.
 
         租户的HDP最新版本。
 
@@ -61,7 +61,7 @@ class LatestVersionInfo:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this LatestVersionInfo.
+        r"""Sets the latest_version of this LatestVersionInfo.
 
         租户的HDP最新版本。
 
@@ -72,7 +72,7 @@ class LatestVersionInfo:
 
     @property
     def hda_type(self):
-        """Gets the hda_type of this LatestVersionInfo.
+        r"""Gets the hda_type of this LatestVersionInfo.
 
         HDA类型： * `SBC` - 非VDI下SBC类型 * `OA_APP` - VDI下非GPU类型 * `PT_APP` - VDI下GPU类型
 
@@ -83,7 +83,7 @@ class LatestVersionInfo:
 
     @hda_type.setter
     def hda_type(self, hda_type):
-        """Sets the hda_type of this LatestVersionInfo.
+        r"""Sets the hda_type of this LatestVersionInfo.
 
         HDA类型： * `SBC` - 非VDI下SBC类型 * `OA_APP` - VDI下非GPU类型 * `PT_APP` - VDI下GPU类型
 

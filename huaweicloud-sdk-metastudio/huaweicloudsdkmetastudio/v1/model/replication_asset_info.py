@@ -31,7 +31,7 @@ class ReplicationAssetInfo:
     }
 
     def __init__(self, asset_id=None, asset_info=None, encryption_info=None, expire_time=None):
-        """ReplicationAssetInfo
+        r"""ReplicationAssetInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ReplicationAssetInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ReplicationAssetInfo.
+        r"""Gets the asset_id of this ReplicationAssetInfo.
 
         资产ID。
 
@@ -75,7 +75,7 @@ class ReplicationAssetInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ReplicationAssetInfo.
+        r"""Sets the asset_id of this ReplicationAssetInfo.
 
         资产ID。
 
@@ -86,7 +86,7 @@ class ReplicationAssetInfo:
 
     @property
     def asset_info(self):
-        """Gets the asset_info of this ReplicationAssetInfo.
+        r"""Gets the asset_info of this ReplicationAssetInfo.
 
         加密后的资产信息。
 
@@ -97,7 +97,7 @@ class ReplicationAssetInfo:
 
     @asset_info.setter
     def asset_info(self, asset_info):
-        """Sets the asset_info of this ReplicationAssetInfo.
+        r"""Sets the asset_info of this ReplicationAssetInfo.
 
         加密后的资产信息。
 
@@ -108,7 +108,7 @@ class ReplicationAssetInfo:
 
     @property
     def encryption_info(self):
-        """Gets the encryption_info of this ReplicationAssetInfo.
+        r"""Gets the encryption_info of this ReplicationAssetInfo.
 
         :return: The encryption_info of this ReplicationAssetInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
@@ -117,7 +117,7 @@ class ReplicationAssetInfo:
 
     @encryption_info.setter
     def encryption_info(self, encryption_info):
-        """Sets the encryption_info of this ReplicationAssetInfo.
+        r"""Sets the encryption_info of this ReplicationAssetInfo.
 
         :param encryption_info: The encryption_info of this ReplicationAssetInfo.
         :type encryption_info: :class:`huaweicloudsdkmetastudio.v1.ReplicationEncInfo`
@@ -126,7 +126,7 @@ class ReplicationAssetInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ReplicationAssetInfo.
+        r"""Gets the expire_time of this ReplicationAssetInfo.
 
         过期时间
 
@@ -137,7 +137,7 @@ class ReplicationAssetInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ReplicationAssetInfo.
+        r"""Sets the expire_time of this ReplicationAssetInfo.
 
         过期时间
 

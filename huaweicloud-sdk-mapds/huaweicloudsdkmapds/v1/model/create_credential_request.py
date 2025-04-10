@@ -30,7 +30,7 @@ class CreateCredentialRequest:
     }
 
     def __init__(self, x_auth_token=None, content_type=None, body=None):
-        """CreateCredentialRequest
+        r"""CreateCredentialRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCredentialRequest:
 
     @property
     def x_auth_token(self):
-        """Gets the x_auth_token of this CreateCredentialRequest.
+        r"""Gets the x_auth_token of this CreateCredentialRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -67,7 +67,7 @@ class CreateCredentialRequest:
 
     @x_auth_token.setter
     def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this CreateCredentialRequest.
+        r"""Sets the x_auth_token of this CreateCredentialRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -78,7 +78,7 @@ class CreateCredentialRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateCredentialRequest.
+        r"""Gets the content_type of this CreateCredentialRequest.
 
         该字段填为“application/json;charset=utf8”。
 
@@ -89,7 +89,7 @@ class CreateCredentialRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateCredentialRequest.
+        r"""Sets the content_type of this CreateCredentialRequest.
 
         该字段填为“application/json;charset=utf8”。
 
@@ -100,7 +100,7 @@ class CreateCredentialRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCredentialRequest.
+        r"""Gets the body of this CreateCredentialRequest.
 
         :return: The body of this CreateCredentialRequest.
         :rtype: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBody`
@@ -109,7 +109,7 @@ class CreateCredentialRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCredentialRequest.
+        r"""Sets the body of this CreateCredentialRequest.
 
         :param body: The body of this CreateCredentialRequest.
         :type body: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBody`

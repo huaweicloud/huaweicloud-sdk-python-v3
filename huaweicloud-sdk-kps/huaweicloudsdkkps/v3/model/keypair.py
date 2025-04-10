@@ -37,7 +37,7 @@ class Keypair:
     }
 
     def __init__(self, name=None, type=None, scope=None, public_key=None, fingerprint=None, is_key_protection=None, frozen_state=None):
-        """Keypair
+        r"""Keypair
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Keypair:
 
     @property
     def name(self):
-        """Gets the name of this Keypair.
+        r"""Gets the name of this Keypair.
 
         SSH密钥对的名称
 
@@ -96,7 +96,7 @@ class Keypair:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Keypair.
+        r"""Sets the name of this Keypair.
 
         SSH密钥对的名称
 
@@ -107,7 +107,7 @@ class Keypair:
 
     @property
     def type(self):
-        """Gets the type of this Keypair.
+        r"""Gets the type of this Keypair.
 
         SSH密钥对的类型，值为“ssh”或“x509”
 
@@ -118,7 +118,7 @@ class Keypair:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Keypair.
+        r"""Sets the type of this Keypair.
 
         SSH密钥对的类型，值为“ssh”或“x509”
 
@@ -129,7 +129,7 @@ class Keypair:
 
     @property
     def scope(self):
-        """Gets the scope of this Keypair.
+        r"""Gets the scope of this Keypair.
 
         租户级或者用户级。domain或user。
 
@@ -140,7 +140,7 @@ class Keypair:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this Keypair.
+        r"""Sets the scope of this Keypair.
 
         租户级或者用户级。domain或user。
 
@@ -151,7 +151,7 @@ class Keypair:
 
     @property
     def public_key(self):
-        """Gets the public_key of this Keypair.
+        r"""Gets the public_key of this Keypair.
 
         SSH密钥对对应的publicKey信息
 
@@ -162,7 +162,7 @@ class Keypair:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this Keypair.
+        r"""Sets the public_key of this Keypair.
 
         SSH密钥对对应的publicKey信息
 
@@ -173,7 +173,7 @@ class Keypair:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this Keypair.
+        r"""Gets the fingerprint of this Keypair.
 
         SSH密钥对应指纹信息
 
@@ -184,7 +184,7 @@ class Keypair:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this Keypair.
+        r"""Sets the fingerprint of this Keypair.
 
         SSH密钥对应指纹信息
 
@@ -195,7 +195,7 @@ class Keypair:
 
     @property
     def is_key_protection(self):
-        """Gets the is_key_protection of this Keypair.
+        r"""Gets the is_key_protection of this Keypair.
 
         是否托管密钥
 
@@ -206,7 +206,7 @@ class Keypair:
 
     @is_key_protection.setter
     def is_key_protection(self, is_key_protection):
-        """Sets the is_key_protection of this Keypair.
+        r"""Sets the is_key_protection of this Keypair.
 
         是否托管密钥
 
@@ -217,7 +217,7 @@ class Keypair:
 
     @property
     def frozen_state(self):
-        """Gets the frozen_state of this Keypair.
+        r"""Gets the frozen_state of this Keypair.
 
         冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
 
@@ -228,7 +228,7 @@ class Keypair:
 
     @frozen_state.setter
     def frozen_state(self, frozen_state):
-        """Sets the frozen_state of this Keypair.
+        r"""Sets the frozen_state of this Keypair.
 
         冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
 

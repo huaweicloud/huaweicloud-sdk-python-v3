@@ -84,7 +84,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
     }
 
     def __init__(self, visibility=None, name=None, protected=None, container_format=None, disk_format=None, tags=None, min_ram=None, min_disk=None, status=None, created_at=None, updated_at=None, _self=None, id=None, file=None, schema=None, image_source_type=None, image_size=None, isregistered=None, os_version=None, os_type=None, platform=None, os_bit=None, imagetype=None, virtual_env_type=None, owner=None, virtual_size=None, properties=None, root_origin=None, checksum=None, size=None):
-        """GlanceCreateImageMetadataResponse
+        r"""GlanceCreateImageMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -247,7 +247,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this GlanceCreateImageMetadataResponse.
+        r"""Gets the visibility of this GlanceCreateImageMetadataResponse.
 
         其他租户是否可见。取值为private。
 
@@ -258,7 +258,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this GlanceCreateImageMetadataResponse.
+        r"""Sets the visibility of this GlanceCreateImageMetadataResponse.
 
         其他租户是否可见。取值为private。
 
@@ -269,7 +269,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GlanceCreateImageMetadataResponse.
+        r"""Gets the name of this GlanceCreateImageMetadataResponse.
 
         镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1～128位。
 
@@ -280,7 +280,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceCreateImageMetadataResponse.
+        r"""Sets the name of this GlanceCreateImageMetadataResponse.
 
         镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1～128位。
 
@@ -291,7 +291,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def protected(self):
-        """Gets the protected of this GlanceCreateImageMetadataResponse.
+        r"""Gets the protected of this GlanceCreateImageMetadataResponse.
 
         镜像是否被保护，保护后的镜像不可删除。取值为false
 
@@ -302,7 +302,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this GlanceCreateImageMetadataResponse.
+        r"""Sets the protected of this GlanceCreateImageMetadataResponse.
 
         镜像是否被保护，保护后的镜像不可删除。取值为false
 
@@ -313,7 +313,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def container_format(self):
-        """Gets the container_format of this GlanceCreateImageMetadataResponse.
+        r"""Gets the container_format of this GlanceCreateImageMetadataResponse.
 
         容器格式。取值为bare。
 
@@ -324,7 +324,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this GlanceCreateImageMetadataResponse.
+        r"""Sets the container_format of this GlanceCreateImageMetadataResponse.
 
         容器格式。取值为bare。
 
@@ -335,7 +335,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this GlanceCreateImageMetadataResponse.
+        r"""Gets the disk_format of this GlanceCreateImageMetadataResponse.
 
         镜像文件格式。目前支持vhd、zvhd、raw、qcow2。默认值是vhd。
 
@@ -346,7 +346,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this GlanceCreateImageMetadataResponse.
+        r"""Sets the disk_format of this GlanceCreateImageMetadataResponse.
 
         镜像文件格式。目前支持vhd、zvhd、raw、qcow2。默认值是vhd。
 
@@ -357,7 +357,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this GlanceCreateImageMetadataResponse.
+        r"""Gets the tags of this GlanceCreateImageMetadataResponse.
 
         镜像标签列表。长度为1～255位。
 
@@ -368,7 +368,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GlanceCreateImageMetadataResponse.
+        r"""Sets the tags of this GlanceCreateImageMetadataResponse.
 
         镜像标签列表。长度为1～255位。
 
@@ -379,7 +379,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this GlanceCreateImageMetadataResponse.
+        r"""Gets the min_ram of this GlanceCreateImageMetadataResponse.
 
         镜像运行最小内存，单位为MB。取值参考ECS规格限制，一般设置为0。云服务器的规格限制，请参见规格清单。
 
@@ -390,7 +390,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this GlanceCreateImageMetadataResponse.
+        r"""Sets the min_ram of this GlanceCreateImageMetadataResponse.
 
         镜像运行最小内存，单位为MB。取值参考ECS规格限制，一般设置为0。云服务器的规格限制，请参见规格清单。
 
@@ -401,7 +401,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this GlanceCreateImageMetadataResponse.
+        r"""Gets the min_disk of this GlanceCreateImageMetadataResponse.
 
         镜像运行需要的最小磁盘容量，单位为GB 。取值为40～1024GB。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
 
@@ -412,7 +412,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this GlanceCreateImageMetadataResponse.
+        r"""Sets the min_disk of this GlanceCreateImageMetadataResponse.
 
         镜像运行需要的最小磁盘容量，单位为GB 。取值为40～1024GB。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
 
@@ -423,7 +423,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GlanceCreateImageMetadataResponse.
+        r"""Gets the status of this GlanceCreateImageMetadataResponse.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
@@ -434,7 +434,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlanceCreateImageMetadataResponse.
+        r"""Sets the status of this GlanceCreateImageMetadataResponse.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
@@ -445,7 +445,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlanceCreateImageMetadataResponse.
+        r"""Gets the created_at of this GlanceCreateImageMetadataResponse.
 
         创建时间。格式为UTC时间。
 
@@ -456,7 +456,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlanceCreateImageMetadataResponse.
+        r"""Sets the created_at of this GlanceCreateImageMetadataResponse.
 
         创建时间。格式为UTC时间。
 
@@ -467,7 +467,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlanceCreateImageMetadataResponse.
+        r"""Gets the updated_at of this GlanceCreateImageMetadataResponse.
 
         更新时间。格式为UTC时间。
 
@@ -478,7 +478,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlanceCreateImageMetadataResponse.
+        r"""Sets the updated_at of this GlanceCreateImageMetadataResponse.
 
         更新时间。格式为UTC时间。
 
@@ -489,7 +489,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def _self(self):
-        """Gets the _self of this GlanceCreateImageMetadataResponse.
+        r"""Gets the _self of this GlanceCreateImageMetadataResponse.
 
         本镜像链接。
 
@@ -500,7 +500,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this GlanceCreateImageMetadataResponse.
+        r"""Sets the _self of this GlanceCreateImageMetadataResponse.
 
         本镜像链接。
 
@@ -511,7 +511,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this GlanceCreateImageMetadataResponse.
+        r"""Gets the id of this GlanceCreateImageMetadataResponse.
 
         镜像ID，用户调用创建镜像接口后，需保存该镜像的ID，用来调用上传镜像接口完成镜像上传。
 
@@ -522,7 +522,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlanceCreateImageMetadataResponse.
+        r"""Sets the id of this GlanceCreateImageMetadataResponse.
 
         镜像ID，用户调用创建镜像接口后，需保存该镜像的ID，用来调用上传镜像接口完成镜像上传。
 
@@ -533,7 +533,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def file(self):
-        """Gets the file of this GlanceCreateImageMetadataResponse.
+        r"""Gets the file of this GlanceCreateImageMetadataResponse.
 
         上传下载镜像文件的地址链接。
 
@@ -544,7 +544,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @file.setter
     def file(self, file):
-        """Sets the file of this GlanceCreateImageMetadataResponse.
+        r"""Sets the file of this GlanceCreateImageMetadataResponse.
 
         上传下载镜像文件的地址链接。
 
@@ -555,7 +555,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceCreateImageMetadataResponse.
+        r"""Gets the schema of this GlanceCreateImageMetadataResponse.
 
         视图链接。
 
@@ -566,7 +566,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceCreateImageMetadataResponse.
+        r"""Sets the schema of this GlanceCreateImageMetadataResponse.
 
         视图链接。
 
@@ -577,7 +577,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def image_source_type(self):
-        """Gets the image_source_type of this GlanceCreateImageMetadataResponse.
+        r"""Gets the image_source_type of this GlanceCreateImageMetadataResponse.
 
         镜像后端存储类型，目前支持uds。
 
@@ -588,7 +588,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @image_source_type.setter
     def image_source_type(self, image_source_type):
-        """Sets the image_source_type of this GlanceCreateImageMetadataResponse.
+        r"""Sets the image_source_type of this GlanceCreateImageMetadataResponse.
 
         镜像后端存储类型，目前支持uds。
 
@@ -599,7 +599,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def image_size(self):
-        """Gets the image_size of this GlanceCreateImageMetadataResponse.
+        r"""Gets the image_size of this GlanceCreateImageMetadataResponse.
 
         镜像大小。单位为字节。
 
@@ -610,7 +610,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this GlanceCreateImageMetadataResponse.
+        r"""Sets the image_size of this GlanceCreateImageMetadataResponse.
 
         镜像大小。单位为字节。
 
@@ -621,7 +621,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this GlanceCreateImageMetadataResponse.
+        r"""Gets the isregistered of this GlanceCreateImageMetadataResponse.
 
         镜像是否注册。只有已注册的镜像才能在Portal界面上查询到。取值为true。
 
@@ -632,7 +632,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this GlanceCreateImageMetadataResponse.
+        r"""Sets the isregistered of this GlanceCreateImageMetadataResponse.
 
         镜像是否注册。只有已注册的镜像才能在Portal界面上查询到。取值为true。
 
@@ -643,7 +643,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this GlanceCreateImageMetadataResponse.
+        r"""Gets the os_version of this GlanceCreateImageMetadataResponse.
 
         镜像的操作系统具体版本。
 
@@ -654,7 +654,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this GlanceCreateImageMetadataResponse.
+        r"""Sets the os_version of this GlanceCreateImageMetadataResponse.
 
         镜像的操作系统具体版本。
 
@@ -665,7 +665,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this GlanceCreateImageMetadataResponse.
+        r"""Gets the os_type of this GlanceCreateImageMetadataResponse.
 
         镜像的操作系统类型，取值由__os_version确定。支持Windows、Linux和other。
 
@@ -676,7 +676,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this GlanceCreateImageMetadataResponse.
+        r"""Sets the os_type of this GlanceCreateImageMetadataResponse.
 
         镜像的操作系统类型，取值由__os_version确定。支持Windows、Linux和other。
 
@@ -687,7 +687,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def platform(self):
-        """Gets the platform of this GlanceCreateImageMetadataResponse.
+        r"""Gets the platform of this GlanceCreateImageMetadataResponse.
 
         表示镜像支持的操作系统平台。取值由__os_version确定
 
@@ -698,7 +698,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this GlanceCreateImageMetadataResponse.
+        r"""Sets the platform of this GlanceCreateImageMetadataResponse.
 
         表示镜像支持的操作系统平台。取值由__os_version确定
 
@@ -709,7 +709,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this GlanceCreateImageMetadataResponse.
+        r"""Gets the os_bit of this GlanceCreateImageMetadataResponse.
 
         表示操作系统位数。取值由__os_version确定，取值为32或64。
 
@@ -720,7 +720,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this GlanceCreateImageMetadataResponse.
+        r"""Sets the os_bit of this GlanceCreateImageMetadataResponse.
 
         表示操作系统位数。取值由__os_version确定，取值为32或64。
 
@@ -731,7 +731,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this GlanceCreateImageMetadataResponse.
+        r"""Gets the imagetype of this GlanceCreateImageMetadataResponse.
 
         镜像类型。取值为private，表示私有镜像。
 
@@ -742,7 +742,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this GlanceCreateImageMetadataResponse.
+        r"""Sets the imagetype of this GlanceCreateImageMetadataResponse.
 
         镜像类型。取值为private，表示私有镜像。
 
@@ -753,7 +753,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this GlanceCreateImageMetadataResponse.
+        r"""Gets the virtual_env_type of this GlanceCreateImageMetadataResponse.
 
         平台类型。镜像使用环境类型：FusionCompute、Ironic、DataImage。如果是云主机云服务器镜像，则取值为FusionCompute。如果是数据卷镜像则取值是DataImage。如果是物理机裸金属服务器镜像，则取值是Ironic。
 
@@ -764,7 +764,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this GlanceCreateImageMetadataResponse.
+        r"""Sets the virtual_env_type of this GlanceCreateImageMetadataResponse.
 
         平台类型。镜像使用环境类型：FusionCompute、Ironic、DataImage。如果是云主机云服务器镜像，则取值为FusionCompute。如果是数据卷镜像则取值是DataImage。如果是物理机裸金属服务器镜像，则取值是Ironic。
 
@@ -775,7 +775,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this GlanceCreateImageMetadataResponse.
+        r"""Gets the owner of this GlanceCreateImageMetadataResponse.
 
         镜像所属项目ID。
 
@@ -786,7 +786,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GlanceCreateImageMetadataResponse.
+        r"""Sets the owner of this GlanceCreateImageMetadataResponse.
 
         镜像所属项目ID。
 
@@ -797,7 +797,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def virtual_size(self):
-        """Gets the virtual_size of this GlanceCreateImageMetadataResponse.
+        r"""Gets the virtual_size of this GlanceCreateImageMetadataResponse.
 
         镜像虚拟大小。单位为字节。
 
@@ -808,7 +808,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @virtual_size.setter
     def virtual_size(self, virtual_size):
-        """Sets the virtual_size of this GlanceCreateImageMetadataResponse.
+        r"""Sets the virtual_size of this GlanceCreateImageMetadataResponse.
 
         镜像虚拟大小。单位为字节。
 
@@ -819,7 +819,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this GlanceCreateImageMetadataResponse.
+        r"""Gets the properties of this GlanceCreateImageMetadataResponse.
 
         镜像属性的集合，不表示具体的镜像属性
 
@@ -830,7 +830,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this GlanceCreateImageMetadataResponse.
+        r"""Sets the properties of this GlanceCreateImageMetadataResponse.
 
         镜像属性的集合，不表示具体的镜像属性
 
@@ -841,7 +841,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def root_origin(self):
-        """Gets the root_origin of this GlanceCreateImageMetadataResponse.
+        r"""Gets the root_origin of this GlanceCreateImageMetadataResponse.
 
         表示当前镜像来源是从外部导入。取值：file
 
@@ -852,7 +852,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @root_origin.setter
     def root_origin(self, root_origin):
-        """Sets the root_origin of this GlanceCreateImageMetadataResponse.
+        r"""Sets the root_origin of this GlanceCreateImageMetadataResponse.
 
         表示当前镜像来源是从外部导入。取值：file
 
@@ -863,7 +863,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def checksum(self):
-        """Gets the checksum of this GlanceCreateImageMetadataResponse.
+        r"""Gets the checksum of this GlanceCreateImageMetadataResponse.
 
         镜像文件md5值。
 
@@ -874,7 +874,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this GlanceCreateImageMetadataResponse.
+        r"""Sets the checksum of this GlanceCreateImageMetadataResponse.
 
         镜像文件md5值。
 
@@ -885,7 +885,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this GlanceCreateImageMetadataResponse.
+        r"""Gets the size of this GlanceCreateImageMetadataResponse.
 
         目前暂时不使用。
 
@@ -896,7 +896,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GlanceCreateImageMetadataResponse.
+        r"""Sets the size of this GlanceCreateImageMetadataResponse.
 
         目前暂时不使用。
 

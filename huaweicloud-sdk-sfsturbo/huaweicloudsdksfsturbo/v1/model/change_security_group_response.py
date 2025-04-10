@@ -26,7 +26,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """ChangeSecurityGroupResponse
+        r"""ChangeSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ChangeSecurityGroupResponse.
+        r"""Gets the id of this ChangeSecurityGroupResponse.
 
         SFS Turbo文件系统ID。
 
@@ -55,7 +55,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChangeSecurityGroupResponse.
+        r"""Sets the id of this ChangeSecurityGroupResponse.
 
         SFS Turbo文件系统ID。
 

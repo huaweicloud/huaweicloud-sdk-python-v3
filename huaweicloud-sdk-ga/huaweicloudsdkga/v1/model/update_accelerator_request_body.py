@@ -25,7 +25,7 @@ class UpdateAcceleratorRequestBody:
     }
 
     def __init__(self, accelerator=None):
-        """UpdateAcceleratorRequestBody
+        r"""UpdateAcceleratorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAcceleratorRequestBody:
 
     @property
     def accelerator(self):
-        """Gets the accelerator of this UpdateAcceleratorRequestBody.
+        r"""Gets the accelerator of this UpdateAcceleratorRequestBody.
 
         :return: The accelerator of this UpdateAcceleratorRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.UpdateAcceleratorOption`
@@ -51,7 +51,7 @@ class UpdateAcceleratorRequestBody:
 
     @accelerator.setter
     def accelerator(self, accelerator):
-        """Sets the accelerator of this UpdateAcceleratorRequestBody.
+        r"""Sets the accelerator of this UpdateAcceleratorRequestBody.
 
         :param accelerator: The accelerator of this UpdateAcceleratorRequestBody.
         :type accelerator: :class:`huaweicloudsdkga.v1.UpdateAcceleratorOption`

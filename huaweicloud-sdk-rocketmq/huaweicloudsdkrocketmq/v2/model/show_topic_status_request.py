@@ -27,7 +27,7 @@ class ShowTopicStatusRequest:
     }
 
     def __init__(self, instance_id=None, topic=None):
-        """ShowTopicStatusRequest
+        r"""ShowTopicStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTopicStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowTopicStatusRequest.
+        r"""Gets the instance_id of this ShowTopicStatusRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowTopicStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowTopicStatusRequest.
+        r"""Sets the instance_id of this ShowTopicStatusRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowTopicStatusRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowTopicStatusRequest.
+        r"""Gets the topic of this ShowTopicStatusRequest.
 
         主题名称。
 
@@ -81,7 +81,7 @@ class ShowTopicStatusRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowTopicStatusRequest.
+        r"""Sets the topic of this ShowTopicStatusRequest.
 
         主题名称。
 

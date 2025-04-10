@@ -43,7 +43,7 @@ class Input:
     }
 
     def __init__(self, parameter_name=None, type=None, value_type=None, template_parameter_name=None, parameter_value=None, description=None, default=None, label=None, constraints=None, invisible=None):
-        """Input
+        r"""Input
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class Input:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this Input.
+        r"""Gets the parameter_name of this Input.
 
         输入参数名称，由小写字母、数字和中划线“-”组成
 
@@ -115,7 +115,7 @@ class Input:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this Input.
+        r"""Sets the parameter_name of this Input.
 
         输入参数名称，由小写字母、数字和中划线“-”组成
 
@@ -126,7 +126,7 @@ class Input:
 
     @property
     def type(self):
-        """Gets the type of this Input.
+        r"""Gets the type of this Input.
 
         参数类型。可为string，integer，float，boolean，list，map。type为list类型时，value_type必填
 
@@ -137,7 +137,7 @@ class Input:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Input.
+        r"""Sets the type of this Input.
 
         参数类型。可为string，integer，float，boolean，list，map。type为list类型时，value_type必填
 
@@ -148,7 +148,7 @@ class Input:
 
     @property
     def value_type(self):
-        """Gets the value_type of this Input.
+        r"""Gets the value_type of this Input.
 
         :return: The value_type of this Input.
         :rtype: :class:`huaweicloudsdkdwr.v3.InputParaValueType`
@@ -157,7 +157,7 @@ class Input:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this Input.
+        r"""Sets the value_type of this Input.
 
         :param value_type: The value_type of this Input.
         :type value_type: :class:`huaweicloudsdkdwr.v3.InputParaValueType`
@@ -166,7 +166,7 @@ class Input:
 
     @property
     def template_parameter_name(self):
-        """Gets the template_parameter_name of this Input.
+        r"""Gets the template_parameter_name of this Input.
 
         当多个相同action template在一个工作流时，增加字段做国际化。 由小写字母、数字和中划线“-”组成
 
@@ -177,7 +177,7 @@ class Input:
 
     @template_parameter_name.setter
     def template_parameter_name(self, template_parameter_name):
-        """Sets the template_parameter_name of this Input.
+        r"""Sets the template_parameter_name of this Input.
 
         当多个相同action template在一个工作流时，增加字段做国际化。 由小写字母、数字和中划线“-”组成
 
@@ -188,7 +188,7 @@ class Input:
 
     @property
     def parameter_value(self):
-        """Gets the parameter_value of this Input.
+        r"""Gets the parameter_value of this Input.
 
         Input结构体参数类型。支持string,integer,float,boolean,list,map
 
@@ -199,7 +199,7 @@ class Input:
 
     @parameter_value.setter
     def parameter_value(self, parameter_value):
-        """Sets the parameter_value of this Input.
+        r"""Sets the parameter_value of this Input.
 
         Input结构体参数类型。支持string,integer,float,boolean,list,map
 
@@ -210,7 +210,7 @@ class Input:
 
     @property
     def description(self):
-        """Gets the description of this Input.
+        r"""Gets the description of this Input.
 
         参数项描述信息。
 
@@ -221,7 +221,7 @@ class Input:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Input.
+        r"""Sets the description of this Input.
 
         参数项描述信息。
 
@@ -232,7 +232,7 @@ class Input:
 
     @property
     def default(self):
-        """Gets the default of this Input.
+        r"""Gets the default of this Input.
 
         默认值信息可在创建工作流实例时由外部输入替换；若未填写默认值，外部输入将必须填写这个参数的值。 注：默认值的类型和定义的参数类型必须统一。如果出现不一致，解析器可能会进行自动转换而导致出现与预期不符合的情况。
 
@@ -243,7 +243,7 @@ class Input:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this Input.
+        r"""Sets the default of this Input.
 
         默认值信息可在创建工作流实例时由外部输入替换；若未填写默认值，外部输入将必须填写这个参数的值。 注：默认值的类型和定义的参数类型必须统一。如果出现不一致，解析器可能会进行自动转换而导致出现与预期不符合的情况。
 
@@ -254,7 +254,7 @@ class Input:
 
     @property
     def label(self):
-        """Gets the label of this Input.
+        r"""Gets the label of this Input.
 
         参数的标签，此处定义的标签可在创建堆栈时进行分类展示。
 
@@ -265,7 +265,7 @@ class Input:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this Input.
+        r"""Sets the label of this Input.
 
         参数的标签，此处定义的标签可在创建堆栈时进行分类展示。
 
@@ -276,7 +276,7 @@ class Input:
 
     @property
     def constraints(self):
-        """Gets the constraints of this Input.
+        r"""Gets the constraints of this Input.
 
         约束条件有以下几种，一个输入参数对每一种条件都只能定义一个规则。约束的多个条件中只要有一条不满足，即将认定参数非法。 equal：约定参数的value值必须等于特定值。 valid_values：参数的有效值，定义一个数组。 regex：参数需要满足某个正则条件，必须是字符串类型才可以进行匹配。 invalid_values：参数的无效值范围，如果参数值定义在其中，将会认为无效而报错。
 
@@ -287,7 +287,7 @@ class Input:
 
     @constraints.setter
     def constraints(self, constraints):
-        """Sets the constraints of this Input.
+        r"""Sets the constraints of this Input.
 
         约束条件有以下几种，一个输入参数对每一种条件都只能定义一个规则。约束的多个条件中只要有一条不满足，即将认定参数非法。 equal：约定参数的value值必须等于特定值。 valid_values：参数的有效值，定义一个数组。 regex：参数需要满足某个正则条件，必须是字符串类型才可以进行匹配。 invalid_values：参数的无效值范围，如果参数值定义在其中，将会认为无效而报错。
 
@@ -298,7 +298,7 @@ class Input:
 
     @property
     def invisible(self):
-        """Gets the invisible of this Input.
+        r"""Gets the invisible of this Input.
 
         输入参数的invisible设置为true时，返回值为******。
 
@@ -309,7 +309,7 @@ class Input:
 
     @invisible.setter
     def invisible(self, invisible):
-        """Sets the invisible of this Input.
+        r"""Sets the invisible of this Input.
 
         输入参数的invisible设置为true时，返回值为******。
 

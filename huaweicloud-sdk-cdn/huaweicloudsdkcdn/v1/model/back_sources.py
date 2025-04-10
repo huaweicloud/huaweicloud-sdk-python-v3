@@ -33,7 +33,7 @@ class BackSources:
     }
 
     def __init__(self, sources_type=None, ip_or_domain=None, obs_bucket_type=None, http_port=None, https_port=None):
-        """BackSources
+        r"""BackSources
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BackSources:
 
     @property
     def sources_type(self):
-        """Gets the sources_type of this BackSources.
+        r"""Gets the sources_type of this BackSources.
 
         源站类型, ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
 
@@ -80,7 +80,7 @@ class BackSources:
 
     @sources_type.setter
     def sources_type(self, sources_type):
-        """Sets the sources_type of this BackSources.
+        r"""Sets the sources_type of this BackSources.
 
         源站类型, ipaddr：源站IP，domain：源站域名，obs_bucket：OBS桶域名。
 
@@ -91,7 +91,7 @@ class BackSources:
 
     @property
     def ip_or_domain(self):
-        """Gets the ip_or_domain of this BackSources.
+        r"""Gets the ip_or_domain of this BackSources.
 
         源站IP或者域名。
 
@@ -102,7 +102,7 @@ class BackSources:
 
     @ip_or_domain.setter
     def ip_or_domain(self, ip_or_domain):
-        """Sets the ip_or_domain of this BackSources.
+        r"""Sets the ip_or_domain of this BackSources.
 
         源站IP或者域名。
 
@@ -113,7 +113,7 @@ class BackSources:
 
     @property
     def obs_bucket_type(self):
-        """Gets the obs_bucket_type of this BackSources.
+        r"""Gets the obs_bucket_type of this BackSources.
 
         OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
 
@@ -124,7 +124,7 @@ class BackSources:
 
     @obs_bucket_type.setter
     def obs_bucket_type(self, obs_bucket_type):
-        """Sets the obs_bucket_type of this BackSources.
+        r"""Sets the obs_bucket_type of this BackSources.
 
         OBS桶类型： - “private”， 私有桶： - “public”，公有桶。
 
@@ -135,7 +135,7 @@ class BackSources:
 
     @property
     def http_port(self):
-        """Gets the http_port of this BackSources.
+        r"""Gets the http_port of this BackSources.
 
         HTTP端口，取值范围：1-65535。
 
@@ -146,7 +146,7 @@ class BackSources:
 
     @http_port.setter
     def http_port(self, http_port):
-        """Sets the http_port of this BackSources.
+        r"""Sets the http_port of this BackSources.
 
         HTTP端口，取值范围：1-65535。
 
@@ -157,7 +157,7 @@ class BackSources:
 
     @property
     def https_port(self):
-        """Gets the https_port of this BackSources.
+        r"""Gets the https_port of this BackSources.
 
         HTTPS端口，取值范围：1-65535。
 
@@ -168,7 +168,7 @@ class BackSources:
 
     @https_port.setter
     def https_port(self, https_port):
-        """Sets the https_port of this BackSources.
+        r"""Sets the https_port of this BackSources.
 
         HTTPS端口，取值范围：1-65535。
 

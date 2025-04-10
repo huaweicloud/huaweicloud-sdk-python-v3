@@ -37,7 +37,7 @@ class QaPair:
     }
 
     def __init__(self, domain=None, link=None, question=None, answers=None, qa_pair_id=None, ex_questions=None, related_question_ids=None):
-        """QaPair
+        r"""QaPair
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QaPair:
 
     @property
     def domain(self):
-        """Gets the domain of this QaPair.
+        r"""Gets the domain of this QaPair.
 
         主题
 
@@ -96,7 +96,7 @@ class QaPair:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this QaPair.
+        r"""Sets the domain of this QaPair.
 
         主题
 
@@ -107,7 +107,7 @@ class QaPair:
 
     @property
     def link(self):
-        """Gets the link of this QaPair.
+        r"""Gets the link of this QaPair.
 
         链接
 
@@ -118,7 +118,7 @@ class QaPair:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this QaPair.
+        r"""Sets the link of this QaPair.
 
         链接
 
@@ -129,7 +129,7 @@ class QaPair:
 
     @property
     def question(self):
-        """Gets the question of this QaPair.
+        r"""Gets the question of this QaPair.
 
         问题
 
@@ -140,7 +140,7 @@ class QaPair:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this QaPair.
+        r"""Sets the question of this QaPair.
 
         问题
 
@@ -151,7 +151,7 @@ class QaPair:
 
     @property
     def answers(self):
-        """Gets the answers of this QaPair.
+        r"""Gets the answers of this QaPair.
 
         答案列表
 
@@ -162,7 +162,7 @@ class QaPair:
 
     @answers.setter
     def answers(self, answers):
-        """Sets the answers of this QaPair.
+        r"""Sets the answers of this QaPair.
 
         答案列表
 
@@ -173,7 +173,7 @@ class QaPair:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this QaPair.
+        r"""Gets the qa_pair_id of this QaPair.
 
         语料Id
 
@@ -184,7 +184,7 @@ class QaPair:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this QaPair.
+        r"""Sets the qa_pair_id of this QaPair.
 
         语料Id
 
@@ -195,7 +195,7 @@ class QaPair:
 
     @property
     def ex_questions(self):
-        """Gets the ex_questions of this QaPair.
+        r"""Gets the ex_questions of this QaPair.
 
         扩展问题列表
 
@@ -206,7 +206,7 @@ class QaPair:
 
     @ex_questions.setter
     def ex_questions(self, ex_questions):
-        """Sets the ex_questions of this QaPair.
+        r"""Sets the ex_questions of this QaPair.
 
         扩展问题列表
 
@@ -217,7 +217,7 @@ class QaPair:
 
     @property
     def related_question_ids(self):
-        """Gets the related_question_ids of this QaPair.
+        r"""Gets the related_question_ids of this QaPair.
 
         相关问题列表
 
@@ -228,7 +228,7 @@ class QaPair:
 
     @related_question_ids.setter
     def related_question_ids(self, related_question_ids):
-        """Sets the related_question_ids of this QaPair.
+        r"""Sets the related_question_ids of this QaPair.
 
         相关问题列表
 

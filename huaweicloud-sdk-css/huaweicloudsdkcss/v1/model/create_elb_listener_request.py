@@ -27,7 +27,7 @@ class CreateElbListenerRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateElbListenerRequest
+        r"""CreateElbListenerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateElbListenerRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateElbListenerRequest.
+        r"""Gets the cluster_id of this CreateElbListenerRequest.
 
         指定待更改集群名称的集群ID。
 
@@ -60,7 +60,7 @@ class CreateElbListenerRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateElbListenerRequest.
+        r"""Sets the cluster_id of this CreateElbListenerRequest.
 
         指定待更改集群名称的集群ID。
 
@@ -71,7 +71,7 @@ class CreateElbListenerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateElbListenerRequest.
+        r"""Gets the body of this CreateElbListenerRequest.
 
         :return: The body of this CreateElbListenerRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateEsListenerRequestBody`
@@ -80,7 +80,7 @@ class CreateElbListenerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateElbListenerRequest.
+        r"""Sets the body of this CreateElbListenerRequest.
 
         :param body: The body of this CreateElbListenerRequest.
         :type body: :class:`huaweicloudsdkcss.v1.CreateEsListenerRequestBody`

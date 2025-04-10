@@ -30,7 +30,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_status=None, fail_reason=None):
-        """ShowSqlLimitJobInfoResponse
+        r"""ShowSqlLimitJobInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSqlLimitJobInfoResponse.
+        r"""Gets the job_id of this ShowSqlLimitJobInfoResponse.
 
         任务ID
 
@@ -69,7 +69,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSqlLimitJobInfoResponse.
+        r"""Sets the job_id of this ShowSqlLimitJobInfoResponse.
 
         任务ID
 
@@ -80,7 +80,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
 
     @property
     def job_status(self):
-        """Gets the job_status of this ShowSqlLimitJobInfoResponse.
+        r"""Gets the job_status of this ShowSqlLimitJobInfoResponse.
 
         任务状态
 
@@ -91,7 +91,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ShowSqlLimitJobInfoResponse.
+        r"""Sets the job_status of this ShowSqlLimitJobInfoResponse.
 
         任务状态
 
@@ -102,7 +102,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowSqlLimitJobInfoResponse.
+        r"""Gets the fail_reason of this ShowSqlLimitJobInfoResponse.
 
         失败原因
 
@@ -113,7 +113,7 @@ class ShowSqlLimitJobInfoResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowSqlLimitJobInfoResponse.
+        r"""Sets the fail_reason of this ShowSqlLimitJobInfoResponse.
 
         失败原因
 

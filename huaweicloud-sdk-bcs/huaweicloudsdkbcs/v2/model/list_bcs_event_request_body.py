@@ -33,7 +33,7 @@ class ListBcsEventRequestBody:
     }
 
     def __init__(self, time_range=None, step=None, search=None, metadata_relation=None, sort=None):
-        """ListBcsEventRequestBody
+        r"""ListBcsEventRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListBcsEventRequestBody:
 
     @property
     def time_range(self):
-        """Gets the time_range of this ListBcsEventRequestBody.
+        r"""Gets the time_range of this ListBcsEventRequestBody.
 
         timeRange用于指标查询时间范围，主要用于解决客户端时间和服务端时间不一致情况下，查询最近N分钟的数据。另可用于精确查询某一段时间的数据。
 
@@ -80,7 +80,7 @@ class ListBcsEventRequestBody:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this ListBcsEventRequestBody.
+        r"""Sets the time_range of this ListBcsEventRequestBody.
 
         timeRange用于指标查询时间范围，主要用于解决客户端时间和服务端时间不一致情况下，查询最近N分钟的数据。另可用于精确查询某一段时间的数据。
 
@@ -91,7 +91,7 @@ class ListBcsEventRequestBody:
 
     @property
     def step(self):
-        """Gets the step of this ListBcsEventRequestBody.
+        r"""Gets the step of this ListBcsEventRequestBody.
 
         统计步长。毫秒数
 
@@ -102,7 +102,7 @@ class ListBcsEventRequestBody:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ListBcsEventRequestBody.
+        r"""Sets the step of this ListBcsEventRequestBody.
 
         统计步长。毫秒数
 
@@ -113,7 +113,7 @@ class ListBcsEventRequestBody:
 
     @property
     def search(self):
-        """Gets the search of this ListBcsEventRequestBody.
+        r"""Gets the search of this ListBcsEventRequestBody.
 
         模糊查询匹配字段，可以为空
 
@@ -124,7 +124,7 @@ class ListBcsEventRequestBody:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListBcsEventRequestBody.
+        r"""Sets the search of this ListBcsEventRequestBody.
 
         模糊查询匹配字段，可以为空
 
@@ -135,7 +135,7 @@ class ListBcsEventRequestBody:
 
     @property
     def metadata_relation(self):
-        """Gets the metadata_relation of this ListBcsEventRequestBody.
+        r"""Gets the metadata_relation of this ListBcsEventRequestBody.
 
         查询条件组合，可以为空
 
@@ -146,7 +146,7 @@ class ListBcsEventRequestBody:
 
     @metadata_relation.setter
     def metadata_relation(self, metadata_relation):
-        """Sets the metadata_relation of this ListBcsEventRequestBody.
+        r"""Sets the metadata_relation of this ListBcsEventRequestBody.
 
         查询条件组合，可以为空
 
@@ -157,7 +157,7 @@ class ListBcsEventRequestBody:
 
     @property
     def sort(self):
-        """Gets the sort of this ListBcsEventRequestBody.
+        r"""Gets the sort of this ListBcsEventRequestBody.
 
         :return: The sort of this ListBcsEventRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.EventResultSort`
@@ -166,7 +166,7 @@ class ListBcsEventRequestBody:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListBcsEventRequestBody.
+        r"""Sets the sort of this ListBcsEventRequestBody.
 
         :param sort: The sort of this ListBcsEventRequestBody.
         :type sort: :class:`huaweicloudsdkbcs.v2.EventResultSort`

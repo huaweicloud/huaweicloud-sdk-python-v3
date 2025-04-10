@@ -31,7 +31,7 @@ class MetricRequestV2:
     }
 
     def __init__(self, date_range=None, metric_type=None, dividend=None, divisor=None):
-        """MetricRequestV2
+        r"""MetricRequestV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MetricRequestV2:
 
     @property
     def date_range(self):
-        """Gets the date_range of this MetricRequestV2.
+        r"""Gets the date_range of this MetricRequestV2.
 
         统计周期
 
@@ -75,7 +75,7 @@ class MetricRequestV2:
 
     @date_range.setter
     def date_range(self, date_range):
-        """Sets the date_range of this MetricRequestV2.
+        r"""Sets the date_range of this MetricRequestV2.
 
         统计周期
 
@@ -86,7 +86,7 @@ class MetricRequestV2:
 
     @property
     def metric_type(self):
-        """Gets the metric_type of this MetricRequestV2.
+        r"""Gets the metric_type of this MetricRequestV2.
 
         指标类型
 
@@ -97,7 +97,7 @@ class MetricRequestV2:
 
     @metric_type.setter
     def metric_type(self, metric_type):
-        """Sets the metric_type of this MetricRequestV2.
+        r"""Sets the metric_type of this MetricRequestV2.
 
         指标类型
 
@@ -108,7 +108,7 @@ class MetricRequestV2:
 
     @property
     def dividend(self):
-        """Gets the dividend of this MetricRequestV2.
+        r"""Gets the dividend of this MetricRequestV2.
 
         :return: The dividend of this MetricRequestV2.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2Dividend`
@@ -117,7 +117,7 @@ class MetricRequestV2:
 
     @dividend.setter
     def dividend(self, dividend):
-        """Sets the dividend of this MetricRequestV2.
+        r"""Sets the dividend of this MetricRequestV2.
 
         :param dividend: The dividend of this MetricRequestV2.
         :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2Dividend`
@@ -126,7 +126,7 @@ class MetricRequestV2:
 
     @property
     def divisor(self):
-        """Gets the divisor of this MetricRequestV2.
+        r"""Gets the divisor of this MetricRequestV2.
 
         指标分母过滤条件
 
@@ -137,7 +137,7 @@ class MetricRequestV2:
 
     @divisor.setter
     def divisor(self, divisor):
-        """Sets the divisor of this MetricRequestV2.
+        r"""Sets the divisor of this MetricRequestV2.
 
         指标分母过滤条件
 

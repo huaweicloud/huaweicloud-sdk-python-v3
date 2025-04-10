@@ -27,7 +27,7 @@ class PeerAddress:
     }
 
     def __init__(self, domain_port=None, ip_port=None):
-        """PeerAddress
+        r"""PeerAddress
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PeerAddress:
 
     @property
     def domain_port(self):
-        """Gets the domain_port of this PeerAddress.
+        r"""Gets the domain_port of this PeerAddress.
 
         域名地址
 
@@ -61,7 +61,7 @@ class PeerAddress:
 
     @domain_port.setter
     def domain_port(self, domain_port):
-        """Sets the domain_port of this PeerAddress.
+        r"""Sets the domain_port of this PeerAddress.
 
         域名地址
 
@@ -72,7 +72,7 @@ class PeerAddress:
 
     @property
     def ip_port(self):
-        """Gets the ip_port of this PeerAddress.
+        r"""Gets the ip_port of this PeerAddress.
 
         IP地址
 
@@ -83,7 +83,7 @@ class PeerAddress:
 
     @ip_port.setter
     def ip_port(self, ip_port):
-        """Sets the ip_port of this PeerAddress.
+        r"""Sets the ip_port of this PeerAddress.
 
         IP地址
 

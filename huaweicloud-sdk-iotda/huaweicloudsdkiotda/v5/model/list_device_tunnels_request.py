@@ -27,7 +27,7 @@ class ListDeviceTunnelsRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None):
-        """ListDeviceTunnelsRequest
+        r"""ListDeviceTunnelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDeviceTunnelsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDeviceTunnelsRequest.
+        r"""Gets the instance_id of this ListDeviceTunnelsRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0121.html)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0121.html)](tag:hws_hk)。
 
@@ -61,7 +61,7 @@ class ListDeviceTunnelsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDeviceTunnelsRequest.
+        r"""Sets the instance_id of this ListDeviceTunnelsRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0121.html)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0121.html)](tag:hws_hk)。
 
@@ -72,7 +72,7 @@ class ListDeviceTunnelsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListDeviceTunnelsRequest.
+        r"""Gets the device_id of this ListDeviceTunnelsRequest.
 
         **参数说明**：设备ID
 
@@ -83,7 +83,7 @@ class ListDeviceTunnelsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListDeviceTunnelsRequest.
+        r"""Sets the device_id of this ListDeviceTunnelsRequest.
 
         **参数说明**：设备ID
 

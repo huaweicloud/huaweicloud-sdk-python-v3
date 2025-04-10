@@ -37,7 +37,7 @@ class PartAttendee:
     }
 
     def __init__(self, name=None, phone=None, phone2=None, phone3=None, type=None, role=None, is_mute=None):
-        """PartAttendee
+        r"""PartAttendee
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PartAttendee:
 
     @property
     def name(self):
-        """Gets the name of this PartAttendee.
+        r"""Gets the name of this PartAttendee.
 
         与会者名称。
 
@@ -96,7 +96,7 @@ class PartAttendee:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PartAttendee.
+        r"""Sets the name of this PartAttendee.
 
         与会者名称。
 
@@ -107,7 +107,7 @@ class PartAttendee:
 
     @property
     def phone(self):
-        """Gets the phone of this PartAttendee.
+        r"""Gets the phone of this PartAttendee.
 
         号码。SIP号码或者手机号码。
 
@@ -118,7 +118,7 @@ class PartAttendee:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this PartAttendee.
+        r"""Sets the phone of this PartAttendee.
 
         号码。SIP号码或者手机号码。
 
@@ -129,7 +129,7 @@ class PartAttendee:
 
     @property
     def phone2(self):
-        """Gets the phone2 of this PartAttendee.
+        r"""Gets the phone2 of this PartAttendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -140,7 +140,7 @@ class PartAttendee:
 
     @phone2.setter
     def phone2(self, phone2):
-        """Sets the phone2 of this PartAttendee.
+        r"""Sets the phone2 of this PartAttendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -151,7 +151,7 @@ class PartAttendee:
 
     @property
     def phone3(self):
-        """Gets the phone3 of this PartAttendee.
+        r"""Gets the phone3 of this PartAttendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -162,7 +162,7 @@ class PartAttendee:
 
     @phone3.setter
     def phone3(self, phone3):
-        """Sets the phone3 of this PartAttendee.
+        r"""Sets the phone3 of this PartAttendee.
 
         预留字段，取值类型同参数“phone”。
 
@@ -173,7 +173,7 @@ class PartAttendee:
 
     @property
     def type(self):
-        """Gets the type of this PartAttendee.
+        r"""Gets the type of this PartAttendee.
 
         终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
@@ -184,7 +184,7 @@ class PartAttendee:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PartAttendee.
+        r"""Sets the type of this PartAttendee.
 
         终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
@@ -195,7 +195,7 @@ class PartAttendee:
 
     @property
     def role(self):
-        """Gets the role of this PartAttendee.
+        r"""Gets the role of this PartAttendee.
 
         用户入会时是否需要自动静音 。默认不静音。 * 0： 不需要静音 * 1： 需要静音
 
@@ -206,7 +206,7 @@ class PartAttendee:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this PartAttendee.
+        r"""Sets the role of this PartAttendee.
 
         用户入会时是否需要自动静音 。默认不静音。 * 0： 不需要静音 * 1： 需要静音
 
@@ -217,7 +217,7 @@ class PartAttendee:
 
     @property
     def is_mute(self):
-        """Gets the is_mute of this PartAttendee.
+        r"""Gets the is_mute of this PartAttendee.
 
         用户入会时是否需要自动静音。默认不静音。 * 0: 不需要静音。 * 1: 需要静音。
 
@@ -228,7 +228,7 @@ class PartAttendee:
 
     @is_mute.setter
     def is_mute(self, is_mute):
-        """Sets the is_mute of this PartAttendee.
+        r"""Sets the is_mute of this PartAttendee.
 
         用户入会时是否需要自动静音。默认不静音。 * 0: 不需要静音。 * 1: 需要静音。
 

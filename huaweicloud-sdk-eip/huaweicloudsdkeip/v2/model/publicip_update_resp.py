@@ -57,7 +57,7 @@ class PublicipUpdateResp:
     }
 
     def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, alias=None):
-        """PublicipUpdateResp
+        r"""PublicipUpdateResp
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class PublicipUpdateResp:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this PublicipUpdateResp.
+        r"""Gets the bandwidth_id of this PublicipUpdateResp.
 
         弹性公网IP对应带宽ID
 
@@ -166,7 +166,7 @@ class PublicipUpdateResp:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this PublicipUpdateResp.
+        r"""Sets the bandwidth_id of this PublicipUpdateResp.
 
         弹性公网IP对应带宽ID
 
@@ -177,7 +177,7 @@ class PublicipUpdateResp:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this PublicipUpdateResp.
+        r"""Gets the bandwidth_name of this PublicipUpdateResp.
 
         带宽名称
 
@@ -188,7 +188,7 @@ class PublicipUpdateResp:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this PublicipUpdateResp.
+        r"""Sets the bandwidth_name of this PublicipUpdateResp.
 
         带宽名称
 
@@ -199,7 +199,7 @@ class PublicipUpdateResp:
 
     @property
     def bandwidth_share_type(self):
-        """Gets the bandwidth_share_type of this PublicipUpdateResp.
+        r"""Gets the bandwidth_share_type of this PublicipUpdateResp.
 
         表示共享带宽或者独享带宽  取值范围：PER，WHOLE。  WHOLE表示共享带宽  PER表示独享带宽  约束：其中IPv6暂不支持WHOLE类型带宽。
 
@@ -210,7 +210,7 @@ class PublicipUpdateResp:
 
     @bandwidth_share_type.setter
     def bandwidth_share_type(self, bandwidth_share_type):
-        """Sets the bandwidth_share_type of this PublicipUpdateResp.
+        r"""Sets the bandwidth_share_type of this PublicipUpdateResp.
 
         表示共享带宽或者独享带宽  取值范围：PER，WHOLE。  WHOLE表示共享带宽  PER表示独享带宽  约束：其中IPv6暂不支持WHOLE类型带宽。
 
@@ -221,7 +221,7 @@ class PublicipUpdateResp:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this PublicipUpdateResp.
+        r"""Gets the bandwidth_size of this PublicipUpdateResp.
 
         带宽大小，单位为Mbit/s。
 
@@ -232,7 +232,7 @@ class PublicipUpdateResp:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this PublicipUpdateResp.
+        r"""Sets the bandwidth_size of this PublicipUpdateResp.
 
         带宽大小，单位为Mbit/s。
 
@@ -243,7 +243,7 @@ class PublicipUpdateResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublicipUpdateResp.
+        r"""Gets the create_time of this PublicipUpdateResp.
 
         弹性公网IP申请时间（UTC）
 
@@ -254,7 +254,7 @@ class PublicipUpdateResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublicipUpdateResp.
+        r"""Sets the create_time of this PublicipUpdateResp.
 
         弹性公网IP申请时间（UTC）
 
@@ -265,7 +265,7 @@ class PublicipUpdateResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PublicipUpdateResp.
+        r"""Gets the enterprise_project_id of this PublicipUpdateResp.
 
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
 
@@ -276,7 +276,7 @@ class PublicipUpdateResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PublicipUpdateResp.
+        r"""Sets the enterprise_project_id of this PublicipUpdateResp.
 
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
 
@@ -287,7 +287,7 @@ class PublicipUpdateResp:
 
     @property
     def id(self):
-        """Gets the id of this PublicipUpdateResp.
+        r"""Gets the id of this PublicipUpdateResp.
 
         弹性公网IP唯一标识
 
@@ -298,7 +298,7 @@ class PublicipUpdateResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicipUpdateResp.
+        r"""Sets the id of this PublicipUpdateResp.
 
         弹性公网IP唯一标识
 
@@ -309,7 +309,7 @@ class PublicipUpdateResp:
 
     @property
     def port_id(self):
-        """Gets the port_id of this PublicipUpdateResp.
+        r"""Gets the port_id of this PublicipUpdateResp.
 
         功能说明：端口id。  约束：只有绑定了的弹性公网IP查询才会返回该参数
 
@@ -320,7 +320,7 @@ class PublicipUpdateResp:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this PublicipUpdateResp.
+        r"""Sets the port_id of this PublicipUpdateResp.
 
         功能说明：端口id。  约束：只有绑定了的弹性公网IP查询才会返回该参数
 
@@ -331,7 +331,7 @@ class PublicipUpdateResp:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this PublicipUpdateResp.
+        r"""Gets the private_ip_address of this PublicipUpdateResp.
 
         功能说明：绑定弹性公网IP的私有IP地址  约束：只有绑定了的弹性公网IP查询才会返回该参数
 
@@ -342,7 +342,7 @@ class PublicipUpdateResp:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this PublicipUpdateResp.
+        r"""Sets the private_ip_address of this PublicipUpdateResp.
 
         功能说明：绑定弹性公网IP的私有IP地址  约束：只有绑定了的弹性公网IP查询才会返回该参数
 
@@ -353,7 +353,7 @@ class PublicipUpdateResp:
 
     @property
     def profile(self):
-        """Gets the profile of this PublicipUpdateResp.
+        r"""Gets the profile of this PublicipUpdateResp.
 
         :return: The profile of this PublicipUpdateResp.
         :rtype: :class:`huaweicloudsdkeip.v2.ProfileResp`
@@ -362,7 +362,7 @@ class PublicipUpdateResp:
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this PublicipUpdateResp.
+        r"""Sets the profile of this PublicipUpdateResp.
 
         :param profile: The profile of this PublicipUpdateResp.
         :type profile: :class:`huaweicloudsdkeip.v2.ProfileResp`
@@ -371,7 +371,7 @@ class PublicipUpdateResp:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this PublicipUpdateResp.
+        r"""Gets the public_ip_address of this PublicipUpdateResp.
 
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
@@ -382,7 +382,7 @@ class PublicipUpdateResp:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this PublicipUpdateResp.
+        r"""Sets the public_ip_address of this PublicipUpdateResp.
 
         IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
@@ -393,7 +393,7 @@ class PublicipUpdateResp:
 
     @property
     def status(self):
-        """Gets the status of this PublicipUpdateResp.
+        r"""Gets the status of this PublicipUpdateResp.
 
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
@@ -404,7 +404,7 @@ class PublicipUpdateResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicipUpdateResp.
+        r"""Sets the status of this PublicipUpdateResp.
 
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
@@ -415,7 +415,7 @@ class PublicipUpdateResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PublicipUpdateResp.
+        r"""Gets the tenant_id of this PublicipUpdateResp.
 
         项目ID
 
@@ -426,7 +426,7 @@ class PublicipUpdateResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PublicipUpdateResp.
+        r"""Sets the tenant_id of this PublicipUpdateResp.
 
         项目ID
 
@@ -437,7 +437,7 @@ class PublicipUpdateResp:
 
     @property
     def type(self):
-        """Gets the type of this PublicipUpdateResp.
+        r"""Gets the type of this PublicipUpdateResp.
 
         弹性公网IP的类型
 
@@ -448,7 +448,7 @@ class PublicipUpdateResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicipUpdateResp.
+        r"""Sets the type of this PublicipUpdateResp.
 
         弹性公网IP的类型
 
@@ -459,7 +459,7 @@ class PublicipUpdateResp:
 
     @property
     def public_ipv6_address(self):
-        """Gets the public_ipv6_address of this PublicipUpdateResp.
+        r"""Gets the public_ipv6_address of this PublicipUpdateResp.
 
         IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -470,7 +470,7 @@ class PublicipUpdateResp:
 
     @public_ipv6_address.setter
     def public_ipv6_address(self, public_ipv6_address):
-        """Sets the public_ipv6_address of this PublicipUpdateResp.
+        r"""Sets the public_ipv6_address of this PublicipUpdateResp.
 
         IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -481,7 +481,7 @@ class PublicipUpdateResp:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicipUpdateResp.
+        r"""Gets the ip_version of this PublicipUpdateResp.
 
         IP版本信息，取值范围是4和6  4：表示IPv4  6：表示IPv6
 
@@ -492,7 +492,7 @@ class PublicipUpdateResp:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicipUpdateResp.
+        r"""Sets the ip_version of this PublicipUpdateResp.
 
         IP版本信息，取值范围是4和6  4：表示IPv4  6：表示IPv6
 
@@ -503,7 +503,7 @@ class PublicipUpdateResp:
 
     @property
     def alias(self):
-        """Gets the alias of this PublicipUpdateResp.
+        r"""Gets the alias of this PublicipUpdateResp.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -514,7 +514,7 @@ class PublicipUpdateResp:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this PublicipUpdateResp.
+        r"""Sets the alias of this PublicipUpdateResp.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 

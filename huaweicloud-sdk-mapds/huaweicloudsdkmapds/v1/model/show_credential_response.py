@@ -26,7 +26,7 @@ class ShowCredentialResponse(SdkResponse):
     }
 
     def __init__(self, credentials=None):
-        """ShowCredentialResponse
+        r"""ShowCredentialResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @property
     def credentials(self):
-        """Gets the credentials of this ShowCredentialResponse.
+        r"""Gets the credentials of this ShowCredentialResponse.
 
         凭证信息。
 
@@ -55,7 +55,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @credentials.setter
     def credentials(self, credentials):
-        """Sets the credentials of this ShowCredentialResponse.
+        r"""Sets the credentials of this ShowCredentialResponse.
 
         凭证信息。
 

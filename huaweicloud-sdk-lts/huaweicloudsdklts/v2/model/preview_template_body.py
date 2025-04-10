@@ -29,7 +29,7 @@ class PreviewTemplateBody:
     }
 
     def __init__(self, templates=None, language=None, source=None):
-        """PreviewTemplateBody
+        r"""PreviewTemplateBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PreviewTemplateBody:
 
     @property
     def templates(self):
-        """Gets the templates of this PreviewTemplateBody.
+        r"""Gets the templates of this PreviewTemplateBody.
 
         邮件模板内容
 
@@ -65,7 +65,7 @@ class PreviewTemplateBody:
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this PreviewTemplateBody.
+        r"""Sets the templates of this PreviewTemplateBody.
 
         邮件模板内容
 
@@ -76,7 +76,7 @@ class PreviewTemplateBody:
 
     @property
     def language(self):
-        """Gets the language of this PreviewTemplateBody.
+        r"""Gets the language of this PreviewTemplateBody.
 
         语言 zh-cn中文，en-us英文
 
@@ -87,7 +87,7 @@ class PreviewTemplateBody:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this PreviewTemplateBody.
+        r"""Sets the language of this PreviewTemplateBody.
 
         语言 zh-cn中文，en-us英文
 
@@ -98,7 +98,7 @@ class PreviewTemplateBody:
 
     @property
     def source(self):
-        """Gets the source of this PreviewTemplateBody.
+        r"""Gets the source of this PreviewTemplateBody.
 
         来源，只能填LTS
 
@@ -109,7 +109,7 @@ class PreviewTemplateBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this PreviewTemplateBody.
+        r"""Sets the source of this PreviewTemplateBody.
 
         来源，只能填LTS
 

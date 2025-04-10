@@ -30,7 +30,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
     }
 
     def __init__(self, enabled=None, interval=None, keep_days=None):
-        """ShowRedisPitrPolicyResponse
+        r"""ShowRedisPitrPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowRedisPitrPolicyResponse.
+        r"""Gets the enabled of this ShowRedisPitrPolicyResponse.
 
         标识Redis实例是否开启指定时间点恢复。 “true”，表示实例开启Redis指定时间点恢复功能。 “false”，表示实例不启用Redis指定时间点恢复功能。
 
@@ -69,7 +69,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowRedisPitrPolicyResponse.
+        r"""Sets the enabled of this ShowRedisPitrPolicyResponse.
 
         标识Redis实例是否开启指定时间点恢复。 “true”，表示实例开启Redis指定时间点恢复功能。 “false”，表示实例不启用Redis指定时间点恢复功能。
 
@@ -80,7 +80,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowRedisPitrPolicyResponse.
+        r"""Gets the interval of this ShowRedisPitrPolicyResponse.
 
         数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，仅在开启时返回。
 
@@ -91,7 +91,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowRedisPitrPolicyResponse.
+        r"""Sets the interval of this ShowRedisPitrPolicyResponse.
 
         数据备份的时间间隔，该数据备份控制redis实例可恢复时间点的间隔，仅在开启时返回。
 
@@ -102,7 +102,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this ShowRedisPitrPolicyResponse.
+        r"""Gets the keep_days of this ShowRedisPitrPolicyResponse.
 
         指定已生成的备份文件可以保存的天数，仅在开启时返回。
 
@@ -113,7 +113,7 @@ class ShowRedisPitrPolicyResponse(SdkResponse):
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this ShowRedisPitrPolicyResponse.
+        r"""Sets the keep_days of this ShowRedisPitrPolicyResponse.
 
         指定已生成的备份文件可以保存的天数，仅在开启时返回。
 

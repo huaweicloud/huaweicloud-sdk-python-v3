@@ -25,7 +25,7 @@ class CommonCbhRequestBody:
     }
 
     def __init__(self, server_id=None):
-        """CommonCbhRequestBody
+        r"""CommonCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommonCbhRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this CommonCbhRequestBody.
+        r"""Gets the server_id of this CommonCbhRequestBody.
 
         实例id
 
@@ -53,7 +53,7 @@ class CommonCbhRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this CommonCbhRequestBody.
+        r"""Sets the server_id of this CommonCbhRequestBody.
 
         实例id
 

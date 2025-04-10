@@ -27,7 +27,7 @@ class ExtentionReqDataByIdCardImage:
     }
 
     def __init__(self, idcard_image1=None, idcard_image2=None):
-        """ExtentionReqDataByIdCardImage
+        r"""ExtentionReqDataByIdCardImage
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExtentionReqDataByIdCardImage:
 
     @property
     def idcard_image1(self):
-        """Gets the idcard_image1 of this ExtentionReqDataByIdCardImage.
+        r"""Gets the idcard_image1 of this ExtentionReqDataByIdCardImage.
 
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -60,7 +60,7 @@ class ExtentionReqDataByIdCardImage:
 
     @idcard_image1.setter
     def idcard_image1(self, idcard_image1):
-        """Sets the idcard_image1 of this ExtentionReqDataByIdCardImage.
+        r"""Sets the idcard_image1 of this ExtentionReqDataByIdCardImage.
 
         身份证人像面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -71,7 +71,7 @@ class ExtentionReqDataByIdCardImage:
 
     @property
     def idcard_image2(self):
-        """Gets the idcard_image2 of this ExtentionReqDataByIdCardImage.
+        r"""Gets the idcard_image2 of this ExtentionReqDataByIdCardImage.
 
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -82,7 +82,7 @@ class ExtentionReqDataByIdCardImage:
 
     @idcard_image2.setter
     def idcard_image2(self, idcard_image2):
-        """Sets the idcard_image2 of this ExtentionReqDataByIdCardImage.
+        r"""Sets the idcard_image2 of this ExtentionReqDataByIdCardImage.
 
         身份证国徽面图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 

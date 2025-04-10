@@ -29,7 +29,7 @@ class ListBindingsRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, exchange=None):
-        """ListBindingsRequest
+        r"""ListBindingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListBindingsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBindingsRequest.
+        r"""Gets the instance_id of this ListBindingsRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ListBindingsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBindingsRequest.
+        r"""Sets the instance_id of this ListBindingsRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ListBindingsRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this ListBindingsRequest.
+        r"""Gets the vhost of this ListBindingsRequest.
 
         Vhost名称
 
@@ -87,7 +87,7 @@ class ListBindingsRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ListBindingsRequest.
+        r"""Sets the vhost of this ListBindingsRequest.
 
         Vhost名称
 
@@ -98,7 +98,7 @@ class ListBindingsRequest:
 
     @property
     def exchange(self):
-        """Gets the exchange of this ListBindingsRequest.
+        r"""Gets the exchange of this ListBindingsRequest.
 
         Exchange名称
 
@@ -109,7 +109,7 @@ class ListBindingsRequest:
 
     @exchange.setter
     def exchange(self, exchange):
-        """Sets the exchange of this ListBindingsRequest.
+        r"""Sets the exchange of this ListBindingsRequest.
 
         Exchange名称
 

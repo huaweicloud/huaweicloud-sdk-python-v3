@@ -24,7 +24,7 @@ class GlanceDeleteImageMemberResponse(SdkResponse):
     }
 
     def __init__(self):
-        """GlanceDeleteImageMemberResponse
+        r"""GlanceDeleteImageMemberResponse
 
         The model defined in huaweicloud sdk
 

@@ -55,7 +55,7 @@ class NeutronNetwork:
     }
 
     def __init__(self, id=None, status=None, name=None, subnets=None, routerexternal=None, admin_state_up=None, shared=None, tenant_id=None, providernetwork_type=None, availability_zone_hints=None, availability_zones=None, port_security_enabled=None, dns_domain=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronNetwork
+        r"""NeutronNetwork
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class NeutronNetwork:
 
     @property
     def id(self):
-        """Gets the id of this NeutronNetwork.
+        r"""Gets the id of this NeutronNetwork.
 
         网络ID
 
@@ -143,7 +143,7 @@ class NeutronNetwork:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronNetwork.
+        r"""Sets the id of this NeutronNetwork.
 
         网络ID
 
@@ -154,7 +154,7 @@ class NeutronNetwork:
 
     @property
     def status(self):
-        """Gets the status of this NeutronNetwork.
+        r"""Gets the status of this NeutronNetwork.
 
         功能说明：网络状态 取值范围：ACTIVE，DOWN，BUILD或ERROR
 
@@ -165,7 +165,7 @@ class NeutronNetwork:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronNetwork.
+        r"""Sets the status of this NeutronNetwork.
 
         功能说明：网络状态 取值范围：ACTIVE，DOWN，BUILD或ERROR
 
@@ -176,7 +176,7 @@ class NeutronNetwork:
 
     @property
     def name(self):
-        """Gets the name of this NeutronNetwork.
+        r"""Gets the name of this NeutronNetwork.
 
         功能说明：网络名称 取值范围：0-255个字符
 
@@ -187,7 +187,7 @@ class NeutronNetwork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronNetwork.
+        r"""Sets the name of this NeutronNetwork.
 
         功能说明：网络名称 取值范围：0-255个字符
 
@@ -198,7 +198,7 @@ class NeutronNetwork:
 
     @property
     def subnets(self):
-        """Gets the subnets of this NeutronNetwork.
+        r"""Gets the subnets of this NeutronNetwork.
 
         功能说明：网络关联的子网ID列表 约束：一个network仅支持关联一个 subnet。
 
@@ -209,7 +209,7 @@ class NeutronNetwork:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this NeutronNetwork.
+        r"""Sets the subnets of this NeutronNetwork.
 
         功能说明：网络关联的子网ID列表 约束：一个network仅支持关联一个 subnet。
 
@@ -220,7 +220,7 @@ class NeutronNetwork:
 
     @property
     def routerexternal(self):
-        """Gets the routerexternal of this NeutronNetwork.
+        r"""Gets the routerexternal of this NeutronNetwork.
 
         功能说明：扩展属性，是否外部网络 取值范围：true、false 约束：不支持设置和更新
 
@@ -231,7 +231,7 @@ class NeutronNetwork:
 
     @routerexternal.setter
     def routerexternal(self, routerexternal):
-        """Sets the routerexternal of this NeutronNetwork.
+        r"""Sets the routerexternal of this NeutronNetwork.
 
         功能说明：扩展属性，是否外部网络 取值范围：true、false 约束：不支持设置和更新
 
@@ -242,7 +242,7 @@ class NeutronNetwork:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronNetwork.
+        r"""Gets the admin_state_up of this NeutronNetwork.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -253,7 +253,7 @@ class NeutronNetwork:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronNetwork.
+        r"""Sets the admin_state_up of this NeutronNetwork.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -264,7 +264,7 @@ class NeutronNetwork:
 
     @property
     def shared(self):
-        """Gets the shared of this NeutronNetwork.
+        r"""Gets the shared of this NeutronNetwork.
 
         功能说明：是否支持跨租户共享此资源 取值范围：true(共享)、false(非共享) 约束：不支持设置和更新
 
@@ -275,7 +275,7 @@ class NeutronNetwork:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this NeutronNetwork.
+        r"""Sets the shared of this NeutronNetwork.
 
         功能说明：是否支持跨租户共享此资源 取值范围：true(共享)、false(非共享) 约束：不支持设置和更新
 
@@ -286,7 +286,7 @@ class NeutronNetwork:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronNetwork.
+        r"""Gets the tenant_id of this NeutronNetwork.
 
         项目ID
 
@@ -297,7 +297,7 @@ class NeutronNetwork:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronNetwork.
+        r"""Sets the tenant_id of this NeutronNetwork.
 
         项目ID
 
@@ -308,7 +308,7 @@ class NeutronNetwork:
 
     @property
     def providernetwork_type(self):
-        """Gets the providernetwork_type of this NeutronNetwork.
+        r"""Gets the providernetwork_type of this NeutronNetwork.
 
         功能说明：扩展属性，网络类型（支持vxlan, geneve） 取值范围：vxlan，geneve
 
@@ -319,7 +319,7 @@ class NeutronNetwork:
 
     @providernetwork_type.setter
     def providernetwork_type(self, providernetwork_type):
-        """Sets the providernetwork_type of this NeutronNetwork.
+        r"""Sets the providernetwork_type of this NeutronNetwork.
 
         功能说明：扩展属性，网络类型（支持vxlan, geneve） 取值范围：vxlan，geneve
 
@@ -330,7 +330,7 @@ class NeutronNetwork:
 
     @property
     def availability_zone_hints(self):
-        """Gets the availability_zone_hints of this NeutronNetwork.
+        r"""Gets the availability_zone_hints of this NeutronNetwork.
 
         功能说明：本网络的候选可用域
 
@@ -341,7 +341,7 @@ class NeutronNetwork:
 
     @availability_zone_hints.setter
     def availability_zone_hints(self, availability_zone_hints):
-        """Sets the availability_zone_hints of this NeutronNetwork.
+        r"""Sets the availability_zone_hints of this NeutronNetwork.
 
         功能说明：本网络的候选可用域
 
@@ -352,7 +352,7 @@ class NeutronNetwork:
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this NeutronNetwork.
+        r"""Gets the availability_zones of this NeutronNetwork.
 
         功能说明：本网络的可用域。 取值范围：当前region下的可用域
 
@@ -363,7 +363,7 @@ class NeutronNetwork:
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this NeutronNetwork.
+        r"""Sets the availability_zones of this NeutronNetwork.
 
         功能说明：本网络的可用域。 取值范围：当前region下的可用域
 
@@ -374,7 +374,7 @@ class NeutronNetwork:
 
     @property
     def port_security_enabled(self):
-        """Gets the port_security_enabled of this NeutronNetwork.
+        r"""Gets the port_security_enabled of this NeutronNetwork.
 
         功能说明：端口安全使能标记 取值范围：true（启用）、false（禁用） 约束：如果不使能，则network下所有虚机的安全组和dhcp防欺骗不生效
 
@@ -385,7 +385,7 @@ class NeutronNetwork:
 
     @port_security_enabled.setter
     def port_security_enabled(self, port_security_enabled):
-        """Sets the port_security_enabled of this NeutronNetwork.
+        r"""Sets the port_security_enabled of this NeutronNetwork.
 
         功能说明：端口安全使能标记 取值范围：true（启用）、false（禁用） 约束：如果不使能，则network下所有虚机的安全组和dhcp防欺骗不生效
 
@@ -396,7 +396,7 @@ class NeutronNetwork:
 
     @property
     def dns_domain(self):
-        """Gets the dns_domain of this NeutronNetwork.
+        r"""Gets the dns_domain of this NeutronNetwork.
 
         功能说明：默认内网DNS域地址 约束：系统自动生成维护，不支持设置和更新
 
@@ -407,7 +407,7 @@ class NeutronNetwork:
 
     @dns_domain.setter
     def dns_domain(self, dns_domain):
-        """Sets the dns_domain of this NeutronNetwork.
+        r"""Sets the dns_domain of this NeutronNetwork.
 
         功能说明：默认内网DNS域地址 约束：系统自动生成维护，不支持设置和更新
 
@@ -418,7 +418,7 @@ class NeutronNetwork:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronNetwork.
+        r"""Gets the project_id of this NeutronNetwork.
 
         项目ID
 
@@ -429,7 +429,7 @@ class NeutronNetwork:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronNetwork.
+        r"""Sets the project_id of this NeutronNetwork.
 
         项目ID
 
@@ -440,7 +440,7 @@ class NeutronNetwork:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NeutronNetwork.
+        r"""Gets the created_at of this NeutronNetwork.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -451,7 +451,7 @@ class NeutronNetwork:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NeutronNetwork.
+        r"""Sets the created_at of this NeutronNetwork.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -462,7 +462,7 @@ class NeutronNetwork:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NeutronNetwork.
+        r"""Gets the updated_at of this NeutronNetwork.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -473,7 +473,7 @@ class NeutronNetwork:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NeutronNetwork.
+        r"""Sets the updated_at of this NeutronNetwork.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

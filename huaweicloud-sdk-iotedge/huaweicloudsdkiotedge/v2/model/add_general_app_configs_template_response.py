@@ -26,7 +26,7 @@ class AddGeneralAppConfigsTemplateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddGeneralAppConfigsTemplateResponse
+        r"""AddGeneralAppConfigsTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddGeneralAppConfigsTemplateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddGeneralAppConfigsTemplateResponse.
+        r"""Gets the body of this AddGeneralAppConfigsTemplateResponse.
 
         :return: The body of this AddGeneralAppConfigsTemplateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddGeneralAppConfigsTemplateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddGeneralAppConfigsTemplateResponse.
+        r"""Sets the body of this AddGeneralAppConfigsTemplateResponse.
 
         :param body: The body of this AddGeneralAppConfigsTemplateResponse.
         :type body: str

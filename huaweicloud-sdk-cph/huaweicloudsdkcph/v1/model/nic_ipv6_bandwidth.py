@@ -25,7 +25,7 @@ class NicIpv6Bandwidth:
     }
 
     def __init__(self, band_width_id=None):
-        """NicIpv6Bandwidth
+        r"""NicIpv6Bandwidth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NicIpv6Bandwidth:
 
     @property
     def band_width_id(self):
-        """Gets the band_width_id of this NicIpv6Bandwidth.
+        r"""Gets the band_width_id of this NicIpv6Bandwidth.
 
         ipv6绑定的共享带宽ID。
 
@@ -53,7 +53,7 @@ class NicIpv6Bandwidth:
 
     @band_width_id.setter
     def band_width_id(self, band_width_id):
-        """Sets the band_width_id of this NicIpv6Bandwidth.
+        r"""Sets the band_width_id of this NicIpv6Bandwidth.
 
         ipv6绑定的共享带宽ID。
 

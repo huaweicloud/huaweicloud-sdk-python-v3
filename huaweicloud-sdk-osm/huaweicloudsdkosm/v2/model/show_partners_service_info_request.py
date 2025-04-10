@@ -33,7 +33,7 @@ class ShowPartnersServiceInfoRequest:
     }
 
     def __init__(self, case_sub_type_id=None, product_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ShowPartnersServiceInfoRequest
+        r"""ShowPartnersServiceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowPartnersServiceInfoRequest:
 
     @property
     def case_sub_type_id(self):
-        """Gets the case_sub_type_id of this ShowPartnersServiceInfoRequest.
+        r"""Gets the case_sub_type_id of this ShowPartnersServiceInfoRequest.
 
         工单子类
 
@@ -82,7 +82,7 @@ class ShowPartnersServiceInfoRequest:
 
     @case_sub_type_id.setter
     def case_sub_type_id(self, case_sub_type_id):
-        """Sets the case_sub_type_id of this ShowPartnersServiceInfoRequest.
+        r"""Sets the case_sub_type_id of this ShowPartnersServiceInfoRequest.
 
         工单子类
 
@@ -93,7 +93,7 @@ class ShowPartnersServiceInfoRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowPartnersServiceInfoRequest.
+        r"""Gets the product_id of this ShowPartnersServiceInfoRequest.
 
         ISV产品Id
 
@@ -104,7 +104,7 @@ class ShowPartnersServiceInfoRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowPartnersServiceInfoRequest.
+        r"""Sets the product_id of this ShowPartnersServiceInfoRequest.
 
         ISV产品Id
 
@@ -115,7 +115,7 @@ class ShowPartnersServiceInfoRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowPartnersServiceInfoRequest.
+        r"""Gets the x_site of this ShowPartnersServiceInfoRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -126,7 +126,7 @@ class ShowPartnersServiceInfoRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowPartnersServiceInfoRequest.
+        r"""Sets the x_site of this ShowPartnersServiceInfoRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -137,7 +137,7 @@ class ShowPartnersServiceInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowPartnersServiceInfoRequest.
+        r"""Gets the x_language of this ShowPartnersServiceInfoRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -148,7 +148,7 @@ class ShowPartnersServiceInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowPartnersServiceInfoRequest.
+        r"""Sets the x_language of this ShowPartnersServiceInfoRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -159,7 +159,7 @@ class ShowPartnersServiceInfoRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ShowPartnersServiceInfoRequest.
+        r"""Gets the x_time_zone of this ShowPartnersServiceInfoRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -170,7 +170,7 @@ class ShowPartnersServiceInfoRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ShowPartnersServiceInfoRequest.
+        r"""Sets the x_time_zone of this ShowPartnersServiceInfoRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

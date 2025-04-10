@@ -33,7 +33,7 @@ class BusinessTypePluginsQueryDTO:
     }
 
     def __init__(self, use_condition=None, input_repo_type=None, input_source_type=None, business_type=None, regex_name=None):
-        """BusinessTypePluginsQueryDTO
+        r"""BusinessTypePluginsQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BusinessTypePluginsQueryDTO:
 
     @property
     def use_condition(self):
-        """Gets the use_condition of this BusinessTypePluginsQueryDTO.
+        r"""Gets the use_condition of this BusinessTypePluginsQueryDTO.
 
         用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
 
@@ -82,7 +82,7 @@ class BusinessTypePluginsQueryDTO:
 
     @use_condition.setter
     def use_condition(self, use_condition):
-        """Sets the use_condition of this BusinessTypePluginsQueryDTO.
+        r"""Sets the use_condition of this BusinessTypePluginsQueryDTO.
 
         用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
 
@@ -93,7 +93,7 @@ class BusinessTypePluginsQueryDTO:
 
     @property
     def input_repo_type(self):
-        """Gets the input_repo_type of this BusinessTypePluginsQueryDTO.
+        r"""Gets the input_repo_type of this BusinessTypePluginsQueryDTO.
 
         用于区分源的代码仓类型codehub/gitlab/github等
 
@@ -104,7 +104,7 @@ class BusinessTypePluginsQueryDTO:
 
     @input_repo_type.setter
     def input_repo_type(self, input_repo_type):
-        """Sets the input_repo_type of this BusinessTypePluginsQueryDTO.
+        r"""Sets the input_repo_type of this BusinessTypePluginsQueryDTO.
 
         用于区分源的代码仓类型codehub/gitlab/github等
 
@@ -115,7 +115,7 @@ class BusinessTypePluginsQueryDTO:
 
     @property
     def input_source_type(self):
-        """Gets the input_source_type of this BusinessTypePluginsQueryDTO.
+        r"""Gets the input_source_type of this BusinessTypePluginsQueryDTO.
 
         用于区分单源/多源的情况
 
@@ -126,7 +126,7 @@ class BusinessTypePluginsQueryDTO:
 
     @input_source_type.setter
     def input_source_type(self, input_source_type):
-        """Sets the input_source_type of this BusinessTypePluginsQueryDTO.
+        r"""Sets the input_source_type of this BusinessTypePluginsQueryDTO.
 
         用于区分单源/多源的情况
 
@@ -137,7 +137,7 @@ class BusinessTypePluginsQueryDTO:
 
     @property
     def business_type(self):
-        """Gets the business_type of this BusinessTypePluginsQueryDTO.
+        r"""Gets the business_type of this BusinessTypePluginsQueryDTO.
 
         业务类型
 
@@ -148,7 +148,7 @@ class BusinessTypePluginsQueryDTO:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this BusinessTypePluginsQueryDTO.
+        r"""Sets the business_type of this BusinessTypePluginsQueryDTO.
 
         业务类型
 
@@ -159,7 +159,7 @@ class BusinessTypePluginsQueryDTO:
 
     @property
     def regex_name(self):
-        """Gets the regex_name of this BusinessTypePluginsQueryDTO.
+        r"""Gets the regex_name of this BusinessTypePluginsQueryDTO.
 
         名称
 
@@ -170,7 +170,7 @@ class BusinessTypePluginsQueryDTO:
 
     @regex_name.setter
     def regex_name(self, regex_name):
-        """Sets the regex_name of this BusinessTypePluginsQueryDTO.
+        r"""Sets the regex_name of this BusinessTypePluginsQueryDTO.
 
         名称
 

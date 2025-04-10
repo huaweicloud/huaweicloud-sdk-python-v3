@@ -25,7 +25,7 @@ class DeleteAimPersonalTemplateRequest:
     }
 
     def __init__(self, tpl_id=None):
-        """DeleteAimPersonalTemplateRequest
+        r"""DeleteAimPersonalTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAimPersonalTemplateRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this DeleteAimPersonalTemplateRequest.
+        r"""Gets the tpl_id of this DeleteAimPersonalTemplateRequest.
 
         智能信息模板ID。
 
@@ -53,7 +53,7 @@ class DeleteAimPersonalTemplateRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this DeleteAimPersonalTemplateRequest.
+        r"""Sets the tpl_id of this DeleteAimPersonalTemplateRequest.
 
         智能信息模板ID。
 

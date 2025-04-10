@@ -23,7 +23,7 @@ class DeleteInstanceBandwidthAutoScalingPolicyResp:
     }
 
     def __init__(self):
-        """DeleteInstanceBandwidthAutoScalingPolicyResp
+        r"""DeleteInstanceBandwidthAutoScalingPolicyResp
 
         The model defined in huaweicloud sdk
 

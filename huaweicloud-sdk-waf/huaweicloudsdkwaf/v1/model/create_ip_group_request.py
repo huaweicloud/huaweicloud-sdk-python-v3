@@ -27,7 +27,7 @@ class CreateIpGroupRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateIpGroupRequest
+        r"""CreateIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateIpGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateIpGroupRequest.
+        r"""Gets the enterprise_project_id of this CreateIpGroupRequest.
 
         企业项目id
 
@@ -61,7 +61,7 @@ class CreateIpGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateIpGroupRequest.
+        r"""Sets the enterprise_project_id of this CreateIpGroupRequest.
 
         企业项目id
 
@@ -72,7 +72,7 @@ class CreateIpGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateIpGroupRequest.
+        r"""Gets the body of this CreateIpGroupRequest.
 
         :return: The body of this CreateIpGroupRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpGroupRequestBody`
@@ -81,7 +81,7 @@ class CreateIpGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateIpGroupRequest.
+        r"""Sets the body of this CreateIpGroupRequest.
 
         :param body: The body of this CreateIpGroupRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateIpGroupRequestBody`

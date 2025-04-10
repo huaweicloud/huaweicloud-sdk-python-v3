@@ -27,7 +27,7 @@ class StartAndStopDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None, action=None):
-        """StartAndStopDeploymentRequest
+        r"""StartAndStopDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StartAndStopDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this StartAndStopDeploymentRequest.
+        r"""Gets the deployment_id of this StartAndStopDeploymentRequest.
 
         应用部署ID
 
@@ -59,7 +59,7 @@ class StartAndStopDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this StartAndStopDeploymentRequest.
+        r"""Sets the deployment_id of this StartAndStopDeploymentRequest.
 
         应用部署ID
 
@@ -70,7 +70,7 @@ class StartAndStopDeploymentRequest:
 
     @property
     def action(self):
-        """Gets the action of this StartAndStopDeploymentRequest.
+        r"""Gets the action of this StartAndStopDeploymentRequest.
 
         操作请求，分别为，pause停止，resume启动
 
@@ -81,7 +81,7 @@ class StartAndStopDeploymentRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartAndStopDeploymentRequest.
+        r"""Sets the action of this StartAndStopDeploymentRequest.
 
         操作请求，分别为，pause停止，resume启动
 

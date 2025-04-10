@@ -27,7 +27,7 @@ class AcceptOrRejectEndpointRequestBody:
     }
 
     def __init__(self, action=None, endpoints=None):
-        """AcceptOrRejectEndpointRequestBody
+        r"""AcceptOrRejectEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AcceptOrRejectEndpointRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this AcceptOrRejectEndpointRequestBody.
+        r"""Gets the action of this AcceptOrRejectEndpointRequestBody.
 
         允许或拒绝连接。  - receive：允许连接。  - reject：拒绝连接。
 
@@ -59,7 +59,7 @@ class AcceptOrRejectEndpointRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this AcceptOrRejectEndpointRequestBody.
+        r"""Sets the action of this AcceptOrRejectEndpointRequestBody.
 
         允许或拒绝连接。  - receive：允许连接。  - reject：拒绝连接。
 
@@ -70,7 +70,7 @@ class AcceptOrRejectEndpointRequestBody:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this AcceptOrRejectEndpointRequestBody.
+        r"""Gets the endpoints of this AcceptOrRejectEndpointRequestBody.
 
         终端节点ID列表。 每次请求目前支持单条endpoint的接受或拒绝。
 
@@ -81,7 +81,7 @@ class AcceptOrRejectEndpointRequestBody:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this AcceptOrRejectEndpointRequestBody.
+        r"""Sets the endpoints of this AcceptOrRejectEndpointRequestBody.
 
         终端节点ID列表。 每次请求目前支持单条endpoint的接受或拒绝。
 

@@ -28,7 +28,7 @@ class ShowUserAccessInfoResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ShowUserAccessInfoResponse
+        r"""ShowUserAccessInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowUserAccessInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowUserAccessInfoResponse.
+        r"""Gets the status of this ShowUserAccessInfoResponse.
 
         对外时：success|error;
 
@@ -62,7 +62,7 @@ class ShowUserAccessInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUserAccessInfoResponse.
+        r"""Sets the status of this ShowUserAccessInfoResponse.
 
         对外时：success|error;
 
@@ -73,7 +73,7 @@ class ShowUserAccessInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowUserAccessInfoResponse.
+        r"""Gets the result of this ShowUserAccessInfoResponse.
 
         :return: The result of this ShowUserAccessInfoResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`
@@ -82,7 +82,7 @@ class ShowUserAccessInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowUserAccessInfoResponse.
+        r"""Sets the result of this ShowUserAccessInfoResponse.
 
         :param result: The result of this ShowUserAccessInfoResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`

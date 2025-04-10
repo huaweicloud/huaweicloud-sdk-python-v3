@@ -25,7 +25,7 @@ class CountGeipSegments:
     }
 
     def __init__(self, count=None):
-        """CountGeipSegments
+        r"""CountGeipSegments
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CountGeipSegments:
 
     @property
     def count(self):
-        """Gets the count of this CountGeipSegments.
+        r"""Gets the count of this CountGeipSegments.
 
         全域弹性公网IP段个数
 
@@ -53,7 +53,7 @@ class CountGeipSegments:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CountGeipSegments.
+        r"""Sets the count of this CountGeipSegments.
 
         全域弹性公网IP段个数
 

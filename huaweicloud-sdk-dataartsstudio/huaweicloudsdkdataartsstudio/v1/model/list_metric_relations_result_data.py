@@ -25,7 +25,7 @@ class ListMetricRelationsResultData:
     }
 
     def __init__(self, value=None):
-        """ListMetricRelationsResultData
+        r"""ListMetricRelationsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListMetricRelationsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListMetricRelationsResultData.
+        r"""Gets the value of this ListMetricRelationsResultData.
 
         :return: The value of this ListMetricRelationsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListMetricRelationsResultDataValue`
@@ -52,7 +52,7 @@ class ListMetricRelationsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListMetricRelationsResultData.
+        r"""Sets the value of this ListMetricRelationsResultData.
 
         :param value: The value of this ListMetricRelationsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ListMetricRelationsResultDataValue`

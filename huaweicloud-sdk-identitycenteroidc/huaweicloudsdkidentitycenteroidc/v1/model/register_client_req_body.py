@@ -35,7 +35,7 @@ class RegisterClientReqBody:
     }
 
     def __init__(self, client_name=None, client_type=None, token_endpoint_auth_method=None, scopes=None, grant_types=None, response_types=None):
-        """RegisterClientReqBody
+        r"""RegisterClientReqBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class RegisterClientReqBody:
 
     @property
     def client_name(self):
-        """Gets the client_name of this RegisterClientReqBody.
+        r"""Gets the client_name of this RegisterClientReqBody.
 
         客户端名称
 
@@ -84,7 +84,7 @@ class RegisterClientReqBody:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this RegisterClientReqBody.
+        r"""Sets the client_name of this RegisterClientReqBody.
 
         客户端名称
 
@@ -95,7 +95,7 @@ class RegisterClientReqBody:
 
     @property
     def client_type(self):
-        """Gets the client_type of this RegisterClientReqBody.
+        r"""Gets the client_type of this RegisterClientReqBody.
 
         客户端的类型。该服务仅支持public作为客户端类型
 
@@ -106,7 +106,7 @@ class RegisterClientReqBody:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this RegisterClientReqBody.
+        r"""Sets the client_type of this RegisterClientReqBody.
 
         客户端的类型。该服务仅支持public作为客户端类型
 
@@ -117,7 +117,7 @@ class RegisterClientReqBody:
 
     @property
     def token_endpoint_auth_method(self):
-        """Gets the token_endpoint_auth_method of this RegisterClientReqBody.
+        r"""Gets the token_endpoint_auth_method of this RegisterClientReqBody.
 
         向令牌端点发送请求时所需的身份验证方法
 
@@ -128,7 +128,7 @@ class RegisterClientReqBody:
 
     @token_endpoint_auth_method.setter
     def token_endpoint_auth_method(self, token_endpoint_auth_method):
-        """Sets the token_endpoint_auth_method of this RegisterClientReqBody.
+        r"""Sets the token_endpoint_auth_method of this RegisterClientReqBody.
 
         向令牌端点发送请求时所需的身份验证方法
 
@@ -139,7 +139,7 @@ class RegisterClientReqBody:
 
     @property
     def scopes(self):
-        """Gets the scopes of this RegisterClientReqBody.
+        r"""Gets the scopes of this RegisterClientReqBody.
 
         客户端定义的作用域列表。授权后，此列表用于在授予访问令牌时限制权限
 
@@ -150,7 +150,7 @@ class RegisterClientReqBody:
 
     @scopes.setter
     def scopes(self, scopes):
-        """Sets the scopes of this RegisterClientReqBody.
+        r"""Sets the scopes of this RegisterClientReqBody.
 
         客户端定义的作用域列表。授权后，此列表用于在授予访问令牌时限制权限
 
@@ -161,7 +161,7 @@ class RegisterClientReqBody:
 
     @property
     def grant_types(self):
-        """Gets the grant_types of this RegisterClientReqBody.
+        r"""Gets the grant_types of this RegisterClientReqBody.
 
         客户端可以在令牌端点使用的OAuth2.0授权类型数组
 
@@ -172,7 +172,7 @@ class RegisterClientReqBody:
 
     @grant_types.setter
     def grant_types(self, grant_types):
-        """Sets the grant_types of this RegisterClientReqBody.
+        r"""Sets the grant_types of this RegisterClientReqBody.
 
         客户端可以在令牌端点使用的OAuth2.0授权类型数组
 
@@ -183,7 +183,7 @@ class RegisterClientReqBody:
 
     @property
     def response_types(self):
-        """Gets the response_types of this RegisterClientReqBody.
+        r"""Gets the response_types of this RegisterClientReqBody.
 
         客户端可以在授权端点使用的OAuth2.0授权类型数组
 
@@ -194,7 +194,7 @@ class RegisterClientReqBody:
 
     @response_types.setter
     def response_types(self, response_types):
-        """Sets the response_types of this RegisterClientReqBody.
+        r"""Sets the response_types of this RegisterClientReqBody.
 
         客户端可以在授权端点使用的OAuth2.0授权类型数组
 

@@ -29,7 +29,7 @@ class BatchAssociateNaToNodesRequest:
     }
 
     def __init__(self, na_id=None, action=None, body=None):
-        """BatchAssociateNaToNodesRequest
+        r"""BatchAssociateNaToNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAssociateNaToNodesRequest:
 
     @property
     def na_id(self):
-        """Gets the na_id of this BatchAssociateNaToNodesRequest.
+        r"""Gets the na_id of this BatchAssociateNaToNodesRequest.
 
         北向数据接收端点ID
 
@@ -66,7 +66,7 @@ class BatchAssociateNaToNodesRequest:
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this BatchAssociateNaToNodesRequest.
+        r"""Sets the na_id of this BatchAssociateNaToNodesRequest.
 
         北向数据接收端点ID
 
@@ -77,7 +77,7 @@ class BatchAssociateNaToNodesRequest:
 
     @property
     def action(self):
-        """Gets the action of this BatchAssociateNaToNodesRequest.
+        r"""Gets the action of this BatchAssociateNaToNodesRequest.
 
         批量删除delete，批量添加add
 
@@ -88,7 +88,7 @@ class BatchAssociateNaToNodesRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchAssociateNaToNodesRequest.
+        r"""Sets the action of this BatchAssociateNaToNodesRequest.
 
         批量删除delete，批量添加add
 
@@ -99,7 +99,7 @@ class BatchAssociateNaToNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAssociateNaToNodesRequest.
+        r"""Gets the body of this BatchAssociateNaToNodesRequest.
 
         :return: The body of this BatchAssociateNaToNodesRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`
@@ -108,7 +108,7 @@ class BatchAssociateNaToNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAssociateNaToNodesRequest.
+        r"""Sets the body of this BatchAssociateNaToNodesRequest.
 
         :param body: The body of this BatchAssociateNaToNodesRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`

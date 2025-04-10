@@ -31,7 +31,7 @@ class WorkloadQueueUser:
     }
 
     def __init__(self, user_name=None, occupy_resource_list=None, exec_result=None, exec_log=None):
-        """WorkloadQueueUser
+        r"""WorkloadQueueUser
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class WorkloadQueueUser:
 
     @property
     def user_name(self):
-        """Gets the user_name of this WorkloadQueueUser.
+        r"""Gets the user_name of this WorkloadQueueUser.
 
         用户名
 
@@ -73,7 +73,7 @@ class WorkloadQueueUser:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this WorkloadQueueUser.
+        r"""Sets the user_name of this WorkloadQueueUser.
 
         用户名
 
@@ -84,7 +84,7 @@ class WorkloadQueueUser:
 
     @property
     def occupy_resource_list(self):
-        """Gets the occupy_resource_list of this WorkloadQueueUser.
+        r"""Gets the occupy_resource_list of this WorkloadQueueUser.
 
         执行计划阶段
 
@@ -95,7 +95,7 @@ class WorkloadQueueUser:
 
     @occupy_resource_list.setter
     def occupy_resource_list(self, occupy_resource_list):
-        """Sets the occupy_resource_list of this WorkloadQueueUser.
+        r"""Sets the occupy_resource_list of this WorkloadQueueUser.
 
         执行计划阶段
 
@@ -106,7 +106,7 @@ class WorkloadQueueUser:
 
     @property
     def exec_result(self):
-        """Gets the exec_result of this WorkloadQueueUser.
+        r"""Gets the exec_result of this WorkloadQueueUser.
 
         执行结果。
 
@@ -117,7 +117,7 @@ class WorkloadQueueUser:
 
     @exec_result.setter
     def exec_result(self, exec_result):
-        """Sets the exec_result of this WorkloadQueueUser.
+        r"""Sets the exec_result of this WorkloadQueueUser.
 
         执行结果。
 
@@ -128,7 +128,7 @@ class WorkloadQueueUser:
 
     @property
     def exec_log(self):
-        """Gets the exec_log of this WorkloadQueueUser.
+        r"""Gets the exec_log of this WorkloadQueueUser.
 
         执行日志。
 
@@ -139,7 +139,7 @@ class WorkloadQueueUser:
 
     @exec_log.setter
     def exec_log(self, exec_log):
-        """Sets the exec_log of this WorkloadQueueUser.
+        r"""Sets the exec_log of this WorkloadQueueUser.
 
         执行日志。
 

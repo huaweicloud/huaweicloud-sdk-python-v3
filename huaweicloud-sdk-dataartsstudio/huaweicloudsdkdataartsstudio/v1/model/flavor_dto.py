@@ -33,7 +33,7 @@ class FlavorDTO:
     }
 
     def __init__(self, id=None, name=None, disk=None, cpu=None, mem=None):
-        """FlavorDTO
+        r"""FlavorDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class FlavorDTO:
 
     @property
     def id(self):
-        """Gets the id of this FlavorDTO.
+        r"""Gets the id of this FlavorDTO.
 
         规格ID。
 
@@ -82,7 +82,7 @@ class FlavorDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlavorDTO.
+        r"""Sets the id of this FlavorDTO.
 
         规格ID。
 
@@ -93,7 +93,7 @@ class FlavorDTO:
 
     @property
     def name(self):
-        """Gets the name of this FlavorDTO.
+        r"""Gets the name of this FlavorDTO.
 
         规格名称。
 
@@ -104,7 +104,7 @@ class FlavorDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlavorDTO.
+        r"""Sets the name of this FlavorDTO.
 
         规格名称。
 
@@ -115,7 +115,7 @@ class FlavorDTO:
 
     @property
     def disk(self):
-        """Gets the disk of this FlavorDTO.
+        r"""Gets the disk of this FlavorDTO.
 
         磁盘大小。
 
@@ -126,7 +126,7 @@ class FlavorDTO:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this FlavorDTO.
+        r"""Sets the disk of this FlavorDTO.
 
         磁盘大小。
 
@@ -137,7 +137,7 @@ class FlavorDTO:
 
     @property
     def cpu(self):
-        """Gets the cpu of this FlavorDTO.
+        r"""Gets the cpu of this FlavorDTO.
 
         CPU大小。
 
@@ -148,7 +148,7 @@ class FlavorDTO:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this FlavorDTO.
+        r"""Sets the cpu of this FlavorDTO.
 
         CPU大小。
 
@@ -159,7 +159,7 @@ class FlavorDTO:
 
     @property
     def mem(self):
-        """Gets the mem of this FlavorDTO.
+        r"""Gets the mem of this FlavorDTO.
 
         内存大小。
 
@@ -170,7 +170,7 @@ class FlavorDTO:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this FlavorDTO.
+        r"""Sets the mem of this FlavorDTO.
 
         内存大小。
 

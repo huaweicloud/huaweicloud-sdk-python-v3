@@ -25,7 +25,7 @@ class RunQueryRequest:
     }
 
     def __init__(self, body=None):
-        """RunQueryRequest
+        r"""RunQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunQueryRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunQueryRequest.
+        r"""Gets the body of this RunQueryRequest.
 
         :return: The body of this RunQueryRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.QueryRunRequestBody`
@@ -52,7 +52,7 @@ class RunQueryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunQueryRequest.
+        r"""Sets the body of this RunQueryRequest.
 
         :param body: The body of this RunQueryRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.QueryRunRequestBody`

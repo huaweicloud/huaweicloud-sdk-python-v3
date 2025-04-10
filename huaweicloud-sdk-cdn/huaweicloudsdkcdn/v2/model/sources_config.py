@@ -49,7 +49,7 @@ class SourcesConfig:
     }
 
     def __init__(self, origin_type=None, origin_addr=None, priority=None, weight=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None, obs_bucket_type=None, bucket_access_key=None, bucket_secret_key=None, bucket_region=None, bucket_name=None):
-        """SourcesConfig
+        r"""SourcesConfig
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class SourcesConfig:
 
     @property
     def origin_type(self):
-        """Gets the origin_type of this SourcesConfig.
+        r"""Gets the origin_type of this SourcesConfig.
 
         源站类型， - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
 
@@ -135,7 +135,7 @@ class SourcesConfig:
 
     @origin_type.setter
     def origin_type(self, origin_type):
-        """Sets the origin_type of this SourcesConfig.
+        r"""Sets the origin_type of this SourcesConfig.
 
         源站类型， - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
 
@@ -146,7 +146,7 @@ class SourcesConfig:
 
     @property
     def origin_addr(self):
-        """Gets the origin_addr of this SourcesConfig.
+        r"""Gets the origin_addr of this SourcesConfig.
 
         源站IP或者域名。
 
@@ -157,7 +157,7 @@ class SourcesConfig:
 
     @origin_addr.setter
     def origin_addr(self, origin_addr):
-        """Sets the origin_addr of this SourcesConfig.
+        r"""Sets the origin_addr of this SourcesConfig.
 
         源站IP或者域名。
 
@@ -168,7 +168,7 @@ class SourcesConfig:
 
     @property
     def priority(self):
-        """Gets the priority of this SourcesConfig.
+        r"""Gets the priority of this SourcesConfig.
 
         源站优先级，70：主，30：备。
 
@@ -179,7 +179,7 @@ class SourcesConfig:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this SourcesConfig.
+        r"""Sets the priority of this SourcesConfig.
 
         源站优先级，70：主，30：备。
 
@@ -190,7 +190,7 @@ class SourcesConfig:
 
     @property
     def weight(self):
-        """Gets the weight of this SourcesConfig.
+        r"""Gets the weight of this SourcesConfig.
 
         权重，取值范围1-100。
 
@@ -201,7 +201,7 @@ class SourcesConfig:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this SourcesConfig.
+        r"""Sets the weight of this SourcesConfig.
 
         权重，取值范围1-100。
 
@@ -212,7 +212,7 @@ class SourcesConfig:
 
     @property
     def obs_web_hosting_status(self):
-        """Gets the obs_web_hosting_status of this SourcesConfig.
+        r"""Gets the obs_web_hosting_status of this SourcesConfig.
 
         是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
 
@@ -223,7 +223,7 @@ class SourcesConfig:
 
     @obs_web_hosting_status.setter
     def obs_web_hosting_status(self, obs_web_hosting_status):
-        """Sets the obs_web_hosting_status of this SourcesConfig.
+        r"""Sets the obs_web_hosting_status of this SourcesConfig.
 
         是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
 
@@ -234,7 +234,7 @@ class SourcesConfig:
 
     @property
     def http_port(self):
-        """Gets the http_port of this SourcesConfig.
+        r"""Gets the http_port of this SourcesConfig.
 
         HTTP端口，默认80,端口取值取值范围1-65535。
 
@@ -245,7 +245,7 @@ class SourcesConfig:
 
     @http_port.setter
     def http_port(self, http_port):
-        """Sets the http_port of this SourcesConfig.
+        r"""Sets the http_port of this SourcesConfig.
 
         HTTP端口，默认80,端口取值取值范围1-65535。
 
@@ -256,7 +256,7 @@ class SourcesConfig:
 
     @property
     def https_port(self):
-        """Gets the https_port of this SourcesConfig.
+        r"""Gets the https_port of this SourcesConfig.
 
         HTTPS端口，默认443,端口取值取值范围1-65535。
 
@@ -267,7 +267,7 @@ class SourcesConfig:
 
     @https_port.setter
     def https_port(self, https_port):
-        """Sets the https_port of this SourcesConfig.
+        r"""Sets the https_port of this SourcesConfig.
 
         HTTPS端口，默认443,端口取值取值范围1-65535。
 
@@ -278,7 +278,7 @@ class SourcesConfig:
 
     @property
     def host_name(self):
-        """Gets the host_name of this SourcesConfig.
+        r"""Gets the host_name of this SourcesConfig.
 
         回源HOST，默认加速域名。
 
@@ -289,7 +289,7 @@ class SourcesConfig:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this SourcesConfig.
+        r"""Sets the host_name of this SourcesConfig.
 
         回源HOST，默认加速域名。
 
@@ -300,7 +300,7 @@ class SourcesConfig:
 
     @property
     def obs_bucket_type(self):
-        """Gets the obs_bucket_type of this SourcesConfig.
+        r"""Gets the obs_bucket_type of this SourcesConfig.
 
         OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -311,7 +311,7 @@ class SourcesConfig:
 
     @obs_bucket_type.setter
     def obs_bucket_type(self, obs_bucket_type):
-        """Sets the obs_bucket_type of this SourcesConfig.
+        r"""Sets the obs_bucket_type of this SourcesConfig.
 
         OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -322,7 +322,7 @@ class SourcesConfig:
 
     @property
     def bucket_access_key(self):
-        """Gets the bucket_access_key of this SourcesConfig.
+        r"""Gets the bucket_access_key of this SourcesConfig.
 
         第三方对象存储访问密钥。  > 源站类型为第三方桶时必填
 
@@ -333,7 +333,7 @@ class SourcesConfig:
 
     @bucket_access_key.setter
     def bucket_access_key(self, bucket_access_key):
-        """Sets the bucket_access_key of this SourcesConfig.
+        r"""Sets the bucket_access_key of this SourcesConfig.
 
         第三方对象存储访问密钥。  > 源站类型为第三方桶时必填
 
@@ -344,7 +344,7 @@ class SourcesConfig:
 
     @property
     def bucket_secret_key(self):
-        """Gets the bucket_secret_key of this SourcesConfig.
+        r"""Gets the bucket_secret_key of this SourcesConfig.
 
         第三方对象存储密钥。  > 源站类型为第三方桶时必填
 
@@ -355,7 +355,7 @@ class SourcesConfig:
 
     @bucket_secret_key.setter
     def bucket_secret_key(self, bucket_secret_key):
-        """Sets the bucket_secret_key of this SourcesConfig.
+        r"""Sets the bucket_secret_key of this SourcesConfig.
 
         第三方对象存储密钥。  > 源站类型为第三方桶时必填
 
@@ -366,7 +366,7 @@ class SourcesConfig:
 
     @property
     def bucket_region(self):
-        """Gets the bucket_region of this SourcesConfig.
+        r"""Gets the bucket_region of this SourcesConfig.
 
         第三方对象存储区域。  > 源站类型为第三方桶时必填
 
@@ -377,7 +377,7 @@ class SourcesConfig:
 
     @bucket_region.setter
     def bucket_region(self, bucket_region):
-        """Sets the bucket_region of this SourcesConfig.
+        r"""Sets the bucket_region of this SourcesConfig.
 
         第三方对象存储区域。  > 源站类型为第三方桶时必填
 
@@ -388,7 +388,7 @@ class SourcesConfig:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this SourcesConfig.
+        r"""Gets the bucket_name of this SourcesConfig.
 
         第三方对象存储名称。  > 源站类型为第三方桶时必填
 
@@ -399,7 +399,7 @@ class SourcesConfig:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this SourcesConfig.
+        r"""Sets the bucket_name of this SourcesConfig.
 
         第三方对象存储名称。  > 源站类型为第三方桶时必填
 

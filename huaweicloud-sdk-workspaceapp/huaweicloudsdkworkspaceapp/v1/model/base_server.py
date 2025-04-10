@@ -77,7 +77,7 @@ class BaseServer:
     }
 
     def __init__(self, id=None, name=None, machine_name=None, description=None, server_group_id=None, flavor=None, status=None, create_time=None, update_time=None, image_id=None, availability_zone=None, domain=None, ou_name=None, sid=None, instance_id=None, os_version=None, os_type=None, order_id=None, maintain_status=None, scaling_auto_create=None, job_id=None, job_type=None, job_status=None, job_time=None, resource_pool_id=None, resource_pool_type=None, host_id=None):
-        """BaseServer
+        r"""BaseServer
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class BaseServer:
 
     @property
     def id(self):
-        """Gets the id of this BaseServer.
+        r"""Gets the id of this BaseServer.
 
         aps实例的唯一标识。
 
@@ -236,7 +236,7 @@ class BaseServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseServer.
+        r"""Sets the id of this BaseServer.
 
         aps实例的唯一标识。
 
@@ -247,7 +247,7 @@ class BaseServer:
 
     @property
     def name(self):
-        """Gets the name of this BaseServer.
+        r"""Gets the name of this BaseServer.
 
         服务器名称。
 
@@ -258,7 +258,7 @@ class BaseServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseServer.
+        r"""Sets the name of this BaseServer.
 
         服务器名称。
 
@@ -269,7 +269,7 @@ class BaseServer:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this BaseServer.
+        r"""Gets the machine_name of this BaseServer.
 
         计算机名称。
 
@@ -280,7 +280,7 @@ class BaseServer:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this BaseServer.
+        r"""Sets the machine_name of this BaseServer.
 
         计算机名称。
 
@@ -291,7 +291,7 @@ class BaseServer:
 
     @property
     def description(self):
-        """Gets the description of this BaseServer.
+        r"""Gets the description of this BaseServer.
 
         描述。
 
@@ -302,7 +302,7 @@ class BaseServer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseServer.
+        r"""Sets the description of this BaseServer.
 
         描述。
 
@@ -313,7 +313,7 @@ class BaseServer:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this BaseServer.
+        r"""Gets the server_group_id of this BaseServer.
 
         服务器组ID。
 
@@ -324,7 +324,7 @@ class BaseServer:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this BaseServer.
+        r"""Sets the server_group_id of this BaseServer.
 
         服务器组ID。
 
@@ -335,7 +335,7 @@ class BaseServer:
 
     @property
     def flavor(self):
-        """Gets the flavor of this BaseServer.
+        r"""Gets the flavor of this BaseServer.
 
         :return: The flavor of this BaseServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
@@ -344,7 +344,7 @@ class BaseServer:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this BaseServer.
+        r"""Sets the flavor of this BaseServer.
 
         :param flavor: The flavor of this BaseServer.
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
@@ -353,7 +353,7 @@ class BaseServer:
 
     @property
     def status(self):
-        """Gets the status of this BaseServer.
+        r"""Gets the status of this BaseServer.
 
         :return: The status of this BaseServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -362,7 +362,7 @@ class BaseServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BaseServer.
+        r"""Sets the status of this BaseServer.
 
         :param status: The status of this BaseServer.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -371,7 +371,7 @@ class BaseServer:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BaseServer.
+        r"""Gets the create_time of this BaseServer.
 
         服务器创建时间。
 
@@ -382,7 +382,7 @@ class BaseServer:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BaseServer.
+        r"""Sets the create_time of this BaseServer.
 
         服务器创建时间。
 
@@ -393,7 +393,7 @@ class BaseServer:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BaseServer.
+        r"""Gets the update_time of this BaseServer.
 
         更新时间。
 
@@ -404,7 +404,7 @@ class BaseServer:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BaseServer.
+        r"""Sets the update_time of this BaseServer.
 
         更新时间。
 
@@ -415,7 +415,7 @@ class BaseServer:
 
     @property
     def image_id(self):
-        """Gets the image_id of this BaseServer.
+        r"""Gets the image_id of this BaseServer.
 
         镜像ID。
 
@@ -426,7 +426,7 @@ class BaseServer:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this BaseServer.
+        r"""Sets the image_id of this BaseServer.
 
         镜像ID。
 
@@ -437,7 +437,7 @@ class BaseServer:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this BaseServer.
+        r"""Gets the availability_zone of this BaseServer.
 
         服务器可用分区。
 
@@ -448,7 +448,7 @@ class BaseServer:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this BaseServer.
+        r"""Sets the availability_zone of this BaseServer.
 
         服务器可用分区。
 
@@ -459,7 +459,7 @@ class BaseServer:
 
     @property
     def domain(self):
-        """Gets the domain of this BaseServer.
+        r"""Gets the domain of this BaseServer.
 
         域。
 
@@ -470,7 +470,7 @@ class BaseServer:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this BaseServer.
+        r"""Sets the domain of this BaseServer.
 
         域。
 
@@ -481,7 +481,7 @@ class BaseServer:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this BaseServer.
+        r"""Gets the ou_name of this BaseServer.
 
         组织名称。
 
@@ -492,7 +492,7 @@ class BaseServer:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this BaseServer.
+        r"""Sets the ou_name of this BaseServer.
 
         组织名称。
 
@@ -503,7 +503,7 @@ class BaseServer:
 
     @property
     def sid(self):
-        """Gets the sid of this BaseServer.
+        r"""Gets the sid of this BaseServer.
 
         实例的SID。
 
@@ -514,7 +514,7 @@ class BaseServer:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this BaseServer.
+        r"""Sets the sid of this BaseServer.
 
         实例的SID。
 
@@ -525,7 +525,7 @@ class BaseServer:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BaseServer.
+        r"""Gets the instance_id of this BaseServer.
 
         实例的ID。
 
@@ -536,7 +536,7 @@ class BaseServer:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BaseServer.
+        r"""Sets the instance_id of this BaseServer.
 
         实例的ID。
 
@@ -547,7 +547,7 @@ class BaseServer:
 
     @property
     def os_version(self):
-        """Gets the os_version of this BaseServer.
+        r"""Gets the os_version of this BaseServer.
 
         服务器系统版本。
 
@@ -558,7 +558,7 @@ class BaseServer:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this BaseServer.
+        r"""Sets the os_version of this BaseServer.
 
         服务器系统版本。
 
@@ -569,7 +569,7 @@ class BaseServer:
 
     @property
     def os_type(self):
-        """Gets the os_type of this BaseServer.
+        r"""Gets the os_type of this BaseServer.
 
         操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
@@ -580,7 +580,7 @@ class BaseServer:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this BaseServer.
+        r"""Sets the os_type of this BaseServer.
 
         操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
@@ -591,7 +591,7 @@ class BaseServer:
 
     @property
     def order_id(self):
-        """Gets the order_id of this BaseServer.
+        r"""Gets the order_id of this BaseServer.
 
         包周期产品的订单ID。
 
@@ -602,7 +602,7 @@ class BaseServer:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this BaseServer.
+        r"""Sets the order_id of this BaseServer.
 
         包周期产品的订单ID。
 
@@ -613,7 +613,7 @@ class BaseServer:
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this BaseServer.
+        r"""Gets the maintain_status of this BaseServer.
 
         是否维护状态。
 
@@ -624,7 +624,7 @@ class BaseServer:
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this BaseServer.
+        r"""Sets the maintain_status of this BaseServer.
 
         是否维护状态。
 
@@ -635,7 +635,7 @@ class BaseServer:
 
     @property
     def scaling_auto_create(self):
-        """Gets the scaling_auto_create of this BaseServer.
+        r"""Gets the scaling_auto_create of this BaseServer.
 
         配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
@@ -646,7 +646,7 @@ class BaseServer:
 
     @scaling_auto_create.setter
     def scaling_auto_create(self, scaling_auto_create):
-        """Sets the scaling_auto_create of this BaseServer.
+        r"""Sets the scaling_auto_create of this BaseServer.
 
         配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
@@ -657,7 +657,7 @@ class BaseServer:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BaseServer.
+        r"""Gets the job_id of this BaseServer.
 
         上一次执行job的id。
 
@@ -668,7 +668,7 @@ class BaseServer:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BaseServer.
+        r"""Sets the job_id of this BaseServer.
 
         上一次执行job的id。
 
@@ -679,7 +679,7 @@ class BaseServer:
 
     @property
     def job_type(self):
-        """Gets the job_type of this BaseServer.
+        r"""Gets the job_type of this BaseServer.
 
         :return: The job_type of this BaseServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -688,7 +688,7 @@ class BaseServer:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this BaseServer.
+        r"""Sets the job_type of this BaseServer.
 
         :param job_type: The job_type of this BaseServer.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -697,7 +697,7 @@ class BaseServer:
 
     @property
     def job_status(self):
-        """Gets the job_status of this BaseServer.
+        r"""Gets the job_status of this BaseServer.
 
         :return: The job_status of this BaseServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -706,7 +706,7 @@ class BaseServer:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this BaseServer.
+        r"""Sets the job_status of this BaseServer.
 
         :param job_status: The job_status of this BaseServer.
         :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -715,7 +715,7 @@ class BaseServer:
 
     @property
     def job_time(self):
-        """Gets the job_time of this BaseServer.
+        r"""Gets the job_time of this BaseServer.
 
         上一次执行job的执行时间。
 
@@ -726,7 +726,7 @@ class BaseServer:
 
     @job_time.setter
     def job_time(self, job_time):
-        """Sets the job_time of this BaseServer.
+        r"""Sets the job_time of this BaseServer.
 
         上一次执行job的执行时间。
 
@@ -737,7 +737,7 @@ class BaseServer:
 
     @property
     def resource_pool_id(self):
-        """Gets the resource_pool_id of this BaseServer.
+        r"""Gets the resource_pool_id of this BaseServer.
 
         资源池ID。
 
@@ -748,7 +748,7 @@ class BaseServer:
 
     @resource_pool_id.setter
     def resource_pool_id(self, resource_pool_id):
-        """Sets the resource_pool_id of this BaseServer.
+        r"""Sets the resource_pool_id of this BaseServer.
 
         资源池ID。
 
@@ -759,7 +759,7 @@ class BaseServer:
 
     @property
     def resource_pool_type(self):
-        """Gets the resource_pool_type of this BaseServer.
+        r"""Gets the resource_pool_type of this BaseServer.
 
         资源池类型： - private：私有资源池。 - public: 工作资源池。
 
@@ -770,7 +770,7 @@ class BaseServer:
 
     @resource_pool_type.setter
     def resource_pool_type(self, resource_pool_type):
-        """Sets the resource_pool_type of this BaseServer.
+        r"""Sets the resource_pool_type of this BaseServer.
 
         资源池类型： - private：私有资源池。 - public: 工作资源池。
 
@@ -781,7 +781,7 @@ class BaseServer:
 
     @property
     def host_id(self):
-        """Gets the host_id of this BaseServer.
+        r"""Gets the host_id of this BaseServer.
 
         云专属主机id。
 
@@ -792,7 +792,7 @@ class BaseServer:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this BaseServer.
+        r"""Sets the host_id of this BaseServer.
 
         云专属主机id。
 

@@ -29,7 +29,7 @@ class CreateV2xEdgeAppRequest:
     }
 
     def __init__(self, v2x_edge_id=None, instance_id=None, body=None):
-        """CreateV2xEdgeAppRequest
+        r"""CreateV2xEdgeAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateV2xEdgeAppRequest:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this CreateV2xEdgeAppRequest.
+        r"""Gets the v2x_edge_id of this CreateV2xEdgeAppRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -67,7 +67,7 @@ class CreateV2xEdgeAppRequest:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this CreateV2xEdgeAppRequest.
+        r"""Sets the v2x_edge_id of this CreateV2xEdgeAppRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -78,7 +78,7 @@ class CreateV2xEdgeAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateV2xEdgeAppRequest.
+        r"""Gets the instance_id of this CreateV2xEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -89,7 +89,7 @@ class CreateV2xEdgeAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateV2xEdgeAppRequest.
+        r"""Sets the instance_id of this CreateV2xEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -100,7 +100,7 @@ class CreateV2xEdgeAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateV2xEdgeAppRequest.
+        r"""Gets the body of this CreateV2xEdgeAppRequest.
 
         :return: The body of this CreateV2xEdgeAppRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.AddV2XEdgeAppDTO`
@@ -109,7 +109,7 @@ class CreateV2xEdgeAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateV2xEdgeAppRequest.
+        r"""Sets the body of this CreateV2xEdgeAppRequest.
 
         :param body: The body of this CreateV2xEdgeAppRequest.
         :type body: :class:`huaweicloudsdkdris.v1.AddV2XEdgeAppDTO`

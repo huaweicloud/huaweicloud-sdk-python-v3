@@ -65,7 +65,7 @@ class CdmQueryClusterInstanceDetail:
     }
 
     def __init__(self, configuration_status=None, params_group_id=None, type=None, role=None, subnetid=None, securegroup=None, vpc=None, azcode=None, region=None, created=None, updated=None, name=None, id=None, flavor=None, datastore=None, dbuser=None, pay_model=None, public_ip=None, traffic_ip=None, traffic_ipv6=None, cluster_id=None):
-        """CdmQueryClusterInstanceDetail
+        r"""CdmQueryClusterInstanceDetail
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def configuration_status(self):
-        """Gets the configuration_status of this CdmQueryClusterInstanceDetail.
+        r"""Gets the configuration_status of this CdmQueryClusterInstanceDetail.
 
         节点配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
@@ -194,7 +194,7 @@ class CdmQueryClusterInstanceDetail:
 
     @configuration_status.setter
     def configuration_status(self, configuration_status):
-        """Sets the configuration_status of this CdmQueryClusterInstanceDetail.
+        r"""Sets the configuration_status of this CdmQueryClusterInstanceDetail.
 
         节点配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
@@ -205,7 +205,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def params_group_id(self):
-        """Gets the params_group_id of this CdmQueryClusterInstanceDetail.
+        r"""Gets the params_group_id of this CdmQueryClusterInstanceDetail.
 
         配置ID
 
@@ -216,7 +216,7 @@ class CdmQueryClusterInstanceDetail:
 
     @params_group_id.setter
     def params_group_id(self, params_group_id):
-        """Sets the params_group_id of this CdmQueryClusterInstanceDetail.
+        r"""Sets the params_group_id of this CdmQueryClusterInstanceDetail.
 
         配置ID
 
@@ -227,7 +227,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def type(self):
-        """Gets the type of this CdmQueryClusterInstanceDetail.
+        r"""Gets the type of this CdmQueryClusterInstanceDetail.
 
         配置服务类型，这里为cdm
 
@@ -238,7 +238,7 @@ class CdmQueryClusterInstanceDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CdmQueryClusterInstanceDetail.
+        r"""Sets the type of this CdmQueryClusterInstanceDetail.
 
         配置服务类型，这里为cdm
 
@@ -249,7 +249,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def role(self):
-        """Gets the role of this CdmQueryClusterInstanceDetail.
+        r"""Gets the role of this CdmQueryClusterInstanceDetail.
 
         实例模式，这里为Standalone
 
@@ -260,7 +260,7 @@ class CdmQueryClusterInstanceDetail:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this CdmQueryClusterInstanceDetail.
+        r"""Sets the role of this CdmQueryClusterInstanceDetail.
 
         实例模式，这里为Standalone
 
@@ -271,7 +271,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def subnetid(self):
-        """Gets the subnetid of this CdmQueryClusterInstanceDetail.
+        r"""Gets the subnetid of this CdmQueryClusterInstanceDetail.
 
         实例的子网ID
 
@@ -282,7 +282,7 @@ class CdmQueryClusterInstanceDetail:
 
     @subnetid.setter
     def subnetid(self, subnetid):
-        """Sets the subnetid of this CdmQueryClusterInstanceDetail.
+        r"""Sets the subnetid of this CdmQueryClusterInstanceDetail.
 
         实例的子网ID
 
@@ -293,7 +293,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def securegroup(self):
-        """Gets the securegroup of this CdmQueryClusterInstanceDetail.
+        r"""Gets the securegroup of this CdmQueryClusterInstanceDetail.
 
         安全组ID
 
@@ -304,7 +304,7 @@ class CdmQueryClusterInstanceDetail:
 
     @securegroup.setter
     def securegroup(self, securegroup):
-        """Sets the securegroup of this CdmQueryClusterInstanceDetail.
+        r"""Sets the securegroup of this CdmQueryClusterInstanceDetail.
 
         安全组ID
 
@@ -315,7 +315,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def vpc(self):
-        """Gets the vpc of this CdmQueryClusterInstanceDetail.
+        r"""Gets the vpc of this CdmQueryClusterInstanceDetail.
 
         实例的VPC ID
 
@@ -326,7 +326,7 @@ class CdmQueryClusterInstanceDetail:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this CdmQueryClusterInstanceDetail.
+        r"""Sets the vpc of this CdmQueryClusterInstanceDetail.
 
         实例的VPC ID
 
@@ -337,7 +337,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def azcode(self):
-        """Gets the azcode of this CdmQueryClusterInstanceDetail.
+        r"""Gets the azcode of this CdmQueryClusterInstanceDetail.
 
         可用区名称
 
@@ -348,7 +348,7 @@ class CdmQueryClusterInstanceDetail:
 
     @azcode.setter
     def azcode(self, azcode):
-        """Sets the azcode of this CdmQueryClusterInstanceDetail.
+        r"""Sets the azcode of this CdmQueryClusterInstanceDetail.
 
         可用区名称
 
@@ -359,7 +359,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def region(self):
-        """Gets the region of this CdmQueryClusterInstanceDetail.
+        r"""Gets the region of this CdmQueryClusterInstanceDetail.
 
         局点名称
 
@@ -370,7 +370,7 @@ class CdmQueryClusterInstanceDetail:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CdmQueryClusterInstanceDetail.
+        r"""Sets the region of this CdmQueryClusterInstanceDetail.
 
         局点名称
 
@@ -381,7 +381,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def created(self):
-        """Gets the created of this CdmQueryClusterInstanceDetail.
+        r"""Gets the created of this CdmQueryClusterInstanceDetail.
 
         实例创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -392,7 +392,7 @@ class CdmQueryClusterInstanceDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CdmQueryClusterInstanceDetail.
+        r"""Sets the created of this CdmQueryClusterInstanceDetail.
 
         实例创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -403,7 +403,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this CdmQueryClusterInstanceDetail.
+        r"""Gets the updated of this CdmQueryClusterInstanceDetail.
 
         实例更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -414,7 +414,7 @@ class CdmQueryClusterInstanceDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this CdmQueryClusterInstanceDetail.
+        r"""Sets the updated of this CdmQueryClusterInstanceDetail.
 
         实例更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -425,7 +425,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def name(self):
-        """Gets the name of this CdmQueryClusterInstanceDetail.
+        r"""Gets the name of this CdmQueryClusterInstanceDetail.
 
         实例名称
 
@@ -436,7 +436,7 @@ class CdmQueryClusterInstanceDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdmQueryClusterInstanceDetail.
+        r"""Sets the name of this CdmQueryClusterInstanceDetail.
 
         实例名称
 
@@ -447,7 +447,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def id(self):
-        """Gets the id of this CdmQueryClusterInstanceDetail.
+        r"""Gets the id of this CdmQueryClusterInstanceDetail.
 
         实例ID
 
@@ -458,7 +458,7 @@ class CdmQueryClusterInstanceDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CdmQueryClusterInstanceDetail.
+        r"""Sets the id of this CdmQueryClusterInstanceDetail.
 
         实例ID
 
@@ -469,7 +469,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CdmQueryClusterInstanceDetail.
+        r"""Gets the flavor of this CdmQueryClusterInstanceDetail.
 
         :return: The flavor of this CdmQueryClusterInstanceDetail.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterInstanceDetailFlavor`
@@ -478,7 +478,7 @@ class CdmQueryClusterInstanceDetail:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CdmQueryClusterInstanceDetail.
+        r"""Sets the flavor of this CdmQueryClusterInstanceDetail.
 
         :param flavor: The flavor of this CdmQueryClusterInstanceDetail.
         :type flavor: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterInstanceDetailFlavor`
@@ -487,7 +487,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CdmQueryClusterInstanceDetail.
+        r"""Gets the datastore of this CdmQueryClusterInstanceDetail.
 
         :return: The datastore of this CdmQueryClusterInstanceDetail.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -496,7 +496,7 @@ class CdmQueryClusterInstanceDetail:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CdmQueryClusterInstanceDetail.
+        r"""Sets the datastore of this CdmQueryClusterInstanceDetail.
 
         :param datastore: The datastore of this CdmQueryClusterInstanceDetail.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -505,7 +505,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def dbuser(self):
-        """Gets the dbuser of this CdmQueryClusterInstanceDetail.
+        r"""Gets the dbuser of this CdmQueryClusterInstanceDetail.
 
         数据库用户，这里为cdm。
 
@@ -516,7 +516,7 @@ class CdmQueryClusterInstanceDetail:
 
     @dbuser.setter
     def dbuser(self, dbuser):
-        """Sets the dbuser of this CdmQueryClusterInstanceDetail.
+        r"""Sets the dbuser of this CdmQueryClusterInstanceDetail.
 
         数据库用户，这里为cdm。
 
@@ -527,7 +527,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this CdmQueryClusterInstanceDetail.
+        r"""Gets the pay_model of this CdmQueryClusterInstanceDetail.
 
         付费模式： - 0：按需 - 1：包周期
 
@@ -538,7 +538,7 @@ class CdmQueryClusterInstanceDetail:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this CdmQueryClusterInstanceDetail.
+        r"""Sets the pay_model of this CdmQueryClusterInstanceDetail.
 
         付费模式： - 0：按需 - 1：包周期
 
@@ -549,7 +549,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this CdmQueryClusterInstanceDetail.
+        r"""Gets the public_ip of this CdmQueryClusterInstanceDetail.
 
         集群绑定的公网地址
 
@@ -560,7 +560,7 @@ class CdmQueryClusterInstanceDetail:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this CdmQueryClusterInstanceDetail.
+        r"""Sets the public_ip of this CdmQueryClusterInstanceDetail.
 
         集群绑定的公网地址
 
@@ -571,7 +571,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def traffic_ip(self):
-        """Gets the traffic_ip of this CdmQueryClusterInstanceDetail.
+        r"""Gets the traffic_ip of this CdmQueryClusterInstanceDetail.
 
         集群的内网地址
 
@@ -582,7 +582,7 @@ class CdmQueryClusterInstanceDetail:
 
     @traffic_ip.setter
     def traffic_ip(self, traffic_ip):
-        """Sets the traffic_ip of this CdmQueryClusterInstanceDetail.
+        r"""Sets the traffic_ip of this CdmQueryClusterInstanceDetail.
 
         集群的内网地址
 
@@ -593,7 +593,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def traffic_ipv6(self):
-        """Gets the traffic_ipv6 of this CdmQueryClusterInstanceDetail.
+        r"""Gets the traffic_ipv6 of this CdmQueryClusterInstanceDetail.
 
         集群的内网IPv6地址
 
@@ -604,7 +604,7 @@ class CdmQueryClusterInstanceDetail:
 
     @traffic_ipv6.setter
     def traffic_ipv6(self, traffic_ipv6):
-        """Sets the traffic_ipv6 of this CdmQueryClusterInstanceDetail.
+        r"""Sets the traffic_ipv6 of this CdmQueryClusterInstanceDetail.
 
         集群的内网IPv6地址
 
@@ -615,7 +615,7 @@ class CdmQueryClusterInstanceDetail:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CdmQueryClusterInstanceDetail.
+        r"""Gets the cluster_id of this CdmQueryClusterInstanceDetail.
 
         集群ID
 
@@ -626,7 +626,7 @@ class CdmQueryClusterInstanceDetail:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CdmQueryClusterInstanceDetail.
+        r"""Sets the cluster_id of this CdmQueryClusterInstanceDetail.
 
         集群ID
 

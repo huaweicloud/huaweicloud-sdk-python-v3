@@ -31,7 +31,7 @@ class ConstructDisasterRecoveryInstance:
     }
 
     def __init__(self, id=None, region_code=None, subnet_cidrs=None, node_ips=None):
-        """ConstructDisasterRecoveryInstance
+        r"""ConstructDisasterRecoveryInstance
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ConstructDisasterRecoveryInstance:
 
     @property
     def id(self):
-        """Gets the id of this ConstructDisasterRecoveryInstance.
+        r"""Gets the id of this ConstructDisasterRecoveryInstance.
 
         容灾实例的ID。
 
@@ -71,7 +71,7 @@ class ConstructDisasterRecoveryInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConstructDisasterRecoveryInstance.
+        r"""Sets the id of this ConstructDisasterRecoveryInstance.
 
         容灾实例的ID。
 
@@ -82,7 +82,7 @@ class ConstructDisasterRecoveryInstance:
 
     @property
     def region_code(self):
-        """Gets the region_code of this ConstructDisasterRecoveryInstance.
+        r"""Gets the region_code of this ConstructDisasterRecoveryInstance.
 
         容灾实例所在Region的code。
 
@@ -93,7 +93,7 @@ class ConstructDisasterRecoveryInstance:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this ConstructDisasterRecoveryInstance.
+        r"""Sets the region_code of this ConstructDisasterRecoveryInstance.
 
         容灾实例所在Region的code。
 
@@ -104,7 +104,7 @@ class ConstructDisasterRecoveryInstance:
 
     @property
     def subnet_cidrs(self):
-        """Gets the subnet_cidrs of this ConstructDisasterRecoveryInstance.
+        r"""Gets the subnet_cidrs of this ConstructDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例所在子网的CIDR列表。
 
@@ -115,7 +115,7 @@ class ConstructDisasterRecoveryInstance:
 
     @subnet_cidrs.setter
     def subnet_cidrs(self, subnet_cidrs):
-        """Sets the subnet_cidrs of this ConstructDisasterRecoveryInstance.
+        r"""Sets the subnet_cidrs of this ConstructDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例所在子网的CIDR列表。
 
@@ -126,7 +126,7 @@ class ConstructDisasterRecoveryInstance:
 
     @property
     def node_ips(self):
-        """Gets the node_ips of this ConstructDisasterRecoveryInstance.
+        r"""Gets the node_ips of this ConstructDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的所有节点的IP列表。
 
@@ -137,7 +137,7 @@ class ConstructDisasterRecoveryInstance:
 
     @node_ips.setter
     def node_ips(self, node_ips):
-        """Sets the node_ips of this ConstructDisasterRecoveryInstance.
+        r"""Sets the node_ips of this ConstructDisasterRecoveryInstance.
 
         与当前实例建立容灾关系实例的所有节点的IP列表。
 

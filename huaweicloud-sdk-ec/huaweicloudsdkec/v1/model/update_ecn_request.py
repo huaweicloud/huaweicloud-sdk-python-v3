@@ -27,7 +27,7 @@ class UpdateEcnRequest:
     }
 
     def __init__(self, ecn_id=None, body=None):
-        """UpdateEcnRequest
+        r"""UpdateEcnRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEcnRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this UpdateEcnRequest.
+        r"""Gets the ecn_id of this UpdateEcnRequest.
 
         企业连接网络ID
 
@@ -60,7 +60,7 @@ class UpdateEcnRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this UpdateEcnRequest.
+        r"""Sets the ecn_id of this UpdateEcnRequest.
 
         企业连接网络ID
 
@@ -71,7 +71,7 @@ class UpdateEcnRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEcnRequest.
+        r"""Gets the body of this UpdateEcnRequest.
 
         :return: The body of this UpdateEcnRequest.
         :rtype: :class:`huaweicloudsdkec.v1.UpdateEcnRequestBody`
@@ -80,7 +80,7 @@ class UpdateEcnRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEcnRequest.
+        r"""Sets the body of this UpdateEcnRequest.
 
         :param body: The body of this UpdateEcnRequest.
         :type body: :class:`huaweicloudsdkec.v1.UpdateEcnRequestBody`

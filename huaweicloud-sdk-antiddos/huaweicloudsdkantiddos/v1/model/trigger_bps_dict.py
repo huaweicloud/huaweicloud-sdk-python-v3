@@ -29,7 +29,7 @@ class TriggerBpsDict:
     }
 
     def __init__(self, traffic_pos_id=None, traffic_per_second=None, packet_per_second=None):
-        """TriggerBpsDict
+        r"""TriggerBpsDict
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TriggerBpsDict:
 
     @property
     def traffic_pos_id(self):
-        """Gets the traffic_pos_id of this TriggerBpsDict.
+        r"""Gets the traffic_pos_id of this TriggerBpsDict.
 
         流量分段ID
 
@@ -65,7 +65,7 @@ class TriggerBpsDict:
 
     @traffic_pos_id.setter
     def traffic_pos_id(self, traffic_pos_id):
-        """Sets the traffic_pos_id of this TriggerBpsDict.
+        r"""Sets the traffic_pos_id of this TriggerBpsDict.
 
         流量分段ID
 
@@ -76,7 +76,7 @@ class TriggerBpsDict:
 
     @property
     def traffic_per_second(self):
-        """Gets the traffic_per_second of this TriggerBpsDict.
+        r"""Gets the traffic_per_second of this TriggerBpsDict.
 
         每秒流量（Mbit/s）阈值
 
@@ -87,7 +87,7 @@ class TriggerBpsDict:
 
     @traffic_per_second.setter
     def traffic_per_second(self, traffic_per_second):
-        """Sets the traffic_per_second of this TriggerBpsDict.
+        r"""Sets the traffic_per_second of this TriggerBpsDict.
 
         每秒流量（Mbit/s）阈值
 
@@ -98,7 +98,7 @@ class TriggerBpsDict:
 
     @property
     def packet_per_second(self):
-        """Gets the packet_per_second of this TriggerBpsDict.
+        r"""Gets the packet_per_second of this TriggerBpsDict.
 
         每秒报文数（个/s）阈值
 
@@ -109,7 +109,7 @@ class TriggerBpsDict:
 
     @packet_per_second.setter
     def packet_per_second(self, packet_per_second):
-        """Sets the packet_per_second of this TriggerBpsDict.
+        r"""Sets the packet_per_second of this TriggerBpsDict.
 
         每秒报文数（个/s）阈值
 

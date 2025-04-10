@@ -37,7 +37,7 @@ class ResizeEngineInstanceReq:
     }
 
     def __init__(self, oper_type=None, new_storage_space=None, new_broker_num=None, new_product_id=None, publicip_id=None, tenant_ips=None, second_tenant_subnet_id=None):
-        """ResizeEngineInstanceReq
+        r"""ResizeEngineInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def oper_type(self):
-        """Gets the oper_type of this ResizeEngineInstanceReq.
+        r"""Gets the oper_type of this ResizeEngineInstanceReq.
 
         变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
@@ -95,7 +95,7 @@ class ResizeEngineInstanceReq:
 
     @oper_type.setter
     def oper_type(self, oper_type):
-        """Sets the oper_type of this ResizeEngineInstanceReq.
+        r"""Sets the oper_type of this ResizeEngineInstanceReq.
 
         变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
 
@@ -106,7 +106,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_storage_space(self):
-        """Gets the new_storage_space of this ResizeEngineInstanceReq.
+        r"""Gets the new_storage_space of this ResizeEngineInstanceReq.
 
         扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
 
@@ -117,7 +117,7 @@ class ResizeEngineInstanceReq:
 
     @new_storage_space.setter
     def new_storage_space(self, new_storage_space):
-        """Sets the new_storage_space of this ResizeEngineInstanceReq.
+        r"""Sets the new_storage_space of this ResizeEngineInstanceReq.
 
         扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
 
@@ -128,7 +128,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_broker_num(self):
-        """Gets the new_broker_num of this ResizeEngineInstanceReq.
+        r"""Gets the new_broker_num of this ResizeEngineInstanceReq.
 
         当oper_type参数为horizontal时，该参数有效。  [取值范围：最多支持30个broker。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)
 
@@ -139,7 +139,7 @@ class ResizeEngineInstanceReq:
 
     @new_broker_num.setter
     def new_broker_num(self, new_broker_num):
-        """Sets the new_broker_num of this ResizeEngineInstanceReq.
+        r"""Sets the new_broker_num of this ResizeEngineInstanceReq.
 
         当oper_type参数为horizontal时，该参数有效。  [取值范围：最多支持30个broker。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)
 
@@ -150,7 +150,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def new_product_id(self):
-        """Gets the new_product_id of this ResizeEngineInstanceReq.
+        r"""Gets the new_product_id of this ResizeEngineInstanceReq.
 
         垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
@@ -161,7 +161,7 @@ class ResizeEngineInstanceReq:
 
     @new_product_id.setter
     def new_product_id(self, new_product_id):
-        """Sets the new_product_id of this ResizeEngineInstanceReq.
+        r"""Sets the new_product_id of this ResizeEngineInstanceReq.
 
         垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
@@ -172,7 +172,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this ResizeEngineInstanceReq.
+        r"""Gets the publicip_id of this ResizeEngineInstanceReq.
 
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  当oper_type类型是horizontal时，该参数必填。
 
@@ -183,7 +183,7 @@ class ResizeEngineInstanceReq:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this ResizeEngineInstanceReq.
+        r"""Sets the publicip_id of this ResizeEngineInstanceReq.
 
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  当oper_type类型是horizontal时，该参数必填。
 
@@ -194,7 +194,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def tenant_ips(self):
-        """Gets the tenant_ips of this ResizeEngineInstanceReq.
+        r"""Gets the tenant_ips of this ResizeEngineInstanceReq.
 
         指定的内网IP地址，仅支持指定IPv4。  指定的IP数量只能小于等于新增节点数量。  当指定IP小于节点数量时，未指定的节点随机分配内网IP地址。
 
@@ -205,7 +205,7 @@ class ResizeEngineInstanceReq:
 
     @tenant_ips.setter
     def tenant_ips(self, tenant_ips):
-        """Sets the tenant_ips of this ResizeEngineInstanceReq.
+        r"""Sets the tenant_ips of this ResizeEngineInstanceReq.
 
         指定的内网IP地址，仅支持指定IPv4。  指定的IP数量只能小于等于新增节点数量。  当指定IP小于节点数量时，未指定的节点随机分配内网IP地址。
 
@@ -216,7 +216,7 @@ class ResizeEngineInstanceReq:
 
     @property
     def second_tenant_subnet_id(self):
-        """Gets the second_tenant_subnet_id of this ResizeEngineInstanceReq.
+        r"""Gets the second_tenant_subnet_id of this ResizeEngineInstanceReq.
 
         实例扩容时新节点使用备用子网的id  当实例扩容使用备用子网，则传入此值  需要联系客服添加白名单才能传入此值
 
@@ -227,7 +227,7 @@ class ResizeEngineInstanceReq:
 
     @second_tenant_subnet_id.setter
     def second_tenant_subnet_id(self, second_tenant_subnet_id):
-        """Sets the second_tenant_subnet_id of this ResizeEngineInstanceReq.
+        r"""Sets the second_tenant_subnet_id of this ResizeEngineInstanceReq.
 
         实例扩容时新节点使用备用子网的id  当实例扩容使用备用子网，则传入此值  需要联系客服添加白名单才能传入此值
 

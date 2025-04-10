@@ -37,7 +37,7 @@ class DataLayerVO:
     }
 
     def __init__(self, id=None, level=None, name=None, type=None, description=None, is_default=None, disabled_customized_field_ids=None):
-        """DataLayerVO
+        r"""DataLayerVO
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class DataLayerVO:
 
     @property
     def id(self):
-        """Gets the id of this DataLayerVO.
+        r"""Gets the id of this DataLayerVO.
 
         数仓分层的ID，ID字符串。
 
@@ -93,7 +93,7 @@ class DataLayerVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataLayerVO.
+        r"""Sets the id of this DataLayerVO.
 
         数仓分层的ID，ID字符串。
 
@@ -104,7 +104,7 @@ class DataLayerVO:
 
     @property
     def level(self):
-        """Gets the level of this DataLayerVO.
+        r"""Gets the level of this DataLayerVO.
 
         层级，从1开始。
 
@@ -115,7 +115,7 @@ class DataLayerVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this DataLayerVO.
+        r"""Sets the level of this DataLayerVO.
 
         层级，从1开始。
 
@@ -126,7 +126,7 @@ class DataLayerVO:
 
     @property
     def name(self):
-        """Gets the name of this DataLayerVO.
+        r"""Gets the name of this DataLayerVO.
 
         中文名称。
 
@@ -137,7 +137,7 @@ class DataLayerVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataLayerVO.
+        r"""Sets the name of this DataLayerVO.
 
         中文名称。
 
@@ -148,7 +148,7 @@ class DataLayerVO:
 
     @property
     def type(self):
-        """Gets the type of this DataLayerVO.
+        r"""Gets the type of this DataLayerVO.
 
         :return: The type of this DataLayerVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.LayerType`
@@ -157,7 +157,7 @@ class DataLayerVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataLayerVO.
+        r"""Sets the type of this DataLayerVO.
 
         :param type: The type of this DataLayerVO.
         :type type: :class:`huaweicloudsdkdataartsstudio.v1.LayerType`
@@ -166,7 +166,7 @@ class DataLayerVO:
 
     @property
     def description(self):
-        """Gets the description of this DataLayerVO.
+        r"""Gets the description of this DataLayerVO.
 
         数仓分层描述。
 
@@ -177,7 +177,7 @@ class DataLayerVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataLayerVO.
+        r"""Sets the description of this DataLayerVO.
 
         数仓分层描述。
 
@@ -188,7 +188,7 @@ class DataLayerVO:
 
     @property
     def is_default(self):
-        """Gets the is_default of this DataLayerVO.
+        r"""Gets the is_default of this DataLayerVO.
 
         是否是不可删除的默认分层，包含SDI\\DWR\\DM。
 
@@ -199,7 +199,7 @@ class DataLayerVO:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this DataLayerVO.
+        r"""Sets the is_default of this DataLayerVO.
 
         是否是不可删除的默认分层，包含SDI\\DWR\\DM。
 
@@ -210,7 +210,7 @@ class DataLayerVO:
 
     @property
     def disabled_customized_field_ids(self):
-        """Gets the disabled_customized_field_ids of this DataLayerVO.
+        r"""Gets the disabled_customized_field_ids of this DataLayerVO.
 
         该分层禁用的自定义项的ID列表，包括表级自定义项和字段级自定义项。
 
@@ -221,7 +221,7 @@ class DataLayerVO:
 
     @disabled_customized_field_ids.setter
     def disabled_customized_field_ids(self, disabled_customized_field_ids):
-        """Sets the disabled_customized_field_ids of this DataLayerVO.
+        r"""Sets the disabled_customized_field_ids of this DataLayerVO.
 
         该分层禁用的自定义项的ID列表，包括表级自定义项和字段级自定义项。
 

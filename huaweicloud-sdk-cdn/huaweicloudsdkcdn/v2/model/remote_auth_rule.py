@@ -53,7 +53,7 @@ class RemoteAuthRule:
     }
 
     def __init__(self, auth_server=None, request_method=None, file_type_setting=None, specified_file_type=None, reserve_args_setting=None, reserve_args=None, add_custom_args_rules=None, reserve_headers_setting=None, add_custom_headers_rules=None, auth_success_status=None, auth_failed_status=None, response_status=None, timeout=None, timeout_action=None, reserve_headers=None):
-        """RemoteAuthRule
+        r"""RemoteAuthRule
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class RemoteAuthRule:
 
     @property
     def auth_server(self):
-        """Gets the auth_server of this RemoteAuthRule.
+        r"""Gets the auth_server of this RemoteAuthRule.
 
         可访问的鉴权服务器地址。 输入的URL必须有“http”或“https”。不能是localhost或127.0.0.1这类本地地址。 不能是CDN的加速域名。
 
@@ -142,7 +142,7 @@ class RemoteAuthRule:
 
     @auth_server.setter
     def auth_server(self, auth_server):
-        """Sets the auth_server of this RemoteAuthRule.
+        r"""Sets the auth_server of this RemoteAuthRule.
 
         可访问的鉴权服务器地址。 输入的URL必须有“http”或“https”。不能是localhost或127.0.0.1这类本地地址。 不能是CDN的加速域名。
 
@@ -153,7 +153,7 @@ class RemoteAuthRule:
 
     @property
     def request_method(self):
-        """Gets the request_method of this RemoteAuthRule.
+        r"""Gets the request_method of this RemoteAuthRule.
 
         鉴权服务器支持的请求方法，支持GET、POST、HEAD。
 
@@ -164,7 +164,7 @@ class RemoteAuthRule:
 
     @request_method.setter
     def request_method(self, request_method):
-        """Sets the request_method of this RemoteAuthRule.
+        r"""Sets the request_method of this RemoteAuthRule.
 
         鉴权服务器支持的请求方法，支持GET、POST、HEAD。
 
@@ -175,7 +175,7 @@ class RemoteAuthRule:
 
     @property
     def file_type_setting(self):
-        """Gets the file_type_setting of this RemoteAuthRule.
+        r"""Gets the file_type_setting of this RemoteAuthRule.
 
         all（所有文件类型）：所有文件均参与鉴权。 specific_file（指定文件类型）：指定类型的文件参与鉴权。示例：jpg|MP4。 文件类型不区分大小写，即：jpg和JPG代表同一种文件类型，多个文件类型用“|”分割。
 
@@ -186,7 +186,7 @@ class RemoteAuthRule:
 
     @file_type_setting.setter
     def file_type_setting(self, file_type_setting):
-        """Sets the file_type_setting of this RemoteAuthRule.
+        r"""Sets the file_type_setting of this RemoteAuthRule.
 
         all（所有文件类型）：所有文件均参与鉴权。 specific_file（指定文件类型）：指定类型的文件参与鉴权。示例：jpg|MP4。 文件类型不区分大小写，即：jpg和JPG代表同一种文件类型，多个文件类型用“|”分割。
 
@@ -197,7 +197,7 @@ class RemoteAuthRule:
 
     @property
     def specified_file_type(self):
-        """Gets the specified_file_type of this RemoteAuthRule.
+        r"""Gets the specified_file_type of this RemoteAuthRule.
 
         字符总数不能超过512,当file_type_setting等于specific_file时为必选，其余情况为空， 由大小写字母和数字构成，文件类型用竖线分隔，例如jpg|mp4，只有在必选情况下才会对该字段做校验。
 
@@ -208,7 +208,7 @@ class RemoteAuthRule:
 
     @specified_file_type.setter
     def specified_file_type(self, specified_file_type):
-        """Sets the specified_file_type of this RemoteAuthRule.
+        r"""Sets the specified_file_type of this RemoteAuthRule.
 
         字符总数不能超过512,当file_type_setting等于specific_file时为必选，其余情况为空， 由大小写字母和数字构成，文件类型用竖线分隔，例如jpg|mp4，只有在必选情况下才会对该字段做校验。
 
@@ -219,7 +219,7 @@ class RemoteAuthRule:
 
     @property
     def reserve_args_setting(self):
-        """Gets the reserve_args_setting of this RemoteAuthRule.
+        r"""Gets the reserve_args_setting of this RemoteAuthRule.
 
         设置用户请求中需要参与鉴权的参数，可选reserve_all_args（保留所有URL参数）、reserve_specific_args（保留指定URL参数）、ignore_all_args（忽略所有URL参数）。
 
@@ -230,7 +230,7 @@ class RemoteAuthRule:
 
     @reserve_args_setting.setter
     def reserve_args_setting(self, reserve_args_setting):
-        """Sets the reserve_args_setting of this RemoteAuthRule.
+        r"""Sets the reserve_args_setting of this RemoteAuthRule.
 
         设置用户请求中需要参与鉴权的参数，可选reserve_all_args（保留所有URL参数）、reserve_specific_args（保留指定URL参数）、ignore_all_args（忽略所有URL参数）。
 
@@ -241,7 +241,7 @@ class RemoteAuthRule:
 
     @property
     def reserve_args(self):
-        """Gets the reserve_args of this RemoteAuthRule.
+        r"""Gets the reserve_args of this RemoteAuthRule.
 
         当reserve_args_setting等于reserve_specific_args时为必选，其余情况为空，要保留的参数，多个参数用竖线分隔：key1|key2。
 
@@ -252,7 +252,7 @@ class RemoteAuthRule:
 
     @reserve_args.setter
     def reserve_args(self, reserve_args):
-        """Sets the reserve_args of this RemoteAuthRule.
+        r"""Sets the reserve_args of this RemoteAuthRule.
 
         当reserve_args_setting等于reserve_specific_args时为必选，其余情况为空，要保留的参数，多个参数用竖线分隔：key1|key2。
 
@@ -263,7 +263,7 @@ class RemoteAuthRule:
 
     @property
     def add_custom_args_rules(self):
-        """Gets the add_custom_args_rules of this RemoteAuthRule.
+        r"""Gets the add_custom_args_rules of this RemoteAuthRule.
 
         URL鉴权参数
 
@@ -274,7 +274,7 @@ class RemoteAuthRule:
 
     @add_custom_args_rules.setter
     def add_custom_args_rules(self, add_custom_args_rules):
-        """Sets the add_custom_args_rules of this RemoteAuthRule.
+        r"""Sets the add_custom_args_rules of this RemoteAuthRule.
 
         URL鉴权参数
 
@@ -285,7 +285,7 @@ class RemoteAuthRule:
 
     @property
     def reserve_headers_setting(self):
-        """Gets the reserve_headers_setting of this RemoteAuthRule.
+        r"""Gets the reserve_headers_setting of this RemoteAuthRule.
 
         设置用户请求中参与鉴权请求头，可选reserve_all_headers（保留所有请求头参数）、reserve_specific_headers（保留指定请求头参数）、ignore_all_headers（忽略所有请求头参数）。
 
@@ -296,7 +296,7 @@ class RemoteAuthRule:
 
     @reserve_headers_setting.setter
     def reserve_headers_setting(self, reserve_headers_setting):
-        """Sets the reserve_headers_setting of this RemoteAuthRule.
+        r"""Sets the reserve_headers_setting of this RemoteAuthRule.
 
         设置用户请求中参与鉴权请求头，可选reserve_all_headers（保留所有请求头参数）、reserve_specific_headers（保留指定请求头参数）、ignore_all_headers（忽略所有请求头参数）。
 
@@ -307,7 +307,7 @@ class RemoteAuthRule:
 
     @property
     def add_custom_headers_rules(self):
-        """Gets the add_custom_headers_rules of this RemoteAuthRule.
+        r"""Gets the add_custom_headers_rules of this RemoteAuthRule.
 
         请求头鉴权参数
 
@@ -318,7 +318,7 @@ class RemoteAuthRule:
 
     @add_custom_headers_rules.setter
     def add_custom_headers_rules(self, add_custom_headers_rules):
-        """Sets the add_custom_headers_rules of this RemoteAuthRule.
+        r"""Sets the add_custom_headers_rules of this RemoteAuthRule.
 
         请求头鉴权参数
 
@@ -329,7 +329,7 @@ class RemoteAuthRule:
 
     @property
     def auth_success_status(self):
-        """Gets the auth_success_status of this RemoteAuthRule.
+        r"""Gets the auth_success_status of this RemoteAuthRule.
 
         设置鉴权成功时远程鉴权服务器返回给CDN节点的状态码。取值范围：2xx/3xx。
 
@@ -340,7 +340,7 @@ class RemoteAuthRule:
 
     @auth_success_status.setter
     def auth_success_status(self, auth_success_status):
-        """Sets the auth_success_status of this RemoteAuthRule.
+        r"""Sets the auth_success_status of this RemoteAuthRule.
 
         设置鉴权成功时远程鉴权服务器返回给CDN节点的状态码。取值范围：2xx/3xx。
 
@@ -351,7 +351,7 @@ class RemoteAuthRule:
 
     @property
     def auth_failed_status(self):
-        """Gets the auth_failed_status of this RemoteAuthRule.
+        r"""Gets the auth_failed_status of this RemoteAuthRule.
 
         设置鉴权失败时远程鉴权服务器返回给CDN节点的状态码。取值范围：4xx/5xx。
 
@@ -362,7 +362,7 @@ class RemoteAuthRule:
 
     @auth_failed_status.setter
     def auth_failed_status(self, auth_failed_status):
-        """Sets the auth_failed_status of this RemoteAuthRule.
+        r"""Sets the auth_failed_status of this RemoteAuthRule.
 
         设置鉴权失败时远程鉴权服务器返回给CDN节点的状态码。取值范围：4xx/5xx。
 
@@ -373,7 +373,7 @@ class RemoteAuthRule:
 
     @property
     def response_status(self):
-        """Gets the response_status of this RemoteAuthRule.
+        r"""Gets the response_status of this RemoteAuthRule.
 
         设置鉴权失败时CDN节点返回给用户的状态码。取值范围：2xx/3xx/4xx/5xx。
 
@@ -384,7 +384,7 @@ class RemoteAuthRule:
 
     @response_status.setter
     def response_status(self, response_status):
-        """Sets the response_status of this RemoteAuthRule.
+        r"""Sets the response_status of this RemoteAuthRule.
 
         设置鉴权失败时CDN节点返回给用户的状态码。取值范围：2xx/3xx/4xx/5xx。
 
@@ -395,7 +395,7 @@ class RemoteAuthRule:
 
     @property
     def timeout(self):
-        """Gets the timeout of this RemoteAuthRule.
+        r"""Gets the timeout of this RemoteAuthRule.
 
         设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50-3000。
 
@@ -406,7 +406,7 @@ class RemoteAuthRule:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this RemoteAuthRule.
+        r"""Sets the timeout of this RemoteAuthRule.
 
         设置鉴权超时时间，即从CDN转发鉴权请求开始，到CDN节点收到远程鉴权服务器返回的结果的时间。单位为毫秒，值为0或50-3000。
 
@@ -417,7 +417,7 @@ class RemoteAuthRule:
 
     @property
     def timeout_action(self):
-        """Gets the timeout_action of this RemoteAuthRule.
+        r"""Gets the timeout_action of this RemoteAuthRule.
 
         设置鉴权超时后，CDN节点如何处理用户请求。 pass(鉴权失败放过)：鉴权超时后允许用户请求，返回对应的资源。 forbid(鉴权失败拒绝)：鉴权超时后拒绝用户请求，返回配置的响应自定义状态码给用户。
 
@@ -428,7 +428,7 @@ class RemoteAuthRule:
 
     @timeout_action.setter
     def timeout_action(self, timeout_action):
-        """Sets the timeout_action of this RemoteAuthRule.
+        r"""Sets the timeout_action of this RemoteAuthRule.
 
         设置鉴权超时后，CDN节点如何处理用户请求。 pass(鉴权失败放过)：鉴权超时后允许用户请求，返回对应的资源。 forbid(鉴权失败拒绝)：鉴权超时后拒绝用户请求，返回配置的响应自定义状态码给用户。
 
@@ -439,7 +439,7 @@ class RemoteAuthRule:
 
     @property
     def reserve_headers(self):
-        """Gets the reserve_headers of this RemoteAuthRule.
+        r"""Gets the reserve_headers of this RemoteAuthRule.
 
         当reserve_headers_setting等于reserve_specific_headers时为必选，其余情况为空，要保留的请求头，多个请求头用竖线分隔：key1|key2。
 
@@ -450,7 +450,7 @@ class RemoteAuthRule:
 
     @reserve_headers.setter
     def reserve_headers(self, reserve_headers):
-        """Sets the reserve_headers of this RemoteAuthRule.
+        r"""Sets the reserve_headers of this RemoteAuthRule.
 
         当reserve_headers_setting等于reserve_specific_headers时为必选，其余情况为空，要保留的请求头，多个请求头用竖线分隔：key1|key2。
 

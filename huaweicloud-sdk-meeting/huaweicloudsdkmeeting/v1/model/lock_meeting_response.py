@@ -24,7 +24,7 @@ class LockMeetingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """LockMeetingResponse
+        r"""LockMeetingResponse
 
         The model defined in huaweicloud sdk
 

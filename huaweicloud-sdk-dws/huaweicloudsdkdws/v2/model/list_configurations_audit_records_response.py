@@ -28,7 +28,7 @@ class ListConfigurationsAuditRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, count=None):
-        """ListConfigurationsAuditRecordsResponse
+        r"""ListConfigurationsAuditRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigurationsAuditRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListConfigurationsAuditRecordsResponse.
+        r"""Gets the records of this ListConfigurationsAuditRecordsResponse.
 
         记录
 
@@ -62,7 +62,7 @@ class ListConfigurationsAuditRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListConfigurationsAuditRecordsResponse.
+        r"""Sets the records of this ListConfigurationsAuditRecordsResponse.
 
         记录
 
@@ -73,7 +73,7 @@ class ListConfigurationsAuditRecordsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListConfigurationsAuditRecordsResponse.
+        r"""Gets the count of this ListConfigurationsAuditRecordsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListConfigurationsAuditRecordsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListConfigurationsAuditRecordsResponse.
+        r"""Sets the count of this ListConfigurationsAuditRecordsResponse.
 
         总数
 

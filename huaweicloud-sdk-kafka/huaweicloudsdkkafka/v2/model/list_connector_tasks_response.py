@@ -32,7 +32,7 @@ class ListConnectorTasksResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total_number=None, max_tasks=None, quota_tasks=None):
-        """ListConnectorTasksResponse
+        r"""ListConnectorTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListConnectorTasksResponse.
+        r"""Gets the tasks of this ListConnectorTasksResponse.
 
         Smart Connector任务详情。
 
@@ -76,7 +76,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListConnectorTasksResponse.
+        r"""Sets the tasks of this ListConnectorTasksResponse.
 
         Smart Connector任务详情。
 
@@ -87,7 +87,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListConnectorTasksResponse.
+        r"""Gets the total_number of this ListConnectorTasksResponse.
 
         Smart Connector任务数。
 
@@ -98,7 +98,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListConnectorTasksResponse.
+        r"""Sets the total_number of this ListConnectorTasksResponse.
 
         Smart Connector任务数。
 
@@ -109,7 +109,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @property
     def max_tasks(self):
-        """Gets the max_tasks of this ListConnectorTasksResponse.
+        r"""Gets the max_tasks of this ListConnectorTasksResponse.
 
         Smart Connector最大任务数。
 
@@ -120,7 +120,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @max_tasks.setter
     def max_tasks(self, max_tasks):
-        """Sets the max_tasks of this ListConnectorTasksResponse.
+        r"""Sets the max_tasks of this ListConnectorTasksResponse.
 
         Smart Connector最大任务数。
 
@@ -131,7 +131,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @property
     def quota_tasks(self):
-        """Gets the quota_tasks of this ListConnectorTasksResponse.
+        r"""Gets the quota_tasks of this ListConnectorTasksResponse.
 
         Smart Connector任务配额。
 
@@ -142,7 +142,7 @@ class ListConnectorTasksResponse(SdkResponse):
 
     @quota_tasks.setter
     def quota_tasks(self, quota_tasks):
-        """Sets the quota_tasks of this ListConnectorTasksResponse.
+        r"""Sets the quota_tasks of this ListConnectorTasksResponse.
 
         Smart Connector任务配额。
 

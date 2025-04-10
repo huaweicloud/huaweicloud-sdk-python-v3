@@ -33,7 +33,7 @@ class DeleteCertificateRequest:
     }
 
     def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, certificate_id=None):
-        """DeleteCertificateRequest
+        r"""DeleteCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteCertificateRequest:
 
     @property
     def sp_auth_token(self):
-        """Gets the sp_auth_token of this DeleteCertificateRequest.
+        r"""Gets the sp_auth_token of this DeleteCertificateRequest.
 
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
@@ -76,7 +76,7 @@ class DeleteCertificateRequest:
 
     @sp_auth_token.setter
     def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this DeleteCertificateRequest.
+        r"""Sets the sp_auth_token of this DeleteCertificateRequest.
 
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
@@ -87,7 +87,7 @@ class DeleteCertificateRequest:
 
     @property
     def stage_auth_token(self):
-        """Gets the stage_auth_token of this DeleteCertificateRequest.
+        r"""Gets the stage_auth_token of this DeleteCertificateRequest.
 
         Stage用户的Token, 仅提供给IoStage服务使用
 
@@ -98,7 +98,7 @@ class DeleteCertificateRequest:
 
     @stage_auth_token.setter
     def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this DeleteCertificateRequest.
+        r"""Sets the stage_auth_token of this DeleteCertificateRequest.
 
         Stage用户的Token, 仅提供给IoStage服务使用
 
@@ -109,7 +109,7 @@ class DeleteCertificateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteCertificateRequest.
+        r"""Gets the instance_id of this DeleteCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -120,7 +120,7 @@ class DeleteCertificateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteCertificateRequest.
+        r"""Sets the instance_id of this DeleteCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -131,7 +131,7 @@ class DeleteCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this DeleteCertificateRequest.
+        r"""Gets the certificate_id of this DeleteCertificateRequest.
 
         设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
@@ -142,7 +142,7 @@ class DeleteCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this DeleteCertificateRequest.
+        r"""Sets the certificate_id of this DeleteCertificateRequest.
 
         设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 

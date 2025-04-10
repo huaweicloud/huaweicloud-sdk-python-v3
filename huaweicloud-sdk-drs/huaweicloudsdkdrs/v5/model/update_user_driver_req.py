@@ -27,7 +27,7 @@ class UpdateUserDriverReq:
     }
 
     def __init__(self, driver_name=None, driver_type=None):
-        """UpdateUserDriverReq
+        r"""UpdateUserDriverReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateUserDriverReq:
 
     @property
     def driver_name(self):
-        """Gets the driver_name of this UpdateUserDriverReq.
+        r"""Gets the driver_name of this UpdateUserDriverReq.
 
         JDBC驱动文件名称，name的长度5-64，结尾以.jar结尾。
 
@@ -59,7 +59,7 @@ class UpdateUserDriverReq:
 
     @driver_name.setter
     def driver_name(self, driver_name):
-        """Sets the driver_name of this UpdateUserDriverReq.
+        r"""Sets the driver_name of this UpdateUserDriverReq.
 
         JDBC驱动文件名称，name的长度5-64，结尾以.jar结尾。
 
@@ -70,7 +70,7 @@ class UpdateUserDriverReq:
 
     @property
     def driver_type(self):
-        """Gets the driver_type of this UpdateUserDriverReq.
+        r"""Gets the driver_type of this UpdateUserDriverReq.
 
         指定待同步的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -81,7 +81,7 @@ class UpdateUserDriverReq:
 
     @driver_type.setter
     def driver_type(self, driver_type):
-        """Sets the driver_type of this UpdateUserDriverReq.
+        r"""Sets the driver_type of this UpdateUserDriverReq.
 
         指定待同步的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 

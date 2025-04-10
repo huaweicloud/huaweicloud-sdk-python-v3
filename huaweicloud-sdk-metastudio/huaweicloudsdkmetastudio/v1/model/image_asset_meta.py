@@ -39,7 +39,7 @@ class ImageAssetMeta:
     }
 
     def __init__(self, codec=None, width=None, height=None, size=None, mode=None, frame_rate=None, duration=None, error_info=None):
-        """ImageAssetMeta
+        r"""ImageAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ImageAssetMeta:
 
     @property
     def codec(self):
-        """Gets the codec of this ImageAssetMeta.
+        r"""Gets the codec of this ImageAssetMeta.
 
         **参数解释**： 图片编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及。
 
@@ -103,7 +103,7 @@ class ImageAssetMeta:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this ImageAssetMeta.
+        r"""Sets the codec of this ImageAssetMeta.
 
         **参数解释**： 图片编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及。
 
@@ -114,7 +114,7 @@ class ImageAssetMeta:
 
     @property
     def width(self):
-        """Gets the width of this ImageAssetMeta.
+        r"""Gets the width of this ImageAssetMeta.
 
         **参数解释**： 图片宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
@@ -125,7 +125,7 @@ class ImageAssetMeta:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this ImageAssetMeta.
+        r"""Sets the width of this ImageAssetMeta.
 
         **参数解释**： 图片宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
@@ -136,7 +136,7 @@ class ImageAssetMeta:
 
     @property
     def height(self):
-        """Gets the height of this ImageAssetMeta.
+        r"""Gets the height of this ImageAssetMeta.
 
         **参数解释**： 图片高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
@@ -147,7 +147,7 @@ class ImageAssetMeta:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this ImageAssetMeta.
+        r"""Sets the height of this ImageAssetMeta.
 
         **参数解释**： 图片高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
@@ -158,7 +158,7 @@ class ImageAssetMeta:
 
     @property
     def size(self):
-        """Gets the size of this ImageAssetMeta.
+        r"""Gets the size of this ImageAssetMeta.
 
         **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
@@ -169,7 +169,7 @@ class ImageAssetMeta:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ImageAssetMeta.
+        r"""Sets the size of this ImageAssetMeta.
 
         **参数解释**： 图片大小。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及。
 
@@ -180,7 +180,7 @@ class ImageAssetMeta:
 
     @property
     def mode(self):
-        """Gets the mode of this ImageAssetMeta.
+        r"""Gets the mode of this ImageAssetMeta.
 
         **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
 
@@ -191,7 +191,7 @@ class ImageAssetMeta:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ImageAssetMeta.
+        r"""Sets the mode of this ImageAssetMeta.
 
         **参数解释**： 图片形态。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及。
 
@@ -202,7 +202,7 @@ class ImageAssetMeta:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this ImageAssetMeta.
+        r"""Gets the frame_rate of this ImageAssetMeta.
 
         **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -213,7 +213,7 @@ class ImageAssetMeta:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this ImageAssetMeta.
+        r"""Sets the frame_rate of this ImageAssetMeta.
 
         **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -224,7 +224,7 @@ class ImageAssetMeta:
 
     @property
     def duration(self):
-        """Gets the duration of this ImageAssetMeta.
+        r"""Gets the duration of this ImageAssetMeta.
 
         **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -235,7 +235,7 @@ class ImageAssetMeta:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ImageAssetMeta.
+        r"""Sets the duration of this ImageAssetMeta.
 
         **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -246,7 +246,7 @@ class ImageAssetMeta:
 
     @property
     def error_info(self):
-        """Gets the error_info of this ImageAssetMeta.
+        r"""Gets the error_info of this ImageAssetMeta.
 
         :return: The error_info of this ImageAssetMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -255,7 +255,7 @@ class ImageAssetMeta:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ImageAssetMeta.
+        r"""Sets the error_info of this ImageAssetMeta.
 
         :param error_info: The error_info of this ImageAssetMeta.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`

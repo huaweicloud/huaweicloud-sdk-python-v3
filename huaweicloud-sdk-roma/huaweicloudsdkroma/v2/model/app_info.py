@@ -45,7 +45,7 @@ class AppInfo:
     }
 
     def __init__(self, id=None, name=None, remark=None, creator=None, update_time=None, app_key=None, app_secret=None, register_time=None, status=None, app_type=None, roma_app_type=None):
-        """AppInfo
+        r"""AppInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AppInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppInfo.
+        r"""Gets the id of this AppInfo.
 
         编号
 
@@ -124,7 +124,7 @@ class AppInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppInfo.
+        r"""Sets the id of this AppInfo.
 
         编号
 
@@ -135,7 +135,7 @@ class AppInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppInfo.
+        r"""Gets the name of this AppInfo.
 
         名称
 
@@ -146,7 +146,7 @@ class AppInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppInfo.
+        r"""Sets the name of this AppInfo.
 
         名称
 
@@ -157,7 +157,7 @@ class AppInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this AppInfo.
+        r"""Gets the remark of this AppInfo.
 
         描述
 
@@ -168,7 +168,7 @@ class AppInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AppInfo.
+        r"""Sets the remark of this AppInfo.
 
         描述
 
@@ -179,7 +179,7 @@ class AppInfo:
 
     @property
     def creator(self):
-        """Gets the creator of this AppInfo.
+        r"""Gets the creator of this AppInfo.
 
         APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
@@ -190,7 +190,7 @@ class AppInfo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this AppInfo.
+        r"""Sets the creator of this AppInfo.
 
         APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
@@ -201,7 +201,7 @@ class AppInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppInfo.
+        r"""Gets the update_time of this AppInfo.
 
         更新时间
 
@@ -212,7 +212,7 @@ class AppInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppInfo.
+        r"""Sets the update_time of this AppInfo.
 
         更新时间
 
@@ -223,7 +223,7 @@ class AppInfo:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AppInfo.
+        r"""Gets the app_key of this AppInfo.
 
         APP的key
 
@@ -234,7 +234,7 @@ class AppInfo:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AppInfo.
+        r"""Sets the app_key of this AppInfo.
 
         APP的key
 
@@ -245,7 +245,7 @@ class AppInfo:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this AppInfo.
+        r"""Gets the app_secret of this AppInfo.
 
         密钥
 
@@ -256,7 +256,7 @@ class AppInfo:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this AppInfo.
+        r"""Sets the app_secret of this AppInfo.
 
         密钥
 
@@ -267,7 +267,7 @@ class AppInfo:
 
     @property
     def register_time(self):
-        """Gets the register_time of this AppInfo.
+        r"""Gets the register_time of this AppInfo.
 
         注册时间
 
@@ -278,7 +278,7 @@ class AppInfo:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this AppInfo.
+        r"""Sets the register_time of this AppInfo.
 
         注册时间
 
@@ -289,7 +289,7 @@ class AppInfo:
 
     @property
     def status(self):
-        """Gets the status of this AppInfo.
+        r"""Gets the status of this AppInfo.
 
         状态   - 1： 有效
 
@@ -300,7 +300,7 @@ class AppInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AppInfo.
+        r"""Sets the status of this AppInfo.
 
         状态   - 1： 有效
 
@@ -311,7 +311,7 @@ class AppInfo:
 
     @property
     def app_type(self):
-        """Gets the app_type of this AppInfo.
+        r"""Gets the app_type of this AppInfo.
 
         APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用
 
@@ -322,7 +322,7 @@ class AppInfo:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this AppInfo.
+        r"""Sets the app_type of this AppInfo.
 
         APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用
 
@@ -333,7 +333,7 @@ class AppInfo:
 
     @property
     def roma_app_type(self):
-        """Gets the roma_app_type of this AppInfo.
+        r"""Gets the roma_app_type of this AppInfo.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
@@ -344,7 +344,7 @@ class AppInfo:
 
     @roma_app_type.setter
     def roma_app_type(self, roma_app_type):
-        """Sets the roma_app_type of this AppInfo.
+        r"""Sets the roma_app_type of this AppInfo.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 

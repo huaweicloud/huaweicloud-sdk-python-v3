@@ -34,7 +34,7 @@ class IdentityCenterPortalAPIAsyncClient(Client):
         return client_builder
 
     def list_accounts_async(self, request):
-        """列出账号
+        r"""列出账号
 
         列出分配给用户的所有账号
         
@@ -103,7 +103,7 @@ class IdentityCenterPortalAPIAsyncClient(Client):
         return http_info
 
     def list_account_agencies_async(self, request):
-        """列出账号委托
+        r"""列出账号委托
 
         列出账号分配给用户的所有委托或信任委托
         
@@ -174,7 +174,7 @@ class IdentityCenterPortalAPIAsyncClient(Client):
         return http_info
 
     def get_agency_credentials_async(self, request):
-        """获取委托凭证
+        r"""获取委托凭证
 
         获取分配给用户的指定委托或信任委托的STS短期凭证
         
@@ -243,7 +243,7 @@ class IdentityCenterPortalAPIAsyncClient(Client):
         return http_info
 
     def logout_async(self, request):
-        """登出用户
+        r"""登出用户
 
         向IAM身份中心服务发送API调用，使相应的服务端IAM身份中心登录会话失效。
         

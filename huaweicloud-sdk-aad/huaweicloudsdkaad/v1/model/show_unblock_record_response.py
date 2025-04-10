@@ -30,7 +30,7 @@ class ShowUnblockRecordResponse(SdkResponse):
     }
 
     def __init__(self, unblock_record=None, total=None, domain_id=None):
-        """ShowUnblockRecordResponse
+        r"""ShowUnblockRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowUnblockRecordResponse(SdkResponse):
 
     @property
     def unblock_record(self):
-        """Gets the unblock_record of this ShowUnblockRecordResponse.
+        r"""Gets the unblock_record of this ShowUnblockRecordResponse.
 
         解封记录
 
@@ -69,7 +69,7 @@ class ShowUnblockRecordResponse(SdkResponse):
 
     @unblock_record.setter
     def unblock_record(self, unblock_record):
-        """Sets the unblock_record of this ShowUnblockRecordResponse.
+        r"""Sets the unblock_record of this ShowUnblockRecordResponse.
 
         解封记录
 
@@ -80,7 +80,7 @@ class ShowUnblockRecordResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowUnblockRecordResponse.
+        r"""Gets the total of this ShowUnblockRecordResponse.
 
         总数
 
@@ -91,7 +91,7 @@ class ShowUnblockRecordResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowUnblockRecordResponse.
+        r"""Sets the total of this ShowUnblockRecordResponse.
 
         总数
 
@@ -102,7 +102,7 @@ class ShowUnblockRecordResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowUnblockRecordResponse.
+        r"""Gets the domain_id of this ShowUnblockRecordResponse.
 
         租户id
 
@@ -113,7 +113,7 @@ class ShowUnblockRecordResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowUnblockRecordResponse.
+        r"""Sets the domain_id of this ShowUnblockRecordResponse.
 
         租户id
 

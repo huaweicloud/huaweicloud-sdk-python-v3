@@ -28,7 +28,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure=None):
-        """BatchDeleteApiAclBindingV2Response
+        r"""BatchDeleteApiAclBindingV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this BatchDeleteApiAclBindingV2Response.
+        r"""Gets the success_count of this BatchDeleteApiAclBindingV2Response.
 
         成功解除绑定的ACL策略数量
 
@@ -62,7 +62,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this BatchDeleteApiAclBindingV2Response.
+        r"""Sets the success_count of this BatchDeleteApiAclBindingV2Response.
 
         成功解除绑定的ACL策略数量
 
@@ -73,7 +73,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this BatchDeleteApiAclBindingV2Response.
+        r"""Gets the failure of this BatchDeleteApiAclBindingV2Response.
 
         解除绑定失败的ACL策略及错误信息
 
@@ -84,7 +84,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this BatchDeleteApiAclBindingV2Response.
+        r"""Sets the failure of this BatchDeleteApiAclBindingV2Response.
 
         解除绑定失败的ACL策略及错误信息
 

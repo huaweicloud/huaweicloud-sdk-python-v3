@@ -25,7 +25,7 @@ class BatchLimitSpeedReq:
     }
 
     def __init__(self, speed_limits=None):
-        """BatchLimitSpeedReq
+        r"""BatchLimitSpeedReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchLimitSpeedReq:
 
     @property
     def speed_limits(self):
-        """Gets the speed_limits of this BatchLimitSpeedReq.
+        r"""Gets the speed_limits of this BatchLimitSpeedReq.
 
         灾备限速设置信息
 
@@ -53,7 +53,7 @@ class BatchLimitSpeedReq:
 
     @speed_limits.setter
     def speed_limits(self, speed_limits):
-        """Sets the speed_limits of this BatchLimitSpeedReq.
+        r"""Sets the speed_limits of this BatchLimitSpeedReq.
 
         灾备限速设置信息
 

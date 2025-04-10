@@ -27,7 +27,7 @@ class StartKibanaPublicRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartKibanaPublicRequest
+        r"""StartKibanaPublicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartKibanaPublicRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartKibanaPublicRequest.
+        r"""Gets the cluster_id of this StartKibanaPublicRequest.
 
         指定待开启kibana公网访问的集群ID。
 
@@ -60,7 +60,7 @@ class StartKibanaPublicRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartKibanaPublicRequest.
+        r"""Sets the cluster_id of this StartKibanaPublicRequest.
 
         指定待开启kibana公网访问的集群ID。
 
@@ -71,7 +71,7 @@ class StartKibanaPublicRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartKibanaPublicRequest.
+        r"""Gets the body of this StartKibanaPublicRequest.
 
         :return: The body of this StartKibanaPublicRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReq`
@@ -80,7 +80,7 @@ class StartKibanaPublicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartKibanaPublicRequest.
+        r"""Sets the body of this StartKibanaPublicRequest.
 
         :param body: The body of this StartKibanaPublicRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReq`

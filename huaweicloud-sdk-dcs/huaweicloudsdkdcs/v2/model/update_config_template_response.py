@@ -26,7 +26,7 @@ class UpdateConfigTemplateResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateConfigTemplateResponse
+        r"""UpdateConfigTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateConfigTemplateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateConfigTemplateResponse.
+        r"""Gets the result of this UpdateConfigTemplateResponse.
 
         修改自定义模板的结果，success表示成功，如果失败则会返回对应的报错信息
 
@@ -55,7 +55,7 @@ class UpdateConfigTemplateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateConfigTemplateResponse.
+        r"""Sets the result of this UpdateConfigTemplateResponse.
 
         修改自定义模板的结果，success表示成功，如果失败则会返回对应的报错信息
 

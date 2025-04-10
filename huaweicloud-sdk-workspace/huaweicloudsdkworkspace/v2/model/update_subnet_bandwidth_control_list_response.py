@@ -24,7 +24,7 @@ class UpdateSubnetBandwidthControlListResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateSubnetBandwidthControlListResponse
+        r"""UpdateSubnetBandwidthControlListResponse
 
         The model defined in huaweicloud sdk
 

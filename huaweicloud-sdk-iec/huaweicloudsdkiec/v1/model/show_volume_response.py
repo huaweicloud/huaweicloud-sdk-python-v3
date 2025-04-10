@@ -26,7 +26,7 @@ class ShowVolumeResponse(SdkResponse):
     }
 
     def __init__(self, volume=None):
-        """ShowVolumeResponse
+        r"""ShowVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVolumeResponse(SdkResponse):
 
     @property
     def volume(self):
-        """Gets the volume of this ShowVolumeResponse.
+        r"""Gets the volume of this ShowVolumeResponse.
 
         :return: The volume of this ShowVolumeResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Volume`
@@ -53,7 +53,7 @@ class ShowVolumeResponse(SdkResponse):
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ShowVolumeResponse.
+        r"""Sets the volume of this ShowVolumeResponse.
 
         :param volume: The volume of this ShowVolumeResponse.
         :type volume: :class:`huaweicloudsdkiec.v1.Volume`

@@ -27,7 +27,7 @@ class ExpandClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ExpandClusterRequest
+        r"""ExpandClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExpandClusterRequest.
+        r"""Gets the cluster_id of this ExpandClusterRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ExpandClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExpandClusterRequest.
+        r"""Sets the cluster_id of this ExpandClusterRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ExpandClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandClusterRequest.
+        r"""Gets the body of this ExpandClusterRequest.
 
         :return: The body of this ExpandClusterRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.ExpandParam`
@@ -80,7 +80,7 @@ class ExpandClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandClusterRequest.
+        r"""Sets the body of this ExpandClusterRequest.
 
         :param body: The body of this ExpandClusterRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.ExpandParam`

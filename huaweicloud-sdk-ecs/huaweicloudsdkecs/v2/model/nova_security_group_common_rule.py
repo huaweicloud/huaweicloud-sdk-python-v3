@@ -37,7 +37,7 @@ class NovaSecurityGroupCommonRule:
     }
 
     def __init__(self, from_port=None, group=None, id=None, ip_protocol=None, ip_range=None, parent_group_id=None, to_port=None):
-        """NovaSecurityGroupCommonRule
+        r"""NovaSecurityGroupCommonRule
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def from_port(self):
-        """Gets the from_port of this NovaSecurityGroupCommonRule.
+        r"""Gets the from_port of this NovaSecurityGroupCommonRule.
 
         起始端口，范围1-65535，且不大于to_port。 ip_protocol设置为icmp时，from_port表示type，范围是0-255。
 
@@ -89,7 +89,7 @@ class NovaSecurityGroupCommonRule:
 
     @from_port.setter
     def from_port(self, from_port):
-        """Sets the from_port of this NovaSecurityGroupCommonRule.
+        r"""Sets the from_port of this NovaSecurityGroupCommonRule.
 
         起始端口，范围1-65535，且不大于to_port。 ip_protocol设置为icmp时，from_port表示type，范围是0-255。
 
@@ -100,7 +100,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def group(self):
-        """Gets the group of this NovaSecurityGroupCommonRule.
+        r"""Gets the group of this NovaSecurityGroupCommonRule.
 
         :return: The group of this NovaSecurityGroupCommonRule.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
@@ -109,7 +109,7 @@ class NovaSecurityGroupCommonRule:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this NovaSecurityGroupCommonRule.
+        r"""Sets the group of this NovaSecurityGroupCommonRule.
 
         :param group: The group of this NovaSecurityGroupCommonRule.
         :type group: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
@@ -118,7 +118,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def id(self):
-        """Gets the id of this NovaSecurityGroupCommonRule.
+        r"""Gets the id of this NovaSecurityGroupCommonRule.
 
         安全组规则ID，UUID格式。
 
@@ -129,7 +129,7 @@ class NovaSecurityGroupCommonRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaSecurityGroupCommonRule.
+        r"""Sets the id of this NovaSecurityGroupCommonRule.
 
         安全组规则ID，UUID格式。
 
@@ -140,7 +140,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def ip_protocol(self):
-        """Gets the ip_protocol of this NovaSecurityGroupCommonRule.
+        r"""Gets the ip_protocol of this NovaSecurityGroupCommonRule.
 
         协议类型或直接指定IP协议号，取值可为icmp，tcp，udp或IP协议号。
 
@@ -151,7 +151,7 @@ class NovaSecurityGroupCommonRule:
 
     @ip_protocol.setter
     def ip_protocol(self, ip_protocol):
-        """Sets the ip_protocol of this NovaSecurityGroupCommonRule.
+        r"""Sets the ip_protocol of this NovaSecurityGroupCommonRule.
 
         协议类型或直接指定IP协议号，取值可为icmp，tcp，udp或IP协议号。
 
@@ -162,7 +162,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this NovaSecurityGroupCommonRule.
+        r"""Gets the ip_range of this NovaSecurityGroupCommonRule.
 
         :return: The ip_range of this NovaSecurityGroupCommonRule.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`
@@ -171,7 +171,7 @@ class NovaSecurityGroupCommonRule:
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this NovaSecurityGroupCommonRule.
+        r"""Sets the ip_range of this NovaSecurityGroupCommonRule.
 
         :param ip_range: The ip_range of this NovaSecurityGroupCommonRule.
         :type ip_range: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`
@@ -180,7 +180,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def parent_group_id(self):
-        """Gets the parent_group_id of this NovaSecurityGroupCommonRule.
+        r"""Gets the parent_group_id of this NovaSecurityGroupCommonRule.
 
         相关联的安全组ID，UUID格式。
 
@@ -191,7 +191,7 @@ class NovaSecurityGroupCommonRule:
 
     @parent_group_id.setter
     def parent_group_id(self, parent_group_id):
-        """Sets the parent_group_id of this NovaSecurityGroupCommonRule.
+        r"""Sets the parent_group_id of this NovaSecurityGroupCommonRule.
 
         相关联的安全组ID，UUID格式。
 
@@ -202,7 +202,7 @@ class NovaSecurityGroupCommonRule:
 
     @property
     def to_port(self):
-        """Gets the to_port of this NovaSecurityGroupCommonRule.
+        r"""Gets the to_port of this NovaSecurityGroupCommonRule.
 
         终止端口，范围1-65535，且不小于from_port。 ip_protocol设置为icmp时，to_port表示code，范围是0-255，且如果from_port为-1，to_port为-1表示任意ICMP报文。
 
@@ -213,7 +213,7 @@ class NovaSecurityGroupCommonRule:
 
     @to_port.setter
     def to_port(self, to_port):
-        """Sets the to_port of this NovaSecurityGroupCommonRule.
+        r"""Sets the to_port of this NovaSecurityGroupCommonRule.
 
         终止端口，范围1-65535，且不小于from_port。 ip_protocol设置为icmp时，to_port表示code，范围是0-255，且如果from_port为-1，to_port为-1表示任意ICMP报文。
 

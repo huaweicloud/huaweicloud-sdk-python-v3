@@ -27,7 +27,7 @@ class ListDatabaseUserRoleRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None):
-        """ListDatabaseUserRoleRequest
+        r"""ListDatabaseUserRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListDatabaseUserRoleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabaseUserRoleRequest.
+        r"""Gets the instance_id of this ListDatabaseUserRoleRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ListDatabaseUserRoleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabaseUserRoleRequest.
+        r"""Sets the instance_id of this ListDatabaseUserRoleRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ListDatabaseUserRoleRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListDatabaseUserRoleRequest.
+        r"""Gets the user_name of this ListDatabaseUserRoleRequest.
 
         用户名，有值时返回该账号可以授权的角色集合
 
@@ -82,7 +82,7 @@ class ListDatabaseUserRoleRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListDatabaseUserRoleRequest.
+        r"""Sets the user_name of this ListDatabaseUserRoleRequest.
 
         用户名，有值时返回该账号可以授权的角色集合
 

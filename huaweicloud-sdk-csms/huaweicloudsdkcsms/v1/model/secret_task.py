@@ -41,7 +41,7 @@ class SecretTask:
     }
 
     def __init__(self, task_id=None, secret_name=None, rotation_func_urn=None, task_status=None, operate_type=None, task_time=None, attempt_nums=None, task_error_code=None, task_error_msg=None):
-        """SecretTask
+        r"""SecretTask
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SecretTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this SecretTask.
+        r"""Gets the task_id of this SecretTask.
 
         任务ID
 
@@ -110,7 +110,7 @@ class SecretTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this SecretTask.
+        r"""Sets the task_id of this SecretTask.
 
         任务ID
 
@@ -121,7 +121,7 @@ class SecretTask:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this SecretTask.
+        r"""Gets the secret_name of this SecretTask.
 
         凭据名称。
 
@@ -132,7 +132,7 @@ class SecretTask:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this SecretTask.
+        r"""Sets the secret_name of this SecretTask.
 
         凭据名称。
 
@@ -143,7 +143,7 @@ class SecretTask:
 
     @property
     def rotation_func_urn(self):
-        """Gets the rotation_func_urn of this SecretTask.
+        r"""Gets the rotation_func_urn of this SecretTask.
 
         FunctionGraph函数的urn。
 
@@ -154,7 +154,7 @@ class SecretTask:
 
     @rotation_func_urn.setter
     def rotation_func_urn(self, rotation_func_urn):
-        """Sets the rotation_func_urn of this SecretTask.
+        r"""Sets the rotation_func_urn of this SecretTask.
 
         FunctionGraph函数的urn。
 
@@ -165,7 +165,7 @@ class SecretTask:
 
     @property
     def task_status(self):
-        """Gets the task_status of this SecretTask.
+        r"""Gets the task_status of this SecretTask.
 
         任务状态。
 
@@ -176,7 +176,7 @@ class SecretTask:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this SecretTask.
+        r"""Sets the task_status of this SecretTask.
 
         任务状态。
 
@@ -187,7 +187,7 @@ class SecretTask:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this SecretTask.
+        r"""Gets the operate_type of this SecretTask.
 
         轮转类型。
 
@@ -198,7 +198,7 @@ class SecretTask:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this SecretTask.
+        r"""Sets the operate_type of this SecretTask.
 
         轮转类型。
 
@@ -209,7 +209,7 @@ class SecretTask:
 
     @property
     def task_time(self):
-        """Gets the task_time of this SecretTask.
+        r"""Gets the task_time of this SecretTask.
 
         任务创建时间。
 
@@ -220,7 +220,7 @@ class SecretTask:
 
     @task_time.setter
     def task_time(self, task_time):
-        """Sets the task_time of this SecretTask.
+        r"""Sets the task_time of this SecretTask.
 
         任务创建时间。
 
@@ -231,7 +231,7 @@ class SecretTask:
 
     @property
     def attempt_nums(self):
-        """Gets the attempt_nums of this SecretTask.
+        r"""Gets the attempt_nums of this SecretTask.
 
         轮转尝试次数。
 
@@ -242,7 +242,7 @@ class SecretTask:
 
     @attempt_nums.setter
     def attempt_nums(self, attempt_nums):
-        """Sets the attempt_nums of this SecretTask.
+        r"""Sets the attempt_nums of this SecretTask.
 
         轮转尝试次数。
 
@@ -253,7 +253,7 @@ class SecretTask:
 
     @property
     def task_error_code(self):
-        """Gets the task_error_code of this SecretTask.
+        r"""Gets the task_error_code of this SecretTask.
 
         任务错误码。
 
@@ -264,7 +264,7 @@ class SecretTask:
 
     @task_error_code.setter
     def task_error_code(self, task_error_code):
-        """Sets the task_error_code of this SecretTask.
+        r"""Sets the task_error_code of this SecretTask.
 
         任务错误码。
 
@@ -275,7 +275,7 @@ class SecretTask:
 
     @property
     def task_error_msg(self):
-        """Gets the task_error_msg of this SecretTask.
+        r"""Gets the task_error_msg of this SecretTask.
 
         任务错误信息。
 
@@ -286,7 +286,7 @@ class SecretTask:
 
     @task_error_msg.setter
     def task_error_msg(self, task_error_msg):
-        """Sets the task_error_msg of this SecretTask.
+        r"""Sets the task_error_msg of this SecretTask.
 
         任务错误信息。
 

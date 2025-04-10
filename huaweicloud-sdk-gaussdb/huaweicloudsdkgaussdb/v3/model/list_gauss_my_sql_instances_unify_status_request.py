@@ -49,7 +49,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
     }
 
     def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, private_ip=None, readonly_private_ip=None, proxy_ip=None, offset=None, limit=None, tags=None):
-        """ListGaussMySqlInstancesUnifyStatusRequest
+        r"""ListGaussMySqlInstancesUnifyStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the x_language of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -138,7 +138,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the x_language of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -149,7 +149,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the id of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         实例ID。 “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
@@ -160,7 +160,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the id of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         实例ID。 “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
@@ -171,7 +171,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the name of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
@@ -182,7 +182,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the name of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照“\\*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
@@ -193,7 +193,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the type of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         按照实例类型查询。目前仅支持Cluster。
 
@@ -204,7 +204,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the type of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         按照实例类型查询。目前仅支持Cluster。
 
@@ -215,7 +215,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the datastore_type of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         数据库类型，现在只支持gaussdb-mysql。
 
@@ -226,7 +226,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the datastore_type of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         数据库类型，现在只支持gaussdb-mysql。
 
@@ -237,7 +237,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the vpc_id of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         虚拟私有云ID。
 
@@ -248,7 +248,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the vpc_id of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         虚拟私有云ID。
 
@@ -259,7 +259,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the subnet_id of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         子网的网络ID信息。
 
@@ -270,7 +270,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the subnet_id of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         子网的网络ID信息。
 
@@ -281,7 +281,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         读写内网IP地址。
 
@@ -292,7 +292,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         读写内网IP地址。
 
@@ -303,7 +303,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def readonly_private_ip(self):
-        """Gets the readonly_private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the readonly_private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         读内网IP地址。
 
@@ -314,7 +314,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @readonly_private_ip.setter
     def readonly_private_ip(self, readonly_private_ip):
-        """Sets the readonly_private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the readonly_private_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         读内网IP地址。
 
@@ -325,7 +325,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def proxy_ip(self):
-        """Gets the proxy_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the proxy_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         读写分离IP地址。
 
@@ -336,7 +336,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @proxy_ip.setter
     def proxy_ip(self, proxy_ip):
-        """Sets the proxy_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the proxy_ip of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         读写分离IP地址。
 
@@ -347,7 +347,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the offset of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -358,7 +358,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the offset of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -369,7 +369,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the limit of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -380,7 +380,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the limit of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -391,7 +391,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Gets the tags of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         根据实例标签键值对进行查询。 - {key}表示标签键。 - {value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
 
@@ -402,7 +402,7 @@ class ListGaussMySqlInstancesUnifyStatusRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGaussMySqlInstancesUnifyStatusRequest.
+        r"""Sets the tags of this ListGaussMySqlInstancesUnifyStatusRequest.
 
         根据实例标签键值对进行查询。 - {key}表示标签键。 - {value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
 

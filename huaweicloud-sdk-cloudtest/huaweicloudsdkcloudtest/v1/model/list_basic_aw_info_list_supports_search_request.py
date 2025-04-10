@@ -33,7 +33,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
     }
 
     def __init__(self, project_id=None, page_no=None, page_size=None, parent_id=None, body=None):
-        """ListBasicAwInfoListSupportsSearchRequest
+        r"""ListBasicAwInfoListSupportsSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Gets the project_id of this ListBasicAwInfoListSupportsSearchRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -79,7 +79,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Sets the project_id of this ListBasicAwInfoListSupportsSearchRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -90,7 +90,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Gets the page_no of this ListBasicAwInfoListSupportsSearchRequest.
 
         当前页数
 
@@ -101,7 +101,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Sets the page_no of this ListBasicAwInfoListSupportsSearchRequest.
 
         当前页数
 
@@ -112,7 +112,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Gets the page_size of this ListBasicAwInfoListSupportsSearchRequest.
 
         每页多少记录
 
@@ -123,7 +123,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Sets the page_size of this ListBasicAwInfoListSupportsSearchRequest.
 
         每页多少记录
 
@@ -134,7 +134,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Gets the parent_id of this ListBasicAwInfoListSupportsSearchRequest.
 
         父目录ID
 
@@ -145,7 +145,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Sets the parent_id of this ListBasicAwInfoListSupportsSearchRequest.
 
         父目录ID
 
@@ -156,7 +156,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Gets the body of this ListBasicAwInfoListSupportsSearchRequest.
 
         :return: The body of this ListBasicAwInfoListSupportsSearchRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.SearchRequest`
@@ -165,7 +165,7 @@ class ListBasicAwInfoListSupportsSearchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBasicAwInfoListSupportsSearchRequest.
+        r"""Sets the body of this ListBasicAwInfoListSupportsSearchRequest.
 
         :param body: The body of this ListBasicAwInfoListSupportsSearchRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.SearchRequest`

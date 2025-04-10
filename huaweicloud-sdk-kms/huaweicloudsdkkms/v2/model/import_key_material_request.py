@@ -25,7 +25,7 @@ class ImportKeyMaterialRequest:
     }
 
     def __init__(self, body=None):
-        """ImportKeyMaterialRequest
+        r"""ImportKeyMaterialRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportKeyMaterialRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportKeyMaterialRequest.
+        r"""Gets the body of this ImportKeyMaterialRequest.
 
         :return: The body of this ImportKeyMaterialRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequestBody`
@@ -52,7 +52,7 @@ class ImportKeyMaterialRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportKeyMaterialRequest.
+        r"""Sets the body of this ImportKeyMaterialRequest.
 
         :param body: The body of this ImportKeyMaterialRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequestBody`

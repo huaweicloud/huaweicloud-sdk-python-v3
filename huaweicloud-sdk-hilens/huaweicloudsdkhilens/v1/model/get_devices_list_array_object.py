@@ -67,7 +67,7 @@ class GetDevicesListArrayObject:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, cpu=None, memory=None, os=None, firmware_name=None, firmware_version=None, firmware_status=None, firmware_cause=None, path=None, path_update_status=None, path_update_cause=None, create_time=None, update_time=None, user_time=None, resource_spec_code=None, cloud_service_type=None, active_content=None, active_flag=None, topic_urn=None):
-        """GetDevicesListArrayObject
+        r"""GetDevicesListArrayObject
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class GetDevicesListArrayObject:
 
     @property
     def id(self):
-        """Gets the id of this GetDevicesListArrayObject.
+        r"""Gets the id of this GetDevicesListArrayObject.
 
         设备ID
 
@@ -201,7 +201,7 @@ class GetDevicesListArrayObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetDevicesListArrayObject.
+        r"""Sets the id of this GetDevicesListArrayObject.
 
         设备ID
 
@@ -212,7 +212,7 @@ class GetDevicesListArrayObject:
 
     @property
     def name(self):
-        """Gets the name of this GetDevicesListArrayObject.
+        r"""Gets the name of this GetDevicesListArrayObject.
 
         设备名称
 
@@ -223,7 +223,7 @@ class GetDevicesListArrayObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDevicesListArrayObject.
+        r"""Sets the name of this GetDevicesListArrayObject.
 
         设备名称
 
@@ -234,7 +234,7 @@ class GetDevicesListArrayObject:
 
     @property
     def type(self):
-        """Gets the type of this GetDevicesListArrayObject.
+        r"""Gets the type of this GetDevicesListArrayObject.
 
         设备类型
 
@@ -245,7 +245,7 @@ class GetDevicesListArrayObject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GetDevicesListArrayObject.
+        r"""Sets the type of this GetDevicesListArrayObject.
 
         设备类型
 
@@ -256,7 +256,7 @@ class GetDevicesListArrayObject:
 
     @property
     def status(self):
-        """Gets the status of this GetDevicesListArrayObject.
+        r"""Gets the status of this GetDevicesListArrayObject.
 
         设备状态(0:离线;1:在线)
 
@@ -267,7 +267,7 @@ class GetDevicesListArrayObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetDevicesListArrayObject.
+        r"""Sets the status of this GetDevicesListArrayObject.
 
         设备状态(0:离线;1:在线)
 
@@ -278,7 +278,7 @@ class GetDevicesListArrayObject:
 
     @property
     def cpu(self):
-        """Gets the cpu of this GetDevicesListArrayObject.
+        r"""Gets the cpu of this GetDevicesListArrayObject.
 
         cpu核数
 
@@ -289,7 +289,7 @@ class GetDevicesListArrayObject:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this GetDevicesListArrayObject.
+        r"""Sets the cpu of this GetDevicesListArrayObject.
 
         cpu核数
 
@@ -300,7 +300,7 @@ class GetDevicesListArrayObject:
 
     @property
     def memory(self):
-        """Gets the memory of this GetDevicesListArrayObject.
+        r"""Gets the memory of this GetDevicesListArrayObject.
 
         内存大小
 
@@ -311,7 +311,7 @@ class GetDevicesListArrayObject:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this GetDevicesListArrayObject.
+        r"""Sets the memory of this GetDevicesListArrayObject.
 
         内存大小
 
@@ -322,7 +322,7 @@ class GetDevicesListArrayObject:
 
     @property
     def os(self):
-        """Gets the os of this GetDevicesListArrayObject.
+        r"""Gets the os of this GetDevicesListArrayObject.
 
         操作系统
 
@@ -333,7 +333,7 @@ class GetDevicesListArrayObject:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this GetDevicesListArrayObject.
+        r"""Sets the os of this GetDevicesListArrayObject.
 
         操作系统
 
@@ -344,7 +344,7 @@ class GetDevicesListArrayObject:
 
     @property
     def firmware_name(self):
-        """Gets the firmware_name of this GetDevicesListArrayObject.
+        r"""Gets the firmware_name of this GetDevicesListArrayObject.
 
         固件名称
 
@@ -355,7 +355,7 @@ class GetDevicesListArrayObject:
 
     @firmware_name.setter
     def firmware_name(self, firmware_name):
-        """Sets the firmware_name of this GetDevicesListArrayObject.
+        r"""Sets the firmware_name of this GetDevicesListArrayObject.
 
         固件名称
 
@@ -366,7 +366,7 @@ class GetDevicesListArrayObject:
 
     @property
     def firmware_version(self):
-        """Gets the firmware_version of this GetDevicesListArrayObject.
+        r"""Gets the firmware_version of this GetDevicesListArrayObject.
 
         固件版本
 
@@ -377,7 +377,7 @@ class GetDevicesListArrayObject:
 
     @firmware_version.setter
     def firmware_version(self, firmware_version):
-        """Sets the firmware_version of this GetDevicesListArrayObject.
+        r"""Sets the firmware_version of this GetDevicesListArrayObject.
 
         固件版本
 
@@ -388,7 +388,7 @@ class GetDevicesListArrayObject:
 
     @property
     def firmware_status(self):
-        """Gets the firmware_status of this GetDevicesListArrayObject.
+        r"""Gets the firmware_status of this GetDevicesListArrayObject.
 
         固件状态(1:更新中，2：更新失败，3：更新成功)
 
@@ -399,7 +399,7 @@ class GetDevicesListArrayObject:
 
     @firmware_status.setter
     def firmware_status(self, firmware_status):
-        """Sets the firmware_status of this GetDevicesListArrayObject.
+        r"""Sets the firmware_status of this GetDevicesListArrayObject.
 
         固件状态(1:更新中，2：更新失败，3：更新成功)
 
@@ -410,7 +410,7 @@ class GetDevicesListArrayObject:
 
     @property
     def firmware_cause(self):
-        """Gets the firmware_cause of this GetDevicesListArrayObject.
+        r"""Gets the firmware_cause of this GetDevicesListArrayObject.
 
         固件更新失败原因
 
@@ -421,7 +421,7 @@ class GetDevicesListArrayObject:
 
     @firmware_cause.setter
     def firmware_cause(self, firmware_cause):
-        """Sets the firmware_cause of this GetDevicesListArrayObject.
+        r"""Sets the firmware_cause of this GetDevicesListArrayObject.
 
         固件更新失败原因
 
@@ -432,7 +432,7 @@ class GetDevicesListArrayObject:
 
     @property
     def path(self):
-        """Gets the path of this GetDevicesListArrayObject.
+        r"""Gets the path of this GetDevicesListArrayObject.
 
         设备数据存储路径，该桶需要和当前region匹配
 
@@ -443,7 +443,7 @@ class GetDevicesListArrayObject:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this GetDevicesListArrayObject.
+        r"""Sets the path of this GetDevicesListArrayObject.
 
         设备数据存储路径，该桶需要和当前region匹配
 
@@ -454,7 +454,7 @@ class GetDevicesListArrayObject:
 
     @property
     def path_update_status(self):
-        """Gets the path_update_status of this GetDevicesListArrayObject.
+        r"""Gets the path_update_status of this GetDevicesListArrayObject.
 
         设备数据存储路径更新状态(0:更新成功，1：更新中)
 
@@ -465,7 +465,7 @@ class GetDevicesListArrayObject:
 
     @path_update_status.setter
     def path_update_status(self, path_update_status):
-        """Sets the path_update_status of this GetDevicesListArrayObject.
+        r"""Sets the path_update_status of this GetDevicesListArrayObject.
 
         设备数据存储路径更新状态(0:更新成功，1：更新中)
 
@@ -476,7 +476,7 @@ class GetDevicesListArrayObject:
 
     @property
     def path_update_cause(self):
-        """Gets the path_update_cause of this GetDevicesListArrayObject.
+        r"""Gets the path_update_cause of this GetDevicesListArrayObject.
 
         设备数据存储路径更新失败原因
 
@@ -487,7 +487,7 @@ class GetDevicesListArrayObject:
 
     @path_update_cause.setter
     def path_update_cause(self, path_update_cause):
-        """Sets the path_update_cause of this GetDevicesListArrayObject.
+        r"""Sets the path_update_cause of this GetDevicesListArrayObject.
 
         设备数据存储路径更新失败原因
 
@@ -498,7 +498,7 @@ class GetDevicesListArrayObject:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetDevicesListArrayObject.
+        r"""Gets the create_time of this GetDevicesListArrayObject.
 
         创建时间（时间戳）
 
@@ -509,7 +509,7 @@ class GetDevicesListArrayObject:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetDevicesListArrayObject.
+        r"""Sets the create_time of this GetDevicesListArrayObject.
 
         创建时间（时间戳）
 
@@ -520,7 +520,7 @@ class GetDevicesListArrayObject:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetDevicesListArrayObject.
+        r"""Gets the update_time of this GetDevicesListArrayObject.
 
         更新时间（时间戳）
 
@@ -531,7 +531,7 @@ class GetDevicesListArrayObject:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetDevicesListArrayObject.
+        r"""Sets the update_time of this GetDevicesListArrayObject.
 
         更新时间（时间戳）
 
@@ -542,7 +542,7 @@ class GetDevicesListArrayObject:
 
     @property
     def user_time(self):
-        """Gets the user_time of this GetDevicesListArrayObject.
+        r"""Gets the user_time of this GetDevicesListArrayObject.
 
         IAM用户名
 
@@ -553,7 +553,7 @@ class GetDevicesListArrayObject:
 
     @user_time.setter
     def user_time(self, user_time):
-        """Sets the user_time of this GetDevicesListArrayObject.
+        r"""Sets the user_time of this GetDevicesListArrayObject.
 
         IAM用户名
 
@@ -564,7 +564,7 @@ class GetDevicesListArrayObject:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this GetDevicesListArrayObject.
+        r"""Gets the resource_spec_code of this GetDevicesListArrayObject.
 
         计费资源码
 
@@ -575,7 +575,7 @@ class GetDevicesListArrayObject:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this GetDevicesListArrayObject.
+        r"""Sets the resource_spec_code of this GetDevicesListArrayObject.
 
         计费资源码
 
@@ -586,7 +586,7 @@ class GetDevicesListArrayObject:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this GetDevicesListArrayObject.
+        r"""Gets the cloud_service_type of this GetDevicesListArrayObject.
 
         云服务计费类型
 
@@ -597,7 +597,7 @@ class GetDevicesListArrayObject:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this GetDevicesListArrayObject.
+        r"""Sets the cloud_service_type of this GetDevicesListArrayObject.
 
         云服务计费类型
 
@@ -608,7 +608,7 @@ class GetDevicesListArrayObject:
 
     @property
     def active_content(self):
-        """Gets the active_content of this GetDevicesListArrayObject.
+        r"""Gets the active_content of this GetDevicesListArrayObject.
 
         激活内容
 
@@ -619,7 +619,7 @@ class GetDevicesListArrayObject:
 
     @active_content.setter
     def active_content(self, active_content):
-        """Sets the active_content of this GetDevicesListArrayObject.
+        r"""Sets the active_content of this GetDevicesListArrayObject.
 
         激活内容
 
@@ -630,7 +630,7 @@ class GetDevicesListArrayObject:
 
     @property
     def active_flag(self):
-        """Gets the active_flag of this GetDevicesListArrayObject.
+        r"""Gets the active_flag of this GetDevicesListArrayObject.
 
         激活状态(0:未激活，1：已激活且付费，2：已激活且免费，3：付费到期，4：已激活使用SN码，5：已激活30天免费，6：免费到期)
 
@@ -641,7 +641,7 @@ class GetDevicesListArrayObject:
 
     @active_flag.setter
     def active_flag(self, active_flag):
-        """Sets the active_flag of this GetDevicesListArrayObject.
+        r"""Sets the active_flag of this GetDevicesListArrayObject.
 
         激活状态(0:未激活，1：已激活且付费，2：已激活且免费，3：付费到期，4：已激活使用SN码，5：已激活30天免费，6：免费到期)
 
@@ -652,7 +652,7 @@ class GetDevicesListArrayObject:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this GetDevicesListArrayObject.
+        r"""Gets the topic_urn of this GetDevicesListArrayObject.
 
         关联设备的主题消息推送的URN地址
 
@@ -663,7 +663,7 @@ class GetDevicesListArrayObject:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this GetDevicesListArrayObject.
+        r"""Sets the topic_urn of this GetDevicesListArrayObject.
 
         关联设备的主题消息推送的URN地址
 

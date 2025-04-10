@@ -26,7 +26,7 @@ class BatchDeleteScreenRecordsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteScreenRecordsResponse
+        r"""BatchDeleteScreenRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteScreenRecordsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteScreenRecordsResponse.
+        r"""Gets the job_id of this BatchDeleteScreenRecordsResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class BatchDeleteScreenRecordsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteScreenRecordsResponse.
+        r"""Sets the job_id of this BatchDeleteScreenRecordsResponse.
 
         任务ID
 

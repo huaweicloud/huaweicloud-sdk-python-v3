@@ -26,7 +26,7 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
     }
 
     def __init__(self, password_policy=None):
-        """ShowDomainPasswordPolicyResponse
+        r"""ShowDomainPasswordPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
 
     @property
     def password_policy(self):
-        """Gets the password_policy of this ShowDomainPasswordPolicyResponse.
+        r"""Gets the password_policy of this ShowDomainPasswordPolicyResponse.
 
         :return: The password_policy of this ShowDomainPasswordPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`
@@ -53,7 +53,7 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
 
     @password_policy.setter
     def password_policy(self, password_policy):
-        """Sets the password_policy of this ShowDomainPasswordPolicyResponse.
+        r"""Sets the password_policy of this ShowDomainPasswordPolicyResponse.
 
         :param password_policy: The password_policy of this ShowDomainPasswordPolicyResponse.
         :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`

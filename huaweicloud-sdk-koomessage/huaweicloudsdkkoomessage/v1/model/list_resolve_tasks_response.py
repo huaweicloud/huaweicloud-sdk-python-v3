@@ -28,7 +28,7 @@ class ListResolveTasksResponse(SdkResponse):
     }
 
     def __init__(self, resolve_tasks=None, page_info=None):
-        """ListResolveTasksResponse
+        r"""ListResolveTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResolveTasksResponse(SdkResponse):
 
     @property
     def resolve_tasks(self):
-        """Gets the resolve_tasks of this ListResolveTasksResponse.
+        r"""Gets the resolve_tasks of this ListResolveTasksResponse.
 
         解析任务列表。
 
@@ -62,7 +62,7 @@ class ListResolveTasksResponse(SdkResponse):
 
     @resolve_tasks.setter
     def resolve_tasks(self, resolve_tasks):
-        """Sets the resolve_tasks of this ListResolveTasksResponse.
+        r"""Sets the resolve_tasks of this ListResolveTasksResponse.
 
         解析任务列表。
 
@@ -73,7 +73,7 @@ class ListResolveTasksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListResolveTasksResponse.
+        r"""Gets the page_info of this ListResolveTasksResponse.
 
         :return: The page_info of this ListResolveTasksResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -82,7 +82,7 @@ class ListResolveTasksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListResolveTasksResponse.
+        r"""Sets the page_info of this ListResolveTasksResponse.
 
         :param page_info: The page_info of this ListResolveTasksResponse.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

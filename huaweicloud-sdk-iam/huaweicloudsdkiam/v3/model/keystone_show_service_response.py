@@ -26,7 +26,7 @@ class KeystoneShowServiceResponse(SdkResponse):
     }
 
     def __init__(self, service=None):
-        """KeystoneShowServiceResponse
+        r"""KeystoneShowServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowServiceResponse(SdkResponse):
 
     @property
     def service(self):
-        """Gets the service of this KeystoneShowServiceResponse.
+        r"""Gets the service of this KeystoneShowServiceResponse.
 
         :return: The service of this KeystoneShowServiceResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Service`
@@ -53,7 +53,7 @@ class KeystoneShowServiceResponse(SdkResponse):
 
     @service.setter
     def service(self, service):
-        """Sets the service of this KeystoneShowServiceResponse.
+        r"""Sets the service of this KeystoneShowServiceResponse.
 
         :param service: The service of this KeystoneShowServiceResponse.
         :type service: :class:`huaweicloudsdkiam.v3.Service`

@@ -55,7 +55,7 @@ class MainlandTravelPermitConfidence:
     }
 
     def __init__(self, name=None, name_en=None, birth_date=None, sex=None, valid_period=None, issuing_authority=None, number=None, issue_place=None, issue_times=None, type=None, side=None, id_name=None, id_number=None, machine_code1=None, machine_code2=None, machine_code3=None):
-        """MainlandTravelPermitConfidence
+        r"""MainlandTravelPermitConfidence
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def name(self):
-        """Gets the name of this MainlandTravelPermitConfidence.
+        r"""Gets the name of this MainlandTravelPermitConfidence.
 
         中文姓名的置信度。 
 
@@ -159,7 +159,7 @@ class MainlandTravelPermitConfidence:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MainlandTravelPermitConfidence.
+        r"""Sets the name of this MainlandTravelPermitConfidence.
 
         中文姓名的置信度。 
 
@@ -170,7 +170,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def name_en(self):
-        """Gets the name_en of this MainlandTravelPermitConfidence.
+        r"""Gets the name_en of this MainlandTravelPermitConfidence.
 
         英文姓名的置信度。 
 
@@ -181,7 +181,7 @@ class MainlandTravelPermitConfidence:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this MainlandTravelPermitConfidence.
+        r"""Sets the name_en of this MainlandTravelPermitConfidence.
 
         英文姓名的置信度。 
 
@@ -192,7 +192,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this MainlandTravelPermitConfidence.
+        r"""Gets the birth_date of this MainlandTravelPermitConfidence.
 
         出生日期的置信度。 
 
@@ -203,7 +203,7 @@ class MainlandTravelPermitConfidence:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this MainlandTravelPermitConfidence.
+        r"""Sets the birth_date of this MainlandTravelPermitConfidence.
 
         出生日期的置信度。 
 
@@ -214,7 +214,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def sex(self):
-        """Gets the sex of this MainlandTravelPermitConfidence.
+        r"""Gets the sex of this MainlandTravelPermitConfidence.
 
         性别的置信度。 
 
@@ -225,7 +225,7 @@ class MainlandTravelPermitConfidence:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this MainlandTravelPermitConfidence.
+        r"""Sets the sex of this MainlandTravelPermitConfidence.
 
         性别的置信度。 
 
@@ -236,7 +236,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this MainlandTravelPermitConfidence.
+        r"""Gets the valid_period of this MainlandTravelPermitConfidence.
 
         有效期限的置信度。 
 
@@ -247,7 +247,7 @@ class MainlandTravelPermitConfidence:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this MainlandTravelPermitConfidence.
+        r"""Sets the valid_period of this MainlandTravelPermitConfidence.
 
         有效期限的置信度。 
 
@@ -258,7 +258,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this MainlandTravelPermitConfidence.
+        r"""Gets the issuing_authority of this MainlandTravelPermitConfidence.
 
         签发机关的置信度。 
 
@@ -269,7 +269,7 @@ class MainlandTravelPermitConfidence:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this MainlandTravelPermitConfidence.
+        r"""Sets the issuing_authority of this MainlandTravelPermitConfidence.
 
         签发机关的置信度。 
 
@@ -280,7 +280,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def number(self):
-        """Gets the number of this MainlandTravelPermitConfidence.
+        r"""Gets the number of this MainlandTravelPermitConfidence.
 
         证件号的置信度。 
 
@@ -291,7 +291,7 @@ class MainlandTravelPermitConfidence:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this MainlandTravelPermitConfidence.
+        r"""Sets the number of this MainlandTravelPermitConfidence.
 
         证件号的置信度。 
 
@@ -302,7 +302,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def issue_place(self):
-        """Gets the issue_place of this MainlandTravelPermitConfidence.
+        r"""Gets the issue_place of this MainlandTravelPermitConfidence.
 
         签发地点的置信度。 
 
@@ -313,7 +313,7 @@ class MainlandTravelPermitConfidence:
 
     @issue_place.setter
     def issue_place(self, issue_place):
-        """Sets the issue_place of this MainlandTravelPermitConfidence.
+        r"""Sets the issue_place of this MainlandTravelPermitConfidence.
 
         签发地点的置信度。 
 
@@ -324,7 +324,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def issue_times(self):
-        """Gets the issue_times of this MainlandTravelPermitConfidence.
+        r"""Gets the issue_times of this MainlandTravelPermitConfidence.
 
         签发次数的置信度。 
 
@@ -335,7 +335,7 @@ class MainlandTravelPermitConfidence:
 
     @issue_times.setter
     def issue_times(self, issue_times):
-        """Sets the issue_times of this MainlandTravelPermitConfidence.
+        r"""Sets the issue_times of this MainlandTravelPermitConfidence.
 
         签发次数的置信度。 
 
@@ -346,7 +346,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def type(self):
-        """Gets the type of this MainlandTravelPermitConfidence.
+        r"""Gets the type of this MainlandTravelPermitConfidence.
 
         证件类别的置信度。 
 
@@ -357,7 +357,7 @@ class MainlandTravelPermitConfidence:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MainlandTravelPermitConfidence.
+        r"""Sets the type of this MainlandTravelPermitConfidence.
 
         证件类别的置信度。 
 
@@ -368,7 +368,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def side(self):
-        """Gets the side of this MainlandTravelPermitConfidence.
+        r"""Gets the side of this MainlandTravelPermitConfidence.
 
         证件图片正反面信息的置信度。 
 
@@ -379,7 +379,7 @@ class MainlandTravelPermitConfidence:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this MainlandTravelPermitConfidence.
+        r"""Sets the side of this MainlandTravelPermitConfidence.
 
         证件图片正反面信息的置信度。 
 
@@ -390,7 +390,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def id_name(self):
-        """Gets the id_name of this MainlandTravelPermitConfidence.
+        r"""Gets the id_name of this MainlandTravelPermitConfidence.
 
         回乡证背面的香港/澳门/台湾身份证姓名的置信度。 
 
@@ -401,7 +401,7 @@ class MainlandTravelPermitConfidence:
 
     @id_name.setter
     def id_name(self, id_name):
-        """Sets the id_name of this MainlandTravelPermitConfidence.
+        r"""Sets the id_name of this MainlandTravelPermitConfidence.
 
         回乡证背面的香港/澳门/台湾身份证姓名的置信度。 
 
@@ -412,7 +412,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def id_number(self):
-        """Gets the id_number of this MainlandTravelPermitConfidence.
+        r"""Gets the id_number of this MainlandTravelPermitConfidence.
 
         回乡证背面的香港/澳门/台湾身份证号码的置信度。 
 
@@ -423,7 +423,7 @@ class MainlandTravelPermitConfidence:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this MainlandTravelPermitConfidence.
+        r"""Sets the id_number of this MainlandTravelPermitConfidence.
 
         回乡证背面的香港/澳门/台湾身份证号码的置信度。 
 
@@ -434,7 +434,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def machine_code1(self):
-        """Gets the machine_code1 of this MainlandTravelPermitConfidence.
+        r"""Gets the machine_code1 of this MainlandTravelPermitConfidence.
 
         机读码第一行的置信度。 
 
@@ -445,7 +445,7 @@ class MainlandTravelPermitConfidence:
 
     @machine_code1.setter
     def machine_code1(self, machine_code1):
-        """Sets the machine_code1 of this MainlandTravelPermitConfidence.
+        r"""Sets the machine_code1 of this MainlandTravelPermitConfidence.
 
         机读码第一行的置信度。 
 
@@ -456,7 +456,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def machine_code2(self):
-        """Gets the machine_code2 of this MainlandTravelPermitConfidence.
+        r"""Gets the machine_code2 of this MainlandTravelPermitConfidence.
 
         机读码第二行的置信度。 
 
@@ -467,7 +467,7 @@ class MainlandTravelPermitConfidence:
 
     @machine_code2.setter
     def machine_code2(self, machine_code2):
-        """Sets the machine_code2 of this MainlandTravelPermitConfidence.
+        r"""Sets the machine_code2 of this MainlandTravelPermitConfidence.
 
         机读码第二行的置信度。 
 
@@ -478,7 +478,7 @@ class MainlandTravelPermitConfidence:
 
     @property
     def machine_code3(self):
-        """Gets the machine_code3 of this MainlandTravelPermitConfidence.
+        r"""Gets the machine_code3 of this MainlandTravelPermitConfidence.
 
         机读码第三行的置信度。 
 
@@ -489,7 +489,7 @@ class MainlandTravelPermitConfidence:
 
     @machine_code3.setter
     def machine_code3(self, machine_code3):
-        """Sets the machine_code3 of this MainlandTravelPermitConfidence.
+        r"""Sets the machine_code3 of this MainlandTravelPermitConfidence.
 
         机读码第三行的置信度。 
 

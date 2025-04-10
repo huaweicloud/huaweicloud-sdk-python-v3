@@ -29,7 +29,7 @@ class CreateSubtitleFileReq:
     }
 
     def __init__(self, script_id=None, sequence_no=None, callback_config=None):
-        """CreateSubtitleFileReq
+        r"""CreateSubtitleFileReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateSubtitleFileReq:
 
     @property
     def script_id(self):
-        """Gets the script_id of this CreateSubtitleFileReq.
+        r"""Gets the script_id of this CreateSubtitleFileReq.
 
         剧本ID。
 
@@ -68,7 +68,7 @@ class CreateSubtitleFileReq:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this CreateSubtitleFileReq.
+        r"""Sets the script_id of this CreateSubtitleFileReq.
 
         剧本ID。
 
@@ -79,7 +79,7 @@ class CreateSubtitleFileReq:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this CreateSubtitleFileReq.
+        r"""Gets the sequence_no of this CreateSubtitleFileReq.
 
         剧本序号。  > * 剧本序号不填生成所有场景的字幕；如果需要生成单场景的字幕，需要填剧本序号。
 
@@ -90,7 +90,7 @@ class CreateSubtitleFileReq:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this CreateSubtitleFileReq.
+        r"""Sets the sequence_no of this CreateSubtitleFileReq.
 
         剧本序号。  > * 剧本序号不填生成所有场景的字幕；如果需要生成单场景的字幕，需要填剧本序号。
 
@@ -101,7 +101,7 @@ class CreateSubtitleFileReq:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this CreateSubtitleFileReq.
+        r"""Gets the callback_config of this CreateSubtitleFileReq.
 
         :return: The callback_config of this CreateSubtitleFileReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
@@ -110,7 +110,7 @@ class CreateSubtitleFileReq:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this CreateSubtitleFileReq.
+        r"""Sets the callback_config of this CreateSubtitleFileReq.
 
         :param callback_config: The callback_config of this CreateSubtitleFileReq.
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`

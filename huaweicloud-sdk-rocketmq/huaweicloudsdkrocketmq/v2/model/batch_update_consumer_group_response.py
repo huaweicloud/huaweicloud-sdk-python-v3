@@ -26,7 +26,7 @@ class BatchUpdateConsumerGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchUpdateConsumerGroupResponse
+        r"""BatchUpdateConsumerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateConsumerGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchUpdateConsumerGroupResponse.
+        r"""Gets the job_id of this BatchUpdateConsumerGroupResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class BatchUpdateConsumerGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchUpdateConsumerGroupResponse.
+        r"""Sets the job_id of this BatchUpdateConsumerGroupResponse.
 
         任务ID。
 

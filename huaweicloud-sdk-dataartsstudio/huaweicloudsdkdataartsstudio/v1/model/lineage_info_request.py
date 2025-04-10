@@ -39,7 +39,7 @@ class LineageInfoRequest:
     }
 
     def __init__(self, cluster_id=None, data_source_type=None, connection_id=None, connection_name=None, workspace_id=None, job_id=None, node_name=None, table_lineage=None):
-        """LineageInfoRequest
+        r"""LineageInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class LineageInfoRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this LineageInfoRequest.
+        r"""Gets the cluster_id of this LineageInfoRequest.
 
         集群id
 
@@ -103,7 +103,7 @@ class LineageInfoRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this LineageInfoRequest.
+        r"""Sets the cluster_id of this LineageInfoRequest.
 
         集群id
 
@@ -114,7 +114,7 @@ class LineageInfoRequest:
 
     @property
     def data_source_type(self):
-        """Gets the data_source_type of this LineageInfoRequest.
+        r"""Gets the data_source_type of this LineageInfoRequest.
 
         数据连接类型
 
@@ -125,7 +125,7 @@ class LineageInfoRequest:
 
     @data_source_type.setter
     def data_source_type(self, data_source_type):
-        """Sets the data_source_type of this LineageInfoRequest.
+        r"""Sets the data_source_type of this LineageInfoRequest.
 
         数据连接类型
 
@@ -136,7 +136,7 @@ class LineageInfoRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this LineageInfoRequest.
+        r"""Gets the connection_id of this LineageInfoRequest.
 
         数据连接id
 
@@ -147,7 +147,7 @@ class LineageInfoRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this LineageInfoRequest.
+        r"""Sets the connection_id of this LineageInfoRequest.
 
         数据连接id
 
@@ -158,7 +158,7 @@ class LineageInfoRequest:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this LineageInfoRequest.
+        r"""Gets the connection_name of this LineageInfoRequest.
 
         数据连接名称
 
@@ -169,7 +169,7 @@ class LineageInfoRequest:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this LineageInfoRequest.
+        r"""Sets the connection_name of this LineageInfoRequest.
 
         数据连接名称
 
@@ -180,7 +180,7 @@ class LineageInfoRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this LineageInfoRequest.
+        r"""Gets the workspace_id of this LineageInfoRequest.
 
         工作空间id
 
@@ -191,7 +191,7 @@ class LineageInfoRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this LineageInfoRequest.
+        r"""Sets the workspace_id of this LineageInfoRequest.
 
         工作空间id
 
@@ -202,7 +202,7 @@ class LineageInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this LineageInfoRequest.
+        r"""Gets the job_id of this LineageInfoRequest.
 
         作业id
 
@@ -213,7 +213,7 @@ class LineageInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this LineageInfoRequest.
+        r"""Sets the job_id of this LineageInfoRequest.
 
         作业id
 
@@ -224,7 +224,7 @@ class LineageInfoRequest:
 
     @property
     def node_name(self):
-        """Gets the node_name of this LineageInfoRequest.
+        r"""Gets the node_name of this LineageInfoRequest.
 
         算子名称
 
@@ -235,7 +235,7 @@ class LineageInfoRequest:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this LineageInfoRequest.
+        r"""Sets the node_name of this LineageInfoRequest.
 
         算子名称
 
@@ -246,7 +246,7 @@ class LineageInfoRequest:
 
     @property
     def table_lineage(self):
-        """Gets the table_lineage of this LineageInfoRequest.
+        r"""Gets the table_lineage of this LineageInfoRequest.
 
         :return: The table_lineage of this LineageInfoRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TableLineageV2`
@@ -255,7 +255,7 @@ class LineageInfoRequest:
 
     @table_lineage.setter
     def table_lineage(self, table_lineage):
-        """Sets the table_lineage of this LineageInfoRequest.
+        r"""Sets the table_lineage of this LineageInfoRequest.
 
         :param table_lineage: The table_lineage of this LineageInfoRequest.
         :type table_lineage: :class:`huaweicloudsdkdataartsstudio.v1.TableLineageV2`

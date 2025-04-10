@@ -33,7 +33,7 @@ class OutputThumbnailPara:
     }
 
     def __init__(self, total_pictures=None, width=None, height=None, file_name=None, output=None):
-        """OutputThumbnailPara
+        r"""OutputThumbnailPara
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OutputThumbnailPara:
 
     @property
     def total_pictures(self):
-        """Gets the total_pictures of this OutputThumbnailPara.
+        r"""Gets the total_pictures of this OutputThumbnailPara.
 
         抽帧图片张数 
 
@@ -82,7 +82,7 @@ class OutputThumbnailPara:
 
     @total_pictures.setter
     def total_pictures(self, total_pictures):
-        """Sets the total_pictures of this OutputThumbnailPara.
+        r"""Sets the total_pictures of this OutputThumbnailPara.
 
         抽帧图片张数 
 
@@ -93,7 +93,7 @@ class OutputThumbnailPara:
 
     @property
     def width(self):
-        """Gets the width of this OutputThumbnailPara.
+        r"""Gets the width of this OutputThumbnailPara.
 
         抽帧图片宽度 
 
@@ -104,7 +104,7 @@ class OutputThumbnailPara:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this OutputThumbnailPara.
+        r"""Sets the width of this OutputThumbnailPara.
 
         抽帧图片宽度 
 
@@ -115,7 +115,7 @@ class OutputThumbnailPara:
 
     @property
     def height(self):
-        """Gets the height of this OutputThumbnailPara.
+        r"""Gets the height of this OutputThumbnailPara.
 
         抽帧图片高度 
 
@@ -126,7 +126,7 @@ class OutputThumbnailPara:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this OutputThumbnailPara.
+        r"""Sets the height of this OutputThumbnailPara.
 
         抽帧图片高度 
 
@@ -137,7 +137,7 @@ class OutputThumbnailPara:
 
     @property
     def file_name(self):
-        """Gets the file_name of this OutputThumbnailPara.
+        r"""Gets the file_name of this OutputThumbnailPara.
 
         抽帧文件名 
 
@@ -148,7 +148,7 @@ class OutputThumbnailPara:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this OutputThumbnailPara.
+        r"""Sets the file_name of this OutputThumbnailPara.
 
         抽帧文件名 
 
@@ -159,7 +159,7 @@ class OutputThumbnailPara:
 
     @property
     def output(self):
-        """Gets the output of this OutputThumbnailPara.
+        r"""Gets the output of this OutputThumbnailPara.
 
         :return: The output of this OutputThumbnailPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -168,7 +168,7 @@ class OutputThumbnailPara:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this OutputThumbnailPara.
+        r"""Sets the output of this OutputThumbnailPara.
 
         :param output: The output of this OutputThumbnailPara.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

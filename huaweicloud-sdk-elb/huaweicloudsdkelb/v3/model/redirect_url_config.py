@@ -39,7 +39,7 @@ class RedirectUrlConfig:
     }
 
     def __init__(self, protocol=None, host=None, port=None, path=None, query=None, status_code=None, insert_headers_config=None, remove_headers_config=None):
-        """RedirectUrlConfig
+        r"""RedirectUrlConfig
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RedirectUrlConfig:
 
     @property
     def protocol(self):
-        """Gets the protocol of this RedirectUrlConfig.
+        r"""Gets the protocol of this RedirectUrlConfig.
 
         参数解释：重定向的协议。  取值范围： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。
 
@@ -103,7 +103,7 @@ class RedirectUrlConfig:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this RedirectUrlConfig.
+        r"""Sets the protocol of this RedirectUrlConfig.
 
         参数解释：重定向的协议。  取值范围： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。
 
@@ -114,7 +114,7 @@ class RedirectUrlConfig:
 
     @property
     def host(self):
-        """Gets the host of this RedirectUrlConfig.
+        r"""Gets the host of this RedirectUrlConfig.
 
         参数解释：重定向的主机名。  取值范围：只能包含英文字母、数字、“-”、“.”。且必须以字母、数字开头。  默认取值：${host} 表示继承原值（即与被转发请求保持一致）。
 
@@ -125,7 +125,7 @@ class RedirectUrlConfig:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this RedirectUrlConfig.
+        r"""Sets the host of this RedirectUrlConfig.
 
         参数解释：重定向的主机名。  取值范围：只能包含英文字母、数字、“-”、“.”。且必须以字母、数字开头。  默认取值：${host} 表示继承原值（即与被转发请求保持一致）。
 
@@ -136,7 +136,7 @@ class RedirectUrlConfig:
 
     @property
     def port(self):
-        """Gets the port of this RedirectUrlConfig.
+        r"""Gets the port of this RedirectUrlConfig.
 
         参数解释：重定向到的端口。  默认取值：默认值${port}表示继承原值（即与被转发请求保持一致）。
 
@@ -147,7 +147,7 @@ class RedirectUrlConfig:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RedirectUrlConfig.
+        r"""Sets the port of this RedirectUrlConfig.
 
         参数解释：重定向到的端口。  默认取值：默认值${port}表示继承原值（即与被转发请求保持一致）。
 
@@ -158,7 +158,7 @@ class RedirectUrlConfig:
 
     @property
     def path(self):
-        """Gets the path of this RedirectUrlConfig.
+        r"""Gets the path of this RedirectUrlConfig.
 
         参数解释：重定向的路径。  取值范围：支持英文字母、数字、_~';@^-%#&$.*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  默认取值：${path} 表示继承原值（即与被转发请求保持一致）。
 
@@ -169,7 +169,7 @@ class RedirectUrlConfig:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this RedirectUrlConfig.
+        r"""Sets the path of this RedirectUrlConfig.
 
         参数解释：重定向的路径。  取值范围：支持英文字母、数字、_~';@^-%#&$.*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  默认取值：${path} 表示继承原值（即与被转发请求保持一致）。
 
@@ -180,7 +180,7 @@ class RedirectUrlConfig:
 
     @property
     def query(self):
-        """Gets the query of this RedirectUrlConfig.
+        r"""Gets the query of this RedirectUrlConfig.
 
         参数解释：重定向的查询字符串。举例如下：  将query设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type=loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type=loadbalancer&name=my_name。在例子中${query}表示type=loadbalancer。  取值范围：只能包含英文字母、数字和特殊字符：!$&'()\\*+,-./:;=?@^_`。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${query}表示继承原值（即与被转发请求保持一致）
 
@@ -191,7 +191,7 @@ class RedirectUrlConfig:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this RedirectUrlConfig.
+        r"""Sets the query of this RedirectUrlConfig.
 
         参数解释：重定向的查询字符串。举例如下：  将query设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type=loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type=loadbalancer&name=my_name。在例子中${query}表示type=loadbalancer。  取值范围：只能包含英文字母、数字和特殊字符：!$&'()\\*+,-./:;=?@^_`。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${query}表示继承原值（即与被转发请求保持一致）
 
@@ -202,7 +202,7 @@ class RedirectUrlConfig:
 
     @property
     def status_code(self):
-        """Gets the status_code of this RedirectUrlConfig.
+        r"""Gets the status_code of this RedirectUrlConfig.
 
         参数解释：重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
 
@@ -213,7 +213,7 @@ class RedirectUrlConfig:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this RedirectUrlConfig.
+        r"""Sets the status_code of this RedirectUrlConfig.
 
         参数解释：重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
 
@@ -224,7 +224,7 @@ class RedirectUrlConfig:
 
     @property
     def insert_headers_config(self):
-        """Gets the insert_headers_config of this RedirectUrlConfig.
+        r"""Gets the insert_headers_config of this RedirectUrlConfig.
 
         :return: The insert_headers_config of this RedirectUrlConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
@@ -233,7 +233,7 @@ class RedirectUrlConfig:
 
     @insert_headers_config.setter
     def insert_headers_config(self, insert_headers_config):
-        """Sets the insert_headers_config of this RedirectUrlConfig.
+        r"""Sets the insert_headers_config of this RedirectUrlConfig.
 
         :param insert_headers_config: The insert_headers_config of this RedirectUrlConfig.
         :type insert_headers_config: :class:`huaweicloudsdkelb.v3.InsertHeadersConfig`
@@ -242,7 +242,7 @@ class RedirectUrlConfig:
 
     @property
     def remove_headers_config(self):
-        """Gets the remove_headers_config of this RedirectUrlConfig.
+        r"""Gets the remove_headers_config of this RedirectUrlConfig.
 
         :return: The remove_headers_config of this RedirectUrlConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`
@@ -251,7 +251,7 @@ class RedirectUrlConfig:
 
     @remove_headers_config.setter
     def remove_headers_config(self, remove_headers_config):
-        """Sets the remove_headers_config of this RedirectUrlConfig.
+        r"""Sets the remove_headers_config of this RedirectUrlConfig.
 
         :param remove_headers_config: The remove_headers_config of this RedirectUrlConfig.
         :type remove_headers_config: :class:`huaweicloudsdkelb.v3.RemoveHeadersConfig`

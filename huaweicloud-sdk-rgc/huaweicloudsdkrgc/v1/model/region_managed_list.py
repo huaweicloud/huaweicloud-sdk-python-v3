@@ -27,7 +27,7 @@ class RegionManagedList:
     }
 
     def __init__(self, region=None, region_status=None):
-        """RegionManagedList
+        r"""RegionManagedList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RegionManagedList:
 
     @property
     def region(self):
-        """Gets the region of this RegionManagedList.
+        r"""Gets the region of this RegionManagedList.
 
         区域名字。
 
@@ -61,7 +61,7 @@ class RegionManagedList:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RegionManagedList.
+        r"""Sets the region of this RegionManagedList.
 
         区域名字。
 
@@ -72,7 +72,7 @@ class RegionManagedList:
 
     @property
     def region_status(self):
-        """Gets the region_status of this RegionManagedList.
+        r"""Gets the region_status of this RegionManagedList.
 
         区域的状态，取值为可用或者不可用。
 
@@ -83,7 +83,7 @@ class RegionManagedList:
 
     @region_status.setter
     def region_status(self, region_status):
-        """Sets the region_status of this RegionManagedList.
+        r"""Sets the region_status of this RegionManagedList.
 
         区域的状态，取值为可用或者不可用。
 

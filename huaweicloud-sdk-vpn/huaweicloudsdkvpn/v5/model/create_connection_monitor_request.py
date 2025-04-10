@@ -25,7 +25,7 @@ class CreateConnectionMonitorRequest:
     }
 
     def __init__(self, body=None):
-        """CreateConnectionMonitorRequest
+        r"""CreateConnectionMonitorRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateConnectionMonitorRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectionMonitorRequest.
+        r"""Gets the body of this CreateConnectionMonitorRequest.
 
         :return: The body of this CreateConnectionMonitorRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequestBody`
@@ -52,7 +52,7 @@ class CreateConnectionMonitorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectionMonitorRequest.
+        r"""Sets the body of this CreateConnectionMonitorRequest.
 
         :param body: The body of this CreateConnectionMonitorRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequestBody`

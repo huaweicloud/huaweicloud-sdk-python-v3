@@ -41,7 +41,7 @@ class DepParamInstance:
     }
 
     def __init__(self, compare_value=None, comparison=None, condition=None, in_valid_values=None, name=None, null_info=None, relation_map=None, relation_num=None, values=None):
-        """DepParamInstance
+        r"""DepParamInstance
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DepParamInstance:
 
     @property
     def compare_value(self):
-        """Gets the compare_value of this DepParamInstance.
+        r"""Gets the compare_value of this DepParamInstance.
 
         比较值
 
@@ -110,7 +110,7 @@ class DepParamInstance:
 
     @compare_value.setter
     def compare_value(self, compare_value):
-        """Sets the compare_value of this DepParamInstance.
+        r"""Sets the compare_value of this DepParamInstance.
 
         比较值
 
@@ -121,7 +121,7 @@ class DepParamInstance:
 
     @property
     def comparison(self):
-        """Gets the comparison of this DepParamInstance.
+        r"""Gets the comparison of this DepParamInstance.
 
         比较
 
@@ -132,7 +132,7 @@ class DepParamInstance:
 
     @comparison.setter
     def comparison(self, comparison):
-        """Sets the comparison of this DepParamInstance.
+        r"""Sets the comparison of this DepParamInstance.
 
         比较
 
@@ -143,7 +143,7 @@ class DepParamInstance:
 
     @property
     def condition(self):
-        """Gets the condition of this DepParamInstance.
+        r"""Gets the condition of this DepParamInstance.
 
         条件
 
@@ -154,7 +154,7 @@ class DepParamInstance:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this DepParamInstance.
+        r"""Sets the condition of this DepParamInstance.
 
         条件
 
@@ -165,7 +165,7 @@ class DepParamInstance:
 
     @property
     def in_valid_values(self):
-        """Gets the in_valid_values of this DepParamInstance.
+        r"""Gets the in_valid_values of this DepParamInstance.
 
         无效值列表
 
@@ -176,7 +176,7 @@ class DepParamInstance:
 
     @in_valid_values.setter
     def in_valid_values(self, in_valid_values):
-        """Sets the in_valid_values of this DepParamInstance.
+        r"""Sets the in_valid_values of this DepParamInstance.
 
         无效值列表
 
@@ -187,7 +187,7 @@ class DepParamInstance:
 
     @property
     def name(self):
-        """Gets the name of this DepParamInstance.
+        r"""Gets the name of this DepParamInstance.
 
         名称
 
@@ -198,7 +198,7 @@ class DepParamInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DepParamInstance.
+        r"""Sets the name of this DepParamInstance.
 
         名称
 
@@ -209,7 +209,7 @@ class DepParamInstance:
 
     @property
     def null_info(self):
-        """Gets the null_info of this DepParamInstance.
+        r"""Gets the null_info of this DepParamInstance.
 
         空值信息
 
@@ -220,7 +220,7 @@ class DepParamInstance:
 
     @null_info.setter
     def null_info(self, null_info):
-        """Sets the null_info of this DepParamInstance.
+        r"""Sets the null_info of this DepParamInstance.
 
         空值信息
 
@@ -231,7 +231,7 @@ class DepParamInstance:
 
     @property
     def relation_map(self):
-        """Gets the relation_map of this DepParamInstance.
+        r"""Gets the relation_map of this DepParamInstance.
 
         关系映射，key为整数，value为字符串
 
@@ -242,7 +242,7 @@ class DepParamInstance:
 
     @relation_map.setter
     def relation_map(self, relation_map):
-        """Sets the relation_map of this DepParamInstance.
+        r"""Sets the relation_map of this DepParamInstance.
 
         关系映射，key为整数，value为字符串
 
@@ -253,7 +253,7 @@ class DepParamInstance:
 
     @property
     def relation_num(self):
-        """Gets the relation_num of this DepParamInstance.
+        r"""Gets the relation_num of this DepParamInstance.
 
         关系数量
 
@@ -264,7 +264,7 @@ class DepParamInstance:
 
     @relation_num.setter
     def relation_num(self, relation_num):
-        """Sets the relation_num of this DepParamInstance.
+        r"""Sets the relation_num of this DepParamInstance.
 
         关系数量
 
@@ -275,7 +275,7 @@ class DepParamInstance:
 
     @property
     def values(self):
-        """Gets the values of this DepParamInstance.
+        r"""Gets the values of this DepParamInstance.
 
         值列表
 
@@ -286,7 +286,7 @@ class DepParamInstance:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this DepParamInstance.
+        r"""Sets the values of this DepParamInstance.
 
         值列表
 

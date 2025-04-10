@@ -43,7 +43,7 @@ class EnhancedConnection:
     }
 
     def __init__(self, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, is_privis=None):
-        """EnhancedConnection
+        r"""EnhancedConnection
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class EnhancedConnection:
 
     @property
     def id(self):
-        """Gets the id of this EnhancedConnection.
+        r"""Gets the id of this EnhancedConnection.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -117,7 +117,7 @@ class EnhancedConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnhancedConnection.
+        r"""Sets the id of this EnhancedConnection.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -128,7 +128,7 @@ class EnhancedConnection:
 
     @property
     def name(self):
-        """Gets the name of this EnhancedConnection.
+        r"""Gets the name of this EnhancedConnection.
 
         创建连接时，用户自定义的连接名称。
 
@@ -139,7 +139,7 @@ class EnhancedConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnhancedConnection.
+        r"""Sets the name of this EnhancedConnection.
 
         创建连接时，用户自定义的连接名称。
 
@@ -150,7 +150,7 @@ class EnhancedConnection:
 
     @property
     def status(self):
-        """Gets the status of this EnhancedConnection.
+        r"""Gets the status of this EnhancedConnection.
 
         连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
 
@@ -161,7 +161,7 @@ class EnhancedConnection:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnhancedConnection.
+        r"""Sets the status of this EnhancedConnection.
 
         连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
 
@@ -172,7 +172,7 @@ class EnhancedConnection:
 
     @property
     def available_queue_info(self):
-        """Gets the available_queue_info of this EnhancedConnection.
+        r"""Gets the available_queue_info of this EnhancedConnection.
 
         各个队列创建对等连接的信息。
 
@@ -183,7 +183,7 @@ class EnhancedConnection:
 
     @available_queue_info.setter
     def available_queue_info(self, available_queue_info):
-        """Sets the available_queue_info of this EnhancedConnection.
+        r"""Sets the available_queue_info of this EnhancedConnection.
 
         各个队列创建对等连接的信息。
 
@@ -194,7 +194,7 @@ class EnhancedConnection:
 
     @property
     def elastic_resource_pools(self):
-        """Gets the elastic_resource_pools of this EnhancedConnection.
+        r"""Gets the elastic_resource_pools of this EnhancedConnection.
 
         各个弹性资源池创建对等连接的信息。
 
@@ -205,7 +205,7 @@ class EnhancedConnection:
 
     @elastic_resource_pools.setter
     def elastic_resource_pools(self, elastic_resource_pools):
-        """Sets the elastic_resource_pools of this EnhancedConnection.
+        r"""Sets the elastic_resource_pools of this EnhancedConnection.
 
         各个弹性资源池创建对等连接的信息。
 
@@ -216,7 +216,7 @@ class EnhancedConnection:
 
     @property
     def dest_vpc_id(self):
-        """Gets the dest_vpc_id of this EnhancedConnection.
+        r"""Gets the dest_vpc_id of this EnhancedConnection.
 
         对应服务的虚拟私有云标识。
 
@@ -227,7 +227,7 @@ class EnhancedConnection:
 
     @dest_vpc_id.setter
     def dest_vpc_id(self, dest_vpc_id):
-        """Sets the dest_vpc_id of this EnhancedConnection.
+        r"""Sets the dest_vpc_id of this EnhancedConnection.
 
         对应服务的虚拟私有云标识。
 
@@ -238,7 +238,7 @@ class EnhancedConnection:
 
     @property
     def dest_network_id(self):
-        """Gets the dest_network_id of this EnhancedConnection.
+        r"""Gets the dest_network_id of this EnhancedConnection.
 
         对应服务的子网网络标识。
 
@@ -249,7 +249,7 @@ class EnhancedConnection:
 
     @dest_network_id.setter
     def dest_network_id(self, dest_network_id):
-        """Sets the dest_network_id of this EnhancedConnection.
+        r"""Sets the dest_network_id of this EnhancedConnection.
 
         对应服务的子网网络标识。
 
@@ -260,7 +260,7 @@ class EnhancedConnection:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EnhancedConnection.
+        r"""Gets the create_time of this EnhancedConnection.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -271,7 +271,7 @@ class EnhancedConnection:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EnhancedConnection.
+        r"""Sets the create_time of this EnhancedConnection.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -282,7 +282,7 @@ class EnhancedConnection:
 
     @property
     def hosts(self):
-        """Gets the hosts of this EnhancedConnection.
+        r"""Gets the hosts of this EnhancedConnection.
 
         用户自定义主机信息
 
@@ -293,7 +293,7 @@ class EnhancedConnection:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this EnhancedConnection.
+        r"""Sets the hosts of this EnhancedConnection.
 
         用户自定义主机信息
 
@@ -304,7 +304,7 @@ class EnhancedConnection:
 
     @property
     def is_privis(self):
-        """Gets the is_privis of this EnhancedConnection.
+        r"""Gets the is_privis of this EnhancedConnection.
 
         该增强跨源连接如果做过项目赋权，则该字段是\"false\"，否则为\"true\"。
 
@@ -315,7 +315,7 @@ class EnhancedConnection:
 
     @is_privis.setter
     def is_privis(self, is_privis):
-        """Sets the is_privis of this EnhancedConnection.
+        r"""Sets the is_privis of this EnhancedConnection.
 
         该增强跨源连接如果做过项目赋权，则该字段是\"false\"，否则为\"true\"。
 

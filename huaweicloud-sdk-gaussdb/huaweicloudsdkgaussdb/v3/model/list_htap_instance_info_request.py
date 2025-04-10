@@ -27,7 +27,7 @@ class ListHtapInstanceInfoRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListHtapInstanceInfoRequest
+        r"""ListHtapInstanceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListHtapInstanceInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListHtapInstanceInfoRequest.
+        r"""Gets the instance_id of this ListHtapInstanceInfoRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -60,7 +60,7 @@ class ListHtapInstanceInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListHtapInstanceInfoRequest.
+        r"""Sets the instance_id of this ListHtapInstanceInfoRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class ListHtapInstanceInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHtapInstanceInfoRequest.
+        r"""Gets the x_language of this ListHtapInstanceInfoRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -82,7 +82,7 @@ class ListHtapInstanceInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHtapInstanceInfoRequest.
+        r"""Sets the x_language of this ListHtapInstanceInfoRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

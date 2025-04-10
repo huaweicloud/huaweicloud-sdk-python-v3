@@ -40,7 +40,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None):
-        """DeleteAntileakageRuleResponse
+        r"""DeleteAntileakageRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteAntileakageRuleResponse.
+        r"""Gets the id of this DeleteAntileakageRuleResponse.
 
         规则id
 
@@ -104,7 +104,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteAntileakageRuleResponse.
+        r"""Sets the id of this DeleteAntileakageRuleResponse.
 
         规则id
 
@@ -115,7 +115,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this DeleteAntileakageRuleResponse.
+        r"""Gets the policyid of this DeleteAntileakageRuleResponse.
 
         策略id
 
@@ -126,7 +126,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this DeleteAntileakageRuleResponse.
+        r"""Sets the policyid of this DeleteAntileakageRuleResponse.
 
         策略id
 
@@ -137,7 +137,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this DeleteAntileakageRuleResponse.
+        r"""Gets the url of this DeleteAntileakageRuleResponse.
 
         规则应用的url
 
@@ -148,7 +148,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DeleteAntileakageRuleResponse.
+        r"""Sets the url of this DeleteAntileakageRuleResponse.
 
         规则应用的url
 
@@ -159,7 +159,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this DeleteAntileakageRuleResponse.
+        r"""Gets the category of this DeleteAntileakageRuleResponse.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -170,7 +170,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this DeleteAntileakageRuleResponse.
+        r"""Sets the category of this DeleteAntileakageRuleResponse.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -181,7 +181,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def contents(self):
-        """Gets the contents of this DeleteAntileakageRuleResponse.
+        r"""Gets the contents of this DeleteAntileakageRuleResponse.
 
         内容
 
@@ -192,7 +192,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this DeleteAntileakageRuleResponse.
+        r"""Sets the contents of this DeleteAntileakageRuleResponse.
 
         内容
 
@@ -203,7 +203,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DeleteAntileakageRuleResponse.
+        r"""Gets the timestamp of this DeleteAntileakageRuleResponse.
 
         创建规则时间戳
 
@@ -214,7 +214,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DeleteAntileakageRuleResponse.
+        r"""Sets the timestamp of this DeleteAntileakageRuleResponse.
 
         创建规则时间戳
 
@@ -225,7 +225,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteAntileakageRuleResponse.
+        r"""Gets the status of this DeleteAntileakageRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -236,7 +236,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteAntileakageRuleResponse.
+        r"""Sets the status of this DeleteAntileakageRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -247,7 +247,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeleteAntileakageRuleResponse.
+        r"""Gets the description of this DeleteAntileakageRuleResponse.
 
         规则描述
 
@@ -258,7 +258,7 @@ class DeleteAntileakageRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeleteAntileakageRuleResponse.
+        r"""Sets the description of this DeleteAntileakageRuleResponse.
 
         规则描述
 

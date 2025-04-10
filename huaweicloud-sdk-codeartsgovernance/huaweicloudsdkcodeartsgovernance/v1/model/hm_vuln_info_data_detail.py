@@ -25,7 +25,7 @@ class HmVulnInfoDataDetail:
     }
 
     def __init__(self, vuln_info=None):
-        """HmVulnInfoDataDetail
+        r"""HmVulnInfoDataDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HmVulnInfoDataDetail:
 
     @property
     def vuln_info(self):
-        """Gets the vuln_info of this HmVulnInfoDataDetail.
+        r"""Gets the vuln_info of this HmVulnInfoDataDetail.
 
         问题
 
@@ -54,7 +54,7 @@ class HmVulnInfoDataDetail:
 
     @vuln_info.setter
     def vuln_info(self, vuln_info):
-        """Sets the vuln_info of this HmVulnInfoDataDetail.
+        r"""Sets the vuln_info of this HmVulnInfoDataDetail.
 
         问题
 

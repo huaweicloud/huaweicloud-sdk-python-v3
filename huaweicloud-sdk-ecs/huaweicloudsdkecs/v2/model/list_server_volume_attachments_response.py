@@ -26,7 +26,7 @@ class ListServerVolumeAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, volume_attachments=None):
-        """ListServerVolumeAttachmentsResponse
+        r"""ListServerVolumeAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListServerVolumeAttachmentsResponse(SdkResponse):
 
     @property
     def volume_attachments(self):
-        """Gets the volume_attachments of this ListServerVolumeAttachmentsResponse.
+        r"""Gets the volume_attachments of this ListServerVolumeAttachmentsResponse.
 
         云服务器挂载信息列表
 
@@ -55,7 +55,7 @@ class ListServerVolumeAttachmentsResponse(SdkResponse):
 
     @volume_attachments.setter
     def volume_attachments(self, volume_attachments):
-        """Sets the volume_attachments of this ListServerVolumeAttachmentsResponse.
+        r"""Sets the volume_attachments of this ListServerVolumeAttachmentsResponse.
 
         云服务器挂载信息列表
 

@@ -31,7 +31,7 @@ class SpecsConfig:
     }
 
     def __init__(self, offline=None, nearline=None, rank=None, online_tps=None):
-        """SpecsConfig
+        r"""SpecsConfig
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SpecsConfig:
 
     @property
     def offline(self):
-        """Gets the offline of this SpecsConfig.
+        r"""Gets the offline of this SpecsConfig.
 
         离线计算规格。
 
@@ -74,7 +74,7 @@ class SpecsConfig:
 
     @offline.setter
     def offline(self, offline):
-        """Sets the offline of this SpecsConfig.
+        r"""Sets the offline of this SpecsConfig.
 
         离线计算规格。
 
@@ -85,7 +85,7 @@ class SpecsConfig:
 
     @property
     def nearline(self):
-        """Gets the nearline of this SpecsConfig.
+        r"""Gets the nearline of this SpecsConfig.
 
         实时计算规格。
 
@@ -96,7 +96,7 @@ class SpecsConfig:
 
     @nearline.setter
     def nearline(self, nearline):
-        """Sets the nearline of this SpecsConfig.
+        r"""Sets the nearline of this SpecsConfig.
 
         实时计算规格。
 
@@ -107,7 +107,7 @@ class SpecsConfig:
 
     @property
     def rank(self):
-        """Gets the rank of this SpecsConfig.
+        r"""Gets the rank of this SpecsConfig.
 
         深度学习计算规格。
 
@@ -118,7 +118,7 @@ class SpecsConfig:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this SpecsConfig.
+        r"""Sets the rank of this SpecsConfig.
 
         深度学习计算规格。
 
@@ -129,7 +129,7 @@ class SpecsConfig:
 
     @property
     def online_tps(self):
-        """Gets the online_tps of this SpecsConfig.
+        r"""Gets the online_tps of this SpecsConfig.
 
         在线服务最大并发数。
 
@@ -140,7 +140,7 @@ class SpecsConfig:
 
     @online_tps.setter
     def online_tps(self, online_tps):
-        """Sets the online_tps of this SpecsConfig.
+        r"""Sets the online_tps of this SpecsConfig.
 
         在线服务最大并发数。
 

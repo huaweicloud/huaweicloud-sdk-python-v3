@@ -25,7 +25,7 @@ class OrderAlertEventContent:
     }
 
     def __init__(self, handle_status=None):
-        """OrderAlertEventContent
+        r"""OrderAlertEventContent
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OrderAlertEventContent:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this OrderAlertEventContent.
+        r"""Gets the handle_status of this OrderAlertEventContent.
 
         状态
 
@@ -54,7 +54,7 @@ class OrderAlertEventContent:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this OrderAlertEventContent.
+        r"""Sets the handle_status of this OrderAlertEventContent.
 
         状态
 

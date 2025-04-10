@@ -26,7 +26,7 @@ class ShowCoordinatorsResponse(SdkResponse):
     }
 
     def __init__(self, coordinators=None):
-        """ShowCoordinatorsResponse
+        r"""ShowCoordinatorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCoordinatorsResponse(SdkResponse):
 
     @property
     def coordinators(self):
-        """Gets the coordinators of this ShowCoordinatorsResponse.
+        r"""Gets the coordinators of this ShowCoordinatorsResponse.
 
         所有消费组对应的协调器列表。
 
@@ -55,7 +55,7 @@ class ShowCoordinatorsResponse(SdkResponse):
 
     @coordinators.setter
     def coordinators(self, coordinators):
-        """Sets the coordinators of this ShowCoordinatorsResponse.
+        r"""Sets the coordinators of this ShowCoordinatorsResponse.
 
         所有消费组对应的协调器列表。
 

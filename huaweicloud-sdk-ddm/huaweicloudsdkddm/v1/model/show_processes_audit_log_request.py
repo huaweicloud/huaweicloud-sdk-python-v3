@@ -33,7 +33,7 @@ class ShowProcessesAuditLogRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ShowProcessesAuditLogRequest
+        r"""ShowProcessesAuditLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowProcessesAuditLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowProcessesAuditLogRequest.
+        r"""Gets the instance_id of this ShowProcessesAuditLogRequest.
 
         DDM实例ID或关联RDS的ID。
 
@@ -79,7 +79,7 @@ class ShowProcessesAuditLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowProcessesAuditLogRequest.
+        r"""Sets the instance_id of this ShowProcessesAuditLogRequest.
 
         DDM实例ID或关联RDS的ID。
 
@@ -90,7 +90,7 @@ class ShowProcessesAuditLogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowProcessesAuditLogRequest.
+        r"""Gets the offset of this ShowProcessesAuditLogRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -101,7 +101,7 @@ class ShowProcessesAuditLogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowProcessesAuditLogRequest.
+        r"""Sets the offset of this ShowProcessesAuditLogRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -112,7 +112,7 @@ class ShowProcessesAuditLogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowProcessesAuditLogRequest.
+        r"""Gets the limit of this ShowProcessesAuditLogRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -123,7 +123,7 @@ class ShowProcessesAuditLogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowProcessesAuditLogRequest.
+        r"""Sets the limit of this ShowProcessesAuditLogRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -134,7 +134,7 @@ class ShowProcessesAuditLogRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowProcessesAuditLogRequest.
+        r"""Gets the start_time of this ShowProcessesAuditLogRequest.
 
         开始时间，UTC time，精确到毫秒。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -145,7 +145,7 @@ class ShowProcessesAuditLogRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowProcessesAuditLogRequest.
+        r"""Sets the start_time of this ShowProcessesAuditLogRequest.
 
         开始时间，UTC time，精确到毫秒。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -156,7 +156,7 @@ class ShowProcessesAuditLogRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowProcessesAuditLogRequest.
+        r"""Gets the end_time of this ShowProcessesAuditLogRequest.
 
         结束时间，UTC time，精确到毫秒。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。结束时间与开始时间，间隔不能超过7天。
 
@@ -167,7 +167,7 @@ class ShowProcessesAuditLogRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowProcessesAuditLogRequest.
+        r"""Sets the end_time of this ShowProcessesAuditLogRequest.
 
         结束时间，UTC time，精确到毫秒。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。结束时间与开始时间，间隔不能超过7天。
 

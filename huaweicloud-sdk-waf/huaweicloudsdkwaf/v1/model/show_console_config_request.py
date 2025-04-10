@@ -23,7 +23,7 @@ class ShowConsoleConfigRequest:
     }
 
     def __init__(self):
-        """ShowConsoleConfigRequest
+        r"""ShowConsoleConfigRequest
 
         The model defined in huaweicloud sdk
 

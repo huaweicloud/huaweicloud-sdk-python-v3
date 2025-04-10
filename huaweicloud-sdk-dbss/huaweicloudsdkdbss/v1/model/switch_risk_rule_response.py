@@ -26,7 +26,7 @@ class SwitchRiskRuleResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """SwitchRiskRuleResponse
+        r"""SwitchRiskRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchRiskRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SwitchRiskRuleResponse.
+        r"""Gets the status of this SwitchRiskRuleResponse.
 
         响应状态
 
@@ -55,7 +55,7 @@ class SwitchRiskRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SwitchRiskRuleResponse.
+        r"""Sets the status of this SwitchRiskRuleResponse.
 
         响应状态
 

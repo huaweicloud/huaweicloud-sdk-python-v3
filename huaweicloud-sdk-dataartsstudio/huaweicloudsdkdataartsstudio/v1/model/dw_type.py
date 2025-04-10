@@ -23,7 +23,7 @@ class DwType:
     }
 
     def __init__(self):
-        """DwType
+        r"""DwType
 
         The model defined in huaweicloud sdk
 

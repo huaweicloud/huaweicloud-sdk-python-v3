@@ -37,7 +37,7 @@ class ListAgentInvocationsRequest:
     }
 
     def __init__(self, instance_id=None, instance_type=None, invocation_id=None, invocation_type=None, invocation_target=None, offset=None, limit=None):
-        """ListAgentInvocationsRequest
+        r"""ListAgentInvocationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAgentInvocationsRequest.
+        r"""Gets the instance_id of this ListAgentInvocationsRequest.
 
         主机id
 
@@ -96,7 +96,7 @@ class ListAgentInvocationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAgentInvocationsRequest.
+        r"""Sets the instance_id of this ListAgentInvocationsRequest.
 
         主机id
 
@@ -107,7 +107,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListAgentInvocationsRequest.
+        r"""Gets the instance_type of this ListAgentInvocationsRequest.
 
         主机类型，ECS弹性云服务器，BMS裸金属服务器
 
@@ -118,7 +118,7 @@ class ListAgentInvocationsRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListAgentInvocationsRequest.
+        r"""Sets the instance_type of this ListAgentInvocationsRequest.
 
         主机类型，ECS弹性云服务器，BMS裸金属服务器
 
@@ -129,7 +129,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def invocation_id(self):
-        """Gets the invocation_id of this ListAgentInvocationsRequest.
+        r"""Gets the invocation_id of this ListAgentInvocationsRequest.
 
         任务id
 
@@ -140,7 +140,7 @@ class ListAgentInvocationsRequest:
 
     @invocation_id.setter
     def invocation_id(self, invocation_id):
-        """Sets the invocation_id of this ListAgentInvocationsRequest.
+        r"""Sets the invocation_id of this ListAgentInvocationsRequest.
 
         任务id
 
@@ -151,7 +151,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this ListAgentInvocationsRequest.
+        r"""Gets the invocation_type of this ListAgentInvocationsRequest.
 
         任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
 
@@ -162,7 +162,7 @@ class ListAgentInvocationsRequest:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this ListAgentInvocationsRequest.
+        r"""Sets the invocation_type of this ListAgentInvocationsRequest.
 
         任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
 
@@ -173,7 +173,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def invocation_target(self):
-        """Gets the invocation_target of this ListAgentInvocationsRequest.
+        r"""Gets the invocation_target of this ListAgentInvocationsRequest.
 
         任务对象，目前仅支持telescope
 
@@ -184,7 +184,7 @@ class ListAgentInvocationsRequest:
 
     @invocation_target.setter
     def invocation_target(self, invocation_target):
-        """Sets the invocation_target of this ListAgentInvocationsRequest.
+        r"""Sets the invocation_target of this ListAgentInvocationsRequest.
 
         任务对象，目前仅支持telescope
 
@@ -195,7 +195,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAgentInvocationsRequest.
+        r"""Gets the offset of this ListAgentInvocationsRequest.
 
         分页偏移量
 
@@ -206,7 +206,7 @@ class ListAgentInvocationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAgentInvocationsRequest.
+        r"""Sets the offset of this ListAgentInvocationsRequest.
 
         分页偏移量
 
@@ -217,7 +217,7 @@ class ListAgentInvocationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgentInvocationsRequest.
+        r"""Gets the limit of this ListAgentInvocationsRequest.
 
         分页大小
 
@@ -228,7 +228,7 @@ class ListAgentInvocationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgentInvocationsRequest.
+        r"""Sets the limit of this ListAgentInvocationsRequest.
 
         分页大小
 

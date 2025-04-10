@@ -31,7 +31,7 @@ class ShowHttpAccessControlRulesRequest:
     }
 
     def __init__(self, policy_id=None, name=None, page=None, pagesize=None):
-        """ShowHttpAccessControlRulesRequest
+        r"""ShowHttpAccessControlRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpAccessControlRulesRequest.
+        r"""Gets the policy_id of this ShowHttpAccessControlRulesRequest.
 
         策略id
 
@@ -74,7 +74,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpAccessControlRulesRequest.
+        r"""Sets the policy_id of this ShowHttpAccessControlRulesRequest.
 
         策略id
 
@@ -85,7 +85,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpAccessControlRulesRequest.
+        r"""Gets the name of this ShowHttpAccessControlRulesRequest.
 
         规则名称
 
@@ -96,7 +96,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpAccessControlRulesRequest.
+        r"""Sets the name of this ShowHttpAccessControlRulesRequest.
 
         规则名称
 
@@ -107,7 +107,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpAccessControlRulesRequest.
+        r"""Gets the page of this ShowHttpAccessControlRulesRequest.
 
         分页查询参数，第page页
 
@@ -118,7 +118,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpAccessControlRulesRequest.
+        r"""Sets the page of this ShowHttpAccessControlRulesRequest.
 
         分页查询参数，第page页
 
@@ -129,7 +129,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpAccessControlRulesRequest.
+        r"""Gets the pagesize of this ShowHttpAccessControlRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -140,7 +140,7 @@ class ShowHttpAccessControlRulesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpAccessControlRulesRequest.
+        r"""Sets the pagesize of this ShowHttpAccessControlRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 

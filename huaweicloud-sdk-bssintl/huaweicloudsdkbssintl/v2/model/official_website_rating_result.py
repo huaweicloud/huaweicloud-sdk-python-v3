@@ -29,7 +29,7 @@ class OfficialWebsiteRatingResult:
     }
 
     def __init__(self, official_website_amount=None, measure_id=None, product_rating_results=None):
-        """OfficialWebsiteRatingResult
+        r"""OfficialWebsiteRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the official_website_amount of this OfficialWebsiteRatingResult.
 
         包年/包月产品的官网价。
 
@@ -68,7 +68,7 @@ class OfficialWebsiteRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the official_website_amount of this OfficialWebsiteRatingResult.
 
         包年/包月产品的官网价。
 
@@ -79,7 +79,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this OfficialWebsiteRatingResult.
+        r"""Gets the measure_id of this OfficialWebsiteRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -90,7 +90,7 @@ class OfficialWebsiteRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this OfficialWebsiteRatingResult.
+        r"""Sets the measure_id of this OfficialWebsiteRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -101,7 +101,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def product_rating_results(self):
-        """Gets the product_rating_results of this OfficialWebsiteRatingResult.
+        r"""Gets the product_rating_results of this OfficialWebsiteRatingResult.
 
         产品询价结果，具体参见表5。
 
@@ -112,7 +112,7 @@ class OfficialWebsiteRatingResult:
 
     @product_rating_results.setter
     def product_rating_results(self, product_rating_results):
-        """Sets the product_rating_results of this OfficialWebsiteRatingResult.
+        r"""Sets the product_rating_results of this OfficialWebsiteRatingResult.
 
         产品询价结果，具体参见表5。
 

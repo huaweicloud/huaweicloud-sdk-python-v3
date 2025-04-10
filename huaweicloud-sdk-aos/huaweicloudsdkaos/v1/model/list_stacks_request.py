@@ -25,7 +25,7 @@ class ListStacksRequest:
     }
 
     def __init__(self, client_request_id=None):
-        """ListStacksRequest
+        r"""ListStacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListStacksRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ListStacksRequest.
+        r"""Gets the client_request_id of this ListStacksRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -53,7 +53,7 @@ class ListStacksRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ListStacksRequest.
+        r"""Sets the client_request_id of this ListStacksRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 

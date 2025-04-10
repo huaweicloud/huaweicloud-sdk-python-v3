@@ -28,7 +28,7 @@ class ListAsyncHistoryCommandsResponse(SdkResponse):
     }
 
     def __init__(self, commands=None, page=None):
-        """ListAsyncHistoryCommandsResponse
+        r"""ListAsyncHistoryCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAsyncHistoryCommandsResponse(SdkResponse):
 
     @property
     def commands(self):
-        """Gets the commands of this ListAsyncHistoryCommandsResponse.
+        r"""Gets the commands of this ListAsyncHistoryCommandsResponse.
 
         设备历史命令列表。
 
@@ -62,7 +62,7 @@ class ListAsyncHistoryCommandsResponse(SdkResponse):
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this ListAsyncHistoryCommandsResponse.
+        r"""Sets the commands of this ListAsyncHistoryCommandsResponse.
 
         设备历史命令列表。
 
@@ -73,7 +73,7 @@ class ListAsyncHistoryCommandsResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListAsyncHistoryCommandsResponse.
+        r"""Gets the page of this ListAsyncHistoryCommandsResponse.
 
         :return: The page of this ListAsyncHistoryCommandsResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.HistoryCommandPage`
@@ -82,7 +82,7 @@ class ListAsyncHistoryCommandsResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListAsyncHistoryCommandsResponse.
+        r"""Sets the page of this ListAsyncHistoryCommandsResponse.
 
         :param page: The page of this ListAsyncHistoryCommandsResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.HistoryCommandPage`

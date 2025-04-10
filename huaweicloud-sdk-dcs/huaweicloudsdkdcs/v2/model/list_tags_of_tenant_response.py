@@ -26,7 +26,7 @@ class ListTagsOfTenantResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListTagsOfTenantResponse
+        r"""ListTagsOfTenantResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTagsOfTenantResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListTagsOfTenantResponse.
+        r"""Gets the tags of this ListTagsOfTenantResponse.
 
         标签列表。
 
@@ -55,7 +55,7 @@ class ListTagsOfTenantResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTagsOfTenantResponse.
+        r"""Sets the tags of this ListTagsOfTenantResponse.
 
         标签列表。
 

@@ -45,7 +45,7 @@ class ExternalServiceBizCase:
     }
 
     def __init__(self, description=None, preparation=None, steps=None, label_list=None, module_id=None, test_version_id=None, fix_version_id=None, assigned_id=None, issue_id=None, status_id=None, defect_id_list=None):
-        """ExternalServiceBizCase
+        r"""ExternalServiceBizCase
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ExternalServiceBizCase:
 
     @property
     def description(self):
-        """Gets the description of this ExternalServiceBizCase.
+        r"""Gets the description of this ExternalServiceBizCase.
 
         测试用例描述信息，长度为[0-500]位字符
 
@@ -124,7 +124,7 @@ class ExternalServiceBizCase:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExternalServiceBizCase.
+        r"""Sets the description of this ExternalServiceBizCase.
 
         测试用例描述信息，长度为[0-500]位字符
 
@@ -135,7 +135,7 @@ class ExternalServiceBizCase:
 
     @property
     def preparation(self):
-        """Gets the preparation of this ExternalServiceBizCase.
+        r"""Gets the preparation of this ExternalServiceBizCase.
 
         执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
 
@@ -146,7 +146,7 @@ class ExternalServiceBizCase:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this ExternalServiceBizCase.
+        r"""Sets the preparation of this ExternalServiceBizCase.
 
         执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
 
@@ -157,7 +157,7 @@ class ExternalServiceBizCase:
 
     @property
     def steps(self):
-        """Gets the steps of this ExternalServiceBizCase.
+        r"""Gets the steps of this ExternalServiceBizCase.
 
         测试步骤，数组长度小于10
 
@@ -168,7 +168,7 @@ class ExternalServiceBizCase:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this ExternalServiceBizCase.
+        r"""Sets the steps of this ExternalServiceBizCase.
 
         测试步骤，数组长度小于10
 
@@ -179,7 +179,7 @@ class ExternalServiceBizCase:
 
     @property
     def label_list(self):
-        """Gets the label_list of this ExternalServiceBizCase.
+        r"""Gets the label_list of this ExternalServiceBizCase.
 
         标签名称列表，数组长度小于25
 
@@ -190,7 +190,7 @@ class ExternalServiceBizCase:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this ExternalServiceBizCase.
+        r"""Sets the label_list of this ExternalServiceBizCase.
 
         标签名称列表，数组长度小于25
 
@@ -201,7 +201,7 @@ class ExternalServiceBizCase:
 
     @property
     def module_id(self):
-        """Gets the module_id of this ExternalServiceBizCase.
+        r"""Gets the module_id of this ExternalServiceBizCase.
 
         模块号，长度为[0-32]位字符
 
@@ -212,7 +212,7 @@ class ExternalServiceBizCase:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this ExternalServiceBizCase.
+        r"""Sets the module_id of this ExternalServiceBizCase.
 
         模块号，长度为[0-32]位字符
 
@@ -223,7 +223,7 @@ class ExternalServiceBizCase:
 
     @property
     def test_version_id(self):
-        """Gets the test_version_id of this ExternalServiceBizCase.
+        r"""Gets the test_version_id of this ExternalServiceBizCase.
 
         测试版本号，长度为[0-10]位字符
 
@@ -234,7 +234,7 @@ class ExternalServiceBizCase:
 
     @test_version_id.setter
     def test_version_id(self, test_version_id):
-        """Sets the test_version_id of this ExternalServiceBizCase.
+        r"""Sets the test_version_id of this ExternalServiceBizCase.
 
         测试版本号，长度为[0-10]位字符
 
@@ -245,7 +245,7 @@ class ExternalServiceBizCase:
 
     @property
     def fix_version_id(self):
-        """Gets the fix_version_id of this ExternalServiceBizCase.
+        r"""Gets the fix_version_id of this ExternalServiceBizCase.
 
         迭代号，长度为[0-32]位字符
 
@@ -256,7 +256,7 @@ class ExternalServiceBizCase:
 
     @fix_version_id.setter
     def fix_version_id(self, fix_version_id):
-        """Sets the fix_version_id of this ExternalServiceBizCase.
+        r"""Sets the fix_version_id of this ExternalServiceBizCase.
 
         迭代号，长度为[0-32]位字符
 
@@ -267,7 +267,7 @@ class ExternalServiceBizCase:
 
     @property
     def assigned_id(self):
-        """Gets the assigned_id of this ExternalServiceBizCase.
+        r"""Gets the assigned_id of this ExternalServiceBizCase.
 
         处理者id信息，固定长度32位字符
 
@@ -278,7 +278,7 @@ class ExternalServiceBizCase:
 
     @assigned_id.setter
     def assigned_id(self, assigned_id):
-        """Sets the assigned_id of this ExternalServiceBizCase.
+        r"""Sets the assigned_id of this ExternalServiceBizCase.
 
         处理者id信息，固定长度32位字符
 
@@ -289,7 +289,7 @@ class ExternalServiceBizCase:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ExternalServiceBizCase.
+        r"""Gets the issue_id of this ExternalServiceBizCase.
 
         用例关联的需求id信息，长度为[0-32]位字符
 
@@ -300,7 +300,7 @@ class ExternalServiceBizCase:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ExternalServiceBizCase.
+        r"""Sets the issue_id of this ExternalServiceBizCase.
 
         用例关联的需求id信息，长度为[0-32]位字符
 
@@ -311,7 +311,7 @@ class ExternalServiceBizCase:
 
     @property
     def status_id(self):
-        """Gets the status_id of this ExternalServiceBizCase.
+        r"""Gets the status_id of this ExternalServiceBizCase.
 
         测试用例状态信息，（0-新建，5-设计中，6-测试中，7-完成）
 
@@ -322,7 +322,7 @@ class ExternalServiceBizCase:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this ExternalServiceBizCase.
+        r"""Sets the status_id of this ExternalServiceBizCase.
 
         测试用例状态信息，（0-新建，5-设计中，6-测试中，7-完成）
 
@@ -333,7 +333,7 @@ class ExternalServiceBizCase:
 
     @property
     def defect_id_list(self):
-        """Gets the defect_id_list of this ExternalServiceBizCase.
+        r"""Gets the defect_id_list of this ExternalServiceBizCase.
 
         缺陷id信息，数组长度小于50个
 
@@ -344,7 +344,7 @@ class ExternalServiceBizCase:
 
     @defect_id_list.setter
     def defect_id_list(self, defect_id_list):
-        """Sets the defect_id_list of this ExternalServiceBizCase.
+        r"""Sets the defect_id_list of this ExternalServiceBizCase.
 
         缺陷id信息，数组长度小于50个
 

@@ -26,7 +26,7 @@ class UntagCloudConnectionResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UntagCloudConnectionResponse
+        r"""UntagCloudConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UntagCloudConnectionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UntagCloudConnectionResponse.
+        r"""Gets the x_request_id of this UntagCloudConnectionResponse.
 
         :return: The x_request_id of this UntagCloudConnectionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UntagCloudConnectionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UntagCloudConnectionResponse.
+        r"""Sets the x_request_id of this UntagCloudConnectionResponse.
 
         :param x_request_id: The x_request_id of this UntagCloudConnectionResponse.
         :type x_request_id: str

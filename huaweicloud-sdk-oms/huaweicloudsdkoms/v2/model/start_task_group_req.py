@@ -35,7 +35,7 @@ class StartTaskGroupReq:
     }
 
     def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None):
-        """StartTaskGroupReq
+        r"""StartTaskGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class StartTaskGroupReq:
 
     @property
     def src_ak(self):
-        """Gets the src_ak of this StartTaskGroupReq.
+        r"""Gets the src_ak of this StartTaskGroupReq.
 
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -87,7 +87,7 @@ class StartTaskGroupReq:
 
     @src_ak.setter
     def src_ak(self, src_ak):
-        """Sets the src_ak of this StartTaskGroupReq.
+        r"""Sets the src_ak of this StartTaskGroupReq.
 
         源端节点AK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -98,7 +98,7 @@ class StartTaskGroupReq:
 
     @property
     def src_sk(self):
-        """Gets the src_sk of this StartTaskGroupReq.
+        r"""Gets the src_sk of this StartTaskGroupReq.
 
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -109,7 +109,7 @@ class StartTaskGroupReq:
 
     @src_sk.setter
     def src_sk(self, src_sk):
-        """Sets the src_sk of this StartTaskGroupReq.
+        r"""Sets the src_sk of this StartTaskGroupReq.
 
         源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
 
@@ -120,7 +120,7 @@ class StartTaskGroupReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this StartTaskGroupReq.
+        r"""Gets the json_auth_file of this StartTaskGroupReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -131,7 +131,7 @@ class StartTaskGroupReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this StartTaskGroupReq.
+        r"""Sets the json_auth_file of this StartTaskGroupReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -142,7 +142,7 @@ class StartTaskGroupReq:
 
     @property
     def dst_ak(self):
-        """Gets the dst_ak of this StartTaskGroupReq.
+        r"""Gets the dst_ak of this StartTaskGroupReq.
 
         目的端节点AK（最大长度100个字符）。
 
@@ -153,7 +153,7 @@ class StartTaskGroupReq:
 
     @dst_ak.setter
     def dst_ak(self, dst_ak):
-        """Sets the dst_ak of this StartTaskGroupReq.
+        r"""Sets the dst_ak of this StartTaskGroupReq.
 
         目的端节点AK（最大长度100个字符）。
 
@@ -164,7 +164,7 @@ class StartTaskGroupReq:
 
     @property
     def dst_sk(self):
-        """Gets the dst_sk of this StartTaskGroupReq.
+        r"""Gets the dst_sk of this StartTaskGroupReq.
 
         目的端节点SK（最大长度100个字符）。
 
@@ -175,7 +175,7 @@ class StartTaskGroupReq:
 
     @dst_sk.setter
     def dst_sk(self, dst_sk):
-        """Sets the dst_sk of this StartTaskGroupReq.
+        r"""Sets the dst_sk of this StartTaskGroupReq.
 
         目的端节点SK（最大长度100个字符）。
 
@@ -186,7 +186,7 @@ class StartTaskGroupReq:
 
     @property
     def source_cdn_authentication_key(self):
-        """Gets the source_cdn_authentication_key of this StartTaskGroupReq.
+        r"""Gets the source_cdn_authentication_key of this StartTaskGroupReq.
 
         CDN鉴权秘钥。
 
@@ -197,7 +197,7 @@ class StartTaskGroupReq:
 
     @source_cdn_authentication_key.setter
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
-        """Sets the source_cdn_authentication_key of this StartTaskGroupReq.
+        r"""Sets the source_cdn_authentication_key of this StartTaskGroupReq.
 
         CDN鉴权秘钥。
 

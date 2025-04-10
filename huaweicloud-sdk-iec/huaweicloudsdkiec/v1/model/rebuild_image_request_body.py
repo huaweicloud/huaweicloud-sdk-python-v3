@@ -25,7 +25,7 @@ class RebuildImageRequestBody:
     }
 
     def __init__(self, action=None):
-        """RebuildImageRequestBody
+        r"""RebuildImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RebuildImageRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this RebuildImageRequestBody.
+        r"""Gets the action of this RebuildImageRequestBody.
 
         重试镜像任务动作，取值retry。
 
@@ -53,7 +53,7 @@ class RebuildImageRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RebuildImageRequestBody.
+        r"""Sets the action of this RebuildImageRequestBody.
 
         重试镜像任务动作，取值retry。
 

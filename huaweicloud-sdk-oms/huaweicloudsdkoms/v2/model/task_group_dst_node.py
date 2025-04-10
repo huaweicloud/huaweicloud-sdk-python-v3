@@ -35,7 +35,7 @@ class TaskGroupDstNode:
     }
 
     def __init__(self, ak=None, sk=None, region=None, bucket=None, cloud_type=None, save_prefix=None):
-        """TaskGroupDstNode
+        r"""TaskGroupDstNode
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TaskGroupDstNode:
 
     @property
     def ak(self):
-        """Gets the ak of this TaskGroupDstNode.
+        r"""Gets the ak of this TaskGroupDstNode.
 
         目的端桶的AK（最大长度100个字符）。
 
@@ -85,7 +85,7 @@ class TaskGroupDstNode:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this TaskGroupDstNode.
+        r"""Sets the ak of this TaskGroupDstNode.
 
         目的端桶的AK（最大长度100个字符）。
 
@@ -96,7 +96,7 @@ class TaskGroupDstNode:
 
     @property
     def sk(self):
-        """Gets the sk of this TaskGroupDstNode.
+        r"""Gets the sk of this TaskGroupDstNode.
 
         目的端桶的SK（最大长度100个字符）。
 
@@ -107,7 +107,7 @@ class TaskGroupDstNode:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this TaskGroupDstNode.
+        r"""Sets the sk of this TaskGroupDstNode.
 
         目的端桶的SK（最大长度100个字符）。
 
@@ -118,7 +118,7 @@ class TaskGroupDstNode:
 
     @property
     def region(self):
-        """Gets the region of this TaskGroupDstNode.
+        r"""Gets the region of this TaskGroupDstNode.
 
         目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
 
@@ -129,7 +129,7 @@ class TaskGroupDstNode:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TaskGroupDstNode.
+        r"""Sets the region of this TaskGroupDstNode.
 
         目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
 
@@ -140,7 +140,7 @@ class TaskGroupDstNode:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskGroupDstNode.
+        r"""Gets the bucket of this TaskGroupDstNode.
 
         目的端的桶名称
 
@@ -151,7 +151,7 @@ class TaskGroupDstNode:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskGroupDstNode.
+        r"""Sets the bucket of this TaskGroupDstNode.
 
         目的端的桶名称
 
@@ -162,7 +162,7 @@ class TaskGroupDstNode:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this TaskGroupDstNode.
+        r"""Gets the cloud_type of this TaskGroupDstNode.
 
         华为云目的端信息，默认为HEC
 
@@ -173,7 +173,7 @@ class TaskGroupDstNode:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this TaskGroupDstNode.
+        r"""Sets the cloud_type of this TaskGroupDstNode.
 
         华为云目的端信息，默认为HEC
 
@@ -184,7 +184,7 @@ class TaskGroupDstNode:
 
     @property
     def save_prefix(self):
-        """Gets the save_prefix of this TaskGroupDstNode.
+        r"""Gets the save_prefix of this TaskGroupDstNode.
 
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 
@@ -195,7 +195,7 @@ class TaskGroupDstNode:
 
     @save_prefix.setter
     def save_prefix(self, save_prefix):
-        """Sets the save_prefix of this TaskGroupDstNode.
+        r"""Sets the save_prefix of this TaskGroupDstNode.
 
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 

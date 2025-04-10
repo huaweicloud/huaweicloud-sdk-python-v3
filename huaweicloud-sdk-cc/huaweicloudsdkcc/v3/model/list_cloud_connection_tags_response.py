@@ -28,7 +28,7 @@ class ListCloudConnectionTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None):
-        """ListCloudConnectionTagsResponse
+        r"""ListCloudConnectionTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListCloudConnectionTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudConnectionTagsResponse.
+        r"""Gets the request_id of this ListCloudConnectionTagsResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListCloudConnectionTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudConnectionTagsResponse.
+        r"""Sets the request_id of this ListCloudConnectionTagsResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListCloudConnectionTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListCloudConnectionTagsResponse.
+        r"""Gets the tags of this ListCloudConnectionTagsResponse.
 
         云连接实例的所有标签。
 
@@ -82,7 +82,7 @@ class ListCloudConnectionTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListCloudConnectionTagsResponse.
+        r"""Sets the tags of this ListCloudConnectionTagsResponse.
 
         云连接实例的所有标签。
 

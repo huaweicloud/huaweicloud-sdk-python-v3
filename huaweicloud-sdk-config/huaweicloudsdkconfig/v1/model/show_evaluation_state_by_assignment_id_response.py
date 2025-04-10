@@ -34,7 +34,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
     }
 
     def __init__(self, policy_assignment_id=None, state=None, start_time=None, end_time=None, error_message=None):
-        """ShowEvaluationStateByAssignmentIdResponse
+        r"""ShowEvaluationStateByAssignmentIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Gets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdResponse.
 
         规则ID
 
@@ -83,7 +83,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Sets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdResponse.
 
         规则ID
 
@@ -94,7 +94,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Gets the state of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务执行状态
 
@@ -105,7 +105,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Sets the state of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务执行状态
 
@@ -116,7 +116,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Gets the start_time of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务开始时间
 
@@ -127,7 +127,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Sets the start_time of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务开始时间
 
@@ -138,7 +138,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Gets the end_time of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务结束时间
 
@@ -149,7 +149,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Sets the end_time of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务结束时间
 
@@ -160,7 +160,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Gets the error_message of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务失败信息
 
@@ -171,7 +171,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ShowEvaluationStateByAssignmentIdResponse.
+        r"""Sets the error_message of this ShowEvaluationStateByAssignmentIdResponse.
 
         评估任务失败信息
 

@@ -41,7 +41,7 @@ class ChileIdCardConfidence:
     }
 
     def __init__(self, surname=None, given_name=None, nationality=None, sex=None, birth=None, issue_date=None, expiry_date=None, document_number=None, number=None):
-        """ChileIdCardConfidence
+        r"""ChileIdCardConfidence
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ChileIdCardConfidence:
 
     @property
     def surname(self):
-        """Gets the surname of this ChileIdCardConfidence.
+        r"""Gets the surname of this ChileIdCardConfidence.
 
         姓氏置信度。 
 
@@ -110,7 +110,7 @@ class ChileIdCardConfidence:
 
     @surname.setter
     def surname(self, surname):
-        """Sets the surname of this ChileIdCardConfidence.
+        r"""Sets the surname of this ChileIdCardConfidence.
 
         姓氏置信度。 
 
@@ -121,7 +121,7 @@ class ChileIdCardConfidence:
 
     @property
     def given_name(self):
-        """Gets the given_name of this ChileIdCardConfidence.
+        r"""Gets the given_name of this ChileIdCardConfidence.
 
         名置信度。 
 
@@ -132,7 +132,7 @@ class ChileIdCardConfidence:
 
     @given_name.setter
     def given_name(self, given_name):
-        """Sets the given_name of this ChileIdCardConfidence.
+        r"""Sets the given_name of this ChileIdCardConfidence.
 
         名置信度。 
 
@@ -143,7 +143,7 @@ class ChileIdCardConfidence:
 
     @property
     def nationality(self):
-        """Gets the nationality of this ChileIdCardConfidence.
+        r"""Gets the nationality of this ChileIdCardConfidence.
 
         国籍置信度。 
 
@@ -154,7 +154,7 @@ class ChileIdCardConfidence:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this ChileIdCardConfidence.
+        r"""Sets the nationality of this ChileIdCardConfidence.
 
         国籍置信度。 
 
@@ -165,7 +165,7 @@ class ChileIdCardConfidence:
 
     @property
     def sex(self):
-        """Gets the sex of this ChileIdCardConfidence.
+        r"""Gets the sex of this ChileIdCardConfidence.
 
         性别置信度。 
 
@@ -176,7 +176,7 @@ class ChileIdCardConfidence:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this ChileIdCardConfidence.
+        r"""Sets the sex of this ChileIdCardConfidence.
 
         性别置信度。 
 
@@ -187,7 +187,7 @@ class ChileIdCardConfidence:
 
     @property
     def birth(self):
-        """Gets the birth of this ChileIdCardConfidence.
+        r"""Gets the birth of this ChileIdCardConfidence.
 
         出生日置信度。 
 
@@ -198,7 +198,7 @@ class ChileIdCardConfidence:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this ChileIdCardConfidence.
+        r"""Sets the birth of this ChileIdCardConfidence.
 
         出生日置信度。 
 
@@ -209,7 +209,7 @@ class ChileIdCardConfidence:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this ChileIdCardConfidence.
+        r"""Gets the issue_date of this ChileIdCardConfidence.
 
         发行日置信度。 
 
@@ -220,7 +220,7 @@ class ChileIdCardConfidence:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this ChileIdCardConfidence.
+        r"""Sets the issue_date of this ChileIdCardConfidence.
 
         发行日置信度。 
 
@@ -231,7 +231,7 @@ class ChileIdCardConfidence:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this ChileIdCardConfidence.
+        r"""Gets the expiry_date of this ChileIdCardConfidence.
 
         有效期置信度。 
 
@@ -242,7 +242,7 @@ class ChileIdCardConfidence:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this ChileIdCardConfidence.
+        r"""Sets the expiry_date of this ChileIdCardConfidence.
 
         有效期置信度。 
 
@@ -253,7 +253,7 @@ class ChileIdCardConfidence:
 
     @property
     def document_number(self):
-        """Gets the document_number of this ChileIdCardConfidence.
+        r"""Gets the document_number of this ChileIdCardConfidence.
 
         文档编号置信度。 
 
@@ -264,7 +264,7 @@ class ChileIdCardConfidence:
 
     @document_number.setter
     def document_number(self, document_number):
-        """Sets the document_number of this ChileIdCardConfidence.
+        r"""Sets the document_number of this ChileIdCardConfidence.
 
         文档编号置信度。 
 
@@ -275,7 +275,7 @@ class ChileIdCardConfidence:
 
     @property
     def number(self):
-        """Gets the number of this ChileIdCardConfidence.
+        r"""Gets the number of this ChileIdCardConfidence.
 
         身份证号置信度。 
 
@@ -286,7 +286,7 @@ class ChileIdCardConfidence:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ChileIdCardConfidence.
+        r"""Sets the number of this ChileIdCardConfidence.
 
         身份证号置信度。 
 

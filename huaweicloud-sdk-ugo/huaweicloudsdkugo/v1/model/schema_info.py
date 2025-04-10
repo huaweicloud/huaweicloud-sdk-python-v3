@@ -27,7 +27,7 @@ class SchemaInfo:
     }
 
     def __init__(self, is_select_all_schemas=None, schemas_list=None):
-        """SchemaInfo
+        r"""SchemaInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SchemaInfo:
 
     @property
     def is_select_all_schemas(self):
-        """Gets the is_select_all_schemas of this SchemaInfo.
+        r"""Gets the is_select_all_schemas of this SchemaInfo.
 
         是否选择全部schema。
 
@@ -60,7 +60,7 @@ class SchemaInfo:
 
     @is_select_all_schemas.setter
     def is_select_all_schemas(self, is_select_all_schemas):
-        """Sets the is_select_all_schemas of this SchemaInfo.
+        r"""Sets the is_select_all_schemas of this SchemaInfo.
 
         是否选择全部schema。
 
@@ -71,7 +71,7 @@ class SchemaInfo:
 
     @property
     def schemas_list(self):
-        """Gets the schemas_list of this SchemaInfo.
+        r"""Gets the schemas_list of this SchemaInfo.
 
         需要评估的源库schema列表。is_select_all_schemas为false时，必填。
 
@@ -82,7 +82,7 @@ class SchemaInfo:
 
     @schemas_list.setter
     def schemas_list(self, schemas_list):
-        """Sets the schemas_list of this SchemaInfo.
+        r"""Sets the schemas_list of this SchemaInfo.
 
         需要评估的源库schema列表。is_select_all_schemas为false时，必填。
 

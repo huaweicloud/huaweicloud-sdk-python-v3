@@ -27,7 +27,7 @@ class WorkTableIssuseListResponseBodyPriority:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkTableIssuseListResponseBodyPriority
+        r"""WorkTableIssuseListResponseBodyPriority
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkTableIssuseListResponseBodyPriority:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyPriority.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyPriority.
 
         工作项优先级id
 
@@ -61,7 +61,7 @@ class WorkTableIssuseListResponseBodyPriority:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyPriority.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyPriority.
 
         工作项优先级id
 
@@ -72,7 +72,7 @@ class WorkTableIssuseListResponseBodyPriority:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodyPriority.
+        r"""Gets the name of this WorkTableIssuseListResponseBodyPriority.
 
         工作项优先级名称
 
@@ -83,7 +83,7 @@ class WorkTableIssuseListResponseBodyPriority:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodyPriority.
+        r"""Sets the name of this WorkTableIssuseListResponseBodyPriority.
 
         工作项优先级名称
 

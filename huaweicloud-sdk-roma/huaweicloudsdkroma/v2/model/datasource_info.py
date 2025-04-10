@@ -33,7 +33,7 @@ class DatasourceInfo:
     }
 
     def __init__(self, datasource_name=None, datasource_type=None, app_id=None, content=None, description=None):
-        """DatasourceInfo
+        r"""DatasourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class DatasourceInfo:
 
     @property
     def datasource_name(self):
-        """Gets the datasource_name of this DatasourceInfo.
+        r"""Gets the datasource_name of this DatasourceInfo.
 
         数据源名称，数据源名称不能包含&、<、>、\"、'、(、) ，长度为1~255字符
 
@@ -78,7 +78,7 @@ class DatasourceInfo:
 
     @datasource_name.setter
     def datasource_name(self, datasource_name):
-        """Sets the datasource_name of this DatasourceInfo.
+        r"""Sets the datasource_name of this DatasourceInfo.
 
         数据源名称，数据源名称不能包含&、<、>、\"、'、(、) ，长度为1~255字符
 
@@ -89,7 +89,7 @@ class DatasourceInfo:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DatasourceInfo.
+        r"""Gets the datasource_type of this DatasourceInfo.
 
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
@@ -100,7 +100,7 @@ class DatasourceInfo:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DatasourceInfo.
+        r"""Sets the datasource_type of this DatasourceInfo.
 
         数据源类型 - DWS - MYSQL - KAFKA - API - OBS - SAP - MRSHBASE - MRSHDFS - MRSHIVE - WEBSOCKET - SQLSERVER - ORACLE - POSTGRESQL - REDIS - MONGODB - DIS - HL7 - RABBITMQ - SNMP - IBMMQ - CUSTOMIZED (自定义类型) - ACTIVEMQ - ARTEMISMQ - FTP - HIVE - HANA - FIKAFKA - MRSKAFKA - FIHDFS - FIHIVE - GAUSS200 - GAUSS100 - LDAP - DB2 - TAURUS
 
@@ -111,7 +111,7 @@ class DatasourceInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DatasourceInfo.
+        r"""Gets the app_id of this DatasourceInfo.
 
         数据源所属应用ID
 
@@ -122,7 +122,7 @@ class DatasourceInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DatasourceInfo.
+        r"""Sets the app_id of this DatasourceInfo.
 
         数据源所属应用ID
 
@@ -133,7 +133,7 @@ class DatasourceInfo:
 
     @property
     def content(self):
-        """Gets the content of this DatasourceInfo.
+        r"""Gets the content of this DatasourceInfo.
 
         :return: The content of this DatasourceInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.Content`
@@ -142,7 +142,7 @@ class DatasourceInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DatasourceInfo.
+        r"""Sets the content of this DatasourceInfo.
 
         :param content: The content of this DatasourceInfo.
         :type content: :class:`huaweicloudsdkroma.v2.Content`
@@ -151,7 +151,7 @@ class DatasourceInfo:
 
     @property
     def description(self):
-        """Gets the description of this DatasourceInfo.
+        r"""Gets the description of this DatasourceInfo.
 
         数据源描述
 
@@ -162,7 +162,7 @@ class DatasourceInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DatasourceInfo.
+        r"""Sets the description of this DatasourceInfo.
 
         数据源描述
 

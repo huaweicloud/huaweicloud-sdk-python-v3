@@ -27,7 +27,7 @@ class ListInstanceOperationsRequest:
     }
 
     def __init__(self, instance_id=None, operation=None):
-        """ListInstanceOperationsRequest
+        r"""ListInstanceOperationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstanceOperationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceOperationsRequest.
+        r"""Gets the instance_id of this ListInstanceOperationsRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ListInstanceOperationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceOperationsRequest.
+        r"""Sets the instance_id of this ListInstanceOperationsRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ListInstanceOperationsRequest:
 
     @property
     def operation(self):
-        """Gets the operation of this ListInstanceOperationsRequest.
+        r"""Gets the operation of this ListInstanceOperationsRequest.
 
         操作信息。
 
@@ -81,7 +81,7 @@ class ListInstanceOperationsRequest:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ListInstanceOperationsRequest.
+        r"""Sets the operation of this ListInstanceOperationsRequest.
 
         操作信息。
 

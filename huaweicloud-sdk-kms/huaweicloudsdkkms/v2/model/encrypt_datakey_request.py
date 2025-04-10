@@ -25,7 +25,7 @@ class EncryptDatakeyRequest:
     }
 
     def __init__(self, body=None):
-        """EncryptDatakeyRequest
+        r"""EncryptDatakeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EncryptDatakeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this EncryptDatakeyRequest.
+        r"""Gets the body of this EncryptDatakeyRequest.
 
         :return: The body of this EncryptDatakeyRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequestBody`
@@ -52,7 +52,7 @@ class EncryptDatakeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EncryptDatakeyRequest.
+        r"""Sets the body of this EncryptDatakeyRequest.
 
         :param body: The body of this EncryptDatakeyRequest.
         :type body: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequestBody`

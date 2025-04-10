@@ -39,7 +39,7 @@ class ListMetricsDataRequest:
     }
 
     def __init__(self, cluster_id=None, metric_name=None, offset=None, limit=None, _from=None, to=None, order_by=None, sort_by=None):
-        """ListMetricsDataRequest
+        r"""ListMetricsDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListMetricsDataRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListMetricsDataRequest.
+        r"""Gets the cluster_id of this ListMetricsDataRequest.
 
         集群ID。
 
@@ -97,7 +97,7 @@ class ListMetricsDataRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListMetricsDataRequest.
+        r"""Sets the cluster_id of this ListMetricsDataRequest.
 
         集群ID。
 
@@ -108,7 +108,7 @@ class ListMetricsDataRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListMetricsDataRequest.
+        r"""Gets the metric_name of this ListMetricsDataRequest.
 
         指标名称。
 
@@ -119,7 +119,7 @@ class ListMetricsDataRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListMetricsDataRequest.
+        r"""Sets the metric_name of this ListMetricsDataRequest.
 
         指标名称。
 
@@ -130,7 +130,7 @@ class ListMetricsDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMetricsDataRequest.
+        r"""Gets the offset of this ListMetricsDataRequest.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -141,7 +141,7 @@ class ListMetricsDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMetricsDataRequest.
+        r"""Sets the offset of this ListMetricsDataRequest.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -152,7 +152,7 @@ class ListMetricsDataRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetricsDataRequest.
+        r"""Gets the limit of this ListMetricsDataRequest.
 
         每页显示的条目数量，最大1000。
 
@@ -163,7 +163,7 @@ class ListMetricsDataRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetricsDataRequest.
+        r"""Sets the limit of this ListMetricsDataRequest.
 
         每页显示的条目数量，最大1000。
 
@@ -174,7 +174,7 @@ class ListMetricsDataRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListMetricsDataRequest.
+        r"""Gets the _from of this ListMetricsDataRequest.
 
         采集开始时间，13位时间戳。
 
@@ -185,7 +185,7 @@ class ListMetricsDataRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListMetricsDataRequest.
+        r"""Sets the _from of this ListMetricsDataRequest.
 
         采集开始时间，13位时间戳。
 
@@ -196,7 +196,7 @@ class ListMetricsDataRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListMetricsDataRequest.
+        r"""Gets the to of this ListMetricsDataRequest.
 
         采集结束时间，13位时间戳。开始时间到结束时间最多不超过一天。
 
@@ -207,7 +207,7 @@ class ListMetricsDataRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListMetricsDataRequest.
+        r"""Sets the to of this ListMetricsDataRequest.
 
         采集结束时间，13位时间戳。开始时间到结束时间最多不超过一天。
 
@@ -218,7 +218,7 @@ class ListMetricsDataRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListMetricsDataRequest.
+        r"""Gets the order_by of this ListMetricsDataRequest.
 
         排序字段。固定取值。 ctime：采集时间。
 
@@ -229,7 +229,7 @@ class ListMetricsDataRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListMetricsDataRequest.
+        r"""Sets the order_by of this ListMetricsDataRequest.
 
         排序字段。固定取值。 ctime：采集时间。
 
@@ -240,7 +240,7 @@ class ListMetricsDataRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListMetricsDataRequest.
+        r"""Gets the sort_by of this ListMetricsDataRequest.
 
         正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
 
@@ -251,7 +251,7 @@ class ListMetricsDataRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListMetricsDataRequest.
+        r"""Sets the sort_by of this ListMetricsDataRequest.
 
         正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
 

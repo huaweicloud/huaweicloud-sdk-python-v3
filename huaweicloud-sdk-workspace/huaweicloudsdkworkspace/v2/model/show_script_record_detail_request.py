@@ -25,7 +25,7 @@ class ShowScriptRecordDetailRequest:
     }
 
     def __init__(self, record_id=None):
-        """ShowScriptRecordDetailRequest
+        r"""ShowScriptRecordDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScriptRecordDetailRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ShowScriptRecordDetailRequest.
+        r"""Gets the record_id of this ShowScriptRecordDetailRequest.
 
         脚本执行记录ID。
 
@@ -53,7 +53,7 @@ class ShowScriptRecordDetailRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ShowScriptRecordDetailRequest.
+        r"""Sets the record_id of this ShowScriptRecordDetailRequest.
 
         脚本执行记录ID。
 

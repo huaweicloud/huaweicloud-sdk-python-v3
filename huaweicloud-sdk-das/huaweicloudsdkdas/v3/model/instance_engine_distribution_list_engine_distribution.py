@@ -29,7 +29,7 @@ class InstanceEngineDistributionListEngineDistribution:
     }
 
     def __init__(self, datastore_type=None, total=None, instance_infos=None):
-        """InstanceEngineDistributionListEngineDistribution
+        r"""InstanceEngineDistributionListEngineDistribution
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceEngineDistributionListEngineDistribution:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this InstanceEngineDistributionListEngineDistribution.
+        r"""Gets the datastore_type of this InstanceEngineDistributionListEngineDistribution.
 
         数据库类型
 
@@ -68,7 +68,7 @@ class InstanceEngineDistributionListEngineDistribution:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this InstanceEngineDistributionListEngineDistribution.
+        r"""Sets the datastore_type of this InstanceEngineDistributionListEngineDistribution.
 
         数据库类型
 
@@ -79,7 +79,7 @@ class InstanceEngineDistributionListEngineDistribution:
 
     @property
     def total(self):
-        """Gets the total of this InstanceEngineDistributionListEngineDistribution.
+        r"""Gets the total of this InstanceEngineDistributionListEngineDistribution.
 
         总数
 
@@ -90,7 +90,7 @@ class InstanceEngineDistributionListEngineDistribution:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this InstanceEngineDistributionListEngineDistribution.
+        r"""Sets the total of this InstanceEngineDistributionListEngineDistribution.
 
         总数
 
@@ -101,7 +101,7 @@ class InstanceEngineDistributionListEngineDistribution:
 
     @property
     def instance_infos(self):
-        """Gets the instance_infos of this InstanceEngineDistributionListEngineDistribution.
+        r"""Gets the instance_infos of this InstanceEngineDistributionListEngineDistribution.
 
         实例信息
 
@@ -112,7 +112,7 @@ class InstanceEngineDistributionListEngineDistribution:
 
     @instance_infos.setter
     def instance_infos(self, instance_infos):
-        """Sets the instance_infos of this InstanceEngineDistributionListEngineDistribution.
+        r"""Sets the instance_infos of this InstanceEngineDistributionListEngineDistribution.
 
         实例信息
 

@@ -27,7 +27,7 @@ class ExecuteRedistributionClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ExecuteRedistributionClusterRequest
+        r"""ExecuteRedistributionClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteRedistributionClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExecuteRedistributionClusterRequest.
+        r"""Gets the cluster_id of this ExecuteRedistributionClusterRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ExecuteRedistributionClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExecuteRedistributionClusterRequest.
+        r"""Sets the cluster_id of this ExecuteRedistributionClusterRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ExecuteRedistributionClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteRedistributionClusterRequest.
+        r"""Gets the body of this ExecuteRedistributionClusterRequest.
 
         :return: The body of this ExecuteRedistributionClusterRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.RedistributionReq`
@@ -80,7 +80,7 @@ class ExecuteRedistributionClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteRedistributionClusterRequest.
+        r"""Sets the body of this ExecuteRedistributionClusterRequest.
 
         :param body: The body of this ExecuteRedistributionClusterRequest.
         :type body: :class:`huaweicloudsdkdws.v2.RedistributionReq`

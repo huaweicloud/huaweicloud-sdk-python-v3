@@ -30,7 +30,7 @@ class ListLogHistogramResponse(SdkResponse):
     }
 
     def __init__(self, histogram=None, count=None, is_query_complete=None):
-        """ListLogHistogramResponse
+        r"""ListLogHistogramResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLogHistogramResponse(SdkResponse):
 
     @property
     def histogram(self):
-        """Gets the histogram of this ListLogHistogramResponse.
+        r"""Gets the histogram of this ListLogHistogramResponse.
 
         直方图结果
 
@@ -69,7 +69,7 @@ class ListLogHistogramResponse(SdkResponse):
 
     @histogram.setter
     def histogram(self, histogram):
-        """Sets the histogram of this ListLogHistogramResponse.
+        r"""Sets the histogram of this ListLogHistogramResponse.
 
         直方图结果
 
@@ -80,7 +80,7 @@ class ListLogHistogramResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLogHistogramResponse.
+        r"""Gets the count of this ListLogHistogramResponse.
 
         日志条数
 
@@ -91,7 +91,7 @@ class ListLogHistogramResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLogHistogramResponse.
+        r"""Sets the count of this ListLogHistogramResponse.
 
         日志条数
 
@@ -102,7 +102,7 @@ class ListLogHistogramResponse(SdkResponse):
 
     @property
     def is_query_complete(self):
-        """Gets the is_query_complete of this ListLogHistogramResponse.
+        r"""Gets the is_query_complete of this ListLogHistogramResponse.
 
         是否查询完成。
 
@@ -113,7 +113,7 @@ class ListLogHistogramResponse(SdkResponse):
 
     @is_query_complete.setter
     def is_query_complete(self, is_query_complete):
-        """Sets the is_query_complete of this ListLogHistogramResponse.
+        r"""Sets the is_query_complete of this ListLogHistogramResponse.
 
         是否查询完成。
 

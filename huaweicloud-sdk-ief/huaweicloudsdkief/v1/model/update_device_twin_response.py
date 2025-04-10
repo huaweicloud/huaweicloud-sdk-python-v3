@@ -28,7 +28,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
     }
 
     def __init__(self, property_visitors=None, twin=None):
-        """UpdateDeviceTwinResponse
+        r"""UpdateDeviceTwinResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this UpdateDeviceTwinResponse.
+        r"""Gets the property_visitors of this UpdateDeviceTwinResponse.
 
         孪生属性配置
 
@@ -62,7 +62,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this UpdateDeviceTwinResponse.
+        r"""Sets the property_visitors of this UpdateDeviceTwinResponse.
 
         孪生属性配置
 
@@ -73,7 +73,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
     @property
     def twin(self):
-        """Gets the twin of this UpdateDeviceTwinResponse.
+        r"""Gets the twin of this UpdateDeviceTwinResponse.
 
         终端设备动态属性
 
@@ -84,7 +84,7 @@ class UpdateDeviceTwinResponse(SdkResponse):
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this UpdateDeviceTwinResponse.
+        r"""Sets the twin of this UpdateDeviceTwinResponse.
 
         终端设备动态属性
 

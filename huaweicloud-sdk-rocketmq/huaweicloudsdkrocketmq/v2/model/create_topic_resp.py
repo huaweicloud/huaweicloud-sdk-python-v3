@@ -25,7 +25,7 @@ class CreateTopicResp:
     }
 
     def __init__(self, id=None):
-        """CreateTopicResp
+        r"""CreateTopicResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTopicResp:
 
     @property
     def id(self):
-        """Gets the id of this CreateTopicResp.
+        r"""Gets the id of this CreateTopicResp.
 
         主题名称。
 
@@ -54,7 +54,7 @@ class CreateTopicResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTopicResp.
+        r"""Sets the id of this CreateTopicResp.
 
         主题名称。
 

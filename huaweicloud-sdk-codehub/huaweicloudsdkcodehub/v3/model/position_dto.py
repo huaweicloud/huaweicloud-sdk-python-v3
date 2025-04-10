@@ -39,7 +39,7 @@ class PositionDto:
     }
 
     def __init__(self, base_sha=None, start_sha=None, head_sha=None, old_path=None, new_path=None, position_type=None, old_line=None, new_line=None):
-        """PositionDto
+        r"""PositionDto
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PositionDto:
 
     @property
     def base_sha(self):
-        """Gets the base_sha of this PositionDto.
+        r"""Gets the base_sha of this PositionDto.
 
         源分支base提交节点
 
@@ -103,7 +103,7 @@ class PositionDto:
 
     @base_sha.setter
     def base_sha(self, base_sha):
-        """Sets the base_sha of this PositionDto.
+        r"""Sets the base_sha of this PositionDto.
 
         源分支base提交节点
 
@@ -114,7 +114,7 @@ class PositionDto:
 
     @property
     def start_sha(self):
-        """Gets the start_sha of this PositionDto.
+        r"""Gets the start_sha of this PositionDto.
 
         目标分支最新提交节点
 
@@ -125,7 +125,7 @@ class PositionDto:
 
     @start_sha.setter
     def start_sha(self, start_sha):
-        """Sets the start_sha of this PositionDto.
+        r"""Sets the start_sha of this PositionDto.
 
         目标分支最新提交节点
 
@@ -136,7 +136,7 @@ class PositionDto:
 
     @property
     def head_sha(self):
-        """Gets the head_sha of this PositionDto.
+        r"""Gets the head_sha of this PositionDto.
 
         源分支最新提交节点
 
@@ -147,7 +147,7 @@ class PositionDto:
 
     @head_sha.setter
     def head_sha(self, head_sha):
-        """Sets the head_sha of this PositionDto.
+        r"""Sets the head_sha of this PositionDto.
 
         源分支最新提交节点
 
@@ -158,7 +158,7 @@ class PositionDto:
 
     @property
     def old_path(self):
-        """Gets the old_path of this PositionDto.
+        r"""Gets the old_path of this PositionDto.
 
         修改前文件路径
 
@@ -169,7 +169,7 @@ class PositionDto:
 
     @old_path.setter
     def old_path(self, old_path):
-        """Sets the old_path of this PositionDto.
+        r"""Sets the old_path of this PositionDto.
 
         修改前文件路径
 
@@ -180,7 +180,7 @@ class PositionDto:
 
     @property
     def new_path(self):
-        """Gets the new_path of this PositionDto.
+        r"""Gets the new_path of this PositionDto.
 
         修改后文件路径
 
@@ -191,7 +191,7 @@ class PositionDto:
 
     @new_path.setter
     def new_path(self, new_path):
-        """Sets the new_path of this PositionDto.
+        r"""Sets the new_path of this PositionDto.
 
         修改后文件路径
 
@@ -202,7 +202,7 @@ class PositionDto:
 
     @property
     def position_type(self):
-        """Gets the position_type of this PositionDto.
+        r"""Gets the position_type of this PositionDto.
 
         变更类型
 
@@ -213,7 +213,7 @@ class PositionDto:
 
     @position_type.setter
     def position_type(self, position_type):
-        """Sets the position_type of this PositionDto.
+        r"""Sets the position_type of this PositionDto.
 
         变更类型
 
@@ -224,7 +224,7 @@ class PositionDto:
 
     @property
     def old_line(self):
-        """Gets the old_line of this PositionDto.
+        r"""Gets the old_line of this PositionDto.
 
         修改前行号
 
@@ -235,7 +235,7 @@ class PositionDto:
 
     @old_line.setter
     def old_line(self, old_line):
-        """Sets the old_line of this PositionDto.
+        r"""Sets the old_line of this PositionDto.
 
         修改前行号
 
@@ -246,7 +246,7 @@ class PositionDto:
 
     @property
     def new_line(self):
-        """Gets the new_line of this PositionDto.
+        r"""Gets the new_line of this PositionDto.
 
         修改后行号
 
@@ -257,7 +257,7 @@ class PositionDto:
 
     @new_line.setter
     def new_line(self, new_line):
-        """Sets the new_line of this PositionDto.
+        r"""Sets the new_line of this PositionDto.
 
         修改后行号
 

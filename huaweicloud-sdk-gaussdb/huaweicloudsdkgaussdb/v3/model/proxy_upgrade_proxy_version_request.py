@@ -27,7 +27,7 @@ class ProxyUpgradeProxyVersionRequest:
     }
 
     def __init__(self, source_version=None, target_version=None):
-        """ProxyUpgradeProxyVersionRequest
+        r"""ProxyUpgradeProxyVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProxyUpgradeProxyVersionRequest:
 
     @property
     def source_version(self):
-        """Gets the source_version of this ProxyUpgradeProxyVersionRequest.
+        r"""Gets the source_version of this ProxyUpgradeProxyVersionRequest.
 
         升级前源内核版本号
 
@@ -59,7 +59,7 @@ class ProxyUpgradeProxyVersionRequest:
 
     @source_version.setter
     def source_version(self, source_version):
-        """Sets the source_version of this ProxyUpgradeProxyVersionRequest.
+        r"""Sets the source_version of this ProxyUpgradeProxyVersionRequest.
 
         升级前源内核版本号
 
@@ -70,7 +70,7 @@ class ProxyUpgradeProxyVersionRequest:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ProxyUpgradeProxyVersionRequest.
+        r"""Gets the target_version of this ProxyUpgradeProxyVersionRequest.
 
         目标升级内核版本号
 
@@ -81,7 +81,7 @@ class ProxyUpgradeProxyVersionRequest:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ProxyUpgradeProxyVersionRequest.
+        r"""Sets the target_version of this ProxyUpgradeProxyVersionRequest.
 
         目标升级内核版本号
 

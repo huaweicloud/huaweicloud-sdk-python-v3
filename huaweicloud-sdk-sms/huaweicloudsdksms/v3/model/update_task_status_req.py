@@ -31,7 +31,7 @@ class UpdateTaskStatusReq:
     }
 
     def __init__(self, operation=None, template_id=None, switch_hce=None, is_need_consistency_check=None):
-        """UpdateTaskStatusReq
+        r"""UpdateTaskStatusReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateTaskStatusReq:
 
     @property
     def operation(self):
-        """Gets the operation of this UpdateTaskStatusReq.
+        r"""Gets the operation of this UpdateTaskStatusReq.
 
         操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源
 
@@ -74,7 +74,7 @@ class UpdateTaskStatusReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this UpdateTaskStatusReq.
+        r"""Sets the operation of this UpdateTaskStatusReq.
 
         操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源
 
@@ -85,7 +85,7 @@ class UpdateTaskStatusReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateTaskStatusReq.
+        r"""Gets the template_id of this UpdateTaskStatusReq.
 
         模板id
 
@@ -96,7 +96,7 @@ class UpdateTaskStatusReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateTaskStatusReq.
+        r"""Sets the template_id of this UpdateTaskStatusReq.
 
         模板id
 
@@ -107,7 +107,7 @@ class UpdateTaskStatusReq:
 
     @property
     def switch_hce(self):
-        """Gets the switch_hce of this UpdateTaskStatusReq.
+        r"""Gets the switch_hce of this UpdateTaskStatusReq.
 
         是否切换hce
 
@@ -118,7 +118,7 @@ class UpdateTaskStatusReq:
 
     @switch_hce.setter
     def switch_hce(self, switch_hce):
-        """Sets the switch_hce of this UpdateTaskStatusReq.
+        r"""Sets the switch_hce of this UpdateTaskStatusReq.
 
         是否切换hce
 
@@ -129,7 +129,7 @@ class UpdateTaskStatusReq:
 
     @property
     def is_need_consistency_check(self):
-        """Gets the is_need_consistency_check of this UpdateTaskStatusReq.
+        r"""Gets the is_need_consistency_check of this UpdateTaskStatusReq.
 
         是否进行一致性校验
 
@@ -140,7 +140,7 @@ class UpdateTaskStatusReq:
 
     @is_need_consistency_check.setter
     def is_need_consistency_check(self, is_need_consistency_check):
-        """Sets the is_need_consistency_check of this UpdateTaskStatusReq.
+        r"""Sets the is_need_consistency_check of this UpdateTaskStatusReq.
 
         是否进行一致性校验
 

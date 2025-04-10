@@ -28,7 +28,7 @@ class ShowAccountStatusResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ShowAccountStatusResponse
+        r"""ShowAccountStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAccountStatusResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowAccountStatusResponse.
+        r"""Gets the result of this ShowAccountStatusResponse.
 
         :return: The result of this ShowAccountStatusResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.AccountStatus`
@@ -60,7 +60,7 @@ class ShowAccountStatusResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowAccountStatusResponse.
+        r"""Sets the result of this ShowAccountStatusResponse.
 
         :param result: The result of this ShowAccountStatusResponse.
         :type result: :class:`huaweicloudsdkcloudide.v2.AccountStatus`
@@ -69,7 +69,7 @@ class ShowAccountStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAccountStatusResponse.
+        r"""Gets the status of this ShowAccountStatusResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class ShowAccountStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAccountStatusResponse.
+        r"""Sets the status of this ShowAccountStatusResponse.
 
         状态
 

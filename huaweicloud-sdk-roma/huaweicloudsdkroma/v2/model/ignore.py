@@ -27,7 +27,7 @@ class Ignore:
     }
 
     def __init__(self, method=None, path=None):
-        """Ignore
+        r"""Ignore
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Ignore:
 
     @property
     def method(self):
-        """Gets the method of this Ignore.
+        r"""Gets the method of this Ignore.
 
         API请求方法
 
@@ -61,7 +61,7 @@ class Ignore:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this Ignore.
+        r"""Sets the method of this Ignore.
 
         API请求方法
 
@@ -72,7 +72,7 @@ class Ignore:
 
     @property
     def path(self):
-        """Gets the path of this Ignore.
+        r"""Gets the path of this Ignore.
 
         API请求路径
 
@@ -83,7 +83,7 @@ class Ignore:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Ignore.
+        r"""Sets the path of this Ignore.
 
         API请求路径
 

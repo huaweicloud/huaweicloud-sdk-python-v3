@@ -35,7 +35,7 @@ class ShowDirtyDataRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ShowDirtyDataRequest
+        r"""ShowDirtyDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowDirtyDataRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDirtyDataRequest.
+        r"""Gets the x_language of this ShowDirtyDataRequest.
 
         请求语言类型。
 
@@ -88,7 +88,7 @@ class ShowDirtyDataRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDirtyDataRequest.
+        r"""Sets the x_language of this ShowDirtyDataRequest.
 
         请求语言类型。
 
@@ -99,7 +99,7 @@ class ShowDirtyDataRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDirtyDataRequest.
+        r"""Gets the job_id of this ShowDirtyDataRequest.
 
         任务ID。
 
@@ -110,7 +110,7 @@ class ShowDirtyDataRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDirtyDataRequest.
+        r"""Sets the job_id of this ShowDirtyDataRequest.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class ShowDirtyDataRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowDirtyDataRequest.
+        r"""Gets the begin_time of this ShowDirtyDataRequest.
 
         开始时间，UTC时间，例如：2020-09-01T18:50:20Z
 
@@ -132,7 +132,7 @@ class ShowDirtyDataRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowDirtyDataRequest.
+        r"""Sets the begin_time of this ShowDirtyDataRequest.
 
         开始时间，UTC时间，例如：2020-09-01T18:50:20Z
 
@@ -143,7 +143,7 @@ class ShowDirtyDataRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowDirtyDataRequest.
+        r"""Gets the end_time of this ShowDirtyDataRequest.
 
         结束时间，UTC时间，例如：2020-09-01T19:50:20Z
 
@@ -154,7 +154,7 @@ class ShowDirtyDataRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowDirtyDataRequest.
+        r"""Sets the end_time of this ShowDirtyDataRequest.
 
         结束时间，UTC时间，例如：2020-09-01T19:50:20Z
 
@@ -165,7 +165,7 @@ class ShowDirtyDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDirtyDataRequest.
+        r"""Gets the offset of this ShowDirtyDataRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -176,7 +176,7 @@ class ShowDirtyDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDirtyDataRequest.
+        r"""Sets the offset of this ShowDirtyDataRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -187,7 +187,7 @@ class ShowDirtyDataRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDirtyDataRequest.
+        r"""Gets the limit of this ShowDirtyDataRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -198,7 +198,7 @@ class ShowDirtyDataRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDirtyDataRequest.
+        r"""Sets the limit of this ShowDirtyDataRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 

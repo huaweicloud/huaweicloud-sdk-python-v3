@@ -29,7 +29,7 @@ class ChangeOsOption:
     }
 
     def __init__(self, image_id=None, metadata=None, key_name=None):
-        """ChangeOsOption
+        r"""ChangeOsOption
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeOsOption:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ChangeOsOption.
+        r"""Gets the image_id of this ChangeOsOption.
 
         切换系统所使用的新镜像的ID。
 
@@ -67,7 +67,7 @@ class ChangeOsOption:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ChangeOsOption.
+        r"""Sets the image_id of this ChangeOsOption.
 
         切换系统所使用的新镜像的ID。
 
@@ -78,7 +78,7 @@ class ChangeOsOption:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ChangeOsOption.
+        r"""Gets the metadata of this ChangeOsOption.
 
         :return: The metadata of this ChangeOsOption.
         :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`
@@ -87,7 +87,7 @@ class ChangeOsOption:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ChangeOsOption.
+        r"""Sets the metadata of this ChangeOsOption.
 
         :param metadata: The metadata of this ChangeOsOption.
         :type metadata: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`
@@ -96,7 +96,7 @@ class ChangeOsOption:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ChangeOsOption.
+        r"""Gets the key_name of this ChangeOsOption.
 
         密钥对名称。 如果需要使用SSH密钥方式登录边缘实例，请指定已创建密钥的名称。
 
@@ -107,7 +107,7 @@ class ChangeOsOption:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ChangeOsOption.
+        r"""Sets the key_name of this ChangeOsOption.
 
         密钥对名称。 如果需要使用SSH密钥方式登录边缘实例，请指定已创建密钥的名称。
 

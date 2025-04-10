@@ -24,7 +24,7 @@ class RemoveEngressEipV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """RemoveEngressEipV2Response
+        r"""RemoveEngressEipV2Response
 
         The model defined in huaweicloud sdk
 

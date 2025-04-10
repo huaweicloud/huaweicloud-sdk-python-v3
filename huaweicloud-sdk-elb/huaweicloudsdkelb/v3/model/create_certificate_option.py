@@ -47,7 +47,7 @@ class CreateCertificateOption:
     }
 
     def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None):
-        """CreateCertificateOption
+        r"""CreateCertificateOption
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CreateCertificateOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateCertificateOption.
+        r"""Gets the admin_state_up of this CreateCertificateOption.
 
         证书的管理状态。  不支持该字段，请勿使用。
 
@@ -131,7 +131,7 @@ class CreateCertificateOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateCertificateOption.
+        r"""Sets the admin_state_up of this CreateCertificateOption.
 
         证书的管理状态。  不支持该字段，请勿使用。
 
@@ -142,7 +142,7 @@ class CreateCertificateOption:
 
     @property
     def certificate(self):
-        """Gets the certificate of this CreateCertificateOption.
+        r"""Gets the certificate of this CreateCertificateOption.
 
         HTTPS协议使用的证书内容。 取值范围：PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
 
@@ -153,7 +153,7 @@ class CreateCertificateOption:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this CreateCertificateOption.
+        r"""Sets the certificate of this CreateCertificateOption.
 
         HTTPS协议使用的证书内容。 取值范围：PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
 
@@ -164,7 +164,7 @@ class CreateCertificateOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateCertificateOption.
+        r"""Gets the description of this CreateCertificateOption.
 
         证书的描述。
 
@@ -175,7 +175,7 @@ class CreateCertificateOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCertificateOption.
+        r"""Sets the description of this CreateCertificateOption.
 
         证书的描述。
 
@@ -186,7 +186,7 @@ class CreateCertificateOption:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateCertificateOption.
+        r"""Gets the domain of this CreateCertificateOption.
 
         服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
@@ -197,7 +197,7 @@ class CreateCertificateOption:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateCertificateOption.
+        r"""Sets the domain of this CreateCertificateOption.
 
         服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
@@ -208,7 +208,7 @@ class CreateCertificateOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateCertificateOption.
+        r"""Gets the name of this CreateCertificateOption.
 
         证书的名称。
 
@@ -219,7 +219,7 @@ class CreateCertificateOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCertificateOption.
+        r"""Sets the name of this CreateCertificateOption.
 
         证书的名称。
 
@@ -230,7 +230,7 @@ class CreateCertificateOption:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CreateCertificateOption.
+        r"""Gets the private_key of this CreateCertificateOption.
 
         HTTPS协议使用的私钥。当type为server时有效且必选。当type为client时，可以传或也可以不传，但都会被忽略；若传入则必须符合PEM格式。 取值范围：PEM编码格式。 最大长度8192字符。
 
@@ -241,7 +241,7 @@ class CreateCertificateOption:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CreateCertificateOption.
+        r"""Sets the private_key of this CreateCertificateOption.
 
         HTTPS协议使用的私钥。当type为server时有效且必选。当type为client时，可以传或也可以不传，但都会被忽略；若传入则必须符合PEM格式。 取值范围：PEM编码格式。 最大长度8192字符。
 
@@ -252,7 +252,7 @@ class CreateCertificateOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateCertificateOption.
+        r"""Gets the project_id of this CreateCertificateOption.
 
         证书所在的项目ID。
 
@@ -263,7 +263,7 @@ class CreateCertificateOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateCertificateOption.
+        r"""Sets the project_id of this CreateCertificateOption.
 
         证书所在的项目ID。
 
@@ -274,7 +274,7 @@ class CreateCertificateOption:
 
     @property
     def type(self):
-        """Gets the type of this CreateCertificateOption.
+        r"""Gets the type of this CreateCertificateOption.
 
         SSL证书的类型。分为服务器证书(server)、CA证书(client)。 默认值：server
 
@@ -285,7 +285,7 @@ class CreateCertificateOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCertificateOption.
+        r"""Sets the type of this CreateCertificateOption.
 
         SSL证书的类型。分为服务器证书(server)、CA证书(client)。 默认值：server
 
@@ -296,7 +296,7 @@ class CreateCertificateOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateOption.
+        r"""Gets the enterprise_project_id of this CreateCertificateOption.
 
         证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -307,7 +307,7 @@ class CreateCertificateOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateOption.
+        r"""Sets the enterprise_project_id of this CreateCertificateOption.
 
         证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -318,7 +318,7 @@ class CreateCertificateOption:
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this CreateCertificateOption.
+        r"""Gets the enc_certificate of this CreateCertificateOption.
 
         HTTPS协议使用的SM加密证书内容。支持证书链，最大11层(含证书和证书链)。  取值：PEM编码格式。最大长度65536字符。  使用说明：仅type为server_sm时有效且必选。
 
@@ -329,7 +329,7 @@ class CreateCertificateOption:
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this CreateCertificateOption.
+        r"""Sets the enc_certificate of this CreateCertificateOption.
 
         HTTPS协议使用的SM加密证书内容。支持证书链，最大11层(含证书和证书链)。  取值：PEM编码格式。最大长度65536字符。  使用说明：仅type为server_sm时有效且必选。
 
@@ -340,7 +340,7 @@ class CreateCertificateOption:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this CreateCertificateOption.
+        r"""Gets the enc_private_key of this CreateCertificateOption.
 
         HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。最大长度8192字符。  使用说明：仅type为server_sm时有效且必选。
 
@@ -351,7 +351,7 @@ class CreateCertificateOption:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this CreateCertificateOption.
+        r"""Sets the enc_private_key of this CreateCertificateOption.
 
         HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。最大长度8192字符。  使用说明：仅type为server_sm时有效且必选。
 
@@ -362,7 +362,7 @@ class CreateCertificateOption:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this CreateCertificateOption.
+        r"""Gets the scm_certificate_id of this CreateCertificateOption.
 
         SM证书ID。
 
@@ -373,7 +373,7 @@ class CreateCertificateOption:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this CreateCertificateOption.
+        r"""Sets the scm_certificate_id of this CreateCertificateOption.
 
         SM证书ID。
 

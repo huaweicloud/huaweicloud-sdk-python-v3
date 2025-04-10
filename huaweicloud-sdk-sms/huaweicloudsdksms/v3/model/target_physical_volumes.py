@@ -45,7 +45,7 @@ class TargetPhysicalVolumes:
     }
 
     def __init__(self, id=None, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, uuid=None, relation_name=None, free_size=None):
-        """TargetPhysicalVolumes
+        r"""TargetPhysicalVolumes
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TargetPhysicalVolumes:
 
     @property
     def id(self):
-        """Gets the id of this TargetPhysicalVolumes.
+        r"""Gets the id of this TargetPhysicalVolumes.
 
         逻辑卷ID
 
@@ -124,7 +124,7 @@ class TargetPhysicalVolumes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TargetPhysicalVolumes.
+        r"""Sets the id of this TargetPhysicalVolumes.
 
         逻辑卷ID
 
@@ -135,7 +135,7 @@ class TargetPhysicalVolumes:
 
     @property
     def device_use(self):
-        """Gets the device_use of this TargetPhysicalVolumes.
+        r"""Gets the device_use of this TargetPhysicalVolumes.
 
         分区类型 NORMAL:平常 OS：系统设备 BOOT：BOOT设备
 
@@ -146,7 +146,7 @@ class TargetPhysicalVolumes:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this TargetPhysicalVolumes.
+        r"""Sets the device_use of this TargetPhysicalVolumes.
 
         分区类型 NORMAL:平常 OS：系统设备 BOOT：BOOT设备
 
@@ -157,7 +157,7 @@ class TargetPhysicalVolumes:
 
     @property
     def file_system(self):
-        """Gets the file_system of this TargetPhysicalVolumes.
+        r"""Gets the file_system of this TargetPhysicalVolumes.
 
         文件系统
 
@@ -168,7 +168,7 @@ class TargetPhysicalVolumes:
 
     @file_system.setter
     def file_system(self, file_system):
-        """Sets the file_system of this TargetPhysicalVolumes.
+        r"""Sets the file_system of this TargetPhysicalVolumes.
 
         文件系统
 
@@ -179,7 +179,7 @@ class TargetPhysicalVolumes:
 
     @property
     def index(self):
-        """Gets the index of this TargetPhysicalVolumes.
+        r"""Gets the index of this TargetPhysicalVolumes.
 
         编号
 
@@ -190,7 +190,7 @@ class TargetPhysicalVolumes:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TargetPhysicalVolumes.
+        r"""Sets the index of this TargetPhysicalVolumes.
 
         编号
 
@@ -201,7 +201,7 @@ class TargetPhysicalVolumes:
 
     @property
     def mount_point(self):
-        """Gets the mount_point of this TargetPhysicalVolumes.
+        r"""Gets the mount_point of this TargetPhysicalVolumes.
 
         挂载点
 
@@ -212,7 +212,7 @@ class TargetPhysicalVolumes:
 
     @mount_point.setter
     def mount_point(self, mount_point):
-        """Sets the mount_point of this TargetPhysicalVolumes.
+        r"""Sets the mount_point of this TargetPhysicalVolumes.
 
         挂载点
 
@@ -223,7 +223,7 @@ class TargetPhysicalVolumes:
 
     @property
     def name(self):
-        """Gets the name of this TargetPhysicalVolumes.
+        r"""Gets the name of this TargetPhysicalVolumes.
 
         名称
 
@@ -234,7 +234,7 @@ class TargetPhysicalVolumes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetPhysicalVolumes.
+        r"""Sets the name of this TargetPhysicalVolumes.
 
         名称
 
@@ -245,7 +245,7 @@ class TargetPhysicalVolumes:
 
     @property
     def size(self):
-        """Gets the size of this TargetPhysicalVolumes.
+        r"""Gets the size of this TargetPhysicalVolumes.
 
         大小
 
@@ -256,7 +256,7 @@ class TargetPhysicalVolumes:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this TargetPhysicalVolumes.
+        r"""Sets the size of this TargetPhysicalVolumes.
 
         大小
 
@@ -267,7 +267,7 @@ class TargetPhysicalVolumes:
 
     @property
     def used_size(self):
-        """Gets the used_size of this TargetPhysicalVolumes.
+        r"""Gets the used_size of this TargetPhysicalVolumes.
 
         使用大小
 
@@ -278,7 +278,7 @@ class TargetPhysicalVolumes:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this TargetPhysicalVolumes.
+        r"""Sets the used_size of this TargetPhysicalVolumes.
 
         使用大小
 
@@ -289,7 +289,7 @@ class TargetPhysicalVolumes:
 
     @property
     def uuid(self):
-        """Gets the uuid of this TargetPhysicalVolumes.
+        r"""Gets the uuid of this TargetPhysicalVolumes.
 
         uuid
 
@@ -300,7 +300,7 @@ class TargetPhysicalVolumes:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this TargetPhysicalVolumes.
+        r"""Sets the uuid of this TargetPhysicalVolumes.
 
         uuid
 
@@ -311,7 +311,7 @@ class TargetPhysicalVolumes:
 
     @property
     def relation_name(self):
-        """Gets the relation_name of this TargetPhysicalVolumes.
+        r"""Gets the relation_name of this TargetPhysicalVolumes.
 
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
@@ -322,7 +322,7 @@ class TargetPhysicalVolumes:
 
     @relation_name.setter
     def relation_name(self, relation_name):
-        """Sets the relation_name of this TargetPhysicalVolumes.
+        r"""Sets the relation_name of this TargetPhysicalVolumes.
 
         Linux系统 目的端ECS中与源端关联的磁盘名称
 
@@ -333,7 +333,7 @@ class TargetPhysicalVolumes:
 
     @property
     def free_size(self):
-        """Gets the free_size of this TargetPhysicalVolumes.
+        r"""Gets the free_size of this TargetPhysicalVolumes.
 
         分区空闲大小
 
@@ -344,7 +344,7 @@ class TargetPhysicalVolumes:
 
     @free_size.setter
     def free_size(self, free_size):
-        """Sets the free_size of this TargetPhysicalVolumes.
+        r"""Sets the free_size of this TargetPhysicalVolumes.
 
         分区空闲大小
 

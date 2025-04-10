@@ -31,7 +31,7 @@ class InstanceSnapshotView:
     }
 
     def __init__(self, create_time=None, description=None, instance_id=None, version=None):
-        """InstanceSnapshotView
+        r"""InstanceSnapshotView
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InstanceSnapshotView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InstanceSnapshotView.
+        r"""Gets the create_time of this InstanceSnapshotView.
 
         创建时间。
 
@@ -75,7 +75,7 @@ class InstanceSnapshotView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InstanceSnapshotView.
+        r"""Sets the create_time of this InstanceSnapshotView.
 
         创建时间。
 
@@ -86,7 +86,7 @@ class InstanceSnapshotView:
 
     @property
     def description(self):
-        """Gets the description of this InstanceSnapshotView.
+        r"""Gets the description of this InstanceSnapshotView.
 
         描述。
 
@@ -97,7 +97,7 @@ class InstanceSnapshotView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceSnapshotView.
+        r"""Sets the description of this InstanceSnapshotView.
 
         描述。
 
@@ -108,7 +108,7 @@ class InstanceSnapshotView:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceSnapshotView.
+        r"""Gets the instance_id of this InstanceSnapshotView.
 
         应用组件实例ID。
 
@@ -119,7 +119,7 @@ class InstanceSnapshotView:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceSnapshotView.
+        r"""Sets the instance_id of this InstanceSnapshotView.
 
         应用组件实例ID。
 
@@ -130,7 +130,7 @@ class InstanceSnapshotView:
 
     @property
     def version(self):
-        """Gets the version of this InstanceSnapshotView.
+        r"""Gets the version of this InstanceSnapshotView.
 
         版本号。
 
@@ -141,7 +141,7 @@ class InstanceSnapshotView:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceSnapshotView.
+        r"""Sets the version of this InstanceSnapshotView.
 
         版本号。
 

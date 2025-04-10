@@ -29,7 +29,7 @@ class LeagueUpdateVo:
     }
 
     def __init__(self, description=None, dp_enabled=None, privacy_protection_type=None):
-        """LeagueUpdateVo
+        r"""LeagueUpdateVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LeagueUpdateVo:
 
     @property
     def description(self):
-        """Gets the description of this LeagueUpdateVo.
+        r"""Gets the description of this LeagueUpdateVo.
 
         描述
 
@@ -68,7 +68,7 @@ class LeagueUpdateVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LeagueUpdateVo.
+        r"""Sets the description of this LeagueUpdateVo.
 
         描述
 
@@ -79,7 +79,7 @@ class LeagueUpdateVo:
 
     @property
     def dp_enabled(self):
-        """Gets the dp_enabled of this LeagueUpdateVo.
+        r"""Gets the dp_enabled of this LeagueUpdateVo.
 
         差分隐私开关
 
@@ -90,7 +90,7 @@ class LeagueUpdateVo:
 
     @dp_enabled.setter
     def dp_enabled(self, dp_enabled):
-        """Sets the dp_enabled of this LeagueUpdateVo.
+        r"""Sets the dp_enabled of this LeagueUpdateVo.
 
         差分隐私开关
 
@@ -101,7 +101,7 @@ class LeagueUpdateVo:
 
     @property
     def privacy_protection_type(self):
-        """Gets the privacy_protection_type of this LeagueUpdateVo.
+        r"""Gets the privacy_protection_type of this LeagueUpdateVo.
 
         隐私保护类别，HIGH.高，STANDARD.标准
 
@@ -112,7 +112,7 @@ class LeagueUpdateVo:
 
     @privacy_protection_type.setter
     def privacy_protection_type(self, privacy_protection_type):
-        """Sets the privacy_protection_type of this LeagueUpdateVo.
+        r"""Sets the privacy_protection_type of this LeagueUpdateVo.
 
         隐私保护类别，HIGH.高，STANDARD.标准
 

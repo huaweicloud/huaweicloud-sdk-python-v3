@@ -27,7 +27,7 @@ class AutoRecordModeReq:
     }
 
     def __init__(self, mode=None, record_rule_id=None):
-        """AutoRecordModeReq
+        r"""AutoRecordModeReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AutoRecordModeReq:
 
     @property
     def mode(self):
-        """Gets the mode of this AutoRecordModeReq.
+        r"""Gets the mode of this AutoRecordModeReq.
 
         录制模式。 - AUTO_RECORD_OFF：关闭自动录制。 - AUTO_INDIVIDUAL_RECORD：开启单流自动录制，此时record_rule_id必须非空。 
 
@@ -60,7 +60,7 @@ class AutoRecordModeReq:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AutoRecordModeReq.
+        r"""Sets the mode of this AutoRecordModeReq.
 
         录制模式。 - AUTO_RECORD_OFF：关闭自动录制。 - AUTO_INDIVIDUAL_RECORD：开启单流自动录制，此时record_rule_id必须非空。 
 
@@ -71,7 +71,7 @@ class AutoRecordModeReq:
 
     @property
     def record_rule_id(self):
-        """Gets the record_rule_id of this AutoRecordModeReq.
+        r"""Gets the record_rule_id of this AutoRecordModeReq.
 
         录制规则id。
 
@@ -82,7 +82,7 @@ class AutoRecordModeReq:
 
     @record_rule_id.setter
     def record_rule_id(self, record_rule_id):
-        """Sets the record_rule_id of this AutoRecordModeReq.
+        r"""Sets the record_rule_id of this AutoRecordModeReq.
 
         录制规则id。
 

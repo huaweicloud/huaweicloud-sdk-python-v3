@@ -29,7 +29,7 @@ class InteractionConstraintDto:
     }
 
     def __init__(self, interactions=None, exclusive=None, operator=None):
-        """InteractionConstraintDto
+        r"""InteractionConstraintDto
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class InteractionConstraintDto:
 
     @property
     def interactions(self):
-        """Gets the interactions of this InteractionConstraintDto.
+        r"""Gets the interactions of this InteractionConstraintDto.
 
         相互作用力列表
 
@@ -66,7 +66,7 @@ class InteractionConstraintDto:
 
     @interactions.setter
     def interactions(self, interactions):
-        """Sets the interactions of this InteractionConstraintDto.
+        r"""Sets the interactions of this InteractionConstraintDto.
 
         相互作用力列表
 
@@ -77,7 +77,7 @@ class InteractionConstraintDto:
 
     @property
     def exclusive(self):
-        """Gets the exclusive of this InteractionConstraintDto.
+        r"""Gets the exclusive of this InteractionConstraintDto.
 
         是否排除指定的约束作用力
 
@@ -88,7 +88,7 @@ class InteractionConstraintDto:
 
     @exclusive.setter
     def exclusive(self, exclusive):
-        """Sets the exclusive of this InteractionConstraintDto.
+        r"""Sets the exclusive of this InteractionConstraintDto.
 
         是否排除指定的约束作用力
 
@@ -99,7 +99,7 @@ class InteractionConstraintDto:
 
     @property
     def operator(self):
-        """Gets the operator of this InteractionConstraintDto.
+        r"""Gets the operator of this InteractionConstraintDto.
 
         :return: The operator of this InteractionConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OperatorType`
@@ -108,7 +108,7 @@ class InteractionConstraintDto:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this InteractionConstraintDto.
+        r"""Sets the operator of this InteractionConstraintDto.
 
         :param operator: The operator of this InteractionConstraintDto.
         :type operator: :class:`huaweicloudsdkeihealth.v1.OperatorType`

@@ -28,7 +28,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None):
-        """DeleteQueuePropertyResponse
+        r"""DeleteQueuePropertyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this DeleteQueuePropertyResponse.
+        r"""Gets the is_success of this DeleteQueuePropertyResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -62,7 +62,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this DeleteQueuePropertyResponse.
+        r"""Sets the is_success of this DeleteQueuePropertyResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -73,7 +73,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteQueuePropertyResponse.
+        r"""Gets the message of this DeleteQueuePropertyResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -84,7 +84,7 @@ class DeleteQueuePropertyResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteQueuePropertyResponse.
+        r"""Sets the message of this DeleteQueuePropertyResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 

@@ -28,7 +28,7 @@ class NeutronListPortsResponse(SdkResponse):
     }
 
     def __init__(self, ports=None, ports_links=None):
-        """NeutronListPortsResponse
+        r"""NeutronListPortsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NeutronListPortsResponse(SdkResponse):
 
     @property
     def ports(self):
-        """Gets the ports of this NeutronListPortsResponse.
+        r"""Gets the ports of this NeutronListPortsResponse.
 
         port对象列表
 
@@ -62,7 +62,7 @@ class NeutronListPortsResponse(SdkResponse):
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this NeutronListPortsResponse.
+        r"""Sets the ports of this NeutronListPortsResponse.
 
         port对象列表
 
@@ -73,7 +73,7 @@ class NeutronListPortsResponse(SdkResponse):
 
     @property
     def ports_links(self):
-        """Gets the ports_links of this NeutronListPortsResponse.
+        r"""Gets the ports_links of this NeutronListPortsResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class NeutronListPortsResponse(SdkResponse):
 
     @ports_links.setter
     def ports_links(self, ports_links):
-        """Sets the ports_links of this NeutronListPortsResponse.
+        r"""Sets the ports_links of this NeutronListPortsResponse.
 
         分页信息
 

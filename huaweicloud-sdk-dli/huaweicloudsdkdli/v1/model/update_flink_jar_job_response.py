@@ -30,7 +30,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job=None):
-        """UpdateFlinkJarJobResponse
+        r"""UpdateFlinkJarJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateFlinkJarJobResponse.
+        r"""Gets the is_success of this UpdateFlinkJarJobResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateFlinkJarJobResponse.
+        r"""Sets the is_success of this UpdateFlinkJarJobResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateFlinkJarJobResponse.
+        r"""Gets the message of this UpdateFlinkJarJobResponse.
 
         消息内容。
 
@@ -91,7 +91,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateFlinkJarJobResponse.
+        r"""Sets the message of this UpdateFlinkJarJobResponse.
 
         消息内容。
 
@@ -102,7 +102,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this UpdateFlinkJarJobResponse.
+        r"""Gets the job of this UpdateFlinkJarJobResponse.
 
         :return: The job of this UpdateFlinkJarJobResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobUpdateTime`
@@ -111,7 +111,7 @@ class UpdateFlinkJarJobResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this UpdateFlinkJarJobResponse.
+        r"""Sets the job of this UpdateFlinkJarJobResponse.
 
         :param job: The job of this UpdateFlinkJarJobResponse.
         :type job: :class:`huaweicloudsdkdli.v1.FlinkJobUpdateTime`

@@ -35,7 +35,7 @@ class ListIssuesSfV4Request:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, tracker_id=None, created_time_interval=None, updated_time_interval=None):
-        """ListIssuesSfV4Request
+        r"""ListIssuesSfV4Request
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListIssuesSfV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIssuesSfV4Request.
+        r"""Gets the project_id of this ListIssuesSfV4Request.
 
         devcloud项目的32位id
 
@@ -88,7 +88,7 @@ class ListIssuesSfV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIssuesSfV4Request.
+        r"""Sets the project_id of this ListIssuesSfV4Request.
 
         devcloud项目的32位id
 
@@ -99,7 +99,7 @@ class ListIssuesSfV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIssuesSfV4Request.
+        r"""Gets the offset of this ListIssuesSfV4Request.
 
         偏移量 从0开始
 
@@ -110,7 +110,7 @@ class ListIssuesSfV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIssuesSfV4Request.
+        r"""Sets the offset of this ListIssuesSfV4Request.
 
         偏移量 从0开始
 
@@ -121,7 +121,7 @@ class ListIssuesSfV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIssuesSfV4Request.
+        r"""Gets the limit of this ListIssuesSfV4Request.
 
         每页数量 最小1,最大100
 
@@ -132,7 +132,7 @@ class ListIssuesSfV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIssuesSfV4Request.
+        r"""Sets the limit of this ListIssuesSfV4Request.
 
         每页数量 最小1,最大100
 
@@ -143,7 +143,7 @@ class ListIssuesSfV4Request:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this ListIssuesSfV4Request.
+        r"""Gets the tracker_id of this ListIssuesSfV4Request.
 
         工作项类型
 
@@ -154,7 +154,7 @@ class ListIssuesSfV4Request:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this ListIssuesSfV4Request.
+        r"""Sets the tracker_id of this ListIssuesSfV4Request.
 
         工作项类型
 
@@ -165,7 +165,7 @@ class ListIssuesSfV4Request:
 
     @property
     def created_time_interval(self):
-        """Gets the created_time_interval of this ListIssuesSfV4Request.
+        r"""Gets the created_time_interval of this ListIssuesSfV4Request.
 
         创建工作项的时间(查询的起始时间,查询的结束时间)
 
@@ -176,7 +176,7 @@ class ListIssuesSfV4Request:
 
     @created_time_interval.setter
     def created_time_interval(self, created_time_interval):
-        """Sets the created_time_interval of this ListIssuesSfV4Request.
+        r"""Sets the created_time_interval of this ListIssuesSfV4Request.
 
         创建工作项的时间(查询的起始时间,查询的结束时间)
 
@@ -187,7 +187,7 @@ class ListIssuesSfV4Request:
 
     @property
     def updated_time_interval(self):
-        """Gets the updated_time_interval of this ListIssuesSfV4Request.
+        r"""Gets the updated_time_interval of this ListIssuesSfV4Request.
 
         更新工作项的时间(查询的起始时间,查询的结束时间)
 
@@ -198,7 +198,7 @@ class ListIssuesSfV4Request:
 
     @updated_time_interval.setter
     def updated_time_interval(self, updated_time_interval):
-        """Sets the updated_time_interval of this ListIssuesSfV4Request.
+        r"""Sets the updated_time_interval of this ListIssuesSfV4Request.
 
         更新工作项的时间(查询的起始时间,查询的结束时间)
 

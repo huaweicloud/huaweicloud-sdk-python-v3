@@ -26,7 +26,7 @@ class CreateCpiTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateCpiTaskResponse
+        r"""CreateCpiTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCpiTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateCpiTaskResponse.
+        r"""Gets the body of this CreateCpiTaskResponse.
 
         CPI任务ID
 
@@ -55,7 +55,7 @@ class CreateCpiTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCpiTaskResponse.
+        r"""Sets the body of this CreateCpiTaskResponse.
 
         CPI任务ID
 

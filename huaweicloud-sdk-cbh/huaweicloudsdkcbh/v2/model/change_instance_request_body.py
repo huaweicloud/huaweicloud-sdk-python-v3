@@ -31,7 +31,7 @@ class ChangeInstanceRequestBody:
     }
 
     def __init__(self, server_id=None, new_resource_spec_code=None, attach_disk_size=None, is_auto_pay=None):
-        """ChangeInstanceRequestBody
+        r"""ChangeInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ChangeInstanceRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeInstanceRequestBody.
+        r"""Gets the server_id of this ChangeInstanceRequestBody.
 
         云堡垒机实例ID，使用UUID格式表示。
 
@@ -74,7 +74,7 @@ class ChangeInstanceRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeInstanceRequestBody.
+        r"""Sets the server_id of this ChangeInstanceRequestBody.
 
         云堡垒机实例ID，使用UUID格式表示。
 
@@ -85,7 +85,7 @@ class ChangeInstanceRequestBody:
 
     @property
     def new_resource_spec_code(self):
-        """Gets the new_resource_spec_code of this ChangeInstanceRequestBody.
+        r"""Gets the new_resource_spec_code of this ChangeInstanceRequestBody.
 
         待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取
 
@@ -96,7 +96,7 @@ class ChangeInstanceRequestBody:
 
     @new_resource_spec_code.setter
     def new_resource_spec_code(self, new_resource_spec_code):
-        """Sets the new_resource_spec_code of this ChangeInstanceRequestBody.
+        r"""Sets the new_resource_spec_code of this ChangeInstanceRequestBody.
 
         待变更云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50  可参考接口\"查询云堡垒机规格信息\"获取
 
@@ -107,7 +107,7 @@ class ChangeInstanceRequestBody:
 
     @property
     def attach_disk_size(self):
-        """Gets the attach_disk_size of this ChangeInstanceRequestBody.
+        r"""Gets the attach_disk_size of this ChangeInstanceRequestBody.
 
         附加磁盘大小。单位TB  > 说明： 附加磁盘和规格自带磁盘大小不能超过300TB。
 
@@ -118,7 +118,7 @@ class ChangeInstanceRequestBody:
 
     @attach_disk_size.setter
     def attach_disk_size(self, attach_disk_size):
-        """Sets the attach_disk_size of this ChangeInstanceRequestBody.
+        r"""Sets the attach_disk_size of this ChangeInstanceRequestBody.
 
         附加磁盘大小。单位TB  > 说明： 附加磁盘和规格自带磁盘大小不能超过300TB。
 
@@ -129,7 +129,7 @@ class ChangeInstanceRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ChangeInstanceRequestBody.
+        r"""Gets the is_auto_pay of this ChangeInstanceRequestBody.
 
         是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
 
@@ -140,7 +140,7 @@ class ChangeInstanceRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ChangeInstanceRequestBody.
+        r"""Sets the is_auto_pay of this ChangeInstanceRequestBody.
 
         是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
 

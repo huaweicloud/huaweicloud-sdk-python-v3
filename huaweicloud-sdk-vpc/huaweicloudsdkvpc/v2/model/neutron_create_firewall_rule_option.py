@@ -43,7 +43,7 @@ class NeutronCreateFirewallRuleOption:
     }
 
     def __init__(self, name=None, description=None, protocol=None, action=None, ip_version=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, enabled=None):
-        """NeutronCreateFirewallRuleOption
+        r"""NeutronCreateFirewallRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreateFirewallRuleOption.
+        r"""Gets the name of this NeutronCreateFirewallRuleOption.
 
         功能说明：网络ACL规则名称 取值范围：0-255个字符
 
@@ -117,7 +117,7 @@ class NeutronCreateFirewallRuleOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreateFirewallRuleOption.
+        r"""Sets the name of this NeutronCreateFirewallRuleOption.
 
         功能说明：网络ACL规则名称 取值范围：0-255个字符
 
@@ -128,7 +128,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronCreateFirewallRuleOption.
+        r"""Gets the description of this NeutronCreateFirewallRuleOption.
 
         功能说明：网络ACL规则描述 取值范围：0-255个字符
 
@@ -139,7 +139,7 @@ class NeutronCreateFirewallRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronCreateFirewallRuleOption.
+        r"""Sets the description of this NeutronCreateFirewallRuleOption.
 
         功能说明：网络ACL规则描述 取值范围：0-255个字符
 
@@ -150,7 +150,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NeutronCreateFirewallRuleOption.
+        r"""Gets the protocol of this NeutronCreateFirewallRuleOption.
 
         功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者ip协议号（0-255）
 
@@ -161,7 +161,7 @@ class NeutronCreateFirewallRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NeutronCreateFirewallRuleOption.
+        r"""Sets the protocol of this NeutronCreateFirewallRuleOption.
 
         功能说明：IP协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者ip协议号（0-255）
 
@@ -172,7 +172,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def action(self):
-        """Gets the action of this NeutronCreateFirewallRuleOption.
+        r"""Gets the action of this NeutronCreateFirewallRuleOption.
 
         功能说明：对通过网络ACL的流量执行的操作 取值范围：DENY（拒绝）/ALLOW（允许）
 
@@ -183,7 +183,7 @@ class NeutronCreateFirewallRuleOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this NeutronCreateFirewallRuleOption.
+        r"""Sets the action of this NeutronCreateFirewallRuleOption.
 
         功能说明：对通过网络ACL的流量执行的操作 取值范围：DENY（拒绝）/ALLOW（允许）
 
@@ -194,7 +194,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this NeutronCreateFirewallRuleOption.
+        r"""Gets the ip_version of this NeutronCreateFirewallRuleOption.
 
         功能说明：IP协议版本
 
@@ -205,7 +205,7 @@ class NeutronCreateFirewallRuleOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this NeutronCreateFirewallRuleOption.
+        r"""Sets the ip_version of this NeutronCreateFirewallRuleOption.
 
         功能说明：IP协议版本
 
@@ -216,7 +216,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def destination_ip_address(self):
-        """Gets the destination_ip_address of this NeutronCreateFirewallRuleOption.
+        r"""Gets the destination_ip_address of this NeutronCreateFirewallRuleOption.
 
         功能说明：目的地址或者CIDR
 
@@ -227,7 +227,7 @@ class NeutronCreateFirewallRuleOption:
 
     @destination_ip_address.setter
     def destination_ip_address(self, destination_ip_address):
-        """Sets the destination_ip_address of this NeutronCreateFirewallRuleOption.
+        r"""Sets the destination_ip_address of this NeutronCreateFirewallRuleOption.
 
         功能说明：目的地址或者CIDR
 
@@ -238,7 +238,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def destination_port(self):
-        """Gets the destination_port of this NeutronCreateFirewallRuleOption.
+        r"""Gets the destination_port of this NeutronCreateFirewallRuleOption.
 
         功能说明：目的端口号或者一段端口范围
 
@@ -249,7 +249,7 @@ class NeutronCreateFirewallRuleOption:
 
     @destination_port.setter
     def destination_port(self, destination_port):
-        """Sets the destination_port of this NeutronCreateFirewallRuleOption.
+        r"""Sets the destination_port of this NeutronCreateFirewallRuleOption.
 
         功能说明：目的端口号或者一段端口范围
 
@@ -260,7 +260,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def source_ip_address(self):
-        """Gets the source_ip_address of this NeutronCreateFirewallRuleOption.
+        r"""Gets the source_ip_address of this NeutronCreateFirewallRuleOption.
 
         功能说明：源地址或者CIDR
 
@@ -271,7 +271,7 @@ class NeutronCreateFirewallRuleOption:
 
     @source_ip_address.setter
     def source_ip_address(self, source_ip_address):
-        """Sets the source_ip_address of this NeutronCreateFirewallRuleOption.
+        r"""Sets the source_ip_address of this NeutronCreateFirewallRuleOption.
 
         功能说明：源地址或者CIDR
 
@@ -282,7 +282,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def source_port(self):
-        """Gets the source_port of this NeutronCreateFirewallRuleOption.
+        r"""Gets the source_port of this NeutronCreateFirewallRuleOption.
 
         功能说明：源端口号或者一段端口范围
 
@@ -293,7 +293,7 @@ class NeutronCreateFirewallRuleOption:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this NeutronCreateFirewallRuleOption.
+        r"""Sets the source_port of this NeutronCreateFirewallRuleOption.
 
         功能说明：源端口号或者一段端口范围
 
@@ -304,7 +304,7 @@ class NeutronCreateFirewallRuleOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this NeutronCreateFirewallRuleOption.
+        r"""Gets the enabled of this NeutronCreateFirewallRuleOption.
 
         功能说明：是否使能网络ACL防火墙规则。
 
@@ -315,7 +315,7 @@ class NeutronCreateFirewallRuleOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this NeutronCreateFirewallRuleOption.
+        r"""Sets the enabled of this NeutronCreateFirewallRuleOption.
 
         功能说明：是否使能网络ACL防火墙规则。
 

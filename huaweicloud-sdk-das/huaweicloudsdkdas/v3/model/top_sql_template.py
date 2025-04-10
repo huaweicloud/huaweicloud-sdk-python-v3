@@ -53,7 +53,7 @@ class TopSqlTemplate:
     }
 
     def __init__(self, sql_template=None, sql_sample_string=None, sql_type=None, db_name=None, execute_num=None, total_cost=None, avg_cost=None, avg_rows_sent=None, avg_rows_affected=None, avg_lock_time=None, total_rows_examined=None, avg_rows_examined=None, total_cost_ratio=None, total_examined_ratio=None, execute_num_ratio=None):
-        """TopSqlTemplate
+        r"""TopSqlTemplate
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class TopSqlTemplate:
 
     @property
     def sql_template(self):
-        """Gets the sql_template of this TopSqlTemplate.
+        r"""Gets the sql_template of this TopSqlTemplate.
 
         SQL模板。
 
@@ -137,7 +137,7 @@ class TopSqlTemplate:
 
     @sql_template.setter
     def sql_template(self, sql_template):
-        """Sets the sql_template of this TopSqlTemplate.
+        r"""Sets the sql_template of this TopSqlTemplate.
 
         SQL模板。
 
@@ -148,7 +148,7 @@ class TopSqlTemplate:
 
     @property
     def sql_sample_string(self):
-        """Gets the sql_sample_string of this TopSqlTemplate.
+        r"""Gets the sql_sample_string of this TopSqlTemplate.
 
         SQL样本。
 
@@ -159,7 +159,7 @@ class TopSqlTemplate:
 
     @sql_sample_string.setter
     def sql_sample_string(self, sql_sample_string):
-        """Sets the sql_sample_string of this TopSqlTemplate.
+        r"""Sets the sql_sample_string of this TopSqlTemplate.
 
         SQL样本。
 
@@ -170,7 +170,7 @@ class TopSqlTemplate:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this TopSqlTemplate.
+        r"""Gets the sql_type of this TopSqlTemplate.
 
         SQL操作类型。
 
@@ -181,7 +181,7 @@ class TopSqlTemplate:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this TopSqlTemplate.
+        r"""Sets the sql_type of this TopSqlTemplate.
 
         SQL操作类型。
 
@@ -192,7 +192,7 @@ class TopSqlTemplate:
 
     @property
     def db_name(self):
-        """Gets the db_name of this TopSqlTemplate.
+        r"""Gets the db_name of this TopSqlTemplate.
 
         数据库名称。
 
@@ -203,7 +203,7 @@ class TopSqlTemplate:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this TopSqlTemplate.
+        r"""Sets the db_name of this TopSqlTemplate.
 
         数据库名称。
 
@@ -214,7 +214,7 @@ class TopSqlTemplate:
 
     @property
     def execute_num(self):
-        """Gets the execute_num of this TopSqlTemplate.
+        r"""Gets the execute_num of this TopSqlTemplate.
 
         总执行次数。
 
@@ -225,7 +225,7 @@ class TopSqlTemplate:
 
     @execute_num.setter
     def execute_num(self, execute_num):
-        """Sets the execute_num of this TopSqlTemplate.
+        r"""Sets the execute_num of this TopSqlTemplate.
 
         总执行次数。
 
@@ -236,7 +236,7 @@ class TopSqlTemplate:
 
     @property
     def total_cost(self):
-        """Gets the total_cost of this TopSqlTemplate.
+        r"""Gets the total_cost of this TopSqlTemplate.
 
         总耗时(ms)。
 
@@ -247,7 +247,7 @@ class TopSqlTemplate:
 
     @total_cost.setter
     def total_cost(self, total_cost):
-        """Sets the total_cost of this TopSqlTemplate.
+        r"""Sets the total_cost of this TopSqlTemplate.
 
         总耗时(ms)。
 
@@ -258,7 +258,7 @@ class TopSqlTemplate:
 
     @property
     def avg_cost(self):
-        """Gets the avg_cost of this TopSqlTemplate.
+        r"""Gets the avg_cost of this TopSqlTemplate.
 
         平均耗时(ms)。
 
@@ -269,7 +269,7 @@ class TopSqlTemplate:
 
     @avg_cost.setter
     def avg_cost(self, avg_cost):
-        """Sets the avg_cost of this TopSqlTemplate.
+        r"""Sets the avg_cost of this TopSqlTemplate.
 
         平均耗时(ms)。
 
@@ -280,7 +280,7 @@ class TopSqlTemplate:
 
     @property
     def avg_rows_sent(self):
-        """Gets the avg_rows_sent of this TopSqlTemplate.
+        r"""Gets the avg_rows_sent of this TopSqlTemplate.
 
         平均返回行数。
 
@@ -291,7 +291,7 @@ class TopSqlTemplate:
 
     @avg_rows_sent.setter
     def avg_rows_sent(self, avg_rows_sent):
-        """Sets the avg_rows_sent of this TopSqlTemplate.
+        r"""Sets the avg_rows_sent of this TopSqlTemplate.
 
         平均返回行数。
 
@@ -302,7 +302,7 @@ class TopSqlTemplate:
 
     @property
     def avg_rows_affected(self):
-        """Gets the avg_rows_affected of this TopSqlTemplate.
+        r"""Gets the avg_rows_affected of this TopSqlTemplate.
 
         平均影响行数。
 
@@ -313,7 +313,7 @@ class TopSqlTemplate:
 
     @avg_rows_affected.setter
     def avg_rows_affected(self, avg_rows_affected):
-        """Sets the avg_rows_affected of this TopSqlTemplate.
+        r"""Sets the avg_rows_affected of this TopSqlTemplate.
 
         平均影响行数。
 
@@ -324,7 +324,7 @@ class TopSqlTemplate:
 
     @property
     def avg_lock_time(self):
-        """Gets the avg_lock_time of this TopSqlTemplate.
+        r"""Gets the avg_lock_time of this TopSqlTemplate.
 
         平均锁等待耗时(ms)。
 
@@ -335,7 +335,7 @@ class TopSqlTemplate:
 
     @avg_lock_time.setter
     def avg_lock_time(self, avg_lock_time):
-        """Sets the avg_lock_time of this TopSqlTemplate.
+        r"""Sets the avg_lock_time of this TopSqlTemplate.
 
         平均锁等待耗时(ms)。
 
@@ -346,7 +346,7 @@ class TopSqlTemplate:
 
     @property
     def total_rows_examined(self):
-        """Gets the total_rows_examined of this TopSqlTemplate.
+        r"""Gets the total_rows_examined of this TopSqlTemplate.
 
         总扫描行数。
 
@@ -357,7 +357,7 @@ class TopSqlTemplate:
 
     @total_rows_examined.setter
     def total_rows_examined(self, total_rows_examined):
-        """Sets the total_rows_examined of this TopSqlTemplate.
+        r"""Sets the total_rows_examined of this TopSqlTemplate.
 
         总扫描行数。
 
@@ -368,7 +368,7 @@ class TopSqlTemplate:
 
     @property
     def avg_rows_examined(self):
-        """Gets the avg_rows_examined of this TopSqlTemplate.
+        r"""Gets the avg_rows_examined of this TopSqlTemplate.
 
         平均扫描行数。
 
@@ -379,7 +379,7 @@ class TopSqlTemplate:
 
     @avg_rows_examined.setter
     def avg_rows_examined(self, avg_rows_examined):
-        """Sets the avg_rows_examined of this TopSqlTemplate.
+        r"""Sets the avg_rows_examined of this TopSqlTemplate.
 
         平均扫描行数。
 
@@ -390,7 +390,7 @@ class TopSqlTemplate:
 
     @property
     def total_cost_ratio(self):
-        """Gets the total_cost_ratio of this TopSqlTemplate.
+        r"""Gets the total_cost_ratio of this TopSqlTemplate.
 
         总耗时占比。
 
@@ -401,7 +401,7 @@ class TopSqlTemplate:
 
     @total_cost_ratio.setter
     def total_cost_ratio(self, total_cost_ratio):
-        """Sets the total_cost_ratio of this TopSqlTemplate.
+        r"""Sets the total_cost_ratio of this TopSqlTemplate.
 
         总耗时占比。
 
@@ -412,7 +412,7 @@ class TopSqlTemplate:
 
     @property
     def total_examined_ratio(self):
-        """Gets the total_examined_ratio of this TopSqlTemplate.
+        r"""Gets the total_examined_ratio of this TopSqlTemplate.
 
         扫描行数占比。
 
@@ -423,7 +423,7 @@ class TopSqlTemplate:
 
     @total_examined_ratio.setter
     def total_examined_ratio(self, total_examined_ratio):
-        """Sets the total_examined_ratio of this TopSqlTemplate.
+        r"""Sets the total_examined_ratio of this TopSqlTemplate.
 
         扫描行数占比。
 
@@ -434,7 +434,7 @@ class TopSqlTemplate:
 
     @property
     def execute_num_ratio(self):
-        """Gets the execute_num_ratio of this TopSqlTemplate.
+        r"""Gets the execute_num_ratio of this TopSqlTemplate.
 
         执行次数占比。
 
@@ -445,7 +445,7 @@ class TopSqlTemplate:
 
     @execute_num_ratio.setter
     def execute_num_ratio(self, execute_num_ratio):
-        """Sets the execute_num_ratio of this TopSqlTemplate.
+        r"""Sets the execute_num_ratio of this TopSqlTemplate.
 
         执行次数占比。
 

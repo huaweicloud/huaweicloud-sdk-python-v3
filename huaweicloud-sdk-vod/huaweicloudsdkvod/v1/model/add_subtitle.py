@@ -29,7 +29,7 @@ class AddSubtitle:
     }
 
     def __init__(self, type=None, language=None, obs_info=None):
-        """AddSubtitle
+        r"""AddSubtitle
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddSubtitle:
 
     @property
     def type(self):
-        """Gets the type of this AddSubtitle.
+        r"""Gets the type of this AddSubtitle.
 
         字幕类型，字幕封装当前仅支持VTT和SRT
 
@@ -65,7 +65,7 @@ class AddSubtitle:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddSubtitle.
+        r"""Sets the type of this AddSubtitle.
 
         字幕类型，字幕封装当前仅支持VTT和SRT
 
@@ -76,7 +76,7 @@ class AddSubtitle:
 
     @property
     def language(self):
-        """Gets the language of this AddSubtitle.
+        r"""Gets the language of this AddSubtitle.
 
         字幕语言
 
@@ -87,7 +87,7 @@ class AddSubtitle:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this AddSubtitle.
+        r"""Sets the language of this AddSubtitle.
 
         字幕语言
 
@@ -98,7 +98,7 @@ class AddSubtitle:
 
     @property
     def obs_info(self):
-        """Gets the obs_info of this AddSubtitle.
+        r"""Gets the obs_info of this AddSubtitle.
 
         :return: The obs_info of this AddSubtitle.
         :rtype: :class:`huaweicloudsdkvod.v1.ObsInfo`
@@ -107,7 +107,7 @@ class AddSubtitle:
 
     @obs_info.setter
     def obs_info(self, obs_info):
-        """Sets the obs_info of this AddSubtitle.
+        r"""Sets the obs_info of this AddSubtitle.
 
         :param obs_info: The obs_info of this AddSubtitle.
         :type obs_info: :class:`huaweicloudsdkvod.v1.ObsInfo`

@@ -45,7 +45,7 @@ class CreateUserRequest:
     }
 
     def __init__(self, user_name=None, user_email=None, account_expires=None, active_type=None, user_phone=None, password=None, enable_change_password=None, next_login_change_password=None, group_ids=None, description=None, alias_name=None):
-        """CreateUserRequest
+        r"""CreateUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CreateUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateUserRequest.
+        r"""Gets the user_name of this CreateUserRequest.
 
         用户名称。
 
@@ -123,7 +123,7 @@ class CreateUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateUserRequest.
+        r"""Sets the user_name of this CreateUserRequest.
 
         用户名称。
 
@@ -134,7 +134,7 @@ class CreateUserRequest:
 
     @property
     def user_email(self):
-        """Gets the user_email of this CreateUserRequest.
+        r"""Gets the user_email of this CreateUserRequest.
 
         用户邮箱。
 
@@ -145,7 +145,7 @@ class CreateUserRequest:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this CreateUserRequest.
+        r"""Sets the user_email of this CreateUserRequest.
 
         用户邮箱。
 
@@ -156,7 +156,7 @@ class CreateUserRequest:
 
     @property
     def account_expires(self):
-        """Gets the account_expires of this CreateUserRequest.
+        r"""Gets the account_expires of this CreateUserRequest.
 
         账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ或yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -167,7 +167,7 @@ class CreateUserRequest:
 
     @account_expires.setter
     def account_expires(self, account_expires):
-        """Sets the account_expires of this CreateUserRequest.
+        r"""Sets the account_expires of this CreateUserRequest.
 
         账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ或yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -178,7 +178,7 @@ class CreateUserRequest:
 
     @property
     def active_type(self):
-        """Gets the active_type of this CreateUserRequest.
+        r"""Gets the active_type of this CreateUserRequest.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -189,7 +189,7 @@ class CreateUserRequest:
 
     @active_type.setter
     def active_type(self, active_type):
-        """Sets the active_type of this CreateUserRequest.
+        r"""Sets the active_type of this CreateUserRequest.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -200,7 +200,7 @@ class CreateUserRequest:
 
     @property
     def user_phone(self):
-        """Gets the user_phone of this CreateUserRequest.
+        r"""Gets the user_phone of this CreateUserRequest.
 
         用户手机号。
 
@@ -211,7 +211,7 @@ class CreateUserRequest:
 
     @user_phone.setter
     def user_phone(self, user_phone):
-        """Sets the user_phone of this CreateUserRequest.
+        r"""Sets the user_phone of this CreateUserRequest.
 
         用户手机号。
 
@@ -222,7 +222,7 @@ class CreateUserRequest:
 
     @property
     def password(self):
-        """Gets the password of this CreateUserRequest.
+        r"""Gets the password of this CreateUserRequest.
 
         用户初始密码。管理员激活模式需要输入。
 
@@ -233,7 +233,7 @@ class CreateUserRequest:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateUserRequest.
+        r"""Sets the password of this CreateUserRequest.
 
         用户初始密码。管理员激活模式需要输入。
 
@@ -244,7 +244,7 @@ class CreateUserRequest:
 
     @property
     def enable_change_password(self):
-        """Gets the enable_change_password of this CreateUserRequest.
+        r"""Gets the enable_change_password of this CreateUserRequest.
 
         是否允许用户更改密码，缺省值为true，后续此字段无效，创建时都为true。
 
@@ -255,7 +255,7 @@ class CreateUserRequest:
 
     @enable_change_password.setter
     def enable_change_password(self, enable_change_password):
-        """Sets the enable_change_password of this CreateUserRequest.
+        r"""Sets the enable_change_password of this CreateUserRequest.
 
         是否允许用户更改密码，缺省值为true，后续此字段无效，创建时都为true。
 
@@ -266,7 +266,7 @@ class CreateUserRequest:
 
     @property
     def next_login_change_password(self):
-        """Gets the next_login_change_password of this CreateUserRequest.
+        r"""Gets the next_login_change_password of this CreateUserRequest.
 
         下次登录是否必须更改密码，缺省值为true。后续此字段无效，创建时都为true。
 
@@ -277,7 +277,7 @@ class CreateUserRequest:
 
     @next_login_change_password.setter
     def next_login_change_password(self, next_login_change_password):
-        """Sets the next_login_change_password of this CreateUserRequest.
+        r"""Sets the next_login_change_password of this CreateUserRequest.
 
         下次登录是否必须更改密码，缺省值为true。后续此字段无效，创建时都为true。
 
@@ -288,7 +288,7 @@ class CreateUserRequest:
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this CreateUserRequest.
+        r"""Gets the group_ids of this CreateUserRequest.
 
         用户组的专有ID列表。
 
@@ -299,7 +299,7 @@ class CreateUserRequest:
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this CreateUserRequest.
+        r"""Sets the group_ids of this CreateUserRequest.
 
         用户组的专有ID列表。
 
@@ -310,7 +310,7 @@ class CreateUserRequest:
 
     @property
     def description(self):
-        """Gets the description of this CreateUserRequest.
+        r"""Gets the description of this CreateUserRequest.
 
         用户描述，字符串长度区间[0, 255]。
 
@@ -321,7 +321,7 @@ class CreateUserRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUserRequest.
+        r"""Sets the description of this CreateUserRequest.
 
         用户描述，字符串长度区间[0, 255]。
 
@@ -332,7 +332,7 @@ class CreateUserRequest:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this CreateUserRequest.
+        r"""Gets the alias_name of this CreateUserRequest.
 
         别名。
 
@@ -343,7 +343,7 @@ class CreateUserRequest:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this CreateUserRequest.
+        r"""Sets the alias_name of this CreateUserRequest.
 
         别名。
 

@@ -24,7 +24,7 @@ class AddServerGroupMemberResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddServerGroupMemberResponse
+        r"""AddServerGroupMemberResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class CreateClusterPublicEipSize:
     }
 
     def __init__(self, size=None):
-        """CreateClusterPublicEipSize
+        r"""CreateClusterPublicEipSize
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateClusterPublicEipSize:
 
     @property
     def size(self):
-        """Gets the size of this CreateClusterPublicEipSize.
+        r"""Gets the size of this CreateClusterPublicEipSize.
 
         带宽大小。
 
@@ -53,7 +53,7 @@ class CreateClusterPublicEipSize:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateClusterPublicEipSize.
+        r"""Sets the size of this CreateClusterPublicEipSize.
 
         带宽大小。
 

@@ -33,7 +33,7 @@ class SubscriptionCreateReq:
     }
 
     def __init__(self, name=None, description=None, channel_id=None, sources=None, targets=None):
-        """SubscriptionCreateReq
+        r"""SubscriptionCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class SubscriptionCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this SubscriptionCreateReq.
+        r"""Gets the name of this SubscriptionCreateReq.
 
         订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -78,7 +78,7 @@ class SubscriptionCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubscriptionCreateReq.
+        r"""Sets the name of this SubscriptionCreateReq.
 
         订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -89,7 +89,7 @@ class SubscriptionCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this SubscriptionCreateReq.
+        r"""Gets the description of this SubscriptionCreateReq.
 
         订阅描述
 
@@ -100,7 +100,7 @@ class SubscriptionCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubscriptionCreateReq.
+        r"""Sets the description of this SubscriptionCreateReq.
 
         订阅描述
 
@@ -111,7 +111,7 @@ class SubscriptionCreateReq:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this SubscriptionCreateReq.
+        r"""Gets the channel_id of this SubscriptionCreateReq.
 
         所属事件通道ID
 
@@ -122,7 +122,7 @@ class SubscriptionCreateReq:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this SubscriptionCreateReq.
+        r"""Sets the channel_id of this SubscriptionCreateReq.
 
         所属事件通道ID
 
@@ -133,7 +133,7 @@ class SubscriptionCreateReq:
 
     @property
     def sources(self):
-        """Gets the sources of this SubscriptionCreateReq.
+        r"""Gets the sources of this SubscriptionCreateReq.
 
         订阅的事件源列表， 当前仅支持订阅一个事件源
 
@@ -144,7 +144,7 @@ class SubscriptionCreateReq:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this SubscriptionCreateReq.
+        r"""Sets the sources of this SubscriptionCreateReq.
 
         订阅的事件源列表， 当前仅支持订阅一个事件源
 
@@ -155,7 +155,7 @@ class SubscriptionCreateReq:
 
     @property
     def targets(self):
-        """Gets the targets of this SubscriptionCreateReq.
+        r"""Gets the targets of this SubscriptionCreateReq.
 
         事件目标列表，至少订阅一个事件目标
 
@@ -166,7 +166,7 @@ class SubscriptionCreateReq:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this SubscriptionCreateReq.
+        r"""Sets the targets of this SubscriptionCreateReq.
 
         事件目标列表，至少订阅一个事件目标
 

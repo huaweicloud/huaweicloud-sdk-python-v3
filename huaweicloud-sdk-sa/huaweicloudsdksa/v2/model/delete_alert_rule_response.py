@@ -30,7 +30,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, delete_time=None, x_request_id=None):
-        """DeleteAlertRuleResponse
+        r"""DeleteAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteAlertRuleResponse.
+        r"""Gets the rule_id of this DeleteAlertRuleResponse.
 
         rule_id
 
@@ -69,7 +69,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteAlertRuleResponse.
+        r"""Sets the rule_id of this DeleteAlertRuleResponse.
 
         rule_id
 
@@ -80,7 +80,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this DeleteAlertRuleResponse.
+        r"""Gets the delete_time of this DeleteAlertRuleResponse.
 
         delete_time
 
@@ -91,7 +91,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this DeleteAlertRuleResponse.
+        r"""Sets the delete_time of this DeleteAlertRuleResponse.
 
         delete_time
 
@@ -102,7 +102,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteAlertRuleResponse.
+        r"""Gets the x_request_id of this DeleteAlertRuleResponse.
 
         :return: The x_request_id of this DeleteAlertRuleResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteAlertRuleResponse.
+        r"""Sets the x_request_id of this DeleteAlertRuleResponse.
 
         :param x_request_id: The x_request_id of this DeleteAlertRuleResponse.
         :type x_request_id: str

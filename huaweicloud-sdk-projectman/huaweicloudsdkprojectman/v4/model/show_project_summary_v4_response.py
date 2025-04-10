@@ -32,7 +32,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
     }
 
     def __init__(self, bug_statistics=None, demand_statistics=None, issue_completion_rates=None, project_id=None):
-        """ShowProjectSummaryV4Response
+        r"""ShowProjectSummaryV4Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @property
     def bug_statistics(self):
-        """Gets the bug_statistics of this ShowProjectSummaryV4Response.
+        r"""Gets the bug_statistics of this ShowProjectSummaryV4Response.
 
         bug统计列表
 
@@ -76,7 +76,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @bug_statistics.setter
     def bug_statistics(self, bug_statistics):
-        """Sets the bug_statistics of this ShowProjectSummaryV4Response.
+        r"""Sets the bug_statistics of this ShowProjectSummaryV4Response.
 
         bug统计列表
 
@@ -87,7 +87,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @property
     def demand_statistics(self):
-        """Gets the demand_statistics of this ShowProjectSummaryV4Response.
+        r"""Gets the demand_statistics of this ShowProjectSummaryV4Response.
 
         按模块统计列表
 
@@ -98,7 +98,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @demand_statistics.setter
     def demand_statistics(self, demand_statistics):
-        """Sets the demand_statistics of this ShowProjectSummaryV4Response.
+        r"""Sets the demand_statistics of this ShowProjectSummaryV4Response.
 
         按模块统计列表
 
@@ -109,7 +109,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @property
     def issue_completion_rates(self):
-        """Gets the issue_completion_rates of this ShowProjectSummaryV4Response.
+        r"""Gets the issue_completion_rates of this ShowProjectSummaryV4Response.
 
         按工作项类型统计列表
 
@@ -120,7 +120,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @issue_completion_rates.setter
     def issue_completion_rates(self, issue_completion_rates):
-        """Sets the issue_completion_rates of this ShowProjectSummaryV4Response.
+        r"""Sets the issue_completion_rates of this ShowProjectSummaryV4Response.
 
         按工作项类型统计列表
 
@@ -131,7 +131,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectSummaryV4Response.
+        r"""Gets the project_id of this ShowProjectSummaryV4Response.
 
         项目id
 
@@ -142,7 +142,7 @@ class ShowProjectSummaryV4Response(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectSummaryV4Response.
+        r"""Sets the project_id of this ShowProjectSummaryV4Response.
 
         项目id
 

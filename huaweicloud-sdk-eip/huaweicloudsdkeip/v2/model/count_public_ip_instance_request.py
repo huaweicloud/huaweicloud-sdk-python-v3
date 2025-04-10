@@ -23,7 +23,7 @@ class CountPublicIpInstanceRequest:
     }
 
     def __init__(self):
-        """CountPublicIpInstanceRequest
+        r"""CountPublicIpInstanceRequest
 
         The model defined in huaweicloud sdk
 

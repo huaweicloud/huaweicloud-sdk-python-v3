@@ -25,7 +25,7 @@ class GcbSpecCodeId:
     }
 
     def __init__(self, spec_code_id=None):
-        """GcbSpecCodeId
+        r"""GcbSpecCodeId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbSpecCodeId:
 
     @property
     def spec_code_id(self):
-        """Gets the spec_code_id of this GcbSpecCodeId.
+        r"""Gets the spec_code_id of this GcbSpecCodeId.
 
         功能说明：线路规格编码UUID。
 
@@ -54,7 +54,7 @@ class GcbSpecCodeId:
 
     @spec_code_id.setter
     def spec_code_id(self, spec_code_id):
-        """Sets the spec_code_id of this GcbSpecCodeId.
+        r"""Sets the spec_code_id of this GcbSpecCodeId.
 
         功能说明：线路规格编码UUID。
 

@@ -41,7 +41,7 @@ class UpdateAppInfoRequestBody:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, is_draft=None, create_type=None, slave_cluster_id=None, trigger=None, arrange_infos=None):
-        """UpdateAppInfoRequestBody
+        r"""UpdateAppInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAppInfoRequestBody.
+        r"""Gets the id of this UpdateAppInfoRequestBody.
 
         应用id
 
@@ -105,7 +105,7 @@ class UpdateAppInfoRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAppInfoRequestBody.
+        r"""Sets the id of this UpdateAppInfoRequestBody.
 
         应用id
 
@@ -116,7 +116,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAppInfoRequestBody.
+        r"""Gets the project_id of this UpdateAppInfoRequestBody.
 
         项目id
 
@@ -127,7 +127,7 @@ class UpdateAppInfoRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAppInfoRequestBody.
+        r"""Sets the project_id of this UpdateAppInfoRequestBody.
 
         项目id
 
@@ -138,7 +138,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppInfoRequestBody.
+        r"""Gets the name of this UpdateAppInfoRequestBody.
 
         应用名称
 
@@ -149,7 +149,7 @@ class UpdateAppInfoRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppInfoRequestBody.
+        r"""Sets the name of this UpdateAppInfoRequestBody.
 
         应用名称
 
@@ -160,7 +160,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppInfoRequestBody.
+        r"""Gets the description of this UpdateAppInfoRequestBody.
 
         描述
 
@@ -171,7 +171,7 @@ class UpdateAppInfoRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppInfoRequestBody.
+        r"""Sets the description of this UpdateAppInfoRequestBody.
 
         描述
 
@@ -182,7 +182,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def is_draft(self):
-        """Gets the is_draft of this UpdateAppInfoRequestBody.
+        r"""Gets the is_draft of this UpdateAppInfoRequestBody.
 
         是否为草稿
 
@@ -193,7 +193,7 @@ class UpdateAppInfoRequestBody:
 
     @is_draft.setter
     def is_draft(self, is_draft):
-        """Sets the is_draft of this UpdateAppInfoRequestBody.
+        r"""Sets the is_draft of this UpdateAppInfoRequestBody.
 
         是否为草稿
 
@@ -204,7 +204,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def create_type(self):
-        """Gets the create_type of this UpdateAppInfoRequestBody.
+        r"""Gets the create_type of this UpdateAppInfoRequestBody.
 
         创建类型，template：部署模板创建
 
@@ -215,7 +215,7 @@ class UpdateAppInfoRequestBody:
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this UpdateAppInfoRequestBody.
+        r"""Sets the create_type of this UpdateAppInfoRequestBody.
 
         创建类型，template：部署模板创建
 
@@ -226,7 +226,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this UpdateAppInfoRequestBody.
+        r"""Gets the slave_cluster_id of this UpdateAppInfoRequestBody.
 
         自定义slave资源池id
 
@@ -237,7 +237,7 @@ class UpdateAppInfoRequestBody:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this UpdateAppInfoRequestBody.
+        r"""Sets the slave_cluster_id of this UpdateAppInfoRequestBody.
 
         自定义slave资源池id
 
@@ -248,7 +248,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def trigger(self):
-        """Gets the trigger of this UpdateAppInfoRequestBody.
+        r"""Gets the trigger of this UpdateAppInfoRequestBody.
 
         :return: The trigger of this UpdateAppInfoRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.TaskTriggerVO`
@@ -257,7 +257,7 @@ class UpdateAppInfoRequestBody:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this UpdateAppInfoRequestBody.
+        r"""Sets the trigger of this UpdateAppInfoRequestBody.
 
         :param trigger: The trigger of this UpdateAppInfoRequestBody.
         :type trigger: :class:`huaweicloudsdkcodeartsdeploy.v2.TaskTriggerVO`
@@ -266,7 +266,7 @@ class UpdateAppInfoRequestBody:
 
     @property
     def arrange_infos(self):
-        """Gets the arrange_infos of this UpdateAppInfoRequestBody.
+        r"""Gets the arrange_infos of this UpdateAppInfoRequestBody.
 
         部署任务列表信息
 
@@ -277,7 +277,7 @@ class UpdateAppInfoRequestBody:
 
     @arrange_infos.setter
     def arrange_infos(self, arrange_infos):
-        """Sets the arrange_infos of this UpdateAppInfoRequestBody.
+        r"""Sets the arrange_infos of this UpdateAppInfoRequestBody.
 
         部署任务列表信息
 

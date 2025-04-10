@@ -57,7 +57,7 @@ class RecycleInstsanceV3:
     }
 
     def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, created_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_v6=None, enterprise_project_id=None, retained_until=None, recycle_backup_id=None, recycle_status=None, is_serverless=None):
-        """RecycleInstsanceV3
+        r"""RecycleInstsanceV3
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class RecycleInstsanceV3:
 
     @property
     def id(self):
-        """Gets the id of this RecycleInstsanceV3.
+        r"""Gets the id of this RecycleInstsanceV3.
 
         实例id
 
@@ -166,7 +166,7 @@ class RecycleInstsanceV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecycleInstsanceV3.
+        r"""Sets the id of this RecycleInstsanceV3.
 
         实例id
 
@@ -177,7 +177,7 @@ class RecycleInstsanceV3:
 
     @property
     def name(self):
-        """Gets the name of this RecycleInstsanceV3.
+        r"""Gets the name of this RecycleInstsanceV3.
 
         实例名
 
@@ -188,7 +188,7 @@ class RecycleInstsanceV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecycleInstsanceV3.
+        r"""Sets the name of this RecycleInstsanceV3.
 
         实例名
 
@@ -199,7 +199,7 @@ class RecycleInstsanceV3:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this RecycleInstsanceV3.
+        r"""Gets the ha_mode of this RecycleInstsanceV3.
 
         实例主备模式，取值：Ha（主备），不区分大小写。
 
@@ -210,7 +210,7 @@ class RecycleInstsanceV3:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this RecycleInstsanceV3.
+        r"""Sets the ha_mode of this RecycleInstsanceV3.
 
         实例主备模式，取值：Ha（主备），不区分大小写。
 
@@ -221,7 +221,7 @@ class RecycleInstsanceV3:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this RecycleInstsanceV3.
+        r"""Gets the engine_name of this RecycleInstsanceV3.
 
         引擎名
 
@@ -232,7 +232,7 @@ class RecycleInstsanceV3:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this RecycleInstsanceV3.
+        r"""Sets the engine_name of this RecycleInstsanceV3.
 
         引擎名
 
@@ -243,7 +243,7 @@ class RecycleInstsanceV3:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this RecycleInstsanceV3.
+        r"""Gets the engine_version of this RecycleInstsanceV3.
 
         数据库引擎版本
 
@@ -254,7 +254,7 @@ class RecycleInstsanceV3:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this RecycleInstsanceV3.
+        r"""Sets the engine_version of this RecycleInstsanceV3.
 
         数据库引擎版本
 
@@ -265,7 +265,7 @@ class RecycleInstsanceV3:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this RecycleInstsanceV3.
+        r"""Gets the pay_model of this RecycleInstsanceV3.
 
         计费方式
 
@@ -276,7 +276,7 @@ class RecycleInstsanceV3:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this RecycleInstsanceV3.
+        r"""Sets the pay_model of this RecycleInstsanceV3.
 
         计费方式
 
@@ -287,7 +287,7 @@ class RecycleInstsanceV3:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RecycleInstsanceV3.
+        r"""Gets the created_at of this RecycleInstsanceV3.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -298,7 +298,7 @@ class RecycleInstsanceV3:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RecycleInstsanceV3.
+        r"""Sets the created_at of this RecycleInstsanceV3.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -309,7 +309,7 @@ class RecycleInstsanceV3:
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this RecycleInstsanceV3.
+        r"""Gets the deleted_at of this RecycleInstsanceV3.
 
         删除时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -320,7 +320,7 @@ class RecycleInstsanceV3:
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this RecycleInstsanceV3.
+        r"""Sets the deleted_at of this RecycleInstsanceV3.
 
         删除时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -331,7 +331,7 @@ class RecycleInstsanceV3:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this RecycleInstsanceV3.
+        r"""Gets the volume_type of this RecycleInstsanceV3.
 
         磁盘类型。 取值范围如下，区分大小写： - COMMON，表示SATA。 - HIGH，表示SAS。 - ULTRAHIGH，表示SSD。 - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版（需申请权限）。 - CLOUDSSD，表示SSD云盘，仅支持通用型和独享型规格实例。 - LOCALSSD，表示本地SSD。
 
@@ -342,7 +342,7 @@ class RecycleInstsanceV3:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this RecycleInstsanceV3.
+        r"""Sets the volume_type of this RecycleInstsanceV3.
 
         磁盘类型。 取值范围如下，区分大小写： - COMMON，表示SATA。 - HIGH，表示SAS。 - ULTRAHIGH，表示SSD。 - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版（需申请权限）。 - CLOUDSSD，表示SSD云盘，仅支持通用型和独享型规格实例。 - LOCALSSD，表示本地SSD。
 
@@ -353,7 +353,7 @@ class RecycleInstsanceV3:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this RecycleInstsanceV3.
+        r"""Gets the volume_size of this RecycleInstsanceV3.
 
         磁盘大小，单位为GB。 取值范围：40GB~4000GB，必须为10的整数倍。  部分用户支持40GB~6000GB，如果您想创建存储空间最大为6000GB的数据库实例，或提高扩容上限到10000GB，请联系客服开通。  说明：对于只读实例，该参数无效，磁盘大小，默认和主实例相同。
 
@@ -364,7 +364,7 @@ class RecycleInstsanceV3:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this RecycleInstsanceV3.
+        r"""Sets the volume_size of this RecycleInstsanceV3.
 
         磁盘大小，单位为GB。 取值范围：40GB~4000GB，必须为10的整数倍。  部分用户支持40GB~6000GB，如果您想创建存储空间最大为6000GB的数据库实例，或提高扩容上限到10000GB，请联系客服开通。  说明：对于只读实例，该参数无效，磁盘大小，默认和主实例相同。
 
@@ -375,7 +375,7 @@ class RecycleInstsanceV3:
 
     @property
     def data_vip(self):
-        """Gets the data_vip of this RecycleInstsanceV3.
+        r"""Gets the data_vip of this RecycleInstsanceV3.
 
         内网地址
 
@@ -386,7 +386,7 @@ class RecycleInstsanceV3:
 
     @data_vip.setter
     def data_vip(self, data_vip):
-        """Sets the data_vip of this RecycleInstsanceV3.
+        r"""Sets the data_vip of this RecycleInstsanceV3.
 
         内网地址
 
@@ -397,7 +397,7 @@ class RecycleInstsanceV3:
 
     @property
     def data_vip_v6(self):
-        """Gets the data_vip_v6 of this RecycleInstsanceV3.
+        r"""Gets the data_vip_v6 of this RecycleInstsanceV3.
 
         ipv6内网地址
 
@@ -408,7 +408,7 @@ class RecycleInstsanceV3:
 
     @data_vip_v6.setter
     def data_vip_v6(self, data_vip_v6):
-        """Sets the data_vip_v6 of this RecycleInstsanceV3.
+        r"""Sets the data_vip_v6 of this RecycleInstsanceV3.
 
         ipv6内网地址
 
@@ -419,7 +419,7 @@ class RecycleInstsanceV3:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RecycleInstsanceV3.
+        r"""Gets the enterprise_project_id of this RecycleInstsanceV3.
 
         企业项目ID
 
@@ -430,7 +430,7 @@ class RecycleInstsanceV3:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RecycleInstsanceV3.
+        r"""Sets the enterprise_project_id of this RecycleInstsanceV3.
 
         企业项目ID
 
@@ -441,7 +441,7 @@ class RecycleInstsanceV3:
 
     @property
     def retained_until(self):
-        """Gets the retained_until of this RecycleInstsanceV3.
+        r"""Gets the retained_until of this RecycleInstsanceV3.
 
         保留时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -452,7 +452,7 @@ class RecycleInstsanceV3:
 
     @retained_until.setter
     def retained_until(self, retained_until):
-        """Sets the retained_until of this RecycleInstsanceV3.
+        r"""Sets the retained_until of this RecycleInstsanceV3.
 
         保留时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -463,7 +463,7 @@ class RecycleInstsanceV3:
 
     @property
     def recycle_backup_id(self):
-        """Gets the recycle_backup_id of this RecycleInstsanceV3.
+        r"""Gets the recycle_backup_id of this RecycleInstsanceV3.
 
         备份id
 
@@ -474,7 +474,7 @@ class RecycleInstsanceV3:
 
     @recycle_backup_id.setter
     def recycle_backup_id(self, recycle_backup_id):
-        """Sets the recycle_backup_id of this RecycleInstsanceV3.
+        r"""Sets the recycle_backup_id of this RecycleInstsanceV3.
 
         备份id
 
@@ -485,7 +485,7 @@ class RecycleInstsanceV3:
 
     @property
     def recycle_status(self):
-        """Gets the recycle_status of this RecycleInstsanceV3.
+        r"""Gets the recycle_status of this RecycleInstsanceV3.
 
         备份状态 取值范围如下，区分大小写: - BUILDING 备份中，不能进行重建 - COMPLETED，标识备份完成，可以重建
 
@@ -496,7 +496,7 @@ class RecycleInstsanceV3:
 
     @recycle_status.setter
     def recycle_status(self, recycle_status):
-        """Sets the recycle_status of this RecycleInstsanceV3.
+        r"""Sets the recycle_status of this RecycleInstsanceV3.
 
         备份状态 取值范围如下，区分大小写: - BUILDING 备份中，不能进行重建 - COMPLETED，标识备份完成，可以重建
 
@@ -507,7 +507,7 @@ class RecycleInstsanceV3:
 
     @property
     def is_serverless(self):
-        """Gets the is_serverless of this RecycleInstsanceV3.
+        r"""Gets the is_serverless of this RecycleInstsanceV3.
 
         是否为serverless实例 - false 不是serverless实例 - true 是serverless实例
 
@@ -518,7 +518,7 @@ class RecycleInstsanceV3:
 
     @is_serverless.setter
     def is_serverless(self, is_serverless):
-        """Sets the is_serverless of this RecycleInstsanceV3.
+        r"""Sets the is_serverless of this RecycleInstsanceV3.
 
         是否为serverless实例 - false 不是serverless实例 - true 是serverless实例
 

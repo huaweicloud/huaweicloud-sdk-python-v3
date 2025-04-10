@@ -30,7 +30,7 @@ class ShowIncidentResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None):
-        """ShowIncidentResponse
+        r"""ShowIncidentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowIncidentResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowIncidentResponse.
+        r"""Gets the code of this ShowIncidentResponse.
 
         Id value
 
@@ -69,7 +69,7 @@ class ShowIncidentResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowIncidentResponse.
+        r"""Sets the code of this ShowIncidentResponse.
 
         Id value
 
@@ -80,7 +80,7 @@ class ShowIncidentResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowIncidentResponse.
+        r"""Gets the message of this ShowIncidentResponse.
 
         Error message
 
@@ -91,7 +91,7 @@ class ShowIncidentResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowIncidentResponse.
+        r"""Sets the message of this ShowIncidentResponse.
 
         Error message
 
@@ -102,7 +102,7 @@ class ShowIncidentResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowIncidentResponse.
+        r"""Gets the data of this ShowIncidentResponse.
 
         :return: The data of this ShowIncidentResponse.
         :rtype: :class:`huaweicloudsdksa.v2.ShowIncidentDetail`
@@ -111,7 +111,7 @@ class ShowIncidentResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowIncidentResponse.
+        r"""Sets the data of this ShowIncidentResponse.
 
         :param data: The data of this ShowIncidentResponse.
         :type data: :class:`huaweicloudsdksa.v2.ShowIncidentDetail`

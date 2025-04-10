@@ -25,7 +25,7 @@ class CrossRegionType:
     }
 
     def __init__(self, cross_region_type=None):
-        """CrossRegionType
+        r"""CrossRegionType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CrossRegionType:
 
     @property
     def cross_region_type(self):
-        """Gets the cross_region_type of this CrossRegionType.
+        r"""Gets the cross_region_type of this CrossRegionType.
 
         :return: The cross_region_type of this CrossRegionType.
         :rtype: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
@@ -51,7 +51,7 @@ class CrossRegionType:
 
     @cross_region_type.setter
     def cross_region_type(self, cross_region_type):
-        """Sets the cross_region_type of this CrossRegionType.
+        r"""Sets the cross_region_type of this CrossRegionType.
 
         :param cross_region_type: The cross_region_type of this CrossRegionType.
         :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`

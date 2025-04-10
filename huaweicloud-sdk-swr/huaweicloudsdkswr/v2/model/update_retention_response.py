@@ -24,7 +24,7 @@ class UpdateRetentionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateRetentionResponse
+        r"""UpdateRetentionResponse
 
         The model defined in huaweicloud sdk
 

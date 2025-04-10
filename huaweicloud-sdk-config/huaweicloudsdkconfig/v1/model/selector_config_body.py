@@ -27,7 +27,7 @@ class SelectorConfigBody:
     }
 
     def __init__(self, all_supported=None, resource_types=None):
-        """SelectorConfigBody
+        r"""SelectorConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SelectorConfigBody:
 
     @property
     def all_supported(self):
-        """Gets the all_supported of this SelectorConfigBody.
+        r"""Gets the all_supported of this SelectorConfigBody.
 
         是否选择所有支持的资源
 
@@ -59,7 +59,7 @@ class SelectorConfigBody:
 
     @all_supported.setter
     def all_supported(self, all_supported):
-        """Sets the all_supported of this SelectorConfigBody.
+        r"""Sets the all_supported of this SelectorConfigBody.
 
         是否选择所有支持的资源
 
@@ -70,7 +70,7 @@ class SelectorConfigBody:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this SelectorConfigBody.
+        r"""Gets the resource_types of this SelectorConfigBody.
 
         资源类型列表
 
@@ -81,7 +81,7 @@ class SelectorConfigBody:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this SelectorConfigBody.
+        r"""Sets the resource_types of this SelectorConfigBody.
 
         资源类型列表
 

@@ -25,7 +25,7 @@ class RunShellCommandRequest:
     }
 
     def __init__(self, body=None):
-        """RunShellCommandRequest
+        r"""RunShellCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunShellCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunShellCommandRequest.
+        r"""Gets the body of this RunShellCommandRequest.
 
         :return: The body of this RunShellCommandRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.RunShellCommandRequestBody`
@@ -52,7 +52,7 @@ class RunShellCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunShellCommandRequest.
+        r"""Sets the body of this RunShellCommandRequest.
 
         :param body: The body of this RunShellCommandRequest.
         :type body: :class:`huaweicloudsdkcph.v1.RunShellCommandRequestBody`

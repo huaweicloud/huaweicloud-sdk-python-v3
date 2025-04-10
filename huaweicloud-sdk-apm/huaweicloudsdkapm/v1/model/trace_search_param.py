@@ -95,7 +95,7 @@ class TraceSearchParam:
     }
 
     def __init__(self, region=None, order_param=None, real_source_full_match=None, source_full_match=None, tags_content=None, start_time_string=None, end_time_string=None, time_used_min=None, time_used_max=None, contain_tags_content=None, page_size=None, page=None, parameters=None, codes=None, global_trace_id=None, global_path=None, trace_id=None, span_id=None, env_id=None, instance_id=None, app_id=None, biz_id=None, domain_id=None, source=None, real_source=None, start_time=None, time_used=None, code=None, class_name=None, is_async=None, tags=None, has_error=None, error_reasons=None, type=None, http_method=None, biz_code=None):
-        """TraceSearchParam
+        r"""TraceSearchParam
 
         The model defined in huaweicloud sdk
 
@@ -286,7 +286,7 @@ class TraceSearchParam:
 
     @property
     def region(self):
-        """Gets the region of this TraceSearchParam.
+        r"""Gets the region of this TraceSearchParam.
 
         region名称。
 
@@ -297,7 +297,7 @@ class TraceSearchParam:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TraceSearchParam.
+        r"""Sets the region of this TraceSearchParam.
 
         region名称。
 
@@ -308,7 +308,7 @@ class TraceSearchParam:
 
     @property
     def order_param(self):
-        """Gets the order_param of this TraceSearchParam.
+        r"""Gets the order_param of this TraceSearchParam.
 
         :return: The order_param of this TraceSearchParam.
         :rtype: :class:`huaweicloudsdkapm.v1.OrderParam`
@@ -317,7 +317,7 @@ class TraceSearchParam:
 
     @order_param.setter
     def order_param(self, order_param):
-        """Sets the order_param of this TraceSearchParam.
+        r"""Sets the order_param of this TraceSearchParam.
 
         :param order_param: The order_param of this TraceSearchParam.
         :type order_param: :class:`huaweicloudsdkapm.v1.OrderParam`
@@ -326,7 +326,7 @@ class TraceSearchParam:
 
     @property
     def real_source_full_match(self):
-        """Gets the real_source_full_match of this TraceSearchParam.
+        r"""Gets the real_source_full_match of this TraceSearchParam.
 
         是否为精确搜索。
 
@@ -337,7 +337,7 @@ class TraceSearchParam:
 
     @real_source_full_match.setter
     def real_source_full_match(self, real_source_full_match):
-        """Sets the real_source_full_match of this TraceSearchParam.
+        r"""Sets the real_source_full_match of this TraceSearchParam.
 
         是否为精确搜索。
 
@@ -348,7 +348,7 @@ class TraceSearchParam:
 
     @property
     def source_full_match(self):
-        """Gets the source_full_match of this TraceSearchParam.
+        r"""Gets the source_full_match of this TraceSearchParam.
 
         全匹配搜索。
 
@@ -359,7 +359,7 @@ class TraceSearchParam:
 
     @source_full_match.setter
     def source_full_match(self, source_full_match):
-        """Sets the source_full_match of this TraceSearchParam.
+        r"""Sets the source_full_match of this TraceSearchParam.
 
         全匹配搜索。
 
@@ -370,7 +370,7 @@ class TraceSearchParam:
 
     @property
     def tags_content(self):
-        """Gets the tags_content of this TraceSearchParam.
+        r"""Gets the tags_content of this TraceSearchParam.
 
         header或body体，或自定义参数，或其他tags里字段的关键词搜索。
 
@@ -381,7 +381,7 @@ class TraceSearchParam:
 
     @tags_content.setter
     def tags_content(self, tags_content):
-        """Sets the tags_content of this TraceSearchParam.
+        r"""Sets the tags_content of this TraceSearchParam.
 
         header或body体，或自定义参数，或其他tags里字段的关键词搜索。
 
@@ -392,7 +392,7 @@ class TraceSearchParam:
 
     @property
     def start_time_string(self):
-        """Gets the start_time_string of this TraceSearchParam.
+        r"""Gets the start_time_string of this TraceSearchParam.
 
         开始时间。
 
@@ -403,7 +403,7 @@ class TraceSearchParam:
 
     @start_time_string.setter
     def start_time_string(self, start_time_string):
-        """Sets the start_time_string of this TraceSearchParam.
+        r"""Sets the start_time_string of this TraceSearchParam.
 
         开始时间。
 
@@ -414,7 +414,7 @@ class TraceSearchParam:
 
     @property
     def end_time_string(self):
-        """Gets the end_time_string of this TraceSearchParam.
+        r"""Gets the end_time_string of this TraceSearchParam.
 
         结束时间。
 
@@ -425,7 +425,7 @@ class TraceSearchParam:
 
     @end_time_string.setter
     def end_time_string(self, end_time_string):
-        """Sets the end_time_string of this TraceSearchParam.
+        r"""Sets the end_time_string of this TraceSearchParam.
 
         结束时间。
 
@@ -436,7 +436,7 @@ class TraceSearchParam:
 
     @property
     def time_used_min(self):
-        """Gets the time_used_min of this TraceSearchParam.
+        r"""Gets the time_used_min of this TraceSearchParam.
 
         最小耗时。
 
@@ -447,7 +447,7 @@ class TraceSearchParam:
 
     @time_used_min.setter
     def time_used_min(self, time_used_min):
-        """Sets the time_used_min of this TraceSearchParam.
+        r"""Sets the time_used_min of this TraceSearchParam.
 
         最小耗时。
 
@@ -458,7 +458,7 @@ class TraceSearchParam:
 
     @property
     def time_used_max(self):
-        """Gets the time_used_max of this TraceSearchParam.
+        r"""Gets the time_used_max of this TraceSearchParam.
 
         最大耗时。
 
@@ -469,7 +469,7 @@ class TraceSearchParam:
 
     @time_used_max.setter
     def time_used_max(self, time_used_max):
-        """Sets the time_used_max of this TraceSearchParam.
+        r"""Sets the time_used_max of this TraceSearchParam.
 
         最大耗时。
 
@@ -480,7 +480,7 @@ class TraceSearchParam:
 
     @property
     def contain_tags_content(self):
-        """Gets the contain_tags_content of this TraceSearchParam.
+        r"""Gets the contain_tags_content of this TraceSearchParam.
 
         搜索结果是否包含tags内容详情。
 
@@ -491,7 +491,7 @@ class TraceSearchParam:
 
     @contain_tags_content.setter
     def contain_tags_content(self, contain_tags_content):
-        """Sets the contain_tags_content of this TraceSearchParam.
+        r"""Sets the contain_tags_content of this TraceSearchParam.
 
         搜索结果是否包含tags内容详情。
 
@@ -502,7 +502,7 @@ class TraceSearchParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this TraceSearchParam.
+        r"""Gets the page_size of this TraceSearchParam.
 
         每一页返回的行数。
 
@@ -513,7 +513,7 @@ class TraceSearchParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this TraceSearchParam.
+        r"""Sets the page_size of this TraceSearchParam.
 
         每一页返回的行数。
 
@@ -524,7 +524,7 @@ class TraceSearchParam:
 
     @property
     def page(self):
-        """Gets the page of this TraceSearchParam.
+        r"""Gets the page of this TraceSearchParam.
 
         查询第几页的数据,默认查询第一页。
 
@@ -535,7 +535,7 @@ class TraceSearchParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this TraceSearchParam.
+        r"""Sets the page of this TraceSearchParam.
 
         查询第几页的数据,默认查询第一页。
 
@@ -546,7 +546,7 @@ class TraceSearchParam:
 
     @property
     def parameters(self):
-        """Gets the parameters of this TraceSearchParam.
+        r"""Gets the parameters of this TraceSearchParam.
 
         参数。
 
@@ -557,7 +557,7 @@ class TraceSearchParam:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this TraceSearchParam.
+        r"""Sets the parameters of this TraceSearchParam.
 
         参数。
 
@@ -568,7 +568,7 @@ class TraceSearchParam:
 
     @property
     def codes(self):
-        """Gets the codes of this TraceSearchParam.
+        r"""Gets the codes of this TraceSearchParam.
 
         字符串格式的的状态码，用于支持多个状态码查询。
 
@@ -579,7 +579,7 @@ class TraceSearchParam:
 
     @codes.setter
     def codes(self, codes):
-        """Sets the codes of this TraceSearchParam.
+        r"""Sets the codes of this TraceSearchParam.
 
         字符串格式的的状态码，用于支持多个状态码查询。
 
@@ -590,7 +590,7 @@ class TraceSearchParam:
 
     @property
     def global_trace_id(self):
-        """Gets the global_trace_id of this TraceSearchParam.
+        r"""Gets the global_trace_id of this TraceSearchParam.
 
         vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输。
 
@@ -601,7 +601,7 @@ class TraceSearchParam:
 
     @global_trace_id.setter
     def global_trace_id(self, global_trace_id):
-        """Sets the global_trace_id of this TraceSearchParam.
+        r"""Sets the global_trace_id of this TraceSearchParam.
 
         vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输。
 
@@ -612,7 +612,7 @@ class TraceSearchParam:
 
     @property
     def global_path(self):
-        """Gets the global_path of this TraceSearchParam.
+        r"""Gets the global_path of this TraceSearchParam.
 
         虚拟traceId经过的path路径。
 
@@ -623,7 +623,7 @@ class TraceSearchParam:
 
     @global_path.setter
     def global_path(self, global_path):
-        """Sets the global_path of this TraceSearchParam.
+        r"""Sets the global_path of this TraceSearchParam.
 
         虚拟traceId经过的path路径。
 
@@ -634,7 +634,7 @@ class TraceSearchParam:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this TraceSearchParam.
+        r"""Gets the trace_id of this TraceSearchParam.
 
         在root的span调用产生的全局id，以此往后透传。
 
@@ -645,7 +645,7 @@ class TraceSearchParam:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this TraceSearchParam.
+        r"""Sets the trace_id of this TraceSearchParam.
 
         在root的span调用产生的全局id，以此往后透传。
 
@@ -656,7 +656,7 @@ class TraceSearchParam:
 
     @property
     def span_id(self):
-        """Gets the span_id of this TraceSearchParam.
+        r"""Gets the span_id of this TraceSearchParam.
 
         代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推。
 
@@ -667,7 +667,7 @@ class TraceSearchParam:
 
     @span_id.setter
     def span_id(self, span_id):
-        """Sets the span_id of this TraceSearchParam.
+        r"""Sets the span_id of this TraceSearchParam.
 
         代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推。
 
@@ -678,7 +678,7 @@ class TraceSearchParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TraceSearchParam.
+        r"""Gets the env_id of this TraceSearchParam.
 
         环境id。
 
@@ -689,7 +689,7 @@ class TraceSearchParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TraceSearchParam.
+        r"""Sets the env_id of this TraceSearchParam.
 
         环境id。
 
@@ -700,7 +700,7 @@ class TraceSearchParam:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TraceSearchParam.
+        r"""Gets the instance_id of this TraceSearchParam.
 
         实例id。
 
@@ -711,7 +711,7 @@ class TraceSearchParam:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TraceSearchParam.
+        r"""Sets the instance_id of this TraceSearchParam.
 
         实例id。
 
@@ -722,7 +722,7 @@ class TraceSearchParam:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TraceSearchParam.
+        r"""Gets the app_id of this TraceSearchParam.
 
         组件id。
 
@@ -733,7 +733,7 @@ class TraceSearchParam:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TraceSearchParam.
+        r"""Sets the app_id of this TraceSearchParam.
 
         组件id。
 
@@ -744,7 +744,7 @@ class TraceSearchParam:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this TraceSearchParam.
+        r"""Gets the biz_id of this TraceSearchParam.
 
         应用id。
 
@@ -755,7 +755,7 @@ class TraceSearchParam:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this TraceSearchParam.
+        r"""Sets the biz_id of this TraceSearchParam.
 
         应用id。
 
@@ -766,7 +766,7 @@ class TraceSearchParam:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this TraceSearchParam.
+        r"""Gets the domain_id of this TraceSearchParam.
 
         租户id。
 
@@ -777,7 +777,7 @@ class TraceSearchParam:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this TraceSearchParam.
+        r"""Sets the domain_id of this TraceSearchParam.
 
         租户id。
 
@@ -788,7 +788,7 @@ class TraceSearchParam:
 
     @property
     def source(self):
-        """Gets the source of this TraceSearchParam.
+        r"""Gets the source of this TraceSearchParam.
 
         只有是根event也就是span的时候有值。
 
@@ -799,7 +799,7 @@ class TraceSearchParam:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this TraceSearchParam.
+        r"""Sets the source of this TraceSearchParam.
 
         只有是根event也就是span的时候有值。
 
@@ -810,7 +810,7 @@ class TraceSearchParam:
 
     @property
     def real_source(self):
-        """Gets the real_source of this TraceSearchParam.
+        r"""Gets the real_source of this TraceSearchParam.
 
         根event 的时候存在，实际调用的url。
 
@@ -821,7 +821,7 @@ class TraceSearchParam:
 
     @real_source.setter
     def real_source(self, real_source):
-        """Sets the real_source of this TraceSearchParam.
+        r"""Sets the real_source of this TraceSearchParam.
 
         根event 的时候存在，实际调用的url。
 
@@ -832,7 +832,7 @@ class TraceSearchParam:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TraceSearchParam.
+        r"""Gets the start_time of this TraceSearchParam.
 
         开始时间。
 
@@ -843,7 +843,7 @@ class TraceSearchParam:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TraceSearchParam.
+        r"""Sets the start_time of this TraceSearchParam.
 
         开始时间。
 
@@ -854,7 +854,7 @@ class TraceSearchParam:
 
     @property
     def time_used(self):
-        """Gets the time_used of this TraceSearchParam.
+        r"""Gets the time_used of this TraceSearchParam.
 
         耗时。
 
@@ -865,7 +865,7 @@ class TraceSearchParam:
 
     @time_used.setter
     def time_used(self, time_used):
-        """Sets the time_used of this TraceSearchParam.
+        r"""Sets the time_used of this TraceSearchParam.
 
         耗时。
 
@@ -876,7 +876,7 @@ class TraceSearchParam:
 
     @property
     def code(self):
-        """Gets the code of this TraceSearchParam.
+        r"""Gets the code of this TraceSearchParam.
 
         状态码，针对http的调用有效。
 
@@ -887,7 +887,7 @@ class TraceSearchParam:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this TraceSearchParam.
+        r"""Sets the code of this TraceSearchParam.
 
         状态码，针对http的调用有效。
 
@@ -898,7 +898,7 @@ class TraceSearchParam:
 
     @property
     def class_name(self):
-        """Gets the class_name of this TraceSearchParam.
+        r"""Gets the class_name of this TraceSearchParam.
 
         类名。
 
@@ -909,7 +909,7 @@ class TraceSearchParam:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this TraceSearchParam.
+        r"""Sets the class_name of this TraceSearchParam.
 
         类名。
 
@@ -920,7 +920,7 @@ class TraceSearchParam:
 
     @property
     def is_async(self):
-        """Gets the is_async of this TraceSearchParam.
+        r"""Gets the is_async of this TraceSearchParam.
 
         是否异步的event。
 
@@ -931,7 +931,7 @@ class TraceSearchParam:
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this TraceSearchParam.
+        r"""Sets the is_async of this TraceSearchParam.
 
         是否异步的event。
 
@@ -942,7 +942,7 @@ class TraceSearchParam:
 
     @property
     def tags(self):
-        """Gets the tags of this TraceSearchParam.
+        r"""Gets the tags of this TraceSearchParam.
 
         包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
@@ -953,7 +953,7 @@ class TraceSearchParam:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TraceSearchParam.
+        r"""Sets the tags of this TraceSearchParam.
 
         包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
@@ -964,7 +964,7 @@ class TraceSearchParam:
 
     @property
     def has_error(self):
-        """Gets the has_error of this TraceSearchParam.
+        r"""Gets the has_error of this TraceSearchParam.
 
         是否有错误。
 
@@ -975,7 +975,7 @@ class TraceSearchParam:
 
     @has_error.setter
     def has_error(self, has_error):
-        """Sets the has_error of this TraceSearchParam.
+        r"""Sets the has_error of this TraceSearchParam.
 
         是否有错误。
 
@@ -986,7 +986,7 @@ class TraceSearchParam:
 
     @property
     def error_reasons(self):
-        """Gets the error_reasons of this TraceSearchParam.
+        r"""Gets the error_reasons of this TraceSearchParam.
 
         错误类型。
 
@@ -997,7 +997,7 @@ class TraceSearchParam:
 
     @error_reasons.setter
     def error_reasons(self, error_reasons):
-        """Sets the error_reasons of this TraceSearchParam.
+        r"""Sets the error_reasons of this TraceSearchParam.
 
         错误类型。
 
@@ -1008,7 +1008,7 @@ class TraceSearchParam:
 
     @property
     def type(self):
-        """Gets the type of this TraceSearchParam.
+        r"""Gets the type of this TraceSearchParam.
 
         类型。
 
@@ -1019,7 +1019,7 @@ class TraceSearchParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TraceSearchParam.
+        r"""Sets the type of this TraceSearchParam.
 
         类型。
 
@@ -1030,7 +1030,7 @@ class TraceSearchParam:
 
     @property
     def http_method(self):
-        """Gets the http_method of this TraceSearchParam.
+        r"""Gets the http_method of this TraceSearchParam.
 
         这里的method实际上是tags里面的http_method，只有url监控项才有。
 
@@ -1041,7 +1041,7 @@ class TraceSearchParam:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this TraceSearchParam.
+        r"""Sets the http_method of this TraceSearchParam.
 
         这里的method实际上是tags里面的http_method，只有url监控项才有。
 
@@ -1052,7 +1052,7 @@ class TraceSearchParam:
 
     @property
     def biz_code(self):
-        """Gets the biz_code of this TraceSearchParam.
+        r"""Gets the biz_code of this TraceSearchParam.
 
         业务状态码的采集。
 
@@ -1063,7 +1063,7 @@ class TraceSearchParam:
 
     @biz_code.setter
     def biz_code(self, biz_code):
-        """Sets the biz_code of this TraceSearchParam.
+        r"""Sets the biz_code of this TraceSearchParam.
 
         业务状态码的采集。
 

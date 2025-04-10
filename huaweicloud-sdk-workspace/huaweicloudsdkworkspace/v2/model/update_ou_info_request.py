@@ -27,7 +27,7 @@ class UpdateOuInfoRequest:
     }
 
     def __init__(self, ou_id=None, body=None):
-        """UpdateOuInfoRequest
+        r"""UpdateOuInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateOuInfoRequest:
 
     @property
     def ou_id(self):
-        """Gets the ou_id of this UpdateOuInfoRequest.
+        r"""Gets the ou_id of this UpdateOuInfoRequest.
 
         OU的id。
 
@@ -60,7 +60,7 @@ class UpdateOuInfoRequest:
 
     @ou_id.setter
     def ou_id(self, ou_id):
-        """Sets the ou_id of this UpdateOuInfoRequest.
+        r"""Sets the ou_id of this UpdateOuInfoRequest.
 
         OU的id。
 
@@ -71,7 +71,7 @@ class UpdateOuInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOuInfoRequest.
+        r"""Gets the body of this UpdateOuInfoRequest.
 
         :return: The body of this UpdateOuInfoRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ModifyOuNameInfoV2Req`
@@ -80,7 +80,7 @@ class UpdateOuInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOuInfoRequest.
+        r"""Sets the body of this UpdateOuInfoRequest.
 
         :param body: The body of this UpdateOuInfoRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ModifyOuNameInfoV2Req`

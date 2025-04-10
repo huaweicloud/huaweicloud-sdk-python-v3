@@ -29,7 +29,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None, body=None):
-        """BatchDeleteSecurityPermissionSetMembersRequest
+        r"""BatchDeleteSecurityPermissionSetMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this BatchDeleteSecurityPermissionSetMembersRequest.
+        r"""Gets the permission_set_id of this BatchDeleteSecurityPermissionSetMembersRequest.
 
         权限集id
 
@@ -66,7 +66,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this BatchDeleteSecurityPermissionSetMembersRequest.
+        r"""Sets the permission_set_id of this BatchDeleteSecurityPermissionSetMembersRequest.
 
         权限集id
 
@@ -77,7 +77,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchDeleteSecurityPermissionSetMembersRequest.
+        r"""Gets the workspace of this BatchDeleteSecurityPermissionSetMembersRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchDeleteSecurityPermissionSetMembersRequest.
+        r"""Sets the workspace of this BatchDeleteSecurityPermissionSetMembersRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSecurityPermissionSetMembersRequest.
+        r"""Gets the body of this BatchDeleteSecurityPermissionSetMembersRequest.
 
         :return: The body of this BatchDeleteSecurityPermissionSetMembersRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteBaseDTO`
@@ -108,7 +108,7 @@ class BatchDeleteSecurityPermissionSetMembersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSecurityPermissionSetMembersRequest.
+        r"""Sets the body of this BatchDeleteSecurityPermissionSetMembersRequest.
 
         :param body: The body of this BatchDeleteSecurityPermissionSetMembersRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteBaseDTO`

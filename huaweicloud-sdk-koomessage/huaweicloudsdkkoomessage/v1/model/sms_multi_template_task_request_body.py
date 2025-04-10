@@ -31,7 +31,7 @@ class SmsMultiTemplateTaskRequestBody:
     }
 
     def __init__(self, sms_content=None, channel_num=None, extend=None, task_name=None):
-        """SmsMultiTemplateTaskRequestBody
+        r"""SmsMultiTemplateTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @property
     def sms_content(self):
-        """Gets the sms_content of this SmsMultiTemplateTaskRequestBody.
+        r"""Gets the sms_content of this SmsMultiTemplateTaskRequestBody.
 
         短信内容。
 
@@ -73,7 +73,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @sms_content.setter
     def sms_content(self, sms_content):
-        """Sets the sms_content of this SmsMultiTemplateTaskRequestBody.
+        r"""Sets the sms_content of this SmsMultiTemplateTaskRequestBody.
 
         短信内容。
 
@@ -84,7 +84,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @property
     def channel_num(self):
-        """Gets the channel_num of this SmsMultiTemplateTaskRequestBody.
+        r"""Gets the channel_num of this SmsMultiTemplateTaskRequestBody.
 
         短信通道号。  > 模板所属签名的通道号，可以从“云消息服务KooMessage-管理控制台-短消息配置（国内）-短消息签名管理-通道号”中获取。 > 签名和模板为对应关系，模板所属签名可在“短消息模板管理”查看。未填写时默认取sms_content第一条数据模板所属签名的通道号。
 
@@ -95,7 +95,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @channel_num.setter
     def channel_num(self, channel_num):
-        """Sets the channel_num of this SmsMultiTemplateTaskRequestBody.
+        r"""Sets the channel_num of this SmsMultiTemplateTaskRequestBody.
 
         短信通道号。  > 模板所属签名的通道号，可以从“云消息服务KooMessage-管理控制台-短消息配置（国内）-短消息签名管理-通道号”中获取。 > 签名和模板为对应关系，模板所属签名可在“短消息模板管理”查看。未填写时默认取sms_content第一条数据模板所属签名的通道号。
 
@@ -106,7 +106,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this SmsMultiTemplateTaskRequestBody.
+        r"""Gets the extend of this SmsMultiTemplateTaskRequestBody.
 
         扩展参数。  在状态报告中会原样返回。  不允许赋空值，不允许携带以下字符：“{”，“}”（即大括号）。
 
@@ -117,7 +117,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this SmsMultiTemplateTaskRequestBody.
+        r"""Sets the extend of this SmsMultiTemplateTaskRequestBody.
 
         扩展参数。  在状态报告中会原样返回。  不允许赋空值，不允许携带以下字符：“{”，“}”（即大括号）。
 
@@ -128,7 +128,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this SmsMultiTemplateTaskRequestBody.
+        r"""Gets the task_name of this SmsMultiTemplateTaskRequestBody.
 
         发送任务名称。  > 不能为空白字符串，允许重复，为空时默认为Task_拼接当前时间值。
 
@@ -139,7 +139,7 @@ class SmsMultiTemplateTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this SmsMultiTemplateTaskRequestBody.
+        r"""Sets the task_name of this SmsMultiTemplateTaskRequestBody.
 
         发送任务名称。  > 不能为空白字符串，允许重复，为空时默认为Task_拼接当前时间值。
 

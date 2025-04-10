@@ -33,7 +33,7 @@ class AuthorizedObjects:
     }
 
     def __init__(self, object_type=None, object_id=None, object_name=None, user_group=None, created_at=None):
-        """AuthorizedObjects
+        r"""AuthorizedObjects
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class AuthorizedObjects:
 
     @property
     def object_type(self):
-        """Gets the object_type of this AuthorizedObjects.
+        r"""Gets the object_type of this AuthorizedObjects.
 
         绑定对象类型枚举。  - USER：用户 - USER_GROUP：用户组
 
@@ -78,7 +78,7 @@ class AuthorizedObjects:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this AuthorizedObjects.
+        r"""Sets the object_type of this AuthorizedObjects.
 
         绑定对象类型枚举。  - USER：用户 - USER_GROUP：用户组
 
@@ -89,7 +89,7 @@ class AuthorizedObjects:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AuthorizedObjects.
+        r"""Gets the object_id of this AuthorizedObjects.
 
         用户/用户组id
 
@@ -100,7 +100,7 @@ class AuthorizedObjects:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AuthorizedObjects.
+        r"""Sets the object_id of this AuthorizedObjects.
 
         用户/用户组id
 
@@ -111,7 +111,7 @@ class AuthorizedObjects:
 
     @property
     def object_name(self):
-        """Gets the object_name of this AuthorizedObjects.
+        r"""Gets the object_name of this AuthorizedObjects.
 
         用户/用户组名称
 
@@ -122,7 +122,7 @@ class AuthorizedObjects:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this AuthorizedObjects.
+        r"""Sets the object_name of this AuthorizedObjects.
 
         用户/用户组名称
 
@@ -133,7 +133,7 @@ class AuthorizedObjects:
 
     @property
     def user_group(self):
-        """Gets the user_group of this AuthorizedObjects.
+        r"""Gets the user_group of this AuthorizedObjects.
 
         桌面用户所属的用户权限组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -144,7 +144,7 @@ class AuthorizedObjects:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this AuthorizedObjects.
+        r"""Sets the user_group of this AuthorizedObjects.
 
         桌面用户所属的用户权限组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -155,7 +155,7 @@ class AuthorizedObjects:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AuthorizedObjects.
+        r"""Gets the created_at of this AuthorizedObjects.
 
         创建时间。格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
 
@@ -166,7 +166,7 @@ class AuthorizedObjects:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AuthorizedObjects.
+        r"""Sets the created_at of this AuthorizedObjects.
 
         创建时间。格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
 

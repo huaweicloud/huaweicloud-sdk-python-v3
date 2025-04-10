@@ -35,7 +35,7 @@ class BatchSetAlarmNotifyInfo:
     }
 
     def __init__(self, subscriptions=None, topic_urn=None, delay_time=None, rto_delay=None, rpo_delay=None, alarm_to_user=None):
-        """BatchSetAlarmNotifyInfo
+        r"""BatchSetAlarmNotifyInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BatchSetAlarmNotifyInfo:
 
     @property
     def subscriptions(self):
-        """Gets the subscriptions of this BatchSetAlarmNotifyInfo.
+        r"""Gets the subscriptions of this BatchSetAlarmNotifyInfo.
 
         手动输入手机号、邮箱模式时填写
 
@@ -89,7 +89,7 @@ class BatchSetAlarmNotifyInfo:
 
     @subscriptions.setter
     def subscriptions(self, subscriptions):
-        """Sets the subscriptions of this BatchSetAlarmNotifyInfo.
+        r"""Sets the subscriptions of this BatchSetAlarmNotifyInfo.
 
         手动输入手机号、邮箱模式时填写
 
@@ -100,7 +100,7 @@ class BatchSetAlarmNotifyInfo:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this BatchSetAlarmNotifyInfo.
+        r"""Gets the topic_urn of this BatchSetAlarmNotifyInfo.
 
         主题资源标识
 
@@ -111,7 +111,7 @@ class BatchSetAlarmNotifyInfo:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this BatchSetAlarmNotifyInfo.
+        r"""Sets the topic_urn of this BatchSetAlarmNotifyInfo.
 
         主题资源标识
 
@@ -122,7 +122,7 @@ class BatchSetAlarmNotifyInfo:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this BatchSetAlarmNotifyInfo.
+        r"""Gets the delay_time of this BatchSetAlarmNotifyInfo.
 
         订阅延迟时间
 
@@ -133,7 +133,7 @@ class BatchSetAlarmNotifyInfo:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this BatchSetAlarmNotifyInfo.
+        r"""Sets the delay_time of this BatchSetAlarmNotifyInfo.
 
         订阅延迟时间
 
@@ -144,7 +144,7 @@ class BatchSetAlarmNotifyInfo:
 
     @property
     def rto_delay(self):
-        """Gets the rto_delay of this BatchSetAlarmNotifyInfo.
+        r"""Gets the rto_delay of this BatchSetAlarmNotifyInfo.
 
         rto延迟时间
 
@@ -155,7 +155,7 @@ class BatchSetAlarmNotifyInfo:
 
     @rto_delay.setter
     def rto_delay(self, rto_delay):
-        """Sets the rto_delay of this BatchSetAlarmNotifyInfo.
+        r"""Sets the rto_delay of this BatchSetAlarmNotifyInfo.
 
         rto延迟时间
 
@@ -166,7 +166,7 @@ class BatchSetAlarmNotifyInfo:
 
     @property
     def rpo_delay(self):
-        """Gets the rpo_delay of this BatchSetAlarmNotifyInfo.
+        r"""Gets the rpo_delay of this BatchSetAlarmNotifyInfo.
 
         rpo延迟时间
 
@@ -177,7 +177,7 @@ class BatchSetAlarmNotifyInfo:
 
     @rpo_delay.setter
     def rpo_delay(self, rpo_delay):
-        """Sets the rpo_delay of this BatchSetAlarmNotifyInfo.
+        r"""Sets the rpo_delay of this BatchSetAlarmNotifyInfo.
 
         rpo延迟时间
 
@@ -188,7 +188,7 @@ class BatchSetAlarmNotifyInfo:
 
     @property
     def alarm_to_user(self):
-        """Gets the alarm_to_user of this BatchSetAlarmNotifyInfo.
+        r"""Gets the alarm_to_user of this BatchSetAlarmNotifyInfo.
 
         异常告警是否通知用户，不填默认为false
 
@@ -199,7 +199,7 @@ class BatchSetAlarmNotifyInfo:
 
     @alarm_to_user.setter
     def alarm_to_user(self, alarm_to_user):
-        """Sets the alarm_to_user of this BatchSetAlarmNotifyInfo.
+        r"""Sets the alarm_to_user of this BatchSetAlarmNotifyInfo.
 
         异常告警是否通知用户，不填默认为false
 

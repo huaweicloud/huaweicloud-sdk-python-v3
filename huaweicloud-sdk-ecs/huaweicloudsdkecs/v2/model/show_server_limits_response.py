@@ -26,7 +26,7 @@ class ShowServerLimitsResponse(SdkResponse):
     }
 
     def __init__(self, absolute=None):
-        """ShowServerLimitsResponse
+        r"""ShowServerLimitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowServerLimitsResponse(SdkResponse):
 
     @property
     def absolute(self):
-        """Gets the absolute of this ShowServerLimitsResponse.
+        r"""Gets the absolute of this ShowServerLimitsResponse.
 
         :return: The absolute of this ShowServerLimitsResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerLimits`
@@ -53,7 +53,7 @@ class ShowServerLimitsResponse(SdkResponse):
 
     @absolute.setter
     def absolute(self, absolute):
-        """Sets the absolute of this ShowServerLimitsResponse.
+        r"""Sets the absolute of this ShowServerLimitsResponse.
 
         :param absolute: The absolute of this ShowServerLimitsResponse.
         :type absolute: :class:`huaweicloudsdkecs.v2.ServerLimits`

@@ -27,7 +27,7 @@ class UpdateGlobalVariableRequest:
     }
 
     def __init__(self, var_name=None, body=None):
-        """UpdateGlobalVariableRequest
+        r"""UpdateGlobalVariableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGlobalVariableRequest:
 
     @property
     def var_name(self):
-        """Gets the var_name of this UpdateGlobalVariableRequest.
+        r"""Gets the var_name of this UpdateGlobalVariableRequest.
 
         全局变量名，名称只能包含数字、英文字母和下划线，但不能是纯数字，不能以下划线开头，且不能超过128字符
 
@@ -60,7 +60,7 @@ class UpdateGlobalVariableRequest:
 
     @var_name.setter
     def var_name(self, var_name):
-        """Sets the var_name of this UpdateGlobalVariableRequest.
+        r"""Sets the var_name of this UpdateGlobalVariableRequest.
 
         全局变量名，名称只能包含数字、英文字母和下划线，但不能是纯数字，不能以下划线开头，且不能超过128字符
 
@@ -71,7 +71,7 @@ class UpdateGlobalVariableRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGlobalVariableRequest.
+        r"""Gets the body of this UpdateGlobalVariableRequest.
 
         :return: The body of this UpdateGlobalVariableRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGlobalVariableRequestBody`
@@ -80,7 +80,7 @@ class UpdateGlobalVariableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGlobalVariableRequest.
+        r"""Sets the body of this UpdateGlobalVariableRequest.
 
         :param body: The body of this UpdateGlobalVariableRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateGlobalVariableRequestBody`

@@ -30,7 +30,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, replications=None, ext_text=None):
-        """ListClickHouseDataBaseReplicationResponse
+        r"""ListClickHouseDataBaseReplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListClickHouseDataBaseReplicationResponse.
+        r"""Gets the total_count of this ListClickHouseDataBaseReplicationResponse.
 
         查询数据同步任务数。
 
@@ -69,7 +69,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListClickHouseDataBaseReplicationResponse.
+        r"""Sets the total_count of this ListClickHouseDataBaseReplicationResponse.
 
         查询数据同步任务数。
 
@@ -80,7 +80,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @property
     def replications(self):
-        """Gets the replications of this ListClickHouseDataBaseReplicationResponse.
+        r"""Gets the replications of this ListClickHouseDataBaseReplicationResponse.
 
         数据同步任务信息。
 
@@ -91,7 +91,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @replications.setter
     def replications(self, replications):
-        """Sets the replications of this ListClickHouseDataBaseReplicationResponse.
+        r"""Sets the replications of this ListClickHouseDataBaseReplicationResponse.
 
         数据同步任务信息。
 
@@ -102,7 +102,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @property
     def ext_text(self):
-        """Gets the ext_text of this ListClickHouseDataBaseReplicationResponse.
+        r"""Gets the ext_text of this ListClickHouseDataBaseReplicationResponse.
 
         taurus操作表示，重启、规格变更、倒换等。
 
@@ -113,7 +113,7 @@ class ListClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @ext_text.setter
     def ext_text(self, ext_text):
-        """Sets the ext_text of this ListClickHouseDataBaseReplicationResponse.
+        r"""Sets the ext_text of this ListClickHouseDataBaseReplicationResponse.
 
         taurus操作表示，重启、规格变更、倒换等。
 

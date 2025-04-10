@@ -31,7 +31,7 @@ class CheckNetAclRequest:
     }
 
     def __init__(self, t_project_id=None, t_network_id=None, region_id=None, os_type=None):
-        """CheckNetAclRequest
+        r"""CheckNetAclRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CheckNetAclRequest:
 
     @property
     def t_project_id(self):
-        """Gets the t_project_id of this CheckNetAclRequest.
+        r"""Gets the t_project_id of this CheckNetAclRequest.
 
         目的虚拟机所属project_id
 
@@ -71,7 +71,7 @@ class CheckNetAclRequest:
 
     @t_project_id.setter
     def t_project_id(self, t_project_id):
-        """Sets the t_project_id of this CheckNetAclRequest.
+        r"""Sets the t_project_id of this CheckNetAclRequest.
 
         目的虚拟机所属project_id
 
@@ -82,7 +82,7 @@ class CheckNetAclRequest:
 
     @property
     def t_network_id(self):
-        """Gets the t_network_id of this CheckNetAclRequest.
+        r"""Gets the t_network_id of this CheckNetAclRequest.
 
         目的端子网ID
 
@@ -93,7 +93,7 @@ class CheckNetAclRequest:
 
     @t_network_id.setter
     def t_network_id(self, t_network_id):
-        """Sets the t_network_id of this CheckNetAclRequest.
+        r"""Sets the t_network_id of this CheckNetAclRequest.
 
         目的端子网ID
 
@@ -104,7 +104,7 @@ class CheckNetAclRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CheckNetAclRequest.
+        r"""Gets the region_id of this CheckNetAclRequest.
 
         区域ID
 
@@ -115,7 +115,7 @@ class CheckNetAclRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CheckNetAclRequest.
+        r"""Sets the region_id of this CheckNetAclRequest.
 
         区域ID
 
@@ -126,7 +126,7 @@ class CheckNetAclRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this CheckNetAclRequest.
+        r"""Gets the os_type of this CheckNetAclRequest.
 
         操作系统类型
 
@@ -137,7 +137,7 @@ class CheckNetAclRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this CheckNetAclRequest.
+        r"""Sets the os_type of this CheckNetAclRequest.
 
         操作系统类型
 

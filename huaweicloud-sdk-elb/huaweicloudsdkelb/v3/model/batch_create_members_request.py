@@ -27,7 +27,7 @@ class BatchCreateMembersRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """BatchCreateMembersRequest
+        r"""BatchCreateMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateMembersRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this BatchCreateMembersRequest.
+        r"""Gets the pool_id of this BatchCreateMembersRequest.
 
         参数解释：后端服务器组ID。
 
@@ -60,7 +60,7 @@ class BatchCreateMembersRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this BatchCreateMembersRequest.
+        r"""Sets the pool_id of this BatchCreateMembersRequest.
 
         参数解释：后端服务器组ID。
 
@@ -71,7 +71,7 @@ class BatchCreateMembersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateMembersRequest.
+        r"""Gets the body of this BatchCreateMembersRequest.
 
         :return: The body of this BatchCreateMembersRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchCreateMembersRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateMembersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateMembersRequest.
+        r"""Sets the body of this BatchCreateMembersRequest.
 
         :param body: The body of this BatchCreateMembersRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchCreateMembersRequestBody`

@@ -63,7 +63,7 @@ class CreateAutJobReq:
     }
 
     def __init__(self, name=None, description=None, database_id=None, database_column=None, database_column_type=None, clean_database_column=None, database_trigger=None, tool_id=None, tool_type=None, job_name=None, job_name_type=None, job_description=None, labels=None, priority=None, timeout=None, output_dir=None, output_dir_type=None, node_labels=None, io_acc_id=None, tasks=None):
-        """CreateAutJobReq
+        r"""CreateAutJobReq
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class CreateAutJobReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateAutJobReq.
+        r"""Gets the name of this CreateAutJobReq.
 
         自动作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -180,7 +180,7 @@ class CreateAutJobReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAutJobReq.
+        r"""Sets the name of this CreateAutJobReq.
 
         自动作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -191,7 +191,7 @@ class CreateAutJobReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateAutJobReq.
+        r"""Gets the description of this CreateAutJobReq.
 
         自动作业的描述,取值范围：输入字符最大长度为255
 
@@ -202,7 +202,7 @@ class CreateAutJobReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAutJobReq.
+        r"""Sets the description of this CreateAutJobReq.
 
         自动作业的描述,取值范围：输入字符最大长度为255
 
@@ -213,7 +213,7 @@ class CreateAutJobReq:
 
     @property
     def database_id(self):
-        """Gets the database_id of this CreateAutJobReq.
+        r"""Gets the database_id of this CreateAutJobReq.
 
         自动作业依赖的数据库ID
 
@@ -224,7 +224,7 @@ class CreateAutJobReq:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this CreateAutJobReq.
+        r"""Sets the database_id of this CreateAutJobReq.
 
         自动作业依赖的数据库ID
 
@@ -235,7 +235,7 @@ class CreateAutJobReq:
 
     @property
     def database_column(self):
-        """Gets the database_column of this CreateAutJobReq.
+        r"""Gets the database_column of this CreateAutJobReq.
 
         自动作业状态更新列
 
@@ -246,7 +246,7 @@ class CreateAutJobReq:
 
     @database_column.setter
     def database_column(self, database_column):
-        """Sets the database_column of this CreateAutJobReq.
+        r"""Sets the database_column of this CreateAutJobReq.
 
         自动作业状态更新列
 
@@ -257,7 +257,7 @@ class CreateAutJobReq:
 
     @property
     def database_column_type(self):
-        """Gets the database_column_type of this CreateAutJobReq.
+        r"""Gets the database_column_type of this CreateAutJobReq.
 
         自动作业状态更新列的类型，不填默认为EXISTED
 
@@ -268,7 +268,7 @@ class CreateAutJobReq:
 
     @database_column_type.setter
     def database_column_type(self, database_column_type):
-        """Sets the database_column_type of this CreateAutJobReq.
+        r"""Sets the database_column_type of this CreateAutJobReq.
 
         自动作业状态更新列的类型，不填默认为EXISTED
 
@@ -279,7 +279,7 @@ class CreateAutJobReq:
 
     @property
     def clean_database_column(self):
-        """Gets the clean_database_column of this CreateAutJobReq.
+        r"""Gets the clean_database_column of this CreateAutJobReq.
 
         是否清空作业状态更新列
 
@@ -290,7 +290,7 @@ class CreateAutJobReq:
 
     @clean_database_column.setter
     def clean_database_column(self, clean_database_column):
-        """Sets the clean_database_column of this CreateAutJobReq.
+        r"""Sets the clean_database_column of this CreateAutJobReq.
 
         是否清空作业状态更新列
 
@@ -301,7 +301,7 @@ class CreateAutJobReq:
 
     @property
     def database_trigger(self):
-        """Gets the database_trigger of this CreateAutJobReq.
+        r"""Gets the database_trigger of this CreateAutJobReq.
 
         自动作业触发器
 
@@ -312,7 +312,7 @@ class CreateAutJobReq:
 
     @database_trigger.setter
     def database_trigger(self, database_trigger):
-        """Sets the database_trigger of this CreateAutJobReq.
+        r"""Sets the database_trigger of this CreateAutJobReq.
 
         自动作业触发器
 
@@ -323,7 +323,7 @@ class CreateAutJobReq:
 
     @property
     def tool_id(self):
-        """Gets the tool_id of this CreateAutJobReq.
+        r"""Gets the tool_id of this CreateAutJobReq.
 
         作业依赖的组件id，组件当前仅支持流程，取值范围[1,135]，支持大小写字母和数字。目前支持两种格式，特殊id：{流程名称}::{流程版本}::{源项目名称}；正常id：流程id
 
@@ -334,7 +334,7 @@ class CreateAutJobReq:
 
     @tool_id.setter
     def tool_id(self, tool_id):
-        """Sets the tool_id of this CreateAutJobReq.
+        r"""Sets the tool_id of this CreateAutJobReq.
 
         作业依赖的组件id，组件当前仅支持流程，取值范围[1,135]，支持大小写字母和数字。目前支持两种格式，特殊id：{流程名称}::{流程版本}::{源项目名称}；正常id：流程id
 
@@ -345,7 +345,7 @@ class CreateAutJobReq:
 
     @property
     def tool_type(self):
-        """Gets the tool_type of this CreateAutJobReq.
+        r"""Gets the tool_type of this CreateAutJobReq.
 
         作业依赖的组件类型，仅支持填写workflow
 
@@ -356,7 +356,7 @@ class CreateAutJobReq:
 
     @tool_type.setter
     def tool_type(self, tool_type):
-        """Sets the tool_type of this CreateAutJobReq.
+        r"""Sets the tool_type of this CreateAutJobReq.
 
         作业依赖的组件类型，仅支持填写workflow
 
@@ -367,7 +367,7 @@ class CreateAutJobReq:
 
     @property
     def job_name(self):
-        """Gets the job_name of this CreateAutJobReq.
+        r"""Gets the job_name of this CreateAutJobReq.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -378,7 +378,7 @@ class CreateAutJobReq:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this CreateAutJobReq.
+        r"""Sets the job_name of this CreateAutJobReq.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -389,7 +389,7 @@ class CreateAutJobReq:
 
     @property
     def job_name_type(self):
-        """Gets the job_name_type of this CreateAutJobReq.
+        r"""Gets the job_name_type of this CreateAutJobReq.
 
         :return: The job_name_type of this CreateAutJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobNameType`
@@ -398,7 +398,7 @@ class CreateAutJobReq:
 
     @job_name_type.setter
     def job_name_type(self, job_name_type):
-        """Sets the job_name_type of this CreateAutJobReq.
+        r"""Sets the job_name_type of this CreateAutJobReq.
 
         :param job_name_type: The job_name_type of this CreateAutJobReq.
         :type job_name_type: :class:`huaweicloudsdkeihealth.v1.JobNameType`
@@ -407,7 +407,7 @@ class CreateAutJobReq:
 
     @property
     def job_description(self):
-        """Gets the job_description of this CreateAutJobReq.
+        r"""Gets the job_description of this CreateAutJobReq.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -418,7 +418,7 @@ class CreateAutJobReq:
 
     @job_description.setter
     def job_description(self, job_description):
-        """Sets the job_description of this CreateAutJobReq.
+        r"""Sets the job_description of this CreateAutJobReq.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -429,7 +429,7 @@ class CreateAutJobReq:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateAutJobReq.
+        r"""Gets the labels of this CreateAutJobReq.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
 
@@ -440,7 +440,7 @@ class CreateAutJobReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateAutJobReq.
+        r"""Sets the labels of this CreateAutJobReq.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
 
@@ -451,7 +451,7 @@ class CreateAutJobReq:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateAutJobReq.
+        r"""Gets the priority of this CreateAutJobReq.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -462,7 +462,7 @@ class CreateAutJobReq:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateAutJobReq.
+        r"""Sets the priority of this CreateAutJobReq.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -473,7 +473,7 @@ class CreateAutJobReq:
 
     @property
     def timeout(self):
-        """Gets the timeout of this CreateAutJobReq.
+        r"""Gets the timeout of this CreateAutJobReq.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -484,7 +484,7 @@ class CreateAutJobReq:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this CreateAutJobReq.
+        r"""Sets the timeout of this CreateAutJobReq.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -495,7 +495,7 @@ class CreateAutJobReq:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this CreateAutJobReq.
+        r"""Gets the output_dir of this CreateAutJobReq.
 
         作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -506,7 +506,7 @@ class CreateAutJobReq:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this CreateAutJobReq.
+        r"""Sets the output_dir of this CreateAutJobReq.
 
         作业结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -517,7 +517,7 @@ class CreateAutJobReq:
 
     @property
     def output_dir_type(self):
-        """Gets the output_dir_type of this CreateAutJobReq.
+        r"""Gets the output_dir_type of this CreateAutJobReq.
 
         输出路径的类型
 
@@ -528,7 +528,7 @@ class CreateAutJobReq:
 
     @output_dir_type.setter
     def output_dir_type(self, output_dir_type):
-        """Sets the output_dir_type of this CreateAutJobReq.
+        r"""Sets the output_dir_type of this CreateAutJobReq.
 
         输出路径的类型
 
@@ -539,7 +539,7 @@ class CreateAutJobReq:
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this CreateAutJobReq.
+        r"""Gets the node_labels of this CreateAutJobReq.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -550,7 +550,7 @@ class CreateAutJobReq:
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this CreateAutJobReq.
+        r"""Sets the node_labels of this CreateAutJobReq.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -561,7 +561,7 @@ class CreateAutJobReq:
 
     @property
     def io_acc_id(self):
-        """Gets the io_acc_id of this CreateAutJobReq.
+        r"""Gets the io_acc_id of this CreateAutJobReq.
 
         自动作业使用的IO加速实例id，不填表示不使用
 
@@ -572,7 +572,7 @@ class CreateAutJobReq:
 
     @io_acc_id.setter
     def io_acc_id(self, io_acc_id):
-        """Sets the io_acc_id of this CreateAutJobReq.
+        r"""Sets the io_acc_id of this CreateAutJobReq.
 
         自动作业使用的IO加速实例id，不填表示不使用
 
@@ -583,7 +583,7 @@ class CreateAutJobReq:
 
     @property
     def tasks(self):
-        """Gets the tasks of this CreateAutJobReq.
+        r"""Gets the tasks of this CreateAutJobReq.
 
         自动作业依赖的流程信息
 
@@ -594,7 +594,7 @@ class CreateAutJobReq:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this CreateAutJobReq.
+        r"""Sets the tasks of this CreateAutJobReq.
 
         自动作业依赖的流程信息
 

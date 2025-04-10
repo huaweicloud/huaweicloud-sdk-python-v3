@@ -26,7 +26,7 @@ class CreateDatabaseWaterMarkResponse(SdkResponse):
     }
 
     def __init__(self, marked_data=None):
-        """CreateDatabaseWaterMarkResponse
+        r"""CreateDatabaseWaterMarkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDatabaseWaterMarkResponse(SdkResponse):
 
     @property
     def marked_data(self):
-        """Gets the marked_data of this CreateDatabaseWaterMarkResponse.
+        r"""Gets the marked_data of this CreateDatabaseWaterMarkResponse.
 
         嵌入水印后的数据
 
@@ -55,7 +55,7 @@ class CreateDatabaseWaterMarkResponse(SdkResponse):
 
     @marked_data.setter
     def marked_data(self, marked_data):
-        """Sets the marked_data of this CreateDatabaseWaterMarkResponse.
+        r"""Sets the marked_data of this CreateDatabaseWaterMarkResponse.
 
         嵌入水印后的数据
 

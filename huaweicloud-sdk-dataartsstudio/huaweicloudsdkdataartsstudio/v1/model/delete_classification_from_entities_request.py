@@ -29,7 +29,7 @@ class DeleteClassificationFromEntitiesRequest:
     }
 
     def __init__(self, workspace=None, guid=None, body=None):
-        """DeleteClassificationFromEntitiesRequest
+        r"""DeleteClassificationFromEntitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteClassificationFromEntitiesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteClassificationFromEntitiesRequest.
+        r"""Gets the workspace of this DeleteClassificationFromEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class DeleteClassificationFromEntitiesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteClassificationFromEntitiesRequest.
+        r"""Sets the workspace of this DeleteClassificationFromEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class DeleteClassificationFromEntitiesRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this DeleteClassificationFromEntitiesRequest.
+        r"""Gets the guid of this DeleteClassificationFromEntitiesRequest.
 
         资产标识guid
 
@@ -88,7 +88,7 @@ class DeleteClassificationFromEntitiesRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this DeleteClassificationFromEntitiesRequest.
+        r"""Sets the guid of this DeleteClassificationFromEntitiesRequest.
 
         资产标识guid
 
@@ -99,7 +99,7 @@ class DeleteClassificationFromEntitiesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteClassificationFromEntitiesRequest.
+        r"""Gets the body of this DeleteClassificationFromEntitiesRequest.
 
         :return: The body of this DeleteClassificationFromEntitiesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenClassification`
@@ -108,7 +108,7 @@ class DeleteClassificationFromEntitiesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteClassificationFromEntitiesRequest.
+        r"""Sets the body of this DeleteClassificationFromEntitiesRequest.
 
         :param body: The body of this DeleteClassificationFromEntitiesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.OpenClassification`

@@ -42,7 +42,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
     }
 
     def __init__(self, migration_project_id=None, migration_project_name=None, evaluation_project_id=None, evaluation_project_name=None, migration_project_status=None, permission_check_status=None, resource_id=None, created_time=None, updated_time=None):
-        """ShowMigrationProjectStatusResponse
+        r"""ShowMigrationProjectStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this ShowMigrationProjectStatusResponse.
+        r"""Gets the migration_project_id of this ShowMigrationProjectStatusResponse.
 
         迁移项目ID。
 
@@ -111,7 +111,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this ShowMigrationProjectStatusResponse.
+        r"""Sets the migration_project_id of this ShowMigrationProjectStatusResponse.
 
         迁移项目ID。
 
@@ -122,7 +122,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def migration_project_name(self):
-        """Gets the migration_project_name of this ShowMigrationProjectStatusResponse.
+        r"""Gets the migration_project_name of this ShowMigrationProjectStatusResponse.
 
         迁移项目名称。
 
@@ -133,7 +133,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @migration_project_name.setter
     def migration_project_name(self, migration_project_name):
-        """Sets the migration_project_name of this ShowMigrationProjectStatusResponse.
+        r"""Sets the migration_project_name of this ShowMigrationProjectStatusResponse.
 
         迁移项目名称。
 
@@ -144,7 +144,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this ShowMigrationProjectStatusResponse.
+        r"""Gets the evaluation_project_id of this ShowMigrationProjectStatusResponse.
 
         评估项目ID。
 
@@ -155,7 +155,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this ShowMigrationProjectStatusResponse.
+        r"""Sets the evaluation_project_id of this ShowMigrationProjectStatusResponse.
 
         评估项目ID。
 
@@ -166,7 +166,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this ShowMigrationProjectStatusResponse.
+        r"""Gets the evaluation_project_name of this ShowMigrationProjectStatusResponse.
 
         评估项目名称。
 
@@ -177,7 +177,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this ShowMigrationProjectStatusResponse.
+        r"""Sets the evaluation_project_name of this ShowMigrationProjectStatusResponse.
 
         评估项目名称。
 
@@ -188,7 +188,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def migration_project_status(self):
-        """Gets the migration_project_status of this ShowMigrationProjectStatusResponse.
+        r"""Gets the migration_project_status of this ShowMigrationProjectStatusResponse.
 
         迁移项目状态。
 
@@ -199,7 +199,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @migration_project_status.setter
     def migration_project_status(self, migration_project_status):
-        """Sets the migration_project_status of this ShowMigrationProjectStatusResponse.
+        r"""Sets the migration_project_status of this ShowMigrationProjectStatusResponse.
 
         迁移项目状态。
 
@@ -210,7 +210,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def permission_check_status(self):
-        """Gets the permission_check_status of this ShowMigrationProjectStatusResponse.
+        r"""Gets the permission_check_status of this ShowMigrationProjectStatusResponse.
 
         目标库权限检查状态。
 
@@ -221,7 +221,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @permission_check_status.setter
     def permission_check_status(self, permission_check_status):
-        """Sets the permission_check_status of this ShowMigrationProjectStatusResponse.
+        r"""Sets the permission_check_status of this ShowMigrationProjectStatusResponse.
 
         目标库权限检查状态。
 
@@ -232,7 +232,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowMigrationProjectStatusResponse.
+        r"""Gets the resource_id of this ShowMigrationProjectStatusResponse.
 
         资源ID。
 
@@ -243,7 +243,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowMigrationProjectStatusResponse.
+        r"""Sets the resource_id of this ShowMigrationProjectStatusResponse.
 
         资源ID。
 
@@ -254,7 +254,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowMigrationProjectStatusResponse.
+        r"""Gets the created_time of this ShowMigrationProjectStatusResponse.
 
         创建时间。
 
@@ -265,7 +265,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowMigrationProjectStatusResponse.
+        r"""Sets the created_time of this ShowMigrationProjectStatusResponse.
 
         创建时间。
 
@@ -276,7 +276,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowMigrationProjectStatusResponse.
+        r"""Gets the updated_time of this ShowMigrationProjectStatusResponse.
 
         更新时间。
 
@@ -287,7 +287,7 @@ class ShowMigrationProjectStatusResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowMigrationProjectStatusResponse.
+        r"""Sets the updated_time of this ShowMigrationProjectStatusResponse.
 
         更新时间。
 

@@ -26,7 +26,7 @@ class AgencyKindObj:
     }
 
     def __init__(self):
-        """AgencyKindObj
+        r"""AgencyKindObj
 
         The model defined in huaweicloud sdk
 

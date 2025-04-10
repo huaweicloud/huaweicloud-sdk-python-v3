@@ -26,7 +26,7 @@ class ShowResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowResourceTagsResponse
+        r"""ShowResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowResourceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowResourceTagsResponse.
+        r"""Gets the tags of this ShowResourceTagsResponse.
 
         :return: The tags of this ShowResourceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
@@ -53,7 +53,7 @@ class ShowResourceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowResourceTagsResponse.
+        r"""Sets the tags of this ShowResourceTagsResponse.
 
         :param tags: The tags of this ShowResourceTagsResponse.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]

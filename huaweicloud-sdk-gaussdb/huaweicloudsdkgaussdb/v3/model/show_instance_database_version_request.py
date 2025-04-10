@@ -27,7 +27,7 @@ class ShowInstanceDatabaseVersionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowInstanceDatabaseVersionRequest
+        r"""ShowInstanceDatabaseVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInstanceDatabaseVersionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowInstanceDatabaseVersionRequest.
+        r"""Gets the x_language of this ShowInstanceDatabaseVersionRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -60,7 +60,7 @@ class ShowInstanceDatabaseVersionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceDatabaseVersionRequest.
+        r"""Sets the x_language of this ShowInstanceDatabaseVersionRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -71,7 +71,7 @@ class ShowInstanceDatabaseVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceDatabaseVersionRequest.
+        r"""Gets the instance_id of this ShowInstanceDatabaseVersionRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -82,7 +82,7 @@ class ShowInstanceDatabaseVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceDatabaseVersionRequest.
+        r"""Sets the instance_id of this ShowInstanceDatabaseVersionRequest.
 
         实例ID，严格匹配UUID规则。
 

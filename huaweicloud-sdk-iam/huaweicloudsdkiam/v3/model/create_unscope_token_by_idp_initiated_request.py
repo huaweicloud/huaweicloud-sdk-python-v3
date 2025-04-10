@@ -27,7 +27,7 @@ class CreateUnscopeTokenByIdpInitiatedRequest:
     }
 
     def __init__(self, x_idp_id=None, body=None):
-        """CreateUnscopeTokenByIdpInitiatedRequest
+        r"""CreateUnscopeTokenByIdpInitiatedRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateUnscopeTokenByIdpInitiatedRequest:
 
     @property
     def x_idp_id(self):
-        """Gets the x_idp_id of this CreateUnscopeTokenByIdpInitiatedRequest.
+        r"""Gets the x_idp_id of this CreateUnscopeTokenByIdpInitiatedRequest.
 
         身份提供商ID。
 
@@ -60,7 +60,7 @@ class CreateUnscopeTokenByIdpInitiatedRequest:
 
     @x_idp_id.setter
     def x_idp_id(self, x_idp_id):
-        """Sets the x_idp_id of this CreateUnscopeTokenByIdpInitiatedRequest.
+        r"""Sets the x_idp_id of this CreateUnscopeTokenByIdpInitiatedRequest.
 
         身份提供商ID。
 
@@ -71,7 +71,7 @@ class CreateUnscopeTokenByIdpInitiatedRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUnscopeTokenByIdpInitiatedRequest.
+        r"""Gets the body of this CreateUnscopeTokenByIdpInitiatedRequest.
 
         :return: The body of this CreateUnscopeTokenByIdpInitiatedRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUnscopeTokenByIdpInitiatedRequestBody`
@@ -80,7 +80,7 @@ class CreateUnscopeTokenByIdpInitiatedRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUnscopeTokenByIdpInitiatedRequest.
+        r"""Sets the body of this CreateUnscopeTokenByIdpInitiatedRequest.
 
         :param body: The body of this CreateUnscopeTokenByIdpInitiatedRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateUnscopeTokenByIdpInitiatedRequestBody`

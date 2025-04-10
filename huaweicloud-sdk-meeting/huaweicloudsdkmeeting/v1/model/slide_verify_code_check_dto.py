@@ -35,7 +35,7 @@ class SlideVerifyCodeCheckDTO:
     }
 
     def __init__(self, user=None, client_type=None, check_type=None, token=None, point_x=None, slide_time=None):
-        """SlideVerifyCodeCheckDTO
+        r"""SlideVerifyCodeCheckDTO
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class SlideVerifyCodeCheckDTO:
 
     @property
     def user(self):
-        """Gets the user of this SlideVerifyCodeCheckDTO.
+        r"""Gets the user of this SlideVerifyCodeCheckDTO.
 
         必须和发送验证码时带的用户身份信息相同。 
 
@@ -84,7 +84,7 @@ class SlideVerifyCodeCheckDTO:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this SlideVerifyCodeCheckDTO.
+        r"""Sets the user of this SlideVerifyCodeCheckDTO.
 
         必须和发送验证码时带的用户身份信息相同。 
 
@@ -95,7 +95,7 @@ class SlideVerifyCodeCheckDTO:
 
     @property
     def client_type(self):
-        """Gets the client_type of this SlideVerifyCodeCheckDTO.
+        r"""Gets the client_type of this SlideVerifyCodeCheckDTO.
 
         登录客户端类型。 * 0：Web客户端类型 * 5：PC客户端 * 6：移动客户端 
 
@@ -106,7 +106,7 @@ class SlideVerifyCodeCheckDTO:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this SlideVerifyCodeCheckDTO.
+        r"""Sets the client_type of this SlideVerifyCodeCheckDTO.
 
         登录客户端类型。 * 0：Web客户端类型 * 5：PC客户端 * 6：移动客户端 
 
@@ -117,7 +117,7 @@ class SlideVerifyCodeCheckDTO:
 
     @property
     def check_type(self):
-        """Gets the check_type of this SlideVerifyCodeCheckDTO.
+        r"""Gets the check_type of this SlideVerifyCodeCheckDTO.
 
         校验类型。默认值：0。 * 0：登录； * 1：忘记密码; 
 
@@ -128,7 +128,7 @@ class SlideVerifyCodeCheckDTO:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this SlideVerifyCodeCheckDTO.
+        r"""Sets the check_type of this SlideVerifyCodeCheckDTO.
 
         校验类型。默认值：0。 * 0：登录； * 1：忘记密码; 
 
@@ -139,7 +139,7 @@ class SlideVerifyCodeCheckDTO:
 
     @property
     def token(self):
-        """Gets the token of this SlideVerifyCodeCheckDTO.
+        r"""Gets the token of this SlideVerifyCodeCheckDTO.
 
         验证码Token字符串。通过[[发送滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0100.html)](tag:hws)[[发送滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0100.html)](tag:hk) 接口获取。 
 
@@ -150,7 +150,7 @@ class SlideVerifyCodeCheckDTO:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this SlideVerifyCodeCheckDTO.
+        r"""Sets the token of this SlideVerifyCodeCheckDTO.
 
         验证码Token字符串。通过[[发送滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0100.html)](tag:hws)[[发送滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0100.html)](tag:hk) 接口获取。 
 
@@ -161,7 +161,7 @@ class SlideVerifyCodeCheckDTO:
 
     @property
     def point_x(self):
-        """Gets the point_x of this SlideVerifyCodeCheckDTO.
+        r"""Gets the point_x of this SlideVerifyCodeCheckDTO.
 
         抠出图形的X轴坐标。
 
@@ -172,7 +172,7 @@ class SlideVerifyCodeCheckDTO:
 
     @point_x.setter
     def point_x(self, point_x):
-        """Sets the point_x of this SlideVerifyCodeCheckDTO.
+        r"""Sets the point_x of this SlideVerifyCodeCheckDTO.
 
         抠出图形的X轴坐标。
 
@@ -183,7 +183,7 @@ class SlideVerifyCodeCheckDTO:
 
     @property
     def slide_time(self):
-        """Gets the slide_time of this SlideVerifyCodeCheckDTO.
+        r"""Gets the slide_time of this SlideVerifyCodeCheckDTO.
 
         滑动时间，单位ms。
 
@@ -194,7 +194,7 @@ class SlideVerifyCodeCheckDTO:
 
     @slide_time.setter
     def slide_time(self, slide_time):
-        """Sets the slide_time of this SlideVerifyCodeCheckDTO.
+        r"""Sets the slide_time of this SlideVerifyCodeCheckDTO.
 
         滑动时间，单位ms。
 

@@ -39,7 +39,7 @@ class HistoryRunInfo:
     }
 
     def __init__(self, name=None, run_id=None, run_type=None, start_time=None, end_time=None, continue_time=None, temp_names=None, parallel=None):
-        """HistoryRunInfo
+        r"""HistoryRunInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HistoryRunInfo:
 
     @property
     def name(self):
-        """Gets the name of this HistoryRunInfo.
+        r"""Gets the name of this HistoryRunInfo.
 
         名称
 
@@ -103,7 +103,7 @@ class HistoryRunInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HistoryRunInfo.
+        r"""Sets the name of this HistoryRunInfo.
 
         名称
 
@@ -114,7 +114,7 @@ class HistoryRunInfo:
 
     @property
     def run_id(self):
-        """Gets the run_id of this HistoryRunInfo.
+        r"""Gets the run_id of this HistoryRunInfo.
 
         报告id
 
@@ -125,7 +125,7 @@ class HistoryRunInfo:
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this HistoryRunInfo.
+        r"""Sets the run_id of this HistoryRunInfo.
 
         报告id
 
@@ -136,7 +136,7 @@ class HistoryRunInfo:
 
     @property
     def run_type(self):
-        """Gets the run_type of this HistoryRunInfo.
+        r"""Gets the run_type of this HistoryRunInfo.
 
         任务类型（0：旧版本任务；1：融合版本任务）
 
@@ -147,7 +147,7 @@ class HistoryRunInfo:
 
     @run_type.setter
     def run_type(self, run_type):
-        """Sets the run_type of this HistoryRunInfo.
+        r"""Sets the run_type of this HistoryRunInfo.
 
         任务类型（0：旧版本任务；1：融合版本任务）
 
@@ -158,7 +158,7 @@ class HistoryRunInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this HistoryRunInfo.
+        r"""Gets the start_time of this HistoryRunInfo.
 
         开始时间
 
@@ -169,7 +169,7 @@ class HistoryRunInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this HistoryRunInfo.
+        r"""Sets the start_time of this HistoryRunInfo.
 
         开始时间
 
@@ -180,7 +180,7 @@ class HistoryRunInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this HistoryRunInfo.
+        r"""Gets the end_time of this HistoryRunInfo.
 
         结束时间
 
@@ -191,7 +191,7 @@ class HistoryRunInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this HistoryRunInfo.
+        r"""Sets the end_time of this HistoryRunInfo.
 
         结束时间
 
@@ -202,7 +202,7 @@ class HistoryRunInfo:
 
     @property
     def continue_time(self):
-        """Gets the continue_time of this HistoryRunInfo.
+        r"""Gets the continue_time of this HistoryRunInfo.
 
         继续时间
 
@@ -213,7 +213,7 @@ class HistoryRunInfo:
 
     @continue_time.setter
     def continue_time(self, continue_time):
-        """Sets the continue_time of this HistoryRunInfo.
+        r"""Sets the continue_time of this HistoryRunInfo.
 
         继续时间
 
@@ -224,7 +224,7 @@ class HistoryRunInfo:
 
     @property
     def temp_names(self):
-        """Gets the temp_names of this HistoryRunInfo.
+        r"""Gets the temp_names of this HistoryRunInfo.
 
         用例或者事务名称
 
@@ -235,7 +235,7 @@ class HistoryRunInfo:
 
     @temp_names.setter
     def temp_names(self, temp_names):
-        """Sets the temp_names of this HistoryRunInfo.
+        r"""Sets the temp_names of this HistoryRunInfo.
 
         用例或者事务名称
 
@@ -246,7 +246,7 @@ class HistoryRunInfo:
 
     @property
     def parallel(self):
-        """Gets the parallel of this HistoryRunInfo.
+        r"""Gets the parallel of this HistoryRunInfo.
 
         任务间用例是否并行执行
 
@@ -257,7 +257,7 @@ class HistoryRunInfo:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this HistoryRunInfo.
+        r"""Sets the parallel of this HistoryRunInfo.
 
         任务间用例是否并行执行
 

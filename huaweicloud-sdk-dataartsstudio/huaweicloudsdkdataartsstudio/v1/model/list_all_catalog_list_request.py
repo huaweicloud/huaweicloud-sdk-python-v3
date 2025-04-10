@@ -33,7 +33,7 @@ class ListAllCatalogListRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None, offset=None, limit=None):
-        """ListAllCatalogListRequest
+        r"""ListAllCatalogListRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListAllCatalogListRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListAllCatalogListRequest.
+        r"""Gets the workspace of this ListAllCatalogListRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ListAllCatalogListRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListAllCatalogListRequest.
+        r"""Sets the workspace of this ListAllCatalogListRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ListAllCatalogListRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListAllCatalogListRequest.
+        r"""Gets the dlm_type of this ListAllCatalogListRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class ListAllCatalogListRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListAllCatalogListRequest.
+        r"""Sets the dlm_type of this ListAllCatalogListRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class ListAllCatalogListRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this ListAllCatalogListRequest.
+        r"""Gets the catalog_id of this ListAllCatalogListRequest.
 
         目录编号。
 
@@ -124,7 +124,7 @@ class ListAllCatalogListRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this ListAllCatalogListRequest.
+        r"""Sets the catalog_id of this ListAllCatalogListRequest.
 
         目录编号。
 
@@ -135,7 +135,7 @@ class ListAllCatalogListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAllCatalogListRequest.
+        r"""Gets the offset of this ListAllCatalogListRequest.
 
         查询起始坐标, 即跳过前X条数据。
 
@@ -146,7 +146,7 @@ class ListAllCatalogListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAllCatalogListRequest.
+        r"""Sets the offset of this ListAllCatalogListRequest.
 
         查询起始坐标, 即跳过前X条数据。
 
@@ -157,7 +157,7 @@ class ListAllCatalogListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAllCatalogListRequest.
+        r"""Gets the limit of this ListAllCatalogListRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -168,7 +168,7 @@ class ListAllCatalogListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAllCatalogListRequest.
+        r"""Sets the limit of this ListAllCatalogListRequest.
 
         查询条数, 即查询Y条数据。
 

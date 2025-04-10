@@ -29,7 +29,7 @@ class GpuInfo:
     }
 
     def __init__(self, name=None, type=None, capacity=None):
-        """GpuInfo
+        r"""GpuInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GpuInfo:
 
     @property
     def name(self):
-        """Gets the name of this GpuInfo.
+        r"""Gets the name of this GpuInfo.
 
         GPU名称
 
@@ -68,7 +68,7 @@ class GpuInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GpuInfo.
+        r"""Sets the name of this GpuInfo.
 
         GPU名称
 
@@ -79,7 +79,7 @@ class GpuInfo:
 
     @property
     def type(self):
-        """Gets the type of this GpuInfo.
+        r"""Gets the type of this GpuInfo.
 
         GPU类型
 
@@ -90,7 +90,7 @@ class GpuInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GpuInfo.
+        r"""Sets the type of this GpuInfo.
 
         GPU类型
 
@@ -101,7 +101,7 @@ class GpuInfo:
 
     @property
     def capacity(self):
-        """Gets the capacity of this GpuInfo.
+        r"""Gets the capacity of this GpuInfo.
 
         GPU memory大小，单位MB
 
@@ -112,7 +112,7 @@ class GpuInfo:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this GpuInfo.
+        r"""Sets the capacity of this GpuInfo.
 
         GPU memory大小，单位MB
 

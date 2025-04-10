@@ -24,7 +24,7 @@ class DeleteProtectedInstanceTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteProtectedInstanceTagResponse
+        r"""DeleteProtectedInstanceTagResponse
 
         The model defined in huaweicloud sdk
 

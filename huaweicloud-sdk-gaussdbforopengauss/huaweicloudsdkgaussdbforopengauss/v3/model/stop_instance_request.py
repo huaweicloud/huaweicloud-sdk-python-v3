@@ -29,7 +29,7 @@ class StopInstanceRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StopInstanceRequest
+        r"""StopInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StopInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StopInstanceRequest.
+        r"""Gets the x_language of this StopInstanceRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class StopInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StopInstanceRequest.
+        r"""Sets the x_language of this StopInstanceRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class StopInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StopInstanceRequest.
+        r"""Gets the instance_id of this StopInstanceRequest.
 
         需要停止的实例的ID
 
@@ -89,7 +89,7 @@ class StopInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StopInstanceRequest.
+        r"""Sets the instance_id of this StopInstanceRequest.
 
         需要停止的实例的ID
 
@@ -100,7 +100,7 @@ class StopInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopInstanceRequest.
+        r"""Gets the body of this StopInstanceRequest.
 
         :return: The body of this StopInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopInstanceRequestBody`
@@ -109,7 +109,7 @@ class StopInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopInstanceRequest.
+        r"""Sets the body of this StopInstanceRequest.
 
         :param body: The body of this StopInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopInstanceRequestBody`

@@ -28,7 +28,7 @@ class ListRestoreRecordsResponse(SdkResponse):
     }
 
     def __init__(self, restore_record_response=None, total_num=None):
-        """ListRestoreRecordsResponse
+        r"""ListRestoreRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRestoreRecordsResponse(SdkResponse):
 
     @property
     def restore_record_response(self):
-        """Gets the restore_record_response of this ListRestoreRecordsResponse.
+        r"""Gets the restore_record_response of this ListRestoreRecordsResponse.
 
         实例恢复记录的详情数组。
 
@@ -62,7 +62,7 @@ class ListRestoreRecordsResponse(SdkResponse):
 
     @restore_record_response.setter
     def restore_record_response(self, restore_record_response):
-        """Sets the restore_record_response of this ListRestoreRecordsResponse.
+        r"""Sets the restore_record_response of this ListRestoreRecordsResponse.
 
         实例恢复记录的详情数组。
 
@@ -73,7 +73,7 @@ class ListRestoreRecordsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListRestoreRecordsResponse.
+        r"""Gets the total_num of this ListRestoreRecordsResponse.
 
         返回记录数。
 
@@ -84,7 +84,7 @@ class ListRestoreRecordsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListRestoreRecordsResponse.
+        r"""Sets the total_num of this ListRestoreRecordsResponse.
 
         返回记录数。
 

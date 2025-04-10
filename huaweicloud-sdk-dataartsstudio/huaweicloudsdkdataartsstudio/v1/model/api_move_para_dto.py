@@ -27,7 +27,7 @@ class ApiMoveParaDTO:
     }
 
     def __init__(self, target_pid=None, apis=None):
-        """ApiMoveParaDTO
+        r"""ApiMoveParaDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiMoveParaDTO:
 
     @property
     def target_pid(self):
-        """Gets the target_pid of this ApiMoveParaDTO.
+        r"""Gets the target_pid of this ApiMoveParaDTO.
 
         父目录编号
 
@@ -61,7 +61,7 @@ class ApiMoveParaDTO:
 
     @target_pid.setter
     def target_pid(self, target_pid):
-        """Sets the target_pid of this ApiMoveParaDTO.
+        r"""Sets the target_pid of this ApiMoveParaDTO.
 
         父目录编号
 
@@ -72,7 +72,7 @@ class ApiMoveParaDTO:
 
     @property
     def apis(self):
-        """Gets the apis of this ApiMoveParaDTO.
+        r"""Gets the apis of this ApiMoveParaDTO.
 
         需要移动的目录
 
@@ -83,7 +83,7 @@ class ApiMoveParaDTO:
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ApiMoveParaDTO.
+        r"""Sets the apis of this ApiMoveParaDTO.
 
         需要移动的目录
 

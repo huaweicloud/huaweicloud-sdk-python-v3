@@ -45,7 +45,7 @@ class VnicInfo:
     }
 
     def __init__(self, private_ip_address=None, device_id=None, device_owner=None, vpc_id=None, port_id=None, port_profile=None, mac=None, vtep=None, vni=None, instance_id=None, instance_type=None):
-        """VnicInfo
+        r"""VnicInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class VnicInfo:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this VnicInfo.
+        r"""Gets the private_ip_address of this VnicInfo.
 
         功能说明：私网IP地址
 
@@ -124,7 +124,7 @@ class VnicInfo:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this VnicInfo.
+        r"""Sets the private_ip_address of this VnicInfo.
 
         功能说明：私网IP地址
 
@@ -135,7 +135,7 @@ class VnicInfo:
 
     @property
     def device_id(self):
-        """Gets the device_id of this VnicInfo.
+        r"""Gets the device_id of this VnicInfo.
 
         功能说明：端口所属设备ID 约束：不支持设置和更新,由系统自动维护
 
@@ -146,7 +146,7 @@ class VnicInfo:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this VnicInfo.
+        r"""Sets the device_id of this VnicInfo.
 
         功能说明：端口所属设备ID 约束：不支持设置和更新,由系统自动维护
 
@@ -157,7 +157,7 @@ class VnicInfo:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this VnicInfo.
+        r"""Gets the device_owner of this VnicInfo.
 
         功能说明：设备所属 取值范围：合法设备所属,如network:dhcp、network:VIP_PORT、network:router_interface_distributed、network:router_centralized_snat 约束：不支持设置和更新,由系统自动维护
 
@@ -168,7 +168,7 @@ class VnicInfo:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this VnicInfo.
+        r"""Sets the device_owner of this VnicInfo.
 
         功能说明：设备所属 取值范围：合法设备所属,如network:dhcp、network:VIP_PORT、network:router_interface_distributed、network:router_centralized_snat 约束：不支持设置和更新,由系统自动维护
 
@@ -179,7 +179,7 @@ class VnicInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VnicInfo.
+        r"""Gets the vpc_id of this VnicInfo.
 
         功能说明：虚拟私有云ID
 
@@ -190,7 +190,7 @@ class VnicInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VnicInfo.
+        r"""Sets the vpc_id of this VnicInfo.
 
         功能说明：虚拟私有云ID
 
@@ -201,7 +201,7 @@ class VnicInfo:
 
     @property
     def port_id(self):
-        """Gets the port_id of this VnicInfo.
+        r"""Gets the port_id of this VnicInfo.
 
         功能说明：端口ID
 
@@ -212,7 +212,7 @@ class VnicInfo:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this VnicInfo.
+        r"""Sets the port_id of this VnicInfo.
 
         功能说明：端口ID
 
@@ -223,7 +223,7 @@ class VnicInfo:
 
     @property
     def port_profile(self):
-        """Gets the port_profile of this VnicInfo.
+        r"""Gets the port_profile of this VnicInfo.
 
         功能说明：端口profile信息
 
@@ -234,7 +234,7 @@ class VnicInfo:
 
     @port_profile.setter
     def port_profile(self, port_profile):
-        """Sets the port_profile of this VnicInfo.
+        r"""Sets the port_profile of this VnicInfo.
 
         功能说明：端口profile信息
 
@@ -245,7 +245,7 @@ class VnicInfo:
 
     @property
     def mac(self):
-        """Gets the mac of this VnicInfo.
+        r"""Gets the mac of this VnicInfo.
 
         功能说明：端口MAC地址 约束：由系统分配,不支持指定
 
@@ -256,7 +256,7 @@ class VnicInfo:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this VnicInfo.
+        r"""Sets the mac of this VnicInfo.
 
         功能说明：端口MAC地址 约束：由系统分配,不支持指定
 
@@ -267,7 +267,7 @@ class VnicInfo:
 
     @property
     def vtep(self):
-        """Gets the vtep of this VnicInfo.
+        r"""Gets the vtep of this VnicInfo.
 
         功能说明：VTEP IP
 
@@ -278,7 +278,7 @@ class VnicInfo:
 
     @vtep.setter
     def vtep(self, vtep):
-        """Sets the vtep of this VnicInfo.
+        r"""Sets the vtep of this VnicInfo.
 
         功能说明：VTEP IP
 
@@ -289,7 +289,7 @@ class VnicInfo:
 
     @property
     def vni(self):
-        """Gets the vni of this VnicInfo.
+        r"""Gets the vni of this VnicInfo.
 
         功能说明：VXLAN ID
 
@@ -300,7 +300,7 @@ class VnicInfo:
 
     @vni.setter
     def vni(self, vni):
-        """Sets the vni of this VnicInfo.
+        r"""Sets the vni of this VnicInfo.
 
         功能说明：VXLAN ID
 
@@ -311,7 +311,7 @@ class VnicInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this VnicInfo.
+        r"""Gets the instance_id of this VnicInfo.
 
         功能说明：端口所属实例ID,例如RDS实例ID 约束：不支持设置和更新,由系统自动维护
 
@@ -322,7 +322,7 @@ class VnicInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this VnicInfo.
+        r"""Sets the instance_id of this VnicInfo.
 
         功能说明：端口所属实例ID,例如RDS实例ID 约束：不支持设置和更新,由系统自动维护
 
@@ -333,7 +333,7 @@ class VnicInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this VnicInfo.
+        r"""Gets the instance_type of this VnicInfo.
 
         功能说明：端口所属实例类型,例如“RDS” 约束：不支持设置和更新,由系统自动维护
 
@@ -344,7 +344,7 @@ class VnicInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this VnicInfo.
+        r"""Sets the instance_type of this VnicInfo.
 
         功能说明：端口所属实例类型,例如“RDS” 约束：不支持设置和更新,由系统自动维护
 

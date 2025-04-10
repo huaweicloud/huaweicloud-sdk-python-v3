@@ -31,7 +31,7 @@ class UpdateDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, body=None):
-        """UpdateDatabaseRequest
+        r"""UpdateDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDatabaseRequest.
+        r"""Gets the instance_id of this UpdateDatabaseRequest.
 
         实例Id
 
@@ -72,7 +72,7 @@ class UpdateDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDatabaseRequest.
+        r"""Sets the instance_id of this UpdateDatabaseRequest.
 
         实例Id
 
@@ -83,7 +83,7 @@ class UpdateDatabaseRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this UpdateDatabaseRequest.
+        r"""Gets the catalog_name of this UpdateDatabaseRequest.
 
         catalog名字
 
@@ -94,7 +94,7 @@ class UpdateDatabaseRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this UpdateDatabaseRequest.
+        r"""Sets the catalog_name of this UpdateDatabaseRequest.
 
         catalog名字
 
@@ -105,7 +105,7 @@ class UpdateDatabaseRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateDatabaseRequest.
+        r"""Gets the database_name of this UpdateDatabaseRequest.
 
         数据库名字
 
@@ -116,7 +116,7 @@ class UpdateDatabaseRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateDatabaseRequest.
+        r"""Sets the database_name of this UpdateDatabaseRequest.
 
         数据库名字
 
@@ -127,7 +127,7 @@ class UpdateDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatabaseRequest.
+        r"""Gets the body of this UpdateDatabaseRequest.
 
         :return: The body of this UpdateDatabaseRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.DatabaseInput`
@@ -136,7 +136,7 @@ class UpdateDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatabaseRequest.
+        r"""Sets the body of this UpdateDatabaseRequest.
 
         :param body: The body of this UpdateDatabaseRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.DatabaseInput`

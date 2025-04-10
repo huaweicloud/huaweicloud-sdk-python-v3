@@ -27,7 +27,7 @@ class Resolution:
     }
 
     def __init__(self, x=None, y=None):
-        """Resolution
+        r"""Resolution
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Resolution:
 
     @property
     def x(self):
-        """Gets the x of this Resolution.
+        r"""Gets the x of this Resolution.
 
         像素x
 
@@ -60,7 +60,7 @@ class Resolution:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this Resolution.
+        r"""Sets the x of this Resolution.
 
         像素x
 
@@ -71,7 +71,7 @@ class Resolution:
 
     @property
     def y(self):
-        """Gets the y of this Resolution.
+        r"""Gets the y of this Resolution.
 
         像素y
 
@@ -82,7 +82,7 @@ class Resolution:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this Resolution.
+        r"""Sets the y of this Resolution.
 
         像素y
 

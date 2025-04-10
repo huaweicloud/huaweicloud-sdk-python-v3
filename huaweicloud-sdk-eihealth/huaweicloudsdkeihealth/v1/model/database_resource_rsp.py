@@ -41,7 +41,7 @@ class DatabaseResourceRsp:
     }
 
     def __init__(self, id=None, resource_id=None, spec=None, disk=None, charge_mode=None, period_num=None, create_time=None, failure_reason=None, status=None):
-        """DatabaseResourceRsp
+        r"""DatabaseResourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class DatabaseResourceRsp:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseResourceRsp.
+        r"""Gets the id of this DatabaseResourceRsp.
 
         实例ID
 
@@ -101,7 +101,7 @@ class DatabaseResourceRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseResourceRsp.
+        r"""Sets the id of this DatabaseResourceRsp.
 
         实例ID
 
@@ -112,7 +112,7 @@ class DatabaseResourceRsp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DatabaseResourceRsp.
+        r"""Gets the resource_id of this DatabaseResourceRsp.
 
         资源ID
 
@@ -123,7 +123,7 @@ class DatabaseResourceRsp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DatabaseResourceRsp.
+        r"""Sets the resource_id of this DatabaseResourceRsp.
 
         资源ID
 
@@ -134,7 +134,7 @@ class DatabaseResourceRsp:
 
     @property
     def spec(self):
-        """Gets the spec of this DatabaseResourceRsp.
+        r"""Gets the spec of this DatabaseResourceRsp.
 
         :return: The spec of this DatabaseResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseSpecDto`
@@ -143,7 +143,7 @@ class DatabaseResourceRsp:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this DatabaseResourceRsp.
+        r"""Sets the spec of this DatabaseResourceRsp.
 
         :param spec: The spec of this DatabaseResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.DatabaseSpecDto`
@@ -152,7 +152,7 @@ class DatabaseResourceRsp:
 
     @property
     def disk(self):
-        """Gets the disk of this DatabaseResourceRsp.
+        r"""Gets the disk of this DatabaseResourceRsp.
 
         :return: The disk of this DatabaseResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseDiskDto`
@@ -161,7 +161,7 @@ class DatabaseResourceRsp:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this DatabaseResourceRsp.
+        r"""Sets the disk of this DatabaseResourceRsp.
 
         :param disk: The disk of this DatabaseResourceRsp.
         :type disk: :class:`huaweicloudsdkeihealth.v1.DatabaseDiskDto`
@@ -170,7 +170,7 @@ class DatabaseResourceRsp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this DatabaseResourceRsp.
+        r"""Gets the charge_mode of this DatabaseResourceRsp.
 
         计费模式
 
@@ -181,7 +181,7 @@ class DatabaseResourceRsp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this DatabaseResourceRsp.
+        r"""Sets the charge_mode of this DatabaseResourceRsp.
 
         计费模式
 
@@ -192,7 +192,7 @@ class DatabaseResourceRsp:
 
     @property
     def period_num(self):
-        """Gets the period_num of this DatabaseResourceRsp.
+        r"""Gets the period_num of this DatabaseResourceRsp.
 
         购买周期
 
@@ -203,7 +203,7 @@ class DatabaseResourceRsp:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this DatabaseResourceRsp.
+        r"""Sets the period_num of this DatabaseResourceRsp.
 
         购买周期
 
@@ -214,7 +214,7 @@ class DatabaseResourceRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DatabaseResourceRsp.
+        r"""Gets the create_time of this DatabaseResourceRsp.
 
         购买时间，UTC时间
 
@@ -225,7 +225,7 @@ class DatabaseResourceRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DatabaseResourceRsp.
+        r"""Sets the create_time of this DatabaseResourceRsp.
 
         购买时间，UTC时间
 
@@ -236,7 +236,7 @@ class DatabaseResourceRsp:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this DatabaseResourceRsp.
+        r"""Gets the failure_reason of this DatabaseResourceRsp.
 
         失败原因
 
@@ -247,7 +247,7 @@ class DatabaseResourceRsp:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this DatabaseResourceRsp.
+        r"""Sets the failure_reason of this DatabaseResourceRsp.
 
         失败原因
 
@@ -258,7 +258,7 @@ class DatabaseResourceRsp:
 
     @property
     def status(self):
-        """Gets the status of this DatabaseResourceRsp.
+        r"""Gets the status of this DatabaseResourceRsp.
 
         :return: The status of this DatabaseResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseStatusEnum`
@@ -267,7 +267,7 @@ class DatabaseResourceRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DatabaseResourceRsp.
+        r"""Sets the status of this DatabaseResourceRsp.
 
         :param status: The status of this DatabaseResourceRsp.
         :type status: :class:`huaweicloudsdkeihealth.v1.DatabaseStatusEnum`

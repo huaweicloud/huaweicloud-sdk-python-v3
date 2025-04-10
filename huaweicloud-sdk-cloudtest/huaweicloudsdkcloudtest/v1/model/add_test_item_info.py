@@ -41,7 +41,7 @@ class AddTestItemInfo:
     }
 
     def __init__(self, comment=None, name=None, number=None, owner=None, is_feature=None, project_uuid=None, parent_uri=None, version_uri=None, ignore_duplicate_name=None):
-        """AddTestItemInfo
+        r"""AddTestItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class AddTestItemInfo:
 
     @property
     def comment(self):
-        """Gets the comment of this AddTestItemInfo.
+        r"""Gets the comment of this AddTestItemInfo.
 
         备注
 
@@ -109,7 +109,7 @@ class AddTestItemInfo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this AddTestItemInfo.
+        r"""Sets the comment of this AddTestItemInfo.
 
         备注
 
@@ -120,7 +120,7 @@ class AddTestItemInfo:
 
     @property
     def name(self):
-        """Gets the name of this AddTestItemInfo.
+        r"""Gets the name of this AddTestItemInfo.
 
         名称
 
@@ -131,7 +131,7 @@ class AddTestItemInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddTestItemInfo.
+        r"""Sets the name of this AddTestItemInfo.
 
         名称
 
@@ -142,7 +142,7 @@ class AddTestItemInfo:
 
     @property
     def number(self):
-        """Gets the number of this AddTestItemInfo.
+        r"""Gets the number of this AddTestItemInfo.
 
         编号
 
@@ -153,7 +153,7 @@ class AddTestItemInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this AddTestItemInfo.
+        r"""Sets the number of this AddTestItemInfo.
 
         编号
 
@@ -164,7 +164,7 @@ class AddTestItemInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this AddTestItemInfo.
+        r"""Gets the owner of this AddTestItemInfo.
 
         责任人
 
@@ -175,7 +175,7 @@ class AddTestItemInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AddTestItemInfo.
+        r"""Sets the owner of this AddTestItemInfo.
 
         责任人
 
@@ -186,7 +186,7 @@ class AddTestItemInfo:
 
     @property
     def is_feature(self):
-        """Gets the is_feature of this AddTestItemInfo.
+        r"""Gets the is_feature of this AddTestItemInfo.
 
         是否为特性,1:特性 2:目录
 
@@ -197,7 +197,7 @@ class AddTestItemInfo:
 
     @is_feature.setter
     def is_feature(self, is_feature):
-        """Sets the is_feature of this AddTestItemInfo.
+        r"""Sets the is_feature of this AddTestItemInfo.
 
         是否为特性,1:特性 2:目录
 
@@ -208,7 +208,7 @@ class AddTestItemInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this AddTestItemInfo.
+        r"""Gets the project_uuid of this AddTestItemInfo.
 
         项目uuid
 
@@ -219,7 +219,7 @@ class AddTestItemInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this AddTestItemInfo.
+        r"""Sets the project_uuid of this AddTestItemInfo.
 
         项目uuid
 
@@ -230,7 +230,7 @@ class AddTestItemInfo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this AddTestItemInfo.
+        r"""Gets the parent_uri of this AddTestItemInfo.
 
         父节点uri
 
@@ -241,7 +241,7 @@ class AddTestItemInfo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this AddTestItemInfo.
+        r"""Sets the parent_uri of this AddTestItemInfo.
 
         父节点uri
 
@@ -252,7 +252,7 @@ class AddTestItemInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this AddTestItemInfo.
+        r"""Gets the version_uri of this AddTestItemInfo.
 
         版本URI
 
@@ -263,7 +263,7 @@ class AddTestItemInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this AddTestItemInfo.
+        r"""Sets the version_uri of this AddTestItemInfo.
 
         版本URI
 
@@ -274,7 +274,7 @@ class AddTestItemInfo:
 
     @property
     def ignore_duplicate_name(self):
-        """Gets the ignore_duplicate_name of this AddTestItemInfo.
+        r"""Gets the ignore_duplicate_name of this AddTestItemInfo.
 
         是否忽略名称重复
 
@@ -285,7 +285,7 @@ class AddTestItemInfo:
 
     @ignore_duplicate_name.setter
     def ignore_duplicate_name(self, ignore_duplicate_name):
-        """Sets the ignore_duplicate_name of this AddTestItemInfo.
+        r"""Sets the ignore_duplicate_name of this AddTestItemInfo.
 
         是否忽略名称重复
 

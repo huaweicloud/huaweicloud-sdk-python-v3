@@ -27,7 +27,7 @@ class PartitionColumnStatistics:
     }
 
     def __init__(self, column_statistics_desc=None, column_statistics_objects=None):
-        """PartitionColumnStatistics
+        r"""PartitionColumnStatistics
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PartitionColumnStatistics:
 
     @property
     def column_statistics_desc(self):
-        """Gets the column_statistics_desc of this PartitionColumnStatistics.
+        r"""Gets the column_statistics_desc of this PartitionColumnStatistics.
 
         :return: The column_statistics_desc of this PartitionColumnStatistics.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PartitionColumnStatisticsDescription`
@@ -57,7 +57,7 @@ class PartitionColumnStatistics:
 
     @column_statistics_desc.setter
     def column_statistics_desc(self, column_statistics_desc):
-        """Sets the column_statistics_desc of this PartitionColumnStatistics.
+        r"""Sets the column_statistics_desc of this PartitionColumnStatistics.
 
         :param column_statistics_desc: The column_statistics_desc of this PartitionColumnStatistics.
         :type column_statistics_desc: :class:`huaweicloudsdklakeformation.v1.PartitionColumnStatisticsDescription`
@@ -66,7 +66,7 @@ class PartitionColumnStatistics:
 
     @property
     def column_statistics_objects(self):
-        """Gets the column_statistics_objects of this PartitionColumnStatistics.
+        r"""Gets the column_statistics_objects of this PartitionColumnStatistics.
 
         列统计信息
 
@@ -77,7 +77,7 @@ class PartitionColumnStatistics:
 
     @column_statistics_objects.setter
     def column_statistics_objects(self, column_statistics_objects):
-        """Sets the column_statistics_objects of this PartitionColumnStatistics.
+        r"""Sets the column_statistics_objects of this PartitionColumnStatistics.
 
         列统计信息
 

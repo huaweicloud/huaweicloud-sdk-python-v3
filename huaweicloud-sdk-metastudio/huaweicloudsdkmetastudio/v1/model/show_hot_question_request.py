@@ -27,7 +27,7 @@ class ShowHotQuestionRequest:
     }
 
     def __init__(self, x_app_user_id=None, hot_question_id=None):
-        """ShowHotQuestionRequest
+        r"""ShowHotQuestionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowHotQuestionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowHotQuestionRequest.
+        r"""Gets the x_app_user_id of this ShowHotQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowHotQuestionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowHotQuestionRequest.
+        r"""Sets the x_app_user_id of this ShowHotQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowHotQuestionRequest:
 
     @property
     def hot_question_id(self):
-        """Gets the hot_question_id of this ShowHotQuestionRequest.
+        r"""Gets the hot_question_id of this ShowHotQuestionRequest.
 
         热点问题ID。
 
@@ -82,7 +82,7 @@ class ShowHotQuestionRequest:
 
     @hot_question_id.setter
     def hot_question_id(self, hot_question_id):
-        """Sets the hot_question_id of this ShowHotQuestionRequest.
+        r"""Sets the hot_question_id of this ShowHotQuestionRequest.
 
         热点问题ID。
 

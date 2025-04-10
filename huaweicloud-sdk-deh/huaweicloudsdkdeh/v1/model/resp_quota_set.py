@@ -29,7 +29,7 @@ class RespQuotaSet:
     }
 
     def __init__(self, resource=None, hard_limit=None, used=None):
-        """RespQuotaSet
+        r"""RespQuotaSet
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RespQuotaSet:
 
     @property
     def resource(self):
-        """Gets the resource of this RespQuotaSet.
+        r"""Gets the resource of this RespQuotaSet.
 
         配额类别。
 
@@ -65,7 +65,7 @@ class RespQuotaSet:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this RespQuotaSet.
+        r"""Sets the resource of this RespQuotaSet.
 
         配额类别。
 
@@ -76,7 +76,7 @@ class RespQuotaSet:
 
     @property
     def hard_limit(self):
-        """Gets the hard_limit of this RespQuotaSet.
+        r"""Gets the hard_limit of this RespQuotaSet.
 
         配额最大限制。  “-1”表示资源配额不受限制。
 
@@ -87,7 +87,7 @@ class RespQuotaSet:
 
     @hard_limit.setter
     def hard_limit(self, hard_limit):
-        """Sets the hard_limit of this RespQuotaSet.
+        r"""Sets the hard_limit of this RespQuotaSet.
 
         配额最大限制。  “-1”表示资源配额不受限制。
 
@@ -98,7 +98,7 @@ class RespQuotaSet:
 
     @property
     def used(self):
-        """Gets the used of this RespQuotaSet.
+        r"""Gets the used of this RespQuotaSet.
 
         已使用配额数量。
 
@@ -109,7 +109,7 @@ class RespQuotaSet:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this RespQuotaSet.
+        r"""Sets the used of this RespQuotaSet.
 
         已使用配额数量。
 

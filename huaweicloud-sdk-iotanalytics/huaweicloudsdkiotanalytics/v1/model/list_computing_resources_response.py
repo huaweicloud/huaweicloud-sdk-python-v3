@@ -28,7 +28,7 @@ class ListComputingResourcesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, computing_resources=None):
-        """ListComputingResourcesResponse
+        r"""ListComputingResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListComputingResourcesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListComputingResourcesResponse.
+        r"""Gets the count of this ListComputingResourcesResponse.
 
         计算资源总个数。
 
@@ -62,7 +62,7 @@ class ListComputingResourcesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListComputingResourcesResponse.
+        r"""Sets the count of this ListComputingResourcesResponse.
 
         计算资源总个数。
 
@@ -73,7 +73,7 @@ class ListComputingResourcesResponse(SdkResponse):
 
     @property
     def computing_resources(self):
-        """Gets the computing_resources of this ListComputingResourcesResponse.
+        r"""Gets the computing_resources of this ListComputingResourcesResponse.
 
         计算资源列表。
 
@@ -84,7 +84,7 @@ class ListComputingResourcesResponse(SdkResponse):
 
     @computing_resources.setter
     def computing_resources(self, computing_resources):
-        """Sets the computing_resources of this ListComputingResourcesResponse.
+        r"""Sets the computing_resources of this ListComputingResourcesResponse.
 
         计算资源列表。
 

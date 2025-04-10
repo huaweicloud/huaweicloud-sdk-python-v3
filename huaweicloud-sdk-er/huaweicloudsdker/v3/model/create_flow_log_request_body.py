@@ -25,7 +25,7 @@ class CreateFlowLogRequestBody:
     }
 
     def __init__(self, flow_log=None):
-        """CreateFlowLogRequestBody
+        r"""CreateFlowLogRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateFlowLogRequestBody:
 
     @property
     def flow_log(self):
-        """Gets the flow_log of this CreateFlowLogRequestBody.
+        r"""Gets the flow_log of this CreateFlowLogRequestBody.
 
         :return: The flow_log of this CreateFlowLogRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.FlowLogRequest`
@@ -51,7 +51,7 @@ class CreateFlowLogRequestBody:
 
     @flow_log.setter
     def flow_log(self, flow_log):
-        """Sets the flow_log of this CreateFlowLogRequestBody.
+        r"""Sets the flow_log of this CreateFlowLogRequestBody.
 
         :param flow_log: The flow_log of this CreateFlowLogRequestBody.
         :type flow_log: :class:`huaweicloudsdker.v3.FlowLogRequest`

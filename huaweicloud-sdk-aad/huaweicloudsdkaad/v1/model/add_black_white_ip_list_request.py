@@ -25,7 +25,7 @@ class AddBlackWhiteIpListRequest:
     }
 
     def __init__(self, body=None):
-        """AddBlackWhiteIpListRequest
+        r"""AddBlackWhiteIpListRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddBlackWhiteIpListRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddBlackWhiteIpListRequest.
+        r"""Gets the body of this AddBlackWhiteIpListRequest.
 
         :return: The body of this AddBlackWhiteIpListRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.BlackWhiteIpListRequest`
@@ -52,7 +52,7 @@ class AddBlackWhiteIpListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddBlackWhiteIpListRequest.
+        r"""Sets the body of this AddBlackWhiteIpListRequest.
 
         :param body: The body of this AddBlackWhiteIpListRequest.
         :type body: :class:`huaweicloudsdkaad.v1.BlackWhiteIpListRequest`

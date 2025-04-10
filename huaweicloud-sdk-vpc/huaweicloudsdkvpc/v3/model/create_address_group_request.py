@@ -25,7 +25,7 @@ class CreateAddressGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAddressGroupRequest
+        r"""CreateAddressGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAddressGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAddressGroupRequest.
+        r"""Gets the body of this CreateAddressGroupRequest.
 
         :return: The body of this CreateAddressGroupRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequestBody`
@@ -52,7 +52,7 @@ class CreateAddressGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAddressGroupRequest.
+        r"""Sets the body of this CreateAddressGroupRequest.
 
         :param body: The body of this CreateAddressGroupRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequestBody`

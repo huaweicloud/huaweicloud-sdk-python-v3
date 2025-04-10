@@ -26,7 +26,7 @@ class ListTenantProfilesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTenantProfilesResponse
+        r"""ListTenantProfilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTenantProfilesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTenantProfilesResponse.
+        r"""Gets the body of this ListTenantProfilesResponse.
 
         查询功能开关列表。
 
@@ -55,7 +55,7 @@ class ListTenantProfilesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTenantProfilesResponse.
+        r"""Sets the body of this ListTenantProfilesResponse.
 
         查询功能开关列表。
 

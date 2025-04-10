@@ -33,7 +33,7 @@ class ShowProgressDataRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, offset=None, limit=None, type=None):
-        """ShowProgressDataRequest
+        r"""ShowProgressDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowProgressDataRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowProgressDataRequest.
+        r"""Gets the x_language of this ShowProgressDataRequest.
 
         请求语言类型。
 
@@ -80,7 +80,7 @@ class ShowProgressDataRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowProgressDataRequest.
+        r"""Sets the x_language of this ShowProgressDataRequest.
 
         请求语言类型。
 
@@ -91,7 +91,7 @@ class ShowProgressDataRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowProgressDataRequest.
+        r"""Gets the job_id of this ShowProgressDataRequest.
 
         任务ID。
 
@@ -102,7 +102,7 @@ class ShowProgressDataRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowProgressDataRequest.
+        r"""Sets the job_id of this ShowProgressDataRequest.
 
         任务ID。
 
@@ -113,7 +113,7 @@ class ShowProgressDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowProgressDataRequest.
+        r"""Gets the offset of this ShowProgressDataRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -124,7 +124,7 @@ class ShowProgressDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowProgressDataRequest.
+        r"""Sets the offset of this ShowProgressDataRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -135,7 +135,7 @@ class ShowProgressDataRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowProgressDataRequest.
+        r"""Gets the limit of this ShowProgressDataRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -146,7 +146,7 @@ class ShowProgressDataRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowProgressDataRequest.
+        r"""Sets the limit of this ShowProgressDataRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -157,7 +157,7 @@ class ShowProgressDataRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowProgressDataRequest.
+        r"""Gets the type of this ShowProgressDataRequest.
 
         迁移对象类型。 - table - event - table_structure - procedure - view - function - database - trigger - table_indexs
 
@@ -168,7 +168,7 @@ class ShowProgressDataRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowProgressDataRequest.
+        r"""Sets the type of this ShowProgressDataRequest.
 
         迁移对象类型。 - table - event - table_structure - procedure - view - function - database - trigger - table_indexs
 

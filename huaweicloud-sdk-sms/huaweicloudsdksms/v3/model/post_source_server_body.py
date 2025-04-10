@@ -89,7 +89,7 @@ class PostSourceServerBody:
     }
 
     def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None, has_tc=None, platform=None):
-        """PostSourceServerBody
+        r"""PostSourceServerBody
 
         The model defined in huaweicloud sdk
 
@@ -267,7 +267,7 @@ class PostSourceServerBody:
 
     @property
     def id(self):
-        """Gets the id of this PostSourceServerBody.
+        r"""Gets the id of this PostSourceServerBody.
 
         源端在SMS数据库中的ID
 
@@ -278,7 +278,7 @@ class PostSourceServerBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PostSourceServerBody.
+        r"""Sets the id of this PostSourceServerBody.
 
         源端在SMS数据库中的ID
 
@@ -289,7 +289,7 @@ class PostSourceServerBody:
 
     @property
     def ip(self):
-        """Gets the ip of this PostSourceServerBody.
+        r"""Gets the ip of this PostSourceServerBody.
 
         源端服务器ip，注册源端时必选，更新非必选
 
@@ -300,7 +300,7 @@ class PostSourceServerBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this PostSourceServerBody.
+        r"""Sets the ip of this PostSourceServerBody.
 
         源端服务器ip，注册源端时必选，更新非必选
 
@@ -311,7 +311,7 @@ class PostSourceServerBody:
 
     @property
     def name(self):
-        """Gets the name of this PostSourceServerBody.
+        r"""Gets the name of this PostSourceServerBody.
 
         用来区分不同源端服务器的名称
 
@@ -322,7 +322,7 @@ class PostSourceServerBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostSourceServerBody.
+        r"""Sets the name of this PostSourceServerBody.
 
         用来区分不同源端服务器的名称
 
@@ -333,7 +333,7 @@ class PostSourceServerBody:
 
     @property
     def hostname(self):
-        """Gets the hostname of this PostSourceServerBody.
+        r"""Gets the hostname of this PostSourceServerBody.
 
         源端主机名，注册源端必选，更新非必选
 
@@ -344,7 +344,7 @@ class PostSourceServerBody:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this PostSourceServerBody.
+        r"""Sets the hostname of this PostSourceServerBody.
 
         源端主机名，注册源端必选，更新非必选
 
@@ -355,7 +355,7 @@ class PostSourceServerBody:
 
     @property
     def os_type(self):
-        """Gets the os_type of this PostSourceServerBody.
+        r"""Gets the os_type of this PostSourceServerBody.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -366,7 +366,7 @@ class PostSourceServerBody:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this PostSourceServerBody.
+        r"""Sets the os_type of this PostSourceServerBody.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -377,7 +377,7 @@ class PostSourceServerBody:
 
     @property
     def os_version(self):
-        """Gets the os_version of this PostSourceServerBody.
+        r"""Gets the os_version of this PostSourceServerBody.
 
         操作系统版本，注册必选，更新非必选
 
@@ -388,7 +388,7 @@ class PostSourceServerBody:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this PostSourceServerBody.
+        r"""Sets the os_version of this PostSourceServerBody.
 
         操作系统版本，注册必选，更新非必选
 
@@ -399,7 +399,7 @@ class PostSourceServerBody:
 
     @property
     def virtualization_type(self):
-        """Gets the virtualization_type of this PostSourceServerBody.
+        r"""Gets the virtualization_type of this PostSourceServerBody.
 
         操作系统虚拟化方式
 
@@ -410,7 +410,7 @@ class PostSourceServerBody:
 
     @virtualization_type.setter
     def virtualization_type(self, virtualization_type):
-        """Sets the virtualization_type of this PostSourceServerBody.
+        r"""Sets the virtualization_type of this PostSourceServerBody.
 
         操作系统虚拟化方式
 
@@ -421,7 +421,7 @@ class PostSourceServerBody:
 
     @property
     def linux_block_check(self):
-        """Gets the linux_block_check of this PostSourceServerBody.
+        r"""Gets the linux_block_check of this PostSourceServerBody.
 
         Linux操作系统块检查
 
@@ -432,7 +432,7 @@ class PostSourceServerBody:
 
     @linux_block_check.setter
     def linux_block_check(self, linux_block_check):
-        """Sets the linux_block_check of this PostSourceServerBody.
+        r"""Sets the linux_block_check of this PostSourceServerBody.
 
         Linux操作系统块检查
 
@@ -443,7 +443,7 @@ class PostSourceServerBody:
 
     @property
     def firmware(self):
-        """Gets the firmware of this PostSourceServerBody.
+        r"""Gets the firmware of this PostSourceServerBody.
 
         源端服务器启动类型，如BIOS或者UEFI
 
@@ -454,7 +454,7 @@ class PostSourceServerBody:
 
     @firmware.setter
     def firmware(self, firmware):
-        """Sets the firmware of this PostSourceServerBody.
+        r"""Sets the firmware of this PostSourceServerBody.
 
         源端服务器启动类型，如BIOS或者UEFI
 
@@ -465,7 +465,7 @@ class PostSourceServerBody:
 
     @property
     def cpu_quantity(self):
-        """Gets the cpu_quantity of this PostSourceServerBody.
+        r"""Gets the cpu_quantity of this PostSourceServerBody.
 
         CPU个数，单位vCPU
 
@@ -476,7 +476,7 @@ class PostSourceServerBody:
 
     @cpu_quantity.setter
     def cpu_quantity(self, cpu_quantity):
-        """Sets the cpu_quantity of this PostSourceServerBody.
+        r"""Sets the cpu_quantity of this PostSourceServerBody.
 
         CPU个数，单位vCPU
 
@@ -487,7 +487,7 @@ class PostSourceServerBody:
 
     @property
     def memory(self):
-        """Gets the memory of this PostSourceServerBody.
+        r"""Gets the memory of this PostSourceServerBody.
 
         内存大小，单位MB
 
@@ -498,7 +498,7 @@ class PostSourceServerBody:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this PostSourceServerBody.
+        r"""Sets the memory of this PostSourceServerBody.
 
         内存大小，单位MB
 
@@ -509,7 +509,7 @@ class PostSourceServerBody:
 
     @property
     def disks(self):
-        """Gets the disks of this PostSourceServerBody.
+        r"""Gets the disks of this PostSourceServerBody.
 
         源端服务器的磁盘信息
 
@@ -520,7 +520,7 @@ class PostSourceServerBody:
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this PostSourceServerBody.
+        r"""Sets the disks of this PostSourceServerBody.
 
         源端服务器的磁盘信息
 
@@ -531,7 +531,7 @@ class PostSourceServerBody:
 
     @property
     def btrfs_list(self):
-        """Gets the btrfs_list of this PostSourceServerBody.
+        r"""Gets the btrfs_list of this PostSourceServerBody.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -542,7 +542,7 @@ class PostSourceServerBody:
 
     @btrfs_list.setter
     def btrfs_list(self, btrfs_list):
-        """Sets the btrfs_list of this PostSourceServerBody.
+        r"""Sets the btrfs_list of this PostSourceServerBody.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -553,7 +553,7 @@ class PostSourceServerBody:
 
     @property
     def networks(self):
-        """Gets the networks of this PostSourceServerBody.
+        r"""Gets the networks of this PostSourceServerBody.
 
         源端服务器的网卡信息
 
@@ -564,7 +564,7 @@ class PostSourceServerBody:
 
     @networks.setter
     def networks(self, networks):
-        """Sets the networks of this PostSourceServerBody.
+        r"""Sets the networks of this PostSourceServerBody.
 
         源端服务器的网卡信息
 
@@ -575,7 +575,7 @@ class PostSourceServerBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PostSourceServerBody.
+        r"""Gets the domain_id of this PostSourceServerBody.
 
         租户的domainId
 
@@ -586,7 +586,7 @@ class PostSourceServerBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PostSourceServerBody.
+        r"""Sets the domain_id of this PostSourceServerBody.
 
         租户的domainId
 
@@ -597,7 +597,7 @@ class PostSourceServerBody:
 
     @property
     def has_rsync(self):
-        """Gets the has_rsync of this PostSourceServerBody.
+        r"""Gets the has_rsync of this PostSourceServerBody.
 
         是否安装rsync组件，Linux系统此参数为必选
 
@@ -608,7 +608,7 @@ class PostSourceServerBody:
 
     @has_rsync.setter
     def has_rsync(self, has_rsync):
-        """Sets the has_rsync of this PostSourceServerBody.
+        r"""Sets the has_rsync of this PostSourceServerBody.
 
         是否安装rsync组件，Linux系统此参数为必选
 
@@ -619,7 +619,7 @@ class PostSourceServerBody:
 
     @property
     def paravirtualization(self):
-        """Gets the paravirtualization of this PostSourceServerBody.
+        r"""Gets the paravirtualization of this PostSourceServerBody.
 
         Linux场景必选，源端是否是半虚拟化
 
@@ -630,7 +630,7 @@ class PostSourceServerBody:
 
     @paravirtualization.setter
     def paravirtualization(self, paravirtualization):
-        """Sets the paravirtualization of this PostSourceServerBody.
+        r"""Sets the paravirtualization of this PostSourceServerBody.
 
         Linux场景必选，源端是否是半虚拟化
 
@@ -641,7 +641,7 @@ class PostSourceServerBody:
 
     @property
     def raw_devices(self):
-        """Gets the raw_devices of this PostSourceServerBody.
+        r"""Gets the raw_devices of this PostSourceServerBody.
 
         Linux必选，裸设备列表
 
@@ -652,7 +652,7 @@ class PostSourceServerBody:
 
     @raw_devices.setter
     def raw_devices(self, raw_devices):
-        """Sets the raw_devices of this PostSourceServerBody.
+        r"""Sets the raw_devices of this PostSourceServerBody.
 
         Linux必选，裸设备列表
 
@@ -663,7 +663,7 @@ class PostSourceServerBody:
 
     @property
     def driver_files(self):
-        """Gets the driver_files of this PostSourceServerBody.
+        r"""Gets the driver_files of this PostSourceServerBody.
 
         Windows 必选，是否缺少驱动文件
 
@@ -674,7 +674,7 @@ class PostSourceServerBody:
 
     @driver_files.setter
     def driver_files(self, driver_files):
-        """Sets the driver_files of this PostSourceServerBody.
+        r"""Sets the driver_files of this PostSourceServerBody.
 
         Windows 必选，是否缺少驱动文件
 
@@ -685,7 +685,7 @@ class PostSourceServerBody:
 
     @property
     def system_services(self):
-        """Gets the system_services of this PostSourceServerBody.
+        r"""Gets the system_services of this PostSourceServerBody.
 
         Windows必选，是否存在不正常服务
 
@@ -696,7 +696,7 @@ class PostSourceServerBody:
 
     @system_services.setter
     def system_services(self, system_services):
-        """Sets the system_services of this PostSourceServerBody.
+        r"""Sets the system_services of this PostSourceServerBody.
 
         Windows必选，是否存在不正常服务
 
@@ -707,7 +707,7 @@ class PostSourceServerBody:
 
     @property
     def account_rights(self):
-        """Gets the account_rights of this PostSourceServerBody.
+        r"""Gets the account_rights of this PostSourceServerBody.
 
         Windows必选，权限是否满足要求
 
@@ -718,7 +718,7 @@ class PostSourceServerBody:
 
     @account_rights.setter
     def account_rights(self, account_rights):
-        """Sets the account_rights of this PostSourceServerBody.
+        r"""Sets the account_rights of this PostSourceServerBody.
 
         Windows必选，权限是否满足要求
 
@@ -729,7 +729,7 @@ class PostSourceServerBody:
 
     @property
     def boot_loader(self):
-        """Gets the boot_loader of this PostSourceServerBody.
+        r"""Gets the boot_loader of this PostSourceServerBody.
 
         Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
 
@@ -740,7 +740,7 @@ class PostSourceServerBody:
 
     @boot_loader.setter
     def boot_loader(self, boot_loader):
-        """Sets the boot_loader of this PostSourceServerBody.
+        r"""Sets the boot_loader of this PostSourceServerBody.
 
         Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
 
@@ -751,7 +751,7 @@ class PostSourceServerBody:
 
     @property
     def system_dir(self):
-        """Gets the system_dir of this PostSourceServerBody.
+        r"""Gets the system_dir of this PostSourceServerBody.
 
         Windows必选，系统目录
 
@@ -762,7 +762,7 @@ class PostSourceServerBody:
 
     @system_dir.setter
     def system_dir(self, system_dir):
-        """Sets the system_dir of this PostSourceServerBody.
+        r"""Sets the system_dir of this PostSourceServerBody.
 
         Windows必选，系统目录
 
@@ -773,7 +773,7 @@ class PostSourceServerBody:
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this PostSourceServerBody.
+        r"""Gets the volume_groups of this PostSourceServerBody.
 
         Linux必选，如果没有卷组，输入[]
 
@@ -784,7 +784,7 @@ class PostSourceServerBody:
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this PostSourceServerBody.
+        r"""Sets the volume_groups of this PostSourceServerBody.
 
         Linux必选，如果没有卷组，输入[]
 
@@ -795,7 +795,7 @@ class PostSourceServerBody:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this PostSourceServerBody.
+        r"""Gets the agent_version of this PostSourceServerBody.
 
         Agent版本
 
@@ -806,7 +806,7 @@ class PostSourceServerBody:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this PostSourceServerBody.
+        r"""Sets the agent_version of this PostSourceServerBody.
 
         Agent版本
 
@@ -817,7 +817,7 @@ class PostSourceServerBody:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this PostSourceServerBody.
+        r"""Gets the kernel_version of this PostSourceServerBody.
 
         内核版本信息
 
@@ -828,7 +828,7 @@ class PostSourceServerBody:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this PostSourceServerBody.
+        r"""Sets the kernel_version of this PostSourceServerBody.
 
         内核版本信息
 
@@ -839,7 +839,7 @@ class PostSourceServerBody:
 
     @property
     def migration_cycle(self):
-        """Gets the migration_cycle of this PostSourceServerBody.
+        r"""Gets the migration_cycle of this PostSourceServerBody.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
@@ -850,7 +850,7 @@ class PostSourceServerBody:
 
     @migration_cycle.setter
     def migration_cycle(self, migration_cycle):
-        """Sets the migration_cycle of this PostSourceServerBody.
+        r"""Sets the migration_cycle of this PostSourceServerBody.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
 
@@ -861,7 +861,7 @@ class PostSourceServerBody:
 
     @property
     def state(self):
-        """Gets the state of this PostSourceServerBody.
+        r"""Gets the state of this PostSourceServerBody.
 
         源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -872,7 +872,7 @@ class PostSourceServerBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PostSourceServerBody.
+        r"""Sets the state of this PostSourceServerBody.
 
         源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -883,7 +883,7 @@ class PostSourceServerBody:
 
     @property
     def oem_system(self):
-        """Gets the oem_system of this PostSourceServerBody.
+        r"""Gets the oem_system of this PostSourceServerBody.
 
         是否是OEM操作系统(Windows)
 
@@ -894,7 +894,7 @@ class PostSourceServerBody:
 
     @oem_system.setter
     def oem_system(self, oem_system):
-        """Sets the oem_system of this PostSourceServerBody.
+        r"""Sets the oem_system of this PostSourceServerBody.
 
         是否是OEM操作系统(Windows)
 
@@ -905,7 +905,7 @@ class PostSourceServerBody:
 
     @property
     def start_type(self):
-        """Gets the start_type of this PostSourceServerBody.
+        r"""Gets the start_type of this PostSourceServerBody.
 
         启动方式，可以取值MANUAL、MGC或者空。
 
@@ -916,7 +916,7 @@ class PostSourceServerBody:
 
     @start_type.setter
     def start_type(self, start_type):
-        """Sets the start_type of this PostSourceServerBody.
+        r"""Sets the start_type of this PostSourceServerBody.
 
         启动方式，可以取值MANUAL、MGC或者空。
 
@@ -927,7 +927,7 @@ class PostSourceServerBody:
 
     @property
     def io_read_wait(self):
-        """Gets the io_read_wait of this PostSourceServerBody.
+        r"""Gets the io_read_wait of this PostSourceServerBody.
 
         磁盘IO读时延，单位为ms
 
@@ -938,7 +938,7 @@ class PostSourceServerBody:
 
     @io_read_wait.setter
     def io_read_wait(self, io_read_wait):
-        """Sets the io_read_wait of this PostSourceServerBody.
+        r"""Sets the io_read_wait of this PostSourceServerBody.
 
         磁盘IO读时延，单位为ms
 
@@ -949,7 +949,7 @@ class PostSourceServerBody:
 
     @property
     def has_tc(self):
-        """Gets the has_tc of this PostSourceServerBody.
+        r"""Gets the has_tc of this PostSourceServerBody.
 
         是否安装tc组件，Linux系统此参数为必选
 
@@ -960,7 +960,7 @@ class PostSourceServerBody:
 
     @has_tc.setter
     def has_tc(self, has_tc):
-        """Sets the has_tc of this PostSourceServerBody.
+        r"""Sets the has_tc of this PostSourceServerBody.
 
         是否安装tc组件，Linux系统此参数为必选
 
@@ -971,7 +971,7 @@ class PostSourceServerBody:
 
     @property
     def platform(self):
-        """Gets the platform of this PostSourceServerBody.
+        r"""Gets the platform of this PostSourceServerBody.
 
         平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
 
@@ -982,7 +982,7 @@ class PostSourceServerBody:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this PostSourceServerBody.
+        r"""Sets the platform of this PostSourceServerBody.
 
         平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
 

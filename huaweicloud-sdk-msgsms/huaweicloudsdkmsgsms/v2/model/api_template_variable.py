@@ -37,7 +37,7 @@ class ApiTemplateVariable:
     }
 
     def __init__(self, id=None, user_name=None, temp_name=None, variable_index=None, variable_type=None, variable_length=None, variable_desc=None):
-        """ApiTemplateVariable
+        r"""ApiTemplateVariable
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ApiTemplateVariable:
 
     @property
     def id(self):
-        """Gets the id of this ApiTemplateVariable.
+        r"""Gets the id of this ApiTemplateVariable.
 
         变量id
 
@@ -96,7 +96,7 @@ class ApiTemplateVariable:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiTemplateVariable.
+        r"""Sets the id of this ApiTemplateVariable.
 
         变量id
 
@@ -107,7 +107,7 @@ class ApiTemplateVariable:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ApiTemplateVariable.
+        r"""Gets the user_name of this ApiTemplateVariable.
 
         用户名
 
@@ -118,7 +118,7 @@ class ApiTemplateVariable:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ApiTemplateVariable.
+        r"""Sets the user_name of this ApiTemplateVariable.
 
         用户名
 
@@ -129,7 +129,7 @@ class ApiTemplateVariable:
 
     @property
     def temp_name(self):
-        """Gets the temp_name of this ApiTemplateVariable.
+        r"""Gets the temp_name of this ApiTemplateVariable.
 
         模板名称
 
@@ -140,7 +140,7 @@ class ApiTemplateVariable:
 
     @temp_name.setter
     def temp_name(self, temp_name):
-        """Sets the temp_name of this ApiTemplateVariable.
+        r"""Sets the temp_name of this ApiTemplateVariable.
 
         模板名称
 
@@ -151,7 +151,7 @@ class ApiTemplateVariable:
 
     @property
     def variable_index(self):
-        """Gets the variable_index of this ApiTemplateVariable.
+        r"""Gets the variable_index of this ApiTemplateVariable.
 
         变量索引
 
@@ -162,7 +162,7 @@ class ApiTemplateVariable:
 
     @variable_index.setter
     def variable_index(self, variable_index):
-        """Sets the variable_index of this ApiTemplateVariable.
+        r"""Sets the variable_index of this ApiTemplateVariable.
 
         变量索引
 
@@ -173,7 +173,7 @@ class ApiTemplateVariable:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this ApiTemplateVariable.
+        r"""Gets the variable_type of this ApiTemplateVariable.
 
         变量类型
 
@@ -184,7 +184,7 @@ class ApiTemplateVariable:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this ApiTemplateVariable.
+        r"""Sets the variable_type of this ApiTemplateVariable.
 
         变量类型
 
@@ -195,7 +195,7 @@ class ApiTemplateVariable:
 
     @property
     def variable_length(self):
-        """Gets the variable_length of this ApiTemplateVariable.
+        r"""Gets the variable_length of this ApiTemplateVariable.
 
         变量长度
 
@@ -206,7 +206,7 @@ class ApiTemplateVariable:
 
     @variable_length.setter
     def variable_length(self, variable_length):
-        """Sets the variable_length of this ApiTemplateVariable.
+        r"""Sets the variable_length of this ApiTemplateVariable.
 
         变量长度
 
@@ -217,7 +217,7 @@ class ApiTemplateVariable:
 
     @property
     def variable_desc(self):
-        """Gets the variable_desc of this ApiTemplateVariable.
+        r"""Gets the variable_desc of this ApiTemplateVariable.
 
         变量描述
 
@@ -228,7 +228,7 @@ class ApiTemplateVariable:
 
     @variable_desc.setter
     def variable_desc(self, variable_desc):
-        """Sets the variable_desc of this ApiTemplateVariable.
+        r"""Sets the variable_desc of this ApiTemplateVariable.
 
         变量描述
 

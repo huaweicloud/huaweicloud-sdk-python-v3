@@ -28,7 +28,7 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
     }
 
     def __init__(self, binlog_retention_hours=None, binlog_clear_type=None):
-        """ShowBinlogClearPolicyResponse
+        r"""ShowBinlogClearPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
 
     @property
     def binlog_retention_hours(self):
-        """Gets the binlog_retention_hours of this ShowBinlogClearPolicyResponse.
+        r"""Gets the binlog_retention_hours of this ShowBinlogClearPolicyResponse.
 
         binlog保留时长
 
@@ -62,7 +62,7 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
 
     @binlog_retention_hours.setter
     def binlog_retention_hours(self, binlog_retention_hours):
-        """Sets the binlog_retention_hours of this ShowBinlogClearPolicyResponse.
+        r"""Sets the binlog_retention_hours of this ShowBinlogClearPolicyResponse.
 
         binlog保留时长
 
@@ -73,7 +73,7 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
 
     @property
     def binlog_clear_type(self):
-        """Gets the binlog_clear_type of this ShowBinlogClearPolicyResponse.
+        r"""Gets the binlog_clear_type of this ShowBinlogClearPolicyResponse.
 
         二进制日志保留策略,取值：time、fast - time:表示按时长保留二进制文件 - fast:表示快速清理,不保留二进制文件
 
@@ -84,7 +84,7 @@ class ShowBinlogClearPolicyResponse(SdkResponse):
 
     @binlog_clear_type.setter
     def binlog_clear_type(self, binlog_clear_type):
-        """Sets the binlog_clear_type of this ShowBinlogClearPolicyResponse.
+        r"""Sets the binlog_clear_type of this ShowBinlogClearPolicyResponse.
 
         二进制日志保留策略,取值：time、fast - time:表示按时长保留二进制文件 - fast:表示快速清理,不保留二进制文件
 

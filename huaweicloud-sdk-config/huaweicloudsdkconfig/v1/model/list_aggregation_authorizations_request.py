@@ -29,7 +29,7 @@ class ListAggregationAuthorizationsRequest:
     }
 
     def __init__(self, account_id=None, limit=None, marker=None):
-        """ListAggregationAuthorizationsRequest
+        r"""ListAggregationAuthorizationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAggregationAuthorizationsRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ListAggregationAuthorizationsRequest.
+        r"""Gets the account_id of this ListAggregationAuthorizationsRequest.
 
         授权的帐号ID。
 
@@ -68,7 +68,7 @@ class ListAggregationAuthorizationsRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ListAggregationAuthorizationsRequest.
+        r"""Sets the account_id of this ListAggregationAuthorizationsRequest.
 
         授权的帐号ID。
 
@@ -79,7 +79,7 @@ class ListAggregationAuthorizationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAggregationAuthorizationsRequest.
+        r"""Gets the limit of this ListAggregationAuthorizationsRequest.
 
         最大的返回数量
 
@@ -90,7 +90,7 @@ class ListAggregationAuthorizationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAggregationAuthorizationsRequest.
+        r"""Sets the limit of this ListAggregationAuthorizationsRequest.
 
         最大的返回数量
 
@@ -101,7 +101,7 @@ class ListAggregationAuthorizationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAggregationAuthorizationsRequest.
+        r"""Gets the marker of this ListAggregationAuthorizationsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -112,7 +112,7 @@ class ListAggregationAuthorizationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAggregationAuthorizationsRequest.
+        r"""Sets the marker of this ListAggregationAuthorizationsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

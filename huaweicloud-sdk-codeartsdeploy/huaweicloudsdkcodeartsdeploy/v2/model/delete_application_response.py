@@ -28,7 +28,7 @@ class DeleteApplicationResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """DeleteApplicationResponse
+        r"""DeleteApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteApplicationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteApplicationResponse.
+        r"""Gets the status of this DeleteApplicationResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class DeleteApplicationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteApplicationResponse.
+        r"""Sets the status of this DeleteApplicationResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class DeleteApplicationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteApplicationResponse.
+        r"""Gets the result of this DeleteApplicationResponse.
 
         :return: The result of this DeleteApplicationResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseResponse`
@@ -82,7 +82,7 @@ class DeleteApplicationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteApplicationResponse.
+        r"""Sets the result of this DeleteApplicationResponse.
 
         :param result: The result of this DeleteApplicationResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseResponse`

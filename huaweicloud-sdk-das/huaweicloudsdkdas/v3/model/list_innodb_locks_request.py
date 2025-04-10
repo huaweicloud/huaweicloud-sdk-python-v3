@@ -29,7 +29,7 @@ class ListInnodbLocksRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, x_language=None):
-        """ListInnodbLocksRequest
+        r"""ListInnodbLocksRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListInnodbLocksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInnodbLocksRequest.
+        r"""Gets the instance_id of this ListInnodbLocksRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ListInnodbLocksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInnodbLocksRequest.
+        r"""Sets the instance_id of this ListInnodbLocksRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ListInnodbLocksRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this ListInnodbLocksRequest.
+        r"""Gets the db_user_id of this ListInnodbLocksRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -88,7 +88,7 @@ class ListInnodbLocksRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this ListInnodbLocksRequest.
+        r"""Sets the db_user_id of this ListInnodbLocksRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -99,7 +99,7 @@ class ListInnodbLocksRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInnodbLocksRequest.
+        r"""Gets the x_language of this ListInnodbLocksRequest.
 
         语言
 
@@ -110,7 +110,7 @@ class ListInnodbLocksRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInnodbLocksRequest.
+        r"""Sets the x_language of this ListInnodbLocksRequest.
 
         语言
 

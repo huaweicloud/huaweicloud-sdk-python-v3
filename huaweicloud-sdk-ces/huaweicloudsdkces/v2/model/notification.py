@@ -27,7 +27,7 @@ class Notification:
     }
 
     def __init__(self, type=None, notification_list=None):
-        """Notification
+        r"""Notification
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Notification:
 
     @property
     def type(self):
-        """Gets the type of this Notification.
+        r"""Gets the type of this Notification.
 
         通知类型, notification代表通过SMN通知
 
@@ -59,7 +59,7 @@ class Notification:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Notification.
+        r"""Sets the type of this Notification.
 
         通知类型, notification代表通过SMN通知
 
@@ -70,7 +70,7 @@ class Notification:
 
     @property
     def notification_list(self):
-        """Gets the notification_list of this Notification.
+        r"""Gets the notification_list of this Notification.
 
         告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notification_list列表不能为空。 说明：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notification_list值保持一致。
 
@@ -81,7 +81,7 @@ class Notification:
 
     @notification_list.setter
     def notification_list(self, notification_list):
-        """Sets the notification_list of this Notification.
+        r"""Sets the notification_list of this Notification.
 
         告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notification_list列表不能为空。 说明：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notification_list值保持一致。
 

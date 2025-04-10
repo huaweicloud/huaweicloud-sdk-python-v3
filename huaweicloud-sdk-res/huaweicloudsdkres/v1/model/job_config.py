@@ -71,7 +71,7 @@ class JobConfig:
     }
 
     def __init__(self, nearline_recall_param=None, max_recommended_num=None, match_feature_pairs=None, striping=None, match_type=None, matrix_factorization=None, behavior_frequencys=None, file_path=None, ucb_param=None, behavior_gravity=None, category=None, behavior_logic=None, features_engineering=None, sample_param=None, deep_learning_parameters=None, algorithm_specify_parameters=None, load_widetable=None, load_profile=None, save_mode=None, indicators=None, offline_rank_job_name=None, update_interval=None, optimizer=None, flows=None):
-        """JobConfig
+        r"""JobConfig
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class JobConfig:
 
     @property
     def nearline_recall_param(self):
-        """Gets the nearline_recall_param of this JobConfig.
+        r"""Gets the nearline_recall_param of this JobConfig.
 
         :return: The nearline_recall_param of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
@@ -213,7 +213,7 @@ class JobConfig:
 
     @nearline_recall_param.setter
     def nearline_recall_param(self, nearline_recall_param):
-        """Sets the nearline_recall_param of this JobConfig.
+        r"""Sets the nearline_recall_param of this JobConfig.
 
         :param nearline_recall_param: The nearline_recall_param of this JobConfig.
         :type nearline_recall_param: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
@@ -222,7 +222,7 @@ class JobConfig:
 
     @property
     def max_recommended_num(self):
-        """Gets the max_recommended_num of this JobConfig.
+        r"""Gets the max_recommended_num of this JobConfig.
 
         最大候选集个数（所有召回作业需提供此参数）。
 
@@ -233,7 +233,7 @@ class JobConfig:
 
     @max_recommended_num.setter
     def max_recommended_num(self, max_recommended_num):
-        """Sets the max_recommended_num of this JobConfig.
+        r"""Sets the max_recommended_num of this JobConfig.
 
         最大候选集个数（所有召回作业需提供此参数）。
 
@@ -244,7 +244,7 @@ class JobConfig:
 
     @property
     def match_feature_pairs(self):
-        """Gets the match_feature_pairs of this JobConfig.
+        r"""Gets the match_feature_pairs of this JobConfig.
 
         匹配特征对（属性匹配召回作业需要提供此参数）。
 
@@ -255,7 +255,7 @@ class JobConfig:
 
     @match_feature_pairs.setter
     def match_feature_pairs(self, match_feature_pairs):
-        """Sets the match_feature_pairs of this JobConfig.
+        r"""Sets the match_feature_pairs of this JobConfig.
 
         匹配特征对（属性匹配召回作业需要提供此参数）。
 
@@ -266,7 +266,7 @@ class JobConfig:
 
     @property
     def striping(self):
-        """Gets the striping of this JobConfig.
+        r"""Gets the striping of this JobConfig.
 
         :return: The striping of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Striping`
@@ -275,7 +275,7 @@ class JobConfig:
 
     @striping.setter
     def striping(self, striping):
-        """Sets the striping of this JobConfig.
+        r"""Sets the striping of this JobConfig.
 
         :param striping: The striping of this JobConfig.
         :type striping: :class:`huaweicloudsdkres.v1.Striping`
@@ -284,7 +284,7 @@ class JobConfig:
 
     @property
     def match_type(self):
-        """Gets the match_type of this JobConfig.
+        r"""Gets the match_type of this JobConfig.
 
         匹配类型（属性匹配召回作业需提供此参数）： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
@@ -295,7 +295,7 @@ class JobConfig:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this JobConfig.
+        r"""Sets the match_type of this JobConfig.
 
         匹配类型（属性匹配召回作业需提供此参数）： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
@@ -306,7 +306,7 @@ class JobConfig:
 
     @property
     def matrix_factorization(self):
-        """Gets the matrix_factorization of this JobConfig.
+        r"""Gets the matrix_factorization of this JobConfig.
 
         :return: The matrix_factorization of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.MatrixFactorization`
@@ -315,7 +315,7 @@ class JobConfig:
 
     @matrix_factorization.setter
     def matrix_factorization(self, matrix_factorization):
-        """Sets the matrix_factorization of this JobConfig.
+        r"""Sets the matrix_factorization of this JobConfig.
 
         :param matrix_factorization: The matrix_factorization of this JobConfig.
         :type matrix_factorization: :class:`huaweicloudsdkres.v1.MatrixFactorization`
@@ -324,7 +324,7 @@ class JobConfig:
 
     @property
     def behavior_frequencys(self):
-        """Gets the behavior_frequencys of this JobConfig.
+        r"""Gets the behavior_frequencys of this JobConfig.
 
         行为频率信息（历史行为记忆召回作业、历史行为过滤作业需提供此参数）。
 
@@ -335,7 +335,7 @@ class JobConfig:
 
     @behavior_frequencys.setter
     def behavior_frequencys(self, behavior_frequencys):
-        """Sets the behavior_frequencys of this JobConfig.
+        r"""Sets the behavior_frequencys of this JobConfig.
 
         行为频率信息（历史行为记忆召回作业、历史行为过滤作业需提供此参数）。
 
@@ -346,7 +346,7 @@ class JobConfig:
 
     @property
     def file_path(self):
-        """Gets the file_path of this JobConfig.
+        r"""Gets the file_path of this JobConfig.
 
         文件路径（人工配置候选集作业需要提供此参数）。
 
@@ -357,7 +357,7 @@ class JobConfig:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this JobConfig.
+        r"""Sets the file_path of this JobConfig.
 
         文件路径（人工配置候选集作业需要提供此参数）。
 
@@ -368,7 +368,7 @@ class JobConfig:
 
     @property
     def ucb_param(self):
-        """Gets the ucb_param of this JobConfig.
+        r"""Gets the ucb_param of this JobConfig.
 
         :return: The ucb_param of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.UcbParam`
@@ -377,7 +377,7 @@ class JobConfig:
 
     @ucb_param.setter
     def ucb_param(self, ucb_param):
-        """Sets the ucb_param of this JobConfig.
+        r"""Sets the ucb_param of this JobConfig.
 
         :param ucb_param: The ucb_param of this JobConfig.
         :type ucb_param: :class:`huaweicloudsdkres.v1.UcbParam`
@@ -386,7 +386,7 @@ class JobConfig:
 
     @property
     def behavior_gravity(self):
-        """Gets the behavior_gravity of this JobConfig.
+        r"""Gets the behavior_gravity of this JobConfig.
 
         :return: The behavior_gravity of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.BehaviorGravity`
@@ -395,7 +395,7 @@ class JobConfig:
 
     @behavior_gravity.setter
     def behavior_gravity(self, behavior_gravity):
-        """Sets the behavior_gravity of this JobConfig.
+        r"""Sets the behavior_gravity of this JobConfig.
 
         :param behavior_gravity: The behavior_gravity of this JobConfig.
         :type behavior_gravity: :class:`huaweicloudsdkres.v1.BehaviorGravity`
@@ -404,7 +404,7 @@ class JobConfig:
 
     @property
     def category(self):
-        """Gets the category of this JobConfig.
+        r"""Gets the category of this JobConfig.
 
         :return: The category of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Category`
@@ -413,7 +413,7 @@ class JobConfig:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this JobConfig.
+        r"""Sets the category of this JobConfig.
 
         :param category: The category of this JobConfig.
         :type category: :class:`huaweicloudsdkres.v1.Category`
@@ -422,7 +422,7 @@ class JobConfig:
 
     @property
     def behavior_logic(self):
-        """Gets the behavior_logic of this JobConfig.
+        r"""Gets the behavior_logic of this JobConfig.
 
         行为逻辑过滤（历史行为过滤作业需提供此参数）： - AND，同时满足则过滤 - OR， 满足一个则过滤
 
@@ -433,7 +433,7 @@ class JobConfig:
 
     @behavior_logic.setter
     def behavior_logic(self, behavior_logic):
-        """Sets the behavior_logic of this JobConfig.
+        r"""Sets the behavior_logic of this JobConfig.
 
         行为逻辑过滤（历史行为过滤作业需提供此参数）： - AND，同时满足则过滤 - OR， 满足一个则过滤
 
@@ -444,7 +444,7 @@ class JobConfig:
 
     @property
     def features_engineering(self):
-        """Gets the features_engineering of this JobConfig.
+        r"""Gets the features_engineering of this JobConfig.
 
         :return: The features_engineering of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
@@ -453,7 +453,7 @@ class JobConfig:
 
     @features_engineering.setter
     def features_engineering(self, features_engineering):
-        """Sets the features_engineering of this JobConfig.
+        r"""Sets the features_engineering of this JobConfig.
 
         :param features_engineering: The features_engineering of this JobConfig.
         :type features_engineering: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
@@ -462,7 +462,7 @@ class JobConfig:
 
     @property
     def sample_param(self):
-        """Gets the sample_param of this JobConfig.
+        r"""Gets the sample_param of this JobConfig.
 
         :return: The sample_param of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.SampleParam`
@@ -471,7 +471,7 @@ class JobConfig:
 
     @sample_param.setter
     def sample_param(self, sample_param):
-        """Sets the sample_param of this JobConfig.
+        r"""Sets the sample_param of this JobConfig.
 
         :param sample_param: The sample_param of this JobConfig.
         :type sample_param: :class:`huaweicloudsdkres.v1.SampleParam`
@@ -480,7 +480,7 @@ class JobConfig:
 
     @property
     def deep_learning_parameters(self):
-        """Gets the deep_learning_parameters of this JobConfig.
+        r"""Gets the deep_learning_parameters of this JobConfig.
 
         :return: The deep_learning_parameters of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.DeepLearingParam`
@@ -489,7 +489,7 @@ class JobConfig:
 
     @deep_learning_parameters.setter
     def deep_learning_parameters(self, deep_learning_parameters):
-        """Sets the deep_learning_parameters of this JobConfig.
+        r"""Sets the deep_learning_parameters of this JobConfig.
 
         :param deep_learning_parameters: The deep_learning_parameters of this JobConfig.
         :type deep_learning_parameters: :class:`huaweicloudsdkres.v1.DeepLearingParam`
@@ -498,7 +498,7 @@ class JobConfig:
 
     @property
     def algorithm_specify_parameters(self):
-        """Gets the algorithm_specify_parameters of this JobConfig.
+        r"""Gets the algorithm_specify_parameters of this JobConfig.
 
         :return: The algorithm_specify_parameters of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
@@ -507,7 +507,7 @@ class JobConfig:
 
     @algorithm_specify_parameters.setter
     def algorithm_specify_parameters(self, algorithm_specify_parameters):
-        """Sets the algorithm_specify_parameters of this JobConfig.
+        r"""Sets the algorithm_specify_parameters of this JobConfig.
 
         :param algorithm_specify_parameters: The algorithm_specify_parameters of this JobConfig.
         :type algorithm_specify_parameters: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
@@ -516,7 +516,7 @@ class JobConfig:
 
     @property
     def load_widetable(self):
-        """Gets the load_widetable of this JobConfig.
+        r"""Gets the load_widetable of this JobConfig.
 
         导入宽表（离线数据导入作业需要提供此参数）。
 
@@ -527,7 +527,7 @@ class JobConfig:
 
     @load_widetable.setter
     def load_widetable(self, load_widetable):
-        """Sets the load_widetable of this JobConfig.
+        r"""Sets the load_widetable of this JobConfig.
 
         导入宽表（离线数据导入作业需要提供此参数）。
 
@@ -538,7 +538,7 @@ class JobConfig:
 
     @property
     def load_profile(self):
-        """Gets the load_profile of this JobConfig.
+        r"""Gets the load_profile of this JobConfig.
 
         导入画像（离线数据导入作业需要提供此参数）。
 
@@ -549,7 +549,7 @@ class JobConfig:
 
     @load_profile.setter
     def load_profile(self, load_profile):
-        """Sets the load_profile of this JobConfig.
+        r"""Sets the load_profile of this JobConfig.
 
         导入画像（离线数据导入作业需要提供此参数）。
 
@@ -560,7 +560,7 @@ class JobConfig:
 
     @property
     def save_mode(self):
-        """Gets the save_mode of this JobConfig.
+        r"""Gets the save_mode of this JobConfig.
 
         保留已有宽表（离线数据导入作业需要提供此参数）： - append，是 - new，否 - overwirte，覆盖
 
@@ -571,7 +571,7 @@ class JobConfig:
 
     @save_mode.setter
     def save_mode(self, save_mode):
-        """Sets the save_mode of this JobConfig.
+        r"""Sets the save_mode of this JobConfig.
 
         保留已有宽表（离线数据导入作业需要提供此参数）： - append，是 - new，否 - overwirte，覆盖
 
@@ -582,7 +582,7 @@ class JobConfig:
 
     @property
     def indicators(self):
-        """Gets the indicators of this JobConfig.
+        r"""Gets the indicators of this JobConfig.
 
         统计指标（效果评估作业需要提供此参数）。
 
@@ -593,7 +593,7 @@ class JobConfig:
 
     @indicators.setter
     def indicators(self, indicators):
-        """Sets the indicators of this JobConfig.
+        r"""Sets the indicators of this JobConfig.
 
         统计指标（效果评估作业需要提供此参数）。
 
@@ -604,7 +604,7 @@ class JobConfig:
 
     @property
     def offline_rank_job_name(self):
-        """Gets the offline_rank_job_name of this JobConfig.
+        r"""Gets the offline_rank_job_name of this JobConfig.
 
         离线排序作业名称（在线训练任务需要提供此参数）。
 
@@ -615,7 +615,7 @@ class JobConfig:
 
     @offline_rank_job_name.setter
     def offline_rank_job_name(self, offline_rank_job_name):
-        """Sets the offline_rank_job_name of this JobConfig.
+        r"""Sets the offline_rank_job_name of this JobConfig.
 
         离线排序作业名称（在线训练任务需要提供此参数）。
 
@@ -626,7 +626,7 @@ class JobConfig:
 
     @property
     def update_interval(self):
-        """Gets the update_interval of this JobConfig.
+        r"""Gets the update_interval of this JobConfig.
 
         更新周期（在线训练任务需要提供此参数）。
 
@@ -637,7 +637,7 @@ class JobConfig:
 
     @update_interval.setter
     def update_interval(self, update_interval):
-        """Sets the update_interval of this JobConfig.
+        r"""Sets the update_interval of this JobConfig.
 
         更新周期（在线训练任务需要提供此参数）。
 
@@ -648,7 +648,7 @@ class JobConfig:
 
     @property
     def optimizer(self):
-        """Gets the optimizer of this JobConfig.
+        r"""Gets the optimizer of this JobConfig.
 
         :return: The optimizer of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -657,7 +657,7 @@ class JobConfig:
 
     @optimizer.setter
     def optimizer(self, optimizer):
-        """Sets the optimizer of this JobConfig.
+        r"""Sets the optimizer of this JobConfig.
 
         :param optimizer: The optimizer of this JobConfig.
         :type optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -666,7 +666,7 @@ class JobConfig:
 
     @property
     def flows(self):
-        """Gets the flows of this JobConfig.
+        r"""Gets the flows of this JobConfig.
 
         :return: The flows of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Flow`
@@ -675,7 +675,7 @@ class JobConfig:
 
     @flows.setter
     def flows(self, flows):
-        """Sets the flows of this JobConfig.
+        r"""Sets the flows of this JobConfig.
 
         :param flows: The flows of this JobConfig.
         :type flows: :class:`huaweicloudsdkres.v1.Flow`

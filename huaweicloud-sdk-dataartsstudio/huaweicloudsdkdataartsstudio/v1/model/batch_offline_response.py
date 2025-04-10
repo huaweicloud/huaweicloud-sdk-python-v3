@@ -26,7 +26,7 @@ class BatchOfflineResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """BatchOfflineResponse
+        r"""BatchOfflineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchOfflineResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchOfflineResponse.
+        r"""Gets the data of this BatchOfflineResponse.
 
         :return: The data of this BatchOfflineResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOfflineResultData`
@@ -53,7 +53,7 @@ class BatchOfflineResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchOfflineResponse.
+        r"""Sets the data of this BatchOfflineResponse.
 
         :param data: The data of this BatchOfflineResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.BatchOfflineResultData`

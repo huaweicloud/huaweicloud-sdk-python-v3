@@ -27,7 +27,7 @@ class RecycleDatastore:
     }
 
     def __init__(self, type=None, version=None):
-        """RecycleDatastore
+        r"""RecycleDatastore
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RecycleDatastore:
 
     @property
     def type(self):
-        """Gets the type of this RecycleDatastore.
+        r"""Gets the type of this RecycleDatastore.
 
         数据库版本类型。取值“DDS-Community”。
 
@@ -59,7 +59,7 @@ class RecycleDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RecycleDatastore.
+        r"""Sets the type of this RecycleDatastore.
 
         数据库版本类型。取值“DDS-Community”。
 
@@ -70,7 +70,7 @@ class RecycleDatastore:
 
     @property
     def version(self):
-        """Gets the version of this RecycleDatastore.
+        r"""Gets the version of this RecycleDatastore.
 
         数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”或“5.0”。
 
@@ -81,7 +81,7 @@ class RecycleDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RecycleDatastore.
+        r"""Sets the version of this RecycleDatastore.
 
         数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”或“5.0”。
 

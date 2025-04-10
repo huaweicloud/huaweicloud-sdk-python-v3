@@ -35,7 +35,7 @@ class CreateFepJobReq:
     }
 
     def __init__(self, basic_info=None, receptor=None, add_membrane=None, ligands=None, graph=None, params=None):
-        """CreateFepJobReq
+        r"""CreateFepJobReq
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CreateFepJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateFepJobReq.
+        r"""Gets the basic_info of this CreateFepJobReq.
 
         :return: The basic_info of this CreateFepJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -82,7 +82,7 @@ class CreateFepJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateFepJobReq.
+        r"""Sets the basic_info of this CreateFepJobReq.
 
         :param basic_info: The basic_info of this CreateFepJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -91,7 +91,7 @@ class CreateFepJobReq:
 
     @property
     def receptor(self):
-        """Gets the receptor of this CreateFepJobReq.
+        r"""Gets the receptor of this CreateFepJobReq.
 
         :return: The receptor of this CreateFepJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -100,7 +100,7 @@ class CreateFepJobReq:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this CreateFepJobReq.
+        r"""Sets the receptor of this CreateFepJobReq.
 
         :param receptor: The receptor of this CreateFepJobReq.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -109,7 +109,7 @@ class CreateFepJobReq:
 
     @property
     def add_membrane(self):
-        """Gets the add_membrane of this CreateFepJobReq.
+        r"""Gets the add_membrane of this CreateFepJobReq.
 
         是否加膜处理
 
@@ -120,7 +120,7 @@ class CreateFepJobReq:
 
     @add_membrane.setter
     def add_membrane(self, add_membrane):
-        """Sets the add_membrane of this CreateFepJobReq.
+        r"""Sets the add_membrane of this CreateFepJobReq.
 
         是否加膜处理
 
@@ -131,7 +131,7 @@ class CreateFepJobReq:
 
     @property
     def ligands(self):
-        """Gets the ligands of this CreateFepJobReq.
+        r"""Gets the ligands of this CreateFepJobReq.
 
         配体列表
 
@@ -142,7 +142,7 @@ class CreateFepJobReq:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this CreateFepJobReq.
+        r"""Sets the ligands of this CreateFepJobReq.
 
         配体列表
 
@@ -153,7 +153,7 @@ class CreateFepJobReq:
 
     @property
     def graph(self):
-        """Gets the graph of this CreateFepJobReq.
+        r"""Gets the graph of this CreateFepJobReq.
 
         :return: The graph of this CreateFepJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FepGraphDto`
@@ -162,7 +162,7 @@ class CreateFepJobReq:
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this CreateFepJobReq.
+        r"""Sets the graph of this CreateFepJobReq.
 
         :param graph: The graph of this CreateFepJobReq.
         :type graph: :class:`huaweicloudsdkeihealth.v1.FepGraphDto`
@@ -171,7 +171,7 @@ class CreateFepJobReq:
 
     @property
     def params(self):
-        """Gets the params of this CreateFepJobReq.
+        r"""Gets the params of this CreateFepJobReq.
 
         :return: The params of this CreateFepJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FepParamDto`
@@ -180,7 +180,7 @@ class CreateFepJobReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateFepJobReq.
+        r"""Sets the params of this CreateFepJobReq.
 
         :param params: The params of this CreateFepJobReq.
         :type params: :class:`huaweicloudsdkeihealth.v1.FepParamDto`

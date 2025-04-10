@@ -33,7 +33,7 @@ class MultiConcatInfo:
     }
 
     def __init__(self, inputs=None, trans_template_ids=None, av_parameters=None, output=None, image_watermark_settings=None):
-        """MultiConcatInfo
+        r"""MultiConcatInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class MultiConcatInfo:
 
     @property
     def inputs(self):
-        """Gets the inputs of this MultiConcatInfo.
+        r"""Gets the inputs of this MultiConcatInfo.
 
         拼接任务输入源地址。
 
@@ -80,7 +80,7 @@ class MultiConcatInfo:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this MultiConcatInfo.
+        r"""Sets the inputs of this MultiConcatInfo.
 
         拼接任务输入源地址。
 
@@ -91,7 +91,7 @@ class MultiConcatInfo:
 
     @property
     def trans_template_ids(self):
-        """Gets the trans_template_ids of this MultiConcatInfo.
+        r"""Gets the trans_template_ids of this MultiConcatInfo.
 
         拼接完成后转码对应的转码模板ID 
 
@@ -102,7 +102,7 @@ class MultiConcatInfo:
 
     @trans_template_ids.setter
     def trans_template_ids(self, trans_template_ids):
-        """Sets the trans_template_ids of this MultiConcatInfo.
+        r"""Sets the trans_template_ids of this MultiConcatInfo.
 
         拼接完成后转码对应的转码模板ID 
 
@@ -113,7 +113,7 @@ class MultiConcatInfo:
 
     @property
     def av_parameters(self):
-        """Gets the av_parameters of this MultiConcatInfo.
+        r"""Gets the av_parameters of this MultiConcatInfo.
 
         转码参数。 设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
@@ -124,7 +124,7 @@ class MultiConcatInfo:
 
     @av_parameters.setter
     def av_parameters(self, av_parameters):
-        """Sets the av_parameters of this MultiConcatInfo.
+        r"""Sets the av_parameters of this MultiConcatInfo.
 
         转码参数。 设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
 
@@ -135,7 +135,7 @@ class MultiConcatInfo:
 
     @property
     def output(self):
-        """Gets the output of this MultiConcatInfo.
+        r"""Gets the output of this MultiConcatInfo.
 
         :return: The output of this MultiConcatInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -144,7 +144,7 @@ class MultiConcatInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this MultiConcatInfo.
+        r"""Sets the output of this MultiConcatInfo.
 
         :param output: The output of this MultiConcatInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -153,7 +153,7 @@ class MultiConcatInfo:
 
     @property
     def image_watermark_settings(self):
-        """Gets the image_watermark_settings of this MultiConcatInfo.
+        r"""Gets the image_watermark_settings of this MultiConcatInfo.
 
         水印信息。
 
@@ -164,7 +164,7 @@ class MultiConcatInfo:
 
     @image_watermark_settings.setter
     def image_watermark_settings(self, image_watermark_settings):
-        """Sets the image_watermark_settings of this MultiConcatInfo.
+        r"""Sets the image_watermark_settings of this MultiConcatInfo.
 
         水印信息。
 

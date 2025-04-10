@@ -27,7 +27,7 @@ class GetDataTransformationResp:
     }
 
     def __init__(self, total_count=None, filter_conditions=None):
-        """GetDataTransformationResp
+        r"""GetDataTransformationResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GetDataTransformationResp:
 
     @property
     def total_count(self):
-        """Gets the total_count of this GetDataTransformationResp.
+        r"""Gets the total_count of this GetDataTransformationResp.
 
         数据加工总数。
 
@@ -61,7 +61,7 @@ class GetDataTransformationResp:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this GetDataTransformationResp.
+        r"""Sets the total_count of this GetDataTransformationResp.
 
         数据加工总数。
 
@@ -72,7 +72,7 @@ class GetDataTransformationResp:
 
     @property
     def filter_conditions(self):
-        """Gets the filter_conditions of this GetDataTransformationResp.
+        r"""Gets the filter_conditions of this GetDataTransformationResp.
 
         数据过滤配置信息。
 
@@ -83,7 +83,7 @@ class GetDataTransformationResp:
 
     @filter_conditions.setter
     def filter_conditions(self, filter_conditions):
-        """Sets the filter_conditions of this GetDataTransformationResp.
+        r"""Sets the filter_conditions of this GetDataTransformationResp.
 
         数据过滤配置信息。
 

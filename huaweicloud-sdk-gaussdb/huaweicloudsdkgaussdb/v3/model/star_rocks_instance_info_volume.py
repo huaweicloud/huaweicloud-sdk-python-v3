@@ -27,7 +27,7 @@ class StarRocksInstanceInfoVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """StarRocksInstanceInfoVolume
+        r"""StarRocksInstanceInfoVolume
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StarRocksInstanceInfoVolume:
 
     @property
     def type(self):
-        """Gets the type of this StarRocksInstanceInfoVolume.
+        r"""Gets the type of this StarRocksInstanceInfoVolume.
 
         实例节点存储类型。
 
@@ -61,7 +61,7 @@ class StarRocksInstanceInfoVolume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StarRocksInstanceInfoVolume.
+        r"""Sets the type of this StarRocksInstanceInfoVolume.
 
         实例节点存储类型。
 
@@ -72,7 +72,7 @@ class StarRocksInstanceInfoVolume:
 
     @property
     def size(self):
-        """Gets the size of this StarRocksInstanceInfoVolume.
+        r"""Gets the size of this StarRocksInstanceInfoVolume.
 
         实例节点存储大小。
 
@@ -83,7 +83,7 @@ class StarRocksInstanceInfoVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this StarRocksInstanceInfoVolume.
+        r"""Sets the size of this StarRocksInstanceInfoVolume.
 
         实例节点存储大小。
 

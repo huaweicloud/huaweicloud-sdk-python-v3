@@ -27,7 +27,7 @@ class VulScanTaskHostInfoFailedReasons:
     }
 
     def __init__(self, vul_type=None, failed_reason=None):
-        """VulScanTaskHostInfoFailedReasons
+        r"""VulScanTaskHostInfoFailedReasons
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VulScanTaskHostInfoFailedReasons:
 
     @property
     def vul_type(self):
-        """Gets the vul_type of this VulScanTaskHostInfoFailedReasons.
+        r"""Gets the vul_type of this VulScanTaskHostInfoFailedReasons.
 
         扫描失败的漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞   -urgent_vul : 应急漏洞
 
@@ -61,7 +61,7 @@ class VulScanTaskHostInfoFailedReasons:
 
     @vul_type.setter
     def vul_type(self, vul_type):
-        """Sets the vul_type of this VulScanTaskHostInfoFailedReasons.
+        r"""Sets the vul_type of this VulScanTaskHostInfoFailedReasons.
 
         扫描失败的漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞   -urgent_vul : 应急漏洞
 
@@ -72,7 +72,7 @@ class VulScanTaskHostInfoFailedReasons:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this VulScanTaskHostInfoFailedReasons.
+        r"""Gets the failed_reason of this VulScanTaskHostInfoFailedReasons.
 
         扫描失败的原因
 
@@ -83,7 +83,7 @@ class VulScanTaskHostInfoFailedReasons:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this VulScanTaskHostInfoFailedReasons.
+        r"""Sets the failed_reason of this VulScanTaskHostInfoFailedReasons.
 
         扫描失败的原因
 

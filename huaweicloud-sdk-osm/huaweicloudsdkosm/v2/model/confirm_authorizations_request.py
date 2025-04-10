@@ -33,7 +33,7 @@ class ConfirmAuthorizationsRequest:
     }
 
     def __init__(self, authorization_id=None, x_site=None, x_language=None, x_time_zone=None, body=None):
-        """ConfirmAuthorizationsRequest
+        r"""ConfirmAuthorizationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ConfirmAuthorizationsRequest:
 
     @property
     def authorization_id(self):
-        """Gets the authorization_id of this ConfirmAuthorizationsRequest.
+        r"""Gets the authorization_id of this ConfirmAuthorizationsRequest.
 
         授权id
 
@@ -81,7 +81,7 @@ class ConfirmAuthorizationsRequest:
 
     @authorization_id.setter
     def authorization_id(self, authorization_id):
-        """Sets the authorization_id of this ConfirmAuthorizationsRequest.
+        r"""Sets the authorization_id of this ConfirmAuthorizationsRequest.
 
         授权id
 
@@ -92,7 +92,7 @@ class ConfirmAuthorizationsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ConfirmAuthorizationsRequest.
+        r"""Gets the x_site of this ConfirmAuthorizationsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -103,7 +103,7 @@ class ConfirmAuthorizationsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ConfirmAuthorizationsRequest.
+        r"""Sets the x_site of this ConfirmAuthorizationsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -114,7 +114,7 @@ class ConfirmAuthorizationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ConfirmAuthorizationsRequest.
+        r"""Gets the x_language of this ConfirmAuthorizationsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -125,7 +125,7 @@ class ConfirmAuthorizationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ConfirmAuthorizationsRequest.
+        r"""Sets the x_language of this ConfirmAuthorizationsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -136,7 +136,7 @@ class ConfirmAuthorizationsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ConfirmAuthorizationsRequest.
+        r"""Gets the x_time_zone of this ConfirmAuthorizationsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -147,7 +147,7 @@ class ConfirmAuthorizationsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ConfirmAuthorizationsRequest.
+        r"""Sets the x_time_zone of this ConfirmAuthorizationsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -158,7 +158,7 @@ class ConfirmAuthorizationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmAuthorizationsRequest.
+        r"""Gets the body of this ConfirmAuthorizationsRequest.
 
         :return: The body of this ConfirmAuthorizationsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.AgreeTenantAuthorizationV2Req`
@@ -167,7 +167,7 @@ class ConfirmAuthorizationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmAuthorizationsRequest.
+        r"""Sets the body of this ConfirmAuthorizationsRequest.
 
         :param body: The body of this ConfirmAuthorizationsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.AgreeTenantAuthorizationV2Req`

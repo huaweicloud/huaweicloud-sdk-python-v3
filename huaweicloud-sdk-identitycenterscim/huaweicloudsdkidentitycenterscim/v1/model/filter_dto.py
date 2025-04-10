@@ -27,7 +27,7 @@ class FilterDto:
     }
 
     def __init__(self, supported=None, max_results=None):
-        """FilterDto
+        r"""FilterDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FilterDto:
 
     @property
     def supported(self):
-        """Gets the supported of this FilterDto.
+        r"""Gets the supported of this FilterDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -61,7 +61,7 @@ class FilterDto:
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this FilterDto.
+        r"""Sets the supported of this FilterDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -72,7 +72,7 @@ class FilterDto:
 
     @property
     def max_results(self):
-        """Gets the max_results of this FilterDto.
+        r"""Gets the max_results of this FilterDto.
 
         最大结果数
 
@@ -83,7 +83,7 @@ class FilterDto:
 
     @max_results.setter
     def max_results(self, max_results):
-        """Sets the max_results of this FilterDto.
+        r"""Sets the max_results of this FilterDto.
 
         最大结果数
 

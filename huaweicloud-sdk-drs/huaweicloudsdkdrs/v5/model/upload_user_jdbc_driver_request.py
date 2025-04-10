@@ -29,7 +29,7 @@ class UploadUserJdbcDriverRequest:
     }
 
     def __init__(self, x_language=None, driver_type=None, body=None):
-        """UploadUserJdbcDriverRequest
+        r"""UploadUserJdbcDriverRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UploadUserJdbcDriverRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UploadUserJdbcDriverRequest.
+        r"""Gets the x_language of this UploadUserJdbcDriverRequest.
 
         请求语言类型。
 
@@ -67,7 +67,7 @@ class UploadUserJdbcDriverRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UploadUserJdbcDriverRequest.
+        r"""Sets the x_language of this UploadUserJdbcDriverRequest.
 
         请求语言类型。
 
@@ -78,7 +78,7 @@ class UploadUserJdbcDriverRequest:
 
     @property
     def driver_type(self):
-        """Gets the driver_type of this UploadUserJdbcDriverRequest.
+        r"""Gets the driver_type of this UploadUserJdbcDriverRequest.
 
         指定待上传的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -89,7 +89,7 @@ class UploadUserJdbcDriverRequest:
 
     @driver_type.setter
     def driver_type(self, driver_type):
-        """Sets the driver_type of this UploadUserJdbcDriverRequest.
+        r"""Sets the driver_type of this UploadUserJdbcDriverRequest.
 
         指定待上传的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -100,7 +100,7 @@ class UploadUserJdbcDriverRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadUserJdbcDriverRequest.
+        r"""Gets the body of this UploadUserJdbcDriverRequest.
 
         :return: The body of this UploadUserJdbcDriverRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.UploadUserJdbcDriverRequestBody`
@@ -109,7 +109,7 @@ class UploadUserJdbcDriverRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadUserJdbcDriverRequest.
+        r"""Sets the body of this UploadUserJdbcDriverRequest.
 
         :param body: The body of this UploadUserJdbcDriverRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.UploadUserJdbcDriverRequestBody`

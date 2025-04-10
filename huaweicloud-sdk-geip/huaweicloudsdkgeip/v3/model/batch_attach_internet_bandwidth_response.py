@@ -28,7 +28,7 @@ class BatchAttachInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_request_id=None):
-        """BatchAttachInternetBandwidthResponse
+        r"""BatchAttachInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchAttachInternetBandwidthResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchAttachInternetBandwidthResponse.
+        r"""Gets the body of this BatchAttachInternetBandwidthResponse.
 
         :return: The body of this BatchAttachInternetBandwidthResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.str`
@@ -60,7 +60,7 @@ class BatchAttachInternetBandwidthResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAttachInternetBandwidthResponse.
+        r"""Sets the body of this BatchAttachInternetBandwidthResponse.
 
         :param body: The body of this BatchAttachInternetBandwidthResponse.
         :type body: :class:`huaweicloudsdkgeip.v3.str`
@@ -69,7 +69,7 @@ class BatchAttachInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchAttachInternetBandwidthResponse.
+        r"""Gets the x_request_id of this BatchAttachInternetBandwidthResponse.
 
         :return: The x_request_id of this BatchAttachInternetBandwidthResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class BatchAttachInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchAttachInternetBandwidthResponse.
+        r"""Sets the x_request_id of this BatchAttachInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this BatchAttachInternetBandwidthResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class RespMetadata:
     }
 
     def __init__(self, os_type=None):
-        """RespMetadata
+        r"""RespMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RespMetadata:
 
     @property
     def os_type(self):
-        """Gets the os_type of this RespMetadata.
+        r"""Gets the os_type of this RespMetadata.
 
         弹性云服务器系统类型。
 
@@ -54,7 +54,7 @@ class RespMetadata:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this RespMetadata.
+        r"""Sets the os_type of this RespMetadata.
 
         弹性云服务器系统类型。
 

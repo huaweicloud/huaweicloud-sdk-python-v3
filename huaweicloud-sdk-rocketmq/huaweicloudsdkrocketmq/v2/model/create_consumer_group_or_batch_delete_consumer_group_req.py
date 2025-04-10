@@ -39,7 +39,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     }
 
     def __init__(self, groups=None, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
-        """CreateConsumerGroupOrBatchDeleteConsumerGroupReq
+        r"""CreateConsumerGroupOrBatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def groups(self):
-        """Gets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         待删除的消费组列表。
 
@@ -103,7 +103,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         待删除的消费组列表。
 
@@ -114,7 +114,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -125,7 +125,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -136,7 +136,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def brokers(self):
-        """Gets the brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -147,7 +147,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -158,7 +158,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def broadcast(self):
-        """Gets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         是否广播。
 
@@ -169,7 +169,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @broadcast.setter
     def broadcast(self, broadcast):
-        """Sets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         是否广播。
 
@@ -180,7 +180,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def retry_max_time(self):
-        """Gets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         最大重试次数，取值范围为1~16。
 
@@ -191,7 +191,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @retry_max_time.setter
     def retry_max_time(self, retry_max_time):
-        """Sets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         最大重试次数，取值范围为1~16。
 
@@ -202,7 +202,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         是否可以消费。
 
@@ -213,7 +213,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         是否可以消费。
 
@@ -224,7 +224,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def consume_orderly(self):
-        """Gets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
@@ -235,7 +235,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @consume_orderly.setter
     def consume_orderly(self, consume_orderly):
-        """Sets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
@@ -246,7 +246,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Gets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         消费组描述，长度0~200个字符。
 
@@ -257,7 +257,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        r"""Sets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
         消费组描述，长度0~200个字符。
 

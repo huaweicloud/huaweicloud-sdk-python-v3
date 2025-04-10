@@ -51,7 +51,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     }
 
     def __init__(self, restore_local_directories_enable=None, app_data_roaming_enale=None, redirec_desktop=None, redirec_start_menu=None, redirec_documents=None, redirec_pictures=None, redirec_music=None, redirec_videos=None, redirec_favorites=None, redirec_contacts=None, redirec_downloads=None, redirec_links=None, redirec_searches=None, redirec_saved_games=None):
-        """PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions
+        r"""PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def restore_local_directories_enable(self):
-        """Gets the restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         还原本地目录启用
 
@@ -145,7 +145,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @restore_local_directories_enable.setter
     def restore_local_directories_enable(self, restore_local_directories_enable):
-        """Sets the restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         还原本地目录启用
 
@@ -156,7 +156,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def app_data_roaming_enale(self):
-        """Gets the app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         应用数据漫游启用
 
@@ -167,7 +167,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @app_data_roaming_enale.setter
     def app_data_roaming_enale(self, app_data_roaming_enale):
-        """Sets the app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         应用数据漫游启用
 
@@ -178,7 +178,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_desktop(self):
-        """Gets the redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         桌面重定向
 
@@ -189,7 +189,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_desktop.setter
     def redirec_desktop(self, redirec_desktop):
-        """Sets the redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         桌面重定向
 
@@ -200,7 +200,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_start_menu(self):
-        """Gets the redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         开始菜单
 
@@ -211,7 +211,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_start_menu.setter
     def redirec_start_menu(self, redirec_start_menu):
-        """Sets the redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         开始菜单
 
@@ -222,7 +222,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_documents(self):
-        """Gets the redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         文档
 
@@ -233,7 +233,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_documents.setter
     def redirec_documents(self, redirec_documents):
-        """Sets the redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         文档
 
@@ -244,7 +244,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_pictures(self):
-        """Gets the redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         照片
 
@@ -255,7 +255,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_pictures.setter
     def redirec_pictures(self, redirec_pictures):
-        """Sets the redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         照片
 
@@ -266,7 +266,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_music(self):
-        """Gets the redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         音乐
 
@@ -277,7 +277,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_music.setter
     def redirec_music(self, redirec_music):
-        """Sets the redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         音乐
 
@@ -288,7 +288,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_videos(self):
-        """Gets the redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         录音
 
@@ -299,7 +299,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_videos.setter
     def redirec_videos(self, redirec_videos):
-        """Sets the redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         录音
 
@@ -310,7 +310,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_favorites(self):
-        """Gets the redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         最爱
 
@@ -321,7 +321,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_favorites.setter
     def redirec_favorites(self, redirec_favorites):
-        """Sets the redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         最爱
 
@@ -332,7 +332,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_contacts(self):
-        """Gets the redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         录音
 
@@ -343,7 +343,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_contacts.setter
     def redirec_contacts(self, redirec_contacts):
-        """Sets the redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         录音
 
@@ -354,7 +354,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_downloads(self):
-        """Gets the redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         下载
 
@@ -365,7 +365,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_downloads.setter
     def redirec_downloads(self, redirec_downloads):
-        """Sets the redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         下载
 
@@ -376,7 +376,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_links(self):
-        """Gets the redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         链接
 
@@ -387,7 +387,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_links.setter
     def redirec_links(self, redirec_links):
-        """Sets the redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         链接
 
@@ -398,7 +398,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_searches(self):
-        """Gets the redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         查找
 
@@ -409,7 +409,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_searches.setter
     def redirec_searches(self, redirec_searches):
-        """Sets the redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         查找
 
@@ -420,7 +420,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @property
     def redirec_saved_games(self):
-        """Gets the redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Gets the redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         游戏存储
 
@@ -431,7 +431,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
     @redirec_saved_games.setter
     def redirec_saved_games(self, redirec_saved_games):
-        """Sets the redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
+        r"""Sets the redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
         游戏存储
 

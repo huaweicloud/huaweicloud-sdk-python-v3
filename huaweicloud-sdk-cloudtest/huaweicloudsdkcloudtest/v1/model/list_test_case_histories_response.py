@@ -28,7 +28,7 @@ class ListTestCaseHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, values=None):
-        """ListTestCaseHistoriesResponse
+        r"""ListTestCaseHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTestCaseHistoriesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTestCaseHistoriesResponse.
+        r"""Gets the total of this ListTestCaseHistoriesResponse.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -62,7 +62,7 @@ class ListTestCaseHistoriesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTestCaseHistoriesResponse.
+        r"""Sets the total of this ListTestCaseHistoriesResponse.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -73,7 +73,7 @@ class ListTestCaseHistoriesResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ListTestCaseHistoriesResponse.
+        r"""Gets the values of this ListTestCaseHistoriesResponse.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -84,7 +84,7 @@ class ListTestCaseHistoriesResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ListTestCaseHistoriesResponse.
+        r"""Sets the values of this ListTestCaseHistoriesResponse.
 
         实际的数据类型：单个对象，集合 或 NULL
 

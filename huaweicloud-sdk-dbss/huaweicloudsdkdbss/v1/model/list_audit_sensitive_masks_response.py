@@ -28,7 +28,7 @@ class ListAuditSensitiveMasksResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, total=None):
-        """ListAuditSensitiveMasksResponse
+        r"""ListAuditSensitiveMasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditSensitiveMasksResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListAuditSensitiveMasksResponse.
+        r"""Gets the rules of this ListAuditSensitiveMasksResponse.
 
         规则列表
 
@@ -62,7 +62,7 @@ class ListAuditSensitiveMasksResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListAuditSensitiveMasksResponse.
+        r"""Sets the rules of this ListAuditSensitiveMasksResponse.
 
         规则列表
 
@@ -73,7 +73,7 @@ class ListAuditSensitiveMasksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditSensitiveMasksResponse.
+        r"""Gets the total of this ListAuditSensitiveMasksResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAuditSensitiveMasksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditSensitiveMasksResponse.
+        r"""Sets the total of this ListAuditSensitiveMasksResponse.
 
         总数
 

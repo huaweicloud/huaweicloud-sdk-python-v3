@@ -43,7 +43,7 @@ class Encryption:
     }
 
     def __init__(self, key_rotation_interval_seconds=None, encryption_method=None, level=None, resource_id=None, system_ids=None, url=None, speke_version=None, request_mode=None, http_headers=None, urn=None):
-        """Encryption
+        r"""Encryption
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class Encryption:
 
     @property
     def key_rotation_interval_seconds(self):
-        """Gets the key_rotation_interval_seconds of this Encryption.
+        r"""Gets the key_rotation_interval_seconds of this Encryption.
 
         密钥缓存时间。如果密钥不变，默认缓存七天。  请注意：目前为保留字段，不支持配置。 
 
@@ -112,7 +112,7 @@ class Encryption:
 
     @key_rotation_interval_seconds.setter
     def key_rotation_interval_seconds(self, key_rotation_interval_seconds):
-        """Sets the key_rotation_interval_seconds of this Encryption.
+        r"""Sets the key_rotation_interval_seconds of this Encryption.
 
         密钥缓存时间。如果密钥不变，默认缓存七天。  请注意：目前为保留字段，不支持配置。 
 
@@ -123,7 +123,7 @@ class Encryption:
 
     @property
     def encryption_method(self):
-        """Gets the encryption_method of this Encryption.
+        r"""Gets the encryption_method of this Encryption.
 
         加密方式。  请注意：目前为保留字段，不支持配置。 
 
@@ -134,7 +134,7 @@ class Encryption:
 
     @encryption_method.setter
     def encryption_method(self, encryption_method):
-        """Sets the encryption_method of this Encryption.
+        r"""Sets the encryption_method of this Encryption.
 
         加密方式。  请注意：目前为保留字段，不支持配置。 
 
@@ -145,7 +145,7 @@ class Encryption:
 
     @property
     def level(self):
-        """Gets the level of this Encryption.
+        r"""Gets the level of this Encryption.
 
         取值如下： - content：一个频道对应一个密钥 - profile：一个码率对应一个密钥  默认值：content
 
@@ -156,7 +156,7 @@ class Encryption:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this Encryption.
+        r"""Sets the level of this Encryption.
 
         取值如下： - content：一个频道对应一个密钥 - profile：一个码率对应一个密钥  默认值：content
 
@@ -167,7 +167,7 @@ class Encryption:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Encryption.
+        r"""Gets the resource_id of this Encryption.
 
         客户生成的DRM内容ID
 
@@ -178,7 +178,7 @@ class Encryption:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Encryption.
+        r"""Sets the resource_id of this Encryption.
 
         客户生成的DRM内容ID
 
@@ -189,7 +189,7 @@ class Encryption:
 
     @property
     def system_ids(self):
-        """Gets the system_ids of this Encryption.
+        r"""Gets the system_ids of this Encryption.
 
         system_id枚举值。  取值如下： * HLS：FairPlay * DASH：Widevine、PlayReady * MSS：PlayReady 
 
@@ -200,7 +200,7 @@ class Encryption:
 
     @system_ids.setter
     def system_ids(self, system_ids):
-        """Sets the system_ids of this Encryption.
+        r"""Sets the system_ids of this Encryption.
 
         system_id枚举值。  取值如下： * HLS：FairPlay * DASH：Widevine、PlayReady * MSS：PlayReady 
 
@@ -211,7 +211,7 @@ class Encryption:
 
     @property
     def url(self):
-        """Gets the url of this Encryption.
+        r"""Gets the url of this Encryption.
 
         获取密钥的DRM地址
 
@@ -222,7 +222,7 @@ class Encryption:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Encryption.
+        r"""Sets the url of this Encryption.
 
         获取密钥的DRM地址
 
@@ -233,7 +233,7 @@ class Encryption:
 
     @property
     def speke_version(self):
-        """Gets the speke_version of this Encryption.
+        r"""Gets the speke_version of this Encryption.
 
         drm speke 版本号 当前只支持1.0
 
@@ -244,7 +244,7 @@ class Encryption:
 
     @speke_version.setter
     def speke_version(self, speke_version):
-        """Sets the speke_version of this Encryption.
+        r"""Sets the speke_version of this Encryption.
 
         drm speke 版本号 当前只支持1.0
 
@@ -255,7 +255,7 @@ class Encryption:
 
     @property
     def request_mode(self):
-        """Gets the request_mode of this Encryption.
+        r"""Gets the request_mode of this Encryption.
 
         请求模式。  取值如下： * direct_http：HTTP(S)直接访问DRM。 * functiongraph_proxy：FunctionGraph代理访问DRM。 
 
@@ -266,7 +266,7 @@ class Encryption:
 
     @request_mode.setter
     def request_mode(self, request_mode):
-        """Sets the request_mode of this Encryption.
+        r"""Sets the request_mode of this Encryption.
 
         请求模式。  取值如下： * direct_http：HTTP(S)直接访问DRM。 * functiongraph_proxy：FunctionGraph代理访问DRM。 
 
@@ -277,7 +277,7 @@ class Encryption:
 
     @property
     def http_headers(self):
-        """Gets the http_headers of this Encryption.
+        r"""Gets the http_headers of this Encryption.
 
         需要添加在drm请求头中的鉴权信息。最多支持配置5个。  仅direct_http请求模式支持配置http_headers。 
 
@@ -288,7 +288,7 @@ class Encryption:
 
     @http_headers.setter
     def http_headers(self, http_headers):
-        """Sets the http_headers of this Encryption.
+        r"""Sets the http_headers of this Encryption.
 
         需要添加在drm请求头中的鉴权信息。最多支持配置5个。  仅direct_http请求模式支持配置http_headers。 
 
@@ -299,7 +299,7 @@ class Encryption:
 
     @property
     def urn(self):
-        """Gets the urn of this Encryption.
+        r"""Gets the urn of this Encryption.
 
         functiongraph_proxy请求模式需要提供functiongraph的urn。
 
@@ -310,7 +310,7 @@ class Encryption:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this Encryption.
+        r"""Sets the urn of this Encryption.
 
         functiongraph_proxy请求模式需要提供functiongraph的urn。
 

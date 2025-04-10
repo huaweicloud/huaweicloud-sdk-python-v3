@@ -34,7 +34,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, offset=None, limit=None, tasks=None, x_request_id=None):
-        """ListScheduleRecordTasksResponse
+        r"""ListScheduleRecordTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListScheduleRecordTasksResponse.
+        r"""Gets the total of this ListScheduleRecordTasksResponse.
 
         查询结果的总元素数量
 
@@ -83,7 +83,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListScheduleRecordTasksResponse.
+        r"""Sets the total of this ListScheduleRecordTasksResponse.
 
         查询结果的总元素数量
 
@@ -94,7 +94,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduleRecordTasksResponse.
+        r"""Gets the offset of this ListScheduleRecordTasksResponse.
 
         记录偏移量
 
@@ -105,7 +105,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduleRecordTasksResponse.
+        r"""Sets the offset of this ListScheduleRecordTasksResponse.
 
         记录偏移量
 
@@ -116,7 +116,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduleRecordTasksResponse.
+        r"""Gets the limit of this ListScheduleRecordTasksResponse.
 
         当前页条目数
 
@@ -127,7 +127,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduleRecordTasksResponse.
+        r"""Sets the limit of this ListScheduleRecordTasksResponse.
 
         当前页条目数
 
@@ -138,7 +138,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListScheduleRecordTasksResponse.
+        r"""Gets the tasks of this ListScheduleRecordTasksResponse.
 
         录制模板数组
 
@@ -149,7 +149,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListScheduleRecordTasksResponse.
+        r"""Sets the tasks of this ListScheduleRecordTasksResponse.
 
         录制模板数组
 
@@ -160,7 +160,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListScheduleRecordTasksResponse.
+        r"""Gets the x_request_id of this ListScheduleRecordTasksResponse.
 
         :return: The x_request_id of this ListScheduleRecordTasksResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListScheduleRecordTasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListScheduleRecordTasksResponse.
+        r"""Sets the x_request_id of this ListScheduleRecordTasksResponse.
 
         :param x_request_id: The x_request_id of this ListScheduleRecordTasksResponse.
         :type x_request_id: str

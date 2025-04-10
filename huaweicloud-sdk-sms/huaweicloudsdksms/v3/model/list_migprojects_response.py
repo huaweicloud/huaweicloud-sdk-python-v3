@@ -28,7 +28,7 @@ class ListMigprojectsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, migprojects=None):
-        """ListMigprojectsResponse
+        r"""ListMigprojectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMigprojectsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMigprojectsResponse.
+        r"""Gets the count of this ListMigprojectsResponse.
 
         查询到的迁移项目的数量
 
@@ -62,7 +62,7 @@ class ListMigprojectsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMigprojectsResponse.
+        r"""Sets the count of this ListMigprojectsResponse.
 
         查询到的迁移项目的数量
 
@@ -73,7 +73,7 @@ class ListMigprojectsResponse(SdkResponse):
 
     @property
     def migprojects(self):
-        """Gets the migprojects of this ListMigprojectsResponse.
+        r"""Gets the migprojects of this ListMigprojectsResponse.
 
         查询到的迁移项目详情
 
@@ -84,7 +84,7 @@ class ListMigprojectsResponse(SdkResponse):
 
     @migprojects.setter
     def migprojects(self, migprojects):
-        """Sets the migprojects of this ListMigprojectsResponse.
+        r"""Sets the migprojects of this ListMigprojectsResponse.
 
         查询到的迁移项目详情
 

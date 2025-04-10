@@ -27,7 +27,7 @@ class PipelineSource:
     }
 
     def __init__(self, type=None, params=None):
-        """PipelineSource
+        r"""PipelineSource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PipelineSource:
 
     @property
     def type(self):
-        """Gets the type of this PipelineSource.
+        r"""Gets the type of this PipelineSource.
 
         流水线源类型
 
@@ -61,7 +61,7 @@ class PipelineSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PipelineSource.
+        r"""Sets the type of this PipelineSource.
 
         流水线源类型
 
@@ -72,7 +72,7 @@ class PipelineSource:
 
     @property
     def params(self):
-        """Gets the params of this PipelineSource.
+        r"""Gets the params of this PipelineSource.
 
         :return: The params of this PipelineSource.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineSourceParam`
@@ -81,7 +81,7 @@ class PipelineSource:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this PipelineSource.
+        r"""Sets the params of this PipelineSource.
 
         :param params: The params of this PipelineSource.
         :type params: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineSourceParam`

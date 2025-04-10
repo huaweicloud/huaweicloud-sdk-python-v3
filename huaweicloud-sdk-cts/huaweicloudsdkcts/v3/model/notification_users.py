@@ -27,7 +27,7 @@ class NotificationUsers:
     }
 
     def __init__(self, user_group=None, user_list=None):
-        """NotificationUsers
+        r"""NotificationUsers
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NotificationUsers:
 
     @property
     def user_group(self):
-        """Gets the user_group of this NotificationUsers.
+        r"""Gets the user_group of this NotificationUsers.
 
         IAM用户组。
 
@@ -59,7 +59,7 @@ class NotificationUsers:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this NotificationUsers.
+        r"""Sets the user_group of this NotificationUsers.
 
         IAM用户组。
 
@@ -70,7 +70,7 @@ class NotificationUsers:
 
     @property
     def user_list(self):
-        """Gets the user_list of this NotificationUsers.
+        r"""Gets the user_list of this NotificationUsers.
 
         IAM用户。
 
@@ -81,7 +81,7 @@ class NotificationUsers:
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this NotificationUsers.
+        r"""Sets the user_list of this NotificationUsers.
 
         IAM用户。
 

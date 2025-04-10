@@ -26,7 +26,7 @@ class ListEipCountResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListEipCountResponse
+        r"""ListEipCountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEipCountResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListEipCountResponse.
+        r"""Gets the data of this ListEipCountResponse.
 
         :return: The data of this ListEipCountResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.EipCountRespData`
@@ -53,7 +53,7 @@ class ListEipCountResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListEipCountResponse.
+        r"""Sets the data of this ListEipCountResponse.
 
         :param data: The data of this ListEipCountResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.EipCountRespData`

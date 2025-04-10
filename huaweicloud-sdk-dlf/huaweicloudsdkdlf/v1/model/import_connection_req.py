@@ -29,7 +29,7 @@ class ImportConnectionReq:
     }
 
     def __init__(self, path=None, params=None, same_name_policy=None):
-        """ImportConnectionReq
+        r"""ImportConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ImportConnectionReq:
 
     @property
     def path(self):
-        """Gets the path of this ImportConnectionReq.
+        r"""Gets the path of this ImportConnectionReq.
 
         :return: The path of this ImportConnectionReq.
         :rtype: str
@@ -66,7 +66,7 @@ class ImportConnectionReq:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ImportConnectionReq.
+        r"""Sets the path of this ImportConnectionReq.
 
         :param path: The path of this ImportConnectionReq.
         :type path: str
@@ -75,7 +75,7 @@ class ImportConnectionReq:
 
     @property
     def params(self):
-        """Gets the params of this ImportConnectionReq.
+        r"""Gets the params of this ImportConnectionReq.
 
         连接参数
 
@@ -86,7 +86,7 @@ class ImportConnectionReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ImportConnectionReq.
+        r"""Sets the params of this ImportConnectionReq.
 
         连接参数
 
@@ -97,7 +97,7 @@ class ImportConnectionReq:
 
     @property
     def same_name_policy(self):
-        """Gets the same_name_policy of this ImportConnectionReq.
+        r"""Gets the same_name_policy of this ImportConnectionReq.
 
         :return: The same_name_policy of this ImportConnectionReq.
         :rtype: str
@@ -106,7 +106,7 @@ class ImportConnectionReq:
 
     @same_name_policy.setter
     def same_name_policy(self, same_name_policy):
-        """Sets the same_name_policy of this ImportConnectionReq.
+        r"""Sets the same_name_policy of this ImportConnectionReq.
 
         :param same_name_policy: The same_name_policy of this ImportConnectionReq.
         :type same_name_policy: str

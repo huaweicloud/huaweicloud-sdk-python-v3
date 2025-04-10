@@ -25,7 +25,7 @@ class ListQuotaDetailsRequest:
     }
 
     def __init__(self, type=None):
-        """ListQuotaDetailsRequest
+        r"""ListQuotaDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListQuotaDetailsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListQuotaDetailsRequest.
+        r"""Gets the type of this ListQuotaDetailsRequest.
 
         资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
@@ -54,7 +54,7 @@ class ListQuotaDetailsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListQuotaDetailsRequest.
+        r"""Sets the type of this ListQuotaDetailsRequest.
 
         资源类型。  - endpoint_service：终端节点服务  - endpoint：终端节点
 

@@ -28,7 +28,7 @@ class ListRecordDataResponse(SdkResponse):
     }
 
     def __init__(self, record_data_list=None, x_request_id=None):
-        """ListRecordDataResponse
+        r"""ListRecordDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRecordDataResponse(SdkResponse):
 
     @property
     def record_data_list(self):
-        """Gets the record_data_list of this ListRecordDataResponse.
+        r"""Gets the record_data_list of this ListRecordDataResponse.
 
         采样数据列表。 
 
@@ -62,7 +62,7 @@ class ListRecordDataResponse(SdkResponse):
 
     @record_data_list.setter
     def record_data_list(self, record_data_list):
-        """Sets the record_data_list of this ListRecordDataResponse.
+        r"""Sets the record_data_list of this ListRecordDataResponse.
 
         采样数据列表。 
 
@@ -73,7 +73,7 @@ class ListRecordDataResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRecordDataResponse.
+        r"""Gets the x_request_id of this ListRecordDataResponse.
 
         :return: The x_request_id of this ListRecordDataResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRecordDataResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRecordDataResponse.
+        r"""Sets the x_request_id of this ListRecordDataResponse.
 
         :param x_request_id: The x_request_id of this ListRecordDataResponse.
         :type x_request_id: str

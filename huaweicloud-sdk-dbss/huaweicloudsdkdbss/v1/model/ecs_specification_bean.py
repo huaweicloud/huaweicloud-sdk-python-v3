@@ -39,7 +39,7 @@ class EcsSpecificationBean:
     }
 
     def __init__(self, azs=None, id=None, level=None, name=None, proxy=None, ram=None, vcpus=None, az_type=None):
-        """EcsSpecificationBean
+        r"""EcsSpecificationBean
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EcsSpecificationBean:
 
     @property
     def azs(self):
-        """Gets the azs of this EcsSpecificationBean.
+        r"""Gets the azs of this EcsSpecificationBean.
 
         ECS规格所在的可用区集合
 
@@ -96,7 +96,7 @@ class EcsSpecificationBean:
 
     @azs.setter
     def azs(self, azs):
-        """Sets the azs of this EcsSpecificationBean.
+        r"""Sets the azs of this EcsSpecificationBean.
 
         ECS规格所在的可用区集合
 
@@ -107,7 +107,7 @@ class EcsSpecificationBean:
 
     @property
     def id(self):
-        """Gets the id of this EcsSpecificationBean.
+        r"""Gets the id of this EcsSpecificationBean.
 
         规格ID
 
@@ -118,7 +118,7 @@ class EcsSpecificationBean:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EcsSpecificationBean.
+        r"""Sets the id of this EcsSpecificationBean.
 
         规格ID
 
@@ -129,7 +129,7 @@ class EcsSpecificationBean:
 
     @property
     def level(self):
-        """Gets the level of this EcsSpecificationBean.
+        r"""Gets the level of this EcsSpecificationBean.
 
         规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
 
@@ -140,7 +140,7 @@ class EcsSpecificationBean:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this EcsSpecificationBean.
+        r"""Sets the level of this EcsSpecificationBean.
 
         规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
 
@@ -151,7 +151,7 @@ class EcsSpecificationBean:
 
     @property
     def name(self):
-        """Gets the name of this EcsSpecificationBean.
+        r"""Gets the name of this EcsSpecificationBean.
 
         规格名称
 
@@ -162,7 +162,7 @@ class EcsSpecificationBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EcsSpecificationBean.
+        r"""Sets the name of this EcsSpecificationBean.
 
         规格名称
 
@@ -173,7 +173,7 @@ class EcsSpecificationBean:
 
     @property
     def proxy(self):
-        """Gets the proxy of this EcsSpecificationBean.
+        r"""Gets the proxy of this EcsSpecificationBean.
 
         规格可添加的数据库数量
 
@@ -184,7 +184,7 @@ class EcsSpecificationBean:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this EcsSpecificationBean.
+        r"""Sets the proxy of this EcsSpecificationBean.
 
         规格可添加的数据库数量
 
@@ -195,7 +195,7 @@ class EcsSpecificationBean:
 
     @property
     def ram(self):
-        """Gets the ram of this EcsSpecificationBean.
+        r"""Gets the ram of this EcsSpecificationBean.
 
         内存
 
@@ -206,7 +206,7 @@ class EcsSpecificationBean:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this EcsSpecificationBean.
+        r"""Sets the ram of this EcsSpecificationBean.
 
         内存
 
@@ -217,7 +217,7 @@ class EcsSpecificationBean:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this EcsSpecificationBean.
+        r"""Gets the vcpus of this EcsSpecificationBean.
 
         CPU
 
@@ -228,7 +228,7 @@ class EcsSpecificationBean:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this EcsSpecificationBean.
+        r"""Sets the vcpus of this EcsSpecificationBean.
 
         CPU
 
@@ -239,7 +239,7 @@ class EcsSpecificationBean:
 
     @property
     def az_type(self):
-        """Gets the az_type of this EcsSpecificationBean.
+        r"""Gets the az_type of this EcsSpecificationBean.
 
         可用区类型 - DEDICATED - DEC - EDGE
 
@@ -250,7 +250,7 @@ class EcsSpecificationBean:
 
     @az_type.setter
     def az_type(self, az_type):
-        """Sets the az_type of this EcsSpecificationBean.
+        r"""Sets the az_type of this EcsSpecificationBean.
 
         可用区类型 - DEDICATED - DEC - EDGE
 

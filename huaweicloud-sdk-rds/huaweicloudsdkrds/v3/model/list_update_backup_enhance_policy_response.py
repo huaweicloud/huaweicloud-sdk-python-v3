@@ -34,7 +34,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
     }
 
     def __init__(self, begin_time=None, end_time=None, manual_backup_retention_days=None, frequency=None, policies=None):
-        """ListUpdateBackupEnhancePolicyResponse
+        r"""ListUpdateBackupEnhancePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Gets the begin_time of this ListUpdateBackupEnhancePolicyResponse.
 
         备份时间段开始时间
 
@@ -83,7 +83,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Sets the begin_time of this ListUpdateBackupEnhancePolicyResponse.
 
         备份时间段开始时间
 
@@ -94,7 +94,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Gets the end_time of this ListUpdateBackupEnhancePolicyResponse.
 
         备份时间段结束时间
 
@@ -105,7 +105,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Sets the end_time of this ListUpdateBackupEnhancePolicyResponse.
 
         备份时间段结束时间
 
@@ -116,7 +116,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @property
     def manual_backup_retention_days(self):
-        """Gets the manual_backup_retention_days of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Gets the manual_backup_retention_days of this ListUpdateBackupEnhancePolicyResponse.
 
         手动备份保留时长
 
@@ -127,7 +127,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @manual_backup_retention_days.setter
     def manual_backup_retention_days(self, manual_backup_retention_days):
-        """Sets the manual_backup_retention_days of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Sets the manual_backup_retention_days of this ListUpdateBackupEnhancePolicyResponse.
 
         手动备份保留时长
 
@@ -138,7 +138,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @property
     def frequency(self):
-        """Gets the frequency of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Gets the frequency of this ListUpdateBackupEnhancePolicyResponse.
 
         高频备份的频率
 
@@ -149,7 +149,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Sets the frequency of this ListUpdateBackupEnhancePolicyResponse.
 
         高频备份的频率
 
@@ -160,7 +160,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Gets the policies of this ListUpdateBackupEnhancePolicyResponse.
 
         备份策略集
 
@@ -171,7 +171,7 @@ class ListUpdateBackupEnhancePolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListUpdateBackupEnhancePolicyResponse.
+        r"""Sets the policies of this ListUpdateBackupEnhancePolicyResponse.
 
         备份策略集
 

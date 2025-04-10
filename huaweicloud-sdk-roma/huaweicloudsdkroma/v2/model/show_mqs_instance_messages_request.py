@@ -49,7 +49,7 @@ class ShowMqsInstanceMessagesRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None, key=None, message_id=None, tag=None):
-        """ShowMqsInstanceMessagesRequest
+        r"""ShowMqsInstanceMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the instance_id of this ShowMqsInstanceMessagesRequest.
 
         实例ID。
 
@@ -134,7 +134,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the instance_id of this ShowMqsInstanceMessagesRequest.
 
         实例ID。
 
@@ -145,7 +145,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the topic of this ShowMqsInstanceMessagesRequest.
 
         topic名称。
 
@@ -156,7 +156,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the topic of this ShowMqsInstanceMessagesRequest.
 
         topic名称。
 
@@ -167,7 +167,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def asc(self):
-        """Gets the asc of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the asc of this ShowMqsInstanceMessagesRequest.
 
         是否按照时间排序。
 
@@ -178,7 +178,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @asc.setter
     def asc(self, asc):
-        """Sets the asc of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the asc of this ShowMqsInstanceMessagesRequest.
 
         是否按照时间排序。
 
@@ -189,7 +189,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the start_time of this ShowMqsInstanceMessagesRequest.
 
         开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
@@ -200,7 +200,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the start_time of this ShowMqsInstanceMessagesRequest.
 
         开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
@@ -211,7 +211,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the end_time of this ShowMqsInstanceMessagesRequest.
 
         结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
@@ -222,7 +222,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the end_time of this ShowMqsInstanceMessagesRequest.
 
         结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
@@ -233,7 +233,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the limit of this ShowMqsInstanceMessagesRequest.
 
         查询消息的数量。
 
@@ -244,7 +244,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the limit of this ShowMqsInstanceMessagesRequest.
 
         查询消息的数量。
 
@@ -255,7 +255,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the offset of this ShowMqsInstanceMessagesRequest.
 
         查询的偏移量。
 
@@ -266,7 +266,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the offset of this ShowMqsInstanceMessagesRequest.
 
         查询的偏移量。
 
@@ -277,7 +277,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def download(self):
-        """Gets the download of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the download of this ShowMqsInstanceMessagesRequest.
 
         是否下载。
 
@@ -288,7 +288,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @download.setter
     def download(self, download):
-        """Sets the download of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the download of this ShowMqsInstanceMessagesRequest.
 
         是否下载。
 
@@ -299,7 +299,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the message_offset of this ShowMqsInstanceMessagesRequest.
 
         消息偏移量。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
 
@@ -310,7 +310,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the message_offset of this ShowMqsInstanceMessagesRequest.
 
         消息偏移量。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
 
@@ -321,7 +321,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the partition of this ShowMqsInstanceMessagesRequest.
 
         分区。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
 
@@ -332,7 +332,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the partition of this ShowMqsInstanceMessagesRequest.
 
         分区。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
 
@@ -343,7 +343,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def key(self):
-        """Gets the key of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the key of this ShowMqsInstanceMessagesRequest.
 
         消息key。
 
@@ -354,7 +354,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the key of this ShowMqsInstanceMessagesRequest.
 
         消息key。
 
@@ -365,7 +365,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def message_id(self):
-        """Gets the message_id of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the message_id of this ShowMqsInstanceMessagesRequest.
 
         消息ID。
 
@@ -376,7 +376,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the message_id of this ShowMqsInstanceMessagesRequest.
 
         消息ID。
 
@@ -387,7 +387,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ShowMqsInstanceMessagesRequest.
+        r"""Gets the tag of this ShowMqsInstanceMessagesRequest.
 
         消息标签。
 
@@ -398,7 +398,7 @@ class ShowMqsInstanceMessagesRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowMqsInstanceMessagesRequest.
+        r"""Sets the tag of this ShowMqsInstanceMessagesRequest.
 
         消息标签。
 

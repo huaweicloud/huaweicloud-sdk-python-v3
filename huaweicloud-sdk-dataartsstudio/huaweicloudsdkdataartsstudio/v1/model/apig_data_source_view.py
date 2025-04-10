@@ -41,7 +41,7 @@ class ApigDataSourceView:
     }
 
     def __init__(self, dw_name=None, dw_type=None, create_user=None, create_time=None, agent_id=None, agent_name=None, dw_id=None, qualified_name=None, description=None):
-        """ApigDataSourceView
+        r"""ApigDataSourceView
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ApigDataSourceView:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this ApigDataSourceView.
+        r"""Gets the dw_name of this ApigDataSourceView.
 
         数据连接名称
 
@@ -110,7 +110,7 @@ class ApigDataSourceView:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this ApigDataSourceView.
+        r"""Sets the dw_name of this ApigDataSourceView.
 
         数据连接名称
 
@@ -121,7 +121,7 @@ class ApigDataSourceView:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this ApigDataSourceView.
+        r"""Gets the dw_type of this ApigDataSourceView.
 
         数据连接类型
 
@@ -132,7 +132,7 @@ class ApigDataSourceView:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this ApigDataSourceView.
+        r"""Sets the dw_type of this ApigDataSourceView.
 
         数据连接类型
 
@@ -143,7 +143,7 @@ class ApigDataSourceView:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ApigDataSourceView.
+        r"""Gets the create_user of this ApigDataSourceView.
 
         数据连接创建者
 
@@ -154,7 +154,7 @@ class ApigDataSourceView:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ApigDataSourceView.
+        r"""Sets the create_user of this ApigDataSourceView.
 
         数据连接创建者
 
@@ -165,7 +165,7 @@ class ApigDataSourceView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApigDataSourceView.
+        r"""Gets the create_time of this ApigDataSourceView.
 
         数据连接创建时间，时间戳
 
@@ -176,7 +176,7 @@ class ApigDataSourceView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApigDataSourceView.
+        r"""Sets the create_time of this ApigDataSourceView.
 
         数据连接创建时间，时间戳
 
@@ -187,7 +187,7 @@ class ApigDataSourceView:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ApigDataSourceView.
+        r"""Gets the agent_id of this ApigDataSourceView.
 
         代理id
 
@@ -198,7 +198,7 @@ class ApigDataSourceView:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ApigDataSourceView.
+        r"""Sets the agent_id of this ApigDataSourceView.
 
         代理id
 
@@ -209,7 +209,7 @@ class ApigDataSourceView:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this ApigDataSourceView.
+        r"""Gets the agent_name of this ApigDataSourceView.
 
         代理名称
 
@@ -220,7 +220,7 @@ class ApigDataSourceView:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this ApigDataSourceView.
+        r"""Sets the agent_name of this ApigDataSourceView.
 
         代理名称
 
@@ -231,7 +231,7 @@ class ApigDataSourceView:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this ApigDataSourceView.
+        r"""Gets the dw_id of this ApigDataSourceView.
 
         数据连接id
 
@@ -242,7 +242,7 @@ class ApigDataSourceView:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this ApigDataSourceView.
+        r"""Sets the dw_id of this ApigDataSourceView.
 
         数据连接id
 
@@ -253,7 +253,7 @@ class ApigDataSourceView:
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this ApigDataSourceView.
+        r"""Gets the qualified_name of this ApigDataSourceView.
 
         数据连接限定名称
 
@@ -264,7 +264,7 @@ class ApigDataSourceView:
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this ApigDataSourceView.
+        r"""Sets the qualified_name of this ApigDataSourceView.
 
         数据连接限定名称
 
@@ -275,7 +275,7 @@ class ApigDataSourceView:
 
     @property
     def description(self):
-        """Gets the description of this ApigDataSourceView.
+        r"""Gets the description of this ApigDataSourceView.
 
         数据连接描述
 
@@ -286,7 +286,7 @@ class ApigDataSourceView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApigDataSourceView.
+        r"""Sets the description of this ApigDataSourceView.
 
         数据连接描述
 

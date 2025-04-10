@@ -25,7 +25,7 @@ class ListProtectedInstancesByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListProtectedInstancesByTagsRequest
+        r"""ListProtectedInstancesByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListProtectedInstancesByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListProtectedInstancesByTagsRequest.
+        r"""Gets the body of this ListProtectedInstancesByTagsRequest.
 
         :return: The body of this ListProtectedInstancesByTagsRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListProtectedInstancesByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListProtectedInstancesByTagsRequest.
+        r"""Sets the body of this ListProtectedInstancesByTagsRequest.
 
         :param body: The body of this ListProtectedInstancesByTagsRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequestBody`

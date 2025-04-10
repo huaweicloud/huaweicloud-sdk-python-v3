@@ -33,7 +33,7 @@ class Quotas:
     }
 
     def __init__(self, type=None, quota=None, min=None, max=None, used=None):
-        """Quotas
+        r"""Quotas
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Quotas:
 
     @property
     def type(self):
-        """Gets the type of this Quotas.
+        r"""Gets the type of this Quotas.
 
         配额类型。resource_share账号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
 
@@ -77,7 +77,7 @@ class Quotas:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Quotas.
+        r"""Sets the type of this Quotas.
 
         配额类型。resource_share账号创建资源共享的数量，resource_association资源共享关联的资源数量，principal_association资源共享关联的身份数量，permission_association资源共享关联的权限数量，tag_association资源共享关联的标签数量。
 
@@ -88,7 +88,7 @@ class Quotas:
 
     @property
     def quota(self):
-        """Gets the quota of this Quotas.
+        r"""Gets the quota of this Quotas.
 
         总配额数量。
 
@@ -99,7 +99,7 @@ class Quotas:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Quotas.
+        r"""Sets the quota of this Quotas.
 
         总配额数量。
 
@@ -110,7 +110,7 @@ class Quotas:
 
     @property
     def min(self):
-        """Gets the min of this Quotas.
+        r"""Gets the min of this Quotas.
 
         最小配额。
 
@@ -121,7 +121,7 @@ class Quotas:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this Quotas.
+        r"""Sets the min of this Quotas.
 
         最小配额。
 
@@ -132,7 +132,7 @@ class Quotas:
 
     @property
     def max(self):
-        """Gets the max of this Quotas.
+        r"""Gets the max of this Quotas.
 
         最大配额。
 
@@ -143,7 +143,7 @@ class Quotas:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this Quotas.
+        r"""Sets the max of this Quotas.
 
         最大配额。
 
@@ -154,7 +154,7 @@ class Quotas:
 
     @property
     def used(self):
-        """Gets the used of this Quotas.
+        r"""Gets the used of this Quotas.
 
         已使用的配额数量。
 
@@ -165,7 +165,7 @@ class Quotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Quotas.
+        r"""Sets the used of this Quotas.
 
         已使用的配额数量。
 

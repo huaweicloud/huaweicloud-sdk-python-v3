@@ -26,7 +26,7 @@ class ShowPathByIdResponse(SdkResponse):
     }
 
     def __init__(self, path=None):
-        """ShowPathByIdResponse
+        r"""ShowPathByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPathByIdResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowPathByIdResponse.
+        r"""Gets the path of this ShowPathByIdResponse.
 
         路径
 
@@ -55,7 +55,7 @@ class ShowPathByIdResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowPathByIdResponse.
+        r"""Sets the path of this ShowPathByIdResponse.
 
         路径
 

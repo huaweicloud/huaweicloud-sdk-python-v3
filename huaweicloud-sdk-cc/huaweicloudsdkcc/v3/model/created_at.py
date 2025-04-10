@@ -25,7 +25,7 @@ class CreatedAt:
     }
 
     def __init__(self, created_at=None):
-        """CreatedAt
+        r"""CreatedAt
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatedAt:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreatedAt.
+        r"""Gets the created_at of this CreatedAt.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -53,7 +53,7 @@ class CreatedAt:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreatedAt.
+        r"""Sets the created_at of this CreatedAt.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 

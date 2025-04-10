@@ -27,7 +27,7 @@ class CreateProjectModuleRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateProjectModuleRequest
+        r"""CreateProjectModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateProjectModuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateProjectModuleRequest.
+        r"""Gets the project_id of this CreateProjectModuleRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class CreateProjectModuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateProjectModuleRequest.
+        r"""Sets the project_id of this CreateProjectModuleRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class CreateProjectModuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectModuleRequest.
+        r"""Gets the body of this CreateProjectModuleRequest.
 
         :return: The body of this CreateProjectModuleRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequestBody`
@@ -80,7 +80,7 @@ class CreateProjectModuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectModuleRequest.
+        r"""Sets the body of this CreateProjectModuleRequest.
 
         :param body: The body of this CreateProjectModuleRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequestBody`

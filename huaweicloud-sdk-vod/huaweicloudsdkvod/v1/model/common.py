@@ -33,7 +33,7 @@ class Common:
     }
 
     def __init__(self, pvc=None, pvc_version=None, video_codec=None, audio_codec=None, hls_interval=None):
-        """Common
+        r"""Common
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class Common:
 
     @property
     def pvc(self):
-        """Gets the pvc of this Common.
+        r"""Gets the pvc of this Common.
 
         高清低码开关。
 
@@ -81,7 +81,7 @@ class Common:
 
     @pvc.setter
     def pvc(self, pvc):
-        """Sets the pvc of this Common.
+        r"""Sets the pvc of this Common.
 
         高清低码开关。
 
@@ -92,7 +92,7 @@ class Common:
 
     @property
     def pvc_version(self):
-        """Gets the pvc_version of this Common.
+        r"""Gets the pvc_version of this Common.
 
         高清低码版本。
 
@@ -103,7 +103,7 @@ class Common:
 
     @pvc_version.setter
     def pvc_version(self, pvc_version):
-        """Sets the pvc_version of this Common.
+        r"""Sets the pvc_version of this Common.
 
         高清低码版本。
 
@@ -114,7 +114,7 @@ class Common:
 
     @property
     def video_codec(self):
-        """Gets the video_codec of this Common.
+        r"""Gets the video_codec of this Common.
 
         视频编码格式。
 
@@ -125,7 +125,7 @@ class Common:
 
     @video_codec.setter
     def video_codec(self, video_codec):
-        """Sets the video_codec of this Common.
+        r"""Sets the video_codec of this Common.
 
         视频编码格式。
 
@@ -136,7 +136,7 @@ class Common:
 
     @property
     def audio_codec(self):
-        """Gets the audio_codec of this Common.
+        r"""Gets the audio_codec of this Common.
 
         音频编码格式(有效值范围) - 1：AUDIO_CODECTYPE_AAC - 2：AUDIO_CODECTYPE_HEAAC1 - 3：AUDIO_CODECTYPE_HEAAC2 - 4：AUDIO_CODECTYPE_MP3  默认值为1。
 
@@ -147,7 +147,7 @@ class Common:
 
     @audio_codec.setter
     def audio_codec(self, audio_codec):
-        """Sets the audio_codec of this Common.
+        r"""Sets the audio_codec of this Common.
 
         音频编码格式(有效值范围) - 1：AUDIO_CODECTYPE_AAC - 2：AUDIO_CODECTYPE_HEAAC1 - 3：AUDIO_CODECTYPE_HEAAC2 - 4：AUDIO_CODECTYPE_MP3  默认值为1。
 
@@ -158,7 +158,7 @@ class Common:
 
     @property
     def hls_interval(self):
-        """Gets the hls_interval of this Common.
+        r"""Gets the hls_interval of this Common.
 
         分片时长(默认为5秒)。
 
@@ -169,7 +169,7 @@ class Common:
 
     @hls_interval.setter
     def hls_interval(self, hls_interval):
-        """Sets the hls_interval of this Common.
+        r"""Sets the hls_interval of this Common.
 
         分片时长(默认为5秒)。
 

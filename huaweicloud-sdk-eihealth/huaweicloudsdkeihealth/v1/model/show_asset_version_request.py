@@ -27,7 +27,7 @@ class ShowAssetVersionRequest:
     }
 
     def __init__(self, asset_id=None, version=None):
-        """ShowAssetVersionRequest
+        r"""ShowAssetVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAssetVersionRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetVersionRequest.
+        r"""Gets the asset_id of this ShowAssetVersionRequest.
 
         资产id
 
@@ -59,7 +59,7 @@ class ShowAssetVersionRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetVersionRequest.
+        r"""Sets the asset_id of this ShowAssetVersionRequest.
 
         资产id
 
@@ -70,7 +70,7 @@ class ShowAssetVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowAssetVersionRequest.
+        r"""Gets the version of this ShowAssetVersionRequest.
 
         version
 
@@ -81,7 +81,7 @@ class ShowAssetVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAssetVersionRequest.
+        r"""Sets the version of this ShowAssetVersionRequest.
 
         version
 

@@ -27,7 +27,7 @@ class AgencyTokenProjectDomain:
     }
 
     def __init__(self, name=None, id=None):
-        """AgencyTokenProjectDomain
+        r"""AgencyTokenProjectDomain
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgencyTokenProjectDomain:
 
     @property
     def name(self):
-        """Gets the name of this AgencyTokenProjectDomain.
+        r"""Gets the name of this AgencyTokenProjectDomain.
 
         委托方A的账号名称。
 
@@ -59,7 +59,7 @@ class AgencyTokenProjectDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyTokenProjectDomain.
+        r"""Sets the name of this AgencyTokenProjectDomain.
 
         委托方A的账号名称。
 
@@ -70,7 +70,7 @@ class AgencyTokenProjectDomain:
 
     @property
     def id(self):
-        """Gets the id of this AgencyTokenProjectDomain.
+        r"""Gets the id of this AgencyTokenProjectDomain.
 
         委托方A的账号ID。
 
@@ -81,7 +81,7 @@ class AgencyTokenProjectDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyTokenProjectDomain.
+        r"""Sets the id of this AgencyTokenProjectDomain.
 
         委托方A的账号ID。
 

@@ -34,7 +34,7 @@ class ImsAsyncClient(Client):
         return client_builder
 
     def add_image_tag_async(self, request):
-        """添加镜像标签
+        r"""添加镜像标签
 
         该接口用于为指定镜像添加或更新指定的单个标签
         
@@ -101,7 +101,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def batch_add_members_async(self, request):
-        """批量添加镜像成员
+        r"""批量添加镜像成员
 
         该接口为扩展接口，主要用于镜像共享时用户将多个镜像共享给多个用户。
         该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
@@ -167,7 +167,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def batch_add_or_delete_tags_async(self, request):
-        """批量添加删除镜像标签
+        r"""批量添加删除镜像标签
 
         该接口用于为指定镜像批量添加/更新、删除标签。
         
@@ -234,7 +234,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def batch_delete_members_async(self, request):
-        """批量删除镜像成员
+        r"""批量删除镜像成员
 
         该接口为扩展接口，主要用于取消镜像共享。
         该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
@@ -300,7 +300,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def batch_update_members_async(self, request):
-        """批量更新镜像成员状态
+        r"""批量更新镜像成员状态
 
         该接口为扩展接口，主要用于用户接受或者拒绝多个共享镜像时批量更新镜像成员的状态。
         该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
@@ -366,7 +366,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def copy_image_cross_region_async(self, request):
-        """跨Region复制镜像
+        r"""跨Region复制镜像
 
         该接口为扩展接口，用户在一个区域制作的私有镜像，可以通过跨Region复制镜像将镜像复制到其他区域，在其他区域发放相同类型的云服务器，帮助用户实现区域间的业务迁移。
         该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。
@@ -435,7 +435,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def copy_image_in_region_async(self, request):
-        """Region内复制镜像
+        r"""Region内复制镜像
 
         该接口为扩展接口，主要用于用户将一个已有镜像复制为另一个镜像。复制镜像时，可以更改镜像的加密等属性，以满足不同的场景。
         该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
@@ -503,7 +503,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def create_data_image_async(self, request):
-        """使用外部镜像文件制作数据镜像
+        r"""使用外部镜像文件制作数据镜像
 
         使用上传至OBS桶中的外部数据卷镜像文件制作数据镜像。作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态。具体请参考异步任务查询。
         
@@ -568,7 +568,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def create_image_async(self, request):
-        """制作镜像
+        r"""制作镜像
 
         本接口用于制作私有镜像，支持：
         - 使用云服务器制作私有镜像。
@@ -644,7 +644,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def create_or_update_tags_async(self, request):
-        """增加或修改标签
+        r"""增加或修改标签
 
         该接口主要用于为某个镜像增加或修改一个自定义标签。通过自定义标签，用户可以将镜像进行分类。
         
@@ -709,7 +709,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def create_whole_image_async(self, request):
-        """制作整机镜像
+        r"""制作整机镜像
 
         使用云服务器或者云服务器备份制作整机镜像。作为异步接口，调用成功，只是说明后台收到了制作整机镜像的请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
         
@@ -774,7 +774,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def delete_image_tag_async(self, request):
-        """删除镜像标签
+        r"""删除镜像标签
 
         该接口用于为镜像删除指定的标签
         
@@ -841,7 +841,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def export_image_async(self, request):
-        """导出镜像
+        r"""导出镜像
 
         该接口为扩展接口，用于用户将自己的私有镜像导出到指定的OBS桶中。
         
@@ -908,7 +908,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def import_image_quick_async(self, request):
-        """镜像文件快速导入
+        r"""镜像文件快速导入
 
         使用上传至OBS桶中的超大外部镜像文件制作私有镜像，目前仅支持RAW或ZVHD2格式镜像文件。且要求镜像文件大小不能超过1TB。
         由于快速导入功能要求提前转换镜像文件格式为RAW或ZVHD2格式，因此镜像文件小于128GB时推荐您优先使用常规的创建私有镜像的方式。
@@ -975,7 +975,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_image_by_tags_async(self, request):
-        """按标签查询镜像
+        r"""按标签查询镜像
 
         该接口用于按标签或其他条件对镜像进行过滤或者计数使用。
         
@@ -1040,7 +1040,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_image_tags_async(self, request):
-        """查询镜像标签
+        r"""查询镜像标签
 
         该接口用于为查询指定镜像上的所有标签
         
@@ -1105,7 +1105,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_images_async(self, request):
-        """查询镜像列表
+        r"""查询镜像列表
 
         根据不同条件查询镜像列表信息。
         可以在URI后面用‘?’和‘&amp;’添加不同的查询条件组合，请参考请求样例。
@@ -1243,7 +1243,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_images_tags_async(self, request):
-        """查询租户所有镜像标签
+        r"""查询租户所有镜像标签
 
         该接口用于为查询租户的所有镜像上的标签。
         
@@ -1306,7 +1306,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_os_versions_async(self, request):
-        """查询镜像支持的OS列表
+        r"""查询镜像支持的OS列表
 
         查询当前区域弹性云服务器的OS兼容性列表。
         
@@ -1371,7 +1371,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_tags_async(self, request):
-        """按条件查询租户镜像标签列表
+        r"""按条件查询租户镜像标签列表
 
         根据不同条件查询镜像标签列表信息。
         
@@ -1464,7 +1464,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def register_image_async(self, request):
-        """注册镜像
+        r"""注册镜像
 
         该接口用于将镜像文件注册为云平台未初始化的私有镜像。
         使用该接口注册镜像的具体步骤如下：
@@ -1537,7 +1537,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def show_image_quota_async(self, request):
-        """查询镜像配额
+        r"""查询镜像配额
 
         该接口为扩展接口，主要用于查询租户在当前Region的私有镜像的配额数量。
         
@@ -1600,7 +1600,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def show_job_async(self, request):
-        """异步任务查询
+        r"""异步任务查询
 
         该接口为扩展接口，主要用于查询异步接口执行情况，比如查询导出镜像任务的执行状态。
         
@@ -1665,7 +1665,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def show_job_progress_async(self, request):
-        """异步任务进度查询
+        r"""异步任务进度查询
 
         该接口为扩展接口，主要用于查询异步任务进度。
         
@@ -1730,7 +1730,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def update_image_async(self, request):
-        """更新镜像信息
+        r"""更新镜像信息
 
         更新镜像信息接口，主要用于镜像属性的修改。当前仅支持可用（active）状态的镜像更新相关信息。
         
@@ -1797,7 +1797,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def list_versions_async(self, request):
-        """查询版本列表（OpenStack原生）
+        r"""查询版本列表（OpenStack原生）
 
         查询API的版本信息列表，包括API的版本兼容性、域名信息等。
         
@@ -1860,7 +1860,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def show_version_async(self, request):
-        """查询版本列表（OpenStack原生）
+        r"""查询版本列表（OpenStack原生）
 
         查询API的版本信息列表，包括API的版本兼容性、域名信息等。
         
@@ -1925,7 +1925,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_add_image_member_async(self, request):
-        """添加镜像成员（OpenStack原生）
+        r"""添加镜像成员（OpenStack原生）
 
         用户共享镜像给其他用户时，使用该接口向该镜像成员中添加接受镜像用户的项目ID。
         
@@ -1992,7 +1992,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_create_image_metadata_async(self, request):
-        """创建镜像元数据（OpenStack原生）
+        r"""创建镜像元数据（OpenStack原生）
 
         创建镜像元数据。调用创建镜像元数据接口成功后，只是创建了镜像的元数据，镜像对应的实际镜像文件并不存在
         
@@ -2057,7 +2057,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_create_tag_async(self, request):
-        """增加标签（OpenStack原生）
+        r"""增加标签（OpenStack原生）
 
         该接口主要用于为某个镜像添加一个自定义标签。通过自定义标签，用户可以将镜像进行分类。
         
@@ -2124,7 +2124,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_delete_image_async(self, request):
-        """删除镜像（OpenStack原生）
+        r"""删除镜像（OpenStack原生）
 
         该接口主要用于删除镜像，用户可以通过该接口将自己的私有镜像删除。
         
@@ -2191,7 +2191,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_delete_image_member_async(self, request):
-        """删除指定的镜像成员（OpenStack原生）
+        r"""删除指定的镜像成员（OpenStack原生）
 
         该接口用于取消对某个用户的镜像共享。
         
@@ -2258,7 +2258,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_delete_tag_async(self, request):
-        """删除标签（OpenStack原生）
+        r"""删除标签（OpenStack原生）
 
         该接口主要用于删除某个镜像的自定义标签，通过该接口，用户可以将私有镜像中一些不用的标签删除。
         
@@ -2325,7 +2325,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_list_image_member_schemas_async(self, request):
-        """查询镜像成员列表视图（OpenStack原生）
+        r"""查询镜像成员列表视图（OpenStack原生）
 
         该接口主要用于查询镜像成员列表视图，通过视图，用户可以了解到镜像成员包含哪些属性，同时也可以了解每个属性的数据类型。
         
@@ -2388,7 +2388,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_list_image_members_async(self, request):
-        """获取镜像成员列表（OpenStack原生）
+        r"""获取镜像成员列表（OpenStack原生）
 
         该接口用于共享镜像过程中，获取接受该镜像的成员列表。
         
@@ -2453,7 +2453,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_list_image_schemas_async(self, request):
-        """查询镜像列表视图（OpenStack原生）
+        r"""查询镜像列表视图（OpenStack原生）
 
         该接口主要用于查询镜像列表视图，通过该接口用户可以了解到镜像列表的详细情况和数据结构。
         
@@ -2516,7 +2516,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_list_images_async(self, request):
-        """查询镜像列表（OpenStack原生）
+        r"""查询镜像列表（OpenStack原生）
 
         获取镜像列表。
         使用本接口查询镜像列表时，需要使用分页查询才能返回全部的镜像列表。
@@ -2647,7 +2647,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_show_image_async(self, request):
-        """查询镜像详情（OpenStack原生）
+        r"""查询镜像详情（OpenStack原生）
 
         查询单个镜像详情，用户可以通过该接口查询单个私有或者公共镜像的详情
         
@@ -2712,7 +2712,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_show_image_member_async(self, request):
-        """获取镜像成员详情（OpenStack原生）
+        r"""获取镜像成员详情（OpenStack原生）
 
         该接口主要用于镜像共享中查询某个镜像成员的详情。
         
@@ -2779,7 +2779,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_show_image_member_schemas_async(self, request):
-        """查询镜像成员视图（OpenStack原生）
+        r"""查询镜像成员视图（OpenStack原生）
 
         该接口主要用于查询镜像成员视图，通过视图，用户可以了解到镜像成员包含哪些属性，同时也可以了解每个属性的数据类型。
         
@@ -2842,7 +2842,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_show_image_schemas_async(self, request):
-        """查询镜像视图（OpenStack原生）
+        r"""查询镜像视图（OpenStack原生）
 
         该接口主要用于查询镜像视图，通过视图，用户可以了解到镜像包含哪些属性，同时也可以了解每个属性的数据类型等。
         
@@ -2905,7 +2905,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_update_image_async(self, request):
-        """更新镜像信息（OpenStack原生）
+        r"""更新镜像信息（OpenStack原生）
 
         修改镜像信息
         
@@ -2972,7 +2972,7 @@ class ImsAsyncClient(Client):
         return http_info
 
     def glance_update_image_member_async(self, request):
-        """更新镜像成员状态（OpenStack原生）
+        r"""更新镜像成员状态（OpenStack原生）
 
         用户接受或者拒绝共享镜像时，使用该接口更新镜像成员的状态。
         

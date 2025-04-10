@@ -35,7 +35,7 @@ class BusinessRiskItem:
     }
 
     def __init__(self, risk_id=None, risk_url=None, risk_type=None, find_time=None, risk_content=None, risk_status=None):
-        """BusinessRiskItem
+        r"""BusinessRiskItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BusinessRiskItem:
 
     @property
     def risk_id(self):
-        """Gets the risk_id of this BusinessRiskItem.
+        r"""Gets the risk_id of this BusinessRiskItem.
 
         业务风险ID
 
@@ -89,7 +89,7 @@ class BusinessRiskItem:
 
     @risk_id.setter
     def risk_id(self, risk_id):
-        """Sets the risk_id of this BusinessRiskItem.
+        r"""Sets the risk_id of this BusinessRiskItem.
 
         业务风险ID
 
@@ -100,7 +100,7 @@ class BusinessRiskItem:
 
     @property
     def risk_url(self):
-        """Gets the risk_url of this BusinessRiskItem.
+        r"""Gets the risk_url of this BusinessRiskItem.
 
         有风险的URL
 
@@ -111,7 +111,7 @@ class BusinessRiskItem:
 
     @risk_url.setter
     def risk_url(self, risk_url):
-        """Sets the risk_url of this BusinessRiskItem.
+        r"""Sets the risk_url of this BusinessRiskItem.
 
         有风险的URL
 
@@ -122,7 +122,7 @@ class BusinessRiskItem:
 
     @property
     def risk_type(self):
-        """Gets the risk_type of this BusinessRiskItem.
+        r"""Gets the risk_type of this BusinessRiskItem.
 
         业务风险类型:   * text - 不合规文字   * image - 不合规图片   * dead_link - 不合规链接（死链）   * dark_link - 不合规链接（暗链）   * business_risk - 业务风险 
 
@@ -133,7 +133,7 @@ class BusinessRiskItem:
 
     @risk_type.setter
     def risk_type(self, risk_type):
-        """Sets the risk_type of this BusinessRiskItem.
+        r"""Sets the risk_type of this BusinessRiskItem.
 
         业务风险类型:   * text - 不合规文字   * image - 不合规图片   * dead_link - 不合规链接（死链）   * dark_link - 不合规链接（暗链）   * business_risk - 业务风险 
 
@@ -144,7 +144,7 @@ class BusinessRiskItem:
 
     @property
     def find_time(self):
-        """Gets the find_time of this BusinessRiskItem.
+        r"""Gets the find_time of this BusinessRiskItem.
 
         业务风险发现时间
 
@@ -155,7 +155,7 @@ class BusinessRiskItem:
 
     @find_time.setter
     def find_time(self, find_time):
-        """Sets the find_time of this BusinessRiskItem.
+        r"""Sets the find_time of this BusinessRiskItem.
 
         业务风险发现时间
 
@@ -166,7 +166,7 @@ class BusinessRiskItem:
 
     @property
     def risk_content(self):
-        """Gets the risk_content of this BusinessRiskItem.
+        r"""Gets the risk_content of this BusinessRiskItem.
 
         业务风险内容
 
@@ -177,7 +177,7 @@ class BusinessRiskItem:
 
     @risk_content.setter
     def risk_content(self, risk_content):
-        """Sets the risk_content of this BusinessRiskItem.
+        r"""Sets the risk_content of this BusinessRiskItem.
 
         业务风险内容
 
@@ -188,7 +188,7 @@ class BusinessRiskItem:
 
     @property
     def risk_status(self):
-        """Gets the risk_status of this BusinessRiskItem.
+        r"""Gets the risk_status of this BusinessRiskItem.
 
         漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 
@@ -199,7 +199,7 @@ class BusinessRiskItem:
 
     @risk_status.setter
     def risk_status(self, risk_status):
-        """Sets the risk_status of this BusinessRiskItem.
+        r"""Sets the risk_status of this BusinessRiskItem.
 
         漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 

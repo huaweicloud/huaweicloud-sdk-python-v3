@@ -31,7 +31,7 @@ class ShowCaseResultRequest:
     }
 
     def __init__(self, project_id=None, version_uri=None, case_uri=None, body=None):
-        """ShowCaseResultRequest
+        r"""ShowCaseResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowCaseResultRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowCaseResultRequest.
+        r"""Gets the project_id of this ShowCaseResultRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -72,7 +72,7 @@ class ShowCaseResultRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowCaseResultRequest.
+        r"""Sets the project_id of this ShowCaseResultRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -83,7 +83,7 @@ class ShowCaseResultRequest:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this ShowCaseResultRequest.
+        r"""Gets the version_uri of this ShowCaseResultRequest.
 
         版本ID
 
@@ -94,7 +94,7 @@ class ShowCaseResultRequest:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this ShowCaseResultRequest.
+        r"""Sets the version_uri of this ShowCaseResultRequest.
 
         版本ID
 
@@ -105,7 +105,7 @@ class ShowCaseResultRequest:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this ShowCaseResultRequest.
+        r"""Gets the case_uri of this ShowCaseResultRequest.
 
         用例uri
 
@@ -116,7 +116,7 @@ class ShowCaseResultRequest:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this ShowCaseResultRequest.
+        r"""Sets the case_uri of this ShowCaseResultRequest.
 
         用例uri
 
@@ -127,7 +127,7 @@ class ShowCaseResultRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowCaseResultRequest.
+        r"""Gets the body of this ShowCaseResultRequest.
 
         :return: The body of this ShowCaseResultRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryCaseResultInfo`
@@ -136,7 +136,7 @@ class ShowCaseResultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowCaseResultRequest.
+        r"""Sets the body of this ShowCaseResultRequest.
 
         :param body: The body of this ShowCaseResultRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.QueryCaseResultInfo`

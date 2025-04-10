@@ -31,7 +31,7 @@ class ListTranscodeDataRequest:
     }
 
     def __init__(self, publish_domain=None, stream=None, start_time=None, end_time=None):
-        """ListTranscodeDataRequest
+        r"""ListTranscodeDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTranscodeDataRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListTranscodeDataRequest.
+        r"""Gets the publish_domain of this ListTranscodeDataRequest.
 
         推流域名。 
 
@@ -75,7 +75,7 @@ class ListTranscodeDataRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListTranscodeDataRequest.
+        r"""Sets the publish_domain of this ListTranscodeDataRequest.
 
         推流域名。 
 
@@ -86,7 +86,7 @@ class ListTranscodeDataRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListTranscodeDataRequest.
+        r"""Gets the stream of this ListTranscodeDataRequest.
 
         流名。 
 
@@ -97,7 +97,7 @@ class ListTranscodeDataRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListTranscodeDataRequest.
+        r"""Sets the stream of this ListTranscodeDataRequest.
 
         流名。 
 
@@ -108,7 +108,7 @@ class ListTranscodeDataRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListTranscodeDataRequest.
+        r"""Gets the start_time of this ListTranscodeDataRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
@@ -119,7 +119,7 @@ class ListTranscodeDataRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListTranscodeDataRequest.
+        r"""Sets the start_time of this ListTranscodeDataRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
@@ -130,7 +130,7 @@ class ListTranscodeDataRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListTranscodeDataRequest.
+        r"""Gets the end_time of this ListTranscodeDataRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -141,7 +141,7 @@ class ListTranscodeDataRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListTranscodeDataRequest.
+        r"""Sets the end_time of this ListTranscodeDataRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 

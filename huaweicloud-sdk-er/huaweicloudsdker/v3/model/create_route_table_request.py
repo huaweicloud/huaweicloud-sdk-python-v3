@@ -30,7 +30,7 @@ class CreateRouteTableRequest:
     }
 
     def __init__(self, x_client_token=None, er_id=None, body=None):
-        """CreateRouteTableRequest
+        r"""CreateRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateRouteTableRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateRouteTableRequest.
+        r"""Gets the x_client_token of this CreateRouteTableRequest.
 
         幂等性标识
 
@@ -68,7 +68,7 @@ class CreateRouteTableRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateRouteTableRequest.
+        r"""Sets the x_client_token of this CreateRouteTableRequest.
 
         幂等性标识
 
@@ -79,7 +79,7 @@ class CreateRouteTableRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this CreateRouteTableRequest.
+        r"""Gets the er_id of this CreateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -90,7 +90,7 @@ class CreateRouteTableRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this CreateRouteTableRequest.
+        r"""Sets the er_id of this CreateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -101,7 +101,7 @@ class CreateRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRouteTableRequest.
+        r"""Gets the body of this CreateRouteTableRequest.
 
         :return: The body of this CreateRouteTableRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateRouteTableRequestBody`
@@ -110,7 +110,7 @@ class CreateRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRouteTableRequest.
+        r"""Sets the body of this CreateRouteTableRequest.
 
         :param body: The body of this CreateRouteTableRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateRouteTableRequestBody`

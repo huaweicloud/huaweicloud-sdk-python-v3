@@ -25,7 +25,7 @@ class CreateIefSystemEventsRequestBody:
     }
 
     def __init__(self, data=None):
-        """CreateIefSystemEventsRequestBody
+        r"""CreateIefSystemEventsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateIefSystemEventsRequestBody:
 
     @property
     def data(self):
-        """Gets the data of this CreateIefSystemEventsRequestBody.
+        r"""Gets the data of this CreateIefSystemEventsRequestBody.
 
         :return: The data of this CreateIefSystemEventsRequestBody.
         :rtype: :class:`huaweicloudsdkdli.v1.IefEvent`
@@ -51,7 +51,7 @@ class CreateIefSystemEventsRequestBody:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateIefSystemEventsRequestBody.
+        r"""Sets the data of this CreateIefSystemEventsRequestBody.
 
         :param data: The data of this CreateIefSystemEventsRequestBody.
         :type data: :class:`huaweicloudsdkdli.v1.IefEvent`

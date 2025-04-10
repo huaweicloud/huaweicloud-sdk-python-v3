@@ -41,7 +41,7 @@ class PolicyAssignmentRequestBody:
     }
 
     def __init__(self, policy_assignment_type=None, name=None, description=None, period=None, policy_filter=None, custom_policy=None, policy_definition_id=None, parameters=None, tags=None):
-        """PolicyAssignmentRequestBody
+        r"""PolicyAssignmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def policy_assignment_type(self):
-        """Gets the policy_assignment_type of this PolicyAssignmentRequestBody.
+        r"""Gets the policy_assignment_type of this PolicyAssignmentRequestBody.
 
         规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
 
@@ -109,7 +109,7 @@ class PolicyAssignmentRequestBody:
 
     @policy_assignment_type.setter
     def policy_assignment_type(self, policy_assignment_type):
-        """Sets the policy_assignment_type of this PolicyAssignmentRequestBody.
+        r"""Sets the policy_assignment_type of this PolicyAssignmentRequestBody.
 
         规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
 
@@ -120,7 +120,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this PolicyAssignmentRequestBody.
+        r"""Gets the name of this PolicyAssignmentRequestBody.
 
         规则名字
 
@@ -131,7 +131,7 @@ class PolicyAssignmentRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyAssignmentRequestBody.
+        r"""Sets the name of this PolicyAssignmentRequestBody.
 
         规则名字
 
@@ -142,7 +142,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this PolicyAssignmentRequestBody.
+        r"""Gets the description of this PolicyAssignmentRequestBody.
 
         规则描述
 
@@ -153,7 +153,7 @@ class PolicyAssignmentRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyAssignmentRequestBody.
+        r"""Sets the description of this PolicyAssignmentRequestBody.
 
         规则描述
 
@@ -164,7 +164,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def period(self):
-        """Gets the period of this PolicyAssignmentRequestBody.
+        r"""Gets the period of this PolicyAssignmentRequestBody.
 
         触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
 
@@ -175,7 +175,7 @@ class PolicyAssignmentRequestBody:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this PolicyAssignmentRequestBody.
+        r"""Sets the period of this PolicyAssignmentRequestBody.
 
         触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
 
@@ -186,7 +186,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def policy_filter(self):
-        """Gets the policy_filter of this PolicyAssignmentRequestBody.
+        r"""Gets the policy_filter of this PolicyAssignmentRequestBody.
 
         :return: The policy_filter of this PolicyAssignmentRequestBody.
         :rtype: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -195,7 +195,7 @@ class PolicyAssignmentRequestBody:
 
     @policy_filter.setter
     def policy_filter(self, policy_filter):
-        """Sets the policy_filter of this PolicyAssignmentRequestBody.
+        r"""Sets the policy_filter of this PolicyAssignmentRequestBody.
 
         :param policy_filter: The policy_filter of this PolicyAssignmentRequestBody.
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -204,7 +204,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def custom_policy(self):
-        """Gets the custom_policy of this PolicyAssignmentRequestBody.
+        r"""Gets the custom_policy of this PolicyAssignmentRequestBody.
 
         :return: The custom_policy of this PolicyAssignmentRequestBody.
         :rtype: :class:`huaweicloudsdkconfig.v1.CustomPolicy`
@@ -213,7 +213,7 @@ class PolicyAssignmentRequestBody:
 
     @custom_policy.setter
     def custom_policy(self, custom_policy):
-        """Sets the custom_policy of this PolicyAssignmentRequestBody.
+        r"""Sets the custom_policy of this PolicyAssignmentRequestBody.
 
         :param custom_policy: The custom_policy of this PolicyAssignmentRequestBody.
         :type custom_policy: :class:`huaweicloudsdkconfig.v1.CustomPolicy`
@@ -222,7 +222,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this PolicyAssignmentRequestBody.
+        r"""Gets the policy_definition_id of this PolicyAssignmentRequestBody.
 
         策略定义ID
 
@@ -233,7 +233,7 @@ class PolicyAssignmentRequestBody:
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this PolicyAssignmentRequestBody.
+        r"""Sets the policy_definition_id of this PolicyAssignmentRequestBody.
 
         策略定义ID
 
@@ -244,7 +244,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this PolicyAssignmentRequestBody.
+        r"""Gets the parameters of this PolicyAssignmentRequestBody.
 
         规则参数
 
@@ -255,7 +255,7 @@ class PolicyAssignmentRequestBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this PolicyAssignmentRequestBody.
+        r"""Sets the parameters of this PolicyAssignmentRequestBody.
 
         规则参数
 
@@ -266,7 +266,7 @@ class PolicyAssignmentRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this PolicyAssignmentRequestBody.
+        r"""Gets the tags of this PolicyAssignmentRequestBody.
 
         :return: The tags of this PolicyAssignmentRequestBody.
         :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
@@ -275,7 +275,7 @@ class PolicyAssignmentRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PolicyAssignmentRequestBody.
+        r"""Sets the tags of this PolicyAssignmentRequestBody.
 
         :param tags: The tags of this PolicyAssignmentRequestBody.
         :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]

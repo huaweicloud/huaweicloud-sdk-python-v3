@@ -43,7 +43,7 @@ class ChileIdCardResult:
     }
 
     def __init__(self, surname=None, given_name=None, nationality=None, sex=None, birth=None, issue_date=None, expiry_date=None, document_number=None, number=None, confidence=None):
-        """ChileIdCardResult
+        r"""ChileIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ChileIdCardResult:
 
     @property
     def surname(self):
-        """Gets the surname of this ChileIdCardResult.
+        r"""Gets the surname of this ChileIdCardResult.
 
         姓氏。 
 
@@ -117,7 +117,7 @@ class ChileIdCardResult:
 
     @surname.setter
     def surname(self, surname):
-        """Sets the surname of this ChileIdCardResult.
+        r"""Sets the surname of this ChileIdCardResult.
 
         姓氏。 
 
@@ -128,7 +128,7 @@ class ChileIdCardResult:
 
     @property
     def given_name(self):
-        """Gets the given_name of this ChileIdCardResult.
+        r"""Gets the given_name of this ChileIdCardResult.
 
         名。 
 
@@ -139,7 +139,7 @@ class ChileIdCardResult:
 
     @given_name.setter
     def given_name(self, given_name):
-        """Sets the given_name of this ChileIdCardResult.
+        r"""Sets the given_name of this ChileIdCardResult.
 
         名。 
 
@@ -150,7 +150,7 @@ class ChileIdCardResult:
 
     @property
     def nationality(self):
-        """Gets the nationality of this ChileIdCardResult.
+        r"""Gets the nationality of this ChileIdCardResult.
 
         国籍。 
 
@@ -161,7 +161,7 @@ class ChileIdCardResult:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this ChileIdCardResult.
+        r"""Sets the nationality of this ChileIdCardResult.
 
         国籍。 
 
@@ -172,7 +172,7 @@ class ChileIdCardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this ChileIdCardResult.
+        r"""Gets the sex of this ChileIdCardResult.
 
         性别。 
 
@@ -183,7 +183,7 @@ class ChileIdCardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this ChileIdCardResult.
+        r"""Sets the sex of this ChileIdCardResult.
 
         性别。 
 
@@ -194,7 +194,7 @@ class ChileIdCardResult:
 
     @property
     def birth(self):
-        """Gets the birth of this ChileIdCardResult.
+        r"""Gets the birth of this ChileIdCardResult.
 
         出生日。 
 
@@ -205,7 +205,7 @@ class ChileIdCardResult:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this ChileIdCardResult.
+        r"""Sets the birth of this ChileIdCardResult.
 
         出生日。 
 
@@ -216,7 +216,7 @@ class ChileIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this ChileIdCardResult.
+        r"""Gets the issue_date of this ChileIdCardResult.
 
         发行日。 
 
@@ -227,7 +227,7 @@ class ChileIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this ChileIdCardResult.
+        r"""Sets the issue_date of this ChileIdCardResult.
 
         发行日。 
 
@@ -238,7 +238,7 @@ class ChileIdCardResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this ChileIdCardResult.
+        r"""Gets the expiry_date of this ChileIdCardResult.
 
         有效期。 
 
@@ -249,7 +249,7 @@ class ChileIdCardResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this ChileIdCardResult.
+        r"""Sets the expiry_date of this ChileIdCardResult.
 
         有效期。 
 
@@ -260,7 +260,7 @@ class ChileIdCardResult:
 
     @property
     def document_number(self):
-        """Gets the document_number of this ChileIdCardResult.
+        r"""Gets the document_number of this ChileIdCardResult.
 
         文档编号。 
 
@@ -271,7 +271,7 @@ class ChileIdCardResult:
 
     @document_number.setter
     def document_number(self, document_number):
-        """Sets the document_number of this ChileIdCardResult.
+        r"""Sets the document_number of this ChileIdCardResult.
 
         文档编号。 
 
@@ -282,7 +282,7 @@ class ChileIdCardResult:
 
     @property
     def number(self):
-        """Gets the number of this ChileIdCardResult.
+        r"""Gets the number of this ChileIdCardResult.
 
         身份证号。 
 
@@ -293,7 +293,7 @@ class ChileIdCardResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ChileIdCardResult.
+        r"""Sets the number of this ChileIdCardResult.
 
         身份证号。 
 
@@ -304,7 +304,7 @@ class ChileIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ChileIdCardResult.
+        r"""Gets the confidence of this ChileIdCardResult.
 
         :return: The confidence of this ChileIdCardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`
@@ -313,7 +313,7 @@ class ChileIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ChileIdCardResult.
+        r"""Sets the confidence of this ChileIdCardResult.
 
         :param confidence: The confidence of this ChileIdCardResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`

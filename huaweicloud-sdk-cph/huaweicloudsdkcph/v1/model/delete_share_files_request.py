@@ -25,7 +25,7 @@ class DeleteShareFilesRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteShareFilesRequest
+        r"""DeleteShareFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteShareFilesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteShareFilesRequest.
+        r"""Gets the body of this DeleteShareFilesRequest.
 
         :return: The body of this DeleteShareFilesRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequestBody`
@@ -52,7 +52,7 @@ class DeleteShareFilesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteShareFilesRequest.
+        r"""Sets the body of this DeleteShareFilesRequest.
 
         :param body: The body of this DeleteShareFilesRequest.
         :type body: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequestBody`

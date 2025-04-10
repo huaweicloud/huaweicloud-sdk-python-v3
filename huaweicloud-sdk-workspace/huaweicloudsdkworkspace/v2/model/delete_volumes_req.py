@@ -25,7 +25,7 @@ class DeleteVolumesReq:
     }
 
     def __init__(self, volume_ids=None):
-        """DeleteVolumesReq
+        r"""DeleteVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteVolumesReq:
 
     @property
     def volume_ids(self):
-        """Gets the volume_ids of this DeleteVolumesReq.
+        r"""Gets the volume_ids of this DeleteVolumesReq.
 
         待删除的桌面数据盘ID列表。
 
@@ -54,7 +54,7 @@ class DeleteVolumesReq:
 
     @volume_ids.setter
     def volume_ids(self, volume_ids):
-        """Sets the volume_ids of this DeleteVolumesReq.
+        r"""Sets the volume_ids of this DeleteVolumesReq.
 
         待删除的桌面数据盘ID列表。
 

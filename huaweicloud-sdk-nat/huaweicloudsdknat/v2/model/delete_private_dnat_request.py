@@ -25,7 +25,7 @@ class DeletePrivateDnatRequest:
     }
 
     def __init__(self, dnat_rule_id=None):
-        """DeletePrivateDnatRequest
+        r"""DeletePrivateDnatRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePrivateDnatRequest:
 
     @property
     def dnat_rule_id(self):
-        """Gets the dnat_rule_id of this DeletePrivateDnatRequest.
+        r"""Gets the dnat_rule_id of this DeletePrivateDnatRequest.
 
         DNAT规则的ID。
 
@@ -53,7 +53,7 @@ class DeletePrivateDnatRequest:
 
     @dnat_rule_id.setter
     def dnat_rule_id(self, dnat_rule_id):
-        """Sets the dnat_rule_id of this DeletePrivateDnatRequest.
+        r"""Sets the dnat_rule_id of this DeletePrivateDnatRequest.
 
         DNAT规则的ID。
 

@@ -29,7 +29,7 @@ class AreaCodeSimpleInfoV2:
     }
 
     def __init__(self, id=None, area_code=None, area_name=None):
-        """AreaCodeSimpleInfoV2
+        r"""AreaCodeSimpleInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AreaCodeSimpleInfoV2:
 
     @property
     def id(self):
-        """Gets the id of this AreaCodeSimpleInfoV2.
+        r"""Gets the id of this AreaCodeSimpleInfoV2.
 
         唯一id
 
@@ -68,7 +68,7 @@ class AreaCodeSimpleInfoV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AreaCodeSimpleInfoV2.
+        r"""Sets the id of this AreaCodeSimpleInfoV2.
 
         唯一id
 
@@ -79,7 +79,7 @@ class AreaCodeSimpleInfoV2:
 
     @property
     def area_code(self):
-        """Gets the area_code of this AreaCodeSimpleInfoV2.
+        r"""Gets the area_code of this AreaCodeSimpleInfoV2.
 
         国家码
 
@@ -90,7 +90,7 @@ class AreaCodeSimpleInfoV2:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this AreaCodeSimpleInfoV2.
+        r"""Sets the area_code of this AreaCodeSimpleInfoV2.
 
         国家码
 
@@ -101,7 +101,7 @@ class AreaCodeSimpleInfoV2:
 
     @property
     def area_name(self):
-        """Gets the area_name of this AreaCodeSimpleInfoV2.
+        r"""Gets the area_name of this AreaCodeSimpleInfoV2.
 
         国家名称
 
@@ -112,7 +112,7 @@ class AreaCodeSimpleInfoV2:
 
     @area_name.setter
     def area_name(self, area_name):
-        """Sets the area_name of this AreaCodeSimpleInfoV2.
+        r"""Sets the area_name of this AreaCodeSimpleInfoV2.
 
         国家名称
 

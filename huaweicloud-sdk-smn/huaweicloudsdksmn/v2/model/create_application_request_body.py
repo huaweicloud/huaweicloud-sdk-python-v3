@@ -31,7 +31,7 @@ class CreateApplicationRequestBody:
     }
 
     def __init__(self, name=None, platform=None, platform_principal=None, platform_credential=None):
-        """CreateApplicationRequestBody
+        r"""CreateApplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateApplicationRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateApplicationRequestBody.
+        r"""Gets the name of this CreateApplicationRequestBody.
 
         应用名。  最大支持64个字符，只能包含英文字母、下划线和数字。
 
@@ -71,7 +71,7 @@ class CreateApplicationRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateApplicationRequestBody.
+        r"""Sets the name of this CreateApplicationRequestBody.
 
         应用名。  最大支持64个字符，只能包含英文字母、下划线和数字。
 
@@ -82,7 +82,7 @@ class CreateApplicationRequestBody:
 
     @property
     def platform(self):
-        """Gets the platform of this CreateApplicationRequestBody.
+        r"""Gets the platform of this CreateApplicationRequestBody.
 
         应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
@@ -93,7 +93,7 @@ class CreateApplicationRequestBody:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this CreateApplicationRequestBody.
+        r"""Sets the platform of this CreateApplicationRequestBody.
 
         应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
@@ -104,7 +104,7 @@ class CreateApplicationRequestBody:
 
     @property
     def platform_principal(self):
-        """Gets the platform_principal of this CreateApplicationRequestBody.
+        r"""Gets the platform_principal of this CreateApplicationRequestBody.
 
         对于HMS平台是APP ID，只能包含英文字母和数字，最大20个字符。 对于苹果APNS、APNS_SandBox平台是推送证书，大小不超过8K，且是Base64编码。
 
@@ -115,7 +115,7 @@ class CreateApplicationRequestBody:
 
     @platform_principal.setter
     def platform_principal(self, platform_principal):
-        """Sets the platform_principal of this CreateApplicationRequestBody.
+        r"""Sets the platform_principal of this CreateApplicationRequestBody.
 
         对于HMS平台是APP ID，只能包含英文字母和数字，最大20个字符。 对于苹果APNS、APNS_SandBox平台是推送证书，大小不超过8K，且是Base64编码。
 
@@ -126,7 +126,7 @@ class CreateApplicationRequestBody:
 
     @property
     def platform_credential(self):
-        """Gets the platform_credential of this CreateApplicationRequestBody.
+        r"""Gets the platform_credential of this CreateApplicationRequestBody.
 
         对于HMS平台是APP SECRET， 只能包含英文字母和数字，32到64个字符。  对于苹果APNS、APNS_SandBox平台是推送证书的私钥（private key）， 大小不超过8K，且是Base64编码。
 
@@ -137,7 +137,7 @@ class CreateApplicationRequestBody:
 
     @platform_credential.setter
     def platform_credential(self, platform_credential):
-        """Sets the platform_credential of this CreateApplicationRequestBody.
+        r"""Sets the platform_credential of this CreateApplicationRequestBody.
 
         对于HMS平台是APP SECRET， 只能包含英文字母和数字，32到64个字符。  对于苹果APNS、APNS_SandBox平台是推送证书的私钥（private key）， 大小不超过8K，且是Base64编码。
 

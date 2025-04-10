@@ -29,7 +29,7 @@ class EventExtractionResponseItemArgument:
     }
 
     def __init__(self, role=None, span=None, word=None):
-        """EventExtractionResponseItemArgument
+        r"""EventExtractionResponseItemArgument
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EventExtractionResponseItemArgument:
 
     @property
     def role(self):
-        """Gets the role of this EventExtractionResponseItemArgument.
+        r"""Gets the role of this EventExtractionResponseItemArgument.
 
         元素角色。元素角色指的是事件元素在事件中扮演的角色，是事件元素与事件的语义关系。
 
@@ -65,7 +65,7 @@ class EventExtractionResponseItemArgument:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this EventExtractionResponseItemArgument.
+        r"""Sets the role of this EventExtractionResponseItemArgument.
 
         元素角色。元素角色指的是事件元素在事件中扮演的角色，是事件元素与事件的语义关系。
 
@@ -76,7 +76,7 @@ class EventExtractionResponseItemArgument:
 
     @property
     def span(self):
-        """Gets the span of this EventExtractionResponseItemArgument.
+        r"""Gets the span of this EventExtractionResponseItemArgument.
 
         实体文本在待分析文本中的起始和终止位置。
 
@@ -87,7 +87,7 @@ class EventExtractionResponseItemArgument:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this EventExtractionResponseItemArgument.
+        r"""Sets the span of this EventExtractionResponseItemArgument.
 
         实体文本在待分析文本中的起始和终止位置。
 
@@ -98,7 +98,7 @@ class EventExtractionResponseItemArgument:
 
     @property
     def word(self):
-        """Gets the word of this EventExtractionResponseItemArgument.
+        r"""Gets the word of this EventExtractionResponseItemArgument.
 
         实体文本。
 
@@ -109,7 +109,7 @@ class EventExtractionResponseItemArgument:
 
     @word.setter
     def word(self, word):
-        """Sets the word of this EventExtractionResponseItemArgument.
+        r"""Sets the word of this EventExtractionResponseItemArgument.
 
         实体文本。
 

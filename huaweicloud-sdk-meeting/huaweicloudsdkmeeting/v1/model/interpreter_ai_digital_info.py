@@ -49,7 +49,7 @@ class InterpreterAiDigitalInfo:
     }
 
     def __init__(self, type=None, digital_account=None, digital_name=None, presenter_account=None, presenter_real_name_account=None, presenter_name=None, presenter_user_id=None, local_conf_id=None, local_conf_addr=None, local_auth_info=None, local_need_proxy=None, local_auth_url=None, local_auth_app_id=None):
-        """InterpreterAiDigitalInfo
+        r"""InterpreterAiDigitalInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def type(self):
-        """Gets the type of this InterpreterAiDigitalInfo.
+        r"""Gets the type of this InterpreterAiDigitalInfo.
 
         数字资产类型：PUBLIC（系统公共）、PRIVATE（企业专用账号绑定）、LOCAL（企业本地通用）。
 
@@ -138,7 +138,7 @@ class InterpreterAiDigitalInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InterpreterAiDigitalInfo.
+        r"""Sets the type of this InterpreterAiDigitalInfo.
 
         数字资产类型：PUBLIC（系统公共）、PRIVATE（企业专用账号绑定）、LOCAL（企业本地通用）。
 
@@ -149,7 +149,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def digital_account(self):
-        """Gets the digital_account of this InterpreterAiDigitalInfo.
+        r"""Gets the digital_account of this InterpreterAiDigitalInfo.
 
         AI传译员场景下绑定使用的数字资产ID（数字人或TTS音色）。
 
@@ -160,7 +160,7 @@ class InterpreterAiDigitalInfo:
 
     @digital_account.setter
     def digital_account(self, digital_account):
-        """Sets the digital_account of this InterpreterAiDigitalInfo.
+        r"""Sets the digital_account of this InterpreterAiDigitalInfo.
 
         AI传译员场景下绑定使用的数字资产ID（数字人或TTS音色）。
 
@@ -171,7 +171,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def digital_name(self):
-        """Gets the digital_name of this InterpreterAiDigitalInfo.
+        r"""Gets the digital_name of this InterpreterAiDigitalInfo.
 
         数字资产名称。
 
@@ -182,7 +182,7 @@ class InterpreterAiDigitalInfo:
 
     @digital_name.setter
     def digital_name(self, digital_name):
-        """Sets the digital_name of this InterpreterAiDigitalInfo.
+        r"""Sets the digital_name of this InterpreterAiDigitalInfo.
 
         数字资产名称。
 
@@ -193,7 +193,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def presenter_account(self):
-        """Gets the presenter_account of this InterpreterAiDigitalInfo.
+        r"""Gets the presenter_account of this InterpreterAiDigitalInfo.
 
         专用数字资产绑定的发言人登录账号，翻译对象非匿名必填。
 
@@ -204,7 +204,7 @@ class InterpreterAiDigitalInfo:
 
     @presenter_account.setter
     def presenter_account(self, presenter_account):
-        """Sets the presenter_account of this InterpreterAiDigitalInfo.
+        r"""Sets the presenter_account of this InterpreterAiDigitalInfo.
 
         专用数字资产绑定的发言人登录账号，翻译对象非匿名必填。
 
@@ -215,7 +215,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def presenter_real_name_account(self):
-        """Gets the presenter_real_name_account of this InterpreterAiDigitalInfo.
+        r"""Gets the presenter_real_name_account of this InterpreterAiDigitalInfo.
 
         专用数字资产绑定的发言人登录账号（匿名时），翻译对象匿名必填。
 
@@ -226,7 +226,7 @@ class InterpreterAiDigitalInfo:
 
     @presenter_real_name_account.setter
     def presenter_real_name_account(self, presenter_real_name_account):
-        """Sets the presenter_real_name_account of this InterpreterAiDigitalInfo.
+        r"""Sets the presenter_real_name_account of this InterpreterAiDigitalInfo.
 
         专用数字资产绑定的发言人登录账号（匿名时），翻译对象匿名必填。
 
@@ -237,7 +237,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def presenter_name(self):
-        """Gets the presenter_name of this InterpreterAiDigitalInfo.
+        r"""Gets the presenter_name of this InterpreterAiDigitalInfo.
 
         专用数字资产绑定的发言人名称。
 
@@ -248,7 +248,7 @@ class InterpreterAiDigitalInfo:
 
     @presenter_name.setter
     def presenter_name(self, presenter_name):
-        """Sets the presenter_name of this InterpreterAiDigitalInfo.
+        r"""Sets the presenter_name of this InterpreterAiDigitalInfo.
 
         专用数字资产绑定的发言人名称。
 
@@ -259,7 +259,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def presenter_user_id(self):
-        """Gets the presenter_user_id of this InterpreterAiDigitalInfo.
+        r"""Gets the presenter_user_id of this InterpreterAiDigitalInfo.
 
         发言人用户的userUUID。
 
@@ -270,7 +270,7 @@ class InterpreterAiDigitalInfo:
 
     @presenter_user_id.setter
     def presenter_user_id(self, presenter_user_id):
-        """Sets the presenter_user_id of this InterpreterAiDigitalInfo.
+        r"""Sets the presenter_user_id of this InterpreterAiDigitalInfo.
 
         发言人用户的userUUID。
 
@@ -281,7 +281,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def local_conf_id(self):
-        """Gets the local_conf_id of this InterpreterAiDigitalInfo.
+        r"""Gets the local_conf_id of this InterpreterAiDigitalInfo.
 
         本地会议的会议id（第三方对接参数），数字资产为LOCAL时必填。
 
@@ -292,7 +292,7 @@ class InterpreterAiDigitalInfo:
 
     @local_conf_id.setter
     def local_conf_id(self, local_conf_id):
-        """Sets the local_conf_id of this InterpreterAiDigitalInfo.
+        r"""Sets the local_conf_id of this InterpreterAiDigitalInfo.
 
         本地会议的会议id（第三方对接参数），数字资产为LOCAL时必填。
 
@@ -303,7 +303,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def local_conf_addr(self):
-        """Gets the local_conf_addr of this InterpreterAiDigitalInfo.
+        r"""Gets the local_conf_addr of this InterpreterAiDigitalInfo.
 
         本地会议对接地址或域名。
 
@@ -314,7 +314,7 @@ class InterpreterAiDigitalInfo:
 
     @local_conf_addr.setter
     def local_conf_addr(self, local_conf_addr):
-        """Sets the local_conf_addr of this InterpreterAiDigitalInfo.
+        r"""Sets the local_conf_addr of this InterpreterAiDigitalInfo.
 
         本地会议对接地址或域名。
 
@@ -325,7 +325,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def local_auth_info(self):
-        """Gets the local_auth_info of this InterpreterAiDigitalInfo.
+        r"""Gets the local_auth_info of this InterpreterAiDigitalInfo.
 
         本地会议对接鉴权信息。
 
@@ -336,7 +336,7 @@ class InterpreterAiDigitalInfo:
 
     @local_auth_info.setter
     def local_auth_info(self, local_auth_info):
-        """Sets the local_auth_info of this InterpreterAiDigitalInfo.
+        r"""Sets the local_auth_info of this InterpreterAiDigitalInfo.
 
         本地会议对接鉴权信息。
 
@@ -347,7 +347,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def local_need_proxy(self):
-        """Gets the local_need_proxy of this InterpreterAiDigitalInfo.
+        r"""Gets the local_need_proxy of this InterpreterAiDigitalInfo.
 
         true：需要代理 false：不需要代理。
 
@@ -358,7 +358,7 @@ class InterpreterAiDigitalInfo:
 
     @local_need_proxy.setter
     def local_need_proxy(self, local_need_proxy):
-        """Sets the local_need_proxy of this InterpreterAiDigitalInfo.
+        r"""Sets the local_need_proxy of this InterpreterAiDigitalInfo.
 
         true：需要代理 false：不需要代理。
 
@@ -369,7 +369,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def local_auth_url(self):
-        """Gets the local_auth_url of this InterpreterAiDigitalInfo.
+        r"""Gets the local_auth_url of this InterpreterAiDigitalInfo.
 
         本地会议获取动态鉴权信息Url。
 
@@ -380,7 +380,7 @@ class InterpreterAiDigitalInfo:
 
     @local_auth_url.setter
     def local_auth_url(self, local_auth_url):
-        """Sets the local_auth_url of this InterpreterAiDigitalInfo.
+        r"""Sets the local_auth_url of this InterpreterAiDigitalInfo.
 
         本地会议获取动态鉴权信息Url。
 
@@ -391,7 +391,7 @@ class InterpreterAiDigitalInfo:
 
     @property
     def local_auth_app_id(self):
-        """Gets the local_auth_app_id of this InterpreterAiDigitalInfo.
+        r"""Gets the local_auth_app_id of this InterpreterAiDigitalInfo.
 
         本地会议鉴权AppId。
 
@@ -402,7 +402,7 @@ class InterpreterAiDigitalInfo:
 
     @local_auth_app_id.setter
     def local_auth_app_id(self, local_auth_app_id):
-        """Sets the local_auth_app_id of this InterpreterAiDigitalInfo.
+        r"""Sets the local_auth_app_id of this InterpreterAiDigitalInfo.
 
         本地会议鉴权AppId。
 

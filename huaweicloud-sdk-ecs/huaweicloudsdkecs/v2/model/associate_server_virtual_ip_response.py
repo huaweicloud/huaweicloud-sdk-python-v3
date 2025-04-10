@@ -26,7 +26,7 @@ class AssociateServerVirtualIpResponse(SdkResponse):
     }
 
     def __init__(self, port_id=None):
-        """AssociateServerVirtualIpResponse
+        r"""AssociateServerVirtualIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateServerVirtualIpResponse(SdkResponse):
 
     @property
     def port_id(self):
-        """Gets the port_id of this AssociateServerVirtualIpResponse.
+        r"""Gets the port_id of this AssociateServerVirtualIpResponse.
 
         云服务器网卡ID。
 
@@ -55,7 +55,7 @@ class AssociateServerVirtualIpResponse(SdkResponse):
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this AssociateServerVirtualIpResponse.
+        r"""Sets the port_id of this AssociateServerVirtualIpResponse.
 
         云服务器网卡ID。
 

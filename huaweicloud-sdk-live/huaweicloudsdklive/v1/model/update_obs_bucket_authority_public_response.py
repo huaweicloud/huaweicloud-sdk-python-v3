@@ -24,7 +24,7 @@ class UpdateObsBucketAuthorityPublicResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateObsBucketAuthorityPublicResponse
+        r"""UpdateObsBucketAuthorityPublicResponse
 
         The model defined in huaweicloud sdk
 

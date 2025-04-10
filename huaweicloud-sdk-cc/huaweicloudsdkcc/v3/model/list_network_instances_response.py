@@ -30,7 +30,7 @@ class ListNetworkInstancesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, network_instances=None):
-        """ListNetworkInstancesResponse
+        r"""ListNetworkInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListNetworkInstancesResponse.
+        r"""Gets the request_id of this ListNetworkInstancesResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListNetworkInstancesResponse.
+        r"""Sets the request_id of this ListNetworkInstancesResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListNetworkInstancesResponse.
+        r"""Gets the page_info of this ListNetworkInstancesResponse.
 
         :return: The page_info of this ListNetworkInstancesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListNetworkInstancesResponse.
+        r"""Sets the page_info of this ListNetworkInstancesResponse.
 
         :param page_info: The page_info of this ListNetworkInstancesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
     @property
     def network_instances(self):
-        """Gets the network_instances of this ListNetworkInstancesResponse.
+        r"""Gets the network_instances of this ListNetworkInstancesResponse.
 
         网络实例列表。
 
@@ -107,7 +107,7 @@ class ListNetworkInstancesResponse(SdkResponse):
 
     @network_instances.setter
     def network_instances(self, network_instances):
-        """Sets the network_instances of this ListNetworkInstancesResponse.
+        r"""Sets the network_instances of this ListNetworkInstancesResponse.
 
         网络实例列表。
 

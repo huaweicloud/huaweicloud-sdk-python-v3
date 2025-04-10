@@ -25,7 +25,7 @@ class EniNetworkUpdate:
     }
 
     def __init__(self, subnets=None):
-        """EniNetworkUpdate
+        r"""EniNetworkUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EniNetworkUpdate:
 
     @property
     def subnets(self):
-        """Gets the subnets of this EniNetworkUpdate.
+        r"""Gets the subnets of this EniNetworkUpdate.
 
         IPv4子网ID列表。1.19.10及以上版本的CCE Turbo集群支持多容器子网，同时支持增量更新容器子网列表。 只允许新增子网，不可删除已有子网，请谨慎选择。  请求体中需包含所有已经存在的subnet。
 
@@ -54,7 +54,7 @@ class EniNetworkUpdate:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this EniNetworkUpdate.
+        r"""Sets the subnets of this EniNetworkUpdate.
 
         IPv4子网ID列表。1.19.10及以上版本的CCE Turbo集群支持多容器子网，同时支持增量更新容器子网列表。 只允许新增子网，不可删除已有子网，请谨慎选择。  请求体中需包含所有已经存在的subnet。
 

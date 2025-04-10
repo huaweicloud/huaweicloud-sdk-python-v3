@@ -29,7 +29,7 @@ class ExportApiDefinitionsV2Request:
     }
 
     def __init__(self, instance_id=None, oas_version=None, body=None):
-        """ExportApiDefinitionsV2Request
+        r"""ExportApiDefinitionsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExportApiDefinitionsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportApiDefinitionsV2Request.
+        r"""Gets the instance_id of this ExportApiDefinitionsV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -67,7 +67,7 @@ class ExportApiDefinitionsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportApiDefinitionsV2Request.
+        r"""Sets the instance_id of this ExportApiDefinitionsV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -78,7 +78,7 @@ class ExportApiDefinitionsV2Request:
 
     @property
     def oas_version(self):
-        """Gets the oas_version of this ExportApiDefinitionsV2Request.
+        r"""Gets the oas_version of this ExportApiDefinitionsV2Request.
 
         OpenAPI版本
 
@@ -89,7 +89,7 @@ class ExportApiDefinitionsV2Request:
 
     @oas_version.setter
     def oas_version(self, oas_version):
-        """Sets the oas_version of this ExportApiDefinitionsV2Request.
+        r"""Sets the oas_version of this ExportApiDefinitionsV2Request.
 
         OpenAPI版本
 
@@ -100,7 +100,7 @@ class ExportApiDefinitionsV2Request:
 
     @property
     def body(self):
-        """Gets the body of this ExportApiDefinitionsV2Request.
+        r"""Gets the body of this ExportApiDefinitionsV2Request.
 
         :return: The body of this ExportApiDefinitionsV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`
@@ -109,7 +109,7 @@ class ExportApiDefinitionsV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportApiDefinitionsV2Request.
+        r"""Sets the body of this ExportApiDefinitionsV2Request.
 
         :param body: The body of this ExportApiDefinitionsV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`

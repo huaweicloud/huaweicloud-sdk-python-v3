@@ -39,7 +39,7 @@ class StackResource:
     }
 
     def __init__(self, physical_resource_id=None, physical_resource_name=None, logical_resource_name=None, logical_resource_type=None, resource_status=None, status_message=None, href=None, display_name=None):
-        """StackResource
+        r"""StackResource
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class StackResource:
 
     @property
     def physical_resource_id(self):
-        """Gets the physical_resource_id of this StackResource.
+        r"""Gets the physical_resource_id of this StackResource.
 
         物理资源id
 
@@ -103,7 +103,7 @@ class StackResource:
 
     @physical_resource_id.setter
     def physical_resource_id(self, physical_resource_id):
-        """Sets the physical_resource_id of this StackResource.
+        r"""Sets the physical_resource_id of this StackResource.
 
         物理资源id
 
@@ -114,7 +114,7 @@ class StackResource:
 
     @property
     def physical_resource_name(self):
-        """Gets the physical_resource_name of this StackResource.
+        r"""Gets the physical_resource_name of this StackResource.
 
         物理资源名称
 
@@ -125,7 +125,7 @@ class StackResource:
 
     @physical_resource_name.setter
     def physical_resource_name(self, physical_resource_name):
-        """Sets the physical_resource_name of this StackResource.
+        r"""Sets the physical_resource_name of this StackResource.
 
         物理资源名称
 
@@ -136,7 +136,7 @@ class StackResource:
 
     @property
     def logical_resource_name(self):
-        """Gets the logical_resource_name of this StackResource.
+        r"""Gets the logical_resource_name of this StackResource.
 
         逻辑资源名称
 
@@ -147,7 +147,7 @@ class StackResource:
 
     @logical_resource_name.setter
     def logical_resource_name(self, logical_resource_name):
-        """Sets the logical_resource_name of this StackResource.
+        r"""Sets the logical_resource_name of this StackResource.
 
         逻辑资源名称
 
@@ -158,7 +158,7 @@ class StackResource:
 
     @property
     def logical_resource_type(self):
-        """Gets the logical_resource_type of this StackResource.
+        r"""Gets the logical_resource_type of this StackResource.
 
         逻辑资源类型
 
@@ -169,7 +169,7 @@ class StackResource:
 
     @logical_resource_type.setter
     def logical_resource_type(self, logical_resource_type):
-        """Sets the logical_resource_type of this StackResource.
+        r"""Sets the logical_resource_type of this StackResource.
 
         逻辑资源类型
 
@@ -180,7 +180,7 @@ class StackResource:
 
     @property
     def resource_status(self):
-        """Gets the resource_status of this StackResource.
+        r"""Gets the resource_status of this StackResource.
 
         资源状态
 
@@ -191,7 +191,7 @@ class StackResource:
 
     @resource_status.setter
     def resource_status(self, resource_status):
-        """Sets the resource_status of this StackResource.
+        r"""Sets the resource_status of this StackResource.
 
         资源状态
 
@@ -202,7 +202,7 @@ class StackResource:
 
     @property
     def status_message(self):
-        """Gets the status_message of this StackResource.
+        r"""Gets the status_message of this StackResource.
 
         状态信息
 
@@ -213,7 +213,7 @@ class StackResource:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this StackResource.
+        r"""Sets the status_message of this StackResource.
 
         状态信息
 
@@ -224,7 +224,7 @@ class StackResource:
 
     @property
     def href(self):
-        """Gets the href of this StackResource.
+        r"""Gets the href of this StackResource.
 
         超链接地址
 
@@ -235,7 +235,7 @@ class StackResource:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this StackResource.
+        r"""Sets the href of this StackResource.
 
         超链接地址
 
@@ -246,7 +246,7 @@ class StackResource:
 
     @property
     def display_name(self):
-        """Gets the display_name of this StackResource.
+        r"""Gets the display_name of this StackResource.
 
         云服务名称
 
@@ -257,7 +257,7 @@ class StackResource:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this StackResource.
+        r"""Sets the display_name of this StackResource.
 
         云服务名称
 

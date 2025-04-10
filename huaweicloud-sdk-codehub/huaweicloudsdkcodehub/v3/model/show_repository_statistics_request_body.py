@@ -25,7 +25,7 @@ class ShowRepositoryStatisticsRequestBody:
     }
 
     def __init__(self, branch_name=None):
-        """ShowRepositoryStatisticsRequestBody
+        r"""ShowRepositoryStatisticsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRepositoryStatisticsRequestBody:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this ShowRepositoryStatisticsRequestBody.
+        r"""Gets the branch_name of this ShowRepositoryStatisticsRequestBody.
 
         仓库分支名
 
@@ -53,7 +53,7 @@ class ShowRepositoryStatisticsRequestBody:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this ShowRepositoryStatisticsRequestBody.
+        r"""Sets the branch_name of this ShowRepositoryStatisticsRequestBody.
 
         仓库分支名
 

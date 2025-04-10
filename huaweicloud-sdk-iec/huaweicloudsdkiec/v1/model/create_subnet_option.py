@@ -41,7 +41,7 @@ class CreateSubnetOption:
     }
 
     def __init__(self, name=None, cidr=None, gateway_ip=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, vpc_id=None, site_id=None):
-        """CreateSubnetOption
+        r"""CreateSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class CreateSubnetOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateSubnetOption.
+        r"""Gets the name of this CreateSubnetOption.
 
         子网名称  约束：由中文字符、字母、数字、中划线和下划线和点组成，长度为1~64个字符
 
@@ -105,7 +105,7 @@ class CreateSubnetOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSubnetOption.
+        r"""Sets the name of this CreateSubnetOption.
 
         子网名称  约束：由中文字符、字母、数字、中划线和下划线和点组成，长度为1~64个字符
 
@@ -116,7 +116,7 @@ class CreateSubnetOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateSubnetOption.
+        r"""Gets the cidr of this CreateSubnetOption.
 
         子网的网段  取值范围：必须在vpc对应cidr范围内  约束：必须是cidr格式。掩码长度不能大于28
 
@@ -127,7 +127,7 @@ class CreateSubnetOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateSubnetOption.
+        r"""Sets the cidr of this CreateSubnetOption.
 
         子网的网段  取值范围：必须在vpc对应cidr范围内  约束：必须是cidr格式。掩码长度不能大于28
 
@@ -138,7 +138,7 @@ class CreateSubnetOption:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this CreateSubnetOption.
+        r"""Gets the gateway_ip of this CreateSubnetOption.
 
         子网的网关  取值范围：子网网段中的IP地址  约束：必须是ip格式
 
@@ -149,7 +149,7 @@ class CreateSubnetOption:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this CreateSubnetOption.
+        r"""Sets the gateway_ip of this CreateSubnetOption.
 
         子网的网关  取值范围：子网网段中的IP地址  约束：必须是ip格式
 
@@ -160,7 +160,7 @@ class CreateSubnetOption:
 
     @property
     def dhcp_enable(self):
-        """Gets the dhcp_enable of this CreateSubnetOption.
+        r"""Gets the dhcp_enable of this CreateSubnetOption.
 
         子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入账号密码，请谨慎操作。
 
@@ -171,7 +171,7 @@ class CreateSubnetOption:
 
     @dhcp_enable.setter
     def dhcp_enable(self, dhcp_enable):
-        """Sets the dhcp_enable of this CreateSubnetOption.
+        r"""Sets the dhcp_enable of this CreateSubnetOption.
 
         子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入账号密码，请谨慎操作。
 
@@ -182,7 +182,7 @@ class CreateSubnetOption:
 
     @property
     def primary_dns(self):
-        """Gets the primary_dns of this CreateSubnetOption.
+        r"""Gets the primary_dns of this CreateSubnetOption.
 
         子网dns服务器地址1  约束：ip格式，不支持IPv6地址
 
@@ -193,7 +193,7 @@ class CreateSubnetOption:
 
     @primary_dns.setter
     def primary_dns(self, primary_dns):
-        """Sets the primary_dns of this CreateSubnetOption.
+        r"""Sets the primary_dns of this CreateSubnetOption.
 
         子网dns服务器地址1  约束：ip格式，不支持IPv6地址
 
@@ -204,7 +204,7 @@ class CreateSubnetOption:
 
     @property
     def secondary_dns(self):
-        """Gets the secondary_dns of this CreateSubnetOption.
+        r"""Gets the secondary_dns of this CreateSubnetOption.
 
         子网dns服务器地址2  约束：ip格式，不支持IPv6地址
 
@@ -215,7 +215,7 @@ class CreateSubnetOption:
 
     @secondary_dns.setter
     def secondary_dns(self, secondary_dns):
-        """Sets the secondary_dns of this CreateSubnetOption.
+        r"""Sets the secondary_dns of this CreateSubnetOption.
 
         子网dns服务器地址2  约束：ip格式，不支持IPv6地址
 
@@ -226,7 +226,7 @@ class CreateSubnetOption:
 
     @property
     def dns_list(self):
-        """Gets the dns_list of this CreateSubnetOption.
+        r"""Gets the dns_list of this CreateSubnetOption.
 
         子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段  约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集，不支持IPv6地址。
 
@@ -237,7 +237,7 @@ class CreateSubnetOption:
 
     @dns_list.setter
     def dns_list(self, dns_list):
-        """Sets the dns_list of this CreateSubnetOption.
+        r"""Sets the dns_list of this CreateSubnetOption.
 
         子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段  约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集，不支持IPv6地址。
 
@@ -248,7 +248,7 @@ class CreateSubnetOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateSubnetOption.
+        r"""Gets the vpc_id of this CreateSubnetOption.
 
         子网所在VPC的ID。
 
@@ -259,7 +259,7 @@ class CreateSubnetOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateSubnetOption.
+        r"""Sets the vpc_id of this CreateSubnetOption.
 
         子网所在VPC的ID。
 
@@ -270,7 +270,7 @@ class CreateSubnetOption:
 
     @property
     def site_id(self):
-        """Gets the site_id of this CreateSubnetOption.
+        r"""Gets the site_id of this CreateSubnetOption.
 
         子网归属的站点ID,从站点信息列表中获取。
 
@@ -281,7 +281,7 @@ class CreateSubnetOption:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this CreateSubnetOption.
+        r"""Sets the site_id of this CreateSubnetOption.
 
         子网归属的站点ID,从站点信息列表中获取。
 

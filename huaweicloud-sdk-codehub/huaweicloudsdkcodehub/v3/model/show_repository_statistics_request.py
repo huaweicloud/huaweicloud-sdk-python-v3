@@ -27,7 +27,7 @@ class ShowRepositoryStatisticsRequest:
     }
 
     def __init__(self, repository_id=None, body=None):
-        """ShowRepositoryStatisticsRequest
+        r"""ShowRepositoryStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRepositoryStatisticsRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowRepositoryStatisticsRequest.
+        r"""Gets the repository_id of this ShowRepositoryStatisticsRequest.
 
         仓库的主键id
 
@@ -60,7 +60,7 @@ class ShowRepositoryStatisticsRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowRepositoryStatisticsRequest.
+        r"""Sets the repository_id of this ShowRepositoryStatisticsRequest.
 
         仓库的主键id
 
@@ -71,7 +71,7 @@ class ShowRepositoryStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowRepositoryStatisticsRequest.
+        r"""Gets the body of this ShowRepositoryStatisticsRequest.
 
         :return: The body of this ShowRepositoryStatisticsRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequestBody`
@@ -80,7 +80,7 @@ class ShowRepositoryStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowRepositoryStatisticsRequest.
+        r"""Sets the body of this ShowRepositoryStatisticsRequest.
 
         :param body: The body of this ShowRepositoryStatisticsRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequestBody`

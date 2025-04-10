@@ -28,7 +28,7 @@ class ListAsyncJobsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, jobs=None):
-        """ListAsyncJobsResponse
+        r"""ListAsyncJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAsyncJobsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAsyncJobsResponse.
+        r"""Gets the total_count of this ListAsyncJobsResponse.
 
         列表中的项目总数，与分页无关。
 
@@ -60,7 +60,7 @@ class ListAsyncJobsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAsyncJobsResponse.
+        r"""Sets the total_count of this ListAsyncJobsResponse.
 
         列表中的项目总数，与分页无关。
 
@@ -71,7 +71,7 @@ class ListAsyncJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListAsyncJobsResponse.
+        r"""Gets the jobs of this ListAsyncJobsResponse.
 
         所有批量异步创建任务响应体。
 
@@ -82,7 +82,7 @@ class ListAsyncJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListAsyncJobsResponse.
+        r"""Sets the jobs of this ListAsyncJobsResponse.
 
         所有批量异步创建任务响应体。
 

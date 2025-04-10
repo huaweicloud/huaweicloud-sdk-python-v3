@@ -31,7 +31,7 @@ class TriggerPolicy:
     }
 
     def __init__(self, trigger_type=None, period=None, operator=None, count=None):
-        """TriggerPolicy
+        r"""TriggerPolicy
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class TriggerPolicy:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this TriggerPolicy.
+        r"""Gets the trigger_type of this TriggerPolicy.
 
         触发类型，accumulative: 累计触发，immediately: 立即触发。
 
@@ -74,7 +74,7 @@ class TriggerPolicy:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this TriggerPolicy.
+        r"""Sets the trigger_type of this TriggerPolicy.
 
         触发类型，accumulative: 累计触发，immediately: 立即触发。
 
@@ -85,7 +85,7 @@ class TriggerPolicy:
 
     @property
     def period(self):
-        """Gets the period of this TriggerPolicy.
+        r"""Gets the period of this TriggerPolicy.
 
         触发周期，选择累计触发时需设置该参数，默认单位为s，支持5分钟、20分钟、1小时、4小时、24小时。
 
@@ -96,7 +96,7 @@ class TriggerPolicy:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this TriggerPolicy.
+        r"""Sets the period of this TriggerPolicy.
 
         触发周期，选择累计触发时需设置该参数，默认单位为s，支持5分钟、20分钟、1小时、4小时、24小时。
 
@@ -107,7 +107,7 @@ class TriggerPolicy:
 
     @property
     def operator(self):
-        """Gets the operator of this TriggerPolicy.
+        r"""Gets the operator of this TriggerPolicy.
 
         比较符，支持'>'和'>='。
 
@@ -118,7 +118,7 @@ class TriggerPolicy:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this TriggerPolicy.
+        r"""Sets the operator of this TriggerPolicy.
 
         比较符，支持'>'和'>='。
 
@@ -129,7 +129,7 @@ class TriggerPolicy:
 
     @property
     def count(self):
-        """Gets the count of this TriggerPolicy.
+        r"""Gets the count of this TriggerPolicy.
 
         触发次数，选择累计触发时需设置该参数。
 
@@ -140,7 +140,7 @@ class TriggerPolicy:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this TriggerPolicy.
+        r"""Sets the count of this TriggerPolicy.
 
         触发次数，选择累计触发时需设置该参数。
 

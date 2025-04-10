@@ -29,7 +29,7 @@ class UpdateTopicReq:
     }
 
     def __init__(self, read_queue_num=None, write_queue_num=None, permission=None):
-        """UpdateTopicReq
+        r"""UpdateTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateTopicReq:
 
     @property
     def read_queue_num(self):
-        """Gets the read_queue_num of this UpdateTopicReq.
+        r"""Gets the read_queue_num of this UpdateTopicReq.
 
         总读队列个数。
 
@@ -68,7 +68,7 @@ class UpdateTopicReq:
 
     @read_queue_num.setter
     def read_queue_num(self, read_queue_num):
-        """Sets the read_queue_num of this UpdateTopicReq.
+        r"""Sets the read_queue_num of this UpdateTopicReq.
 
         总读队列个数。
 
@@ -79,7 +79,7 @@ class UpdateTopicReq:
 
     @property
     def write_queue_num(self):
-        """Gets the write_queue_num of this UpdateTopicReq.
+        r"""Gets the write_queue_num of this UpdateTopicReq.
 
         总写队列个数。
 
@@ -90,7 +90,7 @@ class UpdateTopicReq:
 
     @write_queue_num.setter
     def write_queue_num(self, write_queue_num):
-        """Sets the write_queue_num of this UpdateTopicReq.
+        r"""Sets the write_queue_num of this UpdateTopicReq.
 
         总写队列个数。
 
@@ -101,7 +101,7 @@ class UpdateTopicReq:
 
     @property
     def permission(self):
-        """Gets the permission of this UpdateTopicReq.
+        r"""Gets the permission of this UpdateTopicReq.
 
         权限。
 
@@ -112,7 +112,7 @@ class UpdateTopicReq:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this UpdateTopicReq.
+        r"""Sets the permission of this UpdateTopicReq.
 
         权限。
 

@@ -29,7 +29,7 @@ class AddTestCaseCommentRequest:
     }
 
     def __init__(self, project_id=None, testcase_id=None, body=None):
-        """AddTestCaseCommentRequest
+        r"""AddTestCaseCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddTestCaseCommentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AddTestCaseCommentRequest.
+        r"""Gets the project_id of this AddTestCaseCommentRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class AddTestCaseCommentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AddTestCaseCommentRequest.
+        r"""Sets the project_id of this AddTestCaseCommentRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class AddTestCaseCommentRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this AddTestCaseCommentRequest.
+        r"""Gets the testcase_id of this AddTestCaseCommentRequest.
 
         用例uri
 
@@ -88,7 +88,7 @@ class AddTestCaseCommentRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this AddTestCaseCommentRequest.
+        r"""Sets the testcase_id of this AddTestCaseCommentRequest.
 
         用例uri
 
@@ -99,7 +99,7 @@ class AddTestCaseCommentRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddTestCaseCommentRequest.
+        r"""Gets the body of this AddTestCaseCommentRequest.
 
         :return: The body of this AddTestCaseCommentRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCaseCommentInfo`
@@ -108,7 +108,7 @@ class AddTestCaseCommentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddTestCaseCommentRequest.
+        r"""Sets the body of this AddTestCaseCommentRequest.
 
         :param body: The body of this AddTestCaseCommentRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.TestCaseCommentInfo`

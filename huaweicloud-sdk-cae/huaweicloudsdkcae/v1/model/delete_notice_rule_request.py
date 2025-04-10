@@ -27,7 +27,7 @@ class DeleteNoticeRuleRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, rule_id=None):
-        """DeleteNoticeRuleRequest
+        r"""DeleteNoticeRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteNoticeRuleRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this DeleteNoticeRuleRequest.
+        r"""Gets the x_enterprise_project_id of this DeleteNoticeRuleRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -60,7 +60,7 @@ class DeleteNoticeRuleRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this DeleteNoticeRuleRequest.
+        r"""Sets the x_enterprise_project_id of this DeleteNoticeRuleRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -71,7 +71,7 @@ class DeleteNoticeRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteNoticeRuleRequest.
+        r"""Gets the rule_id of this DeleteNoticeRuleRequest.
 
         :return: The rule_id of this DeleteNoticeRuleRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class DeleteNoticeRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteNoticeRuleRequest.
+        r"""Sets the rule_id of this DeleteNoticeRuleRequest.
 
         :param rule_id: The rule_id of this DeleteNoticeRuleRequest.
         :type rule_id: str

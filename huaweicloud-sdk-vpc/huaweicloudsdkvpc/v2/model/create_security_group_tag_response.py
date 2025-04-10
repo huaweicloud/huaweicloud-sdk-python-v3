@@ -24,7 +24,7 @@ class CreateSecurityGroupTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateSecurityGroupTagResponse
+        r"""CreateSecurityGroupTagResponse
 
         The model defined in huaweicloud sdk
 

@@ -47,7 +47,7 @@ class CreateGlobalConnectionBandwidth:
     }
 
     def __init__(self, name=None, description=None, bordercross=None, type=None, enterprise_project_id=None, tags=None, charge_mode=None, size=None, sla_level=None, local_area=None, remote_area=None, spec_code_id=None):
-        """CreateGlobalConnectionBandwidth
+        r"""CreateGlobalConnectionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -115,7 +115,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this CreateGlobalConnectionBandwidth.
+        r"""Gets the name of this CreateGlobalConnectionBandwidth.
 
         实例名字。
 
@@ -126,7 +126,7 @@ class CreateGlobalConnectionBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGlobalConnectionBandwidth.
+        r"""Sets the name of this CreateGlobalConnectionBandwidth.
 
         实例名字。
 
@@ -137,7 +137,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this CreateGlobalConnectionBandwidth.
+        r"""Gets the description of this CreateGlobalConnectionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -148,7 +148,7 @@ class CreateGlobalConnectionBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGlobalConnectionBandwidth.
+        r"""Sets the description of this CreateGlobalConnectionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -159,7 +159,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def bordercross(self):
-        """Gets the bordercross of this CreateGlobalConnectionBandwidth.
+        r"""Gets the bordercross of this CreateGlobalConnectionBandwidth.
 
         功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
 
@@ -170,7 +170,7 @@ class CreateGlobalConnectionBandwidth:
 
     @bordercross.setter
     def bordercross(self, bordercross):
-        """Sets the bordercross of this CreateGlobalConnectionBandwidth.
+        r"""Sets the bordercross of this CreateGlobalConnectionBandwidth.
 
         功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
 
@@ -181,7 +181,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def type(self):
-        """Gets the type of this CreateGlobalConnectionBandwidth.
+        r"""Gets the type of this CreateGlobalConnectionBandwidth.
 
         功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -192,7 +192,7 @@ class CreateGlobalConnectionBandwidth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateGlobalConnectionBandwidth.
+        r"""Sets the type of this CreateGlobalConnectionBandwidth.
 
         功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -203,7 +203,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateGlobalConnectionBandwidth.
+        r"""Gets the enterprise_project_id of this CreateGlobalConnectionBandwidth.
 
         实例所属企业项目ID。
 
@@ -214,7 +214,7 @@ class CreateGlobalConnectionBandwidth:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateGlobalConnectionBandwidth.
+        r"""Sets the enterprise_project_id of this CreateGlobalConnectionBandwidth.
 
         实例所属企业项目ID。
 
@@ -225,7 +225,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateGlobalConnectionBandwidth.
+        r"""Gets the tags of this CreateGlobalConnectionBandwidth.
 
         实例标签。
 
@@ -236,7 +236,7 @@ class CreateGlobalConnectionBandwidth:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateGlobalConnectionBandwidth.
+        r"""Sets the tags of this CreateGlobalConnectionBandwidth.
 
         实例标签。
 
@@ -247,7 +247,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateGlobalConnectionBandwidth.
+        r"""Gets the charge_mode of this CreateGlobalConnectionBandwidth.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -258,7 +258,7 @@ class CreateGlobalConnectionBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateGlobalConnectionBandwidth.
+        r"""Sets the charge_mode of this CreateGlobalConnectionBandwidth.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -269,7 +269,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this CreateGlobalConnectionBandwidth.
+        r"""Gets the size of this CreateGlobalConnectionBandwidth.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -280,7 +280,7 @@ class CreateGlobalConnectionBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateGlobalConnectionBandwidth.
+        r"""Sets the size of this CreateGlobalConnectionBandwidth.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -291,7 +291,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this CreateGlobalConnectionBandwidth.
+        r"""Gets the sla_level of this CreateGlobalConnectionBandwidth.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -302,7 +302,7 @@ class CreateGlobalConnectionBandwidth:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this CreateGlobalConnectionBandwidth.
+        r"""Sets the sla_level of this CreateGlobalConnectionBandwidth.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -313,7 +313,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def local_area(self):
-        """Gets the local_area of this CreateGlobalConnectionBandwidth.
+        r"""Gets the local_area of this CreateGlobalConnectionBandwidth.
 
         功能说明：本端接入点，配合remote_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -324,7 +324,7 @@ class CreateGlobalConnectionBandwidth:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this CreateGlobalConnectionBandwidth.
+        r"""Sets the local_area of this CreateGlobalConnectionBandwidth.
 
         功能说明：本端接入点，配合remote_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -335,7 +335,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this CreateGlobalConnectionBandwidth.
+        r"""Gets the remote_area of this CreateGlobalConnectionBandwidth.
 
         功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -346,7 +346,7 @@ class CreateGlobalConnectionBandwidth:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this CreateGlobalConnectionBandwidth.
+        r"""Sets the remote_area of this CreateGlobalConnectionBandwidth.
 
         功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -357,7 +357,7 @@ class CreateGlobalConnectionBandwidth:
 
     @property
     def spec_code_id(self):
-        """Gets the spec_code_id of this CreateGlobalConnectionBandwidth.
+        r"""Gets the spec_code_id of this CreateGlobalConnectionBandwidth.
 
         功能说明：线路规格编码UUID。
 
@@ -368,7 +368,7 @@ class CreateGlobalConnectionBandwidth:
 
     @spec_code_id.setter
     def spec_code_id(self, spec_code_id):
-        """Sets the spec_code_id of this CreateGlobalConnectionBandwidth.
+        r"""Sets the spec_code_id of this CreateGlobalConnectionBandwidth.
 
         功能说明：线路规格编码UUID。
 

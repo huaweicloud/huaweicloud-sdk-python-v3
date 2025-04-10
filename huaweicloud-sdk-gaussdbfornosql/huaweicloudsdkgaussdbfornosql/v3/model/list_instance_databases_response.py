@@ -28,7 +28,7 @@ class ListInstanceDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListInstanceDatabasesResponse
+        r"""ListInstanceDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceDatabasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListInstanceDatabasesResponse.
+        r"""Gets the databases of this ListInstanceDatabasesResponse.
 
         Redis实例数据库列表。
 
@@ -62,7 +62,7 @@ class ListInstanceDatabasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListInstanceDatabasesResponse.
+        r"""Sets the databases of this ListInstanceDatabasesResponse.
 
         Redis实例数据库列表。
 
@@ -73,7 +73,7 @@ class ListInstanceDatabasesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInstanceDatabasesResponse.
+        r"""Gets the total_count of this ListInstanceDatabasesResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListInstanceDatabasesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInstanceDatabasesResponse.
+        r"""Sets the total_count of this ListInstanceDatabasesResponse.
 
         总记录数。
 

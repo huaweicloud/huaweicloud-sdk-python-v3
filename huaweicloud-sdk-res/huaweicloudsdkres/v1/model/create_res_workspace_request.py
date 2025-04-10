@@ -27,7 +27,7 @@ class CreateResWorkspaceRequest:
     }
 
     def __init__(self, content_type=None, body=None):
-        """CreateResWorkspaceRequest
+        r"""CreateResWorkspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateResWorkspaceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateResWorkspaceRequest.
+        r"""Gets the content_type of this CreateResWorkspaceRequest.
 
         内容类型，取值为application/json。
 
@@ -60,7 +60,7 @@ class CreateResWorkspaceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateResWorkspaceRequest.
+        r"""Sets the content_type of this CreateResWorkspaceRequest.
 
         内容类型，取值为application/json。
 
@@ -71,7 +71,7 @@ class CreateResWorkspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResWorkspaceRequest.
+        r"""Gets the body of this CreateResWorkspaceRequest.
 
         :return: The body of this CreateResWorkspaceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequestBody`
@@ -80,7 +80,7 @@ class CreateResWorkspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResWorkspaceRequest.
+        r"""Sets the body of this CreateResWorkspaceRequest.
 
         :param body: The body of this CreateResWorkspaceRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequestBody`

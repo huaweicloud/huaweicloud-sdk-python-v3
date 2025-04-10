@@ -25,7 +25,7 @@ class ShowOperationalDataCurrentMonthUsingRequest:
     }
 
     def __init__(self, service_id=None):
-        """ShowOperationalDataCurrentMonthUsingRequest
+        r"""ShowOperationalDataCurrentMonthUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowOperationalDataCurrentMonthUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowOperationalDataCurrentMonthUsingRequest.
+        r"""Gets the service_id of this ShowOperationalDataCurrentMonthUsingRequest.
 
         服务id
 
@@ -53,7 +53,7 @@ class ShowOperationalDataCurrentMonthUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowOperationalDataCurrentMonthUsingRequest.
+        r"""Sets the service_id of this ShowOperationalDataCurrentMonthUsingRequest.
 
         服务id
 

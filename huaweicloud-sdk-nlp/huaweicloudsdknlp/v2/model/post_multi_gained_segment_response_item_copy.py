@@ -29,7 +29,7 @@ class PostMultiGainedSegmentResponseItemCopy:
     }
 
     def __init__(self, content=None, type=None, sub_contents=None):
-        """PostMultiGainedSegmentResponseItemCopy
+        r"""PostMultiGainedSegmentResponseItemCopy
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PostMultiGainedSegmentResponseItemCopy:
 
     @property
     def content(self):
-        """Gets the content of this PostMultiGainedSegmentResponseItemCopy.
+        r"""Gets the content of this PostMultiGainedSegmentResponseItemCopy.
 
         当前节点对应的文本内容
 
@@ -66,7 +66,7 @@ class PostMultiGainedSegmentResponseItemCopy:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PostMultiGainedSegmentResponseItemCopy.
+        r"""Sets the content of this PostMultiGainedSegmentResponseItemCopy.
 
         当前节点对应的文本内容
 
@@ -77,7 +77,7 @@ class PostMultiGainedSegmentResponseItemCopy:
 
     @property
     def type(self):
-        """Gets the type of this PostMultiGainedSegmentResponseItemCopy.
+        r"""Gets the type of this PostMultiGainedSegmentResponseItemCopy.
 
         文本类型，取值如下： WORD-词汇类型 CHAR-字符类型
 
@@ -88,7 +88,7 @@ class PostMultiGainedSegmentResponseItemCopy:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostMultiGainedSegmentResponseItemCopy.
+        r"""Sets the type of this PostMultiGainedSegmentResponseItemCopy.
 
         文本类型，取值如下： WORD-词汇类型 CHAR-字符类型
 
@@ -99,7 +99,7 @@ class PostMultiGainedSegmentResponseItemCopy:
 
     @property
     def sub_contents(self):
-        """Gets the sub_contents of this PostMultiGainedSegmentResponseItemCopy.
+        r"""Gets the sub_contents of this PostMultiGainedSegmentResponseItemCopy.
 
         当前节点的子节点列表
 
@@ -110,7 +110,7 @@ class PostMultiGainedSegmentResponseItemCopy:
 
     @sub_contents.setter
     def sub_contents(self, sub_contents):
-        """Sets the sub_contents of this PostMultiGainedSegmentResponseItemCopy.
+        r"""Sets the sub_contents of this PostMultiGainedSegmentResponseItemCopy.
 
         当前节点的子节点列表
 

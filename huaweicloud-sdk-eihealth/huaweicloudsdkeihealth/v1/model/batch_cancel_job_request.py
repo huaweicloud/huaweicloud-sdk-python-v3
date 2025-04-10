@@ -29,7 +29,7 @@ class BatchCancelJobRequest:
     }
 
     def __init__(self, x_force=None, eihealth_project_id=None, body=None):
-        """BatchCancelJobRequest
+        r"""BatchCancelJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchCancelJobRequest:
 
     @property
     def x_force(self):
-        """Gets the x_force of this BatchCancelJobRequest.
+        r"""Gets the x_force of this BatchCancelJobRequest.
 
         是否强制停止作业
 
@@ -67,7 +67,7 @@ class BatchCancelJobRequest:
 
     @x_force.setter
     def x_force(self, x_force):
-        """Sets the x_force of this BatchCancelJobRequest.
+        r"""Sets the x_force of this BatchCancelJobRequest.
 
         是否强制停止作业
 
@@ -78,7 +78,7 @@ class BatchCancelJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this BatchCancelJobRequest.
+        r"""Gets the eihealth_project_id of this BatchCancelJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -89,7 +89,7 @@ class BatchCancelJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this BatchCancelJobRequest.
+        r"""Sets the eihealth_project_id of this BatchCancelJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -100,7 +100,7 @@ class BatchCancelJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCancelJobRequest.
+        r"""Gets the body of this BatchCancelJobRequest.
 
         :return: The body of this BatchCancelJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobReq`
@@ -109,7 +109,7 @@ class BatchCancelJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCancelJobRequest.
+        r"""Sets the body of this BatchCancelJobRequest.
 
         :param body: The body of this BatchCancelJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobReq`

@@ -27,7 +27,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'agent_id_list': 'list[str]',
         'operating_system': 'str',
         'runtime_detection_status': 'str',
-        'process_whitelist': 'list[TrustProcessInfo]'
+        'process_whitelist': 'list[TrustProcessInfo]',
+        'ai_protection_status': 'str'
     }
 
     attribute_map = {
@@ -41,11 +42,12 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'agent_id_list': 'agent_id_list',
         'operating_system': 'operating_system',
         'runtime_detection_status': 'runtime_detection_status',
-        'process_whitelist': 'process_whitelist'
+        'process_whitelist': 'process_whitelist',
+        'ai_protection_status': 'ai_protection_status'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, agent_id_list=None, operating_system=None, runtime_detection_status=None, process_whitelist=None):
-        """UpdateProtectionPolicyInfoRequestInfo
+    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, agent_id_list=None, operating_system=None, runtime_detection_status=None, process_whitelist=None, ai_protection_status=None):
+        r"""UpdateProtectionPolicyInfoRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,6 +73,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type runtime_detection_status: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        :param ai_protection_status: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。            
+        :type ai_protection_status: str
         """
         
         
@@ -86,6 +90,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self._operating_system = None
         self._runtime_detection_status = None
         self._process_whitelist = None
+        self._ai_protection_status = None
         self.discriminator = None
 
         self.policy_id = policy_id
@@ -104,10 +109,12 @@ class UpdateProtectionPolicyInfoRequestInfo:
             self.runtime_detection_status = runtime_detection_status
         if process_whitelist is not None:
             self.process_whitelist = process_whitelist
+        if ai_protection_status is not None:
+            self.ai_protection_status = ai_protection_status
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
 
         策略ID
 
@@ -118,7 +125,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
 
         策略ID
 
@@ -129,7 +136,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the policy_name of this UpdateProtectionPolicyInfoRequestInfo.
 
         策略名称
 
@@ -140,7 +147,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the policy_name of this UpdateProtectionPolicyInfoRequestInfo.
 
         策略名称
 
@@ -151,7 +158,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def protection_mode(self):
-        """Gets the protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
 
         防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
@@ -162,7 +169,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @protection_mode.setter
     def protection_mode(self, protection_mode):
-        """Sets the protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
 
         防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
@@ -173,7 +180,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def bait_protection_status(self):
-        """Gets the bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
         是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -184,7 +191,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @bait_protection_status.setter
     def bait_protection_status(self, bait_protection_status):
-        """Sets the bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
         是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -195,7 +202,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def protection_directory(self):
-        """Gets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
         防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
 
@@ -206,7 +213,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @protection_directory.setter
     def protection_directory(self, protection_directory):
-        """Sets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
         防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
 
@@ -217,7 +224,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def protection_type(self):
-        """Gets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
         防护文件类型，例如：docx，txt，avi
 
@@ -228,7 +235,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @protection_type.setter
     def protection_type(self, protection_type):
-        """Sets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
         防护文件类型，例如：docx，txt，avi
 
@@ -239,7 +246,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def exclude_directory(self):
-        """Gets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
         排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
 
@@ -250,7 +257,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @exclude_directory.setter
     def exclude_directory(self, exclude_directory):
-        """Sets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
         排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
 
@@ -261,7 +268,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def agent_id_list(self):
-        """Gets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
         开启了此勒索防护策略的agent的id列表
 
@@ -272,7 +279,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @agent_id_list.setter
     def agent_id_list(self, agent_id_list):
-        """Sets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
         开启了此勒索防护策略的agent的id列表
 
@@ -283,7 +290,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
         支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
@@ -294,7 +301,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
         支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
@@ -305,7 +312,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def runtime_detection_status(self):
-        """Gets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
         是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
@@ -316,7 +323,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @runtime_detection_status.setter
     def runtime_detection_status(self, runtime_detection_status):
-        """Sets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
         是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
@@ -327,7 +334,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @property
     def process_whitelist(self):
-        """Gets the process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Gets the process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
 
         进程白名单
 
@@ -338,7 +345,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
     @process_whitelist.setter
     def process_whitelist(self, process_whitelist):
-        """Sets the process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
+        r"""Sets the process_whitelist of this UpdateProtectionPolicyInfoRequestInfo.
 
         进程白名单
 
@@ -346,6 +353,28 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         """
         self._process_whitelist = process_whitelist
+
+    @property
+    def ai_protection_status(self):
+        r"""Gets the ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
+
+        是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。            
+
+        :return: The ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
+        :rtype: str
+        """
+        return self._ai_protection_status
+
+    @ai_protection_status.setter
+    def ai_protection_status(self, ai_protection_status):
+        r"""Sets the ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
+
+        是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。            
+
+        :param ai_protection_status: The ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
+        :type ai_protection_status: str
+        """
+        self._ai_protection_status = ai_protection_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

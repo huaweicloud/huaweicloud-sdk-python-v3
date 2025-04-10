@@ -31,7 +31,7 @@ class OutputAssetInfo:
     }
 
     def __init__(self, asset_id=None, asset_name=None, cover_url=None, preview_video_url=None):
-        """OutputAssetInfo
+        r"""OutputAssetInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class OutputAssetInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this OutputAssetInfo.
+        r"""Gets the asset_id of this OutputAssetInfo.
 
         输出视频资产ID。
 
@@ -73,7 +73,7 @@ class OutputAssetInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this OutputAssetInfo.
+        r"""Sets the asset_id of this OutputAssetInfo.
 
         输出视频资产ID。
 
@@ -84,7 +84,7 @@ class OutputAssetInfo:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this OutputAssetInfo.
+        r"""Gets the asset_name of this OutputAssetInfo.
 
         输出视频资产名称。
 
@@ -95,7 +95,7 @@ class OutputAssetInfo:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this OutputAssetInfo.
+        r"""Sets the asset_name of this OutputAssetInfo.
 
         输出视频资产名称。
 
@@ -106,7 +106,7 @@ class OutputAssetInfo:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this OutputAssetInfo.
+        r"""Gets the cover_url of this OutputAssetInfo.
 
         视频封面URL。
 
@@ -117,7 +117,7 @@ class OutputAssetInfo:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this OutputAssetInfo.
+        r"""Sets the cover_url of this OutputAssetInfo.
 
         视频封面URL。
 
@@ -128,7 +128,7 @@ class OutputAssetInfo:
 
     @property
     def preview_video_url(self):
-        """Gets the preview_video_url of this OutputAssetInfo.
+        r"""Gets the preview_video_url of this OutputAssetInfo.
 
         预览视频下载URL。URL有效期24小时。 > * 分身数字人视频制作不支持预览。
 
@@ -139,7 +139,7 @@ class OutputAssetInfo:
 
     @preview_video_url.setter
     def preview_video_url(self, preview_video_url):
-        """Sets the preview_video_url of this OutputAssetInfo.
+        r"""Sets the preview_video_url of this OutputAssetInfo.
 
         预览视频下载URL。URL有效期24小时。 > * 分身数字人视频制作不支持预览。
 

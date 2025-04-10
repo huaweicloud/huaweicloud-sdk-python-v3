@@ -27,7 +27,7 @@ class RestResponse:
     }
 
     def __init__(self, return_code=None, return_desc=None):
-        """RestResponse
+        r"""RestResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestResponse:
 
     @property
     def return_code(self):
-        """Gets the return_code of this RestResponse.
+        r"""Gets the return_code of this RestResponse.
 
         结果码。
 
@@ -60,7 +60,7 @@ class RestResponse:
 
     @return_code.setter
     def return_code(self, return_code):
-        """Sets the return_code of this RestResponse.
+        r"""Sets the return_code of this RestResponse.
 
         结果码。
 
@@ -71,7 +71,7 @@ class RestResponse:
 
     @property
     def return_desc(self):
-        """Gets the return_desc of this RestResponse.
+        r"""Gets the return_desc of this RestResponse.
 
         结果描述。
 
@@ -82,7 +82,7 @@ class RestResponse:
 
     @return_desc.setter
     def return_desc(self, return_desc):
-        """Sets the return_desc of this RestResponse.
+        r"""Sets the return_desc of this RestResponse.
 
         结果描述。
 

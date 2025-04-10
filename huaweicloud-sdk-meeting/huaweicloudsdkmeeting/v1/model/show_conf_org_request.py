@@ -25,7 +25,7 @@ class ShowConfOrgRequest:
     }
 
     def __init__(self, conference_id=None):
-        """ShowConfOrgRequest
+        r"""ShowConfOrgRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConfOrgRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ShowConfOrgRequest.
+        r"""Gets the conference_id of this ShowConfOrgRequest.
 
         会议ID。
 
@@ -53,7 +53,7 @@ class ShowConfOrgRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ShowConfOrgRequest.
+        r"""Sets the conference_id of this ShowConfOrgRequest.
 
         会议ID。
 

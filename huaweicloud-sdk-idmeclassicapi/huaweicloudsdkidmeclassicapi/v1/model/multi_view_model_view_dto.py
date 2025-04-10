@@ -79,7 +79,7 @@ class MultiViewModelViewDTO:
     }
 
     def __init__(self, branch=None, check_out_time=None, check_out_user_name=None, class_name=None, create_time=None, creator=None, description=None, id=None, iteration=None, kiaguid=None, last_update_time=None, latest=None, latest_iteration=None, latest_version=None, master=None, modifier=None, name=None, pre_version_id=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, security_level=None, tenant=None, version=None, version_code=None, working_copy=None, working_state=None, item=None):
-        """MultiViewModelViewDTO
+        r"""MultiViewModelViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class MultiViewModelViewDTO:
 
     @property
     def branch(self):
-        """Gets the branch of this MultiViewModelViewDTO.
+        r"""Gets the branch of this MultiViewModelViewDTO.
 
         :return: The branch of this MultiViewModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelBranchViewDTO`
@@ -241,7 +241,7 @@ class MultiViewModelViewDTO:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this MultiViewModelViewDTO.
+        r"""Sets the branch of this MultiViewModelViewDTO.
 
         :param branch: The branch of this MultiViewModelViewDTO.
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelBranchViewDTO`
@@ -250,7 +250,7 @@ class MultiViewModelViewDTO:
 
     @property
     def check_out_time(self):
-        """Gets the check_out_time of this MultiViewModelViewDTO.
+        r"""Gets the check_out_time of this MultiViewModelViewDTO.
 
         **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -261,7 +261,7 @@ class MultiViewModelViewDTO:
 
     @check_out_time.setter
     def check_out_time(self, check_out_time):
-        """Sets the check_out_time of this MultiViewModelViewDTO.
+        r"""Sets the check_out_time of this MultiViewModelViewDTO.
 
         **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -272,7 +272,7 @@ class MultiViewModelViewDTO:
 
     @property
     def check_out_user_name(self):
-        """Gets the check_out_user_name of this MultiViewModelViewDTO.
+        r"""Gets the check_out_user_name of this MultiViewModelViewDTO.
 
         **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -283,7 +283,7 @@ class MultiViewModelViewDTO:
 
     @check_out_user_name.setter
     def check_out_user_name(self, check_out_user_name):
-        """Sets the check_out_user_name of this MultiViewModelViewDTO.
+        r"""Sets the check_out_user_name of this MultiViewModelViewDTO.
 
         **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -294,7 +294,7 @@ class MultiViewModelViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this MultiViewModelViewDTO.
+        r"""Gets the class_name of this MultiViewModelViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -305,7 +305,7 @@ class MultiViewModelViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this MultiViewModelViewDTO.
+        r"""Sets the class_name of this MultiViewModelViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -316,7 +316,7 @@ class MultiViewModelViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MultiViewModelViewDTO.
+        r"""Gets the create_time of this MultiViewModelViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -327,7 +327,7 @@ class MultiViewModelViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MultiViewModelViewDTO.
+        r"""Sets the create_time of this MultiViewModelViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -338,7 +338,7 @@ class MultiViewModelViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this MultiViewModelViewDTO.
+        r"""Gets the creator of this MultiViewModelViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -349,7 +349,7 @@ class MultiViewModelViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this MultiViewModelViewDTO.
+        r"""Sets the creator of this MultiViewModelViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -360,7 +360,7 @@ class MultiViewModelViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this MultiViewModelViewDTO.
+        r"""Gets the description of this MultiViewModelViewDTO.
 
         **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -371,7 +371,7 @@ class MultiViewModelViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MultiViewModelViewDTO.
+        r"""Sets the description of this MultiViewModelViewDTO.
 
         **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -382,7 +382,7 @@ class MultiViewModelViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this MultiViewModelViewDTO.
+        r"""Gets the id of this MultiViewModelViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -393,7 +393,7 @@ class MultiViewModelViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MultiViewModelViewDTO.
+        r"""Sets the id of this MultiViewModelViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -404,7 +404,7 @@ class MultiViewModelViewDTO:
 
     @property
     def iteration(self):
-        """Gets the iteration of this MultiViewModelViewDTO.
+        r"""Gets the iteration of this MultiViewModelViewDTO.
 
         **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -415,7 +415,7 @@ class MultiViewModelViewDTO:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this MultiViewModelViewDTO.
+        r"""Sets the iteration of this MultiViewModelViewDTO.
 
         **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -426,7 +426,7 @@ class MultiViewModelViewDTO:
 
     @property
     def kiaguid(self):
-        """Gets the kiaguid of this MultiViewModelViewDTO.
+        r"""Gets the kiaguid of this MultiViewModelViewDTO.
 
         **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -437,7 +437,7 @@ class MultiViewModelViewDTO:
 
     @kiaguid.setter
     def kiaguid(self, kiaguid):
-        """Sets the kiaguid of this MultiViewModelViewDTO.
+        r"""Sets the kiaguid of this MultiViewModelViewDTO.
 
         **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -448,7 +448,7 @@ class MultiViewModelViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this MultiViewModelViewDTO.
+        r"""Gets the last_update_time of this MultiViewModelViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -459,7 +459,7 @@ class MultiViewModelViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this MultiViewModelViewDTO.
+        r"""Sets the last_update_time of this MultiViewModelViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -470,7 +470,7 @@ class MultiViewModelViewDTO:
 
     @property
     def latest(self):
-        """Gets the latest of this MultiViewModelViewDTO.
+        r"""Gets the latest of this MultiViewModelViewDTO.
 
         **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
 
@@ -481,7 +481,7 @@ class MultiViewModelViewDTO:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this MultiViewModelViewDTO.
+        r"""Sets the latest of this MultiViewModelViewDTO.
 
         **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
 
@@ -492,7 +492,7 @@ class MultiViewModelViewDTO:
 
     @property
     def latest_iteration(self):
-        """Gets the latest_iteration of this MultiViewModelViewDTO.
+        r"""Gets the latest_iteration of this MultiViewModelViewDTO.
 
         **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  false。 
 
@@ -503,7 +503,7 @@ class MultiViewModelViewDTO:
 
     @latest_iteration.setter
     def latest_iteration(self, latest_iteration):
-        """Sets the latest_iteration of this MultiViewModelViewDTO.
+        r"""Sets the latest_iteration of this MultiViewModelViewDTO.
 
         **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  false。 
 
@@ -514,7 +514,7 @@ class MultiViewModelViewDTO:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this MultiViewModelViewDTO.
+        r"""Gets the latest_version of this MultiViewModelViewDTO.
 
         **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  false。 
 
@@ -525,7 +525,7 @@ class MultiViewModelViewDTO:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this MultiViewModelViewDTO.
+        r"""Sets the latest_version of this MultiViewModelViewDTO.
 
         **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  false。 
 
@@ -536,7 +536,7 @@ class MultiViewModelViewDTO:
 
     @property
     def master(self):
-        """Gets the master of this MultiViewModelViewDTO.
+        r"""Gets the master of this MultiViewModelViewDTO.
 
         :return: The master of this MultiViewModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelMasterViewDTO`
@@ -545,7 +545,7 @@ class MultiViewModelViewDTO:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this MultiViewModelViewDTO.
+        r"""Sets the master of this MultiViewModelViewDTO.
 
         :param master: The master of this MultiViewModelViewDTO.
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelMasterViewDTO`
@@ -554,7 +554,7 @@ class MultiViewModelViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this MultiViewModelViewDTO.
+        r"""Gets the modifier of this MultiViewModelViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -565,7 +565,7 @@ class MultiViewModelViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this MultiViewModelViewDTO.
+        r"""Sets the modifier of this MultiViewModelViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -576,7 +576,7 @@ class MultiViewModelViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this MultiViewModelViewDTO.
+        r"""Gets the name of this MultiViewModelViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -587,7 +587,7 @@ class MultiViewModelViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MultiViewModelViewDTO.
+        r"""Sets the name of this MultiViewModelViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -598,7 +598,7 @@ class MultiViewModelViewDTO:
 
     @property
     def pre_version_id(self):
-        """Gets the pre_version_id of this MultiViewModelViewDTO.
+        r"""Gets the pre_version_id of this MultiViewModelViewDTO.
 
         **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -609,7 +609,7 @@ class MultiViewModelViewDTO:
 
     @pre_version_id.setter
     def pre_version_id(self, pre_version_id):
-        """Sets the pre_version_id of this MultiViewModelViewDTO.
+        r"""Sets the pre_version_id of this MultiViewModelViewDTO.
 
         **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -620,7 +620,7 @@ class MultiViewModelViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this MultiViewModelViewDTO.
+        r"""Gets the rdm_delete_flag of this MultiViewModelViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -631,7 +631,7 @@ class MultiViewModelViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this MultiViewModelViewDTO.
+        r"""Sets the rdm_delete_flag of this MultiViewModelViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -642,7 +642,7 @@ class MultiViewModelViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this MultiViewModelViewDTO.
+        r"""Gets the rdm_extension_type of this MultiViewModelViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -653,7 +653,7 @@ class MultiViewModelViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this MultiViewModelViewDTO.
+        r"""Sets the rdm_extension_type of this MultiViewModelViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -664,7 +664,7 @@ class MultiViewModelViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this MultiViewModelViewDTO.
+        r"""Gets the rdm_version of this MultiViewModelViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -675,7 +675,7 @@ class MultiViewModelViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this MultiViewModelViewDTO.
+        r"""Sets the rdm_version of this MultiViewModelViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -686,7 +686,7 @@ class MultiViewModelViewDTO:
 
     @property
     def security_level(self):
-        """Gets the security_level of this MultiViewModelViewDTO.
+        r"""Gets the security_level of this MultiViewModelViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -697,7 +697,7 @@ class MultiViewModelViewDTO:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this MultiViewModelViewDTO.
+        r"""Sets the security_level of this MultiViewModelViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -708,7 +708,7 @@ class MultiViewModelViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this MultiViewModelViewDTO.
+        r"""Gets the tenant of this MultiViewModelViewDTO.
 
         :return: The tenant of this MultiViewModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -717,7 +717,7 @@ class MultiViewModelViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this MultiViewModelViewDTO.
+        r"""Sets the tenant of this MultiViewModelViewDTO.
 
         :param tenant: The tenant of this MultiViewModelViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -726,7 +726,7 @@ class MultiViewModelViewDTO:
 
     @property
     def version(self):
-        """Gets the version of this MultiViewModelViewDTO.
+        r"""Gets the version of this MultiViewModelViewDTO.
 
         **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -737,7 +737,7 @@ class MultiViewModelViewDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MultiViewModelViewDTO.
+        r"""Sets the version of this MultiViewModelViewDTO.
 
         **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -748,7 +748,7 @@ class MultiViewModelViewDTO:
 
     @property
     def version_code(self):
-        """Gets the version_code of this MultiViewModelViewDTO.
+        r"""Gets the version_code of this MultiViewModelViewDTO.
 
         **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -759,7 +759,7 @@ class MultiViewModelViewDTO:
 
     @version_code.setter
     def version_code(self, version_code):
-        """Sets the version_code of this MultiViewModelViewDTO.
+        r"""Sets the version_code of this MultiViewModelViewDTO.
 
         **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -770,7 +770,7 @@ class MultiViewModelViewDTO:
 
     @property
     def working_copy(self):
-        """Gets the working_copy of this MultiViewModelViewDTO.
+        r"""Gets the working_copy of this MultiViewModelViewDTO.
 
         **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  不涉及。 
 
@@ -781,7 +781,7 @@ class MultiViewModelViewDTO:
 
     @working_copy.setter
     def working_copy(self, working_copy):
-        """Sets the working_copy of this MultiViewModelViewDTO.
+        r"""Sets the working_copy of this MultiViewModelViewDTO.
 
         **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  不涉及。 
 
@@ -792,7 +792,7 @@ class MultiViewModelViewDTO:
 
     @property
     def working_state(self):
-        """Gets the working_state of this MultiViewModelViewDTO.
+        r"""Gets the working_state of this MultiViewModelViewDTO.
 
         :return: The working_state of this MultiViewModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.WorkingState`
@@ -801,7 +801,7 @@ class MultiViewModelViewDTO:
 
     @working_state.setter
     def working_state(self, working_state):
-        """Sets the working_state of this MultiViewModelViewDTO.
+        r"""Sets the working_state of this MultiViewModelViewDTO.
 
         :param working_state: The working_state of this MultiViewModelViewDTO.
         :type working_state: :class:`huaweicloudsdkidmeclassicapi.v1.WorkingState`
@@ -810,7 +810,7 @@ class MultiViewModelViewDTO:
 
     @property
     def item(self):
-        """Gets the item of this MultiViewModelViewDTO.
+        r"""Gets the item of this MultiViewModelViewDTO.
 
         :return: The item of this MultiViewModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewItemViewDTO`
@@ -819,7 +819,7 @@ class MultiViewModelViewDTO:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this MultiViewModelViewDTO.
+        r"""Sets the item of this MultiViewModelViewDTO.
 
         :param item: The item of this MultiViewModelViewDTO.
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewItemViewDTO`

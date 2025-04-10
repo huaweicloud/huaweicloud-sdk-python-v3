@@ -27,7 +27,7 @@ class CreateSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateSignatureKeyV2Request
+        r"""CreateSignatureKeyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSignatureKeyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSignatureKeyV2Request.
+        r"""Gets the instance_id of this CreateSignatureKeyV2Request.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateSignatureKeyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSignatureKeyV2Request.
+        r"""Sets the instance_id of this CreateSignatureKeyV2Request.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateSignatureKeyV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateSignatureKeyV2Request.
+        r"""Gets the body of this CreateSignatureKeyV2Request.
 
         :return: The body of this CreateSignatureKeyV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.BaseSignature`
@@ -80,7 +80,7 @@ class CreateSignatureKeyV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSignatureKeyV2Request.
+        r"""Sets the body of this CreateSignatureKeyV2Request.
 
         :param body: The body of this CreateSignatureKeyV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.BaseSignature`

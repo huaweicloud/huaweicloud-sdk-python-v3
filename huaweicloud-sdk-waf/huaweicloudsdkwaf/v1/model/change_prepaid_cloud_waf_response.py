@@ -26,7 +26,7 @@ class ChangePrepaidCloudWafResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """ChangePrepaidCloudWafResponse
+        r"""ChangePrepaidCloudWafResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangePrepaidCloudWafResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangePrepaidCloudWafResponse.
+        r"""Gets the order_id of this ChangePrepaidCloudWafResponse.
 
         订单id
 
@@ -55,7 +55,7 @@ class ChangePrepaidCloudWafResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangePrepaidCloudWafResponse.
+        r"""Sets the order_id of this ChangePrepaidCloudWafResponse.
 
         订单id
 

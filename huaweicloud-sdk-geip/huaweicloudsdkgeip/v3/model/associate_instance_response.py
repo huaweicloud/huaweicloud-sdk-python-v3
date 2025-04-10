@@ -30,7 +30,7 @@ class AssociateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, global_eip=None, job_id=None, x_request_id=None):
-        """AssociateInstanceResponse
+        r"""AssociateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AssociateInstanceResponse(SdkResponse):
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this AssociateInstanceResponse.
+        r"""Gets the global_eip of this AssociateInstanceResponse.
 
         :return: The global_eip of this AssociateInstanceResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEip`
@@ -67,7 +67,7 @@ class AssociateInstanceResponse(SdkResponse):
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this AssociateInstanceResponse.
+        r"""Sets the global_eip of this AssociateInstanceResponse.
 
         :param global_eip: The global_eip of this AssociateInstanceResponse.
         :type global_eip: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEip`
@@ -76,7 +76,7 @@ class AssociateInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AssociateInstanceResponse.
+        r"""Gets the job_id of this AssociateInstanceResponse.
 
         本次请求的job id
 
@@ -87,7 +87,7 @@ class AssociateInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AssociateInstanceResponse.
+        r"""Sets the job_id of this AssociateInstanceResponse.
 
         本次请求的job id
 
@@ -98,7 +98,7 @@ class AssociateInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AssociateInstanceResponse.
+        r"""Gets the x_request_id of this AssociateInstanceResponse.
 
         :return: The x_request_id of this AssociateInstanceResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class AssociateInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AssociateInstanceResponse.
+        r"""Sets the x_request_id of this AssociateInstanceResponse.
 
         :param x_request_id: The x_request_id of this AssociateInstanceResponse.
         :type x_request_id: str

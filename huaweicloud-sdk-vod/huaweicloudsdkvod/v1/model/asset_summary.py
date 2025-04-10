@@ -55,7 +55,7 @@ class AssetSummary:
     }
 
     def __init__(self, asset_id=None, title=None, description=None, duration=None, duration_ms=None, size=None, original_url=None, category=None, covers=None, create_time=None, asset_status=None, transcode_status=None, thumbnail_status=None, review_status=None, exec_desc=None, media_type=None):
-        """AssetSummary
+        r"""AssetSummary
 
         The model defined in huaweicloud sdk
 
@@ -143,7 +143,7 @@ class AssetSummary:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetSummary.
+        r"""Gets the asset_id of this AssetSummary.
 
         媒资ID。
 
@@ -154,7 +154,7 @@ class AssetSummary:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetSummary.
+        r"""Sets the asset_id of this AssetSummary.
 
         媒资ID。
 
@@ -165,7 +165,7 @@ class AssetSummary:
 
     @property
     def title(self):
-        """Gets the title of this AssetSummary.
+        r"""Gets the title of this AssetSummary.
 
         媒资标题。长度不超过128个字节，UTF-8编码。
 
@@ -176,7 +176,7 @@ class AssetSummary:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this AssetSummary.
+        r"""Sets the title of this AssetSummary.
 
         媒资标题。长度不超过128个字节，UTF-8编码。
 
@@ -187,7 +187,7 @@ class AssetSummary:
 
     @property
     def description(self):
-        """Gets the description of this AssetSummary.
+        r"""Gets the description of this AssetSummary.
 
         媒资描述。长度不超过1024个字节。
 
@@ -198,7 +198,7 @@ class AssetSummary:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AssetSummary.
+        r"""Sets the description of this AssetSummary.
 
         媒资描述。长度不超过1024个字节。
 
@@ -209,7 +209,7 @@ class AssetSummary:
 
     @property
     def duration(self):
-        """Gets the duration of this AssetSummary.
+        r"""Gets the duration of this AssetSummary.
 
         媒资时长。  单位：秒。
 
@@ -220,7 +220,7 @@ class AssetSummary:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this AssetSummary.
+        r"""Sets the duration of this AssetSummary.
 
         媒资时长。  单位：秒。
 
@@ -231,7 +231,7 @@ class AssetSummary:
 
     @property
     def duration_ms(self):
-        """Gets the duration_ms of this AssetSummary.
+        r"""Gets the duration_ms of this AssetSummary.
 
         视频时长，单位毫秒。
 
@@ -242,7 +242,7 @@ class AssetSummary:
 
     @duration_ms.setter
     def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this AssetSummary.
+        r"""Sets the duration_ms of this AssetSummary.
 
         视频时长，单位毫秒。
 
@@ -253,7 +253,7 @@ class AssetSummary:
 
     @property
     def size(self):
-        """Gets the size of this AssetSummary.
+        r"""Gets the size of this AssetSummary.
 
         媒资大小。  单位：字节。
 
@@ -264,7 +264,7 @@ class AssetSummary:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AssetSummary.
+        r"""Sets the size of this AssetSummary.
 
         媒资大小。  单位：字节。
 
@@ -275,7 +275,7 @@ class AssetSummary:
 
     @property
     def original_url(self):
-        """Gets the original_url of this AssetSummary.
+        r"""Gets the original_url of this AssetSummary.
 
         原始播放url。
 
@@ -286,7 +286,7 @@ class AssetSummary:
 
     @original_url.setter
     def original_url(self, original_url):
-        """Sets the original_url of this AssetSummary.
+        r"""Sets the original_url of this AssetSummary.
 
         原始播放url。
 
@@ -297,7 +297,7 @@ class AssetSummary:
 
     @property
     def category(self):
-        """Gets the category of this AssetSummary.
+        r"""Gets the category of this AssetSummary.
 
         媒资分类名称。
 
@@ -308,7 +308,7 @@ class AssetSummary:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AssetSummary.
+        r"""Sets the category of this AssetSummary.
 
         媒资分类名称。
 
@@ -319,7 +319,7 @@ class AssetSummary:
 
     @property
     def covers(self):
-        """Gets the covers of this AssetSummary.
+        r"""Gets the covers of this AssetSummary.
 
         封面信息。
 
@@ -330,7 +330,7 @@ class AssetSummary:
 
     @covers.setter
     def covers(self, covers):
-        """Sets the covers of this AssetSummary.
+        r"""Sets the covers of this AssetSummary.
 
         封面信息。
 
@@ -341,7 +341,7 @@ class AssetSummary:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AssetSummary.
+        r"""Gets the create_time of this AssetSummary.
 
         媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -352,7 +352,7 @@ class AssetSummary:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AssetSummary.
+        r"""Sets the create_time of this AssetSummary.
 
         媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -363,7 +363,7 @@ class AssetSummary:
 
     @property
     def asset_status(self):
-        """Gets the asset_status of this AssetSummary.
+        r"""Gets the asset_status of this AssetSummary.
 
         媒资状态。  取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
 
@@ -374,7 +374,7 @@ class AssetSummary:
 
     @asset_status.setter
     def asset_status(self, asset_status):
-        """Sets the asset_status of this AssetSummary.
+        r"""Sets the asset_status of this AssetSummary.
 
         媒资状态。  取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
 
@@ -385,7 +385,7 @@ class AssetSummary:
 
     @property
     def transcode_status(self):
-        """Gets the transcode_status of this AssetSummary.
+        r"""Gets the transcode_status of this AssetSummary.
 
         转码状态。  取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
 
@@ -396,7 +396,7 @@ class AssetSummary:
 
     @transcode_status.setter
     def transcode_status(self, transcode_status):
-        """Sets the transcode_status of this AssetSummary.
+        r"""Sets the transcode_status of this AssetSummary.
 
         转码状态。  取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
 
@@ -407,7 +407,7 @@ class AssetSummary:
 
     @property
     def thumbnail_status(self):
-        """Gets the thumbnail_status of this AssetSummary.
+        r"""Gets the thumbnail_status of this AssetSummary.
 
         截图状态。  取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
 
@@ -418,7 +418,7 @@ class AssetSummary:
 
     @thumbnail_status.setter
     def thumbnail_status(self, thumbnail_status):
-        """Sets the thumbnail_status of this AssetSummary.
+        r"""Sets the thumbnail_status of this AssetSummary.
 
         截图状态。  取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
 
@@ -429,7 +429,7 @@ class AssetSummary:
 
     @property
     def review_status(self):
-        """Gets the review_status of this AssetSummary.
+        r"""Gets the review_status of this AssetSummary.
 
         内容审核状态  取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
@@ -440,7 +440,7 @@ class AssetSummary:
 
     @review_status.setter
     def review_status(self, review_status):
-        """Sets the review_status of this AssetSummary.
+        r"""Sets the review_status of this AssetSummary.
 
         内容审核状态  取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
@@ -451,7 +451,7 @@ class AssetSummary:
 
     @property
     def exec_desc(self):
-        """Gets the exec_desc of this AssetSummary.
+        r"""Gets the exec_desc of this AssetSummary.
 
         媒资的任务执行描述汇总。  示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
 
@@ -462,7 +462,7 @@ class AssetSummary:
 
     @exec_desc.setter
     def exec_desc(self, exec_desc):
-        """Sets the exec_desc of this AssetSummary.
+        r"""Sets the exec_desc of this AssetSummary.
 
         媒资的任务执行描述汇总。  示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
 
@@ -473,7 +473,7 @@ class AssetSummary:
 
     @property
     def media_type(self):
-        """Gets the media_type of this AssetSummary.
+        r"""Gets the media_type of this AssetSummary.
 
         音视频文件的格式。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
@@ -484,7 +484,7 @@ class AssetSummary:
 
     @media_type.setter
     def media_type(self, media_type):
-        """Sets the media_type of this AssetSummary.
+        r"""Sets the media_type of this AssetSummary.
 
         音视频文件的格式。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 

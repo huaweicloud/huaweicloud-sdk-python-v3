@@ -33,7 +33,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
     }
 
     def __init__(self, tep_port=None, http_port=None, mysql_port=None, https_port=None, tep_secure_port=None):
-        """ChInstancesInfoRsponseInstancePortInfo
+        r"""ChInstancesInfoRsponseInstancePortInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @property
     def tep_port(self):
-        """Gets the tep_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Gets the tep_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         tep端口。取值范围：0~65535。
 
@@ -77,7 +77,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @tep_port.setter
     def tep_port(self, tep_port):
-        """Sets the tep_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Sets the tep_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         tep端口。取值范围：0~65535。
 
@@ -88,7 +88,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @property
     def http_port(self):
-        """Gets the http_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Gets the http_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         http端口。取值范围：0~65535。
 
@@ -99,7 +99,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @http_port.setter
     def http_port(self, http_port):
-        """Sets the http_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Sets the http_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         http端口。取值范围：0~65535。
 
@@ -110,7 +110,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @property
     def mysql_port(self):
-        """Gets the mysql_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Gets the mysql_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         MySql端口号。取值范围：0~65535。
 
@@ -121,7 +121,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @mysql_port.setter
     def mysql_port(self, mysql_port):
-        """Sets the mysql_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Sets the mysql_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         MySql端口号。取值范围：0~65535。
 
@@ -132,7 +132,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @property
     def https_port(self):
-        """Gets the https_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Gets the https_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         https端口号。取值范围：0~65535。
 
@@ -143,7 +143,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @https_port.setter
     def https_port(self, https_port):
-        """Sets the https_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Sets the https_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         https端口号。取值范围：0~65535。
 
@@ -154,7 +154,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @property
     def tep_secure_port(self):
-        """Gets the tep_secure_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Gets the tep_secure_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         tep安全端口。取值范围：0~65535。
 
@@ -165,7 +165,7 @@ class ChInstancesInfoRsponseInstancePortInfo:
 
     @tep_secure_port.setter
     def tep_secure_port(self, tep_secure_port):
-        """Sets the tep_secure_port of this ChInstancesInfoRsponseInstancePortInfo.
+        r"""Sets the tep_secure_port of this ChInstancesInfoRsponseInstancePortInfo.
 
         tep安全端口。取值范围：0~65535。
 

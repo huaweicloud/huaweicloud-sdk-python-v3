@@ -31,7 +31,7 @@ class StartResourceScanReqBody:
     }
 
     def __init__(self, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_urn=None):
-        """StartResourceScanReqBody
+        r"""StartResourceScanReqBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class StartResourceScanReqBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this StartResourceScanReqBody.
+        r"""Gets the resource_id of this StartResourceScanReqBody.
 
         资源的唯一标识符。
 
@@ -73,7 +73,7 @@ class StartResourceScanReqBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this StartResourceScanReqBody.
+        r"""Sets the resource_id of this StartResourceScanReqBody.
 
         资源的唯一标识符。
 
@@ -84,7 +84,7 @@ class StartResourceScanReqBody:
 
     @property
     def resource_owner_account(self):
-        """Gets the resource_owner_account of this StartResourceScanReqBody.
+        r"""Gets the resource_owner_account of this StartResourceScanReqBody.
 
         拥有资源的账号ID。
 
@@ -95,7 +95,7 @@ class StartResourceScanReqBody:
 
     @resource_owner_account.setter
     def resource_owner_account(self, resource_owner_account):
-        """Sets the resource_owner_account of this StartResourceScanReqBody.
+        r"""Sets the resource_owner_account of this StartResourceScanReqBody.
 
         拥有资源的账号ID。
 
@@ -106,7 +106,7 @@ class StartResourceScanReqBody:
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this StartResourceScanReqBody.
+        r"""Gets the resource_project_id of this StartResourceScanReqBody.
 
         资源所属的项目标识符
 
@@ -117,7 +117,7 @@ class StartResourceScanReqBody:
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this StartResourceScanReqBody.
+        r"""Sets the resource_project_id of this StartResourceScanReqBody.
 
         资源所属的项目标识符
 
@@ -128,7 +128,7 @@ class StartResourceScanReqBody:
 
     @property
     def resource_urn(self):
-        """Gets the resource_urn of this StartResourceScanReqBody.
+        r"""Gets the resource_urn of this StartResourceScanReqBody.
 
         资源的唯一资源标识符。
 
@@ -139,7 +139,7 @@ class StartResourceScanReqBody:
 
     @resource_urn.setter
     def resource_urn(self, resource_urn):
-        """Sets the resource_urn of this StartResourceScanReqBody.
+        r"""Sets the resource_urn of this StartResourceScanReqBody.
 
         资源的唯一资源标识符。
 

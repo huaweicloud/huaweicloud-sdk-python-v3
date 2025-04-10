@@ -27,7 +27,7 @@ class OrgPeer:
     }
 
     def __init__(self, name=None, node_count=None):
-        """OrgPeer
+        r"""OrgPeer
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OrgPeer:
 
     @property
     def name(self):
-        """Gets the name of this OrgPeer.
+        r"""Gets the name of this OrgPeer.
 
         组织名称
 
@@ -59,7 +59,7 @@ class OrgPeer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrgPeer.
+        r"""Sets the name of this OrgPeer.
 
         组织名称
 
@@ -70,7 +70,7 @@ class OrgPeer:
 
     @property
     def node_count(self):
-        """Gets the node_count of this OrgPeer.
+        r"""Gets the node_count of this OrgPeer.
 
         组织节点数
 
@@ -81,7 +81,7 @@ class OrgPeer:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this OrgPeer.
+        r"""Sets the node_count of this OrgPeer.
 
         组织节点数
 

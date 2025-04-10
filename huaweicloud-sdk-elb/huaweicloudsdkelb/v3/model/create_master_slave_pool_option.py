@@ -55,7 +55,7 @@ class CreateMasterSlavePoolOption:
     }
 
     def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None):
-        """CreateMasterSlavePoolOption
+        r"""CreateMasterSlavePoolOption
 
         The model defined in huaweicloud sdk
 
@@ -143,7 +143,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateMasterSlavePoolOption.
+        r"""Gets the description of this CreateMasterSlavePoolOption.
 
         后端服务器组的描述信息。
 
@@ -154,7 +154,7 @@ class CreateMasterSlavePoolOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateMasterSlavePoolOption.
+        r"""Sets the description of this CreateMasterSlavePoolOption.
 
         后端服务器组的描述信息。
 
@@ -165,7 +165,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this CreateMasterSlavePoolOption.
+        r"""Gets the lb_algorithm of this CreateMasterSlavePoolOption.
 
         后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -176,7 +176,7 @@ class CreateMasterSlavePoolOption:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this CreateMasterSlavePoolOption.
+        r"""Sets the lb_algorithm of this CreateMasterSlavePoolOption.
 
         后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -187,7 +187,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreateMasterSlavePoolOption.
+        r"""Gets the loadbalancer_id of this CreateMasterSlavePoolOption.
 
         后端服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
@@ -198,7 +198,7 @@ class CreateMasterSlavePoolOption:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreateMasterSlavePoolOption.
+        r"""Sets the loadbalancer_id of this CreateMasterSlavePoolOption.
 
         后端服务器组关联的LB的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
@@ -209,7 +209,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreateMasterSlavePoolOption.
+        r"""Gets the listener_id of this CreateMasterSlavePoolOption.
 
         后端服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
@@ -220,7 +220,7 @@ class CreateMasterSlavePoolOption:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreateMasterSlavePoolOption.
+        r"""Sets the listener_id of this CreateMasterSlavePoolOption.
 
         后端服务器组关联的监听器的ID。  使用说明：listener_id，loadbalancer_id，type至少指定一个。
 
@@ -231,7 +231,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateMasterSlavePoolOption.
+        r"""Gets the name of this CreateMasterSlavePoolOption.
 
         后端服务器组的名称。
 
@@ -242,7 +242,7 @@ class CreateMasterSlavePoolOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMasterSlavePoolOption.
+        r"""Sets the name of this CreateMasterSlavePoolOption.
 
         后端服务器组的名称。
 
@@ -253,7 +253,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateMasterSlavePoolOption.
+        r"""Gets the project_id of this CreateMasterSlavePoolOption.
 
         后端服务器组所属的项目ID。
 
@@ -264,7 +264,7 @@ class CreateMasterSlavePoolOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateMasterSlavePoolOption.
+        r"""Sets the project_id of this CreateMasterSlavePoolOption.
 
         后端服务器组所属的项目ID。
 
@@ -275,7 +275,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateMasterSlavePoolOption.
+        r"""Gets the protocol of this CreateMasterSlavePoolOption.
 
         后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -286,7 +286,7 @@ class CreateMasterSlavePoolOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateMasterSlavePoolOption.
+        r"""Sets the protocol of this CreateMasterSlavePoolOption.
 
         后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP（且只能使用ip_version为v4的TCP pool）。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -297,7 +297,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def session_persistence(self):
-        """Gets the session_persistence of this CreateMasterSlavePoolOption.
+        r"""Gets the session_persistence of this CreateMasterSlavePoolOption.
 
         :return: The session_persistence of this CreateMasterSlavePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
@@ -306,7 +306,7 @@ class CreateMasterSlavePoolOption:
 
     @session_persistence.setter
     def session_persistence(self, session_persistence):
-        """Sets the session_persistence of this CreateMasterSlavePoolOption.
+        r"""Sets the session_persistence of this CreateMasterSlavePoolOption.
 
         :param session_persistence: The session_persistence of this CreateMasterSlavePoolOption.
         :type session_persistence: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
@@ -315,7 +315,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateMasterSlavePoolOption.
+        r"""Gets the vpc_id of this CreateMasterSlavePoolOption.
 
         后端服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
 
@@ -326,7 +326,7 @@ class CreateMasterSlavePoolOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateMasterSlavePoolOption.
+        r"""Sets the vpc_id of this CreateMasterSlavePoolOption.
 
         后端服务器组关联的虚拟私有云的ID。  指定了vpc_id的约束： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。  没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
 
@@ -337,7 +337,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def type(self):
-        """Gets the type of this CreateMasterSlavePoolOption.
+        r"""Gets the type of this CreateMasterSlavePoolOption.
 
         后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。
 
@@ -348,7 +348,7 @@ class CreateMasterSlavePoolOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateMasterSlavePoolOption.
+        r"""Sets the type of this CreateMasterSlavePoolOption.
 
         后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。
 
@@ -359,7 +359,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreateMasterSlavePoolOption.
+        r"""Gets the ip_version of this CreateMasterSlavePoolOption.
 
         后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
@@ -370,7 +370,7 @@ class CreateMasterSlavePoolOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreateMasterSlavePoolOption.
+        r"""Sets the ip_version of this CreateMasterSlavePoolOption.
 
         后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
@@ -381,7 +381,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def members(self):
-        """Gets the members of this CreateMasterSlavePoolOption.
+        r"""Gets the members of this CreateMasterSlavePoolOption.
 
         主备主机组的后端服务器。 只能添加2个后端服务器，必须有一个为主，一个为备。
 
@@ -392,7 +392,7 @@ class CreateMasterSlavePoolOption:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this CreateMasterSlavePoolOption.
+        r"""Sets the members of this CreateMasterSlavePoolOption.
 
         主备主机组的后端服务器。 只能添加2个后端服务器，必须有一个为主，一个为备。
 
@@ -403,7 +403,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this CreateMasterSlavePoolOption.
+        r"""Gets the healthmonitor of this CreateMasterSlavePoolOption.
 
         :return: The healthmonitor of this CreateMasterSlavePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateMasterSlaveHealthMonitorOption`
@@ -412,7 +412,7 @@ class CreateMasterSlavePoolOption:
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this CreateMasterSlavePoolOption.
+        r"""Sets the healthmonitor of this CreateMasterSlavePoolOption.
 
         :param healthmonitor: The healthmonitor of this CreateMasterSlavePoolOption.
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.CreateMasterSlaveHealthMonitorOption`
@@ -421,7 +421,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def any_port_enable(self):
-        """Gets the any_port_enable of this CreateMasterSlavePoolOption.
+        r"""Gets the any_port_enable of this CreateMasterSlavePoolOption.
 
         后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
 
@@ -432,7 +432,7 @@ class CreateMasterSlavePoolOption:
 
     @any_port_enable.setter
     def any_port_enable(self, any_port_enable):
-        """Sets the any_port_enable of this CreateMasterSlavePoolOption.
+        r"""Sets the any_port_enable of this CreateMasterSlavePoolOption.
 
         后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
 
@@ -443,7 +443,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def connection_drain(self):
-        """Gets the connection_drain of this CreateMasterSlavePoolOption.
+        r"""Gets the connection_drain of this CreateMasterSlavePoolOption.
 
         :return: The connection_drain of this CreateMasterSlavePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -452,7 +452,7 @@ class CreateMasterSlavePoolOption:
 
     @connection_drain.setter
     def connection_drain(self, connection_drain):
-        """Sets the connection_drain of this CreateMasterSlavePoolOption.
+        r"""Sets the connection_drain of this CreateMasterSlavePoolOption.
 
         :param connection_drain: The connection_drain of this CreateMasterSlavePoolOption.
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -461,7 +461,7 @@ class CreateMasterSlavePoolOption:
 
     @property
     def quic_cid_hash_strategy(self):
-        """Gets the quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
+        r"""Gets the quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
 
         :return: The quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
@@ -470,7 +470,7 @@ class CreateMasterSlavePoolOption:
 
     @quic_cid_hash_strategy.setter
     def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
-        """Sets the quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
+        r"""Sets the quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
 
         :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this CreateMasterSlavePoolOption.
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`

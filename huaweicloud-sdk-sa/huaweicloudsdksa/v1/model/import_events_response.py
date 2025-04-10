@@ -24,7 +24,7 @@ class ImportEventsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ImportEventsResponse
+        r"""ImportEventsResponse
 
         The model defined in huaweicloud sdk
 

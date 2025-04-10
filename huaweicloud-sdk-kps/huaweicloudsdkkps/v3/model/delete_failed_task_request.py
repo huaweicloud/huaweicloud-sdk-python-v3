@@ -25,7 +25,7 @@ class DeleteFailedTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteFailedTaskRequest
+        r"""DeleteFailedTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFailedTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteFailedTaskRequest.
+        r"""Gets the task_id of this DeleteFailedTaskRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class DeleteFailedTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteFailedTaskRequest.
+        r"""Sets the task_id of this DeleteFailedTaskRequest.
 
         任务ID
 

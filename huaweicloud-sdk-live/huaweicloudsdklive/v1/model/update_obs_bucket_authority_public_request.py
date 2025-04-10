@@ -25,7 +25,7 @@ class UpdateObsBucketAuthorityPublicRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateObsBucketAuthorityPublicRequest
+        r"""UpdateObsBucketAuthorityPublicRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateObsBucketAuthorityPublicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateObsBucketAuthorityPublicRequest.
+        r"""Gets the body of this UpdateObsBucketAuthorityPublicRequest.
 
         :return: The body of this UpdateObsBucketAuthorityPublicRequest.
         :rtype: :class:`huaweicloudsdklive.v1.ObsAuthorityConfigV2`
@@ -52,7 +52,7 @@ class UpdateObsBucketAuthorityPublicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateObsBucketAuthorityPublicRequest.
+        r"""Sets the body of this UpdateObsBucketAuthorityPublicRequest.
 
         :param body: The body of this UpdateObsBucketAuthorityPublicRequest.
         :type body: :class:`huaweicloudsdklive.v1.ObsAuthorityConfigV2`

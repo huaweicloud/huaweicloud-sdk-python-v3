@@ -23,7 +23,7 @@ class ShowAgenciesTaskRequest:
     }
 
     def __init__(self):
-        """ShowAgenciesTaskRequest
+        r"""ShowAgenciesTaskRequest
 
         The model defined in huaweicloud sdk
 

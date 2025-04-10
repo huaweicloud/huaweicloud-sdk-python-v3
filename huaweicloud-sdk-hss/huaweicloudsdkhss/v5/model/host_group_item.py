@@ -37,7 +37,7 @@ class HostGroupItem:
     }
 
     def __init__(self, group_id=None, group_name=None, host_num=None, risk_host_num=None, unprotect_host_num=None, host_id_list=None, is_outside=None):
-        """HostGroupItem
+        r"""HostGroupItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class HostGroupItem:
 
     @property
     def group_id(self):
-        """Gets the group_id of this HostGroupItem.
+        r"""Gets the group_id of this HostGroupItem.
 
         服务器组ID
 
@@ -96,7 +96,7 @@ class HostGroupItem:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this HostGroupItem.
+        r"""Sets the group_id of this HostGroupItem.
 
         服务器组ID
 
@@ -107,7 +107,7 @@ class HostGroupItem:
 
     @property
     def group_name(self):
-        """Gets the group_name of this HostGroupItem.
+        r"""Gets the group_name of this HostGroupItem.
 
         服务器组名称
 
@@ -118,7 +118,7 @@ class HostGroupItem:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this HostGroupItem.
+        r"""Sets the group_name of this HostGroupItem.
 
         服务器组名称
 
@@ -129,7 +129,7 @@ class HostGroupItem:
 
     @property
     def host_num(self):
-        """Gets the host_num of this HostGroupItem.
+        r"""Gets the host_num of this HostGroupItem.
 
         关联服务器数
 
@@ -140,7 +140,7 @@ class HostGroupItem:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this HostGroupItem.
+        r"""Sets the host_num of this HostGroupItem.
 
         关联服务器数
 
@@ -151,7 +151,7 @@ class HostGroupItem:
 
     @property
     def risk_host_num(self):
-        """Gets the risk_host_num of this HostGroupItem.
+        r"""Gets the risk_host_num of this HostGroupItem.
 
         有风险服务器数
 
@@ -162,7 +162,7 @@ class HostGroupItem:
 
     @risk_host_num.setter
     def risk_host_num(self, risk_host_num):
-        """Sets the risk_host_num of this HostGroupItem.
+        r"""Sets the risk_host_num of this HostGroupItem.
 
         有风险服务器数
 
@@ -173,7 +173,7 @@ class HostGroupItem:
 
     @property
     def unprotect_host_num(self):
-        """Gets the unprotect_host_num of this HostGroupItem.
+        r"""Gets the unprotect_host_num of this HostGroupItem.
 
         未防护服务器数
 
@@ -184,7 +184,7 @@ class HostGroupItem:
 
     @unprotect_host_num.setter
     def unprotect_host_num(self, unprotect_host_num):
-        """Sets the unprotect_host_num of this HostGroupItem.
+        r"""Sets the unprotect_host_num of this HostGroupItem.
 
         未防护服务器数
 
@@ -195,7 +195,7 @@ class HostGroupItem:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this HostGroupItem.
+        r"""Gets the host_id_list of this HostGroupItem.
 
         服务器ID列表
 
@@ -206,7 +206,7 @@ class HostGroupItem:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this HostGroupItem.
+        r"""Sets the host_id_list of this HostGroupItem.
 
         服务器ID列表
 
@@ -217,7 +217,7 @@ class HostGroupItem:
 
     @property
     def is_outside(self):
-        """Gets the is_outside of this HostGroupItem.
+        r"""Gets the is_outside of this HostGroupItem.
 
         是否是线下数据中心服务器组
 
@@ -228,7 +228,7 @@ class HostGroupItem:
 
     @is_outside.setter
     def is_outside(self, is_outside):
-        """Sets the is_outside of this HostGroupItem.
+        r"""Sets the is_outside of this HostGroupItem.
 
         是否是线下数据中心服务器组
 

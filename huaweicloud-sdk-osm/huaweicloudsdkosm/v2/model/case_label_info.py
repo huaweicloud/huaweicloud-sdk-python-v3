@@ -29,7 +29,7 @@ class CaseLabelInfo:
     }
 
     def __init__(self, label_id=None, name=None, color=None):
-        """CaseLabelInfo
+        r"""CaseLabelInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseLabelInfo:
 
     @property
     def label_id(self):
-        """Gets the label_id of this CaseLabelInfo.
+        r"""Gets the label_id of this CaseLabelInfo.
 
         标签标识
 
@@ -68,7 +68,7 @@ class CaseLabelInfo:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this CaseLabelInfo.
+        r"""Sets the label_id of this CaseLabelInfo.
 
         标签标识
 
@@ -79,7 +79,7 @@ class CaseLabelInfo:
 
     @property
     def name(self):
-        """Gets the name of this CaseLabelInfo.
+        r"""Gets the name of this CaseLabelInfo.
 
         标签名称
 
@@ -90,7 +90,7 @@ class CaseLabelInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaseLabelInfo.
+        r"""Sets the name of this CaseLabelInfo.
 
         标签名称
 
@@ -101,7 +101,7 @@ class CaseLabelInfo:
 
     @property
     def color(self):
-        """Gets the color of this CaseLabelInfo.
+        r"""Gets the color of this CaseLabelInfo.
 
         标签颜色
 
@@ -112,7 +112,7 @@ class CaseLabelInfo:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this CaseLabelInfo.
+        r"""Sets the color of this CaseLabelInfo.
 
         标签颜色
 

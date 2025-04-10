@@ -25,7 +25,7 @@ class PreSplitKeyOptions:
     }
 
     def __init__(self, range_split_points=None):
-        """PreSplitKeyOptions
+        r"""PreSplitKeyOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PreSplitKeyOptions:
 
     @property
     def range_split_points(self):
-        """Gets the range_split_points of this PreSplitKeyOptions.
+        r"""Gets the range_split_points of this PreSplitKeyOptions.
 
         在range分区模式有效，最大10个。
 
@@ -54,7 +54,7 @@ class PreSplitKeyOptions:
 
     @range_split_points.setter
     def range_split_points(self, range_split_points):
-        """Sets the range_split_points of this PreSplitKeyOptions.
+        r"""Sets the range_split_points of this PreSplitKeyOptions.
 
         在range分区模式有效，最大10个。
 

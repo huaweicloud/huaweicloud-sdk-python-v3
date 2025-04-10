@@ -25,7 +25,7 @@ class AsyncActionBaseResp:
     }
 
     def __init__(self, query_id=None):
-        """AsyncActionBaseResp
+        r"""AsyncActionBaseResp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AsyncActionBaseResp:
 
     @property
     def query_id(self):
-        """Gets the query_id of this AsyncActionBaseResp.
+        r"""Gets the query_id of this AsyncActionBaseResp.
 
         异步操作任务响应查询ID。
 
@@ -53,7 +53,7 @@ class AsyncActionBaseResp:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this AsyncActionBaseResp.
+        r"""Sets the query_id of this AsyncActionBaseResp.
 
         异步操作任务响应查询ID。
 

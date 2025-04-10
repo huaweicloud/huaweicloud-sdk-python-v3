@@ -34,7 +34,7 @@ class ImageSearchAsyncClient(Client):
         return client_builder
 
     def run_add_data_async(self, request):
-        """添加数据
+        r"""添加数据
 
         添加数据到指定服务实例中。
         
@@ -101,7 +101,7 @@ class ImageSearchAsyncClient(Client):
         return http_info
 
     def run_check_data_async(self, request):
-        """检查数据
+        r"""检查数据
 
         检查指定服务实例中的对应数据，支持指定ID检查和条件检查。
         
@@ -168,7 +168,7 @@ class ImageSearchAsyncClient(Client):
         return http_info
 
     def run_delete_data_async(self, request):
-        """删除数据
+        r"""删除数据
 
         删除指定服务实例中的对应数据，支持指定ID删除和条件删除。
         
@@ -235,7 +235,7 @@ class ImageSearchAsyncClient(Client):
         return http_info
 
     def run_search_async(self, request):
-        """搜索
+        r"""搜索
 
         从指定服务实例中进行搜索。
         
@@ -302,7 +302,7 @@ class ImageSearchAsyncClient(Client):
         return http_info
 
     def run_update_data_async(self, request):
-        """更新数据
+        r"""更新数据
 
         更新指定服务实例中的对应数据。
         

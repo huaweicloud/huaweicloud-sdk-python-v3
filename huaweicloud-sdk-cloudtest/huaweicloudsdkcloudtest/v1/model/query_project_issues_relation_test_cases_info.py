@@ -27,7 +27,7 @@ class QueryProjectIssuesRelationTestCasesInfo:
     }
 
     def __init__(self, page_no=None, page_size=None):
-        """QueryProjectIssuesRelationTestCasesInfo
+        r"""QueryProjectIssuesRelationTestCasesInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryProjectIssuesRelationTestCasesInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this QueryProjectIssuesRelationTestCasesInfo.
+        r"""Gets the page_no of this QueryProjectIssuesRelationTestCasesInfo.
 
         页码
 
@@ -59,7 +59,7 @@ class QueryProjectIssuesRelationTestCasesInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this QueryProjectIssuesRelationTestCasesInfo.
+        r"""Sets the page_no of this QueryProjectIssuesRelationTestCasesInfo.
 
         页码
 
@@ -70,7 +70,7 @@ class QueryProjectIssuesRelationTestCasesInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryProjectIssuesRelationTestCasesInfo.
+        r"""Gets the page_size of this QueryProjectIssuesRelationTestCasesInfo.
 
         每页数量
 
@@ -81,7 +81,7 @@ class QueryProjectIssuesRelationTestCasesInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryProjectIssuesRelationTestCasesInfo.
+        r"""Sets the page_size of this QueryProjectIssuesRelationTestCasesInfo.
 
         每页数量
 

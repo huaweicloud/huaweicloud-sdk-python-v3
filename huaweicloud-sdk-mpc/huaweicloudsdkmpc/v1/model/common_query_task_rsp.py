@@ -25,7 +25,7 @@ class CommonQueryTaskRsp:
     }
 
     def __init__(self, total=None):
-        """CommonQueryTaskRsp
+        r"""CommonQueryTaskRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommonQueryTaskRsp:
 
     @property
     def total(self):
-        """Gets the total of this CommonQueryTaskRsp.
+        r"""Gets the total of this CommonQueryTaskRsp.
 
         任务总数
 
@@ -54,7 +54,7 @@ class CommonQueryTaskRsp:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CommonQueryTaskRsp.
+        r"""Sets the total of this CommonQueryTaskRsp.
 
         任务总数
 

@@ -28,7 +28,7 @@ class CreateDialogUrlResponse(SdkResponse):
     }
 
     def __init__(self, url=None, x_request_id=None):
-        """CreateDialogUrlResponse
+        r"""CreateDialogUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDialogUrlResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this CreateDialogUrlResponse.
+        r"""Gets the url of this CreateDialogUrlResponse.
 
         对话链接。
 
@@ -62,7 +62,7 @@ class CreateDialogUrlResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateDialogUrlResponse.
+        r"""Sets the url of this CreateDialogUrlResponse.
 
         对话链接。
 
@@ -73,7 +73,7 @@ class CreateDialogUrlResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateDialogUrlResponse.
+        r"""Gets the x_request_id of this CreateDialogUrlResponse.
 
         :return: The x_request_id of this CreateDialogUrlResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateDialogUrlResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateDialogUrlResponse.
+        r"""Sets the x_request_id of this CreateDialogUrlResponse.
 
         :param x_request_id: The x_request_id of this CreateDialogUrlResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class UpdateBaremetalServerMetadataReq:
     }
 
     def __init__(self, metadata=None):
-        """UpdateBaremetalServerMetadataReq
+        r"""UpdateBaremetalServerMetadataReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBaremetalServerMetadataReq:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateBaremetalServerMetadataReq.
+        r"""Gets the metadata of this UpdateBaremetalServerMetadataReq.
 
         用户自定义metadata键值对。  结构体允许为空，取值为空时不更新数据。
 
@@ -53,7 +53,7 @@ class UpdateBaremetalServerMetadataReq:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateBaremetalServerMetadataReq.
+        r"""Sets the metadata of this UpdateBaremetalServerMetadataReq.
 
         用户自定义metadata键值对。  结构体允许为空，取值为空时不更新数据。
 

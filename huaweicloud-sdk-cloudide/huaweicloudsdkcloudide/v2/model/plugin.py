@@ -27,7 +27,7 @@ class Plugin:
     }
 
     def __init__(self, attribute=None, name=None):
-        """Plugin
+        r"""Plugin
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Plugin:
 
     @property
     def attribute(self):
-        """Gets the attribute of this Plugin.
+        r"""Gets the attribute of this Plugin.
 
         插件属性
 
@@ -61,7 +61,7 @@ class Plugin:
 
     @attribute.setter
     def attribute(self, attribute):
-        """Sets the attribute of this Plugin.
+        r"""Sets the attribute of this Plugin.
 
         插件属性
 
@@ -72,7 +72,7 @@ class Plugin:
 
     @property
     def name(self):
-        """Gets the name of this Plugin.
+        r"""Gets the name of this Plugin.
 
         插件名
 
@@ -83,7 +83,7 @@ class Plugin:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Plugin.
+        r"""Sets the name of this Plugin.
 
         插件名
 

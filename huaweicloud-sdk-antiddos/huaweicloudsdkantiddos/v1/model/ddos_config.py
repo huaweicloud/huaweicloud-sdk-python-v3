@@ -33,7 +33,7 @@ class DdosConfig:
     }
 
     def __init__(self, enable_l7=None, traffic_pos_id=None, http_request_pos_id=None, cleaning_access_pos_id=None, app_type_id=None):
-        """DdosConfig
+        r"""DdosConfig
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DdosConfig:
 
     @property
     def enable_l7(self):
-        """Gets the enable_l7 of this DdosConfig.
+        r"""Gets the enable_l7 of this DdosConfig.
 
         是否开启L7层防护
 
@@ -77,7 +77,7 @@ class DdosConfig:
 
     @enable_l7.setter
     def enable_l7(self, enable_l7):
-        """Sets the enable_l7 of this DdosConfig.
+        r"""Sets the enable_l7 of this DdosConfig.
 
         是否开启L7层防护
 
@@ -88,7 +88,7 @@ class DdosConfig:
 
     @property
     def traffic_pos_id(self):
-        """Gets the traffic_pos_id of this DdosConfig.
+        r"""Gets the traffic_pos_id of this DdosConfig.
 
         流量分段ID，取值范围：1～9
 
@@ -99,7 +99,7 @@ class DdosConfig:
 
     @traffic_pos_id.setter
     def traffic_pos_id(self, traffic_pos_id):
-        """Sets the traffic_pos_id of this DdosConfig.
+        r"""Sets the traffic_pos_id of this DdosConfig.
 
         流量分段ID，取值范围：1～9
 
@@ -110,7 +110,7 @@ class DdosConfig:
 
     @property
     def http_request_pos_id(self):
-        """Gets the http_request_pos_id of this DdosConfig.
+        r"""Gets the http_request_pos_id of this DdosConfig.
 
         HTTP请求数分段ID，取值范围：1～15
 
@@ -121,7 +121,7 @@ class DdosConfig:
 
     @http_request_pos_id.setter
     def http_request_pos_id(self, http_request_pos_id):
-        """Sets the http_request_pos_id of this DdosConfig.
+        r"""Sets the http_request_pos_id of this DdosConfig.
 
         HTTP请求数分段ID，取值范围：1～15
 
@@ -132,7 +132,7 @@ class DdosConfig:
 
     @property
     def cleaning_access_pos_id(self):
-        """Gets the cleaning_access_pos_id of this DdosConfig.
+        r"""Gets the cleaning_access_pos_id of this DdosConfig.
 
         清洗时访问限制分段ID，取值范围：1～8
 
@@ -143,7 +143,7 @@ class DdosConfig:
 
     @cleaning_access_pos_id.setter
     def cleaning_access_pos_id(self, cleaning_access_pos_id):
-        """Sets the cleaning_access_pos_id of this DdosConfig.
+        r"""Sets the cleaning_access_pos_id of this DdosConfig.
 
         清洗时访问限制分段ID，取值范围：1～8
 
@@ -154,7 +154,7 @@ class DdosConfig:
 
     @property
     def app_type_id(self):
-        """Gets the app_type_id of this DdosConfig.
+        r"""Gets the app_type_id of this DdosConfig.
 
         应用类型ID，可选取值： - 0 - 1
 
@@ -165,7 +165,7 @@ class DdosConfig:
 
     @app_type_id.setter
     def app_type_id(self, app_type_id):
-        """Sets the app_type_id of this DdosConfig.
+        r"""Sets the app_type_id of this DdosConfig.
 
         应用类型ID，可选取值： - 0 - 1
 

@@ -57,7 +57,7 @@ class ReqParamBase:
     }
 
     def __init__(self, name=None, type=None, location=None, default_value=None, sample_value=None, required=None, valid_enable=None, remark=None, enumerations=None, min_num=None, max_num=None, min_size=None, max_size=None, regular=None, json_schema=None, pass_through=None, orchestrations=None):
-        """ReqParamBase
+        r"""ReqParamBase
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class ReqParamBase:
 
     @property
     def name(self):
-        """Gets the name of this ReqParamBase.
+        r"""Gets the name of this ReqParamBase.
 
         参数名称。 由英文字母、数字、中划线、下划线、英文句号组成，且只能以英文开头。 
 
@@ -163,7 +163,7 @@ class ReqParamBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReqParamBase.
+        r"""Sets the name of this ReqParamBase.
 
         参数名称。 由英文字母、数字、中划线、下划线、英文句号组成，且只能以英文开头。 
 
@@ -174,7 +174,7 @@ class ReqParamBase:
 
     @property
     def type(self):
-        """Gets the type of this ReqParamBase.
+        r"""Gets the type of this ReqParamBase.
 
         参数类型
 
@@ -185,7 +185,7 @@ class ReqParamBase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ReqParamBase.
+        r"""Sets the type of this ReqParamBase.
 
         参数类型
 
@@ -196,7 +196,7 @@ class ReqParamBase:
 
     @property
     def location(self):
-        """Gets the location of this ReqParamBase.
+        r"""Gets the location of this ReqParamBase.
 
         参数位置
 
@@ -207,7 +207,7 @@ class ReqParamBase:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ReqParamBase.
+        r"""Sets the location of this ReqParamBase.
 
         参数位置
 
@@ -218,7 +218,7 @@ class ReqParamBase:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ReqParamBase.
+        r"""Gets the default_value of this ReqParamBase.
 
         参数默认值
 
@@ -229,7 +229,7 @@ class ReqParamBase:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ReqParamBase.
+        r"""Sets the default_value of this ReqParamBase.
 
         参数默认值
 
@@ -240,7 +240,7 @@ class ReqParamBase:
 
     @property
     def sample_value(self):
-        """Gets the sample_value of this ReqParamBase.
+        r"""Gets the sample_value of this ReqParamBase.
 
         参数示例值
 
@@ -251,7 +251,7 @@ class ReqParamBase:
 
     @sample_value.setter
     def sample_value(self, sample_value):
-        """Sets the sample_value of this ReqParamBase.
+        r"""Sets the sample_value of this ReqParamBase.
 
         参数示例值
 
@@ -262,7 +262,7 @@ class ReqParamBase:
 
     @property
     def required(self):
-        """Gets the required of this ReqParamBase.
+        r"""Gets the required of this ReqParamBase.
 
         是否必须 - 1：是 - 2：否  location为PATH时，required默认为1，其他场景required默认为2
 
@@ -273,7 +273,7 @@ class ReqParamBase:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ReqParamBase.
+        r"""Sets the required of this ReqParamBase.
 
         是否必须 - 1：是 - 2：否  location为PATH时，required默认为1，其他场景required默认为2
 
@@ -284,7 +284,7 @@ class ReqParamBase:
 
     @property
     def valid_enable(self):
-        """Gets the valid_enable of this ReqParamBase.
+        r"""Gets the valid_enable of this ReqParamBase.
 
         是否开启校验 - 1：开启校验 - 2：不开启校验
 
@@ -295,7 +295,7 @@ class ReqParamBase:
 
     @valid_enable.setter
     def valid_enable(self, valid_enable):
-        """Sets the valid_enable of this ReqParamBase.
+        r"""Sets the valid_enable of this ReqParamBase.
 
         是否开启校验 - 1：开启校验 - 2：不开启校验
 
@@ -306,7 +306,7 @@ class ReqParamBase:
 
     @property
     def remark(self):
-        """Gets the remark of this ReqParamBase.
+        r"""Gets the remark of this ReqParamBase.
 
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -317,7 +317,7 @@ class ReqParamBase:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ReqParamBase.
+        r"""Sets the remark of this ReqParamBase.
 
         描述信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -328,7 +328,7 @@ class ReqParamBase:
 
     @property
     def enumerations(self):
-        """Gets the enumerations of this ReqParamBase.
+        r"""Gets the enumerations of this ReqParamBase.
 
         参数枚举值
 
@@ -339,7 +339,7 @@ class ReqParamBase:
 
     @enumerations.setter
     def enumerations(self, enumerations):
-        """Sets the enumerations of this ReqParamBase.
+        r"""Sets the enumerations of this ReqParamBase.
 
         参数枚举值
 
@@ -350,7 +350,7 @@ class ReqParamBase:
 
     @property
     def min_num(self):
-        """Gets the min_num of this ReqParamBase.
+        r"""Gets the min_num of this ReqParamBase.
 
         参数最小值  参数类型为NUMBER时有效
 
@@ -361,7 +361,7 @@ class ReqParamBase:
 
     @min_num.setter
     def min_num(self, min_num):
-        """Sets the min_num of this ReqParamBase.
+        r"""Sets the min_num of this ReqParamBase.
 
         参数最小值  参数类型为NUMBER时有效
 
@@ -372,7 +372,7 @@ class ReqParamBase:
 
     @property
     def max_num(self):
-        """Gets the max_num of this ReqParamBase.
+        r"""Gets the max_num of this ReqParamBase.
 
         参数最大值  参数类型为NUMBER时有效
 
@@ -383,7 +383,7 @@ class ReqParamBase:
 
     @max_num.setter
     def max_num(self, max_num):
-        """Sets the max_num of this ReqParamBase.
+        r"""Sets the max_num of this ReqParamBase.
 
         参数最大值  参数类型为NUMBER时有效
 
@@ -394,7 +394,7 @@ class ReqParamBase:
 
     @property
     def min_size(self):
-        """Gets the min_size of this ReqParamBase.
+        r"""Gets the min_size of this ReqParamBase.
 
         参数最小长度  参数类型为STRING时有效
 
@@ -405,7 +405,7 @@ class ReqParamBase:
 
     @min_size.setter
     def min_size(self, min_size):
-        """Sets the min_size of this ReqParamBase.
+        r"""Sets the min_size of this ReqParamBase.
 
         参数最小长度  参数类型为STRING时有效
 
@@ -416,7 +416,7 @@ class ReqParamBase:
 
     @property
     def max_size(self):
-        """Gets the max_size of this ReqParamBase.
+        r"""Gets the max_size of this ReqParamBase.
 
         参数最大长度  参数类型为STRING时有效
 
@@ -427,7 +427,7 @@ class ReqParamBase:
 
     @max_size.setter
     def max_size(self, max_size):
-        """Sets the max_size of this ReqParamBase.
+        r"""Sets the max_size of this ReqParamBase.
 
         参数最大长度  参数类型为STRING时有效
 
@@ -438,7 +438,7 @@ class ReqParamBase:
 
     @property
     def regular(self):
-        """Gets the regular of this ReqParamBase.
+        r"""Gets the regular of this ReqParamBase.
 
         正则校验规则  暂不支持
 
@@ -449,7 +449,7 @@ class ReqParamBase:
 
     @regular.setter
     def regular(self, regular):
-        """Sets the regular of this ReqParamBase.
+        r"""Sets the regular of this ReqParamBase.
 
         正则校验规则  暂不支持
 
@@ -460,7 +460,7 @@ class ReqParamBase:
 
     @property
     def json_schema(self):
-        """Gets the json_schema of this ReqParamBase.
+        r"""Gets the json_schema of this ReqParamBase.
 
         JSON校验规则  暂不支持
 
@@ -471,7 +471,7 @@ class ReqParamBase:
 
     @json_schema.setter
     def json_schema(self, json_schema):
-        """Sets the json_schema of this ReqParamBase.
+        r"""Sets the json_schema of this ReqParamBase.
 
         JSON校验规则  暂不支持
 
@@ -482,7 +482,7 @@ class ReqParamBase:
 
     @property
     def pass_through(self):
-        """Gets the pass_through of this ReqParamBase.
+        r"""Gets the pass_through of this ReqParamBase.
 
         是否透传 - 1：是 - 2：否
 
@@ -493,7 +493,7 @@ class ReqParamBase:
 
     @pass_through.setter
     def pass_through(self, pass_through):
-        """Sets the pass_through of this ReqParamBase.
+        r"""Sets the pass_through of this ReqParamBase.
 
         是否透传 - 1：是 - 2：否
 
@@ -504,7 +504,7 @@ class ReqParamBase:
 
     @property
     def orchestrations(self):
-        """Gets the orchestrations of this ReqParamBase.
+        r"""Gets the orchestrations of this ReqParamBase.
 
         请求参数编排规则列表[，该参数暂不支持](tag:hws,hws_hk,fcs,g42,Site)  请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高  每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节
 
@@ -515,7 +515,7 @@ class ReqParamBase:
 
     @orchestrations.setter
     def orchestrations(self, orchestrations):
-        """Sets the orchestrations of this ReqParamBase.
+        r"""Sets the orchestrations of this ReqParamBase.
 
         请求参数编排规则列表[，该参数暂不支持](tag:hws,hws_hk,fcs,g42,Site)  请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高  每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节
 

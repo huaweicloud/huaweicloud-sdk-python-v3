@@ -26,7 +26,7 @@ class ListApicInstancesResponse(SdkResponse):
     }
 
     def __init__(self, gateway_instances=None):
-        """ListApicInstancesResponse
+        r"""ListApicInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListApicInstancesResponse(SdkResponse):
 
     @property
     def gateway_instances(self):
-        """Gets the gateway_instances of this ListApicInstancesResponse.
+        r"""Gets the gateway_instances of this ListApicInstancesResponse.
 
         网关实例
 
@@ -55,7 +55,7 @@ class ListApicInstancesResponse(SdkResponse):
 
     @gateway_instances.setter
     def gateway_instances(self, gateway_instances):
-        """Sets the gateway_instances of this ListApicInstancesResponse.
+        r"""Sets the gateway_instances of this ListApicInstancesResponse.
 
         网关实例
 

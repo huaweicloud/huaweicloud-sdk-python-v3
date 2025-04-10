@@ -23,7 +23,7 @@ class MetricDimensionName:
     }
 
     def __init__(self):
-        """MetricDimensionName
+        r"""MetricDimensionName
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class CaptureServiceDto:
     }
 
     def __init__(self, dest_port=None, protocol=None, source_port=None):
-        """CaptureServiceDto
+        r"""CaptureServiceDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CaptureServiceDto:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this CaptureServiceDto.
+        r"""Gets the dest_port of this CaptureServiceDto.
 
         目的端口
 
@@ -67,7 +67,7 @@ class CaptureServiceDto:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this CaptureServiceDto.
+        r"""Sets the dest_port of this CaptureServiceDto.
 
         目的端口
 
@@ -78,7 +78,7 @@ class CaptureServiceDto:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CaptureServiceDto.
+        r"""Gets the protocol of this CaptureServiceDto.
 
         协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
@@ -89,7 +89,7 @@ class CaptureServiceDto:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CaptureServiceDto.
+        r"""Sets the protocol of this CaptureServiceDto.
 
         协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
@@ -100,7 +100,7 @@ class CaptureServiceDto:
 
     @property
     def source_port(self):
-        """Gets the source_port of this CaptureServiceDto.
+        r"""Gets the source_port of this CaptureServiceDto.
 
         源端口
 
@@ -111,7 +111,7 @@ class CaptureServiceDto:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this CaptureServiceDto.
+        r"""Sets the source_port of this CaptureServiceDto.
 
         源端口
 

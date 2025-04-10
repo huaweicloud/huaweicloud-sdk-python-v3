@@ -26,7 +26,7 @@ class UnsubscribeCertificateResponse(SdkResponse):
     }
 
     def __init__(self, unsubscribe_results=None):
-        """UnsubscribeCertificateResponse
+        r"""UnsubscribeCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnsubscribeCertificateResponse(SdkResponse):
 
     @property
     def unsubscribe_results(self):
-        """Gets the unsubscribe_results of this UnsubscribeCertificateResponse.
+        r"""Gets the unsubscribe_results of this UnsubscribeCertificateResponse.
 
         退订结果。
 
@@ -55,7 +55,7 @@ class UnsubscribeCertificateResponse(SdkResponse):
 
     @unsubscribe_results.setter
     def unsubscribe_results(self, unsubscribe_results):
-        """Sets the unsubscribe_results of this UnsubscribeCertificateResponse.
+        r"""Sets the unsubscribe_results of this UnsubscribeCertificateResponse.
 
         退订结果。
 

@@ -25,7 +25,7 @@ class MeshExtendParams:
     }
 
     def __init__(self, clusters=None):
-        """MeshExtendParams
+        r"""MeshExtendParams
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MeshExtendParams:
 
     @property
     def clusters(self):
-        """Gets the clusters of this MeshExtendParams.
+        r"""Gets the clusters of this MeshExtendParams.
 
         网格内集群信息
 
@@ -54,7 +54,7 @@ class MeshExtendParams:
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this MeshExtendParams.
+        r"""Sets the clusters of this MeshExtendParams.
 
         网格内集群信息
 

@@ -57,7 +57,7 @@ class CaptureTaskVO:
     }
 
     def __init__(self, capture_size=None, created_date=None, dest_address=None, dest_address_type=None, dest_port=None, duration=None, is_deleted=None, max_packets=None, modified_date=None, name=None, protocol=None, remaining_days=None, source_address=None, source_address_type=None, source_port=None, status=None, task_id=None):
-        """CaptureTaskVO
+        r"""CaptureTaskVO
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class CaptureTaskVO:
 
     @property
     def capture_size(self):
-        """Gets the capture_size of this CaptureTaskVO.
+        r"""Gets the capture_size of this CaptureTaskVO.
 
         抓包大小,如500kb,500mb
 
@@ -166,7 +166,7 @@ class CaptureTaskVO:
 
     @capture_size.setter
     def capture_size(self, capture_size):
-        """Sets the capture_size of this CaptureTaskVO.
+        r"""Sets the capture_size of this CaptureTaskVO.
 
         抓包大小,如500kb,500mb
 
@@ -177,7 +177,7 @@ class CaptureTaskVO:
 
     @property
     def created_date(self):
-        """Gets the created_date of this CaptureTaskVO.
+        r"""Gets the created_date of this CaptureTaskVO.
 
         抓包创建时间,如2024/08/31 10:17:30
 
@@ -188,7 +188,7 @@ class CaptureTaskVO:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this CaptureTaskVO.
+        r"""Sets the created_date of this CaptureTaskVO.
 
         抓包创建时间,如2024/08/31 10:17:30
 
@@ -199,7 +199,7 @@ class CaptureTaskVO:
 
     @property
     def dest_address(self):
-        """Gets the dest_address of this CaptureTaskVO.
+        r"""Gets the dest_address of this CaptureTaskVO.
 
         目的地址
 
@@ -210,7 +210,7 @@ class CaptureTaskVO:
 
     @dest_address.setter
     def dest_address(self, dest_address):
-        """Sets the dest_address of this CaptureTaskVO.
+        r"""Sets the dest_address of this CaptureTaskVO.
 
         目的地址
 
@@ -221,7 +221,7 @@ class CaptureTaskVO:
 
     @property
     def dest_address_type(self):
-        """Gets the dest_address_type of this CaptureTaskVO.
+        r"""Gets the dest_address_type of this CaptureTaskVO.
 
         目的地址类型0 ipv4，1 ipv6
 
@@ -232,7 +232,7 @@ class CaptureTaskVO:
 
     @dest_address_type.setter
     def dest_address_type(self, dest_address_type):
-        """Sets the dest_address_type of this CaptureTaskVO.
+        r"""Sets the dest_address_type of this CaptureTaskVO.
 
         目的地址类型0 ipv4，1 ipv6
 
@@ -243,7 +243,7 @@ class CaptureTaskVO:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this CaptureTaskVO.
+        r"""Gets the dest_port of this CaptureTaskVO.
 
         目的端口
 
@@ -254,7 +254,7 @@ class CaptureTaskVO:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this CaptureTaskVO.
+        r"""Sets the dest_port of this CaptureTaskVO.
 
         目的端口
 
@@ -265,7 +265,7 @@ class CaptureTaskVO:
 
     @property
     def duration(self):
-        """Gets the duration of this CaptureTaskVO.
+        r"""Gets the duration of this CaptureTaskVO.
 
         抓包时长，以分钟为单位
 
@@ -276,7 +276,7 @@ class CaptureTaskVO:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CaptureTaskVO.
+        r"""Sets the duration of this CaptureTaskVO.
 
         抓包时长，以分钟为单位
 
@@ -287,7 +287,7 @@ class CaptureTaskVO:
 
     @property
     def is_deleted(self):
-        """Gets the is_deleted of this CaptureTaskVO.
+        r"""Gets the is_deleted of this CaptureTaskVO.
 
         是否被删除，0否 1是
 
@@ -298,7 +298,7 @@ class CaptureTaskVO:
 
     @is_deleted.setter
     def is_deleted(self, is_deleted):
-        """Sets the is_deleted of this CaptureTaskVO.
+        r"""Sets the is_deleted of this CaptureTaskVO.
 
         是否被删除，0否 1是
 
@@ -309,7 +309,7 @@ class CaptureTaskVO:
 
     @property
     def max_packets(self):
-        """Gets the max_packets of this CaptureTaskVO.
+        r"""Gets the max_packets of this CaptureTaskVO.
 
         最大抓包数，以个为单位
 
@@ -320,7 +320,7 @@ class CaptureTaskVO:
 
     @max_packets.setter
     def max_packets(self, max_packets):
-        """Sets the max_packets of this CaptureTaskVO.
+        r"""Sets the max_packets of this CaptureTaskVO.
 
         最大抓包数，以个为单位
 
@@ -331,7 +331,7 @@ class CaptureTaskVO:
 
     @property
     def modified_date(self):
-        """Gets the modified_date of this CaptureTaskVO.
+        r"""Gets the modified_date of this CaptureTaskVO.
 
         修改日期,如2024/08/31 10:17:30
 
@@ -342,7 +342,7 @@ class CaptureTaskVO:
 
     @modified_date.setter
     def modified_date(self, modified_date):
-        """Sets the modified_date of this CaptureTaskVO.
+        r"""Sets the modified_date of this CaptureTaskVO.
 
         修改日期,如2024/08/31 10:17:30
 
@@ -353,7 +353,7 @@ class CaptureTaskVO:
 
     @property
     def name(self):
-        """Gets the name of this CaptureTaskVO.
+        r"""Gets the name of this CaptureTaskVO.
 
         抓包任务名称
 
@@ -364,7 +364,7 @@ class CaptureTaskVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaptureTaskVO.
+        r"""Sets the name of this CaptureTaskVO.
 
         抓包任务名称
 
@@ -375,7 +375,7 @@ class CaptureTaskVO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CaptureTaskVO.
+        r"""Gets the protocol of this CaptureTaskVO.
 
         协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
@@ -386,7 +386,7 @@ class CaptureTaskVO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CaptureTaskVO.
+        r"""Sets the protocol of this CaptureTaskVO.
 
         协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
@@ -397,7 +397,7 @@ class CaptureTaskVO:
 
     @property
     def remaining_days(self):
-        """Gets the remaining_days of this CaptureTaskVO.
+        r"""Gets the remaining_days of this CaptureTaskVO.
 
         剩余保留天数
 
@@ -408,7 +408,7 @@ class CaptureTaskVO:
 
     @remaining_days.setter
     def remaining_days(self, remaining_days):
-        """Sets the remaining_days of this CaptureTaskVO.
+        r"""Sets the remaining_days of this CaptureTaskVO.
 
         剩余保留天数
 
@@ -419,7 +419,7 @@ class CaptureTaskVO:
 
     @property
     def source_address(self):
-        """Gets the source_address of this CaptureTaskVO.
+        r"""Gets the source_address of this CaptureTaskVO.
 
         源地址
 
@@ -430,7 +430,7 @@ class CaptureTaskVO:
 
     @source_address.setter
     def source_address(self, source_address):
-        """Sets the source_address of this CaptureTaskVO.
+        r"""Sets the source_address of this CaptureTaskVO.
 
         源地址
 
@@ -441,7 +441,7 @@ class CaptureTaskVO:
 
     @property
     def source_address_type(self):
-        """Gets the source_address_type of this CaptureTaskVO.
+        r"""Gets the source_address_type of this CaptureTaskVO.
 
         源地址类型0 ipv4，1 ipv6
 
@@ -452,7 +452,7 @@ class CaptureTaskVO:
 
     @source_address_type.setter
     def source_address_type(self, source_address_type):
-        """Sets the source_address_type of this CaptureTaskVO.
+        r"""Sets the source_address_type of this CaptureTaskVO.
 
         源地址类型0 ipv4，1 ipv6
 
@@ -463,7 +463,7 @@ class CaptureTaskVO:
 
     @property
     def source_port(self):
-        """Gets the source_port of this CaptureTaskVO.
+        r"""Gets the source_port of this CaptureTaskVO.
 
         源端口
 
@@ -474,7 +474,7 @@ class CaptureTaskVO:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this CaptureTaskVO.
+        r"""Sets the source_port of this CaptureTaskVO.
 
         源端口
 
@@ -485,7 +485,7 @@ class CaptureTaskVO:
 
     @property
     def status(self):
-        """Gets the status of this CaptureTaskVO.
+        r"""Gets the status of this CaptureTaskVO.
 
         抓包任务状态，如成功（1），运行中（2），已截止（4），截止中（5）
 
@@ -496,7 +496,7 @@ class CaptureTaskVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CaptureTaskVO.
+        r"""Sets the status of this CaptureTaskVO.
 
         抓包任务状态，如成功（1），运行中（2），已截止（4），截止中（5）
 
@@ -507,7 +507,7 @@ class CaptureTaskVO:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CaptureTaskVO.
+        r"""Gets the task_id of this CaptureTaskVO.
 
         抓包任务id
 
@@ -518,7 +518,7 @@ class CaptureTaskVO:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CaptureTaskVO.
+        r"""Sets the task_id of this CaptureTaskVO.
 
         抓包任务id
 

@@ -30,7 +30,7 @@ class CloneLoadbalancerResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer_list=None, request_id=None, job_id=None):
-        """CloneLoadbalancerResponse
+        r"""CloneLoadbalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
     @property
     def loadbalancer_list(self):
-        """Gets the loadbalancer_list of this CloneLoadbalancerResponse.
+        r"""Gets the loadbalancer_list of this CloneLoadbalancerResponse.
 
         新实例相关信息
 
@@ -69,7 +69,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
     @loadbalancer_list.setter
     def loadbalancer_list(self, loadbalancer_list):
-        """Sets the loadbalancer_list of this CloneLoadbalancerResponse.
+        r"""Sets the loadbalancer_list of this CloneLoadbalancerResponse.
 
         新实例相关信息
 
@@ -80,7 +80,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CloneLoadbalancerResponse.
+        r"""Gets the request_id of this CloneLoadbalancerResponse.
 
         请求id
 
@@ -91,7 +91,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CloneLoadbalancerResponse.
+        r"""Sets the request_id of this CloneLoadbalancerResponse.
 
         请求id
 
@@ -102,7 +102,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CloneLoadbalancerResponse.
+        r"""Gets the job_id of this CloneLoadbalancerResponse.
 
         实例复制任务id
 
@@ -113,7 +113,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CloneLoadbalancerResponse.
+        r"""Sets the job_id of this CloneLoadbalancerResponse.
 
         实例复制任务id
 

@@ -27,7 +27,7 @@ class SearchCustomizedFieldsResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """SearchCustomizedFieldsResultDataValue
+        r"""SearchCustomizedFieldsResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchCustomizedFieldsResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this SearchCustomizedFieldsResultDataValue.
+        r"""Gets the total of this SearchCustomizedFieldsResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class SearchCustomizedFieldsResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchCustomizedFieldsResultDataValue.
+        r"""Sets the total of this SearchCustomizedFieldsResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class SearchCustomizedFieldsResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this SearchCustomizedFieldsResultDataValue.
+        r"""Gets the records of this SearchCustomizedFieldsResultDataValue.
 
         CustomizedFieldsVO信息。
 
@@ -83,7 +83,7 @@ class SearchCustomizedFieldsResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this SearchCustomizedFieldsResultDataValue.
+        r"""Sets the records of this SearchCustomizedFieldsResultDataValue.
 
         CustomizedFieldsVO信息。
 

@@ -27,7 +27,7 @@ class HttpStatisticsItem:
     }
 
     def __init__(self, attack_category=None, stat_num=None):
-        """HttpStatisticsItem
+        r"""HttpStatisticsItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HttpStatisticsItem:
 
     @property
     def attack_category(self):
-        """Gets the attack_category of this HttpStatisticsItem.
+        r"""Gets the attack_category of this HttpStatisticsItem.
 
         攻击类别
 
@@ -61,7 +61,7 @@ class HttpStatisticsItem:
 
     @attack_category.setter
     def attack_category(self, attack_category):
-        """Sets the attack_category of this HttpStatisticsItem.
+        r"""Sets the attack_category of this HttpStatisticsItem.
 
         攻击类别
 
@@ -72,7 +72,7 @@ class HttpStatisticsItem:
 
     @property
     def stat_num(self):
-        """Gets the stat_num of this HttpStatisticsItem.
+        r"""Gets the stat_num of this HttpStatisticsItem.
 
         统计数量
 
@@ -83,7 +83,7 @@ class HttpStatisticsItem:
 
     @stat_num.setter
     def stat_num(self, stat_num):
-        """Sets the stat_num of this HttpStatisticsItem.
+        r"""Sets the stat_num of this HttpStatisticsItem.
 
         统计数量
 

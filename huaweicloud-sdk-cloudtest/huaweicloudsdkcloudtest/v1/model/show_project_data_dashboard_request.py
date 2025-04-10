@@ -27,7 +27,7 @@ class ShowProjectDataDashboardRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowProjectDataDashboardRequest
+        r"""ShowProjectDataDashboardRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowProjectDataDashboardRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectDataDashboardRequest.
+        r"""Gets the project_id of this ShowProjectDataDashboardRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowProjectDataDashboardRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectDataDashboardRequest.
+        r"""Sets the project_id of this ShowProjectDataDashboardRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowProjectDataDashboardRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowProjectDataDashboardRequest.
+        r"""Gets the body of this ShowProjectDataDashboardRequest.
 
         :return: The body of this ShowProjectDataDashboardRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestReportInfoRequestBody`
@@ -80,7 +80,7 @@ class ShowProjectDataDashboardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowProjectDataDashboardRequest.
+        r"""Sets the body of this ShowProjectDataDashboardRequest.
 
         :param body: The body of this ShowProjectDataDashboardRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.TestReportInfoRequestBody`

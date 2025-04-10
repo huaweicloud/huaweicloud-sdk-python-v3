@@ -25,7 +25,7 @@ class LoadBalancerRef:
     }
 
     def __init__(self, id=None):
-        """LoadBalancerRef
+        r"""LoadBalancerRef
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LoadBalancerRef:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerRef.
+        r"""Gets the id of this LoadBalancerRef.
 
         参数解释：负载均衡器ID。
 
@@ -54,7 +54,7 @@ class LoadBalancerRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerRef.
+        r"""Sets the id of this LoadBalancerRef.
 
         参数解释：负载均衡器ID。
 

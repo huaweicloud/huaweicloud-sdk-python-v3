@@ -25,7 +25,7 @@ class AnalyzerConfigurationUnusedAccess:
     }
 
     def __init__(self, unused_access_age=None):
-        """AnalyzerConfigurationUnusedAccess
+        r"""AnalyzerConfigurationUnusedAccess
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AnalyzerConfigurationUnusedAccess:
 
     @property
     def unused_access_age(self):
-        """Gets the unused_access_age of this AnalyzerConfigurationUnusedAccess.
+        r"""Gets the unused_access_age of this AnalyzerConfigurationUnusedAccess.
 
         生成分析结果的预设天数。
 
@@ -54,7 +54,7 @@ class AnalyzerConfigurationUnusedAccess:
 
     @unused_access_age.setter
     def unused_access_age(self, unused_access_age):
-        """Sets the unused_access_age of this AnalyzerConfigurationUnusedAccess.
+        r"""Sets the unused_access_age of this AnalyzerConfigurationUnusedAccess.
 
         生成分析结果的预设天数。
 

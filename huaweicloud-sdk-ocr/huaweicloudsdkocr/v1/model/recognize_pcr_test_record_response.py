@@ -28,7 +28,7 @@ class RecognizePcrTestRecordResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizePcrTestRecordResponse
+        r"""RecognizePcrTestRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizePcrTestRecordResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizePcrTestRecordResponse.
+        r"""Gets the result of this RecognizePcrTestRecordResponse.
 
         :return: The result of this RecognizePcrTestRecordResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.PcrTestRecordResult`
@@ -60,7 +60,7 @@ class RecognizePcrTestRecordResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizePcrTestRecordResponse.
+        r"""Sets the result of this RecognizePcrTestRecordResponse.
 
         :param result: The result of this RecognizePcrTestRecordResponse.
         :type result: :class:`huaweicloudsdkocr.v1.PcrTestRecordResult`
@@ -69,7 +69,7 @@ class RecognizePcrTestRecordResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizePcrTestRecordResponse.
+        r"""Gets the x_request_id of this RecognizePcrTestRecordResponse.
 
         :return: The x_request_id of this RecognizePcrTestRecordResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizePcrTestRecordResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizePcrTestRecordResponse.
+        r"""Sets the x_request_id of this RecognizePcrTestRecordResponse.
 
         :param x_request_id: The x_request_id of this RecognizePcrTestRecordResponse.
         :type x_request_id: str

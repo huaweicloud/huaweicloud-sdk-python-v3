@@ -27,7 +27,7 @@ class FilterObject:
     }
 
     def __init__(self, filter_rule=None):
-        """FilterObject
+        r"""FilterObject
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class FilterObject:
 
     @property
     def filter_rule(self):
-        """Gets the filter_rule of this FilterObject.
+        r"""Gets the filter_rule of this FilterObject.
 
         :return: The filter_rule of this FilterObject.
         :rtype: list[:class:`huaweicloudsdkobs.v1.FilterRule`]
@@ -54,7 +54,7 @@ class FilterObject:
 
     @filter_rule.setter
     def filter_rule(self, filter_rule):
-        """Sets the filter_rule of this FilterObject.
+        r"""Sets the filter_rule of this FilterObject.
 
         :param filter_rule: The filter_rule of this FilterObject.
         :type filter_rule: list[:class:`huaweicloudsdkobs.v1.FilterRule`]

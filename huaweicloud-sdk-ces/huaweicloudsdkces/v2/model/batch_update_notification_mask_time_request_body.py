@@ -35,7 +35,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
     }
 
     def __init__(self, notification_mask_ids=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None):
-        """BatchUpdateNotificationMaskTimeRequestBody
+        r"""BatchUpdateNotificationMaskTimeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @property
     def notification_mask_ids(self):
-        """Gets the notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Gets the notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
 
         关联编号
 
@@ -87,7 +87,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @notification_mask_ids.setter
     def notification_mask_ids(self, notification_mask_ids):
-        """Sets the notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Sets the notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
 
         关联编号
 
@@ -98,7 +98,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @property
     def mask_type(self):
-        """Gets the mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Gets the mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
 
         :return: The mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
         :rtype: :class:`huaweicloudsdkces.v2.MaskType`
@@ -107,7 +107,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @mask_type.setter
     def mask_type(self, mask_type):
-        """Sets the mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Sets the mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
 
         :param mask_type: The mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
         :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
@@ -116,7 +116,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @property
     def start_date(self):
-        """Gets the start_date of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Gets the start_date of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽起始日期，yyyy-MM-dd。
 
@@ -127,7 +127,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Sets the start_date of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽起始日期，yyyy-MM-dd。
 
@@ -138,7 +138,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Gets the start_time of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽起始时间，HH:mm:ss。
 
@@ -149,7 +149,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Sets the start_time of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽起始时间，HH:mm:ss。
 
@@ -160,7 +160,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @property
     def end_date(self):
-        """Gets the end_date of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Gets the end_date of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽截止日期，yyyy-MM-dd。
 
@@ -171,7 +171,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Sets the end_date of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽截止日期，yyyy-MM-dd。
 
@@ -182,7 +182,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Gets the end_time of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽截止时间，HH:mm:ss。
 
@@ -193,7 +193,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BatchUpdateNotificationMaskTimeRequestBody.
+        r"""Sets the end_time of this BatchUpdateNotificationMaskTimeRequestBody.
 
         屏蔽截止时间，HH:mm:ss。
 

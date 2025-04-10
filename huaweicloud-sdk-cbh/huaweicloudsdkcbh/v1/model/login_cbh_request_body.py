@@ -25,7 +25,7 @@ class LoginCbhRequestBody:
     }
 
     def __init__(self, server_id=None):
-        """LoginCbhRequestBody
+        r"""LoginCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LoginCbhRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this LoginCbhRequestBody.
+        r"""Gets the server_id of this LoginCbhRequestBody.
 
         虚拟机id。
 
@@ -53,7 +53,7 @@ class LoginCbhRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this LoginCbhRequestBody.
+        r"""Sets the server_id of this LoginCbhRequestBody.
 
         虚拟机id。
 

@@ -27,7 +27,7 @@ class RocketMQConfigReq:
     }
 
     def __init__(self, name=None, value=None):
-        """RocketMQConfigReq
+        r"""RocketMQConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RocketMQConfigReq:
 
     @property
     def name(self):
-        """Gets the name of this RocketMQConfigReq.
+        r"""Gets the name of this RocketMQConfigReq.
 
         RocketMQ配置名称。
 
@@ -61,7 +61,7 @@ class RocketMQConfigReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RocketMQConfigReq.
+        r"""Sets the name of this RocketMQConfigReq.
 
         RocketMQ配置名称。
 
@@ -72,7 +72,7 @@ class RocketMQConfigReq:
 
     @property
     def value(self):
-        """Gets the value of this RocketMQConfigReq.
+        r"""Gets the value of this RocketMQConfigReq.
 
         RocketMQ配置目标值。
 
@@ -83,7 +83,7 @@ class RocketMQConfigReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RocketMQConfigReq.
+        r"""Sets the value of this RocketMQConfigReq.
 
         RocketMQ配置目标值。
 

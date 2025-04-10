@@ -31,7 +31,7 @@ class DiagnosisDimension:
     }
 
     def __init__(self, name=None, abnormal_num=None, failed_num=None, diagnosis_item_list=None):
-        """DiagnosisDimension
+        r"""DiagnosisDimension
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DiagnosisDimension:
 
     @property
     def name(self):
-        """Gets the name of this DiagnosisDimension.
+        r"""Gets the name of this DiagnosisDimension.
 
         诊断维度名称
 
@@ -71,7 +71,7 @@ class DiagnosisDimension:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DiagnosisDimension.
+        r"""Sets the name of this DiagnosisDimension.
 
         诊断维度名称
 
@@ -82,7 +82,7 @@ class DiagnosisDimension:
 
     @property
     def abnormal_num(self):
-        """Gets the abnormal_num of this DiagnosisDimension.
+        r"""Gets the abnormal_num of this DiagnosisDimension.
 
         诊断结果为异常的诊断项总数
 
@@ -93,7 +93,7 @@ class DiagnosisDimension:
 
     @abnormal_num.setter
     def abnormal_num(self, abnormal_num):
-        """Sets the abnormal_num of this DiagnosisDimension.
+        r"""Sets the abnormal_num of this DiagnosisDimension.
 
         诊断结果为异常的诊断项总数
 
@@ -104,7 +104,7 @@ class DiagnosisDimension:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this DiagnosisDimension.
+        r"""Gets the failed_num of this DiagnosisDimension.
 
         诊断失败的诊断项总数
 
@@ -115,7 +115,7 @@ class DiagnosisDimension:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this DiagnosisDimension.
+        r"""Sets the failed_num of this DiagnosisDimension.
 
         诊断失败的诊断项总数
 
@@ -126,7 +126,7 @@ class DiagnosisDimension:
 
     @property
     def diagnosis_item_list(self):
-        """Gets the diagnosis_item_list of this DiagnosisDimension.
+        r"""Gets the diagnosis_item_list of this DiagnosisDimension.
 
         诊断项列表
 
@@ -137,7 +137,7 @@ class DiagnosisDimension:
 
     @diagnosis_item_list.setter
     def diagnosis_item_list(self, diagnosis_item_list):
-        """Sets the diagnosis_item_list of this DiagnosisDimension.
+        r"""Sets the diagnosis_item_list of this DiagnosisDimension.
 
         诊断项列表
 

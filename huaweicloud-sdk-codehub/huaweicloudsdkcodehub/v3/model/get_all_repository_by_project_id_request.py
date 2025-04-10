@@ -31,7 +31,7 @@ class GetAllRepositoryByProjectIdRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, project_uuid=None, search=None):
-        """GetAllRepositoryByProjectIdRequest
+        r"""GetAllRepositoryByProjectIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this GetAllRepositoryByProjectIdRequest.
+        r"""Gets the page_index of this GetAllRepositoryByProjectIdRequest.
 
         分页索引，从1开始计数
 
@@ -74,7 +74,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this GetAllRepositoryByProjectIdRequest.
+        r"""Sets the page_index of this GetAllRepositoryByProjectIdRequest.
 
         分页索引，从1开始计数
 
@@ -85,7 +85,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this GetAllRepositoryByProjectIdRequest.
+        r"""Gets the page_size of this GetAllRepositoryByProjectIdRequest.
 
         每页条目数
 
@@ -96,7 +96,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this GetAllRepositoryByProjectIdRequest.
+        r"""Sets the page_size of this GetAllRepositoryByProjectIdRequest.
 
         每页条目数
 
@@ -107,7 +107,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this GetAllRepositoryByProjectIdRequest.
+        r"""Gets the project_uuid of this GetAllRepositoryByProjectIdRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -118,7 +118,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this GetAllRepositoryByProjectIdRequest.
+        r"""Sets the project_uuid of this GetAllRepositoryByProjectIdRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -129,7 +129,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @property
     def search(self):
-        """Gets the search of this GetAllRepositoryByProjectIdRequest.
+        r"""Gets the search of this GetAllRepositoryByProjectIdRequest.
 
         搜索关键字
 
@@ -140,7 +140,7 @@ class GetAllRepositoryByProjectIdRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this GetAllRepositoryByProjectIdRequest.
+        r"""Sets the search of this GetAllRepositoryByProjectIdRequest.
 
         搜索关键字
 

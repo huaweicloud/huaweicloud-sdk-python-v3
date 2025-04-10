@@ -25,7 +25,7 @@ class EnableLogicalClusterRequestBody:
     }
 
     def __init__(self, enable=None):
-        """EnableLogicalClusterRequestBody
+        r"""EnableLogicalClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableLogicalClusterRequestBody:
 
     @property
     def enable(self):
-        """Gets the enable of this EnableLogicalClusterRequestBody.
+        r"""Gets the enable of this EnableLogicalClusterRequestBody.
 
         true-切换开关
 
@@ -53,7 +53,7 @@ class EnableLogicalClusterRequestBody:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this EnableLogicalClusterRequestBody.
+        r"""Sets the enable of this EnableLogicalClusterRequestBody.
 
         true-切换开关
 

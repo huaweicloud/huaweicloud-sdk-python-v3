@@ -28,7 +28,7 @@ class ListDailyLogResponse(SdkResponse):
     }
 
     def __init__(self, total=None, logs=None):
-        """ListDailyLogResponse
+        r"""ListDailyLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDailyLogResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDailyLogResponse.
+        r"""Gets the total of this ListDailyLogResponse.
 
         弹性IP总数
 
@@ -62,7 +62,7 @@ class ListDailyLogResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDailyLogResponse.
+        r"""Sets the total of this ListDailyLogResponse.
 
         弹性IP总数
 
@@ -73,7 +73,7 @@ class ListDailyLogResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ListDailyLogResponse.
+        r"""Gets the logs of this ListDailyLogResponse.
 
         异常事件列表
 
@@ -84,7 +84,7 @@ class ListDailyLogResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ListDailyLogResponse.
+        r"""Sets the logs of this ListDailyLogResponse.
 
         异常事件列表
 

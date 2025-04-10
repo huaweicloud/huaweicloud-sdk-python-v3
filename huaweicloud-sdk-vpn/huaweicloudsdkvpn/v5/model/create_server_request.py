@@ -37,7 +37,7 @@ class CreateServerRequest:
     }
 
     def __init__(self, tunnel_protocol=None, client_cidr=None, local_subnets=None, client_auth_type=None, server_certificate=None, client_ca_certificates=None, ssl_options=None):
-        """CreateServerRequest
+        r"""CreateServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateServerRequest:
 
     @property
     def tunnel_protocol(self):
-        """Gets the tunnel_protocol of this CreateServerRequest.
+        r"""Gets the tunnel_protocol of this CreateServerRequest.
 
         隧道协议类型
 
@@ -94,7 +94,7 @@ class CreateServerRequest:
 
     @tunnel_protocol.setter
     def tunnel_protocol(self, tunnel_protocol):
-        """Sets the tunnel_protocol of this CreateServerRequest.
+        r"""Sets the tunnel_protocol of this CreateServerRequest.
 
         隧道协议类型
 
@@ -105,7 +105,7 @@ class CreateServerRequest:
 
     @property
     def client_cidr(self):
-        """Gets the client_cidr of this CreateServerRequest.
+        r"""Gets the client_cidr of this CreateServerRequest.
 
         客户端网段
 
@@ -116,7 +116,7 @@ class CreateServerRequest:
 
     @client_cidr.setter
     def client_cidr(self, client_cidr):
-        """Sets the client_cidr of this CreateServerRequest.
+        r"""Sets the client_cidr of this CreateServerRequest.
 
         客户端网段
 
@@ -127,7 +127,7 @@ class CreateServerRequest:
 
     @property
     def local_subnets(self):
-        """Gets the local_subnets of this CreateServerRequest.
+        r"""Gets the local_subnets of this CreateServerRequest.
 
         本端网段列表，至少有一个本端网段
 
@@ -138,7 +138,7 @@ class CreateServerRequest:
 
     @local_subnets.setter
     def local_subnets(self, local_subnets):
-        """Sets the local_subnets of this CreateServerRequest.
+        r"""Sets the local_subnets of this CreateServerRequest.
 
         本端网段列表，至少有一个本端网段
 
@@ -149,7 +149,7 @@ class CreateServerRequest:
 
     @property
     def client_auth_type(self):
-        """Gets the client_auth_type of this CreateServerRequest.
+        r"""Gets the client_auth_type of this CreateServerRequest.
 
         客户端认证类型
 
@@ -160,7 +160,7 @@ class CreateServerRequest:
 
     @client_auth_type.setter
     def client_auth_type(self, client_auth_type):
-        """Sets the client_auth_type of this CreateServerRequest.
+        r"""Sets the client_auth_type of this CreateServerRequest.
 
         客户端认证类型
 
@@ -171,7 +171,7 @@ class CreateServerRequest:
 
     @property
     def server_certificate(self):
-        """Gets the server_certificate of this CreateServerRequest.
+        r"""Gets the server_certificate of this CreateServerRequest.
 
         :return: The server_certificate of this CreateServerRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateServerRequestServerCertificate`
@@ -180,7 +180,7 @@ class CreateServerRequest:
 
     @server_certificate.setter
     def server_certificate(self, server_certificate):
-        """Sets the server_certificate of this CreateServerRequest.
+        r"""Sets the server_certificate of this CreateServerRequest.
 
         :param server_certificate: The server_certificate of this CreateServerRequest.
         :type server_certificate: :class:`huaweicloudsdkvpn.v5.CreateServerRequestServerCertificate`
@@ -189,7 +189,7 @@ class CreateServerRequest:
 
     @property
     def client_ca_certificates(self):
-        """Gets the client_ca_certificates of this CreateServerRequest.
+        r"""Gets the client_ca_certificates of this CreateServerRequest.
 
         客户端证书列表。隧道协议类型是SSL且认证方式是证书认证时，必填
 
@@ -200,7 +200,7 @@ class CreateServerRequest:
 
     @client_ca_certificates.setter
     def client_ca_certificates(self, client_ca_certificates):
-        """Sets the client_ca_certificates of this CreateServerRequest.
+        r"""Sets the client_ca_certificates of this CreateServerRequest.
 
         客户端证书列表。隧道协议类型是SSL且认证方式是证书认证时，必填
 
@@ -211,7 +211,7 @@ class CreateServerRequest:
 
     @property
     def ssl_options(self):
-        """Gets the ssl_options of this CreateServerRequest.
+        r"""Gets the ssl_options of this CreateServerRequest.
 
         :return: The ssl_options of this CreateServerRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateServerRequestSslOptions`
@@ -220,7 +220,7 @@ class CreateServerRequest:
 
     @ssl_options.setter
     def ssl_options(self, ssl_options):
-        """Sets the ssl_options of this CreateServerRequest.
+        r"""Sets the ssl_options of this CreateServerRequest.
 
         :param ssl_options: The ssl_options of this CreateServerRequest.
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.CreateServerRequestSslOptions`

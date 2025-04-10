@@ -27,7 +27,7 @@ class DeleteCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None, pending_days=None):
-        """DeleteCertificateAuthorityRequest
+        r"""DeleteCertificateAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteCertificateAuthorityRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this DeleteCertificateAuthorityRequest.
+        r"""Gets the ca_id of this DeleteCertificateAuthorityRequest.
 
         所要计划删除的CA证书ID。
 
@@ -59,7 +59,7 @@ class DeleteCertificateAuthorityRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this DeleteCertificateAuthorityRequest.
+        r"""Sets the ca_id of this DeleteCertificateAuthorityRequest.
 
         所要计划删除的CA证书ID。
 
@@ -70,7 +70,7 @@ class DeleteCertificateAuthorityRequest:
 
     @property
     def pending_days(self):
-        """Gets the pending_days of this DeleteCertificateAuthorityRequest.
+        r"""Gets the pending_days of this DeleteCertificateAuthorityRequest.
 
         延迟删除时间，单位为”天“。
 
@@ -81,7 +81,7 @@ class DeleteCertificateAuthorityRequest:
 
     @pending_days.setter
     def pending_days(self, pending_days):
-        """Sets the pending_days of this DeleteCertificateAuthorityRequest.
+        r"""Sets the pending_days of this DeleteCertificateAuthorityRequest.
 
         延迟删除时间，单位为”天“。
 

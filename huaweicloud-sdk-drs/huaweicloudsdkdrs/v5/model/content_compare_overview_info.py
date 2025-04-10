@@ -31,7 +31,7 @@ class ContentCompareOverviewInfo:
     }
 
     def __init__(self, source_db=None, target_db=None, status=None, compare_result=None):
-        """ContentCompareOverviewInfo
+        r"""ContentCompareOverviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ContentCompareOverviewInfo:
 
     @property
     def source_db(self):
-        """Gets the source_db of this ContentCompareOverviewInfo.
+        r"""Gets the source_db of this ContentCompareOverviewInfo.
 
         源库库名。
 
@@ -75,7 +75,7 @@ class ContentCompareOverviewInfo:
 
     @source_db.setter
     def source_db(self, source_db):
-        """Sets the source_db of this ContentCompareOverviewInfo.
+        r"""Sets the source_db of this ContentCompareOverviewInfo.
 
         源库库名。
 
@@ -86,7 +86,7 @@ class ContentCompareOverviewInfo:
 
     @property
     def target_db(self):
-        """Gets the target_db of this ContentCompareOverviewInfo.
+        r"""Gets the target_db of this ContentCompareOverviewInfo.
 
         目标库库名。
 
@@ -97,7 +97,7 @@ class ContentCompareOverviewInfo:
 
     @target_db.setter
     def target_db(self, target_db):
-        """Sets the target_db of this ContentCompareOverviewInfo.
+        r"""Sets the target_db of this ContentCompareOverviewInfo.
 
         目标库库名。
 
@@ -108,7 +108,7 @@ class ContentCompareOverviewInfo:
 
     @property
     def status(self):
-        """Gets the status of this ContentCompareOverviewInfo.
+        r"""Gets the status of this ContentCompareOverviewInfo.
 
         对比结果。取值： - CONSISTENT：一致。 - INCONSISTENT：不一致。 - COMPARING：正在对比。 - WAITING_FOR_COMPARISON：等待对比。 - FAILED_TO_COMPARE：对比失败。 - TARGET_DB_NOT_EXIST：目标库不存在。 - CAN_NOT_COMPARE：无法对比。 - WAIT_FOR_COMPARE：命令已下发，等待对比结果。 - CANCELED：已取消。
 
@@ -119,7 +119,7 @@ class ContentCompareOverviewInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ContentCompareOverviewInfo.
+        r"""Sets the status of this ContentCompareOverviewInfo.
 
         对比结果。取值： - CONSISTENT：一致。 - INCONSISTENT：不一致。 - COMPARING：正在对比。 - WAITING_FOR_COMPARISON：等待对比。 - FAILED_TO_COMPARE：对比失败。 - TARGET_DB_NOT_EXIST：目标库不存在。 - CAN_NOT_COMPARE：无法对比。 - WAIT_FOR_COMPARE：命令已下发，等待对比结果。 - CANCELED：已取消。
 
@@ -130,7 +130,7 @@ class ContentCompareOverviewInfo:
 
     @property
     def compare_result(self):
-        """Gets the compare_result of this ContentCompareOverviewInfo.
+        r"""Gets the compare_result of this ContentCompareOverviewInfo.
 
         对比结果。
 
@@ -141,7 +141,7 @@ class ContentCompareOverviewInfo:
 
     @compare_result.setter
     def compare_result(self, compare_result):
-        """Sets the compare_result of this ContentCompareOverviewInfo.
+        r"""Sets the compare_result of this ContentCompareOverviewInfo.
 
         对比结果。
 

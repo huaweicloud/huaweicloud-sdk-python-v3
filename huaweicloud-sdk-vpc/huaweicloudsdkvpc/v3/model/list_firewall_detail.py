@@ -45,7 +45,7 @@ class ListFirewallDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, admin_state_up=None, status=None, enterprise_project_id=None, tags=None, associations=None):
-        """ListFirewallDetail
+        r"""ListFirewallDetail
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ListFirewallDetail:
 
     @property
     def id(self):
-        """Gets the id of this ListFirewallDetail.
+        r"""Gets the id of this ListFirewallDetail.
 
         功能说明：ACL唯一标识 取值范围：合法UUID的字符串
 
@@ -113,7 +113,7 @@ class ListFirewallDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFirewallDetail.
+        r"""Sets the id of this ListFirewallDetail.
 
         功能说明：ACL唯一标识 取值范围：合法UUID的字符串
 
@@ -124,7 +124,7 @@ class ListFirewallDetail:
 
     @property
     def name(self):
-        """Gets the name of this ListFirewallDetail.
+        r"""Gets the name of this ListFirewallDetail.
 
         功能说明：ACL名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -135,7 +135,7 @@ class ListFirewallDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFirewallDetail.
+        r"""Sets the name of this ListFirewallDetail.
 
         功能说明：ACL名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -146,7 +146,7 @@ class ListFirewallDetail:
 
     @property
     def description(self):
-        """Gets the description of this ListFirewallDetail.
+        r"""Gets the description of this ListFirewallDetail.
 
         功能说明：ACL描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -157,7 +157,7 @@ class ListFirewallDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListFirewallDetail.
+        r"""Sets the description of this ListFirewallDetail.
 
         功能说明：ACL描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -168,7 +168,7 @@ class ListFirewallDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListFirewallDetail.
+        r"""Gets the project_id of this ListFirewallDetail.
 
         功能说明：资源所属项目ID
 
@@ -179,7 +179,7 @@ class ListFirewallDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListFirewallDetail.
+        r"""Sets the project_id of this ListFirewallDetail.
 
         功能说明：资源所属项目ID
 
@@ -190,7 +190,7 @@ class ListFirewallDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListFirewallDetail.
+        r"""Gets the created_at of this ListFirewallDetail.
 
         功能说明：ACL创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss；系统自动生成
 
@@ -201,7 +201,7 @@ class ListFirewallDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListFirewallDetail.
+        r"""Sets the created_at of this ListFirewallDetail.
 
         功能说明：ACL创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss；系统自动生成
 
@@ -212,7 +212,7 @@ class ListFirewallDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListFirewallDetail.
+        r"""Gets the updated_at of this ListFirewallDetail.
 
         功能描述：ACL最近一次更新资源的时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss；系统自动生成
 
@@ -223,7 +223,7 @@ class ListFirewallDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListFirewallDetail.
+        r"""Sets the updated_at of this ListFirewallDetail.
 
         功能描述：ACL最近一次更新资源的时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss；系统自动生成
 
@@ -234,7 +234,7 @@ class ListFirewallDetail:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListFirewallDetail.
+        r"""Gets the admin_state_up of this ListFirewallDetail.
 
         功能说明：ACL是否开启 取值范围：true表示ACL开启；false表示ACL关闭
 
@@ -245,7 +245,7 @@ class ListFirewallDetail:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListFirewallDetail.
+        r"""Sets the admin_state_up of this ListFirewallDetail.
 
         功能说明：ACL是否开启 取值范围：true表示ACL开启；false表示ACL关闭
 
@@ -256,7 +256,7 @@ class ListFirewallDetail:
 
     @property
     def status(self):
-        """Gets the status of this ListFirewallDetail.
+        r"""Gets the status of this ListFirewallDetail.
 
         功能说明：网络ACL的状态
 
@@ -267,7 +267,7 @@ class ListFirewallDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFirewallDetail.
+        r"""Sets the status of this ListFirewallDetail.
 
         功能说明：网络ACL的状态
 
@@ -278,7 +278,7 @@ class ListFirewallDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFirewallDetail.
+        r"""Gets the enterprise_project_id of this ListFirewallDetail.
 
         功能说明：ACL企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -289,7 +289,7 @@ class ListFirewallDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFirewallDetail.
+        r"""Sets the enterprise_project_id of this ListFirewallDetail.
 
         功能说明：ACL企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -300,7 +300,7 @@ class ListFirewallDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this ListFirewallDetail.
+        r"""Gets the tags of this ListFirewallDetail.
 
         功能描述：ACL资源标签
 
@@ -311,7 +311,7 @@ class ListFirewallDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFirewallDetail.
+        r"""Sets the tags of this ListFirewallDetail.
 
         功能描述：ACL资源标签
 
@@ -322,7 +322,7 @@ class ListFirewallDetail:
 
     @property
     def associations(self):
-        """Gets the associations of this ListFirewallDetail.
+        r"""Gets the associations of this ListFirewallDetail.
 
         功能说明：ACL绑定的子网列表
 
@@ -333,7 +333,7 @@ class ListFirewallDetail:
 
     @associations.setter
     def associations(self, associations):
-        """Sets the associations of this ListFirewallDetail.
+        r"""Sets the associations of this ListFirewallDetail.
 
         功能说明：ACL绑定的子网列表
 

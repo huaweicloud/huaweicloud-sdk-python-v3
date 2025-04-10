@@ -31,7 +31,7 @@ class JobNodeVpcInfo:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, custom_node_ip=None, security_group_id=None):
-        """JobNodeVpcInfo
+        r"""JobNodeVpcInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class JobNodeVpcInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this JobNodeVpcInfo.
+        r"""Gets the vpc_id of this JobNodeVpcInfo.
 
         任务实例所在虚拟私有云ID。
 
@@ -73,7 +73,7 @@ class JobNodeVpcInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this JobNodeVpcInfo.
+        r"""Sets the vpc_id of this JobNodeVpcInfo.
 
         任务实例所在虚拟私有云ID。
 
@@ -84,7 +84,7 @@ class JobNodeVpcInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this JobNodeVpcInfo.
+        r"""Gets the subnet_id of this JobNodeVpcInfo.
 
         任务实例所在子网ID。
 
@@ -95,7 +95,7 @@ class JobNodeVpcInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this JobNodeVpcInfo.
+        r"""Sets the subnet_id of this JobNodeVpcInfo.
 
         任务实例所在子网ID。
 
@@ -106,7 +106,7 @@ class JobNodeVpcInfo:
 
     @property
     def custom_node_ip(self):
-        """Gets the custom_node_ip of this JobNodeVpcInfo.
+        r"""Gets the custom_node_ip of this JobNodeVpcInfo.
 
         指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。
 
@@ -117,7 +117,7 @@ class JobNodeVpcInfo:
 
     @custom_node_ip.setter
     def custom_node_ip(self, custom_node_ip):
-        """Sets the custom_node_ip of this JobNodeVpcInfo.
+        r"""Sets the custom_node_ip of this JobNodeVpcInfo.
 
         指定创建任务实例IP地址，多个IP端口之间请用“,”英文逗号分隔，目前仅支持设置IPv4地址，获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找子网的网段，选择未被占用的IP 。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询私有IP列表，选择“device_owner”为空的私有IP。
 
@@ -128,7 +128,7 @@ class JobNodeVpcInfo:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this JobNodeVpcInfo.
+        r"""Gets the security_group_id of this JobNodeVpcInfo.
 
         任务实例所在的安全组ID。
 
@@ -139,7 +139,7 @@ class JobNodeVpcInfo:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this JobNodeVpcInfo.
+        r"""Sets the security_group_id of this JobNodeVpcInfo.
 
         任务实例所在的安全组ID。
 

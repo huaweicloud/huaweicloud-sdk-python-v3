@@ -27,7 +27,7 @@ class DownloadErrorlogRequestBody:
     }
 
     def __init__(self, file_name_list=None, node_id_list=None):
-        """DownloadErrorlogRequestBody
+        r"""DownloadErrorlogRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DownloadErrorlogRequestBody:
 
     @property
     def file_name_list(self):
-        """Gets the file_name_list of this DownloadErrorlogRequestBody.
+        r"""Gets the file_name_list of this DownloadErrorlogRequestBody.
 
         - 需要下载的文件的文件名列表。
 
@@ -61,7 +61,7 @@ class DownloadErrorlogRequestBody:
 
     @file_name_list.setter
     def file_name_list(self, file_name_list):
-        """Sets the file_name_list of this DownloadErrorlogRequestBody.
+        r"""Sets the file_name_list of this DownloadErrorlogRequestBody.
 
         - 需要下载的文件的文件名列表。
 
@@ -72,7 +72,7 @@ class DownloadErrorlogRequestBody:
 
     @property
     def node_id_list(self):
-        """Gets the node_id_list of this DownloadErrorlogRequestBody.
+        r"""Gets the node_id_list of this DownloadErrorlogRequestBody.
 
         节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的mongos、shard、config节点 - 副本集、单节点下面的所有节点
 
@@ -83,7 +83,7 @@ class DownloadErrorlogRequestBody:
 
     @node_id_list.setter
     def node_id_list(self, node_id_list):
-        """Sets the node_id_list of this DownloadErrorlogRequestBody.
+        r"""Sets the node_id_list of this DownloadErrorlogRequestBody.
 
         节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的mongos、shard、config节点 - 副本集、单节点下面的所有节点
 

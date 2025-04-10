@@ -29,7 +29,7 @@ class DrugFileSource:
     }
 
     def __init__(self):
-        """DrugFileSource
+        r"""DrugFileSource
 
         The model defined in huaweicloud sdk
 

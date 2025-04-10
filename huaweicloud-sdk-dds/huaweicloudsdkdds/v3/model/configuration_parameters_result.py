@@ -37,7 +37,7 @@ class ConfigurationParametersResult:
     }
 
     def __init__(self, name=None, value=None, description=None, type=None, value_range=None, restart_required=None, readonly=None):
-        """ConfigurationParametersResult
+        r"""ConfigurationParametersResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigurationParametersResult:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationParametersResult.
+        r"""Gets the name of this ConfigurationParametersResult.
 
         参数名称。
 
@@ -89,7 +89,7 @@ class ConfigurationParametersResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationParametersResult.
+        r"""Sets the name of this ConfigurationParametersResult.
 
         参数名称。
 
@@ -100,7 +100,7 @@ class ConfigurationParametersResult:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationParametersResult.
+        r"""Gets the value of this ConfigurationParametersResult.
 
         参数值。
 
@@ -111,7 +111,7 @@ class ConfigurationParametersResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationParametersResult.
+        r"""Sets the value of this ConfigurationParametersResult.
 
         参数值。
 
@@ -122,7 +122,7 @@ class ConfigurationParametersResult:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationParametersResult.
+        r"""Gets the description of this ConfigurationParametersResult.
 
         参数描述。
 
@@ -133,7 +133,7 @@ class ConfigurationParametersResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationParametersResult.
+        r"""Sets the description of this ConfigurationParametersResult.
 
         参数描述。
 
@@ -144,7 +144,7 @@ class ConfigurationParametersResult:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationParametersResult.
+        r"""Gets the type of this ConfigurationParametersResult.
 
         参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
 
@@ -155,7 +155,7 @@ class ConfigurationParametersResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationParametersResult.
+        r"""Sets the type of this ConfigurationParametersResult.
 
         参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
 
@@ -166,7 +166,7 @@ class ConfigurationParametersResult:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ConfigurationParametersResult.
+        r"""Gets the value_range of this ConfigurationParametersResult.
 
         参数值范围，如integer取值0-1、boolean取值true|false等。
 
@@ -177,7 +177,7 @@ class ConfigurationParametersResult:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ConfigurationParametersResult.
+        r"""Sets the value_range of this ConfigurationParametersResult.
 
         参数值范围，如integer取值0-1、boolean取值true|false等。
 
@@ -188,7 +188,7 @@ class ConfigurationParametersResult:
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this ConfigurationParametersResult.
+        r"""Gets the restart_required of this ConfigurationParametersResult.
 
         参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
 
@@ -199,7 +199,7 @@ class ConfigurationParametersResult:
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this ConfigurationParametersResult.
+        r"""Sets the restart_required of this ConfigurationParametersResult.
 
         参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
 
@@ -210,7 +210,7 @@ class ConfigurationParametersResult:
 
     @property
     def readonly(self):
-        """Gets the readonly of this ConfigurationParametersResult.
+        r"""Gets the readonly of this ConfigurationParametersResult.
 
         是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
 
@@ -221,7 +221,7 @@ class ConfigurationParametersResult:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this ConfigurationParametersResult.
+        r"""Sets the readonly of this ConfigurationParametersResult.
 
         是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
 

@@ -25,7 +25,7 @@ class ListAddonTemplatesRequest:
     }
 
     def __init__(self, addon_template_name=None):
-        """ListAddonTemplatesRequest
+        r"""ListAddonTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAddonTemplatesRequest:
 
     @property
     def addon_template_name(self):
-        """Gets the addon_template_name of this ListAddonTemplatesRequest.
+        r"""Gets the addon_template_name of this ListAddonTemplatesRequest.
 
         指定的插件名称或插件别名，不填写则查询列表。
 
@@ -54,7 +54,7 @@ class ListAddonTemplatesRequest:
 
     @addon_template_name.setter
     def addon_template_name(self, addon_template_name):
-        """Sets the addon_template_name of this ListAddonTemplatesRequest.
+        r"""Sets the addon_template_name of this ListAddonTemplatesRequest.
 
         指定的插件名称或插件别名，不填写则查询列表。
 

@@ -26,7 +26,7 @@ class CreateDbCacheMappingResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateDbCacheMappingResponse
+        r"""CreateDbCacheMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDbCacheMappingResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDbCacheMappingResponse.
+        r"""Gets the job_id of this CreateDbCacheMappingResponse.
 
         创建内存加速任务ID。
 
@@ -55,7 +55,7 @@ class CreateDbCacheMappingResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDbCacheMappingResponse.
+        r"""Sets the job_id of this CreateDbCacheMappingResponse.
 
         创建内存加速任务ID。
 

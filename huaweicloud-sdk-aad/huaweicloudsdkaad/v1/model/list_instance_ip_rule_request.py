@@ -27,7 +27,7 @@ class ListInstanceIpRuleRequest:
     }
 
     def __init__(self, instance_id=None, ip=None):
-        """ListInstanceIpRuleRequest
+        r"""ListInstanceIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstanceIpRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceIpRuleRequest.
+        r"""Gets the instance_id of this ListInstanceIpRuleRequest.
 
         实例Id
 
@@ -59,7 +59,7 @@ class ListInstanceIpRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceIpRuleRequest.
+        r"""Sets the instance_id of this ListInstanceIpRuleRequest.
 
         实例Id
 
@@ -70,7 +70,7 @@ class ListInstanceIpRuleRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListInstanceIpRuleRequest.
+        r"""Gets the ip of this ListInstanceIpRuleRequest.
 
         单个 IP
 
@@ -81,7 +81,7 @@ class ListInstanceIpRuleRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListInstanceIpRuleRequest.
+        r"""Sets the ip of this ListInstanceIpRuleRequest.
 
         单个 IP
 

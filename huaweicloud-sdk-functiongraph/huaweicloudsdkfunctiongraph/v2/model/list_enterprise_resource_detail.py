@@ -25,7 +25,7 @@ class ListEnterpriseResourceDetail:
     }
 
     def __init__(self, detail_id=None):
-        """ListEnterpriseResourceDetail
+        r"""ListEnterpriseResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListEnterpriseResourceDetail:
 
     @property
     def detail_id(self):
-        """Gets the detail_id of this ListEnterpriseResourceDetail.
+        r"""Gets the detail_id of this ListEnterpriseResourceDetail.
 
         函数urn
 
@@ -54,7 +54,7 @@ class ListEnterpriseResourceDetail:
 
     @detail_id.setter
     def detail_id(self, detail_id):
-        """Sets the detail_id of this ListEnterpriseResourceDetail.
+        r"""Sets the detail_id of this ListEnterpriseResourceDetail.
 
         函数urn
 

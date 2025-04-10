@@ -31,7 +31,7 @@ class ListImageJobsRequest:
     }
 
     def __init__(self, status=None, job_type=None, offset=None, limit=None):
-        """ListImageJobsRequest
+        r"""ListImageJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListImageJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListImageJobsRequest.
+        r"""Gets the status of this ListImageJobsRequest.
 
         job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
 
@@ -74,7 +74,7 @@ class ListImageJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListImageJobsRequest.
+        r"""Sets the status of this ListImageJobsRequest.
 
         job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
 
@@ -85,7 +85,7 @@ class ListImageJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListImageJobsRequest.
+        r"""Gets the job_type of this ListImageJobsRequest.
 
         job类型： * `CREATE_SERVER` - 创建镜像实例 * `CREATE_SERVER_IMAGE` - 构建镜像 * `DELETE_SERVER` - 删除镜像实例
 
@@ -96,7 +96,7 @@ class ListImageJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListImageJobsRequest.
+        r"""Sets the job_type of this ListImageJobsRequest.
 
         job类型： * `CREATE_SERVER` - 创建镜像实例 * `CREATE_SERVER_IMAGE` - 构建镜像 * `DELETE_SERVER` - 删除镜像实例
 
@@ -107,7 +107,7 @@ class ListImageJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImageJobsRequest.
+        r"""Gets the offset of this ListImageJobsRequest.
 
         查询的偏移量。
 
@@ -118,7 +118,7 @@ class ListImageJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImageJobsRequest.
+        r"""Sets the offset of this ListImageJobsRequest.
 
         查询的偏移量。
 
@@ -129,7 +129,7 @@ class ListImageJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImageJobsRequest.
+        r"""Gets the limit of this ListImageJobsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -140,7 +140,7 @@ class ListImageJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImageJobsRequest.
+        r"""Sets the limit of this ListImageJobsRequest.
 
         查询的数量，值区间[1-100]。
 

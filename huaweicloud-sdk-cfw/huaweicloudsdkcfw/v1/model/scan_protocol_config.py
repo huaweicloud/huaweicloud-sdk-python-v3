@@ -27,7 +27,7 @@ class ScanProtocolConfig:
     }
 
     def __init__(self, action=None, protocol_type=None):
-        """ScanProtocolConfig
+        r"""ScanProtocolConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScanProtocolConfig:
 
     @property
     def action(self):
-        """Gets the action of this ScanProtocolConfig.
+        r"""Gets the action of this ScanProtocolConfig.
 
         反病毒动作，0：观察 1：拦截 2：禁用
 
@@ -61,7 +61,7 @@ class ScanProtocolConfig:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ScanProtocolConfig.
+        r"""Sets the action of this ScanProtocolConfig.
 
         反病毒动作，0：观察 1：拦截 2：禁用
 
@@ -72,7 +72,7 @@ class ScanProtocolConfig:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ScanProtocolConfig.
+        r"""Gets the protocol_type of this ScanProtocolConfig.
 
         协议类型
 
@@ -83,7 +83,7 @@ class ScanProtocolConfig:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ScanProtocolConfig.
+        r"""Sets the protocol_type of this ScanProtocolConfig.
 
         协议类型
 

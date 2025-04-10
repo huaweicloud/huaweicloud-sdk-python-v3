@@ -27,7 +27,7 @@ class RestoreExistingInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """RestoreExistingInstanceRequest
+        r"""RestoreExistingInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreExistingInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestoreExistingInstanceRequest.
+        r"""Gets the instance_id of this RestoreExistingInstanceRequest.
 
         实例Id，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -60,7 +60,7 @@ class RestoreExistingInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestoreExistingInstanceRequest.
+        r"""Sets the instance_id of this RestoreExistingInstanceRequest.
 
         实例Id，可以调用[5.3.3 查询实例列表和详情](x-wc://file=zh-cn_topic_0000001397299481.xml)接口获取。如果未申请实例，可以调用[5.3.1 创建实例](x-wc://file=zh-cn_topic_0000001397139461.xml)接口创建。
 
@@ -71,7 +71,7 @@ class RestoreExistingInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreExistingInstanceRequest.
+        r"""Gets the body of this RestoreExistingInstanceRequest.
 
         :return: The body of this RestoreExistingInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRequestBody`
@@ -80,7 +80,7 @@ class RestoreExistingInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreExistingInstanceRequest.
+        r"""Sets the body of this RestoreExistingInstanceRequest.
 
         :param body: The body of this RestoreExistingInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRequestBody`

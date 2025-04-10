@@ -29,7 +29,7 @@ class CreateCloudConnection:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None):
-        """CreateCloudConnection
+        r"""CreateCloudConnection
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCloudConnection:
 
     @property
     def name(self):
-        """Gets the name of this CreateCloudConnection.
+        r"""Gets the name of this CreateCloudConnection.
 
         实例名字。
 
@@ -67,7 +67,7 @@ class CreateCloudConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCloudConnection.
+        r"""Sets the name of this CreateCloudConnection.
 
         实例名字。
 
@@ -78,7 +78,7 @@ class CreateCloudConnection:
 
     @property
     def description(self):
-        """Gets the description of this CreateCloudConnection.
+        r"""Gets the description of this CreateCloudConnection.
 
         实例描述。不支持 <>。
 
@@ -89,7 +89,7 @@ class CreateCloudConnection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCloudConnection.
+        r"""Sets the description of this CreateCloudConnection.
 
         实例描述。不支持 <>。
 
@@ -100,7 +100,7 @@ class CreateCloudConnection:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCloudConnection.
+        r"""Gets the enterprise_project_id of this CreateCloudConnection.
 
         实例所属企业项目ID。
 
@@ -111,7 +111,7 @@ class CreateCloudConnection:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCloudConnection.
+        r"""Sets the enterprise_project_id of this CreateCloudConnection.
 
         实例所属企业项目ID。
 

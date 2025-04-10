@@ -27,11 +27,11 @@ class ChangeVulStatusRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """ChangeVulStatusRequest
+        r"""ChangeVulStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param body: Body of the ChangeVulStatusRequest
         :type body: :class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfo`
@@ -50,9 +50,9 @@ class ChangeVulStatusRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeVulStatusRequest.
+        r"""Gets the enterprise_project_id of this ChangeVulStatusRequest.
 
-        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ChangeVulStatusRequest.
         :rtype: str
@@ -61,9 +61,9 @@ class ChangeVulStatusRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeVulStatusRequest.
+        r"""Sets the enterprise_project_id of this ChangeVulStatusRequest.
 
-        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeVulStatusRequest.
         :type enterprise_project_id: str
@@ -72,7 +72,7 @@ class ChangeVulStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeVulStatusRequest.
+        r"""Gets the body of this ChangeVulStatusRequest.
 
         :return: The body of this ChangeVulStatusRequest.
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfo`
@@ -81,7 +81,7 @@ class ChangeVulStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeVulStatusRequest.
+        r"""Sets the body of this ChangeVulStatusRequest.
 
         :param body: The body of this ChangeVulStatusRequest.
         :type body: :class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfo`

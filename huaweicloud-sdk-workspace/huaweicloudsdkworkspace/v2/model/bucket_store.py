@@ -27,7 +27,7 @@ class BucketStore:
     }
 
     def __init__(self, bucket_name=None, bucket_file_path=None):
-        """BucketStore
+        r"""BucketStore
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BucketStore:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this BucketStore.
+        r"""Gets the bucket_name of this BucketStore.
 
         桶名称固定格式:wks-appcenter-{project_id}; 需先调用桶授权接口进行授权。
 
@@ -61,7 +61,7 @@ class BucketStore:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this BucketStore.
+        r"""Sets the bucket_name of this BucketStore.
 
         桶名称固定格式:wks-appcenter-{project_id}; 需先调用桶授权接口进行授权。
 
@@ -72,7 +72,7 @@ class BucketStore:
 
     @property
     def bucket_file_path(self):
-        """Gets the bucket_file_path of this BucketStore.
+        r"""Gets the bucket_file_path of this BucketStore.
 
         OBS对象路径。 注: bucket_file_path是对象在obs中的完整路径,不能以/开头。 例如桶存在如下目录结构的数据。   Bucket:     ├─dir1     | ├─object1.txt     | └─object2.txt     └─object3.txt Object1的路径: dir1/object1.txt Object2的路径: dir1/object2.txt Object3的路径: object3.txt
 
@@ -83,7 +83,7 @@ class BucketStore:
 
     @bucket_file_path.setter
     def bucket_file_path(self, bucket_file_path):
-        """Sets the bucket_file_path of this BucketStore.
+        r"""Sets the bucket_file_path of this BucketStore.
 
         OBS对象路径。 注: bucket_file_path是对象在obs中的完整路径,不能以/开头。 例如桶存在如下目录结构的数据。   Bucket:     ├─dir1     | ├─object1.txt     | └─object2.txt     └─object3.txt Object1的路径: dir1/object1.txt Object2的路径: dir1/object2.txt Object3的路径: object3.txt
 

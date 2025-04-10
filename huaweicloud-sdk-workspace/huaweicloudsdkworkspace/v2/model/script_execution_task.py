@@ -47,7 +47,7 @@ class ScriptExecutionTask:
     }
 
     def __init__(self, id=None, desktop_pool_id=None, desktop_pool_name=None, scripts=None, command_content=None, command_type=None, start_time=None, end_time=None, status=None, success_num=None, failed_num=None, skip_num=None):
-        """ScriptExecutionTask
+        r"""ScriptExecutionTask
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ScriptExecutionTask:
 
     @property
     def id(self):
-        """Gets the id of this ScriptExecutionTask.
+        r"""Gets the id of this ScriptExecutionTask.
 
         任务id。
 
@@ -131,7 +131,7 @@ class ScriptExecutionTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptExecutionTask.
+        r"""Sets the id of this ScriptExecutionTask.
 
         任务id。
 
@@ -142,7 +142,7 @@ class ScriptExecutionTask:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this ScriptExecutionTask.
+        r"""Gets the desktop_pool_id of this ScriptExecutionTask.
 
         桌面池id。
 
@@ -153,7 +153,7 @@ class ScriptExecutionTask:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this ScriptExecutionTask.
+        r"""Sets the desktop_pool_id of this ScriptExecutionTask.
 
         桌面池id。
 
@@ -164,7 +164,7 @@ class ScriptExecutionTask:
 
     @property
     def desktop_pool_name(self):
-        """Gets the desktop_pool_name of this ScriptExecutionTask.
+        r"""Gets the desktop_pool_name of this ScriptExecutionTask.
 
         桌面池名称。
 
@@ -175,7 +175,7 @@ class ScriptExecutionTask:
 
     @desktop_pool_name.setter
     def desktop_pool_name(self, desktop_pool_name):
-        """Sets the desktop_pool_name of this ScriptExecutionTask.
+        r"""Sets the desktop_pool_name of this ScriptExecutionTask.
 
         桌面池名称。
 
@@ -186,7 +186,7 @@ class ScriptExecutionTask:
 
     @property
     def scripts(self):
-        """Gets the scripts of this ScriptExecutionTask.
+        r"""Gets the scripts of this ScriptExecutionTask.
 
         脚本信息列表。
 
@@ -197,7 +197,7 @@ class ScriptExecutionTask:
 
     @scripts.setter
     def scripts(self, scripts):
-        """Sets the scripts of this ScriptExecutionTask.
+        r"""Sets the scripts of this ScriptExecutionTask.
 
         脚本信息列表。
 
@@ -208,7 +208,7 @@ class ScriptExecutionTask:
 
     @property
     def command_content(self):
-        """Gets the command_content of this ScriptExecutionTask.
+        r"""Gets the command_content of this ScriptExecutionTask.
 
         执行的命令行。
 
@@ -219,7 +219,7 @@ class ScriptExecutionTask:
 
     @command_content.setter
     def command_content(self, command_content):
-        """Sets the command_content of this ScriptExecutionTask.
+        r"""Sets the command_content of this ScriptExecutionTask.
 
         执行的命令行。
 
@@ -230,7 +230,7 @@ class ScriptExecutionTask:
 
     @property
     def command_type(self):
-        """Gets the command_type of this ScriptExecutionTask.
+        r"""Gets the command_type of this ScriptExecutionTask.
 
         命令行类型。 - POWERSHELL：WINDOWS系统使用。 - BAT：WINDOWS系统使用。 - SHELL：LINUX系统使用。
 
@@ -241,7 +241,7 @@ class ScriptExecutionTask:
 
     @command_type.setter
     def command_type(self, command_type):
-        """Sets the command_type of this ScriptExecutionTask.
+        r"""Sets the command_type of this ScriptExecutionTask.
 
         命令行类型。 - POWERSHELL：WINDOWS系统使用。 - BAT：WINDOWS系统使用。 - SHELL：LINUX系统使用。
 
@@ -252,7 +252,7 @@ class ScriptExecutionTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScriptExecutionTask.
+        r"""Gets the start_time of this ScriptExecutionTask.
 
         任务开始时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -263,7 +263,7 @@ class ScriptExecutionTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScriptExecutionTask.
+        r"""Sets the start_time of this ScriptExecutionTask.
 
         任务开始时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -274,7 +274,7 @@ class ScriptExecutionTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScriptExecutionTask.
+        r"""Gets the end_time of this ScriptExecutionTask.
 
         任务结束时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -285,7 +285,7 @@ class ScriptExecutionTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScriptExecutionTask.
+        r"""Sets the end_time of this ScriptExecutionTask.
 
         任务结束时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -296,7 +296,7 @@ class ScriptExecutionTask:
 
     @property
     def status(self):
-        """Gets the status of this ScriptExecutionTask.
+        r"""Gets the status of this ScriptExecutionTask.
 
         任务状态，值含： - FINISH：已完成。 - FAILED：失败。 - RUNNING：运行中。 - INIT： 初始化。
 
@@ -307,7 +307,7 @@ class ScriptExecutionTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScriptExecutionTask.
+        r"""Sets the status of this ScriptExecutionTask.
 
         任务状态，值含： - FINISH：已完成。 - FAILED：失败。 - RUNNING：运行中。 - INIT： 初始化。
 
@@ -318,7 +318,7 @@ class ScriptExecutionTask:
 
     @property
     def success_num(self):
-        """Gets the success_num of this ScriptExecutionTask.
+        r"""Gets the success_num of this ScriptExecutionTask.
 
         成功数量。
 
@@ -329,7 +329,7 @@ class ScriptExecutionTask:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ScriptExecutionTask.
+        r"""Sets the success_num of this ScriptExecutionTask.
 
         成功数量。
 
@@ -340,7 +340,7 @@ class ScriptExecutionTask:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this ScriptExecutionTask.
+        r"""Gets the failed_num of this ScriptExecutionTask.
 
         失败数量。
 
@@ -351,7 +351,7 @@ class ScriptExecutionTask:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this ScriptExecutionTask.
+        r"""Sets the failed_num of this ScriptExecutionTask.
 
         失败数量。
 
@@ -362,7 +362,7 @@ class ScriptExecutionTask:
 
     @property
     def skip_num(self):
-        """Gets the skip_num of this ScriptExecutionTask.
+        r"""Gets the skip_num of this ScriptExecutionTask.
 
         跳过数量。
 
@@ -373,7 +373,7 @@ class ScriptExecutionTask:
 
     @skip_num.setter
     def skip_num(self, skip_num):
-        """Sets the skip_num of this ScriptExecutionTask.
+        r"""Sets the skip_num of this ScriptExecutionTask.
 
         跳过数量。
 

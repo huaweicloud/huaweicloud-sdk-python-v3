@@ -33,7 +33,7 @@ class OpenGaussUpgradeRequest:
     }
 
     def __init__(self, upgrade_type=None, upgrade_action=None, target_version=None, upgrade_shard_num=None, upgrade_az=None):
-        """OpenGaussUpgradeRequest
+        r"""OpenGaussUpgradeRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class OpenGaussUpgradeRequest:
 
     @property
     def upgrade_type(self):
-        """Gets the upgrade_type of this OpenGaussUpgradeRequest.
+        r"""Gets the upgrade_type of this OpenGaussUpgradeRequest.
 
         实例升级类型，包括就地升级，灰度升级，热补丁升级三种，三种升级方式的异同，详见接口描述。  inplace 就地升级  grey 灰度升级  hotfix 热补丁升级。
 
@@ -81,7 +81,7 @@ class OpenGaussUpgradeRequest:
 
     @upgrade_type.setter
     def upgrade_type(self, upgrade_type):
-        """Sets the upgrade_type of this OpenGaussUpgradeRequest.
+        r"""Sets the upgrade_type of this OpenGaussUpgradeRequest.
 
         实例升级类型，包括就地升级，灰度升级，热补丁升级三种，三种升级方式的异同，详见接口描述。  inplace 就地升级  grey 灰度升级  hotfix 热补丁升级。
 
@@ -92,7 +92,7 @@ class OpenGaussUpgradeRequest:
 
     @property
     def upgrade_action(self):
-        """Gets the upgrade_action of this OpenGaussUpgradeRequest.
+        r"""Gets the upgrade_action of this OpenGaussUpgradeRequest.
 
         实例升级操作，就地升级无需传值。灰度升级包括升级自动提交，升级待观察，提交升级，升级回退四种。热补丁升级包括升级自动提交，升级回退两种。详见接口描述。  upgradeAutoCommit 升级自动提交  upgrade 升级待观察  commit 提交升级  rollback 升级回退。
 
@@ -103,7 +103,7 @@ class OpenGaussUpgradeRequest:
 
     @upgrade_action.setter
     def upgrade_action(self, upgrade_action):
-        """Sets the upgrade_action of this OpenGaussUpgradeRequest.
+        r"""Sets the upgrade_action of this OpenGaussUpgradeRequest.
 
         实例升级操作，就地升级无需传值。灰度升级包括升级自动提交，升级待观察，提交升级，升级回退四种。热补丁升级包括升级自动提交，升级回退两种。详见接口描述。  upgradeAutoCommit 升级自动提交  upgrade 升级待观察  commit 提交升级  rollback 升级回退。
 
@@ -114,7 +114,7 @@ class OpenGaussUpgradeRequest:
 
     @property
     def target_version(self):
-        """Gets the target_version of this OpenGaussUpgradeRequest.
+        r"""Gets the target_version of this OpenGaussUpgradeRequest.
 
         实例升级目标版本，非必填。如果未传值则默认升级到当前实例的优选版本。仅热补丁升级方式下支持传入多个值，升级操作为升级自动提交，则实例版本从小到大批量升级，升级操作为升级回退，则实例版本从大到小批量回退。
 
@@ -125,7 +125,7 @@ class OpenGaussUpgradeRequest:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this OpenGaussUpgradeRequest.
+        r"""Sets the target_version of this OpenGaussUpgradeRequest.
 
         实例升级目标版本，非必填。如果未传值则默认升级到当前实例的优选版本。仅热补丁升级方式下支持传入多个值，升级操作为升级自动提交，则实例版本从小到大批量升级，升级操作为升级回退，则实例版本从大到小批量回退。
 
@@ -136,7 +136,7 @@ class OpenGaussUpgradeRequest:
 
     @property
     def upgrade_shard_num(self):
-        """Gets the upgrade_shard_num of this OpenGaussUpgradeRequest.
+        r"""Gets the upgrade_shard_num of this OpenGaussUpgradeRequest.
 
         分布式实例灰度升级，滚动升级分片数。分布式实例灰度升级，升级待观察必填。该值不能大于实例未升级分片总数。
 
@@ -147,7 +147,7 @@ class OpenGaussUpgradeRequest:
 
     @upgrade_shard_num.setter
     def upgrade_shard_num(self, upgrade_shard_num):
-        """Sets the upgrade_shard_num of this OpenGaussUpgradeRequest.
+        r"""Sets the upgrade_shard_num of this OpenGaussUpgradeRequest.
 
         分布式实例灰度升级，滚动升级分片数。分布式实例灰度升级，升级待观察必填。该值不能大于实例未升级分片总数。
 
@@ -158,7 +158,7 @@ class OpenGaussUpgradeRequest:
 
     @property
     def upgrade_az(self):
-        """Gets the upgrade_az of this OpenGaussUpgradeRequest.
+        r"""Gets the upgrade_az of this OpenGaussUpgradeRequest.
 
         主备版实例灰度升级，滚动升级az值，可以支持多az一起升级，az之间以’,’分割。集中式实例灰度升级，升级待观察必填。该值不能填入不属于该实例的az值。
 
@@ -169,7 +169,7 @@ class OpenGaussUpgradeRequest:
 
     @upgrade_az.setter
     def upgrade_az(self, upgrade_az):
-        """Sets the upgrade_az of this OpenGaussUpgradeRequest.
+        r"""Sets the upgrade_az of this OpenGaussUpgradeRequest.
 
         主备版实例灰度升级，滚动升级az值，可以支持多az一起升级，az之间以’,’分割。集中式实例灰度升级，升级待观察必填。该值不能填入不属于该实例的az值。
 

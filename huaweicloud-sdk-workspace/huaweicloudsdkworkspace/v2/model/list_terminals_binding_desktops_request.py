@@ -33,7 +33,7 @@ class ListTerminalsBindingDesktopsRequest:
     }
 
     def __init__(self, computer_name=None, mac=None, offset=None, limit=None, count_only=None):
-        """ListTerminalsBindingDesktopsRequest
+        r"""ListTerminalsBindingDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ListTerminalsBindingDesktopsRequest.
+        r"""Gets the computer_name of this ListTerminalsBindingDesktopsRequest.
 
         桌面名。
 
@@ -80,7 +80,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ListTerminalsBindingDesktopsRequest.
+        r"""Sets the computer_name of this ListTerminalsBindingDesktopsRequest.
 
         桌面名。
 
@@ -91,7 +91,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @property
     def mac(self):
-        """Gets the mac of this ListTerminalsBindingDesktopsRequest.
+        r"""Gets the mac of this ListTerminalsBindingDesktopsRequest.
 
         mac地址。
 
@@ -102,7 +102,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this ListTerminalsBindingDesktopsRequest.
+        r"""Sets the mac of this ListTerminalsBindingDesktopsRequest.
 
         mac地址。
 
@@ -113,7 +113,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTerminalsBindingDesktopsRequest.
+        r"""Gets the offset of this ListTerminalsBindingDesktopsRequest.
 
         起始数。
 
@@ -124,7 +124,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTerminalsBindingDesktopsRequest.
+        r"""Sets the offset of this ListTerminalsBindingDesktopsRequest.
 
         起始数。
 
@@ -135,7 +135,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTerminalsBindingDesktopsRequest.
+        r"""Gets the limit of this ListTerminalsBindingDesktopsRequest.
 
         数量。
 
@@ -146,7 +146,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTerminalsBindingDesktopsRequest.
+        r"""Sets the limit of this ListTerminalsBindingDesktopsRequest.
 
         数量。
 
@@ -157,7 +157,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @property
     def count_only(self):
-        """Gets the count_only of this ListTerminalsBindingDesktopsRequest.
+        r"""Gets the count_only of this ListTerminalsBindingDesktopsRequest.
 
         是否只查询结果总条数
 
@@ -168,7 +168,7 @@ class ListTerminalsBindingDesktopsRequest:
 
     @count_only.setter
     def count_only(self, count_only):
-        """Sets the count_only of this ListTerminalsBindingDesktopsRequest.
+        r"""Sets the count_only of this ListTerminalsBindingDesktopsRequest.
 
         是否只查询结果总条数
 

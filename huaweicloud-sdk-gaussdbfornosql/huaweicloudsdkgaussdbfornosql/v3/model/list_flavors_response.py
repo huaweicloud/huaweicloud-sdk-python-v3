@@ -28,7 +28,7 @@ class ListFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, flavors=None):
-        """ListFlavorsResponse
+        r"""ListFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListFlavorsResponse.
+        r"""Gets the total_count of this ListFlavorsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListFlavorsResponse.
+        r"""Sets the total_count of this ListFlavorsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListFlavorsResponse.
+        r"""Gets the flavors of this ListFlavorsResponse.
 
         实例规格信息列表。
 
@@ -84,7 +84,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListFlavorsResponse.
+        r"""Sets the flavors of this ListFlavorsResponse.
 
         实例规格信息列表。
 

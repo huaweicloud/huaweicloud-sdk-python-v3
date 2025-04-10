@@ -57,7 +57,7 @@ class MultiViewModelCreateDTO:
     }
 
     def __init__(self, item=None, branch=None, check_out_time=None, check_out_user_name=None, create_time=None, creator=None, description=None, id=None, kiaguid=None, last_update_time=None, master=None, modifier=None, name=None, rdm_extension_type=None, security_level=None, tenant=None, working_copy=None):
-        """MultiViewModelCreateDTO
+        r"""MultiViewModelCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def item(self):
-        """Gets the item of this MultiViewModelCreateDTO.
+        r"""Gets the item of this MultiViewModelCreateDTO.
 
         :return: The item of this MultiViewModelCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -164,7 +164,7 @@ class MultiViewModelCreateDTO:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this MultiViewModelCreateDTO.
+        r"""Sets the item of this MultiViewModelCreateDTO.
 
         :param item: The item of this MultiViewModelCreateDTO.
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -173,7 +173,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def branch(self):
-        """Gets the branch of this MultiViewModelCreateDTO.
+        r"""Gets the branch of this MultiViewModelCreateDTO.
 
         :return: The branch of this MultiViewModelCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranchCreateDTO`
@@ -182,7 +182,7 @@ class MultiViewModelCreateDTO:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this MultiViewModelCreateDTO.
+        r"""Sets the branch of this MultiViewModelCreateDTO.
 
         :param branch: The branch of this MultiViewModelCreateDTO.
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranchCreateDTO`
@@ -191,7 +191,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def check_out_time(self):
-        """Gets the check_out_time of this MultiViewModelCreateDTO.
+        r"""Gets the check_out_time of this MultiViewModelCreateDTO.
 
         检出时间。
 
@@ -202,7 +202,7 @@ class MultiViewModelCreateDTO:
 
     @check_out_time.setter
     def check_out_time(self, check_out_time):
-        """Sets the check_out_time of this MultiViewModelCreateDTO.
+        r"""Sets the check_out_time of this MultiViewModelCreateDTO.
 
         检出时间。
 
@@ -213,7 +213,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def check_out_user_name(self):
-        """Gets the check_out_user_name of this MultiViewModelCreateDTO.
+        r"""Gets the check_out_user_name of this MultiViewModelCreateDTO.
 
         检出人。
 
@@ -224,7 +224,7 @@ class MultiViewModelCreateDTO:
 
     @check_out_user_name.setter
     def check_out_user_name(self, check_out_user_name):
-        """Sets the check_out_user_name of this MultiViewModelCreateDTO.
+        r"""Sets the check_out_user_name of this MultiViewModelCreateDTO.
 
         检出人。
 
@@ -235,7 +235,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MultiViewModelCreateDTO.
+        r"""Gets the create_time of this MultiViewModelCreateDTO.
 
         创建时间。
 
@@ -246,7 +246,7 @@ class MultiViewModelCreateDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MultiViewModelCreateDTO.
+        r"""Sets the create_time of this MultiViewModelCreateDTO.
 
         创建时间。
 
@@ -257,7 +257,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this MultiViewModelCreateDTO.
+        r"""Gets the creator of this MultiViewModelCreateDTO.
 
         创建者。
 
@@ -268,7 +268,7 @@ class MultiViewModelCreateDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this MultiViewModelCreateDTO.
+        r"""Sets the creator of this MultiViewModelCreateDTO.
 
         创建者。
 
@@ -279,7 +279,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def description(self):
-        """Gets the description of this MultiViewModelCreateDTO.
+        r"""Gets the description of this MultiViewModelCreateDTO.
 
         描述信息。
 
@@ -290,7 +290,7 @@ class MultiViewModelCreateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MultiViewModelCreateDTO.
+        r"""Sets the description of this MultiViewModelCreateDTO.
 
         描述信息。
 
@@ -301,7 +301,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def id(self):
-        """Gets the id of this MultiViewModelCreateDTO.
+        r"""Gets the id of this MultiViewModelCreateDTO.
 
         唯一标识。
 
@@ -312,7 +312,7 @@ class MultiViewModelCreateDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MultiViewModelCreateDTO.
+        r"""Sets the id of this MultiViewModelCreateDTO.
 
         唯一标识。
 
@@ -323,7 +323,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def kiaguid(self):
-        """Gets the kiaguid of this MultiViewModelCreateDTO.
+        r"""Gets the kiaguid of this MultiViewModelCreateDTO.
 
         关键信息资产ID。
 
@@ -334,7 +334,7 @@ class MultiViewModelCreateDTO:
 
     @kiaguid.setter
     def kiaguid(self, kiaguid):
-        """Sets the kiaguid of this MultiViewModelCreateDTO.
+        r"""Sets the kiaguid of this MultiViewModelCreateDTO.
 
         关键信息资产ID。
 
@@ -345,7 +345,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this MultiViewModelCreateDTO.
+        r"""Gets the last_update_time of this MultiViewModelCreateDTO.
 
         最后更新时间。
 
@@ -356,7 +356,7 @@ class MultiViewModelCreateDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this MultiViewModelCreateDTO.
+        r"""Sets the last_update_time of this MultiViewModelCreateDTO.
 
         最后更新时间。
 
@@ -367,7 +367,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def master(self):
-        """Gets the master of this MultiViewModelCreateDTO.
+        r"""Gets the master of this MultiViewModelCreateDTO.
 
         :return: The master of this MultiViewModelCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterCreateDTO`
@@ -376,7 +376,7 @@ class MultiViewModelCreateDTO:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this MultiViewModelCreateDTO.
+        r"""Sets the master of this MultiViewModelCreateDTO.
 
         :param master: The master of this MultiViewModelCreateDTO.
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterCreateDTO`
@@ -385,7 +385,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this MultiViewModelCreateDTO.
+        r"""Gets the modifier of this MultiViewModelCreateDTO.
 
         修改人。
 
@@ -396,7 +396,7 @@ class MultiViewModelCreateDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this MultiViewModelCreateDTO.
+        r"""Sets the modifier of this MultiViewModelCreateDTO.
 
         修改人。
 
@@ -407,7 +407,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def name(self):
-        """Gets the name of this MultiViewModelCreateDTO.
+        r"""Gets the name of this MultiViewModelCreateDTO.
 
         中文名称。
 
@@ -418,7 +418,7 @@ class MultiViewModelCreateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MultiViewModelCreateDTO.
+        r"""Sets the name of this MultiViewModelCreateDTO.
 
         中文名称。
 
@@ -429,7 +429,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this MultiViewModelCreateDTO.
+        r"""Gets the rdm_extension_type of this MultiViewModelCreateDTO.
 
         扩展类型。
 
@@ -440,7 +440,7 @@ class MultiViewModelCreateDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this MultiViewModelCreateDTO.
+        r"""Sets the rdm_extension_type of this MultiViewModelCreateDTO.
 
         扩展类型。
 
@@ -451,7 +451,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def security_level(self):
-        """Gets the security_level of this MultiViewModelCreateDTO.
+        r"""Gets the security_level of this MultiViewModelCreateDTO.
 
         安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
 
@@ -462,7 +462,7 @@ class MultiViewModelCreateDTO:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this MultiViewModelCreateDTO.
+        r"""Sets the security_level of this MultiViewModelCreateDTO.
 
         安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
 
@@ -473,7 +473,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this MultiViewModelCreateDTO.
+        r"""Gets the tenant of this MultiViewModelCreateDTO.
 
         :return: The tenant of this MultiViewModelCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -482,7 +482,7 @@ class MultiViewModelCreateDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this MultiViewModelCreateDTO.
+        r"""Sets the tenant of this MultiViewModelCreateDTO.
 
         :param tenant: The tenant of this MultiViewModelCreateDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -491,7 +491,7 @@ class MultiViewModelCreateDTO:
 
     @property
     def working_copy(self):
-        """Gets the working_copy of this MultiViewModelCreateDTO.
+        r"""Gets the working_copy of this MultiViewModelCreateDTO.
 
         是否已检出。 - true：已检出。 - false：未检出。
 
@@ -502,7 +502,7 @@ class MultiViewModelCreateDTO:
 
     @working_copy.setter
     def working_copy(self, working_copy):
-        """Sets the working_copy of this MultiViewModelCreateDTO.
+        r"""Sets the working_copy of this MultiViewModelCreateDTO.
 
         是否已检出。 - true：已检出。 - false：未检出。
 

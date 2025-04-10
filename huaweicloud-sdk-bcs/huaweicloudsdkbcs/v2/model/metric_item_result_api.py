@@ -27,7 +27,7 @@ class MetricItemResultAPI:
     }
 
     def __init__(self, metric=None, data_points=None):
-        """MetricItemResultAPI
+        r"""MetricItemResultAPI
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetricItemResultAPI:
 
     @property
     def metric(self):
-        """Gets the metric of this MetricItemResultAPI.
+        r"""Gets the metric of this MetricItemResultAPI.
 
         :return: The metric of this MetricItemResultAPI.
         :rtype: :class:`huaweicloudsdkbcs.v2.MetricDemision`
@@ -59,7 +59,7 @@ class MetricItemResultAPI:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this MetricItemResultAPI.
+        r"""Sets the metric of this MetricItemResultAPI.
 
         :param metric: The metric of this MetricItemResultAPI.
         :type metric: :class:`huaweicloudsdkbcs.v2.MetricDemision`
@@ -68,7 +68,7 @@ class MetricItemResultAPI:
 
     @property
     def data_points(self):
-        """Gets the data_points of this MetricItemResultAPI.
+        r"""Gets the data_points of this MetricItemResultAPI.
 
         监控数据信息
 
@@ -79,7 +79,7 @@ class MetricItemResultAPI:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this MetricItemResultAPI.
+        r"""Sets the data_points of this MetricItemResultAPI.
 
         监控数据信息
 

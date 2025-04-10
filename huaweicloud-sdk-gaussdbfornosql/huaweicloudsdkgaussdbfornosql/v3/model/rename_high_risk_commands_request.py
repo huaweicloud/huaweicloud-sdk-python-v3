@@ -25,7 +25,7 @@ class RenameHighRiskCommandsRequest:
     }
 
     def __init__(self, commands=None):
-        """RenameHighRiskCommandsRequest
+        r"""RenameHighRiskCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RenameHighRiskCommandsRequest:
 
     @property
     def commands(self):
-        """Gets the commands of this RenameHighRiskCommandsRequest.
+        r"""Gets the commands of this RenameHighRiskCommandsRequest.
 
         高危命令与对应重命名命令。
 
@@ -53,7 +53,7 @@ class RenameHighRiskCommandsRequest:
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this RenameHighRiskCommandsRequest.
+        r"""Sets the commands of this RenameHighRiskCommandsRequest.
 
         高危命令与对应重命名命令。
 

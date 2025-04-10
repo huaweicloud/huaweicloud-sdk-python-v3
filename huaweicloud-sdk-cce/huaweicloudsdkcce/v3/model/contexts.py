@@ -27,7 +27,7 @@ class Contexts:
     }
 
     def __init__(self, name=None, context=None):
-        """Contexts
+        r"""Contexts
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Contexts:
 
     @property
     def name(self):
-        """Gets the name of this Contexts.
+        r"""Gets the name of this Contexts.
 
         上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
 
@@ -61,7 +61,7 @@ class Contexts:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Contexts.
+        r"""Sets the name of this Contexts.
 
         上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
 
@@ -72,7 +72,7 @@ class Contexts:
 
     @property
     def context(self):
-        """Gets the context of this Contexts.
+        r"""Gets the context of this Contexts.
 
         :return: The context of this Contexts.
         :rtype: :class:`huaweicloudsdkcce.v3.Context`
@@ -81,7 +81,7 @@ class Contexts:
 
     @context.setter
     def context(self, context):
-        """Sets the context of this Contexts.
+        r"""Sets the context of this Contexts.
 
         :param context: The context of this Contexts.
         :type context: :class:`huaweicloudsdkcce.v3.Context`

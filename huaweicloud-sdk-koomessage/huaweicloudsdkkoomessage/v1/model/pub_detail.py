@@ -57,7 +57,7 @@ class PubDetail:
     }
 
     def __init__(self, pub_id=None, oper_time=None, state=None, online_time=None, company_name=None, pub_name=None, logo_img=None, logo_url=None, authorization_files=None, auto_get_port=None, industry=None, pub_abstract=None, signs_for_auto_get_port=None, company_id=None, pub_remark=None, approve_state=None, areas_for_auto_get_port=None):
-        """PubDetail
+        r"""PubDetail
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class PubDetail:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this PubDetail.
+        r"""Gets the pub_id of this PubDetail.
 
         服务号ID。
 
@@ -166,7 +166,7 @@ class PubDetail:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this PubDetail.
+        r"""Sets the pub_id of this PubDetail.
 
         服务号ID。
 
@@ -177,7 +177,7 @@ class PubDetail:
 
     @property
     def oper_time(self):
-        """Gets the oper_time of this PubDetail.
+        r"""Gets the oper_time of this PubDetail.
 
         最新操作时间，格式：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -188,7 +188,7 @@ class PubDetail:
 
     @oper_time.setter
     def oper_time(self, oper_time):
-        """Sets the oper_time of this PubDetail.
+        r"""Sets the oper_time of this PubDetail.
 
         最新操作时间，格式：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -199,7 +199,7 @@ class PubDetail:
 
     @property
     def state(self):
-        """Gets the state of this PubDetail.
+        r"""Gets the state of this PubDetail.
 
         服务号状态。  - 1：未生效 - 2：已生效 - 3：已失效 - 4：已冻结  
 
@@ -210,7 +210,7 @@ class PubDetail:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PubDetail.
+        r"""Sets the state of this PubDetail.
 
         服务号状态。  - 1：未生效 - 2：已生效 - 3：已失效 - 4：已冻结  
 
@@ -221,7 +221,7 @@ class PubDetail:
 
     @property
     def online_time(self):
-        """Gets the online_time of this PubDetail.
+        r"""Gets the online_time of this PubDetail.
 
         上线时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -232,7 +232,7 @@ class PubDetail:
 
     @online_time.setter
     def online_time(self, online_time):
-        """Sets the online_time of this PubDetail.
+        r"""Sets the online_time of this PubDetail.
 
         上线时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -243,7 +243,7 @@ class PubDetail:
 
     @property
     def company_name(self):
-        """Gets the company_name of this PubDetail.
+        r"""Gets the company_name of this PubDetail.
 
         企业名称。
 
@@ -254,7 +254,7 @@ class PubDetail:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this PubDetail.
+        r"""Sets the company_name of this PubDetail.
 
         企业名称。
 
@@ -265,7 +265,7 @@ class PubDetail:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this PubDetail.
+        r"""Gets the pub_name of this PubDetail.
 
         服务号名称。
 
@@ -276,7 +276,7 @@ class PubDetail:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this PubDetail.
+        r"""Sets the pub_name of this PubDetail.
 
         服务号名称。
 
@@ -287,7 +287,7 @@ class PubDetail:
 
     @property
     def logo_img(self):
-        """Gets the logo_img of this PubDetail.
+        r"""Gets the logo_img of this PubDetail.
 
         服务号LOGO图片资源ID。
 
@@ -298,7 +298,7 @@ class PubDetail:
 
     @logo_img.setter
     def logo_img(self, logo_img):
-        """Sets the logo_img of this PubDetail.
+        r"""Sets the logo_img of this PubDetail.
 
         服务号LOGO图片资源ID。
 
@@ -309,7 +309,7 @@ class PubDetail:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this PubDetail.
+        r"""Gets the logo_url of this PubDetail.
 
         服务号LOGO图片URL。
 
@@ -320,7 +320,7 @@ class PubDetail:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this PubDetail.
+        r"""Sets the logo_url of this PubDetail.
 
         服务号LOGO图片URL。
 
@@ -331,7 +331,7 @@ class PubDetail:
 
     @property
     def authorization_files(self):
-        """Gets the authorization_files of this PubDetail.
+        r"""Gets the authorization_files of this PubDetail.
 
         授权证明图片的OBSURL地址。
 
@@ -342,7 +342,7 @@ class PubDetail:
 
     @authorization_files.setter
     def authorization_files(self, authorization_files):
-        """Sets the authorization_files of this PubDetail.
+        r"""Sets the authorization_files of this PubDetail.
 
         授权证明图片的OBSURL地址。
 
@@ -353,7 +353,7 @@ class PubDetail:
 
     @property
     def auto_get_port(self):
-        """Gets the auto_get_port of this PubDetail.
+        r"""Gets the auto_get_port of this PubDetail.
 
         是否授权系统自动收集端口。   - 0：否  - 1：是  
 
@@ -364,7 +364,7 @@ class PubDetail:
 
     @auto_get_port.setter
     def auto_get_port(self, auto_get_port):
-        """Sets the auto_get_port of this PubDetail.
+        r"""Sets the auto_get_port of this PubDetail.
 
         是否授权系统自动收集端口。   - 0：否  - 1：是  
 
@@ -375,7 +375,7 @@ class PubDetail:
 
     @property
     def industry(self):
-        """Gets the industry of this PubDetail.
+        r"""Gets the industry of this PubDetail.
 
         从事行业，默认取服务号所属商家的行业分类。  - 1：金融理财  - 2：社交通讯  - 3：影音娱乐  - 4：旅游出行  - 5：购物  - 6：本地生活  - 7：运动健康  - 8：教育培训  - 9：新闻阅读  - 10：运营商  - 11：其他  
 
@@ -386,7 +386,7 @@ class PubDetail:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this PubDetail.
+        r"""Sets the industry of this PubDetail.
 
         从事行业，默认取服务号所属商家的行业分类。  - 1：金融理财  - 2：社交通讯  - 3：影音娱乐  - 4：旅游出行  - 5：购物  - 6：本地生活  - 7：运动健康  - 8：教育培训  - 9：新闻阅读  - 10：运营商  - 11：其他  
 
@@ -397,7 +397,7 @@ class PubDetail:
 
     @property
     def pub_abstract(self):
-        """Gets the pub_abstract of this PubDetail.
+        r"""Gets the pub_abstract of this PubDetail.
 
         服务号简介。
 
@@ -408,7 +408,7 @@ class PubDetail:
 
     @pub_abstract.setter
     def pub_abstract(self, pub_abstract):
-        """Sets the pub_abstract of this PubDetail.
+        r"""Sets the pub_abstract of this PubDetail.
 
         服务号简介。
 
@@ -419,7 +419,7 @@ class PubDetail:
 
     @property
     def signs_for_auto_get_port(self):
-        """Gets the signs_for_auto_get_port of this PubDetail.
+        r"""Gets the signs_for_auto_get_port of this PubDetail.
 
         自动收集端口使用的签名列表。  > auto_get_port为1时，该字段为必填，每个签名长度为2-18个字符，每个服务号签名不可以重复。 
 
@@ -430,7 +430,7 @@ class PubDetail:
 
     @signs_for_auto_get_port.setter
     def signs_for_auto_get_port(self, signs_for_auto_get_port):
-        """Sets the signs_for_auto_get_port of this PubDetail.
+        r"""Sets the signs_for_auto_get_port of this PubDetail.
 
         自动收集端口使用的签名列表。  > auto_get_port为1时，该字段为必填，每个签名长度为2-18个字符，每个服务号签名不可以重复。 
 
@@ -441,7 +441,7 @@ class PubDetail:
 
     @property
     def company_id(self):
-        """Gets the company_id of this PubDetail.
+        r"""Gets the company_id of this PubDetail.
 
         企业ID。
 
@@ -452,7 +452,7 @@ class PubDetail:
 
     @company_id.setter
     def company_id(self, company_id):
-        """Sets the company_id of this PubDetail.
+        r"""Sets the company_id of this PubDetail.
 
         企业ID。
 
@@ -463,7 +463,7 @@ class PubDetail:
 
     @property
     def pub_remark(self):
-        """Gets the pub_remark of this PubDetail.
+        r"""Gets the pub_remark of this PubDetail.
 
         服务号备注。
 
@@ -474,7 +474,7 @@ class PubDetail:
 
     @pub_remark.setter
     def pub_remark(self, pub_remark):
-        """Sets the pub_remark of this PubDetail.
+        r"""Sets the pub_remark of this PubDetail.
 
         服务号备注。
 
@@ -485,7 +485,7 @@ class PubDetail:
 
     @property
     def approve_state(self):
-        """Gets the approve_state of this PubDetail.
+        r"""Gets the approve_state of this PubDetail.
 
         审核状态。 - 1：审核中 - 2：审核通过 - 3：驳回 
 
@@ -496,7 +496,7 @@ class PubDetail:
 
     @approve_state.setter
     def approve_state(self, approve_state):
-        """Sets the approve_state of this PubDetail.
+        r"""Sets the approve_state of this PubDetail.
 
         审核状态。 - 1：审核中 - 2：审核通过 - 3：驳回 
 
@@ -507,7 +507,7 @@ class PubDetail:
 
     @property
     def areas_for_auto_get_port(self):
-        """Gets the areas_for_auto_get_port of this PubDetail.
+        r"""Gets the areas_for_auto_get_port of this PubDetail.
 
         自动收集端口生效的地区列表。地区取值见《地区名称列表》。 
 
@@ -518,7 +518,7 @@ class PubDetail:
 
     @areas_for_auto_get_port.setter
     def areas_for_auto_get_port(self, areas_for_auto_get_port):
-        """Sets the areas_for_auto_get_port of this PubDetail.
+        r"""Sets the areas_for_auto_get_port of this PubDetail.
 
         自动收集端口生效的地区列表。地区取值见《地区名称列表》。 
 

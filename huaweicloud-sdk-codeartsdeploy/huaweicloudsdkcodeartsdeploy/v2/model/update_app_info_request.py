@@ -25,7 +25,7 @@ class UpdateAppInfoRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAppInfoRequest
+        r"""UpdateAppInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAppInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppInfoRequest.
+        r"""Gets the body of this UpdateAppInfoRequest.
 
         :return: The body of this UpdateAppInfoRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateAppInfoRequestBody`
@@ -52,7 +52,7 @@ class UpdateAppInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppInfoRequest.
+        r"""Sets the body of this UpdateAppInfoRequest.
 
         :param body: The body of this UpdateAppInfoRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateAppInfoRequestBody`

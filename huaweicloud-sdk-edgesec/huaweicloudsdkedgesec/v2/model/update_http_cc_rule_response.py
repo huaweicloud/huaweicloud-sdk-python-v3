@@ -76,7 +76,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, priority=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, mode=None, total_num=None, limit_num=None, limit_period=None, lock_time=None, tag_type=None, tag_index=None, tag_condition=None, unlock_num=None, domain_aggregation=None, conditions=None, action=None, producer=None, time_mode=None, start=None, terminal=None, period_type=None, time_range=None):
-        """UpdateHttpCcRuleResponse
+        r"""UpdateHttpCcRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -219,7 +219,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateHttpCcRuleResponse.
+        r"""Gets the id of this UpdateHttpCcRuleResponse.
 
         规则id
 
@@ -230,7 +230,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateHttpCcRuleResponse.
+        r"""Sets the id of this UpdateHttpCcRuleResponse.
 
         规则id
 
@@ -241,7 +241,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpCcRuleResponse.
+        r"""Gets the name of this UpdateHttpCcRuleResponse.
 
         规则名称
 
@@ -252,7 +252,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpCcRuleResponse.
+        r"""Sets the name of this UpdateHttpCcRuleResponse.
 
         规则名称
 
@@ -263,7 +263,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateHttpCcRuleResponse.
+        r"""Gets the priority of this UpdateHttpCcRuleResponse.
 
         cc规则优先级，越大优先级越高，默认1
 
@@ -274,7 +274,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateHttpCcRuleResponse.
+        r"""Sets the priority of this UpdateHttpCcRuleResponse.
 
         cc规则优先级，越大优先级越高，默认1
 
@@ -285,7 +285,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpCcRuleResponse.
+        r"""Gets the policy_id of this UpdateHttpCcRuleResponse.
 
         规则所在策略id
 
@@ -296,7 +296,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpCcRuleResponse.
+        r"""Sets the policy_id of this UpdateHttpCcRuleResponse.
 
         规则所在策略id
 
@@ -307,7 +307,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateHttpCcRuleResponse.
+        r"""Gets the policy_name of this UpdateHttpCcRuleResponse.
 
         规则所在策略名称
 
@@ -318,7 +318,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateHttpCcRuleResponse.
+        r"""Sets the policy_name of this UpdateHttpCcRuleResponse.
 
         规则所在策略名称
 
@@ -329,7 +329,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateHttpCcRuleResponse.
+        r"""Gets the timestamp of this UpdateHttpCcRuleResponse.
 
         创建规则时间戳
 
@@ -340,7 +340,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateHttpCcRuleResponse.
+        r"""Sets the timestamp of this UpdateHttpCcRuleResponse.
 
         创建规则时间戳
 
@@ -351,7 +351,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpCcRuleResponse.
+        r"""Gets the description of this UpdateHttpCcRuleResponse.
 
         规则描述
 
@@ -362,7 +362,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpCcRuleResponse.
+        r"""Sets the description of this UpdateHttpCcRuleResponse.
 
         规则描述
 
@@ -373,7 +373,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpCcRuleResponse.
+        r"""Gets the status of this UpdateHttpCcRuleResponse.
 
         规则开关状态
 
@@ -384,7 +384,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpCcRuleResponse.
+        r"""Sets the status of this UpdateHttpCcRuleResponse.
 
         规则开关状态
 
@@ -395,7 +395,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this UpdateHttpCcRuleResponse.
+        r"""Gets the mode of this UpdateHttpCcRuleResponse.
 
         规则类型（0：标准/1：高级）
 
@@ -406,7 +406,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this UpdateHttpCcRuleResponse.
+        r"""Sets the mode of this UpdateHttpCcRuleResponse.
 
         规则类型（0：标准/1：高级）
 
@@ -417,7 +417,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this UpdateHttpCcRuleResponse.
+        r"""Gets the total_num of this UpdateHttpCcRuleResponse.
 
         所有用户的周期内请求次数
 
@@ -428,7 +428,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this UpdateHttpCcRuleResponse.
+        r"""Sets the total_num of this UpdateHttpCcRuleResponse.
 
         所有用户的周期内请求次数
 
@@ -439,7 +439,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this UpdateHttpCcRuleResponse.
+        r"""Gets the limit_num of this UpdateHttpCcRuleResponse.
 
         单个用户的周期内请求次数
 
@@ -450,7 +450,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this UpdateHttpCcRuleResponse.
+        r"""Sets the limit_num of this UpdateHttpCcRuleResponse.
 
         单个用户的周期内请求次数
 
@@ -461,7 +461,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def limit_period(self):
-        """Gets the limit_period of this UpdateHttpCcRuleResponse.
+        r"""Gets the limit_period of this UpdateHttpCcRuleResponse.
 
         限速周期
 
@@ -472,7 +472,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @limit_period.setter
     def limit_period(self, limit_period):
-        """Sets the limit_period of this UpdateHttpCcRuleResponse.
+        r"""Sets the limit_period of this UpdateHttpCcRuleResponse.
 
         限速周期
 
@@ -483,7 +483,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this UpdateHttpCcRuleResponse.
+        r"""Gets the lock_time of this UpdateHttpCcRuleResponse.
 
         锁定时长
 
@@ -494,7 +494,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this UpdateHttpCcRuleResponse.
+        r"""Sets the lock_time of this UpdateHttpCcRuleResponse.
 
         锁定时长
 
@@ -505,7 +505,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this UpdateHttpCcRuleResponse.
+        r"""Gets the tag_type of this UpdateHttpCcRuleResponse.
 
         防护模式
 
@@ -516,7 +516,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this UpdateHttpCcRuleResponse.
+        r"""Sets the tag_type of this UpdateHttpCcRuleResponse.
 
         防护模式
 
@@ -527,7 +527,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def tag_index(self):
-        """Gets the tag_index of this UpdateHttpCcRuleResponse.
+        r"""Gets the tag_index of this UpdateHttpCcRuleResponse.
 
         防护模式标签
 
@@ -538,7 +538,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @tag_index.setter
     def tag_index(self, tag_index):
-        """Sets the tag_index of this UpdateHttpCcRuleResponse.
+        r"""Sets the tag_index of this UpdateHttpCcRuleResponse.
 
         防护模式标签
 
@@ -549,7 +549,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def tag_condition(self):
-        """Gets the tag_condition of this UpdateHttpCcRuleResponse.
+        r"""Gets the tag_condition of this UpdateHttpCcRuleResponse.
 
         :return: The tag_condition of this UpdateHttpCcRuleResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpCcRuleCondition`
@@ -558,7 +558,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @tag_condition.setter
     def tag_condition(self, tag_condition):
-        """Sets the tag_condition of this UpdateHttpCcRuleResponse.
+        r"""Sets the tag_condition of this UpdateHttpCcRuleResponse.
 
         :param tag_condition: The tag_condition of this UpdateHttpCcRuleResponse.
         :type tag_condition: :class:`huaweicloudsdkedgesec.v2.HttpCcRuleCondition`
@@ -567,7 +567,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def unlock_num(self):
-        """Gets the unlock_num of this UpdateHttpCcRuleResponse.
+        r"""Gets the unlock_num of this UpdateHttpCcRuleResponse.
 
         放行次数
 
@@ -578,7 +578,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @unlock_num.setter
     def unlock_num(self, unlock_num):
-        """Sets the unlock_num of this UpdateHttpCcRuleResponse.
+        r"""Sets the unlock_num of this UpdateHttpCcRuleResponse.
 
         放行次数
 
@@ -589,7 +589,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def domain_aggregation(self):
-        """Gets the domain_aggregation of this UpdateHttpCcRuleResponse.
+        r"""Gets the domain_aggregation of this UpdateHttpCcRuleResponse.
 
         是否聚合域名
 
@@ -600,7 +600,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @domain_aggregation.setter
     def domain_aggregation(self, domain_aggregation):
-        """Sets the domain_aggregation of this UpdateHttpCcRuleResponse.
+        r"""Sets the domain_aggregation of this UpdateHttpCcRuleResponse.
 
         是否聚合域名
 
@@ -611,7 +611,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateHttpCcRuleResponse.
+        r"""Gets the conditions of this UpdateHttpCcRuleResponse.
 
         条件列表参数较为复杂，存在级联关系，建议同时使用控制台上的添加误报屏蔽规则，单击F12键查看路径后缀为/cc-rule，方法为POST的请求参数，便于理解参数的填写
 
@@ -622,7 +622,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateHttpCcRuleResponse.
+        r"""Sets the conditions of this UpdateHttpCcRuleResponse.
 
         条件列表参数较为复杂，存在级联关系，建议同时使用控制台上的添加误报屏蔽规则，单击F12键查看路径后缀为/cc-rule，方法为POST的请求参数，便于理解参数的填写
 
@@ -633,7 +633,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this UpdateHttpCcRuleResponse.
+        r"""Gets the action of this UpdateHttpCcRuleResponse.
 
         :return: The action of this UpdateHttpCcRuleResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -642,7 +642,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateHttpCcRuleResponse.
+        r"""Sets the action of this UpdateHttpCcRuleResponse.
 
         :param action: The action of this UpdateHttpCcRuleResponse.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -651,7 +651,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this UpdateHttpCcRuleResponse.
+        r"""Gets the producer of this UpdateHttpCcRuleResponse.
 
         创建来源
 
@@ -662,7 +662,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this UpdateHttpCcRuleResponse.
+        r"""Sets the producer of this UpdateHttpCcRuleResponse.
 
         创建来源
 
@@ -673,7 +673,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this UpdateHttpCcRuleResponse.
+        r"""Gets the time_mode of this UpdateHttpCcRuleResponse.
 
         生效模式
 
@@ -684,7 +684,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this UpdateHttpCcRuleResponse.
+        r"""Sets the time_mode of this UpdateHttpCcRuleResponse.
 
         生效模式
 
@@ -695,7 +695,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def start(self):
-        """Gets the start of this UpdateHttpCcRuleResponse.
+        r"""Gets the start of this UpdateHttpCcRuleResponse.
 
         customize生效时间区间开始
 
@@ -706,7 +706,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @start.setter
     def start(self, start):
-        """Sets the start of this UpdateHttpCcRuleResponse.
+        r"""Sets the start of this UpdateHttpCcRuleResponse.
 
         customize生效时间区间开始
 
@@ -717,7 +717,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def terminal(self):
-        """Gets the terminal of this UpdateHttpCcRuleResponse.
+        r"""Gets the terminal of this UpdateHttpCcRuleResponse.
 
         customize生效时间区间结束
 
@@ -728,7 +728,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this UpdateHttpCcRuleResponse.
+        r"""Sets the terminal of this UpdateHttpCcRuleResponse.
 
         customize生效时间区间结束
 
@@ -739,7 +739,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def period_type(self):
-        """Gets the period_type of this UpdateHttpCcRuleResponse.
+        r"""Gets the period_type of this UpdateHttpCcRuleResponse.
 
         period每日生效时间类型，目前只有day
 
@@ -750,7 +750,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this UpdateHttpCcRuleResponse.
+        r"""Sets the period_type of this UpdateHttpCcRuleResponse.
 
         period每日生效时间类型，目前只有day
 
@@ -761,7 +761,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @property
     def time_range(self):
-        """Gets the time_range of this UpdateHttpCcRuleResponse.
+        r"""Gets the time_range of this UpdateHttpCcRuleResponse.
 
         period每日生效时间区间
 
@@ -772,7 +772,7 @@ class UpdateHttpCcRuleResponse(SdkResponse):
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this UpdateHttpCcRuleResponse.
+        r"""Sets the time_range of this UpdateHttpCcRuleResponse.
 
         period每日生效时间区间
 

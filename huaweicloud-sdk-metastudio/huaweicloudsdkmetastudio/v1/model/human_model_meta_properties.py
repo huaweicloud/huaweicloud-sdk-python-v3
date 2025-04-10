@@ -27,7 +27,7 @@ class HumanModelMetaProperties:
     }
 
     def __init__(self, whole_model_base_file_id=None, load_model_file_id=None):
-        """HumanModelMetaProperties
+        r"""HumanModelMetaProperties
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HumanModelMetaProperties:
 
     @property
     def whole_model_base_file_id(self):
-        """Gets the whole_model_base_file_id of this HumanModelMetaProperties.
+        r"""Gets the whole_model_base_file_id of this HumanModelMetaProperties.
 
         **参数解释**： 用于生成WHOLE_MODEL的模型file_id **约束限制**： 如果当前记录的信息与MAIN文件的file_id一致，那就认为已经生成过，无需再进行全模型导出 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -61,7 +61,7 @@ class HumanModelMetaProperties:
 
     @whole_model_base_file_id.setter
     def whole_model_base_file_id(self, whole_model_base_file_id):
-        """Sets the whole_model_base_file_id of this HumanModelMetaProperties.
+        r"""Sets the whole_model_base_file_id of this HumanModelMetaProperties.
 
         **参数解释**： 用于生成WHOLE_MODEL的模型file_id **约束限制**： 如果当前记录的信息与MAIN文件的file_id一致，那就认为已经生成过，无需再进行全模型导出 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -72,7 +72,7 @@ class HumanModelMetaProperties:
 
     @property
     def load_model_file_id(self):
-        """Gets the load_model_file_id of this HumanModelMetaProperties.
+        r"""Gets the load_model_file_id of this HumanModelMetaProperties.
 
         **参数解释**： 当前用于渲染加载的模型file_id **约束限制**： 若为空或未匹配到，则使用MAIN文件 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -83,7 +83,7 @@ class HumanModelMetaProperties:
 
     @load_model_file_id.setter
     def load_model_file_id(self, load_model_file_id):
-        """Sets the load_model_file_id of this HumanModelMetaProperties.
+        r"""Sets the load_model_file_id of this HumanModelMetaProperties.
 
         **参数解释**： 当前用于渲染加载的模型file_id **约束限制**： 若为空或未匹配到，则使用MAIN文件 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 

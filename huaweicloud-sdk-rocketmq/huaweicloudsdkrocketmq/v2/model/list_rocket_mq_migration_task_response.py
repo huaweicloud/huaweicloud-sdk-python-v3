@@ -28,7 +28,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, task=None):
-        """ListRocketMqMigrationTaskResponse
+        r"""ListRocketMqMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRocketMqMigrationTaskResponse.
+        r"""Gets the total of this ListRocketMqMigrationTaskResponse.
 
         元数据迁移任务总数。
 
@@ -62,7 +62,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRocketMqMigrationTaskResponse.
+        r"""Sets the total of this ListRocketMqMigrationTaskResponse.
 
         元数据迁移任务总数。
 
@@ -73,7 +73,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
 
     @property
     def task(self):
-        """Gets the task of this ListRocketMqMigrationTaskResponse.
+        r"""Gets the task of this ListRocketMqMigrationTaskResponse.
 
         元数据迁移任务列表。
 
@@ -84,7 +84,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
 
     @task.setter
     def task(self, task):
-        """Sets the task of this ListRocketMqMigrationTaskResponse.
+        r"""Sets the task of this ListRocketMqMigrationTaskResponse.
 
         元数据迁移任务列表。
 

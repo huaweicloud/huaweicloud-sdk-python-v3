@@ -27,7 +27,7 @@ class ListInstanceMetricRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """ListInstanceMetricRequest
+        r"""ListInstanceMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListInstanceMetricRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this ListInstanceMetricRequest.
+        r"""Gets the blockchain_id of this ListInstanceMetricRequest.
 
         区块链服务id。
 
@@ -60,7 +60,7 @@ class ListInstanceMetricRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this ListInstanceMetricRequest.
+        r"""Sets the blockchain_id of this ListInstanceMetricRequest.
 
         区块链服务id。
 
@@ -71,7 +71,7 @@ class ListInstanceMetricRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstanceMetricRequest.
+        r"""Gets the body of this ListInstanceMetricRequest.
 
         :return: The body of this ListInstanceMetricRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`
@@ -80,7 +80,7 @@ class ListInstanceMetricRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstanceMetricRequest.
+        r"""Sets the body of this ListInstanceMetricRequest.
 
         :param body: The body of this ListInstanceMetricRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`

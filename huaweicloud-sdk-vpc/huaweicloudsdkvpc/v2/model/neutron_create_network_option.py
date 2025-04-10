@@ -33,7 +33,7 @@ class NeutronCreateNetworkOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, shared=None, providernetwork_type=None, port_security_enabled=None):
-        """NeutronCreateNetworkOption
+        r"""NeutronCreateNetworkOption
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NeutronCreateNetworkOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreateNetworkOption.
+        r"""Gets the name of this NeutronCreateNetworkOption.
 
         功能说明：网络名称 取值范围：0-255个字符 约束：不能为admin_external_net
 
@@ -82,7 +82,7 @@ class NeutronCreateNetworkOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreateNetworkOption.
+        r"""Sets the name of this NeutronCreateNetworkOption.
 
         功能说明：网络名称 取值范围：0-255个字符 约束：不能为admin_external_net
 
@@ -93,7 +93,7 @@ class NeutronCreateNetworkOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronCreateNetworkOption.
+        r"""Gets the admin_state_up of this NeutronCreateNetworkOption.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -104,7 +104,7 @@ class NeutronCreateNetworkOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronCreateNetworkOption.
+        r"""Sets the admin_state_up of this NeutronCreateNetworkOption.
 
         功能说明：资源的管理状态 取值范围：true、false 约束：只支持true
 
@@ -115,7 +115,7 @@ class NeutronCreateNetworkOption:
 
     @property
     def shared(self):
-        """Gets the shared of this NeutronCreateNetworkOption.
+        r"""Gets the shared of this NeutronCreateNetworkOption.
 
         功能说明：是否支持跨租户共享 取值范围：true、false
 
@@ -126,7 +126,7 @@ class NeutronCreateNetworkOption:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this NeutronCreateNetworkOption.
+        r"""Sets the shared of this NeutronCreateNetworkOption.
 
         功能说明：是否支持跨租户共享 取值范围：true、false
 
@@ -137,7 +137,7 @@ class NeutronCreateNetworkOption:
 
     @property
     def providernetwork_type(self):
-        """Gets the providernetwork_type of this NeutronCreateNetworkOption.
+        r"""Gets the providernetwork_type of this NeutronCreateNetworkOption.
 
         功能说明：扩展属性：网络类型。管理员属性，普通租户不可见，允许 geneve类型租户执行操作。 取值范围：vxlan, geneve
 
@@ -148,7 +148,7 @@ class NeutronCreateNetworkOption:
 
     @providernetwork_type.setter
     def providernetwork_type(self, providernetwork_type):
-        """Sets the providernetwork_type of this NeutronCreateNetworkOption.
+        r"""Sets the providernetwork_type of this NeutronCreateNetworkOption.
 
         功能说明：扩展属性：网络类型。管理员属性，普通租户不可见，允许 geneve类型租户执行操作。 取值范围：vxlan, geneve
 
@@ -159,7 +159,7 @@ class NeutronCreateNetworkOption:
 
     @property
     def port_security_enabled(self):
-        """Gets the port_security_enabled of this NeutronCreateNetworkOption.
+        r"""Gets the port_security_enabled of this NeutronCreateNetworkOption.
 
         功能说明：端口安全使能标记 取值范围：true(启用)、false(禁用) 约束：如果不使能，则network下所有虚机的安全组和dhcp防欺骗不生效
 
@@ -170,7 +170,7 @@ class NeutronCreateNetworkOption:
 
     @port_security_enabled.setter
     def port_security_enabled(self, port_security_enabled):
-        """Sets the port_security_enabled of this NeutronCreateNetworkOption.
+        r"""Sets the port_security_enabled of this NeutronCreateNetworkOption.
 
         功能说明：端口安全使能标记 取值范围：true(启用)、false(禁用) 约束：如果不使能，则network下所有虚机的安全组和dhcp防欺骗不生效
 

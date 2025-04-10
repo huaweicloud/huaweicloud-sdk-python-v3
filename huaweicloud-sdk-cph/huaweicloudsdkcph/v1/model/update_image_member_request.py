@@ -27,7 +27,7 @@ class UpdateImageMemberRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """UpdateImageMemberRequest
+        r"""UpdateImageMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateImageMemberRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this UpdateImageMemberRequest.
+        r"""Gets the image_id of this UpdateImageMemberRequest.
 
         镜像id。
 
@@ -60,7 +60,7 @@ class UpdateImageMemberRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this UpdateImageMemberRequest.
+        r"""Sets the image_id of this UpdateImageMemberRequest.
 
         镜像id。
 
@@ -71,7 +71,7 @@ class UpdateImageMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateImageMemberRequest.
+        r"""Gets the body of this UpdateImageMemberRequest.
 
         :return: The body of this UpdateImageMemberRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateImageMemberRequestBody`
@@ -80,7 +80,7 @@ class UpdateImageMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateImageMemberRequest.
+        r"""Sets the body of this UpdateImageMemberRequest.
 
         :param body: The body of this UpdateImageMemberRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UpdateImageMemberRequestBody`

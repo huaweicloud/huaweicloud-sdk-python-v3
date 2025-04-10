@@ -28,7 +28,7 @@ class ListProjectsResponse(SdkResponse):
     }
 
     def __init__(self, projects=None, links=None):
-        """ListProjectsResponse
+        r"""ListProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectsResponse(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this ListProjectsResponse.
+        r"""Gets the projects of this ListProjectsResponse.
 
         项目信息
 
@@ -62,7 +62,7 @@ class ListProjectsResponse(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ListProjectsResponse.
+        r"""Sets the projects of this ListProjectsResponse.
 
         项目信息
 
@@ -73,7 +73,7 @@ class ListProjectsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListProjectsResponse.
+        r"""Gets the links of this ListProjectsResponse.
 
         :return: The links of this ListProjectsResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.SelfLinksInfo`
@@ -82,7 +82,7 @@ class ListProjectsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListProjectsResponse.
+        r"""Sets the links of this ListProjectsResponse.
 
         :param links: The links of this ListProjectsResponse.
         :type links: :class:`huaweicloudsdkcbr.v1.SelfLinksInfo`

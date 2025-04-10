@@ -27,7 +27,7 @@ class UploadMediaRequestBody:
     }
 
     def __init__(self, file=None, file_type=None):
-        """UploadMediaRequestBody
+        r"""UploadMediaRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UploadMediaRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadMediaRequestBody.
+        r"""Gets the file of this UploadMediaRequestBody.
 
         图片资源。  > 文件格式与文件名后缀需保持一致，请勿修改原始文件后缀，否则导致资源上传失败。 
 
@@ -59,7 +59,7 @@ class UploadMediaRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadMediaRequestBody.
+        r"""Sets the file of this UploadMediaRequestBody.
 
         图片资源。  > 文件格式与文件名后缀需保持一致，请勿修改原始文件后缀，否则导致资源上传失败。 
 
@@ -70,7 +70,7 @@ class UploadMediaRequestBody:
 
     @property
     def file_type(self):
-        """Gets the file_type of this UploadMediaRequestBody.
+        r"""Gets the file_type of this UploadMediaRequestBody.
 
         文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。支持jpg、bmp、png和jpeg格式，分辨率大于等于1440*810且比例为16:9，大小不超过4M。 - FASTAPP_LOGO：上传快应用LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于192*192且比例为1:1，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
 
@@ -81,7 +81,7 @@ class UploadMediaRequestBody:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this UploadMediaRequestBody.
+        r"""Sets the file_type of this UploadMediaRequestBody.
 
         文件类型。 - PUB_LOGO：上传服务号LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于240*240且比例为1:1，大小不超过100K。 - BG_IMAGE：上传服务号主页背景图。支持jpg、bmp、png和jpeg格式，分辨率大于等于1440*810且比例为16:9，大小不超过4M。 - FASTAPP_LOGO：上传快应用LOGO。支持jpg、bmp、png和jpeg格式，分辨率大于等于192*192且比例为1:1，大小不超过4M。 - OTHER：上传授权证明和营业执照等 
 

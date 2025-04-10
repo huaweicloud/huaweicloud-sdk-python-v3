@@ -29,7 +29,7 @@ class FlinkJobMetricInfo:
     }
 
     def __init__(self, name=None, records=None, corrupted_records=None):
-        """FlinkJobMetricInfo
+        r"""FlinkJobMetricInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlinkJobMetricInfo:
 
     @property
     def name(self):
-        """Gets the name of this FlinkJobMetricInfo.
+        r"""Gets the name of this FlinkJobMetricInfo.
 
         输入流或输出流名称。
 
@@ -68,7 +68,7 @@ class FlinkJobMetricInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlinkJobMetricInfo.
+        r"""Sets the name of this FlinkJobMetricInfo.
 
         输入流或输出流名称。
 
@@ -79,7 +79,7 @@ class FlinkJobMetricInfo:
 
     @property
     def records(self):
-        """Gets the records of this FlinkJobMetricInfo.
+        r"""Gets the records of this FlinkJobMetricInfo.
 
         总记录数。
 
@@ -90,7 +90,7 @@ class FlinkJobMetricInfo:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this FlinkJobMetricInfo.
+        r"""Sets the records of this FlinkJobMetricInfo.
 
         总记录数。
 
@@ -101,7 +101,7 @@ class FlinkJobMetricInfo:
 
     @property
     def corrupted_records(self):
-        """Gets the corrupted_records of this FlinkJobMetricInfo.
+        r"""Gets the corrupted_records of this FlinkJobMetricInfo.
 
         脏数据记录数。
 
@@ -112,7 +112,7 @@ class FlinkJobMetricInfo:
 
     @corrupted_records.setter
     def corrupted_records(self, corrupted_records):
-        """Sets the corrupted_records of this FlinkJobMetricInfo.
+        r"""Sets the corrupted_records of this FlinkJobMetricInfo.
 
         脏数据记录数。
 

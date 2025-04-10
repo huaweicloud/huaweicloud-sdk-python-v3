@@ -25,7 +25,7 @@ class ShowAppRequest:
     }
 
     def __init__(self, app_name=None):
-        """ShowAppRequest
+        r"""ShowAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAppRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowAppRequest.
+        r"""Gets the app_name of this ShowAppRequest.
 
         需要查询的App名称。
 
@@ -53,7 +53,7 @@ class ShowAppRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowAppRequest.
+        r"""Sets the app_name of this ShowAppRequest.
 
         需要查询的App名称。
 

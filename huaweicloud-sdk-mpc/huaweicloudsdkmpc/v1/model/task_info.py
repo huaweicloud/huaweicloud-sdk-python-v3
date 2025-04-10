@@ -39,7 +39,7 @@ class TaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None, output_file_name=None, input=None):
-        """TaskInfo
+        r"""TaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class TaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskInfo.
+        r"""Gets the task_id of this TaskInfo.
 
         任务Id
 
@@ -103,7 +103,7 @@ class TaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskInfo.
+        r"""Sets the task_id of this TaskInfo.
 
         任务Id
 
@@ -114,7 +114,7 @@ class TaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this TaskInfo.
+        r"""Gets the status of this TaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -125,7 +125,7 @@ class TaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskInfo.
+        r"""Sets the status of this TaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -136,7 +136,7 @@ class TaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskInfo.
+        r"""Gets the create_time of this TaskInfo.
 
         任务启动时间 
 
@@ -147,7 +147,7 @@ class TaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskInfo.
+        r"""Sets the create_time of this TaskInfo.
 
         任务启动时间 
 
@@ -158,7 +158,7 @@ class TaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TaskInfo.
+        r"""Gets the end_time of this TaskInfo.
 
         任务结束时间 
 
@@ -169,7 +169,7 @@ class TaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TaskInfo.
+        r"""Sets the end_time of this TaskInfo.
 
         任务结束时间 
 
@@ -180,7 +180,7 @@ class TaskInfo:
 
     @property
     def output(self):
-        """Gets the output of this TaskInfo.
+        r"""Gets the output of this TaskInfo.
 
         :return: The output of this TaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -189,7 +189,7 @@ class TaskInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this TaskInfo.
+        r"""Sets the output of this TaskInfo.
 
         :param output: The output of this TaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -198,7 +198,7 @@ class TaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this TaskInfo.
+        r"""Gets the description of this TaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -209,7 +209,7 @@ class TaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskInfo.
+        r"""Sets the description of this TaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -220,7 +220,7 @@ class TaskInfo:
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this TaskInfo.
+        r"""Gets the output_file_name of this TaskInfo.
 
         输出文件名。 
 
@@ -231,7 +231,7 @@ class TaskInfo:
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this TaskInfo.
+        r"""Sets the output_file_name of this TaskInfo.
 
         输出文件名。 
 
@@ -242,7 +242,7 @@ class TaskInfo:
 
     @property
     def input(self):
-        """Gets the input of this TaskInfo.
+        r"""Gets the input of this TaskInfo.
 
         :return: The input of this TaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -251,7 +251,7 @@ class TaskInfo:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this TaskInfo.
+        r"""Sets the input of this TaskInfo.
 
         :param input: The input of this TaskInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

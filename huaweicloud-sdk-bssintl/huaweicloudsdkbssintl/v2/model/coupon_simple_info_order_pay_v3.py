@@ -27,7 +27,7 @@ class CouponSimpleInfoOrderPayV3:
     }
 
     def __init__(self, id=None, type=None):
-        """CouponSimpleInfoOrderPayV3
+        r"""CouponSimpleInfoOrderPayV3
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CouponSimpleInfoOrderPayV3:
 
     @property
     def id(self):
-        """Gets the id of this CouponSimpleInfoOrderPayV3.
+        r"""Gets the id of this CouponSimpleInfoOrderPayV3.
 
         优惠券ID。
 
@@ -59,7 +59,7 @@ class CouponSimpleInfoOrderPayV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CouponSimpleInfoOrderPayV3.
+        r"""Sets the id of this CouponSimpleInfoOrderPayV3.
 
         优惠券ID。
 
@@ -70,7 +70,7 @@ class CouponSimpleInfoOrderPayV3:
 
     @property
     def type(self):
-        """Gets the type of this CouponSimpleInfoOrderPayV3.
+        r"""Gets the type of this CouponSimpleInfoOrderPayV3.
 
         优惠券类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
 
@@ -81,7 +81,7 @@ class CouponSimpleInfoOrderPayV3:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CouponSimpleInfoOrderPayV3.
+        r"""Sets the type of this CouponSimpleInfoOrderPayV3.
 
         优惠券类型：300:折扣券 301:促销代金券 302:促销现金券 303:促销储值卡
 

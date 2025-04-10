@@ -24,7 +24,7 @@ class CreateAutoCreatePolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateAutoCreatePolicyResponse
+        r"""CreateAutoCreatePolicyResponse
 
         The model defined in huaweicloud sdk
 

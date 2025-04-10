@@ -25,7 +25,7 @@ class InterfaceAttachableQuantity:
     }
 
     def __init__(self, free_nic=None):
-        """InterfaceAttachableQuantity
+        r"""InterfaceAttachableQuantity
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InterfaceAttachableQuantity:
 
     @property
     def free_nic(self):
-        """Gets the free_nic of this InterfaceAttachableQuantity.
+        r"""Gets the free_nic of this InterfaceAttachableQuantity.
 
         云服务器剩余可挂载网卡数量
 
@@ -54,7 +54,7 @@ class InterfaceAttachableQuantity:
 
     @free_nic.setter
     def free_nic(self, free_nic):
-        """Sets the free_nic of this InterfaceAttachableQuantity.
+        r"""Sets the free_nic of this InterfaceAttachableQuantity.
 
         云服务器剩余可挂载网卡数量
 

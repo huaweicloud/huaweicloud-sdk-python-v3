@@ -35,7 +35,7 @@ class ListRoutetableOption:
     }
 
     def __init__(self, id=None, name=None, vpc_id=None, domain_id=None, description=None, default=None):
-        """ListRoutetableOption
+        r"""ListRoutetableOption
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListRoutetableOption:
 
     @property
     def id(self):
-        """Gets the id of this ListRoutetableOption.
+        r"""Gets the id of this ListRoutetableOption.
 
         路由表ID  取值范围：标准UUID
 
@@ -89,7 +89,7 @@ class ListRoutetableOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRoutetableOption.
+        r"""Sets the id of this ListRoutetableOption.
 
         路由表ID  取值范围：标准UUID
 
@@ -100,7 +100,7 @@ class ListRoutetableOption:
 
     @property
     def name(self):
-        """Gets the name of this ListRoutetableOption.
+        r"""Gets the name of this ListRoutetableOption.
 
         路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -111,7 +111,7 @@ class ListRoutetableOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRoutetableOption.
+        r"""Sets the name of this ListRoutetableOption.
 
         路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -122,7 +122,7 @@ class ListRoutetableOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListRoutetableOption.
+        r"""Gets the vpc_id of this ListRoutetableOption.
 
         路由表所在的虚拟私有云ID
 
@@ -133,7 +133,7 @@ class ListRoutetableOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListRoutetableOption.
+        r"""Sets the vpc_id of this ListRoutetableOption.
 
         路由表所在的虚拟私有云ID
 
@@ -144,7 +144,7 @@ class ListRoutetableOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListRoutetableOption.
+        r"""Gets the domain_id of this ListRoutetableOption.
 
         帐号ID
 
@@ -155,7 +155,7 @@ class ListRoutetableOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListRoutetableOption.
+        r"""Sets the domain_id of this ListRoutetableOption.
 
         帐号ID
 
@@ -166,7 +166,7 @@ class ListRoutetableOption:
 
     @property
     def description(self):
-        """Gets the description of this ListRoutetableOption.
+        r"""Gets the description of this ListRoutetableOption.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -177,7 +177,7 @@ class ListRoutetableOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListRoutetableOption.
+        r"""Sets the description of this ListRoutetableOption.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -188,7 +188,7 @@ class ListRoutetableOption:
 
     @property
     def default(self):
-        """Gets the default of this ListRoutetableOption.
+        r"""Gets the default of this ListRoutetableOption.
 
         是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 
@@ -199,7 +199,7 @@ class ListRoutetableOption:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ListRoutetableOption.
+        r"""Sets the default of this ListRoutetableOption.
 
         是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 

@@ -26,7 +26,7 @@ class ShowFactoryEnvResponse(SdkResponse):
     }
 
     def __init__(self, params=None):
-        """ShowFactoryEnvResponse
+        r"""ShowFactoryEnvResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowFactoryEnvResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowFactoryEnvResponse.
+        r"""Gets the params of this ShowFactoryEnvResponse.
 
         环境变量实体信息
 
@@ -55,7 +55,7 @@ class ShowFactoryEnvResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowFactoryEnvResponse.
+        r"""Sets the params of this ShowFactoryEnvResponse.
 
         环境变量实体信息
 

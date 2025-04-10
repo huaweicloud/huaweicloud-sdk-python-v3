@@ -27,7 +27,7 @@ class UpdateCopyStateRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateCopyStateRequest
+        r"""UpdateCopyStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCopyStateRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateCopyStateRequest.
+        r"""Gets the source_id of this UpdateCopyStateRequest.
 
         源端服务器在主机迁移服务中的ID
 
@@ -60,7 +60,7 @@ class UpdateCopyStateRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateCopyStateRequest.
+        r"""Sets the source_id of this UpdateCopyStateRequest.
 
         源端服务器在主机迁移服务中的ID
 
@@ -71,7 +71,7 @@ class UpdateCopyStateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCopyStateRequest.
+        r"""Gets the body of this UpdateCopyStateRequest.
 
         :return: The body of this UpdateCopyStateRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PutCopyStateReq`
@@ -80,7 +80,7 @@ class UpdateCopyStateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCopyStateRequest.
+        r"""Sets the body of this UpdateCopyStateRequest.
 
         :param body: The body of this UpdateCopyStateRequest.
         :type body: :class:`huaweicloudsdksms.v3.PutCopyStateReq`

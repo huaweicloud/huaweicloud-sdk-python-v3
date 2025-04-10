@@ -31,7 +31,7 @@ class AnticrawlerCondition:
     }
 
     def __init__(self, category=None, logic_operation=None, contents=None, value_list_id=None):
-        """AnticrawlerCondition
+        r"""AnticrawlerCondition
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AnticrawlerCondition:
 
     @property
     def category(self):
-        """Gets the category of this AnticrawlerCondition.
+        r"""Gets the category of this AnticrawlerCondition.
 
         字段类型
 
@@ -75,7 +75,7 @@ class AnticrawlerCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AnticrawlerCondition.
+        r"""Sets the category of this AnticrawlerCondition.
 
         字段类型
 
@@ -86,7 +86,7 @@ class AnticrawlerCondition:
 
     @property
     def logic_operation(self):
-        """Gets the logic_operation of this AnticrawlerCondition.
+        r"""Gets the logic_operation of this AnticrawlerCondition.
 
         条件列表匹配逻辑, 包括：contain、not_contain、equal、not_equal、prefix、not_prefix、suffix、not_suffix、contain_any、not_contain_all、equal_any、not_equal_all、prefix_any、not_prefix_all、suffix_any、not_suffix_all
 
@@ -97,7 +97,7 @@ class AnticrawlerCondition:
 
     @logic_operation.setter
     def logic_operation(self, logic_operation):
-        """Sets the logic_operation of this AnticrawlerCondition.
+        r"""Sets the logic_operation of this AnticrawlerCondition.
 
         条件列表匹配逻辑, 包括：contain、not_contain、equal、not_equal、prefix、not_prefix、suffix、not_suffix、contain_any、not_contain_all、equal_any、not_equal_all、prefix_any、not_prefix_all、suffix_any、not_suffix_all
 
@@ -108,7 +108,7 @@ class AnticrawlerCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this AnticrawlerCondition.
+        r"""Gets the contents of this AnticrawlerCondition.
 
         条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
 
@@ -119,7 +119,7 @@ class AnticrawlerCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this AnticrawlerCondition.
+        r"""Sets the contents of this AnticrawlerCondition.
 
         条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
 
@@ -130,7 +130,7 @@ class AnticrawlerCondition:
 
     @property
     def value_list_id(self):
-        """Gets the value_list_id of this AnticrawlerCondition.
+        r"""Gets the value_list_id of this AnticrawlerCondition.
 
         引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
 
@@ -141,7 +141,7 @@ class AnticrawlerCondition:
 
     @value_list_id.setter
     def value_list_id(self, value_list_id):
-        """Sets the value_list_id of this AnticrawlerCondition.
+        r"""Sets the value_list_id of this AnticrawlerCondition.
 
         引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
 

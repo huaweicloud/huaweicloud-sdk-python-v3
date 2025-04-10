@@ -51,7 +51,7 @@ class RedisProgress:
     }
 
     def __init__(self, bytes_done=None, byte_left=None, tables_done=None, tables_left=None, table_progress=None, total_progress=None, redis_rate=None, estimated_time=None, completed=None, initialed=None, fail_count=None, redistributing=None, status=None, pause_by_user=None):
-        """RedisProgress
+        r"""RedisProgress
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class RedisProgress:
 
     @property
     def bytes_done(self):
-        """Gets the bytes_done of this RedisProgress.
+        r"""Gets the bytes_done of this RedisProgress.
 
         已完成字节数
 
@@ -145,7 +145,7 @@ class RedisProgress:
 
     @bytes_done.setter
     def bytes_done(self, bytes_done):
-        """Sets the bytes_done of this RedisProgress.
+        r"""Sets the bytes_done of this RedisProgress.
 
         已完成字节数
 
@@ -156,7 +156,7 @@ class RedisProgress:
 
     @property
     def byte_left(self):
-        """Gets the byte_left of this RedisProgress.
+        r"""Gets the byte_left of this RedisProgress.
 
         剩余字节数
 
@@ -167,7 +167,7 @@ class RedisProgress:
 
     @byte_left.setter
     def byte_left(self, byte_left):
-        """Sets the byte_left of this RedisProgress.
+        r"""Sets the byte_left of this RedisProgress.
 
         剩余字节数
 
@@ -178,7 +178,7 @@ class RedisProgress:
 
     @property
     def tables_done(self):
-        """Gets the tables_done of this RedisProgress.
+        r"""Gets the tables_done of this RedisProgress.
 
         完成表数量
 
@@ -189,7 +189,7 @@ class RedisProgress:
 
     @tables_done.setter
     def tables_done(self, tables_done):
-        """Sets the tables_done of this RedisProgress.
+        r"""Sets the tables_done of this RedisProgress.
 
         完成表数量
 
@@ -200,7 +200,7 @@ class RedisProgress:
 
     @property
     def tables_left(self):
-        """Gets the tables_left of this RedisProgress.
+        r"""Gets the tables_left of this RedisProgress.
 
         剩余表数量
 
@@ -211,7 +211,7 @@ class RedisProgress:
 
     @tables_left.setter
     def tables_left(self, tables_left):
-        """Sets the tables_left of this RedisProgress.
+        r"""Sets the tables_left of this RedisProgress.
 
         剩余表数量
 
@@ -222,7 +222,7 @@ class RedisProgress:
 
     @property
     def table_progress(self):
-        """Gets the table_progress of this RedisProgress.
+        r"""Gets the table_progress of this RedisProgress.
 
         表重分布进度
 
@@ -233,7 +233,7 @@ class RedisProgress:
 
     @table_progress.setter
     def table_progress(self, table_progress):
-        """Sets the table_progress of this RedisProgress.
+        r"""Sets the table_progress of this RedisProgress.
 
         表重分布进度
 
@@ -244,7 +244,7 @@ class RedisProgress:
 
     @property
     def total_progress(self):
-        """Gets the total_progress of this RedisProgress.
+        r"""Gets the total_progress of this RedisProgress.
 
         总进度
 
@@ -255,7 +255,7 @@ class RedisProgress:
 
     @total_progress.setter
     def total_progress(self, total_progress):
-        """Sets the total_progress of this RedisProgress.
+        r"""Sets the total_progress of this RedisProgress.
 
         总进度
 
@@ -266,7 +266,7 @@ class RedisProgress:
 
     @property
     def redis_rate(self):
-        """Gets the redis_rate of this RedisProgress.
+        r"""Gets the redis_rate of this RedisProgress.
 
         重分布比例
 
@@ -277,7 +277,7 @@ class RedisProgress:
 
     @redis_rate.setter
     def redis_rate(self, redis_rate):
-        """Sets the redis_rate of this RedisProgress.
+        r"""Sets the redis_rate of this RedisProgress.
 
         重分布比例
 
@@ -288,7 +288,7 @@ class RedisProgress:
 
     @property
     def estimated_time(self):
-        """Gets the estimated_time of this RedisProgress.
+        r"""Gets the estimated_time of this RedisProgress.
 
         预计时间
 
@@ -299,7 +299,7 @@ class RedisProgress:
 
     @estimated_time.setter
     def estimated_time(self, estimated_time):
-        """Sets the estimated_time of this RedisProgress.
+        r"""Sets the estimated_time of this RedisProgress.
 
         预计时间
 
@@ -310,7 +310,7 @@ class RedisProgress:
 
     @property
     def completed(self):
-        """Gets the completed of this RedisProgress.
+        r"""Gets the completed of this RedisProgress.
 
         是否已完成
 
@@ -321,7 +321,7 @@ class RedisProgress:
 
     @completed.setter
     def completed(self, completed):
-        """Sets the completed of this RedisProgress.
+        r"""Sets the completed of this RedisProgress.
 
         是否已完成
 
@@ -332,7 +332,7 @@ class RedisProgress:
 
     @property
     def initialed(self):
-        """Gets the initialed of this RedisProgress.
+        r"""Gets the initialed of this RedisProgress.
 
         是否完成初始化
 
@@ -343,7 +343,7 @@ class RedisProgress:
 
     @initialed.setter
     def initialed(self, initialed):
-        """Sets the initialed of this RedisProgress.
+        r"""Sets the initialed of this RedisProgress.
 
         是否完成初始化
 
@@ -354,7 +354,7 @@ class RedisProgress:
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this RedisProgress.
+        r"""Gets the fail_count of this RedisProgress.
 
         失败总数
 
@@ -365,7 +365,7 @@ class RedisProgress:
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this RedisProgress.
+        r"""Sets the fail_count of this RedisProgress.
 
         失败总数
 
@@ -376,7 +376,7 @@ class RedisProgress:
 
     @property
     def redistributing(self):
-        """Gets the redistributing of this RedisProgress.
+        r"""Gets the redistributing of this RedisProgress.
 
         cm_ctl 结果
 
@@ -387,7 +387,7 @@ class RedisProgress:
 
     @redistributing.setter
     def redistributing(self, redistributing):
-        """Sets the redistributing of this RedisProgress.
+        r"""Sets the redistributing of this RedisProgress.
 
         cm_ctl 结果
 
@@ -398,7 +398,7 @@ class RedisProgress:
 
     @property
     def status(self):
-        """Gets the status of this RedisProgress.
+        r"""Gets the status of this RedisProgress.
 
         状态
 
@@ -409,7 +409,7 @@ class RedisProgress:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RedisProgress.
+        r"""Sets the status of this RedisProgress.
 
         状态
 
@@ -420,7 +420,7 @@ class RedisProgress:
 
     @property
     def pause_by_user(self):
-        """Gets the pause_by_user of this RedisProgress.
+        r"""Gets the pause_by_user of this RedisProgress.
 
         是否用户暂停
 
@@ -431,7 +431,7 @@ class RedisProgress:
 
     @pause_by_user.setter
     def pause_by_user(self, pause_by_user):
-        """Sets the pause_by_user of this RedisProgress.
+        r"""Sets the pause_by_user of this RedisProgress.
 
         是否用户暂停
 

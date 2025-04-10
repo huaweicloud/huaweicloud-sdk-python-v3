@@ -29,7 +29,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
     }
 
     def __init__(self, node_id=None, node_name=None, role=None):
-        """ClickHouseNodeInfoResponseBodyNodeList
+        r"""ClickHouseNodeInfoResponseBodyNodeList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ClickHouseNodeInfoResponseBodyNodeList.
+        r"""Gets the node_id of this ClickHouseNodeInfoResponseBodyNodeList.
 
         ClickHouse实例节点id。
 
@@ -65,7 +65,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ClickHouseNodeInfoResponseBodyNodeList.
+        r"""Sets the node_id of this ClickHouseNodeInfoResponseBodyNodeList.
 
         ClickHouse实例节点id。
 
@@ -76,7 +76,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
 
     @property
     def node_name(self):
-        """Gets the node_name of this ClickHouseNodeInfoResponseBodyNodeList.
+        r"""Gets the node_name of this ClickHouseNodeInfoResponseBodyNodeList.
 
         ClickHouse实例节点名称。
 
@@ -87,7 +87,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this ClickHouseNodeInfoResponseBodyNodeList.
+        r"""Sets the node_name of this ClickHouseNodeInfoResponseBodyNodeList.
 
         ClickHouse实例节点名称。
 
@@ -98,7 +98,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
 
     @property
     def role(self):
-        """Gets the role of this ClickHouseNodeInfoResponseBodyNodeList.
+        r"""Gets the role of this ClickHouseNodeInfoResponseBodyNodeList.
 
         节点主备角色。
 
@@ -109,7 +109,7 @@ class ClickHouseNodeInfoResponseBodyNodeList:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ClickHouseNodeInfoResponseBodyNodeList.
+        r"""Sets the role of this ClickHouseNodeInfoResponseBodyNodeList.
 
         节点主备角色。
 

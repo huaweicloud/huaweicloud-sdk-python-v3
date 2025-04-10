@@ -26,7 +26,7 @@ class ShowListenerTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowListenerTagsResponse
+        r"""ShowListenerTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowListenerTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowListenerTagsResponse.
+        r"""Gets the tags of this ShowListenerTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ShowListenerTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowListenerTagsResponse.
+        r"""Sets the tags of this ShowListenerTagsResponse.
 
         标签列表
 

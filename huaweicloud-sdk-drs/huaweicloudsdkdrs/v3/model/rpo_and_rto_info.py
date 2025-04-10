@@ -31,7 +31,7 @@ class RpoAndRtoInfo:
     }
 
     def __init__(self, check_point=None, delay=None, gtid_set=None, time=None):
-        """RpoAndRtoInfo
+        r"""RpoAndRtoInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RpoAndRtoInfo:
 
     @property
     def check_point(self):
-        """Gets the check_point of this RpoAndRtoInfo.
+        r"""Gets the check_point of this RpoAndRtoInfo.
 
         检查点
 
@@ -75,7 +75,7 @@ class RpoAndRtoInfo:
 
     @check_point.setter
     def check_point(self, check_point):
-        """Sets the check_point of this RpoAndRtoInfo.
+        r"""Sets the check_point of this RpoAndRtoInfo.
 
         检查点
 
@@ -86,7 +86,7 @@ class RpoAndRtoInfo:
 
     @property
     def delay(self):
-        """Gets the delay of this RpoAndRtoInfo.
+        r"""Gets the delay of this RpoAndRtoInfo.
 
         延迟
 
@@ -97,7 +97,7 @@ class RpoAndRtoInfo:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this RpoAndRtoInfo.
+        r"""Sets the delay of this RpoAndRtoInfo.
 
         延迟
 
@@ -108,7 +108,7 @@ class RpoAndRtoInfo:
 
     @property
     def gtid_set(self):
-        """Gets the gtid_set of this RpoAndRtoInfo.
+        r"""Gets the gtid_set of this RpoAndRtoInfo.
 
         gtid集合
 
@@ -119,7 +119,7 @@ class RpoAndRtoInfo:
 
     @gtid_set.setter
     def gtid_set(self, gtid_set):
-        """Sets the gtid_set of this RpoAndRtoInfo.
+        r"""Sets the gtid_set of this RpoAndRtoInfo.
 
         gtid集合
 
@@ -130,7 +130,7 @@ class RpoAndRtoInfo:
 
     @property
     def time(self):
-        """Gets the time of this RpoAndRtoInfo.
+        r"""Gets the time of this RpoAndRtoInfo.
 
         当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
 
@@ -141,7 +141,7 @@ class RpoAndRtoInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this RpoAndRtoInfo.
+        r"""Sets the time of this RpoAndRtoInfo.
 
         当前时间 ，格式为“yyyy-MM-dd HH:mm:ss”
 

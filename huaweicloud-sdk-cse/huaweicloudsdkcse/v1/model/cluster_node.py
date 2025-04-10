@@ -33,7 +33,7 @@ class ClusterNode:
     }
 
     def __init__(self, id=None, az=None, ip=None, label=None, status=None):
-        """ClusterNode
+        r"""ClusterNode
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ClusterNode:
 
     @property
     def id(self):
-        """Gets the id of this ClusterNode.
+        r"""Gets the id of this ClusterNode.
 
         微服务引擎CCE节点ID
 
@@ -82,7 +82,7 @@ class ClusterNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterNode.
+        r"""Sets the id of this ClusterNode.
 
         微服务引擎CCE节点ID
 
@@ -93,7 +93,7 @@ class ClusterNode:
 
     @property
     def az(self):
-        """Gets the az of this ClusterNode.
+        r"""Gets the az of this ClusterNode.
 
         微服务引擎CCE节点所属可用区
 
@@ -104,7 +104,7 @@ class ClusterNode:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this ClusterNode.
+        r"""Sets the az of this ClusterNode.
 
         微服务引擎CCE节点所属可用区
 
@@ -115,7 +115,7 @@ class ClusterNode:
 
     @property
     def ip(self):
-        """Gets the ip of this ClusterNode.
+        r"""Gets the ip of this ClusterNode.
 
         微服务引擎CCE节点IP
 
@@ -126,7 +126,7 @@ class ClusterNode:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ClusterNode.
+        r"""Sets the ip of this ClusterNode.
 
         微服务引擎CCE节点IP
 
@@ -137,7 +137,7 @@ class ClusterNode:
 
     @property
     def label(self):
-        """Gets the label of this ClusterNode.
+        r"""Gets the label of this ClusterNode.
 
         微服务引擎CCE节点标签
 
@@ -148,7 +148,7 @@ class ClusterNode:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ClusterNode.
+        r"""Sets the label of this ClusterNode.
 
         微服务引擎CCE节点标签
 
@@ -159,7 +159,7 @@ class ClusterNode:
 
     @property
     def status(self):
-        """Gets the status of this ClusterNode.
+        r"""Gets the status of this ClusterNode.
 
         微服务引擎CCE节点状态
 
@@ -170,7 +170,7 @@ class ClusterNode:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterNode.
+        r"""Sets the status of this ClusterNode.
 
         微服务引擎CCE节点状态
 

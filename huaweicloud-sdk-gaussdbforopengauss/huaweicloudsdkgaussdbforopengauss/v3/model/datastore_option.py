@@ -27,7 +27,7 @@ class DatastoreOption:
     }
 
     def __init__(self, engine_version=None, instance_mode=None):
-        """DatastoreOption
+        r"""DatastoreOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatastoreOption:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this DatastoreOption.
+        r"""Gets the engine_version of this DatastoreOption.
 
         数据库版本。支持2.3版本，取值为“2.3”。
 
@@ -59,7 +59,7 @@ class DatastoreOption:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this DatastoreOption.
+        r"""Sets the engine_version of this DatastoreOption.
 
         数据库版本。支持2.3版本，取值为“2.3”。
 
@@ -70,7 +70,7 @@ class DatastoreOption:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this DatastoreOption.
+        r"""Gets the instance_mode of this DatastoreOption.
 
         部署形态。
 
@@ -81,7 +81,7 @@ class DatastoreOption:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this DatastoreOption.
+        r"""Sets the instance_mode of this DatastoreOption.
 
         部署形态。
 

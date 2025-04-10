@@ -46,7 +46,7 @@ class UpdateLimitTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, databases=None, task_name=None, key_words=None, parallel_size=None, start_time=None, end_time=None, cpu_utilization=None, memory_utilization=None, rule_name=None, job_id=None):
-        """UpdateLimitTaskResponse
+        r"""UpdateLimitTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateLimitTaskResponse.
+        r"""Gets the task_id of this UpdateLimitTaskResponse.
 
         限流任务ID。
 
@@ -125,7 +125,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateLimitTaskResponse.
+        r"""Sets the task_id of this UpdateLimitTaskResponse.
 
         限流任务ID。
 
@@ -136,7 +136,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this UpdateLimitTaskResponse.
+        r"""Gets the databases of this UpdateLimitTaskResponse.
 
         CN节点数据库组,每个数据库字符串以逗号形式隔开，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
@@ -147,7 +147,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this UpdateLimitTaskResponse.
+        r"""Sets the databases of this UpdateLimitTaskResponse.
 
         CN节点数据库组,每个数据库字符串以逗号形式隔开，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
@@ -158,7 +158,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this UpdateLimitTaskResponse.
+        r"""Gets the task_name of this UpdateLimitTaskResponse.
 
         限流任务名，与请求参数相同。
 
@@ -169,7 +169,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this UpdateLimitTaskResponse.
+        r"""Sets the task_name of this UpdateLimitTaskResponse.
 
         限流任务名，与请求参数相同。
 
@@ -180,7 +180,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def key_words(self):
-        """Gets the key_words of this UpdateLimitTaskResponse.
+        r"""Gets the key_words of this UpdateLimitTaskResponse.
 
         关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
@@ -191,7 +191,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @key_words.setter
     def key_words(self, key_words):
-        """Sets the key_words of this UpdateLimitTaskResponse.
+        r"""Sets the key_words of this UpdateLimitTaskResponse.
 
         关键词，仅当任务类型为SQL_TYPE时，返回该值且与请求参数相同。
 
@@ -202,7 +202,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def parallel_size(self):
-        """Gets the parallel_size of this UpdateLimitTaskResponse.
+        r"""Gets the parallel_size of this UpdateLimitTaskResponse.
 
         并发数，与请求参数相同。
 
@@ -213,7 +213,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @parallel_size.setter
     def parallel_size(self, parallel_size):
-        """Sets the parallel_size of this UpdateLimitTaskResponse.
+        r"""Sets the parallel_size of this UpdateLimitTaskResponse.
 
         并发数，与请求参数相同。
 
@@ -224,7 +224,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateLimitTaskResponse.
+        r"""Gets the start_time of this UpdateLimitTaskResponse.
 
         限流任务开始时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间，SQL范围返回该值。
 
@@ -235,7 +235,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateLimitTaskResponse.
+        r"""Sets the start_time of this UpdateLimitTaskResponse.
 
         限流任务开始时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间，SQL范围返回该值。
 
@@ -246,7 +246,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateLimitTaskResponse.
+        r"""Gets the end_time of this UpdateLimitTaskResponse.
 
         限流任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间，SQL范围返回该值。
 
@@ -257,7 +257,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateLimitTaskResponse.
+        r"""Sets the end_time of this UpdateLimitTaskResponse.
 
         限流任务结束时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间，SQL范围返回该值。
 
@@ -268,7 +268,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def cpu_utilization(self):
-        """Gets the cpu_utilization of this UpdateLimitTaskResponse.
+        r"""Gets the cpu_utilization of this UpdateLimitTaskResponse.
 
         cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -279,7 +279,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @cpu_utilization.setter
     def cpu_utilization(self, cpu_utilization):
-        """Sets the cpu_utilization of this UpdateLimitTaskResponse.
+        r"""Sets the cpu_utilization of this UpdateLimitTaskResponse.
 
         cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -290,7 +290,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def memory_utilization(self):
-        """Gets the memory_utilization of this UpdateLimitTaskResponse.
+        r"""Gets the memory_utilization of this UpdateLimitTaskResponse.
 
         内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -301,7 +301,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @memory_utilization.setter
     def memory_utilization(self, memory_utilization):
-        """Sets the memory_utilization of this UpdateLimitTaskResponse.
+        r"""Sets the memory_utilization of this UpdateLimitTaskResponse.
 
         内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留正整数。
 
@@ -312,7 +312,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this UpdateLimitTaskResponse.
+        r"""Gets the rule_name of this UpdateLimitTaskResponse.
 
         规则名。
 
@@ -323,7 +323,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this UpdateLimitTaskResponse.
+        r"""Sets the rule_name of this UpdateLimitTaskResponse.
 
         规则名。
 
@@ -334,7 +334,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateLimitTaskResponse.
+        r"""Gets the job_id of this UpdateLimitTaskResponse.
 
         工作流ID。
 
@@ -345,7 +345,7 @@ class UpdateLimitTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateLimitTaskResponse.
+        r"""Sets the job_id of this UpdateLimitTaskResponse.
 
         工作流ID。
 

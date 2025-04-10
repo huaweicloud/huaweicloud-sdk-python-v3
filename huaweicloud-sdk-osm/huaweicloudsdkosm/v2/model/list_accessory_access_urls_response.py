@@ -26,7 +26,7 @@ class ListAccessoryAccessUrlsResponse(SdkResponse):
     }
 
     def __init__(self, accessory_urls=None):
-        """ListAccessoryAccessUrlsResponse
+        r"""ListAccessoryAccessUrlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAccessoryAccessUrlsResponse(SdkResponse):
 
     @property
     def accessory_urls(self):
-        """Gets the accessory_urls of this ListAccessoryAccessUrlsResponse.
+        r"""Gets the accessory_urls of this ListAccessoryAccessUrlsResponse.
 
         附件链接
 
@@ -55,7 +55,7 @@ class ListAccessoryAccessUrlsResponse(SdkResponse):
 
     @accessory_urls.setter
     def accessory_urls(self, accessory_urls):
-        """Sets the accessory_urls of this ListAccessoryAccessUrlsResponse.
+        r"""Sets the accessory_urls of this ListAccessoryAccessUrlsResponse.
 
         附件链接
 

@@ -27,7 +27,7 @@ class ReinstallServerWithoutCloudInitRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ReinstallServerWithoutCloudInitRequest
+        r"""ReinstallServerWithoutCloudInitRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReinstallServerWithoutCloudInitRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ReinstallServerWithoutCloudInitRequest.
+        r"""Gets the server_id of this ReinstallServerWithoutCloudInitRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class ReinstallServerWithoutCloudInitRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ReinstallServerWithoutCloudInitRequest.
+        r"""Sets the server_id of this ReinstallServerWithoutCloudInitRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class ReinstallServerWithoutCloudInitRequest:
 
     @property
     def body(self):
-        """Gets the body of this ReinstallServerWithoutCloudInitRequest.
+        r"""Gets the body of this ReinstallServerWithoutCloudInitRequest.
 
         :return: The body of this ReinstallServerWithoutCloudInitRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitRequestBody`
@@ -80,7 +80,7 @@ class ReinstallServerWithoutCloudInitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ReinstallServerWithoutCloudInitRequest.
+        r"""Sets the body of this ReinstallServerWithoutCloudInitRequest.
 
         :param body: The body of this ReinstallServerWithoutCloudInitRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitRequestBody`

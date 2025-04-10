@@ -39,7 +39,7 @@ class ListExternalVaultRequest:
     }
 
     def __init__(self, external_project_id=None, limit=None, offset=None, protect_type=None, region_id=None, objcet_type=None, cloud_type=None, vault_id=None):
-        """ListExternalVaultRequest
+        r"""ListExternalVaultRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListExternalVaultRequest:
 
     @property
     def external_project_id(self):
-        """Gets the external_project_id of this ListExternalVaultRequest.
+        r"""Gets the external_project_id of this ListExternalVaultRequest.
 
         其他区域的项目ID
 
@@ -101,7 +101,7 @@ class ListExternalVaultRequest:
 
     @external_project_id.setter
     def external_project_id(self, external_project_id):
-        """Sets the external_project_id of this ListExternalVaultRequest.
+        r"""Sets the external_project_id of this ListExternalVaultRequest.
 
         其他区域的项目ID
 
@@ -112,7 +112,7 @@ class ListExternalVaultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListExternalVaultRequest.
+        r"""Gets the limit of this ListExternalVaultRequest.
 
         每页显示条目数
 
@@ -123,7 +123,7 @@ class ListExternalVaultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListExternalVaultRequest.
+        r"""Sets the limit of this ListExternalVaultRequest.
 
         每页显示条目数
 
@@ -134,7 +134,7 @@ class ListExternalVaultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListExternalVaultRequest.
+        r"""Gets the offset of this ListExternalVaultRequest.
 
         偏移值
 
@@ -145,7 +145,7 @@ class ListExternalVaultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListExternalVaultRequest.
+        r"""Sets the offset of this ListExternalVaultRequest.
 
         偏移值
 
@@ -156,7 +156,7 @@ class ListExternalVaultRequest:
 
     @property
     def protect_type(self):
-        """Gets the protect_type of this ListExternalVaultRequest.
+        r"""Gets the protect_type of this ListExternalVaultRequest.
 
         [保护类型。取值为backup，replication和hybrid。](tag:hws,hws_hk) [保护类型。取值为backup和replication。](tag:ocb) [保护类型。取值为backup。](tag:g42,hk-g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
 
@@ -167,7 +167,7 @@ class ListExternalVaultRequest:
 
     @protect_type.setter
     def protect_type(self, protect_type):
-        """Sets the protect_type of this ListExternalVaultRequest.
+        r"""Sets the protect_type of this ListExternalVaultRequest.
 
         [保护类型。取值为backup，replication和hybrid。](tag:hws,hws_hk) [保护类型。取值为backup和replication。](tag:ocb) [保护类型。取值为backup。](tag:g42,hk-g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
 
@@ -178,7 +178,7 @@ class ListExternalVaultRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListExternalVaultRequest.
+        r"""Gets the region_id of this ListExternalVaultRequest.
 
         区域ID
 
@@ -189,7 +189,7 @@ class ListExternalVaultRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListExternalVaultRequest.
+        r"""Sets the region_id of this ListExternalVaultRequest.
 
         区域ID
 
@@ -200,7 +200,7 @@ class ListExternalVaultRequest:
 
     @property
     def objcet_type(self):
-        """Gets the objcet_type of this ListExternalVaultRequest.
+        r"""Gets the objcet_type of this ListExternalVaultRequest.
 
         资源类型
 
@@ -211,7 +211,7 @@ class ListExternalVaultRequest:
 
     @objcet_type.setter
     def objcet_type(self, objcet_type):
-        """Sets the objcet_type of this ListExternalVaultRequest.
+        r"""Sets the objcet_type of this ListExternalVaultRequest.
 
         资源类型
 
@@ -222,7 +222,7 @@ class ListExternalVaultRequest:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this ListExternalVaultRequest.
+        r"""Gets the cloud_type of this ListExternalVaultRequest.
 
         [云类型。取值为public和hybrid。](tag:hws,hws_hk) [云类型。取值为public。](tag:g42,hk-g42,sbc,dt,fcs_vm,ctc,ocb,tm,tlf,cmcc,hcso_dt)
 
@@ -233,7 +233,7 @@ class ListExternalVaultRequest:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this ListExternalVaultRequest.
+        r"""Sets the cloud_type of this ListExternalVaultRequest.
 
         [云类型。取值为public和hybrid。](tag:hws,hws_hk) [云类型。取值为public。](tag:g42,hk-g42,sbc,dt,fcs_vm,ctc,ocb,tm,tlf,cmcc,hcso_dt)
 
@@ -244,7 +244,7 @@ class ListExternalVaultRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ListExternalVaultRequest.
+        r"""Gets the vault_id of this ListExternalVaultRequest.
 
         存储库ID，指定存储ID时其他过滤条件不生效。
 
@@ -255,7 +255,7 @@ class ListExternalVaultRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ListExternalVaultRequest.
+        r"""Sets the vault_id of this ListExternalVaultRequest.
 
         存储库ID，指定存储ID时其他过滤条件不生效。
 

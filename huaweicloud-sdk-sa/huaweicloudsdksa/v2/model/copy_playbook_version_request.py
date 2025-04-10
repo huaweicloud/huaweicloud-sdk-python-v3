@@ -31,7 +31,7 @@ class CopyPlaybookVersionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, body=None):
-        """CopyPlaybookVersionRequest
+        r"""CopyPlaybookVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CopyPlaybookVersionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CopyPlaybookVersionRequest.
+        r"""Gets the project_id of this CopyPlaybookVersionRequest.
 
         ID of project
 
@@ -72,7 +72,7 @@ class CopyPlaybookVersionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CopyPlaybookVersionRequest.
+        r"""Sets the project_id of this CopyPlaybookVersionRequest.
 
         ID of project
 
@@ -83,7 +83,7 @@ class CopyPlaybookVersionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CopyPlaybookVersionRequest.
+        r"""Gets the workspace_id of this CopyPlaybookVersionRequest.
 
         ID of workspace
 
@@ -94,7 +94,7 @@ class CopyPlaybookVersionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CopyPlaybookVersionRequest.
+        r"""Sets the workspace_id of this CopyPlaybookVersionRequest.
 
         ID of workspace
 
@@ -105,7 +105,7 @@ class CopyPlaybookVersionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CopyPlaybookVersionRequest.
+        r"""Gets the version_id of this CopyPlaybookVersionRequest.
 
         version Id value
 
@@ -116,7 +116,7 @@ class CopyPlaybookVersionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CopyPlaybookVersionRequest.
+        r"""Sets the version_id of this CopyPlaybookVersionRequest.
 
         version Id value
 
@@ -127,7 +127,7 @@ class CopyPlaybookVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyPlaybookVersionRequest.
+        r"""Gets the body of this CopyPlaybookVersionRequest.
 
         :return: The body of this CopyPlaybookVersionRequest.
         :rtype: :class:`huaweicloudsdksa.v2.CopyPlaybookInfo`
@@ -136,7 +136,7 @@ class CopyPlaybookVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyPlaybookVersionRequest.
+        r"""Sets the body of this CopyPlaybookVersionRequest.
 
         :param body: The body of this CopyPlaybookVersionRequest.
         :type body: :class:`huaweicloudsdksa.v2.CopyPlaybookInfo`

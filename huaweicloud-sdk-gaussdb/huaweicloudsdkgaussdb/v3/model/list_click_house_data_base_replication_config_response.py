@@ -40,7 +40,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, database_info=None, table_infos=None, table_repl_config=None, is_tables_change=None, new_table_repl_config=None, last_error_of_alter_table=None):
-        """ListClickHouseDataBaseReplicationConfigResponse
+        r"""ListClickHouseDataBaseReplicationConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the source_instance_id of this ListClickHouseDataBaseReplicationConfigResponse.
 
         源实例ID。
 
@@ -104,7 +104,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the source_instance_id of this ListClickHouseDataBaseReplicationConfigResponse.
 
         源实例ID。
 
@@ -115,7 +115,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the source_node_id of this ListClickHouseDataBaseReplicationConfigResponse.
 
         源实例节点ID。
 
@@ -126,7 +126,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the source_node_id of this ListClickHouseDataBaseReplicationConfigResponse.
 
         源实例节点ID。
 
@@ -137,7 +137,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def database_info(self):
-        """Gets the database_info of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the database_info of this ListClickHouseDataBaseReplicationConfigResponse.
 
         :return: The database_info of this ListClickHouseDataBaseReplicationConfigResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseConfigResponse`
@@ -146,7 +146,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @database_info.setter
     def database_info(self, database_info):
-        """Sets the database_info of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the database_info of this ListClickHouseDataBaseReplicationConfigResponse.
 
         :param database_info: The database_info of this ListClickHouseDataBaseReplicationConfigResponse.
         :type database_info: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseConfigResponse`
@@ -155,7 +155,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def table_infos(self):
-        """Gets the table_infos of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the table_infos of this ListClickHouseDataBaseReplicationConfigResponse.
 
         表配置信息。
 
@@ -166,7 +166,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @table_infos.setter
     def table_infos(self, table_infos):
-        """Sets the table_infos of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the table_infos of this ListClickHouseDataBaseReplicationConfigResponse.
 
         表配置信息。
 
@@ -177,7 +177,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def table_repl_config(self):
-        """Gets the table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
 
         :return: The table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseTableReplConfigInfo`
@@ -186,7 +186,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @table_repl_config.setter
     def table_repl_config(self, table_repl_config):
-        """Sets the table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
 
         :param table_repl_config: The table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseTableReplConfigInfo`
@@ -195,7 +195,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def is_tables_change(self):
-        """Gets the is_tables_change of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the is_tables_change of this ListClickHouseDataBaseReplicationConfigResponse.
 
         同步任务表是否变化。
 
@@ -206,7 +206,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @is_tables_change.setter
     def is_tables_change(self, is_tables_change):
-        """Sets the is_tables_change of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the is_tables_change of this ListClickHouseDataBaseReplicationConfigResponse.
 
         同步任务表是否变化。
 
@@ -217,7 +217,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def new_table_repl_config(self):
-        """Gets the new_table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the new_table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
 
         :return: The new_table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseTableReplConfigInfo`
@@ -226,7 +226,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @new_table_repl_config.setter
     def new_table_repl_config(self, new_table_repl_config):
-        """Sets the new_table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the new_table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
 
         :param new_table_repl_config: The new_table_repl_config of this ListClickHouseDataBaseReplicationConfigResponse.
         :type new_table_repl_config: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseTableReplConfigInfo`
@@ -235,7 +235,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @property
     def last_error_of_alter_table(self):
-        """Gets the last_error_of_alter_table of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Gets the last_error_of_alter_table of this ListClickHouseDataBaseReplicationConfigResponse.
 
         最近一次alter table的异常信息。
 
@@ -246,7 +246,7 @@ class ListClickHouseDataBaseReplicationConfigResponse(SdkResponse):
 
     @last_error_of_alter_table.setter
     def last_error_of_alter_table(self, last_error_of_alter_table):
-        """Sets the last_error_of_alter_table of this ListClickHouseDataBaseReplicationConfigResponse.
+        r"""Sets the last_error_of_alter_table of this ListClickHouseDataBaseReplicationConfigResponse.
 
         最近一次alter table的异常信息。
 

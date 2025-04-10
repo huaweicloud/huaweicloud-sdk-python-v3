@@ -32,7 +32,7 @@ class ListResEnterprisesResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_projects=None, is_success=None, message=None, error_code=None):
-        """ListResEnterprisesResponse
+        r"""ListResEnterprisesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @property
     def enterprise_projects(self):
-        """Gets the enterprise_projects of this ListResEnterprisesResponse.
+        r"""Gets the enterprise_projects of this ListResEnterprisesResponse.
 
         企业项目列表。
 
@@ -76,7 +76,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @enterprise_projects.setter
     def enterprise_projects(self, enterprise_projects):
-        """Sets the enterprise_projects of this ListResEnterprisesResponse.
+        r"""Sets the enterprise_projects of this ListResEnterprisesResponse.
 
         企业项目列表。
 
@@ -87,7 +87,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListResEnterprisesResponse.
+        r"""Gets the is_success of this ListResEnterprisesResponse.
 
         是否成功。
 
@@ -98,7 +98,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListResEnterprisesResponse.
+        r"""Sets the is_success of this ListResEnterprisesResponse.
 
         是否成功。
 
@@ -109,7 +109,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListResEnterprisesResponse.
+        r"""Gets the message of this ListResEnterprisesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -120,7 +120,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListResEnterprisesResponse.
+        r"""Sets the message of this ListResEnterprisesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -131,7 +131,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListResEnterprisesResponse.
+        r"""Gets the error_code of this ListResEnterprisesResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -142,7 +142,7 @@ class ListResEnterprisesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListResEnterprisesResponse.
+        r"""Sets the error_code of this ListResEnterprisesResponse.
 
         错误码（请求成功时，不返回此字段）。
 

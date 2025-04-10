@@ -27,7 +27,7 @@ class ListFunctionTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None):
-        """ListFunctionTagsRequest
+        r"""ListFunctionTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListFunctionTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListFunctionTagsRequest.
+        r"""Gets the resource_type of this ListFunctionTagsRequest.
 
         资源类型，此处请填写functions
 
@@ -59,7 +59,7 @@ class ListFunctionTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListFunctionTagsRequest.
+        r"""Sets the resource_type of this ListFunctionTagsRequest.
 
         资源类型，此处请填写functions
 
@@ -70,7 +70,7 @@ class ListFunctionTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListFunctionTagsRequest.
+        r"""Gets the resource_id of this ListFunctionTagsRequest.
 
         资源ID
 
@@ -81,7 +81,7 @@ class ListFunctionTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListFunctionTagsRequest.
+        r"""Sets the resource_id of this ListFunctionTagsRequest.
 
         资源ID
 

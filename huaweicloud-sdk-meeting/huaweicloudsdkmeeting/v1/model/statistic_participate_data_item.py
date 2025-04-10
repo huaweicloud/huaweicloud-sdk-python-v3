@@ -51,7 +51,7 @@ class StatisticParticipateDataItem:
     }
 
     def __init__(self, time=None, conf_user_name=None, conf_user_account=None, conf_user_dept_name=None, conf_user_count=None, conf_user_duration=None, conf_hard_terminal_name=None, conf_hard_terminal_model=None, conf_hard_terminal_user_id=None, conf_hard_terminal_count=None, conf_hard_terminal_duration=None, device_type=None, device_version=None, device_attendance_count=None):
-        """StatisticParticipateDataItem
+        r"""StatisticParticipateDataItem
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class StatisticParticipateDataItem:
 
     @property
     def time(self):
-        """Gets the time of this StatisticParticipateDataItem.
+        r"""Gets the time of this StatisticParticipateDataItem.
 
         日期/月份。
 
@@ -145,7 +145,7 @@ class StatisticParticipateDataItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this StatisticParticipateDataItem.
+        r"""Sets the time of this StatisticParticipateDataItem.
 
         日期/月份。
 
@@ -156,7 +156,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_user_name(self):
-        """Gets the conf_user_name of this StatisticParticipateDataItem.
+        r"""Gets the conf_user_name of this StatisticParticipateDataItem.
 
         与会用户名称。 category = user_participate_info时有效。
 
@@ -167,7 +167,7 @@ class StatisticParticipateDataItem:
 
     @conf_user_name.setter
     def conf_user_name(self, conf_user_name):
-        """Sets the conf_user_name of this StatisticParticipateDataItem.
+        r"""Sets the conf_user_name of this StatisticParticipateDataItem.
 
         与会用户名称。 category = user_participate_info时有效。
 
@@ -178,7 +178,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_user_account(self):
-        """Gets the conf_user_account of this StatisticParticipateDataItem.
+        r"""Gets the conf_user_account of this StatisticParticipateDataItem.
 
         与会用户账户。 category = user_participate_info时有效。
 
@@ -189,7 +189,7 @@ class StatisticParticipateDataItem:
 
     @conf_user_account.setter
     def conf_user_account(self, conf_user_account):
-        """Sets the conf_user_account of this StatisticParticipateDataItem.
+        r"""Sets the conf_user_account of this StatisticParticipateDataItem.
 
         与会用户账户。 category = user_participate_info时有效。
 
@@ -200,7 +200,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_user_dept_name(self):
-        """Gets the conf_user_dept_name of this StatisticParticipateDataItem.
+        r"""Gets the conf_user_dept_name of this StatisticParticipateDataItem.
 
         与会用户所属部门。 category = user_participate_info时有效。
 
@@ -211,7 +211,7 @@ class StatisticParticipateDataItem:
 
     @conf_user_dept_name.setter
     def conf_user_dept_name(self, conf_user_dept_name):
-        """Sets the conf_user_dept_name of this StatisticParticipateDataItem.
+        r"""Sets the conf_user_dept_name of this StatisticParticipateDataItem.
 
         与会用户所属部门。 category = user_participate_info时有效。
 
@@ -222,7 +222,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_user_count(self):
-        """Gets the conf_user_count of this StatisticParticipateDataItem.
+        r"""Gets the conf_user_count of this StatisticParticipateDataItem.
 
         用户与会数。 category = user_participate_info时有效。
 
@@ -233,7 +233,7 @@ class StatisticParticipateDataItem:
 
     @conf_user_count.setter
     def conf_user_count(self, conf_user_count):
-        """Sets the conf_user_count of this StatisticParticipateDataItem.
+        r"""Sets the conf_user_count of this StatisticParticipateDataItem.
 
         用户与会数。 category = user_participate_info时有效。
 
@@ -244,7 +244,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_user_duration(self):
-        """Gets the conf_user_duration of this StatisticParticipateDataItem.
+        r"""Gets the conf_user_duration of this StatisticParticipateDataItem.
 
         用户与会时长(秒)。 category = user_participate_info时有效。
 
@@ -255,7 +255,7 @@ class StatisticParticipateDataItem:
 
     @conf_user_duration.setter
     def conf_user_duration(self, conf_user_duration):
-        """Sets the conf_user_duration of this StatisticParticipateDataItem.
+        r"""Sets the conf_user_duration of this StatisticParticipateDataItem.
 
         用户与会时长(秒)。 category = user_participate_info时有效。
 
@@ -266,7 +266,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_hard_terminal_name(self):
-        """Gets the conf_hard_terminal_name of this StatisticParticipateDataItem.
+        r"""Gets the conf_hard_terminal_name of this StatisticParticipateDataItem.
 
         与会硬件终端名称。 category = hard_terminal_participate_info时有效。
 
@@ -277,7 +277,7 @@ class StatisticParticipateDataItem:
 
     @conf_hard_terminal_name.setter
     def conf_hard_terminal_name(self, conf_hard_terminal_name):
-        """Sets the conf_hard_terminal_name of this StatisticParticipateDataItem.
+        r"""Sets the conf_hard_terminal_name of this StatisticParticipateDataItem.
 
         与会硬件终端名称。 category = hard_terminal_participate_info时有效。
 
@@ -288,7 +288,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_hard_terminal_model(self):
-        """Gets the conf_hard_terminal_model of this StatisticParticipateDataItem.
+        r"""Gets the conf_hard_terminal_model of this StatisticParticipateDataItem.
 
         与会硬件终端型号。 category = hard_terminal_participate_info时有效。
 
@@ -299,7 +299,7 @@ class StatisticParticipateDataItem:
 
     @conf_hard_terminal_model.setter
     def conf_hard_terminal_model(self, conf_hard_terminal_model):
-        """Sets the conf_hard_terminal_model of this StatisticParticipateDataItem.
+        r"""Sets the conf_hard_terminal_model of this StatisticParticipateDataItem.
 
         与会硬件终端型号。 category = hard_terminal_participate_info时有效。
 
@@ -310,7 +310,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_hard_terminal_user_id(self):
-        """Gets the conf_hard_terminal_user_id of this StatisticParticipateDataItem.
+        r"""Gets the conf_hard_terminal_user_id of this StatisticParticipateDataItem.
 
         与会硬件终端的用户ID。 category = hard_terminal_participate_info时有效。
 
@@ -321,7 +321,7 @@ class StatisticParticipateDataItem:
 
     @conf_hard_terminal_user_id.setter
     def conf_hard_terminal_user_id(self, conf_hard_terminal_user_id):
-        """Sets the conf_hard_terminal_user_id of this StatisticParticipateDataItem.
+        r"""Sets the conf_hard_terminal_user_id of this StatisticParticipateDataItem.
 
         与会硬件终端的用户ID。 category = hard_terminal_participate_info时有效。
 
@@ -332,7 +332,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_hard_terminal_count(self):
-        """Gets the conf_hard_terminal_count of this StatisticParticipateDataItem.
+        r"""Gets the conf_hard_terminal_count of this StatisticParticipateDataItem.
 
         硬件终端与会数。 category = hard_terminal_participate_info时有效。
 
@@ -343,7 +343,7 @@ class StatisticParticipateDataItem:
 
     @conf_hard_terminal_count.setter
     def conf_hard_terminal_count(self, conf_hard_terminal_count):
-        """Sets the conf_hard_terminal_count of this StatisticParticipateDataItem.
+        r"""Sets the conf_hard_terminal_count of this StatisticParticipateDataItem.
 
         硬件终端与会数。 category = hard_terminal_participate_info时有效。
 
@@ -354,7 +354,7 @@ class StatisticParticipateDataItem:
 
     @property
     def conf_hard_terminal_duration(self):
-        """Gets the conf_hard_terminal_duration of this StatisticParticipateDataItem.
+        r"""Gets the conf_hard_terminal_duration of this StatisticParticipateDataItem.
 
         硬件终端与会时长(秒)。 category = hard_terminal_participate_info时有效。
 
@@ -365,7 +365,7 @@ class StatisticParticipateDataItem:
 
     @conf_hard_terminal_duration.setter
     def conf_hard_terminal_duration(self, conf_hard_terminal_duration):
-        """Sets the conf_hard_terminal_duration of this StatisticParticipateDataItem.
+        r"""Sets the conf_hard_terminal_duration of this StatisticParticipateDataItem.
 
         硬件终端与会时长(秒)。 category = hard_terminal_participate_info时有效。
 
@@ -376,7 +376,7 @@ class StatisticParticipateDataItem:
 
     @property
     def device_type(self):
-        """Gets the device_type of this StatisticParticipateDataItem.
+        r"""Gets the device_type of this StatisticParticipateDataItem.
 
         与会设备类型。 category = participant_type_info时有效。
 
@@ -387,7 +387,7 @@ class StatisticParticipateDataItem:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this StatisticParticipateDataItem.
+        r"""Sets the device_type of this StatisticParticipateDataItem.
 
         与会设备类型。 category = participant_type_info时有效。
 
@@ -398,7 +398,7 @@ class StatisticParticipateDataItem:
 
     @property
     def device_version(self):
-        """Gets the device_version of this StatisticParticipateDataItem.
+        r"""Gets the device_version of this StatisticParticipateDataItem.
 
         与会设备版本。 category = participant_type_info时有效。
 
@@ -409,7 +409,7 @@ class StatisticParticipateDataItem:
 
     @device_version.setter
     def device_version(self, device_version):
-        """Sets the device_version of this StatisticParticipateDataItem.
+        r"""Sets the device_version of this StatisticParticipateDataItem.
 
         与会设备版本。 category = participant_type_info时有效。
 
@@ -420,7 +420,7 @@ class StatisticParticipateDataItem:
 
     @property
     def device_attendance_count(self):
-        """Gets the device_attendance_count of this StatisticParticipateDataItem.
+        r"""Gets the device_attendance_count of this StatisticParticipateDataItem.
 
         设备与会数。 category = participant_type_info时有效。
 
@@ -431,7 +431,7 @@ class StatisticParticipateDataItem:
 
     @device_attendance_count.setter
     def device_attendance_count(self, device_attendance_count):
-        """Sets the device_attendance_count of this StatisticParticipateDataItem.
+        r"""Sets the device_attendance_count of this StatisticParticipateDataItem.
 
         设备与会数。 category = participant_type_info时有效。
 

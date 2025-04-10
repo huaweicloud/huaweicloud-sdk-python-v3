@@ -27,7 +27,7 @@ class ShowNodePoolConfigurationsRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_id=None):
-        """ShowNodePoolConfigurationsRequest
+        r"""ShowNodePoolConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNodePoolConfigurationsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowNodePoolConfigurationsRequest.
+        r"""Gets the cluster_id of this ShowNodePoolConfigurationsRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -59,7 +59,7 @@ class ShowNodePoolConfigurationsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowNodePoolConfigurationsRequest.
+        r"""Sets the cluster_id of this ShowNodePoolConfigurationsRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -70,7 +70,7 @@ class ShowNodePoolConfigurationsRequest:
 
     @property
     def nodepool_id(self):
-        """Gets the nodepool_id of this ShowNodePoolConfigurationsRequest.
+        r"""Gets the nodepool_id of this ShowNodePoolConfigurationsRequest.
 
         节点池ID
 
@@ -81,7 +81,7 @@ class ShowNodePoolConfigurationsRequest:
 
     @nodepool_id.setter
     def nodepool_id(self, nodepool_id):
-        """Sets the nodepool_id of this ShowNodePoolConfigurationsRequest.
+        r"""Sets the nodepool_id of this ShowNodePoolConfigurationsRequest.
 
         节点池ID
 

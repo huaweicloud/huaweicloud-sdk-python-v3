@@ -25,7 +25,7 @@ class CreateAgenciesTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAgenciesTaskRequest
+        r"""CreateAgenciesTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAgenciesTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAgenciesTaskRequest.
+        r"""Gets the body of this CreateAgenciesTaskRequest.
 
         :return: The body of this CreateAgenciesTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.AgenciesTaskReq`
@@ -52,7 +52,7 @@ class CreateAgenciesTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAgenciesTaskRequest.
+        r"""Sets the body of this CreateAgenciesTaskRequest.
 
         :param body: The body of this CreateAgenciesTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.AgenciesTaskReq`

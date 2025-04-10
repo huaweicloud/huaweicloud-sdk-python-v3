@@ -25,7 +25,7 @@ class DeleteEventSubRequest:
     }
 
     def __init__(self, event_sub_id=None):
-        """DeleteEventSubRequest
+        r"""DeleteEventSubRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEventSubRequest:
 
     @property
     def event_sub_id(self):
-        """Gets the event_sub_id of this DeleteEventSubRequest.
+        r"""Gets the event_sub_id of this DeleteEventSubRequest.
 
         事件订阅ID
 
@@ -53,7 +53,7 @@ class DeleteEventSubRequest:
 
     @event_sub_id.setter
     def event_sub_id(self, event_sub_id):
-        """Sets the event_sub_id of this DeleteEventSubRequest.
+        r"""Sets the event_sub_id of this DeleteEventSubRequest.
 
         事件订阅ID
 

@@ -45,7 +45,7 @@ class ListFlavorSellPoliciesRequest:
     }
 
     def __init__(self, flavor_id=None, sell_status=None, sell_mode=None, availability_zone_id=None, longest_spot_duration_hours_gt=None, largest_spot_duration_count_gt=None, longest_spot_duration_hours=None, largest_spot_duration_count=None, interruption_policy=None, limit=None, marker=None):
-        """ListFlavorSellPoliciesRequest
+        r"""ListFlavorSellPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ListFlavorSellPoliciesRequest.
+        r"""Gets the flavor_id of this ListFlavorSellPoliciesRequest.
 
         云服务器的系统规格的ID
 
@@ -124,7 +124,7 @@ class ListFlavorSellPoliciesRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ListFlavorSellPoliciesRequest.
+        r"""Sets the flavor_id of this ListFlavorSellPoliciesRequest.
 
         云服务器的系统规格的ID
 
@@ -135,7 +135,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def sell_status(self):
-        """Gets the sell_status of this ListFlavorSellPoliciesRequest.
+        r"""Gets the sell_status of this ListFlavorSellPoliciesRequest.
 
         云服务器的系统规格销售状态。  取值范围：  - available：正常售卖 - sellout：售罄
 
@@ -146,7 +146,7 @@ class ListFlavorSellPoliciesRequest:
 
     @sell_status.setter
     def sell_status(self, sell_status):
-        """Sets the sell_status of this ListFlavorSellPoliciesRequest.
+        r"""Sets the sell_status of this ListFlavorSellPoliciesRequest.
 
         云服务器的系统规格销售状态。  取值范围：  - available：正常售卖 - sellout：售罄
 
@@ -157,7 +157,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def sell_mode(self):
-        """Gets the sell_mode of this ListFlavorSellPoliciesRequest.
+        r"""Gets the sell_mode of this ListFlavorSellPoliciesRequest.
 
         计费模式。  key的取值范围：  - postPaid：按需计费实例。 - prePaid：包年/包月计费实例。 - spot：竞价实例。 - ri：预留实例。
 
@@ -168,7 +168,7 @@ class ListFlavorSellPoliciesRequest:
 
     @sell_mode.setter
     def sell_mode(self, sell_mode):
-        """Sets the sell_mode of this ListFlavorSellPoliciesRequest.
+        r"""Sets the sell_mode of this ListFlavorSellPoliciesRequest.
 
         计费模式。  key的取值范围：  - postPaid：按需计费实例。 - prePaid：包年/包月计费实例。 - spot：竞价实例。 - ri：预留实例。
 
@@ -179,7 +179,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListFlavorSellPoliciesRequest.
+        r"""Gets the availability_zone_id of this ListFlavorSellPoliciesRequest.
 
         可用区，需要指定可用区（AZ）
 
@@ -190,7 +190,7 @@ class ListFlavorSellPoliciesRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListFlavorSellPoliciesRequest.
+        r"""Sets the availability_zone_id of this ListFlavorSellPoliciesRequest.
 
         可用区，需要指定可用区（AZ）
 
@@ -201,7 +201,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def longest_spot_duration_hours_gt(self):
-        """Gets the longest_spot_duration_hours_gt of this ListFlavorSellPoliciesRequest.
+        r"""Gets the longest_spot_duration_hours_gt of this ListFlavorSellPoliciesRequest.
 
         查询竞价实例时长大于设置值的策略
 
@@ -212,7 +212,7 @@ class ListFlavorSellPoliciesRequest:
 
     @longest_spot_duration_hours_gt.setter
     def longest_spot_duration_hours_gt(self, longest_spot_duration_hours_gt):
-        """Sets the longest_spot_duration_hours_gt of this ListFlavorSellPoliciesRequest.
+        r"""Sets the longest_spot_duration_hours_gt of this ListFlavorSellPoliciesRequest.
 
         查询竞价实例时长大于设置值的策略
 
@@ -223,7 +223,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def largest_spot_duration_count_gt(self):
-        """Gets the largest_spot_duration_count_gt of this ListFlavorSellPoliciesRequest.
+        r"""Gets the largest_spot_duration_count_gt of this ListFlavorSellPoliciesRequest.
 
         查询“竞价实例时长”的个数大于设置值的策略
 
@@ -234,7 +234,7 @@ class ListFlavorSellPoliciesRequest:
 
     @largest_spot_duration_count_gt.setter
     def largest_spot_duration_count_gt(self, largest_spot_duration_count_gt):
-        """Sets the largest_spot_duration_count_gt of this ListFlavorSellPoliciesRequest.
+        r"""Sets the largest_spot_duration_count_gt of this ListFlavorSellPoliciesRequest.
 
         查询“竞价实例时长”的个数大于设置值的策略
 
@@ -245,7 +245,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def longest_spot_duration_hours(self):
-        """Gets the longest_spot_duration_hours of this ListFlavorSellPoliciesRequest.
+        r"""Gets the longest_spot_duration_hours of this ListFlavorSellPoliciesRequest.
 
         查询竞价实例时长等于设置值的策略
 
@@ -256,7 +256,7 @@ class ListFlavorSellPoliciesRequest:
 
     @longest_spot_duration_hours.setter
     def longest_spot_duration_hours(self, longest_spot_duration_hours):
-        """Sets the longest_spot_duration_hours of this ListFlavorSellPoliciesRequest.
+        r"""Sets the longest_spot_duration_hours of this ListFlavorSellPoliciesRequest.
 
         查询竞价实例时长等于设置值的策略
 
@@ -267,7 +267,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def largest_spot_duration_count(self):
-        """Gets the largest_spot_duration_count of this ListFlavorSellPoliciesRequest.
+        r"""Gets the largest_spot_duration_count of this ListFlavorSellPoliciesRequest.
 
         查询“竞价实例时长”的个数等于设置值的策略
 
@@ -278,7 +278,7 @@ class ListFlavorSellPoliciesRequest:
 
     @largest_spot_duration_count.setter
     def largest_spot_duration_count(self, largest_spot_duration_count):
-        """Sets the largest_spot_duration_count of this ListFlavorSellPoliciesRequest.
+        r"""Sets the largest_spot_duration_count of this ListFlavorSellPoliciesRequest.
 
         查询“竞价实例时长”的个数等于设置值的策略
 
@@ -289,7 +289,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def interruption_policy(self):
-        """Gets the interruption_policy of this ListFlavorSellPoliciesRequest.
+        r"""Gets the interruption_policy of this ListFlavorSellPoliciesRequest.
 
         中断策略。  取值范围：  - immediate：立即释放 - delay：延迟释放
 
@@ -300,7 +300,7 @@ class ListFlavorSellPoliciesRequest:
 
     @interruption_policy.setter
     def interruption_policy(self, interruption_policy):
-        """Sets the interruption_policy of this ListFlavorSellPoliciesRequest.
+        r"""Sets the interruption_policy of this ListFlavorSellPoliciesRequest.
 
         中断策略。  取值范围：  - immediate：立即释放 - delay：延迟释放
 
@@ -311,7 +311,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlavorSellPoliciesRequest.
+        r"""Gets the limit of this ListFlavorSellPoliciesRequest.
 
         单页面可显示的flavor条数最大值，默认是1000。
 
@@ -322,7 +322,7 @@ class ListFlavorSellPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlavorSellPoliciesRequest.
+        r"""Sets the limit of this ListFlavorSellPoliciesRequest.
 
         单页面可显示的flavor条数最大值，默认是1000。
 
@@ -333,7 +333,7 @@ class ListFlavorSellPoliciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFlavorSellPoliciesRequest.
+        r"""Gets the marker of this ListFlavorSellPoliciesRequest.
 
         以单页最后一条flavor的ID作为分页标记。
 
@@ -344,7 +344,7 @@ class ListFlavorSellPoliciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFlavorSellPoliciesRequest.
+        r"""Sets the marker of this ListFlavorSellPoliciesRequest.
 
         以单页最后一条flavor的ID作为分页标记。
 

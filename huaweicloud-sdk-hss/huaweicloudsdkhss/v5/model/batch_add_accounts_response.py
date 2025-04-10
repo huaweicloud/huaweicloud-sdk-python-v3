@@ -28,7 +28,7 @@ class BatchAddAccountsResponse(SdkResponse):
     }
 
     def __init__(self, is_all_legal_count=None, x_request_id=None):
-        """BatchAddAccountsResponse
+        r"""BatchAddAccountsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchAddAccountsResponse(SdkResponse):
 
     @property
     def is_all_legal_count(self):
-        """Gets the is_all_legal_count of this BatchAddAccountsResponse.
+        r"""Gets the is_all_legal_count of this BatchAddAccountsResponse.
 
         批量添加账号结果   - true ：成功   - false ：失败
 
@@ -62,7 +62,7 @@ class BatchAddAccountsResponse(SdkResponse):
 
     @is_all_legal_count.setter
     def is_all_legal_count(self, is_all_legal_count):
-        """Sets the is_all_legal_count of this BatchAddAccountsResponse.
+        r"""Sets the is_all_legal_count of this BatchAddAccountsResponse.
 
         批量添加账号结果   - true ：成功   - false ：失败
 
@@ -73,7 +73,7 @@ class BatchAddAccountsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchAddAccountsResponse.
+        r"""Gets the x_request_id of this BatchAddAccountsResponse.
 
         :return: The x_request_id of this BatchAddAccountsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchAddAccountsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchAddAccountsResponse.
+        r"""Sets the x_request_id of this BatchAddAccountsResponse.
 
         :param x_request_id: The x_request_id of this BatchAddAccountsResponse.
         :type x_request_id: str

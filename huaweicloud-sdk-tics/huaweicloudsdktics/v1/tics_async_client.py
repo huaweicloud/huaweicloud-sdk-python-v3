@@ -34,7 +34,7 @@ class TicsAsyncClient(Client):
         return client_builder
 
     def list_agents_async(self, request):
-        """获取计算节点列表
+        r"""获取计算节点列表
 
         功能描述：用户可以使用该接口获取可信节点信息列表。支持节点名称与联盟名称的模糊查询。
         
@@ -105,7 +105,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_audit_info_async(self, request):
-        """查询审计日志
+        r"""查询审计日志
 
         查询审计日志信息
         
@@ -174,7 +174,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_fl_job_async(self, request):
-        """查询联邦学习作业列表
+        r"""查询联邦学习作业列表
 
         查询联邦学习作业列表
         
@@ -243,7 +243,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_instance_history_async(self, request):
-        """查询作业的历史实例列表
+        r"""查询作业的历史实例列表
 
         查询作业的历史实例列表
         
@@ -314,7 +314,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_league_datasets_async(self, request):
-        """查询联盟已注册数据集列表
+        r"""查询联盟已注册数据集列表
 
         功能描述：用户可以使用该接口查询联盟已注册数据集列表。
         
@@ -387,7 +387,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_leagues_async(self, request):
-        """获取联盟列表
+        r"""获取联盟列表
 
         功能描述：用户可以使用该接口获取联盟列表。
         
@@ -456,7 +456,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_nodes_async(self, request):
-        """查询联盟节点列表
+        r"""查询联盟节点列表
 
         功能描述：用户可以使用该接口查询联盟可信节点（包含聚合节点和计算节点）列表。
         
@@ -525,7 +525,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_notices_async(self, request):
-        """查询通知管理列表
+        r"""查询通知管理列表
 
         功能描述：用户可以使用该接口查询通知管理列表。
         
@@ -592,7 +592,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_partners_async(self, request):
-        """获取联盟组员信息
+        r"""获取联盟组员信息
 
         功能描述：用户可以使用该接口获取联盟组员信息
         
@@ -661,7 +661,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def list_sql_job_async(self, request):
-        """查询联邦分析作业列表
+        r"""查询联邦分析作业列表
 
         查询联邦分析作业列表
         
@@ -730,7 +730,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_agent_detail_async(self, request):
-        """获取计算节点详情信息
+        r"""获取计算节点详情信息
 
         功能描述：用户可以使用该接口获取单个可信计算节点详情信息。
         
@@ -795,7 +795,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_dataset_statistics_async(self, request):
-        """数据集统计
+        r"""数据集统计
 
         用户可以使用该接口进行联盟数据集统计。
         
@@ -864,7 +864,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_instance_report_async(self, request):
-        """查询实例执行报告
+        r"""查询实例执行报告
 
         查询实例执行报告
         
@@ -931,7 +931,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_job_instance_dag_async(self, request):
-        """获取实例执行图
+        r"""获取实例执行图
 
         获取实例执行图
         
@@ -1000,7 +1000,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_job_statistics_async(self, request):
-        """作业统计
+        r"""作业统计
 
         功能描述：用户可以使用该接口进行联盟作业统计。
         
@@ -1069,7 +1069,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_league_async(self, request):
-        """获取联盟详细信息
+        r"""获取联盟详细信息
 
         功能描述：用户可以使用该接口获取联盟详细信息。
         
@@ -1134,7 +1134,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_overview_async(self, request):
-        """查询租户下统计信息
+        r"""查询租户下统计信息
 
         查询当前租户的联盟及代理统计数量
         
@@ -1197,7 +1197,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def show_partner_statistics_async(self, request):
-        """合作方统计
+        r"""合作方统计
 
         功能描述：用户可以使用该接口进行联盟合作方统计。
         
@@ -1266,7 +1266,7 @@ class TicsAsyncClient(Client):
         return http_info
 
     def update_league_async(self, request):
-        """更新联盟信息
+        r"""更新联盟信息
 
         功能描述：用户可以使用接口更新联盟信息（包含联盟描述，联盟版本，隐私保护等级，查分隐私开关）。
         

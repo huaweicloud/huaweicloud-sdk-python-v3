@@ -27,7 +27,7 @@ class DeleteShareFilesRequestBody:
     }
 
     def __init__(self, server_ids=None, file_paths=None):
-        """DeleteShareFilesRequestBody
+        r"""DeleteShareFilesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteShareFilesRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this DeleteShareFilesRequestBody.
+        r"""Gets the server_ids of this DeleteShareFilesRequestBody.
 
         云手机服务器ID列表。
 
@@ -59,7 +59,7 @@ class DeleteShareFilesRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this DeleteShareFilesRequestBody.
+        r"""Sets the server_ids of this DeleteShareFilesRequestBody.
 
         云手机服务器ID列表。
 
@@ -70,7 +70,7 @@ class DeleteShareFilesRequestBody:
 
     @property
     def file_paths(self):
-        """Gets the file_paths of this DeleteShareFilesRequestBody.
+        r"""Gets the file_paths of this DeleteShareFilesRequestBody.
 
         所需删除的共享存储文件绝对路径。以/开头，最大长度4096字节，目前只支持大小写字母、数字、点（.）、斜线（/）、中划线（-）、空格、下划线（_）、等号（=），不支持中文。路径中不能包含.. 上层目录路径，防止跨目录攻击。
 
@@ -81,7 +81,7 @@ class DeleteShareFilesRequestBody:
 
     @file_paths.setter
     def file_paths(self, file_paths):
-        """Sets the file_paths of this DeleteShareFilesRequestBody.
+        r"""Sets the file_paths of this DeleteShareFilesRequestBody.
 
         所需删除的共享存储文件绝对路径。以/开头，最大长度4096字节，目前只支持大小写字母、数字、点（.）、斜线（/）、中划线（-）、空格、下划线（_）、等号（=），不支持中文。路径中不能包含.. 上层目录路径，防止跨目录攻击。
 

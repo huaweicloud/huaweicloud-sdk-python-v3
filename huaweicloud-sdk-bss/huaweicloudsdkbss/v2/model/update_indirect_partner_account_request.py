@@ -25,7 +25,7 @@ class UpdateIndirectPartnerAccountRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateIndirectPartnerAccountRequest
+        r"""UpdateIndirectPartnerAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateIndirectPartnerAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIndirectPartnerAccountRequest.
+        r"""Gets the body of this UpdateIndirectPartnerAccountRequest.
 
         :return: The body of this UpdateIndirectPartnerAccountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.AdjustToIndirectPartnerReq`
@@ -52,7 +52,7 @@ class UpdateIndirectPartnerAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIndirectPartnerAccountRequest.
+        r"""Sets the body of this UpdateIndirectPartnerAccountRequest.
 
         :param body: The body of this UpdateIndirectPartnerAccountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.AdjustToIndirectPartnerReq`

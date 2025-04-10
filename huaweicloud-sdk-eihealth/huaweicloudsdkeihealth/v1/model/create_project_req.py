@@ -35,7 +35,7 @@ class CreateProjectReq:
     }
 
     def __init__(self, description=None, name=None, tags=None, is_core=None, is_new_bucket=None, bucket_name=None):
-        """CreateProjectReq
+        r"""CreateProjectReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CreateProjectReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateProjectReq.
+        r"""Gets the description of this CreateProjectReq.
 
         项目描述
 
@@ -88,7 +88,7 @@ class CreateProjectReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProjectReq.
+        r"""Sets the description of this CreateProjectReq.
 
         项目描述
 
@@ -99,7 +99,7 @@ class CreateProjectReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateProjectReq.
+        r"""Gets the name of this CreateProjectReq.
 
         项目名称
 
@@ -110,7 +110,7 @@ class CreateProjectReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProjectReq.
+        r"""Sets the name of this CreateProjectReq.
 
         项目名称
 
@@ -121,7 +121,7 @@ class CreateProjectReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateProjectReq.
+        r"""Gets the tags of this CreateProjectReq.
 
         标签
 
@@ -132,7 +132,7 @@ class CreateProjectReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateProjectReq.
+        r"""Sets the tags of this CreateProjectReq.
 
         标签
 
@@ -143,7 +143,7 @@ class CreateProjectReq:
 
     @property
     def is_core(self):
-        """Gets the is_core of this CreateProjectReq.
+        r"""Gets the is_core of this CreateProjectReq.
 
         是否核心项目
 
@@ -154,7 +154,7 @@ class CreateProjectReq:
 
     @is_core.setter
     def is_core(self, is_core):
-        """Sets the is_core of this CreateProjectReq.
+        r"""Sets the is_core of this CreateProjectReq.
 
         是否核心项目
 
@@ -165,7 +165,7 @@ class CreateProjectReq:
 
     @property
     def is_new_bucket(self):
-        """Gets the is_new_bucket of this CreateProjectReq.
+        r"""Gets the is_new_bucket of this CreateProjectReq.
 
         是否新桶, 仅气象支持该字段
 
@@ -176,7 +176,7 @@ class CreateProjectReq:
 
     @is_new_bucket.setter
     def is_new_bucket(self, is_new_bucket):
-        """Sets the is_new_bucket of this CreateProjectReq.
+        r"""Sets the is_new_bucket of this CreateProjectReq.
 
         是否新桶, 仅气象支持该字段
 
@@ -187,7 +187,7 @@ class CreateProjectReq:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CreateProjectReq.
+        r"""Gets the bucket_name of this CreateProjectReq.
 
         桶名, 仅气象支持该字段
 
@@ -198,7 +198,7 @@ class CreateProjectReq:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CreateProjectReq.
+        r"""Sets the bucket_name of this CreateProjectReq.
 
         桶名, 仅气象支持该字段
 

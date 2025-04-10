@@ -27,7 +27,7 @@ class UpdateEventSourceRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateEventSourceRequest
+        r"""UpdateEventSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEventSourceRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateEventSourceRequest.
+        r"""Gets the source_id of this UpdateEventSourceRequest.
 
         指定查询的事件源ID
 
@@ -60,7 +60,7 @@ class UpdateEventSourceRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateEventSourceRequest.
+        r"""Sets the source_id of this UpdateEventSourceRequest.
 
         指定查询的事件源ID
 
@@ -71,7 +71,7 @@ class UpdateEventSourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventSourceRequest.
+        r"""Gets the body of this UpdateEventSourceRequest.
 
         :return: The body of this UpdateEventSourceRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CustomizeSourceUpdateReq`
@@ -80,7 +80,7 @@ class UpdateEventSourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventSourceRequest.
+        r"""Sets the body of this UpdateEventSourceRequest.
 
         :param body: The body of this UpdateEventSourceRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CustomizeSourceUpdateReq`

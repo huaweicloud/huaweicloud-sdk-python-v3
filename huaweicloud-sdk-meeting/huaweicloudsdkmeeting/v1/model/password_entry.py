@@ -27,7 +27,7 @@ class PasswordEntry:
     }
 
     def __init__(self, conference_role=None, password=None):
-        """PasswordEntry
+        r"""PasswordEntry
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PasswordEntry:
 
     @property
     def conference_role(self):
-        """Gets the conference_role of this PasswordEntry.
+        r"""Gets the conference_role of this PasswordEntry.
 
         会议角色。 - chair: 会议主持人 - general: 普通与会者
 
@@ -61,7 +61,7 @@ class PasswordEntry:
 
     @conference_role.setter
     def conference_role(self, conference_role):
-        """Sets the conference_role of this PasswordEntry.
+        r"""Sets the conference_role of this PasswordEntry.
 
         会议角色。 - chair: 会议主持人 - general: 普通与会者
 
@@ -72,7 +72,7 @@ class PasswordEntry:
 
     @property
     def password(self):
-        """Gets the password of this PasswordEntry.
+        r"""Gets the password of this PasswordEntry.
 
         会议中角色的密码（明文）。
 
@@ -83,7 +83,7 @@ class PasswordEntry:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this PasswordEntry.
+        r"""Sets the password of this PasswordEntry.
 
         会议中角色的密码（明文）。
 

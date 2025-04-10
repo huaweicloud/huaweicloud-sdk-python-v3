@@ -33,7 +33,7 @@ class AssetModRequest:
     }
 
     def __init__(self, name=None, display_name=None, parent=None, properties=None, analyses=None):
-        """AssetModRequest
+        r"""AssetModRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AssetModRequest:
 
     @property
     def name(self):
-        """Gets the name of this AssetModRequest.
+        r"""Gets the name of this AssetModRequest.
 
         资产名称，修改资产时，null或不携带代表不修改，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
@@ -82,7 +82,7 @@ class AssetModRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetModRequest.
+        r"""Sets the name of this AssetModRequest.
 
         资产名称，修改资产时，null或不携带代表不修改，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
@@ -93,7 +93,7 @@ class AssetModRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AssetModRequest.
+        r"""Gets the display_name of this AssetModRequest.
 
         资产显示名称，修改资产时，\"\"代表配置为空、null或不携带代表不修改，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\"
 
@@ -104,7 +104,7 @@ class AssetModRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AssetModRequest.
+        r"""Sets the display_name of this AssetModRequest.
 
         资产显示名称，修改资产时，\"\"代表配置为空、null或不携带代表不修改，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\"
 
@@ -115,7 +115,7 @@ class AssetModRequest:
 
     @property
     def parent(self):
-        """Gets the parent of this AssetModRequest.
+        r"""Gets the parent of this AssetModRequest.
 
         父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
 
@@ -126,7 +126,7 @@ class AssetModRequest:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this AssetModRequest.
+        r"""Sets the parent of this AssetModRequest.
 
         父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
 
@@ -137,7 +137,7 @@ class AssetModRequest:
 
     @property
     def properties(self):
-        """Gets the properties of this AssetModRequest.
+        r"""Gets the properties of this AssetModRequest.
 
         属性集，最多200个
 
@@ -148,7 +148,7 @@ class AssetModRequest:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AssetModRequest.
+        r"""Sets the properties of this AssetModRequest.
 
         属性集，最多200个
 
@@ -159,7 +159,7 @@ class AssetModRequest:
 
     @property
     def analyses(self):
-        """Gets the analyses of this AssetModRequest.
+        r"""Gets the analyses of this AssetModRequest.
 
         分析任务集，最多50个
 
@@ -170,7 +170,7 @@ class AssetModRequest:
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this AssetModRequest.
+        r"""Sets the analyses of this AssetModRequest.
 
         分析任务集，最多50个
 

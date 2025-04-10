@@ -155,7 +155,7 @@ class IteratorVersionSummaryVo:
     }
 
     def __init__(self, uri=None, type=None, author=None, name=None, rank=None, version=None, owner=None, creator=None, iterations=None, description=None, region=None, last_modifier=None, last_modified=None, last_modified_timestamp=None, last_change_time=None, version_uri=None, origin_uri=None, parent_uri=None, parent_path=None, creation_version_uri=None, creation_date=None, creation_date_timestamp=None, author_name=None, comment=None, number=None, is_master=None, is_iterator=None, plan_start_date=None, plan_end_date=None, service_id=None, service_name=None, pbi_id=None, pbi_name=None, plan_id=None, metric_pbi_ids=None, metric_pbi_id_names=None, last_syn_date=None, is_closed=None, asyn_git=None, schema_no=None, finish_date=None, owner_name=None, creator_name=None, current_stage=None, service_types=None, risk_rating=None, risk_des=None, project_uuid=None, domain_id=None, pi_id=None, start_date=None, start_date_timestamp=None, end_date=None, end_date_timestamp=None, actual_start_date=None, actual_start_date_timestamp=None, actual_end_date=None, actual_end_date_timestamp=None, is_expired=None, expired_info=None, stages=None, design=None, execute=None, report=None, branch_uri=None, branch_name=None):
-        """IteratorVersionSummaryVo
+        r"""IteratorVersionSummaryVo
 
         The model defined in huaweicloud sdk
 
@@ -498,7 +498,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def uri(self):
-        """Gets the uri of this IteratorVersionSummaryVo.
+        r"""Gets the uri of this IteratorVersionSummaryVo.
 
         资源URI
 
@@ -509,7 +509,7 @@ class IteratorVersionSummaryVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this IteratorVersionSummaryVo.
+        r"""Sets the uri of this IteratorVersionSummaryVo.
 
         资源URI
 
@@ -520,7 +520,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def type(self):
-        """Gets the type of this IteratorVersionSummaryVo.
+        r"""Gets the type of this IteratorVersionSummaryVo.
 
         资源类型
 
@@ -531,7 +531,7 @@ class IteratorVersionSummaryVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IteratorVersionSummaryVo.
+        r"""Sets the type of this IteratorVersionSummaryVo.
 
         资源类型
 
@@ -542,7 +542,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def author(self):
-        """Gets the author of this IteratorVersionSummaryVo.
+        r"""Gets the author of this IteratorVersionSummaryVo.
 
         创建人
 
@@ -553,7 +553,7 @@ class IteratorVersionSummaryVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this IteratorVersionSummaryVo.
+        r"""Sets the author of this IteratorVersionSummaryVo.
 
         创建人
 
@@ -564,7 +564,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def name(self):
-        """Gets the name of this IteratorVersionSummaryVo.
+        r"""Gets the name of this IteratorVersionSummaryVo.
 
         名称
 
@@ -575,7 +575,7 @@ class IteratorVersionSummaryVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IteratorVersionSummaryVo.
+        r"""Sets the name of this IteratorVersionSummaryVo.
 
         名称
 
@@ -586,7 +586,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def rank(self):
-        """Gets the rank of this IteratorVersionSummaryVo.
+        r"""Gets the rank of this IteratorVersionSummaryVo.
 
         级别
 
@@ -597,7 +597,7 @@ class IteratorVersionSummaryVo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this IteratorVersionSummaryVo.
+        r"""Sets the rank of this IteratorVersionSummaryVo.
 
         级别
 
@@ -608,7 +608,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def version(self):
-        """Gets the version of this IteratorVersionSummaryVo.
+        r"""Gets the version of this IteratorVersionSummaryVo.
 
         待测版本
 
@@ -619,7 +619,7 @@ class IteratorVersionSummaryVo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this IteratorVersionSummaryVo.
+        r"""Sets the version of this IteratorVersionSummaryVo.
 
         待测版本
 
@@ -630,7 +630,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def owner(self):
-        """Gets the owner of this IteratorVersionSummaryVo.
+        r"""Gets the owner of this IteratorVersionSummaryVo.
 
         处理者ID
 
@@ -641,7 +641,7 @@ class IteratorVersionSummaryVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this IteratorVersionSummaryVo.
+        r"""Sets the owner of this IteratorVersionSummaryVo.
 
         处理者ID
 
@@ -652,7 +652,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def creator(self):
-        """Gets the creator of this IteratorVersionSummaryVo.
+        r"""Gets the creator of this IteratorVersionSummaryVo.
 
         创建人ID
 
@@ -663,7 +663,7 @@ class IteratorVersionSummaryVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this IteratorVersionSummaryVo.
+        r"""Sets the creator of this IteratorVersionSummaryVo.
 
         创建人ID
 
@@ -674,7 +674,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def iterations(self):
-        """Gets the iterations of this IteratorVersionSummaryVo.
+        r"""Gets the iterations of this IteratorVersionSummaryVo.
 
         关联迭代
 
@@ -685,7 +685,7 @@ class IteratorVersionSummaryVo:
 
     @iterations.setter
     def iterations(self, iterations):
-        """Sets the iterations of this IteratorVersionSummaryVo.
+        r"""Sets the iterations of this IteratorVersionSummaryVo.
 
         关联迭代
 
@@ -696,7 +696,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def description(self):
-        """Gets the description of this IteratorVersionSummaryVo.
+        r"""Gets the description of this IteratorVersionSummaryVo.
 
         描述
 
@@ -707,7 +707,7 @@ class IteratorVersionSummaryVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IteratorVersionSummaryVo.
+        r"""Sets the description of this IteratorVersionSummaryVo.
 
         描述
 
@@ -718,7 +718,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def region(self):
-        """Gets the region of this IteratorVersionSummaryVo.
+        r"""Gets the region of this IteratorVersionSummaryVo.
 
         区域
 
@@ -729,7 +729,7 @@ class IteratorVersionSummaryVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this IteratorVersionSummaryVo.
+        r"""Sets the region of this IteratorVersionSummaryVo.
 
         区域
 
@@ -740,7 +740,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this IteratorVersionSummaryVo.
+        r"""Gets the last_modifier of this IteratorVersionSummaryVo.
 
         最后修改人
 
@@ -751,7 +751,7 @@ class IteratorVersionSummaryVo:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this IteratorVersionSummaryVo.
+        r"""Sets the last_modifier of this IteratorVersionSummaryVo.
 
         最后修改人
 
@@ -762,7 +762,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this IteratorVersionSummaryVo.
+        r"""Gets the last_modified of this IteratorVersionSummaryVo.
 
         最后修改时间
 
@@ -773,7 +773,7 @@ class IteratorVersionSummaryVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this IteratorVersionSummaryVo.
+        r"""Sets the last_modified of this IteratorVersionSummaryVo.
 
         最后修改时间
 
@@ -784,7 +784,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this IteratorVersionSummaryVo.
+        r"""Gets the last_modified_timestamp of this IteratorVersionSummaryVo.
 
         修改时间时间戳
 
@@ -795,7 +795,7 @@ class IteratorVersionSummaryVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this IteratorVersionSummaryVo.
+        r"""Sets the last_modified_timestamp of this IteratorVersionSummaryVo.
 
         修改时间时间戳
 
@@ -806,7 +806,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def last_change_time(self):
-        """Gets the last_change_time of this IteratorVersionSummaryVo.
+        r"""Gets the last_change_time of this IteratorVersionSummaryVo.
 
         最后变更时间
 
@@ -817,7 +817,7 @@ class IteratorVersionSummaryVo:
 
     @last_change_time.setter
     def last_change_time(self, last_change_time):
-        """Sets the last_change_time of this IteratorVersionSummaryVo.
+        r"""Sets the last_change_time of this IteratorVersionSummaryVo.
 
         最后变更时间
 
@@ -828,7 +828,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this IteratorVersionSummaryVo.
+        r"""Gets the version_uri of this IteratorVersionSummaryVo.
 
         版本URI
 
@@ -839,7 +839,7 @@ class IteratorVersionSummaryVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this IteratorVersionSummaryVo.
+        r"""Sets the version_uri of this IteratorVersionSummaryVo.
 
         版本URI
 
@@ -850,7 +850,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this IteratorVersionSummaryVo.
+        r"""Gets the origin_uri of this IteratorVersionSummaryVo.
 
         源资源URI
 
@@ -861,7 +861,7 @@ class IteratorVersionSummaryVo:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this IteratorVersionSummaryVo.
+        r"""Sets the origin_uri of this IteratorVersionSummaryVo.
 
         源资源URI
 
@@ -872,7 +872,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this IteratorVersionSummaryVo.
+        r"""Gets the parent_uri of this IteratorVersionSummaryVo.
 
         父资源URI
 
@@ -883,7 +883,7 @@ class IteratorVersionSummaryVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this IteratorVersionSummaryVo.
+        r"""Sets the parent_uri of this IteratorVersionSummaryVo.
 
         父资源URI
 
@@ -894,7 +894,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def parent_path(self):
-        """Gets the parent_path of this IteratorVersionSummaryVo.
+        r"""Gets the parent_path of this IteratorVersionSummaryVo.
 
         父资源路径
 
@@ -905,7 +905,7 @@ class IteratorVersionSummaryVo:
 
     @parent_path.setter
     def parent_path(self, parent_path):
-        """Sets the parent_path of this IteratorVersionSummaryVo.
+        r"""Sets the parent_path of this IteratorVersionSummaryVo.
 
         父资源路径
 
@@ -916,7 +916,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this IteratorVersionSummaryVo.
+        r"""Gets the creation_version_uri of this IteratorVersionSummaryVo.
 
         创建版本URI
 
@@ -927,7 +927,7 @@ class IteratorVersionSummaryVo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this IteratorVersionSummaryVo.
+        r"""Sets the creation_version_uri of this IteratorVersionSummaryVo.
 
         创建版本URI
 
@@ -938,7 +938,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this IteratorVersionSummaryVo.
+        r"""Gets the creation_date of this IteratorVersionSummaryVo.
 
         创建时间
 
@@ -949,7 +949,7 @@ class IteratorVersionSummaryVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this IteratorVersionSummaryVo.
+        r"""Sets the creation_date of this IteratorVersionSummaryVo.
 
         创建时间
 
@@ -960,7 +960,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Gets the creation_date_timestamp of this IteratorVersionSummaryVo.
 
         创建时间时间戳
 
@@ -971,7 +971,7 @@ class IteratorVersionSummaryVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Sets the creation_date_timestamp of this IteratorVersionSummaryVo.
 
         创建时间时间戳
 
@@ -982,7 +982,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this IteratorVersionSummaryVo.
+        r"""Gets the author_name of this IteratorVersionSummaryVo.
 
         创建人名称
 
@@ -993,7 +993,7 @@ class IteratorVersionSummaryVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this IteratorVersionSummaryVo.
+        r"""Sets the author_name of this IteratorVersionSummaryVo.
 
         创建人名称
 
@@ -1004,7 +1004,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def comment(self):
-        """Gets the comment of this IteratorVersionSummaryVo.
+        r"""Gets the comment of this IteratorVersionSummaryVo.
 
         备注
 
@@ -1015,7 +1015,7 @@ class IteratorVersionSummaryVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this IteratorVersionSummaryVo.
+        r"""Sets the comment of this IteratorVersionSummaryVo.
 
         备注
 
@@ -1026,7 +1026,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def number(self):
-        """Gets the number of this IteratorVersionSummaryVo.
+        r"""Gets the number of this IteratorVersionSummaryVo.
 
         编号
 
@@ -1037,7 +1037,7 @@ class IteratorVersionSummaryVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this IteratorVersionSummaryVo.
+        r"""Sets the number of this IteratorVersionSummaryVo.
 
         编号
 
@@ -1048,7 +1048,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def is_master(self):
-        """Gets the is_master of this IteratorVersionSummaryVo.
+        r"""Gets the is_master of this IteratorVersionSummaryVo.
 
         是否为Master分支
 
@@ -1059,7 +1059,7 @@ class IteratorVersionSummaryVo:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this IteratorVersionSummaryVo.
+        r"""Sets the is_master of this IteratorVersionSummaryVo.
 
         是否为Master分支
 
@@ -1070,7 +1070,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def is_iterator(self):
-        """Gets the is_iterator of this IteratorVersionSummaryVo.
+        r"""Gets the is_iterator of this IteratorVersionSummaryVo.
 
         是否为迭代
 
@@ -1081,7 +1081,7 @@ class IteratorVersionSummaryVo:
 
     @is_iterator.setter
     def is_iterator(self, is_iterator):
-        """Sets the is_iterator of this IteratorVersionSummaryVo.
+        r"""Sets the is_iterator of this IteratorVersionSummaryVo.
 
         是否为迭代
 
@@ -1092,7 +1092,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def plan_start_date(self):
-        """Gets the plan_start_date of this IteratorVersionSummaryVo.
+        r"""Gets the plan_start_date of this IteratorVersionSummaryVo.
 
         开始时间
 
@@ -1103,7 +1103,7 @@ class IteratorVersionSummaryVo:
 
     @plan_start_date.setter
     def plan_start_date(self, plan_start_date):
-        """Sets the plan_start_date of this IteratorVersionSummaryVo.
+        r"""Sets the plan_start_date of this IteratorVersionSummaryVo.
 
         开始时间
 
@@ -1114,7 +1114,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def plan_end_date(self):
-        """Gets the plan_end_date of this IteratorVersionSummaryVo.
+        r"""Gets the plan_end_date of this IteratorVersionSummaryVo.
 
         结束时间
 
@@ -1125,7 +1125,7 @@ class IteratorVersionSummaryVo:
 
     @plan_end_date.setter
     def plan_end_date(self, plan_end_date):
-        """Sets the plan_end_date of this IteratorVersionSummaryVo.
+        r"""Sets the plan_end_date of this IteratorVersionSummaryVo.
 
         结束时间
 
@@ -1136,7 +1136,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def service_id(self):
-        """Gets the service_id of this IteratorVersionSummaryVo.
+        r"""Gets the service_id of this IteratorVersionSummaryVo.
 
         微服务ID
 
@@ -1147,7 +1147,7 @@ class IteratorVersionSummaryVo:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this IteratorVersionSummaryVo.
+        r"""Sets the service_id of this IteratorVersionSummaryVo.
 
         微服务ID
 
@@ -1158,7 +1158,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def service_name(self):
-        """Gets the service_name of this IteratorVersionSummaryVo.
+        r"""Gets the service_name of this IteratorVersionSummaryVo.
 
         微服务名
 
@@ -1169,7 +1169,7 @@ class IteratorVersionSummaryVo:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this IteratorVersionSummaryVo.
+        r"""Sets the service_name of this IteratorVersionSummaryVo.
 
         微服务名
 
@@ -1180,7 +1180,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def pbi_id(self):
-        """Gets the pbi_id of this IteratorVersionSummaryVo.
+        r"""Gets the pbi_id of this IteratorVersionSummaryVo.
 
         PBI ID
 
@@ -1191,7 +1191,7 @@ class IteratorVersionSummaryVo:
 
     @pbi_id.setter
     def pbi_id(self, pbi_id):
-        """Sets the pbi_id of this IteratorVersionSummaryVo.
+        r"""Sets the pbi_id of this IteratorVersionSummaryVo.
 
         PBI ID
 
@@ -1202,7 +1202,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def pbi_name(self):
-        """Gets the pbi_name of this IteratorVersionSummaryVo.
+        r"""Gets the pbi_name of this IteratorVersionSummaryVo.
 
         PBI信息
 
@@ -1213,7 +1213,7 @@ class IteratorVersionSummaryVo:
 
     @pbi_name.setter
     def pbi_name(self, pbi_name):
-        """Sets the pbi_name of this IteratorVersionSummaryVo.
+        r"""Sets the pbi_name of this IteratorVersionSummaryVo.
 
         PBI信息
 
@@ -1224,7 +1224,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this IteratorVersionSummaryVo.
+        r"""Gets the plan_id of this IteratorVersionSummaryVo.
 
         计划ID
 
@@ -1235,7 +1235,7 @@ class IteratorVersionSummaryVo:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this IteratorVersionSummaryVo.
+        r"""Sets the plan_id of this IteratorVersionSummaryVo.
 
         计划ID
 
@@ -1246,7 +1246,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def metric_pbi_ids(self):
-        """Gets the metric_pbi_ids of this IteratorVersionSummaryVo.
+        r"""Gets the metric_pbi_ids of this IteratorVersionSummaryVo.
 
         度量PBI ID
 
@@ -1257,7 +1257,7 @@ class IteratorVersionSummaryVo:
 
     @metric_pbi_ids.setter
     def metric_pbi_ids(self, metric_pbi_ids):
-        """Sets the metric_pbi_ids of this IteratorVersionSummaryVo.
+        r"""Sets the metric_pbi_ids of this IteratorVersionSummaryVo.
 
         度量PBI ID
 
@@ -1268,7 +1268,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def metric_pbi_id_names(self):
-        """Gets the metric_pbi_id_names of this IteratorVersionSummaryVo.
+        r"""Gets the metric_pbi_id_names of this IteratorVersionSummaryVo.
 
         度量PBI名称
 
@@ -1279,7 +1279,7 @@ class IteratorVersionSummaryVo:
 
     @metric_pbi_id_names.setter
     def metric_pbi_id_names(self, metric_pbi_id_names):
-        """Sets the metric_pbi_id_names of this IteratorVersionSummaryVo.
+        r"""Sets the metric_pbi_id_names of this IteratorVersionSummaryVo.
 
         度量PBI名称
 
@@ -1290,7 +1290,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def last_syn_date(self):
-        """Gets the last_syn_date of this IteratorVersionSummaryVo.
+        r"""Gets the last_syn_date of this IteratorVersionSummaryVo.
 
         最后同步时间
 
@@ -1301,7 +1301,7 @@ class IteratorVersionSummaryVo:
 
     @last_syn_date.setter
     def last_syn_date(self, last_syn_date):
-        """Sets the last_syn_date of this IteratorVersionSummaryVo.
+        r"""Sets the last_syn_date of this IteratorVersionSummaryVo.
 
         最后同步时间
 
@@ -1312,7 +1312,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def is_closed(self):
-        """Gets the is_closed of this IteratorVersionSummaryVo.
+        r"""Gets the is_closed of this IteratorVersionSummaryVo.
 
         版本是否关闭
 
@@ -1323,7 +1323,7 @@ class IteratorVersionSummaryVo:
 
     @is_closed.setter
     def is_closed(self, is_closed):
-        """Sets the is_closed of this IteratorVersionSummaryVo.
+        r"""Sets the is_closed of this IteratorVersionSummaryVo.
 
         版本是否关闭
 
@@ -1334,7 +1334,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def asyn_git(self):
-        """Gets the asyn_git of this IteratorVersionSummaryVo.
+        r"""Gets the asyn_git of this IteratorVersionSummaryVo.
 
         是否同步git库
 
@@ -1345,7 +1345,7 @@ class IteratorVersionSummaryVo:
 
     @asyn_git.setter
     def asyn_git(self, asyn_git):
-        """Sets the asyn_git of this IteratorVersionSummaryVo.
+        r"""Sets the asyn_git of this IteratorVersionSummaryVo.
 
         是否同步git库
 
@@ -1356,7 +1356,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def schema_no(self):
-        """Gets the schema_no of this IteratorVersionSummaryVo.
+        r"""Gets the schema_no of this IteratorVersionSummaryVo.
 
         schema编号
 
@@ -1367,7 +1367,7 @@ class IteratorVersionSummaryVo:
 
     @schema_no.setter
     def schema_no(self, schema_no):
-        """Sets the schema_no of this IteratorVersionSummaryVo.
+        r"""Sets the schema_no of this IteratorVersionSummaryVo.
 
         schema编号
 
@@ -1378,7 +1378,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def finish_date(self):
-        """Gets the finish_date of this IteratorVersionSummaryVo.
+        r"""Gets the finish_date of this IteratorVersionSummaryVo.
 
         迭代实际完成时间
 
@@ -1389,7 +1389,7 @@ class IteratorVersionSummaryVo:
 
     @finish_date.setter
     def finish_date(self, finish_date):
-        """Sets the finish_date of this IteratorVersionSummaryVo.
+        r"""Sets the finish_date of this IteratorVersionSummaryVo.
 
         迭代实际完成时间
 
@@ -1400,7 +1400,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this IteratorVersionSummaryVo.
+        r"""Gets the owner_name of this IteratorVersionSummaryVo.
 
         处理者名称
 
@@ -1411,7 +1411,7 @@ class IteratorVersionSummaryVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this IteratorVersionSummaryVo.
+        r"""Sets the owner_name of this IteratorVersionSummaryVo.
 
         处理者名称
 
@@ -1422,7 +1422,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this IteratorVersionSummaryVo.
+        r"""Gets the creator_name of this IteratorVersionSummaryVo.
 
         创建人名称
 
@@ -1433,7 +1433,7 @@ class IteratorVersionSummaryVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this IteratorVersionSummaryVo.
+        r"""Sets the creator_name of this IteratorVersionSummaryVo.
 
         创建人名称
 
@@ -1444,7 +1444,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this IteratorVersionSummaryVo.
+        r"""Gets the current_stage of this IteratorVersionSummaryVo.
 
         当前所处阶段
 
@@ -1455,7 +1455,7 @@ class IteratorVersionSummaryVo:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this IteratorVersionSummaryVo.
+        r"""Sets the current_stage of this IteratorVersionSummaryVo.
 
         当前所处阶段
 
@@ -1466,7 +1466,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def service_types(self):
-        """Gets the service_types of this IteratorVersionSummaryVo.
+        r"""Gets the service_types of this IteratorVersionSummaryVo.
 
         服务类型
 
@@ -1477,7 +1477,7 @@ class IteratorVersionSummaryVo:
 
     @service_types.setter
     def service_types(self, service_types):
-        """Sets the service_types of this IteratorVersionSummaryVo.
+        r"""Sets the service_types of this IteratorVersionSummaryVo.
 
         服务类型
 
@@ -1488,7 +1488,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def risk_rating(self):
-        """Gets the risk_rating of this IteratorVersionSummaryVo.
+        r"""Gets the risk_rating of this IteratorVersionSummaryVo.
 
         风险等级
 
@@ -1499,7 +1499,7 @@ class IteratorVersionSummaryVo:
 
     @risk_rating.setter
     def risk_rating(self, risk_rating):
-        """Sets the risk_rating of this IteratorVersionSummaryVo.
+        r"""Sets the risk_rating of this IteratorVersionSummaryVo.
 
         风险等级
 
@@ -1510,7 +1510,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def risk_des(self):
-        """Gets the risk_des of this IteratorVersionSummaryVo.
+        r"""Gets the risk_des of this IteratorVersionSummaryVo.
 
         风险描述
 
@@ -1521,7 +1521,7 @@ class IteratorVersionSummaryVo:
 
     @risk_des.setter
     def risk_des(self, risk_des):
-        """Sets the risk_des of this IteratorVersionSummaryVo.
+        r"""Sets the risk_des of this IteratorVersionSummaryVo.
 
         风险描述
 
@@ -1532,7 +1532,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this IteratorVersionSummaryVo.
+        r"""Gets the project_uuid of this IteratorVersionSummaryVo.
 
         项目ID
 
@@ -1543,7 +1543,7 @@ class IteratorVersionSummaryVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this IteratorVersionSummaryVo.
+        r"""Sets the project_uuid of this IteratorVersionSummaryVo.
 
         项目ID
 
@@ -1554,7 +1554,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IteratorVersionSummaryVo.
+        r"""Gets the domain_id of this IteratorVersionSummaryVo.
 
         租户ID
 
@@ -1565,7 +1565,7 @@ class IteratorVersionSummaryVo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IteratorVersionSummaryVo.
+        r"""Sets the domain_id of this IteratorVersionSummaryVo.
 
         租户ID
 
@@ -1576,7 +1576,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def pi_id(self):
-        """Gets the pi_id of this IteratorVersionSummaryVo.
+        r"""Gets the pi_id of this IteratorVersionSummaryVo.
 
         pi的id
 
@@ -1587,7 +1587,7 @@ class IteratorVersionSummaryVo:
 
     @pi_id.setter
     def pi_id(self, pi_id):
-        """Sets the pi_id of this IteratorVersionSummaryVo.
+        r"""Sets the pi_id of this IteratorVersionSummaryVo.
 
         pi的id
 
@@ -1598,7 +1598,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def start_date(self):
-        """Gets the start_date of this IteratorVersionSummaryVo.
+        r"""Gets the start_date of this IteratorVersionSummaryVo.
 
         计划开始时间
 
@@ -1609,7 +1609,7 @@ class IteratorVersionSummaryVo:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this IteratorVersionSummaryVo.
+        r"""Sets the start_date of this IteratorVersionSummaryVo.
 
         计划开始时间
 
@@ -1620,7 +1620,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def start_date_timestamp(self):
-        """Gets the start_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Gets the start_date_timestamp of this IteratorVersionSummaryVo.
 
         计划开始时间时间戳
 
@@ -1631,7 +1631,7 @@ class IteratorVersionSummaryVo:
 
     @start_date_timestamp.setter
     def start_date_timestamp(self, start_date_timestamp):
-        """Sets the start_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Sets the start_date_timestamp of this IteratorVersionSummaryVo.
 
         计划开始时间时间戳
 
@@ -1642,7 +1642,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def end_date(self):
-        """Gets the end_date of this IteratorVersionSummaryVo.
+        r"""Gets the end_date of this IteratorVersionSummaryVo.
 
         计划结束时间
 
@@ -1653,7 +1653,7 @@ class IteratorVersionSummaryVo:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this IteratorVersionSummaryVo.
+        r"""Sets the end_date of this IteratorVersionSummaryVo.
 
         计划结束时间
 
@@ -1664,7 +1664,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def end_date_timestamp(self):
-        """Gets the end_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Gets the end_date_timestamp of this IteratorVersionSummaryVo.
 
         计划结束时间时间戳
 
@@ -1675,7 +1675,7 @@ class IteratorVersionSummaryVo:
 
     @end_date_timestamp.setter
     def end_date_timestamp(self, end_date_timestamp):
-        """Sets the end_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Sets the end_date_timestamp of this IteratorVersionSummaryVo.
 
         计划结束时间时间戳
 
@@ -1686,7 +1686,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def actual_start_date(self):
-        """Gets the actual_start_date of this IteratorVersionSummaryVo.
+        r"""Gets the actual_start_date of this IteratorVersionSummaryVo.
 
         实际开始时间
 
@@ -1697,7 +1697,7 @@ class IteratorVersionSummaryVo:
 
     @actual_start_date.setter
     def actual_start_date(self, actual_start_date):
-        """Sets the actual_start_date of this IteratorVersionSummaryVo.
+        r"""Sets the actual_start_date of this IteratorVersionSummaryVo.
 
         实际开始时间
 
@@ -1708,7 +1708,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def actual_start_date_timestamp(self):
-        """Gets the actual_start_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Gets the actual_start_date_timestamp of this IteratorVersionSummaryVo.
 
         实际开始时间时间戳
 
@@ -1719,7 +1719,7 @@ class IteratorVersionSummaryVo:
 
     @actual_start_date_timestamp.setter
     def actual_start_date_timestamp(self, actual_start_date_timestamp):
-        """Sets the actual_start_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Sets the actual_start_date_timestamp of this IteratorVersionSummaryVo.
 
         实际开始时间时间戳
 
@@ -1730,7 +1730,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def actual_end_date(self):
-        """Gets the actual_end_date of this IteratorVersionSummaryVo.
+        r"""Gets the actual_end_date of this IteratorVersionSummaryVo.
 
         实际完成时间
 
@@ -1741,7 +1741,7 @@ class IteratorVersionSummaryVo:
 
     @actual_end_date.setter
     def actual_end_date(self, actual_end_date):
-        """Sets the actual_end_date of this IteratorVersionSummaryVo.
+        r"""Sets the actual_end_date of this IteratorVersionSummaryVo.
 
         实际完成时间
 
@@ -1752,7 +1752,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def actual_end_date_timestamp(self):
-        """Gets the actual_end_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Gets the actual_end_date_timestamp of this IteratorVersionSummaryVo.
 
         实际开始时间时间戳
 
@@ -1763,7 +1763,7 @@ class IteratorVersionSummaryVo:
 
     @actual_end_date_timestamp.setter
     def actual_end_date_timestamp(self, actual_end_date_timestamp):
-        """Sets the actual_end_date_timestamp of this IteratorVersionSummaryVo.
+        r"""Sets the actual_end_date_timestamp of this IteratorVersionSummaryVo.
 
         实际开始时间时间戳
 
@@ -1774,7 +1774,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def is_expired(self):
-        """Gets the is_expired of this IteratorVersionSummaryVo.
+        r"""Gets the is_expired of this IteratorVersionSummaryVo.
 
         是否超期
 
@@ -1785,7 +1785,7 @@ class IteratorVersionSummaryVo:
 
     @is_expired.setter
     def is_expired(self, is_expired):
-        """Sets the is_expired of this IteratorVersionSummaryVo.
+        r"""Sets the is_expired of this IteratorVersionSummaryVo.
 
         是否超期
 
@@ -1796,7 +1796,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def expired_info(self):
-        """Gets the expired_info of this IteratorVersionSummaryVo.
+        r"""Gets the expired_info of this IteratorVersionSummaryVo.
 
         计划过期信息,空代表不超期，否则给出具体超期信息
 
@@ -1807,7 +1807,7 @@ class IteratorVersionSummaryVo:
 
     @expired_info.setter
     def expired_info(self, expired_info):
-        """Sets the expired_info of this IteratorVersionSummaryVo.
+        r"""Sets the expired_info of this IteratorVersionSummaryVo.
 
         计划过期信息,空代表不超期，否则给出具体超期信息
 
@@ -1818,7 +1818,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def stages(self):
-        """Gets the stages of this IteratorVersionSummaryVo.
+        r"""Gets the stages of this IteratorVersionSummaryVo.
 
         迭代计划，默认包含design,execute,report
 
@@ -1829,7 +1829,7 @@ class IteratorVersionSummaryVo:
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this IteratorVersionSummaryVo.
+        r"""Sets the stages of this IteratorVersionSummaryVo.
 
         迭代计划，默认包含design,execute,report
 
@@ -1840,7 +1840,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def design(self):
-        """Gets the design of this IteratorVersionSummaryVo.
+        r"""Gets the design of this IteratorVersionSummaryVo.
 
         :return: The design of this IteratorVersionSummaryVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DesignSummaryVo`
@@ -1849,7 +1849,7 @@ class IteratorVersionSummaryVo:
 
     @design.setter
     def design(self, design):
-        """Sets the design of this IteratorVersionSummaryVo.
+        r"""Sets the design of this IteratorVersionSummaryVo.
 
         :param design: The design of this IteratorVersionSummaryVo.
         :type design: :class:`huaweicloudsdkcloudtest.v1.DesignSummaryVo`
@@ -1858,7 +1858,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def execute(self):
-        """Gets the execute of this IteratorVersionSummaryVo.
+        r"""Gets the execute of this IteratorVersionSummaryVo.
 
         :return: The execute of this IteratorVersionSummaryVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExecuteSummaryVo`
@@ -1867,7 +1867,7 @@ class IteratorVersionSummaryVo:
 
     @execute.setter
     def execute(self, execute):
-        """Sets the execute of this IteratorVersionSummaryVo.
+        r"""Sets the execute of this IteratorVersionSummaryVo.
 
         :param execute: The execute of this IteratorVersionSummaryVo.
         :type execute: :class:`huaweicloudsdkcloudtest.v1.ExecuteSummaryVo`
@@ -1876,7 +1876,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def report(self):
-        """Gets the report of this IteratorVersionSummaryVo.
+        r"""Gets the report of this IteratorVersionSummaryVo.
 
         :return: The report of this IteratorVersionSummaryVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ReportSummaryVo`
@@ -1885,7 +1885,7 @@ class IteratorVersionSummaryVo:
 
     @report.setter
     def report(self, report):
-        """Sets the report of this IteratorVersionSummaryVo.
+        r"""Sets the report of this IteratorVersionSummaryVo.
 
         :param report: The report of this IteratorVersionSummaryVo.
         :type report: :class:`huaweicloudsdkcloudtest.v1.ReportSummaryVo`
@@ -1894,7 +1894,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this IteratorVersionSummaryVo.
+        r"""Gets the branch_uri of this IteratorVersionSummaryVo.
 
         所属分支URI
 
@@ -1905,7 +1905,7 @@ class IteratorVersionSummaryVo:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this IteratorVersionSummaryVo.
+        r"""Sets the branch_uri of this IteratorVersionSummaryVo.
 
         所属分支URI
 
@@ -1916,7 +1916,7 @@ class IteratorVersionSummaryVo:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this IteratorVersionSummaryVo.
+        r"""Gets the branch_name of this IteratorVersionSummaryVo.
 
         所属分支名称
 
@@ -1927,7 +1927,7 @@ class IteratorVersionSummaryVo:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this IteratorVersionSummaryVo.
+        r"""Sets the branch_name of this IteratorVersionSummaryVo.
 
         所属分支名称
 

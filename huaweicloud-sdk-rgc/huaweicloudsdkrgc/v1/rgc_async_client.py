@@ -34,7 +34,7 @@ class RgcAsyncClient(Client):
         return client_builder
 
     def disable_control_async(self, request):
-        """关闭控制策略
+        r"""关闭控制策略
 
         关闭组织下的某个单元的某个控制策略。
         
@@ -99,7 +99,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def enable_control_async(self, request):
-        """开启控制策略
+        r"""开启控制策略
 
         给组织下的某个单元开启某个控制策略。
         
@@ -164,7 +164,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def list_controls_for_organizational_unit_async(self, request):
-        """列出注册OU下开启的控制策略
+        r"""列出注册OU下开启的控制策略
 
         列出组织里某个注册OU开启的所有控制策略信息。
         
@@ -233,7 +233,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def list_enabled_controls_async(self, request):
-        """列出开启的控制策略
+        r"""列出开启的控制策略
 
         列出组织里开启的所有控制策略信息。
         
@@ -300,7 +300,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def show_control_operate_async(self, request):
-        """查询控制策略操作状态
+        r"""查询控制策略操作状态
 
         根据操作ID查询返回指定ID的操作状态。
         
@@ -365,7 +365,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def create_account_async(self, request):
-        """创建账号
+        r"""创建账号
 
         在组织里的某个注册OU下创建账号。
         
@@ -430,7 +430,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def register_organizational_unit_async(self, request):
-        """注册OU
+        r"""注册OU
 
         将组织里的某个OU注册到RGC服务。
         
@@ -495,7 +495,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def show_managed_account_async(self, request):
-        """查询纳管账号信息
+        r"""查询纳管账号信息
 
         查询组织里某个纳管账号信息。
         
@@ -560,7 +560,7 @@ class RgcAsyncClient(Client):
         return http_info
 
     def show_operation_async(self, request):
-        """查询注册过程信息
+        r"""查询注册过程信息
 
         查询在RGC服务里注册/取消注册的过程信息。
         

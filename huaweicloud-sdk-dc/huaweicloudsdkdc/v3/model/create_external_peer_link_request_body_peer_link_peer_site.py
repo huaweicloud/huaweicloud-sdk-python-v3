@@ -29,7 +29,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
     }
 
     def __init__(self, gateway_id=None, project_id=None, region_id=None):
-        """CreateExternalPeerLinkRequestBodyPeerLinkPeerSite
+        r"""CreateExternalPeerLinkRequestBodyPeerLinkPeerSite
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
+        r"""Gets the gateway_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
 
         接入网关连接对端的实例(当前ER实例)ID
 
@@ -65,7 +65,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
+        r"""Sets the gateway_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
 
         接入网关连接对端的实例(当前ER实例)ID
 
@@ -76,7 +76,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
+        r"""Gets the project_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
 
         对端实例(ER实例)归属的项目ID
 
@@ -87,7 +87,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
+        r"""Sets the project_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
 
         对端实例(ER实例)归属的项目ID
 
@@ -98,7 +98,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
+        r"""Gets the region_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
 
         归属的区域ID
 
@@ -109,7 +109,7 @@ class CreateExternalPeerLinkRequestBodyPeerLinkPeerSite:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
+        r"""Sets the region_id of this CreateExternalPeerLinkRequestBodyPeerLinkPeerSite.
 
         归属的区域ID
 

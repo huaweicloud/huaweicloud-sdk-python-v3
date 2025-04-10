@@ -29,7 +29,7 @@ class RestartStarrocksNodeRequest:
     }
 
     def __init__(self, starrocks_node_id=None, starrocks_instance_id=None, x_language=None):
-        """RestartStarrocksNodeRequest
+        r"""RestartStarrocksNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestartStarrocksNodeRequest:
 
     @property
     def starrocks_node_id(self):
-        """Gets the starrocks_node_id of this RestartStarrocksNodeRequest.
+        r"""Gets the starrocks_node_id of this RestartStarrocksNodeRequest.
 
         StarRocks节点ID
 
@@ -66,7 +66,7 @@ class RestartStarrocksNodeRequest:
 
     @starrocks_node_id.setter
     def starrocks_node_id(self, starrocks_node_id):
-        """Sets the starrocks_node_id of this RestartStarrocksNodeRequest.
+        r"""Sets the starrocks_node_id of this RestartStarrocksNodeRequest.
 
         StarRocks节点ID
 
@@ -77,7 +77,7 @@ class RestartStarrocksNodeRequest:
 
     @property
     def starrocks_instance_id(self):
-        """Gets the starrocks_instance_id of this RestartStarrocksNodeRequest.
+        r"""Gets the starrocks_instance_id of this RestartStarrocksNodeRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class RestartStarrocksNodeRequest:
 
     @starrocks_instance_id.setter
     def starrocks_instance_id(self, starrocks_instance_id):
-        """Sets the starrocks_instance_id of this RestartStarrocksNodeRequest.
+        r"""Sets the starrocks_instance_id of this RestartStarrocksNodeRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class RestartStarrocksNodeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestartStarrocksNodeRequest.
+        r"""Gets the x_language of this RestartStarrocksNodeRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class RestartStarrocksNodeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestartStarrocksNodeRequest.
+        r"""Sets the x_language of this RestartStarrocksNodeRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

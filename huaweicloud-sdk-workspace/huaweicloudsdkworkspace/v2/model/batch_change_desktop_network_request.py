@@ -25,7 +25,7 @@ class BatchChangeDesktopNetworkRequest:
     }
 
     def __init__(self, body=None):
-        """BatchChangeDesktopNetworkRequest
+        r"""BatchChangeDesktopNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchChangeDesktopNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchChangeDesktopNetworkRequest.
+        r"""Gets the body of this BatchChangeDesktopNetworkRequest.
 
         :return: The body of this BatchChangeDesktopNetworkRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchChangeDesktopNetworkReq`
@@ -52,7 +52,7 @@ class BatchChangeDesktopNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchChangeDesktopNetworkRequest.
+        r"""Sets the body of this BatchChangeDesktopNetworkRequest.
 
         :param body: The body of this BatchChangeDesktopNetworkRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchChangeDesktopNetworkReq`

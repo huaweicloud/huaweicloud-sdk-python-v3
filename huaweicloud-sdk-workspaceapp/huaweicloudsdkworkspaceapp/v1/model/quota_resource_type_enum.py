@@ -31,7 +31,7 @@ class QuotaResourceTypeEnum:
     }
 
     def __init__(self):
-        """QuotaResourceTypeEnum
+        r"""QuotaResourceTypeEnum
 
         The model defined in huaweicloud sdk
 

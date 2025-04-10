@@ -29,7 +29,7 @@ class DeletePremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, keep_policy=None):
-        """DeletePremiumHostRequest
+        r"""DeletePremiumHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeletePremiumHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeletePremiumHostRequest.
+        r"""Gets the enterprise_project_id of this DeletePremiumHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class DeletePremiumHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeletePremiumHostRequest.
+        r"""Sets the enterprise_project_id of this DeletePremiumHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class DeletePremiumHostRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this DeletePremiumHostRequest.
+        r"""Gets the host_id of this DeletePremiumHostRequest.
 
         独享模式域名ID
 
@@ -89,7 +89,7 @@ class DeletePremiumHostRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DeletePremiumHostRequest.
+        r"""Sets the host_id of this DeletePremiumHostRequest.
 
         独享模式域名ID
 
@@ -100,7 +100,7 @@ class DeletePremiumHostRequest:
 
     @property
     def keep_policy(self):
-        """Gets the keep_policy of this DeletePremiumHostRequest.
+        r"""Gets the keep_policy of this DeletePremiumHostRequest.
 
         是否保留规则。false表示不保留该域名的防护策略；true表示保留该域名的防护策略。当要删除的防护域名的防护策略防护多个防护域名时，该参数不传。
 
@@ -111,7 +111,7 @@ class DeletePremiumHostRequest:
 
     @keep_policy.setter
     def keep_policy(self, keep_policy):
-        """Sets the keep_policy of this DeletePremiumHostRequest.
+        r"""Sets the keep_policy of this DeletePremiumHostRequest.
 
         是否保留规则。false表示不保留该域名的防护策略；true表示保留该域名的防护策略。当要删除的防护域名的防护策略防护多个防护域名时，该参数不传。
 

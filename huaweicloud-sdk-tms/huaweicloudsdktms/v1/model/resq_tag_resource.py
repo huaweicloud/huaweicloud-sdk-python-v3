@@ -35,7 +35,7 @@ class ResqTagResource:
     }
 
     def __init__(self, project_id=None, resource_types=None, tags=None, without_any_tag=None, offset=None, limit=None):
-        """ResqTagResource
+        r"""ResqTagResource
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ResqTagResource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ResqTagResource.
+        r"""Gets the project_id of this ResqTagResource.
 
         项目ID，resource_type为region级别服务时为必选项。
 
@@ -87,7 +87,7 @@ class ResqTagResource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ResqTagResource.
+        r"""Sets the project_id of this ResqTagResource.
 
         项目ID，resource_type为region级别服务时为必选项。
 
@@ -98,7 +98,7 @@ class ResqTagResource:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ResqTagResource.
+        r"""Gets the resource_types of this ResqTagResource.
 
         资源类型， 此参数为可输入的值（区分大小写）。例如：ecs,scaling_group, images, disk,vpcs,security-groups, shared_bandwidth,eip, cdn等，具体请参见“附录-标签支持的资源类型”章节。
 
@@ -109,7 +109,7 @@ class ResqTagResource:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ResqTagResource.
+        r"""Sets the resource_types of this ResqTagResource.
 
         资源类型， 此参数为可输入的值（区分大小写）。例如：ecs,scaling_group, images, disk,vpcs,security-groups, shared_bandwidth,eip, cdn等，具体请参见“附录-标签支持的资源类型”章节。
 
@@ -120,7 +120,7 @@ class ResqTagResource:
 
     @property
     def tags(self):
-        """Gets the tags of this ResqTagResource.
+        r"""Gets the tags of this ResqTagResource.
 
         标签列表
 
@@ -131,7 +131,7 @@ class ResqTagResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResqTagResource.
+        r"""Sets the tags of this ResqTagResource.
 
         标签列表
 
@@ -142,7 +142,7 @@ class ResqTagResource:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ResqTagResource.
+        r"""Gets the without_any_tag of this ResqTagResource.
 
         是否仅查询未带标签的资源。该字段为true时查询不带标签的资源。
 
@@ -153,7 +153,7 @@ class ResqTagResource:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ResqTagResource.
+        r"""Sets the without_any_tag of this ResqTagResource.
 
         是否仅查询未带标签的资源。该字段为true时查询不带标签的资源。
 
@@ -164,7 +164,7 @@ class ResqTagResource:
 
     @property
     def offset(self):
-        """Gets the offset of this ResqTagResource.
+        r"""Gets the offset of this ResqTagResource.
 
         索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
@@ -175,7 +175,7 @@ class ResqTagResource:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ResqTagResource.
+        r"""Sets the offset of this ResqTagResource.
 
         索引位置， 从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
@@ -186,7 +186,7 @@ class ResqTagResource:
 
     @property
     def limit(self):
-        """Gets the limit of this ResqTagResource.
+        r"""Gets the limit of this ResqTagResource.
 
         查询记录数，不传默认为200，limit最多为200, 最小值为1。
 
@@ -197,7 +197,7 @@ class ResqTagResource:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ResqTagResource.
+        r"""Sets the limit of this ResqTagResource.
 
         查询记录数，不传默认为200，limit最多为200, 最小值为1。
 

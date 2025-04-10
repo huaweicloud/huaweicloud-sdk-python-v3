@@ -25,7 +25,7 @@ class SmartChatJobsReq:
     }
 
     def __init__(self, extend_param=None):
-        """SmartChatJobsReq
+        r"""SmartChatJobsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SmartChatJobsReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this SmartChatJobsReq.
+        r"""Gets the extend_param of this SmartChatJobsReq.
 
         扩展参数，按照Json格式携带 * city:所在城市
 
@@ -54,7 +54,7 @@ class SmartChatJobsReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this SmartChatJobsReq.
+        r"""Sets the extend_param of this SmartChatJobsReq.
 
         扩展参数，按照Json格式携带 * city:所在城市
 

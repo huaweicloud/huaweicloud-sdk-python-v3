@@ -64,7 +64,7 @@ class UpdateAccessConfigResponse(SdkResponse):
     }
 
     def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, encoding_format=None, incremental_collect=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
-        """UpdateAccessConfigResponse
+        r"""UpdateAccessConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def access_config_id(self):
-        """Gets the access_config_id of this UpdateAccessConfigResponse.
+        r"""Gets the access_config_id of this UpdateAccessConfigResponse.
 
         日志接入ID
 
@@ -188,7 +188,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @access_config_id.setter
     def access_config_id(self, access_config_id):
-        """Sets the access_config_id of this UpdateAccessConfigResponse.
+        r"""Sets the access_config_id of this UpdateAccessConfigResponse.
 
         日志接入ID
 
@@ -199,7 +199,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def access_config_name(self):
-        """Gets the access_config_name of this UpdateAccessConfigResponse.
+        r"""Gets the access_config_name of this UpdateAccessConfigResponse.
 
         日志接入名称
 
@@ -210,7 +210,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @access_config_name.setter
     def access_config_name(self, access_config_name):
-        """Sets the access_config_name of this UpdateAccessConfigResponse.
+        r"""Sets the access_config_name of this UpdateAccessConfigResponse.
 
         日志接入名称
 
@@ -221,7 +221,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def access_config_type(self):
-        """Gets the access_config_type of this UpdateAccessConfigResponse.
+        r"""Gets the access_config_type of this UpdateAccessConfigResponse.
 
         日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
 
@@ -232,7 +232,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @access_config_type.setter
     def access_config_type(self, access_config_type):
-        """Sets the access_config_type of this UpdateAccessConfigResponse.
+        r"""Sets the access_config_type of this UpdateAccessConfigResponse.
 
         日志接入类型。AGENT：ECS接入  K8S_CCE: CCE接入
 
@@ -243,7 +243,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateAccessConfigResponse.
+        r"""Gets the create_time of this UpdateAccessConfigResponse.
 
         创建时间
 
@@ -254,7 +254,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateAccessConfigResponse.
+        r"""Sets the create_time of this UpdateAccessConfigResponse.
 
         创建时间
 
@@ -265,7 +265,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def access_config_detail(self):
-        """Gets the access_config_detail of this UpdateAccessConfigResponse.
+        r"""Gets the access_config_detail of this UpdateAccessConfigResponse.
 
         :return: The access_config_detail of this UpdateAccessConfigResponse.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -274,7 +274,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
-        """Sets the access_config_detail of this UpdateAccessConfigResponse.
+        r"""Sets the access_config_detail of this UpdateAccessConfigResponse.
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigResponse.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -283,7 +283,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def log_info(self):
-        """Gets the log_info of this UpdateAccessConfigResponse.
+        r"""Gets the log_info of this UpdateAccessConfigResponse.
 
         :return: The log_info of this UpdateAccessConfigResponse.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
@@ -292,7 +292,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @log_info.setter
     def log_info(self, log_info):
-        """Sets the log_info of this UpdateAccessConfigResponse.
+        r"""Sets the log_info of this UpdateAccessConfigResponse.
 
         :param log_info: The log_info of this UpdateAccessConfigResponse.
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
@@ -301,7 +301,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def host_group_info(self):
-        """Gets the host_group_info of this UpdateAccessConfigResponse.
+        r"""Gets the host_group_info of this UpdateAccessConfigResponse.
 
         :return: The host_group_info of this UpdateAccessConfigResponse.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -310,7 +310,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @host_group_info.setter
     def host_group_info(self, host_group_info):
-        """Sets the host_group_info of this UpdateAccessConfigResponse.
+        r"""Sets the host_group_info of this UpdateAccessConfigResponse.
 
         :param host_group_info: The host_group_info of this UpdateAccessConfigResponse.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -319,7 +319,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def access_config_tag(self):
-        """Gets the access_config_tag of this UpdateAccessConfigResponse.
+        r"""Gets the access_config_tag of this UpdateAccessConfigResponse.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -330,7 +330,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
-        """Sets the access_config_tag of this UpdateAccessConfigResponse.
+        r"""Sets the access_config_tag of this UpdateAccessConfigResponse.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -341,7 +341,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def log_split(self):
-        """Gets the log_split of this UpdateAccessConfigResponse.
+        r"""Gets the log_split of this UpdateAccessConfigResponse.
 
         二进制采集
 
@@ -352,7 +352,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @log_split.setter
     def log_split(self, log_split):
-        """Sets the log_split of this UpdateAccessConfigResponse.
+        r"""Sets the log_split of this UpdateAccessConfigResponse.
 
         二进制采集
 
@@ -363,7 +363,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def binary_collect(self):
-        """Gets the binary_collect of this UpdateAccessConfigResponse.
+        r"""Gets the binary_collect of this UpdateAccessConfigResponse.
 
         日志拆分
 
@@ -374,7 +374,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @binary_collect.setter
     def binary_collect(self, binary_collect):
-        """Sets the binary_collect of this UpdateAccessConfigResponse.
+        r"""Sets the binary_collect of this UpdateAccessConfigResponse.
 
         日志拆分
 
@@ -385,7 +385,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAccessConfigResponse.
+        r"""Gets the cluster_id of this UpdateAccessConfigResponse.
 
         CCE集群ID
 
@@ -396,7 +396,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAccessConfigResponse.
+        r"""Sets the cluster_id of this UpdateAccessConfigResponse.
 
         CCE集群ID
 
@@ -407,7 +407,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def encoding_format(self):
-        """Gets the encoding_format of this UpdateAccessConfigResponse.
+        r"""Gets the encoding_format of this UpdateAccessConfigResponse.
 
         编码格式，默认UTF-8
 
@@ -418,7 +418,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @encoding_format.setter
     def encoding_format(self, encoding_format):
-        """Sets the encoding_format of this UpdateAccessConfigResponse.
+        r"""Sets the encoding_format of this UpdateAccessConfigResponse.
 
         编码格式，默认UTF-8
 
@@ -429,7 +429,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def incremental_collect(self):
-        """Gets the incremental_collect of this UpdateAccessConfigResponse.
+        r"""Gets the incremental_collect of this UpdateAccessConfigResponse.
 
         采集策略：增量/全量
 
@@ -440,7 +440,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @incremental_collect.setter
     def incremental_collect(self, incremental_collect):
-        """Sets the incremental_collect of this UpdateAccessConfigResponse.
+        r"""Sets the incremental_collect of this UpdateAccessConfigResponse.
 
         采集策略：增量/全量
 
@@ -451,7 +451,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def processor_type(self):
-        """Gets the processor_type of this UpdateAccessConfigResponse.
+        r"""Gets the processor_type of this UpdateAccessConfigResponse.
 
         IC结构化解析类型
 
@@ -462,7 +462,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @processor_type.setter
     def processor_type(self, processor_type):
-        """Sets the processor_type of this UpdateAccessConfigResponse.
+        r"""Sets the processor_type of this UpdateAccessConfigResponse.
 
         IC结构化解析类型
 
@@ -473,7 +473,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def demo_log(self):
-        """Gets the demo_log of this UpdateAccessConfigResponse.
+        r"""Gets the demo_log of this UpdateAccessConfigResponse.
 
         示例日志
 
@@ -484,7 +484,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @demo_log.setter
     def demo_log(self, demo_log):
-        """Sets the demo_log of this UpdateAccessConfigResponse.
+        r"""Sets the demo_log of this UpdateAccessConfigResponse.
 
         示例日志
 
@@ -495,7 +495,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this UpdateAccessConfigResponse.
+        r"""Gets the demo_fields of this UpdateAccessConfigResponse.
 
         示例日志解析字段
 
@@ -506,7 +506,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this UpdateAccessConfigResponse.
+        r"""Sets the demo_fields of this UpdateAccessConfigResponse.
 
         示例日志解析字段
 
@@ -517,7 +517,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def processors(self):
-        """Gets the processors of this UpdateAccessConfigResponse.
+        r"""Gets the processors of this UpdateAccessConfigResponse.
 
         IC结构化解析器
 
@@ -528,7 +528,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @processors.setter
     def processors(self, processors):
-        """Sets the processors of this UpdateAccessConfigResponse.
+        r"""Sets the processors of this UpdateAccessConfigResponse.
 
         IC结构化解析器
 
@@ -539,7 +539,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateAccessConfigResponse.
+        r"""Gets the application_id of this UpdateAccessConfigResponse.
 
         ServiceStage应用ID
 
@@ -550,7 +550,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateAccessConfigResponse.
+        r"""Sets the application_id of this UpdateAccessConfigResponse.
 
         ServiceStage应用ID
 
@@ -561,7 +561,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this UpdateAccessConfigResponse.
+        r"""Gets the environment_id of this UpdateAccessConfigResponse.
 
         ServiceStage环境ID
 
@@ -572,7 +572,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this UpdateAccessConfigResponse.
+        r"""Sets the environment_id of this UpdateAccessConfigResponse.
 
         ServiceStage环境ID
 
@@ -583,7 +583,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @property
     def component_id(self):
-        """Gets the component_id of this UpdateAccessConfigResponse.
+        r"""Gets the component_id of this UpdateAccessConfigResponse.
 
         ServiceStage组件ID
 
@@ -594,7 +594,7 @@ class UpdateAccessConfigResponse(SdkResponse):
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this UpdateAccessConfigResponse.
+        r"""Sets the component_id of this UpdateAccessConfigResponse.
 
         ServiceStage组件ID
 

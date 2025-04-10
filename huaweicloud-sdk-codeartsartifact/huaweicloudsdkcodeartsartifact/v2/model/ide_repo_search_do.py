@@ -35,7 +35,7 @@ class IDERepoSearchDO:
     }
 
     def __init__(self, artifact_name=None, artifact_type=None, page_no=None, page_size=None, project_id=None, in_project=None):
-        """IDERepoSearchDO
+        r"""IDERepoSearchDO
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class IDERepoSearchDO:
 
     @property
     def artifact_name(self):
-        """Gets the artifact_name of this IDERepoSearchDO.
+        r"""Gets the artifact_name of this IDERepoSearchDO.
 
         搜索制品名称
 
@@ -88,7 +88,7 @@ class IDERepoSearchDO:
 
     @artifact_name.setter
     def artifact_name(self, artifact_name):
-        """Sets the artifact_name of this IDERepoSearchDO.
+        r"""Sets the artifact_name of this IDERepoSearchDO.
 
         搜索制品名称
 
@@ -99,7 +99,7 @@ class IDERepoSearchDO:
 
     @property
     def artifact_type(self):
-        """Gets the artifact_type of this IDERepoSearchDO.
+        r"""Gets the artifact_type of this IDERepoSearchDO.
 
         制品类型
 
@@ -110,7 +110,7 @@ class IDERepoSearchDO:
 
     @artifact_type.setter
     def artifact_type(self, artifact_type):
-        """Sets the artifact_type of this IDERepoSearchDO.
+        r"""Sets the artifact_type of this IDERepoSearchDO.
 
         制品类型
 
@@ -121,7 +121,7 @@ class IDERepoSearchDO:
 
     @property
     def page_no(self):
-        """Gets the page_no of this IDERepoSearchDO.
+        r"""Gets the page_no of this IDERepoSearchDO.
 
         页码
 
@@ -132,7 +132,7 @@ class IDERepoSearchDO:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this IDERepoSearchDO.
+        r"""Sets the page_no of this IDERepoSearchDO.
 
         页码
 
@@ -143,7 +143,7 @@ class IDERepoSearchDO:
 
     @property
     def page_size(self):
-        """Gets the page_size of this IDERepoSearchDO.
+        r"""Gets the page_size of this IDERepoSearchDO.
 
         每页条数
 
@@ -154,7 +154,7 @@ class IDERepoSearchDO:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this IDERepoSearchDO.
+        r"""Sets the page_size of this IDERepoSearchDO.
 
         每页条数
 
@@ -165,7 +165,7 @@ class IDERepoSearchDO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IDERepoSearchDO.
+        r"""Gets the project_id of this IDERepoSearchDO.
 
         项目id
 
@@ -176,7 +176,7 @@ class IDERepoSearchDO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IDERepoSearchDO.
+        r"""Sets the project_id of this IDERepoSearchDO.
 
         项目id
 
@@ -187,7 +187,7 @@ class IDERepoSearchDO:
 
     @property
     def in_project(self):
-        """Gets the in_project of this IDERepoSearchDO.
+        r"""Gets the in_project of this IDERepoSearchDO.
 
         是否在项目中
 
@@ -198,7 +198,7 @@ class IDERepoSearchDO:
 
     @in_project.setter
     def in_project(self, in_project):
-        """Sets the in_project of this IDERepoSearchDO.
+        r"""Sets the in_project of this IDERepoSearchDO.
 
         是否在项目中
 

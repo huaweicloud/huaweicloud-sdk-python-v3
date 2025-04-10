@@ -33,7 +33,7 @@ class ComponentSnapshotItem:
     }
 
     def __init__(self, component_id=None, index=None, context=None, created_at=None, updated_at=None):
-        """ComponentSnapshotItem
+        r"""ComponentSnapshotItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ComponentSnapshotItem:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ComponentSnapshotItem.
+        r"""Gets the component_id of this ComponentSnapshotItem.
 
         组件ID。
 
@@ -82,7 +82,7 @@ class ComponentSnapshotItem:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ComponentSnapshotItem.
+        r"""Sets the component_id of this ComponentSnapshotItem.
 
         组件ID。
 
@@ -93,7 +93,7 @@ class ComponentSnapshotItem:
 
     @property
     def index(self):
-        """Gets the index of this ComponentSnapshotItem.
+        r"""Gets the index of this ComponentSnapshotItem.
 
         快照索引。
 
@@ -104,7 +104,7 @@ class ComponentSnapshotItem:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ComponentSnapshotItem.
+        r"""Sets the index of this ComponentSnapshotItem.
 
         快照索引。
 
@@ -115,7 +115,7 @@ class ComponentSnapshotItem:
 
     @property
     def context(self):
-        """Gets the context of this ComponentSnapshotItem.
+        r"""Gets the context of this ComponentSnapshotItem.
 
         :return: The context of this ComponentSnapshotItem.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentSnapshotContext`
@@ -124,7 +124,7 @@ class ComponentSnapshotItem:
 
     @context.setter
     def context(self, context):
-        """Sets the context of this ComponentSnapshotItem.
+        r"""Sets the context of this ComponentSnapshotItem.
 
         :param context: The context of this ComponentSnapshotItem.
         :type context: :class:`huaweicloudsdkcae.v1.ComponentSnapshotContext`
@@ -133,7 +133,7 @@ class ComponentSnapshotItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ComponentSnapshotItem.
+        r"""Gets the created_at of this ComponentSnapshotItem.
 
         创建时间。
 
@@ -144,7 +144,7 @@ class ComponentSnapshotItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ComponentSnapshotItem.
+        r"""Sets the created_at of this ComponentSnapshotItem.
 
         创建时间。
 
@@ -155,7 +155,7 @@ class ComponentSnapshotItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ComponentSnapshotItem.
+        r"""Gets the updated_at of this ComponentSnapshotItem.
 
         更新时间。
 
@@ -166,7 +166,7 @@ class ComponentSnapshotItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ComponentSnapshotItem.
+        r"""Sets the updated_at of this ComponentSnapshotItem.
 
         更新时间。
 

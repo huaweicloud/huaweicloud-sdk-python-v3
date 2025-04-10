@@ -29,7 +29,7 @@ class VodRetrievalData:
     }
 
     def __init__(self, retrieval_warm=None, retrieval_cold=None, retrieval_cold_speed=None):
-        """VodRetrievalData
+        r"""VodRetrievalData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VodRetrievalData:
 
     @property
     def retrieval_warm(self):
-        """Gets the retrieval_warm of this VodRetrievalData.
+        r"""Gets the retrieval_warm of this VodRetrievalData.
 
         低频取回量 
 
@@ -68,7 +68,7 @@ class VodRetrievalData:
 
     @retrieval_warm.setter
     def retrieval_warm(self, retrieval_warm):
-        """Sets the retrieval_warm of this VodRetrievalData.
+        r"""Sets the retrieval_warm of this VodRetrievalData.
 
         低频取回量 
 
@@ -79,7 +79,7 @@ class VodRetrievalData:
 
     @property
     def retrieval_cold(self):
-        """Gets the retrieval_cold of this VodRetrievalData.
+        r"""Gets the retrieval_cold of this VodRetrievalData.
 
         归档标准取回量 
 
@@ -90,7 +90,7 @@ class VodRetrievalData:
 
     @retrieval_cold.setter
     def retrieval_cold(self, retrieval_cold):
-        """Sets the retrieval_cold of this VodRetrievalData.
+        r"""Sets the retrieval_cold of this VodRetrievalData.
 
         归档标准取回量 
 
@@ -101,7 +101,7 @@ class VodRetrievalData:
 
     @property
     def retrieval_cold_speed(self):
-        """Gets the retrieval_cold_speed of this VodRetrievalData.
+        r"""Gets the retrieval_cold_speed of this VodRetrievalData.
 
         归档快速取回量 
 
@@ -112,7 +112,7 @@ class VodRetrievalData:
 
     @retrieval_cold_speed.setter
     def retrieval_cold_speed(self, retrieval_cold_speed):
-        """Sets the retrieval_cold_speed of this VodRetrievalData.
+        r"""Sets the retrieval_cold_speed of this VodRetrievalData.
 
         归档快速取回量 
 

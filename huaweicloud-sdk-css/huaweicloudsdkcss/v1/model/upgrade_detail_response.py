@@ -28,7 +28,7 @@ class UpgradeDetailResponse(SdkResponse):
     }
 
     def __init__(self, total_size=None, detail_list=None):
-        """UpgradeDetailResponse
+        r"""UpgradeDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpgradeDetailResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this UpgradeDetailResponse.
+        r"""Gets the total_size of this UpgradeDetailResponse.
 
         下发执行接口次数。
 
@@ -62,7 +62,7 @@ class UpgradeDetailResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this UpgradeDetailResponse.
+        r"""Sets the total_size of this UpgradeDetailResponse.
 
         下发执行接口次数。
 
@@ -73,7 +73,7 @@ class UpgradeDetailResponse(SdkResponse):
 
     @property
     def detail_list(self):
-        """Gets the detail_list of this UpgradeDetailResponse.
+        r"""Gets the detail_list of this UpgradeDetailResponse.
 
         :return: The detail_list of this UpgradeDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.GetUpgradeDetailInfo`]
@@ -82,7 +82,7 @@ class UpgradeDetailResponse(SdkResponse):
 
     @detail_list.setter
     def detail_list(self, detail_list):
-        """Sets the detail_list of this UpgradeDetailResponse.
+        r"""Sets the detail_list of this UpgradeDetailResponse.
 
         :param detail_list: The detail_list of this UpgradeDetailResponse.
         :type detail_list: list[:class:`huaweicloudsdkcss.v1.GetUpgradeDetailInfo`]

@@ -28,7 +28,7 @@ class ModifyPostgresqlHbaConfResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None):
-        """ModifyPostgresqlHbaConfResponse
+        r"""ModifyPostgresqlHbaConfResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ModifyPostgresqlHbaConfResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ModifyPostgresqlHbaConfResponse.
+        r"""Gets the code of this ModifyPostgresqlHbaConfResponse.
 
         结果码
 
@@ -62,7 +62,7 @@ class ModifyPostgresqlHbaConfResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ModifyPostgresqlHbaConfResponse.
+        r"""Sets the code of this ModifyPostgresqlHbaConfResponse.
 
         结果码
 
@@ -73,7 +73,7 @@ class ModifyPostgresqlHbaConfResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ModifyPostgresqlHbaConfResponse.
+        r"""Gets the message of this ModifyPostgresqlHbaConfResponse.
 
         结果描述
 
@@ -84,7 +84,7 @@ class ModifyPostgresqlHbaConfResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ModifyPostgresqlHbaConfResponse.
+        r"""Sets the message of this ModifyPostgresqlHbaConfResponse.
 
         结果描述
 

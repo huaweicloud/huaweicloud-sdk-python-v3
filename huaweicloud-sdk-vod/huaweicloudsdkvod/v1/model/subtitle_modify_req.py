@@ -35,7 +35,7 @@ class SubtitleModifyReq:
     }
 
     def __init__(self, asset_id=None, default_language=None, repackage_mode=None, delete_mode=None, add_subtitles=None, delete_subtitles=None):
-        """SubtitleModifyReq
+        r"""SubtitleModifyReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SubtitleModifyReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this SubtitleModifyReq.
+        r"""Gets the asset_id of this SubtitleModifyReq.
 
         媒资ID
 
@@ -88,7 +88,7 @@ class SubtitleModifyReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this SubtitleModifyReq.
+        r"""Sets the asset_id of this SubtitleModifyReq.
 
         媒资ID
 
@@ -99,7 +99,7 @@ class SubtitleModifyReq:
 
     @property
     def default_language(self):
-        """Gets the default_language of this SubtitleModifyReq.
+        r"""Gets the default_language of this SubtitleModifyReq.
 
         字幕默认语言(字幕必须存在)
 
@@ -110,7 +110,7 @@ class SubtitleModifyReq:
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this SubtitleModifyReq.
+        r"""Sets the default_language of this SubtitleModifyReq.
 
         字幕默认语言(字幕必须存在)
 
@@ -121,7 +121,7 @@ class SubtitleModifyReq:
 
     @property
     def repackage_mode(self):
-        """Gets the repackage_mode of this SubtitleModifyReq.
+        r"""Gets the repackage_mode of this SubtitleModifyReq.
 
         外挂模式，不传默认取值为0  取值如下： -0：表示添加的字幕会外挂上历史产物 -1：表示添加的字幕不会外挂上历史产物
 
@@ -132,7 +132,7 @@ class SubtitleModifyReq:
 
     @repackage_mode.setter
     def repackage_mode(self, repackage_mode):
-        """Sets the repackage_mode of this SubtitleModifyReq.
+        r"""Sets the repackage_mode of this SubtitleModifyReq.
 
         外挂模式，不传默认取值为0  取值如下： -0：表示添加的字幕会外挂上历史产物 -1：表示添加的字幕不会外挂上历史产物
 
@@ -143,7 +143,7 @@ class SubtitleModifyReq:
 
     @property
     def delete_mode(self):
-        """Gets the delete_mode of this SubtitleModifyReq.
+        r"""Gets the delete_mode of this SubtitleModifyReq.
 
         删除模式，不传默认取值为0  取值如下： -0：表示删除字幕会清除历史产物携带的字幕信息 -1：表示删除字幕不清除历史产物携带的字幕信息
 
@@ -154,7 +154,7 @@ class SubtitleModifyReq:
 
     @delete_mode.setter
     def delete_mode(self, delete_mode):
-        """Sets the delete_mode of this SubtitleModifyReq.
+        r"""Sets the delete_mode of this SubtitleModifyReq.
 
         删除模式，不传默认取值为0  取值如下： -0：表示删除字幕会清除历史产物携带的字幕信息 -1：表示删除字幕不清除历史产物携带的字幕信息
 
@@ -165,7 +165,7 @@ class SubtitleModifyReq:
 
     @property
     def add_subtitles(self):
-        """Gets the add_subtitles of this SubtitleModifyReq.
+        r"""Gets the add_subtitles of this SubtitleModifyReq.
 
         需新增或修改的字幕
 
@@ -176,7 +176,7 @@ class SubtitleModifyReq:
 
     @add_subtitles.setter
     def add_subtitles(self, add_subtitles):
-        """Sets the add_subtitles of this SubtitleModifyReq.
+        r"""Sets the add_subtitles of this SubtitleModifyReq.
 
         需新增或修改的字幕
 
@@ -187,7 +187,7 @@ class SubtitleModifyReq:
 
     @property
     def delete_subtitles(self):
-        """Gets the delete_subtitles of this SubtitleModifyReq.
+        r"""Gets the delete_subtitles of this SubtitleModifyReq.
 
         需删除的字幕，language不能与add_subtitles重复
 
@@ -198,7 +198,7 @@ class SubtitleModifyReq:
 
     @delete_subtitles.setter
     def delete_subtitles(self, delete_subtitles):
-        """Sets the delete_subtitles of this SubtitleModifyReq.
+        r"""Sets the delete_subtitles of this SubtitleModifyReq.
 
         需删除的字幕，language不能与add_subtitles重复
 

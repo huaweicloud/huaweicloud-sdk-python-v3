@@ -57,7 +57,7 @@ class PublicZoneResp:
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, enterprise_project_id=None):
-        """PublicZoneResp
+        r"""PublicZoneResp
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class PublicZoneResp:
 
     @property
     def id(self):
-        """Gets the id of this PublicZoneResp.
+        r"""Gets the id of this PublicZoneResp.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -166,7 +166,7 @@ class PublicZoneResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicZoneResp.
+        r"""Sets the id of this PublicZoneResp.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -177,7 +177,7 @@ class PublicZoneResp:
 
     @property
     def name(self):
-        """Gets the name of this PublicZoneResp.
+        r"""Gets the name of this PublicZoneResp.
 
         zone名称。
 
@@ -188,7 +188,7 @@ class PublicZoneResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicZoneResp.
+        r"""Sets the name of this PublicZoneResp.
 
         zone名称。
 
@@ -199,7 +199,7 @@ class PublicZoneResp:
 
     @property
     def description(self):
-        """Gets the description of this PublicZoneResp.
+        r"""Gets the description of this PublicZoneResp.
 
         对zone的描述信息。
 
@@ -210,7 +210,7 @@ class PublicZoneResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublicZoneResp.
+        r"""Sets the description of this PublicZoneResp.
 
         对zone的描述信息。
 
@@ -221,7 +221,7 @@ class PublicZoneResp:
 
     @property
     def email(self):
-        """Gets the email of this PublicZoneResp.
+        r"""Gets the email of this PublicZoneResp.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -232,7 +232,7 @@ class PublicZoneResp:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PublicZoneResp.
+        r"""Sets the email of this PublicZoneResp.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -243,7 +243,7 @@ class PublicZoneResp:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this PublicZoneResp.
+        r"""Gets the zone_type of this PublicZoneResp.
 
         zone类型，公网（public）。
 
@@ -254,7 +254,7 @@ class PublicZoneResp:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this PublicZoneResp.
+        r"""Sets the zone_type of this PublicZoneResp.
 
         zone类型，公网（public）。
 
@@ -265,7 +265,7 @@ class PublicZoneResp:
 
     @property
     def ttl(self):
-        """Gets the ttl of this PublicZoneResp.
+        r"""Gets the ttl of this PublicZoneResp.
 
         该zone下SOA记录中的ttl值。
 
@@ -276,7 +276,7 @@ class PublicZoneResp:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this PublicZoneResp.
+        r"""Sets the ttl of this PublicZoneResp.
 
         该zone下SOA记录中的ttl值。
 
@@ -287,7 +287,7 @@ class PublicZoneResp:
 
     @property
     def serial(self):
-        """Gets the serial of this PublicZoneResp.
+        r"""Gets the serial of this PublicZoneResp.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -298,7 +298,7 @@ class PublicZoneResp:
 
     @serial.setter
     def serial(self, serial):
-        """Sets the serial of this PublicZoneResp.
+        r"""Sets the serial of this PublicZoneResp.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -309,7 +309,7 @@ class PublicZoneResp:
 
     @property
     def status(self):
-        """Gets the status of this PublicZoneResp.
+        r"""Gets the status of this PublicZoneResp.
 
         资源状态。
 
@@ -320,7 +320,7 @@ class PublicZoneResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicZoneResp.
+        r"""Sets the status of this PublicZoneResp.
 
         资源状态。
 
@@ -331,7 +331,7 @@ class PublicZoneResp:
 
     @property
     def record_num(self):
-        """Gets the record_num of this PublicZoneResp.
+        r"""Gets the record_num of this PublicZoneResp.
 
         该zone下的recordset个数。
 
@@ -342,7 +342,7 @@ class PublicZoneResp:
 
     @record_num.setter
     def record_num(self, record_num):
-        """Sets the record_num of this PublicZoneResp.
+        r"""Sets the record_num of this PublicZoneResp.
 
         该zone下的recordset个数。
 
@@ -353,7 +353,7 @@ class PublicZoneResp:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this PublicZoneResp.
+        r"""Gets the pool_id of this PublicZoneResp.
 
         托管该zone的pool，由系统分配。
 
@@ -364,7 +364,7 @@ class PublicZoneResp:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this PublicZoneResp.
+        r"""Sets the pool_id of this PublicZoneResp.
 
         托管该zone的pool，由系统分配。
 
@@ -375,7 +375,7 @@ class PublicZoneResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PublicZoneResp.
+        r"""Gets the project_id of this PublicZoneResp.
 
         zone所属的项目ID。
 
@@ -386,7 +386,7 @@ class PublicZoneResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PublicZoneResp.
+        r"""Sets the project_id of this PublicZoneResp.
 
         zone所属的项目ID。
 
@@ -397,7 +397,7 @@ class PublicZoneResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PublicZoneResp.
+        r"""Gets the created_at of this PublicZoneResp.
 
         创建时间。
 
@@ -408,7 +408,7 @@ class PublicZoneResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PublicZoneResp.
+        r"""Sets the created_at of this PublicZoneResp.
 
         创建时间。
 
@@ -419,7 +419,7 @@ class PublicZoneResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PublicZoneResp.
+        r"""Gets the updated_at of this PublicZoneResp.
 
         更新时间。
 
@@ -430,7 +430,7 @@ class PublicZoneResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PublicZoneResp.
+        r"""Sets the updated_at of this PublicZoneResp.
 
         更新时间。
 
@@ -441,7 +441,7 @@ class PublicZoneResp:
 
     @property
     def links(self):
-        """Gets the links of this PublicZoneResp.
+        r"""Gets the links of this PublicZoneResp.
 
         :return: The links of this PublicZoneResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -450,7 +450,7 @@ class PublicZoneResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this PublicZoneResp.
+        r"""Sets the links of this PublicZoneResp.
 
         :param links: The links of this PublicZoneResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -459,7 +459,7 @@ class PublicZoneResp:
 
     @property
     def tags(self):
-        """Gets the tags of this PublicZoneResp.
+        r"""Gets the tags of this PublicZoneResp.
 
         资源标签。
 
@@ -470,7 +470,7 @@ class PublicZoneResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PublicZoneResp.
+        r"""Sets the tags of this PublicZoneResp.
 
         资源标签。
 
@@ -481,7 +481,7 @@ class PublicZoneResp:
 
     @property
     def masters(self):
-        """Gets the masters of this PublicZoneResp.
+        r"""Gets the masters of this PublicZoneResp.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -492,7 +492,7 @@ class PublicZoneResp:
 
     @masters.setter
     def masters(self, masters):
-        """Sets the masters of this PublicZoneResp.
+        r"""Sets the masters of this PublicZoneResp.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -503,7 +503,7 @@ class PublicZoneResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PublicZoneResp.
+        r"""Gets the enterprise_project_id of this PublicZoneResp.
 
         域名关联的企业项目ID，长度不超过36个字符。
 
@@ -514,7 +514,7 @@ class PublicZoneResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PublicZoneResp.
+        r"""Sets the enterprise_project_id of this PublicZoneResp.
 
         域名关联的企业项目ID，长度不超过36个字符。
 

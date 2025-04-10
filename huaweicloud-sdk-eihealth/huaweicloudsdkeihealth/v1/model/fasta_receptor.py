@@ -31,7 +31,7 @@ class FastaReceptor:
     }
 
     def __init__(self, source=None, url=None, format=None, data=None):
-        """FastaReceptor
+        r"""FastaReceptor
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class FastaReceptor:
 
     @property
     def source(self):
-        """Gets the source of this FastaReceptor.
+        r"""Gets the source of this FastaReceptor.
 
         :return: The source of this FastaReceptor.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -72,7 +72,7 @@ class FastaReceptor:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this FastaReceptor.
+        r"""Sets the source of this FastaReceptor.
 
         :param source: The source of this FastaReceptor.
         :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -81,7 +81,7 @@ class FastaReceptor:
 
     @property
     def url(self):
-        """Gets the url of this FastaReceptor.
+        r"""Gets the url of this FastaReceptor.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -92,7 +92,7 @@ class FastaReceptor:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this FastaReceptor.
+        r"""Sets the url of this FastaReceptor.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -103,7 +103,7 @@ class FastaReceptor:
 
     @property
     def format(self):
-        """Gets the format of this FastaReceptor.
+        r"""Gets the format of this FastaReceptor.
 
         文件格式，仅支持FASTA，仅数据源为RAW时提供
 
@@ -114,7 +114,7 @@ class FastaReceptor:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this FastaReceptor.
+        r"""Sets the format of this FastaReceptor.
 
         文件格式，仅支持FASTA，仅数据源为RAW时提供
 
@@ -125,7 +125,7 @@ class FastaReceptor:
 
     @property
     def data(self):
-        """Gets the data of this FastaReceptor.
+        r"""Gets the data of this FastaReceptor.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -136,7 +136,7 @@ class FastaReceptor:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this FastaReceptor.
+        r"""Sets the data of this FastaReceptor.
 
         文件原始数据，仅数据源为RAW时提供
 

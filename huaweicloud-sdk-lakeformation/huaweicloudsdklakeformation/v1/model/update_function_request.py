@@ -33,7 +33,7 @@ class UpdateFunctionRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, function_name=None, body=None):
-        """UpdateFunctionRequest
+        r"""UpdateFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateFunctionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateFunctionRequest.
+        r"""Gets the instance_id of this UpdateFunctionRequest.
 
         实例Id
 
@@ -78,7 +78,7 @@ class UpdateFunctionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateFunctionRequest.
+        r"""Sets the instance_id of this UpdateFunctionRequest.
 
         实例Id
 
@@ -89,7 +89,7 @@ class UpdateFunctionRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this UpdateFunctionRequest.
+        r"""Gets the catalog_name of this UpdateFunctionRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class UpdateFunctionRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this UpdateFunctionRequest.
+        r"""Sets the catalog_name of this UpdateFunctionRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class UpdateFunctionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateFunctionRequest.
+        r"""Gets the database_name of this UpdateFunctionRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class UpdateFunctionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateFunctionRequest.
+        r"""Sets the database_name of this UpdateFunctionRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class UpdateFunctionRequest:
 
     @property
     def function_name(self):
-        """Gets the function_name of this UpdateFunctionRequest.
+        r"""Gets the function_name of this UpdateFunctionRequest.
 
         函数名字
 
@@ -144,7 +144,7 @@ class UpdateFunctionRequest:
 
     @function_name.setter
     def function_name(self, function_name):
-        """Sets the function_name of this UpdateFunctionRequest.
+        r"""Sets the function_name of this UpdateFunctionRequest.
 
         函数名字
 
@@ -155,7 +155,7 @@ class UpdateFunctionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFunctionRequest.
+        r"""Gets the body of this UpdateFunctionRequest.
 
         :return: The body of this UpdateFunctionRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.FunctionInput`
@@ -164,7 +164,7 @@ class UpdateFunctionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFunctionRequest.
+        r"""Sets the body of this UpdateFunctionRequest.
 
         :param body: The body of this UpdateFunctionRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.FunctionInput`

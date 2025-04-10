@@ -25,7 +25,7 @@ class ResourceType:
     }
 
     def __init__(self, resource_type=None):
-        """ResourceType
+        r"""ResourceType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResourceType:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceType.
+        r"""Gets the resource_type of this ResourceType.
 
         带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 
@@ -53,7 +53,7 @@ class ResourceType:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceType.
+        r"""Sets the resource_type of this ResourceType.
 
         带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 

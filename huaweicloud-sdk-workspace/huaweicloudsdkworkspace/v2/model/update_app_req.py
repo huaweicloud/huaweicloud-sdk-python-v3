@@ -49,7 +49,7 @@ class UpdateAppReq:
     }
 
     def __init__(self, name=None, version=None, description=None, app_file_store=None, app_icon_url=None, install_type=None, authorization_type=None, install_command=None, uninstall_command=None, support_os=None, catalog_id=None, status=None, install_info=None):
-        """UpdateAppReq
+        r"""UpdateAppReq
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class UpdateAppReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppReq.
+        r"""Gets the name of this UpdateAppReq.
 
         应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
 
@@ -138,7 +138,7 @@ class UpdateAppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppReq.
+        r"""Sets the name of this UpdateAppReq.
 
         应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~128个字符。
 
@@ -149,7 +149,7 @@ class UpdateAppReq:
 
     @property
     def version(self):
-        """Gets the version of this UpdateAppReq.
+        r"""Gets the version of this UpdateAppReq.
 
         版本号。
 
@@ -160,7 +160,7 @@ class UpdateAppReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateAppReq.
+        r"""Sets the version of this UpdateAppReq.
 
         版本号。
 
@@ -171,7 +171,7 @@ class UpdateAppReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppReq.
+        r"""Gets the description of this UpdateAppReq.
 
         描述。
 
@@ -182,7 +182,7 @@ class UpdateAppReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppReq.
+        r"""Sets the description of this UpdateAppReq.
 
         描述。
 
@@ -193,7 +193,7 @@ class UpdateAppReq:
 
     @property
     def app_file_store(self):
-        """Gets the app_file_store of this UpdateAppReq.
+        r"""Gets the app_file_store of this UpdateAppReq.
 
         :return: The app_file_store of this UpdateAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -202,7 +202,7 @@ class UpdateAppReq:
 
     @app_file_store.setter
     def app_file_store(self, app_file_store):
-        """Sets the app_file_store of this UpdateAppReq.
+        r"""Sets the app_file_store of this UpdateAppReq.
 
         :param app_file_store: The app_file_store of this UpdateAppReq.
         :type app_file_store: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -211,7 +211,7 @@ class UpdateAppReq:
 
     @property
     def app_icon_url(self):
-        """Gets the app_icon_url of this UpdateAppReq.
+        r"""Gets the app_icon_url of this UpdateAppReq.
 
         图片的路径,支持使用可访问的URL地址或DataURIscheme。 * `可访问的URL` - https://xxx.x.xx.x/xxx/xx.jpg。 * `DataURIscheme` -  data;image/png;base64,iVBORw0KGgoAAAANS; 注意使用dataURLStream时，最多支持约xxKB大小的图片，且必须是png格式。
 
@@ -222,7 +222,7 @@ class UpdateAppReq:
 
     @app_icon_url.setter
     def app_icon_url(self, app_icon_url):
-        """Sets the app_icon_url of this UpdateAppReq.
+        r"""Sets the app_icon_url of this UpdateAppReq.
 
         图片的路径,支持使用可访问的URL地址或DataURIscheme。 * `可访问的URL` - https://xxx.x.xx.x/xxx/xx.jpg。 * `DataURIscheme` -  data;image/png;base64,iVBORw0KGgoAAAANS; 注意使用dataURLStream时，最多支持约xxKB大小的图片，且必须是png格式。
 
@@ -233,7 +233,7 @@ class UpdateAppReq:
 
     @property
     def install_type(self):
-        """Gets the install_type of this UpdateAppReq.
+        r"""Gets the install_type of this UpdateAppReq.
 
         :return: The install_type of this UpdateAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -242,7 +242,7 @@ class UpdateAppReq:
 
     @install_type.setter
     def install_type(self, install_type):
-        """Sets the install_type of this UpdateAppReq.
+        r"""Sets the install_type of this UpdateAppReq.
 
         :param install_type: The install_type of this UpdateAppReq.
         :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -251,7 +251,7 @@ class UpdateAppReq:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this UpdateAppReq.
+        r"""Gets the authorization_type of this UpdateAppReq.
 
         :return: The authorization_type of this UpdateAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -260,7 +260,7 @@ class UpdateAppReq:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this UpdateAppReq.
+        r"""Sets the authorization_type of this UpdateAppReq.
 
         :param authorization_type: The authorization_type of this UpdateAppReq.
         :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -269,7 +269,7 @@ class UpdateAppReq:
 
     @property
     def install_command(self):
-        """Gets the install_command of this UpdateAppReq.
+        r"""Gets the install_command of this UpdateAppReq.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -280,7 +280,7 @@ class UpdateAppReq:
 
     @install_command.setter
     def install_command(self, install_command):
-        """Sets the install_command of this UpdateAppReq.
+        r"""Sets the install_command of this UpdateAppReq.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -291,7 +291,7 @@ class UpdateAppReq:
 
     @property
     def uninstall_command(self):
-        """Gets the uninstall_command of this UpdateAppReq.
+        r"""Gets the uninstall_command of this UpdateAppReq.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -302,7 +302,7 @@ class UpdateAppReq:
 
     @uninstall_command.setter
     def uninstall_command(self, uninstall_command):
-        """Sets the uninstall_command of this UpdateAppReq.
+        r"""Sets the uninstall_command of this UpdateAppReq.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -313,7 +313,7 @@ class UpdateAppReq:
 
     @property
     def support_os(self):
-        """Gets the support_os of this UpdateAppReq.
+        r"""Gets the support_os of this UpdateAppReq.
 
         :return: The support_os of this UpdateAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -322,7 +322,7 @@ class UpdateAppReq:
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this UpdateAppReq.
+        r"""Sets the support_os of this UpdateAppReq.
 
         :param support_os: The support_os of this UpdateAppReq.
         :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -331,7 +331,7 @@ class UpdateAppReq:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this UpdateAppReq.
+        r"""Gets the catalog_id of this UpdateAppReq.
 
         分类ID。
 
@@ -342,7 +342,7 @@ class UpdateAppReq:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this UpdateAppReq.
+        r"""Sets the catalog_id of this UpdateAppReq.
 
         分类ID。
 
@@ -353,7 +353,7 @@ class UpdateAppReq:
 
     @property
     def status(self):
-        """Gets the status of this UpdateAppReq.
+        r"""Gets the status of this UpdateAppReq.
 
         :return: The status of this UpdateAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
@@ -362,7 +362,7 @@ class UpdateAppReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAppReq.
+        r"""Sets the status of this UpdateAppReq.
 
         :param status: The status of this UpdateAppReq.
         :type status: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
@@ -371,7 +371,7 @@ class UpdateAppReq:
 
     @property
     def install_info(self):
-        """Gets the install_info of this UpdateAppReq.
+        r"""Gets the install_info of this UpdateAppReq.
 
         安装信息。
 
@@ -382,7 +382,7 @@ class UpdateAppReq:
 
     @install_info.setter
     def install_info(self, install_info):
-        """Sets the install_info of this UpdateAppReq.
+        r"""Sets the install_info of this UpdateAppReq.
 
         安装信息。
 

@@ -25,7 +25,7 @@ class DeleteServerRequest:
     }
 
     def __init__(self, server_id=None):
-        """DeleteServerRequest
+        r"""DeleteServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this DeleteServerRequest.
+        r"""Gets the server_id of this DeleteServerRequest.
 
         服务器唯一标识。
 
@@ -53,7 +53,7 @@ class DeleteServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this DeleteServerRequest.
+        r"""Sets the server_id of this DeleteServerRequest.
 
         服务器唯一标识。
 

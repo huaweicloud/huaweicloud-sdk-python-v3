@@ -33,7 +33,7 @@ class ObsFolder:
     }
 
     def __init__(self, folder_name=None, folder_guid=None, folder_qualified_name=None, object_count=None, data_size=None):
-        """ObsFolder
+        r"""ObsFolder
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ObsFolder:
 
     @property
     def folder_name(self):
-        """Gets the folder_name of this ObsFolder.
+        r"""Gets the folder_name of this ObsFolder.
 
         目录名称
 
@@ -82,7 +82,7 @@ class ObsFolder:
 
     @folder_name.setter
     def folder_name(self, folder_name):
-        """Sets the folder_name of this ObsFolder.
+        r"""Sets the folder_name of this ObsFolder.
 
         目录名称
 
@@ -93,7 +93,7 @@ class ObsFolder:
 
     @property
     def folder_guid(self):
-        """Gets the folder_guid of this ObsFolder.
+        r"""Gets the folder_guid of this ObsFolder.
 
         目录的guid
 
@@ -104,7 +104,7 @@ class ObsFolder:
 
     @folder_guid.setter
     def folder_guid(self, folder_guid):
-        """Sets the folder_guid of this ObsFolder.
+        r"""Sets the folder_guid of this ObsFolder.
 
         目录的guid
 
@@ -115,7 +115,7 @@ class ObsFolder:
 
     @property
     def folder_qualified_name(self):
-        """Gets the folder_qualified_name of this ObsFolder.
+        r"""Gets the folder_qualified_name of this ObsFolder.
 
         目录的唯一标识名称
 
@@ -126,7 +126,7 @@ class ObsFolder:
 
     @folder_qualified_name.setter
     def folder_qualified_name(self, folder_qualified_name):
-        """Sets the folder_qualified_name of this ObsFolder.
+        r"""Sets the folder_qualified_name of this ObsFolder.
 
         目录的唯一标识名称
 
@@ -137,7 +137,7 @@ class ObsFolder:
 
     @property
     def object_count(self):
-        """Gets the object_count of this ObsFolder.
+        r"""Gets the object_count of this ObsFolder.
 
         对象总数
 
@@ -148,7 +148,7 @@ class ObsFolder:
 
     @object_count.setter
     def object_count(self, object_count):
-        """Sets the object_count of this ObsFolder.
+        r"""Sets the object_count of this ObsFolder.
 
         对象总数
 
@@ -159,7 +159,7 @@ class ObsFolder:
 
     @property
     def data_size(self):
-        """Gets the data_size of this ObsFolder.
+        r"""Gets the data_size of this ObsFolder.
 
         数据量
 
@@ -170,7 +170,7 @@ class ObsFolder:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this ObsFolder.
+        r"""Sets the data_size of this ObsFolder.
 
         数据量
 

@@ -27,7 +27,7 @@ class BatchCheckResultsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchCheckResultsRequest
+        r"""BatchCheckResultsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchCheckResultsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchCheckResultsRequest.
+        r"""Gets the x_language of this BatchCheckResultsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchCheckResultsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchCheckResultsRequest.
+        r"""Sets the x_language of this BatchCheckResultsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchCheckResultsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckResultsRequest.
+        r"""Gets the body of this BatchCheckResultsRequest.
 
         :return: The body of this BatchCheckResultsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryPrecheckResultReq`
@@ -81,7 +81,7 @@ class BatchCheckResultsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckResultsRequest.
+        r"""Sets the body of this BatchCheckResultsRequest.
 
         :param body: The body of this BatchCheckResultsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryPrecheckResultReq`

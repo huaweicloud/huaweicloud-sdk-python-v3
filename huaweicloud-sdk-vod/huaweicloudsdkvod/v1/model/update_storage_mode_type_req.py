@@ -25,7 +25,7 @@ class UpdateStorageModeTypeReq:
     }
 
     def __init__(self, storage_mode_type=None):
-        """UpdateStorageModeTypeReq
+        r"""UpdateStorageModeTypeReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateStorageModeTypeReq:
 
     @property
     def storage_mode_type(self):
-        """Gets the storage_mode_type of this UpdateStorageModeTypeReq.
+        r"""Gets the storage_mode_type of this UpdateStorageModeTypeReq.
 
         降冷模式。 取值如下： - WHOLE：整个媒资粒度。 - ORIGIN：原文件粒度。 
 
@@ -54,7 +54,7 @@ class UpdateStorageModeTypeReq:
 
     @storage_mode_type.setter
     def storage_mode_type(self, storage_mode_type):
-        """Sets the storage_mode_type of this UpdateStorageModeTypeReq.
+        r"""Sets the storage_mode_type of this UpdateStorageModeTypeReq.
 
         降冷模式。 取值如下： - WHOLE：整个媒资粒度。 - ORIGIN：原文件粒度。 
 

@@ -25,7 +25,7 @@ class ShowAgentInfosRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAgentInfosRequest
+        r"""ShowAgentInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAgentInfosRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAgentInfosRequest.
+        r"""Gets the body of this ShowAgentInfosRequest.
 
         :return: The body of this ShowAgentInfosRequest.
         :rtype: :class:`huaweicloudsdkaom.v4.AgentInfoParam`
@@ -52,7 +52,7 @@ class ShowAgentInfosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAgentInfosRequest.
+        r"""Sets the body of this ShowAgentInfosRequest.
 
         :param body: The body of this ShowAgentInfosRequest.
         :type body: :class:`huaweicloudsdkaom.v4.AgentInfoParam`

@@ -25,7 +25,7 @@ class ShowAuthConfigRequest:
     }
 
     def __init__(self, auth_type=None):
-        """ShowAuthConfigRequest
+        r"""ShowAuthConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAuthConfigRequest:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShowAuthConfigRequest.
+        r"""Gets the auth_type of this ShowAuthConfigRequest.
 
         认证类型
 
@@ -54,7 +54,7 @@ class ShowAuthConfigRequest:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShowAuthConfigRequest.
+        r"""Sets the auth_type of this ShowAuthConfigRequest.
 
         认证类型
 

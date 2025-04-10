@@ -27,7 +27,7 @@ class ListTimeLineTrafficStatisticsRequest:
     }
 
     def __init__(self, timezone=None, body=None):
-        """ListTimeLineTrafficStatisticsRequest
+        r"""ListTimeLineTrafficStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTimeLineTrafficStatisticsRequest:
 
     @property
     def timezone(self):
-        """Gets the timezone of this ListTimeLineTrafficStatisticsRequest.
+        r"""Gets the timezone of this ListTimeLineTrafficStatisticsRequest.
 
         时区
 
@@ -60,7 +60,7 @@ class ListTimeLineTrafficStatisticsRequest:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this ListTimeLineTrafficStatisticsRequest.
+        r"""Sets the timezone of this ListTimeLineTrafficStatisticsRequest.
 
         时区
 
@@ -71,7 +71,7 @@ class ListTimeLineTrafficStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTimeLineTrafficStatisticsRequest.
+        r"""Gets the body of this ListTimeLineTrafficStatisticsRequest.
 
         :return: The body of this ListTimeLineTrafficStatisticsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.TimelineTrafficStatisticsRequestBody`
@@ -80,7 +80,7 @@ class ListTimeLineTrafficStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTimeLineTrafficStatisticsRequest.
+        r"""Sets the body of this ListTimeLineTrafficStatisticsRequest.
 
         :param body: The body of this ListTimeLineTrafficStatisticsRequest.
         :type body: :class:`huaweicloudsdklts.v2.TimelineTrafficStatisticsRequestBody`

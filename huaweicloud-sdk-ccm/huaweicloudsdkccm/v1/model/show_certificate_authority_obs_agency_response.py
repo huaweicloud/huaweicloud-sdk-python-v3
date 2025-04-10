@@ -26,7 +26,7 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency_granted=None):
-        """ShowCertificateAuthorityObsAgencyResponse
+        r"""ShowCertificateAuthorityObsAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
 
     @property
     def agency_granted(self):
-        """Gets the agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
+        r"""Gets the agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
 
         OBS当前的授权结果。 - **true** - **false**
 
@@ -55,7 +55,7 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
 
     @agency_granted.setter
     def agency_granted(self, agency_granted):
-        """Sets the agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
+        r"""Sets the agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
 
         OBS当前的授权结果。 - **true** - **false**
 

@@ -29,7 +29,7 @@ class BulkDto:
     }
 
     def __init__(self, supported=None, max_operations=None, max_payload_size=None):
-        """BulkDto
+        r"""BulkDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BulkDto:
 
     @property
     def supported(self):
-        """Gets the supported of this BulkDto.
+        r"""Gets the supported of this BulkDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -68,7 +68,7 @@ class BulkDto:
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this BulkDto.
+        r"""Sets the supported of this BulkDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -79,7 +79,7 @@ class BulkDto:
 
     @property
     def max_operations(self):
-        """Gets the max_operations of this BulkDto.
+        r"""Gets the max_operations of this BulkDto.
 
         一次可操作的最大个数
 
@@ -90,7 +90,7 @@ class BulkDto:
 
     @max_operations.setter
     def max_operations(self, max_operations):
-        """Sets the max_operations of this BulkDto.
+        r"""Sets the max_operations of this BulkDto.
 
         一次可操作的最大个数
 
@@ -101,7 +101,7 @@ class BulkDto:
 
     @property
     def max_payload_size(self):
-        """Gets the max_payload_size of this BulkDto.
+        r"""Gets the max_payload_size of this BulkDto.
 
         最大有效载荷量
 
@@ -112,7 +112,7 @@ class BulkDto:
 
     @max_payload_size.setter
     def max_payload_size(self, max_payload_size):
-        """Sets the max_payload_size of this BulkDto.
+        r"""Sets the max_payload_size of this BulkDto.
 
         最大有效载荷量
 

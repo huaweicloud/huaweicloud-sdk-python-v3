@@ -27,7 +27,7 @@ class SendAuthorizationMailRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SendAuthorizationMailRequest
+        r"""SendAuthorizationMailRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SendAuthorizationMailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SendAuthorizationMailRequest.
+        r"""Gets the x_language of this SendAuthorizationMailRequest.
 
         语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
@@ -61,7 +61,7 @@ class SendAuthorizationMailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SendAuthorizationMailRequest.
+        r"""Sets the x_language of this SendAuthorizationMailRequest.
 
         语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
@@ -72,7 +72,7 @@ class SendAuthorizationMailRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendAuthorizationMailRequest.
+        r"""Gets the body of this SendAuthorizationMailRequest.
 
         :return: The body of this SendAuthorizationMailRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ResendAuthorizationMailReq`
@@ -81,7 +81,7 @@ class SendAuthorizationMailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendAuthorizationMailRequest.
+        r"""Sets the body of this SendAuthorizationMailRequest.
 
         :param body: The body of this SendAuthorizationMailRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ResendAuthorizationMailReq`

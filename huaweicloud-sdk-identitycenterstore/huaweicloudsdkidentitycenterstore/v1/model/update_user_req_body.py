@@ -25,7 +25,7 @@ class UpdateUserReqBody:
     }
 
     def __init__(self, operations=None):
-        """UpdateUserReqBody
+        r"""UpdateUserReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateUserReqBody:
 
     @property
     def operations(self):
-        """Gets the operations of this UpdateUserReqBody.
+        r"""Gets the operations of this UpdateUserReqBody.
 
         更新的用户属性列表
 
@@ -53,7 +53,7 @@ class UpdateUserReqBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this UpdateUserReqBody.
+        r"""Sets the operations of this UpdateUserReqBody.
 
         更新的用户属性列表
 

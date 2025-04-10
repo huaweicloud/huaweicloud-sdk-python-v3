@@ -29,7 +29,7 @@ class UpdateSecurityRuleEnableStatusRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """UpdateSecurityRuleEnableStatusRequest
+        r"""UpdateSecurityRuleEnableStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityRuleEnableStatusRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityRuleEnableStatusRequest.
+        r"""Gets the workspace of this UpdateSecurityRuleEnableStatusRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecurityRuleEnableStatusRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityRuleEnableStatusRequest.
+        r"""Sets the workspace of this UpdateSecurityRuleEnableStatusRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecurityRuleEnableStatusRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityRuleEnableStatusRequest.
+        r"""Gets the id of this UpdateSecurityRuleEnableStatusRequest.
 
         识别规则id
 
@@ -88,7 +88,7 @@ class UpdateSecurityRuleEnableStatusRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityRuleEnableStatusRequest.
+        r"""Sets the id of this UpdateSecurityRuleEnableStatusRequest.
 
         识别规则id
 
@@ -99,7 +99,7 @@ class UpdateSecurityRuleEnableStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityRuleEnableStatusRequest.
+        r"""Gets the body of this UpdateSecurityRuleEnableStatusRequest.
 
         :return: The body of this UpdateSecurityRuleEnableStatusRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationRuleEnableDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityRuleEnableStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityRuleEnableStatusRequest.
+        r"""Sets the body of this UpdateSecurityRuleEnableStatusRequest.
 
         :param body: The body of this UpdateSecurityRuleEnableStatusRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationRuleEnableDTO`

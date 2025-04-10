@@ -32,7 +32,7 @@ class ListQuotaStatusResponse(SdkResponse):
     }
 
     def __init__(self, status_v6=None, status=None, eip_quota=None, quota=None):
-        """ListQuotaStatusResponse
+        r"""ListQuotaStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @property
     def status_v6(self):
-        """Gets the status_v6 of this ListQuotaStatusResponse.
+        r"""Gets the status_v6 of this ListQuotaStatusResponse.
 
         支持IPv6弹性云服务器资源状态。 - sellout 售罄 - normal  正常商用 - abandon 下线（即不显示）
 
@@ -76,7 +76,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @status_v6.setter
     def status_v6(self, status_v6):
-        """Sets the status_v6 of this ListQuotaStatusResponse.
+        r"""Sets the status_v6 of this ListQuotaStatusResponse.
 
         支持IPv6弹性云服务器资源状态。 - sellout 售罄 - normal  正常商用 - abandon 下线（即不显示）
 
@@ -87,7 +87,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListQuotaStatusResponse.
+        r"""Gets the status of this ListQuotaStatusResponse.
 
         弹性云服务器资源状态。 - sellout 售罄 - normal  正常商用 - abandon 下线（即不显示）
 
@@ -98,7 +98,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListQuotaStatusResponse.
+        r"""Sets the status of this ListQuotaStatusResponse.
 
         弹性云服务器资源状态。 - sellout 售罄 - normal  正常商用 - abandon 下线（即不显示）
 
@@ -109,7 +109,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @property
     def eip_quota(self):
-        """Gets the eip_quota of this ListQuotaStatusResponse.
+        r"""Gets the eip_quota of this ListQuotaStatusResponse.
 
         弹性配额信息，返回默认值null。
 
@@ -120,7 +120,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @eip_quota.setter
     def eip_quota(self, eip_quota):
-        """Sets the eip_quota of this ListQuotaStatusResponse.
+        r"""Sets the eip_quota of this ListQuotaStatusResponse.
 
         弹性配额信息，返回默认值null。
 
@@ -131,7 +131,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ListQuotaStatusResponse.
+        r"""Gets the quota of this ListQuotaStatusResponse.
 
         剩余可创建云堡垒机配额信息，返回默认值null。
 
@@ -142,7 +142,7 @@ class ListQuotaStatusResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ListQuotaStatusResponse.
+        r"""Sets the quota of this ListQuotaStatusResponse.
 
         剩余可创建云堡垒机配额信息，返回默认值null。
 

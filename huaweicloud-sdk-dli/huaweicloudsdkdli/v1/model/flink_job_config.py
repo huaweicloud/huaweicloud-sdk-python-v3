@@ -93,7 +93,7 @@ class FlinkJobConfig:
     }
 
     def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None):
-        """FlinkJobConfig
+        r"""FlinkJobConfig
 
         The model defined in huaweicloud sdk
 
@@ -281,7 +281,7 @@ class FlinkJobConfig:
 
     @property
     def checkpoint_enabled(self):
-        """Gets the checkpoint_enabled of this FlinkJobConfig.
+        r"""Gets the checkpoint_enabled of this FlinkJobConfig.
 
         是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false。
 
@@ -292,7 +292,7 @@ class FlinkJobConfig:
 
     @checkpoint_enabled.setter
     def checkpoint_enabled(self, checkpoint_enabled):
-        """Sets the checkpoint_enabled of this FlinkJobConfig.
+        r"""Sets the checkpoint_enabled of this FlinkJobConfig.
 
         是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false。
 
@@ -303,7 +303,7 @@ class FlinkJobConfig:
 
     @property
     def checkpoint_mode(self):
-        """Gets the checkpoint_mode of this FlinkJobConfig.
+        r"""Gets the checkpoint_mode of this FlinkJobConfig.
 
         快照模式： exactly_once：数据只被消费一次。 at_least_once：数据至少被消费一次。 默认值为exactly_once。
 
@@ -314,7 +314,7 @@ class FlinkJobConfig:
 
     @checkpoint_mode.setter
     def checkpoint_mode(self, checkpoint_mode):
-        """Sets the checkpoint_mode of this FlinkJobConfig.
+        r"""Sets the checkpoint_mode of this FlinkJobConfig.
 
         快照模式： exactly_once：数据只被消费一次。 at_least_once：数据至少被消费一次。 默认值为exactly_once。
 
@@ -325,7 +325,7 @@ class FlinkJobConfig:
 
     @property
     def checkpoint_interval(self):
-        """Gets the checkpoint_interval of this FlinkJobConfig.
+        r"""Gets the checkpoint_interval of this FlinkJobConfig.
 
         快照时间间隔, 单位为秒，默认值为10。
 
@@ -336,7 +336,7 @@ class FlinkJobConfig:
 
     @checkpoint_interval.setter
     def checkpoint_interval(self, checkpoint_interval):
-        """Sets the checkpoint_interval of this FlinkJobConfig.
+        r"""Sets the checkpoint_interval of this FlinkJobConfig.
 
         快照时间间隔, 单位为秒，默认值为10。
 
@@ -347,7 +347,7 @@ class FlinkJobConfig:
 
     @property
     def log_enabled(self):
-        """Gets the log_enabled of this FlinkJobConfig.
+        r"""Gets the log_enabled of this FlinkJobConfig.
 
         是否启用日志存储。默认为false。
 
@@ -358,7 +358,7 @@ class FlinkJobConfig:
 
     @log_enabled.setter
     def log_enabled(self, log_enabled):
-        """Sets the log_enabled of this FlinkJobConfig.
+        r"""Sets the log_enabled of this FlinkJobConfig.
 
         是否启用日志存储。默认为false。
 
@@ -369,7 +369,7 @@ class FlinkJobConfig:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this FlinkJobConfig.
+        r"""Gets the obs_bucket of this FlinkJobConfig.
 
         OBS桶名。
 
@@ -380,7 +380,7 @@ class FlinkJobConfig:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this FlinkJobConfig.
+        r"""Sets the obs_bucket of this FlinkJobConfig.
 
         OBS桶名。
 
@@ -391,7 +391,7 @@ class FlinkJobConfig:
 
     @property
     def smn_topic(self):
-        """Gets the smn_topic of this FlinkJobConfig.
+        r"""Gets the smn_topic of this FlinkJobConfig.
 
         当作业异常时，向该SMN主题推送告警信息。
 
@@ -402,7 +402,7 @@ class FlinkJobConfig:
 
     @smn_topic.setter
     def smn_topic(self, smn_topic):
-        """Sets the smn_topic of this FlinkJobConfig.
+        r"""Sets the smn_topic of this FlinkJobConfig.
 
         当作业异常时，向该SMN主题推送告警信息。
 
@@ -413,7 +413,7 @@ class FlinkJobConfig:
 
     @property
     def edge_group_ids(self):
-        """Gets the edge_group_ids of this FlinkJobConfig.
+        r"""Gets the edge_group_ids of this FlinkJobConfig.
 
         边缘计算组ID列表。
 
@@ -424,7 +424,7 @@ class FlinkJobConfig:
 
     @edge_group_ids.setter
     def edge_group_ids(self, edge_group_ids):
-        """Sets the edge_group_ids of this FlinkJobConfig.
+        r"""Sets the edge_group_ids of this FlinkJobConfig.
 
         边缘计算组ID列表。
 
@@ -435,7 +435,7 @@ class FlinkJobConfig:
 
     @property
     def root_id(self):
-        """Gets the root_id of this FlinkJobConfig.
+        r"""Gets the root_id of this FlinkJobConfig.
 
         父作业ID。
 
@@ -446,7 +446,7 @@ class FlinkJobConfig:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this FlinkJobConfig.
+        r"""Sets the root_id of this FlinkJobConfig.
 
         父作业ID。
 
@@ -457,7 +457,7 @@ class FlinkJobConfig:
 
     @property
     def manager_cu_number(self):
-        """Gets the manager_cu_number of this FlinkJobConfig.
+        r"""Gets the manager_cu_number of this FlinkJobConfig.
 
         管理单元CU数。默认为1。
 
@@ -468,7 +468,7 @@ class FlinkJobConfig:
 
     @manager_cu_number.setter
     def manager_cu_number(self, manager_cu_number):
-        """Sets the manager_cu_number of this FlinkJobConfig.
+        r"""Sets the manager_cu_number of this FlinkJobConfig.
 
         管理单元CU数。默认为1。
 
@@ -479,7 +479,7 @@ class FlinkJobConfig:
 
     @property
     def cu_number(self):
-        """Gets the cu_number of this FlinkJobConfig.
+        r"""Gets the cu_number of this FlinkJobConfig.
 
         用户为作业选择的CU数量, “show_detail”。默认为2。
 
@@ -490,7 +490,7 @@ class FlinkJobConfig:
 
     @cu_number.setter
     def cu_number(self, cu_number):
-        """Sets the cu_number of this FlinkJobConfig.
+        r"""Sets the cu_number of this FlinkJobConfig.
 
         用户为作业选择的CU数量, “show_detail”。默认为2。
 
@@ -501,7 +501,7 @@ class FlinkJobConfig:
 
     @property
     def parallel_number(self):
-        """Gets the parallel_number of this FlinkJobConfig.
+        r"""Gets the parallel_number of this FlinkJobConfig.
 
         用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
 
@@ -512,7 +512,7 @@ class FlinkJobConfig:
 
     @parallel_number.setter
     def parallel_number(self, parallel_number):
-        """Sets the parallel_number of this FlinkJobConfig.
+        r"""Sets the parallel_number of this FlinkJobConfig.
 
         用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
 
@@ -523,7 +523,7 @@ class FlinkJobConfig:
 
     @property
     def restart_when_exception(self):
-        """Gets the restart_when_exception of this FlinkJobConfig.
+        r"""Gets the restart_when_exception of this FlinkJobConfig.
 
         是否开启异常重启功能。
 
@@ -534,7 +534,7 @@ class FlinkJobConfig:
 
     @restart_when_exception.setter
     def restart_when_exception(self, restart_when_exception):
-        """Sets the restart_when_exception of this FlinkJobConfig.
+        r"""Sets the restart_when_exception of this FlinkJobConfig.
 
         是否开启异常重启功能。
 
@@ -545,7 +545,7 @@ class FlinkJobConfig:
 
     @property
     def idle_state_retention(self):
-        """Gets the idle_state_retention of this FlinkJobConfig.
+        r"""Gets the idle_state_retention of this FlinkJobConfig.
 
         空闲状态过期周期。
 
@@ -556,7 +556,7 @@ class FlinkJobConfig:
 
     @idle_state_retention.setter
     def idle_state_retention(self, idle_state_retention):
-        """Sets the idle_state_retention of this FlinkJobConfig.
+        r"""Sets the idle_state_retention of this FlinkJobConfig.
 
         空闲状态过期周期。
 
@@ -567,7 +567,7 @@ class FlinkJobConfig:
 
     @property
     def udf_jar_url(self):
-        """Gets the udf_jar_url of this FlinkJobConfig.
+        r"""Gets the udf_jar_url of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
 
@@ -578,7 +578,7 @@ class FlinkJobConfig:
 
     @udf_jar_url.setter
     def udf_jar_url(self, udf_jar_url):
-        """Sets the udf_jar_url of this FlinkJobConfig.
+        r"""Sets the udf_jar_url of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
 
@@ -589,7 +589,7 @@ class FlinkJobConfig:
 
     @property
     def dirty_data_strategy(self):
-        """Gets the dirty_data_strategy of this FlinkJobConfig.
+        r"""Gets the dirty_data_strategy of this FlinkJobConfig.
 
         作业脏数据策略。 “2:obs-wan-wulan3/jobs”：保存 “1”：抛出异常 “0”：忽略
 
@@ -600,7 +600,7 @@ class FlinkJobConfig:
 
     @dirty_data_strategy.setter
     def dirty_data_strategy(self, dirty_data_strategy):
-        """Sets the dirty_data_strategy of this FlinkJobConfig.
+        r"""Sets the dirty_data_strategy of this FlinkJobConfig.
 
         作业脏数据策略。 “2:obs-wan-wulan3/jobs”：保存 “1”：抛出异常 “0”：忽略
 
@@ -611,7 +611,7 @@ class FlinkJobConfig:
 
     @property
     def entrypoint(self):
-        """Gets the entrypoint of this FlinkJobConfig.
+        r"""Gets the entrypoint of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包.
 
@@ -622,7 +622,7 @@ class FlinkJobConfig:
 
     @entrypoint.setter
     def entrypoint(self, entrypoint):
-        """Sets the entrypoint of this FlinkJobConfig.
+        r"""Sets the entrypoint of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包.
 
@@ -633,7 +633,7 @@ class FlinkJobConfig:
 
     @property
     def dependency_jars(self):
-        """Gets the dependency_jars of this FlinkJobConfig.
+        r"""Gets the dependency_jars of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包
 
@@ -644,7 +644,7 @@ class FlinkJobConfig:
 
     @dependency_jars.setter
     def dependency_jars(self, dependency_jars):
-        """Sets the dependency_jars of this FlinkJobConfig.
+        r"""Sets the dependency_jars of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包
 
@@ -655,7 +655,7 @@ class FlinkJobConfig:
 
     @property
     def dependency_files(self):
-        """Gets the dependency_files of this FlinkJobConfig.
+        r"""Gets the dependency_files of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件.
 
@@ -666,7 +666,7 @@ class FlinkJobConfig:
 
     @dependency_files.setter
     def dependency_files(self, dependency_files):
-        """Sets the dependency_files of this FlinkJobConfig.
+        r"""Sets the dependency_files of this FlinkJobConfig.
 
         用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件.
 
@@ -677,7 +677,7 @@ class FlinkJobConfig:
 
     @property
     def executor_number(self):
-        """Gets the executor_number of this FlinkJobConfig.
+        r"""Gets the executor_number of this FlinkJobConfig.
 
         作业使用计算节点个数
 
@@ -688,7 +688,7 @@ class FlinkJobConfig:
 
     @executor_number.setter
     def executor_number(self, executor_number):
-        """Sets the executor_number of this FlinkJobConfig.
+        r"""Sets the executor_number of this FlinkJobConfig.
 
         作业使用计算节点个数
 
@@ -699,7 +699,7 @@ class FlinkJobConfig:
 
     @property
     def executor_cu_number(self):
-        """Gets the executor_cu_number of this FlinkJobConfig.
+        r"""Gets the executor_cu_number of this FlinkJobConfig.
 
         计算节点cu数
 
@@ -710,7 +710,7 @@ class FlinkJobConfig:
 
     @executor_cu_number.setter
     def executor_cu_number(self, executor_cu_number):
-        """Sets the executor_cu_number of this FlinkJobConfig.
+        r"""Sets the executor_cu_number of this FlinkJobConfig.
 
         计算节点cu数
 
@@ -721,7 +721,7 @@ class FlinkJobConfig:
 
     @property
     def resume_checkpoint(self):
-        """Gets the resume_checkpoint of this FlinkJobConfig.
+        r"""Gets the resume_checkpoint of this FlinkJobConfig.
 
         异常自动重启时，是否从最新checkpoint恢复，默认false
 
@@ -732,7 +732,7 @@ class FlinkJobConfig:
 
     @resume_checkpoint.setter
     def resume_checkpoint(self, resume_checkpoint):
-        """Sets the resume_checkpoint of this FlinkJobConfig.
+        r"""Sets the resume_checkpoint of this FlinkJobConfig.
 
         异常自动重启时，是否从最新checkpoint恢复，默认false
 
@@ -743,7 +743,7 @@ class FlinkJobConfig:
 
     @property
     def runtime_config(self):
-        """Gets the runtime_config of this FlinkJobConfig.
+        r"""Gets the runtime_config of this FlinkJobConfig.
 
         Flink作业运行时自定义优化参数。
 
@@ -754,7 +754,7 @@ class FlinkJobConfig:
 
     @runtime_config.setter
     def runtime_config(self, runtime_config):
-        """Sets the runtime_config of this FlinkJobConfig.
+        r"""Sets the runtime_config of this FlinkJobConfig.
 
         Flink作业运行时自定义优化参数。
 
@@ -765,7 +765,7 @@ class FlinkJobConfig:
 
     @property
     def graph_editor_enabled(self):
-        """Gets the graph_editor_enabled of this FlinkJobConfig.
+        r"""Gets the graph_editor_enabled of this FlinkJobConfig.
 
         流图编辑开关。默认为“false。
 
@@ -776,7 +776,7 @@ class FlinkJobConfig:
 
     @graph_editor_enabled.setter
     def graph_editor_enabled(self, graph_editor_enabled):
-        """Sets the graph_editor_enabled of this FlinkJobConfig.
+        r"""Sets the graph_editor_enabled of this FlinkJobConfig.
 
         流图编辑开关。默认为“false。
 
@@ -787,7 +787,7 @@ class FlinkJobConfig:
 
     @property
     def graph_editor_data(self):
-        """Gets the graph_editor_data of this FlinkJobConfig.
+        r"""Gets the graph_editor_data of this FlinkJobConfig.
 
         流图编辑数据。默认为null。
 
@@ -798,7 +798,7 @@ class FlinkJobConfig:
 
     @graph_editor_data.setter
     def graph_editor_data(self, graph_editor_data):
-        """Sets the graph_editor_data of this FlinkJobConfig.
+        r"""Sets the graph_editor_data of this FlinkJobConfig.
 
         流图编辑数据。默认为null。
 
@@ -809,7 +809,7 @@ class FlinkJobConfig:
 
     @property
     def resume_max_num(self):
-        """Gets the resume_max_num of this FlinkJobConfig.
+        r"""Gets the resume_max_num of this FlinkJobConfig.
 
         异常重试最大次数。-1代表无限。
 
@@ -820,7 +820,7 @@ class FlinkJobConfig:
 
     @resume_max_num.setter
     def resume_max_num(self, resume_max_num):
-        """Sets the resume_max_num of this FlinkJobConfig.
+        r"""Sets the resume_max_num of this FlinkJobConfig.
 
         异常重试最大次数。-1代表无限。
 
@@ -831,7 +831,7 @@ class FlinkJobConfig:
 
     @property
     def checkpoint_path(self):
-        """Gets the checkpoint_path of this FlinkJobConfig.
+        r"""Gets the checkpoint_path of this FlinkJobConfig.
 
         检查点保存路径。
 
@@ -842,7 +842,7 @@ class FlinkJobConfig:
 
     @checkpoint_path.setter
     def checkpoint_path(self, checkpoint_path):
-        """Sets the checkpoint_path of this FlinkJobConfig.
+        r"""Sets the checkpoint_path of this FlinkJobConfig.
 
         检查点保存路径。
 
@@ -853,7 +853,7 @@ class FlinkJobConfig:
 
     @property
     def config_url(self):
-        """Gets the config_url of this FlinkJobConfig.
+        r"""Gets the config_url of this FlinkJobConfig.
 
         用户上传的config包OBS路径。
 
@@ -864,7 +864,7 @@ class FlinkJobConfig:
 
     @config_url.setter
     def config_url(self, config_url):
-        """Sets the config_url of this FlinkJobConfig.
+        r"""Sets the config_url of this FlinkJobConfig.
 
         用户上传的config包OBS路径。
 
@@ -875,7 +875,7 @@ class FlinkJobConfig:
 
     @property
     def tm_cus(self):
-        """Gets the tm_cus of this FlinkJobConfig.
+        r"""Gets the tm_cus of this FlinkJobConfig.
 
         单TM所占CU数。
 
@@ -886,7 +886,7 @@ class FlinkJobConfig:
 
     @tm_cus.setter
     def tm_cus(self, tm_cus):
-        """Sets the tm_cus of this FlinkJobConfig.
+        r"""Sets the tm_cus of this FlinkJobConfig.
 
         单TM所占CU数。
 
@@ -897,7 +897,7 @@ class FlinkJobConfig:
 
     @property
     def tm_slot_num(self):
-        """Gets the tm_slot_num of this FlinkJobConfig.
+        r"""Gets the tm_slot_num of this FlinkJobConfig.
 
         单TM Slot数。
 
@@ -908,7 +908,7 @@ class FlinkJobConfig:
 
     @tm_slot_num.setter
     def tm_slot_num(self, tm_slot_num):
-        """Sets the tm_slot_num of this FlinkJobConfig.
+        r"""Sets the tm_slot_num of this FlinkJobConfig.
 
         单TM Slot数。
 
@@ -919,7 +919,7 @@ class FlinkJobConfig:
 
     @property
     def image(self):
-        """Gets the image of this FlinkJobConfig.
+        r"""Gets the image of this FlinkJobConfig.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
 
@@ -930,7 +930,7 @@ class FlinkJobConfig:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this FlinkJobConfig.
+        r"""Sets the image of this FlinkJobConfig.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
 
@@ -941,7 +941,7 @@ class FlinkJobConfig:
 
     @property
     def feature(self):
-        """Gets the feature of this FlinkJobConfig.
+        r"""Gets the feature of this FlinkJobConfig.
 
         自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
 
@@ -952,7 +952,7 @@ class FlinkJobConfig:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this FlinkJobConfig.
+        r"""Sets the feature of this FlinkJobConfig.
 
         自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
 
@@ -963,7 +963,7 @@ class FlinkJobConfig:
 
     @property
     def flink_version(self):
-        """Gets the flink_version of this FlinkJobConfig.
+        r"""Gets the flink_version of this FlinkJobConfig.
 
         Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
 
@@ -974,7 +974,7 @@ class FlinkJobConfig:
 
     @flink_version.setter
     def flink_version(self, flink_version):
-        """Sets the flink_version of this FlinkJobConfig.
+        r"""Sets the flink_version of this FlinkJobConfig.
 
         Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
 
@@ -985,7 +985,7 @@ class FlinkJobConfig:
 
     @property
     def operator_config(self):
-        """Gets the operator_config of this FlinkJobConfig.
+        r"""Gets the operator_config of this FlinkJobConfig.
 
         各算子并行度参数，以json的形式展示各算子id和并行度。
 
@@ -996,7 +996,7 @@ class FlinkJobConfig:
 
     @operator_config.setter
     def operator_config(self, operator_config):
-        """Sets the operator_config of this FlinkJobConfig.
+        r"""Sets the operator_config of this FlinkJobConfig.
 
         各算子并行度参数，以json的形式展示各算子id和并行度。
 
@@ -1007,7 +1007,7 @@ class FlinkJobConfig:
 
     @property
     def static_estimator_config(self):
-        """Gets the static_estimator_config of this FlinkJobConfig.
+        r"""Gets the static_estimator_config of this FlinkJobConfig.
 
         静态流图资源预估参数，以json的形式展示。
 
@@ -1018,7 +1018,7 @@ class FlinkJobConfig:
 
     @static_estimator_config.setter
     def static_estimator_config(self, static_estimator_config):
-        """Sets the static_estimator_config of this FlinkJobConfig.
+        r"""Sets the static_estimator_config of this FlinkJobConfig.
 
         静态流图资源预估参数，以json的形式展示。
 
@@ -1029,7 +1029,7 @@ class FlinkJobConfig:
 
     @property
     def real_cu_number(self):
-        """Gets the real_cu_number of this FlinkJobConfig.
+        r"""Gets the real_cu_number of this FlinkJobConfig.
 
         :return: The real_cu_number of this FlinkJobConfig.
         :rtype: int
@@ -1038,7 +1038,7 @@ class FlinkJobConfig:
 
     @real_cu_number.setter
     def real_cu_number(self, real_cu_number):
-        """Sets the real_cu_number of this FlinkJobConfig.
+        r"""Sets the real_cu_number of this FlinkJobConfig.
 
         :param real_cu_number: The real_cu_number of this FlinkJobConfig.
         :type real_cu_number: int

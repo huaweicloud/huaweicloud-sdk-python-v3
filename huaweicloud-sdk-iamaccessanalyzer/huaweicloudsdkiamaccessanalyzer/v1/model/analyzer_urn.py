@@ -23,7 +23,7 @@ class AnalyzerUrn:
     }
 
     def __init__(self):
-        """AnalyzerUrn
+        r"""AnalyzerUrn
 
         The model defined in huaweicloud sdk
 

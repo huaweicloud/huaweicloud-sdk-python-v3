@@ -51,7 +51,7 @@ class ListApisRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, x_return_publish_messages=None, offset=None, limit=None, name=None, description=None, create_user=None, start_time=None, end_time=None, tags=None, api_type=None, publish_status=None, table_name=None):
-        """ListApisRequest
+        r"""ListApisRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class ListApisRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListApisRequest.
+        r"""Gets the workspace of this ListApisRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -144,7 +144,7 @@ class ListApisRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListApisRequest.
+        r"""Sets the workspace of this ListApisRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -155,7 +155,7 @@ class ListApisRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListApisRequest.
+        r"""Gets the dlm_type of this ListApisRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -166,7 +166,7 @@ class ListApisRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListApisRequest.
+        r"""Sets the dlm_type of this ListApisRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -177,7 +177,7 @@ class ListApisRequest:
 
     @property
     def x_return_publish_messages(self):
-        """Gets the x_return_publish_messages of this ListApisRequest.
+        r"""Gets the x_return_publish_messages of this ListApisRequest.
 
         是否返回专享版API的发布信息。
 
@@ -188,7 +188,7 @@ class ListApisRequest:
 
     @x_return_publish_messages.setter
     def x_return_publish_messages(self, x_return_publish_messages):
-        """Sets the x_return_publish_messages of this ListApisRequest.
+        r"""Sets the x_return_publish_messages of this ListApisRequest.
 
         是否返回专享版API的发布信息。
 
@@ -199,7 +199,7 @@ class ListApisRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApisRequest.
+        r"""Gets the offset of this ListApisRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -210,7 +210,7 @@ class ListApisRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApisRequest.
+        r"""Sets the offset of this ListApisRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -221,7 +221,7 @@ class ListApisRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApisRequest.
+        r"""Gets the limit of this ListApisRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -232,7 +232,7 @@ class ListApisRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApisRequest.
+        r"""Sets the limit of this ListApisRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -243,7 +243,7 @@ class ListApisRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListApisRequest.
+        r"""Gets the name of this ListApisRequest.
 
         根据API名称模糊查询。
 
@@ -254,7 +254,7 @@ class ListApisRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListApisRequest.
+        r"""Sets the name of this ListApisRequest.
 
         根据API名称模糊查询。
 
@@ -265,7 +265,7 @@ class ListApisRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListApisRequest.
+        r"""Gets the description of this ListApisRequest.
 
         根据API描述信息模糊查询。
 
@@ -276,7 +276,7 @@ class ListApisRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListApisRequest.
+        r"""Sets the description of this ListApisRequest.
 
         根据API描述信息模糊查询。
 
@@ -287,7 +287,7 @@ class ListApisRequest:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ListApisRequest.
+        r"""Gets the create_user of this ListApisRequest.
 
         根据API创建用户模糊查询。
 
@@ -298,7 +298,7 @@ class ListApisRequest:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ListApisRequest.
+        r"""Sets the create_user of this ListApisRequest.
 
         根据API创建用户模糊查询。
 
@@ -309,7 +309,7 @@ class ListApisRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListApisRequest.
+        r"""Gets the start_time of this ListApisRequest.
 
         根据API创建时间过滤，开始时间，如2024-02-24T16:00:00.000Z。
 
@@ -320,7 +320,7 @@ class ListApisRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListApisRequest.
+        r"""Sets the start_time of this ListApisRequest.
 
         根据API创建时间过滤，开始时间，如2024-02-24T16:00:00.000Z。
 
@@ -331,7 +331,7 @@ class ListApisRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListApisRequest.
+        r"""Gets the end_time of this ListApisRequest.
 
         根据API创建时间过滤，结束时间，如2024-04-05T15:59:59.998Z。
 
@@ -342,7 +342,7 @@ class ListApisRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListApisRequest.
+        r"""Sets the end_time of this ListApisRequest.
 
         根据API创建时间过滤，结束时间，如2024-04-05T15:59:59.998Z。
 
@@ -353,7 +353,7 @@ class ListApisRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListApisRequest.
+        r"""Gets the tags of this ListApisRequest.
 
         标签。
 
@@ -364,7 +364,7 @@ class ListApisRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListApisRequest.
+        r"""Sets the tags of this ListApisRequest.
 
         标签。
 
@@ -375,7 +375,7 @@ class ListApisRequest:
 
     @property
     def api_type(self):
-        """Gets the api_type of this ListApisRequest.
+        r"""Gets the api_type of this ListApisRequest.
 
         API类型。
 
@@ -386,7 +386,7 @@ class ListApisRequest:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this ListApisRequest.
+        r"""Sets the api_type of this ListApisRequest.
 
         API类型。
 
@@ -397,7 +397,7 @@ class ListApisRequest:
 
     @property
     def publish_status(self):
-        """Gets the publish_status of this ListApisRequest.
+        r"""Gets the publish_status of this ListApisRequest.
 
         API发布状态。
 
@@ -408,7 +408,7 @@ class ListApisRequest:
 
     @publish_status.setter
     def publish_status(self, publish_status):
-        """Sets the publish_status of this ListApisRequest.
+        r"""Sets the publish_status of this ListApisRequest.
 
         API发布状态。
 
@@ -419,7 +419,7 @@ class ListApisRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListApisRequest.
+        r"""Gets the table_name of this ListApisRequest.
 
         根据API用到的数据库表名模糊查询。
 
@@ -430,7 +430,7 @@ class ListApisRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListApisRequest.
+        r"""Sets the table_name of this ListApisRequest.
 
         根据API用到的数据库表名模糊查询。
 

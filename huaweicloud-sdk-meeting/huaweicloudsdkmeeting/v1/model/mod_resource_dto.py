@@ -31,7 +31,7 @@ class ModResourceDTO:
     }
 
     def __init__(self, id=None, type=None, expire_date=None, is_disabled=None):
-        """ModResourceDTO
+        r"""ModResourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ModResourceDTO:
 
     @property
     def id(self):
-        """Gets the id of this ModResourceDTO.
+        r"""Gets the id of this ModResourceDTO.
 
         资源标识。
 
@@ -74,7 +74,7 @@ class ModResourceDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModResourceDTO.
+        r"""Sets the id of this ModResourceDTO.
 
         资源标识。
 
@@ -85,7 +85,7 @@ class ModResourceDTO:
 
     @property
     def type(self):
-        """Gets the type of this ModResourceDTO.
+        r"""Gets the type of this ModResourceDTO.
 
         资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏
 
@@ -96,7 +96,7 @@ class ModResourceDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ModResourceDTO.
+        r"""Sets the type of this ModResourceDTO.
 
         资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏
 
@@ -107,7 +107,7 @@ class ModResourceDTO:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this ModResourceDTO.
+        r"""Gets the expire_date of this ModResourceDTO.
 
         到期时间。
 
@@ -118,7 +118,7 @@ class ModResourceDTO:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this ModResourceDTO.
+        r"""Sets the expire_date of this ModResourceDTO.
 
         到期时间。
 
@@ -129,7 +129,7 @@ class ModResourceDTO:
 
     @property
     def is_disabled(self):
-        """Gets the is_disabled of this ModResourceDTO.
+        r"""Gets the is_disabled of this ModResourceDTO.
 
         资源是否被停用。
 
@@ -140,7 +140,7 @@ class ModResourceDTO:
 
     @is_disabled.setter
     def is_disabled(self, is_disabled):
-        """Sets the is_disabled of this ModResourceDTO.
+        r"""Sets the is_disabled of this ModResourceDTO.
 
         资源是否被停用。
 

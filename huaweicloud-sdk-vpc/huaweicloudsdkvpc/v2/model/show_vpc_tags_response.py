@@ -26,7 +26,7 @@ class ShowVpcTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowVpcTagsResponse
+        r"""ShowVpcTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVpcTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowVpcTagsResponse.
+        r"""Gets the tags of this ShowVpcTagsResponse.
 
         tag对象列表
 
@@ -55,7 +55,7 @@ class ShowVpcTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowVpcTagsResponse.
+        r"""Sets the tags of this ShowVpcTagsResponse.
 
         tag对象列表
 

@@ -27,7 +27,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListRegisteredServicesForAuthSchemaV5Request
+        r"""ListRegisteredServicesForAuthSchemaV5Request
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRegisteredServicesForAuthSchemaV5Request.
+        r"""Gets the limit of this ListRegisteredServicesForAuthSchemaV5Request.
 
         每页显示的条目数量。
 
@@ -61,7 +61,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRegisteredServicesForAuthSchemaV5Request.
+        r"""Sets the limit of this ListRegisteredServicesForAuthSchemaV5Request.
 
         每页显示的条目数量。
 
@@ -72,7 +72,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRegisteredServicesForAuthSchemaV5Request.
+        r"""Gets the marker of this ListRegisteredServicesForAuthSchemaV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -83,7 +83,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRegisteredServicesForAuthSchemaV5Request.
+        r"""Sets the marker of this ListRegisteredServicesForAuthSchemaV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 

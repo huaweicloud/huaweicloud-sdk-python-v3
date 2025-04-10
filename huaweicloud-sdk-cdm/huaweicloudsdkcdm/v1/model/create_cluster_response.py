@@ -34,7 +34,7 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, name=None, id=None, task=None, datastore=None, instances=None):
-        """CreateClusterResponse
+        r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateClusterResponse.
+        r"""Gets the name of this CreateClusterResponse.
 
         集群名称
 
@@ -83,7 +83,7 @@ class CreateClusterResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateClusterResponse.
+        r"""Sets the name of this CreateClusterResponse.
 
         集群名称
 
@@ -94,7 +94,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateClusterResponse.
+        r"""Gets the id of this CreateClusterResponse.
 
         集群ID
 
@@ -105,7 +105,7 @@ class CreateClusterResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateClusterResponse.
+        r"""Sets the id of this CreateClusterResponse.
 
         集群ID
 
@@ -116,7 +116,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def task(self):
-        """Gets the task of this CreateClusterResponse.
+        r"""Gets the task of this CreateClusterResponse.
 
         :return: The task of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.Task`
@@ -125,7 +125,7 @@ class CreateClusterResponse(SdkResponse):
 
     @task.setter
     def task(self, task):
-        """Sets the task of this CreateClusterResponse.
+        r"""Sets the task of this CreateClusterResponse.
 
         :param task: The task of this CreateClusterResponse.
         :type task: :class:`huaweicloudsdkcdm.v1.Task`
@@ -134,7 +134,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateClusterResponse.
+        r"""Gets the datastore of this CreateClusterResponse.
 
         :return: The datastore of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -143,7 +143,7 @@ class CreateClusterResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateClusterResponse.
+        r"""Sets the datastore of this CreateClusterResponse.
 
         :param datastore: The datastore of this CreateClusterResponse.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -152,7 +152,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this CreateClusterResponse.
+        r"""Gets the instances of this CreateClusterResponse.
 
         集群的节点信息
 
@@ -163,7 +163,7 @@ class CreateClusterResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this CreateClusterResponse.
+        r"""Sets the instances of this CreateClusterResponse.
 
         集群的节点信息
 

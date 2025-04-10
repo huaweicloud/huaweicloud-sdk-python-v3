@@ -27,7 +27,7 @@ class ShowAppVersionRequest:
     }
 
     def __init__(self, app_id=None, version=None):
-        """ShowAppVersionRequest
+        r"""ShowAppVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAppVersionRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppVersionRequest.
+        r"""Gets the app_id of this ShowAppVersionRequest.
 
         应用ID
 
@@ -59,7 +59,7 @@ class ShowAppVersionRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppVersionRequest.
+        r"""Sets the app_id of this ShowAppVersionRequest.
 
         应用ID
 
@@ -70,7 +70,7 @@ class ShowAppVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowAppVersionRequest.
+        r"""Gets the version of this ShowAppVersionRequest.
 
         应用版本
 
@@ -81,7 +81,7 @@ class ShowAppVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAppVersionRequest.
+        r"""Sets the version of this ShowAppVersionRequest.
 
         应用版本
 

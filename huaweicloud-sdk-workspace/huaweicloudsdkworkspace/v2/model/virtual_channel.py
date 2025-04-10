@@ -27,7 +27,7 @@ class VirtualChannel:
     }
 
     def __init__(self, virtual_channel_control_enable=None, options=None):
-        """VirtualChannel
+        r"""VirtualChannel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VirtualChannel:
 
     @property
     def virtual_channel_control_enable(self):
-        """Gets the virtual_channel_control_enable of this VirtualChannel.
+        r"""Gets the virtual_channel_control_enable of this VirtualChannel.
 
         是否开启虚拟通道策略设置。取值为：false：表示关闭。true：表示开启。
 
@@ -61,7 +61,7 @@ class VirtualChannel:
 
     @virtual_channel_control_enable.setter
     def virtual_channel_control_enable(self, virtual_channel_control_enable):
-        """Sets the virtual_channel_control_enable of this VirtualChannel.
+        r"""Sets the virtual_channel_control_enable of this VirtualChannel.
 
         是否开启虚拟通道策略设置。取值为：false：表示关闭。true：表示开启。
 
@@ -72,7 +72,7 @@ class VirtualChannel:
 
     @property
     def options(self):
-        """Gets the options of this VirtualChannel.
+        r"""Gets the options of this VirtualChannel.
 
         :return: The options of this VirtualChannel.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VirtualChannelOptions`
@@ -81,7 +81,7 @@ class VirtualChannel:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this VirtualChannel.
+        r"""Sets the options of this VirtualChannel.
 
         :param options: The options of this VirtualChannel.
         :type options: :class:`huaweicloudsdkworkspace.v2.VirtualChannelOptions`

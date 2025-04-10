@@ -27,7 +27,7 @@ class RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
     }
 
     def __init__(self, params=None, application_id=None):
-        """RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO
+        r"""RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Gets the params of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         :return: The params of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO`
@@ -59,7 +59,7 @@ class RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Sets the params of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         :param params: The params of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.VersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO`
@@ -68,7 +68,7 @@ class RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Gets the application_id of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -79,7 +79,7 @@ class RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
+        r"""Sets the application_id of this RDMParamVOVersionUpdateViewDTOMultiViewModelViewUpdateAttrDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 

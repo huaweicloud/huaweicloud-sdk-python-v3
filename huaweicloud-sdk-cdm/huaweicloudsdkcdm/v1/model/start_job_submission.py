@@ -55,7 +55,7 @@ class StartJobSubmission:
     }
 
     def __init__(self, is_incrementing=None, delete_rows=None, update_rows=None, write_rows=None, submission_id=None, job_name=None, creation_user=None, creation_date=None, execute_date=None, progress=None, status=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None):
-        """StartJobSubmission
+        r"""StartJobSubmission
 
         The model defined in huaweicloud sdk
 
@@ -143,7 +143,7 @@ class StartJobSubmission:
 
     @property
     def is_incrementing(self):
-        """Gets the is_incrementing of this StartJobSubmission.
+        r"""Gets the is_incrementing of this StartJobSubmission.
 
         作业是否为增量迁移
 
@@ -154,7 +154,7 @@ class StartJobSubmission:
 
     @is_incrementing.setter
     def is_incrementing(self, is_incrementing):
-        """Sets the is_incrementing of this StartJobSubmission.
+        r"""Sets the is_incrementing of this StartJobSubmission.
 
         作业是否为增量迁移
 
@@ -165,7 +165,7 @@ class StartJobSubmission:
 
     @property
     def delete_rows(self):
-        """Gets the delete_rows of this StartJobSubmission.
+        r"""Gets the delete_rows of this StartJobSubmission.
 
         删除数据行数
 
@@ -176,7 +176,7 @@ class StartJobSubmission:
 
     @delete_rows.setter
     def delete_rows(self, delete_rows):
-        """Sets the delete_rows of this StartJobSubmission.
+        r"""Sets the delete_rows of this StartJobSubmission.
 
         删除数据行数
 
@@ -187,7 +187,7 @@ class StartJobSubmission:
 
     @property
     def update_rows(self):
-        """Gets the update_rows of this StartJobSubmission.
+        r"""Gets the update_rows of this StartJobSubmission.
 
         更新数据行数
 
@@ -198,7 +198,7 @@ class StartJobSubmission:
 
     @update_rows.setter
     def update_rows(self, update_rows):
-        """Sets the update_rows of this StartJobSubmission.
+        r"""Sets the update_rows of this StartJobSubmission.
 
         更新数据行数
 
@@ -209,7 +209,7 @@ class StartJobSubmission:
 
     @property
     def write_rows(self):
-        """Gets the write_rows of this StartJobSubmission.
+        r"""Gets the write_rows of this StartJobSubmission.
 
         写入数据行数
 
@@ -220,7 +220,7 @@ class StartJobSubmission:
 
     @write_rows.setter
     def write_rows(self, write_rows):
-        """Sets the write_rows of this StartJobSubmission.
+        r"""Sets the write_rows of this StartJobSubmission.
 
         写入数据行数
 
@@ -231,7 +231,7 @@ class StartJobSubmission:
 
     @property
     def submission_id(self):
-        """Gets the submission_id of this StartJobSubmission.
+        r"""Gets the submission_id of this StartJobSubmission.
 
         作业提交id
 
@@ -242,7 +242,7 @@ class StartJobSubmission:
 
     @submission_id.setter
     def submission_id(self, submission_id):
-        """Sets the submission_id of this StartJobSubmission.
+        r"""Sets the submission_id of this StartJobSubmission.
 
         作业提交id
 
@@ -253,7 +253,7 @@ class StartJobSubmission:
 
     @property
     def job_name(self):
-        """Gets the job_name of this StartJobSubmission.
+        r"""Gets the job_name of this StartJobSubmission.
 
         作业名称
 
@@ -264,7 +264,7 @@ class StartJobSubmission:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this StartJobSubmission.
+        r"""Sets the job_name of this StartJobSubmission.
 
         作业名称
 
@@ -275,7 +275,7 @@ class StartJobSubmission:
 
     @property
     def creation_user(self):
-        """Gets the creation_user of this StartJobSubmission.
+        r"""Gets the creation_user of this StartJobSubmission.
 
         创建用户
 
@@ -286,7 +286,7 @@ class StartJobSubmission:
 
     @creation_user.setter
     def creation_user(self, creation_user):
-        """Sets the creation_user of this StartJobSubmission.
+        r"""Sets the creation_user of this StartJobSubmission.
 
         创建用户
 
@@ -297,7 +297,7 @@ class StartJobSubmission:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this StartJobSubmission.
+        r"""Gets the creation_date of this StartJobSubmission.
 
         创建时间，单位：毫秒。
 
@@ -308,7 +308,7 @@ class StartJobSubmission:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this StartJobSubmission.
+        r"""Sets the creation_date of this StartJobSubmission.
 
         创建时间，单位：毫秒。
 
@@ -319,7 +319,7 @@ class StartJobSubmission:
 
     @property
     def execute_date(self):
-        """Gets the execute_date of this StartJobSubmission.
+        r"""Gets the execute_date of this StartJobSubmission.
 
         执行时间
 
@@ -330,7 +330,7 @@ class StartJobSubmission:
 
     @execute_date.setter
     def execute_date(self, execute_date):
-        """Sets the execute_date of this StartJobSubmission.
+        r"""Sets the execute_date of this StartJobSubmission.
 
         执行时间
 
@@ -341,7 +341,7 @@ class StartJobSubmission:
 
     @property
     def progress(self):
-        """Gets the progress of this StartJobSubmission.
+        r"""Gets the progress of this StartJobSubmission.
 
         作业进度，失败时为“-1”，其它情况为0～100
 
@@ -352,7 +352,7 @@ class StartJobSubmission:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this StartJobSubmission.
+        r"""Sets the progress of this StartJobSubmission.
 
         作业进度，失败时为“-1”，其它情况为0～100
 
@@ -363,7 +363,7 @@ class StartJobSubmission:
 
     @property
     def status(self):
-        """Gets the status of this StartJobSubmission.
+        r"""Gets the status of this StartJobSubmission.
 
         作业状态： - BOOTING：启动中。 - FAILURE_ON_SUBMIT：提交失败。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - UNKNOWN：未知。 - NEVER_EXECUTED：未被执行
 
@@ -374,7 +374,7 @@ class StartJobSubmission:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StartJobSubmission.
+        r"""Sets the status of this StartJobSubmission.
 
         作业状态： - BOOTING：启动中。 - FAILURE_ON_SUBMIT：提交失败。 - RUNNING：运行中。 - SUCCEEDED：成功。 - FAILED：失败。 - UNKNOWN：未知。 - NEVER_EXECUTED：未被执行
 
@@ -385,7 +385,7 @@ class StartJobSubmission:
 
     @property
     def is_stoping_increment(self):
-        """Gets the is_stoping_increment of this StartJobSubmission.
+        r"""Gets the is_stoping_increment of this StartJobSubmission.
 
         是否停止增量迁移
 
@@ -396,7 +396,7 @@ class StartJobSubmission:
 
     @is_stoping_increment.setter
     def is_stoping_increment(self, is_stoping_increment):
-        """Sets the is_stoping_increment of this StartJobSubmission.
+        r"""Sets the is_stoping_increment of this StartJobSubmission.
 
         是否停止增量迁移
 
@@ -407,7 +407,7 @@ class StartJobSubmission:
 
     @property
     def is_execute_auto(self):
-        """Gets the is_execute_auto of this StartJobSubmission.
+        r"""Gets the is_execute_auto of this StartJobSubmission.
 
         是否定时执行作业
 
@@ -418,7 +418,7 @@ class StartJobSubmission:
 
     @is_execute_auto.setter
     def is_execute_auto(self, is_execute_auto):
-        """Sets the is_execute_auto of this StartJobSubmission.
+        r"""Sets the is_execute_auto of this StartJobSubmission.
 
         是否定时执行作业
 
@@ -429,7 +429,7 @@ class StartJobSubmission:
 
     @property
     def last_update_date(self):
-        """Gets the last_update_date of this StartJobSubmission.
+        r"""Gets the last_update_date of this StartJobSubmission.
 
         作业最后更新时间
 
@@ -440,7 +440,7 @@ class StartJobSubmission:
 
     @last_update_date.setter
     def last_update_date(self, last_update_date):
-        """Sets the last_update_date of this StartJobSubmission.
+        r"""Sets the last_update_date of this StartJobSubmission.
 
         作业最后更新时间
 
@@ -451,7 +451,7 @@ class StartJobSubmission:
 
     @property
     def last_udpate_user(self):
-        """Gets the last_udpate_user of this StartJobSubmission.
+        r"""Gets the last_udpate_user of this StartJobSubmission.
 
         最后更新作业状态的用户
 
@@ -462,7 +462,7 @@ class StartJobSubmission:
 
     @last_udpate_user.setter
     def last_udpate_user(self, last_udpate_user):
-        """Sets the last_udpate_user of this StartJobSubmission.
+        r"""Sets the last_udpate_user of this StartJobSubmission.
 
         最后更新作业状态的用户
 
@@ -473,7 +473,7 @@ class StartJobSubmission:
 
     @property
     def is_delete_job(self):
-        """Gets the is_delete_job of this StartJobSubmission.
+        r"""Gets the is_delete_job of this StartJobSubmission.
 
         作业执行完成后是否删除
 
@@ -484,7 +484,7 @@ class StartJobSubmission:
 
     @is_delete_job.setter
     def is_delete_job(self, is_delete_job):
-        """Sets the is_delete_job of this StartJobSubmission.
+        r"""Sets the is_delete_job of this StartJobSubmission.
 
         作业执行完成后是否删除
 

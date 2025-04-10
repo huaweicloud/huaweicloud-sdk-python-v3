@@ -39,7 +39,7 @@ class PublishDataReq:
     }
 
     def __init__(self, name=None, version=None, title=None, summary=None, description=None, picture=None, labels=None, paths=None):
-        """PublishDataReq
+        r"""PublishDataReq
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class PublishDataReq:
 
     @property
     def name(self):
-        """Gets the name of this PublishDataReq.
+        r"""Gets the name of this PublishDataReq.
 
         资产名
 
@@ -100,7 +100,7 @@ class PublishDataReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublishDataReq.
+        r"""Sets the name of this PublishDataReq.
 
         资产名
 
@@ -111,7 +111,7 @@ class PublishDataReq:
 
     @property
     def version(self):
-        """Gets the version of this PublishDataReq.
+        r"""Gets the version of this PublishDataReq.
 
         版本号
 
@@ -122,7 +122,7 @@ class PublishDataReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishDataReq.
+        r"""Sets the version of this PublishDataReq.
 
         版本号
 
@@ -133,7 +133,7 @@ class PublishDataReq:
 
     @property
     def title(self):
-        """Gets the title of this PublishDataReq.
+        r"""Gets the title of this PublishDataReq.
 
         展示名
 
@@ -144,7 +144,7 @@ class PublishDataReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this PublishDataReq.
+        r"""Sets the title of this PublishDataReq.
 
         展示名
 
@@ -155,7 +155,7 @@ class PublishDataReq:
 
     @property
     def summary(self):
-        """Gets the summary of this PublishDataReq.
+        r"""Gets the summary of this PublishDataReq.
 
         短描述
 
@@ -166,7 +166,7 @@ class PublishDataReq:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this PublishDataReq.
+        r"""Sets the summary of this PublishDataReq.
 
         短描述
 
@@ -177,7 +177,7 @@ class PublishDataReq:
 
     @property
     def description(self):
-        """Gets the description of this PublishDataReq.
+        r"""Gets the description of this PublishDataReq.
 
         详细描述
 
@@ -188,7 +188,7 @@ class PublishDataReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishDataReq.
+        r"""Sets the description of this PublishDataReq.
 
         详细描述
 
@@ -199,7 +199,7 @@ class PublishDataReq:
 
     @property
     def picture(self):
-        """Gets the picture of this PublishDataReq.
+        r"""Gets the picture of this PublishDataReq.
 
         封面图片base64编码
 
@@ -210,7 +210,7 @@ class PublishDataReq:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this PublishDataReq.
+        r"""Sets the picture of this PublishDataReq.
 
         封面图片base64编码
 
@@ -221,7 +221,7 @@ class PublishDataReq:
 
     @property
     def labels(self):
-        """Gets the labels of this PublishDataReq.
+        r"""Gets the labels of this PublishDataReq.
 
         标签列表
 
@@ -232,7 +232,7 @@ class PublishDataReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this PublishDataReq.
+        r"""Sets the labels of this PublishDataReq.
 
         标签列表
 
@@ -243,7 +243,7 @@ class PublishDataReq:
 
     @property
     def paths(self):
-        """Gets the paths of this PublishDataReq.
+        r"""Gets the paths of this PublishDataReq.
 
         路径列表
 
@@ -254,7 +254,7 @@ class PublishDataReq:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this PublishDataReq.
+        r"""Sets the paths of this PublishDataReq.
 
         路径列表
 

@@ -31,7 +31,7 @@ class ServerVolumeAttachment:
     }
 
     def __init__(self, device=None, id=None, server_id=None, volume_id=None):
-        """ServerVolumeAttachment
+        r"""ServerVolumeAttachment
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ServerVolumeAttachment:
 
     @property
     def device(self):
-        """Gets the device of this ServerVolumeAttachment.
+        r"""Gets the device of this ServerVolumeAttachment.
 
         云硬盘挂载盘符，即磁盘挂载点。
 
@@ -75,7 +75,7 @@ class ServerVolumeAttachment:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this ServerVolumeAttachment.
+        r"""Sets the device of this ServerVolumeAttachment.
 
         云硬盘挂载盘符，即磁盘挂载点。
 
@@ -86,7 +86,7 @@ class ServerVolumeAttachment:
 
     @property
     def id(self):
-        """Gets the id of this ServerVolumeAttachment.
+        r"""Gets the id of this ServerVolumeAttachment.
 
         挂载ID，与云硬盘ID相同，UUID格式。
 
@@ -97,7 +97,7 @@ class ServerVolumeAttachment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerVolumeAttachment.
+        r"""Sets the id of this ServerVolumeAttachment.
 
         挂载ID，与云硬盘ID相同，UUID格式。
 
@@ -108,7 +108,7 @@ class ServerVolumeAttachment:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerVolumeAttachment.
+        r"""Gets the server_id of this ServerVolumeAttachment.
 
         弹性云服务器ID，UUID格式。
 
@@ -119,7 +119,7 @@ class ServerVolumeAttachment:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerVolumeAttachment.
+        r"""Sets the server_id of this ServerVolumeAttachment.
 
         弹性云服务器ID，UUID格式。
 
@@ -130,7 +130,7 @@ class ServerVolumeAttachment:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ServerVolumeAttachment.
+        r"""Gets the volume_id of this ServerVolumeAttachment.
 
         云硬盘ID，UUID格式。
 
@@ -141,7 +141,7 @@ class ServerVolumeAttachment:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ServerVolumeAttachment.
+        r"""Sets the volume_id of this ServerVolumeAttachment.
 
         云硬盘ID，UUID格式。
 

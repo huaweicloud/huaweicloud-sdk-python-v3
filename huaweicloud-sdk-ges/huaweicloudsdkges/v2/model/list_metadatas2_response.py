@@ -28,7 +28,7 @@ class ListMetadatas2Response(SdkResponse):
     }
 
     def __init__(self, schema_count=None, schema_list=None):
-        """ListMetadatas2Response
+        r"""ListMetadatas2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMetadatas2Response(SdkResponse):
 
     @property
     def schema_count(self):
-        """Gets the schema_count of this ListMetadatas2Response.
+        r"""Gets the schema_count of this ListMetadatas2Response.
 
         元数据返回个数。请求失败时，字段为空。
 
@@ -62,7 +62,7 @@ class ListMetadatas2Response(SdkResponse):
 
     @schema_count.setter
     def schema_count(self, schema_count):
-        """Sets the schema_count of this ListMetadatas2Response.
+        r"""Sets the schema_count of this ListMetadatas2Response.
 
         元数据返回个数。请求失败时，字段为空。
 
@@ -73,7 +73,7 @@ class ListMetadatas2Response(SdkResponse):
 
     @property
     def schema_list(self):
-        """Gets the schema_list of this ListMetadatas2Response.
+        r"""Gets the schema_list of this ListMetadatas2Response.
 
         当前projectId下的所有元数据列表。请求失败时，字段为空。
 
@@ -84,7 +84,7 @@ class ListMetadatas2Response(SdkResponse):
 
     @schema_list.setter
     def schema_list(self, schema_list):
-        """Sets the schema_list of this ListMetadatas2Response.
+        r"""Sets the schema_list of this ListMetadatas2Response.
 
         当前projectId下的所有元数据列表。请求失败时，字段为空。
 

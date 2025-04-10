@@ -26,7 +26,7 @@ class RunTaskResponse(SdkResponse):
     }
 
     def __init__(self, exec_id=None):
-        """RunTaskResponse
+        r"""RunTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunTaskResponse(SdkResponse):
 
     @property
     def exec_id(self):
-        """Gets the exec_id of this RunTaskResponse.
+        r"""Gets the exec_id of this RunTaskResponse.
 
         执行id
 
@@ -55,7 +55,7 @@ class RunTaskResponse(SdkResponse):
 
     @exec_id.setter
     def exec_id(self, exec_id):
-        """Sets the exec_id of this RunTaskResponse.
+        r"""Sets the exec_id of this RunTaskResponse.
 
         执行id
 

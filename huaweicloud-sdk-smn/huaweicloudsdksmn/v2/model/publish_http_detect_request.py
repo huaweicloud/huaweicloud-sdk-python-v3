@@ -27,7 +27,7 @@ class PublishHttpDetectRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """PublishHttpDetectRequest
+        r"""PublishHttpDetectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PublishHttpDetectRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this PublishHttpDetectRequest.
+        r"""Gets the topic_urn of this PublishHttpDetectRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class PublishHttpDetectRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this PublishHttpDetectRequest.
+        r"""Sets the topic_urn of this PublishHttpDetectRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class PublishHttpDetectRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishHttpDetectRequest.
+        r"""Gets the body of this PublishHttpDetectRequest.
 
         :return: The body of this PublishHttpDetectRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.HttpDetectRequestBody`
@@ -80,7 +80,7 @@ class PublishHttpDetectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishHttpDetectRequest.
+        r"""Sets the body of this PublishHttpDetectRequest.
 
         :param body: The body of this PublishHttpDetectRequest.
         :type body: :class:`huaweicloudsdksmn.v2.HttpDetectRequestBody`

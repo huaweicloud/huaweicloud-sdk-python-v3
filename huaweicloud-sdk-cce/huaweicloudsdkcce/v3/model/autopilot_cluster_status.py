@@ -45,7 +45,7 @@ class AutopilotClusterStatus:
     }
 
     def __init__(self, phase=None, job_id=None, reason=None, message=None, endpoints=None, is_locked=None, lock_scene=None, lock_source=None, lock_source_id=None, delete_option=None, delete_status=None):
-        """AutopilotClusterStatus
+        r"""AutopilotClusterStatus
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AutopilotClusterStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this AutopilotClusterStatus.
+        r"""Gets the phase of this AutopilotClusterStatus.
 
         集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - RollingBack：回滚中，表示集群正处于回滚过程中。 - RollbackFailed：回滚异常，表示集群回滚异常。 - Error：错误，表示集群资源异常，可尝试手动删除。
 
@@ -124,7 +124,7 @@ class AutopilotClusterStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this AutopilotClusterStatus.
+        r"""Sets the phase of this AutopilotClusterStatus.
 
         集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - RollingBack：回滚中，表示集群正处于回滚过程中。 - RollbackFailed：回滚异常，表示集群回滚异常。 - Error：错误，表示集群资源异常，可尝试手动删除。
 
@@ -135,7 +135,7 @@ class AutopilotClusterStatus:
 
     @property
     def job_id(self):
-        """Gets the job_id of this AutopilotClusterStatus.
+        r"""Gets the job_id of this AutopilotClusterStatus.
 
         任务ID,集群当前状态关联的任务ID。当前支持: - 创建集群时返回关联的任务ID，可通过任务ID查询创建集群的附属任务信息； - 删除集群或者删除集群失败时返回关联的任务ID，此字段非空时，可通过任务ID查询删除集群的附属任务信息。 > 任务信息具有一定时效性，仅用于短期跟踪任务进度，请勿用于集群状态判断等额外场景。
 
@@ -146,7 +146,7 @@ class AutopilotClusterStatus:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AutopilotClusterStatus.
+        r"""Sets the job_id of this AutopilotClusterStatus.
 
         任务ID,集群当前状态关联的任务ID。当前支持: - 创建集群时返回关联的任务ID，可通过任务ID查询创建集群的附属任务信息； - 删除集群或者删除集群失败时返回关联的任务ID，此字段非空时，可通过任务ID查询删除集群的附属任务信息。 > 任务信息具有一定时效性，仅用于短期跟踪任务进度，请勿用于集群状态判断等额外场景。
 
@@ -157,7 +157,7 @@ class AutopilotClusterStatus:
 
     @property
     def reason(self):
-        """Gets the reason of this AutopilotClusterStatus.
+        r"""Gets the reason of this AutopilotClusterStatus.
 
         集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
 
@@ -168,7 +168,7 @@ class AutopilotClusterStatus:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this AutopilotClusterStatus.
+        r"""Sets the reason of this AutopilotClusterStatus.
 
         集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
 
@@ -179,7 +179,7 @@ class AutopilotClusterStatus:
 
     @property
     def message(self):
-        """Gets the message of this AutopilotClusterStatus.
+        r"""Gets the message of this AutopilotClusterStatus.
 
         集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
 
@@ -190,7 +190,7 @@ class AutopilotClusterStatus:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AutopilotClusterStatus.
+        r"""Sets the message of this AutopilotClusterStatus.
 
         集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
 
@@ -201,7 +201,7 @@ class AutopilotClusterStatus:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this AutopilotClusterStatus.
+        r"""Gets the endpoints of this AutopilotClusterStatus.
 
         集群中 kube-apiserver 的访问地址。
 
@@ -212,7 +212,7 @@ class AutopilotClusterStatus:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this AutopilotClusterStatus.
+        r"""Sets the endpoints of this AutopilotClusterStatus.
 
         集群中 kube-apiserver 的访问地址。
 
@@ -223,7 +223,7 @@ class AutopilotClusterStatus:
 
     @property
     def is_locked(self):
-        """Gets the is_locked of this AutopilotClusterStatus.
+        r"""Gets the is_locked of this AutopilotClusterStatus.
 
         CBC资源锁定
 
@@ -234,7 +234,7 @@ class AutopilotClusterStatus:
 
     @is_locked.setter
     def is_locked(self, is_locked):
-        """Sets the is_locked of this AutopilotClusterStatus.
+        r"""Sets the is_locked of this AutopilotClusterStatus.
 
         CBC资源锁定
 
@@ -245,7 +245,7 @@ class AutopilotClusterStatus:
 
     @property
     def lock_scene(self):
-        """Gets the lock_scene of this AutopilotClusterStatus.
+        r"""Gets the lock_scene of this AutopilotClusterStatus.
 
         CBC资源锁定场景
 
@@ -256,7 +256,7 @@ class AutopilotClusterStatus:
 
     @lock_scene.setter
     def lock_scene(self, lock_scene):
-        """Sets the lock_scene of this AutopilotClusterStatus.
+        r"""Sets the lock_scene of this AutopilotClusterStatus.
 
         CBC资源锁定场景
 
@@ -267,7 +267,7 @@ class AutopilotClusterStatus:
 
     @property
     def lock_source(self):
-        """Gets the lock_source of this AutopilotClusterStatus.
+        r"""Gets the lock_source of this AutopilotClusterStatus.
 
         锁定资源
 
@@ -278,7 +278,7 @@ class AutopilotClusterStatus:
 
     @lock_source.setter
     def lock_source(self, lock_source):
-        """Sets the lock_source of this AutopilotClusterStatus.
+        r"""Sets the lock_source of this AutopilotClusterStatus.
 
         锁定资源
 
@@ -289,7 +289,7 @@ class AutopilotClusterStatus:
 
     @property
     def lock_source_id(self):
-        """Gets the lock_source_id of this AutopilotClusterStatus.
+        r"""Gets the lock_source_id of this AutopilotClusterStatus.
 
         锁定的资源ID
 
@@ -300,7 +300,7 @@ class AutopilotClusterStatus:
 
     @lock_source_id.setter
     def lock_source_id(self, lock_source_id):
-        """Sets the lock_source_id of this AutopilotClusterStatus.
+        r"""Sets the lock_source_id of this AutopilotClusterStatus.
 
         锁定的资源ID
 
@@ -311,7 +311,7 @@ class AutopilotClusterStatus:
 
     @property
     def delete_option(self):
-        """Gets the delete_option of this AutopilotClusterStatus.
+        r"""Gets the delete_option of this AutopilotClusterStatus.
 
         删除配置状态（仅删除请求响应包含）
 
@@ -322,7 +322,7 @@ class AutopilotClusterStatus:
 
     @delete_option.setter
     def delete_option(self, delete_option):
-        """Sets the delete_option of this AutopilotClusterStatus.
+        r"""Sets the delete_option of this AutopilotClusterStatus.
 
         删除配置状态（仅删除请求响应包含）
 
@@ -333,7 +333,7 @@ class AutopilotClusterStatus:
 
     @property
     def delete_status(self):
-        """Gets the delete_status of this AutopilotClusterStatus.
+        r"""Gets the delete_status of this AutopilotClusterStatus.
 
         删除状态信息（仅删除请求响应包含）
 
@@ -344,7 +344,7 @@ class AutopilotClusterStatus:
 
     @delete_status.setter
     def delete_status(self, delete_status):
-        """Sets the delete_status of this AutopilotClusterStatus.
+        r"""Sets the delete_status of this AutopilotClusterStatus.
 
         删除状态信息（仅删除请求响应包含）
 

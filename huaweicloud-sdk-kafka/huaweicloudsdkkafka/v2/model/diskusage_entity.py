@@ -37,7 +37,7 @@ class DiskusageEntity:
     }
 
     def __init__(self, broker_name=None, data_disk_size=None, data_disk_use=None, data_disk_free=None, data_disk_use_percentage=None, status=None, topic_list=None):
-        """DiskusageEntity
+        r"""DiskusageEntity
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DiskusageEntity:
 
     @property
     def broker_name(self):
-        """Gets the broker_name of this DiskusageEntity.
+        r"""Gets the broker_name of this DiskusageEntity.
 
         Broker名称。
 
@@ -96,7 +96,7 @@ class DiskusageEntity:
 
     @broker_name.setter
     def broker_name(self, broker_name):
-        """Sets the broker_name of this DiskusageEntity.
+        r"""Sets the broker_name of this DiskusageEntity.
 
         Broker名称。
 
@@ -107,7 +107,7 @@ class DiskusageEntity:
 
     @property
     def data_disk_size(self):
-        """Gets the data_disk_size of this DiskusageEntity.
+        r"""Gets the data_disk_size of this DiskusageEntity.
 
         磁盘容量。
 
@@ -118,7 +118,7 @@ class DiskusageEntity:
 
     @data_disk_size.setter
     def data_disk_size(self, data_disk_size):
-        """Sets the data_disk_size of this DiskusageEntity.
+        r"""Sets the data_disk_size of this DiskusageEntity.
 
         磁盘容量。
 
@@ -129,7 +129,7 @@ class DiskusageEntity:
 
     @property
     def data_disk_use(self):
-        """Gets the data_disk_use of this DiskusageEntity.
+        r"""Gets the data_disk_use of this DiskusageEntity.
 
         已使用的磁盘容量。
 
@@ -140,7 +140,7 @@ class DiskusageEntity:
 
     @data_disk_use.setter
     def data_disk_use(self, data_disk_use):
-        """Sets the data_disk_use of this DiskusageEntity.
+        r"""Sets the data_disk_use of this DiskusageEntity.
 
         已使用的磁盘容量。
 
@@ -151,7 +151,7 @@ class DiskusageEntity:
 
     @property
     def data_disk_free(self):
-        """Gets the data_disk_free of this DiskusageEntity.
+        r"""Gets the data_disk_free of this DiskusageEntity.
 
         剩余可用的磁盘容量。
 
@@ -162,7 +162,7 @@ class DiskusageEntity:
 
     @data_disk_free.setter
     def data_disk_free(self, data_disk_free):
-        """Sets the data_disk_free of this DiskusageEntity.
+        r"""Sets the data_disk_free of this DiskusageEntity.
 
         剩余可用的磁盘容量。
 
@@ -173,7 +173,7 @@ class DiskusageEntity:
 
     @property
     def data_disk_use_percentage(self):
-        """Gets the data_disk_use_percentage of this DiskusageEntity.
+        r"""Gets the data_disk_use_percentage of this DiskusageEntity.
 
         消息标签。
 
@@ -184,7 +184,7 @@ class DiskusageEntity:
 
     @data_disk_use_percentage.setter
     def data_disk_use_percentage(self, data_disk_use_percentage):
-        """Sets the data_disk_use_percentage of this DiskusageEntity.
+        r"""Sets the data_disk_use_percentage of this DiskusageEntity.
 
         消息标签。
 
@@ -195,7 +195,7 @@ class DiskusageEntity:
 
     @property
     def status(self):
-        """Gets the status of this DiskusageEntity.
+        r"""Gets the status of this DiskusageEntity.
 
         消息标签。
 
@@ -206,7 +206,7 @@ class DiskusageEntity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DiskusageEntity.
+        r"""Sets the status of this DiskusageEntity.
 
         消息标签。
 
@@ -217,7 +217,7 @@ class DiskusageEntity:
 
     @property
     def topic_list(self):
-        """Gets the topic_list of this DiskusageEntity.
+        r"""Gets the topic_list of this DiskusageEntity.
 
         topic磁盘容量使用列表。
 
@@ -228,7 +228,7 @@ class DiskusageEntity:
 
     @topic_list.setter
     def topic_list(self, topic_list):
-        """Sets the topic_list of this DiskusageEntity.
+        r"""Sets the topic_list of this DiskusageEntity.
 
         topic磁盘容量使用列表。
 

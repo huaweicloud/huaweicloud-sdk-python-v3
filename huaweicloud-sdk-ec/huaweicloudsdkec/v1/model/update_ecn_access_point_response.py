@@ -38,7 +38,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
     }
 
     def __init__(self, id=None, region_id=None, bandwidth_size=None, bind_ieg_count=None, attach_vpc_count=None, created_at=None, updated_at=None):
-        """UpdateEcnAccessPointResponse
+        r"""UpdateEcnAccessPointResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEcnAccessPointResponse.
+        r"""Gets the id of this UpdateEcnAccessPointResponse.
 
         企业连接网络接入点ID
 
@@ -97,7 +97,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEcnAccessPointResponse.
+        r"""Sets the id of this UpdateEcnAccessPointResponse.
 
         企业连接网络接入点ID
 
@@ -108,7 +108,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this UpdateEcnAccessPointResponse.
+        r"""Gets the region_id of this UpdateEcnAccessPointResponse.
 
         区域ID
 
@@ -119,7 +119,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this UpdateEcnAccessPointResponse.
+        r"""Sets the region_id of this UpdateEcnAccessPointResponse.
 
         区域ID
 
@@ -130,7 +130,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this UpdateEcnAccessPointResponse.
+        r"""Gets the bandwidth_size of this UpdateEcnAccessPointResponse.
 
         带宽
 
@@ -141,7 +141,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this UpdateEcnAccessPointResponse.
+        r"""Sets the bandwidth_size of this UpdateEcnAccessPointResponse.
 
         带宽
 
@@ -152,7 +152,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def bind_ieg_count(self):
-        """Gets the bind_ieg_count of this UpdateEcnAccessPointResponse.
+        r"""Gets the bind_ieg_count of this UpdateEcnAccessPointResponse.
 
         绑定智能企业网关数量
 
@@ -163,7 +163,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @bind_ieg_count.setter
     def bind_ieg_count(self, bind_ieg_count):
-        """Sets the bind_ieg_count of this UpdateEcnAccessPointResponse.
+        r"""Sets the bind_ieg_count of this UpdateEcnAccessPointResponse.
 
         绑定智能企业网关数量
 
@@ -174,7 +174,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def attach_vpc_count(self):
-        """Gets the attach_vpc_count of this UpdateEcnAccessPointResponse.
+        r"""Gets the attach_vpc_count of this UpdateEcnAccessPointResponse.
 
         关联VPC数量
 
@@ -185,7 +185,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @attach_vpc_count.setter
     def attach_vpc_count(self, attach_vpc_count):
-        """Sets the attach_vpc_count of this UpdateEcnAccessPointResponse.
+        r"""Sets the attach_vpc_count of this UpdateEcnAccessPointResponse.
 
         关联VPC数量
 
@@ -196,7 +196,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateEcnAccessPointResponse.
+        r"""Gets the created_at of this UpdateEcnAccessPointResponse.
 
         创建时间
 
@@ -207,7 +207,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateEcnAccessPointResponse.
+        r"""Sets the created_at of this UpdateEcnAccessPointResponse.
 
         创建时间
 
@@ -218,7 +218,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateEcnAccessPointResponse.
+        r"""Gets the updated_at of this UpdateEcnAccessPointResponse.
 
         更新时间
 
@@ -229,7 +229,7 @@ class UpdateEcnAccessPointResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateEcnAccessPointResponse.
+        r"""Sets the updated_at of this UpdateEcnAccessPointResponse.
 
         更新时间
 

@@ -29,7 +29,7 @@ class UpdateSecuritySecrecyLevelRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """UpdateSecuritySecrecyLevelRequest
+        r"""UpdateSecuritySecrecyLevelRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecuritySecrecyLevelRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecuritySecrecyLevelRequest.
+        r"""Gets the workspace of this UpdateSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecuritySecrecyLevelRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecuritySecrecyLevelRequest.
+        r"""Sets the workspace of this UpdateSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecuritySecrecyLevelRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecuritySecrecyLevelRequest.
+        r"""Gets the id of this UpdateSecuritySecrecyLevelRequest.
 
         密级id
 
@@ -88,7 +88,7 @@ class UpdateSecuritySecrecyLevelRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecuritySecrecyLevelRequest.
+        r"""Sets the id of this UpdateSecuritySecrecyLevelRequest.
 
         密级id
 
@@ -99,7 +99,7 @@ class UpdateSecuritySecrecyLevelRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecuritySecrecyLevelRequest.
+        r"""Gets the body of this UpdateSecuritySecrecyLevelRequest.
 
         :return: The body of this UpdateSecuritySecrecyLevelRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecrecyLevelDTO`
@@ -108,7 +108,7 @@ class UpdateSecuritySecrecyLevelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecuritySecrecyLevelRequest.
+        r"""Sets the body of this UpdateSecuritySecrecyLevelRequest.
 
         :param body: The body of this UpdateSecuritySecrecyLevelRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecrecyLevelDTO`

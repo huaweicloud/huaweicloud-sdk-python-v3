@@ -25,7 +25,7 @@ class SearchApprovalsResultData:
     }
 
     def __init__(self, value=None):
-        """SearchApprovalsResultData
+        r"""SearchApprovalsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SearchApprovalsResultData:
 
     @property
     def value(self):
-        """Gets the value of this SearchApprovalsResultData.
+        r"""Gets the value of this SearchApprovalsResultData.
 
         :return: The value of this SearchApprovalsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultDataValue`
@@ -52,7 +52,7 @@ class SearchApprovalsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SearchApprovalsResultData.
+        r"""Sets the value of this SearchApprovalsResultData.
 
         :param value: The value of this SearchApprovalsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultDataValue`

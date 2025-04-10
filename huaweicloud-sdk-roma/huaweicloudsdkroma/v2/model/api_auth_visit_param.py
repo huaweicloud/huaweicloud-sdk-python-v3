@@ -29,7 +29,7 @@ class ApiAuthVisitParam:
     }
 
     def __init__(self, api_id=None, app_id=None, visit_param=None):
-        """ApiAuthVisitParam
+        r"""ApiAuthVisitParam
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ApiAuthVisitParam:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiAuthVisitParam.
+        r"""Gets the api_id of this ApiAuthVisitParam.
 
         需要授权的API编号
 
@@ -66,7 +66,7 @@ class ApiAuthVisitParam:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiAuthVisitParam.
+        r"""Sets the api_id of this ApiAuthVisitParam.
 
         需要授权的API编号
 
@@ -77,7 +77,7 @@ class ApiAuthVisitParam:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ApiAuthVisitParam.
+        r"""Gets the app_id of this ApiAuthVisitParam.
 
         需要授权的APP编号
 
@@ -88,7 +88,7 @@ class ApiAuthVisitParam:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ApiAuthVisitParam.
+        r"""Sets the app_id of this ApiAuthVisitParam.
 
         需要授权的APP编号
 
@@ -99,7 +99,7 @@ class ApiAuthVisitParam:
 
     @property
     def visit_param(self):
-        """Gets the visit_param of this ApiAuthVisitParam.
+        r"""Gets the visit_param of this ApiAuthVisitParam.
 
         访问参数  支持英文、数字、下划线和中划线，多个参数以英文格式下的逗号隔开，单个参数须以英文或数字结尾且不能重复，且单个参数长度不超过255个字符。
 
@@ -110,7 +110,7 @@ class ApiAuthVisitParam:
 
     @visit_param.setter
     def visit_param(self, visit_param):
-        """Sets the visit_param of this ApiAuthVisitParam.
+        r"""Sets the visit_param of this ApiAuthVisitParam.
 
         访问参数  支持英文、数字、下划线和中划线，多个参数以英文格式下的逗号隔开，单个参数须以英文或数字结尾且不能重复，且单个参数长度不超过255个字符。
 

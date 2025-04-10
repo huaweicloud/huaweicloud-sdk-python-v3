@@ -28,7 +28,7 @@ class NeutronListSubnetsResponse(SdkResponse):
     }
 
     def __init__(self, subnets=None, subnets_links=None):
-        """NeutronListSubnetsResponse
+        r"""NeutronListSubnetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NeutronListSubnetsResponse(SdkResponse):
 
     @property
     def subnets(self):
-        """Gets the subnets of this NeutronListSubnetsResponse.
+        r"""Gets the subnets of this NeutronListSubnetsResponse.
 
         subnet对象列表
 
@@ -62,7 +62,7 @@ class NeutronListSubnetsResponse(SdkResponse):
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this NeutronListSubnetsResponse.
+        r"""Sets the subnets of this NeutronListSubnetsResponse.
 
         subnet对象列表
 
@@ -73,7 +73,7 @@ class NeutronListSubnetsResponse(SdkResponse):
 
     @property
     def subnets_links(self):
-        """Gets the subnets_links of this NeutronListSubnetsResponse.
+        r"""Gets the subnets_links of this NeutronListSubnetsResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class NeutronListSubnetsResponse(SdkResponse):
 
     @subnets_links.setter
     def subnets_links(self, subnets_links):
-        """Sets the subnets_links of this NeutronListSubnetsResponse.
+        r"""Sets the subnets_links of this NeutronListSubnetsResponse.
 
         分页信息
 

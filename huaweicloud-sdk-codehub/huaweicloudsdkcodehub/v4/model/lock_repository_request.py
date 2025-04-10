@@ -27,7 +27,7 @@ class LockRepositoryRequest:
     }
 
     def __init__(self, project_id=None, repository_id=None):
-        """LockRepositoryRequest
+        r"""LockRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LockRepositoryRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LockRepositoryRequest.
+        r"""Gets the project_id of this LockRepositoryRequest.
 
         项目id
 
@@ -59,7 +59,7 @@ class LockRepositoryRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LockRepositoryRequest.
+        r"""Sets the project_id of this LockRepositoryRequest.
 
         项目id
 
@@ -70,7 +70,7 @@ class LockRepositoryRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this LockRepositoryRequest.
+        r"""Gets the repository_id of this LockRepositoryRequest.
 
         仓库的主键id
 
@@ -81,7 +81,7 @@ class LockRepositoryRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this LockRepositoryRequest.
+        r"""Sets the repository_id of this LockRepositoryRequest.
 
         仓库的主键id
 

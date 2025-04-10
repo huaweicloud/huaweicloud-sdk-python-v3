@@ -25,7 +25,7 @@ class RemuxRetryReq:
     }
 
     def __init__(self, task_id=None):
-        """RemuxRetryReq
+        r"""RemuxRetryReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RemuxRetryReq:
 
     @property
     def task_id(self):
-        """Gets the task_id of this RemuxRetryReq.
+        r"""Gets the task_id of this RemuxRetryReq.
 
         任务Id。 
 
@@ -54,7 +54,7 @@ class RemuxRetryReq:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this RemuxRetryReq.
+        r"""Sets the task_id of this RemuxRetryReq.
 
         任务Id。 
 

@@ -30,7 +30,7 @@ class ShowCredentialResponse(SdkResponse):
     }
 
     def __init__(self, access=None, secret=None, security_token=None):
-        """ShowCredentialResponse
+        r"""ShowCredentialResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @property
     def access(self):
-        """Gets the access of this ShowCredentialResponse.
+        r"""Gets the access of this ShowCredentialResponse.
 
         AK。Access Key,是用来标识用户身份的访问密钥。
 
@@ -69,7 +69,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @access.setter
     def access(self, access):
-        """Sets the access of this ShowCredentialResponse.
+        r"""Sets the access of this ShowCredentialResponse.
 
         AK。Access Key,是用来标识用户身份的访问密钥。
 
@@ -80,7 +80,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @property
     def secret(self):
-        """Gets the secret of this ShowCredentialResponse.
+        r"""Gets the secret of this ShowCredentialResponse.
 
         SK。Secret Key,用来对访问密钥进行加密签名,以验证身份。
 
@@ -91,7 +91,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ShowCredentialResponse.
+        r"""Sets the secret of this ShowCredentialResponse.
 
         SK。Secret Key,用来对访问密钥进行加密签名,以验证身份。
 
@@ -102,7 +102,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @property
     def security_token(self):
-        """Gets the security_token of this ShowCredentialResponse.
+        r"""Gets the security_token of this ShowCredentialResponse.
 
         security_token是将所获的AK、SK等信息进行加密后的字符串
 
@@ -113,7 +113,7 @@ class ShowCredentialResponse(SdkResponse):
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this ShowCredentialResponse.
+        r"""Sets the security_token of this ShowCredentialResponse.
 
         security_token是将所获的AK、SK等信息进行加密后的字符串
 

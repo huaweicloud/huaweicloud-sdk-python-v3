@@ -30,7 +30,7 @@ class CreateInstanceIam5Response(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None, order_id=None):
-        """CreateInstanceIam5Response
+        r"""CreateInstanceIam5Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateInstanceIam5Response(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this CreateInstanceIam5Response.
+        r"""Gets the instance of this CreateInstanceIam5Response.
 
         :return: The instance of this CreateInstanceIam5Response.
         :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
@@ -67,7 +67,7 @@ class CreateInstanceIam5Response(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateInstanceIam5Response.
+        r"""Sets the instance of this CreateInstanceIam5Response.
 
         :param instance: The instance of this CreateInstanceIam5Response.
         :type instance: :class:`huaweicloudsdkrds.v3.CreateInstanceRespItem`
@@ -76,7 +76,7 @@ class CreateInstanceIam5Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateInstanceIam5Response.
+        r"""Gets the job_id of this CreateInstanceIam5Response.
 
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
@@ -87,7 +87,7 @@ class CreateInstanceIam5Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateInstanceIam5Response.
+        r"""Sets the job_id of this CreateInstanceIam5Response.
 
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
@@ -98,7 +98,7 @@ class CreateInstanceIam5Response(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateInstanceIam5Response.
+        r"""Gets the order_id of this CreateInstanceIam5Response.
 
         订单号，创建包年包月时返回该参数。
 
@@ -109,7 +109,7 @@ class CreateInstanceIam5Response(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateInstanceIam5Response.
+        r"""Sets the order_id of this CreateInstanceIam5Response.
 
         订单号，创建包年包月时返回该参数。
 

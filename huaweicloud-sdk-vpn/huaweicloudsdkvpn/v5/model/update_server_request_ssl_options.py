@@ -29,7 +29,7 @@ class UpdateServerRequestSslOptions:
     }
 
     def __init__(self, protocol=None, port=None, encryption_algorithm=None):
-        """UpdateServerRequestSslOptions
+        r"""UpdateServerRequestSslOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateServerRequestSslOptions:
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateServerRequestSslOptions.
+        r"""Gets the protocol of this UpdateServerRequestSslOptions.
 
         协议
 
@@ -68,7 +68,7 @@ class UpdateServerRequestSslOptions:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateServerRequestSslOptions.
+        r"""Sets the protocol of this UpdateServerRequestSslOptions.
 
         协议
 
@@ -79,7 +79,7 @@ class UpdateServerRequestSslOptions:
 
     @property
     def port(self):
-        """Gets the port of this UpdateServerRequestSslOptions.
+        r"""Gets the port of this UpdateServerRequestSslOptions.
 
         端口
 
@@ -90,7 +90,7 @@ class UpdateServerRequestSslOptions:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateServerRequestSslOptions.
+        r"""Sets the port of this UpdateServerRequestSslOptions.
 
         端口
 
@@ -101,7 +101,7 @@ class UpdateServerRequestSslOptions:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this UpdateServerRequestSslOptions.
+        r"""Gets the encryption_algorithm of this UpdateServerRequestSslOptions.
 
         加密算法
 
@@ -112,7 +112,7 @@ class UpdateServerRequestSslOptions:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this UpdateServerRequestSslOptions.
+        r"""Sets the encryption_algorithm of this UpdateServerRequestSslOptions.
 
         加密算法
 

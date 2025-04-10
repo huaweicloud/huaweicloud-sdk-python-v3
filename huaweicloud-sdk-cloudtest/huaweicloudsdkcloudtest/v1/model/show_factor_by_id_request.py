@@ -27,7 +27,7 @@ class ShowFactorByIdRequest:
     }
 
     def __init__(self, project_id=None, id=None):
-        """ShowFactorByIdRequest
+        r"""ShowFactorByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowFactorByIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowFactorByIdRequest.
+        r"""Gets the project_id of this ShowFactorByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ShowFactorByIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowFactorByIdRequest.
+        r"""Sets the project_id of this ShowFactorByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ShowFactorByIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowFactorByIdRequest.
+        r"""Gets the id of this ShowFactorByIdRequest.
 
         因子ID
 
@@ -81,7 +81,7 @@ class ShowFactorByIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowFactorByIdRequest.
+        r"""Sets the id of this ShowFactorByIdRequest.
 
         因子ID
 

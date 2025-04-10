@@ -32,7 +32,7 @@ class UpdateAssetResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, video_upload_url=None, cover_upload_url=None, subtitle_upload_urls=None):
-        """UpdateAssetResponse
+        r"""UpdateAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateAssetResponse.
+        r"""Gets the asset_id of this UpdateAssetResponse.
 
         媒资ID。
 
@@ -76,7 +76,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateAssetResponse.
+        r"""Sets the asset_id of this UpdateAssetResponse.
 
         媒资ID。
 
@@ -87,7 +87,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @property
     def video_upload_url(self):
-        """Gets the video_upload_url of this UpdateAssetResponse.
+        r"""Gets the video_upload_url of this UpdateAssetResponse.
 
         视频上传地址。  用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  > 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示：视频文件：video/视频格式，如：“video/mp4”。
 
@@ -98,7 +98,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @video_upload_url.setter
     def video_upload_url(self, video_upload_url):
-        """Sets the video_upload_url of this UpdateAssetResponse.
+        r"""Sets the video_upload_url of this UpdateAssetResponse.
 
         视频上传地址。  用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  > 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示：视频文件：video/视频格式，如：“video/mp4”。
 
@@ -109,7 +109,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @property
     def cover_upload_url(self):
-        """Gets the cover_upload_url of this UpdateAssetResponse.
+        r"""Gets the cover_upload_url of this UpdateAssetResponse.
 
         封面上传地址，用于上传封面文件。  > 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示：图片文件：image/图片格式，如：“image/png”。
 
@@ -120,7 +120,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @cover_upload_url.setter
     def cover_upload_url(self, cover_upload_url):
-        """Sets the cover_upload_url of this UpdateAssetResponse.
+        r"""Sets the cover_upload_url of this UpdateAssetResponse.
 
         封面上传地址，用于上传封面文件。  > 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示：图片文件：image/图片格式，如：“image/png”。
 
@@ -131,7 +131,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @property
     def subtitle_upload_urls(self):
-        """Gets the subtitle_upload_urls of this UpdateAssetResponse.
+        r"""Gets the subtitle_upload_urls of this UpdateAssetResponse.
 
         字幕上传地址，用于上传字幕。  > 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示：字幕文件：application/octet-stream。
 
@@ -142,7 +142,7 @@ class UpdateAssetResponse(SdkResponse):
 
     @subtitle_upload_urls.setter
     def subtitle_upload_urls(self, subtitle_upload_urls):
-        """Sets the subtitle_upload_urls of this UpdateAssetResponse.
+        r"""Sets the subtitle_upload_urls of this UpdateAssetResponse.
 
         字幕上传地址，用于上传字幕。  > 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示：字幕文件：application/octet-stream。
 

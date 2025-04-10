@@ -49,7 +49,7 @@ class StudyJobRsp:
     }
 
     def __init__(self, id=None, workflow_job_id=None, name=None, status=None, template_id=None, database_name=None, database_id=None, relative_path=None, output_file_type=None, workflow_name=None, label=None, create_time=None, update_time=None):
-        """StudyJobRsp
+        r"""StudyJobRsp
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class StudyJobRsp:
 
     @property
     def id(self):
-        """Gets the id of this StudyJobRsp.
+        r"""Gets the id of this StudyJobRsp.
 
         study作业id
 
@@ -138,7 +138,7 @@ class StudyJobRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StudyJobRsp.
+        r"""Sets the id of this StudyJobRsp.
 
         study作业id
 
@@ -149,7 +149,7 @@ class StudyJobRsp:
 
     @property
     def workflow_job_id(self):
-        """Gets the workflow_job_id of this StudyJobRsp.
+        r"""Gets the workflow_job_id of this StudyJobRsp.
 
         workflow作业id
 
@@ -160,7 +160,7 @@ class StudyJobRsp:
 
     @workflow_job_id.setter
     def workflow_job_id(self, workflow_job_id):
-        """Sets the workflow_job_id of this StudyJobRsp.
+        r"""Sets the workflow_job_id of this StudyJobRsp.
 
         workflow作业id
 
@@ -171,7 +171,7 @@ class StudyJobRsp:
 
     @property
     def name(self):
-        """Gets the name of this StudyJobRsp.
+        r"""Gets the name of this StudyJobRsp.
 
         作业名称
 
@@ -182,7 +182,7 @@ class StudyJobRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StudyJobRsp.
+        r"""Sets the name of this StudyJobRsp.
 
         作业名称
 
@@ -193,7 +193,7 @@ class StudyJobRsp:
 
     @property
     def status(self):
-        """Gets the status of this StudyJobRsp.
+        r"""Gets the status of this StudyJobRsp.
 
         作业状态
 
@@ -204,7 +204,7 @@ class StudyJobRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StudyJobRsp.
+        r"""Sets the status of this StudyJobRsp.
 
         作业状态
 
@@ -215,7 +215,7 @@ class StudyJobRsp:
 
     @property
     def template_id(self):
-        """Gets the template_id of this StudyJobRsp.
+        r"""Gets the template_id of this StudyJobRsp.
 
         生成study作业结果的模板id
 
@@ -226,7 +226,7 @@ class StudyJobRsp:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this StudyJobRsp.
+        r"""Sets the template_id of this StudyJobRsp.
 
         生成study作业结果的模板id
 
@@ -237,7 +237,7 @@ class StudyJobRsp:
 
     @property
     def database_name(self):
-        """Gets the database_name of this StudyJobRsp.
+        r"""Gets the database_name of this StudyJobRsp.
 
         study作业结果的数据库实例名称
 
@@ -248,7 +248,7 @@ class StudyJobRsp:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this StudyJobRsp.
+        r"""Sets the database_name of this StudyJobRsp.
 
         study作业结果的数据库实例名称
 
@@ -259,7 +259,7 @@ class StudyJobRsp:
 
     @property
     def database_id(self):
-        """Gets the database_id of this StudyJobRsp.
+        r"""Gets the database_id of this StudyJobRsp.
 
         study作业结果的数据库实例id
 
@@ -270,7 +270,7 @@ class StudyJobRsp:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this StudyJobRsp.
+        r"""Sets the database_id of this StudyJobRsp.
 
         study作业结果的数据库实例id
 
@@ -281,7 +281,7 @@ class StudyJobRsp:
 
     @property
     def relative_path(self):
-        """Gets the relative_path of this StudyJobRsp.
+        r"""Gets the relative_path of this StudyJobRsp.
 
         生成study作业结果的文件的相对路径
 
@@ -292,7 +292,7 @@ class StudyJobRsp:
 
     @relative_path.setter
     def relative_path(self, relative_path):
-        """Sets the relative_path of this StudyJobRsp.
+        r"""Sets the relative_path of this StudyJobRsp.
 
         生成study作业结果的文件的相对路径
 
@@ -303,7 +303,7 @@ class StudyJobRsp:
 
     @property
     def output_file_type(self):
-        """Gets the output_file_type of this StudyJobRsp.
+        r"""Gets the output_file_type of this StudyJobRsp.
 
         生成study作业结果的文件的类型
 
@@ -314,7 +314,7 @@ class StudyJobRsp:
 
     @output_file_type.setter
     def output_file_type(self, output_file_type):
-        """Sets the output_file_type of this StudyJobRsp.
+        r"""Sets the output_file_type of this StudyJobRsp.
 
         生成study作业结果的文件的类型
 
@@ -325,7 +325,7 @@ class StudyJobRsp:
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this StudyJobRsp.
+        r"""Gets the workflow_name of this StudyJobRsp.
 
         使用的workflow名称
 
@@ -336,7 +336,7 @@ class StudyJobRsp:
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this StudyJobRsp.
+        r"""Sets the workflow_name of this StudyJobRsp.
 
         使用的workflow名称
 
@@ -347,7 +347,7 @@ class StudyJobRsp:
 
     @property
     def label(self):
-        """Gets the label of this StudyJobRsp.
+        r"""Gets the label of this StudyJobRsp.
 
         使用的workflow标签
 
@@ -358,7 +358,7 @@ class StudyJobRsp:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this StudyJobRsp.
+        r"""Sets the label of this StudyJobRsp.
 
         使用的workflow标签
 
@@ -369,7 +369,7 @@ class StudyJobRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StudyJobRsp.
+        r"""Gets the create_time of this StudyJobRsp.
 
         作业创建时间
 
@@ -380,7 +380,7 @@ class StudyJobRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StudyJobRsp.
+        r"""Sets the create_time of this StudyJobRsp.
 
         作业创建时间
 
@@ -391,7 +391,7 @@ class StudyJobRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StudyJobRsp.
+        r"""Gets the update_time of this StudyJobRsp.
 
         作业更新时间
 
@@ -402,7 +402,7 @@ class StudyJobRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StudyJobRsp.
+        r"""Sets the update_time of this StudyJobRsp.
 
         作业更新时间
 

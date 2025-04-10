@@ -25,7 +25,7 @@ class RegisterOrganizationalUnitRequest:
     }
 
     def __init__(self, organizational_unit_id=None):
-        """RegisterOrganizationalUnitRequest
+        r"""RegisterOrganizationalUnitRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegisterOrganizationalUnitRequest:
 
     @property
     def organizational_unit_id(self):
-        """Gets the organizational_unit_id of this RegisterOrganizationalUnitRequest.
+        r"""Gets the organizational_unit_id of this RegisterOrganizationalUnitRequest.
 
         注册OU ID。
 
@@ -53,7 +53,7 @@ class RegisterOrganizationalUnitRequest:
 
     @organizational_unit_id.setter
     def organizational_unit_id(self, organizational_unit_id):
-        """Sets the organizational_unit_id of this RegisterOrganizationalUnitRequest.
+        r"""Sets the organizational_unit_id of this RegisterOrganizationalUnitRequest.
 
         注册OU ID。
 

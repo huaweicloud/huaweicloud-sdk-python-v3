@@ -27,7 +27,7 @@ class NodeCheckStatus:
     }
 
     def __init__(self, phase=None, node_stage_status=None):
-        """NodeCheckStatus
+        r"""NodeCheckStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeCheckStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this NodeCheckStatus.
+        r"""Gets the phase of this NodeCheckStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
 
@@ -61,7 +61,7 @@ class NodeCheckStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this NodeCheckStatus.
+        r"""Sets the phase of this NodeCheckStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
 
@@ -72,7 +72,7 @@ class NodeCheckStatus:
 
     @property
     def node_stage_status(self):
-        """Gets the node_stage_status of this NodeCheckStatus.
+        r"""Gets the node_stage_status of this NodeCheckStatus.
 
         节点检查状态
 
@@ -83,7 +83,7 @@ class NodeCheckStatus:
 
     @node_stage_status.setter
     def node_stage_status(self, node_stage_status):
-        """Sets the node_stage_status of this NodeCheckStatus.
+        r"""Sets the node_stage_status of this NodeCheckStatus.
 
         节点检查状态
 

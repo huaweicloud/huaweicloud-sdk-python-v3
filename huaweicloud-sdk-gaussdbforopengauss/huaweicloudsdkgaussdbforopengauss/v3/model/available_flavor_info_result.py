@@ -31,7 +31,7 @@ class AvailableFlavorInfoResult:
     }
 
     def __init__(self, spec_code=None, vcpus=None, ram=None, az_status=None):
-        """AvailableFlavorInfoResult
+        r"""AvailableFlavorInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AvailableFlavorInfoResult:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this AvailableFlavorInfoResult.
+        r"""Gets the spec_code of this AvailableFlavorInfoResult.
 
         资源规格编码。
 
@@ -75,7 +75,7 @@ class AvailableFlavorInfoResult:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this AvailableFlavorInfoResult.
+        r"""Sets the spec_code of this AvailableFlavorInfoResult.
 
         资源规格编码。
 
@@ -86,7 +86,7 @@ class AvailableFlavorInfoResult:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this AvailableFlavorInfoResult.
+        r"""Gets the vcpus of this AvailableFlavorInfoResult.
 
         CPU核数。
 
@@ -97,7 +97,7 @@ class AvailableFlavorInfoResult:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this AvailableFlavorInfoResult.
+        r"""Sets the vcpus of this AvailableFlavorInfoResult.
 
         CPU核数。
 
@@ -108,7 +108,7 @@ class AvailableFlavorInfoResult:
 
     @property
     def ram(self):
-        """Gets the ram of this AvailableFlavorInfoResult.
+        r"""Gets the ram of this AvailableFlavorInfoResult.
 
         内存大小，单位：GB。
 
@@ -119,7 +119,7 @@ class AvailableFlavorInfoResult:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this AvailableFlavorInfoResult.
+        r"""Sets the ram of this AvailableFlavorInfoResult.
 
         内存大小，单位：GB。
 
@@ -130,7 +130,7 @@ class AvailableFlavorInfoResult:
 
     @property
     def az_status(self):
-        """Gets the az_status of this AvailableFlavorInfoResult.
+        r"""Gets the az_status of this AvailableFlavorInfoResult.
 
         其中key是可用区编号，value是规格所在az的状态。
 
@@ -141,7 +141,7 @@ class AvailableFlavorInfoResult:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this AvailableFlavorInfoResult.
+        r"""Sets the az_status of this AvailableFlavorInfoResult.
 
         其中key是可用区编号，value是规格所在az的状态。
 

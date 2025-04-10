@@ -39,7 +39,7 @@ class UpdateHttpPolicyRequestBody:
     }
 
     def __init__(self, name=None, action=None, options=None, level=None, full_detection=None, robot_action=None, third_bot_options=None, extend=None):
-        """UpdateHttpPolicyRequestBody
+        r"""UpdateHttpPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpPolicyRequestBody.
+        r"""Gets the name of this UpdateHttpPolicyRequestBody.
 
         防护策略名
 
@@ -103,7 +103,7 @@ class UpdateHttpPolicyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpPolicyRequestBody.
+        r"""Sets the name of this UpdateHttpPolicyRequestBody.
 
         防护策略名
 
@@ -114,7 +114,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateHttpPolicyRequestBody.
+        r"""Gets the action of this UpdateHttpPolicyRequestBody.
 
         :return: The action of this UpdateHttpPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -123,7 +123,7 @@ class UpdateHttpPolicyRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateHttpPolicyRequestBody.
+        r"""Sets the action of this UpdateHttpPolicyRequestBody.
 
         :param action: The action of this UpdateHttpPolicyRequestBody.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -132,7 +132,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def options(self):
-        """Gets the options of this UpdateHttpPolicyRequestBody.
+        r"""Gets the options of this UpdateHttpPolicyRequestBody.
 
         :return: The options of this UpdateHttpPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpPolicyOption`
@@ -141,7 +141,7 @@ class UpdateHttpPolicyRequestBody:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this UpdateHttpPolicyRequestBody.
+        r"""Sets the options of this UpdateHttpPolicyRequestBody.
 
         :param options: The options of this UpdateHttpPolicyRequestBody.
         :type options: :class:`huaweicloudsdkedgesec.v2.HttpPolicyOption`
@@ -150,7 +150,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def level(self):
-        """Gets the level of this UpdateHttpPolicyRequestBody.
+        r"""Gets the level of this UpdateHttpPolicyRequestBody.
 
         防护等级
 
@@ -161,7 +161,7 @@ class UpdateHttpPolicyRequestBody:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this UpdateHttpPolicyRequestBody.
+        r"""Sets the level of this UpdateHttpPolicyRequestBody.
 
         防护等级
 
@@ -172,7 +172,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def full_detection(self):
-        """Gets the full_detection of this UpdateHttpPolicyRequestBody.
+        r"""Gets the full_detection of this UpdateHttpPolicyRequestBody.
 
         精准防护中的检测模式
 
@@ -183,7 +183,7 @@ class UpdateHttpPolicyRequestBody:
 
     @full_detection.setter
     def full_detection(self, full_detection):
-        """Sets the full_detection of this UpdateHttpPolicyRequestBody.
+        r"""Sets the full_detection of this UpdateHttpPolicyRequestBody.
 
         精准防护中的检测模式
 
@@ -194,7 +194,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def robot_action(self):
-        """Gets the robot_action of this UpdateHttpPolicyRequestBody.
+        r"""Gets the robot_action of this UpdateHttpPolicyRequestBody.
 
         :return: The robot_action of this UpdateHttpPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -203,7 +203,7 @@ class UpdateHttpPolicyRequestBody:
 
     @robot_action.setter
     def robot_action(self, robot_action):
-        """Sets the robot_action of this UpdateHttpPolicyRequestBody.
+        r"""Sets the robot_action of this UpdateHttpPolicyRequestBody.
 
         :param robot_action: The robot_action of this UpdateHttpPolicyRequestBody.
         :type robot_action: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -212,7 +212,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def third_bot_options(self):
-        """Gets the third_bot_options of this UpdateHttpPolicyRequestBody.
+        r"""Gets the third_bot_options of this UpdateHttpPolicyRequestBody.
 
         :return: The third_bot_options of this UpdateHttpPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpThirdBotOptions`
@@ -221,7 +221,7 @@ class UpdateHttpPolicyRequestBody:
 
     @third_bot_options.setter
     def third_bot_options(self, third_bot_options):
-        """Sets the third_bot_options of this UpdateHttpPolicyRequestBody.
+        r"""Sets the third_bot_options of this UpdateHttpPolicyRequestBody.
 
         :param third_bot_options: The third_bot_options of this UpdateHttpPolicyRequestBody.
         :type third_bot_options: :class:`huaweicloudsdkedgesec.v2.HttpThirdBotOptions`
@@ -230,7 +230,7 @@ class UpdateHttpPolicyRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this UpdateHttpPolicyRequestBody.
+        r"""Gets the extend of this UpdateHttpPolicyRequestBody.
 
         扩展字段
 
@@ -241,7 +241,7 @@ class UpdateHttpPolicyRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this UpdateHttpPolicyRequestBody.
+        r"""Sets the extend of this UpdateHttpPolicyRequestBody.
 
         扩展字段
 

@@ -27,7 +27,7 @@ class ModifyVolumeRequestBody:
     }
 
     def __init__(self, size=None, is_auto_pay=None):
-        """ModifyVolumeRequestBody
+        r"""ModifyVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyVolumeRequestBody:
 
     @property
     def size(self):
-        """Gets the size of this ModifyVolumeRequestBody.
+        r"""Gets the size of this ModifyVolumeRequestBody.
 
         待变更到的磁盘容量。单位GB，取值为整数。 扩容场景下，必须大于当前磁盘容量。 缩容场景下，必须大于已用量的125%，向上取整。 磁盘容量的上下限与所选引擎类型以及规格相关。   - [GeminiDB Cassandra请参见[数据库实例规格](https://support.huaweicloud.com/cassandraug-nosql/nosql_05_0017.html)。](tag:hc)   - [GeminiDB Cassandra请参见[数据库实例规格。](https://support.huaweicloud.com/intl/zh-cn/cassandraug-nosql/nosql_05_0017.html)](tag:hk)   - [GeminiDB Redis请参见[数据库实例规格。](https://support.huaweicloud.com/redisug-nosql/nosql_05_0059.html)](tag:hc)   - [GeminiDB Redis请参见[数据库实例规格。](https://support.huaweicloud.com/intl/zh-cn/redisug-nosql/nosql_05_0059.html)](tag:hk)
 
@@ -60,7 +60,7 @@ class ModifyVolumeRequestBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ModifyVolumeRequestBody.
+        r"""Sets the size of this ModifyVolumeRequestBody.
 
         待变更到的磁盘容量。单位GB，取值为整数。 扩容场景下，必须大于当前磁盘容量。 缩容场景下，必须大于已用量的125%，向上取整。 磁盘容量的上下限与所选引擎类型以及规格相关。   - [GeminiDB Cassandra请参见[数据库实例规格](https://support.huaweicloud.com/cassandraug-nosql/nosql_05_0017.html)。](tag:hc)   - [GeminiDB Cassandra请参见[数据库实例规格。](https://support.huaweicloud.com/intl/zh-cn/cassandraug-nosql/nosql_05_0017.html)](tag:hk)   - [GeminiDB Redis请参见[数据库实例规格。](https://support.huaweicloud.com/redisug-nosql/nosql_05_0059.html)](tag:hc)   - [GeminiDB Redis请参见[数据库实例规格。](https://support.huaweicloud.com/intl/zh-cn/redisug-nosql/nosql_05_0059.html)](tag:hk)
 
@@ -71,7 +71,7 @@ class ModifyVolumeRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ModifyVolumeRequestBody.
+        r"""Gets the is_auto_pay of this ModifyVolumeRequestBody.
 
         扩容包年包月实例存储容量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 
@@ -82,7 +82,7 @@ class ModifyVolumeRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ModifyVolumeRequestBody.
+        r"""Sets the is_auto_pay of this ModifyVolumeRequestBody.
 
         扩容包年包月实例存储容量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 

@@ -30,7 +30,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowCommitsByRepoIdResponse
+        r"""ShowCommitsByRepoIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowCommitsByRepoIdResponse.
+        r"""Gets the error of this ShowCommitsByRepoIdResponse.
 
         :return: The error of this ShowCommitsByRepoIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowCommitsByRepoIdResponse.
+        r"""Sets the error of this ShowCommitsByRepoIdResponse.
 
         :param error: The error of this ShowCommitsByRepoIdResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowCommitsByRepoIdResponse.
+        r"""Gets the result of this ShowCommitsByRepoIdResponse.
 
         :return: The result of this ShowCommitsByRepoIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitList`
@@ -85,7 +85,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowCommitsByRepoIdResponse.
+        r"""Sets the result of this ShowCommitsByRepoIdResponse.
 
         :param result: The result of this ShowCommitsByRepoIdResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.CommitList`
@@ -94,7 +94,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCommitsByRepoIdResponse.
+        r"""Gets the status of this ShowCommitsByRepoIdResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowCommitsByRepoIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCommitsByRepoIdResponse.
+        r"""Sets the status of this ShowCommitsByRepoIdResponse.
 
         响应状态
 

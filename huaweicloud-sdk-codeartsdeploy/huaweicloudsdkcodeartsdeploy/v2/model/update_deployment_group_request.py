@@ -27,7 +27,7 @@ class UpdateDeploymentGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """UpdateDeploymentGroupRequest
+        r"""UpdateDeploymentGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDeploymentGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDeploymentGroupRequest.
+        r"""Gets the group_id of this UpdateDeploymentGroupRequest.
 
         主机集群id
 
@@ -60,7 +60,7 @@ class UpdateDeploymentGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDeploymentGroupRequest.
+        r"""Sets the group_id of this UpdateDeploymentGroupRequest.
 
         主机集群id
 
@@ -71,7 +71,7 @@ class UpdateDeploymentGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeploymentGroupRequest.
+        r"""Gets the body of this UpdateDeploymentGroupRequest.
 
         :return: The body of this UpdateDeploymentGroupRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroupUpdateRequest`
@@ -80,7 +80,7 @@ class UpdateDeploymentGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeploymentGroupRequest.
+        r"""Sets the body of this UpdateDeploymentGroupRequest.
 
         :param body: The body of this UpdateDeploymentGroupRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroupUpdateRequest`

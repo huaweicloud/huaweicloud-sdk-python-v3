@@ -27,7 +27,7 @@ class ShowInstanceEipRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowInstanceEipRequest
+        r"""ShowInstanceEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInstanceEipRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowInstanceEipRequest.
+        r"""Gets the x_language of this ShowInstanceEipRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowInstanceEipRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceEipRequest.
+        r"""Sets the x_language of this ShowInstanceEipRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowInstanceEipRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceEipRequest.
+        r"""Gets the instance_id of this ShowInstanceEipRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ShowInstanceEipRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceEipRequest.
+        r"""Sets the instance_id of this ShowInstanceEipRequest.
 
         实例ID。
 

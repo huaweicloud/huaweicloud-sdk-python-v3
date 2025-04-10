@@ -27,7 +27,7 @@ class ExecuteUpdateVideoByIdRequest:
     }
 
     def __init__(self, video_id=None, body=None):
-        """ExecuteUpdateVideoByIdRequest
+        r"""ExecuteUpdateVideoByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteUpdateVideoByIdRequest:
 
     @property
     def video_id(self):
-        """Gets the video_id of this ExecuteUpdateVideoByIdRequest.
+        r"""Gets the video_id of this ExecuteUpdateVideoByIdRequest.
 
         视频id
 
@@ -60,7 +60,7 @@ class ExecuteUpdateVideoByIdRequest:
 
     @video_id.setter
     def video_id(self, video_id):
-        """Sets the video_id of this ExecuteUpdateVideoByIdRequest.
+        r"""Sets the video_id of this ExecuteUpdateVideoByIdRequest.
 
         视频id
 
@@ -71,7 +71,7 @@ class ExecuteUpdateVideoByIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteUpdateVideoByIdRequest.
+        r"""Gets the body of this ExecuteUpdateVideoByIdRequest.
 
         :return: The body of this ExecuteUpdateVideoByIdRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.UpdateReq`
@@ -80,7 +80,7 @@ class ExecuteUpdateVideoByIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteUpdateVideoByIdRequest.
+        r"""Sets the body of this ExecuteUpdateVideoByIdRequest.
 
         :param body: The body of this ExecuteUpdateVideoByIdRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.UpdateReq`

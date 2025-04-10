@@ -33,7 +33,7 @@ class ListEffectiveRoutesRequest:
     }
 
     def __init__(self, route_table_id=None, limit=None, marker=None, destination=None, resource_type=None):
-        """ListEffectiveRoutesRequest
+        r"""ListEffectiveRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListEffectiveRoutesRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this ListEffectiveRoutesRequest.
+        r"""Gets the route_table_id of this ListEffectiveRoutesRequest.
 
         路由表ID
 
@@ -81,7 +81,7 @@ class ListEffectiveRoutesRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this ListEffectiveRoutesRequest.
+        r"""Sets the route_table_id of this ListEffectiveRoutesRequest.
 
         路由表ID
 
@@ -92,7 +92,7 @@ class ListEffectiveRoutesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEffectiveRoutesRequest.
+        r"""Gets the limit of this ListEffectiveRoutesRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -103,7 +103,7 @@ class ListEffectiveRoutesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEffectiveRoutesRequest.
+        r"""Sets the limit of this ListEffectiveRoutesRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -114,7 +114,7 @@ class ListEffectiveRoutesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEffectiveRoutesRequest.
+        r"""Gets the marker of this ListEffectiveRoutesRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -125,7 +125,7 @@ class ListEffectiveRoutesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEffectiveRoutesRequest.
+        r"""Sets the marker of this ListEffectiveRoutesRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -136,7 +136,7 @@ class ListEffectiveRoutesRequest:
 
     @property
     def destination(self):
-        """Gets the destination of this ListEffectiveRoutesRequest.
+        r"""Gets the destination of this ListEffectiveRoutesRequest.
 
         路由目的地址
 
@@ -147,7 +147,7 @@ class ListEffectiveRoutesRequest:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ListEffectiveRoutesRequest.
+        r"""Sets the destination of this ListEffectiveRoutesRequest.
 
         路由目的地址
 
@@ -158,7 +158,7 @@ class ListEffectiveRoutesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListEffectiveRoutesRequest.
+        r"""Gets the resource_type of this ListEffectiveRoutesRequest.
 
         - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 
@@ -169,7 +169,7 @@ class ListEffectiveRoutesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListEffectiveRoutesRequest.
+        r"""Sets the resource_type of this ListEffectiveRoutesRequest.
 
         - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -  -
 

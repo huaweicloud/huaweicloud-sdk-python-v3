@@ -31,7 +31,7 @@ class HistoryInfo:
     }
 
     def __init__(self, parameter_name=None, old_value=None, new_value=None, updated_at=None):
-        """HistoryInfo
+        r"""HistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class HistoryInfo:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this HistoryInfo.
+        r"""Gets the parameter_name of this HistoryInfo.
 
         参数名称
 
@@ -71,7 +71,7 @@ class HistoryInfo:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this HistoryInfo.
+        r"""Sets the parameter_name of this HistoryInfo.
 
         参数名称
 
@@ -82,7 +82,7 @@ class HistoryInfo:
 
     @property
     def old_value(self):
-        """Gets the old_value of this HistoryInfo.
+        r"""Gets the old_value of this HistoryInfo.
 
         修改前的值。
 
@@ -93,7 +93,7 @@ class HistoryInfo:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this HistoryInfo.
+        r"""Sets the old_value of this HistoryInfo.
 
         修改前的值。
 
@@ -104,7 +104,7 @@ class HistoryInfo:
 
     @property
     def new_value(self):
-        """Gets the new_value of this HistoryInfo.
+        r"""Gets the new_value of this HistoryInfo.
 
         修改后的值。
 
@@ -115,7 +115,7 @@ class HistoryInfo:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this HistoryInfo.
+        r"""Sets the new_value of this HistoryInfo.
 
         修改后的值。
 
@@ -126,7 +126,7 @@ class HistoryInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this HistoryInfo.
+        r"""Gets the updated_at of this HistoryInfo.
 
         修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -137,7 +137,7 @@ class HistoryInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this HistoryInfo.
+        r"""Sets the updated_at of this HistoryInfo.
 
         修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

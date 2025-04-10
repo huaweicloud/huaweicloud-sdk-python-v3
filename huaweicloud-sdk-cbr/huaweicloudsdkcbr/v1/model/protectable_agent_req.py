@@ -25,7 +25,7 @@ class ProtectableAgentReq:
     }
 
     def __init__(self, agent_status=None):
-        """ProtectableAgentReq
+        r"""ProtectableAgentReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProtectableAgentReq:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ProtectableAgentReq.
+        r"""Gets the agent_status of this ProtectableAgentReq.
 
         查询参数列表
 
@@ -53,7 +53,7 @@ class ProtectableAgentReq:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ProtectableAgentReq.
+        r"""Sets the agent_status of this ProtectableAgentReq.
 
         查询参数列表
 

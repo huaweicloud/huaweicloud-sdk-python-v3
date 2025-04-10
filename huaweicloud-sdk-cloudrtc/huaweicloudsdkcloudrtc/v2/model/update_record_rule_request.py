@@ -37,7 +37,7 @@ class UpdateRecordRuleRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None, rule_id=None, body=None):
-        """UpdateRecordRuleRequest
+        r"""UpdateRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateRecordRuleRequest.
+        r"""Gets the content_type of this UpdateRecordRuleRequest.
 
         内容类型。
 
@@ -93,7 +93,7 @@ class UpdateRecordRuleRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateRecordRuleRequest.
+        r"""Sets the content_type of this UpdateRecordRuleRequest.
 
         内容类型。
 
@@ -104,7 +104,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this UpdateRecordRuleRequest.
+        r"""Gets the authorization of this UpdateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -115,7 +115,7 @@ class UpdateRecordRuleRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this UpdateRecordRuleRequest.
+        r"""Sets the authorization of this UpdateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -126,7 +126,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this UpdateRecordRuleRequest.
+        r"""Gets the x_sdk_date of this UpdateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -137,7 +137,7 @@ class UpdateRecordRuleRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this UpdateRecordRuleRequest.
+        r"""Sets the x_sdk_date of this UpdateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -148,7 +148,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this UpdateRecordRuleRequest.
+        r"""Gets the x_project_id of this UpdateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -159,7 +159,7 @@ class UpdateRecordRuleRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this UpdateRecordRuleRequest.
+        r"""Sets the x_project_id of this UpdateRecordRuleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -170,7 +170,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateRecordRuleRequest.
+        r"""Gets the app_id of this UpdateRecordRuleRequest.
 
         应用id
 
@@ -181,7 +181,7 @@ class UpdateRecordRuleRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateRecordRuleRequest.
+        r"""Sets the app_id of this UpdateRecordRuleRequest.
 
         应用id
 
@@ -192,7 +192,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateRecordRuleRequest.
+        r"""Gets the rule_id of this UpdateRecordRuleRequest.
 
         规则id
 
@@ -203,7 +203,7 @@ class UpdateRecordRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateRecordRuleRequest.
+        r"""Sets the rule_id of this UpdateRecordRuleRequest.
 
         规则id
 
@@ -214,7 +214,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRecordRuleRequest.
+        r"""Gets the body of this UpdateRecordRuleRequest.
 
         :return: The body of this UpdateRecordRuleRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`
@@ -223,7 +223,7 @@ class UpdateRecordRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRecordRuleRequest.
+        r"""Sets the body of this UpdateRecordRuleRequest.
 
         :param body: The body of this UpdateRecordRuleRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.RecordRuleReq`

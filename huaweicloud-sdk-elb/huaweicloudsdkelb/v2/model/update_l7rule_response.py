@@ -26,7 +26,7 @@ class UpdateL7ruleResponse(SdkResponse):
     }
 
     def __init__(self, rule=None):
-        """UpdateL7ruleResponse
+        r"""UpdateL7ruleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateL7ruleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this UpdateL7ruleResponse.
+        r"""Gets the rule of this UpdateL7ruleResponse.
 
         :return: The rule of this UpdateL7ruleResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.L7ruleResp`
@@ -53,7 +53,7 @@ class UpdateL7ruleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this UpdateL7ruleResponse.
+        r"""Sets the rule of this UpdateL7ruleResponse.
 
         :param rule: The rule of this UpdateL7ruleResponse.
         :type rule: :class:`huaweicloudsdkelb.v2.L7ruleResp`

@@ -28,7 +28,7 @@ class ListAimMsgTemplateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, page_info=None):
-        """ListAimMsgTemplateResponse
+        r"""ListAimMsgTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAimMsgTemplateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListAimMsgTemplateResponse.
+        r"""Gets the result of this ListAimMsgTemplateResponse.
 
         查询结果。
 
@@ -62,7 +62,7 @@ class ListAimMsgTemplateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListAimMsgTemplateResponse.
+        r"""Sets the result of this ListAimMsgTemplateResponse.
 
         查询结果。
 
@@ -73,7 +73,7 @@ class ListAimMsgTemplateResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimMsgTemplateResponse.
+        r"""Gets the page_info of this ListAimMsgTemplateResponse.
 
         :return: The page_info of this ListAimMsgTemplateResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -82,7 +82,7 @@ class ListAimMsgTemplateResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimMsgTemplateResponse.
+        r"""Sets the page_info of this ListAimMsgTemplateResponse.
 
         :param page_info: The page_info of this ListAimMsgTemplateResponse.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

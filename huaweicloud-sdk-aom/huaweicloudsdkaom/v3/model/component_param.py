@@ -31,7 +31,7 @@ class ComponentParam:
     }
 
     def __init__(self, description=None, model_id=None, model_type=None, name=None):
-        """ComponentParam
+        r"""ComponentParam
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ComponentParam:
 
     @property
     def description(self):
-        """Gets the description of this ComponentParam.
+        r"""Gets the description of this ComponentParam.
 
         组件描述
 
@@ -72,7 +72,7 @@ class ComponentParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentParam.
+        r"""Sets the description of this ComponentParam.
 
         组件描述
 
@@ -83,7 +83,7 @@ class ComponentParam:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ComponentParam.
+        r"""Gets the model_id of this ComponentParam.
 
         应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
 
@@ -94,7 +94,7 @@ class ComponentParam:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ComponentParam.
+        r"""Sets the model_id of this ComponentParam.
 
         应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
 
@@ -105,7 +105,7 @@ class ComponentParam:
 
     @property
     def model_type(self):
-        """Gets the model_type of this ComponentParam.
+        r"""Gets the model_type of this ComponentParam.
 
         应用、子应用，取值：APPLICATION、SUB_APPLICATION ，不区分大小写
 
@@ -116,7 +116,7 @@ class ComponentParam:
 
     @model_type.setter
     def model_type(self, model_type):
-        """Sets the model_type of this ComponentParam.
+        r"""Sets the model_type of this ComponentParam.
 
         应用、子应用，取值：APPLICATION、SUB_APPLICATION ，不区分大小写
 
@@ -127,7 +127,7 @@ class ComponentParam:
 
     @property
     def name(self):
-        """Gets the name of this ComponentParam.
+        r"""Gets the name of this ComponentParam.
 
         组件名称
 
@@ -138,7 +138,7 @@ class ComponentParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentParam.
+        r"""Sets the name of this ComponentParam.
 
         组件名称
 

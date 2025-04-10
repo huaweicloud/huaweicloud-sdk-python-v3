@@ -27,7 +27,7 @@ class PostSuggestionsReq:
     }
 
     def __init__(self, question=None, top=None):
-        """PostSuggestionsReq
+        r"""PostSuggestionsReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PostSuggestionsReq:
 
     @property
     def question(self):
-        """Gets the question of this PostSuggestionsReq.
+        r"""Gets the question of this PostSuggestionsReq.
 
         用户输入的问题，长度为1~512。
 
@@ -60,7 +60,7 @@ class PostSuggestionsReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this PostSuggestionsReq.
+        r"""Sets the question of this PostSuggestionsReq.
 
         用户输入的问题，长度为1~512。
 
@@ -71,7 +71,7 @@ class PostSuggestionsReq:
 
     @property
     def top(self):
-        """Gets the top of this PostSuggestionsReq.
+        r"""Gets the top of this PostSuggestionsReq.
 
         最多提示条数，默认为5，取值范围[1,10]。
 
@@ -82,7 +82,7 @@ class PostSuggestionsReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this PostSuggestionsReq.
+        r"""Sets the top of this PostSuggestionsReq.
 
         最多提示条数，默认为5，取值范围[1,10]。
 

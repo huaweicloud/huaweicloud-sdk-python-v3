@@ -29,7 +29,7 @@ class Validity:
     }
 
     def __init__(self, type=None, value=None, start_from=None):
-        """Validity
+        r"""Validity
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Validity:
 
     @property
     def type(self):
-        """Gets the type of this Validity.
+        r"""Gets the type of this Validity.
 
         有效期类型，为必填值：   - **YEAR** : 年（12个月）   - **MONTH** : 月（统一按31天）   - **DAY** : 日   - **HOUR** : 小时
 
@@ -66,7 +66,7 @@ class Validity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Validity.
+        r"""Sets the type of this Validity.
 
         有效期类型，为必填值：   - **YEAR** : 年（12个月）   - **MONTH** : 月（统一按31天）   - **DAY** : 日   - **HOUR** : 小时
 
@@ -77,7 +77,7 @@ class Validity:
 
     @property
     def value(self):
-        """Gets the value of this Validity.
+        r"""Gets the value of this Validity.
 
         证书有效期值，与type对应的类型值，换算成年需满足以下规则：   - 根CA，有效期小于等于30年；   - 从属CA与私有证书，有效期小于等于20年。
 
@@ -88,7 +88,7 @@ class Validity:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Validity.
+        r"""Sets the value of this Validity.
 
         证书有效期值，与type对应的类型值，换算成年需满足以下规则：   - 根CA，有效期小于等于30年；   - 从属CA与私有证书，有效期小于等于20年。
 
@@ -99,7 +99,7 @@ class Validity:
 
     @property
     def start_from(self):
-        """Gets the start_from of this Validity.
+        r"""Gets the start_from of this Validity.
 
         起始时间，为可选值:   - 格式为时间戳（毫秒级），如1645146939688代表2022-02-18 09:15:39；   - 不早于当前时间5分钟，即start_from > (current_time - 5min)。
 
@@ -110,7 +110,7 @@ class Validity:
 
     @start_from.setter
     def start_from(self, start_from):
-        """Sets the start_from of this Validity.
+        r"""Sets the start_from of this Validity.
 
         起始时间，为可选值:   - 格式为时间戳（毫秒级），如1645146939688代表2022-02-18 09:15:39；   - 不早于当前时间5分钟，即start_from > (current_time - 5min)。
 

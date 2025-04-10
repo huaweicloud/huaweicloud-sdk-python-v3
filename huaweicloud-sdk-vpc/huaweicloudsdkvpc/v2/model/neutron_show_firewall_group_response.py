@@ -26,7 +26,7 @@ class NeutronShowFirewallGroupResponse(SdkResponse):
     }
 
     def __init__(self, firewall_group=None):
-        """NeutronShowFirewallGroupResponse
+        r"""NeutronShowFirewallGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronShowFirewallGroupResponse(SdkResponse):
 
     @property
     def firewall_group(self):
-        """Gets the firewall_group of this NeutronShowFirewallGroupResponse.
+        r"""Gets the firewall_group of this NeutronShowFirewallGroupResponse.
 
         :return: The firewall_group of this NeutronShowFirewallGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`
@@ -53,7 +53,7 @@ class NeutronShowFirewallGroupResponse(SdkResponse):
 
     @firewall_group.setter
     def firewall_group(self, firewall_group):
-        """Sets the firewall_group of this NeutronShowFirewallGroupResponse.
+        r"""Sets the firewall_group of this NeutronShowFirewallGroupResponse.
 
         :param firewall_group: The firewall_group of this NeutronShowFirewallGroupResponse.
         :type firewall_group: :class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`

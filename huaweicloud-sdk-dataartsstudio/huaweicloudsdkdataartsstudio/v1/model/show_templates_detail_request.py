@@ -27,7 +27,7 @@ class ShowTemplatesDetailRequest:
     }
 
     def __init__(self, id=None, workspace=None):
-        """ShowTemplatesDetailRequest
+        r"""ShowTemplatesDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTemplatesDetailRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowTemplatesDetailRequest.
+        r"""Gets the id of this ShowTemplatesDetailRequest.
 
         id
 
@@ -59,7 +59,7 @@ class ShowTemplatesDetailRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTemplatesDetailRequest.
+        r"""Sets the id of this ShowTemplatesDetailRequest.
 
         id
 
@@ -70,7 +70,7 @@ class ShowTemplatesDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowTemplatesDetailRequest.
+        r"""Gets the workspace of this ShowTemplatesDetailRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ShowTemplatesDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowTemplatesDetailRequest.
+        r"""Sets the workspace of this ShowTemplatesDetailRequest.
 
         DataArts Studio工作空间ID
 

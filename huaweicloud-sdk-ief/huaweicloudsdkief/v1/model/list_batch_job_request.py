@@ -33,7 +33,7 @@ class ListBatchJobRequest:
     }
 
     def __init__(self, job_type=None, limit=None, offset=None, sort=None, ief_instance_id=None):
-        """ListBatchJobRequest
+        r"""ListBatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListBatchJobRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListBatchJobRequest.
+        r"""Gets the job_type of this ListBatchJobRequest.
 
         批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -82,7 +82,7 @@ class ListBatchJobRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListBatchJobRequest.
+        r"""Sets the job_type of this ListBatchJobRequest.
 
         批量处理作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -93,7 +93,7 @@ class ListBatchJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBatchJobRequest.
+        r"""Gets the limit of this ListBatchJobRequest.
 
         查询返回记录的数量限制
 
@@ -104,7 +104,7 @@ class ListBatchJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBatchJobRequest.
+        r"""Sets the limit of this ListBatchJobRequest.
 
         查询返回记录的数量限制
 
@@ -115,7 +115,7 @@ class ListBatchJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBatchJobRequest.
+        r"""Gets the offset of this ListBatchJobRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -126,7 +126,7 @@ class ListBatchJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBatchJobRequest.
+        r"""Sets the offset of this ListBatchJobRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -137,7 +137,7 @@ class ListBatchJobRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListBatchJobRequest.
+        r"""Gets the sort of this ListBatchJobRequest.
 
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
@@ -148,7 +148,7 @@ class ListBatchJobRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListBatchJobRequest.
+        r"""Sets the sort of this ListBatchJobRequest.
 
         查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
 
@@ -159,7 +159,7 @@ class ListBatchJobRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListBatchJobRequest.
+        r"""Gets the ief_instance_id of this ListBatchJobRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -170,7 +170,7 @@ class ListBatchJobRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListBatchJobRequest.
+        r"""Sets the ief_instance_id of this ListBatchJobRequest.
 
         铂金版实例ID，专业版实例为空值
 

@@ -30,7 +30,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None, currency=None):
-        """ListCustomerBillsFeeRecordsResponse
+        r"""ListCustomerBillsFeeRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCustomerBillsFeeRecordsResponse.
+        r"""Gets the total_count of this ListCustomerBillsFeeRecordsResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -69,7 +69,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCustomerBillsFeeRecordsResponse.
+        r"""Sets the total_count of this ListCustomerBillsFeeRecordsResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -80,7 +80,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListCustomerBillsFeeRecordsResponse.
+        r"""Gets the records of this ListCustomerBillsFeeRecordsResponse.
 
         资源费用记录数据。 具体请参见表2。
 
@@ -91,7 +91,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListCustomerBillsFeeRecordsResponse.
+        r"""Sets the records of this ListCustomerBillsFeeRecordsResponse.
 
         资源费用记录数据。 具体请参见表2。
 
@@ -102,7 +102,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListCustomerBillsFeeRecordsResponse.
+        r"""Gets the currency of this ListCustomerBillsFeeRecordsResponse.
 
         币种。 CNY：人民币
 
@@ -113,7 +113,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListCustomerBillsFeeRecordsResponse.
+        r"""Sets the currency of this ListCustomerBillsFeeRecordsResponse.
 
         币种。 CNY：人民币
 

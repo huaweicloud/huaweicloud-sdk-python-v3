@@ -25,7 +25,7 @@ class ListUsageInfosRequest:
     }
 
     def __init__(self, project_uuid=None):
-        """ListUsageInfosRequest
+        r"""ListUsageInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListUsageInfosRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ListUsageInfosRequest.
+        r"""Gets the project_uuid of this ListUsageInfosRequest.
 
         项目ID
 
@@ -53,7 +53,7 @@ class ListUsageInfosRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ListUsageInfosRequest.
+        r"""Sets the project_uuid of this ListUsageInfosRequest.
 
         项目ID
 

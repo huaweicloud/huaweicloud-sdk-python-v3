@@ -29,7 +29,7 @@ class HttpDetectRequestBody:
     }
 
     def __init__(self, protocol=None, endpoint=None, extension=None):
-        """HttpDetectRequestBody
+        r"""HttpDetectRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class HttpDetectRequestBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this HttpDetectRequestBody.
+        r"""Gets the protocol of this HttpDetectRequestBody.
 
         协议类型，当前仅支持http/https，不可为空
 
@@ -66,7 +66,7 @@ class HttpDetectRequestBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this HttpDetectRequestBody.
+        r"""Sets the protocol of this HttpDetectRequestBody.
 
         协议类型，当前仅支持http/https，不可为空
 
@@ -77,7 +77,7 @@ class HttpDetectRequestBody:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this HttpDetectRequestBody.
+        r"""Gets the endpoint of this HttpDetectRequestBody.
 
         待探测的终端地址，当前仅支持以http:// 或https://开头，不可为空
 
@@ -88,7 +88,7 @@ class HttpDetectRequestBody:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this HttpDetectRequestBody.
+        r"""Sets the endpoint of this HttpDetectRequestBody.
 
         待探测的终端地址，当前仅支持以http:// 或https://开头，不可为空
 
@@ -99,7 +99,7 @@ class HttpDetectRequestBody:
 
     @property
     def extension(self):
-        """Gets the extension of this HttpDetectRequestBody.
+        r"""Gets the extension of this HttpDetectRequestBody.
 
         :return: The extension of this HttpDetectRequestBody.
         :rtype: :class:`huaweicloudsdksmn.v2.HttpDetectRequestBodyExtension`
@@ -108,7 +108,7 @@ class HttpDetectRequestBody:
 
     @extension.setter
     def extension(self, extension):
-        """Sets the extension of this HttpDetectRequestBody.
+        r"""Sets the extension of this HttpDetectRequestBody.
 
         :param extension: The extension of this HttpDetectRequestBody.
         :type extension: :class:`huaweicloudsdksmn.v2.HttpDetectRequestBodyExtension`

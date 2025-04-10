@@ -43,7 +43,7 @@ class ListDesktopSnapshotRequest:
     }
 
     def __init__(self, desktop_id=None, desktop_name=None, snapshot_name=None, disk_type=None, create_type=None, status=None, sort_field=None, sort_type=None, offset=None, limit=None):
-        """ListDesktopSnapshotRequest
+        r"""ListDesktopSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListDesktopSnapshotRequest.
+        r"""Gets the desktop_id of this ListDesktopSnapshotRequest.
 
         桌面id。
 
@@ -117,7 +117,7 @@ class ListDesktopSnapshotRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListDesktopSnapshotRequest.
+        r"""Sets the desktop_id of this ListDesktopSnapshotRequest.
 
         桌面id。
 
@@ -128,7 +128,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ListDesktopSnapshotRequest.
+        r"""Gets the desktop_name of this ListDesktopSnapshotRequest.
 
         桌面名称。
 
@@ -139,7 +139,7 @@ class ListDesktopSnapshotRequest:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ListDesktopSnapshotRequest.
+        r"""Sets the desktop_name of this ListDesktopSnapshotRequest.
 
         桌面名称。
 
@@ -150,7 +150,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def snapshot_name(self):
-        """Gets the snapshot_name of this ListDesktopSnapshotRequest.
+        r"""Gets the snapshot_name of this ListDesktopSnapshotRequest.
 
         快照名称。
 
@@ -161,7 +161,7 @@ class ListDesktopSnapshotRequest:
 
     @snapshot_name.setter
     def snapshot_name(self, snapshot_name):
-        """Sets the snapshot_name of this ListDesktopSnapshotRequest.
+        r"""Sets the snapshot_name of this ListDesktopSnapshotRequest.
 
         快照名称。
 
@@ -172,7 +172,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def disk_type(self):
-        """Gets the disk_type of this ListDesktopSnapshotRequest.
+        r"""Gets the disk_type of this ListDesktopSnapshotRequest.
 
         快照类型。 - SYSTEM_DISK 系统盘。 - DATA_DISKS 数据盘。 - ALL 系统盘和数据盘。
 
@@ -183,7 +183,7 @@ class ListDesktopSnapshotRequest:
 
     @disk_type.setter
     def disk_type(self, disk_type):
-        """Sets the disk_type of this ListDesktopSnapshotRequest.
+        r"""Sets the disk_type of this ListDesktopSnapshotRequest.
 
         快照类型。 - SYSTEM_DISK 系统盘。 - DATA_DISKS 数据盘。 - ALL 系统盘和数据盘。
 
@@ -194,7 +194,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def create_type(self):
-        """Gets the create_type of this ListDesktopSnapshotRequest.
+        r"""Gets the create_type of this ListDesktopSnapshotRequest.
 
         快照创建类型。 - AUTO 定时任务自动创建。 - MANUALLY 手动创建。
 
@@ -205,7 +205,7 @@ class ListDesktopSnapshotRequest:
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this ListDesktopSnapshotRequest.
+        r"""Sets the create_type of this ListDesktopSnapshotRequest.
 
         快照创建类型。 - AUTO 定时任务自动创建。 - MANUALLY 手动创建。
 
@@ -216,7 +216,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDesktopSnapshotRequest.
+        r"""Gets the status of this ListDesktopSnapshotRequest.
 
         快照状态。 - creating：表示创建中。 - restoring：表示恢复中。 - create_success：表示创建成功。 - create_failed：表示创建快照失败。 - restore_success：表示快照恢复成功。 - restore_failed：表示快照恢复失败。
 
@@ -227,7 +227,7 @@ class ListDesktopSnapshotRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDesktopSnapshotRequest.
+        r"""Sets the status of this ListDesktopSnapshotRequest.
 
         快照状态。 - creating：表示创建中。 - restoring：表示恢复中。 - create_success：表示创建成功。 - create_failed：表示创建快照失败。 - restore_success：表示快照恢复成功。 - restore_failed：表示快照恢复失败。
 
@@ -238,7 +238,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListDesktopSnapshotRequest.
+        r"""Gets the sort_field of this ListDesktopSnapshotRequest.
 
         排序字段名称，需要结合sort_type字段一起使用。 - create_time 创建时间。 - snapshot_name 快照名称。
 
@@ -249,7 +249,7 @@ class ListDesktopSnapshotRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListDesktopSnapshotRequest.
+        r"""Sets the sort_field of this ListDesktopSnapshotRequest.
 
         排序字段名称，需要结合sort_type字段一起使用。 - create_time 创建时间。 - snapshot_name 快照名称。
 
@@ -260,7 +260,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListDesktopSnapshotRequest.
+        r"""Gets the sort_type of this ListDesktopSnapshotRequest.
 
         排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
 
@@ -271,7 +271,7 @@ class ListDesktopSnapshotRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListDesktopSnapshotRequest.
+        r"""Sets the sort_type of this ListDesktopSnapshotRequest.
 
         排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
 
@@ -282,7 +282,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopSnapshotRequest.
+        r"""Gets the offset of this ListDesktopSnapshotRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -293,7 +293,7 @@ class ListDesktopSnapshotRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopSnapshotRequest.
+        r"""Sets the offset of this ListDesktopSnapshotRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -304,7 +304,7 @@ class ListDesktopSnapshotRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopSnapshotRequest.
+        r"""Gets the limit of this ListDesktopSnapshotRequest.
 
         用于分页查询。默认1000,取值范围1-1000。
 
@@ -315,7 +315,7 @@ class ListDesktopSnapshotRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopSnapshotRequest.
+        r"""Sets the limit of this ListDesktopSnapshotRequest.
 
         用于分页查询。默认1000,取值范围1-1000。
 

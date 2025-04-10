@@ -26,7 +26,7 @@ class ShowDedicatedHostResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_host=None):
-        """ShowDedicatedHostResponse
+        r"""ShowDedicatedHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDedicatedHostResponse(SdkResponse):
 
     @property
     def dedicated_host(self):
-        """Gets the dedicated_host of this ShowDedicatedHostResponse.
+        r"""Gets the dedicated_host of this ShowDedicatedHostResponse.
 
         :return: The dedicated_host of this ShowDedicatedHostResponse.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`
@@ -53,7 +53,7 @@ class ShowDedicatedHostResponse(SdkResponse):
 
     @dedicated_host.setter
     def dedicated_host(self, dedicated_host):
-        """Sets the dedicated_host of this ShowDedicatedHostResponse.
+        r"""Sets the dedicated_host of this ShowDedicatedHostResponse.
 
         :param dedicated_host: The dedicated_host of this ShowDedicatedHostResponse.
         :type dedicated_host: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`

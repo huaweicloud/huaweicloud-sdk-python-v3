@@ -35,7 +35,7 @@ class SearchByChecksumRequest:
     }
 
     def __init__(self, checksum=None, page_no=None, page_size=None, format=None, in_project=None, project_id=None):
-        """SearchByChecksumRequest
+        r"""SearchByChecksumRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SearchByChecksumRequest:
 
     @property
     def checksum(self):
-        """Gets the checksum of this SearchByChecksumRequest.
+        r"""Gets the checksum of this SearchByChecksumRequest.
 
         checksum
 
@@ -88,7 +88,7 @@ class SearchByChecksumRequest:
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this SearchByChecksumRequest.
+        r"""Sets the checksum of this SearchByChecksumRequest.
 
         checksum
 
@@ -99,7 +99,7 @@ class SearchByChecksumRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this SearchByChecksumRequest.
+        r"""Gets the page_no of this SearchByChecksumRequest.
 
         页码
 
@@ -110,7 +110,7 @@ class SearchByChecksumRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this SearchByChecksumRequest.
+        r"""Sets the page_no of this SearchByChecksumRequest.
 
         页码
 
@@ -121,7 +121,7 @@ class SearchByChecksumRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this SearchByChecksumRequest.
+        r"""Gets the page_size of this SearchByChecksumRequest.
 
         每页条数
 
@@ -132,7 +132,7 @@ class SearchByChecksumRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this SearchByChecksumRequest.
+        r"""Sets the page_size of this SearchByChecksumRequest.
 
         每页条数
 
@@ -143,7 +143,7 @@ class SearchByChecksumRequest:
 
     @property
     def format(self):
-        """Gets the format of this SearchByChecksumRequest.
+        r"""Gets the format of this SearchByChecksumRequest.
 
         仓库类型
 
@@ -154,7 +154,7 @@ class SearchByChecksumRequest:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this SearchByChecksumRequest.
+        r"""Sets the format of this SearchByChecksumRequest.
 
         仓库类型
 
@@ -165,7 +165,7 @@ class SearchByChecksumRequest:
 
     @property
     def in_project(self):
-        """Gets the in_project of this SearchByChecksumRequest.
+        r"""Gets the in_project of this SearchByChecksumRequest.
 
         是否在项目中
 
@@ -176,7 +176,7 @@ class SearchByChecksumRequest:
 
     @in_project.setter
     def in_project(self, in_project):
-        """Sets the in_project of this SearchByChecksumRequest.
+        r"""Sets the in_project of this SearchByChecksumRequest.
 
         是否在项目中
 
@@ -187,7 +187,7 @@ class SearchByChecksumRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SearchByChecksumRequest.
+        r"""Gets the project_id of this SearchByChecksumRequest.
 
         项目id
 
@@ -198,7 +198,7 @@ class SearchByChecksumRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SearchByChecksumRequest.
+        r"""Sets the project_id of this SearchByChecksumRequest.
 
         项目id
 

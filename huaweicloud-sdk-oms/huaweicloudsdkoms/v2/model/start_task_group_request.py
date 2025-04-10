@@ -27,7 +27,7 @@ class StartTaskGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """StartTaskGroupRequest
+        r"""StartTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartTaskGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this StartTaskGroupRequest.
+        r"""Gets the group_id of this StartTaskGroupRequest.
 
         任务组id
 
@@ -60,7 +60,7 @@ class StartTaskGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this StartTaskGroupRequest.
+        r"""Sets the group_id of this StartTaskGroupRequest.
 
         任务组id
 
@@ -71,7 +71,7 @@ class StartTaskGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartTaskGroupRequest.
+        r"""Gets the body of this StartTaskGroupRequest.
 
         :return: The body of this StartTaskGroupRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskGroupReq`
@@ -80,7 +80,7 @@ class StartTaskGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartTaskGroupRequest.
+        r"""Sets the body of this StartTaskGroupRequest.
 
         :param body: The body of this StartTaskGroupRequest.
         :type body: :class:`huaweicloudsdkoms.v2.StartTaskGroupReq`

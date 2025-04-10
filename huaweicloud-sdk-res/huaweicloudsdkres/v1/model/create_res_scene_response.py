@@ -32,7 +32,7 @@ class CreateResSceneResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, scene=None, error_code=None):
-        """CreateResSceneResponse
+        r"""CreateResSceneResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateResSceneResponse.
+        r"""Gets the is_success of this CreateResSceneResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateResSceneResponse.
+        r"""Sets the is_success of this CreateResSceneResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateResSceneResponse.
+        r"""Gets the message of this CreateResSceneResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -98,7 +98,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateResSceneResponse.
+        r"""Sets the message of this CreateResSceneResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -109,7 +109,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @property
     def scene(self):
-        """Gets the scene of this CreateResSceneResponse.
+        r"""Gets the scene of this CreateResSceneResponse.
 
         :return: The scene of this CreateResSceneResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Scene`
@@ -118,7 +118,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this CreateResSceneResponse.
+        r"""Sets the scene of this CreateResSceneResponse.
 
         :param scene: The scene of this CreateResSceneResponse.
         :type scene: :class:`huaweicloudsdkres.v1.Scene`
@@ -127,7 +127,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateResSceneResponse.
+        r"""Gets the error_code of this CreateResSceneResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -138,7 +138,7 @@ class CreateResSceneResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateResSceneResponse.
+        r"""Sets the error_code of this CreateResSceneResponse.
 
         错误码（请求成功时，不返回此字段）。
 

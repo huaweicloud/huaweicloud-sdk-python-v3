@@ -24,7 +24,7 @@ class DisableLogCollectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisableLogCollectionResponse
+        r"""DisableLogCollectionResponse
 
         The model defined in huaweicloud sdk
 

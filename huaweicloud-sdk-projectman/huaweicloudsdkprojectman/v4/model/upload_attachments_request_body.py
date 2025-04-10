@@ -25,7 +25,7 @@ class UploadAttachmentsRequestBody:
     }
 
     def __init__(self, attachment=None):
-        """UploadAttachmentsRequestBody
+        r"""UploadAttachmentsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadAttachmentsRequestBody:
 
     @property
     def attachment(self):
-        """Gets the attachment of this UploadAttachmentsRequestBody.
+        r"""Gets the attachment of this UploadAttachmentsRequestBody.
 
         附件文件， 最大上传大小为50M
 
@@ -53,7 +53,7 @@ class UploadAttachmentsRequestBody:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this UploadAttachmentsRequestBody.
+        r"""Sets the attachment of this UploadAttachmentsRequestBody.
 
         附件文件， 最大上传大小为50M
 

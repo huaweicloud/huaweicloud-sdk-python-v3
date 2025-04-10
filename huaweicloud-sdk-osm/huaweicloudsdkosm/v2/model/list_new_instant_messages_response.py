@@ -30,7 +30,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
     }
 
     def __init__(self, imstatus=None, immsg=None, last_message_time_id=None):
-        """ListNewInstantMessagesResponse
+        r"""ListNewInstantMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
 
     @property
     def imstatus(self):
-        """Gets the imstatus of this ListNewInstantMessagesResponse.
+        r"""Gets the imstatus of this ListNewInstantMessagesResponse.
 
         状态列表
 
@@ -69,7 +69,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
 
     @imstatus.setter
     def imstatus(self, imstatus):
-        """Sets the imstatus of this ListNewInstantMessagesResponse.
+        r"""Sets the imstatus of this ListNewInstantMessagesResponse.
 
         状态列表
 
@@ -80,7 +80,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
 
     @property
     def immsg(self):
-        """Gets the immsg of this ListNewInstantMessagesResponse.
+        r"""Gets the immsg of this ListNewInstantMessagesResponse.
 
         留言内容列表
 
@@ -91,7 +91,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
 
     @immsg.setter
     def immsg(self, immsg):
-        """Sets the immsg of this ListNewInstantMessagesResponse.
+        r"""Sets the immsg of this ListNewInstantMessagesResponse.
 
         留言内容列表
 
@@ -102,7 +102,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
 
     @property
     def last_message_time_id(self):
-        """Gets the last_message_time_id of this ListNewInstantMessagesResponse.
+        r"""Gets the last_message_time_id of this ListNewInstantMessagesResponse.
 
         上次查询留言时间
 
@@ -113,7 +113,7 @@ class ListNewInstantMessagesResponse(SdkResponse):
 
     @last_message_time_id.setter
     def last_message_time_id(self, last_message_time_id):
-        """Sets the last_message_time_id of this ListNewInstantMessagesResponse.
+        r"""Sets the last_message_time_id of this ListNewInstantMessagesResponse.
 
         上次查询留言时间
 

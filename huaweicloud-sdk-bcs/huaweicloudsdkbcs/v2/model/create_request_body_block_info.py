@@ -29,7 +29,7 @@ class CreateRequestBodyBlockInfo:
     }
 
     def __init__(self, batch_timeout=None, max_message_count=None, preferred_maxbytes=None):
-        """CreateRequestBodyBlockInfo
+        r"""CreateRequestBodyBlockInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateRequestBodyBlockInfo:
 
     @property
     def batch_timeout(self):
-        """Gets the batch_timeout of this CreateRequestBodyBlockInfo.
+        r"""Gets the batch_timeout of this CreateRequestBodyBlockInfo.
 
         区块产生时间（单位：秒），默认2秒
 
@@ -68,7 +68,7 @@ class CreateRequestBodyBlockInfo:
 
     @batch_timeout.setter
     def batch_timeout(self, batch_timeout):
-        """Sets the batch_timeout of this CreateRequestBodyBlockInfo.
+        r"""Sets the batch_timeout of this CreateRequestBodyBlockInfo.
 
         区块产生时间（单位：秒），默认2秒
 
@@ -79,7 +79,7 @@ class CreateRequestBodyBlockInfo:
 
     @property
     def max_message_count(self):
-        """Gets the max_message_count of this CreateRequestBodyBlockInfo.
+        r"""Gets the max_message_count of this CreateRequestBodyBlockInfo.
 
         区块包含交易数量，默认500
 
@@ -90,7 +90,7 @@ class CreateRequestBodyBlockInfo:
 
     @max_message_count.setter
     def max_message_count(self, max_message_count):
-        """Sets the max_message_count of this CreateRequestBodyBlockInfo.
+        r"""Sets the max_message_count of this CreateRequestBodyBlockInfo.
 
         区块包含交易数量，默认500
 
@@ -101,7 +101,7 @@ class CreateRequestBodyBlockInfo:
 
     @property
     def preferred_maxbytes(self):
-        """Gets the preferred_maxbytes of this CreateRequestBodyBlockInfo.
+        r"""Gets the preferred_maxbytes of this CreateRequestBodyBlockInfo.
 
         区块容量（单位：MB），默认2MB
 
@@ -112,7 +112,7 @@ class CreateRequestBodyBlockInfo:
 
     @preferred_maxbytes.setter
     def preferred_maxbytes(self, preferred_maxbytes):
-        """Sets the preferred_maxbytes of this CreateRequestBodyBlockInfo.
+        r"""Sets the preferred_maxbytes of this CreateRequestBodyBlockInfo.
 
         区块容量（单位：MB），默认2MB
 

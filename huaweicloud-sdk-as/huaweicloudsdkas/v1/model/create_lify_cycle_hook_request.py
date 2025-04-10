@@ -27,7 +27,7 @@ class CreateLifyCycleHookRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """CreateLifyCycleHookRequest
+        r"""CreateLifyCycleHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLifyCycleHookRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this CreateLifyCycleHookRequest.
+        r"""Gets the scaling_group_id of this CreateLifyCycleHookRequest.
 
         伸缩组标识。
 
@@ -60,7 +60,7 @@ class CreateLifyCycleHookRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this CreateLifyCycleHookRequest.
+        r"""Sets the scaling_group_id of this CreateLifyCycleHookRequest.
 
         伸缩组标识。
 
@@ -71,7 +71,7 @@ class CreateLifyCycleHookRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLifyCycleHookRequest.
+        r"""Gets the body of this CreateLifyCycleHookRequest.
 
         :return: The body of this CreateLifyCycleHookRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateLifeCycleHookOption`
@@ -80,7 +80,7 @@ class CreateLifyCycleHookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLifyCycleHookRequest.
+        r"""Sets the body of this CreateLifyCycleHookRequest.
 
         :param body: The body of this CreateLifyCycleHookRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateLifeCycleHookOption`

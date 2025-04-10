@@ -25,7 +25,7 @@ class ListGlobalEipCountFilterTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListGlobalEipCountFilterTagsRequest
+        r"""ListGlobalEipCountFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListGlobalEipCountFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListGlobalEipCountFilterTagsRequest.
+        r"""Gets the body of this ListGlobalEipCountFilterTagsRequest.
 
         :return: The body of this ListGlobalEipCountFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListGlobalEipCountFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListGlobalEipCountFilterTagsRequest.
+        r"""Sets the body of this ListGlobalEipCountFilterTagsRequest.
 
         :param body: The body of this ListGlobalEipCountFilterTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`

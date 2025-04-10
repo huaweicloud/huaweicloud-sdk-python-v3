@@ -25,7 +25,7 @@ class CreateOrDelAgencyEpPolicyAssignmentReqBody:
     }
 
     def __init__(self, role_assignments=None):
-        """CreateOrDelAgencyEpPolicyAssignmentReqBody
+        r"""CreateOrDelAgencyEpPolicyAssignmentReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateOrDelAgencyEpPolicyAssignmentReqBody:
 
     @property
     def role_assignments(self):
-        """Gets the role_assignments of this CreateOrDelAgencyEpPolicyAssignmentReqBody.
+        r"""Gets the role_assignments of this CreateOrDelAgencyEpPolicyAssignmentReqBody.
 
         委托在企业项目上的绑定关系，最多支持250条。
 
@@ -53,7 +53,7 @@ class CreateOrDelAgencyEpPolicyAssignmentReqBody:
 
     @role_assignments.setter
     def role_assignments(self, role_assignments):
-        """Sets the role_assignments of this CreateOrDelAgencyEpPolicyAssignmentReqBody.
+        r"""Sets the role_assignments of this CreateOrDelAgencyEpPolicyAssignmentReqBody.
 
         委托在企业项目上的绑定关系，最多支持250条。
 

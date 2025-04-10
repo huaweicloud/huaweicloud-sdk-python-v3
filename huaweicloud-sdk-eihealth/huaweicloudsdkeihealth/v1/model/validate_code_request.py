@@ -27,7 +27,7 @@ class ValidateCodeRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """ValidateCodeRequest
+        r"""ValidateCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ValidateCodeRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ValidateCodeRequest.
+        r"""Gets the user_id of this ValidateCodeRequest.
 
         用户id
 
@@ -60,7 +60,7 @@ class ValidateCodeRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ValidateCodeRequest.
+        r"""Sets the user_id of this ValidateCodeRequest.
 
         用户id
 
@@ -71,7 +71,7 @@ class ValidateCodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateCodeRequest.
+        r"""Gets the body of this ValidateCodeRequest.
 
         :return: The body of this ValidateCodeRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CodeVerifyReq`
@@ -80,7 +80,7 @@ class ValidateCodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateCodeRequest.
+        r"""Sets the body of this ValidateCodeRequest.
 
         :param body: The body of this ValidateCodeRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CodeVerifyReq`

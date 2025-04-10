@@ -31,7 +31,7 @@ class ExportCertificateRequestBody:
     }
 
     def __init__(self, is_compressed=None, type=None, is_sm_standard=None, password=None):
-        """ExportCertificateRequestBody
+        r"""ExportCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ExportCertificateRequestBody:
 
     @property
     def is_compressed(self):
-        """Gets the is_compressed of this ExportCertificateRequestBody.
+        r"""Gets the is_compressed of this ExportCertificateRequestBody.
 
         是否压缩。   - **true**   - **false**
 
@@ -73,7 +73,7 @@ class ExportCertificateRequestBody:
 
     @is_compressed.setter
     def is_compressed(self, is_compressed):
-        """Sets the is_compressed of this ExportCertificateRequestBody.
+        r"""Sets the is_compressed of this ExportCertificateRequestBody.
 
         是否压缩。   - **true**   - **false**
 
@@ -84,7 +84,7 @@ class ExportCertificateRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this ExportCertificateRequestBody.
+        r"""Gets the type of this ExportCertificateRequestBody.
 
         根据服务器类型选择下载证书的形式，支持以下五种类型：   - **APACHE** : apache服务器推荐使用此参数；   - **NGINX** : nginx服务器推荐使用此参数；   - **IIS** : windows服务器推荐使用此参数；   - **TOMCAT** : tomcat服务器推荐使用此参数；   - **OTHER** : 下载PEM格式证书，推荐使用此参数。
 
@@ -95,7 +95,7 @@ class ExportCertificateRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExportCertificateRequestBody.
+        r"""Sets the type of this ExportCertificateRequestBody.
 
         根据服务器类型选择下载证书的形式，支持以下五种类型：   - **APACHE** : apache服务器推荐使用此参数；   - **NGINX** : nginx服务器推荐使用此参数；   - **IIS** : windows服务器推荐使用此参数；   - **TOMCAT** : tomcat服务器推荐使用此参数；   - **OTHER** : 下载PEM格式证书，推荐使用此参数。
 
@@ -106,7 +106,7 @@ class ExportCertificateRequestBody:
 
     @property
     def is_sm_standard(self):
-        """Gets the is_sm_standard of this ExportCertificateRequestBody.
+        r"""Gets the is_sm_standard of this ExportCertificateRequestBody.
 
         是否国密GMT0009标准规范和国密GMT0010标准规范。当证书算法为SM2时传入才有效，若不传入，则默认为false。   - **true**   - **false**
 
@@ -117,7 +117,7 @@ class ExportCertificateRequestBody:
 
     @is_sm_standard.setter
     def is_sm_standard(self, is_sm_standard):
-        """Sets the is_sm_standard of this ExportCertificateRequestBody.
+        r"""Sets the is_sm_standard of this ExportCertificateRequestBody.
 
         是否国密GMT0009标准规范和国密GMT0010标准规范。当证书算法为SM2时传入才有效，若不传入，则默认为false。   - **true**   - **false**
 
@@ -128,7 +128,7 @@ class ExportCertificateRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this ExportCertificateRequestBody.
+        r"""Gets the password of this ExportCertificateRequestBody.
 
         设置用于加密私钥的密码。支持使用英文大小写字母、数字、特殊字符（例如,.+-_#）等。最大长度为32字节，若不传入，则默认不使用加密导出。
 
@@ -139,7 +139,7 @@ class ExportCertificateRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ExportCertificateRequestBody.
+        r"""Sets the password of this ExportCertificateRequestBody.
 
         设置用于加密私钥的密码。支持使用英文大小写字母、数字、特殊字符（例如,.+-_#）等。最大长度为32字节，若不传入，则默认不使用加密导出。
 

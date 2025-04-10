@@ -27,7 +27,7 @@ class BatchDeleteV2RequestBody:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """BatchDeleteV2RequestBody
+        r"""BatchDeleteV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteV2RequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteV2RequestBody.
+        r"""Gets the tags of this BatchDeleteV2RequestBody.
 
         全域弹性公网IP标签
 
@@ -60,7 +60,7 @@ class BatchDeleteV2RequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteV2RequestBody.
+        r"""Sets the tags of this BatchDeleteV2RequestBody.
 
         全域弹性公网IP标签
 
@@ -71,7 +71,7 @@ class BatchDeleteV2RequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this BatchDeleteV2RequestBody.
+        r"""Gets the sys_tags of this BatchDeleteV2RequestBody.
 
         系统标签
 
@@ -82,7 +82,7 @@ class BatchDeleteV2RequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchDeleteV2RequestBody.
+        r"""Sets the sys_tags of this BatchDeleteV2RequestBody.
 
         系统标签
 

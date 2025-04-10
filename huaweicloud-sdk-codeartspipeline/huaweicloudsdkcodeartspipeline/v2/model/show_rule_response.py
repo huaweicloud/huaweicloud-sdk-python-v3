@@ -50,7 +50,7 @@ class ShowRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, name=None, version=None, layout_content=None, plugin_id=None, plugin_name=None, plugin_version=None, creator=None, create_time=None, updater=None, update_time=None, content=None):
-        """ShowRuleResponse
+        r"""ShowRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowRuleResponse.
+        r"""Gets the id of this ShowRuleResponse.
 
         规则ID
 
@@ -139,7 +139,7 @@ class ShowRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRuleResponse.
+        r"""Sets the id of this ShowRuleResponse.
 
         规则ID
 
@@ -150,7 +150,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowRuleResponse.
+        r"""Gets the type of this ShowRuleResponse.
 
         规则类型
 
@@ -161,7 +161,7 @@ class ShowRuleResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowRuleResponse.
+        r"""Sets the type of this ShowRuleResponse.
 
         规则类型
 
@@ -172,7 +172,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowRuleResponse.
+        r"""Gets the name of this ShowRuleResponse.
 
         规则名称
 
@@ -183,7 +183,7 @@ class ShowRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowRuleResponse.
+        r"""Sets the name of this ShowRuleResponse.
 
         规则名称
 
@@ -194,7 +194,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowRuleResponse.
+        r"""Gets the version of this ShowRuleResponse.
 
         规则版本
 
@@ -205,7 +205,7 @@ class ShowRuleResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowRuleResponse.
+        r"""Sets the version of this ShowRuleResponse.
 
         规则版本
 
@@ -216,7 +216,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def layout_content(self):
-        """Gets the layout_content of this ShowRuleResponse.
+        r"""Gets the layout_content of this ShowRuleResponse.
 
         布局内容
 
@@ -227,7 +227,7 @@ class ShowRuleResponse(SdkResponse):
 
     @layout_content.setter
     def layout_content(self, layout_content):
-        """Sets the layout_content of this ShowRuleResponse.
+        r"""Sets the layout_content of this ShowRuleResponse.
 
         布局内容
 
@@ -238,7 +238,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this ShowRuleResponse.
+        r"""Gets the plugin_id of this ShowRuleResponse.
 
         插件ID
 
@@ -249,7 +249,7 @@ class ShowRuleResponse(SdkResponse):
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this ShowRuleResponse.
+        r"""Sets the plugin_id of this ShowRuleResponse.
 
         插件ID
 
@@ -260,7 +260,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ShowRuleResponse.
+        r"""Gets the plugin_name of this ShowRuleResponse.
 
         插件名称
 
@@ -271,7 +271,7 @@ class ShowRuleResponse(SdkResponse):
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ShowRuleResponse.
+        r"""Sets the plugin_name of this ShowRuleResponse.
 
         插件名称
 
@@ -282,7 +282,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def plugin_version(self):
-        """Gets the plugin_version of this ShowRuleResponse.
+        r"""Gets the plugin_version of this ShowRuleResponse.
 
         插件版本号
 
@@ -293,7 +293,7 @@ class ShowRuleResponse(SdkResponse):
 
     @plugin_version.setter
     def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this ShowRuleResponse.
+        r"""Sets the plugin_version of this ShowRuleResponse.
 
         插件版本号
 
@@ -304,7 +304,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowRuleResponse.
+        r"""Gets the creator of this ShowRuleResponse.
 
         创建人
 
@@ -315,7 +315,7 @@ class ShowRuleResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowRuleResponse.
+        r"""Sets the creator of this ShowRuleResponse.
 
         创建人
 
@@ -326,7 +326,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowRuleResponse.
+        r"""Gets the create_time of this ShowRuleResponse.
 
         创建时间
 
@@ -337,7 +337,7 @@ class ShowRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowRuleResponse.
+        r"""Sets the create_time of this ShowRuleResponse.
 
         创建时间
 
@@ -348,7 +348,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def updater(self):
-        """Gets the updater of this ShowRuleResponse.
+        r"""Gets the updater of this ShowRuleResponse.
 
         更新人
 
@@ -359,7 +359,7 @@ class ShowRuleResponse(SdkResponse):
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this ShowRuleResponse.
+        r"""Sets the updater of this ShowRuleResponse.
 
         更新人
 
@@ -370,7 +370,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowRuleResponse.
+        r"""Gets the update_time of this ShowRuleResponse.
 
         更新时间
 
@@ -381,7 +381,7 @@ class ShowRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowRuleResponse.
+        r"""Sets the update_time of this ShowRuleResponse.
 
         更新时间
 
@@ -392,7 +392,7 @@ class ShowRuleResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowRuleResponse.
+        r"""Gets the content of this ShowRuleResponse.
 
         规则属性列表
 
@@ -403,7 +403,7 @@ class ShowRuleResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowRuleResponse.
+        r"""Sets the content of this ShowRuleResponse.
 
         规则属性列表
 

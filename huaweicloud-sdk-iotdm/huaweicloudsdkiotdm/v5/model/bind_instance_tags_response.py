@@ -26,7 +26,7 @@ class BindInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BindInstanceTagsResponse
+        r"""BindInstanceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BindInstanceTagsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BindInstanceTagsResponse.
+        r"""Gets the body of this BindInstanceTagsResponse.
 
         :return: The body of this BindInstanceTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BindInstanceTagsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BindInstanceTagsResponse.
+        r"""Sets the body of this BindInstanceTagsResponse.
 
         :param body: The body of this BindInstanceTagsResponse.
         :type body: str

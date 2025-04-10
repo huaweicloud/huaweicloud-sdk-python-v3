@@ -29,7 +29,7 @@ class ErrorSample:
     }
 
     def __init__(self, source=None, count=None, msg=None):
-        """ErrorSample
+        r"""ErrorSample
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ErrorSample:
 
     @property
     def source(self):
-        """Gets the source of this ErrorSample.
+        r"""Gets the source of this ErrorSample.
 
         检测源描述。
 
@@ -67,7 +67,7 @@ class ErrorSample:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ErrorSample.
+        r"""Sets the source of this ErrorSample.
 
         检测源描述。
 
@@ -78,7 +78,7 @@ class ErrorSample:
 
     @property
     def count(self):
-        """Gets the count of this ErrorSample.
+        r"""Gets the count of this ErrorSample.
 
         此错误共计次数。
 
@@ -89,7 +89,7 @@ class ErrorSample:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ErrorSample.
+        r"""Sets the count of this ErrorSample.
 
         此错误共计次数。
 
@@ -100,7 +100,7 @@ class ErrorSample:
 
     @property
     def msg(self):
-        """Gets the msg of this ErrorSample.
+        r"""Gets the msg of this ErrorSample.
 
         错误数据和错误提示消息。
 
@@ -111,7 +111,7 @@ class ErrorSample:
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ErrorSample.
+        r"""Sets the msg of this ErrorSample.
 
         错误数据和错误提示消息。
 

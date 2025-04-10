@@ -35,7 +35,7 @@ class QueryDeviceTypeResultDTO:
     }
 
     def __init__(self, type=None, model=None, enable_active_code=None, resolution=None, support_projection_code=None, support_svc=None):
-        """QueryDeviceTypeResultDTO
+        r"""QueryDeviceTypeResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryDeviceTypeResultDTO:
 
     @property
     def type(self):
-        """Gets the type of this QueryDeviceTypeResultDTO.
+        r"""Gets the type of this QueryDeviceTypeResultDTO.
 
         终端类型，区分自研和第三方终端。 * TE：华为自研硬终端 * 3rd：第三方硬终端 
 
@@ -89,7 +89,7 @@ class QueryDeviceTypeResultDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryDeviceTypeResultDTO.
+        r"""Sets the type of this QueryDeviceTypeResultDTO.
 
         终端类型，区分自研和第三方终端。 * TE：华为自研硬终端 * 3rd：第三方硬终端 
 
@@ -100,7 +100,7 @@ class QueryDeviceTypeResultDTO:
 
     @property
     def model(self):
-        """Gets the model of this QueryDeviceTypeResultDTO.
+        r"""Gets the model of this QueryDeviceTypeResultDTO.
 
         终端型号，枚举类型。 * TE10 * TE20 * TE30 * TE40 * TE50 * TE60 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Box 600 * HUAWEI Box 700 * HUAWEI Box 900 * DP300 * HUAWEI Box 200 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Board * polycomcisco 
 
@@ -111,7 +111,7 @@ class QueryDeviceTypeResultDTO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this QueryDeviceTypeResultDTO.
+        r"""Sets the model of this QueryDeviceTypeResultDTO.
 
         终端型号，枚举类型。 * TE10 * TE20 * TE30 * TE40 * TE50 * TE60 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Box 600 * HUAWEI Box 700 * HUAWEI Box 900 * DP300 * HUAWEI Box 200 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Board * polycomcisco 
 
@@ -122,7 +122,7 @@ class QueryDeviceTypeResultDTO:
 
     @property
     def enable_active_code(self):
-        """Gets the enable_active_code of this QueryDeviceTypeResultDTO.
+        r"""Gets the enable_active_code of this QueryDeviceTypeResultDTO.
 
         是否支持激活码。
 
@@ -133,7 +133,7 @@ class QueryDeviceTypeResultDTO:
 
     @enable_active_code.setter
     def enable_active_code(self, enable_active_code):
-        """Sets the enable_active_code of this QueryDeviceTypeResultDTO.
+        r"""Sets the enable_active_code of this QueryDeviceTypeResultDTO.
 
         是否支持激活码。
 
@@ -144,7 +144,7 @@ class QueryDeviceTypeResultDTO:
 
     @property
     def resolution(self):
-        """Gets the resolution of this QueryDeviceTypeResultDTO.
+        r"""Gets the resolution of this QueryDeviceTypeResultDTO.
 
         屏幕分辨率。1080P、720P等。
 
@@ -155,7 +155,7 @@ class QueryDeviceTypeResultDTO:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this QueryDeviceTypeResultDTO.
+        r"""Sets the resolution of this QueryDeviceTypeResultDTO.
 
         屏幕分辨率。1080P、720P等。
 
@@ -166,7 +166,7 @@ class QueryDeviceTypeResultDTO:
 
     @property
     def support_projection_code(self):
-        """Gets the support_projection_code of this QueryDeviceTypeResultDTO.
+        r"""Gets the support_projection_code of this QueryDeviceTypeResultDTO.
 
         是否支持投影码。
 
@@ -177,7 +177,7 @@ class QueryDeviceTypeResultDTO:
 
     @support_projection_code.setter
     def support_projection_code(self, support_projection_code):
-        """Sets the support_projection_code of this QueryDeviceTypeResultDTO.
+        r"""Sets the support_projection_code of this QueryDeviceTypeResultDTO.
 
         是否支持投影码。
 
@@ -188,7 +188,7 @@ class QueryDeviceTypeResultDTO:
 
     @property
     def support_svc(self):
-        """Gets the support_svc of this QueryDeviceTypeResultDTO.
+        r"""Gets the support_svc of this QueryDeviceTypeResultDTO.
 
         是否支持SVC。
 
@@ -199,7 +199,7 @@ class QueryDeviceTypeResultDTO:
 
     @support_svc.setter
     def support_svc(self, support_svc):
-        """Sets the support_svc of this QueryDeviceTypeResultDTO.
+        r"""Sets the support_svc of this QueryDeviceTypeResultDTO.
 
         是否支持SVC。
 

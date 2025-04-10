@@ -28,7 +28,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
     }
 
     def __init__(self, preoccupy_ip=None, request_id=None):
-        """CountPreoccupyIpNumResponse
+        r"""CountPreoccupyIpNumResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
 
     @property
     def preoccupy_ip(self):
-        """Gets the preoccupy_ip of this CountPreoccupyIpNumResponse.
+        r"""Gets the preoccupy_ip of this CountPreoccupyIpNumResponse.
 
         :return: The preoccupy_ip of this CountPreoccupyIpNumResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PreoccupyIp`
@@ -60,7 +60,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
 
     @preoccupy_ip.setter
     def preoccupy_ip(self, preoccupy_ip):
-        """Sets the preoccupy_ip of this CountPreoccupyIpNumResponse.
+        r"""Sets the preoccupy_ip of this CountPreoccupyIpNumResponse.
 
         :param preoccupy_ip: The preoccupy_ip of this CountPreoccupyIpNumResponse.
         :type preoccupy_ip: :class:`huaweicloudsdkelb.v3.PreoccupyIp`
@@ -69,7 +69,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CountPreoccupyIpNumResponse.
+        r"""Gets the request_id of this CountPreoccupyIpNumResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CountPreoccupyIpNumResponse.
+        r"""Sets the request_id of this CountPreoccupyIpNumResponse.
 
         请求ID。  注：自动生成 。
 

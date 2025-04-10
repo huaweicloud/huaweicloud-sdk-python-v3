@@ -45,7 +45,7 @@ class OrganizationPolicy:
     }
 
     def __init__(self, id=None, name=None, description=None, operation_type=None, domain_id=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None, status=None, domain_name=None):
-        """OrganizationPolicy
+        r"""OrganizationPolicy
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class OrganizationPolicy:
 
     @property
     def id(self):
-        """Gets the id of this OrganizationPolicy.
+        r"""Gets the id of this OrganizationPolicy.
 
         组织策略ID
 
@@ -115,7 +115,7 @@ class OrganizationPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrganizationPolicy.
+        r"""Sets the id of this OrganizationPolicy.
 
         组织策略ID
 
@@ -126,7 +126,7 @@ class OrganizationPolicy:
 
     @property
     def name(self):
-        """Gets the name of this OrganizationPolicy.
+        r"""Gets the name of this OrganizationPolicy.
 
         组织策略名称
 
@@ -137,7 +137,7 @@ class OrganizationPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrganizationPolicy.
+        r"""Sets the name of this OrganizationPolicy.
 
         组织策略名称
 
@@ -148,7 +148,7 @@ class OrganizationPolicy:
 
     @property
     def description(self):
-        """Gets the description of this OrganizationPolicy.
+        r"""Gets the description of this OrganizationPolicy.
 
         组织策略描述
 
@@ -159,7 +159,7 @@ class OrganizationPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OrganizationPolicy.
+        r"""Sets the description of this OrganizationPolicy.
 
         组织策略描述
 
@@ -170,7 +170,7 @@ class OrganizationPolicy:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this OrganizationPolicy.
+        r"""Gets the operation_type of this OrganizationPolicy.
 
         组织策略类型 - backup: 备份 -  replication: 复制
 
@@ -181,7 +181,7 @@ class OrganizationPolicy:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this OrganizationPolicy.
+        r"""Sets the operation_type of this OrganizationPolicy.
 
         组织策略类型 - backup: 备份 -  replication: 复制
 
@@ -192,7 +192,7 @@ class OrganizationPolicy:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this OrganizationPolicy.
+        r"""Gets the domain_id of this OrganizationPolicy.
 
         组织策略所属账号ID
 
@@ -203,7 +203,7 @@ class OrganizationPolicy:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this OrganizationPolicy.
+        r"""Sets the domain_id of this OrganizationPolicy.
 
         组织策略所属账号ID
 
@@ -214,7 +214,7 @@ class OrganizationPolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this OrganizationPolicy.
+        r"""Gets the policy_name of this OrganizationPolicy.
 
         策略名称
 
@@ -225,7 +225,7 @@ class OrganizationPolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this OrganizationPolicy.
+        r"""Sets the policy_name of this OrganizationPolicy.
 
         策略名称
 
@@ -236,7 +236,7 @@ class OrganizationPolicy:
 
     @property
     def policy_enabled(self):
-        """Gets the policy_enabled of this OrganizationPolicy.
+        r"""Gets the policy_enabled of this OrganizationPolicy.
 
         策略是否开启
 
@@ -247,7 +247,7 @@ class OrganizationPolicy:
 
     @policy_enabled.setter
     def policy_enabled(self, policy_enabled):
-        """Sets the policy_enabled of this OrganizationPolicy.
+        r"""Sets the policy_enabled of this OrganizationPolicy.
 
         策略是否开启
 
@@ -258,7 +258,7 @@ class OrganizationPolicy:
 
     @property
     def policy_operation_definition(self):
-        """Gets the policy_operation_definition of this OrganizationPolicy.
+        r"""Gets the policy_operation_definition of this OrganizationPolicy.
 
         :return: The policy_operation_definition of this OrganizationPolicy.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -267,7 +267,7 @@ class OrganizationPolicy:
 
     @policy_operation_definition.setter
     def policy_operation_definition(self, policy_operation_definition):
-        """Sets the policy_operation_definition of this OrganizationPolicy.
+        r"""Sets the policy_operation_definition of this OrganizationPolicy.
 
         :param policy_operation_definition: The policy_operation_definition of this OrganizationPolicy.
         :type policy_operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -276,7 +276,7 @@ class OrganizationPolicy:
 
     @property
     def policy_trigger(self):
-        """Gets the policy_trigger of this OrganizationPolicy.
+        r"""Gets the policy_trigger of this OrganizationPolicy.
 
         :return: The policy_trigger of this OrganizationPolicy.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
@@ -285,7 +285,7 @@ class OrganizationPolicy:
 
     @policy_trigger.setter
     def policy_trigger(self, policy_trigger):
-        """Sets the policy_trigger of this OrganizationPolicy.
+        r"""Sets the policy_trigger of this OrganizationPolicy.
 
         :param policy_trigger: The policy_trigger of this OrganizationPolicy.
         :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
@@ -294,7 +294,7 @@ class OrganizationPolicy:
 
     @property
     def status(self):
-        """Gets the status of this OrganizationPolicy.
+        r"""Gets the status of this OrganizationPolicy.
 
         组织策略状态
 
@@ -305,7 +305,7 @@ class OrganizationPolicy:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OrganizationPolicy.
+        r"""Sets the status of this OrganizationPolicy.
 
         组织策略状态
 
@@ -316,7 +316,7 @@ class OrganizationPolicy:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this OrganizationPolicy.
+        r"""Gets the domain_name of this OrganizationPolicy.
 
         组织策略所属账号
 
@@ -327,7 +327,7 @@ class OrganizationPolicy:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this OrganizationPolicy.
+        r"""Sets the domain_name of this OrganizationPolicy.
 
         组织策略所属账号
 

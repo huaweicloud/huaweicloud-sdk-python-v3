@@ -26,7 +26,7 @@ class CreatePreheatingAssetResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreatePreheatingAssetResponse
+        r"""CreatePreheatingAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePreheatingAssetResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreatePreheatingAssetResponse.
+        r"""Gets the task_id of this CreatePreheatingAssetResponse.
 
         预热任务ID。
 
@@ -55,7 +55,7 @@ class CreatePreheatingAssetResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreatePreheatingAssetResponse.
+        r"""Sets the task_id of this CreatePreheatingAssetResponse.
 
         预热任务ID。
 

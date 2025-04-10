@@ -57,7 +57,7 @@ class TableLineageInfo:
     }
 
     def __init__(self, source_guid=None, source_qualified_name=None, source_type=None, source_db=None, source_schema=None, source_table=None, target_guid=None, target_qualified_name=None, target_type=None, target_db=None, target_schema=None, target_table=None, node_guid=None, node_name=None, node_type=None, node_qualified_name=None, workspace_id=None):
-        """TableLineageInfo
+        r"""TableLineageInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class TableLineageInfo:
 
     @property
     def source_guid(self):
-        """Gets the source_guid of this TableLineageInfo.
+        r"""Gets the source_guid of this TableLineageInfo.
 
         上游血缘资产guid
 
@@ -166,7 +166,7 @@ class TableLineageInfo:
 
     @source_guid.setter
     def source_guid(self, source_guid):
-        """Sets the source_guid of this TableLineageInfo.
+        r"""Sets the source_guid of this TableLineageInfo.
 
         上游血缘资产guid
 
@@ -177,7 +177,7 @@ class TableLineageInfo:
 
     @property
     def source_qualified_name(self):
-        """Gets the source_qualified_name of this TableLineageInfo.
+        r"""Gets the source_qualified_name of this TableLineageInfo.
 
         上游血缘资产Qname
 
@@ -188,7 +188,7 @@ class TableLineageInfo:
 
     @source_qualified_name.setter
     def source_qualified_name(self, source_qualified_name):
-        """Sets the source_qualified_name of this TableLineageInfo.
+        r"""Sets the source_qualified_name of this TableLineageInfo.
 
         上游血缘资产Qname
 
@@ -199,7 +199,7 @@ class TableLineageInfo:
 
     @property
     def source_type(self):
-        """Gets the source_type of this TableLineageInfo.
+        r"""Gets the source_type of this TableLineageInfo.
 
         上游血缘资产类型
 
@@ -210,7 +210,7 @@ class TableLineageInfo:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this TableLineageInfo.
+        r"""Sets the source_type of this TableLineageInfo.
 
         上游血缘资产类型
 
@@ -221,7 +221,7 @@ class TableLineageInfo:
 
     @property
     def source_db(self):
-        """Gets the source_db of this TableLineageInfo.
+        r"""Gets the source_db of this TableLineageInfo.
 
         上游血缘资产数据库
 
@@ -232,7 +232,7 @@ class TableLineageInfo:
 
     @source_db.setter
     def source_db(self, source_db):
-        """Sets the source_db of this TableLineageInfo.
+        r"""Sets the source_db of this TableLineageInfo.
 
         上游血缘资产数据库
 
@@ -243,7 +243,7 @@ class TableLineageInfo:
 
     @property
     def source_schema(self):
-        """Gets the source_schema of this TableLineageInfo.
+        r"""Gets the source_schema of this TableLineageInfo.
 
         上游血缘资产逻辑库
 
@@ -254,7 +254,7 @@ class TableLineageInfo:
 
     @source_schema.setter
     def source_schema(self, source_schema):
-        """Sets the source_schema of this TableLineageInfo.
+        r"""Sets the source_schema of this TableLineageInfo.
 
         上游血缘资产逻辑库
 
@@ -265,7 +265,7 @@ class TableLineageInfo:
 
     @property
     def source_table(self):
-        """Gets the source_table of this TableLineageInfo.
+        r"""Gets the source_table of this TableLineageInfo.
 
         上游血缘资产表
 
@@ -276,7 +276,7 @@ class TableLineageInfo:
 
     @source_table.setter
     def source_table(self, source_table):
-        """Sets the source_table of this TableLineageInfo.
+        r"""Sets the source_table of this TableLineageInfo.
 
         上游血缘资产表
 
@@ -287,7 +287,7 @@ class TableLineageInfo:
 
     @property
     def target_guid(self):
-        """Gets the target_guid of this TableLineageInfo.
+        r"""Gets the target_guid of this TableLineageInfo.
 
         下游血缘资产guid
 
@@ -298,7 +298,7 @@ class TableLineageInfo:
 
     @target_guid.setter
     def target_guid(self, target_guid):
-        """Sets the target_guid of this TableLineageInfo.
+        r"""Sets the target_guid of this TableLineageInfo.
 
         下游血缘资产guid
 
@@ -309,7 +309,7 @@ class TableLineageInfo:
 
     @property
     def target_qualified_name(self):
-        """Gets the target_qualified_name of this TableLineageInfo.
+        r"""Gets the target_qualified_name of this TableLineageInfo.
 
         下游血缘资产Qname
 
@@ -320,7 +320,7 @@ class TableLineageInfo:
 
     @target_qualified_name.setter
     def target_qualified_name(self, target_qualified_name):
-        """Sets the target_qualified_name of this TableLineageInfo.
+        r"""Sets the target_qualified_name of this TableLineageInfo.
 
         下游血缘资产Qname
 
@@ -331,7 +331,7 @@ class TableLineageInfo:
 
     @property
     def target_type(self):
-        """Gets the target_type of this TableLineageInfo.
+        r"""Gets the target_type of this TableLineageInfo.
 
         下游血缘资产类型
 
@@ -342,7 +342,7 @@ class TableLineageInfo:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this TableLineageInfo.
+        r"""Sets the target_type of this TableLineageInfo.
 
         下游血缘资产类型
 
@@ -353,7 +353,7 @@ class TableLineageInfo:
 
     @property
     def target_db(self):
-        """Gets the target_db of this TableLineageInfo.
+        r"""Gets the target_db of this TableLineageInfo.
 
         下游血缘资产数据库
 
@@ -364,7 +364,7 @@ class TableLineageInfo:
 
     @target_db.setter
     def target_db(self, target_db):
-        """Sets the target_db of this TableLineageInfo.
+        r"""Sets the target_db of this TableLineageInfo.
 
         下游血缘资产数据库
 
@@ -375,7 +375,7 @@ class TableLineageInfo:
 
     @property
     def target_schema(self):
-        """Gets the target_schema of this TableLineageInfo.
+        r"""Gets the target_schema of this TableLineageInfo.
 
         下游血缘资产逻辑库
 
@@ -386,7 +386,7 @@ class TableLineageInfo:
 
     @target_schema.setter
     def target_schema(self, target_schema):
-        """Sets the target_schema of this TableLineageInfo.
+        r"""Sets the target_schema of this TableLineageInfo.
 
         下游血缘资产逻辑库
 
@@ -397,7 +397,7 @@ class TableLineageInfo:
 
     @property
     def target_table(self):
-        """Gets the target_table of this TableLineageInfo.
+        r"""Gets the target_table of this TableLineageInfo.
 
         下游血缘资产表
 
@@ -408,7 +408,7 @@ class TableLineageInfo:
 
     @target_table.setter
     def target_table(self, target_table):
-        """Sets the target_table of this TableLineageInfo.
+        r"""Sets the target_table of this TableLineageInfo.
 
         下游血缘资产表
 
@@ -419,7 +419,7 @@ class TableLineageInfo:
 
     @property
     def node_guid(self):
-        """Gets the node_guid of this TableLineageInfo.
+        r"""Gets the node_guid of this TableLineageInfo.
 
         作业算子guid
 
@@ -430,7 +430,7 @@ class TableLineageInfo:
 
     @node_guid.setter
     def node_guid(self, node_guid):
-        """Sets the node_guid of this TableLineageInfo.
+        r"""Sets the node_guid of this TableLineageInfo.
 
         作业算子guid
 
@@ -441,7 +441,7 @@ class TableLineageInfo:
 
     @property
     def node_name(self):
-        """Gets the node_name of this TableLineageInfo.
+        r"""Gets the node_name of this TableLineageInfo.
 
         作业算子名称
 
@@ -452,7 +452,7 @@ class TableLineageInfo:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this TableLineageInfo.
+        r"""Sets the node_name of this TableLineageInfo.
 
         作业算子名称
 
@@ -463,7 +463,7 @@ class TableLineageInfo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this TableLineageInfo.
+        r"""Gets the node_type of this TableLineageInfo.
 
         作业算子类型
 
@@ -474,7 +474,7 @@ class TableLineageInfo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this TableLineageInfo.
+        r"""Sets the node_type of this TableLineageInfo.
 
         作业算子类型
 
@@ -485,7 +485,7 @@ class TableLineageInfo:
 
     @property
     def node_qualified_name(self):
-        """Gets the node_qualified_name of this TableLineageInfo.
+        r"""Gets the node_qualified_name of this TableLineageInfo.
 
         作业算子Qname
 
@@ -496,7 +496,7 @@ class TableLineageInfo:
 
     @node_qualified_name.setter
     def node_qualified_name(self, node_qualified_name):
-        """Sets the node_qualified_name of this TableLineageInfo.
+        r"""Sets the node_qualified_name of this TableLineageInfo.
 
         作业算子Qname
 
@@ -507,7 +507,7 @@ class TableLineageInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this TableLineageInfo.
+        r"""Gets the workspace_id of this TableLineageInfo.
 
         作业算子类型所属空间
 
@@ -518,7 +518,7 @@ class TableLineageInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this TableLineageInfo.
+        r"""Sets the workspace_id of this TableLineageInfo.
 
         作业算子类型所属空间
 

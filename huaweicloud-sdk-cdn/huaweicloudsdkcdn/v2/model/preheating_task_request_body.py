@@ -27,7 +27,7 @@ class PreheatingTaskRequestBody:
     }
 
     def __init__(self, zh_url_encode=None, urls=None):
-        """PreheatingTaskRequestBody
+        r"""PreheatingTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PreheatingTaskRequestBody:
 
     @property
     def zh_url_encode(self):
-        """Gets the zh_url_encode of this PreheatingTaskRequestBody.
+        r"""Gets the zh_url_encode of this PreheatingTaskRequestBody.
 
         是否对url中的中文字符进行编码后预热，false代表不开启，true代表开启，开启后仅预热转码后的URL。
 
@@ -60,7 +60,7 @@ class PreheatingTaskRequestBody:
 
     @zh_url_encode.setter
     def zh_url_encode(self, zh_url_encode):
-        """Sets the zh_url_encode of this PreheatingTaskRequestBody.
+        r"""Sets the zh_url_encode of this PreheatingTaskRequestBody.
 
         是否对url中的中文字符进行编码后预热，false代表不开启，true代表开启，开启后仅预热转码后的URL。
 
@@ -71,7 +71,7 @@ class PreheatingTaskRequestBody:
 
     @property
     def urls(self):
-        """Gets the urls of this PreheatingTaskRequestBody.
+        r"""Gets the urls of this PreheatingTaskRequestBody.
 
         需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\", \"url2\"），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
 
@@ -82,7 +82,7 @@ class PreheatingTaskRequestBody:
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this PreheatingTaskRequestBody.
+        r"""Sets the urls of this PreheatingTaskRequestBody.
 
         需要预热的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\", \"url2\"），目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
 

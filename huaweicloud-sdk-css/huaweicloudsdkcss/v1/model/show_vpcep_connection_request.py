@@ -29,7 +29,7 @@ class ShowVpcepConnectionRequest:
     }
 
     def __init__(self, cluster_id=None, start=None, limit=None):
-        """ShowVpcepConnectionRequest
+        r"""ShowVpcepConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowVpcepConnectionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowVpcepConnectionRequest.
+        r"""Gets the cluster_id of this ShowVpcepConnectionRequest.
 
         指定待查询的集群ID。
 
@@ -67,7 +67,7 @@ class ShowVpcepConnectionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowVpcepConnectionRequest.
+        r"""Sets the cluster_id of this ShowVpcepConnectionRequest.
 
         指定待查询的集群ID。
 
@@ -78,7 +78,7 @@ class ShowVpcepConnectionRequest:
 
     @property
     def start(self):
-        """Gets the start of this ShowVpcepConnectionRequest.
+        r"""Gets the start of this ShowVpcepConnectionRequest.
 
         指定查询起始值，默认值为1，即从第1个任务开始查询。
 
@@ -89,7 +89,7 @@ class ShowVpcepConnectionRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ShowVpcepConnectionRequest.
+        r"""Sets the start of this ShowVpcepConnectionRequest.
 
         指定查询起始值，默认值为1，即从第1个任务开始查询。
 
@@ -100,7 +100,7 @@ class ShowVpcepConnectionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowVpcepConnectionRequest.
+        r"""Gets the limit of this ShowVpcepConnectionRequest.
 
         指定查询个数，默认值为10，即一次查询10个任务信息。
 
@@ -111,7 +111,7 @@ class ShowVpcepConnectionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowVpcepConnectionRequest.
+        r"""Sets the limit of this ShowVpcepConnectionRequest.
 
         指定查询个数，默认值为10，即一次查询10个任务信息。
 

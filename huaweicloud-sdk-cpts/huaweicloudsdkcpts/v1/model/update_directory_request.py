@@ -29,7 +29,7 @@ class UpdateDirectoryRequest:
     }
 
     def __init__(self, directory_id=None, test_suite_id=None, body=None):
-        """UpdateDirectoryRequest
+        r"""UpdateDirectoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDirectoryRequest:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this UpdateDirectoryRequest.
+        r"""Gets the directory_id of this UpdateDirectoryRequest.
 
         目录id
 
@@ -66,7 +66,7 @@ class UpdateDirectoryRequest:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this UpdateDirectoryRequest.
+        r"""Sets the directory_id of this UpdateDirectoryRequest.
 
         目录id
 
@@ -77,7 +77,7 @@ class UpdateDirectoryRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this UpdateDirectoryRequest.
+        r"""Gets the test_suite_id of this UpdateDirectoryRequest.
 
         测试工程id
 
@@ -88,7 +88,7 @@ class UpdateDirectoryRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this UpdateDirectoryRequest.
+        r"""Sets the test_suite_id of this UpdateDirectoryRequest.
 
         测试工程id
 
@@ -99,7 +99,7 @@ class UpdateDirectoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDirectoryRequest.
+        r"""Gets the body of this UpdateDirectoryRequest.
 
         :return: The body of this UpdateDirectoryRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateDirectoryRequestBody`
@@ -108,7 +108,7 @@ class UpdateDirectoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDirectoryRequest.
+        r"""Sets the body of this UpdateDirectoryRequest.
 
         :param body: The body of this UpdateDirectoryRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateDirectoryRequestBody`

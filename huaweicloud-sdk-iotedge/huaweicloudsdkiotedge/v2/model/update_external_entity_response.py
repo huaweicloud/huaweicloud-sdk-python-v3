@@ -38,7 +38,7 @@ class UpdateExternalEntityResponse(SdkResponse):
     }
 
     def __init__(self, node_id=None, space_id=None, external_id=None, protocol=None, connection_type=None, create_time=None, last_modify_time=None):
-        """UpdateExternalEntityResponse
+        r"""UpdateExternalEntityResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateExternalEntityResponse.
+        r"""Gets the node_id of this UpdateExternalEntityResponse.
 
         节点ID
 
@@ -97,7 +97,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateExternalEntityResponse.
+        r"""Sets the node_id of this UpdateExternalEntityResponse.
 
         节点ID
 
@@ -108,7 +108,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def space_id(self):
-        """Gets the space_id of this UpdateExternalEntityResponse.
+        r"""Gets the space_id of this UpdateExternalEntityResponse.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
@@ -119,7 +119,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this UpdateExternalEntityResponse.
+        r"""Sets the space_id of this UpdateExternalEntityResponse.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
@@ -130,7 +130,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def external_id(self):
-        """Gets the external_id of this UpdateExternalEntityResponse.
+        r"""Gets the external_id of this UpdateExternalEntityResponse.
 
         外部实体ID
 
@@ -141,7 +141,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this UpdateExternalEntityResponse.
+        r"""Sets the external_id of this UpdateExternalEntityResponse.
 
         外部实体ID
 
@@ -152,7 +152,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateExternalEntityResponse.
+        r"""Gets the protocol of this UpdateExternalEntityResponse.
 
         接入协议类型
 
@@ -163,7 +163,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateExternalEntityResponse.
+        r"""Sets the protocol of this UpdateExternalEntityResponse.
 
         接入协议类型
 
@@ -174,7 +174,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this UpdateExternalEntityResponse.
+        r"""Gets the connection_type of this UpdateExternalEntityResponse.
 
         连接类型(client和server)
 
@@ -185,7 +185,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this UpdateExternalEntityResponse.
+        r"""Sets the connection_type of this UpdateExternalEntityResponse.
 
         连接类型(client和server)
 
@@ -196,7 +196,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateExternalEntityResponse.
+        r"""Gets the create_time of this UpdateExternalEntityResponse.
 
         创建时间
 
@@ -207,7 +207,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateExternalEntityResponse.
+        r"""Sets the create_time of this UpdateExternalEntityResponse.
 
         创建时间
 
@@ -218,7 +218,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this UpdateExternalEntityResponse.
+        r"""Gets the last_modify_time of this UpdateExternalEntityResponse.
 
         最后修改时间
 
@@ -229,7 +229,7 @@ class UpdateExternalEntityResponse(SdkResponse):
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this UpdateExternalEntityResponse.
+        r"""Sets the last_modify_time of this UpdateExternalEntityResponse.
 
         最后修改时间
 

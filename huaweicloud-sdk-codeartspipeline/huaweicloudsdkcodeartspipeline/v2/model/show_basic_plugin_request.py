@@ -29,7 +29,7 @@ class ShowBasicPluginRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, version=None):
-        """ShowBasicPluginRequest
+        r"""ShowBasicPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowBasicPluginRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowBasicPluginRequest.
+        r"""Gets the domain_id of this ShowBasicPluginRequest.
 
         租户ID
 
@@ -65,7 +65,7 @@ class ShowBasicPluginRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowBasicPluginRequest.
+        r"""Sets the domain_id of this ShowBasicPluginRequest.
 
         租户ID
 
@@ -76,7 +76,7 @@ class ShowBasicPluginRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ShowBasicPluginRequest.
+        r"""Gets the plugin_name of this ShowBasicPluginRequest.
 
         插件名
 
@@ -87,7 +87,7 @@ class ShowBasicPluginRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ShowBasicPluginRequest.
+        r"""Sets the plugin_name of this ShowBasicPluginRequest.
 
         插件名
 
@@ -98,7 +98,7 @@ class ShowBasicPluginRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowBasicPluginRequest.
+        r"""Gets the version of this ShowBasicPluginRequest.
 
         版本
 
@@ -109,7 +109,7 @@ class ShowBasicPluginRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowBasicPluginRequest.
+        r"""Sets the version of this ShowBasicPluginRequest.
 
         版本
 

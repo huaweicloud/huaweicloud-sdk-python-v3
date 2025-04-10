@@ -29,7 +29,7 @@ class ListAppInstanceHistoryRequest:
     }
 
     def __init__(self, cluster_id=None, app_instance_id=None, namespace=None):
-        """ListAppInstanceHistoryRequest
+        r"""ListAppInstanceHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListAppInstanceHistoryRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAppInstanceHistoryRequest.
+        r"""Gets the cluster_id of this ListAppInstanceHistoryRequest.
 
         边缘集群ID
 
@@ -66,7 +66,7 @@ class ListAppInstanceHistoryRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAppInstanceHistoryRequest.
+        r"""Sets the cluster_id of this ListAppInstanceHistoryRequest.
 
         边缘集群ID
 
@@ -77,7 +77,7 @@ class ListAppInstanceHistoryRequest:
 
     @property
     def app_instance_id(self):
-        """Gets the app_instance_id of this ListAppInstanceHistoryRequest.
+        r"""Gets the app_instance_id of this ListAppInstanceHistoryRequest.
 
         应用实例ID
 
@@ -88,7 +88,7 @@ class ListAppInstanceHistoryRequest:
 
     @app_instance_id.setter
     def app_instance_id(self, app_instance_id):
-        """Sets the app_instance_id of this ListAppInstanceHistoryRequest.
+        r"""Sets the app_instance_id of this ListAppInstanceHistoryRequest.
 
         应用实例ID
 
@@ -99,7 +99,7 @@ class ListAppInstanceHistoryRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAppInstanceHistoryRequest.
+        r"""Gets the namespace of this ListAppInstanceHistoryRequest.
 
         命名空间
 
@@ -110,7 +110,7 @@ class ListAppInstanceHistoryRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAppInstanceHistoryRequest.
+        r"""Sets the namespace of this ListAppInstanceHistoryRequest.
 
         命名空间
 

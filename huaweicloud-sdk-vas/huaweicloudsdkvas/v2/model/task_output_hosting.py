@@ -25,7 +25,7 @@ class TaskOutputHosting:
     }
 
     def __init__(self, data_category=None):
-        """TaskOutputHosting
+        r"""TaskOutputHosting
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskOutputHosting:
 
     @property
     def data_category(self):
-        """Gets the data_category of this TaskOutputHosting.
+        r"""Gets the data_category of this TaskOutputHosting.
 
         作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
 
@@ -54,7 +54,7 @@ class TaskOutputHosting:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this TaskOutputHosting.
+        r"""Sets the data_category of this TaskOutputHosting.
 
         作业输出数据类别的列表，选填，仅部分服务需要。当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据。
 

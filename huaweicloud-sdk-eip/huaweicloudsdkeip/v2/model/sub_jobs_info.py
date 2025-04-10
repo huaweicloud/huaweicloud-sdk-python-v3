@@ -25,7 +25,7 @@ class SubJobsInfo:
     }
 
     def __init__(self, sub_jobs=None):
-        """SubJobsInfo
+        r"""SubJobsInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SubJobsInfo:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this SubJobsInfo.
+        r"""Gets the sub_jobs of this SubJobsInfo.
 
         子job信息，类型与主job一致
 
@@ -54,7 +54,7 @@ class SubJobsInfo:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this SubJobsInfo.
+        r"""Sets the sub_jobs of this SubJobsInfo.
 
         子job信息，类型与主job一致
 

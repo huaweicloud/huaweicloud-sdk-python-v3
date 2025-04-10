@@ -73,7 +73,7 @@ class TaskAssignCaseDetailVo:
     }
 
     def __init__(self, uri=None, sort=None, owner=None, stage=None, project_uuid=None, task_uri=None, update_time=None, updator_name=None, updator=None, case_uri=None, is_available=None, test_case_name=None, feature_uri=None, test_case_number=None, svn_script_path=None, status_code=None, status_name=None, result_code=None, result_name=None, owner_name=None, execute_latest_time=None, execute_duration=None, is_keyword=None, net_work_script_name=None, rank_id=None):
-        """TaskAssignCaseDetailVo
+        r"""TaskAssignCaseDetailVo
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TaskAssignCaseDetailVo.
+        r"""Gets the uri of this TaskAssignCaseDetailVo.
 
         关联关系uri
 
@@ -222,7 +222,7 @@ class TaskAssignCaseDetailVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TaskAssignCaseDetailVo.
+        r"""Sets the uri of this TaskAssignCaseDetailVo.
 
         关联关系uri
 
@@ -233,7 +233,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def sort(self):
-        """Gets the sort of this TaskAssignCaseDetailVo.
+        r"""Gets the sort of this TaskAssignCaseDetailVo.
 
         排序顺序
 
@@ -244,7 +244,7 @@ class TaskAssignCaseDetailVo:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this TaskAssignCaseDetailVo.
+        r"""Sets the sort of this TaskAssignCaseDetailVo.
 
         排序顺序
 
@@ -255,7 +255,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def owner(self):
-        """Gets the owner of this TaskAssignCaseDetailVo.
+        r"""Gets the owner of this TaskAssignCaseDetailVo.
 
         责任人id
 
@@ -266,7 +266,7 @@ class TaskAssignCaseDetailVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TaskAssignCaseDetailVo.
+        r"""Sets the owner of this TaskAssignCaseDetailVo.
 
         责任人id
 
@@ -277,7 +277,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def stage(self):
-        """Gets the stage of this TaskAssignCaseDetailVo.
+        r"""Gets the stage of this TaskAssignCaseDetailVo.
 
         测试阶段
 
@@ -288,7 +288,7 @@ class TaskAssignCaseDetailVo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TaskAssignCaseDetailVo.
+        r"""Sets the stage of this TaskAssignCaseDetailVo.
 
         测试阶段
 
@@ -299,7 +299,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TaskAssignCaseDetailVo.
+        r"""Gets the project_uuid of this TaskAssignCaseDetailVo.
 
         项目id
 
@@ -310,7 +310,7 @@ class TaskAssignCaseDetailVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TaskAssignCaseDetailVo.
+        r"""Sets the project_uuid of this TaskAssignCaseDetailVo.
 
         项目id
 
@@ -321,7 +321,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this TaskAssignCaseDetailVo.
+        r"""Gets the task_uri of this TaskAssignCaseDetailVo.
 
         任务uri
 
@@ -332,7 +332,7 @@ class TaskAssignCaseDetailVo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this TaskAssignCaseDetailVo.
+        r"""Sets the task_uri of this TaskAssignCaseDetailVo.
 
         任务uri
 
@@ -343,7 +343,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TaskAssignCaseDetailVo.
+        r"""Gets the update_time of this TaskAssignCaseDetailVo.
 
         更新时间
 
@@ -354,7 +354,7 @@ class TaskAssignCaseDetailVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TaskAssignCaseDetailVo.
+        r"""Sets the update_time of this TaskAssignCaseDetailVo.
 
         更新时间
 
@@ -365,7 +365,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def updator_name(self):
-        """Gets the updator_name of this TaskAssignCaseDetailVo.
+        r"""Gets the updator_name of this TaskAssignCaseDetailVo.
 
         更新人
 
@@ -376,7 +376,7 @@ class TaskAssignCaseDetailVo:
 
     @updator_name.setter
     def updator_name(self, updator_name):
-        """Sets the updator_name of this TaskAssignCaseDetailVo.
+        r"""Sets the updator_name of this TaskAssignCaseDetailVo.
 
         更新人
 
@@ -387,7 +387,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def updator(self):
-        """Gets the updator of this TaskAssignCaseDetailVo.
+        r"""Gets the updator of this TaskAssignCaseDetailVo.
 
         更新人id
 
@@ -398,7 +398,7 @@ class TaskAssignCaseDetailVo:
 
     @updator.setter
     def updator(self, updator):
-        """Sets the updator of this TaskAssignCaseDetailVo.
+        r"""Sets the updator of this TaskAssignCaseDetailVo.
 
         更新人id
 
@@ -409,7 +409,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this TaskAssignCaseDetailVo.
+        r"""Gets the case_uri of this TaskAssignCaseDetailVo.
 
         用例uri
 
@@ -420,7 +420,7 @@ class TaskAssignCaseDetailVo:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this TaskAssignCaseDetailVo.
+        r"""Sets the case_uri of this TaskAssignCaseDetailVo.
 
         用例uri
 
@@ -431,7 +431,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def is_available(self):
-        """Gets the is_available of this TaskAssignCaseDetailVo.
+        r"""Gets the is_available of this TaskAssignCaseDetailVo.
 
         是否可用
 
@@ -442,7 +442,7 @@ class TaskAssignCaseDetailVo:
 
     @is_available.setter
     def is_available(self, is_available):
-        """Sets the is_available of this TaskAssignCaseDetailVo.
+        r"""Sets the is_available of this TaskAssignCaseDetailVo.
 
         是否可用
 
@@ -453,7 +453,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def test_case_name(self):
-        """Gets the test_case_name of this TaskAssignCaseDetailVo.
+        r"""Gets the test_case_name of this TaskAssignCaseDetailVo.
 
         用例名称
 
@@ -464,7 +464,7 @@ class TaskAssignCaseDetailVo:
 
     @test_case_name.setter
     def test_case_name(self, test_case_name):
-        """Sets the test_case_name of this TaskAssignCaseDetailVo.
+        r"""Sets the test_case_name of this TaskAssignCaseDetailVo.
 
         用例名称
 
@@ -475,7 +475,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this TaskAssignCaseDetailVo.
+        r"""Gets the feature_uri of this TaskAssignCaseDetailVo.
 
         用例目录Uri
 
@@ -486,7 +486,7 @@ class TaskAssignCaseDetailVo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this TaskAssignCaseDetailVo.
+        r"""Sets the feature_uri of this TaskAssignCaseDetailVo.
 
         用例目录Uri
 
@@ -497,7 +497,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def test_case_number(self):
-        """Gets the test_case_number of this TaskAssignCaseDetailVo.
+        r"""Gets the test_case_number of this TaskAssignCaseDetailVo.
 
         用例编号
 
@@ -508,7 +508,7 @@ class TaskAssignCaseDetailVo:
 
     @test_case_number.setter
     def test_case_number(self, test_case_number):
-        """Sets the test_case_number of this TaskAssignCaseDetailVo.
+        r"""Sets the test_case_number of this TaskAssignCaseDetailVo.
 
         用例编号
 
@@ -519,7 +519,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def svn_script_path(self):
-        """Gets the svn_script_path of this TaskAssignCaseDetailVo.
+        r"""Gets the svn_script_path of this TaskAssignCaseDetailVo.
 
         脚本路径
 
@@ -530,7 +530,7 @@ class TaskAssignCaseDetailVo:
 
     @svn_script_path.setter
     def svn_script_path(self, svn_script_path):
-        """Sets the svn_script_path of this TaskAssignCaseDetailVo.
+        r"""Sets the svn_script_path of this TaskAssignCaseDetailVo.
 
         脚本路径
 
@@ -541,7 +541,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this TaskAssignCaseDetailVo.
+        r"""Gets the status_code of this TaskAssignCaseDetailVo.
 
         状态
 
@@ -552,7 +552,7 @@ class TaskAssignCaseDetailVo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this TaskAssignCaseDetailVo.
+        r"""Sets the status_code of this TaskAssignCaseDetailVo.
 
         状态
 
@@ -563,7 +563,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def status_name(self):
-        """Gets the status_name of this TaskAssignCaseDetailVo.
+        r"""Gets the status_name of this TaskAssignCaseDetailVo.
 
         状态名称
 
@@ -574,7 +574,7 @@ class TaskAssignCaseDetailVo:
 
     @status_name.setter
     def status_name(self, status_name):
-        """Sets the status_name of this TaskAssignCaseDetailVo.
+        r"""Sets the status_name of this TaskAssignCaseDetailVo.
 
         状态名称
 
@@ -585,7 +585,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this TaskAssignCaseDetailVo.
+        r"""Gets the result_code of this TaskAssignCaseDetailVo.
 
         结果id
 
@@ -596,7 +596,7 @@ class TaskAssignCaseDetailVo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this TaskAssignCaseDetailVo.
+        r"""Sets the result_code of this TaskAssignCaseDetailVo.
 
         结果id
 
@@ -607,7 +607,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def result_name(self):
-        """Gets the result_name of this TaskAssignCaseDetailVo.
+        r"""Gets the result_name of this TaskAssignCaseDetailVo.
 
         结果名称
 
@@ -618,7 +618,7 @@ class TaskAssignCaseDetailVo:
 
     @result_name.setter
     def result_name(self, result_name):
-        """Sets the result_name of this TaskAssignCaseDetailVo.
+        r"""Sets the result_name of this TaskAssignCaseDetailVo.
 
         结果名称
 
@@ -629,7 +629,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this TaskAssignCaseDetailVo.
+        r"""Gets the owner_name of this TaskAssignCaseDetailVo.
 
         责任人名称
 
@@ -640,7 +640,7 @@ class TaskAssignCaseDetailVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this TaskAssignCaseDetailVo.
+        r"""Sets the owner_name of this TaskAssignCaseDetailVo.
 
         责任人名称
 
@@ -651,7 +651,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def execute_latest_time(self):
-        """Gets the execute_latest_time of this TaskAssignCaseDetailVo.
+        r"""Gets the execute_latest_time of this TaskAssignCaseDetailVo.
 
         最新执行时间
 
@@ -662,7 +662,7 @@ class TaskAssignCaseDetailVo:
 
     @execute_latest_time.setter
     def execute_latest_time(self, execute_latest_time):
-        """Sets the execute_latest_time of this TaskAssignCaseDetailVo.
+        r"""Sets the execute_latest_time of this TaskAssignCaseDetailVo.
 
         最新执行时间
 
@@ -673,7 +673,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def execute_duration(self):
-        """Gets the execute_duration of this TaskAssignCaseDetailVo.
+        r"""Gets the execute_duration of this TaskAssignCaseDetailVo.
 
         执行时长
 
@@ -684,7 +684,7 @@ class TaskAssignCaseDetailVo:
 
     @execute_duration.setter
     def execute_duration(self, execute_duration):
-        """Sets the execute_duration of this TaskAssignCaseDetailVo.
+        r"""Sets the execute_duration of this TaskAssignCaseDetailVo.
 
         执行时长
 
@@ -695,7 +695,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this TaskAssignCaseDetailVo.
+        r"""Gets the is_keyword of this TaskAssignCaseDetailVo.
 
         是否是关键用例
 
@@ -706,7 +706,7 @@ class TaskAssignCaseDetailVo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this TaskAssignCaseDetailVo.
+        r"""Sets the is_keyword of this TaskAssignCaseDetailVo.
 
         是否是关键用例
 
@@ -717,7 +717,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def net_work_script_name(self):
-        """Gets the net_work_script_name of this TaskAssignCaseDetailVo.
+        r"""Gets the net_work_script_name of this TaskAssignCaseDetailVo.
 
         脚本名称
 
@@ -728,7 +728,7 @@ class TaskAssignCaseDetailVo:
 
     @net_work_script_name.setter
     def net_work_script_name(self, net_work_script_name):
-        """Sets the net_work_script_name of this TaskAssignCaseDetailVo.
+        r"""Sets the net_work_script_name of this TaskAssignCaseDetailVo.
 
         脚本名称
 
@@ -739,7 +739,7 @@ class TaskAssignCaseDetailVo:
 
     @property
     def rank_id(self):
-        """Gets the rank_id of this TaskAssignCaseDetailVo.
+        r"""Gets the rank_id of this TaskAssignCaseDetailVo.
 
         用例等级
 
@@ -750,7 +750,7 @@ class TaskAssignCaseDetailVo:
 
     @rank_id.setter
     def rank_id(self, rank_id):
-        """Sets the rank_id of this TaskAssignCaseDetailVo.
+        r"""Sets the rank_id of this TaskAssignCaseDetailVo.
 
         用例等级
 

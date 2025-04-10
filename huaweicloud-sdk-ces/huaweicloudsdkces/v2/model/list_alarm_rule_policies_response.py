@@ -28,7 +28,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, count=None):
-        """ListAlarmRulePoliciesResponse
+        r"""ListAlarmRulePoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListAlarmRulePoliciesResponse.
+        r"""Gets the policies of this ListAlarmRulePoliciesResponse.
 
         策略信息
 
@@ -62,7 +62,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListAlarmRulePoliciesResponse.
+        r"""Sets the policies of this ListAlarmRulePoliciesResponse.
 
         策略信息
 
@@ -73,7 +73,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAlarmRulePoliciesResponse.
+        r"""Gets the count of this ListAlarmRulePoliciesResponse.
 
         指定告警规则对应的策略总数
 
@@ -84,7 +84,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlarmRulePoliciesResponse.
+        r"""Sets the count of this ListAlarmRulePoliciesResponse.
 
         指定告警规则对应的策略总数
 

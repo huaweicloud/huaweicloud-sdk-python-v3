@@ -28,7 +28,7 @@ class ListRecordRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, record_config=None):
-        """ListRecordRulesResponse
+        r"""ListRecordRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRecordRulesResponse.
+        r"""Gets the total of this ListRecordRulesResponse.
 
         查询结果的总元素数量
 
@@ -62,7 +62,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRecordRulesResponse.
+        r"""Sets the total of this ListRecordRulesResponse.
 
         查询结果的总元素数量
 
@@ -73,7 +73,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @property
     def record_config(self):
-        """Gets the record_config of this ListRecordRulesResponse.
+        r"""Gets the record_config of this ListRecordRulesResponse.
 
         录制配置数组
 
@@ -84,7 +84,7 @@ class ListRecordRulesResponse(SdkResponse):
 
     @record_config.setter
     def record_config(self, record_config):
-        """Sets the record_config of this ListRecordRulesResponse.
+        r"""Sets the record_config of this ListRecordRulesResponse.
 
         录制配置数组
 

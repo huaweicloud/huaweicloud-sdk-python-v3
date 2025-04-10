@@ -27,7 +27,7 @@ class RelatedIntention:
     }
 
     def __init__(self, intention=None, confidence=None):
-        """RelatedIntention
+        r"""RelatedIntention
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RelatedIntention:
 
     @property
     def intention(self):
-        """Gets the intention of this RelatedIntention.
+        r"""Gets the intention of this RelatedIntention.
 
         意图名称。
 
@@ -60,7 +60,7 @@ class RelatedIntention:
 
     @intention.setter
     def intention(self, intention):
-        """Sets the intention of this RelatedIntention.
+        r"""Sets the intention of this RelatedIntention.
 
         意图名称。
 
@@ -71,7 +71,7 @@ class RelatedIntention:
 
     @property
     def confidence(self):
-        """Gets the confidence of this RelatedIntention.
+        r"""Gets the confidence of this RelatedIntention.
 
         意图置信度。
 
@@ -82,7 +82,7 @@ class RelatedIntention:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this RelatedIntention.
+        r"""Sets the confidence of this RelatedIntention.
 
         意图置信度。
 

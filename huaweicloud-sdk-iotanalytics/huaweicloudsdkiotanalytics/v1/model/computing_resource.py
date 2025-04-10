@@ -41,7 +41,7 @@ class ComputingResource:
     }
 
     def __init__(self, computing_resource_id=None, computing_resource_name=None, description=None, owner=None, created_time=None, computing_resource_type=None, cu_count=None, charging_mode=None, resource_mode=None):
-        """ComputingResource
+        r"""ComputingResource
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ComputingResource:
 
     @property
     def computing_resource_id(self):
-        """Gets the computing_resource_id of this ComputingResource.
+        r"""Gets the computing_resource_id of this ComputingResource.
 
         计算资源ID。
 
@@ -110,7 +110,7 @@ class ComputingResource:
 
     @computing_resource_id.setter
     def computing_resource_id(self, computing_resource_id):
-        """Sets the computing_resource_id of this ComputingResource.
+        r"""Sets the computing_resource_id of this ComputingResource.
 
         计算资源ID。
 
@@ -121,7 +121,7 @@ class ComputingResource:
 
     @property
     def computing_resource_name(self):
-        """Gets the computing_resource_name of this ComputingResource.
+        r"""Gets the computing_resource_name of this ComputingResource.
 
         计算资源名称。
 
@@ -132,7 +132,7 @@ class ComputingResource:
 
     @computing_resource_name.setter
     def computing_resource_name(self, computing_resource_name):
-        """Sets the computing_resource_name of this ComputingResource.
+        r"""Sets the computing_resource_name of this ComputingResource.
 
         计算资源名称。
 
@@ -143,7 +143,7 @@ class ComputingResource:
 
     @property
     def description(self):
-        """Gets the description of this ComputingResource.
+        r"""Gets the description of this ComputingResource.
 
         计算资源描述信息。
 
@@ -154,7 +154,7 @@ class ComputingResource:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComputingResource.
+        r"""Sets the description of this ComputingResource.
 
         计算资源描述信息。
 
@@ -165,7 +165,7 @@ class ComputingResource:
 
     @property
     def owner(self):
-        """Gets the owner of this ComputingResource.
+        r"""Gets the owner of this ComputingResource.
 
         创建计算资源的用户。
 
@@ -176,7 +176,7 @@ class ComputingResource:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ComputingResource.
+        r"""Sets the owner of this ComputingResource.
 
         创建计算资源的用户。
 
@@ -187,7 +187,7 @@ class ComputingResource:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ComputingResource.
+        r"""Gets the created_time of this ComputingResource.
 
         创建计算资源的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -198,7 +198,7 @@ class ComputingResource:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ComputingResource.
+        r"""Sets the created_time of this ComputingResource.
 
         创建计算资源的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -209,7 +209,7 @@ class ComputingResource:
 
     @property
     def computing_resource_type(self):
-        """Gets the computing_resource_type of this ComputingResource.
+        r"""Gets the computing_resource_type of this ComputingResource.
 
         计算资源的类型,。目前支持：sql
 
@@ -220,7 +220,7 @@ class ComputingResource:
 
     @computing_resource_type.setter
     def computing_resource_type(self, computing_resource_type):
-        """Sets the computing_resource_type of this ComputingResource.
+        r"""Sets the computing_resource_type of this ComputingResource.
 
         计算资源的类型,。目前支持：sql
 
@@ -231,7 +231,7 @@ class ComputingResource:
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this ComputingResource.
+        r"""Gets the cu_count of this ComputingResource.
 
         与该计算资源绑定的计算单元数。设置值当前只支持16，64，256。
 
@@ -242,7 +242,7 @@ class ComputingResource:
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this ComputingResource.
+        r"""Sets the cu_count of this ComputingResource.
 
         与该计算资源绑定的计算单元数。设置值当前只支持16，64，256。
 
@@ -253,7 +253,7 @@ class ComputingResource:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ComputingResource.
+        r"""Gets the charging_mode of this ComputingResource.
 
         计算资源的收费模式。“1”表示按照CU时收费。“2”表示按照包年包月收费。
 
@@ -264,7 +264,7 @@ class ComputingResource:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ComputingResource.
+        r"""Sets the charging_mode of this ComputingResource.
 
         计算资源的收费模式。“1”表示按照CU时收费。“2”表示按照包年包月收费。
 
@@ -275,7 +275,7 @@ class ComputingResource:
 
     @property
     def resource_mode(self):
-        """Gets the resource_mode of this ComputingResource.
+        r"""Gets the resource_mode of this ComputingResource.
 
         计算资源类型。0：共享资源 1：专属资源
 
@@ -286,7 +286,7 @@ class ComputingResource:
 
     @resource_mode.setter
     def resource_mode(self, resource_mode):
-        """Sets the resource_mode of this ComputingResource.
+        r"""Sets the resource_mode of this ComputingResource.
 
         计算资源类型。0：共享资源 1：专属资源
 

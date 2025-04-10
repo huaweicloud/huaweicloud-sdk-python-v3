@@ -39,7 +39,7 @@ class ExtDataSourceReq:
     }
 
     def __init__(self, data_source_id=None, type=None, data_source_name=None, user_name=None, user_pwd=None, description=None, reboot=None, connect_info=None):
-        """ExtDataSourceReq
+        r"""ExtDataSourceReq
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ExtDataSourceReq:
 
     @property
     def data_source_id(self):
-        """Gets the data_source_id of this ExtDataSourceReq.
+        r"""Gets the data_source_id of this ExtDataSourceReq.
 
         数据源id
 
@@ -100,7 +100,7 @@ class ExtDataSourceReq:
 
     @data_source_id.setter
     def data_source_id(self, data_source_id):
-        """Sets the data_source_id of this ExtDataSourceReq.
+        r"""Sets the data_source_id of this ExtDataSourceReq.
 
         数据源id
 
@@ -111,7 +111,7 @@ class ExtDataSourceReq:
 
     @property
     def type(self):
-        """Gets the type of this ExtDataSourceReq.
+        r"""Gets the type of this ExtDataSourceReq.
 
         类型
 
@@ -122,7 +122,7 @@ class ExtDataSourceReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExtDataSourceReq.
+        r"""Sets the type of this ExtDataSourceReq.
 
         类型
 
@@ -133,7 +133,7 @@ class ExtDataSourceReq:
 
     @property
     def data_source_name(self):
-        """Gets the data_source_name of this ExtDataSourceReq.
+        r"""Gets the data_source_name of this ExtDataSourceReq.
 
         数据源名称
 
@@ -144,7 +144,7 @@ class ExtDataSourceReq:
 
     @data_source_name.setter
     def data_source_name(self, data_source_name):
-        """Sets the data_source_name of this ExtDataSourceReq.
+        r"""Sets the data_source_name of this ExtDataSourceReq.
 
         数据源名称
 
@@ -155,7 +155,7 @@ class ExtDataSourceReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ExtDataSourceReq.
+        r"""Gets the user_name of this ExtDataSourceReq.
 
         用户名
 
@@ -166,7 +166,7 @@ class ExtDataSourceReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ExtDataSourceReq.
+        r"""Sets the user_name of this ExtDataSourceReq.
 
         用户名
 
@@ -177,7 +177,7 @@ class ExtDataSourceReq:
 
     @property
     def user_pwd(self):
-        """Gets the user_pwd of this ExtDataSourceReq.
+        r"""Gets the user_pwd of this ExtDataSourceReq.
 
         密码
 
@@ -188,7 +188,7 @@ class ExtDataSourceReq:
 
     @user_pwd.setter
     def user_pwd(self, user_pwd):
-        """Sets the user_pwd of this ExtDataSourceReq.
+        r"""Sets the user_pwd of this ExtDataSourceReq.
 
         密码
 
@@ -199,7 +199,7 @@ class ExtDataSourceReq:
 
     @property
     def description(self):
-        """Gets the description of this ExtDataSourceReq.
+        r"""Gets the description of this ExtDataSourceReq.
 
         描述
 
@@ -210,7 +210,7 @@ class ExtDataSourceReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExtDataSourceReq.
+        r"""Sets the description of this ExtDataSourceReq.
 
         描述
 
@@ -221,7 +221,7 @@ class ExtDataSourceReq:
 
     @property
     def reboot(self):
-        """Gets the reboot of this ExtDataSourceReq.
+        r"""Gets the reboot of this ExtDataSourceReq.
 
         重启
 
@@ -232,7 +232,7 @@ class ExtDataSourceReq:
 
     @reboot.setter
     def reboot(self, reboot):
-        """Sets the reboot of this ExtDataSourceReq.
+        r"""Sets the reboot of this ExtDataSourceReq.
 
         重启
 
@@ -243,7 +243,7 @@ class ExtDataSourceReq:
 
     @property
     def connect_info(self):
-        """Gets the connect_info of this ExtDataSourceReq.
+        r"""Gets the connect_info of this ExtDataSourceReq.
 
         数据库
 
@@ -254,7 +254,7 @@ class ExtDataSourceReq:
 
     @connect_info.setter
     def connect_info(self, connect_info):
-        """Sets the connect_info of this ExtDataSourceReq.
+        r"""Sets the connect_info of this ExtDataSourceReq.
 
         数据库
 

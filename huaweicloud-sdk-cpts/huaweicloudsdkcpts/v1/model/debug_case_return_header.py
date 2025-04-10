@@ -33,7 +33,7 @@ class DebugCaseReturnHeader:
     }
 
     def __init__(self, connection=None, content_length=None, content_type=None, date=None, vary=None):
-        """DebugCaseReturnHeader
+        r"""DebugCaseReturnHeader
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DebugCaseReturnHeader:
 
     @property
     def connection(self):
-        """Gets the connection of this DebugCaseReturnHeader.
+        r"""Gets the connection of this DebugCaseReturnHeader.
 
         连接
 
@@ -82,7 +82,7 @@ class DebugCaseReturnHeader:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this DebugCaseReturnHeader.
+        r"""Sets the connection of this DebugCaseReturnHeader.
 
         连接
 
@@ -93,7 +93,7 @@ class DebugCaseReturnHeader:
 
     @property
     def content_length(self):
-        """Gets the content_length of this DebugCaseReturnHeader.
+        r"""Gets the content_length of this DebugCaseReturnHeader.
 
         内容长度
 
@@ -104,7 +104,7 @@ class DebugCaseReturnHeader:
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this DebugCaseReturnHeader.
+        r"""Sets the content_length of this DebugCaseReturnHeader.
 
         内容长度
 
@@ -115,7 +115,7 @@ class DebugCaseReturnHeader:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DebugCaseReturnHeader.
+        r"""Gets the content_type of this DebugCaseReturnHeader.
 
         内容类型
 
@@ -126,7 +126,7 @@ class DebugCaseReturnHeader:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DebugCaseReturnHeader.
+        r"""Sets the content_type of this DebugCaseReturnHeader.
 
         内容类型
 
@@ -137,7 +137,7 @@ class DebugCaseReturnHeader:
 
     @property
     def date(self):
-        """Gets the date of this DebugCaseReturnHeader.
+        r"""Gets the date of this DebugCaseReturnHeader.
 
         时间
 
@@ -148,7 +148,7 @@ class DebugCaseReturnHeader:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DebugCaseReturnHeader.
+        r"""Sets the date of this DebugCaseReturnHeader.
 
         时间
 
@@ -159,7 +159,7 @@ class DebugCaseReturnHeader:
 
     @property
     def vary(self):
-        """Gets the vary of this DebugCaseReturnHeader.
+        r"""Gets the vary of this DebugCaseReturnHeader.
 
         兼容性保留，当前版本未使用
 
@@ -170,7 +170,7 @@ class DebugCaseReturnHeader:
 
     @vary.setter
     def vary(self, vary):
-        """Sets the vary of this DebugCaseReturnHeader.
+        r"""Sets the vary of this DebugCaseReturnHeader.
 
         兼容性保留，当前版本未使用
 

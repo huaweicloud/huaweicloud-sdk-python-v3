@@ -27,7 +27,7 @@ class OpenApplyIdsForApproveApply:
     }
 
     def __init__(self, apply_result=None, apply_ids=None):
-        """OpenApplyIdsForApproveApply
+        r"""OpenApplyIdsForApproveApply
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenApplyIdsForApproveApply:
 
     @property
     def apply_result(self):
-        """Gets the apply_result of this OpenApplyIdsForApproveApply.
+        r"""Gets the apply_result of this OpenApplyIdsForApproveApply.
 
         申请结果
 
@@ -61,7 +61,7 @@ class OpenApplyIdsForApproveApply:
 
     @apply_result.setter
     def apply_result(self, apply_result):
-        """Sets the apply_result of this OpenApplyIdsForApproveApply.
+        r"""Sets the apply_result of this OpenApplyIdsForApproveApply.
 
         申请结果
 
@@ -72,7 +72,7 @@ class OpenApplyIdsForApproveApply:
 
     @property
     def apply_ids(self):
-        """Gets the apply_ids of this OpenApplyIdsForApproveApply.
+        r"""Gets the apply_ids of this OpenApplyIdsForApproveApply.
 
         申请编号列表
 
@@ -83,7 +83,7 @@ class OpenApplyIdsForApproveApply:
 
     @apply_ids.setter
     def apply_ids(self, apply_ids):
-        """Sets the apply_ids of this OpenApplyIdsForApproveApply.
+        r"""Sets the apply_ids of this OpenApplyIdsForApproveApply.
 
         申请编号列表
 

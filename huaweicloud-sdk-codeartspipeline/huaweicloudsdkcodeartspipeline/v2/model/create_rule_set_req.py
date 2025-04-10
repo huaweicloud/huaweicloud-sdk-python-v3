@@ -27,7 +27,7 @@ class CreateRuleSetReq:
     }
 
     def __init__(self, name=None, rules=None):
-        """CreateRuleSetReq
+        r"""CreateRuleSetReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateRuleSetReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateRuleSetReq.
+        r"""Gets the name of this CreateRuleSetReq.
 
         策略名称
 
@@ -59,7 +59,7 @@ class CreateRuleSetReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRuleSetReq.
+        r"""Sets the name of this CreateRuleSetReq.
 
         策略名称
 
@@ -70,7 +70,7 @@ class CreateRuleSetReq:
 
     @property
     def rules(self):
-        """Gets the rules of this CreateRuleSetReq.
+        r"""Gets the rules of this CreateRuleSetReq.
 
         规则集合
 
@@ -81,7 +81,7 @@ class CreateRuleSetReq:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CreateRuleSetReq.
+        r"""Sets the rules of this CreateRuleSetReq.
 
         规则集合
 

@@ -29,7 +29,7 @@ class CreateLogStreamIndexRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, body=None):
-        """CreateLogStreamIndexRequest
+        r"""CreateLogStreamIndexRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateLogStreamIndexRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateLogStreamIndexRequest.
+        r"""Gets the group_id of this CreateLogStreamIndexRequest.
 
         '项目ID，账号ID，日志组ID、日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID'
 
@@ -66,7 +66,7 @@ class CreateLogStreamIndexRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateLogStreamIndexRequest.
+        r"""Sets the group_id of this CreateLogStreamIndexRequest.
 
         '项目ID，账号ID，日志组ID、日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID'
 
@@ -77,7 +77,7 @@ class CreateLogStreamIndexRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this CreateLogStreamIndexRequest.
+        r"""Gets the stream_id of this CreateLogStreamIndexRequest.
 
         '项目ID，账号ID，日志组ID、日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID'
 
@@ -88,7 +88,7 @@ class CreateLogStreamIndexRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this CreateLogStreamIndexRequest.
+        r"""Sets the stream_id of this CreateLogStreamIndexRequest.
 
         '项目ID，账号ID，日志组ID、日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID'
 
@@ -99,7 +99,7 @@ class CreateLogStreamIndexRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogStreamIndexRequest.
+        r"""Gets the body of this CreateLogStreamIndexRequest.
 
         :return: The body of this CreateLogStreamIndexRequest.
         :rtype: :class:`huaweicloudsdklts.v2.LTSIndexConfigInfo`
@@ -108,7 +108,7 @@ class CreateLogStreamIndexRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogStreamIndexRequest.
+        r"""Sets the body of this CreateLogStreamIndexRequest.
 
         :param body: The body of this CreateLogStreamIndexRequest.
         :type body: :class:`huaweicloudsdklts.v2.LTSIndexConfigInfo`

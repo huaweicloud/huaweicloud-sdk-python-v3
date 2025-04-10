@@ -27,7 +27,7 @@ class CreateActiveCodeRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateActiveCodeRequest
+        r"""CreateActiveCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateActiveCodeRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateActiveCodeRequest.
+        r"""Gets the x_app_user_id of this CreateActiveCodeRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateActiveCodeRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateActiveCodeRequest.
+        r"""Sets the x_app_user_id of this CreateActiveCodeRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateActiveCodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateActiveCodeRequest.
+        r"""Gets the body of this CreateActiveCodeRequest.
 
         :return: The body of this CreateActiveCodeRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateActiveCodeReq`
@@ -81,7 +81,7 @@ class CreateActiveCodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateActiveCodeRequest.
+        r"""Sets the body of this CreateActiveCodeRequest.
 
         :param body: The body of this CreateActiveCodeRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateActiveCodeReq`

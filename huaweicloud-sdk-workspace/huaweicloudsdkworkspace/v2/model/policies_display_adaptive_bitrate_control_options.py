@@ -71,7 +71,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
     }
 
     def __init__(self, peak_bandwidth_suppression_enable=None, expected_average_network_latency=None, network_latency_threshold1=None, network_latency_threshold2=None, min_dynamic_frame_rate=None, min_dynamic_frame_rate_lv1=None, min_dynamic_frame_rate_lv2=None, rtt_threshold=None, min_add_framerate=None, max_add_framerate=None, sub_framerate=None, adaptive_bandwidth_lower_limit=None, adaptive_compression_quality_lower_limit=None, adaptive_compression_quality_upper_limit=None, adaptive_compression_quality_increase_limit=None, adaptive_compression_quality_decrease_limit=None, adaptive_average_quality_lower_limit=None, adaptive_average_quality_upper_limit=None, adaptive_average_quality_increase_limit=None, adaptive_average_quality_decrease_limit=None, adaptive_min_quality_lower_limit=None, adaptive_min_quality_upper_limit=None, adaptive_min_quality_increase_limit=None, adaptive_min_quality_decrease_limit=None):
-        """PoliciesDisplayAdaptiveBitrateControlOptions
+        r"""PoliciesDisplayAdaptiveBitrateControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def peak_bandwidth_suppression_enable(self):
-        """Gets the peak_bandwidth_suppression_enable of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the peak_bandwidth_suppression_enable of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         峰值带宽抑制：取值为： false：表示关闭。 true：表示开启。
 
@@ -215,7 +215,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @peak_bandwidth_suppression_enable.setter
     def peak_bandwidth_suppression_enable(self, peak_bandwidth_suppression_enable):
-        """Sets the peak_bandwidth_suppression_enable of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the peak_bandwidth_suppression_enable of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         峰值带宽抑制：取值为： false：表示关闭。 true：表示开启。
 
@@ -226,7 +226,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def expected_average_network_latency(self):
-        """Gets the expected_average_network_latency of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the expected_average_network_latency of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         网络平均期望延时。取值范围为[1-2000]。默认：160。
 
@@ -237,7 +237,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @expected_average_network_latency.setter
     def expected_average_network_latency(self, expected_average_network_latency):
-        """Sets the expected_average_network_latency of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the expected_average_network_latency of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         网络平均期望延时。取值范围为[1-2000]。默认：160。
 
@@ -248,7 +248,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def network_latency_threshold1(self):
-        """Gets the network_latency_threshold1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the network_latency_threshold1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         网络延时阈值1（ms）。取值范围为[1-2000]。默认：160。
 
@@ -259,7 +259,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @network_latency_threshold1.setter
     def network_latency_threshold1(self, network_latency_threshold1):
-        """Sets the network_latency_threshold1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the network_latency_threshold1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         网络延时阈值1（ms）。取值范围为[1-2000]。默认：160。
 
@@ -270,7 +270,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def network_latency_threshold2(self):
-        """Gets the network_latency_threshold2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the network_latency_threshold2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         网络延时阈值2（ms）。取值范围为[1-2000]。默认：300。
 
@@ -281,7 +281,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @network_latency_threshold2.setter
     def network_latency_threshold2(self, network_latency_threshold2):
-        """Sets the network_latency_threshold2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the network_latency_threshold2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         网络延时阈值2（ms）。取值范围为[1-2000]。默认：300。
 
@@ -292,7 +292,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def min_dynamic_frame_rate(self):
-        """Gets the min_dynamic_frame_rate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the min_dynamic_frame_rate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         最小动态帧率（fps）。取值范围为[1-60]。默认：17。
 
@@ -303,7 +303,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @min_dynamic_frame_rate.setter
     def min_dynamic_frame_rate(self, min_dynamic_frame_rate):
-        """Sets the min_dynamic_frame_rate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the min_dynamic_frame_rate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         最小动态帧率（fps）。取值范围为[1-60]。默认：17。
 
@@ -314,7 +314,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def min_dynamic_frame_rate_lv1(self):
-        """Gets the min_dynamic_frame_rate_lv1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the min_dynamic_frame_rate_lv1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         最小动态帧率Lv1（fps）。取值范围为[1-60]。默认：17。
 
@@ -325,7 +325,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @min_dynamic_frame_rate_lv1.setter
     def min_dynamic_frame_rate_lv1(self, min_dynamic_frame_rate_lv1):
-        """Sets the min_dynamic_frame_rate_lv1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the min_dynamic_frame_rate_lv1 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         最小动态帧率Lv1（fps）。取值范围为[1-60]。默认：17。
 
@@ -336,7 +336,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def min_dynamic_frame_rate_lv2(self):
-        """Gets the min_dynamic_frame_rate_lv2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the min_dynamic_frame_rate_lv2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         最小动态帧率Lv2（fps）。取值范围为[1-60]。默认：10。
 
@@ -347,7 +347,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @min_dynamic_frame_rate_lv2.setter
     def min_dynamic_frame_rate_lv2(self, min_dynamic_frame_rate_lv2):
-        """Sets the min_dynamic_frame_rate_lv2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the min_dynamic_frame_rate_lv2 of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         最小动态帧率Lv2（fps）。取值范围为[1-60]。默认：10。
 
@@ -358,7 +358,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def rtt_threshold(self):
-        """Gets the rtt_threshold of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the rtt_threshold of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数1。取值范围为[0-1000]。默认：20。
 
@@ -369,7 +369,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @rtt_threshold.setter
     def rtt_threshold(self, rtt_threshold):
-        """Sets the rtt_threshold of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the rtt_threshold of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数1。取值范围为[0-1000]。默认：20。
 
@@ -380,7 +380,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def min_add_framerate(self):
-        """Gets the min_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the min_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数2。取值范围为[0-120]。默认：8。
 
@@ -391,7 +391,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @min_add_framerate.setter
     def min_add_framerate(self, min_add_framerate):
-        """Sets the min_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the min_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数2。取值范围为[0-120]。默认：8。
 
@@ -402,7 +402,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def max_add_framerate(self):
-        """Gets the max_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the max_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数3。取值范围为[0-120]。默认：20。
 
@@ -413,7 +413,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @max_add_framerate.setter
     def max_add_framerate(self, max_add_framerate):
-        """Sets the max_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the max_add_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数3。取值范围为[0-120]。默认：20。
 
@@ -424,7 +424,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def sub_framerate(self):
-        """Gets the sub_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the sub_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数4。取值范围为[0-120]。默认：25。
 
@@ -435,7 +435,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @sub_framerate.setter
     def sub_framerate(self, sub_framerate):
-        """Sets the sub_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the sub_framerate of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         帧率控制参数4。取值范围为[0-120]。默认：25。
 
@@ -446,7 +446,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_bandwidth_lower_limit(self):
-        """Gets the adaptive_bandwidth_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_bandwidth_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应带宽下限。取值范围为[100-20000]。默认：500。
 
@@ -457,7 +457,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_bandwidth_lower_limit.setter
     def adaptive_bandwidth_lower_limit(self, adaptive_bandwidth_lower_limit):
-        """Sets the adaptive_bandwidth_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_bandwidth_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应带宽下限。取值范围为[100-20000]。默认：500。
 
@@ -468,7 +468,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_compression_quality_lower_limit(self):
-        """Gets the adaptive_compression_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_compression_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量下限。取值范围为[1-100]。默认：60。
 
@@ -479,7 +479,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_compression_quality_lower_limit.setter
     def adaptive_compression_quality_lower_limit(self, adaptive_compression_quality_lower_limit):
-        """Sets the adaptive_compression_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_compression_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量下限。取值范围为[1-100]。默认：60。
 
@@ -490,7 +490,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_compression_quality_upper_limit(self):
-        """Gets the adaptive_compression_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_compression_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量上限。取值范围为[1-100]。默认：85。
 
@@ -501,7 +501,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_compression_quality_upper_limit.setter
     def adaptive_compression_quality_upper_limit(self, adaptive_compression_quality_upper_limit):
-        """Sets the adaptive_compression_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_compression_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量上限。取值范围为[1-100]。默认：85。
 
@@ -512,7 +512,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_compression_quality_increase_limit(self):
-        """Gets the adaptive_compression_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_compression_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量增限。取值范围为[1-100]。默认：5。
 
@@ -523,7 +523,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_compression_quality_increase_limit.setter
     def adaptive_compression_quality_increase_limit(self, adaptive_compression_quality_increase_limit):
-        """Sets the adaptive_compression_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_compression_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量增限。取值范围为[1-100]。默认：5。
 
@@ -534,7 +534,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_compression_quality_decrease_limit(self):
-        """Gets the adaptive_compression_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_compression_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量减限。取值范围为[1-100]。默认：10。
 
@@ -545,7 +545,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_compression_quality_decrease_limit.setter
     def adaptive_compression_quality_decrease_limit(self, adaptive_compression_quality_decrease_limit):
-        """Sets the adaptive_compression_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_compression_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应有损压缩质量减限。取值范围为[1-100]。默认：10。
 
@@ -556,7 +556,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_average_quality_lower_limit(self):
-        """Gets the adaptive_average_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_average_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量下限。取值范围为[5-50]。默认：15。
 
@@ -567,7 +567,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_average_quality_lower_limit.setter
     def adaptive_average_quality_lower_limit(self, adaptive_average_quality_lower_limit):
-        """Sets the adaptive_average_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_average_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量下限。取值范围为[5-50]。默认：15。
 
@@ -578,7 +578,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_average_quality_upper_limit(self):
-        """Gets the adaptive_average_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_average_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量上限。取值范围为[5-50]。默认：25。
 
@@ -589,7 +589,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_average_quality_upper_limit.setter
     def adaptive_average_quality_upper_limit(self, adaptive_average_quality_upper_limit):
-        """Sets the adaptive_average_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_average_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量上限。取值范围为[5-50]。默认：25。
 
@@ -600,7 +600,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_average_quality_increase_limit(self):
-        """Gets the adaptive_average_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_average_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量增限。取值范围为[1-50]。默认：3。
 
@@ -611,7 +611,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_average_quality_increase_limit.setter
     def adaptive_average_quality_increase_limit(self, adaptive_average_quality_increase_limit):
-        """Sets the adaptive_average_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_average_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量增限。取值范围为[1-50]。默认：3。
 
@@ -622,7 +622,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_average_quality_decrease_limit(self):
-        """Gets the adaptive_average_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_average_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量减限。取值范围为[1-50]。默认：1。
 
@@ -633,7 +633,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_average_quality_decrease_limit.setter
     def adaptive_average_quality_decrease_limit(self, adaptive_average_quality_decrease_limit):
-        """Sets the adaptive_average_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_average_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频平均质量减限。取值范围为[1-50]。默认：1。
 
@@ -644,7 +644,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_min_quality_lower_limit(self):
-        """Gets the adaptive_min_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_min_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量下限。取值范围为[5-69]。默认：25。
 
@@ -655,7 +655,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_min_quality_lower_limit.setter
     def adaptive_min_quality_lower_limit(self, adaptive_min_quality_lower_limit):
-        """Sets the adaptive_min_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_min_quality_lower_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量下限。取值范围为[5-69]。默认：25。
 
@@ -666,7 +666,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_min_quality_upper_limit(self):
-        """Gets the adaptive_min_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_min_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量上限。取值范围为[5-69]。默认：30。
 
@@ -677,7 +677,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_min_quality_upper_limit.setter
     def adaptive_min_quality_upper_limit(self, adaptive_min_quality_upper_limit):
-        """Sets the adaptive_min_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_min_quality_upper_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量上限。取值范围为[5-69]。默认：30。
 
@@ -688,7 +688,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_min_quality_increase_limit(self):
-        """Gets the adaptive_min_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_min_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量增限。取值范围为[1-50]。默认：3。
 
@@ -699,7 +699,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_min_quality_increase_limit.setter
     def adaptive_min_quality_increase_limit(self, adaptive_min_quality_increase_limit):
-        """Sets the adaptive_min_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_min_quality_increase_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量增限。取值范围为[1-50]。默认：3。
 
@@ -710,7 +710,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @property
     def adaptive_min_quality_decrease_limit(self):
-        """Gets the adaptive_min_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Gets the adaptive_min_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量减限。取值范围为[1-50]。默认：1。
 
@@ -721,7 +721,7 @@ class PoliciesDisplayAdaptiveBitrateControlOptions:
 
     @adaptive_min_quality_decrease_limit.setter
     def adaptive_min_quality_decrease_limit(self, adaptive_min_quality_decrease_limit):
-        """Sets the adaptive_min_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
+        r"""Sets the adaptive_min_quality_decrease_limit of this PoliciesDisplayAdaptiveBitrateControlOptions.
 
         自适应视频最低质量减限。取值范围为[1-50]。默认：1。
 

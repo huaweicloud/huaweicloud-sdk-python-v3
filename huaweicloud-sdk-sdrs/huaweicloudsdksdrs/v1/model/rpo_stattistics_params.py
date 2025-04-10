@@ -35,7 +35,7 @@ class RpoStattisticsParams:
     }
 
     def __init__(self, id=None, point_time=None, resource_num=None, resource_type=None, created_at=None, updated_at=None):
-        """RpoStattisticsParams
+        r"""RpoStattisticsParams
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class RpoStattisticsParams:
 
     @property
     def id(self):
-        """Gets the id of this RpoStattisticsParams.
+        r"""Gets the id of this RpoStattisticsParams.
 
         资源的RPO超标趋势记录id。
 
@@ -83,7 +83,7 @@ class RpoStattisticsParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RpoStattisticsParams.
+        r"""Sets the id of this RpoStattisticsParams.
 
         资源的RPO超标趋势记录id。
 
@@ -94,7 +94,7 @@ class RpoStattisticsParams:
 
     @property
     def point_time(self):
-        """Gets the point_time of this RpoStattisticsParams.
+        r"""Gets the point_time of this RpoStattisticsParams.
 
         资源的RPO超标趋势记录打点时间。默认格式为：\"yyyy-MM-dd HH:mm\"。
 
@@ -105,7 +105,7 @@ class RpoStattisticsParams:
 
     @point_time.setter
     def point_time(self, point_time):
-        """Sets the point_time of this RpoStattisticsParams.
+        r"""Sets the point_time of this RpoStattisticsParams.
 
         资源的RPO超标趋势记录打点时间。默认格式为：\"yyyy-MM-dd HH:mm\"。
 
@@ -116,7 +116,7 @@ class RpoStattisticsParams:
 
     @property
     def resource_num(self):
-        """Gets the resource_num of this RpoStattisticsParams.
+        r"""Gets the resource_num of this RpoStattisticsParams.
 
         RPO超标的资源个数。
 
@@ -127,7 +127,7 @@ class RpoStattisticsParams:
 
     @resource_num.setter
     def resource_num(self, resource_num):
-        """Sets the resource_num of this RpoStattisticsParams.
+        r"""Sets the resource_num of this RpoStattisticsParams.
 
         RPO超标的资源个数。
 
@@ -138,7 +138,7 @@ class RpoStattisticsParams:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this RpoStattisticsParams.
+        r"""Gets the resource_type of this RpoStattisticsParams.
 
         RPO超标的资源类型。replication：表示查询复制对的RPO超标趋势记录。
 
@@ -149,7 +149,7 @@ class RpoStattisticsParams:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this RpoStattisticsParams.
+        r"""Sets the resource_type of this RpoStattisticsParams.
 
         RPO超标的资源类型。replication：表示查询复制对的RPO超标趋势记录。
 
@@ -160,7 +160,7 @@ class RpoStattisticsParams:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RpoStattisticsParams.
+        r"""Gets the created_at of this RpoStattisticsParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -171,7 +171,7 @@ class RpoStattisticsParams:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RpoStattisticsParams.
+        r"""Sets the created_at of this RpoStattisticsParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -182,7 +182,7 @@ class RpoStattisticsParams:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RpoStattisticsParams.
+        r"""Gets the updated_at of this RpoStattisticsParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -193,7 +193,7 @@ class RpoStattisticsParams:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RpoStattisticsParams.
+        r"""Sets the updated_at of this RpoStattisticsParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 

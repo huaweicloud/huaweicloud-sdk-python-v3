@@ -23,7 +23,7 @@ class AdmetPropertyDictWithCustom:
     }
 
     def __init__(self):
-        """AdmetPropertyDictWithCustom
+        r"""AdmetPropertyDictWithCustom
 
         The model defined in huaweicloud sdk
 

@@ -24,7 +24,7 @@ class CancelCustomerOrderResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelCustomerOrderResponse
+        r"""CancelCustomerOrderResponse
 
         The model defined in huaweicloud sdk
 

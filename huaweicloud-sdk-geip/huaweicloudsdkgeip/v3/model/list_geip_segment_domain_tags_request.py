@@ -23,7 +23,7 @@ class ListGeipSegmentDomainTagsRequest:
     }
 
     def __init__(self):
-        """ListGeipSegmentDomainTagsRequest
+        r"""ListGeipSegmentDomainTagsRequest
 
         The model defined in huaweicloud sdk
 

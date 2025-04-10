@@ -27,7 +27,7 @@ class AdminUserInfoReq:
     }
 
     def __init__(self, name=None, password=None):
-        """AdminUserInfoReq
+        r"""AdminUserInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AdminUserInfoReq:
 
     @property
     def name(self):
-        """Gets the name of this AdminUserInfoReq.
+        r"""Gets the name of this AdminUserInfoReq.
 
         管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
@@ -59,7 +59,7 @@ class AdminUserInfoReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AdminUserInfoReq.
+        r"""Sets the name of this AdminUserInfoReq.
 
         管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
@@ -70,7 +70,7 @@ class AdminUserInfoReq:
 
     @property
     def password(self):
-        """Gets the password of this AdminUserInfoReq.
+        r"""Gets the password of this AdminUserInfoReq.
 
         管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -81,7 +81,7 @@ class AdminUserInfoReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this AdminUserInfoReq.
+        r"""Sets the password of this AdminUserInfoReq.
 
         管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 

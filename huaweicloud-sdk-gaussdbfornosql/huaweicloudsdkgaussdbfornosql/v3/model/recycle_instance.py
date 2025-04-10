@@ -45,7 +45,7 @@ class RecycleInstance:
     }
 
     def __init__(self, id=None, name=None, mode=None, product_type=None, datastore=None, charge_mode=None, enterprise_project_id=None, backup_id=None, created_at=None, deleted_at=None, retained_until=None):
-        """RecycleInstance
+        r"""RecycleInstance
 
         The model defined in huaweicloud sdk
 
@@ -53,7 +53,7 @@ class RecycleInstance:
         :type id: str
         :param name: 实例名称。
         :type name: str
-        :param mode: 实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis 经典部署模式Proxy 集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis经典部署模式Cluster集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx 经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        :param mode: 实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
         :type mode: str
         :param product_type: 产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
         :type product_type: str
@@ -113,7 +113,7 @@ class RecycleInstance:
 
     @property
     def id(self):
-        """Gets the id of this RecycleInstance.
+        r"""Gets the id of this RecycleInstance.
 
         实例ID。
 
@@ -124,7 +124,7 @@ class RecycleInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecycleInstance.
+        r"""Sets the id of this RecycleInstance.
 
         实例ID。
 
@@ -135,7 +135,7 @@ class RecycleInstance:
 
     @property
     def name(self):
-        """Gets the name of this RecycleInstance.
+        r"""Gets the name of this RecycleInstance.
 
         实例名称。
 
@@ -146,7 +146,7 @@ class RecycleInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecycleInstance.
+        r"""Sets the name of this RecycleInstance.
 
         实例名称。
 
@@ -157,9 +157,9 @@ class RecycleInstance:
 
     @property
     def mode(self):
-        """Gets the mode of this RecycleInstance.
+        r"""Gets the mode of this RecycleInstance.
 
-        实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis 经典部署模式Proxy 集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis经典部署模式Cluster集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx 经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
 
         :return: The mode of this RecycleInstance.
         :rtype: str
@@ -168,9 +168,9 @@ class RecycleInstance:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RecycleInstance.
+        r"""Sets the mode of this RecycleInstance.
 
-        实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis 经典部署模式Proxy 集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis经典部署模式Cluster集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx 经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
 
         :param mode: The mode of this RecycleInstance.
         :type mode: str
@@ -179,7 +179,7 @@ class RecycleInstance:
 
     @property
     def product_type(self):
-        """Gets the product_type of this RecycleInstance.
+        r"""Gets the product_type of this RecycleInstance.
 
         产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
 
@@ -190,7 +190,7 @@ class RecycleInstance:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this RecycleInstance.
+        r"""Sets the product_type of this RecycleInstance.
 
         产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
 
@@ -201,7 +201,7 @@ class RecycleInstance:
 
     @property
     def datastore(self):
-        """Gets the datastore of this RecycleInstance.
+        r"""Gets the datastore of this RecycleInstance.
 
         :return: The datastore of this RecycleInstance.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
@@ -210,7 +210,7 @@ class RecycleInstance:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this RecycleInstance.
+        r"""Sets the datastore of this RecycleInstance.
 
         :param datastore: The datastore of this RecycleInstance.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
@@ -219,7 +219,7 @@ class RecycleInstance:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this RecycleInstance.
+        r"""Gets the charge_mode of this RecycleInstance.
 
         计费方式。 计费方式。   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
 
@@ -230,7 +230,7 @@ class RecycleInstance:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this RecycleInstance.
+        r"""Sets the charge_mode of this RecycleInstance.
 
         计费方式。 计费方式。   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
 
@@ -241,7 +241,7 @@ class RecycleInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RecycleInstance.
+        r"""Gets the enterprise_project_id of this RecycleInstance.
 
         企业项目ID，取值为“0”，表示为default企业项目
 
@@ -252,7 +252,7 @@ class RecycleInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RecycleInstance.
+        r"""Sets the enterprise_project_id of this RecycleInstance.
 
         企业项目ID，取值为“0”，表示为default企业项目
 
@@ -263,7 +263,7 @@ class RecycleInstance:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RecycleInstance.
+        r"""Gets the backup_id of this RecycleInstance.
 
         备份ID。
 
@@ -274,7 +274,7 @@ class RecycleInstance:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RecycleInstance.
+        r"""Sets the backup_id of this RecycleInstance.
 
         备份ID。
 
@@ -285,7 +285,7 @@ class RecycleInstance:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RecycleInstance.
+        r"""Gets the created_at of this RecycleInstance.
 
         实例创建时间。
 
@@ -296,7 +296,7 @@ class RecycleInstance:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RecycleInstance.
+        r"""Sets the created_at of this RecycleInstance.
 
         实例创建时间。
 
@@ -307,7 +307,7 @@ class RecycleInstance:
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this RecycleInstance.
+        r"""Gets the deleted_at of this RecycleInstance.
 
         实例删除时间。
 
@@ -318,7 +318,7 @@ class RecycleInstance:
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this RecycleInstance.
+        r"""Sets the deleted_at of this RecycleInstance.
 
         实例删除时间。
 
@@ -329,7 +329,7 @@ class RecycleInstance:
 
     @property
     def retained_until(self):
-        """Gets the retained_until of this RecycleInstance.
+        r"""Gets the retained_until of this RecycleInstance.
 
         回收备份保留截止时间。
 
@@ -340,7 +340,7 @@ class RecycleInstance:
 
     @retained_until.setter
     def retained_until(self, retained_until):
-        """Sets the retained_until of this RecycleInstance.
+        r"""Sets the retained_until of this RecycleInstance.
 
         回收备份保留截止时间。
 

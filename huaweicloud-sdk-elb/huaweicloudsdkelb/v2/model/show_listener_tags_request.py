@@ -25,7 +25,7 @@ class ShowListenerTagsRequest:
     }
 
     def __init__(self, listener_id=None):
-        """ShowListenerTagsRequest
+        r"""ShowListenerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowListenerTagsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ShowListenerTagsRequest.
+        r"""Gets the listener_id of this ShowListenerTagsRequest.
 
         监听器ID。
 
@@ -53,7 +53,7 @@ class ShowListenerTagsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ShowListenerTagsRequest.
+        r"""Sets the listener_id of this ShowListenerTagsRequest.
 
         监听器ID。
 

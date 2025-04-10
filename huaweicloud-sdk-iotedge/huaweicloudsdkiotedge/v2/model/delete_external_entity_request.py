@@ -27,7 +27,7 @@ class DeleteExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, external_id=None):
-        """DeleteExternalEntityRequest
+        r"""DeleteExternalEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteExternalEntityRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this DeleteExternalEntityRequest.
+        r"""Gets the edge_node_id of this DeleteExternalEntityRequest.
 
         边缘节点ID
 
@@ -59,7 +59,7 @@ class DeleteExternalEntityRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this DeleteExternalEntityRequest.
+        r"""Sets the edge_node_id of this DeleteExternalEntityRequest.
 
         边缘节点ID
 
@@ -70,7 +70,7 @@ class DeleteExternalEntityRequest:
 
     @property
     def external_id(self):
-        """Gets the external_id of this DeleteExternalEntityRequest.
+        r"""Gets the external_id of this DeleteExternalEntityRequest.
 
         外部实体ID
 
@@ -81,7 +81,7 @@ class DeleteExternalEntityRequest:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this DeleteExternalEntityRequest.
+        r"""Sets the external_id of this DeleteExternalEntityRequest.
 
         外部实体ID
 

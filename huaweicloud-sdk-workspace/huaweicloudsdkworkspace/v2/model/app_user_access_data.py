@@ -33,7 +33,7 @@ class AppUserAccessData:
     }
 
     def __init__(self, username=None, access_failed_count=None, last_access_failed_time=None, error_code=None, error_msg=None):
-        """AppUserAccessData
+        r"""AppUserAccessData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AppUserAccessData:
 
     @property
     def username(self):
-        """Gets the username of this AppUserAccessData.
+        r"""Gets the username of this AppUserAccessData.
 
         用户名称
 
@@ -82,7 +82,7 @@ class AppUserAccessData:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this AppUserAccessData.
+        r"""Sets the username of this AppUserAccessData.
 
         用户名称
 
@@ -93,7 +93,7 @@ class AppUserAccessData:
 
     @property
     def access_failed_count(self):
-        """Gets the access_failed_count of this AppUserAccessData.
+        r"""Gets the access_failed_count of this AppUserAccessData.
 
         接入失败数
 
@@ -104,7 +104,7 @@ class AppUserAccessData:
 
     @access_failed_count.setter
     def access_failed_count(self, access_failed_count):
-        """Sets the access_failed_count of this AppUserAccessData.
+        r"""Sets the access_failed_count of this AppUserAccessData.
 
         接入失败数
 
@@ -115,7 +115,7 @@ class AppUserAccessData:
 
     @property
     def last_access_failed_time(self):
-        """Gets the last_access_failed_time of this AppUserAccessData.
+        r"""Gets the last_access_failed_time of this AppUserAccessData.
 
         最近一次接入失败时间，UTC时间，格式为：2022-05-11T11:45:42Z
 
@@ -126,7 +126,7 @@ class AppUserAccessData:
 
     @last_access_failed_time.setter
     def last_access_failed_time(self, last_access_failed_time):
-        """Sets the last_access_failed_time of this AppUserAccessData.
+        r"""Sets the last_access_failed_time of this AppUserAccessData.
 
         最近一次接入失败时间，UTC时间，格式为：2022-05-11T11:45:42Z
 
@@ -137,7 +137,7 @@ class AppUserAccessData:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AppUserAccessData.
+        r"""Gets the error_code of this AppUserAccessData.
 
         错误码
 
@@ -148,7 +148,7 @@ class AppUserAccessData:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AppUserAccessData.
+        r"""Sets the error_code of this AppUserAccessData.
 
         错误码
 
@@ -159,7 +159,7 @@ class AppUserAccessData:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AppUserAccessData.
+        r"""Gets the error_msg of this AppUserAccessData.
 
         错误信息
 
@@ -170,7 +170,7 @@ class AppUserAccessData:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AppUserAccessData.
+        r"""Sets the error_msg of this AppUserAccessData.
 
         错误信息
 

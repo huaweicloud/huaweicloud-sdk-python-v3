@@ -27,7 +27,7 @@ class MessageItem:
     }
 
     def __init__(self, role=None, content=None):
-        """MessageItem
+        r"""MessageItem
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MessageItem:
 
     @property
     def role(self):
-        """Gets the role of this MessageItem.
+        r"""Gets the role of this MessageItem.
 
         角色
 
@@ -60,7 +60,7 @@ class MessageItem:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this MessageItem.
+        r"""Sets the role of this MessageItem.
 
         角色
 
@@ -71,7 +71,7 @@ class MessageItem:
 
     @property
     def content(self):
-        """Gets the content of this MessageItem.
+        r"""Gets the content of this MessageItem.
 
         模型响应
 
@@ -82,7 +82,7 @@ class MessageItem:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this MessageItem.
+        r"""Sets the content of this MessageItem.
 
         模型响应
 

@@ -30,7 +30,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_acl_type=None, app_acl_values=None):
-        """ShowDetailsOfAppAclResponse
+        r"""ShowDetailsOfAppAclResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDetailsOfAppAclResponse.
+        r"""Gets the app_id of this ShowDetailsOfAppAclResponse.
 
         APP编号
 
@@ -69,7 +69,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDetailsOfAppAclResponse.
+        r"""Sets the app_id of this ShowDetailsOfAppAclResponse.
 
         APP编号
 
@@ -80,7 +80,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
     @property
     def app_acl_type(self):
-        """Gets the app_acl_type of this ShowDetailsOfAppAclResponse.
+        r"""Gets the app_acl_type of this ShowDetailsOfAppAclResponse.
 
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
@@ -91,7 +91,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
     @app_acl_type.setter
     def app_acl_type(self, app_acl_type):
-        """Sets the app_acl_type of this ShowDetailsOfAppAclResponse.
+        r"""Sets the app_acl_type of this ShowDetailsOfAppAclResponse.
 
         类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
 
@@ -102,7 +102,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
     @property
     def app_acl_values(self):
-        """Gets the app_acl_values of this ShowDetailsOfAppAclResponse.
+        r"""Gets the app_acl_values of this ShowDetailsOfAppAclResponse.
 
         ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
 
@@ -113,7 +113,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
     @app_acl_values.setter
     def app_acl_values(self, app_acl_values):
-        """Sets the app_acl_values of this ShowDetailsOfAppAclResponse.
+        r"""Sets the app_acl_values of this ShowDetailsOfAppAclResponse.
 
         ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
 

@@ -27,7 +27,7 @@ class UpdateEndpointServiceRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """UpdateEndpointServiceRequest
+        r"""UpdateEndpointServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEndpointServiceRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this UpdateEndpointServiceRequest.
+        r"""Gets the vpc_endpoint_service_id of this UpdateEndpointServiceRequest.
 
         终端节点服务的ID
 
@@ -60,7 +60,7 @@ class UpdateEndpointServiceRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this UpdateEndpointServiceRequest.
+        r"""Sets the vpc_endpoint_service_id of this UpdateEndpointServiceRequest.
 
         终端节点服务的ID
 
@@ -71,7 +71,7 @@ class UpdateEndpointServiceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointServiceRequest.
+        r"""Gets the body of this UpdateEndpointServiceRequest.
 
         :return: The body of this UpdateEndpointServiceRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceRequestBody`
@@ -80,7 +80,7 @@ class UpdateEndpointServiceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointServiceRequest.
+        r"""Sets the body of this UpdateEndpointServiceRequest.
 
         :param body: The body of this UpdateEndpointServiceRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceRequestBody`

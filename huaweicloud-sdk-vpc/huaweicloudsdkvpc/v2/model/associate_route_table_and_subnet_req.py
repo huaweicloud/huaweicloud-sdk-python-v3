@@ -27,7 +27,7 @@ class AssociateRouteTableAndSubnetReq:
     }
 
     def __init__(self, associate=None, disassociate=None):
-        """AssociateRouteTableAndSubnetReq
+        r"""AssociateRouteTableAndSubnetReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociateRouteTableAndSubnetReq:
 
     @property
     def associate(self):
-        """Gets the associate of this AssociateRouteTableAndSubnetReq.
+        r"""Gets the associate of this AssociateRouteTableAndSubnetReq.
 
         路由表关联子网ID列表 
 
@@ -61,7 +61,7 @@ class AssociateRouteTableAndSubnetReq:
 
     @associate.setter
     def associate(self, associate):
-        """Sets the associate of this AssociateRouteTableAndSubnetReq.
+        r"""Sets the associate of this AssociateRouteTableAndSubnetReq.
 
         路由表关联子网ID列表 
 
@@ -72,7 +72,7 @@ class AssociateRouteTableAndSubnetReq:
 
     @property
     def disassociate(self):
-        """Gets the disassociate of this AssociateRouteTableAndSubnetReq.
+        r"""Gets the disassociate of this AssociateRouteTableAndSubnetReq.
 
         路由表解除关联子网ID列表
 
@@ -83,7 +83,7 @@ class AssociateRouteTableAndSubnetReq:
 
     @disassociate.setter
     def disassociate(self, disassociate):
-        """Sets the disassociate of this AssociateRouteTableAndSubnetReq.
+        r"""Sets the disassociate of this AssociateRouteTableAndSubnetReq.
 
         路由表解除关联子网ID列表
 

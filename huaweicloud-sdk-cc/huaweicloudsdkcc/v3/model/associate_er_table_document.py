@@ -31,7 +31,7 @@ class AssociateErTableDocument:
     }
 
     def __init__(self, project_id=None, region_id=None, enterprise_router_id=None, enterprise_router_table_id=None):
-        """AssociateErTableDocument
+        r"""AssociateErTableDocument
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AssociateErTableDocument:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateErTableDocument.
+        r"""Gets the project_id of this AssociateErTableDocument.
 
         实例所属项目ID。
 
@@ -71,7 +71,7 @@ class AssociateErTableDocument:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateErTableDocument.
+        r"""Sets the project_id of this AssociateErTableDocument.
 
         实例所属项目ID。
 
@@ -82,7 +82,7 @@ class AssociateErTableDocument:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AssociateErTableDocument.
+        r"""Gets the region_id of this AssociateErTableDocument.
 
         RegionID。
 
@@ -93,7 +93,7 @@ class AssociateErTableDocument:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AssociateErTableDocument.
+        r"""Sets the region_id of this AssociateErTableDocument.
 
         RegionID。
 
@@ -104,7 +104,7 @@ class AssociateErTableDocument:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this AssociateErTableDocument.
+        r"""Gets the enterprise_router_id of this AssociateErTableDocument.
 
         企业路由器的ID。
 
@@ -115,7 +115,7 @@ class AssociateErTableDocument:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this AssociateErTableDocument.
+        r"""Sets the enterprise_router_id of this AssociateErTableDocument.
 
         企业路由器的ID。
 
@@ -126,7 +126,7 @@ class AssociateErTableDocument:
 
     @property
     def enterprise_router_table_id(self):
-        """Gets the enterprise_router_table_id of this AssociateErTableDocument.
+        r"""Gets the enterprise_router_table_id of this AssociateErTableDocument.
 
         企业路由器的路由表ID。
 
@@ -137,7 +137,7 @@ class AssociateErTableDocument:
 
     @enterprise_router_table_id.setter
     def enterprise_router_table_id(self, enterprise_router_table_id):
-        """Sets the enterprise_router_table_id of this AssociateErTableDocument.
+        r"""Sets the enterprise_router_table_id of this AssociateErTableDocument.
 
         企业路由器的路由表ID。
 

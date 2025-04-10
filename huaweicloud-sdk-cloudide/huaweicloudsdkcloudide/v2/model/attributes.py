@@ -29,7 +29,7 @@ class Attributes:
     }
 
     def __init__(self, cpu_limit=None, memory_limit_bytes=None, pvc_quantity=None):
-        """Attributes
+        r"""Attributes
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Attributes:
 
     @property
     def cpu_limit(self):
-        """Gets the cpu_limit of this Attributes.
+        r"""Gets the cpu_limit of this Attributes.
 
         cpu限制
 
@@ -68,7 +68,7 @@ class Attributes:
 
     @cpu_limit.setter
     def cpu_limit(self, cpu_limit):
-        """Sets the cpu_limit of this Attributes.
+        r"""Sets the cpu_limit of this Attributes.
 
         cpu限制
 
@@ -79,7 +79,7 @@ class Attributes:
 
     @property
     def memory_limit_bytes(self):
-        """Gets the memory_limit_bytes of this Attributes.
+        r"""Gets the memory_limit_bytes of this Attributes.
 
         内存限制
 
@@ -90,7 +90,7 @@ class Attributes:
 
     @memory_limit_bytes.setter
     def memory_limit_bytes(self, memory_limit_bytes):
-        """Sets the memory_limit_bytes of this Attributes.
+        r"""Sets the memory_limit_bytes of this Attributes.
 
         内存限制
 
@@ -101,7 +101,7 @@ class Attributes:
 
     @property
     def pvc_quantity(self):
-        """Gets the pvc_quantity of this Attributes.
+        r"""Gets the pvc_quantity of this Attributes.
 
         pvc规格
 
@@ -112,7 +112,7 @@ class Attributes:
 
     @pvc_quantity.setter
     def pvc_quantity(self, pvc_quantity):
-        """Sets the pvc_quantity of this Attributes.
+        r"""Sets the pvc_quantity of this Attributes.
 
         pvc规格
 

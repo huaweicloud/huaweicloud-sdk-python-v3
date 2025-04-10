@@ -24,7 +24,7 @@ class PauseUpgradeClusterTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PauseUpgradeClusterTaskResponse
+        r"""PauseUpgradeClusterTaskResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class CheckAgentRequest:
     }
 
     def __init__(self, body=None):
-        """CheckAgentRequest
+        r"""CheckAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckAgentRequest.
+        r"""Gets the body of this CheckAgentRequest.
 
         :return: The body of this CheckAgentRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.ProtectableAgentReq`
@@ -52,7 +52,7 @@ class CheckAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckAgentRequest.
+        r"""Sets the body of this CheckAgentRequest.
 
         :param body: The body of this CheckAgentRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.ProtectableAgentReq`

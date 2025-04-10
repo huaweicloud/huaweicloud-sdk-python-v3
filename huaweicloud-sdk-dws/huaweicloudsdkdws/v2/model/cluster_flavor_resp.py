@@ -27,7 +27,7 @@ class ClusterFlavorResp:
     }
 
     def __init__(self, id=None, links=None):
-        """ClusterFlavorResp
+        r"""ClusterFlavorResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterFlavorResp:
 
     @property
     def id(self):
-        """Gets the id of this ClusterFlavorResp.
+        r"""Gets the id of this ClusterFlavorResp.
 
         ID
 
@@ -61,7 +61,7 @@ class ClusterFlavorResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterFlavorResp.
+        r"""Sets the id of this ClusterFlavorResp.
 
         ID
 
@@ -72,7 +72,7 @@ class ClusterFlavorResp:
 
     @property
     def links(self):
-        """Gets the links of this ClusterFlavorResp.
+        r"""Gets the links of this ClusterFlavorResp.
 
         连接
 
@@ -83,7 +83,7 @@ class ClusterFlavorResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ClusterFlavorResp.
+        r"""Sets the links of this ClusterFlavorResp.
 
         连接
 

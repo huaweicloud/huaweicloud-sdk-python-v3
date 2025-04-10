@@ -29,7 +29,7 @@ class VideoModerationResultResult:
     }
 
     def __init__(self, suggestion=None, image_detail=None, audio_detail=None):
-        """VideoModerationResultResult
+        r"""VideoModerationResultResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VideoModerationResultResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this VideoModerationResultResult.
+        r"""Gets the suggestion of this VideoModerationResultResult.
 
         视频审核结果是否通过。 block：包含敏感信息，不通过  review：需要人工复检 pass：不包含敏感信息，通过
 
@@ -68,7 +68,7 @@ class VideoModerationResultResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this VideoModerationResultResult.
+        r"""Sets the suggestion of this VideoModerationResultResult.
 
         视频审核结果是否通过。 block：包含敏感信息，不通过  review：需要人工复检 pass：不包含敏感信息，通过
 
@@ -79,7 +79,7 @@ class VideoModerationResultResult:
 
     @property
     def image_detail(self):
-        """Gets the image_detail of this VideoModerationResultResult.
+        r"""Gets the image_detail of this VideoModerationResultResult.
 
         图像审核详情
 
@@ -90,7 +90,7 @@ class VideoModerationResultResult:
 
     @image_detail.setter
     def image_detail(self, image_detail):
-        """Sets the image_detail of this VideoModerationResultResult.
+        r"""Sets the image_detail of this VideoModerationResultResult.
 
         图像审核详情
 
@@ -101,7 +101,7 @@ class VideoModerationResultResult:
 
     @property
     def audio_detail(self):
-        """Gets the audio_detail of this VideoModerationResultResult.
+        r"""Gets the audio_detail of this VideoModerationResultResult.
 
         音频审核详情
 
@@ -112,7 +112,7 @@ class VideoModerationResultResult:
 
     @audio_detail.setter
     def audio_detail(self, audio_detail):
-        """Sets the audio_detail of this VideoModerationResultResult.
+        r"""Sets the audio_detail of this VideoModerationResultResult.
 
         音频审核详情
 

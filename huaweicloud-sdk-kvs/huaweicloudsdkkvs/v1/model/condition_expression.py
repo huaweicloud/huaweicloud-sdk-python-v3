@@ -31,7 +31,7 @@ class ConditionExpression:
     }
 
     def __init__(self, single_field_expression=None, multi_field_expression=None, composed_expression=None, single_kv_expression=None):
-        """ConditionExpression
+        r"""ConditionExpression
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConditionExpression:
 
     @property
     def single_field_expression(self):
-        """Gets the single_field_expression of this ConditionExpression.
+        r"""Gets the single_field_expression of this ConditionExpression.
 
         :return: The single_field_expression of this ConditionExpression.
         :rtype: :class:`huaweicloudsdkkvs.v1.SingleFieldExpression`
@@ -73,7 +73,7 @@ class ConditionExpression:
 
     @single_field_expression.setter
     def single_field_expression(self, single_field_expression):
-        """Sets the single_field_expression of this ConditionExpression.
+        r"""Sets the single_field_expression of this ConditionExpression.
 
         :param single_field_expression: The single_field_expression of this ConditionExpression.
         :type single_field_expression: :class:`huaweicloudsdkkvs.v1.SingleFieldExpression`
@@ -82,7 +82,7 @@ class ConditionExpression:
 
     @property
     def multi_field_expression(self):
-        """Gets the multi_field_expression of this ConditionExpression.
+        r"""Gets the multi_field_expression of this ConditionExpression.
 
         :return: The multi_field_expression of this ConditionExpression.
         :rtype: :class:`huaweicloudsdkkvs.v1.MultiFieldExpression`
@@ -91,7 +91,7 @@ class ConditionExpression:
 
     @multi_field_expression.setter
     def multi_field_expression(self, multi_field_expression):
-        """Sets the multi_field_expression of this ConditionExpression.
+        r"""Sets the multi_field_expression of this ConditionExpression.
 
         :param multi_field_expression: The multi_field_expression of this ConditionExpression.
         :type multi_field_expression: :class:`huaweicloudsdkkvs.v1.MultiFieldExpression`
@@ -100,7 +100,7 @@ class ConditionExpression:
 
     @property
     def composed_expression(self):
-        """Gets the composed_expression of this ConditionExpression.
+        r"""Gets the composed_expression of this ConditionExpression.
 
         :return: The composed_expression of this ConditionExpression.
         :rtype: :class:`huaweicloudsdkkvs.v1.ComposedExpression`
@@ -109,7 +109,7 @@ class ConditionExpression:
 
     @composed_expression.setter
     def composed_expression(self, composed_expression):
-        """Sets the composed_expression of this ConditionExpression.
+        r"""Sets the composed_expression of this ConditionExpression.
 
         :param composed_expression: The composed_expression of this ConditionExpression.
         :type composed_expression: :class:`huaweicloudsdkkvs.v1.ComposedExpression`
@@ -118,7 +118,7 @@ class ConditionExpression:
 
     @property
     def single_kv_expression(self):
-        """Gets the single_kv_expression of this ConditionExpression.
+        r"""Gets the single_kv_expression of this ConditionExpression.
 
         :return: The single_kv_expression of this ConditionExpression.
         :rtype: :class:`huaweicloudsdkkvs.v1.SingleKvExpression`
@@ -127,7 +127,7 @@ class ConditionExpression:
 
     @single_kv_expression.setter
     def single_kv_expression(self, single_kv_expression):
-        """Sets the single_kv_expression of this ConditionExpression.
+        r"""Sets the single_kv_expression of this ConditionExpression.
 
         :param single_kv_expression: The single_kv_expression of this ConditionExpression.
         :type single_kv_expression: :class:`huaweicloudsdkkvs.v1.SingleKvExpression`

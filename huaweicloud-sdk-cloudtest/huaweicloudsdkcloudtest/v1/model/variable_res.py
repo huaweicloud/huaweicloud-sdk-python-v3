@@ -85,7 +85,7 @@ class VariableRes:
     }
 
     def __init__(self, by_order=None, category=None, create_time=None, create_time_stamp=None, create_time_string=None, create_user=None, current_permission=None, description=None, dynamic_param_flag=None, function_params=None, group_id=None, id=None, is_sensitive_info=None, is_sensitive_modified=None, locked=None, name=None, node_id=None, node_type=None, parent_id=None, parent_node_id=None, _property=None, region=None, sensitive_info_setter_time=None, sensitive_info_setter_user=None, source_id=None, type=None, update_time=None, update_time_stamp=None, update_time_string=None, update_user=None, variable_type=None):
-        """VariableRes
+        r"""VariableRes
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class VariableRes:
 
     @property
     def by_order(self):
-        """Gets the by_order of this VariableRes.
+        r"""Gets the by_order of this VariableRes.
 
         :return: The by_order of this VariableRes.
         :rtype: int
@@ -262,7 +262,7 @@ class VariableRes:
 
     @by_order.setter
     def by_order(self, by_order):
-        """Sets the by_order of this VariableRes.
+        r"""Sets the by_order of this VariableRes.
 
         :param by_order: The by_order of this VariableRes.
         :type by_order: int
@@ -271,7 +271,7 @@ class VariableRes:
 
     @property
     def category(self):
-        """Gets the category of this VariableRes.
+        r"""Gets the category of this VariableRes.
 
         :return: The category of this VariableRes.
         :rtype: str
@@ -280,7 +280,7 @@ class VariableRes:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this VariableRes.
+        r"""Sets the category of this VariableRes.
 
         :param category: The category of this VariableRes.
         :type category: str
@@ -289,7 +289,7 @@ class VariableRes:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VariableRes.
+        r"""Gets the create_time of this VariableRes.
 
         创建时间
 
@@ -300,7 +300,7 @@ class VariableRes:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VariableRes.
+        r"""Sets the create_time of this VariableRes.
 
         创建时间
 
@@ -311,7 +311,7 @@ class VariableRes:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this VariableRes.
+        r"""Gets the create_time_stamp of this VariableRes.
 
         :return: The create_time_stamp of this VariableRes.
         :rtype: int
@@ -320,7 +320,7 @@ class VariableRes:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this VariableRes.
+        r"""Sets the create_time_stamp of this VariableRes.
 
         :param create_time_stamp: The create_time_stamp of this VariableRes.
         :type create_time_stamp: int
@@ -329,7 +329,7 @@ class VariableRes:
 
     @property
     def create_time_string(self):
-        """Gets the create_time_string of this VariableRes.
+        r"""Gets the create_time_string of this VariableRes.
 
         :return: The create_time_string of this VariableRes.
         :rtype: str
@@ -338,7 +338,7 @@ class VariableRes:
 
     @create_time_string.setter
     def create_time_string(self, create_time_string):
-        """Sets the create_time_string of this VariableRes.
+        r"""Sets the create_time_string of this VariableRes.
 
         :param create_time_string: The create_time_string of this VariableRes.
         :type create_time_string: str
@@ -347,7 +347,7 @@ class VariableRes:
 
     @property
     def create_user(self):
-        """Gets the create_user of this VariableRes.
+        r"""Gets the create_user of this VariableRes.
 
         创建人
 
@@ -358,7 +358,7 @@ class VariableRes:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this VariableRes.
+        r"""Sets the create_user of this VariableRes.
 
         创建人
 
@@ -369,7 +369,7 @@ class VariableRes:
 
     @property
     def current_permission(self):
-        """Gets the current_permission of this VariableRes.
+        r"""Gets the current_permission of this VariableRes.
 
         :return: The current_permission of this VariableRes.
         :rtype: str
@@ -378,7 +378,7 @@ class VariableRes:
 
     @current_permission.setter
     def current_permission(self, current_permission):
-        """Sets the current_permission of this VariableRes.
+        r"""Sets the current_permission of this VariableRes.
 
         :param current_permission: The current_permission of this VariableRes.
         :type current_permission: str
@@ -387,7 +387,7 @@ class VariableRes:
 
     @property
     def description(self):
-        """Gets the description of this VariableRes.
+        r"""Gets the description of this VariableRes.
 
         :return: The description of this VariableRes.
         :rtype: str
@@ -396,7 +396,7 @@ class VariableRes:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VariableRes.
+        r"""Sets the description of this VariableRes.
 
         :param description: The description of this VariableRes.
         :type description: str
@@ -405,7 +405,7 @@ class VariableRes:
 
     @property
     def dynamic_param_flag(self):
-        """Gets the dynamic_param_flag of this VariableRes.
+        r"""Gets the dynamic_param_flag of this VariableRes.
 
         :return: The dynamic_param_flag of this VariableRes.
         :rtype: bool
@@ -414,7 +414,7 @@ class VariableRes:
 
     @dynamic_param_flag.setter
     def dynamic_param_flag(self, dynamic_param_flag):
-        """Sets the dynamic_param_flag of this VariableRes.
+        r"""Sets the dynamic_param_flag of this VariableRes.
 
         :param dynamic_param_flag: The dynamic_param_flag of this VariableRes.
         :type dynamic_param_flag: bool
@@ -423,7 +423,7 @@ class VariableRes:
 
     @property
     def function_params(self):
-        """Gets the function_params of this VariableRes.
+        r"""Gets the function_params of this VariableRes.
 
         :return: The function_params of this VariableRes.
         :rtype: str
@@ -432,7 +432,7 @@ class VariableRes:
 
     @function_params.setter
     def function_params(self, function_params):
-        """Sets the function_params of this VariableRes.
+        r"""Sets the function_params of this VariableRes.
 
         :param function_params: The function_params of this VariableRes.
         :type function_params: str
@@ -441,7 +441,7 @@ class VariableRes:
 
     @property
     def group_id(self):
-        """Gets the group_id of this VariableRes.
+        r"""Gets the group_id of this VariableRes.
 
         :return: The group_id of this VariableRes.
         :rtype: str
@@ -450,7 +450,7 @@ class VariableRes:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this VariableRes.
+        r"""Sets the group_id of this VariableRes.
 
         :param group_id: The group_id of this VariableRes.
         :type group_id: str
@@ -459,7 +459,7 @@ class VariableRes:
 
     @property
     def id(self):
-        """Gets the id of this VariableRes.
+        r"""Gets the id of this VariableRes.
 
         id
 
@@ -470,7 +470,7 @@ class VariableRes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VariableRes.
+        r"""Sets the id of this VariableRes.
 
         id
 
@@ -481,7 +481,7 @@ class VariableRes:
 
     @property
     def is_sensitive_info(self):
-        """Gets the is_sensitive_info of this VariableRes.
+        r"""Gets the is_sensitive_info of this VariableRes.
 
         :return: The is_sensitive_info of this VariableRes.
         :rtype: bool
@@ -490,7 +490,7 @@ class VariableRes:
 
     @is_sensitive_info.setter
     def is_sensitive_info(self, is_sensitive_info):
-        """Sets the is_sensitive_info of this VariableRes.
+        r"""Sets the is_sensitive_info of this VariableRes.
 
         :param is_sensitive_info: The is_sensitive_info of this VariableRes.
         :type is_sensitive_info: bool
@@ -499,7 +499,7 @@ class VariableRes:
 
     @property
     def is_sensitive_modified(self):
-        """Gets the is_sensitive_modified of this VariableRes.
+        r"""Gets the is_sensitive_modified of this VariableRes.
 
         :return: The is_sensitive_modified of this VariableRes.
         :rtype: bool
@@ -508,7 +508,7 @@ class VariableRes:
 
     @is_sensitive_modified.setter
     def is_sensitive_modified(self, is_sensitive_modified):
-        """Sets the is_sensitive_modified of this VariableRes.
+        r"""Sets the is_sensitive_modified of this VariableRes.
 
         :param is_sensitive_modified: The is_sensitive_modified of this VariableRes.
         :type is_sensitive_modified: bool
@@ -517,7 +517,7 @@ class VariableRes:
 
     @property
     def locked(self):
-        """Gets the locked of this VariableRes.
+        r"""Gets the locked of this VariableRes.
 
         :return: The locked of this VariableRes.
         :rtype: int
@@ -526,7 +526,7 @@ class VariableRes:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this VariableRes.
+        r"""Sets the locked of this VariableRes.
 
         :param locked: The locked of this VariableRes.
         :type locked: int
@@ -535,7 +535,7 @@ class VariableRes:
 
     @property
     def name(self):
-        """Gets the name of this VariableRes.
+        r"""Gets the name of this VariableRes.
 
         :return: The name of this VariableRes.
         :rtype: str
@@ -544,7 +544,7 @@ class VariableRes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VariableRes.
+        r"""Sets the name of this VariableRes.
 
         :param name: The name of this VariableRes.
         :type name: str
@@ -553,7 +553,7 @@ class VariableRes:
 
     @property
     def node_id(self):
-        """Gets the node_id of this VariableRes.
+        r"""Gets the node_id of this VariableRes.
 
         :return: The node_id of this VariableRes.
         :rtype: str
@@ -562,7 +562,7 @@ class VariableRes:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this VariableRes.
+        r"""Sets the node_id of this VariableRes.
 
         :param node_id: The node_id of this VariableRes.
         :type node_id: str
@@ -571,7 +571,7 @@ class VariableRes:
 
     @property
     def node_type(self):
-        """Gets the node_type of this VariableRes.
+        r"""Gets the node_type of this VariableRes.
 
         :return: The node_type of this VariableRes.
         :rtype: int
@@ -580,7 +580,7 @@ class VariableRes:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this VariableRes.
+        r"""Sets the node_type of this VariableRes.
 
         :param node_type: The node_type of this VariableRes.
         :type node_type: int
@@ -589,7 +589,7 @@ class VariableRes:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this VariableRes.
+        r"""Gets the parent_id of this VariableRes.
 
         :return: The parent_id of this VariableRes.
         :rtype: str
@@ -598,7 +598,7 @@ class VariableRes:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this VariableRes.
+        r"""Sets the parent_id of this VariableRes.
 
         :param parent_id: The parent_id of this VariableRes.
         :type parent_id: str
@@ -607,7 +607,7 @@ class VariableRes:
 
     @property
     def parent_node_id(self):
-        """Gets the parent_node_id of this VariableRes.
+        r"""Gets the parent_node_id of this VariableRes.
 
         :return: The parent_node_id of this VariableRes.
         :rtype: str
@@ -616,7 +616,7 @@ class VariableRes:
 
     @parent_node_id.setter
     def parent_node_id(self, parent_node_id):
-        """Sets the parent_node_id of this VariableRes.
+        r"""Sets the parent_node_id of this VariableRes.
 
         :param parent_node_id: The parent_node_id of this VariableRes.
         :type parent_node_id: str
@@ -625,7 +625,7 @@ class VariableRes:
 
     @property
     def _property(self):
-        """Gets the _property of this VariableRes.
+        r"""Gets the _property of this VariableRes.
 
         :return: The _property of this VariableRes.
         :rtype: str
@@ -634,7 +634,7 @@ class VariableRes:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this VariableRes.
+        r"""Sets the _property of this VariableRes.
 
         :param _property: The _property of this VariableRes.
         :type _property: str
@@ -643,7 +643,7 @@ class VariableRes:
 
     @property
     def region(self):
-        """Gets the region of this VariableRes.
+        r"""Gets the region of this VariableRes.
 
         :return: The region of this VariableRes.
         :rtype: str
@@ -652,7 +652,7 @@ class VariableRes:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this VariableRes.
+        r"""Sets the region of this VariableRes.
 
         :param region: The region of this VariableRes.
         :type region: str
@@ -661,7 +661,7 @@ class VariableRes:
 
     @property
     def sensitive_info_setter_time(self):
-        """Gets the sensitive_info_setter_time of this VariableRes.
+        r"""Gets the sensitive_info_setter_time of this VariableRes.
 
         :return: The sensitive_info_setter_time of this VariableRes.
         :rtype: str
@@ -670,7 +670,7 @@ class VariableRes:
 
     @sensitive_info_setter_time.setter
     def sensitive_info_setter_time(self, sensitive_info_setter_time):
-        """Sets the sensitive_info_setter_time of this VariableRes.
+        r"""Sets the sensitive_info_setter_time of this VariableRes.
 
         :param sensitive_info_setter_time: The sensitive_info_setter_time of this VariableRes.
         :type sensitive_info_setter_time: str
@@ -679,7 +679,7 @@ class VariableRes:
 
     @property
     def sensitive_info_setter_user(self):
-        """Gets the sensitive_info_setter_user of this VariableRes.
+        r"""Gets the sensitive_info_setter_user of this VariableRes.
 
         :return: The sensitive_info_setter_user of this VariableRes.
         :rtype: str
@@ -688,7 +688,7 @@ class VariableRes:
 
     @sensitive_info_setter_user.setter
     def sensitive_info_setter_user(self, sensitive_info_setter_user):
-        """Sets the sensitive_info_setter_user of this VariableRes.
+        r"""Sets the sensitive_info_setter_user of this VariableRes.
 
         :param sensitive_info_setter_user: The sensitive_info_setter_user of this VariableRes.
         :type sensitive_info_setter_user: str
@@ -697,7 +697,7 @@ class VariableRes:
 
     @property
     def source_id(self):
-        """Gets the source_id of this VariableRes.
+        r"""Gets the source_id of this VariableRes.
 
         :return: The source_id of this VariableRes.
         :rtype: str
@@ -706,7 +706,7 @@ class VariableRes:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this VariableRes.
+        r"""Sets the source_id of this VariableRes.
 
         :param source_id: The source_id of this VariableRes.
         :type source_id: str
@@ -715,7 +715,7 @@ class VariableRes:
 
     @property
     def type(self):
-        """Gets the type of this VariableRes.
+        r"""Gets the type of this VariableRes.
 
         :return: The type of this VariableRes.
         :rtype: str
@@ -724,7 +724,7 @@ class VariableRes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VariableRes.
+        r"""Sets the type of this VariableRes.
 
         :param type: The type of this VariableRes.
         :type type: str
@@ -733,7 +733,7 @@ class VariableRes:
 
     @property
     def update_time(self):
-        """Gets the update_time of this VariableRes.
+        r"""Gets the update_time of this VariableRes.
 
         更新时间
 
@@ -744,7 +744,7 @@ class VariableRes:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this VariableRes.
+        r"""Sets the update_time of this VariableRes.
 
         更新时间
 
@@ -755,7 +755,7 @@ class VariableRes:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this VariableRes.
+        r"""Gets the update_time_stamp of this VariableRes.
 
         :return: The update_time_stamp of this VariableRes.
         :rtype: int
@@ -764,7 +764,7 @@ class VariableRes:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this VariableRes.
+        r"""Sets the update_time_stamp of this VariableRes.
 
         :param update_time_stamp: The update_time_stamp of this VariableRes.
         :type update_time_stamp: int
@@ -773,7 +773,7 @@ class VariableRes:
 
     @property
     def update_time_string(self):
-        """Gets the update_time_string of this VariableRes.
+        r"""Gets the update_time_string of this VariableRes.
 
         :return: The update_time_string of this VariableRes.
         :rtype: str
@@ -782,7 +782,7 @@ class VariableRes:
 
     @update_time_string.setter
     def update_time_string(self, update_time_string):
-        """Sets the update_time_string of this VariableRes.
+        r"""Sets the update_time_string of this VariableRes.
 
         :param update_time_string: The update_time_string of this VariableRes.
         :type update_time_string: str
@@ -791,7 +791,7 @@ class VariableRes:
 
     @property
     def update_user(self):
-        """Gets the update_user of this VariableRes.
+        r"""Gets the update_user of this VariableRes.
 
         更新人
 
@@ -802,7 +802,7 @@ class VariableRes:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this VariableRes.
+        r"""Sets the update_user of this VariableRes.
 
         更新人
 
@@ -813,7 +813,7 @@ class VariableRes:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this VariableRes.
+        r"""Gets the variable_type of this VariableRes.
 
         :return: The variable_type of this VariableRes.
         :rtype: int
@@ -822,7 +822,7 @@ class VariableRes:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this VariableRes.
+        r"""Sets the variable_type of this VariableRes.
 
         :param variable_type: The variable_type of this VariableRes.
         :type variable_type: int

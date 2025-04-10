@@ -33,7 +33,7 @@ class UpdateResOnlineInstanceRequest:
     }
 
     def __init__(self, content_type=None, job_id=None, resource_id=None, workspace_id=None, body=None):
-        """UpdateResOnlineInstanceRequest
+        r"""UpdateResOnlineInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateResOnlineInstanceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateResOnlineInstanceRequest.
+        r"""Gets the content_type of this UpdateResOnlineInstanceRequest.
 
         内容类型，取值为application/json。
 
@@ -78,7 +78,7 @@ class UpdateResOnlineInstanceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateResOnlineInstanceRequest.
+        r"""Sets the content_type of this UpdateResOnlineInstanceRequest.
 
         内容类型，取值为application/json。
 
@@ -89,7 +89,7 @@ class UpdateResOnlineInstanceRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateResOnlineInstanceRequest.
+        r"""Gets the job_id of this UpdateResOnlineInstanceRequest.
 
         作业id。
 
@@ -100,7 +100,7 @@ class UpdateResOnlineInstanceRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateResOnlineInstanceRequest.
+        r"""Sets the job_id of this UpdateResOnlineInstanceRequest.
 
         作业id。
 
@@ -111,7 +111,7 @@ class UpdateResOnlineInstanceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UpdateResOnlineInstanceRequest.
+        r"""Gets the resource_id of this UpdateResOnlineInstanceRequest.
 
         资源id（数据源id或场景id）。
 
@@ -122,7 +122,7 @@ class UpdateResOnlineInstanceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UpdateResOnlineInstanceRequest.
+        r"""Sets the resource_id of this UpdateResOnlineInstanceRequest.
 
         资源id（数据源id或场景id）。
 
@@ -133,7 +133,7 @@ class UpdateResOnlineInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateResOnlineInstanceRequest.
+        r"""Gets the workspace_id of this UpdateResOnlineInstanceRequest.
 
         工作空间id。
 
@@ -144,7 +144,7 @@ class UpdateResOnlineInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateResOnlineInstanceRequest.
+        r"""Sets the workspace_id of this UpdateResOnlineInstanceRequest.
 
         工作空间id。
 
@@ -155,7 +155,7 @@ class UpdateResOnlineInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResOnlineInstanceRequest.
+        r"""Gets the body of this UpdateResOnlineInstanceRequest.
 
         :return: The body of this UpdateResOnlineInstanceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequestBody`
@@ -164,7 +164,7 @@ class UpdateResOnlineInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResOnlineInstanceRequest.
+        r"""Sets the body of this UpdateResOnlineInstanceRequest.
 
         :param body: The body of this UpdateResOnlineInstanceRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequestBody`

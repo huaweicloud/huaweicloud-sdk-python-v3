@@ -24,7 +24,7 @@ class DeleteScalingGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteScalingGroupResponse
+        r"""DeleteScalingGroupResponse
 
         The model defined in huaweicloud sdk
 

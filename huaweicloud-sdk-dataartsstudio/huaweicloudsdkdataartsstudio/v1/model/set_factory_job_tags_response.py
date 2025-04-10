@@ -24,7 +24,7 @@ class SetFactoryJobTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetFactoryJobTagsResponse
+        r"""SetFactoryJobTagsResponse
 
         The model defined in huaweicloud sdk
 

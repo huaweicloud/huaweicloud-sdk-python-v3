@@ -25,7 +25,7 @@ class AdditionalProperties:
     }
 
     def __init__(self, type=None):
-        """AdditionalProperties
+        r"""AdditionalProperties
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AdditionalProperties:
 
     @property
     def type(self):
-        """Gets the type of this AdditionalProperties.
+        r"""Gets the type of this AdditionalProperties.
 
         类型
 
@@ -53,7 +53,7 @@ class AdditionalProperties:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AdditionalProperties.
+        r"""Sets the type of this AdditionalProperties.
 
         类型
 

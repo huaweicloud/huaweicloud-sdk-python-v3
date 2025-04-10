@@ -39,7 +39,7 @@ class CompareResultInfo:
     }
 
     def __init__(self, objects_compare_overview_info=None, objects_compare_detail_infos=None, data_compare_task_list=None, line_compare_overview_infos=None, line_compare_detail_infos=None, content_compare_overview_infos=None, content_compare_detail_infos=None, content_diff_detail_info=None):
-        """CompareResultInfo
+        r"""CompareResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CompareResultInfo:
 
     @property
     def objects_compare_overview_info(self):
-        """Gets the objects_compare_overview_info of this CompareResultInfo.
+        r"""Gets the objects_compare_overview_info of this CompareResultInfo.
 
         :return: The objects_compare_overview_info of this CompareResultInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.ObjectsCompareTaskInfo`
@@ -101,7 +101,7 @@ class CompareResultInfo:
 
     @objects_compare_overview_info.setter
     def objects_compare_overview_info(self, objects_compare_overview_info):
-        """Sets the objects_compare_overview_info of this CompareResultInfo.
+        r"""Sets the objects_compare_overview_info of this CompareResultInfo.
 
         :param objects_compare_overview_info: The objects_compare_overview_info of this CompareResultInfo.
         :type objects_compare_overview_info: :class:`huaweicloudsdkdrs.v5.ObjectsCompareTaskInfo`
@@ -110,7 +110,7 @@ class CompareResultInfo:
 
     @property
     def objects_compare_detail_infos(self):
-        """Gets the objects_compare_detail_infos of this CompareResultInfo.
+        r"""Gets the objects_compare_detail_infos of this CompareResultInfo.
 
         对象级对比详情信息体。
 
@@ -121,7 +121,7 @@ class CompareResultInfo:
 
     @objects_compare_detail_infos.setter
     def objects_compare_detail_infos(self, objects_compare_detail_infos):
-        """Sets the objects_compare_detail_infos of this CompareResultInfo.
+        r"""Sets the objects_compare_detail_infos of this CompareResultInfo.
 
         对象级对比详情信息体。
 
@@ -132,7 +132,7 @@ class CompareResultInfo:
 
     @property
     def data_compare_task_list(self):
-        """Gets the data_compare_task_list of this CompareResultInfo.
+        r"""Gets the data_compare_task_list of this CompareResultInfo.
 
         数据对比任务列表。
 
@@ -143,7 +143,7 @@ class CompareResultInfo:
 
     @data_compare_task_list.setter
     def data_compare_task_list(self, data_compare_task_list):
-        """Sets the data_compare_task_list of this CompareResultInfo.
+        r"""Sets the data_compare_task_list of this CompareResultInfo.
 
         数据对比任务列表。
 
@@ -154,7 +154,7 @@ class CompareResultInfo:
 
     @property
     def line_compare_overview_infos(self):
-        """Gets the line_compare_overview_infos of this CompareResultInfo.
+        r"""Gets the line_compare_overview_infos of this CompareResultInfo.
 
         行数对比概览信息体。
 
@@ -165,7 +165,7 @@ class CompareResultInfo:
 
     @line_compare_overview_infos.setter
     def line_compare_overview_infos(self, line_compare_overview_infos):
-        """Sets the line_compare_overview_infos of this CompareResultInfo.
+        r"""Sets the line_compare_overview_infos of this CompareResultInfo.
 
         行数对比概览信息体。
 
@@ -176,7 +176,7 @@ class CompareResultInfo:
 
     @property
     def line_compare_detail_infos(self):
-        """Gets the line_compare_detail_infos of this CompareResultInfo.
+        r"""Gets the line_compare_detail_infos of this CompareResultInfo.
 
         行数对比任务表级详情。
 
@@ -187,7 +187,7 @@ class CompareResultInfo:
 
     @line_compare_detail_infos.setter
     def line_compare_detail_infos(self, line_compare_detail_infos):
-        """Sets the line_compare_detail_infos of this CompareResultInfo.
+        r"""Sets the line_compare_detail_infos of this CompareResultInfo.
 
         行数对比任务表级详情。
 
@@ -198,7 +198,7 @@ class CompareResultInfo:
 
     @property
     def content_compare_overview_infos(self):
-        """Gets the content_compare_overview_infos of this CompareResultInfo.
+        r"""Gets the content_compare_overview_infos of this CompareResultInfo.
 
         内容对比概览信息体。
 
@@ -209,7 +209,7 @@ class CompareResultInfo:
 
     @content_compare_overview_infos.setter
     def content_compare_overview_infos(self, content_compare_overview_infos):
-        """Sets the content_compare_overview_infos of this CompareResultInfo.
+        r"""Sets the content_compare_overview_infos of this CompareResultInfo.
 
         内容对比概览信息体。
 
@@ -220,7 +220,7 @@ class CompareResultInfo:
 
     @property
     def content_compare_detail_infos(self):
-        """Gets the content_compare_detail_infos of this CompareResultInfo.
+        r"""Gets the content_compare_detail_infos of this CompareResultInfo.
 
         内容对比详情信息体。
 
@@ -231,7 +231,7 @@ class CompareResultInfo:
 
     @content_compare_detail_infos.setter
     def content_compare_detail_infos(self, content_compare_detail_infos):
-        """Sets the content_compare_detail_infos of this CompareResultInfo.
+        r"""Sets the content_compare_detail_infos of this CompareResultInfo.
 
         内容对比详情信息体。
 
@@ -242,7 +242,7 @@ class CompareResultInfo:
 
     @property
     def content_diff_detail_info(self):
-        """Gets the content_diff_detail_info of this CompareResultInfo.
+        r"""Gets the content_diff_detail_info of this CompareResultInfo.
 
         :return: The content_diff_detail_info of this CompareResultInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.ContentDiffDetailInfo`
@@ -251,7 +251,7 @@ class CompareResultInfo:
 
     @content_diff_detail_info.setter
     def content_diff_detail_info(self, content_diff_detail_info):
-        """Sets the content_diff_detail_info of this CompareResultInfo.
+        r"""Sets the content_diff_detail_info of this CompareResultInfo.
 
         :param content_diff_detail_info: The content_diff_detail_info of this CompareResultInfo.
         :type content_diff_detail_info: :class:`huaweicloudsdkdrs.v5.ContentDiffDetailInfo`

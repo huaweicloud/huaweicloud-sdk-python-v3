@@ -24,7 +24,7 @@ class DeleteSnapshotCrossRegionPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSnapshotCrossRegionPolicyResponse
+        r"""DeleteSnapshotCrossRegionPolicyResponse
 
         The model defined in huaweicloud sdk
 

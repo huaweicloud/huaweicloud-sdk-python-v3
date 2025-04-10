@@ -30,7 +30,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
     }
 
     def __init__(self, attendees=None, participants=None, conf_info=None):
-        """ShowRealTimeInfoOfMeetingResponse
+        r"""ShowRealTimeInfoOfMeetingResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
     @property
     def attendees(self):
-        """Gets the attendees of this ShowRealTimeInfoOfMeetingResponse.
+        r"""Gets the attendees of this ShowRealTimeInfoOfMeetingResponse.
 
         被邀请与会者信息，包括预约会议时邀请的与会者和会中主持人邀请的与会者，已经加入会议的和未加入会议的都返回。
 
@@ -69,7 +69,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
     @attendees.setter
     def attendees(self, attendees):
-        """Sets the attendees of this ShowRealTimeInfoOfMeetingResponse.
+        r"""Sets the attendees of this ShowRealTimeInfoOfMeetingResponse.
 
         被邀请与会者信息，包括预约会议时邀请的与会者和会中主持人邀请的与会者，已经加入会议的和未加入会议的都返回。
 
@@ -80,7 +80,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
     @property
     def participants(self):
-        """Gets the participants of this ShowRealTimeInfoOfMeetingResponse.
+        r"""Gets the participants of this ShowRealTimeInfoOfMeetingResponse.
 
         在线与会者列表信息，包括已加入会议、被邀请正在呼叫中、正在加入会议的与会者列表等。 > * 同一个帐号用不同类型终端（手机端或者PC端等）加入会议时，是不同的在线与会者 > * 未加入或者已离会与会者，不在在线与会者列表中 
 
@@ -91,7 +91,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
     @participants.setter
     def participants(self, participants):
-        """Sets the participants of this ShowRealTimeInfoOfMeetingResponse.
+        r"""Sets the participants of this ShowRealTimeInfoOfMeetingResponse.
 
         在线与会者列表信息，包括已加入会议、被邀请正在呼叫中、正在加入会议的与会者列表等。 > * 同一个帐号用不同类型终端（手机端或者PC端等）加入会议时，是不同的在线与会者 > * 未加入或者已离会与会者，不在在线与会者列表中 
 
@@ -102,7 +102,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
     @property
     def conf_info(self):
-        """Gets the conf_info of this ShowRealTimeInfoOfMeetingResponse.
+        r"""Gets the conf_info of this ShowRealTimeInfoOfMeetingResponse.
 
         :return: The conf_info of this ShowRealTimeInfoOfMeetingResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`
@@ -111,7 +111,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
 
     @conf_info.setter
     def conf_info(self, conf_info):
-        """Sets the conf_info of this ShowRealTimeInfoOfMeetingResponse.
+        r"""Sets the conf_info of this ShowRealTimeInfoOfMeetingResponse.
 
         :param conf_info: The conf_info of this ShowRealTimeInfoOfMeetingResponse.
         :type conf_info: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`

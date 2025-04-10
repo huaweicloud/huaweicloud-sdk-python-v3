@@ -27,7 +27,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
     }
 
     def __init__(self, template_ids=None, delete_associate_alarm=None):
-        """BatchDeleteAlarmTemplatesRequestBody
+        r"""BatchDeleteAlarmTemplatesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
 
     @property
     def template_ids(self):
-        """Gets the template_ids of this BatchDeleteAlarmTemplatesRequestBody.
+        r"""Gets the template_ids of this BatchDeleteAlarmTemplatesRequestBody.
 
         需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板模板单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
 
@@ -59,7 +59,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
 
     @template_ids.setter
     def template_ids(self, template_ids):
-        """Sets the template_ids of this BatchDeleteAlarmTemplatesRequestBody.
+        r"""Sets the template_ids of this BatchDeleteAlarmTemplatesRequestBody.
 
         需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板模板单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
 
@@ -70,7 +70,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
 
     @property
     def delete_associate_alarm(self):
-        """Gets the delete_associate_alarm of this BatchDeleteAlarmTemplatesRequestBody.
+        r"""Gets the delete_associate_alarm of this BatchDeleteAlarmTemplatesRequestBody.
 
         如果告警模板关联了告警规则，是否级联删除告警规则，true代表级联删除，false代表只删除告警模板
 
@@ -81,7 +81,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
 
     @delete_associate_alarm.setter
     def delete_associate_alarm(self, delete_associate_alarm):
-        """Sets the delete_associate_alarm of this BatchDeleteAlarmTemplatesRequestBody.
+        r"""Sets the delete_associate_alarm of this BatchDeleteAlarmTemplatesRequestBody.
 
         如果告警模板关联了告警规则，是否级联删除告警规则，true代表级联删除，false代表只删除告警模板
 

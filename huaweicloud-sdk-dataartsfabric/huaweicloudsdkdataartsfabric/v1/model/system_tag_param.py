@@ -27,7 +27,7 @@ class SystemTagParam:
     }
 
     def __init__(self, key=None, values=None):
-        """SystemTagParam
+        r"""SystemTagParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SystemTagParam:
 
     @property
     def key(self):
-        """Gets the key of this SystemTagParam.
+        r"""Gets the key of this SystemTagParam.
 
         键，固定值。
 
@@ -59,7 +59,7 @@ class SystemTagParam:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SystemTagParam.
+        r"""Sets the key of this SystemTagParam.
 
         键，固定值。
 
@@ -70,7 +70,7 @@ class SystemTagParam:
 
     @property
     def values(self):
-        """Gets the values of this SystemTagParam.
+        r"""Gets the values of this SystemTagParam.
 
         系统标签的值列表。
 
@@ -81,7 +81,7 @@ class SystemTagParam:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this SystemTagParam.
+        r"""Sets the values of this SystemTagParam.
 
         系统标签的值列表。
 

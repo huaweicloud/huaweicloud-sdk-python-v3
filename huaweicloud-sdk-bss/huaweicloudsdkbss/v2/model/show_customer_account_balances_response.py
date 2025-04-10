@@ -32,7 +32,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     }
 
     def __init__(self, account_balances=None, debt_amount=None, measure_id=None, currency=None):
-        """ShowCustomerAccountBalancesResponse
+        r"""ShowCustomerAccountBalancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @property
     def account_balances(self):
-        """Gets the account_balances of this ShowCustomerAccountBalancesResponse.
+        r"""Gets the account_balances of this ShowCustomerAccountBalancesResponse.
 
         账户余额列表。 具体请参见表1。
 
@@ -76,7 +76,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @account_balances.setter
     def account_balances(self, account_balances):
-        """Sets the account_balances of this ShowCustomerAccountBalancesResponse.
+        r"""Sets the account_balances of this ShowCustomerAccountBalancesResponse.
 
         账户余额列表。 具体请参见表1。
 
@@ -87,7 +87,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this ShowCustomerAccountBalancesResponse.
+        r"""Gets the debt_amount of this ShowCustomerAccountBalancesResponse.
 
         欠款总金额。
 
@@ -98,7 +98,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this ShowCustomerAccountBalancesResponse.
+        r"""Sets the debt_amount of this ShowCustomerAccountBalancesResponse.
 
         欠款总金额。
 
@@ -109,7 +109,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ShowCustomerAccountBalancesResponse.
+        r"""Gets the measure_id of this ShowCustomerAccountBalancesResponse.
 
         度量单位。 1：元
 
@@ -120,7 +120,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ShowCustomerAccountBalancesResponse.
+        r"""Sets the measure_id of this ShowCustomerAccountBalancesResponse.
 
         度量单位。 1：元
 
@@ -131,7 +131,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ShowCustomerAccountBalancesResponse.
+        r"""Gets the currency of this ShowCustomerAccountBalancesResponse.
 
         币种。 CNY：人民币。
 
@@ -142,7 +142,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ShowCustomerAccountBalancesResponse.
+        r"""Sets the currency of this ShowCustomerAccountBalancesResponse.
 
         币种。 CNY：人民币。
 

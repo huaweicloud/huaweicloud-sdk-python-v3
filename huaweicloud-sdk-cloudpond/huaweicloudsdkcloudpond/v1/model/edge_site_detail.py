@@ -47,7 +47,7 @@ class EdgeSiteDetail:
     }
 
     def __init__(self, id=None, domain_id=None, name=None, description=None, region_id=None, project_id=None, availability_zone_id=None, status=None, location=None, enterprise_project_id=None, created_at=None, updated_at=None):
-        """EdgeSiteDetail
+        r"""EdgeSiteDetail
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class EdgeSiteDetail:
         :type status: str
         :param location: 
         :type location: :class:`huaweicloudsdkcloudpond.v1.LocationDetail`
-        :param enterprise_project_id: [边缘小站](tag:hws)[分布式微型专属小站](tag:cmcc)所属企业项目ID
+        :param enterprise_project_id: 边缘小站所属企业项目ID
         :type enterprise_project_id: str
         :param created_at: 边缘小站创建时间
         :type created_at: datetime
@@ -120,7 +120,7 @@ class EdgeSiteDetail:
 
     @property
     def id(self):
-        """Gets the id of this EdgeSiteDetail.
+        r"""Gets the id of this EdgeSiteDetail.
 
         边缘小站ID
 
@@ -131,7 +131,7 @@ class EdgeSiteDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EdgeSiteDetail.
+        r"""Sets the id of this EdgeSiteDetail.
 
         边缘小站ID
 
@@ -142,7 +142,7 @@ class EdgeSiteDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EdgeSiteDetail.
+        r"""Gets the domain_id of this EdgeSiteDetail.
 
         边缘小站所属账号ID
 
@@ -153,7 +153,7 @@ class EdgeSiteDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EdgeSiteDetail.
+        r"""Sets the domain_id of this EdgeSiteDetail.
 
         边缘小站所属账号ID
 
@@ -164,7 +164,7 @@ class EdgeSiteDetail:
 
     @property
     def name(self):
-        """Gets the name of this EdgeSiteDetail.
+        r"""Gets the name of this EdgeSiteDetail.
 
         边缘小站名称
 
@@ -175,7 +175,7 @@ class EdgeSiteDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeSiteDetail.
+        r"""Sets the name of this EdgeSiteDetail.
 
         边缘小站名称
 
@@ -186,7 +186,7 @@ class EdgeSiteDetail:
 
     @property
     def description(self):
-        """Gets the description of this EdgeSiteDetail.
+        r"""Gets the description of this EdgeSiteDetail.
 
         边缘小站描述
 
@@ -197,7 +197,7 @@ class EdgeSiteDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeSiteDetail.
+        r"""Sets the description of this EdgeSiteDetail.
 
         边缘小站描述
 
@@ -208,7 +208,7 @@ class EdgeSiteDetail:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EdgeSiteDetail.
+        r"""Gets the region_id of this EdgeSiteDetail.
 
         边缘小站所属区域ID
 
@@ -219,7 +219,7 @@ class EdgeSiteDetail:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EdgeSiteDetail.
+        r"""Sets the region_id of this EdgeSiteDetail.
 
         边缘小站所属区域ID
 
@@ -230,7 +230,7 @@ class EdgeSiteDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EdgeSiteDetail.
+        r"""Gets the project_id of this EdgeSiteDetail.
 
         边缘小站所属项目ID
 
@@ -241,7 +241,7 @@ class EdgeSiteDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EdgeSiteDetail.
+        r"""Sets the project_id of this EdgeSiteDetail.
 
         边缘小站所属项目ID
 
@@ -252,7 +252,7 @@ class EdgeSiteDetail:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this EdgeSiteDetail.
+        r"""Gets the availability_zone_id of this EdgeSiteDetail.
 
         边缘小站的可用区ID
 
@@ -263,7 +263,7 @@ class EdgeSiteDetail:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this EdgeSiteDetail.
+        r"""Sets the availability_zone_id of this EdgeSiteDetail.
 
         边缘小站的可用区ID
 
@@ -274,7 +274,7 @@ class EdgeSiteDetail:
 
     @property
     def status(self):
-        """Gets the status of this EdgeSiteDetail.
+        r"""Gets the status of this EdgeSiteDetail.
 
         边缘小站的部署状态
 
@@ -285,7 +285,7 @@ class EdgeSiteDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EdgeSiteDetail.
+        r"""Sets the status of this EdgeSiteDetail.
 
         边缘小站的部署状态
 
@@ -296,7 +296,7 @@ class EdgeSiteDetail:
 
     @property
     def location(self):
-        """Gets the location of this EdgeSiteDetail.
+        r"""Gets the location of this EdgeSiteDetail.
 
         :return: The location of this EdgeSiteDetail.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.LocationDetail`
@@ -305,7 +305,7 @@ class EdgeSiteDetail:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this EdgeSiteDetail.
+        r"""Sets the location of this EdgeSiteDetail.
 
         :param location: The location of this EdgeSiteDetail.
         :type location: :class:`huaweicloudsdkcloudpond.v1.LocationDetail`
@@ -314,9 +314,9 @@ class EdgeSiteDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EdgeSiteDetail.
+        r"""Gets the enterprise_project_id of this EdgeSiteDetail.
 
-        [边缘小站](tag:hws)[分布式微型专属小站](tag:cmcc)所属企业项目ID
+        边缘小站所属企业项目ID
 
         :return: The enterprise_project_id of this EdgeSiteDetail.
         :rtype: str
@@ -325,9 +325,9 @@ class EdgeSiteDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EdgeSiteDetail.
+        r"""Sets the enterprise_project_id of this EdgeSiteDetail.
 
-        [边缘小站](tag:hws)[分布式微型专属小站](tag:cmcc)所属企业项目ID
+        边缘小站所属企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this EdgeSiteDetail.
         :type enterprise_project_id: str
@@ -336,7 +336,7 @@ class EdgeSiteDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EdgeSiteDetail.
+        r"""Gets the created_at of this EdgeSiteDetail.
 
         边缘小站创建时间
 
@@ -347,7 +347,7 @@ class EdgeSiteDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EdgeSiteDetail.
+        r"""Sets the created_at of this EdgeSiteDetail.
 
         边缘小站创建时间
 
@@ -358,7 +358,7 @@ class EdgeSiteDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EdgeSiteDetail.
+        r"""Gets the updated_at of this EdgeSiteDetail.
 
         边缘小站更新时间
 
@@ -369,7 +369,7 @@ class EdgeSiteDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EdgeSiteDetail.
+        r"""Sets the updated_at of this EdgeSiteDetail.
 
         边缘小站更新时间
 

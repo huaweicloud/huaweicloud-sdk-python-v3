@@ -29,7 +29,7 @@ class AddNodeList:
     }
 
     def __init__(self, api_version=None, kind=None, node_list=None):
-        """AddNodeList
+        r"""AddNodeList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddNodeList:
 
     @property
     def api_version(self):
-        """Gets the api_version of this AddNodeList.
+        r"""Gets the api_version of this AddNodeList.
 
         API版本，固定值“v3”。
 
@@ -65,7 +65,7 @@ class AddNodeList:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this AddNodeList.
+        r"""Sets the api_version of this AddNodeList.
 
         API版本，固定值“v3”。
 
@@ -76,7 +76,7 @@ class AddNodeList:
 
     @property
     def kind(self):
-        """Gets the kind of this AddNodeList.
+        r"""Gets the kind of this AddNodeList.
 
         API类型，固定值“List”。
 
@@ -87,7 +87,7 @@ class AddNodeList:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this AddNodeList.
+        r"""Sets the kind of this AddNodeList.
 
         API类型，固定值“List”。
 
@@ -98,7 +98,7 @@ class AddNodeList:
 
     @property
     def node_list(self):
-        """Gets the node_list of this AddNodeList.
+        r"""Gets the node_list of this AddNodeList.
 
         纳管节点列表
 
@@ -109,7 +109,7 @@ class AddNodeList:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this AddNodeList.
+        r"""Sets the node_list of this AddNodeList.
 
         纳管节点列表
 

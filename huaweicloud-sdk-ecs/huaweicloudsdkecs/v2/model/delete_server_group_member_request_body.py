@@ -25,7 +25,7 @@ class DeleteServerGroupMemberRequestBody:
     }
 
     def __init__(self, remove_member=None):
-        """DeleteServerGroupMemberRequestBody
+        r"""DeleteServerGroupMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteServerGroupMemberRequestBody:
 
     @property
     def remove_member(self):
-        """Gets the remove_member of this DeleteServerGroupMemberRequestBody.
+        r"""Gets the remove_member of this DeleteServerGroupMemberRequestBody.
 
         :return: The remove_member of this DeleteServerGroupMemberRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
@@ -51,7 +51,7 @@ class DeleteServerGroupMemberRequestBody:
 
     @remove_member.setter
     def remove_member(self, remove_member):
-        """Sets the remove_member of this DeleteServerGroupMemberRequestBody.
+        r"""Sets the remove_member of this DeleteServerGroupMemberRequestBody.
 
         :param remove_member: The remove_member of this DeleteServerGroupMemberRequestBody.
         :type remove_member: :class:`huaweicloudsdkecs.v2.ServerGroupMember`

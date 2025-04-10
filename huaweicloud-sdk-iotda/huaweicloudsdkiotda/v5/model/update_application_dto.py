@@ -25,7 +25,7 @@ class UpdateApplicationDTO:
     }
 
     def __init__(self, app_name=None):
-        """UpdateApplicationDTO
+        r"""UpdateApplicationDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateApplicationDTO:
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateApplicationDTO.
+        r"""Gets the app_name of this UpdateApplicationDTO.
 
         **参数说明**：资源空间名称。 **取值范围**：长度不超过64，允许中文、字母、数字、下划线（_）、连接符（-）等一些特殊字符的组合。
 
@@ -54,7 +54,7 @@ class UpdateApplicationDTO:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateApplicationDTO.
+        r"""Sets the app_name of this UpdateApplicationDTO.
 
         **参数说明**：资源空间名称。 **取值范围**：长度不超过64，允许中文、字母、数字、下划线（_）、连接符（-）等一些特殊字符的组合。
 

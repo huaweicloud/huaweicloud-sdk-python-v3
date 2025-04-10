@@ -25,7 +25,7 @@ class CreateCredentialRequestBody:
     }
 
     def __init__(self, credential=None):
-        """CreateCredentialRequestBody
+        r"""CreateCredentialRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCredentialRequestBody:
 
     @property
     def credential(self):
-        """Gets the credential of this CreateCredentialRequestBody.
+        r"""Gets the credential of this CreateCredentialRequestBody.
 
         :return: The credential of this CreateCredentialRequestBody.
         :rtype: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBodyCredential`
@@ -52,7 +52,7 @@ class CreateCredentialRequestBody:
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this CreateCredentialRequestBody.
+        r"""Sets the credential of this CreateCredentialRequestBody.
 
         :param credential: The credential of this CreateCredentialRequestBody.
         :type credential: :class:`huaweicloudsdkmapds.v1.CreateCredentialRequestBodyCredential`

@@ -45,7 +45,7 @@ class TemplateRsp:
     }
 
     def __init__(self, id=None, name=None, description=None, source_project_name=None, source_project_id=None, source_template_id=None, creator=None, columns=None, create_time=None, primary_key=None, is_prefab=None):
-        """TemplateRsp
+        r"""TemplateRsp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TemplateRsp:
 
     @property
     def id(self):
-        """Gets the id of this TemplateRsp.
+        r"""Gets the id of this TemplateRsp.
 
         模板id
 
@@ -124,7 +124,7 @@ class TemplateRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateRsp.
+        r"""Sets the id of this TemplateRsp.
 
         模板id
 
@@ -135,7 +135,7 @@ class TemplateRsp:
 
     @property
     def name(self):
-        """Gets the name of this TemplateRsp.
+        r"""Gets the name of this TemplateRsp.
 
         模板名称
 
@@ -146,7 +146,7 @@ class TemplateRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateRsp.
+        r"""Sets the name of this TemplateRsp.
 
         模板名称
 
@@ -157,7 +157,7 @@ class TemplateRsp:
 
     @property
     def description(self):
-        """Gets the description of this TemplateRsp.
+        r"""Gets the description of this TemplateRsp.
 
         模板描述
 
@@ -168,7 +168,7 @@ class TemplateRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateRsp.
+        r"""Sets the description of this TemplateRsp.
 
         模板描述
 
@@ -179,7 +179,7 @@ class TemplateRsp:
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this TemplateRsp.
+        r"""Gets the source_project_name of this TemplateRsp.
 
         来源项目名称
 
@@ -190,7 +190,7 @@ class TemplateRsp:
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this TemplateRsp.
+        r"""Sets the source_project_name of this TemplateRsp.
 
         来源项目名称
 
@@ -201,7 +201,7 @@ class TemplateRsp:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this TemplateRsp.
+        r"""Gets the source_project_id of this TemplateRsp.
 
         来源项目id
 
@@ -212,7 +212,7 @@ class TemplateRsp:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this TemplateRsp.
+        r"""Sets the source_project_id of this TemplateRsp.
 
         来源项目id
 
@@ -223,7 +223,7 @@ class TemplateRsp:
 
     @property
     def source_template_id(self):
-        """Gets the source_template_id of this TemplateRsp.
+        r"""Gets the source_template_id of this TemplateRsp.
 
         来源模板id
 
@@ -234,7 +234,7 @@ class TemplateRsp:
 
     @source_template_id.setter
     def source_template_id(self, source_template_id):
-        """Sets the source_template_id of this TemplateRsp.
+        r"""Sets the source_template_id of this TemplateRsp.
 
         来源模板id
 
@@ -245,7 +245,7 @@ class TemplateRsp:
 
     @property
     def creator(self):
-        """Gets the creator of this TemplateRsp.
+        r"""Gets the creator of this TemplateRsp.
 
         创建者
 
@@ -256,7 +256,7 @@ class TemplateRsp:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TemplateRsp.
+        r"""Sets the creator of this TemplateRsp.
 
         创建者
 
@@ -267,7 +267,7 @@ class TemplateRsp:
 
     @property
     def columns(self):
-        """Gets the columns of this TemplateRsp.
+        r"""Gets the columns of this TemplateRsp.
 
         数据库列信息列表
 
@@ -278,7 +278,7 @@ class TemplateRsp:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this TemplateRsp.
+        r"""Sets the columns of this TemplateRsp.
 
         数据库列信息列表
 
@@ -289,7 +289,7 @@ class TemplateRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TemplateRsp.
+        r"""Gets the create_time of this TemplateRsp.
 
         创建时间
 
@@ -300,7 +300,7 @@ class TemplateRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TemplateRsp.
+        r"""Sets the create_time of this TemplateRsp.
 
         创建时间
 
@@ -311,7 +311,7 @@ class TemplateRsp:
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this TemplateRsp.
+        r"""Gets the primary_key of this TemplateRsp.
 
         主键
 
@@ -322,7 +322,7 @@ class TemplateRsp:
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this TemplateRsp.
+        r"""Sets the primary_key of this TemplateRsp.
 
         主键
 
@@ -333,7 +333,7 @@ class TemplateRsp:
 
     @property
     def is_prefab(self):
-        """Gets the is_prefab of this TemplateRsp.
+        r"""Gets the is_prefab of this TemplateRsp.
 
         是否是预置模板
 
@@ -344,7 +344,7 @@ class TemplateRsp:
 
     @is_prefab.setter
     def is_prefab(self, is_prefab):
-        """Sets the is_prefab of this TemplateRsp.
+        r"""Sets the is_prefab of this TemplateRsp.
 
         是否是预置模板
 

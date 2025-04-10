@@ -26,7 +26,7 @@ class ResizeInstanceResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """ResizeInstanceResponse
+        r"""ResizeInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResizeInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeInstanceResponse.
+        r"""Gets the order_id of this ResizeInstanceResponse.
 
         订单ID。
 
@@ -55,7 +55,7 @@ class ResizeInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeInstanceResponse.
+        r"""Sets the order_id of this ResizeInstanceResponse.
 
         订单ID。
 

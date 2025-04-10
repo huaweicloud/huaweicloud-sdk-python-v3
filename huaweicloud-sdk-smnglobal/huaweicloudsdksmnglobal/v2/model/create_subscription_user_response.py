@@ -28,7 +28,7 @@ class CreateSubscriptionUserResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, id=None):
-        """CreateSubscriptionUserResponse
+        r"""CreateSubscriptionUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSubscriptionUserResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateSubscriptionUserResponse.
+        r"""Gets the request_id of this CreateSubscriptionUserResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class CreateSubscriptionUserResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateSubscriptionUserResponse.
+        r"""Sets the request_id of this CreateSubscriptionUserResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class CreateSubscriptionUserResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSubscriptionUserResponse.
+        r"""Gets the id of this CreateSubscriptionUserResponse.
 
         订阅用户ID。
 
@@ -84,7 +84,7 @@ class CreateSubscriptionUserResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSubscriptionUserResponse.
+        r"""Sets the id of this CreateSubscriptionUserResponse.
 
         订阅用户ID。
 

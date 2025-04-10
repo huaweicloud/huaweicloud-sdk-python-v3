@@ -26,7 +26,7 @@ class ShowSingleJobExeResponse(SdkResponse):
     }
 
     def __init__(self, job_detail=None):
-        """ShowSingleJobExeResponse
+        r"""ShowSingleJobExeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSingleJobExeResponse(SdkResponse):
 
     @property
     def job_detail(self):
-        """Gets the job_detail of this ShowSingleJobExeResponse.
+        r"""Gets the job_detail of this ShowSingleJobExeResponse.
 
         :return: The job_detail of this ShowSingleJobExeResponse.
         :rtype: :class:`huaweicloudsdkmrs.v2.JobQueryBean`
@@ -53,7 +53,7 @@ class ShowSingleJobExeResponse(SdkResponse):
 
     @job_detail.setter
     def job_detail(self, job_detail):
-        """Sets the job_detail of this ShowSingleJobExeResponse.
+        r"""Sets the job_detail of this ShowSingleJobExeResponse.
 
         :param job_detail: The job_detail of this ShowSingleJobExeResponse.
         :type job_detail: :class:`huaweicloudsdkmrs.v2.JobQueryBean`

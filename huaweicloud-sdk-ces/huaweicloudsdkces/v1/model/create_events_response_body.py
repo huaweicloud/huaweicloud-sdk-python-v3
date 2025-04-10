@@ -27,7 +27,7 @@ class CreateEventsResponseBody:
     }
 
     def __init__(self, event_id=None, event_name=None):
-        """CreateEventsResponseBody
+        r"""CreateEventsResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateEventsResponseBody:
 
     @property
     def event_id(self):
-        """Gets the event_id of this CreateEventsResponseBody.
+        r"""Gets the event_id of this CreateEventsResponseBody.
 
         事件ID。
 
@@ -59,7 +59,7 @@ class CreateEventsResponseBody:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this CreateEventsResponseBody.
+        r"""Sets the event_id of this CreateEventsResponseBody.
 
         事件ID。
 
@@ -70,7 +70,7 @@ class CreateEventsResponseBody:
 
     @property
     def event_name(self):
-        """Gets the event_name of this CreateEventsResponseBody.
+        r"""Gets the event_name of this CreateEventsResponseBody.
 
         事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
 
@@ -81,7 +81,7 @@ class CreateEventsResponseBody:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this CreateEventsResponseBody.
+        r"""Sets the event_name of this CreateEventsResponseBody.
 
         事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
 

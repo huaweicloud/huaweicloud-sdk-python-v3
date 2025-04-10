@@ -24,7 +24,7 @@ class DeleteAllTablesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAllTablesResponse
+        r"""DeleteAllTablesResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class DeleteSessionRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """DeleteSessionRequest
+        r"""DeleteSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSessionRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteSessionRequest.
+        r"""Gets the node_id of this DeleteSessionRequest.
 
         节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
@@ -60,7 +60,7 @@ class DeleteSessionRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteSessionRequest.
+        r"""Sets the node_id of this DeleteSessionRequest.
 
         节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
@@ -71,7 +71,7 @@ class DeleteSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSessionRequest.
+        r"""Gets the body of this DeleteSessionRequest.
 
         :return: The body of this DeleteSessionRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteSessionRequestBody`
@@ -80,7 +80,7 @@ class DeleteSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSessionRequest.
+        r"""Sets the body of this DeleteSessionRequest.
 
         :param body: The body of this DeleteSessionRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DeleteSessionRequestBody`

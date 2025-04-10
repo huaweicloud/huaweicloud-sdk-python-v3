@@ -27,7 +27,7 @@ class ListServerGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListServerGroupsRequest
+        r"""ListServerGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListServerGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServerGroupsRequest.
+        r"""Gets the limit of this ListServerGroupsRequest.
 
         查询返回server group数量限制。
 
@@ -61,7 +61,7 @@ class ListServerGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServerGroupsRequest.
+        r"""Sets the limit of this ListServerGroupsRequest.
 
         查询返回server group数量限制。
 
@@ -72,7 +72,7 @@ class ListServerGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListServerGroupsRequest.
+        r"""Gets the marker of this ListServerGroupsRequest.
 
         从marker指定的server group的下一条数据开始查询。
 
@@ -83,7 +83,7 @@ class ListServerGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListServerGroupsRequest.
+        r"""Sets the marker of this ListServerGroupsRequest.
 
         从marker指定的server group的下一条数据开始查询。
 

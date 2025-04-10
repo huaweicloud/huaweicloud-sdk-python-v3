@@ -24,7 +24,7 @@ class DeletePredefineTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePredefineTagsResponse
+        r"""DeletePredefineTagsResponse
 
         The model defined in huaweicloud sdk
 

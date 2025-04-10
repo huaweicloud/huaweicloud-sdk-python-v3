@@ -57,7 +57,7 @@ class ShowTasksResponseBody:
     }
 
     def __init__(self, task_name=None, url=None, task_type=None, task_id=None, domain_name=None, task_settings=None, create_time=None, start_time=None, end_time=None, task_status=None, schedule_status=None, progress=None, reason=None, pack_num=None, score=None, safe_level=None, statistics=None):
-        """ShowTasksResponseBody
+        r"""ShowTasksResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -153,7 +153,7 @@ class ShowTasksResponseBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowTasksResponseBody.
+        r"""Gets the task_name of this ShowTasksResponseBody.
 
         任务名称
 
@@ -164,7 +164,7 @@ class ShowTasksResponseBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowTasksResponseBody.
+        r"""Sets the task_name of this ShowTasksResponseBody.
 
         任务名称
 
@@ -175,7 +175,7 @@ class ShowTasksResponseBody:
 
     @property
     def url(self):
-        """Gets the url of this ShowTasksResponseBody.
+        r"""Gets the url of this ShowTasksResponseBody.
 
         待扫描的目标网址
 
@@ -186,7 +186,7 @@ class ShowTasksResponseBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowTasksResponseBody.
+        r"""Sets the url of this ShowTasksResponseBody.
 
         待扫描的目标网址
 
@@ -197,7 +197,7 @@ class ShowTasksResponseBody:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowTasksResponseBody.
+        r"""Gets the task_type of this ShowTasksResponseBody.
 
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
@@ -208,7 +208,7 @@ class ShowTasksResponseBody:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowTasksResponseBody.
+        r"""Sets the task_type of this ShowTasksResponseBody.
 
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
@@ -219,7 +219,7 @@ class ShowTasksResponseBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTasksResponseBody.
+        r"""Gets the task_id of this ShowTasksResponseBody.
 
         任务ID
 
@@ -230,7 +230,7 @@ class ShowTasksResponseBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTasksResponseBody.
+        r"""Sets the task_id of this ShowTasksResponseBody.
 
         任务ID
 
@@ -241,7 +241,7 @@ class ShowTasksResponseBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowTasksResponseBody.
+        r"""Gets the domain_name of this ShowTasksResponseBody.
 
         网站域名
 
@@ -252,7 +252,7 @@ class ShowTasksResponseBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowTasksResponseBody.
+        r"""Sets the domain_name of this ShowTasksResponseBody.
 
         网站域名
 
@@ -263,7 +263,7 @@ class ShowTasksResponseBody:
 
     @property
     def task_settings(self):
-        """Gets the task_settings of this ShowTasksResponseBody.
+        r"""Gets the task_settings of this ShowTasksResponseBody.
 
         :return: The task_settings of this ShowTasksResponseBody.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.TaskSettings`
@@ -272,7 +272,7 @@ class ShowTasksResponseBody:
 
     @task_settings.setter
     def task_settings(self, task_settings):
-        """Sets the task_settings of this ShowTasksResponseBody.
+        r"""Sets the task_settings of this ShowTasksResponseBody.
 
         :param task_settings: The task_settings of this ShowTasksResponseBody.
         :type task_settings: :class:`huaweicloudsdkcodeartsinspector.v3.TaskSettings`
@@ -281,7 +281,7 @@ class ShowTasksResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTasksResponseBody.
+        r"""Gets the create_time of this ShowTasksResponseBody.
 
         创建任务的时间
 
@@ -292,7 +292,7 @@ class ShowTasksResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTasksResponseBody.
+        r"""Sets the create_time of this ShowTasksResponseBody.
 
         创建任务的时间
 
@@ -303,7 +303,7 @@ class ShowTasksResponseBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTasksResponseBody.
+        r"""Gets the start_time of this ShowTasksResponseBody.
 
         任务启动的时间
 
@@ -314,7 +314,7 @@ class ShowTasksResponseBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTasksResponseBody.
+        r"""Sets the start_time of this ShowTasksResponseBody.
 
         任务启动的时间
 
@@ -325,7 +325,7 @@ class ShowTasksResponseBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTasksResponseBody.
+        r"""Gets the end_time of this ShowTasksResponseBody.
 
         任务结束的时间
 
@@ -336,7 +336,7 @@ class ShowTasksResponseBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTasksResponseBody.
+        r"""Sets the end_time of this ShowTasksResponseBody.
 
         任务结束的时间
 
@@ -347,7 +347,7 @@ class ShowTasksResponseBody:
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowTasksResponseBody.
+        r"""Gets the task_status of this ShowTasksResponseBody.
 
         任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
 
@@ -358,7 +358,7 @@ class ShowTasksResponseBody:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowTasksResponseBody.
+        r"""Sets the task_status of this ShowTasksResponseBody.
 
         任务状态:   * running - 正在运行   * success - 成功   * canceled - 已取消   * waiting - 正在等待   * ready - 已就绪，排队中   * failure - 失败 
 
@@ -369,7 +369,7 @@ class ShowTasksResponseBody:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this ShowTasksResponseBody.
+        r"""Gets the schedule_status of this ShowTasksResponseBody.
 
         监测任务状态:   * running - 正在运行   * waiting - 正在等待   * finished - 已完成 
 
@@ -380,7 +380,7 @@ class ShowTasksResponseBody:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this ShowTasksResponseBody.
+        r"""Sets the schedule_status of this ShowTasksResponseBody.
 
         监测任务状态:   * running - 正在运行   * waiting - 正在等待   * finished - 已完成 
 
@@ -391,7 +391,7 @@ class ShowTasksResponseBody:
 
     @property
     def progress(self):
-        """Gets the progress of this ShowTasksResponseBody.
+        r"""Gets the progress of this ShowTasksResponseBody.
 
         任务进度
 
@@ -402,7 +402,7 @@ class ShowTasksResponseBody:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowTasksResponseBody.
+        r"""Sets the progress of this ShowTasksResponseBody.
 
         任务进度
 
@@ -413,7 +413,7 @@ class ShowTasksResponseBody:
 
     @property
     def reason(self):
-        """Gets the reason of this ShowTasksResponseBody.
+        r"""Gets the reason of this ShowTasksResponseBody.
 
         任务状态描述
 
@@ -424,7 +424,7 @@ class ShowTasksResponseBody:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ShowTasksResponseBody.
+        r"""Sets the reason of this ShowTasksResponseBody.
 
         任务状态描述
 
@@ -435,7 +435,7 @@ class ShowTasksResponseBody:
 
     @property
     def pack_num(self):
-        """Gets the pack_num of this ShowTasksResponseBody.
+        r"""Gets the pack_num of this ShowTasksResponseBody.
 
         包总数
 
@@ -446,7 +446,7 @@ class ShowTasksResponseBody:
 
     @pack_num.setter
     def pack_num(self, pack_num):
-        """Sets the pack_num of this ShowTasksResponseBody.
+        r"""Sets the pack_num of this ShowTasksResponseBody.
 
         包总数
 
@@ -457,7 +457,7 @@ class ShowTasksResponseBody:
 
     @property
     def score(self):
-        """Gets the score of this ShowTasksResponseBody.
+        r"""Gets the score of this ShowTasksResponseBody.
 
         安全分数
 
@@ -468,7 +468,7 @@ class ShowTasksResponseBody:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this ShowTasksResponseBody.
+        r"""Sets the score of this ShowTasksResponseBody.
 
         安全分数
 
@@ -479,7 +479,7 @@ class ShowTasksResponseBody:
 
     @property
     def safe_level(self):
-        """Gets the safe_level of this ShowTasksResponseBody.
+        r"""Gets the safe_level of this ShowTasksResponseBody.
 
         安全等级:   * safety - 安全   * average - 中风险   * highrisk - 高风险 
 
@@ -490,7 +490,7 @@ class ShowTasksResponseBody:
 
     @safe_level.setter
     def safe_level(self, safe_level):
-        """Sets the safe_level of this ShowTasksResponseBody.
+        r"""Sets the safe_level of this ShowTasksResponseBody.
 
         安全等级:   * safety - 安全   * average - 中风险   * highrisk - 高风险 
 
@@ -501,7 +501,7 @@ class ShowTasksResponseBody:
 
     @property
     def statistics(self):
-        """Gets the statistics of this ShowTasksResponseBody.
+        r"""Gets the statistics of this ShowTasksResponseBody.
 
         :return: The statistics of this ShowTasksResponseBody.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.VulnsLevel`
@@ -510,7 +510,7 @@ class ShowTasksResponseBody:
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this ShowTasksResponseBody.
+        r"""Sets the statistics of this ShowTasksResponseBody.
 
         :param statistics: The statistics of this ShowTasksResponseBody.
         :type statistics: :class:`huaweicloudsdkcodeartsinspector.v3.VulnsLevel`

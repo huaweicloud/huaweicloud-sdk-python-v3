@@ -28,7 +28,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
     }
 
     def __init__(self, regions=None, count=None):
-        """ListSnapshotCrossRegionResponse
+        r"""ListSnapshotCrossRegionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
 
     @property
     def regions(self):
-        """Gets the regions of this ListSnapshotCrossRegionResponse.
+        r"""Gets the regions of this ListSnapshotCrossRegionResponse.
 
         区域列表
 
@@ -62,7 +62,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ListSnapshotCrossRegionResponse.
+        r"""Sets the regions of this ListSnapshotCrossRegionResponse.
 
         区域列表
 
@@ -73,7 +73,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSnapshotCrossRegionResponse.
+        r"""Gets the count of this ListSnapshotCrossRegionResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSnapshotCrossRegionResponse.
+        r"""Sets the count of this ListSnapshotCrossRegionResponse.
 
         总数
 

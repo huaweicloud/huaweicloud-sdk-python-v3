@@ -29,7 +29,7 @@ class DeleteClustersTagsRequest:
     }
 
     def __init__(self, cluster_id=None, resource_type=None, key=None):
-        """DeleteClustersTagsRequest
+        r"""DeleteClustersTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteClustersTagsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteClustersTagsRequest.
+        r"""Gets the cluster_id of this DeleteClustersTagsRequest.
 
         指定删除标签的集群ID。
 
@@ -65,7 +65,7 @@ class DeleteClustersTagsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteClustersTagsRequest.
+        r"""Sets the cluster_id of this DeleteClustersTagsRequest.
 
         指定删除标签的集群ID。
 
@@ -76,7 +76,7 @@ class DeleteClustersTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteClustersTagsRequest.
+        r"""Gets the resource_type of this DeleteClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -87,7 +87,7 @@ class DeleteClustersTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteClustersTagsRequest.
+        r"""Sets the resource_type of this DeleteClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -98,7 +98,7 @@ class DeleteClustersTagsRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteClustersTagsRequest.
+        r"""Gets the key of this DeleteClustersTagsRequest.
 
         需要删除的标签名。如果标签名为中文需要经过url编码再调用该接口。
 
@@ -109,7 +109,7 @@ class DeleteClustersTagsRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteClustersTagsRequest.
+        r"""Sets the key of this DeleteClustersTagsRequest.
 
         需要删除的标签名。如果标签名为中文需要经过url编码再调用该接口。
 

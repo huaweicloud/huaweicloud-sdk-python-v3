@@ -33,7 +33,7 @@ class RetrieveEnterpriseMultiAccountReq:
     }
 
     def __init__(self, customer_id=None, amount=None, trans_id=None, balance_type=None, expire_time=None):
-        """RetrieveEnterpriseMultiAccountReq
+        r"""RetrieveEnterpriseMultiAccountReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this RetrieveEnterpriseMultiAccountReq.
+        r"""Gets the customer_id of this RetrieveEnterpriseMultiAccountReq.
 
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
@@ -80,7 +80,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this RetrieveEnterpriseMultiAccountReq.
+        r"""Sets the customer_id of this RetrieveEnterpriseMultiAccountReq.
 
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
@@ -91,7 +91,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @property
     def amount(self):
-        """Gets the amount of this RetrieveEnterpriseMultiAccountReq.
+        r"""Gets the amount of this RetrieveEnterpriseMultiAccountReq.
 
         总回收金额。 金额单位为货币标准单位，如人民币则单位为元。取值大于0且精确到小数点后2位。
 
@@ -102,7 +102,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this RetrieveEnterpriseMultiAccountReq.
+        r"""Sets the amount of this RetrieveEnterpriseMultiAccountReq.
 
         总回收金额。 金额单位为货币标准单位，如人民币则单位为元。取值大于0且精确到小数点后2位。
 
@@ -113,7 +113,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @property
     def trans_id(self):
-        """Gets the trans_id of this RetrieveEnterpriseMultiAccountReq.
+        r"""Gets the trans_id of this RetrieveEnterpriseMultiAccountReq.
 
         交易序列号，用于防止重复提交。 如果接口调用方不传，则企业管理微服务后台生成如果接口调用方传入，则请采用UUID保证全局唯一
 
@@ -124,7 +124,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @trans_id.setter
     def trans_id(self, trans_id):
-        """Sets the trans_id of this RetrieveEnterpriseMultiAccountReq.
+        r"""Sets the trans_id of this RetrieveEnterpriseMultiAccountReq.
 
         交易序列号，用于防止重复提交。 如果接口调用方不传，则企业管理微服务后台生成如果接口调用方传入，则请采用UUID保证全局唯一
 
@@ -135,7 +135,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @property
     def balance_type(self):
-        """Gets the balance_type of this RetrieveEnterpriseMultiAccountReq.
+        r"""Gets the balance_type of this RetrieveEnterpriseMultiAccountReq.
 
         账户类型： BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
@@ -146,7 +146,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @balance_type.setter
     def balance_type(self, balance_type):
-        """Sets the balance_type of this RetrieveEnterpriseMultiAccountReq.
+        r"""Sets the balance_type of this RetrieveEnterpriseMultiAccountReq.
 
         账户类型： BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
@@ -157,7 +157,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this RetrieveEnterpriseMultiAccountReq.
+        r"""Gets the expire_time of this RetrieveEnterpriseMultiAccountReq.
 
         账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。 暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本回收的情况无需填写。
 
@@ -168,7 +168,7 @@ class RetrieveEnterpriseMultiAccountReq:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this RetrieveEnterpriseMultiAccountReq.
+        r"""Sets the expire_time of this RetrieveEnterpriseMultiAccountReq.
 
         账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。 暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本回收的情况无需填写。
 

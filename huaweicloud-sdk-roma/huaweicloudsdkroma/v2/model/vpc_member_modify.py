@@ -27,7 +27,7 @@ class VpcMemberModify:
     }
 
     def __init__(self, members=None, member_group_name=None):
-        """VpcMemberModify
+        r"""VpcMemberModify
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VpcMemberModify:
 
     @property
     def members(self):
-        """Gets the members of this VpcMemberModify.
+        r"""Gets the members of this VpcMemberModify.
 
         后端实例列表
 
@@ -61,7 +61,7 @@ class VpcMemberModify:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this VpcMemberModify.
+        r"""Sets the members of this VpcMemberModify.
 
         后端实例列表
 
@@ -72,7 +72,7 @@ class VpcMemberModify:
 
     @property
     def member_group_name(self):
-        """Gets the member_group_name of this VpcMemberModify.
+        r"""Gets the member_group_name of this VpcMemberModify.
 
         需要修改的后端服务器组  不传时使用members中的定义对VPC通道后端进行全量覆盖修改。  传入时，只对members中对应后端服务器组的后端实例进行处理，其他后端服务器组的入参会被忽略。例如：member_group_name=primary时，只处理members中后端服务器组为primary的后端实例。
 
@@ -83,7 +83,7 @@ class VpcMemberModify:
 
     @member_group_name.setter
     def member_group_name(self, member_group_name):
-        """Sets the member_group_name of this VpcMemberModify.
+        r"""Sets the member_group_name of this VpcMemberModify.
 
         需要修改的后端服务器组  不传时使用members中的定义对VPC通道后端进行全量覆盖修改。  传入时，只对members中对应后端服务器组的后端实例进行处理，其他后端服务器组的入参会被忽略。例如：member_group_name=primary时，只处理members中后端服务器组为primary的后端实例。
 

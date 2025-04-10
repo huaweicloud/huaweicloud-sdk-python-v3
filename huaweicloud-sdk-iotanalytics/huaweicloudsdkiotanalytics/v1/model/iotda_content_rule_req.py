@@ -27,7 +27,7 @@ class IotdaContentRuleReq:
     }
 
     def __init__(self, app_id=None, products=None):
-        """IotdaContentRuleReq
+        r"""IotdaContentRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IotdaContentRuleReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this IotdaContentRuleReq.
+        r"""Gets the app_id of this IotdaContentRuleReq.
 
         IoTDA中的资源空间Id
 
@@ -59,7 +59,7 @@ class IotdaContentRuleReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this IotdaContentRuleReq.
+        r"""Sets the app_id of this IotdaContentRuleReq.
 
         IoTDA中的资源空间Id
 
@@ -70,7 +70,7 @@ class IotdaContentRuleReq:
 
     @property
     def products(self):
-        """Gets the products of this IotdaContentRuleReq.
+        r"""Gets the products of this IotdaContentRuleReq.
 
         IoTDA中某资源空间Id下的产品列表
 
@@ -81,7 +81,7 @@ class IotdaContentRuleReq:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this IotdaContentRuleReq.
+        r"""Sets the products of this IotdaContentRuleReq.
 
         IoTDA中某资源空间Id下的产品列表
 

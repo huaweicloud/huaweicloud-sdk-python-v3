@@ -29,7 +29,7 @@ class CreateMolDockingJobReq:
     }
 
     def __init__(self, receptor=None, ligand=None, engine=None):
-        """CreateMolDockingJobReq
+        r"""CreateMolDockingJobReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateMolDockingJobReq:
 
     @property
     def receptor(self):
-        """Gets the receptor of this CreateMolDockingJobReq.
+        r"""Gets the receptor of this CreateMolDockingJobReq.
 
         :return: The receptor of this CreateMolDockingJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDto`
@@ -64,7 +64,7 @@ class CreateMolDockingJobReq:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this CreateMolDockingJobReq.
+        r"""Sets the receptor of this CreateMolDockingJobReq.
 
         :param receptor: The receptor of this CreateMolDockingJobReq.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDto`
@@ -73,7 +73,7 @@ class CreateMolDockingJobReq:
 
     @property
     def ligand(self):
-        """Gets the ligand of this CreateMolDockingJobReq.
+        r"""Gets the ligand of this CreateMolDockingJobReq.
 
         :return: The ligand of this CreateMolDockingJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -82,7 +82,7 @@ class CreateMolDockingJobReq:
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this CreateMolDockingJobReq.
+        r"""Sets the ligand of this CreateMolDockingJobReq.
 
         :param ligand: The ligand of this CreateMolDockingJobReq.
         :type ligand: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -91,7 +91,7 @@ class CreateMolDockingJobReq:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateMolDockingJobReq.
+        r"""Gets the engine of this CreateMolDockingJobReq.
 
         引擎，默认为AUTODOCK_VINA。
 
@@ -102,7 +102,7 @@ class CreateMolDockingJobReq:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateMolDockingJobReq.
+        r"""Sets the engine of this CreateMolDockingJobReq.
 
         引擎，默认为AUTODOCK_VINA。
 

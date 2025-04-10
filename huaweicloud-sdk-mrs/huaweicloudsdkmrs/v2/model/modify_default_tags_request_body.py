@@ -25,7 +25,7 @@ class ModifyDefaultTagsRequestBody:
     }
 
     def __init__(self, action=None):
-        """ModifyDefaultTagsRequestBody
+        r"""ModifyDefaultTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyDefaultTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ModifyDefaultTagsRequestBody.
+        r"""Gets the action of this ModifyDefaultTagsRequestBody.
 
         操作类型，支持创建和删除
 
@@ -53,7 +53,7 @@ class ModifyDefaultTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ModifyDefaultTagsRequestBody.
+        r"""Sets the action of this ModifyDefaultTagsRequestBody.
 
         操作类型，支持创建和删除
 

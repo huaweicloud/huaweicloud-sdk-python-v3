@@ -26,7 +26,7 @@ class ListServicesResponse(SdkResponse):
     }
 
     def __init__(self, services=None):
-        """ListServicesResponse
+        r"""ListServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListServicesResponse(SdkResponse):
 
     @property
     def services(self):
-        """Gets the services of this ListServicesResponse.
+        r"""Gets the services of this ListServicesResponse.
 
         云服务名称。
 
@@ -55,7 +55,7 @@ class ListServicesResponse(SdkResponse):
 
     @services.setter
     def services(self, services):
-        """Sets the services of this ListServicesResponse.
+        r"""Sets the services of this ListServicesResponse.
 
         云服务名称。
 

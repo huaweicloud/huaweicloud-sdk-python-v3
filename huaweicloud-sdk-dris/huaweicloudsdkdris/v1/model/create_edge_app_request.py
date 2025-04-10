@@ -27,7 +27,7 @@ class CreateEdgeAppRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateEdgeAppRequest
+        r"""CreateEdgeAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateEdgeAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateEdgeAppRequest.
+        r"""Gets the instance_id of this CreateEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -61,7 +61,7 @@ class CreateEdgeAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateEdgeAppRequest.
+        r"""Sets the instance_id of this CreateEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -72,7 +72,7 @@ class CreateEdgeAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeAppRequest.
+        r"""Gets the body of this CreateEdgeAppRequest.
 
         :return: The body of this CreateEdgeAppRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.CreateEdgeApplicationRequestDTO`
@@ -81,7 +81,7 @@ class CreateEdgeAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeAppRequest.
+        r"""Sets the body of this CreateEdgeAppRequest.
 
         :param body: The body of this CreateEdgeAppRequest.
         :type body: :class:`huaweicloudsdkdris.v1.CreateEdgeApplicationRequestDTO`

@@ -30,7 +30,7 @@ class ListBranchesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, project_id=None, values=None):
-        """ListBranchesResponse
+        r"""ListBranchesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListBranchesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListBranchesResponse.
+        r"""Gets the total of this ListBranchesResponse.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -69,7 +69,7 @@ class ListBranchesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBranchesResponse.
+        r"""Sets the total of this ListBranchesResponse.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -80,7 +80,7 @@ class ListBranchesResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListBranchesResponse.
+        r"""Gets the project_id of this ListBranchesResponse.
 
         项目ID
 
@@ -91,7 +91,7 @@ class ListBranchesResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListBranchesResponse.
+        r"""Sets the project_id of this ListBranchesResponse.
 
         项目ID
 
@@ -102,7 +102,7 @@ class ListBranchesResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ListBranchesResponse.
+        r"""Gets the values of this ListBranchesResponse.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -113,7 +113,7 @@ class ListBranchesResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ListBranchesResponse.
+        r"""Sets the values of this ListBranchesResponse.
 
         实际的数据类型：单个对象，集合 或 NULL
 

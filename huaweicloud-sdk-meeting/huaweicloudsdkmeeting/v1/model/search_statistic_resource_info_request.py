@@ -35,7 +35,7 @@ class SearchStatisticResourceInfoRequest:
     }
 
     def __init__(self, offset=None, limit=None, time_unit=None, start_time=None, end_time=None, category=None):
-        """SearchStatisticResourceInfoRequest
+        r"""SearchStatisticResourceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class SearchStatisticResourceInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchStatisticResourceInfoRequest.
+        r"""Gets the offset of this SearchStatisticResourceInfoRequest.
 
         查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出
 
@@ -85,7 +85,7 @@ class SearchStatisticResourceInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchStatisticResourceInfoRequest.
+        r"""Sets the offset of this SearchStatisticResourceInfoRequest.
 
         查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出
 
@@ -96,7 +96,7 @@ class SearchStatisticResourceInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchStatisticResourceInfoRequest.
+        r"""Gets the limit of this SearchStatisticResourceInfoRequest.
 
         查询的条目数量。 * 取值：1-500，默认值为20
 
@@ -107,7 +107,7 @@ class SearchStatisticResourceInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchStatisticResourceInfoRequest.
+        r"""Sets the limit of this SearchStatisticResourceInfoRequest.
 
         查询的条目数量。 * 取值：1-500，默认值为20
 
@@ -118,7 +118,7 @@ class SearchStatisticResourceInfoRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this SearchStatisticResourceInfoRequest.
+        r"""Gets the time_unit of this SearchStatisticResourceInfoRequest.
 
         查询时间维度，取值： * D: 按日查询 * M: 按月查询
 
@@ -129,7 +129,7 @@ class SearchStatisticResourceInfoRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this SearchStatisticResourceInfoRequest.
+        r"""Sets the time_unit of this SearchStatisticResourceInfoRequest.
 
         查询时间维度，取值： * D: 按日查询 * M: 按月查询
 
@@ -140,7 +140,7 @@ class SearchStatisticResourceInfoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SearchStatisticResourceInfoRequest.
+        r"""Gets the start_time of this SearchStatisticResourceInfoRequest.
 
         查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
@@ -151,7 +151,7 @@ class SearchStatisticResourceInfoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SearchStatisticResourceInfoRequest.
+        r"""Sets the start_time of this SearchStatisticResourceInfoRequest.
 
         查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
@@ -162,7 +162,7 @@ class SearchStatisticResourceInfoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SearchStatisticResourceInfoRequest.
+        r"""Gets the end_time of this SearchStatisticResourceInfoRequest.
 
         查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
@@ -173,7 +173,7 @@ class SearchStatisticResourceInfoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SearchStatisticResourceInfoRequest.
+        r"""Sets the end_time of this SearchStatisticResourceInfoRequest.
 
         查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
@@ -184,7 +184,7 @@ class SearchStatisticResourceInfoRequest:
 
     @property
     def category(self):
-        """Gets the category of this SearchStatisticResourceInfoRequest.
+        r"""Gets the category of this SearchStatisticResourceInfoRequest.
 
         查询分类，取值： * used_vmr_info: 已购VMR资源使用统计数据 * used_live_info: 已购直播端口资源使用统计数据 * used_record_info: 已购录播资源使用统计数据 * used_pstn_info: 已购电话外呼资源使用统计数据
 
@@ -195,7 +195,7 @@ class SearchStatisticResourceInfoRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this SearchStatisticResourceInfoRequest.
+        r"""Sets the category of this SearchStatisticResourceInfoRequest.
 
         查询分类，取值： * used_vmr_info: 已购VMR资源使用统计数据 * used_live_info: 已购直播端口资源使用统计数据 * used_record_info: 已购录播资源使用统计数据 * used_pstn_info: 已购电话外呼资源使用统计数据
 

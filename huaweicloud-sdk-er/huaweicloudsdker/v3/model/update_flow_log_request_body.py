@@ -27,7 +27,7 @@ class UpdateFlowLogRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateFlowLogRequestBody
+        r"""UpdateFlowLogRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateFlowLogRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFlowLogRequestBody.
+        r"""Gets the name of this UpdateFlowLogRequestBody.
 
         流日志名称
 
@@ -61,7 +61,7 @@ class UpdateFlowLogRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFlowLogRequestBody.
+        r"""Sets the name of this UpdateFlowLogRequestBody.
 
         流日志名称
 
@@ -72,7 +72,7 @@ class UpdateFlowLogRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateFlowLogRequestBody.
+        r"""Gets the description of this UpdateFlowLogRequestBody.
 
         :return: The description of this UpdateFlowLogRequestBody.
         :rtype: str
@@ -81,7 +81,7 @@ class UpdateFlowLogRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFlowLogRequestBody.
+        r"""Sets the description of this UpdateFlowLogRequestBody.
 
         :param description: The description of this UpdateFlowLogRequestBody.
         :type description: str

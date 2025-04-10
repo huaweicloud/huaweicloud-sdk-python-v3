@@ -57,7 +57,7 @@ class ApiGroupInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domains=None, remark=None, call_limits=None, time_interval=None, time_unit=None, is_default=None, version=None, roma_app_id=None, roma_app_name=None):
-        """ApiGroupInfo
+        r"""ApiGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ApiGroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this ApiGroupInfo.
+        r"""Gets the id of this ApiGroupInfo.
 
         编号
 
@@ -159,7 +159,7 @@ class ApiGroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiGroupInfo.
+        r"""Sets the id of this ApiGroupInfo.
 
         编号
 
@@ -170,7 +170,7 @@ class ApiGroupInfo:
 
     @property
     def name(self):
-        """Gets the name of this ApiGroupInfo.
+        r"""Gets the name of this ApiGroupInfo.
 
         API分组名称
 
@@ -181,7 +181,7 @@ class ApiGroupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiGroupInfo.
+        r"""Sets the name of this ApiGroupInfo.
 
         API分组名称
 
@@ -192,7 +192,7 @@ class ApiGroupInfo:
 
     @property
     def status(self):
-        """Gets the status of this ApiGroupInfo.
+        r"""Gets the status of this ApiGroupInfo.
 
         状态   - 1： 有效   - 2:  锁定
 
@@ -203,7 +203,7 @@ class ApiGroupInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiGroupInfo.
+        r"""Sets the status of this ApiGroupInfo.
 
         状态   - 1： 有效   - 2:  锁定
 
@@ -214,7 +214,7 @@ class ApiGroupInfo:
 
     @property
     def sl_domain(self):
-        """Gets the sl_domain of this ApiGroupInfo.
+        r"""Gets the sl_domain of this ApiGroupInfo.
 
         系统默认分配的子域名
 
@@ -225,7 +225,7 @@ class ApiGroupInfo:
 
     @sl_domain.setter
     def sl_domain(self, sl_domain):
-        """Sets the sl_domain of this ApiGroupInfo.
+        r"""Sets the sl_domain of this ApiGroupInfo.
 
         系统默认分配的子域名
 
@@ -236,7 +236,7 @@ class ApiGroupInfo:
 
     @property
     def register_time(self):
-        """Gets the register_time of this ApiGroupInfo.
+        r"""Gets the register_time of this ApiGroupInfo.
 
         创建时间
 
@@ -247,7 +247,7 @@ class ApiGroupInfo:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ApiGroupInfo.
+        r"""Sets the register_time of this ApiGroupInfo.
 
         创建时间
 
@@ -258,7 +258,7 @@ class ApiGroupInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApiGroupInfo.
+        r"""Gets the update_time of this ApiGroupInfo.
 
         最近修改时间
 
@@ -269,7 +269,7 @@ class ApiGroupInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApiGroupInfo.
+        r"""Sets the update_time of this ApiGroupInfo.
 
         最近修改时间
 
@@ -280,7 +280,7 @@ class ApiGroupInfo:
 
     @property
     def on_sell_status(self):
-        """Gets the on_sell_status of this ApiGroupInfo.
+        r"""Gets the on_sell_status of this ApiGroupInfo.
 
         是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  [ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)暂未对接云市场，此字段默认返回2
 
@@ -291,7 +291,7 @@ class ApiGroupInfo:
 
     @on_sell_status.setter
     def on_sell_status(self, on_sell_status):
-        """Sets the on_sell_status of this ApiGroupInfo.
+        r"""Sets the on_sell_status of this ApiGroupInfo.
 
         是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  [ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)暂未对接云市场，此字段默认返回2
 
@@ -302,7 +302,7 @@ class ApiGroupInfo:
 
     @property
     def url_domains(self):
-        """Gets the url_domains of this ApiGroupInfo.
+        r"""Gets the url_domains of this ApiGroupInfo.
 
         分组上绑定的独立域名列表
 
@@ -313,7 +313,7 @@ class ApiGroupInfo:
 
     @url_domains.setter
     def url_domains(self, url_domains):
-        """Sets the url_domains of this ApiGroupInfo.
+        r"""Sets the url_domains of this ApiGroupInfo.
 
         分组上绑定的独立域名列表
 
@@ -324,7 +324,7 @@ class ApiGroupInfo:
 
     @property
     def sl_domains(self):
-        """Gets the sl_domains of this ApiGroupInfo.
+        r"""Gets the sl_domains of this ApiGroupInfo.
 
         系统默认分配的子域名列表
 
@@ -335,7 +335,7 @@ class ApiGroupInfo:
 
     @sl_domains.setter
     def sl_domains(self, sl_domains):
-        """Sets the sl_domains of this ApiGroupInfo.
+        r"""Sets the sl_domains of this ApiGroupInfo.
 
         系统默认分配的子域名列表
 
@@ -346,7 +346,7 @@ class ApiGroupInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiGroupInfo.
+        r"""Gets the remark of this ApiGroupInfo.
 
         描述
 
@@ -357,7 +357,7 @@ class ApiGroupInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiGroupInfo.
+        r"""Sets the remark of this ApiGroupInfo.
 
         描述
 
@@ -368,7 +368,7 @@ class ApiGroupInfo:
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this ApiGroupInfo.
+        r"""Gets the call_limits of this ApiGroupInfo.
 
         流控时长内分组下的API的总访问次数限制，默认不限，请根据服务的负载能力自行设置  暂不支持
 
@@ -379,7 +379,7 @@ class ApiGroupInfo:
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this ApiGroupInfo.
+        r"""Sets the call_limits of this ApiGroupInfo.
 
         流控时长内分组下的API的总访问次数限制，默认不限，请根据服务的负载能力自行设置  暂不支持
 
@@ -390,7 +390,7 @@ class ApiGroupInfo:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this ApiGroupInfo.
+        r"""Gets the time_interval of this ApiGroupInfo.
 
         流控时长  暂不支持
 
@@ -401,7 +401,7 @@ class ApiGroupInfo:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this ApiGroupInfo.
+        r"""Sets the time_interval of this ApiGroupInfo.
 
         流控时长  暂不支持
 
@@ -412,7 +412,7 @@ class ApiGroupInfo:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ApiGroupInfo.
+        r"""Gets the time_unit of this ApiGroupInfo.
 
         流控的时间单位  暂不支持
 
@@ -423,7 +423,7 @@ class ApiGroupInfo:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ApiGroupInfo.
+        r"""Sets the time_unit of this ApiGroupInfo.
 
         流控的时间单位  暂不支持
 
@@ -434,7 +434,7 @@ class ApiGroupInfo:
 
     @property
     def is_default(self):
-        """Gets the is_default of this ApiGroupInfo.
+        r"""Gets the is_default of this ApiGroupInfo.
 
         是否为默认分组
 
@@ -445,7 +445,7 @@ class ApiGroupInfo:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this ApiGroupInfo.
+        r"""Sets the is_default of this ApiGroupInfo.
 
         是否为默认分组
 
@@ -456,7 +456,7 @@ class ApiGroupInfo:
 
     @property
     def version(self):
-        """Gets the version of this ApiGroupInfo.
+        r"""Gets the version of this ApiGroupInfo.
 
         分组版本  - V1：全局分组 - V2：应用级分组
 
@@ -467,7 +467,7 @@ class ApiGroupInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiGroupInfo.
+        r"""Sets the version of this ApiGroupInfo.
 
         分组版本  - V1：全局分组 - V2：应用级分组
 
@@ -478,7 +478,7 @@ class ApiGroupInfo:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiGroupInfo.
+        r"""Gets the roma_app_id of this ApiGroupInfo.
 
         分组归属的集成应用编号。  分组版本V2时必填。
 
@@ -489,7 +489,7 @@ class ApiGroupInfo:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiGroupInfo.
+        r"""Sets the roma_app_id of this ApiGroupInfo.
 
         分组归属的集成应用编号。  分组版本V2时必填。
 
@@ -500,7 +500,7 @@ class ApiGroupInfo:
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this ApiGroupInfo.
+        r"""Gets the roma_app_name of this ApiGroupInfo.
 
         分组归属的集成应用名称
 
@@ -511,7 +511,7 @@ class ApiGroupInfo:
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this ApiGroupInfo.
+        r"""Sets the roma_app_name of this ApiGroupInfo.
 
         分组归属的集成应用名称
 

@@ -54,7 +54,7 @@ class ShowInstanceDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, environment_id=None, platform_type=None, flavor_id=None, artifacts=None, version=None, configuration=None, creator=None, create_time=None, update_time=None, external_accesses=None, refer_resources=None, status_detail=None):
-        """ShowInstanceDetailResponse
+        r"""ShowInstanceDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceDetailResponse.
+        r"""Gets the id of this ShowInstanceDetailResponse.
 
         应用组件实例ID。
 
@@ -153,7 +153,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceDetailResponse.
+        r"""Sets the id of this ShowInstanceDetailResponse.
 
         应用组件实例ID。
 
@@ -164,7 +164,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceDetailResponse.
+        r"""Gets the name of this ShowInstanceDetailResponse.
 
         应用组件实例名称。
 
@@ -175,7 +175,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceDetailResponse.
+        r"""Sets the name of this ShowInstanceDetailResponse.
 
         应用组件实例名称。
 
@@ -186,7 +186,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowInstanceDetailResponse.
+        r"""Gets the description of this ShowInstanceDetailResponse.
 
         实例描述。
 
@@ -197,7 +197,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowInstanceDetailResponse.
+        r"""Sets the description of this ShowInstanceDetailResponse.
 
         实例描述。
 
@@ -208,7 +208,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ShowInstanceDetailResponse.
+        r"""Gets the environment_id of this ShowInstanceDetailResponse.
 
         应用组件环境ID。
 
@@ -219,7 +219,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ShowInstanceDetailResponse.
+        r"""Sets the environment_id of this ShowInstanceDetailResponse.
 
         应用组件环境ID。
 
@@ -230,7 +230,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this ShowInstanceDetailResponse.
+        r"""Gets the platform_type of this ShowInstanceDetailResponse.
 
         :return: The platform_type of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
@@ -239,7 +239,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this ShowInstanceDetailResponse.
+        r"""Sets the platform_type of this ShowInstanceDetailResponse.
 
         :param platform_type: The platform_type of this ShowInstanceDetailResponse.
         :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
@@ -248,7 +248,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ShowInstanceDetailResponse.
+        r"""Gets the flavor_id of this ShowInstanceDetailResponse.
 
         :return: The flavor_id of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -257,7 +257,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ShowInstanceDetailResponse.
+        r"""Sets the flavor_id of this ShowInstanceDetailResponse.
 
         :param flavor_id: The flavor_id of this ShowInstanceDetailResponse.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -266,7 +266,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this ShowInstanceDetailResponse.
+        r"""Gets the artifacts of this ShowInstanceDetailResponse.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -277,7 +277,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this ShowInstanceDetailResponse.
+        r"""Sets the artifacts of this ShowInstanceDetailResponse.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -288,7 +288,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowInstanceDetailResponse.
+        r"""Gets the version of this ShowInstanceDetailResponse.
 
         应用组件版本号。
 
@@ -299,7 +299,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowInstanceDetailResponse.
+        r"""Sets the version of this ShowInstanceDetailResponse.
 
         应用组件版本号。
 
@@ -310,7 +310,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this ShowInstanceDetailResponse.
+        r"""Gets the configuration of this ShowInstanceDetailResponse.
 
         应用组件配置，如环境变量。
 
@@ -321,7 +321,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ShowInstanceDetailResponse.
+        r"""Sets the configuration of this ShowInstanceDetailResponse.
 
         应用组件配置，如环境变量。
 
@@ -332,7 +332,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowInstanceDetailResponse.
+        r"""Gets the creator of this ShowInstanceDetailResponse.
 
         创建人。
 
@@ -343,7 +343,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowInstanceDetailResponse.
+        r"""Sets the creator of this ShowInstanceDetailResponse.
 
         创建人。
 
@@ -354,7 +354,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowInstanceDetailResponse.
+        r"""Gets the create_time of this ShowInstanceDetailResponse.
 
         创建时间。
 
@@ -365,7 +365,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowInstanceDetailResponse.
+        r"""Sets the create_time of this ShowInstanceDetailResponse.
 
         创建时间。
 
@@ -376,7 +376,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowInstanceDetailResponse.
+        r"""Gets the update_time of this ShowInstanceDetailResponse.
 
         修改时间。
 
@@ -387,7 +387,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowInstanceDetailResponse.
+        r"""Sets the update_time of this ShowInstanceDetailResponse.
 
         修改时间。
 
@@ -398,7 +398,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this ShowInstanceDetailResponse.
+        r"""Gets the external_accesses of this ShowInstanceDetailResponse.
 
         访问方式列表。
 
@@ -409,7 +409,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this ShowInstanceDetailResponse.
+        r"""Sets the external_accesses of this ShowInstanceDetailResponse.
 
         访问方式列表。
 
@@ -420,7 +420,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this ShowInstanceDetailResponse.
+        r"""Gets the refer_resources of this ShowInstanceDetailResponse.
 
         部署资源列表。
 
@@ -431,7 +431,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this ShowInstanceDetailResponse.
+        r"""Sets the refer_resources of this ShowInstanceDetailResponse.
 
         部署资源列表。
 
@@ -442,7 +442,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this ShowInstanceDetailResponse.
+        r"""Gets the status_detail of this ShowInstanceDetailResponse.
 
         :return: The status_detail of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
@@ -451,7 +451,7 @@ class ShowInstanceDetailResponse(SdkResponse):
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this ShowInstanceDetailResponse.
+        r"""Sets the status_detail of this ShowInstanceDetailResponse.
 
         :param status_detail: The status_detail of this ShowInstanceDetailResponse.
         :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`

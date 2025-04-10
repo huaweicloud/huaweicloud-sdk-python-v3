@@ -24,7 +24,7 @@ class CreateAgenciesTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateAgenciesTaskResponse
+        r"""CreateAgenciesTaskResponse
 
         The model defined in huaweicloud sdk
 

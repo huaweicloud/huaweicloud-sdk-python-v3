@@ -35,7 +35,7 @@ class Topic:
     }
 
     def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None, message_type=None):
-        """Topic
+        r"""Topic
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Topic:
 
     @property
     def name(self):
-        """Gets the name of this Topic.
+        r"""Gets the name of this Topic.
 
         Topic名称。
 
@@ -89,7 +89,7 @@ class Topic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Topic.
+        r"""Sets the name of this Topic.
 
         Topic名称。
 
@@ -100,7 +100,7 @@ class Topic:
 
     @property
     def total_read_queue_num(self):
-        """Gets the total_read_queue_num of this Topic.
+        r"""Gets the total_read_queue_num of this Topic.
 
         总读队列个数。
 
@@ -111,7 +111,7 @@ class Topic:
 
     @total_read_queue_num.setter
     def total_read_queue_num(self, total_read_queue_num):
-        """Sets the total_read_queue_num of this Topic.
+        r"""Sets the total_read_queue_num of this Topic.
 
         总读队列个数。
 
@@ -122,7 +122,7 @@ class Topic:
 
     @property
     def total_write_queue_num(self):
-        """Gets the total_write_queue_num of this Topic.
+        r"""Gets the total_write_queue_num of this Topic.
 
         总写队列个数。
 
@@ -133,7 +133,7 @@ class Topic:
 
     @total_write_queue_num.setter
     def total_write_queue_num(self, total_write_queue_num):
-        """Sets the total_write_queue_num of this Topic.
+        r"""Sets the total_write_queue_num of this Topic.
 
         总写队列个数。
 
@@ -144,7 +144,7 @@ class Topic:
 
     @property
     def permission(self):
-        """Gets the permission of this Topic.
+        r"""Gets the permission of this Topic.
 
         权限。
 
@@ -155,7 +155,7 @@ class Topic:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this Topic.
+        r"""Sets the permission of this Topic.
 
         权限。
 
@@ -166,7 +166,7 @@ class Topic:
 
     @property
     def brokers(self):
-        """Gets the brokers of this Topic.
+        r"""Gets the brokers of this Topic.
 
         关联的代理。
 
@@ -177,7 +177,7 @@ class Topic:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this Topic.
+        r"""Sets the brokers of this Topic.
 
         关联的代理。
 
@@ -188,7 +188,7 @@ class Topic:
 
     @property
     def message_type(self):
-        """Gets the message_type of this Topic.
+        r"""Gets the message_type of this Topic.
 
         消息类型（RocketMQ实例5.x版本才包含此参数）。
 
@@ -199,7 +199,7 @@ class Topic:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this Topic.
+        r"""Sets the message_type of this Topic.
 
         消息类型（RocketMQ实例5.x版本才包含此参数）。
 

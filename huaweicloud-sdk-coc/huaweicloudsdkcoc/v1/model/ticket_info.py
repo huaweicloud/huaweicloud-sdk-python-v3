@@ -31,7 +31,7 @@ class TicketInfo:
     }
 
     def __init__(self, ticket_id=None, ticket_type=None, target_id=None, scope_id=None):
-        """TicketInfo
+        r"""TicketInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TicketInfo:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this TicketInfo.
+        r"""Gets the ticket_id of this TicketInfo.
 
         四号单id
 
@@ -75,7 +75,7 @@ class TicketInfo:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this TicketInfo.
+        r"""Sets the ticket_id of this TicketInfo.
 
         四号单id
 
@@ -86,7 +86,7 @@ class TicketInfo:
 
     @property
     def ticket_type(self):
-        """Gets the ticket_type of this TicketInfo.
+        r"""Gets the ticket_type of this TicketInfo.
 
         四号单类型，可选CHANGE/INCIDENT/ALARM/WARROOM
 
@@ -97,7 +97,7 @@ class TicketInfo:
 
     @ticket_type.setter
     def ticket_type(self, ticket_type):
-        """Sets the ticket_type of this TicketInfo.
+        r"""Sets the ticket_type of this TicketInfo.
 
         四号单类型，可选CHANGE/INCIDENT/ALARM/WARROOM
 
@@ -108,7 +108,7 @@ class TicketInfo:
 
     @property
     def target_id(self):
-        """Gets the target_id of this TicketInfo.
+        r"""Gets the target_id of this TicketInfo.
 
         四号单关联的应用id
 
@@ -119,7 +119,7 @@ class TicketInfo:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this TicketInfo.
+        r"""Sets the target_id of this TicketInfo.
 
         四号单关联的应用id
 
@@ -130,7 +130,7 @@ class TicketInfo:
 
     @property
     def scope_id(self):
-        """Gets the scope_id of this TicketInfo.
+        r"""Gets the scope_id of this TicketInfo.
 
         region id
 
@@ -141,7 +141,7 @@ class TicketInfo:
 
     @scope_id.setter
     def scope_id(self, scope_id):
-        """Sets the scope_id of this TicketInfo.
+        r"""Sets the scope_id of this TicketInfo.
 
         region id
 

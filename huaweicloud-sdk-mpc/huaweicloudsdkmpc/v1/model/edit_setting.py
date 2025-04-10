@@ -41,7 +41,7 @@ class EditSetting:
     }
 
     def __init__(self, timeline_start=None, timeline_end=None, trans_template_id=None, av_parameter=None, mosaics=None, image_watermarks=None, heads=None, tails=None, output=None):
-        """EditSetting
+        r"""EditSetting
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class EditSetting:
 
     @property
     def timeline_start(self):
-        """Gets the timeline_start of this EditSetting.
+        r"""Gets the timeline_start of this EditSetting.
 
         input指定源文件开始截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点 
 
@@ -109,7 +109,7 @@ class EditSetting:
 
     @timeline_start.setter
     def timeline_start(self, timeline_start):
-        """Sets the timeline_start of this EditSetting.
+        r"""Sets the timeline_start of this EditSetting.
 
         input指定源文件开始截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点 
 
@@ -120,7 +120,7 @@ class EditSetting:
 
     @property
     def timeline_end(self):
-        """Gets the timeline_end of this EditSetting.
+        r"""Gets the timeline_end of this EditSetting.
 
         input指定源文件接受截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
 
@@ -131,7 +131,7 @@ class EditSetting:
 
     @timeline_end.setter
     def timeline_end(self, timeline_end):
-        """Sets the timeline_end of this EditSetting.
+        r"""Sets the timeline_end of this EditSetting.
 
         input指定源文件接受截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
 
@@ -142,7 +142,7 @@ class EditSetting:
 
     @property
     def trans_template_id(self):
-        """Gets the trans_template_id of this EditSetting.
+        r"""Gets the trans_template_id of this EditSetting.
 
         转码模板id
 
@@ -153,7 +153,7 @@ class EditSetting:
 
     @trans_template_id.setter
     def trans_template_id(self, trans_template_id):
-        """Sets the trans_template_id of this EditSetting.
+        r"""Sets the trans_template_id of this EditSetting.
 
         转码模板id
 
@@ -164,7 +164,7 @@ class EditSetting:
 
     @property
     def av_parameter(self):
-        """Gets the av_parameter of this EditSetting.
+        r"""Gets the av_parameter of this EditSetting.
 
         :return: The av_parameter of this EditSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.AvParameters`
@@ -173,7 +173,7 @@ class EditSetting:
 
     @av_parameter.setter
     def av_parameter(self, av_parameter):
-        """Sets the av_parameter of this EditSetting.
+        r"""Sets the av_parameter of this EditSetting.
 
         :param av_parameter: The av_parameter of this EditSetting.
         :type av_parameter: :class:`huaweicloudsdkmpc.v1.AvParameters`
@@ -182,7 +182,7 @@ class EditSetting:
 
     @property
     def mosaics(self):
-        """Gets the mosaics of this EditSetting.
+        r"""Gets the mosaics of this EditSetting.
 
         马赛克（模糊处理）配置，会对input指定的源文件进行马赛克处理，马赛克基于视频左上角为参考位置 
 
@@ -193,7 +193,7 @@ class EditSetting:
 
     @mosaics.setter
     def mosaics(self, mosaics):
-        """Sets the mosaics of this EditSetting.
+        r"""Sets the mosaics of this EditSetting.
 
         马赛克（模糊处理）配置，会对input指定的源文件进行马赛克处理，马赛克基于视频左上角为参考位置 
 
@@ -204,7 +204,7 @@ class EditSetting:
 
     @property
     def image_watermarks(self):
-        """Gets the image_watermarks of this EditSetting.
+        r"""Gets the image_watermarks of this EditSetting.
 
         图片水印配置，会对input指定的源文件进行马赛克处理。水印设置参数里面的overlay_input字段不填 
 
@@ -215,7 +215,7 @@ class EditSetting:
 
     @image_watermarks.setter
     def image_watermarks(self, image_watermarks):
-        """Sets the image_watermarks of this EditSetting.
+        r"""Sets the image_watermarks of this EditSetting.
 
         图片水印配置，会对input指定的源文件进行马赛克处理。水印设置参数里面的overlay_input字段不填 
 
@@ -226,7 +226,7 @@ class EditSetting:
 
     @property
     def heads(self):
-        """Gets the heads of this EditSetting.
+        r"""Gets the heads of this EditSetting.
 
         头部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的前面 
 
@@ -237,7 +237,7 @@ class EditSetting:
 
     @heads.setter
     def heads(self, heads):
-        """Sets the heads of this EditSetting.
+        r"""Sets the heads of this EditSetting.
 
         头部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的前面 
 
@@ -248,7 +248,7 @@ class EditSetting:
 
     @property
     def tails(self):
-        """Gets the tails of this EditSetting.
+        r"""Gets the tails of this EditSetting.
 
         尾部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的后面 
 
@@ -259,7 +259,7 @@ class EditSetting:
 
     @tails.setter
     def tails(self, tails):
-        """Sets the tails of this EditSetting.
+        r"""Sets the tails of this EditSetting.
 
         尾部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的后面 
 
@@ -270,7 +270,7 @@ class EditSetting:
 
     @property
     def output(self):
-        """Gets the output of this EditSetting.
+        r"""Gets the output of this EditSetting.
 
         :return: The output of this EditSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -279,7 +279,7 @@ class EditSetting:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this EditSetting.
+        r"""Sets the output of this EditSetting.
 
         :param output: The output of this EditSetting.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

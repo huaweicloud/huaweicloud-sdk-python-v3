@@ -28,7 +28,7 @@ class ListDatabaseSchemasResponse(SdkResponse):
     }
 
     def __init__(self, database_schemas=None, total_count=None):
-        """ListDatabaseSchemasResponse
+        r"""ListDatabaseSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDatabaseSchemasResponse(SdkResponse):
 
     @property
     def database_schemas(self):
-        """Gets the database_schemas of this ListDatabaseSchemasResponse.
+        r"""Gets the database_schemas of this ListDatabaseSchemasResponse.
 
         列表中每个元素表示一个数据库schema。
 
@@ -62,7 +62,7 @@ class ListDatabaseSchemasResponse(SdkResponse):
 
     @database_schemas.setter
     def database_schemas(self, database_schemas):
-        """Sets the database_schemas of this ListDatabaseSchemasResponse.
+        r"""Sets the database_schemas of this ListDatabaseSchemasResponse.
 
         列表中每个元素表示一个数据库schema。
 
@@ -73,7 +73,7 @@ class ListDatabaseSchemasResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDatabaseSchemasResponse.
+        r"""Gets the total_count of this ListDatabaseSchemasResponse.
 
         数据库schema总数。
 
@@ -84,7 +84,7 @@ class ListDatabaseSchemasResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDatabaseSchemasResponse.
+        r"""Sets the total_count of this ListDatabaseSchemasResponse.
 
         数据库schema总数。
 

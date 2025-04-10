@@ -35,7 +35,7 @@ class FaceSearchUrlReq:
     }
 
     def __init__(self, filter=None, top_n=None, image_url=None, return_fields=None, threshold=None, sort=None):
-        """FaceSearchUrlReq
+        r"""FaceSearchUrlReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class FaceSearchUrlReq:
 
     @property
     def filter(self):
-        """Gets the filter of this FaceSearchUrlReq.
+        r"""Gets the filter of this FaceSearchUrlReq.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -88,7 +88,7 @@ class FaceSearchUrlReq:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this FaceSearchUrlReq.
+        r"""Sets the filter of this FaceSearchUrlReq.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -99,7 +99,7 @@ class FaceSearchUrlReq:
 
     @property
     def top_n(self):
-        """Gets the top_n of this FaceSearchUrlReq.
+        r"""Gets the top_n of this FaceSearchUrlReq.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -110,7 +110,7 @@ class FaceSearchUrlReq:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this FaceSearchUrlReq.
+        r"""Sets the top_n of this FaceSearchUrlReq.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -121,7 +121,7 @@ class FaceSearchUrlReq:
 
     @property
     def image_url(self):
-        """Gets the image_url of this FaceSearchUrlReq.
+        r"""Gets the image_url of this FaceSearchUrlReq.
 
         [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。](tag:hc) [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0006.html)。](tag:hk)
 
@@ -132,7 +132,7 @@ class FaceSearchUrlReq:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this FaceSearchUrlReq.
+        r"""Sets the image_url of this FaceSearchUrlReq.
 
         [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。](tag:hc) [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0006.html)。](tag:hk)
 
@@ -143,7 +143,7 @@ class FaceSearchUrlReq:
 
     @property
     def return_fields(self):
-        """Gets the return_fields of this FaceSearchUrlReq.
+        r"""Gets the return_fields of this FaceSearchUrlReq.
 
         指定返回的自定义字段。
 
@@ -154,7 +154,7 @@ class FaceSearchUrlReq:
 
     @return_fields.setter
     def return_fields(self, return_fields):
-        """Sets the return_fields of this FaceSearchUrlReq.
+        r"""Sets the return_fields of this FaceSearchUrlReq.
 
         指定返回的自定义字段。
 
@@ -165,7 +165,7 @@ class FaceSearchUrlReq:
 
     @property
     def threshold(self):
-        """Gets the threshold of this FaceSearchUrlReq.
+        r"""Gets the threshold of this FaceSearchUrlReq.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -176,7 +176,7 @@ class FaceSearchUrlReq:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this FaceSearchUrlReq.
+        r"""Sets the threshold of this FaceSearchUrlReq.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -187,7 +187,7 @@ class FaceSearchUrlReq:
 
     @property
     def sort(self):
-        """Gets the sort of this FaceSearchUrlReq.
+        r"""Gets the sort of this FaceSearchUrlReq.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
@@ -198,7 +198,7 @@ class FaceSearchUrlReq:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this FaceSearchUrlReq.
+        r"""Sets the sort of this FaceSearchUrlReq.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 

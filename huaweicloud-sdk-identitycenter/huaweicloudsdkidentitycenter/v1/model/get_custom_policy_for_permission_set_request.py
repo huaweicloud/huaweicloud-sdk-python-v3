@@ -30,7 +30,7 @@ class GetCustomPolicyForPermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None):
-        """GetCustomPolicyForPermissionSetRequest
+        r"""GetCustomPolicyForPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class GetCustomPolicyForPermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this GetCustomPolicyForPermissionSetRequest.
+        r"""Gets the x_security_token of this GetCustomPolicyForPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class GetCustomPolicyForPermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this GetCustomPolicyForPermissionSetRequest.
+        r"""Sets the x_security_token of this GetCustomPolicyForPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class GetCustomPolicyForPermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this GetCustomPolicyForPermissionSetRequest.
+        r"""Gets the instance_id of this GetCustomPolicyForPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -89,7 +89,7 @@ class GetCustomPolicyForPermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this GetCustomPolicyForPermissionSetRequest.
+        r"""Sets the instance_id of this GetCustomPolicyForPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -100,7 +100,7 @@ class GetCustomPolicyForPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this GetCustomPolicyForPermissionSetRequest.
+        r"""Gets the permission_set_id of this GetCustomPolicyForPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -111,7 +111,7 @@ class GetCustomPolicyForPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this GetCustomPolicyForPermissionSetRequest.
+        r"""Sets the permission_set_id of this GetCustomPolicyForPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 

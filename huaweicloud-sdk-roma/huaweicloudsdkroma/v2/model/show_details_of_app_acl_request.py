@@ -27,7 +27,7 @@ class ShowDetailsOfAppAclRequest:
     }
 
     def __init__(self, instance_id=None, app_id=None):
-        """ShowDetailsOfAppAclRequest
+        r"""ShowDetailsOfAppAclRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfAppAclRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfAppAclRequest.
+        r"""Gets the instance_id of this ShowDetailsOfAppAclRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDetailsOfAppAclRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfAppAclRequest.
+        r"""Sets the instance_id of this ShowDetailsOfAppAclRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDetailsOfAppAclRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDetailsOfAppAclRequest.
+        r"""Gets the app_id of this ShowDetailsOfAppAclRequest.
 
         应用编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfAppAclRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDetailsOfAppAclRequest.
+        r"""Sets the app_id of this ShowDetailsOfAppAclRequest.
 
         应用编号
 

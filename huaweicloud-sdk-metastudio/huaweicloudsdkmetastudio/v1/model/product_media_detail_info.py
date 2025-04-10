@@ -39,7 +39,7 @@ class ProductMediaDetailInfo:
     }
 
     def __init__(self, asset_id=None, asset_type=None, order=None, asset_name=None, asset_state=None, cover_url=None, thumbnail_url=None, main_url=None):
-        """ProductMediaDetailInfo
+        r"""ProductMediaDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ProductMediaDetailInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ProductMediaDetailInfo.
+        r"""Gets the asset_id of this ProductMediaDetailInfo.
 
         资产ID
 
@@ -103,7 +103,7 @@ class ProductMediaDetailInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ProductMediaDetailInfo.
+        r"""Sets the asset_id of this ProductMediaDetailInfo.
 
         资产ID
 
@@ -114,7 +114,7 @@ class ProductMediaDetailInfo:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this ProductMediaDetailInfo.
+        r"""Gets the asset_type of this ProductMediaDetailInfo.
 
         资产类型 * IMAGE：图片 * VIDEO：视频 * AUDIO：音频
 
@@ -125,7 +125,7 @@ class ProductMediaDetailInfo:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this ProductMediaDetailInfo.
+        r"""Sets the asset_type of this ProductMediaDetailInfo.
 
         资产类型 * IMAGE：图片 * VIDEO：视频 * AUDIO：音频
 
@@ -136,7 +136,7 @@ class ProductMediaDetailInfo:
 
     @property
     def order(self):
-        """Gets the order of this ProductMediaDetailInfo.
+        r"""Gets the order of this ProductMediaDetailInfo.
 
         **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
 
@@ -147,7 +147,7 @@ class ProductMediaDetailInfo:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ProductMediaDetailInfo.
+        r"""Sets the order of this ProductMediaDetailInfo.
 
         **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
 
@@ -158,7 +158,7 @@ class ProductMediaDetailInfo:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this ProductMediaDetailInfo.
+        r"""Gets the asset_name of this ProductMediaDetailInfo.
 
         资产名称。
 
@@ -169,7 +169,7 @@ class ProductMediaDetailInfo:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this ProductMediaDetailInfo.
+        r"""Sets the asset_name of this ProductMediaDetailInfo.
 
         资产名称。
 
@@ -180,7 +180,7 @@ class ProductMediaDetailInfo:
 
     @property
     def asset_state(self):
-        """Gets the asset_state of this ProductMediaDetailInfo.
+        r"""Gets the asset_state of this ProductMediaDetailInfo.
 
         资产状态。
 
@@ -191,7 +191,7 @@ class ProductMediaDetailInfo:
 
     @asset_state.setter
     def asset_state(self, asset_state):
-        """Sets the asset_state of this ProductMediaDetailInfo.
+        r"""Sets the asset_state of this ProductMediaDetailInfo.
 
         资产状态。
 
@@ -202,7 +202,7 @@ class ProductMediaDetailInfo:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this ProductMediaDetailInfo.
+        r"""Gets the cover_url of this ProductMediaDetailInfo.
 
         封面图片路径。
 
@@ -213,7 +213,7 @@ class ProductMediaDetailInfo:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this ProductMediaDetailInfo.
+        r"""Sets the cover_url of this ProductMediaDetailInfo.
 
         封面图片路径。
 
@@ -224,7 +224,7 @@ class ProductMediaDetailInfo:
 
     @property
     def thumbnail_url(self):
-        """Gets the thumbnail_url of this ProductMediaDetailInfo.
+        r"""Gets the thumbnail_url of this ProductMediaDetailInfo.
 
         缩略图路径。
 
@@ -235,7 +235,7 @@ class ProductMediaDetailInfo:
 
     @thumbnail_url.setter
     def thumbnail_url(self, thumbnail_url):
-        """Sets the thumbnail_url of this ProductMediaDetailInfo.
+        r"""Sets the thumbnail_url of this ProductMediaDetailInfo.
 
         缩略图路径。
 
@@ -246,7 +246,7 @@ class ProductMediaDetailInfo:
 
     @property
     def main_url(self):
-        """Gets the main_url of this ProductMediaDetailInfo.
+        r"""Gets the main_url of this ProductMediaDetailInfo.
 
         缩略图路径。
 
@@ -257,7 +257,7 @@ class ProductMediaDetailInfo:
 
     @main_url.setter
     def main_url(self, main_url):
-        """Sets the main_url of this ProductMediaDetailInfo.
+        r"""Sets the main_url of this ProductMediaDetailInfo.
 
         缩略图路径。
 

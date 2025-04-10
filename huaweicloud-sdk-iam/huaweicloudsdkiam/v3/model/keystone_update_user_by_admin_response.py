@@ -26,7 +26,7 @@ class KeystoneUpdateUserByAdminResponse(SdkResponse):
     }
 
     def __init__(self, user=None):
-        """KeystoneUpdateUserByAdminResponse
+        r"""KeystoneUpdateUserByAdminResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneUpdateUserByAdminResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this KeystoneUpdateUserByAdminResponse.
+        r"""Gets the user of this KeystoneUpdateUserByAdminResponse.
 
         :return: The user of this KeystoneUpdateUserByAdminResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminResult`
@@ -53,7 +53,7 @@ class KeystoneUpdateUserByAdminResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this KeystoneUpdateUserByAdminResponse.
+        r"""Sets the user of this KeystoneUpdateUserByAdminResponse.
 
         :param user: The user of this KeystoneUpdateUserByAdminResponse.
         :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminResult`

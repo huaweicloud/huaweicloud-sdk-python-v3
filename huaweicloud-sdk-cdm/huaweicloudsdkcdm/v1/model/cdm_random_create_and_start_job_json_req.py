@@ -27,7 +27,7 @@ class CdmRandomCreateAndStartJobJsonReq:
     }
 
     def __init__(self, jobs=None, clusters=None):
-        """CdmRandomCreateAndStartJobJsonReq
+        r"""CdmRandomCreateAndStartJobJsonReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CdmRandomCreateAndStartJobJsonReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this CdmRandomCreateAndStartJobJsonReq.
+        r"""Gets the jobs of this CdmRandomCreateAndStartJobJsonReq.
 
         作业列表，请参见jobs数据结构说明。
 
@@ -59,7 +59,7 @@ class CdmRandomCreateAndStartJobJsonReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this CdmRandomCreateAndStartJobJsonReq.
+        r"""Sets the jobs of this CdmRandomCreateAndStartJobJsonReq.
 
         作业列表，请参见jobs数据结构说明。
 
@@ -70,7 +70,7 @@ class CdmRandomCreateAndStartJobJsonReq:
 
     @property
     def clusters(self):
-        """Gets the clusters of this CdmRandomCreateAndStartJobJsonReq.
+        r"""Gets the clusters of this CdmRandomCreateAndStartJobJsonReq.
 
         CDM集群ID列表，系统会从里面随机选择一个开机状态的集群，在该集群中创建作业并执行作业。
 
@@ -81,7 +81,7 @@ class CdmRandomCreateAndStartJobJsonReq:
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this CdmRandomCreateAndStartJobJsonReq.
+        r"""Sets the clusters of this CdmRandomCreateAndStartJobJsonReq.
 
         CDM集群ID列表，系统会从里面随机选择一个开机状态的集群，在该集群中创建作业并执行作业。
 

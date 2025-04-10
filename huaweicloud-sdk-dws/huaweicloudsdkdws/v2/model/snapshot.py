@@ -29,7 +29,7 @@ class Snapshot:
     }
 
     def __init__(self, name=None, cluster_id=None, description=None):
-        """Snapshot
+        r"""Snapshot
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Snapshot:
 
     @property
     def name(self):
-        """Gets the name of this Snapshot.
+        r"""Gets the name of this Snapshot.
 
         快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
 
@@ -66,7 +66,7 @@ class Snapshot:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Snapshot.
+        r"""Sets the name of this Snapshot.
 
         快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
 
@@ -77,7 +77,7 @@ class Snapshot:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Snapshot.
+        r"""Gets the cluster_id of this Snapshot.
 
         指定创建快照的集群ID
 
@@ -88,7 +88,7 @@ class Snapshot:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Snapshot.
+        r"""Sets the cluster_id of this Snapshot.
 
         指定创建快照的集群ID
 
@@ -99,7 +99,7 @@ class Snapshot:
 
     @property
     def description(self):
-        """Gets the description of this Snapshot.
+        r"""Gets the description of this Snapshot.
 
         快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。
 
@@ -110,7 +110,7 @@ class Snapshot:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Snapshot.
+        r"""Sets the description of this Snapshot.
 
         快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。
 

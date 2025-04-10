@@ -34,7 +34,7 @@ class GslClient(Client):
         return client_builder
 
     def batch_set_attributes(self, request):
-        """批量设置自定义属性接口
+        r"""批量设置自定义属性接口
 
         批量设置自定义属性接口
         
@@ -99,7 +99,7 @@ class GslClient(Client):
         return http_info
 
     def create_attribute(self, request):
-        """用户新增自定义属性接口
+        r"""用户新增自定义属性接口
 
         用户新增自定义属性接口
         
@@ -164,7 +164,7 @@ class GslClient(Client):
         return http_info
 
     def disable_attribute(self, request):
-        """停用自定义属性接口
+        r"""停用自定义属性接口
 
         停用自定义属性接口
         
@@ -229,7 +229,7 @@ class GslClient(Client):
         return http_info
 
     def enable_attribute(self, request):
-        """启用自定义属性接口
+        r"""启用自定义属性接口
 
         启用自定义属性接口
         
@@ -294,7 +294,7 @@ class GslClient(Client):
         return http_info
 
     def list_attributes(self, request):
-        """查询自定义属性列表接口
+        r"""查询自定义属性列表接口
 
         查询自定义属性列表接口
         
@@ -365,7 +365,7 @@ class GslClient(Client):
         return http_info
 
     def update_attribute(self, request):
-        """修改自定义属性接口
+        r"""修改自定义属性接口
 
         修改自定义属性接口
         
@@ -432,7 +432,7 @@ class GslClient(Client):
         return http_info
 
     def list_back_pool_members(self, request):
-        """查询后向流量池成员列表
+        r"""查询后向流量池成员列表
 
         查询后向流量池成员列表
         
@@ -505,7 +505,7 @@ class GslClient(Client):
         return http_info
 
     def list_back_pools(self, request):
-        """查询后向流量池列表
+        r"""查询后向流量池列表
 
         查询后向流量池列表
         
@@ -578,7 +578,7 @@ class GslClient(Client):
         return http_info
 
     def add_network_switch_policy(self, request):
-        """新增网络切换策略
+        r"""新增网络切换策略
 
         新增网络切换策略
         
@@ -643,7 +643,7 @@ class GslClient(Client):
         return http_info
 
     def list_network_switch_policies(self, request):
-        """查询策略列表
+        r"""查询策略列表
 
         查询策略列表
         
@@ -714,7 +714,7 @@ class GslClient(Client):
         return http_info
 
     def list_pro_price_plans(self, request):
-        """查询套餐列表信息
+        r"""查询套餐列表信息
 
         查询套餐列表信息
         
@@ -793,7 +793,7 @@ class GslClient(Client):
         return http_info
 
     def delete_real_name(self, request):
-        """清除实名认证信息
+        r"""清除实名认证信息
 
         清除实名认证信息，接口仅支持中国电信卡调用。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -860,7 +860,7 @@ class GslClient(Client):
         return http_info
 
     def enable_sim_card(self, request):
-        """激活实体卡
+        r"""激活实体卡
 
         创建激活实体卡申请，返回业务受理单号。1~2个工作日完成激活操作。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -927,7 +927,7 @@ class GslClient(Client):
         return http_info
 
     def list_sim_card_flow_per_day(self, request):
-        """批量查询SIM卡日用量
+        r"""批量查询SIM卡日用量
 
         批量查询SIM卡日用量接口，支持按天或按月查询。SIM卡标识和容器ID只能选一个参数，天和月也只能选一个参数
         
@@ -992,7 +992,7 @@ class GslClient(Client):
         return http_info
 
     def list_sim_cards(self, request):
-        """查询SIM卡列表
+        r"""查询SIM卡列表
 
         查询SIM卡列表
         
@@ -1110,7 +1110,7 @@ class GslClient(Client):
         return http_info
 
     def register_imei(self, request):
-        """SIM卡机卡重绑
+        r"""SIM卡机卡重绑
 
         支持固定机卡重绑(需要上传IMEI，将SIM卡绑定到指定IMEI的设备)和普通机卡重绑(会清除之前绑定的设备,将SIM卡绑定到正在使用的设备)，接口仅支持中国电信卡，中国移动卡调用。中国电信卡单卡每月只允许重绑2次，中国移动卡仅支持普通机卡重绑。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -1177,7 +1177,7 @@ class GslClient(Client):
         return http_info
 
     def reset_sim_card(self, request):
-        """SIM卡单卡复机
+        r"""SIM卡单卡复机
 
         创建复机申请，返回业务受理单号。1~2个工作日完成复机操作。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -1244,7 +1244,7 @@ class GslClient(Client):
         return http_info
 
     def set_exceed_cut_net(self, request):
-        """SIM卡达量断网/取消达量断网
+        r"""SIM卡达量断网/取消达量断网
 
         SIM卡达量断网/取消达量断网，接口仅支持中国电信的卡以及中国联通、中国移动的组池卡调用。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -1311,7 +1311,7 @@ class GslClient(Client):
         return http_info
 
     def set_speed_value(self, request):
-        """实体卡限速
+        r"""实体卡限速
 
         实体卡限速接口，接口仅支持中国电信和中国联通实体卡调用。中国联通卡需要个人实名认证后才能使用限速功能。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -1378,7 +1378,7 @@ class GslClient(Client):
         return http_info
 
     def show_month_usages(self, request):
-        """月用量统计
+        r"""月用量统计
 
         设备月用量统计
         
@@ -1443,7 +1443,7 @@ class GslClient(Client):
         return http_info
 
     def show_real_named(self, request):
-        """查询SIM卡实名认证信息
+        r"""查询SIM卡实名认证信息
 
         实时查询SIM卡实名认证信息，接口仅支持查询中国大陆运营商卡片的实名认证信息。
         
@@ -1510,7 +1510,7 @@ class GslClient(Client):
         return http_info
 
     def show_sim_card(self, request):
-        """查询SIM卡详情
+        r"""查询SIM卡详情
 
         查询SIM卡详情
         
@@ -1577,7 +1577,7 @@ class GslClient(Client):
         return http_info
 
     def start_stop_net(self, request):
-        """SIM卡申请断网/恢复在用
+        r"""SIM卡申请断网/恢复在用
 
         SIM卡申请断网/恢复在用，接口仅支持中国电信卡调用。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -1644,7 +1644,7 @@ class GslClient(Client):
         return http_info
 
     def stop_sim_card(self, request):
-        """SIM卡单卡停机
+        r"""SIM卡单卡停机
 
         创建停机申请，返回业务受理单号。1~2个工作日完成停机操作。注：由于运营商侧业务限制，建议您同一张SIM卡不要同时执行多种不同业务的操作。
         
@@ -1711,7 +1711,7 @@ class GslClient(Client):
         return http_info
 
     def list_sim_device_multiply(self, request):
-        """查询三网卡列表
+        r"""查询三网卡列表
 
         通过cid或全量查询三网卡列表
         
@@ -1788,7 +1788,7 @@ class GslClient(Client):
         return http_info
 
     def set_network_switch_policy(self, request):
-        """SIM卡设置网络切换策略
+        r"""SIM卡设置网络切换策略
 
         SIM卡设置网络切换策略，接口仅支持三网卡调用。
         
@@ -1855,7 +1855,7 @@ class GslClient(Client):
         return http_info
 
     def switch_network(self, request):
-        """切换网络
+        r"""切换网络
 
         切换网络
         
@@ -1922,7 +1922,7 @@ class GslClient(Client):
         return http_info
 
     def list_sim_pool_members(self, request):
-        """查询流量池成员列表
+        r"""查询流量池成员列表
 
         查询流量池成员列表
         
@@ -1995,7 +1995,7 @@ class GslClient(Client):
         return http_info
 
     def list_sim_pools(self, request):
-        """查询流量池列表
+        r"""查询流量池列表
 
         查询流量池列表
         
@@ -2071,7 +2071,7 @@ class GslClient(Client):
         return http_info
 
     def list_flow_by_sim_cards(self, request):
-        """批量查询实体卡流量
+        r"""批量查询实体卡流量
 
         批量查询实体卡流量
         
@@ -2136,7 +2136,7 @@ class GslClient(Client):
         return http_info
 
     def list_sim_price_plans(self, request):
-        """sim卡套餐列表查询
+        r"""sim卡套餐列表查询
 
         SIM卡套餐列表查询，实体卡只会有一个套餐，eSIM/vSIM可能会有多个套餐
         
@@ -2209,7 +2209,7 @@ class GslClient(Client):
         return http_info
 
     def list_sms_details(self, request):
-        """短信发送详情
+        r"""短信发送详情
 
         短信发送详情，接口仅支持开通短信套餐的中国移动与中国电信卡调用
         
@@ -2282,7 +2282,7 @@ class GslClient(Client):
         return http_info
 
     def send_sms(self, request):
-        """发送短信
+        r"""发送短信
 
         发送短信，接口仅支持开通短信套餐的中国移动与中国电信卡调用。
         
@@ -2347,7 +2347,7 @@ class GslClient(Client):
         return http_info
 
     def batch_set_tags(self, request):
-        """批量设置/取消设置标签接口
+        r"""批量设置/取消设置标签接口
 
         批量设置/取消设置标签接口
         
@@ -2412,7 +2412,7 @@ class GslClient(Client):
         return http_info
 
     def create_tag(self, request):
-        """用户添加标签
+        r"""用户添加标签
 
         添加标签接口
         
@@ -2477,7 +2477,7 @@ class GslClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除标签
+        r"""删除标签
 
         删除标签
         
@@ -2542,7 +2542,7 @@ class GslClient(Client):
         return http_info
 
     def list_tags(self, request):
-        """查询标签列表
+        r"""查询标签列表
 
         查询标签列表
         
@@ -2613,7 +2613,7 @@ class GslClient(Client):
         return http_info
 
     def list_work_order_details(self, request):
-        """分页查询业务受理明细
+        r"""分页查询业务受理明细
 
         分页查询业务受理明细
         
@@ -2688,7 +2688,7 @@ class GslClient(Client):
         return http_info
 
     def list_work_orders(self, request):
-        """分页查询业务受理单
+        r"""分页查询业务受理单
 
         分页查询业务受理单
         

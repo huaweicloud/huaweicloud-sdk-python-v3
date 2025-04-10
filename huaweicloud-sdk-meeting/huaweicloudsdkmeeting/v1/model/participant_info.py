@@ -57,7 +57,7 @@ class ParticipantInfo:
     }
 
     def __init__(self, participant_id=None, name=None, subscriber_id=None, role=None, state=None, address=None, attendee_type=None, account_id=None, phone2=None, phone3=None, email=None, sms=None, dept_name=None, user_uuid=None, app_id=None, is_auto_invite=None, is_not_overlay_pid_name=None):
-        """ParticipantInfo
+        r"""ParticipantInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ParticipantInfo:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this ParticipantInfo.
+        r"""Gets the participant_id of this ParticipantInfo.
 
         与会者的号码。
 
@@ -166,7 +166,7 @@ class ParticipantInfo:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this ParticipantInfo.
+        r"""Sets the participant_id of this ParticipantInfo.
 
         与会者的号码。
 
@@ -177,7 +177,7 @@ class ParticipantInfo:
 
     @property
     def name(self):
-        """Gets the name of this ParticipantInfo.
+        r"""Gets the name of this ParticipantInfo.
 
         与会者的名称。
 
@@ -188,7 +188,7 @@ class ParticipantInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParticipantInfo.
+        r"""Sets the name of this ParticipantInfo.
 
         与会者的名称。
 
@@ -199,7 +199,7 @@ class ParticipantInfo:
 
     @property
     def subscriber_id(self):
-        """Gets the subscriber_id of this ParticipantInfo.
+        r"""Gets the subscriber_id of this ParticipantInfo.
 
         与会者的号码（预留字段）。
 
@@ -210,7 +210,7 @@ class ParticipantInfo:
 
     @subscriber_id.setter
     def subscriber_id(self, subscriber_id):
-        """Sets the subscriber_id of this ParticipantInfo.
+        r"""Sets the subscriber_id of this ParticipantInfo.
 
         与会者的号码（预留字段）。
 
@@ -221,7 +221,7 @@ class ParticipantInfo:
 
     @property
     def role(self):
-        """Gets the role of this ParticipantInfo.
+        r"""Gets the role of this ParticipantInfo.
 
         与会者的角色。 - 1: 会议主持人 - 0: 普通与会者
 
@@ -232,7 +232,7 @@ class ParticipantInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ParticipantInfo.
+        r"""Sets the role of this ParticipantInfo.
 
         与会者的角色。 - 1: 会议主持人 - 0: 普通与会者
 
@@ -243,7 +243,7 @@ class ParticipantInfo:
 
     @property
     def state(self):
-        """Gets the state of this ParticipantInfo.
+        r"""Gets the state of this ParticipantInfo.
 
         用户状态。目前固定返回MEETTING。
 
@@ -254,7 +254,7 @@ class ParticipantInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ParticipantInfo.
+        r"""Sets the state of this ParticipantInfo.
 
         用户状态。目前固定返回MEETTING。
 
@@ -265,7 +265,7 @@ class ParticipantInfo:
 
     @property
     def address(self):
-        """Gets the address of this ParticipantInfo.
+        r"""Gets the address of this ParticipantInfo.
 
         终端所在会议室信息（预留字段）。
 
@@ -276,7 +276,7 @@ class ParticipantInfo:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ParticipantInfo.
+        r"""Sets the address of this ParticipantInfo.
 
         终端所在会议室信息（预留字段）。
 
@@ -287,7 +287,7 @@ class ParticipantInfo:
 
     @property
     def attendee_type(self):
-        """Gets the attendee_type of this ParticipantInfo.
+        r"""Gets the attendee_type of this ParticipantInfo.
 
         与会者终端类型。 - normal: 软终端。 - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。
 
@@ -298,7 +298,7 @@ class ParticipantInfo:
 
     @attendee_type.setter
     def attendee_type(self, attendee_type):
-        """Sets the attendee_type of this ParticipantInfo.
+        r"""Sets the attendee_type of this ParticipantInfo.
 
         与会者终端类型。 - normal: 软终端。 - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。
 
@@ -309,7 +309,7 @@ class ParticipantInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ParticipantInfo.
+        r"""Gets the account_id of this ParticipantInfo.
 
         预订者的帐号。 * 如果是帐号/密码鉴权场景，表示华为云会议帐号 * 如果是APP ID鉴权场景，表示第三方的User ID 
 
@@ -320,7 +320,7 @@ class ParticipantInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ParticipantInfo.
+        r"""Sets the account_id of this ParticipantInfo.
 
         预订者的帐号。 * 如果是帐号/密码鉴权场景，表示华为云会议帐号 * 如果是APP ID鉴权场景，表示第三方的User ID 
 
@@ -331,7 +331,7 @@ class ParticipantInfo:
 
     @property
     def phone2(self):
-        """Gets the phone2 of this ParticipantInfo.
+        r"""Gets the phone2 of this ParticipantInfo.
 
         预留字段。
 
@@ -342,7 +342,7 @@ class ParticipantInfo:
 
     @phone2.setter
     def phone2(self, phone2):
-        """Sets the phone2 of this ParticipantInfo.
+        r"""Sets the phone2 of this ParticipantInfo.
 
         预留字段。
 
@@ -353,7 +353,7 @@ class ParticipantInfo:
 
     @property
     def phone3(self):
-        """Gets the phone3 of this ParticipantInfo.
+        r"""Gets the phone3 of this ParticipantInfo.
 
         预留字段。
 
@@ -364,7 +364,7 @@ class ParticipantInfo:
 
     @phone3.setter
     def phone3(self, phone3):
-        """Sets the phone3 of this ParticipantInfo.
+        r"""Sets the phone3 of this ParticipantInfo.
 
         预留字段。
 
@@ -375,7 +375,7 @@ class ParticipantInfo:
 
     @property
     def email(self):
-        """Gets the email of this ParticipantInfo.
+        r"""Gets the email of this ParticipantInfo.
 
         邮箱地址。
 
@@ -386,7 +386,7 @@ class ParticipantInfo:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ParticipantInfo.
+        r"""Sets the email of this ParticipantInfo.
 
         邮箱地址。
 
@@ -397,7 +397,7 @@ class ParticipantInfo:
 
     @property
     def sms(self):
-        """Gets the sms of this ParticipantInfo.
+        r"""Gets the sms of this ParticipantInfo.
 
         短信通知的手机号码。
 
@@ -408,7 +408,7 @@ class ParticipantInfo:
 
     @sms.setter
     def sms(self, sms):
-        """Sets the sms of this ParticipantInfo.
+        r"""Sets the sms of this ParticipantInfo.
 
         短信通知的手机号码。
 
@@ -419,7 +419,7 @@ class ParticipantInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ParticipantInfo.
+        r"""Gets the dept_name of this ParticipantInfo.
 
         部门名称。
 
@@ -430,7 +430,7 @@ class ParticipantInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ParticipantInfo.
+        r"""Sets the dept_name of this ParticipantInfo.
 
         部门名称。
 
@@ -441,7 +441,7 @@ class ParticipantInfo:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this ParticipantInfo.
+        r"""Gets the user_uuid of this ParticipantInfo.
 
         预订者的用户UUID。
 
@@ -452,7 +452,7 @@ class ParticipantInfo:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this ParticipantInfo.
+        r"""Sets the user_uuid of this ParticipantInfo.
 
         预订者的用户UUID。
 
@@ -463,7 +463,7 @@ class ParticipantInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ParticipantInfo.
+        r"""Gets the app_id of this ParticipantInfo.
 
         App ID。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
@@ -474,7 +474,7 @@ class ParticipantInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ParticipantInfo.
+        r"""Sets the app_id of this ParticipantInfo.
 
         App ID。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
@@ -485,7 +485,7 @@ class ParticipantInfo:
 
     @property
     def is_auto_invite(self):
-        """Gets the is_auto_invite of this ParticipantInfo.
+        r"""Gets the is_auto_invite of this ParticipantInfo.
 
         会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 * 0： 不自动邀请 * 1： 自动邀请 
 
@@ -496,7 +496,7 @@ class ParticipantInfo:
 
     @is_auto_invite.setter
     def is_auto_invite(self, is_auto_invite):
-        """Sets the is_auto_invite of this ParticipantInfo.
+        r"""Sets the is_auto_invite of this ParticipantInfo.
 
         会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 * 0： 不自动邀请 * 1： 自动邀请 
 
@@ -507,7 +507,7 @@ class ParticipantInfo:
 
     @property
     def is_not_overlay_pid_name(self):
-        """Gets the is_not_overlay_pid_name of this ParticipantInfo.
+        r"""Gets the is_not_overlay_pid_name of this ParticipantInfo.
 
         是否不叠加会场名（VDC场景下适用）。
 
@@ -518,7 +518,7 @@ class ParticipantInfo:
 
     @is_not_overlay_pid_name.setter
     def is_not_overlay_pid_name(self, is_not_overlay_pid_name):
-        """Sets the is_not_overlay_pid_name of this ParticipantInfo.
+        r"""Sets the is_not_overlay_pid_name of this ParticipantInfo.
 
         是否不叠加会场名（VDC场景下适用）。
 

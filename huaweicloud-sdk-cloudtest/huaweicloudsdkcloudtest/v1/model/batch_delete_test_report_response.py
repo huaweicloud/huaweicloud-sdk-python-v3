@@ -28,7 +28,7 @@ class BatchDeleteTestReportResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """BatchDeleteTestReportResponse
+        r"""BatchDeleteTestReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteTestReportResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this BatchDeleteTestReportResponse.
+        r"""Gets the status of this BatchDeleteTestReportResponse.
 
         对外时：success|error;
 
@@ -62,7 +62,7 @@ class BatchDeleteTestReportResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchDeleteTestReportResponse.
+        r"""Sets the status of this BatchDeleteTestReportResponse.
 
         对外时：success|error;
 
@@ -73,7 +73,7 @@ class BatchDeleteTestReportResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchDeleteTestReportResponse.
+        r"""Gets the result of this BatchDeleteTestReportResponse.
 
         :return: The result of this BatchDeleteTestReportResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`
@@ -82,7 +82,7 @@ class BatchDeleteTestReportResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchDeleteTestReportResponse.
+        r"""Sets the result of this BatchDeleteTestReportResponse.
 
         :param result: The result of this BatchDeleteTestReportResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`

@@ -29,7 +29,7 @@ class ListSpecsRequest:
     }
 
     def __init__(self, spec_code=None, offset=None, limit=None):
-        """ListSpecsRequest
+        r"""ListSpecsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSpecsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListSpecsRequest.
+        r"""Gets the spec_code of this ListSpecsRequest.
 
         规格编码
 
@@ -68,7 +68,7 @@ class ListSpecsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListSpecsRequest.
+        r"""Sets the spec_code of this ListSpecsRequest.
 
         规格编码
 
@@ -79,7 +79,7 @@ class ListSpecsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSpecsRequest.
+        r"""Gets the offset of this ListSpecsRequest.
 
         偏移量
 
@@ -90,7 +90,7 @@ class ListSpecsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSpecsRequest.
+        r"""Sets the offset of this ListSpecsRequest.
 
         偏移量
 
@@ -101,7 +101,7 @@ class ListSpecsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSpecsRequest.
+        r"""Gets the limit of this ListSpecsRequest.
 
         单次查询个数
 
@@ -112,7 +112,7 @@ class ListSpecsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSpecsRequest.
+        r"""Sets the limit of this ListSpecsRequest.
 
         单次查询个数
 

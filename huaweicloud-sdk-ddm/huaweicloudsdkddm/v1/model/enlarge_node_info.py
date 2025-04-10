@@ -25,7 +25,7 @@ class EnlargeNodeInfo:
     }
 
     def __init__(self, available_zone=None):
-        """EnlargeNodeInfo
+        r"""EnlargeNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnlargeNodeInfo:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this EnlargeNodeInfo.
+        r"""Gets the available_zone of this EnlargeNodeInfo.
 
         节点可用区
 
@@ -53,7 +53,7 @@ class EnlargeNodeInfo:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this EnlargeNodeInfo.
+        r"""Sets the available_zone of this EnlargeNodeInfo.
 
         节点可用区
 

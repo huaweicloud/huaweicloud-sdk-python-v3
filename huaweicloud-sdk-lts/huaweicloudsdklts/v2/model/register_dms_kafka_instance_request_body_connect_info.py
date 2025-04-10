@@ -27,7 +27,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
     }
 
     def __init__(self, user_name=None, pwd=None):
-        """RegisterDmsKafkaInstanceRequestBodyConnectInfo
+        r"""RegisterDmsKafkaInstanceRequestBodyConnectInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
+        r"""Gets the user_name of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
 
         账号
 
@@ -61,7 +61,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
+        r"""Sets the user_name of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
 
         账号
 
@@ -72,7 +72,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
 
     @property
     def pwd(self):
-        """Gets the pwd of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
+        r"""Gets the pwd of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
 
         密码
 
@@ -83,7 +83,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
 
     @pwd.setter
     def pwd(self, pwd):
-        """Sets the pwd of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
+        r"""Sets the pwd of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
 
         密码
 

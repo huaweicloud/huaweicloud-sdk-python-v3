@@ -25,7 +25,7 @@ class EdgemgrDevicesUpdate:
     }
 
     def __init__(self, device=None):
-        """EdgemgrDevicesUpdate
+        r"""EdgemgrDevicesUpdate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EdgemgrDevicesUpdate:
 
     @property
     def device(self):
-        """Gets the device of this EdgemgrDevicesUpdate.
+        r"""Gets the device of this EdgemgrDevicesUpdate.
 
         :return: The device of this EdgemgrDevicesUpdate.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`
@@ -51,7 +51,7 @@ class EdgemgrDevicesUpdate:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this EdgemgrDevicesUpdate.
+        r"""Sets the device of this EdgemgrDevicesUpdate.
 
         :param device: The device of this EdgemgrDevicesUpdate.
         :type device: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`

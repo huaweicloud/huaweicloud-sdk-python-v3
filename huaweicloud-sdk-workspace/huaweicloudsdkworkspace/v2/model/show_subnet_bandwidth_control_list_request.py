@@ -37,7 +37,7 @@ class ShowSubnetBandwidthControlListRequest:
     }
 
     def __init__(self, bandwidth_id=None, desktop_id=None, desktop_name=None, user_name=None, control_mode=None, offset=None, limit=None):
-        """ShowSubnetBandwidthControlListRequest
+        r"""ShowSubnetBandwidthControlListRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the bandwidth_id of this ShowSubnetBandwidthControlListRequest.
 
         云办公带宽id。
 
@@ -95,7 +95,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the bandwidth_id of this ShowSubnetBandwidthControlListRequest.
 
         云办公带宽id。
 
@@ -106,7 +106,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the desktop_id of this ShowSubnetBandwidthControlListRequest.
 
         桌面id。
 
@@ -117,7 +117,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the desktop_id of this ShowSubnetBandwidthControlListRequest.
 
         桌面id。
 
@@ -128,7 +128,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the desktop_name of this ShowSubnetBandwidthControlListRequest.
 
         桌面名称。
 
@@ -139,7 +139,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the desktop_name of this ShowSubnetBandwidthControlListRequest.
 
         桌面名称。
 
@@ -150,7 +150,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the user_name of this ShowSubnetBandwidthControlListRequest.
 
         桌面分配用户。
 
@@ -161,7 +161,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the user_name of this ShowSubnetBandwidthControlListRequest.
 
         桌面分配用户。
 
@@ -172,7 +172,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def control_mode(self):
-        """Gets the control_mode of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the control_mode of this ShowSubnetBandwidthControlListRequest.
 
         控制模式，支持： - BLACK 黑名单 - WHITE 白名单
 
@@ -183,7 +183,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @control_mode.setter
     def control_mode(self, control_mode):
-        """Sets the control_mode of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the control_mode of this ShowSubnetBandwidthControlListRequest.
 
         控制模式，支持： - BLACK 黑名单 - WHITE 白名单
 
@@ -194,7 +194,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the offset of this ShowSubnetBandwidthControlListRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -205,7 +205,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the offset of this ShowSubnetBandwidthControlListRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -216,7 +216,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowSubnetBandwidthControlListRequest.
+        r"""Gets the limit of this ShowSubnetBandwidthControlListRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的记录。
 
@@ -227,7 +227,7 @@ class ShowSubnetBandwidthControlListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowSubnetBandwidthControlListRequest.
+        r"""Sets the limit of this ShowSubnetBandwidthControlListRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的记录。
 

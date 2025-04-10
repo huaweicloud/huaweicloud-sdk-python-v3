@@ -25,7 +25,7 @@ class ImportBackupReq:
     }
 
     def __init__(self, import_path=None):
-        """ImportBackupReq
+        r"""ImportBackupReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportBackupReq:
 
     @property
     def import_path(self):
-        """Gets the import_path of this ImportBackupReq.
+        r"""Gets the import_path of this ImportBackupReq.
 
         备份文件路径
 
@@ -53,7 +53,7 @@ class ImportBackupReq:
 
     @import_path.setter
     def import_path(self, import_path):
-        """Sets the import_path of this ImportBackupReq.
+        r"""Sets the import_path of this ImportBackupReq.
 
         备份文件路径
 

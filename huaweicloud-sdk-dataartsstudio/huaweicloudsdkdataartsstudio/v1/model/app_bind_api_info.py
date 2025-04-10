@@ -39,7 +39,7 @@ class AppBindApiInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, approval_time=None, manager=None, deadline=None, relationship_type=None, static_params=None):
-        """AppBindApiInfo
+        r"""AppBindApiInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AppBindApiInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppBindApiInfo.
+        r"""Gets the id of this AppBindApiInfo.
 
         API ID
 
@@ -103,7 +103,7 @@ class AppBindApiInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppBindApiInfo.
+        r"""Sets the id of this AppBindApiInfo.
 
         API ID
 
@@ -114,7 +114,7 @@ class AppBindApiInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppBindApiInfo.
+        r"""Gets the name of this AppBindApiInfo.
 
         API名称
 
@@ -125,7 +125,7 @@ class AppBindApiInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppBindApiInfo.
+        r"""Sets the name of this AppBindApiInfo.
 
         API名称
 
@@ -136,7 +136,7 @@ class AppBindApiInfo:
 
     @property
     def description(self):
-        """Gets the description of this AppBindApiInfo.
+        r"""Gets the description of this AppBindApiInfo.
 
         API描述
 
@@ -147,7 +147,7 @@ class AppBindApiInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppBindApiInfo.
+        r"""Sets the description of this AppBindApiInfo.
 
         API描述
 
@@ -158,7 +158,7 @@ class AppBindApiInfo:
 
     @property
     def approval_time(self):
-        """Gets the approval_time of this AppBindApiInfo.
+        r"""Gets the approval_time of this AppBindApiInfo.
 
         审核时间
 
@@ -169,7 +169,7 @@ class AppBindApiInfo:
 
     @approval_time.setter
     def approval_time(self, approval_time):
-        """Sets the approval_time of this AppBindApiInfo.
+        r"""Sets the approval_time of this AppBindApiInfo.
 
         审核时间
 
@@ -180,7 +180,7 @@ class AppBindApiInfo:
 
     @property
     def manager(self):
-        """Gets the manager of this AppBindApiInfo.
+        r"""Gets the manager of this AppBindApiInfo.
 
         API 审核人名称
 
@@ -191,7 +191,7 @@ class AppBindApiInfo:
 
     @manager.setter
     def manager(self, manager):
-        """Sets the manager of this AppBindApiInfo.
+        r"""Sets the manager of this AppBindApiInfo.
 
         API 审核人名称
 
@@ -202,7 +202,7 @@ class AppBindApiInfo:
 
     @property
     def deadline(self):
-        """Gets the deadline of this AppBindApiInfo.
+        r"""Gets the deadline of this AppBindApiInfo.
 
         使用截止时间
 
@@ -213,7 +213,7 @@ class AppBindApiInfo:
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this AppBindApiInfo.
+        r"""Sets the deadline of this AppBindApiInfo.
 
         使用截止时间
 
@@ -224,7 +224,7 @@ class AppBindApiInfo:
 
     @property
     def relationship_type(self):
-        """Gets the relationship_type of this AppBindApiInfo.
+        r"""Gets the relationship_type of this AppBindApiInfo.
 
         绑定关系
 
@@ -235,7 +235,7 @@ class AppBindApiInfo:
 
     @relationship_type.setter
     def relationship_type(self, relationship_type):
-        """Sets the relationship_type of this AppBindApiInfo.
+        r"""Sets the relationship_type of this AppBindApiInfo.
 
         绑定关系
 
@@ -246,7 +246,7 @@ class AppBindApiInfo:
 
     @property
     def static_params(self):
-        """Gets the static_params of this AppBindApiInfo.
+        r"""Gets the static_params of this AppBindApiInfo.
 
         静态参数列表
 
@@ -257,7 +257,7 @@ class AppBindApiInfo:
 
     @static_params.setter
     def static_params(self, static_params):
-        """Sets the static_params of this AppBindApiInfo.
+        r"""Sets the static_params of this AppBindApiInfo.
 
         静态参数列表
 

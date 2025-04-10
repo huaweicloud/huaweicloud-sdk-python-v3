@@ -40,7 +40,7 @@ class ComponentStatusType:
     }
 
     def __init__(self):
-        """ComponentStatusType
+        r"""ComponentStatusType
 
         The model defined in huaweicloud sdk
 

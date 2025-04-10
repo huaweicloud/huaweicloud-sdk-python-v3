@@ -43,7 +43,7 @@ class SearchVersionsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, biz_id=None, biz_type=None, begin_time=None, end_time=None, limit=None, offset=None):
-        """SearchVersionsRequest
+        r"""SearchVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class SearchVersionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchVersionsRequest.
+        r"""Gets the workspace of this SearchVersionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -116,7 +116,7 @@ class SearchVersionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchVersionsRequest.
+        r"""Sets the workspace of this SearchVersionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -127,7 +127,7 @@ class SearchVersionsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this SearchVersionsRequest.
+        r"""Gets the x_project_id of this SearchVersionsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -138,7 +138,7 @@ class SearchVersionsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this SearchVersionsRequest.
+        r"""Sets the x_project_id of this SearchVersionsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -149,7 +149,7 @@ class SearchVersionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this SearchVersionsRequest.
+        r"""Gets the name of this SearchVersionsRequest.
 
         按名称或编码模糊查询。
 
@@ -160,7 +160,7 @@ class SearchVersionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchVersionsRequest.
+        r"""Sets the name of this SearchVersionsRequest.
 
         按名称或编码模糊查询。
 
@@ -171,7 +171,7 @@ class SearchVersionsRequest:
 
     @property
     def create_by(self):
-        """Gets the create_by of this SearchVersionsRequest.
+        r"""Gets the create_by of this SearchVersionsRequest.
 
         按创建者查询。
 
@@ -182,7 +182,7 @@ class SearchVersionsRequest:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this SearchVersionsRequest.
+        r"""Sets the create_by of this SearchVersionsRequest.
 
         按创建者查询。
 
@@ -193,7 +193,7 @@ class SearchVersionsRequest:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this SearchVersionsRequest.
+        r"""Gets the biz_id of this SearchVersionsRequest.
 
         业务定义ID，ID字符串。
 
@@ -204,7 +204,7 @@ class SearchVersionsRequest:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this SearchVersionsRequest.
+        r"""Sets the biz_id of this SearchVersionsRequest.
 
         业务定义ID，ID字符串。
 
@@ -215,7 +215,7 @@ class SearchVersionsRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this SearchVersionsRequest.
+        r"""Gets the biz_type of this SearchVersionsRequest.
 
         按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
@@ -226,7 +226,7 @@ class SearchVersionsRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this SearchVersionsRequest.
+        r"""Sets the biz_type of this SearchVersionsRequest.
 
         按业务类型查询，可选业务类型有：ATOMIC_INDEX（原子指标）、DERIVATIVE_INDEX（衍生指标）、DIMENSION（维度）、TIME_CONDITION（时间限定）、DIMENSION_LOGIC_TABLE（维度表）、FACT_LOGIC_TABLE（事实表）、AGGREGATION_LOGIC_TABLE（汇总表）、TABLE_MODEL（关系建模表）、CODE_TABLE（码表）、STANDARD_ELEMENT）（数据标准）、BIZ_METRIC（业务指标）、COMPOUND_METRIC（复合指标）、SUBJECT（主题）、ATOMIC_METRIC（原子指标（新））、DERIVED_METRIC（衍生指标（新））、COMPOSITE_METRIC（复合指标（新））。
 
@@ -237,7 +237,7 @@ class SearchVersionsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SearchVersionsRequest.
+        r"""Gets the begin_time of this SearchVersionsRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -248,7 +248,7 @@ class SearchVersionsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SearchVersionsRequest.
+        r"""Sets the begin_time of this SearchVersionsRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -259,7 +259,7 @@ class SearchVersionsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SearchVersionsRequest.
+        r"""Gets the end_time of this SearchVersionsRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -270,7 +270,7 @@ class SearchVersionsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SearchVersionsRequest.
+        r"""Sets the end_time of this SearchVersionsRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -281,7 +281,7 @@ class SearchVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchVersionsRequest.
+        r"""Gets the limit of this SearchVersionsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -292,7 +292,7 @@ class SearchVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchVersionsRequest.
+        r"""Sets the limit of this SearchVersionsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -303,7 +303,7 @@ class SearchVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchVersionsRequest.
+        r"""Gets the offset of this SearchVersionsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -314,7 +314,7 @@ class SearchVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchVersionsRequest.
+        r"""Sets the offset of this SearchVersionsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 

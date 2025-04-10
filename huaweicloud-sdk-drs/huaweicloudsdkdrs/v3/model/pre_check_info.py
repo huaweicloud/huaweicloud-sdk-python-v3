@@ -27,7 +27,7 @@ class PreCheckInfo:
     }
 
     def __init__(self, job_id=None, precheck_mode=None):
-        """PreCheckInfo
+        r"""PreCheckInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PreCheckInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this PreCheckInfo.
+        r"""Gets the job_id of this PreCheckInfo.
 
         任务id
 
@@ -59,7 +59,7 @@ class PreCheckInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PreCheckInfo.
+        r"""Sets the job_id of this PreCheckInfo.
 
         任务id
 
@@ -70,7 +70,7 @@ class PreCheckInfo:
 
     @property
     def precheck_mode(self):
-        """Gets the precheck_mode of this PreCheckInfo.
+        r"""Gets the precheck_mode of this PreCheckInfo.
 
         预检查模式
 
@@ -81,7 +81,7 @@ class PreCheckInfo:
 
     @precheck_mode.setter
     def precheck_mode(self, precheck_mode):
-        """Sets the precheck_mode of this PreCheckInfo.
+        r"""Sets the precheck_mode of this PreCheckInfo.
 
         预检查模式
 

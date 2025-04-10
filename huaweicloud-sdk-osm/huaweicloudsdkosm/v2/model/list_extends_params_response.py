@@ -28,7 +28,7 @@ class ListExtendsParamsResponse(SdkResponse):
     }
 
     def __init__(self, extends_params=None, common_params=None):
-        """ListExtendsParamsResponse
+        r"""ListExtendsParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListExtendsParamsResponse(SdkResponse):
 
     @property
     def extends_params(self):
-        """Gets the extends_params of this ListExtendsParamsResponse.
+        r"""Gets the extends_params of this ListExtendsParamsResponse.
 
         附加参数列表
 
@@ -62,7 +62,7 @@ class ListExtendsParamsResponse(SdkResponse):
 
     @extends_params.setter
     def extends_params(self, extends_params):
-        """Sets the extends_params of this ListExtendsParamsResponse.
+        r"""Sets the extends_params of this ListExtendsParamsResponse.
 
         附加参数列表
 
@@ -73,7 +73,7 @@ class ListExtendsParamsResponse(SdkResponse):
 
     @property
     def common_params(self):
-        """Gets the common_params of this ListExtendsParamsResponse.
+        r"""Gets the common_params of this ListExtendsParamsResponse.
 
         公共附加参数列表
 
@@ -84,7 +84,7 @@ class ListExtendsParamsResponse(SdkResponse):
 
     @common_params.setter
     def common_params(self, common_params):
-        """Sets the common_params of this ListExtendsParamsResponse.
+        r"""Sets the common_params of this ListExtendsParamsResponse.
 
         公共附加参数列表
 

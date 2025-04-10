@@ -30,7 +30,7 @@ class CreateApplicationResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None):
-        """CreateApplicationResponse
+        r"""CreateApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateApplicationResponse.
+        r"""Gets the api_version of this CreateApplicationResponse.
 
         :return: The api_version of this CreateApplicationResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateApplicationResponse.
+        r"""Sets the api_version of this CreateApplicationResponse.
 
         :param api_version: The api_version of this CreateApplicationResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateApplicationResponse.
+        r"""Gets the kind of this CreateApplicationResponse.
 
         :return: The kind of this CreateApplicationResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApplicationKindObj`
@@ -85,7 +85,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateApplicationResponse.
+        r"""Sets the kind of this CreateApplicationResponse.
 
         :param kind: The kind of this CreateApplicationResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ApplicationKindObj`
@@ -94,7 +94,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateApplicationResponse.
+        r"""Gets the metadata of this CreateApplicationResponse.
 
         :return: The metadata of this CreateApplicationResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApplicationMetadata`
@@ -103,7 +103,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateApplicationResponse.
+        r"""Sets the metadata of this CreateApplicationResponse.
 
         :param metadata: The metadata of this CreateApplicationResponse.
         :type metadata: :class:`huaweicloudsdkcae.v1.ApplicationMetadata`

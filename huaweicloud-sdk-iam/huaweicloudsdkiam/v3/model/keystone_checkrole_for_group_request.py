@@ -29,7 +29,7 @@ class KeystoneCheckroleForGroupRequest:
     }
 
     def __init__(self, domain_id=None, group_id=None, role_id=None):
-        """KeystoneCheckroleForGroupRequest
+        r"""KeystoneCheckroleForGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class KeystoneCheckroleForGroupRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneCheckroleForGroupRequest.
+        r"""Gets the domain_id of this KeystoneCheckroleForGroupRequest.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -65,7 +65,7 @@ class KeystoneCheckroleForGroupRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneCheckroleForGroupRequest.
+        r"""Sets the domain_id of this KeystoneCheckroleForGroupRequest.
 
         用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -76,7 +76,7 @@ class KeystoneCheckroleForGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneCheckroleForGroupRequest.
+        r"""Gets the group_id of this KeystoneCheckroleForGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -87,7 +87,7 @@ class KeystoneCheckroleForGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneCheckroleForGroupRequest.
+        r"""Sets the group_id of this KeystoneCheckroleForGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -98,7 +98,7 @@ class KeystoneCheckroleForGroupRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this KeystoneCheckroleForGroupRequest.
+        r"""Gets the role_id of this KeystoneCheckroleForGroupRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
@@ -109,7 +109,7 @@ class KeystoneCheckroleForGroupRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this KeystoneCheckroleForGroupRequest.
+        r"""Sets the role_id of this KeystoneCheckroleForGroupRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 

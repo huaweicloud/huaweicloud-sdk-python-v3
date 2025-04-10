@@ -27,7 +27,7 @@ class ShowKnowledgeQuestionRequest:
     }
 
     def __init__(self, x_app_user_id=None, question_id=None):
-        """ShowKnowledgeQuestionRequest
+        r"""ShowKnowledgeQuestionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowKnowledgeQuestionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowKnowledgeQuestionRequest.
+        r"""Gets the x_app_user_id of this ShowKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowKnowledgeQuestionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowKnowledgeQuestionRequest.
+        r"""Sets the x_app_user_id of this ShowKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowKnowledgeQuestionRequest:
 
     @property
     def question_id(self):
-        """Gets the question_id of this ShowKnowledgeQuestionRequest.
+        r"""Gets the question_id of this ShowKnowledgeQuestionRequest.
 
         问法ID。
 
@@ -82,7 +82,7 @@ class ShowKnowledgeQuestionRequest:
 
     @question_id.setter
     def question_id(self, question_id):
-        """Sets the question_id of this ShowKnowledgeQuestionRequest.
+        r"""Sets the question_id of this ShowKnowledgeQuestionRequest.
 
         问法ID。
 

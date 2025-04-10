@@ -27,7 +27,7 @@ class ShowHttpDetectResultRequest:
     }
 
     def __init__(self, topic_urn=None, task_id=None):
-        """ShowHttpDetectResultRequest
+        r"""ShowHttpDetectResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowHttpDetectResultRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ShowHttpDetectResultRequest.
+        r"""Gets the topic_urn of this ShowHttpDetectResultRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -59,7 +59,7 @@ class ShowHttpDetectResultRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ShowHttpDetectResultRequest.
+        r"""Sets the topic_urn of this ShowHttpDetectResultRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -70,7 +70,7 @@ class ShowHttpDetectResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowHttpDetectResultRequest.
+        r"""Gets the task_id of this ShowHttpDetectResultRequest.
 
         http探测任务id
 
@@ -81,7 +81,7 @@ class ShowHttpDetectResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowHttpDetectResultRequest.
+        r"""Sets the task_id of this ShowHttpDetectResultRequest.
 
         http探测任务id
 

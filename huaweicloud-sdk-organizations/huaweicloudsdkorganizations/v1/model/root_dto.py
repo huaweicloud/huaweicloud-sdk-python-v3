@@ -33,7 +33,7 @@ class RootDto:
     }
 
     def __init__(self, id=None, urn=None, name=None, policy_types=None, created_at=None):
-        """RootDto
+        r"""RootDto
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class RootDto:
 
     @property
     def id(self):
-        """Gets the id of this RootDto.
+        r"""Gets the id of this RootDto.
 
         根的唯一标识符（ID）。
 
@@ -77,7 +77,7 @@ class RootDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RootDto.
+        r"""Sets the id of this RootDto.
 
         根的唯一标识符（ID）。
 
@@ -88,7 +88,7 @@ class RootDto:
 
     @property
     def urn(self):
-        """Gets the urn of this RootDto.
+        r"""Gets the urn of this RootDto.
 
         根的统一资源名称。
 
@@ -99,7 +99,7 @@ class RootDto:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this RootDto.
+        r"""Sets the urn of this RootDto.
 
         根的统一资源名称。
 
@@ -110,7 +110,7 @@ class RootDto:
 
     @property
     def name(self):
-        """Gets the name of this RootDto.
+        r"""Gets the name of this RootDto.
 
         根的名称。
 
@@ -121,7 +121,7 @@ class RootDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RootDto.
+        r"""Sets the name of this RootDto.
 
         根的名称。
 
@@ -132,7 +132,7 @@ class RootDto:
 
     @property
     def policy_types(self):
-        """Gets the policy_types of this RootDto.
+        r"""Gets the policy_types of this RootDto.
 
         策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或账号。
 
@@ -143,7 +143,7 @@ class RootDto:
 
     @policy_types.setter
     def policy_types(self, policy_types):
-        """Sets the policy_types of this RootDto.
+        r"""Sets the policy_types of this RootDto.
 
         策略类型在当前根已启用，则该类型策略可以绑定到根或其组织单元或账号。
 
@@ -154,7 +154,7 @@ class RootDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RootDto.
+        r"""Gets the created_at of this RootDto.
 
         根的创建时间。
 
@@ -165,7 +165,7 @@ class RootDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RootDto.
+        r"""Sets the created_at of this RootDto.
 
         根的创建时间。
 

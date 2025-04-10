@@ -27,7 +27,7 @@ class ListJobConfigRequest:
     }
 
     def __init__(self, job_id=None, get_all_params=None):
-        """ListJobConfigRequest
+        r"""ListJobConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListJobConfigRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobConfigRequest.
+        r"""Gets the job_id of this ListJobConfigRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -60,7 +60,7 @@ class ListJobConfigRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobConfigRequest.
+        r"""Sets the job_id of this ListJobConfigRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -71,7 +71,7 @@ class ListJobConfigRequest:
 
     @property
     def get_all_params(self):
-        """Gets the get_all_params of this ListJobConfigRequest.
+        r"""Gets the get_all_params of this ListJobConfigRequest.
 
         输入\"true\"或者\"false\"来控制返回参数是不是完整的
 
@@ -82,7 +82,7 @@ class ListJobConfigRequest:
 
     @get_all_params.setter
     def get_all_params(self, get_all_params):
-        """Sets the get_all_params of this ListJobConfigRequest.
+        r"""Sets the get_all_params of this ListJobConfigRequest.
 
         输入\"true\"或者\"false\"来控制返回参数是不是完整的
 

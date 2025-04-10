@@ -26,7 +26,7 @@ class UpdateBackupOffsitePolicyResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateBackupOffsitePolicyResponse
+        r"""UpdateBackupOffsitePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBackupOffsitePolicyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateBackupOffsitePolicyResponse.
+        r"""Gets the result of this UpdateBackupOffsitePolicyResponse.
 
         结果。
 
@@ -55,7 +55,7 @@ class UpdateBackupOffsitePolicyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateBackupOffsitePolicyResponse.
+        r"""Sets the result of this UpdateBackupOffsitePolicyResponse.
 
         结果。
 

@@ -35,7 +35,7 @@ class UpdateFileRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None, body=None):
-        """UpdateFileRequest
+        r"""UpdateFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class UpdateFileRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this UpdateFileRequest.
+        r"""Gets the x_repo_auth of this UpdateFileRequest.
 
         授权名称。
 
@@ -84,7 +84,7 @@ class UpdateFileRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this UpdateFileRequest.
+        r"""Sets the x_repo_auth of this UpdateFileRequest.
 
         授权名称。
 
@@ -95,7 +95,7 @@ class UpdateFileRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateFileRequest.
+        r"""Gets the namespace of this UpdateFileRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -106,7 +106,7 @@ class UpdateFileRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateFileRequest.
+        r"""Sets the namespace of this UpdateFileRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -117,7 +117,7 @@ class UpdateFileRequest:
 
     @property
     def project(self):
-        """Gets the project of this UpdateFileRequest.
+        r"""Gets the project of this UpdateFileRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -128,7 +128,7 @@ class UpdateFileRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this UpdateFileRequest.
+        r"""Sets the project of this UpdateFileRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -139,7 +139,7 @@ class UpdateFileRequest:
 
     @property
     def path(self):
-        """Gets the path of this UpdateFileRequest.
+        r"""Gets the path of this UpdateFileRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -150,7 +150,7 @@ class UpdateFileRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateFileRequest.
+        r"""Sets the path of this UpdateFileRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -161,7 +161,7 @@ class UpdateFileRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this UpdateFileRequest.
+        r"""Gets the ref of this UpdateFileRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -172,7 +172,7 @@ class UpdateFileRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this UpdateFileRequest.
+        r"""Sets the ref of this UpdateFileRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -183,7 +183,7 @@ class UpdateFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFileRequest.
+        r"""Gets the body of this UpdateFileRequest.
 
         :return: The body of this UpdateFileRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FileUpdate`
@@ -192,7 +192,7 @@ class UpdateFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFileRequest.
+        r"""Sets the body of this UpdateFileRequest.
 
         :param body: The body of this UpdateFileRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.FileUpdate`

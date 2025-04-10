@@ -25,7 +25,7 @@ class RunDataAuthorizationActionRequest:
     }
 
     def __init__(self, body=None):
-        """RunDataAuthorizationActionRequest
+        r"""RunDataAuthorizationActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunDataAuthorizationActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunDataAuthorizationActionRequest.
+        r"""Gets the body of this RunDataAuthorizationActionRequest.
 
         :return: The body of this RunDataAuthorizationActionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.RunDataAuthorizationActionRequestBody`
@@ -52,7 +52,7 @@ class RunDataAuthorizationActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunDataAuthorizationActionRequest.
+        r"""Sets the body of this RunDataAuthorizationActionRequest.
 
         :param body: The body of this RunDataAuthorizationActionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.RunDataAuthorizationActionRequestBody`

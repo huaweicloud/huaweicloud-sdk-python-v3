@@ -27,7 +27,7 @@ class ShowGaussMySqlBackupPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowGaussMySqlBackupPolicyRequest
+        r"""ShowGaussMySqlBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGaussMySqlBackupPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlBackupPolicyRequest.
+        r"""Gets the x_language of this ShowGaussMySqlBackupPolicyRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowGaussMySqlBackupPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlBackupPolicyRequest.
+        r"""Sets the x_language of this ShowGaussMySqlBackupPolicyRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowGaussMySqlBackupPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowGaussMySqlBackupPolicyRequest.
+        r"""Gets the instance_id of this ShowGaussMySqlBackupPolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -82,7 +82,7 @@ class ShowGaussMySqlBackupPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowGaussMySqlBackupPolicyRequest.
+        r"""Sets the instance_id of this ShowGaussMySqlBackupPolicyRequest.
 
         实例ID，严格匹配UUID规则。
 

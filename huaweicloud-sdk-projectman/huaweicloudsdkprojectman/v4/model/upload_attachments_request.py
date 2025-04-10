@@ -29,7 +29,7 @@ class UploadAttachmentsRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, body=None):
-        """UploadAttachmentsRequest
+        r"""UploadAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UploadAttachmentsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UploadAttachmentsRequest.
+        r"""Gets the project_id of this UploadAttachmentsRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class UploadAttachmentsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UploadAttachmentsRequest.
+        r"""Sets the project_id of this UploadAttachmentsRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class UploadAttachmentsRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this UploadAttachmentsRequest.
+        r"""Gets the issue_id of this UploadAttachmentsRequest.
 
         工作项id
 
@@ -88,7 +88,7 @@ class UploadAttachmentsRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this UploadAttachmentsRequest.
+        r"""Sets the issue_id of this UploadAttachmentsRequest.
 
         工作项id
 
@@ -99,7 +99,7 @@ class UploadAttachmentsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadAttachmentsRequest.
+        r"""Gets the body of this UploadAttachmentsRequest.
 
         :return: The body of this UploadAttachmentsRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequestBody`
@@ -108,7 +108,7 @@ class UploadAttachmentsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadAttachmentsRequest.
+        r"""Sets the body of this UploadAttachmentsRequest.
 
         :param body: The body of this UploadAttachmentsRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequestBody`

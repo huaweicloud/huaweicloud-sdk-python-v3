@@ -33,7 +33,7 @@ class DeleteAccountAssignmentReqBody:
     }
 
     def __init__(self, permission_set_id=None, principal_id=None, principal_type=None, target_id=None, target_type=None):
-        """DeleteAccountAssignmentReqBody
+        r"""DeleteAccountAssignmentReqBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DeleteAccountAssignmentReqBody:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this DeleteAccountAssignmentReqBody.
+        r"""Gets the permission_set_id of this DeleteAccountAssignmentReqBody.
 
         权限集唯一标识
 
@@ -77,7 +77,7 @@ class DeleteAccountAssignmentReqBody:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this DeleteAccountAssignmentReqBody.
+        r"""Sets the permission_set_id of this DeleteAccountAssignmentReqBody.
 
         权限集唯一标识
 
@@ -88,7 +88,7 @@ class DeleteAccountAssignmentReqBody:
 
     @property
     def principal_id(self):
-        """Gets the principal_id of this DeleteAccountAssignmentReqBody.
+        r"""Gets the principal_id of this DeleteAccountAssignmentReqBody.
 
         IAM身份中心中的一个实体身份唯一标识，例如用户或用户组
 
@@ -99,7 +99,7 @@ class DeleteAccountAssignmentReqBody:
 
     @principal_id.setter
     def principal_id(self, principal_id):
-        """Sets the principal_id of this DeleteAccountAssignmentReqBody.
+        r"""Sets the principal_id of this DeleteAccountAssignmentReqBody.
 
         IAM身份中心中的一个实体身份唯一标识，例如用户或用户组
 
@@ -110,7 +110,7 @@ class DeleteAccountAssignmentReqBody:
 
     @property
     def principal_type(self):
-        """Gets the principal_type of this DeleteAccountAssignmentReqBody.
+        r"""Gets the principal_type of this DeleteAccountAssignmentReqBody.
 
         实体类型.
 
@@ -121,7 +121,7 @@ class DeleteAccountAssignmentReqBody:
 
     @principal_type.setter
     def principal_type(self, principal_type):
-        """Sets the principal_type of this DeleteAccountAssignmentReqBody.
+        r"""Sets the principal_type of this DeleteAccountAssignmentReqBody.
 
         实体类型.
 
@@ -132,7 +132,7 @@ class DeleteAccountAssignmentReqBody:
 
     @property
     def target_id(self):
-        """Gets the target_id of this DeleteAccountAssignmentReqBody.
+        r"""Gets the target_id of this DeleteAccountAssignmentReqBody.
 
         目标账号身份标识
 
@@ -143,7 +143,7 @@ class DeleteAccountAssignmentReqBody:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this DeleteAccountAssignmentReqBody.
+        r"""Sets the target_id of this DeleteAccountAssignmentReqBody.
 
         目标账号身份标识
 
@@ -154,7 +154,7 @@ class DeleteAccountAssignmentReqBody:
 
     @property
     def target_type(self):
-        """Gets the target_type of this DeleteAccountAssignmentReqBody.
+        r"""Gets the target_type of this DeleteAccountAssignmentReqBody.
 
         目标类型.
 
@@ -165,7 +165,7 @@ class DeleteAccountAssignmentReqBody:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this DeleteAccountAssignmentReqBody.
+        r"""Sets the target_type of this DeleteAccountAssignmentReqBody.
 
         目标类型.
 

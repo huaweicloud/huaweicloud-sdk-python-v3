@@ -29,7 +29,7 @@ class EnvExecutionBody:
     }
 
     def __init__(self, params=None, record_id=None, trigger_source=None):
-        """EnvExecutionBody
+        r"""EnvExecutionBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EnvExecutionBody:
 
     @property
     def params(self):
-        """Gets the params of this EnvExecutionBody.
+        r"""Gets the params of this EnvExecutionBody.
 
         部署应用时传递的参数
 
@@ -68,7 +68,7 @@ class EnvExecutionBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this EnvExecutionBody.
+        r"""Sets the params of this EnvExecutionBody.
 
         部署应用时传递的参数
 
@@ -79,7 +79,7 @@ class EnvExecutionBody:
 
     @property
     def record_id(self):
-        """Gets the record_id of this EnvExecutionBody.
+        r"""Gets the record_id of this EnvExecutionBody.
 
         应用的部署id，可通过record_id回滚至之前的部署状态。选中应用历史部署记录，在URL中获取
 
@@ -90,7 +90,7 @@ class EnvExecutionBody:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this EnvExecutionBody.
+        r"""Sets the record_id of this EnvExecutionBody.
 
         应用的部署id，可通过record_id回滚至之前的部署状态。选中应用历史部署记录，在URL中获取
 
@@ -101,7 +101,7 @@ class EnvExecutionBody:
 
     @property
     def trigger_source(self):
-        """Gets the trigger_source of this EnvExecutionBody.
+        r"""Gets the trigger_source of this EnvExecutionBody.
 
         限制触发来源，0不限制任何部署请求来源，1时只允许通过流水线触发部署
 
@@ -112,7 +112,7 @@ class EnvExecutionBody:
 
     @trigger_source.setter
     def trigger_source(self, trigger_source):
-        """Sets the trigger_source of this EnvExecutionBody.
+        r"""Sets the trigger_source of this EnvExecutionBody.
 
         限制触发来源，0不限制任何部署请求来源，1时只允许通过流水线触发部署
 

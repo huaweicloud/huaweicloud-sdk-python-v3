@@ -29,7 +29,7 @@ class Link:
     }
 
     def __init__(self, href=None, type=None, rel=None):
-        """Link
+        r"""Link
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Link:
 
     @property
     def href(self):
-        """Gets the href of this Link.
+        r"""Gets the href of this Link.
 
         当前API版本的引用地址。
 
@@ -68,7 +68,7 @@ class Link:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this Link.
+        r"""Sets the href of this Link.
 
         当前API版本的引用地址。
 
@@ -79,7 +79,7 @@ class Link:
 
     @property
     def type(self):
-        """Gets the type of this Link.
+        r"""Gets the type of this Link.
 
         发送的实体的MIME类型，取值为application/json。
 
@@ -90,7 +90,7 @@ class Link:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Link.
+        r"""Sets the type of this Link.
 
         发送的实体的MIME类型，取值为application/json。
 
@@ -101,7 +101,7 @@ class Link:
 
     @property
     def rel(self):
-        """Gets the rel of this Link.
+        r"""Gets the rel of this Link.
 
         当前API版本和被引用地址的关系。
 
@@ -112,7 +112,7 @@ class Link:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this Link.
+        r"""Sets the rel of this Link.
 
         当前API版本和被引用地址的关系。
 

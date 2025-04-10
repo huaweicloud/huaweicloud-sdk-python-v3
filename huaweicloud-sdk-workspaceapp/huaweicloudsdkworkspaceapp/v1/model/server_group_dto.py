@@ -69,7 +69,7 @@ class ServerGroupDto:
     }
 
     def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None, enterprise_project_id=None, primary_server_group_ids=None, secondary_server_group_ids=None, server_group_status=None, site_type=None, site_id=None, app_group_count=None):
-        """ServerGroupDto
+        r"""ServerGroupDto
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class ServerGroupDto:
 
     @property
     def id(self):
-        """Gets the id of this ServerGroupDto.
+        r"""Gets the id of this ServerGroupDto.
 
         服务器组的唯一标识。
 
@@ -208,7 +208,7 @@ class ServerGroupDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerGroupDto.
+        r"""Sets the id of this ServerGroupDto.
 
         服务器组的唯一标识。
 
@@ -219,7 +219,7 @@ class ServerGroupDto:
 
     @property
     def name(self):
-        """Gets the name of this ServerGroupDto.
+        r"""Gets the name of this ServerGroupDto.
 
         服务器组名称。
 
@@ -230,7 +230,7 @@ class ServerGroupDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerGroupDto.
+        r"""Sets the name of this ServerGroupDto.
 
         服务器组名称。
 
@@ -241,7 +241,7 @@ class ServerGroupDto:
 
     @property
     def description(self):
-        """Gets the description of this ServerGroupDto.
+        r"""Gets the description of this ServerGroupDto.
 
         服务器组描述。
 
@@ -252,7 +252,7 @@ class ServerGroupDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServerGroupDto.
+        r"""Sets the description of this ServerGroupDto.
 
         服务器组描述。
 
@@ -263,7 +263,7 @@ class ServerGroupDto:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ServerGroupDto.
+        r"""Gets the image_id of this ServerGroupDto.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -274,7 +274,7 @@ class ServerGroupDto:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ServerGroupDto.
+        r"""Sets the image_id of this ServerGroupDto.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -285,7 +285,7 @@ class ServerGroupDto:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ServerGroupDto.
+        r"""Gets the os_type of this ServerGroupDto.
 
         :return: The os_type of this ServerGroupDto.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -294,7 +294,7 @@ class ServerGroupDto:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ServerGroupDto.
+        r"""Sets the os_type of this ServerGroupDto.
 
         :param os_type: The os_type of this ServerGroupDto.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -303,7 +303,7 @@ class ServerGroupDto:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ServerGroupDto.
+        r"""Gets the product_id of this ServerGroupDto.
 
         产品id。
 
@@ -314,7 +314,7 @@ class ServerGroupDto:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ServerGroupDto.
+        r"""Sets the product_id of this ServerGroupDto.
 
         产品id。
 
@@ -325,7 +325,7 @@ class ServerGroupDto:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ServerGroupDto.
+        r"""Gets the subnet_id of this ServerGroupDto.
 
         网卡对应的子网ID。
 
@@ -336,7 +336,7 @@ class ServerGroupDto:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ServerGroupDto.
+        r"""Sets the subnet_id of this ServerGroupDto.
 
         网卡对应的子网ID。
 
@@ -347,7 +347,7 @@ class ServerGroupDto:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this ServerGroupDto.
+        r"""Gets the system_disk_type of this ServerGroupDto.
 
         :return: The system_disk_type of this ServerGroupDto.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -356,7 +356,7 @@ class ServerGroupDto:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this ServerGroupDto.
+        r"""Sets the system_disk_type of this ServerGroupDto.
 
         :param system_disk_type: The system_disk_type of this ServerGroupDto.
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -365,7 +365,7 @@ class ServerGroupDto:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this ServerGroupDto.
+        r"""Gets the system_disk_size of this ServerGroupDto.
 
         磁盘容量，单位GB。
 
@@ -376,7 +376,7 @@ class ServerGroupDto:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this ServerGroupDto.
+        r"""Sets the system_disk_size of this ServerGroupDto.
 
         磁盘容量，单位GB。
 
@@ -387,7 +387,7 @@ class ServerGroupDto:
 
     @property
     def is_vdi(self):
-        """Gets the is_vdi of this ServerGroupDto.
+        r"""Gets the is_vdi of this ServerGroupDto.
 
         是否为vdi单会话模式。
 
@@ -398,7 +398,7 @@ class ServerGroupDto:
 
     @is_vdi.setter
     def is_vdi(self, is_vdi):
-        """Sets the is_vdi of this ServerGroupDto.
+        r"""Sets the is_vdi of this ServerGroupDto.
 
         是否为vdi单会话模式。
 
@@ -409,7 +409,7 @@ class ServerGroupDto:
 
     @property
     def extra_session_type(self):
-        """Gets the extra_session_type of this ServerGroupDto.
+        r"""Gets the extra_session_type of this ServerGroupDto.
 
         :return: The extra_session_type of this ServerGroupDto.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -418,7 +418,7 @@ class ServerGroupDto:
 
     @extra_session_type.setter
     def extra_session_type(self, extra_session_type):
-        """Sets the extra_session_type of this ServerGroupDto.
+        r"""Sets the extra_session_type of this ServerGroupDto.
 
         :param extra_session_type: The extra_session_type of this ServerGroupDto.
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -427,7 +427,7 @@ class ServerGroupDto:
 
     @property
     def extra_session_size(self):
-        """Gets the extra_session_size of this ServerGroupDto.
+        r"""Gets the extra_session_size of this ServerGroupDto.
 
         付费会话个数。
 
@@ -438,7 +438,7 @@ class ServerGroupDto:
 
     @extra_session_size.setter
     def extra_session_size(self, extra_session_size):
-        """Sets the extra_session_size of this ServerGroupDto.
+        r"""Sets the extra_session_size of this ServerGroupDto.
 
         付费会话个数。
 
@@ -449,7 +449,7 @@ class ServerGroupDto:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ServerGroupDto.
+        r"""Gets the app_type of this ServerGroupDto.
 
         :return: The app_type of this ServerGroupDto.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -458,7 +458,7 @@ class ServerGroupDto:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ServerGroupDto.
+        r"""Sets the app_type of this ServerGroupDto.
 
         :param app_type: The app_type of this ServerGroupDto.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -467,7 +467,7 @@ class ServerGroupDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ServerGroupDto.
+        r"""Gets the create_time of this ServerGroupDto.
 
         服务器组创建时间
 
@@ -478,7 +478,7 @@ class ServerGroupDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ServerGroupDto.
+        r"""Sets the create_time of this ServerGroupDto.
 
         服务器组创建时间
 
@@ -489,7 +489,7 @@ class ServerGroupDto:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ServerGroupDto.
+        r"""Gets the update_time of this ServerGroupDto.
 
         服务器组更新时间
 
@@ -500,7 +500,7 @@ class ServerGroupDto:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ServerGroupDto.
+        r"""Sets the update_time of this ServerGroupDto.
 
         服务器组更新时间
 
@@ -511,7 +511,7 @@ class ServerGroupDto:
 
     @property
     def storage_mount_policy(self):
-        """Gets the storage_mount_policy of this ServerGroupDto.
+        r"""Gets the storage_mount_policy of this ServerGroupDto.
 
         :return: The storage_mount_policy of this ServerGroupDto.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -520,7 +520,7 @@ class ServerGroupDto:
 
     @storage_mount_policy.setter
     def storage_mount_policy(self, storage_mount_policy):
-        """Sets the storage_mount_policy of this ServerGroupDto.
+        r"""Sets the storage_mount_policy of this ServerGroupDto.
 
         :param storage_mount_policy: The storage_mount_policy of this ServerGroupDto.
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -529,7 +529,7 @@ class ServerGroupDto:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ServerGroupDto.
+        r"""Gets the enterprise_project_id of this ServerGroupDto.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -540,7 +540,7 @@ class ServerGroupDto:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ServerGroupDto.
+        r"""Sets the enterprise_project_id of this ServerGroupDto.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -551,7 +551,7 @@ class ServerGroupDto:
 
     @property
     def primary_server_group_ids(self):
-        """Gets the primary_server_group_ids of this ServerGroupDto.
+        r"""Gets the primary_server_group_ids of this ServerGroupDto.
 
         主服务器组id列表。
 
@@ -562,7 +562,7 @@ class ServerGroupDto:
 
     @primary_server_group_ids.setter
     def primary_server_group_ids(self, primary_server_group_ids):
-        """Sets the primary_server_group_ids of this ServerGroupDto.
+        r"""Sets the primary_server_group_ids of this ServerGroupDto.
 
         主服务器组id列表。
 
@@ -573,7 +573,7 @@ class ServerGroupDto:
 
     @property
     def secondary_server_group_ids(self):
-        """Gets the secondary_server_group_ids of this ServerGroupDto.
+        r"""Gets the secondary_server_group_ids of this ServerGroupDto.
 
         备服务器组id列表。
 
@@ -584,7 +584,7 @@ class ServerGroupDto:
 
     @secondary_server_group_ids.setter
     def secondary_server_group_ids(self, secondary_server_group_ids):
-        """Sets the secondary_server_group_ids of this ServerGroupDto.
+        r"""Sets the secondary_server_group_ids of this ServerGroupDto.
 
         备服务器组id列表。
 
@@ -595,7 +595,7 @@ class ServerGroupDto:
 
     @property
     def server_group_status(self):
-        """Gets the server_group_status of this ServerGroupDto.
+        r"""Gets the server_group_status of this ServerGroupDto.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -606,7 +606,7 @@ class ServerGroupDto:
 
     @server_group_status.setter
     def server_group_status(self, server_group_status):
-        """Sets the server_group_status of this ServerGroupDto.
+        r"""Sets the server_group_status of this ServerGroupDto.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -617,7 +617,7 @@ class ServerGroupDto:
 
     @property
     def site_type(self):
-        """Gets the site_type of this ServerGroupDto.
+        r"""Gets the site_type of this ServerGroupDto.
 
         站点类型 - CENTER/IES
 
@@ -628,7 +628,7 @@ class ServerGroupDto:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this ServerGroupDto.
+        r"""Sets the site_type of this ServerGroupDto.
 
         站点类型 - CENTER/IES
 
@@ -639,7 +639,7 @@ class ServerGroupDto:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ServerGroupDto.
+        r"""Gets the site_id of this ServerGroupDto.
 
         站点id
 
@@ -650,7 +650,7 @@ class ServerGroupDto:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ServerGroupDto.
+        r"""Sets the site_id of this ServerGroupDto.
 
         站点id
 
@@ -661,7 +661,7 @@ class ServerGroupDto:
 
     @property
     def app_group_count(self):
-        """Gets the app_group_count of this ServerGroupDto.
+        r"""Gets the app_group_count of this ServerGroupDto.
 
         关联应用组的总数量。
 
@@ -672,7 +672,7 @@ class ServerGroupDto:
 
     @app_group_count.setter
     def app_group_count(self, app_group_count):
-        """Sets the app_group_count of this ServerGroupDto.
+        r"""Sets the app_group_count of this ServerGroupDto.
 
         关联应用组的总数量。
 

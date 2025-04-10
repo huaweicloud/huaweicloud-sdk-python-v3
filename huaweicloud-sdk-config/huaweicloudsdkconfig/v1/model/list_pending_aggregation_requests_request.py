@@ -29,7 +29,7 @@ class ListPendingAggregationRequestsRequest:
     }
 
     def __init__(self, account_id=None, limit=None, marker=None):
-        """ListPendingAggregationRequestsRequest
+        r"""ListPendingAggregationRequestsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListPendingAggregationRequestsRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ListPendingAggregationRequestsRequest.
+        r"""Gets the account_id of this ListPendingAggregationRequestsRequest.
 
         授权的帐号ID。
 
@@ -68,7 +68,7 @@ class ListPendingAggregationRequestsRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ListPendingAggregationRequestsRequest.
+        r"""Sets the account_id of this ListPendingAggregationRequestsRequest.
 
         授权的帐号ID。
 
@@ -79,7 +79,7 @@ class ListPendingAggregationRequestsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPendingAggregationRequestsRequest.
+        r"""Gets the limit of this ListPendingAggregationRequestsRequest.
 
         最大的返回数量
 
@@ -90,7 +90,7 @@ class ListPendingAggregationRequestsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPendingAggregationRequestsRequest.
+        r"""Sets the limit of this ListPendingAggregationRequestsRequest.
 
         最大的返回数量
 
@@ -101,7 +101,7 @@ class ListPendingAggregationRequestsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPendingAggregationRequestsRequest.
+        r"""Gets the marker of this ListPendingAggregationRequestsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -112,7 +112,7 @@ class ListPendingAggregationRequestsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPendingAggregationRequestsRequest.
+        r"""Sets the marker of this ListPendingAggregationRequestsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

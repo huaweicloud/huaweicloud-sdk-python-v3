@@ -30,7 +30,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
     }
 
     def __init__(self, check_result=None, available_zone=None, replication_list=None):
-        """ValidateDeletableReplicaResponse
+        r"""ValidateDeletableReplicaResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
 
     @property
     def check_result(self):
-        """Gets the check_result of this ValidateDeletableReplicaResponse.
+        r"""Gets the check_result of this ValidateDeletableReplicaResponse.
 
         是否有可供选择的副本组进行删除。
 
@@ -69,7 +69,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this ValidateDeletableReplicaResponse.
+        r"""Sets the check_result of this ValidateDeletableReplicaResponse.
 
         是否有可供选择的副本组进行删除。
 
@@ -80,7 +80,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this ValidateDeletableReplicaResponse.
+        r"""Gets the available_zone of this ValidateDeletableReplicaResponse.
 
         可选的可用区ID列表
 
@@ -91,7 +91,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this ValidateDeletableReplicaResponse.
+        r"""Sets the available_zone of this ValidateDeletableReplicaResponse.
 
         可选的可用区ID列表
 
@@ -102,7 +102,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
 
     @property
     def replication_list(self):
-        """Gets the replication_list of this ValidateDeletableReplicaResponse.
+        r"""Gets the replication_list of this ValidateDeletableReplicaResponse.
 
         可选的保留节点列表
 
@@ -113,7 +113,7 @@ class ValidateDeletableReplicaResponse(SdkResponse):
 
     @replication_list.setter
     def replication_list(self, replication_list):
-        """Sets the replication_list of this ValidateDeletableReplicaResponse.
+        r"""Sets the replication_list of this ValidateDeletableReplicaResponse.
 
         可选的保留节点列表
 

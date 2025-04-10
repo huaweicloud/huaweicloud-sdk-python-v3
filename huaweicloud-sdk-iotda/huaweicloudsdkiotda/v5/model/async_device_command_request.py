@@ -33,7 +33,7 @@ class AsyncDeviceCommandRequest:
     }
 
     def __init__(self, service_id=None, command_name=None, paras=None, expire_time=None, send_strategy=None):
-        """AsyncDeviceCommandRequest
+        r"""AsyncDeviceCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class AsyncDeviceCommandRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this AsyncDeviceCommandRequest.
+        r"""Gets the service_id of this AsyncDeviceCommandRequest.
 
         **参数说明**：设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过64的字符串。
 
@@ -80,7 +80,7 @@ class AsyncDeviceCommandRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this AsyncDeviceCommandRequest.
+        r"""Sets the service_id of this AsyncDeviceCommandRequest.
 
         **参数说明**：设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过64的字符串。
 
@@ -91,7 +91,7 @@ class AsyncDeviceCommandRequest:
 
     @property
     def command_name(self):
-        """Gets the command_name of this AsyncDeviceCommandRequest.
+        r"""Gets the command_name of this AsyncDeviceCommandRequest.
 
         **参数说明**：设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过128的字符串。
 
@@ -102,7 +102,7 @@ class AsyncDeviceCommandRequest:
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this AsyncDeviceCommandRequest.
+        r"""Sets the command_name of this AsyncDeviceCommandRequest.
 
         **参数说明**：设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过128的字符串。
 
@@ -113,7 +113,7 @@ class AsyncDeviceCommandRequest:
 
     @property
     def paras(self):
-        """Gets the paras of this AsyncDeviceCommandRequest.
+        r"""Gets the paras of this AsyncDeviceCommandRequest.
 
         **参数说明**：设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定， 最大32K。
 
@@ -124,7 +124,7 @@ class AsyncDeviceCommandRequest:
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this AsyncDeviceCommandRequest.
+        r"""Sets the paras of this AsyncDeviceCommandRequest.
 
         **参数说明**：设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定， 最大32K。
 
@@ -135,7 +135,7 @@ class AsyncDeviceCommandRequest:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AsyncDeviceCommandRequest.
+        r"""Gets the expire_time of this AsyncDeviceCommandRequest.
 
         **参数说明**：物联网平台缓存命令的时长， 单位秒, 平台最多缓存20条消息（即最多缓存20条PENDING状态的命令） 该参数在send_strategy字段为delay时有效，默认缓存24小时，最大缓存2天。
 
@@ -146,7 +146,7 @@ class AsyncDeviceCommandRequest:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AsyncDeviceCommandRequest.
+        r"""Sets the expire_time of this AsyncDeviceCommandRequest.
 
         **参数说明**：物联网平台缓存命令的时长， 单位秒, 平台最多缓存20条消息（即最多缓存20条PENDING状态的命令） 该参数在send_strategy字段为delay时有效，默认缓存24小时，最大缓存2天。
 
@@ -157,7 +157,7 @@ class AsyncDeviceCommandRequest:
 
     @property
     def send_strategy(self):
-        """Gets the send_strategy of this AsyncDeviceCommandRequest.
+        r"""Gets the send_strategy of this AsyncDeviceCommandRequest.
 
         **参数说明**：下发策略，默认缓存下发。 **取值范围**： - immediately:表示立即下发，此时expire_time无效。 - delay:表示缓存下发，等数据上报或者设备上线之后下发。expire_time为0或空时，命令会默认缓存24小时。
 
@@ -168,7 +168,7 @@ class AsyncDeviceCommandRequest:
 
     @send_strategy.setter
     def send_strategy(self, send_strategy):
-        """Sets the send_strategy of this AsyncDeviceCommandRequest.
+        r"""Sets the send_strategy of this AsyncDeviceCommandRequest.
 
         **参数说明**：下发策略，默认缓存下发。 **取值范围**： - immediately:表示立即下发，此时expire_time无效。 - delay:表示缓存下发，等数据上报或者设备上线之后下发。expire_time为0或空时，命令会默认缓存24小时。
 

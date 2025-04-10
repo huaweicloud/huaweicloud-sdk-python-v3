@@ -51,7 +51,7 @@ class AlarmDataListRequest:
     }
 
     def __init__(self, page=None, page_size=None, region=None, app_name=None, business_id=None, monitor_item_id=None, status=None, alarm_level=None, keyword=None, alarm_start_time=None, alarm_end_time=None, collector_id=None, ip_address=None, env_list=None):
-        """AlarmDataListRequest
+        r"""AlarmDataListRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class AlarmDataListRequest:
 
     @property
     def page(self):
-        """Gets the page of this AlarmDataListRequest.
+        r"""Gets the page of this AlarmDataListRequest.
 
         页码。
 
@@ -144,7 +144,7 @@ class AlarmDataListRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AlarmDataListRequest.
+        r"""Sets the page of this AlarmDataListRequest.
 
         页码。
 
@@ -155,7 +155,7 @@ class AlarmDataListRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this AlarmDataListRequest.
+        r"""Gets the page_size of this AlarmDataListRequest.
 
         每页数量。
 
@@ -166,7 +166,7 @@ class AlarmDataListRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this AlarmDataListRequest.
+        r"""Sets the page_size of this AlarmDataListRequest.
 
         每页数量。
 
@@ -177,7 +177,7 @@ class AlarmDataListRequest:
 
     @property
     def region(self):
-        """Gets the region of this AlarmDataListRequest.
+        r"""Gets the region of this AlarmDataListRequest.
 
         region英文名称。
 
@@ -188,7 +188,7 @@ class AlarmDataListRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AlarmDataListRequest.
+        r"""Sets the region of this AlarmDataListRequest.
 
         region英文名称。
 
@@ -199,7 +199,7 @@ class AlarmDataListRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AlarmDataListRequest.
+        r"""Gets the app_name of this AlarmDataListRequest.
 
         组件环境名称。
 
@@ -210,7 +210,7 @@ class AlarmDataListRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AlarmDataListRequest.
+        r"""Sets the app_name of this AlarmDataListRequest.
 
         组件环境名称。
 
@@ -221,7 +221,7 @@ class AlarmDataListRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this AlarmDataListRequest.
+        r"""Gets the business_id of this AlarmDataListRequest.
 
         应用id。
 
@@ -232,7 +232,7 @@ class AlarmDataListRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this AlarmDataListRequest.
+        r"""Sets the business_id of this AlarmDataListRequest.
 
         应用id。
 
@@ -243,7 +243,7 @@ class AlarmDataListRequest:
 
     @property
     def monitor_item_id(self):
-        """Gets the monitor_item_id of this AlarmDataListRequest.
+        r"""Gets the monitor_item_id of this AlarmDataListRequest.
 
         监控项id。
 
@@ -254,7 +254,7 @@ class AlarmDataListRequest:
 
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
-        """Sets the monitor_item_id of this AlarmDataListRequest.
+        r"""Sets the monitor_item_id of this AlarmDataListRequest.
 
         监控项id。
 
@@ -265,7 +265,7 @@ class AlarmDataListRequest:
 
     @property
     def status(self):
-        """Gets the status of this AlarmDataListRequest.
+        r"""Gets the status of this AlarmDataListRequest.
 
         告警状态  RECOVER：已恢复 ABNORMAL：异常 ALERT：告警中。
 
@@ -276,7 +276,7 @@ class AlarmDataListRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmDataListRequest.
+        r"""Sets the status of this AlarmDataListRequest.
 
         告警状态  RECOVER：已恢复 ABNORMAL：异常 ALERT：告警中。
 
@@ -287,7 +287,7 @@ class AlarmDataListRequest:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmDataListRequest.
+        r"""Gets the alarm_level of this AlarmDataListRequest.
 
         告警级别  COMMON：轻微  CRITICAL：严重。
 
@@ -298,7 +298,7 @@ class AlarmDataListRequest:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmDataListRequest.
+        r"""Sets the alarm_level of this AlarmDataListRequest.
 
         告警级别  COMMON：轻微  CRITICAL：严重。
 
@@ -309,7 +309,7 @@ class AlarmDataListRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this AlarmDataListRequest.
+        r"""Gets the keyword of this AlarmDataListRequest.
 
         关键字。
 
@@ -320,7 +320,7 @@ class AlarmDataListRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this AlarmDataListRequest.
+        r"""Sets the keyword of this AlarmDataListRequest.
 
         关键字。
 
@@ -331,7 +331,7 @@ class AlarmDataListRequest:
 
     @property
     def alarm_start_time(self):
-        """Gets the alarm_start_time of this AlarmDataListRequest.
+        r"""Gets the alarm_start_time of this AlarmDataListRequest.
 
         告警开始时间。
 
@@ -342,7 +342,7 @@ class AlarmDataListRequest:
 
     @alarm_start_time.setter
     def alarm_start_time(self, alarm_start_time):
-        """Sets the alarm_start_time of this AlarmDataListRequest.
+        r"""Sets the alarm_start_time of this AlarmDataListRequest.
 
         告警开始时间。
 
@@ -353,7 +353,7 @@ class AlarmDataListRequest:
 
     @property
     def alarm_end_time(self):
-        """Gets the alarm_end_time of this AlarmDataListRequest.
+        r"""Gets the alarm_end_time of this AlarmDataListRequest.
 
         告警结束时间。
 
@@ -364,7 +364,7 @@ class AlarmDataListRequest:
 
     @alarm_end_time.setter
     def alarm_end_time(self, alarm_end_time):
-        """Sets the alarm_end_time of this AlarmDataListRequest.
+        r"""Sets the alarm_end_time of this AlarmDataListRequest.
 
         告警结束时间。
 
@@ -375,7 +375,7 @@ class AlarmDataListRequest:
 
     @property
     def collector_id(self):
-        """Gets the collector_id of this AlarmDataListRequest.
+        r"""Gets the collector_id of this AlarmDataListRequest.
 
         采集器id。
 
@@ -386,7 +386,7 @@ class AlarmDataListRequest:
 
     @collector_id.setter
     def collector_id(self, collector_id):
-        """Sets the collector_id of this AlarmDataListRequest.
+        r"""Sets the collector_id of this AlarmDataListRequest.
 
         采集器id。
 
@@ -397,7 +397,7 @@ class AlarmDataListRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AlarmDataListRequest.
+        r"""Gets the ip_address of this AlarmDataListRequest.
 
         实例ip地址。
 
@@ -408,7 +408,7 @@ class AlarmDataListRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AlarmDataListRequest.
+        r"""Sets the ip_address of this AlarmDataListRequest.
 
         实例ip地址。
 
@@ -419,7 +419,7 @@ class AlarmDataListRequest:
 
     @property
     def env_list(self):
-        """Gets the env_list of this AlarmDataListRequest.
+        r"""Gets the env_list of this AlarmDataListRequest.
 
         环境集合。
 
@@ -430,7 +430,7 @@ class AlarmDataListRequest:
 
     @env_list.setter
     def env_list(self, env_list):
-        """Sets the env_list of this AlarmDataListRequest.
+        r"""Sets the env_list of this AlarmDataListRequest.
 
         环境集合。
 

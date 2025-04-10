@@ -29,7 +29,7 @@ class ListGroupScheduledTasksRequest:
     }
 
     def __init__(self, scaling_group_id=None, limit=None, marker=None):
-        """ListGroupScheduledTasksRequest
+        r"""ListGroupScheduledTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGroupScheduledTasksRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListGroupScheduledTasksRequest.
+        r"""Gets the scaling_group_id of this ListGroupScheduledTasksRequest.
 
         伸缩组ID
 
@@ -67,7 +67,7 @@ class ListGroupScheduledTasksRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListGroupScheduledTasksRequest.
+        r"""Sets the scaling_group_id of this ListGroupScheduledTasksRequest.
 
         伸缩组ID
 
@@ -78,7 +78,7 @@ class ListGroupScheduledTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupScheduledTasksRequest.
+        r"""Gets the limit of this ListGroupScheduledTasksRequest.
 
         查询的记录条数
 
@@ -89,7 +89,7 @@ class ListGroupScheduledTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupScheduledTasksRequest.
+        r"""Sets the limit of this ListGroupScheduledTasksRequest.
 
         查询的记录条数
 
@@ -100,7 +100,7 @@ class ListGroupScheduledTasksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGroupScheduledTasksRequest.
+        r"""Gets the marker of this ListGroupScheduledTasksRequest.
 
         查询的分页marker
 
@@ -111,7 +111,7 @@ class ListGroupScheduledTasksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGroupScheduledTasksRequest.
+        r"""Sets the marker of this ListGroupScheduledTasksRequest.
 
         查询的分页marker
 

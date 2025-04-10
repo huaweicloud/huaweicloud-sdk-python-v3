@@ -28,7 +28,7 @@ class DeleteTableResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, table_name=None):
-        """DeleteTableResponse
+        r"""DeleteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteTableResponse(SdkResponse):
 
     @property
     def table_id(self):
-        """Gets the table_id of this DeleteTableResponse.
+        r"""Gets the table_id of this DeleteTableResponse.
 
         被删除表ID
 
@@ -62,7 +62,7 @@ class DeleteTableResponse(SdkResponse):
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DeleteTableResponse.
+        r"""Sets the table_id of this DeleteTableResponse.
 
         被删除表ID
 
@@ -73,7 +73,7 @@ class DeleteTableResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteTableResponse.
+        r"""Gets the table_name of this DeleteTableResponse.
 
         被删除表名。
 
@@ -84,7 +84,7 @@ class DeleteTableResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteTableResponse.
+        r"""Sets the table_name of this DeleteTableResponse.
 
         被删除表名。
 

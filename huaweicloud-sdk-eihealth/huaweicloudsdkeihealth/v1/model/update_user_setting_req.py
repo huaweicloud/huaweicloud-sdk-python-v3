@@ -27,7 +27,7 @@ class UpdateUserSettingReq:
     }
 
     def __init__(self, operation=None, settings=None):
-        """UpdateUserSettingReq
+        r"""UpdateUserSettingReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateUserSettingReq:
 
     @property
     def operation(self):
-        """Gets the operation of this UpdateUserSettingReq.
+        r"""Gets the operation of this UpdateUserSettingReq.
 
         :return: The operation of this UpdateUserSettingReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Operation`
@@ -57,7 +57,7 @@ class UpdateUserSettingReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this UpdateUserSettingReq.
+        r"""Sets the operation of this UpdateUserSettingReq.
 
         :param operation: The operation of this UpdateUserSettingReq.
         :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
@@ -66,7 +66,7 @@ class UpdateUserSettingReq:
 
     @property
     def settings(self):
-        """Gets the settings of this UpdateUserSettingReq.
+        r"""Gets the settings of this UpdateUserSettingReq.
 
         :return: The settings of this UpdateUserSettingReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
@@ -75,7 +75,7 @@ class UpdateUserSettingReq:
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this UpdateUserSettingReq.
+        r"""Sets the settings of this UpdateUserSettingReq.
 
         :param settings: The settings of this UpdateUserSettingReq.
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`

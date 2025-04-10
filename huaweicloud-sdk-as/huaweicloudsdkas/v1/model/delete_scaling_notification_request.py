@@ -27,7 +27,7 @@ class DeleteScalingNotificationRequest:
     }
 
     def __init__(self, scaling_group_id=None, topic_urn=None):
-        """DeleteScalingNotificationRequest
+        r"""DeleteScalingNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteScalingNotificationRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this DeleteScalingNotificationRequest.
+        r"""Gets the scaling_group_id of this DeleteScalingNotificationRequest.
 
         伸缩组标识。
 
@@ -59,7 +59,7 @@ class DeleteScalingNotificationRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this DeleteScalingNotificationRequest.
+        r"""Sets the scaling_group_id of this DeleteScalingNotificationRequest.
 
         伸缩组标识。
 
@@ -70,7 +70,7 @@ class DeleteScalingNotificationRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DeleteScalingNotificationRequest.
+        r"""Gets the topic_urn of this DeleteScalingNotificationRequest.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -81,7 +81,7 @@ class DeleteScalingNotificationRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DeleteScalingNotificationRequest.
+        r"""Sets the topic_urn of this DeleteScalingNotificationRequest.
 
         SMN服务中Topic的唯一的资源标识。
 

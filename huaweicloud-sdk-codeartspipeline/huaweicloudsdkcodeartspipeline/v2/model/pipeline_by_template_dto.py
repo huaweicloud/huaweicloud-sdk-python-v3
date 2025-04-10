@@ -33,7 +33,7 @@ class PipelineByTemplateDTO:
     }
 
     def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None):
-        """PipelineByTemplateDTO
+        r"""PipelineByTemplateDTO
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class PipelineByTemplateDTO:
 
     @property
     def name(self):
-        """Gets the name of this PipelineByTemplateDTO.
+        r"""Gets the name of this PipelineByTemplateDTO.
 
         流水线名称
 
@@ -79,7 +79,7 @@ class PipelineByTemplateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineByTemplateDTO.
+        r"""Sets the name of this PipelineByTemplateDTO.
 
         流水线名称
 
@@ -90,7 +90,7 @@ class PipelineByTemplateDTO:
 
     @property
     def description(self):
-        """Gets the description of this PipelineByTemplateDTO.
+        r"""Gets the description of this PipelineByTemplateDTO.
 
         流水线描述
 
@@ -101,7 +101,7 @@ class PipelineByTemplateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineByTemplateDTO.
+        r"""Sets the description of this PipelineByTemplateDTO.
 
         流水线描述
 
@@ -112,7 +112,7 @@ class PipelineByTemplateDTO:
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this PipelineByTemplateDTO.
+        r"""Gets the is_publish of this PipelineByTemplateDTO.
 
         是否为变更流水线
 
@@ -123,7 +123,7 @@ class PipelineByTemplateDTO:
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this PipelineByTemplateDTO.
+        r"""Sets the is_publish of this PipelineByTemplateDTO.
 
         是否为变更流水线
 
@@ -134,7 +134,7 @@ class PipelineByTemplateDTO:
 
     @property
     def sources(self):
-        """Gets the sources of this PipelineByTemplateDTO.
+        r"""Gets the sources of this PipelineByTemplateDTO.
 
         流水线源
 
@@ -145,7 +145,7 @@ class PipelineByTemplateDTO:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this PipelineByTemplateDTO.
+        r"""Sets the sources of this PipelineByTemplateDTO.
 
         流水线源
 
@@ -156,7 +156,7 @@ class PipelineByTemplateDTO:
 
     @property
     def variables(self):
-        """Gets the variables of this PipelineByTemplateDTO.
+        r"""Gets the variables of this PipelineByTemplateDTO.
 
         流水线参数
 
@@ -167,7 +167,7 @@ class PipelineByTemplateDTO:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this PipelineByTemplateDTO.
+        r"""Sets the variables of this PipelineByTemplateDTO.
 
         流水线参数
 

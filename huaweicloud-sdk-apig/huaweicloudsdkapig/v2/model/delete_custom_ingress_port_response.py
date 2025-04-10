@@ -24,7 +24,7 @@ class DeleteCustomIngressPortResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteCustomIngressPortResponse
+        r"""DeleteCustomIngressPortResponse
 
         The model defined in huaweicloud sdk
 

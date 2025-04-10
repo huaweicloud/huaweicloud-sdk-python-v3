@@ -57,7 +57,7 @@ class OpenEditConfReq:
     }
 
     def __init__(self, conference_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, attendees=None, notify_setting=None, guest_passwd=None, audience_passwd=None, call_restriction=None, scope=None, audience_scope=None, enable_recording=None, live_address=None, aux_address=None, live_url=None):
-        """OpenEditConfReq
+        r"""OpenEditConfReq
 
         The model defined in huaweicloud sdk
 
@@ -150,7 +150,7 @@ class OpenEditConfReq:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this OpenEditConfReq.
+        r"""Gets the conference_id of this OpenEditConfReq.
 
         网络研讨会ID。
 
@@ -161,7 +161,7 @@ class OpenEditConfReq:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this OpenEditConfReq.
+        r"""Sets the conference_id of this OpenEditConfReq.
 
         网络研讨会ID。
 
@@ -172,7 +172,7 @@ class OpenEditConfReq:
 
     @property
     def subject(self):
-        """Gets the subject of this OpenEditConfReq.
+        r"""Gets the subject of this OpenEditConfReq.
 
         网络研讨会主题。长度限制为128个字符。
 
@@ -183,7 +183,7 @@ class OpenEditConfReq:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this OpenEditConfReq.
+        r"""Sets the subject of this OpenEditConfReq.
 
         网络研讨会主题。长度限制为128个字符。
 
@@ -194,7 +194,7 @@ class OpenEditConfReq:
 
     @property
     def description(self):
-        """Gets the description of this OpenEditConfReq.
+        r"""Gets the description of this OpenEditConfReq.
 
         网络研讨会描述，长度限制为1000个字符。
 
@@ -205,7 +205,7 @@ class OpenEditConfReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenEditConfReq.
+        r"""Sets the description of this OpenEditConfReq.
 
         网络研讨会描述，长度限制为1000个字符。
 
@@ -216,7 +216,7 @@ class OpenEditConfReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenEditConfReq.
+        r"""Gets the start_time of this OpenEditConfReq.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -227,7 +227,7 @@ class OpenEditConfReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenEditConfReq.
+        r"""Sets the start_time of this OpenEditConfReq.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -238,7 +238,7 @@ class OpenEditConfReq:
 
     @property
     def duration(self):
-        """Gets the duration of this OpenEditConfReq.
+        r"""Gets the duration of this OpenEditConfReq.
 
         网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
@@ -249,7 +249,7 @@ class OpenEditConfReq:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OpenEditConfReq.
+        r"""Sets the duration of this OpenEditConfReq.
 
         网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
@@ -260,7 +260,7 @@ class OpenEditConfReq:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this OpenEditConfReq.
+        r"""Gets the time_zone_id of this OpenEditConfReq.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -271,7 +271,7 @@ class OpenEditConfReq:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this OpenEditConfReq.
+        r"""Sets the time_zone_id of this OpenEditConfReq.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -282,7 +282,7 @@ class OpenEditConfReq:
 
     @property
     def attendees(self):
-        """Gets the attendees of this OpenEditConfReq.
+        r"""Gets the attendees of this OpenEditConfReq.
 
         与会嘉宾列表。 > 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
 
@@ -293,7 +293,7 @@ class OpenEditConfReq:
 
     @attendees.setter
     def attendees(self, attendees):
-        """Sets the attendees of this OpenEditConfReq.
+        r"""Sets the attendees of this OpenEditConfReq.
 
         与会嘉宾列表。 > 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
 
@@ -304,7 +304,7 @@ class OpenEditConfReq:
 
     @property
     def notify_setting(self):
-        """Gets the notify_setting of this OpenEditConfReq.
+        r"""Gets the notify_setting of this OpenEditConfReq.
 
         :return: The notify_setting of this OpenEditConfReq.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
@@ -313,7 +313,7 @@ class OpenEditConfReq:
 
     @notify_setting.setter
     def notify_setting(self, notify_setting):
-        """Sets the notify_setting of this OpenEditConfReq.
+        r"""Sets the notify_setting of this OpenEditConfReq.
 
         :param notify_setting: The notify_setting of this OpenEditConfReq.
         :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
@@ -322,7 +322,7 @@ class OpenEditConfReq:
 
     @property
     def guest_passwd(self):
-        """Gets the guest_passwd of this OpenEditConfReq.
+        r"""Gets the guest_passwd of this OpenEditConfReq.
 
         嘉宾密码（4-16位长度的纯数字)。
 
@@ -333,7 +333,7 @@ class OpenEditConfReq:
 
     @guest_passwd.setter
     def guest_passwd(self, guest_passwd):
-        """Sets the guest_passwd of this OpenEditConfReq.
+        r"""Sets the guest_passwd of this OpenEditConfReq.
 
         嘉宾密码（4-16位长度的纯数字)。
 
@@ -344,7 +344,7 @@ class OpenEditConfReq:
 
     @property
     def audience_passwd(self):
-        """Gets the audience_passwd of this OpenEditConfReq.
+        r"""Gets the audience_passwd of this OpenEditConfReq.
 
         观众密码（4-16位长度的纯数字)。
 
@@ -355,7 +355,7 @@ class OpenEditConfReq:
 
     @audience_passwd.setter
     def audience_passwd(self, audience_passwd):
-        """Sets the audience_passwd of this OpenEditConfReq.
+        r"""Sets the audience_passwd of this OpenEditConfReq.
 
         观众密码（4-16位长度的纯数字)。
 
@@ -366,7 +366,7 @@ class OpenEditConfReq:
 
     @property
     def call_restriction(self):
-        """Gets the call_restriction of this OpenEditConfReq.
+        r"""Gets the call_restriction of this OpenEditConfReq.
 
         入会范围开关。
 
@@ -377,7 +377,7 @@ class OpenEditConfReq:
 
     @call_restriction.setter
     def call_restriction(self, call_restriction):
-        """Sets the call_restriction of this OpenEditConfReq.
+        r"""Sets the call_restriction of this OpenEditConfReq.
 
         入会范围开关。
 
@@ -388,7 +388,7 @@ class OpenEditConfReq:
 
     @property
     def scope(self):
-        """Gets the scope of this OpenEditConfReq.
+        r"""Gets the scope of this OpenEditConfReq.
 
         主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
@@ -399,7 +399,7 @@ class OpenEditConfReq:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this OpenEditConfReq.
+        r"""Sets the scope of this OpenEditConfReq.
 
         主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
@@ -410,7 +410,7 @@ class OpenEditConfReq:
 
     @property
     def audience_scope(self):
-        """Gets the audience_scope of this OpenEditConfReq.
+        r"""Gets the audience_scope of this OpenEditConfReq.
 
         观众入会范围。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
 
@@ -421,7 +421,7 @@ class OpenEditConfReq:
 
     @audience_scope.setter
     def audience_scope(self, audience_scope):
-        """Sets the audience_scope of this OpenEditConfReq.
+        r"""Sets the audience_scope of this OpenEditConfReq.
 
         观众入会范围。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
 
@@ -432,7 +432,7 @@ class OpenEditConfReq:
 
     @property
     def enable_recording(self):
-        """Gets the enable_recording of this OpenEditConfReq.
+        r"""Gets the enable_recording of this OpenEditConfReq.
 
         :return: The enable_recording of this OpenEditConfReq.
         :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
@@ -441,7 +441,7 @@ class OpenEditConfReq:
 
     @enable_recording.setter
     def enable_recording(self, enable_recording):
-        """Sets the enable_recording of this OpenEditConfReq.
+        r"""Sets the enable_recording of this OpenEditConfReq.
 
         :param enable_recording: The enable_recording of this OpenEditConfReq.
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
@@ -450,7 +450,7 @@ class OpenEditConfReq:
 
     @property
     def live_address(self):
-        """Gets the live_address of this OpenEditConfReq.
+        r"""Gets the live_address of this OpenEditConfReq.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -461,7 +461,7 @@ class OpenEditConfReq:
 
     @live_address.setter
     def live_address(self, live_address):
-        """Sets the live_address of this OpenEditConfReq.
+        r"""Sets the live_address of this OpenEditConfReq.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -472,7 +472,7 @@ class OpenEditConfReq:
 
     @property
     def aux_address(self):
-        """Gets the aux_address of this OpenEditConfReq.
+        r"""Gets the aux_address of this OpenEditConfReq.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -483,7 +483,7 @@ class OpenEditConfReq:
 
     @aux_address.setter
     def aux_address(self, aux_address):
-        """Sets the aux_address of this OpenEditConfReq.
+        r"""Sets the aux_address of this OpenEditConfReq.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -494,7 +494,7 @@ class OpenEditConfReq:
 
     @property
     def live_url(self):
-        """Gets the live_url of this OpenEditConfReq.
+        r"""Gets the live_url of this OpenEditConfReq.
 
         直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
 
@@ -505,7 +505,7 @@ class OpenEditConfReq:
 
     @live_url.setter
     def live_url(self, live_url):
-        """Sets the live_url of this OpenEditConfReq.
+        r"""Sets the live_url of this OpenEditConfReq.
 
         直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
 

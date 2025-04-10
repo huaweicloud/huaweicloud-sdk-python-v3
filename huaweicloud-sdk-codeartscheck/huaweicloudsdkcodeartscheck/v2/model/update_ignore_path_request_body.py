@@ -25,7 +25,7 @@ class UpdateIgnorePathRequestBody:
     }
 
     def __init__(self, ignore_path_settings=None):
-        """UpdateIgnorePathRequestBody
+        r"""UpdateIgnorePathRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateIgnorePathRequestBody:
 
     @property
     def ignore_path_settings(self):
-        """Gets the ignore_path_settings of this UpdateIgnorePathRequestBody.
+        r"""Gets the ignore_path_settings of this UpdateIgnorePathRequestBody.
 
         屏蔽目录的节点信息列表
 
@@ -53,7 +53,7 @@ class UpdateIgnorePathRequestBody:
 
     @ignore_path_settings.setter
     def ignore_path_settings(self, ignore_path_settings):
-        """Sets the ignore_path_settings of this UpdateIgnorePathRequestBody.
+        r"""Sets the ignore_path_settings of this UpdateIgnorePathRequestBody.
 
         屏蔽目录的节点信息列表
 

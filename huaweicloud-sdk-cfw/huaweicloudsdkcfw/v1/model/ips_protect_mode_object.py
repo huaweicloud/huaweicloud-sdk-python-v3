@@ -27,7 +27,7 @@ class IpsProtectModeObject:
     }
 
     def __init__(self, id=None, mode=None):
-        """IpsProtectModeObject
+        r"""IpsProtectModeObject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IpsProtectModeObject:
 
     @property
     def id(self):
-        """Gets the id of this IpsProtectModeObject.
+        r"""Gets the id of this IpsProtectModeObject.
 
         ips防护模式id，此处为防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
 
@@ -61,7 +61,7 @@ class IpsProtectModeObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpsProtectModeObject.
+        r"""Sets the id of this IpsProtectModeObject.
 
         ips防护模式id，此处为防护对象id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得
 
@@ -72,7 +72,7 @@ class IpsProtectModeObject:
 
     @property
     def mode(self):
-        """Gets the mode of this IpsProtectModeObject.
+        r"""Gets the mode of this IpsProtectModeObject.
 
         ips防护模式，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
 
@@ -83,7 +83,7 @@ class IpsProtectModeObject:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this IpsProtectModeObject.
+        r"""Sets the mode of this IpsProtectModeObject.
 
         ips防护模式，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
 

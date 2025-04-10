@@ -27,7 +27,7 @@ class PoliciesPeripheralsUsbDeviceCommon:
     }
 
     def __init__(self, pcsc_smart_card_enable=None, common_options=None):
-        """PoliciesPeripheralsUsbDeviceCommon
+        r"""PoliciesPeripheralsUsbDeviceCommon
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsUsbDeviceCommon:
 
     @property
     def pcsc_smart_card_enable(self):
-        """Gets the pcsc_smart_card_enable of this PoliciesPeripheralsUsbDeviceCommon.
+        r"""Gets the pcsc_smart_card_enable of this PoliciesPeripheralsUsbDeviceCommon.
 
         是否开启PC/SC智能卡重定向。取值为： Enable：表示已启动。 Closed：表示已关闭。 Disable：表示已禁用。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsUsbDeviceCommon:
 
     @pcsc_smart_card_enable.setter
     def pcsc_smart_card_enable(self, pcsc_smart_card_enable):
-        """Sets the pcsc_smart_card_enable of this PoliciesPeripheralsUsbDeviceCommon.
+        r"""Sets the pcsc_smart_card_enable of this PoliciesPeripheralsUsbDeviceCommon.
 
         是否开启PC/SC智能卡重定向。取值为： Enable：表示已启动。 Closed：表示已关闭。 Disable：表示已禁用。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsUsbDeviceCommon:
 
     @property
     def common_options(self):
-        """Gets the common_options of this PoliciesPeripheralsUsbDeviceCommon.
+        r"""Gets the common_options of this PoliciesPeripheralsUsbDeviceCommon.
 
         :return: The common_options of this PoliciesPeripheralsUsbDeviceCommon.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsUsbDeviceCommonCommonOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsUsbDeviceCommon:
 
     @common_options.setter
     def common_options(self, common_options):
-        """Sets the common_options of this PoliciesPeripheralsUsbDeviceCommon.
+        r"""Sets the common_options of this PoliciesPeripheralsUsbDeviceCommon.
 
         :param common_options: The common_options of this PoliciesPeripheralsUsbDeviceCommon.
         :type common_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsUsbDeviceCommonCommonOptions`

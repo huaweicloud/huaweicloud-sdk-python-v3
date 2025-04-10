@@ -39,7 +39,7 @@ class EwProtectResourceInfo:
     }
 
     def __init__(self, protected_resource_type=None, protected_resource_name=None, protected_resource_id=None, protected_resource_nat_name=None, protected_resource_nat_id=None, protected_resource_project_id=None, protected_resource_mode=None, status=None):
-        """EwProtectResourceInfo
+        r"""EwProtectResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_type(self):
-        """Gets the protected_resource_type of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_type of this EwProtectResourceInfo.
 
         防护资源类型：0 VPC，1 VGW，2 VPN，3 PEERING
 
@@ -100,7 +100,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_type.setter
     def protected_resource_type(self, protected_resource_type):
-        """Sets the protected_resource_type of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_type of this EwProtectResourceInfo.
 
         防护资源类型：0 VPC，1 VGW，2 VPN，3 PEERING
 
@@ -111,7 +111,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_name(self):
-        """Gets the protected_resource_name of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_name of this EwProtectResourceInfo.
 
         防护资源名称
 
@@ -122,7 +122,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_name.setter
     def protected_resource_name(self, protected_resource_name):
-        """Sets the protected_resource_name of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_name of this EwProtectResourceInfo.
 
         防护资源名称
 
@@ -133,7 +133,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_id(self):
-        """Gets the protected_resource_id of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_id of this EwProtectResourceInfo.
 
         防护资源id
 
@@ -144,7 +144,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_id.setter
     def protected_resource_id(self, protected_resource_id):
-        """Sets the protected_resource_id of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_id of this EwProtectResourceInfo.
 
         防护资源id
 
@@ -155,7 +155,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_nat_name(self):
-        """Gets the protected_resource_nat_name of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_nat_name of this EwProtectResourceInfo.
 
         防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。
 
@@ -166,7 +166,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_nat_name.setter
     def protected_resource_nat_name(self, protected_resource_nat_name):
-        """Sets the protected_resource_nat_name of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_nat_name of this EwProtectResourceInfo.
 
         防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。
 
@@ -177,7 +177,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_nat_id(self):
-        """Gets the protected_resource_nat_id of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_nat_id of this EwProtectResourceInfo.
 
         防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。
 
@@ -188,7 +188,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_nat_id.setter
     def protected_resource_nat_id(self, protected_resource_nat_id):
-        """Sets the protected_resource_nat_id of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_nat_id of this EwProtectResourceInfo.
 
         防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。
 
@@ -199,7 +199,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_project_id(self):
-        """Gets the protected_resource_project_id of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_project_id of this EwProtectResourceInfo.
 
         防火墙支持跨账户防护，此处为防护资源租户id
 
@@ -210,7 +210,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_project_id.setter
     def protected_resource_project_id(self, protected_resource_project_id):
-        """Sets the protected_resource_project_id of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_project_id of this EwProtectResourceInfo.
 
         防火墙支持跨账户防护，此处为防护资源租户id
 
@@ -221,7 +221,7 @@ class EwProtectResourceInfo:
 
     @property
     def protected_resource_mode(self):
-        """Gets the protected_resource_mode of this EwProtectResourceInfo.
+        r"""Gets the protected_resource_mode of this EwProtectResourceInfo.
 
         防护资源模式，为er
 
@@ -232,7 +232,7 @@ class EwProtectResourceInfo:
 
     @protected_resource_mode.setter
     def protected_resource_mode(self, protected_resource_mode):
-        """Sets the protected_resource_mode of this EwProtectResourceInfo.
+        r"""Sets the protected_resource_mode of this EwProtectResourceInfo.
 
         防护资源模式，为er
 
@@ -243,7 +243,7 @@ class EwProtectResourceInfo:
 
     @property
     def status(self):
-        """Gets the status of this EwProtectResourceInfo.
+        r"""Gets the status of this EwProtectResourceInfo.
 
         防护资源的防护状态，0表示已关联，1表示未关联。
 
@@ -254,7 +254,7 @@ class EwProtectResourceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EwProtectResourceInfo.
+        r"""Sets the status of this EwProtectResourceInfo.
 
         防护资源的防护状态，0表示已关联，1表示未关联。
 

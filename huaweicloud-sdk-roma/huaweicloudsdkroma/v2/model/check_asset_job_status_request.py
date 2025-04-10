@@ -27,7 +27,7 @@ class CheckAssetJobStatusRequest:
     }
 
     def __init__(self, instance_id=None, job_id=None):
-        """CheckAssetJobStatusRequest
+        r"""CheckAssetJobStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckAssetJobStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckAssetJobStatusRequest.
+        r"""Gets the instance_id of this CheckAssetJobStatusRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class CheckAssetJobStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckAssetJobStatusRequest.
+        r"""Sets the instance_id of this CheckAssetJobStatusRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class CheckAssetJobStatusRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CheckAssetJobStatusRequest.
+        r"""Gets the job_id of this CheckAssetJobStatusRequest.
 
         作业ID
 
@@ -81,7 +81,7 @@ class CheckAssetJobStatusRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CheckAssetJobStatusRequest.
+        r"""Sets the job_id of this CheckAssetJobStatusRequest.
 
         作业ID
 

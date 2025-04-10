@@ -29,7 +29,7 @@ class UpdateResourceShareReqBody:
     }
 
     def __init__(self, name=None, description=None, allow_external_principals=None):
-        """UpdateResourceShareReqBody
+        r"""UpdateResourceShareReqBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateResourceShareReqBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateResourceShareReqBody.
+        r"""Gets the name of this UpdateResourceShareReqBody.
 
         资源共享实例的名称。
 
@@ -67,7 +67,7 @@ class UpdateResourceShareReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateResourceShareReqBody.
+        r"""Sets the name of this UpdateResourceShareReqBody.
 
         资源共享实例的名称。
 
@@ -78,7 +78,7 @@ class UpdateResourceShareReqBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateResourceShareReqBody.
+        r"""Gets the description of this UpdateResourceShareReqBody.
 
         资源共享实例的描述。
 
@@ -89,7 +89,7 @@ class UpdateResourceShareReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateResourceShareReqBody.
+        r"""Sets the description of this UpdateResourceShareReqBody.
 
         资源共享实例的描述。
 
@@ -100,7 +100,7 @@ class UpdateResourceShareReqBody:
 
     @property
     def allow_external_principals(self):
-        """Gets the allow_external_principals of this UpdateResourceShareReqBody.
+        r"""Gets the allow_external_principals of this UpdateResourceShareReqBody.
 
         资源共享实例是否支持共享给组织外账号。
 
@@ -111,7 +111,7 @@ class UpdateResourceShareReqBody:
 
     @allow_external_principals.setter
     def allow_external_principals(self, allow_external_principals):
-        """Sets the allow_external_principals of this UpdateResourceShareReqBody.
+        r"""Sets the allow_external_principals of this UpdateResourceShareReqBody.
 
         资源共享实例是否支持共享给组织外账号。
 

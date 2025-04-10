@@ -28,7 +28,7 @@ class ListAuditlogsResponse(SdkResponse):
     }
 
     def __init__(self, auditlogs=None, total_record=None):
-        """ListAuditlogsResponse
+        r"""ListAuditlogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @property
     def auditlogs(self):
-        """Gets the auditlogs of this ListAuditlogsResponse.
+        r"""Gets the auditlogs of this ListAuditlogsResponse.
 
         :return: The auditlogs of this ListAuditlogsResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.Auditlog`]
@@ -60,7 +60,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @auditlogs.setter
     def auditlogs(self, auditlogs):
-        """Sets the auditlogs of this ListAuditlogsResponse.
+        r"""Sets the auditlogs of this ListAuditlogsResponse.
 
         :param auditlogs: The auditlogs of this ListAuditlogsResponse.
         :type auditlogs: list[:class:`huaweicloudsdkrds.v3.Auditlog`]
@@ -69,7 +69,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListAuditlogsResponse.
+        r"""Gets the total_record of this ListAuditlogsResponse.
 
         总记录数。
 
@@ -80,7 +80,7 @@ class ListAuditlogsResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListAuditlogsResponse.
+        r"""Sets the total_record of this ListAuditlogsResponse.
 
         总记录数。
 

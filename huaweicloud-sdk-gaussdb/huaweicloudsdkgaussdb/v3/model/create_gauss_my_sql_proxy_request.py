@@ -29,7 +29,7 @@ class CreateGaussMySqlProxyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateGaussMySqlProxyRequest
+        r"""CreateGaussMySqlProxyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateGaussMySqlProxyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateGaussMySqlProxyRequest.
+        r"""Gets the x_language of this CreateGaussMySqlProxyRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class CreateGaussMySqlProxyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateGaussMySqlProxyRequest.
+        r"""Sets the x_language of this CreateGaussMySqlProxyRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class CreateGaussMySqlProxyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateGaussMySqlProxyRequest.
+        r"""Gets the instance_id of this CreateGaussMySqlProxyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateGaussMySqlProxyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateGaussMySqlProxyRequest.
+        r"""Sets the instance_id of this CreateGaussMySqlProxyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateGaussMySqlProxyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGaussMySqlProxyRequest.
+        r"""Gets the body of this CreateGaussMySqlProxyRequest.
 
         :return: The body of this CreateGaussMySqlProxyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.OpenMysqlProxyRequestBody`
@@ -109,7 +109,7 @@ class CreateGaussMySqlProxyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGaussMySqlProxyRequest.
+        r"""Sets the body of this CreateGaussMySqlProxyRequest.
 
         :param body: The body of this CreateGaussMySqlProxyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.OpenMysqlProxyRequestBody`

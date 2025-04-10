@@ -30,7 +30,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, spec_codes=None):
-        """ListGlobalConnectionBandwidthSpecCodesResponse
+        r"""ListGlobalConnectionBandwidthSpecCodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalConnectionBandwidthSpecCodesResponse.
+        r"""Gets the request_id of this ListGlobalConnectionBandwidthSpecCodesResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalConnectionBandwidthSpecCodesResponse.
+        r"""Sets the request_id of this ListGlobalConnectionBandwidthSpecCodesResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGlobalConnectionBandwidthSpecCodesResponse.
+        r"""Gets the page_info of this ListGlobalConnectionBandwidthSpecCodesResponse.
 
         :return: The page_info of this ListGlobalConnectionBandwidthSpecCodesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGlobalConnectionBandwidthSpecCodesResponse.
+        r"""Sets the page_info of this ListGlobalConnectionBandwidthSpecCodesResponse.
 
         :param page_info: The page_info of this ListGlobalConnectionBandwidthSpecCodesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
 
     @property
     def spec_codes(self):
-        """Gets the spec_codes of this ListGlobalConnectionBandwidthSpecCodesResponse.
+        r"""Gets the spec_codes of this ListGlobalConnectionBandwidthSpecCodesResponse.
 
         线路规格列表响应体。
 
@@ -107,7 +107,7 @@ class ListGlobalConnectionBandwidthSpecCodesResponse(SdkResponse):
 
     @spec_codes.setter
     def spec_codes(self, spec_codes):
-        """Sets the spec_codes of this ListGlobalConnectionBandwidthSpecCodesResponse.
+        r"""Sets the spec_codes of this ListGlobalConnectionBandwidthSpecCodesResponse.
 
         线路规格列表响应体。
 

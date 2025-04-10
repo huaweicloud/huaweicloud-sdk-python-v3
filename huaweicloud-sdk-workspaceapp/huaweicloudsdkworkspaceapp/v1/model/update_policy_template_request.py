@@ -27,7 +27,7 @@ class UpdatePolicyTemplateRequest:
     }
 
     def __init__(self, policy_template_id=None, body=None):
-        """UpdatePolicyTemplateRequest
+        r"""UpdatePolicyTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePolicyTemplateRequest:
 
     @property
     def policy_template_id(self):
-        """Gets the policy_template_id of this UpdatePolicyTemplateRequest.
+        r"""Gets the policy_template_id of this UpdatePolicyTemplateRequest.
 
         策略模板id。
 
@@ -60,7 +60,7 @@ class UpdatePolicyTemplateRequest:
 
     @policy_template_id.setter
     def policy_template_id(self, policy_template_id):
-        """Sets the policy_template_id of this UpdatePolicyTemplateRequest.
+        r"""Sets the policy_template_id of this UpdatePolicyTemplateRequest.
 
         策略模板id。
 
@@ -71,7 +71,7 @@ class UpdatePolicyTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePolicyTemplateRequest.
+        r"""Gets the body of this UpdatePolicyTemplateRequest.
 
         :return: The body of this UpdatePolicyTemplateRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdatePolicyTemplateReq`
@@ -80,7 +80,7 @@ class UpdatePolicyTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePolicyTemplateRequest.
+        r"""Sets the body of this UpdatePolicyTemplateRequest.
 
         :param body: The body of this UpdatePolicyTemplateRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdatePolicyTemplateReq`

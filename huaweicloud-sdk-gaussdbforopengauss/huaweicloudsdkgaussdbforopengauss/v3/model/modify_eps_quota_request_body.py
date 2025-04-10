@@ -25,7 +25,7 @@ class ModifyEpsQuotaRequestBody:
     }
 
     def __init__(self, eps_quotas=None):
-        """ModifyEpsQuotaRequestBody
+        r"""ModifyEpsQuotaRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyEpsQuotaRequestBody:
 
     @property
     def eps_quotas(self):
-        """Gets the eps_quotas of this ModifyEpsQuotaRequestBody.
+        r"""Gets the eps_quotas of this ModifyEpsQuotaRequestBody.
 
         需要修改的企业配额列表。
 
@@ -53,7 +53,7 @@ class ModifyEpsQuotaRequestBody:
 
     @eps_quotas.setter
     def eps_quotas(self, eps_quotas):
-        """Sets the eps_quotas of this ModifyEpsQuotaRequestBody.
+        r"""Sets the eps_quotas of this ModifyEpsQuotaRequestBody.
 
         需要修改的企业配额列表。
 

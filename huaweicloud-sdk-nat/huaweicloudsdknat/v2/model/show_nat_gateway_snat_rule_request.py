@@ -25,7 +25,7 @@ class ShowNatGatewaySnatRuleRequest:
     }
 
     def __init__(self, snat_rule_id=None):
-        """ShowNatGatewaySnatRuleRequest
+        r"""ShowNatGatewaySnatRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNatGatewaySnatRuleRequest:
 
     @property
     def snat_rule_id(self):
-        """Gets the snat_rule_id of this ShowNatGatewaySnatRuleRequest.
+        r"""Gets the snat_rule_id of this ShowNatGatewaySnatRuleRequest.
 
         SNAT规则的ID。
 
@@ -53,7 +53,7 @@ class ShowNatGatewaySnatRuleRequest:
 
     @snat_rule_id.setter
     def snat_rule_id(self, snat_rule_id):
-        """Sets the snat_rule_id of this ShowNatGatewaySnatRuleRequest.
+        r"""Sets the snat_rule_id of this ShowNatGatewaySnatRuleRequest.
 
         SNAT规则的ID。
 

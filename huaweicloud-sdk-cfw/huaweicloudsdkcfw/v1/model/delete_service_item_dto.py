@@ -27,7 +27,7 @@ class DeleteServiceItemDto:
     }
 
     def __init__(self, set_id=None, service_item_ids=None):
-        """DeleteServiceItemDto
+        r"""DeleteServiceItemDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteServiceItemDto:
 
     @property
     def set_id(self):
-        """Gets the set_id of this DeleteServiceItemDto.
+        r"""Gets the set_id of this DeleteServiceItemDto.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -59,7 +59,7 @@ class DeleteServiceItemDto:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this DeleteServiceItemDto.
+        r"""Sets the set_id of this DeleteServiceItemDto.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -70,7 +70,7 @@ class DeleteServiceItemDto:
 
     @property
     def service_item_ids(self):
-        """Gets the service_item_ids of this DeleteServiceItemDto.
+        r"""Gets the service_item_ids of this DeleteServiceItemDto.
 
         服务组成员id列表，服务组成员id可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 
@@ -81,7 +81,7 @@ class DeleteServiceItemDto:
 
     @service_item_ids.setter
     def service_item_ids(self, service_item_ids):
-        """Sets the service_item_ids of this DeleteServiceItemDto.
+        r"""Sets the service_item_ids of this DeleteServiceItemDto.
 
         服务组成员id列表，服务组成员id可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 

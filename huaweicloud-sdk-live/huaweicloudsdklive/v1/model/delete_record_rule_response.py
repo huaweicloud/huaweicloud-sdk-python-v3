@@ -24,7 +24,7 @@ class DeleteRecordRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRecordRuleResponse
+        r"""DeleteRecordRuleResponse
 
         The model defined in huaweicloud sdk
 

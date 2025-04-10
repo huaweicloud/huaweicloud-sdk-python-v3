@@ -35,7 +35,7 @@ class APIVersionDetail:
     }
 
     def __init__(self, id=None, links=None, min_version=None, status=None, updated=None, version=None):
-        """APIVersionDetail
+        r"""APIVersionDetail
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class APIVersionDetail:
 
     @property
     def id(self):
-        """Gets the id of this APIVersionDetail.
+        r"""Gets the id of this APIVersionDetail.
 
         API版本ID。例如v3。
 
@@ -83,7 +83,7 @@ class APIVersionDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this APIVersionDetail.
+        r"""Sets the id of this APIVersionDetail.
 
         API版本ID。例如v3。
 
@@ -94,7 +94,7 @@ class APIVersionDetail:
 
     @property
     def links(self):
-        """Gets the links of this APIVersionDetail.
+        r"""Gets the links of this APIVersionDetail.
 
         API版本的URL链接信息。
 
@@ -105,7 +105,7 @@ class APIVersionDetail:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this APIVersionDetail.
+        r"""Sets the links of this APIVersionDetail.
 
         API版本的URL链接信息。
 
@@ -116,7 +116,7 @@ class APIVersionDetail:
 
     @property
     def min_version(self):
-        """Gets the min_version of this APIVersionDetail.
+        r"""Gets the min_version of this APIVersionDetail.
 
         如果API的这个版本支持微版本，则支持最小的微版本。如果不支持微版本，这将是空字符串。
 
@@ -127,7 +127,7 @@ class APIVersionDetail:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this APIVersionDetail.
+        r"""Sets the min_version of this APIVersionDetail.
 
         如果API的这个版本支持微版本，则支持最小的微版本。如果不支持微版本，这将是空字符串。
 
@@ -138,7 +138,7 @@ class APIVersionDetail:
 
     @property
     def status(self):
-        """Gets the status of this APIVersionDetail.
+        r"""Gets the status of this APIVersionDetail.
 
         API版本的状态。 可以是： - CURRENT这是使用的API的首选版本； - SUPPORTED：这是一个较老的，但仍然支持的API版本； - DEPRECATED：一个被废弃的API版本，该版本将被删除
 
@@ -149,7 +149,7 @@ class APIVersionDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this APIVersionDetail.
+        r"""Sets the status of this APIVersionDetail.
 
         API版本的状态。 可以是： - CURRENT这是使用的API的首选版本； - SUPPORTED：这是一个较老的，但仍然支持的API版本； - DEPRECATED：一个被废弃的API版本，该版本将被删除
 
@@ -160,7 +160,7 @@ class APIVersionDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this APIVersionDetail.
+        r"""Gets the updated of this APIVersionDetail.
 
         API发布时间（UTC格式）。例如API版本为v3时，值为'2018-09-15 00:00:00Z'。
 
@@ -171,7 +171,7 @@ class APIVersionDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this APIVersionDetail.
+        r"""Sets the updated of this APIVersionDetail.
 
         API发布时间（UTC格式）。例如API版本为v3时，值为'2018-09-15 00:00:00Z'。
 
@@ -182,7 +182,7 @@ class APIVersionDetail:
 
     @property
     def version(self):
-        """Gets the version of this APIVersionDetail.
+        r"""Gets the version of this APIVersionDetail.
 
         如果API的这个版本支持微版本，则支持最大的微版本。如果不支持微版本，这将是空字符串。
 
@@ -193,7 +193,7 @@ class APIVersionDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this APIVersionDetail.
+        r"""Sets the version of this APIVersionDetail.
 
         如果API的这个版本支持微版本，则支持最大的微版本。如果不支持微版本，这将是空字符串。
 

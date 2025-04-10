@@ -27,7 +27,7 @@ class RemoveIpGroupIpRequest:
     }
 
     def __init__(self, ip_group_id=None, body=None):
-        """RemoveIpGroupIpRequest
+        r"""RemoveIpGroupIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveIpGroupIpRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this RemoveIpGroupIpRequest.
+        r"""Gets the ip_group_id of this RemoveIpGroupIpRequest.
 
         IP地址组ID。
 
@@ -60,7 +60,7 @@ class RemoveIpGroupIpRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this RemoveIpGroupIpRequest.
+        r"""Sets the ip_group_id of this RemoveIpGroupIpRequest.
 
         IP地址组ID。
 
@@ -71,7 +71,7 @@ class RemoveIpGroupIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveIpGroupIpRequest.
+        r"""Gets the body of this RemoveIpGroupIpRequest.
 
         :return: The body of this RemoveIpGroupIpRequest.
         :rtype: :class:`huaweicloudsdkga.v1.RemoveIpGroupIpRequestBody`
@@ -80,7 +80,7 @@ class RemoveIpGroupIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveIpGroupIpRequest.
+        r"""Sets the body of this RemoveIpGroupIpRequest.
 
         :param body: The body of this RemoveIpGroupIpRequest.
         :type body: :class:`huaweicloudsdkga.v1.RemoveIpGroupIpRequestBody`

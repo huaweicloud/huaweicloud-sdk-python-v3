@@ -25,7 +25,7 @@ class ShowEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ShowEnterpriseProjectRequest
+        r"""ShowEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this ShowEnterpriseProjectRequest.
 
         企业项目ID。 可以通过查询企业项目列表接口获取。
 
@@ -53,7 +53,7 @@ class ShowEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this ShowEnterpriseProjectRequest.
 
         企业项目ID。 可以通过查询企业项目列表接口获取。
 

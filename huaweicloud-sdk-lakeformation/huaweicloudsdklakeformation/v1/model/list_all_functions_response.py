@@ -28,7 +28,7 @@ class ListAllFunctionsResponse(SdkResponse):
     }
 
     def __init__(self, page_info=None, functions=None):
-        """ListAllFunctionsResponse
+        r"""ListAllFunctionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllFunctionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAllFunctionsResponse.
+        r"""Gets the page_info of this ListAllFunctionsResponse.
 
         :return: The page_info of this ListAllFunctionsResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -60,7 +60,7 @@ class ListAllFunctionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAllFunctionsResponse.
+        r"""Sets the page_info of this ListAllFunctionsResponse.
 
         :param page_info: The page_info of this ListAllFunctionsResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -69,7 +69,7 @@ class ListAllFunctionsResponse(SdkResponse):
 
     @property
     def functions(self):
-        """Gets the functions of this ListAllFunctionsResponse.
+        r"""Gets the functions of this ListAllFunctionsResponse.
 
         :return: The functions of this ListAllFunctionsResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Function`]
@@ -78,7 +78,7 @@ class ListAllFunctionsResponse(SdkResponse):
 
     @functions.setter
     def functions(self, functions):
-        """Sets the functions of this ListAllFunctionsResponse.
+        r"""Sets the functions of this ListAllFunctionsResponse.
 
         :param functions: The functions of this ListAllFunctionsResponse.
         :type functions: list[:class:`huaweicloudsdklakeformation.v1.Function`]

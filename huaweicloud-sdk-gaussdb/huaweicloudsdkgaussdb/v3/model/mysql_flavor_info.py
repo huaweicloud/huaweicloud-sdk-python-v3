@@ -27,7 +27,7 @@ class MysqlFlavorInfo:
     }
 
     def __init__(self, vcpus=None, ram=None):
-        """MysqlFlavorInfo
+        r"""MysqlFlavorInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MysqlFlavorInfo:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this MysqlFlavorInfo.
+        r"""Gets the vcpus of this MysqlFlavorInfo.
 
         CPU核数。
 
@@ -59,7 +59,7 @@ class MysqlFlavorInfo:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this MysqlFlavorInfo.
+        r"""Sets the vcpus of this MysqlFlavorInfo.
 
         CPU核数。
 
@@ -70,7 +70,7 @@ class MysqlFlavorInfo:
 
     @property
     def ram(self):
-        """Gets the ram of this MysqlFlavorInfo.
+        r"""Gets the ram of this MysqlFlavorInfo.
 
         内存大小，单位GB。
 
@@ -81,7 +81,7 @@ class MysqlFlavorInfo:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this MysqlFlavorInfo.
+        r"""Sets the ram of this MysqlFlavorInfo.
 
         内存大小，单位GB。
 

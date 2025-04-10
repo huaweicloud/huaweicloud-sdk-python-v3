@@ -27,7 +27,7 @@ class ShowJobRequest:
     }
 
     def __init__(self, graph_id=None, job_id=None):
-        """ShowJobRequest
+        r"""ShowJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowJobRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ShowJobRequest.
+        r"""Gets the graph_id of this ShowJobRequest.
 
         图ID。
 
@@ -59,7 +59,7 @@ class ShowJobRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ShowJobRequest.
+        r"""Sets the graph_id of this ShowJobRequest.
 
         图ID。
 
@@ -70,7 +70,7 @@ class ShowJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobRequest.
+        r"""Gets the job_id of this ShowJobRequest.
 
         Job ID。
 
@@ -81,7 +81,7 @@ class ShowJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobRequest.
+        r"""Sets the job_id of this ShowJobRequest.
 
         Job ID。
 

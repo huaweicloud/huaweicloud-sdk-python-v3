@@ -25,7 +25,7 @@ class UpdateTagForProtectedIpRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTagForProtectedIpRequest
+        r"""UpdateTagForProtectedIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTagForProtectedIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTagForProtectedIpRequest.
+        r"""Gets the body of this UpdateTagForProtectedIpRequest.
 
         :return: The body of this UpdateTagForProtectedIpRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.UpdateProtectedIpBody`
@@ -52,7 +52,7 @@ class UpdateTagForProtectedIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTagForProtectedIpRequest.
+        r"""Sets the body of this UpdateTagForProtectedIpRequest.
 
         :param body: The body of this UpdateTagForProtectedIpRequest.
         :type body: :class:`huaweicloudsdkaad.v1.UpdateProtectedIpBody`

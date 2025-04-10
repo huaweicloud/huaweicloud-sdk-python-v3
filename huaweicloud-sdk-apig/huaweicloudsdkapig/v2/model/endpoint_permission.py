@@ -29,7 +29,7 @@ class EndpointPermission:
     }
 
     def __init__(self, id=None, permission=None, created_at=None):
-        """EndpointPermission
+        r"""EndpointPermission
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EndpointPermission:
 
     @property
     def id(self):
-        """Gets the id of this EndpointPermission.
+        r"""Gets the id of this EndpointPermission.
 
         记录编号
 
@@ -65,7 +65,7 @@ class EndpointPermission:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointPermission.
+        r"""Sets the id of this EndpointPermission.
 
         记录编号
 
@@ -76,7 +76,7 @@ class EndpointPermission:
 
     @property
     def permission(self):
-        """Gets the permission of this EndpointPermission.
+        r"""Gets the permission of this EndpointPermission.
 
         权限规则
 
@@ -87,7 +87,7 @@ class EndpointPermission:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this EndpointPermission.
+        r"""Sets the permission of this EndpointPermission.
 
         权限规则
 
@@ -98,7 +98,7 @@ class EndpointPermission:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointPermission.
+        r"""Gets the created_at of this EndpointPermission.
 
         创建时间
 
@@ -109,7 +109,7 @@ class EndpointPermission:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointPermission.
+        r"""Sets the created_at of this EndpointPermission.
 
         创建时间
 

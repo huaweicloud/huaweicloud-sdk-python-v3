@@ -26,7 +26,7 @@ class DeleteServiceItemResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteServiceItemResponse
+        r"""DeleteServiceItemResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteServiceItemResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteServiceItemResponse.
+        r"""Gets the data of this DeleteServiceItemResponse.
 
         :return: The data of this DeleteServiceItemResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemResponseBodyData`
@@ -53,7 +53,7 @@ class DeleteServiceItemResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteServiceItemResponse.
+        r"""Sets the data of this DeleteServiceItemResponse.
 
         :param data: The data of this DeleteServiceItemResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemResponseBodyData`

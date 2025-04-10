@@ -31,7 +31,7 @@ class EnvInfo:
     }
 
     def __init__(self, create_time=None, name=None, remark=None, id=None):
-        """EnvInfo
+        r"""EnvInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EnvInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EnvInfo.
+        r"""Gets the create_time of this EnvInfo.
 
         创建时间
 
@@ -75,7 +75,7 @@ class EnvInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EnvInfo.
+        r"""Sets the create_time of this EnvInfo.
 
         创建时间
 
@@ -86,7 +86,7 @@ class EnvInfo:
 
     @property
     def name(self):
-        """Gets the name of this EnvInfo.
+        r"""Gets the name of this EnvInfo.
 
         环境名称
 
@@ -97,7 +97,7 @@ class EnvInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvInfo.
+        r"""Sets the name of this EnvInfo.
 
         环境名称
 
@@ -108,7 +108,7 @@ class EnvInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this EnvInfo.
+        r"""Gets the remark of this EnvInfo.
 
         描述信息
 
@@ -119,7 +119,7 @@ class EnvInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this EnvInfo.
+        r"""Sets the remark of this EnvInfo.
 
         描述信息
 
@@ -130,7 +130,7 @@ class EnvInfo:
 
     @property
     def id(self):
-        """Gets the id of this EnvInfo.
+        r"""Gets the id of this EnvInfo.
 
         环境编号
 
@@ -141,7 +141,7 @@ class EnvInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvInfo.
+        r"""Sets the id of this EnvInfo.
 
         环境编号
 

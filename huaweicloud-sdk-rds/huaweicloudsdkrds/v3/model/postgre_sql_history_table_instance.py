@@ -31,7 +31,7 @@ class PostgreSQLHistoryTableInstance:
     }
 
     def __init__(self, id=None, name=None, total_tables=None, databases=None):
-        """PostgreSQLHistoryTableInstance
+        r"""PostgreSQLHistoryTableInstance
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PostgreSQLHistoryTableInstance:
 
     @property
     def id(self):
-        """Gets the id of this PostgreSQLHistoryTableInstance.
+        r"""Gets the id of this PostgreSQLHistoryTableInstance.
 
         实例ID
 
@@ -75,7 +75,7 @@ class PostgreSQLHistoryTableInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PostgreSQLHistoryTableInstance.
+        r"""Sets the id of this PostgreSQLHistoryTableInstance.
 
         实例ID
 
@@ -86,7 +86,7 @@ class PostgreSQLHistoryTableInstance:
 
     @property
     def name(self):
-        """Gets the name of this PostgreSQLHistoryTableInstance.
+        r"""Gets the name of this PostgreSQLHistoryTableInstance.
 
         实例名称
 
@@ -97,7 +97,7 @@ class PostgreSQLHistoryTableInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgreSQLHistoryTableInstance.
+        r"""Sets the name of this PostgreSQLHistoryTableInstance.
 
         实例名称
 
@@ -108,7 +108,7 @@ class PostgreSQLHistoryTableInstance:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this PostgreSQLHistoryTableInstance.
+        r"""Gets the total_tables of this PostgreSQLHistoryTableInstance.
 
         可恢复表的数量
 
@@ -119,7 +119,7 @@ class PostgreSQLHistoryTableInstance:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this PostgreSQLHistoryTableInstance.
+        r"""Sets the total_tables of this PostgreSQLHistoryTableInstance.
 
         可恢复表的数量
 
@@ -130,7 +130,7 @@ class PostgreSQLHistoryTableInstance:
 
     @property
     def databases(self):
-        """Gets the databases of this PostgreSQLHistoryTableInstance.
+        r"""Gets the databases of this PostgreSQLHistoryTableInstance.
 
         数据库信息
 
@@ -141,7 +141,7 @@ class PostgreSQLHistoryTableInstance:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this PostgreSQLHistoryTableInstance.
+        r"""Sets the databases of this PostgreSQLHistoryTableInstance.
 
         数据库信息
 

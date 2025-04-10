@@ -26,7 +26,7 @@ class ShowStorageModeTypeResponse(SdkResponse):
     }
 
     def __init__(self, storage_mode_type=None):
-        """ShowStorageModeTypeResponse
+        r"""ShowStorageModeTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowStorageModeTypeResponse(SdkResponse):
 
     @property
     def storage_mode_type(self):
-        """Gets the storage_mode_type of this ShowStorageModeTypeResponse.
+        r"""Gets the storage_mode_type of this ShowStorageModeTypeResponse.
 
         降冷模式。 取值如下： - WHOLE：整个媒资粒度。 - ORIGIN：原文件粒度。 
 
@@ -55,7 +55,7 @@ class ShowStorageModeTypeResponse(SdkResponse):
 
     @storage_mode_type.setter
     def storage_mode_type(self, storage_mode_type):
-        """Sets the storage_mode_type of this ShowStorageModeTypeResponse.
+        r"""Sets the storage_mode_type of this ShowStorageModeTypeResponse.
 
         降冷模式。 取值如下： - WHOLE：整个媒资粒度。 - ORIGIN：原文件粒度。 
 

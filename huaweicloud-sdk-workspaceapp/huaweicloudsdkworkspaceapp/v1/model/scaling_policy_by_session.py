@@ -27,7 +27,7 @@ class ScalingPolicyBySession:
     }
 
     def __init__(self, session_usage_threshold=None, shrink_after_session_idle_minutes=None):
-        """ScalingPolicyBySession
+        r"""ScalingPolicyBySession
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScalingPolicyBySession:
 
     @property
     def session_usage_threshold(self):
-        """Gets the session_usage_threshold of this ScalingPolicyBySession.
+        r"""Gets the session_usage_threshold of this ScalingPolicyBySession.
 
         分组的总会话使用率(达到改阈值后扩容)。
 
@@ -59,7 +59,7 @@ class ScalingPolicyBySession:
 
     @session_usage_threshold.setter
     def session_usage_threshold(self, session_usage_threshold):
-        """Sets the session_usage_threshold of this ScalingPolicyBySession.
+        r"""Sets the session_usage_threshold of this ScalingPolicyBySession.
 
         分组的总会话使用率(达到改阈值后扩容)。
 
@@ -70,7 +70,7 @@ class ScalingPolicyBySession:
 
     @property
     def shrink_after_session_idle_minutes(self):
-        """Gets the shrink_after_session_idle_minutes of this ScalingPolicyBySession.
+        r"""Gets the shrink_after_session_idle_minutes of this ScalingPolicyBySession.
 
         给定时间内无会话连接的的实例进行释放。
 
@@ -81,7 +81,7 @@ class ScalingPolicyBySession:
 
     @shrink_after_session_idle_minutes.setter
     def shrink_after_session_idle_minutes(self, shrink_after_session_idle_minutes):
-        """Sets the shrink_after_session_idle_minutes of this ScalingPolicyBySession.
+        r"""Sets the shrink_after_session_idle_minutes of this ScalingPolicyBySession.
 
         给定时间内无会话连接的的实例进行释放。
 

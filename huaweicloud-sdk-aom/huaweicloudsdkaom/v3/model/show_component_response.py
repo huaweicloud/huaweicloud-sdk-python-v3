@@ -46,7 +46,7 @@ class ShowComponentResponse(SdkResponse):
     }
 
     def __init__(self, aom_id=None, app_id=None, create_time=None, creator=None, description=None, id=None, modified_time=None, modifier=None, name=None, register_type=None, sub_app_id=None):
-        """ShowComponentResponse
+        r"""ShowComponentResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def aom_id(self):
-        """Gets the aom_id of this ShowComponentResponse.
+        r"""Gets the aom_id of this ShowComponentResponse.
 
         aomId
 
@@ -125,7 +125,7 @@ class ShowComponentResponse(SdkResponse):
 
     @aom_id.setter
     def aom_id(self, aom_id):
-        """Sets the aom_id of this ShowComponentResponse.
+        r"""Sets the aom_id of this ShowComponentResponse.
 
         aomId
 
@@ -136,7 +136,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowComponentResponse.
+        r"""Gets the app_id of this ShowComponentResponse.
 
         应用id
 
@@ -147,7 +147,7 @@ class ShowComponentResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowComponentResponse.
+        r"""Sets the app_id of this ShowComponentResponse.
 
         应用id
 
@@ -158,7 +158,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowComponentResponse.
+        r"""Gets the create_time of this ShowComponentResponse.
 
         创建时间
 
@@ -169,7 +169,7 @@ class ShowComponentResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowComponentResponse.
+        r"""Sets the create_time of this ShowComponentResponse.
 
         创建时间
 
@@ -180,7 +180,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowComponentResponse.
+        r"""Gets the creator of this ShowComponentResponse.
 
         创建者
 
@@ -191,7 +191,7 @@ class ShowComponentResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowComponentResponse.
+        r"""Sets the creator of this ShowComponentResponse.
 
         创建者
 
@@ -202,7 +202,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowComponentResponse.
+        r"""Gets the description of this ShowComponentResponse.
 
         描述
 
@@ -213,7 +213,7 @@ class ShowComponentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowComponentResponse.
+        r"""Sets the description of this ShowComponentResponse.
 
         描述
 
@@ -224,7 +224,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowComponentResponse.
+        r"""Gets the id of this ShowComponentResponse.
 
         组件Id
 
@@ -235,7 +235,7 @@ class ShowComponentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowComponentResponse.
+        r"""Sets the id of this ShowComponentResponse.
 
         组件Id
 
@@ -246,7 +246,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this ShowComponentResponse.
+        r"""Gets the modified_time of this ShowComponentResponse.
 
         修改时间
 
@@ -257,7 +257,7 @@ class ShowComponentResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this ShowComponentResponse.
+        r"""Sets the modified_time of this ShowComponentResponse.
 
         修改时间
 
@@ -268,7 +268,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def modifier(self):
-        """Gets the modifier of this ShowComponentResponse.
+        r"""Gets the modifier of this ShowComponentResponse.
 
         修改者
 
@@ -279,7 +279,7 @@ class ShowComponentResponse(SdkResponse):
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this ShowComponentResponse.
+        r"""Sets the modifier of this ShowComponentResponse.
 
         修改者
 
@@ -290,7 +290,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowComponentResponse.
+        r"""Gets the name of this ShowComponentResponse.
 
         组件名称
 
@@ -301,7 +301,7 @@ class ShowComponentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowComponentResponse.
+        r"""Sets the name of this ShowComponentResponse.
 
         组件名称
 
@@ -312,7 +312,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def register_type(self):
-        """Gets the register_type of this ShowComponentResponse.
+        r"""Gets the register_type of this ShowComponentResponse.
 
         注册方式
 
@@ -323,7 +323,7 @@ class ShowComponentResponse(SdkResponse):
 
     @register_type.setter
     def register_type(self, register_type):
-        """Sets the register_type of this ShowComponentResponse.
+        r"""Sets the register_type of this ShowComponentResponse.
 
         注册方式
 
@@ -334,7 +334,7 @@ class ShowComponentResponse(SdkResponse):
 
     @property
     def sub_app_id(self):
-        """Gets the sub_app_id of this ShowComponentResponse.
+        r"""Gets the sub_app_id of this ShowComponentResponse.
 
         子应用id
 
@@ -345,7 +345,7 @@ class ShowComponentResponse(SdkResponse):
 
     @sub_app_id.setter
     def sub_app_id(self, sub_app_id):
-        """Sets the sub_app_id of this ShowComponentResponse.
+        r"""Sets the sub_app_id of this ShowComponentResponse.
 
         子应用id
 

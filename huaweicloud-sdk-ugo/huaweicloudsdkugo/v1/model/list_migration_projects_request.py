@@ -27,7 +27,7 @@ class ListMigrationProjectsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListMigrationProjectsRequest
+        r"""ListMigrationProjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListMigrationProjectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMigrationProjectsRequest.
+        r"""Gets the offset of this ListMigrationProjectsRequest.
 
         分页查询的偏移量。
 
@@ -61,7 +61,7 @@ class ListMigrationProjectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMigrationProjectsRequest.
+        r"""Sets the offset of this ListMigrationProjectsRequest.
 
         分页查询的偏移量。
 
@@ -72,7 +72,7 @@ class ListMigrationProjectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMigrationProjectsRequest.
+        r"""Gets the limit of this ListMigrationProjectsRequest.
 
         每页显示的条目数量。
 
@@ -83,7 +83,7 @@ class ListMigrationProjectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMigrationProjectsRequest.
+        r"""Sets the limit of this ListMigrationProjectsRequest.
 
         每页显示的条目数量。
 

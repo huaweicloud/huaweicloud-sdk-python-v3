@@ -35,7 +35,7 @@ class ListSignatureKeysV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, precise_search=None):
-        """ListSignatureKeysV2Request
+        r"""ListSignatureKeysV2Request
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListSignatureKeysV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSignatureKeysV2Request.
+        r"""Gets the instance_id of this ListSignatureKeysV2Request.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListSignatureKeysV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSignatureKeysV2Request.
+        r"""Sets the instance_id of this ListSignatureKeysV2Request.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListSignatureKeysV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSignatureKeysV2Request.
+        r"""Gets the offset of this ListSignatureKeysV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -110,7 +110,7 @@ class ListSignatureKeysV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSignatureKeysV2Request.
+        r"""Sets the offset of this ListSignatureKeysV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -121,7 +121,7 @@ class ListSignatureKeysV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSignatureKeysV2Request.
+        r"""Gets the limit of this ListSignatureKeysV2Request.
 
         每页显示的条目数量
 
@@ -132,7 +132,7 @@ class ListSignatureKeysV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSignatureKeysV2Request.
+        r"""Sets the limit of this ListSignatureKeysV2Request.
 
         每页显示的条目数量
 
@@ -143,7 +143,7 @@ class ListSignatureKeysV2Request:
 
     @property
     def id(self):
-        """Gets the id of this ListSignatureKeysV2Request.
+        r"""Gets the id of this ListSignatureKeysV2Request.
 
         签名密钥编号
 
@@ -154,7 +154,7 @@ class ListSignatureKeysV2Request:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSignatureKeysV2Request.
+        r"""Sets the id of this ListSignatureKeysV2Request.
 
         签名密钥编号
 
@@ -165,7 +165,7 @@ class ListSignatureKeysV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListSignatureKeysV2Request.
+        r"""Gets the name of this ListSignatureKeysV2Request.
 
         签名密钥名称
 
@@ -176,7 +176,7 @@ class ListSignatureKeysV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSignatureKeysV2Request.
+        r"""Sets the name of this ListSignatureKeysV2Request.
 
         签名密钥名称
 
@@ -187,7 +187,7 @@ class ListSignatureKeysV2Request:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListSignatureKeysV2Request.
+        r"""Gets the precise_search of this ListSignatureKeysV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前仅支持name。
 
@@ -198,7 +198,7 @@ class ListSignatureKeysV2Request:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListSignatureKeysV2Request.
+        r"""Sets the precise_search of this ListSignatureKeysV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前仅支持name。
 

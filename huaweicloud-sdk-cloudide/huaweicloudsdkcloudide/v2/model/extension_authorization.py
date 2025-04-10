@@ -31,7 +31,7 @@ class ExtensionAuthorization:
     }
 
     def __init__(self, extension_version=None, identifier=None, instance_id=None, status=None):
-        """ExtensionAuthorization
+        r"""ExtensionAuthorization
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ExtensionAuthorization:
 
     @property
     def extension_version(self):
-        """Gets the extension_version of this ExtensionAuthorization.
+        r"""Gets the extension_version of this ExtensionAuthorization.
 
         插件版本
 
@@ -72,7 +72,7 @@ class ExtensionAuthorization:
 
     @extension_version.setter
     def extension_version(self, extension_version):
-        """Sets the extension_version of this ExtensionAuthorization.
+        r"""Sets the extension_version of this ExtensionAuthorization.
 
         插件版本
 
@@ -83,7 +83,7 @@ class ExtensionAuthorization:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ExtensionAuthorization.
+        r"""Gets the identifier of this ExtensionAuthorization.
 
         插件标识(发布者.插件名)
 
@@ -94,7 +94,7 @@ class ExtensionAuthorization:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ExtensionAuthorization.
+        r"""Sets the identifier of this ExtensionAuthorization.
 
         插件标识(发布者.插件名)
 
@@ -105,7 +105,7 @@ class ExtensionAuthorization:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExtensionAuthorization.
+        r"""Gets the instance_id of this ExtensionAuthorization.
 
         CodeArtsIDEOnline实例ID
 
@@ -116,7 +116,7 @@ class ExtensionAuthorization:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExtensionAuthorization.
+        r"""Sets the instance_id of this ExtensionAuthorization.
 
         CodeArtsIDEOnline实例ID
 
@@ -127,7 +127,7 @@ class ExtensionAuthorization:
 
     @property
     def status(self):
-        """Gets the status of this ExtensionAuthorization.
+        r"""Gets the status of this ExtensionAuthorization.
 
         插件状态。 - AGREE 同意 - REJECT 不同意 - UNKNOWN 未知（下次重新询问）
 
@@ -138,7 +138,7 @@ class ExtensionAuthorization:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExtensionAuthorization.
+        r"""Sets the status of this ExtensionAuthorization.
 
         插件状态。 - AGREE 同意 - REJECT 不同意 - UNKNOWN 未知（下次重新询问）
 

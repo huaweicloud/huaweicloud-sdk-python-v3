@@ -38,7 +38,7 @@ class CreateComputingResourceResponse(SdkResponse):
     }
 
     def __init__(self, computing_resource_id=None, computing_resource_name=None, computing_resource_type=None, description=None, cu_count=None, charging_mode=None, created_time=None):
-        """CreateComputingResourceResponse
+        r"""CreateComputingResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def computing_resource_id(self):
-        """Gets the computing_resource_id of this CreateComputingResourceResponse.
+        r"""Gets the computing_resource_id of this CreateComputingResourceResponse.
 
         新增计算资源ID。
 
@@ -97,7 +97,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @computing_resource_id.setter
     def computing_resource_id(self, computing_resource_id):
-        """Sets the computing_resource_id of this CreateComputingResourceResponse.
+        r"""Sets the computing_resource_id of this CreateComputingResourceResponse.
 
         新增计算资源ID。
 
@@ -108,7 +108,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def computing_resource_name(self):
-        """Gets the computing_resource_name of this CreateComputingResourceResponse.
+        r"""Gets the computing_resource_name of this CreateComputingResourceResponse.
 
         新增计算资源名称。
 
@@ -119,7 +119,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @computing_resource_name.setter
     def computing_resource_name(self, computing_resource_name):
-        """Sets the computing_resource_name of this CreateComputingResourceResponse.
+        r"""Sets the computing_resource_name of this CreateComputingResourceResponse.
 
         新增计算资源名称。
 
@@ -130,7 +130,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def computing_resource_type(self):
-        """Gets the computing_resource_type of this CreateComputingResourceResponse.
+        r"""Gets the computing_resource_type of this CreateComputingResourceResponse.
 
         计算资源的类型。目前支持：sql。如果不指定，默认为sql。
 
@@ -141,7 +141,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @computing_resource_type.setter
     def computing_resource_type(self, computing_resource_type):
-        """Sets the computing_resource_type of this CreateComputingResourceResponse.
+        r"""Sets the computing_resource_type of this CreateComputingResourceResponse.
 
         计算资源的类型。目前支持：sql。如果不指定，默认为sql。
 
@@ -152,7 +152,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateComputingResourceResponse.
+        r"""Gets the description of this CreateComputingResourceResponse.
 
         计算资源的描述信息。
 
@@ -163,7 +163,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateComputingResourceResponse.
+        r"""Sets the description of this CreateComputingResourceResponse.
 
         计算资源的描述信息。
 
@@ -174,7 +174,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this CreateComputingResourceResponse.
+        r"""Gets the cu_count of this CreateComputingResourceResponse.
 
         与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
@@ -185,7 +185,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this CreateComputingResourceResponse.
+        r"""Sets the cu_count of this CreateComputingResourceResponse.
 
         与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
@@ -196,7 +196,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateComputingResourceResponse.
+        r"""Gets the charging_mode of this CreateComputingResourceResponse.
 
         计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
 
@@ -207,7 +207,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateComputingResourceResponse.
+        r"""Sets the charging_mode of this CreateComputingResourceResponse.
 
         计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
 
@@ -218,7 +218,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateComputingResourceResponse.
+        r"""Gets the created_time of this CreateComputingResourceResponse.
 
         创建计算资源时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'。
 
@@ -229,7 +229,7 @@ class CreateComputingResourceResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateComputingResourceResponse.
+        r"""Sets the created_time of this CreateComputingResourceResponse.
 
         创建计算资源时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'。
 

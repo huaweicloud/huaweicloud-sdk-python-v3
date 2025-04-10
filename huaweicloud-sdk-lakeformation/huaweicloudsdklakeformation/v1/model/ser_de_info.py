@@ -29,7 +29,7 @@ class SerDeInfo:
     }
 
     def __init__(self, name=None, serialization_library=None, parameters=None):
-        """SerDeInfo
+        r"""SerDeInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SerDeInfo:
 
     @property
     def name(self):
-        """Gets the name of this SerDeInfo.
+        r"""Gets the name of this SerDeInfo.
 
         名字信息
 
@@ -68,7 +68,7 @@ class SerDeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SerDeInfo.
+        r"""Sets the name of this SerDeInfo.
 
         名字信息
 
@@ -79,7 +79,7 @@ class SerDeInfo:
 
     @property
     def serialization_library(self):
-        """Gets the serialization_library of this SerDeInfo.
+        r"""Gets the serialization_library of this SerDeInfo.
 
         实现序列化/反序列化的类
 
@@ -90,7 +90,7 @@ class SerDeInfo:
 
     @serialization_library.setter
     def serialization_library(self, serialization_library):
-        """Sets the serialization_library of this SerDeInfo.
+        r"""Sets the serialization_library of this SerDeInfo.
 
         实现序列化/反序列化的类
 
@@ -101,7 +101,7 @@ class SerDeInfo:
 
     @property
     def parameters(self):
-        """Gets the parameters of this SerDeInfo.
+        r"""Gets the parameters of this SerDeInfo.
 
         参数数组。 key最小值1，最大值255 value最大值4000
 
@@ -112,7 +112,7 @@ class SerDeInfo:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this SerDeInfo.
+        r"""Sets the parameters of this SerDeInfo.
 
         参数数组。 key最小值1，最大值255 value最大值4000
 

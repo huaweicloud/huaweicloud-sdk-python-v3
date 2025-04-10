@@ -26,7 +26,7 @@ class AssociateAppsForAppQuotaResponse(SdkResponse):
     }
 
     def __init__(self, applies=None):
-        """AssociateAppsForAppQuotaResponse
+        r"""AssociateAppsForAppQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateAppsForAppQuotaResponse(SdkResponse):
 
     @property
     def applies(self):
-        """Gets the applies of this AssociateAppsForAppQuotaResponse.
+        r"""Gets the applies of this AssociateAppsForAppQuotaResponse.
 
         凭据与凭据配额绑定列表
 
@@ -55,7 +55,7 @@ class AssociateAppsForAppQuotaResponse(SdkResponse):
 
     @applies.setter
     def applies(self, applies):
-        """Sets the applies of this AssociateAppsForAppQuotaResponse.
+        r"""Sets the applies of this AssociateAppsForAppQuotaResponse.
 
         凭据与凭据配额绑定列表
 

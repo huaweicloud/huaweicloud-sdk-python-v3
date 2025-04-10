@@ -29,7 +29,7 @@ class UpdateDeviceTwinRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_id=None, body=None):
-        """UpdateDeviceTwinRequest
+        r"""UpdateDeviceTwinRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDeviceTwinRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateDeviceTwinRequest.
+        r"""Gets the ief_instance_id of this UpdateDeviceTwinRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateDeviceTwinRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateDeviceTwinRequest.
+        r"""Sets the ief_instance_id of this UpdateDeviceTwinRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateDeviceTwinRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateDeviceTwinRequest.
+        r"""Gets the device_id of this UpdateDeviceTwinRequest.
 
         设备ID
 
@@ -89,7 +89,7 @@ class UpdateDeviceTwinRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateDeviceTwinRequest.
+        r"""Sets the device_id of this UpdateDeviceTwinRequest.
 
         设备ID
 
@@ -100,7 +100,7 @@ class UpdateDeviceTwinRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceTwinRequest.
+        r"""Gets the body of this UpdateDeviceTwinRequest.
 
         :return: The body of this UpdateDeviceTwinRequest.
         :rtype: :class:`huaweicloudsdkief.v1.TwinUpdateDetail`
@@ -109,7 +109,7 @@ class UpdateDeviceTwinRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceTwinRequest.
+        r"""Sets the body of this UpdateDeviceTwinRequest.
 
         :param body: The body of this UpdateDeviceTwinRequest.
         :type body: :class:`huaweicloudsdkief.v1.TwinUpdateDetail`

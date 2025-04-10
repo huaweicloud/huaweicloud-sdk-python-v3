@@ -25,7 +25,7 @@ class DeleteTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteTemplateRequest
+        r"""DeleteTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTemplateRequest.
+        r"""Gets the body of this DeleteTemplateRequest.
 
         :return: The body of this DeleteTemplateRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteTemplateReq`
@@ -52,7 +52,7 @@ class DeleteTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTemplateRequest.
+        r"""Sets the body of this DeleteTemplateRequest.
 
         :param body: The body of this DeleteTemplateRequest.
         :type body: :class:`huaweicloudsdkcss.v1.DeleteTemplateReq`

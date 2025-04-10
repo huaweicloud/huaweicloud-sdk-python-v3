@@ -39,7 +39,7 @@ class ListWafAttackEventlist:
     }
 
     def __init__(self, id=None, domain=None, time=None, sip=None, action=None, url=None, type=None, backend=None):
-        """ListWafAttackEventlist
+        r"""ListWafAttackEventlist
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListWafAttackEventlist:
 
     @property
     def id(self):
-        """Gets the id of this ListWafAttackEventlist.
+        r"""Gets the id of this ListWafAttackEventlist.
 
         id
 
@@ -103,7 +103,7 @@ class ListWafAttackEventlist:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListWafAttackEventlist.
+        r"""Sets the id of this ListWafAttackEventlist.
 
         id
 
@@ -114,7 +114,7 @@ class ListWafAttackEventlist:
 
     @property
     def domain(self):
-        """Gets the domain of this ListWafAttackEventlist.
+        r"""Gets the domain of this ListWafAttackEventlist.
 
         攻击目标域名
 
@@ -125,7 +125,7 @@ class ListWafAttackEventlist:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListWafAttackEventlist.
+        r"""Sets the domain of this ListWafAttackEventlist.
 
         攻击目标域名
 
@@ -136,7 +136,7 @@ class ListWafAttackEventlist:
 
     @property
     def time(self):
-        """Gets the time of this ListWafAttackEventlist.
+        r"""Gets the time of this ListWafAttackEventlist.
 
         攻击时间
 
@@ -147,7 +147,7 @@ class ListWafAttackEventlist:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListWafAttackEventlist.
+        r"""Sets the time of this ListWafAttackEventlist.
 
         攻击时间
 
@@ -158,7 +158,7 @@ class ListWafAttackEventlist:
 
     @property
     def sip(self):
-        """Gets the sip of this ListWafAttackEventlist.
+        r"""Gets the sip of this ListWafAttackEventlist.
 
         攻击源IP
 
@@ -169,7 +169,7 @@ class ListWafAttackEventlist:
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this ListWafAttackEventlist.
+        r"""Sets the sip of this ListWafAttackEventlist.
 
         攻击源IP
 
@@ -180,7 +180,7 @@ class ListWafAttackEventlist:
 
     @property
     def action(self):
-        """Gets the action of this ListWafAttackEventlist.
+        r"""Gets the action of this ListWafAttackEventlist.
 
         防御动作
 
@@ -191,7 +191,7 @@ class ListWafAttackEventlist:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListWafAttackEventlist.
+        r"""Sets the action of this ListWafAttackEventlist.
 
         防御动作
 
@@ -202,7 +202,7 @@ class ListWafAttackEventlist:
 
     @property
     def url(self):
-        """Gets the url of this ListWafAttackEventlist.
+        r"""Gets the url of this ListWafAttackEventlist.
 
         攻击url
 
@@ -213,7 +213,7 @@ class ListWafAttackEventlist:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ListWafAttackEventlist.
+        r"""Sets the url of this ListWafAttackEventlist.
 
         攻击url
 
@@ -224,7 +224,7 @@ class ListWafAttackEventlist:
 
     @property
     def type(self):
-        """Gets the type of this ListWafAttackEventlist.
+        r"""Gets the type of this ListWafAttackEventlist.
 
         攻击类型
 
@@ -235,7 +235,7 @@ class ListWafAttackEventlist:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListWafAttackEventlist.
+        r"""Sets the type of this ListWafAttackEventlist.
 
         攻击类型
 
@@ -246,7 +246,7 @@ class ListWafAttackEventlist:
 
     @property
     def backend(self):
-        """Gets the backend of this ListWafAttackEventlist.
+        r"""Gets the backend of this ListWafAttackEventlist.
 
         :return: The backend of this ListWafAttackEventlist.
         :rtype: :class:`huaweicloudsdkaad.v2.Backend`
@@ -255,7 +255,7 @@ class ListWafAttackEventlist:
 
     @backend.setter
     def backend(self, backend):
-        """Sets the backend of this ListWafAttackEventlist.
+        r"""Sets the backend of this ListWafAttackEventlist.
 
         :param backend: The backend of this ListWafAttackEventlist.
         :type backend: :class:`huaweicloudsdkaad.v2.Backend`

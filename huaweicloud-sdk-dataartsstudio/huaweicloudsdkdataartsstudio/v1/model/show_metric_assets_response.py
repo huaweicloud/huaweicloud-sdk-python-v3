@@ -30,7 +30,7 @@ class ShowMetricAssetsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, entities=None, scroll_id=None):
-        """ShowMetricAssetsResponse
+        r"""ShowMetricAssetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMetricAssetsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowMetricAssetsResponse.
+        r"""Gets the count of this ShowMetricAssetsResponse.
 
         指标资产总数
 
@@ -69,7 +69,7 @@ class ShowMetricAssetsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowMetricAssetsResponse.
+        r"""Sets the count of this ShowMetricAssetsResponse.
 
         指标资产总数
 
@@ -80,7 +80,7 @@ class ShowMetricAssetsResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowMetricAssetsResponse.
+        r"""Gets the entities of this ShowMetricAssetsResponse.
 
         指标资产列表
 
@@ -91,7 +91,7 @@ class ShowMetricAssetsResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowMetricAssetsResponse.
+        r"""Sets the entities of this ShowMetricAssetsResponse.
 
         指标资产列表
 
@@ -102,7 +102,7 @@ class ShowMetricAssetsResponse(SdkResponse):
 
     @property
     def scroll_id(self):
-        """Gets the scroll_id of this ShowMetricAssetsResponse.
+        r"""Gets the scroll_id of this ShowMetricAssetsResponse.
 
         scroll_id
 
@@ -113,7 +113,7 @@ class ShowMetricAssetsResponse(SdkResponse):
 
     @scroll_id.setter
     def scroll_id(self, scroll_id):
-        """Sets the scroll_id of this ShowMetricAssetsResponse.
+        r"""Sets the scroll_id of this ShowMetricAssetsResponse.
 
         scroll_id
 

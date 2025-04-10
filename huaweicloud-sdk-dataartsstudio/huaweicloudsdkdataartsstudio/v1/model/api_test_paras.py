@@ -27,7 +27,7 @@ class ApiTestParas:
     }
 
     def __init__(self, page_size=None, page_num=None):
-        """ApiTestParas
+        r"""ApiTestParas
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiTestParas:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ApiTestParas.
+        r"""Gets the page_size of this ApiTestParas.
 
         page size
 
@@ -61,7 +61,7 @@ class ApiTestParas:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ApiTestParas.
+        r"""Sets the page_size of this ApiTestParas.
 
         page size
 
@@ -72,7 +72,7 @@ class ApiTestParas:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ApiTestParas.
+        r"""Gets the page_num of this ApiTestParas.
 
         page num
 
@@ -83,7 +83,7 @@ class ApiTestParas:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ApiTestParas.
+        r"""Sets the page_num of this ApiTestParas.
 
         page num
 

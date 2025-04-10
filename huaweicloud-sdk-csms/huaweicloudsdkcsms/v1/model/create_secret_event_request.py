@@ -25,7 +25,7 @@ class CreateSecretEventRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSecretEventRequest
+        r"""CreateSecretEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSecretEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecretEventRequest.
+        r"""Gets the body of this CreateSecretEventRequest.
 
         :return: The body of this CreateSecretEventRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretEventRequestBody`
@@ -52,7 +52,7 @@ class CreateSecretEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecretEventRequest.
+        r"""Sets the body of this CreateSecretEventRequest.
 
         :param body: The body of this CreateSecretEventRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.CreateSecretEventRequestBody`

@@ -25,7 +25,7 @@ class BatchExportPrivateKeyRequest:
     }
 
     def __init__(self, body=None):
-        """BatchExportPrivateKeyRequest
+        r"""BatchExportPrivateKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchExportPrivateKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchExportPrivateKeyRequest.
+        r"""Gets the body of this BatchExportPrivateKeyRequest.
 
         :return: The body of this BatchExportPrivateKeyRequest.
         :rtype: list[:class:`huaweicloudsdkkps.v3.Keypairs`]
@@ -52,7 +52,7 @@ class BatchExportPrivateKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchExportPrivateKeyRequest.
+        r"""Sets the body of this BatchExportPrivateKeyRequest.
 
         :param body: The body of this BatchExportPrivateKeyRequest.
         :type body: list[:class:`huaweicloudsdkkps.v3.Keypairs`]

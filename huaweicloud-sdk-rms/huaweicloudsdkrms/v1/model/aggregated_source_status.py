@@ -35,7 +35,7 @@ class AggregatedSourceStatus:
     }
 
     def __init__(self, last_error_code=None, last_error_message=None, last_update_status=None, last_update_time=None, source_id=None, source_type=None):
-        """AggregatedSourceStatus
+        r"""AggregatedSourceStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AggregatedSourceStatus:
 
     @property
     def last_error_code(self):
-        """Gets the last_error_code of this AggregatedSourceStatus.
+        r"""Gets the last_error_code of this AggregatedSourceStatus.
 
         源帐号最近一次聚合失败时返回的错误码。
 
@@ -89,7 +89,7 @@ class AggregatedSourceStatus:
 
     @last_error_code.setter
     def last_error_code(self, last_error_code):
-        """Sets the last_error_code of this AggregatedSourceStatus.
+        r"""Sets the last_error_code of this AggregatedSourceStatus.
 
         源帐号最近一次聚合失败时返回的错误码。
 
@@ -100,7 +100,7 @@ class AggregatedSourceStatus:
 
     @property
     def last_error_message(self):
-        """Gets the last_error_message of this AggregatedSourceStatus.
+        r"""Gets the last_error_message of this AggregatedSourceStatus.
 
         源帐号最近一次聚合失败时返回的错误消息。
 
@@ -111,7 +111,7 @@ class AggregatedSourceStatus:
 
     @last_error_message.setter
     def last_error_message(self, last_error_message):
-        """Sets the last_error_message of this AggregatedSourceStatus.
+        r"""Sets the last_error_message of this AggregatedSourceStatus.
 
         源帐号最近一次聚合失败时返回的错误消息。
 
@@ -122,7 +122,7 @@ class AggregatedSourceStatus:
 
     @property
     def last_update_status(self):
-        """Gets the last_update_status of this AggregatedSourceStatus.
+        r"""Gets the last_update_status of this AggregatedSourceStatus.
 
         最近一次更新的状态类型。
 
@@ -133,7 +133,7 @@ class AggregatedSourceStatus:
 
     @last_update_status.setter
     def last_update_status(self, last_update_status):
-        """Sets the last_update_status of this AggregatedSourceStatus.
+        r"""Sets the last_update_status of this AggregatedSourceStatus.
 
         最近一次更新的状态类型。
 
@@ -144,7 +144,7 @@ class AggregatedSourceStatus:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this AggregatedSourceStatus.
+        r"""Gets the last_update_time of this AggregatedSourceStatus.
 
         最近一次更新的时间。
 
@@ -155,7 +155,7 @@ class AggregatedSourceStatus:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this AggregatedSourceStatus.
+        r"""Sets the last_update_time of this AggregatedSourceStatus.
 
         最近一次更新的时间。
 
@@ -166,7 +166,7 @@ class AggregatedSourceStatus:
 
     @property
     def source_id(self):
-        """Gets the source_id of this AggregatedSourceStatus.
+        r"""Gets the source_id of this AggregatedSourceStatus.
 
         源帐号ID或组织。
 
@@ -177,7 +177,7 @@ class AggregatedSourceStatus:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this AggregatedSourceStatus.
+        r"""Sets the source_id of this AggregatedSourceStatus.
 
         源帐号ID或组织。
 
@@ -188,7 +188,7 @@ class AggregatedSourceStatus:
 
     @property
     def source_type(self):
-        """Gets the source_type of this AggregatedSourceStatus.
+        r"""Gets the source_type of this AggregatedSourceStatus.
 
         源帐号类型（ACCOUNT | ORGANIZATION）。
 
@@ -199,7 +199,7 @@ class AggregatedSourceStatus:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this AggregatedSourceStatus.
+        r"""Sets the source_type of this AggregatedSourceStatus.
 
         源帐号类型（ACCOUNT | ORGANIZATION）。
 

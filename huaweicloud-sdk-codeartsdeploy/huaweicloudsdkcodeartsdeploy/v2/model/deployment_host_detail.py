@@ -73,7 +73,7 @@ class DeploymentHostDetail:
     }
 
     def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None, host_id=None, proxy_host=None, group_name=None, project_id=None, project_name=None, permission=None, update_time=None, lastest_connection_time=None, connection_status=None, owner_name=None, updator_id=None, create_time=None, nick_name=None, owner_id=None, updator_name=None, connection_result=None):
-        """DeploymentHostDetail
+        r"""DeploymentHostDetail
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class DeploymentHostDetail:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeploymentHostDetail.
+        r"""Gets the group_id of this DeploymentHostDetail.
 
         主机集群id
 
@@ -215,7 +215,7 @@ class DeploymentHostDetail:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeploymentHostDetail.
+        r"""Sets the group_id of this DeploymentHostDetail.
 
         主机集群id
 
@@ -226,7 +226,7 @@ class DeploymentHostDetail:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DeploymentHostDetail.
+        r"""Gets the host_name of this DeploymentHostDetail.
 
         主机名称
 
@@ -237,7 +237,7 @@ class DeploymentHostDetail:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DeploymentHostDetail.
+        r"""Sets the host_name of this DeploymentHostDetail.
 
         主机名称
 
@@ -248,7 +248,7 @@ class DeploymentHostDetail:
 
     @property
     def ip(self):
-        """Gets the ip of this DeploymentHostDetail.
+        r"""Gets the ip of this DeploymentHostDetail.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -259,7 +259,7 @@ class DeploymentHostDetail:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DeploymentHostDetail.
+        r"""Sets the ip of this DeploymentHostDetail.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -270,7 +270,7 @@ class DeploymentHostDetail:
 
     @property
     def port(self):
-        """Gets the port of this DeploymentHostDetail.
+        r"""Gets the port of this DeploymentHostDetail.
 
         ssh端口，如：22
 
@@ -281,7 +281,7 @@ class DeploymentHostDetail:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DeploymentHostDetail.
+        r"""Sets the port of this DeploymentHostDetail.
 
         ssh端口，如：22
 
@@ -292,7 +292,7 @@ class DeploymentHostDetail:
 
     @property
     def os(self):
-        """Gets the os of this DeploymentHostDetail.
+        r"""Gets the os of this DeploymentHostDetail.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -303,7 +303,7 @@ class DeploymentHostDetail:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this DeploymentHostDetail.
+        r"""Sets the os of this DeploymentHostDetail.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -314,7 +314,7 @@ class DeploymentHostDetail:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this DeploymentHostDetail.
+        r"""Gets the as_proxy of this DeploymentHostDetail.
 
         是否为代理机
 
@@ -325,7 +325,7 @@ class DeploymentHostDetail:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this DeploymentHostDetail.
+        r"""Sets the as_proxy of this DeploymentHostDetail.
 
         是否为代理机
 
@@ -336,7 +336,7 @@ class DeploymentHostDetail:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this DeploymentHostDetail.
+        r"""Gets the proxy_host_id of this DeploymentHostDetail.
 
         代理机id
 
@@ -347,7 +347,7 @@ class DeploymentHostDetail:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this DeploymentHostDetail.
+        r"""Sets the proxy_host_id of this DeploymentHostDetail.
 
         代理机id
 
@@ -358,7 +358,7 @@ class DeploymentHostDetail:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeploymentHostDetail.
+        r"""Gets the authorization of this DeploymentHostDetail.
 
         :return: The authorization of this DeploymentHostDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -367,7 +367,7 @@ class DeploymentHostDetail:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeploymentHostDetail.
+        r"""Sets the authorization of this DeploymentHostDetail.
 
         :param authorization: The authorization of this DeploymentHostDetail.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -376,7 +376,7 @@ class DeploymentHostDetail:
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this DeploymentHostDetail.
+        r"""Gets the install_icagent of this DeploymentHostDetail.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -387,7 +387,7 @@ class DeploymentHostDetail:
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this DeploymentHostDetail.
+        r"""Sets the install_icagent of this DeploymentHostDetail.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -398,7 +398,7 @@ class DeploymentHostDetail:
 
     @property
     def host_id(self):
-        """Gets the host_id of this DeploymentHostDetail.
+        r"""Gets the host_id of this DeploymentHostDetail.
 
         主机id
 
@@ -409,7 +409,7 @@ class DeploymentHostDetail:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DeploymentHostDetail.
+        r"""Sets the host_id of this DeploymentHostDetail.
 
         主机id
 
@@ -420,7 +420,7 @@ class DeploymentHostDetail:
 
     @property
     def proxy_host(self):
-        """Gets the proxy_host of this DeploymentHostDetail.
+        r"""Gets the proxy_host of this DeploymentHostDetail.
 
         :return: The proxy_host of this DeploymentHostDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
@@ -429,7 +429,7 @@ class DeploymentHostDetail:
 
     @proxy_host.setter
     def proxy_host(self, proxy_host):
-        """Sets the proxy_host of this DeploymentHostDetail.
+        r"""Sets the proxy_host of this DeploymentHostDetail.
 
         :param proxy_host: The proxy_host of this DeploymentHostDetail.
         :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
@@ -438,7 +438,7 @@ class DeploymentHostDetail:
 
     @property
     def group_name(self):
-        """Gets the group_name of this DeploymentHostDetail.
+        r"""Gets the group_name of this DeploymentHostDetail.
 
         主机集群名
 
@@ -449,7 +449,7 @@ class DeploymentHostDetail:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this DeploymentHostDetail.
+        r"""Sets the group_name of this DeploymentHostDetail.
 
         主机集群名
 
@@ -460,7 +460,7 @@ class DeploymentHostDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeploymentHostDetail.
+        r"""Gets the project_id of this DeploymentHostDetail.
 
         项目id
 
@@ -471,7 +471,7 @@ class DeploymentHostDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeploymentHostDetail.
+        r"""Sets the project_id of this DeploymentHostDetail.
 
         项目id
 
@@ -482,7 +482,7 @@ class DeploymentHostDetail:
 
     @property
     def project_name(self):
-        """Gets the project_name of this DeploymentHostDetail.
+        r"""Gets the project_name of this DeploymentHostDetail.
 
         项目名称
 
@@ -493,7 +493,7 @@ class DeploymentHostDetail:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this DeploymentHostDetail.
+        r"""Sets the project_name of this DeploymentHostDetail.
 
         项目名称
 
@@ -504,7 +504,7 @@ class DeploymentHostDetail:
 
     @property
     def permission(self):
-        """Gets the permission of this DeploymentHostDetail.
+        r"""Gets the permission of this DeploymentHostDetail.
 
         :return: The permission of this DeploymentHostDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
@@ -513,7 +513,7 @@ class DeploymentHostDetail:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this DeploymentHostDetail.
+        r"""Sets the permission of this DeploymentHostDetail.
 
         :param permission: The permission of this DeploymentHostDetail.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
@@ -522,7 +522,7 @@ class DeploymentHostDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DeploymentHostDetail.
+        r"""Gets the update_time of this DeploymentHostDetail.
 
         更新时间
 
@@ -533,7 +533,7 @@ class DeploymentHostDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DeploymentHostDetail.
+        r"""Sets the update_time of this DeploymentHostDetail.
 
         更新时间
 
@@ -544,7 +544,7 @@ class DeploymentHostDetail:
 
     @property
     def lastest_connection_time(self):
-        """Gets the lastest_connection_time of this DeploymentHostDetail.
+        r"""Gets the lastest_connection_time of this DeploymentHostDetail.
 
         最后连接时间
 
@@ -555,7 +555,7 @@ class DeploymentHostDetail:
 
     @lastest_connection_time.setter
     def lastest_connection_time(self, lastest_connection_time):
-        """Sets the lastest_connection_time of this DeploymentHostDetail.
+        r"""Sets the lastest_connection_time of this DeploymentHostDetail.
 
         最后连接时间
 
@@ -566,7 +566,7 @@ class DeploymentHostDetail:
 
     @property
     def connection_status(self):
-        """Gets the connection_status of this DeploymentHostDetail.
+        r"""Gets the connection_status of this DeploymentHostDetail.
 
         连接状态
 
@@ -577,7 +577,7 @@ class DeploymentHostDetail:
 
     @connection_status.setter
     def connection_status(self, connection_status):
-        """Sets the connection_status of this DeploymentHostDetail.
+        r"""Sets the connection_status of this DeploymentHostDetail.
 
         连接状态
 
@@ -588,7 +588,7 @@ class DeploymentHostDetail:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this DeploymentHostDetail.
+        r"""Gets the owner_name of this DeploymentHostDetail.
 
         拥有者名称
 
@@ -599,7 +599,7 @@ class DeploymentHostDetail:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this DeploymentHostDetail.
+        r"""Sets the owner_name of this DeploymentHostDetail.
 
         拥有者名称
 
@@ -610,7 +610,7 @@ class DeploymentHostDetail:
 
     @property
     def updator_id(self):
-        """Gets the updator_id of this DeploymentHostDetail.
+        r"""Gets the updator_id of this DeploymentHostDetail.
 
         维护者id
 
@@ -621,7 +621,7 @@ class DeploymentHostDetail:
 
     @updator_id.setter
     def updator_id(self, updator_id):
-        """Sets the updator_id of this DeploymentHostDetail.
+        r"""Sets the updator_id of this DeploymentHostDetail.
 
         维护者id
 
@@ -632,7 +632,7 @@ class DeploymentHostDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DeploymentHostDetail.
+        r"""Gets the create_time of this DeploymentHostDetail.
 
         创建时间
 
@@ -643,7 +643,7 @@ class DeploymentHostDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DeploymentHostDetail.
+        r"""Sets the create_time of this DeploymentHostDetail.
 
         创建时间
 
@@ -654,7 +654,7 @@ class DeploymentHostDetail:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this DeploymentHostDetail.
+        r"""Gets the nick_name of this DeploymentHostDetail.
 
         昵称
 
@@ -665,7 +665,7 @@ class DeploymentHostDetail:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this DeploymentHostDetail.
+        r"""Sets the nick_name of this DeploymentHostDetail.
 
         昵称
 
@@ -676,7 +676,7 @@ class DeploymentHostDetail:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this DeploymentHostDetail.
+        r"""Gets the owner_id of this DeploymentHostDetail.
 
         拥有者id
 
@@ -687,7 +687,7 @@ class DeploymentHostDetail:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this DeploymentHostDetail.
+        r"""Sets the owner_id of this DeploymentHostDetail.
 
         拥有者id
 
@@ -698,7 +698,7 @@ class DeploymentHostDetail:
 
     @property
     def updator_name(self):
-        """Gets the updator_name of this DeploymentHostDetail.
+        r"""Gets the updator_name of this DeploymentHostDetail.
 
         维护者名称
 
@@ -709,7 +709,7 @@ class DeploymentHostDetail:
 
     @updator_name.setter
     def updator_name(self, updator_name):
-        """Sets the updator_name of this DeploymentHostDetail.
+        r"""Sets the updator_name of this DeploymentHostDetail.
 
         维护者名称
 
@@ -720,7 +720,7 @@ class DeploymentHostDetail:
 
     @property
     def connection_result(self):
-        """Gets the connection_result of this DeploymentHostDetail.
+        r"""Gets the connection_result of this DeploymentHostDetail.
 
         连接结果
 
@@ -731,7 +731,7 @@ class DeploymentHostDetail:
 
     @connection_result.setter
     def connection_result(self, connection_result):
-        """Sets the connection_result of this DeploymentHostDetail.
+        r"""Sets the connection_result of this DeploymentHostDetail.
 
         连接结果
 

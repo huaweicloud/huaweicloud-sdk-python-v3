@@ -35,7 +35,7 @@ class JobScriptOrderInfoProp:
     }
 
     def __init__(self, script_uuid=None, script_name=None, script_version_uuid=None, script_version_name=None, current_execute_batch_index=None, execute_param=None):
-        """JobScriptOrderInfoProp
+        r"""JobScriptOrderInfoProp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class JobScriptOrderInfoProp:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this JobScriptOrderInfoProp.
+        r"""Gets the script_uuid of this JobScriptOrderInfoProp.
 
         脚本uuid
 
@@ -89,7 +89,7 @@ class JobScriptOrderInfoProp:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this JobScriptOrderInfoProp.
+        r"""Sets the script_uuid of this JobScriptOrderInfoProp.
 
         脚本uuid
 
@@ -100,7 +100,7 @@ class JobScriptOrderInfoProp:
 
     @property
     def script_name(self):
-        """Gets the script_name of this JobScriptOrderInfoProp.
+        r"""Gets the script_name of this JobScriptOrderInfoProp.
 
         脚本名称
 
@@ -111,7 +111,7 @@ class JobScriptOrderInfoProp:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this JobScriptOrderInfoProp.
+        r"""Sets the script_name of this JobScriptOrderInfoProp.
 
         脚本名称
 
@@ -122,7 +122,7 @@ class JobScriptOrderInfoProp:
 
     @property
     def script_version_uuid(self):
-        """Gets the script_version_uuid of this JobScriptOrderInfoProp.
+        r"""Gets the script_version_uuid of this JobScriptOrderInfoProp.
 
         脚本版本uuid
 
@@ -133,7 +133,7 @@ class JobScriptOrderInfoProp:
 
     @script_version_uuid.setter
     def script_version_uuid(self, script_version_uuid):
-        """Sets the script_version_uuid of this JobScriptOrderInfoProp.
+        r"""Sets the script_version_uuid of this JobScriptOrderInfoProp.
 
         脚本版本uuid
 
@@ -144,7 +144,7 @@ class JobScriptOrderInfoProp:
 
     @property
     def script_version_name(self):
-        """Gets the script_version_name of this JobScriptOrderInfoProp.
+        r"""Gets the script_version_name of this JobScriptOrderInfoProp.
 
         脚本版本名
 
@@ -155,7 +155,7 @@ class JobScriptOrderInfoProp:
 
     @script_version_name.setter
     def script_version_name(self, script_version_name):
-        """Sets the script_version_name of this JobScriptOrderInfoProp.
+        r"""Sets the script_version_name of this JobScriptOrderInfoProp.
 
         脚本版本名
 
@@ -166,7 +166,7 @@ class JobScriptOrderInfoProp:
 
     @property
     def current_execute_batch_index(self):
-        """Gets the current_execute_batch_index of this JobScriptOrderInfoProp.
+        r"""Gets the current_execute_batch_index of this JobScriptOrderInfoProp.
 
         当前执行批次index
 
@@ -177,7 +177,7 @@ class JobScriptOrderInfoProp:
 
     @current_execute_batch_index.setter
     def current_execute_batch_index(self, current_execute_batch_index):
-        """Sets the current_execute_batch_index of this JobScriptOrderInfoProp.
+        r"""Sets the current_execute_batch_index of this JobScriptOrderInfoProp.
 
         当前执行批次index
 
@@ -188,7 +188,7 @@ class JobScriptOrderInfoProp:
 
     @property
     def execute_param(self):
-        """Gets the execute_param of this JobScriptOrderInfoProp.
+        r"""Gets the execute_param of this JobScriptOrderInfoProp.
 
         :return: The execute_param of this JobScriptOrderInfoProp.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptExecuteParam`
@@ -197,7 +197,7 @@ class JobScriptOrderInfoProp:
 
     @execute_param.setter
     def execute_param(self, execute_param):
-        """Sets the execute_param of this JobScriptOrderInfoProp.
+        r"""Sets the execute_param of this JobScriptOrderInfoProp.
 
         :param execute_param: The execute_param of this JobScriptOrderInfoProp.
         :type execute_param: :class:`huaweicloudsdkcoc.v1.ScriptExecuteParam`

@@ -28,7 +28,7 @@ class ListTenantServerGroupsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListTenantServerGroupsResponse
+        r"""ListTenantServerGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTenantServerGroupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTenantServerGroupsResponse.
+        r"""Gets the count of this ListTenantServerGroupsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListTenantServerGroupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTenantServerGroupsResponse.
+        r"""Sets the count of this ListTenantServerGroupsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListTenantServerGroupsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListTenantServerGroupsResponse.
+        r"""Gets the items of this ListTenantServerGroupsResponse.
 
         服务器组列表。
 
@@ -84,7 +84,7 @@ class ListTenantServerGroupsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListTenantServerGroupsResponse.
+        r"""Sets the items of this ListTenantServerGroupsResponse.
 
         服务器组列表。
 

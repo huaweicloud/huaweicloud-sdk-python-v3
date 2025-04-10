@@ -27,7 +27,7 @@ class Storage:
     }
 
     def __init__(self, storage_handle=None, storage_class=None):
-        """Storage
+        r"""Storage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Storage:
 
     @property
     def storage_handle(self):
-        """Gets the storage_handle of this Storage.
+        r"""Gets the storage_handle of this Storage.
 
         SFS文件系统名称。
 
@@ -59,7 +59,7 @@ class Storage:
 
     @storage_handle.setter
     def storage_handle(self, storage_handle):
-        """Sets the storage_handle of this Storage.
+        r"""Sets the storage_handle of this Storage.
 
         SFS文件系统名称。
 
@@ -70,7 +70,7 @@ class Storage:
 
     @property
     def storage_class(self):
-        """Gets the storage_class of this Storage.
+        r"""Gets the storage_class of this Storage.
 
         存储类型： * `sfs` - sfs3.0存储。
 
@@ -81,7 +81,7 @@ class Storage:
 
     @storage_class.setter
     def storage_class(self, storage_class):
-        """Sets the storage_class of this Storage.
+        r"""Sets the storage_class of this Storage.
 
         存储类型： * `sfs` - sfs3.0存储。
 

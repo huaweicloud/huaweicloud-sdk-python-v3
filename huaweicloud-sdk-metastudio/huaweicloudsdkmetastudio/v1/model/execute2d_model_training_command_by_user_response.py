@@ -34,7 +34,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
     }
 
     def __init__(self, commond_result=None, attachment_upload_url=None, multipart_data=None, excute_failed_msg=None, x_request_id=None):
-        """Execute2dModelTrainingCommandByUserResponse
+        r"""Execute2dModelTrainingCommandByUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @property
     def commond_result(self):
-        """Gets the commond_result of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Gets the commond_result of this Execute2dModelTrainingCommandByUserResponse.
 
         命令执行结果。 * EXCUTE_SUCCESS: 命令提交成功 * EXCUTE_FAILED: 命令提交失败
 
@@ -83,7 +83,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @commond_result.setter
     def commond_result(self, commond_result):
-        """Sets the commond_result of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Sets the commond_result of this Execute2dModelTrainingCommandByUserResponse.
 
         命令执行结果。 * EXCUTE_SUCCESS: 命令提交成功 * EXCUTE_FAILED: 命令提交失败
 
@@ -94,7 +94,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @property
     def attachment_upload_url(self):
-        """Gets the attachment_upload_url of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Gets the attachment_upload_url of this Execute2dModelTrainingCommandByUserResponse.
 
         附件上传地址
 
@@ -105,7 +105,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @attachment_upload_url.setter
     def attachment_upload_url(self, attachment_upload_url):
-        """Sets the attachment_upload_url of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Sets the attachment_upload_url of this Execute2dModelTrainingCommandByUserResponse.
 
         附件上传地址
 
@@ -116,7 +116,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @property
     def multipart_data(self):
-        """Gets the multipart_data of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Gets the multipart_data of this Execute2dModelTrainingCommandByUserResponse.
 
         训练视频已上传分片信息
 
@@ -127,7 +127,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @multipart_data.setter
     def multipart_data(self, multipart_data):
-        """Sets the multipart_data of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Sets the multipart_data of this Execute2dModelTrainingCommandByUserResponse.
 
         训练视频已上传分片信息
 
@@ -138,7 +138,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @property
     def excute_failed_msg(self):
-        """Gets the excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Gets the excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
 
         命令执行失败原因描述
 
@@ -149,7 +149,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @excute_failed_msg.setter
     def excute_failed_msg(self, excute_failed_msg):
-        """Sets the excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Sets the excute_failed_msg of this Execute2dModelTrainingCommandByUserResponse.
 
         命令执行失败原因描述
 
@@ -160,7 +160,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Gets the x_request_id of this Execute2dModelTrainingCommandByUserResponse.
 
         :return: The x_request_id of this Execute2dModelTrainingCommandByUserResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class Execute2dModelTrainingCommandByUserResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this Execute2dModelTrainingCommandByUserResponse.
+        r"""Sets the x_request_id of this Execute2dModelTrainingCommandByUserResponse.
 
         :param x_request_id: The x_request_id of this Execute2dModelTrainingCommandByUserResponse.
         :type x_request_id: str

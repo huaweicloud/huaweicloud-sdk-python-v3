@@ -25,7 +25,7 @@ class ListIamGroupUsersRequest:
     }
 
     def __init__(self, group_id=None):
-        """ListIamGroupUsersRequest
+        r"""ListIamGroupUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListIamGroupUsersRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListIamGroupUsersRequest.
+        r"""Gets the group_id of this ListIamGroupUsersRequest.
 
         IAM用户组id
 
@@ -53,7 +53,7 @@ class ListIamGroupUsersRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListIamGroupUsersRequest.
+        r"""Sets the group_id of this ListIamGroupUsersRequest.
 
         IAM用户组id
 

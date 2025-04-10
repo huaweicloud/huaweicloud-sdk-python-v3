@@ -25,7 +25,7 @@ class ServerId:
     }
 
     def __init__(self, id=None):
-        """ServerId
+        r"""ServerId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ServerId:
 
     @property
     def id(self):
-        """Gets the id of this ServerId.
+        r"""Gets the id of this ServerId.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ServerId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerId.
+        r"""Sets the id of this ServerId.
 
         云服务器ID。
 

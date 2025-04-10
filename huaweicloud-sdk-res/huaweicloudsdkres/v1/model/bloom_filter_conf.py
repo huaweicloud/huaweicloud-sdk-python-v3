@@ -27,7 +27,7 @@ class BloomFilterConf:
     }
 
     def __init__(self, behaviors=None, interval=None):
-        """BloomFilterConf
+        r"""BloomFilterConf
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BloomFilterConf:
 
     @property
     def behaviors(self):
-        """Gets the behaviors of this BloomFilterConf.
+        r"""Gets the behaviors of this BloomFilterConf.
 
         待过滤行为类型。
 
@@ -61,7 +61,7 @@ class BloomFilterConf:
 
     @behaviors.setter
     def behaviors(self, behaviors):
-        """Sets the behaviors of this BloomFilterConf.
+        r"""Sets the behaviors of this BloomFilterConf.
 
         待过滤行为类型。
 
@@ -72,7 +72,7 @@ class BloomFilterConf:
 
     @property
     def interval(self):
-        """Gets the interval of this BloomFilterConf.
+        r"""Gets the interval of this BloomFilterConf.
 
         过滤时间。
 
@@ -83,7 +83,7 @@ class BloomFilterConf:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this BloomFilterConf.
+        r"""Sets the interval of this BloomFilterConf.
 
         过滤时间。
 

@@ -60,7 +60,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, path=None, method=None, description=None, version=None, content_type=None, api_signature_id=None, roma_app_id=None, return_format=None, parameters=None, id=None, instance=None, type=None, status=None, created_time=None, modified_time=None, scripts=None, roma_app_name=None):
-        """CreateLiveDataApiV2Response
+        r"""CreateLiveDataApiV2Response
 
         The model defined in huaweicloud sdk
 
@@ -157,7 +157,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateLiveDataApiV2Response.
+        r"""Gets the name of this CreateLiveDataApiV2Response.
 
         后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
 
@@ -168,7 +168,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLiveDataApiV2Response.
+        r"""Sets the name of this CreateLiveDataApiV2Response.
 
         后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
 
@@ -179,7 +179,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this CreateLiveDataApiV2Response.
+        r"""Gets the path of this CreateLiveDataApiV2Response.
 
         后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求路径不能修改。
 
@@ -190,7 +190,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this CreateLiveDataApiV2Response.
+        r"""Sets the path of this CreateLiveDataApiV2Response.
 
         后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求路径不能修改。
 
@@ -201,7 +201,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def method(self):
-        """Gets the method of this CreateLiveDataApiV2Response.
+        r"""Gets the method of this CreateLiveDataApiV2Response.
 
         后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求方法不能修改。
 
@@ -212,7 +212,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @method.setter
     def method(self, method):
-        """Sets the method of this CreateLiveDataApiV2Response.
+        r"""Sets the method of this CreateLiveDataApiV2Response.
 
         后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求方法不能修改。
 
@@ -223,7 +223,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateLiveDataApiV2Response.
+        r"""Gets the description of this CreateLiveDataApiV2Response.
 
         后端API描述。  不支持<，>字符
 
@@ -234,7 +234,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLiveDataApiV2Response.
+        r"""Sets the description of this CreateLiveDataApiV2Response.
 
         后端API描述。  不支持<，>字符
 
@@ -245,7 +245,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateLiveDataApiV2Response.
+        r"""Gets the version of this CreateLiveDataApiV2Response.
 
         后端API版本  支持英文，数字，下划线，中划线，点。
 
@@ -256,7 +256,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateLiveDataApiV2Response.
+        r"""Sets the version of this CreateLiveDataApiV2Response.
 
         后端API版本  支持英文，数字，下划线，中划线，点。
 
@@ -267,7 +267,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateLiveDataApiV2Response.
+        r"""Gets the content_type of this CreateLiveDataApiV2Response.
 
         后端API返回类型
 
@@ -278,7 +278,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateLiveDataApiV2Response.
+        r"""Sets the content_type of this CreateLiveDataApiV2Response.
 
         后端API返回类型
 
@@ -289,7 +289,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def api_signature_id(self):
-        """Gets the api_signature_id of this CreateLiveDataApiV2Response.
+        r"""Gets the api_signature_id of this CreateLiveDataApiV2Response.
 
         后端API为签名认证时绑定的签名密钥编号
 
@@ -300,7 +300,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @api_signature_id.setter
     def api_signature_id(self, api_signature_id):
-        """Sets the api_signature_id of this CreateLiveDataApiV2Response.
+        r"""Sets the api_signature_id of this CreateLiveDataApiV2Response.
 
         后端API为签名认证时绑定的签名密钥编号
 
@@ -311,7 +311,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this CreateLiveDataApiV2Response.
+        r"""Gets the roma_app_id of this CreateLiveDataApiV2Response.
 
         后端API归属的集成应用编号  更新后端API时，status=4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
 
@@ -322,7 +322,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this CreateLiveDataApiV2Response.
+        r"""Sets the roma_app_id of this CreateLiveDataApiV2Response.
 
         后端API归属的集成应用编号  更新后端API时，status=4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
 
@@ -333,7 +333,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def return_format(self):
-        """Gets the return_format of this CreateLiveDataApiV2Response.
+        r"""Gets the return_format of this CreateLiveDataApiV2Response.
 
         API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
 
@@ -344,7 +344,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @return_format.setter
     def return_format(self, return_format):
-        """Sets the return_format of this CreateLiveDataApiV2Response.
+        r"""Sets the return_format of this CreateLiveDataApiV2Response.
 
         API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
 
@@ -355,7 +355,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this CreateLiveDataApiV2Response.
+        r"""Gets the parameters of this CreateLiveDataApiV2Response.
 
         后端API的请求参数列表
 
@@ -366,7 +366,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this CreateLiveDataApiV2Response.
+        r"""Sets the parameters of this CreateLiveDataApiV2Response.
 
         后端API的请求参数列表
 
@@ -377,7 +377,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateLiveDataApiV2Response.
+        r"""Gets the id of this CreateLiveDataApiV2Response.
 
         后端API编号
 
@@ -388,7 +388,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateLiveDataApiV2Response.
+        r"""Sets the id of this CreateLiveDataApiV2Response.
 
         后端API编号
 
@@ -399,7 +399,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this CreateLiveDataApiV2Response.
+        r"""Gets the instance of this CreateLiveDataApiV2Response.
 
         后端API所属实例编号
 
@@ -410,7 +410,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateLiveDataApiV2Response.
+        r"""Sets the instance of this CreateLiveDataApiV2Response.
 
         后端API所属实例编号
 
@@ -421,7 +421,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateLiveDataApiV2Response.
+        r"""Gets the type of this CreateLiveDataApiV2Response.
 
         后端API类型： - data：数据后端 - function： 函数后端
 
@@ -432,7 +432,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateLiveDataApiV2Response.
+        r"""Sets the type of this CreateLiveDataApiV2Response.
 
         后端API类型： - data：数据后端 - function： 函数后端
 
@@ -443,7 +443,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateLiveDataApiV2Response.
+        r"""Gets the status of this CreateLiveDataApiV2Response.
 
         后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
 
@@ -454,7 +454,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateLiveDataApiV2Response.
+        r"""Sets the status of this CreateLiveDataApiV2Response.
 
         后端API状态： - 1：待开发 - 3：开发中 - 4：已部署
 
@@ -465,7 +465,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateLiveDataApiV2Response.
+        r"""Gets the created_time of this CreateLiveDataApiV2Response.
 
         后端API创建时间
 
@@ -476,7 +476,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateLiveDataApiV2Response.
+        r"""Sets the created_time of this CreateLiveDataApiV2Response.
 
         后端API创建时间
 
@@ -487,7 +487,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this CreateLiveDataApiV2Response.
+        r"""Gets the modified_time of this CreateLiveDataApiV2Response.
 
         后端API修改时间
 
@@ -498,7 +498,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this CreateLiveDataApiV2Response.
+        r"""Sets the modified_time of this CreateLiveDataApiV2Response.
 
         后端API修改时间
 
@@ -509,7 +509,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def scripts(self):
-        """Gets the scripts of this CreateLiveDataApiV2Response.
+        r"""Gets the scripts of this CreateLiveDataApiV2Response.
 
         后端API脚本信息
 
@@ -520,7 +520,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @scripts.setter
     def scripts(self, scripts):
-        """Sets the scripts of this CreateLiveDataApiV2Response.
+        r"""Sets the scripts of this CreateLiveDataApiV2Response.
 
         后端API脚本信息
 
@@ -531,7 +531,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this CreateLiveDataApiV2Response.
+        r"""Gets the roma_app_name of this CreateLiveDataApiV2Response.
 
         后端API归属的集成应用名称
 
@@ -542,7 +542,7 @@ class CreateLiveDataApiV2Response(SdkResponse):
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this CreateLiveDataApiV2Response.
+        r"""Sets the roma_app_name of this CreateLiveDataApiV2Response.
 
         后端API归属的集成应用名称
 

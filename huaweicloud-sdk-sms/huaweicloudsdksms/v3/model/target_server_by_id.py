@@ -27,7 +27,7 @@ class TargetServerById:
     }
 
     def __init__(self, vm_id=None, name=None):
-        """TargetServerById
+        r"""TargetServerById
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TargetServerById:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this TargetServerById.
+        r"""Gets the vm_id of this TargetServerById.
 
         目的端服务器ID
 
@@ -61,7 +61,7 @@ class TargetServerById:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this TargetServerById.
+        r"""Sets the vm_id of this TargetServerById.
 
         目的端服务器ID
 
@@ -72,7 +72,7 @@ class TargetServerById:
 
     @property
     def name(self):
-        """Gets the name of this TargetServerById.
+        r"""Gets the name of this TargetServerById.
 
         目的端服务器名称
 
@@ -83,7 +83,7 @@ class TargetServerById:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetServerById.
+        r"""Sets the name of this TargetServerById.
 
         目的端服务器名称
 

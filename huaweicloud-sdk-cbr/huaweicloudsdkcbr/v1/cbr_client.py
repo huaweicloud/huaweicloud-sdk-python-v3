@@ -34,7 +34,7 @@ class CbrClient(Client):
         return client_builder
 
     def add_agent_path(self, request):
-        """新增备份路径
+        r"""新增备份路径
 
         对客户端新增备份路径，新增的路径不会校验是否存在。
         
@@ -101,7 +101,7 @@ class CbrClient(Client):
         return http_info
 
     def add_member(self, request):
-        """添加备份成员
+        r"""添加备份成员
 
         添加备份可共享的成员，只有云服务器备份可以添加备份共享成员，且仅支持在同一区域的不同用户间共享。
         
@@ -168,7 +168,7 @@ class CbrClient(Client):
         return http_info
 
     def add_vault_resource(self, request):
-        """添加资源
+        r"""添加资源
 
         存储库添加资源
         
@@ -235,7 +235,7 @@ class CbrClient(Client):
         return http_info
 
     def associate_vault_policy(self, request):
-        """设置存储库策略
+        r"""设置存储库策略
 
         存储库设置策略
         
@@ -302,7 +302,7 @@ class CbrClient(Client):
         return http_info
 
     def batch_create_and_delete_vault_tags(self, request):
-        """批量添加删除存储库资源标签
+        r"""批量添加删除存储库资源标签
 
         为指定实例批量添加或删除标签
         标签管理服务需要使用该接口批量管理实例的标签。
@@ -376,7 +376,7 @@ class CbrClient(Client):
         return http_info
 
     def batch_update_vault(self, request):
-        """批量修改存储库
+        r"""批量修改存储库
 
         批量修改项目下所有存储库
         
@@ -441,7 +441,7 @@ class CbrClient(Client):
         return http_info
 
     def change_order(self, request):
-        """变更
+        r"""变更
 
         订单更新，调用该接口更新包周期产品订单信息,返回待支付订单信息。
         &gt; 该接口目前属于公测阶段，部分region暂时无法使用
@@ -507,7 +507,7 @@ class CbrClient(Client):
         return http_info
 
     def change_vault_charge_mode(self, request):
-        """修改付费模式
+        r"""修改付费模式
 
         修改资源的付费模式，暂时只支持按需资源转包周期资源。
         &gt; 该接口目前输入公测阶段，部分region暂时无法使用。
@@ -573,7 +573,7 @@ class CbrClient(Client):
         return http_info
 
     def check_agent(self, request):
-        """查询agent状态
+        r"""查询agent状态
 
         检查应用一致性Agent状态
         
@@ -638,7 +638,7 @@ class CbrClient(Client):
         return http_info
 
     def copy_backup(self, request):
-        """复制备份
+        r"""复制备份
 
         跨区域复制备份。
         
@@ -705,7 +705,7 @@ class CbrClient(Client):
         return http_info
 
     def copy_checkpoint(self, request):
-        """复制备份还原点
+        r"""复制备份还原点
 
         执行复制
         
@@ -770,7 +770,7 @@ class CbrClient(Client):
         return http_info
 
     def create_checkpoint(self, request):
-        """创建备份还原点
+        r"""创建备份还原点
 
         对存储库执行备份，生成备份还原点
         
@@ -835,7 +835,7 @@ class CbrClient(Client):
         return http_info
 
     def create_organization_policy(self, request):
-        """创建组织策略
+        r"""创建组织策略
 
         创建组织策略
         
@@ -900,7 +900,7 @@ class CbrClient(Client):
         return http_info
 
     def create_policy(self, request):
-        """创建策略
+        r"""创建策略
 
         创建策略，策略分为备份策略和复制策略。
         
@@ -965,7 +965,7 @@ class CbrClient(Client):
         return http_info
 
     def create_post_paid_vault(self, request):
-        """创建包周期存储库
+        r"""创建包周期存储库
 
         创建包周期存储库
         
@@ -1030,7 +1030,7 @@ class CbrClient(Client):
         return http_info
 
     def create_vault(self, request):
-        """创建存储库
+        r"""创建存储库
 
         创建存储库
         
@@ -1095,7 +1095,7 @@ class CbrClient(Client):
         return http_info
 
     def create_vault_tags(self, request):
-        """添加存储库资源标签
+        r"""添加存储库资源标签
 
         一个资源上最多有10个标签。
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
@@ -1163,7 +1163,7 @@ class CbrClient(Client):
         return http_info
 
     def delete_backup(self, request):
-        """删除备份
+        r"""删除备份
 
         删除单个备份。
         
@@ -1228,7 +1228,7 @@ class CbrClient(Client):
         return http_info
 
     def delete_member(self, request):
-        """删除指定备份成员
+        r"""删除指定备份成员
 
         删除指定的备份共享成员
         
@@ -1295,7 +1295,7 @@ class CbrClient(Client):
         return http_info
 
     def delete_organization_policy(self, request):
-        """删除组织策略
+        r"""删除组织策略
 
         删除组织策略
         
@@ -1360,7 +1360,7 @@ class CbrClient(Client):
         return http_info
 
     def delete_policy(self, request):
-        """删除策略
+        r"""删除策略
 
         删除策略
         
@@ -1425,7 +1425,7 @@ class CbrClient(Client):
         return http_info
 
     def delete_vault(self, request):
-        """删除存储库
+        r"""删除存储库
 
         删除存储库。若删除储存库，将一并删除存储库中的所有备份。
         
@@ -1490,7 +1490,7 @@ class CbrClient(Client):
         return http_info
 
     def delete_vault_tag(self, request):
-        """删除存储库资源标签
+        r"""删除存储库资源标签
 
         幂等接口：删除时，如果删除的标签不存在，返回404。Key不能为空或者空字符串。
         
@@ -1557,7 +1557,7 @@ class CbrClient(Client):
         return http_info
 
     def disassociate_vault_policy(self, request):
-        """解除存储库策略
+        r"""解除存储库策略
 
         存储库解除策略
         
@@ -1624,7 +1624,7 @@ class CbrClient(Client):
         return http_info
 
     def import_backup(self, request):
-        """同步备份
+        r"""同步备份
 
         同步线下混合云VMware备份副本
         
@@ -1689,7 +1689,7 @@ class CbrClient(Client):
         return http_info
 
     def import_checkpoint(self, request):
-        """同步备份还原点
+        r"""同步备份还原点
 
         针对vault同步备份副本
         
@@ -1754,7 +1754,7 @@ class CbrClient(Client):
         return http_info
 
     def list_agent(self, request):
-        """查询客户端列表
+        r"""查询客户端列表
 
         查询客户端列表
         
@@ -1826,7 +1826,7 @@ class CbrClient(Client):
         return http_info
 
     def list_backups(self, request):
-        """查询所有备份
+        r"""查询所有备份
 
         查询所有副本
         
@@ -1935,7 +1935,7 @@ class CbrClient(Client):
         return http_info
 
     def list_domain_projects(self, request):
-        """查询租户项目列表
+        r"""查询租户项目列表
 
         根据指定租户名称查询项目列表。
         
@@ -2000,7 +2000,7 @@ class CbrClient(Client):
         return http_info
 
     def list_external_vault(self, request):
-        """查询其他区域存储库列表
+        r"""查询其他区域存储库列表
 
         查询其他区域的存储库列表
         
@@ -2079,7 +2079,7 @@ class CbrClient(Client):
         return http_info
 
     def list_op_logs(self, request):
-        """查询任务列表
+        r"""查询任务列表
 
         查询任务列表
         
@@ -2166,7 +2166,7 @@ class CbrClient(Client):
         return http_info
 
     def list_organization_policies(self, request):
-        """查询组织策略列表
+        r"""查询组织策略列表
 
         查询组织策略列表
         
@@ -2235,7 +2235,7 @@ class CbrClient(Client):
         return http_info
 
     def list_organization_policy_detail(self, request):
-        """查询组织策略部署状态列表
+        r"""查询组织策略部署状态列表
 
         查询组织策略每个账号下策略部署状态列表
         
@@ -2300,7 +2300,7 @@ class CbrClient(Client):
         return http_info
 
     def list_policies(self, request):
-        """查询策略列表
+        r"""查询策略列表
 
         查询策略列表
         
@@ -2367,7 +2367,7 @@ class CbrClient(Client):
         return http_info
 
     def list_projects(self, request):
-        """查询租户的项目信息
+        r"""查询租户的项目信息
 
         查询租户的企业项目信息
         
@@ -2430,7 +2430,7 @@ class CbrClient(Client):
         return http_info
 
     def list_protectable(self, request):
-        """查询可保护资源
+        r"""查询可保护资源
 
         查询可保护性资源列表
         
@@ -2509,7 +2509,7 @@ class CbrClient(Client):
         return http_info
 
     def list_vault(self, request):
-        """查询存储库列表
+        r"""查询存储库列表
 
         查询存储库列表
         
@@ -2595,7 +2595,7 @@ class CbrClient(Client):
         return http_info
 
     def migrate_domain(self, request):
-        """租户迁移
+        r"""租户迁移
 
         将CSBS/VBS资源迁移到CBR。
         
@@ -2660,7 +2660,7 @@ class CbrClient(Client):
         return http_info
 
     def migrate_vault_resource(self, request):
-        """迁移资源
+        r"""迁移资源
 
         支持资源迁移到另一个存储库，不删除备份。
         
@@ -2727,7 +2727,7 @@ class CbrClient(Client):
         return http_info
 
     def register_agent(self, request):
-        """注册客户端
+        r"""注册客户端
 
         注册客户端，安装时候由Agent调用，无需手动注册。
         
@@ -2792,7 +2792,7 @@ class CbrClient(Client):
         return http_info
 
     def remove_agent_path(self, request):
-        """移除备份路径
+        r"""移除备份路径
 
         移除已添加的文件备份路径。
         
@@ -2859,7 +2859,7 @@ class CbrClient(Client):
         return http_info
 
     def remove_vault_resource(self, request):
-        """移除资源
+        r"""移除资源
 
         移除存储库中的资源，若移除资源，将一并删除该资源在保管库中的备份
         
@@ -2926,7 +2926,7 @@ class CbrClient(Client):
         return http_info
 
     def restore_backup(self, request):
-        """备份恢复
+        r"""备份恢复
 
         恢复备份数据
         
@@ -2993,7 +2993,7 @@ class CbrClient(Client):
         return http_info
 
     def set_vault_resource(self, request):
-        """设置存储库资源
+        r"""设置存储库资源
 
         设置存储库资源是否自动备份
         
@@ -3060,7 +3060,7 @@ class CbrClient(Client):
         return http_info
 
     def show_agent(self, request):
-        """查询指定客户端
+        r"""查询指定客户端
 
         查询指定客户端
         
@@ -3125,7 +3125,7 @@ class CbrClient(Client):
         return http_info
 
     def show_backup(self, request):
-        """查询指定备份
+        r"""查询指定备份
 
         根据指定id查询单个副本。
         
@@ -3190,7 +3190,7 @@ class CbrClient(Client):
         return http_info
 
     def show_checkpoint(self, request):
-        """查询备份还原点
+        r"""查询备份还原点
 
         根据还原点ID查询指定还原点
         
@@ -3255,7 +3255,7 @@ class CbrClient(Client):
         return http_info
 
     def show_domain(self, request):
-        """查询租户信息
+        r"""查询租户信息
 
         由控制台调用的内部接口，用于仅在查询共享备份时获取源project_id的域名信息。
         
@@ -3320,7 +3320,7 @@ class CbrClient(Client):
         return http_info
 
     def show_member_detail(self, request):
-        """获取备份成员详情
+        r"""获取备份成员详情
 
         获取备份成员的详情
         
@@ -3387,7 +3387,7 @@ class CbrClient(Client):
         return http_info
 
     def show_members_detail(self, request):
-        """获取备份成员列表
+        r"""获取备份成员列表
 
         获取备份共享成员的列表信息
         
@@ -3468,7 +3468,7 @@ class CbrClient(Client):
         return http_info
 
     def show_metadata(self, request):
-        """查询备份元数据
+        r"""查询备份元数据
 
         查询备份时资源的元数据
         
@@ -3533,7 +3533,7 @@ class CbrClient(Client):
         return http_info
 
     def show_migrate_status(self, request):
-        """查询迁移
+        r"""查询迁移
 
         查询迁移结果
         
@@ -3598,7 +3598,7 @@ class CbrClient(Client):
         return http_info
 
     def show_op_log(self, request):
-        """查询单个任务
+        r"""查询单个任务
 
         根据指定任务ID查询任务
         
@@ -3663,7 +3663,7 @@ class CbrClient(Client):
         return http_info
 
     def show_organization_policy(self, request):
-        """查询指定组织策略
+        r"""查询指定组织策略
 
         查询指定组织策略
         
@@ -3728,7 +3728,7 @@ class CbrClient(Client):
         return http_info
 
     def show_policy(self, request):
-        """查询单个策略
+        r"""查询单个策略
 
         查询单个策略
         
@@ -3793,7 +3793,7 @@ class CbrClient(Client):
         return http_info
 
     def show_protectable(self, request):
-        """查询指定可保护资源
+        r"""查询指定可保护资源
 
         根据ID查询可保护性资源
         
@@ -3860,7 +3860,7 @@ class CbrClient(Client):
         return http_info
 
     def show_replication_capabilities(self, request):
-        """查询复制能力
+        r"""查询复制能力
 
         查询本区域的复制能力
         
@@ -3923,7 +3923,7 @@ class CbrClient(Client):
         return http_info
 
     def show_storage_usage(self, request):
-        """查询容量统计
+        r"""查询容量统计
 
         查询容量统计
         
@@ -3994,7 +3994,7 @@ class CbrClient(Client):
         return http_info
 
     def show_summary(self, request):
-        """存储库容量总览
+        r"""存储库容量总览
 
         查询项目下所有存储库的总容量和总使用量
         
@@ -4057,7 +4057,7 @@ class CbrClient(Client):
         return http_info
 
     def show_vault(self, request):
-        """查询指定存储库
+        r"""查询指定存储库
 
         根据ID查询指定存储库
         
@@ -4122,7 +4122,7 @@ class CbrClient(Client):
         return http_info
 
     def show_vault_project_tag(self, request):
-        """查询存储库项目标签
+        r"""查询存储库项目标签
 
         查询租户在指定Region和实例类型的所有标签集合
         标签管理服务需要能够列出当前租户全部已使用的标签集合，为各服务Console打标签和过滤实例时提供标签联想功能
@@ -4186,7 +4186,7 @@ class CbrClient(Client):
         return http_info
 
     def show_vault_resource_instances(self, request):
-        """查询存储库资源实例
+        r"""查询存储库资源实例
 
         使用标签过滤实例
         标签管理服务需要提供按标签过滤各服务实例并汇总显示在列表中，需要各服务提供查询能力
@@ -4252,7 +4252,7 @@ class CbrClient(Client):
         return http_info
 
     def show_vault_tag(self, request):
-        """查询存储库资源标签
+        r"""查询存储库资源标签
 
         查询指定实例的标签信息
         标签管理服务需要使用该接口查询指定实例的全部标签数据
@@ -4318,7 +4318,7 @@ class CbrClient(Client):
         return http_info
 
     def unregister_agent(self, request):
-        """移除客户端
+        r"""移除客户端
 
         移除客户端，移除客户端时将会删除该客户端所有备份，请谨慎操作。
         
@@ -4383,7 +4383,7 @@ class CbrClient(Client):
         return http_info
 
     def update_agent(self, request):
-        """修改客户端
+        r"""修改客户端
 
         修改客户端状态
         
@@ -4450,7 +4450,7 @@ class CbrClient(Client):
         return http_info
 
     def update_backup(self, request):
-        """更新备份
+        r"""更新备份
 
         根据备份id更改备份
         
@@ -4517,7 +4517,7 @@ class CbrClient(Client):
         return http_info
 
     def update_member_status(self, request):
-        """更新备份成员状态
+        r"""更新备份成员状态
 
         更新备份共享成员的状态，需要接收方执行此API。
         
@@ -4586,7 +4586,7 @@ class CbrClient(Client):
         return http_info
 
     def update_order(self, request):
-        """变更（废弃）
+        r"""变更（废弃）
 
         订单更新，支付cbc订单后，调用该接口更新包周期产品订单信息。该接口已废弃。
         
@@ -4653,7 +4653,7 @@ class CbrClient(Client):
         return http_info
 
     def update_organization_policy(self, request):
-        """更新组织策略
+        r"""更新组织策略
 
         更新组织策略
         
@@ -4720,7 +4720,7 @@ class CbrClient(Client):
         return http_info
 
     def update_policy(self, request):
-        """修改策略
+        r"""修改策略
 
         修改策略
         
@@ -4787,7 +4787,7 @@ class CbrClient(Client):
         return http_info
 
     def update_vault(self, request):
-        """修改存储库
+        r"""修改存储库
 
         根据存储库ID修改存储库
         

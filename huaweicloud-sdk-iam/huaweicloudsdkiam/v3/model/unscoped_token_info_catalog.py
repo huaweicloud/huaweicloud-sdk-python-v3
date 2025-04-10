@@ -31,7 +31,7 @@ class UnscopedTokenInfoCatalog:
     }
 
     def __init__(self, id=None, name=None, type=None, endpoints=None):
-        """UnscopedTokenInfoCatalog
+        r"""UnscopedTokenInfoCatalog
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UnscopedTokenInfoCatalog:
 
     @property
     def id(self):
-        """Gets the id of this UnscopedTokenInfoCatalog.
+        r"""Gets the id of this UnscopedTokenInfoCatalog.
 
         终端节点ID。
 
@@ -75,7 +75,7 @@ class UnscopedTokenInfoCatalog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnscopedTokenInfoCatalog.
+        r"""Sets the id of this UnscopedTokenInfoCatalog.
 
         终端节点ID。
 
@@ -86,7 +86,7 @@ class UnscopedTokenInfoCatalog:
 
     @property
     def name(self):
-        """Gets the name of this UnscopedTokenInfoCatalog.
+        r"""Gets the name of this UnscopedTokenInfoCatalog.
 
         服务名称。
 
@@ -97,7 +97,7 @@ class UnscopedTokenInfoCatalog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UnscopedTokenInfoCatalog.
+        r"""Sets the name of this UnscopedTokenInfoCatalog.
 
         服务名称。
 
@@ -108,7 +108,7 @@ class UnscopedTokenInfoCatalog:
 
     @property
     def type(self):
-        """Gets the type of this UnscopedTokenInfoCatalog.
+        r"""Gets the type of this UnscopedTokenInfoCatalog.
 
         该接口所属服务。
 
@@ -119,7 +119,7 @@ class UnscopedTokenInfoCatalog:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UnscopedTokenInfoCatalog.
+        r"""Sets the type of this UnscopedTokenInfoCatalog.
 
         该接口所属服务。
 
@@ -130,7 +130,7 @@ class UnscopedTokenInfoCatalog:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this UnscopedTokenInfoCatalog.
+        r"""Gets the endpoints of this UnscopedTokenInfoCatalog.
 
         :return: The endpoints of this UnscopedTokenInfoCatalog.
         :rtype: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]
@@ -139,7 +139,7 @@ class UnscopedTokenInfoCatalog:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this UnscopedTokenInfoCatalog.
+        r"""Sets the endpoints of this UnscopedTokenInfoCatalog.
 
         :param endpoints: The endpoints of this UnscopedTokenInfoCatalog.
         :type endpoints: list[:class:`huaweicloudsdkiam.v3.UnscopedTokenInfoEndpoints`]

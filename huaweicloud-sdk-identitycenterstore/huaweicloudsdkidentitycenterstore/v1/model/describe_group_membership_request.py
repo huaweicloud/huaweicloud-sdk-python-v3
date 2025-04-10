@@ -30,7 +30,7 @@ class DescribeGroupMembershipRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, membership_id=None):
-        """DescribeGroupMembershipRequest
+        r"""DescribeGroupMembershipRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DescribeGroupMembershipRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DescribeGroupMembershipRequest.
+        r"""Gets the x_security_token of this DescribeGroupMembershipRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class DescribeGroupMembershipRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DescribeGroupMembershipRequest.
+        r"""Sets the x_security_token of this DescribeGroupMembershipRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class DescribeGroupMembershipRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this DescribeGroupMembershipRequest.
+        r"""Gets the identity_store_id of this DescribeGroupMembershipRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -89,7 +89,7 @@ class DescribeGroupMembershipRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this DescribeGroupMembershipRequest.
+        r"""Sets the identity_store_id of this DescribeGroupMembershipRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -100,7 +100,7 @@ class DescribeGroupMembershipRequest:
 
     @property
     def membership_id(self):
-        """Gets the membership_id of this DescribeGroupMembershipRequest.
+        r"""Gets the membership_id of this DescribeGroupMembershipRequest.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 
@@ -111,7 +111,7 @@ class DescribeGroupMembershipRequest:
 
     @membership_id.setter
     def membership_id(self, membership_id):
-        """Sets the membership_id of this DescribeGroupMembershipRequest.
+        r"""Sets the membership_id of this DescribeGroupMembershipRequest.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 

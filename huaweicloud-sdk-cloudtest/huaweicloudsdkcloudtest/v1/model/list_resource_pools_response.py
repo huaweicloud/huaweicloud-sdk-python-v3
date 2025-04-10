@@ -32,7 +32,7 @@ class ListResourcePoolsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None):
-        """ListResourcePoolsResponse
+        r"""ListResourcePoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListResourcePoolsResponse.
+        r"""Gets the status of this ListResourcePoolsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -76,7 +76,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListResourcePoolsResponse.
+        r"""Sets the status of this ListResourcePoolsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -87,7 +87,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListResourcePoolsResponse.
+        r"""Gets the result of this ListResourcePoolsResponse.
 
         :return: The result of this ListResourcePoolsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListResourcePoolVo`
@@ -96,7 +96,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListResourcePoolsResponse.
+        r"""Sets the result of this ListResourcePoolsResponse.
 
         :param result: The result of this ListResourcePoolsResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListResourcePoolVo`
@@ -105,7 +105,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListResourcePoolsResponse.
+        r"""Gets the error of this ListResourcePoolsResponse.
 
         :return: The error of this ListResourcePoolsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -114,7 +114,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListResourcePoolsResponse.
+        r"""Sets the error of this ListResourcePoolsResponse.
 
         :param error: The error of this ListResourcePoolsResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -123,7 +123,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListResourcePoolsResponse.
+        r"""Gets the request_id of this ListResourcePoolsResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -134,7 +134,7 @@ class ListResourcePoolsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListResourcePoolsResponse.
+        r"""Sets the request_id of this ListResourcePoolsResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 

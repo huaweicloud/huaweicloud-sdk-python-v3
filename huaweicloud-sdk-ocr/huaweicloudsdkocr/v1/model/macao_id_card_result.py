@@ -55,7 +55,7 @@ class MacaoIdCardResult:
     }
 
     def __init__(self, side=None, name=None, name_en=None, sex=None, issue_date=None, expiry_date=None, birth_date=None, initial_issue_date=None, height=None, number=None, symbols=None, machine_code1=None, machine_code2=None, machine_code3=None, portrait_image=None, confidence=None):
-        """MacaoIdCardResult
+        r"""MacaoIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class MacaoIdCardResult:
 
     @property
     def side(self):
-        """Gets the side of this MacaoIdCardResult.
+        r"""Gets the side of this MacaoIdCardResult.
 
         证件图片正反面信息。可选值包括： - \"front\": 证件图片为正面 - \"back\": 证件图片为反面 
 
@@ -159,7 +159,7 @@ class MacaoIdCardResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this MacaoIdCardResult.
+        r"""Sets the side of this MacaoIdCardResult.
 
         证件图片正反面信息。可选值包括： - \"front\": 证件图片为正面 - \"back\": 证件图片为反面 
 
@@ -170,7 +170,7 @@ class MacaoIdCardResult:
 
     @property
     def name(self):
-        """Gets the name of this MacaoIdCardResult.
+        r"""Gets the name of this MacaoIdCardResult.
 
         姓名。 
 
@@ -181,7 +181,7 @@ class MacaoIdCardResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MacaoIdCardResult.
+        r"""Sets the name of this MacaoIdCardResult.
 
         姓名。 
 
@@ -192,7 +192,7 @@ class MacaoIdCardResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this MacaoIdCardResult.
+        r"""Gets the name_en of this MacaoIdCardResult.
 
         英文姓名，姓名单词之间使用空格进行间隔。 
 
@@ -203,7 +203,7 @@ class MacaoIdCardResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this MacaoIdCardResult.
+        r"""Sets the name_en of this MacaoIdCardResult.
 
         英文姓名，姓名单词之间使用空格进行间隔。 
 
@@ -214,7 +214,7 @@ class MacaoIdCardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this MacaoIdCardResult.
+        r"""Gets the sex of this MacaoIdCardResult.
 
         性别，返回“男”或“女”。 
 
@@ -225,7 +225,7 @@ class MacaoIdCardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this MacaoIdCardResult.
+        r"""Sets the sex of this MacaoIdCardResult.
 
         性别，返回“男”或“女”。 
 
@@ -236,7 +236,7 @@ class MacaoIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this MacaoIdCardResult.
+        r"""Gets the issue_date of this MacaoIdCardResult.
 
         本次发证日期。 
 
@@ -247,7 +247,7 @@ class MacaoIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this MacaoIdCardResult.
+        r"""Sets the issue_date of this MacaoIdCardResult.
 
         本次发证日期。 
 
@@ -258,7 +258,7 @@ class MacaoIdCardResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this MacaoIdCardResult.
+        r"""Gets the expiry_date of this MacaoIdCardResult.
 
         证件有效期。 
 
@@ -269,7 +269,7 @@ class MacaoIdCardResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this MacaoIdCardResult.
+        r"""Sets the expiry_date of this MacaoIdCardResult.
 
         证件有效期。 
 
@@ -280,7 +280,7 @@ class MacaoIdCardResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this MacaoIdCardResult.
+        r"""Gets the birth_date of this MacaoIdCardResult.
 
         出生日期。 
 
@@ -291,7 +291,7 @@ class MacaoIdCardResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this MacaoIdCardResult.
+        r"""Sets the birth_date of this MacaoIdCardResult.
 
         出生日期。 
 
@@ -302,7 +302,7 @@ class MacaoIdCardResult:
 
     @property
     def initial_issue_date(self):
-        """Gets the initial_issue_date of this MacaoIdCardResult.
+        r"""Gets the initial_issue_date of this MacaoIdCardResult.
 
         首次发证日期。 
 
@@ -313,7 +313,7 @@ class MacaoIdCardResult:
 
     @initial_issue_date.setter
     def initial_issue_date(self, initial_issue_date):
-        """Sets the initial_issue_date of this MacaoIdCardResult.
+        r"""Sets the initial_issue_date of this MacaoIdCardResult.
 
         首次发证日期。 
 
@@ -324,7 +324,7 @@ class MacaoIdCardResult:
 
     @property
     def height(self):
-        """Gets the height of this MacaoIdCardResult.
+        r"""Gets the height of this MacaoIdCardResult.
 
         身高。 
 
@@ -335,7 +335,7 @@ class MacaoIdCardResult:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MacaoIdCardResult.
+        r"""Sets the height of this MacaoIdCardResult.
 
         身高。 
 
@@ -346,7 +346,7 @@ class MacaoIdCardResult:
 
     @property
     def number(self):
-        """Gets the number of this MacaoIdCardResult.
+        r"""Gets the number of this MacaoIdCardResult.
 
         身份证号。 
 
@@ -357,7 +357,7 @@ class MacaoIdCardResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this MacaoIdCardResult.
+        r"""Sets the number of this MacaoIdCardResult.
 
         身份证号。 
 
@@ -368,7 +368,7 @@ class MacaoIdCardResult:
 
     @property
     def symbols(self):
-        """Gets the symbols of this MacaoIdCardResult.
+        r"""Gets the symbols of this MacaoIdCardResult.
 
         身份证上的字母代码，表示出生地等信息。 
 
@@ -379,7 +379,7 @@ class MacaoIdCardResult:
 
     @symbols.setter
     def symbols(self, symbols):
-        """Sets the symbols of this MacaoIdCardResult.
+        r"""Sets the symbols of this MacaoIdCardResult.
 
         身份证上的字母代码，表示出生地等信息。 
 
@@ -390,7 +390,7 @@ class MacaoIdCardResult:
 
     @property
     def machine_code1(self):
-        """Gets the machine_code1 of this MacaoIdCardResult.
+        r"""Gets the machine_code1 of this MacaoIdCardResult.
 
         身份证背面第一行机器码。 
 
@@ -401,7 +401,7 @@ class MacaoIdCardResult:
 
     @machine_code1.setter
     def machine_code1(self, machine_code1):
-        """Sets the machine_code1 of this MacaoIdCardResult.
+        r"""Sets the machine_code1 of this MacaoIdCardResult.
 
         身份证背面第一行机器码。 
 
@@ -412,7 +412,7 @@ class MacaoIdCardResult:
 
     @property
     def machine_code2(self):
-        """Gets the machine_code2 of this MacaoIdCardResult.
+        r"""Gets the machine_code2 of this MacaoIdCardResult.
 
         身份证背面第二行机器码。 
 
@@ -423,7 +423,7 @@ class MacaoIdCardResult:
 
     @machine_code2.setter
     def machine_code2(self, machine_code2):
-        """Sets the machine_code2 of this MacaoIdCardResult.
+        r"""Sets the machine_code2 of this MacaoIdCardResult.
 
         身份证背面第二行机器码。 
 
@@ -434,7 +434,7 @@ class MacaoIdCardResult:
 
     @property
     def machine_code3(self):
-        """Gets the machine_code3 of this MacaoIdCardResult.
+        r"""Gets the machine_code3 of this MacaoIdCardResult.
 
         身份证背面第三行机器码。 
 
@@ -445,7 +445,7 @@ class MacaoIdCardResult:
 
     @machine_code3.setter
     def machine_code3(self, machine_code3):
-        """Sets the machine_code3 of this MacaoIdCardResult.
+        r"""Sets the machine_code3 of this MacaoIdCardResult.
 
         身份证背面第三行机器码。 
 
@@ -456,7 +456,7 @@ class MacaoIdCardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this MacaoIdCardResult.
+        r"""Gets the portrait_image of this MacaoIdCardResult.
 
         身份证头像照片的Base64编码。 若入参“return_portrait_image”字段缺失时，则此字段不存在。 
 
@@ -467,7 +467,7 @@ class MacaoIdCardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this MacaoIdCardResult.
+        r"""Sets the portrait_image of this MacaoIdCardResult.
 
         身份证头像照片的Base64编码。 若入参“return_portrait_image”字段缺失时，则此字段不存在。 
 
@@ -478,7 +478,7 @@ class MacaoIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this MacaoIdCardResult.
+        r"""Gets the confidence of this MacaoIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -489,7 +489,7 @@ class MacaoIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this MacaoIdCardResult.
+        r"""Sets the confidence of this MacaoIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
 

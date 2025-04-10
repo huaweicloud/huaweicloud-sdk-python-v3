@@ -26,7 +26,7 @@ class UploadWarehouseAppIconResponse(SdkResponse):
     }
 
     def __init__(self, appicon_store_path=None):
-        """UploadWarehouseAppIconResponse
+        r"""UploadWarehouseAppIconResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadWarehouseAppIconResponse(SdkResponse):
 
     @property
     def appicon_store_path(self):
-        """Gets the appicon_store_path of this UploadWarehouseAppIconResponse.
+        r"""Gets the appicon_store_path of this UploadWarehouseAppIconResponse.
 
         图标文件在obs桶经过cdn加速以后的地址。
 
@@ -55,7 +55,7 @@ class UploadWarehouseAppIconResponse(SdkResponse):
 
     @appicon_store_path.setter
     def appicon_store_path(self, appicon_store_path):
-        """Sets the appicon_store_path of this UploadWarehouseAppIconResponse.
+        r"""Sets the appicon_store_path of this UploadWarehouseAppIconResponse.
 
         图标文件在obs桶经过cdn加速以后的地址。
 

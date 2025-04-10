@@ -27,7 +27,7 @@ class SourceRef:
     }
 
     def __init__(self, id=None, version_id=None):
-        """SourceRef
+        r"""SourceRef
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SourceRef:
 
     @property
     def id(self):
-        """Gets the id of this SourceRef.
+        r"""Gets the id of this SourceRef.
 
         一种资源ID，32~36位的英文、数字、短横组合
 
@@ -60,7 +60,7 @@ class SourceRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SourceRef.
+        r"""Sets the id of this SourceRef.
 
         一种资源ID，32~36位的英文、数字、短横组合
 
@@ -71,7 +71,7 @@ class SourceRef:
 
     @property
     def version_id(self):
-        """Gets the version_id of this SourceRef.
+        r"""Gets the version_id of this SourceRef.
 
         一种资源ID，32~36位的英文、数字、短横组合
 
@@ -82,7 +82,7 @@ class SourceRef:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this SourceRef.
+        r"""Sets the version_id of this SourceRef.
 
         一种资源ID，32~36位的英文、数字、短横组合
 

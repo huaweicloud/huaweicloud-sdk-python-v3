@@ -29,7 +29,7 @@ class SetRepoRoleRequest:
     }
 
     def __init__(self, member_id=None, repository_uuid=None, body=None):
-        """SetRepoRoleRequest
+        r"""SetRepoRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SetRepoRoleRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this SetRepoRoleRequest.
+        r"""Gets the member_id of this SetRepoRoleRequest.
 
         用户id
 
@@ -66,7 +66,7 @@ class SetRepoRoleRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this SetRepoRoleRequest.
+        r"""Sets the member_id of this SetRepoRoleRequest.
 
         用户id
 
@@ -77,7 +77,7 @@ class SetRepoRoleRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this SetRepoRoleRequest.
+        r"""Gets the repository_uuid of this SetRepoRoleRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -88,7 +88,7 @@ class SetRepoRoleRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this SetRepoRoleRequest.
+        r"""Sets the repository_uuid of this SetRepoRoleRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -99,7 +99,7 @@ class SetRepoRoleRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetRepoRoleRequest.
+        r"""Gets the body of this SetRepoRoleRequest.
 
         :return: The body of this SetRepoRoleRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`
@@ -108,7 +108,7 @@ class SetRepoRoleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetRepoRoleRequest.
+        r"""Sets the body of this SetRepoRoleRequest.
 
         :param body: The body of this SetRepoRoleRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`

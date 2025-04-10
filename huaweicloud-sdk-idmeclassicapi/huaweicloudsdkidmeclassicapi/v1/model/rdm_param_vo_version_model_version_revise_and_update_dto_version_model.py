@@ -27,7 +27,7 @@ class RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel
+        r"""RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
+        r"""Gets the application_id of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -61,7 +61,7 @@ class RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
+        r"""Sets the application_id of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -72,7 +72,7 @@ class RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
+        r"""Gets the params of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
 
         :return: The params of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelVersionReviseAndUpdateDTOVersionModel`
@@ -81,7 +81,7 @@ class RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
+        r"""Sets the params of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
 
         :param params: The params of this RDMParamVOVersionModelVersionReviseAndUpdateDTOVersionModel.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelVersionReviseAndUpdateDTOVersionModel`

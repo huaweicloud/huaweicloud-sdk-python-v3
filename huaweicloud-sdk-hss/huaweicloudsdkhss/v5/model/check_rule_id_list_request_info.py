@@ -25,7 +25,7 @@ class CheckRuleIdListRequestInfo:
     }
 
     def __init__(self, check_rules=None):
-        """CheckRuleIdListRequestInfo
+        r"""CheckRuleIdListRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckRuleIdListRequestInfo:
 
     @property
     def check_rules(self):
-        """Gets the check_rules of this CheckRuleIdListRequestInfo.
+        r"""Gets the check_rules of this CheckRuleIdListRequestInfo.
 
         检查项ID列表
 
@@ -54,7 +54,7 @@ class CheckRuleIdListRequestInfo:
 
     @check_rules.setter
     def check_rules(self, check_rules):
-        """Sets the check_rules of this CheckRuleIdListRequestInfo.
+        r"""Sets the check_rules of this CheckRuleIdListRequestInfo.
 
         检查项ID列表
 

@@ -30,7 +30,7 @@ class CheckNoNewAccessResponse(SdkResponse):
     }
 
     def __init__(self, message=None, check_result=None, reasons=None):
-        """CheckNoNewAccessResponse
+        r"""CheckNoNewAccessResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CheckNoNewAccessResponse.
+        r"""Gets the message of this CheckNoNewAccessResponse.
 
         更新后的策略是否允许新访问权限的消息。
 
@@ -69,7 +69,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CheckNoNewAccessResponse.
+        r"""Sets the message of this CheckNoNewAccessResponse.
 
         更新后的策略是否允许新访问权限的消息。
 
@@ -80,7 +80,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
     @property
     def check_result(self):
-        """Gets the check_result of this CheckNoNewAccessResponse.
+        r"""Gets the check_result of this CheckNoNewAccessResponse.
 
         检查新访问权限的结果。
 
@@ -91,7 +91,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this CheckNoNewAccessResponse.
+        r"""Sets the check_result of this CheckNoNewAccessResponse.
 
         检查新访问权限的结果。
 
@@ -102,7 +102,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
     @property
     def reasons(self):
-        """Gets the reasons of this CheckNoNewAccessResponse.
+        r"""Gets the reasons of this CheckNoNewAccessResponse.
 
         新增action的statement描述。
 
@@ -113,7 +113,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
     @reasons.setter
     def reasons(self, reasons):
-        """Sets the reasons of this CheckNoNewAccessResponse.
+        r"""Sets the reasons of this CheckNoNewAccessResponse.
 
         新增action的statement描述。
 

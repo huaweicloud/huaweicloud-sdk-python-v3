@@ -27,7 +27,7 @@ class WorkitemsModule:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkitemsModule
+        r"""WorkitemsModule
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkitemsModule:
 
     @property
     def id(self):
-        """Gets the id of this WorkitemsModule.
+        r"""Gets the id of this WorkitemsModule.
 
         模块id
 
@@ -61,7 +61,7 @@ class WorkitemsModule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkitemsModule.
+        r"""Sets the id of this WorkitemsModule.
 
         模块id
 
@@ -72,7 +72,7 @@ class WorkitemsModule:
 
     @property
     def name(self):
-        """Gets the name of this WorkitemsModule.
+        r"""Gets the name of this WorkitemsModule.
 
         模块
 
@@ -83,7 +83,7 @@ class WorkitemsModule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkitemsModule.
+        r"""Sets the name of this WorkitemsModule.
 
         模块
 

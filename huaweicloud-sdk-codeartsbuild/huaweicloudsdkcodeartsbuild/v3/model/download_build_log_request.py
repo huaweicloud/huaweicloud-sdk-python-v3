@@ -27,7 +27,7 @@ class DownloadBuildLogRequest:
     }
 
     def __init__(self, record_id=None, log_level=None):
-        """DownloadBuildLogRequest
+        r"""DownloadBuildLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DownloadBuildLogRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this DownloadBuildLogRequest.
+        r"""Gets the record_id of this DownloadBuildLogRequest.
 
         记录ID,36位数字、小写字母、'-'组组合。
 
@@ -60,7 +60,7 @@ class DownloadBuildLogRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this DownloadBuildLogRequest.
+        r"""Sets the record_id of this DownloadBuildLogRequest.
 
         记录ID,36位数字、小写字母、'-'组组合。
 
@@ -71,7 +71,7 @@ class DownloadBuildLogRequest:
 
     @property
     def log_level(self):
-        """Gets the log_level of this DownloadBuildLogRequest.
+        r"""Gets the log_level of this DownloadBuildLogRequest.
 
         日志等级 值为INFO | DEBUG。
 
@@ -82,7 +82,7 @@ class DownloadBuildLogRequest:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this DownloadBuildLogRequest.
+        r"""Sets the log_level of this DownloadBuildLogRequest.
 
         日志等级 值为INFO | DEBUG。
 

@@ -25,7 +25,7 @@ class AddSiteRequest:
     }
 
     def __init__(self, body=None):
-        """AddSiteRequest
+        r"""AddSiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddSiteRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSiteRequest.
+        r"""Gets the body of this AddSiteRequest.
 
         :return: The body of this AddSiteRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddSiteReq`
@@ -52,7 +52,7 @@ class AddSiteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSiteRequest.
+        r"""Sets the body of this AddSiteRequest.
 
         :param body: The body of this AddSiteRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AddSiteReq`

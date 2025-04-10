@@ -39,7 +39,7 @@ class DesktopNamePolicyInfo:
     }
 
     def __init__(self, policy_id=None, policy_name=None, name_prefix=None, digit_number=None, start_number=None, single_domain_user_inc=None, is_default_policy=None, is_contain_user=None):
-        """DesktopNamePolicyInfo
+        r"""DesktopNamePolicyInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DesktopNamePolicyInfo.
+        r"""Gets the policy_id of this DesktopNamePolicyInfo.
 
         策略id。
 
@@ -103,7 +103,7 @@ class DesktopNamePolicyInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DesktopNamePolicyInfo.
+        r"""Sets the policy_id of this DesktopNamePolicyInfo.
 
         策略id。
 
@@ -114,7 +114,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this DesktopNamePolicyInfo.
+        r"""Gets the policy_name of this DesktopNamePolicyInfo.
 
         策略名称。
 
@@ -125,7 +125,7 @@ class DesktopNamePolicyInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this DesktopNamePolicyInfo.
+        r"""Sets the policy_name of this DesktopNamePolicyInfo.
 
         策略名称。
 
@@ -136,7 +136,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def name_prefix(self):
-        """Gets the name_prefix of this DesktopNamePolicyInfo.
+        r"""Gets the name_prefix of this DesktopNamePolicyInfo.
 
         策略前缀。
 
@@ -147,7 +147,7 @@ class DesktopNamePolicyInfo:
 
     @name_prefix.setter
     def name_prefix(self, name_prefix):
-        """Sets the name_prefix of this DesktopNamePolicyInfo.
+        r"""Sets the name_prefix of this DesktopNamePolicyInfo.
 
         策略前缀。
 
@@ -158,7 +158,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def digit_number(self):
-        """Gets the digit_number of this DesktopNamePolicyInfo.
+        r"""Gets the digit_number of this DesktopNamePolicyInfo.
 
         策略后缀有效位数。
 
@@ -169,7 +169,7 @@ class DesktopNamePolicyInfo:
 
     @digit_number.setter
     def digit_number(self, digit_number):
-        """Sets the digit_number of this DesktopNamePolicyInfo.
+        r"""Sets the digit_number of this DesktopNamePolicyInfo.
 
         策略后缀有效位数。
 
@@ -180,7 +180,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def start_number(self):
-        """Gets the start_number of this DesktopNamePolicyInfo.
+        r"""Gets the start_number of this DesktopNamePolicyInfo.
 
         策略后缀起始数字。
 
@@ -191,7 +191,7 @@ class DesktopNamePolicyInfo:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this DesktopNamePolicyInfo.
+        r"""Sets the start_number of this DesktopNamePolicyInfo.
 
         策略后缀起始数字。
 
@@ -202,7 +202,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def single_domain_user_inc(self):
-        """Gets the single_domain_user_inc of this DesktopNamePolicyInfo.
+        r"""Gets the single_domain_user_inc of this DesktopNamePolicyInfo.
 
         是否单用户名递增。 - 1 单用户名递增。 - 0 租户递增。
 
@@ -213,7 +213,7 @@ class DesktopNamePolicyInfo:
 
     @single_domain_user_inc.setter
     def single_domain_user_inc(self, single_domain_user_inc):
-        """Sets the single_domain_user_inc of this DesktopNamePolicyInfo.
+        r"""Sets the single_domain_user_inc of this DesktopNamePolicyInfo.
 
         是否单用户名递增。 - 1 单用户名递增。 - 0 租户递增。
 
@@ -224,7 +224,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def is_default_policy(self):
-        """Gets the is_default_policy of this DesktopNamePolicyInfo.
+        r"""Gets the is_default_policy of this DesktopNamePolicyInfo.
 
         是否为默认策略，true默认策略。
 
@@ -235,7 +235,7 @@ class DesktopNamePolicyInfo:
 
     @is_default_policy.setter
     def is_default_policy(self, is_default_policy):
-        """Sets the is_default_policy of this DesktopNamePolicyInfo.
+        r"""Sets the is_default_policy of this DesktopNamePolicyInfo.
 
         是否为默认策略，true默认策略。
 
@@ -246,7 +246,7 @@ class DesktopNamePolicyInfo:
 
     @property
     def is_contain_user(self):
-        """Gets the is_contain_user of this DesktopNamePolicyInfo.
+        r"""Gets the is_contain_user of this DesktopNamePolicyInfo.
 
         是否包含用户名的桌面名称策略，true包含。
 
@@ -257,7 +257,7 @@ class DesktopNamePolicyInfo:
 
     @is_contain_user.setter
     def is_contain_user(self, is_contain_user):
-        """Sets the is_contain_user of this DesktopNamePolicyInfo.
+        r"""Sets the is_contain_user of this DesktopNamePolicyInfo.
 
         是否包含用户名的桌面名称策略，true包含。
 

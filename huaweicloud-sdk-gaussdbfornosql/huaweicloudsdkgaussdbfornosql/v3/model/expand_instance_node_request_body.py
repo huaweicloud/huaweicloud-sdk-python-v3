@@ -29,7 +29,7 @@ class ExpandInstanceNodeRequestBody:
     }
 
     def __init__(self, num=None, subnet_id=None, is_auto_pay=None):
-        """ExpandInstanceNodeRequestBody
+        r"""ExpandInstanceNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExpandInstanceNodeRequestBody:
 
     @property
     def num(self):
-        """Gets the num of this ExpandInstanceNodeRequestBody.
+        r"""Gets the num of this ExpandInstanceNodeRequestBody.
 
         新增加的节点数量。
 
@@ -67,7 +67,7 @@ class ExpandInstanceNodeRequestBody:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ExpandInstanceNodeRequestBody.
+        r"""Sets the num of this ExpandInstanceNodeRequestBody.
 
         新增加的节点数量。
 
@@ -78,7 +78,7 @@ class ExpandInstanceNodeRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ExpandInstanceNodeRequestBody.
+        r"""Gets the subnet_id of this ExpandInstanceNodeRequestBody.
 
         扩容的节点所使用的子网的ID。 - 该参数仅只支持GeminiDB Cassandra数据库实例扩容节点时传入。 - 所传入的子网ID必须属于实例当前所在的VPC。 - 不传该参数时，系统会在当前实例所使用的子网中为当前扩容的节点选择一个IP容量较为充足的子网。
 
@@ -89,7 +89,7 @@ class ExpandInstanceNodeRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ExpandInstanceNodeRequestBody.
+        r"""Sets the subnet_id of this ExpandInstanceNodeRequestBody.
 
         扩容的节点所使用的子网的ID。 - 该参数仅只支持GeminiDB Cassandra数据库实例扩容节点时传入。 - 所传入的子网ID必须属于实例当前所在的VPC。 - 不传该参数时，系统会在当前实例所使用的子网中为当前扩容的节点选择一个IP容量较为充足的子网。
 
@@ -100,7 +100,7 @@ class ExpandInstanceNodeRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ExpandInstanceNodeRequestBody.
+        r"""Gets the is_auto_pay of this ExpandInstanceNodeRequestBody.
 
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
@@ -111,7 +111,7 @@ class ExpandInstanceNodeRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ExpandInstanceNodeRequestBody.
+        r"""Sets the is_auto_pay of this ExpandInstanceNodeRequestBody.
 
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 

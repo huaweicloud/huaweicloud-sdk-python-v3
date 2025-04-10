@@ -32,7 +32,7 @@ class ListPreCheckTasksResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, items=None):
-        """ListPreCheckTasksResponse
+        r"""ListPreCheckTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListPreCheckTasksResponse.
+        r"""Gets the api_version of this ListPreCheckTasksResponse.
 
         api版本，默认为v3
 
@@ -76,7 +76,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListPreCheckTasksResponse.
+        r"""Sets the api_version of this ListPreCheckTasksResponse.
 
         api版本，默认为v3
 
@@ -87,7 +87,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListPreCheckTasksResponse.
+        r"""Gets the kind of this ListPreCheckTasksResponse.
 
         类型
 
@@ -98,7 +98,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListPreCheckTasksResponse.
+        r"""Sets the kind of this ListPreCheckTasksResponse.
 
         类型
 
@@ -109,7 +109,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListPreCheckTasksResponse.
+        r"""Gets the metadata of this ListPreCheckTasksResponse.
 
         :return: The metadata of this ListPreCheckTasksResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -118,7 +118,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListPreCheckTasksResponse.
+        r"""Sets the metadata of this ListPreCheckTasksResponse.
 
         :param metadata: The metadata of this ListPreCheckTasksResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -127,7 +127,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPreCheckTasksResponse.
+        r"""Gets the items of this ListPreCheckTasksResponse.
 
         集群检查任务列表
 
@@ -138,7 +138,7 @@ class ListPreCheckTasksResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPreCheckTasksResponse.
+        r"""Sets the items of this ListPreCheckTasksResponse.
 
         集群检查任务列表
 

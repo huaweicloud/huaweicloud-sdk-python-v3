@@ -26,7 +26,7 @@ class UpdateSqlFilterControlResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateSqlFilterControlResponse
+        r"""UpdateSqlFilterControlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSqlFilterControlResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateSqlFilterControlResponse.
+        r"""Gets the job_id of this UpdateSqlFilterControlResponse.
 
         开启/关闭SQL限流任务ID。
 
@@ -55,7 +55,7 @@ class UpdateSqlFilterControlResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateSqlFilterControlResponse.
+        r"""Sets the job_id of this UpdateSqlFilterControlResponse.
 
         开启/关闭SQL限流任务ID。
 

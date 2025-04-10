@@ -23,7 +23,7 @@ class RiskHostNum:
     }
 
     def __init__(self):
-        """RiskHostNum
+        r"""RiskHostNum
 
         The model defined in huaweicloud sdk
 

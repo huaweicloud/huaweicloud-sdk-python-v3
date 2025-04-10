@@ -31,7 +31,7 @@ class Trigger:
     }
 
     def __init__(self, metric_name=None, metric_value=None, comparison_operator=None, evaluation_periods=None):
-        """Trigger
+        r"""Trigger
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class Trigger:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this Trigger.
+        r"""Gets the metric_name of this Trigger.
 
         指标名称。 该触发条件会依据该名称对应指标的值来进行判断。 最大长度为64个字符。
 
@@ -72,7 +72,7 @@ class Trigger:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this Trigger.
+        r"""Sets the metric_name of this Trigger.
 
         指标名称。 该触发条件会依据该名称对应指标的值来进行判断。 最大长度为64个字符。
 
@@ -83,7 +83,7 @@ class Trigger:
 
     @property
     def metric_value(self):
-        """Gets the metric_value of this Trigger.
+        r"""Gets the metric_value of this Trigger.
 
         指标阈值。  触发该条件的指标阈值，只允许输入整数或者带两位小数的数。
 
@@ -94,7 +94,7 @@ class Trigger:
 
     @metric_value.setter
     def metric_value(self, metric_value):
-        """Sets the metric_value of this Trigger.
+        r"""Sets the metric_value of this Trigger.
 
         指标阈值。  触发该条件的指标阈值，只允许输入整数或者带两位小数的数。
 
@@ -105,7 +105,7 @@ class Trigger:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this Trigger.
+        r"""Gets the comparison_operator of this Trigger.
 
         指标判断逻辑运算符，包括： - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
 
@@ -116,7 +116,7 @@ class Trigger:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this Trigger.
+        r"""Sets the comparison_operator of this Trigger.
 
         指标判断逻辑运算符，包括： - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
 
@@ -127,7 +127,7 @@ class Trigger:
 
     @property
     def evaluation_periods(self):
-        """Gets the evaluation_periods of this Trigger.
+        r"""Gets the evaluation_periods of this Trigger.
 
         判断连续满足指标阈值的周期数(一个周期为5分钟)。 取值范围[1～288]
 
@@ -138,7 +138,7 @@ class Trigger:
 
     @evaluation_periods.setter
     def evaluation_periods(self, evaluation_periods):
-        """Sets the evaluation_periods of this Trigger.
+        r"""Sets the evaluation_periods of this Trigger.
 
         判断连续满足指标阈值的周期数(一个周期为5分钟)。 取值范围[1～288]
 

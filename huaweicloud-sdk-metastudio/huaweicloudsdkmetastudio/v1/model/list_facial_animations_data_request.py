@@ -25,7 +25,7 @@ class ListFacialAnimationsDataRequest:
     }
 
     def __init__(self, job_id=None):
-        """ListFacialAnimationsDataRequest
+        r"""ListFacialAnimationsDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListFacialAnimationsDataRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListFacialAnimationsDataRequest.
+        r"""Gets the job_id of this ListFacialAnimationsDataRequest.
 
         表情驱动任务ID
 
@@ -53,7 +53,7 @@ class ListFacialAnimationsDataRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListFacialAnimationsDataRequest.
+        r"""Sets the job_id of this ListFacialAnimationsDataRequest.
 
         表情驱动任务ID
 

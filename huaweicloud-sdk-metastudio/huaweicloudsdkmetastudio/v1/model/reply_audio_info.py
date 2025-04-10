@@ -27,7 +27,7 @@ class ReplyAudioInfo:
     }
 
     def __init__(self, audio_url=None, audio_name=None):
-        """ReplyAudioInfo
+        r"""ReplyAudioInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReplyAudioInfo:
 
     @property
     def audio_url(self):
-        """Gets the audio_url of this ReplyAudioInfo.
+        r"""Gets the audio_url of this ReplyAudioInfo.
 
         音频URL
 
@@ -61,7 +61,7 @@ class ReplyAudioInfo:
 
     @audio_url.setter
     def audio_url(self, audio_url):
-        """Sets the audio_url of this ReplyAudioInfo.
+        r"""Sets the audio_url of this ReplyAudioInfo.
 
         音频URL
 
@@ -72,7 +72,7 @@ class ReplyAudioInfo:
 
     @property
     def audio_name(self):
-        """Gets the audio_name of this ReplyAudioInfo.
+        r"""Gets the audio_name of this ReplyAudioInfo.
 
         音频名
 
@@ -83,7 +83,7 @@ class ReplyAudioInfo:
 
     @audio_name.setter
     def audio_name(self, audio_name):
-        """Sets the audio_name of this ReplyAudioInfo.
+        r"""Sets the audio_name of this ReplyAudioInfo.
 
         音频名
 

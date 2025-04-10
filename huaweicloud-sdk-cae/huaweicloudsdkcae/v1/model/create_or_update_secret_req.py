@@ -29,7 +29,7 @@ class CreateOrUpdateSecretReq:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """CreateOrUpdateSecretReq
+        r"""CreateOrUpdateSecretReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateOrUpdateSecretReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateOrUpdateSecretReq.
+        r"""Gets the api_version of this CreateOrUpdateSecretReq.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -65,7 +65,7 @@ class CreateOrUpdateSecretReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateOrUpdateSecretReq.
+        r"""Sets the api_version of this CreateOrUpdateSecretReq.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -76,7 +76,7 @@ class CreateOrUpdateSecretReq:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateOrUpdateSecretReq.
+        r"""Gets the kind of this CreateOrUpdateSecretReq.
 
         资源种类。
 
@@ -87,7 +87,7 @@ class CreateOrUpdateSecretReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateOrUpdateSecretReq.
+        r"""Sets the kind of this CreateOrUpdateSecretReq.
 
         资源种类。
 
@@ -98,7 +98,7 @@ class CreateOrUpdateSecretReq:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateOrUpdateSecretReq.
+        r"""Gets the spec of this CreateOrUpdateSecretReq.
 
         :return: The spec of this CreateOrUpdateSecretReq.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateOrUpdateSecretDetail`
@@ -107,7 +107,7 @@ class CreateOrUpdateSecretReq:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateOrUpdateSecretReq.
+        r"""Sets the spec of this CreateOrUpdateSecretReq.
 
         :param spec: The spec of this CreateOrUpdateSecretReq.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateOrUpdateSecretDetail`

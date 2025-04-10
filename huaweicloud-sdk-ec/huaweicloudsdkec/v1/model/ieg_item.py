@@ -55,7 +55,7 @@ class IegItem:
     }
 
     def __init__(self, id=None, project_id=None, domain_id=None, name=None, area_id=None, equipment_type=None, high_availability=None, frozen_effect=None, created_at=None, updated_at=None, status=None, bind_ecn=None, enterprise_project_id=None, order_id=None, product_id=None, equipment_infos=None):
-        """IegItem
+        r"""IegItem
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class IegItem:
 
     @property
     def id(self):
-        """Gets the id of this IegItem.
+        r"""Gets the id of this IegItem.
 
         智能企业网关ID
 
@@ -158,7 +158,7 @@ class IegItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IegItem.
+        r"""Sets the id of this IegItem.
 
         智能企业网关ID
 
@@ -169,7 +169,7 @@ class IegItem:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IegItem.
+        r"""Gets the project_id of this IegItem.
 
         项目ID
 
@@ -180,7 +180,7 @@ class IegItem:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IegItem.
+        r"""Sets the project_id of this IegItem.
 
         项目ID
 
@@ -191,7 +191,7 @@ class IegItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IegItem.
+        r"""Gets the domain_id of this IegItem.
 
         租户账号ID
 
@@ -202,7 +202,7 @@ class IegItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IegItem.
+        r"""Sets the domain_id of this IegItem.
 
         租户账号ID
 
@@ -213,7 +213,7 @@ class IegItem:
 
     @property
     def name(self):
-        """Gets the name of this IegItem.
+        r"""Gets the name of this IegItem.
 
         智能企业网关名字
 
@@ -224,7 +224,7 @@ class IegItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IegItem.
+        r"""Sets the name of this IegItem.
 
         智能企业网关名字
 
@@ -235,7 +235,7 @@ class IegItem:
 
     @property
     def area_id(self):
-        """Gets the area_id of this IegItem.
+        r"""Gets the area_id of this IegItem.
 
         大区ID
 
@@ -246,7 +246,7 @@ class IegItem:
 
     @area_id.setter
     def area_id(self, area_id):
-        """Sets the area_id of this IegItem.
+        r"""Sets the area_id of this IegItem.
 
         大区ID
 
@@ -257,7 +257,7 @@ class IegItem:
 
     @property
     def equipment_type(self):
-        """Gets the equipment_type of this IegItem.
+        r"""Gets the equipment_type of this IegItem.
 
         设备类型
 
@@ -268,7 +268,7 @@ class IegItem:
 
     @equipment_type.setter
     def equipment_type(self, equipment_type):
-        """Sets the equipment_type of this IegItem.
+        r"""Sets the equipment_type of this IegItem.
 
         设备类型
 
@@ -279,7 +279,7 @@ class IegItem:
 
     @property
     def high_availability(self):
-        """Gets the high_availability of this IegItem.
+        r"""Gets the high_availability of this IegItem.
 
         高可用性
 
@@ -290,7 +290,7 @@ class IegItem:
 
     @high_availability.setter
     def high_availability(self, high_availability):
-        """Sets the high_availability of this IegItem.
+        r"""Sets the high_availability of this IegItem.
 
         高可用性
 
@@ -301,7 +301,7 @@ class IegItem:
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this IegItem.
+        r"""Gets the frozen_effect of this IegItem.
 
         冻结效果
 
@@ -312,7 +312,7 @@ class IegItem:
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this IegItem.
+        r"""Sets the frozen_effect of this IegItem.
 
         冻结效果
 
@@ -323,7 +323,7 @@ class IegItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this IegItem.
+        r"""Gets the created_at of this IegItem.
 
         创建时间
 
@@ -334,7 +334,7 @@ class IegItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this IegItem.
+        r"""Sets the created_at of this IegItem.
 
         创建时间
 
@@ -345,7 +345,7 @@ class IegItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this IegItem.
+        r"""Gets the updated_at of this IegItem.
 
         更新时间
 
@@ -356,7 +356,7 @@ class IegItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this IegItem.
+        r"""Sets the updated_at of this IegItem.
 
         更新时间
 
@@ -367,7 +367,7 @@ class IegItem:
 
     @property
     def status(self):
-        """Gets the status of this IegItem.
+        r"""Gets the status of this IegItem.
 
         状态
 
@@ -378,7 +378,7 @@ class IegItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IegItem.
+        r"""Sets the status of this IegItem.
 
         状态
 
@@ -389,7 +389,7 @@ class IegItem:
 
     @property
     def bind_ecn(self):
-        """Gets the bind_ecn of this IegItem.
+        r"""Gets the bind_ecn of this IegItem.
 
         绑定的企业连接网络ID
 
@@ -400,7 +400,7 @@ class IegItem:
 
     @bind_ecn.setter
     def bind_ecn(self, bind_ecn):
-        """Sets the bind_ecn of this IegItem.
+        r"""Sets the bind_ecn of this IegItem.
 
         绑定的企业连接网络ID
 
@@ -411,7 +411,7 @@ class IegItem:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this IegItem.
+        r"""Gets the enterprise_project_id of this IegItem.
 
         企业项目ID
 
@@ -422,7 +422,7 @@ class IegItem:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this IegItem.
+        r"""Sets the enterprise_project_id of this IegItem.
 
         企业项目ID
 
@@ -433,7 +433,7 @@ class IegItem:
 
     @property
     def order_id(self):
-        """Gets the order_id of this IegItem.
+        r"""Gets the order_id of this IegItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -444,7 +444,7 @@ class IegItem:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this IegItem.
+        r"""Sets the order_id of this IegItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -455,7 +455,7 @@ class IegItem:
 
     @property
     def product_id(self):
-        """Gets the product_id of this IegItem.
+        r"""Gets the product_id of this IegItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -466,7 +466,7 @@ class IegItem:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this IegItem.
+        r"""Sets the product_id of this IegItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -477,7 +477,7 @@ class IegItem:
 
     @property
     def equipment_infos(self):
-        """Gets the equipment_infos of this IegItem.
+        r"""Gets the equipment_infos of this IegItem.
 
         ieg设备信息
 
@@ -488,7 +488,7 @@ class IegItem:
 
     @equipment_infos.setter
     def equipment_infos(self, equipment_infos):
-        """Sets the equipment_infos of this IegItem.
+        r"""Sets the equipment_infos of this IegItem.
 
         ieg设备信息
 

@@ -36,7 +36,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, window_size=None, bandwidth_usage_upper_threshold=None, scale_out_cooldown=None, scale_in_enabled=None, bandwidth_usage_lower_threshold=None, scale_in_cooldown=None):
-        """UpdateInstanceBandwidthAutoScalingPolicyResponse
+        r"""UpdateInstanceBandwidthAutoScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def window_size(self):
-        """Gets the window_size of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the window_size of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         带宽弹性的观测窗口，单位：分钟。支持的取值：1、5、10、15、30。
 
@@ -87,7 +87,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @window_size.setter
     def window_size(self, window_size):
-        """Sets the window_size of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the window_size of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         带宽弹性的观测窗口，单位：分钟。支持的取值：1、5、10、15、30。
 
@@ -98,7 +98,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def bandwidth_usage_upper_threshold(self):
-        """Gets the bandwidth_usage_upper_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the bandwidth_usage_upper_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         触发带宽自动扩展的带宽平均使用率阈值，单位：百分比。支持的取值：50、60、70、80、90、95。
 
@@ -109,7 +109,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @bandwidth_usage_upper_threshold.setter
     def bandwidth_usage_upper_threshold(self, bandwidth_usage_upper_threshold):
-        """Sets the bandwidth_usage_upper_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the bandwidth_usage_upper_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         触发带宽自动扩展的带宽平均使用率阈值，单位：百分比。支持的取值：50、60、70、80、90、95。
 
@@ -120,7 +120,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def scale_out_cooldown(self):
-        """Gets the scale_out_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the scale_out_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         带宽扩展操作的静默时间（两次带宽扩展操作之间的最小间隔时间），单位：秒。 默认值：0。取值范围：0~86400。 
 
@@ -131,7 +131,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @scale_out_cooldown.setter
     def scale_out_cooldown(self, scale_out_cooldown):
-        """Sets the scale_out_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the scale_out_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         带宽扩展操作的静默时间（两次带宽扩展操作之间的最小间隔时间），单位：秒。 默认值：0。取值范围：0~86400。 
 
@@ -142,7 +142,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def scale_in_enabled(self):
-        """Gets the scale_in_enabled of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the scale_in_enabled of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         是否启用带宽自动回缩。默认值：false。该参数暂未启用。
 
@@ -153,7 +153,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @scale_in_enabled.setter
     def scale_in_enabled(self, scale_in_enabled):
-        """Sets the scale_in_enabled of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the scale_in_enabled of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         是否启用带宽自动回缩。默认值：false。该参数暂未启用。
 
@@ -164,7 +164,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def bandwidth_usage_lower_threshold(self):
-        """Gets the bandwidth_usage_lower_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the bandwidth_usage_lower_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         触发带宽自动回缩的带宽平均使用率阈值，单位：百分比。支持的取值：10、20、30。该参数暂未启用。
 
@@ -175,7 +175,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @bandwidth_usage_lower_threshold.setter
     def bandwidth_usage_lower_threshold(self, bandwidth_usage_lower_threshold):
-        """Sets the bandwidth_usage_lower_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the bandwidth_usage_lower_threshold of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         触发带宽自动回缩的带宽平均使用率阈值，单位：百分比。支持的取值：10、20、30。该参数暂未启用。
 
@@ -186,7 +186,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def scale_in_cooldown(self):
-        """Gets the scale_in_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Gets the scale_in_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         带宽回缩操作的静默时间（两次带宽回缩操作之间的最小间隔时间），单位：秒。该参数暂未启用。 默认值：300。取值范围：0~86400。 
 
@@ -197,7 +197,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyResponse(SdkResponse):
 
     @scale_in_cooldown.setter
     def scale_in_cooldown(self, scale_in_cooldown):
-        """Sets the scale_in_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
+        r"""Sets the scale_in_cooldown of this UpdateInstanceBandwidthAutoScalingPolicyResponse.
 
         带宽回缩操作的静默时间（两次带宽回缩操作之间的最小间隔时间），单位：秒。该参数暂未启用。 默认值：300。取值范围：0~86400。 
 

@@ -25,7 +25,7 @@ class StackInstanceStatusMessagePrimitiveTypeHolder:
     }
 
     def __init__(self, status_message=None):
-        """StackInstanceStatusMessagePrimitiveTypeHolder
+        r"""StackInstanceStatusMessagePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackInstanceStatusMessagePrimitiveTypeHolder:
 
     @property
     def status_message(self):
-        """Gets the status_message of this StackInstanceStatusMessagePrimitiveTypeHolder.
+        r"""Gets the status_message of this StackInstanceStatusMessagePrimitiveTypeHolder.
 
         在资源栈实例状态为`INOPERABLE`或`OPERATION_FAILED`时，会显示简要的错误信息总结以供debug
 
@@ -54,7 +54,7 @@ class StackInstanceStatusMessagePrimitiveTypeHolder:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this StackInstanceStatusMessagePrimitiveTypeHolder.
+        r"""Sets the status_message of this StackInstanceStatusMessagePrimitiveTypeHolder.
 
         在资源栈实例状态为`INOPERABLE`或`OPERATION_FAILED`时，会显示简要的错误信息总结以供debug
 

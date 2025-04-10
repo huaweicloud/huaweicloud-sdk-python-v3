@@ -27,7 +27,7 @@ class AssociateKeypairRequestBody:
     }
 
     def __init__(self, keypair_name=None, server=None):
-        """AssociateKeypairRequestBody
+        r"""AssociateKeypairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociateKeypairRequestBody:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this AssociateKeypairRequestBody.
+        r"""Gets the keypair_name of this AssociateKeypairRequestBody.
 
         SSH密钥对的名称
 
@@ -59,7 +59,7 @@ class AssociateKeypairRequestBody:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this AssociateKeypairRequestBody.
+        r"""Sets the keypair_name of this AssociateKeypairRequestBody.
 
         SSH密钥对的名称
 
@@ -70,7 +70,7 @@ class AssociateKeypairRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this AssociateKeypairRequestBody.
+        r"""Gets the server of this AssociateKeypairRequestBody.
 
         :return: The server of this AssociateKeypairRequestBody.
         :rtype: :class:`huaweicloudsdkkps.v3.EcsServerInfo`
@@ -79,7 +79,7 @@ class AssociateKeypairRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this AssociateKeypairRequestBody.
+        r"""Sets the server of this AssociateKeypairRequestBody.
 
         :param server: The server of this AssociateKeypairRequestBody.
         :type server: :class:`huaweicloudsdkkps.v3.EcsServerInfo`

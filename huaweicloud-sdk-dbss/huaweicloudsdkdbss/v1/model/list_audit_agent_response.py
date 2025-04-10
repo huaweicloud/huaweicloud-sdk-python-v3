@@ -26,7 +26,7 @@ class ListAuditAgentResponse(SdkResponse):
     }
 
     def __init__(self, agents=None):
-        """ListAuditAgentResponse
+        r"""ListAuditAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAuditAgentResponse(SdkResponse):
 
     @property
     def agents(self):
-        """Gets the agents of this ListAuditAgentResponse.
+        r"""Gets the agents of this ListAuditAgentResponse.
 
         agent列表
 
@@ -55,7 +55,7 @@ class ListAuditAgentResponse(SdkResponse):
 
     @agents.setter
     def agents(self, agents):
-        """Sets the agents of this ListAuditAgentResponse.
+        r"""Sets the agents of this ListAuditAgentResponse.
 
         agent列表
 

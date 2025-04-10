@@ -25,7 +25,7 @@ class UserLastLogin:
     }
 
     def __init__(self, last_login_at=None):
-        """UserLastLogin
+        r"""UserLastLogin
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UserLastLogin:
 
     @property
     def last_login_at(self):
-        """Gets the last_login_at of this UserLastLogin.
+        r"""Gets the last_login_at of this UserLastLogin.
 
         IAM用户最后登录时间。若不存在则表示从未登录过。
 
@@ -54,7 +54,7 @@ class UserLastLogin:
 
     @last_login_at.setter
     def last_login_at(self, last_login_at):
-        """Sets the last_login_at of this UserLastLogin.
+        r"""Sets the last_login_at of this UserLastLogin.
 
         IAM用户最后登录时间。若不存在则表示从未登录过。
 

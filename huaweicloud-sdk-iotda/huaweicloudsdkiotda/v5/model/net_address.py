@@ -29,7 +29,7 @@ class NetAddress:
     }
 
     def __init__(self, ip=None, port=None, domain=None):
-        """NetAddress
+        r"""NetAddress
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NetAddress:
 
     @property
     def ip(self):
-        """Gets the ip of this NetAddress.
+        r"""Gets the ip of this NetAddress.
 
         **参数说明**：服务的对应IP
 
@@ -68,7 +68,7 @@ class NetAddress:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this NetAddress.
+        r"""Sets the ip of this NetAddress.
 
         **参数说明**：服务的对应IP
 
@@ -79,7 +79,7 @@ class NetAddress:
 
     @property
     def port(self):
-        """Gets the port of this NetAddress.
+        r"""Gets the port of this NetAddress.
 
         **参数说明**：服务对应端口
 
@@ -90,7 +90,7 @@ class NetAddress:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this NetAddress.
+        r"""Sets the port of this NetAddress.
 
         **参数说明**：服务对应端口
 
@@ -101,7 +101,7 @@ class NetAddress:
 
     @property
     def domain(self):
-        """Gets the domain of this NetAddress.
+        r"""Gets the domain of this NetAddress.
 
         **参数说明**：服务对应的域名
 
@@ -112,7 +112,7 @@ class NetAddress:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this NetAddress.
+        r"""Sets the domain of this NetAddress.
 
         **参数说明**：服务对应的域名
 

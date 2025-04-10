@@ -29,7 +29,7 @@ class UpdateDatasourceReqDTO:
     }
 
     def __init__(self, name=None, type=None, content=None):
-        """UpdateDatasourceReqDTO
+        r"""UpdateDatasourceReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDatasourceReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDatasourceReqDTO.
+        r"""Gets the name of this UpdateDatasourceReqDTO.
 
         数据源名称
 
@@ -66,7 +66,7 @@ class UpdateDatasourceReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDatasourceReqDTO.
+        r"""Sets the name of this UpdateDatasourceReqDTO.
 
         数据源名称
 
@@ -77,7 +77,7 @@ class UpdateDatasourceReqDTO:
 
     @property
     def type(self):
-        """Gets the type of this UpdateDatasourceReqDTO.
+        r"""Gets the type of this UpdateDatasourceReqDTO.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -88,7 +88,7 @@ class UpdateDatasourceReqDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateDatasourceReqDTO.
+        r"""Sets the type of this UpdateDatasourceReqDTO.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -99,7 +99,7 @@ class UpdateDatasourceReqDTO:
 
     @property
     def content(self):
-        """Gets the content of this UpdateDatasourceReqDTO.
+        r"""Gets the content of this UpdateDatasourceReqDTO.
 
         :return: The content of this UpdateDatasourceReqDTO.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`
@@ -108,7 +108,7 @@ class UpdateDatasourceReqDTO:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateDatasourceReqDTO.
+        r"""Sets the content of this UpdateDatasourceReqDTO.
 
         :param content: The content of this UpdateDatasourceReqDTO.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`

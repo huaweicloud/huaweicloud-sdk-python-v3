@@ -25,7 +25,7 @@ class RedisModifyDBUserPrivilegeRequest:
     }
 
     def __init__(self, users=None):
-        """RedisModifyDBUserPrivilegeRequest
+        r"""RedisModifyDBUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RedisModifyDBUserPrivilegeRequest:
 
     @property
     def users(self):
-        """Gets the users of this RedisModifyDBUserPrivilegeRequest.
+        r"""Gets the users of this RedisModifyDBUserPrivilegeRequest.
 
         :return: The users of this RedisModifyDBUserPrivilegeRequest.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.RedisModifyDbUserPrivilegeRequestBody`]
@@ -52,7 +52,7 @@ class RedisModifyDBUserPrivilegeRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RedisModifyDBUserPrivilegeRequest.
+        r"""Sets the users of this RedisModifyDBUserPrivilegeRequest.
 
         :param users: The users of this RedisModifyDBUserPrivilegeRequest.
         :type users: list[:class:`huaweicloudsdkgaussdbfornosql.v3.RedisModifyDbUserPrivilegeRequestBody`]

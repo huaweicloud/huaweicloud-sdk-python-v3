@@ -25,7 +25,7 @@ class ListDedicatedHostsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListDedicatedHostsByTagsRequest
+        r"""ListDedicatedHostsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDedicatedHostsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDedicatedHostsByTagsRequest.
+        r"""Gets the body of this ListDedicatedHostsByTagsRequest.
 
         :return: The body of this ListDedicatedHostsByTagsRequest.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`
@@ -52,7 +52,7 @@ class ListDedicatedHostsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDedicatedHostsByTagsRequest.
+        r"""Sets the body of this ListDedicatedHostsByTagsRequest.
 
         :param body: The body of this ListDedicatedHostsByTagsRequest.
         :type body: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`

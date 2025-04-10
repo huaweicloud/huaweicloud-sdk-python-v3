@@ -25,7 +25,7 @@ class ShowInstanceTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowInstanceTagsRequest
+        r"""ShowInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowInstanceTagsRequest.
+        r"""Gets the resource_id of this ShowInstanceTagsRequest.
 
         资源ID。(list接口获取)
 
@@ -53,7 +53,7 @@ class ShowInstanceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowInstanceTagsRequest.
+        r"""Sets the resource_id of this ShowInstanceTagsRequest.
 
         资源ID。(list接口获取)
 

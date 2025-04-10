@@ -57,7 +57,7 @@ class ListProductsRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, app_id=None, id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, device_type=None, product_type=None, protocol_type=None, created_user_name=None, created_date_start=None, created_date_end=None, offset=None, app_name=None, product_serial=None):
-        """ListProductsRequest
+        r"""ListProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class ListProductsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListProductsRequest.
+        r"""Gets the instance_id of this ListProductsRequest.
 
         实例ID
 
@@ -165,7 +165,7 @@ class ListProductsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListProductsRequest.
+        r"""Sets the instance_id of this ListProductsRequest.
 
         实例ID
 
@@ -176,7 +176,7 @@ class ListProductsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProductsRequest.
+        r"""Gets the limit of this ListProductsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -187,7 +187,7 @@ class ListProductsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProductsRequest.
+        r"""Sets the limit of this ListProductsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -198,7 +198,7 @@ class ListProductsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListProductsRequest.
+        r"""Gets the app_id of this ListProductsRequest.
 
         应用ID
 
@@ -209,7 +209,7 @@ class ListProductsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListProductsRequest.
+        r"""Sets the app_id of this ListProductsRequest.
 
         应用ID
 
@@ -220,7 +220,7 @@ class ListProductsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListProductsRequest.
+        r"""Gets the id of this ListProductsRequest.
 
         产品ID
 
@@ -231,7 +231,7 @@ class ListProductsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListProductsRequest.
+        r"""Sets the id of this ListProductsRequest.
 
         产品ID
 
@@ -242,7 +242,7 @@ class ListProductsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListProductsRequest.
+        r"""Gets the name of this ListProductsRequest.
 
         产品名称
 
@@ -253,7 +253,7 @@ class ListProductsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProductsRequest.
+        r"""Sets the name of this ListProductsRequest.
 
         产品名称
 
@@ -264,7 +264,7 @@ class ListProductsRequest:
 
     @property
     def manufacturer_id(self):
-        """Gets the manufacturer_id of this ListProductsRequest.
+        r"""Gets the manufacturer_id of this ListProductsRequest.
 
         厂商ID
 
@@ -275,7 +275,7 @@ class ListProductsRequest:
 
     @manufacturer_id.setter
     def manufacturer_id(self, manufacturer_id):
-        """Sets the manufacturer_id of this ListProductsRequest.
+        r"""Sets the manufacturer_id of this ListProductsRequest.
 
         厂商ID
 
@@ -286,7 +286,7 @@ class ListProductsRequest:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this ListProductsRequest.
+        r"""Gets the manufacturer_name of this ListProductsRequest.
 
         厂商名称
 
@@ -297,7 +297,7 @@ class ListProductsRequest:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this ListProductsRequest.
+        r"""Sets the manufacturer_name of this ListProductsRequest.
 
         厂商名称
 
@@ -308,7 +308,7 @@ class ListProductsRequest:
 
     @property
     def model(self):
-        """Gets the model of this ListProductsRequest.
+        r"""Gets the model of this ListProductsRequest.
 
         型号
 
@@ -319,7 +319,7 @@ class ListProductsRequest:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ListProductsRequest.
+        r"""Sets the model of this ListProductsRequest.
 
         型号
 
@@ -330,7 +330,7 @@ class ListProductsRequest:
 
     @property
     def device_type(self):
-        """Gets the device_type of this ListProductsRequest.
+        r"""Gets the device_type of this ListProductsRequest.
 
         产品的设备类型，默认Default
 
@@ -341,7 +341,7 @@ class ListProductsRequest:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ListProductsRequest.
+        r"""Sets the device_type of this ListProductsRequest.
 
         产品的设备类型，默认Default
 
@@ -352,7 +352,7 @@ class ListProductsRequest:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ListProductsRequest.
+        r"""Gets the product_type of this ListProductsRequest.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -363,7 +363,7 @@ class ListProductsRequest:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ListProductsRequest.
+        r"""Sets the product_type of this ListProductsRequest.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -374,7 +374,7 @@ class ListProductsRequest:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ListProductsRequest.
+        r"""Gets the protocol_type of this ListProductsRequest.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -385,7 +385,7 @@ class ListProductsRequest:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ListProductsRequest.
+        r"""Sets the protocol_type of this ListProductsRequest.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -396,7 +396,7 @@ class ListProductsRequest:
 
     @property
     def created_user_name(self):
-        """Gets the created_user_name of this ListProductsRequest.
+        r"""Gets the created_user_name of this ListProductsRequest.
 
         创建用户
 
@@ -407,7 +407,7 @@ class ListProductsRequest:
 
     @created_user_name.setter
     def created_user_name(self, created_user_name):
-        """Sets the created_user_name of this ListProductsRequest.
+        r"""Sets the created_user_name of this ListProductsRequest.
 
         创建用户
 
@@ -418,7 +418,7 @@ class ListProductsRequest:
 
     @property
     def created_date_start(self):
-        """Gets the created_date_start of this ListProductsRequest.
+        r"""Gets the created_date_start of this ListProductsRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -429,7 +429,7 @@ class ListProductsRequest:
 
     @created_date_start.setter
     def created_date_start(self, created_date_start):
-        """Sets the created_date_start of this ListProductsRequest.
+        r"""Sets the created_date_start of this ListProductsRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -440,7 +440,7 @@ class ListProductsRequest:
 
     @property
     def created_date_end(self):
-        """Gets the created_date_end of this ListProductsRequest.
+        r"""Gets the created_date_end of this ListProductsRequest.
 
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
@@ -451,7 +451,7 @@ class ListProductsRequest:
 
     @created_date_end.setter
     def created_date_end(self, created_date_end):
-        """Sets the created_date_end of this ListProductsRequest.
+        r"""Sets the created_date_end of this ListProductsRequest.
 
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
@@ -462,7 +462,7 @@ class ListProductsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProductsRequest.
+        r"""Gets the offset of this ListProductsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -473,7 +473,7 @@ class ListProductsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProductsRequest.
+        r"""Sets the offset of this ListProductsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -484,7 +484,7 @@ class ListProductsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListProductsRequest.
+        r"""Gets the app_name of this ListProductsRequest.
 
         应用名称
 
@@ -495,7 +495,7 @@ class ListProductsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListProductsRequest.
+        r"""Sets the app_name of this ListProductsRequest.
 
         应用名称
 
@@ -506,7 +506,7 @@ class ListProductsRequest:
 
     @property
     def product_serial(self):
-        """Gets the product_serial of this ListProductsRequest.
+        r"""Gets the product_serial of this ListProductsRequest.
 
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
@@ -517,7 +517,7 @@ class ListProductsRequest:
 
     @product_serial.setter
     def product_serial(self, product_serial):
-        """Sets the product_serial of this ListProductsRequest.
+        r"""Sets the product_serial of this ListProductsRequest.
 
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 

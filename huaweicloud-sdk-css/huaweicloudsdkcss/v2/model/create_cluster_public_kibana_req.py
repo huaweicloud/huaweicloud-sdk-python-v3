@@ -27,7 +27,7 @@ class CreateClusterPublicKibanaReq:
     }
 
     def __init__(self, eip_size=None, elb_white_list=None):
-        """CreateClusterPublicKibanaReq
+        r"""CreateClusterPublicKibanaReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusterPublicKibanaReq:
 
     @property
     def eip_size(self):
-        """Gets the eip_size of this CreateClusterPublicKibanaReq.
+        r"""Gets the eip_size of this CreateClusterPublicKibanaReq.
 
         带宽大小。
 
@@ -59,7 +59,7 @@ class CreateClusterPublicKibanaReq:
 
     @eip_size.setter
     def eip_size(self, eip_size):
-        """Sets the eip_size of this CreateClusterPublicKibanaReq.
+        r"""Sets the eip_size of this CreateClusterPublicKibanaReq.
 
         带宽大小。
 
@@ -70,7 +70,7 @@ class CreateClusterPublicKibanaReq:
 
     @property
     def elb_white_list(self):
-        """Gets the elb_white_list of this CreateClusterPublicKibanaReq.
+        r"""Gets the elb_white_list of this CreateClusterPublicKibanaReq.
 
         :return: The elb_white_list of this CreateClusterPublicKibanaReq.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`
@@ -79,7 +79,7 @@ class CreateClusterPublicKibanaReq:
 
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
-        """Sets the elb_white_list of this CreateClusterPublicKibanaReq.
+        r"""Sets the elb_white_list of this CreateClusterPublicKibanaReq.
 
         :param elb_white_list: The elb_white_list of this CreateClusterPublicKibanaReq.
         :type elb_white_list: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`

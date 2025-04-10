@@ -25,7 +25,7 @@ class CreateApplicationRequestBodyMetadata:
     }
 
     def __init__(self, name=None):
-        """CreateApplicationRequestBodyMetadata
+        r"""CreateApplicationRequestBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateApplicationRequestBodyMetadata:
 
     @property
     def name(self):
-        """Gets the name of this CreateApplicationRequestBodyMetadata.
+        r"""Gets the name of this CreateApplicationRequestBodyMetadata.
 
         应用名称。
 
@@ -53,7 +53,7 @@ class CreateApplicationRequestBodyMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateApplicationRequestBodyMetadata.
+        r"""Sets the name of this CreateApplicationRequestBodyMetadata.
 
         应用名称。
 

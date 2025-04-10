@@ -29,7 +29,7 @@ class UpdateUserReq:
     }
 
     def __init__(self, new_password=None, user_name=None, user_desc=None):
-        """UpdateUserReq
+        r"""UpdateUserReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateUserReq:
 
     @property
     def new_password(self):
-        """Gets the new_password of this UpdateUserReq.
+        r"""Gets the new_password of this UpdateUserReq.
 
         用户新密码。  不能与名称或倒序的名称相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
@@ -68,7 +68,7 @@ class UpdateUserReq:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this UpdateUserReq.
+        r"""Sets the new_password of this UpdateUserReq.
 
         用户新密码。  不能与名称或倒序的名称相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
@@ -79,7 +79,7 @@ class UpdateUserReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdateUserReq.
+        r"""Gets the user_name of this UpdateUserReq.
 
         用户名。
 
@@ -90,7 +90,7 @@ class UpdateUserReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdateUserReq.
+        r"""Sets the user_name of this UpdateUserReq.
 
         用户名。
 
@@ -101,7 +101,7 @@ class UpdateUserReq:
 
     @property
     def user_desc(self):
-        """Gets the user_desc of this UpdateUserReq.
+        r"""Gets the user_desc of this UpdateUserReq.
 
         用户描述。
 
@@ -112,7 +112,7 @@ class UpdateUserReq:
 
     @user_desc.setter
     def user_desc(self, user_desc):
-        """Sets the user_desc of this UpdateUserReq.
+        r"""Sets the user_desc of this UpdateUserReq.
 
         用户描述。
 

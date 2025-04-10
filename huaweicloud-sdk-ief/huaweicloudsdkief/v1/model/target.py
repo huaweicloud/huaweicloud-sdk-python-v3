@@ -27,7 +27,7 @@ class Target:
     }
 
     def __init__(self, extension_info=None, target_id=None):
-        """Target
+        r"""Target
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Target:
 
     @property
     def extension_info(self):
-        """Gets the extension_info of this Target.
+        r"""Gets the extension_info of this Target.
 
         批量处理对象基本信息
 
@@ -60,7 +60,7 @@ class Target:
 
     @extension_info.setter
     def extension_info(self, extension_info):
-        """Sets the extension_info of this Target.
+        r"""Sets the extension_info of this Target.
 
         批量处理对象基本信息
 
@@ -71,7 +71,7 @@ class Target:
 
     @property
     def target_id(self):
-        """Gets the target_id of this Target.
+        r"""Gets the target_id of this Target.
 
         批量处理对象ID
 
@@ -82,7 +82,7 @@ class Target:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this Target.
+        r"""Sets the target_id of this Target.
 
         批量处理对象ID
 

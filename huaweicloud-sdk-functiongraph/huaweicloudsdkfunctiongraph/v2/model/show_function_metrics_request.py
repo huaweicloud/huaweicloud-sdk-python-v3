@@ -27,7 +27,7 @@ class ShowFunctionMetricsRequest:
     }
 
     def __init__(self, func_urn=None, period=None):
-        """ShowFunctionMetricsRequest
+        r"""ShowFunctionMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowFunctionMetricsRequest:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ShowFunctionMetricsRequest.
+        r"""Gets the func_urn of this ShowFunctionMetricsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class ShowFunctionMetricsRequest:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ShowFunctionMetricsRequest.
+        r"""Sets the func_urn of this ShowFunctionMetricsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class ShowFunctionMetricsRequest:
 
     @property
     def period(self):
-        """Gets the period of this ShowFunctionMetricsRequest.
+        r"""Gets the period of this ShowFunctionMetricsRequest.
 
         时间间隔（单位：min）
 
@@ -81,7 +81,7 @@ class ShowFunctionMetricsRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowFunctionMetricsRequest.
+        r"""Sets the period of this ShowFunctionMetricsRequest.
 
         时间间隔（单位：min）
 

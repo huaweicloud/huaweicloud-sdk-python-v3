@@ -27,7 +27,7 @@ class AddAuditAgentRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddAuditAgentRequest
+        r"""AddAuditAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddAuditAgentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddAuditAgentRequest.
+        r"""Gets the instance_id of this AddAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class AddAuditAgentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddAuditAgentRequest.
+        r"""Sets the instance_id of this AddAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class AddAuditAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAuditAgentRequest.
+        r"""Gets the body of this AddAuditAgentRequest.
 
         :return: The body of this AddAuditAgentRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AuditAgentRequest`
@@ -80,7 +80,7 @@ class AddAuditAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAuditAgentRequest.
+        r"""Sets the body of this AddAuditAgentRequest.
 
         :param body: The body of this AddAuditAgentRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.AuditAgentRequest`

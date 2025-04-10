@@ -33,7 +33,7 @@ class ApiParaForAuthToInstance:
     }
 
     def __init__(self, api_id=None, instance_id=None, app_id=None, apply_type=None, time=None):
-        """ApiParaForAuthToInstance
+        r"""ApiParaForAuthToInstance
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApiParaForAuthToInstance:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiParaForAuthToInstance.
+        r"""Gets the api_id of this ApiParaForAuthToInstance.
 
         api编号
 
@@ -82,7 +82,7 @@ class ApiParaForAuthToInstance:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiParaForAuthToInstance.
+        r"""Sets the api_id of this ApiParaForAuthToInstance.
 
         api编号
 
@@ -93,7 +93,7 @@ class ApiParaForAuthToInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApiParaForAuthToInstance.
+        r"""Gets the instance_id of this ApiParaForAuthToInstance.
 
         集群编号
 
@@ -104,7 +104,7 @@ class ApiParaForAuthToInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApiParaForAuthToInstance.
+        r"""Sets the instance_id of this ApiParaForAuthToInstance.
 
         集群编号
 
@@ -115,7 +115,7 @@ class ApiParaForAuthToInstance:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ApiParaForAuthToInstance.
+        r"""Gets the app_id of this ApiParaForAuthToInstance.
 
         app编号
 
@@ -126,7 +126,7 @@ class ApiParaForAuthToInstance:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ApiParaForAuthToInstance.
+        r"""Sets the app_id of this ApiParaForAuthToInstance.
 
         app编号
 
@@ -137,7 +137,7 @@ class ApiParaForAuthToInstance:
 
     @property
     def apply_type(self):
-        """Gets the apply_type of this ApiParaForAuthToInstance.
+        r"""Gets the apply_type of this ApiParaForAuthToInstance.
 
         申请类型
 
@@ -148,7 +148,7 @@ class ApiParaForAuthToInstance:
 
     @apply_type.setter
     def apply_type(self, apply_type):
-        """Sets the apply_type of this ApiParaForAuthToInstance.
+        r"""Sets the apply_type of this ApiParaForAuthToInstance.
 
         申请类型
 
@@ -159,7 +159,7 @@ class ApiParaForAuthToInstance:
 
     @property
     def time(self):
-        """Gets the time of this ApiParaForAuthToInstance.
+        r"""Gets the time of this ApiParaForAuthToInstance.
 
         截止时间
 
@@ -170,7 +170,7 @@ class ApiParaForAuthToInstance:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ApiParaForAuthToInstance.
+        r"""Sets the time of this ApiParaForAuthToInstance.
 
         截止时间
 

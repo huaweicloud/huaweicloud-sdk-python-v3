@@ -33,7 +33,7 @@ class ListDomainParseIpRequest:
     }
 
     def __init__(self, address_type=None, domain_address_id=None, domain_set_id=None, fw_instance_id=None, enterprise_project_id=None):
-        """ListDomainParseIpRequest
+        r"""ListDomainParseIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListDomainParseIpRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this ListDomainParseIpRequest.
+        r"""Gets the address_type of this ListDomainParseIpRequest.
 
         地址类型，0 ipv4,1 ipv6
 
@@ -79,7 +79,7 @@ class ListDomainParseIpRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this ListDomainParseIpRequest.
+        r"""Sets the address_type of this ListDomainParseIpRequest.
 
         地址类型，0 ipv4,1 ipv6
 
@@ -90,7 +90,7 @@ class ListDomainParseIpRequest:
 
     @property
     def domain_address_id(self):
-        """Gets the domain_address_id of this ListDomainParseIpRequest.
+        r"""Gets the domain_address_id of this ListDomainParseIpRequest.
 
         域名id，域名id可通过[获取域名组下域名列表接口](ListDomains.xml)查询获得，通过返回值中的data.records.domain_address_id（.表示各对象之间层级的区分）获取
 
@@ -101,7 +101,7 @@ class ListDomainParseIpRequest:
 
     @domain_address_id.setter
     def domain_address_id(self, domain_address_id):
-        """Sets the domain_address_id of this ListDomainParseIpRequest.
+        r"""Sets the domain_address_id of this ListDomainParseIpRequest.
 
         域名id，域名id可通过[获取域名组下域名列表接口](ListDomains.xml)查询获得，通过返回值中的data.records.domain_address_id（.表示各对象之间层级的区分）获取
 
@@ -112,7 +112,7 @@ class ListDomainParseIpRequest:
 
     @property
     def domain_set_id(self):
-        """Gets the domain_set_id of this ListDomainParseIpRequest.
+        r"""Gets the domain_set_id of this ListDomainParseIpRequest.
 
         域名组ID，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获取
 
@@ -123,7 +123,7 @@ class ListDomainParseIpRequest:
 
     @domain_set_id.setter
     def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this ListDomainParseIpRequest.
+        r"""Sets the domain_set_id of this ListDomainParseIpRequest.
 
         域名组ID，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获取
 
@@ -134,7 +134,7 @@ class ListDomainParseIpRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListDomainParseIpRequest.
+        r"""Gets the fw_instance_id of this ListDomainParseIpRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -145,7 +145,7 @@ class ListDomainParseIpRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListDomainParseIpRequest.
+        r"""Sets the fw_instance_id of this ListDomainParseIpRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -156,7 +156,7 @@ class ListDomainParseIpRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDomainParseIpRequest.
+        r"""Gets the enterprise_project_id of this ListDomainParseIpRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -167,7 +167,7 @@ class ListDomainParseIpRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDomainParseIpRequest.
+        r"""Sets the enterprise_project_id of this ListDomainParseIpRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

@@ -29,7 +29,7 @@ class UpdateEquipmentWanConfigRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """UpdateEquipmentWanConfigRequest
+        r"""UpdateEquipmentWanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEquipmentWanConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateEquipmentWanConfigRequest.
+        r"""Gets the ieg_id of this UpdateEquipmentWanConfigRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateEquipmentWanConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateEquipmentWanConfigRequest.
+        r"""Sets the ieg_id of this UpdateEquipmentWanConfigRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateEquipmentWanConfigRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this UpdateEquipmentWanConfigRequest.
+        r"""Gets the equipment_id of this UpdateEquipmentWanConfigRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class UpdateEquipmentWanConfigRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this UpdateEquipmentWanConfigRequest.
+        r"""Sets the equipment_id of this UpdateEquipmentWanConfigRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class UpdateEquipmentWanConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEquipmentWanConfigRequest.
+        r"""Gets the body of this UpdateEquipmentWanConfigRequest.
 
         :return: The body of this UpdateEquipmentWanConfigRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EquipmentWanItemList`
@@ -108,7 +108,7 @@ class UpdateEquipmentWanConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEquipmentWanConfigRequest.
+        r"""Sets the body of this UpdateEquipmentWanConfigRequest.
 
         :param body: The body of this UpdateEquipmentWanConfigRequest.
         :type body: :class:`huaweicloudsdkec.v1.EquipmentWanItemList`

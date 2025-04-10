@@ -32,7 +32,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
     }
 
     def __init__(self, count=None, duration=None, fail_count=None, running_count=None):
-        """ShowWorkFlowMetricResponse
+        r"""ShowWorkFlowMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowWorkFlowMetricResponse.
+        r"""Gets the count of this ShowWorkFlowMetricResponse.
 
         执行次数
 
@@ -76,7 +76,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowWorkFlowMetricResponse.
+        r"""Sets the count of this ShowWorkFlowMetricResponse.
 
         执行次数
 
@@ -87,7 +87,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowWorkFlowMetricResponse.
+        r"""Gets the duration of this ShowWorkFlowMetricResponse.
 
         平均时延，单位毫秒
 
@@ -98,7 +98,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowWorkFlowMetricResponse.
+        r"""Sets the duration of this ShowWorkFlowMetricResponse.
 
         平均时延，单位毫秒
 
@@ -109,7 +109,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this ShowWorkFlowMetricResponse.
+        r"""Gets the fail_count of this ShowWorkFlowMetricResponse.
 
         错误次数
 
@@ -120,7 +120,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this ShowWorkFlowMetricResponse.
+        r"""Sets the fail_count of this ShowWorkFlowMetricResponse.
 
         错误次数
 
@@ -131,7 +131,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @property
     def running_count(self):
-        """Gets the running_count of this ShowWorkFlowMetricResponse.
+        r"""Gets the running_count of this ShowWorkFlowMetricResponse.
 
         运行中数量
 
@@ -142,7 +142,7 @@ class ShowWorkFlowMetricResponse(SdkResponse):
 
     @running_count.setter
     def running_count(self, running_count):
-        """Sets the running_count of this ShowWorkFlowMetricResponse.
+        r"""Sets the running_count of this ShowWorkFlowMetricResponse.
 
         运行中数量
 

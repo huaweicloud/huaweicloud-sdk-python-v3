@@ -55,7 +55,7 @@ class ListAggregationLogicTablesRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, approver=None, owner=None, status=None, sync_status=None, sync_key=None, l3_id=None, begin_time=None, end_time=None, limit=None, offset=None, biz_catalog_id=None, auto_generate=None):
-        """ListAggregationLogicTablesRequest
+        r"""ListAggregationLogicTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListAggregationLogicTablesRequest.
+        r"""Gets the workspace of this ListAggregationLogicTablesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -158,7 +158,7 @@ class ListAggregationLogicTablesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListAggregationLogicTablesRequest.
+        r"""Sets the workspace of this ListAggregationLogicTablesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -169,7 +169,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListAggregationLogicTablesRequest.
+        r"""Gets the x_project_id of this ListAggregationLogicTablesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -180,7 +180,7 @@ class ListAggregationLogicTablesRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListAggregationLogicTablesRequest.
+        r"""Sets the x_project_id of this ListAggregationLogicTablesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -191,7 +191,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAggregationLogicTablesRequest.
+        r"""Gets the name of this ListAggregationLogicTablesRequest.
 
         按名称或编码模糊查询。
 
@@ -202,7 +202,7 @@ class ListAggregationLogicTablesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAggregationLogicTablesRequest.
+        r"""Sets the name of this ListAggregationLogicTablesRequest.
 
         按名称或编码模糊查询。
 
@@ -213,7 +213,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ListAggregationLogicTablesRequest.
+        r"""Gets the create_by of this ListAggregationLogicTablesRequest.
 
         按创建者查询。
 
@@ -224,7 +224,7 @@ class ListAggregationLogicTablesRequest:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ListAggregationLogicTablesRequest.
+        r"""Sets the create_by of this ListAggregationLogicTablesRequest.
 
         按创建者查询。
 
@@ -235,7 +235,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def approver(self):
-        """Gets the approver of this ListAggregationLogicTablesRequest.
+        r"""Gets the approver of this ListAggregationLogicTablesRequest.
 
         按审核人查询。
 
@@ -246,7 +246,7 @@ class ListAggregationLogicTablesRequest:
 
     @approver.setter
     def approver(self, approver):
-        """Sets the approver of this ListAggregationLogicTablesRequest.
+        r"""Sets the approver of this ListAggregationLogicTablesRequest.
 
         按审核人查询。
 
@@ -257,7 +257,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this ListAggregationLogicTablesRequest.
+        r"""Gets the owner of this ListAggregationLogicTablesRequest.
 
         按负责人查询。
 
@@ -268,7 +268,7 @@ class ListAggregationLogicTablesRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListAggregationLogicTablesRequest.
+        r"""Sets the owner of this ListAggregationLogicTablesRequest.
 
         按负责人查询。
 
@@ -279,7 +279,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAggregationLogicTablesRequest.
+        r"""Gets the status of this ListAggregationLogicTablesRequest.
 
         业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
@@ -290,7 +290,7 @@ class ListAggregationLogicTablesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAggregationLogicTablesRequest.
+        r"""Sets the status of this ListAggregationLogicTablesRequest.
 
         业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
@@ -301,7 +301,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ListAggregationLogicTablesRequest.
+        r"""Gets the sync_status of this ListAggregationLogicTablesRequest.
 
         同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
@@ -312,7 +312,7 @@ class ListAggregationLogicTablesRequest:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ListAggregationLogicTablesRequest.
+        r"""Sets the sync_status of this ListAggregationLogicTablesRequest.
 
         同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
@@ -323,7 +323,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def sync_key(self):
-        """Gets the sync_key of this ListAggregationLogicTablesRequest.
+        r"""Gets the sync_key of this ListAggregationLogicTablesRequest.
 
         同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
@@ -334,7 +334,7 @@ class ListAggregationLogicTablesRequest:
 
     @sync_key.setter
     def sync_key(self, sync_key):
-        """Sets the sync_key of this ListAggregationLogicTablesRequest.
+        r"""Sets the sync_key of this ListAggregationLogicTablesRequest.
 
         同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
@@ -345,7 +345,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this ListAggregationLogicTablesRequest.
+        r"""Gets the l3_id of this ListAggregationLogicTablesRequest.
 
         业务对象l3的ID，ID字符串。
 
@@ -356,7 +356,7 @@ class ListAggregationLogicTablesRequest:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this ListAggregationLogicTablesRequest.
+        r"""Sets the l3_id of this ListAggregationLogicTablesRequest.
 
         业务对象l3的ID，ID字符串。
 
@@ -367,7 +367,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAggregationLogicTablesRequest.
+        r"""Gets the begin_time of this ListAggregationLogicTablesRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -378,7 +378,7 @@ class ListAggregationLogicTablesRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAggregationLogicTablesRequest.
+        r"""Sets the begin_time of this ListAggregationLogicTablesRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -389,7 +389,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAggregationLogicTablesRequest.
+        r"""Gets the end_time of this ListAggregationLogicTablesRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -400,7 +400,7 @@ class ListAggregationLogicTablesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAggregationLogicTablesRequest.
+        r"""Sets the end_time of this ListAggregationLogicTablesRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -411,7 +411,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAggregationLogicTablesRequest.
+        r"""Gets the limit of this ListAggregationLogicTablesRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -422,7 +422,7 @@ class ListAggregationLogicTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAggregationLogicTablesRequest.
+        r"""Sets the limit of this ListAggregationLogicTablesRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -433,7 +433,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAggregationLogicTablesRequest.
+        r"""Gets the offset of this ListAggregationLogicTablesRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -444,7 +444,7 @@ class ListAggregationLogicTablesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAggregationLogicTablesRequest.
+        r"""Sets the offset of this ListAggregationLogicTablesRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -455,7 +455,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def biz_catalog_id(self):
-        """Gets the biz_catalog_id of this ListAggregationLogicTablesRequest.
+        r"""Gets the biz_catalog_id of this ListAggregationLogicTablesRequest.
 
         所属的业务分层的ID。
 
@@ -466,7 +466,7 @@ class ListAggregationLogicTablesRequest:
 
     @biz_catalog_id.setter
     def biz_catalog_id(self, biz_catalog_id):
-        """Sets the biz_catalog_id of this ListAggregationLogicTablesRequest.
+        r"""Sets the biz_catalog_id of this ListAggregationLogicTablesRequest.
 
         所属的业务分层的ID。
 
@@ -477,7 +477,7 @@ class ListAggregationLogicTablesRequest:
 
     @property
     def auto_generate(self):
-        """Gets the auto_generate of this ListAggregationLogicTablesRequest.
+        r"""Gets the auto_generate of this ListAggregationLogicTablesRequest.
 
         是否自动生成
 
@@ -488,7 +488,7 @@ class ListAggregationLogicTablesRequest:
 
     @auto_generate.setter
     def auto_generate(self, auto_generate):
-        """Sets the auto_generate of this ListAggregationLogicTablesRequest.
+        r"""Sets the auto_generate of this ListAggregationLogicTablesRequest.
 
         是否自动生成
 

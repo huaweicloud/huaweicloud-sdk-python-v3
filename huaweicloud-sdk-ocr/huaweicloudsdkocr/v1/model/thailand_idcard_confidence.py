@@ -57,7 +57,7 @@ class ThailandIdcardConfidence:
     }
 
     def __init__(self, id_number=None, name_th=None, name_en=None, ref_number=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None):
-        """ThailandIdcardConfidence
+        r"""ThailandIdcardConfidence
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ThailandIdcardConfidence:
 
     @property
     def id_number(self):
-        """Gets the id_number of this ThailandIdcardConfidence.
+        r"""Gets the id_number of this ThailandIdcardConfidence.
 
         身份证号置信度。 
 
@@ -166,7 +166,7 @@ class ThailandIdcardConfidence:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this ThailandIdcardConfidence.
+        r"""Sets the id_number of this ThailandIdcardConfidence.
 
         身份证号置信度。 
 
@@ -177,7 +177,7 @@ class ThailandIdcardConfidence:
 
     @property
     def name_th(self):
-        """Gets the name_th of this ThailandIdcardConfidence.
+        r"""Gets the name_th of this ThailandIdcardConfidence.
 
         泰文名字置信度。 
 
@@ -188,7 +188,7 @@ class ThailandIdcardConfidence:
 
     @name_th.setter
     def name_th(self, name_th):
-        """Sets the name_th of this ThailandIdcardConfidence.
+        r"""Sets the name_th of this ThailandIdcardConfidence.
 
         泰文名字置信度。 
 
@@ -199,7 +199,7 @@ class ThailandIdcardConfidence:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ThailandIdcardConfidence.
+        r"""Gets the name_en of this ThailandIdcardConfidence.
 
         英文名置信度。 
 
@@ -210,7 +210,7 @@ class ThailandIdcardConfidence:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ThailandIdcardConfidence.
+        r"""Sets the name_en of this ThailandIdcardConfidence.
 
         英文名置信度。 
 
@@ -221,7 +221,7 @@ class ThailandIdcardConfidence:
 
     @property
     def ref_number(self):
-        """Gets the ref_number of this ThailandIdcardConfidence.
+        r"""Gets the ref_number of this ThailandIdcardConfidence.
 
         参考编码置信度。 
 
@@ -232,7 +232,7 @@ class ThailandIdcardConfidence:
 
     @ref_number.setter
     def ref_number(self, ref_number):
-        """Sets the ref_number of this ThailandIdcardConfidence.
+        r"""Sets the ref_number of this ThailandIdcardConfidence.
 
         参考编码置信度。 
 
@@ -243,7 +243,7 @@ class ThailandIdcardConfidence:
 
     @property
     def first_name_en(self):
-        """Gets the first_name_en of this ThailandIdcardConfidence.
+        r"""Gets the first_name_en of this ThailandIdcardConfidence.
 
         英文名字置信度。 
 
@@ -254,7 +254,7 @@ class ThailandIdcardConfidence:
 
     @first_name_en.setter
     def first_name_en(self, first_name_en):
-        """Sets the first_name_en of this ThailandIdcardConfidence.
+        r"""Sets the first_name_en of this ThailandIdcardConfidence.
 
         英文名字置信度。 
 
@@ -265,7 +265,7 @@ class ThailandIdcardConfidence:
 
     @property
     def last_name_en(self):
-        """Gets the last_name_en of this ThailandIdcardConfidence.
+        r"""Gets the last_name_en of this ThailandIdcardConfidence.
 
         英文姓氏置信度。 
 
@@ -276,7 +276,7 @@ class ThailandIdcardConfidence:
 
     @last_name_en.setter
     def last_name_en(self, last_name_en):
-        """Sets the last_name_en of this ThailandIdcardConfidence.
+        r"""Sets the last_name_en of this ThailandIdcardConfidence.
 
         英文姓氏置信度。 
 
@@ -287,7 +287,7 @@ class ThailandIdcardConfidence:
 
     @property
     def date_of_birth_th(self):
-        """Gets the date_of_birth_th of this ThailandIdcardConfidence.
+        r"""Gets the date_of_birth_th of this ThailandIdcardConfidence.
 
         泰文出生日期置信度。 
 
@@ -298,7 +298,7 @@ class ThailandIdcardConfidence:
 
     @date_of_birth_th.setter
     def date_of_birth_th(self, date_of_birth_th):
-        """Sets the date_of_birth_th of this ThailandIdcardConfidence.
+        r"""Sets the date_of_birth_th of this ThailandIdcardConfidence.
 
         泰文出生日期置信度。 
 
@@ -309,7 +309,7 @@ class ThailandIdcardConfidence:
 
     @property
     def date_of_birth_en(self):
-        """Gets the date_of_birth_en of this ThailandIdcardConfidence.
+        r"""Gets the date_of_birth_en of this ThailandIdcardConfidence.
 
         英文出生日期置信度。 
 
@@ -320,7 +320,7 @@ class ThailandIdcardConfidence:
 
     @date_of_birth_en.setter
     def date_of_birth_en(self, date_of_birth_en):
-        """Sets the date_of_birth_en of this ThailandIdcardConfidence.
+        r"""Sets the date_of_birth_en of this ThailandIdcardConfidence.
 
         英文出生日期置信度。 
 
@@ -331,7 +331,7 @@ class ThailandIdcardConfidence:
 
     @property
     def religion_th(self):
-        """Gets the religion_th of this ThailandIdcardConfidence.
+        r"""Gets the religion_th of this ThailandIdcardConfidence.
 
         宗教置信度。 
 
@@ -342,7 +342,7 @@ class ThailandIdcardConfidence:
 
     @religion_th.setter
     def religion_th(self, religion_th):
-        """Sets the religion_th of this ThailandIdcardConfidence.
+        r"""Sets the religion_th of this ThailandIdcardConfidence.
 
         宗教置信度。 
 
@@ -353,7 +353,7 @@ class ThailandIdcardConfidence:
 
     @property
     def address_th(self):
-        """Gets the address_th of this ThailandIdcardConfidence.
+        r"""Gets the address_th of this ThailandIdcardConfidence.
 
         地址置信度。 
 
@@ -364,7 +364,7 @@ class ThailandIdcardConfidence:
 
     @address_th.setter
     def address_th(self, address_th):
-        """Sets the address_th of this ThailandIdcardConfidence.
+        r"""Sets the address_th of this ThailandIdcardConfidence.
 
         地址置信度。 
 
@@ -375,7 +375,7 @@ class ThailandIdcardConfidence:
 
     @property
     def date_of_issue_th(self):
-        """Gets the date_of_issue_th of this ThailandIdcardConfidence.
+        r"""Gets the date_of_issue_th of this ThailandIdcardConfidence.
 
         泰文签发日期置信度。 
 
@@ -386,7 +386,7 @@ class ThailandIdcardConfidence:
 
     @date_of_issue_th.setter
     def date_of_issue_th(self, date_of_issue_th):
-        """Sets the date_of_issue_th of this ThailandIdcardConfidence.
+        r"""Sets the date_of_issue_th of this ThailandIdcardConfidence.
 
         泰文签发日期置信度。 
 
@@ -397,7 +397,7 @@ class ThailandIdcardConfidence:
 
     @property
     def date_of_issue_en(self):
-        """Gets the date_of_issue_en of this ThailandIdcardConfidence.
+        r"""Gets the date_of_issue_en of this ThailandIdcardConfidence.
 
         英文签发日期置信度。 
 
@@ -408,7 +408,7 @@ class ThailandIdcardConfidence:
 
     @date_of_issue_en.setter
     def date_of_issue_en(self, date_of_issue_en):
-        """Sets the date_of_issue_en of this ThailandIdcardConfidence.
+        r"""Sets the date_of_issue_en of this ThailandIdcardConfidence.
 
         英文签发日期置信度。 
 
@@ -419,7 +419,7 @@ class ThailandIdcardConfidence:
 
     @property
     def date_of_expiry_th(self):
-        """Gets the date_of_expiry_th of this ThailandIdcardConfidence.
+        r"""Gets the date_of_expiry_th of this ThailandIdcardConfidence.
 
         泰文有效期置信度。 
 
@@ -430,7 +430,7 @@ class ThailandIdcardConfidence:
 
     @date_of_expiry_th.setter
     def date_of_expiry_th(self, date_of_expiry_th):
-        """Sets the date_of_expiry_th of this ThailandIdcardConfidence.
+        r"""Sets the date_of_expiry_th of this ThailandIdcardConfidence.
 
         泰文有效期置信度。 
 
@@ -441,7 +441,7 @@ class ThailandIdcardConfidence:
 
     @property
     def date_of_expiry_en(self):
-        """Gets the date_of_expiry_en of this ThailandIdcardConfidence.
+        r"""Gets the date_of_expiry_en of this ThailandIdcardConfidence.
 
         英文有效期置信度。 
 
@@ -452,7 +452,7 @@ class ThailandIdcardConfidence:
 
     @date_of_expiry_en.setter
     def date_of_expiry_en(self, date_of_expiry_en):
-        """Sets the date_of_expiry_en of this ThailandIdcardConfidence.
+        r"""Sets the date_of_expiry_en of this ThailandIdcardConfidence.
 
         英文有效期置信度。 
 
@@ -463,7 +463,7 @@ class ThailandIdcardConfidence:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this ThailandIdcardConfidence.
+        r"""Gets the serial_number of this ThailandIdcardConfidence.
 
         序列号置信度。 
 
@@ -474,7 +474,7 @@ class ThailandIdcardConfidence:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this ThailandIdcardConfidence.
+        r"""Sets the serial_number of this ThailandIdcardConfidence.
 
         序列号置信度。 
 
@@ -485,7 +485,7 @@ class ThailandIdcardConfidence:
 
     @property
     def card_number(self):
-        """Gets the card_number of this ThailandIdcardConfidence.
+        r"""Gets the card_number of this ThailandIdcardConfidence.
 
         身份证反面卡号置信度。 
 
@@ -496,7 +496,7 @@ class ThailandIdcardConfidence:
 
     @card_number.setter
     def card_number(self, card_number):
-        """Sets the card_number of this ThailandIdcardConfidence.
+        r"""Sets the card_number of this ThailandIdcardConfidence.
 
         身份证反面卡号置信度。 
 
@@ -507,7 +507,7 @@ class ThailandIdcardConfidence:
 
     @property
     def laser_number(self):
-        """Gets the laser_number of this ThailandIdcardConfidence.
+        r"""Gets the laser_number of this ThailandIdcardConfidence.
 
         激光码置信度。 
 
@@ -518,7 +518,7 @@ class ThailandIdcardConfidence:
 
     @laser_number.setter
     def laser_number(self, laser_number):
-        """Sets the laser_number of this ThailandIdcardConfidence.
+        r"""Sets the laser_number of this ThailandIdcardConfidence.
 
         激光码置信度。 
 

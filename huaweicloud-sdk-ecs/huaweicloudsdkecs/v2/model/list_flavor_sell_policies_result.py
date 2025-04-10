@@ -35,7 +35,7 @@ class ListFlavorSellPoliciesResult:
     }
 
     def __init__(self, id=None, flavor_id=None, sell_status=None, availability_zone_id=None, sell_mode=None, spot_options=None):
-        """ListFlavorSellPoliciesResult
+        r"""ListFlavorSellPoliciesResult
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ListFlavorSellPoliciesResult:
 
     @property
     def id(self):
-        """Gets the id of this ListFlavorSellPoliciesResult.
+        r"""Gets the id of this ListFlavorSellPoliciesResult.
 
         云服务器规格的索引。
 
@@ -84,7 +84,7 @@ class ListFlavorSellPoliciesResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFlavorSellPoliciesResult.
+        r"""Sets the id of this ListFlavorSellPoliciesResult.
 
         云服务器规格的索引。
 
@@ -95,7 +95,7 @@ class ListFlavorSellPoliciesResult:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ListFlavorSellPoliciesResult.
+        r"""Gets the flavor_id of this ListFlavorSellPoliciesResult.
 
         云服务器规格的ID。
 
@@ -106,7 +106,7 @@ class ListFlavorSellPoliciesResult:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ListFlavorSellPoliciesResult.
+        r"""Sets the flavor_id of this ListFlavorSellPoliciesResult.
 
         云服务器规格的ID。
 
@@ -117,7 +117,7 @@ class ListFlavorSellPoliciesResult:
 
     @property
     def sell_status(self):
-        """Gets the sell_status of this ListFlavorSellPoliciesResult.
+        r"""Gets the sell_status of this ListFlavorSellPoliciesResult.
 
         云服务器规格的售卖状态。  sellout：售罄。 available：可用。
 
@@ -128,7 +128,7 @@ class ListFlavorSellPoliciesResult:
 
     @sell_status.setter
     def sell_status(self, sell_status):
-        """Sets the sell_status of this ListFlavorSellPoliciesResult.
+        r"""Sets the sell_status of this ListFlavorSellPoliciesResult.
 
         云服务器规格的售卖状态。  sellout：售罄。 available：可用。
 
@@ -139,7 +139,7 @@ class ListFlavorSellPoliciesResult:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListFlavorSellPoliciesResult.
+        r"""Gets the availability_zone_id of this ListFlavorSellPoliciesResult.
 
         云服务器规格的可用区。
 
@@ -150,7 +150,7 @@ class ListFlavorSellPoliciesResult:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListFlavorSellPoliciesResult.
+        r"""Sets the availability_zone_id of this ListFlavorSellPoliciesResult.
 
         云服务器规格的可用区。
 
@@ -161,7 +161,7 @@ class ListFlavorSellPoliciesResult:
 
     @property
     def sell_mode(self):
-        """Gets the sell_mode of this ListFlavorSellPoliciesResult.
+        r"""Gets the sell_mode of this ListFlavorSellPoliciesResult.
 
         云服务器规格的付费模式。  - postPaid：按需计费实例。 - prePaid：包年/包月计费实例。 - spot：竞价实例。 - ri：预留实例。
 
@@ -172,7 +172,7 @@ class ListFlavorSellPoliciesResult:
 
     @sell_mode.setter
     def sell_mode(self, sell_mode):
-        """Sets the sell_mode of this ListFlavorSellPoliciesResult.
+        r"""Sets the sell_mode of this ListFlavorSellPoliciesResult.
 
         云服务器规格的付费模式。  - postPaid：按需计费实例。 - prePaid：包年/包月计费实例。 - spot：竞价实例。 - ri：预留实例。
 
@@ -183,7 +183,7 @@ class ListFlavorSellPoliciesResult:
 
     @property
     def spot_options(self):
-        """Gets the spot_options of this ListFlavorSellPoliciesResult.
+        r"""Gets the spot_options of this ListFlavorSellPoliciesResult.
 
         :return: The spot_options of this ListFlavorSellPoliciesResult.
         :rtype: :class:`huaweicloudsdkecs.v2.FlavorSpotOptions`
@@ -192,7 +192,7 @@ class ListFlavorSellPoliciesResult:
 
     @spot_options.setter
     def spot_options(self, spot_options):
-        """Sets the spot_options of this ListFlavorSellPoliciesResult.
+        r"""Sets the spot_options of this ListFlavorSellPoliciesResult.
 
         :param spot_options: The spot_options of this ListFlavorSellPoliciesResult.
         :type spot_options: :class:`huaweicloudsdkecs.v2.FlavorSpotOptions`

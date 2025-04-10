@@ -23,7 +23,7 @@ class FilePath:
     }
 
     def __init__(self):
-        """FilePath
+        r"""FilePath
 
         The model defined in huaweicloud sdk
 

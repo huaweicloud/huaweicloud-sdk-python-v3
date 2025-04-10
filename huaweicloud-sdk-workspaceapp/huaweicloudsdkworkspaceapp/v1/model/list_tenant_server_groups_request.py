@@ -33,7 +33,7 @@ class ListTenantServerGroupsRequest:
     }
 
     def __init__(self, offset=None, limit=None, sever_group_name=None, app_type=None, is_secondary_server_group=None):
-        """ListTenantServerGroupsRequest
+        r"""ListTenantServerGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListTenantServerGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTenantServerGroupsRequest.
+        r"""Gets the offset of this ListTenantServerGroupsRequest.
 
         查询的偏移量。
 
@@ -82,7 +82,7 @@ class ListTenantServerGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTenantServerGroupsRequest.
+        r"""Sets the offset of this ListTenantServerGroupsRequest.
 
         查询的偏移量。
 
@@ -93,7 +93,7 @@ class ListTenantServerGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTenantServerGroupsRequest.
+        r"""Gets the limit of this ListTenantServerGroupsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -104,7 +104,7 @@ class ListTenantServerGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTenantServerGroupsRequest.
+        r"""Sets the limit of this ListTenantServerGroupsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -115,7 +115,7 @@ class ListTenantServerGroupsRequest:
 
     @property
     def sever_group_name(self):
-        """Gets the sever_group_name of this ListTenantServerGroupsRequest.
+        r"""Gets the sever_group_name of this ListTenantServerGroupsRequest.
 
         服务器组名称。
 
@@ -126,7 +126,7 @@ class ListTenantServerGroupsRequest:
 
     @sever_group_name.setter
     def sever_group_name(self, sever_group_name):
-        """Sets the sever_group_name of this ListTenantServerGroupsRequest.
+        r"""Sets the sever_group_name of this ListTenantServerGroupsRequest.
 
         服务器组名称。
 
@@ -137,7 +137,7 @@ class ListTenantServerGroupsRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ListTenantServerGroupsRequest.
+        r"""Gets the app_type of this ListTenantServerGroupsRequest.
 
         应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
@@ -148,7 +148,7 @@ class ListTenantServerGroupsRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ListTenantServerGroupsRequest.
+        r"""Sets the app_type of this ListTenantServerGroupsRequest.
 
         应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
@@ -159,7 +159,7 @@ class ListTenantServerGroupsRequest:
 
     @property
     def is_secondary_server_group(self):
-        """Gets the is_secondary_server_group of this ListTenantServerGroupsRequest.
+        r"""Gets the is_secondary_server_group of this ListTenantServerGroupsRequest.
 
         是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
 
@@ -170,7 +170,7 @@ class ListTenantServerGroupsRequest:
 
     @is_secondary_server_group.setter
     def is_secondary_server_group(self, is_secondary_server_group):
-        """Sets the is_secondary_server_group of this ListTenantServerGroupsRequest.
+        r"""Sets the is_secondary_server_group of this ListTenantServerGroupsRequest.
 
         是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
 

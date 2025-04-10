@@ -23,7 +23,7 @@ class ShowMessageEmailConfigRequest:
     }
 
     def __init__(self):
-        """ShowMessageEmailConfigRequest
+        r"""ShowMessageEmailConfigRequest
 
         The model defined in huaweicloud sdk
 

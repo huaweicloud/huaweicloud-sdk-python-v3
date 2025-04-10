@@ -26,7 +26,7 @@ class ListLoadbalancerTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListLoadbalancerTagsResponse
+        r"""ListLoadbalancerTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLoadbalancerTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListLoadbalancerTagsResponse.
+        r"""Gets the tags of this ListLoadbalancerTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ListLoadbalancerTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListLoadbalancerTagsResponse.
+        r"""Sets the tags of this ListLoadbalancerTagsResponse.
 
         标签列表
 

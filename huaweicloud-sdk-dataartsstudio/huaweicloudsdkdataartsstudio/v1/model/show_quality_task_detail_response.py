@@ -64,7 +64,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, category_id=None, level=None, alarm_condition=None, alarm_notify=None, alarm_notify_type=None, alarm_notify_topic=None, schedule_type=None, schedule_start_date=None, schedule_end_date=None, schedule_period=None, schedule_interval=None, schedule_start_time=None, schedule_end_time=None, create_time=None, last_run_time=None, sub_rules=None, schedule_cron=None):
-        """ShowQualityTaskDetailResponse
+        r"""ShowQualityTaskDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowQualityTaskDetailResponse.
+        r"""Gets the id of this ShowQualityTaskDetailResponse.
 
         ID
 
@@ -188,7 +188,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowQualityTaskDetailResponse.
+        r"""Sets the id of this ShowQualityTaskDetailResponse.
 
         ID
 
@@ -199,7 +199,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowQualityTaskDetailResponse.
+        r"""Gets the name of this ShowQualityTaskDetailResponse.
 
         作业名称
 
@@ -210,7 +210,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowQualityTaskDetailResponse.
+        r"""Sets the name of this ShowQualityTaskDetailResponse.
 
         作业名称
 
@@ -221,7 +221,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowQualityTaskDetailResponse.
+        r"""Gets the description of this ShowQualityTaskDetailResponse.
 
         作业描述
 
@@ -232,7 +232,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowQualityTaskDetailResponse.
+        r"""Sets the description of this ShowQualityTaskDetailResponse.
 
         作业描述
 
@@ -243,7 +243,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def category_id(self):
-        """Gets the category_id of this ShowQualityTaskDetailResponse.
+        r"""Gets the category_id of this ShowQualityTaskDetailResponse.
 
         所属目录ID
 
@@ -254,7 +254,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ShowQualityTaskDetailResponse.
+        r"""Sets the category_id of this ShowQualityTaskDetailResponse.
 
         所属目录ID
 
@@ -265,7 +265,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def level(self):
-        """Gets the level of this ShowQualityTaskDetailResponse.
+        r"""Gets the level of this ShowQualityTaskDetailResponse.
 
         SUGGEST:提示, MINOR:一般, MAJOR:严重, FATAL:致命
 
@@ -276,7 +276,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ShowQualityTaskDetailResponse.
+        r"""Sets the level of this ShowQualityTaskDetailResponse.
 
         SUGGEST:提示, MINOR:一般, MAJOR:严重, FATAL:致命
 
@@ -287,7 +287,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_condition(self):
-        """Gets the alarm_condition of this ShowQualityTaskDetailResponse.
+        r"""Gets the alarm_condition of this ShowQualityTaskDetailResponse.
 
         统一告警条件
 
@@ -298,7 +298,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @alarm_condition.setter
     def alarm_condition(self, alarm_condition):
-        """Sets the alarm_condition of this ShowQualityTaskDetailResponse.
+        r"""Sets the alarm_condition of this ShowQualityTaskDetailResponse.
 
         统一告警条件
 
@@ -309,7 +309,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this ShowQualityTaskDetailResponse.
+        r"""Gets the alarm_notify of this ShowQualityTaskDetailResponse.
 
         是否开启通知告警
 
@@ -320,7 +320,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this ShowQualityTaskDetailResponse.
+        r"""Sets the alarm_notify of this ShowQualityTaskDetailResponse.
 
         是否开启通知告警
 
@@ -331,7 +331,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_notify_type(self):
-        """Gets the alarm_notify_type of this ShowQualityTaskDetailResponse.
+        r"""Gets the alarm_notify_type of this ShowQualityTaskDetailResponse.
 
         TRIGGER_ALARM:触发告警, RUN_SUCCESS:运行成功, TRIGGER_ALARM_AND_RUNNING_SUCCESS:触发告警和运行成功
 
@@ -342,7 +342,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @alarm_notify_type.setter
     def alarm_notify_type(self, alarm_notify_type):
-        """Sets the alarm_notify_type of this ShowQualityTaskDetailResponse.
+        r"""Sets the alarm_notify_type of this ShowQualityTaskDetailResponse.
 
         TRIGGER_ALARM:触发告警, RUN_SUCCESS:运行成功, TRIGGER_ALARM_AND_RUNNING_SUCCESS:触发告警和运行成功
 
@@ -353,7 +353,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def alarm_notify_topic(self):
-        """Gets the alarm_notify_topic of this ShowQualityTaskDetailResponse.
+        r"""Gets the alarm_notify_topic of this ShowQualityTaskDetailResponse.
 
         通知主题名
 
@@ -364,7 +364,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @alarm_notify_topic.setter
     def alarm_notify_topic(self, alarm_notify_topic):
-        """Sets the alarm_notify_topic of this ShowQualityTaskDetailResponse.
+        r"""Sets the alarm_notify_topic of this ShowQualityTaskDetailResponse.
 
         通知主题名
 
@@ -375,7 +375,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_type of this ShowQualityTaskDetailResponse.
 
         调度类型，ONCE：单次调度，PERIODIC：周期性调度
 
@@ -386,7 +386,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_type of this ShowQualityTaskDetailResponse.
 
         调度类型，ONCE：单次调度，PERIODIC：周期性调度
 
@@ -397,7 +397,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_start_date(self):
-        """Gets the schedule_start_date of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_start_date of this ShowQualityTaskDetailResponse.
 
         调度开始日期
 
@@ -408,7 +408,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_start_date.setter
     def schedule_start_date(self, schedule_start_date):
-        """Sets the schedule_start_date of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_start_date of this ShowQualityTaskDetailResponse.
 
         调度开始日期
 
@@ -419,7 +419,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_end_date(self):
-        """Gets the schedule_end_date of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_end_date of this ShowQualityTaskDetailResponse.
 
         调度结束日期
 
@@ -430,7 +430,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_end_date.setter
     def schedule_end_date(self, schedule_end_date):
-        """Sets the schedule_end_date of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_end_date of this ShowQualityTaskDetailResponse.
 
         调度结束日期
 
@@ -441,7 +441,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_period(self):
-        """Gets the schedule_period of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_period of this ShowQualityTaskDetailResponse.
 
         调度周期，MINUTE:按分钟调度，HOUR:按小时调度，DAY:按天调度，WEEK:按周调度
 
@@ -452,7 +452,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_period.setter
     def schedule_period(self, schedule_period):
-        """Sets the schedule_period of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_period of this ShowQualityTaskDetailResponse.
 
         调度周期，MINUTE:按分钟调度，HOUR:按小时调度，DAY:按天调度，WEEK:按周调度
 
@@ -463,7 +463,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_interval(self):
-        """Gets the schedule_interval of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_interval of this ShowQualityTaskDetailResponse.
 
         调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
 
@@ -474,7 +474,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_interval.setter
     def schedule_interval(self, schedule_interval):
-        """Sets the schedule_interval of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_interval of this ShowQualityTaskDetailResponse.
 
         调度间隔，注意：当调度周期为分钟、小时、天时，间隔时间为数字；而当调度周期为周时，调度间隔为星期的英文，如：每周一、周二调度时，schedule_interval为MONDAY,TUESDAY
 
@@ -485,7 +485,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_start_time(self):
-        """Gets the schedule_start_time of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_start_time of this ShowQualityTaskDetailResponse.
 
         调度开始时间
 
@@ -496,7 +496,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_start_time.setter
     def schedule_start_time(self, schedule_start_time):
-        """Sets the schedule_start_time of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_start_time of this ShowQualityTaskDetailResponse.
 
         调度开始时间
 
@@ -507,7 +507,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_end_time(self):
-        """Gets the schedule_end_time of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_end_time of this ShowQualityTaskDetailResponse.
 
         调度结束时间
 
@@ -518,7 +518,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_end_time.setter
     def schedule_end_time(self, schedule_end_time):
-        """Sets the schedule_end_time of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_end_time of this ShowQualityTaskDetailResponse.
 
         调度结束时间
 
@@ -529,7 +529,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowQualityTaskDetailResponse.
+        r"""Gets the create_time of this ShowQualityTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -540,7 +540,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowQualityTaskDetailResponse.
+        r"""Sets the create_time of this ShowQualityTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -551,7 +551,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def last_run_time(self):
-        """Gets the last_run_time of this ShowQualityTaskDetailResponse.
+        r"""Gets the last_run_time of this ShowQualityTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -562,7 +562,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @last_run_time.setter
     def last_run_time(self, last_run_time):
-        """Sets the last_run_time of this ShowQualityTaskDetailResponse.
+        r"""Sets the last_run_time of this ShowQualityTaskDetailResponse.
 
         最近运行时间,13位时间戳(精确到毫秒)
 
@@ -573,7 +573,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def sub_rules(self):
-        """Gets the sub_rules of this ShowQualityTaskDetailResponse.
+        r"""Gets the sub_rules of this ShowQualityTaskDetailResponse.
 
         子规则
 
@@ -584,7 +584,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @sub_rules.setter
     def sub_rules(self, sub_rules):
-        """Sets the sub_rules of this ShowQualityTaskDetailResponse.
+        r"""Sets the sub_rules of this ShowQualityTaskDetailResponse.
 
         子规则
 
@@ -595,7 +595,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @property
     def schedule_cron(self):
-        """Gets the schedule_cron of this ShowQualityTaskDetailResponse.
+        r"""Gets the schedule_cron of this ShowQualityTaskDetailResponse.
 
         调度cron表达式
 
@@ -606,7 +606,7 @@ class ShowQualityTaskDetailResponse(SdkResponse):
 
     @schedule_cron.setter
     def schedule_cron(self, schedule_cron):
-        """Sets the schedule_cron of this ShowQualityTaskDetailResponse.
+        r"""Sets the schedule_cron of this ShowQualityTaskDetailResponse.
 
         调度cron表达式
 

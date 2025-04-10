@@ -23,7 +23,7 @@ class ShowCertificateAuthorityObsAgencyRequest:
     }
 
     def __init__(self):
-        """ShowCertificateAuthorityObsAgencyRequest
+        r"""ShowCertificateAuthorityObsAgencyRequest
 
         The model defined in huaweicloud sdk
 

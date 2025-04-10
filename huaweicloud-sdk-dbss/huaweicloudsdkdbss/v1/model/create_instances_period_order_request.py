@@ -25,7 +25,7 @@ class CreateInstancesPeriodOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CreateInstancesPeriodOrderRequest
+        r"""CreateInstancesPeriodOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateInstancesPeriodOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstancesPeriodOrderRequest.
+        r"""Gets the body of this CreateInstancesPeriodOrderRequest.
 
         :return: The body of this CreateInstancesPeriodOrderRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.CreateInstancePeriodRequest`
@@ -52,7 +52,7 @@ class CreateInstancesPeriodOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstancesPeriodOrderRequest.
+        r"""Sets the body of this CreateInstancesPeriodOrderRequest.
 
         :param body: The body of this CreateInstancesPeriodOrderRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.CreateInstancePeriodRequest`

@@ -35,7 +35,7 @@ class MpeCallBackReq:
     }
 
     def __init__(self, task_type=None, task_id=None, status=None, complete_ratio=None, description=None, meta_data=None):
-        """MpeCallBackReq
+        r"""MpeCallBackReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MpeCallBackReq:
 
     @property
     def task_type(self):
-        """Gets the task_type of this MpeCallBackReq.
+        r"""Gets the task_type of this MpeCallBackReq.
 
         任务类型
 
@@ -89,7 +89,7 @@ class MpeCallBackReq:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this MpeCallBackReq.
+        r"""Sets the task_type of this MpeCallBackReq.
 
         任务类型
 
@@ -100,7 +100,7 @@ class MpeCallBackReq:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MpeCallBackReq.
+        r"""Gets the task_id of this MpeCallBackReq.
 
         任务ID。
 
@@ -111,7 +111,7 @@ class MpeCallBackReq:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MpeCallBackReq.
+        r"""Sets the task_id of this MpeCallBackReq.
 
         任务ID。
 
@@ -122,7 +122,7 @@ class MpeCallBackReq:
 
     @property
     def status(self):
-        """Gets the status of this MpeCallBackReq.
+        r"""Gets the status of this MpeCallBackReq.
 
         任务状态。
 
@@ -133,7 +133,7 @@ class MpeCallBackReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MpeCallBackReq.
+        r"""Sets the status of this MpeCallBackReq.
 
         任务状态。
 
@@ -144,7 +144,7 @@ class MpeCallBackReq:
 
     @property
     def complete_ratio(self):
-        """Gets the complete_ratio of this MpeCallBackReq.
+        r"""Gets the complete_ratio of this MpeCallBackReq.
 
         任务完成进度百分比值。 
 
@@ -155,7 +155,7 @@ class MpeCallBackReq:
 
     @complete_ratio.setter
     def complete_ratio(self, complete_ratio):
-        """Sets the complete_ratio of this MpeCallBackReq.
+        r"""Sets the complete_ratio of this MpeCallBackReq.
 
         任务完成进度百分比值。 
 
@@ -166,7 +166,7 @@ class MpeCallBackReq:
 
     @property
     def description(self):
-        """Gets the description of this MpeCallBackReq.
+        r"""Gets the description of this MpeCallBackReq.
 
         任务执行描述。
 
@@ -177,7 +177,7 @@ class MpeCallBackReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MpeCallBackReq.
+        r"""Sets the description of this MpeCallBackReq.
 
         任务执行描述。
 
@@ -188,7 +188,7 @@ class MpeCallBackReq:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this MpeCallBackReq.
+        r"""Gets the meta_data of this MpeCallBackReq.
 
         :return: The meta_data of this MpeCallBackReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MpeMetaData`
@@ -197,7 +197,7 @@ class MpeCallBackReq:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this MpeCallBackReq.
+        r"""Sets the meta_data of this MpeCallBackReq.
 
         :param meta_data: The meta_data of this MpeCallBackReq.
         :type meta_data: :class:`huaweicloudsdkmpc.v1.MpeMetaData`

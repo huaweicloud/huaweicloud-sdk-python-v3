@@ -30,7 +30,7 @@ class ShowPolicyRequest:
     }
 
     def __init__(self, x_security_token=None, policy_id=None, x_language=None):
-        """ShowPolicyRequest
+        r"""ShowPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowPolicyRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ShowPolicyRequest.
+        r"""Gets the x_security_token of this ShowPolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class ShowPolicyRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowPolicyRequest.
+        r"""Sets the x_security_token of this ShowPolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class ShowPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowPolicyRequest.
+        r"""Gets the policy_id of this ShowPolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class ShowPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowPolicyRequest.
+        r"""Sets the policy_id of this ShowPolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class ShowPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowPolicyRequest.
+        r"""Gets the x_language of this ShowPolicyRequest.
 
         选择接口返回的信息的语言
 
@@ -112,7 +112,7 @@ class ShowPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowPolicyRequest.
+        r"""Sets the x_language of this ShowPolicyRequest.
 
         选择接口返回的信息的语言
 

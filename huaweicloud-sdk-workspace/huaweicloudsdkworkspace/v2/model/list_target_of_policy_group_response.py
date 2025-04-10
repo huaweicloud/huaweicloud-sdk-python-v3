@@ -28,7 +28,7 @@ class ListTargetOfPolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self, targets=None, total_count=None):
-        """ListTargetOfPolicyGroupResponse
+        r"""ListTargetOfPolicyGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTargetOfPolicyGroupResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this ListTargetOfPolicyGroupResponse.
+        r"""Gets the targets of this ListTargetOfPolicyGroupResponse.
 
         应用对象列表。
 
@@ -62,7 +62,7 @@ class ListTargetOfPolicyGroupResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this ListTargetOfPolicyGroupResponse.
+        r"""Sets the targets of this ListTargetOfPolicyGroupResponse.
 
         应用对象列表。
 
@@ -73,7 +73,7 @@ class ListTargetOfPolicyGroupResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListTargetOfPolicyGroupResponse.
+        r"""Gets the total_count of this ListTargetOfPolicyGroupResponse.
 
         用户列表数量。
 
@@ -84,7 +84,7 @@ class ListTargetOfPolicyGroupResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListTargetOfPolicyGroupResponse.
+        r"""Sets the total_count of this ListTargetOfPolicyGroupResponse.
 
         用户列表数量。
 

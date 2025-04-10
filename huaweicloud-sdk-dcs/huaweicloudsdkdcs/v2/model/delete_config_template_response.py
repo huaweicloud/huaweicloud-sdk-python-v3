@@ -26,7 +26,7 @@ class DeleteConfigTemplateResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteConfigTemplateResponse
+        r"""DeleteConfigTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteConfigTemplateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteConfigTemplateResponse.
+        r"""Gets the result of this DeleteConfigTemplateResponse.
 
         删除自定义模板的结果，success表示成功，如果失败则会返回对应的报错信息
 
@@ -55,7 +55,7 @@ class DeleteConfigTemplateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteConfigTemplateResponse.
+        r"""Sets the result of this DeleteConfigTemplateResponse.
 
         删除自定义模板的结果，success表示成功，如果失败则会返回对应的报错信息
 

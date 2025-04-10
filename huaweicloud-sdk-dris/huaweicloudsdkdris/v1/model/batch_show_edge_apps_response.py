@@ -28,7 +28,7 @@ class BatchShowEdgeAppsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, edge_apps=None):
-        """BatchShowEdgeAppsResponse
+        r"""BatchShowEdgeAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowEdgeAppsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowEdgeAppsResponse.
+        r"""Gets the count of this BatchShowEdgeAppsResponse.
 
         **参数说明**：总记录数。
 
@@ -62,7 +62,7 @@ class BatchShowEdgeAppsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowEdgeAppsResponse.
+        r"""Sets the count of this BatchShowEdgeAppsResponse.
 
         **参数说明**：总记录数。
 
@@ -73,7 +73,7 @@ class BatchShowEdgeAppsResponse(SdkResponse):
 
     @property
     def edge_apps(self):
-        """Gets the edge_apps of this BatchShowEdgeAppsResponse.
+        r"""Gets the edge_apps of this BatchShowEdgeAppsResponse.
 
         **参数说明**：列举每条记录。
 
@@ -84,7 +84,7 @@ class BatchShowEdgeAppsResponse(SdkResponse):
 
     @edge_apps.setter
     def edge_apps(self, edge_apps):
-        """Sets the edge_apps of this BatchShowEdgeAppsResponse.
+        r"""Sets the edge_apps of this BatchShowEdgeAppsResponse.
 
         **参数说明**：列举每条记录。
 

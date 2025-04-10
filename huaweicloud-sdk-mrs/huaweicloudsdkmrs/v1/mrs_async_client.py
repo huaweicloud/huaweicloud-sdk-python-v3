@@ -34,7 +34,7 @@ class MrsAsyncClient(Client):
         return client_builder
 
     def batch_create_cluster_tags_async(self, request):
-        """批量添加集群标签
+        r"""批量添加集群标签
 
         为指定集群批量添加标签。
         
@@ -107,7 +107,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def batch_delete_cluster_tags_async(self, request):
-        """批量删除集群标签
+        r"""批量删除集群标签
 
         为指定集群批量删除标签。
         
@@ -181,7 +181,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_and_execute_job_async(self, request):
-        """新增作业并执行（废弃）
+        r"""新增作业并执行（废弃）
 
         如需使用作业管理接口请参考apiv2接口使用，本接口后续不再进行维护。
         在MRS集群中新增一个作业，并执行作业。该接口不兼容Sahara。
@@ -250,7 +250,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建集群并执行作业
+        r"""创建集群并执行作业
 
         创建一个MRS集群，并在集群中提交一个作业。该接口不兼容Sahara。
         支持同一时间并发创建10个集群。
@@ -321,7 +321,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_cluster_tag_async(self, request):
-        """给指定集群添加标签
+        r"""给指定集群添加标签
 
         为特定的集群添加一个tag。
         一个集群上最多有10个标签，此接口为幂等接口。添加标签时，如果创建的标签已经存在（key相同），则覆盖。
@@ -389,7 +389,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def create_scaling_policy_async(self, request):
-        """配置弹性伸缩规则
+        r"""配置弹性伸缩规则
 
         对弹性伸缩规则进行编辑。
         
@@ -458,7 +458,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def delete_cluster_async(self, request):
-        """删除集群
+        r"""删除集群
 
         数据完成处理分析后或者集群运行异常无法提供服务时可删除集群服务。该接口兼容Sahara。
         
@@ -531,7 +531,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def delete_cluster_tag_async(self, request):
-        """删除指定集群的标签
+        r"""删除指定集群的标签
 
         删除特定集群的标签。
         
@@ -598,7 +598,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def delete_job_execution_async(self, request):
-        """删除作业执行对象（废弃）
+        r"""删除作业执行对象（废弃）
 
         如需使用作业管理接口请参考apiv2接口使用，本接口后续不再进行维护。
         删除指定的作业执行对象。该接口兼容Sahara。
@@ -666,7 +666,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_all_tags_async(self, request):
-        """查询所有标签
+        r"""查询所有标签
 
         查询租户在指定Region下的所有标签集合 。
         
@@ -729,7 +729,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_cluster_tags_async(self, request):
-        """查询指定集群的标签
+        r"""查询指定集群的标签
 
         查询指定集群的标签信息。
         
@@ -794,7 +794,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_clusters_async(self, request):
-        """查询集群列表
+        r"""查询集群列表
 
         查看用户创建的集群列表信息。该接口不兼容Sahara。
         
@@ -869,7 +869,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_clusters_by_tags_async(self, request):
-        """查询特定标签的集群列表
+        r"""查询特定标签的集群列表
 
         使用标签过滤集群。
         
@@ -936,7 +936,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_execute_job_async(self, request):
-        """查询作业exe对象列表（废弃）
+        r"""查询作业exe对象列表（废弃）
 
         如需使用作业管理接口请参考apiv2接口使用，本接口后续不再进行维护。
         查询所有作业的exe对象列表。该接口不兼容Sahara。
@@ -1014,7 +1014,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_hosts_async(self, request):
-        """查询主机列表
+        r"""查询主机列表
 
         该接口用于查询输入集群的主机列表详情。
         
@@ -1083,7 +1083,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_cluster_details_async(self, request):
-        """查询集群详情
+        r"""查询集群详情
 
         查看指定集群的详细信息。该接口不兼容Sahara。
         
@@ -1148,7 +1148,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_job_exes_async(self, request):
-        """查询作业exe对象详情（废弃）
+        r"""查询作业exe对象详情（废弃）
 
         如需使用作业管理接口请参考apiv2接口使用，本接口后续不再进行维护。
         查询指定作业的exe对象详细信息。该接口不兼容Sahara。
@@ -1216,7 +1216,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def update_cluster_scaling_async(self, request):
-        """调整集群节点
+        r"""调整集群节点
 
         创建集群后，扩容/缩容集群Core节点或者Task节点。MRS集群创建成功后不支持调整Master节点数量，即不支持扩缩容Master节点。该接口不兼容Sahara。
         处于running状态的集群才允许扩容/缩容，其他状态则不允许扩容/缩容。 集群状态和集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。 本章节的接口只支持流式集群、分析集群和混合集群，不支持自定义集群。
@@ -1284,7 +1284,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def list_available_zones_async(self, request):
-        """查询可用区信息
+        r"""查询可用区信息
 
         在创建集群时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
@@ -1351,7 +1351,7 @@ class MrsAsyncClient(Client):
         return http_info
 
     def show_mrs_version_metadata_async(self, request):
-        """查询对应版本元数据
+        r"""查询对应版本元数据
 
         查询对应版本元数据。如果参数里指定集群id，则可查询集群更新过补丁之后的最新元数据。
         

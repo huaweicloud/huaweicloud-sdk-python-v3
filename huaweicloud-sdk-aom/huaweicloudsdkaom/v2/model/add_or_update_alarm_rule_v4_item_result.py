@@ -27,7 +27,7 @@ class AddOrUpdateAlarmRuleV4ItemResult:
     }
 
     def __init__(self, alarm_rule_name=None, result=None):
-        """AddOrUpdateAlarmRuleV4ItemResult
+        r"""AddOrUpdateAlarmRuleV4ItemResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddOrUpdateAlarmRuleV4ItemResult:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this AddOrUpdateAlarmRuleV4ItemResult.
+        r"""Gets the alarm_rule_name of this AddOrUpdateAlarmRuleV4ItemResult.
 
         告警规则名称。
 
@@ -59,7 +59,7 @@ class AddOrUpdateAlarmRuleV4ItemResult:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this AddOrUpdateAlarmRuleV4ItemResult.
+        r"""Sets the alarm_rule_name of this AddOrUpdateAlarmRuleV4ItemResult.
 
         告警规则名称。
 
@@ -70,7 +70,7 @@ class AddOrUpdateAlarmRuleV4ItemResult:
 
     @property
     def result(self):
-        """Gets the result of this AddOrUpdateAlarmRuleV4ItemResult.
+        r"""Gets the result of this AddOrUpdateAlarmRuleV4ItemResult.
 
         告警规则新增或修改结果。
 
@@ -81,7 +81,7 @@ class AddOrUpdateAlarmRuleV4ItemResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddOrUpdateAlarmRuleV4ItemResult.
+        r"""Sets the result of this AddOrUpdateAlarmRuleV4ItemResult.
 
         告警规则新增或修改结果。
 

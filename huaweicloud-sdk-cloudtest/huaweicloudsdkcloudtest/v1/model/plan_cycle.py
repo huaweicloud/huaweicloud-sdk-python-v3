@@ -27,7 +27,7 @@ class PlanCycle:
     }
 
     def __init__(self, start_date=None, end_date=None):
-        """PlanCycle
+        r"""PlanCycle
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PlanCycle:
 
     @property
     def start_date(self):
-        """Gets the start_date of this PlanCycle.
+        r"""Gets the start_date of this PlanCycle.
 
         计划开始时间，要求用UTC时间表示。如2020-03-04
 
@@ -61,7 +61,7 @@ class PlanCycle:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this PlanCycle.
+        r"""Sets the start_date of this PlanCycle.
 
         计划开始时间，要求用UTC时间表示。如2020-03-04
 
@@ -72,7 +72,7 @@ class PlanCycle:
 
     @property
     def end_date(self):
-        """Gets the end_date of this PlanCycle.
+        r"""Gets the end_date of this PlanCycle.
 
         计划结束时间，要求用UTC时间表示。如2020-03-31
 
@@ -83,7 +83,7 @@ class PlanCycle:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this PlanCycle.
+        r"""Sets the end_date of this PlanCycle.
 
         计划结束时间，要求用UTC时间表示。如2020-03-31
 

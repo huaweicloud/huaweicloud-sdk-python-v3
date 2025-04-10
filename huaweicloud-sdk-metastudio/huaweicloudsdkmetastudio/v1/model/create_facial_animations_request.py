@@ -25,7 +25,7 @@ class CreateFacialAnimationsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFacialAnimationsRequest
+        r"""CreateFacialAnimationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFacialAnimationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFacialAnimationsRequest.
+        r"""Gets the body of this CreateFacialAnimationsRequest.
 
         :return: The body of this CreateFacialAnimationsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateFASReq`
@@ -52,7 +52,7 @@ class CreateFacialAnimationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFacialAnimationsRequest.
+        r"""Sets the body of this CreateFacialAnimationsRequest.
 
         :param body: The body of this CreateFacialAnimationsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateFASReq`

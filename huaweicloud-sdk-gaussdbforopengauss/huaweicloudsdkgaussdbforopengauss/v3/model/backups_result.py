@@ -43,7 +43,7 @@ class BackupsResult:
     }
 
     def __init__(self, id=None, name=None, description=None, begin_time=None, end_time=None, status=None, size=None, type=None, datastore=None, instance_id=None):
-        """BackupsResult
+        r"""BackupsResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class BackupsResult:
 
     @property
     def id(self):
-        """Gets the id of this BackupsResult.
+        r"""Gets the id of this BackupsResult.
 
         备份ID。
 
@@ -117,7 +117,7 @@ class BackupsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupsResult.
+        r"""Sets the id of this BackupsResult.
 
         备份ID。
 
@@ -128,7 +128,7 @@ class BackupsResult:
 
     @property
     def name(self):
-        """Gets the name of this BackupsResult.
+        r"""Gets the name of this BackupsResult.
 
         备份名称。
 
@@ -139,7 +139,7 @@ class BackupsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupsResult.
+        r"""Sets the name of this BackupsResult.
 
         备份名称。
 
@@ -150,7 +150,7 @@ class BackupsResult:
 
     @property
     def description(self):
-        """Gets the description of this BackupsResult.
+        r"""Gets the description of this BackupsResult.
 
         备份文件描述信息。
 
@@ -161,7 +161,7 @@ class BackupsResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupsResult.
+        r"""Sets the description of this BackupsResult.
 
         备份文件描述信息。
 
@@ -172,7 +172,7 @@ class BackupsResult:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this BackupsResult.
+        r"""Gets the begin_time of this BackupsResult.
 
         备份开始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -183,7 +183,7 @@ class BackupsResult:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this BackupsResult.
+        r"""Sets the begin_time of this BackupsResult.
 
         备份开始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -194,7 +194,7 @@ class BackupsResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BackupsResult.
+        r"""Gets the end_time of this BackupsResult.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -205,7 +205,7 @@ class BackupsResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BackupsResult.
+        r"""Sets the end_time of this BackupsResult.
 
         备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -216,7 +216,7 @@ class BackupsResult:
 
     @property
     def status(self):
-        """Gets the status of this BackupsResult.
+        r"""Gets the status of this BackupsResult.
 
         备份状态
 
@@ -227,7 +227,7 @@ class BackupsResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BackupsResult.
+        r"""Sets the status of this BackupsResult.
 
         备份状态
 
@@ -238,7 +238,7 @@ class BackupsResult:
 
     @property
     def size(self):
-        """Gets the size of this BackupsResult.
+        r"""Gets the size of this BackupsResult.
 
         备份大小(单位：MB)
 
@@ -249,7 +249,7 @@ class BackupsResult:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BackupsResult.
+        r"""Sets the size of this BackupsResult.
 
         备份大小(单位：MB)
 
@@ -260,7 +260,7 @@ class BackupsResult:
 
     @property
     def type(self):
-        """Gets the type of this BackupsResult.
+        r"""Gets the type of this BackupsResult.
 
         备份类型
 
@@ -271,7 +271,7 @@ class BackupsResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupsResult.
+        r"""Sets the type of this BackupsResult.
 
         备份类型
 
@@ -282,7 +282,7 @@ class BackupsResult:
 
     @property
     def datastore(self):
-        """Gets the datastore of this BackupsResult.
+        r"""Gets the datastore of this BackupsResult.
 
         :return: The datastore of this BackupsResult.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResult`
@@ -291,7 +291,7 @@ class BackupsResult:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this BackupsResult.
+        r"""Sets the datastore of this BackupsResult.
 
         :param datastore: The datastore of this BackupsResult.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResult`
@@ -300,7 +300,7 @@ class BackupsResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BackupsResult.
+        r"""Gets the instance_id of this BackupsResult.
 
         实例ID。
 
@@ -311,7 +311,7 @@ class BackupsResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BackupsResult.
+        r"""Sets the instance_id of this BackupsResult.
 
         实例ID。
 

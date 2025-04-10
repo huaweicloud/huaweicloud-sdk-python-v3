@@ -25,7 +25,7 @@ class CreateAnalyzerRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAnalyzerRequest
+        r"""CreateAnalyzerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAnalyzerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAnalyzerRequest.
+        r"""Gets the body of this CreateAnalyzerRequest.
 
         :return: The body of this CreateAnalyzerRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateAnalyzerReqBody`
@@ -52,7 +52,7 @@ class CreateAnalyzerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAnalyzerRequest.
+        r"""Sets the body of this CreateAnalyzerRequest.
 
         :param body: The body of this CreateAnalyzerRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateAnalyzerReqBody`

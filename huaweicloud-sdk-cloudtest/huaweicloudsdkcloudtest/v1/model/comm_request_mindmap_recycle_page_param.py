@@ -25,7 +25,7 @@ class CommRequestMindmapRecyclePageParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestMindmapRecyclePageParam
+        r"""CommRequestMindmapRecyclePageParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestMindmapRecyclePageParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestMindmapRecyclePageParam.
+        r"""Gets the params of this CommRequestMindmapRecyclePageParam.
 
         :return: The params of this CommRequestMindmapRecyclePageParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.MindmapRecyclePageParam`
@@ -51,7 +51,7 @@ class CommRequestMindmapRecyclePageParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestMindmapRecyclePageParam.
+        r"""Sets the params of this CommRequestMindmapRecyclePageParam.
 
         :param params: The params of this CommRequestMindmapRecyclePageParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.MindmapRecyclePageParam`

@@ -26,7 +26,7 @@ class ListMessageStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, count=None):
-        """ListMessageStatisticsResponse
+        r"""ListMessageStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMessageStatisticsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMessageStatisticsResponse.
+        r"""Gets the count of this ListMessageStatisticsResponse.
 
         所有消息总数
 
@@ -55,7 +55,7 @@ class ListMessageStatisticsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMessageStatisticsResponse.
+        r"""Sets the count of this ListMessageStatisticsResponse.
 
         所有消息总数
 

@@ -26,7 +26,7 @@ class BatchStartTransferTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchStartTransferTaskResponse
+        r"""BatchStartTransferTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStartTransferTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchStartTransferTaskResponse.
+        r"""Gets the body of this BatchStartTransferTaskResponse.
 
         :return: The body of this BatchStartTransferTaskResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchStartTransferTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStartTransferTaskResponse.
+        r"""Sets the body of this BatchStartTransferTaskResponse.
 
         :param body: The body of this BatchStartTransferTaskResponse.
         :type body: str

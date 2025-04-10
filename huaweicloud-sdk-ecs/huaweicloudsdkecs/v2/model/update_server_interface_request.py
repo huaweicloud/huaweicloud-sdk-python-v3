@@ -29,7 +29,7 @@ class UpdateServerInterfaceRequest:
     }
 
     def __init__(self, server_id=None, port_id=None, body=None):
-        """UpdateServerInterfaceRequest
+        r"""UpdateServerInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateServerInterfaceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateServerInterfaceRequest.
+        r"""Gets the server_id of this UpdateServerInterfaceRequest.
 
         云服务器ID。
 
@@ -66,7 +66,7 @@ class UpdateServerInterfaceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateServerInterfaceRequest.
+        r"""Sets the server_id of this UpdateServerInterfaceRequest.
 
         云服务器ID。
 
@@ -77,7 +77,7 @@ class UpdateServerInterfaceRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdateServerInterfaceRequest.
+        r"""Gets the port_id of this UpdateServerInterfaceRequest.
 
         The network card ID of the cloud server.
 
@@ -88,7 +88,7 @@ class UpdateServerInterfaceRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdateServerInterfaceRequest.
+        r"""Sets the port_id of this UpdateServerInterfaceRequest.
 
         The network card ID of the cloud server.
 
@@ -99,7 +99,7 @@ class UpdateServerInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerInterfaceRequest.
+        r"""Gets the body of this UpdateServerInterfaceRequest.
 
         :return: The body of this UpdateServerInterfaceRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateNicInfoRequestBody`
@@ -108,7 +108,7 @@ class UpdateServerInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerInterfaceRequest.
+        r"""Sets the body of this UpdateServerInterfaceRequest.
 
         :param body: The body of this UpdateServerInterfaceRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateNicInfoRequestBody`

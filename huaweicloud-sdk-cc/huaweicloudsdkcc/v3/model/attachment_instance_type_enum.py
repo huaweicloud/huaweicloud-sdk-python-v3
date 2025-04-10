@@ -27,7 +27,7 @@ class AttachmentInstanceTypeEnum:
     }
 
     def __init__(self):
-        """AttachmentInstanceTypeEnum
+        r"""AttachmentInstanceTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -64,7 +64,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, instancename=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, security_group_ids=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, server_id=None, create_time=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceResponse.
+        r"""Gets the id of this ShowInstanceResponse.
 
         独享引擎实例ID
 
@@ -188,7 +188,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceResponse.
+        r"""Sets the id of this ShowInstanceResponse.
 
         独享引擎实例ID
 
@@ -199,7 +199,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def instancename(self):
-        """Gets the instancename of this ShowInstanceResponse.
+        r"""Gets the instancename of this ShowInstanceResponse.
 
         独享引擎实例名称
 
@@ -210,7 +210,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @instancename.setter
     def instancename(self, instancename):
-        """Sets the instancename of this ShowInstanceResponse.
+        r"""Sets the instancename of this ShowInstanceResponse.
 
         独享引擎实例名称
 
@@ -221,7 +221,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowInstanceResponse.
+        r"""Gets the region of this ShowInstanceResponse.
 
         独享引擎实例Region ID
 
@@ -232,7 +232,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowInstanceResponse.
+        r"""Sets the region of this ShowInstanceResponse.
 
         独享引擎实例Region ID
 
@@ -243,7 +243,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def zone(self):
-        """Gets the zone of this ShowInstanceResponse.
+        r"""Gets the zone of this ShowInstanceResponse.
 
         可用区ID
 
@@ -254,7 +254,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this ShowInstanceResponse.
+        r"""Sets the zone of this ShowInstanceResponse.
 
         可用区ID
 
@@ -265,7 +265,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def arch(self):
-        """Gets the arch of this ShowInstanceResponse.
+        r"""Gets the arch of this ShowInstanceResponse.
 
         CPU架构
 
@@ -276,7 +276,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ShowInstanceResponse.
+        r"""Sets the arch of this ShowInstanceResponse.
 
         CPU架构
 
@@ -287,7 +287,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def cpu_flavor(self):
-        """Gets the cpu_flavor of this ShowInstanceResponse.
+        r"""Gets the cpu_flavor of this ShowInstanceResponse.
 
         ECS规格
 
@@ -298,7 +298,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @cpu_flavor.setter
     def cpu_flavor(self, cpu_flavor):
-        """Sets the cpu_flavor of this ShowInstanceResponse.
+        r"""Sets the cpu_flavor of this ShowInstanceResponse.
 
         ECS规格
 
@@ -309,7 +309,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowInstanceResponse.
+        r"""Gets the vpc_id of this ShowInstanceResponse.
 
         独享引擎实例所在VPC ID
 
@@ -320,7 +320,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowInstanceResponse.
+        r"""Sets the vpc_id of this ShowInstanceResponse.
 
         独享引擎实例所在VPC ID
 
@@ -331,7 +331,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowInstanceResponse.
+        r"""Gets the subnet_id of this ShowInstanceResponse.
 
         独享引擎实例所在VPC的子网ID
 
@@ -342,7 +342,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowInstanceResponse.
+        r"""Sets the subnet_id of this ShowInstanceResponse.
 
         独享引擎实例所在VPC的子网ID
 
@@ -353,7 +353,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def service_ip(self):
-        """Gets the service_ip of this ShowInstanceResponse.
+        r"""Gets the service_ip of this ShowInstanceResponse.
 
         独享引擎实例的业务面IP
 
@@ -364,7 +364,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @service_ip.setter
     def service_ip(self, service_ip):
-        """Sets the service_ip of this ShowInstanceResponse.
+        r"""Sets the service_ip of this ShowInstanceResponse.
 
         独享引擎实例的业务面IP
 
@@ -375,7 +375,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def security_group_ids(self):
-        """Gets the security_group_ids of this ShowInstanceResponse.
+        r"""Gets the security_group_ids of this ShowInstanceResponse.
 
         独享引擎绑定的安全组
 
@@ -386,7 +386,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @security_group_ids.setter
     def security_group_ids(self, security_group_ids):
-        """Sets the security_group_ids of this ShowInstanceResponse.
+        r"""Sets the security_group_ids of this ShowInstanceResponse.
 
         独享引擎绑定的安全组
 
@@ -397,7 +397,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceResponse.
+        r"""Gets the status of this ShowInstanceResponse.
 
         独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
@@ -408,7 +408,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceResponse.
+        r"""Sets the status of this ShowInstanceResponse.
 
         独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
@@ -419,7 +419,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def run_status(self):
-        """Gets the run_status of this ShowInstanceResponse.
+        r"""Gets the run_status of this ShowInstanceResponse.
 
         独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
@@ -430,7 +430,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this ShowInstanceResponse.
+        r"""Sets the run_status of this ShowInstanceResponse.
 
         独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
@@ -441,7 +441,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this ShowInstanceResponse.
+        r"""Gets the access_status of this ShowInstanceResponse.
 
         独享引擎接入状态（0：未接入，1：已接入）
 
@@ -452,7 +452,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this ShowInstanceResponse.
+        r"""Sets the access_status of this ShowInstanceResponse.
 
         独享引擎接入状态（0：未接入，1：已接入）
 
@@ -463,7 +463,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def upgradable(self):
-        """Gets the upgradable of this ShowInstanceResponse.
+        r"""Gets the upgradable of this ShowInstanceResponse.
 
         独享引擎是否可升级（0：不可升级，1：可升级）
 
@@ -474,7 +474,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @upgradable.setter
     def upgradable(self, upgradable):
-        """Sets the upgradable of this ShowInstanceResponse.
+        r"""Sets the upgradable of this ShowInstanceResponse.
 
         独享引擎是否可升级（0：不可升级，1：可升级）
 
@@ -485,7 +485,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ShowInstanceResponse.
+        r"""Gets the cloud_service_type of this ShowInstanceResponse.
 
         云服务代码。 仅作为标记，用户可忽略。
 
@@ -496,7 +496,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ShowInstanceResponse.
+        r"""Sets the cloud_service_type of this ShowInstanceResponse.
 
         云服务代码。 仅作为标记，用户可忽略。
 
@@ -507,7 +507,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowInstanceResponse.
+        r"""Gets the resource_type of this ShowInstanceResponse.
 
         云服务资源类型，仅作为标记，用户可忽略。
 
@@ -518,7 +518,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowInstanceResponse.
+        r"""Sets the resource_type of this ShowInstanceResponse.
 
         云服务资源类型，仅作为标记，用户可忽略。
 
@@ -529,7 +529,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowInstanceResponse.
+        r"""Gets the resource_spec_code of this ShowInstanceResponse.
 
         云服务资源代码。仅作为标记，用户可忽略。
 
@@ -540,7 +540,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowInstanceResponse.
+        r"""Sets the resource_spec_code of this ShowInstanceResponse.
 
         云服务资源代码。仅作为标记，用户可忽略。
 
@@ -551,7 +551,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def specification(self):
-        """Gets the specification of this ShowInstanceResponse.
+        r"""Gets the specification of this ShowInstanceResponse.
 
         独享引擎ECS规格，如\"8vCPUs | 16GB\"
 
@@ -562,7 +562,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ShowInstanceResponse.
+        r"""Sets the specification of this ShowInstanceResponse.
 
         独享引擎ECS规格，如\"8vCPUs | 16GB\"
 
@@ -573,7 +573,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowInstanceResponse.
+        r"""Gets the server_id of this ShowInstanceResponse.
 
         独享引擎ECS ID
 
@@ -584,7 +584,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowInstanceResponse.
+        r"""Sets the server_id of this ShowInstanceResponse.
 
         独享引擎ECS ID
 
@@ -595,7 +595,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowInstanceResponse.
+        r"""Gets the create_time of this ShowInstanceResponse.
 
         引擎实例创建时间
 
@@ -606,7 +606,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowInstanceResponse.
+        r"""Sets the create_time of this ShowInstanceResponse.
 
         引擎实例创建时间
 

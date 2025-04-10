@@ -28,7 +28,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
     }
 
     def __init__(self, cc_email_info=None, mc_email_infos=None):
-        """ListCaseCcEmailsResponse
+        r"""ListCaseCcEmailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
 
     @property
     def cc_email_info(self):
-        """Gets the cc_email_info of this ListCaseCcEmailsResponse.
+        r"""Gets the cc_email_info of this ListCaseCcEmailsResponse.
 
         :return: The cc_email_info of this ListCaseCcEmailsResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`
@@ -60,7 +60,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
 
     @cc_email_info.setter
     def cc_email_info(self, cc_email_info):
-        """Sets the cc_email_info of this ListCaseCcEmailsResponse.
+        r"""Sets the cc_email_info of this ListCaseCcEmailsResponse.
 
         :param cc_email_info: The cc_email_info of this ListCaseCcEmailsResponse.
         :type cc_email_info: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`
@@ -69,7 +69,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
 
     @property
     def mc_email_infos(self):
-        """Gets the mc_email_infos of this ListCaseCcEmailsResponse.
+        r"""Gets the mc_email_infos of this ListCaseCcEmailsResponse.
 
         抄送邮箱信息
 
@@ -80,7 +80,7 @@ class ListCaseCcEmailsResponse(SdkResponse):
 
     @mc_email_infos.setter
     def mc_email_infos(self, mc_email_infos):
-        """Sets the mc_email_infos of this ListCaseCcEmailsResponse.
+        r"""Sets the mc_email_infos of this ListCaseCcEmailsResponse.
 
         抄送邮箱信息
 

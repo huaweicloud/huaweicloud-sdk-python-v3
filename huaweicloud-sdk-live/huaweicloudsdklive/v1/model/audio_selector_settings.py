@@ -29,7 +29,7 @@ class AudioSelectorSettings:
     }
 
     def __init__(self, audio_language_selection=None, audio_pid_selection=None, audio_hls_selection=None):
-        """AudioSelectorSettings
+        r"""AudioSelectorSettings
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AudioSelectorSettings:
 
     @property
     def audio_language_selection(self):
-        """Gets the audio_language_selection of this AudioSelectorSettings.
+        r"""Gets the audio_language_selection of this AudioSelectorSettings.
 
         :return: The audio_language_selection of this AudioSelectorSettings.
         :rtype: :class:`huaweicloudsdklive.v1.AudioSelectorLangSelection`
@@ -66,7 +66,7 @@ class AudioSelectorSettings:
 
     @audio_language_selection.setter
     def audio_language_selection(self, audio_language_selection):
-        """Sets the audio_language_selection of this AudioSelectorSettings.
+        r"""Sets the audio_language_selection of this AudioSelectorSettings.
 
         :param audio_language_selection: The audio_language_selection of this AudioSelectorSettings.
         :type audio_language_selection: :class:`huaweicloudsdklive.v1.AudioSelectorLangSelection`
@@ -75,7 +75,7 @@ class AudioSelectorSettings:
 
     @property
     def audio_pid_selection(self):
-        """Gets the audio_pid_selection of this AudioSelectorSettings.
+        r"""Gets the audio_pid_selection of this AudioSelectorSettings.
 
         :return: The audio_pid_selection of this AudioSelectorSettings.
         :rtype: :class:`huaweicloudsdklive.v1.AudioSelectorPidSelection`
@@ -84,7 +84,7 @@ class AudioSelectorSettings:
 
     @audio_pid_selection.setter
     def audio_pid_selection(self, audio_pid_selection):
-        """Sets the audio_pid_selection of this AudioSelectorSettings.
+        r"""Sets the audio_pid_selection of this AudioSelectorSettings.
 
         :param audio_pid_selection: The audio_pid_selection of this AudioSelectorSettings.
         :type audio_pid_selection: :class:`huaweicloudsdklive.v1.AudioSelectorPidSelection`
@@ -93,7 +93,7 @@ class AudioSelectorSettings:
 
     @property
     def audio_hls_selection(self):
-        """Gets the audio_hls_selection of this AudioSelectorSettings.
+        r"""Gets the audio_hls_selection of this AudioSelectorSettings.
 
         :return: The audio_hls_selection of this AudioSelectorSettings.
         :rtype: :class:`huaweicloudsdklive.v1.AudioSelectorHlsSelection`
@@ -102,7 +102,7 @@ class AudioSelectorSettings:
 
     @audio_hls_selection.setter
     def audio_hls_selection(self, audio_hls_selection):
-        """Sets the audio_hls_selection of this AudioSelectorSettings.
+        r"""Sets the audio_hls_selection of this AudioSelectorSettings.
 
         :param audio_hls_selection: The audio_hls_selection of this AudioSelectorSettings.
         :type audio_hls_selection: :class:`huaweicloudsdklive.v1.AudioSelectorHlsSelection`

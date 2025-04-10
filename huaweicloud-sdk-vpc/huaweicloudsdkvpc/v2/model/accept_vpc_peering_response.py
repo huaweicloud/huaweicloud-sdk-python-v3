@@ -40,7 +40,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, request_vpc_info=None, accept_vpc_info=None, created_at=None, updated_at=None, description=None):
-        """AcceptVpcPeeringResponse
+        r"""AcceptVpcPeeringResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AcceptVpcPeeringResponse.
+        r"""Gets the id of this AcceptVpcPeeringResponse.
 
         对等连接ID
 
@@ -104,7 +104,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AcceptVpcPeeringResponse.
+        r"""Sets the id of this AcceptVpcPeeringResponse.
 
         对等连接ID
 
@@ -115,7 +115,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this AcceptVpcPeeringResponse.
+        r"""Gets the name of this AcceptVpcPeeringResponse.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -126,7 +126,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AcceptVpcPeeringResponse.
+        r"""Sets the name of this AcceptVpcPeeringResponse.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -137,7 +137,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AcceptVpcPeeringResponse.
+        r"""Gets the status of this AcceptVpcPeeringResponse.
 
         功能说明：对等连接状态 取值范围： - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
@@ -148,7 +148,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AcceptVpcPeeringResponse.
+        r"""Sets the status of this AcceptVpcPeeringResponse.
 
         功能说明：对等连接状态 取值范围： - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
@@ -159,7 +159,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def request_vpc_info(self):
-        """Gets the request_vpc_info of this AcceptVpcPeeringResponse.
+        r"""Gets the request_vpc_info of this AcceptVpcPeeringResponse.
 
         :return: The request_vpc_info of this AcceptVpcPeeringResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -168,7 +168,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @request_vpc_info.setter
     def request_vpc_info(self, request_vpc_info):
-        """Sets the request_vpc_info of this AcceptVpcPeeringResponse.
+        r"""Sets the request_vpc_info of this AcceptVpcPeeringResponse.
 
         :param request_vpc_info: The request_vpc_info of this AcceptVpcPeeringResponse.
         :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -177,7 +177,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def accept_vpc_info(self):
-        """Gets the accept_vpc_info of this AcceptVpcPeeringResponse.
+        r"""Gets the accept_vpc_info of this AcceptVpcPeeringResponse.
 
         :return: The accept_vpc_info of this AcceptVpcPeeringResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -186,7 +186,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @accept_vpc_info.setter
     def accept_vpc_info(self, accept_vpc_info):
-        """Sets the accept_vpc_info of this AcceptVpcPeeringResponse.
+        r"""Sets the accept_vpc_info of this AcceptVpcPeeringResponse.
 
         :param accept_vpc_info: The accept_vpc_info of this AcceptVpcPeeringResponse.
         :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -195,7 +195,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AcceptVpcPeeringResponse.
+        r"""Gets the created_at of this AcceptVpcPeeringResponse.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -206,7 +206,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AcceptVpcPeeringResponse.
+        r"""Sets the created_at of this AcceptVpcPeeringResponse.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -217,7 +217,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AcceptVpcPeeringResponse.
+        r"""Gets the updated_at of this AcceptVpcPeeringResponse.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -228,7 +228,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AcceptVpcPeeringResponse.
+        r"""Sets the updated_at of this AcceptVpcPeeringResponse.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -239,7 +239,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this AcceptVpcPeeringResponse.
+        r"""Gets the description of this AcceptVpcPeeringResponse.
 
         对等连接描述
 
@@ -250,7 +250,7 @@ class AcceptVpcPeeringResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AcceptVpcPeeringResponse.
+        r"""Sets the description of this AcceptVpcPeeringResponse.
 
         对等连接描述
 

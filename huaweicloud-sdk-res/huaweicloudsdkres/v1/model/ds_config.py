@@ -27,7 +27,7 @@ class DsConfig:
     }
 
     def __init__(self, time_interval=None, category_type=None):
-        """DsConfig
+        r"""DsConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DsConfig:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this DsConfig.
+        r"""Gets the time_interval of this DsConfig.
 
         数据选择(天)。
 
@@ -61,7 +61,7 @@ class DsConfig:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this DsConfig.
+        r"""Sets the time_interval of this DsConfig.
 
         数据选择(天)。
 
@@ -72,7 +72,7 @@ class DsConfig:
 
     @property
     def category_type(self):
-        """Gets the category_type of this DsConfig.
+        r"""Gets the category_type of this DsConfig.
 
         物品类别。
 
@@ -83,7 +83,7 @@ class DsConfig:
 
     @category_type.setter
     def category_type(self, category_type):
-        """Sets the category_type of this DsConfig.
+        r"""Sets the category_type of this DsConfig.
 
         物品类别。
 

@@ -27,7 +27,7 @@ class ShowProtectableRequest:
     }
 
     def __init__(self, instance_id=None, protectable_type=None):
-        """ShowProtectableRequest
+        r"""ShowProtectableRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowProtectableRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowProtectableRequest.
+        r"""Gets the instance_id of this ShowProtectableRequest.
 
         资源ID
 
@@ -59,7 +59,7 @@ class ShowProtectableRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowProtectableRequest.
+        r"""Sets the instance_id of this ShowProtectableRequest.
 
         资源ID
 
@@ -70,7 +70,7 @@ class ShowProtectableRequest:
 
     @property
     def protectable_type(self):
-        """Gets the protectable_type of this ShowProtectableRequest.
+        r"""Gets the protectable_type of this ShowProtectableRequest.
 
         可保护性类型
 
@@ -81,7 +81,7 @@ class ShowProtectableRequest:
 
     @protectable_type.setter
     def protectable_type(self, protectable_type):
-        """Sets the protectable_type of this ShowProtectableRequest.
+        r"""Sets the protectable_type of this ShowProtectableRequest.
 
         可保护性类型
 

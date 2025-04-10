@@ -25,7 +25,7 @@ class IvsExtentionByNameAndIdRequestBodyData:
     }
 
     def __init__(self, req_data=None):
-        """IvsExtentionByNameAndIdRequestBodyData
+        r"""IvsExtentionByNameAndIdRequestBodyData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class IvsExtentionByNameAndIdRequestBodyData:
 
     @property
     def req_data(self):
-        """Gets the req_data of this IvsExtentionByNameAndIdRequestBodyData.
+        r"""Gets the req_data of this IvsExtentionByNameAndIdRequestBodyData.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
@@ -54,7 +54,7 @@ class IvsExtentionByNameAndIdRequestBodyData:
 
     @req_data.setter
     def req_data(self, req_data):
-        """Sets the req_data of this IvsExtentionByNameAndIdRequestBodyData.
+        r"""Sets the req_data of this IvsExtentionByNameAndIdRequestBodyData.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 

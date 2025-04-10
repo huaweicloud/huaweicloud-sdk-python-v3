@@ -24,7 +24,7 @@ class UpdatePullSourcesConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePullSourcesConfigResponse
+        r"""UpdatePullSourcesConfigResponse
 
         The model defined in huaweicloud sdk
 

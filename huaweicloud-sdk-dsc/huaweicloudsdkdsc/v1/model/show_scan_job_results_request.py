@@ -35,7 +35,7 @@ class ShowScanJobResultsRequest:
     }
 
     def __init__(self, job_id=None, offset=None, limit=None, type=None, start_time=None, end_time=None):
-        """ShowScanJobResultsRequest
+        r"""ShowScanJobResultsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowScanJobResultsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowScanJobResultsRequest.
+        r"""Gets the job_id of this ShowScanJobResultsRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class ShowScanJobResultsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowScanJobResultsRequest.
+        r"""Sets the job_id of this ShowScanJobResultsRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class ShowScanJobResultsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowScanJobResultsRequest.
+        r"""Gets the offset of this ShowScanJobResultsRequest.
 
         页码
 
@@ -110,7 +110,7 @@ class ShowScanJobResultsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowScanJobResultsRequest.
+        r"""Sets the offset of this ShowScanJobResultsRequest.
 
         页码
 
@@ -121,7 +121,7 @@ class ShowScanJobResultsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowScanJobResultsRequest.
+        r"""Gets the limit of this ShowScanJobResultsRequest.
 
         分页大小
 
@@ -132,7 +132,7 @@ class ShowScanJobResultsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowScanJobResultsRequest.
+        r"""Sets the limit of this ShowScanJobResultsRequest.
 
         分页大小
 
@@ -143,7 +143,7 @@ class ShowScanJobResultsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowScanJobResultsRequest.
+        r"""Gets the type of this ShowScanJobResultsRequest.
 
         资产类型
 
@@ -154,7 +154,7 @@ class ShowScanJobResultsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowScanJobResultsRequest.
+        r"""Sets the type of this ShowScanJobResultsRequest.
 
         资产类型
 
@@ -165,7 +165,7 @@ class ShowScanJobResultsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowScanJobResultsRequest.
+        r"""Gets the start_time of this ShowScanJobResultsRequest.
 
         起始时间（预留，待启用）
 
@@ -176,7 +176,7 @@ class ShowScanJobResultsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowScanJobResultsRequest.
+        r"""Sets the start_time of this ShowScanJobResultsRequest.
 
         起始时间（预留，待启用）
 
@@ -187,7 +187,7 @@ class ShowScanJobResultsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowScanJobResultsRequest.
+        r"""Gets the end_time of this ShowScanJobResultsRequest.
 
         结束时间（预留，待启用）
 
@@ -198,7 +198,7 @@ class ShowScanJobResultsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowScanJobResultsRequest.
+        r"""Sets the end_time of this ShowScanJobResultsRequest.
 
         结束时间（预留，待启用）
 

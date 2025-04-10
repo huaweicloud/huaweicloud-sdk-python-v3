@@ -23,7 +23,7 @@ class ListOriginalPolicyInfoRequest:
     }
 
     def __init__(self):
-        """ListOriginalPolicyInfoRequest
+        r"""ListOriginalPolicyInfoRequest
 
         The model defined in huaweicloud sdk
 

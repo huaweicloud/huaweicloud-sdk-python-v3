@@ -29,7 +29,7 @@ class CheckTableNameResult:
     }
 
     def __init__(self, database=None, restore_table_list=None, target_table_list=None):
-        """CheckTableNameResult
+        r"""CheckTableNameResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckTableNameResult:
 
     @property
     def database(self):
-        """Gets the database of this CheckTableNameResult.
+        r"""Gets the database of this CheckTableNameResult.
 
         数据库名称
 
@@ -68,7 +68,7 @@ class CheckTableNameResult:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this CheckTableNameResult.
+        r"""Sets the database of this CheckTableNameResult.
 
         数据库名称
 
@@ -79,7 +79,7 @@ class CheckTableNameResult:
 
     @property
     def restore_table_list(self):
-        """Gets the restore_table_list of this CheckTableNameResult.
+        r"""Gets the restore_table_list of this CheckTableNameResult.
 
         恢复源表信息
 
@@ -90,7 +90,7 @@ class CheckTableNameResult:
 
     @restore_table_list.setter
     def restore_table_list(self, restore_table_list):
-        """Sets the restore_table_list of this CheckTableNameResult.
+        r"""Sets the restore_table_list of this CheckTableNameResult.
 
         恢复源表信息
 
@@ -101,7 +101,7 @@ class CheckTableNameResult:
 
     @property
     def target_table_list(self):
-        """Gets the target_table_list of this CheckTableNameResult.
+        r"""Gets the target_table_list of this CheckTableNameResult.
 
         恢复目的表信息
 
@@ -112,7 +112,7 @@ class CheckTableNameResult:
 
     @target_table_list.setter
     def target_table_list(self, target_table_list):
-        """Sets the target_table_list of this CheckTableNameResult.
+        r"""Sets the target_table_list of this CheckTableNameResult.
 
         恢复目的表信息
 

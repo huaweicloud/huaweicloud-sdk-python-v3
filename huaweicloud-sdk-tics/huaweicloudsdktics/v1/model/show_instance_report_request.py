@@ -27,7 +27,7 @@ class ShowInstanceReportRequest:
     }
 
     def __init__(self, instance_id=None, league_id=None):
-        """ShowInstanceReportRequest
+        r"""ShowInstanceReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowInstanceReportRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceReportRequest.
+        r"""Gets the instance_id of this ShowInstanceReportRequest.
 
         实例id，最大32位，字母和数字组成
 
@@ -59,7 +59,7 @@ class ShowInstanceReportRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceReportRequest.
+        r"""Sets the instance_id of this ShowInstanceReportRequest.
 
         实例id，最大32位，字母和数字组成
 
@@ -70,7 +70,7 @@ class ShowInstanceReportRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ShowInstanceReportRequest.
+        r"""Gets the league_id of this ShowInstanceReportRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -81,7 +81,7 @@ class ShowInstanceReportRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ShowInstanceReportRequest.
+        r"""Sets the league_id of this ShowInstanceReportRequest.
 
         联盟id，最大32位，字母和数字组成
 

@@ -31,7 +31,7 @@ class CreateLigandPreviewTaskReq:
     }
 
     def __init__(self, ligand_file=None, preview_count=None, count_limit=None, generate_3d=None):
-        """CreateLigandPreviewTaskReq
+        r"""CreateLigandPreviewTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateLigandPreviewTaskReq:
 
     @property
     def ligand_file(self):
-        """Gets the ligand_file of this CreateLigandPreviewTaskReq.
+        r"""Gets the ligand_file of this CreateLigandPreviewTaskReq.
 
         :return: The ligand_file of this CreateLigandPreviewTaskReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -72,7 +72,7 @@ class CreateLigandPreviewTaskReq:
 
     @ligand_file.setter
     def ligand_file(self, ligand_file):
-        """Sets the ligand_file of this CreateLigandPreviewTaskReq.
+        r"""Sets the ligand_file of this CreateLigandPreviewTaskReq.
 
         :param ligand_file: The ligand_file of this CreateLigandPreviewTaskReq.
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -81,7 +81,7 @@ class CreateLigandPreviewTaskReq:
 
     @property
     def preview_count(self):
-        """Gets the preview_count of this CreateLigandPreviewTaskReq.
+        r"""Gets the preview_count of this CreateLigandPreviewTaskReq.
 
         预览数量，若分子数量大于预览数量，则超出预览数量部分只做计数
 
@@ -92,7 +92,7 @@ class CreateLigandPreviewTaskReq:
 
     @preview_count.setter
     def preview_count(self, preview_count):
-        """Sets the preview_count of this CreateLigandPreviewTaskReq.
+        r"""Sets the preview_count of this CreateLigandPreviewTaskReq.
 
         预览数量，若分子数量大于预览数量，则超出预览数量部分只做计数
 
@@ -103,7 +103,7 @@ class CreateLigandPreviewTaskReq:
 
     @property
     def count_limit(self):
-        """Gets the count_limit of this CreateLigandPreviewTaskReq.
+        r"""Gets the count_limit of this CreateLigandPreviewTaskReq.
 
         计数上限，若分子数量大于计数上限，则终止计数并在结果中标明计数不完整（has_more=true），计数数量应不小于preview_count
 
@@ -114,7 +114,7 @@ class CreateLigandPreviewTaskReq:
 
     @count_limit.setter
     def count_limit(self, count_limit):
-        """Sets the count_limit of this CreateLigandPreviewTaskReq.
+        r"""Sets the count_limit of this CreateLigandPreviewTaskReq.
 
         计数上限，若分子数量大于计数上限，则终止计数并在结果中标明计数不完整（has_more=true），计数数量应不小于preview_count
 
@@ -125,7 +125,7 @@ class CreateLigandPreviewTaskReq:
 
     @property
     def generate_3d(self):
-        """Gets the generate_3d of this CreateLigandPreviewTaskReq.
+        r"""Gets the generate_3d of this CreateLigandPreviewTaskReq.
 
         是否生成3D构象，默认为true
 
@@ -136,7 +136,7 @@ class CreateLigandPreviewTaskReq:
 
     @generate_3d.setter
     def generate_3d(self, generate_3d):
-        """Sets the generate_3d of this CreateLigandPreviewTaskReq.
+        r"""Sets the generate_3d of this CreateLigandPreviewTaskReq.
 
         是否生成3D构象，默认为true
 

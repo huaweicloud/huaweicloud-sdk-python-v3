@@ -35,7 +35,7 @@ class ListProtectedIpRequest:
     }
 
     def __init__(self, offset=None, limit=None, package_id=None, policy_id=None, ip=None, tag=None):
-        """ListProtectedIpRequest
+        r"""ListProtectedIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListProtectedIpRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProtectedIpRequest.
+        r"""Gets the offset of this ListProtectedIpRequest.
 
         开始查询的偏移量,默认值:0
 
@@ -89,7 +89,7 @@ class ListProtectedIpRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProtectedIpRequest.
+        r"""Sets the offset of this ListProtectedIpRequest.
 
         开始查询的偏移量,默认值:0
 
@@ -100,7 +100,7 @@ class ListProtectedIpRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProtectedIpRequest.
+        r"""Gets the limit of this ListProtectedIpRequest.
 
         每页显示的条目数量,默认值:2000
 
@@ -111,7 +111,7 @@ class ListProtectedIpRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProtectedIpRequest.
+        r"""Sets the limit of this ListProtectedIpRequest.
 
         每页显示的条目数量,默认值:2000
 
@@ -122,7 +122,7 @@ class ListProtectedIpRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ListProtectedIpRequest.
+        r"""Gets the package_id of this ListProtectedIpRequest.
 
         防护包id
 
@@ -133,7 +133,7 @@ class ListProtectedIpRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ListProtectedIpRequest.
+        r"""Sets the package_id of this ListProtectedIpRequest.
 
         防护包id
 
@@ -144,7 +144,7 @@ class ListProtectedIpRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListProtectedIpRequest.
+        r"""Gets the policy_id of this ListProtectedIpRequest.
 
         策略id
 
@@ -155,7 +155,7 @@ class ListProtectedIpRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListProtectedIpRequest.
+        r"""Sets the policy_id of this ListProtectedIpRequest.
 
         策略id
 
@@ -166,7 +166,7 @@ class ListProtectedIpRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListProtectedIpRequest.
+        r"""Gets the ip of this ListProtectedIpRequest.
 
         防护ip
 
@@ -177,7 +177,7 @@ class ListProtectedIpRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListProtectedIpRequest.
+        r"""Sets the ip of this ListProtectedIpRequest.
 
         防护ip
 
@@ -188,7 +188,7 @@ class ListProtectedIpRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListProtectedIpRequest.
+        r"""Gets the tag of this ListProtectedIpRequest.
 
         本地标签
 
@@ -199,7 +199,7 @@ class ListProtectedIpRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListProtectedIpRequest.
+        r"""Sets the tag of this ListProtectedIpRequest.
 
         本地标签
 

@@ -31,7 +31,7 @@ class KeystoneCreateProjectOption:
     }
 
     def __init__(self, name=None, parent_id=None, domain_id=None, description=None):
-        """KeystoneCreateProjectOption
+        r"""KeystoneCreateProjectOption
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class KeystoneCreateProjectOption:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneCreateProjectOption.
+        r"""Gets the name of this KeystoneCreateProjectOption.
 
         项目名称。必须以存在的\"区域ID_\"开头，长度小于等于64字符。例如区域“华北-北京一”的区域ID为“cn-north-1”，在其下创建项目时，项目名应填“cn-north-1_IAMProject”
 
@@ -73,7 +73,7 @@ class KeystoneCreateProjectOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneCreateProjectOption.
+        r"""Sets the name of this KeystoneCreateProjectOption.
 
         项目名称。必须以存在的\"区域ID_\"开头，长度小于等于64字符。例如区域“华北-北京一”的区域ID为“cn-north-1”，在其下创建项目时，项目名应填“cn-north-1_IAMProject”
 
@@ -84,7 +84,7 @@ class KeystoneCreateProjectOption:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this KeystoneCreateProjectOption.
+        r"""Gets the parent_id of this KeystoneCreateProjectOption.
 
         区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -95,7 +95,7 @@ class KeystoneCreateProjectOption:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this KeystoneCreateProjectOption.
+        r"""Sets the parent_id of this KeystoneCreateProjectOption.
 
         区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -106,7 +106,7 @@ class KeystoneCreateProjectOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneCreateProjectOption.
+        r"""Gets the domain_id of this KeystoneCreateProjectOption.
 
         项目所属账号ID。
 
@@ -117,7 +117,7 @@ class KeystoneCreateProjectOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneCreateProjectOption.
+        r"""Sets the domain_id of this KeystoneCreateProjectOption.
 
         项目所属账号ID。
 
@@ -128,7 +128,7 @@ class KeystoneCreateProjectOption:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneCreateProjectOption.
+        r"""Gets the description of this KeystoneCreateProjectOption.
 
         项目描述信息，长度小于等于255字符。
 
@@ -139,7 +139,7 @@ class KeystoneCreateProjectOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneCreateProjectOption.
+        r"""Sets the description of this KeystoneCreateProjectOption.
 
         项目描述信息，长度小于等于255字符。
 

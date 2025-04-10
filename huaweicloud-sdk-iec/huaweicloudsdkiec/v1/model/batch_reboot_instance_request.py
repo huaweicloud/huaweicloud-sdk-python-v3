@@ -25,7 +25,7 @@ class BatchRebootInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRebootInstanceRequest
+        r"""BatchRebootInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRebootInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRebootInstanceRequest.
+        r"""Gets the body of this BatchRebootInstanceRequest.
 
         :return: The body of this BatchRebootInstanceRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceRequestBody`
@@ -52,7 +52,7 @@ class BatchRebootInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRebootInstanceRequest.
+        r"""Sets the body of this BatchRebootInstanceRequest.
 
         :param body: The body of this BatchRebootInstanceRequest.
         :type body: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceRequestBody`

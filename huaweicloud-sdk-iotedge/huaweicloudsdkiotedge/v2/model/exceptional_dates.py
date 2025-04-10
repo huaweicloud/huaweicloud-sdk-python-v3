@@ -27,7 +27,7 @@ class ExceptionalDates:
     }
 
     def __init__(self, valid_dates=None, invalid_dates=None):
-        """ExceptionalDates
+        r"""ExceptionalDates
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExceptionalDates:
 
     @property
     def valid_dates(self):
-        """Gets the valid_dates of this ExceptionalDates.
+        r"""Gets the valid_dates of this ExceptionalDates.
 
         例外日期
 
@@ -61,7 +61,7 @@ class ExceptionalDates:
 
     @valid_dates.setter
     def valid_dates(self, valid_dates):
-        """Sets the valid_dates of this ExceptionalDates.
+        r"""Sets the valid_dates of this ExceptionalDates.
 
         例外日期
 
@@ -72,7 +72,7 @@ class ExceptionalDates:
 
     @property
     def invalid_dates(self):
-        """Gets the invalid_dates of this ExceptionalDates.
+        r"""Gets the invalid_dates of this ExceptionalDates.
 
         无效日期
 
@@ -83,7 +83,7 @@ class ExceptionalDates:
 
     @invalid_dates.setter
     def invalid_dates(self, invalid_dates):
-        """Sets the invalid_dates of this ExceptionalDates.
+        r"""Sets the invalid_dates of this ExceptionalDates.
 
         无效日期
 

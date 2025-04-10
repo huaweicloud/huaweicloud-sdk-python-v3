@@ -47,7 +47,7 @@ class AppReq:
     }
 
     def __init__(self, name=None, version=None, summary=None, description=None, labels=None, image=None, commands=None, resources=None, inputs=None, outputs=None, node_labels=None, icon=None):
-        """AppReq
+        r"""AppReq
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class AppReq:
 
     @property
     def name(self):
-        """Gets the name of this AppReq.
+        r"""Gets the name of this AppReq.
 
         应用名称 目标应用名称 取值范围：长度为[1,56]，以大小写字母开头，允许出现中划线(-)、下划线(_)、小写字母和数字，且必须以大小写字母或数字结尾。
 
@@ -127,7 +127,7 @@ class AppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppReq.
+        r"""Sets the name of this AppReq.
 
         应用名称 目标应用名称 取值范围：长度为[1,56]，以大小写字母开头，允许出现中划线(-)、下划线(_)、小写字母和数字，且必须以大小写字母或数字结尾。
 
@@ -138,7 +138,7 @@ class AppReq:
 
     @property
     def version(self):
-        """Gets the version of this AppReq.
+        r"""Gets the version of this AppReq.
 
         应用版本 取值范围：[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。更新应用时，应用版本不支持修改。
 
@@ -149,7 +149,7 @@ class AppReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AppReq.
+        r"""Sets the version of this AppReq.
 
         应用版本 取值范围：[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。更新应用时，应用版本不支持修改。
 
@@ -160,7 +160,7 @@ class AppReq:
 
     @property
     def summary(self):
-        """Gets the summary of this AppReq.
+        r"""Gets the summary of this AppReq.
 
         应用简述 取值范围[0,128]
 
@@ -171,7 +171,7 @@ class AppReq:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this AppReq.
+        r"""Sets the summary of this AppReq.
 
         应用简述 取值范围[0,128]
 
@@ -182,7 +182,7 @@ class AppReq:
 
     @property
     def description(self):
-        """Gets the description of this AppReq.
+        r"""Gets the description of this AppReq.
 
         应用描述 取值范围[0,65535]，后续支持markdown文本
 
@@ -193,7 +193,7 @@ class AppReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppReq.
+        r"""Sets the description of this AppReq.
 
         应用描述 取值范围[0,65535]，后续支持markdown文本
 
@@ -204,7 +204,7 @@ class AppReq:
 
     @property
     def labels(self):
-        """Gets the labels of this AppReq.
+        r"""Gets the labels of this AppReq.
 
         应用标签 取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -215,7 +215,7 @@ class AppReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this AppReq.
+        r"""Sets the labels of this AppReq.
 
         应用标签 取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -226,7 +226,7 @@ class AppReq:
 
     @property
     def image(self):
-        """Gets the image of this AppReq.
+        r"""Gets the image of this AppReq.
 
         docker镜像地址 取值范围[5-255]，不能包含中文字符
 
@@ -237,7 +237,7 @@ class AppReq:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this AppReq.
+        r"""Sets the image of this AppReq.
 
         docker镜像地址 取值范围[5-255]，不能包含中文字符
 
@@ -248,7 +248,7 @@ class AppReq:
 
     @property
     def commands(self):
-        """Gets the commands of this AppReq.
+        r"""Gets the commands of this AppReq.
 
         docker启动时执行命令 取值范围[1-300]，单个命令长度取值范围[0-256]，不能包含中文字符
 
@@ -259,7 +259,7 @@ class AppReq:
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this AppReq.
+        r"""Sets the commands of this AppReq.
 
         docker启动时执行命令 取值范围[1-300]，单个命令长度取值范围[0-256]，不能包含中文字符
 
@@ -270,7 +270,7 @@ class AppReq:
 
     @property
     def resources(self):
-        """Gets the resources of this AppReq.
+        r"""Gets the resources of this AppReq.
 
         :return: The resources of this AppReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ResourceDto`
@@ -279,7 +279,7 @@ class AppReq:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this AppReq.
+        r"""Sets the resources of this AppReq.
 
         :param resources: The resources of this AppReq.
         :type resources: :class:`huaweicloudsdkeihealth.v1.ResourceDto`
@@ -288,7 +288,7 @@ class AppReq:
 
     @property
     def inputs(self):
-        """Gets the inputs of this AppReq.
+        r"""Gets the inputs of this AppReq.
 
         应用的输入参数列表
 
@@ -299,7 +299,7 @@ class AppReq:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this AppReq.
+        r"""Sets the inputs of this AppReq.
 
         应用的输入参数列表
 
@@ -310,7 +310,7 @@ class AppReq:
 
     @property
     def outputs(self):
-        """Gets the outputs of this AppReq.
+        r"""Gets the outputs of this AppReq.
 
         应用的输出参数列表
 
@@ -321,7 +321,7 @@ class AppReq:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this AppReq.
+        r"""Sets the outputs of this AppReq.
 
         应用的输出参数列表
 
@@ -332,7 +332,7 @@ class AppReq:
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this AppReq.
+        r"""Gets the node_labels of this AppReq.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -343,7 +343,7 @@ class AppReq:
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this AppReq.
+        r"""Sets the node_labels of this AppReq.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -354,7 +354,7 @@ class AppReq:
 
     @property
     def icon(self):
-        """Gets the icon of this AppReq.
+        r"""Gets the icon of this AppReq.
 
         图标base64编码
 
@@ -365,7 +365,7 @@ class AppReq:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this AppReq.
+        r"""Sets the icon of this AppReq.
 
         图标base64编码
 

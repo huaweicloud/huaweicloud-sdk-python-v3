@@ -25,7 +25,7 @@ class BatchDeleteDesktopNamePolicyRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteDesktopNamePolicyRequest
+        r"""BatchDeleteDesktopNamePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteDesktopNamePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteDesktopNamePolicyRequest.
+        r"""Gets the body of this BatchDeleteDesktopNamePolicyRequest.
 
         :return: The body of this BatchDeleteDesktopNamePolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopNamePolicyReq`
@@ -52,7 +52,7 @@ class BatchDeleteDesktopNamePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteDesktopNamePolicyRequest.
+        r"""Sets the body of this BatchDeleteDesktopNamePolicyRequest.
 
         :param body: The body of this BatchDeleteDesktopNamePolicyRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopNamePolicyReq`

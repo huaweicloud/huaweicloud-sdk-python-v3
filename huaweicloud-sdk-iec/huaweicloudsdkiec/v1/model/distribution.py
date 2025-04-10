@@ -45,7 +45,7 @@ class Distribution:
     }
 
     def __init__(self, area=None, city=None, operator=None, province=None, site_id=None, pool_id=None, stack_count=None, city_short_name=None, ipv6_enable=None, ipv6_bandwidth_enable=None, pool_id_v6=None):
-        """Distribution
+        r"""Distribution
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Distribution:
 
     @property
     def area(self):
-        """Gets the area of this Distribution.
+        r"""Gets the area of this Distribution.
 
         所在大区名称。
 
@@ -124,7 +124,7 @@ class Distribution:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this Distribution.
+        r"""Sets the area of this Distribution.
 
         所在大区名称。
 
@@ -135,7 +135,7 @@ class Distribution:
 
     @property
     def city(self):
-        """Gets the city of this Distribution.
+        r"""Gets the city of this Distribution.
 
         所在城市名称。
 
@@ -146,7 +146,7 @@ class Distribution:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this Distribution.
+        r"""Sets the city of this Distribution.
 
         所在城市名称。
 
@@ -157,7 +157,7 @@ class Distribution:
 
     @property
     def operator(self):
-        """Gets the operator of this Distribution.
+        r"""Gets the operator of this Distribution.
 
         所属运营商名称。
 
@@ -168,7 +168,7 @@ class Distribution:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this Distribution.
+        r"""Sets the operator of this Distribution.
 
         所属运营商名称。
 
@@ -179,7 +179,7 @@ class Distribution:
 
     @property
     def province(self):
-        """Gets the province of this Distribution.
+        r"""Gets the province of this Distribution.
 
         所属省份名称。
 
@@ -190,7 +190,7 @@ class Distribution:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this Distribution.
+        r"""Sets the province of this Distribution.
 
         所属省份名称。
 
@@ -201,7 +201,7 @@ class Distribution:
 
     @property
     def site_id(self):
-        """Gets the site_id of this Distribution.
+        r"""Gets the site_id of this Distribution.
 
         站点ID。
 
@@ -212,7 +212,7 @@ class Distribution:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this Distribution.
+        r"""Sets the site_id of this Distribution.
 
         站点ID。
 
@@ -223,7 +223,7 @@ class Distribution:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this Distribution.
+        r"""Gets the pool_id of this Distribution.
 
         线路ID。多线路场景下，将在该线路下创建弹性公网IP。
 
@@ -234,7 +234,7 @@ class Distribution:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this Distribution.
+        r"""Sets the pool_id of this Distribution.
 
         线路ID。多线路场景下，将在该线路下创建弹性公网IP。
 
@@ -245,7 +245,7 @@ class Distribution:
 
     @property
     def stack_count(self):
-        """Gets the stack_count of this Distribution.
+        r"""Gets the stack_count of this Distribution.
 
         资源组配置模板数目
 
@@ -256,7 +256,7 @@ class Distribution:
 
     @stack_count.setter
     def stack_count(self, stack_count):
-        """Sets the stack_count of this Distribution.
+        r"""Sets the stack_count of this Distribution.
 
         资源组配置模板数目
 
@@ -267,7 +267,7 @@ class Distribution:
 
     @property
     def city_short_name(self):
-        """Gets the city_short_name of this Distribution.
+        r"""Gets the city_short_name of this Distribution.
 
         城市简称。
 
@@ -278,7 +278,7 @@ class Distribution:
 
     @city_short_name.setter
     def city_short_name(self, city_short_name):
-        """Sets the city_short_name of this Distribution.
+        r"""Sets the city_short_name of this Distribution.
 
         城市简称。
 
@@ -289,7 +289,7 @@ class Distribution:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this Distribution.
+        r"""Gets the ipv6_enable of this Distribution.
 
         创建边缘实例是否开启IPv6。
 
@@ -300,7 +300,7 @@ class Distribution:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this Distribution.
+        r"""Sets the ipv6_enable of this Distribution.
 
         创建边缘实例是否开启IPv6。
 
@@ -311,7 +311,7 @@ class Distribution:
 
     @property
     def ipv6_bandwidth_enable(self):
-        """Gets the ipv6_bandwidth_enable of this Distribution.
+        r"""Gets the ipv6_bandwidth_enable of this Distribution.
 
         创建IPv6边缘实例是否支持公网访问。
 
@@ -322,7 +322,7 @@ class Distribution:
 
     @ipv6_bandwidth_enable.setter
     def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
-        """Sets the ipv6_bandwidth_enable of this Distribution.
+        r"""Sets the ipv6_bandwidth_enable of this Distribution.
 
         创建IPv6边缘实例是否支持公网访问。
 
@@ -333,7 +333,7 @@ class Distribution:
 
     @property
     def pool_id_v6(self):
-        """Gets the pool_id_v6 of this Distribution.
+        r"""Gets the pool_id_v6 of this Distribution.
 
         IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
 
@@ -344,7 +344,7 @@ class Distribution:
 
     @pool_id_v6.setter
     def pool_id_v6(self, pool_id_v6):
-        """Sets the pool_id_v6 of this Distribution.
+        r"""Sets the pool_id_v6 of this Distribution.
 
         IPv6线路ID。IPv6场景下，使用该线路下的子网分配IPv6端口。
 

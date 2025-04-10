@@ -29,7 +29,7 @@ class SetMessageReceiveConfigReq:
     }
 
     def __init__(self, scope=None, resource_types=None, language=None):
-        """SetMessageReceiveConfigReq
+        r"""SetMessageReceiveConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetMessageReceiveConfigReq:
 
     @property
     def scope(self):
-        """Gets the scope of this SetMessageReceiveConfigReq.
+        r"""Gets the scope of this SetMessageReceiveConfigReq.
 
         接收范围（不接收消息(none)、仅接收自己操作的消息(mine)、接收全部消息(all)）
 
@@ -67,7 +67,7 @@ class SetMessageReceiveConfigReq:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this SetMessageReceiveConfigReq.
+        r"""Sets the scope of this SetMessageReceiveConfigReq.
 
         接收范围（不接收消息(none)、仅接收自己操作的消息(mine)、接收全部消息(all)）
 
@@ -78,7 +78,7 @@ class SetMessageReceiveConfigReq:
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this SetMessageReceiveConfigReq.
+        r"""Gets the resource_types of this SetMessageReceiveConfigReq.
 
         资源类型
 
@@ -89,7 +89,7 @@ class SetMessageReceiveConfigReq:
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this SetMessageReceiveConfigReq.
+        r"""Sets the resource_types of this SetMessageReceiveConfigReq.
 
         资源类型
 
@@ -100,7 +100,7 @@ class SetMessageReceiveConfigReq:
 
     @property
     def language(self):
-        """Gets the language of this SetMessageReceiveConfigReq.
+        r"""Gets the language of this SetMessageReceiveConfigReq.
 
         :return: The language of this SetMessageReceiveConfigReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
@@ -109,7 +109,7 @@ class SetMessageReceiveConfigReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SetMessageReceiveConfigReq.
+        r"""Sets the language of this SetMessageReceiveConfigReq.
 
         :param language: The language of this SetMessageReceiveConfigReq.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

@@ -41,7 +41,7 @@ class EncryptData:
     }
 
     def __init__(self, id=None, name=None, description=None, config=None, project_id=None, ief_instance_id=None, domain_id=None, created_time=None, updated_time=None):
-        """EncryptData
+        r"""EncryptData
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class EncryptData:
 
     @property
     def id(self):
-        """Gets the id of this EncryptData.
+        r"""Gets the id of this EncryptData.
 
         加密数据ID
 
@@ -106,7 +106,7 @@ class EncryptData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EncryptData.
+        r"""Sets the id of this EncryptData.
 
         加密数据ID
 
@@ -117,7 +117,7 @@ class EncryptData:
 
     @property
     def name(self):
-        """Gets the name of this EncryptData.
+        r"""Gets the name of this EncryptData.
 
         加密数据名称
 
@@ -128,7 +128,7 @@ class EncryptData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EncryptData.
+        r"""Sets the name of this EncryptData.
 
         加密数据名称
 
@@ -139,7 +139,7 @@ class EncryptData:
 
     @property
     def description(self):
-        """Gets the description of this EncryptData.
+        r"""Gets the description of this EncryptData.
 
         加密数据描述
 
@@ -150,7 +150,7 @@ class EncryptData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EncryptData.
+        r"""Sets the description of this EncryptData.
 
         加密数据描述
 
@@ -161,7 +161,7 @@ class EncryptData:
 
     @property
     def config(self):
-        """Gets the config of this EncryptData.
+        r"""Gets the config of this EncryptData.
 
         加密数据项配置
 
@@ -172,7 +172,7 @@ class EncryptData:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this EncryptData.
+        r"""Sets the config of this EncryptData.
 
         加密数据项配置
 
@@ -183,7 +183,7 @@ class EncryptData:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EncryptData.
+        r"""Gets the project_id of this EncryptData.
 
         项目ID
 
@@ -194,7 +194,7 @@ class EncryptData:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EncryptData.
+        r"""Sets the project_id of this EncryptData.
 
         项目ID
 
@@ -205,7 +205,7 @@ class EncryptData:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this EncryptData.
+        r"""Gets the ief_instance_id of this EncryptData.
 
         铂金版实例ID，专业版实例为default
 
@@ -216,7 +216,7 @@ class EncryptData:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this EncryptData.
+        r"""Sets the ief_instance_id of this EncryptData.
 
         铂金版实例ID，专业版实例为default
 
@@ -227,7 +227,7 @@ class EncryptData:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EncryptData.
+        r"""Gets the domain_id of this EncryptData.
 
         租户账户ID
 
@@ -238,7 +238,7 @@ class EncryptData:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EncryptData.
+        r"""Sets the domain_id of this EncryptData.
 
         租户账户ID
 
@@ -249,7 +249,7 @@ class EncryptData:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EncryptData.
+        r"""Gets the created_time of this EncryptData.
 
         加密数据创建时间
 
@@ -260,7 +260,7 @@ class EncryptData:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EncryptData.
+        r"""Sets the created_time of this EncryptData.
 
         加密数据创建时间
 
@@ -271,7 +271,7 @@ class EncryptData:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this EncryptData.
+        r"""Gets the updated_time of this EncryptData.
 
         加密数据更新时间
 
@@ -282,7 +282,7 @@ class EncryptData:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this EncryptData.
+        r"""Sets the updated_time of this EncryptData.
 
         加密数据更新时间
 

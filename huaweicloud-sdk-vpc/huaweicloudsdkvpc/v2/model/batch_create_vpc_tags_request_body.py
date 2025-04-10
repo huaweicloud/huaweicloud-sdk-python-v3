@@ -27,7 +27,7 @@ class BatchCreateVpcTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateVpcTagsRequestBody
+        r"""BatchCreateVpcTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateVpcTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateVpcTagsRequestBody.
+        r"""Gets the action of this BatchCreateVpcTagsRequestBody.
 
         功能说明：操作标识 取值范围：create
 
@@ -59,7 +59,7 @@ class BatchCreateVpcTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateVpcTagsRequestBody.
+        r"""Sets the action of this BatchCreateVpcTagsRequestBody.
 
         功能说明：操作标识 取值范围：create
 
@@ -70,7 +70,7 @@ class BatchCreateVpcTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateVpcTagsRequestBody.
+        r"""Gets the tags of this BatchCreateVpcTagsRequestBody.
 
         功能说明：标签列表
 
@@ -81,7 +81,7 @@ class BatchCreateVpcTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateVpcTagsRequestBody.
+        r"""Sets the tags of this BatchCreateVpcTagsRequestBody.
 
         功能说明：标签列表
 

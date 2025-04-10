@@ -27,7 +27,7 @@ class Tag:
     }
 
     def __init__(self, key=None, value=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Tag:
 
     @property
     def key(self):
-        """Gets the key of this Tag.
+        r"""Gets the key of this Tag.
 
         **参数说明**：标签键，标签的键可用字母(包含中文)、数字、空格和以下字符：下划线(_)点(.)冒号(:)等号(=)加号(+)中划线(-)以及@，首尾不能有空格字符 
 
@@ -60,7 +60,7 @@ class Tag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tag.
+        r"""Sets the key of this Tag.
 
         **参数说明**：标签键，标签的键可用字母(包含中文)、数字、空格和以下字符：下划线(_)点(.)冒号(:)等号(=)加号(+)中划线(-)以及@，首尾不能有空格字符 
 
@@ -71,7 +71,7 @@ class Tag:
 
     @property
     def value(self):
-        """Gets the value of this Tag.
+        r"""Gets the value of this Tag.
 
         **参数说明**：标签值，可为空字符串和null，标签的值可用字母(包含中文)、数字、空格和以下字符：下划线(_)点(.)冒号(:)等号(=)加号(+)中划线(-)以及@ 
 
@@ -82,7 +82,7 @@ class Tag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Tag.
+        r"""Sets the value of this Tag.
 
         **参数说明**：标签值，可为空字符串和null，标签的值可用字母(包含中文)、数字、空格和以下字符：下划线(_)点(.)冒号(:)等号(=)加号(+)中划线(-)以及@ 
 

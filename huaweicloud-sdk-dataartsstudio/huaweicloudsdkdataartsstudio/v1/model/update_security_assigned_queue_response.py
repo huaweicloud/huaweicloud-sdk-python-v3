@@ -54,7 +54,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
     }
 
     def __init__(self, id=None, source_type=None, queue_name=None, queue_type=None, queue_attr=None, conn_id=None, conn_name=None, cluster_id=None, cluster_name=None, create_time=None, create_user=None, update_time=None, update_user=None, project_id=None, description=None):
-        """UpdateSecurityAssignedQueueResponse
+        r"""UpdateSecurityAssignedQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the id of this UpdateSecurityAssignedQueueResponse.
 
         队列资源id。
 
@@ -153,7 +153,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the id of this UpdateSecurityAssignedQueueResponse.
 
         队列资源id。
 
@@ -164,7 +164,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def source_type(self):
-        """Gets the source_type of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the source_type of this UpdateSecurityAssignedQueueResponse.
 
         队列资源服务名称。
 
@@ -175,7 +175,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the source_type of this UpdateSecurityAssignedQueueResponse.
 
         队列资源服务名称。
 
@@ -186,7 +186,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the queue_name of this UpdateSecurityAssignedQueueResponse.
 
         队列名称。
 
@@ -197,7 +197,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the queue_name of this UpdateSecurityAssignedQueueResponse.
 
         队列名称。
 
@@ -208,7 +208,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the queue_type of this UpdateSecurityAssignedQueueResponse.
 
         队列类型。
 
@@ -219,7 +219,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the queue_type of this UpdateSecurityAssignedQueueResponse.
 
         队列类型。
 
@@ -230,7 +230,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def queue_attr(self):
-        """Gets the queue_attr of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the queue_attr of this UpdateSecurityAssignedQueueResponse.
 
         队列属性(0:默认,1:实时队列,2:离线队列), 当前只有yarn队列涉及。
 
@@ -241,7 +241,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @queue_attr.setter
     def queue_attr(self, queue_attr):
-        """Sets the queue_attr of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the queue_attr of this UpdateSecurityAssignedQueueResponse.
 
         队列属性(0:默认,1:实时队列,2:离线队列), 当前只有yarn队列涉及。
 
@@ -252,7 +252,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def conn_id(self):
-        """Gets the conn_id of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the conn_id of this UpdateSecurityAssignedQueueResponse.
 
         数据连接id。
 
@@ -263,7 +263,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @conn_id.setter
     def conn_id(self, conn_id):
-        """Sets the conn_id of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the conn_id of this UpdateSecurityAssignedQueueResponse.
 
         数据连接id。
 
@@ -274,7 +274,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def conn_name(self):
-        """Gets the conn_name of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the conn_name of this UpdateSecurityAssignedQueueResponse.
 
         数据连接名称。
 
@@ -285,7 +285,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @conn_name.setter
     def conn_name(self, conn_name):
-        """Sets the conn_name of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the conn_name of this UpdateSecurityAssignedQueueResponse.
 
         数据连接名称。
 
@@ -296,7 +296,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the cluster_id of this UpdateSecurityAssignedQueueResponse.
 
         集群id。
 
@@ -307,7 +307,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the cluster_id of this UpdateSecurityAssignedQueueResponse.
 
         集群id。
 
@@ -318,7 +318,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the cluster_name of this UpdateSecurityAssignedQueueResponse.
 
         集群名称。
 
@@ -329,7 +329,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the cluster_name of this UpdateSecurityAssignedQueueResponse.
 
         集群名称。
 
@@ -340,7 +340,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the create_time of this UpdateSecurityAssignedQueueResponse.
 
         队列加入此空间的时间。
 
@@ -351,7 +351,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the create_time of this UpdateSecurityAssignedQueueResponse.
 
         队列加入此空间的时间。
 
@@ -362,7 +362,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the create_user of this UpdateSecurityAssignedQueueResponse.
 
         队列加入此的操作人。
 
@@ -373,7 +373,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the create_user of this UpdateSecurityAssignedQueueResponse.
 
         队列加入此的操作人。
 
@@ -384,7 +384,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the update_time of this UpdateSecurityAssignedQueueResponse.
 
         当前空间下管理的队列更新时间。
 
@@ -395,7 +395,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the update_time of this UpdateSecurityAssignedQueueResponse.
 
         当前空间下管理的队列更新时间。
 
@@ -406,7 +406,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the update_user of this UpdateSecurityAssignedQueueResponse.
 
         当前空间下管理的队列更新人。
 
@@ -417,7 +417,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the update_user of this UpdateSecurityAssignedQueueResponse.
 
         当前空间下管理的队列更新人。
 
@@ -428,7 +428,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the project_id of this UpdateSecurityAssignedQueueResponse.
 
         项目id。
 
@@ -439,7 +439,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the project_id of this UpdateSecurityAssignedQueueResponse.
 
         项目id。
 
@@ -450,7 +450,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateSecurityAssignedQueueResponse.
+        r"""Gets the description of this UpdateSecurityAssignedQueueResponse.
 
         当前空间分配资源附加的描述信息。
 
@@ -461,7 +461,7 @@ class UpdateSecurityAssignedQueueResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSecurityAssignedQueueResponse.
+        r"""Sets the description of this UpdateSecurityAssignedQueueResponse.
 
         当前空间分配资源附加的描述信息。
 

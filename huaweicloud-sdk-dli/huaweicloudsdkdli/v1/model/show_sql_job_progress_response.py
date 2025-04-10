@@ -38,7 +38,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, status=None, sub_job_id=None, progress=None, sub_jobs=None):
-        """ShowSqlJobProgressResponse
+        r"""ShowSqlJobProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowSqlJobProgressResponse.
+        r"""Gets the is_success of this ShowSqlJobProgressResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -97,7 +97,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowSqlJobProgressResponse.
+        r"""Sets the is_success of this ShowSqlJobProgressResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -108,7 +108,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowSqlJobProgressResponse.
+        r"""Gets the message of this ShowSqlJobProgressResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -119,7 +119,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowSqlJobProgressResponse.
+        r"""Sets the message of this ShowSqlJobProgressResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -130,7 +130,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSqlJobProgressResponse.
+        r"""Gets the job_id of this ShowSqlJobProgressResponse.
 
         作业ID。
 
@@ -141,7 +141,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSqlJobProgressResponse.
+        r"""Sets the job_id of this ShowSqlJobProgressResponse.
 
         作业ID。
 
@@ -152,7 +152,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSqlJobProgressResponse.
+        r"""Gets the status of this ShowSqlJobProgressResponse.
 
         作业状态。
 
@@ -163,7 +163,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSqlJobProgressResponse.
+        r"""Sets the status of this ShowSqlJobProgressResponse.
 
         作业状态。
 
@@ -174,7 +174,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def sub_job_id(self):
-        """Gets the sub_job_id of this ShowSqlJobProgressResponse.
+        r"""Gets the sub_job_id of this ShowSqlJobProgressResponse.
 
         正在运行的子作业ID，如果作业还没开始运行或者运行结束，则子作业ID可能为空。
 
@@ -185,7 +185,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @sub_job_id.setter
     def sub_job_id(self, sub_job_id):
-        """Sets the sub_job_id of this ShowSqlJobProgressResponse.
+        r"""Sets the sub_job_id of this ShowSqlJobProgressResponse.
 
         正在运行的子作业ID，如果作业还没开始运行或者运行结束，则子作业ID可能为空。
 
@@ -196,7 +196,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowSqlJobProgressResponse.
+        r"""Gets the progress of this ShowSqlJobProgressResponse.
 
         正在运行的子作业的进度或者整个作业进度，该值只能粗略的估算子作业进度，不表示作业的详细进度。有两方面的含义： （1）如果整个作业刚开始运行或者在提交中，则进度展示为0；如果作业运行结束，则进度展示为1。此时progress表示整个作业的运行进度，因为没有子作业在运行，sub_job_id不展示。 （2）如果有子作业在运行中，则展示该子作业的运行进度，progress的计算方法为：子作业已经完成的task数除以子作业总的task数。此时progress表示子作业的运行进度，sub_job_id展示。
 
@@ -207,7 +207,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowSqlJobProgressResponse.
+        r"""Sets the progress of this ShowSqlJobProgressResponse.
 
         正在运行的子作业的进度或者整个作业进度，该值只能粗略的估算子作业进度，不表示作业的详细进度。有两方面的含义： （1）如果整个作业刚开始运行或者在提交中，则进度展示为0；如果作业运行结束，则进度展示为1。此时progress表示整个作业的运行进度，因为没有子作业在运行，sub_job_id不展示。 （2）如果有子作业在运行中，则展示该子作业的运行进度，progress的计算方法为：子作业已经完成的task数除以子作业总的task数。此时progress表示子作业的运行进度，sub_job_id展示。
 
@@ -218,7 +218,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this ShowSqlJobProgressResponse.
+        r"""Gets the sub_jobs of this ShowSqlJobProgressResponse.
 
         正在运行作业的子作业的详细信息，一个作业可能包含多个子作业。
 
@@ -229,7 +229,7 @@ class ShowSqlJobProgressResponse(SdkResponse):
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this ShowSqlJobProgressResponse.
+        r"""Sets the sub_jobs of this ShowSqlJobProgressResponse.
 
         正在运行作业的子作业的详细信息，一个作业可能包含多个子作业。
 

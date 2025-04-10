@@ -37,7 +37,7 @@ class JobEventRsp:
     }
 
     def __init__(self, action_name=None, count=None, first_timestamp=None, last_timestamp=None, message=None, reason=None, type=None):
-        """JobEventRsp
+        r"""JobEventRsp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class JobEventRsp:
 
     @property
     def action_name(self):
-        """Gets the action_name of this JobEventRsp.
+        r"""Gets the action_name of this JobEventRsp.
 
         执行动作名称
 
@@ -96,7 +96,7 @@ class JobEventRsp:
 
     @action_name.setter
     def action_name(self, action_name):
-        """Sets the action_name of this JobEventRsp.
+        r"""Sets the action_name of this JobEventRsp.
 
         执行动作名称
 
@@ -107,7 +107,7 @@ class JobEventRsp:
 
     @property
     def count(self):
-        """Gets the count of this JobEventRsp.
+        r"""Gets the count of this JobEventRsp.
 
         作业启动事件发生次数
 
@@ -118,7 +118,7 @@ class JobEventRsp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this JobEventRsp.
+        r"""Sets the count of this JobEventRsp.
 
         作业启动事件发生次数
 
@@ -129,7 +129,7 @@ class JobEventRsp:
 
     @property
     def first_timestamp(self):
-        """Gets the first_timestamp of this JobEventRsp.
+        r"""Gets the first_timestamp of this JobEventRsp.
 
         作业启动事件首次上报时间
 
@@ -140,7 +140,7 @@ class JobEventRsp:
 
     @first_timestamp.setter
     def first_timestamp(self, first_timestamp):
-        """Sets the first_timestamp of this JobEventRsp.
+        r"""Sets the first_timestamp of this JobEventRsp.
 
         作业启动事件首次上报时间
 
@@ -151,7 +151,7 @@ class JobEventRsp:
 
     @property
     def last_timestamp(self):
-        """Gets the last_timestamp of this JobEventRsp.
+        r"""Gets the last_timestamp of this JobEventRsp.
 
         作业启动事件末次上报时间
 
@@ -162,7 +162,7 @@ class JobEventRsp:
 
     @last_timestamp.setter
     def last_timestamp(self, last_timestamp):
-        """Sets the last_timestamp of this JobEventRsp.
+        r"""Sets the last_timestamp of this JobEventRsp.
 
         作业启动事件末次上报时间
 
@@ -173,7 +173,7 @@ class JobEventRsp:
 
     @property
     def message(self):
-        """Gets the message of this JobEventRsp.
+        r"""Gets the message of this JobEventRsp.
 
         作业启动事件详细信息
 
@@ -184,7 +184,7 @@ class JobEventRsp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this JobEventRsp.
+        r"""Sets the message of this JobEventRsp.
 
         作业启动事件详细信息
 
@@ -195,7 +195,7 @@ class JobEventRsp:
 
     @property
     def reason(self):
-        """Gets the reason of this JobEventRsp.
+        r"""Gets the reason of this JobEventRsp.
 
         作业启动事件状态
 
@@ -206,7 +206,7 @@ class JobEventRsp:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this JobEventRsp.
+        r"""Sets the reason of this JobEventRsp.
 
         作业启动事件状态
 
@@ -217,7 +217,7 @@ class JobEventRsp:
 
     @property
     def type(self):
-        """Gets the type of this JobEventRsp.
+        r"""Gets the type of this JobEventRsp.
 
         作业启动事件类型
 
@@ -228,7 +228,7 @@ class JobEventRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this JobEventRsp.
+        r"""Sets the type of this JobEventRsp.
 
         作业启动事件类型
 

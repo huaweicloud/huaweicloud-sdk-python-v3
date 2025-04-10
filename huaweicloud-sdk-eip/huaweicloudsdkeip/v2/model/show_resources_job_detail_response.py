@@ -40,7 +40,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_type=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, entities=None):
-        """ShowResourcesJobDetailResponse
+        r"""ShowResourcesJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowResourcesJobDetailResponse.
+        r"""Gets the job_id of this ShowResourcesJobDetailResponse.
 
         job id
 
@@ -104,7 +104,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowResourcesJobDetailResponse.
+        r"""Sets the job_id of this ShowResourcesJobDetailResponse.
 
         job id
 
@@ -115,7 +115,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowResourcesJobDetailResponse.
+        r"""Gets the job_type of this ShowResourcesJobDetailResponse.
 
         job类型
 
@@ -126,7 +126,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowResourcesJobDetailResponse.
+        r"""Sets the job_type of this ShowResourcesJobDetailResponse.
 
         job类型
 
@@ -137,7 +137,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowResourcesJobDetailResponse.
+        r"""Gets the begin_time of this ShowResourcesJobDetailResponse.
 
         创建时间
 
@@ -148,7 +148,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowResourcesJobDetailResponse.
+        r"""Sets the begin_time of this ShowResourcesJobDetailResponse.
 
         创建时间
 
@@ -159,7 +159,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowResourcesJobDetailResponse.
+        r"""Gets the end_time of this ShowResourcesJobDetailResponse.
 
         创建完成时间
 
@@ -170,7 +170,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowResourcesJobDetailResponse.
+        r"""Sets the end_time of this ShowResourcesJobDetailResponse.
 
         创建完成时间
 
@@ -181,7 +181,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowResourcesJobDetailResponse.
+        r"""Gets the status of this ShowResourcesJobDetailResponse.
 
         job状态
 
@@ -192,7 +192,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowResourcesJobDetailResponse.
+        r"""Sets the status of this ShowResourcesJobDetailResponse.
 
         job状态
 
@@ -203,7 +203,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowResourcesJobDetailResponse.
+        r"""Gets the error_code of this ShowResourcesJobDetailResponse.
 
         错误码
 
@@ -214,7 +214,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowResourcesJobDetailResponse.
+        r"""Sets the error_code of this ShowResourcesJobDetailResponse.
 
         错误码
 
@@ -225,7 +225,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowResourcesJobDetailResponse.
+        r"""Gets the fail_reason of this ShowResourcesJobDetailResponse.
 
         错误信息
 
@@ -236,7 +236,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowResourcesJobDetailResponse.
+        r"""Sets the fail_reason of this ShowResourcesJobDetailResponse.
 
         错误信息
 
@@ -247,7 +247,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowResourcesJobDetailResponse.
+        r"""Gets the entities of this ShowResourcesJobDetailResponse.
 
         :return: The entities of this ShowResourcesJobDetailResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.SubJobsInfo`
@@ -256,7 +256,7 @@ class ShowResourcesJobDetailResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowResourcesJobDetailResponse.
+        r"""Sets the entities of this ShowResourcesJobDetailResponse.
 
         :param entities: The entities of this ShowResourcesJobDetailResponse.
         :type entities: :class:`huaweicloudsdkeip.v2.SubJobsInfo`

@@ -26,7 +26,7 @@ class DomainKindObj:
     }
 
     def __init__(self):
-        """DomainKindObj
+        r"""DomainKindObj
 
         The model defined in huaweicloud sdk
 

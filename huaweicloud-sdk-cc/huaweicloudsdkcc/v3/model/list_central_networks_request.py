@@ -47,7 +47,7 @@ class ListCentralNetworksRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, state=None, enterprise_project_id=None, enterprise_router_id=None, attachment_instance_id=None, global_connection_bandwidth_id=None, connection_id=None):
-        """ListCentralNetworksRequest
+        r"""ListCentralNetworksRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListCentralNetworksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCentralNetworksRequest.
+        r"""Gets the limit of this ListCentralNetworksRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -131,7 +131,7 @@ class ListCentralNetworksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCentralNetworksRequest.
+        r"""Sets the limit of this ListCentralNetworksRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -142,7 +142,7 @@ class ListCentralNetworksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCentralNetworksRequest.
+        r"""Gets the marker of this ListCentralNetworksRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -153,7 +153,7 @@ class ListCentralNetworksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCentralNetworksRequest.
+        r"""Sets the marker of this ListCentralNetworksRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -164,7 +164,7 @@ class ListCentralNetworksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCentralNetworksRequest.
+        r"""Gets the sort_key of this ListCentralNetworksRequest.
 
         排序字段。
 
@@ -175,7 +175,7 @@ class ListCentralNetworksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCentralNetworksRequest.
+        r"""Sets the sort_key of this ListCentralNetworksRequest.
 
         排序字段。
 
@@ -186,7 +186,7 @@ class ListCentralNetworksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCentralNetworksRequest.
+        r"""Gets the sort_dir of this ListCentralNetworksRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -197,7 +197,7 @@ class ListCentralNetworksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCentralNetworksRequest.
+        r"""Sets the sort_dir of this ListCentralNetworksRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -208,7 +208,7 @@ class ListCentralNetworksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCentralNetworksRequest.
+        r"""Gets the id of this ListCentralNetworksRequest.
 
         根据id查询，可查询多个id。
 
@@ -219,7 +219,7 @@ class ListCentralNetworksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCentralNetworksRequest.
+        r"""Sets the id of this ListCentralNetworksRequest.
 
         根据id查询，可查询多个id。
 
@@ -230,7 +230,7 @@ class ListCentralNetworksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCentralNetworksRequest.
+        r"""Gets the name of this ListCentralNetworksRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -241,7 +241,7 @@ class ListCentralNetworksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCentralNetworksRequest.
+        r"""Sets the name of this ListCentralNetworksRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -252,7 +252,7 @@ class ListCentralNetworksRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListCentralNetworksRequest.
+        r"""Gets the state of this ListCentralNetworksRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -263,7 +263,7 @@ class ListCentralNetworksRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListCentralNetworksRequest.
+        r"""Sets the state of this ListCentralNetworksRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -274,7 +274,7 @@ class ListCentralNetworksRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCentralNetworksRequest.
+        r"""Gets the enterprise_project_id of this ListCentralNetworksRequest.
 
         根据企业项目ID过滤列表。
 
@@ -285,7 +285,7 @@ class ListCentralNetworksRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCentralNetworksRequest.
+        r"""Sets the enterprise_project_id of this ListCentralNetworksRequest.
 
         根据企业项目ID过滤列表。
 
@@ -296,7 +296,7 @@ class ListCentralNetworksRequest:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this ListCentralNetworksRequest.
+        r"""Gets the enterprise_router_id of this ListCentralNetworksRequest.
 
         根据ER实例ID过滤列表。
 
@@ -307,7 +307,7 @@ class ListCentralNetworksRequest:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this ListCentralNetworksRequest.
+        r"""Sets the enterprise_router_id of this ListCentralNetworksRequest.
 
         根据ER实例ID过滤列表。
 
@@ -318,7 +318,7 @@ class ListCentralNetworksRequest:
 
     @property
     def attachment_instance_id(self):
-        """Gets the attachment_instance_id of this ListCentralNetworksRequest.
+        r"""Gets the attachment_instance_id of this ListCentralNetworksRequest.
 
         Attachment实例的ID。
 
@@ -329,7 +329,7 @@ class ListCentralNetworksRequest:
 
     @attachment_instance_id.setter
     def attachment_instance_id(self, attachment_instance_id):
-        """Sets the attachment_instance_id of this ListCentralNetworksRequest.
+        r"""Sets the attachment_instance_id of this ListCentralNetworksRequest.
 
         Attachment实例的ID。
 
@@ -340,7 +340,7 @@ class ListCentralNetworksRequest:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this ListCentralNetworksRequest.
+        r"""Gets the global_connection_bandwidth_id of this ListCentralNetworksRequest.
 
         根据带宽包ID过滤。
 
@@ -351,7 +351,7 @@ class ListCentralNetworksRequest:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this ListCentralNetworksRequest.
+        r"""Sets the global_connection_bandwidth_id of this ListCentralNetworksRequest.
 
         根据带宽包ID过滤。
 
@@ -362,7 +362,7 @@ class ListCentralNetworksRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListCentralNetworksRequest.
+        r"""Gets the connection_id of this ListCentralNetworksRequest.
 
         连接的ID。
 
@@ -373,7 +373,7 @@ class ListCentralNetworksRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListCentralNetworksRequest.
+        r"""Sets the connection_id of this ListCentralNetworksRequest.
 
         连接的ID。
 

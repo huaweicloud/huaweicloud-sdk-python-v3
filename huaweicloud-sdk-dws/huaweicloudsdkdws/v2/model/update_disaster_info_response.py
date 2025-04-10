@@ -26,7 +26,7 @@ class UpdateDisasterInfoResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery=None):
-        """UpdateDisasterInfoResponse
+        r"""UpdateDisasterInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDisasterInfoResponse(SdkResponse):
 
     @property
     def disaster_recovery(self):
-        """Gets the disaster_recovery of this UpdateDisasterInfoResponse.
+        r"""Gets the disaster_recovery of this UpdateDisasterInfoResponse.
 
         :return: The disaster_recovery of this UpdateDisasterInfoResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`
@@ -53,7 +53,7 @@ class UpdateDisasterInfoResponse(SdkResponse):
 
     @disaster_recovery.setter
     def disaster_recovery(self, disaster_recovery):
-        """Sets the disaster_recovery of this UpdateDisasterInfoResponse.
+        r"""Sets the disaster_recovery of this UpdateDisasterInfoResponse.
 
         :param disaster_recovery: The disaster_recovery of this UpdateDisasterInfoResponse.
         :type disaster_recovery: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`

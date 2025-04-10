@@ -37,7 +37,7 @@ class AlertFileInfo:
     }
 
     def __init__(self, file_path=None, file_content=None, file_new_path=None, file_hash=None, file_md5=None, file_sha256=None, file_attr=None):
-        """AlertFileInfo
+        r"""AlertFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AlertFileInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this AlertFileInfo.
+        r"""Gets the file_path of this AlertFileInfo.
 
         文件路径/名称
 
@@ -96,7 +96,7 @@ class AlertFileInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this AlertFileInfo.
+        r"""Sets the file_path of this AlertFileInfo.
 
         文件路径/名称
 
@@ -107,7 +107,7 @@ class AlertFileInfo:
 
     @property
     def file_content(self):
-        """Gets the file_content of this AlertFileInfo.
+        r"""Gets the file_content of this AlertFileInfo.
 
         文件内容
 
@@ -118,7 +118,7 @@ class AlertFileInfo:
 
     @file_content.setter
     def file_content(self, file_content):
-        """Sets the file_content of this AlertFileInfo.
+        r"""Sets the file_content of this AlertFileInfo.
 
         文件内容
 
@@ -129,7 +129,7 @@ class AlertFileInfo:
 
     @property
     def file_new_path(self):
-        """Gets the file_new_path of this AlertFileInfo.
+        r"""Gets the file_new_path of this AlertFileInfo.
 
         文件新路径/名称
 
@@ -140,7 +140,7 @@ class AlertFileInfo:
 
     @file_new_path.setter
     def file_new_path(self, file_new_path):
-        """Sets the file_new_path of this AlertFileInfo.
+        r"""Sets the file_new_path of this AlertFileInfo.
 
         文件新路径/名称
 
@@ -151,7 +151,7 @@ class AlertFileInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this AlertFileInfo.
+        r"""Gets the file_hash of this AlertFileInfo.
 
         文件hash
 
@@ -162,7 +162,7 @@ class AlertFileInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this AlertFileInfo.
+        r"""Sets the file_hash of this AlertFileInfo.
 
         文件hash
 
@@ -173,7 +173,7 @@ class AlertFileInfo:
 
     @property
     def file_md5(self):
-        """Gets the file_md5 of this AlertFileInfo.
+        r"""Gets the file_md5 of this AlertFileInfo.
 
         文件md5
 
@@ -184,7 +184,7 @@ class AlertFileInfo:
 
     @file_md5.setter
     def file_md5(self, file_md5):
-        """Sets the file_md5 of this AlertFileInfo.
+        r"""Sets the file_md5 of this AlertFileInfo.
 
         文件md5
 
@@ -195,7 +195,7 @@ class AlertFileInfo:
 
     @property
     def file_sha256(self):
-        """Gets the file_sha256 of this AlertFileInfo.
+        r"""Gets the file_sha256 of this AlertFileInfo.
 
         文件sha256
 
@@ -206,7 +206,7 @@ class AlertFileInfo:
 
     @file_sha256.setter
     def file_sha256(self, file_sha256):
-        """Sets the file_sha256 of this AlertFileInfo.
+        r"""Sets the file_sha256 of this AlertFileInfo.
 
         文件sha256
 
@@ -217,7 +217,7 @@ class AlertFileInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this AlertFileInfo.
+        r"""Gets the file_attr of this AlertFileInfo.
 
         文件属性
 
@@ -228,7 +228,7 @@ class AlertFileInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this AlertFileInfo.
+        r"""Sets the file_attr of this AlertFileInfo.
 
         文件属性
 

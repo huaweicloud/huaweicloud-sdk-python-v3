@@ -25,7 +25,7 @@ class RestartInstanceRsp:
     }
 
     def __init__(self, job_id=None):
-        """RestartInstanceRsp
+        r"""RestartInstanceRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartInstanceRsp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartInstanceRsp.
+        r"""Gets the job_id of this RestartInstanceRsp.
 
         :return: The job_id of this RestartInstanceRsp.
         :rtype: list[str]
@@ -52,7 +52,7 @@ class RestartInstanceRsp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartInstanceRsp.
+        r"""Sets the job_id of this RestartInstanceRsp.
 
         :param job_id: The job_id of this RestartInstanceRsp.
         :type job_id: list[str]

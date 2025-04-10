@@ -27,7 +27,7 @@ class AppState:
     }
 
     def __init__(self, state=None, update_time=None):
-        """AppState
+        r"""AppState
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppState:
 
     @property
     def state(self):
-        """Gets the state of this AppState.
+        r"""Gets the state of this AppState.
 
         状态 - ACTIVATION：开启 - DEACTIVATION：停用 - ARREARS：欠费 - DELETED：已删除 
 
@@ -61,7 +61,7 @@ class AppState:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AppState.
+        r"""Sets the state of this AppState.
 
         状态 - ACTIVATION：开启 - DEACTIVATION：停用 - ARREARS：欠费 - DELETED：已删除 
 
@@ -72,7 +72,7 @@ class AppState:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppState.
+        r"""Gets the update_time of this AppState.
 
         app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -83,7 +83,7 @@ class AppState:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppState.
+        r"""Sets the update_time of this AppState.
 
         app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 

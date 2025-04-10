@@ -45,7 +45,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None, charge_mode=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstancesRequest.
+        r"""Gets the x_language of this ListInstancesRequest.
 
         语言
 
@@ -124,7 +124,7 @@ class ListInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstancesRequest.
+        r"""Sets the x_language of this ListInstancesRequest.
 
         语言
 
@@ -135,7 +135,7 @@ class ListInstancesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListInstancesRequest.
+        r"""Gets the id of this ListInstancesRequest.
 
         实例ID。  “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
@@ -146,7 +146,7 @@ class ListInstancesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstancesRequest.
+        r"""Sets the id of this ListInstancesRequest.
 
         实例ID。  “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
@@ -157,7 +157,7 @@ class ListInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesRequest.
+        r"""Gets the name of this ListInstancesRequest.
 
         实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
@@ -168,7 +168,7 @@ class ListInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesRequest.
+        r"""Sets the name of this ListInstancesRequest.
 
         实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
@@ -179,7 +179,7 @@ class ListInstancesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListInstancesRequest.
+        r"""Gets the type of this ListInstancesRequest.
 
         按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\"Ha\"（区分大小写），对应主备式实例。
 
@@ -190,7 +190,7 @@ class ListInstancesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInstancesRequest.
+        r"""Sets the type of this ListInstancesRequest.
 
         按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\"Ha\"（区分大小写），对应主备式实例。
 
@@ -201,7 +201,7 @@ class ListInstancesRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListInstancesRequest.
+        r"""Gets the datastore_type of this ListInstancesRequest.
 
         数据库类型，区分大小写。  - GaussDB
 
@@ -212,7 +212,7 @@ class ListInstancesRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListInstancesRequest.
+        r"""Sets the datastore_type of this ListInstancesRequest.
 
         数据库类型，区分大小写。  - GaussDB
 
@@ -223,7 +223,7 @@ class ListInstancesRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListInstancesRequest.
+        r"""Gets the vpc_id of this ListInstancesRequest.
 
         虚拟私有云ID。  方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
 
@@ -234,7 +234,7 @@ class ListInstancesRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListInstancesRequest.
+        r"""Sets the vpc_id of this ListInstancesRequest.
 
         虚拟私有云ID。  方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
 
@@ -245,7 +245,7 @@ class ListInstancesRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListInstancesRequest.
+        r"""Gets the subnet_id of this ListInstancesRequest.
 
         子网的网络ID信息。  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -256,7 +256,7 @@ class ListInstancesRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListInstancesRequest.
+        r"""Sets the subnet_id of this ListInstancesRequest.
 
         子网的网络ID信息。  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -267,7 +267,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -278,7 +278,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -289,7 +289,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
@@ -300,7 +300,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
@@ -311,7 +311,7 @@ class ListInstancesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInstancesRequest.
+        r"""Gets the tags of this ListInstancesRequest.
 
         根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
@@ -322,7 +322,7 @@ class ListInstancesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInstancesRequest.
+        r"""Sets the tags of this ListInstancesRequest.
 
         根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
@@ -333,7 +333,7 @@ class ListInstancesRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListInstancesRequest.
+        r"""Gets the charge_mode of this ListInstancesRequest.
 
         计费模式。  取值范围：   postPaid：后付费，即按需付费。  prePaid：预付费，即包年/包月。
 
@@ -344,7 +344,7 @@ class ListInstancesRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListInstancesRequest.
+        r"""Sets the charge_mode of this ListInstancesRequest.
 
         计费模式。  取值范围：   postPaid：后付费，即按需付费。  prePaid：预付费，即包年/包月。
 

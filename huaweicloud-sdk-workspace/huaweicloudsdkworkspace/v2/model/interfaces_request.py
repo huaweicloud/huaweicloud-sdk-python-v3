@@ -35,7 +35,7 @@ class InterfacesRequest:
     }
 
     def __init__(self, method=None, params=None, headers=None, body=None, url=None, configs=None):
-        """InterfacesRequest
+        r"""InterfacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class InterfacesRequest:
 
     @property
     def method(self):
-        """Gets the method of this InterfacesRequest.
+        r"""Gets the method of this InterfacesRequest.
 
         方法
 
@@ -89,7 +89,7 @@ class InterfacesRequest:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this InterfacesRequest.
+        r"""Sets the method of this InterfacesRequest.
 
         方法
 
@@ -100,7 +100,7 @@ class InterfacesRequest:
 
     @property
     def params(self):
-        """Gets the params of this InterfacesRequest.
+        r"""Gets the params of this InterfacesRequest.
 
         请求参数
 
@@ -111,7 +111,7 @@ class InterfacesRequest:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this InterfacesRequest.
+        r"""Sets the params of this InterfacesRequest.
 
         请求参数
 
@@ -122,7 +122,7 @@ class InterfacesRequest:
 
     @property
     def headers(self):
-        """Gets the headers of this InterfacesRequest.
+        r"""Gets the headers of this InterfacesRequest.
 
         请求头信息
 
@@ -133,7 +133,7 @@ class InterfacesRequest:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this InterfacesRequest.
+        r"""Sets the headers of this InterfacesRequest.
 
         请求头信息
 
@@ -144,7 +144,7 @@ class InterfacesRequest:
 
     @property
     def body(self):
-        """Gets the body of this InterfacesRequest.
+        r"""Gets the body of this InterfacesRequest.
 
         请求体
 
@@ -155,7 +155,7 @@ class InterfacesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InterfacesRequest.
+        r"""Sets the body of this InterfacesRequest.
 
         请求体
 
@@ -166,7 +166,7 @@ class InterfacesRequest:
 
     @property
     def url(self):
-        """Gets the url of this InterfacesRequest.
+        r"""Gets the url of this InterfacesRequest.
 
         URL
 
@@ -177,7 +177,7 @@ class InterfacesRequest:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this InterfacesRequest.
+        r"""Sets the url of this InterfacesRequest.
 
         URL
 
@@ -188,7 +188,7 @@ class InterfacesRequest:
 
     @property
     def configs(self):
-        """Gets the configs of this InterfacesRequest.
+        r"""Gets the configs of this InterfacesRequest.
 
         配置
 
@@ -199,7 +199,7 @@ class InterfacesRequest:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this InterfacesRequest.
+        r"""Sets the configs of this InterfacesRequest.
 
         配置
 

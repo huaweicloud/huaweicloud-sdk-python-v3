@@ -31,7 +31,7 @@ class BeneficiaryItem:
     }
 
     def __init__(self, beneficiary_name=None, beneficiary_type=None, beneficiary_order=None, beneficiary_share=None):
-        """BeneficiaryItem
+        r"""BeneficiaryItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BeneficiaryItem:
 
     @property
     def beneficiary_name(self):
-        """Gets the beneficiary_name of this BeneficiaryItem.
+        r"""Gets the beneficiary_name of this BeneficiaryItem.
 
         :return: The beneficiary_name of this BeneficiaryItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -73,7 +73,7 @@ class BeneficiaryItem:
 
     @beneficiary_name.setter
     def beneficiary_name(self, beneficiary_name):
-        """Sets the beneficiary_name of this BeneficiaryItem.
+        r"""Sets the beneficiary_name of this BeneficiaryItem.
 
         :param beneficiary_name: The beneficiary_name of this BeneficiaryItem.
         :type beneficiary_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -82,7 +82,7 @@ class BeneficiaryItem:
 
     @property
     def beneficiary_type(self):
-        """Gets the beneficiary_type of this BeneficiaryItem.
+        r"""Gets the beneficiary_type of this BeneficiaryItem.
 
         :return: The beneficiary_type of this BeneficiaryItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -91,7 +91,7 @@ class BeneficiaryItem:
 
     @beneficiary_type.setter
     def beneficiary_type(self, beneficiary_type):
-        """Sets the beneficiary_type of this BeneficiaryItem.
+        r"""Sets the beneficiary_type of this BeneficiaryItem.
 
         :param beneficiary_type: The beneficiary_type of this BeneficiaryItem.
         :type beneficiary_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -100,7 +100,7 @@ class BeneficiaryItem:
 
     @property
     def beneficiary_order(self):
-        """Gets the beneficiary_order of this BeneficiaryItem.
+        r"""Gets the beneficiary_order of this BeneficiaryItem.
 
         :return: The beneficiary_order of this BeneficiaryItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -109,7 +109,7 @@ class BeneficiaryItem:
 
     @beneficiary_order.setter
     def beneficiary_order(self, beneficiary_order):
-        """Sets the beneficiary_order of this BeneficiaryItem.
+        r"""Sets the beneficiary_order of this BeneficiaryItem.
 
         :param beneficiary_order: The beneficiary_order of this BeneficiaryItem.
         :type beneficiary_order: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -118,7 +118,7 @@ class BeneficiaryItem:
 
     @property
     def beneficiary_share(self):
-        """Gets the beneficiary_share of this BeneficiaryItem.
+        r"""Gets the beneficiary_share of this BeneficiaryItem.
 
         :return: The beneficiary_share of this BeneficiaryItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -127,7 +127,7 @@ class BeneficiaryItem:
 
     @beneficiary_share.setter
     def beneficiary_share(self, beneficiary_share):
-        """Sets the beneficiary_share of this BeneficiaryItem.
+        r"""Sets the beneficiary_share of this BeneficiaryItem.
 
         :param beneficiary_share: The beneficiary_share of this BeneficiaryItem.
         :type beneficiary_share: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`

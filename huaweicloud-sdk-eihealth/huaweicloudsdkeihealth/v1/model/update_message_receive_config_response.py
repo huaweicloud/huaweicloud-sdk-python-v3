@@ -24,7 +24,7 @@ class UpdateMessageReceiveConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMessageReceiveConfigResponse
+        r"""UpdateMessageReceiveConfigResponse
 
         The model defined in huaweicloud sdk
 

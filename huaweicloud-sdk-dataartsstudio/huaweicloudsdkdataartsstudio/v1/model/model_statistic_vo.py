@@ -43,7 +43,7 @@ class ModelStatisticVO:
     }
 
     def __init__(self, biz_type=None, level=None, db=None, tb=None, tb_published=None, fd=None, fd_published=None, st=None, st_published=None, model=None):
-        """ModelStatisticVO
+        r"""ModelStatisticVO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ModelStatisticVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ModelStatisticVO.
+        r"""Gets the biz_type of this ModelStatisticVO.
 
         :return: The biz_type of this ModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -115,7 +115,7 @@ class ModelStatisticVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ModelStatisticVO.
+        r"""Sets the biz_type of this ModelStatisticVO.
 
         :param biz_type: The biz_type of this ModelStatisticVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -124,7 +124,7 @@ class ModelStatisticVO:
 
     @property
     def level(self):
-        """Gets the level of this ModelStatisticVO.
+        r"""Gets the level of this ModelStatisticVO.
 
         :return: The level of this ModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
@@ -133,7 +133,7 @@ class ModelStatisticVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ModelStatisticVO.
+        r"""Sets the level of this ModelStatisticVO.
 
         :param level: The level of this ModelStatisticVO.
         :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
@@ -142,7 +142,7 @@ class ModelStatisticVO:
 
     @property
     def db(self):
-        """Gets the db of this ModelStatisticVO.
+        r"""Gets the db of this ModelStatisticVO.
 
         数据库。
 
@@ -153,7 +153,7 @@ class ModelStatisticVO:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this ModelStatisticVO.
+        r"""Sets the db of this ModelStatisticVO.
 
         数据库。
 
@@ -164,7 +164,7 @@ class ModelStatisticVO:
 
     @property
     def tb(self):
-        """Gets the tb of this ModelStatisticVO.
+        r"""Gets the tb of this ModelStatisticVO.
 
         数据表。
 
@@ -175,7 +175,7 @@ class ModelStatisticVO:
 
     @tb.setter
     def tb(self, tb):
-        """Sets the tb of this ModelStatisticVO.
+        r"""Sets the tb of this ModelStatisticVO.
 
         数据表。
 
@@ -186,7 +186,7 @@ class ModelStatisticVO:
 
     @property
     def tb_published(self):
-        """Gets the tb_published of this ModelStatisticVO.
+        r"""Gets the tb_published of this ModelStatisticVO.
 
         已发布的数据表。
 
@@ -197,7 +197,7 @@ class ModelStatisticVO:
 
     @tb_published.setter
     def tb_published(self, tb_published):
-        """Sets the tb_published of this ModelStatisticVO.
+        r"""Sets the tb_published of this ModelStatisticVO.
 
         已发布的数据表。
 
@@ -208,7 +208,7 @@ class ModelStatisticVO:
 
     @property
     def fd(self):
-        """Gets the fd of this ModelStatisticVO.
+        r"""Gets the fd of this ModelStatisticVO.
 
         字段。
 
@@ -219,7 +219,7 @@ class ModelStatisticVO:
 
     @fd.setter
     def fd(self, fd):
-        """Sets the fd of this ModelStatisticVO.
+        r"""Sets the fd of this ModelStatisticVO.
 
         字段。
 
@@ -230,7 +230,7 @@ class ModelStatisticVO:
 
     @property
     def fd_published(self):
-        """Gets the fd_published of this ModelStatisticVO.
+        r"""Gets the fd_published of this ModelStatisticVO.
 
         已发布的字段。
 
@@ -241,7 +241,7 @@ class ModelStatisticVO:
 
     @fd_published.setter
     def fd_published(self, fd_published):
-        """Sets the fd_published of this ModelStatisticVO.
+        r"""Sets the fd_published of this ModelStatisticVO.
 
         已发布的字段。
 
@@ -252,7 +252,7 @@ class ModelStatisticVO:
 
     @property
     def st(self):
-        """Gets the st of this ModelStatisticVO.
+        r"""Gets the st of this ModelStatisticVO.
 
         标准覆盖率。
 
@@ -263,7 +263,7 @@ class ModelStatisticVO:
 
     @st.setter
     def st(self, st):
-        """Sets the st of this ModelStatisticVO.
+        r"""Sets the st of this ModelStatisticVO.
 
         标准覆盖率。
 
@@ -274,7 +274,7 @@ class ModelStatisticVO:
 
     @property
     def st_published(self):
-        """Gets the st_published of this ModelStatisticVO.
+        r"""Gets the st_published of this ModelStatisticVO.
 
         已发布的标准覆盖率。
 
@@ -285,7 +285,7 @@ class ModelStatisticVO:
 
     @st_published.setter
     def st_published(self, st_published):
-        """Sets the st_published of this ModelStatisticVO.
+        r"""Sets the st_published of this ModelStatisticVO.
 
         已发布的标准覆盖率。
 
@@ -296,7 +296,7 @@ class ModelStatisticVO:
 
     @property
     def model(self):
-        """Gets the model of this ModelStatisticVO.
+        r"""Gets the model of this ModelStatisticVO.
 
         :return: The model of this ModelStatisticVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -305,7 +305,7 @@ class ModelStatisticVO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ModelStatisticVO.
+        r"""Sets the model of this ModelStatisticVO.
 
         :param model: The model of this ModelStatisticVO.
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`

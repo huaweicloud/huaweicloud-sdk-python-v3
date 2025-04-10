@@ -55,7 +55,7 @@ class AppVersionDetail:
     }
 
     def __init__(self, id=None, version=None, created_at=None, updated_at=None, project_id=None, image_url=None, envs=None, volumes=None, configs=None, resources=None, arch=None, command=None, args=None, liveness_probe=None, readiness_probe=None, npu_type=None):
-        """AppVersionDetail
+        r"""AppVersionDetail
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class AppVersionDetail:
 
     @property
     def id(self):
-        """Gets the id of this AppVersionDetail.
+        r"""Gets the id of this AppVersionDetail.
 
         应用版本ID
 
@@ -157,7 +157,7 @@ class AppVersionDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppVersionDetail.
+        r"""Sets the id of this AppVersionDetail.
 
         应用版本ID
 
@@ -168,7 +168,7 @@ class AppVersionDetail:
 
     @property
     def version(self):
-        """Gets the version of this AppVersionDetail.
+        r"""Gets the version of this AppVersionDetail.
 
         应用版本号
 
@@ -179,7 +179,7 @@ class AppVersionDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AppVersionDetail.
+        r"""Sets the version of this AppVersionDetail.
 
         应用版本号
 
@@ -190,7 +190,7 @@ class AppVersionDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AppVersionDetail.
+        r"""Gets the created_at of this AppVersionDetail.
 
         创建时间
 
@@ -201,7 +201,7 @@ class AppVersionDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AppVersionDetail.
+        r"""Sets the created_at of this AppVersionDetail.
 
         创建时间
 
@@ -212,7 +212,7 @@ class AppVersionDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AppVersionDetail.
+        r"""Gets the updated_at of this AppVersionDetail.
 
         更新时间 只有更新后才会出现该字段
 
@@ -223,7 +223,7 @@ class AppVersionDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AppVersionDetail.
+        r"""Sets the updated_at of this AppVersionDetail.
 
         更新时间 只有更新后才会出现该字段
 
@@ -234,7 +234,7 @@ class AppVersionDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppVersionDetail.
+        r"""Gets the project_id of this AppVersionDetail.
 
         项目ID
 
@@ -245,7 +245,7 @@ class AppVersionDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppVersionDetail.
+        r"""Sets the project_id of this AppVersionDetail.
 
         项目ID
 
@@ -256,7 +256,7 @@ class AppVersionDetail:
 
     @property
     def image_url(self):
-        """Gets the image_url of this AppVersionDetail.
+        r"""Gets the image_url of this AppVersionDetail.
 
         镜像存储地址
 
@@ -267,7 +267,7 @@ class AppVersionDetail:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this AppVersionDetail.
+        r"""Sets the image_url of this AppVersionDetail.
 
         镜像存储地址
 
@@ -278,7 +278,7 @@ class AppVersionDetail:
 
     @property
     def envs(self):
-        """Gets the envs of this AppVersionDetail.
+        r"""Gets the envs of this AppVersionDetail.
 
         环境变量
 
@@ -289,7 +289,7 @@ class AppVersionDetail:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this AppVersionDetail.
+        r"""Sets the envs of this AppVersionDetail.
 
         环境变量
 
@@ -300,7 +300,7 @@ class AppVersionDetail:
 
     @property
     def volumes(self):
-        """Gets the volumes of this AppVersionDetail.
+        r"""Gets the volumes of this AppVersionDetail.
 
         卷配置
 
@@ -311,7 +311,7 @@ class AppVersionDetail:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this AppVersionDetail.
+        r"""Sets the volumes of this AppVersionDetail.
 
         卷配置
 
@@ -322,7 +322,7 @@ class AppVersionDetail:
 
     @property
     def configs(self):
-        """Gets the configs of this AppVersionDetail.
+        r"""Gets the configs of this AppVersionDetail.
 
         :return: The configs of this AppVersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -331,7 +331,7 @@ class AppVersionDetail:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this AppVersionDetail.
+        r"""Sets the configs of this AppVersionDetail.
 
         :param configs: The configs of this AppVersionDetail.
         :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -340,7 +340,7 @@ class AppVersionDetail:
 
     @property
     def resources(self):
-        """Gets the resources of this AppVersionDetail.
+        r"""Gets the resources of this AppVersionDetail.
 
         :return: The resources of this AppVersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.Resources`
@@ -349,7 +349,7 @@ class AppVersionDetail:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this AppVersionDetail.
+        r"""Sets the resources of this AppVersionDetail.
 
         :param resources: The resources of this AppVersionDetail.
         :type resources: :class:`huaweicloudsdkief.v1.Resources`
@@ -358,7 +358,7 @@ class AppVersionDetail:
 
     @property
     def arch(self):
-        """Gets the arch of this AppVersionDetail.
+        r"""Gets the arch of this AppVersionDetail.
 
         架构
 
@@ -369,7 +369,7 @@ class AppVersionDetail:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this AppVersionDetail.
+        r"""Sets the arch of this AppVersionDetail.
 
         架构
 
@@ -380,7 +380,7 @@ class AppVersionDetail:
 
     @property
     def command(self):
-        """Gets the command of this AppVersionDetail.
+        r"""Gets the command of this AppVersionDetail.
 
         启动命令
 
@@ -391,7 +391,7 @@ class AppVersionDetail:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this AppVersionDetail.
+        r"""Sets the command of this AppVersionDetail.
 
         启动命令
 
@@ -402,7 +402,7 @@ class AppVersionDetail:
 
     @property
     def args(self):
-        """Gets the args of this AppVersionDetail.
+        r"""Gets the args of this AppVersionDetail.
 
         参数
 
@@ -413,7 +413,7 @@ class AppVersionDetail:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this AppVersionDetail.
+        r"""Sets the args of this AppVersionDetail.
 
         参数
 
@@ -424,7 +424,7 @@ class AppVersionDetail:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this AppVersionDetail.
+        r"""Gets the liveness_probe of this AppVersionDetail.
 
         :return: The liveness_probe of this AppVersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -433,7 +433,7 @@ class AppVersionDetail:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this AppVersionDetail.
+        r"""Sets the liveness_probe of this AppVersionDetail.
 
         :param liveness_probe: The liveness_probe of this AppVersionDetail.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -442,7 +442,7 @@ class AppVersionDetail:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this AppVersionDetail.
+        r"""Gets the readiness_probe of this AppVersionDetail.
 
         :return: The readiness_probe of this AppVersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -451,7 +451,7 @@ class AppVersionDetail:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this AppVersionDetail.
+        r"""Sets the readiness_probe of this AppVersionDetail.
 
         :param readiness_probe: The readiness_probe of this AppVersionDetail.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -460,7 +460,7 @@ class AppVersionDetail:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this AppVersionDetail.
+        r"""Gets the npu_type of this AppVersionDetail.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
@@ -471,7 +471,7 @@ class AppVersionDetail:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this AppVersionDetail.
+        r"""Sets the npu_type of this AppVersionDetail.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 

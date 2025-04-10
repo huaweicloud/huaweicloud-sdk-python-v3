@@ -27,7 +27,7 @@ class CapRef:
     }
 
     def __init__(self, cap_id=None, version_id=None):
-        """CapRef
+        r"""CapRef
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CapRef:
 
     @property
     def cap_id(self):
-        """Gets the cap_id of this CapRef.
+        r"""Gets the cap_id of this CapRef.
 
         CapId，32~36位的英文、数字、短横组合
 
@@ -61,7 +61,7 @@ class CapRef:
 
     @cap_id.setter
     def cap_id(self, cap_id):
-        """Sets the cap_id of this CapRef.
+        r"""Sets the cap_id of this CapRef.
 
         CapId，32~36位的英文、数字、短横组合
 
@@ -72,7 +72,7 @@ class CapRef:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CapRef.
+        r"""Gets the version_id of this CapRef.
 
         CapVersionId，32~36位的英文、数字、短横组合
 
@@ -83,7 +83,7 @@ class CapRef:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CapRef.
+        r"""Sets the version_id of this CapRef.
 
         CapVersionId，32~36位的英文、数字、短横组合
 

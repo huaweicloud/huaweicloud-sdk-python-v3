@@ -35,7 +35,7 @@ class FlavorInfo:
     }
 
     def __init__(self, connection=None, cps=None, qps=None, bandwidth=None, lcu=None, https_cps=None):
-        """FlavorInfo
+        r"""FlavorInfo
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class FlavorInfo:
 
     @property
     def connection(self):
-        """Gets the connection of this FlavorInfo.
+        r"""Gets the connection of this FlavorInfo.
 
         参数解释：并发数。单位：个。
 
@@ -87,7 +87,7 @@ class FlavorInfo:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this FlavorInfo.
+        r"""Sets the connection of this FlavorInfo.
 
         参数解释：并发数。单位：个。
 
@@ -98,7 +98,7 @@ class FlavorInfo:
 
     @property
     def cps(self):
-        """Gets the cps of this FlavorInfo.
+        r"""Gets the cps of this FlavorInfo.
 
         参数解释：新建数。单位：个。
 
@@ -109,7 +109,7 @@ class FlavorInfo:
 
     @cps.setter
     def cps(self, cps):
-        """Sets the cps of this FlavorInfo.
+        r"""Sets the cps of this FlavorInfo.
 
         参数解释：新建数。单位：个。
 
@@ -120,7 +120,7 @@ class FlavorInfo:
 
     @property
     def qps(self):
-        """Gets the qps of this FlavorInfo.
+        r"""Gets the qps of this FlavorInfo.
 
         参数解释：每秒查询数。单位：个。  约束限制：仅7层LB有该指标。
 
@@ -131,7 +131,7 @@ class FlavorInfo:
 
     @qps.setter
     def qps(self, qps):
-        """Sets the qps of this FlavorInfo.
+        r"""Sets the qps of this FlavorInfo.
 
         参数解释：每秒查询数。单位：个。  约束限制：仅7层LB有该指标。
 
@@ -142,7 +142,7 @@ class FlavorInfo:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this FlavorInfo.
+        r"""Gets the bandwidth of this FlavorInfo.
 
         参数解释：带宽。单位：Kbit/s。
 
@@ -153,7 +153,7 @@ class FlavorInfo:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this FlavorInfo.
+        r"""Sets the bandwidth of this FlavorInfo.
 
         参数解释：带宽。单位：Kbit/s。
 
@@ -164,7 +164,7 @@ class FlavorInfo:
 
     @property
     def lcu(self):
-        """Gets the lcu of this FlavorInfo.
+        r"""Gets the lcu of this FlavorInfo.
 
         参数解释：当前flavor对应的lcu数量。单位：个。  > LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
@@ -175,7 +175,7 @@ class FlavorInfo:
 
     @lcu.setter
     def lcu(self, lcu):
-        """Sets the lcu of this FlavorInfo.
+        r"""Sets the lcu of this FlavorInfo.
 
         参数解释：当前flavor对应的lcu数量。单位：个。  > LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
@@ -186,7 +186,7 @@ class FlavorInfo:
 
     @property
     def https_cps(self):
-        """Gets the https_cps of this FlavorInfo.
+        r"""Gets the https_cps of this FlavorInfo.
 
         参数解释：https新建连接数。单位：个。  约束限制：仅7层LB有该指标。
 
@@ -197,7 +197,7 @@ class FlavorInfo:
 
     @https_cps.setter
     def https_cps(self, https_cps):
-        """Sets the https_cps of this FlavorInfo.
+        r"""Sets the https_cps of this FlavorInfo.
 
         参数解释：https新建连接数。单位：个。  约束限制：仅7层LB有该指标。
 

@@ -25,7 +25,7 @@ class DisassociateServerVirtualIpRequestBody:
     }
 
     def __init__(self, nic=None):
-        """DisassociateServerVirtualIpRequestBody
+        r"""DisassociateServerVirtualIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateServerVirtualIpRequestBody:
 
     @property
     def nic(self):
-        """Gets the nic of this DisassociateServerVirtualIpRequestBody.
+        r"""Gets the nic of this DisassociateServerVirtualIpRequestBody.
 
         :return: The nic of this DisassociateServerVirtualIpRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpOption`
@@ -51,7 +51,7 @@ class DisassociateServerVirtualIpRequestBody:
 
     @nic.setter
     def nic(self, nic):
-        """Sets the nic of this DisassociateServerVirtualIpRequestBody.
+        r"""Sets the nic of this DisassociateServerVirtualIpRequestBody.
 
         :param nic: The nic of this DisassociateServerVirtualIpRequestBody.
         :type nic: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpOption`

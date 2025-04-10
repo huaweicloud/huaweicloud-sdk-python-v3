@@ -27,7 +27,7 @@ class CreateDesktopPoolRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """CreateDesktopPoolRequest
+        r"""CreateDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDesktopPoolRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this CreateDesktopPoolRequest.
+        r"""Gets the service_transaction_id of this CreateDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class CreateDesktopPoolRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this CreateDesktopPoolRequest.
+        r"""Sets the service_transaction_id of this CreateDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class CreateDesktopPoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopPoolRequest.
+        r"""Gets the body of this CreateDesktopPoolRequest.
 
         :return: The body of this CreateDesktopPoolRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolReq`
@@ -81,7 +81,7 @@ class CreateDesktopPoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopPoolRequest.
+        r"""Sets the body of this CreateDesktopPoolRequest.
 
         :param body: The body of this CreateDesktopPoolRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolReq`

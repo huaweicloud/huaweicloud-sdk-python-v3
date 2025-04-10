@@ -41,7 +41,7 @@ class CheckConfigInfo:
     }
 
     def __init__(self, name=None, cfg_key=None, default_value=None, option_value=None, is_required=None, description=None, type=None, status=None, value=None):
-        """CheckConfigInfo
+        r"""CheckConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CheckConfigInfo:
 
     @property
     def name(self):
-        """Gets the name of this CheckConfigInfo.
+        r"""Gets the name of this CheckConfigInfo.
 
         检查参数名称
 
@@ -110,7 +110,7 @@ class CheckConfigInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckConfigInfo.
+        r"""Sets the name of this CheckConfigInfo.
 
         检查参数名称
 
@@ -121,7 +121,7 @@ class CheckConfigInfo:
 
     @property
     def cfg_key(self):
-        """Gets the cfg_key of this CheckConfigInfo.
+        r"""Gets the cfg_key of this CheckConfigInfo.
 
         检查参数对应的key值
 
@@ -132,7 +132,7 @@ class CheckConfigInfo:
 
     @cfg_key.setter
     def cfg_key(self, cfg_key):
-        """Sets the cfg_key of this CheckConfigInfo.
+        r"""Sets the cfg_key of this CheckConfigInfo.
 
         检查参数对应的key值
 
@@ -143,7 +143,7 @@ class CheckConfigInfo:
 
     @property
     def default_value(self):
-        """Gets the default_value of this CheckConfigInfo.
+        r"""Gets the default_value of this CheckConfigInfo.
 
         检查参数默认值
 
@@ -154,7 +154,7 @@ class CheckConfigInfo:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this CheckConfigInfo.
+        r"""Sets the default_value of this CheckConfigInfo.
 
         检查参数默认值
 
@@ -165,7 +165,7 @@ class CheckConfigInfo:
 
     @property
     def option_value(self):
-        """Gets the option_value of this CheckConfigInfo.
+        r"""Gets the option_value of this CheckConfigInfo.
 
         检查参数可选项
 
@@ -176,7 +176,7 @@ class CheckConfigInfo:
 
     @option_value.setter
     def option_value(self, option_value):
-        """Sets the option_value of this CheckConfigInfo.
+        r"""Sets the option_value of this CheckConfigInfo.
 
         检查参数可选项
 
@@ -187,7 +187,7 @@ class CheckConfigInfo:
 
     @property
     def is_required(self):
-        """Gets the is_required of this CheckConfigInfo.
+        r"""Gets the is_required of this CheckConfigInfo.
 
         0：非必填，1：必填
 
@@ -198,7 +198,7 @@ class CheckConfigInfo:
 
     @is_required.setter
     def is_required(self, is_required):
-        """Sets the is_required of this CheckConfigInfo.
+        r"""Sets the is_required of this CheckConfigInfo.
 
         0：非必填，1：必填
 
@@ -209,7 +209,7 @@ class CheckConfigInfo:
 
     @property
     def description(self):
-        """Gets the description of this CheckConfigInfo.
+        r"""Gets the description of this CheckConfigInfo.
 
         检查参数说明
 
@@ -220,7 +220,7 @@ class CheckConfigInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckConfigInfo.
+        r"""Sets the description of this CheckConfigInfo.
 
         检查参数说明
 
@@ -231,7 +231,7 @@ class CheckConfigInfo:
 
     @property
     def type(self):
-        """Gets the type of this CheckConfigInfo.
+        r"""Gets the type of this CheckConfigInfo.
 
         参数类型，0：文本，2：有可选项
 
@@ -242,7 +242,7 @@ class CheckConfigInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CheckConfigInfo.
+        r"""Sets the type of this CheckConfigInfo.
 
         参数类型，0：文本，2：有可选项
 
@@ -253,7 +253,7 @@ class CheckConfigInfo:
 
     @property
     def status(self):
-        """Gets the status of this CheckConfigInfo.
+        r"""Gets the status of this CheckConfigInfo.
 
         参数状态，on：启用，off：未启用
 
@@ -264,7 +264,7 @@ class CheckConfigInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckConfigInfo.
+        r"""Sets the status of this CheckConfigInfo.
 
         参数状态，on：启用，off：未启用
 
@@ -275,7 +275,7 @@ class CheckConfigInfo:
 
     @property
     def value(self):
-        """Gets the value of this CheckConfigInfo.
+        r"""Gets the value of this CheckConfigInfo.
 
         检查参数值
 
@@ -286,7 +286,7 @@ class CheckConfigInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CheckConfigInfo.
+        r"""Sets the value of this CheckConfigInfo.
 
         检查参数值
 

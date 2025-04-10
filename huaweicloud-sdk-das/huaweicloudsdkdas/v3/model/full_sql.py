@@ -51,7 +51,7 @@ class FullSql:
     }
 
     def __init__(self, sql=None, operate_type=None, status=None, error_no=None, database=None, client=None, thread_id=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None, rows_affected=None):
-        """FullSql
+        r"""FullSql
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class FullSql:
 
     @property
     def sql(self):
-        """Gets the sql of this FullSql.
+        r"""Gets the sql of this FullSql.
 
         SQL语句。
 
@@ -131,7 +131,7 @@ class FullSql:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this FullSql.
+        r"""Sets the sql of this FullSql.
 
         SQL语句。
 
@@ -142,7 +142,7 @@ class FullSql:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this FullSql.
+        r"""Gets the operate_type of this FullSql.
 
         操作类型。
 
@@ -153,7 +153,7 @@ class FullSql:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this FullSql.
+        r"""Sets the operate_type of this FullSql.
 
         操作类型。
 
@@ -164,7 +164,7 @@ class FullSql:
 
     @property
     def status(self):
-        """Gets the status of this FullSql.
+        r"""Gets the status of this FullSql.
 
         状态。
 
@@ -175,7 +175,7 @@ class FullSql:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FullSql.
+        r"""Sets the status of this FullSql.
 
         状态。
 
@@ -186,7 +186,7 @@ class FullSql:
 
     @property
     def error_no(self):
-        """Gets the error_no of this FullSql.
+        r"""Gets the error_no of this FullSql.
 
         错误码。
 
@@ -197,7 +197,7 @@ class FullSql:
 
     @error_no.setter
     def error_no(self, error_no):
-        """Sets the error_no of this FullSql.
+        r"""Sets the error_no of this FullSql.
 
         错误码。
 
@@ -208,7 +208,7 @@ class FullSql:
 
     @property
     def database(self):
-        """Gets the database of this FullSql.
+        r"""Gets the database of this FullSql.
 
         数据库名。
 
@@ -219,7 +219,7 @@ class FullSql:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this FullSql.
+        r"""Sets the database of this FullSql.
 
         数据库名。
 
@@ -230,7 +230,7 @@ class FullSql:
 
     @property
     def client(self):
-        """Gets the client of this FullSql.
+        r"""Gets the client of this FullSql.
 
         客户端。
 
@@ -241,7 +241,7 @@ class FullSql:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this FullSql.
+        r"""Sets the client of this FullSql.
 
         客户端。
 
@@ -252,7 +252,7 @@ class FullSql:
 
     @property
     def thread_id(self):
-        """Gets the thread_id of this FullSql.
+        r"""Gets the thread_id of this FullSql.
 
         线程ID。
 
@@ -263,7 +263,7 @@ class FullSql:
 
     @thread_id.setter
     def thread_id(self, thread_id):
-        """Sets the thread_id of this FullSql.
+        r"""Sets the thread_id of this FullSql.
 
         线程ID。
 
@@ -274,7 +274,7 @@ class FullSql:
 
     @property
     def user(self):
-        """Gets the user of this FullSql.
+        r"""Gets the user of this FullSql.
 
         用户。
 
@@ -285,7 +285,7 @@ class FullSql:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this FullSql.
+        r"""Sets the user of this FullSql.
 
         用户。
 
@@ -296,7 +296,7 @@ class FullSql:
 
     @property
     def execute_at(self):
-        """Gets the execute_at of this FullSql.
+        r"""Gets the execute_at of this FullSql.
 
         执行开始时间（Unix timestamp），单位：毫秒。
 
@@ -307,7 +307,7 @@ class FullSql:
 
     @execute_at.setter
     def execute_at(self, execute_at):
-        """Sets the execute_at of this FullSql.
+        r"""Sets the execute_at of this FullSql.
 
         执行开始时间（Unix timestamp），单位：毫秒。
 
@@ -318,7 +318,7 @@ class FullSql:
 
     @property
     def query_time(self):
-        """Gets the query_time of this FullSql.
+        r"""Gets the query_time of this FullSql.
 
         执行耗时（毫秒）。
 
@@ -329,7 +329,7 @@ class FullSql:
 
     @query_time.setter
     def query_time(self, query_time):
-        """Sets the query_time of this FullSql.
+        r"""Sets the query_time of this FullSql.
 
         执行耗时（毫秒）。
 
@@ -340,7 +340,7 @@ class FullSql:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this FullSql.
+        r"""Gets the lock_time of this FullSql.
 
         锁等待耗时（毫秒）。
 
@@ -351,7 +351,7 @@ class FullSql:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this FullSql.
+        r"""Sets the lock_time of this FullSql.
 
         锁等待耗时（毫秒）。
 
@@ -362,7 +362,7 @@ class FullSql:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this FullSql.
+        r"""Gets the rows_examined of this FullSql.
 
         扫描行数。
 
@@ -373,7 +373,7 @@ class FullSql:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this FullSql.
+        r"""Sets the rows_examined of this FullSql.
 
         扫描行数。
 
@@ -384,7 +384,7 @@ class FullSql:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this FullSql.
+        r"""Gets the rows_sent of this FullSql.
 
         返回行数。
 
@@ -395,7 +395,7 @@ class FullSql:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this FullSql.
+        r"""Sets the rows_sent of this FullSql.
 
         返回行数。
 
@@ -406,7 +406,7 @@ class FullSql:
 
     @property
     def rows_affected(self):
-        """Gets the rows_affected of this FullSql.
+        r"""Gets the rows_affected of this FullSql.
 
         更新行数。
 
@@ -417,7 +417,7 @@ class FullSql:
 
     @rows_affected.setter
     def rows_affected(self, rows_affected):
-        """Sets the rows_affected of this FullSql.
+        r"""Sets the rows_affected of this FullSql.
 
         更新行数。
 

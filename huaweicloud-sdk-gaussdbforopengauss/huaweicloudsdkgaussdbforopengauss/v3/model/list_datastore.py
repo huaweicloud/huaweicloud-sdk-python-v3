@@ -35,7 +35,7 @@ class ListDatastore:
     }
 
     def __init__(self, type=None, version=None, complete_version=None, hotfix_versions=None, target_version=None, hotfix_finished_times=None):
-        """ListDatastore
+        r"""ListDatastore
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListDatastore:
 
     @property
     def type(self):
-        """Gets the type of this ListDatastore.
+        r"""Gets the type of this ListDatastore.
 
         数据库引擎。
 
@@ -87,7 +87,7 @@ class ListDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDatastore.
+        r"""Sets the type of this ListDatastore.
 
         数据库引擎。
 
@@ -98,7 +98,7 @@ class ListDatastore:
 
     @property
     def version(self):
-        """Gets the version of this ListDatastore.
+        r"""Gets the version of this ListDatastore.
 
         数据库大版本。
 
@@ -109,7 +109,7 @@ class ListDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListDatastore.
+        r"""Sets the version of this ListDatastore.
 
         数据库大版本。
 
@@ -120,7 +120,7 @@ class ListDatastore:
 
     @property
     def complete_version(self):
-        """Gets the complete_version of this ListDatastore.
+        r"""Gets the complete_version of this ListDatastore.
 
         数据库小版本。
 
@@ -131,7 +131,7 @@ class ListDatastore:
 
     @complete_version.setter
     def complete_version(self, complete_version):
-        """Sets the complete_version of this ListDatastore.
+        r"""Sets the complete_version of this ListDatastore.
 
         数据库小版本。
 
@@ -142,7 +142,7 @@ class ListDatastore:
 
     @property
     def hotfix_versions(self):
-        """Gets the hotfix_versions of this ListDatastore.
+        r"""Gets the hotfix_versions of this ListDatastore.
 
         数据库已升级的热补丁版本，当数据库热补丁升级成功后，该值不为空。
 
@@ -153,7 +153,7 @@ class ListDatastore:
 
     @hotfix_versions.setter
     def hotfix_versions(self, hotfix_versions):
-        """Sets the hotfix_versions of this ListDatastore.
+        r"""Sets the hotfix_versions of this ListDatastore.
 
         数据库已升级的热补丁版本，当数据库热补丁升级成功后，该值不为空。
 
@@ -164,7 +164,7 @@ class ListDatastore:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ListDatastore.
+        r"""Gets the target_version of this ListDatastore.
 
         数据库正在升级的目标版本。
 
@@ -175,7 +175,7 @@ class ListDatastore:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ListDatastore.
+        r"""Sets the target_version of this ListDatastore.
 
         数据库正在升级的目标版本。
 
@@ -186,7 +186,7 @@ class ListDatastore:
 
     @property
     def hotfix_finished_times(self):
-        """Gets the hotfix_finished_times of this ListDatastore.
+        r"""Gets the hotfix_finished_times of this ListDatastore.
 
         热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。 
 
@@ -197,7 +197,7 @@ class ListDatastore:
 
     @hotfix_finished_times.setter
     def hotfix_finished_times(self, hotfix_finished_times):
-        """Sets the hotfix_finished_times of this ListDatastore.
+        r"""Sets the hotfix_finished_times of this ListDatastore.
 
         热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。 
 

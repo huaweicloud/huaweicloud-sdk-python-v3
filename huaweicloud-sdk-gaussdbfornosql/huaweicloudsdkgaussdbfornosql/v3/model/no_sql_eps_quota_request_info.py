@@ -29,7 +29,7 @@ class NoSqlEpsQuotaRequestInfo:
     }
 
     def __init__(self, instance=None, vcpus=None, ram=None):
-        """NoSqlEpsQuotaRequestInfo
+        r"""NoSqlEpsQuotaRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NoSqlEpsQuotaRequestInfo:
 
     @property
     def instance(self):
-        """Gets the instance of this NoSqlEpsQuotaRequestInfo.
+        r"""Gets the instance of this NoSqlEpsQuotaRequestInfo.
 
         实例配额。
 
@@ -68,7 +68,7 @@ class NoSqlEpsQuotaRequestInfo:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this NoSqlEpsQuotaRequestInfo.
+        r"""Sets the instance of this NoSqlEpsQuotaRequestInfo.
 
         实例配额。
 
@@ -79,7 +79,7 @@ class NoSqlEpsQuotaRequestInfo:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this NoSqlEpsQuotaRequestInfo.
+        r"""Gets the vcpus of this NoSqlEpsQuotaRequestInfo.
 
         vcpus配额。
 
@@ -90,7 +90,7 @@ class NoSqlEpsQuotaRequestInfo:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this NoSqlEpsQuotaRequestInfo.
+        r"""Sets the vcpus of this NoSqlEpsQuotaRequestInfo.
 
         vcpus配额。
 
@@ -101,7 +101,7 @@ class NoSqlEpsQuotaRequestInfo:
 
     @property
     def ram(self):
-        """Gets the ram of this NoSqlEpsQuotaRequestInfo.
+        r"""Gets the ram of this NoSqlEpsQuotaRequestInfo.
 
         ram配额。
 
@@ -112,7 +112,7 @@ class NoSqlEpsQuotaRequestInfo:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this NoSqlEpsQuotaRequestInfo.
+        r"""Sets the ram of this NoSqlEpsQuotaRequestInfo.
 
         ram配额。
 

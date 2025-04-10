@@ -25,7 +25,7 @@ class UpdateDrugModelReq:
     }
 
     def __init__(self, shareable=None):
-        """UpdateDrugModelReq
+        r"""UpdateDrugModelReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDrugModelReq:
 
     @property
     def shareable(self):
-        """Gets the shareable of this UpdateDrugModelReq.
+        r"""Gets the shareable of this UpdateDrugModelReq.
 
         是否共享
 
@@ -53,7 +53,7 @@ class UpdateDrugModelReq:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this UpdateDrugModelReq.
+        r"""Sets the shareable of this UpdateDrugModelReq.
 
         是否共享
 

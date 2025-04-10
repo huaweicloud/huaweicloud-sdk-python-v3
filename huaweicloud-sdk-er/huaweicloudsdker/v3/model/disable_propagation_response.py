@@ -24,7 +24,7 @@ class DisablePropagationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisablePropagationResponse
+        r"""DisablePropagationResponse
 
         The model defined in huaweicloud sdk
 

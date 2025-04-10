@@ -29,7 +29,7 @@ class CreateMediaProcessReq:
     }
 
     def __init__(self, input=None, output=None, template_id=None):
-        """CreateMediaProcessReq
+        r"""CreateMediaProcessReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateMediaProcessReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateMediaProcessReq.
+        r"""Gets the input of this CreateMediaProcessReq.
 
         :return: The input of this CreateMediaProcessReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -66,7 +66,7 @@ class CreateMediaProcessReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateMediaProcessReq.
+        r"""Sets the input of this CreateMediaProcessReq.
 
         :param input: The input of this CreateMediaProcessReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -75,7 +75,7 @@ class CreateMediaProcessReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateMediaProcessReq.
+        r"""Gets the output of this CreateMediaProcessReq.
 
         :return: The output of this CreateMediaProcessReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -84,7 +84,7 @@ class CreateMediaProcessReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateMediaProcessReq.
+        r"""Sets the output of this CreateMediaProcessReq.
 
         :param output: The output of this CreateMediaProcessReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -93,7 +93,7 @@ class CreateMediaProcessReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateMediaProcessReq.
+        r"""Gets the template_id of this CreateMediaProcessReq.
 
         模板ID 
 
@@ -104,7 +104,7 @@ class CreateMediaProcessReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateMediaProcessReq.
+        r"""Sets the template_id of this CreateMediaProcessReq.
 
         模板ID 
 

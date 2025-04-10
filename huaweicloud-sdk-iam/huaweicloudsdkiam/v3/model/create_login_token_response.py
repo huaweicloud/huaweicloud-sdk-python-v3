@@ -28,7 +28,7 @@ class CreateLoginTokenResponse(SdkResponse):
     }
 
     def __init__(self, logintoken=None, x_subject_login_token=None):
-        """CreateLoginTokenResponse
+        r"""CreateLoginTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
     @property
     def logintoken(self):
-        """Gets the logintoken of this CreateLoginTokenResponse.
+        r"""Gets the logintoken of this CreateLoginTokenResponse.
 
         :return: The logintoken of this CreateLoginTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginToken`
@@ -60,7 +60,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
     @logintoken.setter
     def logintoken(self, logintoken):
-        """Sets the logintoken of this CreateLoginTokenResponse.
+        r"""Sets the logintoken of this CreateLoginTokenResponse.
 
         :param logintoken: The logintoken of this CreateLoginTokenResponse.
         :type logintoken: :class:`huaweicloudsdkiam.v3.LoginToken`
@@ -69,7 +69,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
     @property
     def x_subject_login_token(self):
-        """Gets the x_subject_login_token of this CreateLoginTokenResponse.
+        r"""Gets the x_subject_login_token of this CreateLoginTokenResponse.
 
         :return: The x_subject_login_token of this CreateLoginTokenResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateLoginTokenResponse(SdkResponse):
 
     @x_subject_login_token.setter
     def x_subject_login_token(self, x_subject_login_token):
-        """Sets the x_subject_login_token of this CreateLoginTokenResponse.
+        r"""Sets the x_subject_login_token of this CreateLoginTokenResponse.
 
         :param x_subject_login_token: The x_subject_login_token of this CreateLoginTokenResponse.
         :type x_subject_login_token: str

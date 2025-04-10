@@ -35,7 +35,7 @@ class ExerciseCaseResource:
     }
 
     def __init__(self, id=None, polymeric_resource_id=None, input_file=None, output_file=None, index=None, input_type=None):
-        """ExerciseCaseResource
+        r"""ExerciseCaseResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ExerciseCaseResource:
 
     @property
     def id(self):
-        """Gets the id of this ExerciseCaseResource.
+        r"""Gets the id of this ExerciseCaseResource.
 
         测试用例存储id
 
@@ -89,7 +89,7 @@ class ExerciseCaseResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExerciseCaseResource.
+        r"""Sets the id of this ExerciseCaseResource.
 
         测试用例存储id
 
@@ -100,7 +100,7 @@ class ExerciseCaseResource:
 
     @property
     def polymeric_resource_id(self):
-        """Gets the polymeric_resource_id of this ExerciseCaseResource.
+        r"""Gets the polymeric_resource_id of this ExerciseCaseResource.
 
         资源聚合id
 
@@ -111,7 +111,7 @@ class ExerciseCaseResource:
 
     @polymeric_resource_id.setter
     def polymeric_resource_id(self, polymeric_resource_id):
-        """Sets the polymeric_resource_id of this ExerciseCaseResource.
+        r"""Sets the polymeric_resource_id of this ExerciseCaseResource.
 
         资源聚合id
 
@@ -122,7 +122,7 @@ class ExerciseCaseResource:
 
     @property
     def input_file(self):
-        """Gets the input_file of this ExerciseCaseResource.
+        r"""Gets the input_file of this ExerciseCaseResource.
 
         用例输入
 
@@ -133,7 +133,7 @@ class ExerciseCaseResource:
 
     @input_file.setter
     def input_file(self, input_file):
-        """Sets the input_file of this ExerciseCaseResource.
+        r"""Sets the input_file of this ExerciseCaseResource.
 
         用例输入
 
@@ -144,7 +144,7 @@ class ExerciseCaseResource:
 
     @property
     def output_file(self):
-        """Gets the output_file of this ExerciseCaseResource.
+        r"""Gets the output_file of this ExerciseCaseResource.
 
         用例输出
 
@@ -155,7 +155,7 @@ class ExerciseCaseResource:
 
     @output_file.setter
     def output_file(self, output_file):
-        """Sets the output_file of this ExerciseCaseResource.
+        r"""Sets the output_file of this ExerciseCaseResource.
 
         用例输出
 
@@ -166,7 +166,7 @@ class ExerciseCaseResource:
 
     @property
     def index(self):
-        """Gets the index of this ExerciseCaseResource.
+        r"""Gets the index of this ExerciseCaseResource.
 
         用例顺序位置
 
@@ -177,7 +177,7 @@ class ExerciseCaseResource:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ExerciseCaseResource.
+        r"""Sets the index of this ExerciseCaseResource.
 
         用例顺序位置
 
@@ -188,7 +188,7 @@ class ExerciseCaseResource:
 
     @property
     def input_type(self):
-        """Gets the input_type of this ExerciseCaseResource.
+        r"""Gets the input_type of this ExerciseCaseResource.
 
         用例类型
 
@@ -199,7 +199,7 @@ class ExerciseCaseResource:
 
     @input_type.setter
     def input_type(self, input_type):
-        """Sets the input_type of this ExerciseCaseResource.
+        r"""Sets the input_type of this ExerciseCaseResource.
 
         用例类型
 

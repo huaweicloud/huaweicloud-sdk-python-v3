@@ -25,7 +25,7 @@ class PolicyTriggerReq:
     }
 
     def __init__(self, properties=None):
-        """PolicyTriggerReq
+        r"""PolicyTriggerReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PolicyTriggerReq:
 
     @property
     def properties(self):
-        """Gets the properties of this PolicyTriggerReq.
+        r"""Gets the properties of this PolicyTriggerReq.
 
         :return: The properties of this PolicyTriggerReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`
@@ -51,7 +51,7 @@ class PolicyTriggerReq:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this PolicyTriggerReq.
+        r"""Sets the properties of this PolicyTriggerReq.
 
         :param properties: The properties of this PolicyTriggerReq.
         :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`

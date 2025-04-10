@@ -27,7 +27,7 @@ class DeleteChLtsConfigRequestBodyLogConfigs:
     }
 
     def __init__(self, instance_id=None, log_type=None):
-        """DeleteChLtsConfigRequestBodyLogConfigs
+        r"""DeleteChLtsConfigRequestBodyLogConfigs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteChLtsConfigRequestBodyLogConfigs:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteChLtsConfigRequestBodyLogConfigs.
+        r"""Gets the instance_id of this DeleteChLtsConfigRequestBodyLogConfigs.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -59,7 +59,7 @@ class DeleteChLtsConfigRequestBodyLogConfigs:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteChLtsConfigRequestBodyLogConfigs.
+        r"""Sets the instance_id of this DeleteChLtsConfigRequestBodyLogConfigs.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -70,7 +70,7 @@ class DeleteChLtsConfigRequestBodyLogConfigs:
 
     @property
     def log_type(self):
-        """Gets the log_type of this DeleteChLtsConfigRequestBodyLogConfigs.
+        r"""Gets the log_type of this DeleteChLtsConfigRequestBodyLogConfigs.
 
         日志类型。当前仅支持slow_log。
 
@@ -81,7 +81,7 @@ class DeleteChLtsConfigRequestBodyLogConfigs:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this DeleteChLtsConfigRequestBodyLogConfigs.
+        r"""Sets the log_type of this DeleteChLtsConfigRequestBodyLogConfigs.
 
         日志类型。当前仅支持slow_log。
 

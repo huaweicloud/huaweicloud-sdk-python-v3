@@ -27,7 +27,7 @@ class ServiceEvent:
     }
 
     def __init__(self, event_type=None, paras=None):
-        """ServiceEvent
+        r"""ServiceEvent
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ServiceEvent:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ServiceEvent.
+        r"""Gets the event_type of this ServiceEvent.
 
         **参数说明**：设备事件类型。注：设备服务内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -60,7 +60,7 @@ class ServiceEvent:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ServiceEvent.
+        r"""Sets the event_type of this ServiceEvent.
 
         **参数说明**：设备事件类型。注：设备服务内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -71,7 +71,7 @@ class ServiceEvent:
 
     @property
     def paras(self):
-        """Gets the paras of this ServiceEvent.
+        r"""Gets the paras of this ServiceEvent.
 
         **参数说明**：设备事件的参数列表。
 
@@ -82,7 +82,7 @@ class ServiceEvent:
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this ServiceEvent.
+        r"""Sets the paras of this ServiceEvent.
 
         **参数说明**：设备事件的参数列表。
 

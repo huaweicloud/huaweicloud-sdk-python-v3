@@ -51,7 +51,7 @@ class AlarmParamForV4Db:
     }
 
     def __init__(self, alarm_create_time=None, alarm_update_time=None, alarm_rule_name=None, alarm_rule_id=None, enterprise_project_id=None, prom_instance_id=None, alarm_rule_description=None, alarm_rule_enable=None, alarm_rule_status=None, alarm_rule_type=None, metric_alarm_spec=None, event_alarm_spec=None, alarm_notifications=None, user_id=None):
-        """AlarmParamForV4Db
+        r"""AlarmParamForV4Db
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_create_time(self):
-        """Gets the alarm_create_time of this AlarmParamForV4Db.
+        r"""Gets the alarm_create_time of this AlarmParamForV4Db.
 
         告警规则创建时间。
 
@@ -135,7 +135,7 @@ class AlarmParamForV4Db:
 
     @alarm_create_time.setter
     def alarm_create_time(self, alarm_create_time):
-        """Sets the alarm_create_time of this AlarmParamForV4Db.
+        r"""Sets the alarm_create_time of this AlarmParamForV4Db.
 
         告警规则创建时间。
 
@@ -146,7 +146,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_update_time(self):
-        """Gets the alarm_update_time of this AlarmParamForV4Db.
+        r"""Gets the alarm_update_time of this AlarmParamForV4Db.
 
         告警规则修改时间。
 
@@ -157,7 +157,7 @@ class AlarmParamForV4Db:
 
     @alarm_update_time.setter
     def alarm_update_time(self, alarm_update_time):
-        """Sets the alarm_update_time of this AlarmParamForV4Db.
+        r"""Sets the alarm_update_time of this AlarmParamForV4Db.
 
         告警规则修改时间。
 
@@ -168,7 +168,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this AlarmParamForV4Db.
+        r"""Gets the alarm_rule_name of this AlarmParamForV4Db.
 
         告警规则名称。
 
@@ -179,7 +179,7 @@ class AlarmParamForV4Db:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this AlarmParamForV4Db.
+        r"""Sets the alarm_rule_name of this AlarmParamForV4Db.
 
         告警规则名称。
 
@@ -190,7 +190,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this AlarmParamForV4Db.
+        r"""Gets the alarm_rule_id of this AlarmParamForV4Db.
 
         告警规则id。
 
@@ -201,7 +201,7 @@ class AlarmParamForV4Db:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this AlarmParamForV4Db.
+        r"""Sets the alarm_rule_id of this AlarmParamForV4Db.
 
         告警规则id。
 
@@ -212,7 +212,7 @@ class AlarmParamForV4Db:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AlarmParamForV4Db.
+        r"""Gets the enterprise_project_id of this AlarmParamForV4Db.
 
         企业项目id。
 
@@ -223,7 +223,7 @@ class AlarmParamForV4Db:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AlarmParamForV4Db.
+        r"""Sets the enterprise_project_id of this AlarmParamForV4Db.
 
         企业项目id。
 
@@ -234,7 +234,7 @@ class AlarmParamForV4Db:
 
     @property
     def prom_instance_id(self):
-        """Gets the prom_instance_id of this AlarmParamForV4Db.
+        r"""Gets the prom_instance_id of this AlarmParamForV4Db.
 
         Prometheus实例id。
 
@@ -245,7 +245,7 @@ class AlarmParamForV4Db:
 
     @prom_instance_id.setter
     def prom_instance_id(self, prom_instance_id):
-        """Sets the prom_instance_id of this AlarmParamForV4Db.
+        r"""Sets the prom_instance_id of this AlarmParamForV4Db.
 
         Prometheus实例id。
 
@@ -256,7 +256,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_rule_description(self):
-        """Gets the alarm_rule_description of this AlarmParamForV4Db.
+        r"""Gets the alarm_rule_description of this AlarmParamForV4Db.
 
         告警规则描述。
 
@@ -267,7 +267,7 @@ class AlarmParamForV4Db:
 
     @alarm_rule_description.setter
     def alarm_rule_description(self, alarm_rule_description):
-        """Sets the alarm_rule_description of this AlarmParamForV4Db.
+        r"""Sets the alarm_rule_description of this AlarmParamForV4Db.
 
         告警规则描述。
 
@@ -278,7 +278,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_rule_enable(self):
-        """Gets the alarm_rule_enable of this AlarmParamForV4Db.
+        r"""Gets the alarm_rule_enable of this AlarmParamForV4Db.
 
         是否启用。
 
@@ -289,7 +289,7 @@ class AlarmParamForV4Db:
 
     @alarm_rule_enable.setter
     def alarm_rule_enable(self, alarm_rule_enable):
-        """Sets the alarm_rule_enable of this AlarmParamForV4Db.
+        r"""Sets the alarm_rule_enable of this AlarmParamForV4Db.
 
         是否启用。
 
@@ -300,7 +300,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_rule_status(self):
-        """Gets the alarm_rule_status of this AlarmParamForV4Db.
+        r"""Gets the alarm_rule_status of this AlarmParamForV4Db.
 
         告警状态。 - “OK”：正常 - “alarm”：超限阈值 - “Effective”：生效中 - “Invalid”：停用中
 
@@ -311,7 +311,7 @@ class AlarmParamForV4Db:
 
     @alarm_rule_status.setter
     def alarm_rule_status(self, alarm_rule_status):
-        """Sets the alarm_rule_status of this AlarmParamForV4Db.
+        r"""Sets the alarm_rule_status of this AlarmParamForV4Db.
 
         告警状态。 - “OK”：正常 - “alarm”：超限阈值 - “Effective”：生效中 - “Invalid”：停用中
 
@@ -322,7 +322,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_rule_type(self):
-        """Gets the alarm_rule_type of this AlarmParamForV4Db.
+        r"""Gets the alarm_rule_type of this AlarmParamForV4Db.
 
         规则类型。 - “metric”：指标告警规则 - “event”：事件告警规则
 
@@ -333,7 +333,7 @@ class AlarmParamForV4Db:
 
     @alarm_rule_type.setter
     def alarm_rule_type(self, alarm_rule_type):
-        """Sets the alarm_rule_type of this AlarmParamForV4Db.
+        r"""Sets the alarm_rule_type of this AlarmParamForV4Db.
 
         规则类型。 - “metric”：指标告警规则 - “event”：事件告警规则
 
@@ -344,7 +344,7 @@ class AlarmParamForV4Db:
 
     @property
     def metric_alarm_spec(self):
-        """Gets the metric_alarm_spec of this AlarmParamForV4Db.
+        r"""Gets the metric_alarm_spec of this AlarmParamForV4Db.
 
         :return: The metric_alarm_spec of this AlarmParamForV4Db.
         :rtype: :class:`huaweicloudsdkaom.v2.MetricAlarmSpec`
@@ -353,7 +353,7 @@ class AlarmParamForV4Db:
 
     @metric_alarm_spec.setter
     def metric_alarm_spec(self, metric_alarm_spec):
-        """Sets the metric_alarm_spec of this AlarmParamForV4Db.
+        r"""Sets the metric_alarm_spec of this AlarmParamForV4Db.
 
         :param metric_alarm_spec: The metric_alarm_spec of this AlarmParamForV4Db.
         :type metric_alarm_spec: :class:`huaweicloudsdkaom.v2.MetricAlarmSpec`
@@ -362,7 +362,7 @@ class AlarmParamForV4Db:
 
     @property
     def event_alarm_spec(self):
-        """Gets the event_alarm_spec of this AlarmParamForV4Db.
+        r"""Gets the event_alarm_spec of this AlarmParamForV4Db.
 
         :return: The event_alarm_spec of this AlarmParamForV4Db.
         :rtype: :class:`huaweicloudsdkaom.v2.EventAlarmSpec`
@@ -371,7 +371,7 @@ class AlarmParamForV4Db:
 
     @event_alarm_spec.setter
     def event_alarm_spec(self, event_alarm_spec):
-        """Sets the event_alarm_spec of this AlarmParamForV4Db.
+        r"""Sets the event_alarm_spec of this AlarmParamForV4Db.
 
         :param event_alarm_spec: The event_alarm_spec of this AlarmParamForV4Db.
         :type event_alarm_spec: :class:`huaweicloudsdkaom.v2.EventAlarmSpec`
@@ -380,7 +380,7 @@ class AlarmParamForV4Db:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this AlarmParamForV4Db.
+        r"""Gets the alarm_notifications of this AlarmParamForV4Db.
 
         :return: The alarm_notifications of this AlarmParamForV4Db.
         :rtype: :class:`huaweicloudsdkaom.v2.AlarmNotification`
@@ -389,7 +389,7 @@ class AlarmParamForV4Db:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this AlarmParamForV4Db.
+        r"""Sets the alarm_notifications of this AlarmParamForV4Db.
 
         :param alarm_notifications: The alarm_notifications of this AlarmParamForV4Db.
         :type alarm_notifications: :class:`huaweicloudsdkaom.v2.AlarmNotification`
@@ -398,7 +398,7 @@ class AlarmParamForV4Db:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AlarmParamForV4Db.
+        r"""Gets the user_id of this AlarmParamForV4Db.
 
         用户id。
 
@@ -409,7 +409,7 @@ class AlarmParamForV4Db:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AlarmParamForV4Db.
+        r"""Sets the user_id of this AlarmParamForV4Db.
 
         用户id。
 

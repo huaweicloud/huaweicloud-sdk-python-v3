@@ -28,7 +28,7 @@ class CreateImageWatermarkByAddressResponse(SdkResponse):
     }
 
     def __init__(self, region_id=None, watermarked_file=None):
-        """CreateImageWatermarkByAddressResponse
+        r"""CreateImageWatermarkByAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateImageWatermarkByAddressResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateImageWatermarkByAddressResponse.
+        r"""Gets the region_id of this CreateImageWatermarkByAddressResponse.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -62,7 +62,7 @@ class CreateImageWatermarkByAddressResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateImageWatermarkByAddressResponse.
+        r"""Sets the region_id of this CreateImageWatermarkByAddressResponse.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -73,7 +73,7 @@ class CreateImageWatermarkByAddressResponse(SdkResponse):
 
     @property
     def watermarked_file(self):
-        """Gets the watermarked_file of this CreateImageWatermarkByAddressResponse.
+        r"""Gets the watermarked_file of this CreateImageWatermarkByAddressResponse.
 
         添加水印后的OBS图片地址，当前只支持华为云OBS文件，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -84,7 +84,7 @@ class CreateImageWatermarkByAddressResponse(SdkResponse):
 
     @watermarked_file.setter
     def watermarked_file(self, watermarked_file):
-        """Sets the watermarked_file of this CreateImageWatermarkByAddressResponse.
+        r"""Sets the watermarked_file of this CreateImageWatermarkByAddressResponse.
 
         添加水印后的OBS图片地址，当前只支持华为云OBS文件，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 

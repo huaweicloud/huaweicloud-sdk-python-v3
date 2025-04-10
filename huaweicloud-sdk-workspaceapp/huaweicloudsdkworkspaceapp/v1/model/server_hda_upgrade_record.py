@@ -41,7 +41,7 @@ class ServerHdaUpgradeRecord:
     }
 
     def __init__(self, server_id=None, machine_name=None, server_name=None, server_group_name=None, sid=None, current_version=None, target_version=None, upgrade_status=None, upgrade_time=None):
-        """ServerHdaUpgradeRecord
+        r"""ServerHdaUpgradeRecord
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerHdaUpgradeRecord.
+        r"""Gets the server_id of this ServerHdaUpgradeRecord.
 
         服务器id。
 
@@ -110,7 +110,7 @@ class ServerHdaUpgradeRecord:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerHdaUpgradeRecord.
+        r"""Sets the server_id of this ServerHdaUpgradeRecord.
 
         服务器id。
 
@@ -121,7 +121,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ServerHdaUpgradeRecord.
+        r"""Gets the machine_name of this ServerHdaUpgradeRecord.
 
         机器名称。
 
@@ -132,7 +132,7 @@ class ServerHdaUpgradeRecord:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ServerHdaUpgradeRecord.
+        r"""Sets the machine_name of this ServerHdaUpgradeRecord.
 
         机器名称。
 
@@ -143,7 +143,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ServerHdaUpgradeRecord.
+        r"""Gets the server_name of this ServerHdaUpgradeRecord.
 
         服务器名称。
 
@@ -154,7 +154,7 @@ class ServerHdaUpgradeRecord:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ServerHdaUpgradeRecord.
+        r"""Sets the server_name of this ServerHdaUpgradeRecord.
 
         服务器名称。
 
@@ -165,7 +165,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def server_group_name(self):
-        """Gets the server_group_name of this ServerHdaUpgradeRecord.
+        r"""Gets the server_group_name of this ServerHdaUpgradeRecord.
 
         服务器组名称。
 
@@ -176,7 +176,7 @@ class ServerHdaUpgradeRecord:
 
     @server_group_name.setter
     def server_group_name(self, server_group_name):
-        """Sets the server_group_name of this ServerHdaUpgradeRecord.
+        r"""Sets the server_group_name of this ServerHdaUpgradeRecord.
 
         服务器组名称。
 
@@ -187,7 +187,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def sid(self):
-        """Gets the sid of this ServerHdaUpgradeRecord.
+        r"""Gets the sid of this ServerHdaUpgradeRecord.
 
         服务器的sid。
 
@@ -198,7 +198,7 @@ class ServerHdaUpgradeRecord:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this ServerHdaUpgradeRecord.
+        r"""Sets the sid of this ServerHdaUpgradeRecord.
 
         服务器的sid。
 
@@ -209,7 +209,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def current_version(self):
-        """Gets the current_version of this ServerHdaUpgradeRecord.
+        r"""Gets the current_version of this ServerHdaUpgradeRecord.
 
         当前的accessAgent版本。
 
@@ -220,7 +220,7 @@ class ServerHdaUpgradeRecord:
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this ServerHdaUpgradeRecord.
+        r"""Sets the current_version of this ServerHdaUpgradeRecord.
 
         当前的accessAgent版本。
 
@@ -231,7 +231,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ServerHdaUpgradeRecord.
+        r"""Gets the target_version of this ServerHdaUpgradeRecord.
 
         目标的accessAgent版本。
 
@@ -242,7 +242,7 @@ class ServerHdaUpgradeRecord:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ServerHdaUpgradeRecord.
+        r"""Sets the target_version of this ServerHdaUpgradeRecord.
 
         目标的accessAgent版本。
 
@@ -253,7 +253,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def upgrade_status(self):
-        """Gets the upgrade_status of this ServerHdaUpgradeRecord.
+        r"""Gets the upgrade_status of this ServerHdaUpgradeRecord.
 
         HDA升级状态。
 
@@ -264,7 +264,7 @@ class ServerHdaUpgradeRecord:
 
     @upgrade_status.setter
     def upgrade_status(self, upgrade_status):
-        """Sets the upgrade_status of this ServerHdaUpgradeRecord.
+        r"""Sets the upgrade_status of this ServerHdaUpgradeRecord.
 
         HDA升级状态。
 
@@ -275,7 +275,7 @@ class ServerHdaUpgradeRecord:
 
     @property
     def upgrade_time(self):
-        """Gets the upgrade_time of this ServerHdaUpgradeRecord.
+        r"""Gets the upgrade_time of this ServerHdaUpgradeRecord.
 
         更新时间
 
@@ -286,7 +286,7 @@ class ServerHdaUpgradeRecord:
 
     @upgrade_time.setter
     def upgrade_time(self, upgrade_time):
-        """Sets the upgrade_time of this ServerHdaUpgradeRecord.
+        r"""Sets the upgrade_time of this ServerHdaUpgradeRecord.
 
         更新时间
 

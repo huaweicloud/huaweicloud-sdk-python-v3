@@ -27,7 +27,7 @@ class DeleteSnapshotPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, id=None):
-        """DeleteSnapshotPolicyRequest
+        r"""DeleteSnapshotPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSnapshotPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteSnapshotPolicyRequest.
+        r"""Gets the cluster_id of this DeleteSnapshotPolicyRequest.
 
         集群ID。
 
@@ -59,7 +59,7 @@ class DeleteSnapshotPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteSnapshotPolicyRequest.
+        r"""Sets the cluster_id of this DeleteSnapshotPolicyRequest.
 
         集群ID。
 
@@ -70,7 +70,7 @@ class DeleteSnapshotPolicyRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSnapshotPolicyRequest.
+        r"""Gets the id of this DeleteSnapshotPolicyRequest.
 
         快照策略ID。
 
@@ -81,7 +81,7 @@ class DeleteSnapshotPolicyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSnapshotPolicyRequest.
+        r"""Sets the id of this DeleteSnapshotPolicyRequest.
 
         快照策略ID。
 

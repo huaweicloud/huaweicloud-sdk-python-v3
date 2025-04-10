@@ -29,7 +29,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
     }
 
     def __init__(self, instance_id=None, action=None, x_language=None):
-        """ShowUpgradeDbMajorVersionStatusRequest
+        r"""ShowUpgradeDbMajorVersionStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowUpgradeDbMajorVersionStatusRequest.
+        r"""Gets the instance_id of this ShowUpgradeDbMajorVersionStatusRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowUpgradeDbMajorVersionStatusRequest.
+        r"""Sets the instance_id of this ShowUpgradeDbMajorVersionStatusRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
 
     @property
     def action(self):
-        """Gets the action of this ShowUpgradeDbMajorVersionStatusRequest.
+        r"""Gets the action of this ShowUpgradeDbMajorVersionStatusRequest.
 
         要查询的状态 check：查询升级预检查的状态。 upgrade：查询大板本升级的状态。
 
@@ -88,7 +88,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowUpgradeDbMajorVersionStatusRequest.
+        r"""Sets the action of this ShowUpgradeDbMajorVersionStatusRequest.
 
         要查询的状态 check：查询升级预检查的状态。 upgrade：查询大板本升级的状态。
 
@@ -99,7 +99,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowUpgradeDbMajorVersionStatusRequest.
+        r"""Gets the x_language of this ShowUpgradeDbMajorVersionStatusRequest.
 
         语言。默认en-us。
 
@@ -110,7 +110,7 @@ class ShowUpgradeDbMajorVersionStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowUpgradeDbMajorVersionStatusRequest.
+        r"""Sets the x_language of this ShowUpgradeDbMajorVersionStatusRequest.
 
         语言。默认en-us。
 

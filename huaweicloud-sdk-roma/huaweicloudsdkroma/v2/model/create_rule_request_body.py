@@ -33,7 +33,7 @@ class CreateRuleRequestBody:
     }
 
     def __init__(self, name=None, app_id=None, description=None, status=None, data_parsing_status=None):
-        """CreateRuleRequestBody
+        r"""CreateRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateRuleRequestBody.
+        r"""Gets the name of this CreateRuleRequestBody.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -80,7 +80,7 @@ class CreateRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRuleRequestBody.
+        r"""Sets the name of this CreateRuleRequestBody.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -91,7 +91,7 @@ class CreateRuleRequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateRuleRequestBody.
+        r"""Gets the app_id of this CreateRuleRequestBody.
 
         应用ID
 
@@ -102,7 +102,7 @@ class CreateRuleRequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateRuleRequestBody.
+        r"""Sets the app_id of this CreateRuleRequestBody.
 
         应用ID
 
@@ -113,7 +113,7 @@ class CreateRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateRuleRequestBody.
+        r"""Gets the description of this CreateRuleRequestBody.
 
         描述，长度0-200
 
@@ -124,7 +124,7 @@ class CreateRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRuleRequestBody.
+        r"""Sets the description of this CreateRuleRequestBody.
 
         描述，长度0-200
 
@@ -135,7 +135,7 @@ class CreateRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateRuleRequestBody.
+        r"""Gets the status of this CreateRuleRequestBody.
 
         规则状态 0-启用 1-停用，不填写时默认为0-启用
 
@@ -146,7 +146,7 @@ class CreateRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRuleRequestBody.
+        r"""Sets the status of this CreateRuleRequestBody.
 
         规则状态 0-启用 1-停用，不填写时默认为0-启用
 
@@ -157,7 +157,7 @@ class CreateRuleRequestBody:
 
     @property
     def data_parsing_status(self):
-        """Gets the data_parsing_status of this CreateRuleRequestBody.
+        r"""Gets the data_parsing_status of this CreateRuleRequestBody.
 
         数据解析状态，0-启用 1-停用，不填写时默认为1-禁用
 
@@ -168,7 +168,7 @@ class CreateRuleRequestBody:
 
     @data_parsing_status.setter
     def data_parsing_status(self, data_parsing_status):
-        """Sets the data_parsing_status of this CreateRuleRequestBody.
+        r"""Sets the data_parsing_status of this CreateRuleRequestBody.
 
         数据解析状态，0-启用 1-停用，不填写时默认为1-禁用
 

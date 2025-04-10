@@ -27,7 +27,7 @@ class PauseResumeDataSynchronizationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """PauseResumeDataSynchronizationRequest
+        r"""PauseResumeDataSynchronizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PauseResumeDataSynchronizationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PauseResumeDataSynchronizationRequest.
+        r"""Gets the instance_id of this PauseResumeDataSynchronizationRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class PauseResumeDataSynchronizationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PauseResumeDataSynchronizationRequest.
+        r"""Sets the instance_id of this PauseResumeDataSynchronizationRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class PauseResumeDataSynchronizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this PauseResumeDataSynchronizationRequest.
+        r"""Gets the body of this PauseResumeDataSynchronizationRequest.
 
         :return: The body of this PauseResumeDataSynchronizationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ActionBody`
@@ -80,7 +80,7 @@ class PauseResumeDataSynchronizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PauseResumeDataSynchronizationRequest.
+        r"""Sets the body of this PauseResumeDataSynchronizationRequest.
 
         :param body: The body of this PauseResumeDataSynchronizationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ActionBody`

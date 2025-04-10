@@ -25,7 +25,7 @@ class OrderRuleId:
     }
 
     def __init__(self, id=None):
-        """OrderRuleId
+        r"""OrderRuleId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OrderRuleId:
 
     @property
     def id(self):
-        """Gets the id of this OrderRuleId.
+        r"""Gets the id of this OrderRuleId.
 
         规则id
 
@@ -54,7 +54,7 @@ class OrderRuleId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrderRuleId.
+        r"""Sets the id of this OrderRuleId.
 
         规则id
 

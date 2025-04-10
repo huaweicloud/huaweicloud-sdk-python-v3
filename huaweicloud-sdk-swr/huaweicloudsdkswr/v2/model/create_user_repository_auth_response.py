@@ -24,7 +24,7 @@ class CreateUserRepositoryAuthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateUserRepositoryAuthResponse
+        r"""CreateUserRepositoryAuthResponse
 
         The model defined in huaweicloud sdk
 

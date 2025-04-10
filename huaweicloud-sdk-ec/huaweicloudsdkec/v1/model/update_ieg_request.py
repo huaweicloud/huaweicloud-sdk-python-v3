@@ -27,7 +27,7 @@ class UpdateIegRequest:
     }
 
     def __init__(self, ieg_id=None, body=None):
-        """UpdateIegRequest
+        r"""UpdateIegRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateIegRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateIegRequest.
+        r"""Gets the ieg_id of this UpdateIegRequest.
 
         智能企业网关ID
 
@@ -60,7 +60,7 @@ class UpdateIegRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateIegRequest.
+        r"""Sets the ieg_id of this UpdateIegRequest.
 
         智能企业网关ID
 
@@ -71,7 +71,7 @@ class UpdateIegRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIegRequest.
+        r"""Gets the body of this UpdateIegRequest.
 
         :return: The body of this UpdateIegRequest.
         :rtype: :class:`huaweicloudsdkec.v1.UpdateIegRequestBody`
@@ -80,7 +80,7 @@ class UpdateIegRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIegRequest.
+        r"""Sets the body of this UpdateIegRequest.
 
         :param body: The body of this UpdateIegRequest.
         :type body: :class:`huaweicloudsdkec.v1.UpdateIegRequestBody`

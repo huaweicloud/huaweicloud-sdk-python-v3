@@ -45,7 +45,7 @@ class ListLogStreamsResponseBody1LogStreams:
     }
 
     def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, tag=None, filter_count=None, whether_log_storage=None, hot_cold_separation=None, auth_web_tracking=None, ttl_in_days=None, hot_storage_days=None):
-        """ListLogStreamsResponseBody1LogStreams
+        r"""ListLogStreamsResponseBody1LogStreams
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the creation_time of this ListLogStreamsResponseBody1LogStreams.
 
         日志流创建时间
 
@@ -119,7 +119,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the creation_time of this ListLogStreamsResponseBody1LogStreams.
 
         日志流创建时间
 
@@ -130,7 +130,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the log_stream_id of this ListLogStreamsResponseBody1LogStreams.
 
         日志流ID
 
@@ -141,7 +141,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the log_stream_id of this ListLogStreamsResponseBody1LogStreams.
 
         日志流ID
 
@@ -152,7 +152,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the log_stream_name of this ListLogStreamsResponseBody1LogStreams.
 
         日志流名称
 
@@ -163,7 +163,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the log_stream_name of this ListLogStreamsResponseBody1LogStreams.
 
         日志流名称
 
@@ -174,7 +174,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def log_stream_name_alias(self):
-        """Gets the log_stream_name_alias of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the log_stream_name_alias of this ListLogStreamsResponseBody1LogStreams.
 
         日志流别名
 
@@ -185,7 +185,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @log_stream_name_alias.setter
     def log_stream_name_alias(self, log_stream_name_alias):
-        """Sets the log_stream_name_alias of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the log_stream_name_alias of this ListLogStreamsResponseBody1LogStreams.
 
         日志流别名
 
@@ -196,7 +196,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def tag(self):
-        """Gets the tag of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the tag of this ListLogStreamsResponseBody1LogStreams.
 
         日志流所属标签
 
@@ -207,7 +207,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the tag of this ListLogStreamsResponseBody1LogStreams.
 
         日志流所属标签
 
@@ -218,7 +218,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def filter_count(self):
-        """Gets the filter_count of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the filter_count of this ListLogStreamsResponseBody1LogStreams.
 
         过滤器个数
 
@@ -229,7 +229,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @filter_count.setter
     def filter_count(self, filter_count):
-        """Sets the filter_count of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the filter_count of this ListLogStreamsResponseBody1LogStreams.
 
         过滤器个数
 
@@ -240,7 +240,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def whether_log_storage(self):
-        """Gets the whether_log_storage of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the whether_log_storage of this ListLogStreamsResponseBody1LogStreams.
 
         是否日志存储
 
@@ -251,7 +251,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @whether_log_storage.setter
     def whether_log_storage(self, whether_log_storage):
-        """Sets the whether_log_storage of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the whether_log_storage of this ListLogStreamsResponseBody1LogStreams.
 
         是否日志存储
 
@@ -262,7 +262,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def hot_cold_separation(self):
-        """Gets the hot_cold_separation of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the hot_cold_separation of this ListLogStreamsResponseBody1LogStreams.
 
         是否冷存储
 
@@ -273,7 +273,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @hot_cold_separation.setter
     def hot_cold_separation(self, hot_cold_separation):
-        """Sets the hot_cold_separation of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the hot_cold_separation of this ListLogStreamsResponseBody1LogStreams.
 
         是否冷存储
 
@@ -284,7 +284,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def auth_web_tracking(self):
-        """Gets the auth_web_tracking of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the auth_web_tracking of this ListLogStreamsResponseBody1LogStreams.
 
         匿名写入开关
 
@@ -295,7 +295,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @auth_web_tracking.setter
     def auth_web_tracking(self, auth_web_tracking):
-        """Sets the auth_web_tracking of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the auth_web_tracking of this ListLogStreamsResponseBody1LogStreams.
 
         匿名写入开关
 
@@ -306,7 +306,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the ttl_in_days of this ListLogStreamsResponseBody1LogStreams.
 
         存储时间
 
@@ -317,7 +317,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the ttl_in_days of this ListLogStreamsResponseBody1LogStreams.
 
         存储时间
 
@@ -328,7 +328,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @property
     def hot_storage_days(self):
-        """Gets the hot_storage_days of this ListLogStreamsResponseBody1LogStreams.
+        r"""Gets the hot_storage_days of this ListLogStreamsResponseBody1LogStreams.
 
         标准存储时间
 
@@ -339,7 +339,7 @@ class ListLogStreamsResponseBody1LogStreams:
 
     @hot_storage_days.setter
     def hot_storage_days(self, hot_storage_days):
-        """Sets the hot_storage_days of this ListLogStreamsResponseBody1LogStreams.
+        r"""Sets the hot_storage_days of this ListLogStreamsResponseBody1LogStreams.
 
         标准存储时间
 

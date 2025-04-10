@@ -39,7 +39,7 @@ class DemandStatisticResponseV4:
     }
 
     def __init__(self, closed_num=None, module=None, new_num=None, process_num=None, rejected_num=None, solved_num=None, test_num=None, total=None):
-        """DemandStatisticResponseV4
+        r"""DemandStatisticResponseV4
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DemandStatisticResponseV4:
 
     @property
     def closed_num(self):
-        """Gets the closed_num of this DemandStatisticResponseV4.
+        r"""Gets the closed_num of this DemandStatisticResponseV4.
 
         已关闭数量
 
@@ -103,7 +103,7 @@ class DemandStatisticResponseV4:
 
     @closed_num.setter
     def closed_num(self, closed_num):
-        """Sets the closed_num of this DemandStatisticResponseV4.
+        r"""Sets the closed_num of this DemandStatisticResponseV4.
 
         已关闭数量
 
@@ -114,7 +114,7 @@ class DemandStatisticResponseV4:
 
     @property
     def module(self):
-        """Gets the module of this DemandStatisticResponseV4.
+        r"""Gets the module of this DemandStatisticResponseV4.
 
         模块
 
@@ -125,7 +125,7 @@ class DemandStatisticResponseV4:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this DemandStatisticResponseV4.
+        r"""Sets the module of this DemandStatisticResponseV4.
 
         模块
 
@@ -136,7 +136,7 @@ class DemandStatisticResponseV4:
 
     @property
     def new_num(self):
-        """Gets the new_num of this DemandStatisticResponseV4.
+        r"""Gets the new_num of this DemandStatisticResponseV4.
 
         新建的数量
 
@@ -147,7 +147,7 @@ class DemandStatisticResponseV4:
 
     @new_num.setter
     def new_num(self, new_num):
-        """Sets the new_num of this DemandStatisticResponseV4.
+        r"""Sets the new_num of this DemandStatisticResponseV4.
 
         新建的数量
 
@@ -158,7 +158,7 @@ class DemandStatisticResponseV4:
 
     @property
     def process_num(self):
-        """Gets the process_num of this DemandStatisticResponseV4.
+        r"""Gets the process_num of this DemandStatisticResponseV4.
 
         开发中的数量
 
@@ -169,7 +169,7 @@ class DemandStatisticResponseV4:
 
     @process_num.setter
     def process_num(self, process_num):
-        """Sets the process_num of this DemandStatisticResponseV4.
+        r"""Sets the process_num of this DemandStatisticResponseV4.
 
         开发中的数量
 
@@ -180,7 +180,7 @@ class DemandStatisticResponseV4:
 
     @property
     def rejected_num(self):
-        """Gets the rejected_num of this DemandStatisticResponseV4.
+        r"""Gets the rejected_num of this DemandStatisticResponseV4.
 
         已拒绝数量
 
@@ -191,7 +191,7 @@ class DemandStatisticResponseV4:
 
     @rejected_num.setter
     def rejected_num(self, rejected_num):
-        """Sets the rejected_num of this DemandStatisticResponseV4.
+        r"""Sets the rejected_num of this DemandStatisticResponseV4.
 
         已拒绝数量
 
@@ -202,7 +202,7 @@ class DemandStatisticResponseV4:
 
     @property
     def solved_num(self):
-        """Gets the solved_num of this DemandStatisticResponseV4.
+        r"""Gets the solved_num of this DemandStatisticResponseV4.
 
         已解决数量
 
@@ -213,7 +213,7 @@ class DemandStatisticResponseV4:
 
     @solved_num.setter
     def solved_num(self, solved_num):
-        """Sets the solved_num of this DemandStatisticResponseV4.
+        r"""Sets the solved_num of this DemandStatisticResponseV4.
 
         已解决数量
 
@@ -224,7 +224,7 @@ class DemandStatisticResponseV4:
 
     @property
     def test_num(self):
-        """Gets the test_num of this DemandStatisticResponseV4.
+        r"""Gets the test_num of this DemandStatisticResponseV4.
 
         测试中的数量
 
@@ -235,7 +235,7 @@ class DemandStatisticResponseV4:
 
     @test_num.setter
     def test_num(self, test_num):
-        """Sets the test_num of this DemandStatisticResponseV4.
+        r"""Sets the test_num of this DemandStatisticResponseV4.
 
         测试中的数量
 
@@ -246,7 +246,7 @@ class DemandStatisticResponseV4:
 
     @property
     def total(self):
-        """Gets the total of this DemandStatisticResponseV4.
+        r"""Gets the total of this DemandStatisticResponseV4.
 
         总数
 
@@ -257,7 +257,7 @@ class DemandStatisticResponseV4:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DemandStatisticResponseV4.
+        r"""Sets the total of this DemandStatisticResponseV4.
 
         总数
 

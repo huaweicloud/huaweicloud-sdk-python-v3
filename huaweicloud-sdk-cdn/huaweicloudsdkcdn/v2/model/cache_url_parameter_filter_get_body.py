@@ -27,7 +27,7 @@ class CacheUrlParameterFilterGetBody:
     }
 
     def __init__(self, type=None, value=None):
-        """CacheUrlParameterFilterGetBody
+        r"""CacheUrlParameterFilterGetBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CacheUrlParameterFilterGetBody:
 
     @property
     def type(self):
-        """Gets the type of this CacheUrlParameterFilterGetBody.
+        r"""Gets the type of this CacheUrlParameterFilterGetBody.
 
         缓存URL参数操作类型： - full_url：缓存所有参数； - ignore_url_params：忽略所有参数； - del_params：忽略指定URL参数； - reserve_params：保留指定URL参数。   > 本接口参数有调整，参数替换如下：   > - del_params替代del_args。   > - reserve_params替代reserve_args。 
 
@@ -61,7 +61,7 @@ class CacheUrlParameterFilterGetBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CacheUrlParameterFilterGetBody.
+        r"""Sets the type of this CacheUrlParameterFilterGetBody.
 
         缓存URL参数操作类型： - full_url：缓存所有参数； - ignore_url_params：忽略所有参数； - del_params：忽略指定URL参数； - reserve_params：保留指定URL参数。   > 本接口参数有调整，参数替换如下：   > - del_params替代del_args。   > - reserve_params替代reserve_args。 
 
@@ -72,7 +72,7 @@ class CacheUrlParameterFilterGetBody:
 
     @property
     def value(self):
-        """Gets the value of this CacheUrlParameterFilterGetBody.
+        r"""Gets the value of this CacheUrlParameterFilterGetBody.
 
         参数值。
 
@@ -83,7 +83,7 @@ class CacheUrlParameterFilterGetBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CacheUrlParameterFilterGetBody.
+        r"""Sets the value of this CacheUrlParameterFilterGetBody.
 
         参数值。
 

@@ -31,7 +31,7 @@ class SetQuota:
     }
 
     def __init__(self, enterprise_project_id=None, instance_quota=None, vcpus_quota=None, ram_quota=None):
-        """SetQuota
+        r"""SetQuota
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SetQuota:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SetQuota.
+        r"""Gets the enterprise_project_id of this SetQuota.
 
         企业项目ID。
 
@@ -74,7 +74,7 @@ class SetQuota:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SetQuota.
+        r"""Sets the enterprise_project_id of this SetQuota.
 
         企业项目ID。
 
@@ -85,7 +85,7 @@ class SetQuota:
 
     @property
     def instance_quota(self):
-        """Gets the instance_quota of this SetQuota.
+        r"""Gets the instance_quota of this SetQuota.
 
         实例个数配额。取值范围0~100000。(如果已经存在实例，应该大于已经存在的实例个数)
 
@@ -96,7 +96,7 @@ class SetQuota:
 
     @instance_quota.setter
     def instance_quota(self, instance_quota):
-        """Sets the instance_quota of this SetQuota.
+        r"""Sets the instance_quota of this SetQuota.
 
         实例个数配额。取值范围0~100000。(如果已经存在实例，应该大于已经存在的实例个数)
 
@@ -107,7 +107,7 @@ class SetQuota:
 
     @property
     def vcpus_quota(self):
-        """Gets the vcpus_quota of this SetQuota.
+        r"""Gets the vcpus_quota of this SetQuota.
 
         CPU核数配额。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的cpu个数)
 
@@ -118,7 +118,7 @@ class SetQuota:
 
     @vcpus_quota.setter
     def vcpus_quota(self, vcpus_quota):
-        """Sets the vcpus_quota of this SetQuota.
+        r"""Sets the vcpus_quota of this SetQuota.
 
         CPU核数配额。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的cpu个数)
 
@@ -129,7 +129,7 @@ class SetQuota:
 
     @property
     def ram_quota(self):
-        """Gets the ram_quota of this SetQuota.
+        r"""Gets the ram_quota of this SetQuota.
 
         内存使用配额，单位为GB。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的内存数)
 
@@ -140,7 +140,7 @@ class SetQuota:
 
     @ram_quota.setter
     def ram_quota(self, ram_quota):
-        """Sets the ram_quota of this SetQuota.
+        r"""Sets the ram_quota of this SetQuota.
 
         内存使用配额，单位为GB。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的内存数)
 

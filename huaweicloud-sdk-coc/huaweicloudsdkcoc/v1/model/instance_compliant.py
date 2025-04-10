@@ -61,7 +61,7 @@ class InstanceCompliant:
     }
 
     def __init__(self, compliant_summary=None, non_compliant_summary=None, execution_summary=None, id=None, enterprise_project_id=None, name=None, instance_id=None, node_id=None, ip=None, eip=None, region=None, group=None, report_scene=None, cce_info_id=None, status=None, baseline_id=None, baseline_name=None, rule_type=None, operating_system=None):
-        """InstanceCompliant
+        r"""InstanceCompliant
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class InstanceCompliant:
 
     @property
     def compliant_summary(self):
-        """Gets the compliant_summary of this InstanceCompliant.
+        r"""Gets the compliant_summary of this InstanceCompliant.
 
         :return: The compliant_summary of this InstanceCompliant.
         :rtype: :class:`huaweicloudsdkcoc.v1.CompliantSummary`
@@ -178,7 +178,7 @@ class InstanceCompliant:
 
     @compliant_summary.setter
     def compliant_summary(self, compliant_summary):
-        """Sets the compliant_summary of this InstanceCompliant.
+        r"""Sets the compliant_summary of this InstanceCompliant.
 
         :param compliant_summary: The compliant_summary of this InstanceCompliant.
         :type compliant_summary: :class:`huaweicloudsdkcoc.v1.CompliantSummary`
@@ -187,7 +187,7 @@ class InstanceCompliant:
 
     @property
     def non_compliant_summary(self):
-        """Gets the non_compliant_summary of this InstanceCompliant.
+        r"""Gets the non_compliant_summary of this InstanceCompliant.
 
         :return: The non_compliant_summary of this InstanceCompliant.
         :rtype: :class:`huaweicloudsdkcoc.v1.NonCompliantSummary`
@@ -196,7 +196,7 @@ class InstanceCompliant:
 
     @non_compliant_summary.setter
     def non_compliant_summary(self, non_compliant_summary):
-        """Sets the non_compliant_summary of this InstanceCompliant.
+        r"""Sets the non_compliant_summary of this InstanceCompliant.
 
         :param non_compliant_summary: The non_compliant_summary of this InstanceCompliant.
         :type non_compliant_summary: :class:`huaweicloudsdkcoc.v1.NonCompliantSummary`
@@ -205,7 +205,7 @@ class InstanceCompliant:
 
     @property
     def execution_summary(self):
-        """Gets the execution_summary of this InstanceCompliant.
+        r"""Gets the execution_summary of this InstanceCompliant.
 
         :return: The execution_summary of this InstanceCompliant.
         :rtype: :class:`huaweicloudsdkcoc.v1.ExecutionSummary`
@@ -214,7 +214,7 @@ class InstanceCompliant:
 
     @execution_summary.setter
     def execution_summary(self, execution_summary):
-        """Sets the execution_summary of this InstanceCompliant.
+        r"""Sets the execution_summary of this InstanceCompliant.
 
         :param execution_summary: The execution_summary of this InstanceCompliant.
         :type execution_summary: :class:`huaweicloudsdkcoc.v1.ExecutionSummary`
@@ -223,7 +223,7 @@ class InstanceCompliant:
 
     @property
     def id(self):
-        """Gets the id of this InstanceCompliant.
+        r"""Gets the id of this InstanceCompliant.
 
         id
 
@@ -234,7 +234,7 @@ class InstanceCompliant:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceCompliant.
+        r"""Sets the id of this InstanceCompliant.
 
         id
 
@@ -245,7 +245,7 @@ class InstanceCompliant:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceCompliant.
+        r"""Gets the enterprise_project_id of this InstanceCompliant.
 
         企业项目id
 
@@ -256,7 +256,7 @@ class InstanceCompliant:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceCompliant.
+        r"""Sets the enterprise_project_id of this InstanceCompliant.
 
         企业项目id
 
@@ -267,7 +267,7 @@ class InstanceCompliant:
 
     @property
     def name(self):
-        """Gets the name of this InstanceCompliant.
+        r"""Gets the name of this InstanceCompliant.
 
         节点名称
 
@@ -278,7 +278,7 @@ class InstanceCompliant:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceCompliant.
+        r"""Sets the name of this InstanceCompliant.
 
         节点名称
 
@@ -289,7 +289,7 @@ class InstanceCompliant:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceCompliant.
+        r"""Gets the instance_id of this InstanceCompliant.
 
         节点ID
 
@@ -300,7 +300,7 @@ class InstanceCompliant:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceCompliant.
+        r"""Sets the instance_id of this InstanceCompliant.
 
         节点ID
 
@@ -311,7 +311,7 @@ class InstanceCompliant:
 
     @property
     def node_id(self):
-        """Gets the node_id of this InstanceCompliant.
+        r"""Gets the node_id of this InstanceCompliant.
 
         cce集群节点ID
 
@@ -322,7 +322,7 @@ class InstanceCompliant:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this InstanceCompliant.
+        r"""Sets the node_id of this InstanceCompliant.
 
         cce集群节点ID
 
@@ -333,7 +333,7 @@ class InstanceCompliant:
 
     @property
     def ip(self):
-        """Gets the ip of this InstanceCompliant.
+        r"""Gets the ip of this InstanceCompliant.
 
         节点IP
 
@@ -344,7 +344,7 @@ class InstanceCompliant:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this InstanceCompliant.
+        r"""Sets the ip of this InstanceCompliant.
 
         节点IP
 
@@ -355,7 +355,7 @@ class InstanceCompliant:
 
     @property
     def eip(self):
-        """Gets the eip of this InstanceCompliant.
+        r"""Gets the eip of this InstanceCompliant.
 
         弹性公网ip
 
@@ -366,7 +366,7 @@ class InstanceCompliant:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this InstanceCompliant.
+        r"""Sets the eip of this InstanceCompliant.
 
         弹性公网ip
 
@@ -377,7 +377,7 @@ class InstanceCompliant:
 
     @property
     def region(self):
-        """Gets the region of this InstanceCompliant.
+        r"""Gets the region of this InstanceCompliant.
 
         区域
 
@@ -388,7 +388,7 @@ class InstanceCompliant:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this InstanceCompliant.
+        r"""Sets the region of this InstanceCompliant.
 
         区域
 
@@ -399,7 +399,7 @@ class InstanceCompliant:
 
     @property
     def group(self):
-        """Gets the group of this InstanceCompliant.
+        r"""Gets the group of this InstanceCompliant.
 
         分组
 
@@ -410,7 +410,7 @@ class InstanceCompliant:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this InstanceCompliant.
+        r"""Sets the group of this InstanceCompliant.
 
         分组
 
@@ -421,7 +421,7 @@ class InstanceCompliant:
 
     @property
     def report_scene(self):
-        """Gets the report_scene of this InstanceCompliant.
+        r"""Gets the report_scene of this InstanceCompliant.
 
         报告场景(CCE,ECS)
 
@@ -432,7 +432,7 @@ class InstanceCompliant:
 
     @report_scene.setter
     def report_scene(self, report_scene):
-        """Sets the report_scene of this InstanceCompliant.
+        r"""Sets the report_scene of this InstanceCompliant.
 
         报告场景(CCE,ECS)
 
@@ -443,7 +443,7 @@ class InstanceCompliant:
 
     @property
     def cce_info_id(self):
-        """Gets the cce_info_id of this InstanceCompliant.
+        r"""Gets the cce_info_id of this InstanceCompliant.
 
         cce 集群信息id
 
@@ -454,7 +454,7 @@ class InstanceCompliant:
 
     @cce_info_id.setter
     def cce_info_id(self, cce_info_id):
-        """Sets the cce_info_id of this InstanceCompliant.
+        r"""Sets the cce_info_id of this InstanceCompliant.
 
         cce 集群信息id
 
@@ -465,7 +465,7 @@ class InstanceCompliant:
 
     @property
     def status(self):
-        """Gets the status of this InstanceCompliant.
+        r"""Gets the status of this InstanceCompliant.
 
         合规性状态
 
@@ -476,7 +476,7 @@ class InstanceCompliant:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceCompliant.
+        r"""Sets the status of this InstanceCompliant.
 
         合规性状态
 
@@ -487,7 +487,7 @@ class InstanceCompliant:
 
     @property
     def baseline_id(self):
-        """Gets the baseline_id of this InstanceCompliant.
+        r"""Gets the baseline_id of this InstanceCompliant.
 
         基线id
 
@@ -498,7 +498,7 @@ class InstanceCompliant:
 
     @baseline_id.setter
     def baseline_id(self, baseline_id):
-        """Sets the baseline_id of this InstanceCompliant.
+        r"""Sets the baseline_id of this InstanceCompliant.
 
         基线id
 
@@ -509,7 +509,7 @@ class InstanceCompliant:
 
     @property
     def baseline_name(self):
-        """Gets the baseline_name of this InstanceCompliant.
+        r"""Gets the baseline_name of this InstanceCompliant.
 
         基线名称
 
@@ -520,7 +520,7 @@ class InstanceCompliant:
 
     @baseline_name.setter
     def baseline_name(self, baseline_name):
-        """Sets the baseline_name of this InstanceCompliant.
+        r"""Sets the baseline_name of this InstanceCompliant.
 
         基线名称
 
@@ -531,7 +531,7 @@ class InstanceCompliant:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this InstanceCompliant.
+        r"""Gets the rule_type of this InstanceCompliant.
 
         基线规则类型
 
@@ -542,7 +542,7 @@ class InstanceCompliant:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this InstanceCompliant.
+        r"""Sets the rule_type of this InstanceCompliant.
 
         基线规则类型
 
@@ -553,7 +553,7 @@ class InstanceCompliant:
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this InstanceCompliant.
+        r"""Gets the operating_system of this InstanceCompliant.
 
         操作系统
 
@@ -564,7 +564,7 @@ class InstanceCompliant:
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this InstanceCompliant.
+        r"""Sets the operating_system of this InstanceCompliant.
 
         操作系统
 

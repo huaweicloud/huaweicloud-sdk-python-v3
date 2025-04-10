@@ -29,7 +29,7 @@ class UpdateInstanceConfigurationsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateInstanceConfigurationsRequest
+        r"""UpdateInstanceConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateInstanceConfigurationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateInstanceConfigurationsRequest.
+        r"""Gets the x_language of this UpdateInstanceConfigurationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -67,7 +67,7 @@ class UpdateInstanceConfigurationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateInstanceConfigurationsRequest.
+        r"""Sets the x_language of this UpdateInstanceConfigurationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -78,7 +78,7 @@ class UpdateInstanceConfigurationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceConfigurationsRequest.
+        r"""Gets the instance_id of this UpdateInstanceConfigurationsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class UpdateInstanceConfigurationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceConfigurationsRequest.
+        r"""Sets the instance_id of this UpdateInstanceConfigurationsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class UpdateInstanceConfigurationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceConfigurationsRequest.
+        r"""Gets the body of this UpdateInstanceConfigurationsRequest.
 
         :return: The body of this UpdateInstanceConfigurationsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceConfigurationsRequestBody`
@@ -109,7 +109,7 @@ class UpdateInstanceConfigurationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceConfigurationsRequest.
+        r"""Sets the body of this UpdateInstanceConfigurationsRequest.
 
         :param body: The body of this UpdateInstanceConfigurationsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceConfigurationsRequestBody`

@@ -27,7 +27,7 @@ class ListAliasResponseBody:
     }
 
     def __init__(self, aliases=None, page_info=None):
-        """ListAliasResponseBody
+        r"""ListAliasResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListAliasResponseBody:
 
     @property
     def aliases(self):
-        """Gets the aliases of this ListAliasResponseBody.
+        r"""Gets the aliases of this ListAliasResponseBody.
 
         密钥关联的所有别名
 
@@ -59,7 +59,7 @@ class ListAliasResponseBody:
 
     @aliases.setter
     def aliases(self, aliases):
-        """Sets the aliases of this ListAliasResponseBody.
+        r"""Sets the aliases of this ListAliasResponseBody.
 
         密钥关联的所有别名
 
@@ -70,7 +70,7 @@ class ListAliasResponseBody:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAliasResponseBody.
+        r"""Gets the page_info of this ListAliasResponseBody.
 
         :return: The page_info of this ListAliasResponseBody.
         :rtype: :class:`huaweicloudsdkkms.v2.PageInfo`
@@ -79,7 +79,7 @@ class ListAliasResponseBody:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAliasResponseBody.
+        r"""Sets the page_info of this ListAliasResponseBody.
 
         :param page_info: The page_info of this ListAliasResponseBody.
         :type page_info: :class:`huaweicloudsdkkms.v2.PageInfo`

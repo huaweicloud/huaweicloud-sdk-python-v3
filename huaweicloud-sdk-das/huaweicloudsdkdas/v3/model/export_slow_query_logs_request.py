@@ -37,7 +37,7 @@ class ExportSlowQueryLogsRequest:
     }
 
     def __init__(self, instance_id=None, datastore_type=None, start_at=None, end_at=None, limit=None, marker=None, x_language=None):
-        """ExportSlowQueryLogsRequest
+        r"""ExportSlowQueryLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportSlowQueryLogsRequest.
+        r"""Gets the instance_id of this ExportSlowQueryLogsRequest.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class ExportSlowQueryLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportSlowQueryLogsRequest.
+        r"""Sets the instance_id of this ExportSlowQueryLogsRequest.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ExportSlowQueryLogsRequest.
+        r"""Gets the datastore_type of this ExportSlowQueryLogsRequest.
 
         数据库类型。支持MySQL、GaussDB(for MySQL)、PostgreSQL。
 
@@ -113,7 +113,7 @@ class ExportSlowQueryLogsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ExportSlowQueryLogsRequest.
+        r"""Sets the datastore_type of this ExportSlowQueryLogsRequest.
 
         数据库类型。支持MySQL、GaussDB(for MySQL)、PostgreSQL。
 
@@ -124,7 +124,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportSlowQueryLogsRequest.
+        r"""Gets the start_at of this ExportSlowQueryLogsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -135,7 +135,7 @@ class ExportSlowQueryLogsRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportSlowQueryLogsRequest.
+        r"""Sets the start_at of this ExportSlowQueryLogsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -146,7 +146,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportSlowQueryLogsRequest.
+        r"""Gets the end_at of this ExportSlowQueryLogsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -157,7 +157,7 @@ class ExportSlowQueryLogsRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportSlowQueryLogsRequest.
+        r"""Sets the end_at of this ExportSlowQueryLogsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -168,7 +168,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExportSlowQueryLogsRequest.
+        r"""Gets the limit of this ExportSlowQueryLogsRequest.
 
         每页记录数。最大为2000。
 
@@ -179,7 +179,7 @@ class ExportSlowQueryLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExportSlowQueryLogsRequest.
+        r"""Sets the limit of this ExportSlowQueryLogsRequest.
 
         每页记录数。最大为2000。
 
@@ -190,7 +190,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ExportSlowQueryLogsRequest.
+        r"""Gets the marker of this ExportSlowQueryLogsRequest.
 
         指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
 
@@ -201,7 +201,7 @@ class ExportSlowQueryLogsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ExportSlowQueryLogsRequest.
+        r"""Sets the marker of this ExportSlowQueryLogsRequest.
 
         指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
 
@@ -212,7 +212,7 @@ class ExportSlowQueryLogsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportSlowQueryLogsRequest.
+        r"""Gets the x_language of this ExportSlowQueryLogsRequest.
 
         请求语言类型。
 
@@ -223,7 +223,7 @@ class ExportSlowQueryLogsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportSlowQueryLogsRequest.
+        r"""Sets the x_language of this ExportSlowQueryLogsRequest.
 
         请求语言类型。
 

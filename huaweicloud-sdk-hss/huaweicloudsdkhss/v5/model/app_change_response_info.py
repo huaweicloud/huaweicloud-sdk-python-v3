@@ -41,7 +41,7 @@ class AppChangeResponseInfo:
     }
 
     def __init__(self, agent_id=None, variation_type=None, host_id=None, app_name=None, host_name=None, host_ip=None, version=None, update_time=None, recent_scan_time=None):
-        """AppChangeResponseInfo
+        r"""AppChangeResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -59,9 +59,9 @@ class AppChangeResponseInfo:
         :type host_ip: str
         :param version: 版本号
         :type version: str
-        :param update_time: 软件更新时间
+        :param update_time: 软件更新时间，单位毫秒
         :type update_time: int
-        :param recent_scan_time: 最近扫描时间
+        :param recent_scan_time: 最近扫描时间，单位毫秒
         :type recent_scan_time: int
         """
         
@@ -99,7 +99,7 @@ class AppChangeResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AppChangeResponseInfo.
+        r"""Gets the agent_id of this AppChangeResponseInfo.
 
         Agent ID
 
@@ -110,7 +110,7 @@ class AppChangeResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AppChangeResponseInfo.
+        r"""Sets the agent_id of this AppChangeResponseInfo.
 
         Agent ID
 
@@ -121,7 +121,7 @@ class AppChangeResponseInfo:
 
     @property
     def variation_type(self):
-        """Gets the variation_type of this AppChangeResponseInfo.
+        r"""Gets the variation_type of this AppChangeResponseInfo.
 
         the type of change   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -132,7 +132,7 @@ class AppChangeResponseInfo:
 
     @variation_type.setter
     def variation_type(self, variation_type):
-        """Sets the variation_type of this AppChangeResponseInfo.
+        r"""Sets the variation_type of this AppChangeResponseInfo.
 
         the type of change   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -143,7 +143,7 @@ class AppChangeResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this AppChangeResponseInfo.
+        r"""Gets the host_id of this AppChangeResponseInfo.
 
         host_id
 
@@ -154,7 +154,7 @@ class AppChangeResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this AppChangeResponseInfo.
+        r"""Sets the host_id of this AppChangeResponseInfo.
 
         host_id
 
@@ -165,7 +165,7 @@ class AppChangeResponseInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppChangeResponseInfo.
+        r"""Gets the app_name of this AppChangeResponseInfo.
 
         软件名称
 
@@ -176,7 +176,7 @@ class AppChangeResponseInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppChangeResponseInfo.
+        r"""Sets the app_name of this AppChangeResponseInfo.
 
         软件名称
 
@@ -187,7 +187,7 @@ class AppChangeResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this AppChangeResponseInfo.
+        r"""Gets the host_name of this AppChangeResponseInfo.
 
         服务器名称
 
@@ -198,7 +198,7 @@ class AppChangeResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this AppChangeResponseInfo.
+        r"""Sets the host_name of this AppChangeResponseInfo.
 
         服务器名称
 
@@ -209,7 +209,7 @@ class AppChangeResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this AppChangeResponseInfo.
+        r"""Gets the host_ip of this AppChangeResponseInfo.
 
         服务器ip
 
@@ -220,7 +220,7 @@ class AppChangeResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this AppChangeResponseInfo.
+        r"""Sets the host_ip of this AppChangeResponseInfo.
 
         服务器ip
 
@@ -231,7 +231,7 @@ class AppChangeResponseInfo:
 
     @property
     def version(self):
-        """Gets the version of this AppChangeResponseInfo.
+        r"""Gets the version of this AppChangeResponseInfo.
 
         版本号
 
@@ -242,7 +242,7 @@ class AppChangeResponseInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AppChangeResponseInfo.
+        r"""Sets the version of this AppChangeResponseInfo.
 
         版本号
 
@@ -253,9 +253,9 @@ class AppChangeResponseInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppChangeResponseInfo.
+        r"""Gets the update_time of this AppChangeResponseInfo.
 
-        软件更新时间
+        软件更新时间，单位毫秒
 
         :return: The update_time of this AppChangeResponseInfo.
         :rtype: int
@@ -264,9 +264,9 @@ class AppChangeResponseInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppChangeResponseInfo.
+        r"""Sets the update_time of this AppChangeResponseInfo.
 
-        软件更新时间
+        软件更新时间，单位毫秒
 
         :param update_time: The update_time of this AppChangeResponseInfo.
         :type update_time: int
@@ -275,9 +275,9 @@ class AppChangeResponseInfo:
 
     @property
     def recent_scan_time(self):
-        """Gets the recent_scan_time of this AppChangeResponseInfo.
+        r"""Gets the recent_scan_time of this AppChangeResponseInfo.
 
-        最近扫描时间
+        最近扫描时间，单位毫秒
 
         :return: The recent_scan_time of this AppChangeResponseInfo.
         :rtype: int
@@ -286,9 +286,9 @@ class AppChangeResponseInfo:
 
     @recent_scan_time.setter
     def recent_scan_time(self, recent_scan_time):
-        """Sets the recent_scan_time of this AppChangeResponseInfo.
+        r"""Sets the recent_scan_time of this AppChangeResponseInfo.
 
-        最近扫描时间
+        最近扫描时间，单位毫秒
 
         :param recent_scan_time: The recent_scan_time of this AppChangeResponseInfo.
         :type recent_scan_time: int

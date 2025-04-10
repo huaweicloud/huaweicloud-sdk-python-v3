@@ -34,7 +34,7 @@ class IecAsyncClient(Client):
         return client_builder
 
     def add_nics_async(self, request):
-        """添加网卡
+        r"""添加网卡
 
         添加网卡。
         
@@ -101,7 +101,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def associate_subnet_async(self, request):
-        """路由表关联子网
+        r"""路由表关联子网
 
         路由表关联子网
         
@@ -168,7 +168,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def batch_reboot_instance_async(self, request):
-        """批量重启边缘实例
+        r"""批量重启边缘实例
 
         批量重启边缘实例。
         
@@ -233,7 +233,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def batch_start_instance_async(self, request):
-        """批量启动边缘实例
+        r"""批量启动边缘实例
 
         批量操作启动边缘实例。
         
@@ -298,7 +298,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def batch_stop_instance_async(self, request):
-        """批量关机边缘实例
+        r"""批量关机边缘实例
 
         批量关闭边缘实例。
         
@@ -363,7 +363,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def change_os_async(self, request):
-        """切换操作系统
+        r"""切换操作系统
 
         切换边缘实例操作系统，支持边缘实例创建成功后，保持ip、数据盘不变的情况下重装操作系统。
         
@@ -432,7 +432,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_deployment_async(self, request):
-        """创建部署计划
+        r"""创建部署计划
 
         为方便您的统一管理，以及跨边缘站点管理资源，IEC基于业务场景角度，定义了边缘业务。
         边缘业务即为逻辑层面的一套资源管理集合。这里的资源主要是指计算实例，包含实例规格、镜像、硬盘、网络等方面。通过指定计算实例的数量、调度策略以及区域分布等形成一套管理集合。[了解更多](https://support.huaweicloud.com/usermanual-iec/iec_02_0301.html)
@@ -503,7 +503,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_image_async(self, request):
-        """从边缘实例创建边缘私有镜像
+        r"""从边缘实例创建边缘私有镜像
 
         使用指定边缘实例的系统盘创建边缘私有镜像。
         
@@ -568,7 +568,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_instance_async(self, request):
-        """创建边缘实例
+        r"""创建边缘实例
 
         创建边缘实例。单租户默认可创建50个边缘实例。
         
@@ -633,7 +633,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_keypair_async(self, request):
-        """创建和导入密钥
+        r"""创建和导入密钥
 
         创建SSH密钥，或把公钥导入系统，生成密钥对。
         
@@ -700,7 +700,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_port_async(self, request):
-        """创建端口
+        r"""创建端口
 
         创建端口。
         
@@ -765,7 +765,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_routes_async(self, request):
-        """创建路由
+        r"""创建路由
 
         创建路由
         
@@ -832,7 +832,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_routetable_async(self, request):
-        """创建路由表
+        r"""创建路由表
 
         创建路由表
         
@@ -897,7 +897,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_security_group_async(self, request):
-        """创建边缘安全组
+        r"""创建边缘安全组
 
         根据用户的请求内容，创建对应的安全组。
         
@@ -962,7 +962,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_security_group_rule_async(self, request):
-        """创建安全组规则
+        r"""创建安全组规则
 
         根据用户的请求内容，创建安全组规则。
         
@@ -1027,7 +1027,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_vpc_async(self, request):
-        """创建虚拟私有云
+        r"""创建虚拟私有云
 
         根据用户的请求内容，创建虚拟私有云。
         
@@ -1092,7 +1092,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_bandwidth_async(self, request):
-        """删除带宽
+        r"""删除带宽
 
         删除带宽。
         
@@ -1157,7 +1157,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_deployment_async(self, request):
-        """删除部署计划
+        r"""删除部署计划
 
         删除部署计划。
         
@@ -1222,7 +1222,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_edge_cloud_async(self, request):
-        """删除边缘业务
+        r"""删除边缘业务
 
         删除边缘业务。
         
@@ -1287,7 +1287,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_image_async(self, request):
-        """删除边缘私有镜像
+        r"""删除边缘私有镜像
 
         将指定ID的边缘私有镜像删除
         
@@ -1352,7 +1352,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_instances_async(self, request):
-        """批量删除边缘实例
+        r"""批量删除边缘实例
 
         批量删除边缘实例。
         
@@ -1417,7 +1417,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_keypair_async(self, request):
-        """删除密钥
+        r"""删除密钥
 
         删除密钥。
         
@@ -1482,7 +1482,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_nics_async(self, request):
-        """删除网卡
+        r"""删除网卡
 
         删除网卡。
         
@@ -1549,7 +1549,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_port_async(self, request):
-        """删除端口
+        r"""删除端口
 
         删除端口。
         
@@ -1614,7 +1614,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_routes_async(self, request):
-        """删除路由
+        r"""删除路由
 
         删除路由
         
@@ -1681,7 +1681,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_routetable_async(self, request):
-        """删除路由表
+        r"""删除路由表
 
         删除路由表
         
@@ -1746,7 +1746,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_security_group_async(self, request):
-        """删除安全组
+        r"""删除安全组
 
         根据安全组的ID，删除对应的安全组。
         
@@ -1811,7 +1811,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_security_group_rule_async(self, request):
-        """删除安全组规则
+        r"""删除安全组规则
 
         根据安全组的ID，删除对应的安全组。
         
@@ -1876,7 +1876,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_subnet_async(self, request):
-        """删除子网
+        r"""删除子网
 
         根据子网的ID，删除子网。
         
@@ -1941,7 +1941,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_vpc_async(self, request):
-        """删除虚拟私有云
+        r"""删除虚拟私有云
 
         根据虚拟机私有云的ID，删除对应的虚拟私有云。
         
@@ -2006,7 +2006,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def disassociate_subnet_async(self, request):
-        """路由表解关联子网
+        r"""路由表解关联子网
 
         路由表解关联子网
         
@@ -2073,7 +2073,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def execute_deployment_async(self, request):
-        """执行部署计划
+        r"""执行部署计划
 
         执行部署计划，创建一个边缘业务。单租户默认可创建10个边缘业务。
         
@@ -2138,7 +2138,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def expand_edgecloud_async(self, request):
-        """扩容边缘业务
+        r"""扩容边缘业务
 
         执行部署计划，对边缘业务进行扩容操作。
         
@@ -2203,7 +2203,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_bandwidth_types_async(self, request):
-        """查询共享带宽类型列表
+        r"""查询共享带宽类型列表
 
         查询共享带宽类型列表。
         
@@ -2274,7 +2274,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_bandwidths_async(self, request):
-        """查询带宽列表
+        r"""查询带宽列表
 
         查询带宽列表。
         
@@ -2343,7 +2343,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_cloud_images_async(self, request):
-        """查询中心镜像列表
+        r"""查询中心镜像列表
 
         查询租户在某个云Region的可见镜像列表。
         
@@ -2454,7 +2454,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_deployments_async(self, request):
-        """查询部署计划列表
+        r"""查询部署计划列表
 
         查询部署计划列表。
         
@@ -2527,7 +2527,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_edge_cloud_async(self, request):
-        """查询边缘业务列表
+        r"""查询边缘业务列表
 
         查询边缘业务列表。
         
@@ -2598,7 +2598,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        """查询边缘规格列表
+        r"""查询边缘规格列表
 
         查询边缘规格列表。
         
@@ -2679,7 +2679,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_images_async(self, request):
-        """查询镜像列表
+        r"""查询镜像列表
 
         根据不同条件查询镜像列表，例:
         
@@ -2783,7 +2783,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_instances_async(self, request):
-        """查询边缘实例列表
+        r"""查询边缘实例列表
 
         查询边缘实例列表。
         
@@ -2864,7 +2864,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_keypairs_async(self, request):
-        """查询密钥列表
+        r"""查询密钥列表
 
         查询密钥信息列表。
         
@@ -2933,7 +2933,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_ports_async(self, request):
-        """查询端口列表
+        r"""查询端口列表
 
         查询端口的列表信息
         
@@ -3021,7 +3021,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_quota_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询租户资源配额。
         
@@ -3084,7 +3084,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_related_routetables_async(self, request):
-        """查询子网关联的路由表
+        r"""查询子网关联的路由表
 
         查询子网关联的路由表。
         
@@ -3149,7 +3149,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_routes_async(self, request):
-        """查询路由列表
+        r"""查询路由列表
 
         查询路由列表
         
@@ -3214,7 +3214,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_routetables_async(self, request):
-        """查询路由表列表
+        r"""查询路由表列表
 
         查询路由列表
         
@@ -3287,7 +3287,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_security_group_rules_async(self, request):
-        """查询安全组规则列表
+        r"""查询安全组规则列表
 
         根据用户的查询条件，获取安全组规则的列表信息。
         
@@ -3356,7 +3356,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_security_groups_async(self, request):
-        """查询安全组列表
+        r"""查询安全组列表
 
         根据特定查询条件，获取安全组的列表信息。
         
@@ -3423,7 +3423,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_sites_async(self, request):
-        """查询边缘站点列表
+        r"""查询边缘站点列表
 
         查询边缘站点列表。
         
@@ -3505,7 +3505,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_subnets_async(self, request):
-        """查询子网列表
+        r"""查询子网列表
 
         根据查询条件获取子网的列表信息。
         
@@ -3576,7 +3576,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_volume_async(self, request):
-        """查询硬盘列表
+        r"""查询硬盘列表
 
         查询硬盘列表。
         
@@ -3647,7 +3647,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_vpcs_async(self, request):
-        """查询虚拟私有云列表
+        r"""查询虚拟私有云列表
 
         获取虚拟私有云的列表。
         
@@ -3718,7 +3718,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def rebuild_image_async(self, request):
-        """重试边缘镜像任务
+        r"""重试边缘镜像任务
 
         重试边缘镜像任务。
         
@@ -3785,7 +3785,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def register_image_async(self, request):
-        """注册边缘私有镜像
+        r"""注册边缘私有镜像
 
         将指定Region和ID的IMS镜像注册到边缘IEC-IMS; 
         注意指定的Region必须在当前IEC-IMS支持的Region列表中。
@@ -3851,7 +3851,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_bandwidth_async(self, request):
-        """查询带宽详情
+        r"""查询带宽详情
 
         查询带宽详情。
         
@@ -3916,7 +3916,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_edge_cloud_async(self, request):
-        """查询边缘业务详情
+        r"""查询边缘业务详情
 
         查询边缘业务详情。
         
@@ -3981,7 +3981,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_image_async(self, request):
-        """查询镜像详情
+        r"""查询镜像详情
 
         查询镜像详情。
         
@@ -4046,7 +4046,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_instance_async(self, request):
-        """查询边缘实例详情
+        r"""查询边缘实例详情
 
         查询边缘实例详情。
         
@@ -4111,7 +4111,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_keypair_async(self, request):
-        """查询密钥详情
+        r"""查询密钥详情
 
         查询密钥信息列表。
         
@@ -4176,7 +4176,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_port_async(self, request):
-        """查询端口详情
+        r"""查询端口详情
 
         根据端口的ID，获取端口的详细信息。
         
@@ -4241,7 +4241,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_routetable_async(self, request):
-        """查询路由表详情
+        r"""查询路由表详情
 
         查询路由表详情
         
@@ -4306,7 +4306,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_security_group_async(self, request):
-        """查询安全组详情
+        r"""查询安全组详情
 
         根据安全组的ID，获取特定安全组的详细信息。
         
@@ -4371,7 +4371,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_security_group_rule_async(self, request):
-        """查询安全组规则详情
+        r"""查询安全组规则详情
 
         根据安全组规则的ID，获取安全组规则的详细信息。
         
@@ -4436,7 +4436,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_subnet_async(self, request):
-        """查询子网详情
+        r"""查询子网详情
 
         根据子网的ID，获取子网的详细信息。
         
@@ -4501,7 +4501,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_volume_async(self, request):
-        """查询硬盘详情
+        r"""查询硬盘详情
 
         查询硬盘详情。
         
@@ -4566,7 +4566,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_volume_types_async(self, request):
-        """查询硬盘类型列表
+        r"""查询硬盘类型列表
 
         查询硬盘类型列表。
         
@@ -4629,7 +4629,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_vpc_async(self, request):
-        """查询虚拟私有云详情
+        r"""查询虚拟私有云详情
 
         根据虚拟私有云ID，获取虚拟私有云的详情。
         
@@ -4694,7 +4694,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_bandwidth_async(self, request):
-        """更新带宽
+        r"""更新带宽
 
         更新带宽。
         
@@ -4761,7 +4761,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_instance_async(self, request):
-        """修改边缘实例
+        r"""修改边缘实例
 
         修改边缘实例。
         
@@ -4828,7 +4828,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_port_async(self, request):
-        """更新端口
+        r"""更新端口
 
         更新端口。
         
@@ -4895,7 +4895,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_routes_async(self, request):
-        """更新路由
+        r"""更新路由
 
         更新路由信息
         
@@ -4962,7 +4962,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_routetable_async(self, request):
-        """更新路由表
+        r"""更新路由表
 
         更新路由表基本信息
         
@@ -5029,7 +5029,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_subnet_async(self, request):
-        """更新子网
+        r"""更新子网
 
         更新子网的基本信息。
         
@@ -5096,7 +5096,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_vpc_async(self, request):
-        """更新虚拟私有云
+        r"""更新虚拟私有云
 
         更新虚拟私有云的信息
         
@@ -5163,7 +5163,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_firewall_async(self, request):
-        """创建网络ACL
+        r"""创建网络ACL
 
         创建网络ACL。
         
@@ -5228,7 +5228,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_firewall_async(self, request):
-        """删除网络ACL
+        r"""删除网络ACL
 
         删除网络ACL。
         
@@ -5293,7 +5293,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_firewalls_async(self, request):
-        """查询网络ACL列表
+        r"""查询网络ACL列表
 
         查询网络ACL列表。
         
@@ -5364,7 +5364,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_firewall_async(self, request):
-        """查询网络ACL详情
+        r"""查询网络ACL详情
 
         查询网络ACL详情。
         
@@ -5429,7 +5429,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_firewall_async(self, request):
-        """更新网络ACL
+        r"""更新网络ACL
 
         更新网络ACL。
         
@@ -5496,7 +5496,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_firewall_rule_async(self, request):
-        """更新网络ACL规则
+        r"""更新网络ACL规则
 
         更新网络ACL规则。
         
@@ -5563,7 +5563,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_public_ip_async(self, request):
-        """创建弹性公网IP
+        r"""创建弹性公网IP
 
         根据用户的请求内容，创建弹性公网IP
         
@@ -5628,7 +5628,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def delete_public_ip_async(self, request):
-        """删除弹性公网IP
+        r"""删除弹性公网IP
 
         根据弹性公网IP的ID，删除对应的弹性公网IP。
         
@@ -5693,7 +5693,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def list_public_ips_async(self, request):
-        """查询弹性公网IP列表
+        r"""查询弹性公网IP列表
 
         获取弹性公网IP列表信息。
         
@@ -5764,7 +5764,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def show_public_ip_async(self, request):
-        """查询弹性公网IP
+        r"""查询弹性公网IP
 
         获取弹性公网IP的详情信息。
         
@@ -5829,7 +5829,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def update_public_ip_async(self, request):
-        """更新弹性公网IP
+        r"""更新弹性公网IP
 
         更新弹性公网IP的信息，主要用于解绑和绑定EIP和VIP之间的关系。
         
@@ -5896,7 +5896,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def attach_vip_bandwidth_async(self, request):
-        """端口绑定带宽
+        r"""端口绑定带宽
 
         IPv6虚拟IP或者IPv6私网IP绑定带宽，支持公网访问。
         
@@ -5963,7 +5963,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def detach_vip_bandwidth_async(self, request):
-        """端口解绑带宽
+        r"""端口解绑带宽
 
         IPv6虚拟IP或者IPv6私网IP解绑带宽。
         
@@ -6028,7 +6028,7 @@ class IecAsyncClient(Client):
         return http_info
 
     def create_subnet_async(self, request):
-        """创建子网
+        r"""创建子网
 
         根据用户的请求内容，创建子网。
         

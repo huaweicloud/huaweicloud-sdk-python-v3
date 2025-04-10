@@ -26,7 +26,7 @@ class UpdateConsistencyResultResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateConsistencyResultResponse
+        r"""UpdateConsistencyResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateConsistencyResultResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateConsistencyResultResponse.
+        r"""Gets the body of this UpdateConsistencyResultResponse.
 
         更新一致性校验结果成功。
 
@@ -55,7 +55,7 @@ class UpdateConsistencyResultResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConsistencyResultResponse.
+        r"""Sets the body of this UpdateConsistencyResultResponse.
 
         更新一致性校验结果成功。
 

@@ -51,7 +51,7 @@ class ReportCustomEventRequestBody:
     }
 
     def __init__(self, alarm_id=None, alarm_name=None, alarm_level=None, time=None, name_space=None, region_id=None, application_id=None, resource_name=None, resource_id=None, alarm_desc=None, url=None, alarm_status=None, alarm_source=None, additional=None):
-        """ReportCustomEventRequestBody
+        r"""ReportCustomEventRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ReportCustomEventRequestBody.
+        r"""Gets the alarm_id of this ReportCustomEventRequestBody.
 
         告警id
 
@@ -138,7 +138,7 @@ class ReportCustomEventRequestBody:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ReportCustomEventRequestBody.
+        r"""Sets the alarm_id of this ReportCustomEventRequestBody.
 
         告警id
 
@@ -149,7 +149,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this ReportCustomEventRequestBody.
+        r"""Gets the alarm_name of this ReportCustomEventRequestBody.
 
         告警名称
 
@@ -160,7 +160,7 @@ class ReportCustomEventRequestBody:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this ReportCustomEventRequestBody.
+        r"""Sets the alarm_name of this ReportCustomEventRequestBody.
 
         告警名称
 
@@ -171,7 +171,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this ReportCustomEventRequestBody.
+        r"""Gets the alarm_level of this ReportCustomEventRequestBody.
 
         告警级别。取值为Critical（紧急）, Major（重要）, Minor（次要）, Info（提示）
 
@@ -182,7 +182,7 @@ class ReportCustomEventRequestBody:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this ReportCustomEventRequestBody.
+        r"""Sets the alarm_level of this ReportCustomEventRequestBody.
 
         告警级别。取值为Critical（紧急）, Major（重要）, Minor（次要）, Info（提示）
 
@@ -193,7 +193,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def time(self):
-        """Gets the time of this ReportCustomEventRequestBody.
+        r"""Gets the time of this ReportCustomEventRequestBody.
 
         告警发生时间
 
@@ -204,7 +204,7 @@ class ReportCustomEventRequestBody:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ReportCustomEventRequestBody.
+        r"""Sets the time of this ReportCustomEventRequestBody.
 
         告警发生时间
 
@@ -215,7 +215,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def name_space(self):
-        """Gets the name_space of this ReportCustomEventRequestBody.
+        r"""Gets the name_space of this ReportCustomEventRequestBody.
 
         告警发生时间
 
@@ -226,7 +226,7 @@ class ReportCustomEventRequestBody:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this ReportCustomEventRequestBody.
+        r"""Sets the name_space of this ReportCustomEventRequestBody.
 
         告警发生时间
 
@@ -237,7 +237,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ReportCustomEventRequestBody.
+        r"""Gets the region_id of this ReportCustomEventRequestBody.
 
         告警发生区域
 
@@ -248,7 +248,7 @@ class ReportCustomEventRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ReportCustomEventRequestBody.
+        r"""Sets the region_id of this ReportCustomEventRequestBody.
 
         告警发生区域
 
@@ -259,7 +259,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ReportCustomEventRequestBody.
+        r"""Gets the application_id of this ReportCustomEventRequestBody.
 
         应用id
 
@@ -270,7 +270,7 @@ class ReportCustomEventRequestBody:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ReportCustomEventRequestBody.
+        r"""Sets the application_id of this ReportCustomEventRequestBody.
 
         应用id
 
@@ -281,7 +281,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ReportCustomEventRequestBody.
+        r"""Gets the resource_name of this ReportCustomEventRequestBody.
 
         资源名称
 
@@ -292,7 +292,7 @@ class ReportCustomEventRequestBody:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ReportCustomEventRequestBody.
+        r"""Sets the resource_name of this ReportCustomEventRequestBody.
 
         资源名称
 
@@ -303,7 +303,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ReportCustomEventRequestBody.
+        r"""Gets the resource_id of this ReportCustomEventRequestBody.
 
         资源ID
 
@@ -314,7 +314,7 @@ class ReportCustomEventRequestBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ReportCustomEventRequestBody.
+        r"""Sets the resource_id of this ReportCustomEventRequestBody.
 
         资源ID
 
@@ -325,7 +325,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def alarm_desc(self):
-        """Gets the alarm_desc of this ReportCustomEventRequestBody.
+        r"""Gets the alarm_desc of this ReportCustomEventRequestBody.
 
         告警描述
 
@@ -336,7 +336,7 @@ class ReportCustomEventRequestBody:
 
     @alarm_desc.setter
     def alarm_desc(self, alarm_desc):
-        """Sets the alarm_desc of this ReportCustomEventRequestBody.
+        r"""Sets the alarm_desc of this ReportCustomEventRequestBody.
 
         告警描述
 
@@ -347,7 +347,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this ReportCustomEventRequestBody.
+        r"""Gets the url of this ReportCustomEventRequestBody.
 
         原始告警URL
 
@@ -358,7 +358,7 @@ class ReportCustomEventRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ReportCustomEventRequestBody.
+        r"""Sets the url of this ReportCustomEventRequestBody.
 
         原始告警URL
 
@@ -369,7 +369,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def alarm_status(self):
-        """Gets the alarm_status of this ReportCustomEventRequestBody.
+        r"""Gets the alarm_status of this ReportCustomEventRequestBody.
 
         告警状态。一般取值为alarm（告警中）和ok（已恢复）
 
@@ -380,7 +380,7 @@ class ReportCustomEventRequestBody:
 
     @alarm_status.setter
     def alarm_status(self, alarm_status):
-        """Sets the alarm_status of this ReportCustomEventRequestBody.
+        r"""Sets the alarm_status of this ReportCustomEventRequestBody.
 
         告警状态。一般取值为alarm（告警中）和ok（已恢复）
 
@@ -391,7 +391,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def alarm_source(self):
-        """Gets the alarm_source of this ReportCustomEventRequestBody.
+        r"""Gets the alarm_source of this ReportCustomEventRequestBody.
 
         告警源
 
@@ -402,7 +402,7 @@ class ReportCustomEventRequestBody:
 
     @alarm_source.setter
     def alarm_source(self, alarm_source):
-        """Sets the alarm_source of this ReportCustomEventRequestBody.
+        r"""Sets the alarm_source of this ReportCustomEventRequestBody.
 
         告警源
 
@@ -413,7 +413,7 @@ class ReportCustomEventRequestBody:
 
     @property
     def additional(self):
-        """Gets the additional of this ReportCustomEventRequestBody.
+        r"""Gets the additional of this ReportCustomEventRequestBody.
 
         告警附加信息
 
@@ -424,7 +424,7 @@ class ReportCustomEventRequestBody:
 
     @additional.setter
     def additional(self, additional):
-        """Sets the additional of this ReportCustomEventRequestBody.
+        r"""Sets the additional of this ReportCustomEventRequestBody.
 
         告警附加信息
 

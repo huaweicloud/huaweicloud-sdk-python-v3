@@ -32,7 +32,7 @@ class ListSparkJobsResponse(SdkResponse):
     }
 
     def __init__(self, _from=None, total=None, sessions=None, create_time=None):
-        """ListSparkJobsResponse
+        r"""ListSparkJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @property
     def _from(self):
-        """Gets the _from of this ListSparkJobsResponse.
+        r"""Gets the _from of this ListSparkJobsResponse.
 
         起始批处理作业的索引号。
 
@@ -76,7 +76,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListSparkJobsResponse.
+        r"""Sets the _from of this ListSparkJobsResponse.
 
         起始批处理作业的索引号。
 
@@ -87,7 +87,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSparkJobsResponse.
+        r"""Gets the total of this ListSparkJobsResponse.
 
         返回批处理作业的总数。
 
@@ -98,7 +98,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSparkJobsResponse.
+        r"""Sets the total of this ListSparkJobsResponse.
 
         返回批处理作业的总数。
 
@@ -109,7 +109,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @property
     def sessions(self):
-        """Gets the sessions of this ListSparkJobsResponse.
+        r"""Gets the sessions of this ListSparkJobsResponse.
 
         批处理作业信息。
 
@@ -120,7 +120,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @sessions.setter
     def sessions(self, sessions):
-        """Sets the sessions of this ListSparkJobsResponse.
+        r"""Sets the sessions of this ListSparkJobsResponse.
 
         批处理作业信息。
 
@@ -131,7 +131,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListSparkJobsResponse.
+        r"""Gets the create_time of this ListSparkJobsResponse.
 
         批处理作业的创建时间。
 
@@ -142,7 +142,7 @@ class ListSparkJobsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListSparkJobsResponse.
+        r"""Sets the create_time of this ListSparkJobsResponse.
 
         批处理作业的创建时间。
 

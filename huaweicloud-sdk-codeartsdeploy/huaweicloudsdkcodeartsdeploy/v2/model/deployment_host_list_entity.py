@@ -25,7 +25,7 @@ class DeploymentHostListEntity:
     }
 
     def __init__(self, host_id_list=None):
-        """DeploymentHostListEntity
+        r"""DeploymentHostListEntity
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeploymentHostListEntity:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this DeploymentHostListEntity.
+        r"""Gets the host_id_list of this DeploymentHostListEntity.
 
         主机id列表
 
@@ -54,7 +54,7 @@ class DeploymentHostListEntity:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this DeploymentHostListEntity.
+        r"""Sets the host_id_list of this DeploymentHostListEntity.
 
         主机id列表
 

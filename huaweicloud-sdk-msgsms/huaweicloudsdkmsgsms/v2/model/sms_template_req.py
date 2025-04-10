@@ -47,7 +47,7 @@ class SmsTemplateReq:
     }
 
     def __init__(self, app_id=None, brackets=None, region=None, send_country=None, sign_id=None, template_content=None, template_desc=None, template_name=None, template_type=None, universal_template=None, variable_attributes=None, flow_status=None):
-        """SmsTemplateReq
+        r"""SmsTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -115,7 +115,7 @@ class SmsTemplateReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SmsTemplateReq.
+        r"""Gets the app_id of this SmsTemplateReq.
 
         应用主键ID
 
@@ -126,7 +126,7 @@ class SmsTemplateReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SmsTemplateReq.
+        r"""Sets the app_id of this SmsTemplateReq.
 
         应用主键ID
 
@@ -137,7 +137,7 @@ class SmsTemplateReq:
 
     @property
     def brackets(self):
-        """Gets the brackets of this SmsTemplateReq.
+        r"""Gets the brackets of this SmsTemplateReq.
 
         中括号类型。支持枚举值： 1. CN: 中文类型 2. GB: 英文类型
 
@@ -148,7 +148,7 @@ class SmsTemplateReq:
 
     @brackets.setter
     def brackets(self, brackets):
-        """Sets the brackets of this SmsTemplateReq.
+        r"""Sets the brackets of this SmsTemplateReq.
 
         中括号类型。支持枚举值： 1. CN: 中文类型 2. GB: 英文类型
 
@@ -159,7 +159,7 @@ class SmsTemplateReq:
 
     @property
     def region(self):
-        """Gets the region of this SmsTemplateReq.
+        r"""Gets the region of this SmsTemplateReq.
 
         地域 1. cn：国内 2. intl：
 
@@ -170,7 +170,7 @@ class SmsTemplateReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SmsTemplateReq.
+        r"""Sets the region of this SmsTemplateReq.
 
         地域 1. cn：国内 2. intl：
 
@@ -181,7 +181,7 @@ class SmsTemplateReq:
 
     @property
     def send_country(self):
-        """Gets the send_country of this SmsTemplateReq.
+        r"""Gets the send_country of this SmsTemplateReq.
 
         发送国家id列表，只有地域为国际时，该字段有效
 
@@ -192,7 +192,7 @@ class SmsTemplateReq:
 
     @send_country.setter
     def send_country(self, send_country):
-        """Sets the send_country of this SmsTemplateReq.
+        r"""Sets the send_country of this SmsTemplateReq.
 
         发送国家id列表，只有地域为国际时，该字段有效
 
@@ -203,7 +203,7 @@ class SmsTemplateReq:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this SmsTemplateReq.
+        r"""Gets the sign_id of this SmsTemplateReq.
 
         签名主键ID，只有地域为国内时，该字段有效
 
@@ -214,7 +214,7 @@ class SmsTemplateReq:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this SmsTemplateReq.
+        r"""Sets the sign_id of this SmsTemplateReq.
 
         签名主键ID，只有地域为国内时，该字段有效
 
@@ -225,7 +225,7 @@ class SmsTemplateReq:
 
     @property
     def template_content(self):
-        """Gets the template_content of this SmsTemplateReq.
+        r"""Gets the template_content of this SmsTemplateReq.
 
         模板内容
 
@@ -236,7 +236,7 @@ class SmsTemplateReq:
 
     @template_content.setter
     def template_content(self, template_content):
-        """Sets the template_content of this SmsTemplateReq.
+        r"""Sets the template_content of this SmsTemplateReq.
 
         模板内容
 
@@ -247,7 +247,7 @@ class SmsTemplateReq:
 
     @property
     def template_desc(self):
-        """Gets the template_desc of this SmsTemplateReq.
+        r"""Gets the template_desc of this SmsTemplateReq.
 
         模板描述
 
@@ -258,7 +258,7 @@ class SmsTemplateReq:
 
     @template_desc.setter
     def template_desc(self, template_desc):
-        """Sets the template_desc of this SmsTemplateReq.
+        r"""Sets the template_desc of this SmsTemplateReq.
 
         模板描述
 
@@ -269,7 +269,7 @@ class SmsTemplateReq:
 
     @property
     def template_name(self):
-        """Gets the template_name of this SmsTemplateReq.
+        r"""Gets the template_name of this SmsTemplateReq.
 
         模板名称
 
@@ -280,7 +280,7 @@ class SmsTemplateReq:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this SmsTemplateReq.
+        r"""Sets the template_name of this SmsTemplateReq.
 
         模板名称
 
@@ -291,7 +291,7 @@ class SmsTemplateReq:
 
     @property
     def template_type(self):
-        """Gets the template_type of this SmsTemplateReq.
+        r"""Gets the template_type of this SmsTemplateReq.
 
         模板类型。只有地域为国内时，该字段有效。支持枚举值： 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -302,7 +302,7 @@ class SmsTemplateReq:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this SmsTemplateReq.
+        r"""Sets the template_type of this SmsTemplateReq.
 
         模板类型。只有地域为国内时，该字段有效。支持枚举值： 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -313,7 +313,7 @@ class SmsTemplateReq:
 
     @property
     def universal_template(self):
-        """Gets the universal_template of this SmsTemplateReq.
+        r"""Gets the universal_template of this SmsTemplateReq.
 
         是否为通用模板 1. 0: 非通用模板 2. 1: 通用模板
 
@@ -324,7 +324,7 @@ class SmsTemplateReq:
 
     @universal_template.setter
     def universal_template(self, universal_template):
-        """Sets the universal_template of this SmsTemplateReq.
+        r"""Sets the universal_template of this SmsTemplateReq.
 
         是否为通用模板 1. 0: 非通用模板 2. 1: 通用模板
 
@@ -335,7 +335,7 @@ class SmsTemplateReq:
 
     @property
     def variable_attributes(self):
-        """Gets the variable_attributes of this SmsTemplateReq.
+        r"""Gets the variable_attributes of this SmsTemplateReq.
 
         模板参数
 
@@ -346,7 +346,7 @@ class SmsTemplateReq:
 
     @variable_attributes.setter
     def variable_attributes(self, variable_attributes):
-        """Sets the variable_attributes of this SmsTemplateReq.
+        r"""Sets the variable_attributes of this SmsTemplateReq.
 
         模板参数
 
@@ -357,7 +357,7 @@ class SmsTemplateReq:
 
     @property
     def flow_status(self):
-        """Gets the flow_status of this SmsTemplateReq.
+        r"""Gets the flow_status of this SmsTemplateReq.
 
         流程状态 1. Pending: 待提交 2. Reviewing: 待审核 3. Disable：停用
 
@@ -368,7 +368,7 @@ class SmsTemplateReq:
 
     @flow_status.setter
     def flow_status(self, flow_status):
-        """Sets the flow_status of this SmsTemplateReq.
+        r"""Sets the flow_status of this SmsTemplateReq.
 
         流程状态 1. Pending: 待提交 2. Reviewing: 待审核 3. Disable：停用
 

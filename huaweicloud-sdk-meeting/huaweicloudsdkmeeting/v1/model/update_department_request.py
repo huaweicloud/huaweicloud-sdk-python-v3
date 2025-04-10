@@ -31,7 +31,7 @@ class UpdateDepartmentRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, dept_code=None, body=None):
-        """UpdateDepartmentRequest
+        r"""UpdateDepartmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateDepartmentRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateDepartmentRequest.
+        r"""Gets the x_request_id of this UpdateDepartmentRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class UpdateDepartmentRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateDepartmentRequest.
+        r"""Sets the x_request_id of this UpdateDepartmentRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class UpdateDepartmentRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this UpdateDepartmentRequest.
+        r"""Gets the accept_language of this UpdateDepartmentRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class UpdateDepartmentRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this UpdateDepartmentRequest.
+        r"""Sets the accept_language of this UpdateDepartmentRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class UpdateDepartmentRequest:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this UpdateDepartmentRequest.
+        r"""Gets the dept_code of this UpdateDepartmentRequest.
 
         部门编码。 长度： 0-32位。
 
@@ -118,7 +118,7 @@ class UpdateDepartmentRequest:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this UpdateDepartmentRequest.
+        r"""Sets the dept_code of this UpdateDepartmentRequest.
 
         部门编码。 长度： 0-32位。
 
@@ -129,7 +129,7 @@ class UpdateDepartmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDepartmentRequest.
+        r"""Gets the body of this UpdateDepartmentRequest.
 
         :return: The body of this UpdateDepartmentRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModDeptDTO`
@@ -138,7 +138,7 @@ class UpdateDepartmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDepartmentRequest.
+        r"""Sets the body of this UpdateDepartmentRequest.
 
         :param body: The body of this UpdateDepartmentRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ModDeptDTO`

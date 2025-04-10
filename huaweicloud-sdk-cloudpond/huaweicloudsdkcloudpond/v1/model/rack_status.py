@@ -29,7 +29,7 @@ class RackStatus:
     }
 
     def __init__(self):
-        """RackStatus
+        r"""RackStatus
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class ListOperation:
     }
 
     def __init__(self, service_type=None, resource_type=None, operation_list=None):
-        """ListOperation
+        r"""ListOperation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListOperation:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListOperation.
+        r"""Gets the service_type of this ListOperation.
 
         事件对应的云服务类型。
 
@@ -68,7 +68,7 @@ class ListOperation:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListOperation.
+        r"""Sets the service_type of this ListOperation.
 
         事件对应的云服务类型。
 
@@ -79,7 +79,7 @@ class ListOperation:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListOperation.
+        r"""Gets the resource_type of this ListOperation.
 
         事件对应的资源类型。
 
@@ -90,7 +90,7 @@ class ListOperation:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListOperation.
+        r"""Sets the resource_type of this ListOperation.
 
         事件对应的资源类型。
 
@@ -101,7 +101,7 @@ class ListOperation:
 
     @property
     def operation_list(self):
-        """Gets the operation_list of this ListOperation.
+        r"""Gets the operation_list of this ListOperation.
 
         操作事件名称数组。
 
@@ -112,7 +112,7 @@ class ListOperation:
 
     @operation_list.setter
     def operation_list(self, operation_list):
-        """Sets the operation_list of this ListOperation.
+        r"""Sets the operation_list of this ListOperation.
 
         操作事件名称数组。
 

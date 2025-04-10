@@ -45,7 +45,7 @@ class CreateTrainingJobReq:
     }
 
     def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None, dhtms_job_id=None, batch_name=None, output_language=None, custom_text=None):
-        """CreateTrainingJobReq
+        r"""CreateTrainingJobReq
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CreateTrainingJobReq:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateTrainingJobReq.
+        r"""Gets the tag of this CreateTrainingJobReq.
 
         :return: The tag of this CreateTrainingJobReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.JobTag`
@@ -121,7 +121,7 @@ class CreateTrainingJobReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateTrainingJobReq.
+        r"""Sets the tag of this CreateTrainingJobReq.
 
         :param tag: The tag of this CreateTrainingJobReq.
         :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
@@ -130,7 +130,7 @@ class CreateTrainingJobReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateTrainingJobReq.
+        r"""Gets the description of this CreateTrainingJobReq.
 
         一段描述信息,会呈现在资产库中。
 
@@ -141,7 +141,7 @@ class CreateTrainingJobReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTrainingJobReq.
+        r"""Sets the description of this CreateTrainingJobReq.
 
         一段描述信息,会呈现在资产库中。
 
@@ -152,7 +152,7 @@ class CreateTrainingJobReq:
 
     @property
     def sex(self):
-        """Gets the sex of this CreateTrainingJobReq.
+        r"""Gets the sex of this CreateTrainingJobReq.
 
         语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
 
@@ -163,7 +163,7 @@ class CreateTrainingJobReq:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this CreateTrainingJobReq.
+        r"""Sets the sex of this CreateTrainingJobReq.
 
         语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
 
@@ -174,7 +174,7 @@ class CreateTrainingJobReq:
 
     @property
     def voice_name(self):
-        """Gets the voice_name of this CreateTrainingJobReq.
+        r"""Gets the voice_name of this CreateTrainingJobReq.
 
         音色名称。该名称会作为资产库中音色模型资产名称。
 
@@ -185,7 +185,7 @@ class CreateTrainingJobReq:
 
     @voice_name.setter
     def voice_name(self, voice_name):
-        """Sets the voice_name of this CreateTrainingJobReq.
+        r"""Sets the voice_name of this CreateTrainingJobReq.
 
         音色名称。该名称会作为资产库中音色模型资产名称。
 
@@ -196,7 +196,7 @@ class CreateTrainingJobReq:
 
     @property
     def language(self):
-        """Gets the language of this CreateTrainingJobReq.
+        r"""Gets the language of this CreateTrainingJobReq.
 
         训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
 
@@ -207,7 +207,7 @@ class CreateTrainingJobReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateTrainingJobReq.
+        r"""Sets the language of this CreateTrainingJobReq.
 
         训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
 
@@ -218,7 +218,7 @@ class CreateTrainingJobReq:
 
     @property
     def create_type(self):
-        """Gets the create_type of this CreateTrainingJobReq.
+        r"""Gets the create_type of this CreateTrainingJobReq.
 
         :return: The create_type of this CreateTrainingJobReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateType`
@@ -227,7 +227,7 @@ class CreateTrainingJobReq:
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this CreateTrainingJobReq.
+        r"""Sets the create_type of this CreateTrainingJobReq.
 
         :param create_type: The create_type of this CreateTrainingJobReq.
         :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
@@ -236,7 +236,7 @@ class CreateTrainingJobReq:
 
     @property
     def phone(self):
-        """Gets the phone of this CreateTrainingJobReq.
+        r"""Gets the phone of this CreateTrainingJobReq.
 
         手机号
 
@@ -247,7 +247,7 @@ class CreateTrainingJobReq:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CreateTrainingJobReq.
+        r"""Sets the phone of this CreateTrainingJobReq.
 
         手机号
 
@@ -258,7 +258,7 @@ class CreateTrainingJobReq:
 
     @property
     def dhtms_job_id(self):
-        """Gets the dhtms_job_id of this CreateTrainingJobReq.
+        r"""Gets the dhtms_job_id of this CreateTrainingJobReq.
 
         形象制作任务id
 
@@ -269,7 +269,7 @@ class CreateTrainingJobReq:
 
     @dhtms_job_id.setter
     def dhtms_job_id(self, dhtms_job_id):
-        """Sets the dhtms_job_id of this CreateTrainingJobReq.
+        r"""Sets the dhtms_job_id of this CreateTrainingJobReq.
 
         形象制作任务id
 
@@ -280,7 +280,7 @@ class CreateTrainingJobReq:
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this CreateTrainingJobReq.
+        r"""Gets the batch_name of this CreateTrainingJobReq.
 
         批次名称
 
@@ -291,7 +291,7 @@ class CreateTrainingJobReq:
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this CreateTrainingJobReq.
+        r"""Sets the batch_name of this CreateTrainingJobReq.
 
         批次名称
 
@@ -302,7 +302,7 @@ class CreateTrainingJobReq:
 
     @property
     def output_language(self):
-        """Gets the output_language of this CreateTrainingJobReq.
+        r"""Gets the output_language of this CreateTrainingJobReq.
 
         模型输出语言类型
 
@@ -313,7 +313,7 @@ class CreateTrainingJobReq:
 
     @output_language.setter
     def output_language(self, output_language):
-        """Sets the output_language of this CreateTrainingJobReq.
+        r"""Sets the output_language of this CreateTrainingJobReq.
 
         模型输出语言类型
 
@@ -324,7 +324,7 @@ class CreateTrainingJobReq:
 
     @property
     def custom_text(self):
-        """Gets the custom_text of this CreateTrainingJobReq.
+        r"""Gets the custom_text of this CreateTrainingJobReq.
 
         自定义试听文本
 
@@ -335,7 +335,7 @@ class CreateTrainingJobReq:
 
     @custom_text.setter
     def custom_text(self, custom_text):
-        """Sets the custom_text of this CreateTrainingJobReq.
+        r"""Sets the custom_text of this CreateTrainingJobReq.
 
         自定义试听文本
 

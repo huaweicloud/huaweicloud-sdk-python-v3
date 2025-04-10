@@ -24,7 +24,7 @@ class DeleteEcnWithVpcResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEcnWithVpcResponse
+        r"""DeleteEcnWithVpcResponse
 
         The model defined in huaweicloud sdk
 

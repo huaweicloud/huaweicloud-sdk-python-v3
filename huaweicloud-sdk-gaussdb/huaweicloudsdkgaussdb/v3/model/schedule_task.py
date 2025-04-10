@@ -47,7 +47,7 @@ class ScheduleTask:
     }
 
     def __init__(self, job_id=None, instance_id=None, instance_name=None, instance_status=None, project_id=None, job_name=None, create_time=None, start_time=None, end_time=None, job_status=None, datastore_type=None, target_config=None):
-        """ScheduleTask
+        r"""ScheduleTask
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ScheduleTask:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ScheduleTask.
+        r"""Gets the job_id of this ScheduleTask.
 
         任务ID。
 
@@ -131,7 +131,7 @@ class ScheduleTask:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ScheduleTask.
+        r"""Sets the job_id of this ScheduleTask.
 
         任务ID。
 
@@ -142,7 +142,7 @@ class ScheduleTask:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScheduleTask.
+        r"""Gets the instance_id of this ScheduleTask.
 
         实例ID。
 
@@ -153,7 +153,7 @@ class ScheduleTask:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScheduleTask.
+        r"""Sets the instance_id of this ScheduleTask.
 
         实例ID。
 
@@ -164,7 +164,7 @@ class ScheduleTask:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ScheduleTask.
+        r"""Gets the instance_name of this ScheduleTask.
 
         实例名称。
 
@@ -175,7 +175,7 @@ class ScheduleTask:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ScheduleTask.
+        r"""Sets the instance_name of this ScheduleTask.
 
         实例名称。
 
@@ -186,7 +186,7 @@ class ScheduleTask:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this ScheduleTask.
+        r"""Gets the instance_status of this ScheduleTask.
 
         实例状态。 取值： - 值为“createfail”，表示实例创建失败。 - 值为“creating”，表示实例创建中。 - 值为“normal”，表示实例正常。 - 值为“abnormal”，表示实例异常。 - 值为“deleted”，表示实例已删除。
 
@@ -197,7 +197,7 @@ class ScheduleTask:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this ScheduleTask.
+        r"""Sets the instance_status of this ScheduleTask.
 
         实例状态。 取值： - 值为“createfail”，表示实例创建失败。 - 值为“creating”，表示实例创建中。 - 值为“normal”，表示实例正常。 - 值为“abnormal”，表示实例异常。 - 值为“deleted”，表示实例已删除。
 
@@ -208,7 +208,7 @@ class ScheduleTask:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ScheduleTask.
+        r"""Gets the project_id of this ScheduleTask.
 
         租户在某一region下的project ID。
 
@@ -219,7 +219,7 @@ class ScheduleTask:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ScheduleTask.
+        r"""Sets the project_id of this ScheduleTask.
 
         租户在某一region下的project ID。
 
@@ -230,7 +230,7 @@ class ScheduleTask:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ScheduleTask.
+        r"""Gets the job_name of this ScheduleTask.
 
         任务名称。取值有：    - \"CreateGaussDBforMySQLInstance\"表示创建实例。    - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。    - \"AddGaussDBforMySQLNodes\"表示添加节点。    - \"DeleteGaussDBforMySQLNode\"表示删除节点。    - \"RebootGaussDBforMySQLInstance\"表示重启实例。    - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。    - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。    - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。    - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。    - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。    - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。    - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。    - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。    - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。    - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。    - \"ReduceGaussDBforMySQLProxy\"表示实例的数据库代理节点缩容。    - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。    - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。    - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。    - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。    - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。    - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。    - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。    - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。    - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
 
@@ -241,7 +241,7 @@ class ScheduleTask:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ScheduleTask.
+        r"""Sets the job_name of this ScheduleTask.
 
         任务名称。取值有：    - \"CreateGaussDBforMySQLInstance\"表示创建实例。    - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。    - \"AddGaussDBforMySQLNodes\"表示添加节点。    - \"DeleteGaussDBforMySQLNode\"表示删除节点。    - \"RebootGaussDBforMySQLInstance\"表示重启实例。    - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。    - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。    - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。    - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。    - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。    - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。    - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。    - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。    - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。    - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。    - \"ReduceGaussDBforMySQLProxy\"表示实例的数据库代理节点缩容。    - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。    - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。    - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。    - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。    - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。    - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。    - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。    - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。    - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
 
@@ -252,7 +252,7 @@ class ScheduleTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScheduleTask.
+        r"""Gets the create_time of this ScheduleTask.
 
         任务创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
 
@@ -263,7 +263,7 @@ class ScheduleTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScheduleTask.
+        r"""Sets the create_time of this ScheduleTask.
 
         任务创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
 
@@ -274,7 +274,7 @@ class ScheduleTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduleTask.
+        r"""Gets the start_time of this ScheduleTask.
 
         任务开始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
 
@@ -285,7 +285,7 @@ class ScheduleTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduleTask.
+        r"""Sets the start_time of this ScheduleTask.
 
         任务开始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
 
@@ -296,7 +296,7 @@ class ScheduleTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduleTask.
+        r"""Gets the end_time of this ScheduleTask.
 
         任务结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
 
@@ -307,7 +307,7 @@ class ScheduleTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduleTask.
+        r"""Sets the end_time of this ScheduleTask.
 
         任务结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
 
@@ -318,7 +318,7 @@ class ScheduleTask:
 
     @property
     def job_status(self):
-        """Gets the job_status of this ScheduleTask.
+        r"""Gets the job_status of this ScheduleTask.
 
         任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -329,7 +329,7 @@ class ScheduleTask:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ScheduleTask.
+        r"""Sets the job_status of this ScheduleTask.
 
         任务执行状态。 取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -340,7 +340,7 @@ class ScheduleTask:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ScheduleTask.
+        r"""Gets the datastore_type of this ScheduleTask.
 
         数据库类型。
 
@@ -351,7 +351,7 @@ class ScheduleTask:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ScheduleTask.
+        r"""Sets the datastore_type of this ScheduleTask.
 
         数据库类型。
 
@@ -362,7 +362,7 @@ class ScheduleTask:
 
     @property
     def target_config(self):
-        """Gets the target_config of this ScheduleTask.
+        r"""Gets the target_config of this ScheduleTask.
 
         实例配置相关信息，比如规格等。
 
@@ -373,7 +373,7 @@ class ScheduleTask:
 
     @target_config.setter
     def target_config(self, target_config):
-        """Sets the target_config of this ScheduleTask.
+        r"""Sets the target_config of this ScheduleTask.
 
         实例配置相关信息，比如规格等。
 

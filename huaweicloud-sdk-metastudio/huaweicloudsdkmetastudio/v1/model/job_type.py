@@ -31,7 +31,7 @@ class JobType:
     }
 
     def __init__(self):
-        """JobType
+        r"""JobType
 
         The model defined in huaweicloud sdk
 

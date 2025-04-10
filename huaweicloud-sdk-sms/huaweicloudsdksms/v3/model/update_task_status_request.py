@@ -27,7 +27,7 @@ class UpdateTaskStatusRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateTaskStatusRequest
+        r"""UpdateTaskStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTaskStatusRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskStatusRequest.
+        r"""Gets the task_id of this UpdateTaskStatusRequest.
 
         迁移任务ID
 
@@ -60,7 +60,7 @@ class UpdateTaskStatusRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskStatusRequest.
+        r"""Sets the task_id of this UpdateTaskStatusRequest.
 
         迁移任务ID
 
@@ -71,7 +71,7 @@ class UpdateTaskStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskStatusRequest.
+        r"""Gets the body of this UpdateTaskStatusRequest.
 
         :return: The body of this UpdateTaskStatusRequest.
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskStatusReq`
@@ -80,7 +80,7 @@ class UpdateTaskStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskStatusRequest.
+        r"""Sets the body of this UpdateTaskStatusRequest.
 
         :param body: The body of this UpdateTaskStatusRequest.
         :type body: :class:`huaweicloudsdksms.v3.UpdateTaskStatusReq`

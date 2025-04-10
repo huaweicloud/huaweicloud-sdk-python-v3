@@ -30,7 +30,7 @@ class ListPartitionsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, partitions=None):
-        """ListPartitionsResponse
+        r"""ListPartitionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListPartitionsResponse.
+        r"""Gets the is_success of this ListPartitionsResponse.
 
         请求结果，true为成功，false为失败
 
@@ -69,7 +69,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListPartitionsResponse.
+        r"""Sets the is_success of this ListPartitionsResponse.
 
         请求结果，true为成功，false为失败
 
@@ -80,7 +80,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListPartitionsResponse.
+        r"""Gets the message of this ListPartitionsResponse.
 
         信息
 
@@ -91,7 +91,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListPartitionsResponse.
+        r"""Sets the message of this ListPartitionsResponse.
 
         信息
 
@@ -102,7 +102,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def partitions(self):
-        """Gets the partitions of this ListPartitionsResponse.
+        r"""Gets the partitions of this ListPartitionsResponse.
 
         :return: The partitions of this ListPartitionsResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.PartitionList`
@@ -111,7 +111,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ListPartitionsResponse.
+        r"""Sets the partitions of this ListPartitionsResponse.
 
         :param partitions: The partitions of this ListPartitionsResponse.
         :type partitions: :class:`huaweicloudsdkdli.v1.PartitionList`

@@ -33,7 +33,7 @@ class PropertyFilter:
     }
 
     def __init__(self, path=None, operator=None, value=None, in_values=None, strategy=None):
-        """PropertyFilter
+        r"""PropertyFilter
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PropertyFilter:
 
     @property
     def path(self):
-        """Gets the path of this PropertyFilter.
+        r"""Gets the path of this PropertyFilter.
 
         **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
 
@@ -80,7 +80,7 @@ class PropertyFilter:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PropertyFilter.
+        r"""Sets the path of this PropertyFilter.
 
         **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
 
@@ -91,7 +91,7 @@ class PropertyFilter:
 
     @property
     def operator(self):
-        """Gets the operator of this PropertyFilter.
+        r"""Gets the operator of this PropertyFilter.
 
         **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=，in:表示在指定值中匹配和between:表示数值区间。
 
@@ -102,7 +102,7 @@ class PropertyFilter:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this PropertyFilter.
+        r"""Sets the operator of this PropertyFilter.
 
         **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=，in:表示在指定值中匹配和between:表示数值区间。
 
@@ -113,7 +113,7 @@ class PropertyFilter:
 
     @property
     def value(self):
-        """Gets the value of this PropertyFilter.
+        r"""Gets the value of this PropertyFilter.
 
         **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
 
@@ -124,7 +124,7 @@ class PropertyFilter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PropertyFilter.
+        r"""Sets the value of this PropertyFilter.
 
         **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
 
@@ -135,7 +135,7 @@ class PropertyFilter:
 
     @property
     def in_values(self):
-        """Gets the in_values of this PropertyFilter.
+        r"""Gets the in_values of this PropertyFilter.
 
         **参数说明**：当operator为in时该字段必填，使用该字段传递比较表达式右值，上限为20个。
 
@@ -146,7 +146,7 @@ class PropertyFilter:
 
     @in_values.setter
     def in_values(self, in_values):
-        """Sets the in_values of this PropertyFilter.
+        r"""Sets the in_values of this PropertyFilter.
 
         **参数说明**：当operator为in时该字段必填，使用该字段传递比较表达式右值，上限为20个。
 
@@ -157,7 +157,7 @@ class PropertyFilter:
 
     @property
     def strategy(self):
-        """Gets the strategy of this PropertyFilter.
+        r"""Gets the strategy of this PropertyFilter.
 
         :return: The strategy of this PropertyFilter.
         :rtype: :class:`huaweicloudsdkiotda.v5.Strategy`
@@ -166,7 +166,7 @@ class PropertyFilter:
 
     @strategy.setter
     def strategy(self, strategy):
-        """Sets the strategy of this PropertyFilter.
+        r"""Sets the strategy of this PropertyFilter.
 
         :param strategy: The strategy of this PropertyFilter.
         :type strategy: :class:`huaweicloudsdkiotda.v5.Strategy`

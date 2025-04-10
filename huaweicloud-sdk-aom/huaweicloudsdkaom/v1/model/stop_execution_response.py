@@ -26,7 +26,7 @@ class StopExecutionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """StopExecutionResponse
+        r"""StopExecutionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopExecutionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this StopExecutionResponse.
+        r"""Gets the body of this StopExecutionResponse.
 
         :return: The body of this StopExecutionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopExecutionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopExecutionResponse.
+        r"""Sets the body of this StopExecutionResponse.
 
         :param body: The body of this StopExecutionResponse.
         :type body: str

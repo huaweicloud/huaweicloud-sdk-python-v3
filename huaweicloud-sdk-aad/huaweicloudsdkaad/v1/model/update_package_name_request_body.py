@@ -25,7 +25,7 @@ class UpdatePackageNameRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdatePackageNameRequestBody
+        r"""UpdatePackageNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePackageNameRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePackageNameRequestBody.
+        r"""Gets the name of this UpdatePackageNameRequestBody.
 
         名字
 
@@ -53,7 +53,7 @@ class UpdatePackageNameRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePackageNameRequestBody.
+        r"""Sets the name of this UpdatePackageNameRequestBody.
 
         名字
 

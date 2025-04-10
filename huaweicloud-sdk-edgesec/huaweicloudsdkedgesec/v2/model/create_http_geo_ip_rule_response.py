@@ -44,7 +44,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policyid=None, policy_name=None, timestamp=None, description=None, status=None, geo_ip=None, geo_tag_list=None, white=None):
-        """CreateHttpGeoIpRuleResponse
+        r"""CreateHttpGeoIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the id of this CreateHttpGeoIpRuleResponse.
 
         规则id
 
@@ -118,7 +118,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the id of this CreateHttpGeoIpRuleResponse.
 
         规则id
 
@@ -129,7 +129,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the name of this CreateHttpGeoIpRuleResponse.
 
         规则名称
 
@@ -140,7 +140,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the name of this CreateHttpGeoIpRuleResponse.
 
         规则名称
 
@@ -151,7 +151,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the policyid of this CreateHttpGeoIpRuleResponse.
 
         规则所在策略id
 
@@ -162,7 +162,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the policyid of this CreateHttpGeoIpRuleResponse.
 
         规则所在策略id
 
@@ -173,7 +173,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the policy_name of this CreateHttpGeoIpRuleResponse.
 
         规则所在策略名称
 
@@ -184,7 +184,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the policy_name of this CreateHttpGeoIpRuleResponse.
 
         规则所在策略名称
 
@@ -195,7 +195,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the timestamp of this CreateHttpGeoIpRuleResponse.
 
         创建规则时间戳
 
@@ -206,7 +206,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the timestamp of this CreateHttpGeoIpRuleResponse.
 
         创建规则时间戳
 
@@ -217,7 +217,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the description of this CreateHttpGeoIpRuleResponse.
 
         规则描述
 
@@ -228,7 +228,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the description of this CreateHttpGeoIpRuleResponse.
 
         规则描述
 
@@ -239,7 +239,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the status of this CreateHttpGeoIpRuleResponse.
 
         规则开关状态
 
@@ -250,7 +250,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the status of this CreateHttpGeoIpRuleResponse.
 
         规则开关状态
 
@@ -261,7 +261,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def geo_ip(self):
-        """Gets the geo_ip of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the geo_ip of this CreateHttpGeoIpRuleResponse.
 
         地理位置
 
@@ -272,7 +272,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @geo_ip.setter
     def geo_ip(self, geo_ip):
-        """Sets the geo_ip of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the geo_ip of this CreateHttpGeoIpRuleResponse.
 
         地理位置
 
@@ -283,7 +283,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def geo_tag_list(self):
-        """Gets the geo_tag_list of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the geo_tag_list of this CreateHttpGeoIpRuleResponse.
 
         地理位置列表
 
@@ -294,7 +294,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @geo_tag_list.setter
     def geo_tag_list(self, geo_tag_list):
-        """Sets the geo_tag_list of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the geo_tag_list of this CreateHttpGeoIpRuleResponse.
 
         地理位置列表
 
@@ -305,7 +305,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @property
     def white(self):
-        """Gets the white of this CreateHttpGeoIpRuleResponse.
+        r"""Gets the white of this CreateHttpGeoIpRuleResponse.
 
         拦截/放行/仅记录
 
@@ -316,7 +316,7 @@ class CreateHttpGeoIpRuleResponse(SdkResponse):
 
     @white.setter
     def white(self, white):
-        """Sets the white of this CreateHttpGeoIpRuleResponse.
+        r"""Sets the white of this CreateHttpGeoIpRuleResponse.
 
         拦截/放行/仅记录
 

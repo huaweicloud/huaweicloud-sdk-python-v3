@@ -25,7 +25,7 @@ class CreateTrackerRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTrackerRequest
+        r"""CreateTrackerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTrackerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTrackerRequest.
+        r"""Gets the body of this CreateTrackerRequest.
 
         :return: The body of this CreateTrackerRequest.
         :rtype: :class:`huaweicloudsdkcts.v3.CreateTrackerRequestBody`
@@ -52,7 +52,7 @@ class CreateTrackerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTrackerRequest.
+        r"""Sets the body of this CreateTrackerRequest.
 
         :param body: The body of this CreateTrackerRequest.
         :type body: :class:`huaweicloudsdkcts.v3.CreateTrackerRequestBody`

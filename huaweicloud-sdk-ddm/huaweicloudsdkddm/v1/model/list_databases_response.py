@@ -28,7 +28,7 @@ class ListDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total=None):
-        """ListDatabasesResponse
+        r"""ListDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListDatabasesResponse.
+        r"""Gets the databases of this ListDatabasesResponse.
 
         逻辑库相关信息的集合
 
@@ -62,7 +62,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListDatabasesResponse.
+        r"""Sets the databases of this ListDatabasesResponse.
 
         逻辑库相关信息的集合
 
@@ -73,7 +73,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDatabasesResponse.
+        r"""Gets the total of this ListDatabasesResponse.
 
         总条数
 
@@ -84,7 +84,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDatabasesResponse.
+        r"""Sets the total of this ListDatabasesResponse.
 
         总条数
 

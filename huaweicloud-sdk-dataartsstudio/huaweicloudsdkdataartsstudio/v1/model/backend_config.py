@@ -37,7 +37,7 @@ class BackendConfig:
     }
 
     def __init__(self, type=None, protocol=None, host=None, timeout=None, path=None, backend_paras=None, constant_paras=None):
-        """BackendConfig
+        r"""BackendConfig
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BackendConfig:
 
     @property
     def type(self):
-        """Gets the type of this BackendConfig.
+        r"""Gets the type of this BackendConfig.
 
         后端请求类型
 
@@ -96,7 +96,7 @@ class BackendConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackendConfig.
+        r"""Sets the type of this BackendConfig.
 
         后端请求类型
 
@@ -107,7 +107,7 @@ class BackendConfig:
 
     @property
     def protocol(self):
-        """Gets the protocol of this BackendConfig.
+        r"""Gets the protocol of this BackendConfig.
 
         后端请求协议类型
 
@@ -118,7 +118,7 @@ class BackendConfig:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this BackendConfig.
+        r"""Sets the protocol of this BackendConfig.
 
         后端请求协议类型
 
@@ -129,7 +129,7 @@ class BackendConfig:
 
     @property
     def host(self):
-        """Gets the host of this BackendConfig.
+        r"""Gets the host of this BackendConfig.
 
         后端host
 
@@ -140,7 +140,7 @@ class BackendConfig:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this BackendConfig.
+        r"""Sets the host of this BackendConfig.
 
         后端host
 
@@ -151,7 +151,7 @@ class BackendConfig:
 
     @property
     def timeout(self):
-        """Gets the timeout of this BackendConfig.
+        r"""Gets the timeout of this BackendConfig.
 
         后端超时时间
 
@@ -162,7 +162,7 @@ class BackendConfig:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this BackendConfig.
+        r"""Sets the timeout of this BackendConfig.
 
         后端超时时间
 
@@ -173,7 +173,7 @@ class BackendConfig:
 
     @property
     def path(self):
-        """Gets the path of this BackendConfig.
+        r"""Gets the path of this BackendConfig.
 
         后端请求Path
 
@@ -184,7 +184,7 @@ class BackendConfig:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this BackendConfig.
+        r"""Sets the path of this BackendConfig.
 
         后端请求Path
 
@@ -195,7 +195,7 @@ class BackendConfig:
 
     @property
     def backend_paras(self):
-        """Gets the backend_paras of this BackendConfig.
+        r"""Gets the backend_paras of this BackendConfig.
 
         API后端参数
 
@@ -206,7 +206,7 @@ class BackendConfig:
 
     @backend_paras.setter
     def backend_paras(self, backend_paras):
-        """Sets the backend_paras of this BackendConfig.
+        r"""Sets the backend_paras of this BackendConfig.
 
         API后端参数
 
@@ -217,7 +217,7 @@ class BackendConfig:
 
     @property
     def constant_paras(self):
-        """Gets the constant_paras of this BackendConfig.
+        r"""Gets the constant_paras of this BackendConfig.
 
         后端常量参数
 
@@ -228,7 +228,7 @@ class BackendConfig:
 
     @constant_paras.setter
     def constant_paras(self, constant_paras):
-        """Sets the constant_paras of this BackendConfig.
+        r"""Sets the constant_paras of this BackendConfig.
 
         后端常量参数
 

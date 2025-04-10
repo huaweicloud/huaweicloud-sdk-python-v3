@@ -78,7 +78,7 @@ class ShowClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, actions=None, datastore=None, enable_open_tsdb=None, enable_lemon=None, cluster_name=None, cu_num=None, tsd_num=None, lemon_num=None, storage_type=None, storage_quota=None, used_storage_size=None, auth_mode=None, enable_dfv=None, updated=None, created=None, cluster_id=None, status=None, open_tsdb_link=None, tsd_public_endpoint=None, lemon_link=None, zookeeper_link=None, hbase_public_endpoint=None, is_frozen=None, vpc_id=None, sub_net_id=None, security_group_id=None, availability_zone=None):
-        """ShowClusterDetailResponse
+        r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -226,7 +226,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def actions(self):
-        """Gets the actions of this ShowClusterDetailResponse.
+        r"""Gets the actions of this ShowClusterDetailResponse.
 
         集群当前状态列表： - 创建中 - 扩容中 - 重启中 - 开启opentsdb - 扩容失败 - 重启失败 - 开启opentsdb失败
 
@@ -237,7 +237,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ShowClusterDetailResponse.
+        r"""Sets the actions of this ShowClusterDetailResponse.
 
         集群当前状态列表： - 创建中 - 扩容中 - 重启中 - 开启opentsdb - 扩容失败 - 重启失败 - 开启opentsdb失败
 
@@ -248,7 +248,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this ShowClusterDetailResponse.
+        r"""Gets the datastore of this ShowClusterDetailResponse.
 
         :return: The datastore of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
@@ -257,7 +257,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ShowClusterDetailResponse.
+        r"""Sets the datastore of this ShowClusterDetailResponse.
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
         :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`
@@ -266,7 +266,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def enable_open_tsdb(self):
-        """Gets the enable_open_tsdb of this ShowClusterDetailResponse.
+        r"""Gets the enable_open_tsdb of this ShowClusterDetailResponse.
 
         是否打开openTSDB特性。 - false：不开启 - true：开启
 
@@ -277,7 +277,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @enable_open_tsdb.setter
     def enable_open_tsdb(self, enable_open_tsdb):
-        """Sets the enable_open_tsdb of this ShowClusterDetailResponse.
+        r"""Sets the enable_open_tsdb of this ShowClusterDetailResponse.
 
         是否打开openTSDB特性。 - false：不开启 - true：开启
 
@@ -288,7 +288,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def enable_lemon(self):
-        """Gets the enable_lemon of this ShowClusterDetailResponse.
+        r"""Gets the enable_lemon of this ShowClusterDetailResponse.
 
         是否打开SQL查询特性。 - false：不开启 - true：开启
 
@@ -299,7 +299,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @enable_lemon.setter
     def enable_lemon(self, enable_lemon):
-        """Sets the enable_lemon of this ShowClusterDetailResponse.
+        r"""Sets the enable_lemon of this ShowClusterDetailResponse.
 
         是否打开SQL查询特性。 - false：不开启 - true：开启
 
@@ -310,7 +310,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowClusterDetailResponse.
+        r"""Gets the cluster_name of this ShowClusterDetailResponse.
 
         集群名称。
 
@@ -321,7 +321,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowClusterDetailResponse.
+        r"""Sets the cluster_name of this ShowClusterDetailResponse.
 
         集群名称。
 
@@ -332,7 +332,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def cu_num(self):
-        """Gets the cu_num of this ShowClusterDetailResponse.
+        r"""Gets the cu_num of this ShowClusterDetailResponse.
 
         RegionServer个数。
 
@@ -343,7 +343,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @cu_num.setter
     def cu_num(self, cu_num):
-        """Sets the cu_num of this ShowClusterDetailResponse.
+        r"""Sets the cu_num of this ShowClusterDetailResponse.
 
         RegionServer个数。
 
@@ -354,7 +354,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def tsd_num(self):
-        """Gets the tsd_num of this ShowClusterDetailResponse.
+        r"""Gets the tsd_num of this ShowClusterDetailResponse.
 
         TSD节点个数。
 
@@ -365,7 +365,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @tsd_num.setter
     def tsd_num(self, tsd_num):
-        """Sets the tsd_num of this ShowClusterDetailResponse.
+        r"""Sets the tsd_num of this ShowClusterDetailResponse.
 
         TSD节点个数。
 
@@ -376,7 +376,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def lemon_num(self):
-        """Gets the lemon_num of this ShowClusterDetailResponse.
+        r"""Gets the lemon_num of this ShowClusterDetailResponse.
 
         Lemon节点个数。
 
@@ -387,7 +387,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @lemon_num.setter
     def lemon_num(self, lemon_num):
-        """Sets the lemon_num of this ShowClusterDetailResponse.
+        r"""Sets the lemon_num of this ShowClusterDetailResponse.
 
         Lemon节点个数。
 
@@ -398,7 +398,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ShowClusterDetailResponse.
+        r"""Gets the storage_type of this ShowClusterDetailResponse.
 
         集群底层存储类型： - OBS - HDFS
 
@@ -409,7 +409,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ShowClusterDetailResponse.
+        r"""Sets the storage_type of this ShowClusterDetailResponse.
 
         集群底层存储类型： - OBS - HDFS
 
@@ -420,7 +420,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def storage_quota(self):
-        """Gets the storage_quota of this ShowClusterDetailResponse.
+        r"""Gets the storage_quota of this ShowClusterDetailResponse.
 
         集群存储配额。
 
@@ -431,7 +431,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @storage_quota.setter
     def storage_quota(self, storage_quota):
-        """Sets the storage_quota of this ShowClusterDetailResponse.
+        r"""Sets the storage_quota of this ShowClusterDetailResponse.
 
         集群存储配额。
 
@@ -442,7 +442,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def used_storage_size(self):
-        """Gets the used_storage_size of this ShowClusterDetailResponse.
+        r"""Gets the used_storage_size of this ShowClusterDetailResponse.
 
         当前使用存储空间。
 
@@ -453,7 +453,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @used_storage_size.setter
     def used_storage_size(self, used_storage_size):
-        """Sets the used_storage_size of this ShowClusterDetailResponse.
+        r"""Sets the used_storage_size of this ShowClusterDetailResponse.
 
         当前使用存储空间。
 
@@ -464,7 +464,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def auth_mode(self):
-        """Gets the auth_mode of this ShowClusterDetailResponse.
+        r"""Gets the auth_mode of this ShowClusterDetailResponse.
 
         是否打开IAM认证。 - false：不开启 - true：开启
 
@@ -475,7 +475,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @auth_mode.setter
     def auth_mode(self, auth_mode):
-        """Sets the auth_mode of this ShowClusterDetailResponse.
+        r"""Sets the auth_mode of this ShowClusterDetailResponse.
 
         是否打开IAM认证。 - false：不开启 - true：开启
 
@@ -486,7 +486,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def enable_dfv(self):
-        """Gets the enable_dfv of this ShowClusterDetailResponse.
+        r"""Gets the enable_dfv of this ShowClusterDetailResponse.
 
         是否打开dfv
 
@@ -497,7 +497,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @enable_dfv.setter
     def enable_dfv(self, enable_dfv):
-        """Sets the enable_dfv of this ShowClusterDetailResponse.
+        r"""Sets the enable_dfv of this ShowClusterDetailResponse.
 
         是否打开dfv
 
@@ -508,7 +508,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowClusterDetailResponse.
+        r"""Gets the updated of this ShowClusterDetailResponse.
 
         集群更新时间。
 
@@ -519,7 +519,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowClusterDetailResponse.
+        r"""Sets the updated of this ShowClusterDetailResponse.
 
         集群更新时间。
 
@@ -530,7 +530,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowClusterDetailResponse.
+        r"""Gets the created of this ShowClusterDetailResponse.
 
         集群创建时间。
 
@@ -541,7 +541,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowClusterDetailResponse.
+        r"""Sets the created of this ShowClusterDetailResponse.
 
         集群创建时间。
 
@@ -552,7 +552,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterDetailResponse.
+        r"""Gets the cluster_id of this ShowClusterDetailResponse.
 
         集群唯一标识，集群ID。
 
@@ -563,7 +563,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterDetailResponse.
+        r"""Sets the cluster_id of this ShowClusterDetailResponse.
 
         集群唯一标识，集群ID。
 
@@ -574,7 +574,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowClusterDetailResponse.
+        r"""Gets the status of this ShowClusterDetailResponse.
 
         集群当前状态： - 200：集群正常 - 300：集群异常 - 400：集群已删除 - 303：集群创建失败
 
@@ -585,7 +585,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowClusterDetailResponse.
+        r"""Sets the status of this ShowClusterDetailResponse.
 
         集群当前状态： - 200：集群正常 - 300：集群异常 - 400：集群已删除 - 303：集群创建失败
 
@@ -596,7 +596,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def open_tsdb_link(self):
-        """Gets the open_tsdb_link of this ShowClusterDetailResponse.
+        r"""Gets the open_tsdb_link of this ShowClusterDetailResponse.
 
         内网OpenTSDB连接访问地址。
 
@@ -607,7 +607,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @open_tsdb_link.setter
     def open_tsdb_link(self, open_tsdb_link):
-        """Sets the open_tsdb_link of this ShowClusterDetailResponse.
+        r"""Sets the open_tsdb_link of this ShowClusterDetailResponse.
 
         内网OpenTSDB连接访问地址。
 
@@ -618,7 +618,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def tsd_public_endpoint(self):
-        """Gets the tsd_public_endpoint of this ShowClusterDetailResponse.
+        r"""Gets the tsd_public_endpoint of this ShowClusterDetailResponse.
 
         OpenTSDB公网endpoint地址
 
@@ -629,7 +629,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @tsd_public_endpoint.setter
     def tsd_public_endpoint(self, tsd_public_endpoint):
-        """Sets the tsd_public_endpoint of this ShowClusterDetailResponse.
+        r"""Sets the tsd_public_endpoint of this ShowClusterDetailResponse.
 
         OpenTSDB公网endpoint地址
 
@@ -640,7 +640,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def lemon_link(self):
-        """Gets the lemon_link of this ShowClusterDetailResponse.
+        r"""Gets the lemon_link of this ShowClusterDetailResponse.
 
         内网Lemon连接访问地址。
 
@@ -651,7 +651,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @lemon_link.setter
     def lemon_link(self, lemon_link):
-        """Sets the lemon_link of this ShowClusterDetailResponse.
+        r"""Sets the lemon_link of this ShowClusterDetailResponse.
 
         内网Lemon连接访问地址。
 
@@ -662,7 +662,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def zookeeper_link(self):
-        """Gets the zookeeper_link of this ShowClusterDetailResponse.
+        r"""Gets the zookeeper_link of this ShowClusterDetailResponse.
 
         内网ZooKeeper连接访问地址。
 
@@ -673,7 +673,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @zookeeper_link.setter
     def zookeeper_link(self, zookeeper_link):
-        """Sets the zookeeper_link of this ShowClusterDetailResponse.
+        r"""Sets the zookeeper_link of this ShowClusterDetailResponse.
 
         内网ZooKeeper连接访问地址。
 
@@ -684,7 +684,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def hbase_public_endpoint(self):
-        """Gets the hbase_public_endpoint of this ShowClusterDetailResponse.
+        r"""Gets the hbase_public_endpoint of this ShowClusterDetailResponse.
 
         公网HBase连接访问地址。
 
@@ -695,7 +695,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @hbase_public_endpoint.setter
     def hbase_public_endpoint(self, hbase_public_endpoint):
-        """Sets the hbase_public_endpoint of this ShowClusterDetailResponse.
+        r"""Sets the hbase_public_endpoint of this ShowClusterDetailResponse.
 
         公网HBase连接访问地址。
 
@@ -706,7 +706,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this ShowClusterDetailResponse.
+        r"""Gets the is_frozen of this ShowClusterDetailResponse.
 
         集群是否被冻结。 - false：不冻结 - true：冻结
 
@@ -717,7 +717,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this ShowClusterDetailResponse.
+        r"""Sets the is_frozen of this ShowClusterDetailResponse.
 
         集群是否被冻结。 - false：不冻结 - true：冻结
 
@@ -728,7 +728,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowClusterDetailResponse.
+        r"""Gets the vpc_id of this ShowClusterDetailResponse.
 
         VPC ID，创建集群节点所在的虚拟私有ID。
 
@@ -739,7 +739,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowClusterDetailResponse.
+        r"""Sets the vpc_id of this ShowClusterDetailResponse.
 
         VPC ID，创建集群节点所在的虚拟私有ID。
 
@@ -750,7 +750,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def sub_net_id(self):
-        """Gets the sub_net_id of this ShowClusterDetailResponse.
+        r"""Gets the sub_net_id of this ShowClusterDetailResponse.
 
         子网ID，创建集群所在子网段。
 
@@ -761,7 +761,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @sub_net_id.setter
     def sub_net_id(self, sub_net_id):
-        """Sets the sub_net_id of this ShowClusterDetailResponse.
+        r"""Sets the sub_net_id of this ShowClusterDetailResponse.
 
         子网ID，创建集群所在子网段。
 
@@ -772,7 +772,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowClusterDetailResponse.
+        r"""Gets the security_group_id of this ShowClusterDetailResponse.
 
         安全组对应的ID。
 
@@ -783,7 +783,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowClusterDetailResponse.
+        r"""Sets the security_group_id of this ShowClusterDetailResponse.
 
         安全组对应的ID。
 
@@ -794,7 +794,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowClusterDetailResponse.
+        r"""Gets the availability_zone of this ShowClusterDetailResponse.
 
         集群所属的可用区。
 
@@ -805,7 +805,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowClusterDetailResponse.
+        r"""Sets the availability_zone of this ShowClusterDetailResponse.
 
         集群所属的可用区。
 

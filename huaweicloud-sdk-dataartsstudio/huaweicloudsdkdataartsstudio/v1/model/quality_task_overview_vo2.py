@@ -41,7 +41,7 @@ class QualityTaskOverviewVO2:
     }
 
     def __init__(self, id=None, name=None, category_id=None, schedule_status=None, schedule_period=None, schedule_interval=None, create_time=None, last_run_time=None, creator=None):
-        """QualityTaskOverviewVO2
+        r"""QualityTaskOverviewVO2
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def id(self):
-        """Gets the id of this QualityTaskOverviewVO2.
+        r"""Gets the id of this QualityTaskOverviewVO2.
 
         id
 
@@ -110,7 +110,7 @@ class QualityTaskOverviewVO2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QualityTaskOverviewVO2.
+        r"""Sets the id of this QualityTaskOverviewVO2.
 
         id
 
@@ -121,7 +121,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def name(self):
-        """Gets the name of this QualityTaskOverviewVO2.
+        r"""Gets the name of this QualityTaskOverviewVO2.
 
         name
 
@@ -132,7 +132,7 @@ class QualityTaskOverviewVO2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QualityTaskOverviewVO2.
+        r"""Sets the name of this QualityTaskOverviewVO2.
 
         name
 
@@ -143,7 +143,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def category_id(self):
-        """Gets the category_id of this QualityTaskOverviewVO2.
+        r"""Gets the category_id of this QualityTaskOverviewVO2.
 
         目录ID
 
@@ -154,7 +154,7 @@ class QualityTaskOverviewVO2:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this QualityTaskOverviewVO2.
+        r"""Sets the category_id of this QualityTaskOverviewVO2.
 
         目录ID
 
@@ -165,7 +165,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this QualityTaskOverviewVO2.
+        r"""Gets the schedule_status of this QualityTaskOverviewVO2.
 
         调度状态 UNKNOWN:未知,NOT_START:未启动,SCHEDULING:调度中,FINISH_SUCCESS:正常结束,KILL:手动停止,RUNNING_EXCEPTION:运行失败
 
@@ -176,7 +176,7 @@ class QualityTaskOverviewVO2:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this QualityTaskOverviewVO2.
+        r"""Sets the schedule_status of this QualityTaskOverviewVO2.
 
         调度状态 UNKNOWN:未知,NOT_START:未启动,SCHEDULING:调度中,FINISH_SUCCESS:正常结束,KILL:手动停止,RUNNING_EXCEPTION:运行失败
 
@@ -187,7 +187,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def schedule_period(self):
-        """Gets the schedule_period of this QualityTaskOverviewVO2.
+        r"""Gets the schedule_period of this QualityTaskOverviewVO2.
 
         调度周期 MINUTE:按分钟调度,HOUR:按小时调度,DAY:按天调度,WEEK:按周调度
 
@@ -198,7 +198,7 @@ class QualityTaskOverviewVO2:
 
     @schedule_period.setter
     def schedule_period(self, schedule_period):
-        """Sets the schedule_period of this QualityTaskOverviewVO2.
+        r"""Sets the schedule_period of this QualityTaskOverviewVO2.
 
         调度周期 MINUTE:按分钟调度,HOUR:按小时调度,DAY:按天调度,WEEK:按周调度
 
@@ -209,7 +209,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def schedule_interval(self):
-        """Gets the schedule_interval of this QualityTaskOverviewVO2.
+        r"""Gets the schedule_interval of this QualityTaskOverviewVO2.
 
         调度间隔 当调度周期为分钟、小时、天时，返回数值字符串，当调度周期为周时，返回具体的调度星期信息如（MONDAY,THURSDAY）
 
@@ -220,7 +220,7 @@ class QualityTaskOverviewVO2:
 
     @schedule_interval.setter
     def schedule_interval(self, schedule_interval):
-        """Sets the schedule_interval of this QualityTaskOverviewVO2.
+        r"""Sets the schedule_interval of this QualityTaskOverviewVO2.
 
         调度间隔 当调度周期为分钟、小时、天时，返回数值字符串，当调度周期为周时，返回具体的调度星期信息如（MONDAY,THURSDAY）
 
@@ -231,7 +231,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QualityTaskOverviewVO2.
+        r"""Gets the create_time of this QualityTaskOverviewVO2.
 
         创建时间,13位时间戳(精确到毫秒)
 
@@ -242,7 +242,7 @@ class QualityTaskOverviewVO2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QualityTaskOverviewVO2.
+        r"""Sets the create_time of this QualityTaskOverviewVO2.
 
         创建时间,13位时间戳(精确到毫秒)
 
@@ -253,7 +253,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def last_run_time(self):
-        """Gets the last_run_time of this QualityTaskOverviewVO2.
+        r"""Gets the last_run_time of this QualityTaskOverviewVO2.
 
         最新运行时间,13位时间戳(精确到毫秒)
 
@@ -264,7 +264,7 @@ class QualityTaskOverviewVO2:
 
     @last_run_time.setter
     def last_run_time(self, last_run_time):
-        """Sets the last_run_time of this QualityTaskOverviewVO2.
+        r"""Sets the last_run_time of this QualityTaskOverviewVO2.
 
         最新运行时间,13位时间戳(精确到毫秒)
 
@@ -275,7 +275,7 @@ class QualityTaskOverviewVO2:
 
     @property
     def creator(self):
-        """Gets the creator of this QualityTaskOverviewVO2.
+        r"""Gets the creator of this QualityTaskOverviewVO2.
 
         创建者
 
@@ -286,7 +286,7 @@ class QualityTaskOverviewVO2:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this QualityTaskOverviewVO2.
+        r"""Sets the creator of this QualityTaskOverviewVO2.
 
         创建者
 

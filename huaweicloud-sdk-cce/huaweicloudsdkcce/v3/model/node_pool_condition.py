@@ -35,7 +35,7 @@ class NodePoolCondition:
     }
 
     def __init__(self, type=None, status=None, last_probe_time=None, last_transit_time=None, reason=None, message=None):
-        """NodePoolCondition
+        r"""NodePoolCondition
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NodePoolCondition:
 
     @property
     def type(self):
-        """Gets the type of this NodePoolCondition.
+        r"""Gets the type of this NodePoolCondition.
 
         Condition类型，当前支持类型如下 - \"Scalable\"：节点池实际的可扩容状态，如果状态为\"False\"时则不会再次触发节点池扩容行为。 - \"QuotaInsufficient\"：节点池扩容依赖的配额不足，影响节点池可扩容状态。 - \"ResourceInsufficient\"：节点池扩容依赖的资源不足，影响节点池可扩容状态。 - \"UnexpectedError\"：节点池非预期扩容失败，影响节点池可扩容状态。 [- \"LockedByOrder\"：包周期节点池被订单锁定，此时Reason为待支付订单ID。](tag:hws,hws_hk) - \"Error\"：节点池错误，通常由于删除失败触发。 
 
@@ -89,7 +89,7 @@ class NodePoolCondition:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NodePoolCondition.
+        r"""Sets the type of this NodePoolCondition.
 
         Condition类型，当前支持类型如下 - \"Scalable\"：节点池实际的可扩容状态，如果状态为\"False\"时则不会再次触发节点池扩容行为。 - \"QuotaInsufficient\"：节点池扩容依赖的配额不足，影响节点池可扩容状态。 - \"ResourceInsufficient\"：节点池扩容依赖的资源不足，影响节点池可扩容状态。 - \"UnexpectedError\"：节点池非预期扩容失败，影响节点池可扩容状态。 [- \"LockedByOrder\"：包周期节点池被订单锁定，此时Reason为待支付订单ID。](tag:hws,hws_hk) - \"Error\"：节点池错误，通常由于删除失败触发。 
 
@@ -100,7 +100,7 @@ class NodePoolCondition:
 
     @property
     def status(self):
-        """Gets the status of this NodePoolCondition.
+        r"""Gets the status of this NodePoolCondition.
 
         Condition当前状态，取值如下 - \"True\" - \"False\" 
 
@@ -111,7 +111,7 @@ class NodePoolCondition:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodePoolCondition.
+        r"""Sets the status of this NodePoolCondition.
 
         Condition当前状态，取值如下 - \"True\" - \"False\" 
 
@@ -122,7 +122,7 @@ class NodePoolCondition:
 
     @property
     def last_probe_time(self):
-        """Gets the last_probe_time of this NodePoolCondition.
+        r"""Gets the last_probe_time of this NodePoolCondition.
 
         上次状态检查时间。
 
@@ -133,7 +133,7 @@ class NodePoolCondition:
 
     @last_probe_time.setter
     def last_probe_time(self, last_probe_time):
-        """Sets the last_probe_time of this NodePoolCondition.
+        r"""Sets the last_probe_time of this NodePoolCondition.
 
         上次状态检查时间。
 
@@ -144,7 +144,7 @@ class NodePoolCondition:
 
     @property
     def last_transit_time(self):
-        """Gets the last_transit_time of this NodePoolCondition.
+        r"""Gets the last_transit_time of this NodePoolCondition.
 
         上次状态变更时间。
 
@@ -155,7 +155,7 @@ class NodePoolCondition:
 
     @last_transit_time.setter
     def last_transit_time(self, last_transit_time):
-        """Sets the last_transit_time of this NodePoolCondition.
+        r"""Sets the last_transit_time of this NodePoolCondition.
 
         上次状态变更时间。
 
@@ -166,7 +166,7 @@ class NodePoolCondition:
 
     @property
     def reason(self):
-        """Gets the reason of this NodePoolCondition.
+        r"""Gets the reason of this NodePoolCondition.
 
         上次状态变更原因。
 
@@ -177,7 +177,7 @@ class NodePoolCondition:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this NodePoolCondition.
+        r"""Sets the reason of this NodePoolCondition.
 
         上次状态变更原因。
 
@@ -188,7 +188,7 @@ class NodePoolCondition:
 
     @property
     def message(self):
-        """Gets the message of this NodePoolCondition.
+        r"""Gets the message of this NodePoolCondition.
 
         Condition详细描述。
 
@@ -199,7 +199,7 @@ class NodePoolCondition:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this NodePoolCondition.
+        r"""Sets the message of this NodePoolCondition.
 
         Condition详细描述。
 

@@ -30,7 +30,7 @@ class ListIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None, cloud_total=None):
-        """ListIpGroupResponse
+        r"""ListIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListIpGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIpGroupResponse.
+        r"""Gets the total of this ListIpGroupResponse.
 
         该用户当前企业项目下Ip地址组数量，只包含本地地址组
 
@@ -69,7 +69,7 @@ class ListIpGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIpGroupResponse.
+        r"""Sets the total of this ListIpGroupResponse.
 
         该用户当前企业项目下Ip地址组数量，只包含本地地址组
 
@@ -80,7 +80,7 @@ class ListIpGroupResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListIpGroupResponse.
+        r"""Gets the items of this ListIpGroupResponse.
 
         地址组信息列表
 
@@ -91,7 +91,7 @@ class ListIpGroupResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListIpGroupResponse.
+        r"""Sets the items of this ListIpGroupResponse.
 
         地址组信息列表
 
@@ -102,7 +102,7 @@ class ListIpGroupResponse(SdkResponse):
 
     @property
     def cloud_total(self):
-        """Gets the cloud_total of this ListIpGroupResponse.
+        r"""Gets the cloud_total of this ListIpGroupResponse.
 
         该用户总的Ip地址组数量，包含本地与共享地址组
 
@@ -113,7 +113,7 @@ class ListIpGroupResponse(SdkResponse):
 
     @cloud_total.setter
     def cloud_total(self, cloud_total):
-        """Sets the cloud_total of this ListIpGroupResponse.
+        r"""Sets the cloud_total of this ListIpGroupResponse.
 
         该用户总的Ip地址组数量，包含本地与共享地址组
 

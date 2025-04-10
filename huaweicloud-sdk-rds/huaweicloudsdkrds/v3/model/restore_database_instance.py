@@ -31,7 +31,7 @@ class RestoreDatabaseInstance:
     }
 
     def __init__(self, restore_time=None, instance_id=None, is_fast_restore=None, databases=None):
-        """RestoreDatabaseInstance
+        r"""RestoreDatabaseInstance
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RestoreDatabaseInstance:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestoreDatabaseInstance.
+        r"""Gets the restore_time of this RestoreDatabaseInstance.
 
         恢复时间
 
@@ -72,7 +72,7 @@ class RestoreDatabaseInstance:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestoreDatabaseInstance.
+        r"""Sets the restore_time of this RestoreDatabaseInstance.
 
         恢复时间
 
@@ -83,7 +83,7 @@ class RestoreDatabaseInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestoreDatabaseInstance.
+        r"""Gets the instance_id of this RestoreDatabaseInstance.
 
         实例ID
 
@@ -94,7 +94,7 @@ class RestoreDatabaseInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestoreDatabaseInstance.
+        r"""Sets the instance_id of this RestoreDatabaseInstance.
 
         实例ID
 
@@ -105,7 +105,7 @@ class RestoreDatabaseInstance:
 
     @property
     def is_fast_restore(self):
-        """Gets the is_fast_restore of this RestoreDatabaseInstance.
+        r"""Gets the is_fast_restore of this RestoreDatabaseInstance.
 
         是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
 
@@ -116,7 +116,7 @@ class RestoreDatabaseInstance:
 
     @is_fast_restore.setter
     def is_fast_restore(self, is_fast_restore):
-        """Sets the is_fast_restore of this RestoreDatabaseInstance.
+        r"""Sets the is_fast_restore of this RestoreDatabaseInstance.
 
         是否使用极速恢复，可先根据”获取实例是否能使用极速恢复“接口判断本次恢复是否能使用极速恢复。 如果实例使用了XA事务，采用极速恢复的方式会导致恢复失败！
 
@@ -127,7 +127,7 @@ class RestoreDatabaseInstance:
 
     @property
     def databases(self):
-        """Gets the databases of this RestoreDatabaseInstance.
+        r"""Gets the databases of this RestoreDatabaseInstance.
 
         库信息
 
@@ -138,7 +138,7 @@ class RestoreDatabaseInstance:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this RestoreDatabaseInstance.
+        r"""Sets the databases of this RestoreDatabaseInstance.
 
         库信息
 

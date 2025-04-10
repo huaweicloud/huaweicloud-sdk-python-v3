@@ -30,7 +30,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
     }
 
     def __init__(self, slow_sql_trend_items=None, interval_millis=None, total_count=None):
-        """ExportSlowSqlTrendDetailsResponse
+        r"""ExportSlowSqlTrendDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
 
     @property
     def slow_sql_trend_items(self):
-        """Gets the slow_sql_trend_items of this ExportSlowSqlTrendDetailsResponse.
+        r"""Gets the slow_sql_trend_items of this ExportSlowSqlTrendDetailsResponse.
 
         慢SQL数量趋势。
 
@@ -69,7 +69,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
 
     @slow_sql_trend_items.setter
     def slow_sql_trend_items(self, slow_sql_trend_items):
-        """Sets the slow_sql_trend_items of this ExportSlowSqlTrendDetailsResponse.
+        r"""Sets the slow_sql_trend_items of this ExportSlowSqlTrendDetailsResponse.
 
         慢SQL数量趋势。
 
@@ -80,7 +80,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
 
     @property
     def interval_millis(self):
-        """Gets the interval_millis of this ExportSlowSqlTrendDetailsResponse.
+        r"""Gets the interval_millis of this ExportSlowSqlTrendDetailsResponse.
 
         返回列表两个时间点之间的时间间隔。总查询时长3小时之内间隔1分钟，3小时到6小时范围内间隔5分钟，6小时到12小时范围内间隔30分钟，12小时以上间隔1小时。单位为毫秒。
 
@@ -91,7 +91,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
 
     @interval_millis.setter
     def interval_millis(self, interval_millis):
-        """Sets the interval_millis of this ExportSlowSqlTrendDetailsResponse.
+        r"""Sets the interval_millis of this ExportSlowSqlTrendDetailsResponse.
 
         返回列表两个时间点之间的时间间隔。总查询时长3小时之内间隔1分钟，3小时到6小时范围内间隔5分钟，6小时到12小时范围内间隔30分钟，12小时以上间隔1小时。单位为毫秒。
 
@@ -102,7 +102,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ExportSlowSqlTrendDetailsResponse.
+        r"""Gets the total_count of this ExportSlowSqlTrendDetailsResponse.
 
         趋势数据总数。
 
@@ -113,7 +113,7 @@ class ExportSlowSqlTrendDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ExportSlowSqlTrendDetailsResponse.
+        r"""Sets the total_count of this ExportSlowSqlTrendDetailsResponse.
 
         趋势数据总数。
 

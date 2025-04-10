@@ -25,7 +25,7 @@ class UpdateDirectoryRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdateDirectoryRequestBody
+        r"""UpdateDirectoryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDirectoryRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDirectoryRequestBody.
+        r"""Gets the name of this UpdateDirectoryRequestBody.
 
         目录名称
 
@@ -53,7 +53,7 @@ class UpdateDirectoryRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDirectoryRequestBody.
+        r"""Sets the name of this UpdateDirectoryRequestBody.
 
         目录名称
 

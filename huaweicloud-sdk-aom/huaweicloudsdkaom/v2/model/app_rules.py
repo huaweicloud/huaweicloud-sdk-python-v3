@@ -41,7 +41,7 @@ class AppRules:
     }
 
     def __init__(self, create_time=None, enable=None, event_name=None, hostid=None, id=None, name=None, projectid=None, spec=None, desc=None):
-        """AppRules
+        r"""AppRules
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class AppRules:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppRules.
+        r"""Gets the create_time of this AppRules.
 
         规则创建时间(创建时不传，修改时传查询返回的createTime)。
 
@@ -104,7 +104,7 @@ class AppRules:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppRules.
+        r"""Sets the create_time of this AppRules.
 
         规则创建时间(创建时不传，修改时传查询返回的createTime)。
 
@@ -115,7 +115,7 @@ class AppRules:
 
     @property
     def enable(self):
-        """Gets the enable of this AppRules.
+        r"""Gets the enable of this AppRules.
 
         true、false 规则是否启用。
 
@@ -126,7 +126,7 @@ class AppRules:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this AppRules.
+        r"""Sets the enable of this AppRules.
 
         true、false 规则是否启用。
 
@@ -137,7 +137,7 @@ class AppRules:
 
     @property
     def event_name(self):
-        """Gets the event_name of this AppRules.
+        r"""Gets the event_name of this AppRules.
 
         aom_inventory_rules_event规则事件名称，对于服务发现固定为\"aom_inventory_rules_event\"。
 
@@ -148,7 +148,7 @@ class AppRules:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this AppRules.
+        r"""Sets the event_name of this AppRules.
 
         aom_inventory_rules_event规则事件名称，对于服务发现固定为\"aom_inventory_rules_event\"。
 
@@ -159,7 +159,7 @@ class AppRules:
 
     @property
     def hostid(self):
-        """Gets the hostid of this AppRules.
+        r"""Gets the hostid of this AppRules.
 
         主机ID（暂不使用，传空即可）。
 
@@ -170,7 +170,7 @@ class AppRules:
 
     @hostid.setter
     def hostid(self, hostid):
-        """Sets the hostid of this AppRules.
+        r"""Sets the hostid of this AppRules.
 
         主机ID（暂不使用，传空即可）。
 
@@ -181,7 +181,7 @@ class AppRules:
 
     @property
     def id(self):
-        """Gets the id of this AppRules.
+        r"""Gets the id of this AppRules.
 
         创建时填空，修改时填规则ID。
 
@@ -192,7 +192,7 @@ class AppRules:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppRules.
+        r"""Sets the id of this AppRules.
 
         创建时填空，修改时填规则ID。
 
@@ -203,7 +203,7 @@ class AppRules:
 
     @property
     def name(self):
-        """Gets the name of this AppRules.
+        r"""Gets the name of this AppRules.
 
         规则名称。 字符长度为4到63位，以小写字母a-z开头，只能包含0-9/a-z/-，不能以-结尾。
 
@@ -214,7 +214,7 @@ class AppRules:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppRules.
+        r"""Sets the name of this AppRules.
 
         规则名称。 字符长度为4到63位，以小写字母a-z开头，只能包含0-9/a-z/-，不能以-结尾。
 
@@ -225,7 +225,7 @@ class AppRules:
 
     @property
     def projectid(self):
-        """Gets the projectid of this AppRules.
+        r"""Gets the projectid of this AppRules.
 
         租户从IAM申请到的projectid，一般为32位字符串。
 
@@ -236,7 +236,7 @@ class AppRules:
 
     @projectid.setter
     def projectid(self, projectid):
-        """Sets the projectid of this AppRules.
+        r"""Sets the projectid of this AppRules.
 
         租户从IAM申请到的projectid，一般为32位字符串。
 
@@ -247,7 +247,7 @@ class AppRules:
 
     @property
     def spec(self):
-        """Gets the spec of this AppRules.
+        r"""Gets the spec of this AppRules.
 
         :return: The spec of this AppRules.
         :rtype: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
@@ -256,7 +256,7 @@ class AppRules:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this AppRules.
+        r"""Sets the spec of this AppRules.
 
         :param spec: The spec of this AppRules.
         :type spec: :class:`huaweicloudsdkaom.v2.AppRulesSpec`
@@ -265,7 +265,7 @@ class AppRules:
 
     @property
     def desc(self):
-        """Gets the desc of this AppRules.
+        r"""Gets the desc of this AppRules.
 
         自定义描述信息
 
@@ -276,7 +276,7 @@ class AppRules:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this AppRules.
+        r"""Sets the desc of this AppRules.
 
         自定义描述信息
 

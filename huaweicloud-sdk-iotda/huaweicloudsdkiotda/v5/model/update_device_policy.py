@@ -27,7 +27,7 @@ class UpdateDevicePolicy:
     }
 
     def __init__(self, policy_name=None, statement=None):
-        """UpdateDevicePolicy
+        r"""UpdateDevicePolicy
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateDevicePolicy:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateDevicePolicy.
+        r"""Gets the policy_name of this UpdateDevicePolicy.
 
         **参数说明**：策略名称。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -61,7 +61,7 @@ class UpdateDevicePolicy:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateDevicePolicy.
+        r"""Sets the policy_name of this UpdateDevicePolicy.
 
         **参数说明**：策略名称。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -72,7 +72,7 @@ class UpdateDevicePolicy:
 
     @property
     def statement(self):
-        """Gets the statement of this UpdateDevicePolicy.
+        r"""Gets the statement of this UpdateDevicePolicy.
 
         **参数说明**：策略文档。
 
@@ -83,7 +83,7 @@ class UpdateDevicePolicy:
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this UpdateDevicePolicy.
+        r"""Sets the statement of this UpdateDevicePolicy.
 
         **参数说明**：策略文档。
 

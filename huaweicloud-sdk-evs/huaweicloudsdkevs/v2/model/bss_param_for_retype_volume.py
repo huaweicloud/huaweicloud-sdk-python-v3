@@ -25,7 +25,7 @@ class BssParamForRetypeVolume:
     }
 
     def __init__(self, is_auto_pay=None):
-        """BssParamForRetypeVolume
+        r"""BssParamForRetypeVolume
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BssParamForRetypeVolume:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BssParamForRetypeVolume.
+        r"""Gets the is_auto_pay of this BssParamForRetypeVolume.
 
         功能说明：是否立即支付。该参数只有在云硬盘为包周期的情况下有意义。默认值为false 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
 
@@ -54,7 +54,7 @@ class BssParamForRetypeVolume:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BssParamForRetypeVolume.
+        r"""Sets the is_auto_pay of this BssParamForRetypeVolume.
 
         功能说明：是否立即支付。该参数只有在云硬盘为包周期的情况下有意义。默认值为false 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
 

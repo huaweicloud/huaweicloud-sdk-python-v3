@@ -29,7 +29,7 @@ class SetBucketAclRequestBody:
     }
 
     def __init__(self, owner=None, access_control_list=None):
-        """SetBucketAclRequestBody
+        r"""SetBucketAclRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class SetBucketAclRequestBody:
 
     @property
     def owner(self):
-        """Gets the owner of this SetBucketAclRequestBody.
+        r"""Gets the owner of this SetBucketAclRequestBody.
 
         :return: The owner of this SetBucketAclRequestBody.
         :rtype: :class:`huaweicloudsdkobs.v1.Owner`
@@ -61,7 +61,7 @@ class SetBucketAclRequestBody:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SetBucketAclRequestBody.
+        r"""Sets the owner of this SetBucketAclRequestBody.
 
         :param owner: The owner of this SetBucketAclRequestBody.
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
@@ -70,7 +70,7 @@ class SetBucketAclRequestBody:
 
     @property
     def access_control_list(self):
-        """Gets the access_control_list of this SetBucketAclRequestBody.
+        r"""Gets the access_control_list of this SetBucketAclRequestBody.
 
         :return: The access_control_list of this SetBucketAclRequestBody.
         :rtype: :class:`huaweicloudsdkobs.v1.AccessControlList`
@@ -79,7 +79,7 @@ class SetBucketAclRequestBody:
 
     @access_control_list.setter
     def access_control_list(self, access_control_list):
-        """Sets the access_control_list of this SetBucketAclRequestBody.
+        r"""Sets the access_control_list of this SetBucketAclRequestBody.
 
         :param access_control_list: The access_control_list of this SetBucketAclRequestBody.
         :type access_control_list: :class:`huaweicloudsdkobs.v1.AccessControlList`

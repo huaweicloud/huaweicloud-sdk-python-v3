@@ -27,7 +27,7 @@ class UpgradeStrategy:
     }
 
     def __init__(self, type=None, in_place_rolling_update=None):
-        """UpgradeStrategy
+        r"""UpgradeStrategy
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeStrategy:
 
     @property
     def type(self):
-        """Gets the type of this UpgradeStrategy.
+        r"""Gets the type of this UpgradeStrategy.
 
         升级策略类型，当前仅支持原地升级类型\"inPlaceRollingUpdate\"
 
@@ -60,7 +60,7 @@ class UpgradeStrategy:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpgradeStrategy.
+        r"""Sets the type of this UpgradeStrategy.
 
         升级策略类型，当前仅支持原地升级类型\"inPlaceRollingUpdate\"
 
@@ -71,7 +71,7 @@ class UpgradeStrategy:
 
     @property
     def in_place_rolling_update(self):
-        """Gets the in_place_rolling_update of this UpgradeStrategy.
+        r"""Gets the in_place_rolling_update of this UpgradeStrategy.
 
         :return: The in_place_rolling_update of this UpgradeStrategy.
         :rtype: :class:`huaweicloudsdkcce.v3.InPlaceRollingUpdate`
@@ -80,7 +80,7 @@ class UpgradeStrategy:
 
     @in_place_rolling_update.setter
     def in_place_rolling_update(self, in_place_rolling_update):
-        """Sets the in_place_rolling_update of this UpgradeStrategy.
+        r"""Sets the in_place_rolling_update of this UpgradeStrategy.
 
         :param in_place_rolling_update: The in_place_rolling_update of this UpgradeStrategy.
         :type in_place_rolling_update: :class:`huaweicloudsdkcce.v3.InPlaceRollingUpdate`

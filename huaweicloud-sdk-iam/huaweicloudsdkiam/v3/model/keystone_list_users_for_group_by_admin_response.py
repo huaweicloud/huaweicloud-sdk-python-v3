@@ -28,7 +28,7 @@ class KeystoneListUsersForGroupByAdminResponse(SdkResponse):
     }
 
     def __init__(self, links=None, users=None):
-        """KeystoneListUsersForGroupByAdminResponse
+        r"""KeystoneListUsersForGroupByAdminResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListUsersForGroupByAdminResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListUsersForGroupByAdminResponse.
+        r"""Gets the links of this KeystoneListUsersForGroupByAdminResponse.
 
         :return: The links of this KeystoneListUsersForGroupByAdminResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListUsersForGroupByAdminResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListUsersForGroupByAdminResponse.
+        r"""Sets the links of this KeystoneListUsersForGroupByAdminResponse.
 
         :param links: The links of this KeystoneListUsersForGroupByAdminResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListUsersForGroupByAdminResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this KeystoneListUsersForGroupByAdminResponse.
+        r"""Gets the users of this KeystoneListUsersForGroupByAdminResponse.
 
         IAM用户信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListUsersForGroupByAdminResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this KeystoneListUsersForGroupByAdminResponse.
+        r"""Sets the users of this KeystoneListUsersForGroupByAdminResponse.
 
         IAM用户信息列表。
 

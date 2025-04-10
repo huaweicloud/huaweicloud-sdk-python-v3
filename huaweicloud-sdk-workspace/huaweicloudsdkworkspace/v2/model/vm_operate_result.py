@@ -31,7 +31,7 @@ class VmOperateResult:
     }
 
     def __init__(self, desktop_id=None, desktop_name=None, error_code=None, error_msg=None):
-        """VmOperateResult
+        r"""VmOperateResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VmOperateResult:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this VmOperateResult.
+        r"""Gets the desktop_id of this VmOperateResult.
 
         桌面ID。
 
@@ -75,7 +75,7 @@ class VmOperateResult:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this VmOperateResult.
+        r"""Sets the desktop_id of this VmOperateResult.
 
         桌面ID。
 
@@ -86,7 +86,7 @@ class VmOperateResult:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this VmOperateResult.
+        r"""Gets the desktop_name of this VmOperateResult.
 
         桌面名称。
 
@@ -97,7 +97,7 @@ class VmOperateResult:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this VmOperateResult.
+        r"""Sets the desktop_name of this VmOperateResult.
 
         桌面名称。
 
@@ -108,7 +108,7 @@ class VmOperateResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this VmOperateResult.
+        r"""Gets the error_code of this VmOperateResult.
 
         操作失败的错误码。
 
@@ -119,7 +119,7 @@ class VmOperateResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this VmOperateResult.
+        r"""Sets the error_code of this VmOperateResult.
 
         操作失败的错误码。
 
@@ -130,7 +130,7 @@ class VmOperateResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this VmOperateResult.
+        r"""Gets the error_msg of this VmOperateResult.
 
         操作失败的原因描述。
 
@@ -141,7 +141,7 @@ class VmOperateResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this VmOperateResult.
+        r"""Sets the error_msg of this VmOperateResult.
 
         操作失败的原因描述。
 

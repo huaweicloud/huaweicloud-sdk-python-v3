@@ -27,7 +27,7 @@ class ListEnvTagsRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ListEnvTagsRequest
+        r"""ListEnvTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEnvTagsRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ListEnvTagsRequest.
+        r"""Gets the x_business_id of this ListEnvTagsRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ListEnvTagsRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ListEnvTagsRequest.
+        r"""Sets the x_business_id of this ListEnvTagsRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ListEnvTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListEnvTagsRequest.
+        r"""Gets the body of this ListEnvTagsRequest.
 
         :return: The body of this ListEnvTagsRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TagParam`
@@ -80,7 +80,7 @@ class ListEnvTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEnvTagsRequest.
+        r"""Sets the body of this ListEnvTagsRequest.
 
         :param body: The body of this ListEnvTagsRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TagParam`

@@ -35,7 +35,7 @@ class StandardReqDataByVideoAndNameAndId:
     }
 
     def __init__(self, verification_name=None, verification_id=None, video=None, actions=None, nod_threshold=None, detail=None):
-        """StandardReqDataByVideoAndNameAndId
+        r"""StandardReqDataByVideoAndNameAndId
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @property
     def verification_name(self):
-        """Gets the verification_name of this StandardReqDataByVideoAndNameAndId.
+        r"""Gets the verification_name of this StandardReqDataByVideoAndNameAndId.
 
         被验证人的姓名。
 
@@ -85,7 +85,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @verification_name.setter
     def verification_name(self, verification_name):
-        """Sets the verification_name of this StandardReqDataByVideoAndNameAndId.
+        r"""Sets the verification_name of this StandardReqDataByVideoAndNameAndId.
 
         被验证人的姓名。
 
@@ -96,7 +96,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @property
     def verification_id(self):
-        """Gets the verification_id of this StandardReqDataByVideoAndNameAndId.
+        r"""Gets the verification_id of this StandardReqDataByVideoAndNameAndId.
 
         被验证人的身份证号码。
 
@@ -107,7 +107,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @verification_id.setter
     def verification_id(self, verification_id):
-        """Sets the verification_id of this StandardReqDataByVideoAndNameAndId.
+        r"""Sets the verification_id of this StandardReqDataByVideoAndNameAndId.
 
         被验证人的身份证号码。
 
@@ -118,7 +118,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @property
     def video(self):
-        """Gets the video of this StandardReqDataByVideoAndNameAndId.
+        r"""Gets the video of this StandardReqDataByVideoAndNameAndId.
 
         现场拍摄人像视频数据，使用base64编码，要求base64编码后大小不超过10M。
 
@@ -129,7 +129,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this StandardReqDataByVideoAndNameAndId.
+        r"""Sets the video of this StandardReqDataByVideoAndNameAndId.
 
         现场拍摄人像视频数据，使用base64编码，要求base64编码后大小不超过10M。
 
@@ -140,7 +140,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @property
     def actions(self):
-        """Gets the actions of this StandardReqDataByVideoAndNameAndId.
+        r"""Gets the actions of this StandardReqDataByVideoAndNameAndId.
 
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
 
@@ -151,7 +151,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this StandardReqDataByVideoAndNameAndId.
+        r"""Sets the actions of this StandardReqDataByVideoAndNameAndId.
 
         动作代码顺序列表，英文逗号（,）分隔。建议单动作，目前支持的动作有： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作
 
@@ -162,7 +162,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @property
     def nod_threshold(self):
-        """Gets the nod_threshold of this StandardReqDataByVideoAndNameAndId.
+        r"""Gets the nod_threshold of this StandardReqDataByVideoAndNameAndId.
 
         该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
 
@@ -173,7 +173,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @nod_threshold.setter
     def nod_threshold(self, nod_threshold):
-        """Sets the nod_threshold of this StandardReqDataByVideoAndNameAndId.
+        r"""Sets the nod_threshold of this StandardReqDataByVideoAndNameAndId.
 
         该参数为点头动作幅度的判断门限，取值范围：[1,90]，默认为10，单位为度。该值设置越大，则越难判断为点头。
 
@@ -184,7 +184,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @property
     def detail(self):
-        """Gets the detail of this StandardReqDataByVideoAndNameAndId.
+        r"""Gets the detail of this StandardReqDataByVideoAndNameAndId.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 
@@ -195,7 +195,7 @@ class StandardReqDataByVideoAndNameAndId:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this StandardReqDataByVideoAndNameAndId.
+        r"""Sets the detail of this StandardReqDataByVideoAndNameAndId.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 

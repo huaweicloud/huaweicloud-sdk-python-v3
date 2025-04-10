@@ -24,7 +24,7 @@ class DeleteFsDirResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteFsDirResponse
+        r"""DeleteFsDirResponse
 
         The model defined in huaweicloud sdk
 

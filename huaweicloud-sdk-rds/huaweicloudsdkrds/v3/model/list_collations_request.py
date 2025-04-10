@@ -25,7 +25,7 @@ class ListCollationsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListCollationsRequest
+        r"""ListCollationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCollationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCollationsRequest.
+        r"""Gets the x_language of this ListCollationsRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ListCollationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCollationsRequest.
+        r"""Sets the x_language of this ListCollationsRequest.
 
         语言
 

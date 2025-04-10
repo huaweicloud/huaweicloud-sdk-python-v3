@@ -63,7 +63,7 @@ class VifPeer:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, address_family=None, local_gateway_ip=None, remote_gateway_ip=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, device_id=None, bgp_route_limit=None, bgp_status=None, status=None, vif_id=None, receive_route_num=None, enable_nqa=None, enable_bfd=None):
-        """VifPeer
+        r"""VifPeer
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class VifPeer:
 
     @property
     def id(self):
-        """Gets the id of this VifPeer.
+        r"""Gets the id of this VifPeer.
 
         资源ID
 
@@ -187,7 +187,7 @@ class VifPeer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VifPeer.
+        r"""Sets the id of this VifPeer.
 
         资源ID
 
@@ -198,7 +198,7 @@ class VifPeer:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this VifPeer.
+        r"""Gets the tenant_id of this VifPeer.
 
         归属租户ID
 
@@ -209,7 +209,7 @@ class VifPeer:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this VifPeer.
+        r"""Sets the tenant_id of this VifPeer.
 
         归属租户ID
 
@@ -220,7 +220,7 @@ class VifPeer:
 
     @property
     def name(self):
-        """Gets the name of this VifPeer.
+        r"""Gets the name of this VifPeer.
 
         VIF对等体名字
 
@@ -231,7 +231,7 @@ class VifPeer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VifPeer.
+        r"""Sets the name of this VifPeer.
 
         VIF对等体名字
 
@@ -242,7 +242,7 @@ class VifPeer:
 
     @property
     def description(self):
-        """Gets the description of this VifPeer.
+        r"""Gets the description of this VifPeer.
 
         VIF对等体名字描述信息
 
@@ -253,7 +253,7 @@ class VifPeer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VifPeer.
+        r"""Sets the description of this VifPeer.
 
         VIF对等体名字描述信息
 
@@ -264,7 +264,7 @@ class VifPeer:
 
     @property
     def address_family(self):
-        """Gets the address_family of this VifPeer.
+        r"""Gets the address_family of this VifPeer.
 
         接口的地址簇类型，ipv4，ipv6
 
@@ -275,7 +275,7 @@ class VifPeer:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this VifPeer.
+        r"""Sets the address_family of this VifPeer.
 
         接口的地址簇类型，ipv4，ipv6
 
@@ -286,7 +286,7 @@ class VifPeer:
 
     @property
     def local_gateway_ip(self):
-        """Gets the local_gateway_ip of this VifPeer.
+        r"""Gets the local_gateway_ip of this VifPeer.
 
         VIF对等体云侧接口地址
 
@@ -297,7 +297,7 @@ class VifPeer:
 
     @local_gateway_ip.setter
     def local_gateway_ip(self, local_gateway_ip):
-        """Sets the local_gateway_ip of this VifPeer.
+        r"""Sets the local_gateway_ip of this VifPeer.
 
         VIF对等体云侧接口地址
 
@@ -308,7 +308,7 @@ class VifPeer:
 
     @property
     def remote_gateway_ip(self):
-        """Gets the remote_gateway_ip of this VifPeer.
+        r"""Gets the remote_gateway_ip of this VifPeer.
 
         VIF对等体客户侧接口地址
 
@@ -319,7 +319,7 @@ class VifPeer:
 
     @remote_gateway_ip.setter
     def remote_gateway_ip(self, remote_gateway_ip):
-        """Sets the remote_gateway_ip of this VifPeer.
+        r"""Sets the remote_gateway_ip of this VifPeer.
 
         VIF对等体客户侧接口地址
 
@@ -330,7 +330,7 @@ class VifPeer:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this VifPeer.
+        r"""Gets the route_mode of this VifPeer.
 
         路由模式：static/bgp
 
@@ -341,7 +341,7 @@ class VifPeer:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this VifPeer.
+        r"""Sets the route_mode of this VifPeer.
 
         路由模式：static/bgp
 
@@ -352,7 +352,7 @@ class VifPeer:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this VifPeer.
+        r"""Gets the bgp_asn of this VifPeer.
 
         BGP邻居的AS号
 
@@ -363,7 +363,7 @@ class VifPeer:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this VifPeer.
+        r"""Sets the bgp_asn of this VifPeer.
 
         BGP邻居的AS号
 
@@ -374,7 +374,7 @@ class VifPeer:
 
     @property
     def bgp_md5(self):
-        """Gets the bgp_md5 of this VifPeer.
+        r"""Gets the bgp_md5 of this VifPeer.
 
         BGP邻居的MD5密码
 
@@ -385,7 +385,7 @@ class VifPeer:
 
     @bgp_md5.setter
     def bgp_md5(self, bgp_md5):
-        """Sets the bgp_md5 of this VifPeer.
+        r"""Sets the bgp_md5 of this VifPeer.
 
         BGP邻居的MD5密码
 
@@ -396,7 +396,7 @@ class VifPeer:
 
     @property
     def remote_ep_group(self):
-        """Gets the remote_ep_group of this VifPeer.
+        r"""Gets the remote_ep_group of this VifPeer.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -407,7 +407,7 @@ class VifPeer:
 
     @remote_ep_group.setter
     def remote_ep_group(self, remote_ep_group):
-        """Sets the remote_ep_group of this VifPeer.
+        r"""Sets the remote_ep_group of this VifPeer.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -418,7 +418,7 @@ class VifPeer:
 
     @property
     def service_ep_group(self):
-        """Gets the service_ep_group of this VifPeer.
+        r"""Gets the service_ep_group of this VifPeer.
 
         该字段用于公网专线接口,表示租户可以访问云上公网服务地址列表
 
@@ -429,7 +429,7 @@ class VifPeer:
 
     @service_ep_group.setter
     def service_ep_group(self, service_ep_group):
-        """Sets the service_ep_group of this VifPeer.
+        r"""Sets the service_ep_group of this VifPeer.
 
         该字段用于公网专线接口,表示租户可以访问云上公网服务地址列表
 
@@ -440,7 +440,7 @@ class VifPeer:
 
     @property
     def device_id(self):
-        """Gets the device_id of this VifPeer.
+        r"""Gets the device_id of this VifPeer.
 
         归属的设备ID
 
@@ -451,7 +451,7 @@ class VifPeer:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this VifPeer.
+        r"""Sets the device_id of this VifPeer.
 
         归属的设备ID
 
@@ -462,7 +462,7 @@ class VifPeer:
 
     @property
     def bgp_route_limit(self):
-        """Gets the bgp_route_limit of this VifPeer.
+        r"""Gets the bgp_route_limit of this VifPeer.
 
         BGP的路由配置规格
 
@@ -473,7 +473,7 @@ class VifPeer:
 
     @bgp_route_limit.setter
     def bgp_route_limit(self, bgp_route_limit):
-        """Sets the bgp_route_limit of this VifPeer.
+        r"""Sets the bgp_route_limit of this VifPeer.
 
         BGP的路由配置规格
 
@@ -484,7 +484,7 @@ class VifPeer:
 
     @property
     def bgp_status(self):
-        """Gets the bgp_status of this VifPeer.
+        r"""Gets the bgp_status of this VifPeer.
 
         接口BGP协议状态,如果是静态路由接口则状态为 null
 
@@ -495,7 +495,7 @@ class VifPeer:
 
     @bgp_status.setter
     def bgp_status(self, bgp_status):
-        """Sets the bgp_status of this VifPeer.
+        r"""Sets the bgp_status of this VifPeer.
 
         接口BGP协议状态,如果是静态路由接口则状态为 null
 
@@ -506,7 +506,7 @@ class VifPeer:
 
     @property
     def status(self):
-        """Gets the status of this VifPeer.
+        r"""Gets the status of this VifPeer.
 
         VIF对等体状态
 
@@ -517,7 +517,7 @@ class VifPeer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VifPeer.
+        r"""Sets the status of this VifPeer.
 
         VIF对等体状态
 
@@ -528,7 +528,7 @@ class VifPeer:
 
     @property
     def vif_id(self):
-        """Gets the vif_id of this VifPeer.
+        r"""Gets the vif_id of this VifPeer.
 
         vif对等体对应的虚拟接口ID
 
@@ -539,7 +539,7 @@ class VifPeer:
 
     @vif_id.setter
     def vif_id(self, vif_id):
-        """Sets the vif_id of this VifPeer.
+        r"""Sets the vif_id of this VifPeer.
 
         vif对等体对应的虚拟接口ID
 
@@ -550,7 +550,7 @@ class VifPeer:
 
     @property
     def receive_route_num(self):
-        """Gets the receive_route_num of this VifPeer.
+        r"""Gets the receive_route_num of this VifPeer.
 
         路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
 
@@ -561,7 +561,7 @@ class VifPeer:
 
     @receive_route_num.setter
     def receive_route_num(self, receive_route_num):
-        """Sets the receive_route_num of this VifPeer.
+        r"""Sets the receive_route_num of this VifPeer.
 
         路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
 
@@ -572,7 +572,7 @@ class VifPeer:
 
     @property
     def enable_nqa(self):
-        """Gets the enable_nqa of this VifPeer.
+        r"""Gets the enable_nqa of this VifPeer.
 
         是否使能nqa功能：true或false
 
@@ -583,7 +583,7 @@ class VifPeer:
 
     @enable_nqa.setter
     def enable_nqa(self, enable_nqa):
-        """Sets the enable_nqa of this VifPeer.
+        r"""Sets the enable_nqa of this VifPeer.
 
         是否使能nqa功能：true或false
 
@@ -594,7 +594,7 @@ class VifPeer:
 
     @property
     def enable_bfd(self):
-        """Gets the enable_bfd of this VifPeer.
+        r"""Gets the enable_bfd of this VifPeer.
 
         是否使能bfd功能：true或false
 
@@ -605,7 +605,7 @@ class VifPeer:
 
     @enable_bfd.setter
     def enable_bfd(self, enable_bfd):
-        """Sets the enable_bfd of this VifPeer.
+        r"""Sets the enable_bfd of this VifPeer.
 
         是否使能bfd功能：true或false
 

@@ -33,7 +33,7 @@ class CertInfo:
     }
 
     def __init__(self, cert_name=None, id=None, apply_domain=None, expire_time=None, expire_status=None):
-        """CertInfo
+        r"""CertInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CertInfo:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this CertInfo.
+        r"""Gets the cert_name of this CertInfo.
 
         证书名称
 
@@ -77,7 +77,7 @@ class CertInfo:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this CertInfo.
+        r"""Sets the cert_name of this CertInfo.
 
         证书名称
 
@@ -88,7 +88,7 @@ class CertInfo:
 
     @property
     def id(self):
-        """Gets the id of this CertInfo.
+        r"""Gets the id of this CertInfo.
 
         证书id
 
@@ -99,7 +99,7 @@ class CertInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertInfo.
+        r"""Sets the id of this CertInfo.
 
         证书id
 
@@ -110,7 +110,7 @@ class CertInfo:
 
     @property
     def apply_domain(self):
-        """Gets the apply_domain of this CertInfo.
+        r"""Gets the apply_domain of this CertInfo.
 
         适用域名
 
@@ -121,7 +121,7 @@ class CertInfo:
 
     @apply_domain.setter
     def apply_domain(self, apply_domain):
-        """Sets the apply_domain of this CertInfo.
+        r"""Sets the apply_domain of this CertInfo.
 
         适用域名
 
@@ -132,7 +132,7 @@ class CertInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CertInfo.
+        r"""Gets the expire_time of this CertInfo.
 
         过期时间
 
@@ -143,7 +143,7 @@ class CertInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CertInfo.
+        r"""Sets the expire_time of this CertInfo.
 
         过期时间
 
@@ -154,7 +154,7 @@ class CertInfo:
 
     @property
     def expire_status(self):
-        """Gets the expire_status of this CertInfo.
+        r"""Gets the expire_status of this CertInfo.
 
         过期状态
 
@@ -165,7 +165,7 @@ class CertInfo:
 
     @expire_status.setter
     def expire_status(self, expire_status):
-        """Sets the expire_status of this CertInfo.
+        r"""Sets the expire_status of this CertInfo.
 
         过期状态
 

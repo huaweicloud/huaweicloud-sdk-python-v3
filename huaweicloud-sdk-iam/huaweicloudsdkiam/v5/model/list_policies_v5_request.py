@@ -35,7 +35,7 @@ class ListPoliciesV5Request:
     }
 
     def __init__(self, limit=None, marker=None, policy_type=None, path_prefix=None, only_attached=None, x_language=None):
-        """ListPoliciesV5Request
+        r"""ListPoliciesV5Request
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListPoliciesV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPoliciesV5Request.
+        r"""Gets the limit of this ListPoliciesV5Request.
 
         每页显示的条目数量。
 
@@ -89,7 +89,7 @@ class ListPoliciesV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPoliciesV5Request.
+        r"""Sets the limit of this ListPoliciesV5Request.
 
         每页显示的条目数量。
 
@@ -100,7 +100,7 @@ class ListPoliciesV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPoliciesV5Request.
+        r"""Gets the marker of this ListPoliciesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -111,7 +111,7 @@ class ListPoliciesV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPoliciesV5Request.
+        r"""Sets the marker of this ListPoliciesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -122,7 +122,7 @@ class ListPoliciesV5Request:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ListPoliciesV5Request.
+        r"""Gets the policy_type of this ListPoliciesV5Request.
 
         身份策略类型，可以为“自定义”（custom）或“系统预置”（system）。
 
@@ -133,7 +133,7 @@ class ListPoliciesV5Request:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ListPoliciesV5Request.
+        r"""Sets the policy_type of this ListPoliciesV5Request.
 
         身份策略类型，可以为“自定义”（custom）或“系统预置”（system）。
 
@@ -144,7 +144,7 @@ class ListPoliciesV5Request:
 
     @property
     def path_prefix(self):
-        """Gets the path_prefix of this ListPoliciesV5Request.
+        r"""Gets the path_prefix of this ListPoliciesV5Request.
 
         资源路径前缀，由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -155,7 +155,7 @@ class ListPoliciesV5Request:
 
     @path_prefix.setter
     def path_prefix(self, path_prefix):
-        """Sets the path_prefix of this ListPoliciesV5Request.
+        r"""Sets the path_prefix of this ListPoliciesV5Request.
 
         资源路径前缀，由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -166,7 +166,7 @@ class ListPoliciesV5Request:
 
     @property
     def only_attached(self):
-        """Gets the only_attached of this ListPoliciesV5Request.
+        r"""Gets the only_attached of this ListPoliciesV5Request.
 
         是否仅列举存在附加实体的身份策略。
 
@@ -177,7 +177,7 @@ class ListPoliciesV5Request:
 
     @only_attached.setter
     def only_attached(self, only_attached):
-        """Sets the only_attached of this ListPoliciesV5Request.
+        r"""Sets the only_attached of this ListPoliciesV5Request.
 
         是否仅列举存在附加实体的身份策略。
 
@@ -188,7 +188,7 @@ class ListPoliciesV5Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPoliciesV5Request.
+        r"""Gets the x_language of this ListPoliciesV5Request.
 
         选择接口返回的信息的语言，可以为中文（\"zh-cn\"）或英文（\"en-us\"），默认为中文。
 
@@ -199,7 +199,7 @@ class ListPoliciesV5Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPoliciesV5Request.
+        r"""Sets the x_language of this ListPoliciesV5Request.
 
         选择接口返回的信息的语言，可以为中文（\"zh-cn\"）或英文（\"en-us\"），默认为中文。
 

@@ -27,7 +27,7 @@ class ChangeUserStatusRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """ChangeUserStatusRequest
+        r"""ChangeUserStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeUserStatusRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ChangeUserStatusRequest.
+        r"""Gets the user_id of this ChangeUserStatusRequest.
 
         用户ID。
 
@@ -60,7 +60,7 @@ class ChangeUserStatusRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ChangeUserStatusRequest.
+        r"""Sets the user_id of this ChangeUserStatusRequest.
 
         用户ID。
 
@@ -71,7 +71,7 @@ class ChangeUserStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeUserStatusRequest.
+        r"""Gets the body of this ChangeUserStatusRequest.
 
         :return: The body of this ChangeUserStatusRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OperateUserReq`
@@ -80,7 +80,7 @@ class ChangeUserStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeUserStatusRequest.
+        r"""Sets the body of this ChangeUserStatusRequest.
 
         :param body: The body of this ChangeUserStatusRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.OperateUserReq`

@@ -27,7 +27,7 @@ class SearchQaPairsReq:
     }
 
     def __init__(self, domain=None, top=None):
-        """SearchQaPairsReq
+        r"""SearchQaPairsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchQaPairsReq:
 
     @property
     def domain(self):
-        """Gets the domain of this SearchQaPairsReq.
+        r"""Gets the domain of this SearchQaPairsReq.
 
         主题名称
 
@@ -61,7 +61,7 @@ class SearchQaPairsReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this SearchQaPairsReq.
+        r"""Sets the domain of this SearchQaPairsReq.
 
         主题名称
 
@@ -72,7 +72,7 @@ class SearchQaPairsReq:
 
     @property
     def top(self):
-        """Gets the top of this SearchQaPairsReq.
+        r"""Gets the top of this SearchQaPairsReq.
 
         返回匹配度最高的数据条数
 
@@ -83,7 +83,7 @@ class SearchQaPairsReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this SearchQaPairsReq.
+        r"""Sets the top of this SearchQaPairsReq.
 
         返回匹配度最高的数据条数
 

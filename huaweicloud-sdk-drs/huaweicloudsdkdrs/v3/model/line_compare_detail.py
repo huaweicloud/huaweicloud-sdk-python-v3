@@ -37,7 +37,7 @@ class LineCompareDetail:
     }
 
     def __init__(self, source_table_name=None, target_table_name=None, source_row_num=None, target_row_num=None, diff_row_num=None, line_compare_result=None, message=None):
-        """LineCompareDetail
+        r"""LineCompareDetail
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class LineCompareDetail:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this LineCompareDetail.
+        r"""Gets the source_table_name of this LineCompareDetail.
 
         源库的表名称。
 
@@ -90,7 +90,7 @@ class LineCompareDetail:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this LineCompareDetail.
+        r"""Sets the source_table_name of this LineCompareDetail.
 
         源库的表名称。
 
@@ -101,7 +101,7 @@ class LineCompareDetail:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this LineCompareDetail.
+        r"""Gets the target_table_name of this LineCompareDetail.
 
         目标库的表名称。
 
@@ -112,7 +112,7 @@ class LineCompareDetail:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this LineCompareDetail.
+        r"""Sets the target_table_name of this LineCompareDetail.
 
         目标库的表名称。
 
@@ -123,7 +123,7 @@ class LineCompareDetail:
 
     @property
     def source_row_num(self):
-        """Gets the source_row_num of this LineCompareDetail.
+        r"""Gets the source_row_num of this LineCompareDetail.
 
         源库的表行数。
 
@@ -134,7 +134,7 @@ class LineCompareDetail:
 
     @source_row_num.setter
     def source_row_num(self, source_row_num):
-        """Sets the source_row_num of this LineCompareDetail.
+        r"""Sets the source_row_num of this LineCompareDetail.
 
         源库的表行数。
 
@@ -145,7 +145,7 @@ class LineCompareDetail:
 
     @property
     def target_row_num(self):
-        """Gets the target_row_num of this LineCompareDetail.
+        r"""Gets the target_row_num of this LineCompareDetail.
 
         目标库的表行数。
 
@@ -156,7 +156,7 @@ class LineCompareDetail:
 
     @target_row_num.setter
     def target_row_num(self, target_row_num):
-        """Sets the target_row_num of this LineCompareDetail.
+        r"""Sets the target_row_num of this LineCompareDetail.
 
         目标库的表行数。
 
@@ -167,7 +167,7 @@ class LineCompareDetail:
 
     @property
     def diff_row_num(self):
-        """Gets the diff_row_num of this LineCompareDetail.
+        r"""Gets the diff_row_num of this LineCompareDetail.
 
         源库的表和目标库的表的差异值。
 
@@ -178,7 +178,7 @@ class LineCompareDetail:
 
     @diff_row_num.setter
     def diff_row_num(self, diff_row_num):
-        """Sets the diff_row_num of this LineCompareDetail.
+        r"""Sets the diff_row_num of this LineCompareDetail.
 
         源库的表和目标库的表的差异值。
 
@@ -189,7 +189,7 @@ class LineCompareDetail:
 
     @property
     def line_compare_result(self):
-        """Gets the line_compare_result of this LineCompareDetail.
+        r"""Gets the line_compare_result of this LineCompareDetail.
 
         对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
@@ -200,7 +200,7 @@ class LineCompareDetail:
 
     @line_compare_result.setter
     def line_compare_result(self, line_compare_result):
-        """Sets the line_compare_result of this LineCompareDetail.
+        r"""Sets the line_compare_result of this LineCompareDetail.
 
         对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
@@ -211,7 +211,7 @@ class LineCompareDetail:
 
     @property
     def message(self):
-        """Gets the message of this LineCompareDetail.
+        r"""Gets the message of this LineCompareDetail.
 
         附加信息。
 
@@ -222,7 +222,7 @@ class LineCompareDetail:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this LineCompareDetail.
+        r"""Sets the message of this LineCompareDetail.
 
         附加信息。
 

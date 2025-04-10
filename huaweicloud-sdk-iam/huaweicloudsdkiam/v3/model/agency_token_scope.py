@@ -27,7 +27,7 @@ class AgencyTokenScope:
     }
 
     def __init__(self, domain=None, project=None):
-        """AgencyTokenScope
+        r"""AgencyTokenScope
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AgencyTokenScope:
 
     @property
     def domain(self):
-        """Gets the domain of this AgencyTokenScope.
+        r"""Gets the domain of this AgencyTokenScope.
 
         :return: The domain of this AgencyTokenScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
@@ -59,7 +59,7 @@ class AgencyTokenScope:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AgencyTokenScope.
+        r"""Sets the domain of this AgencyTokenScope.
 
         :param domain: The domain of this AgencyTokenScope.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
@@ -68,7 +68,7 @@ class AgencyTokenScope:
 
     @property
     def project(self):
-        """Gets the project of this AgencyTokenScope.
+        r"""Gets the project of this AgencyTokenScope.
 
         :return: The project of this AgencyTokenScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`
@@ -77,7 +77,7 @@ class AgencyTokenScope:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this AgencyTokenScope.
+        r"""Sets the project of this AgencyTokenScope.
 
         :param project: The project of this AgencyTokenScope.
         :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`

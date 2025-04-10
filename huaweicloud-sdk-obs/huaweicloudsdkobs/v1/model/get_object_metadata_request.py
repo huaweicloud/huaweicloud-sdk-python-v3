@@ -47,7 +47,7 @@ class GetObjectMetadataRequest:
     }
 
     def __init__(self, bucket_name=None, object_key=None, date=None, version_id=None, origin=None, access_control_request_headers=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, success_action_redirect=None, x_obs_expires=None):
-        """GetObjectMetadataRequest
+        r"""GetObjectMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class GetObjectMetadataRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this GetObjectMetadataRequest.
+        r"""Gets the bucket_name of this GetObjectMetadataRequest.
 
         Name of the bucket.
 
@@ -123,7 +123,7 @@ class GetObjectMetadataRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this GetObjectMetadataRequest.
+        r"""Sets the bucket_name of this GetObjectMetadataRequest.
 
         Name of the bucket.
 
@@ -134,7 +134,7 @@ class GetObjectMetadataRequest:
 
     @property
     def object_key(self):
-        """Gets the object_key of this GetObjectMetadataRequest.
+        r"""Gets the object_key of this GetObjectMetadataRequest.
 
         Name of the object whose metadata will be returned.
 
@@ -145,7 +145,7 @@ class GetObjectMetadataRequest:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this GetObjectMetadataRequest.
+        r"""Sets the object_key of this GetObjectMetadataRequest.
 
         Name of the object whose metadata will be returned.
 
@@ -156,7 +156,7 @@ class GetObjectMetadataRequest:
 
     @property
     def date(self):
-        """Gets the date of this GetObjectMetadataRequest.
+        r"""Gets the date of this GetObjectMetadataRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -167,7 +167,7 @@ class GetObjectMetadataRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetObjectMetadataRequest.
+        r"""Sets the date of this GetObjectMetadataRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -178,7 +178,7 @@ class GetObjectMetadataRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this GetObjectMetadataRequest.
+        r"""Gets the version_id of this GetObjectMetadataRequest.
 
         Version ID of the object.
 
@@ -189,7 +189,7 @@ class GetObjectMetadataRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this GetObjectMetadataRequest.
+        r"""Sets the version_id of this GetObjectMetadataRequest.
 
         Version ID of the object.
 
@@ -200,7 +200,7 @@ class GetObjectMetadataRequest:
 
     @property
     def origin(self):
-        """Gets the origin of this GetObjectMetadataRequest.
+        r"""Gets the origin of this GetObjectMetadataRequest.
 
         Origin (usually a domain name) specified by the pre-request (a cross-origin request).
 
@@ -211,7 +211,7 @@ class GetObjectMetadataRequest:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this GetObjectMetadataRequest.
+        r"""Sets the origin of this GetObjectMetadataRequest.
 
         Origin (usually a domain name) specified by the pre-request (a cross-origin request).
 
@@ -222,7 +222,7 @@ class GetObjectMetadataRequest:
 
     @property
     def access_control_request_headers(self):
-        """Gets the access_control_request_headers of this GetObjectMetadataRequest.
+        r"""Gets the access_control_request_headers of this GetObjectMetadataRequest.
 
         HTTP headers that can be contained in a request.
 
@@ -233,7 +233,7 @@ class GetObjectMetadataRequest:
 
     @access_control_request_headers.setter
     def access_control_request_headers(self, access_control_request_headers):
-        """Sets the access_control_request_headers of this GetObjectMetadataRequest.
+        r"""Sets the access_control_request_headers of this GetObjectMetadataRequest.
 
         HTTP headers that can be contained in a request.
 
@@ -244,7 +244,7 @@ class GetObjectMetadataRequest:
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
 
         The decryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -255,7 +255,7 @@ class GetObjectMetadataRequest:
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this GetObjectMetadataRequest.
 
         The decryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -266,7 +266,7 @@ class GetObjectMetadataRequest:
 
     @property
     def x_obs_server_side_encryption_customer_key(self):
-        """Gets the x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
 
         Decryption key used for SSE-C.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -277,7 +277,7 @@ class GetObjectMetadataRequest:
 
     @x_obs_server_side_encryption_customer_key.setter
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
-        """Sets the x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key of this GetObjectMetadataRequest.
 
         Decryption key used for SSE-C.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -288,7 +288,7 @@ class GetObjectMetadataRequest:
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
 
         MD5 value of the key used to encrypt objects in SSE-C mode. An MD5 value is used to ensure that there is no error during the key transmission.Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
@@ -299,7 +299,7 @@ class GetObjectMetadataRequest:
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this GetObjectMetadataRequest.
 
         MD5 value of the key used to encrypt objects in SSE-C mode. An MD5 value is used to ensure that there is no error during the key transmission.Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
@@ -310,7 +310,7 @@ class GetObjectMetadataRequest:
 
     @property
     def success_action_redirect(self):
-        """Gets the success_action_redirect of this GetObjectMetadataRequest.
+        r"""Gets the success_action_redirect of this GetObjectMetadataRequest.
 
         The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
@@ -321,7 +321,7 @@ class GetObjectMetadataRequest:
 
     @success_action_redirect.setter
     def success_action_redirect(self, success_action_redirect):
-        """Sets the success_action_redirect of this GetObjectMetadataRequest.
+        r"""Sets the success_action_redirect of this GetObjectMetadataRequest.
 
         The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
@@ -332,7 +332,7 @@ class GetObjectMetadataRequest:
 
     @property
     def x_obs_expires(self):
-        """Gets the x_obs_expires of this GetObjectMetadataRequest.
+        r"""Gets the x_obs_expires of this GetObjectMetadataRequest.
 
         When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified.  This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 
@@ -343,7 +343,7 @@ class GetObjectMetadataRequest:
 
     @x_obs_expires.setter
     def x_obs_expires(self, x_obs_expires):
-        """Sets the x_obs_expires of this GetObjectMetadataRequest.
+        r"""Sets the x_obs_expires of this GetObjectMetadataRequest.
 
         When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified.  This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 

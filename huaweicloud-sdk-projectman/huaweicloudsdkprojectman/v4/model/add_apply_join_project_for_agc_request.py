@@ -29,7 +29,7 @@ class AddApplyJoinProjectForAgcRequest:
     }
 
     def __init__(self, domain_id=None, user_id=None, project_id=None):
-        """AddApplyJoinProjectForAgcRequest
+        r"""AddApplyJoinProjectForAgcRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddApplyJoinProjectForAgcRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AddApplyJoinProjectForAgcRequest.
+        r"""Gets the domain_id of this AddApplyJoinProjectForAgcRequest.
 
         租户id
 
@@ -65,7 +65,7 @@ class AddApplyJoinProjectForAgcRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AddApplyJoinProjectForAgcRequest.
+        r"""Sets the domain_id of this AddApplyJoinProjectForAgcRequest.
 
         租户id
 
@@ -76,7 +76,7 @@ class AddApplyJoinProjectForAgcRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AddApplyJoinProjectForAgcRequest.
+        r"""Gets the user_id of this AddApplyJoinProjectForAgcRequest.
 
         用户id
 
@@ -87,7 +87,7 @@ class AddApplyJoinProjectForAgcRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AddApplyJoinProjectForAgcRequest.
+        r"""Sets the user_id of this AddApplyJoinProjectForAgcRequest.
 
         用户id
 
@@ -98,7 +98,7 @@ class AddApplyJoinProjectForAgcRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AddApplyJoinProjectForAgcRequest.
+        r"""Gets the project_id of this AddApplyJoinProjectForAgcRequest.
 
         devcloud项目的32位id
 
@@ -109,7 +109,7 @@ class AddApplyJoinProjectForAgcRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AddApplyJoinProjectForAgcRequest.
+        r"""Sets the project_id of this AddApplyJoinProjectForAgcRequest.
 
         devcloud项目的32位id
 

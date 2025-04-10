@@ -43,7 +43,7 @@ class AppReturnDTO:
     }
 
     def __init__(self, id=None, name=None, description=None, app_key=None, app_secret=None, register_time=None, update_time=None, create_user=None, update_user=None, app_type=None):
-        """AppReturnDTO
+        r"""AppReturnDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AppReturnDTO:
 
     @property
     def id(self):
-        """Gets the id of this AppReturnDTO.
+        r"""Gets the id of this AppReturnDTO.
 
         应用编号
 
@@ -117,7 +117,7 @@ class AppReturnDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppReturnDTO.
+        r"""Sets the id of this AppReturnDTO.
 
         应用编号
 
@@ -128,7 +128,7 @@ class AppReturnDTO:
 
     @property
     def name(self):
-        """Gets the name of this AppReturnDTO.
+        r"""Gets the name of this AppReturnDTO.
 
         应用名称
 
@@ -139,7 +139,7 @@ class AppReturnDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppReturnDTO.
+        r"""Sets the name of this AppReturnDTO.
 
         应用名称
 
@@ -150,7 +150,7 @@ class AppReturnDTO:
 
     @property
     def description(self):
-        """Gets the description of this AppReturnDTO.
+        r"""Gets the description of this AppReturnDTO.
 
         应用描述
 
@@ -161,7 +161,7 @@ class AppReturnDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppReturnDTO.
+        r"""Sets the description of this AppReturnDTO.
 
         应用描述
 
@@ -172,7 +172,7 @@ class AppReturnDTO:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AppReturnDTO.
+        r"""Gets the app_key of this AppReturnDTO.
 
         应用key
 
@@ -183,7 +183,7 @@ class AppReturnDTO:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AppReturnDTO.
+        r"""Sets the app_key of this AppReturnDTO.
 
         应用key
 
@@ -194,7 +194,7 @@ class AppReturnDTO:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this AppReturnDTO.
+        r"""Gets the app_secret of this AppReturnDTO.
 
         应用secret
 
@@ -205,7 +205,7 @@ class AppReturnDTO:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this AppReturnDTO.
+        r"""Sets the app_secret of this AppReturnDTO.
 
         应用secret
 
@@ -216,7 +216,7 @@ class AppReturnDTO:
 
     @property
     def register_time(self):
-        """Gets the register_time of this AppReturnDTO.
+        r"""Gets the register_time of this AppReturnDTO.
 
         创建时间
 
@@ -227,7 +227,7 @@ class AppReturnDTO:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this AppReturnDTO.
+        r"""Sets the register_time of this AppReturnDTO.
 
         创建时间
 
@@ -238,7 +238,7 @@ class AppReturnDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppReturnDTO.
+        r"""Gets the update_time of this AppReturnDTO.
 
         更新时间
 
@@ -249,7 +249,7 @@ class AppReturnDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppReturnDTO.
+        r"""Sets the update_time of this AppReturnDTO.
 
         更新时间
 
@@ -260,7 +260,7 @@ class AppReturnDTO:
 
     @property
     def create_user(self):
-        """Gets the create_user of this AppReturnDTO.
+        r"""Gets the create_user of this AppReturnDTO.
 
         创建者
 
@@ -271,7 +271,7 @@ class AppReturnDTO:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this AppReturnDTO.
+        r"""Sets the create_user of this AppReturnDTO.
 
         创建者
 
@@ -282,7 +282,7 @@ class AppReturnDTO:
 
     @property
     def update_user(self):
-        """Gets the update_user of this AppReturnDTO.
+        r"""Gets the update_user of this AppReturnDTO.
 
         更新者
 
@@ -293,7 +293,7 @@ class AppReturnDTO:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this AppReturnDTO.
+        r"""Sets the update_user of this AppReturnDTO.
 
         更新者
 
@@ -304,7 +304,7 @@ class AppReturnDTO:
 
     @property
     def app_type(self):
-        """Gets the app_type of this AppReturnDTO.
+        r"""Gets the app_type of this AppReturnDTO.
 
         应用类型
 
@@ -315,7 +315,7 @@ class AppReturnDTO:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this AppReturnDTO.
+        r"""Sets the app_type of this AppReturnDTO.
 
         应用类型
 

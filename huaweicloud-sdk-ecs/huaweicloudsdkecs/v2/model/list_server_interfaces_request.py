@@ -25,7 +25,7 @@ class ListServerInterfacesRequest:
     }
 
     def __init__(self, server_id=None):
-        """ListServerInterfacesRequest
+        r"""ListServerInterfacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListServerInterfacesRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListServerInterfacesRequest.
+        r"""Gets the server_id of this ListServerInterfacesRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ListServerInterfacesRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListServerInterfacesRequest.
+        r"""Sets the server_id of this ListServerInterfacesRequest.
 
         云服务器ID。
 

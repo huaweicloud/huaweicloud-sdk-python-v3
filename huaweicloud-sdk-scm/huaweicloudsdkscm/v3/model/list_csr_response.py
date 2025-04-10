@@ -28,7 +28,7 @@ class ListCsrResponse(SdkResponse):
     }
 
     def __init__(self, csr_list=None, total=None):
-        """ListCsrResponse
+        r"""ListCsrResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCsrResponse(SdkResponse):
 
     @property
     def csr_list(self):
-        """Gets the csr_list of this ListCsrResponse.
+        r"""Gets the csr_list of this ListCsrResponse.
 
         CSR列表，详情请参见CSRResponseBody字段数据结构说明。
 
@@ -62,7 +62,7 @@ class ListCsrResponse(SdkResponse):
 
     @csr_list.setter
     def csr_list(self, csr_list):
-        """Sets the csr_list of this ListCsrResponse.
+        r"""Sets the csr_list of this ListCsrResponse.
 
         CSR列表，详情请参见CSRResponseBody字段数据结构说明。
 
@@ -73,7 +73,7 @@ class ListCsrResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCsrResponse.
+        r"""Gets the total of this ListCsrResponse.
 
         CSR数量。
 
@@ -84,7 +84,7 @@ class ListCsrResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCsrResponse.
+        r"""Sets the total of this ListCsrResponse.
 
         CSR数量。
 

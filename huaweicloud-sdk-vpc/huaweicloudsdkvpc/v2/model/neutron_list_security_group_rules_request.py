@@ -49,7 +49,7 @@ class NeutronListSecurityGroupRulesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, direction=None, protocol=None, ethertype=None, description=None, remote_ip_prefix=None, remote_group_id=None, security_group_id=None, port_range_max=None, port_range_min=None, tenant_id=None):
-        """NeutronListSecurityGroupRulesRequest
+        r"""NeutronListSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the limit of this NeutronListSecurityGroupRulesRequest.
 
         每页返回的个数
 
@@ -138,7 +138,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the limit of this NeutronListSecurityGroupRulesRequest.
 
         每页返回的个数
 
@@ -149,7 +149,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the marker of this NeutronListSecurityGroupRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -160,7 +160,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the marker of this NeutronListSecurityGroupRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -171,7 +171,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the id of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则对应的id过滤查询结果
 
@@ -182,7 +182,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the id of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则对应的id过滤查询结果
 
@@ -193,7 +193,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the direction of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则的方向过滤查询结果，支持ingress和egress进行过滤
 
@@ -204,7 +204,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the direction of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则的方向过滤查询结果，支持ingress和egress进行过滤
 
@@ -215,7 +215,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the protocol of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则的IP协议过滤查询结果
 
@@ -226,7 +226,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the protocol of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则的IP协议过滤查询结果
 
@@ -237,7 +237,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the ethertype of this NeutronListSecurityGroupRulesRequest.
 
         按照网络类型过滤查询结果，支持IPv4或者IPv6
 
@@ -248,7 +248,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the ethertype of this NeutronListSecurityGroupRulesRequest.
 
         按照网络类型过滤查询结果，支持IPv4或者IPv6
 
@@ -259,7 +259,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def description(self):
-        """Gets the description of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the description of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则的描述过滤查询结果
 
@@ -270,7 +270,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the description of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则的描述过滤查询结果
 
@@ -281,7 +281,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
 
         按照与此安全组规则匹配的远端IP网段过滤查询结果
 
@@ -292,7 +292,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
 
         按照与此安全组规则匹配的远端IP网段过滤查询结果
 
@@ -303,7 +303,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the remote_group_id of this NeutronListSecurityGroupRulesRequest.
 
         按照与此安全组规则关联的远端安全组ID过滤查询结果
 
@@ -314,7 +314,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the remote_group_id of this NeutronListSecurityGroupRulesRequest.
 
         按照与此安全组规则关联的远端安全组ID过滤查询结果
 
@@ -325,7 +325,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the security_group_id of this NeutronListSecurityGroupRulesRequest.
 
         按照与此安全组规则所属的安全组ID过滤查询结果
 
@@ -336,7 +336,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the security_group_id of this NeutronListSecurityGroupRulesRequest.
 
         按照与此安全组规则所属的安全组ID过滤查询结果
 
@@ -347,7 +347,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def port_range_max(self):
-        """Gets the port_range_max of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the port_range_max of this NeutronListSecurityGroupRulesRequest.
 
         按照最大端口过滤查询结果
 
@@ -358,7 +358,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @port_range_max.setter
     def port_range_max(self, port_range_max):
-        """Sets the port_range_max of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the port_range_max of this NeutronListSecurityGroupRulesRequest.
 
         按照最大端口过滤查询结果
 
@@ -369,7 +369,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def port_range_min(self):
-        """Gets the port_range_min of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the port_range_min of this NeutronListSecurityGroupRulesRequest.
 
         按照最小端口过滤查询结果
 
@@ -380,7 +380,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @port_range_min.setter
     def port_range_min(self, port_range_min):
-        """Sets the port_range_min of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the port_range_min of this NeutronListSecurityGroupRulesRequest.
 
         按照最小端口过滤查询结果
 
@@ -391,7 +391,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListSecurityGroupRulesRequest.
+        r"""Gets the tenant_id of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则所属的项目ID过滤查询结果
 
@@ -402,7 +402,7 @@ class NeutronListSecurityGroupRulesRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListSecurityGroupRulesRequest.
+        r"""Sets the tenant_id of this NeutronListSecurityGroupRulesRequest.
 
         按照安全组规则所属的项目ID过滤查询结果
 

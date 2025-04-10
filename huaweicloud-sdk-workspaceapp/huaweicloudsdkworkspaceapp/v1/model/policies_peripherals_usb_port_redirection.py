@@ -27,7 +27,7 @@ class PoliciesPeripheralsUsbPortRedirection:
     }
 
     def __init__(self, usb_enable=None, options=None):
-        """PoliciesPeripheralsUsbPortRedirection
+        r"""PoliciesPeripheralsUsbPortRedirection
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsUsbPortRedirection:
 
     @property
     def usb_enable(self):
-        """Gets the usb_enable of this PoliciesPeripheralsUsbPortRedirection.
+        r"""Gets the usb_enable of this PoliciesPeripheralsUsbPortRedirection.
 
         是否开启USB端口重定向。取值为： - false：表示关闭。 - true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsUsbPortRedirection:
 
     @usb_enable.setter
     def usb_enable(self, usb_enable):
-        """Sets the usb_enable of this PoliciesPeripheralsUsbPortRedirection.
+        r"""Sets the usb_enable of this PoliciesPeripheralsUsbPortRedirection.
 
         是否开启USB端口重定向。取值为： - false：表示关闭。 - true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsUsbPortRedirection:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesPeripheralsUsbPortRedirection.
+        r"""Gets the options of this PoliciesPeripheralsUsbPortRedirection.
 
         :return: The options of this PoliciesPeripheralsUsbPortRedirection.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UsbPortRedirectionOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsUsbPortRedirection:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesPeripheralsUsbPortRedirection.
+        r"""Sets the options of this PoliciesPeripheralsUsbPortRedirection.
 
         :param options: The options of this PoliciesPeripheralsUsbPortRedirection.
         :type options: :class:`huaweicloudsdkworkspaceapp.v1.UsbPortRedirectionOptions`

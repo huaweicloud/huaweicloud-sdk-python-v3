@@ -27,7 +27,7 @@ class AddNodeRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """AddNodeRequest
+        r"""AddNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddNodeRequest.
+        r"""Gets the cluster_id of this AddNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class AddNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddNodeRequest.
+        r"""Sets the cluster_id of this AddNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class AddNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddNodeRequest.
+        r"""Gets the body of this AddNodeRequest.
 
         :return: The body of this AddNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.AddNodeList`
@@ -80,7 +80,7 @@ class AddNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddNodeRequest.
+        r"""Sets the body of this AddNodeRequest.
 
         :param body: The body of this AddNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.AddNodeList`

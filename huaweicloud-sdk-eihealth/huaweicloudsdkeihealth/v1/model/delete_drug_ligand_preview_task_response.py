@@ -24,7 +24,7 @@ class DeleteDrugLigandPreviewTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDrugLigandPreviewTaskResponse
+        r"""DeleteDrugLigandPreviewTaskResponse
 
         The model defined in huaweicloud sdk
 

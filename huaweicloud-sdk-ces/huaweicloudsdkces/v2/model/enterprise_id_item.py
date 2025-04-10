@@ -25,7 +25,7 @@ class EnterpriseIdItem:
     }
 
     def __init__(self, enterprise_id=None):
-        """EnterpriseIdItem
+        r"""EnterpriseIdItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EnterpriseIdItem:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this EnterpriseIdItem.
+        r"""Gets the enterprise_id of this EnterpriseIdItem.
 
         企业项目Id
 
@@ -54,7 +54,7 @@ class EnterpriseIdItem:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this EnterpriseIdItem.
+        r"""Sets the enterprise_id of this EnterpriseIdItem.
 
         企业项目Id
 

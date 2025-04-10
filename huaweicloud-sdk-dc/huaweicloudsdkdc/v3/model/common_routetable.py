@@ -43,7 +43,7 @@ class CommonRoutetable:
     }
 
     def __init__(self, id=None, tenant_id=None, gateway_id=None, destination=None, nexthop=None, obtain_mode=None, status=None, address_family=None, description=None, type=None):
-        """CommonRoutetable
+        r"""CommonRoutetable
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CommonRoutetable:
 
     @property
     def id(self):
-        """Gets the id of this CommonRoutetable.
+        r"""Gets the id of this CommonRoutetable.
 
         路由id
 
@@ -109,7 +109,7 @@ class CommonRoutetable:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CommonRoutetable.
+        r"""Sets the id of this CommonRoutetable.
 
         路由id
 
@@ -120,7 +120,7 @@ class CommonRoutetable:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CommonRoutetable.
+        r"""Gets the tenant_id of this CommonRoutetable.
 
         租户id
 
@@ -131,7 +131,7 @@ class CommonRoutetable:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CommonRoutetable.
+        r"""Sets the tenant_id of this CommonRoutetable.
 
         租户id
 
@@ -142,7 +142,7 @@ class CommonRoutetable:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CommonRoutetable.
+        r"""Gets the gateway_id of this CommonRoutetable.
 
         网关id
 
@@ -153,7 +153,7 @@ class CommonRoutetable:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CommonRoutetable.
+        r"""Sets the gateway_id of this CommonRoutetable.
 
         网关id
 
@@ -164,7 +164,7 @@ class CommonRoutetable:
 
     @property
     def destination(self):
-        """Gets the destination of this CommonRoutetable.
+        r"""Gets the destination of this CommonRoutetable.
 
         路由子网
 
@@ -175,7 +175,7 @@ class CommonRoutetable:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CommonRoutetable.
+        r"""Sets the destination of this CommonRoutetable.
 
         路由子网
 
@@ -186,7 +186,7 @@ class CommonRoutetable:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this CommonRoutetable.
+        r"""Gets the nexthop of this CommonRoutetable.
 
         下一跳id
 
@@ -197,7 +197,7 @@ class CommonRoutetable:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this CommonRoutetable.
+        r"""Sets the nexthop of this CommonRoutetable.
 
         下一跳id
 
@@ -208,7 +208,7 @@ class CommonRoutetable:
 
     @property
     def obtain_mode(self):
-        """Gets the obtain_mode of this CommonRoutetable.
+        r"""Gets the obtain_mode of this CommonRoutetable.
 
         路由类型: - customized: 默认路由 - specific: 自定义路由 - bgp: 动态路由
 
@@ -219,7 +219,7 @@ class CommonRoutetable:
 
     @obtain_mode.setter
     def obtain_mode(self, obtain_mode):
-        """Sets the obtain_mode of this CommonRoutetable.
+        r"""Sets the obtain_mode of this CommonRoutetable.
 
         路由类型: - customized: 默认路由 - specific: 自定义路由 - bgp: 动态路由
 
@@ -230,7 +230,7 @@ class CommonRoutetable:
 
     @property
     def status(self):
-        """Gets the status of this CommonRoutetable.
+        r"""Gets the status of this CommonRoutetable.
 
         路由状态: - ACTIVE: 下发正常 - ERROR: 下发失败 - PENDING_CREATE: 待下发
 
@@ -241,7 +241,7 @@ class CommonRoutetable:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CommonRoutetable.
+        r"""Sets the status of this CommonRoutetable.
 
         路由状态: - ACTIVE: 下发正常 - ERROR: 下发失败 - PENDING_CREATE: 待下发
 
@@ -252,7 +252,7 @@ class CommonRoutetable:
 
     @property
     def address_family(self):
-        """Gets the address_family of this CommonRoutetable.
+        r"""Gets the address_family of this CommonRoutetable.
 
         :return: The address_family of this CommonRoutetable.
         :rtype: :class:`huaweicloudsdkdc.v3.AddressFamily`
@@ -261,7 +261,7 @@ class CommonRoutetable:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this CommonRoutetable.
+        r"""Sets the address_family of this CommonRoutetable.
 
         :param address_family: The address_family of this CommonRoutetable.
         :type address_family: :class:`huaweicloudsdkdc.v3.AddressFamily`
@@ -270,7 +270,7 @@ class CommonRoutetable:
 
     @property
     def description(self):
-        """Gets the description of this CommonRoutetable.
+        r"""Gets the description of this CommonRoutetable.
 
         路由描述
 
@@ -281,7 +281,7 @@ class CommonRoutetable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CommonRoutetable.
+        r"""Sets the description of this CommonRoutetable.
 
         路由描述
 
@@ -292,7 +292,7 @@ class CommonRoutetable:
 
     @property
     def type(self):
-        """Gets the type of this CommonRoutetable.
+        r"""Gets the type of this CommonRoutetable.
 
         下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
 
@@ -303,7 +303,7 @@ class CommonRoutetable:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CommonRoutetable.
+        r"""Sets the type of this CommonRoutetable.
 
         下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
 

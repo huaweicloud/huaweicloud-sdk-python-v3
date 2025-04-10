@@ -28,7 +28,7 @@ class BatchDeleteAclV2Response(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure=None):
-        """BatchDeleteAclV2Response
+        r"""BatchDeleteAclV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteAclV2Response(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this BatchDeleteAclV2Response.
+        r"""Gets the success_count of this BatchDeleteAclV2Response.
 
         删除成功的ACL策略数量
 
@@ -62,7 +62,7 @@ class BatchDeleteAclV2Response(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this BatchDeleteAclV2Response.
+        r"""Sets the success_count of this BatchDeleteAclV2Response.
 
         删除成功的ACL策略数量
 
@@ -73,7 +73,7 @@ class BatchDeleteAclV2Response(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this BatchDeleteAclV2Response.
+        r"""Gets the failure of this BatchDeleteAclV2Response.
 
         删除失败的ACL策略及错误信息
 
@@ -84,7 +84,7 @@ class BatchDeleteAclV2Response(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this BatchDeleteAclV2Response.
+        r"""Sets the failure of this BatchDeleteAclV2Response.
 
         删除失败的ACL策略及错误信息
 

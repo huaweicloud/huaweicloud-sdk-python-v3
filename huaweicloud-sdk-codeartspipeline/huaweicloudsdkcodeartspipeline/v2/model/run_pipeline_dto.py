@@ -33,7 +33,7 @@ class RunPipelineDTO:
     }
 
     def __init__(self, sources=None, description=None, variables=None, choose_jobs=None, choose_stages=None):
-        """RunPipelineDTO
+        r"""RunPipelineDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RunPipelineDTO:
 
     @property
     def sources(self):
-        """Gets the sources of this RunPipelineDTO.
+        r"""Gets the sources of this RunPipelineDTO.
 
         使用的源
 
@@ -82,7 +82,7 @@ class RunPipelineDTO:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this RunPipelineDTO.
+        r"""Sets the sources of this RunPipelineDTO.
 
         使用的源
 
@@ -93,7 +93,7 @@ class RunPipelineDTO:
 
     @property
     def description(self):
-        """Gets the description of this RunPipelineDTO.
+        r"""Gets the description of this RunPipelineDTO.
 
         运行描述
 
@@ -104,7 +104,7 @@ class RunPipelineDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RunPipelineDTO.
+        r"""Sets the description of this RunPipelineDTO.
 
         运行描述
 
@@ -115,7 +115,7 @@ class RunPipelineDTO:
 
     @property
     def variables(self):
-        """Gets the variables of this RunPipelineDTO.
+        r"""Gets the variables of this RunPipelineDTO.
 
         使用的自定义参数
 
@@ -126,7 +126,7 @@ class RunPipelineDTO:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this RunPipelineDTO.
+        r"""Sets the variables of this RunPipelineDTO.
 
         使用的自定义参数
 
@@ -137,7 +137,7 @@ class RunPipelineDTO:
 
     @property
     def choose_jobs(self):
-        """Gets the choose_jobs of this RunPipelineDTO.
+        r"""Gets the choose_jobs of this RunPipelineDTO.
 
         选择的任务
 
@@ -148,7 +148,7 @@ class RunPipelineDTO:
 
     @choose_jobs.setter
     def choose_jobs(self, choose_jobs):
-        """Sets the choose_jobs of this RunPipelineDTO.
+        r"""Sets the choose_jobs of this RunPipelineDTO.
 
         选择的任务
 
@@ -159,7 +159,7 @@ class RunPipelineDTO:
 
     @property
     def choose_stages(self):
-        """Gets the choose_stages of this RunPipelineDTO.
+        r"""Gets the choose_stages of this RunPipelineDTO.
 
         选择的阶段
 
@@ -170,7 +170,7 @@ class RunPipelineDTO:
 
     @choose_stages.setter
     def choose_stages(self, choose_stages):
-        """Sets the choose_stages of this RunPipelineDTO.
+        r"""Sets the choose_stages of this RunPipelineDTO.
 
         选择的阶段
 

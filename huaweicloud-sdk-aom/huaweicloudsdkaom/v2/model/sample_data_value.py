@@ -27,7 +27,7 @@ class SampleDataValue:
     }
 
     def __init__(self, sample=None, data_points=None):
-        """SampleDataValue
+        r"""SampleDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SampleDataValue:
 
     @property
     def sample(self):
-        """Gets the sample of this SampleDataValue.
+        r"""Gets the sample of this SampleDataValue.
 
         :return: The sample of this SampleDataValue.
         :rtype: :class:`huaweicloudsdkaom.v2.QuerySample`
@@ -59,7 +59,7 @@ class SampleDataValue:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this SampleDataValue.
+        r"""Sets the sample of this SampleDataValue.
 
         :param sample: The sample of this SampleDataValue.
         :type sample: :class:`huaweicloudsdkaom.v2.QuerySample`
@@ -68,7 +68,7 @@ class SampleDataValue:
 
     @property
     def data_points(self):
-        """Gets the data_points of this SampleDataValue.
+        r"""Gets the data_points of this SampleDataValue.
 
         时序数据。
 
@@ -79,7 +79,7 @@ class SampleDataValue:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this SampleDataValue.
+        r"""Sets the data_points of this SampleDataValue.
 
         时序数据。
 

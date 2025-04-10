@@ -27,7 +27,7 @@ class CreateInstanceRequest:
     }
 
     def __init__(self, org_id=None, body=None):
-        """CreateInstanceRequest
+        r"""CreateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateInstanceRequest:
 
     @property
     def org_id(self):
-        """Gets the org_id of this CreateInstanceRequest.
+        r"""Gets the org_id of this CreateInstanceRequest.
 
         租户id（对应华为云帐号的domainId）
 
@@ -60,7 +60,7 @@ class CreateInstanceRequest:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this CreateInstanceRequest.
+        r"""Sets the org_id of this CreateInstanceRequest.
 
         租户id（对应华为云帐号的domainId）
 
@@ -71,7 +71,7 @@ class CreateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceRequest.
+        r"""Gets the body of this CreateInstanceRequest.
 
         :return: The body of this CreateInstanceRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.InstanceParam`
@@ -80,7 +80,7 @@ class CreateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceRequest.
+        r"""Sets the body of this CreateInstanceRequest.
 
         :param body: The body of this CreateInstanceRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.InstanceParam`

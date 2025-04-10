@@ -30,7 +30,7 @@ class RunSummaryResponse(SdkResponse):
     }
 
     def __init__(self, summary=None, error_code=None, error_msg=None):
-        """RunSummaryResponse
+        r"""RunSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunSummaryResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this RunSummaryResponse.
+        r"""Gets the summary of this RunSummaryResponse.
 
         根据文本请求体，返回摘要结果。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunSummaryResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this RunSummaryResponse.
+        r"""Sets the summary of this RunSummaryResponse.
 
         根据文本请求体，返回摘要结果。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunSummaryResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunSummaryResponse.
+        r"""Gets the error_code of this RunSummaryResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunSummaryResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunSummaryResponse.
+        r"""Sets the error_code of this RunSummaryResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunSummaryResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunSummaryResponse.
+        r"""Gets the error_msg of this RunSummaryResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunSummaryResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunSummaryResponse.
+        r"""Sets the error_msg of this RunSummaryResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

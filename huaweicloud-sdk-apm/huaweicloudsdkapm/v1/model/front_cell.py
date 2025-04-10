@@ -41,7 +41,7 @@ class FrontCell:
     }
 
     def __init__(self, data_type=None, function=None, trace=None, span=None, span_field=None, precision=None, text=None, unit=None, visible=None):
-        """FrontCell
+        r"""FrontCell
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class FrontCell:
 
     @property
     def data_type(self):
-        """Gets the data_type of this FrontCell.
+        r"""Gets the data_type of this FrontCell.
 
         数据类型。
 
@@ -110,7 +110,7 @@ class FrontCell:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this FrontCell.
+        r"""Sets the data_type of this FrontCell.
 
         数据类型。
 
@@ -121,7 +121,7 @@ class FrontCell:
 
     @property
     def function(self):
-        """Gets the function of this FrontCell.
+        r"""Gets the function of this FrontCell.
 
         函数。
 
@@ -132,7 +132,7 @@ class FrontCell:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this FrontCell.
+        r"""Sets the function of this FrontCell.
 
         函数。
 
@@ -143,7 +143,7 @@ class FrontCell:
 
     @property
     def trace(self):
-        """Gets the trace of this FrontCell.
+        r"""Gets the trace of this FrontCell.
 
         是否调用链。
 
@@ -154,7 +154,7 @@ class FrontCell:
 
     @trace.setter
     def trace(self, trace):
-        """Sets the trace of this FrontCell.
+        r"""Sets the trace of this FrontCell.
 
         是否调用链。
 
@@ -165,7 +165,7 @@ class FrontCell:
 
     @property
     def span(self):
-        """Gets the span of this FrontCell.
+        r"""Gets the span of this FrontCell.
 
         是否是span信息，如果是就跳到调用链搜索页面。
 
@@ -176,7 +176,7 @@ class FrontCell:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this FrontCell.
+        r"""Sets the span of this FrontCell.
 
         是否是span信息，如果是就跳到调用链搜索页面。
 
@@ -187,7 +187,7 @@ class FrontCell:
 
     @property
     def span_field(self):
-        """Gets the span_field of this FrontCell.
+        r"""Gets the span_field of this FrontCell.
 
         span字段。
 
@@ -198,7 +198,7 @@ class FrontCell:
 
     @span_field.setter
     def span_field(self, span_field):
-        """Sets the span_field of this FrontCell.
+        r"""Sets the span_field of this FrontCell.
 
         span字段。
 
@@ -209,7 +209,7 @@ class FrontCell:
 
     @property
     def precision(self):
-        """Gets the precision of this FrontCell.
+        r"""Gets the precision of this FrontCell.
 
         小数点位数。
 
@@ -220,7 +220,7 @@ class FrontCell:
 
     @precision.setter
     def precision(self, precision):
-        """Sets the precision of this FrontCell.
+        r"""Sets the precision of this FrontCell.
 
         小数点位数。
 
@@ -231,7 +231,7 @@ class FrontCell:
 
     @property
     def text(self):
-        """Gets the text of this FrontCell.
+        r"""Gets the text of this FrontCell.
 
         文本信息。
 
@@ -242,7 +242,7 @@ class FrontCell:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this FrontCell.
+        r"""Sets the text of this FrontCell.
 
         文本信息。
 
@@ -253,7 +253,7 @@ class FrontCell:
 
     @property
     def unit(self):
-        """Gets the unit of this FrontCell.
+        r"""Gets the unit of this FrontCell.
 
         单位。
 
@@ -264,7 +264,7 @@ class FrontCell:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this FrontCell.
+        r"""Sets the unit of this FrontCell.
 
         单位。
 
@@ -275,7 +275,7 @@ class FrontCell:
 
     @property
     def visible(self):
-        """Gets the visible of this FrontCell.
+        r"""Gets the visible of this FrontCell.
 
         是否可见。
 
@@ -286,7 +286,7 @@ class FrontCell:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this FrontCell.
+        r"""Sets the visible of this FrontCell.
 
         是否可见。
 

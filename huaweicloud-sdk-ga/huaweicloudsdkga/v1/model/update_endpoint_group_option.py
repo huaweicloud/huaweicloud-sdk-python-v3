@@ -29,7 +29,7 @@ class UpdateEndpointGroupOption:
     }
 
     def __init__(self, name=None, description=None, traffic_dial_percentage=None):
-        """UpdateEndpointGroupOption
+        r"""UpdateEndpointGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateEndpointGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateEndpointGroupOption.
+        r"""Gets the name of this UpdateEndpointGroupOption.
 
         终端节点组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -68,7 +68,7 @@ class UpdateEndpointGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEndpointGroupOption.
+        r"""Sets the name of this UpdateEndpointGroupOption.
 
         终端节点组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -79,7 +79,7 @@ class UpdateEndpointGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEndpointGroupOption.
+        r"""Gets the description of this UpdateEndpointGroupOption.
 
         终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -90,7 +90,7 @@ class UpdateEndpointGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEndpointGroupOption.
+        r"""Sets the description of this UpdateEndpointGroupOption.
 
         终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -101,7 +101,7 @@ class UpdateEndpointGroupOption:
 
     @property
     def traffic_dial_percentage(self):
-        """Gets the traffic_dial_percentage of this UpdateEndpointGroupOption.
+        r"""Gets the traffic_dial_percentage of this UpdateEndpointGroupOption.
 
         流量拨分到此组的百分比。
 
@@ -112,7 +112,7 @@ class UpdateEndpointGroupOption:
 
     @traffic_dial_percentage.setter
     def traffic_dial_percentage(self, traffic_dial_percentage):
-        """Sets the traffic_dial_percentage of this UpdateEndpointGroupOption.
+        r"""Sets the traffic_dial_percentage of this UpdateEndpointGroupOption.
 
         流量拨分到此组的百分比。
 

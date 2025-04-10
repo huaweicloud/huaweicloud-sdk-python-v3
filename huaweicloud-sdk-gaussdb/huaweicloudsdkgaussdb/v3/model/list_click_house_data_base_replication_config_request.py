@@ -29,7 +29,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
     }
 
     def __init__(self, instance_id=None, database_name=None, x_language=None):
-        """ListClickHouseDataBaseReplicationConfigRequest
+        r"""ListClickHouseDataBaseReplicationConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListClickHouseDataBaseReplicationConfigRequest.
+        r"""Gets the instance_id of this ListClickHouseDataBaseReplicationConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListClickHouseDataBaseReplicationConfigRequest.
+        r"""Sets the instance_id of this ListClickHouseDataBaseReplicationConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListClickHouseDataBaseReplicationConfigRequest.
+        r"""Gets the database_name of this ListClickHouseDataBaseReplicationConfigRequest.
 
         数据库名。
 
@@ -88,7 +88,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListClickHouseDataBaseReplicationConfigRequest.
+        r"""Sets the database_name of this ListClickHouseDataBaseReplicationConfigRequest.
 
         数据库名。
 
@@ -99,7 +99,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListClickHouseDataBaseReplicationConfigRequest.
+        r"""Gets the x_language of this ListClickHouseDataBaseReplicationConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class ListClickHouseDataBaseReplicationConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListClickHouseDataBaseReplicationConfigRequest.
+        r"""Sets the x_language of this ListClickHouseDataBaseReplicationConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

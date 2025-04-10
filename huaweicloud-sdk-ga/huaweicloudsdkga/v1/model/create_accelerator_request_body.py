@@ -25,7 +25,7 @@ class CreateAcceleratorRequestBody:
     }
 
     def __init__(self, accelerator=None):
-        """CreateAcceleratorRequestBody
+        r"""CreateAcceleratorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAcceleratorRequestBody:
 
     @property
     def accelerator(self):
-        """Gets the accelerator of this CreateAcceleratorRequestBody.
+        r"""Gets the accelerator of this CreateAcceleratorRequestBody.
 
         :return: The accelerator of this CreateAcceleratorRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.CreateAcceleratorOption`
@@ -51,7 +51,7 @@ class CreateAcceleratorRequestBody:
 
     @accelerator.setter
     def accelerator(self, accelerator):
-        """Sets the accelerator of this CreateAcceleratorRequestBody.
+        r"""Sets the accelerator of this CreateAcceleratorRequestBody.
 
         :param accelerator: The accelerator of this CreateAcceleratorRequestBody.
         :type accelerator: :class:`huaweicloudsdkga.v1.CreateAcceleratorOption`

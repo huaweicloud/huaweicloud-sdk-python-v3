@@ -30,7 +30,7 @@ class ListModelsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, models=None, x_request_id=None):
-        """ListModelsResponse
+        r"""ListModelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListModelsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListModelsResponse.
+        r"""Gets the total of this ListModelsResponse.
 
         符合条件的总数
 
@@ -69,7 +69,7 @@ class ListModelsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListModelsResponse.
+        r"""Sets the total of this ListModelsResponse.
 
         符合条件的总数
 
@@ -80,7 +80,7 @@ class ListModelsResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ListModelsResponse.
+        r"""Gets the models of this ListModelsResponse.
 
         列表信息
 
@@ -91,7 +91,7 @@ class ListModelsResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ListModelsResponse.
+        r"""Sets the models of this ListModelsResponse.
 
         列表信息
 
@@ -102,7 +102,7 @@ class ListModelsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListModelsResponse.
+        r"""Gets the x_request_id of this ListModelsResponse.
 
         :return: The x_request_id of this ListModelsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListModelsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListModelsResponse.
+        r"""Sets the x_request_id of this ListModelsResponse.
 
         :param x_request_id: The x_request_id of this ListModelsResponse.
         :type x_request_id: str

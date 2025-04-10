@@ -26,7 +26,7 @@ class UploadMediaResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UploadMediaResponse
+        r"""UploadMediaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadMediaResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UploadMediaResponse.
+        r"""Gets the data of this UploadMediaResponse.
 
         :return: The data of this UploadMediaResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadMediaResponseModel`
@@ -53,7 +53,7 @@ class UploadMediaResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UploadMediaResponse.
+        r"""Sets the data of this UploadMediaResponse.
 
         :param data: The data of this UploadMediaResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.UploadMediaResponseModel`

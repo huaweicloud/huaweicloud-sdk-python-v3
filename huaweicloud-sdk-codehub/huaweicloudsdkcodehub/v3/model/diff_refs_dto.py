@@ -29,7 +29,7 @@ class DiffRefsDto:
     }
 
     def __init__(self, base_sha=None, head_sha=None, start_sha=None):
-        """DiffRefsDto
+        r"""DiffRefsDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DiffRefsDto:
 
     @property
     def base_sha(self):
-        """Gets the base_sha of this DiffRefsDto.
+        r"""Gets the base_sha of this DiffRefsDto.
 
         base sha
 
@@ -68,7 +68,7 @@ class DiffRefsDto:
 
     @base_sha.setter
     def base_sha(self, base_sha):
-        """Sets the base_sha of this DiffRefsDto.
+        r"""Sets the base_sha of this DiffRefsDto.
 
         base sha
 
@@ -79,7 +79,7 @@ class DiffRefsDto:
 
     @property
     def head_sha(self):
-        """Gets the head_sha of this DiffRefsDto.
+        r"""Gets the head_sha of this DiffRefsDto.
 
         head sha
 
@@ -90,7 +90,7 @@ class DiffRefsDto:
 
     @head_sha.setter
     def head_sha(self, head_sha):
-        """Sets the head_sha of this DiffRefsDto.
+        r"""Sets the head_sha of this DiffRefsDto.
 
         head sha
 
@@ -101,7 +101,7 @@ class DiffRefsDto:
 
     @property
     def start_sha(self):
-        """Gets the start_sha of this DiffRefsDto.
+        r"""Gets the start_sha of this DiffRefsDto.
 
         start sha
 
@@ -112,7 +112,7 @@ class DiffRefsDto:
 
     @start_sha.setter
     def start_sha(self, start_sha):
-        """Sets the start_sha of this DiffRefsDto.
+        r"""Sets the start_sha of this DiffRefsDto.
 
         start sha
 

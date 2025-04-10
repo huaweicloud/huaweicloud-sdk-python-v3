@@ -28,7 +28,7 @@ class UpdateAimMsgAppResponse(SdkResponse):
     }
 
     def __init__(self, app_name=None, app_id=None):
-        """UpdateAimMsgAppResponse
+        r"""UpdateAimMsgAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAimMsgAppResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateAimMsgAppResponse.
+        r"""Gets the app_name of this UpdateAimMsgAppResponse.
 
         应用名称。
 
@@ -62,7 +62,7 @@ class UpdateAimMsgAppResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateAimMsgAppResponse.
+        r"""Sets the app_name of this UpdateAimMsgAppResponse.
 
         应用名称。
 
@@ -73,7 +73,7 @@ class UpdateAimMsgAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAimMsgAppResponse.
+        r"""Gets the app_id of this UpdateAimMsgAppResponse.
 
         应用ID。
 
@@ -84,7 +84,7 @@ class UpdateAimMsgAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAimMsgAppResponse.
+        r"""Sets the app_id of this UpdateAimMsgAppResponse.
 
         应用ID。
 

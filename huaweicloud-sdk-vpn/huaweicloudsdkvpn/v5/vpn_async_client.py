@@ -34,7 +34,7 @@ class VpnAsyncClient(Client):
         return client_builder
 
     def check_client_ca_certificate_async(self, request):
-        """校验客户端CA
+        r"""校验客户端CA
 
         创建服务端时，可以先调用客户端CA的预校验API，检查CA的合法性
         
@@ -99,7 +99,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_client_ca_async(self, request):
-        """删除客户端的CA证书
+        r"""删除客户端的CA证书
 
         删除客户端CA证书
         
@@ -166,7 +166,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def import_client_ca_async(self, request):
-        """导入客户端 CA 证书
+        r"""导入客户端 CA 证书
 
         导入客户端 CA 证书
         
@@ -235,7 +235,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_client_ca_async(self, request):
-        """查询客户端的CA证书
+        r"""查询客户端的CA证书
 
         查询客户端CA证书
         
@@ -302,7 +302,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_client_ca_async(self, request):
-        """修改客户端的CA证书
+        r"""修改客户端的CA证书
 
         修改客户端CA证书
         
@@ -371,7 +371,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_connection_monitor_async(self, request):
-        """创建VPN连接监控
+        r"""创建VPN连接监控
 
         创建VPN连接监控
         
@@ -436,7 +436,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_connection_monitor_async(self, request):
-        """删除VPN连接监控
+        r"""删除VPN连接监控
 
         根据VPN连接监控的ID，删除指定的VPN连接监控
         
@@ -501,7 +501,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_connection_monitors_async(self, request):
-        """查询VPN连接监控列表
+        r"""查询VPN连接监控列表
 
         查询VPN连接监控列表
         
@@ -569,7 +569,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_connection_monitor_async(self, request):
-        """查询VPN连接监控
+        r"""查询VPN连接监控
 
         根据VPN连接监控的ID,查询指定的VPN连接监控
         
@@ -634,7 +634,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_cgw_async(self, request):
-        """创建对端网关
+        r"""创建对端网关
 
         创建租户用于与VPN网关相连的对端网关
         
@@ -699,7 +699,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_cgw_async(self, request):
-        """删除对端网关
+        r"""删除对端网关
 
         根据对端网关ID，删除指定的对端网关
         
@@ -764,7 +764,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_cgws_async(self, request):
-        """查询对端网关列表
+        r"""查询对端网关列表
 
         查询对端网关列表
         
@@ -833,7 +833,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_cgw_async(self, request):
-        """查询对端网关
+        r"""查询对端网关
 
         根据对端网关ID，查询指定的对端网关
         
@@ -898,7 +898,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_cgw_async(self, request):
-        """更新对端网关
+        r"""更新对端网关
 
         根据对端网关ID，更新指定的对端网关
         
@@ -965,7 +965,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_p2c_vgw_connection_async(self, request):
-        """断开P2C VPN网关连接
+        r"""断开P2C VPN网关连接
 
         断开P2C VPN网关连接
         
@@ -1032,7 +1032,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_p2c_vgw_availability_zones_async(self, request):
-        """查询P2C VPN网关可用区
+        r"""查询P2C VPN网关可用区
 
         查询P2C VPN网关可用区
         
@@ -1097,7 +1097,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_p2c_vgw_connections_async(self, request):
-        """查询P2C VPN网关连接信息列表
+        r"""查询P2C VPN网关连接信息列表
 
         List p2c vpn gateway connections
         
@@ -1166,7 +1166,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_p2c_vgws_async(self, request):
-        """查询P2C VPN网关列表
+        r"""查询P2C VPN网关列表
 
         查询P2C VPN网关列表
         
@@ -1233,7 +1233,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_p2c_vgw_async(self, request):
-        """查询P2C VPN网关
+        r"""查询P2C VPN网关
 
         根据P2C VPN网关ID，查询指定的VPN网关
         
@@ -1298,7 +1298,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_p2c_vgw_async(self, request):
-        """更新P2C VPN网关
+        r"""更新P2C VPN网关
 
         根据P2C VPN网关ID，更新指定的P2C VPN网关
         
@@ -1365,7 +1365,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def batch_create_resource_tags_async(self, request):
-        """批量添加资源标签
+        r"""批量添加资源标签
 
         为指定实例批量添加标签
         
@@ -1434,7 +1434,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def batch_delete_resource_tags_async(self, request):
-        """批量删除资源标签
+        r"""批量删除资源标签
 
         为指定实例批量删除标签
         
@@ -1503,7 +1503,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def count_resources_by_tags_async(self, request):
-        """查询资源实例数量
+        r"""查询资源实例数量
 
         根据标签查询资源实例数量
         
@@ -1570,7 +1570,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询租户在指定项目中指定资源类型下的所有标签
         
@@ -1635,7 +1635,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_resources_by_tags_async(self, request):
-        """查询资源实例列表
+        r"""查询资源实例列表
 
         根据标签查询资源实例列表
         
@@ -1706,7 +1706,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_resource_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息
         
@@ -1773,7 +1773,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vpn_access_policy_async(self, request):
-        """创建VPN访问策略
+        r"""创建VPN访问策略
 
         创建VPN访问策略
         
@@ -1842,7 +1842,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_vpn_access_policy_async(self, request):
-        """删除VPN访问策略
+        r"""删除VPN访问策略
 
         删除VPN访问策略
         
@@ -1909,7 +1909,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_access_policies_async(self, request):
-        """查询VPN访问策略列表
+        r"""查询VPN访问策略列表
 
         查询VPN访问策略列表
         
@@ -1978,7 +1978,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_access_policy_async(self, request):
-        """查询VPN访问策略
+        r"""查询VPN访问策略
 
         查询VPN访问策略
         
@@ -2045,7 +2045,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_access_policy_async(self, request):
-        """修改VPN访问策略
+        r"""修改VPN访问策略
 
         修改VPN访问策略
         
@@ -2114,7 +2114,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vpn_connection_async(self, request):
-        """创建VPN连接
+        r"""创建VPN连接
 
         创建VPN连接，连接VPN网关与对端网关
         
@@ -2179,7 +2179,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_vpn_connection_async(self, request):
-        """删除VPN连接
+        r"""删除VPN连接
 
         根据连接ID，删除指定的VPN连接
         
@@ -2244,7 +2244,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_connections_async(self, request):
-        """查询VPN连接列表
+        r"""查询VPN连接列表
 
         查询VPN连接列表
         
@@ -2322,7 +2322,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_connection_async(self, request):
-        """查询VPN连接
+        r"""查询VPN连接
 
         根据连接ID，查询指定的VPN连接的参数
         
@@ -2387,7 +2387,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_connection_log_async(self, request):
-        """查询VPN连接日志
+        r"""查询VPN连接日志
 
         根据连接ID，查询指定的VPN连接日志
         
@@ -2452,7 +2452,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_connection_async(self, request):
-        """更新VPN连接
+        r"""更新VPN连接
 
         根据连接ID，更新指定的VPN连接的参数
         
@@ -2519,7 +2519,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_vpn_connections_log_config_async(self, request):
-        """删除VPN连接日志配置
+        r"""删除VPN连接日志配置
 
         删除VPN连接日志配置
         
@@ -2584,7 +2584,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_connections_log_config_async(self, request):
-        """查询VPN连接日志配置
+        r"""查询VPN连接日志配置
 
         查询VPN连接日志配置
         
@@ -2649,7 +2649,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_connections_log_config_async(self, request):
-        """更新VPN连接日志配置
+        r"""更新VPN连接日志配置
 
         更新VPN连接日志配置
         
@@ -2716,7 +2716,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vgw_async(self, request):
-        """创建VPN网关
+        r"""创建VPN网关
 
         创建一个VPN网关
         
@@ -2781,7 +2781,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_vgw_async(self, request):
-        """删除VPN网关
+        r"""删除VPN网关
 
         根据VPN网关ID，删除指定的VPN网关
         
@@ -2846,7 +2846,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_availability_zones_async(self, request):
-        """查询VPN网关可用区
+        r"""查询VPN网关可用区
 
         查询VPN网关可用区
         
@@ -2909,7 +2909,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_extended_availability_zones_async(self, request):
-        """查询VPN网关可用区
+        r"""查询VPN网关可用区
 
         查询VPN网关可用区
         
@@ -2972,7 +2972,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vgws_async(self, request):
-        """查询VPN网关列表
+        r"""查询VPN网关列表
 
         查询VPN网关列表
         
@@ -3040,7 +3040,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vgw_async(self, request):
-        """查询VPN网关
+        r"""查询VPN网关
 
         根据VPN网关ID，查询指定的VPN网关
         
@@ -3105,7 +3105,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_gateway_routing_table_async(self, request):
-        """查询VPN网关路由表
+        r"""查询VPN网关路由表
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -3177,7 +3177,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_postpaid_vgw_specification_async(self, request):
-        """修改网关规格
+        r"""修改网关规格
 
         对单个网关规格进行修改，可以升配或降配
         
@@ -3244,7 +3244,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vgw_async(self, request):
-        """更新VPN网关
+        r"""更新VPN网关
 
         根据VPN网关ID，更新指定的VPN网关
         
@@ -3311,7 +3311,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vgw_certificate_async(self, request):
-        """导入VPN网关证书
+        r"""导入VPN网关证书
 
         导入租户VPN网关所使用的证书，包括签名证书、签名私钥、加密证书、加密私钥和CA证书链。当前只支持国密证书
         
@@ -3378,7 +3378,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_gateway_certificate_async(self, request):
-        """查询VPN网关证书
+        r"""查询VPN网关证书
 
         根据VPN网关ID，查询所指定的VPN网关证书
         
@@ -3443,7 +3443,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vgw_certificate_async(self, request):
-        """更新VPN网关证书
+        r"""更新VPN网关证书
 
         更新租户VPN网关所使用的证书，包括签名证书、签名私钥、加密证书、加密私钥和CA证书链。当前只支持国密证书
         
@@ -3512,7 +3512,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_quotas_info_async(self, request):
-        """查询指定租户配额
+        r"""查询指定租户配额
 
         查询指定租户的配额
         
@@ -3575,7 +3575,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vpn_server_async(self, request):
-        """创建一个VPN 服务端
+        r"""创建一个VPN 服务端
 
         创建一个VPN 服务端
         
@@ -3644,7 +3644,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def export_client_config_async(self, request):
-        """导出服务端对应的客户端配置信息
+        r"""导出服务端对应的客户端配置信息
 
         导出客户端配置信息
         
@@ -3711,7 +3711,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_servers_by_project_async(self, request):
-        """查询租户下的所有服务端信息
+        r"""查询租户下的所有服务端信息
 
         查询租户下的所有服务端信息
         
@@ -3778,7 +3778,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_servers_by_vgw_async(self, request):
-        """查询一个网关下的服务端信息
+        r"""查询一个网关下的服务端信息
 
         查询一个网关下的服务端信息
         
@@ -3843,7 +3843,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_server_async(self, request):
-        """更新指定VPN 服务端
+        r"""更新指定VPN 服务端
 
         更新指定VPN 服务端
         
@@ -3910,7 +3910,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def batch_create_vpn_users_async(self, request):
-        """批量创建VPN用户
+        r"""批量创建VPN用户
 
         批量创建P2C VPN用户
         
@@ -3979,7 +3979,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def batch_delete_vpn_users_async(self, request):
-        """批量删除VPN用户
+        r"""批量删除VPN用户
 
         批量删除P2C VPN用户
         
@@ -4046,7 +4046,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vpn_user_async(self, request):
-        """创建VPN用户
+        r"""创建VPN用户
 
         创建VPN用户
         
@@ -4115,7 +4115,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_vpn_user_async(self, request):
-        """删除VPN用户
+        r"""删除VPN用户
 
         删除VPN用户
         
@@ -4182,7 +4182,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_users_async(self, request):
-        """查询VPN用户列表
+        r"""查询VPN用户列表
 
         查询VPN用户列表
         
@@ -4251,7 +4251,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def reset_vpn_user_password_async(self, request):
-        """重置VPN用户密码
+        r"""重置VPN用户密码
 
         重置VPN用户密码
         
@@ -4320,7 +4320,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_user_async(self, request):
-        """查询VPN用户
+        r"""查询VPN用户
 
         查询VPN用户
         
@@ -4387,7 +4387,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_user_async(self, request):
-        """修改VPN用户
+        r"""修改VPN用户
 
         修改VPN用户
         
@@ -4456,7 +4456,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_user_password_async(self, request):
-        """修改VPN用户密码
+        r"""修改VPN用户密码
 
         修改VPN用户密码
         
@@ -4525,7 +4525,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def add_vpn_users_to_group_async(self, request):
-        """添加VPN用户到组
+        r"""添加VPN用户到组
 
         添加VPN用户到组
         
@@ -4594,7 +4594,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def create_vpn_user_group_async(self, request):
-        """创建VPN用户组
+        r"""创建VPN用户组
 
         创建VPN用户组
         
@@ -4663,7 +4663,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def delete_vpn_user_group_async(self, request):
-        """删除VPN用户组
+        r"""删除VPN用户组
 
         删除VPN用户组
         
@@ -4730,7 +4730,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_user_groups_async(self, request):
-        """查询VPN用户组列表
+        r"""查询VPN用户组列表
 
         查询VPN用户组列表
         
@@ -4799,7 +4799,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def list_vpn_users_in_group_async(self, request):
-        """查询组内VPN用户
+        r"""查询组内VPN用户
 
         查询组内VPN用户
         
@@ -4870,7 +4870,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def remove_vpn_users_from_group_async(self, request):
-        """删除组内VPN用户
+        r"""删除组内VPN用户
 
         删除组内VPN用户
         
@@ -4939,7 +4939,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def show_vpn_user_group_async(self, request):
-        """查询VPN用户组
+        r"""查询VPN用户组
 
         查询VPN用户组
         
@@ -5006,7 +5006,7 @@ class VpnAsyncClient(Client):
         return http_info
 
     def update_vpn_user_group_async(self, request):
-        """修改VPN用户组
+        r"""修改VPN用户组
 
         修改VPN用户组
         

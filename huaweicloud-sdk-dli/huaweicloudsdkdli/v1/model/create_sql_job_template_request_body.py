@@ -31,7 +31,7 @@ class CreateSqlJobTemplateRequestBody:
     }
 
     def __init__(self, sql=None, sql_name=None, description=None, group=None):
-        """CreateSqlJobTemplateRequestBody
+        r"""CreateSqlJobTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @property
     def sql(self):
-        """Gets the sql of this CreateSqlJobTemplateRequestBody.
+        r"""Gets the sql of this CreateSqlJobTemplateRequestBody.
 
         新增的SQL模板。
 
@@ -73,7 +73,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this CreateSqlJobTemplateRequestBody.
+        r"""Sets the sql of this CreateSqlJobTemplateRequestBody.
 
         新增的SQL模板。
 
@@ -84,7 +84,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @property
     def sql_name(self):
-        """Gets the sql_name of this CreateSqlJobTemplateRequestBody.
+        r"""Gets the sql_name of this CreateSqlJobTemplateRequestBody.
 
         新增SQL模板名称，该名称在当前工程下必须唯一。
 
@@ -95,7 +95,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @sql_name.setter
     def sql_name(self, sql_name):
-        """Sets the sql_name of this CreateSqlJobTemplateRequestBody.
+        r"""Sets the sql_name of this CreateSqlJobTemplateRequestBody.
 
         新增SQL模板名称，该名称在当前工程下必须唯一。
 
@@ -106,7 +106,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateSqlJobTemplateRequestBody.
+        r"""Gets the description of this CreateSqlJobTemplateRequestBody.
 
         新增SQL模板的描述信息，可以为空字符串。
 
@@ -117,7 +117,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSqlJobTemplateRequestBody.
+        r"""Sets the description of this CreateSqlJobTemplateRequestBody.
 
         新增SQL模板的描述信息，可以为空字符串。
 
@@ -128,7 +128,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this CreateSqlJobTemplateRequestBody.
+        r"""Gets the group of this CreateSqlJobTemplateRequestBody.
 
         分组名称。
 
@@ -139,7 +139,7 @@ class CreateSqlJobTemplateRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this CreateSqlJobTemplateRequestBody.
+        r"""Sets the group of this CreateSqlJobTemplateRequestBody.
 
         分组名称。
 

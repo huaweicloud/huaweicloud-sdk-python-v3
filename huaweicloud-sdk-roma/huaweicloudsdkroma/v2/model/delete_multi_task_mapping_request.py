@@ -29,7 +29,7 @@ class DeleteMultiTaskMappingRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, mapping_id=None):
-        """DeleteMultiTaskMappingRequest
+        r"""DeleteMultiTaskMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteMultiTaskMappingRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteMultiTaskMappingRequest.
+        r"""Gets the instance_id of this DeleteMultiTaskMappingRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteMultiTaskMappingRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteMultiTaskMappingRequest.
+        r"""Sets the instance_id of this DeleteMultiTaskMappingRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteMultiTaskMappingRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteMultiTaskMappingRequest.
+        r"""Gets the task_id of this DeleteMultiTaskMappingRequest.
 
         任务ID
 
@@ -87,7 +87,7 @@ class DeleteMultiTaskMappingRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteMultiTaskMappingRequest.
+        r"""Sets the task_id of this DeleteMultiTaskMappingRequest.
 
         任务ID
 
@@ -98,7 +98,7 @@ class DeleteMultiTaskMappingRequest:
 
     @property
     def mapping_id(self):
-        """Gets the mapping_id of this DeleteMultiTaskMappingRequest.
+        r"""Gets the mapping_id of this DeleteMultiTaskMappingRequest.
 
         组合任务映射唯一标识
 
@@ -109,7 +109,7 @@ class DeleteMultiTaskMappingRequest:
 
     @mapping_id.setter
     def mapping_id(self, mapping_id):
-        """Sets the mapping_id of this DeleteMultiTaskMappingRequest.
+        r"""Sets the mapping_id of this DeleteMultiTaskMappingRequest.
 
         组合任务映射唯一标识
 

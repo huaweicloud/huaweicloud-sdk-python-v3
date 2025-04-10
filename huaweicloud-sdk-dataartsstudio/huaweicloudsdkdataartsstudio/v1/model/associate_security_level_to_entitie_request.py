@@ -29,7 +29,7 @@ class AssociateSecurityLevelToEntitieRequest:
     }
 
     def __init__(self, workspace=None, guid=None, security_level=None):
-        """AssociateSecurityLevelToEntitieRequest
+        r"""AssociateSecurityLevelToEntitieRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AssociateSecurityLevelToEntitieRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this AssociateSecurityLevelToEntitieRequest.
+        r"""Gets the workspace of this AssociateSecurityLevelToEntitieRequest.
 
         DataArts Studio工作空间ID
 
@@ -65,7 +65,7 @@ class AssociateSecurityLevelToEntitieRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this AssociateSecurityLevelToEntitieRequest.
+        r"""Sets the workspace of this AssociateSecurityLevelToEntitieRequest.
 
         DataArts Studio工作空间ID
 
@@ -76,7 +76,7 @@ class AssociateSecurityLevelToEntitieRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this AssociateSecurityLevelToEntitieRequest.
+        r"""Gets the guid of this AssociateSecurityLevelToEntitieRequest.
 
         资产id
 
@@ -87,7 +87,7 @@ class AssociateSecurityLevelToEntitieRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this AssociateSecurityLevelToEntitieRequest.
+        r"""Sets the guid of this AssociateSecurityLevelToEntitieRequest.
 
         资产id
 
@@ -98,7 +98,7 @@ class AssociateSecurityLevelToEntitieRequest:
 
     @property
     def security_level(self):
-        """Gets the security_level of this AssociateSecurityLevelToEntitieRequest.
+        r"""Gets the security_level of this AssociateSecurityLevelToEntitieRequest.
 
         资产密级
 
@@ -109,7 +109,7 @@ class AssociateSecurityLevelToEntitieRequest:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this AssociateSecurityLevelToEntitieRequest.
+        r"""Sets the security_level of this AssociateSecurityLevelToEntitieRequest.
 
         资产密级
 

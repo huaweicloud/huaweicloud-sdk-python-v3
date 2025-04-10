@@ -29,7 +29,7 @@ class CreateGeoipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
-        """CreateGeoipRuleRequest
+        r"""CreateGeoipRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateGeoipRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateGeoipRuleRequest.
+        r"""Gets the enterprise_project_id of this CreateGeoipRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class CreateGeoipRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateGeoipRuleRequest.
+        r"""Sets the enterprise_project_id of this CreateGeoipRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class CreateGeoipRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateGeoipRuleRequest.
+        r"""Gets the policy_id of this CreateGeoipRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -89,7 +89,7 @@ class CreateGeoipRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateGeoipRuleRequest.
+        r"""Sets the policy_id of this CreateGeoipRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -100,7 +100,7 @@ class CreateGeoipRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGeoipRuleRequest.
+        r"""Gets the body of this CreateGeoipRuleRequest.
 
         :return: The body of this CreateGeoipRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`
@@ -109,7 +109,7 @@ class CreateGeoipRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGeoipRuleRequest.
+        r"""Sets the body of this CreateGeoipRuleRequest.
 
         :param body: The body of this CreateGeoipRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`

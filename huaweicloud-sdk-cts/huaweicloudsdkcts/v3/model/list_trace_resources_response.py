@@ -26,7 +26,7 @@ class ListTraceResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """ListTraceResourcesResponse
+        r"""ListTraceResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTraceResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListTraceResourcesResponse.
+        r"""Gets the resources of this ListTraceResourcesResponse.
 
         返回的资源类型列表。
 
@@ -55,7 +55,7 @@ class ListTraceResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListTraceResourcesResponse.
+        r"""Sets the resources of this ListTraceResourcesResponse.
 
         返回的资源类型列表。
 

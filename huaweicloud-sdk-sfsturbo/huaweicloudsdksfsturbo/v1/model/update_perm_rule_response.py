@@ -32,7 +32,7 @@ class UpdatePermRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ip_cidr=None, rw_type=None, user_type=None):
-        """UpdatePermRuleResponse
+        r"""UpdatePermRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePermRuleResponse.
+        r"""Gets the id of this UpdatePermRuleResponse.
 
         权限规格的id
 
@@ -76,7 +76,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePermRuleResponse.
+        r"""Sets the id of this UpdatePermRuleResponse.
 
         权限规格的id
 
@@ -87,7 +87,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @property
     def ip_cidr(self):
-        """Gets the ip_cidr of this UpdatePermRuleResponse.
+        r"""Gets the ip_cidr of this UpdatePermRuleResponse.
 
         授权对象的IP地址或网段
 
@@ -98,7 +98,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @ip_cidr.setter
     def ip_cidr(self, ip_cidr):
-        """Sets the ip_cidr of this UpdatePermRuleResponse.
+        r"""Sets the ip_cidr of this UpdatePermRuleResponse.
 
         授权对象的IP地址或网段
 
@@ -109,7 +109,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @property
     def rw_type(self):
-        """Gets the rw_type of this UpdatePermRuleResponse.
+        r"""Gets the rw_type of this UpdatePermRuleResponse.
 
         授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
@@ -120,7 +120,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @rw_type.setter
     def rw_type(self, rw_type):
-        """Sets the rw_type of this UpdatePermRuleResponse.
+        r"""Sets the rw_type of this UpdatePermRuleResponse.
 
         授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
 
@@ -131,7 +131,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @property
     def user_type(self):
-        """Gets the user_type of this UpdatePermRuleResponse.
+        r"""Gets the user_type of this UpdatePermRuleResponse.
 
         授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。'
 
@@ -142,7 +142,7 @@ class UpdatePermRuleResponse(SdkResponse):
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this UpdatePermRuleResponse.
+        r"""Sets the user_type of this UpdatePermRuleResponse.
 
         授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。'
 

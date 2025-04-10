@@ -25,7 +25,7 @@ class CheckUserIdentityRequest:
     }
 
     def __init__(self, body=None):
-        """CheckUserIdentityRequest
+        r"""CheckUserIdentityRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckUserIdentityRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckUserIdentityRequest.
+        r"""Gets the body of this CheckUserIdentityRequest.
 
         :return: The body of this CheckUserIdentityRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.CheckSubcustomerUserReq`
@@ -52,7 +52,7 @@ class CheckUserIdentityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckUserIdentityRequest.
+        r"""Sets the body of this CheckUserIdentityRequest.
 
         :param body: The body of this CheckUserIdentityRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.CheckSubcustomerUserReq`

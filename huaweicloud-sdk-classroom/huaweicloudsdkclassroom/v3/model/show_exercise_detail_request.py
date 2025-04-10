@@ -25,7 +25,7 @@ class ShowExerciseDetailRequest:
     }
 
     def __init__(self, exercise_id=None):
-        """ShowExerciseDetailRequest
+        r"""ShowExerciseDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowExerciseDetailRequest:
 
     @property
     def exercise_id(self):
-        """Gets the exercise_id of this ShowExerciseDetailRequest.
+        r"""Gets the exercise_id of this ShowExerciseDetailRequest.
 
         需查询的习题id
 
@@ -53,7 +53,7 @@ class ShowExerciseDetailRequest:
 
     @exercise_id.setter
     def exercise_id(self, exercise_id):
-        """Sets the exercise_id of this ShowExerciseDetailRequest.
+        r"""Sets the exercise_id of this ShowExerciseDetailRequest.
 
         需查询的习题id
 

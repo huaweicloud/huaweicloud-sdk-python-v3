@@ -32,7 +32,7 @@ class BatchAddAccountsRequest:
     }
 
     def __init__(self, x_security_token=None, region=None, enterprise_project_id=None, body=None):
-        """BatchAddAccountsRequest
+        r"""BatchAddAccountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -40,7 +40,7 @@ class BatchAddAccountsRequest:
         :type x_security_token: str
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param body: Body of the BatchAddAccountsRequest
         :type body: :class:`huaweicloudsdkhss.v5.BatchAddAccountsRequestInfo`
@@ -64,7 +64,7 @@ class BatchAddAccountsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this BatchAddAccountsRequest.
+        r"""Gets the x_security_token of this BatchAddAccountsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -75,7 +75,7 @@ class BatchAddAccountsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this BatchAddAccountsRequest.
+        r"""Sets the x_security_token of this BatchAddAccountsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -86,7 +86,7 @@ class BatchAddAccountsRequest:
 
     @property
     def region(self):
-        """Gets the region of this BatchAddAccountsRequest.
+        r"""Gets the region of this BatchAddAccountsRequest.
 
         Region ID
 
@@ -97,7 +97,7 @@ class BatchAddAccountsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BatchAddAccountsRequest.
+        r"""Sets the region of this BatchAddAccountsRequest.
 
         Region ID
 
@@ -108,9 +108,9 @@ class BatchAddAccountsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchAddAccountsRequest.
+        r"""Gets the enterprise_project_id of this BatchAddAccountsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this BatchAddAccountsRequest.
         :rtype: str
@@ -119,9 +119,9 @@ class BatchAddAccountsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchAddAccountsRequest.
+        r"""Sets the enterprise_project_id of this BatchAddAccountsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this BatchAddAccountsRequest.
         :type enterprise_project_id: str
@@ -130,7 +130,7 @@ class BatchAddAccountsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddAccountsRequest.
+        r"""Gets the body of this BatchAddAccountsRequest.
 
         :return: The body of this BatchAddAccountsRequest.
         :rtype: :class:`huaweicloudsdkhss.v5.BatchAddAccountsRequestInfo`
@@ -139,7 +139,7 @@ class BatchAddAccountsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddAccountsRequest.
+        r"""Sets the body of this BatchAddAccountsRequest.
 
         :param body: The body of this BatchAddAccountsRequest.
         :type body: :class:`huaweicloudsdkhss.v5.BatchAddAccountsRequestInfo`

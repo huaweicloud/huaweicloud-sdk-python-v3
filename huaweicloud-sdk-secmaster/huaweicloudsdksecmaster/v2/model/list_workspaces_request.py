@@ -51,7 +51,7 @@ class ListWorkspacesRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, region_id=None, name=None, description=None, view_bind_id=None, view_bind_name=None, create_time_start=None, create_time_end=None, is_view=None, ids=None, normal_project_id=None, enterprise_project_id=None):
-        """ListWorkspacesRequest
+        r"""ListWorkspacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class ListWorkspacesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListWorkspacesRequest.
+        r"""Gets the project_id of this ListWorkspacesRequest.
 
         项目id
 
@@ -142,7 +142,7 @@ class ListWorkspacesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListWorkspacesRequest.
+        r"""Sets the project_id of this ListWorkspacesRequest.
 
         项目id
 
@@ -153,7 +153,7 @@ class ListWorkspacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkspacesRequest.
+        r"""Gets the offset of this ListWorkspacesRequest.
 
         偏移量 指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，
 
@@ -164,7 +164,7 @@ class ListWorkspacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkspacesRequest.
+        r"""Sets the offset of this ListWorkspacesRequest.
 
         偏移量 指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，
 
@@ -175,7 +175,7 @@ class ListWorkspacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkspacesRequest.
+        r"""Gets the limit of this ListWorkspacesRequest.
 
         每页显示个数
 
@@ -186,7 +186,7 @@ class ListWorkspacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkspacesRequest.
+        r"""Sets the limit of this ListWorkspacesRequest.
 
         每页显示个数
 
@@ -197,7 +197,7 @@ class ListWorkspacesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListWorkspacesRequest.
+        r"""Gets the region_id of this ListWorkspacesRequest.
 
         区域id
 
@@ -208,7 +208,7 @@ class ListWorkspacesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListWorkspacesRequest.
+        r"""Sets the region_id of this ListWorkspacesRequest.
 
         区域id
 
@@ -219,7 +219,7 @@ class ListWorkspacesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListWorkspacesRequest.
+        r"""Gets the name of this ListWorkspacesRequest.
 
         名称查询
 
@@ -230,7 +230,7 @@ class ListWorkspacesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListWorkspacesRequest.
+        r"""Sets the name of this ListWorkspacesRequest.
 
         名称查询
 
@@ -241,7 +241,7 @@ class ListWorkspacesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListWorkspacesRequest.
+        r"""Gets the description of this ListWorkspacesRequest.
 
         描述查询
 
@@ -252,7 +252,7 @@ class ListWorkspacesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListWorkspacesRequest.
+        r"""Sets the description of this ListWorkspacesRequest.
 
         描述查询
 
@@ -263,7 +263,7 @@ class ListWorkspacesRequest:
 
     @property
     def view_bind_id(self):
-        """Gets the view_bind_id of this ListWorkspacesRequest.
+        r"""Gets the view_bind_id of this ListWorkspacesRequest.
 
         视图绑定的空间id
 
@@ -274,7 +274,7 @@ class ListWorkspacesRequest:
 
     @view_bind_id.setter
     def view_bind_id(self, view_bind_id):
-        """Sets the view_bind_id of this ListWorkspacesRequest.
+        r"""Sets the view_bind_id of this ListWorkspacesRequest.
 
         视图绑定的空间id
 
@@ -285,7 +285,7 @@ class ListWorkspacesRequest:
 
     @property
     def view_bind_name(self):
-        """Gets the view_bind_name of this ListWorkspacesRequest.
+        r"""Gets the view_bind_name of this ListWorkspacesRequest.
 
         视图绑定的空间名称
 
@@ -296,7 +296,7 @@ class ListWorkspacesRequest:
 
     @view_bind_name.setter
     def view_bind_name(self, view_bind_name):
-        """Sets the view_bind_name of this ListWorkspacesRequest.
+        r"""Sets the view_bind_name of this ListWorkspacesRequest.
 
         视图绑定的空间名称
 
@@ -307,7 +307,7 @@ class ListWorkspacesRequest:
 
     @property
     def create_time_start(self):
-        """Gets the create_time_start of this ListWorkspacesRequest.
+        r"""Gets the create_time_start of this ListWorkspacesRequest.
 
         创建时间开始，例如2024-04-26T16:08:09Z+0800
 
@@ -318,7 +318,7 @@ class ListWorkspacesRequest:
 
     @create_time_start.setter
     def create_time_start(self, create_time_start):
-        """Sets the create_time_start of this ListWorkspacesRequest.
+        r"""Sets the create_time_start of this ListWorkspacesRequest.
 
         创建时间开始，例如2024-04-26T16:08:09Z+0800
 
@@ -329,7 +329,7 @@ class ListWorkspacesRequest:
 
     @property
     def create_time_end(self):
-        """Gets the create_time_end of this ListWorkspacesRequest.
+        r"""Gets the create_time_end of this ListWorkspacesRequest.
 
         创建时间结束，例如2024-04-2T16:08:09Z+0800
 
@@ -340,7 +340,7 @@ class ListWorkspacesRequest:
 
     @create_time_end.setter
     def create_time_end(self, create_time_end):
-        """Sets the create_time_end of this ListWorkspacesRequest.
+        r"""Sets the create_time_end of this ListWorkspacesRequest.
 
         创建时间结束，例如2024-04-2T16:08:09Z+0800
 
@@ -351,7 +351,7 @@ class ListWorkspacesRequest:
 
     @property
     def is_view(self):
-        """Gets the is_view of this ListWorkspacesRequest.
+        r"""Gets the is_view of this ListWorkspacesRequest.
 
         是否查询视图 true or false
 
@@ -362,7 +362,7 @@ class ListWorkspacesRequest:
 
     @is_view.setter
     def is_view(self, is_view):
-        """Sets the is_view of this ListWorkspacesRequest.
+        r"""Sets the is_view of this ListWorkspacesRequest.
 
         是否查询视图 true or false
 
@@ -373,7 +373,7 @@ class ListWorkspacesRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this ListWorkspacesRequest.
+        r"""Gets the ids of this ListWorkspacesRequest.
 
         工作空间id数组，英文逗号分隔
 
@@ -384,7 +384,7 @@ class ListWorkspacesRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ListWorkspacesRequest.
+        r"""Sets the ids of this ListWorkspacesRequest.
 
         工作空间id数组，英文逗号分隔
 
@@ -395,7 +395,7 @@ class ListWorkspacesRequest:
 
     @property
     def normal_project_id(self):
-        """Gets the normal_project_id of this ListWorkspacesRequest.
+        r"""Gets the normal_project_id of this ListWorkspacesRequest.
 
         普通项目的项目id
 
@@ -406,7 +406,7 @@ class ListWorkspacesRequest:
 
     @normal_project_id.setter
     def normal_project_id(self, normal_project_id):
-        """Sets the normal_project_id of this ListWorkspacesRequest.
+        r"""Sets the normal_project_id of this ListWorkspacesRequest.
 
         普通项目的项目id
 
@@ -417,7 +417,7 @@ class ListWorkspacesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListWorkspacesRequest.
+        r"""Gets the enterprise_project_id of this ListWorkspacesRequest.
 
         企业项目的项目id
 
@@ -428,7 +428,7 @@ class ListWorkspacesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListWorkspacesRequest.
+        r"""Sets the enterprise_project_id of this ListWorkspacesRequest.
 
         企业项目的项目id
 

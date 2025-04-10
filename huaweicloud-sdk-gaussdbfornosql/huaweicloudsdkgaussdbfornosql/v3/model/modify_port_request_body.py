@@ -25,7 +25,7 @@ class ModifyPortRequestBody:
     }
 
     def __init__(self, port=None):
-        """ModifyPortRequestBody
+        r"""ModifyPortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyPortRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this ModifyPortRequestBody.
+        r"""Gets the port of this ModifyPortRequestBody.
 
         新端口号。端口有效范围为2100~9500，暂不支持8636、8637和8638。GeminiDB Mongo副本集4.0数据库实例端口有效范围为2100~9500，暂不支持8636、8637和8638。 GeminiDB Cassandra数据库实例端口有效范围为2100~9500，暂不支持7000，7001，7199，8636，8479，8484，8999，8018，2180，2887，3887，8079，8091，8092。 GeminiDB Redis数据库实例端口有效范围为1024~65535，暂不支持2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。
 
@@ -53,7 +53,7 @@ class ModifyPortRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ModifyPortRequestBody.
+        r"""Sets the port of this ModifyPortRequestBody.
 
         新端口号。端口有效范围为2100~9500，暂不支持8636、8637和8638。GeminiDB Mongo副本集4.0数据库实例端口有效范围为2100~9500，暂不支持8636、8637和8638。 GeminiDB Cassandra数据库实例端口有效范围为2100~9500，暂不支持7000，7001，7199，8636，8479，8484，8999，8018，2180，2887，3887，8079，8091，8092。 GeminiDB Redis数据库实例端口有效范围为1024~65535，暂不支持2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。
 

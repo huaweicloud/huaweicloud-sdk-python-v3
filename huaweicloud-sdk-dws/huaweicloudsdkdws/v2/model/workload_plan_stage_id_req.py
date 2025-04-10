@@ -25,7 +25,7 @@ class WorkloadPlanStageIdReq:
     }
 
     def __init__(self, stage_id=None):
-        """WorkloadPlanStageIdReq
+        r"""WorkloadPlanStageIdReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class WorkloadPlanStageIdReq:
 
     @property
     def stage_id(self):
-        """Gets the stage_id of this WorkloadPlanStageIdReq.
+        r"""Gets the stage_id of this WorkloadPlanStageIdReq.
 
         计划阶段ID
 
@@ -53,7 +53,7 @@ class WorkloadPlanStageIdReq:
 
     @stage_id.setter
     def stage_id(self, stage_id):
-        """Sets the stage_id of this WorkloadPlanStageIdReq.
+        r"""Sets the stage_id of this WorkloadPlanStageIdReq.
 
         计划阶段ID
 

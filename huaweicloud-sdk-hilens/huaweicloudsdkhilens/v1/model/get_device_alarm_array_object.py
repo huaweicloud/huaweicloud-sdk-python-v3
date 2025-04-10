@@ -43,7 +43,7 @@ class GetDeviceAlarmArrayObject:
     }
 
     def __init__(self, id=None, name=None, alarm_id=None, level=None, platform=None, impact=None, detail=None, reason=None, deal_suggestion=None, create_time=None):
-        """GetDeviceAlarmArrayObject
+        r"""GetDeviceAlarmArrayObject
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def id(self):
-        """Gets the id of this GetDeviceAlarmArrayObject.
+        r"""Gets the id of this GetDeviceAlarmArrayObject.
 
         设备告警记录ID
 
@@ -117,7 +117,7 @@ class GetDeviceAlarmArrayObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetDeviceAlarmArrayObject.
+        r"""Sets the id of this GetDeviceAlarmArrayObject.
 
         设备告警记录ID
 
@@ -128,7 +128,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def name(self):
-        """Gets the name of this GetDeviceAlarmArrayObject.
+        r"""Gets the name of this GetDeviceAlarmArrayObject.
 
         设备告警名称
 
@@ -139,7 +139,7 @@ class GetDeviceAlarmArrayObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDeviceAlarmArrayObject.
+        r"""Sets the name of this GetDeviceAlarmArrayObject.
 
         设备告警名称
 
@@ -150,7 +150,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this GetDeviceAlarmArrayObject.
+        r"""Gets the alarm_id of this GetDeviceAlarmArrayObject.
 
         设备告警ID
 
@@ -161,7 +161,7 @@ class GetDeviceAlarmArrayObject:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this GetDeviceAlarmArrayObject.
+        r"""Sets the alarm_id of this GetDeviceAlarmArrayObject.
 
         设备告警ID
 
@@ -172,7 +172,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def level(self):
-        """Gets the level of this GetDeviceAlarmArrayObject.
+        r"""Gets the level of this GetDeviceAlarmArrayObject.
 
         设备告警等级，紧急告警(critical)，严重告警(major)，一般告警(minor)
 
@@ -183,7 +183,7 @@ class GetDeviceAlarmArrayObject:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this GetDeviceAlarmArrayObject.
+        r"""Sets the level of this GetDeviceAlarmArrayObject.
 
         设备告警等级，紧急告警(critical)，严重告警(major)，一般告警(minor)
 
@@ -194,7 +194,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def platform(self):
-        """Gets the platform of this GetDeviceAlarmArrayObject.
+        r"""Gets the platform of this GetDeviceAlarmArrayObject.
 
         设备平台
 
@@ -205,7 +205,7 @@ class GetDeviceAlarmArrayObject:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this GetDeviceAlarmArrayObject.
+        r"""Sets the platform of this GetDeviceAlarmArrayObject.
 
         设备平台
 
@@ -216,7 +216,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def impact(self):
-        """Gets the impact of this GetDeviceAlarmArrayObject.
+        r"""Gets the impact of this GetDeviceAlarmArrayObject.
 
         设备告警的影响
 
@@ -227,7 +227,7 @@ class GetDeviceAlarmArrayObject:
 
     @impact.setter
     def impact(self, impact):
-        """Sets the impact of this GetDeviceAlarmArrayObject.
+        r"""Sets the impact of this GetDeviceAlarmArrayObject.
 
         设备告警的影响
 
@@ -238,7 +238,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def detail(self):
-        """Gets the detail of this GetDeviceAlarmArrayObject.
+        r"""Gets the detail of this GetDeviceAlarmArrayObject.
 
         设备告警详情内容
 
@@ -249,7 +249,7 @@ class GetDeviceAlarmArrayObject:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this GetDeviceAlarmArrayObject.
+        r"""Sets the detail of this GetDeviceAlarmArrayObject.
 
         设备告警详情内容
 
@@ -260,7 +260,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def reason(self):
-        """Gets the reason of this GetDeviceAlarmArrayObject.
+        r"""Gets the reason of this GetDeviceAlarmArrayObject.
 
         设备告警原因
 
@@ -271,7 +271,7 @@ class GetDeviceAlarmArrayObject:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this GetDeviceAlarmArrayObject.
+        r"""Sets the reason of this GetDeviceAlarmArrayObject.
 
         设备告警原因
 
@@ -282,7 +282,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def deal_suggestion(self):
-        """Gets the deal_suggestion of this GetDeviceAlarmArrayObject.
+        r"""Gets the deal_suggestion of this GetDeviceAlarmArrayObject.
 
         设备告警处理建议
 
@@ -293,7 +293,7 @@ class GetDeviceAlarmArrayObject:
 
     @deal_suggestion.setter
     def deal_suggestion(self, deal_suggestion):
-        """Sets the deal_suggestion of this GetDeviceAlarmArrayObject.
+        r"""Sets the deal_suggestion of this GetDeviceAlarmArrayObject.
 
         设备告警处理建议
 
@@ -304,7 +304,7 @@ class GetDeviceAlarmArrayObject:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetDeviceAlarmArrayObject.
+        r"""Gets the create_time of this GetDeviceAlarmArrayObject.
 
         创建时间（时间戳）
 
@@ -315,7 +315,7 @@ class GetDeviceAlarmArrayObject:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetDeviceAlarmArrayObject.
+        r"""Sets the create_time of this GetDeviceAlarmArrayObject.
 
         创建时间（时间戳）
 

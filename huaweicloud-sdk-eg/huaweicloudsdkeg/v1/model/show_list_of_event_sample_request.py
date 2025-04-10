@@ -35,7 +35,7 @@ class ShowListOfEventSampleRequest:
     }
 
     def __init__(self, offset=None, limit=None, sort=None, name=None, event_type_name=None, event_source_id=None):
-        """ShowListOfEventSampleRequest
+        r"""ShowListOfEventSampleRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowListOfEventSampleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowListOfEventSampleRequest.
+        r"""Gets the offset of this ShowListOfEventSampleRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -89,7 +89,7 @@ class ShowListOfEventSampleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowListOfEventSampleRequest.
+        r"""Sets the offset of this ShowListOfEventSampleRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -100,7 +100,7 @@ class ShowListOfEventSampleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowListOfEventSampleRequest.
+        r"""Gets the limit of this ShowListOfEventSampleRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -111,7 +111,7 @@ class ShowListOfEventSampleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowListOfEventSampleRequest.
+        r"""Sets the limit of this ShowListOfEventSampleRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -122,7 +122,7 @@ class ShowListOfEventSampleRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ShowListOfEventSampleRequest.
+        r"""Gets the sort of this ShowListOfEventSampleRequest.
 
         指定查询排序
 
@@ -133,7 +133,7 @@ class ShowListOfEventSampleRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ShowListOfEventSampleRequest.
+        r"""Sets the sort of this ShowListOfEventSampleRequest.
 
         指定查询排序
 
@@ -144,7 +144,7 @@ class ShowListOfEventSampleRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowListOfEventSampleRequest.
+        r"""Gets the name of this ShowListOfEventSampleRequest.
 
         指定查询的事件示例名称，模糊匹配
 
@@ -155,7 +155,7 @@ class ShowListOfEventSampleRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowListOfEventSampleRequest.
+        r"""Sets the name of this ShowListOfEventSampleRequest.
 
         指定查询的事件示例名称，模糊匹配
 
@@ -166,7 +166,7 @@ class ShowListOfEventSampleRequest:
 
     @property
     def event_type_name(self):
-        """Gets the event_type_name of this ShowListOfEventSampleRequest.
+        r"""Gets the event_type_name of this ShowListOfEventSampleRequest.
 
         指定查询事件示例的事件类型名称
 
@@ -177,7 +177,7 @@ class ShowListOfEventSampleRequest:
 
     @event_type_name.setter
     def event_type_name(self, event_type_name):
-        """Sets the event_type_name of this ShowListOfEventSampleRequest.
+        r"""Sets the event_type_name of this ShowListOfEventSampleRequest.
 
         指定查询事件示例的事件类型名称
 
@@ -188,7 +188,7 @@ class ShowListOfEventSampleRequest:
 
     @property
     def event_source_id(self):
-        """Gets the event_source_id of this ShowListOfEventSampleRequest.
+        r"""Gets the event_source_id of this ShowListOfEventSampleRequest.
 
         指定查询事件示例的事件源
 
@@ -199,7 +199,7 @@ class ShowListOfEventSampleRequest:
 
     @event_source_id.setter
     def event_source_id(self, event_source_id):
-        """Sets the event_source_id of this ShowListOfEventSampleRequest.
+        r"""Sets the event_source_id of this ShowListOfEventSampleRequest.
 
         指定查询事件示例的事件源
 

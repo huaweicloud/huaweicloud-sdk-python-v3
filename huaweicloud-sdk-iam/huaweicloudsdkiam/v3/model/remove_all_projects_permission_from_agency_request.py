@@ -29,7 +29,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
     }
 
     def __init__(self, agency_id=None, domain_id=None, role_id=None):
-        """RemoveAllProjectsPermissionFromAgencyRequest
+        r"""RemoveAllProjectsPermissionFromAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this RemoveAllProjectsPermissionFromAgencyRequest.
+        r"""Gets the agency_id of this RemoveAllProjectsPermissionFromAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -65,7 +65,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this RemoveAllProjectsPermissionFromAgencyRequest.
+        r"""Sets the agency_id of this RemoveAllProjectsPermissionFromAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -76,7 +76,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RemoveAllProjectsPermissionFromAgencyRequest.
+        r"""Gets the domain_id of this RemoveAllProjectsPermissionFromAgencyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -87,7 +87,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RemoveAllProjectsPermissionFromAgencyRequest.
+        r"""Sets the domain_id of this RemoveAllProjectsPermissionFromAgencyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -98,7 +98,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this RemoveAllProjectsPermissionFromAgencyRequest.
+        r"""Gets the role_id of this RemoveAllProjectsPermissionFromAgencyRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
@@ -109,7 +109,7 @@ class RemoveAllProjectsPermissionFromAgencyRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this RemoveAllProjectsPermissionFromAgencyRequest.
+        r"""Sets the role_id of this RemoveAllProjectsPermissionFromAgencyRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 

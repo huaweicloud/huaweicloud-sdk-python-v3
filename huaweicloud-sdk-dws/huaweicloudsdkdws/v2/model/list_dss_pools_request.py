@@ -23,7 +23,7 @@ class ListDssPoolsRequest:
     }
 
     def __init__(self):
-        """ListDssPoolsRequest
+        r"""ListDssPoolsRequest
 
         The model defined in huaweicloud sdk
 

@@ -37,7 +37,7 @@ class Product:
     }
 
     def __init__(self, id=None, name=None, description=None, attributes=None, project_id=None, created_at=None, tags=None):
-        """Product
+        r"""Product
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class Product:
 
     @property
     def id(self):
-        """Gets the id of this Product.
+        r"""Gets the id of this Product.
 
         产品id
 
@@ -94,7 +94,7 @@ class Product:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Product.
+        r"""Sets the id of this Product.
 
         产品id
 
@@ -105,7 +105,7 @@ class Product:
 
     @property
     def name(self):
-        """Gets the name of this Product.
+        r"""Gets the name of this Product.
 
         产品名称
 
@@ -116,7 +116,7 @@ class Product:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Product.
+        r"""Sets the name of this Product.
 
         产品名称
 
@@ -127,7 +127,7 @@ class Product:
 
     @property
     def description(self):
-        """Gets the description of this Product.
+        r"""Gets the description of this Product.
 
         产品描述
 
@@ -138,7 +138,7 @@ class Product:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Product.
+        r"""Sets the description of this Product.
 
         产品描述
 
@@ -149,7 +149,7 @@ class Product:
 
     @property
     def attributes(self):
-        """Gets the attributes of this Product.
+        r"""Gets the attributes of this Product.
 
         产品属性值
 
@@ -160,7 +160,7 @@ class Product:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this Product.
+        r"""Sets the attributes of this Product.
 
         产品属性值
 
@@ -171,7 +171,7 @@ class Product:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Product.
+        r"""Gets the project_id of this Product.
 
         产品所属账号的项目ID
 
@@ -182,7 +182,7 @@ class Product:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Product.
+        r"""Sets the project_id of this Product.
 
         产品所属账号的项目ID
 
@@ -193,7 +193,7 @@ class Product:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Product.
+        r"""Gets the created_at of this Product.
 
         产品创建时间
 
@@ -204,7 +204,7 @@ class Product:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Product.
+        r"""Sets the created_at of this Product.
 
         产品创建时间
 
@@ -215,7 +215,7 @@ class Product:
 
     @property
     def tags(self):
-        """Gets the tags of this Product.
+        r"""Gets the tags of this Product.
 
         产品标签
 
@@ -226,7 +226,7 @@ class Product:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Product.
+        r"""Sets the tags of this Product.
 
         产品标签
 

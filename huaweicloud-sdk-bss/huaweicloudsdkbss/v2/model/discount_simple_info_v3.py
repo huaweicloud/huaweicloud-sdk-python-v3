@@ -27,7 +27,7 @@ class DiscountSimpleInfoV3:
     }
 
     def __init__(self, id=None, type=None):
-        """DiscountSimpleInfoV3
+        r"""DiscountSimpleInfoV3
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DiscountSimpleInfoV3:
 
     @property
     def id(self):
-        """Gets the id of this DiscountSimpleInfoV3.
+        r"""Gets the id of this DiscountSimpleInfoV3.
 
         折扣ID。
 
@@ -59,7 +59,7 @@ class DiscountSimpleInfoV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DiscountSimpleInfoV3.
+        r"""Sets the id of this DiscountSimpleInfoV3.
 
         折扣ID。
 
@@ -70,7 +70,7 @@ class DiscountSimpleInfoV3:
 
     @property
     def type(self):
-        """Gets the type of this DiscountSimpleInfoV3.
+        r"""Gets the type of this DiscountSimpleInfoV3.
 
         折扣类型： 0：促销折扣2：商务优惠3：合作伙伴授予折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 
@@ -81,7 +81,7 @@ class DiscountSimpleInfoV3:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DiscountSimpleInfoV3.
+        r"""Sets the type of this DiscountSimpleInfoV3.
 
         折扣类型： 0：促销折扣2：商务优惠3：合作伙伴授予折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 

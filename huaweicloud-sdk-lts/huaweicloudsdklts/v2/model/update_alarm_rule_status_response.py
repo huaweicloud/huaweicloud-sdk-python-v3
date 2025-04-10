@@ -26,7 +26,7 @@ class UpdateAlarmRuleStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateAlarmRuleStatusResponse
+        r"""UpdateAlarmRuleStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAlarmRuleStatusResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlarmRuleStatusResponse.
+        r"""Gets the body of this UpdateAlarmRuleStatusResponse.
 
         :return: The body of this UpdateAlarmRuleStatusResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateAlarmRuleStatusResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlarmRuleStatusResponse.
+        r"""Sets the body of this UpdateAlarmRuleStatusResponse.
 
         :param body: The body of this UpdateAlarmRuleStatusResponse.
         :type body: str

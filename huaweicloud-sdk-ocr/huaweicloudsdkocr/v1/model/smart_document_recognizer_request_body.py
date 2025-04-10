@@ -49,7 +49,7 @@ class SmartDocumentRecognizerRequestBody:
     }
 
     def __init__(self, data=None, url=None, single_orientation_mode=None, language=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, erase_seal=None, pdf_page_number=None):
-        """SmartDocumentRecognizerRequestBody
+        r"""SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def data(self):
-        """Gets the data of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the data of this SmartDocumentRecognizerRequestBody.
 
         与url二选一。图片或PDF格式，base64编码，要求base64编码后大小不超过10M。 图像尺寸不小于15×15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIFF格式。 PDF以144dpi的分辨率转为图像进行文档解析，需符合上述图像尺寸规定。若PDF有多页，当前仅对第1页进行识别。 
 
@@ -138,7 +138,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the data of this SmartDocumentRecognizerRequestBody.
 
         与url二选一。图片或PDF格式，base64编码，要求base64编码后大小不超过10M。 图像尺寸不小于15×15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIFF格式。 PDF以144dpi的分辨率转为图像进行文档解析，需符合上述图像尺寸规定。若PDF有多页，当前仅对第1页进行识别。 
 
@@ -149,7 +149,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the url of this SmartDocumentRecognizerRequestBody.
 
         与data二选一。  要求base64编码后大小不超过10M。 图像尺寸不小于15×15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIFF格式。 PDF以144dpi的分辨率转为图像进行文档解析，需符合上述图像尺寸规定。若PDF有多页，当前仅对第1页进行识别。 图片或PDF的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -160,7 +160,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the url of this SmartDocumentRecognizerRequestBody.
 
         与data二选一。  要求base64编码后大小不超过10M。 图像尺寸不小于15×15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIFF格式。 PDF以144dpi的分辨率转为图像进行文档解析，需符合上述图像尺寸规定。若PDF有多页，当前仅对第1页进行识别。 图片或PDF的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -171,7 +171,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def single_orientation_mode(self):
-        """Gets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
 
         单朝向模式开关。可选值包括： - true：打开单朝向模式。 - false：关闭单朝向模式。  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为\"true\"，既默认图片中的文字方向为单朝向。 
 
@@ -182,7 +182,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @single_orientation_mode.setter
     def single_orientation_mode(self, single_orientation_mode):
-        """Sets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the single_orientation_mode of this SmartDocumentRecognizerRequestBody.
 
         单朝向模式开关。可选值包括： - true：打开单朝向模式。 - false：关闭单朝向模式。  图片文字方向一致时，打开该开关可提升识别精度；图片文字方向不一致时，关闭该开关可支持多朝向文字识别。未传入该参数时默认为\"true\"，既默认图片中的文字方向为单朝向。 
 
@@ -193,7 +193,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def language(self):
-        """Gets the language of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the language of this SmartDocumentRecognizerRequestBody.
 
         语种选择，未传入该参数时默认为中英文识别模式。参考[华为云通用文字支持语种](https://support.huaweicloud.com/api-ocr/ocr_03_0042.html)。 
 
@@ -204,7 +204,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the language of this SmartDocumentRecognizerRequestBody.
 
         语种选择，未传入该参数时默认为中英文识别模式。参考[华为云通用文字支持语种](https://support.huaweicloud.com/api-ocr/ocr_03_0042.html)。 
 
@@ -215,7 +215,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def kv(self):
-        """Gets the kv of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the kv of this SmartDocumentRecognizerRequestBody.
 
         是否进行键值对（key-value）提取。若是，结果会以“kv_result”这一关键字返回。 
 
@@ -226,7 +226,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @kv.setter
     def kv(self, kv):
-        """Sets the kv of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the kv of this SmartDocumentRecognizerRequestBody.
 
         是否进行键值对（key-value）提取。若是，结果会以“kv_result”这一关键字返回。 
 
@@ -237,7 +237,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def table(self):
-        """Gets the table of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the table of this SmartDocumentRecognizerRequestBody.
 
         是否进行表格识别。此处表格特指逻辑表格，通常具有M行N列的形式，且第一行或第一列为表头。若是，结果会以“table_result”这一关键字返回。 
 
@@ -248,7 +248,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the table of this SmartDocumentRecognizerRequestBody.
 
         是否进行表格识别。此处表格特指逻辑表格，通常具有M行N列的形式，且第一行或第一列为表头。若是，结果会以“table_result”这一关键字返回。 
 
@@ -259,7 +259,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def layout(self):
-        """Gets the layout of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the layout of this SmartDocumentRecognizerRequestBody.
 
         是否进行版面分析。若是，结果会以“layout_result”这一关键字返回。 
 
@@ -270,7 +270,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @layout.setter
     def layout(self, layout):
-        """Sets the layout of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the layout of this SmartDocumentRecognizerRequestBody.
 
         是否进行版面分析。若是，结果会以“layout_result”这一关键字返回。 
 
@@ -281,7 +281,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def return_excel(self):
-        """Gets the return_excel of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the return_excel of this SmartDocumentRecognizerRequestBody.
 
         仅当table为True时有效。是否返回表格转换Microsoft Excel的Base64编码字段。 
 
@@ -292,7 +292,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @return_excel.setter
     def return_excel(self, return_excel):
-        """Sets the return_excel of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the return_excel of this SmartDocumentRecognizerRequestBody.
 
         仅当table为True时有效。是否返回表格转换Microsoft Excel的Base64编码字段。 
 
@@ -303,7 +303,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def form(self):
-        """Gets the form of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the form of this SmartDocumentRecognizerRequestBody.
 
         是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\"form_result\"这一关键字返回。 
 
@@ -314,7 +314,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @form.setter
     def form(self, form):
-        """Sets the form of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the form of this SmartDocumentRecognizerRequestBody.
 
         是否进行有线表单识别。有线表单指关键信息以有线单元格形式进行呈现，例如户口本、机动车发票等。若是，结果会以\"form_result\"这一关键字返回。 
 
@@ -325,7 +325,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def formula(self):
-        """Gets the formula of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the formula of this SmartDocumentRecognizerRequestBody.
 
         是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。  - 开启公式识别后会降低响应速度。 - 当前仅支持3行以内公式识别，不支持3行以上的多行公式。 
 
@@ -336,7 +336,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the formula of this SmartDocumentRecognizerRequestBody.
 
         是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。  - 开启公式识别后会降低响应速度。 - 当前仅支持3行以内公式识别，不支持3行以上的多行公式。 
 
@@ -347,7 +347,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def kv_map(self):
-        """Gets the kv_map of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the kv_map of this SmartDocumentRecognizerRequestBody.
 
         需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\"名称\"：\"小明\"}的键值对，若传入{\"名称\"：\"姓名\"}的kv_map，则返回结果为{“姓名”：“小明”}。  > 参数传入示例： - \"kv_map\":\"{\\\"名称\\\":\\\"姓名\\\"}\" 
 
@@ -358,7 +358,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @kv_map.setter
     def kv_map(self, kv_map):
-        """Sets the kv_map of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the kv_map of this SmartDocumentRecognizerRequestBody.
 
         需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\"名称\"：\"小明\"}的键值对，若传入{\"名称\"：\"姓名\"}的kv_map，则返回结果为{“姓名”：“小明”}。  > 参数传入示例： - \"kv_map\":\"{\\\"名称\\\":\\\"姓名\\\"}\" 
 
@@ -369,7 +369,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def erase_seal(self):
-        """Gets the erase_seal of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the erase_seal of this SmartDocumentRecognizerRequestBody.
 
         是否打开印章擦除功能。可选值包括： - true：打开印章擦除功能。 - false：关闭印章擦除功能。  开启后，可提升印章遮挡区域的文字识别精度。 
 
@@ -380,7 +380,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @erase_seal.setter
     def erase_seal(self, erase_seal):
-        """Sets the erase_seal of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the erase_seal of this SmartDocumentRecognizerRequestBody.
 
         是否打开印章擦除功能。可选值包括： - true：打开印章擦除功能。 - false：关闭印章擦除功能。  开启后，可提升印章遮挡区域的文字识别精度。 
 
@@ -391,7 +391,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @property
     def pdf_page_number(self):
-        """Gets the pdf_page_number of this SmartDocumentRecognizerRequestBody.
+        r"""Gets the pdf_page_number of this SmartDocumentRecognizerRequestBody.
 
         指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
 
@@ -402,7 +402,7 @@ class SmartDocumentRecognizerRequestBody:
 
     @pdf_page_number.setter
     def pdf_page_number(self, pdf_page_number):
-        """Sets the pdf_page_number of this SmartDocumentRecognizerRequestBody.
+        r"""Sets the pdf_page_number of this SmartDocumentRecognizerRequestBody.
 
         指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
 

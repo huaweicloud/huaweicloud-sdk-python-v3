@@ -29,7 +29,7 @@ class ListSecretsRequest:
     }
 
     def __init__(self, limit=None, marker=None, event_name=None):
-        """ListSecretsRequest
+        r"""ListSecretsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSecretsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecretsRequest.
+        r"""Gets the limit of this ListSecretsRequest.
 
         每页返回的个数。  默认值：50。
 
@@ -68,7 +68,7 @@ class ListSecretsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecretsRequest.
+        r"""Sets the limit of this ListSecretsRequest.
 
         每页返回的个数。  默认值：50。
 
@@ -79,7 +79,7 @@ class ListSecretsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecretsRequest.
+        r"""Gets the marker of this ListSecretsRequest.
 
         分页查询起始的凭据名称，为空时为查询第一页
 
@@ -90,7 +90,7 @@ class ListSecretsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecretsRequest.
+        r"""Sets the marker of this ListSecretsRequest.
 
         分页查询起始的凭据名称，为空时为查询第一页
 
@@ -101,7 +101,7 @@ class ListSecretsRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListSecretsRequest.
+        r"""Gets the event_name of this ListSecretsRequest.
 
         指定事件名称时，仅返回关联该事件的凭据
 
@@ -112,7 +112,7 @@ class ListSecretsRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListSecretsRequest.
+        r"""Sets the event_name of this ListSecretsRequest.
 
         指定事件名称时，仅返回关联该事件的凭据
 

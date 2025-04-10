@@ -35,7 +35,7 @@ class MemberBase:
     }
 
     def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None):
-        """MemberBase
+        r"""MemberBase
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MemberBase:
 
     @property
     def host(self):
-        """Gets the host of this MemberBase.
+        r"""Gets the host of this MemberBase.
 
         后端服务器地址  后端实例类型为ip时必填
 
@@ -89,7 +89,7 @@ class MemberBase:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this MemberBase.
+        r"""Sets the host of this MemberBase.
 
         后端服务器地址  后端实例类型为ip时必填
 
@@ -100,7 +100,7 @@ class MemberBase:
 
     @property
     def weight(self):
-        """Gets the weight of this MemberBase.
+        r"""Gets the weight of this MemberBase.
 
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
@@ -111,7 +111,7 @@ class MemberBase:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this MemberBase.
+        r"""Sets the weight of this MemberBase.
 
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
@@ -122,7 +122,7 @@ class MemberBase:
 
     @property
     def is_backup(self):
-        """Gets the is_backup of this MemberBase.
+        r"""Gets the is_backup of this MemberBase.
 
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
 
@@ -133,7 +133,7 @@ class MemberBase:
 
     @is_backup.setter
     def is_backup(self, is_backup):
-        """Sets the is_backup of this MemberBase.
+        r"""Sets the is_backup of this MemberBase.
 
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，如果不支持请联系技术支持。
 
@@ -144,7 +144,7 @@ class MemberBase:
 
     @property
     def member_group_name(self):
-        """Gets the member_group_name of this MemberBase.
+        r"""Gets the member_group_name of this MemberBase.
 
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
@@ -155,7 +155,7 @@ class MemberBase:
 
     @member_group_name.setter
     def member_group_name(self, member_group_name):
-        """Sets the member_group_name of this MemberBase.
+        r"""Sets the member_group_name of this MemberBase.
 
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
@@ -166,7 +166,7 @@ class MemberBase:
 
     @property
     def status(self):
-        """Gets the status of this MemberBase.
+        r"""Gets the status of this MemberBase.
 
         后端服务器状态   - 1：可用   - 2：不可用
 
@@ -177,7 +177,7 @@ class MemberBase:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MemberBase.
+        r"""Sets the status of this MemberBase.
 
         后端服务器状态   - 1：可用   - 2：不可用
 
@@ -188,7 +188,7 @@ class MemberBase:
 
     @property
     def port(self):
-        """Gets the port of this MemberBase.
+        r"""Gets the port of this MemberBase.
 
         后端服务器端口
 
@@ -199,7 +199,7 @@ class MemberBase:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MemberBase.
+        r"""Sets the port of this MemberBase.
 
         后端服务器端口
 

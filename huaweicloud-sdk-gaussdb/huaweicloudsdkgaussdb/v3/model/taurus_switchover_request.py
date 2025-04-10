@@ -25,7 +25,7 @@ class TaurusSwitchoverRequest:
     }
 
     def __init__(self, node_id=None):
-        """TaurusSwitchoverRequest
+        r"""TaurusSwitchoverRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TaurusSwitchoverRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TaurusSwitchoverRequest.
+        r"""Gets the node_id of this TaurusSwitchoverRequest.
 
         只读节点ID，倒换后为主节点。
 
@@ -53,7 +53,7 @@ class TaurusSwitchoverRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TaurusSwitchoverRequest.
+        r"""Sets the node_id of this TaurusSwitchoverRequest.
 
         只读节点ID，倒换后为主节点。
 

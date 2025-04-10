@@ -41,7 +41,7 @@ class QueryClientCaCertificateBody:
     }
 
     def __init__(self, id=None, name=None, issuer=None, subject=None, serial_number=None, expiration_time=None, signature_algorithm=None, created_at=None, updated_at=None):
-        """QueryClientCaCertificateBody
+        r"""QueryClientCaCertificateBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def id(self):
-        """Gets the id of this QueryClientCaCertificateBody.
+        r"""Gets the id of this QueryClientCaCertificateBody.
 
         ID
 
@@ -110,7 +110,7 @@ class QueryClientCaCertificateBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryClientCaCertificateBody.
+        r"""Sets the id of this QueryClientCaCertificateBody.
 
         ID
 
@@ -121,7 +121,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def name(self):
-        """Gets the name of this QueryClientCaCertificateBody.
+        r"""Gets the name of this QueryClientCaCertificateBody.
 
         证书名
 
@@ -132,7 +132,7 @@ class QueryClientCaCertificateBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryClientCaCertificateBody.
+        r"""Sets the name of this QueryClientCaCertificateBody.
 
         证书名
 
@@ -143,7 +143,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def issuer(self):
-        """Gets the issuer of this QueryClientCaCertificateBody.
+        r"""Gets the issuer of this QueryClientCaCertificateBody.
 
         颁发者
 
@@ -154,7 +154,7 @@ class QueryClientCaCertificateBody:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this QueryClientCaCertificateBody.
+        r"""Sets the issuer of this QueryClientCaCertificateBody.
 
         颁发者
 
@@ -165,7 +165,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def subject(self):
-        """Gets the subject of this QueryClientCaCertificateBody.
+        r"""Gets the subject of this QueryClientCaCertificateBody.
 
         主体
 
@@ -176,7 +176,7 @@ class QueryClientCaCertificateBody:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this QueryClientCaCertificateBody.
+        r"""Sets the subject of this QueryClientCaCertificateBody.
 
         主体
 
@@ -187,7 +187,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this QueryClientCaCertificateBody.
+        r"""Gets the serial_number of this QueryClientCaCertificateBody.
 
         序列号
 
@@ -198,7 +198,7 @@ class QueryClientCaCertificateBody:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this QueryClientCaCertificateBody.
+        r"""Sets the serial_number of this QueryClientCaCertificateBody.
 
         序列号
 
@@ -209,7 +209,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this QueryClientCaCertificateBody.
+        r"""Gets the expiration_time of this QueryClientCaCertificateBody.
 
         过期时间
 
@@ -220,7 +220,7 @@ class QueryClientCaCertificateBody:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this QueryClientCaCertificateBody.
+        r"""Sets the expiration_time of this QueryClientCaCertificateBody.
 
         过期时间
 
@@ -231,7 +231,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this QueryClientCaCertificateBody.
+        r"""Gets the signature_algorithm of this QueryClientCaCertificateBody.
 
         客户端 CA 证书签名算法
 
@@ -242,7 +242,7 @@ class QueryClientCaCertificateBody:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this QueryClientCaCertificateBody.
+        r"""Sets the signature_algorithm of this QueryClientCaCertificateBody.
 
         客户端 CA 证书签名算法
 
@@ -253,7 +253,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this QueryClientCaCertificateBody.
+        r"""Gets the created_at of this QueryClientCaCertificateBody.
 
         创建时间
 
@@ -264,7 +264,7 @@ class QueryClientCaCertificateBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this QueryClientCaCertificateBody.
+        r"""Sets the created_at of this QueryClientCaCertificateBody.
 
         创建时间
 
@@ -275,7 +275,7 @@ class QueryClientCaCertificateBody:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this QueryClientCaCertificateBody.
+        r"""Gets the updated_at of this QueryClientCaCertificateBody.
 
         更新时间
 
@@ -286,7 +286,7 @@ class QueryClientCaCertificateBody:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this QueryClientCaCertificateBody.
+        r"""Sets the updated_at of this QueryClientCaCertificateBody.
 
         更新时间
 

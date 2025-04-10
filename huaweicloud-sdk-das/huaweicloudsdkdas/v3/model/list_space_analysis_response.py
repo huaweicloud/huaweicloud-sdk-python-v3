@@ -30,7 +30,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
     }
 
     def __init__(self, total=None, db_objects=None, instance_info=None):
-        """ListSpaceAnalysisResponse
+        r"""ListSpaceAnalysisResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSpaceAnalysisResponse.
+        r"""Gets the total of this ListSpaceAnalysisResponse.
 
         记录总数
 
@@ -69,7 +69,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSpaceAnalysisResponse.
+        r"""Sets the total of this ListSpaceAnalysisResponse.
 
         记录总数
 
@@ -80,7 +80,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
     @property
     def db_objects(self):
-        """Gets the db_objects of this ListSpaceAnalysisResponse.
+        r"""Gets the db_objects of this ListSpaceAnalysisResponse.
 
         数据库对象列表
 
@@ -91,7 +91,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
     @db_objects.setter
     def db_objects(self, db_objects):
-        """Sets the db_objects of this ListSpaceAnalysisResponse.
+        r"""Sets the db_objects of this ListSpaceAnalysisResponse.
 
         数据库对象列表
 
@@ -102,7 +102,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
     @property
     def instance_info(self):
-        """Gets the instance_info of this ListSpaceAnalysisResponse.
+        r"""Gets the instance_info of this ListSpaceAnalysisResponse.
 
         :return: The instance_info of this ListSpaceAnalysisResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`
@@ -111,7 +111,7 @@ class ListSpaceAnalysisResponse(SdkResponse):
 
     @instance_info.setter
     def instance_info(self, instance_info):
-        """Sets the instance_info of this ListSpaceAnalysisResponse.
+        r"""Sets the instance_info of this ListSpaceAnalysisResponse.
 
         :param instance_info: The instance_info of this ListSpaceAnalysisResponse.
         :type instance_info: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`

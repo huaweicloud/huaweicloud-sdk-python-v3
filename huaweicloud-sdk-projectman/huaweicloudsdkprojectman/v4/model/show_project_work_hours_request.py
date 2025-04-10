@@ -27,7 +27,7 @@ class ShowProjectWorkHoursRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowProjectWorkHoursRequest
+        r"""ShowProjectWorkHoursRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowProjectWorkHoursRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectWorkHoursRequest.
+        r"""Gets the project_id of this ShowProjectWorkHoursRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class ShowProjectWorkHoursRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectWorkHoursRequest.
+        r"""Sets the project_id of this ShowProjectWorkHoursRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class ShowProjectWorkHoursRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowProjectWorkHoursRequest.
+        r"""Gets the body of this ShowProjectWorkHoursRequest.
 
         :return: The body of this ShowProjectWorkHoursRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`
@@ -80,7 +80,7 @@ class ShowProjectWorkHoursRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowProjectWorkHoursRequest.
+        r"""Sets the body of this ShowProjectWorkHoursRequest.
 
         :param body: The body of this ShowProjectWorkHoursRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`

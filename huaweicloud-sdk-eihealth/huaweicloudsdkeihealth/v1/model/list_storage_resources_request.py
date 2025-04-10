@@ -23,7 +23,7 @@ class ListStorageResourcesRequest:
     }
 
     def __init__(self):
-        """ListStorageResourcesRequest
+        r"""ListStorageResourcesRequest
 
         The model defined in huaweicloud sdk
 

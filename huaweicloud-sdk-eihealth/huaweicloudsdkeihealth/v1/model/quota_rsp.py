@@ -31,7 +31,7 @@ class QuotaRsp:
     }
 
     def __init__(self, name=None, total=None, unit=None, usage=None):
-        """QuotaRsp
+        r"""QuotaRsp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class QuotaRsp:
 
     @property
     def name(self):
-        """Gets the name of this QuotaRsp.
+        r"""Gets the name of this QuotaRsp.
 
         配额项名称，支持USER,PROJECT,USER_PROJECT,STORAGE,PROJECT_APP,PROJECT_NOTEBOOK,PROJECT_WORKFLOW,PROJECT_IMAGE
 
@@ -71,7 +71,7 @@ class QuotaRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QuotaRsp.
+        r"""Sets the name of this QuotaRsp.
 
         配额项名称，支持USER,PROJECT,USER_PROJECT,STORAGE,PROJECT_APP,PROJECT_NOTEBOOK,PROJECT_WORKFLOW,PROJECT_IMAGE
 
@@ -82,7 +82,7 @@ class QuotaRsp:
 
     @property
     def total(self):
-        """Gets the total of this QuotaRsp.
+        r"""Gets the total of this QuotaRsp.
 
         配额
 
@@ -93,7 +93,7 @@ class QuotaRsp:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this QuotaRsp.
+        r"""Sets the total of this QuotaRsp.
 
         配额
 
@@ -104,7 +104,7 @@ class QuotaRsp:
 
     @property
     def unit(self):
-        """Gets the unit of this QuotaRsp.
+        r"""Gets the unit of this QuotaRsp.
 
         配额项单位
 
@@ -115,7 +115,7 @@ class QuotaRsp:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QuotaRsp.
+        r"""Sets the unit of this QuotaRsp.
 
         配额项单位
 
@@ -126,7 +126,7 @@ class QuotaRsp:
 
     @property
     def usage(self):
-        """Gets the usage of this QuotaRsp.
+        r"""Gets the usage of this QuotaRsp.
 
         配额使用量
 
@@ -137,7 +137,7 @@ class QuotaRsp:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this QuotaRsp.
+        r"""Sets the usage of this QuotaRsp.
 
         配额使用量
 

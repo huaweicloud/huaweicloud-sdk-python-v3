@@ -31,7 +31,7 @@ class EdgeNodeUpdate:
     }
 
     def __init__(self, description=None, log_configs=None, ntp_servers=None, attributes=None):
-        """EdgeNodeUpdate
+        r"""EdgeNodeUpdate
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EdgeNodeUpdate:
 
     @property
     def description(self):
-        """Gets the description of this EdgeNodeUpdate.
+        r"""Gets the description of this EdgeNodeUpdate.
 
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -75,7 +75,7 @@ class EdgeNodeUpdate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeNodeUpdate.
+        r"""Sets the description of this EdgeNodeUpdate.
 
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -86,7 +86,7 @@ class EdgeNodeUpdate:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this EdgeNodeUpdate.
+        r"""Gets the log_configs of this EdgeNodeUpdate.
 
         边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
@@ -97,7 +97,7 @@ class EdgeNodeUpdate:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this EdgeNodeUpdate.
+        r"""Sets the log_configs of this EdgeNodeUpdate.
 
         边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
@@ -108,7 +108,7 @@ class EdgeNodeUpdate:
 
     @property
     def ntp_servers(self):
-        """Gets the ntp_servers of this EdgeNodeUpdate.
+        r"""Gets the ntp_servers of this EdgeNodeUpdate.
 
         NTP服务器地址，每个节点最多仅能配置两个。
 
@@ -119,7 +119,7 @@ class EdgeNodeUpdate:
 
     @ntp_servers.setter
     def ntp_servers(self, ntp_servers):
-        """Sets the ntp_servers of this EdgeNodeUpdate.
+        r"""Sets the ntp_servers of this EdgeNodeUpdate.
 
         NTP服务器地址，每个节点最多仅能配置两个。
 
@@ -130,7 +130,7 @@ class EdgeNodeUpdate:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgeNodeUpdate.
+        r"""Gets the attributes of this EdgeNodeUpdate.
 
         边缘节点属性，关联属性个数最多为32个
 
@@ -141,7 +141,7 @@ class EdgeNodeUpdate:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgeNodeUpdate.
+        r"""Sets the attributes of this EdgeNodeUpdate.
 
         边缘节点属性，关联属性个数最多为32个
 

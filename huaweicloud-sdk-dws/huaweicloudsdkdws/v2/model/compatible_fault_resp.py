@@ -29,7 +29,7 @@ class CompatibleFaultResp:
     }
 
     def __init__(self, message=None, created=None, details=None):
-        """CompatibleFaultResp
+        r"""CompatibleFaultResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CompatibleFaultResp:
 
     @property
     def message(self):
-        """Gets the message of this CompatibleFaultResp.
+        r"""Gets the message of this CompatibleFaultResp.
 
         信息
 
@@ -68,7 +68,7 @@ class CompatibleFaultResp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CompatibleFaultResp.
+        r"""Sets the message of this CompatibleFaultResp.
 
         信息
 
@@ -79,7 +79,7 @@ class CompatibleFaultResp:
 
     @property
     def created(self):
-        """Gets the created of this CompatibleFaultResp.
+        r"""Gets the created of this CompatibleFaultResp.
 
         创建者
 
@@ -90,7 +90,7 @@ class CompatibleFaultResp:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CompatibleFaultResp.
+        r"""Sets the created of this CompatibleFaultResp.
 
         创建者
 
@@ -101,7 +101,7 @@ class CompatibleFaultResp:
 
     @property
     def details(self):
-        """Gets the details of this CompatibleFaultResp.
+        r"""Gets the details of this CompatibleFaultResp.
 
         详细
 
@@ -112,7 +112,7 @@ class CompatibleFaultResp:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this CompatibleFaultResp.
+        r"""Sets the details of this CompatibleFaultResp.
 
         详细
 

@@ -37,7 +37,7 @@ class HealthReportTableSpaceInfo:
     }
 
     def __init__(self, database=None, table=None, db_engine=None, table_size=None, data_size=None, index_size=None, rows=None):
-        """HealthReportTableSpaceInfo
+        r"""HealthReportTableSpaceInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def database(self):
-        """Gets the database of this HealthReportTableSpaceInfo.
+        r"""Gets the database of this HealthReportTableSpaceInfo.
 
         数据库名。
 
@@ -89,7 +89,7 @@ class HealthReportTableSpaceInfo:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this HealthReportTableSpaceInfo.
+        r"""Sets the database of this HealthReportTableSpaceInfo.
 
         数据库名。
 
@@ -100,7 +100,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def table(self):
-        """Gets the table of this HealthReportTableSpaceInfo.
+        r"""Gets the table of this HealthReportTableSpaceInfo.
 
         表名。
 
@@ -111,7 +111,7 @@ class HealthReportTableSpaceInfo:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this HealthReportTableSpaceInfo.
+        r"""Sets the table of this HealthReportTableSpaceInfo.
 
         表名。
 
@@ -122,7 +122,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def db_engine(self):
-        """Gets the db_engine of this HealthReportTableSpaceInfo.
+        r"""Gets the db_engine of this HealthReportTableSpaceInfo.
 
         数据库引擎。
 
@@ -133,7 +133,7 @@ class HealthReportTableSpaceInfo:
 
     @db_engine.setter
     def db_engine(self, db_engine):
-        """Sets the db_engine of this HealthReportTableSpaceInfo.
+        r"""Sets the db_engine of this HealthReportTableSpaceInfo.
 
         数据库引擎。
 
@@ -144,7 +144,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def table_size(self):
-        """Gets the table_size of this HealthReportTableSpaceInfo.
+        r"""Gets the table_size of this HealthReportTableSpaceInfo.
 
         表大小。
 
@@ -155,7 +155,7 @@ class HealthReportTableSpaceInfo:
 
     @table_size.setter
     def table_size(self, table_size):
-        """Sets the table_size of this HealthReportTableSpaceInfo.
+        r"""Sets the table_size of this HealthReportTableSpaceInfo.
 
         表大小。
 
@@ -166,7 +166,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def data_size(self):
-        """Gets the data_size of this HealthReportTableSpaceInfo.
+        r"""Gets the data_size of this HealthReportTableSpaceInfo.
 
         数据大小。
 
@@ -177,7 +177,7 @@ class HealthReportTableSpaceInfo:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this HealthReportTableSpaceInfo.
+        r"""Sets the data_size of this HealthReportTableSpaceInfo.
 
         数据大小。
 
@@ -188,7 +188,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def index_size(self):
-        """Gets the index_size of this HealthReportTableSpaceInfo.
+        r"""Gets the index_size of this HealthReportTableSpaceInfo.
 
         索引大小。
 
@@ -199,7 +199,7 @@ class HealthReportTableSpaceInfo:
 
     @index_size.setter
     def index_size(self, index_size):
-        """Sets the index_size of this HealthReportTableSpaceInfo.
+        r"""Sets the index_size of this HealthReportTableSpaceInfo.
 
         索引大小。
 
@@ -210,7 +210,7 @@ class HealthReportTableSpaceInfo:
 
     @property
     def rows(self):
-        """Gets the rows of this HealthReportTableSpaceInfo.
+        r"""Gets the rows of this HealthReportTableSpaceInfo.
 
         行数量。
 
@@ -221,7 +221,7 @@ class HealthReportTableSpaceInfo:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this HealthReportTableSpaceInfo.
+        r"""Sets the rows of this HealthReportTableSpaceInfo.
 
         行数量。
 

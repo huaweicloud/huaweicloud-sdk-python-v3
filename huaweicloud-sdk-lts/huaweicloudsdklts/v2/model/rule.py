@@ -27,7 +27,7 @@ class Rule:
     }
 
     def __init__(self, type=None, param=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Rule:
 
     @property
     def type(self):
-        """Gets the type of this Rule.
+        r"""Gets the type of this Rule.
 
         内置系统模板类型。
 
@@ -59,7 +59,7 @@ class Rule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Rule.
+        r"""Sets the type of this Rule.
 
         内置系统模板类型。
 
@@ -70,7 +70,7 @@ class Rule:
 
     @property
     def param(self):
-        """Gets the param of this Rule.
+        r"""Gets the param of this Rule.
 
         系统iton模板名称。
 
@@ -81,7 +81,7 @@ class Rule:
 
     @param.setter
     def param(self, param):
-        """Sets the param of this Rule.
+        r"""Sets the param of this Rule.
 
         系统iton模板名称。
 

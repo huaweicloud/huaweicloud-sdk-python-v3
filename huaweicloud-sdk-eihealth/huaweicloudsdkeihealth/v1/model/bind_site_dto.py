@@ -37,7 +37,7 @@ class BindSiteDto:
     }
 
     def __init__(self, name=None, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
-        """BindSiteDto
+        r"""BindSiteDto
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class BindSiteDto:
 
     @property
     def name(self):
-        """Gets the name of this BindSiteDto.
+        r"""Gets the name of this BindSiteDto.
 
         靶点名称，只能设置为target1或者target2。
 
@@ -95,7 +95,7 @@ class BindSiteDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BindSiteDto.
+        r"""Sets the name of this BindSiteDto.
 
         靶点名称，只能设置为target1或者target2。
 
@@ -106,7 +106,7 @@ class BindSiteDto:
 
     @property
     def receptor(self):
-        """Gets the receptor of this BindSiteDto.
+        r"""Gets the receptor of this BindSiteDto.
 
         :return: The receptor of this BindSiteDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -115,7 +115,7 @@ class BindSiteDto:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this BindSiteDto.
+        r"""Sets the receptor of this BindSiteDto.
 
         :param receptor: The receptor of this BindSiteDto.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -124,7 +124,7 @@ class BindSiteDto:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this BindSiteDto.
+        r"""Gets the bounding_box of this BindSiteDto.
 
         :return: The bounding_box of this BindSiteDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
@@ -133,7 +133,7 @@ class BindSiteDto:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this BindSiteDto.
+        r"""Sets the bounding_box of this BindSiteDto.
 
         :param bounding_box: The bounding_box of this BindSiteDto.
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
@@ -142,7 +142,7 @@ class BindSiteDto:
 
     @property
     def remove_ion(self):
-        """Gets the remove_ion of this BindSiteDto.
+        r"""Gets the remove_ion of this BindSiteDto.
 
         去除受体中的离子
 
@@ -153,7 +153,7 @@ class BindSiteDto:
 
     @remove_ion.setter
     def remove_ion(self, remove_ion):
-        """Sets the remove_ion of this BindSiteDto.
+        r"""Sets the remove_ion of this BindSiteDto.
 
         去除受体中的离子
 
@@ -164,7 +164,7 @@ class BindSiteDto:
 
     @property
     def remove_water(self):
-        """Gets the remove_water of this BindSiteDto.
+        r"""Gets the remove_water of this BindSiteDto.
 
         去除受体中的水分子
 
@@ -175,7 +175,7 @@ class BindSiteDto:
 
     @remove_water.setter
     def remove_water(self, remove_water):
-        """Sets the remove_water of this BindSiteDto.
+        r"""Sets the remove_water of this BindSiteDto.
 
         去除受体中的水分子
 
@@ -186,7 +186,7 @@ class BindSiteDto:
 
     @property
     def remove_ligand(self):
-        """Gets the remove_ligand of this BindSiteDto.
+        r"""Gets the remove_ligand of this BindSiteDto.
 
         去除受体中的配体分子
 
@@ -197,7 +197,7 @@ class BindSiteDto:
 
     @remove_ligand.setter
     def remove_ligand(self, remove_ligand):
-        """Sets the remove_ligand of this BindSiteDto.
+        r"""Sets the remove_ligand of this BindSiteDto.
 
         去除受体中的配体分子
 
@@ -208,7 +208,7 @@ class BindSiteDto:
 
     @property
     def add_hydrogen(self):
-        """Gets the add_hydrogen of this BindSiteDto.
+        r"""Gets the add_hydrogen of this BindSiteDto.
 
         增加氢原子
 
@@ -219,7 +219,7 @@ class BindSiteDto:
 
     @add_hydrogen.setter
     def add_hydrogen(self, add_hydrogen):
-        """Sets the add_hydrogen of this BindSiteDto.
+        r"""Sets the add_hydrogen of this BindSiteDto.
 
         增加氢原子
 

@@ -30,7 +30,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, start_time=None, interval=None, sample_data=None):
-        """ShowVodStatisticsResponse
+        r"""ShowVodStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowVodStatisticsResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowVodStatisticsResponse.
+        r"""Gets the start_time of this ShowVodStatisticsResponse.
 
         统计起始时间。
 
@@ -69,7 +69,7 @@ class ShowVodStatisticsResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowVodStatisticsResponse.
+        r"""Sets the start_time of this ShowVodStatisticsResponse.
 
         统计起始时间。
 
@@ -80,7 +80,7 @@ class ShowVodStatisticsResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowVodStatisticsResponse.
+        r"""Gets the interval of this ShowVodStatisticsResponse.
 
         统计间隔。
 
@@ -91,7 +91,7 @@ class ShowVodStatisticsResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowVodStatisticsResponse.
+        r"""Sets the interval of this ShowVodStatisticsResponse.
 
         统计间隔。
 
@@ -102,7 +102,7 @@ class ShowVodStatisticsResponse(SdkResponse):
 
     @property
     def sample_data(self):
-        """Gets the sample_data of this ShowVodStatisticsResponse.
+        r"""Gets the sample_data of this ShowVodStatisticsResponse.
 
         采样数据数组。从start_time开始，每个间隔对应一个采样数据。
 
@@ -113,7 +113,7 @@ class ShowVodStatisticsResponse(SdkResponse):
 
     @sample_data.setter
     def sample_data(self, sample_data):
-        """Sets the sample_data of this ShowVodStatisticsResponse.
+        r"""Sets the sample_data of this ShowVodStatisticsResponse.
 
         采样数据数组。从start_time开始，每个间隔对应一个采样数据。
 

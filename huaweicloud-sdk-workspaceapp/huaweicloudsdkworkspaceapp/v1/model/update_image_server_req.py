@@ -27,7 +27,7 @@ class UpdateImageServerReq:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateImageServerReq
+        r"""UpdateImageServerReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateImageServerReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateImageServerReq.
+        r"""Gets the name of this UpdateImageServerReq.
 
         镜像实例名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -61,7 +61,7 @@ class UpdateImageServerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateImageServerReq.
+        r"""Sets the name of this UpdateImageServerReq.
 
         镜像实例名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -72,7 +72,7 @@ class UpdateImageServerReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateImageServerReq.
+        r"""Gets the description of this UpdateImageServerReq.
 
         服务器组描述。
 
@@ -83,7 +83,7 @@ class UpdateImageServerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateImageServerReq.
+        r"""Sets the description of this UpdateImageServerReq.
 
         服务器组描述。
 

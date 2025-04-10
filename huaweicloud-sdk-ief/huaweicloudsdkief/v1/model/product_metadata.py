@@ -25,7 +25,7 @@ class ProductMetadata:
     }
 
     def __init__(self, type=None):
-        """ProductMetadata
+        r"""ProductMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProductMetadata:
 
     @property
     def type(self):
-        """Gets the type of this ProductMetadata.
+        r"""Gets the type of this ProductMetadata.
 
         产品属性值类型
 
@@ -54,7 +54,7 @@ class ProductMetadata:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProductMetadata.
+        r"""Sets the type of this ProductMetadata.
 
         产品属性值类型
 

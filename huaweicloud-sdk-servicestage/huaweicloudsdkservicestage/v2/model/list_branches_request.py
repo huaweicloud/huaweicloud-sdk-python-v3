@@ -29,7 +29,7 @@ class ListBranchesRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None):
-        """ListBranchesRequest
+        r"""ListBranchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListBranchesRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ListBranchesRequest.
+        r"""Gets the x_repo_auth of this ListBranchesRequest.
 
         授权名称。
 
@@ -65,7 +65,7 @@ class ListBranchesRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ListBranchesRequest.
+        r"""Sets the x_repo_auth of this ListBranchesRequest.
 
         授权名称。
 
@@ -76,7 +76,7 @@ class ListBranchesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListBranchesRequest.
+        r"""Gets the namespace of this ListBranchesRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -87,7 +87,7 @@ class ListBranchesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListBranchesRequest.
+        r"""Sets the namespace of this ListBranchesRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -98,7 +98,7 @@ class ListBranchesRequest:
 
     @property
     def project(self):
-        """Gets the project of this ListBranchesRequest.
+        r"""Gets the project of this ListBranchesRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -109,7 +109,7 @@ class ListBranchesRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ListBranchesRequest.
+        r"""Sets the project of this ListBranchesRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 

@@ -23,7 +23,7 @@ class DomainIdDef:
     }
 
     def __init__(self):
-        """DomainIdDef
+        r"""DomainIdDef
 
         The model defined in huaweicloud sdk
 

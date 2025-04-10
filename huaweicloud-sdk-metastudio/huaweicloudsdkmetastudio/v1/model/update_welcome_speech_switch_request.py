@@ -27,7 +27,7 @@ class UpdateWelcomeSpeechSwitchRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """UpdateWelcomeSpeechSwitchRequest
+        r"""UpdateWelcomeSpeechSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateWelcomeSpeechSwitchRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateWelcomeSpeechSwitchRequest.
+        r"""Gets the x_app_user_id of this UpdateWelcomeSpeechSwitchRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class UpdateWelcomeSpeechSwitchRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateWelcomeSpeechSwitchRequest.
+        r"""Sets the x_app_user_id of this UpdateWelcomeSpeechSwitchRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class UpdateWelcomeSpeechSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWelcomeSpeechSwitchRequest.
+        r"""Gets the body of this UpdateWelcomeSpeechSwitchRequest.
 
         :return: The body of this UpdateWelcomeSpeechSwitchRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechSwitchReq`
@@ -81,7 +81,7 @@ class UpdateWelcomeSpeechSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWelcomeSpeechSwitchRequest.
+        r"""Sets the body of this UpdateWelcomeSpeechSwitchRequest.
 
         :param body: The body of this UpdateWelcomeSpeechSwitchRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechSwitchReq`

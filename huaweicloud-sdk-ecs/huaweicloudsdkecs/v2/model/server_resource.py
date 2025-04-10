@@ -31,7 +31,7 @@ class ServerResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ServerResource
+        r"""ServerResource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ServerResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ServerResource.
+        r"""Gets the resource_id of this ServerResource.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class ServerResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ServerResource.
+        r"""Sets the resource_id of this ServerResource.
 
         云服务器ID。
 
@@ -82,7 +82,7 @@ class ServerResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ServerResource.
+        r"""Gets the resource_detail of this ServerResource.
 
         预留字段。
 
@@ -93,7 +93,7 @@ class ServerResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ServerResource.
+        r"""Sets the resource_detail of this ServerResource.
 
         预留字段。
 
@@ -104,7 +104,7 @@ class ServerResource:
 
     @property
     def tags(self):
-        """Gets the tags of this ServerResource.
+        r"""Gets the tags of this ServerResource.
 
         标签列表
 
@@ -115,7 +115,7 @@ class ServerResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ServerResource.
+        r"""Sets the tags of this ServerResource.
 
         标签列表
 
@@ -126,7 +126,7 @@ class ServerResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ServerResource.
+        r"""Gets the resource_name of this ServerResource.
 
         资源名称，即弹性云服务器名称。
 
@@ -137,7 +137,7 @@ class ServerResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ServerResource.
+        r"""Sets the resource_name of this ServerResource.
 
         资源名称，即弹性云服务器名称。
 

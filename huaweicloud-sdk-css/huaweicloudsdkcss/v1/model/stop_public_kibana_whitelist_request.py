@@ -25,7 +25,7 @@ class StopPublicKibanaWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopPublicKibanaWhitelistRequest
+        r"""StopPublicKibanaWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopPublicKibanaWhitelistRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopPublicKibanaWhitelistRequest.
+        r"""Gets the cluster_id of this StopPublicKibanaWhitelistRequest.
 
         指定关闭Kibana公网访问控制的集群ID。
 
@@ -53,7 +53,7 @@ class StopPublicKibanaWhitelistRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopPublicKibanaWhitelistRequest.
+        r"""Sets the cluster_id of this StopPublicKibanaWhitelistRequest.
 
         指定关闭Kibana公网访问控制的集群ID。
 

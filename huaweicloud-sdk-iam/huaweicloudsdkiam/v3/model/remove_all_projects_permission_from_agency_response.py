@@ -24,7 +24,7 @@ class RemoveAllProjectsPermissionFromAgencyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RemoveAllProjectsPermissionFromAgencyResponse
+        r"""RemoveAllProjectsPermissionFromAgencyResponse
 
         The model defined in huaweicloud sdk
 

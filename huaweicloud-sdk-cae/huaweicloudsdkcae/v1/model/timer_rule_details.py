@@ -47,7 +47,7 @@ class TimerRuleDetails:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, env_id=None, apps=None, components=None, component_number=None, cron=None, effective_range=None, effective_policy=None, last_execution_status=None):
-        """TimerRuleDetails
+        r"""TimerRuleDetails
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TimerRuleDetails:
 
     @property
     def id(self):
-        """Gets the id of this TimerRuleDetails.
+        r"""Gets the id of this TimerRuleDetails.
 
         定时启停规则ID，在创建定时启停规则时会忽略。
 
@@ -131,7 +131,7 @@ class TimerRuleDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TimerRuleDetails.
+        r"""Sets the id of this TimerRuleDetails.
 
         定时启停规则ID，在创建定时启停规则时会忽略。
 
@@ -142,7 +142,7 @@ class TimerRuleDetails:
 
     @property
     def name(self):
-        """Gets the name of this TimerRuleDetails.
+        r"""Gets the name of this TimerRuleDetails.
 
         定时启停规则名称。
 
@@ -153,7 +153,7 @@ class TimerRuleDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TimerRuleDetails.
+        r"""Sets the name of this TimerRuleDetails.
 
         定时启停规则名称。
 
@@ -164,7 +164,7 @@ class TimerRuleDetails:
 
     @property
     def type(self):
-        """Gets the type of this TimerRuleDetails.
+        r"""Gets the type of this TimerRuleDetails.
 
         定时启停规则的类型：stop/start。
 
@@ -175,7 +175,7 @@ class TimerRuleDetails:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TimerRuleDetails.
+        r"""Sets the type of this TimerRuleDetails.
 
         定时启停规则的类型：stop/start。
 
@@ -186,7 +186,7 @@ class TimerRuleDetails:
 
     @property
     def status(self):
-        """Gets the status of this TimerRuleDetails.
+        r"""Gets the status of this TimerRuleDetails.
 
         定时启停规则状态（是否开启）：on/off。
 
@@ -197,7 +197,7 @@ class TimerRuleDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TimerRuleDetails.
+        r"""Sets the status of this TimerRuleDetails.
 
         定时启停规则状态（是否开启）：on/off。
 
@@ -208,7 +208,7 @@ class TimerRuleDetails:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TimerRuleDetails.
+        r"""Gets the env_id of this TimerRuleDetails.
 
         环境ID。
 
@@ -219,7 +219,7 @@ class TimerRuleDetails:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TimerRuleDetails.
+        r"""Sets the env_id of this TimerRuleDetails.
 
         环境ID。
 
@@ -230,7 +230,7 @@ class TimerRuleDetails:
 
     @property
     def apps(self):
-        """Gets the apps of this TimerRuleDetails.
+        r"""Gets the apps of this TimerRuleDetails.
 
         定时启停规则所包含的所有应用，只在生效范围为application的时候需要填写。
 
@@ -241,7 +241,7 @@ class TimerRuleDetails:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this TimerRuleDetails.
+        r"""Sets the apps of this TimerRuleDetails.
 
         定时启停规则所包含的所有应用，只在生效范围为application的时候需要填写。
 
@@ -252,7 +252,7 @@ class TimerRuleDetails:
 
     @property
     def components(self):
-        """Gets the components of this TimerRuleDetails.
+        r"""Gets the components of this TimerRuleDetails.
 
         在定时启停规则所包含的所有组件，只在生效范围为component的时候需要填写。
 
@@ -263,7 +263,7 @@ class TimerRuleDetails:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this TimerRuleDetails.
+        r"""Sets the components of this TimerRuleDetails.
 
         在定时启停规则所包含的所有组件，只在生效范围为component的时候需要填写。
 
@@ -274,7 +274,7 @@ class TimerRuleDetails:
 
     @property
     def component_number(self):
-        """Gets the component_number of this TimerRuleDetails.
+        r"""Gets the component_number of this TimerRuleDetails.
 
         定时启停规则包含的组件个数，在创建定时启停规则时会忽略。
 
@@ -285,7 +285,7 @@ class TimerRuleDetails:
 
     @component_number.setter
     def component_number(self, component_number):
-        """Sets the component_number of this TimerRuleDetails.
+        r"""Sets the component_number of this TimerRuleDetails.
 
         定时启停规则包含的组件个数，在创建定时启停规则时会忽略。
 
@@ -296,7 +296,7 @@ class TimerRuleDetails:
 
     @property
     def cron(self):
-        """Gets the cron of this TimerRuleDetails.
+        r"""Gets the cron of this TimerRuleDetails.
 
         cron表达式。
 
@@ -307,7 +307,7 @@ class TimerRuleDetails:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this TimerRuleDetails.
+        r"""Sets the cron of this TimerRuleDetails.
 
         cron表达式。
 
@@ -318,7 +318,7 @@ class TimerRuleDetails:
 
     @property
     def effective_range(self):
-        """Gets the effective_range of this TimerRuleDetails.
+        r"""Gets the effective_range of this TimerRuleDetails.
 
         定时启停规则生效范围: component/application/environment。
 
@@ -329,7 +329,7 @@ class TimerRuleDetails:
 
     @effective_range.setter
     def effective_range(self, effective_range):
-        """Sets the effective_range of this TimerRuleDetails.
+        r"""Sets the effective_range of this TimerRuleDetails.
 
         定时启停规则生效范围: component/application/environment。
 
@@ -340,7 +340,7 @@ class TimerRuleDetails:
 
     @property
     def effective_policy(self):
-        """Gets the effective_policy of this TimerRuleDetails.
+        r"""Gets the effective_policy of this TimerRuleDetails.
 
         定时启停规则的定时类别: onetime/periodic。
 
@@ -351,7 +351,7 @@ class TimerRuleDetails:
 
     @effective_policy.setter
     def effective_policy(self, effective_policy):
-        """Sets the effective_policy of this TimerRuleDetails.
+        r"""Sets the effective_policy of this TimerRuleDetails.
 
         定时启停规则的定时类别: onetime/periodic。
 
@@ -362,7 +362,7 @@ class TimerRuleDetails:
 
     @property
     def last_execution_status(self):
-        """Gets the last_execution_status of this TimerRuleDetails.
+        r"""Gets the last_execution_status of this TimerRuleDetails.
 
         上次执行的状态：abnormal/normal/executing，在创建定时启停规则时会忽略。
 
@@ -373,7 +373,7 @@ class TimerRuleDetails:
 
     @last_execution_status.setter
     def last_execution_status(self, last_execution_status):
-        """Sets the last_execution_status of this TimerRuleDetails.
+        r"""Sets the last_execution_status of this TimerRuleDetails.
 
         上次执行的状态：abnormal/normal/executing，在创建定时启停规则时会忽略。
 

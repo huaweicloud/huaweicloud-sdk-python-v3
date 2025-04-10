@@ -39,7 +39,7 @@ class Quota:
     }
 
     def __init__(self, enterprise_project_id=None, enterprise_project_name=None, instance_quota=None, vcpus_quota=None, ram_quota=None, availability_instance_quota=None, availability_vcpus_quota=None, availability_ram_quota=None):
-        """Quota
+        r"""Quota
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Quota:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Quota.
+        r"""Gets the enterprise_project_id of this Quota.
 
         企业项目ID。
 
@@ -96,7 +96,7 @@ class Quota:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Quota.
+        r"""Sets the enterprise_project_id of this Quota.
 
         企业项目ID。
 
@@ -107,7 +107,7 @@ class Quota:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this Quota.
+        r"""Gets the enterprise_project_name of this Quota.
 
         企业项目名称。
 
@@ -118,7 +118,7 @@ class Quota:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this Quota.
+        r"""Sets the enterprise_project_name of this Quota.
 
         企业项目名称。
 
@@ -129,7 +129,7 @@ class Quota:
 
     @property
     def instance_quota(self):
-        """Gets the instance_quota of this Quota.
+        r"""Gets the instance_quota of this Quota.
 
         实例个数配额。
 
@@ -140,7 +140,7 @@ class Quota:
 
     @instance_quota.setter
     def instance_quota(self, instance_quota):
-        """Sets the instance_quota of this Quota.
+        r"""Sets the instance_quota of this Quota.
 
         实例个数配额。
 
@@ -151,7 +151,7 @@ class Quota:
 
     @property
     def vcpus_quota(self):
-        """Gets the vcpus_quota of this Quota.
+        r"""Gets the vcpus_quota of this Quota.
 
         CPU核数配额。
 
@@ -162,7 +162,7 @@ class Quota:
 
     @vcpus_quota.setter
     def vcpus_quota(self, vcpus_quota):
-        """Sets the vcpus_quota of this Quota.
+        r"""Sets the vcpus_quota of this Quota.
 
         CPU核数配额。
 
@@ -173,7 +173,7 @@ class Quota:
 
     @property
     def ram_quota(self):
-        """Gets the ram_quota of this Quota.
+        r"""Gets the ram_quota of this Quota.
 
         内存使用配额，单位为GB。
 
@@ -184,7 +184,7 @@ class Quota:
 
     @ram_quota.setter
     def ram_quota(self, ram_quota):
-        """Sets the ram_quota of this Quota.
+        r"""Sets the ram_quota of this Quota.
 
         内存使用配额，单位为GB。
 
@@ -195,7 +195,7 @@ class Quota:
 
     @property
     def availability_instance_quota(self):
-        """Gets the availability_instance_quota of this Quota.
+        r"""Gets the availability_instance_quota of this Quota.
 
         实例剩余配额。
 
@@ -206,7 +206,7 @@ class Quota:
 
     @availability_instance_quota.setter
     def availability_instance_quota(self, availability_instance_quota):
-        """Sets the availability_instance_quota of this Quota.
+        r"""Sets the availability_instance_quota of this Quota.
 
         实例剩余配额。
 
@@ -217,7 +217,7 @@ class Quota:
 
     @property
     def availability_vcpus_quota(self):
-        """Gets the availability_vcpus_quota of this Quota.
+        r"""Gets the availability_vcpus_quota of this Quota.
 
         CPU核数剩余配额。
 
@@ -228,7 +228,7 @@ class Quota:
 
     @availability_vcpus_quota.setter
     def availability_vcpus_quota(self, availability_vcpus_quota):
-        """Sets the availability_vcpus_quota of this Quota.
+        r"""Sets the availability_vcpus_quota of this Quota.
 
         CPU核数剩余配额。
 
@@ -239,7 +239,7 @@ class Quota:
 
     @property
     def availability_ram_quota(self):
-        """Gets the availability_ram_quota of this Quota.
+        r"""Gets the availability_ram_quota of this Quota.
 
         内存剩余配额。
 
@@ -250,7 +250,7 @@ class Quota:
 
     @availability_ram_quota.setter
     def availability_ram_quota(self, availability_ram_quota):
-        """Sets the availability_ram_quota of this Quota.
+        r"""Sets the availability_ram_quota of this Quota.
 
         内存剩余配额。
 

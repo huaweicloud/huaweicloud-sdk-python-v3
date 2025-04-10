@@ -31,7 +31,7 @@ class CreateTableRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, body=None):
-        """CreateTableRequest
+        r"""CreateTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateTableRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateTableRequest.
+        r"""Gets the instance_id of this CreateTableRequest.
 
         实例Id
 
@@ -72,7 +72,7 @@ class CreateTableRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateTableRequest.
+        r"""Sets the instance_id of this CreateTableRequest.
 
         实例Id
 
@@ -83,7 +83,7 @@ class CreateTableRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this CreateTableRequest.
+        r"""Gets the catalog_name of this CreateTableRequest.
 
         catalog名字
 
@@ -94,7 +94,7 @@ class CreateTableRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this CreateTableRequest.
+        r"""Sets the catalog_name of this CreateTableRequest.
 
         catalog名字
 
@@ -105,7 +105,7 @@ class CreateTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateTableRequest.
+        r"""Gets the database_name of this CreateTableRequest.
 
         数据库名字
 
@@ -116,7 +116,7 @@ class CreateTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateTableRequest.
+        r"""Sets the database_name of this CreateTableRequest.
 
         数据库名字
 
@@ -127,7 +127,7 @@ class CreateTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTableRequest.
+        r"""Gets the body of this CreateTableRequest.
 
         :return: The body of this CreateTableRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.TableInput`
@@ -136,7 +136,7 @@ class CreateTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTableRequest.
+        r"""Sets the body of this CreateTableRequest.
 
         :param body: The body of this CreateTableRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.TableInput`

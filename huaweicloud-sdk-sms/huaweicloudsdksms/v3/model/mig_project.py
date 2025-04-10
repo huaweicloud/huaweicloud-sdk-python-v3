@@ -49,7 +49,7 @@ class MigProject:
     }
 
     def __init__(self, id=None, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
-        """MigProject
+        r"""MigProject
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class MigProject:
 
     @property
     def id(self):
-        """Gets the id of this MigProject.
+        r"""Gets the id of this MigProject.
 
         迁移项目ID
 
@@ -132,7 +132,7 @@ class MigProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MigProject.
+        r"""Sets the id of this MigProject.
 
         迁移项目ID
 
@@ -143,7 +143,7 @@ class MigProject:
 
     @property
     def name(self):
-        """Gets the name of this MigProject.
+        r"""Gets the name of this MigProject.
 
         迁移项目名称
 
@@ -154,7 +154,7 @@ class MigProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MigProject.
+        r"""Sets the name of this MigProject.
 
         迁移项目名称
 
@@ -165,7 +165,7 @@ class MigProject:
 
     @property
     def description(self):
-        """Gets the description of this MigProject.
+        r"""Gets the description of this MigProject.
 
         迁移项目描述
 
@@ -176,7 +176,7 @@ class MigProject:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MigProject.
+        r"""Sets the description of this MigProject.
 
         迁移项目描述
 
@@ -187,7 +187,7 @@ class MigProject:
 
     @property
     def isdefault(self):
-        """Gets the isdefault of this MigProject.
+        r"""Gets the isdefault of this MigProject.
 
         是否为默认模板
 
@@ -198,7 +198,7 @@ class MigProject:
 
     @isdefault.setter
     def isdefault(self, isdefault):
-        """Sets the isdefault of this MigProject.
+        r"""Sets the isdefault of this MigProject.
 
         是否为默认模板
 
@@ -209,7 +209,7 @@ class MigProject:
 
     @property
     def region(self):
-        """Gets the region of this MigProject.
+        r"""Gets the region of this MigProject.
 
         区域名称
 
@@ -220,7 +220,7 @@ class MigProject:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MigProject.
+        r"""Sets the region of this MigProject.
 
         区域名称
 
@@ -231,7 +231,7 @@ class MigProject:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this MigProject.
+        r"""Gets the start_target_server of this MigProject.
 
         迁移后是否启动目的端虚拟机
 
@@ -242,7 +242,7 @@ class MigProject:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this MigProject.
+        r"""Sets the start_target_server of this MigProject.
 
         迁移后是否启动目的端虚拟机
 
@@ -253,7 +253,7 @@ class MigProject:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this MigProject.
+        r"""Gets the speed_limit of this MigProject.
 
         限制迁移速率，单位：Mbps
 
@@ -264,7 +264,7 @@ class MigProject:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this MigProject.
+        r"""Sets the speed_limit of this MigProject.
 
         限制迁移速率，单位：Mbps
 
@@ -275,7 +275,7 @@ class MigProject:
 
     @property
     def use_public_ip(self):
-        """Gets the use_public_ip of this MigProject.
+        r"""Gets the use_public_ip of this MigProject.
 
         是否使用公网IP迁移
 
@@ -286,7 +286,7 @@ class MigProject:
 
     @use_public_ip.setter
     def use_public_ip(self, use_public_ip):
-        """Sets the use_public_ip of this MigProject.
+        r"""Sets the use_public_ip of this MigProject.
 
         是否使用公网IP迁移
 
@@ -297,7 +297,7 @@ class MigProject:
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this MigProject.
+        r"""Gets the exist_server of this MigProject.
 
         是否是已经存在的服务器
 
@@ -308,7 +308,7 @@ class MigProject:
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this MigProject.
+        r"""Sets the exist_server of this MigProject.
 
         是否是已经存在的服务器
 
@@ -319,7 +319,7 @@ class MigProject:
 
     @property
     def type(self):
-        """Gets the type of this MigProject.
+        r"""Gets the type of this MigProject.
 
         迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -330,7 +330,7 @@ class MigProject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MigProject.
+        r"""Sets the type of this MigProject.
 
         迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -341,7 +341,7 @@ class MigProject:
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this MigProject.
+        r"""Gets the enterprise_project of this MigProject.
 
         企业项目名称
 
@@ -352,7 +352,7 @@ class MigProject:
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this MigProject.
+        r"""Sets the enterprise_project of this MigProject.
 
         企业项目名称
 
@@ -363,7 +363,7 @@ class MigProject:
 
     @property
     def syncing(self):
-        """Gets the syncing of this MigProject.
+        r"""Gets the syncing of this MigProject.
 
         首次复制或者同步后 是否继续持续同步
 
@@ -374,7 +374,7 @@ class MigProject:
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this MigProject.
+        r"""Sets the syncing of this MigProject.
 
         首次复制或者同步后 是否继续持续同步
 
@@ -385,7 +385,7 @@ class MigProject:
 
     @property
     def start_network_check(self):
-        """Gets the start_network_check of this MigProject.
+        r"""Gets the start_network_check of this MigProject.
 
         是否启动网络质量检测
 
@@ -396,7 +396,7 @@ class MigProject:
 
     @start_network_check.setter
     def start_network_check(self, start_network_check):
-        """Sets the start_network_check of this MigProject.
+        r"""Sets the start_network_check of this MigProject.
 
         是否启动网络质量检测
 

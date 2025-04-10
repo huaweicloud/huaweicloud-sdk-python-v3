@@ -29,7 +29,7 @@ class DeployApplicationRequest:
     }
 
     def __init__(self, env_id=None, app_id=None, body=None):
-        """DeployApplicationRequest
+        r"""DeployApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeployApplicationRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this DeployApplicationRequest.
+        r"""Gets the env_id of this DeployApplicationRequest.
 
         运行服务ID。
 
@@ -66,7 +66,7 @@ class DeployApplicationRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this DeployApplicationRequest.
+        r"""Sets the env_id of this DeployApplicationRequest.
 
         运行服务ID。
 
@@ -77,7 +77,7 @@ class DeployApplicationRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeployApplicationRequest.
+        r"""Gets the app_id of this DeployApplicationRequest.
 
         待部署应用的ID。
 
@@ -88,7 +88,7 @@ class DeployApplicationRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeployApplicationRequest.
+        r"""Sets the app_id of this DeployApplicationRequest.
 
         待部署应用的ID。
 
@@ -99,7 +99,7 @@ class DeployApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeployApplicationRequest.
+        r"""Gets the body of this DeployApplicationRequest.
 
         :return: The body of this DeployApplicationRequest.
         :rtype: :class:`huaweicloudsdkidme.v1.DeployApplicationRequestBody`
@@ -108,7 +108,7 @@ class DeployApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeployApplicationRequest.
+        r"""Sets the body of this DeployApplicationRequest.
 
         :param body: The body of this DeployApplicationRequest.
         :type body: :class:`huaweicloudsdkidme.v1.DeployApplicationRequestBody`

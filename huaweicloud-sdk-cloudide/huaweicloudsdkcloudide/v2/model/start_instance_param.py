@@ -27,7 +27,7 @@ class StartInstanceParam:
     }
 
     def __init__(self, plugin_enable_list=None, plugin_vars=None):
-        """StartInstanceParam
+        r"""StartInstanceParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StartInstanceParam:
 
     @property
     def plugin_enable_list(self):
-        """Gets the plugin_enable_list of this StartInstanceParam.
+        r"""Gets the plugin_enable_list of this StartInstanceParam.
 
         插件列表
 
@@ -61,7 +61,7 @@ class StartInstanceParam:
 
     @plugin_enable_list.setter
     def plugin_enable_list(self, plugin_enable_list):
-        """Sets the plugin_enable_list of this StartInstanceParam.
+        r"""Sets the plugin_enable_list of this StartInstanceParam.
 
         插件列表
 
@@ -72,7 +72,7 @@ class StartInstanceParam:
 
     @property
     def plugin_vars(self):
-        """Gets the plugin_vars of this StartInstanceParam.
+        r"""Gets the plugin_vars of this StartInstanceParam.
 
         插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
@@ -83,7 +83,7 @@ class StartInstanceParam:
 
     @plugin_vars.setter
     def plugin_vars(self, plugin_vars):
-        """Sets the plugin_vars of this StartInstanceParam.
+        r"""Sets the plugin_vars of this StartInstanceParam.
 
         插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 

@@ -30,7 +30,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, templates=None):
-        """BatchListAppConfigsTemplatesResponse
+        r"""BatchListAppConfigsTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListAppConfigsTemplatesResponse.
+        r"""Gets the count of this BatchListAppConfigsTemplatesResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListAppConfigsTemplatesResponse.
+        r"""Sets the count of this BatchListAppConfigsTemplatesResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListAppConfigsTemplatesResponse.
+        r"""Gets the page_info of this BatchListAppConfigsTemplatesResponse.
 
         :return: The page_info of this BatchListAppConfigsTemplatesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListAppConfigsTemplatesResponse.
+        r"""Sets the page_info of this BatchListAppConfigsTemplatesResponse.
 
         :param page_info: The page_info of this BatchListAppConfigsTemplatesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this BatchListAppConfigsTemplatesResponse.
+        r"""Gets the templates of this BatchListAppConfigsTemplatesResponse.
 
         模板列表
 
@@ -109,7 +109,7 @@ class BatchListAppConfigsTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this BatchListAppConfigsTemplatesResponse.
+        r"""Sets the templates of this BatchListAppConfigsTemplatesResponse.
 
         模板列表
 

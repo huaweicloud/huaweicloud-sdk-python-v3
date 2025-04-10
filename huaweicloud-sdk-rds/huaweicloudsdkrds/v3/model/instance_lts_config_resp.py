@@ -27,7 +27,7 @@ class InstanceLtsConfigResp:
     }
 
     def __init__(self, lts_configs=None, instance=None):
-        """InstanceLtsConfigResp
+        r"""InstanceLtsConfigResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceLtsConfigResp:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this InstanceLtsConfigResp.
+        r"""Gets the lts_configs of this InstanceLtsConfigResp.
 
         LTS配置信息
 
@@ -61,7 +61,7 @@ class InstanceLtsConfigResp:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this InstanceLtsConfigResp.
+        r"""Sets the lts_configs of this InstanceLtsConfigResp.
 
         LTS配置信息
 
@@ -72,7 +72,7 @@ class InstanceLtsConfigResp:
 
     @property
     def instance(self):
-        """Gets the instance of this InstanceLtsConfigResp.
+        r"""Gets the instance of this InstanceLtsConfigResp.
 
         :return: The instance of this InstanceLtsConfigResp.
         :rtype: :class:`huaweicloudsdkrds.v3.InstanceLtsBasicInfoResp`
@@ -81,7 +81,7 @@ class InstanceLtsConfigResp:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this InstanceLtsConfigResp.
+        r"""Sets the instance of this InstanceLtsConfigResp.
 
         :param instance: The instance of this InstanceLtsConfigResp.
         :type instance: :class:`huaweicloudsdkrds.v3.InstanceLtsBasicInfoResp`

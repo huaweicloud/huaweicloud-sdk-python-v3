@@ -27,7 +27,7 @@ class DataResponse:
     }
 
     def __init__(self, success_ids=None, error_ids=None):
-        """DataResponse
+        r"""DataResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DataResponse:
 
     @property
     def success_ids(self):
-        """Gets the success_ids of this DataResponse.
+        r"""Gets the success_ids of this DataResponse.
 
         id list
 
@@ -60,7 +60,7 @@ class DataResponse:
 
     @success_ids.setter
     def success_ids(self, success_ids):
-        """Sets the success_ids of this DataResponse.
+        r"""Sets the success_ids of this DataResponse.
 
         id list
 
@@ -71,7 +71,7 @@ class DataResponse:
 
     @property
     def error_ids(self):
-        """Gets the error_ids of this DataResponse.
+        r"""Gets the error_ids of this DataResponse.
 
         id list
 
@@ -82,7 +82,7 @@ class DataResponse:
 
     @error_ids.setter
     def error_ids(self, error_ids):
-        """Sets the error_ids of this DataResponse.
+        r"""Sets the error_ids of this DataResponse.
 
         id list
 

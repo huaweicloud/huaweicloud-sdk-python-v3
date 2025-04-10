@@ -26,7 +26,7 @@ class CreateAcceptanceResponse(SdkResponse):
     }
 
     def __init__(self, acceptance_id=None):
-        """CreateAcceptanceResponse
+        r"""CreateAcceptanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAcceptanceResponse(SdkResponse):
 
     @property
     def acceptance_id(self):
-        """Gets the acceptance_id of this CreateAcceptanceResponse.
+        r"""Gets the acceptance_id of this CreateAcceptanceResponse.
 
         acceptance_id
 
@@ -55,7 +55,7 @@ class CreateAcceptanceResponse(SdkResponse):
 
     @acceptance_id.setter
     def acceptance_id(self, acceptance_id):
-        """Sets the acceptance_id of this CreateAcceptanceResponse.
+        r"""Sets the acceptance_id of this CreateAcceptanceResponse.
 
         acceptance_id
 

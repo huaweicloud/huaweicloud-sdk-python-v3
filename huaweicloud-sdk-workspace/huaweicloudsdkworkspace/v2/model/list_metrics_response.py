@@ -26,7 +26,7 @@ class ListMetricsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListMetricsResponse
+        r"""ListMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListMetricsResponse.
+        r"""Gets the body of this ListMetricsResponse.
 
         查询指标响应体
 
@@ -55,7 +55,7 @@ class ListMetricsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMetricsResponse.
+        r"""Sets the body of this ListMetricsResponse.
 
         查询指标响应体
 

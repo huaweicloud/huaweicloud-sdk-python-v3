@@ -31,7 +31,7 @@ class HttpGetDTO:
     }
 
     def __init__(self, path=None, port=None, host=None, scheme=None):
-        """HttpGetDTO
+        r"""HttpGetDTO
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class HttpGetDTO:
 
     @property
     def path(self):
-        """Gets the path of this HttpGetDTO.
+        r"""Gets the path of this HttpGetDTO.
 
         请求路径
 
@@ -72,7 +72,7 @@ class HttpGetDTO:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this HttpGetDTO.
+        r"""Sets the path of this HttpGetDTO.
 
         请求路径
 
@@ -83,7 +83,7 @@ class HttpGetDTO:
 
     @property
     def port(self):
-        """Gets the port of this HttpGetDTO.
+        r"""Gets the port of this HttpGetDTO.
 
         端口
 
@@ -94,7 +94,7 @@ class HttpGetDTO:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HttpGetDTO.
+        r"""Sets the port of this HttpGetDTO.
 
         端口
 
@@ -105,7 +105,7 @@ class HttpGetDTO:
 
     @property
     def host(self):
-        """Gets the host of this HttpGetDTO.
+        r"""Gets the host of this HttpGetDTO.
 
         主机地址
 
@@ -116,7 +116,7 @@ class HttpGetDTO:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this HttpGetDTO.
+        r"""Sets the host of this HttpGetDTO.
 
         主机地址
 
@@ -127,7 +127,7 @@ class HttpGetDTO:
 
     @property
     def scheme(self):
-        """Gets the scheme of this HttpGetDTO.
+        r"""Gets the scheme of this HttpGetDTO.
 
         协议类型
 
@@ -138,7 +138,7 @@ class HttpGetDTO:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this HttpGetDTO.
+        r"""Sets the scheme of this HttpGetDTO.
 
         协议类型
 

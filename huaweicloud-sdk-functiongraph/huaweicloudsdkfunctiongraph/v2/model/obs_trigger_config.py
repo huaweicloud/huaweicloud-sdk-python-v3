@@ -31,7 +31,7 @@ class OBSTriggerConfig:
     }
 
     def __init__(self, bucket=None, events=None, prefix=None, suffix=None):
-        """OBSTriggerConfig
+        r"""OBSTriggerConfig
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OBSTriggerConfig:
 
     @property
     def bucket(self):
-        """Gets the bucket of this OBSTriggerConfig.
+        r"""Gets the bucket of this OBSTriggerConfig.
 
         OBS桶名（trigger_type为OBS时配置）
 
@@ -71,7 +71,7 @@ class OBSTriggerConfig:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this OBSTriggerConfig.
+        r"""Sets the bucket of this OBSTriggerConfig.
 
         OBS桶名（trigger_type为OBS时配置）
 
@@ -82,7 +82,7 @@ class OBSTriggerConfig:
 
     @property
     def events(self):
-        """Gets the events of this OBSTriggerConfig.
+        r"""Gets the events of this OBSTriggerConfig.
 
         OBS事件列表（trigger_type为OBS时配置）
 
@@ -93,7 +93,7 @@ class OBSTriggerConfig:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this OBSTriggerConfig.
+        r"""Sets the events of this OBSTriggerConfig.
 
         OBS事件列表（trigger_type为OBS时配置）
 
@@ -104,7 +104,7 @@ class OBSTriggerConfig:
 
     @property
     def prefix(self):
-        """Gets the prefix of this OBSTriggerConfig.
+        r"""Gets the prefix of this OBSTriggerConfig.
 
         对象名前缀（trigger_type为OBS时配置）
 
@@ -115,7 +115,7 @@ class OBSTriggerConfig:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this OBSTriggerConfig.
+        r"""Sets the prefix of this OBSTriggerConfig.
 
         对象名前缀（trigger_type为OBS时配置）
 
@@ -126,7 +126,7 @@ class OBSTriggerConfig:
 
     @property
     def suffix(self):
-        """Gets the suffix of this OBSTriggerConfig.
+        r"""Gets the suffix of this OBSTriggerConfig.
 
         对象名后缀（trigger_type为OBS时配置）
 
@@ -137,7 +137,7 @@ class OBSTriggerConfig:
 
     @suffix.setter
     def suffix(self, suffix):
-        """Sets the suffix of this OBSTriggerConfig.
+        r"""Sets the suffix of this OBSTriggerConfig.
 
         对象名后缀（trigger_type为OBS时配置）
 

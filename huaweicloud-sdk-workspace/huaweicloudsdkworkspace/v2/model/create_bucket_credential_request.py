@@ -25,7 +25,7 @@ class CreateBucketCredentialRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBucketCredentialRequest
+        r"""CreateBucketCredentialRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBucketCredentialRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBucketCredentialRequest.
+        r"""Gets the body of this CreateBucketCredentialRequest.
 
         :return: The body of this CreateBucketCredentialRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateBucketCredentialReq`
@@ -52,7 +52,7 @@ class CreateBucketCredentialRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBucketCredentialRequest.
+        r"""Sets the body of this CreateBucketCredentialRequest.
 
         :param body: The body of this CreateBucketCredentialRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateBucketCredentialReq`

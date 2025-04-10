@@ -27,7 +27,7 @@ class CreateDrugJobBasicInfo:
     }
 
     def __init__(self, name=None, labels=None):
-        """CreateDrugJobBasicInfo
+        r"""CreateDrugJobBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDrugJobBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this CreateDrugJobBasicInfo.
+        r"""Gets the name of this CreateDrugJobBasicInfo.
 
         作业的名称，取值范围：[5,64]，允许大小写字母、数字、空格、下划线(_)和中划线(-),只能以数字或字母开头
 
@@ -60,7 +60,7 @@ class CreateDrugJobBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDrugJobBasicInfo.
+        r"""Sets the name of this CreateDrugJobBasicInfo.
 
         作业的名称，取值范围：[5,64]，允许大小写字母、数字、空格、下划线(_)和中划线(-),只能以数字或字母开头
 
@@ -71,7 +71,7 @@ class CreateDrugJobBasicInfo:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateDrugJobBasicInfo.
+        r"""Gets the labels of this CreateDrugJobBasicInfo.
 
         标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -82,7 +82,7 @@ class CreateDrugJobBasicInfo:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateDrugJobBasicInfo.
+        r"""Sets the labels of this CreateDrugJobBasicInfo.
 
         标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 

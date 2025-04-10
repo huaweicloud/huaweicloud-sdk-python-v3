@@ -31,7 +31,7 @@ class ListLineGroupsRequest:
     }
 
     def __init__(self, line_id=None, name=None, limit=None, offset=None):
-        """ListLineGroupsRequest
+        r"""ListLineGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListLineGroupsRequest:
 
     @property
     def line_id(self):
-        """Gets the line_id of this ListLineGroupsRequest.
+        r"""Gets the line_id of this ListLineGroupsRequest.
 
         线路分组ID。 模糊匹配。
 
@@ -75,7 +75,7 @@ class ListLineGroupsRequest:
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this ListLineGroupsRequest.
+        r"""Sets the line_id of this ListLineGroupsRequest.
 
         线路分组ID。 模糊匹配。
 
@@ -86,7 +86,7 @@ class ListLineGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListLineGroupsRequest.
+        r"""Gets the name of this ListLineGroupsRequest.
 
         线路分组名称。 模糊匹配。
 
@@ -97,7 +97,7 @@ class ListLineGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLineGroupsRequest.
+        r"""Sets the name of this ListLineGroupsRequest.
 
         线路分组名称。 模糊匹配。
 
@@ -108,7 +108,7 @@ class ListLineGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLineGroupsRequest.
+        r"""Gets the limit of this ListLineGroupsRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -119,7 +119,7 @@ class ListLineGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLineGroupsRequest.
+        r"""Sets the limit of this ListLineGroupsRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -130,7 +130,7 @@ class ListLineGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLineGroupsRequest.
+        r"""Gets the offset of this ListLineGroupsRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -141,7 +141,7 @@ class ListLineGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLineGroupsRequest.
+        r"""Sets the offset of this ListLineGroupsRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 

@@ -33,7 +33,7 @@ class PipelineTemplate:
     }
 
     def __init__(self, name=None, id=None, description=None, region_id=None, url=None):
-        """PipelineTemplate
+        r"""PipelineTemplate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PipelineTemplate:
 
     @property
     def name(self):
-        """Gets the name of this PipelineTemplate.
+        r"""Gets the name of this PipelineTemplate.
 
         模板名称
 
@@ -82,7 +82,7 @@ class PipelineTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineTemplate.
+        r"""Sets the name of this PipelineTemplate.
 
         模板名称
 
@@ -93,7 +93,7 @@ class PipelineTemplate:
 
     @property
     def id(self):
-        """Gets the id of this PipelineTemplate.
+        r"""Gets the id of this PipelineTemplate.
 
         模板id
 
@@ -104,7 +104,7 @@ class PipelineTemplate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineTemplate.
+        r"""Sets the id of this PipelineTemplate.
 
         模板id
 
@@ -115,7 +115,7 @@ class PipelineTemplate:
 
     @property
     def description(self):
-        """Gets the description of this PipelineTemplate.
+        r"""Gets the description of this PipelineTemplate.
 
         描述信息
 
@@ -126,7 +126,7 @@ class PipelineTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineTemplate.
+        r"""Sets the description of this PipelineTemplate.
 
         描述信息
 
@@ -137,7 +137,7 @@ class PipelineTemplate:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PipelineTemplate.
+        r"""Gets the region_id of this PipelineTemplate.
 
         区域id
 
@@ -148,7 +148,7 @@ class PipelineTemplate:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PipelineTemplate.
+        r"""Sets the region_id of this PipelineTemplate.
 
         区域id
 
@@ -159,7 +159,7 @@ class PipelineTemplate:
 
     @property
     def url(self):
-        """Gets the url of this PipelineTemplate.
+        r"""Gets the url of this PipelineTemplate.
 
         预览链接
 
@@ -170,7 +170,7 @@ class PipelineTemplate:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PipelineTemplate.
+        r"""Sets the url of this PipelineTemplate.
 
         预览链接
 

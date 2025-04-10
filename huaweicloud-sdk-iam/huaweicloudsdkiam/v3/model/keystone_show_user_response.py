@@ -26,7 +26,7 @@ class KeystoneShowUserResponse(SdkResponse):
     }
 
     def __init__(self, user=None):
-        """KeystoneShowUserResponse
+        r"""KeystoneShowUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowUserResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this KeystoneShowUserResponse.
+        r"""Gets the user of this KeystoneShowUserResponse.
 
         :return: The user of this KeystoneShowUserResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowUserResult`
@@ -53,7 +53,7 @@ class KeystoneShowUserResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this KeystoneShowUserResponse.
+        r"""Sets the user of this KeystoneShowUserResponse.
 
         :param user: The user of this KeystoneShowUserResponse.
         :type user: :class:`huaweicloudsdkiam.v3.KeystoneShowUserResult`

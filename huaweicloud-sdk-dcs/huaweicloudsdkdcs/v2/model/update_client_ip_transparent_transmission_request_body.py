@@ -25,7 +25,7 @@ class UpdateClientIpTransparentTransmissionRequestBody:
     }
 
     def __init__(self, transparent_client_ip_enable=None):
-        """UpdateClientIpTransparentTransmissionRequestBody
+        r"""UpdateClientIpTransparentTransmissionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateClientIpTransparentTransmissionRequestBody:
 
     @property
     def transparent_client_ip_enable(self):
-        """Gets the transparent_client_ip_enable of this UpdateClientIpTransparentTransmissionRequestBody.
+        r"""Gets the transparent_client_ip_enable of this UpdateClientIpTransparentTransmissionRequestBody.
 
         开启或关闭客户ip透传标志
 
@@ -54,7 +54,7 @@ class UpdateClientIpTransparentTransmissionRequestBody:
 
     @transparent_client_ip_enable.setter
     def transparent_client_ip_enable(self, transparent_client_ip_enable):
-        """Sets the transparent_client_ip_enable of this UpdateClientIpTransparentTransmissionRequestBody.
+        r"""Sets the transparent_client_ip_enable of this UpdateClientIpTransparentTransmissionRequestBody.
 
         开启或关闭客户ip透传标志
 

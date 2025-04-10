@@ -26,7 +26,7 @@ class SearchIdByPathResponse(SdkResponse):
     }
 
     def __init__(self, catalog_id=None):
-        """SearchIdByPathResponse
+        r"""SearchIdByPathResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchIdByPathResponse(SdkResponse):
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this SearchIdByPathResponse.
+        r"""Gets the catalog_id of this SearchIdByPathResponse.
 
         目录编号
 
@@ -55,7 +55,7 @@ class SearchIdByPathResponse(SdkResponse):
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this SearchIdByPathResponse.
+        r"""Sets the catalog_id of this SearchIdByPathResponse.
 
         目录编号
 

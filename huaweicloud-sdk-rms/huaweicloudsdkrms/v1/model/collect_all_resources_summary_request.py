@@ -35,7 +35,7 @@ class CollectAllResourcesSummaryRequest:
     }
 
     def __init__(self, name=None, type=None, region_id=None, ep_id=None, project_id=None, tags=None):
-        """CollectAllResourcesSummaryRequest
+        r"""CollectAllResourcesSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CollectAllResourcesSummaryRequest:
 
     @property
     def name(self):
-        """Gets the name of this CollectAllResourcesSummaryRequest.
+        r"""Gets the name of this CollectAllResourcesSummaryRequest.
 
         资源名称
 
@@ -89,7 +89,7 @@ class CollectAllResourcesSummaryRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CollectAllResourcesSummaryRequest.
+        r"""Sets the name of this CollectAllResourcesSummaryRequest.
 
         资源名称
 
@@ -100,7 +100,7 @@ class CollectAllResourcesSummaryRequest:
 
     @property
     def type(self):
-        """Gets the type of this CollectAllResourcesSummaryRequest.
+        r"""Gets the type of this CollectAllResourcesSummaryRequest.
 
         资源类型（provider.type）
 
@@ -111,7 +111,7 @@ class CollectAllResourcesSummaryRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CollectAllResourcesSummaryRequest.
+        r"""Sets the type of this CollectAllResourcesSummaryRequest.
 
         资源类型（provider.type）
 
@@ -122,7 +122,7 @@ class CollectAllResourcesSummaryRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CollectAllResourcesSummaryRequest.
+        r"""Gets the region_id of this CollectAllResourcesSummaryRequest.
 
         区域ID列表
 
@@ -133,7 +133,7 @@ class CollectAllResourcesSummaryRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CollectAllResourcesSummaryRequest.
+        r"""Sets the region_id of this CollectAllResourcesSummaryRequest.
 
         区域ID列表
 
@@ -144,7 +144,7 @@ class CollectAllResourcesSummaryRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this CollectAllResourcesSummaryRequest.
+        r"""Gets the ep_id of this CollectAllResourcesSummaryRequest.
 
         企业项目ID列表
 
@@ -155,7 +155,7 @@ class CollectAllResourcesSummaryRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this CollectAllResourcesSummaryRequest.
+        r"""Sets the ep_id of this CollectAllResourcesSummaryRequest.
 
         企业项目ID列表
 
@@ -166,7 +166,7 @@ class CollectAllResourcesSummaryRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CollectAllResourcesSummaryRequest.
+        r"""Gets the project_id of this CollectAllResourcesSummaryRequest.
 
         项目ID
 
@@ -177,7 +177,7 @@ class CollectAllResourcesSummaryRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CollectAllResourcesSummaryRequest.
+        r"""Sets the project_id of this CollectAllResourcesSummaryRequest.
 
         项目ID
 
@@ -188,7 +188,7 @@ class CollectAllResourcesSummaryRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CollectAllResourcesSummaryRequest.
+        r"""Gets the tags of this CollectAllResourcesSummaryRequest.
 
         标签列表
 
@@ -199,7 +199,7 @@ class CollectAllResourcesSummaryRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CollectAllResourcesSummaryRequest.
+        r"""Sets the tags of this CollectAllResourcesSummaryRequest.
 
         标签列表
 

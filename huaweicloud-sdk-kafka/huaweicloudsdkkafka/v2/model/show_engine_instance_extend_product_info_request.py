@@ -29,7 +29,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, type=None):
-        """ShowEngineInstanceExtendProductInfoRequest
+        r"""ShowEngineInstanceExtendProductInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ShowEngineInstanceExtendProductInfoRequest.
+        r"""Gets the engine of this ShowEngineInstanceExtendProductInfoRequest.
 
         消息引擎。
 
@@ -65,7 +65,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowEngineInstanceExtendProductInfoRequest.
+        r"""Sets the engine of this ShowEngineInstanceExtendProductInfoRequest.
 
         消息引擎。
 
@@ -76,7 +76,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowEngineInstanceExtendProductInfoRequest.
+        r"""Gets the instance_id of this ShowEngineInstanceExtendProductInfoRequest.
 
         实例ID。
 
@@ -87,7 +87,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowEngineInstanceExtendProductInfoRequest.
+        r"""Sets the instance_id of this ShowEngineInstanceExtendProductInfoRequest.
 
         实例ID。
 
@@ -98,7 +98,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowEngineInstanceExtendProductInfoRequest.
+        r"""Gets the type of this ShowEngineInstanceExtendProductInfoRequest.
 
         产品的类型。 - advanced: 专享版
 
@@ -109,7 +109,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowEngineInstanceExtendProductInfoRequest.
+        r"""Sets the type of this ShowEngineInstanceExtendProductInfoRequest.
 
         产品的类型。 - advanced: 专享版
 

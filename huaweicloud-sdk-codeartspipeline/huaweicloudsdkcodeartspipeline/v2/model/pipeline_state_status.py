@@ -47,7 +47,7 @@ class PipelineStateStatus:
     }
 
     def __init__(self, id=None, name=None, type=None, start_time=None, end_time=None, elapsed_time=None, status=None, outcome=None, error_code=None, error_msg=None, children=None, detail_url=None):
-        """PipelineStateStatus
+        r"""PipelineStateStatus
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class PipelineStateStatus:
 
     @property
     def id(self):
-        """Gets the id of this PipelineStateStatus.
+        r"""Gets the id of this PipelineStateStatus.
 
         阶段或任务标识
 
@@ -119,7 +119,7 @@ class PipelineStateStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineStateStatus.
+        r"""Sets the id of this PipelineStateStatus.
 
         阶段或任务标识
 
@@ -130,7 +130,7 @@ class PipelineStateStatus:
 
     @property
     def name(self):
-        """Gets the name of this PipelineStateStatus.
+        r"""Gets the name of this PipelineStateStatus.
 
         阶段或任务名称
 
@@ -141,7 +141,7 @@ class PipelineStateStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineStateStatus.
+        r"""Sets the name of this PipelineStateStatus.
 
         阶段或任务名称
 
@@ -152,7 +152,7 @@ class PipelineStateStatus:
 
     @property
     def type(self):
-        """Gets the type of this PipelineStateStatus.
+        r"""Gets the type of this PipelineStateStatus.
 
         类别(阶段/任务)
 
@@ -163,7 +163,7 @@ class PipelineStateStatus:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PipelineStateStatus.
+        r"""Sets the type of this PipelineStateStatus.
 
         类别(阶段/任务)
 
@@ -174,7 +174,7 @@ class PipelineStateStatus:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PipelineStateStatus.
+        r"""Gets the start_time of this PipelineStateStatus.
 
         执行开始时间
 
@@ -185,7 +185,7 @@ class PipelineStateStatus:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PipelineStateStatus.
+        r"""Sets the start_time of this PipelineStateStatus.
 
         执行开始时间
 
@@ -196,7 +196,7 @@ class PipelineStateStatus:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PipelineStateStatus.
+        r"""Gets the end_time of this PipelineStateStatus.
 
         执行结束时间
 
@@ -207,7 +207,7 @@ class PipelineStateStatus:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PipelineStateStatus.
+        r"""Sets the end_time of this PipelineStateStatus.
 
         执行结束时间
 
@@ -218,7 +218,7 @@ class PipelineStateStatus:
 
     @property
     def elapsed_time(self):
-        """Gets the elapsed_time of this PipelineStateStatus.
+        r"""Gets the elapsed_time of this PipelineStateStatus.
 
         运行耗时
 
@@ -229,7 +229,7 @@ class PipelineStateStatus:
 
     @elapsed_time.setter
     def elapsed_time(self, elapsed_time):
-        """Sets the elapsed_time of this PipelineStateStatus.
+        r"""Sets the elapsed_time of this PipelineStateStatus.
 
         运行耗时
 
@@ -240,7 +240,7 @@ class PipelineStateStatus:
 
     @property
     def status(self):
-        """Gets the status of this PipelineStateStatus.
+        r"""Gets the status of this PipelineStateStatus.
 
         运行状态
 
@@ -251,7 +251,7 @@ class PipelineStateStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineStateStatus.
+        r"""Sets the status of this PipelineStateStatus.
 
         运行状态
 
@@ -262,7 +262,7 @@ class PipelineStateStatus:
 
     @property
     def outcome(self):
-        """Gets the outcome of this PipelineStateStatus.
+        r"""Gets the outcome of this PipelineStateStatus.
 
         运行结果
 
@@ -273,7 +273,7 @@ class PipelineStateStatus:
 
     @outcome.setter
     def outcome(self, outcome):
-        """Sets the outcome of this PipelineStateStatus.
+        r"""Sets the outcome of this PipelineStateStatus.
 
         运行结果
 
@@ -284,7 +284,7 @@ class PipelineStateStatus:
 
     @property
     def error_code(self):
-        """Gets the error_code of this PipelineStateStatus.
+        r"""Gets the error_code of this PipelineStateStatus.
 
         错误码
 
@@ -295,7 +295,7 @@ class PipelineStateStatus:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this PipelineStateStatus.
+        r"""Sets the error_code of this PipelineStateStatus.
 
         错误码
 
@@ -306,7 +306,7 @@ class PipelineStateStatus:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this PipelineStateStatus.
+        r"""Gets the error_msg of this PipelineStateStatus.
 
         错误信息
 
@@ -317,7 +317,7 @@ class PipelineStateStatus:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this PipelineStateStatus.
+        r"""Sets the error_msg of this PipelineStateStatus.
 
         错误信息
 
@@ -328,7 +328,7 @@ class PipelineStateStatus:
 
     @property
     def children(self):
-        """Gets the children of this PipelineStateStatus.
+        r"""Gets the children of this PipelineStateStatus.
 
         子任务运行信息(对任务来说是空的)
 
@@ -339,7 +339,7 @@ class PipelineStateStatus:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this PipelineStateStatus.
+        r"""Sets the children of this PipelineStateStatus.
 
         子任务运行信息(对任务来说是空的)
 
@@ -350,7 +350,7 @@ class PipelineStateStatus:
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this PipelineStateStatus.
+        r"""Gets the detail_url of this PipelineStateStatus.
 
         任务运行记录跳转链接
 
@@ -361,7 +361,7 @@ class PipelineStateStatus:
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this PipelineStateStatus.
+        r"""Sets the detail_url of this PipelineStateStatus.
 
         任务运行记录跳转链接
 

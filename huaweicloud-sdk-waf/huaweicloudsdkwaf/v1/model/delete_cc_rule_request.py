@@ -29,7 +29,7 @@ class DeleteCcRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """DeleteCcRuleRequest
+        r"""DeleteCcRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteCcRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteCcRuleRequest.
+        r"""Gets the enterprise_project_id of this DeleteCcRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -66,7 +66,7 @@ class DeleteCcRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteCcRuleRequest.
+        r"""Sets the enterprise_project_id of this DeleteCcRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -77,7 +77,7 @@ class DeleteCcRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteCcRuleRequest.
+        r"""Gets the policy_id of this DeleteCcRuleRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -88,7 +88,7 @@ class DeleteCcRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteCcRuleRequest.
+        r"""Sets the policy_id of this DeleteCcRuleRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -99,7 +99,7 @@ class DeleteCcRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteCcRuleRequest.
+        r"""Gets the rule_id of this DeleteCcRuleRequest.
 
         ID of the cc rule. It can be obtained by calling the **ListCcRules** API.
 
@@ -110,7 +110,7 @@ class DeleteCcRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteCcRuleRequest.
+        r"""Sets the rule_id of this DeleteCcRuleRequest.
 
         ID of the cc rule. It can be obtained by calling the **ListCcRules** API.
 

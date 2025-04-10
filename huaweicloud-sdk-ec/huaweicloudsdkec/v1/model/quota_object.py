@@ -35,7 +35,7 @@ class QuotaObject:
     }
 
     def __init__(self, type=None, unit=None, min=None, max=None, quota=None, used=None):
-        """QuotaObject
+        r"""QuotaObject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QuotaObject:
 
     @property
     def type(self):
-        """Gets the type of this QuotaObject.
+        r"""Gets the type of this QuotaObject.
 
         配额类型
 
@@ -89,7 +89,7 @@ class QuotaObject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaObject.
+        r"""Sets the type of this QuotaObject.
 
         配额类型
 
@@ -100,7 +100,7 @@ class QuotaObject:
 
     @property
     def unit(self):
-        """Gets the unit of this QuotaObject.
+        r"""Gets the unit of this QuotaObject.
 
         单位
 
@@ -111,7 +111,7 @@ class QuotaObject:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QuotaObject.
+        r"""Sets the unit of this QuotaObject.
 
         单位
 
@@ -122,7 +122,7 @@ class QuotaObject:
 
     @property
     def min(self):
-        """Gets the min of this QuotaObject.
+        r"""Gets the min of this QuotaObject.
 
         最小值
 
@@ -133,7 +133,7 @@ class QuotaObject:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaObject.
+        r"""Sets the min of this QuotaObject.
 
         最小值
 
@@ -144,7 +144,7 @@ class QuotaObject:
 
     @property
     def max(self):
-        """Gets the max of this QuotaObject.
+        r"""Gets the max of this QuotaObject.
 
         最大值
 
@@ -155,7 +155,7 @@ class QuotaObject:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this QuotaObject.
+        r"""Sets the max of this QuotaObject.
 
         最大值
 
@@ -166,7 +166,7 @@ class QuotaObject:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaObject.
+        r"""Gets the quota of this QuotaObject.
 
         配额上限
 
@@ -177,7 +177,7 @@ class QuotaObject:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaObject.
+        r"""Sets the quota of this QuotaObject.
 
         配额上限
 
@@ -188,7 +188,7 @@ class QuotaObject:
 
     @property
     def used(self):
-        """Gets the used of this QuotaObject.
+        r"""Gets the used of this QuotaObject.
 
         已使用数
 
@@ -199,7 +199,7 @@ class QuotaObject:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaObject.
+        r"""Sets the used of this QuotaObject.
 
         已使用数
 

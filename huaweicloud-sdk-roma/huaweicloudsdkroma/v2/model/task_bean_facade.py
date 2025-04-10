@@ -31,7 +31,7 @@ class TaskBeanFacade:
     }
 
     def __init__(self, task_id=None, task_name=None, error_code=None, error_msg=None):
-        """TaskBeanFacade
+        r"""TaskBeanFacade
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskBeanFacade:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskBeanFacade.
+        r"""Gets the task_id of this TaskBeanFacade.
 
         任务ID
 
@@ -75,7 +75,7 @@ class TaskBeanFacade:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskBeanFacade.
+        r"""Sets the task_id of this TaskBeanFacade.
 
         任务ID
 
@@ -86,7 +86,7 @@ class TaskBeanFacade:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskBeanFacade.
+        r"""Gets the task_name of this TaskBeanFacade.
 
         任务名称
 
@@ -97,7 +97,7 @@ class TaskBeanFacade:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskBeanFacade.
+        r"""Sets the task_name of this TaskBeanFacade.
 
         任务名称
 
@@ -108,7 +108,7 @@ class TaskBeanFacade:
 
     @property
     def error_code(self):
-        """Gets the error_code of this TaskBeanFacade.
+        r"""Gets the error_code of this TaskBeanFacade.
 
         失败的错误码
 
@@ -119,7 +119,7 @@ class TaskBeanFacade:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this TaskBeanFacade.
+        r"""Sets the error_code of this TaskBeanFacade.
 
         失败的错误码
 
@@ -130,7 +130,7 @@ class TaskBeanFacade:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this TaskBeanFacade.
+        r"""Gets the error_msg of this TaskBeanFacade.
 
         错误详情
 
@@ -141,7 +141,7 @@ class TaskBeanFacade:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this TaskBeanFacade.
+        r"""Sets the error_msg of this TaskBeanFacade.
 
         错误详情
 

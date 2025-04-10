@@ -27,7 +27,7 @@ class CreateLineageInfoRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateLineageInfoRequest
+        r"""CreateLineageInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLineageInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateLineageInfoRequest.
+        r"""Gets the workspace of this CreateLineageInfoRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -60,7 +60,7 @@ class CreateLineageInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateLineageInfoRequest.
+        r"""Sets the workspace of this CreateLineageInfoRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -71,7 +71,7 @@ class CreateLineageInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLineageInfoRequest.
+        r"""Gets the body of this CreateLineageInfoRequest.
 
         :return: The body of this CreateLineageInfoRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.LineageInfoRequest`
@@ -80,7 +80,7 @@ class CreateLineageInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLineageInfoRequest.
+        r"""Sets the body of this CreateLineageInfoRequest.
 
         :param body: The body of this CreateLineageInfoRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.LineageInfoRequest`

@@ -27,7 +27,7 @@ class ShowSyncTaskRequest:
     }
 
     def __init__(self, sync_task_id=None, query_time=None):
-        """ShowSyncTaskRequest
+        r"""ShowSyncTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSyncTaskRequest:
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this ShowSyncTaskRequest.
+        r"""Gets the sync_task_id of this ShowSyncTaskRequest.
 
         同步任务ID。
 
@@ -59,7 +59,7 @@ class ShowSyncTaskRequest:
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this ShowSyncTaskRequest.
+        r"""Sets the sync_task_id of this ShowSyncTaskRequest.
 
         同步任务ID。
 
@@ -70,7 +70,7 @@ class ShowSyncTaskRequest:
 
     @property
     def query_time(self):
-        """Gets the query_time of this ShowSyncTaskRequest.
+        r"""Gets the query_time of this ShowSyncTaskRequest.
 
         查询同步任务详情的时间（毫秒），依据该值返回所在月份的统计数据。
 
@@ -81,7 +81,7 @@ class ShowSyncTaskRequest:
 
     @query_time.setter
     def query_time(self, query_time):
-        """Sets the query_time of this ShowSyncTaskRequest.
+        r"""Sets the query_time of this ShowSyncTaskRequest.
 
         查询同步任务详情的时间（毫秒），依据该值返回所在月份的统计数据。
 

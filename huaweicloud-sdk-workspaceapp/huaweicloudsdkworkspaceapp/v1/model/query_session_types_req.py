@@ -31,7 +31,7 @@ class QuerySessionTypesReq:
     }
 
     def __init__(self, resource_spec_code=None, session_type=None, resource_type=None, cloud_service_type=None):
-        """QuerySessionTypesReq
+        r"""QuerySessionTypesReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QuerySessionTypesReq:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this QuerySessionTypesReq.
+        r"""Gets the resource_spec_code of this QuerySessionTypesReq.
 
         资源规格编码。
 
@@ -75,7 +75,7 @@ class QuerySessionTypesReq:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this QuerySessionTypesReq.
+        r"""Sets the resource_spec_code of this QuerySessionTypesReq.
 
         资源规格编码。
 
@@ -86,7 +86,7 @@ class QuerySessionTypesReq:
 
     @property
     def session_type(self):
-        """Gets the session_type of this QuerySessionTypesReq.
+        r"""Gets the session_type of this QuerySessionTypesReq.
 
         磁盘类型。
 
@@ -97,7 +97,7 @@ class QuerySessionTypesReq:
 
     @session_type.setter
     def session_type(self, session_type):
-        """Sets the session_type of this QuerySessionTypesReq.
+        r"""Sets the session_type of this QuerySessionTypesReq.
 
         磁盘类型。
 
@@ -108,7 +108,7 @@ class QuerySessionTypesReq:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this QuerySessionTypesReq.
+        r"""Gets the resource_type of this QuerySessionTypesReq.
 
         资源类型字段。
 
@@ -119,7 +119,7 @@ class QuerySessionTypesReq:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this QuerySessionTypesReq.
+        r"""Sets the resource_type of this QuerySessionTypesReq.
 
         资源类型字段。
 
@@ -130,7 +130,7 @@ class QuerySessionTypesReq:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this QuerySessionTypesReq.
+        r"""Gets the cloud_service_type of this QuerySessionTypesReq.
 
         资源所属云服务类型编码。
 
@@ -141,7 +141,7 @@ class QuerySessionTypesReq:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this QuerySessionTypesReq.
+        r"""Sets the cloud_service_type of this QuerySessionTypesReq.
 
         资源所属云服务类型编码。
 

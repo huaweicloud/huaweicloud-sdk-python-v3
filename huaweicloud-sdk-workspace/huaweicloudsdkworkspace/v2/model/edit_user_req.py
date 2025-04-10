@@ -45,7 +45,7 @@ class EditUserReq:
     }
 
     def __init__(self, description=None, user_email=None, user_phone=None, active_type=None, account_expires=None, enable_change_password=None, next_login_change_password=None, group_ids=None, alias_name=None, password_never_expired=None, disabled=None):
-        """EditUserReq
+        r"""EditUserReq
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EditUserReq:
 
     @property
     def description(self):
-        """Gets the description of this EditUserReq.
+        r"""Gets the description of this EditUserReq.
 
         用户描述。
 
@@ -124,7 +124,7 @@ class EditUserReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EditUserReq.
+        r"""Sets the description of this EditUserReq.
 
         用户描述。
 
@@ -135,7 +135,7 @@ class EditUserReq:
 
     @property
     def user_email(self):
-        """Gets the user_email of this EditUserReq.
+        r"""Gets the user_email of this EditUserReq.
 
         用户邮箱。
 
@@ -146,7 +146,7 @@ class EditUserReq:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this EditUserReq.
+        r"""Sets the user_email of this EditUserReq.
 
         用户邮箱。
 
@@ -157,7 +157,7 @@ class EditUserReq:
 
     @property
     def user_phone(self):
-        """Gets the user_phone of this EditUserReq.
+        r"""Gets the user_phone of this EditUserReq.
 
         手机号。
 
@@ -168,7 +168,7 @@ class EditUserReq:
 
     @user_phone.setter
     def user_phone(self, user_phone):
-        """Sets the user_phone of this EditUserReq.
+        r"""Sets the user_phone of this EditUserReq.
 
         手机号。
 
@@ -179,7 +179,7 @@ class EditUserReq:
 
     @property
     def active_type(self):
-        """Gets the active_type of this EditUserReq.
+        r"""Gets the active_type of this EditUserReq.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -190,7 +190,7 @@ class EditUserReq:
 
     @active_type.setter
     def active_type(self, active_type):
-        """Sets the active_type of this EditUserReq.
+        r"""Sets the active_type of this EditUserReq.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -201,7 +201,7 @@ class EditUserReq:
 
     @property
     def account_expires(self):
-        """Gets the account_expires of this EditUserReq.
+        r"""Gets the account_expires of this EditUserReq.
 
         账户过期时间，0表示永远不过期。
 
@@ -212,7 +212,7 @@ class EditUserReq:
 
     @account_expires.setter
     def account_expires(self, account_expires):
-        """Sets the account_expires of this EditUserReq.
+        r"""Sets the account_expires of this EditUserReq.
 
         账户过期时间，0表示永远不过期。
 
@@ -223,7 +223,7 @@ class EditUserReq:
 
     @property
     def enable_change_password(self):
-        """Gets the enable_change_password of this EditUserReq.
+        r"""Gets the enable_change_password of this EditUserReq.
 
         是否允许修改密码，true表示允许，false表示不允许。
 
@@ -234,7 +234,7 @@ class EditUserReq:
 
     @enable_change_password.setter
     def enable_change_password(self, enable_change_password):
-        """Sets the enable_change_password of this EditUserReq.
+        r"""Sets the enable_change_password of this EditUserReq.
 
         是否允许修改密码，true表示允许，false表示不允许。
 
@@ -245,7 +245,7 @@ class EditUserReq:
 
     @property
     def next_login_change_password(self):
-        """Gets the next_login_change_password of this EditUserReq.
+        r"""Gets the next_login_change_password of this EditUserReq.
 
         下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
 
@@ -256,7 +256,7 @@ class EditUserReq:
 
     @next_login_change_password.setter
     def next_login_change_password(self, next_login_change_password):
-        """Sets the next_login_change_password of this EditUserReq.
+        r"""Sets the next_login_change_password of this EditUserReq.
 
         下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
 
@@ -267,7 +267,7 @@ class EditUserReq:
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this EditUserReq.
+        r"""Gets the group_ids of this EditUserReq.
 
         用户组的专有ID列表。
 
@@ -278,7 +278,7 @@ class EditUserReq:
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this EditUserReq.
+        r"""Sets the group_ids of this EditUserReq.
 
         用户组的专有ID列表。
 
@@ -289,7 +289,7 @@ class EditUserReq:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this EditUserReq.
+        r"""Gets the alias_name of this EditUserReq.
 
         别名。
 
@@ -300,7 +300,7 @@ class EditUserReq:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this EditUserReq.
+        r"""Sets the alias_name of this EditUserReq.
 
         别名。
 
@@ -311,7 +311,7 @@ class EditUserReq:
 
     @property
     def password_never_expired(self):
-        """Gets the password_never_expired of this EditUserReq.
+        r"""Gets the password_never_expired of this EditUserReq.
 
         密码是否永不过期，true表示密码永不过期，false表示密码会过期。
 
@@ -322,7 +322,7 @@ class EditUserReq:
 
     @password_never_expired.setter
     def password_never_expired(self, password_never_expired):
-        """Sets the password_never_expired of this EditUserReq.
+        r"""Sets the password_never_expired of this EditUserReq.
 
         密码是否永不过期，true表示密码永不过期，false表示密码会过期。
 
@@ -333,7 +333,7 @@ class EditUserReq:
 
     @property
     def disabled(self):
-        """Gets the disabled of this EditUserReq.
+        r"""Gets the disabled of this EditUserReq.
 
         账户是否禁用，true表示被禁用，false表示未禁用。
 
@@ -344,7 +344,7 @@ class EditUserReq:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this EditUserReq.
+        r"""Sets the disabled of this EditUserReq.
 
         账户是否禁用，true表示被禁用，false表示未禁用。
 

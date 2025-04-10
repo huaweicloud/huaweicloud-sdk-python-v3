@@ -25,7 +25,7 @@ class SetQuotasRequestBody:
     }
 
     def __init__(self, quota_list=None):
-        """SetQuotasRequestBody
+        r"""SetQuotasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetQuotasRequestBody:
 
     @property
     def quota_list(self):
-        """Gets the quota_list of this SetQuotasRequestBody.
+        r"""Gets the quota_list of this SetQuotasRequestBody.
 
         资源列表对象。
 
@@ -53,7 +53,7 @@ class SetQuotasRequestBody:
 
     @quota_list.setter
     def quota_list(self, quota_list):
-        """Sets the quota_list of this SetQuotasRequestBody.
+        r"""Sets the quota_list of this SetQuotasRequestBody.
 
         资源列表对象。
 

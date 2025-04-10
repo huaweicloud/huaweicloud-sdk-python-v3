@@ -29,7 +29,7 @@ class AddDeploymentNodesRequest:
     }
 
     def __init__(self, deployment_id=None, provider=None, body=None):
-        """AddDeploymentNodesRequest
+        r"""AddDeploymentNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddDeploymentNodesRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this AddDeploymentNodesRequest.
+        r"""Gets the deployment_id of this AddDeploymentNodesRequest.
 
         部署ID
 
@@ -67,7 +67,7 @@ class AddDeploymentNodesRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this AddDeploymentNodesRequest.
+        r"""Sets the deployment_id of this AddDeploymentNodesRequest.
 
         部署ID
 
@@ -78,7 +78,7 @@ class AddDeploymentNodesRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this AddDeploymentNodesRequest.
+        r"""Gets the provider of this AddDeploymentNodesRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据。
 
@@ -89,7 +89,7 @@ class AddDeploymentNodesRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this AddDeploymentNodesRequest.
+        r"""Sets the provider of this AddDeploymentNodesRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据。
 
@@ -100,7 +100,7 @@ class AddDeploymentNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDeploymentNodesRequest.
+        r"""Gets the body of this AddDeploymentNodesRequest.
 
         :return: The body of this AddDeploymentNodesRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentAddNodesRequest`
@@ -109,7 +109,7 @@ class AddDeploymentNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDeploymentNodesRequest.
+        r"""Sets the body of this AddDeploymentNodesRequest.
 
         :param body: The body of this AddDeploymentNodesRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.DeploymentAddNodesRequest`

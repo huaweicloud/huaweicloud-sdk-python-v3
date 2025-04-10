@@ -40,7 +40,7 @@ class CreateOrchestrationResponse(SdkResponse):
     }
 
     def __init__(self, orchestration_name=None, orchestration_strategy=None, orchestration_mapped_param=None, is_preprocessing=None, orchestration_map=None, orchestration_id=None, orchestration_create_time=None, orchestration_update_time=None):
-        """CreateOrchestrationResponse
+        r"""CreateOrchestrationResponse
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_name(self):
-        """Gets the orchestration_name of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_name of this CreateOrchestrationResponse.
 
         编排映射规则名称。  支持英文，数字，下划线，且只能以英文开头，3-64个字符，同一实例下不允许重名。
 
@@ -102,7 +102,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_name.setter
     def orchestration_name(self, orchestration_name):
-        """Sets the orchestration_name of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_name of this CreateOrchestrationResponse.
 
         编排映射规则名称。  支持英文，数字，下划线，且只能以英文开头，3-64个字符，同一实例下不允许重名。
 
@@ -113,7 +113,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_strategy(self):
-        """Gets the orchestration_strategy of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_strategy of this CreateOrchestrationResponse.
 
         编排策略，有以下几种策略类型： - list：列表； - hash：哈希； - range：区间； - hash_range: 哈希+区间； - none_value: 空值映射； - default: 默认值映射； - head_n: 截取前n项； - tail_n: 截取后n项； 当编排策略为list时，orchestration_map列表长度*map_param_list长度不超过3000。
 
@@ -124,7 +124,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_strategy.setter
     def orchestration_strategy(self, orchestration_strategy):
-        """Sets the orchestration_strategy of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_strategy of this CreateOrchestrationResponse.
 
         编排策略，有以下几种策略类型： - list：列表； - hash：哈希； - range：区间； - hash_range: 哈希+区间； - none_value: 空值映射； - default: 默认值映射； - head_n: 截取前n项； - tail_n: 截取后n项； 当编排策略为list时，orchestration_map列表长度*map_param_list长度不超过3000。
 
@@ -135,7 +135,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_mapped_param(self):
-        """Gets the orchestration_mapped_param of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_mapped_param of this CreateOrchestrationResponse.
 
         :return: The orchestration_mapped_param of this CreateOrchestrationResponse.
         :rtype: :class:`huaweicloudsdkapig.v2.OrchestrationMappedParam`
@@ -144,7 +144,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_mapped_param.setter
     def orchestration_mapped_param(self, orchestration_mapped_param):
-        """Sets the orchestration_mapped_param of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_mapped_param of this CreateOrchestrationResponse.
 
         :param orchestration_mapped_param: The orchestration_mapped_param of this CreateOrchestrationResponse.
         :type orchestration_mapped_param: :class:`huaweicloudsdkapig.v2.OrchestrationMappedParam`
@@ -153,7 +153,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def is_preprocessing(self):
-        """Gets the is_preprocessing of this CreateOrchestrationResponse.
+        r"""Gets the is_preprocessing of this CreateOrchestrationResponse.
 
         是否为预处理策略，预处理策略只会生成临时参数作为后面参数编排规则的入参标记。当为预处理策略时，该编排规则不能作为除default之外的最后一个编排规则。
 
@@ -164,7 +164,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @is_preprocessing.setter
     def is_preprocessing(self, is_preprocessing):
-        """Sets the is_preprocessing of this CreateOrchestrationResponse.
+        r"""Sets the is_preprocessing of this CreateOrchestrationResponse.
 
         是否为预处理策略，预处理策略只会生成临时参数作为后面参数编排规则的入参标记。当为预处理策略时，该编排规则不能作为除default之外的最后一个编排规则。
 
@@ -175,7 +175,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_map(self):
-        """Gets the orchestration_map of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_map of this CreateOrchestrationResponse.
 
         编排映射规则列表，列表长度范围为1-300。 编排映射规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高。 映射规则不能重复，当orchestration_strategy=list时，map_param_list的列表也不能包含重复元素。
 
@@ -186,7 +186,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_map.setter
     def orchestration_map(self, orchestration_map):
-        """Sets the orchestration_map of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_map of this CreateOrchestrationResponse.
 
         编排映射规则列表，列表长度范围为1-300。 编排映射规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高。 映射规则不能重复，当orchestration_strategy=list时，map_param_list的列表也不能包含重复元素。
 
@@ -197,7 +197,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_id(self):
-        """Gets the orchestration_id of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_id of this CreateOrchestrationResponse.
 
         编排规则编号。
 
@@ -208,7 +208,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_id.setter
     def orchestration_id(self, orchestration_id):
-        """Sets the orchestration_id of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_id of this CreateOrchestrationResponse.
 
         编排规则编号。
 
@@ -219,7 +219,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_create_time(self):
-        """Gets the orchestration_create_time of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_create_time of this CreateOrchestrationResponse.
 
         编排规则创建时间。
 
@@ -230,7 +230,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_create_time.setter
     def orchestration_create_time(self, orchestration_create_time):
-        """Sets the orchestration_create_time of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_create_time of this CreateOrchestrationResponse.
 
         编排规则创建时间。
 
@@ -241,7 +241,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @property
     def orchestration_update_time(self):
-        """Gets the orchestration_update_time of this CreateOrchestrationResponse.
+        r"""Gets the orchestration_update_time of this CreateOrchestrationResponse.
 
         编排规则更新时间。
 
@@ -252,7 +252,7 @@ class CreateOrchestrationResponse(SdkResponse):
 
     @orchestration_update_time.setter
     def orchestration_update_time(self, orchestration_update_time):
-        """Sets the orchestration_update_time of this CreateOrchestrationResponse.
+        r"""Sets the orchestration_update_time of this CreateOrchestrationResponse.
 
         编排规则更新时间。
 

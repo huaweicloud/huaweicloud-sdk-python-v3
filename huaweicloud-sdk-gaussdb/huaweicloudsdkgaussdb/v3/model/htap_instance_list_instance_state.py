@@ -31,7 +31,7 @@ class HtapInstanceListInstanceState:
     }
 
     def __init__(self, instance_status=None, create_fail_error_code=None, fail_message=None, wait_restart_for_params=None):
-        """HtapInstanceListInstanceState
+        r"""HtapInstanceListInstanceState
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HtapInstanceListInstanceState:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this HtapInstanceListInstanceState.
+        r"""Gets the instance_status of this HtapInstanceListInstanceState.
 
         HTAP实例状态。
 
@@ -75,7 +75,7 @@ class HtapInstanceListInstanceState:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this HtapInstanceListInstanceState.
+        r"""Sets the instance_status of this HtapInstanceListInstanceState.
 
         HTAP实例状态。
 
@@ -86,7 +86,7 @@ class HtapInstanceListInstanceState:
 
     @property
     def create_fail_error_code(self):
-        """Gets the create_fail_error_code of this HtapInstanceListInstanceState.
+        r"""Gets the create_fail_error_code of this HtapInstanceListInstanceState.
 
         HTAP实例创建失败错误码。
 
@@ -97,7 +97,7 @@ class HtapInstanceListInstanceState:
 
     @create_fail_error_code.setter
     def create_fail_error_code(self, create_fail_error_code):
-        """Sets the create_fail_error_code of this HtapInstanceListInstanceState.
+        r"""Sets the create_fail_error_code of this HtapInstanceListInstanceState.
 
         HTAP实例创建失败错误码。
 
@@ -108,7 +108,7 @@ class HtapInstanceListInstanceState:
 
     @property
     def fail_message(self):
-        """Gets the fail_message of this HtapInstanceListInstanceState.
+        r"""Gets the fail_message of this HtapInstanceListInstanceState.
 
         HTAP实例创建失败错误信息。
 
@@ -119,7 +119,7 @@ class HtapInstanceListInstanceState:
 
     @fail_message.setter
     def fail_message(self, fail_message):
-        """Sets the fail_message of this HtapInstanceListInstanceState.
+        r"""Sets the fail_message of this HtapInstanceListInstanceState.
 
         HTAP实例创建失败错误信息。
 
@@ -130,7 +130,7 @@ class HtapInstanceListInstanceState:
 
     @property
     def wait_restart_for_params(self):
-        """Gets the wait_restart_for_params of this HtapInstanceListInstanceState.
+        r"""Gets the wait_restart_for_params of this HtapInstanceListInstanceState.
 
         是否需要重启更新参数。
 
@@ -141,7 +141,7 @@ class HtapInstanceListInstanceState:
 
     @wait_restart_for_params.setter
     def wait_restart_for_params(self, wait_restart_for_params):
-        """Sets the wait_restart_for_params of this HtapInstanceListInstanceState.
+        r"""Sets the wait_restart_for_params of this HtapInstanceListInstanceState.
 
         是否需要重启更新参数。
 

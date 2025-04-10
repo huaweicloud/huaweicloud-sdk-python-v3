@@ -27,7 +27,7 @@ class VaultBatchUpdate:
     }
 
     def __init__(self, smn_notify=None, threshold=None):
-        """VaultBatchUpdate
+        r"""VaultBatchUpdate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VaultBatchUpdate:
 
     @property
     def smn_notify(self):
-        """Gets the smn_notify of this VaultBatchUpdate.
+        r"""Gets the smn_notify of this VaultBatchUpdate.
 
         存储库smn消息通知开关
 
@@ -61,7 +61,7 @@ class VaultBatchUpdate:
 
     @smn_notify.setter
     def smn_notify(self, smn_notify):
-        """Sets the smn_notify of this VaultBatchUpdate.
+        r"""Sets the smn_notify of this VaultBatchUpdate.
 
         存储库smn消息通知开关
 
@@ -72,7 +72,7 @@ class VaultBatchUpdate:
 
     @property
     def threshold(self):
-        """Gets the threshold of this VaultBatchUpdate.
+        r"""Gets the threshold of this VaultBatchUpdate.
 
         存储库容量阈值
 
@@ -83,7 +83,7 @@ class VaultBatchUpdate:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this VaultBatchUpdate.
+        r"""Sets the threshold of this VaultBatchUpdate.
 
         存储库容量阈值
 

@@ -23,7 +23,7 @@ class CinderListVolumeTypesRequest:
     }
 
     def __init__(self):
-        """CinderListVolumeTypesRequest
+        r"""CinderListVolumeTypesRequest
 
         The model defined in huaweicloud sdk
 

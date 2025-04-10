@@ -39,7 +39,7 @@ class ListProPricePlansRequest:
     }
 
     def __init__(self, limit=None, offset=None, main_search_key=None, flow_total=None, network_type=None, location_type=None, carrier_type=None, country_type=None):
-        """ListProPricePlansRequest
+        r"""ListProPricePlansRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListProPricePlansRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProPricePlansRequest.
+        r"""Gets the limit of this ListProPricePlansRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -103,7 +103,7 @@ class ListProPricePlansRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProPricePlansRequest.
+        r"""Sets the limit of this ListProPricePlansRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -114,7 +114,7 @@ class ListProPricePlansRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProPricePlansRequest.
+        r"""Gets the offset of this ListProPricePlansRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -125,7 +125,7 @@ class ListProPricePlansRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProPricePlansRequest.
+        r"""Sets the offset of this ListProPricePlansRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -136,7 +136,7 @@ class ListProPricePlansRequest:
 
     @property
     def main_search_key(self):
-        """Gets the main_search_key of this ListProPricePlansRequest.
+        r"""Gets the main_search_key of this ListProPricePlansRequest.
 
         查询关键标识类型：套餐名称 例如中国香港每月10M联接服务
 
@@ -147,7 +147,7 @@ class ListProPricePlansRequest:
 
     @main_search_key.setter
     def main_search_key(self, main_search_key):
-        """Sets the main_search_key of this ListProPricePlansRequest.
+        r"""Sets the main_search_key of this ListProPricePlansRequest.
 
         查询关键标识类型：套餐名称 例如中国香港每月10M联接服务
 
@@ -158,7 +158,7 @@ class ListProPricePlansRequest:
 
     @property
     def flow_total(self):
-        """Gets the flow_total of this ListProPricePlansRequest.
+        r"""Gets the flow_total of this ListProPricePlansRequest.
 
         流量总量(MB)
 
@@ -169,7 +169,7 @@ class ListProPricePlansRequest:
 
     @flow_total.setter
     def flow_total(self, flow_total):
-        """Sets the flow_total of this ListProPricePlansRequest.
+        r"""Sets the flow_total of this ListProPricePlansRequest.
 
         流量总量(MB)
 
@@ -180,7 +180,7 @@ class ListProPricePlansRequest:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ListProPricePlansRequest.
+        r"""Gets the network_type of this ListProPricePlansRequest.
 
         网络制式 1.2g,3g,4g 2.NB
 
@@ -191,7 +191,7 @@ class ListProPricePlansRequest:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ListProPricePlansRequest.
+        r"""Sets the network_type of this ListProPricePlansRequest.
 
         网络制式 1.2g,3g,4g 2.NB
 
@@ -202,7 +202,7 @@ class ListProPricePlansRequest:
 
     @property
     def location_type(self):
-        """Gets the location_type of this ListProPricePlansRequest.
+        r"""Gets the location_type of this ListProPricePlansRequest.
 
         覆盖区域:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲 5.  亚太
 
@@ -213,7 +213,7 @@ class ListProPricePlansRequest:
 
     @location_type.setter
     def location_type(self, location_type):
-        """Sets the location_type of this ListProPricePlansRequest.
+        r"""Sets the location_type of this ListProPricePlansRequest.
 
         覆盖区域:1.  中国 2.  欧洲 3.  大洋洲 4.  非洲 5.  亚太
 
@@ -224,7 +224,7 @@ class ListProPricePlansRequest:
 
     @property
     def carrier_type(self):
-        """Gets the carrier_type of this ListProPricePlansRequest.
+        r"""Gets the carrier_type of this ListProPricePlansRequest.
 
         运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉
 
@@ -235,7 +235,7 @@ class ListProPricePlansRequest:
 
     @carrier_type.setter
     def carrier_type(self, carrier_type):
-        """Sets the carrier_type of this ListProPricePlansRequest.
+        r"""Sets the carrier_type of this ListProPricePlansRequest.
 
         运营商 101/1 中国移动/中国移动（实体卡） 102/2中国电信/中国电信（实体卡） 3中国联通（实体卡） 201.欧洲 501.中国香港 502.中国澳门 503.泰国 504.日本 505.柬埔寨 506.印度尼西亚 507.马来西亚 508.新加坡 509.斯里兰卡 510.中国台湾 511.孟加拉
 
@@ -246,7 +246,7 @@ class ListProPricePlansRequest:
 
     @property
     def country_type(self):
-        """Gets the country_type of this ListProPricePlansRequest.
+        r"""Gets the country_type of this ListProPricePlansRequest.
 
         国家/地区 1中国香港，2中国澳门，3泰国，4日本，5，柬埔寨，6印尼，7马来西亚，8新加坡，9斯里兰卡，10中国台湾，11孟加拉
 
@@ -257,7 +257,7 @@ class ListProPricePlansRequest:
 
     @country_type.setter
     def country_type(self, country_type):
-        """Sets the country_type of this ListProPricePlansRequest.
+        r"""Sets the country_type of this ListProPricePlansRequest.
 
         国家/地区 1中国香港，2中国澳门，3泰国，4日本，5，柬埔寨，6印尼，7马来西亚，8新加坡，9斯里兰卡，10中国台湾，11孟加拉
 

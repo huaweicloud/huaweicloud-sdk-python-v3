@@ -27,7 +27,7 @@ class DeleteHotkeyScanTaskRequest:
     }
 
     def __init__(self, instance_id=None, hotkey_id=None):
-        """DeleteHotkeyScanTaskRequest
+        r"""DeleteHotkeyScanTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteHotkeyScanTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteHotkeyScanTaskRequest.
+        r"""Gets the instance_id of this DeleteHotkeyScanTaskRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteHotkeyScanTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteHotkeyScanTaskRequest.
+        r"""Sets the instance_id of this DeleteHotkeyScanTaskRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteHotkeyScanTaskRequest:
 
     @property
     def hotkey_id(self):
-        """Gets the hotkey_id of this DeleteHotkeyScanTaskRequest.
+        r"""Gets the hotkey_id of this DeleteHotkeyScanTaskRequest.
 
         热key分析任务ID。
 
@@ -81,7 +81,7 @@ class DeleteHotkeyScanTaskRequest:
 
     @hotkey_id.setter
     def hotkey_id(self, hotkey_id):
-        """Sets the hotkey_id of this DeleteHotkeyScanTaskRequest.
+        r"""Sets the hotkey_id of this DeleteHotkeyScanTaskRequest.
 
         热key分析任务ID。
 

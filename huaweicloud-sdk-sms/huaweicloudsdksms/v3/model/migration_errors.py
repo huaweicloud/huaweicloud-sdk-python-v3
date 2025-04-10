@@ -35,7 +35,7 @@ class MigrationErrors:
     }
 
     def __init__(self, error_json=None, host_name=None, name=None, source_id=None, source_ip=None, target_ip=None):
-        """MigrationErrors
+        r"""MigrationErrors
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MigrationErrors:
 
     @property
     def error_json(self):
-        """Gets the error_json of this MigrationErrors.
+        r"""Gets the error_json of this MigrationErrors.
 
         保存错误信息的json字符串
 
@@ -89,7 +89,7 @@ class MigrationErrors:
 
     @error_json.setter
     def error_json(self, error_json):
-        """Sets the error_json of this MigrationErrors.
+        r"""Sets the error_json of this MigrationErrors.
 
         保存错误信息的json字符串
 
@@ -100,7 +100,7 @@ class MigrationErrors:
 
     @property
     def host_name(self):
-        """Gets the host_name of this MigrationErrors.
+        r"""Gets the host_name of this MigrationErrors.
 
         主机名称（从用户系统获取，可能为空）
 
@@ -111,7 +111,7 @@ class MigrationErrors:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this MigrationErrors.
+        r"""Sets the host_name of this MigrationErrors.
 
         主机名称（从用户系统获取，可能为空）
 
@@ -122,7 +122,7 @@ class MigrationErrors:
 
     @property
     def name(self):
-        """Gets the name of this MigrationErrors.
+        r"""Gets the name of this MigrationErrors.
 
         源端在主机迁移服务中的名称
 
@@ -133,7 +133,7 @@ class MigrationErrors:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MigrationErrors.
+        r"""Sets the name of this MigrationErrors.
 
         源端在主机迁移服务中的名称
 
@@ -144,7 +144,7 @@ class MigrationErrors:
 
     @property
     def source_id(self):
-        """Gets the source_id of this MigrationErrors.
+        r"""Gets the source_id of this MigrationErrors.
 
         源端服务器ID
 
@@ -155,7 +155,7 @@ class MigrationErrors:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this MigrationErrors.
+        r"""Sets the source_id of this MigrationErrors.
 
         源端服务器ID
 
@@ -166,7 +166,7 @@ class MigrationErrors:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this MigrationErrors.
+        r"""Gets the source_ip of this MigrationErrors.
 
         源端服务器的ip
 
@@ -177,7 +177,7 @@ class MigrationErrors:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this MigrationErrors.
+        r"""Sets the source_ip of this MigrationErrors.
 
         源端服务器的ip
 
@@ -188,7 +188,7 @@ class MigrationErrors:
 
     @property
     def target_ip(self):
-        """Gets the target_ip of this MigrationErrors.
+        r"""Gets the target_ip of this MigrationErrors.
 
         目的端服务器的ip 
 
@@ -199,7 +199,7 @@ class MigrationErrors:
 
     @target_ip.setter
     def target_ip(self, target_ip):
-        """Sets the target_ip of this MigrationErrors.
+        r"""Sets the target_ip of this MigrationErrors.
 
         目的端服务器的ip 
 

@@ -33,7 +33,7 @@ class Member:
     }
 
     def __init__(self, tcs_need=None, channel_name=None, invited_orgs=None, invitor_info=None, invitee_info=None):
-        """Member
+        r"""Member
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Member:
 
     @property
     def tcs_need(self):
-        """Gets the tcs_need of this Member.
+        r"""Gets the tcs_need of this Member.
 
         是否支持可信
 
@@ -82,7 +82,7 @@ class Member:
 
     @tcs_need.setter
     def tcs_need(self, tcs_need):
-        """Sets the tcs_need of this Member.
+        r"""Sets the tcs_need of this Member.
 
         是否支持可信
 
@@ -93,7 +93,7 @@ class Member:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this Member.
+        r"""Gets the channel_name of this Member.
 
         通道名称
 
@@ -104,7 +104,7 @@ class Member:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this Member.
+        r"""Sets the channel_name of this Member.
 
         通道名称
 
@@ -115,7 +115,7 @@ class Member:
 
     @property
     def invited_orgs(self):
-        """Gets the invited_orgs of this Member.
+        r"""Gets the invited_orgs of this Member.
 
         被邀请的组织
 
@@ -126,7 +126,7 @@ class Member:
 
     @invited_orgs.setter
     def invited_orgs(self, invited_orgs):
-        """Sets the invited_orgs of this Member.
+        r"""Sets the invited_orgs of this Member.
 
         被邀请的组织
 
@@ -137,7 +137,7 @@ class Member:
 
     @property
     def invitor_info(self):
-        """Gets the invitor_info of this Member.
+        r"""Gets the invitor_info of this Member.
 
         :return: The invitor_info of this Member.
         :rtype: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
@@ -146,7 +146,7 @@ class Member:
 
     @invitor_info.setter
     def invitor_info(self, invitor_info):
-        """Sets the invitor_info of this Member.
+        r"""Sets the invitor_info of this Member.
 
         :param invitor_info: The invitor_info of this Member.
         :type invitor_info: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
@@ -155,7 +155,7 @@ class Member:
 
     @property
     def invitee_info(self):
-        """Gets the invitee_info of this Member.
+        r"""Gets the invitee_info of this Member.
 
         :return: The invitee_info of this Member.
         :rtype: :class:`huaweicloudsdkbcs.v2.MemberInvitee`
@@ -164,7 +164,7 @@ class Member:
 
     @invitee_info.setter
     def invitee_info(self, invitee_info):
-        """Sets the invitee_info of this Member.
+        r"""Sets the invitee_info of this Member.
 
         :param invitee_info: The invitee_info of this Member.
         :type invitee_info: :class:`huaweicloudsdkbcs.v2.MemberInvitee`

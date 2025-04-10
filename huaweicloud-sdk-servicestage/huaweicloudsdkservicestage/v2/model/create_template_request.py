@@ -25,7 +25,7 @@ class CreateTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTemplateRequest
+        r"""CreateTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTemplateRequest.
+        r"""Gets the body of this CreateTemplateRequest.
 
         :return: The body of this CreateTemplateRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateTemplate`
@@ -52,7 +52,7 @@ class CreateTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTemplateRequest.
+        r"""Sets the body of this CreateTemplateRequest.
 
         :param body: The body of this CreateTemplateRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.CreateTemplate`

@@ -35,7 +35,7 @@ class HistoryRecord:
     }
 
     def __init__(self, record_id=None, job_id=None, build_number=None, start_time=None, end_time=None, result=None):
-        """HistoryRecord
+        r"""HistoryRecord
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HistoryRecord:
 
     @property
     def record_id(self):
-        """Gets the record_id of this HistoryRecord.
+        r"""Gets the record_id of this HistoryRecord.
 
         构建记录id--唯一key
 
@@ -89,7 +89,7 @@ class HistoryRecord:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this HistoryRecord.
+        r"""Sets the record_id of this HistoryRecord.
 
         构建记录id--唯一key
 
@@ -100,7 +100,7 @@ class HistoryRecord:
 
     @property
     def job_id(self):
-        """Gets the job_id of this HistoryRecord.
+        r"""Gets the job_id of this HistoryRecord.
 
         任务id
 
@@ -111,7 +111,7 @@ class HistoryRecord:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this HistoryRecord.
+        r"""Sets the job_id of this HistoryRecord.
 
         任务id
 
@@ -122,7 +122,7 @@ class HistoryRecord:
 
     @property
     def build_number(self):
-        """Gets the build_number of this HistoryRecord.
+        r"""Gets the build_number of this HistoryRecord.
 
         构建编号
 
@@ -133,7 +133,7 @@ class HistoryRecord:
 
     @build_number.setter
     def build_number(self, build_number):
-        """Sets the build_number of this HistoryRecord.
+        r"""Sets the build_number of this HistoryRecord.
 
         构建编号
 
@@ -144,7 +144,7 @@ class HistoryRecord:
 
     @property
     def start_time(self):
-        """Gets the start_time of this HistoryRecord.
+        r"""Gets the start_time of this HistoryRecord.
 
         构建开始时间
 
@@ -155,7 +155,7 @@ class HistoryRecord:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this HistoryRecord.
+        r"""Sets the start_time of this HistoryRecord.
 
         构建开始时间
 
@@ -166,7 +166,7 @@ class HistoryRecord:
 
     @property
     def end_time(self):
-        """Gets the end_time of this HistoryRecord.
+        r"""Gets the end_time of this HistoryRecord.
 
         构建结束时间
 
@@ -177,7 +177,7 @@ class HistoryRecord:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this HistoryRecord.
+        r"""Sets the end_time of this HistoryRecord.
 
         构建结束时间
 
@@ -188,7 +188,7 @@ class HistoryRecord:
 
     @property
     def result(self):
-        """Gets the result of this HistoryRecord.
+        r"""Gets the result of this HistoryRecord.
 
         构建结果
 
@@ -199,7 +199,7 @@ class HistoryRecord:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this HistoryRecord.
+        r"""Sets the result of this HistoryRecord.
 
         构建结果
 

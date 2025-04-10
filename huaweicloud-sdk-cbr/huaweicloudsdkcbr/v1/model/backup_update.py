@@ -25,7 +25,7 @@ class BackupUpdate:
     }
 
     def __init__(self, name=None):
-        """BackupUpdate
+        r"""BackupUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BackupUpdate:
 
     @property
     def name(self):
-        """Gets the name of this BackupUpdate.
+        r"""Gets the name of this BackupUpdate.
 
         备份名称
 
@@ -54,7 +54,7 @@ class BackupUpdate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupUpdate.
+        r"""Sets the name of this BackupUpdate.
 
         备份名称
 

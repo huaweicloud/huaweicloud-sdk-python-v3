@@ -27,7 +27,7 @@ class ExportJobRequest:
     }
 
     def __init__(self, workspace=None, job_name=None):
-        """ExportJobRequest
+        r"""ExportJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExportJobRequest.
+        r"""Gets the workspace of this ExportJobRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class ExportJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExportJobRequest.
+        r"""Sets the workspace of this ExportJobRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class ExportJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ExportJobRequest.
+        r"""Gets the job_name of this ExportJobRequest.
 
         作业名称.
 
@@ -82,7 +82,7 @@ class ExportJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ExportJobRequest.
+        r"""Sets the job_name of this ExportJobRequest.
 
         作业名称.
 

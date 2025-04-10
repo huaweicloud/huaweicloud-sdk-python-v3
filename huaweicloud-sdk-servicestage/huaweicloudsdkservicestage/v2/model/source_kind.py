@@ -27,7 +27,7 @@ class SourceKind:
     }
 
     def __init__(self):
-        """SourceKind
+        r"""SourceKind
 
         The model defined in huaweicloud sdk
 

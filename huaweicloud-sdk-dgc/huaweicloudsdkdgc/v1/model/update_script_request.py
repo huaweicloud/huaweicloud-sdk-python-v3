@@ -29,7 +29,7 @@ class UpdateScriptRequest:
     }
 
     def __init__(self, workspace=None, script_name=None, body=None):
-        """UpdateScriptRequest
+        r"""UpdateScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateScriptRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateScriptRequest.
+        r"""Gets the workspace of this UpdateScriptRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class UpdateScriptRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateScriptRequest.
+        r"""Sets the workspace of this UpdateScriptRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class UpdateScriptRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this UpdateScriptRequest.
+        r"""Gets the script_name of this UpdateScriptRequest.
 
         :return: The script_name of this UpdateScriptRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class UpdateScriptRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this UpdateScriptRequest.
+        r"""Sets the script_name of this UpdateScriptRequest.
 
         :param script_name: The script_name of this UpdateScriptRequest.
         :type script_name: str
@@ -96,7 +96,7 @@ class UpdateScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScriptRequest.
+        r"""Gets the body of this UpdateScriptRequest.
 
         :return: The body of this UpdateScriptRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ScriptInfo`
@@ -105,7 +105,7 @@ class UpdateScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScriptRequest.
+        r"""Sets the body of this UpdateScriptRequest.
 
         :param body: The body of this UpdateScriptRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ScriptInfo`

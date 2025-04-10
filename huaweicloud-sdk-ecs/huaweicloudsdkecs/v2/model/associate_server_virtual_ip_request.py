@@ -27,7 +27,7 @@ class AssociateServerVirtualIpRequest:
     }
 
     def __init__(self, nic_id=None, body=None):
-        """AssociateServerVirtualIpRequest
+        r"""AssociateServerVirtualIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateServerVirtualIpRequest:
 
     @property
     def nic_id(self):
-        """Gets the nic_id of this AssociateServerVirtualIpRequest.
+        r"""Gets the nic_id of this AssociateServerVirtualIpRequest.
 
         云服务器网卡ID。
 
@@ -60,7 +60,7 @@ class AssociateServerVirtualIpRequest:
 
     @nic_id.setter
     def nic_id(self, nic_id):
-        """Sets the nic_id of this AssociateServerVirtualIpRequest.
+        r"""Sets the nic_id of this AssociateServerVirtualIpRequest.
 
         云服务器网卡ID。
 
@@ -71,7 +71,7 @@ class AssociateServerVirtualIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateServerVirtualIpRequest.
+        r"""Gets the body of this AssociateServerVirtualIpRequest.
 
         :return: The body of this AssociateServerVirtualIpRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`
@@ -80,7 +80,7 @@ class AssociateServerVirtualIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateServerVirtualIpRequest.
+        r"""Sets the body of this AssociateServerVirtualIpRequest.
 
         :param body: The body of this AssociateServerVirtualIpRequest.
         :type body: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`

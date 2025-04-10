@@ -27,7 +27,7 @@ class IssueItemSfV4Tracker:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueItemSfV4Tracker
+        r"""IssueItemSfV4Tracker
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueItemSfV4Tracker:
 
     @property
     def id(self):
-        """Gets the id of this IssueItemSfV4Tracker.
+        r"""Gets the id of this IssueItemSfV4Tracker.
 
         类型id
 
@@ -61,7 +61,7 @@ class IssueItemSfV4Tracker:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueItemSfV4Tracker.
+        r"""Sets the id of this IssueItemSfV4Tracker.
 
         类型id
 
@@ -72,7 +72,7 @@ class IssueItemSfV4Tracker:
 
     @property
     def name(self):
-        """Gets the name of this IssueItemSfV4Tracker.
+        r"""Gets the name of this IssueItemSfV4Tracker.
 
         类型名称
 
@@ -83,7 +83,7 @@ class IssueItemSfV4Tracker:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueItemSfV4Tracker.
+        r"""Sets the name of this IssueItemSfV4Tracker.
 
         类型名称
 

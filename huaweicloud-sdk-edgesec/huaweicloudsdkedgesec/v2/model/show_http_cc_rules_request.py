@@ -31,7 +31,7 @@ class ShowHttpCcRulesRequest:
     }
 
     def __init__(self, policy_id=None, name=None, page=None, pagesize=None):
-        """ShowHttpCcRulesRequest
+        r"""ShowHttpCcRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowHttpCcRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpCcRulesRequest.
+        r"""Gets the policy_id of this ShowHttpCcRulesRequest.
 
         策略id
 
@@ -74,7 +74,7 @@ class ShowHttpCcRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpCcRulesRequest.
+        r"""Sets the policy_id of this ShowHttpCcRulesRequest.
 
         策略id
 
@@ -85,7 +85,7 @@ class ShowHttpCcRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpCcRulesRequest.
+        r"""Gets the name of this ShowHttpCcRulesRequest.
 
         规则名称
 
@@ -96,7 +96,7 @@ class ShowHttpCcRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpCcRulesRequest.
+        r"""Sets the name of this ShowHttpCcRulesRequest.
 
         规则名称
 
@@ -107,7 +107,7 @@ class ShowHttpCcRulesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpCcRulesRequest.
+        r"""Gets the page of this ShowHttpCcRulesRequest.
 
         分页查询参数，第page页
 
@@ -118,7 +118,7 @@ class ShowHttpCcRulesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpCcRulesRequest.
+        r"""Sets the page of this ShowHttpCcRulesRequest.
 
         分页查询参数，第page页
 
@@ -129,7 +129,7 @@ class ShowHttpCcRulesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpCcRulesRequest.
+        r"""Gets the pagesize of this ShowHttpCcRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -140,7 +140,7 @@ class ShowHttpCcRulesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpCcRulesRequest.
+        r"""Sets the pagesize of this ShowHttpCcRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 

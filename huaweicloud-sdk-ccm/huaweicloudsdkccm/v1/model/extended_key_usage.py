@@ -33,7 +33,7 @@ class ExtendedKeyUsage:
     }
 
     def __init__(self, server_auth=None, client_auth=None, code_signing=None, email_protection=None, time_stamping=None):
-        """ExtendedKeyUsage
+        r"""ExtendedKeyUsage
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExtendedKeyUsage:
 
     @property
     def server_auth(self):
-        """Gets the server_auth of this ExtendedKeyUsage.
+        r"""Gets the server_auth of this ExtendedKeyUsage.
 
         服务器身份验证，OID为：1.3.6.1.5.5.7.3.1。 - **true** - **false** > 服务器证书请启用本增强型密钥用法，默认为false。
 
@@ -82,7 +82,7 @@ class ExtendedKeyUsage:
 
     @server_auth.setter
     def server_auth(self, server_auth):
-        """Sets the server_auth of this ExtendedKeyUsage.
+        r"""Sets the server_auth of this ExtendedKeyUsage.
 
         服务器身份验证，OID为：1.3.6.1.5.5.7.3.1。 - **true** - **false** > 服务器证书请启用本增强型密钥用法，默认为false。
 
@@ -93,7 +93,7 @@ class ExtendedKeyUsage:
 
     @property
     def client_auth(self):
-        """Gets the client_auth of this ExtendedKeyUsage.
+        r"""Gets the client_auth of this ExtendedKeyUsage.
 
         客户端身份验证，OID为：1.3.6.1.5.5.7.3.2。 - **true** - **false** > 客户端证书请启用本增强型密钥用法，默认为false。
 
@@ -104,7 +104,7 @@ class ExtendedKeyUsage:
 
     @client_auth.setter
     def client_auth(self, client_auth):
-        """Sets the client_auth of this ExtendedKeyUsage.
+        r"""Sets the client_auth of this ExtendedKeyUsage.
 
         客户端身份验证，OID为：1.3.6.1.5.5.7.3.2。 - **true** - **false** > 客户端证书请启用本增强型密钥用法，默认为false。
 
@@ -115,7 +115,7 @@ class ExtendedKeyUsage:
 
     @property
     def code_signing(self):
-        """Gets the code_signing of this ExtendedKeyUsage.
+        r"""Gets the code_signing of this ExtendedKeyUsage.
 
         代码签名，OID为：1.3.6.1.5.5.7.3.3。 - **true** - **false** > 签署可下载的可执行代码客户端认证，默认为false。
 
@@ -126,7 +126,7 @@ class ExtendedKeyUsage:
 
     @code_signing.setter
     def code_signing(self, code_signing):
-        """Sets the code_signing of this ExtendedKeyUsage.
+        r"""Sets the code_signing of this ExtendedKeyUsage.
 
         代码签名，OID为：1.3.6.1.5.5.7.3.3。 - **true** - **false** > 签署可下载的可执行代码客户端认证，默认为false。
 
@@ -137,7 +137,7 @@ class ExtendedKeyUsage:
 
     @property
     def email_protection(self):
-        """Gets the email_protection of this ExtendedKeyUsage.
+        r"""Gets the email_protection of this ExtendedKeyUsage.
 
         安全电子邮件，OID为：1.3.6.1.5.5.7.3.4。 - **true** - **false** > 电子邮件保护，默认为false。
 
@@ -148,7 +148,7 @@ class ExtendedKeyUsage:
 
     @email_protection.setter
     def email_protection(self, email_protection):
-        """Sets the email_protection of this ExtendedKeyUsage.
+        r"""Sets the email_protection of this ExtendedKeyUsage.
 
         安全电子邮件，OID为：1.3.6.1.5.5.7.3.4。 - **true** - **false** > 电子邮件保护，默认为false。
 
@@ -159,7 +159,7 @@ class ExtendedKeyUsage:
 
     @property
     def time_stamping(self):
-        """Gets the time_stamping of this ExtendedKeyUsage.
+        r"""Gets the time_stamping of this ExtendedKeyUsage.
 
         时间戳，OID为：1.3.6.1.5.5.7.3.8。 - **true** - **false** > 将一个对象的哈希绑定到一个时间，默认为false。
 
@@ -170,7 +170,7 @@ class ExtendedKeyUsage:
 
     @time_stamping.setter
     def time_stamping(self, time_stamping):
-        """Sets the time_stamping of this ExtendedKeyUsage.
+        r"""Sets the time_stamping of this ExtendedKeyUsage.
 
         时间戳，OID为：1.3.6.1.5.5.7.3.8。 - **true** - **false** > 将一个对象的哈希绑定到一个时间，默认为false。
 

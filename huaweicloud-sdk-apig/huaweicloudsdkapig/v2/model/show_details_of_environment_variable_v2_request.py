@@ -27,7 +27,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
     }
 
     def __init__(self, instance_id=None, env_variable_id=None):
-        """ShowDetailsOfEnvironmentVariableV2Request
+        r"""ShowDetailsOfEnvironmentVariableV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
 
     @property
     def env_variable_id(self):
-        """Gets the env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
+        r"""Gets the env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
         环境变量的编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
 
     @env_variable_id.setter
     def env_variable_id(self, env_variable_id):
-        """Sets the env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
+        r"""Sets the env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
         环境变量的编号
 

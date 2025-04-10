@@ -27,7 +27,7 @@ class BatchDeleteTestCaseRequestBody:
     }
 
     def __init__(self, service_id=None, testcase_id_list=None):
-        """BatchDeleteTestCaseRequestBody
+        r"""BatchDeleteTestCaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteTestCaseRequestBody:
 
     @property
     def service_id(self):
-        """Gets the service_id of this BatchDeleteTestCaseRequestBody.
+        r"""Gets the service_id of this BatchDeleteTestCaseRequestBody.
 
         注册测试类型服务接口返回的服务id，取值范围为10-9999
 
@@ -59,7 +59,7 @@ class BatchDeleteTestCaseRequestBody:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this BatchDeleteTestCaseRequestBody.
+        r"""Sets the service_id of this BatchDeleteTestCaseRequestBody.
 
         注册测试类型服务接口返回的服务id，取值范围为10-9999
 
@@ -70,7 +70,7 @@ class BatchDeleteTestCaseRequestBody:
 
     @property
     def testcase_id_list(self):
-        """Gets the testcase_id_list of this BatchDeleteTestCaseRequestBody.
+        r"""Gets the testcase_id_list of this BatchDeleteTestCaseRequestBody.
 
         测试用例唯一标识，数组长度小于50个
 
@@ -81,7 +81,7 @@ class BatchDeleteTestCaseRequestBody:
 
     @testcase_id_list.setter
     def testcase_id_list(self, testcase_id_list):
-        """Sets the testcase_id_list of this BatchDeleteTestCaseRequestBody.
+        r"""Sets the testcase_id_list of this BatchDeleteTestCaseRequestBody.
 
         测试用例唯一标识，数组长度小于50个
 

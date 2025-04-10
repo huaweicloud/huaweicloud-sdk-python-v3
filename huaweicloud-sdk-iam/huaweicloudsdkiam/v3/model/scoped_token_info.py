@@ -39,7 +39,7 @@ class ScopedTokenInfo:
     }
 
     def __init__(self, expires_at=None, methods=None, issued_at=None, user=None, domain=None, project=None, roles=None, catalog=None):
-        """ScopedTokenInfo
+        r"""ScopedTokenInfo
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ScopedTokenInfo:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this ScopedTokenInfo.
+        r"""Gets the expires_at of this ScopedTokenInfo.
 
         过期时间。
 
@@ -97,7 +97,7 @@ class ScopedTokenInfo:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this ScopedTokenInfo.
+        r"""Sets the expires_at of this ScopedTokenInfo.
 
         过期时间。
 
@@ -108,7 +108,7 @@ class ScopedTokenInfo:
 
     @property
     def methods(self):
-        """Gets the methods of this ScopedTokenInfo.
+        r"""Gets the methods of this ScopedTokenInfo.
 
         获取token的方式，联邦用户默认为mapped。
 
@@ -119,7 +119,7 @@ class ScopedTokenInfo:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this ScopedTokenInfo.
+        r"""Sets the methods of this ScopedTokenInfo.
 
         获取token的方式，联邦用户默认为mapped。
 
@@ -130,7 +130,7 @@ class ScopedTokenInfo:
 
     @property
     def issued_at(self):
-        """Gets the issued_at of this ScopedTokenInfo.
+        r"""Gets the issued_at of this ScopedTokenInfo.
 
         生成时间。
 
@@ -141,7 +141,7 @@ class ScopedTokenInfo:
 
     @issued_at.setter
     def issued_at(self, issued_at):
-        """Sets the issued_at of this ScopedTokenInfo.
+        r"""Sets the issued_at of this ScopedTokenInfo.
 
         生成时间。
 
@@ -152,7 +152,7 @@ class ScopedTokenInfo:
 
     @property
     def user(self):
-        """Gets the user of this ScopedTokenInfo.
+        r"""Gets the user of this ScopedTokenInfo.
 
         :return: The user of this ScopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.FederationUserBody`
@@ -161,7 +161,7 @@ class ScopedTokenInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ScopedTokenInfo.
+        r"""Sets the user of this ScopedTokenInfo.
 
         :param user: The user of this ScopedTokenInfo.
         :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
@@ -170,7 +170,7 @@ class ScopedTokenInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this ScopedTokenInfo.
+        r"""Gets the domain of this ScopedTokenInfo.
 
         :return: The domain of this ScopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -179,7 +179,7 @@ class ScopedTokenInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ScopedTokenInfo.
+        r"""Sets the domain of this ScopedTokenInfo.
 
         :param domain: The domain of this ScopedTokenInfo.
         :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -188,7 +188,7 @@ class ScopedTokenInfo:
 
     @property
     def project(self):
-        """Gets the project of this ScopedTokenInfo.
+        r"""Gets the project of this ScopedTokenInfo.
 
         :return: The project of this ScopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.ProjectInfo`
@@ -197,7 +197,7 @@ class ScopedTokenInfo:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ScopedTokenInfo.
+        r"""Sets the project of this ScopedTokenInfo.
 
         :param project: The project of this ScopedTokenInfo.
         :type project: :class:`huaweicloudsdkiam.v3.ProjectInfo`
@@ -206,7 +206,7 @@ class ScopedTokenInfo:
 
     @property
     def roles(self):
-        """Gets the roles of this ScopedTokenInfo.
+        r"""Gets the roles of this ScopedTokenInfo.
 
         roles信息。
 
@@ -217,7 +217,7 @@ class ScopedTokenInfo:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ScopedTokenInfo.
+        r"""Sets the roles of this ScopedTokenInfo.
 
         roles信息。
 
@@ -228,7 +228,7 @@ class ScopedTokenInfo:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ScopedTokenInfo.
+        r"""Gets the catalog of this ScopedTokenInfo.
 
         catalog信息
 
@@ -239,7 +239,7 @@ class ScopedTokenInfo:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ScopedTokenInfo.
+        r"""Sets the catalog of this ScopedTokenInfo.
 
         catalog信息
 

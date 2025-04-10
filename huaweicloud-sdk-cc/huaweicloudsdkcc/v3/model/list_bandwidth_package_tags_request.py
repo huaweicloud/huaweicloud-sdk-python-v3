@@ -23,7 +23,7 @@ class ListBandwidthPackageTagsRequest:
     }
 
     def __init__(self):
-        """ListBandwidthPackageTagsRequest
+        r"""ListBandwidthPackageTagsRequest
 
         The model defined in huaweicloud sdk
 

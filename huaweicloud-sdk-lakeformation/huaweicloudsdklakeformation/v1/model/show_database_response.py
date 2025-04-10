@@ -44,7 +44,7 @@ class ShowDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, catalog_name=None, database_name=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
-        """ShowDatabaseResponse
+        r"""ShowDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowDatabaseResponse.
+        r"""Gets the catalog_name of this ShowDatabaseResponse.
 
         catalog名称
 
@@ -118,7 +118,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowDatabaseResponse.
+        r"""Sets the catalog_name of this ShowDatabaseResponse.
 
         catalog名称
 
@@ -129,7 +129,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowDatabaseResponse.
+        r"""Gets the database_name of this ShowDatabaseResponse.
 
         数据库名称
 
@@ -140,7 +140,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowDatabaseResponse.
+        r"""Sets the database_name of this ShowDatabaseResponse.
 
         数据库名称
 
@@ -151,7 +151,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowDatabaseResponse.
+        r"""Gets the owner of this ShowDatabaseResponse.
 
         数据库所有者
 
@@ -162,7 +162,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowDatabaseResponse.
+        r"""Sets the owner of this ShowDatabaseResponse.
 
         数据库所有者
 
@@ -173,7 +173,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def owner_type(self):
-        """Gets the owner_type of this ShowDatabaseResponse.
+        r"""Gets the owner_type of this ShowDatabaseResponse.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -184,7 +184,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @owner_type.setter
     def owner_type(self, owner_type):
-        """Sets the owner_type of this ShowDatabaseResponse.
+        r"""Sets the owner_type of this ShowDatabaseResponse.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -195,7 +195,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def owner_auth_source_type(self):
-        """Gets the owner_auth_source_type of this ShowDatabaseResponse.
+        r"""Gets the owner_auth_source_type of this ShowDatabaseResponse.
 
         所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -206,7 +206,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @owner_auth_source_type.setter
     def owner_auth_source_type(self, owner_auth_source_type):
-        """Sets the owner_auth_source_type of this ShowDatabaseResponse.
+        r"""Sets the owner_auth_source_type of this ShowDatabaseResponse.
 
         所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
@@ -217,7 +217,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDatabaseResponse.
+        r"""Gets the description of this ShowDatabaseResponse.
 
         数据库描述信息
 
@@ -228,7 +228,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDatabaseResponse.
+        r"""Sets the description of this ShowDatabaseResponse.
 
         数据库描述信息
 
@@ -239,7 +239,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowDatabaseResponse.
+        r"""Gets the location of this ShowDatabaseResponse.
 
         数据库路径地址。例如obs://location/uri/
 
@@ -250,7 +250,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowDatabaseResponse.
+        r"""Sets the location of this ShowDatabaseResponse.
 
         数据库路径地址。例如obs://location/uri/
 
@@ -261,7 +261,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowDatabaseResponse.
+        r"""Gets the parameters of this ShowDatabaseResponse.
 
         参数信息
 
@@ -272,7 +272,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowDatabaseResponse.
+        r"""Sets the parameters of this ShowDatabaseResponse.
 
         参数信息
 
@@ -283,7 +283,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def table_location_list(self):
-        """Gets the table_location_list of this ShowDatabaseResponse.
+        r"""Gets the table_location_list of this ShowDatabaseResponse.
 
         表路径列表。LakeFormation服务分为一期和二期，一期响应Body无该参数，二期默认为null。当值为null时，响应Body无该参数。
 
@@ -294,7 +294,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @table_location_list.setter
     def table_location_list(self, table_location_list):
-        """Sets the table_location_list of this ShowDatabaseResponse.
+        r"""Sets the table_location_list of this ShowDatabaseResponse.
 
         表路径列表。LakeFormation服务分为一期和二期，一期响应Body无该参数，二期默认为null。当值为null时，响应Body无该参数。
 
@@ -305,7 +305,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @property
     def function_location_list(self):
-        """Gets the function_location_list of this ShowDatabaseResponse.
+        r"""Gets the function_location_list of this ShowDatabaseResponse.
 
         函数路径列表。默认为null，当值为null时，响应Body无该参数。
 
@@ -316,7 +316,7 @@ class ShowDatabaseResponse(SdkResponse):
 
     @function_location_list.setter
     def function_location_list(self, function_location_list):
-        """Sets the function_location_list of this ShowDatabaseResponse.
+        r"""Sets the function_location_list of this ShowDatabaseResponse.
 
         函数路径列表。默认为null，当值为null时，响应Body无该参数。
 

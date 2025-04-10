@@ -33,7 +33,7 @@ class ActionProgress:
     }
 
     def __init__(self, creating=None, growing=None, restoring=None, snapshotting=None, repairing=None):
-        """ActionProgress
+        r"""ActionProgress
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ActionProgress:
 
     @property
     def creating(self):
-        """Gets the creating of this ActionProgress.
+        r"""Gets the creating of this ActionProgress.
 
         创建集群进度，例如：29%
 
@@ -82,7 +82,7 @@ class ActionProgress:
 
     @creating.setter
     def creating(self, creating):
-        """Sets the creating of this ActionProgress.
+        r"""Sets the creating of this ActionProgress.
 
         创建集群进度，例如：29%
 
@@ -93,7 +93,7 @@ class ActionProgress:
 
     @property
     def growing(self):
-        """Gets the growing of this ActionProgress.
+        r"""Gets the growing of this ActionProgress.
 
         扩容集群进度，例如：29%
 
@@ -104,7 +104,7 @@ class ActionProgress:
 
     @growing.setter
     def growing(self, growing):
-        """Sets the growing of this ActionProgress.
+        r"""Sets the growing of this ActionProgress.
 
         扩容集群进度，例如：29%
 
@@ -115,7 +115,7 @@ class ActionProgress:
 
     @property
     def restoring(self):
-        """Gets the restoring of this ActionProgress.
+        r"""Gets the restoring of this ActionProgress.
 
         恢复集群进度，例如：29%
 
@@ -126,7 +126,7 @@ class ActionProgress:
 
     @restoring.setter
     def restoring(self, restoring):
-        """Sets the restoring of this ActionProgress.
+        r"""Sets the restoring of this ActionProgress.
 
         恢复集群进度，例如：29%
 
@@ -137,7 +137,7 @@ class ActionProgress:
 
     @property
     def snapshotting(self):
-        """Gets the snapshotting of this ActionProgress.
+        r"""Gets the snapshotting of this ActionProgress.
 
         集群快照进度，例如：29%
 
@@ -148,7 +148,7 @@ class ActionProgress:
 
     @snapshotting.setter
     def snapshotting(self, snapshotting):
-        """Sets the snapshotting of this ActionProgress.
+        r"""Sets the snapshotting of this ActionProgress.
 
         集群快照进度，例如：29%
 
@@ -159,7 +159,7 @@ class ActionProgress:
 
     @property
     def repairing(self):
-        """Gets the repairing of this ActionProgress.
+        r"""Gets the repairing of this ActionProgress.
 
         修复集群进度，例如：29%
 
@@ -170,7 +170,7 @@ class ActionProgress:
 
     @repairing.setter
     def repairing(self, repairing):
-        """Sets the repairing of this ActionProgress.
+        r"""Sets the repairing of this ActionProgress.
 
         修复集群进度，例如：29%
 

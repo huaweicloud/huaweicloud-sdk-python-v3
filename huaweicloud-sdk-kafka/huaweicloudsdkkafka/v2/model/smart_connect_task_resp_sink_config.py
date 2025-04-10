@@ -63,7 +63,7 @@ class SmartConnectTaskRespSinkConfig:
     }
 
     def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, target_db=None, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None, obs_part_size=None, flush_size=None, timezone=None, schema_generator_class=None, partitioner_class=None, value_converter=None, key_converter=None, kv_delimiter=None):
-        """SmartConnectTaskRespSinkConfig
+        r"""SmartConnectTaskRespSinkConfig
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def redis_address(self):
-        """Gets the redis_address of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the redis_address of this SmartConnectTaskRespSinkConfig.
 
         Redis实例地址。（仅目标端类型为Redis时会显示）
 
@@ -187,7 +187,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @redis_address.setter
     def redis_address(self, redis_address):
-        """Sets the redis_address of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the redis_address of this SmartConnectTaskRespSinkConfig.
 
         Redis实例地址。（仅目标端类型为Redis时会显示）
 
@@ -198,7 +198,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def redis_type(self):
-        """Gets the redis_type of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the redis_type of this SmartConnectTaskRespSinkConfig.
 
         Redis实例类型。（仅目标端类型为Redis时会显示）
 
@@ -209,7 +209,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @redis_type.setter
     def redis_type(self, redis_type):
-        """Sets the redis_type of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the redis_type of this SmartConnectTaskRespSinkConfig.
 
         Redis实例类型。（仅目标端类型为Redis时会显示）
 
@@ -220,7 +220,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def dcs_instance_id(self):
-        """Gets the dcs_instance_id of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the dcs_instance_id of this SmartConnectTaskRespSinkConfig.
 
         DCS实例ID。（仅目标端类型为Redis时会显示）
 
@@ -231,7 +231,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @dcs_instance_id.setter
     def dcs_instance_id(self, dcs_instance_id):
-        """Sets the dcs_instance_id of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the dcs_instance_id of this SmartConnectTaskRespSinkConfig.
 
         DCS实例ID。（仅目标端类型为Redis时会显示）
 
@@ -242,7 +242,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def target_db(self):
-        """Gets the target_db of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the target_db of this SmartConnectTaskRespSinkConfig.
 
         目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
 
@@ -253,7 +253,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @target_db.setter
     def target_db(self, target_db):
-        """Sets the target_db of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the target_db of this SmartConnectTaskRespSinkConfig.
 
         目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
 
@@ -264,7 +264,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the consumer_strategy of this SmartConnectTaskRespSinkConfig.
 
         转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
 
@@ -275,7 +275,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the consumer_strategy of this SmartConnectTaskRespSinkConfig.
 
         转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
 
@@ -286,7 +286,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def destination_file_type(self):
-        """Gets the destination_file_type of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the destination_file_type of this SmartConnectTaskRespSinkConfig.
 
         转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
 
@@ -297,7 +297,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @destination_file_type.setter
     def destination_file_type(self, destination_file_type):
-        """Sets the destination_file_type of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the destination_file_type of this SmartConnectTaskRespSinkConfig.
 
         转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
 
@@ -308,7 +308,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def deliver_time_interval(self):
-        """Gets the deliver_time_interval of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the deliver_time_interval of this SmartConnectTaskRespSinkConfig.
 
         记数据转储周期（秒）。（仅目标端类型为OBS时会显示）
 
@@ -319,7 +319,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @deliver_time_interval.setter
     def deliver_time_interval(self, deliver_time_interval):
-        """Sets the deliver_time_interval of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the deliver_time_interval of this SmartConnectTaskRespSinkConfig.
 
         记数据转储周期（秒）。（仅目标端类型为OBS时会显示）
 
@@ -330,7 +330,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the obs_bucket_name of this SmartConnectTaskRespSinkConfig.
 
         转储地址。（仅目标端类型为OBS时会显示）
 
@@ -341,7 +341,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the obs_bucket_name of this SmartConnectTaskRespSinkConfig.
 
         转储地址。（仅目标端类型为OBS时会显示）
 
@@ -352,7 +352,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def obs_path(self):
-        """Gets the obs_path of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the obs_path of this SmartConnectTaskRespSinkConfig.
 
         转储目录。（仅目标端类型为OBS时会显示）
 
@@ -363,7 +363,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @obs_path.setter
     def obs_path(self, obs_path):
-        """Sets the obs_path of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the obs_path of this SmartConnectTaskRespSinkConfig.
 
         转储目录。（仅目标端类型为OBS时会显示）
 
@@ -374,7 +374,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def partition_format(self):
-        """Gets the partition_format of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the partition_format of this SmartConnectTaskRespSinkConfig.
 
         时间目录格式。（仅目标端类型为OBS时会显示）
 
@@ -385,7 +385,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @partition_format.setter
     def partition_format(self, partition_format):
-        """Sets the partition_format of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the partition_format of this SmartConnectTaskRespSinkConfig.
 
         时间目录格式。（仅目标端类型为OBS时会显示）
 
@@ -396,7 +396,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def record_delimiter(self):
-        """Gets the record_delimiter of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the record_delimiter of this SmartConnectTaskRespSinkConfig.
 
         记录分行符。（仅目标端类型为OBS时会显示）
 
@@ -407,7 +407,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @record_delimiter.setter
     def record_delimiter(self, record_delimiter):
-        """Sets the record_delimiter of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the record_delimiter of this SmartConnectTaskRespSinkConfig.
 
         记录分行符。（仅目标端类型为OBS时会显示）
 
@@ -418,7 +418,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def store_keys(self):
-        """Gets the store_keys of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the store_keys of this SmartConnectTaskRespSinkConfig.
 
         存储Key。（仅目标端类型为OBS时会显示）
 
@@ -429,7 +429,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @store_keys.setter
     def store_keys(self, store_keys):
-        """Sets the store_keys of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the store_keys of this SmartConnectTaskRespSinkConfig.
 
         存储Key。（仅目标端类型为OBS时会显示）
 
@@ -440,7 +440,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def obs_part_size(self):
-        """Gets the obs_part_size of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the obs_part_size of this SmartConnectTaskRespSinkConfig.
 
         每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示）
 
@@ -451,7 +451,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @obs_part_size.setter
     def obs_part_size(self, obs_part_size):
-        """Sets the obs_part_size of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the obs_part_size of this SmartConnectTaskRespSinkConfig.
 
         每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示）
 
@@ -462,7 +462,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def flush_size(self):
-        """Gets the flush_size of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the flush_size of this SmartConnectTaskRespSinkConfig.
 
         flush_size。（仅目标端类型为OBS时会显示）
 
@@ -473,7 +473,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @flush_size.setter
     def flush_size(self, flush_size):
-        """Sets the flush_size of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the flush_size of this SmartConnectTaskRespSinkConfig.
 
         flush_size。（仅目标端类型为OBS时会显示）
 
@@ -484,7 +484,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def timezone(self):
-        """Gets the timezone of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the timezone of this SmartConnectTaskRespSinkConfig.
 
         时区。（仅目标端类型为OBS时会显示）
 
@@ -495,7 +495,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the timezone of this SmartConnectTaskRespSinkConfig.
 
         时区。（仅目标端类型为OBS时会显示）
 
@@ -506,7 +506,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def schema_generator_class(self):
-        """Gets the schema_generator_class of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the schema_generator_class of this SmartConnectTaskRespSinkConfig.
 
         schema_generator类，默认为\"io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\"。（仅目标端类型为OBS时会显示）
 
@@ -517,7 +517,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @schema_generator_class.setter
     def schema_generator_class(self, schema_generator_class):
-        """Sets the schema_generator_class of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the schema_generator_class of this SmartConnectTaskRespSinkConfig.
 
         schema_generator类，默认为\"io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\"。（仅目标端类型为OBS时会显示）
 
@@ -528,7 +528,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def partitioner_class(self):
-        """Gets the partitioner_class of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the partitioner_class of this SmartConnectTaskRespSinkConfig.
 
         partitioner类，默认\"io.confluent.connect.storage.partitioner.TimeBasedPartitioner\"。（仅目标端类型为OBS时会显示）
 
@@ -539,7 +539,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @partitioner_class.setter
     def partitioner_class(self, partitioner_class):
-        """Sets the partitioner_class of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the partitioner_class of this SmartConnectTaskRespSinkConfig.
 
         partitioner类，默认\"io.confluent.connect.storage.partitioner.TimeBasedPartitioner\"。（仅目标端类型为OBS时会显示）
 
@@ -550,7 +550,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def value_converter(self):
-        """Gets the value_converter of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the value_converter of this SmartConnectTaskRespSinkConfig.
 
         value_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
 
@@ -561,7 +561,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @value_converter.setter
     def value_converter(self, value_converter):
-        """Sets the value_converter of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the value_converter of this SmartConnectTaskRespSinkConfig.
 
         value_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
 
@@ -572,7 +572,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def key_converter(self):
-        """Gets the key_converter of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the key_converter of this SmartConnectTaskRespSinkConfig.
 
         key_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
 
@@ -583,7 +583,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @key_converter.setter
     def key_converter(self, key_converter):
-        """Sets the key_converter of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the key_converter of this SmartConnectTaskRespSinkConfig.
 
         key_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
 
@@ -594,7 +594,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @property
     def kv_delimiter(self):
-        """Gets the kv_delimiter of this SmartConnectTaskRespSinkConfig.
+        r"""Gets the kv_delimiter of this SmartConnectTaskRespSinkConfig.
 
         kv_delimiter，默认为\":\"。（仅目标端类型为OBS时会显示）
 
@@ -605,7 +605,7 @@ class SmartConnectTaskRespSinkConfig:
 
     @kv_delimiter.setter
     def kv_delimiter(self, kv_delimiter):
-        """Sets the kv_delimiter of this SmartConnectTaskRespSinkConfig.
+        r"""Sets the kv_delimiter of this SmartConnectTaskRespSinkConfig.
 
         kv_delimiter，默认为\":\"。（仅目标端类型为OBS时会显示）
 

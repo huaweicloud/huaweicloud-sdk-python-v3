@@ -25,7 +25,7 @@ class VpcEgressRequestBodySpec:
     }
 
     def __init__(self, cidrs=None):
-        """VpcEgressRequestBodySpec
+        r"""VpcEgressRequestBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VpcEgressRequestBodySpec:
 
     @property
     def cidrs(self):
-        """Gets the cidrs of this VpcEgressRequestBodySpec.
+        r"""Gets the cidrs of this VpcEgressRequestBodySpec.
 
         CAE环境访问VPC配置。
 
@@ -53,7 +53,7 @@ class VpcEgressRequestBodySpec:
 
     @cidrs.setter
     def cidrs(self, cidrs):
-        """Sets the cidrs of this VpcEgressRequestBodySpec.
+        r"""Sets the cidrs of this VpcEgressRequestBodySpec.
 
         CAE环境访问VPC配置。
 

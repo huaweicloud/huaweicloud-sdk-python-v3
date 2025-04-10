@@ -29,7 +29,7 @@ class CreateSourceRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """CreateSourceRequest
+        r"""CreateSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSourceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSourceRequest.
+        r"""Gets the instance_id of this CreateSourceRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateSourceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSourceRequest.
+        r"""Sets the instance_id of this CreateSourceRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateSourceRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this CreateSourceRequest.
+        r"""Gets the rule_id of this CreateSourceRequest.
 
         规则ID
 
@@ -88,7 +88,7 @@ class CreateSourceRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this CreateSourceRequest.
+        r"""Sets the rule_id of this CreateSourceRequest.
 
         规则ID
 
@@ -99,7 +99,7 @@ class CreateSourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSourceRequest.
+        r"""Gets the body of this CreateSourceRequest.
 
         :return: The body of this CreateSourceRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSourceRequestBody`
@@ -108,7 +108,7 @@ class CreateSourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSourceRequest.
+        r"""Sets the body of this CreateSourceRequest.
 
         :param body: The body of this CreateSourceRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateSourceRequestBody`

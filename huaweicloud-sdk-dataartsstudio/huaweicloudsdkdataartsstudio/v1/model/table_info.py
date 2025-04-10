@@ -29,7 +29,7 @@ class TableInfo:
     }
 
     def __init__(self, database=None, schema=None, table=None):
-        """TableInfo
+        r"""TableInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TableInfo:
 
     @property
     def database(self):
-        """Gets the database of this TableInfo.
+        r"""Gets the database of this TableInfo.
 
         数据库名称
 
@@ -68,7 +68,7 @@ class TableInfo:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this TableInfo.
+        r"""Sets the database of this TableInfo.
 
         数据库名称
 
@@ -79,7 +79,7 @@ class TableInfo:
 
     @property
     def schema(self):
-        """Gets the schema of this TableInfo.
+        r"""Gets the schema of this TableInfo.
 
         逻辑库名称
 
@@ -90,7 +90,7 @@ class TableInfo:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this TableInfo.
+        r"""Sets the schema of this TableInfo.
 
         逻辑库名称
 
@@ -101,7 +101,7 @@ class TableInfo:
 
     @property
     def table(self):
-        """Gets the table of this TableInfo.
+        r"""Gets the table of this TableInfo.
 
         表名称
 
@@ -112,7 +112,7 @@ class TableInfo:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this TableInfo.
+        r"""Sets the table of this TableInfo.
 
         表名称
 

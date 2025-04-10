@@ -26,7 +26,7 @@ class SetAutoUpgradePolicyResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SetAutoUpgradePolicyResponse
+        r"""SetAutoUpgradePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetAutoUpgradePolicyResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this SetAutoUpgradePolicyResponse.
+        r"""Gets the resp of this SetAutoUpgradePolicyResponse.
 
         响应结果
 
@@ -55,7 +55,7 @@ class SetAutoUpgradePolicyResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this SetAutoUpgradePolicyResponse.
+        r"""Sets the resp of this SetAutoUpgradePolicyResponse.
 
         响应结果
 

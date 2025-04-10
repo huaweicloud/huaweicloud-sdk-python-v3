@@ -27,7 +27,7 @@ class InputResponse:
     }
 
     def __init__(self, name=None, property_reference=None):
-        """InputResponse
+        r"""InputResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InputResponse:
 
     @property
     def name(self):
-        """Gets the name of this InputResponse.
+        r"""Gets the name of this InputResponse.
 
         参数名
 
@@ -61,7 +61,7 @@ class InputResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InputResponse.
+        r"""Sets the name of this InputResponse.
 
         参数名
 
@@ -72,7 +72,7 @@ class InputResponse:
 
     @property
     def property_reference(self):
-        """Gets the property_reference of this InputResponse.
+        r"""Gets the property_reference of this InputResponse.
 
         :return: The property_reference of this InputResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceResponse`
@@ -81,7 +81,7 @@ class InputResponse:
 
     @property_reference.setter
     def property_reference(self, property_reference):
-        """Sets the property_reference of this InputResponse.
+        r"""Sets the property_reference of this InputResponse.
 
         :param property_reference: The property_reference of this InputResponse.
         :type property_reference: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceResponse`

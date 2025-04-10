@@ -27,7 +27,7 @@ class ListSystemTasksRequest:
     }
 
     def __init__(self, workspace=None, task_id=None):
-        """ListSystemTasksRequest
+        r"""ListSystemTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSystemTasksRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSystemTasksRequest.
+        r"""Gets the workspace of this ListSystemTasksRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class ListSystemTasksRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSystemTasksRequest.
+        r"""Sets the workspace of this ListSystemTasksRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class ListSystemTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListSystemTasksRequest.
+        r"""Gets the task_id of this ListSystemTasksRequest.
 
         系统任务id.
 
@@ -82,7 +82,7 @@ class ListSystemTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListSystemTasksRequest.
+        r"""Sets the task_id of this ListSystemTasksRequest.
 
         系统任务id.
 

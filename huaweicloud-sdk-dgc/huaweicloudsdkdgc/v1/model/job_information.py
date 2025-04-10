@@ -29,7 +29,7 @@ class JobInformation:
     }
 
     def __init__(self, work_space=None, job_name=None, job_id=None):
-        """JobInformation
+        r"""JobInformation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobInformation:
 
     @property
     def work_space(self):
-        """Gets the work_space of this JobInformation.
+        r"""Gets the work_space of this JobInformation.
 
         下游作业的工作空间名称
 
@@ -68,7 +68,7 @@ class JobInformation:
 
     @work_space.setter
     def work_space(self, work_space):
-        """Sets the work_space of this JobInformation.
+        r"""Sets the work_space of this JobInformation.
 
         下游作业的工作空间名称
 
@@ -79,7 +79,7 @@ class JobInformation:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobInformation.
+        r"""Gets the job_name of this JobInformation.
 
         下游作业名称
 
@@ -90,7 +90,7 @@ class JobInformation:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobInformation.
+        r"""Sets the job_name of this JobInformation.
 
         下游作业名称
 
@@ -101,7 +101,7 @@ class JobInformation:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobInformation.
+        r"""Gets the job_id of this JobInformation.
 
         下游作业ID
 
@@ -112,7 +112,7 @@ class JobInformation:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobInformation.
+        r"""Sets the job_id of this JobInformation.
 
         下游作业ID
 

@@ -33,7 +33,7 @@ class PropertyReferenceResponse:
     }
 
     def __init__(self, type=None, asset_model_id=None, asset_model_name=None, property_name=None, asset_id=None):
-        """PropertyReferenceResponse
+        r"""PropertyReferenceResponse
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PropertyReferenceResponse:
 
     @property
     def type(self):
-        """Gets the type of this PropertyReferenceResponse.
+        r"""Gets the type of this PropertyReferenceResponse.
 
         属性引用类型，引用本资产属性（this）、引用其他资产属性（single）、引用子资产属性（children）
 
@@ -80,7 +80,7 @@ class PropertyReferenceResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PropertyReferenceResponse.
+        r"""Sets the type of this PropertyReferenceResponse.
 
         属性引用类型，引用本资产属性（this）、引用其他资产属性（single）、引用子资产属性（children）
 
@@ -91,7 +91,7 @@ class PropertyReferenceResponse:
 
     @property
     def asset_model_id(self):
-        """Gets the asset_model_id of this PropertyReferenceResponse.
+        r"""Gets the asset_model_id of this PropertyReferenceResponse.
 
         引用属性所属的资产模型ID，该字段仅当type为“引用其他资产属性”或“引用子资产属性”时有效；使用导入模型和导出模型接口时，该字段无效
 
@@ -102,7 +102,7 @@ class PropertyReferenceResponse:
 
     @asset_model_id.setter
     def asset_model_id(self, asset_model_id):
-        """Sets the asset_model_id of this PropertyReferenceResponse.
+        r"""Sets the asset_model_id of this PropertyReferenceResponse.
 
         引用属性所属的资产模型ID，该字段仅当type为“引用其他资产属性”或“引用子资产属性”时有效；使用导入模型和导出模型接口时，该字段无效
 
@@ -113,7 +113,7 @@ class PropertyReferenceResponse:
 
     @property
     def asset_model_name(self):
-        """Gets the asset_model_name of this PropertyReferenceResponse.
+        r"""Gets the asset_model_name of this PropertyReferenceResponse.
 
         引用属性所属的资产模型名称，请求中携带该字段时可以不携带asset_model_id字段
 
@@ -124,7 +124,7 @@ class PropertyReferenceResponse:
 
     @asset_model_name.setter
     def asset_model_name(self, asset_model_name):
-        """Sets the asset_model_name of this PropertyReferenceResponse.
+        r"""Sets the asset_model_name of this PropertyReferenceResponse.
 
         引用属性所属的资产模型名称，请求中携带该字段时可以不携带asset_model_id字段
 
@@ -135,7 +135,7 @@ class PropertyReferenceResponse:
 
     @property
     def property_name(self):
-        """Gets the property_name of this PropertyReferenceResponse.
+        r"""Gets the property_name of this PropertyReferenceResponse.
 
         引用属性的名称
 
@@ -146,7 +146,7 @@ class PropertyReferenceResponse:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this PropertyReferenceResponse.
+        r"""Sets the property_name of this PropertyReferenceResponse.
 
         引用属性的名称
 
@@ -157,7 +157,7 @@ class PropertyReferenceResponse:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this PropertyReferenceResponse.
+        r"""Gets the asset_id of this PropertyReferenceResponse.
 
         引用的资产ID，修改资产时携带null表示置空
 
@@ -168,7 +168,7 @@ class PropertyReferenceResponse:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this PropertyReferenceResponse.
+        r"""Sets the asset_id of this PropertyReferenceResponse.
 
         引用的资产ID，修改资产时携带null表示置空
 

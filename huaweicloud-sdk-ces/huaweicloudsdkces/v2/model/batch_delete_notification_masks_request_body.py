@@ -25,7 +25,7 @@ class BatchDeleteNotificationMasksRequestBody:
     }
 
     def __init__(self, notification_mask_ids=None):
-        """BatchDeleteNotificationMasksRequestBody
+        r"""BatchDeleteNotificationMasksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteNotificationMasksRequestBody:
 
     @property
     def notification_mask_ids(self):
-        """Gets the notification_mask_ids of this BatchDeleteNotificationMasksRequestBody.
+        r"""Gets the notification_mask_ids of this BatchDeleteNotificationMasksRequestBody.
 
         屏蔽规则编号
 
@@ -53,7 +53,7 @@ class BatchDeleteNotificationMasksRequestBody:
 
     @notification_mask_ids.setter
     def notification_mask_ids(self, notification_mask_ids):
-        """Sets the notification_mask_ids of this BatchDeleteNotificationMasksRequestBody.
+        r"""Sets the notification_mask_ids of this BatchDeleteNotificationMasksRequestBody.
 
         屏蔽规则编号
 

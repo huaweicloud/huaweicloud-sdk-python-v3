@@ -26,7 +26,7 @@ class PublishPluginBindResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """PublishPluginBindResponse
+        r"""PublishPluginBindResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PublishPluginBindResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this PublishPluginBindResponse.
+        r"""Gets the body of this PublishPluginBindResponse.
 
         :return: The body of this PublishPluginBindResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class PublishPluginBindResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishPluginBindResponse.
+        r"""Sets the body of this PublishPluginBindResponse.
 
         :param body: The body of this PublishPluginBindResponse.
         :type body: str

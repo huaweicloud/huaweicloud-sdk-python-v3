@@ -39,7 +39,7 @@ class NewExtensionInputs:
     }
 
     def __init__(self, name=None, type=None, label=None, description=None, default_value=None, required=None, extend_prop=None, validation=None):
-        """NewExtensionInputs
+        r"""NewExtensionInputs
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class NewExtensionInputs:
 
     @property
     def name(self):
-        """Gets the name of this NewExtensionInputs.
+        r"""Gets the name of this NewExtensionInputs.
 
         名称
 
@@ -103,7 +103,7 @@ class NewExtensionInputs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NewExtensionInputs.
+        r"""Sets the name of this NewExtensionInputs.
 
         名称
 
@@ -114,7 +114,7 @@ class NewExtensionInputs:
 
     @property
     def type(self):
-        """Gets the type of this NewExtensionInputs.
+        r"""Gets the type of this NewExtensionInputs.
 
         类型
 
@@ -125,7 +125,7 @@ class NewExtensionInputs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NewExtensionInputs.
+        r"""Sets the type of this NewExtensionInputs.
 
         类型
 
@@ -136,7 +136,7 @@ class NewExtensionInputs:
 
     @property
     def label(self):
-        """Gets the label of this NewExtensionInputs.
+        r"""Gets the label of this NewExtensionInputs.
 
         标签
 
@@ -147,7 +147,7 @@ class NewExtensionInputs:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this NewExtensionInputs.
+        r"""Sets the label of this NewExtensionInputs.
 
         标签
 
@@ -158,7 +158,7 @@ class NewExtensionInputs:
 
     @property
     def description(self):
-        """Gets the description of this NewExtensionInputs.
+        r"""Gets the description of this NewExtensionInputs.
 
         说明
 
@@ -169,7 +169,7 @@ class NewExtensionInputs:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NewExtensionInputs.
+        r"""Sets the description of this NewExtensionInputs.
 
         说明
 
@@ -180,7 +180,7 @@ class NewExtensionInputs:
 
     @property
     def default_value(self):
-        """Gets the default_value of this NewExtensionInputs.
+        r"""Gets the default_value of this NewExtensionInputs.
 
         默认值
 
@@ -191,7 +191,7 @@ class NewExtensionInputs:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this NewExtensionInputs.
+        r"""Sets the default_value of this NewExtensionInputs.
 
         默认值
 
@@ -202,7 +202,7 @@ class NewExtensionInputs:
 
     @property
     def required(self):
-        """Gets the required of this NewExtensionInputs.
+        r"""Gets the required of this NewExtensionInputs.
 
         必填
 
@@ -213,7 +213,7 @@ class NewExtensionInputs:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this NewExtensionInputs.
+        r"""Sets the required of this NewExtensionInputs.
 
         必填
 
@@ -224,7 +224,7 @@ class NewExtensionInputs:
 
     @property
     def extend_prop(self):
-        """Gets the extend_prop of this NewExtensionInputs.
+        r"""Gets the extend_prop of this NewExtensionInputs.
 
         :return: The extend_prop of this NewExtensionInputs.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionExtendProp`
@@ -233,7 +233,7 @@ class NewExtensionInputs:
 
     @extend_prop.setter
     def extend_prop(self, extend_prop):
-        """Sets the extend_prop of this NewExtensionInputs.
+        r"""Sets the extend_prop of this NewExtensionInputs.
 
         :param extend_prop: The extend_prop of this NewExtensionInputs.
         :type extend_prop: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionExtendProp`
@@ -242,7 +242,7 @@ class NewExtensionInputs:
 
     @property
     def validation(self):
-        """Gets the validation of this NewExtensionInputs.
+        r"""Gets the validation of this NewExtensionInputs.
 
         :return: The validation of this NewExtensionInputs.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionValidation`
@@ -251,7 +251,7 @@ class NewExtensionInputs:
 
     @validation.setter
     def validation(self, validation):
-        """Sets the validation of this NewExtensionInputs.
+        r"""Sets the validation of this NewExtensionInputs.
 
         :param validation: The validation of this NewExtensionInputs.
         :type validation: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionValidation`

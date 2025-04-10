@@ -34,7 +34,7 @@ class ShowAgentDetailResponse(SdkResponse):
     }
 
     def __init__(self, agent_deploy=None, agent_deploy_bcs=None, agent_deploy_detail=None, agent_deploy_nat=None, agent_deploy_node=None):
-        """ShowAgentDetailResponse
+        r"""ShowAgentDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @property
     def agent_deploy(self):
-        """Gets the agent_deploy of this ShowAgentDetailResponse.
+        r"""Gets the agent_deploy of this ShowAgentDetailResponse.
 
         :return: The agent_deploy of this ShowAgentDetailResponse.
         :rtype: :class:`huaweicloudsdktics.v1.TicsAgentDeploy`
@@ -81,7 +81,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @agent_deploy.setter
     def agent_deploy(self, agent_deploy):
-        """Sets the agent_deploy of this ShowAgentDetailResponse.
+        r"""Sets the agent_deploy of this ShowAgentDetailResponse.
 
         :param agent_deploy: The agent_deploy of this ShowAgentDetailResponse.
         :type agent_deploy: :class:`huaweicloudsdktics.v1.TicsAgentDeploy`
@@ -90,7 +90,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @property
     def agent_deploy_bcs(self):
-        """Gets the agent_deploy_bcs of this ShowAgentDetailResponse.
+        r"""Gets the agent_deploy_bcs of this ShowAgentDetailResponse.
 
         :return: The agent_deploy_bcs of this ShowAgentDetailResponse.
         :rtype: :class:`huaweicloudsdktics.v1.TicsAgentDeployBcs`
@@ -99,7 +99,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @agent_deploy_bcs.setter
     def agent_deploy_bcs(self, agent_deploy_bcs):
-        """Sets the agent_deploy_bcs of this ShowAgentDetailResponse.
+        r"""Sets the agent_deploy_bcs of this ShowAgentDetailResponse.
 
         :param agent_deploy_bcs: The agent_deploy_bcs of this ShowAgentDetailResponse.
         :type agent_deploy_bcs: :class:`huaweicloudsdktics.v1.TicsAgentDeployBcs`
@@ -108,7 +108,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @property
     def agent_deploy_detail(self):
-        """Gets the agent_deploy_detail of this ShowAgentDetailResponse.
+        r"""Gets the agent_deploy_detail of this ShowAgentDetailResponse.
 
         :return: The agent_deploy_detail of this ShowAgentDetailResponse.
         :rtype: :class:`huaweicloudsdktics.v1.TicsAgentDeployDetail`
@@ -117,7 +117,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @agent_deploy_detail.setter
     def agent_deploy_detail(self, agent_deploy_detail):
-        """Sets the agent_deploy_detail of this ShowAgentDetailResponse.
+        r"""Sets the agent_deploy_detail of this ShowAgentDetailResponse.
 
         :param agent_deploy_detail: The agent_deploy_detail of this ShowAgentDetailResponse.
         :type agent_deploy_detail: :class:`huaweicloudsdktics.v1.TicsAgentDeployDetail`
@@ -126,7 +126,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @property
     def agent_deploy_nat(self):
-        """Gets the agent_deploy_nat of this ShowAgentDetailResponse.
+        r"""Gets the agent_deploy_nat of this ShowAgentDetailResponse.
 
         :return: The agent_deploy_nat of this ShowAgentDetailResponse.
         :rtype: :class:`huaweicloudsdktics.v1.TicsAgentNatCommonInfo`
@@ -135,7 +135,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @agent_deploy_nat.setter
     def agent_deploy_nat(self, agent_deploy_nat):
-        """Sets the agent_deploy_nat of this ShowAgentDetailResponse.
+        r"""Sets the agent_deploy_nat of this ShowAgentDetailResponse.
 
         :param agent_deploy_nat: The agent_deploy_nat of this ShowAgentDetailResponse.
         :type agent_deploy_nat: :class:`huaweicloudsdktics.v1.TicsAgentNatCommonInfo`
@@ -144,7 +144,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @property
     def agent_deploy_node(self):
-        """Gets the agent_deploy_node of this ShowAgentDetailResponse.
+        r"""Gets the agent_deploy_node of this ShowAgentDetailResponse.
 
         :return: The agent_deploy_node of this ShowAgentDetailResponse.
         :rtype: :class:`huaweicloudsdktics.v1.TicsAgentNodeInfo`
@@ -153,7 +153,7 @@ class ShowAgentDetailResponse(SdkResponse):
 
     @agent_deploy_node.setter
     def agent_deploy_node(self, agent_deploy_node):
-        """Sets the agent_deploy_node of this ShowAgentDetailResponse.
+        r"""Sets the agent_deploy_node of this ShowAgentDetailResponse.
 
         :param agent_deploy_node: The agent_deploy_node of this ShowAgentDetailResponse.
         :type agent_deploy_node: :class:`huaweicloudsdktics.v1.TicsAgentNodeInfo`

@@ -25,7 +25,7 @@ class CoverInfo:
     }
 
     def __init__(self, cover_url=None):
-        """CoverInfo
+        r"""CoverInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CoverInfo:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this CoverInfo.
+        r"""Gets the cover_url of this CoverInfo.
 
         封面文件的下载地址。
 
@@ -54,7 +54,7 @@ class CoverInfo:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this CoverInfo.
+        r"""Sets the cover_url of this CoverInfo.
 
         封面文件的下载地址。
 

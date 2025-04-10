@@ -31,7 +31,7 @@ class PostCreateVocabReq:
     }
 
     def __init__(self, name=None, description=None, language=None, contents=None):
-        """PostCreateVocabReq
+        r"""PostCreateVocabReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PostCreateVocabReq:
 
     @property
     def name(self):
-        """Gets the name of this PostCreateVocabReq.
+        r"""Gets the name of this PostCreateVocabReq.
 
         热词表名，不可重复。内容限制为字母，数字，下中划线和井号，长度不超过32字节。
 
@@ -72,7 +72,7 @@ class PostCreateVocabReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostCreateVocabReq.
+        r"""Sets the name of this PostCreateVocabReq.
 
         热词表名，不可重复。内容限制为字母，数字，下中划线和井号，长度不超过32字节。
 
@@ -83,7 +83,7 @@ class PostCreateVocabReq:
 
     @property
     def description(self):
-        """Gets the description of this PostCreateVocabReq.
+        r"""Gets the description of this PostCreateVocabReq.
 
         热词表描述，长度不超过255字节。
 
@@ -94,7 +94,7 @@ class PostCreateVocabReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PostCreateVocabReq.
+        r"""Sets the description of this PostCreateVocabReq.
 
         热词表描述，长度不超过255字节。
 
@@ -105,7 +105,7 @@ class PostCreateVocabReq:
 
     @property
     def language(self):
-        """Gets the language of this PostCreateVocabReq.
+        r"""Gets the language of this PostCreateVocabReq.
 
         热词表语言类型。  language取值范围： chinese_mandarin  汉语普通话
 
@@ -116,7 +116,7 @@ class PostCreateVocabReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this PostCreateVocabReq.
+        r"""Sets the language of this PostCreateVocabReq.
 
         热词表语言类型。  language取值范围： chinese_mandarin  汉语普通话
 
@@ -127,7 +127,7 @@ class PostCreateVocabReq:
 
     @property
     def contents(self):
-        """Gets the contents of this PostCreateVocabReq.
+        r"""Gets the contents of this PostCreateVocabReq.
 
         支持中英混编热词，单个热词只能由英文字母和unicode编码的汉字组成，不能有其他符号，包括空格。 阿拉伯数字需写成汉字或英文（如“一”、“one”）。  单词库支持热词数上限1024。 单个热词长度上限32字节。
 
@@ -138,7 +138,7 @@ class PostCreateVocabReq:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this PostCreateVocabReq.
+        r"""Sets the contents of this PostCreateVocabReq.
 
         支持中英混编热词，单个热词只能由英文字母和unicode编码的汉字组成，不能有其他符号，包括空格。 阿拉伯数字需写成汉字或英文（如“一”、“one”）。  单词库支持热词数上限1024。 单个热词长度上限32字节。
 

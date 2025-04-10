@@ -27,7 +27,7 @@ class OpsWindowRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """OpsWindowRequestBody
+        r"""OpsWindowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpsWindowRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpsWindowRequestBody.
+        r"""Gets the start_time of this OpsWindowRequestBody.
 
         开始时间，格式必须为HH:MM且有效，当前时间指UTC时间。不能与结束时间相同，只能为整点。
 
@@ -59,7 +59,7 @@ class OpsWindowRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpsWindowRequestBody.
+        r"""Sets the start_time of this OpsWindowRequestBody.
 
         开始时间，格式必须为HH:MM且有效，当前时间指UTC时间。不能与结束时间相同，只能为整点。
 
@@ -70,7 +70,7 @@ class OpsWindowRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OpsWindowRequestBody.
+        r"""Gets the end_time of this OpsWindowRequestBody.
 
         结束时间，格式必须为HH:MM且有效，当前时间指UTC时间。不能与开始时间相同，只能为整点。
 
@@ -81,7 +81,7 @@ class OpsWindowRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OpsWindowRequestBody.
+        r"""Sets the end_time of this OpsWindowRequestBody.
 
         结束时间，格式必须为HH:MM且有效，当前时间指UTC时间。不能与开始时间相同，只能为整点。
 

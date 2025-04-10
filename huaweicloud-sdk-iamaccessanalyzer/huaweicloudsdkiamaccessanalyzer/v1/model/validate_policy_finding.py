@@ -33,7 +33,7 @@ class ValidatePolicyFinding:
     }
 
     def __init__(self, finding_details=None, finding_type=None, issue_code=None, learn_more_link=None, locations=None):
-        """ValidatePolicyFinding
+        r"""ValidatePolicyFinding
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ValidatePolicyFinding:
 
     @property
     def finding_details(self):
-        """Gets the finding_details of this ValidatePolicyFinding.
+        r"""Gets the finding_details of this ValidatePolicyFinding.
 
         一条本地化消息提供了如何解决该问题的指导。
 
@@ -77,7 +77,7 @@ class ValidatePolicyFinding:
 
     @finding_details.setter
     def finding_details(self, finding_details):
-        """Sets the finding_details of this ValidatePolicyFinding.
+        r"""Sets the finding_details of this ValidatePolicyFinding.
 
         一条本地化消息提供了如何解决该问题的指导。
 
@@ -88,7 +88,7 @@ class ValidatePolicyFinding:
 
     @property
     def finding_type(self):
-        """Gets the finding_type of this ValidatePolicyFinding.
+        r"""Gets the finding_type of this ValidatePolicyFinding.
 
         影响级别。  安全：策略存在安全风险，可能是允许访问的权限过于宽松等导致。  错误：存在策略无法运行的错误，如语法错误、参数错误等。存在错误的情况下策略无法创建。  警告：存在策略无法运行的警告，如参数取值类型不匹配等。存在警告的情况下策略可以创建。  建议：不影响策略运行，但策略可能不能达到预期的效果。如存在空数组、空对象条件等。 
 
@@ -99,7 +99,7 @@ class ValidatePolicyFinding:
 
     @finding_type.setter
     def finding_type(self, finding_type):
-        """Sets the finding_type of this ValidatePolicyFinding.
+        r"""Sets the finding_type of this ValidatePolicyFinding.
 
         影响级别。  安全：策略存在安全风险，可能是允许访问的权限过于宽松等导致。  错误：存在策略无法运行的错误，如语法错误、参数错误等。存在错误的情况下策略无法创建。  警告：存在策略无法运行的警告，如参数取值类型不匹配等。存在警告的情况下策略可以创建。  建议：不影响策略运行，但策略可能不能达到预期的效果。如存在空数组、空对象条件等。 
 
@@ -110,7 +110,7 @@ class ValidatePolicyFinding:
 
     @property
     def issue_code(self):
-        """Gets the issue_code of this ValidatePolicyFinding.
+        r"""Gets the issue_code of this ValidatePolicyFinding.
 
         问题码提供了与此校验结果关联的问题的标识符。
 
@@ -121,7 +121,7 @@ class ValidatePolicyFinding:
 
     @issue_code.setter
     def issue_code(self, issue_code):
-        """Sets the issue_code of this ValidatePolicyFinding.
+        r"""Sets the issue_code of this ValidatePolicyFinding.
 
         问题码提供了与此校验结果关联的问题的标识符。
 
@@ -132,7 +132,7 @@ class ValidatePolicyFinding:
 
     @property
     def learn_more_link(self):
-        """Gets the learn_more_link of this ValidatePolicyFinding.
+        r"""Gets the learn_more_link of this ValidatePolicyFinding.
 
         指向与此校验结果关联的相关文档的链接。
 
@@ -143,7 +143,7 @@ class ValidatePolicyFinding:
 
     @learn_more_link.setter
     def learn_more_link(self, learn_more_link):
-        """Sets the learn_more_link of this ValidatePolicyFinding.
+        r"""Sets the learn_more_link of this ValidatePolicyFinding.
 
         指向与此校验结果关联的相关文档的链接。
 
@@ -154,7 +154,7 @@ class ValidatePolicyFinding:
 
     @property
     def locations(self):
-        """Gets the locations of this ValidatePolicyFinding.
+        r"""Gets the locations of this ValidatePolicyFinding.
 
         策略文档中与校验结果相关的位置列表。
 
@@ -165,7 +165,7 @@ class ValidatePolicyFinding:
 
     @locations.setter
     def locations(self, locations):
-        """Sets the locations of this ValidatePolicyFinding.
+        r"""Sets the locations of this ValidatePolicyFinding.
 
         策略文档中与校验结果相关的位置列表。
 

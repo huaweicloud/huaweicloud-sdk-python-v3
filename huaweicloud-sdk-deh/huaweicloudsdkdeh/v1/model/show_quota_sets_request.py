@@ -27,7 +27,7 @@ class ShowQuotaSetsRequest:
     }
 
     def __init__(self, tenant_id=None, resource=None):
-        """ShowQuotaSetsRequest
+        r"""ShowQuotaSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowQuotaSetsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowQuotaSetsRequest.
+        r"""Gets the tenant_id of this ShowQuotaSetsRequest.
 
         租户ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -60,7 +60,7 @@ class ShowQuotaSetsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowQuotaSetsRequest.
+        r"""Sets the tenant_id of this ShowQuotaSetsRequest.
 
         租户ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -71,7 +71,7 @@ class ShowQuotaSetsRequest:
 
     @property
     def resource(self):
-        """Gets the resource of this ShowQuotaSetsRequest.
+        r"""Gets the resource of this ShowQuotaSetsRequest.
 
         配额类别。
 
@@ -82,7 +82,7 @@ class ShowQuotaSetsRequest:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this ShowQuotaSetsRequest.
+        r"""Sets the resource of this ShowQuotaSetsRequest.
 
         配额类别。
 

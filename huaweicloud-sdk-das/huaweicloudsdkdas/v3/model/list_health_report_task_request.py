@@ -35,7 +35,7 @@ class ListHealthReportTaskRequest:
     }
 
     def __init__(self, instance_id=None, start_at=None, end_at=None, offset=None, limit=None, x_language=None):
-        """ListHealthReportTaskRequest
+        r"""ListHealthReportTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListHealthReportTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListHealthReportTaskRequest.
+        r"""Gets the instance_id of this ListHealthReportTaskRequest.
 
         实例ID。
 
@@ -86,7 +86,7 @@ class ListHealthReportTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListHealthReportTaskRequest.
+        r"""Sets the instance_id of this ListHealthReportTaskRequest.
 
         实例ID。
 
@@ -97,7 +97,7 @@ class ListHealthReportTaskRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ListHealthReportTaskRequest.
+        r"""Gets the start_at of this ListHealthReportTaskRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -108,7 +108,7 @@ class ListHealthReportTaskRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ListHealthReportTaskRequest.
+        r"""Sets the start_at of this ListHealthReportTaskRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -119,7 +119,7 @@ class ListHealthReportTaskRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ListHealthReportTaskRequest.
+        r"""Gets the end_at of this ListHealthReportTaskRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -130,7 +130,7 @@ class ListHealthReportTaskRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ListHealthReportTaskRequest.
+        r"""Sets the end_at of this ListHealthReportTaskRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -141,7 +141,7 @@ class ListHealthReportTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHealthReportTaskRequest.
+        r"""Gets the offset of this ListHealthReportTaskRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -152,7 +152,7 @@ class ListHealthReportTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHealthReportTaskRequest.
+        r"""Sets the offset of this ListHealthReportTaskRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -163,7 +163,7 @@ class ListHealthReportTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHealthReportTaskRequest.
+        r"""Gets the limit of this ListHealthReportTaskRequest.
 
         每页记录数，默认为10，最大取值200。
 
@@ -174,7 +174,7 @@ class ListHealthReportTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHealthReportTaskRequest.
+        r"""Sets the limit of this ListHealthReportTaskRequest.
 
         每页记录数，默认为10，最大取值200。
 
@@ -185,7 +185,7 @@ class ListHealthReportTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHealthReportTaskRequest.
+        r"""Gets the x_language of this ListHealthReportTaskRequest.
 
         请求语言类型。
 
@@ -196,7 +196,7 @@ class ListHealthReportTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHealthReportTaskRequest.
+        r"""Sets the x_language of this ListHealthReportTaskRequest.
 
         请求语言类型。
 

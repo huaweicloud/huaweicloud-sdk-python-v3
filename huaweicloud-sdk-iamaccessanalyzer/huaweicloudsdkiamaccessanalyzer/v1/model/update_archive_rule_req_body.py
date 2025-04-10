@@ -25,7 +25,7 @@ class UpdateArchiveRuleReqBody:
     }
 
     def __init__(self, filters=None):
-        """UpdateArchiveRuleReqBody
+        r"""UpdateArchiveRuleReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateArchiveRuleReqBody:
 
     @property
     def filters(self):
-        """Gets the filters of this UpdateArchiveRuleReqBody.
+        r"""Gets the filters of this UpdateArchiveRuleReqBody.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -53,7 +53,7 @@ class UpdateArchiveRuleReqBody:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this UpdateArchiveRuleReqBody.
+        r"""Sets the filters of this UpdateArchiveRuleReqBody.
 
         匹配要返回的访问分析结果的筛选器。
 

@@ -27,7 +27,7 @@ class CreateDeviceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDeviceRequest
+        r"""CreateDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDeviceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDeviceRequest.
+        r"""Gets the instance_id of this CreateDeviceRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateDeviceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDeviceRequest.
+        r"""Sets the instance_id of this CreateDeviceRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeviceRequest.
+        r"""Gets the body of this CreateDeviceRequest.
 
         :return: The body of this CreateDeviceRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceRequestBody`
@@ -80,7 +80,7 @@ class CreateDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeviceRequest.
+        r"""Sets the body of this CreateDeviceRequest.
 
         :param body: The body of this CreateDeviceRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateDeviceRequestBody`

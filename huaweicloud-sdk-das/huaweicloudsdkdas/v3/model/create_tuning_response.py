@@ -30,7 +30,7 @@ class CreateTuningResponse(SdkResponse):
     }
 
     def __init__(self, message_id=None, status=None, quota_exceeded=None):
-        """CreateTuningResponse
+        r"""CreateTuningResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateTuningResponse(SdkResponse):
 
     @property
     def message_id(self):
-        """Gets the message_id of this CreateTuningResponse.
+        r"""Gets the message_id of this CreateTuningResponse.
 
         诊断信息id
 
@@ -69,7 +69,7 @@ class CreateTuningResponse(SdkResponse):
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this CreateTuningResponse.
+        r"""Sets the message_id of this CreateTuningResponse.
 
         诊断信息id
 
@@ -80,7 +80,7 @@ class CreateTuningResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateTuningResponse.
+        r"""Gets the status of this CreateTuningResponse.
 
         状态
 
@@ -91,7 +91,7 @@ class CreateTuningResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateTuningResponse.
+        r"""Sets the status of this CreateTuningResponse.
 
         状态
 
@@ -102,7 +102,7 @@ class CreateTuningResponse(SdkResponse):
 
     @property
     def quota_exceeded(self):
-        """Gets the quota_exceeded of this CreateTuningResponse.
+        r"""Gets the quota_exceeded of this CreateTuningResponse.
 
         诊断配额状态
 
@@ -113,7 +113,7 @@ class CreateTuningResponse(SdkResponse):
 
     @quota_exceeded.setter
     def quota_exceeded(self, quota_exceeded):
-        """Sets the quota_exceeded of this CreateTuningResponse.
+        r"""Sets the quota_exceeded of this CreateTuningResponse.
 
         诊断配额状态
 

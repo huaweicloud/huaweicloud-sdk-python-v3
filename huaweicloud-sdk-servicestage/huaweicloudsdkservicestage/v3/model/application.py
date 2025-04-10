@@ -43,7 +43,7 @@ class Application:
     }
 
     def __init__(self, id=None, name=None, component_count=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None, description=None, labels=None):
-        """Application
+        r"""Application
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class Application:
 
     @property
     def id(self):
-        """Gets the id of this Application.
+        r"""Gets the id of this Application.
 
         应用ID。
 
@@ -116,7 +116,7 @@ class Application:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Application.
+        r"""Sets the id of this Application.
 
         应用ID。
 
@@ -127,7 +127,7 @@ class Application:
 
     @property
     def name(self):
-        """Gets the name of this Application.
+        r"""Gets the name of this Application.
 
         应用名称。
 
@@ -138,7 +138,7 @@ class Application:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Application.
+        r"""Sets the name of this Application.
 
         应用名称。
 
@@ -149,7 +149,7 @@ class Application:
 
     @property
     def component_count(self):
-        """Gets the component_count of this Application.
+        r"""Gets the component_count of this Application.
 
         组件个数。
 
@@ -160,7 +160,7 @@ class Application:
 
     @component_count.setter
     def component_count(self, component_count):
-        """Sets the component_count of this Application.
+        r"""Sets the component_count of this Application.
 
         组件个数。
 
@@ -171,7 +171,7 @@ class Application:
 
     @property
     def creator(self):
-        """Gets the creator of this Application.
+        r"""Gets the creator of this Application.
 
         创建人。
 
@@ -182,7 +182,7 @@ class Application:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Application.
+        r"""Sets the creator of this Application.
 
         创建人。
 
@@ -193,7 +193,7 @@ class Application:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Application.
+        r"""Gets the project_id of this Application.
 
         项目ID。
 
@@ -204,7 +204,7 @@ class Application:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Application.
+        r"""Sets the project_id of this Application.
 
         项目ID。
 
@@ -215,7 +215,7 @@ class Application:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Application.
+        r"""Gets the enterprise_project_id of this Application.
 
         企业项目ID。
 
@@ -226,7 +226,7 @@ class Application:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Application.
+        r"""Sets the enterprise_project_id of this Application.
 
         企业项目ID。
 
@@ -237,7 +237,7 @@ class Application:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Application.
+        r"""Gets the create_time of this Application.
 
         创建时间。
 
@@ -248,7 +248,7 @@ class Application:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Application.
+        r"""Sets the create_time of this Application.
 
         创建时间。
 
@@ -259,7 +259,7 @@ class Application:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Application.
+        r"""Gets the update_time of this Application.
 
         修改时间。
 
@@ -270,7 +270,7 @@ class Application:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Application.
+        r"""Sets the update_time of this Application.
 
         修改时间。
 
@@ -281,7 +281,7 @@ class Application:
 
     @property
     def description(self):
-        """Gets the description of this Application.
+        r"""Gets the description of this Application.
 
         应用描述。
 
@@ -292,7 +292,7 @@ class Application:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Application.
+        r"""Sets the description of this Application.
 
         应用描述。
 
@@ -303,7 +303,7 @@ class Application:
 
     @property
     def labels(self):
-        """Gets the labels of this Application.
+        r"""Gets the labels of this Application.
 
         应用标签。
 
@@ -314,7 +314,7 @@ class Application:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this Application.
+        r"""Sets the labels of this Application.
 
         应用标签。
 

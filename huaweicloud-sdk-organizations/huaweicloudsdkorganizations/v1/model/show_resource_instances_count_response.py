@@ -26,7 +26,7 @@ class ShowResourceInstancesCountResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None):
-        """ShowResourceInstancesCountResponse
+        r"""ShowResourceInstancesCountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowResourceInstancesCountResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowResourceInstancesCountResponse.
+        r"""Gets the total_count of this ShowResourceInstancesCountResponse.
 
         总记录数。
 
@@ -55,7 +55,7 @@ class ShowResourceInstancesCountResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowResourceInstancesCountResponse.
+        r"""Sets the total_count of this ShowResourceInstancesCountResponse.
 
         总记录数。
 

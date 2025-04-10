@@ -33,7 +33,7 @@ class ShowMessagesRespMessages:
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, size=None, timestamp=None):
-        """ShowMessagesRespMessages
+        r"""ShowMessagesRespMessages
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowMessagesRespMessages:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowMessagesRespMessages.
+        r"""Gets the topic of this ShowMessagesRespMessages.
 
         topic名称。
 
@@ -82,7 +82,7 @@ class ShowMessagesRespMessages:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowMessagesRespMessages.
+        r"""Sets the topic of this ShowMessagesRespMessages.
 
         topic名称。
 
@@ -93,7 +93,7 @@ class ShowMessagesRespMessages:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowMessagesRespMessages.
+        r"""Gets the partition of this ShowMessagesRespMessages.
 
         分区编号。
 
@@ -104,7 +104,7 @@ class ShowMessagesRespMessages:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowMessagesRespMessages.
+        r"""Sets the partition of this ShowMessagesRespMessages.
 
         分区编号。
 
@@ -115,7 +115,7 @@ class ShowMessagesRespMessages:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ShowMessagesRespMessages.
+        r"""Gets the message_offset of this ShowMessagesRespMessages.
 
         消息编号。
 
@@ -126,7 +126,7 @@ class ShowMessagesRespMessages:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowMessagesRespMessages.
+        r"""Sets the message_offset of this ShowMessagesRespMessages.
 
         消息编号。
 
@@ -137,7 +137,7 @@ class ShowMessagesRespMessages:
 
     @property
     def size(self):
-        """Gets the size of this ShowMessagesRespMessages.
+        r"""Gets the size of this ShowMessagesRespMessages.
 
         消息大小，单位字节。
 
@@ -148,7 +148,7 @@ class ShowMessagesRespMessages:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowMessagesRespMessages.
+        r"""Sets the size of this ShowMessagesRespMessages.
 
         消息大小，单位字节。
 
@@ -159,7 +159,7 @@ class ShowMessagesRespMessages:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowMessagesRespMessages.
+        r"""Gets the timestamp of this ShowMessagesRespMessages.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
@@ -170,7 +170,7 @@ class ShowMessagesRespMessages:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowMessagesRespMessages.
+        r"""Sets the timestamp of this ShowMessagesRespMessages.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 

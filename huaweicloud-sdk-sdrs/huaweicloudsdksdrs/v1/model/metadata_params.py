@@ -25,7 +25,7 @@ class MetadataParams:
     }
 
     def __init__(self, system__frozen=None):
-        """MetadataParams
+        r"""MetadataParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MetadataParams:
 
     @property
     def system__frozen(self):
-        """Gets the system__frozen of this MetadataParams.
+        r"""Gets the system__frozen of this MetadataParams.
 
         保护实例元数据中资源冻结的字段。 true：表示资源被冻结。 空：表示资源没有被冻结。
 
@@ -53,7 +53,7 @@ class MetadataParams:
 
     @system__frozen.setter
     def system__frozen(self, system__frozen):
-        """Sets the system__frozen of this MetadataParams.
+        r"""Sets the system__frozen of this MetadataParams.
 
         保护实例元数据中资源冻结的字段。 true：表示资源被冻结。 空：表示资源没有被冻结。
 

@@ -35,7 +35,7 @@ class CreateRequestRequest:
     }
 
     def __init__(self, topn=None, scenario=None, resubmit=None, model_id=None, request_type=None, body=None):
-        """CreateRequestRequest
+        r"""CreateRequestRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateRequestRequest:
 
     @property
     def topn(self):
-        """Gets the topn of this CreateRequestRequest.
+        r"""Gets the topn of this CreateRequestRequest.
 
         the number of samples
 
@@ -89,7 +89,7 @@ class CreateRequestRequest:
 
     @topn.setter
     def topn(self, topn):
-        """Sets the topn of this CreateRequestRequest.
+        r"""Sets the topn of this CreateRequestRequest.
 
         the number of samples
 
@@ -100,7 +100,7 @@ class CreateRequestRequest:
 
     @property
     def scenario(self):
-        """Gets the scenario of this CreateRequestRequest.
+        r"""Gets the scenario of this CreateRequestRequest.
 
         the scenario of code content
 
@@ -111,7 +111,7 @@ class CreateRequestRequest:
 
     @scenario.setter
     def scenario(self, scenario):
-        """Sets the scenario of this CreateRequestRequest.
+        r"""Sets the scenario of this CreateRequestRequest.
 
         the scenario of code content
 
@@ -122,7 +122,7 @@ class CreateRequestRequest:
 
     @property
     def resubmit(self):
-        """Gets the resubmit of this CreateRequestRequest.
+        r"""Gets the resubmit of this CreateRequestRequest.
 
         if `resubmit` is true, the de-duplication will be ignored
 
@@ -133,7 +133,7 @@ class CreateRequestRequest:
 
     @resubmit.setter
     def resubmit(self, resubmit):
-        """Sets the resubmit of this CreateRequestRequest.
+        r"""Sets the resubmit of this CreateRequestRequest.
 
         if `resubmit` is true, the de-duplication will be ignored
 
@@ -144,7 +144,7 @@ class CreateRequestRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this CreateRequestRequest.
+        r"""Gets the model_id of this CreateRequestRequest.
 
         choose the model
 
@@ -155,7 +155,7 @@ class CreateRequestRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this CreateRequestRequest.
+        r"""Sets the model_id of this CreateRequestRequest.
 
         choose the model
 
@@ -166,7 +166,7 @@ class CreateRequestRequest:
 
     @property
     def request_type(self):
-        """Gets the request_type of this CreateRequestRequest.
+        r"""Gets the request_type of this CreateRequestRequest.
 
         An enumeration. - function - rawtext
 
@@ -177,7 +177,7 @@ class CreateRequestRequest:
 
     @request_type.setter
     def request_type(self, request_type):
-        """Sets the request_type of this CreateRequestRequest.
+        r"""Sets the request_type of this CreateRequestRequest.
 
         An enumeration. - function - rawtext
 
@@ -188,7 +188,7 @@ class CreateRequestRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRequestRequest.
+        r"""Gets the body of this CreateRequestRequest.
 
         :return: The body of this CreateRequestRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PropertiesSchema`
@@ -197,7 +197,7 @@ class CreateRequestRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRequestRequest.
+        r"""Sets the body of this CreateRequestRequest.
 
         :param body: The body of this CreateRequestRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.PropertiesSchema`

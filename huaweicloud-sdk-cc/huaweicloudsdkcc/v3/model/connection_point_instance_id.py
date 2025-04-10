@@ -25,7 +25,7 @@ class ConnectionPointInstanceId:
     }
 
     def __init__(self, instance_id=None):
-        """ConnectionPointInstanceId
+        r"""ConnectionPointInstanceId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConnectionPointInstanceId:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ConnectionPointInstanceId.
+        r"""Gets the instance_id of this ConnectionPointInstanceId.
 
         连接点的实例ID。
 
@@ -53,7 +53,7 @@ class ConnectionPointInstanceId:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ConnectionPointInstanceId.
+        r"""Sets the instance_id of this ConnectionPointInstanceId.
 
         连接点的实例ID。
 

@@ -28,7 +28,7 @@ class DeleteDeploymentResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """DeleteDeploymentResponse
+        r"""DeleteDeploymentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteDeploymentResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteDeploymentResponse.
+        r"""Gets the error_code of this DeleteDeploymentResponse.
 
         错误码
 
@@ -62,7 +62,7 @@ class DeleteDeploymentResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteDeploymentResponse.
+        r"""Sets the error_code of this DeleteDeploymentResponse.
 
         错误码
 
@@ -73,7 +73,7 @@ class DeleteDeploymentResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteDeploymentResponse.
+        r"""Gets the error_msg of this DeleteDeploymentResponse.
 
         错误描述信息
 
@@ -84,7 +84,7 @@ class DeleteDeploymentResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteDeploymentResponse.
+        r"""Sets the error_msg of this DeleteDeploymentResponse.
 
         错误描述信息
 

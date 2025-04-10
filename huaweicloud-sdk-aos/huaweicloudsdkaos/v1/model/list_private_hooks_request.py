@@ -29,7 +29,7 @@ class ListPrivateHooksRequest:
     }
 
     def __init__(self, client_request_id=None, sort_key=None, sort_dir=None):
-        """ListPrivateHooksRequest
+        r"""ListPrivateHooksRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPrivateHooksRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ListPrivateHooksRequest.
+        r"""Gets the client_request_id of this ListPrivateHooksRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -67,7 +67,7 @@ class ListPrivateHooksRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ListPrivateHooksRequest.
+        r"""Sets the client_request_id of this ListPrivateHooksRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -78,7 +78,7 @@ class ListPrivateHooksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPrivateHooksRequest.
+        r"""Gets the sort_key of this ListPrivateHooksRequest.
 
         排序字段，仅支持给予create_time
 
@@ -89,7 +89,7 @@ class ListPrivateHooksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPrivateHooksRequest.
+        r"""Sets the sort_key of this ListPrivateHooksRequest.
 
         排序字段，仅支持给予create_time
 
@@ -100,7 +100,7 @@ class ListPrivateHooksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPrivateHooksRequest.
+        r"""Gets the sort_dir of this ListPrivateHooksRequest.
 
         指定升序还是降序   * `asc` - 升序   * `desc` - 降序
 
@@ -111,7 +111,7 @@ class ListPrivateHooksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPrivateHooksRequest.
+        r"""Sets the sort_dir of this ListPrivateHooksRequest.
 
         指定升序还是降序   * `asc` - 升序   * `desc` - 降序
 

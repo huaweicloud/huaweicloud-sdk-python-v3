@@ -31,7 +31,7 @@ class SslInfo:
     }
 
     def __init__(self, ssl_id=None, ssl_name=None, algorithm_type=None, type=None):
-        """SslInfo
+        r"""SslInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SslInfo:
 
     @property
     def ssl_id(self):
-        """Gets the ssl_id of this SslInfo.
+        r"""Gets the ssl_id of this SslInfo.
 
         SSL证书编号
 
@@ -75,7 +75,7 @@ class SslInfo:
 
     @ssl_id.setter
     def ssl_id(self, ssl_id):
-        """Sets the ssl_id of this SslInfo.
+        r"""Sets the ssl_id of this SslInfo.
 
         SSL证书编号
 
@@ -86,7 +86,7 @@ class SslInfo:
 
     @property
     def ssl_name(self):
-        """Gets the ssl_name of this SslInfo.
+        r"""Gets the ssl_name of this SslInfo.
 
         SSL证书名称
 
@@ -97,7 +97,7 @@ class SslInfo:
 
     @ssl_name.setter
     def ssl_name(self, ssl_name):
-        """Sets the ssl_name of this SslInfo.
+        r"""Sets the ssl_name of this SslInfo.
 
         SSL证书名称
 
@@ -108,7 +108,7 @@ class SslInfo:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this SslInfo.
+        r"""Gets the algorithm_type of this SslInfo.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -119,7 +119,7 @@ class SslInfo:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this SslInfo.
+        r"""Sets the algorithm_type of this SslInfo.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -130,7 +130,7 @@ class SslInfo:
 
     @property
     def type(self):
-        """Gets the type of this SslInfo.
+        r"""Gets the type of this SslInfo.
 
         证书可见范围： - instance：当前实例 - global：全局
 
@@ -141,7 +141,7 @@ class SslInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SslInfo.
+        r"""Sets the type of this SslInfo.
 
         证书可见范围： - instance：当前实例 - global：全局
 

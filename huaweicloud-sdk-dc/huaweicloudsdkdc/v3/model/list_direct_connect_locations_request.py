@@ -37,7 +37,7 @@ class ListDirectConnectLocationsRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, status=None):
-        """ListDirectConnectLocationsRequest
+        r"""ListDirectConnectLocationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDirectConnectLocationsRequest.
+        r"""Gets the limit of this ListDirectConnectLocationsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -96,7 +96,7 @@ class ListDirectConnectLocationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDirectConnectLocationsRequest.
+        r"""Sets the limit of this ListDirectConnectLocationsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -107,7 +107,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDirectConnectLocationsRequest.
+        r"""Gets the marker of this ListDirectConnectLocationsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -118,7 +118,7 @@ class ListDirectConnectLocationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDirectConnectLocationsRequest.
+        r"""Sets the marker of this ListDirectConnectLocationsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -129,7 +129,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDirectConnectLocationsRequest.
+        r"""Gets the sort_key of this ListDirectConnectLocationsRequest.
 
         排序字段。
 
@@ -140,7 +140,7 @@ class ListDirectConnectLocationsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDirectConnectLocationsRequest.
+        r"""Sets the sort_key of this ListDirectConnectLocationsRequest.
 
         排序字段。
 
@@ -151,7 +151,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDirectConnectLocationsRequest.
+        r"""Gets the sort_dir of this ListDirectConnectLocationsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -162,7 +162,7 @@ class ListDirectConnectLocationsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDirectConnectLocationsRequest.
+        r"""Sets the sort_dir of this ListDirectConnectLocationsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -173,7 +173,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListDirectConnectLocationsRequest.
+        r"""Gets the id of this ListDirectConnectLocationsRequest.
 
         根据资源ID过滤实例
 
@@ -184,7 +184,7 @@ class ListDirectConnectLocationsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListDirectConnectLocationsRequest.
+        r"""Sets the id of this ListDirectConnectLocationsRequest.
 
         根据资源ID过滤实例
 
@@ -195,7 +195,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDirectConnectLocationsRequest.
+        r"""Gets the name of this ListDirectConnectLocationsRequest.
 
         根据名字过滤查询，可查询多个名字。
 
@@ -206,7 +206,7 @@ class ListDirectConnectLocationsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDirectConnectLocationsRequest.
+        r"""Sets the name of this ListDirectConnectLocationsRequest.
 
         根据名字过滤查询，可查询多个名字。
 
@@ -217,7 +217,7 @@ class ListDirectConnectLocationsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDirectConnectLocationsRequest.
+        r"""Gets the status of this ListDirectConnectLocationsRequest.
 
         根椐资源状态过滤实例
 
@@ -228,7 +228,7 @@ class ListDirectConnectLocationsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDirectConnectLocationsRequest.
+        r"""Sets the status of this ListDirectConnectLocationsRequest.
 
         根椐资源状态过滤实例
 

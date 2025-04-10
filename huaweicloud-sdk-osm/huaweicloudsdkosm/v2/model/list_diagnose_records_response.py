@@ -32,7 +32,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, total_count=None, records=None):
-        """ListDiagnoseRecordsResponse
+        r"""ListDiagnoseRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListDiagnoseRecordsResponse.
+        r"""Gets the error_code of this ListDiagnoseRecordsResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListDiagnoseRecordsResponse.
+        r"""Sets the error_code of this ListDiagnoseRecordsResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListDiagnoseRecordsResponse.
+        r"""Gets the error_msg of this ListDiagnoseRecordsResponse.
 
         错误描述
 
@@ -98,7 +98,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListDiagnoseRecordsResponse.
+        r"""Sets the error_msg of this ListDiagnoseRecordsResponse.
 
         错误描述
 
@@ -109,7 +109,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDiagnoseRecordsResponse.
+        r"""Gets the total_count of this ListDiagnoseRecordsResponse.
 
         总条数
 
@@ -120,7 +120,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDiagnoseRecordsResponse.
+        r"""Sets the total_count of this ListDiagnoseRecordsResponse.
 
         总条数
 
@@ -131,7 +131,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListDiagnoseRecordsResponse.
+        r"""Gets the records of this ListDiagnoseRecordsResponse.
 
         获取的诊断记录列表
 
@@ -142,7 +142,7 @@ class ListDiagnoseRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListDiagnoseRecordsResponse.
+        r"""Sets the records of this ListDiagnoseRecordsResponse.
 
         获取的诊断记录列表
 

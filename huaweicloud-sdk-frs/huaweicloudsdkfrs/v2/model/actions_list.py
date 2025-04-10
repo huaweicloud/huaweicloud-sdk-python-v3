@@ -27,7 +27,7 @@ class ActionsList:
     }
 
     def __init__(self, confidence=None, action=None):
-        """ActionsList
+        r"""ActionsList
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ActionsList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ActionsList.
+        r"""Gets the confidence of this ActionsList.
 
         置信度，取值范围0～1。
 
@@ -60,7 +60,7 @@ class ActionsList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ActionsList.
+        r"""Sets the confidence of this ActionsList.
 
         置信度，取值范围0～1。
 
@@ -71,7 +71,7 @@ class ActionsList:
 
     @property
     def action(self):
-        """Gets the action of this ActionsList.
+        r"""Gets the action of this ActionsList.
 
         动作编号，取值范围：[1,2,3,4,5]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
 
@@ -82,7 +82,7 @@ class ActionsList:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ActionsList.
+        r"""Sets the action of this ActionsList.
 
         动作编号，取值范围：[1,2,3,4,5]，其中： • 1：左摇头 • 2：右摇头 • 3：点头 • 4：嘴部动作 • 5：眨眼
 

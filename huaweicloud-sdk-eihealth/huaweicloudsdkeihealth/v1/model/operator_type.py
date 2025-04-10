@@ -27,7 +27,7 @@ class OperatorType:
     }
 
     def __init__(self):
-        """OperatorType
+        r"""OperatorType
 
         The model defined in huaweicloud sdk
 

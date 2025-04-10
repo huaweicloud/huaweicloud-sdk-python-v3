@@ -26,7 +26,7 @@ class AddSubsetsToGatewayResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddSubsetsToGatewayResponse
+        r"""AddSubsetsToGatewayResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddSubsetsToGatewayResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddSubsetsToGatewayResponse.
+        r"""Gets the body of this AddSubsetsToGatewayResponse.
 
         :return: The body of this AddSubsetsToGatewayResponse.
         :rtype: list[:class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponseBody`]
@@ -53,7 +53,7 @@ class AddSubsetsToGatewayResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSubsetsToGatewayResponse.
+        r"""Sets the body of this AddSubsetsToGatewayResponse.
 
         :param body: The body of this AddSubsetsToGatewayResponse.
         :type body: list[:class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponseBody`]

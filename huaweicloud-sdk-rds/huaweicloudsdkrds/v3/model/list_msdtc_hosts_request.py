@@ -29,7 +29,7 @@ class ListMsdtcHostsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListMsdtcHostsRequest
+        r"""ListMsdtcHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListMsdtcHostsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMsdtcHostsRequest.
+        r"""Gets the instance_id of this ListMsdtcHostsRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ListMsdtcHostsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMsdtcHostsRequest.
+        r"""Sets the instance_id of this ListMsdtcHostsRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ListMsdtcHostsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMsdtcHostsRequest.
+        r"""Gets the offset of this ListMsdtcHostsRequest.
 
         分页参数 最小为0
 
@@ -89,7 +89,7 @@ class ListMsdtcHostsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMsdtcHostsRequest.
+        r"""Sets the offset of this ListMsdtcHostsRequest.
 
         分页参数 最小为0
 
@@ -100,7 +100,7 @@ class ListMsdtcHostsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMsdtcHostsRequest.
+        r"""Gets the limit of this ListMsdtcHostsRequest.
 
         分页参数  取值范围为 1-100
 
@@ -111,7 +111,7 @@ class ListMsdtcHostsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMsdtcHostsRequest.
+        r"""Sets the limit of this ListMsdtcHostsRequest.
 
         分页参数  取值范围为 1-100
 

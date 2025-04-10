@@ -66,7 +66,7 @@ class ShowMonitorDataResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None, is_src_normal=None, is_dst_normal=None, src_offset=None, node_offset=None, dst_offset=None, src_delay=None, dst_delay=None, src_rps=None, src_io=None, dst_rps=None, dst_io=None, trans_data=None, trans_lines=None, used_volumes=None, used_memory=None, used_cpu_percent=None, node_volume_size=None, node_memory_size=None, update_time=None, apply_rate=None):
-        """ShowMonitorDataResponse
+        r"""ShowMonitorDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this ShowMonitorDataResponse.
+        r"""Gets the bandwidth of this ShowMonitorDataResponse.
 
         EIP带宽，单位：MB/S
 
@@ -195,7 +195,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this ShowMonitorDataResponse.
+        r"""Sets the bandwidth of this ShowMonitorDataResponse.
 
         EIP带宽，单位：MB/S
 
@@ -206,7 +206,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def is_src_normal(self):
-        """Gets the is_src_normal of this ShowMonitorDataResponse.
+        r"""Gets the is_src_normal of this ShowMonitorDataResponse.
 
         源库连接状态是否正常。
 
@@ -217,7 +217,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @is_src_normal.setter
     def is_src_normal(self, is_src_normal):
-        """Sets the is_src_normal of this ShowMonitorDataResponse.
+        r"""Sets the is_src_normal of this ShowMonitorDataResponse.
 
         源库连接状态是否正常。
 
@@ -228,7 +228,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def is_dst_normal(self):
-        """Gets the is_dst_normal of this ShowMonitorDataResponse.
+        r"""Gets the is_dst_normal of this ShowMonitorDataResponse.
 
         目标库连接状态是否正常。
 
@@ -239,7 +239,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @is_dst_normal.setter
     def is_dst_normal(self, is_dst_normal):
-        """Sets the is_dst_normal of this ShowMonitorDataResponse.
+        r"""Sets the is_dst_normal of this ShowMonitorDataResponse.
 
         目标库连接状态是否正常。
 
@@ -250,7 +250,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def src_offset(self):
-        """Gets the src_offset of this ShowMonitorDataResponse.
+        r"""Gets the src_offset of this ShowMonitorDataResponse.
 
         源库offSet位点。
 
@@ -261,7 +261,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @src_offset.setter
     def src_offset(self, src_offset):
-        """Sets the src_offset of this ShowMonitorDataResponse.
+        r"""Sets the src_offset of this ShowMonitorDataResponse.
 
         源库offSet位点。
 
@@ -272,7 +272,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def node_offset(self):
-        """Gets the node_offset of this ShowMonitorDataResponse.
+        r"""Gets the node_offset of this ShowMonitorDataResponse.
 
         迁移实例offSet位点。
 
@@ -283,7 +283,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @node_offset.setter
     def node_offset(self, node_offset):
-        """Sets the node_offset of this ShowMonitorDataResponse.
+        r"""Sets the node_offset of this ShowMonitorDataResponse.
 
         迁移实例offSet位点。
 
@@ -294,7 +294,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def dst_offset(self):
-        """Gets the dst_offset of this ShowMonitorDataResponse.
+        r"""Gets the dst_offset of this ShowMonitorDataResponse.
 
         目标库offSet位点。
 
@@ -305,7 +305,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @dst_offset.setter
     def dst_offset(self, dst_offset):
-        """Sets the dst_offset of this ShowMonitorDataResponse.
+        r"""Sets the dst_offset of this ShowMonitorDataResponse.
 
         目标库offSet位点。
 
@@ -316,7 +316,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def src_delay(self):
-        """Gets the src_delay of this ShowMonitorDataResponse.
+        r"""Gets the src_delay of this ShowMonitorDataResponse.
 
         源库时延。
 
@@ -327,7 +327,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @src_delay.setter
     def src_delay(self, src_delay):
-        """Sets the src_delay of this ShowMonitorDataResponse.
+        r"""Sets the src_delay of this ShowMonitorDataResponse.
 
         源库时延。
 
@@ -338,7 +338,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def dst_delay(self):
-        """Gets the dst_delay of this ShowMonitorDataResponse.
+        r"""Gets the dst_delay of this ShowMonitorDataResponse.
 
         目标库时延。
 
@@ -349,7 +349,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @dst_delay.setter
     def dst_delay(self, dst_delay):
-        """Sets the dst_delay of this ShowMonitorDataResponse.
+        r"""Sets the dst_delay of this ShowMonitorDataResponse.
 
         目标库时延。
 
@@ -360,7 +360,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def src_rps(self):
-        """Gets the src_rps of this ShowMonitorDataResponse.
+        r"""Gets the src_rps of this ShowMonitorDataResponse.
 
         源库RPS。
 
@@ -371,7 +371,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @src_rps.setter
     def src_rps(self, src_rps):
-        """Sets the src_rps of this ShowMonitorDataResponse.
+        r"""Sets the src_rps of this ShowMonitorDataResponse.
 
         源库RPS。
 
@@ -382,7 +382,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def src_io(self):
-        """Gets the src_io of this ShowMonitorDataResponse.
+        r"""Gets the src_io of this ShowMonitorDataResponse.
 
         源库IO。
 
@@ -393,7 +393,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @src_io.setter
     def src_io(self, src_io):
-        """Sets the src_io of this ShowMonitorDataResponse.
+        r"""Sets the src_io of this ShowMonitorDataResponse.
 
         源库IO。
 
@@ -404,7 +404,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def dst_rps(self):
-        """Gets the dst_rps of this ShowMonitorDataResponse.
+        r"""Gets the dst_rps of this ShowMonitorDataResponse.
 
         目标库RPS。
 
@@ -415,7 +415,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @dst_rps.setter
     def dst_rps(self, dst_rps):
-        """Sets the dst_rps of this ShowMonitorDataResponse.
+        r"""Sets the dst_rps of this ShowMonitorDataResponse.
 
         目标库RPS。
 
@@ -426,7 +426,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def dst_io(self):
-        """Gets the dst_io of this ShowMonitorDataResponse.
+        r"""Gets the dst_io of this ShowMonitorDataResponse.
 
         目标库IO。
 
@@ -437,7 +437,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @dst_io.setter
     def dst_io(self, dst_io):
-        """Sets the dst_io of this ShowMonitorDataResponse.
+        r"""Sets the dst_io of this ShowMonitorDataResponse.
 
         目标库IO。
 
@@ -448,7 +448,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def trans_data(self):
-        """Gets the trans_data of this ShowMonitorDataResponse.
+        r"""Gets the trans_data of this ShowMonitorDataResponse.
 
         迁移数据量。单位：MB
 
@@ -459,7 +459,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @trans_data.setter
     def trans_data(self, trans_data):
-        """Sets the trans_data of this ShowMonitorDataResponse.
+        r"""Sets the trans_data of this ShowMonitorDataResponse.
 
         迁移数据量。单位：MB
 
@@ -470,7 +470,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def trans_lines(self):
-        """Gets the trans_lines of this ShowMonitorDataResponse.
+        r"""Gets the trans_lines of this ShowMonitorDataResponse.
 
         迁移数据行数。
 
@@ -481,7 +481,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @trans_lines.setter
     def trans_lines(self, trans_lines):
-        """Sets the trans_lines of this ShowMonitorDataResponse.
+        r"""Sets the trans_lines of this ShowMonitorDataResponse.
 
         迁移数据行数。
 
@@ -492,7 +492,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def used_volumes(self):
-        """Gets the used_volumes of this ShowMonitorDataResponse.
+        r"""Gets the used_volumes of this ShowMonitorDataResponse.
 
         磁盘使用量。单位：GB
 
@@ -503,7 +503,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @used_volumes.setter
     def used_volumes(self, used_volumes):
-        """Sets the used_volumes of this ShowMonitorDataResponse.
+        r"""Sets the used_volumes of this ShowMonitorDataResponse.
 
         磁盘使用量。单位：GB
 
@@ -514,7 +514,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def used_memory(self):
-        """Gets the used_memory of this ShowMonitorDataResponse.
+        r"""Gets the used_memory of this ShowMonitorDataResponse.
 
         内存使用量。单位：MB
 
@@ -525,7 +525,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @used_memory.setter
     def used_memory(self, used_memory):
-        """Sets the used_memory of this ShowMonitorDataResponse.
+        r"""Sets the used_memory of this ShowMonitorDataResponse.
 
         内存使用量。单位：MB
 
@@ -536,7 +536,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def used_cpu_percent(self):
-        """Gets the used_cpu_percent of this ShowMonitorDataResponse.
+        r"""Gets the used_cpu_percent of this ShowMonitorDataResponse.
 
         CPU使用百分比。
 
@@ -547,7 +547,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @used_cpu_percent.setter
     def used_cpu_percent(self, used_cpu_percent):
-        """Sets the used_cpu_percent of this ShowMonitorDataResponse.
+        r"""Sets the used_cpu_percent of this ShowMonitorDataResponse.
 
         CPU使用百分比。
 
@@ -558,7 +558,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def node_volume_size(self):
-        """Gets the node_volume_size of this ShowMonitorDataResponse.
+        r"""Gets the node_volume_size of this ShowMonitorDataResponse.
 
         node磁盘总大小。单位：GB
 
@@ -569,7 +569,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @node_volume_size.setter
     def node_volume_size(self, node_volume_size):
-        """Sets the node_volume_size of this ShowMonitorDataResponse.
+        r"""Sets the node_volume_size of this ShowMonitorDataResponse.
 
         node磁盘总大小。单位：GB
 
@@ -580,7 +580,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def node_memory_size(self):
-        """Gets the node_memory_size of this ShowMonitorDataResponse.
+        r"""Gets the node_memory_size of this ShowMonitorDataResponse.
 
         node内存总大小。单位：MB
 
@@ -591,7 +591,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @node_memory_size.setter
     def node_memory_size(self, node_memory_size):
-        """Sets the node_memory_size of this ShowMonitorDataResponse.
+        r"""Sets the node_memory_size of this ShowMonitorDataResponse.
 
         node内存总大小。单位：MB
 
@@ -602,7 +602,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowMonitorDataResponse.
+        r"""Gets the update_time of this ShowMonitorDataResponse.
 
         更新时间。
 
@@ -613,7 +613,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowMonitorDataResponse.
+        r"""Sets the update_time of this ShowMonitorDataResponse.
 
         更新时间。
 
@@ -624,7 +624,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @property
     def apply_rate(self):
-        """Gets the apply_rate of this ShowMonitorDataResponse.
+        r"""Gets the apply_rate of this ShowMonitorDataResponse.
 
         同步速度。单位：byte/s
 
@@ -635,7 +635,7 @@ class ShowMonitorDataResponse(SdkResponse):
 
     @apply_rate.setter
     def apply_rate(self, apply_rate):
-        """Sets the apply_rate of this ShowMonitorDataResponse.
+        r"""Sets the apply_rate of this ShowMonitorDataResponse.
 
         同步速度。单位：byte/s
 

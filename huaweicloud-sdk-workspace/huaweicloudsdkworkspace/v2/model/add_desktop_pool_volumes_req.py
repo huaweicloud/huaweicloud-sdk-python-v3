@@ -27,7 +27,7 @@ class AddDesktopPoolVolumesReq:
     }
 
     def __init__(self, order_id=None, volumes=None):
-        """AddDesktopPoolVolumesReq
+        r"""AddDesktopPoolVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddDesktopPoolVolumesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this AddDesktopPoolVolumesReq.
+        r"""Gets the order_id of this AddDesktopPoolVolumesReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -61,7 +61,7 @@ class AddDesktopPoolVolumesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this AddDesktopPoolVolumesReq.
+        r"""Sets the order_id of this AddDesktopPoolVolumesReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -72,7 +72,7 @@ class AddDesktopPoolVolumesReq:
 
     @property
     def volumes(self):
-        """Gets the volumes of this AddDesktopPoolVolumesReq.
+        r"""Gets the volumes of this AddDesktopPoolVolumesReq.
 
         增加的磁盘列表。
 
@@ -83,7 +83,7 @@ class AddDesktopPoolVolumesReq:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this AddDesktopPoolVolumesReq.
+        r"""Sets the volumes of this AddDesktopPoolVolumesReq.
 
         增加的磁盘列表。
 

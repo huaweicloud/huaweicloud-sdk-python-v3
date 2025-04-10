@@ -27,7 +27,7 @@ class DeleteAssetRequest:
     }
 
     def __init__(self, workspace=None, guid=None):
-        """DeleteAssetRequest
+        r"""DeleteAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAssetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteAssetRequest.
+        r"""Gets the workspace of this DeleteAssetRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DeleteAssetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteAssetRequest.
+        r"""Sets the workspace of this DeleteAssetRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DeleteAssetRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this DeleteAssetRequest.
+        r"""Gets the guid of this DeleteAssetRequest.
 
         资产的guid
 
@@ -81,7 +81,7 @@ class DeleteAssetRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this DeleteAssetRequest.
+        r"""Sets the guid of this DeleteAssetRequest.
 
         资产的guid
 

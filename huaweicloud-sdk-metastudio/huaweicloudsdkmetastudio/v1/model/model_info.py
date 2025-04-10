@@ -29,7 +29,7 @@ class ModelInfo:
     }
 
     def __init__(self, model_asset_id=None, asset_name=None, backup_model_asset_ids=None):
-        """ModelInfo
+        r"""ModelInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ModelInfo:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this ModelInfo.
+        r"""Gets the model_asset_id of this ModelInfo.
 
         模型资产ID，可以从资产库中查询。
 
@@ -68,7 +68,7 @@ class ModelInfo:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this ModelInfo.
+        r"""Sets the model_asset_id of this ModelInfo.
 
         模型资产ID，可以从资产库中查询。
 
@@ -79,7 +79,7 @@ class ModelInfo:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this ModelInfo.
+        r"""Gets the asset_name of this ModelInfo.
 
         资产名称
 
@@ -90,7 +90,7 @@ class ModelInfo:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this ModelInfo.
+        r"""Sets the asset_name of this ModelInfo.
 
         资产名称
 
@@ -101,7 +101,7 @@ class ModelInfo:
 
     @property
     def backup_model_asset_ids(self):
-        """Gets the backup_model_asset_ids of this ModelInfo.
+        r"""Gets the backup_model_asset_ids of this ModelInfo.
 
         主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 
@@ -112,7 +112,7 @@ class ModelInfo:
 
     @backup_model_asset_ids.setter
     def backup_model_asset_ids(self, backup_model_asset_ids):
-        """Sets the backup_model_asset_ids of this ModelInfo.
+        r"""Sets the backup_model_asset_ids of this ModelInfo.
 
         主播轮换时备选主播数字人资产ID（仅形象资产，不包含音色），可以从资产库中查询。
 

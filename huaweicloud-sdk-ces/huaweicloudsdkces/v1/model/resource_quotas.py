@@ -31,7 +31,7 @@ class ResourceQuotas:
     }
 
     def __init__(self, type=None, used=None, unit=None, quota=None):
-        """ResourceQuotas
+        r"""ResourceQuotas
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ResourceQuotas:
 
     @property
     def type(self):
-        """Gets the type of this ResourceQuotas.
+        r"""Gets the type of this ResourceQuotas.
 
         配额类型。  枚举值说明：  alarm，告警规则
 
@@ -71,7 +71,7 @@ class ResourceQuotas:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceQuotas.
+        r"""Sets the type of this ResourceQuotas.
 
         配额类型。  枚举值说明：  alarm，告警规则
 
@@ -82,7 +82,7 @@ class ResourceQuotas:
 
     @property
     def used(self):
-        """Gets the used of this ResourceQuotas.
+        r"""Gets the used of this ResourceQuotas.
 
         已使用配额数。
 
@@ -93,7 +93,7 @@ class ResourceQuotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ResourceQuotas.
+        r"""Sets the used of this ResourceQuotas.
 
         已使用配额数。
 
@@ -104,7 +104,7 @@ class ResourceQuotas:
 
     @property
     def unit(self):
-        """Gets the unit of this ResourceQuotas.
+        r"""Gets the unit of this ResourceQuotas.
 
         单位。
 
@@ -115,7 +115,7 @@ class ResourceQuotas:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ResourceQuotas.
+        r"""Sets the unit of this ResourceQuotas.
 
         单位。
 
@@ -126,7 +126,7 @@ class ResourceQuotas:
 
     @property
     def quota(self):
-        """Gets the quota of this ResourceQuotas.
+        r"""Gets the quota of this ResourceQuotas.
 
         配额总数。
 
@@ -137,7 +137,7 @@ class ResourceQuotas:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ResourceQuotas.
+        r"""Sets the quota of this ResourceQuotas.
 
         配额总数。
 

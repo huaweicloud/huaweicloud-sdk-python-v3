@@ -31,7 +31,7 @@ class ResumePluginExtensionsRequestBody:
     }
 
     def __init__(self, plugin_name=None, db_list=None, extension_name=None, extension_action=None):
-        """ResumePluginExtensionsRequestBody
+        r"""ResumePluginExtensionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ResumePluginExtensionsRequestBody:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ResumePluginExtensionsRequestBody.
+        r"""Gets the plugin_name of this ResumePluginExtensionsRequestBody.
 
         插件名称
 
@@ -71,7 +71,7 @@ class ResumePluginExtensionsRequestBody:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ResumePluginExtensionsRequestBody.
+        r"""Sets the plugin_name of this ResumePluginExtensionsRequestBody.
 
         插件名称
 
@@ -82,7 +82,7 @@ class ResumePluginExtensionsRequestBody:
 
     @property
     def db_list(self):
-        """Gets the db_list of this ResumePluginExtensionsRequestBody.
+        r"""Gets the db_list of this ResumePluginExtensionsRequestBody.
 
         数据库列表
 
@@ -93,7 +93,7 @@ class ResumePluginExtensionsRequestBody:
 
     @db_list.setter
     def db_list(self, db_list):
-        """Sets the db_list of this ResumePluginExtensionsRequestBody.
+        r"""Sets the db_list of this ResumePluginExtensionsRequestBody.
 
         数据库列表
 
@@ -104,7 +104,7 @@ class ResumePluginExtensionsRequestBody:
 
     @property
     def extension_name(self):
-        """Gets the extension_name of this ResumePluginExtensionsRequestBody.
+        r"""Gets the extension_name of this ResumePluginExtensionsRequestBody.
 
         拓展模块名称
 
@@ -115,7 +115,7 @@ class ResumePluginExtensionsRequestBody:
 
     @extension_name.setter
     def extension_name(self, extension_name):
-        """Sets the extension_name of this ResumePluginExtensionsRequestBody.
+        r"""Sets the extension_name of this ResumePluginExtensionsRequestBody.
 
         拓展模块名称
 
@@ -126,7 +126,7 @@ class ResumePluginExtensionsRequestBody:
 
     @property
     def extension_action(self):
-        """Gets the extension_action of this ResumePluginExtensionsRequestBody.
+        r"""Gets the extension_action of this ResumePluginExtensionsRequestBody.
 
         扩展开关。on表示开启，off表示关闭。
 
@@ -137,7 +137,7 @@ class ResumePluginExtensionsRequestBody:
 
     @extension_action.setter
     def extension_action(self, extension_action):
-        """Sets the extension_action of this ResumePluginExtensionsRequestBody.
+        r"""Sets the extension_action of this ResumePluginExtensionsRequestBody.
 
         扩展开关。on表示开启，off表示关闭。
 

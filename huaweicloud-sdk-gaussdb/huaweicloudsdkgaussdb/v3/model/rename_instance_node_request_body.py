@@ -25,7 +25,7 @@ class RenameInstanceNodeRequestBody:
     }
 
     def __init__(self, node_list=None):
-        """RenameInstanceNodeRequestBody
+        r"""RenameInstanceNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RenameInstanceNodeRequestBody:
 
     @property
     def node_list(self):
-        """Gets the node_list of this RenameInstanceNodeRequestBody.
+        r"""Gets the node_list of this RenameInstanceNodeRequestBody.
 
         节点信息列表
 
@@ -53,7 +53,7 @@ class RenameInstanceNodeRequestBody:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this RenameInstanceNodeRequestBody.
+        r"""Sets the node_list of this RenameInstanceNodeRequestBody.
 
         节点信息列表
 

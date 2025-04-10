@@ -25,7 +25,7 @@ class DeleteRecordRuleRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteRecordRuleRequest
+        r"""DeleteRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRecordRuleRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteRecordRuleRequest.
+        r"""Gets the id of this DeleteRecordRuleRequest.
 
         规则ID
 
@@ -53,7 +53,7 @@ class DeleteRecordRuleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteRecordRuleRequest.
+        r"""Sets the id of this DeleteRecordRuleRequest.
 
         规则ID
 

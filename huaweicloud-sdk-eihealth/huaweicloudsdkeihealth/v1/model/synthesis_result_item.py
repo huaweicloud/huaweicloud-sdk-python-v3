@@ -27,7 +27,7 @@ class SynthesisResultItem:
     }
 
     def __init__(self, route=None, score=None):
-        """SynthesisResultItem
+        r"""SynthesisResultItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SynthesisResultItem:
 
     @property
     def route(self):
-        """Gets the route of this SynthesisResultItem.
+        r"""Gets the route of this SynthesisResultItem.
 
         分子合成规划，列表内是reactions id
 
@@ -59,7 +59,7 @@ class SynthesisResultItem:
 
     @route.setter
     def route(self, route):
-        """Sets the route of this SynthesisResultItem.
+        r"""Sets the route of this SynthesisResultItem.
 
         分子合成规划，列表内是reactions id
 
@@ -70,7 +70,7 @@ class SynthesisResultItem:
 
     @property
     def score(self):
-        """Gets the score of this SynthesisResultItem.
+        r"""Gets the score of this SynthesisResultItem.
 
         当前分子合成路径的得分
 
@@ -81,7 +81,7 @@ class SynthesisResultItem:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this SynthesisResultItem.
+        r"""Sets the score of this SynthesisResultItem.
 
         当前分子合成路径的得分
 

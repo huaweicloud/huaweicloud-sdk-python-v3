@@ -33,7 +33,7 @@ class MigrationRabbitBindingMetadata:
     }
 
     def __init__(self, vhost=None, source=None, destination=None, destination_type=None, routing_key=None):
-        """MigrationRabbitBindingMetadata
+        r"""MigrationRabbitBindingMetadata
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MigrationRabbitBindingMetadata:
 
     @property
     def vhost(self):
-        """Gets the vhost of this MigrationRabbitBindingMetadata.
+        r"""Gets the vhost of this MigrationRabbitBindingMetadata.
 
         vhost名称。
 
@@ -82,7 +82,7 @@ class MigrationRabbitBindingMetadata:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this MigrationRabbitBindingMetadata.
+        r"""Sets the vhost of this MigrationRabbitBindingMetadata.
 
         vhost名称。
 
@@ -93,7 +93,7 @@ class MigrationRabbitBindingMetadata:
 
     @property
     def source(self):
-        """Gets the source of this MigrationRabbitBindingMetadata.
+        r"""Gets the source of this MigrationRabbitBindingMetadata.
 
         消息的来源。
 
@@ -104,7 +104,7 @@ class MigrationRabbitBindingMetadata:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this MigrationRabbitBindingMetadata.
+        r"""Sets the source of this MigrationRabbitBindingMetadata.
 
         消息的来源。
 
@@ -115,7 +115,7 @@ class MigrationRabbitBindingMetadata:
 
     @property
     def destination(self):
-        """Gets the destination of this MigrationRabbitBindingMetadata.
+        r"""Gets the destination of this MigrationRabbitBindingMetadata.
 
         消息的目标。
 
@@ -126,7 +126,7 @@ class MigrationRabbitBindingMetadata:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this MigrationRabbitBindingMetadata.
+        r"""Sets the destination of this MigrationRabbitBindingMetadata.
 
         消息的目标。
 
@@ -137,7 +137,7 @@ class MigrationRabbitBindingMetadata:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this MigrationRabbitBindingMetadata.
+        r"""Gets the destination_type of this MigrationRabbitBindingMetadata.
 
         目标的类型。
 
@@ -148,7 +148,7 @@ class MigrationRabbitBindingMetadata:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this MigrationRabbitBindingMetadata.
+        r"""Sets the destination_type of this MigrationRabbitBindingMetadata.
 
         目标的类型。
 
@@ -159,7 +159,7 @@ class MigrationRabbitBindingMetadata:
 
     @property
     def routing_key(self):
-        """Gets the routing_key of this MigrationRabbitBindingMetadata.
+        r"""Gets the routing_key of this MigrationRabbitBindingMetadata.
 
         路由键。
 
@@ -170,7 +170,7 @@ class MigrationRabbitBindingMetadata:
 
     @routing_key.setter
     def routing_key(self, routing_key):
-        """Sets the routing_key of this MigrationRabbitBindingMetadata.
+        r"""Sets the routing_key of this MigrationRabbitBindingMetadata.
 
         路由键。
 

@@ -40,7 +40,7 @@ class ShowCorpAdminResponse(SdkResponse):
     }
 
     def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, dept=None):
-        """ShowCorpAdminResponse
+        r"""ShowCorpAdminResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowCorpAdminResponse.
+        r"""Gets the id of this ShowCorpAdminResponse.
 
         用户UUID。
 
@@ -104,7 +104,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCorpAdminResponse.
+        r"""Sets the id of this ShowCorpAdminResponse.
 
         用户UUID。
 
@@ -115,7 +115,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def account(self):
-        """Gets the account of this ShowCorpAdminResponse.
+        r"""Gets the account of this ShowCorpAdminResponse.
 
         用户帐号（华为云会议帐号）。
 
@@ -126,7 +126,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @account.setter
     def account(self, account):
-        """Sets the account of this ShowCorpAdminResponse.
+        r"""Sets the account of this ShowCorpAdminResponse.
 
         用户帐号（华为云会议帐号）。
 
@@ -137,7 +137,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowCorpAdminResponse.
+        r"""Gets the name of this ShowCorpAdminResponse.
 
         用户名称。
 
@@ -148,7 +148,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCorpAdminResponse.
+        r"""Sets the name of this ShowCorpAdminResponse.
 
         用户名称。
 
@@ -159,7 +159,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this ShowCorpAdminResponse.
+        r"""Gets the admin_type of this ShowCorpAdminResponse.
 
         管理员类型。 * 0：默认管理员 * 1：普通管理员 
 
@@ -170,7 +170,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this ShowCorpAdminResponse.
+        r"""Sets the admin_type of this ShowCorpAdminResponse.
 
         管理员类型。 * 0：默认管理员 * 1：普通管理员 
 
@@ -181,7 +181,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowCorpAdminResponse.
+        r"""Gets the email of this ShowCorpAdminResponse.
 
         邮箱地址。
 
@@ -192,7 +192,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowCorpAdminResponse.
+        r"""Sets the email of this ShowCorpAdminResponse.
 
         邮箱地址。
 
@@ -203,7 +203,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def phone(self):
-        """Gets the phone of this ShowCorpAdminResponse.
+        r"""Gets the phone of this ShowCorpAdminResponse.
 
         手机号。
 
@@ -214,7 +214,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ShowCorpAdminResponse.
+        r"""Sets the phone of this ShowCorpAdminResponse.
 
         手机号。
 
@@ -225,7 +225,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def country(self):
-        """Gets the country of this ShowCorpAdminResponse.
+        r"""Gets the country of this ShowCorpAdminResponse.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -236,7 +236,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ShowCorpAdminResponse.
+        r"""Sets the country of this ShowCorpAdminResponse.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -247,7 +247,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @property
     def dept(self):
-        """Gets the dept of this ShowCorpAdminResponse.
+        r"""Gets the dept of this ShowCorpAdminResponse.
 
         :return: The dept of this ShowCorpAdminResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`
@@ -256,7 +256,7 @@ class ShowCorpAdminResponse(SdkResponse):
 
     @dept.setter
     def dept(self, dept):
-        """Sets the dept of this ShowCorpAdminResponse.
+        r"""Sets the dept of this ShowCorpAdminResponse.
 
         :param dept: The dept of this ShowCorpAdminResponse.
         :type dept: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`

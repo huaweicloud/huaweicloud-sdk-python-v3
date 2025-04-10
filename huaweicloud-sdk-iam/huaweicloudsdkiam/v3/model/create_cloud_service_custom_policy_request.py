@@ -25,7 +25,7 @@ class CreateCloudServiceCustomPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCloudServiceCustomPolicyRequest
+        r"""CreateCloudServiceCustomPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCloudServiceCustomPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCloudServiceCustomPolicyRequest.
+        r"""Gets the body of this CreateCloudServiceCustomPolicyRequest.
 
         :return: The body of this CreateCloudServiceCustomPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyRequestBody`
@@ -52,7 +52,7 @@ class CreateCloudServiceCustomPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCloudServiceCustomPolicyRequest.
+        r"""Sets the body of this CreateCloudServiceCustomPolicyRequest.
 
         :param body: The body of this CreateCloudServiceCustomPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyRequestBody`

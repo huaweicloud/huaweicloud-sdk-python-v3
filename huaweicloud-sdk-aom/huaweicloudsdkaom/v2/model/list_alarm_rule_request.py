@@ -27,7 +27,7 @@ class ListAlarmRuleRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListAlarmRuleRequest
+        r"""ListAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAlarmRuleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmRuleRequest.
+        r"""Gets the offset of this ListAlarmRuleRequest.
 
         分页信息。
 
@@ -61,7 +61,7 @@ class ListAlarmRuleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmRuleRequest.
+        r"""Sets the offset of this ListAlarmRuleRequest.
 
         分页信息。
 
@@ -72,7 +72,7 @@ class ListAlarmRuleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmRuleRequest.
+        r"""Gets the limit of this ListAlarmRuleRequest.
 
         用于限制结果数据条数。 取值范围(0,1000]，默认值为1000。
 
@@ -83,7 +83,7 @@ class ListAlarmRuleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmRuleRequest.
+        r"""Sets the limit of this ListAlarmRuleRequest.
 
         用于限制结果数据条数。 取值范围(0,1000]，默认值为1000。
 

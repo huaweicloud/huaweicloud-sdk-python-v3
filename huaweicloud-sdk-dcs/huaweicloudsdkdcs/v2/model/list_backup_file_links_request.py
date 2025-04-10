@@ -29,7 +29,7 @@ class ListBackupFileLinksRequest:
     }
 
     def __init__(self, instance_id=None, backup_id=None, body=None):
-        """ListBackupFileLinksRequest
+        r"""ListBackupFileLinksRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListBackupFileLinksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBackupFileLinksRequest.
+        r"""Gets the instance_id of this ListBackupFileLinksRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ListBackupFileLinksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBackupFileLinksRequest.
+        r"""Sets the instance_id of this ListBackupFileLinksRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ListBackupFileLinksRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ListBackupFileLinksRequest.
+        r"""Gets the backup_id of this ListBackupFileLinksRequest.
 
         备份记录ID。
 
@@ -88,7 +88,7 @@ class ListBackupFileLinksRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ListBackupFileLinksRequest.
+        r"""Sets the backup_id of this ListBackupFileLinksRequest.
 
         备份记录ID。
 
@@ -99,7 +99,7 @@ class ListBackupFileLinksRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListBackupFileLinksRequest.
+        r"""Gets the body of this ListBackupFileLinksRequest.
 
         :return: The body of this ListBackupFileLinksRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.DownloadBackupFilesReq`
@@ -108,7 +108,7 @@ class ListBackupFileLinksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBackupFileLinksRequest.
+        r"""Sets the body of this ListBackupFileLinksRequest.
 
         :param body: The body of this ListBackupFileLinksRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.DownloadBackupFilesReq`

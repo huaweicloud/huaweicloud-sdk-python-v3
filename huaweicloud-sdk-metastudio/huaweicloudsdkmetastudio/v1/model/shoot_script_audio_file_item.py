@@ -31,7 +31,7 @@ class ShootScriptAudioFileItem:
     }
 
     def __init__(self, sequence_no=None, audio_file_upload_url=None, audio_file_download_url=None, audio_id=None):
-        """ShootScriptAudioFileItem
+        r"""ShootScriptAudioFileItem
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShootScriptAudioFileItem:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this ShootScriptAudioFileItem.
+        r"""Gets the sequence_no of this ShootScriptAudioFileItem.
 
         剧本序号。
 
@@ -74,7 +74,7 @@ class ShootScriptAudioFileItem:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this ShootScriptAudioFileItem.
+        r"""Sets the sequence_no of this ShootScriptAudioFileItem.
 
         剧本序号。
 
@@ -85,7 +85,7 @@ class ShootScriptAudioFileItem:
 
     @property
     def audio_file_upload_url(self):
-        """Gets the audio_file_upload_url of this ShootScriptAudioFileItem.
+        r"""Gets the audio_file_upload_url of this ShootScriptAudioFileItem.
 
         语音驱动音频文件上传URL。创建和更新脚本时返回。单个文件最大100M。支持上传MP3/WAV/M4A文件。
 
@@ -96,7 +96,7 @@ class ShootScriptAudioFileItem:
 
     @audio_file_upload_url.setter
     def audio_file_upload_url(self, audio_file_upload_url):
-        """Sets the audio_file_upload_url of this ShootScriptAudioFileItem.
+        r"""Sets the audio_file_upload_url of this ShootScriptAudioFileItem.
 
         语音驱动音频文件上传URL。创建和更新脚本时返回。单个文件最大100M。支持上传MP3/WAV/M4A文件。
 
@@ -107,7 +107,7 @@ class ShootScriptAudioFileItem:
 
     @property
     def audio_file_download_url(self):
-        """Gets the audio_file_download_url of this ShootScriptAudioFileItem.
+        r"""Gets the audio_file_download_url of this ShootScriptAudioFileItem.
 
         语音驱动音频文件下载URL。查询脚本详情时返回。
 
@@ -118,7 +118,7 @@ class ShootScriptAudioFileItem:
 
     @audio_file_download_url.setter
     def audio_file_download_url(self, audio_file_download_url):
-        """Sets the audio_file_download_url of this ShootScriptAudioFileItem.
+        r"""Sets the audio_file_download_url of this ShootScriptAudioFileItem.
 
         语音驱动音频文件下载URL。查询脚本详情时返回。
 
@@ -129,7 +129,7 @@ class ShootScriptAudioFileItem:
 
     @property
     def audio_id(self):
-        """Gets the audio_id of this ShootScriptAudioFileItem.
+        r"""Gets the audio_id of this ShootScriptAudioFileItem.
 
         audio id
 
@@ -140,7 +140,7 @@ class ShootScriptAudioFileItem:
 
     @audio_id.setter
     def audio_id(self, audio_id):
-        """Sets the audio_id of this ShootScriptAudioFileItem.
+        r"""Sets the audio_id of this ShootScriptAudioFileItem.
 
         audio id
 

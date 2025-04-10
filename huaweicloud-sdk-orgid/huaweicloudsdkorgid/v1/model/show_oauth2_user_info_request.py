@@ -25,7 +25,7 @@ class ShowOauth2UserInfoRequest:
     }
 
     def __init__(self, x_org_id_authorization=None):
-        """ShowOauth2UserInfoRequest
+        r"""ShowOauth2UserInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowOauth2UserInfoRequest:
 
     @property
     def x_org_id_authorization(self):
-        """Gets the x_org_id_authorization of this ShowOauth2UserInfoRequest.
+        r"""Gets the x_org_id_authorization of this ShowOauth2UserInfoRequest.
 
         用户访问凭证，即 user_access_token, 示例值：\"Bearer u-7f1bcd13fc57d46bac21793a18e560\"
 
@@ -53,7 +53,7 @@ class ShowOauth2UserInfoRequest:
 
     @x_org_id_authorization.setter
     def x_org_id_authorization(self, x_org_id_authorization):
-        """Sets the x_org_id_authorization of this ShowOauth2UserInfoRequest.
+        r"""Sets the x_org_id_authorization of this ShowOauth2UserInfoRequest.
 
         用户访问凭证，即 user_access_token, 示例值：\"Bearer u-7f1bcd13fc57d46bac21793a18e560\"
 

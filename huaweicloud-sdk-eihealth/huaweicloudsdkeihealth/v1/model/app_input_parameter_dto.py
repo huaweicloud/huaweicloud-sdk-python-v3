@@ -39,7 +39,7 @@ class AppInputParameterDto:
     }
 
     def __init__(self, name=None, description=None, required=None, concurrent=None, type=None, pattern=None, values=None, enum=None):
-        """AppInputParameterDto
+        r"""AppInputParameterDto
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class AppInputParameterDto:
 
     @property
     def name(self):
-        """Gets the name of this AppInputParameterDto.
+        r"""Gets the name of this AppInputParameterDto.
 
         参数名称，单个应用内唯一。取值范围：长度为[1,32]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -100,7 +100,7 @@ class AppInputParameterDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppInputParameterDto.
+        r"""Sets the name of this AppInputParameterDto.
 
         参数名称，单个应用内唯一。取值范围：长度为[1,32]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -111,7 +111,7 @@ class AppInputParameterDto:
 
     @property
     def description(self):
-        """Gets the description of this AppInputParameterDto.
+        r"""Gets the description of this AppInputParameterDto.
 
         参数描述。取值范围：[0-255]
 
@@ -122,7 +122,7 @@ class AppInputParameterDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppInputParameterDto.
+        r"""Sets the description of this AppInputParameterDto.
 
         参数描述。取值范围：[0-255]
 
@@ -133,7 +133,7 @@ class AppInputParameterDto:
 
     @property
     def required(self):
-        """Gets the required of this AppInputParameterDto.
+        r"""Gets the required of this AppInputParameterDto.
 
         参数是否必须
 
@@ -144,7 +144,7 @@ class AppInputParameterDto:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this AppInputParameterDto.
+        r"""Sets the required of this AppInputParameterDto.
 
         参数是否必须
 
@@ -155,7 +155,7 @@ class AppInputParameterDto:
 
     @property
     def concurrent(self):
-        """Gets the concurrent of this AppInputParameterDto.
+        r"""Gets the concurrent of this AppInputParameterDto.
 
         参数是否开启并发。当前支持vars_iter并发类型，不填表示未开启并发。
 
@@ -166,7 +166,7 @@ class AppInputParameterDto:
 
     @concurrent.setter
     def concurrent(self, concurrent):
-        """Sets the concurrent of this AppInputParameterDto.
+        r"""Sets the concurrent of this AppInputParameterDto.
 
         参数是否开启并发。当前支持vars_iter并发类型，不填表示未开启并发。
 
@@ -177,7 +177,7 @@ class AppInputParameterDto:
 
     @property
     def type(self):
-        """Gets the type of this AppInputParameterDto.
+        r"""Gets the type of this AppInputParameterDto.
 
         参数类型。取值：[STRING，FILE，DIRECTORY，ENUM]
 
@@ -188,7 +188,7 @@ class AppInputParameterDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AppInputParameterDto.
+        r"""Sets the type of this AppInputParameterDto.
 
         参数类型。取值：[STRING，FILE，DIRECTORY，ENUM]
 
@@ -199,7 +199,7 @@ class AppInputParameterDto:
 
     @property
     def pattern(self):
-        """Gets the pattern of this AppInputParameterDto.
+        r"""Gets the pattern of this AppInputParameterDto.
 
         提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
 
@@ -210,7 +210,7 @@ class AppInputParameterDto:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this AppInputParameterDto.
+        r"""Sets the pattern of this AppInputParameterDto.
 
         提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
 
@@ -221,7 +221,7 @@ class AppInputParameterDto:
 
     @property
     def values(self):
-        """Gets the values of this AppInputParameterDto.
+        r"""Gets the values of this AppInputParameterDto.
 
         参数取值 如填写，只支持填一项，根据参数类型进行不同的校验
 
@@ -232,7 +232,7 @@ class AppInputParameterDto:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this AppInputParameterDto.
+        r"""Sets the values of this AppInputParameterDto.
 
         参数取值 如填写，只支持填一项，根据参数类型进行不同的校验
 
@@ -243,7 +243,7 @@ class AppInputParameterDto:
 
     @property
     def enum(self):
-        """Gets the enum of this AppInputParameterDto.
+        r"""Gets the enum of this AppInputParameterDto.
 
         枚举参数的取值列表，列表最大长度20，每一项字符串最长128。参数类型为ENUM时需要填此字段
 
@@ -254,7 +254,7 @@ class AppInputParameterDto:
 
     @enum.setter
     def enum(self, enum):
-        """Sets the enum of this AppInputParameterDto.
+        r"""Sets the enum of this AppInputParameterDto.
 
         枚举参数的取值列表，列表最大长度20，每一项字符串最长128。参数类型为ENUM时需要填此字段
 

@@ -28,7 +28,7 @@ class ShowQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None, page_info=None):
-        """ShowQuotasResponse
+        r"""ShowQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowQuotasResponse.
+        r"""Gets the quotas of this ShowQuotasResponse.
 
         配额使用详情
 
@@ -62,7 +62,7 @@ class ShowQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowQuotasResponse.
+        r"""Sets the quotas of this ShowQuotasResponse.
 
         配额使用详情
 
@@ -73,7 +73,7 @@ class ShowQuotasResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowQuotasResponse.
+        r"""Gets the page_info of this ShowQuotasResponse.
 
         :return: The page_info of this ShowQuotasResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -82,7 +82,7 @@ class ShowQuotasResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowQuotasResponse.
+        r"""Sets the page_info of this ShowQuotasResponse.
 
         :param page_info: The page_info of this ShowQuotasResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`

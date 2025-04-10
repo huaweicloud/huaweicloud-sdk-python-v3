@@ -27,7 +27,7 @@ class SubscribeDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """SubscribeDataRequest
+        r"""SubscribeDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SubscribeDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this SubscribeDataRequest.
+        r"""Gets the eihealth_project_id of this SubscribeDataRequest.
 
         资产订阅目标项目
 
@@ -60,7 +60,7 @@ class SubscribeDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this SubscribeDataRequest.
+        r"""Sets the eihealth_project_id of this SubscribeDataRequest.
 
         资产订阅目标项目
 
@@ -71,7 +71,7 @@ class SubscribeDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this SubscribeDataRequest.
+        r"""Gets the body of this SubscribeDataRequest.
 
         :return: The body of this SubscribeDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeDataReq`
@@ -80,7 +80,7 @@ class SubscribeDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SubscribeDataRequest.
+        r"""Sets the body of this SubscribeDataRequest.
 
         :param body: The body of this SubscribeDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SubscribeDataReq`

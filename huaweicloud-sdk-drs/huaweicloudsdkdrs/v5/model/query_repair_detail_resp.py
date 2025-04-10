@@ -27,7 +27,7 @@ class QueryRepairDetailResp:
     }
 
     def __init__(self, count=None, repair_details=None):
-        """QueryRepairDetailResp
+        r"""QueryRepairDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryRepairDetailResp:
 
     @property
     def count(self):
-        """Gets the count of this QueryRepairDetailResp.
+        r"""Gets the count of this QueryRepairDetailResp.
 
         总数。
 
@@ -61,7 +61,7 @@ class QueryRepairDetailResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this QueryRepairDetailResp.
+        r"""Sets the count of this QueryRepairDetailResp.
 
         总数。
 
@@ -72,7 +72,7 @@ class QueryRepairDetailResp:
 
     @property
     def repair_details(self):
-        """Gets the repair_details of this QueryRepairDetailResp.
+        r"""Gets the repair_details of this QueryRepairDetailResp.
 
         修复详情。
 
@@ -83,7 +83,7 @@ class QueryRepairDetailResp:
 
     @repair_details.setter
     def repair_details(self, repair_details):
-        """Sets the repair_details of this QueryRepairDetailResp.
+        r"""Sets the repair_details of this QueryRepairDetailResp.
 
         修复详情。
 

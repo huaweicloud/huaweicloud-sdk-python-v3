@@ -27,7 +27,7 @@ class CreateReportPrometheusEventRequest:
     }
 
     def __init__(self, integration_key=None, body=None):
-        """CreateReportPrometheusEventRequest
+        r"""CreateReportPrometheusEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateReportPrometheusEventRequest:
 
     @property
     def integration_key(self):
-        """Gets the integration_key of this CreateReportPrometheusEventRequest.
+        r"""Gets the integration_key of this CreateReportPrometheusEventRequest.
 
         集成ID
 
@@ -60,7 +60,7 @@ class CreateReportPrometheusEventRequest:
 
     @integration_key.setter
     def integration_key(self, integration_key):
-        """Sets the integration_key of this CreateReportPrometheusEventRequest.
+        r"""Sets the integration_key of this CreateReportPrometheusEventRequest.
 
         集成ID
 
@@ -71,7 +71,7 @@ class CreateReportPrometheusEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateReportPrometheusEventRequest.
+        r"""Gets the body of this CreateReportPrometheusEventRequest.
 
         :return: The body of this CreateReportPrometheusEventRequest.
         :rtype: dict(str, object)
@@ -80,7 +80,7 @@ class CreateReportPrometheusEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateReportPrometheusEventRequest.
+        r"""Sets the body of this CreateReportPrometheusEventRequest.
 
         :param body: The body of this CreateReportPrometheusEventRequest.
         :type body: dict(str, object)

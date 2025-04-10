@@ -25,7 +25,7 @@ class CreateBindingDeviceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBindingDeviceRequest
+        r"""CreateBindingDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBindingDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBindingDeviceRequest.
+        r"""Gets the body of this CreateBindingDeviceRequest.
 
         :return: The body of this CreateBindingDeviceRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.BindMfaDevice`
@@ -52,7 +52,7 @@ class CreateBindingDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBindingDeviceRequest.
+        r"""Sets the body of this CreateBindingDeviceRequest.
 
         :param body: The body of this CreateBindingDeviceRequest.
         :type body: :class:`huaweicloudsdkiam.v3.BindMfaDevice`

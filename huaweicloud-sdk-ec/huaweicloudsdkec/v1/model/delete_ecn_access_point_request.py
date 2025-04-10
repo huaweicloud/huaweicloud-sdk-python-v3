@@ -27,7 +27,7 @@ class DeleteEcnAccessPointRequest:
     }
 
     def __init__(self, ecn_id=None, access_point_id=None):
-        """DeleteEcnAccessPointRequest
+        r"""DeleteEcnAccessPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEcnAccessPointRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this DeleteEcnAccessPointRequest.
+        r"""Gets the ecn_id of this DeleteEcnAccessPointRequest.
 
         企业连接网络ID
 
@@ -59,7 +59,7 @@ class DeleteEcnAccessPointRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this DeleteEcnAccessPointRequest.
+        r"""Sets the ecn_id of this DeleteEcnAccessPointRequest.
 
         企业连接网络ID
 
@@ -70,7 +70,7 @@ class DeleteEcnAccessPointRequest:
 
     @property
     def access_point_id(self):
-        """Gets the access_point_id of this DeleteEcnAccessPointRequest.
+        r"""Gets the access_point_id of this DeleteEcnAccessPointRequest.
 
         企业连接网络接入点ID
 
@@ -81,7 +81,7 @@ class DeleteEcnAccessPointRequest:
 
     @access_point_id.setter
     def access_point_id(self, access_point_id):
-        """Sets the access_point_id of this DeleteEcnAccessPointRequest.
+        r"""Sets the access_point_id of this DeleteEcnAccessPointRequest.
 
         企业连接网络接入点ID
 

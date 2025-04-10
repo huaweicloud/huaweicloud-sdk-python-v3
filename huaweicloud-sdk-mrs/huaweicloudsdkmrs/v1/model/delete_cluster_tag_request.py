@@ -27,7 +27,7 @@ class DeleteClusterTagRequest:
     }
 
     def __init__(self, cluster_id=None, key=None):
-        """DeleteClusterTagRequest
+        r"""DeleteClusterTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteClusterTagRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteClusterTagRequest.
+        r"""Gets the cluster_id of this DeleteClusterTagRequest.
 
         集群ID。
 
@@ -59,7 +59,7 @@ class DeleteClusterTagRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteClusterTagRequest.
+        r"""Sets the cluster_id of this DeleteClusterTagRequest.
 
         集群ID。
 
@@ -70,7 +70,7 @@ class DeleteClusterTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteClusterTagRequest.
+        r"""Gets the key of this DeleteClusterTagRequest.
 
         键。标签的key值
 
@@ -81,7 +81,7 @@ class DeleteClusterTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteClusterTagRequest.
+        r"""Sets the key of this DeleteClusterTagRequest.
 
         键。标签的key值
 

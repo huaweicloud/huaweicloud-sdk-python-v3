@@ -32,7 +32,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None, scene=None):
-        """CreateResIntelligentSceneResponse
+        r"""CreateResIntelligentSceneResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateResIntelligentSceneResponse.
+        r"""Gets the is_success of this CreateResIntelligentSceneResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateResIntelligentSceneResponse.
+        r"""Sets the is_success of this CreateResIntelligentSceneResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateResIntelligentSceneResponse.
+        r"""Gets the message of this CreateResIntelligentSceneResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -98,7 +98,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateResIntelligentSceneResponse.
+        r"""Sets the message of this CreateResIntelligentSceneResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -109,7 +109,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateResIntelligentSceneResponse.
+        r"""Gets the error_code of this CreateResIntelligentSceneResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -120,7 +120,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateResIntelligentSceneResponse.
+        r"""Sets the error_code of this CreateResIntelligentSceneResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -131,7 +131,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @property
     def scene(self):
-        """Gets the scene of this CreateResIntelligentSceneResponse.
+        r"""Gets the scene of this CreateResIntelligentSceneResponse.
 
         :return: The scene of this CreateResIntelligentSceneResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Scene`
@@ -140,7 +140,7 @@ class CreateResIntelligentSceneResponse(SdkResponse):
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this CreateResIntelligentSceneResponse.
+        r"""Sets the scene of this CreateResIntelligentSceneResponse.
 
         :param scene: The scene of this CreateResIntelligentSceneResponse.
         :type scene: :class:`huaweicloudsdkres.v1.Scene`

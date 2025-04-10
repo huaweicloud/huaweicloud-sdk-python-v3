@@ -37,7 +37,7 @@ class ConfigMapResp:
     }
 
     def __init__(self, id=None, name=None, description=None, configs=None, project_id=None, created_at=None, updated_at=None):
-        """ConfigMapResp
+        r"""ConfigMapResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigMapResp:
 
     @property
     def id(self):
-        """Gets the id of this ConfigMapResp.
+        r"""Gets the id of this ConfigMapResp.
 
         配置项ID
 
@@ -89,7 +89,7 @@ class ConfigMapResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigMapResp.
+        r"""Sets the id of this ConfigMapResp.
 
         配置项ID
 
@@ -100,7 +100,7 @@ class ConfigMapResp:
 
     @property
     def name(self):
-        """Gets the name of this ConfigMapResp.
+        r"""Gets the name of this ConfigMapResp.
 
         配置项名称
 
@@ -111,7 +111,7 @@ class ConfigMapResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigMapResp.
+        r"""Sets the name of this ConfigMapResp.
 
         配置项名称
 
@@ -122,7 +122,7 @@ class ConfigMapResp:
 
     @property
     def description(self):
-        """Gets the description of this ConfigMapResp.
+        r"""Gets the description of this ConfigMapResp.
 
         配置项描述
 
@@ -133,7 +133,7 @@ class ConfigMapResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigMapResp.
+        r"""Sets the description of this ConfigMapResp.
 
         配置项描述
 
@@ -144,7 +144,7 @@ class ConfigMapResp:
 
     @property
     def configs(self):
-        """Gets the configs of this ConfigMapResp.
+        r"""Gets the configs of this ConfigMapResp.
 
         配置项键列表
 
@@ -155,7 +155,7 @@ class ConfigMapResp:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ConfigMapResp.
+        r"""Sets the configs of this ConfigMapResp.
 
         配置项键列表
 
@@ -166,7 +166,7 @@ class ConfigMapResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ConfigMapResp.
+        r"""Gets the project_id of this ConfigMapResp.
 
         项目ID
 
@@ -177,7 +177,7 @@ class ConfigMapResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ConfigMapResp.
+        r"""Sets the project_id of this ConfigMapResp.
 
         项目ID
 
@@ -188,7 +188,7 @@ class ConfigMapResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ConfigMapResp.
+        r"""Gets the created_at of this ConfigMapResp.
 
         创建时间
 
@@ -199,7 +199,7 @@ class ConfigMapResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ConfigMapResp.
+        r"""Sets the created_at of this ConfigMapResp.
 
         创建时间
 
@@ -210,7 +210,7 @@ class ConfigMapResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ConfigMapResp.
+        r"""Gets the updated_at of this ConfigMapResp.
 
         更新时间
 
@@ -221,7 +221,7 @@ class ConfigMapResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ConfigMapResp.
+        r"""Sets the updated_at of this ConfigMapResp.
 
         更新时间
 

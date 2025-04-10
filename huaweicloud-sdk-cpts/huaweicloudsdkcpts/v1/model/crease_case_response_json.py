@@ -25,7 +25,7 @@ class CreaseCaseResponseJson:
     }
 
     def __init__(self, test_case_id=None):
-        """CreaseCaseResponseJson
+        r"""CreaseCaseResponseJson
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreaseCaseResponseJson:
 
     @property
     def test_case_id(self):
-        """Gets the test_case_id of this CreaseCaseResponseJson.
+        r"""Gets the test_case_id of this CreaseCaseResponseJson.
 
         用例id
 
@@ -54,7 +54,7 @@ class CreaseCaseResponseJson:
 
     @test_case_id.setter
     def test_case_id(self, test_case_id):
-        """Sets the test_case_id of this CreaseCaseResponseJson.
+        r"""Sets the test_case_id of this CreaseCaseResponseJson.
 
         用例id
 

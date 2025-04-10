@@ -31,7 +31,7 @@ class AddMemberRequestV4:
     }
 
     def __init__(self, domain_name=None, domain_id=None, role_id=None, user_id=None):
-        """AddMemberRequestV4
+        r"""AddMemberRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class AddMemberRequestV4:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AddMemberRequestV4.
+        r"""Gets the domain_name of this AddMemberRequestV4.
 
         租户名称（跨租户添加用户时，填写正确的租户名称，可将未授权的租户主动授权，将用户添加为项目成员）
 
@@ -73,7 +73,7 @@ class AddMemberRequestV4:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AddMemberRequestV4.
+        r"""Sets the domain_name of this AddMemberRequestV4.
 
         租户名称（跨租户添加用户时，填写正确的租户名称，可将未授权的租户主动授权，将用户添加为项目成员）
 
@@ -84,7 +84,7 @@ class AddMemberRequestV4:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AddMemberRequestV4.
+        r"""Gets the domain_id of this AddMemberRequestV4.
 
         租户id
 
@@ -95,7 +95,7 @@ class AddMemberRequestV4:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AddMemberRequestV4.
+        r"""Sets the domain_id of this AddMemberRequestV4.
 
         租户id
 
@@ -106,7 +106,7 @@ class AddMemberRequestV4:
 
     @property
     def role_id(self):
-        """Gets the role_id of this AddMemberRequestV4.
+        r"""Gets the role_id of this AddMemberRequestV4.
 
         '用户在项目中的角色ID' 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -117,7 +117,7 @@ class AddMemberRequestV4:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this AddMemberRequestV4.
+        r"""Sets the role_id of this AddMemberRequestV4.
 
         '用户在项目中的角色ID' 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -128,7 +128,7 @@ class AddMemberRequestV4:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AddMemberRequestV4.
+        r"""Gets the user_id of this AddMemberRequestV4.
 
         用户32位uuid
 
@@ -139,7 +139,7 @@ class AddMemberRequestV4:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AddMemberRequestV4.
+        r"""Sets the user_id of this AddMemberRequestV4.
 
         用户32位uuid
 

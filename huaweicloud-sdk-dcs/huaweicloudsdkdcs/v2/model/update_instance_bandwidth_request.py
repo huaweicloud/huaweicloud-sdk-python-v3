@@ -25,7 +25,7 @@ class UpdateInstanceBandwidthRequest:
     }
 
     def __init__(self, instance_id=None):
-        """UpdateInstanceBandwidthRequest
+        r"""UpdateInstanceBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceBandwidthRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceBandwidthRequest.
+        r"""Gets the instance_id of this UpdateInstanceBandwidthRequest.
 
         实例ID
 
@@ -53,7 +53,7 @@ class UpdateInstanceBandwidthRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceBandwidthRequest.
+        r"""Sets the instance_id of this UpdateInstanceBandwidthRequest.
 
         实例ID
 

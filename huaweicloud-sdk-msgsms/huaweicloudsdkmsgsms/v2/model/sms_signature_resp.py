@@ -75,7 +75,7 @@ class SmsSignatureResp:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, tenant=None, signature_name=None, signature_id=None, signature_type=None, app_name=None, apply_desc=None, channel_num=None, review_desc=None, file_id=None, status=None, site=None, signature_source=None, is_involved_third=None, power_attorney_file_id=None, urge_status=None, urge_time=None, urge_desc=None, app_key=None, source_title_content=None, signature_usage=None, qualification_id=None, qualification_name=None):
-        """SmsSignatureResp
+        r"""SmsSignatureResp
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class SmsSignatureResp:
 
     @property
     def id(self):
-        """Gets the id of this SmsSignatureResp.
+        r"""Gets the id of this SmsSignatureResp.
 
         签名主键id，用于获取、修改、删除、申请激活签名的唯一标识
 
@@ -229,7 +229,7 @@ class SmsSignatureResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SmsSignatureResp.
+        r"""Sets the id of this SmsSignatureResp.
 
         签名主键id，用于获取、修改、删除、申请激活签名的唯一标识
 
@@ -240,7 +240,7 @@ class SmsSignatureResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsSignatureResp.
+        r"""Gets the create_time of this SmsSignatureResp.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -251,7 +251,7 @@ class SmsSignatureResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsSignatureResp.
+        r"""Sets the create_time of this SmsSignatureResp.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -262,7 +262,7 @@ class SmsSignatureResp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SmsSignatureResp.
+        r"""Gets the update_time of this SmsSignatureResp.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -273,7 +273,7 @@ class SmsSignatureResp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SmsSignatureResp.
+        r"""Sets the update_time of this SmsSignatureResp.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -284,7 +284,7 @@ class SmsSignatureResp:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SmsSignatureResp.
+        r"""Gets the customer_id of this SmsSignatureResp.
 
         租户customer id
 
@@ -295,7 +295,7 @@ class SmsSignatureResp:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SmsSignatureResp.
+        r"""Sets the customer_id of this SmsSignatureResp.
 
         租户customer id
 
@@ -306,7 +306,7 @@ class SmsSignatureResp:
 
     @property
     def tenant(self):
-        """Gets the tenant of this SmsSignatureResp.
+        r"""Gets the tenant of this SmsSignatureResp.
 
         :return: The tenant of this SmsSignatureResp.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -315,7 +315,7 @@ class SmsSignatureResp:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this SmsSignatureResp.
+        r"""Sets the tenant of this SmsSignatureResp.
 
         :param tenant: The tenant of this SmsSignatureResp.
         :type tenant: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -324,7 +324,7 @@ class SmsSignatureResp:
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this SmsSignatureResp.
+        r"""Gets the signature_name of this SmsSignatureResp.
 
         签名名称
 
@@ -335,7 +335,7 @@ class SmsSignatureResp:
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this SmsSignatureResp.
+        r"""Sets the signature_name of this SmsSignatureResp.
 
         签名名称
 
@@ -346,7 +346,7 @@ class SmsSignatureResp:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this SmsSignatureResp.
+        r"""Gets the signature_id of this SmsSignatureResp.
 
         签名id
 
@@ -357,7 +357,7 @@ class SmsSignatureResp:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this SmsSignatureResp.
+        r"""Sets the signature_id of this SmsSignatureResp.
 
         签名id
 
@@ -368,7 +368,7 @@ class SmsSignatureResp:
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this SmsSignatureResp.
+        r"""Gets the signature_type of this SmsSignatureResp.
 
         签名类型
 
@@ -379,7 +379,7 @@ class SmsSignatureResp:
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this SmsSignatureResp.
+        r"""Sets the signature_type of this SmsSignatureResp.
 
         签名类型
 
@@ -390,7 +390,7 @@ class SmsSignatureResp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsSignatureResp.
+        r"""Gets the app_name of this SmsSignatureResp.
 
         应用名称
 
@@ -401,7 +401,7 @@ class SmsSignatureResp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsSignatureResp.
+        r"""Sets the app_name of this SmsSignatureResp.
 
         应用名称
 
@@ -412,7 +412,7 @@ class SmsSignatureResp:
 
     @property
     def apply_desc(self):
-        """Gets the apply_desc of this SmsSignatureResp.
+        r"""Gets the apply_desc of this SmsSignatureResp.
 
         申请描述
 
@@ -423,7 +423,7 @@ class SmsSignatureResp:
 
     @apply_desc.setter
     def apply_desc(self, apply_desc):
-        """Sets the apply_desc of this SmsSignatureResp.
+        r"""Sets the apply_desc of this SmsSignatureResp.
 
         申请描述
 
@@ -434,7 +434,7 @@ class SmsSignatureResp:
 
     @property
     def channel_num(self):
-        """Gets the channel_num of this SmsSignatureResp.
+        r"""Gets the channel_num of this SmsSignatureResp.
 
         国内短信通道号，仅当签名审核成功，运营人员配置完成后返回。
 
@@ -445,7 +445,7 @@ class SmsSignatureResp:
 
     @channel_num.setter
     def channel_num(self, channel_num):
-        """Sets the channel_num of this SmsSignatureResp.
+        r"""Sets the channel_num of this SmsSignatureResp.
 
         国内短信通道号，仅当签名审核成功，运营人员配置完成后返回。
 
@@ -456,7 +456,7 @@ class SmsSignatureResp:
 
     @property
     def review_desc(self):
-        """Gets the review_desc of this SmsSignatureResp.
+        r"""Gets the review_desc of this SmsSignatureResp.
 
         审核意见
 
@@ -467,7 +467,7 @@ class SmsSignatureResp:
 
     @review_desc.setter
     def review_desc(self, review_desc):
-        """Sets the review_desc of this SmsSignatureResp.
+        r"""Sets the review_desc of this SmsSignatureResp.
 
         审核意见
 
@@ -478,7 +478,7 @@ class SmsSignatureResp:
 
     @property
     def file_id(self):
-        """Gets the file_id of this SmsSignatureResp.
+        r"""Gets the file_id of this SmsSignatureResp.
 
         文件id
 
@@ -489,7 +489,7 @@ class SmsSignatureResp:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this SmsSignatureResp.
+        r"""Sets the file_id of this SmsSignatureResp.
 
         文件id
 
@@ -500,7 +500,7 @@ class SmsSignatureResp:
 
     @property
     def status(self):
-        """Gets the status of this SmsSignatureResp.
+        r"""Gets the status of this SmsSignatureResp.
 
         签名状态
 
@@ -511,7 +511,7 @@ class SmsSignatureResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsSignatureResp.
+        r"""Sets the status of this SmsSignatureResp.
 
         签名状态
 
@@ -522,7 +522,7 @@ class SmsSignatureResp:
 
     @property
     def site(self):
-        """Gets the site of this SmsSignatureResp.
+        r"""Gets the site of this SmsSignatureResp.
 
         站点
 
@@ -533,7 +533,7 @@ class SmsSignatureResp:
 
     @site.setter
     def site(self, site):
-        """Sets the site of this SmsSignatureResp.
+        r"""Sets the site of this SmsSignatureResp.
 
         站点
 
@@ -544,7 +544,7 @@ class SmsSignatureResp:
 
     @property
     def signature_source(self):
-        """Gets the signature_source of this SmsSignatureResp.
+        r"""Gets the signature_source of this SmsSignatureResp.
 
         签名来源
 
@@ -555,7 +555,7 @@ class SmsSignatureResp:
 
     @signature_source.setter
     def signature_source(self, signature_source):
-        """Sets the signature_source of this SmsSignatureResp.
+        r"""Sets the signature_source of this SmsSignatureResp.
 
         签名来源
 
@@ -566,7 +566,7 @@ class SmsSignatureResp:
 
     @property
     def is_involved_third(self):
-        """Gets the is_involved_third of this SmsSignatureResp.
+        r"""Gets the is_involved_third of this SmsSignatureResp.
 
         是否涉及第三方权益
 
@@ -577,7 +577,7 @@ class SmsSignatureResp:
 
     @is_involved_third.setter
     def is_involved_third(self, is_involved_third):
-        """Sets the is_involved_third of this SmsSignatureResp.
+        r"""Sets the is_involved_third of this SmsSignatureResp.
 
         是否涉及第三方权益
 
@@ -588,7 +588,7 @@ class SmsSignatureResp:
 
     @property
     def power_attorney_file_id(self):
-        """Gets the power_attorney_file_id of this SmsSignatureResp.
+        r"""Gets the power_attorney_file_id of this SmsSignatureResp.
 
         授权委托书文件ID
 
@@ -599,7 +599,7 @@ class SmsSignatureResp:
 
     @power_attorney_file_id.setter
     def power_attorney_file_id(self, power_attorney_file_id):
-        """Sets the power_attorney_file_id of this SmsSignatureResp.
+        r"""Sets the power_attorney_file_id of this SmsSignatureResp.
 
         授权委托书文件ID
 
@@ -610,7 +610,7 @@ class SmsSignatureResp:
 
     @property
     def urge_status(self):
-        """Gets the urge_status of this SmsSignatureResp.
+        r"""Gets the urge_status of this SmsSignatureResp.
 
         催审状态
 
@@ -621,7 +621,7 @@ class SmsSignatureResp:
 
     @urge_status.setter
     def urge_status(self, urge_status):
-        """Sets the urge_status of this SmsSignatureResp.
+        r"""Sets the urge_status of this SmsSignatureResp.
 
         催审状态
 
@@ -632,7 +632,7 @@ class SmsSignatureResp:
 
     @property
     def urge_time(self):
-        """Gets the urge_time of this SmsSignatureResp.
+        r"""Gets the urge_time of this SmsSignatureResp.
 
         催审时间
 
@@ -643,7 +643,7 @@ class SmsSignatureResp:
 
     @urge_time.setter
     def urge_time(self, urge_time):
-        """Sets the urge_time of this SmsSignatureResp.
+        r"""Sets the urge_time of this SmsSignatureResp.
 
         催审时间
 
@@ -654,7 +654,7 @@ class SmsSignatureResp:
 
     @property
     def urge_desc(self):
-        """Gets the urge_desc of this SmsSignatureResp.
+        r"""Gets the urge_desc of this SmsSignatureResp.
 
         催审描述
 
@@ -665,7 +665,7 @@ class SmsSignatureResp:
 
     @urge_desc.setter
     def urge_desc(self, urge_desc):
-        """Sets the urge_desc of this SmsSignatureResp.
+        r"""Sets the urge_desc of this SmsSignatureResp.
 
         催审描述
 
@@ -676,7 +676,7 @@ class SmsSignatureResp:
 
     @property
     def app_key(self):
-        """Gets the app_key of this SmsSignatureResp.
+        r"""Gets the app_key of this SmsSignatureResp.
 
         应用key
 
@@ -687,7 +687,7 @@ class SmsSignatureResp:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this SmsSignatureResp.
+        r"""Sets the app_key of this SmsSignatureResp.
 
         应用key
 
@@ -698,7 +698,7 @@ class SmsSignatureResp:
 
     @property
     def source_title_content(self):
-        """Gets the source_title_content of this SmsSignatureResp.
+        r"""Gets the source_title_content of this SmsSignatureResp.
 
         标题内容
 
@@ -709,7 +709,7 @@ class SmsSignatureResp:
 
     @source_title_content.setter
     def source_title_content(self, source_title_content):
-        """Sets the source_title_content of this SmsSignatureResp.
+        r"""Sets the source_title_content of this SmsSignatureResp.
 
         标题内容
 
@@ -720,7 +720,7 @@ class SmsSignatureResp:
 
     @property
     def signature_usage(self):
-        """Gets the signature_usage of this SmsSignatureResp.
+        r"""Gets the signature_usage of this SmsSignatureResp.
 
         签名用途
 
@@ -731,7 +731,7 @@ class SmsSignatureResp:
 
     @signature_usage.setter
     def signature_usage(self, signature_usage):
-        """Sets the signature_usage of this SmsSignatureResp.
+        r"""Sets the signature_usage of this SmsSignatureResp.
 
         签名用途
 
@@ -742,7 +742,7 @@ class SmsSignatureResp:
 
     @property
     def qualification_id(self):
-        """Gets the qualification_id of this SmsSignatureResp.
+        r"""Gets the qualification_id of this SmsSignatureResp.
 
         资质ID
 
@@ -753,7 +753,7 @@ class SmsSignatureResp:
 
     @qualification_id.setter
     def qualification_id(self, qualification_id):
-        """Sets the qualification_id of this SmsSignatureResp.
+        r"""Sets the qualification_id of this SmsSignatureResp.
 
         资质ID
 
@@ -764,7 +764,7 @@ class SmsSignatureResp:
 
     @property
     def qualification_name(self):
-        """Gets the qualification_name of this SmsSignatureResp.
+        r"""Gets the qualification_name of this SmsSignatureResp.
 
         资质名
 
@@ -775,7 +775,7 @@ class SmsSignatureResp:
 
     @qualification_name.setter
     def qualification_name(self, qualification_name):
-        """Sets the qualification_name of this SmsSignatureResp.
+        r"""Sets the qualification_name of this SmsSignatureResp.
 
         资质名
 

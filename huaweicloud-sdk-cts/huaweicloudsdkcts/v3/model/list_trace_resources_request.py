@@ -25,7 +25,7 @@ class ListTraceResourcesRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ListTraceResourcesRequest
+        r"""ListTraceResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTraceResourcesRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListTraceResourcesRequest.
+        r"""Gets the domain_id of this ListTraceResourcesRequest.
 
         账户id，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -53,7 +53,7 @@ class ListTraceResourcesRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListTraceResourcesRequest.
+        r"""Sets the domain_id of this ListTraceResourcesRequest.
 
         账户id，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 

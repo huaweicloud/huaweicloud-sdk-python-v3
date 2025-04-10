@@ -25,7 +25,7 @@ class RunImageMediaTaggingDetRequest:
     }
 
     def __init__(self, body=None):
-        """RunImageMediaTaggingDetRequest
+        r"""RunImageMediaTaggingDetRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunImageMediaTaggingDetRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunImageMediaTaggingDetRequest.
+        r"""Gets the body of this RunImageMediaTaggingDetRequest.
 
         :return: The body of this RunImageMediaTaggingDetRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingDetReq`
@@ -52,7 +52,7 @@ class RunImageMediaTaggingDetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunImageMediaTaggingDetRequest.
+        r"""Sets the body of this RunImageMediaTaggingDetRequest.
 
         :param body: The body of this RunImageMediaTaggingDetRequest.
         :type body: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingDetReq`

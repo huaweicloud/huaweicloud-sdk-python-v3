@@ -29,7 +29,7 @@ class TokenAuthIdentity:
     }
 
     def __init__(self, methods=None, token=None, policy=None):
-        """TokenAuthIdentity
+        r"""TokenAuthIdentity
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class TokenAuthIdentity:
 
     @property
     def methods(self):
-        """Gets the methods of this TokenAuthIdentity.
+        r"""Gets the methods of this TokenAuthIdentity.
 
         认证方法，该字段内容为[\"token\"]。
 
@@ -67,7 +67,7 @@ class TokenAuthIdentity:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this TokenAuthIdentity.
+        r"""Sets the methods of this TokenAuthIdentity.
 
         认证方法，该字段内容为[\"token\"]。
 
@@ -78,7 +78,7 @@ class TokenAuthIdentity:
 
     @property
     def token(self):
-        """Gets the token of this TokenAuthIdentity.
+        r"""Gets the token of this TokenAuthIdentity.
 
         :return: The token of this TokenAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityToken`
@@ -87,7 +87,7 @@ class TokenAuthIdentity:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this TokenAuthIdentity.
+        r"""Sets the token of this TokenAuthIdentity.
 
         :param token: The token of this TokenAuthIdentity.
         :type token: :class:`huaweicloudsdkiam.v3.IdentityToken`
@@ -96,7 +96,7 @@ class TokenAuthIdentity:
 
     @property
     def policy(self):
-        """Gets the policy of this TokenAuthIdentity.
+        r"""Gets the policy of this TokenAuthIdentity.
 
         :return: The policy of this TokenAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
@@ -105,7 +105,7 @@ class TokenAuthIdentity:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this TokenAuthIdentity.
+        r"""Sets the policy of this TokenAuthIdentity.
 
         :param policy: The policy of this TokenAuthIdentity.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`

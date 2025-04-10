@@ -38,7 +38,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, status=None, result=None, request_params=None, create_time=None, update_time=None, request_id=None):
-        """RunQueryAudioModerationJobResponse
+        r"""RunQueryAudioModerationJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunQueryAudioModerationJobResponse.
+        r"""Gets the job_id of this RunQueryAudioModerationJobResponse.
 
         作业id
 
@@ -97,7 +97,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunQueryAudioModerationJobResponse.
+        r"""Sets the job_id of this RunQueryAudioModerationJobResponse.
 
         作业id
 
@@ -108,7 +108,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this RunQueryAudioModerationJobResponse.
+        r"""Gets the status of this RunQueryAudioModerationJobResponse.
 
         作业状态，可取值有： running: 正在运行 succeeded: 运行成功 failed: 运行失败
 
@@ -119,7 +119,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RunQueryAudioModerationJobResponse.
+        r"""Sets the status of this RunQueryAudioModerationJobResponse.
 
         作业状态，可取值有： running: 正在运行 succeeded: 运行成功 failed: 运行失败
 
@@ -130,7 +130,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunQueryAudioModerationJobResponse.
+        r"""Gets the result of this RunQueryAudioModerationJobResponse.
 
         :return: The result of this RunQueryAudioModerationJobResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultResult`
@@ -139,7 +139,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunQueryAudioModerationJobResponse.
+        r"""Sets the result of this RunQueryAudioModerationJobResponse.
 
         :param result: The result of this RunQueryAudioModerationJobResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultResult`
@@ -148,7 +148,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def request_params(self):
-        """Gets the request_params of this RunQueryAudioModerationJobResponse.
+        r"""Gets the request_params of this RunQueryAudioModerationJobResponse.
 
         :return: The request_params of this RunQueryAudioModerationJobResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParams`
@@ -157,7 +157,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @request_params.setter
     def request_params(self, request_params):
-        """Sets the request_params of this RunQueryAudioModerationJobResponse.
+        r"""Sets the request_params of this RunQueryAudioModerationJobResponse.
 
         :param request_params: The request_params of this RunQueryAudioModerationJobResponse.
         :type request_params: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParams`
@@ -166,7 +166,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this RunQueryAudioModerationJobResponse.
+        r"""Gets the create_time of this RunQueryAudioModerationJobResponse.
 
         作业创建时间
 
@@ -177,7 +177,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RunQueryAudioModerationJobResponse.
+        r"""Sets the create_time of this RunQueryAudioModerationJobResponse.
 
         作业创建时间
 
@@ -188,7 +188,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this RunQueryAudioModerationJobResponse.
+        r"""Gets the update_time of this RunQueryAudioModerationJobResponse.
 
         作业更新时间
 
@@ -199,7 +199,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RunQueryAudioModerationJobResponse.
+        r"""Sets the update_time of this RunQueryAudioModerationJobResponse.
 
         作业更新时间
 
@@ -210,7 +210,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this RunQueryAudioModerationJobResponse.
+        r"""Gets the request_id of this RunQueryAudioModerationJobResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -221,7 +221,7 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this RunQueryAudioModerationJobResponse.
+        r"""Sets the request_id of this RunQueryAudioModerationJobResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 

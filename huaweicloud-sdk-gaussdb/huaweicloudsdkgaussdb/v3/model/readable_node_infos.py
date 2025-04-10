@@ -29,7 +29,7 @@ class ReadableNodeInfos:
     }
 
     def __init__(self, data_ip=None, node_id=None, node_name=None):
-        """ReadableNodeInfos
+        r"""ReadableNodeInfos
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReadableNodeInfos:
 
     @property
     def data_ip(self):
-        """Gets the data_ip of this ReadableNodeInfos.
+        r"""Gets the data_ip of this ReadableNodeInfos.
 
         可读节点IP。
 
@@ -68,7 +68,7 @@ class ReadableNodeInfos:
 
     @data_ip.setter
     def data_ip(self, data_ip):
-        """Sets the data_ip of this ReadableNodeInfos.
+        r"""Sets the data_ip of this ReadableNodeInfos.
 
         可读节点IP。
 
@@ -79,7 +79,7 @@ class ReadableNodeInfos:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ReadableNodeInfos.
+        r"""Gets the node_id of this ReadableNodeInfos.
 
         可读节点ID。
 
@@ -90,7 +90,7 @@ class ReadableNodeInfos:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ReadableNodeInfos.
+        r"""Sets the node_id of this ReadableNodeInfos.
 
         可读节点ID。
 
@@ -101,7 +101,7 @@ class ReadableNodeInfos:
 
     @property
     def node_name(self):
-        """Gets the node_name of this ReadableNodeInfos.
+        r"""Gets the node_name of this ReadableNodeInfos.
 
         可读节点名称。
 
@@ -112,7 +112,7 @@ class ReadableNodeInfos:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this ReadableNodeInfos.
+        r"""Sets the node_name of this ReadableNodeInfos.
 
         可读节点名称。
 

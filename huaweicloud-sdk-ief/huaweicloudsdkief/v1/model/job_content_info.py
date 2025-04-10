@@ -29,7 +29,7 @@ class JobContentInfo:
     }
 
     def __init__(self, target_type=None, targets=None, task_data=None):
-        """JobContentInfo
+        r"""JobContentInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobContentInfo:
 
     @property
     def target_type(self):
-        """Gets the target_type of this JobContentInfo.
+        r"""Gets the target_type of this JobContentInfo.
 
         批量作业对象类型，支持如下选项： - node：边缘节点 - node_group：边缘节点组 - deployment：边缘应用
 
@@ -68,7 +68,7 @@ class JobContentInfo:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this JobContentInfo.
+        r"""Sets the target_type of this JobContentInfo.
 
         批量作业对象类型，支持如下选项： - node：边缘节点 - node_group：边缘节点组 - deployment：边缘应用
 
@@ -79,7 +79,7 @@ class JobContentInfo:
 
     @property
     def targets(self):
-        """Gets the targets of this JobContentInfo.
+        r"""Gets the targets of this JobContentInfo.
 
         批量作业对象详情
 
@@ -90,7 +90,7 @@ class JobContentInfo:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this JobContentInfo.
+        r"""Sets the targets of this JobContentInfo.
 
         批量作业对象详情
 
@@ -101,7 +101,7 @@ class JobContentInfo:
 
     @property
     def task_data(self):
-        """Gets the task_data of this JobContentInfo.
+        r"""Gets the task_data of this JobContentInfo.
 
         批量作业内容，仅在批量应用部署和批量应用升级时需要填写，填入的内容为：使用json结构体编写的创建应用部署接口请求体deployment参数，并将其转换为字符串
 
@@ -112,7 +112,7 @@ class JobContentInfo:
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this JobContentInfo.
+        r"""Sets the task_data of this JobContentInfo.
 
         批量作业内容，仅在批量应用部署和批量应用升级时需要填写，填入的内容为：使用json结构体编写的创建应用部署接口请求体deployment参数，并将其转换为字符串
 

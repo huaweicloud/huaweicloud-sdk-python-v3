@@ -26,7 +26,7 @@ class CreateCertificateByCsrResponse(SdkResponse):
     }
 
     def __init__(self, certificate_id=None):
-        """CreateCertificateByCsrResponse
+        r"""CreateCertificateByCsrResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCertificateByCsrResponse(SdkResponse):
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this CreateCertificateByCsrResponse.
+        r"""Gets the certificate_id of this CreateCertificateByCsrResponse.
 
         当前签发的证书ID。
 
@@ -55,7 +55,7 @@ class CreateCertificateByCsrResponse(SdkResponse):
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this CreateCertificateByCsrResponse.
+        r"""Sets the certificate_id of this CreateCertificateByCsrResponse.
 
         当前签发的证书ID。
 

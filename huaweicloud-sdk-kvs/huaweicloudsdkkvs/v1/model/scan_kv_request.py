@@ -27,7 +27,7 @@ class ScanKvRequest:
     }
 
     def __init__(self, store_name=None, body=None):
-        """ScanKvRequest
+        r"""ScanKvRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScanKvRequest:
 
     @property
     def store_name(self):
-        """Gets the store_name of this ScanKvRequest.
+        r"""Gets the store_name of this ScanKvRequest.
 
         仓名，全域唯一，不同租户的仓名不能相同。  - 格式：${prefix}-${region-code}-${account-id}，其中prefix为自定义前缀，region-code为kvs集群所在的区域代码，account-id为用户的账户id - 取值字符限制：[a-z0-9-]+ - 长度：[16,52] > \"-\"不能出现在名字头部或尾部
 
@@ -61,7 +61,7 @@ class ScanKvRequest:
 
     @store_name.setter
     def store_name(self, store_name):
-        """Sets the store_name of this ScanKvRequest.
+        r"""Sets the store_name of this ScanKvRequest.
 
         仓名，全域唯一，不同租户的仓名不能相同。  - 格式：${prefix}-${region-code}-${account-id}，其中prefix为自定义前缀，region-code为kvs集群所在的区域代码，account-id为用户的账户id - 取值字符限制：[a-z0-9-]+ - 长度：[16,52] > \"-\"不能出现在名字头部或尾部
 
@@ -72,7 +72,7 @@ class ScanKvRequest:
 
     @property
     def body(self):
-        """Gets the body of this ScanKvRequest.
+        r"""Gets the body of this ScanKvRequest.
 
         :return: The body of this ScanKvRequest.
         :rtype: :class:`huaweicloudsdkkvs.v1.ScanKvRequestBody`
@@ -81,7 +81,7 @@ class ScanKvRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ScanKvRequest.
+        r"""Sets the body of this ScanKvRequest.
 
         :param body: The body of this ScanKvRequest.
         :type body: :class:`huaweicloudsdkkvs.v1.ScanKvRequestBody`

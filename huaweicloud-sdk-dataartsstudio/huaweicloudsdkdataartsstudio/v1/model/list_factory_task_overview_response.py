@@ -50,7 +50,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
     }
 
     def __init__(self, fail_count=None, force_success_count=None, freeze_count=None, ignore_success_count=None, manual_stop_count=None, pause_count=None, running_count=None, running_exception_count=None, skip_count=None, success_count=None, total_count=None, waiting_confirm_count=None, waiting_count=None):
-        """ListFactoryTaskOverviewResponse
+        r"""ListFactoryTaskOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the fail_count of this ListFactoryTaskOverviewResponse.
 
         失败的实例数量
 
@@ -139,7 +139,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the fail_count of this ListFactoryTaskOverviewResponse.
 
         失败的实例数量
 
@@ -150,7 +150,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def force_success_count(self):
-        """Gets the force_success_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the force_success_count of this ListFactoryTaskOverviewResponse.
 
         强制成功的实例数量
 
@@ -161,7 +161,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @force_success_count.setter
     def force_success_count(self, force_success_count):
-        """Sets the force_success_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the force_success_count of this ListFactoryTaskOverviewResponse.
 
         强制成功的实例数量
 
@@ -172,7 +172,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def freeze_count(self):
-        """Gets the freeze_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the freeze_count of this ListFactoryTaskOverviewResponse.
 
         冻结的实例数量
 
@@ -183,7 +183,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @freeze_count.setter
     def freeze_count(self, freeze_count):
-        """Sets the freeze_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the freeze_count of this ListFactoryTaskOverviewResponse.
 
         冻结的实例数量
 
@@ -194,7 +194,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def ignore_success_count(self):
-        """Gets the ignore_success_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the ignore_success_count of this ListFactoryTaskOverviewResponse.
 
         忽略失败的实例数量
 
@@ -205,7 +205,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @ignore_success_count.setter
     def ignore_success_count(self, ignore_success_count):
-        """Sets the ignore_success_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the ignore_success_count of this ListFactoryTaskOverviewResponse.
 
         忽略失败的实例数量
 
@@ -216,7 +216,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def manual_stop_count(self):
-        """Gets the manual_stop_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the manual_stop_count of this ListFactoryTaskOverviewResponse.
 
         取消的实例数量
 
@@ -227,7 +227,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @manual_stop_count.setter
     def manual_stop_count(self, manual_stop_count):
-        """Sets the manual_stop_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the manual_stop_count of this ListFactoryTaskOverviewResponse.
 
         取消的实例数量
 
@@ -238,7 +238,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def pause_count(self):
-        """Gets the pause_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the pause_count of this ListFactoryTaskOverviewResponse.
 
         暂时的实例数量
 
@@ -249,7 +249,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @pause_count.setter
     def pause_count(self, pause_count):
-        """Sets the pause_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the pause_count of this ListFactoryTaskOverviewResponse.
 
         暂时的实例数量
 
@@ -260,7 +260,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def running_count(self):
-        """Gets the running_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the running_count of this ListFactoryTaskOverviewResponse.
 
         运行中的实例数量
 
@@ -271,7 +271,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @running_count.setter
     def running_count(self, running_count):
-        """Sets the running_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the running_count of this ListFactoryTaskOverviewResponse.
 
         运行中的实例数量
 
@@ -282,7 +282,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def running_exception_count(self):
-        """Gets the running_exception_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the running_exception_count of this ListFactoryTaskOverviewResponse.
 
         异常的实例数量
 
@@ -293,7 +293,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @running_exception_count.setter
     def running_exception_count(self, running_exception_count):
-        """Sets the running_exception_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the running_exception_count of this ListFactoryTaskOverviewResponse.
 
         异常的实例数量
 
@@ -304,7 +304,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def skip_count(self):
-        """Gets the skip_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the skip_count of this ListFactoryTaskOverviewResponse.
 
         跳过的实例数量
 
@@ -315,7 +315,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @skip_count.setter
     def skip_count(self, skip_count):
-        """Sets the skip_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the skip_count of this ListFactoryTaskOverviewResponse.
 
         跳过的实例数量
 
@@ -326,7 +326,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the success_count of this ListFactoryTaskOverviewResponse.
 
         运行成功的实例数量
 
@@ -337,7 +337,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the success_count of this ListFactoryTaskOverviewResponse.
 
         运行成功的实例数量
 
@@ -348,7 +348,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the total_count of this ListFactoryTaskOverviewResponse.
 
         实例总数
 
@@ -359,7 +359,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the total_count of this ListFactoryTaskOverviewResponse.
 
         实例总数
 
@@ -370,7 +370,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def waiting_confirm_count(self):
-        """Gets the waiting_confirm_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the waiting_confirm_count of this ListFactoryTaskOverviewResponse.
 
         待确认执行的实例数量
 
@@ -381,7 +381,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @waiting_confirm_count.setter
     def waiting_confirm_count(self, waiting_confirm_count):
-        """Sets the waiting_confirm_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the waiting_confirm_count of this ListFactoryTaskOverviewResponse.
 
         待确认执行的实例数量
 
@@ -392,7 +392,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @property
     def waiting_count(self):
-        """Gets the waiting_count of this ListFactoryTaskOverviewResponse.
+        r"""Gets the waiting_count of this ListFactoryTaskOverviewResponse.
 
         等待运行的实例数量
 
@@ -403,7 +403,7 @@ class ListFactoryTaskOverviewResponse(SdkResponse):
 
     @waiting_count.setter
     def waiting_count(self, waiting_count):
-        """Sets the waiting_count of this ListFactoryTaskOverviewResponse.
+        r"""Sets the waiting_count of this ListFactoryTaskOverviewResponse.
 
         等待运行的实例数量
 

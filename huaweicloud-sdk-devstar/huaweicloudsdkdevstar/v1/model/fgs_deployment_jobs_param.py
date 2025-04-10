@@ -27,7 +27,7 @@ class FGSDeploymentJobsParam:
     }
 
     def __init__(self, file_id=None, handler=None):
-        """FGSDeploymentJobsParam
+        r"""FGSDeploymentJobsParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FGSDeploymentJobsParam:
 
     @property
     def file_id(self):
-        """Gets the file_id of this FGSDeploymentJobsParam.
+        r"""Gets the file_id of this FGSDeploymentJobsParam.
 
         版本包id,使用历史版本包部署时需要
 
@@ -61,7 +61,7 @@ class FGSDeploymentJobsParam:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this FGSDeploymentJobsParam.
+        r"""Sets the file_id of this FGSDeploymentJobsParam.
 
         版本包id,使用历史版本包部署时需要
 
@@ -72,7 +72,7 @@ class FGSDeploymentJobsParam:
 
     @property
     def handler(self):
-        """Gets the handler of this FGSDeploymentJobsParam.
+        r"""Gets the handler of this FGSDeploymentJobsParam.
 
         函数入口
 
@@ -83,7 +83,7 @@ class FGSDeploymentJobsParam:
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this FGSDeploymentJobsParam.
+        r"""Sets the handler of this FGSDeploymentJobsParam.
 
         函数入口
 

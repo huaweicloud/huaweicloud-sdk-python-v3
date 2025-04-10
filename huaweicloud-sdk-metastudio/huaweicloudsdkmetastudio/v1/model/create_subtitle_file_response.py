@@ -28,7 +28,7 @@ class CreateSubtitleFileResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, x_request_id=None):
-        """CreateSubtitleFileResponse
+        r"""CreateSubtitleFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSubtitleFileResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateSubtitleFileResponse.
+        r"""Gets the job_id of this CreateSubtitleFileResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class CreateSubtitleFileResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateSubtitleFileResponse.
+        r"""Sets the job_id of this CreateSubtitleFileResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class CreateSubtitleFileResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateSubtitleFileResponse.
+        r"""Gets the x_request_id of this CreateSubtitleFileResponse.
 
         :return: The x_request_id of this CreateSubtitleFileResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateSubtitleFileResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateSubtitleFileResponse.
+        r"""Sets the x_request_id of this CreateSubtitleFileResponse.
 
         :param x_request_id: The x_request_id of this CreateSubtitleFileResponse.
         :type x_request_id: str

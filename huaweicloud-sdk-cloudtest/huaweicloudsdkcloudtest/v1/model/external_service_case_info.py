@@ -41,7 +41,7 @@ class ExternalServiceCaseInfo:
     }
 
     def __init__(self, description=None, preparation=None, steps=None, label_list=None, module_id=None, test_version_id=None, fix_version_id=None, assigned_id=None, issue_id=None):
-        """ExternalServiceCaseInfo
+        r"""ExternalServiceCaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this ExternalServiceCaseInfo.
+        r"""Gets the description of this ExternalServiceCaseInfo.
 
         测试用例描述信息，长度为[0-500]位字符
 
@@ -110,7 +110,7 @@ class ExternalServiceCaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExternalServiceCaseInfo.
+        r"""Sets the description of this ExternalServiceCaseInfo.
 
         测试用例描述信息，长度为[0-500]位字符
 
@@ -121,7 +121,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def preparation(self):
-        """Gets the preparation of this ExternalServiceCaseInfo.
+        r"""Gets the preparation of this ExternalServiceCaseInfo.
 
         执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
 
@@ -132,7 +132,7 @@ class ExternalServiceCaseInfo:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this ExternalServiceCaseInfo.
+        r"""Sets the preparation of this ExternalServiceCaseInfo.
 
         执行该测试用例时需要满足的前置条件，长度为[0-500]位字符
 
@@ -143,7 +143,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def steps(self):
-        """Gets the steps of this ExternalServiceCaseInfo.
+        r"""Gets the steps of this ExternalServiceCaseInfo.
 
         测试步骤，数组长度小于10
 
@@ -154,7 +154,7 @@ class ExternalServiceCaseInfo:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this ExternalServiceCaseInfo.
+        r"""Sets the steps of this ExternalServiceCaseInfo.
 
         测试步骤，数组长度小于10
 
@@ -165,7 +165,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def label_list(self):
-        """Gets the label_list of this ExternalServiceCaseInfo.
+        r"""Gets the label_list of this ExternalServiceCaseInfo.
 
         标签名称列表，数组长度小于25
 
@@ -176,7 +176,7 @@ class ExternalServiceCaseInfo:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this ExternalServiceCaseInfo.
+        r"""Sets the label_list of this ExternalServiceCaseInfo.
 
         标签名称列表，数组长度小于25
 
@@ -187,7 +187,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this ExternalServiceCaseInfo.
+        r"""Gets the module_id of this ExternalServiceCaseInfo.
 
         模块号，长度为[0-32]位字符
 
@@ -198,7 +198,7 @@ class ExternalServiceCaseInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this ExternalServiceCaseInfo.
+        r"""Sets the module_id of this ExternalServiceCaseInfo.
 
         模块号，长度为[0-32]位字符
 
@@ -209,7 +209,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def test_version_id(self):
-        """Gets the test_version_id of this ExternalServiceCaseInfo.
+        r"""Gets the test_version_id of this ExternalServiceCaseInfo.
 
         测试版本号，长度为[0-10]位字符
 
@@ -220,7 +220,7 @@ class ExternalServiceCaseInfo:
 
     @test_version_id.setter
     def test_version_id(self, test_version_id):
-        """Sets the test_version_id of this ExternalServiceCaseInfo.
+        r"""Sets the test_version_id of this ExternalServiceCaseInfo.
 
         测试版本号，长度为[0-10]位字符
 
@@ -231,7 +231,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def fix_version_id(self):
-        """Gets the fix_version_id of this ExternalServiceCaseInfo.
+        r"""Gets the fix_version_id of this ExternalServiceCaseInfo.
 
         迭代号，长度为[0-32]位字符
 
@@ -242,7 +242,7 @@ class ExternalServiceCaseInfo:
 
     @fix_version_id.setter
     def fix_version_id(self, fix_version_id):
-        """Sets the fix_version_id of this ExternalServiceCaseInfo.
+        r"""Sets the fix_version_id of this ExternalServiceCaseInfo.
 
         迭代号，长度为[0-32]位字符
 
@@ -253,7 +253,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def assigned_id(self):
-        """Gets the assigned_id of this ExternalServiceCaseInfo.
+        r"""Gets the assigned_id of this ExternalServiceCaseInfo.
 
         处理者id信息，固定长度32位字符
 
@@ -264,7 +264,7 @@ class ExternalServiceCaseInfo:
 
     @assigned_id.setter
     def assigned_id(self, assigned_id):
-        """Sets the assigned_id of this ExternalServiceCaseInfo.
+        r"""Sets the assigned_id of this ExternalServiceCaseInfo.
 
         处理者id信息，固定长度32位字符
 
@@ -275,7 +275,7 @@ class ExternalServiceCaseInfo:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ExternalServiceCaseInfo.
+        r"""Gets the issue_id of this ExternalServiceCaseInfo.
 
         用例关联的需求id信息，长度为[0-32]位字符
 
@@ -286,7 +286,7 @@ class ExternalServiceCaseInfo:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ExternalServiceCaseInfo.
+        r"""Sets the issue_id of this ExternalServiceCaseInfo.
 
         用例关联的需求id信息，长度为[0-32]位字符
 

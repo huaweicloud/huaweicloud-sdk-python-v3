@@ -27,7 +27,7 @@ class CreateClusterElbWhiteList:
     }
 
     def __init__(self, enable_white_list=None, white_list=None):
-        """CreateClusterElbWhiteList
+        r"""CreateClusterElbWhiteList
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusterElbWhiteList:
 
     @property
     def enable_white_list(self):
-        """Gets the enable_white_list of this CreateClusterElbWhiteList.
+        r"""Gets the enable_white_list of this CreateClusterElbWhiteList.
 
         是否开启公网访问控制。
 
@@ -60,7 +60,7 @@ class CreateClusterElbWhiteList:
 
     @enable_white_list.setter
     def enable_white_list(self, enable_white_list):
-        """Sets the enable_white_list of this CreateClusterElbWhiteList.
+        r"""Sets the enable_white_list of this CreateClusterElbWhiteList.
 
         是否开启公网访问控制。
 
@@ -71,7 +71,7 @@ class CreateClusterElbWhiteList:
 
     @property
     def white_list(self):
-        """Gets the white_list of this CreateClusterElbWhiteList.
+        r"""Gets the white_list of this CreateClusterElbWhiteList.
 
         公网访问控制白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
@@ -82,7 +82,7 @@ class CreateClusterElbWhiteList:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this CreateClusterElbWhiteList.
+        r"""Sets the white_list of this CreateClusterElbWhiteList.
 
         公网访问控制白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 

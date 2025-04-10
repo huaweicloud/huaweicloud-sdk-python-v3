@@ -53,7 +53,7 @@ class CreateAppServerReq:
     }
 
     def __init__(self, type=None, server_group_id=None, availability_zone=None, subscription_num=None, nics=None, ou_name=None, product_id=None, flavor_id=None, os_type=None, root_volume=None, scheduler_hints=None, subnet_id=None, vpc_id=None, update_access_agent=None, create_server_extend_param=None):
-        """CreateAppServerReq
+        r"""CreateAppServerReq
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class CreateAppServerReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateAppServerReq.
+        r"""Gets the type of this CreateAppServerReq.
 
         创建云服务类型，当前仅支持创建云应用：createApps。
 
@@ -145,7 +145,7 @@ class CreateAppServerReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateAppServerReq.
+        r"""Sets the type of this CreateAppServerReq.
 
         创建云服务类型，当前仅支持创建云应用：createApps。
 
@@ -156,7 +156,7 @@ class CreateAppServerReq:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this CreateAppServerReq.
+        r"""Gets the server_group_id of this CreateAppServerReq.
 
         服务器组唯一标识。
 
@@ -167,7 +167,7 @@ class CreateAppServerReq:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this CreateAppServerReq.
+        r"""Sets the server_group_id of this CreateAppServerReq.
 
         服务器组唯一标识。
 
@@ -178,7 +178,7 @@ class CreateAppServerReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateAppServerReq.
+        r"""Gets the availability_zone of this CreateAppServerReq.
 
         可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -189,7 +189,7 @@ class CreateAppServerReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateAppServerReq.
+        r"""Sets the availability_zone of this CreateAppServerReq.
 
         可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -200,7 +200,7 @@ class CreateAppServerReq:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this CreateAppServerReq.
+        r"""Gets the subscription_num of this CreateAppServerReq.
 
         订购数量。
 
@@ -211,7 +211,7 @@ class CreateAppServerReq:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this CreateAppServerReq.
+        r"""Sets the subscription_num of this CreateAppServerReq.
 
         订购数量。
 
@@ -222,7 +222,7 @@ class CreateAppServerReq:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateAppServerReq.
+        r"""Gets the nics of this CreateAppServerReq.
 
         服务对应的网卡信息，当前未使用该字段。
 
@@ -233,7 +233,7 @@ class CreateAppServerReq:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateAppServerReq.
+        r"""Sets the nics of this CreateAppServerReq.
 
         服务对应的网卡信息，当前未使用该字段。
 
@@ -244,7 +244,7 @@ class CreateAppServerReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this CreateAppServerReq.
+        r"""Gets the ou_name of this CreateAppServerReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -255,7 +255,7 @@ class CreateAppServerReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this CreateAppServerReq.
+        r"""Sets the ou_name of this CreateAppServerReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -266,7 +266,7 @@ class CreateAppServerReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateAppServerReq.
+        r"""Gets the product_id of this CreateAppServerReq.
 
         产品ID。 > - 获取方式详见产品套餐管理ListProduct：\"GET /v1/{project_id}/product\"。
 
@@ -277,7 +277,7 @@ class CreateAppServerReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateAppServerReq.
+        r"""Sets the product_id of this CreateAppServerReq.
 
         产品ID。 > - 获取方式详见产品套餐管理ListProduct：\"GET /v1/{project_id}/product\"。
 
@@ -288,7 +288,7 @@ class CreateAppServerReq:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateAppServerReq.
+        r"""Gets the flavor_id of this CreateAppServerReq.
 
         规格ID。
 
@@ -299,7 +299,7 @@ class CreateAppServerReq:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateAppServerReq.
+        r"""Sets the flavor_id of this CreateAppServerReq.
 
         规格ID。
 
@@ -310,7 +310,7 @@ class CreateAppServerReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this CreateAppServerReq.
+        r"""Gets the os_type of this CreateAppServerReq.
 
         操作系统类型，当前仅支持Windows。
 
@@ -321,7 +321,7 @@ class CreateAppServerReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this CreateAppServerReq.
+        r"""Sets the os_type of this CreateAppServerReq.
 
         操作系统类型，当前仅支持Windows。
 
@@ -332,7 +332,7 @@ class CreateAppServerReq:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateAppServerReq.
+        r"""Gets the root_volume of this CreateAppServerReq.
 
         :return: The root_volume of this CreateAppServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -341,7 +341,7 @@ class CreateAppServerReq:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateAppServerReq.
+        r"""Sets the root_volume of this CreateAppServerReq.
 
         :param root_volume: The root_volume of this CreateAppServerReq.
         :type root_volume: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -350,7 +350,7 @@ class CreateAppServerReq:
 
     @property
     def scheduler_hints(self):
-        """Gets the scheduler_hints of this CreateAppServerReq.
+        r"""Gets the scheduler_hints of this CreateAppServerReq.
 
         :return: The scheduler_hints of this CreateAppServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
@@ -359,7 +359,7 @@ class CreateAppServerReq:
 
     @scheduler_hints.setter
     def scheduler_hints(self, scheduler_hints):
-        """Sets the scheduler_hints of this CreateAppServerReq.
+        r"""Sets the scheduler_hints of this CreateAppServerReq.
 
         :param scheduler_hints: The scheduler_hints of this CreateAppServerReq.
         :type scheduler_hints: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
@@ -368,7 +368,7 @@ class CreateAppServerReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateAppServerReq.
+        r"""Gets the subnet_id of this CreateAppServerReq.
 
         网卡对应的子网ID。
 
@@ -379,7 +379,7 @@ class CreateAppServerReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateAppServerReq.
+        r"""Sets the subnet_id of this CreateAppServerReq.
 
         网卡对应的子网ID。
 
@@ -390,7 +390,7 @@ class CreateAppServerReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateAppServerReq.
+        r"""Gets the vpc_id of this CreateAppServerReq.
 
         虚拟私有云ID。
 
@@ -401,7 +401,7 @@ class CreateAppServerReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateAppServerReq.
+        r"""Sets the vpc_id of this CreateAppServerReq.
 
         虚拟私有云ID。
 
@@ -412,7 +412,7 @@ class CreateAppServerReq:
 
     @property
     def update_access_agent(self):
-        """Gets the update_access_agent of this CreateAppServerReq.
+        r"""Gets the update_access_agent of this CreateAppServerReq.
 
         是否自动升级hda版本。
 
@@ -423,7 +423,7 @@ class CreateAppServerReq:
 
     @update_access_agent.setter
     def update_access_agent(self, update_access_agent):
-        """Sets the update_access_agent of this CreateAppServerReq.
+        r"""Sets the update_access_agent of this CreateAppServerReq.
 
         是否自动升级hda版本。
 
@@ -434,7 +434,7 @@ class CreateAppServerReq:
 
     @property
     def create_server_extend_param(self):
-        """Gets the create_server_extend_param of this CreateAppServerReq.
+        r"""Gets the create_server_extend_param of this CreateAppServerReq.
 
         :return: The create_server_extend_param of this CreateAppServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerExtendParam`
@@ -443,7 +443,7 @@ class CreateAppServerReq:
 
     @create_server_extend_param.setter
     def create_server_extend_param(self, create_server_extend_param):
-        """Sets the create_server_extend_param of this CreateAppServerReq.
+        r"""Sets the create_server_extend_param of this CreateAppServerReq.
 
         :param create_server_extend_param: The create_server_extend_param of this CreateAppServerReq.
         :type create_server_extend_param: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerExtendParam`

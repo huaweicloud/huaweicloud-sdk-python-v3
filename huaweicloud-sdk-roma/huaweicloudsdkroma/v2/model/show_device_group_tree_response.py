@@ -28,7 +28,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
     }
 
     def __init__(self, size=None, items=None):
-        """ShowDeviceGroupTreeResponse
+        r"""ShowDeviceGroupTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowDeviceGroupTreeResponse.
+        r"""Gets the size of this ShowDeviceGroupTreeResponse.
 
         本次返回数量
 
@@ -62,7 +62,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowDeviceGroupTreeResponse.
+        r"""Sets the size of this ShowDeviceGroupTreeResponse.
 
         本次返回数量
 
@@ -73,7 +73,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowDeviceGroupTreeResponse.
+        r"""Gets the items of this ShowDeviceGroupTreeResponse.
 
         设备分组信息
 
@@ -84,7 +84,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowDeviceGroupTreeResponse.
+        r"""Sets the items of this ShowDeviceGroupTreeResponse.
 
         设备分组信息
 

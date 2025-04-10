@@ -27,7 +27,7 @@ class SearchFlowByIdRequest:
     }
 
     def __init__(self, flow_id=None, version=None):
-        """SearchFlowByIdRequest
+        r"""SearchFlowByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SearchFlowByIdRequest:
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this SearchFlowByIdRequest.
+        r"""Gets the flow_id of this SearchFlowByIdRequest.
 
         flow_id
 
@@ -60,7 +60,7 @@ class SearchFlowByIdRequest:
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this SearchFlowByIdRequest.
+        r"""Sets the flow_id of this SearchFlowByIdRequest.
 
         flow_id
 
@@ -71,7 +71,7 @@ class SearchFlowByIdRequest:
 
     @property
     def version(self):
-        """Gets the version of this SearchFlowByIdRequest.
+        r"""Gets the version of this SearchFlowByIdRequest.
 
         流版本
 
@@ -82,7 +82,7 @@ class SearchFlowByIdRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SearchFlowByIdRequest.
+        r"""Sets the version of this SearchFlowByIdRequest.
 
         流版本
 

@@ -25,7 +25,7 @@ class CreateInstallCmdRequestDTO:
     }
 
     def __init__(self, host_tag=None):
-        """CreateInstallCmdRequestDTO
+        r"""CreateInstallCmdRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateInstallCmdRequestDTO:
 
     @property
     def host_tag(self):
-        """Gets the host_tag of this CreateInstallCmdRequestDTO.
+        r"""Gets the host_tag of this CreateInstallCmdRequestDTO.
 
         安装命令执行的主机标签DEFAULT|MASTER|SLAVE
 
@@ -54,7 +54,7 @@ class CreateInstallCmdRequestDTO:
 
     @host_tag.setter
     def host_tag(self, host_tag):
-        """Sets the host_tag of this CreateInstallCmdRequestDTO.
+        r"""Sets the host_tag of this CreateInstallCmdRequestDTO.
 
         安装命令执行的主机标签DEFAULT|MASTER|SLAVE
 

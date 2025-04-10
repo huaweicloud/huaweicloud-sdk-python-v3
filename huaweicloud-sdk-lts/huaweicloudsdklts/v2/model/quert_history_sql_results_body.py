@@ -27,7 +27,7 @@ class QuertHistorySQLResultsBody:
     }
 
     def __init__(self, last_use_time=None, sql_statement=None):
-        """QuertHistorySQLResultsBody
+        r"""QuertHistorySQLResultsBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QuertHistorySQLResultsBody:
 
     @property
     def last_use_time(self):
-        """Gets the last_use_time of this QuertHistorySQLResultsBody.
+        r"""Gets the last_use_time of this QuertHistorySQLResultsBody.
 
         上次修改时间，时间戳，毫秒数
 
@@ -61,7 +61,7 @@ class QuertHistorySQLResultsBody:
 
     @last_use_time.setter
     def last_use_time(self, last_use_time):
-        """Sets the last_use_time of this QuertHistorySQLResultsBody.
+        r"""Sets the last_use_time of this QuertHistorySQLResultsBody.
 
         上次修改时间，时间戳，毫秒数
 
@@ -72,7 +72,7 @@ class QuertHistorySQLResultsBody:
 
     @property
     def sql_statement(self):
-        """Gets the sql_statement of this QuertHistorySQLResultsBody.
+        r"""Gets the sql_statement of this QuertHistorySQLResultsBody.
 
         历史sql语句
 
@@ -83,7 +83,7 @@ class QuertHistorySQLResultsBody:
 
     @sql_statement.setter
     def sql_statement(self, sql_statement):
-        """Sets the sql_statement of this QuertHistorySQLResultsBody.
+        r"""Sets the sql_statement of this QuertHistorySQLResultsBody.
 
         历史sql语句
 

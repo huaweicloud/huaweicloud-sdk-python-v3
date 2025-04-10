@@ -25,7 +25,7 @@ class UpgradeSpec:
     }
 
     def __init__(self, cluster_upgrade_action=None):
-        """UpgradeSpec
+        r"""UpgradeSpec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeSpec:
 
     @property
     def cluster_upgrade_action(self):
-        """Gets the cluster_upgrade_action of this UpgradeSpec.
+        r"""Gets the cluster_upgrade_action of this UpgradeSpec.
 
         :return: The cluster_upgrade_action of this UpgradeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterUpgradeAction`
@@ -52,7 +52,7 @@ class UpgradeSpec:
 
     @cluster_upgrade_action.setter
     def cluster_upgrade_action(self, cluster_upgrade_action):
-        """Sets the cluster_upgrade_action of this UpgradeSpec.
+        r"""Sets the cluster_upgrade_action of this UpgradeSpec.
 
         :param cluster_upgrade_action: The cluster_upgrade_action of this UpgradeSpec.
         :type cluster_upgrade_action: :class:`huaweicloudsdkcce.v3.ClusterUpgradeAction`

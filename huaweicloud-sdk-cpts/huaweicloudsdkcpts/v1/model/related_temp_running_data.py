@@ -35,7 +35,7 @@ class RelatedTempRunningData:
     }
 
     def __init__(self, task_run_info_id=None, related_temp_running_id=None, temp_id=None, temp_name=None, content_method_url=None, related_temp_running_data=None):
-        """RelatedTempRunningData
+        r"""RelatedTempRunningData
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RelatedTempRunningData:
 
     @property
     def task_run_info_id(self):
-        """Gets the task_run_info_id of this RelatedTempRunningData.
+        r"""Gets the task_run_info_id of this RelatedTempRunningData.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -89,7 +89,7 @@ class RelatedTempRunningData:
 
     @task_run_info_id.setter
     def task_run_info_id(self, task_run_info_id):
-        """Sets the task_run_info_id of this RelatedTempRunningData.
+        r"""Sets the task_run_info_id of this RelatedTempRunningData.
 
         运行任务id，即报告id。启动任务（更新任务状态或批量启停任务）接口，会返回运行任务id。
 
@@ -100,7 +100,7 @@ class RelatedTempRunningData:
 
     @property
     def related_temp_running_id(self):
-        """Gets the related_temp_running_id of this RelatedTempRunningData.
+        r"""Gets the related_temp_running_id of this RelatedTempRunningData.
 
         运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
 
@@ -111,7 +111,7 @@ class RelatedTempRunningData:
 
     @related_temp_running_id.setter
     def related_temp_running_id(self, related_temp_running_id):
-        """Sets the related_temp_running_id of this RelatedTempRunningData.
+        r"""Sets the related_temp_running_id of this RelatedTempRunningData.
 
         运行用例id。对应其他（如报告）接口的运行用例id（case_run_id）。
 
@@ -122,7 +122,7 @@ class RelatedTempRunningData:
 
     @property
     def temp_id(self):
-        """Gets the temp_id of this RelatedTempRunningData.
+        r"""Gets the temp_id of this RelatedTempRunningData.
 
         用例id
 
@@ -133,7 +133,7 @@ class RelatedTempRunningData:
 
     @temp_id.setter
     def temp_id(self, temp_id):
-        """Sets the temp_id of this RelatedTempRunningData.
+        r"""Sets the temp_id of this RelatedTempRunningData.
 
         用例id
 
@@ -144,7 +144,7 @@ class RelatedTempRunningData:
 
     @property
     def temp_name(self):
-        """Gets the temp_name of this RelatedTempRunningData.
+        r"""Gets the temp_name of this RelatedTempRunningData.
 
         用例名称
 
@@ -155,7 +155,7 @@ class RelatedTempRunningData:
 
     @temp_name.setter
     def temp_name(self, temp_name):
-        """Sets the temp_name of this RelatedTempRunningData.
+        r"""Sets the temp_name of this RelatedTempRunningData.
 
         用例名称
 
@@ -166,7 +166,7 @@ class RelatedTempRunningData:
 
     @property
     def content_method_url(self):
-        """Gets the content_method_url of this RelatedTempRunningData.
+        r"""Gets the content_method_url of this RelatedTempRunningData.
 
         请求信息，包括请求名称，方法，url信息
 
@@ -177,7 +177,7 @@ class RelatedTempRunningData:
 
     @content_method_url.setter
     def content_method_url(self, content_method_url):
-        """Sets the content_method_url of this RelatedTempRunningData.
+        r"""Sets the content_method_url of this RelatedTempRunningData.
 
         请求信息，包括请求名称，方法，url信息
 
@@ -188,7 +188,7 @@ class RelatedTempRunningData:
 
     @property
     def related_temp_running_data(self):
-        """Gets the related_temp_running_data of this RelatedTempRunningData.
+        r"""Gets the related_temp_running_data of this RelatedTempRunningData.
 
         最近一次运行的报告简略信息
 
@@ -199,7 +199,7 @@ class RelatedTempRunningData:
 
     @related_temp_running_data.setter
     def related_temp_running_data(self, related_temp_running_data):
-        """Sets the related_temp_running_data of this RelatedTempRunningData.
+        r"""Sets the related_temp_running_data of this RelatedTempRunningData.
 
         最近一次运行的报告简略信息
 

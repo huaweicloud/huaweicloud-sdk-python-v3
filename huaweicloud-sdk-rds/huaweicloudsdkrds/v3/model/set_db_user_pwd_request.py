@@ -29,7 +29,7 @@ class SetDbUserPwdRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetDbUserPwdRequest
+        r"""SetDbUserPwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetDbUserPwdRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetDbUserPwdRequest.
+        r"""Gets the x_language of this SetDbUserPwdRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SetDbUserPwdRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetDbUserPwdRequest.
+        r"""Sets the x_language of this SetDbUserPwdRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SetDbUserPwdRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetDbUserPwdRequest.
+        r"""Gets the instance_id of this SetDbUserPwdRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetDbUserPwdRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetDbUserPwdRequest.
+        r"""Sets the instance_id of this SetDbUserPwdRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetDbUserPwdRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetDbUserPwdRequest.
+        r"""Gets the body of this SetDbUserPwdRequest.
 
         :return: The body of this SetDbUserPwdRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DbUserPwdRequest`
@@ -109,7 +109,7 @@ class SetDbUserPwdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetDbUserPwdRequest.
+        r"""Sets the body of this SetDbUserPwdRequest.
 
         :param body: The body of this SetDbUserPwdRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DbUserPwdRequest`

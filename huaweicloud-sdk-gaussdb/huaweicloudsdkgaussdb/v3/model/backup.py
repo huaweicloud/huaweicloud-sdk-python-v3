@@ -37,7 +37,7 @@ class Backup:
     }
 
     def __init__(self, id=None, name=None, description=None, begin_time=None, status=None, type=None, instance_id=None):
-        """Backup
+        r"""Backup
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Backup:
 
     @property
     def id(self):
-        """Gets the id of this Backup.
+        r"""Gets the id of this Backup.
 
         备份ID
 
@@ -96,7 +96,7 @@ class Backup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Backup.
+        r"""Sets the id of this Backup.
 
         备份ID
 
@@ -107,7 +107,7 @@ class Backup:
 
     @property
     def name(self):
-        """Gets the name of this Backup.
+        r"""Gets the name of this Backup.
 
         备份名称。
 
@@ -118,7 +118,7 @@ class Backup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Backup.
+        r"""Sets the name of this Backup.
 
         备份名称。
 
@@ -129,7 +129,7 @@ class Backup:
 
     @property
     def description(self):
-        """Gets the description of this Backup.
+        r"""Gets the description of this Backup.
 
         备份描述。
 
@@ -140,7 +140,7 @@ class Backup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Backup.
+        r"""Sets the description of this Backup.
 
         备份描述。
 
@@ -151,7 +151,7 @@ class Backup:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Backup.
+        r"""Gets the begin_time of this Backup.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”，其中T指时间字段的开始；Z指时区偏移量。
 
@@ -162,7 +162,7 @@ class Backup:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Backup.
+        r"""Sets the begin_time of this Backup.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”，其中T指时间字段的开始；Z指时区偏移量。
 
@@ -173,7 +173,7 @@ class Backup:
 
     @property
     def status(self):
-        """Gets the status of this Backup.
+        r"""Gets the status of this Backup.
 
         备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
@@ -184,7 +184,7 @@ class Backup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Backup.
+        r"""Sets the status of this Backup.
 
         备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
@@ -195,7 +195,7 @@ class Backup:
 
     @property
     def type(self):
-        """Gets the type of this Backup.
+        r"""Gets the type of this Backup.
 
         备份类型，取值： - manual：手动全量备份。
 
@@ -206,7 +206,7 @@ class Backup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Backup.
+        r"""Sets the type of this Backup.
 
         备份类型，取值： - manual：手动全量备份。
 
@@ -217,7 +217,7 @@ class Backup:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Backup.
+        r"""Gets the instance_id of this Backup.
 
         实例ID。
 
@@ -228,7 +228,7 @@ class Backup:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Backup.
+        r"""Sets the instance_id of this Backup.
 
         实例ID。
 

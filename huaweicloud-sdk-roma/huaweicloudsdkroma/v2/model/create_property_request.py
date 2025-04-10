@@ -29,7 +29,7 @@ class CreatePropertyRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, body=None):
-        """CreatePropertyRequest
+        r"""CreatePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePropertyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePropertyRequest.
+        r"""Gets the instance_id of this CreatePropertyRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreatePropertyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePropertyRequest.
+        r"""Sets the instance_id of this CreatePropertyRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreatePropertyRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this CreatePropertyRequest.
+        r"""Gets the service_id of this CreatePropertyRequest.
 
         服务ID
 
@@ -88,7 +88,7 @@ class CreatePropertyRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this CreatePropertyRequest.
+        r"""Sets the service_id of this CreatePropertyRequest.
 
         服务ID
 
@@ -99,7 +99,7 @@ class CreatePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePropertyRequest.
+        r"""Gets the body of this CreatePropertyRequest.
 
         :return: The body of this CreatePropertyRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
@@ -108,7 +108,7 @@ class CreatePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePropertyRequest.
+        r"""Sets the body of this CreatePropertyRequest.
 
         :param body: The body of this CreatePropertyRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`

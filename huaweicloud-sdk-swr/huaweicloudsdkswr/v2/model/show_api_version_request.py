@@ -25,7 +25,7 @@ class ShowApiVersionRequest:
     }
 
     def __init__(self, api_version=None):
-        """ShowApiVersionRequest
+        r"""ShowApiVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowApiVersionRequest:
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowApiVersionRequest.
+        r"""Gets the api_version of this ShowApiVersionRequest.
 
         API版本号。
 
@@ -53,7 +53,7 @@ class ShowApiVersionRequest:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowApiVersionRequest.
+        r"""Sets the api_version of this ShowApiVersionRequest.
 
         API版本号。
 

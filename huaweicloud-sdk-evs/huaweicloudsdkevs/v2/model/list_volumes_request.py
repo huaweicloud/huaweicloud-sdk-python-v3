@@ -61,7 +61,7 @@ class ListVolumesRequest:
     }
 
     def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None, not_metadata=None):
-        """ListVolumesRequest
+        r"""ListVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class ListVolumesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVolumesRequest.
+        r"""Gets the marker of this ListVolumesRequest.
 
         通过云硬盘ID进行分页查询。默认为查询第一页数据。
 
@@ -180,7 +180,7 @@ class ListVolumesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVolumesRequest.
+        r"""Sets the marker of this ListVolumesRequest.
 
         通过云硬盘ID进行分页查询。默认为查询第一页数据。
 
@@ -191,7 +191,7 @@ class ListVolumesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVolumesRequest.
+        r"""Gets the name of this ListVolumesRequest.
 
         磁盘名称。
 
@@ -202,7 +202,7 @@ class ListVolumesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVolumesRequest.
+        r"""Sets the name of this ListVolumesRequest.
 
         磁盘名称。
 
@@ -213,7 +213,7 @@ class ListVolumesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVolumesRequest.
+        r"""Gets the limit of this ListVolumesRequest.
 
         返回结果个数限制。默认值为1000。
 
@@ -224,7 +224,7 @@ class ListVolumesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVolumesRequest.
+        r"""Sets the limit of this ListVolumesRequest.
 
         返回结果个数限制。默认值为1000。
 
@@ -235,7 +235,7 @@ class ListVolumesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListVolumesRequest.
+        r"""Gets the sort_key of this ListVolumesRequest.
 
         返回结果按该关键字排序，支持id，status，size，created_at等关键字，默认为“created_at”。
 
@@ -246,7 +246,7 @@ class ListVolumesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListVolumesRequest.
+        r"""Sets the sort_key of this ListVolumesRequest.
 
         返回结果按该关键字排序，支持id，status，size，created_at等关键字，默认为“created_at”。
 
@@ -257,7 +257,7 @@ class ListVolumesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVolumesRequest.
+        r"""Gets the offset of this ListVolumesRequest.
 
         偏移量（偏移量为一个大于0小于磁盘总个数的整数，表示查询该偏移量后面的所有的磁盘）。
 
@@ -268,7 +268,7 @@ class ListVolumesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVolumesRequest.
+        r"""Sets the offset of this ListVolumesRequest.
 
         偏移量（偏移量为一个大于0小于磁盘总个数的整数，表示查询该偏移量后面的所有的磁盘）。
 
@@ -279,7 +279,7 @@ class ListVolumesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListVolumesRequest.
+        r"""Gets the sort_dir of this ListVolumesRequest.
 
         返回结果按照降序或升序排列，默认为“desc”。 降序：desc 升序：asc
 
@@ -290,7 +290,7 @@ class ListVolumesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListVolumesRequest.
+        r"""Sets the sort_dir of this ListVolumesRequest.
 
         返回结果按照降序或升序排列，默认为“desc”。 降序：desc 升序：asc
 
@@ -301,7 +301,7 @@ class ListVolumesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVolumesRequest.
+        r"""Gets the status of this ListVolumesRequest.
 
         云硬盘状态，取值可参考：\"[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)\"。
 
@@ -312,7 +312,7 @@ class ListVolumesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVolumesRequest.
+        r"""Sets the status of this ListVolumesRequest.
 
         云硬盘状态，取值可参考：\"[云硬盘状态](https://support.huaweicloud.com/api-evs/evs_04_0040.html)\"。
 
@@ -323,7 +323,7 @@ class ListVolumesRequest:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListVolumesRequest.
+        r"""Gets the metadata of this ListVolumesRequest.
 
         云硬盘元数据。
 
@@ -334,7 +334,7 @@ class ListVolumesRequest:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListVolumesRequest.
+        r"""Sets the metadata of this ListVolumesRequest.
 
         云硬盘元数据。
 
@@ -345,7 +345,7 @@ class ListVolumesRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListVolumesRequest.
+        r"""Gets the availability_zone of this ListVolumesRequest.
 
         可用区信息。
 
@@ -356,7 +356,7 @@ class ListVolumesRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListVolumesRequest.
+        r"""Sets the availability_zone of this ListVolumesRequest.
 
         可用区信息。
 
@@ -367,7 +367,7 @@ class ListVolumesRequest:
 
     @property
     def multiattach(self):
-        """Gets the multiattach of this ListVolumesRequest.
+        r"""Gets the multiattach of this ListVolumesRequest.
 
         是否为共享云硬盘。 true：表示为共享云硬盘。 false：表示为非共享云硬盘。
 
@@ -378,7 +378,7 @@ class ListVolumesRequest:
 
     @multiattach.setter
     def multiattach(self, multiattach):
-        """Sets the multiattach of this ListVolumesRequest.
+        r"""Sets the multiattach of this ListVolumesRequest.
 
         是否为共享云硬盘。 true：表示为共享云硬盘。 false：表示为非共享云硬盘。
 
@@ -389,7 +389,7 @@ class ListVolumesRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListVolumesRequest.
+        r"""Gets the service_type of this ListVolumesRequest.
 
         服务类型，仅支持EVS、DSS、DESS。
 
@@ -400,7 +400,7 @@ class ListVolumesRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListVolumesRequest.
+        r"""Sets the service_type of this ListVolumesRequest.
 
         服务类型，仅支持EVS、DSS、DESS。
 
@@ -411,7 +411,7 @@ class ListVolumesRequest:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this ListVolumesRequest.
+        r"""Gets the dedicated_storage_id of this ListVolumesRequest.
 
         专属存储池ID，可过滤出该专属存储池下的所有云硬盘，必须精确匹配。
 
@@ -422,7 +422,7 @@ class ListVolumesRequest:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this ListVolumesRequest.
+        r"""Sets the dedicated_storage_id of this ListVolumesRequest.
 
         专属存储池ID，可过滤出该专属存储池下的所有云硬盘，必须精确匹配。
 
@@ -433,7 +433,7 @@ class ListVolumesRequest:
 
     @property
     def dedicated_storage_name(self):
-        """Gets the dedicated_storage_name of this ListVolumesRequest.
+        r"""Gets the dedicated_storage_name of this ListVolumesRequest.
 
         专属存储池的名字，可过滤出该专属存储池下的所有云硬盘，支持模糊匹配。
 
@@ -444,7 +444,7 @@ class ListVolumesRequest:
 
     @dedicated_storage_name.setter
     def dedicated_storage_name(self, dedicated_storage_name):
-        """Sets the dedicated_storage_name of this ListVolumesRequest.
+        r"""Sets the dedicated_storage_name of this ListVolumesRequest.
 
         专属存储池的名字，可过滤出该专属存储池下的所有云硬盘，支持模糊匹配。
 
@@ -455,7 +455,7 @@ class ListVolumesRequest:
 
     @property
     def volume_type_id(self):
-        """Gets the volume_type_id of this ListVolumesRequest.
+        r"""Gets the volume_type_id of this ListVolumesRequest.
 
         云硬盘类型id。 通过\"[查询云硬盘类型列表](https://support.huaweicloud.com/api-evs/evs_04_3035.html)\"可以查到，即volume_types参数说明表格中的“id”
 
@@ -466,7 +466,7 @@ class ListVolumesRequest:
 
     @volume_type_id.setter
     def volume_type_id(self, volume_type_id):
-        """Sets the volume_type_id of this ListVolumesRequest.
+        r"""Sets the volume_type_id of this ListVolumesRequest.
 
         云硬盘类型id。 通过\"[查询云硬盘类型列表](https://support.huaweicloud.com/api-evs/evs_04_3035.html)\"可以查到，即volume_types参数说明表格中的“id”
 
@@ -477,7 +477,7 @@ class ListVolumesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVolumesRequest.
+        r"""Gets the id of this ListVolumesRequest.
 
         云硬盘ID。
 
@@ -488,7 +488,7 @@ class ListVolumesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVolumesRequest.
+        r"""Sets the id of this ListVolumesRequest.
 
         云硬盘ID。
 
@@ -499,7 +499,7 @@ class ListVolumesRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this ListVolumesRequest.
+        r"""Gets the ids of this ListVolumesRequest.
 
         云硬盘id列表，格式为ids=['id1','id2',...,'idx']，返回“ids”中有效id的云硬盘详情，无效的id会被忽略。 支持查询最多60个id对应的云硬盘详情。 如果“id”和“ids”查询参数同时存在，“id”会被忽略。
 
@@ -510,7 +510,7 @@ class ListVolumesRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ListVolumesRequest.
+        r"""Sets the ids of this ListVolumesRequest.
 
         云硬盘id列表，格式为ids=['id1','id2',...,'idx']，返回“ids”中有效id的云硬盘详情，无效的id会被忽略。 支持查询最多60个id对应的云硬盘详情。 如果“id”和“ids”查询参数同时存在，“id”会被忽略。
 
@@ -521,7 +521,7 @@ class ListVolumesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVolumesRequest.
+        r"""Gets the enterprise_project_id of this ListVolumesRequest.
 
         指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
@@ -532,7 +532,7 @@ class ListVolumesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVolumesRequest.
+        r"""Sets the enterprise_project_id of this ListVolumesRequest.
 
         指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
@@ -543,7 +543,7 @@ class ListVolumesRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListVolumesRequest.
+        r"""Gets the server_id of this ListVolumesRequest.
 
         云服务器id。
 
@@ -554,7 +554,7 @@ class ListVolumesRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListVolumesRequest.
+        r"""Sets the server_id of this ListVolumesRequest.
 
         云服务器id。
 
@@ -565,7 +565,7 @@ class ListVolumesRequest:
 
     @property
     def not_metadata(self):
-        """Gets the not_metadata of this ListVolumesRequest.
+        r"""Gets the not_metadata of this ListVolumesRequest.
 
         查询不包含所选元数据的云硬盘
 
@@ -576,7 +576,7 @@ class ListVolumesRequest:
 
     @not_metadata.setter
     def not_metadata(self, not_metadata):
-        """Sets the not_metadata of this ListVolumesRequest.
+        r"""Sets the not_metadata of this ListVolumesRequest.
 
         查询不包含所选元数据的云硬盘
 

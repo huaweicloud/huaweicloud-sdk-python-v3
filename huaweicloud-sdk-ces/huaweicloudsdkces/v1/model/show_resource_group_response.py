@@ -38,7 +38,7 @@ class ShowResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_name=None, group_id=None, resources=None, status=None, create_time=None, meta_data=None, enterprise_project_id=None):
-        """ShowResourceGroupResponse
+        r"""ShowResourceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowResourceGroupResponse.
+        r"""Gets the group_name of this ShowResourceGroupResponse.
 
         资源分组的名称，如：Resource-Group-ECS-01。
 
@@ -97,7 +97,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowResourceGroupResponse.
+        r"""Sets the group_name of this ShowResourceGroupResponse.
 
         资源分组的名称，如：Resource-Group-ECS-01。
 
@@ -108,7 +108,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowResourceGroupResponse.
+        r"""Gets the group_id of this ShowResourceGroupResponse.
 
         资源分组的ID，如：rg1603786526428bWbVmk4rP。
 
@@ -119,7 +119,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowResourceGroupResponse.
+        r"""Sets the group_id of this ShowResourceGroupResponse.
 
         资源分组的ID，如：rg1603786526428bWbVmk4rP。
 
@@ -130,7 +130,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowResourceGroupResponse.
+        r"""Gets the resources of this ShowResourceGroupResponse.
 
         一组或者多个资源信息。
 
@@ -141,7 +141,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowResourceGroupResponse.
+        r"""Sets the resources of this ShowResourceGroupResponse.
 
         一组或者多个资源信息。
 
@@ -152,7 +152,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowResourceGroupResponse.
+        r"""Gets the status of this ShowResourceGroupResponse.
 
         资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
@@ -163,7 +163,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowResourceGroupResponse.
+        r"""Sets the status of this ShowResourceGroupResponse.
 
         资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
 
@@ -174,7 +174,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowResourceGroupResponse.
+        r"""Gets the create_time of this ShowResourceGroupResponse.
 
         资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
 
@@ -185,7 +185,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowResourceGroupResponse.
+        r"""Sets the create_time of this ShowResourceGroupResponse.
 
         资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。
 
@@ -196,7 +196,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ShowResourceGroupResponse.
+        r"""Gets the meta_data of this ShowResourceGroupResponse.
 
         :return: The meta_data of this ShowResourceGroupResponse.
         :rtype: :class:`huaweicloudsdkces.v1.MetaData`
@@ -205,7 +205,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ShowResourceGroupResponse.
+        r"""Sets the meta_data of this ShowResourceGroupResponse.
 
         :param meta_data: The meta_data of this ShowResourceGroupResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
@@ -214,7 +214,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowResourceGroupResponse.
+        r"""Gets the enterprise_project_id of this ShowResourceGroupResponse.
 
         创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
 
@@ -225,7 +225,7 @@ class ShowResourceGroupResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowResourceGroupResponse.
+        r"""Sets the enterprise_project_id of this ShowResourceGroupResponse.
 
         创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
 

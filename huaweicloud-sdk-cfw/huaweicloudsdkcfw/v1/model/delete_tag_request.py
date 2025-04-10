@@ -27,7 +27,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, fw_instance_id=None, body=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteTagRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this DeleteTagRequest.
+        r"""Gets the fw_instance_id of this DeleteTagRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -60,7 +60,7 @@ class DeleteTagRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this DeleteTagRequest.
+        r"""Sets the fw_instance_id of this DeleteTagRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -71,7 +71,7 @@ class DeleteTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTagRequest.
+        r"""Gets the body of this DeleteTagRequest.
 
         :return: The body of this DeleteTagRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteTagsDto`
@@ -80,7 +80,7 @@ class DeleteTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTagRequest.
+        r"""Sets the body of this DeleteTagRequest.
 
         :param body: The body of this DeleteTagRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.DeleteTagsDto`

@@ -30,7 +30,7 @@ class ListArticlesResponse(SdkResponse):
     }
 
     def __init__(self, articles=None, error_code=None, error_msg=None):
-        """ListArticlesResponse
+        r"""ListArticlesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListArticlesResponse(SdkResponse):
 
     @property
     def articles(self):
-        """Gets the articles of this ListArticlesResponse.
+        r"""Gets the articles of this ListArticlesResponse.
 
         热点/推荐案例列表
 
@@ -69,7 +69,7 @@ class ListArticlesResponse(SdkResponse):
 
     @articles.setter
     def articles(self, articles):
-        """Sets the articles of this ListArticlesResponse.
+        r"""Sets the articles of this ListArticlesResponse.
 
         热点/推荐案例列表
 
@@ -80,7 +80,7 @@ class ListArticlesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListArticlesResponse.
+        r"""Gets the error_code of this ListArticlesResponse.
 
         错误码
 
@@ -91,7 +91,7 @@ class ListArticlesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListArticlesResponse.
+        r"""Sets the error_code of this ListArticlesResponse.
 
         错误码
 
@@ -102,7 +102,7 @@ class ListArticlesResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListArticlesResponse.
+        r"""Gets the error_msg of this ListArticlesResponse.
 
         错误描述
 
@@ -113,7 +113,7 @@ class ListArticlesResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListArticlesResponse.
+        r"""Sets the error_msg of this ListArticlesResponse.
 
         错误描述
 

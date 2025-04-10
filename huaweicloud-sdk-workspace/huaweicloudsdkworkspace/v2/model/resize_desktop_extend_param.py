@@ -25,7 +25,7 @@ class ResizeDesktopExtendParam:
     }
 
     def __init__(self, is_auto_pay=None):
-        """ResizeDesktopExtendParam
+        r"""ResizeDesktopExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResizeDesktopExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeDesktopExtendParam.
+        r"""Gets the is_auto_pay of this ResizeDesktopExtendParam.
 
         是否自动付款，下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。默认为false。
 
@@ -54,7 +54,7 @@ class ResizeDesktopExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeDesktopExtendParam.
+        r"""Sets the is_auto_pay of this ResizeDesktopExtendParam.
 
         是否自动付款，下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。默认为false。
 

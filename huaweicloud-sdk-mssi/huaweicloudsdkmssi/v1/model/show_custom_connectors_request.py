@@ -29,7 +29,7 @@ class ShowCustomConnectorsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ShowCustomConnectorsRequest
+        r"""ShowCustomConnectorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowCustomConnectorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowCustomConnectorsRequest.
+        r"""Gets the offset of this ShowCustomConnectorsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -66,7 +66,7 @@ class ShowCustomConnectorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowCustomConnectorsRequest.
+        r"""Sets the offset of this ShowCustomConnectorsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -77,7 +77,7 @@ class ShowCustomConnectorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowCustomConnectorsRequest.
+        r"""Gets the limit of this ShowCustomConnectorsRequest.
 
         每页显示的条目数量
 
@@ -88,7 +88,7 @@ class ShowCustomConnectorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowCustomConnectorsRequest.
+        r"""Sets the limit of this ShowCustomConnectorsRequest.
 
         每页显示的条目数量
 
@@ -99,7 +99,7 @@ class ShowCustomConnectorsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowCustomConnectorsRequest.
+        r"""Gets the name of this ShowCustomConnectorsRequest.
 
         CustomConnectors的名字
 
@@ -110,7 +110,7 @@ class ShowCustomConnectorsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCustomConnectorsRequest.
+        r"""Sets the name of this ShowCustomConnectorsRequest.
 
         CustomConnectors的名字
 

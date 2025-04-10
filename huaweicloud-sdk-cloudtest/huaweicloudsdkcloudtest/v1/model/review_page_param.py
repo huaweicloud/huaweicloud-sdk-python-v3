@@ -39,7 +39,7 @@ class ReviewPageParam:
     }
 
     def __init__(self, deleted=None, limit=None, mindmap_id=None, node_id=None, node_value=None, offset=None, status=None, type=None):
-        """ReviewPageParam
+        r"""ReviewPageParam
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ReviewPageParam:
 
     @property
     def deleted(self):
-        """Gets the deleted of this ReviewPageParam.
+        r"""Gets the deleted of this ReviewPageParam.
 
         :return: The deleted of this ReviewPageParam.
         :rtype: str
@@ -101,7 +101,7 @@ class ReviewPageParam:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ReviewPageParam.
+        r"""Sets the deleted of this ReviewPageParam.
 
         :param deleted: The deleted of this ReviewPageParam.
         :type deleted: str
@@ -110,7 +110,7 @@ class ReviewPageParam:
 
     @property
     def limit(self):
-        """Gets the limit of this ReviewPageParam.
+        r"""Gets the limit of this ReviewPageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -121,7 +121,7 @@ class ReviewPageParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ReviewPageParam.
+        r"""Sets the limit of this ReviewPageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -132,7 +132,7 @@ class ReviewPageParam:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this ReviewPageParam.
+        r"""Gets the mindmap_id of this ReviewPageParam.
 
         :return: The mindmap_id of this ReviewPageParam.
         :rtype: str
@@ -141,7 +141,7 @@ class ReviewPageParam:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this ReviewPageParam.
+        r"""Sets the mindmap_id of this ReviewPageParam.
 
         :param mindmap_id: The mindmap_id of this ReviewPageParam.
         :type mindmap_id: str
@@ -150,7 +150,7 @@ class ReviewPageParam:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ReviewPageParam.
+        r"""Gets the node_id of this ReviewPageParam.
 
         :return: The node_id of this ReviewPageParam.
         :rtype: str
@@ -159,7 +159,7 @@ class ReviewPageParam:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ReviewPageParam.
+        r"""Sets the node_id of this ReviewPageParam.
 
         :param node_id: The node_id of this ReviewPageParam.
         :type node_id: str
@@ -168,7 +168,7 @@ class ReviewPageParam:
 
     @property
     def node_value(self):
-        """Gets the node_value of this ReviewPageParam.
+        r"""Gets the node_value of this ReviewPageParam.
 
         :return: The node_value of this ReviewPageParam.
         :rtype: str
@@ -177,7 +177,7 @@ class ReviewPageParam:
 
     @node_value.setter
     def node_value(self, node_value):
-        """Sets the node_value of this ReviewPageParam.
+        r"""Sets the node_value of this ReviewPageParam.
 
         :param node_value: The node_value of this ReviewPageParam.
         :type node_value: str
@@ -186,7 +186,7 @@ class ReviewPageParam:
 
     @property
     def offset(self):
-        """Gets the offset of this ReviewPageParam.
+        r"""Gets the offset of this ReviewPageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -197,7 +197,7 @@ class ReviewPageParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ReviewPageParam.
+        r"""Sets the offset of this ReviewPageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -208,7 +208,7 @@ class ReviewPageParam:
 
     @property
     def status(self):
-        """Gets the status of this ReviewPageParam.
+        r"""Gets the status of this ReviewPageParam.
 
         :return: The status of this ReviewPageParam.
         :rtype: str
@@ -217,7 +217,7 @@ class ReviewPageParam:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ReviewPageParam.
+        r"""Sets the status of this ReviewPageParam.
 
         :param status: The status of this ReviewPageParam.
         :type status: str
@@ -226,7 +226,7 @@ class ReviewPageParam:
 
     @property
     def type(self):
-        """Gets the type of this ReviewPageParam.
+        r"""Gets the type of this ReviewPageParam.
 
         :return: The type of this ReviewPageParam.
         :rtype: str
@@ -235,7 +235,7 @@ class ReviewPageParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ReviewPageParam.
+        r"""Sets the type of this ReviewPageParam.
 
         :param type: The type of this ReviewPageParam.
         :type type: str

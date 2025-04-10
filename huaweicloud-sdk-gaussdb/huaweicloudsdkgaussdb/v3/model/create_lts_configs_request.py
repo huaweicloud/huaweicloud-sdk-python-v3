@@ -27,7 +27,7 @@ class CreateLtsConfigsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateLtsConfigsRequest
+        r"""CreateLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateLtsConfigsRequest.
+        r"""Gets the x_language of this CreateLtsConfigsRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class CreateLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateLtsConfigsRequest.
+        r"""Sets the x_language of this CreateLtsConfigsRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class CreateLtsConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLtsConfigsRequest.
+        r"""Gets the body of this CreateLtsConfigsRequest.
 
         :return: The body of this CreateLtsConfigsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateLtsConfigs`
@@ -81,7 +81,7 @@ class CreateLtsConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLtsConfigsRequest.
+        r"""Sets the body of this CreateLtsConfigsRequest.
 
         :param body: The body of this CreateLtsConfigsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CreateLtsConfigs`

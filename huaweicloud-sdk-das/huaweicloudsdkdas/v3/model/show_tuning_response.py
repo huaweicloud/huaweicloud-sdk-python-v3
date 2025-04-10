@@ -26,7 +26,7 @@ class ShowTuningResponse(SdkResponse):
     }
 
     def __init__(self, tune_result=None):
-        """ShowTuningResponse
+        r"""ShowTuningResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTuningResponse(SdkResponse):
 
     @property
     def tune_result(self):
-        """Gets the tune_result of this ShowTuningResponse.
+        r"""Gets the tune_result of this ShowTuningResponse.
 
         :return: The tune_result of this ShowTuningResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.AdviceResult`
@@ -53,7 +53,7 @@ class ShowTuningResponse(SdkResponse):
 
     @tune_result.setter
     def tune_result(self, tune_result):
-        """Sets the tune_result of this ShowTuningResponse.
+        r"""Sets the tune_result of this ShowTuningResponse.
 
         :param tune_result: The tune_result of this ShowTuningResponse.
         :type tune_result: :class:`huaweicloudsdkdas.v3.AdviceResult`

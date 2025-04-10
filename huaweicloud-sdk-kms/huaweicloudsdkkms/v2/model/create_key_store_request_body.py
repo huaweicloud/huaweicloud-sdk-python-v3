@@ -29,7 +29,7 @@ class CreateKeyStoreRequestBody:
     }
 
     def __init__(self, keystore_alias=None, hsm_cluster_id=None, hsm_ca_cert=None):
-        """CreateKeyStoreRequestBody
+        r"""CreateKeyStoreRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateKeyStoreRequestBody:
 
     @property
     def keystore_alias(self):
-        """Gets the keystore_alias of this CreateKeyStoreRequestBody.
+        r"""Gets the keystore_alias of this CreateKeyStoreRequestBody.
 
         专属密钥库别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与已有的专属密钥库别名重名。
 
@@ -65,7 +65,7 @@ class CreateKeyStoreRequestBody:
 
     @keystore_alias.setter
     def keystore_alias(self, keystore_alias):
-        """Sets the keystore_alias of this CreateKeyStoreRequestBody.
+        r"""Sets the keystore_alias of this CreateKeyStoreRequestBody.
 
         专属密钥库别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与已有的专属密钥库别名重名。
 
@@ -76,7 +76,7 @@ class CreateKeyStoreRequestBody:
 
     @property
     def hsm_cluster_id(self):
-        """Gets the hsm_cluster_id of this CreateKeyStoreRequestBody.
+        r"""Gets the hsm_cluster_id of this CreateKeyStoreRequestBody.
 
         DHSM集群Id，要求集群当前未创建专属密钥库。
 
@@ -87,7 +87,7 @@ class CreateKeyStoreRequestBody:
 
     @hsm_cluster_id.setter
     def hsm_cluster_id(self, hsm_cluster_id):
-        """Sets the hsm_cluster_id of this CreateKeyStoreRequestBody.
+        r"""Sets the hsm_cluster_id of this CreateKeyStoreRequestBody.
 
         DHSM集群Id，要求集群当前未创建专属密钥库。
 
@@ -98,7 +98,7 @@ class CreateKeyStoreRequestBody:
 
     @property
     def hsm_ca_cert(self):
-        """Gets the hsm_ca_cert of this CreateKeyStoreRequestBody.
+        r"""Gets the hsm_ca_cert of this CreateKeyStoreRequestBody.
 
         DHSM集群的CA证书
 
@@ -109,7 +109,7 @@ class CreateKeyStoreRequestBody:
 
     @hsm_ca_cert.setter
     def hsm_ca_cert(self, hsm_ca_cert):
-        """Sets the hsm_ca_cert of this CreateKeyStoreRequestBody.
+        r"""Sets the hsm_ca_cert of this CreateKeyStoreRequestBody.
 
         DHSM集群的CA证书
 

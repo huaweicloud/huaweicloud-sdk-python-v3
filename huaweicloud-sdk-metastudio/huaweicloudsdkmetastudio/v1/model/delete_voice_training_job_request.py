@@ -27,7 +27,7 @@ class DeleteVoiceTrainingJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, job_id=None):
-        """DeleteVoiceTrainingJobRequest
+        r"""DeleteVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteVoiceTrainingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteVoiceTrainingJobRequest.
+        r"""Gets the x_app_user_id of this DeleteVoiceTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class DeleteVoiceTrainingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteVoiceTrainingJobRequest.
+        r"""Sets the x_app_user_id of this DeleteVoiceTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class DeleteVoiceTrainingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteVoiceTrainingJobRequest.
+        r"""Gets the job_id of this DeleteVoiceTrainingJobRequest.
 
         任务id。
 
@@ -82,7 +82,7 @@ class DeleteVoiceTrainingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteVoiceTrainingJobRequest.
+        r"""Sets the job_id of this DeleteVoiceTrainingJobRequest.
 
         任务id。
 

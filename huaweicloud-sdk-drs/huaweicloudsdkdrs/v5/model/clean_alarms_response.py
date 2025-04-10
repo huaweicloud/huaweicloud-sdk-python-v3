@@ -26,7 +26,7 @@ class CleanAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CleanAlarmsResponse
+        r"""CleanAlarmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CleanAlarmsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CleanAlarmsResponse.
+        r"""Gets the body of this CleanAlarmsResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class CleanAlarmsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CleanAlarmsResponse.
+        r"""Sets the body of this CleanAlarmsResponse.
 
         空响应体。
 

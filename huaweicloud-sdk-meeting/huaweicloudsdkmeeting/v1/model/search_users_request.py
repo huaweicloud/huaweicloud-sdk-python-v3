@@ -51,7 +51,7 @@ class SearchUsersRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, user_type=None, status=None, contains_un_active=None):
-        """SearchUsersRequest
+        r"""SearchUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class SearchUsersRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchUsersRequest.
+        r"""Gets the x_request_id of this SearchUsersRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -145,7 +145,7 @@ class SearchUsersRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchUsersRequest.
+        r"""Sets the x_request_id of this SearchUsersRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -156,7 +156,7 @@ class SearchUsersRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchUsersRequest.
+        r"""Gets the accept_language of this SearchUsersRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -167,7 +167,7 @@ class SearchUsersRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchUsersRequest.
+        r"""Sets the accept_language of this SearchUsersRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -178,7 +178,7 @@ class SearchUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchUsersRequest.
+        r"""Gets the offset of this SearchUsersRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页。
 
@@ -189,7 +189,7 @@ class SearchUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchUsersRequest.
+        r"""Sets the offset of this SearchUsersRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页。
 
@@ -200,7 +200,7 @@ class SearchUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchUsersRequest.
+        r"""Gets the limit of this SearchUsersRequest.
 
         查询数量。 默认值：10。 
 
@@ -211,7 +211,7 @@ class SearchUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchUsersRequest.
+        r"""Sets the limit of this SearchUsersRequest.
 
         查询数量。 默认值：10。 
 
@@ -222,7 +222,7 @@ class SearchUsersRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchUsersRequest.
+        r"""Gets the search_key of this SearchUsersRequest.
 
         搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
 
@@ -233,7 +233,7 @@ class SearchUsersRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchUsersRequest.
+        r"""Sets the search_key of this SearchUsersRequest.
 
         搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
 
@@ -244,7 +244,7 @@ class SearchUsersRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this SearchUsersRequest.
+        r"""Gets the sort_field of this SearchUsersRequest.
 
         排序字段名称 支持的取值： - userType - adminType - ldapAccount - deptCode - status - sortLevel
 
@@ -255,7 +255,7 @@ class SearchUsersRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this SearchUsersRequest.
+        r"""Sets the sort_field of this SearchUsersRequest.
 
         排序字段名称 支持的取值： - userType - adminType - ldapAccount - deptCode - status - sortLevel
 
@@ -266,7 +266,7 @@ class SearchUsersRequest:
 
     @property
     def is_asc(self):
-        """Gets the is_asc of this SearchUsersRequest.
+        r"""Gets the is_asc of this SearchUsersRequest.
 
         是否按升序排序。
 
@@ -277,7 +277,7 @@ class SearchUsersRequest:
 
     @is_asc.setter
     def is_asc(self, is_asc):
-        """Sets the is_asc of this SearchUsersRequest.
+        r"""Sets the is_asc of this SearchUsersRequest.
 
         是否按升序排序。
 
@@ -288,7 +288,7 @@ class SearchUsersRequest:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this SearchUsersRequest.
+        r"""Gets the dept_code of this SearchUsersRequest.
 
         部门编码，不带则查询所有。
 
@@ -299,7 +299,7 @@ class SearchUsersRequest:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this SearchUsersRequest.
+        r"""Sets the dept_code of this SearchUsersRequest.
 
         部门编码，不带则查询所有。
 
@@ -310,7 +310,7 @@ class SearchUsersRequest:
 
     @property
     def enable_sub_dept(self):
-        """Gets the enable_sub_dept of this SearchUsersRequest.
+        r"""Gets the enable_sub_dept of this SearchUsersRequest.
 
         是否查询子部门。 默认值: true 
 
@@ -321,7 +321,7 @@ class SearchUsersRequest:
 
     @enable_sub_dept.setter
     def enable_sub_dept(self, enable_sub_dept):
-        """Sets the enable_sub_dept of this SearchUsersRequest.
+        r"""Sets the enable_sub_dept of this SearchUsersRequest.
 
         是否查询子部门。 默认值: true 
 
@@ -332,7 +332,7 @@ class SearchUsersRequest:
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this SearchUsersRequest.
+        r"""Gets the admin_type of this SearchUsersRequest.
 
         根据管理员类型查询。 * 1：普通管理员 * 2：非管理员 
 
@@ -343,7 +343,7 @@ class SearchUsersRequest:
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this SearchUsersRequest.
+        r"""Sets the admin_type of this SearchUsersRequest.
 
         根据管理员类型查询。 * 1：普通管理员 * 2：非管理员 
 
@@ -354,7 +354,7 @@ class SearchUsersRequest:
 
     @property
     def enable_room(self):
-        """Gets the enable_room of this SearchUsersRequest.
+        r"""Gets the enable_room of this SearchUsersRequest.
 
         是否开启智能协同白板功能功能位，不带则搜索所有。 > 该参数将废弃，请勿使用。 
 
@@ -365,7 +365,7 @@ class SearchUsersRequest:
 
     @enable_room.setter
     def enable_room(self, enable_room):
-        """Sets the enable_room of this SearchUsersRequest.
+        r"""Sets the enable_room of this SearchUsersRequest.
 
         是否开启智能协同白板功能功能位，不带则搜索所有。 > 该参数将废弃，请勿使用。 
 
@@ -376,7 +376,7 @@ class SearchUsersRequest:
 
     @property
     def user_type(self):
-        """Gets the user_type of this SearchUsersRequest.
+        r"""Gets the user_type of this SearchUsersRequest.
 
         用户类型。默认2。 * 2：普通用户 * 12：智慧屏用户 * 13：ideaHub用户 * 14: SmartRooms用户 
 
@@ -387,7 +387,7 @@ class SearchUsersRequest:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this SearchUsersRequest.
+        r"""Sets the user_type of this SearchUsersRequest.
 
         用户类型。默认2。 * 2：普通用户 * 12：智慧屏用户 * 13：ideaHub用户 * 14: SmartRooms用户 
 
@@ -398,7 +398,7 @@ class SearchUsersRequest:
 
     @property
     def status(self):
-        """Gets the status of this SearchUsersRequest.
+        r"""Gets the status of this SearchUsersRequest.
 
         用户状态。不带则查询所有。 * 0：正常 * 1：停用。 
 
@@ -409,7 +409,7 @@ class SearchUsersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchUsersRequest.
+        r"""Sets the status of this SearchUsersRequest.
 
         用户状态。不带则查询所有。 * 0：正常 * 1：停用。 
 
@@ -420,7 +420,7 @@ class SearchUsersRequest:
 
     @property
     def contains_un_active(self):
-        """Gets the contains_un_active of this SearchUsersRequest.
+        r"""Gets the contains_un_active of this SearchUsersRequest.
 
         是否查询未激活的终端。 默认值: false 
 
@@ -431,7 +431,7 @@ class SearchUsersRequest:
 
     @contains_un_active.setter
     def contains_un_active(self, contains_un_active):
-        """Sets the contains_un_active of this SearchUsersRequest.
+        r"""Sets the contains_un_active of this SearchUsersRequest.
 
         是否查询未激活的终端。 默认值: false 
 

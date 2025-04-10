@@ -29,7 +29,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
     }
 
     def __init__(self, workspace=None, policy_id=None, body=None):
-        """UpdateSecurityResourcePermissionPolicyRequest
+        r"""UpdateSecurityResourcePermissionPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityResourcePermissionPolicyRequest.
+        r"""Gets the workspace of this UpdateSecurityResourcePermissionPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityResourcePermissionPolicyRequest.
+        r"""Sets the workspace of this UpdateSecurityResourcePermissionPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateSecurityResourcePermissionPolicyRequest.
+        r"""Gets the policy_id of this UpdateSecurityResourcePermissionPolicyRequest.
 
         空间资源权限策略id。
 
@@ -88,7 +88,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateSecurityResourcePermissionPolicyRequest.
+        r"""Sets the policy_id of this UpdateSecurityResourcePermissionPolicyRequest.
 
         空间资源权限策略id。
 
@@ -99,7 +99,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityResourcePermissionPolicyRequest.
+        r"""Gets the body of this UpdateSecurityResourcePermissionPolicyRequest.
 
         :return: The body of this UpdateSecurityResourcePermissionPolicyRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionResourcePolicyCreateDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityResourcePermissionPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityResourcePermissionPolicyRequest.
+        r"""Sets the body of this UpdateSecurityResourcePermissionPolicyRequest.
 
         :param body: The body of this UpdateSecurityResourcePermissionPolicyRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionResourcePolicyCreateDTO`

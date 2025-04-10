@@ -25,7 +25,7 @@ class ModifiyInstanceNameRequest:
     }
 
     def __init__(self, name=None):
-        """ModifiyInstanceNameRequest
+        r"""ModifiyInstanceNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifiyInstanceNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this ModifiyInstanceNameRequest.
+        r"""Gets the name of this ModifiyInstanceNameRequest.
 
         实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围如下：  - MySQL数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中文字符、中划线或者下划线，不能包含其他的特殊字符。 - PostgreSQL和SQL Server数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -53,7 +53,7 @@ class ModifiyInstanceNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifiyInstanceNameRequest.
+        r"""Sets the name of this ModifiyInstanceNameRequest.
 
         实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围如下：  - MySQL数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中文字符、中划线或者下划线，不能包含其他的特殊字符。 - PostgreSQL和SQL Server数据库支持的字符长度是4~64个字符，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 

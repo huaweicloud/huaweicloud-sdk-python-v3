@@ -28,7 +28,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeWaybillElectronicResponse
+        r"""RecognizeWaybillElectronicResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeWaybillElectronicResponse.
+        r"""Gets the result of this RecognizeWaybillElectronicResponse.
 
         :return: The result of this RecognizeWaybillElectronicResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`
@@ -60,7 +60,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeWaybillElectronicResponse.
+        r"""Sets the result of this RecognizeWaybillElectronicResponse.
 
         :param result: The result of this RecognizeWaybillElectronicResponse.
         :type result: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`
@@ -69,7 +69,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeWaybillElectronicResponse.
+        r"""Gets the x_request_id of this RecognizeWaybillElectronicResponse.
 
         :return: The x_request_id of this RecognizeWaybillElectronicResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeWaybillElectronicResponse.
+        r"""Sets the x_request_id of this RecognizeWaybillElectronicResponse.
 
         :param x_request_id: The x_request_id of this RecognizeWaybillElectronicResponse.
         :type x_request_id: str

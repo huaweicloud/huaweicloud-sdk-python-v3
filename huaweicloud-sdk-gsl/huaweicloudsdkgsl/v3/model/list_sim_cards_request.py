@@ -75,7 +75,7 @@ class ListSimCardsRequest:
     }
 
     def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, tag_id=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_used_flow=None, max_used_flow=None, min_left_flow=None, max_left_flow=None, real_named=None, order_id=None, filter_downtime_period=None, order_ids=None, price_plan_id=None):
-        """ListSimCardsRequest
+        r"""ListSimCardsRequest
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class ListSimCardsRequest:
 
     @property
     def main_search_type(self):
-        """Gets the main_search_type of this ListSimCardsRequest.
+        r"""Gets the main_search_type of this ListSimCardsRequest.
 
         查询关键标识类型： 1.容器ID(不同类型卡含义如下:ICCID(实体卡)，EID（eSIM）CID（vSIM)) 2.批次号 3.设备IMEI
 
@@ -229,7 +229,7 @@ class ListSimCardsRequest:
 
     @main_search_type.setter
     def main_search_type(self, main_search_type):
-        """Sets the main_search_type of this ListSimCardsRequest.
+        r"""Sets the main_search_type of this ListSimCardsRequest.
 
         查询关键标识类型： 1.容器ID(不同类型卡含义如下:ICCID(实体卡)，EID（eSIM）CID（vSIM)) 2.批次号 3.设备IMEI
 
@@ -240,7 +240,7 @@ class ListSimCardsRequest:
 
     @property
     def main_search_key(self):
-        """Gets the main_search_key of this ListSimCardsRequest.
+        r"""Gets the main_search_key of this ListSimCardsRequest.
 
         查询关键标识值：根据查询关键标识类型进行查询，例如想根据ICCID=xxx进行查询，则main_search_type=1&main_search_key=xxx
 
@@ -251,7 +251,7 @@ class ListSimCardsRequest:
 
     @main_search_key.setter
     def main_search_key(self, main_search_key):
-        """Sets the main_search_key of this ListSimCardsRequest.
+        r"""Sets the main_search_key of this ListSimCardsRequest.
 
         查询关键标识值：根据查询关键标识类型进行查询，例如想根据ICCID=xxx进行查询，则main_search_type=1&main_search_key=xxx
 
@@ -262,7 +262,7 @@ class ListSimCardsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimCardsRequest.
+        r"""Gets the limit of this ListSimCardsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -273,7 +273,7 @@ class ListSimCardsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimCardsRequest.
+        r"""Sets the limit of this ListSimCardsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -284,7 +284,7 @@ class ListSimCardsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimCardsRequest.
+        r"""Gets the offset of this ListSimCardsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -295,7 +295,7 @@ class ListSimCardsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimCardsRequest.
+        r"""Sets the offset of this ListSimCardsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -306,7 +306,7 @@ class ListSimCardsRequest:
 
     @property
     def sim_status(self):
-        """Gets the sim_status of this ListSimCardsRequest.
+        r"""Gets the sim_status of this ListSimCardsRequest.
 
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
@@ -317,7 +317,7 @@ class ListSimCardsRequest:
 
     @sim_status.setter
     def sim_status(self, sim_status):
-        """Sets the sim_status of this ListSimCardsRequest.
+        r"""Sets the sim_status of this ListSimCardsRequest.
 
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
@@ -328,7 +328,7 @@ class ListSimCardsRequest:
 
     @property
     def device_status(self):
-        """Gets the device_status of this ListSimCardsRequest.
+        r"""Gets the device_status of this ListSimCardsRequest.
 
         设备状态: 1.注册 2.重启 3.在线 4.离线
 
@@ -339,7 +339,7 @@ class ListSimCardsRequest:
 
     @device_status.setter
     def device_status(self, device_status):
-        """Sets the device_status of this ListSimCardsRequest.
+        r"""Sets the device_status of this ListSimCardsRequest.
 
         设备状态: 1.注册 2.重启 3.在线 4.离线
 
@@ -350,7 +350,7 @@ class ListSimCardsRequest:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this ListSimCardsRequest.
+        r"""Gets the tag_id of this ListSimCardsRequest.
 
         标签ID，最多支持传10个
 
@@ -361,7 +361,7 @@ class ListSimCardsRequest:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this ListSimCardsRequest.
+        r"""Sets the tag_id of this ListSimCardsRequest.
 
         标签ID，最多支持传10个
 
@@ -372,7 +372,7 @@ class ListSimCardsRequest:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this ListSimCardsRequest.
+        r"""Gets the sim_type of this ListSimCardsRequest.
 
         sim卡类型：  1.vSIM  2.eSIM  3.实体卡
 
@@ -383,7 +383,7 @@ class ListSimCardsRequest:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this ListSimCardsRequest.
+        r"""Sets the sim_type of this ListSimCardsRequest.
 
         sim卡类型：  1.vSIM  2.eSIM  3.实体卡
 
@@ -394,7 +394,7 @@ class ListSimCardsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListSimCardsRequest.
+        r"""Gets the order of this ListSimCardsRequest.
 
         排序的顺序，asc表示顺序排序，desc表示倒序排序，不传则默认asc
 
@@ -405,7 +405,7 @@ class ListSimCardsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListSimCardsRequest.
+        r"""Sets the order of this ListSimCardsRequest.
 
         排序的顺序，asc表示顺序排序，desc表示倒序排序，不传则默认asc
 
@@ -416,7 +416,7 @@ class ListSimCardsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListSimCardsRequest.
+        r"""Gets the sort of this ListSimCardsRequest.
 
         排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）、act_date（激活时间）、expire_time（到期时间）
 
@@ -427,7 +427,7 @@ class ListSimCardsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListSimCardsRequest.
+        r"""Sets the sort of this ListSimCardsRequest.
 
         排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）、act_date（激活时间）、expire_time（到期时间）
 
@@ -438,7 +438,7 @@ class ListSimCardsRequest:
 
     @property
     def msisdn(self):
-        """Gets the msisdn of this ListSimCardsRequest.
+        r"""Gets the msisdn of this ListSimCardsRequest.
 
         MSISDN
 
@@ -449,7 +449,7 @@ class ListSimCardsRequest:
 
     @msisdn.setter
     def msisdn(self, msisdn):
-        """Sets the msisdn of this ListSimCardsRequest.
+        r"""Sets the msisdn of this ListSimCardsRequest.
 
         MSISDN
 
@@ -460,7 +460,7 @@ class ListSimCardsRequest:
 
     @property
     def customer_attribute1(self):
-        """Gets the customer_attribute1 of this ListSimCardsRequest.
+        r"""Gets the customer_attribute1 of this ListSimCardsRequest.
 
         自定义属性一
 
@@ -471,7 +471,7 @@ class ListSimCardsRequest:
 
     @customer_attribute1.setter
     def customer_attribute1(self, customer_attribute1):
-        """Sets the customer_attribute1 of this ListSimCardsRequest.
+        r"""Sets the customer_attribute1 of this ListSimCardsRequest.
 
         自定义属性一
 
@@ -482,7 +482,7 @@ class ListSimCardsRequest:
 
     @property
     def customer_attribute2(self):
-        """Gets the customer_attribute2 of this ListSimCardsRequest.
+        r"""Gets the customer_attribute2 of this ListSimCardsRequest.
 
         自定义属性二
 
@@ -493,7 +493,7 @@ class ListSimCardsRequest:
 
     @customer_attribute2.setter
     def customer_attribute2(self, customer_attribute2):
-        """Sets the customer_attribute2 of this ListSimCardsRequest.
+        r"""Sets the customer_attribute2 of this ListSimCardsRequest.
 
         自定义属性二
 
@@ -504,7 +504,7 @@ class ListSimCardsRequest:
 
     @property
     def customer_attribute3(self):
-        """Gets the customer_attribute3 of this ListSimCardsRequest.
+        r"""Gets the customer_attribute3 of this ListSimCardsRequest.
 
         自定义属性三
 
@@ -515,7 +515,7 @@ class ListSimCardsRequest:
 
     @customer_attribute3.setter
     def customer_attribute3(self, customer_attribute3):
-        """Sets the customer_attribute3 of this ListSimCardsRequest.
+        r"""Sets the customer_attribute3 of this ListSimCardsRequest.
 
         自定义属性三
 
@@ -526,7 +526,7 @@ class ListSimCardsRequest:
 
     @property
     def customer_attribute4(self):
-        """Gets the customer_attribute4 of this ListSimCardsRequest.
+        r"""Gets the customer_attribute4 of this ListSimCardsRequest.
 
         自定义属性四
 
@@ -537,7 +537,7 @@ class ListSimCardsRequest:
 
     @customer_attribute4.setter
     def customer_attribute4(self, customer_attribute4):
-        """Sets the customer_attribute4 of this ListSimCardsRequest.
+        r"""Sets the customer_attribute4 of this ListSimCardsRequest.
 
         自定义属性四
 
@@ -548,7 +548,7 @@ class ListSimCardsRequest:
 
     @property
     def customer_attribute5(self):
-        """Gets the customer_attribute5 of this ListSimCardsRequest.
+        r"""Gets the customer_attribute5 of this ListSimCardsRequest.
 
         自定义属性五
 
@@ -559,7 +559,7 @@ class ListSimCardsRequest:
 
     @customer_attribute5.setter
     def customer_attribute5(self, customer_attribute5):
-        """Sets the customer_attribute5 of this ListSimCardsRequest.
+        r"""Sets the customer_attribute5 of this ListSimCardsRequest.
 
         自定义属性五
 
@@ -570,7 +570,7 @@ class ListSimCardsRequest:
 
     @property
     def customer_attribute6(self):
-        """Gets the customer_attribute6 of this ListSimCardsRequest.
+        r"""Gets the customer_attribute6 of this ListSimCardsRequest.
 
         自定义属性六
 
@@ -581,7 +581,7 @@ class ListSimCardsRequest:
 
     @customer_attribute6.setter
     def customer_attribute6(self, customer_attribute6):
-        """Sets the customer_attribute6 of this ListSimCardsRequest.
+        r"""Sets the customer_attribute6 of this ListSimCardsRequest.
 
         自定义属性六
 
@@ -592,7 +592,7 @@ class ListSimCardsRequest:
 
     @property
     def min_used_flow(self):
-        """Gets the min_used_flow of this ListSimCardsRequest.
+        r"""Gets the min_used_flow of this ListSimCardsRequest.
 
         最小使用流量(MB)
 
@@ -603,7 +603,7 @@ class ListSimCardsRequest:
 
     @min_used_flow.setter
     def min_used_flow(self, min_used_flow):
-        """Sets the min_used_flow of this ListSimCardsRequest.
+        r"""Sets the min_used_flow of this ListSimCardsRequest.
 
         最小使用流量(MB)
 
@@ -614,7 +614,7 @@ class ListSimCardsRequest:
 
     @property
     def max_used_flow(self):
-        """Gets the max_used_flow of this ListSimCardsRequest.
+        r"""Gets the max_used_flow of this ListSimCardsRequest.
 
         最大使用流量(MB)
 
@@ -625,7 +625,7 @@ class ListSimCardsRequest:
 
     @max_used_flow.setter
     def max_used_flow(self, max_used_flow):
-        """Sets the max_used_flow of this ListSimCardsRequest.
+        r"""Sets the max_used_flow of this ListSimCardsRequest.
 
         最大使用流量(MB)
 
@@ -636,7 +636,7 @@ class ListSimCardsRequest:
 
     @property
     def min_left_flow(self):
-        """Gets the min_left_flow of this ListSimCardsRequest.
+        r"""Gets the min_left_flow of this ListSimCardsRequest.
 
         最小剩余流量(MB)
 
@@ -647,7 +647,7 @@ class ListSimCardsRequest:
 
     @min_left_flow.setter
     def min_left_flow(self, min_left_flow):
-        """Sets the min_left_flow of this ListSimCardsRequest.
+        r"""Sets the min_left_flow of this ListSimCardsRequest.
 
         最小剩余流量(MB)
 
@@ -658,7 +658,7 @@ class ListSimCardsRequest:
 
     @property
     def max_left_flow(self):
-        """Gets the max_left_flow of this ListSimCardsRequest.
+        r"""Gets the max_left_flow of this ListSimCardsRequest.
 
         最大剩余流量(MB)
 
@@ -669,7 +669,7 @@ class ListSimCardsRequest:
 
     @max_left_flow.setter
     def max_left_flow(self, max_left_flow):
-        """Sets the max_left_flow of this ListSimCardsRequest.
+        r"""Sets the max_left_flow of this ListSimCardsRequest.
 
         最大剩余流量(MB)
 
@@ -680,7 +680,7 @@ class ListSimCardsRequest:
 
     @property
     def real_named(self):
-        """Gets the real_named of this ListSimCardsRequest.
+        r"""Gets the real_named of this ListSimCardsRequest.
 
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
@@ -691,7 +691,7 @@ class ListSimCardsRequest:
 
     @real_named.setter
     def real_named(self, real_named):
-        """Sets the real_named of this ListSimCardsRequest.
+        r"""Sets the real_named of this ListSimCardsRequest.
 
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
@@ -702,7 +702,7 @@ class ListSimCardsRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListSimCardsRequest.
+        r"""Gets the order_id of this ListSimCardsRequest.
 
         订单号
 
@@ -713,7 +713,7 @@ class ListSimCardsRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListSimCardsRequest.
+        r"""Sets the order_id of this ListSimCardsRequest.
 
         订单号
 
@@ -724,7 +724,7 @@ class ListSimCardsRequest:
 
     @property
     def filter_downtime_period(self):
-        """Gets the filter_downtime_period of this ListSimCardsRequest.
+        r"""Gets the filter_downtime_period of this ListSimCardsRequest.
 
         是否过滤停机保号的卡
 
@@ -735,7 +735,7 @@ class ListSimCardsRequest:
 
     @filter_downtime_period.setter
     def filter_downtime_period(self, filter_downtime_period):
-        """Sets the filter_downtime_period of this ListSimCardsRequest.
+        r"""Sets the filter_downtime_period of this ListSimCardsRequest.
 
         是否过滤停机保号的卡
 
@@ -746,7 +746,7 @@ class ListSimCardsRequest:
 
     @property
     def order_ids(self):
-        """Gets the order_ids of this ListSimCardsRequest.
+        r"""Gets the order_ids of this ListSimCardsRequest.
 
         订单批次号集合
 
@@ -757,7 +757,7 @@ class ListSimCardsRequest:
 
     @order_ids.setter
     def order_ids(self, order_ids):
-        """Sets the order_ids of this ListSimCardsRequest.
+        r"""Sets the order_ids of this ListSimCardsRequest.
 
         订单批次号集合
 
@@ -768,7 +768,7 @@ class ListSimCardsRequest:
 
     @property
     def price_plan_id(self):
-        """Gets the price_plan_id of this ListSimCardsRequest.
+        r"""Gets the price_plan_id of this ListSimCardsRequest.
 
         套餐id集合，最多支持传30个
 
@@ -779,7 +779,7 @@ class ListSimCardsRequest:
 
     @price_plan_id.setter
     def price_plan_id(self, price_plan_id):
-        """Sets the price_plan_id of this ListSimCardsRequest.
+        r"""Sets the price_plan_id of this ListSimCardsRequest.
 
         套餐id集合，最多支持传30个
 

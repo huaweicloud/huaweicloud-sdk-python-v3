@@ -27,7 +27,7 @@ class RelationTheme:
     }
 
     def __init__(self, theme_name=None, relation_type=None):
-        """RelationTheme
+        r"""RelationTheme
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RelationTheme:
 
     @property
     def theme_name(self):
-        """Gets the theme_name of this RelationTheme.
+        r"""Gets the theme_name of this RelationTheme.
 
         主题
 
@@ -61,7 +61,7 @@ class RelationTheme:
 
     @theme_name.setter
     def theme_name(self, theme_name):
-        """Sets the theme_name of this RelationTheme.
+        r"""Sets the theme_name of this RelationTheme.
 
         主题
 
@@ -72,7 +72,7 @@ class RelationTheme:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this RelationTheme.
+        r"""Gets the relation_type of this RelationTheme.
 
         - NON_PRIMARY: 主主题 - PRIMARY:  
 
@@ -83,7 +83,7 @@ class RelationTheme:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this RelationTheme.
+        r"""Sets the relation_type of this RelationTheme.
 
         - NON_PRIMARY: 主主题 - PRIMARY:  
 

@@ -27,7 +27,7 @@ class PatchGroupReqBody:
     }
 
     def __init__(self, schemas=None, operations=None):
-        """PatchGroupReqBody
+        r"""PatchGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PatchGroupReqBody:
 
     @property
     def schemas(self):
-        """Gets the schemas of this PatchGroupReqBody.
+        r"""Gets the schemas of this PatchGroupReqBody.
 
         概要
 
@@ -59,7 +59,7 @@ class PatchGroupReqBody:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this PatchGroupReqBody.
+        r"""Sets the schemas of this PatchGroupReqBody.
 
         概要
 
@@ -70,7 +70,7 @@ class PatchGroupReqBody:
 
     @property
     def operations(self):
-        """Gets the operations of this PatchGroupReqBody.
+        r"""Gets the operations of this PatchGroupReqBody.
 
         要执行的修改操作列表
 
@@ -81,7 +81,7 @@ class PatchGroupReqBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this PatchGroupReqBody.
+        r"""Sets the operations of this PatchGroupReqBody.
 
         要执行的修改操作列表
 

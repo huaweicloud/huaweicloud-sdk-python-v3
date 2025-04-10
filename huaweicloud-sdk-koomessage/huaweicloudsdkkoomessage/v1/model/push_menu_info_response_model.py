@@ -25,7 +25,7 @@ class PushMenuInfoResponseModel:
     }
 
     def __init__(self, data=None):
-        """PushMenuInfoResponseModel
+        r"""PushMenuInfoResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PushMenuInfoResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this PushMenuInfoResponseModel.
+        r"""Gets the data of this PushMenuInfoResponseModel.
 
         :return: The data of this PushMenuInfoResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PushMenuInfoResponseModelData`
@@ -52,7 +52,7 @@ class PushMenuInfoResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PushMenuInfoResponseModel.
+        r"""Sets the data of this PushMenuInfoResponseModel.
 
         :param data: The data of this PushMenuInfoResponseModel.
         :type data: :class:`huaweicloudsdkkoomessage.v1.PushMenuInfoResponseModelData`

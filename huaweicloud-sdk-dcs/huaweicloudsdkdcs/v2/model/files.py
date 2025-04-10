@@ -29,7 +29,7 @@ class Files:
     }
 
     def __init__(self, file_name=None, size=None, update_at=None):
-        """Files
+        r"""Files
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Files:
 
     @property
     def file_name(self):
-        """Gets the file_name of this Files.
+        r"""Gets the file_name of this Files.
 
         备份文件名。
 
@@ -67,7 +67,7 @@ class Files:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this Files.
+        r"""Sets the file_name of this Files.
 
         备份文件名。
 
@@ -78,7 +78,7 @@ class Files:
 
     @property
     def size(self):
-        """Gets the size of this Files.
+        r"""Gets the size of this Files.
 
         文件大小（单位：Byte）。
 
@@ -89,7 +89,7 @@ class Files:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Files.
+        r"""Sets the size of this Files.
 
         文件大小（单位：Byte）。
 
@@ -100,7 +100,7 @@ class Files:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Files.
+        r"""Gets the update_at of this Files.
 
         文件最后修改时间（格式YYYY-MM-DD HH:MM:SS）。
 
@@ -111,7 +111,7 @@ class Files:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Files.
+        r"""Sets the update_at of this Files.
 
         文件最后修改时间（格式YYYY-MM-DD HH:MM:SS）。
 

@@ -25,7 +25,7 @@ class DeleteCertificateRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """DeleteCertificateRequest
+        r"""DeleteCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this DeleteCertificateRequest.
+        r"""Gets the certificate_id of this DeleteCertificateRequest.
 
         所要删除的私有证书ID。
 
@@ -53,7 +53,7 @@ class DeleteCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this DeleteCertificateRequest.
+        r"""Sets the certificate_id of this DeleteCertificateRequest.
 
         所要删除的私有证书ID。
 

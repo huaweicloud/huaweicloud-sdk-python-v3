@@ -27,7 +27,7 @@ class RuleSetV2:
     }
 
     def __init__(self, ruleset_id=None, language=None):
-        """RuleSetV2
+        r"""RuleSetV2
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RuleSetV2:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this RuleSetV2.
+        r"""Gets the ruleset_id of this RuleSetV2.
 
         规则集id，需要从web界面获取
 
@@ -60,7 +60,7 @@ class RuleSetV2:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this RuleSetV2.
+        r"""Sets the ruleset_id of this RuleSetV2.
 
         规则集id，需要从web界面获取
 
@@ -71,7 +71,7 @@ class RuleSetV2:
 
     @property
     def language(self):
-        """Gets the language of this RuleSetV2.
+        r"""Gets the language of this RuleSetV2.
 
         检查语言，支持cpp,java,js,python,php,css,html,go,typescript
 
@@ -82,7 +82,7 @@ class RuleSetV2:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this RuleSetV2.
+        r"""Sets the language of this RuleSetV2.
 
         检查语言，支持cpp,java,js,python,php,css,html,go,typescript
 

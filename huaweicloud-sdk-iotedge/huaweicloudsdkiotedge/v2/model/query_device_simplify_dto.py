@@ -37,7 +37,7 @@ class QueryDeviceSimplifyDto:
     }
 
     def __init__(self, device_id=None, node_id=None, gateway_id=None, device_name=None, protocol_type=None, product_name=None, product_id=None):
-        """QueryDeviceSimplifyDto
+        r"""QueryDeviceSimplifyDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def device_id(self):
-        """Gets the device_id of this QueryDeviceSimplifyDto.
+        r"""Gets the device_id of this QueryDeviceSimplifyDto.
 
         设备id
 
@@ -96,7 +96,7 @@ class QueryDeviceSimplifyDto:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this QueryDeviceSimplifyDto.
+        r"""Sets the device_id of this QueryDeviceSimplifyDto.
 
         设备id
 
@@ -107,7 +107,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def node_id(self):
-        """Gets the node_id of this QueryDeviceSimplifyDto.
+        r"""Gets the node_id of this QueryDeviceSimplifyDto.
 
         设备识别码
 
@@ -118,7 +118,7 @@ class QueryDeviceSimplifyDto:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this QueryDeviceSimplifyDto.
+        r"""Sets the node_id of this QueryDeviceSimplifyDto.
 
         设备识别码
 
@@ -129,7 +129,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this QueryDeviceSimplifyDto.
+        r"""Gets the gateway_id of this QueryDeviceSimplifyDto.
 
         父设备id
 
@@ -140,7 +140,7 @@ class QueryDeviceSimplifyDto:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this QueryDeviceSimplifyDto.
+        r"""Sets the gateway_id of this QueryDeviceSimplifyDto.
 
         父设备id
 
@@ -151,7 +151,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def device_name(self):
-        """Gets the device_name of this QueryDeviceSimplifyDto.
+        r"""Gets the device_name of this QueryDeviceSimplifyDto.
 
         设备名称
 
@@ -162,7 +162,7 @@ class QueryDeviceSimplifyDto:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this QueryDeviceSimplifyDto.
+        r"""Sets the device_name of this QueryDeviceSimplifyDto.
 
         设备名称
 
@@ -173,7 +173,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this QueryDeviceSimplifyDto.
+        r"""Gets the protocol_type of this QueryDeviceSimplifyDto.
 
         设备协议类型
 
@@ -184,7 +184,7 @@ class QueryDeviceSimplifyDto:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this QueryDeviceSimplifyDto.
+        r"""Sets the protocol_type of this QueryDeviceSimplifyDto.
 
         设备协议类型
 
@@ -195,7 +195,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def product_name(self):
-        """Gets the product_name of this QueryDeviceSimplifyDto.
+        r"""Gets the product_name of this QueryDeviceSimplifyDto.
 
         产品名称
 
@@ -206,7 +206,7 @@ class QueryDeviceSimplifyDto:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this QueryDeviceSimplifyDto.
+        r"""Sets the product_name of this QueryDeviceSimplifyDto.
 
         产品名称
 
@@ -217,7 +217,7 @@ class QueryDeviceSimplifyDto:
 
     @property
     def product_id(self):
-        """Gets the product_id of this QueryDeviceSimplifyDto.
+        r"""Gets the product_id of this QueryDeviceSimplifyDto.
 
         产品ID
 
@@ -228,7 +228,7 @@ class QueryDeviceSimplifyDto:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this QueryDeviceSimplifyDto.
+        r"""Sets the product_id of this QueryDeviceSimplifyDto.
 
         产品ID
 

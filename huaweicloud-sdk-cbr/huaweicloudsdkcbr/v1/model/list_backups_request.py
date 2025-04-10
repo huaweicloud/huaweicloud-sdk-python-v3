@@ -69,7 +69,7 @@ class ListBackupsRequest:
     }
 
     def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type=None, member_status=None, parent_id=None, used_percent=None, show_replication=None, incremental=None):
-        """ListBackupsRequest
+        r"""ListBackupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class ListBackupsRequest:
 
     @property
     def checkpoint_id(self):
-        """Gets the checkpoint_id of this ListBackupsRequest.
+        r"""Gets the checkpoint_id of this ListBackupsRequest.
 
         还原点ID
 
@@ -208,7 +208,7 @@ class ListBackupsRequest:
 
     @checkpoint_id.setter
     def checkpoint_id(self, checkpoint_id):
-        """Sets the checkpoint_id of this ListBackupsRequest.
+        r"""Sets the checkpoint_id of this ListBackupsRequest.
 
         还原点ID
 
@@ -219,7 +219,7 @@ class ListBackupsRequest:
 
     @property
     def dec(self):
-        """Gets the dec of this ListBackupsRequest.
+        r"""Gets the dec of this ListBackupsRequest.
 
         专属云 （专属云场景使用，非专属云场景不生效）
 
@@ -230,7 +230,7 @@ class ListBackupsRequest:
 
     @dec.setter
     def dec(self, dec):
-        """Sets the dec of this ListBackupsRequest.
+        r"""Sets the dec of this ListBackupsRequest.
 
         专属云 （专属云场景使用，非专属云场景不生效）
 
@@ -241,7 +241,7 @@ class ListBackupsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListBackupsRequest.
+        r"""Gets the end_time of this ListBackupsRequest.
 
         备份产生时间范围的结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
@@ -252,7 +252,7 @@ class ListBackupsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListBackupsRequest.
+        r"""Sets the end_time of this ListBackupsRequest.
 
         备份产生时间范围的结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
@@ -263,7 +263,7 @@ class ListBackupsRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListBackupsRequest.
+        r"""Gets the image_type of this ListBackupsRequest.
 
         备份类型
 
@@ -274,7 +274,7 @@ class ListBackupsRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListBackupsRequest.
+        r"""Sets the image_type of this ListBackupsRequest.
 
         备份类型
 
@@ -285,7 +285,7 @@ class ListBackupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackupsRequest.
+        r"""Gets the limit of this ListBackupsRequest.
 
         每页显示的条目数量，正整数
 
@@ -296,7 +296,7 @@ class ListBackupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackupsRequest.
+        r"""Sets the limit of this ListBackupsRequest.
 
         每页显示的条目数量，正整数
 
@@ -307,7 +307,7 @@ class ListBackupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBackupsRequest.
+        r"""Gets the marker of this ListBackupsRequest.
 
         上一次查询最后一条的id
 
@@ -318,7 +318,7 @@ class ListBackupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBackupsRequest.
+        r"""Sets the marker of this ListBackupsRequest.
 
         上一次查询最后一条的id
 
@@ -329,7 +329,7 @@ class ListBackupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListBackupsRequest.
+        r"""Gets the name of this ListBackupsRequest.
 
         名称
 
@@ -340,7 +340,7 @@ class ListBackupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListBackupsRequest.
+        r"""Sets the name of this ListBackupsRequest.
 
         名称
 
@@ -351,7 +351,7 @@ class ListBackupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackupsRequest.
+        r"""Gets the offset of this ListBackupsRequest.
 
         偏移值，正整数
 
@@ -362,7 +362,7 @@ class ListBackupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackupsRequest.
+        r"""Sets the offset of this ListBackupsRequest.
 
         偏移值，正整数
 
@@ -373,7 +373,7 @@ class ListBackupsRequest:
 
     @property
     def resource_az(self):
-        """Gets the resource_az of this ListBackupsRequest.
+        r"""Gets the resource_az of this ListBackupsRequest.
 
         支持按az来过滤
 
@@ -384,7 +384,7 @@ class ListBackupsRequest:
 
     @resource_az.setter
     def resource_az(self, resource_az):
-        """Sets the resource_az of this ListBackupsRequest.
+        r"""Sets the resource_az of this ListBackupsRequest.
 
         支持按az来过滤
 
@@ -395,7 +395,7 @@ class ListBackupsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListBackupsRequest.
+        r"""Gets the resource_id of this ListBackupsRequest.
 
         资源ID
 
@@ -406,7 +406,7 @@ class ListBackupsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListBackupsRequest.
+        r"""Sets the resource_id of this ListBackupsRequest.
 
         资源ID
 
@@ -417,7 +417,7 @@ class ListBackupsRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListBackupsRequest.
+        r"""Gets the resource_name of this ListBackupsRequest.
 
         资源名称
 
@@ -428,7 +428,7 @@ class ListBackupsRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListBackupsRequest.
+        r"""Sets the resource_name of this ListBackupsRequest.
 
         资源名称
 
@@ -439,7 +439,7 @@ class ListBackupsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListBackupsRequest.
+        r"""Gets the resource_type of this ListBackupsRequest.
 
         资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
 
@@ -450,7 +450,7 @@ class ListBackupsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListBackupsRequest.
+        r"""Sets the resource_type of this ListBackupsRequest.
 
         资源类型: 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 云桌面：OS::Workspace::DesktopV2
 
@@ -461,7 +461,7 @@ class ListBackupsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListBackupsRequest.
+        r"""Gets the sort of this ListBackupsRequest.
 
         sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。key取值范围:[created_at，updated_at，name，status，protected_at，id]
 
@@ -472,7 +472,7 @@ class ListBackupsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListBackupsRequest.
+        r"""Sets the sort of this ListBackupsRequest.
 
         sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。key取值范围:[created_at，updated_at，name，status，protected_at，id]
 
@@ -483,7 +483,7 @@ class ListBackupsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListBackupsRequest.
+        r"""Gets the start_time of this ListBackupsRequest.
 
         备份产生时间范围的开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
@@ -494,7 +494,7 @@ class ListBackupsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListBackupsRequest.
+        r"""Sets the start_time of this ListBackupsRequest.
 
         备份产生时间范围的开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
@@ -505,7 +505,7 @@ class ListBackupsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListBackupsRequest.
+        r"""Gets the status of this ListBackupsRequest.
 
         状态。 调用API时，支持通过传多个status值进行过滤。例如：status=available&status=error
 
@@ -516,7 +516,7 @@ class ListBackupsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBackupsRequest.
+        r"""Sets the status of this ListBackupsRequest.
 
         状态。 调用API时，支持通过传多个status值进行过滤。例如：status=available&status=error
 
@@ -527,7 +527,7 @@ class ListBackupsRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ListBackupsRequest.
+        r"""Gets the vault_id of this ListBackupsRequest.
 
         存储库ID
 
@@ -538,7 +538,7 @@ class ListBackupsRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ListBackupsRequest.
+        r"""Sets the vault_id of this ListBackupsRequest.
 
         存储库ID
 
@@ -549,7 +549,7 @@ class ListBackupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListBackupsRequest.
+        r"""Gets the enterprise_project_id of this ListBackupsRequest.
 
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
@@ -560,7 +560,7 @@ class ListBackupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListBackupsRequest.
+        r"""Sets the enterprise_project_id of this ListBackupsRequest.
 
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
@@ -571,7 +571,7 @@ class ListBackupsRequest:
 
     @property
     def own_type(self):
-        """Gets the own_type of this ListBackupsRequest.
+        r"""Gets the own_type of this ListBackupsRequest.
 
         持有类型，私有的private/共享的shared/全部all_granted，默认只查询private。
 
@@ -582,7 +582,7 @@ class ListBackupsRequest:
 
     @own_type.setter
     def own_type(self, own_type):
-        """Sets the own_type of this ListBackupsRequest.
+        r"""Sets the own_type of this ListBackupsRequest.
 
         持有类型，私有的private/共享的shared/全部all_granted，默认只查询private。
 
@@ -593,7 +593,7 @@ class ListBackupsRequest:
 
     @property
     def member_status(self):
-        """Gets the member_status of this ListBackupsRequest.
+        r"""Gets the member_status of this ListBackupsRequest.
 
         共享状态
 
@@ -604,7 +604,7 @@ class ListBackupsRequest:
 
     @member_status.setter
     def member_status(self, member_status):
-        """Sets the member_status of this ListBackupsRequest.
+        r"""Sets the member_status of this ListBackupsRequest.
 
         共享状态
 
@@ -615,7 +615,7 @@ class ListBackupsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListBackupsRequest.
+        r"""Gets the parent_id of this ListBackupsRequest.
 
         父备份ID
 
@@ -626,7 +626,7 @@ class ListBackupsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListBackupsRequest.
+        r"""Sets the parent_id of this ListBackupsRequest.
 
         父备份ID
 
@@ -637,7 +637,7 @@ class ListBackupsRequest:
 
     @property
     def used_percent(self):
-        """Gets the used_percent of this ListBackupsRequest.
+        r"""Gets the used_percent of this ListBackupsRequest.
 
         根据存储库使用率过滤备份，取值范围 [1, 100]，含1和100。例如，used_percent=80，表示筛选所属存储库使用率大于等于80%的所有备份。
 
@@ -648,7 +648,7 @@ class ListBackupsRequest:
 
     @used_percent.setter
     def used_percent(self, used_percent):
-        """Sets the used_percent of this ListBackupsRequest.
+        r"""Sets the used_percent of this ListBackupsRequest.
 
         根据存储库使用率过滤备份，取值范围 [1, 100]，含1和100。例如，used_percent=80，表示筛选所属存储库使用率大于等于80%的所有备份。
 
@@ -659,7 +659,7 @@ class ListBackupsRequest:
 
     @property
     def show_replication(self):
-        """Gets the show_replication of this ListBackupsRequest.
+        r"""Gets the show_replication of this ListBackupsRequest.
 
         是否返回复制记录
 
@@ -670,7 +670,7 @@ class ListBackupsRequest:
 
     @show_replication.setter
     def show_replication(self, show_replication):
-        """Sets the show_replication of this ListBackupsRequest.
+        r"""Sets the show_replication of this ListBackupsRequest.
 
         是否返回复制记录
 
@@ -681,7 +681,7 @@ class ListBackupsRequest:
 
     @property
     def incremental(self):
-        """Gets the incremental of this ListBackupsRequest.
+        r"""Gets the incremental of this ListBackupsRequest.
 
         是否是增备
 
@@ -692,7 +692,7 @@ class ListBackupsRequest:
 
     @incremental.setter
     def incremental(self, incremental):
-        """Sets the incremental of this ListBackupsRequest.
+        r"""Sets the incremental of this ListBackupsRequest.
 
         是否是增备
 

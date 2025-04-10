@@ -26,7 +26,7 @@ class ListIpsProtectModeResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListIpsProtectModeResponse
+        r"""ListIpsProtectModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListIpsProtectModeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListIpsProtectModeResponse.
+        r"""Gets the data of this ListIpsProtectModeResponse.
 
         :return: The data of this ListIpsProtectModeResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.IpsProtectModeObject`
@@ -53,7 +53,7 @@ class ListIpsProtectModeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListIpsProtectModeResponse.
+        r"""Sets the data of this ListIpsProtectModeResponse.
 
         :param data: The data of this ListIpsProtectModeResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.IpsProtectModeObject`

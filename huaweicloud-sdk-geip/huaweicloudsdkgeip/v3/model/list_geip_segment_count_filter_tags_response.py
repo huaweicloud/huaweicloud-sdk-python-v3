@@ -30,7 +30,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None, x_request_id=None):
-        """ListGeipSegmentCountFilterTagsResponse
+        r"""ListGeipSegmentCountFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGeipSegmentCountFilterTagsResponse.
+        r"""Gets the request_id of this ListGeipSegmentCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGeipSegmentCountFilterTagsResponse.
+        r"""Sets the request_id of this ListGeipSegmentCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGeipSegmentCountFilterTagsResponse.
+        r"""Gets the total_count of this ListGeipSegmentCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -91,7 +91,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGeipSegmentCountFilterTagsResponse.
+        r"""Sets the total_count of this ListGeipSegmentCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -102,7 +102,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGeipSegmentCountFilterTagsResponse.
+        r"""Gets the x_request_id of this ListGeipSegmentCountFilterTagsResponse.
 
         :return: The x_request_id of this ListGeipSegmentCountFilterTagsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListGeipSegmentCountFilterTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGeipSegmentCountFilterTagsResponse.
+        r"""Sets the x_request_id of this ListGeipSegmentCountFilterTagsResponse.
 
         :param x_request_id: The x_request_id of this ListGeipSegmentCountFilterTagsResponse.
         :type x_request_id: str

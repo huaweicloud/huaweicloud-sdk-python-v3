@@ -24,7 +24,7 @@ class UpdateBatchClustersTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateBatchClustersTagsResponse
+        r"""UpdateBatchClustersTagsResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class DisableControlResponse(SdkResponse):
     }
 
     def __init__(self, control_operate_request_id=None):
-        """DisableControlResponse
+        r"""DisableControlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisableControlResponse(SdkResponse):
 
     @property
     def control_operate_request_id(self):
-        """Gets the control_operate_request_id of this DisableControlResponse.
+        r"""Gets the control_operate_request_id of this DisableControlResponse.
 
         控制策略的操作ID。
 
@@ -55,7 +55,7 @@ class DisableControlResponse(SdkResponse):
 
     @control_operate_request_id.setter
     def control_operate_request_id(self, control_operate_request_id):
-        """Sets the control_operate_request_id of this DisableControlResponse.
+        r"""Sets the control_operate_request_id of this DisableControlResponse.
 
         控制策略的操作ID。
 

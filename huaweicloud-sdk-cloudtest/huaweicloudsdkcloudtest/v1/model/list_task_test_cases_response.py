@@ -34,7 +34,7 @@ class ListTaskTestCasesResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ListTaskTestCasesResponse
+        r"""ListTaskTestCasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListTaskTestCasesResponse.
+        r"""Gets the status of this ListTaskTestCasesResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -83,7 +83,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTaskTestCasesResponse.
+        r"""Sets the status of this ListTaskTestCasesResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -94,7 +94,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListTaskTestCasesResponse.
+        r"""Gets the result of this ListTaskTestCasesResponse.
 
         :return: The result of this ListTaskTestCasesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTaskTestCasesVo`
@@ -103,7 +103,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListTaskTestCasesResponse.
+        r"""Sets the result of this ListTaskTestCasesResponse.
 
         :param result: The result of this ListTaskTestCasesResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueQueryTaskTestCasesVo`
@@ -112,7 +112,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListTaskTestCasesResponse.
+        r"""Gets the error of this ListTaskTestCasesResponse.
 
         :return: The error of this ListTaskTestCasesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListTaskTestCasesResponse.
+        r"""Sets the error of this ListTaskTestCasesResponse.
 
         :param error: The error of this ListTaskTestCasesResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTaskTestCasesResponse.
+        r"""Gets the request_id of this ListTaskTestCasesResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTaskTestCasesResponse.
+        r"""Sets the request_id of this ListTaskTestCasesResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this ListTaskTestCasesResponse.
+        r"""Gets the server_address of this ListTaskTestCasesResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class ListTaskTestCasesResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ListTaskTestCasesResponse.
+        r"""Sets the server_address of this ListTaskTestCasesResponse.
 
         对内接口才有此属性
 

@@ -47,7 +47,7 @@ class ScriptListModel:
     }
 
     def __init__(self, id=None, script_uuid=None, enterprise_project_id=None, name=None, type=None, status=None, gmt_created=None, gmt_modified=None, creator=None, creator_id=None, operator=None, properties=None):
-        """ScriptListModel
+        r"""ScriptListModel
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class ScriptListModel:
 
     @property
     def id(self):
-        """Gets the id of this ScriptListModel.
+        r"""Gets the id of this ScriptListModel.
 
         脚本自增id
 
@@ -121,7 +121,7 @@ class ScriptListModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptListModel.
+        r"""Sets the id of this ScriptListModel.
 
         脚本自增id
 
@@ -132,7 +132,7 @@ class ScriptListModel:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this ScriptListModel.
+        r"""Gets the script_uuid of this ScriptListModel.
 
         脚本uuid
 
@@ -143,7 +143,7 @@ class ScriptListModel:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this ScriptListModel.
+        r"""Sets the script_uuid of this ScriptListModel.
 
         脚本uuid
 
@@ -154,7 +154,7 @@ class ScriptListModel:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ScriptListModel.
+        r"""Gets the enterprise_project_id of this ScriptListModel.
 
         企业项目ID，默认为：0
 
@@ -165,7 +165,7 @@ class ScriptListModel:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ScriptListModel.
+        r"""Sets the enterprise_project_id of this ScriptListModel.
 
         企业项目ID，默认为：0
 
@@ -176,7 +176,7 @@ class ScriptListModel:
 
     @property
     def name(self):
-        """Gets the name of this ScriptListModel.
+        r"""Gets the name of this ScriptListModel.
 
         脚本名称
 
@@ -187,7 +187,7 @@ class ScriptListModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptListModel.
+        r"""Sets the name of this ScriptListModel.
 
         脚本名称
 
@@ -198,7 +198,7 @@ class ScriptListModel:
 
     @property
     def type(self):
-        """Gets the type of this ScriptListModel.
+        r"""Gets the type of this ScriptListModel.
 
         脚本类型 SHELL:shell脚本 PYTHON:python脚本 BAT:bat脚本
 
@@ -209,7 +209,7 @@ class ScriptListModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScriptListModel.
+        r"""Sets the type of this ScriptListModel.
 
         脚本类型 SHELL:shell脚本 PYTHON:python脚本 BAT:bat脚本
 
@@ -220,7 +220,7 @@ class ScriptListModel:
 
     @property
     def status(self):
-        """Gets the status of this ScriptListModel.
+        r"""Gets the status of this ScriptListModel.
 
         脚本状态 PENDING_APPROVE:待审批 APPROVED：正常（审批通过） REJECTED：驳回（审批人，驳回该脚本
 
@@ -231,7 +231,7 @@ class ScriptListModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScriptListModel.
+        r"""Sets the status of this ScriptListModel.
 
         脚本状态 PENDING_APPROVE:待审批 APPROVED：正常（审批通过） REJECTED：驳回（审批人，驳回该脚本
 
@@ -242,7 +242,7 @@ class ScriptListModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this ScriptListModel.
+        r"""Gets the gmt_created of this ScriptListModel.
 
         创建时间
 
@@ -253,7 +253,7 @@ class ScriptListModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this ScriptListModel.
+        r"""Sets the gmt_created of this ScriptListModel.
 
         创建时间
 
@@ -264,7 +264,7 @@ class ScriptListModel:
 
     @property
     def gmt_modified(self):
-        """Gets the gmt_modified of this ScriptListModel.
+        r"""Gets the gmt_modified of this ScriptListModel.
 
         修改时间
 
@@ -275,7 +275,7 @@ class ScriptListModel:
 
     @gmt_modified.setter
     def gmt_modified(self, gmt_modified):
-        """Sets the gmt_modified of this ScriptListModel.
+        r"""Sets the gmt_modified of this ScriptListModel.
 
         修改时间
 
@@ -286,7 +286,7 @@ class ScriptListModel:
 
     @property
     def creator(self):
-        """Gets the creator of this ScriptListModel.
+        r"""Gets the creator of this ScriptListModel.
 
         创建人
 
@@ -297,7 +297,7 @@ class ScriptListModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ScriptListModel.
+        r"""Sets the creator of this ScriptListModel.
 
         创建人
 
@@ -308,7 +308,7 @@ class ScriptListModel:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ScriptListModel.
+        r"""Gets the creator_id of this ScriptListModel.
 
         创建人Id
 
@@ -319,7 +319,7 @@ class ScriptListModel:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ScriptListModel.
+        r"""Sets the creator_id of this ScriptListModel.
 
         创建人Id
 
@@ -330,7 +330,7 @@ class ScriptListModel:
 
     @property
     def operator(self):
-        """Gets the operator of this ScriptListModel.
+        r"""Gets the operator of this ScriptListModel.
 
         修改人
 
@@ -341,7 +341,7 @@ class ScriptListModel:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ScriptListModel.
+        r"""Sets the operator of this ScriptListModel.
 
         修改人
 
@@ -352,7 +352,7 @@ class ScriptListModel:
 
     @property
     def properties(self):
-        """Gets the properties of this ScriptListModel.
+        r"""Gets the properties of this ScriptListModel.
 
         :return: The properties of this ScriptListModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -361,7 +361,7 @@ class ScriptListModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ScriptListModel.
+        r"""Sets the properties of this ScriptListModel.
 
         :param properties: The properties of this ScriptListModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`

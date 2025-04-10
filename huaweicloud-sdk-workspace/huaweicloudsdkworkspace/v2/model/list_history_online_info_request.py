@@ -31,7 +31,7 @@ class ListHistoryOnlineInfoRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, query_type=None, client_hour=None):
-        """ListHistoryOnlineInfoRequest
+        r"""ListHistoryOnlineInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListHistoryOnlineInfoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHistoryOnlineInfoRequest.
+        r"""Gets the start_time of this ListHistoryOnlineInfoRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数
 
@@ -75,7 +75,7 @@ class ListHistoryOnlineInfoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHistoryOnlineInfoRequest.
+        r"""Sets the start_time of this ListHistoryOnlineInfoRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数
 
@@ -86,7 +86,7 @@ class ListHistoryOnlineInfoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHistoryOnlineInfoRequest.
+        r"""Gets the end_time of this ListHistoryOnlineInfoRequest.
 
         查询的终止时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数
 
@@ -97,7 +97,7 @@ class ListHistoryOnlineInfoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHistoryOnlineInfoRequest.
+        r"""Sets the end_time of this ListHistoryOnlineInfoRequest.
 
         查询的终止时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数
 
@@ -108,7 +108,7 @@ class ListHistoryOnlineInfoRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListHistoryOnlineInfoRequest.
+        r"""Gets the query_type of this ListHistoryOnlineInfoRequest.
 
         查询类型，合法取值有三个:MONTH按月查询 WEEK：按周查询DAY：按天查询
 
@@ -119,7 +119,7 @@ class ListHistoryOnlineInfoRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListHistoryOnlineInfoRequest.
+        r"""Sets the query_type of this ListHistoryOnlineInfoRequest.
 
         查询类型，合法取值有三个:MONTH按月查询 WEEK：按周查询DAY：按天查询
 
@@ -130,7 +130,7 @@ class ListHistoryOnlineInfoRequest:
 
     @property
     def client_hour(self):
-        """Gets the client_hour of this ListHistoryOnlineInfoRequest.
+        r"""Gets the client_hour of this ListHistoryOnlineInfoRequest.
 
         客户端所在操作系统时间的小时数
 
@@ -141,7 +141,7 @@ class ListHistoryOnlineInfoRequest:
 
     @client_hour.setter
     def client_hour(self, client_hour):
-        """Sets the client_hour of this ListHistoryOnlineInfoRequest.
+        r"""Sets the client_hour of this ListHistoryOnlineInfoRequest.
 
         客户端所在操作系统时间的小时数
 

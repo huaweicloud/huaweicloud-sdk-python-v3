@@ -30,7 +30,7 @@ class ListAllMembersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, members=None):
-        """ListAllMembersResponse
+        r"""ListAllMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAllMembersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAllMembersResponse.
+        r"""Gets the request_id of this ListAllMembersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListAllMembersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAllMembersResponse.
+        r"""Sets the request_id of this ListAllMembersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListAllMembersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAllMembersResponse.
+        r"""Gets the page_info of this ListAllMembersResponse.
 
         :return: The page_info of this ListAllMembersResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListAllMembersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAllMembersResponse.
+        r"""Sets the page_info of this ListAllMembersResponse.
 
         :param page_info: The page_info of this ListAllMembersResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListAllMembersResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this ListAllMembersResponse.
+        r"""Gets the members of this ListAllMembersResponse.
 
         后端服务器对象列表。
 
@@ -109,7 +109,7 @@ class ListAllMembersResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ListAllMembersResponse.
+        r"""Sets the members of this ListAllMembersResponse.
 
         后端服务器对象列表。
 

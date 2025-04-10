@@ -25,7 +25,7 @@ class CustomizeSchemaVersionCreateReq:
     }
 
     def __init__(self, definition=None):
-        """CustomizeSchemaVersionCreateReq
+        r"""CustomizeSchemaVersionCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CustomizeSchemaVersionCreateReq:
 
     @property
     def definition(self):
-        """Gets the definition of this CustomizeSchemaVersionCreateReq.
+        r"""Gets the definition of this CustomizeSchemaVersionCreateReq.
 
         事件模型内容定义
 
@@ -54,7 +54,7 @@ class CustomizeSchemaVersionCreateReq:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this CustomizeSchemaVersionCreateReq.
+        r"""Sets the definition of this CustomizeSchemaVersionCreateReq.
 
         事件模型内容定义
 

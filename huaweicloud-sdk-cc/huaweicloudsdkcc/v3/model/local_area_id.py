@@ -25,7 +25,7 @@ class LocalAreaId:
     }
 
     def __init__(self, local_area_id=None):
-        """LocalAreaId
+        r"""LocalAreaId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LocalAreaId:
 
     @property
     def local_area_id(self):
-        """Gets the local_area_id of this LocalAreaId.
+        r"""Gets the local_area_id of this LocalAreaId.
 
         :return: The local_area_id of this LocalAreaId.
         :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
@@ -51,7 +51,7 @@ class LocalAreaId:
 
     @local_area_id.setter
     def local_area_id(self, local_area_id):
-        """Sets the local_area_id of this LocalAreaId.
+        r"""Sets the local_area_id of this LocalAreaId.
 
         :param local_area_id: The local_area_id of this LocalAreaId.
         :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`

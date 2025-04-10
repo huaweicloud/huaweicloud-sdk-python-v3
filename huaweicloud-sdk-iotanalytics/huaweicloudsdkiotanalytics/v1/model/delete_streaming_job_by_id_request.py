@@ -25,7 +25,7 @@ class DeleteStreamingJobByIdRequest:
     }
 
     def __init__(self, job_id=None):
-        """DeleteStreamingJobByIdRequest
+        r"""DeleteStreamingJobByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteStreamingJobByIdRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteStreamingJobByIdRequest.
+        r"""Gets the job_id of this DeleteStreamingJobByIdRequest.
 
         作业ID
 
@@ -53,7 +53,7 @@ class DeleteStreamingJobByIdRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteStreamingJobByIdRequest.
+        r"""Sets the job_id of this DeleteStreamingJobByIdRequest.
 
         作业ID
 

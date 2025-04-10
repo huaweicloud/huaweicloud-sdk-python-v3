@@ -29,7 +29,7 @@ class ModifyGaussMysqlDnsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ModifyGaussMysqlDnsRequest
+        r"""ModifyGaussMysqlDnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ModifyGaussMysqlDnsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyGaussMysqlDnsRequest.
+        r"""Gets the x_language of this ModifyGaussMysqlDnsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ModifyGaussMysqlDnsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyGaussMysqlDnsRequest.
+        r"""Sets the x_language of this ModifyGaussMysqlDnsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ModifyGaussMysqlDnsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyGaussMysqlDnsRequest.
+        r"""Gets the instance_id of this ModifyGaussMysqlDnsRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ModifyGaussMysqlDnsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyGaussMysqlDnsRequest.
+        r"""Sets the instance_id of this ModifyGaussMysqlDnsRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ModifyGaussMysqlDnsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyGaussMysqlDnsRequest.
+        r"""Gets the body of this ModifyGaussMysqlDnsRequest.
 
         :return: The body of this ModifyGaussMysqlDnsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyDnsNameReq`
@@ -109,7 +109,7 @@ class ModifyGaussMysqlDnsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyGaussMysqlDnsRequest.
+        r"""Sets the body of this ModifyGaussMysqlDnsRequest.
 
         :param body: The body of this ModifyGaussMysqlDnsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyDnsNameReq`

@@ -29,7 +29,7 @@ class CadDomainSwitchRequest:
     }
 
     def __init__(self, domain_id=None, waf_switch=None, cc_switch=None):
-        """CadDomainSwitchRequest
+        r"""CadDomainSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CadDomainSwitchRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CadDomainSwitchRequest.
+        r"""Gets the domain_id of this CadDomainSwitchRequest.
 
         域名id
 
@@ -65,7 +65,7 @@ class CadDomainSwitchRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CadDomainSwitchRequest.
+        r"""Sets the domain_id of this CadDomainSwitchRequest.
 
         域名id
 
@@ -76,7 +76,7 @@ class CadDomainSwitchRequest:
 
     @property
     def waf_switch(self):
-        """Gets the waf_switch of this CadDomainSwitchRequest.
+        r"""Gets the waf_switch of this CadDomainSwitchRequest.
 
         是否开启WEB基础防护开关。0 - 开启， 1 - 关闭
 
@@ -87,7 +87,7 @@ class CadDomainSwitchRequest:
 
     @waf_switch.setter
     def waf_switch(self, waf_switch):
-        """Sets the waf_switch of this CadDomainSwitchRequest.
+        r"""Sets the waf_switch of this CadDomainSwitchRequest.
 
         是否开启WEB基础防护开关。0 - 开启， 1 - 关闭
 
@@ -98,7 +98,7 @@ class CadDomainSwitchRequest:
 
     @property
     def cc_switch(self):
-        """Gets the cc_switch of this CadDomainSwitchRequest.
+        r"""Gets the cc_switch of this CadDomainSwitchRequest.
 
         是否开启CC防护开关。0 - 开启， 1 - 关闭。开启CC开关必须同时开启WEB基础防护开关
 
@@ -109,7 +109,7 @@ class CadDomainSwitchRequest:
 
     @cc_switch.setter
     def cc_switch(self, cc_switch):
-        """Sets the cc_switch of this CadDomainSwitchRequest.
+        r"""Sets the cc_switch of this CadDomainSwitchRequest.
 
         是否开启CC防护开关。0 - 开启， 1 - 关闭。开启CC开关必须同时开启WEB基础防护开关
 

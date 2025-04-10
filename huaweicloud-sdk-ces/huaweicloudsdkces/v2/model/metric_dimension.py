@@ -27,7 +27,7 @@ class MetricDimension:
     }
 
     def __init__(self, name=None, value=None):
-        """MetricDimension
+        r"""MetricDimension
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MetricDimension:
 
     @property
     def name(self):
-        """Gets the name of this MetricDimension.
+        r"""Gets the name of this MetricDimension.
 
         指标维度名称
 
@@ -60,7 +60,7 @@ class MetricDimension:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetricDimension.
+        r"""Sets the name of this MetricDimension.
 
         指标维度名称
 
@@ -71,7 +71,7 @@ class MetricDimension:
 
     @property
     def value(self):
-        """Gets the value of this MetricDimension.
+        r"""Gets the value of this MetricDimension.
 
         指标维度值
 
@@ -82,7 +82,7 @@ class MetricDimension:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MetricDimension.
+        r"""Sets the value of this MetricDimension.
 
         指标维度值
 

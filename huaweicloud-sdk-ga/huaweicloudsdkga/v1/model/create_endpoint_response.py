@@ -28,7 +28,7 @@ class CreateEndpointResponse(SdkResponse):
     }
 
     def __init__(self, endpoint=None, request_id=None):
-        """CreateEndpointResponse
+        r"""CreateEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this CreateEndpointResponse.
+        r"""Gets the endpoint of this CreateEndpointResponse.
 
         :return: The endpoint of this CreateEndpointResponse.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointDetail`
@@ -60,7 +60,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this CreateEndpointResponse.
+        r"""Sets the endpoint of this CreateEndpointResponse.
 
         :param endpoint: The endpoint of this CreateEndpointResponse.
         :type endpoint: :class:`huaweicloudsdkga.v1.EndpointDetail`
@@ -69,7 +69,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateEndpointResponse.
+        r"""Gets the request_id of this CreateEndpointResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class CreateEndpointResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateEndpointResponse.
+        r"""Sets the request_id of this CreateEndpointResponse.
 
         请求ID。
 

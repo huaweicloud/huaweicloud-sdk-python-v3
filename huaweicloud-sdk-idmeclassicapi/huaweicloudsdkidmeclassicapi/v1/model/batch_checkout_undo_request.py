@@ -29,7 +29,7 @@ class BatchCheckoutUndoRequest:
     }
 
     def __init__(self, identifier=None, model_name=None, body=None):
-        """BatchCheckoutUndoRequest
+        r"""BatchCheckoutUndoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCheckoutUndoRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this BatchCheckoutUndoRequest.
+        r"""Gets the identifier of this BatchCheckoutUndoRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class BatchCheckoutUndoRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this BatchCheckoutUndoRequest.
+        r"""Sets the identifier of this BatchCheckoutUndoRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class BatchCheckoutUndoRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this BatchCheckoutUndoRequest.
+        r"""Gets the model_name of this BatchCheckoutUndoRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class BatchCheckoutUndoRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this BatchCheckoutUndoRequest.
+        r"""Sets the model_name of this BatchCheckoutUndoRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class BatchCheckoutUndoRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckoutUndoRequest.
+        r"""Gets the body of this BatchCheckoutUndoRequest.
 
         :return: The body of this BatchCheckoutUndoRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOListVersionModelVersionUndoCheckOutDTO`
@@ -108,7 +108,7 @@ class BatchCheckoutUndoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckoutUndoRequest.
+        r"""Sets the body of this BatchCheckoutUndoRequest.
 
         :param body: The body of this BatchCheckoutUndoRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOListVersionModelVersionUndoCheckOutDTO`

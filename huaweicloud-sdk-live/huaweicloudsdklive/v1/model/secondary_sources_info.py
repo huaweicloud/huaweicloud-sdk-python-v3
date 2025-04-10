@@ -41,7 +41,7 @@ class SecondarySourcesInfo:
     }
 
     def __init__(self, url=None, bitrate=None, width=None, height=None, bitrate_for3u8=None, passphrase=None, backup_urls=None, stream_id=None, latency=None):
-        """SecondarySourcesInfo
+        r"""SecondarySourcesInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SecondarySourcesInfo:
 
     @property
     def url(self):
-        """Gets the url of this SecondarySourcesInfo.
+        r"""Gets the url of this SecondarySourcesInfo.
 
         频道源流URL，用于外部拉流
 
@@ -110,7 +110,7 @@ class SecondarySourcesInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SecondarySourcesInfo.
+        r"""Sets the url of this SecondarySourcesInfo.
 
         频道源流URL，用于外部拉流
 
@@ -121,7 +121,7 @@ class SecondarySourcesInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this SecondarySourcesInfo.
+        r"""Gets the bitrate of this SecondarySourcesInfo.
 
         码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
@@ -132,7 +132,7 @@ class SecondarySourcesInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this SecondarySourcesInfo.
+        r"""Sets the bitrate of this SecondarySourcesInfo.
 
         码率。无需直播转码时，此参数为必填项  单位：bps。取值范围：(0,104,857,600]（100Mbps）
 
@@ -143,7 +143,7 @@ class SecondarySourcesInfo:
 
     @property
     def width(self):
-        """Gets the width of this SecondarySourcesInfo.
+        r"""Gets the width of this SecondarySourcesInfo.
 
         分辨率对应宽的值，非必填项  取值范围：0 - 4096（4K）
 
@@ -154,7 +154,7 @@ class SecondarySourcesInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this SecondarySourcesInfo.
+        r"""Sets the width of this SecondarySourcesInfo.
 
         分辨率对应宽的值，非必填项  取值范围：0 - 4096（4K）
 
@@ -165,7 +165,7 @@ class SecondarySourcesInfo:
 
     @property
     def height(self):
-        """Gets the height of this SecondarySourcesInfo.
+        r"""Gets the height of this SecondarySourcesInfo.
 
         分辨率对应高的值，非必填项  取值范围：0 - 2160（4K）
 
@@ -176,7 +176,7 @@ class SecondarySourcesInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this SecondarySourcesInfo.
+        r"""Sets the height of this SecondarySourcesInfo.
 
         分辨率对应高的值，非必填项  取值范围：0 - 2160（4K）
 
@@ -187,7 +187,7 @@ class SecondarySourcesInfo:
 
     @property
     def bitrate_for3u8(self):
-        """Gets the bitrate_for3u8 of this SecondarySourcesInfo.
+        r"""Gets the bitrate_for3u8 of this SecondarySourcesInfo.
 
         是否使用bitrate来固定码率。默认值：false
 
@@ -198,7 +198,7 @@ class SecondarySourcesInfo:
 
     @bitrate_for3u8.setter
     def bitrate_for3u8(self, bitrate_for3u8):
-        """Sets the bitrate_for3u8 of this SecondarySourcesInfo.
+        r"""Sets the bitrate_for3u8 of this SecondarySourcesInfo.
 
         是否使用bitrate来固定码率。默认值：false
 
@@ -209,7 +209,7 @@ class SecondarySourcesInfo:
 
     @property
     def passphrase(self):
-        """Gets the passphrase of this SecondarySourcesInfo.
+        r"""Gets the passphrase of this SecondarySourcesInfo.
 
         协议为SRT_PUSH时的加密信息
 
@@ -220,7 +220,7 @@ class SecondarySourcesInfo:
 
     @passphrase.setter
     def passphrase(self, passphrase):
-        """Sets the passphrase of this SecondarySourcesInfo.
+        r"""Sets the passphrase of this SecondarySourcesInfo.
 
         协议为SRT_PUSH时的加密信息
 
@@ -231,7 +231,7 @@ class SecondarySourcesInfo:
 
     @property
     def backup_urls(self):
-        """Gets the backup_urls of this SecondarySourcesInfo.
+        r"""Gets the backup_urls of this SecondarySourcesInfo.
 
         备入流地址列表
 
@@ -242,7 +242,7 @@ class SecondarySourcesInfo:
 
     @backup_urls.setter
     def backup_urls(self, backup_urls):
-        """Sets the backup_urls of this SecondarySourcesInfo.
+        r"""Sets the backup_urls of this SecondarySourcesInfo.
 
         备入流地址列表
 
@@ -253,7 +253,7 @@ class SecondarySourcesInfo:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this SecondarySourcesInfo.
+        r"""Gets the stream_id of this SecondarySourcesInfo.
 
         频道为SRT_PULL类型时，拉流地址的Stream ID。
 
@@ -264,7 +264,7 @@ class SecondarySourcesInfo:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this SecondarySourcesInfo.
+        r"""Sets the stream_id of this SecondarySourcesInfo.
 
         频道为SRT_PULL类型时，拉流地址的Stream ID。
 
@@ -275,7 +275,7 @@ class SecondarySourcesInfo:
 
     @property
     def latency(self):
-        """Gets the latency of this SecondarySourcesInfo.
+        r"""Gets the latency of this SecondarySourcesInfo.
 
         频道为SRT_PULL类型时的拉流时延。
 
@@ -286,7 +286,7 @@ class SecondarySourcesInfo:
 
     @latency.setter
     def latency(self, latency):
-        """Sets the latency of this SecondarySourcesInfo.
+        r"""Sets the latency of this SecondarySourcesInfo.
 
         频道为SRT_PULL类型时的拉流时延。
 

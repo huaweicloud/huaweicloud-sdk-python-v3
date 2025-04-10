@@ -26,7 +26,7 @@ class CreateDrugLigandPreviewTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateDrugLigandPreviewTaskResponse
+        r"""CreateDrugLigandPreviewTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDrugLigandPreviewTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDrugLigandPreviewTaskResponse.
+        r"""Gets the id of this CreateDrugLigandPreviewTaskResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class CreateDrugLigandPreviewTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDrugLigandPreviewTaskResponse.
+        r"""Sets the id of this CreateDrugLigandPreviewTaskResponse.
 
         任务ID
 

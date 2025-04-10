@@ -27,7 +27,7 @@ class PopUpInfo:
     }
 
     def __init__(self, popup=None, time_limit=None):
-        """PopUpInfo
+        r"""PopUpInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PopUpInfo:
 
     @property
     def popup(self):
-        """Gets the popup of this PopUpInfo.
+        r"""Gets the popup of this PopUpInfo.
 
         是否弹窗
 
@@ -61,7 +61,7 @@ class PopUpInfo:
 
     @popup.setter
     def popup(self, popup):
-        """Sets the popup of this PopUpInfo.
+        r"""Sets the popup of this PopUpInfo.
 
         是否弹窗
 
@@ -72,7 +72,7 @@ class PopUpInfo:
 
     @property
     def time_limit(self):
-        """Gets the time_limit of this PopUpInfo.
+        r"""Gets the time_limit of this PopUpInfo.
 
         包周期计费时长上限
 
@@ -83,7 +83,7 @@ class PopUpInfo:
 
     @time_limit.setter
     def time_limit(self, time_limit):
-        """Sets the time_limit of this PopUpInfo.
+        r"""Sets the time_limit of this PopUpInfo.
 
         包周期计费时长上限
 

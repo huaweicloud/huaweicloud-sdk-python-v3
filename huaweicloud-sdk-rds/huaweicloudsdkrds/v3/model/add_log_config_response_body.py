@@ -25,7 +25,7 @@ class AddLogConfigResponseBody:
     }
 
     def __init__(self, log_configs=None):
-        """AddLogConfigResponseBody
+        r"""AddLogConfigResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddLogConfigResponseBody:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this AddLogConfigResponseBody.
+        r"""Gets the log_configs of this AddLogConfigResponseBody.
 
         实例日志配置信息。
 
@@ -53,7 +53,7 @@ class AddLogConfigResponseBody:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this AddLogConfigResponseBody.
+        r"""Sets the log_configs of this AddLogConfigResponseBody.
 
         实例日志配置信息。
 

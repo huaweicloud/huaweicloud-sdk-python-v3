@@ -25,7 +25,7 @@ class MySQLCompatibilityResult:
     }
 
     def __init__(self, port=None):
-        """MySQLCompatibilityResult
+        r"""MySQLCompatibilityResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MySQLCompatibilityResult:
 
     @property
     def port(self):
-        """Gets the port of this MySQLCompatibilityResult.
+        r"""Gets the port of this MySQLCompatibilityResult.
 
         MySQL兼容端口
 
@@ -54,7 +54,7 @@ class MySQLCompatibilityResult:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MySQLCompatibilityResult.
+        r"""Sets the port of this MySQLCompatibilityResult.
 
         MySQL兼容端口
 

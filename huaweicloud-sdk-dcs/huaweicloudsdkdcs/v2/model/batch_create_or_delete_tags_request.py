@@ -27,7 +27,7 @@ class BatchCreateOrDeleteTagsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteTagsRequest
+        r"""BatchCreateOrDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCreateOrDeleteTagsRequest.
+        r"""Gets the instance_id of this BatchCreateOrDeleteTagsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateOrDeleteTagsRequest.
+        r"""Sets the instance_id of this BatchCreateOrDeleteTagsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateOrDeleteTagsRequest.
+        r"""Gets the body of this BatchCreateOrDeleteTagsRequest.
 
         :return: The body of this BatchCreateOrDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateOrDeleteInstanceTags`
@@ -80,7 +80,7 @@ class BatchCreateOrDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateOrDeleteTagsRequest.
+        r"""Sets the body of this BatchCreateOrDeleteTagsRequest.
 
         :param body: The body of this BatchCreateOrDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.CreateOrDeleteInstanceTags`

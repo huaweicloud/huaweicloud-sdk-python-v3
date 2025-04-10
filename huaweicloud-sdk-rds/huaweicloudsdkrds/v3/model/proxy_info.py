@@ -77,7 +77,7 @@ class ProxyInfo:
     }
 
     def __init__(self, pool_id=None, status=None, address=None, port=None, delay_threshold_in_seconds=None, cpu=None, mem=None, node_num=None, nodes=None, mode=None, flavor_info=None, transaction_split=None, connection_pool_type=None, pay_mode=None, name=None, proxy_mode=None, dns_name=None, subnet_id=None, seconds_level_monitor_fun_status=None, alt_flag=None, force_read_only=None, route_mode=None, ssl_option=None, support_balance_route_mode=None, support_proxy_ssl=None, support_switch_connection_pool_type=None, support_transaction_split=None):
-        """ProxyInfo
+        r"""ProxyInfo
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class ProxyInfo:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ProxyInfo.
+        r"""Gets the pool_id of this ProxyInfo.
 
         数据库代理实例ID。
 
@@ -236,7 +236,7 @@ class ProxyInfo:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ProxyInfo.
+        r"""Sets the pool_id of this ProxyInfo.
 
         数据库代理实例ID。
 
@@ -247,7 +247,7 @@ class ProxyInfo:
 
     @property
     def status(self):
-        """Gets the status of this ProxyInfo.
+        r"""Gets the status of this ProxyInfo.
 
         数据库代理状态。  取值: NORMAL：表示数据库代理正常。 ENABLING：表示数据库代理正在开启。 DISABLING：表示数据库代理正在关闭。 CHANGING_NODE_NUM：表示数据库代理正在调整节点数量。 SCALING: 表示数据库代理正在规格变更。 UPGRADING: 表示数据库代理正在升级内核版本。 IPMODIFYING: 表示数据库代理正在修改读写分离地址。 RESTARTING: 表示数据库代理正在重启进程。 TRANSACTION_SPLITTING: 表示数据库代理正在变更事务拆分功能状态。 CONNECTION_POOL_SWITCH_OPERATING: 表示数据库代理正在变更会话连接池类型。 PORT_MODIFYING: 表示数据库代理正在修改端口。 PROXY_SSL_SWITCHING: 表示数据库代理正在变更SSL状态。 ALT_SWITCH_OPERATING: 表示数据库代理正在变更ALT状态。 CHANGING_RESOURCES: 表示数据库代理正在进行资源变更。 NORMAL: 表示数据库代理正常。 ABNORMAL: 表示数据库代理异常。 FAILED: 表示数据库代理创建失败。 FROZEN: 表示数据库代理已冻结。
 
@@ -258,7 +258,7 @@ class ProxyInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProxyInfo.
+        r"""Sets the status of this ProxyInfo.
 
         数据库代理状态。  取值: NORMAL：表示数据库代理正常。 ENABLING：表示数据库代理正在开启。 DISABLING：表示数据库代理正在关闭。 CHANGING_NODE_NUM：表示数据库代理正在调整节点数量。 SCALING: 表示数据库代理正在规格变更。 UPGRADING: 表示数据库代理正在升级内核版本。 IPMODIFYING: 表示数据库代理正在修改读写分离地址。 RESTARTING: 表示数据库代理正在重启进程。 TRANSACTION_SPLITTING: 表示数据库代理正在变更事务拆分功能状态。 CONNECTION_POOL_SWITCH_OPERATING: 表示数据库代理正在变更会话连接池类型。 PORT_MODIFYING: 表示数据库代理正在修改端口。 PROXY_SSL_SWITCHING: 表示数据库代理正在变更SSL状态。 ALT_SWITCH_OPERATING: 表示数据库代理正在变更ALT状态。 CHANGING_RESOURCES: 表示数据库代理正在进行资源变更。 NORMAL: 表示数据库代理正常。 ABNORMAL: 表示数据库代理异常。 FAILED: 表示数据库代理创建失败。 FROZEN: 表示数据库代理已冻结。
 
@@ -269,7 +269,7 @@ class ProxyInfo:
 
     @property
     def address(self):
-        """Gets the address of this ProxyInfo.
+        r"""Gets the address of this ProxyInfo.
 
         读写分离地址。
 
@@ -280,7 +280,7 @@ class ProxyInfo:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ProxyInfo.
+        r"""Sets the address of this ProxyInfo.
 
         读写分离地址。
 
@@ -291,7 +291,7 @@ class ProxyInfo:
 
     @property
     def port(self):
-        """Gets the port of this ProxyInfo.
+        r"""Gets the port of this ProxyInfo.
 
         端口号。
 
@@ -302,7 +302,7 @@ class ProxyInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ProxyInfo.
+        r"""Sets the port of this ProxyInfo.
 
         端口号。
 
@@ -313,7 +313,7 @@ class ProxyInfo:
 
     @property
     def delay_threshold_in_seconds(self):
-        """Gets the delay_threshold_in_seconds of this ProxyInfo.
+        r"""Gets the delay_threshold_in_seconds of this ProxyInfo.
 
         延时阈值，单位：秒。
 
@@ -324,7 +324,7 @@ class ProxyInfo:
 
     @delay_threshold_in_seconds.setter
     def delay_threshold_in_seconds(self, delay_threshold_in_seconds):
-        """Sets the delay_threshold_in_seconds of this ProxyInfo.
+        r"""Sets the delay_threshold_in_seconds of this ProxyInfo.
 
         延时阈值，单位：秒。
 
@@ -335,7 +335,7 @@ class ProxyInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ProxyInfo.
+        r"""Gets the cpu of this ProxyInfo.
 
         数据库代理规格的CPU大小。
 
@@ -346,7 +346,7 @@ class ProxyInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ProxyInfo.
+        r"""Sets the cpu of this ProxyInfo.
 
         数据库代理规格的CPU大小。
 
@@ -357,7 +357,7 @@ class ProxyInfo:
 
     @property
     def mem(self):
-        """Gets the mem of this ProxyInfo.
+        r"""Gets the mem of this ProxyInfo.
 
         数据库代理规格的内存大小。
 
@@ -368,7 +368,7 @@ class ProxyInfo:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this ProxyInfo.
+        r"""Sets the mem of this ProxyInfo.
 
         数据库代理规格的内存大小。
 
@@ -379,7 +379,7 @@ class ProxyInfo:
 
     @property
     def node_num(self):
-        """Gets the node_num of this ProxyInfo.
+        r"""Gets the node_num of this ProxyInfo.
 
         数据库代理节点个数。
 
@@ -390,7 +390,7 @@ class ProxyInfo:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ProxyInfo.
+        r"""Sets the node_num of this ProxyInfo.
 
         数据库代理节点个数。
 
@@ -401,7 +401,7 @@ class ProxyInfo:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ProxyInfo.
+        r"""Gets the nodes of this ProxyInfo.
 
         数据库代理节点信息列表。
 
@@ -412,7 +412,7 @@ class ProxyInfo:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ProxyInfo.
+        r"""Sets the nodes of this ProxyInfo.
 
         数据库代理节点信息列表。
 
@@ -423,7 +423,7 @@ class ProxyInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this ProxyInfo.
+        r"""Gets the mode of this ProxyInfo.
 
         数据库代理集群模式。 取值：     Cluster：集群模式     Ha：主备模式
 
@@ -434,7 +434,7 @@ class ProxyInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ProxyInfo.
+        r"""Sets the mode of this ProxyInfo.
 
         数据库代理集群模式。 取值：     Cluster：集群模式     Ha：主备模式
 
@@ -445,7 +445,7 @@ class ProxyInfo:
 
     @property
     def flavor_info(self):
-        """Gets the flavor_info of this ProxyInfo.
+        r"""Gets the flavor_info of this ProxyInfo.
 
         :return: The flavor_info of this ProxyInfo.
         :rtype: :class:`huaweicloudsdkrds.v3.ProxyInfoFlavorInfo`
@@ -454,7 +454,7 @@ class ProxyInfo:
 
     @flavor_info.setter
     def flavor_info(self, flavor_info):
-        """Sets the flavor_info of this ProxyInfo.
+        r"""Sets the flavor_info of this ProxyInfo.
 
         :param flavor_info: The flavor_info of this ProxyInfo.
         :type flavor_info: :class:`huaweicloudsdkrds.v3.ProxyInfoFlavorInfo`
@@ -463,7 +463,7 @@ class ProxyInfo:
 
     @property
     def transaction_split(self):
-        """Gets the transaction_split of this ProxyInfo.
+        r"""Gets the transaction_split of this ProxyInfo.
 
         数据库代理事务拆分开关状态。  true：开启。  false：关闭。
 
@@ -474,7 +474,7 @@ class ProxyInfo:
 
     @transaction_split.setter
     def transaction_split(self, transaction_split):
-        """Sets the transaction_split of this ProxyInfo.
+        r"""Sets the transaction_split of this ProxyInfo.
 
         数据库代理事务拆分开关状态。  true：开启。  false：关闭。
 
@@ -485,7 +485,7 @@ class ProxyInfo:
 
     @property
     def connection_pool_type(self):
-        """Gets the connection_pool_type of this ProxyInfo.
+        r"""Gets the connection_pool_type of this ProxyInfo.
 
         连接池类型。  取值范围:  CLOSED: 关闭连接池。  SESSION: 开启会话级连接池。
 
@@ -496,7 +496,7 @@ class ProxyInfo:
 
     @connection_pool_type.setter
     def connection_pool_type(self, connection_pool_type):
-        """Sets the connection_pool_type of this ProxyInfo.
+        r"""Sets the connection_pool_type of this ProxyInfo.
 
         连接池类型。  取值范围:  CLOSED: 关闭连接池。  SESSION: 开启会话级连接池。
 
@@ -507,7 +507,7 @@ class ProxyInfo:
 
     @property
     def pay_mode(self):
-        """Gets the pay_mode of this ProxyInfo.
+        r"""Gets the pay_mode of this ProxyInfo.
 
         数据库代理计费模式。  取值范围： 0:按需计费 1:包周期计费
 
@@ -518,7 +518,7 @@ class ProxyInfo:
 
     @pay_mode.setter
     def pay_mode(self, pay_mode):
-        """Sets the pay_mode of this ProxyInfo.
+        r"""Sets the pay_mode of this ProxyInfo.
 
         数据库代理计费模式。  取值范围： 0:按需计费 1:包周期计费
 
@@ -529,7 +529,7 @@ class ProxyInfo:
 
     @property
     def name(self):
-        """Gets the name of this ProxyInfo.
+        r"""Gets the name of this ProxyInfo.
 
         数据库代理名称。
 
@@ -540,7 +540,7 @@ class ProxyInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProxyInfo.
+        r"""Sets the name of this ProxyInfo.
 
         数据库代理名称。
 
@@ -551,7 +551,7 @@ class ProxyInfo:
 
     @property
     def proxy_mode(self):
-        """Gets the proxy_mode of this ProxyInfo.
+        r"""Gets the proxy_mode of this ProxyInfo.
 
         数据库代理读写模式。 取值范围：     readwrite 读写模式     readonly 只读模式
 
@@ -562,7 +562,7 @@ class ProxyInfo:
 
     @proxy_mode.setter
     def proxy_mode(self, proxy_mode):
-        """Sets the proxy_mode of this ProxyInfo.
+        r"""Sets the proxy_mode of this ProxyInfo.
 
         数据库代理读写模式。 取值范围：     readwrite 读写模式     readonly 只读模式
 
@@ -573,7 +573,7 @@ class ProxyInfo:
 
     @property
     def dns_name(self):
-        """Gets the dns_name of this ProxyInfo.
+        r"""Gets the dns_name of this ProxyInfo.
 
         数据库代理读写分离地址内网域名。 该字段为空表示未申请读写内网域名。
 
@@ -584,7 +584,7 @@ class ProxyInfo:
 
     @dns_name.setter
     def dns_name(self, dns_name):
-        """Sets the dns_name of this ProxyInfo.
+        r"""Sets the dns_name of this ProxyInfo.
 
         数据库代理读写分离地址内网域名。 该字段为空表示未申请读写内网域名。
 
@@ -595,7 +595,7 @@ class ProxyInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ProxyInfo.
+        r"""Gets the subnet_id of this ProxyInfo.
 
         数据库代理实例所属子网ID。
 
@@ -606,7 +606,7 @@ class ProxyInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ProxyInfo.
+        r"""Sets the subnet_id of this ProxyInfo.
 
         数据库代理实例所属子网ID。
 
@@ -617,7 +617,7 @@ class ProxyInfo:
 
     @property
     def seconds_level_monitor_fun_status(self):
-        """Gets the seconds_level_monitor_fun_status of this ProxyInfo.
+        r"""Gets the seconds_level_monitor_fun_status of this ProxyInfo.
 
         数据库代理秒级监控状态。
 
@@ -628,7 +628,7 @@ class ProxyInfo:
 
     @seconds_level_monitor_fun_status.setter
     def seconds_level_monitor_fun_status(self, seconds_level_monitor_fun_status):
-        """Sets the seconds_level_monitor_fun_status of this ProxyInfo.
+        r"""Sets the seconds_level_monitor_fun_status of this ProxyInfo.
 
         数据库代理秒级监控状态。
 
@@ -639,7 +639,7 @@ class ProxyInfo:
 
     @property
     def alt_flag(self):
-        """Gets the alt_flag of this ProxyInfo.
+        r"""Gets the alt_flag of this ProxyInfo.
 
         ALT开关状态。
 
@@ -650,7 +650,7 @@ class ProxyInfo:
 
     @alt_flag.setter
     def alt_flag(self, alt_flag):
-        """Sets the alt_flag of this ProxyInfo.
+        r"""Sets the alt_flag of this ProxyInfo.
 
         ALT开关状态。
 
@@ -661,7 +661,7 @@ class ProxyInfo:
 
     @property
     def force_read_only(self):
-        """Gets the force_read_only of this ProxyInfo.
+        r"""Gets the force_read_only of this ProxyInfo.
 
         是否强制读路由到只读。
 
@@ -672,7 +672,7 @@ class ProxyInfo:
 
     @force_read_only.setter
     def force_read_only(self, force_read_only):
-        """Sets the force_read_only of this ProxyInfo.
+        r"""Sets the force_read_only of this ProxyInfo.
 
         是否强制读路由到只读。
 
@@ -683,7 +683,7 @@ class ProxyInfo:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this ProxyInfo.
+        r"""Gets the route_mode of this ProxyInfo.
 
         数据库代理路由模式。 取值范围:     0：表示权重负载模式。     1：表示负载均衡模式（数据库主实例不接受读请求）。     2：表示负载均衡模式（数据库主实例接受读请求）。
 
@@ -694,7 +694,7 @@ class ProxyInfo:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this ProxyInfo.
+        r"""Sets the route_mode of this ProxyInfo.
 
         数据库代理路由模式。 取值范围:     0：表示权重负载模式。     1：表示负载均衡模式（数据库主实例不接受读请求）。     2：表示负载均衡模式（数据库主实例接受读请求）。
 
@@ -705,7 +705,7 @@ class ProxyInfo:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this ProxyInfo.
+        r"""Gets the ssl_option of this ProxyInfo.
 
         ssl开关状态。
 
@@ -716,7 +716,7 @@ class ProxyInfo:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this ProxyInfo.
+        r"""Sets the ssl_option of this ProxyInfo.
 
         ssl开关状态。
 
@@ -727,7 +727,7 @@ class ProxyInfo:
 
     @property
     def support_balance_route_mode(self):
-        """Gets the support_balance_route_mode of this ProxyInfo.
+        r"""Gets the support_balance_route_mode of this ProxyInfo.
 
         数据库代理是否支持开启负载均衡路由模式。
 
@@ -738,7 +738,7 @@ class ProxyInfo:
 
     @support_balance_route_mode.setter
     def support_balance_route_mode(self, support_balance_route_mode):
-        """Sets the support_balance_route_mode of this ProxyInfo.
+        r"""Sets the support_balance_route_mode of this ProxyInfo.
 
         数据库代理是否支持开启负载均衡路由模式。
 
@@ -749,7 +749,7 @@ class ProxyInfo:
 
     @property
     def support_proxy_ssl(self):
-        """Gets the support_proxy_ssl of this ProxyInfo.
+        r"""Gets the support_proxy_ssl of this ProxyInfo.
 
         数据库代理是否支持开启ssl功能。
 
@@ -760,7 +760,7 @@ class ProxyInfo:
 
     @support_proxy_ssl.setter
     def support_proxy_ssl(self, support_proxy_ssl):
-        """Sets the support_proxy_ssl of this ProxyInfo.
+        r"""Sets the support_proxy_ssl of this ProxyInfo.
 
         数据库代理是否支持开启ssl功能。
 
@@ -771,7 +771,7 @@ class ProxyInfo:
 
     @property
     def support_switch_connection_pool_type(self):
-        """Gets the support_switch_connection_pool_type of this ProxyInfo.
+        r"""Gets the support_switch_connection_pool_type of this ProxyInfo.
 
         数据库代理是否支持切换会话连接池类型。
 
@@ -782,7 +782,7 @@ class ProxyInfo:
 
     @support_switch_connection_pool_type.setter
     def support_switch_connection_pool_type(self, support_switch_connection_pool_type):
-        """Sets the support_switch_connection_pool_type of this ProxyInfo.
+        r"""Sets the support_switch_connection_pool_type of this ProxyInfo.
 
         数据库代理是否支持切换会话连接池类型。
 
@@ -793,7 +793,7 @@ class ProxyInfo:
 
     @property
     def support_transaction_split(self):
-        """Gets the support_transaction_split of this ProxyInfo.
+        r"""Gets the support_transaction_split of this ProxyInfo.
 
         数据库代理是否支持开启事务拆分。
 
@@ -804,7 +804,7 @@ class ProxyInfo:
 
     @support_transaction_split.setter
     def support_transaction_split(self, support_transaction_split):
-        """Sets the support_transaction_split of this ProxyInfo.
+        r"""Sets the support_transaction_split of this ProxyInfo.
 
         数据库代理是否支持开启事务拆分。
 

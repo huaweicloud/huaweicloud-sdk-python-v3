@@ -33,7 +33,7 @@ class TagFabricWorkspace:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, resource_name=None, tags=None, sys_tags=None):
-        """TagFabricWorkspace
+        r"""TagFabricWorkspace
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TagFabricWorkspace:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TagFabricWorkspace.
+        r"""Gets the resource_id of this TagFabricWorkspace.
 
         workspace的ID
 
@@ -82,7 +82,7 @@ class TagFabricWorkspace:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TagFabricWorkspace.
+        r"""Sets the resource_id of this TagFabricWorkspace.
 
         workspace的ID
 
@@ -93,7 +93,7 @@ class TagFabricWorkspace:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this TagFabricWorkspace.
+        r"""Gets the resource_detail of this TagFabricWorkspace.
 
         资源详情。 资源对象，用于扩展。默认为空。
 
@@ -104,7 +104,7 @@ class TagFabricWorkspace:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this TagFabricWorkspace.
+        r"""Sets the resource_detail of this TagFabricWorkspace.
 
         资源详情。 资源对象，用于扩展。默认为空。
 
@@ -115,7 +115,7 @@ class TagFabricWorkspace:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this TagFabricWorkspace.
+        r"""Gets the resource_name of this TagFabricWorkspace.
 
         workspace名称
 
@@ -126,7 +126,7 @@ class TagFabricWorkspace:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this TagFabricWorkspace.
+        r"""Sets the resource_name of this TagFabricWorkspace.
 
         workspace名称
 
@@ -137,7 +137,7 @@ class TagFabricWorkspace:
 
     @property
     def tags(self):
-        """Gets the tags of this TagFabricWorkspace.
+        r"""Gets the tags of this TagFabricWorkspace.
 
         标签列表，没有标签默认为空数组。
 
@@ -148,7 +148,7 @@ class TagFabricWorkspace:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagFabricWorkspace.
+        r"""Sets the tags of this TagFabricWorkspace.
 
         标签列表，没有标签默认为空数组。
 
@@ -159,7 +159,7 @@ class TagFabricWorkspace:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this TagFabricWorkspace.
+        r"""Gets the sys_tags of this TagFabricWorkspace.
 
         :return: The sys_tags of this TagFabricWorkspace.
         :rtype: list[:class:`huaweicloudsdkdataartsfabric.v1.SystemTag`]
@@ -168,7 +168,7 @@ class TagFabricWorkspace:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this TagFabricWorkspace.
+        r"""Sets the sys_tags of this TagFabricWorkspace.
 
         :param sys_tags: The sys_tags of this TagFabricWorkspace.
         :type sys_tags: list[:class:`huaweicloudsdkdataartsfabric.v1.SystemTag`]

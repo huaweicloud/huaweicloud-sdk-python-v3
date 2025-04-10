@@ -26,7 +26,7 @@ class UpdateWorkflowTriggerStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateWorkflowTriggerStatusResponse
+        r"""UpdateWorkflowTriggerStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateWorkflowTriggerStatusResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateWorkflowTriggerStatusResponse.
+        r"""Gets the body of this UpdateWorkflowTriggerStatusResponse.
 
         :return: The body of this UpdateWorkflowTriggerStatusResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateWorkflowTriggerStatusResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWorkflowTriggerStatusResponse.
+        r"""Sets the body of this UpdateWorkflowTriggerStatusResponse.
 
         :param body: The body of this UpdateWorkflowTriggerStatusResponse.
         :type body: str

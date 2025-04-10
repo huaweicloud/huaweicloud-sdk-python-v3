@@ -30,7 +30,7 @@ class CreateDomainsResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None, domain_id=None):
-        """CreateDomainsResponse
+        r"""CreateDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDomainsResponse(SdkResponse):
 
     @property
     def info_code(self):
-        """Gets the info_code of this CreateDomainsResponse.
+        r"""Gets the info_code of this CreateDomainsResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -69,7 +69,7 @@ class CreateDomainsResponse(SdkResponse):
 
     @info_code.setter
     def info_code(self, info_code):
-        """Sets the info_code of this CreateDomainsResponse.
+        r"""Sets the info_code of this CreateDomainsResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -80,7 +80,7 @@ class CreateDomainsResponse(SdkResponse):
 
     @property
     def info_description(self):
-        """Gets the info_description of this CreateDomainsResponse.
+        r"""Gets the info_description of this CreateDomainsResponse.
 
         返回的提示信息
 
@@ -91,7 +91,7 @@ class CreateDomainsResponse(SdkResponse):
 
     @info_description.setter
     def info_description(self, info_description):
-        """Sets the info_description of this CreateDomainsResponse.
+        r"""Sets the info_description of this CreateDomainsResponse.
 
         返回的提示信息
 
@@ -102,7 +102,7 @@ class CreateDomainsResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateDomainsResponse.
+        r"""Gets the domain_id of this CreateDomainsResponse.
 
         网站域名ID
 
@@ -113,7 +113,7 @@ class CreateDomainsResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateDomainsResponse.
+        r"""Sets the domain_id of this CreateDomainsResponse.
 
         网站域名ID
 

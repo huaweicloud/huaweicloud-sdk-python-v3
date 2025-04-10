@@ -41,7 +41,7 @@ class IpGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, ip_list=None, listeners=None, project_id=None, enterprise_project_id=None, created_at=None, updated_at=None):
-        """IpGroup
+        r"""IpGroup
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class IpGroup:
 
     @property
     def id(self):
-        """Gets the id of this IpGroup.
+        r"""Gets the id of this IpGroup.
 
         参数解释：IP地址组的ID。
 
@@ -102,7 +102,7 @@ class IpGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpGroup.
+        r"""Sets the id of this IpGroup.
 
         参数解释：IP地址组的ID。
 
@@ -113,7 +113,7 @@ class IpGroup:
 
     @property
     def name(self):
-        """Gets the name of this IpGroup.
+        r"""Gets the name of this IpGroup.
 
         参数解释：IP地址组的名称。
 
@@ -124,7 +124,7 @@ class IpGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IpGroup.
+        r"""Sets the name of this IpGroup.
 
         参数解释：IP地址组的名称。
 
@@ -135,7 +135,7 @@ class IpGroup:
 
     @property
     def description(self):
-        """Gets the description of this IpGroup.
+        r"""Gets the description of this IpGroup.
 
         参数解释：IP地址组的描述信息。
 
@@ -146,7 +146,7 @@ class IpGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpGroup.
+        r"""Sets the description of this IpGroup.
 
         参数解释：IP地址组的描述信息。
 
@@ -157,7 +157,7 @@ class IpGroup:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this IpGroup.
+        r"""Gets the ip_list of this IpGroup.
 
         参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
 
@@ -168,7 +168,7 @@ class IpGroup:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this IpGroup.
+        r"""Sets the ip_list of this IpGroup.
 
         参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
 
@@ -179,7 +179,7 @@ class IpGroup:
 
     @property
     def listeners(self):
-        """Gets the listeners of this IpGroup.
+        r"""Gets the listeners of this IpGroup.
 
         参数解释：与IP地址组关联的监听器的ID列表。
 
@@ -190,7 +190,7 @@ class IpGroup:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this IpGroup.
+        r"""Sets the listeners of this IpGroup.
 
         参数解释：与IP地址组关联的监听器的ID列表。
 
@@ -201,7 +201,7 @@ class IpGroup:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IpGroup.
+        r"""Gets the project_id of this IpGroup.
 
         参数解释：IP地址组的项目ID。
 
@@ -212,7 +212,7 @@ class IpGroup:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IpGroup.
+        r"""Sets the project_id of this IpGroup.
 
         参数解释：IP地址组的项目ID。
 
@@ -223,7 +223,7 @@ class IpGroup:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this IpGroup.
+        r"""Gets the enterprise_project_id of this IpGroup.
 
         参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -234,7 +234,7 @@ class IpGroup:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this IpGroup.
+        r"""Sets the enterprise_project_id of this IpGroup.
 
         参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -245,7 +245,7 @@ class IpGroup:
 
     @property
     def created_at(self):
-        """Gets the created_at of this IpGroup.
+        r"""Gets the created_at of this IpGroup.
 
         参数解释：IP地址组的创建时间。
 
@@ -256,7 +256,7 @@ class IpGroup:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this IpGroup.
+        r"""Sets the created_at of this IpGroup.
 
         参数解释：IP地址组的创建时间。
 
@@ -267,7 +267,7 @@ class IpGroup:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this IpGroup.
+        r"""Gets the updated_at of this IpGroup.
 
         参数解释：IP地址组的更新时间。
 
@@ -278,7 +278,7 @@ class IpGroup:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this IpGroup.
+        r"""Sets the updated_at of this IpGroup.
 
         参数解释：IP地址组的更新时间。
 

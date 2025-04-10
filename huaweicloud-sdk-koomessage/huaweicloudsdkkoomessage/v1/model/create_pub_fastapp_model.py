@@ -33,7 +33,7 @@ class CreatePubFastappModel:
     }
 
     def __init__(self, name=None, logo_img=None, description=None, deeplink=None, depend_engine_version=None):
-        """CreatePubFastappModel
+        r"""CreatePubFastappModel
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreatePubFastappModel:
 
     @property
     def name(self):
-        """Gets the name of this CreatePubFastappModel.
+        r"""Gets the name of this CreatePubFastappModel.
 
         快应用名。  > 长度范围为1-30个字符，中文占2个字符，英文占1个字符。 
 
@@ -77,7 +77,7 @@ class CreatePubFastappModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePubFastappModel.
+        r"""Sets the name of this CreatePubFastappModel.
 
         快应用名。  > 长度范围为1-30个字符，中文占2个字符，英文占1个字符。 
 
@@ -88,7 +88,7 @@ class CreatePubFastappModel:
 
     @property
     def logo_img(self):
-        """Gets the logo_img of this CreatePubFastappModel.
+        r"""Gets the logo_img of this CreatePubFastappModel.
 
         快应用LOGO图片资源ID。  > 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，大小不超过4M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -99,7 +99,7 @@ class CreatePubFastappModel:
 
     @logo_img.setter
     def logo_img(self, logo_img):
-        """Sets the logo_img of this CreatePubFastappModel.
+        r"""Sets the logo_img of this CreatePubFastappModel.
 
         快应用LOGO图片资源ID。  > 图片格式为jpg、bmp、jpeg，分辨率大于等于192*192，大小不超过4M。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -110,7 +110,7 @@ class CreatePubFastappModel:
 
     @property
     def description(self):
-        """Gets the description of this CreatePubFastappModel.
+        r"""Gets the description of this CreatePubFastappModel.
 
         快应用描述。  > 长度范围为1-38个字符，中文占2个字符，英文占1个字符。 
 
@@ -121,7 +121,7 @@ class CreatePubFastappModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePubFastappModel.
+        r"""Sets the description of this CreatePubFastappModel.
 
         快应用描述。  > 长度范围为1-38个字符，中文占2个字符，英文占1个字符。 
 
@@ -132,7 +132,7 @@ class CreatePubFastappModel:
 
     @property
     def deeplink(self):
-        """Gets the deeplink of this CreatePubFastappModel.
+        r"""Gets the deeplink of this CreatePubFastappModel.
 
         快应用跳转链接。
 
@@ -143,7 +143,7 @@ class CreatePubFastappModel:
 
     @deeplink.setter
     def deeplink(self, deeplink):
-        """Sets the deeplink of this CreatePubFastappModel.
+        r"""Sets the deeplink of this CreatePubFastappModel.
 
         快应用跳转链接。
 
@@ -154,7 +154,7 @@ class CreatePubFastappModel:
 
     @property
     def depend_engine_version(self):
-        """Gets the depend_engine_version of this CreatePubFastappModel.
+        r"""Gets the depend_engine_version of this CreatePubFastappModel.
 
         快应用依赖引擎版本。  > 长度范围为1-50个字符，中文占2个字符，英文占1个字符。 
 
@@ -165,7 +165,7 @@ class CreatePubFastappModel:
 
     @depend_engine_version.setter
     def depend_engine_version(self, depend_engine_version):
-        """Sets the depend_engine_version of this CreatePubFastappModel.
+        r"""Sets the depend_engine_version of this CreatePubFastappModel.
 
         快应用依赖引擎版本。  > 长度范围为1-50个字符，中文占2个字符，英文占1个字符。 
 

@@ -27,7 +27,7 @@ class FeedbackOption:
     }
 
     def __init__(self, feedback_option_id=None, feedback_option_name=None):
-        """FeedbackOption
+        r"""FeedbackOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FeedbackOption:
 
     @property
     def feedback_option_id(self):
-        """Gets the feedback_option_id of this FeedbackOption.
+        r"""Gets the feedback_option_id of this FeedbackOption.
 
         反馈选项id
 
@@ -61,7 +61,7 @@ class FeedbackOption:
 
     @feedback_option_id.setter
     def feedback_option_id(self, feedback_option_id):
-        """Sets the feedback_option_id of this FeedbackOption.
+        r"""Sets the feedback_option_id of this FeedbackOption.
 
         反馈选项id
 
@@ -72,7 +72,7 @@ class FeedbackOption:
 
     @property
     def feedback_option_name(self):
-        """Gets the feedback_option_name of this FeedbackOption.
+        r"""Gets the feedback_option_name of this FeedbackOption.
 
         反馈选项名称
 
@@ -83,7 +83,7 @@ class FeedbackOption:
 
     @feedback_option_name.setter
     def feedback_option_name(self, feedback_option_name):
-        """Sets the feedback_option_name of this FeedbackOption.
+        r"""Sets the feedback_option_name of this FeedbackOption.
 
         反馈选项名称
 

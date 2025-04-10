@@ -29,7 +29,7 @@ class AddNodesToNodePoolList:
     }
 
     def __init__(self, api_version=None, kind=None, node_list=None):
-        """AddNodesToNodePoolList
+        r"""AddNodesToNodePoolList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddNodesToNodePoolList:
 
     @property
     def api_version(self):
-        """Gets the api_version of this AddNodesToNodePoolList.
+        r"""Gets the api_version of this AddNodesToNodePoolList.
 
         API版本，固定值“v3”。
 
@@ -65,7 +65,7 @@ class AddNodesToNodePoolList:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this AddNodesToNodePoolList.
+        r"""Sets the api_version of this AddNodesToNodePoolList.
 
         API版本，固定值“v3”。
 
@@ -76,7 +76,7 @@ class AddNodesToNodePoolList:
 
     @property
     def kind(self):
-        """Gets the kind of this AddNodesToNodePoolList.
+        r"""Gets the kind of this AddNodesToNodePoolList.
 
         API类型，固定值“List”。
 
@@ -87,7 +87,7 @@ class AddNodesToNodePoolList:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this AddNodesToNodePoolList.
+        r"""Sets the kind of this AddNodesToNodePoolList.
 
         API类型，固定值“List”。
 
@@ -98,7 +98,7 @@ class AddNodesToNodePoolList:
 
     @property
     def node_list(self):
-        """Gets the node_list of this AddNodesToNodePoolList.
+        r"""Gets the node_list of this AddNodesToNodePoolList.
 
         纳管节点列表，当前最多支持同时纳管200个节点。
 
@@ -109,7 +109,7 @@ class AddNodesToNodePoolList:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this AddNodesToNodePoolList.
+        r"""Sets the node_list of this AddNodesToNodePoolList.
 
         纳管节点列表，当前最多支持同时纳管200个节点。
 

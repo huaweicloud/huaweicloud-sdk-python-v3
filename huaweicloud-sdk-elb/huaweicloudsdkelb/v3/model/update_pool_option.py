@@ -53,7 +53,7 @@ class UpdatePoolOption:
     }
 
     def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, quic_cid_hash_strategy=None):
-        """UpdatePoolOption
+        r"""UpdatePoolOption
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class UpdatePoolOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdatePoolOption.
+        r"""Gets the admin_state_up of this UpdatePoolOption.
 
         后端服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -152,7 +152,7 @@ class UpdatePoolOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdatePoolOption.
+        r"""Sets the admin_state_up of this UpdatePoolOption.
 
         后端服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -163,7 +163,7 @@ class UpdatePoolOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePoolOption.
+        r"""Gets the description of this UpdatePoolOption.
 
         后端服务器组的描述信息。
 
@@ -174,7 +174,7 @@ class UpdatePoolOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePoolOption.
+        r"""Sets the description of this UpdatePoolOption.
 
         后端服务器组的描述信息。
 
@@ -185,7 +185,7 @@ class UpdatePoolOption:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this UpdatePoolOption.
+        r"""Gets the lb_algorithm of this UpdatePoolOption.
 
         后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  使用说明： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -196,7 +196,7 @@ class UpdatePoolOption:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this UpdatePoolOption.
+        r"""Sets the lb_algorithm of this UpdatePoolOption.
 
         后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  使用说明： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -207,7 +207,7 @@ class UpdatePoolOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePoolOption.
+        r"""Gets the name of this UpdatePoolOption.
 
         后端服务器组的名称。
 
@@ -218,7 +218,7 @@ class UpdatePoolOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePoolOption.
+        r"""Sets the name of this UpdatePoolOption.
 
         后端服务器组的名称。
 
@@ -229,7 +229,7 @@ class UpdatePoolOption:
 
     @property
     def session_persistence(self):
-        """Gets the session_persistence of this UpdatePoolOption.
+        r"""Gets the session_persistence of this UpdatePoolOption.
 
         :return: The session_persistence of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
@@ -238,7 +238,7 @@ class UpdatePoolOption:
 
     @session_persistence.setter
     def session_persistence(self, session_persistence):
-        """Sets the session_persistence of this UpdatePoolOption.
+        r"""Sets the session_persistence of this UpdatePoolOption.
 
         :param session_persistence: The session_persistence of this UpdatePoolOption.
         :type session_persistence: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
@@ -247,7 +247,7 @@ class UpdatePoolOption:
 
     @property
     def slow_start(self):
-        """Gets the slow_start of this UpdatePoolOption.
+        r"""Gets the slow_start of this UpdatePoolOption.
 
         :return: The slow_start of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
@@ -256,7 +256,7 @@ class UpdatePoolOption:
 
     @slow_start.setter
     def slow_start(self, slow_start):
-        """Sets the slow_start of this UpdatePoolOption.
+        r"""Sets the slow_start of this UpdatePoolOption.
 
         :param slow_start: The slow_start of this UpdatePoolOption.
         :type slow_start: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
@@ -265,7 +265,7 @@ class UpdatePoolOption:
 
     @property
     def member_deletion_protection_enable(self):
-        """Gets the member_deletion_protection_enable of this UpdatePoolOption.
+        r"""Gets the member_deletion_protection_enable of this UpdatePoolOption.
 
         是否开启删除保护。  取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -276,7 +276,7 @@ class UpdatePoolOption:
 
     @member_deletion_protection_enable.setter
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
-        """Sets the member_deletion_protection_enable of this UpdatePoolOption.
+        r"""Sets the member_deletion_protection_enable of this UpdatePoolOption.
 
         是否开启删除保护。  取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -287,7 +287,7 @@ class UpdatePoolOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this UpdatePoolOption.
+        r"""Gets the vpc_id of this UpdatePoolOption.
 
         后端服务器组关联的虚拟私有云的ID。 [- pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。](tag:hws_eu)  只有vpc_id为空时允许更新。
 
@@ -298,7 +298,7 @@ class UpdatePoolOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this UpdatePoolOption.
+        r"""Sets the vpc_id of this UpdatePoolOption.
 
         后端服务器组关联的虚拟私有云的ID。 [- pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。](tag:hws_eu)  只有vpc_id为空时允许更新。
 
@@ -309,7 +309,7 @@ class UpdatePoolOption:
 
     @property
     def type(self):
-        """Gets the type of this UpdatePoolOption.
+        r"""Gets the type of this UpdatePoolOption.
 
         后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端  使用说明： - 只有type为空时允许更新，不允许从非空更新为空。
 
@@ -320,7 +320,7 @@ class UpdatePoolOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdatePoolOption.
+        r"""Sets the type of this UpdatePoolOption.
 
         后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端  使用说明： - 只有type为空时允许更新，不允许从非空更新为空。
 
@@ -331,7 +331,7 @@ class UpdatePoolOption:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this UpdatePoolOption.
+        r"""Gets the protection_status of this UpdatePoolOption.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -342,7 +342,7 @@ class UpdatePoolOption:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this UpdatePoolOption.
+        r"""Sets the protection_status of this UpdatePoolOption.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -353,7 +353,7 @@ class UpdatePoolOption:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this UpdatePoolOption.
+        r"""Gets the protection_reason of this UpdatePoolOption.
 
         参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
@@ -364,7 +364,7 @@ class UpdatePoolOption:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this UpdatePoolOption.
+        r"""Sets the protection_reason of this UpdatePoolOption.
 
         参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
@@ -375,7 +375,7 @@ class UpdatePoolOption:
 
     @property
     def any_port_enable(self):
-        """Gets the any_port_enable of this UpdatePoolOption.
+        r"""Gets the any_port_enable of this UpdatePoolOption.
 
         后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
 
@@ -386,7 +386,7 @@ class UpdatePoolOption:
 
     @any_port_enable.setter
     def any_port_enable(self, any_port_enable):
-        """Sets the any_port_enable of this UpdatePoolOption.
+        r"""Sets the any_port_enable of this UpdatePoolOption.
 
         后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
 
@@ -397,7 +397,7 @@ class UpdatePoolOption:
 
     @property
     def connection_drain(self):
-        """Gets the connection_drain of this UpdatePoolOption.
+        r"""Gets the connection_drain of this UpdatePoolOption.
 
         :return: The connection_drain of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -406,7 +406,7 @@ class UpdatePoolOption:
 
     @connection_drain.setter
     def connection_drain(self, connection_drain):
-        """Sets the connection_drain of this UpdatePoolOption.
+        r"""Sets the connection_drain of this UpdatePoolOption.
 
         :param connection_drain: The connection_drain of this UpdatePoolOption.
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -415,7 +415,7 @@ class UpdatePoolOption:
 
     @property
     def pool_health(self):
-        """Gets the pool_health of this UpdatePoolOption.
+        r"""Gets the pool_health of this UpdatePoolOption.
 
         :return: The pool_health of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.PoolHealth`
@@ -424,7 +424,7 @@ class UpdatePoolOption:
 
     @pool_health.setter
     def pool_health(self, pool_health):
-        """Sets the pool_health of this UpdatePoolOption.
+        r"""Sets the pool_health of this UpdatePoolOption.
 
         :param pool_health: The pool_health of this UpdatePoolOption.
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
@@ -433,7 +433,7 @@ class UpdatePoolOption:
 
     @property
     def quic_cid_hash_strategy(self):
-        """Gets the quic_cid_hash_strategy of this UpdatePoolOption.
+        r"""Gets the quic_cid_hash_strategy of this UpdatePoolOption.
 
         :return: The quic_cid_hash_strategy of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
@@ -442,7 +442,7 @@ class UpdatePoolOption:
 
     @quic_cid_hash_strategy.setter
     def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
-        """Sets the quic_cid_hash_strategy of this UpdatePoolOption.
+        r"""Sets the quic_cid_hash_strategy of this UpdatePoolOption.
 
         :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this UpdatePoolOption.
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`

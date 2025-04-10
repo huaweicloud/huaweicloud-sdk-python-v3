@@ -28,7 +28,7 @@ class ListCaseQuotasResponse(SdkResponse):
     }
 
     def __init__(self, total=None, un_used=None):
-        """ListCaseQuotasResponse
+        r"""ListCaseQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCaseQuotasResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCaseQuotasResponse.
+        r"""Gets the total of this ListCaseQuotasResponse.
 
         总配额
 
@@ -62,7 +62,7 @@ class ListCaseQuotasResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCaseQuotasResponse.
+        r"""Sets the total of this ListCaseQuotasResponse.
 
         总配额
 
@@ -73,7 +73,7 @@ class ListCaseQuotasResponse(SdkResponse):
 
     @property
     def un_used(self):
-        """Gets the un_used of this ListCaseQuotasResponse.
+        r"""Gets the un_used of this ListCaseQuotasResponse.
 
         未使用
 
@@ -84,7 +84,7 @@ class ListCaseQuotasResponse(SdkResponse):
 
     @un_used.setter
     def un_used(self, un_used):
-        """Sets the un_used of this ListCaseQuotasResponse.
+        r"""Sets the un_used of this ListCaseQuotasResponse.
 
         未使用
 

@@ -25,7 +25,7 @@ class OpenGaussEnlargeVolume:
     }
 
     def __init__(self, size=None):
-        """OpenGaussEnlargeVolume
+        r"""OpenGaussEnlargeVolume
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OpenGaussEnlargeVolume:
 
     @property
     def size(self):
-        """Gets the size of this OpenGaussEnlargeVolume.
+        r"""Gets the size of this OpenGaussEnlargeVolume.
 
         GaussDB磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
 
@@ -53,7 +53,7 @@ class OpenGaussEnlargeVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this OpenGaussEnlargeVolume.
+        r"""Sets the size of this OpenGaussEnlargeVolume.
 
         GaussDB磁盘大小要求（分片数*40GB）的倍数；取值范围：（分片数*40GB）~（分片数*16TB）
 

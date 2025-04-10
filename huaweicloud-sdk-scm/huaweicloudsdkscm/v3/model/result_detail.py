@@ -29,7 +29,7 @@ class ResultDetail:
     }
 
     def __init__(self, certificate_id=None, total_num=None, deployed_resources=None):
-        """ResultDetail
+        r"""ResultDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ResultDetail:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ResultDetail.
+        r"""Gets the certificate_id of this ResultDetail.
 
         证书ID。
 
@@ -65,7 +65,7 @@ class ResultDetail:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ResultDetail.
+        r"""Sets the certificate_id of this ResultDetail.
 
         证书ID。
 
@@ -76,7 +76,7 @@ class ResultDetail:
 
     @property
     def total_num(self):
-        """Gets the total_num of this ResultDetail.
+        r"""Gets the total_num of this ResultDetail.
 
         当前证书在所查询服务中已部署资源总数。
 
@@ -87,7 +87,7 @@ class ResultDetail:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ResultDetail.
+        r"""Sets the total_num of this ResultDetail.
 
         当前证书在所查询服务中已部署资源总数。
 
@@ -98,7 +98,7 @@ class ResultDetail:
 
     @property
     def deployed_resources(self):
-        """Gets the deployed_resources of this ResultDetail.
+        r"""Gets the deployed_resources of this ResultDetail.
 
         当前证书已部署资源列表，详情请参见DeployedResourceDetail字段数据结构说明。
 
@@ -109,7 +109,7 @@ class ResultDetail:
 
     @deployed_resources.setter
     def deployed_resources(self, deployed_resources):
-        """Sets the deployed_resources of this ResultDetail.
+        r"""Sets the deployed_resources of this ResultDetail.
 
         当前证书已部署资源列表，详情请参见DeployedResourceDetail字段数据结构说明。
 

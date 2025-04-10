@@ -41,7 +41,7 @@ class AgentsCondition:
     }
 
     def __init__(self, desktop_id=None, desktop_name=None, desktop_pool_id=None, status=None, task_status=None, ip_address=None, enterprise_project_id=None, process=None, agent_info=None):
-        """AgentsCondition
+        r"""AgentsCondition
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AgentsCondition:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this AgentsCondition.
+        r"""Gets the desktop_id of this AgentsCondition.
 
         桌面的desktopId
 
@@ -110,7 +110,7 @@ class AgentsCondition:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this AgentsCondition.
+        r"""Sets the desktop_id of this AgentsCondition.
 
         桌面的desktopId
 
@@ -121,7 +121,7 @@ class AgentsCondition:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this AgentsCondition.
+        r"""Gets the desktop_name of this AgentsCondition.
 
         桌面名称
 
@@ -132,7 +132,7 @@ class AgentsCondition:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this AgentsCondition.
+        r"""Sets the desktop_name of this AgentsCondition.
 
         桌面名称
 
@@ -143,7 +143,7 @@ class AgentsCondition:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this AgentsCondition.
+        r"""Gets the desktop_pool_id of this AgentsCondition.
 
         桌面池id
 
@@ -154,7 +154,7 @@ class AgentsCondition:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this AgentsCondition.
+        r"""Sets the desktop_pool_id of this AgentsCondition.
 
         桌面池id
 
@@ -165,7 +165,7 @@ class AgentsCondition:
 
     @property
     def status(self):
-        """Gets the status of this AgentsCondition.
+        r"""Gets the status of this AgentsCondition.
 
         桌面运行状态
 
@@ -176,7 +176,7 @@ class AgentsCondition:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AgentsCondition.
+        r"""Sets the status of this AgentsCondition.
 
         桌面运行状态
 
@@ -187,7 +187,7 @@ class AgentsCondition:
 
     @property
     def task_status(self):
-        """Gets the task_status of this AgentsCondition.
+        r"""Gets the task_status of this AgentsCondition.
 
         桌面的任务状态
 
@@ -198,7 +198,7 @@ class AgentsCondition:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this AgentsCondition.
+        r"""Sets the task_status of this AgentsCondition.
 
         桌面的任务状态
 
@@ -209,7 +209,7 @@ class AgentsCondition:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AgentsCondition.
+        r"""Gets the ip_address of this AgentsCondition.
 
         ip地址
 
@@ -220,7 +220,7 @@ class AgentsCondition:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AgentsCondition.
+        r"""Sets the ip_address of this AgentsCondition.
 
         ip地址
 
@@ -231,7 +231,7 @@ class AgentsCondition:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AgentsCondition.
+        r"""Gets the enterprise_project_id of this AgentsCondition.
 
         企业项目ID
 
@@ -242,7 +242,7 @@ class AgentsCondition:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AgentsCondition.
+        r"""Sets the enterprise_project_id of this AgentsCondition.
 
         企业项目ID
 
@@ -253,7 +253,7 @@ class AgentsCondition:
 
     @property
     def process(self):
-        """Gets the process of this AgentsCondition.
+        r"""Gets the process of this AgentsCondition.
 
         桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
 
@@ -264,7 +264,7 @@ class AgentsCondition:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this AgentsCondition.
+        r"""Sets the process of this AgentsCondition.
 
         桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
 
@@ -275,7 +275,7 @@ class AgentsCondition:
 
     @property
     def agent_info(self):
-        """Gets the agent_info of this AgentsCondition.
+        r"""Gets the agent_info of this AgentsCondition.
 
         单个桌面内的agent安装情况
 
@@ -286,7 +286,7 @@ class AgentsCondition:
 
     @agent_info.setter
     def agent_info(self, agent_info):
-        """Sets the agent_info of this AgentsCondition.
+        r"""Sets the agent_info of this AgentsCondition.
 
         单个桌面内的agent安装情况
 

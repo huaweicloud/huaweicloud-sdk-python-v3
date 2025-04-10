@@ -27,7 +27,7 @@ class DisassociateSubnetRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """DisassociateSubnetRequest
+        r"""DisassociateSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateSubnetRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this DisassociateSubnetRequest.
+        r"""Gets the routetable_id of this DisassociateSubnetRequest.
 
         路由表ID
 
@@ -60,7 +60,7 @@ class DisassociateSubnetRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this DisassociateSubnetRequest.
+        r"""Sets the routetable_id of this DisassociateSubnetRequest.
 
         路由表ID
 
@@ -71,7 +71,7 @@ class DisassociateSubnetRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateSubnetRequest.
+        r"""Gets the body of this DisassociateSubnetRequest.
 
         :return: The body of this DisassociateSubnetRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.DisassociateSubnetRequestBody`
@@ -80,7 +80,7 @@ class DisassociateSubnetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateSubnetRequest.
+        r"""Sets the body of this DisassociateSubnetRequest.
 
         :param body: The body of this DisassociateSubnetRequest.
         :type body: :class:`huaweicloudsdkiec.v1.DisassociateSubnetRequestBody`

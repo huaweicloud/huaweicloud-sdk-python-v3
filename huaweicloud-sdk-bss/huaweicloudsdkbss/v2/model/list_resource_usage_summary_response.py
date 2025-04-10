@@ -28,7 +28,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, summary_usage_info_list=None):
-        """ListResourceUsageSummaryResponse
+        r"""ListResourceUsageSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourceUsageSummaryResponse.
+        r"""Gets the total_count of this ListResourceUsageSummaryResponse.
 
         总条数。
 
@@ -62,7 +62,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourceUsageSummaryResponse.
+        r"""Sets the total_count of this ListResourceUsageSummaryResponse.
 
         总条数。
 
@@ -73,7 +73,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
 
     @property
     def summary_usage_info_list(self):
-        """Gets the summary_usage_info_list of this ListResourceUsageSummaryResponse.
+        r"""Gets the summary_usage_info_list of this ListResourceUsageSummaryResponse.
 
         统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
 
@@ -84,7 +84,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
 
     @summary_usage_info_list.setter
     def summary_usage_info_list(self, summary_usage_info_list):
-        """Sets the summary_usage_info_list of this ListResourceUsageSummaryResponse.
+        r"""Sets the summary_usage_info_list of this ListResourceUsageSummaryResponse.
 
         统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
 

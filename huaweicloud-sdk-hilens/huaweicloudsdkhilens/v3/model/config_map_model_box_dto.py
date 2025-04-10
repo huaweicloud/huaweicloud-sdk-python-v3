@@ -27,7 +27,7 @@ class ConfigMapModelBoxDTO:
     }
 
     def __init__(self, configmap=None, workspace_id=None):
-        """ConfigMapModelBoxDTO
+        r"""ConfigMapModelBoxDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ConfigMapModelBoxDTO:
 
     @property
     def configmap(self):
-        """Gets the configmap of this ConfigMapModelBoxDTO.
+        r"""Gets the configmap of this ConfigMapModelBoxDTO.
 
         :return: The configmap of this ConfigMapModelBoxDTO.
         :rtype: :class:`huaweicloudsdkhilens.v3.ConfigMap`
@@ -58,7 +58,7 @@ class ConfigMapModelBoxDTO:
 
     @configmap.setter
     def configmap(self, configmap):
-        """Sets the configmap of this ConfigMapModelBoxDTO.
+        r"""Sets the configmap of this ConfigMapModelBoxDTO.
 
         :param configmap: The configmap of this ConfigMapModelBoxDTO.
         :type configmap: :class:`huaweicloudsdkhilens.v3.ConfigMap`
@@ -67,7 +67,7 @@ class ConfigMapModelBoxDTO:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ConfigMapModelBoxDTO.
+        r"""Gets the workspace_id of this ConfigMapModelBoxDTO.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -78,7 +78,7 @@ class ConfigMapModelBoxDTO:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ConfigMapModelBoxDTO.
+        r"""Sets the workspace_id of this ConfigMapModelBoxDTO.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 

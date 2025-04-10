@@ -28,7 +28,7 @@ class ListRedislogResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, file_list=None):
-        """ListRedislogResponse
+        r"""ListRedislogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRedislogResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListRedislogResponse.
+        r"""Gets the total_num of this ListRedislogResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListRedislogResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListRedislogResponse.
+        r"""Sets the total_num of this ListRedislogResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListRedislogResponse(SdkResponse):
 
     @property
     def file_list(self):
-        """Gets the file_list of this ListRedislogResponse.
+        r"""Gets the file_list of this ListRedislogResponse.
 
         运行日志列表
 
@@ -84,7 +84,7 @@ class ListRedislogResponse(SdkResponse):
 
     @file_list.setter
     def file_list(self, file_list):
-        """Sets the file_list of this ListRedislogResponse.
+        r"""Sets the file_list of this ListRedislogResponse.
 
         运行日志列表
 

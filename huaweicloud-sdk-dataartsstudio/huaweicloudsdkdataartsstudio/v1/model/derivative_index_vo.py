@@ -77,7 +77,7 @@ class DerivativeIndexVO:
     }
 
     def __init__(self, id=None, name_en=None, name_ch=None, description=None, create_by=None, data_type=None, l1_id=None, l2_id=None, l3_id=None, status=None, atomic_index_id=None, time_condition_id=None, time_field_id=None, time_field_name=None, common_conditions=None, dimension_groups=None, monitor=None, atomic_index=None, time_condition_name=None, create_time=None, update_time=None, l1=None, l2=None, l3=None, summary_table_id=None, approval_info=None, new_biz=None):
-        """DerivativeIndexVO
+        r"""DerivativeIndexVO
 
         The model defined in huaweicloud sdk
 
@@ -221,7 +221,7 @@ class DerivativeIndexVO:
 
     @property
     def id(self):
-        """Gets the id of this DerivativeIndexVO.
+        r"""Gets the id of this DerivativeIndexVO.
 
         编码，ID字符串。
 
@@ -232,7 +232,7 @@ class DerivativeIndexVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DerivativeIndexVO.
+        r"""Sets the id of this DerivativeIndexVO.
 
         编码，ID字符串。
 
@@ -243,7 +243,7 @@ class DerivativeIndexVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this DerivativeIndexVO.
+        r"""Gets the name_en of this DerivativeIndexVO.
 
         字段名。
 
@@ -254,7 +254,7 @@ class DerivativeIndexVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this DerivativeIndexVO.
+        r"""Sets the name_en of this DerivativeIndexVO.
 
         字段名。
 
@@ -265,7 +265,7 @@ class DerivativeIndexVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this DerivativeIndexVO.
+        r"""Gets the name_ch of this DerivativeIndexVO.
 
         中文名。
 
@@ -276,7 +276,7 @@ class DerivativeIndexVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this DerivativeIndexVO.
+        r"""Sets the name_ch of this DerivativeIndexVO.
 
         中文名。
 
@@ -287,7 +287,7 @@ class DerivativeIndexVO:
 
     @property
     def description(self):
-        """Gets the description of this DerivativeIndexVO.
+        r"""Gets the description of this DerivativeIndexVO.
 
         描述，只读。
 
@@ -298,7 +298,7 @@ class DerivativeIndexVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DerivativeIndexVO.
+        r"""Sets the description of this DerivativeIndexVO.
 
         描述，只读。
 
@@ -309,7 +309,7 @@ class DerivativeIndexVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DerivativeIndexVO.
+        r"""Gets the create_by of this DerivativeIndexVO.
 
         创建人。
 
@@ -320,7 +320,7 @@ class DerivativeIndexVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DerivativeIndexVO.
+        r"""Sets the create_by of this DerivativeIndexVO.
 
         创建人。
 
@@ -331,7 +331,7 @@ class DerivativeIndexVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this DerivativeIndexVO.
+        r"""Gets the data_type of this DerivativeIndexVO.
 
         字段类型。
 
@@ -342,7 +342,7 @@ class DerivativeIndexVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this DerivativeIndexVO.
+        r"""Sets the data_type of this DerivativeIndexVO.
 
         字段类型。
 
@@ -353,7 +353,7 @@ class DerivativeIndexVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this DerivativeIndexVO.
+        r"""Gets the l1_id of this DerivativeIndexVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -364,7 +364,7 @@ class DerivativeIndexVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this DerivativeIndexVO.
+        r"""Sets the l1_id of this DerivativeIndexVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -375,7 +375,7 @@ class DerivativeIndexVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this DerivativeIndexVO.
+        r"""Gets the l2_id of this DerivativeIndexVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -386,7 +386,7 @@ class DerivativeIndexVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this DerivativeIndexVO.
+        r"""Sets the l2_id of this DerivativeIndexVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -397,7 +397,7 @@ class DerivativeIndexVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this DerivativeIndexVO.
+        r"""Gets the l3_id of this DerivativeIndexVO.
 
         业务对象guid，ID字符串。
 
@@ -408,7 +408,7 @@ class DerivativeIndexVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this DerivativeIndexVO.
+        r"""Sets the l3_id of this DerivativeIndexVO.
 
         业务对象guid，ID字符串。
 
@@ -419,7 +419,7 @@ class DerivativeIndexVO:
 
     @property
     def status(self):
-        """Gets the status of this DerivativeIndexVO.
+        r"""Gets the status of this DerivativeIndexVO.
 
         :return: The status of this DerivativeIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -428,7 +428,7 @@ class DerivativeIndexVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DerivativeIndexVO.
+        r"""Sets the status of this DerivativeIndexVO.
 
         :param status: The status of this DerivativeIndexVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -437,7 +437,7 @@ class DerivativeIndexVO:
 
     @property
     def atomic_index_id(self):
-        """Gets the atomic_index_id of this DerivativeIndexVO.
+        r"""Gets the atomic_index_id of this DerivativeIndexVO.
 
         原子指标ID，ID字符串。
 
@@ -448,7 +448,7 @@ class DerivativeIndexVO:
 
     @atomic_index_id.setter
     def atomic_index_id(self, atomic_index_id):
-        """Sets the atomic_index_id of this DerivativeIndexVO.
+        r"""Sets the atomic_index_id of this DerivativeIndexVO.
 
         原子指标ID，ID字符串。
 
@@ -459,7 +459,7 @@ class DerivativeIndexVO:
 
     @property
     def time_condition_id(self):
-        """Gets the time_condition_id of this DerivativeIndexVO.
+        r"""Gets the time_condition_id of this DerivativeIndexVO.
 
         时间限定ID，ID字符串。
 
@@ -470,7 +470,7 @@ class DerivativeIndexVO:
 
     @time_condition_id.setter
     def time_condition_id(self, time_condition_id):
-        """Sets the time_condition_id of this DerivativeIndexVO.
+        r"""Sets the time_condition_id of this DerivativeIndexVO.
 
         时间限定ID，ID字符串。
 
@@ -481,7 +481,7 @@ class DerivativeIndexVO:
 
     @property
     def time_field_id(self):
-        """Gets the time_field_id of this DerivativeIndexVO.
+        r"""Gets the time_field_id of this DerivativeIndexVO.
 
         时间限定关联字段ID，ID字符串。
 
@@ -492,7 +492,7 @@ class DerivativeIndexVO:
 
     @time_field_id.setter
     def time_field_id(self, time_field_id):
-        """Sets the time_field_id of this DerivativeIndexVO.
+        r"""Sets the time_field_id of this DerivativeIndexVO.
 
         时间限定关联字段ID，ID字符串。
 
@@ -503,7 +503,7 @@ class DerivativeIndexVO:
 
     @property
     def time_field_name(self):
-        """Gets the time_field_name of this DerivativeIndexVO.
+        r"""Gets the time_field_name of this DerivativeIndexVO.
 
         时间限定关联字段名称，只读。
 
@@ -514,7 +514,7 @@ class DerivativeIndexVO:
 
     @time_field_name.setter
     def time_field_name(self, time_field_name):
-        """Sets the time_field_name of this DerivativeIndexVO.
+        r"""Sets the time_field_name of this DerivativeIndexVO.
 
         时间限定关联字段名称，只读。
 
@@ -525,7 +525,7 @@ class DerivativeIndexVO:
 
     @property
     def common_conditions(self):
-        """Gets the common_conditions of this DerivativeIndexVO.
+        r"""Gets the common_conditions of this DerivativeIndexVO.
 
         通用限定信息。
 
@@ -536,7 +536,7 @@ class DerivativeIndexVO:
 
     @common_conditions.setter
     def common_conditions(self, common_conditions):
-        """Sets the common_conditions of this DerivativeIndexVO.
+        r"""Sets the common_conditions of this DerivativeIndexVO.
 
         通用限定信息。
 
@@ -547,7 +547,7 @@ class DerivativeIndexVO:
 
     @property
     def dimension_groups(self):
-        """Gets the dimension_groups of this DerivativeIndexVO.
+        r"""Gets the dimension_groups of this DerivativeIndexVO.
 
         维度组(颗粒度)。
 
@@ -558,7 +558,7 @@ class DerivativeIndexVO:
 
     @dimension_groups.setter
     def dimension_groups(self, dimension_groups):
-        """Sets the dimension_groups of this DerivativeIndexVO.
+        r"""Sets the dimension_groups of this DerivativeIndexVO.
 
         维度组(颗粒度)。
 
@@ -569,7 +569,7 @@ class DerivativeIndexVO:
 
     @property
     def monitor(self):
-        """Gets the monitor of this DerivativeIndexVO.
+        r"""Gets the monitor of this DerivativeIndexVO.
 
         :return: The monitor of this DerivativeIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MetricMonitorVO`
@@ -578,7 +578,7 @@ class DerivativeIndexVO:
 
     @monitor.setter
     def monitor(self, monitor):
-        """Sets the monitor of this DerivativeIndexVO.
+        r"""Sets the monitor of this DerivativeIndexVO.
 
         :param monitor: The monitor of this DerivativeIndexVO.
         :type monitor: :class:`huaweicloudsdkdataartsstudio.v1.MetricMonitorVO`
@@ -587,7 +587,7 @@ class DerivativeIndexVO:
 
     @property
     def atomic_index(self):
-        """Gets the atomic_index of this DerivativeIndexVO.
+        r"""Gets the atomic_index of this DerivativeIndexVO.
 
         :return: The atomic_index of this DerivativeIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVO`
@@ -596,7 +596,7 @@ class DerivativeIndexVO:
 
     @atomic_index.setter
     def atomic_index(self, atomic_index):
-        """Sets the atomic_index of this DerivativeIndexVO.
+        r"""Sets the atomic_index of this DerivativeIndexVO.
 
         :param atomic_index: The atomic_index of this DerivativeIndexVO.
         :type atomic_index: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVO`
@@ -605,7 +605,7 @@ class DerivativeIndexVO:
 
     @property
     def time_condition_name(self):
-        """Gets the time_condition_name of this DerivativeIndexVO.
+        r"""Gets the time_condition_name of this DerivativeIndexVO.
 
         时间限定名称，只读。
 
@@ -616,7 +616,7 @@ class DerivativeIndexVO:
 
     @time_condition_name.setter
     def time_condition_name(self, time_condition_name):
-        """Sets the time_condition_name of this DerivativeIndexVO.
+        r"""Sets the time_condition_name of this DerivativeIndexVO.
 
         时间限定名称，只读。
 
@@ -627,7 +627,7 @@ class DerivativeIndexVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DerivativeIndexVO.
+        r"""Gets the create_time of this DerivativeIndexVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -638,7 +638,7 @@ class DerivativeIndexVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DerivativeIndexVO.
+        r"""Sets the create_time of this DerivativeIndexVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -649,7 +649,7 @@ class DerivativeIndexVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DerivativeIndexVO.
+        r"""Gets the update_time of this DerivativeIndexVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -660,7 +660,7 @@ class DerivativeIndexVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DerivativeIndexVO.
+        r"""Sets the update_time of this DerivativeIndexVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -671,7 +671,7 @@ class DerivativeIndexVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this DerivativeIndexVO.
+        r"""Gets the l1 of this DerivativeIndexVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -682,7 +682,7 @@ class DerivativeIndexVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this DerivativeIndexVO.
+        r"""Sets the l1 of this DerivativeIndexVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -693,7 +693,7 @@ class DerivativeIndexVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this DerivativeIndexVO.
+        r"""Gets the l2 of this DerivativeIndexVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -704,7 +704,7 @@ class DerivativeIndexVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this DerivativeIndexVO.
+        r"""Sets the l2 of this DerivativeIndexVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -715,7 +715,7 @@ class DerivativeIndexVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this DerivativeIndexVO.
+        r"""Gets the l3 of this DerivativeIndexVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -726,7 +726,7 @@ class DerivativeIndexVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this DerivativeIndexVO.
+        r"""Sets the l3 of this DerivativeIndexVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -737,7 +737,7 @@ class DerivativeIndexVO:
 
     @property
     def summary_table_id(self):
-        """Gets the summary_table_id of this DerivativeIndexVO.
+        r"""Gets the summary_table_id of this DerivativeIndexVO.
 
         汇总表ID，只读，ID字符串。
 
@@ -748,7 +748,7 @@ class DerivativeIndexVO:
 
     @summary_table_id.setter
     def summary_table_id(self, summary_table_id):
-        """Sets the summary_table_id of this DerivativeIndexVO.
+        r"""Sets the summary_table_id of this DerivativeIndexVO.
 
         汇总表ID，只读，ID字符串。
 
@@ -759,7 +759,7 @@ class DerivativeIndexVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this DerivativeIndexVO.
+        r"""Gets the approval_info of this DerivativeIndexVO.
 
         :return: The approval_info of this DerivativeIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -768,7 +768,7 @@ class DerivativeIndexVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this DerivativeIndexVO.
+        r"""Sets the approval_info of this DerivativeIndexVO.
 
         :param approval_info: The approval_info of this DerivativeIndexVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -777,7 +777,7 @@ class DerivativeIndexVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this DerivativeIndexVO.
+        r"""Gets the new_biz of this DerivativeIndexVO.
 
         :return: The new_biz of this DerivativeIndexVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -786,7 +786,7 @@ class DerivativeIndexVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this DerivativeIndexVO.
+        r"""Sets the new_biz of this DerivativeIndexVO.
 
         :param new_biz: The new_biz of this DerivativeIndexVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`

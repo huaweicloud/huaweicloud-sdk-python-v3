@@ -30,7 +30,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None, size=None):
-        """ListWhiteblackipRuleResponse
+        r"""ListWhiteblackipRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWhiteblackipRuleResponse.
+        r"""Gets the total of this ListWhiteblackipRuleResponse.
 
         黑白名单规则条数
 
@@ -69,7 +69,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWhiteblackipRuleResponse.
+        r"""Sets the total of this ListWhiteblackipRuleResponse.
 
         黑白名单规则条数
 
@@ -80,7 +80,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListWhiteblackipRuleResponse.
+        r"""Gets the items of this ListWhiteblackipRuleResponse.
 
         黑白名单规则列表信息
 
@@ -91,7 +91,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListWhiteblackipRuleResponse.
+        r"""Sets the items of this ListWhiteblackipRuleResponse.
 
         黑白名单规则列表信息
 
@@ -102,7 +102,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListWhiteblackipRuleResponse.
+        r"""Gets the size of this ListWhiteblackipRuleResponse.
 
         ip地址总数
 
@@ -113,7 +113,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListWhiteblackipRuleResponse.
+        r"""Sets the size of this ListWhiteblackipRuleResponse.
 
         ip地址总数
 

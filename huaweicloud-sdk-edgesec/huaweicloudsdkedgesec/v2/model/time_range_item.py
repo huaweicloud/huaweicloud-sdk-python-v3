@@ -27,7 +27,7 @@ class TimeRangeItem:
     }
 
     def __init__(self, st=None, end=None):
-        """TimeRangeItem
+        r"""TimeRangeItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TimeRangeItem:
 
     @property
     def st(self):
-        """Gets the st of this TimeRangeItem.
+        r"""Gets the st of this TimeRangeItem.
 
         period每日生效时间区间开始
 
@@ -61,7 +61,7 @@ class TimeRangeItem:
 
     @st.setter
     def st(self, st):
-        """Sets the st of this TimeRangeItem.
+        r"""Sets the st of this TimeRangeItem.
 
         period每日生效时间区间开始
 
@@ -72,7 +72,7 @@ class TimeRangeItem:
 
     @property
     def end(self):
-        """Gets the end of this TimeRangeItem.
+        r"""Gets the end of this TimeRangeItem.
 
         period每日生效时间区间结束
 
@@ -83,7 +83,7 @@ class TimeRangeItem:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this TimeRangeItem.
+        r"""Sets the end of this TimeRangeItem.
 
         period每日生效时间区间结束
 

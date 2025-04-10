@@ -30,7 +30,7 @@ class ListTagsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, tags=None):
-        """ListTagsV2Response
+        r"""ListTagsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTagsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListTagsV2Response.
+        r"""Gets the size of this ListTagsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListTagsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTagsV2Response.
+        r"""Sets the size of this ListTagsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListTagsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTagsV2Response.
+        r"""Gets the total of this ListTagsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListTagsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTagsV2Response.
+        r"""Sets the total of this ListTagsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListTagsV2Response(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListTagsV2Response.
+        r"""Gets the tags of this ListTagsV2Response.
 
         标签列表
 
@@ -111,7 +111,7 @@ class ListTagsV2Response(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTagsV2Response.
+        r"""Sets the tags of this ListTagsV2Response.
 
         标签列表
 

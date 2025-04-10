@@ -25,7 +25,7 @@ class DeletePersistentStorageRequest:
     }
 
     def __init__(self, storage_id=None):
-        """DeletePersistentStorageRequest
+        r"""DeletePersistentStorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePersistentStorageRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this DeletePersistentStorageRequest.
+        r"""Gets the storage_id of this DeletePersistentStorageRequest.
 
         WKS存储ID。
 
@@ -53,7 +53,7 @@ class DeletePersistentStorageRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this DeletePersistentStorageRequest.
+        r"""Sets the storage_id of this DeletePersistentStorageRequest.
 
         WKS存储ID。
 

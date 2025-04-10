@@ -23,7 +23,7 @@ class DataType:
     }
 
     def __init__(self):
-        """DataType
+        r"""DataType
 
         The model defined in huaweicloud sdk
 

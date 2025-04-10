@@ -31,7 +31,7 @@ class ModifyJobResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """ModifyJobResp
+        r"""ModifyJobResp
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ModifyJobResp:
 
     @property
     def id(self):
-        """Gets the id of this ModifyJobResp.
+        r"""Gets the id of this ModifyJobResp.
 
         任务ID
 
@@ -73,7 +73,7 @@ class ModifyJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyJobResp.
+        r"""Sets the id of this ModifyJobResp.
 
         任务ID
 
@@ -84,7 +84,7 @@ class ModifyJobResp:
 
     @property
     def status(self):
-        """Gets the status of this ModifyJobResp.
+        r"""Gets the status of this ModifyJobResp.
 
         状态。 - success 成功 - failed 失败
 
@@ -95,7 +95,7 @@ class ModifyJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModifyJobResp.
+        r"""Sets the status of this ModifyJobResp.
 
         状态。 - success 成功 - failed 失败
 
@@ -106,7 +106,7 @@ class ModifyJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ModifyJobResp.
+        r"""Gets the error_code of this ModifyJobResp.
 
         错误码
 
@@ -117,7 +117,7 @@ class ModifyJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ModifyJobResp.
+        r"""Sets the error_code of this ModifyJobResp.
 
         错误码
 
@@ -128,7 +128,7 @@ class ModifyJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ModifyJobResp.
+        r"""Gets the error_msg of this ModifyJobResp.
 
         错误信息
 
@@ -139,7 +139,7 @@ class ModifyJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ModifyJobResp.
+        r"""Sets the error_msg of this ModifyJobResp.
 
         错误信息
 

@@ -37,7 +37,7 @@ class FsFileCount:
     }
 
     def __init__(self, dir=None, regular=None, pipe=None, char=None, block=None, socket=None, symlink=None):
-        """FsFileCount
+        r"""FsFileCount
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FsFileCount:
 
     @property
     def dir(self):
-        """Gets the dir of this FsFileCount.
+        r"""Gets the dir of this FsFileCount.
 
         目录数目
 
@@ -96,7 +96,7 @@ class FsFileCount:
 
     @dir.setter
     def dir(self, dir):
-        """Sets the dir of this FsFileCount.
+        r"""Sets the dir of this FsFileCount.
 
         目录数目
 
@@ -107,7 +107,7 @@ class FsFileCount:
 
     @property
     def regular(self):
-        """Gets the regular of this FsFileCount.
+        r"""Gets the regular of this FsFileCount.
 
         普通文件数目
 
@@ -118,7 +118,7 @@ class FsFileCount:
 
     @regular.setter
     def regular(self, regular):
-        """Sets the regular of this FsFileCount.
+        r"""Sets the regular of this FsFileCount.
 
         普通文件数目
 
@@ -129,7 +129,7 @@ class FsFileCount:
 
     @property
     def pipe(self):
-        """Gets the pipe of this FsFileCount.
+        r"""Gets the pipe of this FsFileCount.
 
         管道文件数目
 
@@ -140,7 +140,7 @@ class FsFileCount:
 
     @pipe.setter
     def pipe(self, pipe):
-        """Sets the pipe of this FsFileCount.
+        r"""Sets the pipe of this FsFileCount.
 
         管道文件数目
 
@@ -151,7 +151,7 @@ class FsFileCount:
 
     @property
     def char(self):
-        """Gets the char of this FsFileCount.
+        r"""Gets the char of this FsFileCount.
 
         字符设备数目
 
@@ -162,7 +162,7 @@ class FsFileCount:
 
     @char.setter
     def char(self, char):
-        """Sets the char of this FsFileCount.
+        r"""Sets the char of this FsFileCount.
 
         字符设备数目
 
@@ -173,7 +173,7 @@ class FsFileCount:
 
     @property
     def block(self):
-        """Gets the block of this FsFileCount.
+        r"""Gets the block of this FsFileCount.
 
         块设备数目
 
@@ -184,7 +184,7 @@ class FsFileCount:
 
     @block.setter
     def block(self, block):
-        """Sets the block of this FsFileCount.
+        r"""Sets the block of this FsFileCount.
 
         块设备数目
 
@@ -195,7 +195,7 @@ class FsFileCount:
 
     @property
     def socket(self):
-        """Gets the socket of this FsFileCount.
+        r"""Gets the socket of this FsFileCount.
 
         套接字数目
 
@@ -206,7 +206,7 @@ class FsFileCount:
 
     @socket.setter
     def socket(self, socket):
-        """Sets the socket of this FsFileCount.
+        r"""Sets the socket of this FsFileCount.
 
         套接字数目
 
@@ -217,7 +217,7 @@ class FsFileCount:
 
     @property
     def symlink(self):
-        """Gets the symlink of this FsFileCount.
+        r"""Gets the symlink of this FsFileCount.
 
         符号链接数目
 
@@ -228,7 +228,7 @@ class FsFileCount:
 
     @symlink.setter
     def symlink(self, symlink):
-        """Sets the symlink of this FsFileCount.
+        r"""Sets the symlink of this FsFileCount.
 
         符号链接数目
 

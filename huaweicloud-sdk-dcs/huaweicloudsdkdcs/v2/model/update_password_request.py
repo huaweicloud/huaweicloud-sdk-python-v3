@@ -27,7 +27,7 @@ class UpdatePasswordRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdatePasswordRequest
+        r"""UpdatePasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePasswordRequest.
+        r"""Gets the instance_id of this UpdatePasswordRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdatePasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePasswordRequest.
+        r"""Sets the instance_id of this UpdatePasswordRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdatePasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePasswordRequest.
+        r"""Gets the body of this UpdatePasswordRequest.
 
         :return: The body of this UpdatePasswordRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.ModifyInstancePasswordBody`
@@ -80,7 +80,7 @@ class UpdatePasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePasswordRequest.
+        r"""Sets the body of this UpdatePasswordRequest.
 
         :param body: The body of this UpdatePasswordRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.ModifyInstancePasswordBody`

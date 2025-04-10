@@ -27,7 +27,7 @@ class ModifyInstanceConfig:
     }
 
     def __init__(self, name=None, value=None):
-        """ModifyInstanceConfig
+        r"""ModifyInstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ModifyInstanceConfig:
 
     @property
     def name(self):
-        """Gets the name of this ModifyInstanceConfig.
+        r"""Gets the name of this ModifyInstanceConfig.
 
         修改的配置名称。
 
@@ -61,7 +61,7 @@ class ModifyInstanceConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyInstanceConfig.
+        r"""Sets the name of this ModifyInstanceConfig.
 
         修改的配置名称。
 
@@ -72,7 +72,7 @@ class ModifyInstanceConfig:
 
     @property
     def value(self):
-        """Gets the value of this ModifyInstanceConfig.
+        r"""Gets the value of this ModifyInstanceConfig.
 
         配置的修改值。
 
@@ -83,7 +83,7 @@ class ModifyInstanceConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ModifyInstanceConfig.
+        r"""Sets the value of this ModifyInstanceConfig.
 
         配置的修改值。
 

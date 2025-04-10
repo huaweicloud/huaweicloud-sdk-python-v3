@@ -60,7 +60,7 @@ class ShowApplicationV3Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, region_id=None, region_name=None, project_id=None, project_name=None, icon=None, pipeline_creation_result=None, repository_creation_result=None, environment_creation_result=None, template_types=None, template_deployment=None, deploy_type=None, creator_name=None, created_at=None, updated_at=None, version=None):
-        """ShowApplicationV3Response
+        r"""ShowApplicationV3Response
 
         The model defined in huaweicloud sdk
 
@@ -158,7 +158,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApplicationV3Response.
+        r"""Gets the id of this ShowApplicationV3Response.
 
         应用id
 
@@ -169,7 +169,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApplicationV3Response.
+        r"""Sets the id of this ShowApplicationV3Response.
 
         应用id
 
@@ -180,7 +180,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowApplicationV3Response.
+        r"""Gets the name of this ShowApplicationV3Response.
 
         应用名称
 
@@ -191,7 +191,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowApplicationV3Response.
+        r"""Sets the name of this ShowApplicationV3Response.
 
         应用名称
 
@@ -202,7 +202,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowApplicationV3Response.
+        r"""Gets the description of this ShowApplicationV3Response.
 
         应用描述
 
@@ -213,7 +213,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowApplicationV3Response.
+        r"""Sets the description of this ShowApplicationV3Response.
 
         应用描述
 
@@ -224,7 +224,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowApplicationV3Response.
+        r"""Gets the region_id of this ShowApplicationV3Response.
 
         区域id
 
@@ -235,7 +235,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowApplicationV3Response.
+        r"""Sets the region_id of this ShowApplicationV3Response.
 
         区域id
 
@@ -246,7 +246,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def region_name(self):
-        """Gets the region_name of this ShowApplicationV3Response.
+        r"""Gets the region_name of this ShowApplicationV3Response.
 
         区域名称
 
@@ -257,7 +257,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ShowApplicationV3Response.
+        r"""Sets the region_name of this ShowApplicationV3Response.
 
         区域名称
 
@@ -268,7 +268,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowApplicationV3Response.
+        r"""Gets the project_id of this ShowApplicationV3Response.
 
         所属项目id
 
@@ -279,7 +279,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowApplicationV3Response.
+        r"""Sets the project_id of this ShowApplicationV3Response.
 
         所属项目id
 
@@ -290,7 +290,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowApplicationV3Response.
+        r"""Gets the project_name of this ShowApplicationV3Response.
 
         项目名称
 
@@ -301,7 +301,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowApplicationV3Response.
+        r"""Sets the project_name of this ShowApplicationV3Response.
 
         项目名称
 
@@ -312,7 +312,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def icon(self):
-        """Gets the icon of this ShowApplicationV3Response.
+        r"""Gets the icon of this ShowApplicationV3Response.
 
         应用图标
 
@@ -323,7 +323,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ShowApplicationV3Response.
+        r"""Sets the icon of this ShowApplicationV3Response.
 
         应用图标
 
@@ -334,7 +334,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def pipeline_creation_result(self):
-        """Gets the pipeline_creation_result of this ShowApplicationV3Response.
+        r"""Gets the pipeline_creation_result of this ShowApplicationV3Response.
 
         流水线列表
 
@@ -345,7 +345,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @pipeline_creation_result.setter
     def pipeline_creation_result(self, pipeline_creation_result):
-        """Sets the pipeline_creation_result of this ShowApplicationV3Response.
+        r"""Sets the pipeline_creation_result of this ShowApplicationV3Response.
 
         流水线列表
 
@@ -356,7 +356,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def repository_creation_result(self):
-        """Gets the repository_creation_result of this ShowApplicationV3Response.
+        r"""Gets the repository_creation_result of this ShowApplicationV3Response.
 
         :return: The repository_creation_result of this ShowApplicationV3Response.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`
@@ -365,7 +365,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @repository_creation_result.setter
     def repository_creation_result(self, repository_creation_result):
-        """Sets the repository_creation_result of this ShowApplicationV3Response.
+        r"""Sets the repository_creation_result of this ShowApplicationV3Response.
 
         :param repository_creation_result: The repository_creation_result of this ShowApplicationV3Response.
         :type repository_creation_result: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`
@@ -374,7 +374,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def environment_creation_result(self):
-        """Gets the environment_creation_result of this ShowApplicationV3Response.
+        r"""Gets the environment_creation_result of this ShowApplicationV3Response.
 
         环境信息
 
@@ -385,7 +385,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @environment_creation_result.setter
     def environment_creation_result(self, environment_creation_result):
-        """Sets the environment_creation_result of this ShowApplicationV3Response.
+        r"""Sets the environment_creation_result of this ShowApplicationV3Response.
 
         环境信息
 
@@ -396,7 +396,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def template_types(self):
-        """Gets the template_types of this ShowApplicationV3Response.
+        r"""Gets the template_types of this ShowApplicationV3Response.
 
         模板类型
 
@@ -407,7 +407,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @template_types.setter
     def template_types(self, template_types):
-        """Sets the template_types of this ShowApplicationV3Response.
+        r"""Sets the template_types of this ShowApplicationV3Response.
 
         模板类型
 
@@ -418,7 +418,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def template_deployment(self):
-        """Gets the template_deployment of this ShowApplicationV3Response.
+        r"""Gets the template_deployment of this ShowApplicationV3Response.
 
         模板部署信息
 
@@ -429,7 +429,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @template_deployment.setter
     def template_deployment(self, template_deployment):
-        """Sets the template_deployment of this ShowApplicationV3Response.
+        r"""Sets the template_deployment of this ShowApplicationV3Response.
 
         模板部署信息
 
@@ -440,7 +440,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this ShowApplicationV3Response.
+        r"""Gets the deploy_type of this ShowApplicationV3Response.
 
         部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署,none不支持部署
 
@@ -451,7 +451,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this ShowApplicationV3Response.
+        r"""Sets the deploy_type of this ShowApplicationV3Response.
 
         部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署,none不支持部署
 
@@ -462,7 +462,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowApplicationV3Response.
+        r"""Gets the creator_name of this ShowApplicationV3Response.
 
         创建者名称
 
@@ -473,7 +473,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowApplicationV3Response.
+        r"""Sets the creator_name of this ShowApplicationV3Response.
 
         创建者名称
 
@@ -484,7 +484,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowApplicationV3Response.
+        r"""Gets the created_at of this ShowApplicationV3Response.
 
         创建时间
 
@@ -495,7 +495,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowApplicationV3Response.
+        r"""Sets the created_at of this ShowApplicationV3Response.
 
         创建时间
 
@@ -506,7 +506,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowApplicationV3Response.
+        r"""Gets the updated_at of this ShowApplicationV3Response.
 
         更新时间
 
@@ -517,7 +517,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowApplicationV3Response.
+        r"""Sets the updated_at of this ShowApplicationV3Response.
 
         更新时间
 
@@ -528,7 +528,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowApplicationV3Response.
+        r"""Gets the version of this ShowApplicationV3Response.
 
         应用版本号
 
@@ -539,7 +539,7 @@ class ShowApplicationV3Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowApplicationV3Response.
+        r"""Sets the version of this ShowApplicationV3Response.
 
         应用版本号
 

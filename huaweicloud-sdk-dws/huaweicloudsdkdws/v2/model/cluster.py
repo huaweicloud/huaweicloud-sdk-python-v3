@@ -25,7 +25,7 @@ class Cluster:
     }
 
     def __init__(self, id=None):
-        """Cluster
+        r"""Cluster
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Cluster:
 
     @property
     def id(self):
-        """Gets the id of this Cluster.
+        r"""Gets the id of this Cluster.
 
         集群ID
 
@@ -53,7 +53,7 @@ class Cluster:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Cluster.
+        r"""Sets the id of this Cluster.
 
         集群ID
 

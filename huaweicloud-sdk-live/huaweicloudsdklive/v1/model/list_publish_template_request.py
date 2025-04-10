@@ -25,7 +25,7 @@ class ListPublishTemplateRequest:
     }
 
     def __init__(self, domain=None):
-        """ListPublishTemplateRequest
+        r"""ListPublishTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPublishTemplateRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListPublishTemplateRequest.
+        r"""Gets the domain of this ListPublishTemplateRequest.
 
         推流域名
 
@@ -53,7 +53,7 @@ class ListPublishTemplateRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListPublishTemplateRequest.
+        r"""Sets the domain of this ListPublishTemplateRequest.
 
         推流域名
 

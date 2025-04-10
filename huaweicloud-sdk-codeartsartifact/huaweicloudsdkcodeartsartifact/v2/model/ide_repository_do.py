@@ -41,7 +41,7 @@ class IDERepositoryDO:
     }
 
     def __init__(self, repository_name=None, format=None, description=None, release=None, snapshot=None, includes_pattern=None, share_right=None, project_id=None, type=None):
-        """IDERepositoryDO
+        r"""IDERepositoryDO
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class IDERepositoryDO:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this IDERepositoryDO.
+        r"""Gets the repository_name of this IDERepositoryDO.
 
         仓库名称
 
@@ -110,7 +110,7 @@ class IDERepositoryDO:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this IDERepositoryDO.
+        r"""Sets the repository_name of this IDERepositoryDO.
 
         仓库名称
 
@@ -121,7 +121,7 @@ class IDERepositoryDO:
 
     @property
     def format(self):
-        """Gets the format of this IDERepositoryDO.
+        r"""Gets the format of this IDERepositoryDO.
 
         仓库类型
 
@@ -132,7 +132,7 @@ class IDERepositoryDO:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this IDERepositoryDO.
+        r"""Sets the format of this IDERepositoryDO.
 
         仓库类型
 
@@ -143,7 +143,7 @@ class IDERepositoryDO:
 
     @property
     def description(self):
-        """Gets the description of this IDERepositoryDO.
+        r"""Gets the description of this IDERepositoryDO.
 
         仓库描述
 
@@ -154,7 +154,7 @@ class IDERepositoryDO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IDERepositoryDO.
+        r"""Sets the description of this IDERepositoryDO.
 
         仓库描述
 
@@ -165,7 +165,7 @@ class IDERepositoryDO:
 
     @property
     def release(self):
-        """Gets the release of this IDERepositoryDO.
+        r"""Gets the release of this IDERepositoryDO.
 
         release仓库名称
 
@@ -176,7 +176,7 @@ class IDERepositoryDO:
 
     @release.setter
     def release(self, release):
-        """Sets the release of this IDERepositoryDO.
+        r"""Sets the release of this IDERepositoryDO.
 
         release仓库名称
 
@@ -187,7 +187,7 @@ class IDERepositoryDO:
 
     @property
     def snapshot(self):
-        """Gets the snapshot of this IDERepositoryDO.
+        r"""Gets the snapshot of this IDERepositoryDO.
 
         snapshot仓库名称
 
@@ -198,7 +198,7 @@ class IDERepositoryDO:
 
     @snapshot.setter
     def snapshot(self, snapshot):
-        """Sets the snapshot of this IDERepositoryDO.
+        r"""Sets the snapshot of this IDERepositoryDO.
 
         snapshot仓库名称
 
@@ -209,7 +209,7 @@ class IDERepositoryDO:
 
     @property
     def includes_pattern(self):
-        """Gets the includes_pattern of this IDERepositoryDO.
+        r"""Gets the includes_pattern of this IDERepositoryDO.
 
         路径
 
@@ -220,7 +220,7 @@ class IDERepositoryDO:
 
     @includes_pattern.setter
     def includes_pattern(self, includes_pattern):
-        """Sets the includes_pattern of this IDERepositoryDO.
+        r"""Sets the includes_pattern of this IDERepositoryDO.
 
         路径
 
@@ -231,7 +231,7 @@ class IDERepositoryDO:
 
     @property
     def share_right(self):
-        """Gets the share_right of this IDERepositoryDO.
+        r"""Gets the share_right of this IDERepositoryDO.
 
         共享权限级别
 
@@ -242,7 +242,7 @@ class IDERepositoryDO:
 
     @share_right.setter
     def share_right(self, share_right):
-        """Sets the share_right of this IDERepositoryDO.
+        r"""Sets the share_right of this IDERepositoryDO.
 
         共享权限级别
 
@@ -253,7 +253,7 @@ class IDERepositoryDO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IDERepositoryDO.
+        r"""Gets the project_id of this IDERepositoryDO.
 
         项目ID
 
@@ -264,7 +264,7 @@ class IDERepositoryDO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IDERepositoryDO.
+        r"""Sets the project_id of this IDERepositoryDO.
 
         项目ID
 
@@ -275,7 +275,7 @@ class IDERepositoryDO:
 
     @property
     def type(self):
-        """Gets the type of this IDERepositoryDO.
+        r"""Gets the type of this IDERepositoryDO.
 
         仓库类别，本地仓或聚合仓
 
@@ -286,7 +286,7 @@ class IDERepositoryDO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IDERepositoryDO.
+        r"""Sets the type of this IDERepositoryDO.
 
         仓库类别，本地仓或聚合仓
 

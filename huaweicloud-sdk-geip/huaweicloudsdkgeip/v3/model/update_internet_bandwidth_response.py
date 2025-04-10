@@ -30,7 +30,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, internet_bandwidth=None, x_request_id=None):
-        """UpdateInternetBandwidthResponse
+        r"""UpdateInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateInternetBandwidthResponse.
+        r"""Gets the request_id of this UpdateInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateInternetBandwidthResponse.
+        r"""Sets the request_id of this UpdateInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
 
     @property
     def internet_bandwidth(self):
-        """Gets the internet_bandwidth of this UpdateInternetBandwidthResponse.
+        r"""Gets the internet_bandwidth of this UpdateInternetBandwidthResponse.
 
         :return: The internet_bandwidth of this UpdateInternetBandwidthResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.UpdateInternetBandwidth`
@@ -89,7 +89,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
 
     @internet_bandwidth.setter
     def internet_bandwidth(self, internet_bandwidth):
-        """Sets the internet_bandwidth of this UpdateInternetBandwidthResponse.
+        r"""Sets the internet_bandwidth of this UpdateInternetBandwidthResponse.
 
         :param internet_bandwidth: The internet_bandwidth of this UpdateInternetBandwidthResponse.
         :type internet_bandwidth: :class:`huaweicloudsdkgeip.v3.UpdateInternetBandwidth`
@@ -98,7 +98,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateInternetBandwidthResponse.
+        r"""Gets the x_request_id of this UpdateInternetBandwidthResponse.
 
         :return: The x_request_id of this UpdateInternetBandwidthResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateInternetBandwidthResponse.
+        r"""Sets the x_request_id of this UpdateInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this UpdateInternetBandwidthResponse.
         :type x_request_id: str

@@ -45,7 +45,7 @@ class UpdateWatermarkTemplateReq:
     }
 
     def __init__(self, id=None, name=None, dx=None, dy=None, position=None, width=None, height=None, watermark_type=None, image_process=None, timeline_start=None, timeline_duration=None):
-        """UpdateWatermarkTemplateReq
+        r"""UpdateWatermarkTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def id(self):
-        """Gets the id of this UpdateWatermarkTemplateReq.
+        r"""Gets the id of this UpdateWatermarkTemplateReq.
 
         水印模板配置id<br/>
 
@@ -122,7 +122,7 @@ class UpdateWatermarkTemplateReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateWatermarkTemplateReq.
+        r"""Sets the id of this UpdateWatermarkTemplateReq.
 
         水印模板配置id<br/>
 
@@ -133,7 +133,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateWatermarkTemplateReq.
+        r"""Gets the name of this UpdateWatermarkTemplateReq.
 
         水印模板名称<br/>
 
@@ -144,7 +144,7 @@ class UpdateWatermarkTemplateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateWatermarkTemplateReq.
+        r"""Sets the name of this UpdateWatermarkTemplateReq.
 
         水印模板名称<br/>
 
@@ -155,7 +155,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def dx(self):
-        """Gets the dx of this UpdateWatermarkTemplateReq.
+        r"""Gets the dx of this UpdateWatermarkTemplateReq.
 
         水印图片相对输出视频的水平偏移量，默认值是0<br/>
 
@@ -166,7 +166,7 @@ class UpdateWatermarkTemplateReq:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this UpdateWatermarkTemplateReq.
+        r"""Sets the dx of this UpdateWatermarkTemplateReq.
 
         水印图片相对输出视频的水平偏移量，默认值是0<br/>
 
@@ -177,7 +177,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def dy(self):
-        """Gets the dy of this UpdateWatermarkTemplateReq.
+        r"""Gets the dy of this UpdateWatermarkTemplateReq.
 
         水印图片相对输出视频的垂直偏移量，默认值是0<br/>
 
@@ -188,7 +188,7 @@ class UpdateWatermarkTemplateReq:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this UpdateWatermarkTemplateReq.
+        r"""Sets the dy of this UpdateWatermarkTemplateReq.
 
         水印图片相对输出视频的垂直偏移量，默认值是0<br/>
 
@@ -199,7 +199,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def position(self):
-        """Gets the position of this UpdateWatermarkTemplateReq.
+        r"""Gets the position of this UpdateWatermarkTemplateReq.
 
         水印的位置<br/>
 
@@ -210,7 +210,7 @@ class UpdateWatermarkTemplateReq:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this UpdateWatermarkTemplateReq.
+        r"""Sets the position of this UpdateWatermarkTemplateReq.
 
         水印的位置<br/>
 
@@ -221,7 +221,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def width(self):
-        """Gets the width of this UpdateWatermarkTemplateReq.
+        r"""Gets the width of this UpdateWatermarkTemplateReq.
 
         水印图片宽<br/>
 
@@ -232,7 +232,7 @@ class UpdateWatermarkTemplateReq:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this UpdateWatermarkTemplateReq.
+        r"""Sets the width of this UpdateWatermarkTemplateReq.
 
         水印图片宽<br/>
 
@@ -243,7 +243,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def height(self):
-        """Gets the height of this UpdateWatermarkTemplateReq.
+        r"""Gets the height of this UpdateWatermarkTemplateReq.
 
         水印图片高<br/>
 
@@ -254,7 +254,7 @@ class UpdateWatermarkTemplateReq:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this UpdateWatermarkTemplateReq.
+        r"""Sets the height of this UpdateWatermarkTemplateReq.
 
         水印图片高<br/>
 
@@ -265,7 +265,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def watermark_type(self):
-        """Gets the watermark_type of this UpdateWatermarkTemplateReq.
+        r"""Gets the watermark_type of this UpdateWatermarkTemplateReq.
 
         水印类型，当前只支持Image（图片水印）<br/>
 
@@ -276,7 +276,7 @@ class UpdateWatermarkTemplateReq:
 
     @watermark_type.setter
     def watermark_type(self, watermark_type):
-        """Sets the watermark_type of this UpdateWatermarkTemplateReq.
+        r"""Sets the watermark_type of this UpdateWatermarkTemplateReq.
 
         水印类型，当前只支持Image（图片水印）<br/>
 
@@ -287,7 +287,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def image_process(self):
-        """Gets the image_process of this UpdateWatermarkTemplateReq.
+        r"""Gets the image_process of this UpdateWatermarkTemplateReq.
 
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
@@ -298,7 +298,7 @@ class UpdateWatermarkTemplateReq:
 
     @image_process.setter
     def image_process(self, image_process):
-        """Sets the image_process of this UpdateWatermarkTemplateReq.
+        r"""Sets the image_process of this UpdateWatermarkTemplateReq.
 
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
@@ -309,7 +309,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def timeline_start(self):
-        """Gets the timeline_start of this UpdateWatermarkTemplateReq.
+        r"""Gets the timeline_start of this UpdateWatermarkTemplateReq.
 
         水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
@@ -320,7 +320,7 @@ class UpdateWatermarkTemplateReq:
 
     @timeline_start.setter
     def timeline_start(self, timeline_start):
-        """Sets the timeline_start of this UpdateWatermarkTemplateReq.
+        r"""Sets the timeline_start of this UpdateWatermarkTemplateReq.
 
         水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
@@ -331,7 +331,7 @@ class UpdateWatermarkTemplateReq:
 
     @property
     def timeline_duration(self):
-        """Gets the timeline_duration of this UpdateWatermarkTemplateReq.
+        r"""Gets the timeline_duration of this UpdateWatermarkTemplateReq.
 
         水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 
@@ -342,7 +342,7 @@ class UpdateWatermarkTemplateReq:
 
     @timeline_duration.setter
     def timeline_duration(self, timeline_duration):
-        """Sets the timeline_duration of this UpdateWatermarkTemplateReq.
+        r"""Sets the timeline_duration of this UpdateWatermarkTemplateReq.
 
         水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 

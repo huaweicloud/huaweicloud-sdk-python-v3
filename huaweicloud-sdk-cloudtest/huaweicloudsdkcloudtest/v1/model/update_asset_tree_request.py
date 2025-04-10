@@ -27,7 +27,7 @@ class UpdateAssetTreeRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UpdateAssetTreeRequest
+        r"""UpdateAssetTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAssetTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAssetTreeRequest.
+        r"""Gets the project_id of this UpdateAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class UpdateAssetTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAssetTreeRequest.
+        r"""Sets the project_id of this UpdateAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class UpdateAssetTreeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAssetTreeRequest.
+        r"""Gets the body of this UpdateAssetTreeRequest.
 
         :return: The body of this UpdateAssetTreeRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestUpdateAssetTreeParam`
@@ -80,7 +80,7 @@ class UpdateAssetTreeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAssetTreeRequest.
+        r"""Sets the body of this UpdateAssetTreeRequest.
 
         :param body: The body of this UpdateAssetTreeRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestUpdateAssetTreeParam`

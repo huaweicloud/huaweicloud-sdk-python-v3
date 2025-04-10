@@ -47,7 +47,7 @@ class CouponQuotaV2:
     }
 
     def __init__(self, quota_id=None, quota_type=None, create_time=None, last_update_time=None, quota_value=None, quota_status=None, balance=None, measure_id=None, currency=None, effective_time=None, expire_time=None, limit_infos=None):
-        """CouponQuotaV2
+        r"""CouponQuotaV2
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CouponQuotaV2:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this CouponQuotaV2.
+        r"""Gets the quota_id of this CouponQuotaV2.
 
         优惠券额度ID。
 
@@ -131,7 +131,7 @@ class CouponQuotaV2:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this CouponQuotaV2.
+        r"""Sets the quota_id of this CouponQuotaV2.
 
         优惠券额度ID。
 
@@ -142,7 +142,7 @@ class CouponQuotaV2:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this CouponQuotaV2.
+        r"""Gets the quota_type of this CouponQuotaV2.
 
         优惠券额度的类型： 0：代金券额度1：现金券额度
 
@@ -153,7 +153,7 @@ class CouponQuotaV2:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this CouponQuotaV2.
+        r"""Sets the quota_type of this CouponQuotaV2.
 
         优惠券额度的类型： 0：代金券额度1：现金券额度
 
@@ -164,7 +164,7 @@ class CouponQuotaV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CouponQuotaV2.
+        r"""Gets the create_time of this CouponQuotaV2.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -175,7 +175,7 @@ class CouponQuotaV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CouponQuotaV2.
+        r"""Sets the create_time of this CouponQuotaV2.
 
         创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -186,7 +186,7 @@ class CouponQuotaV2:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this CouponQuotaV2.
+        r"""Gets the last_update_time of this CouponQuotaV2.
 
         最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -197,7 +197,7 @@ class CouponQuotaV2:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this CouponQuotaV2.
+        r"""Sets the last_update_time of this CouponQuotaV2.
 
         最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -208,7 +208,7 @@ class CouponQuotaV2:
 
     @property
     def quota_value(self):
-        """Gets the quota_value of this CouponQuotaV2.
+        r"""Gets the quota_value of this CouponQuotaV2.
 
         优惠券额度的值，精确到小数点后2位。
 
@@ -219,7 +219,7 @@ class CouponQuotaV2:
 
     @quota_value.setter
     def quota_value(self, quota_value):
-        """Sets the quota_value of this CouponQuotaV2.
+        r"""Sets the quota_value of this CouponQuotaV2.
 
         优惠券额度的值，精确到小数点后2位。
 
@@ -230,7 +230,7 @@ class CouponQuotaV2:
 
     @property
     def quota_status(self):
-        """Gets the quota_status of this CouponQuotaV2.
+        r"""Gets the quota_status of this CouponQuotaV2.
 
         优惠券额度的状态： 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
@@ -241,7 +241,7 @@ class CouponQuotaV2:
 
     @quota_status.setter
     def quota_status(self, quota_status):
-        """Sets the quota_status of this CouponQuotaV2.
+        r"""Sets the quota_status of this CouponQuotaV2.
 
         优惠券额度的状态： 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
@@ -252,7 +252,7 @@ class CouponQuotaV2:
 
     @property
     def balance(self):
-        """Gets the balance of this CouponQuotaV2.
+        r"""Gets the balance of this CouponQuotaV2.
 
         剩余的优惠券额度，精确到小数点后2位。
 
@@ -263,7 +263,7 @@ class CouponQuotaV2:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this CouponQuotaV2.
+        r"""Sets the balance of this CouponQuotaV2.
 
         剩余的优惠券额度，精确到小数点后2位。
 
@@ -274,7 +274,7 @@ class CouponQuotaV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this CouponQuotaV2.
+        r"""Gets the measure_id of this CouponQuotaV2.
 
         面额单位。 1：元。
 
@@ -285,7 +285,7 @@ class CouponQuotaV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this CouponQuotaV2.
+        r"""Sets the measure_id of this CouponQuotaV2.
 
         面额单位。 1：元。
 
@@ -296,7 +296,7 @@ class CouponQuotaV2:
 
     @property
     def currency(self):
-        """Gets the currency of this CouponQuotaV2.
+        r"""Gets the currency of this CouponQuotaV2.
 
         币种。 CNY：人民币
 
@@ -307,7 +307,7 @@ class CouponQuotaV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this CouponQuotaV2.
+        r"""Sets the currency of this CouponQuotaV2.
 
         币种。 CNY：人民币
 
@@ -318,7 +318,7 @@ class CouponQuotaV2:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this CouponQuotaV2.
+        r"""Gets the effective_time of this CouponQuotaV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -329,7 +329,7 @@ class CouponQuotaV2:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this CouponQuotaV2.
+        r"""Sets the effective_time of this CouponQuotaV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -340,7 +340,7 @@ class CouponQuotaV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CouponQuotaV2.
+        r"""Gets the expire_time of this CouponQuotaV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -351,7 +351,7 @@ class CouponQuotaV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CouponQuotaV2.
+        r"""Sets the expire_time of this CouponQuotaV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -362,7 +362,7 @@ class CouponQuotaV2:
 
     @property
     def limit_infos(self):
-        """Gets the limit_infos of this CouponQuotaV2.
+        r"""Gets the limit_infos of this CouponQuotaV2.
 
         优惠券额度上的限制属性，具体参见表2。
 
@@ -373,7 +373,7 @@ class CouponQuotaV2:
 
     @limit_infos.setter
     def limit_infos(self, limit_infos):
-        """Sets the limit_infos of this CouponQuotaV2.
+        r"""Sets the limit_infos of this CouponQuotaV2.
 
         优惠券额度上的限制属性，具体参见表2。
 

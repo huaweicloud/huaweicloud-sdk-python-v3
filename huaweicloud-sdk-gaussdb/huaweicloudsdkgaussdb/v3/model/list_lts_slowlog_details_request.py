@@ -29,7 +29,7 @@ class ListLtsSlowlogDetailsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ListLtsSlowlogDetailsRequest
+        r"""ListLtsSlowlogDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListLtsSlowlogDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListLtsSlowlogDetailsRequest.
+        r"""Gets the x_language of this ListLtsSlowlogDetailsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ListLtsSlowlogDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListLtsSlowlogDetailsRequest.
+        r"""Sets the x_language of this ListLtsSlowlogDetailsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ListLtsSlowlogDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLtsSlowlogDetailsRequest.
+        r"""Gets the instance_id of this ListLtsSlowlogDetailsRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ListLtsSlowlogDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLtsSlowlogDetailsRequest.
+        r"""Sets the instance_id of this ListLtsSlowlogDetailsRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ListLtsSlowlogDetailsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLtsSlowlogDetailsRequest.
+        r"""Gets the body of this ListLtsSlowlogDetailsRequest.
 
         :return: The body of this ListLtsSlowlogDetailsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.LtsLogSlowQueryRequest`
@@ -109,7 +109,7 @@ class ListLtsSlowlogDetailsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLtsSlowlogDetailsRequest.
+        r"""Sets the body of this ListLtsSlowlogDetailsRequest.
 
         :param body: The body of this ListLtsSlowlogDetailsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.LtsLogSlowQueryRequest`

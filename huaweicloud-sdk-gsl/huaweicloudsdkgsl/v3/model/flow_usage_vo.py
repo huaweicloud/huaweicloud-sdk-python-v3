@@ -27,7 +27,7 @@ class FlowUsageVo:
     }
 
     def __init__(self, billing_cycle=None, flow_used=None):
-        """FlowUsageVo
+        r"""FlowUsageVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlowUsageVo:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this FlowUsageVo.
+        r"""Gets the billing_cycle of this FlowUsageVo.
 
         账期
 
@@ -61,7 +61,7 @@ class FlowUsageVo:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this FlowUsageVo.
+        r"""Sets the billing_cycle of this FlowUsageVo.
 
         账期
 
@@ -72,7 +72,7 @@ class FlowUsageVo:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this FlowUsageVo.
+        r"""Gets the flow_used of this FlowUsageVo.
 
         已用流量（MB）
 
@@ -83,7 +83,7 @@ class FlowUsageVo:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this FlowUsageVo.
+        r"""Sets the flow_used of this FlowUsageVo.
 
         已用流量（MB）
 

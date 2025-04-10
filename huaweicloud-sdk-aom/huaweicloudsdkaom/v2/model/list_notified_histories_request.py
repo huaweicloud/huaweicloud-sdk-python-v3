@@ -25,7 +25,7 @@ class ListNotifiedHistoriesRequest:
     }
 
     def __init__(self, event_sn=None):
-        """ListNotifiedHistoriesRequest
+        r"""ListNotifiedHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListNotifiedHistoriesRequest:
 
     @property
     def event_sn(self):
-        """Gets the event_sn of this ListNotifiedHistoriesRequest.
+        r"""Gets the event_sn of this ListNotifiedHistoriesRequest.
 
         告警流水号
 
@@ -54,7 +54,7 @@ class ListNotifiedHistoriesRequest:
 
     @event_sn.setter
     def event_sn(self, event_sn):
-        """Sets the event_sn of this ListNotifiedHistoriesRequest.
+        r"""Sets the event_sn of this ListNotifiedHistoriesRequest.
 
         告警流水号
 

@@ -29,7 +29,7 @@ class BackupPolicy:
     }
 
     def __init__(self, keep_days=None, start_time=None, period=None):
-        """BackupPolicy
+        r"""BackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BackupPolicy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this BackupPolicy.
+        r"""Gets the keep_days of this BackupPolicy.
 
         指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
 
@@ -67,7 +67,7 @@ class BackupPolicy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this BackupPolicy.
+        r"""Sets the keep_days of this BackupPolicy.
 
         指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
 
@@ -78,7 +78,7 @@ class BackupPolicy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BackupPolicy.
+        r"""Gets the start_time of this BackupPolicy.
 
         备份时间段。自动备份将在该时间段内触发。除关闭自动备份策略外，必选。  取值范围：格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00、15、30或45。
 
@@ -89,7 +89,7 @@ class BackupPolicy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BackupPolicy.
+        r"""Sets the start_time of this BackupPolicy.
 
         备份时间段。自动备份将在该时间段内触发。除关闭自动备份策略外，必选。  取值范围：格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00、15、30或45。
 
@@ -100,7 +100,7 @@ class BackupPolicy:
 
     @property
     def period(self):
-        """Gets the period of this BackupPolicy.
+        r"""Gets the period of this BackupPolicy.
 
         备份周期配置。自动备份将在每星期指定的天进行。除关闭自动备份策略外，必选。  取值范围：格式为逗号隔开的数字，数字代表星期。
 
@@ -111,7 +111,7 @@ class BackupPolicy:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this BackupPolicy.
+        r"""Sets the period of this BackupPolicy.
 
         备份周期配置。自动备份将在每星期指定的天进行。除关闭自动备份策略外，必选。  取值范围：格式为逗号隔开的数字，数字代表星期。
 

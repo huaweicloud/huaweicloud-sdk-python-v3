@@ -39,7 +39,7 @@ class QueryCaseResultInfo:
     }
 
     def __init__(self, uri=None, task_uri=None, task_id=None, release_dev=None, page_no=None, page_size=None, sort_field=None, sort_type=None):
-        """QueryCaseResultInfo
+        r"""QueryCaseResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryCaseResultInfo:
 
     @property
     def uri(self):
-        """Gets the uri of this QueryCaseResultInfo.
+        r"""Gets the uri of this QueryCaseResultInfo.
 
         结果URI
 
@@ -103,7 +103,7 @@ class QueryCaseResultInfo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this QueryCaseResultInfo.
+        r"""Sets the uri of this QueryCaseResultInfo.
 
         结果URI
 
@@ -114,7 +114,7 @@ class QueryCaseResultInfo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this QueryCaseResultInfo.
+        r"""Gets the task_uri of this QueryCaseResultInfo.
 
         测试任务URI
 
@@ -125,7 +125,7 @@ class QueryCaseResultInfo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this QueryCaseResultInfo.
+        r"""Sets the task_uri of this QueryCaseResultInfo.
 
         测试任务URI
 
@@ -136,7 +136,7 @@ class QueryCaseResultInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this QueryCaseResultInfo.
+        r"""Gets the task_id of this QueryCaseResultInfo.
 
         执行id
 
@@ -147,7 +147,7 @@ class QueryCaseResultInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this QueryCaseResultInfo.
+        r"""Sets the task_id of this QueryCaseResultInfo.
 
         执行id
 
@@ -158,7 +158,7 @@ class QueryCaseResultInfo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this QueryCaseResultInfo.
+        r"""Gets the release_dev of this QueryCaseResultInfo.
 
         版本号
 
@@ -169,7 +169,7 @@ class QueryCaseResultInfo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this QueryCaseResultInfo.
+        r"""Sets the release_dev of this QueryCaseResultInfo.
 
         版本号
 
@@ -180,7 +180,7 @@ class QueryCaseResultInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this QueryCaseResultInfo.
+        r"""Gets the page_no of this QueryCaseResultInfo.
 
         当前页数
 
@@ -191,7 +191,7 @@ class QueryCaseResultInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this QueryCaseResultInfo.
+        r"""Sets the page_no of this QueryCaseResultInfo.
 
         当前页数
 
@@ -202,7 +202,7 @@ class QueryCaseResultInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryCaseResultInfo.
+        r"""Gets the page_size of this QueryCaseResultInfo.
 
         每页条数
 
@@ -213,7 +213,7 @@ class QueryCaseResultInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryCaseResultInfo.
+        r"""Sets the page_size of this QueryCaseResultInfo.
 
         每页条数
 
@@ -224,7 +224,7 @@ class QueryCaseResultInfo:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this QueryCaseResultInfo.
+        r"""Gets the sort_field of this QueryCaseResultInfo.
 
         排序字段
 
@@ -235,7 +235,7 @@ class QueryCaseResultInfo:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this QueryCaseResultInfo.
+        r"""Sets the sort_field of this QueryCaseResultInfo.
 
         排序字段
 
@@ -246,7 +246,7 @@ class QueryCaseResultInfo:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this QueryCaseResultInfo.
+        r"""Gets the sort_type of this QueryCaseResultInfo.
 
         排序类型
 
@@ -257,7 +257,7 @@ class QueryCaseResultInfo:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this QueryCaseResultInfo.
+        r"""Sets the sort_type of this QueryCaseResultInfo.
 
         排序类型
 

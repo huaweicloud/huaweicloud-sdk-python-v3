@@ -37,7 +37,7 @@ class NodeCert:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, node_id=None, type=None, serial_num=None):
-        """NodeCert
+        r"""NodeCert
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NodeCert:
 
     @property
     def id(self):
-        """Gets the id of this NodeCert.
+        r"""Gets the id of this NodeCert.
 
         证书id
 
@@ -96,7 +96,7 @@ class NodeCert:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodeCert.
+        r"""Sets the id of this NodeCert.
 
         证书id
 
@@ -107,7 +107,7 @@ class NodeCert:
 
     @property
     def name(self):
-        """Gets the name of this NodeCert.
+        r"""Gets the name of this NodeCert.
 
         证书名称
 
@@ -118,7 +118,7 @@ class NodeCert:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeCert.
+        r"""Sets the name of this NodeCert.
 
         证书名称
 
@@ -129,7 +129,7 @@ class NodeCert:
 
     @property
     def description(self):
-        """Gets the description of this NodeCert.
+        r"""Gets the description of this NodeCert.
 
         证书的描述
 
@@ -140,7 +140,7 @@ class NodeCert:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NodeCert.
+        r"""Sets the description of this NodeCert.
 
         证书的描述
 
@@ -151,7 +151,7 @@ class NodeCert:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NodeCert.
+        r"""Gets the created_at of this NodeCert.
 
         证书的创建时间
 
@@ -162,7 +162,7 @@ class NodeCert:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NodeCert.
+        r"""Sets the created_at of this NodeCert.
 
         证书的创建时间
 
@@ -173,7 +173,7 @@ class NodeCert:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeCert.
+        r"""Gets the node_id of this NodeCert.
 
         节点id
 
@@ -184,7 +184,7 @@ class NodeCert:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeCert.
+        r"""Sets the node_id of this NodeCert.
 
         节点id
 
@@ -195,7 +195,7 @@ class NodeCert:
 
     @property
     def type(self):
-        """Gets the type of this NodeCert.
+        r"""Gets the type of this NodeCert.
 
         证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -206,7 +206,7 @@ class NodeCert:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NodeCert.
+        r"""Sets the type of this NodeCert.
 
         证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -217,7 +217,7 @@ class NodeCert:
 
     @property
     def serial_num(self):
-        """Gets the serial_num of this NodeCert.
+        r"""Gets the serial_num of this NodeCert.
 
         证书序列号
 
@@ -228,7 +228,7 @@ class NodeCert:
 
     @serial_num.setter
     def serial_num(self, serial_num):
-        """Sets the serial_num of this NodeCert.
+        r"""Sets the serial_num of this NodeCert.
 
         证书序列号
 

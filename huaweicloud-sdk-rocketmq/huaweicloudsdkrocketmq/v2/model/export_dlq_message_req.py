@@ -29,7 +29,7 @@ class ExportDlqMessageReq:
     }
 
     def __init__(self, topic=None, msg_id_list=None, uniq_key_list=None):
-        """ExportDlqMessageReq
+        r"""ExportDlqMessageReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExportDlqMessageReq:
 
     @property
     def topic(self):
-        """Gets the topic of this ExportDlqMessageReq.
+        r"""Gets the topic of this ExportDlqMessageReq.
 
         主题名称。
 
@@ -68,7 +68,7 @@ class ExportDlqMessageReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ExportDlqMessageReq.
+        r"""Sets the topic of this ExportDlqMessageReq.
 
         主题名称。
 
@@ -79,7 +79,7 @@ class ExportDlqMessageReq:
 
     @property
     def msg_id_list(self):
-        """Gets the msg_id_list of this ExportDlqMessageReq.
+        r"""Gets the msg_id_list of this ExportDlqMessageReq.
 
         消息ID列表。
 
@@ -90,7 +90,7 @@ class ExportDlqMessageReq:
 
     @msg_id_list.setter
     def msg_id_list(self, msg_id_list):
-        """Sets the msg_id_list of this ExportDlqMessageReq.
+        r"""Sets the msg_id_list of this ExportDlqMessageReq.
 
         消息ID列表。
 
@@ -101,7 +101,7 @@ class ExportDlqMessageReq:
 
     @property
     def uniq_key_list(self):
-        """Gets the uniq_key_list of this ExportDlqMessageReq.
+        r"""Gets the uniq_key_list of this ExportDlqMessageReq.
 
         唯一Key列表。
 
@@ -112,7 +112,7 @@ class ExportDlqMessageReq:
 
     @uniq_key_list.setter
     def uniq_key_list(self, uniq_key_list):
-        """Sets the uniq_key_list of this ExportDlqMessageReq.
+        r"""Sets the uniq_key_list of this ExportDlqMessageReq.
 
         唯一Key列表。
 

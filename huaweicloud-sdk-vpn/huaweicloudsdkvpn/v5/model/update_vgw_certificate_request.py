@@ -29,7 +29,7 @@ class UpdateVgwCertificateRequest:
     }
 
     def __init__(self, vgw_id=None, certificate_id=None, body=None):
-        """UpdateVgwCertificateRequest
+        r"""UpdateVgwCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVgwCertificateRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this UpdateVgwCertificateRequest.
+        r"""Gets the vgw_id of this UpdateVgwCertificateRequest.
 
         VPN网关实例ID
 
@@ -66,7 +66,7 @@ class UpdateVgwCertificateRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this UpdateVgwCertificateRequest.
+        r"""Sets the vgw_id of this UpdateVgwCertificateRequest.
 
         VPN网关实例ID
 
@@ -77,7 +77,7 @@ class UpdateVgwCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this UpdateVgwCertificateRequest.
+        r"""Gets the certificate_id of this UpdateVgwCertificateRequest.
 
         VPN网关证书ID
 
@@ -88,7 +88,7 @@ class UpdateVgwCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this UpdateVgwCertificateRequest.
+        r"""Sets the certificate_id of this UpdateVgwCertificateRequest.
 
         VPN网关证书ID
 
@@ -99,7 +99,7 @@ class UpdateVgwCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVgwCertificateRequest.
+        r"""Gets the body of this UpdateVgwCertificateRequest.
 
         :return: The body of this UpdateVgwCertificateRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnGatewayCertificateRequestBody`
@@ -108,7 +108,7 @@ class UpdateVgwCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVgwCertificateRequest.
+        r"""Sets the body of this UpdateVgwCertificateRequest.
 
         :param body: The body of this UpdateVgwCertificateRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVpnGatewayCertificateRequestBody`

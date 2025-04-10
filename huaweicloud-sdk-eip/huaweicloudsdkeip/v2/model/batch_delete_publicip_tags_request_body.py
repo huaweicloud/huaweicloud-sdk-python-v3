@@ -27,7 +27,7 @@ class BatchDeletePublicipTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchDeletePublicipTagsRequestBody
+        r"""BatchDeletePublicipTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeletePublicipTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeletePublicipTagsRequestBody.
+        r"""Gets the tags of this BatchDeletePublicipTagsRequestBody.
 
         标签列表
 
@@ -59,7 +59,7 @@ class BatchDeletePublicipTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeletePublicipTagsRequestBody.
+        r"""Sets the tags of this BatchDeletePublicipTagsRequestBody.
 
         标签列表
 
@@ -70,7 +70,7 @@ class BatchDeletePublicipTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeletePublicipTagsRequestBody.
+        r"""Gets the action of this BatchDeletePublicipTagsRequestBody.
 
         操作标识  delete：删除  action为delete时，value可选
 
@@ -81,7 +81,7 @@ class BatchDeletePublicipTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeletePublicipTagsRequestBody.
+        r"""Sets the action of this BatchDeletePublicipTagsRequestBody.
 
         操作标识  delete：删除  action为delete时，value可选
 

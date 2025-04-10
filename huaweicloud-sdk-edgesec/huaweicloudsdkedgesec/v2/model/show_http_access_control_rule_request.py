@@ -27,7 +27,7 @@ class ShowHttpAccessControlRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None):
-        """ShowHttpAccessControlRuleRequest
+        r"""ShowHttpAccessControlRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowHttpAccessControlRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpAccessControlRuleRequest.
+        r"""Gets the policy_id of this ShowHttpAccessControlRuleRequest.
 
         策略id
 
@@ -59,7 +59,7 @@ class ShowHttpAccessControlRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpAccessControlRuleRequest.
+        r"""Sets the policy_id of this ShowHttpAccessControlRuleRequest.
 
         策略id
 
@@ -70,7 +70,7 @@ class ShowHttpAccessControlRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowHttpAccessControlRuleRequest.
+        r"""Gets the rule_id of this ShowHttpAccessControlRuleRequest.
 
         防护规则id
 
@@ -81,7 +81,7 @@ class ShowHttpAccessControlRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowHttpAccessControlRuleRequest.
+        r"""Sets the rule_id of this ShowHttpAccessControlRuleRequest.
 
         防护规则id
 

@@ -27,7 +27,7 @@ class GeoBlockingConfigInfo:
     }
 
     def __init__(self, app=None, area_whitelist=None):
-        """GeoBlockingConfigInfo
+        r"""GeoBlockingConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GeoBlockingConfigInfo:
 
     @property
     def app(self):
-        """Gets the app of this GeoBlockingConfigInfo.
+        r"""Gets the app of this GeoBlockingConfigInfo.
 
         应用名
 
@@ -60,7 +60,7 @@ class GeoBlockingConfigInfo:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this GeoBlockingConfigInfo.
+        r"""Sets the app of this GeoBlockingConfigInfo.
 
         应用名
 
@@ -71,7 +71,7 @@ class GeoBlockingConfigInfo:
 
     @property
     def area_whitelist(self):
-        """Gets the area_whitelist of this GeoBlockingConfigInfo.
+        r"""Gets the area_whitelist of this GeoBlockingConfigInfo.
 
         限制区域列表, 空列表表示不限制。 除中国以外，其他地区代码，2位字母大写。代码格式参阅[ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) 包含如下部分取值： - CN-IN：中国大陆 - CN-HK：中国香港 - CN-MO：中国澳门 - CN-TW：中国台湾 - BR：巴西
 
@@ -82,7 +82,7 @@ class GeoBlockingConfigInfo:
 
     @area_whitelist.setter
     def area_whitelist(self, area_whitelist):
-        """Sets the area_whitelist of this GeoBlockingConfigInfo.
+        r"""Sets the area_whitelist of this GeoBlockingConfigInfo.
 
         限制区域列表, 空列表表示不限制。 除中国以外，其他地区代码，2位字母大写。代码格式参阅[ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) 包含如下部分取值： - CN-IN：中国大陆 - CN-HK：中国香港 - CN-MO：中国澳门 - CN-TW：中国台湾 - BR：巴西
 

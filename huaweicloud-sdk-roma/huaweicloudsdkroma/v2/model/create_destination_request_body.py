@@ -43,7 +43,7 @@ class CreateDestinationRequestBody:
     }
 
     def __init__(self, destination_type=None, app_id=None, destination_name=None, topic=None, server=None, token=None, tag=None, mqs_sasl_ssl=None, user_name=None, password=None):
-        """CreateDestinationRequestBody
+        r"""CreateDestinationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateDestinationRequestBody:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this CreateDestinationRequestBody.
+        r"""Gets the destination_type of this CreateDestinationRequestBody.
 
         操作类型，枚举值:0-目标端为本ROMA实例内MQS，； 7-目标端为设备
 
@@ -115,7 +115,7 @@ class CreateDestinationRequestBody:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this CreateDestinationRequestBody.
+        r"""Sets the destination_type of this CreateDestinationRequestBody.
 
         操作类型，枚举值:0-目标端为本ROMA实例内MQS，； 7-目标端为设备
 
@@ -126,7 +126,7 @@ class CreateDestinationRequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateDestinationRequestBody.
+        r"""Gets the app_id of this CreateDestinationRequestBody.
 
         应用ID，目标端为0时需明确对方的APP_ID
 
@@ -137,7 +137,7 @@ class CreateDestinationRequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateDestinationRequestBody.
+        r"""Sets the app_id of this CreateDestinationRequestBody.
 
         应用ID，目标端为0时需明确对方的APP_ID
 
@@ -148,7 +148,7 @@ class CreateDestinationRequestBody:
 
     @property
     def destination_name(self):
-        """Gets the destination_name of this CreateDestinationRequestBody.
+        r"""Gets the destination_name of this CreateDestinationRequestBody.
 
         目标数据源名称
 
@@ -159,7 +159,7 @@ class CreateDestinationRequestBody:
 
     @destination_name.setter
     def destination_name(self, destination_name):
-        """Sets the destination_name of this CreateDestinationRequestBody.
+        r"""Sets the destination_name of this CreateDestinationRequestBody.
 
         目标数据源名称
 
@@ -170,7 +170,7 @@ class CreateDestinationRequestBody:
 
     @property
     def topic(self):
-        """Gets the topic of this CreateDestinationRequestBody.
+        r"""Gets the topic of this CreateDestinationRequestBody.
 
         目标数据源主题，从MQS服务中获取已有topic
 
@@ -181,7 +181,7 @@ class CreateDestinationRequestBody:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this CreateDestinationRequestBody.
+        r"""Sets the topic of this CreateDestinationRequestBody.
 
         目标数据源主题，从MQS服务中获取已有topic
 
@@ -192,7 +192,7 @@ class CreateDestinationRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this CreateDestinationRequestBody.
+        r"""Gets the server of this CreateDestinationRequestBody.
 
         目标端数据源服务，连接地址
 
@@ -203,7 +203,7 @@ class CreateDestinationRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreateDestinationRequestBody.
+        r"""Sets the server of this CreateDestinationRequestBody.
 
         目标端数据源服务，连接地址
 
@@ -214,7 +214,7 @@ class CreateDestinationRequestBody:
 
     @property
     def token(self):
-        """Gets the token of this CreateDestinationRequestBody.
+        r"""Gets the token of this CreateDestinationRequestBody.
 
         目标端数据源token
 
@@ -225,7 +225,7 @@ class CreateDestinationRequestBody:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CreateDestinationRequestBody.
+        r"""Sets the token of this CreateDestinationRequestBody.
 
         目标端数据源token
 
@@ -236,7 +236,7 @@ class CreateDestinationRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateDestinationRequestBody.
+        r"""Gets the tag of this CreateDestinationRequestBody.
 
         目标数据源标签
 
@@ -247,7 +247,7 @@ class CreateDestinationRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateDestinationRequestBody.
+        r"""Sets the tag of this CreateDestinationRequestBody.
 
         目标数据源标签
 
@@ -258,7 +258,7 @@ class CreateDestinationRequestBody:
 
     @property
     def mqs_sasl_ssl(self):
-        """Gets the mqs_sasl_ssl of this CreateDestinationRequestBody.
+        r"""Gets the mqs_sasl_ssl of this CreateDestinationRequestBody.
 
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
@@ -269,7 +269,7 @@ class CreateDestinationRequestBody:
 
     @mqs_sasl_ssl.setter
     def mqs_sasl_ssl(self, mqs_sasl_ssl):
-        """Sets the mqs_sasl_ssl of this CreateDestinationRequestBody.
+        r"""Sets the mqs_sasl_ssl of this CreateDestinationRequestBody.
 
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
@@ -280,7 +280,7 @@ class CreateDestinationRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateDestinationRequestBody.
+        r"""Gets the user_name of this CreateDestinationRequestBody.
 
         目标数据源用户名
 
@@ -291,7 +291,7 @@ class CreateDestinationRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateDestinationRequestBody.
+        r"""Sets the user_name of this CreateDestinationRequestBody.
 
         目标数据源用户名
 
@@ -302,7 +302,7 @@ class CreateDestinationRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateDestinationRequestBody.
+        r"""Gets the password of this CreateDestinationRequestBody.
 
         目标数据源密码
 
@@ -313,7 +313,7 @@ class CreateDestinationRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateDestinationRequestBody.
+        r"""Sets the password of this CreateDestinationRequestBody.
 
         目标数据源密码
 

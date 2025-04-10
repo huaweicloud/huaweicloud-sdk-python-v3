@@ -25,7 +25,7 @@ class InitializeTenantReq:
     }
 
     def __init__(self, service_status=None):
-        """InitializeTenantReq
+        r"""InitializeTenantReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InitializeTenantReq:
 
     @property
     def service_status(self):
-        """Gets the service_status of this InitializeTenantReq.
+        r"""Gets the service_status of this InitializeTenantReq.
 
         服务状态 * `active` - 激活 * `inactive` - 未激活
 
@@ -53,7 +53,7 @@ class InitializeTenantReq:
 
     @service_status.setter
     def service_status(self, service_status):
-        """Sets the service_status of this InitializeTenantReq.
+        r"""Sets the service_status of this InitializeTenantReq.
 
         服务状态 * `active` - 激活 * `inactive` - 未激活
 

@@ -27,7 +27,7 @@ class DeleteEndpointRequest:
     }
 
     def __init__(self, endpoint_group_id=None, endpoint_id=None):
-        """DeleteEndpointRequest
+        r"""DeleteEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEndpointRequest:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this DeleteEndpointRequest.
+        r"""Gets the endpoint_group_id of this DeleteEndpointRequest.
 
         终端节点组ID。
 
@@ -59,7 +59,7 @@ class DeleteEndpointRequest:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this DeleteEndpointRequest.
+        r"""Sets the endpoint_group_id of this DeleteEndpointRequest.
 
         终端节点组ID。
 
@@ -70,7 +70,7 @@ class DeleteEndpointRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this DeleteEndpointRequest.
+        r"""Gets the endpoint_id of this DeleteEndpointRequest.
 
         终端节点ID。
 
@@ -81,7 +81,7 @@ class DeleteEndpointRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this DeleteEndpointRequest.
+        r"""Sets the endpoint_id of this DeleteEndpointRequest.
 
         终端节点ID。
 

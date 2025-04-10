@@ -26,7 +26,7 @@ class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
     }
 
     def __init__(self, password=None):
-        """ShowWindowsBaremetalServerPwdResponse
+        r"""ShowWindowsBaremetalServerPwdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this ShowWindowsBaremetalServerPwdResponse.
+        r"""Gets the password of this ShowWindowsBaremetalServerPwdResponse.
 
         加密后的密码
 
@@ -55,7 +55,7 @@ class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ShowWindowsBaremetalServerPwdResponse.
+        r"""Sets the password of this ShowWindowsBaremetalServerPwdResponse.
 
         加密后的密码
 

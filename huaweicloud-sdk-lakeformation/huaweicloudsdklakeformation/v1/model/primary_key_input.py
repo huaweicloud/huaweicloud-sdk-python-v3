@@ -35,7 +35,7 @@ class PrimaryKeyInput:
     }
 
     def __init__(self, column_name=None, primary_key_name=None, enable_constraint=None, key_sequence=None, rely_constraint=None, validate_constraint=None):
-        """PrimaryKeyInput
+        r"""PrimaryKeyInput
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class PrimaryKeyInput:
 
     @property
     def column_name(self):
-        """Gets the column_name of this PrimaryKeyInput.
+        r"""Gets the column_name of this PrimaryKeyInput.
 
         列名称
 
@@ -84,7 +84,7 @@ class PrimaryKeyInput:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this PrimaryKeyInput.
+        r"""Sets the column_name of this PrimaryKeyInput.
 
         列名称
 
@@ -95,7 +95,7 @@ class PrimaryKeyInput:
 
     @property
     def primary_key_name(self):
-        """Gets the primary_key_name of this PrimaryKeyInput.
+        r"""Gets the primary_key_name of this PrimaryKeyInput.
 
         主键名称
 
@@ -106,7 +106,7 @@ class PrimaryKeyInput:
 
     @primary_key_name.setter
     def primary_key_name(self, primary_key_name):
-        """Sets the primary_key_name of this PrimaryKeyInput.
+        r"""Sets the primary_key_name of this PrimaryKeyInput.
 
         主键名称
 
@@ -117,7 +117,7 @@ class PrimaryKeyInput:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this PrimaryKeyInput.
+        r"""Gets the enable_constraint of this PrimaryKeyInput.
 
         是否启用主键
 
@@ -128,7 +128,7 @@ class PrimaryKeyInput:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this PrimaryKeyInput.
+        r"""Sets the enable_constraint of this PrimaryKeyInput.
 
         是否启用主键
 
@@ -139,7 +139,7 @@ class PrimaryKeyInput:
 
     @property
     def key_sequence(self):
-        """Gets the key_sequence of this PrimaryKeyInput.
+        r"""Gets the key_sequence of this PrimaryKeyInput.
 
         主键排序顺序
 
@@ -150,7 +150,7 @@ class PrimaryKeyInput:
 
     @key_sequence.setter
     def key_sequence(self, key_sequence):
-        """Sets the key_sequence of this PrimaryKeyInput.
+        r"""Sets the key_sequence of this PrimaryKeyInput.
 
         主键排序顺序
 
@@ -161,7 +161,7 @@ class PrimaryKeyInput:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this PrimaryKeyInput.
+        r"""Gets the rely_constraint of this PrimaryKeyInput.
 
         是否被外键依赖
 
@@ -172,7 +172,7 @@ class PrimaryKeyInput:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this PrimaryKeyInput.
+        r"""Sets the rely_constraint of this PrimaryKeyInput.
 
         是否被外键依赖
 
@@ -183,7 +183,7 @@ class PrimaryKeyInput:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this PrimaryKeyInput.
+        r"""Gets the validate_constraint of this PrimaryKeyInput.
 
         限制条件是否可用
 
@@ -194,7 +194,7 @@ class PrimaryKeyInput:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this PrimaryKeyInput.
+        r"""Sets the validate_constraint of this PrimaryKeyInput.
 
         限制条件是否可用
 

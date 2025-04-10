@@ -34,7 +34,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
     }
 
     def __init__(self, answers=None, error_code=None, error_msg=None, answer_type=None, request_id=None):
-        """CreateQuestionInSessionResponse
+        r"""CreateQuestionInSessionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @property
     def answers(self):
-        """Gets the answers of this CreateQuestionInSessionResponse.
+        r"""Gets the answers of this CreateQuestionInSessionResponse.
 
         答案列表
 
@@ -83,7 +83,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @answers.setter
     def answers(self, answers):
-        """Sets the answers of this CreateQuestionInSessionResponse.
+        r"""Sets the answers of this CreateQuestionInSessionResponse.
 
         答案列表
 
@@ -94,7 +94,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateQuestionInSessionResponse.
+        r"""Gets the error_code of this CreateQuestionInSessionResponse.
 
         错误码
 
@@ -105,7 +105,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateQuestionInSessionResponse.
+        r"""Sets the error_code of this CreateQuestionInSessionResponse.
 
         错误码
 
@@ -116,7 +116,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateQuestionInSessionResponse.
+        r"""Gets the error_msg of this CreateQuestionInSessionResponse.
 
         错误描述
 
@@ -127,7 +127,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateQuestionInSessionResponse.
+        r"""Sets the error_msg of this CreateQuestionInSessionResponse.
 
         错误描述
 
@@ -138,7 +138,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @property
     def answer_type(self):
-        """Gets the answer_type of this CreateQuestionInSessionResponse.
+        r"""Gets the answer_type of this CreateQuestionInSessionResponse.
 
         答案类型：0 知识库回复,1 技能回复,2 闲聊回复,3 华为云答案。
 
@@ -149,7 +149,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @answer_type.setter
     def answer_type(self, answer_type):
-        """Sets the answer_type of this CreateQuestionInSessionResponse.
+        r"""Sets the answer_type of this CreateQuestionInSessionResponse.
 
         答案类型：0 知识库回复,1 技能回复,2 闲聊回复,3 华为云答案。
 
@@ -160,7 +160,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateQuestionInSessionResponse.
+        r"""Gets the request_id of this CreateQuestionInSessionResponse.
 
         请求Id
 
@@ -171,7 +171,7 @@ class CreateQuestionInSessionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateQuestionInSessionResponse.
+        r"""Sets the request_id of this CreateQuestionInSessionResponse.
 
         请求Id
 

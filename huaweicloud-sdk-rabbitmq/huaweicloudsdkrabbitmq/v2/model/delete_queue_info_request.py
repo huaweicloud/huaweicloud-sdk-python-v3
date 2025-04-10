@@ -29,7 +29,7 @@ class DeleteQueueInfoRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, queue=None):
-        """DeleteQueueInfoRequest
+        r"""DeleteQueueInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteQueueInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteQueueInfoRequest.
+        r"""Gets the instance_id of this DeleteQueueInfoRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteQueueInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteQueueInfoRequest.
+        r"""Sets the instance_id of this DeleteQueueInfoRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteQueueInfoRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this DeleteQueueInfoRequest.
+        r"""Gets the vhost of this DeleteQueueInfoRequest.
 
         Vhost名称
 
@@ -87,7 +87,7 @@ class DeleteQueueInfoRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this DeleteQueueInfoRequest.
+        r"""Sets the vhost of this DeleteQueueInfoRequest.
 
         Vhost名称
 
@@ -98,7 +98,7 @@ class DeleteQueueInfoRequest:
 
     @property
     def queue(self):
-        """Gets the queue of this DeleteQueueInfoRequest.
+        r"""Gets the queue of this DeleteQueueInfoRequest.
 
         Queue名称
 
@@ -109,7 +109,7 @@ class DeleteQueueInfoRequest:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this DeleteQueueInfoRequest.
+        r"""Sets the queue of this DeleteQueueInfoRequest.
 
         Queue名称
 

@@ -28,7 +28,7 @@ class ListImagesResponse(SdkResponse):
     }
 
     def __init__(self, need_upload_upgrade_plugin=None, image_info_list=None):
-        """ListImagesResponse
+        r"""ListImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def need_upload_upgrade_plugin(self):
-        """Gets the need_upload_upgrade_plugin of this ListImagesResponse.
+        r"""Gets the need_upload_upgrade_plugin of this ListImagesResponse.
 
         是否需要上传升级后版本的插件。
 
@@ -62,7 +62,7 @@ class ListImagesResponse(SdkResponse):
 
     @need_upload_upgrade_plugin.setter
     def need_upload_upgrade_plugin(self, need_upload_upgrade_plugin):
-        """Sets the need_upload_upgrade_plugin of this ListImagesResponse.
+        r"""Sets the need_upload_upgrade_plugin of this ListImagesResponse.
 
         是否需要上传升级后版本的插件。
 
@@ -73,7 +73,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def image_info_list(self):
-        """Gets the image_info_list of this ListImagesResponse.
+        r"""Gets the image_info_list of this ListImagesResponse.
 
         :return: The image_info_list of this ListImagesResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.GetTargetImageIdDetail`]
@@ -82,7 +82,7 @@ class ListImagesResponse(SdkResponse):
 
     @image_info_list.setter
     def image_info_list(self, image_info_list):
-        """Sets the image_info_list of this ListImagesResponse.
+        r"""Sets the image_info_list of this ListImagesResponse.
 
         :param image_info_list: The image_info_list of this ListImagesResponse.
         :type image_info_list: list[:class:`huaweicloudsdkcss.v1.GetTargetImageIdDetail`]

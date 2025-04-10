@@ -27,7 +27,7 @@ class TmsResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """TmsResourceTag
+        r"""TmsResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TmsResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this TmsResourceTag.
+        r"""Gets the key of this TmsResourceTag.
 
         标签键
 
@@ -61,7 +61,7 @@ class TmsResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TmsResourceTag.
+        r"""Sets the key of this TmsResourceTag.
 
         标签键
 
@@ -72,7 +72,7 @@ class TmsResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this TmsResourceTag.
+        r"""Gets the value of this TmsResourceTag.
 
         标签值
 
@@ -83,7 +83,7 @@ class TmsResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TmsResourceTag.
+        r"""Sets the value of this TmsResourceTag.
 
         标签值
 

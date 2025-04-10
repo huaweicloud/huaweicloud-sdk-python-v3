@@ -27,7 +27,7 @@ class CreateEndpointRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """CreateEndpointRequest
+        r"""CreateEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEndpointRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateEndpointRequest.
+        r"""Gets the workspace_id of this CreateEndpointRequest.
 
         Workspace的ID
 
@@ -60,7 +60,7 @@ class CreateEndpointRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateEndpointRequest.
+        r"""Sets the workspace_id of this CreateEndpointRequest.
 
         Workspace的ID
 
@@ -71,7 +71,7 @@ class CreateEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEndpointRequest.
+        r"""Gets the body of this CreateEndpointRequest.
 
         :return: The body of this CreateEndpointRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointInput`
@@ -80,7 +80,7 @@ class CreateEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEndpointRequest.
+        r"""Sets the body of this CreateEndpointRequest.
 
         :param body: The body of this CreateEndpointRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.EndpointInput`

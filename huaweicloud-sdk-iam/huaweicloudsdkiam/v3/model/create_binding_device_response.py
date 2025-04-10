@@ -24,7 +24,7 @@ class CreateBindingDeviceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateBindingDeviceResponse
+        r"""CreateBindingDeviceResponse
 
         The model defined in huaweicloud sdk
 

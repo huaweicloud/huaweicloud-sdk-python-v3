@@ -29,7 +29,7 @@ class UpdateFlowLogRequest:
     }
 
     def __init__(self, er_id=None, flow_log_id=None, body=None):
-        """UpdateFlowLogRequest
+        r"""UpdateFlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateFlowLogRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this UpdateFlowLogRequest.
+        r"""Gets the er_id of this UpdateFlowLogRequest.
 
         企业路由器实例ID
 
@@ -66,7 +66,7 @@ class UpdateFlowLogRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this UpdateFlowLogRequest.
+        r"""Sets the er_id of this UpdateFlowLogRequest.
 
         企业路由器实例ID
 
@@ -77,7 +77,7 @@ class UpdateFlowLogRequest:
 
     @property
     def flow_log_id(self):
-        """Gets the flow_log_id of this UpdateFlowLogRequest.
+        r"""Gets the flow_log_id of this UpdateFlowLogRequest.
 
         流日志ID
 
@@ -88,7 +88,7 @@ class UpdateFlowLogRequest:
 
     @flow_log_id.setter
     def flow_log_id(self, flow_log_id):
-        """Sets the flow_log_id of this UpdateFlowLogRequest.
+        r"""Sets the flow_log_id of this UpdateFlowLogRequest.
 
         流日志ID
 
@@ -99,7 +99,7 @@ class UpdateFlowLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlowLogRequest.
+        r"""Gets the body of this UpdateFlowLogRequest.
 
         :return: The body of this UpdateFlowLogRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateFlowLogRequestBody`
@@ -108,7 +108,7 @@ class UpdateFlowLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlowLogRequest.
+        r"""Sets the body of this UpdateFlowLogRequest.
 
         :param body: The body of this UpdateFlowLogRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateFlowLogRequestBody`

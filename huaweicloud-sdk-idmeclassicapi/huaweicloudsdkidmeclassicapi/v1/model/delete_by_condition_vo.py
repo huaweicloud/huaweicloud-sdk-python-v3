@@ -27,7 +27,7 @@ class DeleteByConditionVo:
     }
 
     def __init__(self, condition=None, modifier=None):
-        """DeleteByConditionVo
+        r"""DeleteByConditionVo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteByConditionVo:
 
     @property
     def condition(self):
-        """Gets the condition of this DeleteByConditionVo.
+        r"""Gets the condition of this DeleteByConditionVo.
 
         :return: The condition of this DeleteByConditionVo.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.QueryRequestVo`
@@ -58,7 +58,7 @@ class DeleteByConditionVo:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this DeleteByConditionVo.
+        r"""Sets the condition of this DeleteByConditionVo.
 
         :param condition: The condition of this DeleteByConditionVo.
         :type condition: :class:`huaweicloudsdkidmeclassicapi.v1.QueryRequestVo`
@@ -67,7 +67,7 @@ class DeleteByConditionVo:
 
     @property
     def modifier(self):
-        """Gets the modifier of this DeleteByConditionVo.
+        r"""Gets the modifier of this DeleteByConditionVo.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -78,7 +78,7 @@ class DeleteByConditionVo:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this DeleteByConditionVo.
+        r"""Sets the modifier of this DeleteByConditionVo.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

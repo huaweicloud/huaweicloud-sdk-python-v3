@@ -27,7 +27,7 @@ class ShowCacheRulesRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None):
-        """ShowCacheRulesRequest
+        r"""ShowCacheRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCacheRulesRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowCacheRulesRequest.
+        r"""Gets the domain_id of this ShowCacheRulesRequest.
 
         加速域名ID。
 
@@ -60,7 +60,7 @@ class ShowCacheRulesRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowCacheRulesRequest.
+        r"""Sets the domain_id of this ShowCacheRulesRequest.
 
         加速域名ID。
 
@@ -71,7 +71,7 @@ class ShowCacheRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCacheRulesRequest.
+        r"""Gets the enterprise_project_id of this ShowCacheRulesRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -82,7 +82,7 @@ class ShowCacheRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCacheRulesRequest.
+        r"""Sets the enterprise_project_id of this ShowCacheRulesRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 

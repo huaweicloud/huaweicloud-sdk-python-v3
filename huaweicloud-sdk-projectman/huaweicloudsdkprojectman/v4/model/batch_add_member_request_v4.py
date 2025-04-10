@@ -27,7 +27,7 @@ class BatchAddMemberRequestV4:
     }
 
     def __init__(self, role_id=None, user_id=None):
-        """BatchAddMemberRequestV4
+        r"""BatchAddMemberRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddMemberRequestV4:
 
     @property
     def role_id(self):
-        """Gets the role_id of this BatchAddMemberRequestV4.
+        r"""Gets the role_id of this BatchAddMemberRequestV4.
 
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -60,7 +60,7 @@ class BatchAddMemberRequestV4:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this BatchAddMemberRequestV4.
+        r"""Sets the role_id of this BatchAddMemberRequestV4.
 
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -71,7 +71,7 @@ class BatchAddMemberRequestV4:
 
     @property
     def user_id(self):
-        """Gets the user_id of this BatchAddMemberRequestV4.
+        r"""Gets the user_id of this BatchAddMemberRequestV4.
 
         用户32位uuid
 
@@ -82,7 +82,7 @@ class BatchAddMemberRequestV4:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this BatchAddMemberRequestV4.
+        r"""Sets the user_id of this BatchAddMemberRequestV4.
 
         用户32位uuid
 

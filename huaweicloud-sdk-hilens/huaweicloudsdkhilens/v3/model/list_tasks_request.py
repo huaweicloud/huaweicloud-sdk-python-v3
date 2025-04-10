@@ -29,7 +29,7 @@ class ListTasksRequest:
     }
 
     def __init__(self, deployment_id=None, offset=None, limit=None):
-        """ListTasksRequest
+        r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTasksRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ListTasksRequest.
+        r"""Gets the deployment_id of this ListTasksRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -67,7 +67,7 @@ class ListTasksRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ListTasksRequest.
+        r"""Sets the deployment_id of this ListTasksRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -78,7 +78,7 @@ class ListTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTasksRequest.
+        r"""Gets the offset of this ListTasksRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -89,7 +89,7 @@ class ListTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTasksRequest.
+        r"""Sets the offset of this ListTasksRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -100,7 +100,7 @@ class ListTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTasksRequest.
+        r"""Gets the limit of this ListTasksRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -111,7 +111,7 @@ class ListTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTasksRequest.
+        r"""Sets the limit of this ListTasksRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 

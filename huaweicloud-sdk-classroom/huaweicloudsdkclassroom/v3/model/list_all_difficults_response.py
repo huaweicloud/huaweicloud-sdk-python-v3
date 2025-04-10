@@ -28,7 +28,7 @@ class ListAllDifficultsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, data=None):
-        """ListAllDifficultsResponse
+        r"""ListAllDifficultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllDifficultsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAllDifficultsResponse.
+        r"""Gets the total_count of this ListAllDifficultsResponse.
 
         所有难度数量
 
@@ -62,7 +62,7 @@ class ListAllDifficultsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAllDifficultsResponse.
+        r"""Sets the total_count of this ListAllDifficultsResponse.
 
         所有难度数量
 
@@ -73,7 +73,7 @@ class ListAllDifficultsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAllDifficultsResponse.
+        r"""Gets the data of this ListAllDifficultsResponse.
 
         难度信息
 
@@ -84,7 +84,7 @@ class ListAllDifficultsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAllDifficultsResponse.
+        r"""Sets the data of this ListAllDifficultsResponse.
 
         难度信息
 

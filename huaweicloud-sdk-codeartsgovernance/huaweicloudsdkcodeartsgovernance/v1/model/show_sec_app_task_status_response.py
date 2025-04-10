@@ -36,7 +36,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, create_time=None, begin_time=None, end_time=None, task_status=None, fail_reason=None):
-        """ShowSecAppTaskStatusResponse
+        r"""ShowSecAppTaskStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSecAppTaskStatusResponse.
+        r"""Gets the task_id of this ShowSecAppTaskStatusResponse.
 
         任务ID
 
@@ -90,7 +90,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSecAppTaskStatusResponse.
+        r"""Sets the task_id of this ShowSecAppTaskStatusResponse.
 
         任务ID
 
@@ -101,7 +101,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSecAppTaskStatusResponse.
+        r"""Gets the create_time of this ShowSecAppTaskStatusResponse.
 
         创建任务的时间
 
@@ -112,7 +112,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSecAppTaskStatusResponse.
+        r"""Sets the create_time of this ShowSecAppTaskStatusResponse.
 
         创建任务的时间
 
@@ -123,7 +123,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowSecAppTaskStatusResponse.
+        r"""Gets the begin_time of this ShowSecAppTaskStatusResponse.
 
         任务启动的时间
 
@@ -134,7 +134,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowSecAppTaskStatusResponse.
+        r"""Sets the begin_time of this ShowSecAppTaskStatusResponse.
 
         任务启动的时间
 
@@ -145,7 +145,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowSecAppTaskStatusResponse.
+        r"""Gets the end_time of this ShowSecAppTaskStatusResponse.
 
         任务结束的时间
 
@@ -156,7 +156,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowSecAppTaskStatusResponse.
+        r"""Sets the end_time of this ShowSecAppTaskStatusResponse.
 
         任务结束的时间
 
@@ -167,7 +167,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowSecAppTaskStatusResponse.
+        r"""Gets the task_status of this ShowSecAppTaskStatusResponse.
 
         任务状态:   * WAITING - 等待   * RUNNING - 进行   * SUCCESS - 完成   * FAILURE - 失败   * STOP - 停止   * DELETED - 删除 
 
@@ -178,7 +178,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowSecAppTaskStatusResponse.
+        r"""Sets the task_status of this ShowSecAppTaskStatusResponse.
 
         任务状态:   * WAITING - 等待   * RUNNING - 进行   * SUCCESS - 完成   * FAILURE - 失败   * STOP - 停止   * DELETED - 删除 
 
@@ -189,7 +189,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowSecAppTaskStatusResponse.
+        r"""Gets the fail_reason of this ShowSecAppTaskStatusResponse.
 
         任务失败时返回失败原因
 
@@ -200,7 +200,7 @@ class ShowSecAppTaskStatusResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowSecAppTaskStatusResponse.
+        r"""Sets the fail_reason of this ShowSecAppTaskStatusResponse.
 
         任务失败时返回失败原因
 

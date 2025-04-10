@@ -33,7 +33,7 @@ class CreatePubInfoResponseModelData:
     }
 
     def __init__(self, log_id=None, pub_id=None, menu_id=None, portal_id=None, pub_name=None):
-        """CreatePubInfoResponseModelData
+        r"""CreatePubInfoResponseModelData
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreatePubInfoResponseModelData:
 
     @property
     def log_id(self):
-        """Gets the log_id of this CreatePubInfoResponseModelData.
+        r"""Gets the log_id of this CreatePubInfoResponseModelData.
 
         服务号申请记录ID。
 
@@ -81,7 +81,7 @@ class CreatePubInfoResponseModelData:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this CreatePubInfoResponseModelData.
+        r"""Sets the log_id of this CreatePubInfoResponseModelData.
 
         服务号申请记录ID。
 
@@ -92,7 +92,7 @@ class CreatePubInfoResponseModelData:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this CreatePubInfoResponseModelData.
+        r"""Gets the pub_id of this CreatePubInfoResponseModelData.
 
         服务号ID。
 
@@ -103,7 +103,7 @@ class CreatePubInfoResponseModelData:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this CreatePubInfoResponseModelData.
+        r"""Sets the pub_id of this CreatePubInfoResponseModelData.
 
         服务号ID。
 
@@ -114,7 +114,7 @@ class CreatePubInfoResponseModelData:
 
     @property
     def menu_id(self):
-        """Gets the menu_id of this CreatePubInfoResponseModelData.
+        r"""Gets the menu_id of this CreatePubInfoResponseModelData.
 
         菜单ID。
 
@@ -125,7 +125,7 @@ class CreatePubInfoResponseModelData:
 
     @menu_id.setter
     def menu_id(self, menu_id):
-        """Sets the menu_id of this CreatePubInfoResponseModelData.
+        r"""Sets the menu_id of this CreatePubInfoResponseModelData.
 
         菜单ID。
 
@@ -136,7 +136,7 @@ class CreatePubInfoResponseModelData:
 
     @property
     def portal_id(self):
-        """Gets the portal_id of this CreatePubInfoResponseModelData.
+        r"""Gets the portal_id of this CreatePubInfoResponseModelData.
 
         主页ID。
 
@@ -147,7 +147,7 @@ class CreatePubInfoResponseModelData:
 
     @portal_id.setter
     def portal_id(self, portal_id):
-        """Sets the portal_id of this CreatePubInfoResponseModelData.
+        r"""Sets the portal_id of this CreatePubInfoResponseModelData.
 
         主页ID。
 
@@ -158,7 +158,7 @@ class CreatePubInfoResponseModelData:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this CreatePubInfoResponseModelData.
+        r"""Gets the pub_name of this CreatePubInfoResponseModelData.
 
         服务号名称。
 
@@ -169,7 +169,7 @@ class CreatePubInfoResponseModelData:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this CreatePubInfoResponseModelData.
+        r"""Sets the pub_name of this CreatePubInfoResponseModelData.
 
         服务号名称。
 

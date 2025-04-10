@@ -25,7 +25,7 @@ class StepConfig:
     }
 
     def __init__(self, job_execution=None):
-        """StepConfig
+        r"""StepConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StepConfig:
 
     @property
     def job_execution(self):
-        """Gets the job_execution of this StepConfig.
+        r"""Gets the job_execution of this StepConfig.
 
         :return: The job_execution of this StepConfig.
         :rtype: :class:`huaweicloudsdkmrs.v2.JobExecution`
@@ -51,7 +51,7 @@ class StepConfig:
 
     @job_execution.setter
     def job_execution(self, job_execution):
-        """Sets the job_execution of this StepConfig.
+        r"""Sets the job_execution of this StepConfig.
 
         :param job_execution: The job_execution of this StepConfig.
         :type job_execution: :class:`huaweicloudsdkmrs.v2.JobExecution`

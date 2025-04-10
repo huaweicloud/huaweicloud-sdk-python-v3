@@ -29,7 +29,7 @@ class MemberPolicyItem:
     }
 
     def __init__(self, member_id=None, member_name=None, member_type=None):
-        """MemberPolicyItem
+        r"""MemberPolicyItem
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MemberPolicyItem:
 
     @property
     def member_id(self):
-        """Gets the member_id of this MemberPolicyItem.
+        r"""Gets the member_id of this MemberPolicyItem.
 
         成员id
 
@@ -66,7 +66,7 @@ class MemberPolicyItem:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this MemberPolicyItem.
+        r"""Sets the member_id of this MemberPolicyItem.
 
         成员id
 
@@ -77,7 +77,7 @@ class MemberPolicyItem:
 
     @property
     def member_name(self):
-        """Gets the member_name of this MemberPolicyItem.
+        r"""Gets the member_name of this MemberPolicyItem.
 
         成员名称
 
@@ -88,7 +88,7 @@ class MemberPolicyItem:
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this MemberPolicyItem.
+        r"""Sets the member_name of this MemberPolicyItem.
 
         成员名称
 
@@ -99,7 +99,7 @@ class MemberPolicyItem:
 
     @property
     def member_type(self):
-        """Gets the member_type of this MemberPolicyItem.
+        r"""Gets the member_type of this MemberPolicyItem.
 
         成员类型:USER,USER_GROUP,WORKSPACE_ROLE，分别代表空间用户、空间用户组、空间角色
 
@@ -110,7 +110,7 @@ class MemberPolicyItem:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this MemberPolicyItem.
+        r"""Sets the member_type of this MemberPolicyItem.
 
         成员类型:USER,USER_GROUP,WORKSPACE_ROLE，分别代表空间用户、空间用户组、空间角色
 

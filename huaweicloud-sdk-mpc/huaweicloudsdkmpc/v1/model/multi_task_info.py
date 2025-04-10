@@ -29,7 +29,7 @@ class MultiTaskInfo:
     }
 
     def __init__(self, template_id=None, error=None, output_file=None):
-        """MultiTaskInfo
+        r"""MultiTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MultiTaskInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this MultiTaskInfo.
+        r"""Gets the template_id of this MultiTaskInfo.
 
         转码模板ID。
 
@@ -68,7 +68,7 @@ class MultiTaskInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this MultiTaskInfo.
+        r"""Sets the template_id of this MultiTaskInfo.
 
         转码模板ID。
 
@@ -79,7 +79,7 @@ class MultiTaskInfo:
 
     @property
     def error(self):
-        """Gets the error of this MultiTaskInfo.
+        r"""Gets the error of this MultiTaskInfo.
 
         :return: The error of this MultiTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
@@ -88,7 +88,7 @@ class MultiTaskInfo:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this MultiTaskInfo.
+        r"""Sets the error of this MultiTaskInfo.
 
         :param error: The error of this MultiTaskInfo.
         :type error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
@@ -97,7 +97,7 @@ class MultiTaskInfo:
 
     @property
     def output_file(self):
-        """Gets the output_file of this MultiTaskInfo.
+        r"""Gets the output_file of this MultiTaskInfo.
 
         :return: The output_file of this MultiTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
@@ -106,7 +106,7 @@ class MultiTaskInfo:
 
     @output_file.setter
     def output_file(self, output_file):
-        """Sets the output_file of this MultiTaskInfo.
+        r"""Sets the output_file of this MultiTaskInfo.
 
         :param output_file: The output_file of this MultiTaskInfo.
         :type output_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`

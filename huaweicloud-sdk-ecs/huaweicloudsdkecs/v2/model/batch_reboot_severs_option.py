@@ -27,7 +27,7 @@ class BatchRebootSeversOption:
     }
 
     def __init__(self, servers=None, type=None):
-        """BatchRebootSeversOption
+        r"""BatchRebootSeversOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchRebootSeversOption:
 
     @property
     def servers(self):
-        """Gets the servers of this BatchRebootSeversOption.
+        r"""Gets the servers of this BatchRebootSeversOption.
 
         云服务器ID列表。
 
@@ -59,7 +59,7 @@ class BatchRebootSeversOption:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this BatchRebootSeversOption.
+        r"""Sets the servers of this BatchRebootSeversOption.
 
         云服务器ID列表。
 
@@ -70,7 +70,7 @@ class BatchRebootSeversOption:
 
     @property
     def type(self):
-        """Gets the type of this BatchRebootSeversOption.
+        r"""Gets the type of this BatchRebootSeversOption.
 
         重启类型：  - SOFT：普通重启。 - HARD：强制重启。
 
@@ -81,7 +81,7 @@ class BatchRebootSeversOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchRebootSeversOption.
+        r"""Sets the type of this BatchRebootSeversOption.
 
         重启类型：  - SOFT：普通重启。 - HARD：强制重启。
 

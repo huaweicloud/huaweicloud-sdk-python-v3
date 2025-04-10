@@ -29,7 +29,7 @@ class RouteTableRouteAction:
     }
 
     def __init__(self, add=None, mod=None, _del=None):
-        """RouteTableRouteAction
+        r"""RouteTableRouteAction
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RouteTableRouteAction:
 
     @property
     def add(self):
-        """Gets the add of this RouteTableRouteAction.
+        r"""Gets the add of this RouteTableRouteAction.
 
         新增路由条目，type，destination，nexthop必选
 
@@ -68,7 +68,7 @@ class RouteTableRouteAction:
 
     @add.setter
     def add(self, add):
-        """Sets the add of this RouteTableRouteAction.
+        r"""Sets the add of this RouteTableRouteAction.
 
         新增路由条目，type，destination，nexthop必选
 
@@ -79,7 +79,7 @@ class RouteTableRouteAction:
 
     @property
     def mod(self):
-        """Gets the mod of this RouteTableRouteAction.
+        r"""Gets the mod of this RouteTableRouteAction.
 
         修改路由条目，type，destination，nexthop必选
 
@@ -90,7 +90,7 @@ class RouteTableRouteAction:
 
     @mod.setter
     def mod(self, mod):
-        """Sets the mod of this RouteTableRouteAction.
+        r"""Sets the mod of this RouteTableRouteAction.
 
         修改路由条目，type，destination，nexthop必选
 
@@ -101,7 +101,7 @@ class RouteTableRouteAction:
 
     @property
     def _del(self):
-        """Gets the _del of this RouteTableRouteAction.
+        r"""Gets the _del of this RouteTableRouteAction.
 
         删除路由条目，destination必选
 
@@ -112,7 +112,7 @@ class RouteTableRouteAction:
 
     @_del.setter
     def _del(self, _del):
-        """Sets the _del of this RouteTableRouteAction.
+        r"""Sets the _del of this RouteTableRouteAction.
 
         删除路由条目，destination必选
 

@@ -45,7 +45,7 @@ class QueryUserDetailResp:
     }
 
     def __init__(self, id=None, account=None, comment=None, is_transfer=None, privileges=None, password=None, roles=None, selected=None, no_privileges=None, parent_account=None, no_parent_account=None):
-        """QueryUserDetailResp
+        r"""QueryUserDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class QueryUserDetailResp:
 
     @property
     def id(self):
-        """Gets the id of this QueryUserDetailResp.
+        r"""Gets the id of this QueryUserDetailResp.
 
         用户账户id。
 
@@ -124,7 +124,7 @@ class QueryUserDetailResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryUserDetailResp.
+        r"""Sets the id of this QueryUserDetailResp.
 
         用户账户id。
 
@@ -135,7 +135,7 @@ class QueryUserDetailResp:
 
     @property
     def account(self):
-        """Gets the account of this QueryUserDetailResp.
+        r"""Gets the account of this QueryUserDetailResp.
 
         账户。
 
@@ -146,7 +146,7 @@ class QueryUserDetailResp:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this QueryUserDetailResp.
+        r"""Sets the account of this QueryUserDetailResp.
 
         账户。
 
@@ -157,7 +157,7 @@ class QueryUserDetailResp:
 
     @property
     def comment(self):
-        """Gets the comment of this QueryUserDetailResp.
+        r"""Gets the comment of this QueryUserDetailResp.
 
         说明。
 
@@ -168,7 +168,7 @@ class QueryUserDetailResp:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this QueryUserDetailResp.
+        r"""Sets the comment of this QueryUserDetailResp.
 
         说明。
 
@@ -179,7 +179,7 @@ class QueryUserDetailResp:
 
     @property
     def is_transfer(self):
-        """Gets the is_transfer of this QueryUserDetailResp.
+        r"""Gets the is_transfer of this QueryUserDetailResp.
 
         是否支持迁移
 
@@ -190,7 +190,7 @@ class QueryUserDetailResp:
 
     @is_transfer.setter
     def is_transfer(self, is_transfer):
-        """Sets the is_transfer of this QueryUserDetailResp.
+        r"""Sets the is_transfer of this QueryUserDetailResp.
 
         是否支持迁移
 
@@ -201,7 +201,7 @@ class QueryUserDetailResp:
 
     @property
     def privileges(self):
-        """Gets the privileges of this QueryUserDetailResp.
+        r"""Gets the privileges of this QueryUserDetailResp.
 
         权限
 
@@ -212,7 +212,7 @@ class QueryUserDetailResp:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this QueryUserDetailResp.
+        r"""Sets the privileges of this QueryUserDetailResp.
 
         权限
 
@@ -223,7 +223,7 @@ class QueryUserDetailResp:
 
     @property
     def password(self):
-        """Gets the password of this QueryUserDetailResp.
+        r"""Gets the password of this QueryUserDetailResp.
 
         密码。
 
@@ -234,7 +234,7 @@ class QueryUserDetailResp:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this QueryUserDetailResp.
+        r"""Sets the password of this QueryUserDetailResp.
 
         密码。
 
@@ -245,7 +245,7 @@ class QueryUserDetailResp:
 
     @property
     def roles(self):
-        """Gets the roles of this QueryUserDetailResp.
+        r"""Gets the roles of this QueryUserDetailResp.
 
         账号拥有的角色
 
@@ -256,7 +256,7 @@ class QueryUserDetailResp:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this QueryUserDetailResp.
+        r"""Sets the roles of this QueryUserDetailResp.
 
         账号拥有的角色
 
@@ -267,7 +267,7 @@ class QueryUserDetailResp:
 
     @property
     def selected(self):
-        """Gets the selected of this QueryUserDetailResp.
+        r"""Gets the selected of this QueryUserDetailResp.
 
         是否选择。
 
@@ -278,7 +278,7 @@ class QueryUserDetailResp:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this QueryUserDetailResp.
+        r"""Sets the selected of this QueryUserDetailResp.
 
         是否选择。
 
@@ -289,7 +289,7 @@ class QueryUserDetailResp:
 
     @property
     def no_privileges(self):
-        """Gets the no_privileges of this QueryUserDetailResp.
+        r"""Gets the no_privileges of this QueryUserDetailResp.
 
         无法同步的用户权限
 
@@ -300,7 +300,7 @@ class QueryUserDetailResp:
 
     @no_privileges.setter
     def no_privileges(self, no_privileges):
-        """Sets the no_privileges of this QueryUserDetailResp.
+        r"""Sets the no_privileges of this QueryUserDetailResp.
 
         无法同步的用户权限
 
@@ -311,7 +311,7 @@ class QueryUserDetailResp:
 
     @property
     def parent_account(self):
-        """Gets the parent_account of this QueryUserDetailResp.
+        r"""Gets the parent_account of this QueryUserDetailResp.
 
         父用户
 
@@ -322,7 +322,7 @@ class QueryUserDetailResp:
 
     @parent_account.setter
     def parent_account(self, parent_account):
-        """Sets the parent_account of this QueryUserDetailResp.
+        r"""Sets the parent_account of this QueryUserDetailResp.
 
         父用户
 
@@ -333,7 +333,7 @@ class QueryUserDetailResp:
 
     @property
     def no_parent_account(self):
-        """Gets the no_parent_account of this QueryUserDetailResp.
+        r"""Gets the no_parent_account of this QueryUserDetailResp.
 
         无法同步父子关系的父用户
 
@@ -344,7 +344,7 @@ class QueryUserDetailResp:
 
     @no_parent_account.setter
     def no_parent_account(self, no_parent_account):
-        """Sets the no_parent_account of this QueryUserDetailResp.
+        r"""Sets the no_parent_account of this QueryUserDetailResp.
 
         无法同步父子关系的父用户
 

@@ -52,7 +52,7 @@ class DeleteCustomRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, timestamp=None, time=None, start=None, terminal=None, producer=None):
-        """DeleteCustomRuleResponse
+        r"""DeleteCustomRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteCustomRuleResponse.
+        r"""Gets the id of this DeleteCustomRuleResponse.
 
         规则id
 
@@ -146,7 +146,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteCustomRuleResponse.
+        r"""Sets the id of this DeleteCustomRuleResponse.
 
         规则id
 
@@ -157,7 +157,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteCustomRuleResponse.
+        r"""Gets the name of this DeleteCustomRuleResponse.
 
         规则名称
 
@@ -168,7 +168,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteCustomRuleResponse.
+        r"""Sets the name of this DeleteCustomRuleResponse.
 
         规则名称
 
@@ -179,7 +179,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this DeleteCustomRuleResponse.
+        r"""Gets the policyid of this DeleteCustomRuleResponse.
 
         策略id
 
@@ -190,7 +190,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this DeleteCustomRuleResponse.
+        r"""Sets the policyid of this DeleteCustomRuleResponse.
 
         策略id
 
@@ -201,7 +201,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeleteCustomRuleResponse.
+        r"""Gets the description of this DeleteCustomRuleResponse.
 
         规则描述
 
@@ -212,7 +212,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeleteCustomRuleResponse.
+        r"""Sets the description of this DeleteCustomRuleResponse.
 
         规则描述
 
@@ -223,7 +223,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteCustomRuleResponse.
+        r"""Gets the status of this DeleteCustomRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -234,7 +234,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteCustomRuleResponse.
+        r"""Sets the status of this DeleteCustomRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -245,7 +245,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this DeleteCustomRuleResponse.
+        r"""Gets the conditions of this DeleteCustomRuleResponse.
 
         匹配条件列表，匹配条件必须同时满足。
 
@@ -256,7 +256,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this DeleteCustomRuleResponse.
+        r"""Sets the conditions of this DeleteCustomRuleResponse.
 
         匹配条件列表，匹配条件必须同时满足。
 
@@ -267,7 +267,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this DeleteCustomRuleResponse.
+        r"""Gets the action of this DeleteCustomRuleResponse.
 
         :return: The action of this DeleteCustomRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -276,7 +276,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this DeleteCustomRuleResponse.
+        r"""Sets the action of this DeleteCustomRuleResponse.
 
         :param action: The action of this DeleteCustomRuleResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -285,7 +285,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def action_mode(self):
-        """Gets the action_mode of this DeleteCustomRuleResponse.
+        r"""Gets the action_mode of this DeleteCustomRuleResponse.
 
         预留参数，可忽略。
 
@@ -296,7 +296,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        """Sets the action_mode of this DeleteCustomRuleResponse.
+        r"""Sets the action_mode of this DeleteCustomRuleResponse.
 
         预留参数，可忽略。
 
@@ -307,7 +307,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this DeleteCustomRuleResponse.
+        r"""Gets the priority of this DeleteCustomRuleResponse.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -318,7 +318,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this DeleteCustomRuleResponse.
+        r"""Sets the priority of this DeleteCustomRuleResponse.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -329,7 +329,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DeleteCustomRuleResponse.
+        r"""Gets the timestamp of this DeleteCustomRuleResponse.
 
         创建精准防护规则的
 
@@ -340,7 +340,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DeleteCustomRuleResponse.
+        r"""Sets the timestamp of this DeleteCustomRuleResponse.
 
         创建精准防护规则的
 
@@ -351,7 +351,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def time(self):
-        """Gets the time of this DeleteCustomRuleResponse.
+        r"""Gets the time of this DeleteCustomRuleResponse.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -362,7 +362,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @time.setter
     def time(self, time):
-        """Sets the time of this DeleteCustomRuleResponse.
+        r"""Sets the time of this DeleteCustomRuleResponse.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -373,7 +373,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def start(self):
-        """Gets the start of this DeleteCustomRuleResponse.
+        r"""Gets the start of this DeleteCustomRuleResponse.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
@@ -384,7 +384,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @start.setter
     def start(self, start):
-        """Sets the start of this DeleteCustomRuleResponse.
+        r"""Sets the start of this DeleteCustomRuleResponse.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
@@ -395,7 +395,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def terminal(self):
-        """Gets the terminal of this DeleteCustomRuleResponse.
+        r"""Gets the terminal of this DeleteCustomRuleResponse.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
@@ -406,7 +406,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this DeleteCustomRuleResponse.
+        r"""Sets the terminal of this DeleteCustomRuleResponse.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
@@ -417,7 +417,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this DeleteCustomRuleResponse.
+        r"""Gets the producer of this DeleteCustomRuleResponse.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -428,7 +428,7 @@ class DeleteCustomRuleResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this DeleteCustomRuleResponse.
+        r"""Sets the producer of this DeleteCustomRuleResponse.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 

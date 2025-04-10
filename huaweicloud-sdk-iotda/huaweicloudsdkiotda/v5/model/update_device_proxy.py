@@ -29,7 +29,7 @@ class UpdateDeviceProxy:
     }
 
     def __init__(self, proxy_name=None, proxy_devices=None, effective_time_range=None):
-        """UpdateDeviceProxy
+        r"""UpdateDeviceProxy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateDeviceProxy:
 
     @property
     def proxy_name(self):
-        """Gets the proxy_name of this UpdateDeviceProxy.
+        r"""Gets the proxy_name of this UpdateDeviceProxy.
 
         **参数说明**：设备代理名称
 
@@ -68,7 +68,7 @@ class UpdateDeviceProxy:
 
     @proxy_name.setter
     def proxy_name(self, proxy_name):
-        """Sets the proxy_name of this UpdateDeviceProxy.
+        r"""Sets the proxy_name of this UpdateDeviceProxy.
 
         **参数说明**：设备代理名称
 
@@ -79,7 +79,7 @@ class UpdateDeviceProxy:
 
     @property
     def proxy_devices(self):
-        """Gets the proxy_devices of this UpdateDeviceProxy.
+        r"""Gets the proxy_devices of this UpdateDeviceProxy.
 
         **参数说明**：代理设备列表，列表内所有设备共享网关权限，即列表内任意一个网关下的子设备可以通过组里任意一个网关上线然后进行数据上报。 **取值范围**：列表内填写设备id，列表内最少有2个设备id，最多有10个设备id，设备id取值范围：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符。
 
@@ -90,7 +90,7 @@ class UpdateDeviceProxy:
 
     @proxy_devices.setter
     def proxy_devices(self, proxy_devices):
-        """Sets the proxy_devices of this UpdateDeviceProxy.
+        r"""Sets the proxy_devices of this UpdateDeviceProxy.
 
         **参数说明**：代理设备列表，列表内所有设备共享网关权限，即列表内任意一个网关下的子设备可以通过组里任意一个网关上线然后进行数据上报。 **取值范围**：列表内填写设备id，列表内最少有2个设备id，最多有10个设备id，设备id取值范围：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符。
 
@@ -101,7 +101,7 @@ class UpdateDeviceProxy:
 
     @property
     def effective_time_range(self):
-        """Gets the effective_time_range of this UpdateDeviceProxy.
+        r"""Gets the effective_time_range of this UpdateDeviceProxy.
 
         :return: The effective_time_range of this UpdateDeviceProxy.
         :rtype: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRange`
@@ -110,7 +110,7 @@ class UpdateDeviceProxy:
 
     @effective_time_range.setter
     def effective_time_range(self, effective_time_range):
-        """Sets the effective_time_range of this UpdateDeviceProxy.
+        r"""Sets the effective_time_range of this UpdateDeviceProxy.
 
         :param effective_time_range: The effective_time_range of this UpdateDeviceProxy.
         :type effective_time_range: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRange`

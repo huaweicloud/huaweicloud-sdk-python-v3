@@ -25,7 +25,7 @@ class ListTableModelsResultData:
     }
 
     def __init__(self, value=None):
-        """ListTableModelsResultData
+        r"""ListTableModelsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTableModelsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListTableModelsResultData.
+        r"""Gets the value of this ListTableModelsResultData.
 
         :return: The value of this ListTableModelsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelsResultDataValue`
@@ -52,7 +52,7 @@ class ListTableModelsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListTableModelsResultData.
+        r"""Sets the value of this ListTableModelsResultData.
 
         :param value: The value of this ListTableModelsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelsResultDataValue`

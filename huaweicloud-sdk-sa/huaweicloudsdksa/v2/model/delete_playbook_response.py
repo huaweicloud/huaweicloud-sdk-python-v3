@@ -32,7 +32,7 @@ class DeletePlaybookResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """DeletePlaybookResponse
+        r"""DeletePlaybookResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeletePlaybookResponse.
+        r"""Gets the code of this DeletePlaybookResponse.
 
         Error code
 
@@ -76,7 +76,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeletePlaybookResponse.
+        r"""Sets the code of this DeletePlaybookResponse.
 
         Error code
 
@@ -87,7 +87,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeletePlaybookResponse.
+        r"""Gets the message of this DeletePlaybookResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeletePlaybookResponse.
+        r"""Sets the message of this DeletePlaybookResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeletePlaybookResponse.
+        r"""Gets the data of this DeletePlaybookResponse.
 
         :return: The data of this DeletePlaybookResponse.
         :rtype: :class:`huaweicloudsdksa.v2.PlaybookInfo`
@@ -118,7 +118,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeletePlaybookResponse.
+        r"""Sets the data of this DeletePlaybookResponse.
 
         :param data: The data of this DeletePlaybookResponse.
         :type data: :class:`huaweicloudsdksa.v2.PlaybookInfo`
@@ -127,7 +127,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeletePlaybookResponse.
+        r"""Gets the x_request_id of this DeletePlaybookResponse.
 
         :return: The x_request_id of this DeletePlaybookResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class DeletePlaybookResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeletePlaybookResponse.
+        r"""Sets the x_request_id of this DeletePlaybookResponse.
 
         :param x_request_id: The x_request_id of this DeletePlaybookResponse.
         :type x_request_id: str

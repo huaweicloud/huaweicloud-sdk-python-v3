@@ -26,7 +26,7 @@ class ShowDatabaseAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, authorities=None):
-        """ShowDatabaseAuthorityResponse
+        r"""ShowDatabaseAuthorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDatabaseAuthorityResponse(SdkResponse):
 
     @property
     def authorities(self):
-        """Gets the authorities of this ShowDatabaseAuthorityResponse.
+        r"""Gets the authorities of this ShowDatabaseAuthorityResponse.
 
         对象权限集合
 
@@ -55,7 +55,7 @@ class ShowDatabaseAuthorityResponse(SdkResponse):
 
     @authorities.setter
     def authorities(self, authorities):
-        """Sets the authorities of this ShowDatabaseAuthorityResponse.
+        r"""Sets the authorities of this ShowDatabaseAuthorityResponse.
 
         对象权限集合
 

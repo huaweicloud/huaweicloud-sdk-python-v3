@@ -35,7 +35,7 @@ class ProxyConfiguration:
     }
 
     def __init__(self, name=None, data_type=None, elem_type=None, value_range=None, value=None, description=None):
-        """ProxyConfiguration
+        r"""ProxyConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProxyConfiguration:
 
     @property
     def name(self):
-        """Gets the name of this ProxyConfiguration.
+        r"""Gets the name of this ProxyConfiguration.
 
         参数名称
 
@@ -89,7 +89,7 @@ class ProxyConfiguration:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProxyConfiguration.
+        r"""Sets the name of this ProxyConfiguration.
 
         参数名称
 
@@ -100,7 +100,7 @@ class ProxyConfiguration:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ProxyConfiguration.
+        r"""Gets the data_type of this ProxyConfiguration.
 
         参数数据类型
 
@@ -111,7 +111,7 @@ class ProxyConfiguration:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ProxyConfiguration.
+        r"""Sets the data_type of this ProxyConfiguration.
 
         参数数据类型
 
@@ -122,7 +122,7 @@ class ProxyConfiguration:
 
     @property
     def elem_type(self):
-        """Gets the elem_type of this ProxyConfiguration.
+        r"""Gets the elem_type of this ProxyConfiguration.
 
         参数父标签类型
 
@@ -133,7 +133,7 @@ class ProxyConfiguration:
 
     @elem_type.setter
     def elem_type(self, elem_type):
-        """Sets the elem_type of this ProxyConfiguration.
+        r"""Sets the elem_type of this ProxyConfiguration.
 
         参数父标签类型
 
@@ -144,7 +144,7 @@ class ProxyConfiguration:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ProxyConfiguration.
+        r"""Gets the value_range of this ProxyConfiguration.
 
         取值范围
 
@@ -155,7 +155,7 @@ class ProxyConfiguration:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ProxyConfiguration.
+        r"""Sets the value_range of this ProxyConfiguration.
 
         取值范围
 
@@ -166,7 +166,7 @@ class ProxyConfiguration:
 
     @property
     def value(self):
-        """Gets the value of this ProxyConfiguration.
+        r"""Gets the value of this ProxyConfiguration.
 
         参数默认值
 
@@ -177,7 +177,7 @@ class ProxyConfiguration:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ProxyConfiguration.
+        r"""Sets the value of this ProxyConfiguration.
 
         参数默认值
 
@@ -188,7 +188,7 @@ class ProxyConfiguration:
 
     @property
     def description(self):
-        """Gets the description of this ProxyConfiguration.
+        r"""Gets the description of this ProxyConfiguration.
 
         参数描述
 
@@ -199,7 +199,7 @@ class ProxyConfiguration:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProxyConfiguration.
+        r"""Sets the description of this ProxyConfiguration.
 
         参数描述
 

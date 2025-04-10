@@ -33,7 +33,7 @@ class DbObjectColumnInfo:
     }
 
     def __init__(self, db_name=None, schema_name=None, table_name=None, column_infos=None, total_count=None):
-        """DbObjectColumnInfo
+        r"""DbObjectColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DbObjectColumnInfo:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DbObjectColumnInfo.
+        r"""Gets the db_name of this DbObjectColumnInfo.
 
         数据库库名称。
 
@@ -82,7 +82,7 @@ class DbObjectColumnInfo:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DbObjectColumnInfo.
+        r"""Sets the db_name of this DbObjectColumnInfo.
 
         数据库库名称。
 
@@ -93,7 +93,7 @@ class DbObjectColumnInfo:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this DbObjectColumnInfo.
+        r"""Gets the schema_name of this DbObjectColumnInfo.
 
         数据库schema名称。
 
@@ -104,7 +104,7 @@ class DbObjectColumnInfo:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this DbObjectColumnInfo.
+        r"""Sets the schema_name of this DbObjectColumnInfo.
 
         数据库schema名称。
 
@@ -115,7 +115,7 @@ class DbObjectColumnInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DbObjectColumnInfo.
+        r"""Gets the table_name of this DbObjectColumnInfo.
 
         数据库表名称。
 
@@ -126,7 +126,7 @@ class DbObjectColumnInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DbObjectColumnInfo.
+        r"""Sets the table_name of this DbObjectColumnInfo.
 
         数据库表名称。
 
@@ -137,7 +137,7 @@ class DbObjectColumnInfo:
 
     @property
     def column_infos(self):
-        """Gets the column_infos of this DbObjectColumnInfo.
+        r"""Gets the column_infos of this DbObjectColumnInfo.
 
         数据库列信息。
 
@@ -148,7 +148,7 @@ class DbObjectColumnInfo:
 
     @column_infos.setter
     def column_infos(self, column_infos):
-        """Sets the column_infos of this DbObjectColumnInfo.
+        r"""Sets the column_infos of this DbObjectColumnInfo.
 
         数据库列信息。
 
@@ -159,7 +159,7 @@ class DbObjectColumnInfo:
 
     @property
     def total_count(self):
-        """Gets the total_count of this DbObjectColumnInfo.
+        r"""Gets the total_count of this DbObjectColumnInfo.
 
         数据库列信息总数，与分页无关，仅作为返回体参数
 
@@ -170,7 +170,7 @@ class DbObjectColumnInfo:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this DbObjectColumnInfo.
+        r"""Sets the total_count of this DbObjectColumnInfo.
 
         数据库列信息总数，与分页无关，仅作为返回体参数
 

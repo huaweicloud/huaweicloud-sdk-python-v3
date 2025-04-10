@@ -31,7 +31,7 @@ class DeletePlaybookActionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, action_id=None):
-        """DeletePlaybookActionRequest
+        r"""DeletePlaybookActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeletePlaybookActionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeletePlaybookActionRequest.
+        r"""Gets the project_id of this DeletePlaybookActionRequest.
 
         ID of project
 
@@ -71,7 +71,7 @@ class DeletePlaybookActionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeletePlaybookActionRequest.
+        r"""Sets the project_id of this DeletePlaybookActionRequest.
 
         ID of project
 
@@ -82,7 +82,7 @@ class DeletePlaybookActionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeletePlaybookActionRequest.
+        r"""Gets the workspace_id of this DeletePlaybookActionRequest.
 
         ID of workspace
 
@@ -93,7 +93,7 @@ class DeletePlaybookActionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeletePlaybookActionRequest.
+        r"""Sets the workspace_id of this DeletePlaybookActionRequest.
 
         ID of workspace
 
@@ -104,7 +104,7 @@ class DeletePlaybookActionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeletePlaybookActionRequest.
+        r"""Gets the version_id of this DeletePlaybookActionRequest.
 
         version Id value
 
@@ -115,7 +115,7 @@ class DeletePlaybookActionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeletePlaybookActionRequest.
+        r"""Sets the version_id of this DeletePlaybookActionRequest.
 
         version Id value
 
@@ -126,7 +126,7 @@ class DeletePlaybookActionRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this DeletePlaybookActionRequest.
+        r"""Gets the action_id of this DeletePlaybookActionRequest.
 
         ID of action
 
@@ -137,7 +137,7 @@ class DeletePlaybookActionRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this DeletePlaybookActionRequest.
+        r"""Sets the action_id of this DeletePlaybookActionRequest.
 
         ID of action
 

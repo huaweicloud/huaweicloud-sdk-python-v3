@@ -34,7 +34,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     }
 
     def __init__(self, name=None, parent_id=None, id=None, level=None, project_id=None):
-        """UpdateAssetCategoryResponse
+        r"""UpdateAssetCategoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateAssetCategoryResponse.
+        r"""Gets the name of this UpdateAssetCategoryResponse.
 
         媒资分类名称。
 
@@ -83,7 +83,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAssetCategoryResponse.
+        r"""Sets the name of this UpdateAssetCategoryResponse.
 
         媒资分类名称。
 
@@ -94,7 +94,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this UpdateAssetCategoryResponse.
+        r"""Gets the parent_id of this UpdateAssetCategoryResponse.
 
         父分类ID。 一级分类父ID为0。
 
@@ -105,7 +105,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this UpdateAssetCategoryResponse.
+        r"""Sets the parent_id of this UpdateAssetCategoryResponse.
 
         父分类ID。 一级分类父ID为0。
 
@@ -116,7 +116,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAssetCategoryResponse.
+        r"""Gets the id of this UpdateAssetCategoryResponse.
 
         媒资分类ID。
 
@@ -127,7 +127,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAssetCategoryResponse.
+        r"""Sets the id of this UpdateAssetCategoryResponse.
 
         媒资分类ID。
 
@@ -138,7 +138,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @property
     def level(self):
-        """Gets the level of this UpdateAssetCategoryResponse.
+        r"""Gets the level of this UpdateAssetCategoryResponse.
 
         媒资分类层级。  取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
@@ -149,7 +149,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @level.setter
     def level(self, level):
-        """Sets the level of this UpdateAssetCategoryResponse.
+        r"""Sets the level of this UpdateAssetCategoryResponse.
 
         媒资分类层级。  取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
@@ -160,7 +160,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAssetCategoryResponse.
+        r"""Gets the project_id of this UpdateAssetCategoryResponse.
 
         项目ID。
 
@@ -171,7 +171,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAssetCategoryResponse.
+        r"""Sets the project_id of this UpdateAssetCategoryResponse.
 
         项目ID。
 

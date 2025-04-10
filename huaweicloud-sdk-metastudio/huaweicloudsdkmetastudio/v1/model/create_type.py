@@ -27,7 +27,7 @@ class CreateType:
     }
 
     def __init__(self):
-        """CreateType
+        r"""CreateType
 
         The model defined in huaweicloud sdk
 

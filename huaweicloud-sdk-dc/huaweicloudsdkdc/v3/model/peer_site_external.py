@@ -35,7 +35,7 @@ class PeerSiteExternal:
     }
 
     def __init__(self, gateway_id=None, link_id=None, region_id=None, project_id=None, site_code=None, type=None):
-        """PeerSiteExternal
+        r"""PeerSiteExternal
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PeerSiteExternal:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this PeerSiteExternal.
+        r"""Gets the gateway_id of this PeerSiteExternal.
 
         全域接入网关ID
 
@@ -89,7 +89,7 @@ class PeerSiteExternal:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this PeerSiteExternal.
+        r"""Sets the gateway_id of this PeerSiteExternal.
 
         全域接入网关ID
 
@@ -100,7 +100,7 @@ class PeerSiteExternal:
 
     @property
     def link_id(self):
-        """Gets the link_id of this PeerSiteExternal.
+        r"""Gets the link_id of this PeerSiteExternal.
 
         连接ID
 
@@ -111,7 +111,7 @@ class PeerSiteExternal:
 
     @link_id.setter
     def link_id(self, link_id):
-        """Sets the link_id of this PeerSiteExternal.
+        r"""Sets the link_id of this PeerSiteExternal.
 
         连接ID
 
@@ -122,7 +122,7 @@ class PeerSiteExternal:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PeerSiteExternal.
+        r"""Gets the region_id of this PeerSiteExternal.
 
         局点ID
 
@@ -133,7 +133,7 @@ class PeerSiteExternal:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PeerSiteExternal.
+        r"""Sets the region_id of this PeerSiteExternal.
 
         局点ID
 
@@ -144,7 +144,7 @@ class PeerSiteExternal:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PeerSiteExternal.
+        r"""Gets the project_id of this PeerSiteExternal.
 
         项目ID
 
@@ -155,7 +155,7 @@ class PeerSiteExternal:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PeerSiteExternal.
+        r"""Sets the project_id of this PeerSiteExternal.
 
         项目ID
 
@@ -166,7 +166,7 @@ class PeerSiteExternal:
 
     @property
     def site_code(self):
-        """Gets the site_code of this PeerSiteExternal.
+        r"""Gets the site_code of this PeerSiteExternal.
 
         网点编码
 
@@ -177,7 +177,7 @@ class PeerSiteExternal:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this PeerSiteExternal.
+        r"""Sets the site_code of this PeerSiteExternal.
 
         网点编码
 
@@ -188,7 +188,7 @@ class PeerSiteExternal:
 
     @property
     def type(self):
-        """Gets the type of this PeerSiteExternal.
+        r"""Gets the type of this PeerSiteExternal.
 
         连接类型
 
@@ -199,7 +199,7 @@ class PeerSiteExternal:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PeerSiteExternal.
+        r"""Sets the type of this PeerSiteExternal.
 
         连接类型
 

@@ -27,7 +27,7 @@ class Swagger:
     }
 
     def __init__(self, id=None, result=None):
-        """Swagger
+        r"""Swagger
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Swagger:
 
     @property
     def id(self):
-        """Gets the id of this Swagger.
+        r"""Gets the id of this Swagger.
 
         swagger文档编号
 
@@ -61,7 +61,7 @@ class Swagger:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Swagger.
+        r"""Sets the id of this Swagger.
 
         swagger文档编号
 
@@ -72,7 +72,7 @@ class Swagger:
 
     @property
     def result(self):
-        """Gets the result of this Swagger.
+        r"""Gets the result of this Swagger.
 
         导入结果说明
 
@@ -83,7 +83,7 @@ class Swagger:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this Swagger.
+        r"""Sets the result of this Swagger.
 
         导入结果说明
 

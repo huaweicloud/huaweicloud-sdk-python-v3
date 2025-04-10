@@ -25,7 +25,7 @@ class CreateFlinkJarJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFlinkJarJobRequest
+        r"""CreateFlinkJarJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFlinkJarJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFlinkJarJobRequest.
+        r"""Gets the body of this CreateFlinkJarJobRequest.
 
         :return: The body of this CreateFlinkJarJobRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkJarJobRequestBody`
@@ -52,7 +52,7 @@ class CreateFlinkJarJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFlinkJarJobRequest.
+        r"""Sets the body of this CreateFlinkJarJobRequest.
 
         :param body: The body of this CreateFlinkJarJobRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkJarJobRequestBody`

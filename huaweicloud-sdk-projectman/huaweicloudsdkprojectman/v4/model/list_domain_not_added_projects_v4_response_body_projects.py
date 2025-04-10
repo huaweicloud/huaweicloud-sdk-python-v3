@@ -39,7 +39,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
     }
 
     def __init__(self, project_num_id=None, project_id=None, project_name=None, description=None, created_time=None, updated_time=None, project_type=None, creator=None):
-        """ListDomainNotAddedProjectsV4ResponseBodyProjects
+        r"""ListDomainNotAddedProjectsV4ResponseBodyProjects
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def project_num_id(self):
-        """Gets the project_num_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the project_num_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目数字id
 
@@ -103,7 +103,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @project_num_id.setter
     def project_num_id(self, project_num_id):
-        """Sets the project_num_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the project_num_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目数字id
 
@@ -114,7 +114,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the project_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目id
 
@@ -125,7 +125,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the project_id of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目id
 
@@ -136,7 +136,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the project_name of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目名
 
@@ -147,7 +147,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the project_name of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目名
 
@@ -158,7 +158,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def description(self):
-        """Gets the description of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the description of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目描述
 
@@ -169,7 +169,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the description of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目描述
 
@@ -180,7 +180,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the created_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目创建时间
 
@@ -191,7 +191,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the created_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目创建时间
 
@@ -202,7 +202,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the updated_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目更新时间
 
@@ -213,7 +213,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the updated_time of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目更新时间
 
@@ -224,7 +224,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def project_type(self):
-        """Gets the project_type of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the project_type of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目类型
 
@@ -235,7 +235,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the project_type of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         项目类型
 
@@ -246,7 +246,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @property
     def creator(self):
-        """Gets the creator of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Gets the creator of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         :return: The creator of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4ResponseBodyCreator`
@@ -255,7 +255,7 @@ class ListDomainNotAddedProjectsV4ResponseBodyProjects:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
+        r"""Sets the creator of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
 
         :param creator: The creator of this ListDomainNotAddedProjectsV4ResponseBodyProjects.
         :type creator: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4ResponseBodyCreator`

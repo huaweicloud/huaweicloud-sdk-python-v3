@@ -37,7 +37,7 @@ class ListResourceGroupsServicesResourcesRequest:
     }
 
     def __init__(self, group_id=None, service=None, dim_name=None, limit=None, offset=None, status=None, dim_value=None):
-        """ListResourceGroupsServicesResourcesRequest
+        r"""ListResourceGroupsServicesResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the group_id of this ListResourceGroupsServicesResourcesRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -94,7 +94,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the group_id of this ListResourceGroupsServicesResourcesRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -105,7 +105,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def service(self):
-        """Gets the service of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the service of this ListResourceGroupsServicesResourcesRequest.
 
         服务类别，如SYS.ECS
 
@@ -116,7 +116,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the service of this ListResourceGroupsServicesResourcesRequest.
 
         服务类别，如SYS.ECS
 
@@ -127,7 +127,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def dim_name(self):
-        """Gets the dim_name of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the dim_name of this ListResourceGroupsServicesResourcesRequest.
 
         资源维度信息，多个维度按字母序使用逗号分割
 
@@ -138,7 +138,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @dim_name.setter
     def dim_name(self, dim_name):
-        """Sets the dim_name of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the dim_name of this ListResourceGroupsServicesResourcesRequest.
 
         资源维度信息，多个维度按字母序使用逗号分割
 
@@ -149,7 +149,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the limit of this ListResourceGroupsServicesResourcesRequest.
 
         分页查询时每页的条目数，取值[1,100]，默认值为100
 
@@ -160,7 +160,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the limit of this ListResourceGroupsServicesResourcesRequest.
 
         分页查询时每页的条目数，取值[1,100]，默认值为100
 
@@ -171,7 +171,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the offset of this ListResourceGroupsServicesResourcesRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -182,7 +182,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the offset of this ListResourceGroupsServicesResourcesRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -193,7 +193,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the status of this ListResourceGroupsServicesResourcesRequest.
 
         按状态信息进行过滤，取值只能为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未设置告警规则的资源）
 
@@ -204,7 +204,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the status of this ListResourceGroupsServicesResourcesRequest.
 
         按状态信息进行过滤，取值只能为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未设置告警规则的资源）
 
@@ -215,7 +215,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @property
     def dim_value(self):
-        """Gets the dim_value of this ListResourceGroupsServicesResourcesRequest.
+        r"""Gets the dim_value of this ListResourceGroupsServicesResourcesRequest.
 
         资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值
 
@@ -226,7 +226,7 @@ class ListResourceGroupsServicesResourcesRequest:
 
     @dim_value.setter
     def dim_value(self, dim_value):
-        """Sets the dim_value of this ListResourceGroupsServicesResourcesRequest.
+        r"""Sets the dim_value of this ListResourceGroupsServicesResourcesRequest.
 
         资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值
 

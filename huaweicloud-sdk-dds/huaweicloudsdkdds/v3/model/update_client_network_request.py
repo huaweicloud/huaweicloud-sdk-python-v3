@@ -27,7 +27,7 @@ class UpdateClientNetworkRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateClientNetworkRequest
+        r"""UpdateClientNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateClientNetworkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateClientNetworkRequest.
+        r"""Gets the instance_id of this UpdateClientNetworkRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateClientNetworkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateClientNetworkRequest.
+        r"""Sets the instance_id of this UpdateClientNetworkRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateClientNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClientNetworkRequest.
+        r"""Gets the body of this UpdateClientNetworkRequest.
 
         :return: The body of this UpdateClientNetworkRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.ClientNetworkRequestBody`
@@ -80,7 +80,7 @@ class UpdateClientNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClientNetworkRequest.
+        r"""Sets the body of this UpdateClientNetworkRequest.
 
         :param body: The body of this UpdateClientNetworkRequest.
         :type body: :class:`huaweicloudsdkdds.v3.ClientNetworkRequestBody`

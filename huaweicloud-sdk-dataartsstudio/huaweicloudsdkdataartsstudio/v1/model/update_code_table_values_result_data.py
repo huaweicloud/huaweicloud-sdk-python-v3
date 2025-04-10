@@ -25,7 +25,7 @@ class UpdateCodeTableValuesResultData:
     }
 
     def __init__(self, value=None):
-        """UpdateCodeTableValuesResultData
+        r"""UpdateCodeTableValuesResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateCodeTableValuesResultData:
 
     @property
     def value(self):
-        """Gets the value of this UpdateCodeTableValuesResultData.
+        r"""Gets the value of this UpdateCodeTableValuesResultData.
 
         码表字段列表信息。
 
@@ -54,7 +54,7 @@ class UpdateCodeTableValuesResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateCodeTableValuesResultData.
+        r"""Sets the value of this UpdateCodeTableValuesResultData.
 
         码表字段列表信息。
 

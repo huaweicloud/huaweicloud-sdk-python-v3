@@ -25,7 +25,7 @@ class DeleteSessionRequestBody:
     }
 
     def __init__(self, sessions=None):
-        """DeleteSessionRequestBody
+        r"""DeleteSessionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSessionRequestBody:
 
     @property
     def sessions(self):
-        """Gets the sessions of this DeleteSessionRequestBody.
+        r"""Gets the sessions of this DeleteSessionRequestBody.
 
         需要终结的会话ID列表。
 
@@ -53,7 +53,7 @@ class DeleteSessionRequestBody:
 
     @sessions.setter
     def sessions(self, sessions):
-        """Sets the sessions of this DeleteSessionRequestBody.
+        r"""Sets the sessions of this DeleteSessionRequestBody.
 
         需要终结的会话ID列表。
 

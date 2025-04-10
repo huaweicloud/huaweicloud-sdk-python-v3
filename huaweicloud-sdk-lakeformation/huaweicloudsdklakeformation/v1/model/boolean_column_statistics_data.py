@@ -29,7 +29,7 @@ class BooleanColumnStatisticsData:
     }
 
     def __init__(self, number_of_true=None, number_of_false=None, number_of_null=None):
-        """BooleanColumnStatisticsData
+        r"""BooleanColumnStatisticsData
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BooleanColumnStatisticsData:
 
     @property
     def number_of_true(self):
-        """Gets the number_of_true of this BooleanColumnStatisticsData.
+        r"""Gets the number_of_true of this BooleanColumnStatisticsData.
 
         列中为真的数量
 
@@ -65,7 +65,7 @@ class BooleanColumnStatisticsData:
 
     @number_of_true.setter
     def number_of_true(self, number_of_true):
-        """Sets the number_of_true of this BooleanColumnStatisticsData.
+        r"""Sets the number_of_true of this BooleanColumnStatisticsData.
 
         列中为真的数量
 
@@ -76,7 +76,7 @@ class BooleanColumnStatisticsData:
 
     @property
     def number_of_false(self):
-        """Gets the number_of_false of this BooleanColumnStatisticsData.
+        r"""Gets the number_of_false of this BooleanColumnStatisticsData.
 
         列中为假的数量
 
@@ -87,7 +87,7 @@ class BooleanColumnStatisticsData:
 
     @number_of_false.setter
     def number_of_false(self, number_of_false):
-        """Sets the number_of_false of this BooleanColumnStatisticsData.
+        r"""Sets the number_of_false of this BooleanColumnStatisticsData.
 
         列中为假的数量
 
@@ -98,7 +98,7 @@ class BooleanColumnStatisticsData:
 
     @property
     def number_of_null(self):
-        """Gets the number_of_null of this BooleanColumnStatisticsData.
+        r"""Gets the number_of_null of this BooleanColumnStatisticsData.
 
         列中为空的数量
 
@@ -109,7 +109,7 @@ class BooleanColumnStatisticsData:
 
     @number_of_null.setter
     def number_of_null(self, number_of_null):
-        """Sets the number_of_null of this BooleanColumnStatisticsData.
+        r"""Sets the number_of_null of this BooleanColumnStatisticsData.
 
         列中为空的数量
 

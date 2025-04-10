@@ -55,7 +55,7 @@ class NatGatewayResponseBody:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None, billing_info=None, dnat_rules_limit=None, snat_rule_public_ip_limit=None):
-        """NatGatewayResponseBody
+        r"""NatGatewayResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class NatGatewayResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this NatGatewayResponseBody.
+        r"""Gets the id of this NatGatewayResponseBody.
 
         公网NAT网关实例的ID。
 
@@ -143,7 +143,7 @@ class NatGatewayResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NatGatewayResponseBody.
+        r"""Sets the id of this NatGatewayResponseBody.
 
         公网NAT网关实例的ID。
 
@@ -154,7 +154,7 @@ class NatGatewayResponseBody:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NatGatewayResponseBody.
+        r"""Gets the tenant_id of this NatGatewayResponseBody.
 
         项目的ID。
 
@@ -165,7 +165,7 @@ class NatGatewayResponseBody:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NatGatewayResponseBody.
+        r"""Sets the tenant_id of this NatGatewayResponseBody.
 
         项目的ID。
 
@@ -176,7 +176,7 @@ class NatGatewayResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this NatGatewayResponseBody.
+        r"""Gets the name of this NatGatewayResponseBody.
 
         公网NAT网关实例的名字，长度限制为64。
 
@@ -187,7 +187,7 @@ class NatGatewayResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NatGatewayResponseBody.
+        r"""Sets the name of this NatGatewayResponseBody.
 
         公网NAT网关实例的名字，长度限制为64。
 
@@ -198,7 +198,7 @@ class NatGatewayResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this NatGatewayResponseBody.
+        r"""Gets the description of this NatGatewayResponseBody.
 
         公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -209,7 +209,7 @@ class NatGatewayResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NatGatewayResponseBody.
+        r"""Sets the description of this NatGatewayResponseBody.
 
         公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -220,7 +220,7 @@ class NatGatewayResponseBody:
 
     @property
     def spec(self):
-        """Gets the spec of this NatGatewayResponseBody.
+        r"""Gets the spec of this NatGatewayResponseBody.
 
         公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
 
@@ -231,7 +231,7 @@ class NatGatewayResponseBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this NatGatewayResponseBody.
+        r"""Sets the spec of this NatGatewayResponseBody.
 
         公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
 
@@ -242,7 +242,7 @@ class NatGatewayResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this NatGatewayResponseBody.
+        r"""Gets the status of this NatGatewayResponseBody.
 
         公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
@@ -253,7 +253,7 @@ class NatGatewayResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NatGatewayResponseBody.
+        r"""Sets the status of this NatGatewayResponseBody.
 
         公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
@@ -264,7 +264,7 @@ class NatGatewayResponseBody:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NatGatewayResponseBody.
+        r"""Gets the admin_state_up of this NatGatewayResponseBody.
 
         解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
 
@@ -275,7 +275,7 @@ class NatGatewayResponseBody:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NatGatewayResponseBody.
+        r"""Sets the admin_state_up of this NatGatewayResponseBody.
 
         解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
 
@@ -286,7 +286,7 @@ class NatGatewayResponseBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NatGatewayResponseBody.
+        r"""Gets the created_at of this NatGatewayResponseBody.
 
         公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -297,7 +297,7 @@ class NatGatewayResponseBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NatGatewayResponseBody.
+        r"""Sets the created_at of this NatGatewayResponseBody.
 
         公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -308,7 +308,7 @@ class NatGatewayResponseBody:
 
     @property
     def router_id(self):
-        """Gets the router_id of this NatGatewayResponseBody.
+        r"""Gets the router_id of this NatGatewayResponseBody.
 
         VPC的id。
 
@@ -319,7 +319,7 @@ class NatGatewayResponseBody:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this NatGatewayResponseBody.
+        r"""Sets the router_id of this NatGatewayResponseBody.
 
         VPC的id。
 
@@ -330,7 +330,7 @@ class NatGatewayResponseBody:
 
     @property
     def internal_network_id(self):
-        """Gets the internal_network_id of this NatGatewayResponseBody.
+        r"""Gets the internal_network_id of this NatGatewayResponseBody.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -341,7 +341,7 @@ class NatGatewayResponseBody:
 
     @internal_network_id.setter
     def internal_network_id(self, internal_network_id):
-        """Sets the internal_network_id of this NatGatewayResponseBody.
+        r"""Sets the internal_network_id of this NatGatewayResponseBody.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -352,7 +352,7 @@ class NatGatewayResponseBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NatGatewayResponseBody.
+        r"""Gets the enterprise_project_id of this NatGatewayResponseBody.
 
         企业项目ID。 创建公网NAT网关实例时，关联的企业项目ID。
 
@@ -363,7 +363,7 @@ class NatGatewayResponseBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NatGatewayResponseBody.
+        r"""Sets the enterprise_project_id of this NatGatewayResponseBody.
 
         企业项目ID。 创建公网NAT网关实例时，关联的企业项目ID。
 
@@ -374,7 +374,7 @@ class NatGatewayResponseBody:
 
     @property
     def session_conf(self):
-        """Gets the session_conf of this NatGatewayResponseBody.
+        r"""Gets the session_conf of this NatGatewayResponseBody.
 
         :return: The session_conf of this NatGatewayResponseBody.
         :rtype: :class:`huaweicloudsdknat.v2.SessionConfiguration`
@@ -383,7 +383,7 @@ class NatGatewayResponseBody:
 
     @session_conf.setter
     def session_conf(self, session_conf):
-        """Sets the session_conf of this NatGatewayResponseBody.
+        r"""Sets the session_conf of this NatGatewayResponseBody.
 
         :param session_conf: The session_conf of this NatGatewayResponseBody.
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
@@ -392,7 +392,7 @@ class NatGatewayResponseBody:
 
     @property
     def ngport_ip_address(self):
-        """Gets the ngport_ip_address of this NatGatewayResponseBody.
+        r"""Gets the ngport_ip_address of this NatGatewayResponseBody.
 
         公网NAT网关私有IP地址，由VPC中子网分配。
 
@@ -403,7 +403,7 @@ class NatGatewayResponseBody:
 
     @ngport_ip_address.setter
     def ngport_ip_address(self, ngport_ip_address):
-        """Sets the ngport_ip_address of this NatGatewayResponseBody.
+        r"""Sets the ngport_ip_address of this NatGatewayResponseBody.
 
         公网NAT网关私有IP地址，由VPC中子网分配。
 
@@ -414,7 +414,7 @@ class NatGatewayResponseBody:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this NatGatewayResponseBody.
+        r"""Gets the billing_info of this NatGatewayResponseBody.
 
         订单信息。此字段只有在订购包周期资源时才会有订单信息，而在订购按需资源时则为空。
 
@@ -425,7 +425,7 @@ class NatGatewayResponseBody:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this NatGatewayResponseBody.
+        r"""Sets the billing_info of this NatGatewayResponseBody.
 
         订单信息。此字段只有在订购包周期资源时才会有订单信息，而在订购按需资源时则为空。
 
@@ -436,7 +436,7 @@ class NatGatewayResponseBody:
 
     @property
     def dnat_rules_limit(self):
-        """Gets the dnat_rules_limit of this NatGatewayResponseBody.
+        r"""Gets the dnat_rules_limit of this NatGatewayResponseBody.
 
         公网NAT网关下DNAT规则数量限制，默认为200。
 
@@ -447,7 +447,7 @@ class NatGatewayResponseBody:
 
     @dnat_rules_limit.setter
     def dnat_rules_limit(self, dnat_rules_limit):
-        """Sets the dnat_rules_limit of this NatGatewayResponseBody.
+        r"""Sets the dnat_rules_limit of this NatGatewayResponseBody.
 
         公网NAT网关下DNAT规则数量限制，默认为200。
 
@@ -458,7 +458,7 @@ class NatGatewayResponseBody:
 
     @property
     def snat_rule_public_ip_limit(self):
-        """Gets the snat_rule_public_ip_limit of this NatGatewayResponseBody.
+        r"""Gets the snat_rule_public_ip_limit of this NatGatewayResponseBody.
 
         公网NAT网关下SNAT规则EIP池中EIP数量限制，默认为20。
 
@@ -469,7 +469,7 @@ class NatGatewayResponseBody:
 
     @snat_rule_public_ip_limit.setter
     def snat_rule_public_ip_limit(self, snat_rule_public_ip_limit):
-        """Sets the snat_rule_public_ip_limit of this NatGatewayResponseBody.
+        r"""Sets the snat_rule_public_ip_limit of this NatGatewayResponseBody.
 
         公网NAT网关下SNAT规则EIP池中EIP数量限制，默认为20。
 

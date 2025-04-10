@@ -25,7 +25,7 @@ class CreateVpcRouteRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVpcRouteRequest
+        r"""CreateVpcRouteRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVpcRouteRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpcRouteRequest.
+        r"""Gets the body of this CreateVpcRouteRequest.
 
         :return: The body of this CreateVpcRouteRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteRequestBody`
@@ -52,7 +52,7 @@ class CreateVpcRouteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpcRouteRequest.
+        r"""Sets the body of this CreateVpcRouteRequest.
 
         :param body: The body of this CreateVpcRouteRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteRequestBody`

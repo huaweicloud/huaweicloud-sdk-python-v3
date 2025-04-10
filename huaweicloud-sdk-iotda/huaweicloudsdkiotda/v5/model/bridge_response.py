@@ -29,7 +29,7 @@ class BridgeResponse:
     }
 
     def __init__(self, bridge_id=None, bridge_name=None, status=None):
-        """BridgeResponse
+        r"""BridgeResponse
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BridgeResponse:
 
     @property
     def bridge_id(self):
-        """Gets the bridge_id of this BridgeResponse.
+        r"""Gets the bridge_id of this BridgeResponse.
 
         网桥ID
 
@@ -68,7 +68,7 @@ class BridgeResponse:
 
     @bridge_id.setter
     def bridge_id(self, bridge_id):
-        """Sets the bridge_id of this BridgeResponse.
+        r"""Sets the bridge_id of this BridgeResponse.
 
         网桥ID
 
@@ -79,7 +79,7 @@ class BridgeResponse:
 
     @property
     def bridge_name(self):
-        """Gets the bridge_name of this BridgeResponse.
+        r"""Gets the bridge_name of this BridgeResponse.
 
         网桥名称。
 
@@ -90,7 +90,7 @@ class BridgeResponse:
 
     @bridge_name.setter
     def bridge_name(self, bridge_name):
-        """Sets the bridge_name of this BridgeResponse.
+        r"""Sets the bridge_name of this BridgeResponse.
 
         网桥名称。
 
@@ -101,7 +101,7 @@ class BridgeResponse:
 
     @property
     def status(self):
-        """Gets the status of this BridgeResponse.
+        r"""Gets the status of this BridgeResponse.
 
         网桥状态。 - ONLINE：网桥在线。 - OFFLINE：网桥离线。 
 
@@ -112,7 +112,7 @@ class BridgeResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BridgeResponse.
+        r"""Sets the status of this BridgeResponse.
 
         网桥状态。 - ONLINE：网桥在线。 - OFFLINE：网桥离线。 
 

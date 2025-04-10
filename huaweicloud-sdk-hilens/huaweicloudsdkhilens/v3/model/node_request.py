@@ -25,7 +25,7 @@ class NodeRequest:
     }
 
     def __init__(self, node=None):
-        """NodeRequest
+        r"""NodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NodeRequest:
 
     @property
     def node(self):
-        """Gets the node of this NodeRequest.
+        r"""Gets the node of this NodeRequest.
 
         :return: The node of this NodeRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.NodeReqDetail`
@@ -51,7 +51,7 @@ class NodeRequest:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this NodeRequest.
+        r"""Sets the node of this NodeRequest.
 
         :param node: The node of this NodeRequest.
         :type node: :class:`huaweicloudsdkhilens.v3.NodeReqDetail`

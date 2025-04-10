@@ -26,7 +26,7 @@ class CommitAsyncJobResponse(SdkResponse):
     }
 
     def __init__(self, job=None):
-        """CommitAsyncJobResponse
+        r"""CommitAsyncJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CommitAsyncJobResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this CommitAsyncJobResponse.
+        r"""Gets the job of this CommitAsyncJobResponse.
 
         :return: The job of this CommitAsyncJobResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.AsyncCommitJobResp`
@@ -53,7 +53,7 @@ class CommitAsyncJobResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this CommitAsyncJobResponse.
+        r"""Sets the job of this CommitAsyncJobResponse.
 
         :param job: The job of this CommitAsyncJobResponse.
         :type job: :class:`huaweicloudsdkdrs.v5.AsyncCommitJobResp`

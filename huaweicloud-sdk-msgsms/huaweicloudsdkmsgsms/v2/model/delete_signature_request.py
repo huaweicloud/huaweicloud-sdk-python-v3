@@ -25,7 +25,7 @@ class DeleteSignatureRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteSignatureRequest
+        r"""DeleteSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSignatureRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSignatureRequest.
+        r"""Gets the id of this DeleteSignatureRequest.
 
         签名ID
 
@@ -53,7 +53,7 @@ class DeleteSignatureRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSignatureRequest.
+        r"""Sets the id of this DeleteSignatureRequest.
 
         签名ID
 

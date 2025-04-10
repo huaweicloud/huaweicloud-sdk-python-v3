@@ -30,7 +30,7 @@ class PutEventsResponse(SdkResponse):
     }
 
     def __init__(self, failed_count=None, events=None, x_request_id=None):
-        """PutEventsResponse
+        r"""PutEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class PutEventsResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this PutEventsResponse.
+        r"""Gets the failed_count of this PutEventsResponse.
 
         发布失败的事件个数
 
@@ -69,7 +69,7 @@ class PutEventsResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this PutEventsResponse.
+        r"""Sets the failed_count of this PutEventsResponse.
 
         发布失败的事件个数
 
@@ -80,7 +80,7 @@ class PutEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this PutEventsResponse.
+        r"""Gets the events of this PutEventsResponse.
 
         事件列表
 
@@ -91,7 +91,7 @@ class PutEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this PutEventsResponse.
+        r"""Sets the events of this PutEventsResponse.
 
         事件列表
 
@@ -102,7 +102,7 @@ class PutEventsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this PutEventsResponse.
+        r"""Gets the x_request_id of this PutEventsResponse.
 
         :return: The x_request_id of this PutEventsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class PutEventsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this PutEventsResponse.
+        r"""Sets the x_request_id of this PutEventsResponse.
 
         :param x_request_id: The x_request_id of this PutEventsResponse.
         :type x_request_id: str

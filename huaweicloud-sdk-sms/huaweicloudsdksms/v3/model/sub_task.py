@@ -39,7 +39,7 @@ class SubTask:
     }
 
     def __init__(self, id=None, name=None, progress=None, start_date=None, end_date=None, migrate_speed=None, user_op=None, process_trace=None):
-        """SubTask
+        r"""SubTask
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class SubTask:
 
     @property
     def id(self):
-        """Gets the id of this SubTask.
+        r"""Gets the id of this SubTask.
 
         子任务ID
 
@@ -102,7 +102,7 @@ class SubTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubTask.
+        r"""Sets the id of this SubTask.
 
         子任务ID
 
@@ -113,7 +113,7 @@ class SubTask:
 
     @property
     def name(self):
-        """Gets the name of this SubTask.
+        r"""Gets the name of this SubTask.
 
         子任务名称
 
@@ -124,7 +124,7 @@ class SubTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubTask.
+        r"""Sets the name of this SubTask.
 
         子任务名称
 
@@ -135,7 +135,7 @@ class SubTask:
 
     @property
     def progress(self):
-        """Gets the progress of this SubTask.
+        r"""Gets the progress of this SubTask.
 
         子任务的进度，取值为0-100之间的整数
 
@@ -146,7 +146,7 @@ class SubTask:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this SubTask.
+        r"""Sets the progress of this SubTask.
 
         子任务的进度，取值为0-100之间的整数
 
@@ -157,7 +157,7 @@ class SubTask:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SubTask.
+        r"""Gets the start_date of this SubTask.
 
         子任务开始时间
 
@@ -168,7 +168,7 @@ class SubTask:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SubTask.
+        r"""Sets the start_date of this SubTask.
 
         子任务开始时间
 
@@ -179,7 +179,7 @@ class SubTask:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SubTask.
+        r"""Gets the end_date of this SubTask.
 
         子任务结束时间（如果子任务还没有结束，则为空）
 
@@ -190,7 +190,7 @@ class SubTask:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SubTask.
+        r"""Sets the end_date of this SubTask.
 
         子任务结束时间（如果子任务还没有结束，则为空）
 
@@ -201,7 +201,7 @@ class SubTask:
 
     @property
     def migrate_speed(self):
-        """Gets the migrate_speed of this SubTask.
+        r"""Gets the migrate_speed of this SubTask.
 
         迁移速率，Mbit/s
 
@@ -212,7 +212,7 @@ class SubTask:
 
     @migrate_speed.setter
     def migrate_speed(self, migrate_speed):
-        """Sets the migrate_speed of this SubTask.
+        r"""Sets the migrate_speed of this SubTask.
 
         迁移速率，Mbit/s
 
@@ -223,7 +223,7 @@ class SubTask:
 
     @property
     def user_op(self):
-        """Gets the user_op of this SubTask.
+        r"""Gets the user_op of this SubTask.
 
         触发子任务的用户操作名称
 
@@ -234,7 +234,7 @@ class SubTask:
 
     @user_op.setter
     def user_op(self, user_op):
-        """Sets the user_op of this SubTask.
+        r"""Sets the user_op of this SubTask.
 
         触发子任务的用户操作名称
 
@@ -245,7 +245,7 @@ class SubTask:
 
     @property
     def process_trace(self):
-        """Gets the process_trace of this SubTask.
+        r"""Gets the process_trace of this SubTask.
 
         迁移或同步时，具体的迁移详情
 
@@ -256,7 +256,7 @@ class SubTask:
 
     @process_trace.setter
     def process_trace(self, process_trace):
-        """Sets the process_trace of this SubTask.
+        r"""Sets the process_trace of this SubTask.
 
         迁移或同步时，具体的迁移详情
 

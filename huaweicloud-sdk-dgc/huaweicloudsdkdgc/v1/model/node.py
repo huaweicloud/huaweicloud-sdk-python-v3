@@ -51,7 +51,7 @@ class Node:
     }
 
     def __init__(self, name=None, type=None, location=None, pre_node_name=None, conditions=None, properties=None, polling_interval=None, exec_time_out_retry=None, max_execution_time=None, retry_times=None, retry_interval=None, fail_policy=None, event_trigger=None, cron_trigger=None):
-        """Node
+        r"""Node
 
         The model defined in huaweicloud sdk
 
@@ -130,7 +130,7 @@ class Node:
 
     @property
     def name(self):
-        """Gets the name of this Node.
+        r"""Gets the name of this Node.
 
         节点名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号，且长度小于等于128个字符。同一个作业中节点名称不能重复。
 
@@ -141,7 +141,7 @@ class Node:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Node.
+        r"""Sets the name of this Node.
 
         节点名称，只能包含六种字符：英文字母、数字、中文、中划线、下划线和点号，且长度小于等于128个字符。同一个作业中节点名称不能重复。
 
@@ -152,7 +152,7 @@ class Node:
 
     @property
     def type(self):
-        """Gets the type of this Node.
+        r"""Gets the type of this Node.
 
         节点的类型
 
@@ -163,7 +163,7 @@ class Node:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Node.
+        r"""Sets the type of this Node.
 
         节点的类型
 
@@ -174,7 +174,7 @@ class Node:
 
     @property
     def location(self):
-        """Gets the location of this Node.
+        r"""Gets the location of this Node.
 
         :return: The location of this Node.
         :rtype: :class:`huaweicloudsdkdgc.v1.Location`
@@ -183,7 +183,7 @@ class Node:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this Node.
+        r"""Sets the location of this Node.
 
         :param location: The location of this Node.
         :type location: :class:`huaweicloudsdkdgc.v1.Location`
@@ -192,7 +192,7 @@ class Node:
 
     @property
     def pre_node_name(self):
-        """Gets the pre_node_name of this Node.
+        r"""Gets the pre_node_name of this Node.
 
         本本节点依赖的前面的节点名称列表
 
@@ -203,7 +203,7 @@ class Node:
 
     @pre_node_name.setter
     def pre_node_name(self, pre_node_name):
-        """Sets the pre_node_name of this Node.
+        r"""Sets the pre_node_name of this Node.
 
         本本节点依赖的前面的节点名称列表
 
@@ -214,7 +214,7 @@ class Node:
 
     @property
     def conditions(self):
-        """Gets the conditions of this Node.
+        r"""Gets the conditions of this Node.
 
         节点执行条件，如果配置此参数，本节点是否执行由condition的字段expression所保存的EL表达式计算结果决定
 
@@ -225,7 +225,7 @@ class Node:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this Node.
+        r"""Sets the conditions of this Node.
 
         节点执行条件，如果配置此参数，本节点是否执行由condition的字段expression所保存的EL表达式计算结果决定
 
@@ -236,7 +236,7 @@ class Node:
 
     @property
     def properties(self):
-        """Gets the properties of this Node.
+        r"""Gets the properties of this Node.
 
         节点属性
 
@@ -247,7 +247,7 @@ class Node:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this Node.
+        r"""Sets the properties of this Node.
 
         节点属性
 
@@ -258,7 +258,7 @@ class Node:
 
     @property
     def polling_interval(self):
-        """Gets the polling_interval of this Node.
+        r"""Gets the polling_interval of this Node.
 
         轮询节点执行结果时间间隔
 
@@ -269,7 +269,7 @@ class Node:
 
     @polling_interval.setter
     def polling_interval(self, polling_interval):
-        """Sets the polling_interval of this Node.
+        r"""Sets the polling_interval of this Node.
 
         轮询节点执行结果时间间隔
 
@@ -280,7 +280,7 @@ class Node:
 
     @property
     def exec_time_out_retry(self):
-        """Gets the exec_time_out_retry of this Node.
+        r"""Gets the exec_time_out_retry of this Node.
 
         节点是否超时重试
 
@@ -291,7 +291,7 @@ class Node:
 
     @exec_time_out_retry.setter
     def exec_time_out_retry(self, exec_time_out_retry):
-        """Sets the exec_time_out_retry of this Node.
+        r"""Sets the exec_time_out_retry of this Node.
 
         节点是否超时重试
 
@@ -302,7 +302,7 @@ class Node:
 
     @property
     def max_execution_time(self):
-        """Gets the max_execution_time of this Node.
+        r"""Gets the max_execution_time of this Node.
 
         节点最大执行时间
 
@@ -313,7 +313,7 @@ class Node:
 
     @max_execution_time.setter
     def max_execution_time(self, max_execution_time):
-        """Sets the max_execution_time of this Node.
+        r"""Sets the max_execution_time of this Node.
 
         节点最大执行时间
 
@@ -324,7 +324,7 @@ class Node:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this Node.
+        r"""Gets the retry_times of this Node.
 
         节点失败重试次数
 
@@ -335,7 +335,7 @@ class Node:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this Node.
+        r"""Sets the retry_times of this Node.
 
         节点失败重试次数
 
@@ -346,7 +346,7 @@ class Node:
 
     @property
     def retry_interval(self):
-        """Gets the retry_interval of this Node.
+        r"""Gets the retry_interval of this Node.
 
         失败重试时间间隔
 
@@ -357,7 +357,7 @@ class Node:
 
     @retry_interval.setter
     def retry_interval(self, retry_interval):
-        """Sets the retry_interval of this Node.
+        r"""Sets the retry_interval of this Node.
 
         失败重试时间间隔
 
@@ -368,7 +368,7 @@ class Node:
 
     @property
     def fail_policy(self):
-        """Gets the fail_policy of this Node.
+        r"""Gets the fail_policy of this Node.
 
         作业失败策略
 
@@ -379,7 +379,7 @@ class Node:
 
     @fail_policy.setter
     def fail_policy(self, fail_policy):
-        """Sets the fail_policy of this Node.
+        r"""Sets the fail_policy of this Node.
 
         作业失败策略
 
@@ -390,7 +390,7 @@ class Node:
 
     @property
     def event_trigger(self):
-        """Gets the event_trigger of this Node.
+        r"""Gets the event_trigger of this Node.
 
         :return: The event_trigger of this Node.
         :rtype: :class:`huaweicloudsdkdgc.v1.Event`
@@ -399,7 +399,7 @@ class Node:
 
     @event_trigger.setter
     def event_trigger(self, event_trigger):
-        """Sets the event_trigger of this Node.
+        r"""Sets the event_trigger of this Node.
 
         :param event_trigger: The event_trigger of this Node.
         :type event_trigger: :class:`huaweicloudsdkdgc.v1.Event`
@@ -408,7 +408,7 @@ class Node:
 
     @property
     def cron_trigger(self):
-        """Gets the cron_trigger of this Node.
+        r"""Gets the cron_trigger of this Node.
 
         :return: The cron_trigger of this Node.
         :rtype: :class:`huaweicloudsdkdgc.v1.CronTrigger`
@@ -417,7 +417,7 @@ class Node:
 
     @cron_trigger.setter
     def cron_trigger(self, cron_trigger):
-        """Sets the cron_trigger of this Node.
+        r"""Sets the cron_trigger of this Node.
 
         :param cron_trigger: The cron_trigger of this Node.
         :type cron_trigger: :class:`huaweicloudsdkdgc.v1.CronTrigger`

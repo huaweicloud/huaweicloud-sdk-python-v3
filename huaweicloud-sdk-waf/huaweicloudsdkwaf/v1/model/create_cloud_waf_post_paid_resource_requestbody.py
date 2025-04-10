@@ -25,7 +25,7 @@ class CreateCloudWafPostPaidResourceRequestbody:
     }
 
     def __init__(self, console_area=None):
-        """CreateCloudWafPostPaidResourceRequestbody
+        r"""CreateCloudWafPostPaidResourceRequestbody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateCloudWafPostPaidResourceRequestbody:
 
     @property
     def console_area(self):
-        """Gets the console_area of this CreateCloudWafPostPaidResourceRequestbody.
+        r"""Gets the console_area of this CreateCloudWafPostPaidResourceRequestbody.
 
         租户所在的站点，hec-hk：华为云国际站
 
@@ -53,7 +53,7 @@ class CreateCloudWafPostPaidResourceRequestbody:
 
     @console_area.setter
     def console_area(self, console_area):
-        """Sets the console_area of this CreateCloudWafPostPaidResourceRequestbody.
+        r"""Sets the console_area of this CreateCloudWafPostPaidResourceRequestbody.
 
         租户所在的站点，hec-hk：华为云国际站
 

@@ -27,7 +27,7 @@ class CreateCommonTaskRequestBody:
     }
 
     def __init__(self, task=None, task_detail=None):
-        """CreateCommonTaskRequestBody
+        r"""CreateCommonTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateCommonTaskRequestBody:
 
     @property
     def task(self):
-        """Gets the task of this CreateCommonTaskRequestBody.
+        r"""Gets the task of this CreateCommonTaskRequestBody.
 
         :return: The task of this CreateCommonTaskRequestBody.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskBasicRequestBody`
@@ -57,7 +57,7 @@ class CreateCommonTaskRequestBody:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this CreateCommonTaskRequestBody.
+        r"""Sets the task of this CreateCommonTaskRequestBody.
 
         :param task: The task of this CreateCommonTaskRequestBody.
         :type task: :class:`huaweicloudsdkroma.v2.TaskBasicRequestBody`
@@ -66,7 +66,7 @@ class CreateCommonTaskRequestBody:
 
     @property
     def task_detail(self):
-        """Gets the task_detail of this CreateCommonTaskRequestBody.
+        r"""Gets the task_detail of this CreateCommonTaskRequestBody.
 
         参数类型为string，参数结构参照附录中“数据集成参数说明>RawFormDataRequest”章节
 
@@ -77,7 +77,7 @@ class CreateCommonTaskRequestBody:
 
     @task_detail.setter
     def task_detail(self, task_detail):
-        """Sets the task_detail of this CreateCommonTaskRequestBody.
+        r"""Sets the task_detail of this CreateCommonTaskRequestBody.
 
         参数类型为string，参数结构参照附录中“数据集成参数说明>RawFormDataRequest”章节
 

@@ -27,7 +27,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """SrCreateInstanceRspInstanceTagsInfo
+        r"""SrCreateInstanceRspInstanceTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this SrCreateInstanceRspInstanceTagsInfo.
+        r"""Gets the tags of this SrCreateInstanceRspInstanceTagsInfo.
 
         用户标签。默认为空。
 
@@ -61,7 +61,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SrCreateInstanceRspInstanceTagsInfo.
+        r"""Sets the tags of this SrCreateInstanceRspInstanceTagsInfo.
 
         用户标签。默认为空。
 
@@ -72,7 +72,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this SrCreateInstanceRspInstanceTagsInfo.
+        r"""Gets the sys_tags of this SrCreateInstanceRspInstanceTagsInfo.
 
         系统标签。
 
@@ -83,7 +83,7 @@ class SrCreateInstanceRspInstanceTagsInfo:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this SrCreateInstanceRspInstanceTagsInfo.
+        r"""Sets the sys_tags of this SrCreateInstanceRspInstanceTagsInfo.
 
         系统标签。
 

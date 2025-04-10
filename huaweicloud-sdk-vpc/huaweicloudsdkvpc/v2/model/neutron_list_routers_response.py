@@ -28,7 +28,7 @@ class NeutronListRoutersResponse(SdkResponse):
     }
 
     def __init__(self, routers=None, routers_links=None):
-        """NeutronListRoutersResponse
+        r"""NeutronListRoutersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NeutronListRoutersResponse(SdkResponse):
 
     @property
     def routers(self):
-        """Gets the routers of this NeutronListRoutersResponse.
+        r"""Gets the routers of this NeutronListRoutersResponse.
 
         router对象列表
 
@@ -62,7 +62,7 @@ class NeutronListRoutersResponse(SdkResponse):
 
     @routers.setter
     def routers(self, routers):
-        """Sets the routers of this NeutronListRoutersResponse.
+        r"""Sets the routers of this NeutronListRoutersResponse.
 
         router对象列表
 
@@ -73,7 +73,7 @@ class NeutronListRoutersResponse(SdkResponse):
 
     @property
     def routers_links(self):
-        """Gets the routers_links of this NeutronListRoutersResponse.
+        r"""Gets the routers_links of this NeutronListRoutersResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class NeutronListRoutersResponse(SdkResponse):
 
     @routers_links.setter
     def routers_links(self, routers_links):
-        """Sets the routers_links of this NeutronListRoutersResponse.
+        r"""Sets the routers_links of this NeutronListRoutersResponse.
 
         分页信息
 

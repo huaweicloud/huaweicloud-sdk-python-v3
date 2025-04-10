@@ -27,7 +27,7 @@ class ExpandInstanceNodesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExpandInstanceNodesRequest
+        r"""ExpandInstanceNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandInstanceNodesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExpandInstanceNodesRequest.
+        r"""Gets the instance_id of this ExpandInstanceNodesRequest.
 
         DDM实例ID
 
@@ -60,7 +60,7 @@ class ExpandInstanceNodesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExpandInstanceNodesRequest.
+        r"""Sets the instance_id of this ExpandInstanceNodesRequest.
 
         DDM实例ID
 
@@ -71,7 +71,7 @@ class ExpandInstanceNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandInstanceNodesRequest.
+        r"""Gets the body of this ExpandInstanceNodesRequest.
 
         :return: The body of this ExpandInstanceNodesRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.EnlargeRequest`
@@ -80,7 +80,7 @@ class ExpandInstanceNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandInstanceNodesRequest.
+        r"""Sets the body of this ExpandInstanceNodesRequest.
 
         :param body: The body of this ExpandInstanceNodesRequest.
         :type body: :class:`huaweicloudsdkddm.v1.EnlargeRequest`

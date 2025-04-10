@@ -29,7 +29,7 @@ class ClusterTask:
     }
 
     def __init__(self, description=None, id=None, name=None):
-        """ClusterTask
+        r"""ClusterTask
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ClusterTask:
 
     @property
     def description(self):
-        """Gets the description of this ClusterTask.
+        r"""Gets the description of this ClusterTask.
 
         任务描述
 
@@ -68,7 +68,7 @@ class ClusterTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClusterTask.
+        r"""Sets the description of this ClusterTask.
 
         任务描述
 
@@ -79,7 +79,7 @@ class ClusterTask:
 
     @property
     def id(self):
-        """Gets the id of this ClusterTask.
+        r"""Gets the id of this ClusterTask.
 
         任务id
 
@@ -90,7 +90,7 @@ class ClusterTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterTask.
+        r"""Sets the id of this ClusterTask.
 
         任务id
 
@@ -101,7 +101,7 @@ class ClusterTask:
 
     @property
     def name(self):
-        """Gets the name of this ClusterTask.
+        r"""Gets the name of this ClusterTask.
 
         任务名称
 
@@ -112,7 +112,7 @@ class ClusterTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterTask.
+        r"""Sets the name of this ClusterTask.
 
         任务名称
 

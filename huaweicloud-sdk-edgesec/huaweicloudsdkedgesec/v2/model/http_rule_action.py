@@ -29,7 +29,7 @@ class HttpRuleAction:
     }
 
     def __init__(self, category=None, followed_action_id=None, detail=None):
-        """HttpRuleAction
+        r"""HttpRuleAction
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class HttpRuleAction:
 
     @property
     def category(self):
-        """Gets the category of this HttpRuleAction.
+        r"""Gets the category of this HttpRuleAction.
 
         操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
 
@@ -67,7 +67,7 @@ class HttpRuleAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this HttpRuleAction.
+        r"""Sets the category of this HttpRuleAction.
 
         操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
 
@@ -78,7 +78,7 @@ class HttpRuleAction:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this HttpRuleAction.
+        r"""Gets the followed_action_id of this HttpRuleAction.
 
         攻击惩罚规则id，只有当category参数值为block时才可配置该参数
 
@@ -89,7 +89,7 @@ class HttpRuleAction:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this HttpRuleAction.
+        r"""Sets the followed_action_id of this HttpRuleAction.
 
         攻击惩罚规则id，只有当category参数值为block时才可配置该参数
 
@@ -100,7 +100,7 @@ class HttpRuleAction:
 
     @property
     def detail(self):
-        """Gets the detail of this HttpRuleAction.
+        r"""Gets the detail of this HttpRuleAction.
 
         :return: The detail of this HttpRuleAction.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleActionDetail`
@@ -109,7 +109,7 @@ class HttpRuleAction:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this HttpRuleAction.
+        r"""Sets the detail of this HttpRuleAction.
 
         :param detail: The detail of this HttpRuleAction.
         :type detail: :class:`huaweicloudsdkedgesec.v2.HttpRuleActionDetail`

@@ -31,7 +31,7 @@ class ShowWorkFlowMetricRequest:
     }
 
     def __init__(self, workflow_urn=None, period=None, start_time=None, end_time=None):
-        """ShowWorkFlowMetricRequest
+        r"""ShowWorkFlowMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowWorkFlowMetricRequest:
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this ShowWorkFlowMetricRequest.
+        r"""Gets the workflow_urn of this ShowWorkFlowMetricRequest.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -74,7 +74,7 @@ class ShowWorkFlowMetricRequest:
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this ShowWorkFlowMetricRequest.
+        r"""Sets the workflow_urn of this ShowWorkFlowMetricRequest.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -85,7 +85,7 @@ class ShowWorkFlowMetricRequest:
 
     @property
     def period(self):
-        """Gets the period of this ShowWorkFlowMetricRequest.
+        r"""Gets the period of this ShowWorkFlowMetricRequest.
 
         时间段，单位为分钟
 
@@ -96,7 +96,7 @@ class ShowWorkFlowMetricRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowWorkFlowMetricRequest.
+        r"""Sets the period of this ShowWorkFlowMetricRequest.
 
         时间段，单位为分钟
 
@@ -107,7 +107,7 @@ class ShowWorkFlowMetricRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowWorkFlowMetricRequest.
+        r"""Gets the start_time of this ShowWorkFlowMetricRequest.
 
         开始时间，精确到ms的时间戳
 
@@ -118,7 +118,7 @@ class ShowWorkFlowMetricRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowWorkFlowMetricRequest.
+        r"""Sets the start_time of this ShowWorkFlowMetricRequest.
 
         开始时间，精确到ms的时间戳
 
@@ -129,7 +129,7 @@ class ShowWorkFlowMetricRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowWorkFlowMetricRequest.
+        r"""Gets the end_time of this ShowWorkFlowMetricRequest.
 
         结束时间，精确到ms的时间戳
 
@@ -140,7 +140,7 @@ class ShowWorkFlowMetricRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowWorkFlowMetricRequest.
+        r"""Sets the end_time of this ShowWorkFlowMetricRequest.
 
         结束时间，精确到ms的时间戳
 

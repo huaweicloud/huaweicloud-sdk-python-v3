@@ -25,7 +25,7 @@ class AttachVipBandwidthRequestBody:
     }
 
     def __init__(self, bandwidth_id=None):
-        """AttachVipBandwidthRequestBody
+        r"""AttachVipBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachVipBandwidthRequestBody:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this AttachVipBandwidthRequestBody.
+        r"""Gets the bandwidth_id of this AttachVipBandwidthRequestBody.
 
         带宽ID。
 
@@ -53,7 +53,7 @@ class AttachVipBandwidthRequestBody:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this AttachVipBandwidthRequestBody.
+        r"""Sets the bandwidth_id of this AttachVipBandwidthRequestBody.
 
         带宽ID。
 

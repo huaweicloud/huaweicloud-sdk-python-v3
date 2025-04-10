@@ -26,7 +26,7 @@ class AddNicsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """AddNicsResponse
+        r"""AddNicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddNicsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AddNicsResponse.
+        r"""Gets the job_id of this AddNicsResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class AddNicsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AddNicsResponse.
+        r"""Sets the job_id of this AddNicsResponse.
 
         任务ID。
 

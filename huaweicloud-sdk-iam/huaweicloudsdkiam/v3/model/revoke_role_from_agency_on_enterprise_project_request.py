@@ -25,7 +25,7 @@ class RevokeRoleFromAgencyOnEnterpriseProjectRequest:
     }
 
     def __init__(self, body=None):
-        """RevokeRoleFromAgencyOnEnterpriseProjectRequest
+        r"""RevokeRoleFromAgencyOnEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RevokeRoleFromAgencyOnEnterpriseProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this RevokeRoleFromAgencyOnEnterpriseProjectRequest.
+        r"""Gets the body of this RevokeRoleFromAgencyOnEnterpriseProjectRequest.
 
         :return: The body of this RevokeRoleFromAgencyOnEnterpriseProjectRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOrDelAgencyEpPolicyAssignmentReqBody`
@@ -52,7 +52,7 @@ class RevokeRoleFromAgencyOnEnterpriseProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokeRoleFromAgencyOnEnterpriseProjectRequest.
+        r"""Sets the body of this RevokeRoleFromAgencyOnEnterpriseProjectRequest.
 
         :param body: The body of this RevokeRoleFromAgencyOnEnterpriseProjectRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateOrDelAgencyEpPolicyAssignmentReqBody`

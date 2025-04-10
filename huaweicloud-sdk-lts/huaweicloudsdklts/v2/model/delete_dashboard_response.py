@@ -26,7 +26,7 @@ class DeleteDashboardResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteDashboardResponse
+        r"""DeleteDashboardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDashboardResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteDashboardResponse.
+        r"""Gets the result of this DeleteDashboardResponse.
 
         删除仪表盘结果
 
@@ -55,7 +55,7 @@ class DeleteDashboardResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteDashboardResponse.
+        r"""Sets the result of this DeleteDashboardResponse.
 
         删除仪表盘结果
 

@@ -33,7 +33,7 @@ class ResourceDto:
     }
 
     def __init__(self, cpu_type=None, cpu=None, memory=None, gpu_type=None, gpu=None):
-        """ResourceDto
+        r"""ResourceDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResourceDto:
 
     @property
     def cpu_type(self):
-        """Gets the cpu_type of this ResourceDto.
+        r"""Gets the cpu_type of this ResourceDto.
 
         cpu架构类型，不填默认X86
 
@@ -82,7 +82,7 @@ class ResourceDto:
 
     @cpu_type.setter
     def cpu_type(self, cpu_type):
-        """Sets the cpu_type of this ResourceDto.
+        r"""Sets the cpu_type of this ResourceDto.
 
         cpu架构类型，不填默认X86
 
@@ -93,7 +93,7 @@ class ResourceDto:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ResourceDto.
+        r"""Gets the cpu of this ResourceDto.
 
         cpu申请使用量，取值范围[0.1-128]，单位C，支持一位小数。对于应用，不填默认1C；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -104,7 +104,7 @@ class ResourceDto:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ResourceDto.
+        r"""Sets the cpu of this ResourceDto.
 
         cpu申请使用量，取值范围[0.1-128]，单位C，支持一位小数。对于应用，不填默认1C；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -115,7 +115,7 @@ class ResourceDto:
 
     @property
     def memory(self):
-        """Gets the memory of this ResourceDto.
+        r"""Gets the memory of this ResourceDto.
 
         内存申请使用量，取值范围[0.1-3072]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -126,7 +126,7 @@ class ResourceDto:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ResourceDto.
+        r"""Sets the memory of this ResourceDto.
 
         内存申请使用量，取值范围[0.1-3072]，单位G，支持一位小数。对于应用，不填默认1G；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -137,7 +137,7 @@ class ResourceDto:
 
     @property
     def gpu_type(self):
-        """Gets the gpu_type of this ResourceDto.
+        r"""Gets the gpu_type of this ResourceDto.
 
         gpu架构类型，取值范围 ' '|GPU|D910|D310。对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -148,7 +148,7 @@ class ResourceDto:
 
     @gpu_type.setter
     def gpu_type(self, gpu_type):
-        """Sets the gpu_type of this ResourceDto.
+        r"""Sets the gpu_type of this ResourceDto.
 
         gpu架构类型，取值范围 ' '|GPU|D910|D310。对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -159,7 +159,7 @@ class ResourceDto:
 
     @property
     def gpu(self):
-        """Gets the gpu of this ResourceDto.
+        r"""Gets the gpu of this ResourceDto.
 
         gpu申请使用量，取值范围[0-16]，仅支持整数，D910有特殊约束，申请数量需要是0,1,2,4,8。对于应用，不填默认0；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 
@@ -170,7 +170,7 @@ class ResourceDto:
 
     @gpu.setter
     def gpu(self, gpu):
-        """Sets the gpu of this ResourceDto.
+        r"""Sets the gpu of this ResourceDto.
 
         gpu申请使用量，取值范围[0-16]，仅支持整数，D910有特殊约束，申请数量需要是0,1,2,4,8。对于应用，不填默认0；对于流程和作业，不填默认使用前一级的配置，填值会覆盖更新。覆盖关系：作业->流程->应用
 

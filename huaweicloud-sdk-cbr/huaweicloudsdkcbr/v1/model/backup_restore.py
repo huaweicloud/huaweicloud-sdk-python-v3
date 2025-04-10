@@ -35,7 +35,7 @@ class BackupRestore:
     }
 
     def __init__(self, mappings=None, power_on=None, server_id=None, volume_id=None, resource_id=None, details=None):
-        """BackupRestore
+        r"""BackupRestore
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BackupRestore:
 
     @property
     def mappings(self):
-        """Gets the mappings of this BackupRestore.
+        r"""Gets the mappings of this BackupRestore.
 
         恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值）
 
@@ -89,7 +89,7 @@ class BackupRestore:
 
     @mappings.setter
     def mappings(self, mappings):
-        """Sets the mappings of this BackupRestore.
+        r"""Sets the mappings of this BackupRestore.
 
         恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值）
 
@@ -100,7 +100,7 @@ class BackupRestore:
 
     @property
     def power_on(self):
-        """Gets the power_on of this BackupRestore.
+        r"""Gets the power_on of this BackupRestore.
 
         恢复后是否开始，默认开机。
 
@@ -111,7 +111,7 @@ class BackupRestore:
 
     @power_on.setter
     def power_on(self, power_on):
-        """Sets the power_on of this BackupRestore.
+        r"""Sets the power_on of this BackupRestore.
 
         恢复后是否开始，默认开机。
 
@@ -122,7 +122,7 @@ class BackupRestore:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BackupRestore.
+        r"""Gets the server_id of this BackupRestore.
 
         恢复的目标虚拟机ID（整机恢复时必填）
 
@@ -133,7 +133,7 @@ class BackupRestore:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BackupRestore.
+        r"""Sets the server_id of this BackupRestore.
 
         恢复的目标虚拟机ID（整机恢复时必填）
 
@@ -144,7 +144,7 @@ class BackupRestore:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this BackupRestore.
+        r"""Gets the volume_id of this BackupRestore.
 
         恢复的目标卷ID（卷恢复时必填）
 
@@ -155,7 +155,7 @@ class BackupRestore:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this BackupRestore.
+        r"""Sets the volume_id of this BackupRestore.
 
         恢复的目标卷ID（卷恢复时必填）
 
@@ -166,7 +166,7 @@ class BackupRestore:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BackupRestore.
+        r"""Gets the resource_id of this BackupRestore.
 
         待恢复的目标资源ID
 
@@ -177,7 +177,7 @@ class BackupRestore:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BackupRestore.
+        r"""Sets the resource_id of this BackupRestore.
 
         待恢复的目标资源ID
 
@@ -188,7 +188,7 @@ class BackupRestore:
 
     @property
     def details(self):
-        """Gets the details of this BackupRestore.
+        r"""Gets the details of this BackupRestore.
 
         :return: The details of this BackupRestore.
         :rtype: :class:`huaweicloudsdkcbr.v1.RestoreDetails`
@@ -197,7 +197,7 @@ class BackupRestore:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this BackupRestore.
+        r"""Sets the details of this BackupRestore.
 
         :param details: The details of this BackupRestore.
         :type details: :class:`huaweicloudsdkcbr.v1.RestoreDetails`

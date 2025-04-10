@@ -30,7 +30,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
     }
 
     def __init__(self, type=None, ip_list=None, x_request_id=None):
-        """ShowBlackWhiteListResponse
+        r"""ShowBlackWhiteListResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowBlackWhiteListResponse.
+        r"""Gets the type of this ShowBlackWhiteListResponse.
 
         IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）。
 
@@ -69,7 +69,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowBlackWhiteListResponse.
+        r"""Sets the type of this ShowBlackWhiteListResponse.
 
         IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）。
 
@@ -80,7 +80,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this ShowBlackWhiteListResponse.
+        r"""Gets the ip_list of this ShowBlackWhiteListResponse.
 
         IP黑白名单列表。
 
@@ -91,7 +91,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this ShowBlackWhiteListResponse.
+        r"""Sets the ip_list of this ShowBlackWhiteListResponse.
 
         IP黑白名单列表。
 
@@ -102,7 +102,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowBlackWhiteListResponse.
+        r"""Gets the x_request_id of this ShowBlackWhiteListResponse.
 
         :return: The x_request_id of this ShowBlackWhiteListResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowBlackWhiteListResponse.
+        r"""Sets the x_request_id of this ShowBlackWhiteListResponse.
 
         :param x_request_id: The x_request_id of this ShowBlackWhiteListResponse.
         :type x_request_id: str

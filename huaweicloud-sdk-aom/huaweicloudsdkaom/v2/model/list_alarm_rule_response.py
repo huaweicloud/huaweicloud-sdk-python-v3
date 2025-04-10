@@ -28,7 +28,7 @@ class ListAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, meta_data=None, thresholds=None):
-        """ListAlarmRuleResponse
+        r"""ListAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmRuleResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListAlarmRuleResponse.
+        r"""Gets the meta_data of this ListAlarmRuleResponse.
 
         :return: The meta_data of this ListAlarmRuleResponse.
         :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
@@ -60,7 +60,7 @@ class ListAlarmRuleResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListAlarmRuleResponse.
+        r"""Sets the meta_data of this ListAlarmRuleResponse.
 
         :param meta_data: The meta_data of this ListAlarmRuleResponse.
         :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
@@ -69,7 +69,7 @@ class ListAlarmRuleResponse(SdkResponse):
 
     @property
     def thresholds(self):
-        """Gets the thresholds of this ListAlarmRuleResponse.
+        r"""Gets the thresholds of this ListAlarmRuleResponse.
 
         :return: The thresholds of this ListAlarmRuleResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]
@@ -78,7 +78,7 @@ class ListAlarmRuleResponse(SdkResponse):
 
     @thresholds.setter
     def thresholds(self, thresholds):
-        """Sets the thresholds of this ListAlarmRuleResponse.
+        r"""Sets the thresholds of this ListAlarmRuleResponse.
 
         :param thresholds: The thresholds of this ListAlarmRuleResponse.
         :type thresholds: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]

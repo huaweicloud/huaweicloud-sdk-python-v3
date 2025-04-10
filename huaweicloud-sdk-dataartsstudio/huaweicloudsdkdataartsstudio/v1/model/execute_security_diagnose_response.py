@@ -24,7 +24,7 @@ class ExecuteSecurityDiagnoseResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExecuteSecurityDiagnoseResponse
+        r"""ExecuteSecurityDiagnoseResponse
 
         The model defined in huaweicloud sdk
 

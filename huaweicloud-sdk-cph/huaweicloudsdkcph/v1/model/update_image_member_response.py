@@ -26,7 +26,7 @@ class UpdateImageMemberResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """UpdateImageMemberResponse
+        r"""UpdateImageMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateImageMemberResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateImageMemberResponse.
+        r"""Gets the request_id of this UpdateImageMemberResponse.
 
         请求id
 
@@ -55,7 +55,7 @@ class UpdateImageMemberResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateImageMemberResponse.
+        r"""Sets the request_id of this UpdateImageMemberResponse.
 
         请求id
 

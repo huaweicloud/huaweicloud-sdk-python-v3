@@ -31,7 +31,7 @@ class Env:
     }
 
     def __init__(self, name=None, value=None, value_from=None, field_path=None):
-        """Env
+        r"""Env
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class Env:
 
     @property
     def name(self):
-        """Gets the name of this Env.
+        r"""Gets the name of this Env.
 
         环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
 
@@ -74,7 +74,7 @@ class Env:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Env.
+        r"""Sets the name of this Env.
 
         环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
 
@@ -85,7 +85,7 @@ class Env:
 
     @property
     def value(self):
-        """Gets the value of this Env.
+        r"""Gets the value of this Env.
 
         环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用
 
@@ -96,7 +96,7 @@ class Env:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Env.
+        r"""Sets the value of this Env.
 
         环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用
 
@@ -107,7 +107,7 @@ class Env:
 
     @property
     def value_from(self):
-        """Gets the value_from of this Env.
+        r"""Gets the value_from of this Env.
 
         :return: The value_from of this Env.
         :rtype: :class:`huaweicloudsdkhilens.v3.ValueFrom`
@@ -116,7 +116,7 @@ class Env:
 
     @value_from.setter
     def value_from(self, value_from):
-        """Sets the value_from of this Env.
+        r"""Sets the value_from of this Env.
 
         :param value_from: The value_from of this Env.
         :type value_from: :class:`huaweicloudsdkhilens.v3.ValueFrom`
@@ -125,7 +125,7 @@ class Env:
 
     @property
     def field_path(self):
-        """Gets the field_path of this Env.
+        r"""Gets the field_path of this Env.
 
         该参数目前只支持赋值\"status.hostIP\"，即引用边缘节点的IP地址作为环境变量。value、value_from和field_path必须三选一使用
 
@@ -136,7 +136,7 @@ class Env:
 
     @field_path.setter
     def field_path(self, field_path):
-        """Sets the field_path of this Env.
+        r"""Sets the field_path of this Env.
 
         该参数目前只支持赋值\"status.hostIP\"，即引用边缘节点的IP地址作为环境变量。value、value_from和field_path必须三选一使用
 

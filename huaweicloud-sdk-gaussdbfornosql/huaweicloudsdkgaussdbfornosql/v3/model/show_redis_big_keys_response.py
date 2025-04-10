@@ -28,7 +28,7 @@ class ShowRedisBigKeysResponse(SdkResponse):
     }
 
     def __init__(self, keys=None, count=None):
-        """ShowRedisBigKeysResponse
+        r"""ShowRedisBigKeysResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRedisBigKeysResponse(SdkResponse):
 
     @property
     def keys(self):
-        """Gets the keys of this ShowRedisBigKeysResponse.
+        r"""Gets the keys of this ShowRedisBigKeysResponse.
 
         查询到的大Key列表。
 
@@ -62,7 +62,7 @@ class ShowRedisBigKeysResponse(SdkResponse):
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ShowRedisBigKeysResponse.
+        r"""Sets the keys of this ShowRedisBigKeysResponse.
 
         查询到的大Key列表。
 
@@ -73,7 +73,7 @@ class ShowRedisBigKeysResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowRedisBigKeysResponse.
+        r"""Gets the count of this ShowRedisBigKeysResponse.
 
         大Key的总数。
 
@@ -84,7 +84,7 @@ class ShowRedisBigKeysResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowRedisBigKeysResponse.
+        r"""Sets the count of this ShowRedisBigKeysResponse.
 
         大Key的总数。
 

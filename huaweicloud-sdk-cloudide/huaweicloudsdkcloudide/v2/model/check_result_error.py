@@ -27,7 +27,7 @@ class CheckResultError:
     }
 
     def __init__(self, code=None, message=None):
-        """CheckResultError
+        r"""CheckResultError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CheckResultError:
 
     @property
     def code(self):
-        """Gets the code of this CheckResultError.
+        r"""Gets the code of this CheckResultError.
 
         解析结果码
 
@@ -61,7 +61,7 @@ class CheckResultError:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CheckResultError.
+        r"""Sets the code of this CheckResultError.
 
         解析结果码
 
@@ -72,7 +72,7 @@ class CheckResultError:
 
     @property
     def message(self):
-        """Gets the message of this CheckResultError.
+        r"""Gets the message of this CheckResultError.
 
         解析结果信息
 
@@ -83,7 +83,7 @@ class CheckResultError:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CheckResultError.
+        r"""Sets the message of this CheckResultError.
 
         解析结果信息
 

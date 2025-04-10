@@ -27,7 +27,7 @@ class AttrValueRules:
     }
 
     def __init__(self, attr_values_a=None, attr_values_b=None):
-        """AttrValueRules
+        r"""AttrValueRules
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttrValueRules:
 
     @property
     def attr_values_a(self):
-        """Gets the attr_values_a of this AttrValueRules.
+        r"""Gets the attr_values_a of this AttrValueRules.
 
         被推荐对象的属性-值配置。
 
@@ -60,7 +60,7 @@ class AttrValueRules:
 
     @attr_values_a.setter
     def attr_values_a(self, attr_values_a):
-        """Sets the attr_values_a of this AttrValueRules.
+        r"""Sets the attr_values_a of this AttrValueRules.
 
         被推荐对象的属性-值配置。
 
@@ -71,7 +71,7 @@ class AttrValueRules:
 
     @property
     def attr_values_b(self):
-        """Gets the attr_values_b of this AttrValueRules.
+        r"""Gets the attr_values_b of this AttrValueRules.
 
         待推荐对象的属性-值配置。
 
@@ -82,7 +82,7 @@ class AttrValueRules:
 
     @attr_values_b.setter
     def attr_values_b(self, attr_values_b):
-        """Sets the attr_values_b of this AttrValueRules.
+        r"""Sets the attr_values_b of this AttrValueRules.
 
         待推荐对象的属性-值配置。
 

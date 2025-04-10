@@ -27,7 +27,7 @@ class BatchDeleteResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """BatchDeleteResourceTag
+        r"""BatchDeleteResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this BatchDeleteResourceTag.
+        r"""Gets the key of this BatchDeleteResourceTag.
 
         标签键。
 
@@ -59,7 +59,7 @@ class BatchDeleteResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BatchDeleteResourceTag.
+        r"""Sets the key of this BatchDeleteResourceTag.
 
         标签键。
 
@@ -70,7 +70,7 @@ class BatchDeleteResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this BatchDeleteResourceTag.
+        r"""Gets the value of this BatchDeleteResourceTag.
 
         标签值。
 
@@ -81,7 +81,7 @@ class BatchDeleteResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchDeleteResourceTag.
+        r"""Sets the value of this BatchDeleteResourceTag.
 
         标签值。
 

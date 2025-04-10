@@ -30,7 +30,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
     }
 
     def __init__(self, scope=None, resource_types=None, language=None):
-        """ShowMessageReceiveConfigResponse
+        r"""ShowMessageReceiveConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
 
     @property
     def scope(self):
-        """Gets the scope of this ShowMessageReceiveConfigResponse.
+        r"""Gets the scope of this ShowMessageReceiveConfigResponse.
 
         接收范围（不接收消息(none)、仅接收自己操作的消息(mine)、接收全部消息(all)）
 
@@ -69,7 +69,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowMessageReceiveConfigResponse.
+        r"""Sets the scope of this ShowMessageReceiveConfigResponse.
 
         接收范围（不接收消息(none)、仅接收自己操作的消息(mine)、接收全部消息(all)）
 
@@ -80,7 +80,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ShowMessageReceiveConfigResponse.
+        r"""Gets the resource_types of this ShowMessageReceiveConfigResponse.
 
         资源类型
 
@@ -91,7 +91,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ShowMessageReceiveConfigResponse.
+        r"""Sets the resource_types of this ShowMessageReceiveConfigResponse.
 
         资源类型
 
@@ -102,7 +102,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowMessageReceiveConfigResponse.
+        r"""Gets the language of this ShowMessageReceiveConfigResponse.
 
         :return: The language of this ShowMessageReceiveConfigResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
@@ -111,7 +111,7 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowMessageReceiveConfigResponse.
+        r"""Sets the language of this ShowMessageReceiveConfigResponse.
 
         :param language: The language of this ShowMessageReceiveConfigResponse.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

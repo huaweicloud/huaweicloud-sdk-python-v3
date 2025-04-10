@@ -38,7 +38,7 @@ class AppIdInfoDTO:
     }
 
     def __init__(self, app_name=None, app_id=None, app_key=None, description=None, create_time=None, last_update_time=None, status=None):
-        """AppIdInfoDTO
+        r"""AppIdInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class AppIdInfoDTO:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppIdInfoDTO.
+        r"""Gets the app_name of this AppIdInfoDTO.
 
         企业应用名称
 
@@ -97,7 +97,7 @@ class AppIdInfoDTO:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppIdInfoDTO.
+        r"""Sets the app_name of this AppIdInfoDTO.
 
         企业应用名称
 
@@ -108,7 +108,7 @@ class AppIdInfoDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppIdInfoDTO.
+        r"""Gets the app_id of this AppIdInfoDTO.
 
         企业应用ID
 
@@ -119,7 +119,7 @@ class AppIdInfoDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppIdInfoDTO.
+        r"""Sets the app_id of this AppIdInfoDTO.
 
         企业应用ID
 
@@ -130,7 +130,7 @@ class AppIdInfoDTO:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AppIdInfoDTO.
+        r"""Gets the app_key of this AppIdInfoDTO.
 
         企业应用appkey
 
@@ -141,7 +141,7 @@ class AppIdInfoDTO:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AppIdInfoDTO.
+        r"""Sets the app_key of this AppIdInfoDTO.
 
         企业应用appkey
 
@@ -152,7 +152,7 @@ class AppIdInfoDTO:
 
     @property
     def description(self):
-        """Gets the description of this AppIdInfoDTO.
+        r"""Gets the description of this AppIdInfoDTO.
 
         企业应用描述
 
@@ -163,7 +163,7 @@ class AppIdInfoDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppIdInfoDTO.
+        r"""Sets the description of this AppIdInfoDTO.
 
         企业应用描述
 
@@ -174,7 +174,7 @@ class AppIdInfoDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppIdInfoDTO.
+        r"""Gets the create_time of this AppIdInfoDTO.
 
         企业应用创建时间
 
@@ -185,7 +185,7 @@ class AppIdInfoDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppIdInfoDTO.
+        r"""Sets the create_time of this AppIdInfoDTO.
 
         企业应用创建时间
 
@@ -196,7 +196,7 @@ class AppIdInfoDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this AppIdInfoDTO.
+        r"""Gets the last_update_time of this AppIdInfoDTO.
 
         最近修改时间
 
@@ -207,7 +207,7 @@ class AppIdInfoDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this AppIdInfoDTO.
+        r"""Sets the last_update_time of this AppIdInfoDTO.
 
         最近修改时间
 
@@ -218,7 +218,7 @@ class AppIdInfoDTO:
 
     @property
     def status(self):
-        """Gets the status of this AppIdInfoDTO.
+        r"""Gets the status of this AppIdInfoDTO.
 
         企业应用状态  * 0：正常  * 1：停用 
 
@@ -229,7 +229,7 @@ class AppIdInfoDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AppIdInfoDTO.
+        r"""Sets the status of this AppIdInfoDTO.
 
         企业应用状态  * 0：正常  * 1：停用 
 

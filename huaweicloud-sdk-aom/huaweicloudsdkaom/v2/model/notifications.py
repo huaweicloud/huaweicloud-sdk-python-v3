@@ -29,7 +29,7 @@ class Notifications:
     }
 
     def __init__(self, action_rule=None, notifier_channel=None, smn_channel=None):
-        """Notifications
+        r"""Notifications
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Notifications:
 
     @property
     def action_rule(self):
-        """Gets the action_rule of this Notifications.
+        r"""Gets the action_rule of this Notifications.
 
         告警行动规则名称
 
@@ -68,7 +68,7 @@ class Notifications:
 
     @action_rule.setter
     def action_rule(self, action_rule):
-        """Sets the action_rule of this Notifications.
+        r"""Sets the action_rule of this Notifications.
 
         告警行动规则名称
 
@@ -79,7 +79,7 @@ class Notifications:
 
     @property
     def notifier_channel(self):
-        """Gets the notifier_channel of this Notifications.
+        r"""Gets the notifier_channel of this Notifications.
 
         通知类型。SMN：消息通知服务
 
@@ -90,7 +90,7 @@ class Notifications:
 
     @notifier_channel.setter
     def notifier_channel(self, notifier_channel):
-        """Sets the notifier_channel of this Notifications.
+        r"""Sets the notifier_channel of this Notifications.
 
         通知类型。SMN：消息通知服务
 
@@ -101,7 +101,7 @@ class Notifications:
 
     @property
     def smn_channel(self):
-        """Gets the smn_channel of this Notifications.
+        r"""Gets the smn_channel of this Notifications.
 
         :return: The smn_channel of this Notifications.
         :rtype: :class:`huaweicloudsdkaom.v2.SmnResponse`
@@ -110,7 +110,7 @@ class Notifications:
 
     @smn_channel.setter
     def smn_channel(self, smn_channel):
-        """Sets the smn_channel of this Notifications.
+        r"""Sets the smn_channel of this Notifications.
 
         :param smn_channel: The smn_channel of this Notifications.
         :type smn_channel: :class:`huaweicloudsdkaom.v2.SmnResponse`

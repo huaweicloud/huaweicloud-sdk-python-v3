@@ -26,7 +26,7 @@ class ListPublicipsResponse(SdkResponse):
     }
 
     def __init__(self, publicips=None):
-        """ListPublicipsResponse
+        r"""ListPublicipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @property
     def publicips(self):
-        """Gets the publicips of this ListPublicipsResponse.
+        r"""Gets the publicips of this ListPublicipsResponse.
 
         弹性公网IP对象
 
@@ -55,7 +55,7 @@ class ListPublicipsResponse(SdkResponse):
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this ListPublicipsResponse.
+        r"""Sets the publicips of this ListPublicipsResponse.
 
         弹性公网IP对象
 

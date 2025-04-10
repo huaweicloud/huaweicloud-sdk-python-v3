@@ -25,7 +25,7 @@ class ListDownloadAddressRequest:
     }
 
     def __init__(self, body=None):
-        """ListDownloadAddressRequest
+        r"""ListDownloadAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDownloadAddressRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDownloadAddressRequest.
+        r"""Gets the body of this ListDownloadAddressRequest.
 
         :return: The body of this ListDownloadAddressRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDownloadAddressRequestBody`
@@ -52,7 +52,7 @@ class ListDownloadAddressRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDownloadAddressRequest.
+        r"""Sets the body of this ListDownloadAddressRequest.
 
         :param body: The body of this ListDownloadAddressRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ListDownloadAddressRequestBody`

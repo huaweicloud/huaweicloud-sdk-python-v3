@@ -25,7 +25,7 @@ class DeleteElasticResourcePoolRequest:
     }
 
     def __init__(self, elastic_resource_pool_name=None):
-        """DeleteElasticResourcePoolRequest
+        r"""DeleteElasticResourcePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteElasticResourcePoolRequest:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this DeleteElasticResourcePoolRequest.
+        r"""Gets the elastic_resource_pool_name of this DeleteElasticResourcePoolRequest.
 
         弹性资源池名称
 
@@ -53,7 +53,7 @@ class DeleteElasticResourcePoolRequest:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this DeleteElasticResourcePoolRequest.
+        r"""Sets the elastic_resource_pool_name of this DeleteElasticResourcePoolRequest.
 
         弹性资源池名称
 

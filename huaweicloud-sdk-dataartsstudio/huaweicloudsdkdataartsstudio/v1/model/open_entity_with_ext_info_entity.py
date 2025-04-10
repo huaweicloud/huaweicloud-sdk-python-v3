@@ -47,7 +47,7 @@ class OpenEntityWithExtInfoEntity:
     }
 
     def __init__(self, attributes=None, connection=None, create_time=None, created_by=None, display_text=None, guid=None, relationship_attributes=None, type_name=None, updated_by=None, update_time=None, tags=None, classification_names=None):
-        """OpenEntityWithExtInfoEntity
+        r"""OpenEntityWithExtInfoEntity
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def attributes(self):
-        """Gets the attributes of this OpenEntityWithExtInfoEntity.
+        r"""Gets the attributes of this OpenEntityWithExtInfoEntity.
 
         属性Map<String, Object>
 
@@ -131,7 +131,7 @@ class OpenEntityWithExtInfoEntity:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this OpenEntityWithExtInfoEntity.
+        r"""Sets the attributes of this OpenEntityWithExtInfoEntity.
 
         属性Map<String, Object>
 
@@ -142,7 +142,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def connection(self):
-        """Gets the connection of this OpenEntityWithExtInfoEntity.
+        r"""Gets the connection of this OpenEntityWithExtInfoEntity.
 
         :return: The connection of this OpenEntityWithExtInfoEntity.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
@@ -151,7 +151,7 @@ class OpenEntityWithExtInfoEntity:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this OpenEntityWithExtInfoEntity.
+        r"""Sets the connection of this OpenEntityWithExtInfoEntity.
 
         :param connection: The connection of this OpenEntityWithExtInfoEntity.
         :type connection: :class:`huaweicloudsdkdataartsstudio.v1.Connection`
@@ -160,7 +160,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OpenEntityWithExtInfoEntity.
+        r"""Gets the create_time of this OpenEntityWithExtInfoEntity.
 
         创建时间
 
@@ -171,7 +171,7 @@ class OpenEntityWithExtInfoEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OpenEntityWithExtInfoEntity.
+        r"""Sets the create_time of this OpenEntityWithExtInfoEntity.
 
         创建时间
 
@@ -182,7 +182,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def created_by(self):
-        """Gets the created_by of this OpenEntityWithExtInfoEntity.
+        r"""Gets the created_by of this OpenEntityWithExtInfoEntity.
 
         创建人
 
@@ -193,7 +193,7 @@ class OpenEntityWithExtInfoEntity:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this OpenEntityWithExtInfoEntity.
+        r"""Sets the created_by of this OpenEntityWithExtInfoEntity.
 
         创建人
 
@@ -204,7 +204,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def display_text(self):
-        """Gets the display_text of this OpenEntityWithExtInfoEntity.
+        r"""Gets the display_text of this OpenEntityWithExtInfoEntity.
 
         资产的名称
 
@@ -215,7 +215,7 @@ class OpenEntityWithExtInfoEntity:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this OpenEntityWithExtInfoEntity.
+        r"""Sets the display_text of this OpenEntityWithExtInfoEntity.
 
         资产的名称
 
@@ -226,7 +226,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def guid(self):
-        """Gets the guid of this OpenEntityWithExtInfoEntity.
+        r"""Gets the guid of this OpenEntityWithExtInfoEntity.
 
         资产guid
 
@@ -237,7 +237,7 @@ class OpenEntityWithExtInfoEntity:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this OpenEntityWithExtInfoEntity.
+        r"""Sets the guid of this OpenEntityWithExtInfoEntity.
 
         资产guid
 
@@ -248,7 +248,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def relationship_attributes(self):
-        """Gets the relationship_attributes of this OpenEntityWithExtInfoEntity.
+        r"""Gets the relationship_attributes of this OpenEntityWithExtInfoEntity.
 
         相关的属性 Map<String, Object>
 
@@ -259,7 +259,7 @@ class OpenEntityWithExtInfoEntity:
 
     @relationship_attributes.setter
     def relationship_attributes(self, relationship_attributes):
-        """Sets the relationship_attributes of this OpenEntityWithExtInfoEntity.
+        r"""Sets the relationship_attributes of this OpenEntityWithExtInfoEntity.
 
         相关的属性 Map<String, Object>
 
@@ -270,7 +270,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def type_name(self):
-        """Gets the type_name of this OpenEntityWithExtInfoEntity.
+        r"""Gets the type_name of this OpenEntityWithExtInfoEntity.
 
         资产类型
 
@@ -281,7 +281,7 @@ class OpenEntityWithExtInfoEntity:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this OpenEntityWithExtInfoEntity.
+        r"""Sets the type_name of this OpenEntityWithExtInfoEntity.
 
         资产类型
 
@@ -292,7 +292,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this OpenEntityWithExtInfoEntity.
+        r"""Gets the updated_by of this OpenEntityWithExtInfoEntity.
 
         更新人
 
@@ -303,7 +303,7 @@ class OpenEntityWithExtInfoEntity:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this OpenEntityWithExtInfoEntity.
+        r"""Sets the updated_by of this OpenEntityWithExtInfoEntity.
 
         更新人
 
@@ -314,7 +314,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this OpenEntityWithExtInfoEntity.
+        r"""Gets the update_time of this OpenEntityWithExtInfoEntity.
 
         更新时间
 
@@ -325,7 +325,7 @@ class OpenEntityWithExtInfoEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this OpenEntityWithExtInfoEntity.
+        r"""Sets the update_time of this OpenEntityWithExtInfoEntity.
 
         更新时间
 
@@ -336,7 +336,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def tags(self):
-        """Gets the tags of this OpenEntityWithExtInfoEntity.
+        r"""Gets the tags of this OpenEntityWithExtInfoEntity.
 
         标签 List<TagHeader>
 
@@ -347,7 +347,7 @@ class OpenEntityWithExtInfoEntity:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this OpenEntityWithExtInfoEntity.
+        r"""Sets the tags of this OpenEntityWithExtInfoEntity.
 
         标签 List<TagHeader>
 
@@ -358,7 +358,7 @@ class OpenEntityWithExtInfoEntity:
 
     @property
     def classification_names(self):
-        """Gets the classification_names of this OpenEntityWithExtInfoEntity.
+        r"""Gets the classification_names of this OpenEntityWithExtInfoEntity.
 
         分类名称 List<String>
 
@@ -369,7 +369,7 @@ class OpenEntityWithExtInfoEntity:
 
     @classification_names.setter
     def classification_names(self, classification_names):
-        """Sets the classification_names of this OpenEntityWithExtInfoEntity.
+        r"""Sets the classification_names of this OpenEntityWithExtInfoEntity.
 
         分类名称 List<String>
 

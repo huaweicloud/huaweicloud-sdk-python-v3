@@ -25,7 +25,7 @@ class AssetExportRequestTasks:
     }
 
     def __init__(self, id=None):
-        """AssetExportRequestTasks
+        r"""AssetExportRequestTasks
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AssetExportRequestTasks:
 
     @property
     def id(self):
-        """Gets the id of this AssetExportRequestTasks.
+        r"""Gets the id of this AssetExportRequestTasks.
 
         任务ID
 
@@ -54,7 +54,7 @@ class AssetExportRequestTasks:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssetExportRequestTasks.
+        r"""Sets the id of this AssetExportRequestTasks.
 
         任务ID
 

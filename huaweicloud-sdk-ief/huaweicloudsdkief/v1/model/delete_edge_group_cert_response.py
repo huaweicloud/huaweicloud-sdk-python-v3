@@ -24,7 +24,7 @@ class DeleteEdgeGroupCertResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEdgeGroupCertResponse
+        r"""DeleteEdgeGroupCertResponse
 
         The model defined in huaweicloud sdk
 

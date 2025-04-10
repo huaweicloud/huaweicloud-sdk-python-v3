@@ -25,7 +25,7 @@ class CreateDatabaseResourceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDatabaseResourceRequest
+        r"""CreateDatabaseResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDatabaseResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatabaseResourceRequest.
+        r"""Gets the body of this CreateDatabaseResourceRequest.
 
         :return: The body of this CreateDatabaseResourceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceReq`
@@ -52,7 +52,7 @@ class CreateDatabaseResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatabaseResourceRequest.
+        r"""Sets the body of this CreateDatabaseResourceRequest.
 
         :param body: The body of this CreateDatabaseResourceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceReq`

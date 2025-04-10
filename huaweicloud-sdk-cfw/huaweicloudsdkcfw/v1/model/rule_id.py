@@ -27,7 +27,7 @@ class RuleId:
     }
 
     def __init__(self, id=None, name=None):
-        """RuleId
+        r"""RuleId
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RuleId:
 
     @property
     def id(self):
-        """Gets the id of this RuleId.
+        r"""Gets the id of this RuleId.
 
         规则id
 
@@ -61,7 +61,7 @@ class RuleId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleId.
+        r"""Sets the id of this RuleId.
 
         规则id
 
@@ -72,7 +72,7 @@ class RuleId:
 
     @property
     def name(self):
-        """Gets the name of this RuleId.
+        r"""Gets the name of this RuleId.
 
         规则名称
 
@@ -83,7 +83,7 @@ class RuleId:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleId.
+        r"""Sets the name of this RuleId.
 
         规则名称
 

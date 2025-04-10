@@ -33,7 +33,7 @@ class CreateUsersInfo:
     }
 
     def __init__(self, name=None, password=None, base_authority=None, description=None, databases=None):
-        """CreateUsersInfo
+        r"""CreateUsersInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateUsersInfo:
 
     @property
     def name(self):
-        """Gets the name of this CreateUsersInfo.
+        r"""Gets the name of this CreateUsersInfo.
 
         DDM实例帐号名称，命名要求如下。  - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
@@ -79,7 +79,7 @@ class CreateUsersInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUsersInfo.
+        r"""Sets the name of this CreateUsersInfo.
 
         DDM实例帐号名称，命名要求如下。  - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
@@ -90,7 +90,7 @@ class CreateUsersInfo:
 
     @property
     def password(self):
-        """Gets the password of this CreateUsersInfo.
+        r"""Gets the password of this CreateUsersInfo.
 
         DDM实例帐号密码。
 
@@ -101,7 +101,7 @@ class CreateUsersInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateUsersInfo.
+        r"""Sets the password of this CreateUsersInfo.
 
         DDM实例帐号密码。
 
@@ -112,7 +112,7 @@ class CreateUsersInfo:
 
     @property
     def base_authority(self):
-        """Gets the base_authority of this CreateUsersInfo.
+        r"""Gets the base_authority of this CreateUsersInfo.
 
         DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
@@ -123,7 +123,7 @@ class CreateUsersInfo:
 
     @base_authority.setter
     def base_authority(self, base_authority):
-        """Sets the base_authority of this CreateUsersInfo.
+        r"""Sets the base_authority of this CreateUsersInfo.
 
         DDM实例帐号的基础权限。  取值为：CREATE、DROP、ALTER、INDEX、INSERT、DELETE、UPDATE、SELECT
 
@@ -134,7 +134,7 @@ class CreateUsersInfo:
 
     @property
     def description(self):
-        """Gets the description of this CreateUsersInfo.
+        r"""Gets the description of this CreateUsersInfo.
 
         DDM实例帐号的描述，最大长度不能超过256。默认值为空。
 
@@ -145,7 +145,7 @@ class CreateUsersInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUsersInfo.
+        r"""Sets the description of this CreateUsersInfo.
 
         DDM实例帐号的描述，最大长度不能超过256。默认值为空。
 
@@ -156,7 +156,7 @@ class CreateUsersInfo:
 
     @property
     def databases(self):
-        """Gets the databases of this CreateUsersInfo.
+        r"""Gets the databases of this CreateUsersInfo.
 
         关联的逻辑库的集合。 databases字段可以省略，即创建用户时可以不关联逻辑库。
 
@@ -167,7 +167,7 @@ class CreateUsersInfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateUsersInfo.
+        r"""Sets the databases of this CreateUsersInfo.
 
         关联的逻辑库的集合。 databases字段可以省略，即创建用户时可以不关联逻辑库。
 

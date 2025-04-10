@@ -30,7 +30,7 @@ class ListStatSummaryResponse(SdkResponse):
     }
 
     def __init__(self, summary=None, total=None, stat_type=None):
-        """ListStatSummaryResponse
+        r"""ListStatSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListStatSummaryResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this ListStatSummaryResponse.
+        r"""Gets the summary of this ListStatSummaryResponse.
 
         统计概览信息
 
@@ -69,7 +69,7 @@ class ListStatSummaryResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ListStatSummaryResponse.
+        r"""Sets the summary of this ListStatSummaryResponse.
 
         统计概览信息
 
@@ -80,7 +80,7 @@ class ListStatSummaryResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListStatSummaryResponse.
+        r"""Gets the total of this ListStatSummaryResponse.
 
         该指标的总值，精确到小数点后两位。 
 
@@ -91,7 +91,7 @@ class ListStatSummaryResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListStatSummaryResponse.
+        r"""Sets the total of this ListStatSummaryResponse.
 
         该指标的总值，精确到小数点后两位。 
 
@@ -102,7 +102,7 @@ class ListStatSummaryResponse(SdkResponse):
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ListStatSummaryResponse.
+        r"""Gets the stat_type of this ListStatSummaryResponse.
 
         统计类型。取值如下： - video_duration, 转码片源时长统计，单位：分钟。 - remux_file_duration，转封装片源时长统计，单位：分钟。 - transcode_task_number，转码次数统计，单位：次。 - transcode_duration，转码耗时时长统计，单位：分钟。 
 
@@ -113,7 +113,7 @@ class ListStatSummaryResponse(SdkResponse):
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ListStatSummaryResponse.
+        r"""Sets the stat_type of this ListStatSummaryResponse.
 
         统计类型。取值如下： - video_duration, 转码片源时长统计，单位：分钟。 - remux_file_duration，转封装片源时长统计，单位：分钟。 - transcode_task_number，转码次数统计，单位：次。 - transcode_duration，转码耗时时长统计，单位：分钟。 
 

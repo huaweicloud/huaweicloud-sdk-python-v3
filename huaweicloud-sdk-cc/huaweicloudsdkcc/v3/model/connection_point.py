@@ -37,7 +37,7 @@ class ConnectionPoint:
     }
 
     def __init__(self, id=None, project_id=None, region_id=None, site_code=None, instance_id=None, parent_instance_id=None, type=None):
-        """ConnectionPoint
+        r"""ConnectionPoint
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ConnectionPoint:
 
     @property
     def id(self):
-        """Gets the id of this ConnectionPoint.
+        r"""Gets the id of this ConnectionPoint.
 
         实例ID。
 
@@ -90,7 +90,7 @@ class ConnectionPoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectionPoint.
+        r"""Sets the id of this ConnectionPoint.
 
         实例ID。
 
@@ -101,7 +101,7 @@ class ConnectionPoint:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ConnectionPoint.
+        r"""Gets the project_id of this ConnectionPoint.
 
         实例所属项目ID。
 
@@ -112,7 +112,7 @@ class ConnectionPoint:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ConnectionPoint.
+        r"""Sets the project_id of this ConnectionPoint.
 
         实例所属项目ID。
 
@@ -123,7 +123,7 @@ class ConnectionPoint:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ConnectionPoint.
+        r"""Gets the region_id of this ConnectionPoint.
 
         RegionID。
 
@@ -134,7 +134,7 @@ class ConnectionPoint:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ConnectionPoint.
+        r"""Sets the region_id of this ConnectionPoint.
 
         RegionID。
 
@@ -145,7 +145,7 @@ class ConnectionPoint:
 
     @property
     def site_code(self):
-        """Gets the site_code of this ConnectionPoint.
+        r"""Gets the site_code of this ConnectionPoint.
 
         站点编码定义
 
@@ -156,7 +156,7 @@ class ConnectionPoint:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this ConnectionPoint.
+        r"""Sets the site_code of this ConnectionPoint.
 
         站点编码定义
 
@@ -167,7 +167,7 @@ class ConnectionPoint:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ConnectionPoint.
+        r"""Gets the instance_id of this ConnectionPoint.
 
         连接点的实例ID。
 
@@ -178,7 +178,7 @@ class ConnectionPoint:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ConnectionPoint.
+        r"""Sets the instance_id of this ConnectionPoint.
 
         连接点的实例ID。
 
@@ -189,7 +189,7 @@ class ConnectionPoint:
 
     @property
     def parent_instance_id(self):
-        """Gets the parent_instance_id of this ConnectionPoint.
+        r"""Gets the parent_instance_id of this ConnectionPoint.
 
         连接点的实例的父资源ID。
 
@@ -200,7 +200,7 @@ class ConnectionPoint:
 
     @parent_instance_id.setter
     def parent_instance_id(self, parent_instance_id):
-        """Sets the parent_instance_id of this ConnectionPoint.
+        r"""Sets the parent_instance_id of this ConnectionPoint.
 
         连接点的实例的父资源ID。
 
@@ -211,7 +211,7 @@ class ConnectionPoint:
 
     @property
     def type(self):
-        """Gets the type of this ConnectionPoint.
+        r"""Gets the type of this ConnectionPoint.
 
         :return: The type of this ConnectionPoint.
         :rtype: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`
@@ -220,7 +220,7 @@ class ConnectionPoint:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionPoint.
+        r"""Sets the type of this ConnectionPoint.
 
         :param type: The type of this ConnectionPoint.
         :type type: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`

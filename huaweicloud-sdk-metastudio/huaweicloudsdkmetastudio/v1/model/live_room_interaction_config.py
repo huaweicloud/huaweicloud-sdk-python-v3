@@ -27,7 +27,7 @@ class LiveRoomInteractionConfig:
     }
 
     def __init__(self, play_type=None, ignore_current_sentence=None):
-        """LiveRoomInteractionConfig
+        r"""LiveRoomInteractionConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LiveRoomInteractionConfig:
 
     @property
     def play_type(self):
-        """Gets the play_type of this LiveRoomInteractionConfig.
+        r"""Gets the play_type of this LiveRoomInteractionConfig.
 
         播放类型。 - APPEND：追加，放置在场景播放队列尾部 - INSERT： 插入，在两个音频文件，或者文本句末添加。 - PLAY_NOW : 立即插入，收到指令后，立即播放，无需等待句末。
 
@@ -61,7 +61,7 @@ class LiveRoomInteractionConfig:
 
     @play_type.setter
     def play_type(self, play_type):
-        """Sets the play_type of this LiveRoomInteractionConfig.
+        r"""Sets the play_type of this LiveRoomInteractionConfig.
 
         播放类型。 - APPEND：追加，放置在场景播放队列尾部 - INSERT： 插入，在两个音频文件，或者文本句末添加。 - PLAY_NOW : 立即插入，收到指令后，立即播放，无需等待句末。
 
@@ -72,7 +72,7 @@ class LiveRoomInteractionConfig:
 
     @property
     def ignore_current_sentence(self):
-        """Gets the ignore_current_sentence of this LiveRoomInteractionConfig.
+        r"""Gets the ignore_current_sentence of this LiveRoomInteractionConfig.
 
         忽略互动回复中断句子后半句不再播放。用于立即中断场景。默认不忽略。
 
@@ -83,7 +83,7 @@ class LiveRoomInteractionConfig:
 
     @ignore_current_sentence.setter
     def ignore_current_sentence(self, ignore_current_sentence):
-        """Sets the ignore_current_sentence of this LiveRoomInteractionConfig.
+        r"""Sets the ignore_current_sentence of this LiveRoomInteractionConfig.
 
         忽略互动回复中断句子后半句不再播放。用于立即中断场景。默认不忽略。
 

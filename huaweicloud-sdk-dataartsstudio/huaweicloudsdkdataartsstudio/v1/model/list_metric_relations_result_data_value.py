@@ -31,7 +31,7 @@ class ListMetricRelationsResultDataValue:
     }
 
     def __init__(self, all=None, links=None, groups=None, total=None):
-        """ListMetricRelationsResultDataValue
+        r"""ListMetricRelationsResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListMetricRelationsResultDataValue:
 
     @property
     def all(self):
-        """Gets the all of this ListMetricRelationsResultDataValue.
+        r"""Gets the all of this ListMetricRelationsResultDataValue.
 
         所有的业务指标信息。
 
@@ -75,7 +75,7 @@ class ListMetricRelationsResultDataValue:
 
     @all.setter
     def all(self, all):
-        """Sets the all of this ListMetricRelationsResultDataValue.
+        r"""Sets the all of this ListMetricRelationsResultDataValue.
 
         所有的业务指标信息。
 
@@ -86,7 +86,7 @@ class ListMetricRelationsResultDataValue:
 
     @property
     def links(self):
-        """Gets the links of this ListMetricRelationsResultDataValue.
+        r"""Gets the links of this ListMetricRelationsResultDataValue.
 
         指标关联。
 
@@ -97,7 +97,7 @@ class ListMetricRelationsResultDataValue:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListMetricRelationsResultDataValue.
+        r"""Sets the links of this ListMetricRelationsResultDataValue.
 
         指标关联。
 
@@ -108,7 +108,7 @@ class ListMetricRelationsResultDataValue:
 
     @property
     def groups(self):
-        """Gets the groups of this ListMetricRelationsResultDataValue.
+        r"""Gets the groups of this ListMetricRelationsResultDataValue.
 
         分组。
 
@@ -119,7 +119,7 @@ class ListMetricRelationsResultDataValue:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListMetricRelationsResultDataValue.
+        r"""Sets the groups of this ListMetricRelationsResultDataValue.
 
         分组。
 
@@ -130,7 +130,7 @@ class ListMetricRelationsResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListMetricRelationsResultDataValue.
+        r"""Gets the total of this ListMetricRelationsResultDataValue.
 
         总数。
 
@@ -141,7 +141,7 @@ class ListMetricRelationsResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMetricRelationsResultDataValue.
+        r"""Sets the total of this ListMetricRelationsResultDataValue.
 
         总数。
 

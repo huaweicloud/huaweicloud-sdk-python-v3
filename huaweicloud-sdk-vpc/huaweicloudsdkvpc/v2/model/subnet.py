@@ -69,7 +69,7 @@ class Subnet:
     }
 
     def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None, tenant_id=None, created_at=None, updated_at=None):
-        """Subnet
+        r"""Subnet
 
         The model defined in huaweicloud sdk
 
@@ -175,7 +175,7 @@ class Subnet:
 
     @property
     def id(self):
-        """Gets the id of this Subnet.
+        r"""Gets the id of this Subnet.
 
         子网ID
 
@@ -186,7 +186,7 @@ class Subnet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Subnet.
+        r"""Sets the id of this Subnet.
 
         子网ID
 
@@ -197,7 +197,7 @@ class Subnet:
 
     @property
     def name(self):
-        """Gets the name of this Subnet.
+        r"""Gets the name of this Subnet.
 
         功能说明：子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -208,7 +208,7 @@ class Subnet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Subnet.
+        r"""Sets the name of this Subnet.
 
         功能说明：子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -219,7 +219,7 @@ class Subnet:
 
     @property
     def description(self):
-        """Gets the description of this Subnet.
+        r"""Gets the description of this Subnet.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -230,7 +230,7 @@ class Subnet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Subnet.
+        r"""Sets the description of this Subnet.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -241,7 +241,7 @@ class Subnet:
 
     @property
     def cidr(self):
-        """Gets the cidr of this Subnet.
+        r"""Gets the cidr of this Subnet.
 
         功能说明：子网的网段 取值范围：必须在vpc对应cidr范围内 约束：必须是cidr格式。掩码长度不能大于28
 
@@ -252,7 +252,7 @@ class Subnet:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this Subnet.
+        r"""Sets the cidr of this Subnet.
 
         功能说明：子网的网段 取值范围：必须在vpc对应cidr范围内 约束：必须是cidr格式。掩码长度不能大于28
 
@@ -263,7 +263,7 @@ class Subnet:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this Subnet.
+        r"""Gets the gateway_ip of this Subnet.
 
         功能说明：子网的网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
@@ -274,7 +274,7 @@ class Subnet:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this Subnet.
+        r"""Sets the gateway_ip of this Subnet.
 
         功能说明：子网的网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
@@ -285,7 +285,7 @@ class Subnet:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this Subnet.
+        r"""Gets the ipv6_enable of this Subnet.
 
         功能说明：是否创建cidr_v6 取值范围：true（开启），false（关闭）
 
@@ -296,7 +296,7 @@ class Subnet:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this Subnet.
+        r"""Sets the ipv6_enable of this Subnet.
 
         功能说明：是否创建cidr_v6 取值范围：true（开启），false（关闭）
 
@@ -307,7 +307,7 @@ class Subnet:
 
     @property
     def cidr_v6(self):
-        """Gets the cidr_v6 of this Subnet.
+        r"""Gets the cidr_v6 of this Subnet.
 
         IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
 
@@ -318,7 +318,7 @@ class Subnet:
 
     @cidr_v6.setter
     def cidr_v6(self, cidr_v6):
-        """Sets the cidr_v6 of this Subnet.
+        r"""Sets the cidr_v6 of this Subnet.
 
         IPv6子网的网段，如果子网为IPv4子网，则不返回此参数
 
@@ -329,7 +329,7 @@ class Subnet:
 
     @property
     def gateway_ip_v6(self):
-        """Gets the gateway_ip_v6 of this Subnet.
+        r"""Gets the gateway_ip_v6 of this Subnet.
 
         IPv6子网的网关，如果子网为IPv4子网，则不返回此参数
 
@@ -340,7 +340,7 @@ class Subnet:
 
     @gateway_ip_v6.setter
     def gateway_ip_v6(self, gateway_ip_v6):
-        """Sets the gateway_ip_v6 of this Subnet.
+        r"""Sets the gateway_ip_v6 of this Subnet.
 
         IPv6子网的网关，如果子网为IPv4子网，则不返回此参数
 
@@ -351,7 +351,7 @@ class Subnet:
 
     @property
     def dhcp_enable(self):
-        """Gets the dhcp_enable of this Subnet.
+        r"""Gets the dhcp_enable of this Subnet.
 
         子网是否开启dhcp功能
 
@@ -362,7 +362,7 @@ class Subnet:
 
     @dhcp_enable.setter
     def dhcp_enable(self, dhcp_enable):
-        """Sets the dhcp_enable of this Subnet.
+        r"""Sets the dhcp_enable of this Subnet.
 
         子网是否开启dhcp功能
 
@@ -373,7 +373,7 @@ class Subnet:
 
     @property
     def primary_dns(self):
-        """Gets the primary_dns of this Subnet.
+        r"""Gets the primary_dns of this Subnet.
 
         子网dns服务器地址1
 
@@ -384,7 +384,7 @@ class Subnet:
 
     @primary_dns.setter
     def primary_dns(self, primary_dns):
-        """Sets the primary_dns of this Subnet.
+        r"""Sets the primary_dns of this Subnet.
 
         子网dns服务器地址1
 
@@ -395,7 +395,7 @@ class Subnet:
 
     @property
     def secondary_dns(self):
-        """Gets the secondary_dns of this Subnet.
+        r"""Gets the secondary_dns of this Subnet.
 
         子网dns服务器地址2
 
@@ -406,7 +406,7 @@ class Subnet:
 
     @secondary_dns.setter
     def secondary_dns(self, secondary_dns):
-        """Sets the secondary_dns of this Subnet.
+        r"""Sets the secondary_dns of this Subnet.
 
         子网dns服务器地址2
 
@@ -417,7 +417,7 @@ class Subnet:
 
     @property
     def dns_list(self):
-        """Gets the dns_list of this Subnet.
+        r"""Gets the dns_list of this Subnet.
 
         子网dns服务器地址列表
 
@@ -428,7 +428,7 @@ class Subnet:
 
     @dns_list.setter
     def dns_list(self, dns_list):
-        """Sets the dns_list of this Subnet.
+        r"""Sets the dns_list of this Subnet.
 
         子网dns服务器地址列表
 
@@ -439,7 +439,7 @@ class Subnet:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Subnet.
+        r"""Gets the availability_zone of this Subnet.
 
         子网所在的可用区标识
 
@@ -450,7 +450,7 @@ class Subnet:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Subnet.
+        r"""Sets the availability_zone of this Subnet.
 
         子网所在的可用区标识
 
@@ -461,7 +461,7 @@ class Subnet:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Subnet.
+        r"""Gets the vpc_id of this Subnet.
 
         子网所在VPC标识
 
@@ -472,7 +472,7 @@ class Subnet:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Subnet.
+        r"""Sets the vpc_id of this Subnet.
 
         子网所在VPC标识
 
@@ -483,7 +483,7 @@ class Subnet:
 
     @property
     def status(self):
-        """Gets the status of this Subnet.
+        r"""Gets the status of this Subnet.
 
         功能说明：子网的状态 取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
@@ -494,7 +494,7 @@ class Subnet:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Subnet.
+        r"""Sets the status of this Subnet.
 
         功能说明：子网的状态 取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
@@ -505,7 +505,7 @@ class Subnet:
 
     @property
     def neutron_network_id(self):
-        """Gets the neutron_network_id of this Subnet.
+        r"""Gets the neutron_network_id of this Subnet.
 
         对应网络（OpenStack Neutron接口）id
 
@@ -516,7 +516,7 @@ class Subnet:
 
     @neutron_network_id.setter
     def neutron_network_id(self, neutron_network_id):
-        """Sets the neutron_network_id of this Subnet.
+        r"""Sets the neutron_network_id of this Subnet.
 
         对应网络（OpenStack Neutron接口）id
 
@@ -527,7 +527,7 @@ class Subnet:
 
     @property
     def neutron_subnet_id(self):
-        """Gets the neutron_subnet_id of this Subnet.
+        r"""Gets the neutron_subnet_id of this Subnet.
 
         对应子网（OpenStack Neutron接口）id
 
@@ -538,7 +538,7 @@ class Subnet:
 
     @neutron_subnet_id.setter
     def neutron_subnet_id(self, neutron_subnet_id):
-        """Sets the neutron_subnet_id of this Subnet.
+        r"""Sets the neutron_subnet_id of this Subnet.
 
         对应子网（OpenStack Neutron接口）id
 
@@ -549,7 +549,7 @@ class Subnet:
 
     @property
     def neutron_subnet_id_v6(self):
-        """Gets the neutron_subnet_id_v6 of this Subnet.
+        r"""Gets the neutron_subnet_id_v6 of this Subnet.
 
         对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数
 
@@ -560,7 +560,7 @@ class Subnet:
 
     @neutron_subnet_id_v6.setter
     def neutron_subnet_id_v6(self, neutron_subnet_id_v6):
-        """Sets the neutron_subnet_id_v6 of this Subnet.
+        r"""Sets the neutron_subnet_id_v6 of this Subnet.
 
         对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数
 
@@ -571,7 +571,7 @@ class Subnet:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this Subnet.
+        r"""Gets the extra_dhcp_opts of this Subnet.
 
         子网配置的NTP地址或DHCP租约时间
 
@@ -582,7 +582,7 @@ class Subnet:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this Subnet.
+        r"""Sets the extra_dhcp_opts of this Subnet.
 
         子网配置的NTP地址或DHCP租约时间
 
@@ -593,7 +593,7 @@ class Subnet:
 
     @property
     def scope(self):
-        """Gets the scope of this Subnet.
+        r"""Gets the scope of this Subnet.
 
         功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
 
@@ -604,7 +604,7 @@ class Subnet:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this Subnet.
+        r"""Sets the scope of this Subnet.
 
         功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
 
@@ -615,7 +615,7 @@ class Subnet:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Subnet.
+        r"""Gets the tenant_id of this Subnet.
 
         项目ID
 
@@ -626,7 +626,7 @@ class Subnet:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Subnet.
+        r"""Sets the tenant_id of this Subnet.
 
         项目ID
 
@@ -637,7 +637,7 @@ class Subnet:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Subnet.
+        r"""Gets the created_at of this Subnet.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -648,7 +648,7 @@ class Subnet:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Subnet.
+        r"""Sets the created_at of this Subnet.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -659,7 +659,7 @@ class Subnet:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Subnet.
+        r"""Gets the updated_at of this Subnet.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -670,7 +670,7 @@ class Subnet:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Subnet.
+        r"""Sets the updated_at of this Subnet.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

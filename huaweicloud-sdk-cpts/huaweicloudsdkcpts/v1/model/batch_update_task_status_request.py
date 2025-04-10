@@ -27,7 +27,7 @@ class BatchUpdateTaskStatusRequest:
     }
 
     def __init__(self, test_suit_id=None, body=None):
-        """BatchUpdateTaskStatusRequest
+        r"""BatchUpdateTaskStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateTaskStatusRequest:
 
     @property
     def test_suit_id(self):
-        """Gets the test_suit_id of this BatchUpdateTaskStatusRequest.
+        r"""Gets the test_suit_id of this BatchUpdateTaskStatusRequest.
 
         工程id
 
@@ -60,7 +60,7 @@ class BatchUpdateTaskStatusRequest:
 
     @test_suit_id.setter
     def test_suit_id(self, test_suit_id):
-        """Sets the test_suit_id of this BatchUpdateTaskStatusRequest.
+        r"""Sets the test_suit_id of this BatchUpdateTaskStatusRequest.
 
         工程id
 
@@ -71,7 +71,7 @@ class BatchUpdateTaskStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateTaskStatusRequest.
+        r"""Gets the body of this BatchUpdateTaskStatusRequest.
 
         :return: The body of this BatchUpdateTaskStatusRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.BatchUpdateTaskStatusRequestBody`
@@ -80,7 +80,7 @@ class BatchUpdateTaskStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateTaskStatusRequest.
+        r"""Sets the body of this BatchUpdateTaskStatusRequest.
 
         :param body: The body of this BatchUpdateTaskStatusRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.BatchUpdateTaskStatusRequestBody`

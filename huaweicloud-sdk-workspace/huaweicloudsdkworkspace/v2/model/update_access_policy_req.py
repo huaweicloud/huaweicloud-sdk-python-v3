@@ -27,7 +27,7 @@ class UpdateAccessPolicyReq:
     }
 
     def __init__(self, operation_type=None, ip_white_list=None):
-        """UpdateAccessPolicyReq
+        r"""UpdateAccessPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAccessPolicyReq:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this UpdateAccessPolicyReq.
+        r"""Gets the operation_type of this UpdateAccessPolicyReq.
 
         操作类别。 * ADD_IP： 添加IP * DELETE_IP： 删除IP
 
@@ -61,7 +61,7 @@ class UpdateAccessPolicyReq:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this UpdateAccessPolicyReq.
+        r"""Sets the operation_type of this UpdateAccessPolicyReq.
 
         操作类别。 * ADD_IP： 添加IP * DELETE_IP： 删除IP
 
@@ -72,7 +72,7 @@ class UpdateAccessPolicyReq:
 
     @property
     def ip_white_list(self):
-        """Gets the ip_white_list of this UpdateAccessPolicyReq.
+        r"""Gets the ip_white_list of this UpdateAccessPolicyReq.
 
         策略的ip列表。
 
@@ -83,7 +83,7 @@ class UpdateAccessPolicyReq:
 
     @ip_white_list.setter
     def ip_white_list(self, ip_white_list):
-        """Sets the ip_white_list of this UpdateAccessPolicyReq.
+        r"""Sets the ip_white_list of this UpdateAccessPolicyReq.
 
         策略的ip列表。
 

@@ -40,7 +40,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     }
 
     def __init__(self, switch_option=None, limit_volume_size=None, min_volume_size=None, max_volume_size=None, trigger_available_percent=None, percents=None, step_size=None, step_percent=None):
-        """SearchAutoEnlargePolicyResponse
+        r"""SearchAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the switch_option of this SearchAutoEnlargePolicyResponse.
 
         磁盘自动扩容开关。
 
@@ -104,7 +104,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the switch_option of this SearchAutoEnlargePolicyResponse.
 
         磁盘自动扩容开关。
 
@@ -115,7 +115,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def limit_volume_size(self):
-        """Gets the limit_volume_size of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the limit_volume_size of this SearchAutoEnlargePolicyResponse.
 
         存储自动扩容上限。
 
@@ -126,7 +126,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @limit_volume_size.setter
     def limit_volume_size(self, limit_volume_size):
-        """Sets the limit_volume_size of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the limit_volume_size of this SearchAutoEnlargePolicyResponse.
 
         存储自动扩容上限。
 
@@ -137,7 +137,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def min_volume_size(self):
-        """Gets the min_volume_size of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the min_volume_size of this SearchAutoEnlargePolicyResponse.
 
         最小扩容磁盘容量。
 
@@ -148,7 +148,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @min_volume_size.setter
     def min_volume_size(self, min_volume_size):
-        """Sets the min_volume_size of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the min_volume_size of this SearchAutoEnlargePolicyResponse.
 
         最小扩容磁盘容量。
 
@@ -159,7 +159,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def max_volume_size(self):
-        """Gets the max_volume_size of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the max_volume_size of this SearchAutoEnlargePolicyResponse.
 
         最大扩容磁盘容量。
 
@@ -170,7 +170,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @max_volume_size.setter
     def max_volume_size(self, max_volume_size):
-        """Sets the max_volume_size of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the max_volume_size of this SearchAutoEnlargePolicyResponse.
 
         最大扩容磁盘容量。
 
@@ -181,7 +181,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def trigger_available_percent(self):
-        """Gets the trigger_available_percent of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the trigger_available_percent of this SearchAutoEnlargePolicyResponse.
 
         可用存储空间率。
 
@@ -192,7 +192,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @trigger_available_percent.setter
     def trigger_available_percent(self, trigger_available_percent):
-        """Sets the trigger_available_percent of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the trigger_available_percent of this SearchAutoEnlargePolicyResponse.
 
         可用存储空间率。
 
@@ -203,7 +203,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def percents(self):
-        """Gets the percents of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the percents of this SearchAutoEnlargePolicyResponse.
 
         空间率集合。
 
@@ -214,7 +214,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @percents.setter
     def percents(self, percents):
-        """Sets the percents of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the percents of this SearchAutoEnlargePolicyResponse.
 
         空间率集合。
 
@@ -225,7 +225,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def step_size(self):
-        """Gets the step_size of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the step_size of this SearchAutoEnlargePolicyResponse.
 
         扩容步长，固定大小扩容方式。
 
@@ -236,7 +236,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @step_size.setter
     def step_size(self, step_size):
-        """Sets the step_size of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the step_size of this SearchAutoEnlargePolicyResponse.
 
         扩容步长，固定大小扩容方式。
 
@@ -247,7 +247,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def step_percent(self):
-        """Gets the step_percent of this SearchAutoEnlargePolicyResponse.
+        r"""Gets the step_percent of this SearchAutoEnlargePolicyResponse.
 
         扩容步长，百分比扩容方式。
 
@@ -258,7 +258,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
     @step_percent.setter
     def step_percent(self, step_percent):
-        """Sets the step_percent of this SearchAutoEnlargePolicyResponse.
+        r"""Sets the step_percent of this SearchAutoEnlargePolicyResponse.
 
         扩容步长，百分比扩容方式。
 

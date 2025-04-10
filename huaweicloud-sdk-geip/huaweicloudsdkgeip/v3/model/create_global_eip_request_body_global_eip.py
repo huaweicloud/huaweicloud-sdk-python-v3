@@ -37,7 +37,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
     }
 
     def __init__(self, name=None, description=None, geip_pool_name=None, access_site=None, internet_bandwidth_id=None, tags=None, enterprise_project_id=None):
-        """CreateGlobalEipRequestBodyGlobalEip
+        r"""CreateGlobalEipRequestBodyGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def name(self):
-        """Gets the name of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the name of this CreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -94,7 +94,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the name of this CreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -105,7 +105,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def description(self):
-        """Gets the description of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the description of this CreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -116,7 +116,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the description of this CreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -127,7 +127,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the geip_pool_name of this CreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP池子名称
 
@@ -138,7 +138,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the geip_pool_name of this CreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP池子名称
 
@@ -149,7 +149,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def access_site(self):
-        """Gets the access_site of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the access_site of this CreateGlobalEipRequestBodyGlobalEip.
 
         接入点信息
 
@@ -160,7 +160,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the access_site of this CreateGlobalEipRequestBodyGlobalEip.
 
         接入点信息
 
@@ -171,7 +171,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the internet_bandwidth_id of this CreateGlobalEipRequestBodyGlobalEip.
 
         全域公网带宽的ID
 
@@ -182,7 +182,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the internet_bandwidth_id of this CreateGlobalEipRequestBodyGlobalEip.
 
         全域公网带宽的ID
 
@@ -193,7 +193,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the tags of this CreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP标签
 
@@ -204,7 +204,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the tags of this CreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP标签
 
@@ -215,7 +215,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the enterprise_project_id of this CreateGlobalEipRequestBodyGlobalEip.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -226,7 +226,7 @@ class CreateGlobalEipRequestBodyGlobalEip:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the enterprise_project_id of this CreateGlobalEipRequestBodyGlobalEip.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 

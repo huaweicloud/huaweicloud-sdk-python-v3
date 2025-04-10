@@ -27,7 +27,7 @@ class QueueCommandPage:
     }
 
     def __init__(self, count=None, marker=None):
-        """QueueCommandPage
+        r"""QueueCommandPage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueueCommandPage:
 
     @property
     def count(self):
-        """Gets the count of this QueueCommandPage.
+        r"""Gets the count of this QueueCommandPage.
 
         满足查询条件的记录总数。
 
@@ -61,7 +61,7 @@ class QueueCommandPage:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this QueueCommandPage.
+        r"""Sets the count of this QueueCommandPage.
 
         满足查询条件的记录总数。
 
@@ -72,7 +72,7 @@ class QueueCommandPage:
 
     @property
     def marker(self):
-        """Gets the marker of this QueueCommandPage.
+        r"""Gets the marker of this QueueCommandPage.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -83,7 +83,7 @@ class QueueCommandPage:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this QueueCommandPage.
+        r"""Sets the marker of this QueueCommandPage.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 

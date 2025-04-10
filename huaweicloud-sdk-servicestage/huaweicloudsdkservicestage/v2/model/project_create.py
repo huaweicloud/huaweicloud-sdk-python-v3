@@ -25,7 +25,7 @@ class ProjectCreate:
     }
 
     def __init__(self, name=None):
-        """ProjectCreate
+        r"""ProjectCreate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProjectCreate:
 
     @property
     def name(self):
-        """Gets the name of this ProjectCreate.
+        r"""Gets the name of this ProjectCreate.
 
         项目名称。
 
@@ -53,7 +53,7 @@ class ProjectCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectCreate.
+        r"""Sets the name of this ProjectCreate.
 
         项目名称。
 

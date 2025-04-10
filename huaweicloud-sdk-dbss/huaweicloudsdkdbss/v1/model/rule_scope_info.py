@@ -45,7 +45,7 @@ class RuleScopeInfo:
     }
 
     def __init__(self, id=None, name=None, action=None, status=None, exception_ips=None, source_ips=None, source_ports=None, db_ids=None, db_names=None, db_users=None, all_audit=None):
-        """RuleScopeInfo
+        r"""RuleScopeInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class RuleScopeInfo:
 
     @property
     def id(self):
-        """Gets the id of this RuleScopeInfo.
+        r"""Gets the id of this RuleScopeInfo.
 
         审计范围规则ID
 
@@ -124,7 +124,7 @@ class RuleScopeInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleScopeInfo.
+        r"""Sets the id of this RuleScopeInfo.
 
         审计范围规则ID
 
@@ -135,7 +135,7 @@ class RuleScopeInfo:
 
     @property
     def name(self):
-        """Gets the name of this RuleScopeInfo.
+        r"""Gets the name of this RuleScopeInfo.
 
         审计范围名称
 
@@ -146,7 +146,7 @@ class RuleScopeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleScopeInfo.
+        r"""Sets the name of this RuleScopeInfo.
 
         审计范围名称
 
@@ -157,7 +157,7 @@ class RuleScopeInfo:
 
     @property
     def action(self):
-        """Gets the action of this RuleScopeInfo.
+        r"""Gets the action of this RuleScopeInfo.
 
         审计范围动作
 
@@ -168,7 +168,7 @@ class RuleScopeInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RuleScopeInfo.
+        r"""Sets the action of this RuleScopeInfo.
 
         审计范围动作
 
@@ -179,7 +179,7 @@ class RuleScopeInfo:
 
     @property
     def status(self):
-        """Gets the status of this RuleScopeInfo.
+        r"""Gets the status of this RuleScopeInfo.
 
         审计范围规则状态
 
@@ -190,7 +190,7 @@ class RuleScopeInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RuleScopeInfo.
+        r"""Sets the status of this RuleScopeInfo.
 
         审计范围规则状态
 
@@ -201,7 +201,7 @@ class RuleScopeInfo:
 
     @property
     def exception_ips(self):
-        """Gets the exception_ips of this RuleScopeInfo.
+        r"""Gets the exception_ips of this RuleScopeInfo.
 
         审计范围例外IP
 
@@ -212,7 +212,7 @@ class RuleScopeInfo:
 
     @exception_ips.setter
     def exception_ips(self, exception_ips):
-        """Sets the exception_ips of this RuleScopeInfo.
+        r"""Sets the exception_ips of this RuleScopeInfo.
 
         审计范围例外IP
 
@@ -223,7 +223,7 @@ class RuleScopeInfo:
 
     @property
     def source_ips(self):
-        """Gets the source_ips of this RuleScopeInfo.
+        r"""Gets the source_ips of this RuleScopeInfo.
 
         审计范围规则源IP
 
@@ -234,7 +234,7 @@ class RuleScopeInfo:
 
     @source_ips.setter
     def source_ips(self, source_ips):
-        """Sets the source_ips of this RuleScopeInfo.
+        r"""Sets the source_ips of this RuleScopeInfo.
 
         审计范围规则源IP
 
@@ -245,7 +245,7 @@ class RuleScopeInfo:
 
     @property
     def source_ports(self):
-        """Gets the source_ports of this RuleScopeInfo.
+        r"""Gets the source_ports of this RuleScopeInfo.
 
         审计范围源端口
 
@@ -256,7 +256,7 @@ class RuleScopeInfo:
 
     @source_ports.setter
     def source_ports(self, source_ports):
-        """Sets the source_ports of this RuleScopeInfo.
+        r"""Sets the source_ports of this RuleScopeInfo.
 
         审计范围源端口
 
@@ -267,7 +267,7 @@ class RuleScopeInfo:
 
     @property
     def db_ids(self):
-        """Gets the db_ids of this RuleScopeInfo.
+        r"""Gets the db_ids of this RuleScopeInfo.
 
         数据库ID
 
@@ -278,7 +278,7 @@ class RuleScopeInfo:
 
     @db_ids.setter
     def db_ids(self, db_ids):
-        """Sets the db_ids of this RuleScopeInfo.
+        r"""Sets the db_ids of this RuleScopeInfo.
 
         数据库ID
 
@@ -289,7 +289,7 @@ class RuleScopeInfo:
 
     @property
     def db_names(self):
-        """Gets the db_names of this RuleScopeInfo.
+        r"""Gets the db_names of this RuleScopeInfo.
 
         数据库名称
 
@@ -300,7 +300,7 @@ class RuleScopeInfo:
 
     @db_names.setter
     def db_names(self, db_names):
-        """Sets the db_names of this RuleScopeInfo.
+        r"""Sets the db_names of this RuleScopeInfo.
 
         数据库名称
 
@@ -311,7 +311,7 @@ class RuleScopeInfo:
 
     @property
     def db_users(self):
-        """Gets the db_users of this RuleScopeInfo.
+        r"""Gets the db_users of this RuleScopeInfo.
 
         数据库用户
 
@@ -322,7 +322,7 @@ class RuleScopeInfo:
 
     @db_users.setter
     def db_users(self, db_users):
-        """Sets the db_users of this RuleScopeInfo.
+        r"""Sets the db_users of this RuleScopeInfo.
 
         数据库用户
 
@@ -333,7 +333,7 @@ class RuleScopeInfo:
 
     @property
     def all_audit(self):
-        """Gets the all_audit of this RuleScopeInfo.
+        r"""Gets the all_audit of this RuleScopeInfo.
 
         是否全审计
 
@@ -344,7 +344,7 @@ class RuleScopeInfo:
 
     @all_audit.setter
     def all_audit(self, all_audit):
-        """Sets the all_audit of this RuleScopeInfo.
+        r"""Sets the all_audit of this RuleScopeInfo.
 
         是否全审计
 

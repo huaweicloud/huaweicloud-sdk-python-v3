@@ -27,7 +27,7 @@ class MfaDeviceResult:
     }
 
     def __init__(self, serial_number=None, user_id=None):
-        """MfaDeviceResult
+        r"""MfaDeviceResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MfaDeviceResult:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this MfaDeviceResult.
+        r"""Gets the serial_number of this MfaDeviceResult.
 
         虚拟MFA的设备序列号。
 
@@ -59,7 +59,7 @@ class MfaDeviceResult:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this MfaDeviceResult.
+        r"""Sets the serial_number of this MfaDeviceResult.
 
         虚拟MFA的设备序列号。
 
@@ -70,7 +70,7 @@ class MfaDeviceResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MfaDeviceResult.
+        r"""Gets the user_id of this MfaDeviceResult.
 
         IAM用户ID。
 
@@ -81,7 +81,7 @@ class MfaDeviceResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MfaDeviceResult.
+        r"""Sets the user_id of this MfaDeviceResult.
 
         IAM用户ID。
 

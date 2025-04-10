@@ -30,7 +30,7 @@ class ListCertificatesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, certs=None):
-        """ListCertificatesV2Response
+        r"""ListCertificatesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCertificatesV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListCertificatesV2Response.
+        r"""Gets the size of this ListCertificatesV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListCertificatesV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListCertificatesV2Response.
+        r"""Sets the size of this ListCertificatesV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListCertificatesV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCertificatesV2Response.
+        r"""Gets the total of this ListCertificatesV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListCertificatesV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCertificatesV2Response.
+        r"""Sets the total of this ListCertificatesV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListCertificatesV2Response(SdkResponse):
 
     @property
     def certs(self):
-        """Gets the certs of this ListCertificatesV2Response.
+        r"""Gets the certs of this ListCertificatesV2Response.
 
         证书基本内容
 
@@ -111,7 +111,7 @@ class ListCertificatesV2Response(SdkResponse):
 
     @certs.setter
     def certs(self, certs):
-        """Sets the certs of this ListCertificatesV2Response.
+        r"""Sets the certs of this ListCertificatesV2Response.
 
         证书基本内容
 

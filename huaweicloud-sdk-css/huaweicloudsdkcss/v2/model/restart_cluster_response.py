@@ -24,7 +24,7 @@ class RestartClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestartClusterResponse
+        r"""RestartClusterResponse
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class ChangeVulScanPolicyRequestInfo:
     }
 
     def __init__(self, scan_period=None, scan_range_type=None, host_ids=None, scan_vul_types=None, status=None):
-        """ChangeVulScanPolicyRequestInfo
+        r"""ChangeVulScanPolicyRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @property
     def scan_period(self):
-        """Gets the scan_period of this ChangeVulScanPolicyRequestInfo.
+        r"""Gets the scan_period of this ChangeVulScanPolicyRequestInfo.
 
         扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
 
@@ -79,7 +79,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @scan_period.setter
     def scan_period(self, scan_period):
-        """Sets the scan_period of this ChangeVulScanPolicyRequestInfo.
+        r"""Sets the scan_period of this ChangeVulScanPolicyRequestInfo.
 
         扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
 
@@ -90,7 +90,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @property
     def scan_range_type(self):
-        """Gets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
+        r"""Gets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
 
         扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
 
@@ -101,7 +101,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @scan_range_type.setter
     def scan_range_type(self, scan_range_type):
-        """Sets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
+        r"""Sets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
 
         扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
 
@@ -112,7 +112,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @property
     def host_ids(self):
-        """Gets the host_ids of this ChangeVulScanPolicyRequestInfo.
+        r"""Gets the host_ids of this ChangeVulScanPolicyRequestInfo.
 
         主机ID列表；当scan_range_type的值为specific_host时必填
 
@@ -123,7 +123,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @host_ids.setter
     def host_ids(self, host_ids):
-        """Sets the host_ids of this ChangeVulScanPolicyRequestInfo.
+        r"""Sets the host_ids of this ChangeVulScanPolicyRequestInfo.
 
         主机ID列表；当scan_range_type的值为specific_host时必填
 
@@ -134,7 +134,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @property
     def scan_vul_types(self):
-        """Gets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
+        r"""Gets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
 
         扫描的漏洞类型列表
 
@@ -145,7 +145,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @scan_vul_types.setter
     def scan_vul_types(self, scan_vul_types):
-        """Sets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
+        r"""Sets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
 
         扫描的漏洞类型列表
 
@@ -156,7 +156,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @property
     def status(self):
-        """Gets the status of this ChangeVulScanPolicyRequestInfo.
+        r"""Gets the status of this ChangeVulScanPolicyRequestInfo.
 
         扫描策略状态，包含如下：   -open : 开启   -close : 关闭
 
@@ -167,7 +167,7 @@ class ChangeVulScanPolicyRequestInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeVulScanPolicyRequestInfo.
+        r"""Sets the status of this ChangeVulScanPolicyRequestInfo.
 
         扫描策略状态，包含如下：   -open : 开启   -close : 关闭
 

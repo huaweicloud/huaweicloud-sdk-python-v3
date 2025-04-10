@@ -27,7 +27,7 @@ class ResourceTagParam:
     }
 
     def __init__(self, key=None, values=None):
-        """ResourceTagParam
+        r"""ResourceTagParam
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResourceTagParam:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTagParam.
+        r"""Gets the key of this ResourceTagParam.
 
         资源标签的键
 
@@ -60,7 +60,7 @@ class ResourceTagParam:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTagParam.
+        r"""Sets the key of this ResourceTagParam.
 
         资源标签的键
 
@@ -71,7 +71,7 @@ class ResourceTagParam:
 
     @property
     def values(self):
-        """Gets the values of this ResourceTagParam.
+        r"""Gets the values of this ResourceTagParam.
 
         资源标签的值列表
 
@@ -82,7 +82,7 @@ class ResourceTagParam:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ResourceTagParam.
+        r"""Sets the values of this ResourceTagParam.
 
         资源标签的值列表
 

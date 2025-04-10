@@ -27,7 +27,7 @@ class BatchResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """BatchResourceTag
+        r"""BatchResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this BatchResourceTag.
+        r"""Gets the key of this BatchResourceTag.
 
         标签键。 - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@，但首尾不能含有空格，不能以_sys_开头。
 
@@ -60,7 +60,7 @@ class BatchResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BatchResourceTag.
+        r"""Sets the key of this BatchResourceTag.
 
         标签键。 - 长度为1-128个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@，但首尾不能含有空格，不能以_sys_开头。
 
@@ -71,7 +71,7 @@ class BatchResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this BatchResourceTag.
+        r"""Gets the value of this BatchResourceTag.
 
         标签值，删除标签时非必填。 - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@。
 
@@ -82,7 +82,7 @@ class BatchResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchResourceTag.
+        r"""Sets the value of this BatchResourceTag.
 
         标签值，删除标签时非必填。 - 最大长度255个unicode字符。 - 可以包含任何语种字母、数字、空格和_.:=+-@。
 

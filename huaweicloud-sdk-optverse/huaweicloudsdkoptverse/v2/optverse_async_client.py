@@ -34,7 +34,7 @@ class OptVerseAsyncClient(Client):
         return client_builder
 
     def create_task_async(self, request):
-        """创建任务
+        r"""创建任务
 
         创建任务
         
@@ -101,7 +101,7 @@ class OptVerseAsyncClient(Client):
         return http_info
 
     def delete_task_async(self, request):
-        """删除任务
+        r"""删除任务
 
         删除任务
         
@@ -168,7 +168,7 @@ class OptVerseAsyncClient(Client):
         return http_info
 
     def list_task_async(self, request):
-        """查询任务列表
+        r"""查询任务列表
 
         查询任务列表
         
@@ -237,7 +237,7 @@ class OptVerseAsyncClient(Client):
         return http_info
 
     def show_task_async(self, request):
-        """获取任务详情
+        r"""获取任务详情
 
         获取任务详情
         

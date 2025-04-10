@@ -33,7 +33,7 @@ class CcCondition:
     }
 
     def __init__(self, category=None, logic_operation=None, contents=None, value_list_id=None, index=None):
-        """CcCondition
+        r"""CcCondition
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CcCondition:
 
     @property
     def category(self):
-        """Gets the category of this CcCondition.
+        r"""Gets the category of this CcCondition.
 
         字段类型
 
@@ -80,7 +80,7 @@ class CcCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CcCondition.
+        r"""Sets the category of this CcCondition.
 
         字段类型
 
@@ -91,7 +91,7 @@ class CcCondition:
 
     @property
     def logic_operation(self):
-        """Gets the logic_operation of this CcCondition.
+        r"""Gets the logic_operation of this CcCondition.
 
         条件列表匹配逻辑。   -  如果字段类型category是url， 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、 not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal或者len_not_equal   - 如果字段类型category是ip或者ipv6，匹配逻辑可以为： equal、not_equal、equal_any或者not_equal_all   - 如果字段类型category是params、cookie或者header, 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal、len_not_equal、、num_greater、num_less、num_equal、num_not_equal、exist或者not_exist
 
@@ -102,7 +102,7 @@ class CcCondition:
 
     @logic_operation.setter
     def logic_operation(self, logic_operation):
-        """Sets the logic_operation of this CcCondition.
+        r"""Sets the logic_operation of this CcCondition.
 
         条件列表匹配逻辑。   -  如果字段类型category是url， 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、 not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal或者len_not_equal   - 如果字段类型category是ip或者ipv6，匹配逻辑可以为： equal、not_equal、equal_any或者not_equal_all   - 如果字段类型category是params、cookie或者header, 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal、len_not_equal、、num_greater、num_less、num_equal、num_not_equal、exist或者not_exist
 
@@ -113,7 +113,7 @@ class CcCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this CcCondition.
+        r"""Gets the contents of this CcCondition.
 
         条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
 
@@ -124,7 +124,7 @@ class CcCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CcCondition.
+        r"""Sets the contents of this CcCondition.
 
         条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
 
@@ -135,7 +135,7 @@ class CcCondition:
 
     @property
     def value_list_id(self):
-        """Gets the value_list_id of this CcCondition.
+        r"""Gets the value_list_id of this CcCondition.
 
         引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
 
@@ -146,7 +146,7 @@ class CcCondition:
 
     @value_list_id.setter
     def value_list_id(self, value_list_id):
-        """Sets the value_list_id of this CcCondition.
+        r"""Sets the value_list_id of this CcCondition.
 
         引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
 
@@ -157,7 +157,7 @@ class CcCondition:
 
     @property
     def index(self):
-        """Gets the index of this CcCondition.
+        r"""Gets the index of this CcCondition.
 
         子字段，当字段类型（category）选择“params”、“cookie”、“header”时，请根据实际需求配置子字段且该参数必填。
 
@@ -168,7 +168,7 @@ class CcCondition:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this CcCondition.
+        r"""Sets the index of this CcCondition.
 
         子字段，当字段类型（category）选择“params”、“cookie”、“header”时，请根据实际需求配置子字段且该参数必填。
 

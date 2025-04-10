@@ -29,7 +29,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ResetGaussMySqlDatabasePasswordRequest
+        r"""ResetGaussMySqlDatabasePasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ResetGaussMySqlDatabasePasswordRequest.
+        r"""Gets the x_language of this ResetGaussMySqlDatabasePasswordRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ResetGaussMySqlDatabasePasswordRequest.
+        r"""Sets the x_language of this ResetGaussMySqlDatabasePasswordRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetGaussMySqlDatabasePasswordRequest.
+        r"""Gets the instance_id of this ResetGaussMySqlDatabasePasswordRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetGaussMySqlDatabasePasswordRequest.
+        r"""Sets the instance_id of this ResetGaussMySqlDatabasePasswordRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetGaussMySqlDatabasePasswordRequest.
+        r"""Gets the body of this ResetGaussMySqlDatabasePasswordRequest.
 
         :return: The body of this ResetGaussMySqlDatabasePasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetDatabasePasswordRequest`
@@ -109,7 +109,7 @@ class ResetGaussMySqlDatabasePasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetGaussMySqlDatabasePasswordRequest.
+        r"""Sets the body of this ResetGaussMySqlDatabasePasswordRequest.
 
         :param body: The body of this ResetGaussMySqlDatabasePasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ResetDatabasePasswordRequest`

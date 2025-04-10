@@ -37,7 +37,7 @@ class UpdateEnterpriseRouter:
     }
 
     def __init__(self, name=None, description=None, enable_default_propagation=None, enable_default_association=None, default_propagation_route_table_id=None, default_association_route_table_id=None, auto_accept_shared_attachments=None):
-        """UpdateEnterpriseRouter
+        r"""UpdateEnterpriseRouter
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def name(self):
-        """Gets the name of this UpdateEnterpriseRouter.
+        r"""Gets the name of this UpdateEnterpriseRouter.
 
         企业路由器实例名称
 
@@ -96,7 +96,7 @@ class UpdateEnterpriseRouter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEnterpriseRouter.
+        r"""Sets the name of this UpdateEnterpriseRouter.
 
         企业路由器实例名称
 
@@ -107,7 +107,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEnterpriseRouter.
+        r"""Gets the description of this UpdateEnterpriseRouter.
 
         企业路由器实例描述信息
 
@@ -118,7 +118,7 @@ class UpdateEnterpriseRouter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEnterpriseRouter.
+        r"""Sets the description of this UpdateEnterpriseRouter.
 
         企业路由器实例描述信息
 
@@ -129,7 +129,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def enable_default_propagation(self):
-        """Gets the enable_default_propagation of this UpdateEnterpriseRouter.
+        r"""Gets the enable_default_propagation of this UpdateEnterpriseRouter.
 
         是否开启默认传播
 
@@ -140,7 +140,7 @@ class UpdateEnterpriseRouter:
 
     @enable_default_propagation.setter
     def enable_default_propagation(self, enable_default_propagation):
-        """Sets the enable_default_propagation of this UpdateEnterpriseRouter.
+        r"""Sets the enable_default_propagation of this UpdateEnterpriseRouter.
 
         是否开启默认传播
 
@@ -151,7 +151,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def enable_default_association(self):
-        """Gets the enable_default_association of this UpdateEnterpriseRouter.
+        r"""Gets the enable_default_association of this UpdateEnterpriseRouter.
 
         是否开启默认关联
 
@@ -162,7 +162,7 @@ class UpdateEnterpriseRouter:
 
     @enable_default_association.setter
     def enable_default_association(self, enable_default_association):
-        """Sets the enable_default_association of this UpdateEnterpriseRouter.
+        r"""Sets the enable_default_association of this UpdateEnterpriseRouter.
 
         是否开启默认关联
 
@@ -173,7 +173,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def default_propagation_route_table_id(self):
-        """Gets the default_propagation_route_table_id of this UpdateEnterpriseRouter.
+        r"""Gets the default_propagation_route_table_id of this UpdateEnterpriseRouter.
 
         默认传播路由表ID
 
@@ -184,7 +184,7 @@ class UpdateEnterpriseRouter:
 
     @default_propagation_route_table_id.setter
     def default_propagation_route_table_id(self, default_propagation_route_table_id):
-        """Sets the default_propagation_route_table_id of this UpdateEnterpriseRouter.
+        r"""Sets the default_propagation_route_table_id of this UpdateEnterpriseRouter.
 
         默认传播路由表ID
 
@@ -195,7 +195,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def default_association_route_table_id(self):
-        """Gets the default_association_route_table_id of this UpdateEnterpriseRouter.
+        r"""Gets the default_association_route_table_id of this UpdateEnterpriseRouter.
 
         默认关联路由表ID
 
@@ -206,7 +206,7 @@ class UpdateEnterpriseRouter:
 
     @default_association_route_table_id.setter
     def default_association_route_table_id(self, default_association_route_table_id):
-        """Sets the default_association_route_table_id of this UpdateEnterpriseRouter.
+        r"""Sets the default_association_route_table_id of this UpdateEnterpriseRouter.
 
         默认关联路由表ID
 
@@ -217,7 +217,7 @@ class UpdateEnterpriseRouter:
 
     @property
     def auto_accept_shared_attachments(self):
-        """Gets the auto_accept_shared_attachments of this UpdateEnterpriseRouter.
+        r"""Gets the auto_accept_shared_attachments of this UpdateEnterpriseRouter.
 
         是否自动接受共享连接创建，默认false不开启
 
@@ -228,7 +228,7 @@ class UpdateEnterpriseRouter:
 
     @auto_accept_shared_attachments.setter
     def auto_accept_shared_attachments(self, auto_accept_shared_attachments):
-        """Sets the auto_accept_shared_attachments of this UpdateEnterpriseRouter.
+        r"""Sets the auto_accept_shared_attachments of this UpdateEnterpriseRouter.
 
         是否自动接受共享连接创建，默认false不开启
 

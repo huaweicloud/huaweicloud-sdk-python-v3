@@ -27,7 +27,7 @@ class InputParam:
     }
 
     def __init__(self, name=None, property_name=None):
-        """InputParam
+        r"""InputParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InputParam:
 
     @property
     def name(self):
-        """Gets the name of this InputParam.
+        r"""Gets the name of this InputParam.
 
         参数名称
 
@@ -59,7 +59,7 @@ class InputParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InputParam.
+        r"""Sets the name of this InputParam.
 
         参数名称
 
@@ -70,7 +70,7 @@ class InputParam:
 
     @property
     def property_name(self):
-        """Gets the property_name of this InputParam.
+        r"""Gets the property_name of this InputParam.
 
         属性名称
 
@@ -81,7 +81,7 @@ class InputParam:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this InputParam.
+        r"""Sets the property_name of this InputParam.
 
         属性名称
 

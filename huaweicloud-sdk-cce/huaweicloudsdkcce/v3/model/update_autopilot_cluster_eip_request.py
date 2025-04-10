@@ -27,7 +27,7 @@ class UpdateAutopilotClusterEipRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateAutopilotClusterEipRequest
+        r"""UpdateAutopilotClusterEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAutopilotClusterEipRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAutopilotClusterEipRequest.
+        r"""Gets the cluster_id of this UpdateAutopilotClusterEipRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class UpdateAutopilotClusterEipRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAutopilotClusterEipRequest.
+        r"""Sets the cluster_id of this UpdateAutopilotClusterEipRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class UpdateAutopilotClusterEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutopilotClusterEipRequest.
+        r"""Gets the body of this UpdateAutopilotClusterEipRequest.
 
         :return: The body of this UpdateAutopilotClusterEipRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPRequest`
@@ -80,7 +80,7 @@ class UpdateAutopilotClusterEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutopilotClusterEipRequest.
+        r"""Sets the body of this UpdateAutopilotClusterEipRequest.
 
         :param body: The body of this UpdateAutopilotClusterEipRequest.
         :type body: :class:`huaweicloudsdkcce.v3.MasterEIPRequest`

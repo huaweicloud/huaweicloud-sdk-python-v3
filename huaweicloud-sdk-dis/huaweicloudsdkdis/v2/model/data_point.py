@@ -27,7 +27,7 @@ class DataPoint:
     }
 
     def __init__(self, timestamp=None, value=None):
-        """DataPoint
+        r"""DataPoint
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataPoint:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DataPoint.
+        r"""Gets the timestamp of this DataPoint.
 
         时间戳。
 
@@ -61,7 +61,7 @@ class DataPoint:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DataPoint.
+        r"""Sets the timestamp of this DataPoint.
 
         时间戳。
 
@@ -72,7 +72,7 @@ class DataPoint:
 
     @property
     def value(self):
-        """Gets the value of this DataPoint.
+        r"""Gets the value of this DataPoint.
 
         时间戳对应的监控值。
 
@@ -83,7 +83,7 @@ class DataPoint:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DataPoint.
+        r"""Sets the value of this DataPoint.
 
         时间戳对应的监控值。
 

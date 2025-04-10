@@ -35,7 +35,7 @@ class ImportAppRsp:
     }
 
     def __init__(self, source_app_id=None, destination_app_id=None, destination_app_name=None, version=None, message=None, status=None):
-        """ImportAppRsp
+        r"""ImportAppRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ImportAppRsp:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this ImportAppRsp.
+        r"""Gets the source_app_id of this ImportAppRsp.
 
         源应用id
 
@@ -89,7 +89,7 @@ class ImportAppRsp:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this ImportAppRsp.
+        r"""Sets the source_app_id of this ImportAppRsp.
 
         源应用id
 
@@ -100,7 +100,7 @@ class ImportAppRsp:
 
     @property
     def destination_app_id(self):
-        """Gets the destination_app_id of this ImportAppRsp.
+        r"""Gets the destination_app_id of this ImportAppRsp.
 
         目标应用id
 
@@ -111,7 +111,7 @@ class ImportAppRsp:
 
     @destination_app_id.setter
     def destination_app_id(self, destination_app_id):
-        """Sets the destination_app_id of this ImportAppRsp.
+        r"""Sets the destination_app_id of this ImportAppRsp.
 
         目标应用id
 
@@ -122,7 +122,7 @@ class ImportAppRsp:
 
     @property
     def destination_app_name(self):
-        """Gets the destination_app_name of this ImportAppRsp.
+        r"""Gets the destination_app_name of this ImportAppRsp.
 
         目标应用名称
 
@@ -133,7 +133,7 @@ class ImportAppRsp:
 
     @destination_app_name.setter
     def destination_app_name(self, destination_app_name):
-        """Sets the destination_app_name of this ImportAppRsp.
+        r"""Sets the destination_app_name of this ImportAppRsp.
 
         目标应用名称
 
@@ -144,7 +144,7 @@ class ImportAppRsp:
 
     @property
     def version(self):
-        """Gets the version of this ImportAppRsp.
+        r"""Gets the version of this ImportAppRsp.
 
         应用版本
 
@@ -155,7 +155,7 @@ class ImportAppRsp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ImportAppRsp.
+        r"""Sets the version of this ImportAppRsp.
 
         应用版本
 
@@ -166,7 +166,7 @@ class ImportAppRsp:
 
     @property
     def message(self):
-        """Gets the message of this ImportAppRsp.
+        r"""Gets the message of this ImportAppRsp.
 
         导入结果信息，仅在导入失败时会返回
 
@@ -177,7 +177,7 @@ class ImportAppRsp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ImportAppRsp.
+        r"""Sets the message of this ImportAppRsp.
 
         导入结果信息，仅在导入失败时会返回
 
@@ -188,7 +188,7 @@ class ImportAppRsp:
 
     @property
     def status(self):
-        """Gets the status of this ImportAppRsp.
+        r"""Gets the status of this ImportAppRsp.
 
         导入结果状态
 
@@ -199,7 +199,7 @@ class ImportAppRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImportAppRsp.
+        r"""Sets the status of this ImportAppRsp.
 
         导入结果状态
 

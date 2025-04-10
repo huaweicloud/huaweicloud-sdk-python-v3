@@ -27,7 +27,7 @@ class ShowImageWatermarkRequestBody:
     }
 
     def __init__(self, file=None, mark_len=None):
-        """ShowImageWatermarkRequestBody
+        r"""ShowImageWatermarkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowImageWatermarkRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ShowImageWatermarkRequestBody.
+        r"""Gets the file of this ShowImageWatermarkRequestBody.
 
         待提取暗水印的图片文件。
 
@@ -60,7 +60,7 @@ class ShowImageWatermarkRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ShowImageWatermarkRequestBody.
+        r"""Sets the file of this ShowImageWatermarkRequestBody.
 
         待提取暗水印的图片文件。
 
@@ -71,7 +71,7 @@ class ShowImageWatermarkRequestBody:
 
     @property
     def mark_len(self):
-        """Gets the mark_len of this ShowImageWatermarkRequestBody.
+        r"""Gets the mark_len of this ShowImageWatermarkRequestBody.
 
         指定待提取水印的长度，mark_len长度大于0，小于32。设置后可以提升水印提取性能
 
@@ -82,7 +82,7 @@ class ShowImageWatermarkRequestBody:
 
     @mark_len.setter
     def mark_len(self, mark_len):
-        """Sets the mark_len of this ShowImageWatermarkRequestBody.
+        r"""Sets the mark_len of this ShowImageWatermarkRequestBody.
 
         指定待提取水印的长度，mark_len长度大于0，小于32。设置后可以提升水印提取性能
 

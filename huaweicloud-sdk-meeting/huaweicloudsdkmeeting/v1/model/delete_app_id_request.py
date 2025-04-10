@@ -29,7 +29,7 @@ class DeleteAppIdRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, app_id=None):
-        """DeleteAppIdRequest
+        r"""DeleteAppIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteAppIdRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteAppIdRequest.
+        r"""Gets the x_request_id of this DeleteAppIdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class DeleteAppIdRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteAppIdRequest.
+        r"""Sets the x_request_id of this DeleteAppIdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class DeleteAppIdRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this DeleteAppIdRequest.
+        r"""Gets the accept_language of this DeleteAppIdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class DeleteAppIdRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this DeleteAppIdRequest.
+        r"""Sets the accept_language of this DeleteAppIdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class DeleteAppIdRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteAppIdRequest.
+        r"""Gets the app_id of this DeleteAppIdRequest.
 
         企业应用ID
 
@@ -111,7 +111,7 @@ class DeleteAppIdRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteAppIdRequest.
+        r"""Sets the app_id of this DeleteAppIdRequest.
 
         企业应用ID
 

@@ -27,7 +27,7 @@ class ShowRecoveryTimeWindowRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ShowRecoveryTimeWindowRequest
+        r"""ShowRecoveryTimeWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRecoveryTimeWindowRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRecoveryTimeWindowRequest.
+        r"""Gets the instance_id of this ShowRecoveryTimeWindowRequest.
 
         操作的实例ID
 
@@ -60,7 +60,7 @@ class ShowRecoveryTimeWindowRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRecoveryTimeWindowRequest.
+        r"""Sets the instance_id of this ShowRecoveryTimeWindowRequest.
 
         操作的实例ID
 
@@ -71,7 +71,7 @@ class ShowRecoveryTimeWindowRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowRecoveryTimeWindowRequest.
+        r"""Gets the x_language of this ShowRecoveryTimeWindowRequest.
 
         语言
 
@@ -82,7 +82,7 @@ class ShowRecoveryTimeWindowRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowRecoveryTimeWindowRequest.
+        r"""Sets the x_language of this ShowRecoveryTimeWindowRequest.
 
         语言
 

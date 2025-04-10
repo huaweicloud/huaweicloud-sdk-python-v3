@@ -39,7 +39,7 @@ class QueuePlanRequestBody:
     }
 
     def __init__(self, plan_name=None, target_cu=None, start_hour=None, start_minute=None, repeat_day=None, valid_date_begin=None, valid_date_end=None, activate=None):
-        """QueuePlanRequestBody
+        r"""QueuePlanRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class QueuePlanRequestBody:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this QueuePlanRequestBody.
+        r"""Gets the plan_name of this QueuePlanRequestBody.
 
         队列扩缩容计划名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -98,7 +98,7 @@ class QueuePlanRequestBody:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this QueuePlanRequestBody.
+        r"""Sets the plan_name of this QueuePlanRequestBody.
 
         队列扩缩容计划名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -109,7 +109,7 @@ class QueuePlanRequestBody:
 
     @property
     def target_cu(self):
-        """Gets the target_cu of this QueuePlanRequestBody.
+        r"""Gets the target_cu of this QueuePlanRequestBody.
 
         队列扩缩容计划CU的目标值
 
@@ -120,7 +120,7 @@ class QueuePlanRequestBody:
 
     @target_cu.setter
     def target_cu(self, target_cu):
-        """Sets the target_cu of this QueuePlanRequestBody.
+        r"""Sets the target_cu of this QueuePlanRequestBody.
 
         队列扩缩容计划CU的目标值
 
@@ -131,7 +131,7 @@ class QueuePlanRequestBody:
 
     @property
     def start_hour(self):
-        """Gets the start_hour of this QueuePlanRequestBody.
+        r"""Gets the start_hour of this QueuePlanRequestBody.
 
         队列扩缩容计划起始小时时间
 
@@ -142,7 +142,7 @@ class QueuePlanRequestBody:
 
     @start_hour.setter
     def start_hour(self, start_hour):
-        """Sets the start_hour of this QueuePlanRequestBody.
+        r"""Sets the start_hour of this QueuePlanRequestBody.
 
         队列扩缩容计划起始小时时间
 
@@ -153,7 +153,7 @@ class QueuePlanRequestBody:
 
     @property
     def start_minute(self):
-        """Gets the start_minute of this QueuePlanRequestBody.
+        r"""Gets the start_minute of this QueuePlanRequestBody.
 
         队列扩缩容计划的起始分钟时间
 
@@ -164,7 +164,7 @@ class QueuePlanRequestBody:
 
     @start_minute.setter
     def start_minute(self, start_minute):
-        """Sets the start_minute of this QueuePlanRequestBody.
+        r"""Sets the start_minute of this QueuePlanRequestBody.
 
         队列扩缩容计划的起始分钟时间
 
@@ -175,7 +175,7 @@ class QueuePlanRequestBody:
 
     @property
     def repeat_day(self):
-        """Gets the repeat_day of this QueuePlanRequestBody.
+        r"""Gets the repeat_day of this QueuePlanRequestBody.
 
         定时扩缩容计划的重复周期规律，可以选择周一到周日的某一天、某几天、或者不选择。如果不选择，则会在当前时间后的start_hour：start_minute时间点执行扩缩容计划。如：\"repeat_day\": [\"MONDAY\", \"TUESDAY\", \"WEDNESDAY\",\"SUNDAY\"]
 
@@ -186,7 +186,7 @@ class QueuePlanRequestBody:
 
     @repeat_day.setter
     def repeat_day(self, repeat_day):
-        """Sets the repeat_day of this QueuePlanRequestBody.
+        r"""Sets the repeat_day of this QueuePlanRequestBody.
 
         定时扩缩容计划的重复周期规律，可以选择周一到周日的某一天、某几天、或者不选择。如果不选择，则会在当前时间后的start_hour：start_minute时间点执行扩缩容计划。如：\"repeat_day\": [\"MONDAY\", \"TUESDAY\", \"WEDNESDAY\",\"SUNDAY\"]
 
@@ -197,7 +197,7 @@ class QueuePlanRequestBody:
 
     @property
     def valid_date_begin(self):
-        """Gets the valid_date_begin of this QueuePlanRequestBody.
+        r"""Gets the valid_date_begin of this QueuePlanRequestBody.
 
         有效期开始时间（13位时间戳）
 
@@ -208,7 +208,7 @@ class QueuePlanRequestBody:
 
     @valid_date_begin.setter
     def valid_date_begin(self, valid_date_begin):
-        """Sets the valid_date_begin of this QueuePlanRequestBody.
+        r"""Sets the valid_date_begin of this QueuePlanRequestBody.
 
         有效期开始时间（13位时间戳）
 
@@ -219,7 +219,7 @@ class QueuePlanRequestBody:
 
     @property
     def valid_date_end(self):
-        """Gets the valid_date_end of this QueuePlanRequestBody.
+        r"""Gets the valid_date_end of this QueuePlanRequestBody.
 
         有效期结束时间（13位时间戳）
 
@@ -230,7 +230,7 @@ class QueuePlanRequestBody:
 
     @valid_date_end.setter
     def valid_date_end(self, valid_date_end):
-        """Sets the valid_date_end of this QueuePlanRequestBody.
+        r"""Sets the valid_date_end of this QueuePlanRequestBody.
 
         有效期结束时间（13位时间戳）
 
@@ -241,7 +241,7 @@ class QueuePlanRequestBody:
 
     @property
     def activate(self):
-        """Gets the activate of this QueuePlanRequestBody.
+        r"""Gets the activate of this QueuePlanRequestBody.
 
         当前设置的扩缩容计划是否激活，默认为激活
 
@@ -252,7 +252,7 @@ class QueuePlanRequestBody:
 
     @activate.setter
     def activate(self, activate):
-        """Sets the activate of this QueuePlanRequestBody.
+        r"""Sets the activate of this QueuePlanRequestBody.
 
         当前设置的扩缩容计划是否激活，默认为激活
 

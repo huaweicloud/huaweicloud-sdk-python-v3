@@ -26,7 +26,7 @@ class DeleteDeploymentHostResponse(SdkResponse):
     }
 
     def __init__(self, host_id=None):
-        """DeleteDeploymentHostResponse
+        r"""DeleteDeploymentHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDeploymentHostResponse(SdkResponse):
 
     @property
     def host_id(self):
-        """Gets the host_id of this DeleteDeploymentHostResponse.
+        r"""Gets the host_id of this DeleteDeploymentHostResponse.
 
         主机id
 
@@ -55,7 +55,7 @@ class DeleteDeploymentHostResponse(SdkResponse):
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DeleteDeploymentHostResponse.
+        r"""Sets the host_id of this DeleteDeploymentHostResponse.
 
         主机id
 

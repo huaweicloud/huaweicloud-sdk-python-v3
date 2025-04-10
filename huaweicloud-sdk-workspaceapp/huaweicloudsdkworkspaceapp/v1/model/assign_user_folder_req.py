@@ -25,7 +25,7 @@ class AssignUserFolderReq:
     }
 
     def __init__(self, items=None):
-        """AssignUserFolderReq
+        r"""AssignUserFolderReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssignUserFolderReq:
 
     @property
     def items(self):
-        """Gets the items of this AssignUserFolderReq.
+        r"""Gets the items of this AssignUserFolderReq.
 
         存储分配目标。
 
@@ -53,7 +53,7 @@ class AssignUserFolderReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this AssignUserFolderReq.
+        r"""Sets the items of this AssignUserFolderReq.
 
         存储分配目标。
 

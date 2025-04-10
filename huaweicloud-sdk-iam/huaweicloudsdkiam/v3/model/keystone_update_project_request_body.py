@@ -25,7 +25,7 @@ class KeystoneUpdateProjectRequestBody:
     }
 
     def __init__(self, project=None):
-        """KeystoneUpdateProjectRequestBody
+        r"""KeystoneUpdateProjectRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneUpdateProjectRequestBody:
 
     @property
     def project(self):
-        """Gets the project of this KeystoneUpdateProjectRequestBody.
+        r"""Gets the project of this KeystoneUpdateProjectRequestBody.
 
         :return: The project of this KeystoneUpdateProjectRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectOption`
@@ -51,7 +51,7 @@ class KeystoneUpdateProjectRequestBody:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this KeystoneUpdateProjectRequestBody.
+        r"""Sets the project of this KeystoneUpdateProjectRequestBody.
 
         :param project: The project of this KeystoneUpdateProjectRequestBody.
         :type project: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectOption`

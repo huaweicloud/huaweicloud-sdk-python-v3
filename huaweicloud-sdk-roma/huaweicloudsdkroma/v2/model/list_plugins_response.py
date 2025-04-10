@@ -30,7 +30,7 @@ class ListPluginsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, plugins=None):
-        """ListPluginsResponse
+        r"""ListPluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListPluginsResponse.
+        r"""Gets the size of this ListPluginsResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListPluginsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListPluginsResponse.
+        r"""Sets the size of this ListPluginsResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPluginsResponse.
+        r"""Gets the total of this ListPluginsResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListPluginsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPluginsResponse.
+        r"""Sets the total of this ListPluginsResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def plugins(self):
-        """Gets the plugins of this ListPluginsResponse.
+        r"""Gets the plugins of this ListPluginsResponse.
 
         插件列表。
 
@@ -111,7 +111,7 @@ class ListPluginsResponse(SdkResponse):
 
     @plugins.setter
     def plugins(self, plugins):
-        """Sets the plugins of this ListPluginsResponse.
+        r"""Sets the plugins of this ListPluginsResponse.
 
         插件列表。
 

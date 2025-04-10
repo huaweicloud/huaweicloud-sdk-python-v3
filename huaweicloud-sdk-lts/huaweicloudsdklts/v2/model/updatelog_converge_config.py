@@ -45,7 +45,7 @@ class UpdatelogConvergeConfig:
     }
 
     def __init__(self, id=None, member_account_id=None, member_project_id=None, create_time=None, update_time=None, status=None, organization_id=None, management_account_id=None, management_project_id=None, version=None, log_mapping_config=None):
-        """UpdatelogConvergeConfig
+        r"""UpdatelogConvergeConfig
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def id(self):
-        """Gets the id of this UpdatelogConvergeConfig.
+        r"""Gets the id of this UpdatelogConvergeConfig.
 
         ID
 
@@ -120,7 +120,7 @@ class UpdatelogConvergeConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatelogConvergeConfig.
+        r"""Sets the id of this UpdatelogConvergeConfig.
 
         ID
 
@@ -131,7 +131,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def member_account_id(self):
-        """Gets the member_account_id of this UpdatelogConvergeConfig.
+        r"""Gets the member_account_id of this UpdatelogConvergeConfig.
 
         组织成员账号id
 
@@ -142,7 +142,7 @@ class UpdatelogConvergeConfig:
 
     @member_account_id.setter
     def member_account_id(self, member_account_id):
-        """Sets the member_account_id of this UpdatelogConvergeConfig.
+        r"""Sets the member_account_id of this UpdatelogConvergeConfig.
 
         组织成员账号id
 
@@ -153,7 +153,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def member_project_id(self):
-        """Gets the member_project_id of this UpdatelogConvergeConfig.
+        r"""Gets the member_project_id of this UpdatelogConvergeConfig.
 
         组织成员项目id
 
@@ -164,7 +164,7 @@ class UpdatelogConvergeConfig:
 
     @member_project_id.setter
     def member_project_id(self, member_project_id):
-        """Sets the member_project_id of this UpdatelogConvergeConfig.
+        r"""Sets the member_project_id of this UpdatelogConvergeConfig.
 
         组织成员项目id
 
@@ -175,7 +175,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdatelogConvergeConfig.
+        r"""Gets the create_time of this UpdatelogConvergeConfig.
 
         创建时间
 
@@ -186,7 +186,7 @@ class UpdatelogConvergeConfig:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdatelogConvergeConfig.
+        r"""Sets the create_time of this UpdatelogConvergeConfig.
 
         创建时间
 
@@ -197,7 +197,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdatelogConvergeConfig.
+        r"""Gets the update_time of this UpdatelogConvergeConfig.
 
         更新时间
 
@@ -208,7 +208,7 @@ class UpdatelogConvergeConfig:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdatelogConvergeConfig.
+        r"""Sets the update_time of this UpdatelogConvergeConfig.
 
         更新时间
 
@@ -219,7 +219,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def status(self):
-        """Gets the status of this UpdatelogConvergeConfig.
+        r"""Gets the status of this UpdatelogConvergeConfig.
 
         状态
 
@@ -230,7 +230,7 @@ class UpdatelogConvergeConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatelogConvergeConfig.
+        r"""Sets the status of this UpdatelogConvergeConfig.
 
         状态
 
@@ -241,7 +241,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this UpdatelogConvergeConfig.
+        r"""Gets the organization_id of this UpdatelogConvergeConfig.
 
         组织id
 
@@ -252,7 +252,7 @@ class UpdatelogConvergeConfig:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this UpdatelogConvergeConfig.
+        r"""Sets the organization_id of this UpdatelogConvergeConfig.
 
         组织id
 
@@ -263,7 +263,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def management_account_id(self):
-        """Gets the management_account_id of this UpdatelogConvergeConfig.
+        r"""Gets the management_account_id of this UpdatelogConvergeConfig.
 
         管理员或者委托管理员账号id
 
@@ -274,7 +274,7 @@ class UpdatelogConvergeConfig:
 
     @management_account_id.setter
     def management_account_id(self, management_account_id):
-        """Sets the management_account_id of this UpdatelogConvergeConfig.
+        r"""Sets the management_account_id of this UpdatelogConvergeConfig.
 
         管理员或者委托管理员账号id
 
@@ -285,7 +285,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def management_project_id(self):
-        """Gets the management_project_id of this UpdatelogConvergeConfig.
+        r"""Gets the management_project_id of this UpdatelogConvergeConfig.
 
         管理员或者委托管理员项目id
 
@@ -296,7 +296,7 @@ class UpdatelogConvergeConfig:
 
     @management_project_id.setter
     def management_project_id(self, management_project_id):
-        """Sets the management_project_id of this UpdatelogConvergeConfig.
+        r"""Sets the management_project_id of this UpdatelogConvergeConfig.
 
         管理员或者委托管理员项目id
 
@@ -307,7 +307,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def version(self):
-        """Gets the version of this UpdatelogConvergeConfig.
+        r"""Gets the version of this UpdatelogConvergeConfig.
 
         版本
 
@@ -318,7 +318,7 @@ class UpdatelogConvergeConfig:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdatelogConvergeConfig.
+        r"""Sets the version of this UpdatelogConvergeConfig.
 
         版本
 
@@ -329,7 +329,7 @@ class UpdatelogConvergeConfig:
 
     @property
     def log_mapping_config(self):
-        """Gets the log_mapping_config of this UpdatelogConvergeConfig.
+        r"""Gets the log_mapping_config of this UpdatelogConvergeConfig.
 
         日志汇聚配置
 
@@ -340,7 +340,7 @@ class UpdatelogConvergeConfig:
 
     @log_mapping_config.setter
     def log_mapping_config(self, log_mapping_config):
-        """Sets the log_mapping_config of this UpdatelogConvergeConfig.
+        r"""Sets the log_mapping_config of this UpdatelogConvergeConfig.
 
         日志汇聚配置
 

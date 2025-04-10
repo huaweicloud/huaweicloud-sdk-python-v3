@@ -25,7 +25,7 @@ class PostgresqlPreCheckUpgradeMajorVersionReq:
     }
 
     def __init__(self, target_version=None):
-        """PostgresqlPreCheckUpgradeMajorVersionReq
+        r"""PostgresqlPreCheckUpgradeMajorVersionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PostgresqlPreCheckUpgradeMajorVersionReq:
 
     @property
     def target_version(self):
-        """Gets the target_version of this PostgresqlPreCheckUpgradeMajorVersionReq.
+        r"""Gets the target_version of this PostgresqlPreCheckUpgradeMajorVersionReq.
 
         目标版本。
 
@@ -53,7 +53,7 @@ class PostgresqlPreCheckUpgradeMajorVersionReq:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this PostgresqlPreCheckUpgradeMajorVersionReq.
+        r"""Sets the target_version of this PostgresqlPreCheckUpgradeMajorVersionReq.
 
         目标版本。
 

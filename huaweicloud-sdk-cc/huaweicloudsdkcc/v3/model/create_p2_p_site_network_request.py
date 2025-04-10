@@ -25,7 +25,7 @@ class CreateP2PSiteNetworkRequest:
     }
 
     def __init__(self, body=None):
-        """CreateP2PSiteNetworkRequest
+        r"""CreateP2PSiteNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateP2PSiteNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateP2PSiteNetworkRequest.
+        r"""Gets the body of this CreateP2PSiteNetworkRequest.
 
         :return: The body of this CreateP2PSiteNetworkRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateP2PSiteNetworkRequestBody`
@@ -52,7 +52,7 @@ class CreateP2PSiteNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateP2PSiteNetworkRequest.
+        r"""Sets the body of this CreateP2PSiteNetworkRequest.
 
         :param body: The body of this CreateP2PSiteNetworkRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateP2PSiteNetworkRequestBody`

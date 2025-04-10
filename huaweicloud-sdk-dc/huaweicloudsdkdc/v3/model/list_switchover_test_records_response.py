@@ -30,7 +30,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, switchover_test_records=None, page_info=None):
-        """ListSwitchoverTestRecordsResponse
+        r"""ListSwitchoverTestRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSwitchoverTestRecordsResponse.
+        r"""Gets the request_id of this ListSwitchoverTestRecordsResponse.
 
         操作请求ID
 
@@ -69,7 +69,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSwitchoverTestRecordsResponse.
+        r"""Sets the request_id of this ListSwitchoverTestRecordsResponse.
 
         操作请求ID
 
@@ -80,7 +80,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
 
     @property
     def switchover_test_records(self):
-        """Gets the switchover_test_records of this ListSwitchoverTestRecordsResponse.
+        r"""Gets the switchover_test_records of this ListSwitchoverTestRecordsResponse.
 
         倒换测试记录信息列表
 
@@ -91,7 +91,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
 
     @switchover_test_records.setter
     def switchover_test_records(self, switchover_test_records):
-        """Sets the switchover_test_records of this ListSwitchoverTestRecordsResponse.
+        r"""Sets the switchover_test_records of this ListSwitchoverTestRecordsResponse.
 
         倒换测试记录信息列表
 
@@ -102,7 +102,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSwitchoverTestRecordsResponse.
+        r"""Gets the page_info of this ListSwitchoverTestRecordsResponse.
 
         :return: The page_info of this ListSwitchoverTestRecordsResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListSwitchoverTestRecordsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSwitchoverTestRecordsResponse.
+        r"""Sets the page_info of this ListSwitchoverTestRecordsResponse.
 
         :param page_info: The page_info of this ListSwitchoverTestRecordsResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

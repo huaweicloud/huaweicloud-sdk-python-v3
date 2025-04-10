@@ -31,7 +31,7 @@ class UpdateHostedDirectConnect:
     }
 
     def __init__(self, name=None, description=None, bandwidth=None, peer_location=None):
-        """UpdateHostedDirectConnect
+        r"""UpdateHostedDirectConnect
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateHostedDirectConnect:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHostedDirectConnect.
+        r"""Gets the name of this UpdateHostedDirectConnect.
 
         物理专线的名字
 
@@ -75,7 +75,7 @@ class UpdateHostedDirectConnect:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHostedDirectConnect.
+        r"""Sets the name of this UpdateHostedDirectConnect.
 
         物理专线的名字
 
@@ -86,7 +86,7 @@ class UpdateHostedDirectConnect:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHostedDirectConnect.
+        r"""Gets the description of this UpdateHostedDirectConnect.
 
         物理专线的描述信息
 
@@ -97,7 +97,7 @@ class UpdateHostedDirectConnect:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHostedDirectConnect.
+        r"""Sets the description of this UpdateHostedDirectConnect.
 
         物理专线的描述信息
 
@@ -108,7 +108,7 @@ class UpdateHostedDirectConnect:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdateHostedDirectConnect.
+        r"""Gets the bandwidth of this UpdateHostedDirectConnect.
 
         指定托管专线接入带宽,单位Mbps
 
@@ -119,7 +119,7 @@ class UpdateHostedDirectConnect:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdateHostedDirectConnect.
+        r"""Sets the bandwidth of this UpdateHostedDirectConnect.
 
         指定托管专线接入带宽,单位Mbps
 
@@ -130,7 +130,7 @@ class UpdateHostedDirectConnect:
 
     @property
     def peer_location(self):
-        """Gets the peer_location of this UpdateHostedDirectConnect.
+        r"""Gets the peer_location of this UpdateHostedDirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字
 
@@ -141,7 +141,7 @@ class UpdateHostedDirectConnect:
 
     @peer_location.setter
     def peer_location(self, peer_location):
-        """Sets the peer_location of this UpdateHostedDirectConnect.
+        r"""Sets the peer_location of this UpdateHostedDirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字
 

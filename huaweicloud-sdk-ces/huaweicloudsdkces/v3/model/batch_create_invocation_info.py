@@ -33,7 +33,7 @@ class BatchCreateInvocationInfo:
     }
 
     def __init__(self, instance_id=None, ret_status=None, error_msg=None, invocation_id=None, error_code=None):
-        """BatchCreateInvocationInfo
+        r"""BatchCreateInvocationInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BatchCreateInvocationInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCreateInvocationInfo.
+        r"""Gets the instance_id of this BatchCreateInvocationInfo.
 
         主机id
 
@@ -82,7 +82,7 @@ class BatchCreateInvocationInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateInvocationInfo.
+        r"""Sets the instance_id of this BatchCreateInvocationInfo.
 
         主机id
 
@@ -93,7 +93,7 @@ class BatchCreateInvocationInfo:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this BatchCreateInvocationInfo.
+        r"""Gets the ret_status of this BatchCreateInvocationInfo.
 
         任务结果, successful成功，error失败
 
@@ -104,7 +104,7 @@ class BatchCreateInvocationInfo:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this BatchCreateInvocationInfo.
+        r"""Sets the ret_status of this BatchCreateInvocationInfo.
 
         任务结果, successful成功，error失败
 
@@ -115,7 +115,7 @@ class BatchCreateInvocationInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchCreateInvocationInfo.
+        r"""Gets the error_msg of this BatchCreateInvocationInfo.
 
         错误信息
 
@@ -126,7 +126,7 @@ class BatchCreateInvocationInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchCreateInvocationInfo.
+        r"""Sets the error_msg of this BatchCreateInvocationInfo.
 
         错误信息
 
@@ -137,7 +137,7 @@ class BatchCreateInvocationInfo:
 
     @property
     def invocation_id(self):
-        """Gets the invocation_id of this BatchCreateInvocationInfo.
+        r"""Gets the invocation_id of this BatchCreateInvocationInfo.
 
         任务id
 
@@ -148,7 +148,7 @@ class BatchCreateInvocationInfo:
 
     @invocation_id.setter
     def invocation_id(self, invocation_id):
-        """Sets the invocation_id of this BatchCreateInvocationInfo.
+        r"""Sets the invocation_id of this BatchCreateInvocationInfo.
 
         任务id
 
@@ -159,7 +159,7 @@ class BatchCreateInvocationInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchCreateInvocationInfo.
+        r"""Gets the error_code of this BatchCreateInvocationInfo.
 
         错误码
 
@@ -170,7 +170,7 @@ class BatchCreateInvocationInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchCreateInvocationInfo.
+        r"""Sets the error_code of this BatchCreateInvocationInfo.
 
         错误码
 

@@ -33,7 +33,7 @@ class CreateStarRocksDataReplication:
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, source_database=None, target_database=None, task_name=None):
-        """CreateStarRocksDataReplication
+        r"""CreateStarRocksDataReplication
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateStarRocksDataReplication:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this CreateStarRocksDataReplication.
+        r"""Gets the source_instance_id of this CreateStarRocksDataReplication.
 
         TaurusDB实例ID。
 
@@ -78,7 +78,7 @@ class CreateStarRocksDataReplication:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this CreateStarRocksDataReplication.
+        r"""Sets the source_instance_id of this CreateStarRocksDataReplication.
 
         TaurusDB实例ID。
 
@@ -89,7 +89,7 @@ class CreateStarRocksDataReplication:
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this CreateStarRocksDataReplication.
+        r"""Gets the source_node_id of this CreateStarRocksDataReplication.
 
         TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
@@ -100,7 +100,7 @@ class CreateStarRocksDataReplication:
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this CreateStarRocksDataReplication.
+        r"""Sets the source_node_id of this CreateStarRocksDataReplication.
 
         TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
@@ -111,7 +111,7 @@ class CreateStarRocksDataReplication:
 
     @property
     def source_database(self):
-        """Gets the source_database of this CreateStarRocksDataReplication.
+        r"""Gets the source_database of this CreateStarRocksDataReplication.
 
         源数据库。
 
@@ -122,7 +122,7 @@ class CreateStarRocksDataReplication:
 
     @source_database.setter
     def source_database(self, source_database):
-        """Sets the source_database of this CreateStarRocksDataReplication.
+        r"""Sets the source_database of this CreateStarRocksDataReplication.
 
         源数据库。
 
@@ -133,7 +133,7 @@ class CreateStarRocksDataReplication:
 
     @property
     def target_database(self):
-        """Gets the target_database of this CreateStarRocksDataReplication.
+        r"""Gets the target_database of this CreateStarRocksDataReplication.
 
         目标数据库。 字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -144,7 +144,7 @@ class CreateStarRocksDataReplication:
 
     @target_database.setter
     def target_database(self, target_database):
-        """Sets the target_database of this CreateStarRocksDataReplication.
+        r"""Sets the target_database of this CreateStarRocksDataReplication.
 
         目标数据库。 字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -155,7 +155,7 @@ class CreateStarRocksDataReplication:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateStarRocksDataReplication.
+        r"""Gets the task_name of this CreateStarRocksDataReplication.
 
         同步任务名。 字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -166,7 +166,7 @@ class CreateStarRocksDataReplication:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateStarRocksDataReplication.
+        r"""Sets the task_name of this CreateStarRocksDataReplication.
 
         同步任务名。 字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 

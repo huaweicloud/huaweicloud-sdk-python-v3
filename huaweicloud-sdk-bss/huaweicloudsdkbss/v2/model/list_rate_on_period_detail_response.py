@@ -30,7 +30,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     }
 
     def __init__(self, official_website_rating_result=None, optional_discount_rating_results=None, currency=None):
-        """ListRateOnPeriodDetailResponse
+        r"""ListRateOnPeriodDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
     @property
     def official_website_rating_result(self):
-        """Gets the official_website_rating_result of this ListRateOnPeriodDetailResponse.
+        r"""Gets the official_website_rating_result of this ListRateOnPeriodDetailResponse.
 
         :return: The official_website_rating_result of this ListRateOnPeriodDetailResponse.
         :rtype: :class:`huaweicloudsdkbss.v2.OfficialWebsiteRatingResult`
@@ -67,7 +67,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
     @official_website_rating_result.setter
     def official_website_rating_result(self, official_website_rating_result):
-        """Sets the official_website_rating_result of this ListRateOnPeriodDetailResponse.
+        r"""Sets the official_website_rating_result of this ListRateOnPeriodDetailResponse.
 
         :param official_website_rating_result: The official_website_rating_result of this ListRateOnPeriodDetailResponse.
         :type official_website_rating_result: :class:`huaweicloudsdkbss.v2.OfficialWebsiteRatingResult`
@@ -76,7 +76,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
     @property
     def optional_discount_rating_results(self):
-        """Gets the optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
+        r"""Gets the optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
 
         存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
 
@@ -87,7 +87,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
     @optional_discount_rating_results.setter
     def optional_discount_rating_results(self, optional_discount_rating_results):
-        """Sets the optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
+        r"""Sets the optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
 
         存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
 
@@ -98,7 +98,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListRateOnPeriodDetailResponse.
+        r"""Gets the currency of this ListRateOnPeriodDetailResponse.
 
         币种。 CNY：人民币。 值为空代表人民币。
 
@@ -109,7 +109,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListRateOnPeriodDetailResponse.
+        r"""Sets the currency of this ListRateOnPeriodDetailResponse.
 
         币种。 CNY：人民币。 值为空代表人民币。
 

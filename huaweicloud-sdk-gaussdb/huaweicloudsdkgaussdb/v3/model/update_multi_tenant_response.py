@@ -26,7 +26,7 @@ class UpdateMultiTenantResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateMultiTenantResponse
+        r"""UpdateMultiTenantResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMultiTenantResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateMultiTenantResponse.
+        r"""Gets the job_id of this UpdateMultiTenantResponse.
 
         开启/关闭多租特性ID。
 
@@ -55,7 +55,7 @@ class UpdateMultiTenantResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateMultiTenantResponse.
+        r"""Sets the job_id of this UpdateMultiTenantResponse.
 
         开启/关闭多租特性ID。
 

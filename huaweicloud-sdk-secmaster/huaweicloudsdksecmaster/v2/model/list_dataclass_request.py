@@ -39,7 +39,7 @@ class ListDataclassRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, name=None, business_code=None, description=None, is_built_in=None):
-        """ListDataclassRequest
+        r"""ListDataclassRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListDataclassRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDataclassRequest.
+        r"""Gets the project_id of this ListDataclassRequest.
 
         项目id
 
@@ -101,7 +101,7 @@ class ListDataclassRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDataclassRequest.
+        r"""Sets the project_id of this ListDataclassRequest.
 
         项目id
 
@@ -112,7 +112,7 @@ class ListDataclassRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListDataclassRequest.
+        r"""Gets the workspace_id of this ListDataclassRequest.
 
         工作空间id
 
@@ -123,7 +123,7 @@ class ListDataclassRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListDataclassRequest.
+        r"""Sets the workspace_id of this ListDataclassRequest.
 
         工作空间id
 
@@ -134,7 +134,7 @@ class ListDataclassRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataclassRequest.
+        r"""Gets the offset of this ListDataclassRequest.
 
         偏移量
 
@@ -145,7 +145,7 @@ class ListDataclassRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataclassRequest.
+        r"""Sets the offset of this ListDataclassRequest.
 
         偏移量
 
@@ -156,7 +156,7 @@ class ListDataclassRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataclassRequest.
+        r"""Gets the limit of this ListDataclassRequest.
 
         数据量
 
@@ -167,7 +167,7 @@ class ListDataclassRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataclassRequest.
+        r"""Sets the limit of this ListDataclassRequest.
 
         数据量
 
@@ -178,7 +178,7 @@ class ListDataclassRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDataclassRequest.
+        r"""Gets the name of this ListDataclassRequest.
 
         名称查询
 
@@ -189,7 +189,7 @@ class ListDataclassRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDataclassRequest.
+        r"""Sets the name of this ListDataclassRequest.
 
         名称查询
 
@@ -200,7 +200,7 @@ class ListDataclassRequest:
 
     @property
     def business_code(self):
-        """Gets the business_code of this ListDataclassRequest.
+        r"""Gets the business_code of this ListDataclassRequest.
 
         业务编码
 
@@ -211,7 +211,7 @@ class ListDataclassRequest:
 
     @business_code.setter
     def business_code(self, business_code):
-        """Sets the business_code of this ListDataclassRequest.
+        r"""Sets the business_code of this ListDataclassRequest.
 
         业务编码
 
@@ -222,7 +222,7 @@ class ListDataclassRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListDataclassRequest.
+        r"""Gets the description of this ListDataclassRequest.
 
         描述
 
@@ -233,7 +233,7 @@ class ListDataclassRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListDataclassRequest.
+        r"""Sets the description of this ListDataclassRequest.
 
         描述
 
@@ -244,7 +244,7 @@ class ListDataclassRequest:
 
     @property
     def is_built_in(self):
-        """Gets the is_built_in of this ListDataclassRequest.
+        r"""Gets the is_built_in of this ListDataclassRequest.
 
         是否内置
 
@@ -255,7 +255,7 @@ class ListDataclassRequest:
 
     @is_built_in.setter
     def is_built_in(self, is_built_in):
-        """Sets the is_built_in of this ListDataclassRequest.
+        r"""Sets the is_built_in of this ListDataclassRequest.
 
         是否内置
 

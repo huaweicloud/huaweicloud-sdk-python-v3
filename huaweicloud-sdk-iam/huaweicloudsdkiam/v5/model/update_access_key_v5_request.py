@@ -29,7 +29,7 @@ class UpdateAccessKeyV5Request:
     }
 
     def __init__(self, user_id=None, access_key_id=None, body=None):
-        """UpdateAccessKeyV5Request
+        r"""UpdateAccessKeyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAccessKeyV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateAccessKeyV5Request.
+        r"""Gets the user_id of this UpdateAccessKeyV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -66,7 +66,7 @@ class UpdateAccessKeyV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateAccessKeyV5Request.
+        r"""Sets the user_id of this UpdateAccessKeyV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -77,7 +77,7 @@ class UpdateAccessKeyV5Request:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this UpdateAccessKeyV5Request.
+        r"""Gets the access_key_id of this UpdateAccessKeyV5Request.
 
         永久访问密钥ID，即AK。
 
@@ -88,7 +88,7 @@ class UpdateAccessKeyV5Request:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this UpdateAccessKeyV5Request.
+        r"""Sets the access_key_id of this UpdateAccessKeyV5Request.
 
         永久访问密钥ID，即AK。
 
@@ -99,7 +99,7 @@ class UpdateAccessKeyV5Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAccessKeyV5Request.
+        r"""Gets the body of this UpdateAccessKeyV5Request.
 
         :return: The body of this UpdateAccessKeyV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.UpdateAccessKeyReqBody`
@@ -108,7 +108,7 @@ class UpdateAccessKeyV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAccessKeyV5Request.
+        r"""Sets the body of this UpdateAccessKeyV5Request.
 
         :param body: The body of this UpdateAccessKeyV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.UpdateAccessKeyReqBody`

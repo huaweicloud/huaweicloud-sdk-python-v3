@@ -37,7 +37,7 @@ class UserAccessStage:
     }
 
     def __init__(self, stage=None, duration=None, is_success=None, start_time=None, end_time=None, error_code=None, error_msg=None):
-        """UserAccessStage
+        r"""UserAccessStage
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UserAccessStage:
 
     @property
     def stage(self):
-        """Gets the stage of this UserAccessStage.
+        r"""Gets the stage of this UserAccessStage.
 
         接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接
 
@@ -96,7 +96,7 @@ class UserAccessStage:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this UserAccessStage.
+        r"""Sets the stage of this UserAccessStage.
 
         接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接
 
@@ -107,7 +107,7 @@ class UserAccessStage:
 
     @property
     def duration(self):
-        """Gets the duration of this UserAccessStage.
+        r"""Gets the duration of this UserAccessStage.
 
         花费时长，单位：ms
 
@@ -118,7 +118,7 @@ class UserAccessStage:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this UserAccessStage.
+        r"""Sets the duration of this UserAccessStage.
 
         花费时长，单位：ms
 
@@ -129,7 +129,7 @@ class UserAccessStage:
 
     @property
     def is_success(self):
-        """Gets the is_success of this UserAccessStage.
+        r"""Gets the is_success of this UserAccessStage.
 
         接入阶段是否成功
 
@@ -140,7 +140,7 @@ class UserAccessStage:
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UserAccessStage.
+        r"""Sets the is_success of this UserAccessStage.
 
         接入阶段是否成功
 
@@ -151,7 +151,7 @@ class UserAccessStage:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UserAccessStage.
+        r"""Gets the start_time of this UserAccessStage.
 
         开始时间戳
 
@@ -162,7 +162,7 @@ class UserAccessStage:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UserAccessStage.
+        r"""Sets the start_time of this UserAccessStage.
 
         开始时间戳
 
@@ -173,7 +173,7 @@ class UserAccessStage:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UserAccessStage.
+        r"""Gets the end_time of this UserAccessStage.
 
         结束时间戳
 
@@ -184,7 +184,7 @@ class UserAccessStage:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UserAccessStage.
+        r"""Sets the end_time of this UserAccessStage.
 
         结束时间戳
 
@@ -195,7 +195,7 @@ class UserAccessStage:
 
     @property
     def error_code(self):
-        """Gets the error_code of this UserAccessStage.
+        r"""Gets the error_code of this UserAccessStage.
 
         错误码
 
@@ -206,7 +206,7 @@ class UserAccessStage:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UserAccessStage.
+        r"""Sets the error_code of this UserAccessStage.
 
         错误码
 
@@ -217,7 +217,7 @@ class UserAccessStage:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UserAccessStage.
+        r"""Gets the error_msg of this UserAccessStage.
 
         错误描述
 
@@ -228,7 +228,7 @@ class UserAccessStage:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UserAccessStage.
+        r"""Sets the error_msg of this UserAccessStage.
 
         错误描述
 

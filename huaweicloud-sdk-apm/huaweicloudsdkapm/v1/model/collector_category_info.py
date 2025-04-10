@@ -31,7 +31,7 @@ class CollectorCategoryInfo:
     }
 
     def __init__(self, category_id=None, category_name=None, display_name=None, sequence=None):
-        """CollectorCategoryInfo
+        r"""CollectorCategoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CollectorCategoryInfo:
 
     @property
     def category_id(self):
-        """Gets the category_id of this CollectorCategoryInfo.
+        r"""Gets the category_id of this CollectorCategoryInfo.
 
         采集器类别id。
 
@@ -75,7 +75,7 @@ class CollectorCategoryInfo:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this CollectorCategoryInfo.
+        r"""Sets the category_id of this CollectorCategoryInfo.
 
         采集器类别id。
 
@@ -86,7 +86,7 @@ class CollectorCategoryInfo:
 
     @property
     def category_name(self):
-        """Gets the category_name of this CollectorCategoryInfo.
+        r"""Gets the category_name of this CollectorCategoryInfo.
 
         采集器类别名称。
 
@@ -97,7 +97,7 @@ class CollectorCategoryInfo:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this CollectorCategoryInfo.
+        r"""Sets the category_name of this CollectorCategoryInfo.
 
         采集器类别名称。
 
@@ -108,7 +108,7 @@ class CollectorCategoryInfo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CollectorCategoryInfo.
+        r"""Gets the display_name of this CollectorCategoryInfo.
 
         采集器类别展示名称。
 
@@ -119,7 +119,7 @@ class CollectorCategoryInfo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CollectorCategoryInfo.
+        r"""Sets the display_name of this CollectorCategoryInfo.
 
         采集器类别展示名称。
 
@@ -130,7 +130,7 @@ class CollectorCategoryInfo:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CollectorCategoryInfo.
+        r"""Gets the sequence of this CollectorCategoryInfo.
 
         序列号。
 
@@ -141,7 +141,7 @@ class CollectorCategoryInfo:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CollectorCategoryInfo.
+        r"""Sets the sequence of this CollectorCategoryInfo.
 
         序列号。
 

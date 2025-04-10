@@ -33,7 +33,7 @@ class CoverRateVo:
     }
 
     def __init__(self, testing=None, finished=None, not_tested=None, total_number=None, cover_rate=None):
-        """CoverRateVo
+        r"""CoverRateVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CoverRateVo:
 
     @property
     def testing(self):
-        """Gets the testing of this CoverRateVo.
+        r"""Gets the testing of this CoverRateVo.
 
         统计测试中的需求
 
@@ -82,7 +82,7 @@ class CoverRateVo:
 
     @testing.setter
     def testing(self, testing):
-        """Sets the testing of this CoverRateVo.
+        r"""Sets the testing of this CoverRateVo.
 
         统计测试中的需求
 
@@ -93,7 +93,7 @@ class CoverRateVo:
 
     @property
     def finished(self):
-        """Gets the finished of this CoverRateVo.
+        r"""Gets the finished of this CoverRateVo.
 
         统计已完成的需求
 
@@ -104,7 +104,7 @@ class CoverRateVo:
 
     @finished.setter
     def finished(self, finished):
-        """Sets the finished of this CoverRateVo.
+        r"""Sets the finished of this CoverRateVo.
 
         统计已完成的需求
 
@@ -115,7 +115,7 @@ class CoverRateVo:
 
     @property
     def not_tested(self):
-        """Gets the not_tested of this CoverRateVo.
+        r"""Gets the not_tested of this CoverRateVo.
 
         统计未测试的需求
 
@@ -126,7 +126,7 @@ class CoverRateVo:
 
     @not_tested.setter
     def not_tested(self, not_tested):
-        """Sets the not_tested of this CoverRateVo.
+        r"""Sets the not_tested of this CoverRateVo.
 
         统计未测试的需求
 
@@ -137,7 +137,7 @@ class CoverRateVo:
 
     @property
     def total_number(self):
-        """Gets the total_number of this CoverRateVo.
+        r"""Gets the total_number of this CoverRateVo.
 
         计算需求总数
 
@@ -148,7 +148,7 @@ class CoverRateVo:
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this CoverRateVo.
+        r"""Sets the total_number of this CoverRateVo.
 
         计算需求总数
 
@@ -159,7 +159,7 @@ class CoverRateVo:
 
     @property
     def cover_rate(self):
-        """Gets the cover_rate of this CoverRateVo.
+        r"""Gets the cover_rate of this CoverRateVo.
 
         需求覆盖率
 
@@ -170,7 +170,7 @@ class CoverRateVo:
 
     @cover_rate.setter
     def cover_rate(self, cover_rate):
-        """Sets the cover_rate of this CoverRateVo.
+        r"""Sets the cover_rate of this CoverRateVo.
 
         需求覆盖率
 

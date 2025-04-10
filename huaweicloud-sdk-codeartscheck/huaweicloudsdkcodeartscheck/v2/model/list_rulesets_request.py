@@ -31,7 +31,7 @@ class ListRulesetsRequest:
     }
 
     def __init__(self, project_id=None, category=None, offset=None, limit=None):
-        """ListRulesetsRequest
+        r"""ListRulesetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListRulesetsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRulesetsRequest.
+        r"""Gets the project_id of this ListRulesetsRequest.
 
         项目ID
 
@@ -74,7 +74,7 @@ class ListRulesetsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRulesetsRequest.
+        r"""Sets the project_id of this ListRulesetsRequest.
 
         项目ID
 
@@ -85,7 +85,7 @@ class ListRulesetsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListRulesetsRequest.
+        r"""Gets the category of this ListRulesetsRequest.
 
         规则集类别  '0只查询系统规则集，1只查询当前用户自定义规则集，2只查询其他用户自定义规则集，'0,1,2'或''查所有'
 
@@ -96,7 +96,7 @@ class ListRulesetsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListRulesetsRequest.
+        r"""Sets the category of this ListRulesetsRequest.
 
         规则集类别  '0只查询系统规则集，1只查询当前用户自定义规则集，2只查询其他用户自定义规则集，'0,1,2'或''查所有'
 
@@ -107,7 +107,7 @@ class ListRulesetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRulesetsRequest.
+        r"""Gets the offset of this ListRulesetsRequest.
 
         分页索引，偏移量
 
@@ -118,7 +118,7 @@ class ListRulesetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRulesetsRequest.
+        r"""Sets the offset of this ListRulesetsRequest.
 
         分页索引，偏移量
 
@@ -129,7 +129,7 @@ class ListRulesetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRulesetsRequest.
+        r"""Gets the limit of this ListRulesetsRequest.
 
         每页显示的数量
 
@@ -140,7 +140,7 @@ class ListRulesetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRulesetsRequest.
+        r"""Sets the limit of this ListRulesetsRequest.
 
         每页显示的数量
 

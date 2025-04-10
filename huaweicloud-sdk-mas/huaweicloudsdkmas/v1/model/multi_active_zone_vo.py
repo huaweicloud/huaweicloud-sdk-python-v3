@@ -47,7 +47,7 @@ class MultiActiveZoneVo:
     }
 
     def __init__(self, available_zone=None, created_date=None, description=None, id=None, is_master=None, name=None, namespace_id=None, region=None, region_name=None, spec=None, type=None, updated_date=None):
-        """MultiActiveZoneVo
+        r"""MultiActiveZoneVo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class MultiActiveZoneVo:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this MultiActiveZoneVo.
+        r"""Gets the available_zone of this MultiActiveZoneVo.
 
         :return: The available_zone of this MultiActiveZoneVo.
         :rtype: list[str]
@@ -129,7 +129,7 @@ class MultiActiveZoneVo:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this MultiActiveZoneVo.
+        r"""Sets the available_zone of this MultiActiveZoneVo.
 
         :param available_zone: The available_zone of this MultiActiveZoneVo.
         :type available_zone: list[str]
@@ -138,7 +138,7 @@ class MultiActiveZoneVo:
 
     @property
     def created_date(self):
-        """Gets the created_date of this MultiActiveZoneVo.
+        r"""Gets the created_date of this MultiActiveZoneVo.
 
         :return: The created_date of this MultiActiveZoneVo.
         :rtype: datetime
@@ -147,7 +147,7 @@ class MultiActiveZoneVo:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this MultiActiveZoneVo.
+        r"""Sets the created_date of this MultiActiveZoneVo.
 
         :param created_date: The created_date of this MultiActiveZoneVo.
         :type created_date: datetime
@@ -156,7 +156,7 @@ class MultiActiveZoneVo:
 
     @property
     def description(self):
-        """Gets the description of this MultiActiveZoneVo.
+        r"""Gets the description of this MultiActiveZoneVo.
 
         :return: The description of this MultiActiveZoneVo.
         :rtype: str
@@ -165,7 +165,7 @@ class MultiActiveZoneVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MultiActiveZoneVo.
+        r"""Sets the description of this MultiActiveZoneVo.
 
         :param description: The description of this MultiActiveZoneVo.
         :type description: str
@@ -174,7 +174,7 @@ class MultiActiveZoneVo:
 
     @property
     def id(self):
-        """Gets the id of this MultiActiveZoneVo.
+        r"""Gets the id of this MultiActiveZoneVo.
 
         :return: The id of this MultiActiveZoneVo.
         :rtype: str
@@ -183,7 +183,7 @@ class MultiActiveZoneVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MultiActiveZoneVo.
+        r"""Sets the id of this MultiActiveZoneVo.
 
         :param id: The id of this MultiActiveZoneVo.
         :type id: str
@@ -192,7 +192,7 @@ class MultiActiveZoneVo:
 
     @property
     def is_master(self):
-        """Gets the is_master of this MultiActiveZoneVo.
+        r"""Gets the is_master of this MultiActiveZoneVo.
 
         :return: The is_master of this MultiActiveZoneVo.
         :rtype: bool
@@ -201,7 +201,7 @@ class MultiActiveZoneVo:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this MultiActiveZoneVo.
+        r"""Sets the is_master of this MultiActiveZoneVo.
 
         :param is_master: The is_master of this MultiActiveZoneVo.
         :type is_master: bool
@@ -210,7 +210,7 @@ class MultiActiveZoneVo:
 
     @property
     def name(self):
-        """Gets the name of this MultiActiveZoneVo.
+        r"""Gets the name of this MultiActiveZoneVo.
 
         :return: The name of this MultiActiveZoneVo.
         :rtype: str
@@ -219,7 +219,7 @@ class MultiActiveZoneVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MultiActiveZoneVo.
+        r"""Sets the name of this MultiActiveZoneVo.
 
         :param name: The name of this MultiActiveZoneVo.
         :type name: str
@@ -228,7 +228,7 @@ class MultiActiveZoneVo:
 
     @property
     def namespace_id(self):
-        """Gets the namespace_id of this MultiActiveZoneVo.
+        r"""Gets the namespace_id of this MultiActiveZoneVo.
 
         :return: The namespace_id of this MultiActiveZoneVo.
         :rtype: str
@@ -237,7 +237,7 @@ class MultiActiveZoneVo:
 
     @namespace_id.setter
     def namespace_id(self, namespace_id):
-        """Sets the namespace_id of this MultiActiveZoneVo.
+        r"""Sets the namespace_id of this MultiActiveZoneVo.
 
         :param namespace_id: The namespace_id of this MultiActiveZoneVo.
         :type namespace_id: str
@@ -246,7 +246,7 @@ class MultiActiveZoneVo:
 
     @property
     def region(self):
-        """Gets the region of this MultiActiveZoneVo.
+        r"""Gets the region of this MultiActiveZoneVo.
 
         :return: The region of this MultiActiveZoneVo.
         :rtype: str
@@ -255,7 +255,7 @@ class MultiActiveZoneVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MultiActiveZoneVo.
+        r"""Sets the region of this MultiActiveZoneVo.
 
         :param region: The region of this MultiActiveZoneVo.
         :type region: str
@@ -264,7 +264,7 @@ class MultiActiveZoneVo:
 
     @property
     def region_name(self):
-        """Gets the region_name of this MultiActiveZoneVo.
+        r"""Gets the region_name of this MultiActiveZoneVo.
 
         :return: The region_name of this MultiActiveZoneVo.
         :rtype: str
@@ -273,7 +273,7 @@ class MultiActiveZoneVo:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this MultiActiveZoneVo.
+        r"""Sets the region_name of this MultiActiveZoneVo.
 
         :param region_name: The region_name of this MultiActiveZoneVo.
         :type region_name: str
@@ -282,7 +282,7 @@ class MultiActiveZoneVo:
 
     @property
     def spec(self):
-        """Gets the spec of this MultiActiveZoneVo.
+        r"""Gets the spec of this MultiActiveZoneVo.
 
         :return: The spec of this MultiActiveZoneVo.
         :rtype: :class:`huaweicloudsdkmas.v1.BaseMultiActiveZoneSpec`
@@ -291,7 +291,7 @@ class MultiActiveZoneVo:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this MultiActiveZoneVo.
+        r"""Sets the spec of this MultiActiveZoneVo.
 
         :param spec: The spec of this MultiActiveZoneVo.
         :type spec: :class:`huaweicloudsdkmas.v1.BaseMultiActiveZoneSpec`
@@ -300,7 +300,7 @@ class MultiActiveZoneVo:
 
     @property
     def type(self):
-        """Gets the type of this MultiActiveZoneVo.
+        r"""Gets the type of this MultiActiveZoneVo.
 
         :return: The type of this MultiActiveZoneVo.
         :rtype: int
@@ -309,7 +309,7 @@ class MultiActiveZoneVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MultiActiveZoneVo.
+        r"""Sets the type of this MultiActiveZoneVo.
 
         :param type: The type of this MultiActiveZoneVo.
         :type type: int
@@ -318,7 +318,7 @@ class MultiActiveZoneVo:
 
     @property
     def updated_date(self):
-        """Gets the updated_date of this MultiActiveZoneVo.
+        r"""Gets the updated_date of this MultiActiveZoneVo.
 
         :return: The updated_date of this MultiActiveZoneVo.
         :rtype: datetime
@@ -327,7 +327,7 @@ class MultiActiveZoneVo:
 
     @updated_date.setter
     def updated_date(self, updated_date):
-        """Sets the updated_date of this MultiActiveZoneVo.
+        r"""Sets the updated_date of this MultiActiveZoneVo.
 
         :param updated_date: The updated_date of this MultiActiveZoneVo.
         :type updated_date: datetime

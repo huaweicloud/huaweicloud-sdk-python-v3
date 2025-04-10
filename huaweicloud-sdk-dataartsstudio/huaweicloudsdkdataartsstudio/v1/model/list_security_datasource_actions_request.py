@@ -41,7 +41,7 @@ class ListSecurityDatasourceActionsRequest:
     }
 
     def __init__(self, workspace=None, parent_permission_set_id=None, cluster_id=None, datasource_type=None, database_name=None, schema_name=None, table_name=None, column_name=None, url=None):
-        """ListSecurityDatasourceActionsRequest
+        r"""ListSecurityDatasourceActionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the workspace of this ListSecurityDatasourceActionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -106,7 +106,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the workspace of this ListSecurityDatasourceActionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -117,7 +117,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def parent_permission_set_id(self):
-        """Gets the parent_permission_set_id of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the parent_permission_set_id of this ListSecurityDatasourceActionsRequest.
 
         父权限集ID。获取方法请参见[查询权限集列表](ListSecurityPermissionSets.xml) 注意： * 当该值为0时，则所有库表均支持查询 * 当该值为父权限集ID时，则基于父权限集中的权限查询
 
@@ -128,7 +128,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @parent_permission_set_id.setter
     def parent_permission_set_id(self, parent_permission_set_id):
-        """Sets the parent_permission_set_id of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the parent_permission_set_id of this ListSecurityDatasourceActionsRequest.
 
         父权限集ID。获取方法请参见[查询权限集列表](ListSecurityPermissionSets.xml) 注意： * 当该值为0时，则所有库表均支持查询 * 当该值为父权限集ID时，则基于父权限集中的权限查询
 
@@ -139,7 +139,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the cluster_id of this ListSecurityDatasourceActionsRequest.
 
         集群ID，获取方法请参见[查询单个数据连接信息](ShowDataconnection.xml) * 查询Hive和DWS数据源操作信息时该数值为必填项，当数据源为DLI时无需填写
 
@@ -150,7 +150,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the cluster_id of this ListSecurityDatasourceActionsRequest.
 
         集群ID，获取方法请参见[查询单个数据连接信息](ShowDataconnection.xml) * 查询Hive和DWS数据源操作信息时该数值为必填项，当数据源为DLI时无需填写
 
@@ -161,7 +161,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the datasource_type of this ListSecurityDatasourceActionsRequest.
 
         数据源类型 * HIVE数据源 * DWS数据源 * DLI数据源
 
@@ -172,7 +172,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the datasource_type of this ListSecurityDatasourceActionsRequest.
 
         数据源类型 * HIVE数据源 * DWS数据源 * DLI数据源
 
@@ -183,7 +183,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the database_name of this ListSecurityDatasourceActionsRequest.
 
         数据库名 `注意：该值作为查询关键字时，不能与url同时存在，需要指定其一进行查询`
 
@@ -194,7 +194,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the database_name of this ListSecurityDatasourceActionsRequest.
 
         数据库名 `注意：该值作为查询关键字时，不能与url同时存在，需要指定其一进行查询`
 
@@ -205,7 +205,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the schema_name of this ListSecurityDatasourceActionsRequest.
 
         schema名称
 
@@ -216,7 +216,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the schema_name of this ListSecurityDatasourceActionsRequest.
 
         schema名称
 
@@ -227,7 +227,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the table_name of this ListSecurityDatasourceActionsRequest.
 
         数据表名称
 
@@ -238,7 +238,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the table_name of this ListSecurityDatasourceActionsRequest.
 
         数据表名称
 
@@ -249,7 +249,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the column_name of this ListSecurityDatasourceActionsRequest.
 
         数据字段名称
 
@@ -260,7 +260,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the column_name of this ListSecurityDatasourceActionsRequest.
 
         数据字段名称
 
@@ -271,7 +271,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @property
     def url(self):
-        """Gets the url of this ListSecurityDatasourceActionsRequest.
+        r"""Gets the url of this ListSecurityDatasourceActionsRequest.
 
         url路径名称 `注意：该值作为查询关键字时，不能与database_name同时存在，需要指定其一进行查询`
 
@@ -282,7 +282,7 @@ class ListSecurityDatasourceActionsRequest:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ListSecurityDatasourceActionsRequest.
+        r"""Sets the url of this ListSecurityDatasourceActionsRequest.
 
         url路径名称 `注意：该值作为查询关键字时，不能与database_name同时存在，需要指定其一进行查询`
 

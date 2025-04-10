@@ -28,7 +28,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListAuthorizedDatabasesResponse
+        r"""ListAuthorizedDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListAuthorizedDatabasesResponse.
+        r"""Gets the databases of this ListAuthorizedDatabasesResponse.
 
         数据库及相关权限。
 
@@ -62,7 +62,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListAuthorizedDatabasesResponse.
+        r"""Sets the databases of this ListAuthorizedDatabasesResponse.
 
         数据库及相关权限。
 
@@ -73,7 +73,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListAuthorizedDatabasesResponse.
+        r"""Gets the total_count of this ListAuthorizedDatabasesResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListAuthorizedDatabasesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListAuthorizedDatabasesResponse.
+        r"""Sets the total_count of this ListAuthorizedDatabasesResponse.
 
         总数。
 

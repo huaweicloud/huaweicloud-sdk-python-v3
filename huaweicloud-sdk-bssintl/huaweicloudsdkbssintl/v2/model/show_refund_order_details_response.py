@@ -28,7 +28,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, refund_infos=None):
-        """ShowRefundOrderDetailsResponse
+        r"""ShowRefundOrderDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowRefundOrderDetailsResponse.
+        r"""Gets the total_count of this ShowRefundOrderDetailsResponse.
 
         查询总数。
 
@@ -62,7 +62,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowRefundOrderDetailsResponse.
+        r"""Sets the total_count of this ShowRefundOrderDetailsResponse.
 
         查询总数。
 
@@ -73,7 +73,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
 
     @property
     def refund_infos(self):
-        """Gets the refund_infos of this ShowRefundOrderDetailsResponse.
+        r"""Gets the refund_infos of this ShowRefundOrderDetailsResponse.
 
         资源信息列表。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
 
     @refund_infos.setter
     def refund_infos(self, refund_infos):
-        """Sets the refund_infos of this ShowRefundOrderDetailsResponse.
+        r"""Sets the refund_infos of this ShowRefundOrderDetailsResponse.
 
         资源信息列表。 具体请参见表2。
 

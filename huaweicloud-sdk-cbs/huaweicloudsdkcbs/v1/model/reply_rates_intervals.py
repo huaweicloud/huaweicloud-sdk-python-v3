@@ -51,7 +51,7 @@ class ReplyRatesIntervals:
     }
 
     def __init__(self, start=None, question_count=None, direct_count=None, recommend_count=None, notmatch_count=None, invalid_count=None, chat_count=None, direct_rate=None, recommend_rate=None, notmatch_rate=None, chat_rate=None, invalid_rate=None, dialog_count=None, dialog_rate=None):
-        """ReplyRatesIntervals
+        r"""ReplyRatesIntervals
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ReplyRatesIntervals:
 
     @property
     def start(self):
-        """Gets the start of this ReplyRatesIntervals.
+        r"""Gets the start of this ReplyRatesIntervals.
 
         间隔周期开始时间。
 
@@ -131,7 +131,7 @@ class ReplyRatesIntervals:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ReplyRatesIntervals.
+        r"""Sets the start of this ReplyRatesIntervals.
 
         间隔周期开始时间。
 
@@ -142,7 +142,7 @@ class ReplyRatesIntervals:
 
     @property
     def question_count(self):
-        """Gets the question_count of this ReplyRatesIntervals.
+        r"""Gets the question_count of this ReplyRatesIntervals.
 
         间隔周期用户提问总数。
 
@@ -153,7 +153,7 @@ class ReplyRatesIntervals:
 
     @question_count.setter
     def question_count(self, question_count):
-        """Sets the question_count of this ReplyRatesIntervals.
+        r"""Sets the question_count of this ReplyRatesIntervals.
 
         间隔周期用户提问总数。
 
@@ -164,7 +164,7 @@ class ReplyRatesIntervals:
 
     @property
     def direct_count(self):
-        """Gets the direct_count of this ReplyRatesIntervals.
+        r"""Gets the direct_count of this ReplyRatesIntervals.
 
         间隔周期直接回答个数。
 
@@ -175,7 +175,7 @@ class ReplyRatesIntervals:
 
     @direct_count.setter
     def direct_count(self, direct_count):
-        """Sets the direct_count of this ReplyRatesIntervals.
+        r"""Sets the direct_count of this ReplyRatesIntervals.
 
         间隔周期直接回答个数。
 
@@ -186,7 +186,7 @@ class ReplyRatesIntervals:
 
     @property
     def recommend_count(self):
-        """Gets the recommend_count of this ReplyRatesIntervals.
+        r"""Gets the recommend_count of this ReplyRatesIntervals.
 
         间隔周期推荐回答个数。
 
@@ -197,7 +197,7 @@ class ReplyRatesIntervals:
 
     @recommend_count.setter
     def recommend_count(self, recommend_count):
-        """Sets the recommend_count of this ReplyRatesIntervals.
+        r"""Sets the recommend_count of this ReplyRatesIntervals.
 
         间隔周期推荐回答个数。
 
@@ -208,7 +208,7 @@ class ReplyRatesIntervals:
 
     @property
     def notmatch_count(self):
-        """Gets the notmatch_count of this ReplyRatesIntervals.
+        r"""Gets the notmatch_count of this ReplyRatesIntervals.
 
         间隔周期未匹配个数。
 
@@ -219,7 +219,7 @@ class ReplyRatesIntervals:
 
     @notmatch_count.setter
     def notmatch_count(self, notmatch_count):
-        """Sets the notmatch_count of this ReplyRatesIntervals.
+        r"""Sets the notmatch_count of this ReplyRatesIntervals.
 
         间隔周期未匹配个数。
 
@@ -230,7 +230,7 @@ class ReplyRatesIntervals:
 
     @property
     def invalid_count(self):
-        """Gets the invalid_count of this ReplyRatesIntervals.
+        r"""Gets the invalid_count of this ReplyRatesIntervals.
 
         间隔周期无效问题个数。
 
@@ -241,7 +241,7 @@ class ReplyRatesIntervals:
 
     @invalid_count.setter
     def invalid_count(self, invalid_count):
-        """Sets the invalid_count of this ReplyRatesIntervals.
+        r"""Sets the invalid_count of this ReplyRatesIntervals.
 
         间隔周期无效问题个数。
 
@@ -252,7 +252,7 @@ class ReplyRatesIntervals:
 
     @property
     def chat_count(self):
-        """Gets the chat_count of this ReplyRatesIntervals.
+        r"""Gets the chat_count of this ReplyRatesIntervals.
 
         间隔周期闲聊匹配个数。
 
@@ -263,7 +263,7 @@ class ReplyRatesIntervals:
 
     @chat_count.setter
     def chat_count(self, chat_count):
-        """Sets the chat_count of this ReplyRatesIntervals.
+        r"""Sets the chat_count of this ReplyRatesIntervals.
 
         间隔周期闲聊匹配个数。
 
@@ -274,7 +274,7 @@ class ReplyRatesIntervals:
 
     @property
     def direct_rate(self):
-        """Gets the direct_rate of this ReplyRatesIntervals.
+        r"""Gets the direct_rate of this ReplyRatesIntervals.
 
         间隔周期直接回答比率，保留小数点后三位。
 
@@ -285,7 +285,7 @@ class ReplyRatesIntervals:
 
     @direct_rate.setter
     def direct_rate(self, direct_rate):
-        """Sets the direct_rate of this ReplyRatesIntervals.
+        r"""Sets the direct_rate of this ReplyRatesIntervals.
 
         间隔周期直接回答比率，保留小数点后三位。
 
@@ -296,7 +296,7 @@ class ReplyRatesIntervals:
 
     @property
     def recommend_rate(self):
-        """Gets the recommend_rate of this ReplyRatesIntervals.
+        r"""Gets the recommend_rate of this ReplyRatesIntervals.
 
         间隔周期推荐回答比率，保留小数点后三位。
 
@@ -307,7 +307,7 @@ class ReplyRatesIntervals:
 
     @recommend_rate.setter
     def recommend_rate(self, recommend_rate):
-        """Sets the recommend_rate of this ReplyRatesIntervals.
+        r"""Sets the recommend_rate of this ReplyRatesIntervals.
 
         间隔周期推荐回答比率，保留小数点后三位。
 
@@ -318,7 +318,7 @@ class ReplyRatesIntervals:
 
     @property
     def notmatch_rate(self):
-        """Gets the notmatch_rate of this ReplyRatesIntervals.
+        r"""Gets the notmatch_rate of this ReplyRatesIntervals.
 
         间隔周期未匹配比率，保留小数点后三位。
 
@@ -329,7 +329,7 @@ class ReplyRatesIntervals:
 
     @notmatch_rate.setter
     def notmatch_rate(self, notmatch_rate):
-        """Sets the notmatch_rate of this ReplyRatesIntervals.
+        r"""Sets the notmatch_rate of this ReplyRatesIntervals.
 
         间隔周期未匹配比率，保留小数点后三位。
 
@@ -340,7 +340,7 @@ class ReplyRatesIntervals:
 
     @property
     def chat_rate(self):
-        """Gets the chat_rate of this ReplyRatesIntervals.
+        r"""Gets the chat_rate of this ReplyRatesIntervals.
 
         间隔周期闲聊匹配比率，保留小数点后三位。
 
@@ -351,7 +351,7 @@ class ReplyRatesIntervals:
 
     @chat_rate.setter
     def chat_rate(self, chat_rate):
-        """Sets the chat_rate of this ReplyRatesIntervals.
+        r"""Sets the chat_rate of this ReplyRatesIntervals.
 
         间隔周期闲聊匹配比率，保留小数点后三位。
 
@@ -362,7 +362,7 @@ class ReplyRatesIntervals:
 
     @property
     def invalid_rate(self):
-        """Gets the invalid_rate of this ReplyRatesIntervals.
+        r"""Gets the invalid_rate of this ReplyRatesIntervals.
 
         间隔周期无效问题比率，保留小数点后三位。
 
@@ -373,7 +373,7 @@ class ReplyRatesIntervals:
 
     @invalid_rate.setter
     def invalid_rate(self, invalid_rate):
-        """Sets the invalid_rate of this ReplyRatesIntervals.
+        r"""Sets the invalid_rate of this ReplyRatesIntervals.
 
         间隔周期无效问题比率，保留小数点后三位。
 
@@ -384,7 +384,7 @@ class ReplyRatesIntervals:
 
     @property
     def dialog_count(self):
-        """Gets the dialog_count of this ReplyRatesIntervals.
+        r"""Gets the dialog_count of this ReplyRatesIntervals.
 
         多轮会话次数。
 
@@ -395,7 +395,7 @@ class ReplyRatesIntervals:
 
     @dialog_count.setter
     def dialog_count(self, dialog_count):
-        """Sets the dialog_count of this ReplyRatesIntervals.
+        r"""Sets the dialog_count of this ReplyRatesIntervals.
 
         多轮会话次数。
 
@@ -406,7 +406,7 @@ class ReplyRatesIntervals:
 
     @property
     def dialog_rate(self):
-        """Gets the dialog_rate of this ReplyRatesIntervals.
+        r"""Gets the dialog_rate of this ReplyRatesIntervals.
 
         多轮会话比例。
 
@@ -417,7 +417,7 @@ class ReplyRatesIntervals:
 
     @dialog_rate.setter
     def dialog_rate(self, dialog_rate):
-        """Sets the dialog_rate of this ReplyRatesIntervals.
+        r"""Sets the dialog_rate of this ReplyRatesIntervals.
 
         多轮会话比例。
 

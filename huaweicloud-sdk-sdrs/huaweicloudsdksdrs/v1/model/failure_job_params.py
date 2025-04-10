@@ -43,7 +43,7 @@ class FailureJobParams:
     }
 
     def __init__(self, job_type=None, job_status=None, begin_time=None, job_id=None, failure_status=None, resource_id=None, resource_name=None, error_code=None, fail_reason=None, resource_type=None):
-        """FailureJobParams
+        r"""FailureJobParams
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class FailureJobParams:
 
     @property
     def job_type(self):
-        """Gets the job_type of this FailureJobParams.
+        r"""Gets the job_type of this FailureJobParams.
 
         任务名称。
 
@@ -107,7 +107,7 @@ class FailureJobParams:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this FailureJobParams.
+        r"""Sets the job_type of this FailureJobParams.
 
         任务名称。
 
@@ -118,7 +118,7 @@ class FailureJobParams:
 
     @property
     def job_status(self):
-        """Gets the job_status of this FailureJobParams.
+        r"""Gets the job_status of this FailureJobParams.
 
         任务状态。当前仅支持“FAIL”。FAIL：表示任务失败。
 
@@ -129,7 +129,7 @@ class FailureJobParams:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this FailureJobParams.
+        r"""Sets the job_status of this FailureJobParams.
 
         任务状态。当前仅支持“FAIL”。FAIL：表示任务失败。
 
@@ -140,7 +140,7 @@ class FailureJobParams:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this FailureJobParams.
+        r"""Gets the begin_time of this FailureJobParams.
 
         任务操作时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -151,7 +151,7 @@ class FailureJobParams:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this FailureJobParams.
+        r"""Sets the begin_time of this FailureJobParams.
 
         任务操作时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例：\"2019-04-01T12:00:00.000Z\"。
 
@@ -162,7 +162,7 @@ class FailureJobParams:
 
     @property
     def job_id(self):
-        """Gets the job_id of this FailureJobParams.
+        r"""Gets the job_id of this FailureJobParams.
 
         任务id。执行异步API命令下发成功的返回参数。
 
@@ -173,7 +173,7 @@ class FailureJobParams:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this FailureJobParams.
+        r"""Sets the job_id of this FailureJobParams.
 
         任务id。执行异步API命令下发成功的返回参数。
 
@@ -184,7 +184,7 @@ class FailureJobParams:
 
     @property
     def failure_status(self):
-        """Gets the failure_status of this FailureJobParams.
+        r"""Gets the failure_status of this FailureJobParams.
 
         失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
 
@@ -195,7 +195,7 @@ class FailureJobParams:
 
     @failure_status.setter
     def failure_status(self, failure_status):
-        """Sets the failure_status of this FailureJobParams.
+        r"""Sets the failure_status of this FailureJobParams.
 
         失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
 
@@ -206,7 +206,7 @@ class FailureJobParams:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FailureJobParams.
+        r"""Gets the resource_id of this FailureJobParams.
 
         资源ID。
 
@@ -217,7 +217,7 @@ class FailureJobParams:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FailureJobParams.
+        r"""Sets the resource_id of this FailureJobParams.
 
         资源ID。
 
@@ -228,7 +228,7 @@ class FailureJobParams:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this FailureJobParams.
+        r"""Gets the resource_name of this FailureJobParams.
 
         资源名称。
 
@@ -239,7 +239,7 @@ class FailureJobParams:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this FailureJobParams.
+        r"""Sets the resource_name of this FailureJobParams.
 
         资源名称。
 
@@ -250,7 +250,7 @@ class FailureJobParams:
 
     @property
     def error_code(self):
-        """Gets the error_code of this FailureJobParams.
+        r"""Gets the error_code of this FailureJobParams.
 
         任务失败错误码。
 
@@ -261,7 +261,7 @@ class FailureJobParams:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this FailureJobParams.
+        r"""Sets the error_code of this FailureJobParams.
 
         任务失败错误码。
 
@@ -272,7 +272,7 @@ class FailureJobParams:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this FailureJobParams.
+        r"""Gets the fail_reason of this FailureJobParams.
 
         任务失败原因。
 
@@ -283,7 +283,7 @@ class FailureJobParams:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this FailureJobParams.
+        r"""Sets the fail_reason of this FailureJobParams.
 
         任务失败原因。
 
@@ -294,7 +294,7 @@ class FailureJobParams:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FailureJobParams.
+        r"""Gets the resource_type of this FailureJobParams.
 
         资源类型。 server_groups：表示保护组。 protected_instances：表示保护实例。 replications：表示复制对。 disaster_recovery_drills：表示容灾演练。
 
@@ -305,7 +305,7 @@ class FailureJobParams:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FailureJobParams.
+        r"""Sets the resource_type of this FailureJobParams.
 
         资源类型。 server_groups：表示保护组。 protected_instances：表示保护实例。 replications：表示复制对。 disaster_recovery_drills：表示容灾演练。
 

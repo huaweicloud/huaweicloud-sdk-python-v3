@@ -29,7 +29,7 @@ class UpdateSecretStageRequest:
     }
 
     def __init__(self, secret_name=None, stage_name=None, body=None):
-        """UpdateSecretStageRequest
+        r"""UpdateSecretStageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecretStageRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this UpdateSecretStageRequest.
+        r"""Gets the secret_name of this UpdateSecretStageRequest.
 
         凭据名称。
 
@@ -66,7 +66,7 @@ class UpdateSecretStageRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this UpdateSecretStageRequest.
+        r"""Sets the secret_name of this UpdateSecretStageRequest.
 
         凭据名称。
 
@@ -77,7 +77,7 @@ class UpdateSecretStageRequest:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this UpdateSecretStageRequest.
+        r"""Gets the stage_name of this UpdateSecretStageRequest.
 
         凭据版本状态的名称。满足 '^[a-zA-Z0-9_-]{1,64}$'
 
@@ -88,7 +88,7 @@ class UpdateSecretStageRequest:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this UpdateSecretStageRequest.
+        r"""Sets the stage_name of this UpdateSecretStageRequest.
 
         凭据版本状态的名称。满足 '^[a-zA-Z0-9_-]{1,64}$'
 
@@ -99,7 +99,7 @@ class UpdateSecretStageRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecretStageRequest.
+        r"""Gets the body of this UpdateSecretStageRequest.
 
         :return: The body of this UpdateSecretStageRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequestBody`
@@ -108,7 +108,7 @@ class UpdateSecretStageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecretStageRequest.
+        r"""Sets the body of this UpdateSecretStageRequest.
 
         :param body: The body of this UpdateSecretStageRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequestBody`

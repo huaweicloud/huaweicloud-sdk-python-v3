@@ -25,7 +25,7 @@ class BatchCreateHostsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateHostsRequest
+        r"""BatchCreateHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateHostsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateHostsRequest.
+        r"""Gets the body of this BatchCreateHostsRequest.
 
         :return: The body of this BatchCreateHostsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.BatchCreateHostsRequestBody`
@@ -52,7 +52,7 @@ class BatchCreateHostsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateHostsRequest.
+        r"""Sets the body of this BatchCreateHostsRequest.
 
         :param body: The body of this BatchCreateHostsRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.BatchCreateHostsRequestBody`

@@ -26,7 +26,7 @@ class DeleteMigprojectResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteMigprojectResponse
+        r"""DeleteMigprojectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMigprojectResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteMigprojectResponse.
+        r"""Gets the body of this DeleteMigprojectResponse.
 
         删除迁移项目成功
 
@@ -55,7 +55,7 @@ class DeleteMigprojectResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteMigprojectResponse.
+        r"""Sets the body of this DeleteMigprojectResponse.
 
         删除迁移项目成功
 

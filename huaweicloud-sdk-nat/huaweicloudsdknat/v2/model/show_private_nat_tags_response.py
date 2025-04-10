@@ -28,7 +28,7 @@ class ShowPrivateNatTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None):
-        """ShowPrivateNatTagsResponse
+        r"""ShowPrivateNatTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPrivateNatTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPrivateNatTagsResponse.
+        r"""Gets the request_id of this ShowPrivateNatTagsResponse.
 
         请求id。
 
@@ -62,7 +62,7 @@ class ShowPrivateNatTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPrivateNatTagsResponse.
+        r"""Sets the request_id of this ShowPrivateNatTagsResponse.
 
         请求id。
 
@@ -73,7 +73,7 @@ class ShowPrivateNatTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowPrivateNatTagsResponse.
+        r"""Gets the tags of this ShowPrivateNatTagsResponse.
 
         标签。
 
@@ -84,7 +84,7 @@ class ShowPrivateNatTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowPrivateNatTagsResponse.
+        r"""Sets the tags of this ShowPrivateNatTagsResponse.
 
         标签。
 

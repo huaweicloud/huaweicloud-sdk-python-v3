@@ -41,7 +41,7 @@ class EquipmentLanItem:
     }
 
     def __init__(self, interface_name=None, interface_type=None, vlan_id=None, ip_address=None, dhcp=None, start_ip_address=None, end_ip_address=None, lease_time=None, post_to_cloud=None):
-        """EquipmentLanItem
+        r"""EquipmentLanItem
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class EquipmentLanItem:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this EquipmentLanItem.
+        r"""Gets the interface_name of this EquipmentLanItem.
 
         接口名字
 
@@ -105,7 +105,7 @@ class EquipmentLanItem:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this EquipmentLanItem.
+        r"""Sets the interface_name of this EquipmentLanItem.
 
         接口名字
 
@@ -116,7 +116,7 @@ class EquipmentLanItem:
 
     @property
     def interface_type(self):
-        """Gets the interface_type of this EquipmentLanItem.
+        r"""Gets the interface_type of this EquipmentLanItem.
 
         接口类型
 
@@ -127,7 +127,7 @@ class EquipmentLanItem:
 
     @interface_type.setter
     def interface_type(self, interface_type):
-        """Sets the interface_type of this EquipmentLanItem.
+        r"""Sets the interface_type of this EquipmentLanItem.
 
         接口类型
 
@@ -138,7 +138,7 @@ class EquipmentLanItem:
 
     @property
     def vlan_id(self):
-        """Gets the vlan_id of this EquipmentLanItem.
+        r"""Gets the vlan_id of this EquipmentLanItem.
 
         VlanID
 
@@ -149,7 +149,7 @@ class EquipmentLanItem:
 
     @vlan_id.setter
     def vlan_id(self, vlan_id):
-        """Sets the vlan_id of this EquipmentLanItem.
+        r"""Sets the vlan_id of this EquipmentLanItem.
 
         VlanID
 
@@ -160,7 +160,7 @@ class EquipmentLanItem:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this EquipmentLanItem.
+        r"""Gets the ip_address of this EquipmentLanItem.
 
         IPv4地址
 
@@ -171,7 +171,7 @@ class EquipmentLanItem:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this EquipmentLanItem.
+        r"""Sets the ip_address of this EquipmentLanItem.
 
         IPv4地址
 
@@ -182,7 +182,7 @@ class EquipmentLanItem:
 
     @property
     def dhcp(self):
-        """Gets the dhcp of this EquipmentLanItem.
+        r"""Gets the dhcp of this EquipmentLanItem.
 
         DHCP开关
 
@@ -193,7 +193,7 @@ class EquipmentLanItem:
 
     @dhcp.setter
     def dhcp(self, dhcp):
-        """Sets the dhcp of this EquipmentLanItem.
+        r"""Sets the dhcp of this EquipmentLanItem.
 
         DHCP开关
 
@@ -204,7 +204,7 @@ class EquipmentLanItem:
 
     @property
     def start_ip_address(self):
-        """Gets the start_ip_address of this EquipmentLanItem.
+        r"""Gets the start_ip_address of this EquipmentLanItem.
 
         DHCP地址池起始IP地址
 
@@ -215,7 +215,7 @@ class EquipmentLanItem:
 
     @start_ip_address.setter
     def start_ip_address(self, start_ip_address):
-        """Sets the start_ip_address of this EquipmentLanItem.
+        r"""Sets the start_ip_address of this EquipmentLanItem.
 
         DHCP地址池起始IP地址
 
@@ -226,7 +226,7 @@ class EquipmentLanItem:
 
     @property
     def end_ip_address(self):
-        """Gets the end_ip_address of this EquipmentLanItem.
+        r"""Gets the end_ip_address of this EquipmentLanItem.
 
         DHCP地址池结束IP地址
 
@@ -237,7 +237,7 @@ class EquipmentLanItem:
 
     @end_ip_address.setter
     def end_ip_address(self, end_ip_address):
-        """Sets the end_ip_address of this EquipmentLanItem.
+        r"""Sets the end_ip_address of this EquipmentLanItem.
 
         DHCP地址池结束IP地址
 
@@ -248,7 +248,7 @@ class EquipmentLanItem:
 
     @property
     def lease_time(self):
-        """Gets the lease_time of this EquipmentLanItem.
+        r"""Gets the lease_time of this EquipmentLanItem.
 
         地址租期(分钟)
 
@@ -259,7 +259,7 @@ class EquipmentLanItem:
 
     @lease_time.setter
     def lease_time(self, lease_time):
-        """Sets the lease_time of this EquipmentLanItem.
+        r"""Sets the lease_time of this EquipmentLanItem.
 
         地址租期(分钟)
 
@@ -270,7 +270,7 @@ class EquipmentLanItem:
 
     @property
     def post_to_cloud(self):
-        """Gets the post_to_cloud of this EquipmentLanItem.
+        r"""Gets the post_to_cloud of this EquipmentLanItem.
 
         发布到企业连接网络
 
@@ -281,7 +281,7 @@ class EquipmentLanItem:
 
     @post_to_cloud.setter
     def post_to_cloud(self, post_to_cloud):
-        """Sets the post_to_cloud of this EquipmentLanItem.
+        r"""Sets the post_to_cloud of this EquipmentLanItem.
 
         发布到企业连接网络
 

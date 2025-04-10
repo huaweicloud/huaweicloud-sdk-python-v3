@@ -27,7 +27,7 @@ class AddNicsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddNicsRequest
+        r"""AddNicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddNicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddNicsRequest.
+        r"""Gets the instance_id of this AddNicsRequest.
 
         边缘实例ID。
 
@@ -60,7 +60,7 @@ class AddNicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddNicsRequest.
+        r"""Sets the instance_id of this AddNicsRequest.
 
         边缘实例ID。
 
@@ -71,7 +71,7 @@ class AddNicsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddNicsRequest.
+        r"""Gets the body of this AddNicsRequest.
 
         :return: The body of this AddNicsRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`
@@ -80,7 +80,7 @@ class AddNicsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddNicsRequest.
+        r"""Sets the body of this AddNicsRequest.
 
         :param body: The body of this AddNicsRequest.
         :type body: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`

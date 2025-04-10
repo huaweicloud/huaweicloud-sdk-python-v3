@@ -36,7 +36,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
     }
 
     def __init__(self, name=None, value=None, restart_required=None, value_range=None, type=None, description=None):
-        """ShowPostgresqlParamValueResponse
+        r"""ShowPostgresqlParamValueResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPostgresqlParamValueResponse.
+        r"""Gets the name of this ShowPostgresqlParamValueResponse.
 
         参数名称。
 
@@ -90,7 +90,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPostgresqlParamValueResponse.
+        r"""Sets the name of this ShowPostgresqlParamValueResponse.
 
         参数名称。
 
@@ -101,7 +101,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ShowPostgresqlParamValueResponse.
+        r"""Gets the value of this ShowPostgresqlParamValueResponse.
 
         参数值。
 
@@ -112,7 +112,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowPostgresqlParamValueResponse.
+        r"""Sets the value of this ShowPostgresqlParamValueResponse.
 
         参数值。
 
@@ -123,7 +123,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this ShowPostgresqlParamValueResponse.
+        r"""Gets the restart_required of this ShowPostgresqlParamValueResponse.
 
         是否需要重启。 - \"false\"表示否 - \"true\"表示是
 
@@ -134,7 +134,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this ShowPostgresqlParamValueResponse.
+        r"""Sets the restart_required of this ShowPostgresqlParamValueResponse.
 
         是否需要重启。 - \"false\"表示否 - \"true\"表示是
 
@@ -145,7 +145,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @property
     def value_range(self):
-        """Gets the value_range of this ShowPostgresqlParamValueResponse.
+        r"""Gets the value_range of this ShowPostgresqlParamValueResponse.
 
         参数值范围，如Integer取值0-1、Boolean取值true|false等。
 
@@ -156,7 +156,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ShowPostgresqlParamValueResponse.
+        r"""Sets the value_range of this ShowPostgresqlParamValueResponse.
 
         参数值范围，如Integer取值0-1、Boolean取值true|false等。
 
@@ -167,7 +167,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowPostgresqlParamValueResponse.
+        r"""Gets the type of this ShowPostgresqlParamValueResponse.
 
         参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
 
@@ -178,7 +178,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowPostgresqlParamValueResponse.
+        r"""Sets the type of this ShowPostgresqlParamValueResponse.
 
         参数类型，取值为“string”、“integer”、“boolean”、“list”或“float”之一。
 
@@ -189,7 +189,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPostgresqlParamValueResponse.
+        r"""Gets the description of this ShowPostgresqlParamValueResponse.
 
         参数描述。
 
@@ -200,7 +200,7 @@ class ShowPostgresqlParamValueResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPostgresqlParamValueResponse.
+        r"""Sets the description of this ShowPostgresqlParamValueResponse.
 
         参数描述。
 

@@ -33,7 +33,7 @@ class ListNodeLimitSqlModelRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None, sql_model=None, offset=None, limit=None):
-        """ListNodeLimitSqlModelRequest
+        r"""ListNodeLimitSqlModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListNodeLimitSqlModelRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListNodeLimitSqlModelRequest.
+        r"""Gets the instance_id of this ListNodeLimitSqlModelRequest.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class ListNodeLimitSqlModelRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListNodeLimitSqlModelRequest.
+        r"""Sets the instance_id of this ListNodeLimitSqlModelRequest.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class ListNodeLimitSqlModelRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListNodeLimitSqlModelRequest.
+        r"""Gets the node_id of this ListNodeLimitSqlModelRequest.
 
         节点id。
 
@@ -102,7 +102,7 @@ class ListNodeLimitSqlModelRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListNodeLimitSqlModelRequest.
+        r"""Sets the node_id of this ListNodeLimitSqlModelRequest.
 
         节点id。
 
@@ -113,7 +113,7 @@ class ListNodeLimitSqlModelRequest:
 
     @property
     def sql_model(self):
-        """Gets the sql_model of this ListNodeLimitSqlModelRequest.
+        r"""Gets the sql_model of this ListNodeLimitSqlModelRequest.
 
         sql模板。
 
@@ -124,7 +124,7 @@ class ListNodeLimitSqlModelRequest:
 
     @sql_model.setter
     def sql_model(self, sql_model):
-        """Sets the sql_model of this ListNodeLimitSqlModelRequest.
+        r"""Sets the sql_model of this ListNodeLimitSqlModelRequest.
 
         sql模板。
 
@@ -135,7 +135,7 @@ class ListNodeLimitSqlModelRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNodeLimitSqlModelRequest.
+        r"""Gets the offset of this ListNodeLimitSqlModelRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
@@ -146,7 +146,7 @@ class ListNodeLimitSqlModelRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNodeLimitSqlModelRequest.
+        r"""Sets the offset of this ListNodeLimitSqlModelRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。  取值范围：0 - 10000
 
@@ -157,7 +157,7 @@ class ListNodeLimitSqlModelRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNodeLimitSqlModelRequest.
+        r"""Gets the limit of this ListNodeLimitSqlModelRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -168,7 +168,7 @@ class ListNodeLimitSqlModelRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNodeLimitSqlModelRequest.
+        r"""Sets the limit of this ListNodeLimitSqlModelRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 

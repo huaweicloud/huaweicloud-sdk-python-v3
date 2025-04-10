@@ -30,7 +30,7 @@ class ShowPositionResultResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, position=None, status=None):
-        """ShowPositionResultResponse
+        r"""ShowPositionResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowPositionResultResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPositionResultResponse.
+        r"""Gets the job_id of this ShowPositionResultResponse.
 
         任务ID
 
@@ -69,7 +69,7 @@ class ShowPositionResultResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPositionResultResponse.
+        r"""Sets the job_id of this ShowPositionResultResponse.
 
         任务ID
 
@@ -80,7 +80,7 @@ class ShowPositionResultResponse(SdkResponse):
 
     @property
     def position(self):
-        """Gets the position of this ShowPositionResultResponse.
+        r"""Gets the position of this ShowPositionResultResponse.
 
         位点信息
 
@@ -91,7 +91,7 @@ class ShowPositionResultResponse(SdkResponse):
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ShowPositionResultResponse.
+        r"""Sets the position of this ShowPositionResultResponse.
 
         位点信息
 
@@ -102,7 +102,7 @@ class ShowPositionResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPositionResultResponse.
+        r"""Gets the status of this ShowPositionResultResponse.
 
         查询状态
 
@@ -113,7 +113,7 @@ class ShowPositionResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPositionResultResponse.
+        r"""Sets the status of this ShowPositionResultResponse.
 
         查询状态
 

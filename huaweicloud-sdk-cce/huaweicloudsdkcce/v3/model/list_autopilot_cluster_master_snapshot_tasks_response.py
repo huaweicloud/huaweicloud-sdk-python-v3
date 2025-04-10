@@ -34,7 +34,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, items=None, status=None):
-        """ListAutopilotClusterMasterSnapshotTasksResponse
+        r"""ListAutopilotClusterMasterSnapshotTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Gets the api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         api版本，默认为v3.1
 
@@ -83,7 +83,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Sets the api_version of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         api版本，默认为v3.1
 
@@ -94,7 +94,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Gets the kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         任务类型
 
@@ -105,7 +105,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Sets the kind of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         任务类型
 
@@ -116,7 +116,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Gets the metadata of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         :return: The metadata of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
@@ -125,7 +125,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Sets the metadata of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         :param metadata: The metadata of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
@@ -134,7 +134,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Gets the items of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         备份任务列表
 
@@ -145,7 +145,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Sets the items of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         备份任务列表
 
@@ -156,7 +156,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Gets the status of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         :return: The status of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotTaskStatus`
@@ -165,7 +165,7 @@ class ListAutopilotClusterMasterSnapshotTasksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAutopilotClusterMasterSnapshotTasksResponse.
+        r"""Sets the status of this ListAutopilotClusterMasterSnapshotTasksResponse.
 
         :param status: The status of this ListAutopilotClusterMasterSnapshotTasksResponse.
         :type status: :class:`huaweicloudsdkcce.v3.SnapshotTaskStatus`

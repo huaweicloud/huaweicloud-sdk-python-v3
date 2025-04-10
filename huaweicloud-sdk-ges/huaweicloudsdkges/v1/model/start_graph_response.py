@@ -30,7 +30,7 @@ class StartGraphResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_id=None):
-        """StartGraphResponse
+        r"""StartGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class StartGraphResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this StartGraphResponse.
+        r"""Gets the error_message of this StartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -69,7 +69,7 @@ class StartGraphResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this StartGraphResponse.
+        r"""Sets the error_message of this StartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -80,7 +80,7 @@ class StartGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this StartGraphResponse.
+        r"""Gets the error_code of this StartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -91,7 +91,7 @@ class StartGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this StartGraphResponse.
+        r"""Sets the error_code of this StartGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -102,7 +102,7 @@ class StartGraphResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartGraphResponse.
+        r"""Gets the job_id of this StartGraphResponse.
 
         启动图任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
@@ -113,7 +113,7 @@ class StartGraphResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartGraphResponse.
+        r"""Sets the job_id of this StartGraphResponse.
 
         启动图任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 

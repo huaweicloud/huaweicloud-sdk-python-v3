@@ -29,7 +29,7 @@ class DiscardInfo:
     }
 
     def __init__(self, type=None, count=None, total_time=None):
-        """DiscardInfo
+        r"""DiscardInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DiscardInfo:
 
     @property
     def type(self):
-        """Gets the type of this DiscardInfo.
+        r"""Gets the type of this DiscardInfo.
 
         类型。
 
@@ -68,7 +68,7 @@ class DiscardInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DiscardInfo.
+        r"""Sets the type of this DiscardInfo.
 
         类型。
 
@@ -79,7 +79,7 @@ class DiscardInfo:
 
     @property
     def count(self):
-        """Gets the count of this DiscardInfo.
+        r"""Gets the count of this DiscardInfo.
 
         数量。
 
@@ -90,7 +90,7 @@ class DiscardInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DiscardInfo.
+        r"""Sets the count of this DiscardInfo.
 
         数量。
 
@@ -101,7 +101,7 @@ class DiscardInfo:
 
     @property
     def total_time(self):
-        """Gets the total_time of this DiscardInfo.
+        r"""Gets the total_time of this DiscardInfo.
 
         总时间。
 
@@ -112,7 +112,7 @@ class DiscardInfo:
 
     @total_time.setter
     def total_time(self, total_time):
-        """Sets the total_time of this DiscardInfo.
+        r"""Sets the total_time of this DiscardInfo.
 
         总时间。
 

@@ -41,7 +41,7 @@ class Relation:
     }
 
     def __init__(self, relation_type=None, task_name=None, task_id=None, script_name=None, script_id=None, user_name=None, version=None, relation_id=None, deleted=None):
-        """Relation
+        r"""Relation
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Relation:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this Relation.
+        r"""Gets the relation_type of this Relation.
 
         依赖类型
 
@@ -110,7 +110,7 @@ class Relation:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this Relation.
+        r"""Sets the relation_type of this Relation.
 
         依赖类型
 
@@ -121,7 +121,7 @@ class Relation:
 
     @property
     def task_name(self):
-        """Gets the task_name of this Relation.
+        r"""Gets the task_name of this Relation.
 
         作业名称
 
@@ -132,7 +132,7 @@ class Relation:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this Relation.
+        r"""Sets the task_name of this Relation.
 
         作业名称
 
@@ -143,7 +143,7 @@ class Relation:
 
     @property
     def task_id(self):
-        """Gets the task_id of this Relation.
+        r"""Gets the task_id of this Relation.
 
         作业ID
 
@@ -154,7 +154,7 @@ class Relation:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this Relation.
+        r"""Sets the task_id of this Relation.
 
         作业ID
 
@@ -165,7 +165,7 @@ class Relation:
 
     @property
     def script_name(self):
-        """Gets the script_name of this Relation.
+        r"""Gets the script_name of this Relation.
 
         脚本名称
 
@@ -176,7 +176,7 @@ class Relation:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this Relation.
+        r"""Sets the script_name of this Relation.
 
         脚本名称
 
@@ -187,7 +187,7 @@ class Relation:
 
     @property
     def script_id(self):
-        """Gets the script_id of this Relation.
+        r"""Gets the script_id of this Relation.
 
         脚本ID
 
@@ -198,7 +198,7 @@ class Relation:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this Relation.
+        r"""Sets the script_id of this Relation.
 
         脚本ID
 
@@ -209,7 +209,7 @@ class Relation:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Relation.
+        r"""Gets the user_name of this Relation.
 
         用户名
 
@@ -220,7 +220,7 @@ class Relation:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Relation.
+        r"""Sets the user_name of this Relation.
 
         用户名
 
@@ -231,7 +231,7 @@ class Relation:
 
     @property
     def version(self):
-        """Gets the version of this Relation.
+        r"""Gets the version of this Relation.
 
         版本号
 
@@ -242,7 +242,7 @@ class Relation:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Relation.
+        r"""Sets the version of this Relation.
 
         版本号
 
@@ -253,7 +253,7 @@ class Relation:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this Relation.
+        r"""Gets the relation_id of this Relation.
 
         依赖类型ID
 
@@ -264,7 +264,7 @@ class Relation:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this Relation.
+        r"""Sets the relation_id of this Relation.
 
         依赖类型ID
 
@@ -275,7 +275,7 @@ class Relation:
 
     @property
     def deleted(self):
-        """Gets the deleted of this Relation.
+        r"""Gets the deleted of this Relation.
 
         :return: The deleted of this Relation.
         :rtype: bool
@@ -284,7 +284,7 @@ class Relation:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this Relation.
+        r"""Sets the deleted of this Relation.
 
         :param deleted: The deleted of this Relation.
         :type deleted: bool

@@ -45,7 +45,7 @@ class ScaleOutPolicyRsp:
     }
 
     def __init__(self, id=None, name=None, status=None, create_time=None, node_spec=None, availability_zone=None, nodes=None, max_nodes=None, min_nodes=None, scaling_times=None, scaling_enable=None):
-        """ScaleOutPolicyRsp
+        r"""ScaleOutPolicyRsp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def id(self):
-        """Gets the id of this ScaleOutPolicyRsp.
+        r"""Gets the id of this ScaleOutPolicyRsp.
 
         策略ID
 
@@ -124,7 +124,7 @@ class ScaleOutPolicyRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScaleOutPolicyRsp.
+        r"""Sets the id of this ScaleOutPolicyRsp.
 
         策略ID
 
@@ -135,7 +135,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def name(self):
-        """Gets the name of this ScaleOutPolicyRsp.
+        r"""Gets the name of this ScaleOutPolicyRsp.
 
         策略名称
 
@@ -146,7 +146,7 @@ class ScaleOutPolicyRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScaleOutPolicyRsp.
+        r"""Sets the name of this ScaleOutPolicyRsp.
 
         策略名称
 
@@ -157,7 +157,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def status(self):
-        """Gets the status of this ScaleOutPolicyRsp.
+        r"""Gets the status of this ScaleOutPolicyRsp.
 
         状态
 
@@ -168,7 +168,7 @@ class ScaleOutPolicyRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScaleOutPolicyRsp.
+        r"""Sets the status of this ScaleOutPolicyRsp.
 
         状态
 
@@ -179,7 +179,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScaleOutPolicyRsp.
+        r"""Gets the create_time of this ScaleOutPolicyRsp.
 
         创建时间
 
@@ -190,7 +190,7 @@ class ScaleOutPolicyRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScaleOutPolicyRsp.
+        r"""Sets the create_time of this ScaleOutPolicyRsp.
 
         创建时间
 
@@ -201,7 +201,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def node_spec(self):
-        """Gets the node_spec of this ScaleOutPolicyRsp.
+        r"""Gets the node_spec of this ScaleOutPolicyRsp.
 
         :return: The node_spec of this ScaleOutPolicyRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NodeSpecDto`
@@ -210,7 +210,7 @@ class ScaleOutPolicyRsp:
 
     @node_spec.setter
     def node_spec(self, node_spec):
-        """Sets the node_spec of this ScaleOutPolicyRsp.
+        r"""Sets the node_spec of this ScaleOutPolicyRsp.
 
         :param node_spec: The node_spec of this ScaleOutPolicyRsp.
         :type node_spec: :class:`huaweicloudsdkeihealth.v1.NodeSpecDto`
@@ -219,7 +219,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ScaleOutPolicyRsp.
+        r"""Gets the availability_zone of this ScaleOutPolicyRsp.
 
         可用区
 
@@ -230,7 +230,7 @@ class ScaleOutPolicyRsp:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ScaleOutPolicyRsp.
+        r"""Sets the availability_zone of this ScaleOutPolicyRsp.
 
         可用区
 
@@ -241,7 +241,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ScaleOutPolicyRsp.
+        r"""Gets the nodes of this ScaleOutPolicyRsp.
 
         节点数量
 
@@ -252,7 +252,7 @@ class ScaleOutPolicyRsp:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ScaleOutPolicyRsp.
+        r"""Sets the nodes of this ScaleOutPolicyRsp.
 
         节点数量
 
@@ -263,7 +263,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def max_nodes(self):
-        """Gets the max_nodes of this ScaleOutPolicyRsp.
+        r"""Gets the max_nodes of this ScaleOutPolicyRsp.
 
         扩容节点数上限
 
@@ -274,7 +274,7 @@ class ScaleOutPolicyRsp:
 
     @max_nodes.setter
     def max_nodes(self, max_nodes):
-        """Sets the max_nodes of this ScaleOutPolicyRsp.
+        r"""Sets the max_nodes of this ScaleOutPolicyRsp.
 
         扩容节点数上限
 
@@ -285,7 +285,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def min_nodes(self):
-        """Gets the min_nodes of this ScaleOutPolicyRsp.
+        r"""Gets the min_nodes of this ScaleOutPolicyRsp.
 
         扩容节点数下限
 
@@ -296,7 +296,7 @@ class ScaleOutPolicyRsp:
 
     @min_nodes.setter
     def min_nodes(self, min_nodes):
-        """Sets the min_nodes of this ScaleOutPolicyRsp.
+        r"""Sets the min_nodes of this ScaleOutPolicyRsp.
 
         扩容节点数下限
 
@@ -307,7 +307,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def scaling_times(self):
-        """Gets the scaling_times of this ScaleOutPolicyRsp.
+        r"""Gets the scaling_times of this ScaleOutPolicyRsp.
 
         伸缩次数
 
@@ -318,7 +318,7 @@ class ScaleOutPolicyRsp:
 
     @scaling_times.setter
     def scaling_times(self, scaling_times):
-        """Sets the scaling_times of this ScaleOutPolicyRsp.
+        r"""Sets the scaling_times of this ScaleOutPolicyRsp.
 
         伸缩次数
 
@@ -329,7 +329,7 @@ class ScaleOutPolicyRsp:
 
     @property
     def scaling_enable(self):
-        """Gets the scaling_enable of this ScaleOutPolicyRsp.
+        r"""Gets the scaling_enable of this ScaleOutPolicyRsp.
 
         是否开启自动扩容
 
@@ -340,7 +340,7 @@ class ScaleOutPolicyRsp:
 
     @scaling_enable.setter
     def scaling_enable(self, scaling_enable):
-        """Sets the scaling_enable of this ScaleOutPolicyRsp.
+        r"""Sets the scaling_enable of this ScaleOutPolicyRsp.
 
         是否开启自动扩容
 

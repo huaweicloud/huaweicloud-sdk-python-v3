@@ -27,7 +27,7 @@ class ShowTemplateRequest:
     }
 
     def __init__(self, eihealth_project_id=None, template_id=None):
-        """ShowTemplateRequest
+        r"""ShowTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTemplateRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowTemplateRequest.
+        r"""Gets the eihealth_project_id of this ShowTemplateRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowTemplateRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowTemplateRequest.
+        r"""Sets the eihealth_project_id of this ShowTemplateRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateRequest.
+        r"""Gets the template_id of this ShowTemplateRequest.
 
         模板id
 
@@ -81,7 +81,7 @@ class ShowTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateRequest.
+        r"""Sets the template_id of this ShowTemplateRequest.
 
         模板id
 

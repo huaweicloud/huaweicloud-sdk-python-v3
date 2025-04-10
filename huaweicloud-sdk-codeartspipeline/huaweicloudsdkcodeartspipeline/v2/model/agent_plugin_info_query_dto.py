@@ -33,7 +33,7 @@ class AgentPluginInfoQueryDTO:
     }
 
     def __init__(self, plugin_name=None, regex_name=None, maintainer=None, business_type=None, plugin_attribution=None):
-        """AgentPluginInfoQueryDTO
+        r"""AgentPluginInfoQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AgentPluginInfoQueryDTO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this AgentPluginInfoQueryDTO.
+        r"""Gets the plugin_name of this AgentPluginInfoQueryDTO.
 
         可选的查询条件-插件名
 
@@ -82,7 +82,7 @@ class AgentPluginInfoQueryDTO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this AgentPluginInfoQueryDTO.
+        r"""Sets the plugin_name of this AgentPluginInfoQueryDTO.
 
         可选的查询条件-插件名
 
@@ -93,7 +93,7 @@ class AgentPluginInfoQueryDTO:
 
     @property
     def regex_name(self):
-        """Gets the regex_name of this AgentPluginInfoQueryDTO.
+        r"""Gets the regex_name of this AgentPluginInfoQueryDTO.
 
         可选的查询条件-匹配名称
 
@@ -104,7 +104,7 @@ class AgentPluginInfoQueryDTO:
 
     @regex_name.setter
     def regex_name(self, regex_name):
-        """Sets the regex_name of this AgentPluginInfoQueryDTO.
+        r"""Sets the regex_name of this AgentPluginInfoQueryDTO.
 
         可选的查询条件-匹配名称
 
@@ -115,7 +115,7 @@ class AgentPluginInfoQueryDTO:
 
     @property
     def maintainer(self):
-        """Gets the maintainer of this AgentPluginInfoQueryDTO.
+        r"""Gets the maintainer of this AgentPluginInfoQueryDTO.
 
         维护者
 
@@ -126,7 +126,7 @@ class AgentPluginInfoQueryDTO:
 
     @maintainer.setter
     def maintainer(self, maintainer):
-        """Sets the maintainer of this AgentPluginInfoQueryDTO.
+        r"""Sets the maintainer of this AgentPluginInfoQueryDTO.
 
         维护者
 
@@ -137,7 +137,7 @@ class AgentPluginInfoQueryDTO:
 
     @property
     def business_type(self):
-        """Gets the business_type of this AgentPluginInfoQueryDTO.
+        r"""Gets the business_type of this AgentPluginInfoQueryDTO.
 
         业务类型,[Build,Gate,Deploy,Test,Normal]
 
@@ -148,7 +148,7 @@ class AgentPluginInfoQueryDTO:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this AgentPluginInfoQueryDTO.
+        r"""Sets the business_type of this AgentPluginInfoQueryDTO.
 
         业务类型,[Build,Gate,Deploy,Test,Normal]
 
@@ -159,7 +159,7 @@ class AgentPluginInfoQueryDTO:
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this AgentPluginInfoQueryDTO.
+        r"""Gets the plugin_attribution of this AgentPluginInfoQueryDTO.
 
         插件属性，official/custom
 
@@ -170,7 +170,7 @@ class AgentPluginInfoQueryDTO:
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this AgentPluginInfoQueryDTO.
+        r"""Sets the plugin_attribution of this AgentPluginInfoQueryDTO.
 
         插件属性，official/custom
 

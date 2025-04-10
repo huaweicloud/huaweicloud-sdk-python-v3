@@ -29,7 +29,7 @@ class OsFederationInfo:
     }
 
     def __init__(self, identity_provider=None, protocol=None, groups=None):
-        """OsFederationInfo
+        r"""OsFederationInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OsFederationInfo:
 
     @property
     def identity_provider(self):
-        """Gets the identity_provider of this OsFederationInfo.
+        r"""Gets the identity_provider of this OsFederationInfo.
 
         :return: The identity_provider of this OsFederationInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
@@ -63,7 +63,7 @@ class OsFederationInfo:
 
     @identity_provider.setter
     def identity_provider(self, identity_provider):
-        """Sets the identity_provider of this OsFederationInfo.
+        r"""Sets the identity_provider of this OsFederationInfo.
 
         :param identity_provider: The identity_provider of this OsFederationInfo.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
@@ -72,7 +72,7 @@ class OsFederationInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this OsFederationInfo.
+        r"""Gets the protocol of this OsFederationInfo.
 
         :return: The protocol of this OsFederationInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`
@@ -81,7 +81,7 @@ class OsFederationInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this OsFederationInfo.
+        r"""Sets the protocol of this OsFederationInfo.
 
         :param protocol: The protocol of this OsFederationInfo.
         :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`
@@ -90,7 +90,7 @@ class OsFederationInfo:
 
     @property
     def groups(self):
-        """Gets the groups of this OsFederationInfo.
+        r"""Gets the groups of this OsFederationInfo.
 
         用户组信息。
 
@@ -101,7 +101,7 @@ class OsFederationInfo:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this OsFederationInfo.
+        r"""Sets the groups of this OsFederationInfo.
 
         用户组信息。
 

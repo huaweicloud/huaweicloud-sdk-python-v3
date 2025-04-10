@@ -35,7 +35,7 @@ class ClusterInformationSpec:
     }
 
     def __init__(self, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None, deletion_protection=None):
-        """ClusterInformationSpec
+        r"""ClusterInformationSpec
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ClusterInformationSpec:
 
     @property
     def description(self):
-        """Gets the description of this ClusterInformationSpec.
+        r"""Gets the description of this ClusterInformationSpec.
 
         集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 2. 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。
 
@@ -89,7 +89,7 @@ class ClusterInformationSpec:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClusterInformationSpec.
+        r"""Sets the description of this ClusterInformationSpec.
 
         集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 2. 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。
 
@@ -100,7 +100,7 @@ class ClusterInformationSpec:
 
     @property
     def custom_san(self):
-        """Gets the custom_san of this ClusterInformationSpec.
+        r"""Gets the custom_san of this ClusterInformationSpec.
 
         集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  示例: ``` SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34 ```
 
@@ -111,7 +111,7 @@ class ClusterInformationSpec:
 
     @custom_san.setter
     def custom_san(self, custom_san):
-        """Sets the custom_san of this ClusterInformationSpec.
+        r"""Sets the custom_san of this ClusterInformationSpec.
 
         集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  示例: ``` SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34 ```
 
@@ -122,7 +122,7 @@ class ClusterInformationSpec:
 
     @property
     def container_network(self):
-        """Gets the container_network of this ClusterInformationSpec.
+        r"""Gets the container_network of this ClusterInformationSpec.
 
         :return: The container_network of this ClusterInformationSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ContainerNetworkUpdate`
@@ -131,7 +131,7 @@ class ClusterInformationSpec:
 
     @container_network.setter
     def container_network(self, container_network):
-        """Sets the container_network of this ClusterInformationSpec.
+        r"""Sets the container_network of this ClusterInformationSpec.
 
         :param container_network: The container_network of this ClusterInformationSpec.
         :type container_network: :class:`huaweicloudsdkcce.v3.ContainerNetworkUpdate`
@@ -140,7 +140,7 @@ class ClusterInformationSpec:
 
     @property
     def eni_network(self):
-        """Gets the eni_network of this ClusterInformationSpec.
+        r"""Gets the eni_network of this ClusterInformationSpec.
 
         :return: The eni_network of this ClusterInformationSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
@@ -149,7 +149,7 @@ class ClusterInformationSpec:
 
     @eni_network.setter
     def eni_network(self, eni_network):
-        """Sets the eni_network of this ClusterInformationSpec.
+        r"""Sets the eni_network of this ClusterInformationSpec.
 
         :param eni_network: The eni_network of this ClusterInformationSpec.
         :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
@@ -158,7 +158,7 @@ class ClusterInformationSpec:
 
     @property
     def host_network(self):
-        """Gets the host_network of this ClusterInformationSpec.
+        r"""Gets the host_network of this ClusterInformationSpec.
 
         :return: The host_network of this ClusterInformationSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
@@ -167,7 +167,7 @@ class ClusterInformationSpec:
 
     @host_network.setter
     def host_network(self, host_network):
-        """Sets the host_network of this ClusterInformationSpec.
+        r"""Sets the host_network of this ClusterInformationSpec.
 
         :param host_network: The host_network of this ClusterInformationSpec.
         :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
@@ -176,7 +176,7 @@ class ClusterInformationSpec:
 
     @property
     def deletion_protection(self):
-        """Gets the deletion_protection of this ClusterInformationSpec.
+        r"""Gets the deletion_protection of this ClusterInformationSpec.
 
         集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
 
@@ -187,7 +187,7 @@ class ClusterInformationSpec:
 
     @deletion_protection.setter
     def deletion_protection(self, deletion_protection):
-        """Sets the deletion_protection of this ClusterInformationSpec.
+        r"""Sets the deletion_protection of this ClusterInformationSpec.
 
         集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
 

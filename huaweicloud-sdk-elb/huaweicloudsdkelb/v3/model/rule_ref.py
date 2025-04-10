@@ -25,7 +25,7 @@ class RuleRef:
     }
 
     def __init__(self, id=None):
-        """RuleRef
+        r"""RuleRef
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RuleRef:
 
     @property
     def id(self):
-        """Gets the id of this RuleRef.
+        r"""Gets the id of this RuleRef.
 
         参数解释：规则ID。
 
@@ -53,7 +53,7 @@ class RuleRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleRef.
+        r"""Sets the id of this RuleRef.
 
         参数解释：规则ID。
 

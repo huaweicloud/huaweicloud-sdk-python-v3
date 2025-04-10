@@ -25,7 +25,7 @@ class RestSimultaneousInterpretationBody:
     }
 
     def __init__(self, simultaneous_interpretation=None):
-        """RestSimultaneousInterpretationBody
+        r"""RestSimultaneousInterpretationBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestSimultaneousInterpretationBody:
 
     @property
     def simultaneous_interpretation(self):
-        """Gets the simultaneous_interpretation of this RestSimultaneousInterpretationBody.
+        r"""Gets the simultaneous_interpretation of this RestSimultaneousInterpretationBody.
 
         * 0：停止同声传译 * 1：启动同声传译 
 
@@ -53,7 +53,7 @@ class RestSimultaneousInterpretationBody:
 
     @simultaneous_interpretation.setter
     def simultaneous_interpretation(self, simultaneous_interpretation):
-        """Sets the simultaneous_interpretation of this RestSimultaneousInterpretationBody.
+        r"""Sets the simultaneous_interpretation of this RestSimultaneousInterpretationBody.
 
         * 0：停止同声传译 * 1：启动同声传译 
 

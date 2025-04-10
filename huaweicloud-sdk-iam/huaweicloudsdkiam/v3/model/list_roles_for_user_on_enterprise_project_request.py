@@ -27,7 +27,7 @@ class ListRolesForUserOnEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, user_id=None):
-        """ListRolesForUserOnEnterpriseProjectRequest
+        r"""ListRolesForUserOnEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListRolesForUserOnEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListRolesForUserOnEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this ListRolesForUserOnEnterpriseProjectRequest.
 
         企业项目ID。
 
@@ -59,7 +59,7 @@ class ListRolesForUserOnEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListRolesForUserOnEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this ListRolesForUserOnEnterpriseProjectRequest.
 
         企业项目ID。
 
@@ -70,7 +70,7 @@ class ListRolesForUserOnEnterpriseProjectRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListRolesForUserOnEnterpriseProjectRequest.
+        r"""Gets the user_id of this ListRolesForUserOnEnterpriseProjectRequest.
 
         用户ID。
 
@@ -81,7 +81,7 @@ class ListRolesForUserOnEnterpriseProjectRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListRolesForUserOnEnterpriseProjectRequest.
+        r"""Sets the user_id of this ListRolesForUserOnEnterpriseProjectRequest.
 
         用户ID。
 

@@ -33,7 +33,7 @@ class ControlItem:
     }
 
     def __init__(self, desktop_id=None, desktop_name=None, desktop_status=None, pool_id=None, attach_user_infos=None):
-        """ControlItem
+        r"""ControlItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ControlItem:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ControlItem.
+        r"""Gets the desktop_id of this ControlItem.
 
         桌面id。
 
@@ -82,7 +82,7 @@ class ControlItem:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ControlItem.
+        r"""Sets the desktop_id of this ControlItem.
 
         桌面id。
 
@@ -93,7 +93,7 @@ class ControlItem:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ControlItem.
+        r"""Gets the desktop_name of this ControlItem.
 
         桌面名称。
 
@@ -104,7 +104,7 @@ class ControlItem:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ControlItem.
+        r"""Sets the desktop_name of this ControlItem.
 
         桌面名称。
 
@@ -115,7 +115,7 @@ class ControlItem:
 
     @property
     def desktop_status(self):
-        """Gets the desktop_status of this ControlItem.
+        r"""Gets the desktop_status of this ControlItem.
 
         桌面状态。
 
@@ -126,7 +126,7 @@ class ControlItem:
 
     @desktop_status.setter
     def desktop_status(self, desktop_status):
-        """Sets the desktop_status of this ControlItem.
+        r"""Sets the desktop_status of this ControlItem.
 
         桌面状态。
 
@@ -137,7 +137,7 @@ class ControlItem:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ControlItem.
+        r"""Gets the pool_id of this ControlItem.
 
         池id。
 
@@ -148,7 +148,7 @@ class ControlItem:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ControlItem.
+        r"""Sets the pool_id of this ControlItem.
 
         池id。
 
@@ -159,7 +159,7 @@ class ControlItem:
 
     @property
     def attach_user_infos(self):
-        """Gets the attach_user_infos of this ControlItem.
+        r"""Gets the attach_user_infos of this ControlItem.
 
         桌面已分配的用户信息列表。
 
@@ -170,7 +170,7 @@ class ControlItem:
 
     @attach_user_infos.setter
     def attach_user_infos(self, attach_user_infos):
-        """Sets the attach_user_infos of this ControlItem.
+        r"""Sets the attach_user_infos of this ControlItem.
 
         桌面已分配的用户信息列表。
 

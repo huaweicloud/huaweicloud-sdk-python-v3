@@ -29,7 +29,7 @@ class CreateResIntelligentSceneRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, body=None):
-        """CreateResIntelligentSceneRequest
+        r"""CreateResIntelligentSceneRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResIntelligentSceneRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateResIntelligentSceneRequest.
+        r"""Gets the content_type of this CreateResIntelligentSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -66,7 +66,7 @@ class CreateResIntelligentSceneRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateResIntelligentSceneRequest.
+        r"""Sets the content_type of this CreateResIntelligentSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -77,7 +77,7 @@ class CreateResIntelligentSceneRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateResIntelligentSceneRequest.
+        r"""Gets the workspace_id of this CreateResIntelligentSceneRequest.
 
         工作空间id。
 
@@ -88,7 +88,7 @@ class CreateResIntelligentSceneRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateResIntelligentSceneRequest.
+        r"""Sets the workspace_id of this CreateResIntelligentSceneRequest.
 
         工作空间id。
 
@@ -99,7 +99,7 @@ class CreateResIntelligentSceneRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResIntelligentSceneRequest.
+        r"""Gets the body of this CreateResIntelligentSceneRequest.
 
         :return: The body of this CreateResIntelligentSceneRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequestNBody`
@@ -108,7 +108,7 @@ class CreateResIntelligentSceneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResIntelligentSceneRequest.
+        r"""Sets the body of this CreateResIntelligentSceneRequest.
 
         :param body: The body of this CreateResIntelligentSceneRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequestNBody`

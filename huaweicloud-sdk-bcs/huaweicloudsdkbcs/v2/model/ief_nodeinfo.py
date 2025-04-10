@@ -29,7 +29,7 @@ class IefNodeinfo:
     }
 
     def __init__(self, status=None, public_ip_address=None, id=None):
-        """IefNodeinfo
+        r"""IefNodeinfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class IefNodeinfo:
 
     @property
     def status(self):
-        """Gets the status of this IefNodeinfo.
+        r"""Gets the status of this IefNodeinfo.
 
         节点状态，要使用此节点的话，该状态值必须为ACTIVE
 
@@ -65,7 +65,7 @@ class IefNodeinfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IefNodeinfo.
+        r"""Sets the status of this IefNodeinfo.
 
         节点状态，要使用此节点的话，该状态值必须为ACTIVE
 
@@ -76,7 +76,7 @@ class IefNodeinfo:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this IefNodeinfo.
+        r"""Gets the public_ip_address of this IefNodeinfo.
 
         节点IP，填写节点所在的EIP地址
 
@@ -87,7 +87,7 @@ class IefNodeinfo:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this IefNodeinfo.
+        r"""Sets the public_ip_address of this IefNodeinfo.
 
         节点IP，填写节点所在的EIP地址
 
@@ -98,7 +98,7 @@ class IefNodeinfo:
 
     @property
     def id(self):
-        """Gets the id of this IefNodeinfo.
+        r"""Gets the id of this IefNodeinfo.
 
         ief节点id值
 
@@ -109,7 +109,7 @@ class IefNodeinfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IefNodeinfo.
+        r"""Sets the id of this IefNodeinfo.
 
         ief节点id值
 

@@ -27,7 +27,7 @@ class CreateComponentWithConfigurationRequestBodyMetadata:
     }
 
     def __init__(self, name=None, annotations=None):
-        """CreateComponentWithConfigurationRequestBodyMetadata
+        r"""CreateComponentWithConfigurationRequestBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateComponentWithConfigurationRequestBodyMetadata:
 
     @property
     def name(self):
-        """Gets the name of this CreateComponentWithConfigurationRequestBodyMetadata.
+        r"""Gets the name of this CreateComponentWithConfigurationRequestBodyMetadata.
 
         组件名称。
 
@@ -59,7 +59,7 @@ class CreateComponentWithConfigurationRequestBodyMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateComponentWithConfigurationRequestBodyMetadata.
+        r"""Sets the name of this CreateComponentWithConfigurationRequestBodyMetadata.
 
         组件名称。
 
@@ -70,7 +70,7 @@ class CreateComponentWithConfigurationRequestBodyMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this CreateComponentWithConfigurationRequestBodyMetadata.
+        r"""Gets the annotations of this CreateComponentWithConfigurationRequestBodyMetadata.
 
         创建组件请求体附加参数，当前只支持version参数，此参数必填。
 
@@ -81,7 +81,7 @@ class CreateComponentWithConfigurationRequestBodyMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this CreateComponentWithConfigurationRequestBodyMetadata.
+        r"""Sets the annotations of this CreateComponentWithConfigurationRequestBodyMetadata.
 
         创建组件请求体附加参数，当前只支持version参数，此参数必填。
 

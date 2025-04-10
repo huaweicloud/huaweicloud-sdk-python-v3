@@ -32,7 +32,7 @@ class ListLogsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, logs=None, is_query_complete=None, analysis_logs=None):
-        """ListLogsResponse
+        r"""ListLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListLogsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLogsResponse.
+        r"""Gets the count of this ListLogsResponse.
 
         日志条数。
 
@@ -76,7 +76,7 @@ class ListLogsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLogsResponse.
+        r"""Sets the count of this ListLogsResponse.
 
         日志条数。
 
@@ -87,7 +87,7 @@ class ListLogsResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ListLogsResponse.
+        r"""Gets the logs of this ListLogsResponse.
 
         日志信息。
 
@@ -98,7 +98,7 @@ class ListLogsResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ListLogsResponse.
+        r"""Sets the logs of this ListLogsResponse.
 
         日志信息。
 
@@ -109,7 +109,7 @@ class ListLogsResponse(SdkResponse):
 
     @property
     def is_query_complete(self):
-        """Gets the is_query_complete of this ListLogsResponse.
+        r"""Gets the is_query_complete of this ListLogsResponse.
 
         是否查询完成。
 
@@ -120,7 +120,7 @@ class ListLogsResponse(SdkResponse):
 
     @is_query_complete.setter
     def is_query_complete(self, is_query_complete):
-        """Sets the is_query_complete of this ListLogsResponse.
+        r"""Sets the is_query_complete of this ListLogsResponse.
 
         是否查询完成。
 
@@ -131,7 +131,7 @@ class ListLogsResponse(SdkResponse):
 
     @property
     def analysis_logs(self):
-        """Gets the analysis_logs of this ListLogsResponse.
+        r"""Gets the analysis_logs of this ListLogsResponse.
 
         分析日志返回响应体
 
@@ -142,7 +142,7 @@ class ListLogsResponse(SdkResponse):
 
     @analysis_logs.setter
     def analysis_logs(self, analysis_logs):
-        """Sets the analysis_logs of this ListLogsResponse.
+        r"""Sets the analysis_logs of this ListLogsResponse.
 
         分析日志返回响应体
 

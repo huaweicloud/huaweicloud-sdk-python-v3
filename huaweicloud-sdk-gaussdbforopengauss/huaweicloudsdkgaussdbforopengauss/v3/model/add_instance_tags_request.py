@@ -29,7 +29,7 @@ class AddInstanceTagsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """AddInstanceTagsRequest
+        r"""AddInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddInstanceTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AddInstanceTagsRequest.
+        r"""Gets the x_language of this AddInstanceTagsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class AddInstanceTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AddInstanceTagsRequest.
+        r"""Sets the x_language of this AddInstanceTagsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class AddInstanceTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddInstanceTagsRequest.
+        r"""Gets the instance_id of this AddInstanceTagsRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class AddInstanceTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddInstanceTagsRequest.
+        r"""Sets the instance_id of this AddInstanceTagsRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class AddInstanceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddInstanceTagsRequest.
+        r"""Gets the body of this AddInstanceTagsRequest.
 
         :return: The body of this AddInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AddTagsRequestBody`
@@ -109,7 +109,7 @@ class AddInstanceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddInstanceTagsRequest.
+        r"""Sets the body of this AddInstanceTagsRequest.
 
         :param body: The body of this AddInstanceTagsRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.AddTagsRequestBody`

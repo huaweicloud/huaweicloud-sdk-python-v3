@@ -25,7 +25,7 @@ class DeleteRoutesRequestBody:
     }
 
     def __init__(self, routes=None):
-        """DeleteRoutesRequestBody
+        r"""DeleteRoutesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRoutesRequestBody:
 
     @property
     def routes(self):
-        """Gets the routes of this DeleteRoutesRequestBody.
+        r"""Gets the routes of this DeleteRoutesRequestBody.
 
         待删除的路由信息
 
@@ -53,7 +53,7 @@ class DeleteRoutesRequestBody:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this DeleteRoutesRequestBody.
+        r"""Sets the routes of this DeleteRoutesRequestBody.
 
         待删除的路由信息
 

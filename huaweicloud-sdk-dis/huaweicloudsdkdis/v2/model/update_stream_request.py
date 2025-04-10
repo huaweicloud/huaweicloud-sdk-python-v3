@@ -27,7 +27,7 @@ class UpdateStreamRequest:
     }
 
     def __init__(self, stream_name=None, body=None):
-        """UpdateStreamRequest
+        r"""UpdateStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateStreamRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this UpdateStreamRequest.
+        r"""Gets the stream_name of this UpdateStreamRequest.
 
         需要变更分区数量的通道名称。
 
@@ -60,7 +60,7 @@ class UpdateStreamRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this UpdateStreamRequest.
+        r"""Sets the stream_name of this UpdateStreamRequest.
 
         需要变更分区数量的通道名称。
 
@@ -71,7 +71,7 @@ class UpdateStreamRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStreamRequest.
+        r"""Gets the body of this UpdateStreamRequest.
 
         :return: The body of this UpdateStreamRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.UpdateStreamReq`
@@ -80,7 +80,7 @@ class UpdateStreamRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStreamRequest.
+        r"""Sets the body of this UpdateStreamRequest.
 
         :param body: The body of this UpdateStreamRequest.
         :type body: :class:`huaweicloudsdkdis.v2.UpdateStreamReq`

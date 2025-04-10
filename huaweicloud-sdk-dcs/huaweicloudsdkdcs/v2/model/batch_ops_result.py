@@ -27,7 +27,7 @@ class BatchOpsResult:
     }
 
     def __init__(self, result=None, instance=None):
-        """BatchOpsResult
+        r"""BatchOpsResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchOpsResult:
 
     @property
     def result(self):
-        """Gets the result of this BatchOpsResult.
+        r"""Gets the result of this BatchOpsResult.
 
         操作结果，取值有success或failed。
 
@@ -61,7 +61,7 @@ class BatchOpsResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchOpsResult.
+        r"""Sets the result of this BatchOpsResult.
 
         操作结果，取值有success或failed。
 
@@ -72,7 +72,7 @@ class BatchOpsResult:
 
     @property
     def instance(self):
-        """Gets the instance of this BatchOpsResult.
+        r"""Gets the instance of this BatchOpsResult.
 
         缓存实例ID。
 
@@ -83,7 +83,7 @@ class BatchOpsResult:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this BatchOpsResult.
+        r"""Sets the instance of this BatchOpsResult.
 
         缓存实例ID。
 

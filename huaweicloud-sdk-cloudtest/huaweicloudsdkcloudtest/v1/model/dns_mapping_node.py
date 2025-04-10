@@ -27,7 +27,7 @@ class DnsMappingNode:
     }
 
     def __init__(self, domain_name=None, ips=None):
-        """DnsMappingNode
+        r"""DnsMappingNode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DnsMappingNode:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DnsMappingNode.
+        r"""Gets the domain_name of this DnsMappingNode.
 
         域名信息
 
@@ -61,7 +61,7 @@ class DnsMappingNode:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DnsMappingNode.
+        r"""Sets the domain_name of this DnsMappingNode.
 
         域名信息
 
@@ -72,7 +72,7 @@ class DnsMappingNode:
 
     @property
     def ips(self):
-        """Gets the ips of this DnsMappingNode.
+        r"""Gets the ips of this DnsMappingNode.
 
         域名对应的IP
 
@@ -83,7 +83,7 @@ class DnsMappingNode:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this DnsMappingNode.
+        r"""Sets the ips of this DnsMappingNode.
 
         域名对应的IP
 

@@ -30,7 +30,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
     }
 
     def __init__(self, intent_id=None, identify=None, x_request_id=None):
-        """CreateKnowledgeIntentResponse
+        r"""CreateKnowledgeIntentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this CreateKnowledgeIntentResponse.
+        r"""Gets the intent_id of this CreateKnowledgeIntentResponse.
 
         意图ID。
 
@@ -69,7 +69,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this CreateKnowledgeIntentResponse.
+        r"""Sets the intent_id of this CreateKnowledgeIntentResponse.
 
         意图ID。
 
@@ -80,7 +80,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
 
     @property
     def identify(self):
-        """Gets the identify of this CreateKnowledgeIntentResponse.
+        r"""Gets the identify of this CreateKnowledgeIntentResponse.
 
         意图标识。
 
@@ -91,7 +91,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this CreateKnowledgeIntentResponse.
+        r"""Sets the identify of this CreateKnowledgeIntentResponse.
 
         意图标识。
 
@@ -102,7 +102,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateKnowledgeIntentResponse.
+        r"""Gets the x_request_id of this CreateKnowledgeIntentResponse.
 
         :return: The x_request_id of this CreateKnowledgeIntentResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateKnowledgeIntentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateKnowledgeIntentResponse.
+        r"""Sets the x_request_id of this CreateKnowledgeIntentResponse.
 
         :param x_request_id: The x_request_id of this CreateKnowledgeIntentResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class TaurusModifyProxyWeightRequest:
     }
 
     def __init__(self, master_weight=None, readonly_nodes=None):
-        """TaurusModifyProxyWeightRequest
+        r"""TaurusModifyProxyWeightRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaurusModifyProxyWeightRequest:
 
     @property
     def master_weight(self):
-        """Gets the master_weight of this TaurusModifyProxyWeightRequest.
+        r"""Gets the master_weight of this TaurusModifyProxyWeightRequest.
 
         主节点权重
 
@@ -61,7 +61,7 @@ class TaurusModifyProxyWeightRequest:
 
     @master_weight.setter
     def master_weight(self, master_weight):
-        """Sets the master_weight of this TaurusModifyProxyWeightRequest.
+        r"""Sets the master_weight of this TaurusModifyProxyWeightRequest.
 
         主节点权重
 
@@ -72,7 +72,7 @@ class TaurusModifyProxyWeightRequest:
 
     @property
     def readonly_nodes(self):
-        """Gets the readonly_nodes of this TaurusModifyProxyWeightRequest.
+        r"""Gets the readonly_nodes of this TaurusModifyProxyWeightRequest.
 
         只读节点权重配置信息
 
@@ -83,7 +83,7 @@ class TaurusModifyProxyWeightRequest:
 
     @readonly_nodes.setter
     def readonly_nodes(self, readonly_nodes):
-        """Sets the readonly_nodes of this TaurusModifyProxyWeightRequest.
+        r"""Sets the readonly_nodes of this TaurusModifyProxyWeightRequest.
 
         只读节点权重配置信息
 

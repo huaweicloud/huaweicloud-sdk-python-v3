@@ -41,7 +41,7 @@ class UpdateProduct:
     }
 
     def __init__(self, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, service_capabilities=None, manufacturer_name=None, industry=None, description=None):
-        """UpdateProduct
+        r"""UpdateProduct
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateProduct:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateProduct.
+        r"""Gets the app_id of this UpdateProduct.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数，指定要修改的产品属于哪个资源空间；若不携带，则优先修改默认资源空间下产品，如默认资源空间下无对应产品，则按照产品创建时间修改最早创建产品。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -110,7 +110,7 @@ class UpdateProduct:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateProduct.
+        r"""Sets the app_id of this UpdateProduct.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数，指定要修改的产品属于哪个资源空间；若不携带，则优先修改默认资源空间下产品，如默认资源空间下无对应产品，则按照产品创建时间修改最早创建产品。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -121,7 +121,7 @@ class UpdateProduct:
 
     @property
     def name(self):
-        """Gets the name of this UpdateProduct.
+        r"""Gets the name of this UpdateProduct.
 
         **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -132,7 +132,7 @@ class UpdateProduct:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProduct.
+        r"""Sets the name of this UpdateProduct.
 
         **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -143,7 +143,7 @@ class UpdateProduct:
 
     @property
     def device_type(self):
-        """Gets the device_type of this UpdateProduct.
+        r"""Gets the device_type of this UpdateProduct.
 
         **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -154,7 +154,7 @@ class UpdateProduct:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this UpdateProduct.
+        r"""Sets the device_type of this UpdateProduct.
 
         **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -165,7 +165,7 @@ class UpdateProduct:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this UpdateProduct.
+        r"""Gets the protocol_type of this UpdateProduct.
 
         **参数说明**：设备使用的协议类型。注：禁止其他协议类型修改为CoAP。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -176,7 +176,7 @@ class UpdateProduct:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this UpdateProduct.
+        r"""Sets the protocol_type of this UpdateProduct.
 
         **参数说明**：设备使用的协议类型。注：禁止其他协议类型修改为CoAP。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -187,7 +187,7 @@ class UpdateProduct:
 
     @property
     def data_format(self):
-        """Gets the data_format of this UpdateProduct.
+        r"""Gets the data_format of this UpdateProduct.
 
         **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式
 
@@ -198,7 +198,7 @@ class UpdateProduct:
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this UpdateProduct.
+        r"""Sets the data_format of this UpdateProduct.
 
         **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式
 
@@ -209,7 +209,7 @@ class UpdateProduct:
 
     @property
     def service_capabilities(self):
-        """Gets the service_capabilities of this UpdateProduct.
+        r"""Gets the service_capabilities of this UpdateProduct.
 
         **参数说明**：设备的服务能力列表。
 
@@ -220,7 +220,7 @@ class UpdateProduct:
 
     @service_capabilities.setter
     def service_capabilities(self, service_capabilities):
-        """Sets the service_capabilities of this UpdateProduct.
+        r"""Sets the service_capabilities of this UpdateProduct.
 
         **参数说明**：设备的服务能力列表。
 
@@ -231,7 +231,7 @@ class UpdateProduct:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this UpdateProduct.
+        r"""Gets the manufacturer_name of this UpdateProduct.
 
         **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -242,7 +242,7 @@ class UpdateProduct:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this UpdateProduct.
+        r"""Sets the manufacturer_name of this UpdateProduct.
 
         **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -253,7 +253,7 @@ class UpdateProduct:
 
     @property
     def industry(self):
-        """Gets the industry of this UpdateProduct.
+        r"""Gets the industry of this UpdateProduct.
 
         **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -264,7 +264,7 @@ class UpdateProduct:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this UpdateProduct.
+        r"""Sets the industry of this UpdateProduct.
 
         **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -275,7 +275,7 @@ class UpdateProduct:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProduct.
+        r"""Gets the description of this UpdateProduct.
 
         **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -286,7 +286,7 @@ class UpdateProduct:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProduct.
+        r"""Sets the description of this UpdateProduct.
 
         **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 

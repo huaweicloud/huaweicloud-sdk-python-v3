@@ -28,7 +28,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
     }
 
     def __init__(self, floatingips=None, floatingips_links=None):
-        """NeutronListFloatingIpsResponse
+        r"""NeutronListFloatingIpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
 
     @property
     def floatingips(self):
-        """Gets the floatingips of this NeutronListFloatingIpsResponse.
+        r"""Gets the floatingips of this NeutronListFloatingIpsResponse.
 
         floatingip对象列表
 
@@ -62,7 +62,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
 
     @floatingips.setter
     def floatingips(self, floatingips):
-        """Sets the floatingips of this NeutronListFloatingIpsResponse.
+        r"""Sets the floatingips of this NeutronListFloatingIpsResponse.
 
         floatingip对象列表
 
@@ -73,7 +73,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
 
     @property
     def floatingips_links(self):
-        """Gets the floatingips_links of this NeutronListFloatingIpsResponse.
+        r"""Gets the floatingips_links of this NeutronListFloatingIpsResponse.
 
         marker分页结构
 
@@ -84,7 +84,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
 
     @floatingips_links.setter
     def floatingips_links(self, floatingips_links):
-        """Sets the floatingips_links of this NeutronListFloatingIpsResponse.
+        r"""Sets the floatingips_links of this NeutronListFloatingIpsResponse.
 
         marker分页结构
 

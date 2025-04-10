@@ -25,7 +25,7 @@ class DeleteArtifactFileRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteArtifactFileRequest
+        r"""DeleteArtifactFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteArtifactFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteArtifactFileRequest.
+        r"""Gets the body of this DeleteArtifactFileRequest.
 
         :return: The body of this DeleteArtifactFileRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.PathMap`
@@ -52,7 +52,7 @@ class DeleteArtifactFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteArtifactFileRequest.
+        r"""Sets the body of this DeleteArtifactFileRequest.
 
         :param body: The body of this DeleteArtifactFileRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.PathMap`

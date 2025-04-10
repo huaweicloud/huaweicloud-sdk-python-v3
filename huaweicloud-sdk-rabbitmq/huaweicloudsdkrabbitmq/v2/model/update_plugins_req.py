@@ -27,7 +27,7 @@ class UpdatePluginsReq:
     }
 
     def __init__(self, enable=None, plugins=None):
-        """UpdatePluginsReq
+        r"""UpdatePluginsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdatePluginsReq:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdatePluginsReq.
+        r"""Gets the enable of this UpdatePluginsReq.
 
         是否开启该插件。
 
@@ -61,7 +61,7 @@ class UpdatePluginsReq:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdatePluginsReq.
+        r"""Sets the enable of this UpdatePluginsReq.
 
         是否开启该插件。
 
@@ -72,7 +72,7 @@ class UpdatePluginsReq:
 
     @property
     def plugins(self):
-        """Gets the plugins of this UpdatePluginsReq.
+        r"""Gets the plugins of this UpdatePluginsReq.
 
         插件列表，多个插件中间用“,”隔开。
 
@@ -83,7 +83,7 @@ class UpdatePluginsReq:
 
     @plugins.setter
     def plugins(self, plugins):
-        """Sets the plugins of this UpdatePluginsReq.
+        r"""Sets the plugins of this UpdatePluginsReq.
 
         插件列表，多个插件中间用“,”隔开。
 

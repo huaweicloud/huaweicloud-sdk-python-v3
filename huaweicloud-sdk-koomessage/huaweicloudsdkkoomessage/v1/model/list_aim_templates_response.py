@@ -28,7 +28,7 @@ class ListAimTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, page_info=None):
-        """ListAimTemplatesResponse
+        r"""ListAimTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAimTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListAimTemplatesResponse.
+        r"""Gets the templates of this ListAimTemplatesResponse.
 
         模板列表。
 
@@ -62,7 +62,7 @@ class ListAimTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListAimTemplatesResponse.
+        r"""Sets the templates of this ListAimTemplatesResponse.
 
         模板列表。
 
@@ -73,7 +73,7 @@ class ListAimTemplatesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimTemplatesResponse.
+        r"""Gets the page_info of this ListAimTemplatesResponse.
 
         :return: The page_info of this ListAimTemplatesResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -82,7 +82,7 @@ class ListAimTemplatesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimTemplatesResponse.
+        r"""Sets the page_info of this ListAimTemplatesResponse.
 
         :param page_info: The page_info of this ListAimTemplatesResponse.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

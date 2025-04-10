@@ -26,7 +26,7 @@ class CreateFavoriteResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateFavoriteResponse
+        r"""CreateFavoriteResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateFavoriteResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateFavoriteResponse.
+        r"""Gets the id of this CreateFavoriteResponse.
 
         收藏记录ID。
 
@@ -55,7 +55,7 @@ class CreateFavoriteResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateFavoriteResponse.
+        r"""Sets the id of this CreateFavoriteResponse.
 
         收藏记录ID。
 

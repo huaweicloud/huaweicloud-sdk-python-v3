@@ -49,7 +49,7 @@ class UploadMetaDataByUrl:
     }
 
     def __init__(self, video_type=None, title=None, url=None, description=None, category_id=None, tags=None, auto_publish=None, template_group_name=None, auto_encrypt=None, auto_preheat=None, thumbnail=None, review=None, workflow_name=None):
-        """UploadMetaDataByUrl
+        r"""UploadMetaDataByUrl
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class UploadMetaDataByUrl:
 
     @property
     def video_type(self):
-        """Gets the video_type of this UploadMetaDataByUrl.
+        r"""Gets the video_type of this UploadMetaDataByUrl.
 
         上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、M3U8 - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
@@ -135,7 +135,7 @@ class UploadMetaDataByUrl:
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this UploadMetaDataByUrl.
+        r"""Sets the video_type of this UploadMetaDataByUrl.
 
         上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、M3U8 - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
@@ -146,7 +146,7 @@ class UploadMetaDataByUrl:
 
     @property
     def title(self):
-        """Gets the title of this UploadMetaDataByUrl.
+        r"""Gets the title of this UploadMetaDataByUrl.
 
         媒资标题，长度不超过128个字节，UTF-8编码。
 
@@ -157,7 +157,7 @@ class UploadMetaDataByUrl:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this UploadMetaDataByUrl.
+        r"""Sets the title of this UploadMetaDataByUrl.
 
         媒资标题，长度不超过128个字节，UTF-8编码。
 
@@ -168,7 +168,7 @@ class UploadMetaDataByUrl:
 
     @property
     def url(self):
-        """Gets the url of this UploadMetaDataByUrl.
+        r"""Gets the url of this UploadMetaDataByUrl.
 
         音视频源文件URL。   > URL必须以扩展名结尾，暂只支持http和https协议。
 
@@ -179,7 +179,7 @@ class UploadMetaDataByUrl:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UploadMetaDataByUrl.
+        r"""Sets the url of this UploadMetaDataByUrl.
 
         音视频源文件URL。   > URL必须以扩展名结尾，暂只支持http和https协议。
 
@@ -190,7 +190,7 @@ class UploadMetaDataByUrl:
 
     @property
     def description(self):
-        """Gets the description of this UploadMetaDataByUrl.
+        r"""Gets the description of this UploadMetaDataByUrl.
 
         视频描述，长度不超过1024个字节。
 
@@ -201,7 +201,7 @@ class UploadMetaDataByUrl:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadMetaDataByUrl.
+        r"""Sets the description of this UploadMetaDataByUrl.
 
         视频描述，长度不超过1024个字节。
 
@@ -212,7 +212,7 @@ class UploadMetaDataByUrl:
 
     @property
     def category_id(self):
-        """Gets the category_id of this UploadMetaDataByUrl.
+        r"""Gets the category_id of this UploadMetaDataByUrl.
 
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
@@ -223,7 +223,7 @@ class UploadMetaDataByUrl:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this UploadMetaDataByUrl.
+        r"""Sets the category_id of this UploadMetaDataByUrl.
 
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
@@ -234,7 +234,7 @@ class UploadMetaDataByUrl:
 
     @property
     def tags(self):
-        """Gets the tags of this UploadMetaDataByUrl.
+        r"""Gets the tags of this UploadMetaDataByUrl.
 
         视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -245,7 +245,7 @@ class UploadMetaDataByUrl:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UploadMetaDataByUrl.
+        r"""Sets the tags of this UploadMetaDataByUrl.
 
         视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -256,7 +256,7 @@ class UploadMetaDataByUrl:
 
     @property
     def auto_publish(self):
-        """Gets the auto_publish of this UploadMetaDataByUrl.
+        r"""Gets the auto_publish of this UploadMetaDataByUrl.
 
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
 
@@ -267,7 +267,7 @@ class UploadMetaDataByUrl:
 
     @auto_publish.setter
     def auto_publish(self, auto_publish):
-        """Sets the auto_publish of this UploadMetaDataByUrl.
+        r"""Sets the auto_publish of this UploadMetaDataByUrl.
 
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
 
@@ -278,7 +278,7 @@ class UploadMetaDataByUrl:
 
     @property
     def template_group_name(self):
-        """Gets the template_group_name of this UploadMetaDataByUrl.
+        r"""Gets the template_group_name of this UploadMetaDataByUrl.
 
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  >若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
@@ -289,7 +289,7 @@ class UploadMetaDataByUrl:
 
     @template_group_name.setter
     def template_group_name(self, template_group_name):
-        """Sets the template_group_name of this UploadMetaDataByUrl.
+        r"""Sets the template_group_name of this UploadMetaDataByUrl.
 
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  >若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
@@ -300,7 +300,7 @@ class UploadMetaDataByUrl:
 
     @property
     def auto_encrypt(self):
-        """Gets the auto_encrypt of this UploadMetaDataByUrl.
+        r"""Gets the auto_encrypt of this UploadMetaDataByUrl.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
 
@@ -311,7 +311,7 @@ class UploadMetaDataByUrl:
 
     @auto_encrypt.setter
     def auto_encrypt(self, auto_encrypt):
-        """Sets the auto_encrypt of this UploadMetaDataByUrl.
+        r"""Sets the auto_encrypt of this UploadMetaDataByUrl.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
 
@@ -322,7 +322,7 @@ class UploadMetaDataByUrl:
 
     @property
     def auto_preheat(self):
-        """Gets the auto_preheat of this UploadMetaDataByUrl.
+        r"""Gets the auto_preheat of this UploadMetaDataByUrl.
 
         是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
 
@@ -333,7 +333,7 @@ class UploadMetaDataByUrl:
 
     @auto_preheat.setter
     def auto_preheat(self, auto_preheat):
-        """Sets the auto_preheat of this UploadMetaDataByUrl.
+        r"""Sets the auto_preheat of this UploadMetaDataByUrl.
 
         是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
 
@@ -344,7 +344,7 @@ class UploadMetaDataByUrl:
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this UploadMetaDataByUrl.
+        r"""Gets the thumbnail of this UploadMetaDataByUrl.
 
         :return: The thumbnail of this UploadMetaDataByUrl.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -353,7 +353,7 @@ class UploadMetaDataByUrl:
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this UploadMetaDataByUrl.
+        r"""Sets the thumbnail of this UploadMetaDataByUrl.
 
         :param thumbnail: The thumbnail of this UploadMetaDataByUrl.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -362,7 +362,7 @@ class UploadMetaDataByUrl:
 
     @property
     def review(self):
-        """Gets the review of this UploadMetaDataByUrl.
+        r"""Gets the review of this UploadMetaDataByUrl.
 
         :return: The review of this UploadMetaDataByUrl.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
@@ -371,7 +371,7 @@ class UploadMetaDataByUrl:
 
     @review.setter
     def review(self, review):
-        """Sets the review of this UploadMetaDataByUrl.
+        r"""Sets the review of this UploadMetaDataByUrl.
 
         :param review: The review of this UploadMetaDataByUrl.
         :type review: :class:`huaweicloudsdkvod.v1.Review`
@@ -380,7 +380,7 @@ class UploadMetaDataByUrl:
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this UploadMetaDataByUrl.
+        r"""Gets the workflow_name of this UploadMetaDataByUrl.
 
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
@@ -391,7 +391,7 @@ class UploadMetaDataByUrl:
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this UploadMetaDataByUrl.
+        r"""Sets the workflow_name of this UploadMetaDataByUrl.
 
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 

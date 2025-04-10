@@ -29,7 +29,7 @@ class HtapStorageTypeStorageType:
     }
 
     def __init__(self, name=None, az_status=None, min_volume_size=None):
-        """HtapStorageTypeStorageType
+        r"""HtapStorageTypeStorageType
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HtapStorageTypeStorageType:
 
     @property
     def name(self):
-        """Gets the name of this HtapStorageTypeStorageType.
+        r"""Gets the name of this HtapStorageTypeStorageType.
 
         存储介质名。
 
@@ -68,7 +68,7 @@ class HtapStorageTypeStorageType:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HtapStorageTypeStorageType.
+        r"""Sets the name of this HtapStorageTypeStorageType.
 
         存储介质名。
 
@@ -79,7 +79,7 @@ class HtapStorageTypeStorageType:
 
     @property
     def az_status(self):
-        """Gets the az_status of this HtapStorageTypeStorageType.
+        r"""Gets the az_status of this HtapStorageTypeStorageType.
 
         可支持可用区信息。
 
@@ -90,7 +90,7 @@ class HtapStorageTypeStorageType:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this HtapStorageTypeStorageType.
+        r"""Sets the az_status of this HtapStorageTypeStorageType.
 
         可支持可用区信息。
 
@@ -101,7 +101,7 @@ class HtapStorageTypeStorageType:
 
     @property
     def min_volume_size(self):
-        """Gets the min_volume_size of this HtapStorageTypeStorageType.
+        r"""Gets the min_volume_size of this HtapStorageTypeStorageType.
 
         最小可提供磁盘大小。
 
@@ -112,7 +112,7 @@ class HtapStorageTypeStorageType:
 
     @min_volume_size.setter
     def min_volume_size(self, min_volume_size):
-        """Sets the min_volume_size of this HtapStorageTypeStorageType.
+        r"""Sets the min_volume_size of this HtapStorageTypeStorageType.
 
         最小可提供磁盘大小。
 

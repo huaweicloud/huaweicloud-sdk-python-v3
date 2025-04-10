@@ -59,7 +59,7 @@ class FrequencyControlRule:
     }
 
     def __init__(self, id=None, producer=None, name=None, url=None, limit_num=None, limit_period=None, lock_time=None, tag_type=None, tag_index=None, tag_condition=None, action=None, mode=None, conditions=None, unlock_num=None, domain_aggregation=None, region_aggregation=None, captcha_lock_time=None, grayscale_time=None):
-        """FrequencyControlRule
+        r"""FrequencyControlRule
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class FrequencyControlRule:
 
     @property
     def id(self):
-        """Gets the id of this FrequencyControlRule.
+        r"""Gets the id of this FrequencyControlRule.
 
         id
 
@@ -173,7 +173,7 @@ class FrequencyControlRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FrequencyControlRule.
+        r"""Sets the id of this FrequencyControlRule.
 
         id
 
@@ -184,7 +184,7 @@ class FrequencyControlRule:
 
     @property
     def producer(self):
-        """Gets the producer of this FrequencyControlRule.
+        r"""Gets the producer of this FrequencyControlRule.
 
         判断是否是智能cc生成的规则
 
@@ -195,7 +195,7 @@ class FrequencyControlRule:
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this FrequencyControlRule.
+        r"""Sets the producer of this FrequencyControlRule.
 
         判断是否是智能cc生成的规则
 
@@ -206,7 +206,7 @@ class FrequencyControlRule:
 
     @property
     def name(self):
-        """Gets the name of this FrequencyControlRule.
+        r"""Gets the name of this FrequencyControlRule.
 
         规则名称
 
@@ -217,7 +217,7 @@ class FrequencyControlRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FrequencyControlRule.
+        r"""Sets the name of this FrequencyControlRule.
 
         规则名称
 
@@ -228,7 +228,7 @@ class FrequencyControlRule:
 
     @property
     def url(self):
-        """Gets the url of this FrequencyControlRule.
+        r"""Gets the url of this FrequencyControlRule.
 
         规则应用的url
 
@@ -239,7 +239,7 @@ class FrequencyControlRule:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this FrequencyControlRule.
+        r"""Sets the url of this FrequencyControlRule.
 
         规则应用的url
 
@@ -250,7 +250,7 @@ class FrequencyControlRule:
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this FrequencyControlRule.
+        r"""Gets the limit_num of this FrequencyControlRule.
 
         限速频率，单位为次，范围为1~2147483647
 
@@ -261,7 +261,7 @@ class FrequencyControlRule:
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this FrequencyControlRule.
+        r"""Sets the limit_num of this FrequencyControlRule.
 
         限速频率，单位为次，范围为1~2147483647
 
@@ -272,7 +272,7 @@ class FrequencyControlRule:
 
     @property
     def limit_period(self):
-        """Gets the limit_period of this FrequencyControlRule.
+        r"""Gets the limit_period of this FrequencyControlRule.
 
         限速周期，单位为秒，范围1~3600
 
@@ -283,7 +283,7 @@ class FrequencyControlRule:
 
     @limit_period.setter
     def limit_period(self, limit_period):
-        """Sets the limit_period of this FrequencyControlRule.
+        r"""Sets the limit_period of this FrequencyControlRule.
 
         限速周期，单位为秒，范围1~3600
 
@@ -294,7 +294,7 @@ class FrequencyControlRule:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this FrequencyControlRule.
+        r"""Gets the lock_time of this FrequencyControlRule.
 
         阻断时间，单位为秒，范围为0~65535
 
@@ -305,7 +305,7 @@ class FrequencyControlRule:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this FrequencyControlRule.
+        r"""Sets the lock_time of this FrequencyControlRule.
 
         阻断时间，单位为秒，范围为0~65535
 
@@ -316,7 +316,7 @@ class FrequencyControlRule:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this FrequencyControlRule.
+        r"""Gets the tag_type of this FrequencyControlRule.
 
         限速模式：ip、cookie、header、other、policy、domain、url。 源限速：ip：IP限速，根据IP区分单个Web访问者。cookie：用户限速，根据Cookie键值区分单个Web访问者。header：用户限速，根据Header区分单个Web访问者。other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。-目的限速：policy: 策略限速、domain: 域名限速、url: url限速
 
@@ -327,7 +327,7 @@ class FrequencyControlRule:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this FrequencyControlRule.
+        r"""Sets the tag_type of this FrequencyControlRule.
 
         限速模式：ip、cookie、header、other、policy、domain、url。 源限速：ip：IP限速，根据IP区分单个Web访问者。cookie：用户限速，根据Cookie键值区分单个Web访问者。header：用户限速，根据Header区分单个Web访问者。other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。-目的限速：policy: 策略限速、domain: 域名限速、url: url限速
 
@@ -338,7 +338,7 @@ class FrequencyControlRule:
 
     @property
     def tag_index(self):
-        """Gets the tag_index of this FrequencyControlRule.
+        r"""Gets the tag_index of this FrequencyControlRule.
 
         用户标识，当限速模式为用户限速(cookie或header)时
 
@@ -349,7 +349,7 @@ class FrequencyControlRule:
 
     @tag_index.setter
     def tag_index(self, tag_index):
-        """Sets the tag_index of this FrequencyControlRule.
+        r"""Sets the tag_index of this FrequencyControlRule.
 
         用户标识，当限速模式为用户限速(cookie或header)时
 
@@ -360,7 +360,7 @@ class FrequencyControlRule:
 
     @property
     def tag_condition(self):
-        """Gets the tag_condition of this FrequencyControlRule.
+        r"""Gets the tag_condition of this FrequencyControlRule.
 
         :return: The tag_condition of this FrequencyControlRule.
         :rtype: :class:`huaweicloudsdkaad.v2.TagCondition`
@@ -369,7 +369,7 @@ class FrequencyControlRule:
 
     @tag_condition.setter
     def tag_condition(self, tag_condition):
-        """Sets the tag_condition of this FrequencyControlRule.
+        r"""Sets the tag_condition of this FrequencyControlRule.
 
         :param tag_condition: The tag_condition of this FrequencyControlRule.
         :type tag_condition: :class:`huaweicloudsdkaad.v2.TagCondition`
@@ -378,7 +378,7 @@ class FrequencyControlRule:
 
     @property
     def action(self):
-        """Gets the action of this FrequencyControlRule.
+        r"""Gets the action of this FrequencyControlRule.
 
         :return: The action of this FrequencyControlRule.
         :rtype: :class:`huaweicloudsdkaad.v2.ActionInfo`
@@ -387,7 +387,7 @@ class FrequencyControlRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this FrequencyControlRule.
+        r"""Sets the action of this FrequencyControlRule.
 
         :param action: The action of this FrequencyControlRule.
         :type action: :class:`huaweicloudsdkaad.v2.ActionInfo`
@@ -396,7 +396,7 @@ class FrequencyControlRule:
 
     @property
     def mode(self):
-        """Gets the mode of this FrequencyControlRule.
+        r"""Gets the mode of this FrequencyControlRule.
 
         cc规则防护模式，0：标准(老版本)，只支持对域名的防护路径做限制。1：高级(新版本)，支持对路径、IP、Cookie、Header、Params字段做限制。修改CC规则时必须传mode
 
@@ -407,7 +407,7 @@ class FrequencyControlRule:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this FrequencyControlRule.
+        r"""Sets the mode of this FrequencyControlRule.
 
         cc规则防护模式，0：标准(老版本)，只支持对域名的防护路径做限制。1：高级(新版本)，支持对路径、IP、Cookie、Header、Params字段做限制。修改CC规则时必须传mode
 
@@ -418,7 +418,7 @@ class FrequencyControlRule:
 
     @property
     def conditions(self):
-        """Gets the conditions of this FrequencyControlRule.
+        r"""Gets the conditions of this FrequencyControlRule.
 
         cc规则防护规则限速条件
 
@@ -429,7 +429,7 @@ class FrequencyControlRule:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this FrequencyControlRule.
+        r"""Sets the conditions of this FrequencyControlRule.
 
         cc规则防护规则限速条件
 
@@ -440,7 +440,7 @@ class FrequencyControlRule:
 
     @property
     def unlock_num(self):
-        """Gets the unlock_num of this FrequencyControlRule.
+        r"""Gets the unlock_num of this FrequencyControlRule.
 
         放行频率，单位为次，范围为0~2147483647
 
@@ -451,7 +451,7 @@ class FrequencyControlRule:
 
     @unlock_num.setter
     def unlock_num(self, unlock_num):
-        """Sets the unlock_num of this FrequencyControlRule.
+        r"""Sets the unlock_num of this FrequencyControlRule.
 
         放行频率，单位为次，范围为0~2147483647
 
@@ -462,7 +462,7 @@ class FrequencyControlRule:
 
     @property
     def domain_aggregation(self):
-        """Gets the domain_aggregation of this FrequencyControlRule.
+        r"""Gets the domain_aggregation of this FrequencyControlRule.
 
         域名聚合统计
 
@@ -473,7 +473,7 @@ class FrequencyControlRule:
 
     @domain_aggregation.setter
     def domain_aggregation(self, domain_aggregation):
-        """Sets the domain_aggregation of this FrequencyControlRule.
+        r"""Sets the domain_aggregation of this FrequencyControlRule.
 
         域名聚合统计
 
@@ -484,7 +484,7 @@ class FrequencyControlRule:
 
     @property
     def region_aggregation(self):
-        """Gets the region_aggregation of this FrequencyControlRule.
+        r"""Gets the region_aggregation of this FrequencyControlRule.
 
         全局计数
 
@@ -495,7 +495,7 @@ class FrequencyControlRule:
 
     @region_aggregation.setter
     def region_aggregation(self, region_aggregation):
-        """Sets the region_aggregation of this FrequencyControlRule.
+        r"""Sets the region_aggregation of this FrequencyControlRule.
 
         全局计数
 
@@ -506,7 +506,7 @@ class FrequencyControlRule:
 
     @property
     def captcha_lock_time(self):
-        """Gets the captcha_lock_time of this FrequencyControlRule.
+        r"""Gets the captcha_lock_time of this FrequencyControlRule.
 
         锁定验证时间
 
@@ -517,7 +517,7 @@ class FrequencyControlRule:
 
     @captcha_lock_time.setter
     def captcha_lock_time(self, captcha_lock_time):
-        """Sets the captcha_lock_time of this FrequencyControlRule.
+        r"""Sets the captcha_lock_time of this FrequencyControlRule.
 
         锁定验证时间
 
@@ -528,7 +528,7 @@ class FrequencyControlRule:
 
     @property
     def grayscale_time(self):
-        """Gets the grayscale_time of this FrequencyControlRule.
+        r"""Gets the grayscale_time of this FrequencyControlRule.
 
         是否灰度生效
 
@@ -539,7 +539,7 @@ class FrequencyControlRule:
 
     @grayscale_time.setter
     def grayscale_time(self, grayscale_time):
-        """Sets the grayscale_time of this FrequencyControlRule.
+        r"""Sets the grayscale_time of this FrequencyControlRule.
 
         是否灰度生效
 

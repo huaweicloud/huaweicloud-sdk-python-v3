@@ -27,7 +27,7 @@ class CreateSecurityPermissionSetRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateSecurityPermissionSetRequest
+        r"""CreateSecurityPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecurityPermissionSetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityPermissionSetRequest.
+        r"""Gets the workspace of this CreateSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateSecurityPermissionSetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityPermissionSetRequest.
+        r"""Sets the workspace of this CreateSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateSecurityPermissionSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityPermissionSetRequest.
+        r"""Gets the body of this CreateSecurityPermissionSetRequest.
 
         :return: The body of this CreateSecurityPermissionSetRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetCreateDTO`
@@ -80,7 +80,7 @@ class CreateSecurityPermissionSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityPermissionSetRequest.
+        r"""Sets the body of this CreateSecurityPermissionSetRequest.
 
         :param body: The body of this CreateSecurityPermissionSetRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetCreateDTO`

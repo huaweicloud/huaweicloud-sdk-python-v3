@@ -43,7 +43,7 @@ class ExportTopSqlTemplatesDetailsRequest:
     }
 
     def __init__(self, instance_id=None, start_at=None, end_at=None, datastore_type=None, node_id=None, sort=None, asc=None, offset=None, limit=None, x_language=None):
-        """ExportTopSqlTemplatesDetailsRequest
+        r"""ExportTopSqlTemplatesDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the instance_id of this ExportTopSqlTemplatesDetailsRequest.
 
         实例ID。
 
@@ -113,7 +113,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the instance_id of this ExportTopSqlTemplatesDetailsRequest.
 
         实例ID。
 
@@ -124,7 +124,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the start_at of this ExportTopSqlTemplatesDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -135,7 +135,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the start_at of this ExportTopSqlTemplatesDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -146,7 +146,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the end_at of this ExportTopSqlTemplatesDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -157,7 +157,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the end_at of this ExportTopSqlTemplatesDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -168,7 +168,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the datastore_type of this ExportTopSqlTemplatesDetailsRequest.
 
         数据库类型。支持MySQL和GaussDB(for MySQL)。
 
@@ -179,7 +179,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the datastore_type of this ExportTopSqlTemplatesDetailsRequest.
 
         数据库类型。支持MySQL和GaussDB(for MySQL)。
 
@@ -190,7 +190,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the node_id of this ExportTopSqlTemplatesDetailsRequest.
 
         节点ID。
 
@@ -201,7 +201,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the node_id of this ExportTopSqlTemplatesDetailsRequest.
 
         节点ID。
 
@@ -212,7 +212,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the sort of this ExportTopSqlTemplatesDetailsRequest.
 
         排序字段（executeNum:执行次数, totalCost:总耗时, avgCost:平均耗时, totalScan: 总扫描行数, avgScan:平均扫描行数）。
 
@@ -223,7 +223,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the sort of this ExportTopSqlTemplatesDetailsRequest.
 
         排序字段（executeNum:执行次数, totalCost:总耗时, avgCost:平均耗时, totalScan: 总扫描行数, avgScan:平均扫描行数）。
 
@@ -234,7 +234,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def asc(self):
-        """Gets the asc of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the asc of this ExportTopSqlTemplatesDetailsRequest.
 
         排序顺序（true:正序, false:逆序）。
 
@@ -245,7 +245,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @asc.setter
     def asc(self, asc):
-        """Sets the asc of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the asc of this ExportTopSqlTemplatesDetailsRequest.
 
         排序顺序（true:正序, false:逆序）。
 
@@ -256,7 +256,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the offset of this ExportTopSqlTemplatesDetailsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -267,7 +267,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the offset of this ExportTopSqlTemplatesDetailsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -278,7 +278,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the limit of this ExportTopSqlTemplatesDetailsRequest.
 
         每页记录数，默认为20，最大取值100。
 
@@ -289,7 +289,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the limit of this ExportTopSqlTemplatesDetailsRequest.
 
         每页记录数，默认为20，最大取值100。
 
@@ -300,7 +300,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Gets the x_language of this ExportTopSqlTemplatesDetailsRequest.
 
         请求语言类型。
 
@@ -311,7 +311,7 @@ class ExportTopSqlTemplatesDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportTopSqlTemplatesDetailsRequest.
+        r"""Sets the x_language of this ExportTopSqlTemplatesDetailsRequest.
 
         请求语言类型。
 

@@ -30,7 +30,7 @@ class ShowProjectResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, project=None):
-        """ShowProjectResponse
+        r"""ShowProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowProjectResponse.
+        r"""Gets the code of this ShowProjectResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowProjectResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowProjectResponse.
+        r"""Sets the code of this ShowProjectResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowProjectResponse.
+        r"""Gets the message of this ShowProjectResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ShowProjectResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowProjectResponse.
+        r"""Sets the message of this ShowProjectResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ShowProjectResponse(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this ShowProjectResponse.
+        r"""Gets the project of this ShowProjectResponse.
 
         :return: The project of this ShowProjectResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.Project`
@@ -111,7 +111,7 @@ class ShowProjectResponse(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ShowProjectResponse.
+        r"""Sets the project of this ShowProjectResponse.
 
         :param project: The project of this ShowProjectResponse.
         :type project: :class:`huaweicloudsdkcpts.v1.Project`

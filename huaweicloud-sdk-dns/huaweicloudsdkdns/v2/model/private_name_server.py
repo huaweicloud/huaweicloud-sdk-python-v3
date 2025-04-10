@@ -27,7 +27,7 @@ class PrivateNameServer:
     }
 
     def __init__(self, priority=None, address=None):
-        """PrivateNameServer
+        r"""PrivateNameServer
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PrivateNameServer:
 
     @property
     def priority(self):
-        """Gets the priority of this PrivateNameServer.
+        r"""Gets the priority of this PrivateNameServer.
 
         优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
 
@@ -61,7 +61,7 @@ class PrivateNameServer:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PrivateNameServer.
+        r"""Sets the priority of this PrivateNameServer.
 
         优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
 
@@ -72,7 +72,7 @@ class PrivateNameServer:
 
     @property
     def address(self):
-        """Gets the address of this PrivateNameServer.
+        r"""Gets the address of this PrivateNameServer.
 
         DNS服务器地址。
 
@@ -83,7 +83,7 @@ class PrivateNameServer:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PrivateNameServer.
+        r"""Sets the address of this PrivateNameServer.
 
         DNS服务器地址。
 

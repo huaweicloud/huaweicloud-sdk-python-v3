@@ -28,7 +28,7 @@ class ListSeriesResponse(SdkResponse):
     }
 
     def __init__(self, series=None, meta_data=None):
-        """ListSeriesResponse
+        r"""ListSeriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSeriesResponse(SdkResponse):
 
     @property
     def series(self):
-        """Gets the series of this ListSeriesResponse.
+        r"""Gets the series of this ListSeriesResponse.
 
         时间序列对象列表。
 
@@ -62,7 +62,7 @@ class ListSeriesResponse(SdkResponse):
 
     @series.setter
     def series(self, series):
-        """Sets the series of this ListSeriesResponse.
+        r"""Sets the series of this ListSeriesResponse.
 
         时间序列对象列表。
 
@@ -73,7 +73,7 @@ class ListSeriesResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListSeriesResponse.
+        r"""Gets the meta_data of this ListSeriesResponse.
 
         :return: The meta_data of this ListSeriesResponse.
         :rtype: :class:`huaweicloudsdkaom.v2.MetaDataSeries`
@@ -82,7 +82,7 @@ class ListSeriesResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListSeriesResponse.
+        r"""Sets the meta_data of this ListSeriesResponse.
 
         :param meta_data: The meta_data of this ListSeriesResponse.
         :type meta_data: :class:`huaweicloudsdkaom.v2.MetaDataSeries`

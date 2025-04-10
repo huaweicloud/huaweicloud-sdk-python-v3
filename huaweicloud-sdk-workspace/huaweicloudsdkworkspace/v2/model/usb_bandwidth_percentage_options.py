@@ -25,7 +25,7 @@ class UsbBandwidthPercentageOptions:
     }
 
     def __init__(self, usb_bandwidth_percentage_value=None):
-        """UsbBandwidthPercentageOptions
+        r"""UsbBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UsbBandwidthPercentageOptions:
 
     @property
     def usb_bandwidth_percentage_value(self):
-        """Gets the usb_bandwidth_percentage_value of this UsbBandwidthPercentageOptions.
+        r"""Gets the usb_bandwidth_percentage_value of this UsbBandwidthPercentageOptions.
 
         USB带宽百分比控制量（%）。取值范围为[0-100]。默认：100。
 
@@ -54,7 +54,7 @@ class UsbBandwidthPercentageOptions:
 
     @usb_bandwidth_percentage_value.setter
     def usb_bandwidth_percentage_value(self, usb_bandwidth_percentage_value):
-        """Sets the usb_bandwidth_percentage_value of this UsbBandwidthPercentageOptions.
+        r"""Sets the usb_bandwidth_percentage_value of this UsbBandwidthPercentageOptions.
 
         USB带宽百分比控制量（%）。取值范围为[0-100]。默认：100。
 

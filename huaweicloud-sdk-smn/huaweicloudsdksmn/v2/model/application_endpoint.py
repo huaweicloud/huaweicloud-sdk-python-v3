@@ -33,7 +33,7 @@ class ApplicationEndpoint:
     }
 
     def __init__(self, create_time=None, endpoint_urn=None, user_data=None, enabled=None, token=None):
-        """ApplicationEndpoint
+        r"""ApplicationEndpoint
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ApplicationEndpoint:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApplicationEndpoint.
+        r"""Gets the create_time of this ApplicationEndpoint.
 
         创建application的时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -77,7 +77,7 @@ class ApplicationEndpoint:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApplicationEndpoint.
+        r"""Sets the create_time of this ApplicationEndpoint.
 
         创建application的时间 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -88,7 +88,7 @@ class ApplicationEndpoint:
 
     @property
     def endpoint_urn(self):
-        """Gets the endpoint_urn of this ApplicationEndpoint.
+        r"""Gets the endpoint_urn of this ApplicationEndpoint.
 
         Application endpoint的唯一资源标识。
 
@@ -99,7 +99,7 @@ class ApplicationEndpoint:
 
     @endpoint_urn.setter
     def endpoint_urn(self, endpoint_urn):
-        """Sets the endpoint_urn of this ApplicationEndpoint.
+        r"""Sets the endpoint_urn of this ApplicationEndpoint.
 
         Application endpoint的唯一资源标识。
 
@@ -110,7 +110,7 @@ class ApplicationEndpoint:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ApplicationEndpoint.
+        r"""Gets the user_data of this ApplicationEndpoint.
 
         用户自定义数据 最大长度支持UTF-8编码后2048字节。
 
@@ -121,7 +121,7 @@ class ApplicationEndpoint:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ApplicationEndpoint.
+        r"""Sets the user_data of this ApplicationEndpoint.
 
         用户自定义数据 最大长度支持UTF-8编码后2048字节。
 
@@ -132,7 +132,7 @@ class ApplicationEndpoint:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ApplicationEndpoint.
+        r"""Gets the enabled of this ApplicationEndpoint.
 
         endpoint启用开关 true或false字符串。
 
@@ -143,7 +143,7 @@ class ApplicationEndpoint:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ApplicationEndpoint.
+        r"""Sets the enabled of this ApplicationEndpoint.
 
         endpoint启用开关 true或false字符串。
 
@@ -154,7 +154,7 @@ class ApplicationEndpoint:
 
     @property
     def token(self):
-        """Gets the token of this ApplicationEndpoint.
+        r"""Gets the token of this ApplicationEndpoint.
 
         设备token 最大长度512个字节。
 
@@ -165,7 +165,7 @@ class ApplicationEndpoint:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ApplicationEndpoint.
+        r"""Sets the token of this ApplicationEndpoint.
 
         设备token 最大长度512个字节。
 

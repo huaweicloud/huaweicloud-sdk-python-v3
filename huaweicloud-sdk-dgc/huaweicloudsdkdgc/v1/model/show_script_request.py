@@ -27,7 +27,7 @@ class ShowScriptRequest:
     }
 
     def __init__(self, workspace=None, script_name=None):
-        """ShowScriptRequest
+        r"""ShowScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowScriptRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowScriptRequest.
+        r"""Gets the workspace of this ShowScriptRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class ShowScriptRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowScriptRequest.
+        r"""Sets the workspace of this ShowScriptRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class ShowScriptRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ShowScriptRequest.
+        r"""Gets the script_name of this ShowScriptRequest.
 
         :return: The script_name of this ShowScriptRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowScriptRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ShowScriptRequest.
+        r"""Sets the script_name of this ShowScriptRequest.
 
         :param script_name: The script_name of this ShowScriptRequest.
         :type script_name: str

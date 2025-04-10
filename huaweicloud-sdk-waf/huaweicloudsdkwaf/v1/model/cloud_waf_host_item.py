@@ -59,7 +59,7 @@ class CloudWafHostItem:
     }
 
     def __init__(self, id=None, hostid=None, region=None, description=None, server=None, type=None, proxy=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None, flag=None, enterprise_project_id=None):
-        """CloudWafHostItem
+        r"""CloudWafHostItem
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class CloudWafHostItem:
 
     @property
     def id(self):
-        """Gets the id of this CloudWafHostItem.
+        r"""Gets the id of this CloudWafHostItem.
 
         域名id
 
@@ -173,7 +173,7 @@ class CloudWafHostItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CloudWafHostItem.
+        r"""Sets the id of this CloudWafHostItem.
 
         域名id
 
@@ -184,7 +184,7 @@ class CloudWafHostItem:
 
     @property
     def hostid(self):
-        """Gets the hostid of this CloudWafHostItem.
+        r"""Gets the hostid of this CloudWafHostItem.
 
         域名id
 
@@ -195,7 +195,7 @@ class CloudWafHostItem:
 
     @hostid.setter
     def hostid(self, hostid):
-        """Sets the hostid of this CloudWafHostItem.
+        r"""Sets the hostid of this CloudWafHostItem.
 
         域名id
 
@@ -206,7 +206,7 @@ class CloudWafHostItem:
 
     @property
     def region(self):
-        """Gets the region of this CloudWafHostItem.
+        r"""Gets the region of this CloudWafHostItem.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -217,7 +217,7 @@ class CloudWafHostItem:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CloudWafHostItem.
+        r"""Sets the region of this CloudWafHostItem.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -228,7 +228,7 @@ class CloudWafHostItem:
 
     @property
     def description(self):
-        """Gets the description of this CloudWafHostItem.
+        r"""Gets the description of this CloudWafHostItem.
 
         域名描述信息，可选参数。
 
@@ -239,7 +239,7 @@ class CloudWafHostItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CloudWafHostItem.
+        r"""Sets the description of this CloudWafHostItem.
 
         域名描述信息，可选参数。
 
@@ -250,7 +250,7 @@ class CloudWafHostItem:
 
     @property
     def server(self):
-        """Gets the server of this CloudWafHostItem.
+        r"""Gets the server of this CloudWafHostItem.
 
         防护域名的源站服务器配置信息
 
@@ -261,7 +261,7 @@ class CloudWafHostItem:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CloudWafHostItem.
+        r"""Sets the server of this CloudWafHostItem.
 
         防护域名的源站服务器配置信息
 
@@ -272,7 +272,7 @@ class CloudWafHostItem:
 
     @property
     def type(self):
-        """Gets the type of this CloudWafHostItem.
+        r"""Gets the type of this CloudWafHostItem.
 
         WAF部署模式，默认是1，目前仅支持反代模式，冗余参数
 
@@ -283,7 +283,7 @@ class CloudWafHostItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CloudWafHostItem.
+        r"""Sets the type of this CloudWafHostItem.
 
         WAF部署模式，默认是1，目前仅支持反代模式，冗余参数
 
@@ -294,7 +294,7 @@ class CloudWafHostItem:
 
     @property
     def proxy(self):
-        """Gets the proxy of this CloudWafHostItem.
+        r"""Gets the proxy of this CloudWafHostItem.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -305,7 +305,7 @@ class CloudWafHostItem:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this CloudWafHostItem.
+        r"""Sets the proxy of this CloudWafHostItem.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -316,7 +316,7 @@ class CloudWafHostItem:
 
     @property
     def hostname(self):
-        """Gets the hostname of this CloudWafHostItem.
+        r"""Gets the hostname of this CloudWafHostItem.
 
         创建的云模式防护域名
 
@@ -327,7 +327,7 @@ class CloudWafHostItem:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CloudWafHostItem.
+        r"""Sets the hostname of this CloudWafHostItem.
 
         创建的云模式防护域名
 
@@ -338,7 +338,7 @@ class CloudWafHostItem:
 
     @property
     def access_code(self):
-        """Gets the access_code of this CloudWafHostItem.
+        r"""Gets the access_code of this CloudWafHostItem.
 
         cname前缀
 
@@ -349,7 +349,7 @@ class CloudWafHostItem:
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this CloudWafHostItem.
+        r"""Sets the access_code of this CloudWafHostItem.
 
         cname前缀
 
@@ -360,7 +360,7 @@ class CloudWafHostItem:
 
     @property
     def policyid(self):
-        """Gets the policyid of this CloudWafHostItem.
+        r"""Gets the policyid of this CloudWafHostItem.
 
         防护策略id
 
@@ -371,7 +371,7 @@ class CloudWafHostItem:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CloudWafHostItem.
+        r"""Sets the policyid of this CloudWafHostItem.
 
         防护策略id
 
@@ -382,7 +382,7 @@ class CloudWafHostItem:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CloudWafHostItem.
+        r"""Gets the timestamp of this CloudWafHostItem.
 
         创建防护域名的时间
 
@@ -393,7 +393,7 @@ class CloudWafHostItem:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CloudWafHostItem.
+        r"""Sets the timestamp of this CloudWafHostItem.
 
         创建防护域名的时间
 
@@ -404,7 +404,7 @@ class CloudWafHostItem:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this CloudWafHostItem.
+        r"""Gets the protect_status of this CloudWafHostItem.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -415,7 +415,7 @@ class CloudWafHostItem:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this CloudWafHostItem.
+        r"""Sets the protect_status of this CloudWafHostItem.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -426,7 +426,7 @@ class CloudWafHostItem:
 
     @property
     def access_status(self):
-        """Gets the access_status of this CloudWafHostItem.
+        r"""Gets the access_status of this CloudWafHostItem.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -437,7 +437,7 @@ class CloudWafHostItem:
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this CloudWafHostItem.
+        r"""Sets the access_status of this CloudWafHostItem.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -448,7 +448,7 @@ class CloudWafHostItem:
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this CloudWafHostItem.
+        r"""Gets the exclusive_ip of this CloudWafHostItem.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -459,7 +459,7 @@ class CloudWafHostItem:
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this CloudWafHostItem.
+        r"""Sets the exclusive_ip of this CloudWafHostItem.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -470,7 +470,7 @@ class CloudWafHostItem:
 
     @property
     def paid_type(self):
-        """Gets the paid_type of this CloudWafHostItem.
+        r"""Gets the paid_type of this CloudWafHostItem.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -481,7 +481,7 @@ class CloudWafHostItem:
 
     @paid_type.setter
     def paid_type(self, paid_type):
-        """Sets the paid_type of this CloudWafHostItem.
+        r"""Sets the paid_type of this CloudWafHostItem.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -492,7 +492,7 @@ class CloudWafHostItem:
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this CloudWafHostItem.
+        r"""Gets the web_tag of this CloudWafHostItem.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -503,7 +503,7 @@ class CloudWafHostItem:
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this CloudWafHostItem.
+        r"""Sets the web_tag of this CloudWafHostItem.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -514,7 +514,7 @@ class CloudWafHostItem:
 
     @property
     def flag(self):
-        """Gets the flag of this CloudWafHostItem.
+        r"""Gets the flag of this CloudWafHostItem.
 
         :return: The flag of this CloudWafHostItem.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -523,7 +523,7 @@ class CloudWafHostItem:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this CloudWafHostItem.
+        r"""Sets the flag of this CloudWafHostItem.
 
         :param flag: The flag of this CloudWafHostItem.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -532,7 +532,7 @@ class CloudWafHostItem:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CloudWafHostItem.
+        r"""Gets the enterprise_project_id of this CloudWafHostItem.
 
         企业项目id
 
@@ -543,7 +543,7 @@ class CloudWafHostItem:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CloudWafHostItem.
+        r"""Sets the enterprise_project_id of this CloudWafHostItem.
 
         企业项目id
 

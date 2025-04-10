@@ -23,7 +23,7 @@ class SMNUrn:
     }
 
     def __init__(self):
-        """SMNUrn
+        r"""SMNUrn
 
         The model defined in huaweicloud sdk
 

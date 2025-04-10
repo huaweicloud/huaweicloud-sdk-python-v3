@@ -54,7 +54,7 @@ class CreateSparkJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, update_time=None, duration=None):
-        """CreateSparkJobResponse
+        r"""CreateSparkJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSparkJobResponse.
+        r"""Gets the id of this CreateSparkJobResponse.
 
         Batch作业的id。
 
@@ -153,7 +153,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSparkJobResponse.
+        r"""Sets the id of this CreateSparkJobResponse.
 
         Batch作业的id。
 
@@ -164,7 +164,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CreateSparkJobResponse.
+        r"""Gets the state of this CreateSparkJobResponse.
 
         Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
 
@@ -175,7 +175,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateSparkJobResponse.
+        r"""Sets the state of this CreateSparkJobResponse.
 
         Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
 
@@ -186,7 +186,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateSparkJobResponse.
+        r"""Gets the app_id of this CreateSparkJobResponse.
 
         批处理作业的后台app id。
 
@@ -197,7 +197,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateSparkJobResponse.
+        r"""Sets the app_id of this CreateSparkJobResponse.
 
         批处理作业的后台app id。
 
@@ -208,7 +208,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def log(self):
-        """Gets the log of this CreateSparkJobResponse.
+        r"""Gets the log of this CreateSparkJobResponse.
 
         显示当前Batch作业的最后10条记录。
 
@@ -219,7 +219,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @log.setter
     def log(self, log):
-        """Sets the log of this CreateSparkJobResponse.
+        r"""Sets the log of this CreateSparkJobResponse.
 
         显示当前Batch作业的最后10条记录。
 
@@ -230,7 +230,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def sc_type(self):
-        """Gets the sc_type of this CreateSparkJobResponse.
+        r"""Gets the sc_type of this CreateSparkJobResponse.
 
         计算资源类型。用户自定义时返回CUSTOMIZED。
 
@@ -241,7 +241,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @sc_type.setter
     def sc_type(self, sc_type):
-        """Sets the sc_type of this CreateSparkJobResponse.
+        r"""Sets the sc_type of this CreateSparkJobResponse.
 
         计算资源类型。用户自定义时返回CUSTOMIZED。
 
@@ -252,7 +252,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateSparkJobResponse.
+        r"""Gets the cluster_name of this CreateSparkJobResponse.
 
         会话所在队列。
 
@@ -263,7 +263,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateSparkJobResponse.
+        r"""Sets the cluster_name of this CreateSparkJobResponse.
 
         会话所在队列。
 
@@ -274,7 +274,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateSparkJobResponse.
+        r"""Gets the create_time of this CreateSparkJobResponse.
 
         Batch的创建时间。是单位为“毫秒”的时间戳。
 
@@ -285,7 +285,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateSparkJobResponse.
+        r"""Sets the create_time of this CreateSparkJobResponse.
 
         Batch的创建时间。是单位为“毫秒”的时间戳。
 
@@ -296,7 +296,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateSparkJobResponse.
+        r"""Gets the name of this CreateSparkJobResponse.
 
         创建时用户指定的批处理名称，不能超过128个字符。
 
@@ -307,7 +307,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSparkJobResponse.
+        r"""Sets the name of this CreateSparkJobResponse.
 
         创建时用户指定的批处理名称，不能超过128个字符。
 
@@ -318,7 +318,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this CreateSparkJobResponse.
+        r"""Gets the owner of this CreateSparkJobResponse.
 
         批处理作业所属用户
 
@@ -329,7 +329,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CreateSparkJobResponse.
+        r"""Sets the owner of this CreateSparkJobResponse.
 
         批处理作业所属用户
 
@@ -340,7 +340,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def proxy_user(self):
-        """Gets the proxy_user of this CreateSparkJobResponse.
+        r"""Gets the proxy_user of this CreateSparkJobResponse.
 
         批处理作业所属代理用户（资源租户）。
 
@@ -351,7 +351,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @proxy_user.setter
     def proxy_user(self, proxy_user):
-        """Sets the proxy_user of this CreateSparkJobResponse.
+        r"""Sets the proxy_user of this CreateSparkJobResponse.
 
         批处理作业所属代理用户（资源租户）。
 
@@ -362,7 +362,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateSparkJobResponse.
+        r"""Gets the kind of this CreateSparkJobResponse.
 
         批处理作业类型，只支持spark类型参数。
 
@@ -373,7 +373,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateSparkJobResponse.
+        r"""Sets the kind of this CreateSparkJobResponse.
 
         批处理作业类型，只支持spark类型参数。
 
@@ -384,7 +384,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def queue(self):
-        """Gets the queue of this CreateSparkJobResponse.
+        r"""Gets the queue of this CreateSparkJobResponse.
 
         用于指定队列，填写已创建DLI的队列名
 
@@ -395,7 +395,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this CreateSparkJobResponse.
+        r"""Sets the queue of this CreateSparkJobResponse.
 
         用于指定队列，填写已创建DLI的队列名
 
@@ -406,7 +406,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def image(self):
-        """Gets the image of this CreateSparkJobResponse.
+        r"""Gets the image of this CreateSparkJobResponse.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。
 
@@ -417,7 +417,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CreateSparkJobResponse.
+        r"""Sets the image of this CreateSparkJobResponse.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。
 
@@ -428,7 +428,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateSparkJobResponse.
+        r"""Gets the update_time of this CreateSparkJobResponse.
 
         更新时间
 
@@ -439,7 +439,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateSparkJobResponse.
+        r"""Sets the update_time of this CreateSparkJobResponse.
 
         更新时间
 
@@ -450,7 +450,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this CreateSparkJobResponse.
+        r"""Gets the duration of this CreateSparkJobResponse.
 
         作业运行时长，单位毫秒。
 
@@ -461,7 +461,7 @@ class CreateSparkJobResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CreateSparkJobResponse.
+        r"""Sets the duration of this CreateSparkJobResponse.
 
         作业运行时长，单位毫秒。
 

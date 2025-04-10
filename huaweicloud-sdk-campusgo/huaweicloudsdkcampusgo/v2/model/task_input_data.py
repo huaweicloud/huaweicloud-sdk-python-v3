@@ -45,7 +45,7 @@ class TaskInputData:
     }
 
     def __init__(self, stream_name=None, bucket=None, path=None, url=None, headers=None, certificate_check=None, rtsp_path_in_response=None, device_id=None, stream_type=None, id=None, index=None):
-        """TaskInputData
+        r"""TaskInputData
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TaskInputData:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this TaskInputData.
+        r"""Gets the stream_name of this TaskInputData.
 
         VIS的视频流名称，当输入为vis类型时必选
 
@@ -124,7 +124,7 @@ class TaskInputData:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this TaskInputData.
+        r"""Sets the stream_name of this TaskInputData.
 
         VIS的视频流名称，当输入为vis类型时必选
 
@@ -135,7 +135,7 @@ class TaskInputData:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskInputData.
+        r"""Gets the bucket of this TaskInputData.
 
         OBS桶名，当输入为obs类型是必选
 
@@ -146,7 +146,7 @@ class TaskInputData:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskInputData.
+        r"""Sets the bucket of this TaskInputData.
 
         OBS桶名，当输入为obs类型是必选
 
@@ -157,7 +157,7 @@ class TaskInputData:
 
     @property
     def path(self):
-        """Gets the path of this TaskInputData.
+        r"""Gets the path of this TaskInputData.
 
         OBS的路径，当输入为obs类型时必选
 
@@ -168,7 +168,7 @@ class TaskInputData:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this TaskInputData.
+        r"""Sets the path of this TaskInputData.
 
         OBS的路径，当输入为obs类型时必选
 
@@ -179,7 +179,7 @@ class TaskInputData:
 
     @property
     def url(self):
-        """Gets the url of this TaskInputData.
+        r"""Gets the url of this TaskInputData.
 
         url输入源的地址或者获取视频流地址的restful请求地址，当输入为url或者edgerestful类型时必选
 
@@ -190,7 +190,7 @@ class TaskInputData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TaskInputData.
+        r"""Sets the url of this TaskInputData.
 
         url输入源的地址或者获取视频流地址的restful请求地址，当输入为url或者edgerestful类型时必选
 
@@ -201,7 +201,7 @@ class TaskInputData:
 
     @property
     def headers(self):
-        """Gets the headers of this TaskInputData.
+        r"""Gets the headers of this TaskInputData.
 
         获取视频流的restful请求携带的请求头，当输入为edgerestful类型时可选
 
@@ -212,7 +212,7 @@ class TaskInputData:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this TaskInputData.
+        r"""Sets the headers of this TaskInputData.
 
         获取视频流的restful请求携带的请求头，当输入为edgerestful类型时可选
 
@@ -223,7 +223,7 @@ class TaskInputData:
 
     @property
     def certificate_check(self):
-        """Gets the certificate_check of this TaskInputData.
+        r"""Gets the certificate_check of this TaskInputData.
 
         是否需要对https请求进行证书校验，当输入为edgerestful类型时必选
 
@@ -234,7 +234,7 @@ class TaskInputData:
 
     @certificate_check.setter
     def certificate_check(self, certificate_check):
-        """Sets the certificate_check of this TaskInputData.
+        r"""Sets the certificate_check of this TaskInputData.
 
         是否需要对https请求进行证书校验，当输入为edgerestful类型时必选
 
@@ -245,7 +245,7 @@ class TaskInputData:
 
     @property
     def rtsp_path_in_response(self):
-        """Gets the rtsp_path_in_response of this TaskInputData.
+        r"""Gets the rtsp_path_in_response of this TaskInputData.
 
         restful请求返回的body中，视频流地址的路径，当输入为edgerestful类型时必选
 
@@ -256,7 +256,7 @@ class TaskInputData:
 
     @rtsp_path_in_response.setter
     def rtsp_path_in_response(self, rtsp_path_in_response):
-        """Sets the rtsp_path_in_response of this TaskInputData.
+        r"""Sets the rtsp_path_in_response of this TaskInputData.
 
         restful请求返回的body中，视频流地址的路径，当输入为edgerestful类型时必选
 
@@ -267,7 +267,7 @@ class TaskInputData:
 
     @property
     def device_id(self):
-        """Gets the device_id of this TaskInputData.
+        r"""Gets the device_id of this TaskInputData.
 
         VCN设备ID，当输入为vcn类型时必选
 
@@ -278,7 +278,7 @@ class TaskInputData:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this TaskInputData.
+        r"""Sets the device_id of this TaskInputData.
 
         VCN设备ID，当输入为vcn类型时必选
 
@@ -289,7 +289,7 @@ class TaskInputData:
 
     @property
     def stream_type(self):
-        """Gets the stream_type of this TaskInputData.
+        r"""Gets the stream_type of this TaskInputData.
 
         准备进行分析的码流，其中1代表主码流，2代表子码流1,3代表子码流2，当输入为vcn类型时可选
 
@@ -300,7 +300,7 @@ class TaskInputData:
 
     @stream_type.setter
     def stream_type(self, stream_type):
-        """Sets the stream_type of this TaskInputData.
+        r"""Sets the stream_type of this TaskInputData.
 
         准备进行分析的码流，其中1代表主码流，2代表子码流1,3代表子码流2，当输入为vcn类型时可选
 
@@ -311,7 +311,7 @@ class TaskInputData:
 
     @property
     def id(self):
-        """Gets the id of this TaskInputData.
+        r"""Gets the id of this TaskInputData.
 
         IEF挂载的边缘设备的ID，当输入为edgecamera类型时必选
 
@@ -322,7 +322,7 @@ class TaskInputData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskInputData.
+        r"""Sets the id of this TaskInputData.
 
         IEF挂载的边缘设备的ID，当输入为edgecamera类型时必选
 
@@ -333,7 +333,7 @@ class TaskInputData:
 
     @property
     def index(self):
-        """Gets the index of this TaskInputData.
+        r"""Gets the index of this TaskInputData.
 
         可选，当前输入的序号，从0开始递增，不可重复
 
@@ -344,7 +344,7 @@ class TaskInputData:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TaskInputData.
+        r"""Sets the index of this TaskInputData.
 
         可选，当前输入的序号，从0开始递增，不可重复
 

@@ -37,7 +37,7 @@ class PackageResourceMoudle:
     }
 
     def __init__(self, module_name=None, module_type=None, status=None, description=None, resources=None, create_time=None, update_time=None):
-        """PackageResourceMoudle
+        r"""PackageResourceMoudle
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PackageResourceMoudle:
 
     @property
     def module_name(self):
-        """Gets the module_name of this PackageResourceMoudle.
+        r"""Gets the module_name of this PackageResourceMoudle.
 
         模块名。
 
@@ -96,7 +96,7 @@ class PackageResourceMoudle:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this PackageResourceMoudle.
+        r"""Sets the module_name of this PackageResourceMoudle.
 
         模块名。
 
@@ -107,7 +107,7 @@ class PackageResourceMoudle:
 
     @property
     def module_type(self):
-        """Gets the module_type of this PackageResourceMoudle.
+        r"""Gets the module_type of this PackageResourceMoudle.
 
         模块类型。
 
@@ -118,7 +118,7 @@ class PackageResourceMoudle:
 
     @module_type.setter
     def module_type(self, module_type):
-        """Sets the module_type of this PackageResourceMoudle.
+        r"""Sets the module_type of this PackageResourceMoudle.
 
         模块类型。
 
@@ -129,7 +129,7 @@ class PackageResourceMoudle:
 
     @property
     def status(self):
-        """Gets the status of this PackageResourceMoudle.
+        r"""Gets the status of this PackageResourceMoudle.
 
         \"UPLOADING\"表示正在上传 \"READY\"表示模块包已上传 \"FAILED\"表示模块包上传失败
 
@@ -140,7 +140,7 @@ class PackageResourceMoudle:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PackageResourceMoudle.
+        r"""Sets the status of this PackageResourceMoudle.
 
         \"UPLOADING\"表示正在上传 \"READY\"表示模块包已上传 \"FAILED\"表示模块包上传失败
 
@@ -151,7 +151,7 @@ class PackageResourceMoudle:
 
     @property
     def description(self):
-        """Gets the description of this PackageResourceMoudle.
+        r"""Gets the description of this PackageResourceMoudle.
 
         模块描述。
 
@@ -162,7 +162,7 @@ class PackageResourceMoudle:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PackageResourceMoudle.
+        r"""Sets the description of this PackageResourceMoudle.
 
         模块描述。
 
@@ -173,7 +173,7 @@ class PackageResourceMoudle:
 
     @property
     def resources(self):
-        """Gets the resources of this PackageResourceMoudle.
+        r"""Gets the resources of this PackageResourceMoudle.
 
         该模块包含的资源包名列表。
 
@@ -184,7 +184,7 @@ class PackageResourceMoudle:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this PackageResourceMoudle.
+        r"""Sets the resources of this PackageResourceMoudle.
 
         该模块包含的资源包名列表。
 
@@ -195,7 +195,7 @@ class PackageResourceMoudle:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PackageResourceMoudle.
+        r"""Gets the create_time of this PackageResourceMoudle.
 
         模块上传的unix时间。
 
@@ -206,7 +206,7 @@ class PackageResourceMoudle:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PackageResourceMoudle.
+        r"""Sets the create_time of this PackageResourceMoudle.
 
         模块上传的unix时间。
 
@@ -217,7 +217,7 @@ class PackageResourceMoudle:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PackageResourceMoudle.
+        r"""Gets the update_time of this PackageResourceMoudle.
 
         模块更新的unix时间。
 
@@ -228,7 +228,7 @@ class PackageResourceMoudle:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PackageResourceMoudle.
+        r"""Sets the update_time of this PackageResourceMoudle.
 
         模块更新的unix时间。
 

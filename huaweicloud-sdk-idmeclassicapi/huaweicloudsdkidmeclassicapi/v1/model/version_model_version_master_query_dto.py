@@ -31,7 +31,7 @@ class VersionModelVersionMasterQueryDTO:
     }
 
     def __init__(self, decrypt=None, iteration=None, master_id=None, version=None):
-        """VersionModelVersionMasterQueryDTO
+        r"""VersionModelVersionMasterQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @property
     def decrypt(self):
-        """Gets the decrypt of this VersionModelVersionMasterQueryDTO.
+        r"""Gets the decrypt of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  是否加密。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -73,7 +73,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @decrypt.setter
     def decrypt(self, decrypt):
-        """Sets the decrypt of this VersionModelVersionMasterQueryDTO.
+        r"""Sets the decrypt of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  是否加密。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -84,7 +84,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @property
     def iteration(self):
-        """Gets the iteration of this VersionModelVersionMasterQueryDTO.
+        r"""Gets the iteration of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -95,7 +95,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this VersionModelVersionMasterQueryDTO.
+        r"""Sets the iteration of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  迭代版本。如果此参数为空，则返回M-V模型实例的最新版本信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -106,7 +106,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @property
     def master_id(self):
-        """Gets the master_id of this VersionModelVersionMasterQueryDTO.
+        r"""Gets the master_id of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -117,7 +117,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this VersionModelVersionMasterQueryDTO.
+        r"""Sets the master_id of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  主对象ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -128,7 +128,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @property
     def version(self):
-        """Gets the version of this VersionModelVersionMasterQueryDTO.
+        r"""Gets the version of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -139,7 +139,7 @@ class VersionModelVersionMasterQueryDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionModelVersionMasterQueryDTO.
+        r"""Sets the version of this VersionModelVersionMasterQueryDTO.
 
         **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

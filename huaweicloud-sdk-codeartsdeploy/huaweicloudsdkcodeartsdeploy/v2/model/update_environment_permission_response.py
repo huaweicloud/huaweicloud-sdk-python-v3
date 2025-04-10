@@ -28,7 +28,7 @@ class UpdateEnvironmentPermissionResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """UpdateEnvironmentPermissionResponse
+        r"""UpdateEnvironmentPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateEnvironmentPermissionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateEnvironmentPermissionResponse.
+        r"""Gets the status of this UpdateEnvironmentPermissionResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class UpdateEnvironmentPermissionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateEnvironmentPermissionResponse.
+        r"""Sets the status of this UpdateEnvironmentPermissionResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class UpdateEnvironmentPermissionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateEnvironmentPermissionResponse.
+        r"""Gets the result of this UpdateEnvironmentPermissionResponse.
 
         :return: The result of this UpdateEnvironmentPermissionResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DevUcEnvironmentPermission`
@@ -82,7 +82,7 @@ class UpdateEnvironmentPermissionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateEnvironmentPermissionResponse.
+        r"""Sets the result of this UpdateEnvironmentPermissionResponse.
 
         :param result: The result of this UpdateEnvironmentPermissionResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.DevUcEnvironmentPermission`

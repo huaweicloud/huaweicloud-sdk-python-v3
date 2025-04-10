@@ -29,7 +29,7 @@ class UpdateSimSmMapsFilesRequest:
     }
 
     def __init__(self, parent_lookup_id=None, sha256=None, body=None):
-        """UpdateSimSmMapsFilesRequest
+        r"""UpdateSimSmMapsFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSimSmMapsFilesRequest:
 
     @property
     def parent_lookup_id(self):
-        """Gets the parent_lookup_id of this UpdateSimSmMapsFilesRequest.
+        r"""Gets the parent_lookup_id of this UpdateSimSmMapsFilesRequest.
 
         地图ID
 
@@ -66,7 +66,7 @@ class UpdateSimSmMapsFilesRequest:
 
     @parent_lookup_id.setter
     def parent_lookup_id(self, parent_lookup_id):
-        """Sets the parent_lookup_id of this UpdateSimSmMapsFilesRequest.
+        r"""Sets the parent_lookup_id of this UpdateSimSmMapsFilesRequest.
 
         地图ID
 
@@ -77,7 +77,7 @@ class UpdateSimSmMapsFilesRequest:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this UpdateSimSmMapsFilesRequest.
+        r"""Gets the sha256 of this UpdateSimSmMapsFilesRequest.
 
         文件sha256值
 
@@ -88,7 +88,7 @@ class UpdateSimSmMapsFilesRequest:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this UpdateSimSmMapsFilesRequest.
+        r"""Sets the sha256 of this UpdateSimSmMapsFilesRequest.
 
         文件sha256值
 
@@ -99,7 +99,7 @@ class UpdateSimSmMapsFilesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSimSmMapsFilesRequest.
+        r"""Gets the body of this UpdateSimSmMapsFilesRequest.
 
         :return: The body of this UpdateSimSmMapsFilesRequest.
         :rtype: :class:`huaweicloudsdkoctopus.v2.PatchedFileDetailSrlz`
@@ -108,7 +108,7 @@ class UpdateSimSmMapsFilesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSimSmMapsFilesRequest.
+        r"""Sets the body of this UpdateSimSmMapsFilesRequest.
 
         :param body: The body of this UpdateSimSmMapsFilesRequest.
         :type body: :class:`huaweicloudsdkoctopus.v2.PatchedFileDetailSrlz`

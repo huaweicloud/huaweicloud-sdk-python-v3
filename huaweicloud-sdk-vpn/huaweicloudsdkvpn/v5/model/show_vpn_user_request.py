@@ -27,7 +27,7 @@ class ShowVpnUserRequest:
     }
 
     def __init__(self, vpn_server_id=None, user_id=None):
-        """ShowVpnUserRequest
+        r"""ShowVpnUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowVpnUserRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ShowVpnUserRequest.
+        r"""Gets the vpn_server_id of this ShowVpnUserRequest.
 
         VPN服务端 ID
 
@@ -59,7 +59,7 @@ class ShowVpnUserRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ShowVpnUserRequest.
+        r"""Sets the vpn_server_id of this ShowVpnUserRequest.
 
         VPN服务端 ID
 
@@ -70,7 +70,7 @@ class ShowVpnUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowVpnUserRequest.
+        r"""Gets the user_id of this ShowVpnUserRequest.
 
         用户ID
 
@@ -81,7 +81,7 @@ class ShowVpnUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowVpnUserRequest.
+        r"""Sets the user_id of this ShowVpnUserRequest.
 
         用户ID
 

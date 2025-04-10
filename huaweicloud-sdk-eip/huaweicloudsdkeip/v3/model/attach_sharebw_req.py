@@ -25,7 +25,7 @@ class AttachSharebwReq:
     }
 
     def __init__(self, publicip=None):
-        """AttachSharebwReq
+        r"""AttachSharebwReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AttachSharebwReq:
 
     @property
     def publicip(self):
-        """Gets the publicip of this AttachSharebwReq.
+        r"""Gets the publicip of this AttachSharebwReq.
 
         :return: The publicip of this AttachSharebwReq.
         :rtype: :class:`huaweicloudsdkeip.v3.AttachSharebwDict`
@@ -52,7 +52,7 @@ class AttachSharebwReq:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this AttachSharebwReq.
+        r"""Sets the publicip of this AttachSharebwReq.
 
         :param publicip: The publicip of this AttachSharebwReq.
         :type publicip: :class:`huaweicloudsdkeip.v3.AttachSharebwDict`

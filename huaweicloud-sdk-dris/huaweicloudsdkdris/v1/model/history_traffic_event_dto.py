@@ -67,7 +67,7 @@ class HistoryTrafficEventDTO:
     }
 
     def __init__(self, event_id=None, event_source_type=None, event_source_id=None, esn=None, area_code=None, event_class=None, event_type=None, cross_id=None, event_description=None, event_level=None, event_params=None, event_position=None, event_position_name=None, reference_paths=None, note=None, event_status=None, event_confidence=None, event_ex_info=None, rsu_id=None, start_time=None, end_time=None, created_time=None):
-        """HistoryTrafficEventDTO
+        r"""HistoryTrafficEventDTO
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_id(self):
-        """Gets the event_id of this HistoryTrafficEventDTO.
+        r"""Gets the event_id of this HistoryTrafficEventDTO.
 
         **参数说明**：事件ID，由平台生成。
 
@@ -201,7 +201,7 @@ class HistoryTrafficEventDTO:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this HistoryTrafficEventDTO.
+        r"""Sets the event_id of this HistoryTrafficEventDTO.
 
         **参数说明**：事件ID，由平台生成。
 
@@ -212,7 +212,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_source_type(self):
-        """Gets the event_source_type of this HistoryTrafficEventDTO.
+        r"""Gets the event_source_type of this HistoryTrafficEventDTO.
 
          **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据 
 
@@ -223,7 +223,7 @@ class HistoryTrafficEventDTO:
 
     @event_source_type.setter
     def event_source_type(self, event_source_type):
-        """Sets the event_source_type of this HistoryTrafficEventDTO.
+        r"""Sets the event_source_type of this HistoryTrafficEventDTO.
 
          **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据 
 
@@ -234,7 +234,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_source_id(self):
-        """Gets the event_source_id of this HistoryTrafficEventDTO.
+        r"""Gets the event_source_id of this HistoryTrafficEventDTO.
 
         **参数说明**：事件来源ID。
 
@@ -245,7 +245,7 @@ class HistoryTrafficEventDTO:
 
     @event_source_id.setter
     def event_source_id(self, event_source_id):
-        """Sets the event_source_id of this HistoryTrafficEventDTO.
+        r"""Sets the event_source_id of this HistoryTrafficEventDTO.
 
         **参数说明**：事件来源ID。
 
@@ -256,7 +256,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def esn(self):
-        """Gets the esn of this HistoryTrafficEventDTO.
+        r"""Gets the esn of this HistoryTrafficEventDTO.
 
         **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -267,7 +267,7 @@ class HistoryTrafficEventDTO:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this HistoryTrafficEventDTO.
+        r"""Sets the esn of this HistoryTrafficEventDTO.
 
         **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -278,7 +278,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def area_code(self):
-        """Gets the area_code of this HistoryTrafficEventDTO.
+        r"""Gets the area_code of this HistoryTrafficEventDTO.
 
         **参数说明**：区域码。
 
@@ -289,7 +289,7 @@ class HistoryTrafficEventDTO:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this HistoryTrafficEventDTO.
+        r"""Sets the area_code of this HistoryTrafficEventDTO.
 
         **参数说明**：区域码。
 
@@ -300,7 +300,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_class(self):
-        """Gets the event_class of this HistoryTrafficEventDTO.
+        r"""Gets the event_class of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的分类。  **取值范围**：  - AbnormalTraffic：异常路况  - AbnormalVehicle：异常车况  - AdverseWeather：恶劣天气  - TrafficSign：标志标牌 
 
@@ -311,7 +311,7 @@ class HistoryTrafficEventDTO:
 
     @event_class.setter
     def event_class(self, event_class):
-        """Sets the event_class of this HistoryTrafficEventDTO.
+        r"""Sets the event_class of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的分类。  **取值范围**：  - AbnormalTraffic：异常路况  - AbnormalVehicle：异常车况  - AdverseWeather：恶劣天气  - TrafficSign：标志标牌 
 
@@ -322,7 +322,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_type(self):
-        """Gets the event_type of this HistoryTrafficEventDTO.
+        r"""Gets the event_type of this HistoryTrafficEventDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。
 
@@ -333,7 +333,7 @@ class HistoryTrafficEventDTO:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this HistoryTrafficEventDTO.
+        r"""Sets the event_type of this HistoryTrafficEventDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。
 
@@ -344,7 +344,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def cross_id(self):
-        """Gets the cross_id of this HistoryTrafficEventDTO.
+        r"""Gets the cross_id of this HistoryTrafficEventDTO.
 
         **参数说明**：路口id，对应到一组雷视拟合设备，检测一个特定的路口或者路段。
 
@@ -355,7 +355,7 @@ class HistoryTrafficEventDTO:
 
     @cross_id.setter
     def cross_id(self, cross_id):
-        """Sets the cross_id of this HistoryTrafficEventDTO.
+        r"""Sets the cross_id of this HistoryTrafficEventDTO.
 
         **参数说明**：路口id，对应到一组雷视拟合设备，检测一个特定的路口或者路段。
 
@@ -366,7 +366,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_description(self):
-        """Gets the event_description of this HistoryTrafficEventDTO.
+        r"""Gets the event_description of this HistoryTrafficEventDTO.
 
         **参数说明**：交通事件描述。
 
@@ -377,7 +377,7 @@ class HistoryTrafficEventDTO:
 
     @event_description.setter
     def event_description(self, event_description):
-        """Sets the event_description of this HistoryTrafficEventDTO.
+        r"""Sets the event_description of this HistoryTrafficEventDTO.
 
         **参数说明**：交通事件描述。
 
@@ -388,7 +388,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_level(self):
-        """Gets the event_level of this HistoryTrafficEventDTO.
+        r"""Gets the event_level of this HistoryTrafficEventDTO.
 
         **参数说明**：事件级别(1-5) 由低到高的事件严重程度。
 
@@ -399,7 +399,7 @@ class HistoryTrafficEventDTO:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this HistoryTrafficEventDTO.
+        r"""Sets the event_level of this HistoryTrafficEventDTO.
 
         **参数说明**：事件级别(1-5) 由低到高的事件严重程度。
 
@@ -410,7 +410,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_params(self):
-        """Gets the event_params of this HistoryTrafficEventDTO.
+        r"""Gets the event_params of this HistoryTrafficEventDTO.
 
         **参数说明**：事件参数，用户自定义。
 
@@ -421,7 +421,7 @@ class HistoryTrafficEventDTO:
 
     @event_params.setter
     def event_params(self, event_params):
-        """Sets the event_params of this HistoryTrafficEventDTO.
+        r"""Sets the event_params of this HistoryTrafficEventDTO.
 
         **参数说明**：事件参数，用户自定义。
 
@@ -432,7 +432,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_position(self):
-        """Gets the event_position of this HistoryTrafficEventDTO.
+        r"""Gets the event_position of this HistoryTrafficEventDTO.
 
         :return: The event_position of this HistoryTrafficEventDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.Position3D`
@@ -441,7 +441,7 @@ class HistoryTrafficEventDTO:
 
     @event_position.setter
     def event_position(self, event_position):
-        """Sets the event_position of this HistoryTrafficEventDTO.
+        r"""Sets the event_position of this HistoryTrafficEventDTO.
 
         :param event_position: The event_position of this HistoryTrafficEventDTO.
         :type event_position: :class:`huaweicloudsdkdris.v1.Position3D`
@@ -450,7 +450,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_position_name(self):
-        """Gets the event_position_name of this HistoryTrafficEventDTO.
+        r"""Gets the event_position_name of this HistoryTrafficEventDTO.
 
         **参数说明**：事件位置名称。
 
@@ -461,7 +461,7 @@ class HistoryTrafficEventDTO:
 
     @event_position_name.setter
     def event_position_name(self, event_position_name):
-        """Sets the event_position_name of this HistoryTrafficEventDTO.
+        r"""Sets the event_position_name of this HistoryTrafficEventDTO.
 
         **参数说明**：事件位置名称。
 
@@ -472,7 +472,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def reference_paths(self):
-        """Gets the reference_paths of this HistoryTrafficEventDTO.
+        r"""Gets the reference_paths of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的关联路径。
 
@@ -483,7 +483,7 @@ class HistoryTrafficEventDTO:
 
     @reference_paths.setter
     def reference_paths(self, reference_paths):
-        """Sets the reference_paths of this HistoryTrafficEventDTO.
+        r"""Sets the reference_paths of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的关联路径。
 
@@ -494,7 +494,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def note(self):
-        """Gets the note of this HistoryTrafficEventDTO.
+        r"""Gets the note of this HistoryTrafficEventDTO.
 
         **参数说明**：用户备注信息。
 
@@ -505,7 +505,7 @@ class HistoryTrafficEventDTO:
 
     @note.setter
     def note(self, note):
-        """Sets the note of this HistoryTrafficEventDTO.
+        r"""Sets the note of this HistoryTrafficEventDTO.
 
         **参数说明**：用户备注信息。
 
@@ -516,7 +516,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_status(self):
-        """Gets the event_status of this HistoryTrafficEventDTO.
+        r"""Gets the event_status of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的状态。  **取值范围**：  - Invalid：过期事件，事件发生的时间段在当前时间之前。  - Active：活动事件，事件正在发生，当前时间处于事件发生时间段内。  - Future：未来事件，在当前时间之后才会发生的事件。 
 
@@ -527,7 +527,7 @@ class HistoryTrafficEventDTO:
 
     @event_status.setter
     def event_status(self, event_status):
-        """Sets the event_status of this HistoryTrafficEventDTO.
+        r"""Sets the event_status of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的状态。  **取值范围**：  - Invalid：过期事件，事件发生的时间段在当前时间之前。  - Active：活动事件，事件正在发生，当前时间处于事件发生时间段内。  - Future：未来事件，在当前时间之后才会发生的事件。 
 
@@ -538,7 +538,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_confidence(self):
-        """Gets the event_confidence of this HistoryTrafficEventDTO.
+        r"""Gets the event_confidence of this HistoryTrafficEventDTO.
 
         **参数说明**：事件可信度。
 
@@ -549,7 +549,7 @@ class HistoryTrafficEventDTO:
 
     @event_confidence.setter
     def event_confidence(self, event_confidence):
-        """Sets the event_confidence of this HistoryTrafficEventDTO.
+        r"""Sets the event_confidence of this HistoryTrafficEventDTO.
 
         **参数说明**：事件可信度。
 
@@ -560,7 +560,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def event_ex_info(self):
-        """Gets the event_ex_info of this HistoryTrafficEventDTO.
+        r"""Gets the event_ex_info of this HistoryTrafficEventDTO.
 
         :return: The event_ex_info of this HistoryTrafficEventDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.EventExInfo`
@@ -569,7 +569,7 @@ class HistoryTrafficEventDTO:
 
     @event_ex_info.setter
     def event_ex_info(self, event_ex_info):
-        """Sets the event_ex_info of this HistoryTrafficEventDTO.
+        r"""Sets the event_ex_info of this HistoryTrafficEventDTO.
 
         :param event_ex_info: The event_ex_info of this HistoryTrafficEventDTO.
         :type event_ex_info: :class:`huaweicloudsdkdris.v1.EventExInfo`
@@ -578,7 +578,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def rsu_id(self):
-        """Gets the rsu_id of this HistoryTrafficEventDTO.
+        r"""Gets the rsu_id of this HistoryTrafficEventDTO.
 
         **参数说明**：事件关联的rsuID。
 
@@ -589,7 +589,7 @@ class HistoryTrafficEventDTO:
 
     @rsu_id.setter
     def rsu_id(self, rsu_id):
-        """Sets the rsu_id of this HistoryTrafficEventDTO.
+        r"""Sets the rsu_id of this HistoryTrafficEventDTO.
 
         **参数说明**：事件关联的rsuID。
 
@@ -600,7 +600,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this HistoryTrafficEventDTO.
+        r"""Gets the start_time of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的开始时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -611,7 +611,7 @@ class HistoryTrafficEventDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this HistoryTrafficEventDTO.
+        r"""Sets the start_time of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的开始时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -622,7 +622,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this HistoryTrafficEventDTO.
+        r"""Gets the end_time of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的结束时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -633,7 +633,7 @@ class HistoryTrafficEventDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this HistoryTrafficEventDTO.
+        r"""Sets the end_time of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的结束时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -644,7 +644,7 @@ class HistoryTrafficEventDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this HistoryTrafficEventDTO.
+        r"""Gets the created_time of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -655,7 +655,7 @@ class HistoryTrafficEventDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this HistoryTrafficEventDTO.
+        r"""Sets the created_time of this HistoryTrafficEventDTO.
 
         **参数说明**：事件的创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 

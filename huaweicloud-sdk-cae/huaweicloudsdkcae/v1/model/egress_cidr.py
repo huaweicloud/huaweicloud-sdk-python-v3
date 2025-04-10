@@ -29,7 +29,7 @@ class EgressCidr:
     }
 
     def __init__(self, cidr=None, route_table_id=None, id=None):
-        """EgressCidr
+        r"""EgressCidr
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EgressCidr:
 
     @property
     def cidr(self):
-        """Gets the cidr of this EgressCidr.
+        r"""Gets the cidr of this EgressCidr.
 
         目的网络Cidr。
 
@@ -66,7 +66,7 @@ class EgressCidr:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this EgressCidr.
+        r"""Sets the cidr of this EgressCidr.
 
         目的网络Cidr。
 
@@ -77,7 +77,7 @@ class EgressCidr:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this EgressCidr.
+        r"""Gets the route_table_id of this EgressCidr.
 
         目的网络所属CAE环境VPC的路由表ID。
 
@@ -88,7 +88,7 @@ class EgressCidr:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this EgressCidr.
+        r"""Sets the route_table_id of this EgressCidr.
 
         目的网络所属CAE环境VPC的路由表ID。
 
@@ -99,7 +99,7 @@ class EgressCidr:
 
     @property
     def id(self):
-        """Gets the id of this EgressCidr.
+        r"""Gets the id of this EgressCidr.
 
         CAE环境访问VPC配置ID。
 
@@ -110,7 +110,7 @@ class EgressCidr:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EgressCidr.
+        r"""Sets the id of this EgressCidr.
 
         CAE环境访问VPC配置ID。
 

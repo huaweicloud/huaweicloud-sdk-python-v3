@@ -29,7 +29,7 @@ class UploadCsrRequestBody:
     }
 
     def __init__(self, name=None, csr=None, private_key=None):
-        """UploadCsrRequestBody
+        r"""UploadCsrRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UploadCsrRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UploadCsrRequestBody.
+        r"""Gets the name of this UploadCsrRequestBody.
 
         自定义CSR名称。
 
@@ -66,7 +66,7 @@ class UploadCsrRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadCsrRequestBody.
+        r"""Sets the name of this UploadCsrRequestBody.
 
         自定义CSR名称。
 
@@ -77,7 +77,7 @@ class UploadCsrRequestBody:
 
     @property
     def csr(self):
-        """Gets the csr of this UploadCsrRequestBody.
+        r"""Gets the csr of this UploadCsrRequestBody.
 
         证书CSR文件。
 
@@ -88,7 +88,7 @@ class UploadCsrRequestBody:
 
     @csr.setter
     def csr(self, csr):
-        """Sets the csr of this UploadCsrRequestBody.
+        r"""Sets the csr of this UploadCsrRequestBody.
 
         证书CSR文件。
 
@@ -99,7 +99,7 @@ class UploadCsrRequestBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this UploadCsrRequestBody.
+        r"""Gets the private_key of this UploadCsrRequestBody.
 
         证书私钥文件。
 
@@ -110,7 +110,7 @@ class UploadCsrRequestBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this UploadCsrRequestBody.
+        r"""Sets the private_key of this UploadCsrRequestBody.
 
         证书私钥文件。
 

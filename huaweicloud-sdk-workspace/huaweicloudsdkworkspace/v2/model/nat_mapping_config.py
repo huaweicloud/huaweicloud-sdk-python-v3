@@ -41,7 +41,7 @@ class NatMappingConfig:
     }
 
     def __init__(self, nat_map_type=None, nat_map_value=None, nat_ip=None, nat_port=None, vag_ip=None, vag_port=None, access_filter_type=None, enterprise_project_id=None, tags=None):
-        """NatMappingConfig
+        r"""NatMappingConfig
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class NatMappingConfig:
 
     @property
     def nat_map_type(self):
-        """Gets the nat_map_type of this NatMappingConfig.
+        r"""Gets the nat_map_type of this NatMappingConfig.
 
         NAT映射类型。 - PORT:端口映射. - HOST:地址映射.
 
@@ -110,7 +110,7 @@ class NatMappingConfig:
 
     @nat_map_type.setter
     def nat_map_type(self, nat_map_type):
-        """Sets the nat_map_type of this NatMappingConfig.
+        r"""Sets the nat_map_type of this NatMappingConfig.
 
         NAT映射类型。 - PORT:端口映射. - HOST:地址映射.
 
@@ -121,7 +121,7 @@ class NatMappingConfig:
 
     @property
     def nat_map_value(self):
-        """Gets the nat_map_value of this NatMappingConfig.
+        r"""Gets the nat_map_value of this NatMappingConfig.
 
         nat_map_type为PORT时表示端口,取值9443/9445. nat_map_type为HOST时表示接入地址.
 
@@ -132,7 +132,7 @@ class NatMappingConfig:
 
     @nat_map_value.setter
     def nat_map_value(self, nat_map_value):
-        """Sets the nat_map_value of this NatMappingConfig.
+        r"""Sets the nat_map_value of this NatMappingConfig.
 
         nat_map_type为PORT时表示端口,取值9443/9445. nat_map_type为HOST时表示接入地址.
 
@@ -143,7 +143,7 @@ class NatMappingConfig:
 
     @property
     def nat_ip(self):
-        """Gets the nat_ip of this NatMappingConfig.
+        r"""Gets the nat_ip of this NatMappingConfig.
 
         nat Ip。
 
@@ -154,7 +154,7 @@ class NatMappingConfig:
 
     @nat_ip.setter
     def nat_ip(self, nat_ip):
-        """Sets the nat_ip of this NatMappingConfig.
+        r"""Sets the nat_ip of this NatMappingConfig.
 
         nat Ip。
 
@@ -165,7 +165,7 @@ class NatMappingConfig:
 
     @property
     def nat_port(self):
-        """Gets the nat_port of this NatMappingConfig.
+        r"""Gets the nat_port of this NatMappingConfig.
 
         nat端口。
 
@@ -176,7 +176,7 @@ class NatMappingConfig:
 
     @nat_port.setter
     def nat_port(self, nat_port):
-        """Sets the nat_port of this NatMappingConfig.
+        r"""Sets the nat_port of this NatMappingConfig.
 
         nat端口。
 
@@ -187,7 +187,7 @@ class NatMappingConfig:
 
     @property
     def vag_ip(self):
-        """Gets the vag_ip of this NatMappingConfig.
+        r"""Gets the vag_ip of this NatMappingConfig.
 
         vag Ip。
 
@@ -198,7 +198,7 @@ class NatMappingConfig:
 
     @vag_ip.setter
     def vag_ip(self, vag_ip):
-        """Sets the vag_ip of this NatMappingConfig.
+        r"""Sets the vag_ip of this NatMappingConfig.
 
         vag Ip。
 
@@ -209,7 +209,7 @@ class NatMappingConfig:
 
     @property
     def vag_port(self):
-        """Gets the vag_port of this NatMappingConfig.
+        r"""Gets the vag_port of this NatMappingConfig.
 
         vag端口。
 
@@ -220,7 +220,7 @@ class NatMappingConfig:
 
     @vag_port.setter
     def vag_port(self, vag_port):
-        """Sets the vag_port of this NatMappingConfig.
+        r"""Sets the vag_port of this NatMappingConfig.
 
         vag端口。
 
@@ -231,7 +231,7 @@ class NatMappingConfig:
 
     @property
     def access_filter_type(self):
-        """Gets the access_filter_type of this NatMappingConfig.
+        r"""Gets the access_filter_type of this NatMappingConfig.
 
         0标识不开启，1表示开启。
 
@@ -242,7 +242,7 @@ class NatMappingConfig:
 
     @access_filter_type.setter
     def access_filter_type(self, access_filter_type):
-        """Sets the access_filter_type of this NatMappingConfig.
+        r"""Sets the access_filter_type of this NatMappingConfig.
 
         0标识不开启，1表示开启。
 
@@ -253,7 +253,7 @@ class NatMappingConfig:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NatMappingConfig.
+        r"""Gets the enterprise_project_id of this NatMappingConfig.
 
         企业项目ID。
 
@@ -264,7 +264,7 @@ class NatMappingConfig:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NatMappingConfig.
+        r"""Sets the enterprise_project_id of this NatMappingConfig.
 
         企业项目ID。
 
@@ -275,7 +275,7 @@ class NatMappingConfig:
 
     @property
     def tags(self):
-        """Gets the tags of this NatMappingConfig.
+        r"""Gets the tags of this NatMappingConfig.
 
         标签对象
 
@@ -286,7 +286,7 @@ class NatMappingConfig:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this NatMappingConfig.
+        r"""Sets the tags of this NatMappingConfig.
 
         标签对象
 

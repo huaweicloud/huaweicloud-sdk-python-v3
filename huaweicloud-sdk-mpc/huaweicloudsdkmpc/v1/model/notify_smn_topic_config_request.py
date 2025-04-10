@@ -25,7 +25,7 @@ class NotifySmnTopicConfigRequest:
     }
 
     def __init__(self, body=None):
-        """NotifySmnTopicConfigRequest
+        r"""NotifySmnTopicConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NotifySmnTopicConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this NotifySmnTopicConfigRequest.
+        r"""Gets the body of this NotifySmnTopicConfigRequest.
 
         :return: The body of this NotifySmnTopicConfigRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.NotificationConfigReq`
@@ -52,7 +52,7 @@ class NotifySmnTopicConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NotifySmnTopicConfigRequest.
+        r"""Sets the body of this NotifySmnTopicConfigRequest.
 
         :param body: The body of this NotifySmnTopicConfigRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.NotificationConfigReq`

@@ -33,7 +33,7 @@ class NextflowTaskExecutionTime:
     }
 
     def __init__(self, submit=None, start=None, complete=None, duration=None, realtime=None):
-        """NextflowTaskExecutionTime
+        r"""NextflowTaskExecutionTime
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NextflowTaskExecutionTime:
 
     @property
     def submit(self):
-        """Gets the submit of this NextflowTaskExecutionTime.
+        r"""Gets the submit of this NextflowTaskExecutionTime.
 
         提交时间
 
@@ -82,7 +82,7 @@ class NextflowTaskExecutionTime:
 
     @submit.setter
     def submit(self, submit):
-        """Sets the submit of this NextflowTaskExecutionTime.
+        r"""Sets the submit of this NextflowTaskExecutionTime.
 
         提交时间
 
@@ -93,7 +93,7 @@ class NextflowTaskExecutionTime:
 
     @property
     def start(self):
-        """Gets the start of this NextflowTaskExecutionTime.
+        r"""Gets the start of this NextflowTaskExecutionTime.
 
         开始时间
 
@@ -104,7 +104,7 @@ class NextflowTaskExecutionTime:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this NextflowTaskExecutionTime.
+        r"""Sets the start of this NextflowTaskExecutionTime.
 
         开始时间
 
@@ -115,7 +115,7 @@ class NextflowTaskExecutionTime:
 
     @property
     def complete(self):
-        """Gets the complete of this NextflowTaskExecutionTime.
+        r"""Gets the complete of this NextflowTaskExecutionTime.
 
         完成时间
 
@@ -126,7 +126,7 @@ class NextflowTaskExecutionTime:
 
     @complete.setter
     def complete(self, complete):
-        """Sets the complete of this NextflowTaskExecutionTime.
+        r"""Sets the complete of this NextflowTaskExecutionTime.
 
         完成时间
 
@@ -137,7 +137,7 @@ class NextflowTaskExecutionTime:
 
     @property
     def duration(self):
-        """Gets the duration of this NextflowTaskExecutionTime.
+        r"""Gets the duration of this NextflowTaskExecutionTime.
 
         总时间
 
@@ -148,7 +148,7 @@ class NextflowTaskExecutionTime:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this NextflowTaskExecutionTime.
+        r"""Sets the duration of this NextflowTaskExecutionTime.
 
         总时间
 
@@ -159,7 +159,7 @@ class NextflowTaskExecutionTime:
 
     @property
     def realtime(self):
-        """Gets the realtime of this NextflowTaskExecutionTime.
+        r"""Gets the realtime of this NextflowTaskExecutionTime.
 
         实际运行时间
 
@@ -170,7 +170,7 @@ class NextflowTaskExecutionTime:
 
     @realtime.setter
     def realtime(self, realtime):
-        """Sets the realtime of this NextflowTaskExecutionTime.
+        r"""Sets the realtime of this NextflowTaskExecutionTime.
 
         实际运行时间
 

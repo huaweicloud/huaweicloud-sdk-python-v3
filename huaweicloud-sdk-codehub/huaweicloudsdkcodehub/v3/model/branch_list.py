@@ -27,7 +27,7 @@ class BranchList:
     }
 
     def __init__(self, branches=None, total=None):
-        """BranchList
+        r"""BranchList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BranchList:
 
     @property
     def branches(self):
-        """Gets the branches of this BranchList.
+        r"""Gets the branches of this BranchList.
 
         指定仓库的分支列表
 
@@ -61,7 +61,7 @@ class BranchList:
 
     @branches.setter
     def branches(self, branches):
-        """Sets the branches of this BranchList.
+        r"""Sets the branches of this BranchList.
 
         指定仓库的分支列表
 
@@ -72,7 +72,7 @@ class BranchList:
 
     @property
     def total(self):
-        """Gets the total of this BranchList.
+        r"""Gets the total of this BranchList.
 
         指定仓库的分支总数
 
@@ -83,7 +83,7 @@ class BranchList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BranchList.
+        r"""Sets the total of this BranchList.
 
         指定仓库的分支总数
 

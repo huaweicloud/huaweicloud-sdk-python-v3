@@ -38,7 +38,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, passed_permission_items=None, alarm_permission_items=None, failed_permission_items=None, passed_count=None, alarm_count=None, failed_count=None):
-        """ListPermissionCheckResultResponse
+        r"""ListPermissionCheckResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPermissionCheckResultResponse.
+        r"""Gets the total_count of this ListPermissionCheckResultResponse.
 
         权限检查的总条目个数。
 
@@ -97,7 +97,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPermissionCheckResultResponse.
+        r"""Sets the total_count of this ListPermissionCheckResultResponse.
 
         权限检查的总条目个数。
 
@@ -108,7 +108,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def passed_permission_items(self):
-        """Gets the passed_permission_items of this ListPermissionCheckResultResponse.
+        r"""Gets the passed_permission_items of this ListPermissionCheckResultResponse.
 
         权限检查的通过条目。
 
@@ -119,7 +119,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @passed_permission_items.setter
     def passed_permission_items(self, passed_permission_items):
-        """Sets the passed_permission_items of this ListPermissionCheckResultResponse.
+        r"""Sets the passed_permission_items of this ListPermissionCheckResultResponse.
 
         权限检查的通过条目。
 
@@ -130,7 +130,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def alarm_permission_items(self):
-        """Gets the alarm_permission_items of this ListPermissionCheckResultResponse.
+        r"""Gets the alarm_permission_items of this ListPermissionCheckResultResponse.
 
         权限检查的告警条目。
 
@@ -141,7 +141,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @alarm_permission_items.setter
     def alarm_permission_items(self, alarm_permission_items):
-        """Sets the alarm_permission_items of this ListPermissionCheckResultResponse.
+        r"""Sets the alarm_permission_items of this ListPermissionCheckResultResponse.
 
         权限检查的告警条目。
 
@@ -152,7 +152,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def failed_permission_items(self):
-        """Gets the failed_permission_items of this ListPermissionCheckResultResponse.
+        r"""Gets the failed_permission_items of this ListPermissionCheckResultResponse.
 
         权限检查的失败条目。
 
@@ -163,7 +163,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @failed_permission_items.setter
     def failed_permission_items(self, failed_permission_items):
-        """Sets the failed_permission_items of this ListPermissionCheckResultResponse.
+        r"""Sets the failed_permission_items of this ListPermissionCheckResultResponse.
 
         权限检查的失败条目。
 
@@ -174,7 +174,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def passed_count(self):
-        """Gets the passed_count of this ListPermissionCheckResultResponse.
+        r"""Gets the passed_count of this ListPermissionCheckResultResponse.
 
         权限检查的通过条目个数。
 
@@ -185,7 +185,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @passed_count.setter
     def passed_count(self, passed_count):
-        """Sets the passed_count of this ListPermissionCheckResultResponse.
+        r"""Sets the passed_count of this ListPermissionCheckResultResponse.
 
         权限检查的通过条目个数。
 
@@ -196,7 +196,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def alarm_count(self):
-        """Gets the alarm_count of this ListPermissionCheckResultResponse.
+        r"""Gets the alarm_count of this ListPermissionCheckResultResponse.
 
         权限检查的告警条目个数。
 
@@ -207,7 +207,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @alarm_count.setter
     def alarm_count(self, alarm_count):
-        """Sets the alarm_count of this ListPermissionCheckResultResponse.
+        r"""Sets the alarm_count of this ListPermissionCheckResultResponse.
 
         权限检查的告警条目个数。
 
@@ -218,7 +218,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this ListPermissionCheckResultResponse.
+        r"""Gets the failed_count of this ListPermissionCheckResultResponse.
 
         权限检查的失败条目个数。
 
@@ -229,7 +229,7 @@ class ListPermissionCheckResultResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this ListPermissionCheckResultResponse.
+        r"""Sets the failed_count of this ListPermissionCheckResultResponse.
 
         权限检查的失败条目个数。
 

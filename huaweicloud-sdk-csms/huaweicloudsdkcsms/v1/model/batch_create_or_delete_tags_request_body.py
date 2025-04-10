@@ -29,7 +29,7 @@ class BatchCreateOrDeleteTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None, sequence=None):
-        """BatchCreateOrDeleteTagsRequestBody
+        r"""BatchCreateOrDeleteTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCreateOrDeleteTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateOrDeleteTagsRequestBody.
+        r"""Gets the tags of this BatchCreateOrDeleteTagsRequestBody.
 
         标签列表，key和value键值对的集合。
 
@@ -66,7 +66,7 @@ class BatchCreateOrDeleteTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateOrDeleteTagsRequestBody.
+        r"""Sets the tags of this BatchCreateOrDeleteTagsRequestBody.
 
         标签列表，key和value键值对的集合。
 
@@ -77,7 +77,7 @@ class BatchCreateOrDeleteTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateOrDeleteTagsRequestBody.
+        r"""Gets the action of this BatchCreateOrDeleteTagsRequestBody.
 
         操作标识： 仅限于“create”和“delete”。
 
@@ -88,7 +88,7 @@ class BatchCreateOrDeleteTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateOrDeleteTagsRequestBody.
+        r"""Sets the action of this BatchCreateOrDeleteTagsRequestBody.
 
         操作标识： 仅限于“create”和“delete”。
 
@@ -99,7 +99,7 @@ class BatchCreateOrDeleteTagsRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this BatchCreateOrDeleteTagsRequestBody.
+        r"""Gets the sequence of this BatchCreateOrDeleteTagsRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -110,7 +110,7 @@ class BatchCreateOrDeleteTagsRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this BatchCreateOrDeleteTagsRequestBody.
+        r"""Sets the sequence of this BatchCreateOrDeleteTagsRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

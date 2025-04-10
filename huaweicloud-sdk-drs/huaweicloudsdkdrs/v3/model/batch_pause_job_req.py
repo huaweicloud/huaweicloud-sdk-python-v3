@@ -25,7 +25,7 @@ class BatchPauseJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchPauseJobReq
+        r"""BatchPauseJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchPauseJobReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchPauseJobReq.
+        r"""Gets the jobs of this BatchPauseJobReq.
 
         不能包含空对象。 集合中的job_id取值严格匹配UUID规则。
 
@@ -53,7 +53,7 @@ class BatchPauseJobReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchPauseJobReq.
+        r"""Sets the jobs of this BatchPauseJobReq.
 
         不能包含空对象。 集合中的job_id取值严格匹配UUID规则。
 

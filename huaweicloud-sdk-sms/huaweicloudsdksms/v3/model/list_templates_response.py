@@ -28,7 +28,7 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, templates=None):
-        """ListTemplatesResponse
+        r"""ListTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTemplatesResponse.
+        r"""Gets the count of this ListTemplatesResponse.
 
         模板个数
 
@@ -62,7 +62,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTemplatesResponse.
+        r"""Sets the count of this ListTemplatesResponse.
 
         模板个数
 
@@ -73,7 +73,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListTemplatesResponse.
+        r"""Gets the templates of this ListTemplatesResponse.
 
         模板信息
 
@@ -84,7 +84,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListTemplatesResponse.
+        r"""Sets the templates of this ListTemplatesResponse.
 
         模板信息
 

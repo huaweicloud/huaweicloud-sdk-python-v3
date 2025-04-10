@@ -25,7 +25,7 @@ class CloseMysqlProxyRequestBody:
     }
 
     def __init__(self, proxy_ids=None):
-        """CloseMysqlProxyRequestBody
+        r"""CloseMysqlProxyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CloseMysqlProxyRequestBody:
 
     @property
     def proxy_ids(self):
-        """Gets the proxy_ids of this CloseMysqlProxyRequestBody.
+        r"""Gets the proxy_ids of this CloseMysqlProxyRequestBody.
 
         数据库代理ID列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
 
@@ -54,7 +54,7 @@ class CloseMysqlProxyRequestBody:
 
     @proxy_ids.setter
     def proxy_ids(self, proxy_ids):
-        """Sets the proxy_ids of this CloseMysqlProxyRequestBody.
+        r"""Sets the proxy_ids of this CloseMysqlProxyRequestBody.
 
         数据库代理ID列表。  如果实例只开启了一个代理，可不传该字段；如果实例开启了多个代理，则必须指定要关闭的代理。
 

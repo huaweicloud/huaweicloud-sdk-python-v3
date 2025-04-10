@@ -29,7 +29,7 @@ class UpdateSnapshotSettingReq:
     }
 
     def __init__(self, bucket=None, agency=None, base_path=None):
-        """UpdateSnapshotSettingReq
+        r"""UpdateSnapshotSettingReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateSnapshotSettingReq:
 
     @property
     def bucket(self):
-        """Gets the bucket of this UpdateSnapshotSettingReq.
+        r"""Gets the bucket of this UpdateSnapshotSettingReq.
 
         备份使用的OBS桶的桶名。
 
@@ -65,7 +65,7 @@ class UpdateSnapshotSettingReq:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this UpdateSnapshotSettingReq.
+        r"""Sets the bucket of this UpdateSnapshotSettingReq.
 
         备份使用的OBS桶的桶名。
 
@@ -76,7 +76,7 @@ class UpdateSnapshotSettingReq:
 
     @property
     def agency(self):
-        """Gets the agency of this UpdateSnapshotSettingReq.
+        r"""Gets the agency of this UpdateSnapshotSettingReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -87,7 +87,7 @@ class UpdateSnapshotSettingReq:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpdateSnapshotSettingReq.
+        r"""Sets the agency of this UpdateSnapshotSettingReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -98,7 +98,7 @@ class UpdateSnapshotSettingReq:
 
     @property
     def base_path(self):
-        """Gets the base_path of this UpdateSnapshotSettingReq.
+        r"""Gets the base_path of this UpdateSnapshotSettingReq.
 
         快照在OBS桶中的存放路径。
 
@@ -109,7 +109,7 @@ class UpdateSnapshotSettingReq:
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this UpdateSnapshotSettingReq.
+        r"""Sets the base_path of this UpdateSnapshotSettingReq.
 
         快照在OBS桶中的存放路径。
 

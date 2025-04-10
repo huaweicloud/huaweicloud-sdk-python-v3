@@ -27,7 +27,7 @@ class BatchStopJobsActionRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchStopJobsActionRequest
+        r"""BatchStopJobsActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchStopJobsActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchStopJobsActionRequest.
+        r"""Gets the x_language of this BatchStopJobsActionRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class BatchStopJobsActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchStopJobsActionRequest.
+        r"""Sets the x_language of this BatchStopJobsActionRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class BatchStopJobsActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStopJobsActionRequest.
+        r"""Gets the body of this BatchStopJobsActionRequest.
 
         :return: The body of this BatchStopJobsActionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchStopJobActionReq`
@@ -81,7 +81,7 @@ class BatchStopJobsActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStopJobsActionRequest.
+        r"""Sets the body of this BatchStopJobsActionRequest.
 
         :param body: The body of this BatchStopJobsActionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.BatchStopJobActionReq`

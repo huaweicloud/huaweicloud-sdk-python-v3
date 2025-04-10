@@ -25,7 +25,7 @@ class UpdateBaremetalServerInterfaceAttachmentsReq:
     }
 
     def __init__(self, interface_attachment=None):
-        """UpdateBaremetalServerInterfaceAttachmentsReq
+        r"""UpdateBaremetalServerInterfaceAttachmentsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBaremetalServerInterfaceAttachmentsReq:
 
     @property
     def interface_attachment(self):
-        """Gets the interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
+        r"""Gets the interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
 
         :return: The interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
         :rtype: :class:`huaweicloudsdkbms.v1.InterfaceAttachmentsReq`
@@ -51,7 +51,7 @@ class UpdateBaremetalServerInterfaceAttachmentsReq:
 
     @interface_attachment.setter
     def interface_attachment(self, interface_attachment):
-        """Sets the interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
+        r"""Sets the interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
 
         :param interface_attachment: The interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
         :type interface_attachment: :class:`huaweicloudsdkbms.v1.InterfaceAttachmentsReq`

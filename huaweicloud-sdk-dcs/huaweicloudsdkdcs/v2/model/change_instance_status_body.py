@@ -27,7 +27,7 @@ class ChangeInstanceStatusBody:
     }
 
     def __init__(self, instances=None, action=None):
-        """ChangeInstanceStatusBody
+        r"""ChangeInstanceStatusBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChangeInstanceStatusBody:
 
     @property
     def instances(self):
-        """Gets the instances of this ChangeInstanceStatusBody.
+        r"""Gets the instances of this ChangeInstanceStatusBody.
 
         实例的ID列表。
 
@@ -61,7 +61,7 @@ class ChangeInstanceStatusBody:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ChangeInstanceStatusBody.
+        r"""Sets the instances of this ChangeInstanceStatusBody.
 
         实例的ID列表。
 
@@ -72,7 +72,7 @@ class ChangeInstanceStatusBody:
 
     @property
     def action(self):
-        """Gets the action of this ChangeInstanceStatusBody.
+        r"""Gets the action of this ChangeInstanceStatusBody.
 
         对实例的操作：  restart: 强制重启  soft_restart: 软重启，只重启进程  flush: 清空数据 > 当前版本，只有Redis 4.0和Redis 5.0实例支持清空数据功能，即flush操作。 
 
@@ -83,7 +83,7 @@ class ChangeInstanceStatusBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ChangeInstanceStatusBody.
+        r"""Sets the action of this ChangeInstanceStatusBody.
 
         对实例的操作：  restart: 强制重启  soft_restart: 软重启，只重启进程  flush: 清空数据 > 当前版本，只有Redis 4.0和Redis 5.0实例支持清空数据功能，即flush操作。 
 

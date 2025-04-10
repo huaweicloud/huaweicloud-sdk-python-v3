@@ -23,7 +23,7 @@ class RegionIdDef:
     }
 
     def __init__(self):
-        """RegionIdDef
+        r"""RegionIdDef
 
         The model defined in huaweicloud sdk
 

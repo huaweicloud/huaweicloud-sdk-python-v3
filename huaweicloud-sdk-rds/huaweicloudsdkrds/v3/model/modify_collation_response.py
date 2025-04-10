@@ -26,7 +26,7 @@ class ModifyCollationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ModifyCollationResponse
+        r"""ModifyCollationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifyCollationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyCollationResponse.
+        r"""Gets the job_id of this ModifyCollationResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class ModifyCollationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyCollationResponse.
+        r"""Sets the job_id of this ModifyCollationResponse.
 
         任务ID。
 

@@ -29,7 +29,7 @@ class VirtualChannelOptions:
     }
 
     def __init__(self, custom_virtual_channel_name=None, virtual_channel_plugin_details=None, third_party_plugin_name=None):
-        """VirtualChannelOptions
+        r"""VirtualChannelOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VirtualChannelOptions:
 
     @property
     def custom_virtual_channel_name(self):
-        """Gets the custom_virtual_channel_name of this VirtualChannelOptions.
+        r"""Gets the custom_virtual_channel_name of this VirtualChannelOptions.
 
         自定义虚拟通道注册名。
 
@@ -68,7 +68,7 @@ class VirtualChannelOptions:
 
     @custom_virtual_channel_name.setter
     def custom_virtual_channel_name(self, custom_virtual_channel_name):
-        """Sets the custom_virtual_channel_name of this VirtualChannelOptions.
+        r"""Sets the custom_virtual_channel_name of this VirtualChannelOptions.
 
         自定义虚拟通道注册名。
 
@@ -79,7 +79,7 @@ class VirtualChannelOptions:
 
     @property
     def virtual_channel_plugin_details(self):
-        """Gets the virtual_channel_plugin_details of this VirtualChannelOptions.
+        r"""Gets the virtual_channel_plugin_details of this VirtualChannelOptions.
 
         虚拟通道下载配置信息，需Base64加密。
 
@@ -90,7 +90,7 @@ class VirtualChannelOptions:
 
     @virtual_channel_plugin_details.setter
     def virtual_channel_plugin_details(self, virtual_channel_plugin_details):
-        """Sets the virtual_channel_plugin_details of this VirtualChannelOptions.
+        r"""Sets the virtual_channel_plugin_details of this VirtualChannelOptions.
 
         虚拟通道下载配置信息，需Base64加密。
 
@@ -101,7 +101,7 @@ class VirtualChannelOptions:
 
     @property
     def third_party_plugin_name(self):
-        """Gets the third_party_plugin_name of this VirtualChannelOptions.
+        r"""Gets the third_party_plugin_name of this VirtualChannelOptions.
 
         第三方插件名称。
 
@@ -112,7 +112,7 @@ class VirtualChannelOptions:
 
     @third_party_plugin_name.setter
     def third_party_plugin_name(self, third_party_plugin_name):
-        """Sets the third_party_plugin_name of this VirtualChannelOptions.
+        r"""Sets the third_party_plugin_name of this VirtualChannelOptions.
 
         第三方插件名称。
 

@@ -35,7 +35,7 @@ class SatisfactionDimensionSimpleInfoV2:
     }
 
     def __init__(self, value=None, satisfaction_id=None, satisfaction_name=None, satisfaction_desc=None, per_value=None, sat_category_id=None):
-        """SatisfactionDimensionSimpleInfoV2
+        r"""SatisfactionDimensionSimpleInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @property
     def value(self):
-        """Gets the value of this SatisfactionDimensionSimpleInfoV2.
+        r"""Gets the value of this SatisfactionDimensionSimpleInfoV2.
 
         总的分数
 
@@ -89,7 +89,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SatisfactionDimensionSimpleInfoV2.
+        r"""Sets the value of this SatisfactionDimensionSimpleInfoV2.
 
         总的分数
 
@@ -100,7 +100,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @property
     def satisfaction_id(self):
-        """Gets the satisfaction_id of this SatisfactionDimensionSimpleInfoV2.
+        r"""Gets the satisfaction_id of this SatisfactionDimensionSimpleInfoV2.
 
         满意度id
 
@@ -111,7 +111,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @satisfaction_id.setter
     def satisfaction_id(self, satisfaction_id):
-        """Sets the satisfaction_id of this SatisfactionDimensionSimpleInfoV2.
+        r"""Sets the satisfaction_id of this SatisfactionDimensionSimpleInfoV2.
 
         满意度id
 
@@ -122,7 +122,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @property
     def satisfaction_name(self):
-        """Gets the satisfaction_name of this SatisfactionDimensionSimpleInfoV2.
+        r"""Gets the satisfaction_name of this SatisfactionDimensionSimpleInfoV2.
 
         满意度名称
 
@@ -133,7 +133,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @satisfaction_name.setter
     def satisfaction_name(self, satisfaction_name):
-        """Sets the satisfaction_name of this SatisfactionDimensionSimpleInfoV2.
+        r"""Sets the satisfaction_name of this SatisfactionDimensionSimpleInfoV2.
 
         满意度名称
 
@@ -144,7 +144,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @property
     def satisfaction_desc(self):
-        """Gets the satisfaction_desc of this SatisfactionDimensionSimpleInfoV2.
+        r"""Gets the satisfaction_desc of this SatisfactionDimensionSimpleInfoV2.
 
         满意度描述
 
@@ -155,7 +155,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @satisfaction_desc.setter
     def satisfaction_desc(self, satisfaction_desc):
-        """Sets the satisfaction_desc of this SatisfactionDimensionSimpleInfoV2.
+        r"""Sets the satisfaction_desc of this SatisfactionDimensionSimpleInfoV2.
 
         满意度描述
 
@@ -166,7 +166,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @property
     def per_value(self):
-        """Gets the per_value of this SatisfactionDimensionSimpleInfoV2.
+        r"""Gets the per_value of this SatisfactionDimensionSimpleInfoV2.
 
         每格的分数
 
@@ -177,7 +177,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @per_value.setter
     def per_value(self, per_value):
-        """Sets the per_value of this SatisfactionDimensionSimpleInfoV2.
+        r"""Sets the per_value of this SatisfactionDimensionSimpleInfoV2.
 
         每格的分数
 
@@ -188,7 +188,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @property
     def sat_category_id(self):
-        """Gets the sat_category_id of this SatisfactionDimensionSimpleInfoV2.
+        r"""Gets the sat_category_id of this SatisfactionDimensionSimpleInfoV2.
 
         满意度分类id
 
@@ -199,7 +199,7 @@ class SatisfactionDimensionSimpleInfoV2:
 
     @sat_category_id.setter
     def sat_category_id(self, sat_category_id):
-        """Sets the sat_category_id of this SatisfactionDimensionSimpleInfoV2.
+        r"""Sets the sat_category_id of this SatisfactionDimensionSimpleInfoV2.
 
         满意度分类id
 

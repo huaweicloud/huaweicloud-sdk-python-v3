@@ -25,7 +25,7 @@ class ShowCpiTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowCpiTaskResultRequest
+        r"""ShowCpiTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCpiTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowCpiTaskResultRequest.
+        r"""Gets the task_id of this ShowCpiTaskResultRequest.
 
         CPI任务ID
 
@@ -53,7 +53,7 @@ class ShowCpiTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowCpiTaskResultRequest.
+        r"""Sets the task_id of this ShowCpiTaskResultRequest.
 
         CPI任务ID
 

@@ -31,7 +31,7 @@ class QRLocationDetail:
     }
 
     def __init__(self, top_left_x=None, top_left_y=None, bottom_right_x=None, bottom_right_y=None):
-        """QRLocationDetail
+        r"""QRLocationDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QRLocationDetail:
 
     @property
     def top_left_x(self):
-        """Gets the top_left_x of this QRLocationDetail.
+        r"""Gets the top_left_x of this QRLocationDetail.
 
         检测出的二维码左上角横坐标。
 
@@ -75,7 +75,7 @@ class QRLocationDetail:
 
     @top_left_x.setter
     def top_left_x(self, top_left_x):
-        """Sets the top_left_x of this QRLocationDetail.
+        r"""Sets the top_left_x of this QRLocationDetail.
 
         检测出的二维码左上角横坐标。
 
@@ -86,7 +86,7 @@ class QRLocationDetail:
 
     @property
     def top_left_y(self):
-        """Gets the top_left_y of this QRLocationDetail.
+        r"""Gets the top_left_y of this QRLocationDetail.
 
         检测出的二维码左上角纵坐标。
 
@@ -97,7 +97,7 @@ class QRLocationDetail:
 
     @top_left_y.setter
     def top_left_y(self, top_left_y):
-        """Sets the top_left_y of this QRLocationDetail.
+        r"""Sets the top_left_y of this QRLocationDetail.
 
         检测出的二维码左上角纵坐标。
 
@@ -108,7 +108,7 @@ class QRLocationDetail:
 
     @property
     def bottom_right_x(self):
-        """Gets the bottom_right_x of this QRLocationDetail.
+        r"""Gets the bottom_right_x of this QRLocationDetail.
 
         检测出的二维码右下角横坐标。
 
@@ -119,7 +119,7 @@ class QRLocationDetail:
 
     @bottom_right_x.setter
     def bottom_right_x(self, bottom_right_x):
-        """Sets the bottom_right_x of this QRLocationDetail.
+        r"""Sets the bottom_right_x of this QRLocationDetail.
 
         检测出的二维码右下角横坐标。
 
@@ -130,7 +130,7 @@ class QRLocationDetail:
 
     @property
     def bottom_right_y(self):
-        """Gets the bottom_right_y of this QRLocationDetail.
+        r"""Gets the bottom_right_y of this QRLocationDetail.
 
         检测出的二维码右下角纵坐标。
 
@@ -141,7 +141,7 @@ class QRLocationDetail:
 
     @bottom_right_y.setter
     def bottom_right_y(self, bottom_right_y):
-        """Sets the bottom_right_y of this QRLocationDetail.
+        r"""Sets the bottom_right_y of this QRLocationDetail.
 
         检测出的二维码右下角纵坐标。
 

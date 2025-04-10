@@ -31,7 +31,7 @@ class AssetJobReason:
     }
 
     def __init__(self, resource_type=None, resource_name=None, error_code=None, error_msg=None):
-        """AssetJobReason
+        r"""AssetJobReason
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AssetJobReason:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AssetJobReason.
+        r"""Gets the resource_type of this AssetJobReason.
 
         资源类型
 
@@ -75,7 +75,7 @@ class AssetJobReason:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AssetJobReason.
+        r"""Sets the resource_type of this AssetJobReason.
 
         资源类型
 
@@ -86,7 +86,7 @@ class AssetJobReason:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this AssetJobReason.
+        r"""Gets the resource_name of this AssetJobReason.
 
         资源名称
 
@@ -97,7 +97,7 @@ class AssetJobReason:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this AssetJobReason.
+        r"""Sets the resource_name of this AssetJobReason.
 
         资源名称
 
@@ -108,7 +108,7 @@ class AssetJobReason:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AssetJobReason.
+        r"""Gets the error_code of this AssetJobReason.
 
         错误码
 
@@ -119,7 +119,7 @@ class AssetJobReason:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AssetJobReason.
+        r"""Sets the error_code of this AssetJobReason.
 
         错误码
 
@@ -130,7 +130,7 @@ class AssetJobReason:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AssetJobReason.
+        r"""Gets the error_msg of this AssetJobReason.
 
         错误信息
 
@@ -141,7 +141,7 @@ class AssetJobReason:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AssetJobReason.
+        r"""Sets the error_msg of this AssetJobReason.
 
         错误信息
 

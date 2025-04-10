@@ -35,7 +35,7 @@ class AddMetricNotifyRuleReq:
     }
 
     def __init__(self, metric_name=None, threshold=None, comparison_operator=None, interval=None, enable=None, notify_object=None):
-        """AddMetricNotifyRuleReq
+        r"""AddMetricNotifyRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class AddMetricNotifyRuleReq:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this AddMetricNotifyRuleReq.
+        r"""Gets the metric_name of this AddMetricNotifyRuleReq.
 
         统计指标名称，目前仅支持固定值：desktop_idle_duration 同一指标的规则不允许重复 * `desktop_idle_duration` -  桌面空闲时长, 仅允许设置 '>=' threshold
 
@@ -85,7 +85,7 @@ class AddMetricNotifyRuleReq:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this AddMetricNotifyRuleReq.
+        r"""Sets the metric_name of this AddMetricNotifyRuleReq.
 
         统计指标名称，目前仅支持固定值：desktop_idle_duration 同一指标的规则不允许重复 * `desktop_idle_duration` -  桌面空闲时长, 仅允许设置 '>=' threshold
 
@@ -96,7 +96,7 @@ class AddMetricNotifyRuleReq:
 
     @property
     def threshold(self):
-        """Gets the threshold of this AddMetricNotifyRuleReq.
+        r"""Gets the threshold of this AddMetricNotifyRuleReq.
 
         规则配置-阈值(天)
 
@@ -107,7 +107,7 @@ class AddMetricNotifyRuleReq:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this AddMetricNotifyRuleReq.
+        r"""Sets the threshold of this AddMetricNotifyRuleReq.
 
         规则配置-阈值(天)
 
@@ -118,7 +118,7 @@ class AddMetricNotifyRuleReq:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this AddMetricNotifyRuleReq.
+        r"""Gets the comparison_operator of this AddMetricNotifyRuleReq.
 
         统计指标对应的统计值和threshold进行比较的条件 * `>=` -  统计指标大于等于threshold时触发 * `>` -   统计指标大于threshold时触发 * `=` -  统计指标等于threshold时触发 * `<=` -  统计指标小于等于threshold时触发 * `<` -  统计指标小于threshold时触发
 
@@ -129,7 +129,7 @@ class AddMetricNotifyRuleReq:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this AddMetricNotifyRuleReq.
+        r"""Sets the comparison_operator of this AddMetricNotifyRuleReq.
 
         统计指标对应的统计值和threshold进行比较的条件 * `>=` -  统计指标大于等于threshold时触发 * `>` -   统计指标大于threshold时触发 * `=` -  统计指标等于threshold时触发 * `<=` -  统计指标小于等于threshold时触发 * `<` -  统计指标小于threshold时触发
 
@@ -140,7 +140,7 @@ class AddMetricNotifyRuleReq:
 
     @property
     def interval(self):
-        """Gets the interval of this AddMetricNotifyRuleReq.
+        r"""Gets the interval of this AddMetricNotifyRuleReq.
 
         触发通知后；下次通知的间隔时间;默认每天一次
 
@@ -151,7 +151,7 @@ class AddMetricNotifyRuleReq:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this AddMetricNotifyRuleReq.
+        r"""Sets the interval of this AddMetricNotifyRuleReq.
 
         触发通知后；下次通知的间隔时间;默认每天一次
 
@@ -162,7 +162,7 @@ class AddMetricNotifyRuleReq:
 
     @property
     def enable(self):
-        """Gets the enable of this AddMetricNotifyRuleReq.
+        r"""Gets the enable of this AddMetricNotifyRuleReq.
 
         启禁用规则 true:启用 false:禁用
 
@@ -173,7 +173,7 @@ class AddMetricNotifyRuleReq:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this AddMetricNotifyRuleReq.
+        r"""Sets the enable of this AddMetricNotifyRuleReq.
 
         启禁用规则 true:启用 false:禁用
 
@@ -184,7 +184,7 @@ class AddMetricNotifyRuleReq:
 
     @property
     def notify_object(self):
-        """Gets the notify_object of this AddMetricNotifyRuleReq.
+        r"""Gets the notify_object of this AddMetricNotifyRuleReq.
 
         通知对象;smn的主题urn
 
@@ -195,7 +195,7 @@ class AddMetricNotifyRuleReq:
 
     @notify_object.setter
     def notify_object(self, notify_object):
-        """Sets the notify_object of this AddMetricNotifyRuleReq.
+        r"""Sets the notify_object of this AddMetricNotifyRuleReq.
 
         通知对象;smn的主题urn
 

@@ -27,7 +27,7 @@ class DetailViewItem:
     }
 
     def __init__(self, function=None, _as=None):
-        """DetailViewItem
+        r"""DetailViewItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DetailViewItem:
 
     @property
     def function(self):
-        """Gets the function of this DetailViewItem.
+        r"""Gets the function of this DetailViewItem.
 
         表达式。
 
@@ -61,7 +61,7 @@ class DetailViewItem:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this DetailViewItem.
+        r"""Sets the function of this DetailViewItem.
 
         表达式。
 
@@ -72,7 +72,7 @@ class DetailViewItem:
 
     @property
     def _as(self):
-        """Gets the _as of this DetailViewItem.
+        r"""Gets the _as of this DetailViewItem.
 
         作为。
 
@@ -83,7 +83,7 @@ class DetailViewItem:
 
     @_as.setter
     def _as(self, _as):
-        """Sets the _as of this DetailViewItem.
+        r"""Sets the _as of this DetailViewItem.
 
         作为。
 

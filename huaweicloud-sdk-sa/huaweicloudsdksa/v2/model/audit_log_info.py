@@ -49,7 +49,7 @@ class AuditLogInfo:
     }
 
     def __init__(self, instance_type=None, action_id=None, action_name=None, instance_id=None, parent_instance_id=None, log_level=None, input=None, output=None, error_msg=None, start_time=None, end_time=None, status=None, trigger_type=None):
-        """AuditLogInfo
+        r"""AuditLogInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class AuditLogInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this AuditLogInfo.
+        r"""Gets the instance_type of this AuditLogInfo.
 
         instance type.
 
@@ -138,7 +138,7 @@ class AuditLogInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this AuditLogInfo.
+        r"""Sets the instance_type of this AuditLogInfo.
 
         instance type.
 
@@ -149,7 +149,7 @@ class AuditLogInfo:
 
     @property
     def action_id(self):
-        """Gets the action_id of this AuditLogInfo.
+        r"""Gets the action_id of this AuditLogInfo.
 
         Action id.
 
@@ -160,7 +160,7 @@ class AuditLogInfo:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this AuditLogInfo.
+        r"""Sets the action_id of this AuditLogInfo.
 
         Action id.
 
@@ -171,7 +171,7 @@ class AuditLogInfo:
 
     @property
     def action_name(self):
-        """Gets the action_name of this AuditLogInfo.
+        r"""Gets the action_name of this AuditLogInfo.
 
         action name.
 
@@ -182,7 +182,7 @@ class AuditLogInfo:
 
     @action_name.setter
     def action_name(self, action_name):
-        """Sets the action_name of this AuditLogInfo.
+        r"""Sets the action_name of this AuditLogInfo.
 
         action name.
 
@@ -193,7 +193,7 @@ class AuditLogInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AuditLogInfo.
+        r"""Gets the instance_id of this AuditLogInfo.
 
         Instance id.
 
@@ -204,7 +204,7 @@ class AuditLogInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AuditLogInfo.
+        r"""Sets the instance_id of this AuditLogInfo.
 
         Instance id.
 
@@ -215,7 +215,7 @@ class AuditLogInfo:
 
     @property
     def parent_instance_id(self):
-        """Gets the parent_instance_id of this AuditLogInfo.
+        r"""Gets the parent_instance_id of this AuditLogInfo.
 
         parent instance id.
 
@@ -226,7 +226,7 @@ class AuditLogInfo:
 
     @parent_instance_id.setter
     def parent_instance_id(self, parent_instance_id):
-        """Sets the parent_instance_id of this AuditLogInfo.
+        r"""Sets the parent_instance_id of this AuditLogInfo.
 
         parent instance id.
 
@@ -237,7 +237,7 @@ class AuditLogInfo:
 
     @property
     def log_level(self):
-        """Gets the log_level of this AuditLogInfo.
+        r"""Gets the log_level of this AuditLogInfo.
 
         log level.
 
@@ -248,7 +248,7 @@ class AuditLogInfo:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this AuditLogInfo.
+        r"""Sets the log_level of this AuditLogInfo.
 
         log level.
 
@@ -259,7 +259,7 @@ class AuditLogInfo:
 
     @property
     def input(self):
-        """Gets the input of this AuditLogInfo.
+        r"""Gets the input of this AuditLogInfo.
 
         input.
 
@@ -270,7 +270,7 @@ class AuditLogInfo:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this AuditLogInfo.
+        r"""Sets the input of this AuditLogInfo.
 
         input.
 
@@ -281,7 +281,7 @@ class AuditLogInfo:
 
     @property
     def output(self):
-        """Gets the output of this AuditLogInfo.
+        r"""Gets the output of this AuditLogInfo.
 
         output.
 
@@ -292,7 +292,7 @@ class AuditLogInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this AuditLogInfo.
+        r"""Sets the output of this AuditLogInfo.
 
         output.
 
@@ -303,7 +303,7 @@ class AuditLogInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AuditLogInfo.
+        r"""Gets the error_msg of this AuditLogInfo.
 
         error_msg.
 
@@ -314,7 +314,7 @@ class AuditLogInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AuditLogInfo.
+        r"""Sets the error_msg of this AuditLogInfo.
 
         error_msg.
 
@@ -325,7 +325,7 @@ class AuditLogInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AuditLogInfo.
+        r"""Gets the start_time of this AuditLogInfo.
 
         start_time.
 
@@ -336,7 +336,7 @@ class AuditLogInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AuditLogInfo.
+        r"""Sets the start_time of this AuditLogInfo.
 
         start_time.
 
@@ -347,7 +347,7 @@ class AuditLogInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AuditLogInfo.
+        r"""Gets the end_time of this AuditLogInfo.
 
         end_time.
 
@@ -358,7 +358,7 @@ class AuditLogInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AuditLogInfo.
+        r"""Sets the end_time of this AuditLogInfo.
 
         end_time.
 
@@ -369,7 +369,7 @@ class AuditLogInfo:
 
     @property
     def status(self):
-        """Gets the status of this AuditLogInfo.
+        r"""Gets the status of this AuditLogInfo.
 
         status.
 
@@ -380,7 +380,7 @@ class AuditLogInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuditLogInfo.
+        r"""Sets the status of this AuditLogInfo.
 
         status.
 
@@ -391,7 +391,7 @@ class AuditLogInfo:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this AuditLogInfo.
+        r"""Gets the trigger_type of this AuditLogInfo.
 
         trigger type.
 
@@ -402,7 +402,7 @@ class AuditLogInfo:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this AuditLogInfo.
+        r"""Sets the trigger_type of this AuditLogInfo.
 
         trigger type.
 

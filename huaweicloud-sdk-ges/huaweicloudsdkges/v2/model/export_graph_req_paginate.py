@@ -29,7 +29,7 @@ class ExportGraphReqPaginate:
     }
 
     def __init__(self, enable=None, row_count_per_file=None, num_thread=None):
-        """ExportGraphReqPaginate
+        r"""ExportGraphReqPaginate
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExportGraphReqPaginate:
 
     @property
     def enable(self):
-        """Gets the enable of this ExportGraphReqPaginate.
+        r"""Gets the enable of this ExportGraphReqPaginate.
 
         是否开启分页，默认为true，不需要开启分页时，需显示声明为false。
 
@@ -68,7 +68,7 @@ class ExportGraphReqPaginate:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ExportGraphReqPaginate.
+        r"""Sets the enable of this ExportGraphReqPaginate.
 
         是否开启分页，默认为true，不需要开启分页时，需显示声明为false。
 
@@ -79,7 +79,7 @@ class ExportGraphReqPaginate:
 
     @property
     def row_count_per_file(self):
-        """Gets the row_count_per_file of this ExportGraphReqPaginate.
+        r"""Gets the row_count_per_file of this ExportGraphReqPaginate.
 
         按页导出时，每个文件最大行数，默认10000000。
 
@@ -90,7 +90,7 @@ class ExportGraphReqPaginate:
 
     @row_count_per_file.setter
     def row_count_per_file(self, row_count_per_file):
-        """Sets the row_count_per_file of this ExportGraphReqPaginate.
+        r"""Sets the row_count_per_file of this ExportGraphReqPaginate.
 
         按页导出时，每个文件最大行数，默认10000000。
 
@@ -101,7 +101,7 @@ class ExportGraphReqPaginate:
 
     @property
     def num_thread(self):
-        """Gets the num_thread of this ExportGraphReqPaginate.
+        r"""Gets the num_thread of this ExportGraphReqPaginate.
 
         按页导出时，并行线程数，默认为8。
 
@@ -112,7 +112,7 @@ class ExportGraphReqPaginate:
 
     @num_thread.setter
     def num_thread(self, num_thread):
-        """Sets the num_thread of this ExportGraphReqPaginate.
+        r"""Sets the num_thread of this ExportGraphReqPaginate.
 
         按页导出时，并行线程数，默认为8。
 

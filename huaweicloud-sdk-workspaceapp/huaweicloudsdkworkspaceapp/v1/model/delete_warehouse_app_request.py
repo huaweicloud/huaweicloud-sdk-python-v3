@@ -25,7 +25,7 @@ class DeleteWarehouseAppRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteWarehouseAppRequest
+        r"""DeleteWarehouseAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteWarehouseAppRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteWarehouseAppRequest.
+        r"""Gets the id of this DeleteWarehouseAppRequest.
 
         应用仓库中的应用记录ID。
 
@@ -53,7 +53,7 @@ class DeleteWarehouseAppRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteWarehouseAppRequest.
+        r"""Sets the id of this DeleteWarehouseAppRequest.
 
         应用仓库中的应用记录ID。
 

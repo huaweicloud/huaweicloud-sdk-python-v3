@@ -27,7 +27,7 @@ class WorkitemsDomain:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkitemsDomain
+        r"""WorkitemsDomain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkitemsDomain:
 
     @property
     def id(self):
-        """Gets the id of this WorkitemsDomain.
+        r"""Gets the id of this WorkitemsDomain.
 
         领域id
 
@@ -61,7 +61,7 @@ class WorkitemsDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkitemsDomain.
+        r"""Sets the id of this WorkitemsDomain.
 
         领域id
 
@@ -72,7 +72,7 @@ class WorkitemsDomain:
 
     @property
     def name(self):
-        """Gets the name of this WorkitemsDomain.
+        r"""Gets the name of this WorkitemsDomain.
 
         领域
 
@@ -83,7 +83,7 @@ class WorkitemsDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkitemsDomain.
+        r"""Sets the name of this WorkitemsDomain.
 
         领域
 

@@ -26,7 +26,7 @@ class ShowInstanceRoleResponse(SdkResponse):
     }
 
     def __init__(self, role=None):
-        """ShowInstanceRoleResponse
+        r"""ShowInstanceRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowInstanceRoleResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowInstanceRoleResponse.
+        r"""Gets the role of this ShowInstanceRoleResponse.
 
         枚举类型(master、slave)代表实例是主实例还是备实例。
 
@@ -55,7 +55,7 @@ class ShowInstanceRoleResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowInstanceRoleResponse.
+        r"""Sets the role of this ShowInstanceRoleResponse.
 
         枚举类型(master、slave)代表实例是主实例还是备实例。
 

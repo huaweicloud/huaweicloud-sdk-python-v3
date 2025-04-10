@@ -26,7 +26,7 @@ class ShowWorkItemWrokflowConfigResponse(SdkResponse):
     }
 
     def __init__(self, workflows=None):
-        """ShowWorkItemWrokflowConfigResponse
+        r"""ShowWorkItemWrokflowConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowWorkItemWrokflowConfigResponse(SdkResponse):
 
     @property
     def workflows(self):
-        """Gets the workflows of this ShowWorkItemWrokflowConfigResponse.
+        r"""Gets the workflows of this ShowWorkItemWrokflowConfigResponse.
 
         流转数据
 
@@ -55,7 +55,7 @@ class ShowWorkItemWrokflowConfigResponse(SdkResponse):
 
     @workflows.setter
     def workflows(self, workflows):
-        """Sets the workflows of this ShowWorkItemWrokflowConfigResponse.
+        r"""Sets the workflows of this ShowWorkItemWrokflowConfigResponse.
 
         流转数据
 

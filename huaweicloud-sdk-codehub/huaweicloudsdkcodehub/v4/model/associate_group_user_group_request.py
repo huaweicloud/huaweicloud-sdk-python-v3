@@ -29,7 +29,7 @@ class AssociateGroupUserGroupRequest:
     }
 
     def __init__(self, project_id=None, group_id=None, user_group_id=None):
-        """AssociateGroupUserGroupRequest
+        r"""AssociateGroupUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AssociateGroupUserGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateGroupUserGroupRequest.
+        r"""Gets the project_id of this AssociateGroupUserGroupRequest.
 
         项目id
 
@@ -65,7 +65,7 @@ class AssociateGroupUserGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateGroupUserGroupRequest.
+        r"""Sets the project_id of this AssociateGroupUserGroupRequest.
 
         项目id
 
@@ -76,7 +76,7 @@ class AssociateGroupUserGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this AssociateGroupUserGroupRequest.
+        r"""Gets the group_id of this AssociateGroupUserGroupRequest.
 
         代码组 ID
 
@@ -87,7 +87,7 @@ class AssociateGroupUserGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this AssociateGroupUserGroupRequest.
+        r"""Sets the group_id of this AssociateGroupUserGroupRequest.
 
         代码组 ID
 
@@ -98,7 +98,7 @@ class AssociateGroupUserGroupRequest:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this AssociateGroupUserGroupRequest.
+        r"""Gets the user_group_id of this AssociateGroupUserGroupRequest.
 
         成员组 ID
 
@@ -109,7 +109,7 @@ class AssociateGroupUserGroupRequest:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this AssociateGroupUserGroupRequest.
+        r"""Sets the user_group_id of this AssociateGroupUserGroupRequest.
 
         成员组 ID
 

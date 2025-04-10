@@ -37,7 +37,7 @@ class InstancesResult:
     }
 
     def __init__(self, instance_name=None, instance_id=None, volume_type=None, data_volume_size=None, version=None, mode=None, instance_mode=None):
-        """InstancesResult
+        r"""InstancesResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstancesResult:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstancesResult.
+        r"""Gets the instance_name of this InstancesResult.
 
         实例名称。
 
@@ -96,7 +96,7 @@ class InstancesResult:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstancesResult.
+        r"""Sets the instance_name of this InstancesResult.
 
         实例名称。
 
@@ -107,7 +107,7 @@ class InstancesResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstancesResult.
+        r"""Gets the instance_id of this InstancesResult.
 
         实例id。
 
@@ -118,7 +118,7 @@ class InstancesResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstancesResult.
+        r"""Sets the instance_id of this InstancesResult.
 
         实例id。
 
@@ -129,7 +129,7 @@ class InstancesResult:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this InstancesResult.
+        r"""Gets the volume_type of this InstancesResult.
 
         存储类型。
 
@@ -140,7 +140,7 @@ class InstancesResult:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this InstancesResult.
+        r"""Sets the volume_type of this InstancesResult.
 
         存储类型。
 
@@ -151,7 +151,7 @@ class InstancesResult:
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this InstancesResult.
+        r"""Gets the data_volume_size of this InstancesResult.
 
         磁盘大小，单位：GB。
 
@@ -162,7 +162,7 @@ class InstancesResult:
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this InstancesResult.
+        r"""Sets the data_volume_size of this InstancesResult.
 
         磁盘大小，单位：GB。
 
@@ -173,7 +173,7 @@ class InstancesResult:
 
     @property
     def version(self):
-        """Gets the version of this InstancesResult.
+        r"""Gets the version of this InstancesResult.
 
         实例版本信息。
 
@@ -184,7 +184,7 @@ class InstancesResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstancesResult.
+        r"""Sets the version of this InstancesResult.
 
         实例版本信息。
 
@@ -195,7 +195,7 @@ class InstancesResult:
 
     @property
     def mode(self):
-        """Gets the mode of this InstancesResult.
+        r"""Gets the mode of this InstancesResult.
 
         部署形态。
 
@@ -206,7 +206,7 @@ class InstancesResult:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this InstancesResult.
+        r"""Sets the mode of this InstancesResult.
 
         部署形态。
 
@@ -217,7 +217,7 @@ class InstancesResult:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this InstancesResult.
+        r"""Gets the instance_mode of this InstancesResult.
 
         实例模型，企业版，标准版，基础版。
 
@@ -228,7 +228,7 @@ class InstancesResult:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this InstancesResult.
+        r"""Sets the instance_mode of this InstancesResult.
 
         实例模型，企业版，标准版，基础版。
 

@@ -24,7 +24,7 @@ class DisassociateAppQuotaWithAppResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateAppQuotaWithAppResponse
+        r"""DisassociateAppQuotaWithAppResponse
 
         The model defined in huaweicloud sdk
 

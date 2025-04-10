@@ -24,7 +24,7 @@ class DeleteRoutetableResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRoutetableResponse
+        r"""DeleteRoutetableResponse
 
         The model defined in huaweicloud sdk
 

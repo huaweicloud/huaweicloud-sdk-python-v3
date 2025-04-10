@@ -29,7 +29,7 @@ class ListDeployTasksRequest:
     }
 
     def __init__(self, project_id=None, page=None, size=None):
-        """ListDeployTasksRequest
+        r"""ListDeployTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListDeployTasksRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDeployTasksRequest.
+        r"""Gets the project_id of this ListDeployTasksRequest.
 
         项目id
 
@@ -65,7 +65,7 @@ class ListDeployTasksRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDeployTasksRequest.
+        r"""Sets the project_id of this ListDeployTasksRequest.
 
         项目id
 
@@ -76,7 +76,7 @@ class ListDeployTasksRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListDeployTasksRequest.
+        r"""Gets the page of this ListDeployTasksRequest.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -87,7 +87,7 @@ class ListDeployTasksRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListDeployTasksRequest.
+        r"""Sets the page of this ListDeployTasksRequest.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -98,7 +98,7 @@ class ListDeployTasksRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListDeployTasksRequest.
+        r"""Gets the size of this ListDeployTasksRequest.
 
         每页显示的条目数量，size小于等于100
 
@@ -109,7 +109,7 @@ class ListDeployTasksRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDeployTasksRequest.
+        r"""Sets the size of this ListDeployTasksRequest.
 
         每页显示的条目数量，size小于等于100
 

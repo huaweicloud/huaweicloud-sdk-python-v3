@@ -27,7 +27,7 @@ class MysqlProxyFlavorsResponseComputeFlavorGroups:
     }
 
     def __init__(self, group_type=None, compute_flavors=None):
-        """MysqlProxyFlavorsResponseComputeFlavorGroups
+        r"""MysqlProxyFlavorsResponseComputeFlavorGroups
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MysqlProxyFlavorsResponseComputeFlavorGroups:
 
     @property
     def group_type(self):
-        """Gets the group_type of this MysqlProxyFlavorsResponseComputeFlavorGroups.
+        r"""Gets the group_type of this MysqlProxyFlavorsResponseComputeFlavorGroups.
 
         规格组类型，如x86、arm。
 
@@ -61,7 +61,7 @@ class MysqlProxyFlavorsResponseComputeFlavorGroups:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this MysqlProxyFlavorsResponseComputeFlavorGroups.
+        r"""Sets the group_type of this MysqlProxyFlavorsResponseComputeFlavorGroups.
 
         规格组类型，如x86、arm。
 
@@ -72,7 +72,7 @@ class MysqlProxyFlavorsResponseComputeFlavorGroups:
 
     @property
     def compute_flavors(self):
-        """Gets the compute_flavors of this MysqlProxyFlavorsResponseComputeFlavorGroups.
+        r"""Gets the compute_flavors of this MysqlProxyFlavorsResponseComputeFlavorGroups.
 
         规格信息。
 
@@ -83,7 +83,7 @@ class MysqlProxyFlavorsResponseComputeFlavorGroups:
 
     @compute_flavors.setter
     def compute_flavors(self, compute_flavors):
-        """Sets the compute_flavors of this MysqlProxyFlavorsResponseComputeFlavorGroups.
+        r"""Sets the compute_flavors of this MysqlProxyFlavorsResponseComputeFlavorGroups.
 
         规格信息。
 

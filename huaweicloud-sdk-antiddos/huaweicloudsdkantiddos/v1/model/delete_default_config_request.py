@@ -23,7 +23,7 @@ class DeleteDefaultConfigRequest:
     }
 
     def __init__(self):
-        """DeleteDefaultConfigRequest
+        r"""DeleteDefaultConfigRequest
 
         The model defined in huaweicloud sdk
 

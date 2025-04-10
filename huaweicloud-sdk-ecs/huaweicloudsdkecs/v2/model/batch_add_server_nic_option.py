@@ -33,7 +33,7 @@ class BatchAddServerNicOption:
     }
 
     def __init__(self, subnet_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
-        """BatchAddServerNicOption
+        r"""BatchAddServerNicOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BatchAddServerNicOption:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this BatchAddServerNicOption.
+        r"""Gets the subnet_id of this BatchAddServerNicOption.
 
         云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
 
@@ -81,7 +81,7 @@ class BatchAddServerNicOption:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this BatchAddServerNicOption.
+        r"""Sets the subnet_id of this BatchAddServerNicOption.
 
         云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
 
@@ -92,7 +92,7 @@ class BatchAddServerNicOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this BatchAddServerNicOption.
+        r"""Gets the security_groups of this BatchAddServerNicOption.
 
         添加网卡的安全组信息
 
@@ -103,7 +103,7 @@ class BatchAddServerNicOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this BatchAddServerNicOption.
+        r"""Sets the security_groups of this BatchAddServerNicOption.
 
         添加网卡的安全组信息
 
@@ -114,7 +114,7 @@ class BatchAddServerNicOption:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this BatchAddServerNicOption.
+        r"""Gets the ip_address of this BatchAddServerNicOption.
 
         IP地址，无该参数表示自动分配IP地址。
 
@@ -125,7 +125,7 @@ class BatchAddServerNicOption:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this BatchAddServerNicOption.
+        r"""Sets the ip_address of this BatchAddServerNicOption.
 
         IP地址，无该参数表示自动分配IP地址。
 
@@ -136,7 +136,7 @@ class BatchAddServerNicOption:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this BatchAddServerNicOption.
+        r"""Gets the ipv6_enable of this BatchAddServerNicOption.
 
         是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
 
@@ -147,7 +147,7 @@ class BatchAddServerNicOption:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this BatchAddServerNicOption.
+        r"""Sets the ipv6_enable of this BatchAddServerNicOption.
 
         是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
 
@@ -158,7 +158,7 @@ class BatchAddServerNicOption:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this BatchAddServerNicOption.
+        r"""Gets the ipv6_bandwidth of this BatchAddServerNicOption.
 
         :return: The ipv6_bandwidth of this BatchAddServerNicOption.
         :rtype: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
@@ -167,7 +167,7 @@ class BatchAddServerNicOption:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this BatchAddServerNicOption.
+        r"""Sets the ipv6_bandwidth of this BatchAddServerNicOption.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this BatchAddServerNicOption.
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`

@@ -24,7 +24,7 @@ class ShowRepositoryArchiveResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ShowRepositoryArchiveResponse
+        r"""ShowRepositoryArchiveResponse
 
         The model defined in huaweicloud sdk
 

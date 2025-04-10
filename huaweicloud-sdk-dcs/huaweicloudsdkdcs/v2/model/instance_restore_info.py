@@ -45,7 +45,7 @@ class InstanceRestoreInfo:
     }
 
     def __init__(self, backup_id=None, restore_id=None, backup_name=None, updated_at=None, restore_remark=None, created_at=None, progress=None, error_code=None, restore_name=None, backup_remark=None, status=None):
-        """InstanceRestoreInfo
+        r"""InstanceRestoreInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class InstanceRestoreInfo:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this InstanceRestoreInfo.
+        r"""Gets the backup_id of this InstanceRestoreInfo.
 
         备份记录ID。
 
@@ -124,7 +124,7 @@ class InstanceRestoreInfo:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this InstanceRestoreInfo.
+        r"""Sets the backup_id of this InstanceRestoreInfo.
 
         备份记录ID。
 
@@ -135,7 +135,7 @@ class InstanceRestoreInfo:
 
     @property
     def restore_id(self):
-        """Gets the restore_id of this InstanceRestoreInfo.
+        r"""Gets the restore_id of this InstanceRestoreInfo.
 
         恢复记录ID。
 
@@ -146,7 +146,7 @@ class InstanceRestoreInfo:
 
     @restore_id.setter
     def restore_id(self, restore_id):
-        """Sets the restore_id of this InstanceRestoreInfo.
+        r"""Sets the restore_id of this InstanceRestoreInfo.
 
         恢复记录ID。
 
@@ -157,7 +157,7 @@ class InstanceRestoreInfo:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this InstanceRestoreInfo.
+        r"""Gets the backup_name of this InstanceRestoreInfo.
 
         备份记录名称。
 
@@ -168,7 +168,7 @@ class InstanceRestoreInfo:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this InstanceRestoreInfo.
+        r"""Sets the backup_name of this InstanceRestoreInfo.
 
         备份记录名称。
 
@@ -179,7 +179,7 @@ class InstanceRestoreInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this InstanceRestoreInfo.
+        r"""Gets the updated_at of this InstanceRestoreInfo.
 
         恢复完成时间。
 
@@ -190,7 +190,7 @@ class InstanceRestoreInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this InstanceRestoreInfo.
+        r"""Sets the updated_at of this InstanceRestoreInfo.
 
         恢复完成时间。
 
@@ -201,7 +201,7 @@ class InstanceRestoreInfo:
 
     @property
     def restore_remark(self):
-        """Gets the restore_remark of this InstanceRestoreInfo.
+        r"""Gets the restore_remark of this InstanceRestoreInfo.
 
         恢复备注信息。
 
@@ -212,7 +212,7 @@ class InstanceRestoreInfo:
 
     @restore_remark.setter
     def restore_remark(self, restore_remark):
-        """Sets the restore_remark of this InstanceRestoreInfo.
+        r"""Sets the restore_remark of this InstanceRestoreInfo.
 
         恢复备注信息。
 
@@ -223,7 +223,7 @@ class InstanceRestoreInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this InstanceRestoreInfo.
+        r"""Gets the created_at of this InstanceRestoreInfo.
 
         恢复任务创建时间。
 
@@ -234,7 +234,7 @@ class InstanceRestoreInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this InstanceRestoreInfo.
+        r"""Sets the created_at of this InstanceRestoreInfo.
 
         恢复任务创建时间。
 
@@ -245,7 +245,7 @@ class InstanceRestoreInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this InstanceRestoreInfo.
+        r"""Gets the progress of this InstanceRestoreInfo.
 
         恢复进度。
 
@@ -256,7 +256,7 @@ class InstanceRestoreInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this InstanceRestoreInfo.
+        r"""Sets the progress of this InstanceRestoreInfo.
 
         恢复进度。
 
@@ -267,7 +267,7 @@ class InstanceRestoreInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this InstanceRestoreInfo.
+        r"""Gets the error_code of this InstanceRestoreInfo.
 
         恢复失败后错误码 * `dcs.08.0001` - 启动备份恢复工具失败。 * `dcs.08.0002` - 执行超时。 * `dcs.08.0003` - 删除桶失败。 * `dcs.08.0004` - 获取ak/sk 失败。 * `dcs.08.0005` - 创建桶失败。 * `dcs.08.0006` - 查询备份数据大小失败。 * `dcs.08.0007` - 恢复时同步数据失败。 * `dcs.08.0008` - 自动备份任务未运行，实例正在运行其他任务。 
 
@@ -278,7 +278,7 @@ class InstanceRestoreInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this InstanceRestoreInfo.
+        r"""Sets the error_code of this InstanceRestoreInfo.
 
         恢复失败后错误码 * `dcs.08.0001` - 启动备份恢复工具失败。 * `dcs.08.0002` - 执行超时。 * `dcs.08.0003` - 删除桶失败。 * `dcs.08.0004` - 获取ak/sk 失败。 * `dcs.08.0005` - 创建桶失败。 * `dcs.08.0006` - 查询备份数据大小失败。 * `dcs.08.0007` - 恢复时同步数据失败。 * `dcs.08.0008` - 自动备份任务未运行，实例正在运行其他任务。 
 
@@ -289,7 +289,7 @@ class InstanceRestoreInfo:
 
     @property
     def restore_name(self):
-        """Gets the restore_name of this InstanceRestoreInfo.
+        r"""Gets the restore_name of this InstanceRestoreInfo.
 
         恢复记录名称。
 
@@ -300,7 +300,7 @@ class InstanceRestoreInfo:
 
     @restore_name.setter
     def restore_name(self, restore_name):
-        """Sets the restore_name of this InstanceRestoreInfo.
+        r"""Sets the restore_name of this InstanceRestoreInfo.
 
         恢复记录名称。
 
@@ -311,7 +311,7 @@ class InstanceRestoreInfo:
 
     @property
     def backup_remark(self):
-        """Gets the backup_remark of this InstanceRestoreInfo.
+        r"""Gets the backup_remark of this InstanceRestoreInfo.
 
         备份备注信息。
 
@@ -322,7 +322,7 @@ class InstanceRestoreInfo:
 
     @backup_remark.setter
     def backup_remark(self, backup_remark):
-        """Sets the backup_remark of this InstanceRestoreInfo.
+        r"""Sets the backup_remark of this InstanceRestoreInfo.
 
         备份备注信息。
 
@@ -333,7 +333,7 @@ class InstanceRestoreInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceRestoreInfo.
+        r"""Gets the status of this InstanceRestoreInfo.
 
         恢复状态。 - waiting：等待中 - restoring：恢复中 - succeed：恢复成功 - failed：恢复失败 
 
@@ -344,7 +344,7 @@ class InstanceRestoreInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceRestoreInfo.
+        r"""Sets the status of this InstanceRestoreInfo.
 
         恢复状态。 - waiting：等待中 - restoring：恢复中 - succeed：恢复成功 - failed：恢复失败 
 

@@ -25,7 +25,7 @@ class ListMarketImagesRequest:
     }
 
     def __init__(self, image_ids=None):
-        """ListMarketImagesRequest
+        r"""ListMarketImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListMarketImagesRequest:
 
     @property
     def image_ids(self):
-        """Gets the image_ids of this ListMarketImagesRequest.
+        r"""Gets the image_ids of this ListMarketImagesRequest.
 
         镜像id，支持传1到100个。
 
@@ -53,7 +53,7 @@ class ListMarketImagesRequest:
 
     @image_ids.setter
     def image_ids(self, image_ids):
-        """Sets the image_ids of this ListMarketImagesRequest.
+        r"""Sets the image_ids of this ListMarketImagesRequest.
 
         镜像id，支持传1到100个。
 

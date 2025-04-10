@@ -27,7 +27,7 @@ class RetryJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None):
-        """RetryJobRequest
+        r"""RetryJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RetryJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this RetryJobRequest.
+        r"""Gets the eihealth_project_id of this RetryJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class RetryJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this RetryJobRequest.
+        r"""Sets the eihealth_project_id of this RetryJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class RetryJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RetryJobRequest.
+        r"""Gets the job_id of this RetryJobRequest.
 
         job_id
 
@@ -81,7 +81,7 @@ class RetryJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RetryJobRequest.
+        r"""Sets the job_id of this RetryJobRequest.
 
         job_id
 

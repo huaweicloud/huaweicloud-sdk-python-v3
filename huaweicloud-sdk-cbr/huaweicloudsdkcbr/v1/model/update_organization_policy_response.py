@@ -26,7 +26,7 @@ class UpdateOrganizationPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy=None):
-        """UpdateOrganizationPolicyResponse
+        r"""UpdateOrganizationPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateOrganizationPolicyResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this UpdateOrganizationPolicyResponse.
+        r"""Gets the policy of this UpdateOrganizationPolicyResponse.
 
         :return: The policy of this UpdateOrganizationPolicyResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.OrganizationPolicy`
@@ -53,7 +53,7 @@ class UpdateOrganizationPolicyResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this UpdateOrganizationPolicyResponse.
+        r"""Sets the policy of this UpdateOrganizationPolicyResponse.
 
         :param policy: The policy of this UpdateOrganizationPolicyResponse.
         :type policy: :class:`huaweicloudsdkcbr.v1.OrganizationPolicy`

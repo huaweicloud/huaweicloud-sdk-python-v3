@@ -28,7 +28,7 @@ class ListProductCategoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_product_category_list=None):
-        """ListProductCategoriesResponse
+        r"""ListProductCategoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProductCategoriesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListProductCategoriesResponse.
+        r"""Gets the total_count of this ListProductCategoriesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListProductCategoriesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListProductCategoriesResponse.
+        r"""Sets the total_count of this ListProductCategoriesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListProductCategoriesResponse(SdkResponse):
 
     @property
     def incident_product_category_list(self):
-        """Gets the incident_product_category_list of this ListProductCategoriesResponse.
+        r"""Gets the incident_product_category_list of this ListProductCategoriesResponse.
 
         产品类型列表
 
@@ -84,7 +84,7 @@ class ListProductCategoriesResponse(SdkResponse):
 
     @incident_product_category_list.setter
     def incident_product_category_list(self, incident_product_category_list):
-        """Sets the incident_product_category_list of this ListProductCategoriesResponse.
+        r"""Sets the incident_product_category_list of this ListProductCategoriesResponse.
 
         产品类型列表
 

@@ -25,7 +25,7 @@ class ChangePasswordV5Request:
     }
 
     def __init__(self, body=None):
-        """ChangePasswordV5Request
+        r"""ChangePasswordV5Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangePasswordV5Request:
 
     @property
     def body(self):
-        """Gets the body of this ChangePasswordV5Request.
+        r"""Gets the body of this ChangePasswordV5Request.
 
         :return: The body of this ChangePasswordV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.ChangePasswordReqBody`
@@ -52,7 +52,7 @@ class ChangePasswordV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangePasswordV5Request.
+        r"""Sets the body of this ChangePasswordV5Request.
 
         :param body: The body of this ChangePasswordV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.ChangePasswordReqBody`

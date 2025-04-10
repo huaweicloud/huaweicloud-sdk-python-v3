@@ -65,7 +65,7 @@ class SourceMobileMQParameters:
     }
 
     def __init__(self, group_id=None, instance_id=None, topic=None, tag=None, authentication_required=None, msg_trace_switch=None, access_key=None, secret_key=None, message_model=None, addr_type=None, addr=None, sdk_url=None, consume_timeout=None, message_type=None, suspend_time=None, max_reconsumer_times=None, consumer_thread_nums=None, consumer_batch_max_size=None, consumer_max_wait=None, vpc_id=None, subnet_id=None):
-        """SourceMobileMQParameters
+        r"""SourceMobileMQParameters
 
         The model defined in huaweicloud sdk
 
@@ -174,7 +174,7 @@ class SourceMobileMQParameters:
 
     @property
     def group_id(self):
-        """Gets the group_id of this SourceMobileMQParameters.
+        r"""Gets the group_id of this SourceMobileMQParameters.
 
         消费组id
 
@@ -185,7 +185,7 @@ class SourceMobileMQParameters:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this SourceMobileMQParameters.
+        r"""Sets the group_id of this SourceMobileMQParameters.
 
         消费组id
 
@@ -196,7 +196,7 @@ class SourceMobileMQParameters:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SourceMobileMQParameters.
+        r"""Gets the instance_id of this SourceMobileMQParameters.
 
         实例id
 
@@ -207,7 +207,7 @@ class SourceMobileMQParameters:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SourceMobileMQParameters.
+        r"""Sets the instance_id of this SourceMobileMQParameters.
 
         实例id
 
@@ -218,7 +218,7 @@ class SourceMobileMQParameters:
 
     @property
     def topic(self):
-        """Gets the topic of this SourceMobileMQParameters.
+        r"""Gets the topic of this SourceMobileMQParameters.
 
         topic
 
@@ -229,7 +229,7 @@ class SourceMobileMQParameters:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SourceMobileMQParameters.
+        r"""Sets the topic of this SourceMobileMQParameters.
 
         topic
 
@@ -240,7 +240,7 @@ class SourceMobileMQParameters:
 
     @property
     def tag(self):
-        """Gets the tag of this SourceMobileMQParameters.
+        r"""Gets the tag of this SourceMobileMQParameters.
 
         标签
 
@@ -251,7 +251,7 @@ class SourceMobileMQParameters:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this SourceMobileMQParameters.
+        r"""Sets the tag of this SourceMobileMQParameters.
 
         标签
 
@@ -262,7 +262,7 @@ class SourceMobileMQParameters:
 
     @property
     def authentication_required(self):
-        """Gets the authentication_required of this SourceMobileMQParameters.
+        r"""Gets the authentication_required of this SourceMobileMQParameters.
 
         鉴权认证
 
@@ -273,7 +273,7 @@ class SourceMobileMQParameters:
 
     @authentication_required.setter
     def authentication_required(self, authentication_required):
-        """Sets the authentication_required of this SourceMobileMQParameters.
+        r"""Sets the authentication_required of this SourceMobileMQParameters.
 
         鉴权认证
 
@@ -284,7 +284,7 @@ class SourceMobileMQParameters:
 
     @property
     def msg_trace_switch(self):
-        """Gets the msg_trace_switch of this SourceMobileMQParameters.
+        r"""Gets the msg_trace_switch of this SourceMobileMQParameters.
 
         保存消息轨迹
 
@@ -295,7 +295,7 @@ class SourceMobileMQParameters:
 
     @msg_trace_switch.setter
     def msg_trace_switch(self, msg_trace_switch):
-        """Sets the msg_trace_switch of this SourceMobileMQParameters.
+        r"""Sets the msg_trace_switch of this SourceMobileMQParameters.
 
         保存消息轨迹
 
@@ -306,7 +306,7 @@ class SourceMobileMQParameters:
 
     @property
     def access_key(self):
-        """Gets the access_key of this SourceMobileMQParameters.
+        r"""Gets the access_key of this SourceMobileMQParameters.
 
         AccessKey
 
@@ -317,7 +317,7 @@ class SourceMobileMQParameters:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this SourceMobileMQParameters.
+        r"""Sets the access_key of this SourceMobileMQParameters.
 
         AccessKey
 
@@ -328,7 +328,7 @@ class SourceMobileMQParameters:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this SourceMobileMQParameters.
+        r"""Gets the secret_key of this SourceMobileMQParameters.
 
         SecretKey
 
@@ -339,7 +339,7 @@ class SourceMobileMQParameters:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this SourceMobileMQParameters.
+        r"""Sets the secret_key of this SourceMobileMQParameters.
 
         SecretKey
 
@@ -350,7 +350,7 @@ class SourceMobileMQParameters:
 
     @property
     def message_model(self):
-        """Gets the message_model of this SourceMobileMQParameters.
+        r"""Gets the message_model of this SourceMobileMQParameters.
 
         订阅方式
 
@@ -361,7 +361,7 @@ class SourceMobileMQParameters:
 
     @message_model.setter
     def message_model(self, message_model):
-        """Sets the message_model of this SourceMobileMQParameters.
+        r"""Sets the message_model of this SourceMobileMQParameters.
 
         订阅方式
 
@@ -372,7 +372,7 @@ class SourceMobileMQParameters:
 
     @property
     def addr_type(self):
-        """Gets the addr_type of this SourceMobileMQParameters.
+        r"""Gets the addr_type of this SourceMobileMQParameters.
 
         接入点类型
 
@@ -383,7 +383,7 @@ class SourceMobileMQParameters:
 
     @addr_type.setter
     def addr_type(self, addr_type):
-        """Sets the addr_type of this SourceMobileMQParameters.
+        r"""Sets the addr_type of this SourceMobileMQParameters.
 
         接入点类型
 
@@ -394,7 +394,7 @@ class SourceMobileMQParameters:
 
     @property
     def addr(self):
-        """Gets the addr of this SourceMobileMQParameters.
+        r"""Gets the addr of this SourceMobileMQParameters.
 
         地址
 
@@ -405,7 +405,7 @@ class SourceMobileMQParameters:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this SourceMobileMQParameters.
+        r"""Sets the addr of this SourceMobileMQParameters.
 
         地址
 
@@ -416,7 +416,7 @@ class SourceMobileMQParameters:
 
     @property
     def sdk_url(self):
-        """Gets the sdk_url of this SourceMobileMQParameters.
+        r"""Gets the sdk_url of this SourceMobileMQParameters.
 
         依赖SDK
 
@@ -427,7 +427,7 @@ class SourceMobileMQParameters:
 
     @sdk_url.setter
     def sdk_url(self, sdk_url):
-        """Sets the sdk_url of this SourceMobileMQParameters.
+        r"""Sets the sdk_url of this SourceMobileMQParameters.
 
         依赖SDK
 
@@ -438,7 +438,7 @@ class SourceMobileMQParameters:
 
     @property
     def consume_timeout(self):
-        """Gets the consume_timeout of this SourceMobileMQParameters.
+        r"""Gets the consume_timeout of this SourceMobileMQParameters.
 
         消费超时时间
 
@@ -449,7 +449,7 @@ class SourceMobileMQParameters:
 
     @consume_timeout.setter
     def consume_timeout(self, consume_timeout):
-        """Sets the consume_timeout of this SourceMobileMQParameters.
+        r"""Sets the consume_timeout of this SourceMobileMQParameters.
 
         消费超时时间
 
@@ -460,7 +460,7 @@ class SourceMobileMQParameters:
 
     @property
     def message_type(self):
-        """Gets the message_type of this SourceMobileMQParameters.
+        r"""Gets the message_type of this SourceMobileMQParameters.
 
         消息类型
 
@@ -471,7 +471,7 @@ class SourceMobileMQParameters:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this SourceMobileMQParameters.
+        r"""Sets the message_type of this SourceMobileMQParameters.
 
         消息类型
 
@@ -482,7 +482,7 @@ class SourceMobileMQParameters:
 
     @property
     def suspend_time(self):
-        """Gets the suspend_time of this SourceMobileMQParameters.
+        r"""Gets the suspend_time of this SourceMobileMQParameters.
 
         失败重试的等待时间
 
@@ -493,7 +493,7 @@ class SourceMobileMQParameters:
 
     @suspend_time.setter
     def suspend_time(self, suspend_time):
-        """Sets the suspend_time of this SourceMobileMQParameters.
+        r"""Sets the suspend_time of this SourceMobileMQParameters.
 
         失败重试的等待时间
 
@@ -504,7 +504,7 @@ class SourceMobileMQParameters:
 
     @property
     def max_reconsumer_times(self):
-        """Gets the max_reconsumer_times of this SourceMobileMQParameters.
+        r"""Gets the max_reconsumer_times of this SourceMobileMQParameters.
 
         最大重试次数
 
@@ -515,7 +515,7 @@ class SourceMobileMQParameters:
 
     @max_reconsumer_times.setter
     def max_reconsumer_times(self, max_reconsumer_times):
-        """Sets the max_reconsumer_times of this SourceMobileMQParameters.
+        r"""Sets the max_reconsumer_times of this SourceMobileMQParameters.
 
         最大重试次数
 
@@ -526,7 +526,7 @@ class SourceMobileMQParameters:
 
     @property
     def consumer_thread_nums(self):
-        """Gets the consumer_thread_nums of this SourceMobileMQParameters.
+        r"""Gets the consumer_thread_nums of this SourceMobileMQParameters.
 
         消费线程数
 
@@ -537,7 +537,7 @@ class SourceMobileMQParameters:
 
     @consumer_thread_nums.setter
     def consumer_thread_nums(self, consumer_thread_nums):
-        """Sets the consumer_thread_nums of this SourceMobileMQParameters.
+        r"""Sets the consumer_thread_nums of this SourceMobileMQParameters.
 
         消费线程数
 
@@ -548,7 +548,7 @@ class SourceMobileMQParameters:
 
     @property
     def consumer_batch_max_size(self):
-        """Gets the consumer_batch_max_size of this SourceMobileMQParameters.
+        r"""Gets the consumer_batch_max_size of this SourceMobileMQParameters.
 
         批量消费最大消息数
 
@@ -559,7 +559,7 @@ class SourceMobileMQParameters:
 
     @consumer_batch_max_size.setter
     def consumer_batch_max_size(self, consumer_batch_max_size):
-        """Sets the consumer_batch_max_size of this SourceMobileMQParameters.
+        r"""Sets the consumer_batch_max_size of this SourceMobileMQParameters.
 
         批量消费最大消息数
 
@@ -570,7 +570,7 @@ class SourceMobileMQParameters:
 
     @property
     def consumer_max_wait(self):
-        """Gets the consumer_max_wait of this SourceMobileMQParameters.
+        r"""Gets the consumer_max_wait of this SourceMobileMQParameters.
 
         批量消费最大等待时长，单位：秒
 
@@ -581,7 +581,7 @@ class SourceMobileMQParameters:
 
     @consumer_max_wait.setter
     def consumer_max_wait(self, consumer_max_wait):
-        """Sets the consumer_max_wait of this SourceMobileMQParameters.
+        r"""Sets the consumer_max_wait of this SourceMobileMQParameters.
 
         批量消费最大等待时长，单位：秒
 
@@ -592,7 +592,7 @@ class SourceMobileMQParameters:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SourceMobileMQParameters.
+        r"""Gets the vpc_id of this SourceMobileMQParameters.
 
         虚拟私有云
 
@@ -603,7 +603,7 @@ class SourceMobileMQParameters:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SourceMobileMQParameters.
+        r"""Sets the vpc_id of this SourceMobileMQParameters.
 
         虚拟私有云
 
@@ -614,7 +614,7 @@ class SourceMobileMQParameters:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this SourceMobileMQParameters.
+        r"""Gets the subnet_id of this SourceMobileMQParameters.
 
         子网
 
@@ -625,7 +625,7 @@ class SourceMobileMQParameters:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this SourceMobileMQParameters.
+        r"""Sets the subnet_id of this SourceMobileMQParameters.
 
         子网
 

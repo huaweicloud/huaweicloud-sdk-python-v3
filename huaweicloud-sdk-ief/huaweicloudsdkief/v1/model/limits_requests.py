@@ -31,7 +31,7 @@ class LimitsRequests:
     }
 
     def __init__(self, cpu=None, memory=None, gpu=None, npu=None):
-        """LimitsRequests
+        r"""LimitsRequests
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LimitsRequests:
 
     @property
     def cpu(self):
-        """Gets the cpu of this LimitsRequests.
+        r"""Gets the cpu of this LimitsRequests.
 
         cpu核数，大于等于0.01，最大1000；请求不需要带单位
 
@@ -75,7 +75,7 @@ class LimitsRequests:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this LimitsRequests.
+        r"""Sets the cpu of this LimitsRequests.
 
         cpu核数，大于等于0.01，最大1000；请求不需要带单位
 
@@ -86,7 +86,7 @@ class LimitsRequests:
 
     @property
     def memory(self):
-        """Gets the memory of this LimitsRequests.
+        r"""Gets the memory of this LimitsRequests.
 
         内存大小，单位兆，大于等于0.01，最大1024000。注意：内存的limits值最小为4；请求不需要带单位
 
@@ -97,7 +97,7 @@ class LimitsRequests:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this LimitsRequests.
+        r"""Sets the memory of this LimitsRequests.
 
         内存大小，单位兆，大于等于0.01，最大1024000。注意：内存的limits值最小为4；请求不需要带单位
 
@@ -108,7 +108,7 @@ class LimitsRequests:
 
     @property
     def gpu(self):
-        """Gets the gpu of this LimitsRequests.
+        r"""Gets the gpu of this LimitsRequests.
 
         Gpu显存大小，单位兆，大于等于0.01，最大1024000；请求不需要带单位
 
@@ -119,7 +119,7 @@ class LimitsRequests:
 
     @gpu.setter
     def gpu(self, gpu):
-        """Sets the gpu of this LimitsRequests.
+        r"""Sets the gpu of this LimitsRequests.
 
         Gpu显存大小，单位兆，大于等于0.01，最大1024000；请求不需要带单位
 
@@ -130,7 +130,7 @@ class LimitsRequests:
 
     @property
     def npu(self):
-        """Gets the npu of this LimitsRequests.
+        r"""Gets the npu of this LimitsRequests.
 
         Npu个数，大于0，最大1000；请求不需要带单位
 
@@ -141,7 +141,7 @@ class LimitsRequests:
 
     @npu.setter
     def npu(self, npu):
-        """Sets the npu of this LimitsRequests.
+        r"""Sets the npu of this LimitsRequests.
 
         Npu个数，大于0，最大1000；请求不需要带单位
 

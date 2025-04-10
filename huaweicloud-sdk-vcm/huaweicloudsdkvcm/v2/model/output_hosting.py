@@ -29,7 +29,7 @@ class OutputHosting:
     }
 
     def __init__(self, obs=None, result_json_overdue_at=None, check_obs_after_end_state=None):
-        """OutputHosting
+        r"""OutputHosting
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OutputHosting:
 
     @property
     def obs(self):
-        """Gets the obs of this OutputHosting.
+        r"""Gets the obs of this OutputHosting.
 
         :return: The obs of this OutputHosting.
         :rtype: :class:`huaweicloudsdkvcm.v2.OutputHostingObs`
@@ -66,7 +66,7 @@ class OutputHosting:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this OutputHosting.
+        r"""Sets the obs of this OutputHosting.
 
         :param obs: The obs of this OutputHosting.
         :type obs: :class:`huaweicloudsdkvcm.v2.OutputHostingObs`
@@ -75,7 +75,7 @@ class OutputHosting:
 
     @property
     def result_json_overdue_at(self):
-        """Gets the result_json_overdue_at of this OutputHosting.
+        r"""Gets the result_json_overdue_at of this OutputHosting.
 
         托管文件result.json的过期日期，文件默认保存48小时。 result.json文件生成且未过期时，会有这个字段。
 
@@ -86,7 +86,7 @@ class OutputHosting:
 
     @result_json_overdue_at.setter
     def result_json_overdue_at(self, result_json_overdue_at):
-        """Sets the result_json_overdue_at of this OutputHosting.
+        r"""Sets the result_json_overdue_at of this OutputHosting.
 
         托管文件result.json的过期日期，文件默认保存48小时。 result.json文件生成且未过期时，会有这个字段。
 
@@ -97,7 +97,7 @@ class OutputHosting:
 
     @property
     def check_obs_after_end_state(self):
-        """Gets the check_obs_after_end_state of this OutputHosting.
+        r"""Gets the check_obs_after_end_state of this OutputHosting.
 
         True表示校验obs。
 
@@ -108,7 +108,7 @@ class OutputHosting:
 
     @check_obs_after_end_state.setter
     def check_obs_after_end_state(self, check_obs_after_end_state):
-        """Sets the check_obs_after_end_state of this OutputHosting.
+        r"""Sets the check_obs_after_end_state of this OutputHosting.
 
         True表示校验obs。
 

@@ -27,7 +27,7 @@ class ExportSqlJobResultRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """ExportSqlJobResultRequest
+        r"""ExportSqlJobResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportSqlJobResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExportSqlJobResultRequest.
+        r"""Gets the job_id of this ExportSqlJobResultRequest.
 
         作业ID
 
@@ -60,7 +60,7 @@ class ExportSqlJobResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExportSqlJobResultRequest.
+        r"""Sets the job_id of this ExportSqlJobResultRequest.
 
         作业ID
 
@@ -71,7 +71,7 @@ class ExportSqlJobResultRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportSqlJobResultRequest.
+        r"""Gets the body of this ExportSqlJobResultRequest.
 
         :return: The body of this ExportSqlJobResultRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequestBody`
@@ -80,7 +80,7 @@ class ExportSqlJobResultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportSqlJobResultRequest.
+        r"""Sets the body of this ExportSqlJobResultRequest.
 
         :param body: The body of this ExportSqlJobResultRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequestBody`

@@ -34,7 +34,7 @@ class CloudtestAsyncClient(Client):
         return client_builder
 
     def add_test_case_comment_async(self, request):
-        """新增用例评论
+        r"""新增用例评论
 
         新增用例评论
         
@@ -103,7 +103,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_add_relations_by_one_case_async(self, request):
-        """添加需求/缺陷和多个用例关联关系
+        r"""添加需求/缺陷和多个用例关联关系
 
         添加需求/缺陷和多个用例关联关系
         
@@ -170,7 +170,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_add_resources_for_iterator_async(self, request):
-        """向迭代中添加资源
+        r"""向迭代中添加资源
 
         向迭代中添加资源
         
@@ -237,7 +237,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_delete_test_case_async(self, request):
-        """批量删除自定义测试服务类型用例
+        r"""批量删除自定义测试服务类型用例
 
         批量删除自定义测试服务类型用例
         
@@ -304,7 +304,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_delete_test_cases_async(self, request):
-        """批量删除用例
+        r"""批量删除用例
 
         批量删除用例
         
@@ -371,7 +371,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_delete_test_report_async(self, request):
-        """根据测试报告uri列表，删除测试报告
+        r"""根据测试报告uri列表，删除测试报告
 
         根据测试报告uri列表，删除测试报告
         
@@ -438,7 +438,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_remove_test_cases_from_iterator_async(self, request):
-        """从迭代中批量移除用例
+        r"""从迭代中批量移除用例
 
         从迭代中批量移除用例
         
@@ -505,7 +505,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_update_version_test_cases_async(self, request):
-        """批量更新用例属性
+        r"""批量更新用例属性
 
         批量更新用例属性
         
@@ -572,7 +572,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def check_permission_async(self, request):
-        """检查项目权限
+        r"""检查项目权限
 
         检查项目权限
         
@@ -639,7 +639,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_iterator_async(self, request):
-        """新增迭代
+        r"""新增迭代
 
         新增迭代
         
@@ -706,7 +706,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_plan_async(self, request):
-        """项目下创建计划
+        r"""项目下创建计划
 
         项目下创建计划
         
@@ -773,7 +773,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_project_branch_async(self, request):
-        """新增分支
+        r"""新增分支
 
         新增分支
         
@@ -838,7 +838,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_relations_by_one_case_async(self, request):
-        """添加一个用例和多个需求/缺陷关联关系
+        r"""添加一个用例和多个需求/缺陷关联关系
 
         添加一个用例和多个需求/缺陷关联关系
         
@@ -905,7 +905,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_report_async(self, request):
-        """保存单个自定义报表
+        r"""保存单个自定义报表
 
         保存单个自定义报表
         
@@ -974,7 +974,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_resource_uri_async(self, request):
-        """生成资源URI
+        r"""生成资源URI
 
         生成资源URI
         
@@ -1039,7 +1039,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_service_async(self, request):
-        """新测试类型服务注册
+        r"""新测试类型服务注册
 
         通过接口CreateService注册成为自定义服务。 注册完成后界面将会出现此自定义测试类型。
         
@@ -1104,7 +1104,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_test_case_async(self, request):
-        """创建自定义测试服务类型用例
+        r"""创建自定义测试服务类型用例
 
         创建自定义测试服务类型用例
         
@@ -1171,7 +1171,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_test_case_in_plan_async(self, request):
-        """计划中批量添加测试用例
+        r"""计划中批量添加测试用例
 
         计划中批量添加测试用例
         
@@ -1240,7 +1240,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_user_defined_url_key_word_async(self, request):
-        """新增用户自定义URL关键字
+        r"""新增用户自定义URL关键字
 
         新增用户自定义URL关键字
         
@@ -1307,7 +1307,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_version_test_case_async(self, request):
-        """在分支或者测试计划下创建用例
+        r"""在分支或者测试计划下创建用例
 
         在分支或者测试计划下创建用例
         
@@ -1374,7 +1374,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_basic_aw_by_id_async(self, request):
-        """融合版本删除单个basicAw
+        r"""融合版本删除单个basicAw
 
         融合版本删除单个basicAw
         
@@ -1441,7 +1441,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_facotr_by_id_async(self, request):
-        """删除因子
+        r"""删除因子
 
         删除因子
         
@@ -1508,7 +1508,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_relations_by_one_case_async(self, request):
-        """删除一个用例和多个需求/缺陷关联关系
+        r"""删除一个用例和多个需求/缺陷关联关系
 
         删除一个用例和多个需求/缺陷关联关系
         
@@ -1575,7 +1575,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_service_async(self, request):
-        """删除已注册服务
+        r"""删除已注册服务
 
         删除已注册服务
         
@@ -1640,7 +1640,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_test_case_comment_async(self, request):
-        """删除用例评论
+        r"""删除用例评论
 
         删除用例评论
         
@@ -1711,7 +1711,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_alarm_statistics_using_async(self, request):
-        """查询告警统计数据
+        r"""查询告警统计数据
 
         查询告警统计数据
         
@@ -1778,7 +1778,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_alert_groups_by_condition_async(self, request):
-        """查询告警组列表
+        r"""查询告警组列表
 
         查询告警组列表
         
@@ -1845,7 +1845,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_alert_templates_async(self, request):
-        """查询告警模板
+        r"""查询告警模板
 
         查询告警模板
         
@@ -1916,7 +1916,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_all_branches_async(self, request):
-        """获取分支列表
+        r"""获取分支列表
 
         获取分支列表
         
@@ -1985,7 +1985,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_all_config_item_by_type_async(self, request):
-        """查询任务告警信息
+        r"""查询任务告警信息
 
         查询任务告警信息
         
@@ -2052,7 +2052,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_all_iterators_async(self, request):
-        """查询项目下所有迭代计划
+        r"""查询项目下所有迭代计划
 
         查询项目下所有迭代计划
         
@@ -2117,7 +2117,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_all_test_cases_async(self, request):
-        """查询用例列表
+        r"""查询用例列表
 
         查询用例列表
         
@@ -2184,7 +2184,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_attachments_async(self, request):
-        """查询附件列表
+        r"""查询附件列表
 
         查询附件列表
         
@@ -2253,7 +2253,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_available_config_async(self, request):
-        """获取当前局点功能是否开启
+        r"""获取当前局点功能是否开启
 
         获取当前局点功能是否开启
         
@@ -2318,7 +2318,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_basic_aw_async(self, request):
-        """根据id获取单个basicAW信息
+        r"""根据id获取单个basicAW信息
 
         根据id获取单个basicAW信息
         
@@ -2385,7 +2385,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_basic_aw_info_list_supports_search_async(self, request):
-        """分页获取工程BasicAW详细信息列表（含目录）
+        r"""分页获取工程BasicAW详细信息列表（含目录）
 
         分页获取工程BasicAW列表（含目录）
         
@@ -2458,7 +2458,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_branches_async(self, request):
-        """获取分支列表
+        r"""获取分支列表
 
         获取分支列表
         
@@ -2531,7 +2531,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_cases_status_async(self, request):
-        """批量获取用例状态
+        r"""批量获取用例状态
 
         批量获取用例状态
         
@@ -2598,7 +2598,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_domain_visible_services_async(self, request):
-        """查询当前租户可见的第三方服务列表
+        r"""查询当前租户可见的第三方服务列表
 
         查询当前租户可见的第三方服务列表
         
@@ -2663,7 +2663,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_issue_tree_async(self, request):
-        """查询需求树
+        r"""查询需求树
 
         查询需求树
         
@@ -2732,7 +2732,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_iterator_issue_tree_async(self, request):
-        """查询迭代关联的需求列表或树
+        r"""查询迭代关联的需求列表或树
 
         查询迭代关联的需求列表或树
         
@@ -2801,7 +2801,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_iterators_async(self, request):
-        """查询迭代计划列表，包含统计信息
+        r"""查询迭代计划列表，包含统计信息
 
         查询迭代计划列表，包含统计信息
         
@@ -2866,7 +2866,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_lines_using_async(self, request):
-        """查询仪表盘折线图数据
+        r"""查询仪表盘折线图数据
 
         查询仪表盘折线图数据
         
@@ -2933,7 +2933,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_msg_infos_using_async(self, request):
-        """仪表盘根据测试服务ID获取MsgInfo详细信息
+        r"""仪表盘根据测试服务ID获取MsgInfo详细信息
 
         成功返回MsgInfo的详细信息列表，返回值为Model的List
         
@@ -3000,7 +3000,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_own_test_cases_async(self, request):
-        """获取责任人是自己的测试用例
+        r"""获取责任人是自己的测试用例
 
         获取责任人是自己的测试用例
         
@@ -3073,7 +3073,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_project_field_configs_async(self, request):
-        """查询项目字段配置
+        r"""查询项目字段配置
 
         查询项目字段配置
         
@@ -3138,7 +3138,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_project_test_case_fields_async(self, request):
-        """获取项目测试用例自定义字段列表
+        r"""获取项目测试用例自定义字段列表
 
         获取项目测试用例自定义字段列表
         
@@ -3203,7 +3203,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_public_lib_and_aws_async(self, request):
-        """获取工程关联的公共aw信息和公共aw所属公共aw库信息
+        r"""获取工程关联的公共aw信息和公共aw所属公共aw库信息
 
         获取工程关联的公共aw信息和公共aw所属公共aw库信息
         
@@ -3268,7 +3268,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_reports_async(self, request):
-        """页面报表展示
+        r"""页面报表展示
 
         页面报表展示
         
@@ -3341,7 +3341,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_resource_pools_async(self, request):
-        """获取资源池列表
+        r"""获取资源池列表
 
         获取资源池列表
         
@@ -3406,7 +3406,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_scatters_using_async(self, request):
-        """查询仪表盘散点图数据
+        r"""查询仪表盘散点图数据
 
         查询仪表盘散点图数据
         
@@ -3473,7 +3473,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_sub_task_case_overstock_using_async(self, request):
-        """查询subTestCase阻塞任务数据
+        r"""查询subTestCase阻塞任务数据
 
         成功返回子任务用例数据积压信息
         
@@ -3552,7 +3552,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_task_assign_cases_async(self, request):
-        """获取测试套关联用例详情
+        r"""获取测试套关联用例详情
 
         获取测试套关联用例详情
         
@@ -3621,7 +3621,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_task_test_cases_async(self, request):
-        """查询用例关联的测试任务列表
+        r"""查询用例关联的测试任务列表
 
         查询用例关联的测试任务列表
         
@@ -3688,7 +3688,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_tasks_async(self, request):
-        """查询测试任务列表
+        r"""查询测试任务列表
 
         查询测试任务列表
         
@@ -3757,7 +3757,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_case_comments_async(self, request):
-        """查询用例评论
+        r"""查询用例评论
 
         查询用例评论
         
@@ -3830,7 +3830,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_case_histories_async(self, request):
-        """查询用例修改历史记录
+        r"""查询用例修改历史记录
 
         查询用例修改历史记录
         
@@ -3899,7 +3899,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_case_script_detail_async(self, request):
-        """获取用例脚本详细信息
+        r"""获取用例脚本详细信息
 
         获取用例脚本详细信息
         
@@ -3968,7 +3968,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_cases_async(self, request):
-        """查询用例列表
+        r"""查询用例列表
 
         查询用例列表
         
@@ -4035,7 +4035,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_cases_by_issue_async(self, request):
-        """查询需求下的用例列表
+        r"""查询需求下的用例列表
 
         查询需求下的用例列表
         
@@ -4104,7 +4104,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_reports_by_condition_async(self, request):
-        """根据查询条件获取测试报告列表
+        r"""根据查询条件获取测试报告列表
 
         根据查询条件获取测试报告列表
         
@@ -4177,7 +4177,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_test_types_async(self, request):
-        """获取测试类型列表
+        r"""获取测试类型列表
 
         获取测试类型列表
         
@@ -4242,7 +4242,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_testcases_by_project_issues_relation_async(self, request):
-        """查询项目下关联了需求的用例列表
+        r"""查询项目下关联了需求的用例列表
 
         查询项目下关联了需求的用例列表
         
@@ -4309,7 +4309,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_usage_infos_async(self, request):
-        """获取租户订单已用资源信息
+        r"""获取租户订单已用资源信息
 
         获取租户订单已用资源信息
         
@@ -4374,7 +4374,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_user_dns_mapping_async(self, request):
-        """查询用户DNS映射
+        r"""查询用户DNS映射
 
         查询用户DNS映射
         
@@ -4439,7 +4439,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_user_package_usage_async(self, request):
-        """ListUserPackageUsage
+        r"""ListUserPackageUsage
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -4503,7 +4503,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_user_popup_info_async(self, request):
-        """ListUserPopupInfo
+        r"""ListUserPopupInfo
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -4567,7 +4567,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_using_get_async(self, request):
-        """查询仪表盘用户的看板
+        r"""查询仪表盘用户的看板
 
         查询仪表盘用户的看板
         
@@ -4638,7 +4638,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_variables_async(self, request):
-        """查询全局变量参数列表V4
+        r"""查询全局变量参数列表V4
 
         查询全局变量参数列表V4
         
@@ -4709,7 +4709,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def remove_issues_from_iterator_async(self, request):
-        """从迭代中移除需求
+        r"""从迭代中移除需求
 
         从迭代中移除需求
         
@@ -4778,7 +4778,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def run_test_case_async(self, request):
-        """批量执行测试用例
+        r"""批量执行测试用例
 
         批量执行测试用例
         
@@ -4845,7 +4845,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def save_task_setting_async(self, request):
-        """保存任务配置
+        r"""保存任务配置
 
         保存任务配置
         
@@ -4912,7 +4912,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_all_config_value_by_type_and_key_async(self, request):
-        """查询任务配置
+        r"""查询任务配置
 
         查询任务配置
         
@@ -4981,7 +4981,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_all_feature_children_async(self, request):
-        """获取特性树V5
+        r"""获取特性树V5
 
         获取目录\\特性树
         
@@ -5048,7 +5048,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_api_testcase_histories_async(self, request):
-        """获取用例历史执行数据
+        r"""获取用例历史执行数据
 
         获取用例历史执行数据
         
@@ -5121,7 +5121,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_asset_async(self, request):
-        """获取资产列表
+        r"""获取资产列表
 
         获取资产列表
         
@@ -5186,7 +5186,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_asset_tree_async(self, request):
-        """获取资产树列表
+        r"""获取资产树列表
 
         获取资产树列表
         
@@ -5253,7 +5253,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_background_info_async(self, request):
-        """获取测试报告的模板设置
+        r"""获取测试报告的模板设置
 
         获取测试报告的模板设置
         
@@ -5318,7 +5318,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_branch_async(self, request):
-        """获取分支详情
+        r"""获取分支详情
 
         获取分支详情
         
@@ -5385,7 +5385,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_case_result_async(self, request):
-        """查询用例结果
+        r"""查询用例结果
 
         查询用例结果
         
@@ -5456,7 +5456,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_concurrency_package_using_async(self, request):
-        """查询租户测试并发套餐状态
+        r"""查询租户测试并发套餐状态
 
         查询租户测试并发套餐状态
         
@@ -5523,7 +5523,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_disclaimer_record_async(self, request):
-        """查询用户免责声明
+        r"""查询用户免责声明
 
         查询用户免责声明
         
@@ -5588,7 +5588,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_domain_info_async(self, request):
-        """根据domainId获取加密的testbirdkey
+        r"""根据domainId获取加密的testbirdkey
 
         根据domainId获取加密的testbirdkey
         
@@ -5651,7 +5651,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_echo_test_package_using_async(self, request):
-        """查询租户在线拨测套餐状态
+        r"""查询租户在线拨测套餐状态
 
         查询租户在线拨测套餐状态
         
@@ -5716,7 +5716,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_factor_by_asset_id_async(self, request):
-        """根据目录查询因子
+        r"""根据目录查询因子
 
         根据目录查询因子
         
@@ -5785,7 +5785,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_factor_by_id_async(self, request):
-        """根据id获取因子
+        r"""根据id获取因子
 
         根据id获取因子
         
@@ -5852,7 +5852,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_feature_children_async(self, request):
-        """获取目录\\特性树
+        r"""获取目录\\特性树
 
         获取目录\\特性树
         
@@ -5919,7 +5919,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_free_declaration_async(self, request):
-        """查询限时免费用户免责声明记录
+        r"""查询限时免费用户免责声明记录
 
         查询限时免费用户免责声明记录
         
@@ -5982,7 +5982,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_if_task_name_repeat_async(self, request):
-        """查询告警模板名称是否重复
+        r"""查询告警模板名称是否重复
 
         查询告警模板名称是否重复
         
@@ -6051,7 +6051,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_if_user_name_repeat_async(self, request):
-        """查询告警组用户名是否重复
+        r"""查询告警组用户名是否重复
 
         查询告警组用户名是否重复
         
@@ -6120,7 +6120,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_issues_by_plan_id_async(self, request):
-        """查询某个测试计划下的需求树
+        r"""查询某个测试计划下的需求树
 
         查询某个测试计划下的需求列表
         
@@ -6191,7 +6191,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_iterator_by_defect_async(self, request):
-        """查询缺陷相关联测试计划
+        r"""查询缺陷相关联测试计划
 
         查询缺陷相关联测试计划
         
@@ -6258,7 +6258,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_iterator_detail_async(self, request):
-        """查询迭代计划详情，包含统计信息
+        r"""查询迭代计划详情，包含统计信息
 
         查询迭代计划详情，包含统计信息
         
@@ -6325,7 +6325,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mind_map_by_id_async(self, request):
-        """根据id获取脑图对象
+        r"""根据id获取脑图对象
 
         根据id获取脑图对象
         
@@ -6392,7 +6392,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mindmap_by_page_async(self, request):
-        """根据条件分页获取脑图对象V3
+        r"""根据条件分页获取脑图对象V3
 
         根据条件分页获取脑图对象V3
         
@@ -6459,7 +6459,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mindmap_creator_name_async(self, request):
-        """获取脑图创建人V2
+        r"""获取脑图创建人V2
 
         获取脑图创建人V2
         
@@ -6524,7 +6524,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_operational_data_current_month_using_async(self, request):
-        """查询运行面板信息
+        r"""查询运行面板信息
 
         成功返回运行面板信息
         
@@ -6589,7 +6589,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_plan_journals_async(self, request):
-        """查询某测试计划下的操作历史
+        r"""查询某测试计划下的操作历史
 
         查询某测试计划下的操作历史
         
@@ -6660,7 +6660,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_plan_list_async(self, request):
-        """项目下查询测试计划列表v2
+        r"""项目下查询测试计划列表v2
 
         项目下查询测试计划列表v2
         
@@ -6739,7 +6739,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_plans_async(self, request):
-        """项目下查询测试计划列表
+        r"""项目下查询测试计划列表
 
         项目下查询测试计划列表
         
@@ -6812,7 +6812,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_progress_async(self, request):
-        """获取异步进度
+        r"""获取异步进度
 
         获取异步进度
         
@@ -6879,7 +6879,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_project_data_dashboard_async(self, request):
-        """查询质量报告看板统计信息
+        r"""查询质量报告看板统计信息
 
         查询质量报告看板统计信息
         
@@ -6946,7 +6946,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_register_service_async(self, request):
-        """用户获取自己当前已经注册的服务
+        r"""用户获取自己当前已经注册的服务
 
         用户获取自己当前已经注册的服务
         
@@ -7009,7 +7009,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_report_async(self, request):
-        """实时计算单个自定义报表
+        r"""实时计算单个自定义报表
 
         实时计算单个自定义报表
         
@@ -7078,7 +7078,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_requirements_overview_async(self, request):
-        """质量报告需求测试情况统计
+        r"""质量报告需求测试情况统计
 
         质量报告需求测试情况统计
         
@@ -7147,7 +7147,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_review_by_page_async(self, request):
-        """根据条件分页获取评审对象V2
+        r"""根据条件分页获取评审对象V2
 
         根据条件分页获取评审对象V2
         
@@ -7214,7 +7214,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_scene_by_page_async(self, request):
-        """根据条件分页获取场景对象V2
+        r"""根据条件分页获取场景对象V2
 
         根据条件分页获取场景对象V2
         
@@ -7281,7 +7281,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_statistic_by_id_async(self, request):
-        """根据脑图id查询统计数目
+        r"""根据脑图id查询统计数目
 
         根据脑图id查询统计数目
         
@@ -7348,7 +7348,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_system_configs_async(self, request):
-        """根据入参动态查询系统配置中的信息
+        r"""根据入参动态查询系统配置中的信息
 
         根据入参动态查询系统配置中的信息
         
@@ -7415,7 +7415,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_template_by_id_async(self, request):
-        """获取模板V2
+        r"""获取模板V2
 
         获取模板V2
         
@@ -7482,7 +7482,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_template_by_page_async(self, request):
-        """根据条件分页获取模板V3
+        r"""根据条件分页获取模板V3
 
         根据条件分页获取模板V3
         
@@ -7549,7 +7549,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_test_case_async(self, request):
-        """查询用例详情
+        r"""查询用例详情
 
         查询用例详情
         
@@ -7624,7 +7624,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_test_case_and_defect_info_async(self, request):
-        """查询用户用例关联缺陷的统计信息
+        r"""查询用户用例关联缺陷的统计信息
 
         查询用户用例关联缺陷的统计信息
         
@@ -7691,7 +7691,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_test_case_detail_async(self, request):
-        """获取测试用例详情
+        r"""获取测试用例详情
 
         获取测试用例详情
         
@@ -7758,7 +7758,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_test_case_detail_v2_async(self, request):
-        """通过用例编号获取测试用例详情
+        r"""通过用例编号获取测试用例详情
 
         通过用例编号获取测试用例详情
         
@@ -7825,7 +7825,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_test_case_reviews_async(self, request):
-        """根据用例查询评审记录
+        r"""根据用例查询评审记录
 
         根据用例查询评审记录
         
@@ -7898,7 +7898,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_test_cases_change_statistics_async(self, request):
-        """版本测试用例变更统计（只统计分支，不统计基线）
+        r"""版本测试用例变更统计（只统计分支，不统计基线）
 
         版本测试用例变更统计（只统计分支，不统计基线）
         
@@ -7965,7 +7965,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_testcase_by_page_async(self, request):
-        """根据条件分页获取测试用例对象V2
+        r"""根据条件分页获取测试用例对象V2
 
         根据条件分页获取测试用例对象V2
         
@@ -8032,7 +8032,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_testpoint_by_page_async(self, request):
-        """根据条件分页获取测试点对象V2
+        r"""根据条件分页获取测试点对象V2
 
         根据条件分页获取测试点对象V2
         
@@ -8099,7 +8099,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_user_access_info_async(self, request):
-        """获取租户订单信息
+        r"""获取租户订单信息
 
         获取租户订单信息
         
@@ -8164,7 +8164,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_user_execute_test_case_info_async(self, request):
-        """查询时段内用例的执行情况
+        r"""查询时段内用例的执行情况
 
         查询时段内用例的执行情况
         
@@ -8231,7 +8231,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_basic_aw_by_id_async(self, request):
-        """修改关键字信息接口
+        r"""修改关键字信息接口
 
         修改关键字信息接口
         
@@ -8300,7 +8300,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_iterator_async(self, request):
-        """修改测试计划
+        r"""修改测试计划
 
         修改测试计划
         
@@ -8367,7 +8367,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_service_async(self, request):
-        """更新已注册服务
+        r"""更新已注册服务
 
         更新已注册服务
         
@@ -8434,7 +8434,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_test_case_async(self, request):
-        """更新自定义测试服务类型用例
+        r"""更新自定义测试服务类型用例
 
         更新自定义测试服务类型用例
         
@@ -8503,7 +8503,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_test_case_and_script_async(self, request):
-        """更新tmss用例和用例脚本
+        r"""更新tmss用例和用例脚本
 
         更新tmss用例和用例脚本
         
@@ -8574,7 +8574,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_test_case_comment_async(self, request):
-        """修改用例评论
+        r"""修改用例评论
 
         修改用例评论
         
@@ -8645,7 +8645,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_test_case_result_async(self, request):
-        """批量更新测试用例结果
+        r"""批量更新测试用例结果
 
         批量更新测试用例结果
         
@@ -8712,7 +8712,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_user_dns_mapping_async(self, request):
-        """更新用户DNS映射
+        r"""更新用户DNS映射
 
         更新用户DNS映射，执行器自定义映射
         
@@ -8779,7 +8779,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_version_test_case_async(self, request):
-        """在分支或者测试计划下修改用例
+        r"""在分支或者测试计划下修改用例
 
         在分支或者测试计划下修改用例
         
@@ -8846,7 +8846,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_api_test_suite_by_repo_file_async(self, request):
-        """通过导入仓库中的文件生成接口测试套
+        r"""通过导入仓库中的文件生成接口测试套
 
         通过导入仓库中的文件生成接口测试套
         
@@ -8913,7 +8913,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def list_environments_async(self, request):
-        """获取环境参数分组列表
+        r"""获取环境参数分组列表
 
         获取环境参数分组列表
         
@@ -8982,7 +8982,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def upload_step_img_async(self, request):
-        """上传测试步骤图片
+        r"""上传测试步骤图片
 
         对外API
         
@@ -9051,7 +9051,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_delete_facotr_by_ids_async(self, request):
-        """批量删除因子
+        r"""批量删除因子
 
         批量删除因子
         
@@ -9118,7 +9118,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def batch_show_test_case_async(self, request):
-        """批量查询用例V3
+        r"""批量查询用例V3
 
         批量查询用例V3
         
@@ -9185,7 +9185,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_asset_tree_async(self, request):
-        """新增资产树节点
+        r"""新增资产树节点
 
         新增资产树节点
         
@@ -9256,7 +9256,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_backup_mindmap_async(self, request):
-        """备份脑图V2
+        r"""备份脑图V2
 
         备份脑图V2
         
@@ -9323,7 +9323,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def create_template_async(self, request):
-        """保存模板V2
+        r"""保存模板V2
 
         保存模板V2
         
@@ -9390,7 +9390,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_asset_async(self, request):
-        """删除资产
+        r"""删除资产
 
         删除资产
         
@@ -9457,7 +9457,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_asset_tree_async(self, request):
-        """删除资产树节点
+        r"""删除资产树节点
 
         删除资产树节点
         
@@ -9526,7 +9526,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_mindmap_backup_by_id_async(self, request):
-        """根据id删除脑图备份V2
+        r"""根据id删除脑图备份V2
 
         根据id删除脑图备份V2
         
@@ -9593,7 +9593,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_mindmap_recycle_by_id_async(self, request):
-        """删除脑图回收站V2
+        r"""删除脑图回收站V2
 
         删除脑图回收站V2
         
@@ -9660,7 +9660,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def delete_template_by_id_async(self, request):
-        """删除模板V2
+        r"""删除模板V2
 
         删除模板V2
         
@@ -9727,7 +9727,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def download_asset_template_async(self, request):
-        """下载资产模板
+        r"""下载资产模板
 
         下载资产模板
         
@@ -9792,7 +9792,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def export_factor_async(self, request):
-        """因子库导出
+        r"""因子库导出
 
         因子库导出
         
@@ -9861,7 +9861,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def import_asset_async(self, request):
-        """资产导入
+        r"""资产导入
 
         资产导入
         
@@ -9930,7 +9930,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def import_factor_async(self, request):
-        """因子导入
+        r"""因子导入
 
         因子导入
         
@@ -10001,7 +10001,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_default_template_by_page_async(self, request):
-        """获取默认模板V2
+        r"""获取默认模板V2
 
         获取默认模板V2
         
@@ -10068,7 +10068,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mindmap_backup_by_id_async(self, request):
-        """根据id获取脑图备份V2
+        r"""根据id获取脑图备份V2
 
         根据id获取脑图备份V2
         
@@ -10135,7 +10135,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mindmap_backup_by_page_async(self, request):
-        """根据条件分页获取脑图备份对象V3
+        r"""根据条件分页获取脑图备份对象V3
 
         根据条件分页获取脑图备份对象V3
         
@@ -10202,7 +10202,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mindmap_recycle_by_id_async(self, request):
-        """根据id获取回收站脑图对象V2
+        r"""根据id获取回收站脑图对象V2
 
         根据id获取回收站脑图对象V2
         
@@ -10269,7 +10269,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_mindmap_recycle_by_page_async(self, request):
-        """根据条件分页获取回收站脑图对象V3
+        r"""根据条件分页获取回收站脑图对象V3
 
         根据条件分页获取回收站脑图对象V3
         
@@ -10336,7 +10336,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def show_testcase_by_id_async(self, request):
-        """根据id获取测试用例对象V2
+        r"""根据id获取测试用例对象V2
 
         根据id获取测试用例对象V2
         
@@ -10403,7 +10403,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_asset_tree_async(self, request):
-        """修改资产树节点
+        r"""修改资产树节点
 
         修改资产树节点
         
@@ -10470,7 +10470,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def update_mindmap_name_async(self, request):
-        """脑图名称编辑
+        r"""脑图名称编辑
 
         脑图名称编辑
         
@@ -10539,7 +10539,7 @@ class CloudtestAsyncClient(Client):
         return http_info
 
     def add_feature_async(self, request):
-        """添加目录信息
+        r"""添加目录信息
 
         添加目录信息
         

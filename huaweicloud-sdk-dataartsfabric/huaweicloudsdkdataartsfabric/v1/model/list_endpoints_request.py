@@ -39,7 +39,7 @@ class ListEndpointsRequest:
     }
 
     def __init__(self, workspace_id=None, offset=None, limit=None, model_id=None, name=None, endpoint_id=None, type=None, visibility=None):
-        """ListEndpointsRequest
+        r"""ListEndpointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListEndpointsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListEndpointsRequest.
+        r"""Gets the workspace_id of this ListEndpointsRequest.
 
         Workspace的ID
 
@@ -102,7 +102,7 @@ class ListEndpointsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListEndpointsRequest.
+        r"""Sets the workspace_id of this ListEndpointsRequest.
 
         Workspace的ID
 
@@ -113,7 +113,7 @@ class ListEndpointsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEndpointsRequest.
+        r"""Gets the offset of this ListEndpointsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -124,7 +124,7 @@ class ListEndpointsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEndpointsRequest.
+        r"""Sets the offset of this ListEndpointsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -135,7 +135,7 @@ class ListEndpointsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointsRequest.
+        r"""Gets the limit of this ListEndpointsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -146,7 +146,7 @@ class ListEndpointsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointsRequest.
+        r"""Sets the limit of this ListEndpointsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -157,7 +157,7 @@ class ListEndpointsRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ListEndpointsRequest.
+        r"""Gets the model_id of this ListEndpointsRequest.
 
         通过模型ID检索，32~36位的英文、数字、短横组合
 
@@ -168,7 +168,7 @@ class ListEndpointsRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ListEndpointsRequest.
+        r"""Sets the model_id of this ListEndpointsRequest.
 
         通过模型ID检索，32~36位的英文、数字、短横组合
 
@@ -179,7 +179,7 @@ class ListEndpointsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEndpointsRequest.
+        r"""Gets the name of this ListEndpointsRequest.
 
         通过名字搜索Endpoint的参数，一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线，支持模糊查询
 
@@ -190,7 +190,7 @@ class ListEndpointsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEndpointsRequest.
+        r"""Sets the name of this ListEndpointsRequest.
 
         通过名字搜索Endpoint的参数，一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线，支持模糊查询
 
@@ -201,7 +201,7 @@ class ListEndpointsRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ListEndpointsRequest.
+        r"""Gets the endpoint_id of this ListEndpointsRequest.
 
         通过id检索Endpoint的参数
 
@@ -212,7 +212,7 @@ class ListEndpointsRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ListEndpointsRequest.
+        r"""Sets the endpoint_id of this ListEndpointsRequest.
 
         通过id检索Endpoint的参数
 
@@ -223,7 +223,7 @@ class ListEndpointsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListEndpointsRequest.
+        r"""Gets the type of this ListEndpointsRequest.
 
         通过类型检索Endpoint的参数
 
@@ -234,7 +234,7 @@ class ListEndpointsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEndpointsRequest.
+        r"""Sets the type of this ListEndpointsRequest.
 
         通过类型检索Endpoint的参数
 
@@ -245,7 +245,7 @@ class ListEndpointsRequest:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ListEndpointsRequest.
+        r"""Gets the visibility of this ListEndpointsRequest.
 
         可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - ALL: 所有的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
 
@@ -256,7 +256,7 @@ class ListEndpointsRequest:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ListEndpointsRequest.
+        r"""Sets the visibility of this ListEndpointsRequest.
 
         可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - ALL: 所有的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
 

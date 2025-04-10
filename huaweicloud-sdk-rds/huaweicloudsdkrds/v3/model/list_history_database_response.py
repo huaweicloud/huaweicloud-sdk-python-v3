@@ -30,7 +30,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, database_limit=None, table_limit=None, instances=None):
-        """ListHistoryDatabaseResponse
+        r"""ListHistoryDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
 
     @property
     def database_limit(self):
-        """Gets the database_limit of this ListHistoryDatabaseResponse.
+        r"""Gets the database_limit of this ListHistoryDatabaseResponse.
 
         恢复库数量限制个数
 
@@ -69,7 +69,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
 
     @database_limit.setter
     def database_limit(self, database_limit):
-        """Sets the database_limit of this ListHistoryDatabaseResponse.
+        r"""Sets the database_limit of this ListHistoryDatabaseResponse.
 
         恢复库数量限制个数
 
@@ -80,7 +80,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
 
     @property
     def table_limit(self):
-        """Gets the table_limit of this ListHistoryDatabaseResponse.
+        r"""Gets the table_limit of this ListHistoryDatabaseResponse.
 
         恢复表数量限制个数
 
@@ -91,7 +91,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
 
     @table_limit.setter
     def table_limit(self, table_limit):
-        """Sets the table_limit of this ListHistoryDatabaseResponse.
+        r"""Sets the table_limit of this ListHistoryDatabaseResponse.
 
         恢复表数量限制个数
 
@@ -102,7 +102,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListHistoryDatabaseResponse.
+        r"""Gets the instances of this ListHistoryDatabaseResponse.
 
         实例信息
 
@@ -113,7 +113,7 @@ class ListHistoryDatabaseResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListHistoryDatabaseResponse.
+        r"""Sets the instances of this ListHistoryDatabaseResponse.
 
         实例信息
 

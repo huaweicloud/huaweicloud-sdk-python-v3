@@ -37,7 +37,7 @@ class NumFeatureReport:
     }
 
     def __init__(self, avg=None, min=None, max=None, median=None, percents_agg=None, name=None, data_type=None):
-        """NumFeatureReport
+        r"""NumFeatureReport
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NumFeatureReport:
 
     @property
     def avg(self):
-        """Gets the avg of this NumFeatureReport.
+        r"""Gets the avg of this NumFeatureReport.
 
         平均值。
 
@@ -96,7 +96,7 @@ class NumFeatureReport:
 
     @avg.setter
     def avg(self, avg):
-        """Sets the avg of this NumFeatureReport.
+        r"""Sets the avg of this NumFeatureReport.
 
         平均值。
 
@@ -107,7 +107,7 @@ class NumFeatureReport:
 
     @property
     def min(self):
-        """Gets the min of this NumFeatureReport.
+        r"""Gets the min of this NumFeatureReport.
 
         最小值。
 
@@ -118,7 +118,7 @@ class NumFeatureReport:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this NumFeatureReport.
+        r"""Sets the min of this NumFeatureReport.
 
         最小值。
 
@@ -129,7 +129,7 @@ class NumFeatureReport:
 
     @property
     def max(self):
-        """Gets the max of this NumFeatureReport.
+        r"""Gets the max of this NumFeatureReport.
 
         最大值。
 
@@ -140,7 +140,7 @@ class NumFeatureReport:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this NumFeatureReport.
+        r"""Sets the max of this NumFeatureReport.
 
         最大值。
 
@@ -151,7 +151,7 @@ class NumFeatureReport:
 
     @property
     def median(self):
-        """Gets the median of this NumFeatureReport.
+        r"""Gets the median of this NumFeatureReport.
 
         中位数。
 
@@ -162,7 +162,7 @@ class NumFeatureReport:
 
     @median.setter
     def median(self, median):
-        """Sets the median of this NumFeatureReport.
+        r"""Sets the median of this NumFeatureReport.
 
         中位数。
 
@@ -173,7 +173,7 @@ class NumFeatureReport:
 
     @property
     def percents_agg(self):
-        """Gets the percents_agg of this NumFeatureReport.
+        r"""Gets the percents_agg of this NumFeatureReport.
 
         百分位统计。
 
@@ -184,7 +184,7 @@ class NumFeatureReport:
 
     @percents_agg.setter
     def percents_agg(self, percents_agg):
-        """Sets the percents_agg of this NumFeatureReport.
+        r"""Sets the percents_agg of this NumFeatureReport.
 
         百分位统计。
 
@@ -195,7 +195,7 @@ class NumFeatureReport:
 
     @property
     def name(self):
-        """Gets the name of this NumFeatureReport.
+        r"""Gets the name of this NumFeatureReport.
 
         特征名。
 
@@ -206,7 +206,7 @@ class NumFeatureReport:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NumFeatureReport.
+        r"""Sets the name of this NumFeatureReport.
 
         特征名。
 
@@ -217,7 +217,7 @@ class NumFeatureReport:
 
     @property
     def data_type(self):
-        """Gets the data_type of this NumFeatureReport.
+        r"""Gets the data_type of this NumFeatureReport.
 
         特征类型。
 
@@ -228,7 +228,7 @@ class NumFeatureReport:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this NumFeatureReport.
+        r"""Sets the data_type of this NumFeatureReport.
 
         特征类型。
 

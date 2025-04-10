@@ -27,7 +27,7 @@ class TagMultyValueEntity:
     }
 
     def __init__(self, key=None, values=None):
-        """TagMultyValueEntity
+        r"""TagMultyValueEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagMultyValueEntity:
 
     @property
     def key(self):
-        """Gets the key of this TagMultyValueEntity.
+        r"""Gets the key of this TagMultyValueEntity.
 
         标签键。
 
@@ -61,7 +61,7 @@ class TagMultyValueEntity:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagMultyValueEntity.
+        r"""Sets the key of this TagMultyValueEntity.
 
         标签键。
 
@@ -72,7 +72,7 @@ class TagMultyValueEntity:
 
     @property
     def values(self):
-        """Gets the values of this TagMultyValueEntity.
+        r"""Gets the values of this TagMultyValueEntity.
 
         标签值。
 
@@ -83,7 +83,7 @@ class TagMultyValueEntity:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagMultyValueEntity.
+        r"""Sets the values of this TagMultyValueEntity.
 
         标签值。
 

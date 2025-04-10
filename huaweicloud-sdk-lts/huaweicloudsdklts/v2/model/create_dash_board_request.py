@@ -25,7 +25,7 @@ class CreateDashBoardRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDashBoardRequest
+        r"""CreateDashBoardRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDashBoardRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDashBoardRequest.
+        r"""Gets the body of this CreateDashBoardRequest.
 
         :return: The body of this CreateDashBoardRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateDashBoardReqBody`
@@ -52,7 +52,7 @@ class CreateDashBoardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDashBoardRequest.
+        r"""Sets the body of this CreateDashBoardRequest.
 
         :param body: The body of this CreateDashBoardRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateDashBoardReqBody`

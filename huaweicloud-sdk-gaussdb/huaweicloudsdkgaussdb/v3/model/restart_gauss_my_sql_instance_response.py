@@ -26,7 +26,7 @@ class RestartGaussMySqlInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestartGaussMySqlInstanceResponse
+        r"""RestartGaussMySqlInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartGaussMySqlInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartGaussMySqlInstanceResponse.
+        r"""Gets the job_id of this RestartGaussMySqlInstanceResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class RestartGaussMySqlInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartGaussMySqlInstanceResponse.
+        r"""Sets the job_id of this RestartGaussMySqlInstanceResponse.
 
         任务ID。
 

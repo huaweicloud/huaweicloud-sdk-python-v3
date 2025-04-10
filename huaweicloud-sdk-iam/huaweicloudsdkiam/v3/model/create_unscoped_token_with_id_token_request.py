@@ -29,7 +29,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, authorization=None):
-        """CreateUnscopedTokenWithIdTokenRequest
+        r"""CreateUnscopedTokenWithIdTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this CreateUnscopedTokenWithIdTokenRequest.
+        r"""Gets the idp_id of this CreateUnscopedTokenWithIdTokenRequest.
 
         身份提供商id。
 
@@ -65,7 +65,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this CreateUnscopedTokenWithIdTokenRequest.
+        r"""Sets the idp_id of this CreateUnscopedTokenWithIdTokenRequest.
 
         身份提供商id。
 
@@ -76,7 +76,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this CreateUnscopedTokenWithIdTokenRequest.
+        r"""Gets the protocol_id of this CreateUnscopedTokenWithIdTokenRequest.
 
         协议id。
 
@@ -87,7 +87,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this CreateUnscopedTokenWithIdTokenRequest.
+        r"""Sets the protocol_id of this CreateUnscopedTokenWithIdTokenRequest.
 
         协议id。
 
@@ -98,7 +98,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreateUnscopedTokenWithIdTokenRequest.
+        r"""Gets the authorization of this CreateUnscopedTokenWithIdTokenRequest.
 
         OpenID Connect身份提供商的ID Token，格式为Bearer {ID Token}。
 
@@ -109,7 +109,7 @@ class CreateUnscopedTokenWithIdTokenRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreateUnscopedTokenWithIdTokenRequest.
+        r"""Sets the authorization of this CreateUnscopedTokenWithIdTokenRequest.
 
         OpenID Connect身份提供商的ID Token，格式为Bearer {ID Token}。
 

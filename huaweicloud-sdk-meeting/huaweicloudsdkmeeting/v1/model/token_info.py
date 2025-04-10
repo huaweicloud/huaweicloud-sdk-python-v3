@@ -45,7 +45,7 @@ class TokenInfo:
     }
 
     def __init__(self, token=None, tmp_ws_token=None, ws_url=None, role=None, expire_time=None, user_id=None, org_id=None, participant_id=None, conf_token_expire_time=None, vmr_current_conf_id=None, support_notify_type=None):
-        """TokenInfo
+        r"""TokenInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TokenInfo:
 
     @property
     def token(self):
-        """Gets the token of this TokenInfo.
+        r"""Gets the token of this TokenInfo.
 
         会控Token。有效期半个小时。
 
@@ -124,7 +124,7 @@ class TokenInfo:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this TokenInfo.
+        r"""Sets the token of this TokenInfo.
 
         会控Token。有效期半个小时。
 
@@ -135,7 +135,7 @@ class TokenInfo:
 
     @property
     def tmp_ws_token(self):
-        """Gets the tmp_ws_token of this TokenInfo.
+        r"""Gets the tmp_ws_token of this TokenInfo.
 
         会控WebSocket建链鉴权Token。
 
@@ -146,7 +146,7 @@ class TokenInfo:
 
     @tmp_ws_token.setter
     def tmp_ws_token(self, tmp_ws_token):
-        """Sets the tmp_ws_token of this TokenInfo.
+        r"""Sets the tmp_ws_token of this TokenInfo.
 
         会控WebSocket建链鉴权Token。
 
@@ -157,7 +157,7 @@ class TokenInfo:
 
     @property
     def ws_url(self):
-        """Gets the ws_url of this TokenInfo.
+        r"""Gets the ws_url of this TokenInfo.
 
         会控WebSocket建链URL。
 
@@ -168,7 +168,7 @@ class TokenInfo:
 
     @ws_url.setter
     def ws_url(self, ws_url):
-        """Sets the ws_url of this TokenInfo.
+        r"""Sets the ws_url of this TokenInfo.
 
         会控WebSocket建链URL。
 
@@ -179,7 +179,7 @@ class TokenInfo:
 
     @property
     def role(self):
-        """Gets the role of this TokenInfo.
+        r"""Gets the role of this TokenInfo.
 
         会议中的角色。 * 0 ：普通与会者 * 1 ：会议主持人 
 
@@ -190,7 +190,7 @@ class TokenInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this TokenInfo.
+        r"""Sets the role of this TokenInfo.
 
         会议中的角色。 * 0 ：普通与会者 * 1 ：会议主持人 
 
@@ -201,7 +201,7 @@ class TokenInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this TokenInfo.
+        r"""Gets the expire_time of this TokenInfo.
 
         会控Token过期时间戳（单位：毫秒）。
 
@@ -212,7 +212,7 @@ class TokenInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this TokenInfo.
+        r"""Sets the expire_time of this TokenInfo.
 
         会控Token过期时间戳（单位：毫秒）。
 
@@ -223,7 +223,7 @@ class TokenInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this TokenInfo.
+        r"""Gets the user_id of this TokenInfo.
 
         会议预定者的用户UUID。
 
@@ -234,7 +234,7 @@ class TokenInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this TokenInfo.
+        r"""Sets the user_id of this TokenInfo.
 
         会议预定者的用户UUID。
 
@@ -245,7 +245,7 @@ class TokenInfo:
 
     @property
     def org_id(self):
-        """Gets the org_id of this TokenInfo.
+        r"""Gets the org_id of this TokenInfo.
 
         会议所属企业ID。
 
@@ -256,7 +256,7 @@ class TokenInfo:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this TokenInfo.
+        r"""Sets the org_id of this TokenInfo.
 
         会议所属企业ID。
 
@@ -267,7 +267,7 @@ class TokenInfo:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this TokenInfo.
+        r"""Gets the participant_id of this TokenInfo.
 
         终端请求时，返回终端入会后会场ID。 > 该参数将废弃，请勿使用。 
 
@@ -278,7 +278,7 @@ class TokenInfo:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this TokenInfo.
+        r"""Sets the participant_id of this TokenInfo.
 
         终端请求时，返回终端入会后会场ID。 > 该参数将废弃，请勿使用。 
 
@@ -289,7 +289,7 @@ class TokenInfo:
 
     @property
     def conf_token_expire_time(self):
-        """Gets the conf_token_expire_time of this TokenInfo.
+        r"""Gets the conf_token_expire_time of this TokenInfo.
 
         会控Token有效时长（单位秒）。
 
@@ -300,7 +300,7 @@ class TokenInfo:
 
     @conf_token_expire_time.setter
     def conf_token_expire_time(self, conf_token_expire_time):
-        """Sets the conf_token_expire_time of this TokenInfo.
+        r"""Sets the conf_token_expire_time of this TokenInfo.
 
         会控Token有效时长（单位秒）。
 
@@ -311,7 +311,7 @@ class TokenInfo:
 
     @property
     def vmr_current_conf_id(self):
-        """Gets the vmr_current_conf_id of this TokenInfo.
+        r"""Gets the vmr_current_conf_id of this TokenInfo.
 
         云会议室会议的当前会议ID。
 
@@ -322,7 +322,7 @@ class TokenInfo:
 
     @vmr_current_conf_id.setter
     def vmr_current_conf_id(self, vmr_current_conf_id):
-        """Sets the vmr_current_conf_id of this TokenInfo.
+        r"""Sets the vmr_current_conf_id of this TokenInfo.
 
         云会议室会议的当前会议ID。
 
@@ -333,7 +333,7 @@ class TokenInfo:
 
     @property
     def support_notify_type(self):
-        """Gets the support_notify_type of this TokenInfo.
+        r"""Gets the support_notify_type of this TokenInfo.
 
         会控WebSocket消息推送支持类型。
 
@@ -344,7 +344,7 @@ class TokenInfo:
 
     @support_notify_type.setter
     def support_notify_type(self, support_notify_type):
-        """Sets the support_notify_type of this TokenInfo.
+        r"""Sets the support_notify_type of this TokenInfo.
 
         会控WebSocket消息推送支持类型。
 

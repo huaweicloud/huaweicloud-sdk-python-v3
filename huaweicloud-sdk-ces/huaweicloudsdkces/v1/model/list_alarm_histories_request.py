@@ -43,7 +43,7 @@ class ListAlarmHistoriesRequest:
     }
 
     def __init__(self, group_id=None, alarm_id=None, alarm_name=None, alarm_status=None, alarm_level=None, namespace=None, _from=None, to=None, start=None, limit=None):
-        """ListAlarmHistoriesRequest
+        r"""ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListAlarmHistoriesRequest.
+        r"""Gets the group_id of this ListAlarmHistoriesRequest.
 
         服务提供的资源分组功能，创建的资源分组ID，如：rg1603107497873DK4O2pXbn。
 
@@ -117,7 +117,7 @@ class ListAlarmHistoriesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListAlarmHistoriesRequest.
+        r"""Sets the group_id of this ListAlarmHistoriesRequest.
 
         服务提供的资源分组功能，创建的资源分组ID，如：rg1603107497873DK4O2pXbn。
 
@@ -128,7 +128,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmHistoriesRequest.
+        r"""Gets the alarm_id of this ListAlarmHistoriesRequest.
 
         告警规则ID。如：al1603088932912v98rGl1al。
 
@@ -139,7 +139,7 @@ class ListAlarmHistoriesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmHistoriesRequest.
+        r"""Sets the alarm_id of this ListAlarmHistoriesRequest.
 
         告警规则ID。如：al1603088932912v98rGl1al。
 
@@ -150,7 +150,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this ListAlarmHistoriesRequest.
+        r"""Gets the alarm_name of this ListAlarmHistoriesRequest.
 
         告警规则名称，如alarm-test01。
 
@@ -161,7 +161,7 @@ class ListAlarmHistoriesRequest:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this ListAlarmHistoriesRequest.
+        r"""Sets the alarm_name of this ListAlarmHistoriesRequest.
 
         告警规则名称，如alarm-test01。
 
@@ -172,7 +172,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def alarm_status(self):
-        """Gets the alarm_status of this ListAlarmHistoriesRequest.
+        r"""Gets the alarm_status of this ListAlarmHistoriesRequest.
 
         告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
 
@@ -183,7 +183,7 @@ class ListAlarmHistoriesRequest:
 
     @alarm_status.setter
     def alarm_status(self, alarm_status):
-        """Sets the alarm_status of this ListAlarmHistoriesRequest.
+        r"""Sets the alarm_status of this ListAlarmHistoriesRequest.
 
         告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
 
@@ -194,7 +194,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this ListAlarmHistoriesRequest.
+        r"""Gets the alarm_level of this ListAlarmHistoriesRequest.
 
         告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -205,7 +205,7 @@ class ListAlarmHistoriesRequest:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this ListAlarmHistoriesRequest.
+        r"""Sets the alarm_level of this ListAlarmHistoriesRequest.
 
         告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -216,7 +216,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmHistoriesRequest.
+        r"""Gets the namespace of this ListAlarmHistoriesRequest.
 
         告警资源对应的命名空间，如ECS服务的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -227,7 +227,7 @@ class ListAlarmHistoriesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmHistoriesRequest.
+        r"""Sets the namespace of this ListAlarmHistoriesRequest.
 
         告警资源对应的命名空间，如ECS服务的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -238,7 +238,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListAlarmHistoriesRequest.
+        r"""Gets the _from of this ListAlarmHistoriesRequest.
 
         查询告警历史的起始时间，UNIX时间戳，单位毫秒，如：1602501480905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
 
@@ -249,7 +249,7 @@ class ListAlarmHistoriesRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListAlarmHistoriesRequest.
+        r"""Sets the _from of this ListAlarmHistoriesRequest.
 
         查询告警历史的起始时间，UNIX时间戳，单位毫秒，如：1602501480905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
 
@@ -260,7 +260,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListAlarmHistoriesRequest.
+        r"""Gets the to of this ListAlarmHistoriesRequest.
 
         查询告警历史的截止时间，UNIX时间戳，单位毫秒。from必须小于等于to，如：1603106280905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
 
@@ -271,7 +271,7 @@ class ListAlarmHistoriesRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListAlarmHistoriesRequest.
+        r"""Sets the to of this ListAlarmHistoriesRequest.
 
         查询告警历史的截止时间，UNIX时间戳，单位毫秒。from必须小于等于to，如：1603106280905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
 
@@ -282,7 +282,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListAlarmHistoriesRequest.
+        r"""Gets the start of this ListAlarmHistoriesRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -293,7 +293,7 @@ class ListAlarmHistoriesRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListAlarmHistoriesRequest.
+        r"""Sets the start of this ListAlarmHistoriesRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -304,7 +304,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmHistoriesRequest.
+        r"""Gets the limit of this ListAlarmHistoriesRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
@@ -315,7 +315,7 @@ class ListAlarmHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmHistoriesRequest.
+        r"""Sets the limit of this ListAlarmHistoriesRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 

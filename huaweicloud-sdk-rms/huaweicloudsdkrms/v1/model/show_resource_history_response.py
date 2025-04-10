@@ -28,7 +28,7 @@ class ShowResourceHistoryResponse(SdkResponse):
     }
 
     def __init__(self, items=None, page_info=None):
-        """ShowResourceHistoryResponse
+        r"""ShowResourceHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowResourceHistoryResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowResourceHistoryResponse.
+        r"""Gets the items of this ShowResourceHistoryResponse.
 
         资源历史列表
 
@@ -62,7 +62,7 @@ class ShowResourceHistoryResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowResourceHistoryResponse.
+        r"""Sets the items of this ShowResourceHistoryResponse.
 
         资源历史列表
 
@@ -73,7 +73,7 @@ class ShowResourceHistoryResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowResourceHistoryResponse.
+        r"""Gets the page_info of this ShowResourceHistoryResponse.
 
         :return: The page_info of this ShowResourceHistoryResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ShowResourceHistoryResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowResourceHistoryResponse.
+        r"""Sets the page_info of this ShowResourceHistoryResponse.
 
         :param page_info: The page_info of this ShowResourceHistoryResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

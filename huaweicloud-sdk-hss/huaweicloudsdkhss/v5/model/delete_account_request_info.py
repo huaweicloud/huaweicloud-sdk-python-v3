@@ -29,7 +29,7 @@ class DeleteAccountRequestInfo:
     }
 
     def __init__(self, organization_id=None, account_id=None, project_id=None):
-        """DeleteAccountRequestInfo
+        r"""DeleteAccountRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteAccountRequestInfo:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this DeleteAccountRequestInfo.
+        r"""Gets the organization_id of this DeleteAccountRequestInfo.
 
         组织Id
 
@@ -65,7 +65,7 @@ class DeleteAccountRequestInfo:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this DeleteAccountRequestInfo.
+        r"""Sets the organization_id of this DeleteAccountRequestInfo.
 
         组织Id
 
@@ -76,7 +76,7 @@ class DeleteAccountRequestInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this DeleteAccountRequestInfo.
+        r"""Gets the account_id of this DeleteAccountRequestInfo.
 
         账号ID
 
@@ -87,7 +87,7 @@ class DeleteAccountRequestInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this DeleteAccountRequestInfo.
+        r"""Sets the account_id of this DeleteAccountRequestInfo.
 
         账号ID
 
@@ -98,7 +98,7 @@ class DeleteAccountRequestInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteAccountRequestInfo.
+        r"""Gets the project_id of this DeleteAccountRequestInfo.
 
         租户项目ID
 
@@ -109,7 +109,7 @@ class DeleteAccountRequestInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteAccountRequestInfo.
+        r"""Sets the project_id of this DeleteAccountRequestInfo.
 
         租户项目ID
 

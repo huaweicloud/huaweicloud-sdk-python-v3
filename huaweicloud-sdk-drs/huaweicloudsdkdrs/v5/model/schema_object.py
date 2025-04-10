@@ -31,7 +31,7 @@ class SchemaObject:
     }
 
     def __init__(self, sync_type=None, name=None, all=None, tables=None):
-        """SchemaObject
+        r"""SchemaObject
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SchemaObject:
 
     @property
     def sync_type(self):
-        """Gets the sync_type of this SchemaObject.
+        r"""Gets the sync_type of this SchemaObject.
 
         该模式在实时同步场景下的类型。取值： - config：仅当该模式作为数据过滤高级设置的关联模式时，需要填写，此时该模式以及该模式下的tables“不会”被同步到目标库，name、all属性不生效，tables需要填写被关联的相关对象。（注意：如果需要同步该模式对象，则在下级对象中填写sync_type值为config。）
 
@@ -75,7 +75,7 @@ class SchemaObject:
 
     @sync_type.setter
     def sync_type(self, sync_type):
-        """Sets the sync_type of this SchemaObject.
+        r"""Sets the sync_type of this SchemaObject.
 
         该模式在实时同步场景下的类型。取值： - config：仅当该模式作为数据过滤高级设置的关联模式时，需要填写，此时该模式以及该模式下的tables“不会”被同步到目标库，name、all属性不生效，tables需要填写被关联的相关对象。（注意：如果需要同步该模式对象，则在下级对象中填写sync_type值为config。）
 
@@ -86,7 +86,7 @@ class SchemaObject:
 
     @property
     def name(self):
-        """Gets the name of this SchemaObject.
+        r"""Gets the name of this SchemaObject.
 
         该模式在目标库的名称（模式名映射）。
 
@@ -97,7 +97,7 @@ class SchemaObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SchemaObject.
+        r"""Sets the name of this SchemaObject.
 
         该模式在目标库的名称（模式名映射）。
 
@@ -108,7 +108,7 @@ class SchemaObject:
 
     @property
     def all(self):
-        """Gets the all of this SchemaObject.
+        r"""Gets the all of this SchemaObject.
 
         是否整模式迁移或同步。注意： 1.当该模式下的表、列需要做数据过滤、列过滤、列映射时，填false，否则填true； 2.当该模式下的表需要做附加列时，需要填true，并且在表级对象的columns里填写附加列信息； 3.当该模式下的表所包含的列作为数据过滤高级设置的关联列时，需要填true，并且在columns里填写关联列信息、config_conditions填写数据过滤高级设置的配置条件；
 
@@ -119,7 +119,7 @@ class SchemaObject:
 
     @all.setter
     def all(self, all):
-        """Sets the all of this SchemaObject.
+        r"""Sets the all of this SchemaObject.
 
         是否整模式迁移或同步。注意： 1.当该模式下的表、列需要做数据过滤、列过滤、列映射时，填false，否则填true； 2.当该模式下的表需要做附加列时，需要填true，并且在表级对象的columns里填写附加列信息； 3.当该模式下的表所包含的列作为数据过滤高级设置的关联列时，需要填true，并且在columns里填写关联列信息、config_conditions填写数据过滤高级设置的配置条件；
 
@@ -130,7 +130,7 @@ class SchemaObject:
 
     @property
     def tables(self):
-        """Gets the tables of this SchemaObject.
+        r"""Gets the tables of this SchemaObject.
 
         需要迁移或同步的表，当整模式迁移或同步为false时需要填写。
 
@@ -141,7 +141,7 @@ class SchemaObject:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this SchemaObject.
+        r"""Sets the tables of this SchemaObject.
 
         需要迁移或同步的表，当整模式迁移或同步为false时需要填写。
 

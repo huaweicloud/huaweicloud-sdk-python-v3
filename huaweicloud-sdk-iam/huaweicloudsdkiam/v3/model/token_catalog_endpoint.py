@@ -33,7 +33,7 @@ class TokenCatalogEndpoint:
     }
 
     def __init__(self, url=None, region=None, region_id=None, interface=None, id=None):
-        """TokenCatalogEndpoint
+        r"""TokenCatalogEndpoint
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class TokenCatalogEndpoint:
 
     @property
     def url(self):
-        """Gets the url of this TokenCatalogEndpoint.
+        r"""Gets the url of this TokenCatalogEndpoint.
 
         终端节点的URL。
 
@@ -77,7 +77,7 @@ class TokenCatalogEndpoint:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TokenCatalogEndpoint.
+        r"""Sets the url of this TokenCatalogEndpoint.
 
         终端节点的URL。
 
@@ -88,7 +88,7 @@ class TokenCatalogEndpoint:
 
     @property
     def region(self):
-        """Gets the region of this TokenCatalogEndpoint.
+        r"""Gets the region of this TokenCatalogEndpoint.
 
         终端节点所属区域。
 
@@ -99,7 +99,7 @@ class TokenCatalogEndpoint:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TokenCatalogEndpoint.
+        r"""Sets the region of this TokenCatalogEndpoint.
 
         终端节点所属区域。
 
@@ -110,7 +110,7 @@ class TokenCatalogEndpoint:
 
     @property
     def region_id(self):
-        """Gets the region_id of this TokenCatalogEndpoint.
+        r"""Gets the region_id of this TokenCatalogEndpoint.
 
         终端节点所属区域ID。
 
@@ -121,7 +121,7 @@ class TokenCatalogEndpoint:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this TokenCatalogEndpoint.
+        r"""Sets the region_id of this TokenCatalogEndpoint.
 
         终端节点所属区域ID。
 
@@ -132,7 +132,7 @@ class TokenCatalogEndpoint:
 
     @property
     def interface(self):
-        """Gets the interface of this TokenCatalogEndpoint.
+        r"""Gets the interface of this TokenCatalogEndpoint.
 
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
@@ -143,7 +143,7 @@ class TokenCatalogEndpoint:
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this TokenCatalogEndpoint.
+        r"""Sets the interface of this TokenCatalogEndpoint.
 
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
@@ -154,7 +154,7 @@ class TokenCatalogEndpoint:
 
     @property
     def id(self):
-        """Gets the id of this TokenCatalogEndpoint.
+        r"""Gets the id of this TokenCatalogEndpoint.
 
         终端节点ID。
 
@@ -165,7 +165,7 @@ class TokenCatalogEndpoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TokenCatalogEndpoint.
+        r"""Sets the id of this TokenCatalogEndpoint.
 
         终端节点ID。
 

@@ -31,7 +31,7 @@ class ListPluginsRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None, body=None):
-        """ListPluginsRequest
+        r"""ListPluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListPluginsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListPluginsRequest.
+        r"""Gets the domain_id of this ListPluginsRequest.
 
         租户ID
 
@@ -72,7 +72,7 @@ class ListPluginsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListPluginsRequest.
+        r"""Sets the domain_id of this ListPluginsRequest.
 
         租户ID
 
@@ -83,7 +83,7 @@ class ListPluginsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPluginsRequest.
+        r"""Gets the offset of this ListPluginsRequest.
 
         偏移
 
@@ -94,7 +94,7 @@ class ListPluginsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPluginsRequest.
+        r"""Sets the offset of this ListPluginsRequest.
 
         偏移
 
@@ -105,7 +105,7 @@ class ListPluginsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPluginsRequest.
+        r"""Gets the limit of this ListPluginsRequest.
 
         大小
 
@@ -116,7 +116,7 @@ class ListPluginsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPluginsRequest.
+        r"""Sets the limit of this ListPluginsRequest.
 
         大小
 
@@ -127,7 +127,7 @@ class ListPluginsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPluginsRequest.
+        r"""Gets the body of this ListPluginsRequest.
 
         :return: The body of this ListPluginsRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.AgentPluginInfoQueryDTO`
@@ -136,7 +136,7 @@ class ListPluginsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPluginsRequest.
+        r"""Sets the body of this ListPluginsRequest.
 
         :param body: The body of this ListPluginsRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.AgentPluginInfoQueryDTO`

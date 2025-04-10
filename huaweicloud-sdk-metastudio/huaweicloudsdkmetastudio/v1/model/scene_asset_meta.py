@@ -27,7 +27,7 @@ class SceneAssetMeta:
     }
 
     def __init__(self, components=None, default_configs=None):
-        """SceneAssetMeta
+        r"""SceneAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SceneAssetMeta:
 
     @property
     def components(self):
-        """Gets the components of this SceneAssetMeta.
+        r"""Gets the components of this SceneAssetMeta.
 
         可操作组件列表（如屏幕，灯光，摄像机）。
 
@@ -61,7 +61,7 @@ class SceneAssetMeta:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this SceneAssetMeta.
+        r"""Sets the components of this SceneAssetMeta.
 
         可操作组件列表（如屏幕，灯光，摄像机）。
 
@@ -72,7 +72,7 @@ class SceneAssetMeta:
 
     @property
     def default_configs(self):
-        """Gets the default_configs of this SceneAssetMeta.
+        r"""Gets the default_configs of this SceneAssetMeta.
 
         默认场景设置（机位，初始人位置）。
 
@@ -83,7 +83,7 @@ class SceneAssetMeta:
 
     @default_configs.setter
     def default_configs(self, default_configs):
-        """Sets the default_configs of this SceneAssetMeta.
+        r"""Sets the default_configs of this SceneAssetMeta.
 
         默认场景设置（机位，初始人位置）。
 

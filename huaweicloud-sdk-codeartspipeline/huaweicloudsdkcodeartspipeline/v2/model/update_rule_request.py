@@ -29,7 +29,7 @@ class UpdateRuleRequest:
     }
 
     def __init__(self, domain_id=None, rule_id=None, body=None):
-        """UpdateRuleRequest
+        r"""UpdateRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRuleRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateRuleRequest.
+        r"""Gets the domain_id of this UpdateRuleRequest.
 
         租户ID
 
@@ -66,7 +66,7 @@ class UpdateRuleRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateRuleRequest.
+        r"""Sets the domain_id of this UpdateRuleRequest.
 
         租户ID
 
@@ -77,7 +77,7 @@ class UpdateRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateRuleRequest.
+        r"""Gets the rule_id of this UpdateRuleRequest.
 
         规则ID
 
@@ -88,7 +88,7 @@ class UpdateRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateRuleRequest.
+        r"""Sets the rule_id of this UpdateRuleRequest.
 
         规则ID
 
@@ -99,7 +99,7 @@ class UpdateRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRuleRequest.
+        r"""Gets the body of this UpdateRuleRequest.
 
         :return: The body of this UpdateRuleRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleReq`
@@ -108,7 +108,7 @@ class UpdateRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRuleRequest.
+        r"""Sets the body of this UpdateRuleRequest.
 
         :param body: The body of this UpdateRuleRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleReq`

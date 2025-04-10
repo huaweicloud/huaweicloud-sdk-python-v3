@@ -29,7 +29,7 @@ class ListIpGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, listener_id=None):
-        """ListIpGroupsRequest
+        r"""ListIpGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListIpGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIpGroupsRequest.
+        r"""Gets the limit of this ListIpGroupsRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -68,7 +68,7 @@ class ListIpGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIpGroupsRequest.
+        r"""Sets the limit of this ListIpGroupsRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -79,7 +79,7 @@ class ListIpGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListIpGroupsRequest.
+        r"""Gets the marker of this ListIpGroupsRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -90,7 +90,7 @@ class ListIpGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListIpGroupsRequest.
+        r"""Sets the marker of this ListIpGroupsRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -101,7 +101,7 @@ class ListIpGroupsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListIpGroupsRequest.
+        r"""Gets the listener_id of this ListIpGroupsRequest.
 
         监听器id,查询监听器绑定的IP地址组时使用该条件,当查询条件带listener_id时，结果中的associated_listeners也只包含该listener的记录
 
@@ -112,7 +112,7 @@ class ListIpGroupsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListIpGroupsRequest.
+        r"""Sets the listener_id of this ListIpGroupsRequest.
 
         监听器id,查询监听器绑定的IP地址组时使用该条件,当查询条件带listener_id时，结果中的associated_listeners也只包含该listener的记录
 

@@ -25,7 +25,7 @@ class GcbResourceId:
     }
 
     def __init__(self, resource_id=None):
-        """GcbResourceId
+        r"""GcbResourceId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GcbResourceId:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this GcbResourceId.
+        r"""Gets the resource_id of this GcbResourceId.
 
         功能说明：实例ID。 取值范围：1-36个字符，支持数字、字母、_(下划线)、-（中划线）
 
@@ -53,7 +53,7 @@ class GcbResourceId:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this GcbResourceId.
+        r"""Sets the resource_id of this GcbResourceId.
 
         功能说明：实例ID。 取值范围：1-36个字符，支持数字、字母、_(下划线)、-（中划线）
 

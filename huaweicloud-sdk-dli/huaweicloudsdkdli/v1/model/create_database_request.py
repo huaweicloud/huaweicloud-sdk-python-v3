@@ -25,7 +25,7 @@ class CreateDatabaseRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDatabaseRequest
+        r"""CreateDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatabaseRequest.
+        r"""Gets the body of this CreateDatabaseRequest.
 
         :return: The body of this CreateDatabaseRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequestBody`
@@ -52,7 +52,7 @@ class CreateDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatabaseRequest.
+        r"""Sets the body of this CreateDatabaseRequest.
 
         :param body: The body of this CreateDatabaseRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequestBody`

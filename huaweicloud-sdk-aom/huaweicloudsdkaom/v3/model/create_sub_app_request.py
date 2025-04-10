@@ -25,7 +25,7 @@ class CreateSubAppRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSubAppRequest
+        r"""CreateSubAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSubAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubAppRequest.
+        r"""Gets the body of this CreateSubAppRequest.
 
         :return: The body of this CreateSubAppRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.SubAppCreateParam`
@@ -52,7 +52,7 @@ class CreateSubAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubAppRequest.
+        r"""Sets the body of this CreateSubAppRequest.
 
         :param body: The body of this CreateSubAppRequest.
         :type body: :class:`huaweicloudsdkaom.v3.SubAppCreateParam`

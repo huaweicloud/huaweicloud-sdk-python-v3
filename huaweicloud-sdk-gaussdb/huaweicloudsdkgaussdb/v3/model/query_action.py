@@ -39,7 +39,7 @@ class QueryAction:
     }
 
     def __init__(self, id=None, action=None, object_id=None, type=None, job_id=None, status=None, created_at=None, updated_at=None):
-        """QueryAction
+        r"""QueryAction
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryAction:
 
     @property
     def id(self):
-        """Gets the id of this QueryAction.
+        r"""Gets the id of this QueryAction.
 
         实例或节点动作ID。
 
@@ -103,7 +103,7 @@ class QueryAction:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryAction.
+        r"""Sets the id of this QueryAction.
 
         实例或节点动作ID。
 
@@ -114,7 +114,7 @@ class QueryAction:
 
     @property
     def action(self):
-        """Gets the action of this QueryAction.
+        r"""Gets the action of this QueryAction.
 
         实例或节点动作名称。
 
@@ -125,7 +125,7 @@ class QueryAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this QueryAction.
+        r"""Sets the action of this QueryAction.
 
         实例或节点动作名称。
 
@@ -136,7 +136,7 @@ class QueryAction:
 
     @property
     def object_id(self):
-        """Gets the object_id of this QueryAction.
+        r"""Gets the object_id of this QueryAction.
 
         实例或节点动作对象ID。
 
@@ -147,7 +147,7 @@ class QueryAction:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this QueryAction.
+        r"""Sets the object_id of this QueryAction.
 
         实例或节点动作对象ID。
 
@@ -158,7 +158,7 @@ class QueryAction:
 
     @property
     def type(self):
-        """Gets the type of this QueryAction.
+        r"""Gets the type of this QueryAction.
 
         实例或节点动作类型。
 
@@ -169,7 +169,7 @@ class QueryAction:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryAction.
+        r"""Sets the type of this QueryAction.
 
         实例或节点动作类型。
 
@@ -180,7 +180,7 @@ class QueryAction:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryAction.
+        r"""Gets the job_id of this QueryAction.
 
         实例或节点动作任务ID。
 
@@ -191,7 +191,7 @@ class QueryAction:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryAction.
+        r"""Sets the job_id of this QueryAction.
 
         实例或节点动作任务ID。
 
@@ -202,7 +202,7 @@ class QueryAction:
 
     @property
     def status(self):
-        """Gets the status of this QueryAction.
+        r"""Gets the status of this QueryAction.
 
         实例或节点动作状态。
 
@@ -213,7 +213,7 @@ class QueryAction:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryAction.
+        r"""Sets the status of this QueryAction.
 
         实例或节点动作状态。
 
@@ -224,7 +224,7 @@ class QueryAction:
 
     @property
     def created_at(self):
-        """Gets the created_at of this QueryAction.
+        r"""Gets the created_at of this QueryAction.
 
         实例或节点动作创建时间。
 
@@ -235,7 +235,7 @@ class QueryAction:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this QueryAction.
+        r"""Sets the created_at of this QueryAction.
 
         实例或节点动作创建时间。
 
@@ -246,7 +246,7 @@ class QueryAction:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this QueryAction.
+        r"""Gets the updated_at of this QueryAction.
 
         实例或节点动作更新时间。
 
@@ -257,7 +257,7 @@ class QueryAction:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this QueryAction.
+        r"""Sets the updated_at of this QueryAction.
 
         实例或节点动作更新时间。
 

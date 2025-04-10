@@ -31,7 +31,7 @@ class ListAgentsRequest:
     }
 
     def __init__(self, limit=None, offset=None, agent_name=None, league_name=None):
-        """ListAgentsRequest
+        r"""ListAgentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAgentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgentsRequest.
+        r"""Gets the limit of this ListAgentsRequest.
 
         每页记录数，取值0-100
 
@@ -73,7 +73,7 @@ class ListAgentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgentsRequest.
+        r"""Sets the limit of this ListAgentsRequest.
 
         每页记录数，取值0-100
 
@@ -84,7 +84,7 @@ class ListAgentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAgentsRequest.
+        r"""Gets the offset of this ListAgentsRequest.
 
         记录数偏移量 
 
@@ -95,7 +95,7 @@ class ListAgentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAgentsRequest.
+        r"""Sets the offset of this ListAgentsRequest.
 
         记录数偏移量 
 
@@ -106,7 +106,7 @@ class ListAgentsRequest:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this ListAgentsRequest.
+        r"""Gets the agent_name of this ListAgentsRequest.
 
         可信节点名称 
 
@@ -117,7 +117,7 @@ class ListAgentsRequest:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this ListAgentsRequest.
+        r"""Sets the agent_name of this ListAgentsRequest.
 
         可信节点名称 
 
@@ -128,7 +128,7 @@ class ListAgentsRequest:
 
     @property
     def league_name(self):
-        """Gets the league_name of this ListAgentsRequest.
+        r"""Gets the league_name of this ListAgentsRequest.
 
         联盟名称 
 
@@ -139,7 +139,7 @@ class ListAgentsRequest:
 
     @league_name.setter
     def league_name(self, league_name):
-        """Sets the league_name of this ListAgentsRequest.
+        r"""Sets the league_name of this ListAgentsRequest.
 
         联盟名称 
 

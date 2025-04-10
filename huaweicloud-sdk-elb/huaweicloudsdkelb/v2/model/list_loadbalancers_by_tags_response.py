@@ -28,7 +28,7 @@ class ListLoadbalancersByTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListLoadbalancersByTagsResponse
+        r"""ListLoadbalancersByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLoadbalancersByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLoadbalancersByTagsResponse.
+        r"""Gets the total_count of this ListLoadbalancersByTagsResponse.
 
         总记录数。当resources为空时，表示名称为matches字段中指定的value的负载均衡器个数；resources不为空时，表示和tags字段匹配的负载均衡器的个数。
 
@@ -62,7 +62,7 @@ class ListLoadbalancersByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLoadbalancersByTagsResponse.
+        r"""Sets the total_count of this ListLoadbalancersByTagsResponse.
 
         总记录数。当resources为空时，表示名称为matches字段中指定的value的负载均衡器个数；resources不为空时，表示和tags字段匹配的负载均衡器的个数。
 
@@ -73,7 +73,7 @@ class ListLoadbalancersByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListLoadbalancersByTagsResponse.
+        r"""Gets the resources of this ListLoadbalancersByTagsResponse.
 
         根据tag查询出的负载均衡器对象。 当请求中的action为filters，返回体中有该字段。 当请求中的action为count时，返回体中无该字段。
 
@@ -84,7 +84,7 @@ class ListLoadbalancersByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListLoadbalancersByTagsResponse.
+        r"""Sets the resources of this ListLoadbalancersByTagsResponse.
 
         根据tag查询出的负载均衡器对象。 当请求中的action为filters，返回体中有该字段。 当请求中的action为count时，返回体中无该字段。
 

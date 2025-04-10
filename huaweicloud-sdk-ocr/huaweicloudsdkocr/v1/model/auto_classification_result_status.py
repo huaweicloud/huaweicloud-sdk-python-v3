@@ -27,7 +27,7 @@ class AutoClassificationResultStatus:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """AutoClassificationResultStatus
+        r"""AutoClassificationResultStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AutoClassificationResultStatus:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AutoClassificationResultStatus.
+        r"""Gets the error_code of this AutoClassificationResultStatus.
 
         指示各对应票证的状态码
 
@@ -61,7 +61,7 @@ class AutoClassificationResultStatus:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AutoClassificationResultStatus.
+        r"""Sets the error_code of this AutoClassificationResultStatus.
 
         指示各对应票证的状态码
 
@@ -72,7 +72,7 @@ class AutoClassificationResultStatus:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AutoClassificationResultStatus.
+        r"""Gets the error_msg of this AutoClassificationResultStatus.
 
         指示各对应票证的状态信息
 
@@ -83,7 +83,7 @@ class AutoClassificationResultStatus:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AutoClassificationResultStatus.
+        r"""Sets the error_msg of this AutoClassificationResultStatus.
 
         指示各对应票证的状态信息
 

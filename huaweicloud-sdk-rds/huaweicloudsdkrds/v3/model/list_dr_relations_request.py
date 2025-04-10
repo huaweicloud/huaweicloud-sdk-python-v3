@@ -25,7 +25,7 @@ class ListDrRelationsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListDrRelationsRequest
+        r"""ListDrRelationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDrRelationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDrRelationsRequest.
+        r"""Gets the x_language of this ListDrRelationsRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ListDrRelationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDrRelationsRequest.
+        r"""Sets the x_language of this ListDrRelationsRequest.
 
         语言
 

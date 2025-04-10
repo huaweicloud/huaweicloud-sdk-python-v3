@@ -25,7 +25,7 @@ class DetachBatchSharedbwReq:
     }
 
     def __init__(self, publicips=None):
-        """DetachBatchSharedbwReq
+        r"""DetachBatchSharedbwReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DetachBatchSharedbwReq:
 
     @property
     def publicips(self):
-        """Gets the publicips of this DetachBatchSharedbwReq.
+        r"""Gets the publicips of this DetachBatchSharedbwReq.
 
         共享带宽批量移出弹性公网IP请求对象
 
@@ -54,7 +54,7 @@ class DetachBatchSharedbwReq:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this DetachBatchSharedbwReq.
+        r"""Sets the publicips of this DetachBatchSharedbwReq.
 
         共享带宽批量移出弹性公网IP请求对象
 

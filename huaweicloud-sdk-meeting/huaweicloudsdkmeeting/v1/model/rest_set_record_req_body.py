@@ -25,7 +25,7 @@ class RestSetRecordReqBody:
     }
 
     def __init__(self, is_record=None):
-        """RestSetRecordReqBody
+        r"""RestSetRecordReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestSetRecordReqBody:
 
     @property
     def is_record(self):
-        """Gets the is_record of this RestSetRecordReqBody.
+        r"""Gets the is_record of this RestSetRecordReqBody.
 
         录制启停开关。默认值为0。 - 0: 停止会议录制 - 1: 启动会议录制
 
@@ -53,7 +53,7 @@ class RestSetRecordReqBody:
 
     @is_record.setter
     def is_record(self, is_record):
-        """Sets the is_record of this RestSetRecordReqBody.
+        r"""Sets the is_record of this RestSetRecordReqBody.
 
         录制启停开关。默认值为0。 - 0: 停止会议录制 - 1: 启动会议录制
 

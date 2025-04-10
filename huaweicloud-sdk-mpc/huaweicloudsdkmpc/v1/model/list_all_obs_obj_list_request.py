@@ -29,7 +29,7 @@ class ListAllObsObjListRequest:
     }
 
     def __init__(self, bucket=None, prefix=None, type=None):
-        """ListAllObsObjListRequest
+        r"""ListAllObsObjListRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAllObsObjListRequest:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ListAllObsObjListRequest.
+        r"""Gets the bucket of this ListAllObsObjListRequest.
 
         桶名
 
@@ -67,7 +67,7 @@ class ListAllObsObjListRequest:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ListAllObsObjListRequest.
+        r"""Sets the bucket of this ListAllObsObjListRequest.
 
         桶名
 
@@ -78,7 +78,7 @@ class ListAllObsObjListRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListAllObsObjListRequest.
+        r"""Gets the prefix of this ListAllObsObjListRequest.
 
         查询对象前缀
 
@@ -89,7 +89,7 @@ class ListAllObsObjListRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListAllObsObjListRequest.
+        r"""Sets the prefix of this ListAllObsObjListRequest.
 
         查询对象前缀
 
@@ -100,7 +100,7 @@ class ListAllObsObjListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAllObsObjListRequest.
+        r"""Gets the type of this ListAllObsObjListRequest.
 
         查询对象文件类型
 
@@ -111,7 +111,7 @@ class ListAllObsObjListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAllObsObjListRequest.
+        r"""Sets the type of this ListAllObsObjListRequest.
 
         查询对象文件类型
 

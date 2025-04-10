@@ -36,7 +36,7 @@ class ArchiveRuleSummary:
     }
 
     def __init__(self, created_at=None, filters=None, id=None, name=None, updated_at=None, urn=None):
-        """ArchiveRuleSummary
+        r"""ArchiveRuleSummary
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ArchiveRuleSummary:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ArchiveRuleSummary.
+        r"""Gets the created_at of this ArchiveRuleSummary.
 
         创建存档规则的时间。
 
@@ -84,7 +84,7 @@ class ArchiveRuleSummary:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ArchiveRuleSummary.
+        r"""Sets the created_at of this ArchiveRuleSummary.
 
         创建存档规则的时间。
 
@@ -95,7 +95,7 @@ class ArchiveRuleSummary:
 
     @property
     def filters(self):
-        """Gets the filters of this ArchiveRuleSummary.
+        r"""Gets the filters of this ArchiveRuleSummary.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -106,7 +106,7 @@ class ArchiveRuleSummary:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this ArchiveRuleSummary.
+        r"""Sets the filters of this ArchiveRuleSummary.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -117,7 +117,7 @@ class ArchiveRuleSummary:
 
     @property
     def id(self):
-        """Gets the id of this ArchiveRuleSummary.
+        r"""Gets the id of this ArchiveRuleSummary.
 
         存档规则的唯一标识符。
 
@@ -128,7 +128,7 @@ class ArchiveRuleSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ArchiveRuleSummary.
+        r"""Sets the id of this ArchiveRuleSummary.
 
         存档规则的唯一标识符。
 
@@ -139,7 +139,7 @@ class ArchiveRuleSummary:
 
     @property
     def name(self):
-        """Gets the name of this ArchiveRuleSummary.
+        r"""Gets the name of this ArchiveRuleSummary.
 
         创建存档规则的名称。
 
@@ -150,7 +150,7 @@ class ArchiveRuleSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ArchiveRuleSummary.
+        r"""Sets the name of this ArchiveRuleSummary.
 
         创建存档规则的名称。
 
@@ -161,7 +161,7 @@ class ArchiveRuleSummary:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ArchiveRuleSummary.
+        r"""Gets the updated_at of this ArchiveRuleSummary.
 
         上次更新存档规则的时间。
 
@@ -172,7 +172,7 @@ class ArchiveRuleSummary:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ArchiveRuleSummary.
+        r"""Sets the updated_at of this ArchiveRuleSummary.
 
         上次更新存档规则的时间。
 
@@ -183,7 +183,7 @@ class ArchiveRuleSummary:
 
     @property
     def urn(self):
-        """Gets the urn of this ArchiveRuleSummary.
+        r"""Gets the urn of this ArchiveRuleSummary.
 
         存档规则的唯一资源标识符。
 
@@ -194,7 +194,7 @@ class ArchiveRuleSummary:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this ArchiveRuleSummary.
+        r"""Sets the urn of this ArchiveRuleSummary.
 
         存档规则的唯一资源标识符。
 

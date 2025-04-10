@@ -24,7 +24,7 @@ class CreateTriggerResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateTriggerResponse
+        r"""CreateTriggerResponse
 
         The model defined in huaweicloud sdk
 

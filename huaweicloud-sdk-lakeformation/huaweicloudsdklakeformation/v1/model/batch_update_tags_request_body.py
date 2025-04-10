@@ -25,7 +25,7 @@ class BatchUpdateTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchUpdateTagsRequestBody
+        r"""BatchUpdateTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchUpdateTagsRequestBody.
+        r"""Gets the tags of this BatchUpdateTagsRequestBody.
 
         标签列表
 
@@ -54,7 +54,7 @@ class BatchUpdateTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchUpdateTagsRequestBody.
+        r"""Sets the tags of this BatchUpdateTagsRequestBody.
 
         标签列表
 

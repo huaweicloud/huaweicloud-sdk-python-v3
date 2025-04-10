@@ -23,7 +23,7 @@ class ListVpcTagsRequest:
     }
 
     def __init__(self):
-        """ListVpcTagsRequest
+        r"""ListVpcTagsRequest
 
         The model defined in huaweicloud sdk
 

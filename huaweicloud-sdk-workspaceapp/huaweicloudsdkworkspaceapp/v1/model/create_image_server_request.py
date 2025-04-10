@@ -27,7 +27,7 @@ class CreateImageServerRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """CreateImageServerRequest
+        r"""CreateImageServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateImageServerRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this CreateImageServerRequest.
+        r"""Gets the service_transaction_id of this CreateImageServerRequest.
 
         CBC接口回调时，请求头里带上的业务ID。
 
@@ -61,7 +61,7 @@ class CreateImageServerRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this CreateImageServerRequest.
+        r"""Sets the service_transaction_id of this CreateImageServerRequest.
 
         CBC接口回调时，请求头里带上的业务ID。
 
@@ -72,7 +72,7 @@ class CreateImageServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateImageServerRequest.
+        r"""Gets the body of this CreateImageServerRequest.
 
         :return: The body of this CreateImageServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateImageServerReq`
@@ -81,7 +81,7 @@ class CreateImageServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateImageServerRequest.
+        r"""Sets the body of this CreateImageServerRequest.
 
         :param body: The body of this CreateImageServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateImageServerReq`

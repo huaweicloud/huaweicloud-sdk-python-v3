@@ -25,7 +25,7 @@ class ListCaTagsRequest:
     }
 
     def __init__(self, ca_id=None):
-        """ListCaTagsRequest
+        r"""ListCaTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListCaTagsRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this ListCaTagsRequest.
+        r"""Gets the ca_id of this ListCaTagsRequest.
 
         所需要查询标签列表的CA证书ID。
 
@@ -53,7 +53,7 @@ class ListCaTagsRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this ListCaTagsRequest.
+        r"""Sets the ca_id of this ListCaTagsRequest.
 
         所需要查询标签列表的CA证书ID。
 

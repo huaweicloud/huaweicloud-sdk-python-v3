@@ -25,7 +25,7 @@ class ListDiagnoseItemsRequest:
     }
 
     def __init__(self, body=None):
-        """ListDiagnoseItemsRequest
+        r"""ListDiagnoseItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDiagnoseItemsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDiagnoseItemsRequest.
+        r"""Gets the body of this ListDiagnoseItemsRequest.
 
         :return: The body of this ListDiagnoseItemsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.QueryDiagnoseItemsReq`
@@ -52,7 +52,7 @@ class ListDiagnoseItemsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDiagnoseItemsRequest.
+        r"""Sets the body of this ListDiagnoseItemsRequest.
 
         :param body: The body of this ListDiagnoseItemsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.QueryDiagnoseItemsReq`

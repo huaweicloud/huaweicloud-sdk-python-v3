@@ -28,7 +28,7 @@ class ListClassroomMembersResponse(SdkResponse):
     }
 
     def __init__(self, members=None, total=None):
-        """ListClassroomMembersResponse
+        r"""ListClassroomMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListClassroomMembersResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this ListClassroomMembersResponse.
+        r"""Gets the members of this ListClassroomMembersResponse.
 
         课堂成员列表
 
@@ -62,7 +62,7 @@ class ListClassroomMembersResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ListClassroomMembersResponse.
+        r"""Sets the members of this ListClassroomMembersResponse.
 
         课堂成员列表
 
@@ -73,7 +73,7 @@ class ListClassroomMembersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListClassroomMembersResponse.
+        r"""Gets the total of this ListClassroomMembersResponse.
 
         课堂成员总数
 
@@ -84,7 +84,7 @@ class ListClassroomMembersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListClassroomMembersResponse.
+        r"""Sets the total of this ListClassroomMembersResponse.
 
         课堂成员总数
 

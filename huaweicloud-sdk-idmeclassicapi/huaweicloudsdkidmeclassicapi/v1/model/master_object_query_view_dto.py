@@ -39,7 +39,7 @@ class MasterObjectQueryViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, id=None, last_update_time=None, modifier=None, rdm_extension_type=None, tenant=None):
-        """MasterObjectQueryViewDTO
+        r"""MasterObjectQueryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this MasterObjectQueryViewDTO.
+        r"""Gets the class_name of this MasterObjectQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -103,7 +103,7 @@ class MasterObjectQueryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this MasterObjectQueryViewDTO.
+        r"""Sets the class_name of this MasterObjectQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -114,7 +114,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MasterObjectQueryViewDTO.
+        r"""Gets the create_time of this MasterObjectQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -125,7 +125,7 @@ class MasterObjectQueryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MasterObjectQueryViewDTO.
+        r"""Sets the create_time of this MasterObjectQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -136,7 +136,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this MasterObjectQueryViewDTO.
+        r"""Gets the creator of this MasterObjectQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -147,7 +147,7 @@ class MasterObjectQueryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this MasterObjectQueryViewDTO.
+        r"""Sets the creator of this MasterObjectQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -158,7 +158,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this MasterObjectQueryViewDTO.
+        r"""Gets the id of this MasterObjectQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -169,7 +169,7 @@ class MasterObjectQueryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MasterObjectQueryViewDTO.
+        r"""Sets the id of this MasterObjectQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -180,7 +180,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this MasterObjectQueryViewDTO.
+        r"""Gets the last_update_time of this MasterObjectQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -191,7 +191,7 @@ class MasterObjectQueryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this MasterObjectQueryViewDTO.
+        r"""Sets the last_update_time of this MasterObjectQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -202,7 +202,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this MasterObjectQueryViewDTO.
+        r"""Gets the modifier of this MasterObjectQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -213,7 +213,7 @@ class MasterObjectQueryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this MasterObjectQueryViewDTO.
+        r"""Sets the modifier of this MasterObjectQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -224,7 +224,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this MasterObjectQueryViewDTO.
+        r"""Gets the rdm_extension_type of this MasterObjectQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -235,7 +235,7 @@ class MasterObjectQueryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this MasterObjectQueryViewDTO.
+        r"""Sets the rdm_extension_type of this MasterObjectQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -246,7 +246,7 @@ class MasterObjectQueryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this MasterObjectQueryViewDTO.
+        r"""Gets the tenant of this MasterObjectQueryViewDTO.
 
         :return: The tenant of this MasterObjectQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`
@@ -255,7 +255,7 @@ class MasterObjectQueryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this MasterObjectQueryViewDTO.
+        r"""Sets the tenant of this MasterObjectQueryViewDTO.
 
         :param tenant: The tenant of this MasterObjectQueryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`

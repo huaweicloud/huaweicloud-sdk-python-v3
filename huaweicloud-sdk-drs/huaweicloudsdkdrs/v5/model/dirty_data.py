@@ -35,7 +35,7 @@ class DirtyData:
     }
 
     def __init__(self, db_name=None, schema_name=None, table_name=None, error_sql=None, error_time=None, error_msg=None):
-        """DirtyData
+        r"""DirtyData
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DirtyData:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DirtyData.
+        r"""Gets the db_name of this DirtyData.
 
         数据库名称。
 
@@ -89,7 +89,7 @@ class DirtyData:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DirtyData.
+        r"""Sets the db_name of this DirtyData.
 
         数据库名称。
 
@@ -100,7 +100,7 @@ class DirtyData:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this DirtyData.
+        r"""Gets the schema_name of this DirtyData.
 
         模式名称。
 
@@ -111,7 +111,7 @@ class DirtyData:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this DirtyData.
+        r"""Sets the schema_name of this DirtyData.
 
         模式名称。
 
@@ -122,7 +122,7 @@ class DirtyData:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DirtyData.
+        r"""Gets the table_name of this DirtyData.
 
         表名称。
 
@@ -133,7 +133,7 @@ class DirtyData:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DirtyData.
+        r"""Sets the table_name of this DirtyData.
 
         表名称。
 
@@ -144,7 +144,7 @@ class DirtyData:
 
     @property
     def error_sql(self):
-        """Gets the error_sql of this DirtyData.
+        r"""Gets the error_sql of this DirtyData.
 
         异常SQL。
 
@@ -155,7 +155,7 @@ class DirtyData:
 
     @error_sql.setter
     def error_sql(self, error_sql):
-        """Sets the error_sql of this DirtyData.
+        r"""Sets the error_sql of this DirtyData.
 
         异常SQL。
 
@@ -166,7 +166,7 @@ class DirtyData:
 
     @property
     def error_time(self):
-        """Gets the error_time of this DirtyData.
+        r"""Gets the error_time of this DirtyData.
 
         发生异常时间，UTC时间，例如：2023-06-10T03:01:52Z
 
@@ -177,7 +177,7 @@ class DirtyData:
 
     @error_time.setter
     def error_time(self, error_time):
-        """Sets the error_time of this DirtyData.
+        r"""Sets the error_time of this DirtyData.
 
         发生异常时间，UTC时间，例如：2023-06-10T03:01:52Z
 
@@ -188,7 +188,7 @@ class DirtyData:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DirtyData.
+        r"""Gets the error_msg of this DirtyData.
 
         异常信息。
 
@@ -199,7 +199,7 @@ class DirtyData:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DirtyData.
+        r"""Sets the error_msg of this DirtyData.
 
         异常信息。
 

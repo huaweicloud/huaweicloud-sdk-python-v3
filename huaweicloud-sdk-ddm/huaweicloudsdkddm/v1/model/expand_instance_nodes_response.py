@@ -32,7 +32,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, job_id=None, order_id=None):
-        """ExpandInstanceNodesResponse
+        r"""ExpandInstanceNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExpandInstanceNodesResponse.
+        r"""Gets the instance_id of this ExpandInstanceNodesResponse.
 
         DDM实例ID。
 
@@ -76,7 +76,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExpandInstanceNodesResponse.
+        r"""Sets the instance_id of this ExpandInstanceNodesResponse.
 
         DDM实例ID。
 
@@ -87,7 +87,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ExpandInstanceNodesResponse.
+        r"""Gets the instance_name of this ExpandInstanceNodesResponse.
 
         DDM实例名称,仅按需实例时会返回该参数。
 
@@ -98,7 +98,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ExpandInstanceNodesResponse.
+        r"""Sets the instance_name of this ExpandInstanceNodesResponse.
 
         DDM实例名称,仅按需实例时会返回该参数。
 
@@ -109,7 +109,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExpandInstanceNodesResponse.
+        r"""Gets the job_id of this ExpandInstanceNodesResponse.
 
         任务ID,仅按需实例时会返回该参数。
 
@@ -120,7 +120,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExpandInstanceNodesResponse.
+        r"""Sets the job_id of this ExpandInstanceNodesResponse.
 
         任务ID,仅按需实例时会返回该参数。
 
@@ -131,7 +131,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandInstanceNodesResponse.
+        r"""Gets the order_id of this ExpandInstanceNodesResponse.
 
         订单号,仅包年包月实例时返回该参数。
 
@@ -142,7 +142,7 @@ class ExpandInstanceNodesResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandInstanceNodesResponse.
+        r"""Sets the order_id of this ExpandInstanceNodesResponse.
 
         订单号,仅包年包月实例时返回该参数。
 

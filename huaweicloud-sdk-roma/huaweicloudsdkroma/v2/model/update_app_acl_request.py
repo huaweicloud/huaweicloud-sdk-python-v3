@@ -29,7 +29,7 @@ class UpdateAppAclRequest:
     }
 
     def __init__(self, instance_id=None, app_id=None, body=None):
-        """UpdateAppAclRequest
+        r"""UpdateAppAclRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAppAclRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAppAclRequest.
+        r"""Gets the instance_id of this UpdateAppAclRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateAppAclRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAppAclRequest.
+        r"""Sets the instance_id of this UpdateAppAclRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateAppAclRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppAclRequest.
+        r"""Gets the app_id of this UpdateAppAclRequest.
 
         应用编号
 
@@ -88,7 +88,7 @@ class UpdateAppAclRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppAclRequest.
+        r"""Sets the app_id of this UpdateAppAclRequest.
 
         应用编号
 
@@ -99,7 +99,7 @@ class UpdateAppAclRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppAclRequest.
+        r"""Gets the body of this UpdateAppAclRequest.
 
         :return: The body of this UpdateAppAclRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AppAclCreate`
@@ -108,7 +108,7 @@ class UpdateAppAclRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppAclRequest.
+        r"""Sets the body of this UpdateAppAclRequest.
 
         :param body: The body of this UpdateAppAclRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AppAclCreate`

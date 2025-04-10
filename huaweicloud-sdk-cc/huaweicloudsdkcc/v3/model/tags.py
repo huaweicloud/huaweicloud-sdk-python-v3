@@ -25,7 +25,7 @@ class Tags:
     }
 
     def __init__(self, tags=None):
-        """Tags
+        r"""Tags
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Tags:
 
     @property
     def tags(self):
-        """Gets the tags of this Tags.
+        r"""Gets the tags of this Tags.
 
         实例标签。
 
@@ -54,7 +54,7 @@ class Tags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Tags.
+        r"""Sets the tags of this Tags.
 
         实例标签。
 

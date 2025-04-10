@@ -33,7 +33,7 @@ class CredentialsRespCredentials:
     }
 
     def __init__(self, uuid=None, key=None, create_time=None, description=None, status=None):
-        """CredentialsRespCredentials
+        r"""CredentialsRespCredentials
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CredentialsRespCredentials:
 
     @property
     def uuid(self):
-        """Gets the uuid of this CredentialsRespCredentials.
+        r"""Gets the uuid of this CredentialsRespCredentials.
 
         凭证id
 
@@ -82,7 +82,7 @@ class CredentialsRespCredentials:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this CredentialsRespCredentials.
+        r"""Sets the uuid of this CredentialsRespCredentials.
 
         凭证id
 
@@ -93,7 +93,7 @@ class CredentialsRespCredentials:
 
     @property
     def key(self):
-        """Gets the key of this CredentialsRespCredentials.
+        r"""Gets the key of this CredentialsRespCredentials.
 
         凭证value
 
@@ -104,7 +104,7 @@ class CredentialsRespCredentials:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CredentialsRespCredentials.
+        r"""Sets the key of this CredentialsRespCredentials.
 
         凭证value
 
@@ -115,7 +115,7 @@ class CredentialsRespCredentials:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CredentialsRespCredentials.
+        r"""Gets the create_time of this CredentialsRespCredentials.
 
         凭证创建时间
 
@@ -126,7 +126,7 @@ class CredentialsRespCredentials:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CredentialsRespCredentials.
+        r"""Sets the create_time of this CredentialsRespCredentials.
 
         凭证创建时间
 
@@ -137,7 +137,7 @@ class CredentialsRespCredentials:
 
     @property
     def description(self):
-        """Gets the description of this CredentialsRespCredentials.
+        r"""Gets the description of this CredentialsRespCredentials.
 
         凭证描述
 
@@ -148,7 +148,7 @@ class CredentialsRespCredentials:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CredentialsRespCredentials.
+        r"""Sets the description of this CredentialsRespCredentials.
 
         凭证描述
 
@@ -159,7 +159,7 @@ class CredentialsRespCredentials:
 
     @property
     def status(self):
-        """Gets the status of this CredentialsRespCredentials.
+        r"""Gets the status of this CredentialsRespCredentials.
 
         凭证状态
 
@@ -170,7 +170,7 @@ class CredentialsRespCredentials:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CredentialsRespCredentials.
+        r"""Sets the status of this CredentialsRespCredentials.
 
         凭证状态
 

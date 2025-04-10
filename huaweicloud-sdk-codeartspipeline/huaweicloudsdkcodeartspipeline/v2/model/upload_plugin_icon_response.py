@@ -26,7 +26,7 @@ class UploadPluginIconResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UploadPluginIconResponse
+        r"""UploadPluginIconResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadPluginIconResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UploadPluginIconResponse.
+        r"""Gets the body of this UploadPluginIconResponse.
 
         :return: The body of this UploadPluginIconResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UploadPluginIconResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadPluginIconResponse.
+        r"""Sets the body of this UploadPluginIconResponse.
 
         :param body: The body of this UploadPluginIconResponse.
         :type body: str

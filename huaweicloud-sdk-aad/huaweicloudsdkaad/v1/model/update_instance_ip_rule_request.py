@@ -31,7 +31,7 @@ class UpdateInstanceIpRuleRequest:
     }
 
     def __init__(self, instance_id=None, ip=None, rule_id=None, body=None):
-        """UpdateInstanceIpRuleRequest
+        r"""UpdateInstanceIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateInstanceIpRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceIpRuleRequest.
+        r"""Gets the instance_id of this UpdateInstanceIpRuleRequest.
 
         实例Id
 
@@ -72,7 +72,7 @@ class UpdateInstanceIpRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceIpRuleRequest.
+        r"""Sets the instance_id of this UpdateInstanceIpRuleRequest.
 
         实例Id
 
@@ -83,7 +83,7 @@ class UpdateInstanceIpRuleRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateInstanceIpRuleRequest.
+        r"""Gets the ip of this UpdateInstanceIpRuleRequest.
 
         单个 IP
 
@@ -94,7 +94,7 @@ class UpdateInstanceIpRuleRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateInstanceIpRuleRequest.
+        r"""Sets the ip of this UpdateInstanceIpRuleRequest.
 
         单个 IP
 
@@ -105,7 +105,7 @@ class UpdateInstanceIpRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateInstanceIpRuleRequest.
+        r"""Gets the rule_id of this UpdateInstanceIpRuleRequest.
 
         规则ID
 
@@ -116,7 +116,7 @@ class UpdateInstanceIpRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateInstanceIpRuleRequest.
+        r"""Sets the rule_id of this UpdateInstanceIpRuleRequest.
 
         规则ID
 
@@ -127,7 +127,7 @@ class UpdateInstanceIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceIpRuleRequest.
+        r"""Gets the body of this UpdateInstanceIpRuleRequest.
 
         :return: The body of this UpdateInstanceIpRuleRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.TransferRuleBody`
@@ -136,7 +136,7 @@ class UpdateInstanceIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceIpRuleRequest.
+        r"""Sets the body of this UpdateInstanceIpRuleRequest.
 
         :param body: The body of this UpdateInstanceIpRuleRequest.
         :type body: :class:`huaweicloudsdkaad.v1.TransferRuleBody`

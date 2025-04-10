@@ -29,7 +29,7 @@ class AccessToken:
     }
 
     def __init__(self, name=None, token=None, host=None):
-        """AccessToken
+        r"""AccessToken
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AccessToken:
 
     @property
     def name(self):
-        """Gets the name of this AccessToken.
+        r"""Gets the name of this AccessToken.
 
         授权名称。
 
@@ -66,7 +66,7 @@ class AccessToken:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccessToken.
+        r"""Sets the name of this AccessToken.
 
         授权名称。
 
@@ -77,7 +77,7 @@ class AccessToken:
 
     @property
     def token(self):
-        """Gets the token of this AccessToken.
+        r"""Gets the token of this AccessToken.
 
         git仓库设置中创建的私有token。
 
@@ -88,7 +88,7 @@ class AccessToken:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this AccessToken.
+        r"""Sets the token of this AccessToken.
 
         git仓库设置中创建的私有token。
 
@@ -99,7 +99,7 @@ class AccessToken:
 
     @property
     def host(self):
-        """Gets the host of this AccessToken.
+        r"""Gets the host of this AccessToken.
 
         git仓库的主机地址，如https://192.168.1.1:8080/gitlab，默认为官方主机。
 
@@ -110,7 +110,7 @@ class AccessToken:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this AccessToken.
+        r"""Sets the host of this AccessToken.
 
         git仓库的主机地址，如https://192.168.1.1:8080/gitlab，默认为官方主机。
 

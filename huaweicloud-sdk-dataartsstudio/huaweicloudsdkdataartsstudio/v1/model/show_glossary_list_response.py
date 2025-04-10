@@ -34,7 +34,7 @@ class ShowGlossaryListResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, quota=None, tags=None):
-        """ShowGlossaryListResponse
+        r"""ShowGlossaryListResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowGlossaryListResponse.
+        r"""Gets the count of this ShowGlossaryListResponse.
 
         总数
 
@@ -83,7 +83,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowGlossaryListResponse.
+        r"""Sets the count of this ShowGlossaryListResponse.
 
         总数
 
@@ -94,7 +94,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ShowGlossaryListResponse.
+        r"""Gets the limit of this ShowGlossaryListResponse.
 
         分页参数limit
 
@@ -105,7 +105,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowGlossaryListResponse.
+        r"""Sets the limit of this ShowGlossaryListResponse.
 
         分页参数limit
 
@@ -116,7 +116,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowGlossaryListResponse.
+        r"""Gets the offset of this ShowGlossaryListResponse.
 
         分页参数offset
 
@@ -127,7 +127,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowGlossaryListResponse.
+        r"""Sets the offset of this ShowGlossaryListResponse.
 
         分页参数offset
 
@@ -138,7 +138,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ShowGlossaryListResponse.
+        r"""Gets the quota of this ShowGlossaryListResponse.
 
         指标配额
 
@@ -149,7 +149,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ShowGlossaryListResponse.
+        r"""Sets the quota of this ShowGlossaryListResponse.
 
         指标配额
 
@@ -160,7 +160,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowGlossaryListResponse.
+        r"""Gets the tags of this ShowGlossaryListResponse.
 
         标签信息列表
 
@@ -171,7 +171,7 @@ class ShowGlossaryListResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowGlossaryListResponse.
+        r"""Sets the tags of this ShowGlossaryListResponse.
 
         标签信息列表
 

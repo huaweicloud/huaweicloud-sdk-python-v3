@@ -29,7 +29,7 @@ class ListAppRequest:
     }
 
     def __init__(self, limit=None, start_app_name=None, stream_name=None):
-        """ListAppRequest
+        r"""ListAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAppRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppRequest.
+        r"""Gets the limit of this ListAppRequest.
 
         单次请求返回APP列表的最大数量。
 
@@ -68,7 +68,7 @@ class ListAppRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppRequest.
+        r"""Sets the limit of this ListAppRequest.
 
         单次请求返回APP列表的最大数量。
 
@@ -79,7 +79,7 @@ class ListAppRequest:
 
     @property
     def start_app_name(self):
-        """Gets the start_app_name of this ListAppRequest.
+        r"""Gets the start_app_name of this ListAppRequest.
 
         从该app名称开始返回app列表，返回的app列表不包括此app名称。
 
@@ -90,7 +90,7 @@ class ListAppRequest:
 
     @start_app_name.setter
     def start_app_name(self, start_app_name):
-        """Sets the start_app_name of this ListAppRequest.
+        r"""Sets the start_app_name of this ListAppRequest.
 
         从该app名称开始返回app列表，返回的app列表不包括此app名称。
 
@@ -101,7 +101,7 @@ class ListAppRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ListAppRequest.
+        r"""Gets the stream_name of this ListAppRequest.
 
         返回该通道下的app列表。
 
@@ -112,7 +112,7 @@ class ListAppRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ListAppRequest.
+        r"""Sets the stream_name of this ListAppRequest.
 
         返回该通道下的app列表。
 

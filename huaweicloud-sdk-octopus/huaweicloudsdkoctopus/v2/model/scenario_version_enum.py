@@ -30,7 +30,7 @@ class ScenarioVersionEnum:
     }
 
     def __init__(self):
-        """ScenarioVersionEnum
+        r"""ScenarioVersionEnum
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class DeleteGlobalDcGatewayRequest:
     }
 
     def __init__(self, global_dc_gateway_id=None):
-        """DeleteGlobalDcGatewayRequest
+        r"""DeleteGlobalDcGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteGlobalDcGatewayRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
+        r"""Gets the global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
 
         全域接入网关ID
 
@@ -53,7 +53,7 @@ class DeleteGlobalDcGatewayRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
+        r"""Sets the global_dc_gateway_id of this DeleteGlobalDcGatewayRequest.
 
         全域接入网关ID
 

@@ -29,7 +29,7 @@ class CreateCompareTaskReq:
     }
 
     def __init__(self, job_id=None, object_level_compare_type=None, data_level_compare_info=None):
-        """CreateCompareTaskReq
+        r"""CreateCompareTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCompareTaskReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateCompareTaskReq.
+        r"""Gets the job_id of this CreateCompareTaskReq.
 
         任务id。
 
@@ -67,7 +67,7 @@ class CreateCompareTaskReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateCompareTaskReq.
+        r"""Sets the job_id of this CreateCompareTaskReq.
 
         任务id。
 
@@ -78,7 +78,7 @@ class CreateCompareTaskReq:
 
     @property
     def object_level_compare_type(self):
-        """Gets the object_level_compare_type of this CreateCompareTaskReq.
+        r"""Gets the object_level_compare_type of this CreateCompareTaskReq.
 
         对象级对比类型，取值为空代表不创建对象级对比。object_level_compare_type和data_level_compare_info都为空时，只查询已创建的对比任务列表。
 
@@ -89,7 +89,7 @@ class CreateCompareTaskReq:
 
     @object_level_compare_type.setter
     def object_level_compare_type(self, object_level_compare_type):
-        """Sets the object_level_compare_type of this CreateCompareTaskReq.
+        r"""Sets the object_level_compare_type of this CreateCompareTaskReq.
 
         对象级对比类型，取值为空代表不创建对象级对比。object_level_compare_type和data_level_compare_info都为空时，只查询已创建的对比任务列表。
 
@@ -100,7 +100,7 @@ class CreateCompareTaskReq:
 
     @property
     def data_level_compare_info(self):
-        """Gets the data_level_compare_info of this CreateCompareTaskReq.
+        r"""Gets the data_level_compare_info of this CreateCompareTaskReq.
 
         :return: The data_level_compare_info of this CreateCompareTaskReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateDataLevelCompareReq`
@@ -109,7 +109,7 @@ class CreateCompareTaskReq:
 
     @data_level_compare_info.setter
     def data_level_compare_info(self, data_level_compare_info):
-        """Sets the data_level_compare_info of this CreateCompareTaskReq.
+        r"""Sets the data_level_compare_info of this CreateCompareTaskReq.
 
         :param data_level_compare_info: The data_level_compare_info of this CreateCompareTaskReq.
         :type data_level_compare_info: :class:`huaweicloudsdkdrs.v3.CreateDataLevelCompareReq`

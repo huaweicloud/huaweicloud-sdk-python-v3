@@ -27,7 +27,7 @@ class UpdateFunctionConfigRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """UpdateFunctionConfigRequest
+        r"""UpdateFunctionConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFunctionConfigRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateFunctionConfigRequest.
+        r"""Gets the function_urn of this UpdateFunctionConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class UpdateFunctionConfigRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateFunctionConfigRequest.
+        r"""Sets the function_urn of this UpdateFunctionConfigRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class UpdateFunctionConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFunctionConfigRequest.
+        r"""Gets the body of this UpdateFunctionConfigRequest.
 
         :return: The body of this UpdateFunctionConfigRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigRequestBody`
@@ -80,7 +80,7 @@ class UpdateFunctionConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFunctionConfigRequest.
+        r"""Sets the body of this UpdateFunctionConfigRequest.
 
         :param body: The body of this UpdateFunctionConfigRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigRequestBody`

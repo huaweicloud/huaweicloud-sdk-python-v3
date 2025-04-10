@@ -26,7 +26,7 @@ class CreateClickHouseDataBaseReplicationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateClickHouseDataBaseReplicationResponse
+        r"""CreateClickHouseDataBaseReplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateClickHouseDataBaseReplicationResponse.
+        r"""Gets the job_id of this CreateClickHouseDataBaseReplicationResponse.
 
         创建的任务ID。
 
@@ -55,7 +55,7 @@ class CreateClickHouseDataBaseReplicationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateClickHouseDataBaseReplicationResponse.
+        r"""Sets the job_id of this CreateClickHouseDataBaseReplicationResponse.
 
         创建的任务ID。
 

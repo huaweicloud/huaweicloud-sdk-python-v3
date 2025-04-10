@@ -39,7 +39,7 @@ class ListProductsRespDetail:
     }
 
     def __init__(self, storage=None, product_id=None, spec_code=None, io=None, unavailable_zones=None, available_zones=None, ecs_flavor_id=None, arch_type=None):
-        """ListProductsRespDetail
+        r"""ListProductsRespDetail
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListProductsRespDetail:
 
     @property
     def storage(self):
-        """Gets the storage of this ListProductsRespDetail.
+        r"""Gets the storage of this ListProductsRespDetail.
 
         消息存储空间。
 
@@ -103,7 +103,7 @@ class ListProductsRespDetail:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ListProductsRespDetail.
+        r"""Sets the storage of this ListProductsRespDetail.
 
         消息存储空间。
 
@@ -114,7 +114,7 @@ class ListProductsRespDetail:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListProductsRespDetail.
+        r"""Gets the product_id of this ListProductsRespDetail.
 
         产品ID。
 
@@ -125,7 +125,7 @@ class ListProductsRespDetail:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListProductsRespDetail.
+        r"""Sets the product_id of this ListProductsRespDetail.
 
         产品ID。
 
@@ -136,7 +136,7 @@ class ListProductsRespDetail:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListProductsRespDetail.
+        r"""Gets the spec_code of this ListProductsRespDetail.
 
         规格ID。
 
@@ -147,7 +147,7 @@ class ListProductsRespDetail:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListProductsRespDetail.
+        r"""Sets the spec_code of this ListProductsRespDetail.
 
         规格ID。
 
@@ -158,7 +158,7 @@ class ListProductsRespDetail:
 
     @property
     def io(self):
-        """Gets the io of this ListProductsRespDetail.
+        r"""Gets the io of this ListProductsRespDetail.
 
         IO信息。
 
@@ -169,7 +169,7 @@ class ListProductsRespDetail:
 
     @io.setter
     def io(self, io):
-        """Sets the io of this ListProductsRespDetail.
+        r"""Sets the io of this ListProductsRespDetail.
 
         IO信息。
 
@@ -180,7 +180,7 @@ class ListProductsRespDetail:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this ListProductsRespDetail.
+        r"""Gets the unavailable_zones of this ListProductsRespDetail.
 
         资源售罄的可用区列表。
 
@@ -191,7 +191,7 @@ class ListProductsRespDetail:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this ListProductsRespDetail.
+        r"""Sets the unavailable_zones of this ListProductsRespDetail.
 
         资源售罄的可用区列表。
 
@@ -202,7 +202,7 @@ class ListProductsRespDetail:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ListProductsRespDetail.
+        r"""Gets the available_zones of this ListProductsRespDetail.
 
         有可用资源的可用区列表。
 
@@ -213,7 +213,7 @@ class ListProductsRespDetail:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ListProductsRespDetail.
+        r"""Sets the available_zones of this ListProductsRespDetail.
 
         有可用资源的可用区列表。
 
@@ -224,7 +224,7 @@ class ListProductsRespDetail:
 
     @property
     def ecs_flavor_id(self):
-        """Gets the ecs_flavor_id of this ListProductsRespDetail.
+        r"""Gets the ecs_flavor_id of this ListProductsRespDetail.
 
         该产品规格对应的虚拟机规格。
 
@@ -235,7 +235,7 @@ class ListProductsRespDetail:
 
     @ecs_flavor_id.setter
     def ecs_flavor_id(self, ecs_flavor_id):
-        """Sets the ecs_flavor_id of this ListProductsRespDetail.
+        r"""Sets the ecs_flavor_id of this ListProductsRespDetail.
 
         该产品规格对应的虚拟机规格。
 
@@ -246,7 +246,7 @@ class ListProductsRespDetail:
 
     @property
     def arch_type(self):
-        """Gets the arch_type of this ListProductsRespDetail.
+        r"""Gets the arch_type of this ListProductsRespDetail.
 
         实例规格架构类型。当前仅支持X86。
 
@@ -257,7 +257,7 @@ class ListProductsRespDetail:
 
     @arch_type.setter
     def arch_type(self, arch_type):
-        """Sets the arch_type of this ListProductsRespDetail.
+        r"""Sets the arch_type of this ListProductsRespDetail.
 
         实例规格架构类型。当前仅支持X86。
 

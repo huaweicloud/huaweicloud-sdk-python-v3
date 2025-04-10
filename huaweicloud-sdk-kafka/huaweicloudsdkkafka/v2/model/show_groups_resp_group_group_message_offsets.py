@@ -33,7 +33,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     }
 
     def __init__(self, partition=None, lag=None, topic=None, message_current_offset=None, message_log_end_offset=None):
-        """ShowGroupsRespGroupGroupMessageOffsets
+        r"""ShowGroupsRespGroupGroupMessageOffsets
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Gets the partition of this ShowGroupsRespGroupGroupMessageOffsets.
 
         分区编号。
 
@@ -82,7 +82,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Sets the partition of this ShowGroupsRespGroupGroupMessageOffsets.
 
         分区编号。
 
@@ -93,7 +93,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @property
     def lag(self):
-        """Gets the lag of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Gets the lag of this ShowGroupsRespGroupGroupMessageOffsets.
 
         剩余可消费消息数，即消息堆积数。
 
@@ -104,7 +104,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @lag.setter
     def lag(self, lag):
-        """Sets the lag of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Sets the lag of this ShowGroupsRespGroupGroupMessageOffsets.
 
         剩余可消费消息数，即消息堆积数。
 
@@ -115,7 +115,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Gets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
 
         topic名称。
 
@@ -126,7 +126,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Sets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
 
         topic名称。
 
@@ -137,7 +137,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @property
     def message_current_offset(self):
-        """Gets the message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Gets the message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
         当前消费进度。
 
@@ -148,7 +148,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @message_current_offset.setter
     def message_current_offset(self, message_current_offset):
-        """Sets the message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Sets the message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
         当前消费进度。
 
@@ -159,7 +159,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @property
     def message_log_end_offset(self):
-        """Gets the message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Gets the message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
         最大消息位置（LEO）。
 
@@ -170,7 +170,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
     @message_log_end_offset.setter
     def message_log_end_offset(self, message_log_end_offset):
-        """Sets the message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
+        r"""Sets the message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
         最大消息位置（LEO）。
 

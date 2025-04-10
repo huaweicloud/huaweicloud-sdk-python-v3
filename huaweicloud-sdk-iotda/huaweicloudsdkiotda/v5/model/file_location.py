@@ -25,7 +25,7 @@ class FileLocation:
     }
 
     def __init__(self, obs_location=None):
-        """FileLocation
+        r"""FileLocation
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FileLocation:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this FileLocation.
+        r"""Gets the obs_location of this FileLocation.
 
         :return: The obs_location of this FileLocation.
         :rtype: :class:`huaweicloudsdkiotda.v5.ObsLocation`
@@ -52,7 +52,7 @@ class FileLocation:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this FileLocation.
+        r"""Sets the obs_location of this FileLocation.
 
         :param obs_location: The obs_location of this FileLocation.
         :type obs_location: :class:`huaweicloudsdkiotda.v5.ObsLocation`

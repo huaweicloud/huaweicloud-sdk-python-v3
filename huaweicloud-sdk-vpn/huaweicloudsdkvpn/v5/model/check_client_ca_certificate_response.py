@@ -36,7 +36,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
     }
 
     def __init__(self, name=None, issuer=None, subject=None, serial_number=None, expiration_time=None, signature_algorithm=None):
-        """CheckClientCaCertificateResponse
+        r"""CheckClientCaCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CheckClientCaCertificateResponse.
+        r"""Gets the name of this CheckClientCaCertificateResponse.
 
         证书名
 
@@ -90,7 +90,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckClientCaCertificateResponse.
+        r"""Sets the name of this CheckClientCaCertificateResponse.
 
         证书名
 
@@ -101,7 +101,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @property
     def issuer(self):
-        """Gets the issuer of this CheckClientCaCertificateResponse.
+        r"""Gets the issuer of this CheckClientCaCertificateResponse.
 
         颁发者
 
@@ -112,7 +112,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this CheckClientCaCertificateResponse.
+        r"""Sets the issuer of this CheckClientCaCertificateResponse.
 
         颁发者
 
@@ -123,7 +123,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @property
     def subject(self):
-        """Gets the subject of this CheckClientCaCertificateResponse.
+        r"""Gets the subject of this CheckClientCaCertificateResponse.
 
         主体
 
@@ -134,7 +134,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this CheckClientCaCertificateResponse.
+        r"""Sets the subject of this CheckClientCaCertificateResponse.
 
         主体
 
@@ -145,7 +145,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this CheckClientCaCertificateResponse.
+        r"""Gets the serial_number of this CheckClientCaCertificateResponse.
 
         序列号
 
@@ -156,7 +156,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this CheckClientCaCertificateResponse.
+        r"""Sets the serial_number of this CheckClientCaCertificateResponse.
 
         序列号
 
@@ -167,7 +167,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this CheckClientCaCertificateResponse.
+        r"""Gets the expiration_time of this CheckClientCaCertificateResponse.
 
         过期时间
 
@@ -178,7 +178,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this CheckClientCaCertificateResponse.
+        r"""Sets the expiration_time of this CheckClientCaCertificateResponse.
 
         过期时间
 
@@ -189,7 +189,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CheckClientCaCertificateResponse.
+        r"""Gets the signature_algorithm of this CheckClientCaCertificateResponse.
 
         客户端 CA 证书签名算法
 
@@ -200,7 +200,7 @@ class CheckClientCaCertificateResponse(SdkResponse):
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CheckClientCaCertificateResponse.
+        r"""Sets the signature_algorithm of this CheckClientCaCertificateResponse.
 
         客户端 CA 证书签名算法
 

@@ -63,7 +63,7 @@ class GetFirewallInstanceResponseRecord:
     }
 
     def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, is_available_obs=None, is_support_threat_tags=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None, resource_id=None, support_url_filtering=None, tags=None):
-        """GetFirewallInstanceResponseRecord
+        r"""GetFirewallInstanceResponseRecord
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this GetFirewallInstanceResponseRecord.
+        r"""Gets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
@@ -187,7 +187,7 @@ class GetFirewallInstanceResponseRecord:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this GetFirewallInstanceResponseRecord.
+        r"""Sets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
 
@@ -198,7 +198,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def name(self):
-        """Gets the name of this GetFirewallInstanceResponseRecord.
+        r"""Gets the name of this GetFirewallInstanceResponseRecord.
 
         防火墙名称
 
@@ -209,7 +209,7 @@ class GetFirewallInstanceResponseRecord:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetFirewallInstanceResponseRecord.
+        r"""Sets the name of this GetFirewallInstanceResponseRecord.
 
         防火墙名称
 
@@ -220,7 +220,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this GetFirewallInstanceResponseRecord.
+        r"""Gets the ha_type of this GetFirewallInstanceResponseRecord.
 
         集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
 
@@ -231,7 +231,7 @@ class GetFirewallInstanceResponseRecord:
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this GetFirewallInstanceResponseRecord.
+        r"""Sets the ha_type of this GetFirewallInstanceResponseRecord.
 
         集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
 
@@ -242,7 +242,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this GetFirewallInstanceResponseRecord.
+        r"""Gets the charge_mode of this GetFirewallInstanceResponseRecord.
 
         计费模式 0：包年/包月 1：按需
 
@@ -253,7 +253,7 @@ class GetFirewallInstanceResponseRecord:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this GetFirewallInstanceResponseRecord.
+        r"""Sets the charge_mode of this GetFirewallInstanceResponseRecord.
 
         计费模式 0：包年/包月 1：按需
 
@@ -264,7 +264,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def service_type(self):
-        """Gets the service_type of this GetFirewallInstanceResponseRecord.
+        r"""Gets the service_type of this GetFirewallInstanceResponseRecord.
 
         防火墙防护类型，目前仅支持0，互联网防护
 
@@ -275,7 +275,7 @@ class GetFirewallInstanceResponseRecord:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this GetFirewallInstanceResponseRecord.
+        r"""Sets the service_type of this GetFirewallInstanceResponseRecord.
 
         防火墙防护类型，目前仅支持0，互联网防护
 
@@ -286,7 +286,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this GetFirewallInstanceResponseRecord.
+        r"""Gets the engine_type of this GetFirewallInstanceResponseRecord.
 
         引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
 
@@ -297,7 +297,7 @@ class GetFirewallInstanceResponseRecord:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this GetFirewallInstanceResponseRecord.
+        r"""Sets the engine_type of this GetFirewallInstanceResponseRecord.
 
         引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
 
@@ -308,7 +308,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def flavor(self):
-        """Gets the flavor of this GetFirewallInstanceResponseRecord.
+        r"""Gets the flavor of this GetFirewallInstanceResponseRecord.
 
         :return: The flavor of this GetFirewallInstanceResponseRecord.
         :rtype: :class:`huaweicloudsdkcfw.v1.Flavor`
@@ -317,7 +317,7 @@ class GetFirewallInstanceResponseRecord:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this GetFirewallInstanceResponseRecord.
+        r"""Sets the flavor of this GetFirewallInstanceResponseRecord.
 
         :param flavor: The flavor of this GetFirewallInstanceResponseRecord.
         :type flavor: :class:`huaweicloudsdkcfw.v1.Flavor`
@@ -326,7 +326,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def protect_objects(self):
-        """Gets the protect_objects of this GetFirewallInstanceResponseRecord.
+        r"""Gets the protect_objects of this GetFirewallInstanceResponseRecord.
 
         防护对象列表
 
@@ -337,7 +337,7 @@ class GetFirewallInstanceResponseRecord:
 
     @protect_objects.setter
     def protect_objects(self, protect_objects):
-        """Sets the protect_objects of this GetFirewallInstanceResponseRecord.
+        r"""Sets the protect_objects of this GetFirewallInstanceResponseRecord.
 
         防护对象列表
 
@@ -348,7 +348,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def status(self):
-        """Gets the status of this GetFirewallInstanceResponseRecord.
+        r"""Gets the status of this GetFirewallInstanceResponseRecord.
 
         防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
 
@@ -359,7 +359,7 @@ class GetFirewallInstanceResponseRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetFirewallInstanceResponseRecord.
+        r"""Sets the status of this GetFirewallInstanceResponseRecord.
 
         防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
 
@@ -370,7 +370,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def is_old_firewall_instance(self):
-        """Gets the is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
+        r"""Gets the is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
 
         是否为旧引擎，true表示是，false表示不是
 
@@ -381,7 +381,7 @@ class GetFirewallInstanceResponseRecord:
 
     @is_old_firewall_instance.setter
     def is_old_firewall_instance(self, is_old_firewall_instance):
-        """Sets the is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
+        r"""Sets the is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
 
         是否为旧引擎，true表示是，false表示不是
 
@@ -392,7 +392,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def is_available_obs(self):
-        """Gets the is_available_obs of this GetFirewallInstanceResponseRecord.
+        r"""Gets the is_available_obs of this GetFirewallInstanceResponseRecord.
 
         是否支持obs，true表示是，false表示不是
 
@@ -403,7 +403,7 @@ class GetFirewallInstanceResponseRecord:
 
     @is_available_obs.setter
     def is_available_obs(self, is_available_obs):
-        """Sets the is_available_obs of this GetFirewallInstanceResponseRecord.
+        r"""Sets the is_available_obs of this GetFirewallInstanceResponseRecord.
 
         是否支持obs，true表示是，false表示不是
 
@@ -414,7 +414,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def is_support_threat_tags(self):
-        """Gets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
+        r"""Gets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
 
         是否支持威胁情报标签，true表示是，false表示不是
 
@@ -425,7 +425,7 @@ class GetFirewallInstanceResponseRecord:
 
     @is_support_threat_tags.setter
     def is_support_threat_tags(self, is_support_threat_tags):
-        """Sets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
+        r"""Sets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
 
         是否支持威胁情报标签，true表示是，false表示不是
 
@@ -436,7 +436,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def support_ipv6(self):
-        """Gets the support_ipv6 of this GetFirewallInstanceResponseRecord.
+        r"""Gets the support_ipv6 of this GetFirewallInstanceResponseRecord.
 
         是否支持ipv6，true表示是，false表示不是
 
@@ -447,7 +447,7 @@ class GetFirewallInstanceResponseRecord:
 
     @support_ipv6.setter
     def support_ipv6(self, support_ipv6):
-        """Sets the support_ipv6 of this GetFirewallInstanceResponseRecord.
+        r"""Sets the support_ipv6 of this GetFirewallInstanceResponseRecord.
 
         是否支持ipv6，true表示是，false表示不是
 
@@ -458,7 +458,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def feature_toggle(self):
-        """Gets the feature_toggle of this GetFirewallInstanceResponseRecord.
+        r"""Gets the feature_toggle of this GetFirewallInstanceResponseRecord.
 
         特性开关，boolean值为true表示是，false表示否
 
@@ -469,7 +469,7 @@ class GetFirewallInstanceResponseRecord:
 
     @feature_toggle.setter
     def feature_toggle(self, feature_toggle):
-        """Sets the feature_toggle of this GetFirewallInstanceResponseRecord.
+        r"""Sets the feature_toggle of this GetFirewallInstanceResponseRecord.
 
         特性开关，boolean值为true表示是，false表示否
 
@@ -480,7 +480,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def resources(self):
-        """Gets the resources of this GetFirewallInstanceResponseRecord.
+        r"""Gets the resources of this GetFirewallInstanceResponseRecord.
 
         防火墙资源列表
 
@@ -491,7 +491,7 @@ class GetFirewallInstanceResponseRecord:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this GetFirewallInstanceResponseRecord.
+        r"""Sets the resources of this GetFirewallInstanceResponseRecord.
 
         防火墙资源列表
 
@@ -502,7 +502,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def fw_instance_name(self):
-        """Gets the fw_instance_name of this GetFirewallInstanceResponseRecord.
+        r"""Gets the fw_instance_name of this GetFirewallInstanceResponseRecord.
 
         防火墙名称
 
@@ -513,7 +513,7 @@ class GetFirewallInstanceResponseRecord:
 
     @fw_instance_name.setter
     def fw_instance_name(self, fw_instance_name):
-        """Sets the fw_instance_name of this GetFirewallInstanceResponseRecord.
+        r"""Sets the fw_instance_name of this GetFirewallInstanceResponseRecord.
 
         防火墙名称
 
@@ -524,7 +524,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
+        r"""Gets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -535,7 +535,7 @@ class GetFirewallInstanceResponseRecord:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
+        r"""Sets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -546,7 +546,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this GetFirewallInstanceResponseRecord.
+        r"""Gets the resource_id of this GetFirewallInstanceResponseRecord.
 
         防火墙资源id，同fw_instance_id
 
@@ -557,7 +557,7 @@ class GetFirewallInstanceResponseRecord:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this GetFirewallInstanceResponseRecord.
+        r"""Sets the resource_id of this GetFirewallInstanceResponseRecord.
 
         防火墙资源id，同fw_instance_id
 
@@ -568,7 +568,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def support_url_filtering(self):
-        """Gets the support_url_filtering of this GetFirewallInstanceResponseRecord.
+        r"""Gets the support_url_filtering of this GetFirewallInstanceResponseRecord.
 
         是否支持url过滤，true表示是，false表示不是
 
@@ -579,7 +579,7 @@ class GetFirewallInstanceResponseRecord:
 
     @support_url_filtering.setter
     def support_url_filtering(self, support_url_filtering):
-        """Sets the support_url_filtering of this GetFirewallInstanceResponseRecord.
+        r"""Sets the support_url_filtering of this GetFirewallInstanceResponseRecord.
 
         是否支持url过滤，true表示是，false表示不是
 
@@ -590,7 +590,7 @@ class GetFirewallInstanceResponseRecord:
 
     @property
     def tags(self):
-        """Gets the tags of this GetFirewallInstanceResponseRecord.
+        r"""Gets the tags of this GetFirewallInstanceResponseRecord.
 
         标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
 
@@ -601,7 +601,7 @@ class GetFirewallInstanceResponseRecord:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GetFirewallInstanceResponseRecord.
+        r"""Sets the tags of this GetFirewallInstanceResponseRecord.
 
         标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
 

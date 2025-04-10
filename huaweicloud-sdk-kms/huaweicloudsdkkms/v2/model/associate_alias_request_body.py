@@ -27,7 +27,7 @@ class AssociateAliasRequestBody:
     }
 
     def __init__(self, alias=None, target_key_id=None):
-        """AssociateAliasRequestBody
+        r"""AssociateAliasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociateAliasRequestBody:
 
     @property
     def alias(self):
-        """Gets the alias of this AssociateAliasRequestBody.
+        r"""Gets the alias of this AssociateAliasRequestBody.
 
         待关联别名
 
@@ -59,7 +59,7 @@ class AssociateAliasRequestBody:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AssociateAliasRequestBody.
+        r"""Sets the alias of this AssociateAliasRequestBody.
 
         待关联别名
 
@@ -70,7 +70,7 @@ class AssociateAliasRequestBody:
 
     @property
     def target_key_id(self):
-        """Gets the target_key_id of this AssociateAliasRequestBody.
+        r"""Gets the target_key_id of this AssociateAliasRequestBody.
 
         待关联的密钥ID
 
@@ -81,7 +81,7 @@ class AssociateAliasRequestBody:
 
     @target_key_id.setter
     def target_key_id(self, target_key_id):
-        """Sets the target_key_id of this AssociateAliasRequestBody.
+        r"""Sets the target_key_id of this AssociateAliasRequestBody.
 
         待关联的密钥ID
 

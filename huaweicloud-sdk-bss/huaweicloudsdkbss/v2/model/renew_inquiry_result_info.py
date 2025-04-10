@@ -27,7 +27,7 @@ class RenewInquiryResultInfo:
     }
 
     def __init__(self, resource_id=None, amount=None):
-        """RenewInquiryResultInfo
+        r"""RenewInquiryResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RenewInquiryResultInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RenewInquiryResultInfo.
+        r"""Gets the resource_id of this RenewInquiryResultInfo.
 
         |参数名称：资源ID。| |参数约束及描述：资源ID。|
 
@@ -61,7 +61,7 @@ class RenewInquiryResultInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RenewInquiryResultInfo.
+        r"""Sets the resource_id of this RenewInquiryResultInfo.
 
         |参数名称：资源ID。| |参数约束及描述：资源ID。|
 
@@ -72,7 +72,7 @@ class RenewInquiryResultInfo:
 
     @property
     def amount(self):
-        """Gets the amount of this RenewInquiryResultInfo.
+        r"""Gets the amount of this RenewInquiryResultInfo.
 
         |参数名称：主资源（包含从资源）续订金额。单位为元| |参数约束及描述：主资源（包含从资源）续订金额。单位为元|
 
@@ -83,7 +83,7 @@ class RenewInquiryResultInfo:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this RenewInquiryResultInfo.
+        r"""Sets the amount of this RenewInquiryResultInfo.
 
         |参数名称：主资源（包含从资源）续订金额。单位为元| |参数约束及描述：主资源（包含从资源）续订金额。单位为元|
 

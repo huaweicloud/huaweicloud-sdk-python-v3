@@ -28,7 +28,7 @@ class ListDatabaseDataResponse(SdkResponse):
     }
 
     def __init__(self, count=None, objects=None):
-        """ListDatabaseDataResponse
+        r"""ListDatabaseDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDatabaseDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDatabaseDataResponse.
+        r"""Gets the count of this ListDatabaseDataResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListDatabaseDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDatabaseDataResponse.
+        r"""Sets the count of this ListDatabaseDataResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListDatabaseDataResponse(SdkResponse):
 
     @property
     def objects(self):
-        """Gets the objects of this ListDatabaseDataResponse.
+        r"""Gets the objects of this ListDatabaseDataResponse.
 
         查询记录列表
 
@@ -84,7 +84,7 @@ class ListDatabaseDataResponse(SdkResponse):
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this ListDatabaseDataResponse.
+        r"""Sets the objects of this ListDatabaseDataResponse.
 
         查询记录列表
 

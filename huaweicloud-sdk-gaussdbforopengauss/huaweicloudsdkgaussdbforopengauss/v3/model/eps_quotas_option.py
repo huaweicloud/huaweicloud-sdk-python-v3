@@ -33,7 +33,7 @@ class EpsQuotasOption:
     }
 
     def __init__(self, enterprise_projects_id=None, instance_quota=None, vcpus_quota=None, ram_quota=None, volume_quota=None):
-        """EpsQuotasOption
+        r"""EpsQuotasOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class EpsQuotasOption:
 
     @property
     def enterprise_projects_id(self):
-        """Gets the enterprise_projects_id of this EpsQuotasOption.
+        r"""Gets the enterprise_projects_id of this EpsQuotasOption.
 
         企业项目Id。
 
@@ -81,7 +81,7 @@ class EpsQuotasOption:
 
     @enterprise_projects_id.setter
     def enterprise_projects_id(self, enterprise_projects_id):
-        """Sets the enterprise_projects_id of this EpsQuotasOption.
+        r"""Sets the enterprise_projects_id of this EpsQuotasOption.
 
         企业项目Id。
 
@@ -92,7 +92,7 @@ class EpsQuotasOption:
 
     @property
     def instance_quota(self):
-        """Gets the instance_quota of this EpsQuotasOption.
+        r"""Gets the instance_quota of this EpsQuotasOption.
 
         实例的配额。取值范围：实际创建的实例个数 ~ 100,000。
 
@@ -103,7 +103,7 @@ class EpsQuotasOption:
 
     @instance_quota.setter
     def instance_quota(self, instance_quota):
-        """Sets the instance_quota of this EpsQuotasOption.
+        r"""Sets the instance_quota of this EpsQuotasOption.
 
         实例的配额。取值范围：实际创建的实例个数 ~ 100,000。
 
@@ -114,7 +114,7 @@ class EpsQuotasOption:
 
     @property
     def vcpus_quota(self):
-        """Gets the vcpus_quota of this EpsQuotasOption.
+        r"""Gets the vcpus_quota of this EpsQuotasOption.
 
         cpu的配额。取值范围：实际使用的cpu核数 ~ 2,147,483,646。
 
@@ -125,7 +125,7 @@ class EpsQuotasOption:
 
     @vcpus_quota.setter
     def vcpus_quota(self, vcpus_quota):
-        """Sets the vcpus_quota of this EpsQuotasOption.
+        r"""Sets the vcpus_quota of this EpsQuotasOption.
 
         cpu的配额。取值范围：实际使用的cpu核数 ~ 2,147,483,646。
 
@@ -136,7 +136,7 @@ class EpsQuotasOption:
 
     @property
     def ram_quota(self):
-        """Gets the ram_quota of this EpsQuotasOption.
+        r"""Gets the ram_quota of this EpsQuotasOption.
 
         内存的配额。单位GB。取值范围：实际使用的内存 ~ 2,147,483,646。
 
@@ -147,7 +147,7 @@ class EpsQuotasOption:
 
     @ram_quota.setter
     def ram_quota(self, ram_quota):
-        """Sets the ram_quota of this EpsQuotasOption.
+        r"""Sets the ram_quota of this EpsQuotasOption.
 
         内存的配额。单位GB。取值范围：实际使用的内存 ~ 2,147,483,646。
 
@@ -158,7 +158,7 @@ class EpsQuotasOption:
 
     @property
     def volume_quota(self):
-        """Gets the volume_quota of this EpsQuotasOption.
+        r"""Gets the volume_quota of this EpsQuotasOption.
 
         存储空间的配额。单位：GB。取值范围：实际使用的存储空间 ~ 2,147,483,646。
 
@@ -169,7 +169,7 @@ class EpsQuotasOption:
 
     @volume_quota.setter
     def volume_quota(self, volume_quota):
-        """Sets the volume_quota of this EpsQuotasOption.
+        r"""Sets the volume_quota of this EpsQuotasOption.
 
         存储空间的配额。单位：GB。取值范围：实际使用的存储空间 ~ 2,147,483,646。
 

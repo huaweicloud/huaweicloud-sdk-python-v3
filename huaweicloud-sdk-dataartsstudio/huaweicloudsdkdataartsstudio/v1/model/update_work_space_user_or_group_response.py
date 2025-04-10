@@ -24,7 +24,7 @@ class UpdateWorkSpaceUserOrGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateWorkSpaceUserOrGroupResponse
+        r"""UpdateWorkSpaceUserOrGroupResponse
 
         The model defined in huaweicloud sdk
 

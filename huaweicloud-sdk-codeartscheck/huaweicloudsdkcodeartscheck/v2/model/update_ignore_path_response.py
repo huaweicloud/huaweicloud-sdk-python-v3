@@ -24,7 +24,7 @@ class UpdateIgnorePathResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateIgnorePathResponse
+        r"""UpdateIgnorePathResponse
 
         The model defined in huaweicloud sdk
 

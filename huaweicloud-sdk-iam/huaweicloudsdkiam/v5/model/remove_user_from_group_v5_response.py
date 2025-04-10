@@ -24,7 +24,7 @@ class RemoveUserFromGroupV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """RemoveUserFromGroupV5Response
+        r"""RemoveUserFromGroupV5Response
 
         The model defined in huaweicloud sdk
 

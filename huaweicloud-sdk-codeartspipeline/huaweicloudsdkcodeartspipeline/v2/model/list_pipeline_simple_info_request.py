@@ -25,7 +25,7 @@ class ListPipelineSimpleInfoRequest:
     }
 
     def __init__(self, body=None):
-        """ListPipelineSimpleInfoRequest
+        r"""ListPipelineSimpleInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPipelineSimpleInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPipelineSimpleInfoRequest.
+        r"""Gets the body of this ListPipelineSimpleInfoRequest.
 
         :return: The body of this ListPipelineSimpleInfoRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineSimpleInfoRequestBody`
@@ -52,7 +52,7 @@ class ListPipelineSimpleInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPipelineSimpleInfoRequest.
+        r"""Sets the body of this ListPipelineSimpleInfoRequest.
 
         :param body: The body of this ListPipelineSimpleInfoRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineSimpleInfoRequestBody`

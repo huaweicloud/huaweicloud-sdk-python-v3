@@ -31,7 +31,7 @@ class StreamTranscodingTemplate:
     }
 
     def __init__(self, domain=None, app_name=None, trans_type=None, quality_info=None):
-        """StreamTranscodingTemplate
+        r"""StreamTranscodingTemplate
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class StreamTranscodingTemplate:
 
     @property
     def domain(self):
-        """Gets the domain of this StreamTranscodingTemplate.
+        r"""Gets the domain of this StreamTranscodingTemplate.
 
         推流域名
 
@@ -72,7 +72,7 @@ class StreamTranscodingTemplate:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this StreamTranscodingTemplate.
+        r"""Sets the domain of this StreamTranscodingTemplate.
 
         推流域名
 
@@ -83,7 +83,7 @@ class StreamTranscodingTemplate:
 
     @property
     def app_name(self):
-        """Gets the app_name of this StreamTranscodingTemplate.
+        r"""Gets the app_name of this StreamTranscodingTemplate.
 
         应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
 
@@ -94,7 +94,7 @@ class StreamTranscodingTemplate:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this StreamTranscodingTemplate.
+        r"""Sets the app_name of this StreamTranscodingTemplate.
 
         应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
 
@@ -105,7 +105,7 @@ class StreamTranscodingTemplate:
 
     @property
     def trans_type(self):
-        """Gets the trans_type of this StreamTranscodingTemplate.
+        r"""Gets the trans_type of this StreamTranscodingTemplate.
 
         转码流触发模式。 - play：拉流触发转码。 - publish：推流触发转码。 默认为play 
 
@@ -116,7 +116,7 @@ class StreamTranscodingTemplate:
 
     @trans_type.setter
     def trans_type(self, trans_type):
-        """Sets the trans_type of this StreamTranscodingTemplate.
+        r"""Sets the trans_type of this StreamTranscodingTemplate.
 
         转码流触发模式。 - play：拉流触发转码。 - publish：推流触发转码。 默认为play 
 
@@ -127,7 +127,7 @@ class StreamTranscodingTemplate:
 
     @property
     def quality_info(self):
-        """Gets the quality_info of this StreamTranscodingTemplate.
+        r"""Gets the quality_info of this StreamTranscodingTemplate.
 
         视频质量信息
 
@@ -138,7 +138,7 @@ class StreamTranscodingTemplate:
 
     @quality_info.setter
     def quality_info(self, quality_info):
-        """Sets the quality_info of this StreamTranscodingTemplate.
+        r"""Sets the quality_info of this StreamTranscodingTemplate.
 
         视频质量信息
 

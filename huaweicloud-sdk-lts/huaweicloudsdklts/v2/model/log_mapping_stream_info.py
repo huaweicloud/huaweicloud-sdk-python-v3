@@ -33,7 +33,7 @@ class LogMappingStreamInfo:
     }
 
     def __init__(self, source_log_stream_id=None, target_log_stream_id=None, target_log_stream_name=None, target_log_stream_eps_id=None, target_log_stream_ttl=None):
-        """LogMappingStreamInfo
+        r"""LogMappingStreamInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class LogMappingStreamInfo:
 
     @property
     def source_log_stream_id(self):
-        """Gets the source_log_stream_id of this LogMappingStreamInfo.
+        r"""Gets the source_log_stream_id of this LogMappingStreamInfo.
 
         源日志流ID
 
@@ -79,7 +79,7 @@ class LogMappingStreamInfo:
 
     @source_log_stream_id.setter
     def source_log_stream_id(self, source_log_stream_id):
-        """Sets the source_log_stream_id of this LogMappingStreamInfo.
+        r"""Sets the source_log_stream_id of this LogMappingStreamInfo.
 
         源日志流ID
 
@@ -90,7 +90,7 @@ class LogMappingStreamInfo:
 
     @property
     def target_log_stream_id(self):
-        """Gets the target_log_stream_id of this LogMappingStreamInfo.
+        r"""Gets the target_log_stream_id of this LogMappingStreamInfo.
 
         目标日志流ID
 
@@ -101,7 +101,7 @@ class LogMappingStreamInfo:
 
     @target_log_stream_id.setter
     def target_log_stream_id(self, target_log_stream_id):
-        """Sets the target_log_stream_id of this LogMappingStreamInfo.
+        r"""Sets the target_log_stream_id of this LogMappingStreamInfo.
 
         目标日志流ID
 
@@ -112,7 +112,7 @@ class LogMappingStreamInfo:
 
     @property
     def target_log_stream_name(self):
-        """Gets the target_log_stream_name of this LogMappingStreamInfo.
+        r"""Gets the target_log_stream_name of this LogMappingStreamInfo.
 
         目标日志流名称
 
@@ -123,7 +123,7 @@ class LogMappingStreamInfo:
 
     @target_log_stream_name.setter
     def target_log_stream_name(self, target_log_stream_name):
-        """Sets the target_log_stream_name of this LogMappingStreamInfo.
+        r"""Sets the target_log_stream_name of this LogMappingStreamInfo.
 
         目标日志流名称
 
@@ -134,7 +134,7 @@ class LogMappingStreamInfo:
 
     @property
     def target_log_stream_eps_id(self):
-        """Gets the target_log_stream_eps_id of this LogMappingStreamInfo.
+        r"""Gets the target_log_stream_eps_id of this LogMappingStreamInfo.
 
         目标日志流EPS ID
 
@@ -145,7 +145,7 @@ class LogMappingStreamInfo:
 
     @target_log_stream_eps_id.setter
     def target_log_stream_eps_id(self, target_log_stream_eps_id):
-        """Sets the target_log_stream_eps_id of this LogMappingStreamInfo.
+        r"""Sets the target_log_stream_eps_id of this LogMappingStreamInfo.
 
         目标日志流EPS ID
 
@@ -156,7 +156,7 @@ class LogMappingStreamInfo:
 
     @property
     def target_log_stream_ttl(self):
-        """Gets the target_log_stream_ttl of this LogMappingStreamInfo.
+        r"""Gets the target_log_stream_ttl of this LogMappingStreamInfo.
 
         目标日志流ttl
 
@@ -167,7 +167,7 @@ class LogMappingStreamInfo:
 
     @target_log_stream_ttl.setter
     def target_log_stream_ttl(self, target_log_stream_ttl):
-        """Sets the target_log_stream_ttl of this LogMappingStreamInfo.
+        r"""Sets the target_log_stream_ttl of this LogMappingStreamInfo.
 
         目标日志流ttl
 

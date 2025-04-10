@@ -26,7 +26,7 @@ class BatchListPartitionByValuesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchListPartitionByValuesResponse
+        r"""BatchListPartitionByValuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchListPartitionByValuesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchListPartitionByValuesResponse.
+        r"""Gets the body of this BatchListPartitionByValuesResponse.
 
         :return: The body of this BatchListPartitionByValuesResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Partition`]
@@ -53,7 +53,7 @@ class BatchListPartitionByValuesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListPartitionByValuesResponse.
+        r"""Sets the body of this BatchListPartitionByValuesResponse.
 
         :param body: The body of this BatchListPartitionByValuesResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Partition`]

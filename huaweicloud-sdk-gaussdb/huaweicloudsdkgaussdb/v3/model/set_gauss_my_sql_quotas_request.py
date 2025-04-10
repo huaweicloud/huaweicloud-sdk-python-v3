@@ -27,7 +27,7 @@ class SetGaussMySqlQuotasRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SetGaussMySqlQuotasRequest
+        r"""SetGaussMySqlQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetGaussMySqlQuotasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetGaussMySqlQuotasRequest.
+        r"""Gets the x_language of this SetGaussMySqlQuotasRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class SetGaussMySqlQuotasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetGaussMySqlQuotasRequest.
+        r"""Sets the x_language of this SetGaussMySqlQuotasRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class SetGaussMySqlQuotasRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetGaussMySqlQuotasRequest.
+        r"""Gets the body of this SetGaussMySqlQuotasRequest.
 
         :return: The body of this SetGaussMySqlQuotasRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`
@@ -81,7 +81,7 @@ class SetGaussMySqlQuotasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetGaussMySqlQuotasRequest.
+        r"""Sets the body of this SetGaussMySqlQuotasRequest.
 
         :param body: The body of this SetGaussMySqlQuotasRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`

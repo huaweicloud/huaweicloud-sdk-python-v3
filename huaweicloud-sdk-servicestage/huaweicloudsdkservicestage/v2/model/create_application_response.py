@@ -42,7 +42,7 @@ class CreateApplicationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None, unified_model=None):
-        """CreateApplicationResponse
+        r"""CreateApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateApplicationResponse.
+        r"""Gets the id of this CreateApplicationResponse.
 
         应用ID。
 
@@ -111,7 +111,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateApplicationResponse.
+        r"""Sets the id of this CreateApplicationResponse.
 
         应用ID。
 
@@ -122,7 +122,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateApplicationResponse.
+        r"""Gets the name of this CreateApplicationResponse.
 
         应用名称。
 
@@ -133,7 +133,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateApplicationResponse.
+        r"""Sets the name of this CreateApplicationResponse.
 
         应用名称。
 
@@ -144,7 +144,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateApplicationResponse.
+        r"""Gets the description of this CreateApplicationResponse.
 
         应用描述。
 
@@ -155,7 +155,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateApplicationResponse.
+        r"""Sets the description of this CreateApplicationResponse.
 
         应用描述。
 
@@ -166,7 +166,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreateApplicationResponse.
+        r"""Gets the creator of this CreateApplicationResponse.
 
         创建人。
 
@@ -177,7 +177,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateApplicationResponse.
+        r"""Sets the creator of this CreateApplicationResponse.
 
         创建人。
 
@@ -188,7 +188,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateApplicationResponse.
+        r"""Gets the project_id of this CreateApplicationResponse.
 
         项目ID。
 
@@ -199,7 +199,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateApplicationResponse.
+        r"""Sets the project_id of this CreateApplicationResponse.
 
         项目ID。
 
@@ -210,7 +210,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateApplicationResponse.
+        r"""Gets the enterprise_project_id of this CreateApplicationResponse.
 
         企业项目ID。
 
@@ -221,7 +221,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateApplicationResponse.
+        r"""Sets the enterprise_project_id of this CreateApplicationResponse.
 
         企业项目ID。
 
@@ -232,7 +232,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateApplicationResponse.
+        r"""Gets the create_time of this CreateApplicationResponse.
 
         创建时间。
 
@@ -243,7 +243,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateApplicationResponse.
+        r"""Sets the create_time of this CreateApplicationResponse.
 
         创建时间。
 
@@ -254,7 +254,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateApplicationResponse.
+        r"""Gets the update_time of this CreateApplicationResponse.
 
         修改时间。
 
@@ -265,7 +265,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateApplicationResponse.
+        r"""Sets the update_time of this CreateApplicationResponse.
 
         修改时间。
 
@@ -276,7 +276,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def unified_model(self):
-        """Gets the unified_model of this CreateApplicationResponse.
+        r"""Gets the unified_model of this CreateApplicationResponse.
 
         是否统一模型
 
@@ -287,7 +287,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @unified_model.setter
     def unified_model(self, unified_model):
-        """Sets the unified_model of this CreateApplicationResponse.
+        r"""Sets the unified_model of this CreateApplicationResponse.
 
         是否统一模型
 

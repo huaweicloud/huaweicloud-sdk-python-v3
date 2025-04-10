@@ -27,7 +27,7 @@ class TagsForListVolumes:
     }
 
     def __init__(self, key=None, values=None):
-        """TagsForListVolumes
+        r"""TagsForListVolumes
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagsForListVolumes:
 
     @property
     def key(self):
-        """Gets the key of this TagsForListVolumes.
+        r"""Gets the key of this TagsForListVolumes.
 
         标签键。
 
@@ -59,7 +59,7 @@ class TagsForListVolumes:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagsForListVolumes.
+        r"""Sets the key of this TagsForListVolumes.
 
         标签键。
 
@@ -70,7 +70,7 @@ class TagsForListVolumes:
 
     @property
     def values(self):
-        """Gets the values of this TagsForListVolumes.
+        r"""Gets the values of this TagsForListVolumes.
 
         标签值。  标签列表中最多包含10个value。 标签列表中的标签value值不允许重复。 标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，云硬盘满足请求中的某个value就会匹配出来。
 
@@ -81,7 +81,7 @@ class TagsForListVolumes:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagsForListVolumes.
+        r"""Sets the values of this TagsForListVolumes.
 
         标签值。  标签列表中最多包含10个value。 标签列表中的标签value值不允许重复。 标签列表如果为空列表，表示匹配任意值。标签列表中多个value之间是“或”的关系，在key已经满足要求的前提下，云硬盘满足请求中的某个value就会匹配出来。
 

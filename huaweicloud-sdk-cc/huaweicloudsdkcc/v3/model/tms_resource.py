@@ -29,7 +29,7 @@ class TmsResource:
     }
 
     def __init__(self, resource_id=None, tags=None, resource_name=None):
-        """TmsResource
+        r"""TmsResource
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TmsResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TmsResource.
+        r"""Gets the resource_id of this TmsResource.
 
         资源ID。
 
@@ -65,7 +65,7 @@ class TmsResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TmsResource.
+        r"""Sets the resource_id of this TmsResource.
 
         资源ID。
 
@@ -76,7 +76,7 @@ class TmsResource:
 
     @property
     def tags(self):
-        """Gets the tags of this TmsResource.
+        r"""Gets the tags of this TmsResource.
 
         标签列表，没有标签默认为空数组。
 
@@ -87,7 +87,7 @@ class TmsResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TmsResource.
+        r"""Sets the tags of this TmsResource.
 
         标签列表，没有标签默认为空数组。
 
@@ -98,7 +98,7 @@ class TmsResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this TmsResource.
+        r"""Gets the resource_name of this TmsResource.
 
         资源名称，资源没有名称时默认为空字符串。
 
@@ -109,7 +109,7 @@ class TmsResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this TmsResource.
+        r"""Sets the resource_name of this TmsResource.
 
         资源名称，资源没有名称时默认为空字符串。
 

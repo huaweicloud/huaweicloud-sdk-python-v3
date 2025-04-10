@@ -28,7 +28,7 @@ class ShowExtensionTestingResultRequest:
     }
 
     def __init__(self, x_publisher_token=None, task_id=None):
-        """ShowExtensionTestingResultRequest
+        r"""ShowExtensionTestingResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowExtensionTestingResultRequest:
 
     @property
     def x_publisher_token(self):
-        """Gets the x_publisher_token of this ShowExtensionTestingResultRequest.
+        r"""Gets the x_publisher_token of this ShowExtensionTestingResultRequest.
 
         发布商凭证,x-publisher-token和X-Auth-Token必传一个
 
@@ -61,7 +61,7 @@ class ShowExtensionTestingResultRequest:
 
     @x_publisher_token.setter
     def x_publisher_token(self, x_publisher_token):
-        """Sets the x_publisher_token of this ShowExtensionTestingResultRequest.
+        r"""Sets the x_publisher_token of this ShowExtensionTestingResultRequest.
 
         发布商凭证,x-publisher-token和X-Auth-Token必传一个
 
@@ -72,7 +72,7 @@ class ShowExtensionTestingResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowExtensionTestingResultRequest.
+        r"""Gets the task_id of this ShowExtensionTestingResultRequest.
 
         任务id
 
@@ -83,7 +83,7 @@ class ShowExtensionTestingResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowExtensionTestingResultRequest.
+        r"""Sets the task_id of this ShowExtensionTestingResultRequest.
 
         任务id
 

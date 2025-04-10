@@ -45,7 +45,7 @@ class HttpsDetail:
     }
 
     def __init__(self, domain_id=None, domain_name=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, expiration_time=None, https_status=None, force_redirect_https=None, force_redirect_config=None, http2=None):
-        """HttpsDetail
+        r"""HttpsDetail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HttpsDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this HttpsDetail.
+        r"""Gets the domain_id of this HttpsDetail.
 
         域名id。
 
@@ -124,7 +124,7 @@ class HttpsDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this HttpsDetail.
+        r"""Sets the domain_id of this HttpsDetail.
 
         域名id。
 
@@ -135,7 +135,7 @@ class HttpsDetail:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this HttpsDetail.
+        r"""Gets the domain_name of this HttpsDetail.
 
         绑定该证书的域名。
 
@@ -146,7 +146,7 @@ class HttpsDetail:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this HttpsDetail.
+        r"""Sets the domain_name of this HttpsDetail.
 
         绑定该证书的域名。
 
@@ -157,7 +157,7 @@ class HttpsDetail:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this HttpsDetail.
+        r"""Gets the cert_name of this HttpsDetail.
 
         证书名字。
 
@@ -168,7 +168,7 @@ class HttpsDetail:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this HttpsDetail.
+        r"""Sets the cert_name of this HttpsDetail.
 
         证书名字。
 
@@ -179,7 +179,7 @@ class HttpsDetail:
 
     @property
     def certificate(self):
-        """Gets the certificate of this HttpsDetail.
+        r"""Gets the certificate of this HttpsDetail.
 
         证书内容。
 
@@ -190,7 +190,7 @@ class HttpsDetail:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this HttpsDetail.
+        r"""Sets the certificate of this HttpsDetail.
 
         证书内容。
 
@@ -201,7 +201,7 @@ class HttpsDetail:
 
     @property
     def private_key(self):
-        """Gets the private_key of this HttpsDetail.
+        r"""Gets the private_key of this HttpsDetail.
 
         私钥内容。
 
@@ -212,7 +212,7 @@ class HttpsDetail:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this HttpsDetail.
+        r"""Sets the private_key of this HttpsDetail.
 
         私钥内容。
 
@@ -223,7 +223,7 @@ class HttpsDetail:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this HttpsDetail.
+        r"""Gets the certificate_type of this HttpsDetail.
 
         0：自有证书  1：云托管证书。
 
@@ -234,7 +234,7 @@ class HttpsDetail:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this HttpsDetail.
+        r"""Sets the certificate_type of this HttpsDetail.
 
         0：自有证书  1：云托管证书。
 
@@ -245,7 +245,7 @@ class HttpsDetail:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this HttpsDetail.
+        r"""Gets the expiration_time of this HttpsDetail.
 
         证书过期时间。
 
@@ -256,7 +256,7 @@ class HttpsDetail:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this HttpsDetail.
+        r"""Sets the expiration_time of this HttpsDetail.
 
         证书过期时间。
 
@@ -267,7 +267,7 @@ class HttpsDetail:
 
     @property
     def https_status(self):
-        """Gets the https_status of this HttpsDetail.
+        r"""Gets the https_status of this HttpsDetail.
 
         HTTPS证书是否启用，取值0：不启用；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源。
 
@@ -278,7 +278,7 @@ class HttpsDetail:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this HttpsDetail.
+        r"""Sets the https_status of this HttpsDetail.
 
         HTTPS证书是否启用，取值0：不启用；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源。
 
@@ -289,7 +289,7 @@ class HttpsDetail:
 
     @property
     def force_redirect_https(self):
-        """Gets the force_redirect_https of this HttpsDetail.
+        r"""Gets the force_redirect_https of this HttpsDetail.
 
         客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
@@ -300,7 +300,7 @@ class HttpsDetail:
 
     @force_redirect_https.setter
     def force_redirect_https(self, force_redirect_https):
-        """Sets the force_redirect_https of this HttpsDetail.
+        r"""Sets the force_redirect_https of this HttpsDetail.
 
         客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
@@ -311,7 +311,7 @@ class HttpsDetail:
 
     @property
     def force_redirect_config(self):
-        """Gets the force_redirect_config of this HttpsDetail.
+        r"""Gets the force_redirect_config of this HttpsDetail.
 
         :return: The force_redirect_config of this HttpsDetail.
         :rtype: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
@@ -320,7 +320,7 @@ class HttpsDetail:
 
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
-        """Sets the force_redirect_config of this HttpsDetail.
+        r"""Sets the force_redirect_config of this HttpsDetail.
 
         :param force_redirect_config: The force_redirect_config of this HttpsDetail.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
@@ -329,7 +329,7 @@ class HttpsDetail:
 
     @property
     def http2(self):
-        """Gets the http2 of this HttpsDetail.
+        r"""Gets the http2 of this HttpsDetail.
 
         是否使用HTTP2.0。（1是，0否。）
 
@@ -340,7 +340,7 @@ class HttpsDetail:
 
     @http2.setter
     def http2(self, http2):
-        """Sets the http2 of this HttpsDetail.
+        r"""Sets the http2 of this HttpsDetail.
 
         是否使用HTTP2.0。（1是，0否。）
 

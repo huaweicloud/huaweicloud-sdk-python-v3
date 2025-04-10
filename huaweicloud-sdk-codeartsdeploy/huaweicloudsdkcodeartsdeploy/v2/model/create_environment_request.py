@@ -27,7 +27,7 @@ class CreateEnvironmentRequest:
     }
 
     def __init__(self, application_id=None, body=None):
-        """CreateEnvironmentRequest
+        r"""CreateEnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEnvironmentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateEnvironmentRequest.
+        r"""Gets the application_id of this CreateEnvironmentRequest.
 
         应用id
 
@@ -60,7 +60,7 @@ class CreateEnvironmentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateEnvironmentRequest.
+        r"""Sets the application_id of this CreateEnvironmentRequest.
 
         应用id
 
@@ -71,7 +71,7 @@ class CreateEnvironmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEnvironmentRequest.
+        r"""Gets the body of this CreateEnvironmentRequest.
 
         :return: The body of this CreateEnvironmentRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentRequestBody`
@@ -80,7 +80,7 @@ class CreateEnvironmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEnvironmentRequest.
+        r"""Sets the body of this CreateEnvironmentRequest.
 
         :param body: The body of this CreateEnvironmentRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentRequestBody`

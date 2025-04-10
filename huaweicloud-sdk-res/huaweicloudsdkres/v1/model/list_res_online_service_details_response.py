@@ -32,7 +32,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, jobs=None, message=None, error_code=None):
-        """ListResOnlineServiceDetailsResponse
+        r"""ListResOnlineServiceDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListResOnlineServiceDetailsResponse.
+        r"""Gets the is_success of this ListResOnlineServiceDetailsResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListResOnlineServiceDetailsResponse.
+        r"""Sets the is_success of this ListResOnlineServiceDetailsResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListResOnlineServiceDetailsResponse.
+        r"""Gets the jobs of this ListResOnlineServiceDetailsResponse.
 
         :return: The jobs of this ListResOnlineServiceDetailsResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Jobs`
@@ -96,7 +96,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListResOnlineServiceDetailsResponse.
+        r"""Sets the jobs of this ListResOnlineServiceDetailsResponse.
 
         :param jobs: The jobs of this ListResOnlineServiceDetailsResponse.
         :type jobs: :class:`huaweicloudsdkres.v1.Jobs`
@@ -105,7 +105,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListResOnlineServiceDetailsResponse.
+        r"""Gets the message of this ListResOnlineServiceDetailsResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -116,7 +116,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListResOnlineServiceDetailsResponse.
+        r"""Sets the message of this ListResOnlineServiceDetailsResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -127,7 +127,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListResOnlineServiceDetailsResponse.
+        r"""Gets the error_code of this ListResOnlineServiceDetailsResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -138,7 +138,7 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListResOnlineServiceDetailsResponse.
+        r"""Sets the error_code of this ListResOnlineServiceDetailsResponse.
 
         错误码（请求成功时，不返回此字段）。
 

@@ -28,7 +28,7 @@ class ListSecretEventsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, page_info=None):
-        """ListSecretEventsResponse
+        r"""ListSecretEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecretEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ListSecretEventsResponse.
+        r"""Gets the events of this ListSecretEventsResponse.
 
         事件详情列表。
 
@@ -62,7 +62,7 @@ class ListSecretEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ListSecretEventsResponse.
+        r"""Sets the events of this ListSecretEventsResponse.
 
         事件详情列表。
 
@@ -73,7 +73,7 @@ class ListSecretEventsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSecretEventsResponse.
+        r"""Gets the page_info of this ListSecretEventsResponse.
 
         :return: The page_info of this ListSecretEventsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListSecretEventsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSecretEventsResponse.
+        r"""Sets the page_info of this ListSecretEventsResponse.
 
         :param page_info: The page_info of this ListSecretEventsResponse.
         :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`

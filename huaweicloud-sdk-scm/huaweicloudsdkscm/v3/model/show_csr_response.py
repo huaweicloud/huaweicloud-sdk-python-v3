@@ -50,7 +50,7 @@ class ShowCsrResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, csr=None, domain_name=None, sans=None, private_key_algo=None, usage=None, company_country=None, company_province=None, company_city=None, company_name=None, create_time=None, update_time=None):
-        """ShowCsrResponse
+        r"""ShowCsrResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowCsrResponse.
+        r"""Gets the id of this ShowCsrResponse.
 
         CSR的ID。
 
@@ -139,7 +139,7 @@ class ShowCsrResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCsrResponse.
+        r"""Sets the id of this ShowCsrResponse.
 
         CSR的ID。
 
@@ -150,7 +150,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowCsrResponse.
+        r"""Gets the name of this ShowCsrResponse.
 
         CSR名称。
 
@@ -161,7 +161,7 @@ class ShowCsrResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCsrResponse.
+        r"""Sets the name of this ShowCsrResponse.
 
         CSR名称。
 
@@ -172,7 +172,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def csr(self):
-        """Gets the csr of this ShowCsrResponse.
+        r"""Gets the csr of this ShowCsrResponse.
 
         CSR内容。
 
@@ -183,7 +183,7 @@ class ShowCsrResponse(SdkResponse):
 
     @csr.setter
     def csr(self, csr):
-        """Sets the csr of this ShowCsrResponse.
+        r"""Sets the csr of this ShowCsrResponse.
 
         CSR内容。
 
@@ -194,7 +194,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowCsrResponse.
+        r"""Gets the domain_name of this ShowCsrResponse.
 
         CSR绑定的域名。
 
@@ -205,7 +205,7 @@ class ShowCsrResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowCsrResponse.
+        r"""Sets the domain_name of this ShowCsrResponse.
 
         CSR绑定的域名。
 
@@ -216,7 +216,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def sans(self):
-        """Gets the sans of this ShowCsrResponse.
+        r"""Gets the sans of this ShowCsrResponse.
 
         CSR绑定的附加域名。
 
@@ -227,7 +227,7 @@ class ShowCsrResponse(SdkResponse):
 
     @sans.setter
     def sans(self, sans):
-        """Sets the sans of this ShowCsrResponse.
+        r"""Sets the sans of this ShowCsrResponse.
 
         CSR绑定的附加域名。
 
@@ -238,7 +238,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def private_key_algo(self):
-        """Gets the private_key_algo of this ShowCsrResponse.
+        r"""Gets the private_key_algo of this ShowCsrResponse.
 
         密钥算法。
 
@@ -249,7 +249,7 @@ class ShowCsrResponse(SdkResponse):
 
     @private_key_algo.setter
     def private_key_algo(self, private_key_algo):
-        """Sets the private_key_algo of this ShowCsrResponse.
+        r"""Sets the private_key_algo of this ShowCsrResponse.
 
         密钥算法。
 
@@ -260,7 +260,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def usage(self):
-        """Gets the usage of this ShowCsrResponse.
+        r"""Gets the usage of this ShowCsrResponse.
 
         CSR用途。
 
@@ -271,7 +271,7 @@ class ShowCsrResponse(SdkResponse):
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ShowCsrResponse.
+        r"""Sets the usage of this ShowCsrResponse.
 
         CSR用途。
 
@@ -282,7 +282,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def company_country(self):
-        """Gets the company_country of this ShowCsrResponse.
+        r"""Gets the company_country of this ShowCsrResponse.
 
         国家。
 
@@ -293,7 +293,7 @@ class ShowCsrResponse(SdkResponse):
 
     @company_country.setter
     def company_country(self, company_country):
-        """Sets the company_country of this ShowCsrResponse.
+        r"""Sets the company_country of this ShowCsrResponse.
 
         国家。
 
@@ -304,7 +304,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def company_province(self):
-        """Gets the company_province of this ShowCsrResponse.
+        r"""Gets the company_province of this ShowCsrResponse.
 
         省份。
 
@@ -315,7 +315,7 @@ class ShowCsrResponse(SdkResponse):
 
     @company_province.setter
     def company_province(self, company_province):
-        """Sets the company_province of this ShowCsrResponse.
+        r"""Sets the company_province of this ShowCsrResponse.
 
         省份。
 
@@ -326,7 +326,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def company_city(self):
-        """Gets the company_city of this ShowCsrResponse.
+        r"""Gets the company_city of this ShowCsrResponse.
 
         城市。
 
@@ -337,7 +337,7 @@ class ShowCsrResponse(SdkResponse):
 
     @company_city.setter
     def company_city(self, company_city):
-        """Sets the company_city of this ShowCsrResponse.
+        r"""Sets the company_city of this ShowCsrResponse.
 
         城市。
 
@@ -348,7 +348,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def company_name(self):
-        """Gets the company_name of this ShowCsrResponse.
+        r"""Gets the company_name of this ShowCsrResponse.
 
         公司名称。
 
@@ -359,7 +359,7 @@ class ShowCsrResponse(SdkResponse):
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this ShowCsrResponse.
+        r"""Sets the company_name of this ShowCsrResponse.
 
         公司名称。
 
@@ -370,7 +370,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCsrResponse.
+        r"""Gets the create_time of this ShowCsrResponse.
 
         CSR创建时间。
 
@@ -381,7 +381,7 @@ class ShowCsrResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCsrResponse.
+        r"""Sets the create_time of this ShowCsrResponse.
 
         CSR创建时间。
 
@@ -392,7 +392,7 @@ class ShowCsrResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowCsrResponse.
+        r"""Gets the update_time of this ShowCsrResponse.
 
         CSR更新时间。
 
@@ -403,7 +403,7 @@ class ShowCsrResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowCsrResponse.
+        r"""Sets the update_time of this ShowCsrResponse.
 
         CSR更新时间。
 

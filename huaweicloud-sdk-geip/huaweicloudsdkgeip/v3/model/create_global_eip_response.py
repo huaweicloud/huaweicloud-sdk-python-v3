@@ -30,7 +30,7 @@ class CreateGlobalEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, global_eip=None, x_request_id=None):
-        """CreateGlobalEipResponse
+        r"""CreateGlobalEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateGlobalEipResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateGlobalEipResponse.
+        r"""Gets the job_id of this CreateGlobalEipResponse.
 
         本次请求的job id
 
@@ -69,7 +69,7 @@ class CreateGlobalEipResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateGlobalEipResponse.
+        r"""Sets the job_id of this CreateGlobalEipResponse.
 
         本次请求的job id
 
@@ -80,7 +80,7 @@ class CreateGlobalEipResponse(SdkResponse):
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this CreateGlobalEipResponse.
+        r"""Gets the global_eip of this CreateGlobalEipResponse.
 
         :return: The global_eip of this CreateGlobalEipResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateGlobalEip`
@@ -89,7 +89,7 @@ class CreateGlobalEipResponse(SdkResponse):
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this CreateGlobalEipResponse.
+        r"""Sets the global_eip of this CreateGlobalEipResponse.
 
         :param global_eip: The global_eip of this CreateGlobalEipResponse.
         :type global_eip: :class:`huaweicloudsdkgeip.v3.CreateGlobalEip`
@@ -98,7 +98,7 @@ class CreateGlobalEipResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateGlobalEipResponse.
+        r"""Gets the x_request_id of this CreateGlobalEipResponse.
 
         :return: The x_request_id of this CreateGlobalEipResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateGlobalEipResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateGlobalEipResponse.
+        r"""Sets the x_request_id of this CreateGlobalEipResponse.
 
         :param x_request_id: The x_request_id of this CreateGlobalEipResponse.
         :type x_request_id: str

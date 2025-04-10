@@ -28,7 +28,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
     }
 
     def __init__(self, scale=None, x_request_id=None):
-        """ListRtcRealtimeScaleResponse
+        r"""ListRtcRealtimeScaleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
 
     @property
     def scale(self):
-        """Gets the scale of this ListRtcRealtimeScaleResponse.
+        r"""Gets the scale of this ListRtcRealtimeScaleResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -62,7 +62,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
 
     @scale.setter
     def scale(self, scale):
-        """Sets the scale of this ListRtcRealtimeScaleResponse.
+        r"""Sets the scale of this ListRtcRealtimeScaleResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -73,7 +73,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcRealtimeScaleResponse.
+        r"""Gets the x_request_id of this ListRtcRealtimeScaleResponse.
 
         :return: The x_request_id of this ListRtcRealtimeScaleResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRtcRealtimeScaleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcRealtimeScaleResponse.
+        r"""Sets the x_request_id of this ListRtcRealtimeScaleResponse.
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeScaleResponse.
         :type x_request_id: str

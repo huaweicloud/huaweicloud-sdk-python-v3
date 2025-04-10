@@ -33,7 +33,7 @@ class ChannelCreateReq:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, cross_account=None, policy=None):
-        """ChannelCreateReq
+        r"""ChannelCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ChannelCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this ChannelCreateReq.
+        r"""Gets the name of this ChannelCreateReq.
 
         通道名称，租户下唯一，由字母，数字，点，下划线和中划线组成，必须字母或数字开头，不能是default
 
@@ -81,7 +81,7 @@ class ChannelCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChannelCreateReq.
+        r"""Sets the name of this ChannelCreateReq.
 
         通道名称，租户下唯一，由字母，数字，点，下划线和中划线组成，必须字母或数字开头，不能是default
 
@@ -92,7 +92,7 @@ class ChannelCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this ChannelCreateReq.
+        r"""Gets the description of this ChannelCreateReq.
 
         通道描述
 
@@ -103,7 +103,7 @@ class ChannelCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChannelCreateReq.
+        r"""Sets the description of this ChannelCreateReq.
 
         通道描述
 
@@ -114,7 +114,7 @@ class ChannelCreateReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChannelCreateReq.
+        r"""Gets the enterprise_project_id of this ChannelCreateReq.
 
         企业项目id
 
@@ -125,7 +125,7 @@ class ChannelCreateReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChannelCreateReq.
+        r"""Sets the enterprise_project_id of this ChannelCreateReq.
 
         企业项目id
 
@@ -136,7 +136,7 @@ class ChannelCreateReq:
 
     @property
     def cross_account(self):
-        """Gets the cross_account of this ChannelCreateReq.
+        r"""Gets the cross_account of this ChannelCreateReq.
 
         跨账号开关
 
@@ -147,7 +147,7 @@ class ChannelCreateReq:
 
     @cross_account.setter
     def cross_account(self, cross_account):
-        """Sets the cross_account of this ChannelCreateReq.
+        r"""Sets the cross_account of this ChannelCreateReq.
 
         跨账号开关
 
@@ -158,7 +158,7 @@ class ChannelCreateReq:
 
     @property
     def policy(self):
-        """Gets the policy of this ChannelCreateReq.
+        r"""Gets the policy of this ChannelCreateReq.
 
         策略
 
@@ -169,7 +169,7 @@ class ChannelCreateReq:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ChannelCreateReq.
+        r"""Sets the policy of this ChannelCreateReq.
 
         策略
 

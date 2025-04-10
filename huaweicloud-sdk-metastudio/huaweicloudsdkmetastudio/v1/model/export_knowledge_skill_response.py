@@ -26,7 +26,7 @@ class ExportKnowledgeSkillResponse(SdkStreamResponse):
     }
 
     def __init__(self, response, x_request_id=None):
-        """ExportKnowledgeSkillResponse
+        r"""ExportKnowledgeSkillResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExportKnowledgeSkillResponse(SdkStreamResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ExportKnowledgeSkillResponse.
+        r"""Gets the x_request_id of this ExportKnowledgeSkillResponse.
 
         :return: The x_request_id of this ExportKnowledgeSkillResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ExportKnowledgeSkillResponse(SdkStreamResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ExportKnowledgeSkillResponse.
+        r"""Sets the x_request_id of this ExportKnowledgeSkillResponse.
 
         :param x_request_id: The x_request_id of this ExportKnowledgeSkillResponse.
         :type x_request_id: str

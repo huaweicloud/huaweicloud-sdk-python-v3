@@ -37,7 +37,7 @@ class Port:
     }
 
     def __init__(self, app_https_port=None, app_amqps_port=None, device_coap_port=None, device_coaps_port=None, device_mqtt_port=None, device_mqtts_port=None, device_https_port=None):
-        """Port
+        r"""Port
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Port:
 
     @property
     def app_https_port(self):
-        """Gets the app_https_port of this Port.
+        r"""Gets the app_https_port of this Port.
 
         **参数说明**：应用接入HTTPS协议端口，默认值：443 
 
@@ -96,7 +96,7 @@ class Port:
 
     @app_https_port.setter
     def app_https_port(self, app_https_port):
-        """Sets the app_https_port of this Port.
+        r"""Sets the app_https_port of this Port.
 
         **参数说明**：应用接入HTTPS协议端口，默认值：443 
 
@@ -107,7 +107,7 @@ class Port:
 
     @property
     def app_amqps_port(self):
-        """Gets the app_amqps_port of this Port.
+        r"""Gets the app_amqps_port of this Port.
 
         **参数说明**：应用接入AMQP协议端口, 默认值：5671 
 
@@ -118,7 +118,7 @@ class Port:
 
     @app_amqps_port.setter
     def app_amqps_port(self, app_amqps_port):
-        """Sets the app_amqps_port of this Port.
+        r"""Sets the app_amqps_port of this Port.
 
         **参数说明**：应用接入AMQP协议端口, 默认值：5671 
 
@@ -129,7 +129,7 @@ class Port:
 
     @property
     def device_coap_port(self):
-        """Gets the device_coap_port of this Port.
+        r"""Gets the device_coap_port of this Port.
 
         **参数说明**：设备接入COAP协议端口, 默认值：5683 
 
@@ -140,7 +140,7 @@ class Port:
 
     @device_coap_port.setter
     def device_coap_port(self, device_coap_port):
-        """Sets the device_coap_port of this Port.
+        r"""Sets the device_coap_port of this Port.
 
         **参数说明**：设备接入COAP协议端口, 默认值：5683 
 
@@ -151,7 +151,7 @@ class Port:
 
     @property
     def device_coaps_port(self):
-        """Gets the device_coaps_port of this Port.
+        r"""Gets the device_coaps_port of this Port.
 
         **参数说明**：设备接入COAPS协议端口, 默认值：5684 
 
@@ -162,7 +162,7 @@ class Port:
 
     @device_coaps_port.setter
     def device_coaps_port(self, device_coaps_port):
-        """Sets the device_coaps_port of this Port.
+        r"""Sets the device_coaps_port of this Port.
 
         **参数说明**：设备接入COAPS协议端口, 默认值：5684 
 
@@ -173,7 +173,7 @@ class Port:
 
     @property
     def device_mqtt_port(self):
-        """Gets the device_mqtt_port of this Port.
+        r"""Gets the device_mqtt_port of this Port.
 
         **参数说明**：设备接入MQTT协议端口, 默认值：1883 
 
@@ -184,7 +184,7 @@ class Port:
 
     @device_mqtt_port.setter
     def device_mqtt_port(self, device_mqtt_port):
-        """Sets the device_mqtt_port of this Port.
+        r"""Sets the device_mqtt_port of this Port.
 
         **参数说明**：设备接入MQTT协议端口, 默认值：1883 
 
@@ -195,7 +195,7 @@ class Port:
 
     @property
     def device_mqtts_port(self):
-        """Gets the device_mqtts_port of this Port.
+        r"""Gets the device_mqtts_port of this Port.
 
         **参数说明**：设备接入MQTTS协议端口, 默认值：8883 
 
@@ -206,7 +206,7 @@ class Port:
 
     @device_mqtts_port.setter
     def device_mqtts_port(self, device_mqtts_port):
-        """Sets the device_mqtts_port of this Port.
+        r"""Sets the device_mqtts_port of this Port.
 
         **参数说明**：设备接入MQTTS协议端口, 默认值：8883 
 
@@ -217,7 +217,7 @@ class Port:
 
     @property
     def device_https_port(self):
-        """Gets the device_https_port of this Port.
+        r"""Gets the device_https_port of this Port.
 
         **参数说明**：设备接入HTTPS协议端口, 默认值：443 
 
@@ -228,7 +228,7 @@ class Port:
 
     @device_https_port.setter
     def device_https_port(self, device_https_port):
-        """Sets the device_https_port of this Port.
+        r"""Sets the device_https_port of this Port.
 
         **参数说明**：设备接入HTTPS协议端口, 默认值：443 
 

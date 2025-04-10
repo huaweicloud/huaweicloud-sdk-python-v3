@@ -27,7 +27,7 @@ class MysqlProxyAvailable:
     }
 
     def __init__(self, code=None, description=None):
-        """MysqlProxyAvailable
+        r"""MysqlProxyAvailable
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MysqlProxyAvailable:
 
     @property
     def code(self):
-        """Gets the code of this MysqlProxyAvailable.
+        r"""Gets the code of this MysqlProxyAvailable.
 
         可用区编码。
 
@@ -61,7 +61,7 @@ class MysqlProxyAvailable:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this MysqlProxyAvailable.
+        r"""Sets the code of this MysqlProxyAvailable.
 
         可用区编码。
 
@@ -72,7 +72,7 @@ class MysqlProxyAvailable:
 
     @property
     def description(self):
-        """Gets the description of this MysqlProxyAvailable.
+        r"""Gets the description of this MysqlProxyAvailable.
 
         可用区描述。
 
@@ -83,7 +83,7 @@ class MysqlProxyAvailable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MysqlProxyAvailable.
+        r"""Sets the description of this MysqlProxyAvailable.
 
         可用区描述。
 

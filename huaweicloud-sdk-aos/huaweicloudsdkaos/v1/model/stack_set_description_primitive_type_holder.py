@@ -25,7 +25,7 @@ class StackSetDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, stack_set_description=None):
-        """StackSetDescriptionPrimitiveTypeHolder
+        r"""StackSetDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetDescriptionPrimitiveTypeHolder:
 
     @property
     def stack_set_description(self):
-        """Gets the stack_set_description of this StackSetDescriptionPrimitiveTypeHolder.
+        r"""Gets the stack_set_description of this StackSetDescriptionPrimitiveTypeHolder.
 
         资源栈集的描述。可用于客户识别自己的资源栈集。
 
@@ -54,7 +54,7 @@ class StackSetDescriptionPrimitiveTypeHolder:
 
     @stack_set_description.setter
     def stack_set_description(self, stack_set_description):
-        """Sets the stack_set_description of this StackSetDescriptionPrimitiveTypeHolder.
+        r"""Sets the stack_set_description of this StackSetDescriptionPrimitiveTypeHolder.
 
         资源栈集的描述。可用于客户识别自己的资源栈集。
 

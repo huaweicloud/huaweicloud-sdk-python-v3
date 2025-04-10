@@ -29,7 +29,7 @@ class GlanceUpdateImageRequestBody:
     }
 
     def __init__(self, op=None, path=None, value=None):
-        """GlanceUpdateImageRequestBody
+        r"""GlanceUpdateImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GlanceUpdateImageRequestBody:
 
     @property
     def op(self):
-        """Gets the op of this GlanceUpdateImageRequestBody.
+        r"""Gets the op of this GlanceUpdateImageRequestBody.
 
         所需进行的更新操作的类型：替换、添加、删除。取值范围：replace、add、remove
 
@@ -66,7 +66,7 @@ class GlanceUpdateImageRequestBody:
 
     @op.setter
     def op(self, op):
-        """Sets the op of this GlanceUpdateImageRequestBody.
+        r"""Sets the op of this GlanceUpdateImageRequestBody.
 
         所需进行的更新操作的类型：替换、添加、删除。取值范围：replace、add、remove
 
@@ -77,7 +77,7 @@ class GlanceUpdateImageRequestBody:
 
     @property
     def path(self):
-        """Gets the path of this GlanceUpdateImageRequestBody.
+        r"""Gets the path of this GlanceUpdateImageRequestBody.
 
         所要操作的属性名称。 replace和remove操作取值只能是镜像当前已有的属性、add操作取值只能是镜像当前不存在的属性，需要在属性名称前加”/”
 
@@ -88,7 +88,7 @@ class GlanceUpdateImageRequestBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this GlanceUpdateImageRequestBody.
+        r"""Sets the path of this GlanceUpdateImageRequestBody.
 
         所要操作的属性名称。 replace和remove操作取值只能是镜像当前已有的属性、add操作取值只能是镜像当前不存在的属性，需要在属性名称前加”/”
 
@@ -99,7 +99,7 @@ class GlanceUpdateImageRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this GlanceUpdateImageRequestBody.
+        r"""Gets the value of this GlanceUpdateImageRequestBody.
 
         所需更新/添加属性的值
 
@@ -110,7 +110,7 @@ class GlanceUpdateImageRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this GlanceUpdateImageRequestBody.
+        r"""Sets the value of this GlanceUpdateImageRequestBody.
 
         所需更新/添加属性的值
 

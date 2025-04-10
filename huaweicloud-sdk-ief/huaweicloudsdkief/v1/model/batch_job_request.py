@@ -33,7 +33,7 @@ class BatchJobRequest:
     }
 
     def __init__(self, job_name=None, job_type=None, job_content=None, description=None, tags=None):
-        """BatchJobRequest
+        r"""BatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BatchJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this BatchJobRequest.
+        r"""Gets the job_name of this BatchJobRequest.
 
         批量作业名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
@@ -80,7 +80,7 @@ class BatchJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this BatchJobRequest.
+        r"""Sets the job_name of this BatchJobRequest.
 
         批量作业名称，允许输入小写字母，数字，中划线，不能以中划线开头或结尾，最大长度为26位
 
@@ -91,7 +91,7 @@ class BatchJobRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this BatchJobRequest.
+        r"""Gets the job_type of this BatchJobRequest.
 
         批量作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -102,7 +102,7 @@ class BatchJobRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this BatchJobRequest.
+        r"""Sets the job_type of this BatchJobRequest.
 
         批量作业类型，支持以下选项： - node_upgrade： 节点升级 - deployment_deploy：应用部署 - deployment_upgrade：应用升级
 
@@ -113,7 +113,7 @@ class BatchJobRequest:
 
     @property
     def job_content(self):
-        """Gets the job_content of this BatchJobRequest.
+        r"""Gets the job_content of this BatchJobRequest.
 
         :return: The job_content of this BatchJobRequest.
         :rtype: :class:`huaweicloudsdkief.v1.JobContentInfo`
@@ -122,7 +122,7 @@ class BatchJobRequest:
 
     @job_content.setter
     def job_content(self, job_content):
-        """Sets the job_content of this BatchJobRequest.
+        r"""Sets the job_content of this BatchJobRequest.
 
         :param job_content: The job_content of this BatchJobRequest.
         :type job_content: :class:`huaweicloudsdkief.v1.JobContentInfo`
@@ -131,7 +131,7 @@ class BatchJobRequest:
 
     @property
     def description(self):
-        """Gets the description of this BatchJobRequest.
+        r"""Gets the description of this BatchJobRequest.
 
         批量作业描述
 
@@ -142,7 +142,7 @@ class BatchJobRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchJobRequest.
+        r"""Sets the description of this BatchJobRequest.
 
         批量作业描述
 
@@ -153,7 +153,7 @@ class BatchJobRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchJobRequest.
+        r"""Gets the tags of this BatchJobRequest.
 
         批量作业标签
 
@@ -164,7 +164,7 @@ class BatchJobRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchJobRequest.
+        r"""Sets the tags of this BatchJobRequest.
 
         批量作业标签
 

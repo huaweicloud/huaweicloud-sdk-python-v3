@@ -37,7 +37,7 @@ class TxLine:
     }
 
     def __init__(self, tx_from_node=None, tx_to_node=None, invoke_count=None, rt=None, error_count=None, type=None, direction=None):
-        """TxLine
+        r"""TxLine
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TxLine:
 
     @property
     def tx_from_node(self):
-        """Gets the tx_from_node of this TxLine.
+        r"""Gets the tx_from_node of this TxLine.
 
         开始节点。
 
@@ -96,7 +96,7 @@ class TxLine:
 
     @tx_from_node.setter
     def tx_from_node(self, tx_from_node):
-        """Sets the tx_from_node of this TxLine.
+        r"""Sets the tx_from_node of this TxLine.
 
         开始节点。
 
@@ -107,7 +107,7 @@ class TxLine:
 
     @property
     def tx_to_node(self):
-        """Gets the tx_to_node of this TxLine.
+        r"""Gets the tx_to_node of this TxLine.
 
         结束节点。
 
@@ -118,7 +118,7 @@ class TxLine:
 
     @tx_to_node.setter
     def tx_to_node(self, tx_to_node):
-        """Sets the tx_to_node of this TxLine.
+        r"""Sets the tx_to_node of this TxLine.
 
         结束节点。
 
@@ -129,7 +129,7 @@ class TxLine:
 
     @property
     def invoke_count(self):
-        """Gets the invoke_count of this TxLine.
+        r"""Gets the invoke_count of this TxLine.
 
         调用次数。
 
@@ -140,7 +140,7 @@ class TxLine:
 
     @invoke_count.setter
     def invoke_count(self, invoke_count):
-        """Sets the invoke_count of this TxLine.
+        r"""Sets the invoke_count of this TxLine.
 
         调用次数。
 
@@ -151,7 +151,7 @@ class TxLine:
 
     @property
     def rt(self):
-        """Gets the rt of this TxLine.
+        r"""Gets the rt of this TxLine.
 
         平均响应时间。
 
@@ -162,7 +162,7 @@ class TxLine:
 
     @rt.setter
     def rt(self, rt):
-        """Sets the rt of this TxLine.
+        r"""Sets the rt of this TxLine.
 
         平均响应时间。
 
@@ -173,7 +173,7 @@ class TxLine:
 
     @property
     def error_count(self):
-        """Gets the error_count of this TxLine.
+        r"""Gets the error_count of this TxLine.
 
         错误数。
 
@@ -184,7 +184,7 @@ class TxLine:
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this TxLine.
+        r"""Sets the error_count of this TxLine.
 
         错误数。
 
@@ -195,7 +195,7 @@ class TxLine:
 
     @property
     def type(self):
-        """Gets the type of this TxLine.
+        r"""Gets the type of this TxLine.
 
         类型。
 
@@ -206,7 +206,7 @@ class TxLine:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TxLine.
+        r"""Sets the type of this TxLine.
 
         类型。
 
@@ -217,7 +217,7 @@ class TxLine:
 
     @property
     def direction(self):
-        """Gets the direction of this TxLine.
+        r"""Gets the direction of this TxLine.
 
         指向。
 
@@ -228,7 +228,7 @@ class TxLine:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this TxLine.
+        r"""Sets the direction of this TxLine.
 
         指向。
 

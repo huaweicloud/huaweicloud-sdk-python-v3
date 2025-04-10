@@ -33,7 +33,7 @@ class ApprovalMergeRequestApproversItem:
     }
 
     def __init__(self, id=None, name=None, nick_name=None, state=None, username=None):
-        """ApprovalMergeRequestApproversItem
+        r"""ApprovalMergeRequestApproversItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApprovalMergeRequestApproversItem:
 
     @property
     def id(self):
-        """Gets the id of this ApprovalMergeRequestApproversItem.
+        r"""Gets the id of this ApprovalMergeRequestApproversItem.
 
         用户id
 
@@ -82,7 +82,7 @@ class ApprovalMergeRequestApproversItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApprovalMergeRequestApproversItem.
+        r"""Sets the id of this ApprovalMergeRequestApproversItem.
 
         用户id
 
@@ -93,7 +93,7 @@ class ApprovalMergeRequestApproversItem:
 
     @property
     def name(self):
-        """Gets the name of this ApprovalMergeRequestApproversItem.
+        r"""Gets the name of this ApprovalMergeRequestApproversItem.
 
         用户名
 
@@ -104,7 +104,7 @@ class ApprovalMergeRequestApproversItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApprovalMergeRequestApproversItem.
+        r"""Sets the name of this ApprovalMergeRequestApproversItem.
 
         用户名
 
@@ -115,7 +115,7 @@ class ApprovalMergeRequestApproversItem:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ApprovalMergeRequestApproversItem.
+        r"""Gets the nick_name of this ApprovalMergeRequestApproversItem.
 
         用户昵称
 
@@ -126,7 +126,7 @@ class ApprovalMergeRequestApproversItem:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ApprovalMergeRequestApproversItem.
+        r"""Sets the nick_name of this ApprovalMergeRequestApproversItem.
 
         用户昵称
 
@@ -137,7 +137,7 @@ class ApprovalMergeRequestApproversItem:
 
     @property
     def state(self):
-        """Gets the state of this ApprovalMergeRequestApproversItem.
+        r"""Gets the state of this ApprovalMergeRequestApproversItem.
 
         用户状态
 
@@ -148,7 +148,7 @@ class ApprovalMergeRequestApproversItem:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ApprovalMergeRequestApproversItem.
+        r"""Sets the state of this ApprovalMergeRequestApproversItem.
 
         用户状态
 
@@ -159,7 +159,7 @@ class ApprovalMergeRequestApproversItem:
 
     @property
     def username(self):
-        """Gets the username of this ApprovalMergeRequestApproversItem.
+        r"""Gets the username of this ApprovalMergeRequestApproversItem.
 
         用户iamId
 
@@ -170,7 +170,7 @@ class ApprovalMergeRequestApproversItem:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ApprovalMergeRequestApproversItem.
+        r"""Sets the username of this ApprovalMergeRequestApproversItem.
 
         用户iamId
 

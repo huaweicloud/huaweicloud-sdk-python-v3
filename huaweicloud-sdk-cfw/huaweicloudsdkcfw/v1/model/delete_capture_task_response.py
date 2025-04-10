@@ -26,7 +26,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteCaptureTaskResponse
+        r"""DeleteCaptureTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteCaptureTaskResponse.
+        r"""Gets the data of this DeleteCaptureTaskResponse.
 
         :return: The data of this DeleteCaptureTaskResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`
@@ -53,7 +53,7 @@ class DeleteCaptureTaskResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteCaptureTaskResponse.
+        r"""Sets the data of this DeleteCaptureTaskResponse.
 
         :param data: The data of this DeleteCaptureTaskResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.CaptureTaskId`

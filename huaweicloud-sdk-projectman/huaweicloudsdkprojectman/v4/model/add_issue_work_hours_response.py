@@ -26,7 +26,7 @@ class AddIssueWorkHoursResponse(SdkResponse):
     }
 
     def __init__(self, added_work_hours=None):
-        """AddIssueWorkHoursResponse
+        r"""AddIssueWorkHoursResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddIssueWorkHoursResponse(SdkResponse):
 
     @property
     def added_work_hours(self):
-        """Gets the added_work_hours of this AddIssueWorkHoursResponse.
+        r"""Gets the added_work_hours of this AddIssueWorkHoursResponse.
 
         已添加的工时列表
 
@@ -55,7 +55,7 @@ class AddIssueWorkHoursResponse(SdkResponse):
 
     @added_work_hours.setter
     def added_work_hours(self, added_work_hours):
-        """Sets the added_work_hours of this AddIssueWorkHoursResponse.
+        r"""Sets the added_work_hours of this AddIssueWorkHoursResponse.
 
         已添加的工时列表
 

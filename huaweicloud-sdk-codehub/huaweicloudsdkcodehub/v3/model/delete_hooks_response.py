@@ -30,7 +30,7 @@ class DeleteHooksResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteHooksResponse
+        r"""DeleteHooksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteHooksResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteHooksResponse.
+        r"""Gets the error of this DeleteHooksResponse.
 
         :return: The error of this DeleteHooksResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class DeleteHooksResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteHooksResponse.
+        r"""Sets the error of this DeleteHooksResponse.
 
         :param error: The error of this DeleteHooksResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class DeleteHooksResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteHooksResponse.
+        r"""Gets the result of this DeleteHooksResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class DeleteHooksResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteHooksResponse.
+        r"""Sets the result of this DeleteHooksResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class DeleteHooksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteHooksResponse.
+        r"""Gets the status of this DeleteHooksResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class DeleteHooksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteHooksResponse.
+        r"""Sets the status of this DeleteHooksResponse.
 
         响应状态
 

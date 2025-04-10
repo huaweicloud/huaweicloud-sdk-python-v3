@@ -35,7 +35,7 @@ class ListAvailableNodeTypesRequest:
     }
 
     def __init__(self, x_language=None, engine_type=None, db_use_type=None, job_direction=None, is_use_sellout_info=None, is_multi_write=None):
-        """ListAvailableNodeTypesRequest
+        r"""ListAvailableNodeTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListAvailableNodeTypesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAvailableNodeTypesRequest.
+        r"""Gets the x_language of this ListAvailableNodeTypesRequest.
 
         请求语言类型。
 
@@ -86,7 +86,7 @@ class ListAvailableNodeTypesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAvailableNodeTypesRequest.
+        r"""Sets the x_language of this ListAvailableNodeTypesRequest.
 
         请求语言类型。
 
@@ -97,7 +97,7 @@ class ListAvailableNodeTypesRequest:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this ListAvailableNodeTypesRequest.
+        r"""Gets the engine_type of this ListAvailableNodeTypesRequest.
 
         引擎类型
 
@@ -108,7 +108,7 @@ class ListAvailableNodeTypesRequest:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this ListAvailableNodeTypesRequest.
+        r"""Sets the engine_type of this ListAvailableNodeTypesRequest.
 
         引擎类型
 
@@ -119,7 +119,7 @@ class ListAvailableNodeTypesRequest:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this ListAvailableNodeTypesRequest.
+        r"""Gets the db_use_type of this ListAvailableNodeTypesRequest.
 
         迁移场景。 - migration:实时迁移 - sync:实时同步 - cloudDataGuard:实时灾备
 
@@ -130,7 +130,7 @@ class ListAvailableNodeTypesRequest:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this ListAvailableNodeTypesRequest.
+        r"""Sets the db_use_type of this ListAvailableNodeTypesRequest.
 
         迁移场景。 - migration:实时迁移 - sync:实时同步 - cloudDataGuard:实时灾备
 
@@ -141,7 +141,7 @@ class ListAvailableNodeTypesRequest:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this ListAvailableNodeTypesRequest.
+        r"""Gets the job_direction of this ListAvailableNodeTypesRequest.
 
         迁移方向，up：入云 ，down：出云，non-dbs：自建。
 
@@ -152,7 +152,7 @@ class ListAvailableNodeTypesRequest:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this ListAvailableNodeTypesRequest.
+        r"""Sets the job_direction of this ListAvailableNodeTypesRequest.
 
         迁移方向，up：入云 ，down：出云，non-dbs：自建。
 
@@ -163,7 +163,7 @@ class ListAvailableNodeTypesRequest:
 
     @property
     def is_use_sellout_info(self):
-        """Gets the is_use_sellout_info of this ListAvailableNodeTypesRequest.
+        r"""Gets the is_use_sellout_info of this ListAvailableNodeTypesRequest.
 
         是否查询资源售罄情况
 
@@ -174,7 +174,7 @@ class ListAvailableNodeTypesRequest:
 
     @is_use_sellout_info.setter
     def is_use_sellout_info(self, is_use_sellout_info):
-        """Sets the is_use_sellout_info of this ListAvailableNodeTypesRequest.
+        r"""Sets the is_use_sellout_info of this ListAvailableNodeTypesRequest.
 
         是否查询资源售罄情况
 
@@ -185,7 +185,7 @@ class ListAvailableNodeTypesRequest:
 
     @property
     def is_multi_write(self):
-        """Gets the is_multi_write of this ListAvailableNodeTypesRequest.
+        r"""Gets the is_multi_write of this ListAvailableNodeTypesRequest.
 
         是否是双主灾备
 
@@ -196,7 +196,7 @@ class ListAvailableNodeTypesRequest:
 
     @is_multi_write.setter
     def is_multi_write(self, is_multi_write):
-        """Sets the is_multi_write of this ListAvailableNodeTypesRequest.
+        r"""Sets the is_multi_write of this ListAvailableNodeTypesRequest.
 
         是否是双主灾备
 

@@ -25,7 +25,7 @@ class EnableDeletionProtectionPrimitiveTypeHolder:
     }
 
     def __init__(self, enable_deletion_protection=None):
-        """EnableDeletionProtectionPrimitiveTypeHolder
+        r"""EnableDeletionProtectionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EnableDeletionProtectionPrimitiveTypeHolder:
 
     @property
     def enable_deletion_protection(self):
-        """Gets the enable_deletion_protection of this EnableDeletionProtectionPrimitiveTypeHolder.
+        r"""Gets the enable_deletion_protection of this EnableDeletionProtectionPrimitiveTypeHolder.
 
         删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的删除保护属性进行更新*
 
@@ -54,7 +54,7 @@ class EnableDeletionProtectionPrimitiveTypeHolder:
 
     @enable_deletion_protection.setter
     def enable_deletion_protection(self, enable_deletion_protection):
-        """Sets the enable_deletion_protection of this EnableDeletionProtectionPrimitiveTypeHolder.
+        r"""Sets the enable_deletion_protection of this EnableDeletionProtectionPrimitiveTypeHolder.
 
         删除保护的标识位，如果不传默认为false，即默认不开启资源栈删除保护（删除保护开启后资源栈不允许被删除）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的删除保护属性进行更新*
 

@@ -26,7 +26,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     }
 
     def __init__(self, rocketmq_configs=None):
-        """ShowRocketMqConfigsResponse
+        r"""ShowRocketMqConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
 
     @property
     def rocketmq_configs(self):
-        """Gets the rocketmq_configs of this ShowRocketMqConfigsResponse.
+        r"""Gets the rocketmq_configs of this ShowRocketMqConfigsResponse.
 
         RocketMQ配置。
 
@@ -55,7 +55,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
 
     @rocketmq_configs.setter
     def rocketmq_configs(self, rocketmq_configs):
-        """Sets the rocketmq_configs of this ShowRocketMqConfigsResponse.
+        r"""Sets the rocketmq_configs of this ShowRocketMqConfigsResponse.
 
         RocketMQ配置。
 

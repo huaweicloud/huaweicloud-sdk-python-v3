@@ -27,7 +27,7 @@ class OpenProxyRequest:
     }
 
     def __init__(self, flavor_id=None, node_num=None):
-        """OpenProxyRequest
+        r"""OpenProxyRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenProxyRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this OpenProxyRequest.
+        r"""Gets the flavor_id of this OpenProxyRequest.
 
         规格ID。
 
@@ -61,7 +61,7 @@ class OpenProxyRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this OpenProxyRequest.
+        r"""Sets the flavor_id of this OpenProxyRequest.
 
         规格ID。
 
@@ -72,7 +72,7 @@ class OpenProxyRequest:
 
     @property
     def node_num(self):
-        """Gets the node_num of this OpenProxyRequest.
+        r"""Gets the node_num of this OpenProxyRequest.
 
         节点数量。
 
@@ -83,7 +83,7 @@ class OpenProxyRequest:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this OpenProxyRequest.
+        r"""Sets the node_num of this OpenProxyRequest.
 
         节点数量。
 

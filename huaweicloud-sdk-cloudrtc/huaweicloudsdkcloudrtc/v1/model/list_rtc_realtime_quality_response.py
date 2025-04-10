@@ -28,7 +28,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
     }
 
     def __init__(self, quality=None, x_request_id=None):
-        """ListRtcRealtimeQualityResponse
+        r"""ListRtcRealtimeQualityResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
 
     @property
     def quality(self):
-        """Gets the quality of this ListRtcRealtimeQualityResponse.
+        r"""Gets the quality of this ListRtcRealtimeQualityResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -62,7 +62,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this ListRtcRealtimeQualityResponse.
+        r"""Sets the quality of this ListRtcRealtimeQualityResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -73,7 +73,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcRealtimeQualityResponse.
+        r"""Gets the x_request_id of this ListRtcRealtimeQualityResponse.
 
         :return: The x_request_id of this ListRtcRealtimeQualityResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRtcRealtimeQualityResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcRealtimeQualityResponse.
+        r"""Sets the x_request_id of this ListRtcRealtimeQualityResponse.
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeQualityResponse.
         :type x_request_id: str

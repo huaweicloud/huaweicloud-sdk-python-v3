@@ -37,7 +37,7 @@ class DeleteBlockchainRequest:
     }
 
     def __init__(self, blockchain_id=None, is_delete_storage=None, is_delete_obs=None, is_delete_resource=None, is_delete_ief=None, is_delete_lightpeer=None, ief_nodes_id=None):
-        """DeleteBlockchainRequest
+        r"""DeleteBlockchainRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class DeleteBlockchainRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this DeleteBlockchainRequest.
+        r"""Gets the blockchain_id of this DeleteBlockchainRequest.
 
         bcs 服务id
 
@@ -95,7 +95,7 @@ class DeleteBlockchainRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this DeleteBlockchainRequest.
+        r"""Sets the blockchain_id of this DeleteBlockchainRequest.
 
         bcs 服务id
 
@@ -106,7 +106,7 @@ class DeleteBlockchainRequest:
 
     @property
     def is_delete_storage(self):
-        """Gets the is_delete_storage of this DeleteBlockchainRequest.
+        r"""Gets the is_delete_storage of this DeleteBlockchainRequest.
 
         是否删除存储，IEF模式下不用填写
 
@@ -117,7 +117,7 @@ class DeleteBlockchainRequest:
 
     @is_delete_storage.setter
     def is_delete_storage(self, is_delete_storage):
-        """Sets the is_delete_storage of this DeleteBlockchainRequest.
+        r"""Sets the is_delete_storage of this DeleteBlockchainRequest.
 
         是否删除存储，IEF模式下不用填写
 
@@ -128,7 +128,7 @@ class DeleteBlockchainRequest:
 
     @property
     def is_delete_obs(self):
-        """Gets the is_delete_obs of this DeleteBlockchainRequest.
+        r"""Gets the is_delete_obs of this DeleteBlockchainRequest.
 
         是否删除obs，IEF模式下不用填写
 
@@ -139,7 +139,7 @@ class DeleteBlockchainRequest:
 
     @is_delete_obs.setter
     def is_delete_obs(self, is_delete_obs):
-        """Sets the is_delete_obs of this DeleteBlockchainRequest.
+        r"""Sets the is_delete_obs of this DeleteBlockchainRequest.
 
         是否删除obs，IEF模式下不用填写
 
@@ -150,7 +150,7 @@ class DeleteBlockchainRequest:
 
     @property
     def is_delete_resource(self):
-        """Gets the is_delete_resource of this DeleteBlockchainRequest.
+        r"""Gets the is_delete_resource of this DeleteBlockchainRequest.
 
         是否删除底层CCE资源，IEF模式下不用填写
 
@@ -161,7 +161,7 @@ class DeleteBlockchainRequest:
 
     @is_delete_resource.setter
     def is_delete_resource(self, is_delete_resource):
-        """Sets the is_delete_resource of this DeleteBlockchainRequest.
+        r"""Sets the is_delete_resource of this DeleteBlockchainRequest.
 
         是否删除底层CCE资源，IEF模式下不用填写
 
@@ -172,7 +172,7 @@ class DeleteBlockchainRequest:
 
     @property
     def is_delete_ief(self):
-        """Gets the is_delete_ief of this DeleteBlockchainRequest.
+        r"""Gets the is_delete_ief of this DeleteBlockchainRequest.
 
         是否删除底层依赖的IEF边缘节点资源，CCE模式下不用填写，IEF模式下必填
 
@@ -183,7 +183,7 @@ class DeleteBlockchainRequest:
 
     @is_delete_ief.setter
     def is_delete_ief(self, is_delete_ief):
-        """Sets the is_delete_ief of this DeleteBlockchainRequest.
+        r"""Sets the is_delete_ief of this DeleteBlockchainRequest.
 
         是否删除底层依赖的IEF边缘节点资源，CCE模式下不用填写，IEF模式下必填
 
@@ -194,7 +194,7 @@ class DeleteBlockchainRequest:
 
     @property
     def is_delete_lightpeer(self):
-        """Gets the is_delete_lightpeer of this DeleteBlockchainRequest.
+        r"""Gets the is_delete_lightpeer of this DeleteBlockchainRequest.
 
         CCE模式下选填：是否删除LightPeer轻节点插件使用的IEF边缘节点资源，若需要删除，则填写对应的IEF编译节点名称，否则无需填写。例如：is_delete_lightpeer=ief_node_name_1,ief_node_name_2
 
@@ -205,7 +205,7 @@ class DeleteBlockchainRequest:
 
     @is_delete_lightpeer.setter
     def is_delete_lightpeer(self, is_delete_lightpeer):
-        """Sets the is_delete_lightpeer of this DeleteBlockchainRequest.
+        r"""Sets the is_delete_lightpeer of this DeleteBlockchainRequest.
 
         CCE模式下选填：是否删除LightPeer轻节点插件使用的IEF边缘节点资源，若需要删除，则填写对应的IEF编译节点名称，否则无需填写。例如：is_delete_lightpeer=ief_node_name_1,ief_node_name_2
 
@@ -216,7 +216,7 @@ class DeleteBlockchainRequest:
 
     @property
     def ief_nodes_id(self):
-        """Gets the ief_nodes_id of this DeleteBlockchainRequest.
+        r"""Gets the ief_nodes_id of this DeleteBlockchainRequest.
 
         IEF模式下选填：若需要删除IEF边缘集群所使用的IEF边缘节点资源，则填写IEF节点的id，否则无需填写。例如：ief_nodes_id=1356f6f0-c448-4ec2-926f-c13b026369d9，0cdacbf9-2002-41e9-8123-2fa13e8d1449
 
@@ -227,7 +227,7 @@ class DeleteBlockchainRequest:
 
     @ief_nodes_id.setter
     def ief_nodes_id(self, ief_nodes_id):
-        """Sets the ief_nodes_id of this DeleteBlockchainRequest.
+        r"""Sets the ief_nodes_id of this DeleteBlockchainRequest.
 
         IEF模式下选填：若需要删除IEF边缘集群所使用的IEF边缘节点资源，则填写IEF节点的id，否则无需填写。例如：ief_nodes_id=1356f6f0-c448-4ec2-926f-c13b026369d9，0cdacbf9-2002-41e9-8123-2fa13e8d1449
 

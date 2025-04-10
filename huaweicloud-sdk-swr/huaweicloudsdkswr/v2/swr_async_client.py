@@ -34,7 +34,7 @@ class SwrAsyncClient(Client):
         return client_builder
 
     def create_authorization_token_async(self, request):
-        """生成增强型登录指令(新)
+        r"""生成增强型登录指令(新)
 
         调用该接口，通过获取响应消息头的X-Swr-Dockerlogin的值及响应消息体的host值，可生成增强型登录指令,注：此接口只支持IAM新平面的调用方式。
         
@@ -97,7 +97,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_image_sync_repo_async(self, request):
-        """创建镜像自动同步任务
+        r"""创建镜像自动同步任务
 
         创建镜像自动同步任务，帮助您把最新推送的镜像自动同步到其他区域镜像仓库内。 镜像自动同步帮助您把最新推送的镜像自动同步到其他区域镜像仓库内，后期镜像有更新时，目标仓库的镜像也会自动更新，但已有的镜像不会自动同步。已有镜像的同步需要手动操作，详情请参见手动同步镜像。
         
@@ -166,7 +166,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_manual_image_sync_repo_async(self, request):
-        """手动同步镜像
+        r"""手动同步镜像
 
         对于镜像仓库已有的镜像，如果想在其他区域使用，需要手动触发镜像同步。 判断是否同步成功的方法如下：响应状态码为200，无报错信息，表示同步成功。通过SWR管理控制台或调用查询镜像仓库概要信息接口，在目标区域的目标组织下，若存在所同步的镜像版本表示同步成功。
         
@@ -235,7 +235,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_namespace_async(self, request):
-        """创建组织
+        r"""创建组织
 
         创建组织
         
@@ -300,7 +300,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_namespace_auth_async(self, request):
-        """创建组织权限
+        r"""创建组织权限
 
         创建组织权限
         
@@ -367,7 +367,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_repo_async(self, request):
-        """在组织下创建镜像仓库
+        r"""在组织下创建镜像仓库
 
         在组织下创建镜像仓库。
         
@@ -434,7 +434,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_repo_domains_async(self, request):
-        """创建共享帐号
+        r"""创建共享帐号
 
         创建共享帐号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
         
@@ -503,7 +503,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_repo_tag_async(self, request):
-        """创建镜像tag
+        r"""创建镜像tag
 
         创建镜像tag
         
@@ -572,7 +572,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_retention_async(self, request):
-        """创建镜像老化规则
+        r"""创建镜像老化规则
 
         创建镜像老化规则
         
@@ -641,7 +641,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_secret_async(self, request):
-        """生成临时登录指令
+        r"""生成临时登录指令
 
         调用该接口，通过获取响应消息头的X-Swr-Dockerlogin的值及响应消息体的host值，可生成临时登录指令。
         
@@ -706,7 +706,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_trigger_async(self, request):
-        """创建触发器
+        r"""创建触发器
 
         创建触发器
         
@@ -775,7 +775,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_user_repository_auth_async(self, request):
-        """创建镜像权限
+        r"""创建镜像权限
 
         创建镜像权限
         
@@ -844,7 +844,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_image_sync_repo_async(self, request):
-        """删除镜像自动同步任务
+        r"""删除镜像自动同步任务
 
         根据目标区域、目标组织删除指定的镜像自动同步任务。
         
@@ -913,7 +913,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_namespace_auth_async(self, request):
-        """删除组织权限
+        r"""删除组织权限
 
         删除组织权限
         
@@ -980,7 +980,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_namespaces_async(self, request):
-        """删除组织
+        r"""删除组织
 
         删除组织
         
@@ -1045,7 +1045,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_repo_async(self, request):
-        """删除组织下的镜像仓库
+        r"""删除组织下的镜像仓库
 
         删除组织下的镜像仓库。
         
@@ -1112,7 +1112,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_repo_domains_async(self, request):
-        """删除共享帐号
+        r"""删除共享帐号
 
         删除共享帐号
         
@@ -1181,7 +1181,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_repo_tag_async(self, request):
-        """删除指定tag的镜像
+        r"""删除指定tag的镜像
 
         删除镜像仓库中指定tag的镜像
         
@@ -1250,7 +1250,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_retention_async(self, request):
-        """删除镜像老化规则
+        r"""删除镜像老化规则
 
         删除镜像老化规则
         
@@ -1319,7 +1319,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_trigger_async(self, request):
-        """删除触发器
+        r"""删除触发器
 
         删除触发器
         
@@ -1388,7 +1388,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_user_repository_auth_async(self, request):
-        """删除镜像权限
+        r"""删除镜像权限
 
         删除镜像权限
         
@@ -1457,7 +1457,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_image_auto_sync_repos_details_async(self, request):
-        """获取镜像自动同步任务列表
+        r"""获取镜像自动同步任务列表
 
         获取为当前镜像仓库所创建的所有自动同步任务。
         
@@ -1524,7 +1524,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_namespaces_async(self, request):
-        """查询组织列表
+        r"""查询组织列表
 
         查询组织列表
         
@@ -1591,7 +1591,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_quotas_async(self, request):
-        """获取配额信息
+        r"""获取配额信息
 
         获取配额信息
         
@@ -1654,7 +1654,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_repo_domains_async(self, request):
-        """获取共享帐号列表
+        r"""获取共享帐号列表
 
         获取共享帐号列表
         
@@ -1721,7 +1721,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_repos_details_async(self, request):
-        """查询镜像仓库列表
+        r"""查询镜像仓库列表
 
         查询镜像仓库列表
         
@@ -1800,7 +1800,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_repository_tags_async(self, request):
-        """查询镜像tag列表
+        r"""查询镜像tag列表
 
         查询镜像tag列表
         
@@ -1879,7 +1879,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_retention_histories_async(self, request):
-        """获取镜像老化记录
+        r"""获取镜像老化记录
 
         获取镜像老化记录
         
@@ -1948,7 +1948,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_retentions_async(self, request):
-        """获取镜像老化规则列表
+        r"""获取镜像老化规则列表
 
         获取镜像老化规则列表
         
@@ -2015,7 +2015,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_shared_repos_details_async(self, request):
-        """查询共享镜像列表
+        r"""查询共享镜像列表
 
         查询共享镜像列表
         
@@ -2094,7 +2094,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_triggers_details_async(self, request):
-        """获取镜像仓库下的触发器列表
+        r"""获取镜像仓库下的触发器列表
 
         获取镜像仓库下的触发器列表
         
@@ -2161,7 +2161,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_access_domain_async(self, request):
-        """判断共享帐号是否存在
+        r"""判断共享帐号是否存在
 
         判断共享租户是否存在
         
@@ -2230,7 +2230,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_domain_overview_async(self, request):
-        """获取租户总览信息
+        r"""获取租户总览信息
 
         获取租户总览信息
         
@@ -2293,7 +2293,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_domain_resource_reports_async(self, request):
-        """获取租户资源统计信息
+        r"""获取租户资源统计信息
 
         获取租户资源统计信息
         
@@ -2360,7 +2360,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_namespace_async(self, request):
-        """获取组织详情
+        r"""获取组织详情
 
         获取组织详情
         
@@ -2425,7 +2425,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_namespace_auth_async(self, request):
-        """查询组织权限
+        r"""查询组织权限
 
         查询组织权限
         
@@ -2490,7 +2490,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_repository_async(self, request):
-        """查询镜像仓库概要信息
+        r"""查询镜像仓库概要信息
 
         查询镜像仓库概要信息
         
@@ -2557,7 +2557,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_retention_async(self, request):
-        """获取镜像老化规则记录
+        r"""获取镜像老化规则记录
 
         获取镜像老化规则记录
         
@@ -2626,7 +2626,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_share_feature_gates_async(self, request):
-        """查询服务特性开关信息
+        r"""查询服务特性开关信息
 
         查询服务特性开关信息
         
@@ -2689,7 +2689,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_sync_job_async(self, request):
-        """获取镜像自动同步任务信息
+        r"""获取镜像自动同步任务信息
 
         创建镜像自动同步任务后，可以通过此接口查询该任务的状态，以判断是否同步成功。
         
@@ -2758,7 +2758,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_trigger_async(self, request):
-        """获取触发器详情
+        r"""获取触发器详情
 
         获取触发器详情
         
@@ -2827,7 +2827,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_user_repository_auth_async(self, request):
-        """查询镜像权限
+        r"""查询镜像权限
 
         查询镜像权限
         
@@ -2894,7 +2894,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_namespace_auth_async(self, request):
-        """更新组织权限
+        r"""更新组织权限
 
         更新组织权限
         
@@ -2961,7 +2961,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_repo_async(self, request):
-        """更新镜像仓库的概要信息
+        r"""更新镜像仓库的概要信息
 
         更新租户组织下的镜像概要信息，包括镜像类型、是否公有、描述信息
         
@@ -3030,7 +3030,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_repo_domains_async(self, request):
-        """更新共享帐号
+        r"""更新共享帐号
 
         更新共享帐号
         
@@ -3101,7 +3101,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_retention_async(self, request):
-        """修改镜像老化规则
+        r"""修改镜像老化规则
 
         修改镜像老化规则
         
@@ -3172,7 +3172,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_trigger_async(self, request):
-        """更新触发器配置
+        r"""更新触发器配置
 
         更新触发器配置
         
@@ -3243,7 +3243,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_user_repository_auth_async(self, request):
-        """更新镜像权限
+        r"""更新镜像权限
 
         更新镜像权限
         
@@ -3312,7 +3312,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_api_versions_async(self, request):
-        """查询所有API版本信息
+        r"""查询所有API版本信息
 
         查询所有API版本信息
         
@@ -3375,7 +3375,7 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_api_version_async(self, request):
-        """查询指定API版本信息
+        r"""查询指定API版本信息
 
         查询指定API版本信息
         

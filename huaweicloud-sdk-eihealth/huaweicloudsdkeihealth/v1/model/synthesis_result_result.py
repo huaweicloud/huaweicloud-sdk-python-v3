@@ -29,7 +29,7 @@ class SynthesisResultResult:
     }
 
     def __init__(self, molecules=None, reactions=None, synthesis_routes=None):
-        """SynthesisResultResult
+        r"""SynthesisResultResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SynthesisResultResult:
 
     @property
     def molecules(self):
-        """Gets the molecules of this SynthesisResultResult.
+        r"""Gets the molecules of this SynthesisResultResult.
 
         分子合成规划中的分子
 
@@ -65,7 +65,7 @@ class SynthesisResultResult:
 
     @molecules.setter
     def molecules(self, molecules):
-        """Sets the molecules of this SynthesisResultResult.
+        r"""Sets the molecules of this SynthesisResultResult.
 
         分子合成规划中的分子
 
@@ -76,7 +76,7 @@ class SynthesisResultResult:
 
     @property
     def reactions(self):
-        """Gets the reactions of this SynthesisResultResult.
+        r"""Gets the reactions of this SynthesisResultResult.
 
         分子合成规划中的反应列表
 
@@ -87,7 +87,7 @@ class SynthesisResultResult:
 
     @reactions.setter
     def reactions(self, reactions):
-        """Sets the reactions of this SynthesisResultResult.
+        r"""Sets the reactions of this SynthesisResultResult.
 
         分子合成规划中的反应列表
 
@@ -98,7 +98,7 @@ class SynthesisResultResult:
 
     @property
     def synthesis_routes(self):
-        """Gets the synthesis_routes of this SynthesisResultResult.
+        r"""Gets the synthesis_routes of this SynthesisResultResult.
 
         分子合成规划的具体信息
 
@@ -109,7 +109,7 @@ class SynthesisResultResult:
 
     @synthesis_routes.setter
     def synthesis_routes(self, synthesis_routes):
-        """Sets the synthesis_routes of this SynthesisResultResult.
+        r"""Sets the synthesis_routes of this SynthesisResultResult.
 
         分子合成规划的具体信息
 

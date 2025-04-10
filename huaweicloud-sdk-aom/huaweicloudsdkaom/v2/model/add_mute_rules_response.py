@@ -24,7 +24,7 @@ class AddMuteRulesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddMuteRulesResponse
+        r"""AddMuteRulesResponse
 
         The model defined in huaweicloud sdk
 

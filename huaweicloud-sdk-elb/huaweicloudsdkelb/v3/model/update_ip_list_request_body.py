@@ -25,7 +25,7 @@ class UpdateIpListRequestBody:
     }
 
     def __init__(self, ipgroup=None):
-        """UpdateIpListRequestBody
+        r"""UpdateIpListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateIpListRequestBody:
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this UpdateIpListRequestBody.
+        r"""Gets the ipgroup of this UpdateIpListRequestBody.
 
         :return: The ipgroup of this UpdateIpListRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpListOption`
@@ -52,7 +52,7 @@ class UpdateIpListRequestBody:
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this UpdateIpListRequestBody.
+        r"""Sets the ipgroup of this UpdateIpListRequestBody.
 
         :param ipgroup: The ipgroup of this UpdateIpListRequestBody.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpListOption`

@@ -25,7 +25,7 @@ class CreateOrUpdateStoragePolicyStatementRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOrUpdateStoragePolicyStatementRequest
+        r"""CreateOrUpdateStoragePolicyStatementRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOrUpdateStoragePolicyStatementRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrUpdateStoragePolicyStatementRequest.
+        r"""Gets the body of this CreateOrUpdateStoragePolicyStatementRequest.
 
         :return: The body of this CreateOrUpdateStoragePolicyStatementRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateStoragePolicyStatementReq`
@@ -52,7 +52,7 @@ class CreateOrUpdateStoragePolicyStatementRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrUpdateStoragePolicyStatementRequest.
+        r"""Sets the body of this CreateOrUpdateStoragePolicyStatementRequest.
 
         :param body: The body of this CreateOrUpdateStoragePolicyStatementRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateStoragePolicyStatementReq`

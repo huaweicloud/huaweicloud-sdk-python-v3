@@ -27,7 +27,7 @@ class LDatastore:
     }
 
     def __init__(self, id=None, name=None):
-        """LDatastore
+        r"""LDatastore
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LDatastore:
 
     @property
     def id(self):
-        """Gets the id of this LDatastore.
+        r"""Gets the id of this LDatastore.
 
         数据库版本ID。
 
@@ -59,7 +59,7 @@ class LDatastore:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LDatastore.
+        r"""Sets the id of this LDatastore.
 
         数据库版本ID。
 
@@ -70,7 +70,7 @@ class LDatastore:
 
     @property
     def name(self):
-        """Gets the name of this LDatastore.
+        r"""Gets the name of this LDatastore.
 
         数据库版本号。 - 对于MySQL引擎可以返回小版本号，例如MySQL 5.6.51版本，将返回5.6.51。 - 对于PostgreSQL和SQL Server引擎，只返回两位数的大版本号，例如PostgreSQL 9.6.X版本，仅返回9.6。
 
@@ -81,7 +81,7 @@ class LDatastore:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LDatastore.
+        r"""Sets the name of this LDatastore.
 
         数据库版本号。 - 对于MySQL引擎可以返回小版本号，例如MySQL 5.6.51版本，将返回5.6.51。 - 对于PostgreSQL和SQL Server引擎，只返回两位数的大版本号，例如PostgreSQL 9.6.X版本，仅返回9.6。
 

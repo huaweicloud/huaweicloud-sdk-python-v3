@@ -35,7 +35,7 @@ class BasicTaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None):
-        """BasicTaskInfo
+        r"""BasicTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasicTaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this BasicTaskInfo.
+        r"""Gets the task_id of this BasicTaskInfo.
 
         任务Id
 
@@ -89,7 +89,7 @@ class BasicTaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this BasicTaskInfo.
+        r"""Sets the task_id of this BasicTaskInfo.
 
         任务Id
 
@@ -100,7 +100,7 @@ class BasicTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this BasicTaskInfo.
+        r"""Gets the status of this BasicTaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -111,7 +111,7 @@ class BasicTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BasicTaskInfo.
+        r"""Sets the status of this BasicTaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -122,7 +122,7 @@ class BasicTaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BasicTaskInfo.
+        r"""Gets the create_time of this BasicTaskInfo.
 
         任务启动时间 
 
@@ -133,7 +133,7 @@ class BasicTaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BasicTaskInfo.
+        r"""Sets the create_time of this BasicTaskInfo.
 
         任务启动时间 
 
@@ -144,7 +144,7 @@ class BasicTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BasicTaskInfo.
+        r"""Gets the end_time of this BasicTaskInfo.
 
         任务结束时间 
 
@@ -155,7 +155,7 @@ class BasicTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BasicTaskInfo.
+        r"""Sets the end_time of this BasicTaskInfo.
 
         任务结束时间 
 
@@ -166,7 +166,7 @@ class BasicTaskInfo:
 
     @property
     def output(self):
-        """Gets the output of this BasicTaskInfo.
+        r"""Gets the output of this BasicTaskInfo.
 
         :return: The output of this BasicTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -175,7 +175,7 @@ class BasicTaskInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this BasicTaskInfo.
+        r"""Sets the output of this BasicTaskInfo.
 
         :param output: The output of this BasicTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -184,7 +184,7 @@ class BasicTaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this BasicTaskInfo.
+        r"""Gets the description of this BasicTaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -195,7 +195,7 @@ class BasicTaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BasicTaskInfo.
+        r"""Sets the description of this BasicTaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 

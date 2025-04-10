@@ -25,7 +25,7 @@ class CreateDataobjectRelationsRequestBody:
     }
 
     def __init__(self, ids=None):
-        """CreateDataobjectRelationsRequestBody
+        r"""CreateDataobjectRelationsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDataobjectRelationsRequestBody:
 
     @property
     def ids(self):
-        """Gets the ids of this CreateDataobjectRelationsRequestBody.
+        r"""Gets the ids of this CreateDataobjectRelationsRequestBody.
 
         关联dataobject的ID列表
 
@@ -54,7 +54,7 @@ class CreateDataobjectRelationsRequestBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this CreateDataobjectRelationsRequestBody.
+        r"""Sets the ids of this CreateDataobjectRelationsRequestBody.
 
         关联dataobject的ID列表
 

@@ -65,7 +65,7 @@ class AppDef:
     }
 
     def __init__(self, app_order_id=None, app_url=None, channel_limit=None, channel_upper_limit=None, args=None, command=None, envs=None, is_modelbox=None, liveness_probe=None, msgs=None, name=None, npu_type=None, ports=None, privileged=None, readiness_probe=None, resources=None, version=None, volumes=None, start_resources=None, channel_resources=None, skill_project_id=None):
-        """AppDef
+        r"""AppDef
 
         The model defined in huaweicloud sdk
 
@@ -180,7 +180,7 @@ class AppDef:
 
     @property
     def app_order_id(self):
-        """Gets the app_order_id of this AppDef.
+        r"""Gets the app_order_id of this AppDef.
 
         app应用的订单ID，技能来源是市场时，如果不填，则自动选择默认订单。
 
@@ -191,7 +191,7 @@ class AppDef:
 
     @app_order_id.setter
     def app_order_id(self, app_order_id):
-        """Sets the app_order_id of this AppDef.
+        r"""Sets the app_order_id of this AppDef.
 
         app应用的订单ID，技能来源是市场时，如果不填，则自动选择默认订单。
 
@@ -202,7 +202,7 @@ class AppDef:
 
     @property
     def app_url(self):
-        """Gets the app_url of this AppDef.
+        r"""Gets the app_url of this AppDef.
 
         app应用的地址，可以是镜像地址或者OBS地址
 
@@ -213,7 +213,7 @@ class AppDef:
 
     @app_url.setter
     def app_url(self, app_url):
-        """Sets the app_url of this AppDef.
+        r"""Sets the app_url of this AppDef.
 
         app应用的地址，可以是镜像地址或者OBS地址
 
@@ -224,7 +224,7 @@ class AppDef:
 
     @property
     def channel_limit(self):
-        """Gets the channel_limit of this AppDef.
+        r"""Gets the channel_limit of this AppDef.
 
         路数限制，添加作业的时候，摄像头和VCN的最大路数不超过该值，范围是0到1000
 
@@ -235,7 +235,7 @@ class AppDef:
 
     @channel_limit.setter
     def channel_limit(self, channel_limit):
-        """Sets the channel_limit of this AppDef.
+        r"""Sets the channel_limit of this AppDef.
 
         路数限制，添加作业的时候，摄像头和VCN的最大路数不超过该值，范围是0到1000
 
@@ -246,7 +246,7 @@ class AppDef:
 
     @property
     def channel_upper_limit(self):
-        """Gets the channel_upper_limit of this AppDef.
+        r"""Gets the channel_upper_limit of this AppDef.
 
         用户可以指定的路数限制上限，范围是0到1000
 
@@ -257,7 +257,7 @@ class AppDef:
 
     @channel_upper_limit.setter
     def channel_upper_limit(self, channel_upper_limit):
-        """Sets the channel_upper_limit of this AppDef.
+        r"""Sets the channel_upper_limit of this AppDef.
 
         用户可以指定的路数限制上限，范围是0到1000
 
@@ -268,7 +268,7 @@ class AppDef:
 
     @property
     def args(self):
-        """Gets the args of this AppDef.
+        r"""Gets the args of this AppDef.
 
         容器启动参数，字符总长度最大为65536，不允许^#~^$|%&*<>()'\"\\[\\]{}]等特殊字符
 
@@ -279,7 +279,7 @@ class AppDef:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this AppDef.
+        r"""Sets the args of this AppDef.
 
         容器启动参数，字符总长度最大为65536，不允许^#~^$|%&*<>()'\"\\[\\]{}]等特殊字符
 
@@ -290,7 +290,7 @@ class AppDef:
 
     @property
     def command(self):
-        """Gets the command of this AppDef.
+        r"""Gets the command of this AppDef.
 
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。不允许^#~^$|%&*<>()'\"\\[\\]{}]等特殊字符
 
@@ -301,7 +301,7 @@ class AppDef:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this AppDef.
+        r"""Sets the command of this AppDef.
 
         容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。不允许^#~^$|%&*<>()'\"\\[\\]{}]等特殊字符
 
@@ -312,7 +312,7 @@ class AppDef:
 
     @property
     def envs(self):
-        """Gets the envs of this AppDef.
+        r"""Gets the envs of this AppDef.
 
         环境变量
 
@@ -323,7 +323,7 @@ class AppDef:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this AppDef.
+        r"""Sets the envs of this AppDef.
 
         环境变量
 
@@ -334,7 +334,7 @@ class AppDef:
 
     @property
     def is_modelbox(self):
-        """Gets the is_modelbox of this AppDef.
+        r"""Gets the is_modelbox of this AppDef.
 
         是否是modelbox镜像
 
@@ -345,7 +345,7 @@ class AppDef:
 
     @is_modelbox.setter
     def is_modelbox(self, is_modelbox):
-        """Sets the is_modelbox of this AppDef.
+        r"""Sets the is_modelbox of this AppDef.
 
         是否是modelbox镜像
 
@@ -356,7 +356,7 @@ class AppDef:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this AppDef.
+        r"""Gets the liveness_probe of this AppDef.
 
         :return: The liveness_probe of this AppDef.
         :rtype: :class:`huaweicloudsdkhilens.v3.Probe`
@@ -365,7 +365,7 @@ class AppDef:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this AppDef.
+        r"""Sets the liveness_probe of this AppDef.
 
         :param liveness_probe: The liveness_probe of this AppDef.
         :type liveness_probe: :class:`huaweicloudsdkhilens.v3.Probe`
@@ -374,7 +374,7 @@ class AppDef:
 
     @property
     def msgs(self):
-        """Gets the msgs of this AppDef.
+        r"""Gets the msgs of this AppDef.
 
         消息变量
 
@@ -385,7 +385,7 @@ class AppDef:
 
     @msgs.setter
     def msgs(self, msgs):
-        """Sets the msgs of this AppDef.
+        r"""Sets the msgs of this AppDef.
 
         消息变量
 
@@ -396,7 +396,7 @@ class AppDef:
 
     @property
     def name(self):
-        """Gets the name of this AppDef.
+        r"""Gets the name of this AppDef.
 
         应用名字，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾。该名称同时对应技能名称，当不传订单id的时候，默认通过该名称和版本号version字段，选择指定技能版本，进行部署，并选择可用的订单（默认订单优先）扣除份额。
 
@@ -407,7 +407,7 @@ class AppDef:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppDef.
+        r"""Sets the name of this AppDef.
 
         应用名字，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾。该名称同时对应技能名称，当不传订单id的时候，默认通过该名称和版本号version字段，选择指定技能版本，进行部署，并选择可用的订单（默认订单优先）扣除份额。
 
@@ -418,7 +418,7 @@ class AppDef:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this AppDef.
+        r"""Gets the npu_type of this AppDef.
 
         npu类型，支持D310类型和D910类型。D310表示D310类型。  D910表示D910类型。不填表示为D310类型
 
@@ -429,7 +429,7 @@ class AppDef:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this AppDef.
+        r"""Sets the npu_type of this AppDef.
 
         npu类型，支持D310类型和D910类型。D310表示D310类型。  D910表示D910类型。不填表示为D310类型
 
@@ -440,7 +440,7 @@ class AppDef:
 
     @property
     def ports(self):
-        """Gets the ports of this AppDef.
+        r"""Gets the ports of this AppDef.
 
         容器端口映射值
 
@@ -451,7 +451,7 @@ class AppDef:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this AppDef.
+        r"""Sets the ports of this AppDef.
 
         容器端口映射值
 
@@ -462,7 +462,7 @@ class AppDef:
 
     @property
     def privileged(self):
-        """Gets the privileged of this AppDef.
+        r"""Gets the privileged of this AppDef.
 
         是否启用特权容器,默认值false
 
@@ -473,7 +473,7 @@ class AppDef:
 
     @privileged.setter
     def privileged(self, privileged):
-        """Sets the privileged of this AppDef.
+        r"""Sets the privileged of this AppDef.
 
         是否启用特权容器,默认值false
 
@@ -484,7 +484,7 @@ class AppDef:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this AppDef.
+        r"""Gets the readiness_probe of this AppDef.
 
         :return: The readiness_probe of this AppDef.
         :rtype: :class:`huaweicloudsdkhilens.v3.Probe`
@@ -493,7 +493,7 @@ class AppDef:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this AppDef.
+        r"""Sets the readiness_probe of this AppDef.
 
         :param readiness_probe: The readiness_probe of this AppDef.
         :type readiness_probe: :class:`huaweicloudsdkhilens.v3.Probe`
@@ -502,7 +502,7 @@ class AppDef:
 
     @property
     def resources(self):
-        """Gets the resources of this AppDef.
+        r"""Gets the resources of this AppDef.
 
         :return: The resources of this AppDef.
         :rtype: :class:`huaweicloudsdkhilens.v3.ResQuest`
@@ -511,7 +511,7 @@ class AppDef:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this AppDef.
+        r"""Sets the resources of this AppDef.
 
         :param resources: The resources of this AppDef.
         :type resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
@@ -520,7 +520,7 @@ class AppDef:
 
     @property
     def version(self):
-        """Gets the version of this AppDef.
+        r"""Gets the version of this AppDef.
 
         版本号，长度不操作128，支持大小写数字，下划线，点，中划线
 
@@ -531,7 +531,7 @@ class AppDef:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AppDef.
+        r"""Sets the version of this AppDef.
 
         版本号，长度不操作128，支持大小写数字，下划线，点，中划线
 
@@ -542,7 +542,7 @@ class AppDef:
 
     @property
     def volumes(self):
-        """Gets the volumes of this AppDef.
+        r"""Gets the volumes of this AppDef.
 
         卷配置
 
@@ -553,7 +553,7 @@ class AppDef:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this AppDef.
+        r"""Sets the volumes of this AppDef.
 
         卷配置
 
@@ -564,7 +564,7 @@ class AppDef:
 
     @property
     def start_resources(self):
-        """Gets the start_resources of this AppDef.
+        r"""Gets the start_resources of this AppDef.
 
         :return: The start_resources of this AppDef.
         :rtype: :class:`huaweicloudsdkhilens.v3.ResQuest`
@@ -573,7 +573,7 @@ class AppDef:
 
     @start_resources.setter
     def start_resources(self, start_resources):
-        """Sets the start_resources of this AppDef.
+        r"""Sets the start_resources of this AppDef.
 
         :param start_resources: The start_resources of this AppDef.
         :type start_resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
@@ -582,7 +582,7 @@ class AppDef:
 
     @property
     def channel_resources(self):
-        """Gets the channel_resources of this AppDef.
+        r"""Gets the channel_resources of this AppDef.
 
         :return: The channel_resources of this AppDef.
         :rtype: :class:`huaweicloudsdkhilens.v3.ResQuest`
@@ -591,7 +591,7 @@ class AppDef:
 
     @channel_resources.setter
     def channel_resources(self, channel_resources):
-        """Sets the channel_resources of this AppDef.
+        r"""Sets the channel_resources of this AppDef.
 
         :param channel_resources: The channel_resources of this AppDef.
         :type channel_resources: :class:`huaweicloudsdkhilens.v3.ResQuest`
@@ -600,7 +600,7 @@ class AppDef:
 
     @property
     def skill_project_id(self):
-        """Gets the skill_project_id of this AppDef.
+        r"""Gets the skill_project_id of this AppDef.
 
         技能管理ID，技能来源source是skill的时候，需要传入该ID
 
@@ -611,7 +611,7 @@ class AppDef:
 
     @skill_project_id.setter
     def skill_project_id(self, skill_project_id):
-        """Sets the skill_project_id of this AppDef.
+        r"""Sets the skill_project_id of this AppDef.
 
         技能管理ID，技能来源source是skill的时候，需要传入该ID
 

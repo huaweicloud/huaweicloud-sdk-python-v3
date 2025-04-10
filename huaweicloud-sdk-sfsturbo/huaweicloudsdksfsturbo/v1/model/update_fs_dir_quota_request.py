@@ -27,7 +27,7 @@ class UpdateFsDirQuotaRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """UpdateFsDirQuotaRequest
+        r"""UpdateFsDirQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFsDirQuotaRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this UpdateFsDirQuotaRequest.
+        r"""Gets the share_id of this UpdateFsDirQuotaRequest.
 
         文件系统id
 
@@ -60,7 +60,7 @@ class UpdateFsDirQuotaRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this UpdateFsDirQuotaRequest.
+        r"""Sets the share_id of this UpdateFsDirQuotaRequest.
 
         文件系统id
 
@@ -71,7 +71,7 @@ class UpdateFsDirQuotaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFsDirQuotaRequest.
+        r"""Gets the body of this UpdateFsDirQuotaRequest.
 
         :return: The body of this UpdateFsDirQuotaRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateFsDirQuotaRequestBody`
@@ -80,7 +80,7 @@ class UpdateFsDirQuotaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFsDirQuotaRequest.
+        r"""Sets the body of this UpdateFsDirQuotaRequest.
 
         :param body: The body of this UpdateFsDirQuotaRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateFsDirQuotaRequestBody`

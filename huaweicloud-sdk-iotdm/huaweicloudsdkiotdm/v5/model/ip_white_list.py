@@ -27,7 +27,7 @@ class IPWhiteList:
     }
 
     def __init__(self, enable=None, allow_list=None):
-        """IPWhiteList
+        r"""IPWhiteList
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IPWhiteList:
 
     @property
     def enable(self):
-        """Gets the enable of this IPWhiteList.
+        r"""Gets the enable of this IPWhiteList.
 
         **参数说明**：启用Ip白名单访问控制 
 
@@ -60,7 +60,7 @@ class IPWhiteList:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this IPWhiteList.
+        r"""Sets the enable of this IPWhiteList.
 
         **参数说明**：启用Ip白名单访问控制 
 
@@ -71,7 +71,7 @@ class IPWhiteList:
 
     @property
     def allow_list(self):
-        """Gets the allow_list of this IPWhiteList.
+        r"""Gets the allow_list of this IPWhiteList.
 
         允许访问企业版实例的IP地址列表 
 
@@ -82,7 +82,7 @@ class IPWhiteList:
 
     @allow_list.setter
     def allow_list(self, allow_list):
-        """Sets the allow_list of this IPWhiteList.
+        r"""Sets the allow_list of this IPWhiteList.
 
         允许访问企业版实例的IP地址列表 
 

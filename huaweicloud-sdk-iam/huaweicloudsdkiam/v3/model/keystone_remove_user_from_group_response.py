@@ -24,7 +24,7 @@ class KeystoneRemoveUserFromGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneRemoveUserFromGroupResponse
+        r"""KeystoneRemoveUserFromGroupResponse
 
         The model defined in huaweicloud sdk
 

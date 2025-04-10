@@ -29,7 +29,7 @@ class ExectuionStatistic:
     }
 
     def __init__(self, instance_status=None, instance_count=None, batch_indexes=None):
-        """ExectuionStatistic
+        r"""ExectuionStatistic
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExectuionStatistic:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this ExectuionStatistic.
+        r"""Gets the instance_status of this ExectuionStatistic.
 
         执行实例状态
 
@@ -65,7 +65,7 @@ class ExectuionStatistic:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this ExectuionStatistic.
+        r"""Sets the instance_status of this ExectuionStatistic.
 
         执行实例状态
 
@@ -76,7 +76,7 @@ class ExectuionStatistic:
 
     @property
     def instance_count(self):
-        """Gets the instance_count of this ExectuionStatistic.
+        r"""Gets the instance_count of this ExectuionStatistic.
 
         该状态下执行实例个数
 
@@ -87,7 +87,7 @@ class ExectuionStatistic:
 
     @instance_count.setter
     def instance_count(self, instance_count):
-        """Sets the instance_count of this ExectuionStatistic.
+        r"""Sets the instance_count of this ExectuionStatistic.
 
         该状态下执行实例个数
 
@@ -98,7 +98,7 @@ class ExectuionStatistic:
 
     @property
     def batch_indexes(self):
-        """Gets the batch_indexes of this ExectuionStatistic.
+        r"""Gets the batch_indexes of this ExectuionStatistic.
 
         该状态下批次index列表
 
@@ -109,7 +109,7 @@ class ExectuionStatistic:
 
     @batch_indexes.setter
     def batch_indexes(self, batch_indexes):
-        """Sets the batch_indexes of this ExectuionStatistic.
+        r"""Sets the batch_indexes of this ExectuionStatistic.
 
         该状态下批次index列表
 

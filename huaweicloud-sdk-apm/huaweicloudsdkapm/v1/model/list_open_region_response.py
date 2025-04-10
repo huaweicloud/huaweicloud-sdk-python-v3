@@ -26,7 +26,7 @@ class ListOpenRegionResponse(SdkResponse):
     }
 
     def __init__(self, region_list=None):
-        """ListOpenRegionResponse
+        r"""ListOpenRegionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOpenRegionResponse(SdkResponse):
 
     @property
     def region_list(self):
-        """Gets the region_list of this ListOpenRegionResponse.
+        r"""Gets the region_list of this ListOpenRegionResponse.
 
         region列表。
 
@@ -55,7 +55,7 @@ class ListOpenRegionResponse(SdkResponse):
 
     @region_list.setter
     def region_list(self, region_list):
-        """Sets the region_list of this ListOpenRegionResponse.
+        r"""Sets the region_list of this ListOpenRegionResponse.
 
         region列表。
 

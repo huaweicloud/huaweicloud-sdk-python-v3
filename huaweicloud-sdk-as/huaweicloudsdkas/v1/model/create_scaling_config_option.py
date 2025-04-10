@@ -29,7 +29,7 @@ class CreateScalingConfigOption:
     }
 
     def __init__(self, scaling_configuration_name=None, instance_config=None, source_scaling_configuration_id=None):
-        """CreateScalingConfigOption
+        r"""CreateScalingConfigOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateScalingConfigOption:
 
     @property
     def scaling_configuration_name(self):
-        """Gets the scaling_configuration_name of this CreateScalingConfigOption.
+        r"""Gets the scaling_configuration_name of this CreateScalingConfigOption.
 
         伸缩配置名称(1-64个字符)，只能包含中文、字母、数字、下划线或中划线。
 
@@ -68,7 +68,7 @@ class CreateScalingConfigOption:
 
     @scaling_configuration_name.setter
     def scaling_configuration_name(self, scaling_configuration_name):
-        """Sets the scaling_configuration_name of this CreateScalingConfigOption.
+        r"""Sets the scaling_configuration_name of this CreateScalingConfigOption.
 
         伸缩配置名称(1-64个字符)，只能包含中文、字母、数字、下划线或中划线。
 
@@ -79,7 +79,7 @@ class CreateScalingConfigOption:
 
     @property
     def instance_config(self):
-        """Gets the instance_config of this CreateScalingConfigOption.
+        r"""Gets the instance_config of this CreateScalingConfigOption.
 
         :return: The instance_config of this CreateScalingConfigOption.
         :rtype: :class:`huaweicloudsdkas.v1.InstanceConfig`
@@ -88,7 +88,7 @@ class CreateScalingConfigOption:
 
     @instance_config.setter
     def instance_config(self, instance_config):
-        """Sets the instance_config of this CreateScalingConfigOption.
+        r"""Sets the instance_config of this CreateScalingConfigOption.
 
         :param instance_config: The instance_config of this CreateScalingConfigOption.
         :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfig`
@@ -97,7 +97,7 @@ class CreateScalingConfigOption:
 
     @property
     def source_scaling_configuration_id(self):
-        """Gets the source_scaling_configuration_id of this CreateScalingConfigOption.
+        r"""Gets the source_scaling_configuration_id of this CreateScalingConfigOption.
 
         源伸缩配置ID，通过该ID查询已有伸缩配置信息与instance_config中参数进行结合，创建新的伸缩配置。 说明：  - 若传入instance_config中的instance_id，则优先使用instance_id相关实例配置创建新的伸缩配置，source_scaling_configuration_id参数不生效。  - 若未传入instance_config中的instance_id，则使用source_scaling_configuration_id与instance_config中的参数相结合创建伸缩配置。         - 若instance_config中的参数值为null，则创建新伸缩配置时该字段不产生修改。         - 若instance_config中的参数值不为null，则创建新伸缩配置时该字段将覆盖原有值，其中值为空时，该字段会被清空。  - 若不指定source_scaling_configuration_id创建伸缩配置，则scaling_configuration_name和instance_config为必选。
 
@@ -108,7 +108,7 @@ class CreateScalingConfigOption:
 
     @source_scaling_configuration_id.setter
     def source_scaling_configuration_id(self, source_scaling_configuration_id):
-        """Sets the source_scaling_configuration_id of this CreateScalingConfigOption.
+        r"""Sets the source_scaling_configuration_id of this CreateScalingConfigOption.
 
         源伸缩配置ID，通过该ID查询已有伸缩配置信息与instance_config中参数进行结合，创建新的伸缩配置。 说明：  - 若传入instance_config中的instance_id，则优先使用instance_id相关实例配置创建新的伸缩配置，source_scaling_configuration_id参数不生效。  - 若未传入instance_config中的instance_id，则使用source_scaling_configuration_id与instance_config中的参数相结合创建伸缩配置。         - 若instance_config中的参数值为null，则创建新伸缩配置时该字段不产生修改。         - 若instance_config中的参数值不为null，则创建新伸缩配置时该字段将覆盖原有值，其中值为空时，该字段会被清空。  - 若不指定source_scaling_configuration_id创建伸缩配置，则scaling_configuration_name和instance_config为必选。
 

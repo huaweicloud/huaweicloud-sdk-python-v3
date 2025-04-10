@@ -27,7 +27,7 @@ class VpnResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """VpnResourceTag
+        r"""VpnResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VpnResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this VpnResourceTag.
+        r"""Gets the key of this VpnResourceTag.
 
         标签的key
 
@@ -59,7 +59,7 @@ class VpnResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this VpnResourceTag.
+        r"""Sets the key of this VpnResourceTag.
 
         标签的key
 
@@ -70,7 +70,7 @@ class VpnResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this VpnResourceTag.
+        r"""Gets the value of this VpnResourceTag.
 
         标签的value
 
@@ -81,7 +81,7 @@ class VpnResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this VpnResourceTag.
+        r"""Sets the value of this VpnResourceTag.
 
         标签的value
 

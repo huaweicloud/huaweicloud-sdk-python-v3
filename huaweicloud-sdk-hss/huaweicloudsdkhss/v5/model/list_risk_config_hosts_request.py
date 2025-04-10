@@ -37,11 +37,11 @@ class ListRiskConfigHostsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, check_name=None, standard=None, host_name=None, host_ip=None, limit=None, offset=None):
-        """ListRiskConfigHostsRequest
+        r"""ListRiskConfigHostsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
@@ -83,9 +83,9 @@ class ListRiskConfigHostsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListRiskConfigHostsRequest.
+        r"""Gets the enterprise_project_id of this ListRiskConfigHostsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -94,9 +94,9 @@ class ListRiskConfigHostsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListRiskConfigHostsRequest.
+        r"""Sets the enterprise_project_id of this ListRiskConfigHostsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListRiskConfigHostsRequest.
         :type enterprise_project_id: str
@@ -105,7 +105,7 @@ class ListRiskConfigHostsRequest:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ListRiskConfigHostsRequest.
+        r"""Gets the check_name of this ListRiskConfigHostsRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -116,7 +116,7 @@ class ListRiskConfigHostsRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ListRiskConfigHostsRequest.
+        r"""Sets the check_name of this ListRiskConfigHostsRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -127,7 +127,7 @@ class ListRiskConfigHostsRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ListRiskConfigHostsRequest.
+        r"""Gets the standard of this ListRiskConfigHostsRequest.
 
         标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
@@ -138,7 +138,7 @@ class ListRiskConfigHostsRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ListRiskConfigHostsRequest.
+        r"""Sets the standard of this ListRiskConfigHostsRequest.
 
         标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
@@ -149,7 +149,7 @@ class ListRiskConfigHostsRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListRiskConfigHostsRequest.
+        r"""Gets the host_name of this ListRiskConfigHostsRequest.
 
         服务器名称
 
@@ -160,7 +160,7 @@ class ListRiskConfigHostsRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListRiskConfigHostsRequest.
+        r"""Sets the host_name of this ListRiskConfigHostsRequest.
 
         服务器名称
 
@@ -171,7 +171,7 @@ class ListRiskConfigHostsRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListRiskConfigHostsRequest.
+        r"""Gets the host_ip of this ListRiskConfigHostsRequest.
 
         服务器IP地址
 
@@ -182,7 +182,7 @@ class ListRiskConfigHostsRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListRiskConfigHostsRequest.
+        r"""Sets the host_ip of this ListRiskConfigHostsRequest.
 
         服务器IP地址
 
@@ -193,7 +193,7 @@ class ListRiskConfigHostsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRiskConfigHostsRequest.
+        r"""Gets the limit of this ListRiskConfigHostsRequest.
 
         每页数量
 
@@ -204,7 +204,7 @@ class ListRiskConfigHostsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRiskConfigHostsRequest.
+        r"""Sets the limit of this ListRiskConfigHostsRequest.
 
         每页数量
 
@@ -215,7 +215,7 @@ class ListRiskConfigHostsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRiskConfigHostsRequest.
+        r"""Gets the offset of this ListRiskConfigHostsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -226,7 +226,7 @@ class ListRiskConfigHostsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRiskConfigHostsRequest.
+        r"""Sets the offset of this ListRiskConfigHostsRequest.
 
         偏移量：指定返回记录的开始位置
 

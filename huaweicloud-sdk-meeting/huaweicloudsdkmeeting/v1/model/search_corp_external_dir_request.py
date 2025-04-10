@@ -35,7 +35,7 @@ class SearchCorpExternalDirRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, search_scope=None):
-        """SearchCorpExternalDirRequest
+        r"""SearchCorpExternalDirRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SearchCorpExternalDirRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchCorpExternalDirRequest.
+        r"""Gets the x_request_id of this SearchCorpExternalDirRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -89,7 +89,7 @@ class SearchCorpExternalDirRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchCorpExternalDirRequest.
+        r"""Sets the x_request_id of this SearchCorpExternalDirRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -100,7 +100,7 @@ class SearchCorpExternalDirRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchCorpExternalDirRequest.
+        r"""Gets the accept_language of this SearchCorpExternalDirRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -111,7 +111,7 @@ class SearchCorpExternalDirRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchCorpExternalDirRequest.
+        r"""Sets the accept_language of this SearchCorpExternalDirRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -122,7 +122,7 @@ class SearchCorpExternalDirRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpExternalDirRequest.
+        r"""Gets the offset of this SearchCorpExternalDirRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -133,7 +133,7 @@ class SearchCorpExternalDirRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpExternalDirRequest.
+        r"""Sets the offset of this SearchCorpExternalDirRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -144,7 +144,7 @@ class SearchCorpExternalDirRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpExternalDirRequest.
+        r"""Gets the limit of this SearchCorpExternalDirRequest.
 
         查询数量。 默认值：10。 
 
@@ -155,7 +155,7 @@ class SearchCorpExternalDirRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpExternalDirRequest.
+        r"""Sets the limit of this SearchCorpExternalDirRequest.
 
         查询数量。 默认值：10。 
 
@@ -166,7 +166,7 @@ class SearchCorpExternalDirRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchCorpExternalDirRequest.
+        r"""Gets the search_key of this SearchCorpExternalDirRequest.
 
         搜索条件。支持名称、手机、邮箱模糊搜索。
 
@@ -177,7 +177,7 @@ class SearchCorpExternalDirRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchCorpExternalDirRequest.
+        r"""Sets the search_key of this SearchCorpExternalDirRequest.
 
         搜索条件。支持名称、手机、邮箱模糊搜索。
 
@@ -188,7 +188,7 @@ class SearchCorpExternalDirRequest:
 
     @property
     def search_scope(self):
-        """Gets the search_scope of this SearchCorpExternalDirRequest.
+        r"""Gets the search_scope of this SearchCorpExternalDirRequest.
 
         搜索范围。默认值为ALL。 * PERSONAL - 查询个人外部联系人 * CORP - 查询企业外部联系人 * ALL - 查询所有外部联系人 
 
@@ -199,7 +199,7 @@ class SearchCorpExternalDirRequest:
 
     @search_scope.setter
     def search_scope(self, search_scope):
-        """Sets the search_scope of this SearchCorpExternalDirRequest.
+        r"""Sets the search_scope of this SearchCorpExternalDirRequest.
 
         搜索范围。默认值为ALL。 * PERSONAL - 查询个人外部联系人 * CORP - 查询企业外部联系人 * ALL - 查询所有外部联系人 
 

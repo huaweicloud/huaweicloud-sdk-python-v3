@@ -33,7 +33,7 @@ class CreateComponentWithConfigurationRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, configurations=None):
-        """CreateComponentWithConfigurationRequestBody
+        r"""CreateComponentWithConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateComponentWithConfigurationRequestBody.
+        r"""Gets the api_version of this CreateComponentWithConfigurationRequestBody.
 
         :return: The api_version of this CreateComponentWithConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -78,7 +78,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateComponentWithConfigurationRequestBody.
+        r"""Sets the api_version of this CreateComponentWithConfigurationRequestBody.
 
         :param api_version: The api_version of this CreateComponentWithConfigurationRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -87,7 +87,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateComponentWithConfigurationRequestBody.
+        r"""Gets the kind of this CreateComponentWithConfigurationRequestBody.
 
         :return: The kind of this CreateComponentWithConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -96,7 +96,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateComponentWithConfigurationRequestBody.
+        r"""Sets the kind of this CreateComponentWithConfigurationRequestBody.
 
         :param kind: The kind of this CreateComponentWithConfigurationRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -105,7 +105,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateComponentWithConfigurationRequestBody.
+        r"""Gets the metadata of this CreateComponentWithConfigurationRequestBody.
 
         :return: The metadata of this CreateComponentWithConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentWithConfigurationRequestBodyMetadata`
@@ -114,7 +114,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateComponentWithConfigurationRequestBody.
+        r"""Sets the metadata of this CreateComponentWithConfigurationRequestBody.
 
         :param metadata: The metadata of this CreateComponentWithConfigurationRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateComponentWithConfigurationRequestBodyMetadata`
@@ -123,7 +123,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateComponentWithConfigurationRequestBody.
+        r"""Gets the spec of this CreateComponentWithConfigurationRequestBody.
 
         :return: The spec of this CreateComponentWithConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentWithConfigurationRequestBodySpec`
@@ -132,7 +132,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateComponentWithConfigurationRequestBody.
+        r"""Sets the spec of this CreateComponentWithConfigurationRequestBody.
 
         :param spec: The spec of this CreateComponentWithConfigurationRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateComponentWithConfigurationRequestBodySpec`
@@ -141,7 +141,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @property
     def configurations(self):
-        """Gets the configurations of this CreateComponentWithConfigurationRequestBody.
+        r"""Gets the configurations of this CreateComponentWithConfigurationRequestBody.
 
         配置项列表。
 
@@ -152,7 +152,7 @@ class CreateComponentWithConfigurationRequestBody:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this CreateComponentWithConfigurationRequestBody.
+        r"""Sets the configurations of this CreateComponentWithConfigurationRequestBody.
 
         配置项列表。
 

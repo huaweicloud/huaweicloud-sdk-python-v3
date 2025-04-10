@@ -26,7 +26,7 @@ class CopyDataResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CopyDataResponse
+        r"""CopyDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyDataResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CopyDataResponse.
+        r"""Gets the id of this CopyDataResponse.
 
         数据作业ID
 
@@ -55,7 +55,7 @@ class CopyDataResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CopyDataResponse.
+        r"""Sets the id of this CopyDataResponse.
 
         数据作业ID
 

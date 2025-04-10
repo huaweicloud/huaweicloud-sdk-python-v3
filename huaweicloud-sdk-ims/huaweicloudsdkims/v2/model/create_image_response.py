@@ -26,7 +26,7 @@ class CreateImageResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateImageResponse
+        r"""CreateImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateImageResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateImageResponse.
+        r"""Gets the job_id of this CreateImageResponse.
 
         异步任务ID。
 
@@ -55,7 +55,7 @@ class CreateImageResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateImageResponse.
+        r"""Sets the job_id of this CreateImageResponse.
 
         异步任务ID。
 

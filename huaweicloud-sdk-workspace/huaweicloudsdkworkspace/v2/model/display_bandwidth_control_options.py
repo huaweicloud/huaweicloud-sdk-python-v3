@@ -25,7 +25,7 @@ class DisplayBandwidthControlOptions:
     }
 
     def __init__(self, display_bandwidth_control_value=None):
-        """DisplayBandwidthControlOptions
+        r"""DisplayBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisplayBandwidthControlOptions:
 
     @property
     def display_bandwidth_control_value(self):
-        """Gets the display_bandwidth_control_value of this DisplayBandwidthControlOptions.
+        r"""Gets the display_bandwidth_control_value of this DisplayBandwidthControlOptions.
 
         显示带宽控制量（Kbps）。取值范围为[500-50000]。默认：20000。
 
@@ -54,7 +54,7 @@ class DisplayBandwidthControlOptions:
 
     @display_bandwidth_control_value.setter
     def display_bandwidth_control_value(self, display_bandwidth_control_value):
-        """Sets the display_bandwidth_control_value of this DisplayBandwidthControlOptions.
+        r"""Sets the display_bandwidth_control_value of this DisplayBandwidthControlOptions.
 
         显示带宽控制量（Kbps）。取值范围为[500-50000]。默认：20000。
 

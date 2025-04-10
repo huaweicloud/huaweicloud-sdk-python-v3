@@ -25,7 +25,7 @@ class CreateCentralNetworkPolicyRequestBody:
     }
 
     def __init__(self, central_network_policy_document=None):
-        """CreateCentralNetworkPolicyRequestBody
+        r"""CreateCentralNetworkPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateCentralNetworkPolicyRequestBody:
 
     @property
     def central_network_policy_document(self):
-        """Gets the central_network_policy_document of this CreateCentralNetworkPolicyRequestBody.
+        r"""Gets the central_network_policy_document of this CreateCentralNetworkPolicyRequestBody.
 
         :return: The central_network_policy_document of this CreateCentralNetworkPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyDocument`
@@ -51,7 +51,7 @@ class CreateCentralNetworkPolicyRequestBody:
 
     @central_network_policy_document.setter
     def central_network_policy_document(self, central_network_policy_document):
-        """Sets the central_network_policy_document of this CreateCentralNetworkPolicyRequestBody.
+        r"""Sets the central_network_policy_document of this CreateCentralNetworkPolicyRequestBody.
 
         :param central_network_policy_document: The central_network_policy_document of this CreateCentralNetworkPolicyRequestBody.
         :type central_network_policy_document: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyDocument`

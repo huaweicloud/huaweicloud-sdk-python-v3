@@ -32,7 +32,7 @@ class ShowTaskSetResponse(SdkResponse):
     }
 
     def __init__(self, code=None, extend=None, message=None, tasks=None):
-        """ShowTaskSetResponse
+        r"""ShowTaskSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTaskSetResponse.
+        r"""Gets the code of this ShowTaskSetResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTaskSetResponse.
+        r"""Sets the code of this ShowTaskSetResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowTaskSetResponse.
+        r"""Gets the extend of this ShowTaskSetResponse.
 
         扩展信息
 
@@ -98,7 +98,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowTaskSetResponse.
+        r"""Sets the extend of this ShowTaskSetResponse.
 
         扩展信息
 
@@ -109,7 +109,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTaskSetResponse.
+        r"""Gets the message of this ShowTaskSetResponse.
 
         响应消息
 
@@ -120,7 +120,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTaskSetResponse.
+        r"""Sets the message of this ShowTaskSetResponse.
 
         响应消息
 
@@ -131,7 +131,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowTaskSetResponse.
+        r"""Gets the tasks of this ShowTaskSetResponse.
 
         工程集详细信息
 
@@ -142,7 +142,7 @@ class ShowTaskSetResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowTaskSetResponse.
+        r"""Sets the tasks of this ShowTaskSetResponse.
 
         工程集详细信息
 

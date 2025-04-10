@@ -28,7 +28,7 @@ class ListCentralNetworkTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None):
-        """ListCentralNetworkTagsResponse
+        r"""ListCentralNetworkTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListCentralNetworkTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworkTagsResponse.
+        r"""Gets the request_id of this ListCentralNetworkTagsResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListCentralNetworkTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworkTagsResponse.
+        r"""Sets the request_id of this ListCentralNetworkTagsResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListCentralNetworkTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListCentralNetworkTagsResponse.
+        r"""Gets the tags of this ListCentralNetworkTagsResponse.
 
         所有标签。
 
@@ -82,7 +82,7 @@ class ListCentralNetworkTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListCentralNetworkTagsResponse.
+        r"""Sets the tags of this ListCentralNetworkTagsResponse.
 
         所有标签。
 

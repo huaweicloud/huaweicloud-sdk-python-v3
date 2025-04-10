@@ -34,7 +34,7 @@ class ShowThemeResponse(SdkResponse):
     }
 
     def __init__(self, themes=None, error_code=None, error_msg=None, product_type_id=None, theme_name=None):
-        """ShowThemeResponse
+        r"""ShowThemeResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowThemeResponse(SdkResponse):
 
     @property
     def themes(self):
-        """Gets the themes of this ShowThemeResponse.
+        r"""Gets the themes of this ShowThemeResponse.
 
         关联主题列表
 
@@ -83,7 +83,7 @@ class ShowThemeResponse(SdkResponse):
 
     @themes.setter
     def themes(self, themes):
-        """Sets the themes of this ShowThemeResponse.
+        r"""Sets the themes of this ShowThemeResponse.
 
         关联主题列表
 
@@ -94,7 +94,7 @@ class ShowThemeResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowThemeResponse.
+        r"""Gets the error_code of this ShowThemeResponse.
 
         错误码
 
@@ -105,7 +105,7 @@ class ShowThemeResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowThemeResponse.
+        r"""Sets the error_code of this ShowThemeResponse.
 
         错误码
 
@@ -116,7 +116,7 @@ class ShowThemeResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowThemeResponse.
+        r"""Gets the error_msg of this ShowThemeResponse.
 
         错误描述
 
@@ -127,7 +127,7 @@ class ShowThemeResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowThemeResponse.
+        r"""Sets the error_msg of this ShowThemeResponse.
 
         错误描述
 
@@ -138,7 +138,7 @@ class ShowThemeResponse(SdkResponse):
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this ShowThemeResponse.
+        r"""Gets the product_type_id of this ShowThemeResponse.
 
         产品类型Id
 
@@ -149,7 +149,7 @@ class ShowThemeResponse(SdkResponse):
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this ShowThemeResponse.
+        r"""Sets the product_type_id of this ShowThemeResponse.
 
         产品类型Id
 
@@ -160,7 +160,7 @@ class ShowThemeResponse(SdkResponse):
 
     @property
     def theme_name(self):
-        """Gets the theme_name of this ShowThemeResponse.
+        r"""Gets the theme_name of this ShowThemeResponse.
 
         主题名称
 
@@ -171,7 +171,7 @@ class ShowThemeResponse(SdkResponse):
 
     @theme_name.setter
     def theme_name(self, theme_name):
-        """Sets the theme_name of this ShowThemeResponse.
+        r"""Sets the theme_name of this ShowThemeResponse.
 
         主题名称
 

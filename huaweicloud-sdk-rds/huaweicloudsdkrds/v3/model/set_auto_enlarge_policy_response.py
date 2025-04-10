@@ -26,7 +26,7 @@ class SetAutoEnlargePolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SetAutoEnlargePolicyResponse
+        r"""SetAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SetAutoEnlargePolicyResponse.
+        r"""Gets the body of this SetAutoEnlargePolicyResponse.
 
         :return: The body of this SetAutoEnlargePolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SetAutoEnlargePolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetAutoEnlargePolicyResponse.
+        r"""Sets the body of this SetAutoEnlargePolicyResponse.
 
         :param body: The body of this SetAutoEnlargePolicyResponse.
         :type body: str

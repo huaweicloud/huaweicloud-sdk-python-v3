@@ -27,7 +27,7 @@ class IamGroupDto:
     }
 
     def __init__(self, id=None, name=None):
-        """IamGroupDto
+        r"""IamGroupDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IamGroupDto:
 
     @property
     def id(self):
-        """Gets the id of this IamGroupDto.
+        r"""Gets the id of this IamGroupDto.
 
         IAM用户组id
 
@@ -61,7 +61,7 @@ class IamGroupDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IamGroupDto.
+        r"""Sets the id of this IamGroupDto.
 
         IAM用户组id
 
@@ -72,7 +72,7 @@ class IamGroupDto:
 
     @property
     def name(self):
-        """Gets the name of this IamGroupDto.
+        r"""Gets the name of this IamGroupDto.
 
         IAM用户组名
 
@@ -83,7 +83,7 @@ class IamGroupDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IamGroupDto.
+        r"""Sets the name of this IamGroupDto.
 
         IAM用户组名
 

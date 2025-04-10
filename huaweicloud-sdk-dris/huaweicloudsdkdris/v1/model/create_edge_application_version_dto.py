@@ -33,7 +33,7 @@ class CreateEdgeApplicationVersionDTO:
     }
 
     def __init__(self, version=None, description=None, container_settings=None, command=None, args=None):
-        """CreateEdgeApplicationVersionDTO
+        r"""CreateEdgeApplicationVersionDTO
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def version(self):
-        """Gets the version of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the version of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：应用版本。
 
@@ -80,7 +80,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the version of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：应用版本。
 
@@ -91,7 +91,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the description of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -102,7 +102,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the description of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -113,7 +113,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the container_settings of this CreateEdgeApplicationVersionDTO.
 
         :return: The container_settings of this CreateEdgeApplicationVersionDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ContainerSettingsDTO`
@@ -122,7 +122,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the container_settings of this CreateEdgeApplicationVersionDTO.
 
         :param container_settings: The container_settings of this CreateEdgeApplicationVersionDTO.
         :type container_settings: :class:`huaweicloudsdkdris.v1.ContainerSettingsDTO`
@@ -131,7 +131,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def command(self):
-        """Gets the command of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the command of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：启动命令。
 
@@ -142,7 +142,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the command of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：启动命令。
 
@@ -153,7 +153,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @property
     def args(self):
-        """Gets the args of this CreateEdgeApplicationVersionDTO.
+        r"""Gets the args of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：启动参数。
 
@@ -164,7 +164,7 @@ class CreateEdgeApplicationVersionDTO:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this CreateEdgeApplicationVersionDTO.
+        r"""Sets the args of this CreateEdgeApplicationVersionDTO.
 
         **参数说明**：启动参数。
 

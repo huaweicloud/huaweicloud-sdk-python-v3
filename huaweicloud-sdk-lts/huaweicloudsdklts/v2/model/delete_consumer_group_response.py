@@ -28,7 +28,7 @@ class DeleteConsumerGroupResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """DeleteConsumerGroupResponse
+        r"""DeleteConsumerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteConsumerGroupResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteConsumerGroupResponse.
+        r"""Gets the error_code of this DeleteConsumerGroupResponse.
 
         状态码
 
@@ -62,7 +62,7 @@ class DeleteConsumerGroupResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteConsumerGroupResponse.
+        r"""Sets the error_code of this DeleteConsumerGroupResponse.
 
         状态码
 
@@ -73,7 +73,7 @@ class DeleteConsumerGroupResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this DeleteConsumerGroupResponse.
+        r"""Gets the error_message of this DeleteConsumerGroupResponse.
 
         状态信息
 
@@ -84,7 +84,7 @@ class DeleteConsumerGroupResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DeleteConsumerGroupResponse.
+        r"""Sets the error_message of this DeleteConsumerGroupResponse.
 
         状态信息
 

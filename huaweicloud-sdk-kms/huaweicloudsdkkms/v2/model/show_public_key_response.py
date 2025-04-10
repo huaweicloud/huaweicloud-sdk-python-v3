@@ -28,7 +28,7 @@ class ShowPublicKeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, public_key=None):
-        """ShowPublicKeyResponse
+        r"""ShowPublicKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPublicKeyResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this ShowPublicKeyResponse.
+        r"""Gets the key_id of this ShowPublicKeyResponse.
 
         密钥ID。
 
@@ -62,7 +62,7 @@ class ShowPublicKeyResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ShowPublicKeyResponse.
+        r"""Sets the key_id of this ShowPublicKeyResponse.
 
         密钥ID。
 
@@ -73,7 +73,7 @@ class ShowPublicKeyResponse(SdkResponse):
 
     @property
     def public_key(self):
-        """Gets the public_key of this ShowPublicKeyResponse.
+        r"""Gets the public_key of this ShowPublicKeyResponse.
 
         公钥信息。
 
@@ -84,7 +84,7 @@ class ShowPublicKeyResponse(SdkResponse):
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this ShowPublicKeyResponse.
+        r"""Sets the public_key of this ShowPublicKeyResponse.
 
         公钥信息。
 

@@ -25,7 +25,7 @@ class ShowAppTemplateRequest:
     }
 
     def __init__(self, id=None):
-        """ShowAppTemplateRequest
+        r"""ShowAppTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAppTemplateRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowAppTemplateRequest.
+        r"""Gets the id of this ShowAppTemplateRequest.
 
         应用模板ID。
 
@@ -53,7 +53,7 @@ class ShowAppTemplateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAppTemplateRequest.
+        r"""Sets the id of this ShowAppTemplateRequest.
 
         应用模板ID。
 

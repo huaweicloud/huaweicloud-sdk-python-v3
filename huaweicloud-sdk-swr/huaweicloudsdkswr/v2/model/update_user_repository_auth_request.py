@@ -29,7 +29,7 @@ class UpdateUserRepositoryAuthRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """UpdateUserRepositoryAuthRequest
+        r"""UpdateUserRepositoryAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateUserRepositoryAuthRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateUserRepositoryAuthRequest.
+        r"""Gets the namespace of this UpdateUserRepositoryAuthRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -66,7 +66,7 @@ class UpdateUserRepositoryAuthRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateUserRepositoryAuthRequest.
+        r"""Sets the namespace of this UpdateUserRepositoryAuthRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -77,7 +77,7 @@ class UpdateUserRepositoryAuthRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this UpdateUserRepositoryAuthRequest.
+        r"""Gets the repository of this UpdateUserRepositoryAuthRequest.
 
         镜像仓库名称
 
@@ -88,7 +88,7 @@ class UpdateUserRepositoryAuthRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this UpdateUserRepositoryAuthRequest.
+        r"""Sets the repository of this UpdateUserRepositoryAuthRequest.
 
         镜像仓库名称
 
@@ -99,7 +99,7 @@ class UpdateUserRepositoryAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserRepositoryAuthRequest.
+        r"""Gets the body of this UpdateUserRepositoryAuthRequest.
 
         :return: The body of this UpdateUserRepositoryAuthRequest.
         :rtype: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
@@ -108,7 +108,7 @@ class UpdateUserRepositoryAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserRepositoryAuthRequest.
+        r"""Sets the body of this UpdateUserRepositoryAuthRequest.
 
         :param body: The body of this UpdateUserRepositoryAuthRequest.
         :type body: list[:class:`huaweicloudsdkswr.v2.UserAuth`]

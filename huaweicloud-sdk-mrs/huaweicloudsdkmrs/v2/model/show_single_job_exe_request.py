@@ -27,7 +27,7 @@ class ShowSingleJobExeRequest:
     }
 
     def __init__(self, job_execution_id=None, cluster_id=None):
-        """ShowSingleJobExeRequest
+        r"""ShowSingleJobExeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSingleJobExeRequest:
 
     @property
     def job_execution_id(self):
-        """Gets the job_execution_id of this ShowSingleJobExeRequest.
+        r"""Gets the job_execution_id of this ShowSingleJobExeRequest.
 
         作业ID。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -59,7 +59,7 @@ class ShowSingleJobExeRequest:
 
     @job_execution_id.setter
     def job_execution_id(self, job_execution_id):
-        """Sets the job_execution_id of this ShowSingleJobExeRequest.
+        r"""Sets the job_execution_id of this ShowSingleJobExeRequest.
 
         作业ID。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -70,7 +70,7 @@ class ShowSingleJobExeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowSingleJobExeRequest.
+        r"""Gets the cluster_id of this ShowSingleJobExeRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -81,7 +81,7 @@ class ShowSingleJobExeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowSingleJobExeRequest.
+        r"""Sets the cluster_id of this ShowSingleJobExeRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 

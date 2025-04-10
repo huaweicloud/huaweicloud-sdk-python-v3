@@ -30,7 +30,7 @@ class ListVideoScriptsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, video_scripts=None, x_request_id=None):
-        """ListVideoScriptsResponse
+        r"""ListVideoScriptsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVideoScriptsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVideoScriptsResponse.
+        r"""Gets the count of this ListVideoScriptsResponse.
 
         剧本总数。
 
@@ -69,7 +69,7 @@ class ListVideoScriptsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVideoScriptsResponse.
+        r"""Sets the count of this ListVideoScriptsResponse.
 
         剧本总数。
 
@@ -80,7 +80,7 @@ class ListVideoScriptsResponse(SdkResponse):
 
     @property
     def video_scripts(self):
-        """Gets the video_scripts of this ListVideoScriptsResponse.
+        r"""Gets the video_scripts of this ListVideoScriptsResponse.
 
         剧本列表。
 
@@ -91,7 +91,7 @@ class ListVideoScriptsResponse(SdkResponse):
 
     @video_scripts.setter
     def video_scripts(self, video_scripts):
-        """Sets the video_scripts of this ListVideoScriptsResponse.
+        r"""Sets the video_scripts of this ListVideoScriptsResponse.
 
         剧本列表。
 
@@ -102,7 +102,7 @@ class ListVideoScriptsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListVideoScriptsResponse.
+        r"""Gets the x_request_id of this ListVideoScriptsResponse.
 
         :return: The x_request_id of this ListVideoScriptsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListVideoScriptsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListVideoScriptsResponse.
+        r"""Sets the x_request_id of this ListVideoScriptsResponse.
 
         :param x_request_id: The x_request_id of this ListVideoScriptsResponse.
         :type x_request_id: str

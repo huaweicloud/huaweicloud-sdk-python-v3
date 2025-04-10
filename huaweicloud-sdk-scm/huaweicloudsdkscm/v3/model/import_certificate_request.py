@@ -25,7 +25,7 @@ class ImportCertificateRequest:
     }
 
     def __init__(self, body=None):
-        """ImportCertificateRequest
+        r"""ImportCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportCertificateRequest.
+        r"""Gets the body of this ImportCertificateRequest.
 
         :return: The body of this ImportCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.ImportCertificateRequestBody`
@@ -52,7 +52,7 @@ class ImportCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportCertificateRequest.
+        r"""Sets the body of this ImportCertificateRequest.
 
         :param body: The body of this ImportCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.ImportCertificateRequestBody`

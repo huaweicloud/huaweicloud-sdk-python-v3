@@ -57,7 +57,7 @@ class TemplateResponseBody:
     }
 
     def __init__(self, id=None, name=None, is_template=None, region=None, projectid=None, target_server_name=None, availability_zone=None, volumetype=None, flavor=None, vpc=None, nics=None, security_groups=None, publicip=None, disk=None, data_volume_type=None, target_password=None, image_id=None):
-        """TemplateResponseBody
+        r"""TemplateResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class TemplateResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this TemplateResponseBody.
+        r"""Gets the id of this TemplateResponseBody.
 
         模板ID
 
@@ -152,7 +152,7 @@ class TemplateResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateResponseBody.
+        r"""Sets the id of this TemplateResponseBody.
 
         模板ID
 
@@ -163,7 +163,7 @@ class TemplateResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this TemplateResponseBody.
+        r"""Gets the name of this TemplateResponseBody.
 
         模板名称
 
@@ -174,7 +174,7 @@ class TemplateResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateResponseBody.
+        r"""Sets the name of this TemplateResponseBody.
 
         模板名称
 
@@ -185,7 +185,7 @@ class TemplateResponseBody:
 
     @property
     def is_template(self):
-        """Gets the is_template of this TemplateResponseBody.
+        r"""Gets the is_template of this TemplateResponseBody.
 
         是否是通用模板，如果模板关联一个任务，则不算通用模板
 
@@ -196,7 +196,7 @@ class TemplateResponseBody:
 
     @is_template.setter
     def is_template(self, is_template):
-        """Sets the is_template of this TemplateResponseBody.
+        r"""Sets the is_template of this TemplateResponseBody.
 
         是否是通用模板，如果模板关联一个任务，则不算通用模板
 
@@ -207,7 +207,7 @@ class TemplateResponseBody:
 
     @property
     def region(self):
-        """Gets the region of this TemplateResponseBody.
+        r"""Gets the region of this TemplateResponseBody.
 
         Region信息
 
@@ -218,7 +218,7 @@ class TemplateResponseBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TemplateResponseBody.
+        r"""Sets the region of this TemplateResponseBody.
 
         Region信息
 
@@ -229,7 +229,7 @@ class TemplateResponseBody:
 
     @property
     def projectid(self):
-        """Gets the projectid of this TemplateResponseBody.
+        r"""Gets the projectid of this TemplateResponseBody.
 
         项目ID
 
@@ -240,7 +240,7 @@ class TemplateResponseBody:
 
     @projectid.setter
     def projectid(self, projectid):
-        """Sets the projectid of this TemplateResponseBody.
+        r"""Sets the projectid of this TemplateResponseBody.
 
         项目ID
 
@@ -251,7 +251,7 @@ class TemplateResponseBody:
 
     @property
     def target_server_name(self):
-        """Gets the target_server_name of this TemplateResponseBody.
+        r"""Gets the target_server_name of this TemplateResponseBody.
 
         目标端服务器名称
 
@@ -262,7 +262,7 @@ class TemplateResponseBody:
 
     @target_server_name.setter
     def target_server_name(self, target_server_name):
-        """Sets the target_server_name of this TemplateResponseBody.
+        r"""Sets the target_server_name of this TemplateResponseBody.
 
         目标端服务器名称
 
@@ -273,7 +273,7 @@ class TemplateResponseBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this TemplateResponseBody.
+        r"""Gets the availability_zone of this TemplateResponseBody.
 
         可用区
 
@@ -284,7 +284,7 @@ class TemplateResponseBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this TemplateResponseBody.
+        r"""Sets the availability_zone of this TemplateResponseBody.
 
         可用区
 
@@ -295,7 +295,7 @@ class TemplateResponseBody:
 
     @property
     def volumetype(self):
-        """Gets the volumetype of this TemplateResponseBody.
+        r"""Gets the volumetype of this TemplateResponseBody.
 
         数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -306,7 +306,7 @@ class TemplateResponseBody:
 
     @volumetype.setter
     def volumetype(self, volumetype):
-        """Sets the volumetype of this TemplateResponseBody.
+        r"""Sets the volumetype of this TemplateResponseBody.
 
         数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -317,7 +317,7 @@ class TemplateResponseBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this TemplateResponseBody.
+        r"""Gets the flavor of this TemplateResponseBody.
 
         虚拟机规格
 
@@ -328,7 +328,7 @@ class TemplateResponseBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this TemplateResponseBody.
+        r"""Sets the flavor of this TemplateResponseBody.
 
         虚拟机规格
 
@@ -339,7 +339,7 @@ class TemplateResponseBody:
 
     @property
     def vpc(self):
-        """Gets the vpc of this TemplateResponseBody.
+        r"""Gets the vpc of this TemplateResponseBody.
 
         :return: The vpc of this TemplateResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.VpcObject`
@@ -348,7 +348,7 @@ class TemplateResponseBody:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this TemplateResponseBody.
+        r"""Sets the vpc of this TemplateResponseBody.
 
         :param vpc: The vpc of this TemplateResponseBody.
         :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
@@ -357,7 +357,7 @@ class TemplateResponseBody:
 
     @property
     def nics(self):
-        """Gets the nics of this TemplateResponseBody.
+        r"""Gets the nics of this TemplateResponseBody.
 
         网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -368,7 +368,7 @@ class TemplateResponseBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this TemplateResponseBody.
+        r"""Sets the nics of this TemplateResponseBody.
 
         网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -379,7 +379,7 @@ class TemplateResponseBody:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this TemplateResponseBody.
+        r"""Gets the security_groups of this TemplateResponseBody.
 
         安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -390,7 +390,7 @@ class TemplateResponseBody:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this TemplateResponseBody.
+        r"""Sets the security_groups of this TemplateResponseBody.
 
         安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
 
@@ -401,7 +401,7 @@ class TemplateResponseBody:
 
     @property
     def publicip(self):
-        """Gets the publicip of this TemplateResponseBody.
+        r"""Gets the publicip of this TemplateResponseBody.
 
         :return: The publicip of this TemplateResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.PublicIp`
@@ -410,7 +410,7 @@ class TemplateResponseBody:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this TemplateResponseBody.
+        r"""Sets the publicip of this TemplateResponseBody.
 
         :param publicip: The publicip of this TemplateResponseBody.
         :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
@@ -419,7 +419,7 @@ class TemplateResponseBody:
 
     @property
     def disk(self):
-        """Gets the disk of this TemplateResponseBody.
+        r"""Gets the disk of this TemplateResponseBody.
 
         磁盘信息
 
@@ -430,7 +430,7 @@ class TemplateResponseBody:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this TemplateResponseBody.
+        r"""Sets the disk of this TemplateResponseBody.
 
         磁盘信息
 
@@ -441,7 +441,7 @@ class TemplateResponseBody:
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this TemplateResponseBody.
+        r"""Gets the data_volume_type of this TemplateResponseBody.
 
         数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -452,7 +452,7 @@ class TemplateResponseBody:
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this TemplateResponseBody.
+        r"""Sets the data_volume_type of this TemplateResponseBody.
 
         数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
@@ -463,7 +463,7 @@ class TemplateResponseBody:
 
     @property
     def target_password(self):
-        """Gets the target_password of this TemplateResponseBody.
+        r"""Gets the target_password of this TemplateResponseBody.
 
         目的端密码
 
@@ -474,7 +474,7 @@ class TemplateResponseBody:
 
     @target_password.setter
     def target_password(self, target_password):
-        """Sets the target_password of this TemplateResponseBody.
+        r"""Sets the target_password of this TemplateResponseBody.
 
         目的端密码
 
@@ -485,7 +485,7 @@ class TemplateResponseBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this TemplateResponseBody.
+        r"""Gets the image_id of this TemplateResponseBody.
 
         用户选择镜像版本Id值
 
@@ -496,7 +496,7 @@ class TemplateResponseBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this TemplateResponseBody.
+        r"""Sets the image_id of this TemplateResponseBody.
 
         用户选择镜像版本Id值
 

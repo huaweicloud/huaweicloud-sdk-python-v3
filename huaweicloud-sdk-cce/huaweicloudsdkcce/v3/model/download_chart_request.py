@@ -25,7 +25,7 @@ class DownloadChartRequest:
     }
 
     def __init__(self, chart_id=None):
-        """DownloadChartRequest
+        r"""DownloadChartRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadChartRequest:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this DownloadChartRequest.
+        r"""Gets the chart_id of this DownloadChartRequest.
 
         模板的ID
 
@@ -53,7 +53,7 @@ class DownloadChartRequest:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this DownloadChartRequest.
+        r"""Sets the chart_id of this DownloadChartRequest.
 
         模板的ID
 

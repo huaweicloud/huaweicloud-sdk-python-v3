@@ -28,7 +28,7 @@ class UpdateVpnUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, header_response_token=None):
-        """UpdateVpnUserPasswordResponse
+        r"""UpdateVpnUserPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateVpnUserPasswordResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVpnUserPasswordResponse.
+        r"""Gets the request_id of this UpdateVpnUserPasswordResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class UpdateVpnUserPasswordResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVpnUserPasswordResponse.
+        r"""Sets the request_id of this UpdateVpnUserPasswordResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class UpdateVpnUserPasswordResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVpnUserPasswordResponse.
+        r"""Gets the header_response_token of this UpdateVpnUserPasswordResponse.
 
         :return: The header_response_token of this UpdateVpnUserPasswordResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateVpnUserPasswordResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVpnUserPasswordResponse.
+        r"""Sets the header_response_token of this UpdateVpnUserPasswordResponse.
 
         :param header_response_token: The header_response_token of this UpdateVpnUserPasswordResponse.
         :type header_response_token: str

@@ -37,7 +37,7 @@ class AutopilotClusterMetadata:
     }
 
     def __init__(self, name=None, uid=None, alias=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None):
-        """AutopilotClusterMetadata
+        r"""AutopilotClusterMetadata
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class AutopilotClusterMetadata:
 
     @property
     def name(self):
-        """Gets the name of this AutopilotClusterMetadata.
+        r"""Gets the name of this AutopilotClusterMetadata.
 
         集群名称。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。
 
@@ -95,7 +95,7 @@ class AutopilotClusterMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AutopilotClusterMetadata.
+        r"""Sets the name of this AutopilotClusterMetadata.
 
         集群名称。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。
 
@@ -106,7 +106,7 @@ class AutopilotClusterMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this AutopilotClusterMetadata.
+        r"""Gets the uid of this AutopilotClusterMetadata.
 
         集群ID，资源唯一标识，创建成功后自动生成，填写无效。在创建包周期集群时，响应体不返回集群ID。
 
@@ -117,7 +117,7 @@ class AutopilotClusterMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this AutopilotClusterMetadata.
+        r"""Sets the uid of this AutopilotClusterMetadata.
 
         集群ID，资源唯一标识，创建成功后自动生成，填写无效。在创建包周期集群时，响应体不返回集群ID。
 
@@ -128,7 +128,7 @@ class AutopilotClusterMetadata:
 
     @property
     def alias(self):
-        """Gets the alias of this AutopilotClusterMetadata.
+        r"""Gets the alias of this AutopilotClusterMetadata.
 
         集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
 
@@ -139,7 +139,7 @@ class AutopilotClusterMetadata:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AutopilotClusterMetadata.
+        r"""Sets the alias of this AutopilotClusterMetadata.
 
         集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
 
@@ -150,7 +150,7 @@ class AutopilotClusterMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this AutopilotClusterMetadata.
+        r"""Gets the annotations of this AutopilotClusterMetadata.
 
         集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```  >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 
 
@@ -161,7 +161,7 @@ class AutopilotClusterMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this AutopilotClusterMetadata.
+        r"""Sets the annotations of this AutopilotClusterMetadata.
 
         集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```  >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 
 
@@ -172,7 +172,7 @@ class AutopilotClusterMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this AutopilotClusterMetadata.
+        r"""Gets the labels of this AutopilotClusterMetadata.
 
         集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
 
@@ -183,7 +183,7 @@ class AutopilotClusterMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this AutopilotClusterMetadata.
+        r"""Sets the labels of this AutopilotClusterMetadata.
 
         集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
 
@@ -194,7 +194,7 @@ class AutopilotClusterMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this AutopilotClusterMetadata.
+        r"""Gets the creation_timestamp of this AutopilotClusterMetadata.
 
         集群创建时间
 
@@ -205,7 +205,7 @@ class AutopilotClusterMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this AutopilotClusterMetadata.
+        r"""Sets the creation_timestamp of this AutopilotClusterMetadata.
 
         集群创建时间
 
@@ -216,7 +216,7 @@ class AutopilotClusterMetadata:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this AutopilotClusterMetadata.
+        r"""Gets the update_timestamp of this AutopilotClusterMetadata.
 
         集群更新时间
 
@@ -227,7 +227,7 @@ class AutopilotClusterMetadata:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this AutopilotClusterMetadata.
+        r"""Sets the update_timestamp of this AutopilotClusterMetadata.
 
         集群更新时间
 

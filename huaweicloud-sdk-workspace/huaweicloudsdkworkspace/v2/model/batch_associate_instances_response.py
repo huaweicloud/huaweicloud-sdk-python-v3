@@ -32,7 +32,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
     }
 
     def __init__(self, assign_dimension=None, desktop=None, user=None, desktops_attach_infos=None):
-        """BatchAssociateInstancesResponse
+        r"""BatchAssociateInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @property
     def assign_dimension(self):
-        """Gets the assign_dimension of this BatchAssociateInstancesResponse.
+        r"""Gets the assign_dimension of this BatchAssociateInstancesResponse.
 
         分配的维度，当前支持“用户为维度”、“桌面为维度”两种。
 
@@ -76,7 +76,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @assign_dimension.setter
     def assign_dimension(self, assign_dimension):
-        """Sets the assign_dimension of this BatchAssociateInstancesResponse.
+        r"""Sets the assign_dimension of this BatchAssociateInstancesResponse.
 
         分配的维度，当前支持“用户为维度”、“桌面为维度”两种。
 
@@ -87,7 +87,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @property
     def desktop(self):
-        """Gets the desktop of this BatchAssociateInstancesResponse.
+        r"""Gets the desktop of this BatchAssociateInstancesResponse.
 
         桌面维度结果，如果assign_dimension为DEKSTOP，那么取这个结果。
 
@@ -98,7 +98,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @desktop.setter
     def desktop(self, desktop):
-        """Sets the desktop of this BatchAssociateInstancesResponse.
+        r"""Sets the desktop of this BatchAssociateInstancesResponse.
 
         桌面维度结果，如果assign_dimension为DEKSTOP，那么取这个结果。
 
@@ -109,7 +109,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this BatchAssociateInstancesResponse.
+        r"""Gets the user of this BatchAssociateInstancesResponse.
 
         用户维度结果，如果assign_dimension为USER，那么取这个结果。
 
@@ -120,7 +120,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this BatchAssociateInstancesResponse.
+        r"""Sets the user of this BatchAssociateInstancesResponse.
 
         用户维度结果，如果assign_dimension为USER，那么取这个结果。
 
@@ -131,7 +131,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @property
     def desktops_attach_infos(self):
-        """Gets the desktops_attach_infos of this BatchAssociateInstancesResponse.
+        r"""Gets the desktops_attach_infos of this BatchAssociateInstancesResponse.
 
         桌面分配关系。
 
@@ -142,7 +142,7 @@ class BatchAssociateInstancesResponse(SdkResponse):
 
     @desktops_attach_infos.setter
     def desktops_attach_infos(self, desktops_attach_infos):
-        """Sets the desktops_attach_infos of this BatchAssociateInstancesResponse.
+        r"""Sets the desktops_attach_infos of this BatchAssociateInstancesResponse.
 
         桌面分配关系。
 

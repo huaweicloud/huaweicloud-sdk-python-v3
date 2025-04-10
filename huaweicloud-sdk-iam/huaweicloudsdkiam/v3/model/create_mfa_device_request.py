@@ -25,7 +25,7 @@ class CreateMfaDeviceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMfaDeviceRequest
+        r"""CreateMfaDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMfaDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMfaDeviceRequest.
+        r"""Gets the body of this CreateMfaDeviceRequest.
 
         :return: The body of this CreateMfaDeviceRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceReq`
@@ -52,7 +52,7 @@ class CreateMfaDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMfaDeviceRequest.
+        r"""Sets the body of this CreateMfaDeviceRequest.
 
         :param body: The body of this CreateMfaDeviceRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceReq`

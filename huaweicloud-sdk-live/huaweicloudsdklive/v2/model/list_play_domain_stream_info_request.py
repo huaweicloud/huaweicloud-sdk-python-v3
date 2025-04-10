@@ -27,7 +27,7 @@ class ListPlayDomainStreamInfoRequest:
     }
 
     def __init__(self, play_domains=None, time=None):
-        """ListPlayDomainStreamInfoRequest
+        r"""ListPlayDomainStreamInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListPlayDomainStreamInfoRequest:
 
     @property
     def play_domains(self):
-        """Gets the play_domains of this ListPlayDomainStreamInfoRequest.
+        r"""Gets the play_domains of this ListPlayDomainStreamInfoRequest.
 
         播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的流数据。 
 
@@ -60,7 +60,7 @@ class ListPlayDomainStreamInfoRequest:
 
     @play_domains.setter
     def play_domains(self, play_domains):
-        """Sets the play_domains of this ListPlayDomainStreamInfoRequest.
+        r"""Sets the play_domains of this ListPlayDomainStreamInfoRequest.
 
         播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的流数据。 
 
@@ -71,7 +71,7 @@ class ListPlayDomainStreamInfoRequest:
 
     @property
     def time(self):
-        """Gets the time of this ListPlayDomainStreamInfoRequest.
+        r"""Gets the time of this ListPlayDomainStreamInfoRequest.
 
         查询数据的时间点，精确到分钟。  日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ，最大查询周期七天。  时间必须为时间粒度整时刻点，如：2024-02-02T08:01:00Z。 
 
@@ -82,7 +82,7 @@ class ListPlayDomainStreamInfoRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListPlayDomainStreamInfoRequest.
+        r"""Sets the time of this ListPlayDomainStreamInfoRequest.
 
         查询数据的时间点，精确到分钟。  日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ，最大查询周期七天。  时间必须为时间粒度整时刻点，如：2024-02-02T08:01:00Z。 
 

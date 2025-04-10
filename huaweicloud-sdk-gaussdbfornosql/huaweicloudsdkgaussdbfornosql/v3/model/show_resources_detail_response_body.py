@@ -29,7 +29,7 @@ class ShowResourcesDetailResponseBody:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """ShowResourcesDetailResponseBody
+        r"""ShowResourcesDetailResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this ShowResourcesDetailResponseBody.
+        r"""Gets the type of this ShowResourcesDetailResponseBody.
 
         配额资源类型，当前配额类型仅支持实例类型（instance）。
 
@@ -65,7 +65,7 @@ class ShowResourcesDetailResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResourcesDetailResponseBody.
+        r"""Sets the type of this ShowResourcesDetailResponseBody.
 
         配额资源类型，当前配额类型仅支持实例类型（instance）。
 
@@ -76,7 +76,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def quota(self):
-        """Gets the quota of this ShowResourcesDetailResponseBody.
+        r"""Gets the quota of this ShowResourcesDetailResponseBody.
 
         当前配额值。 取值为0时，表示不限制当前配额值。
 
@@ -87,7 +87,7 @@ class ShowResourcesDetailResponseBody:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ShowResourcesDetailResponseBody.
+        r"""Sets the quota of this ShowResourcesDetailResponseBody.
 
         当前配额值。 取值为0时，表示不限制当前配额值。
 
@@ -98,7 +98,7 @@ class ShowResourcesDetailResponseBody:
 
     @property
     def used(self):
-        """Gets the used of this ShowResourcesDetailResponseBody.
+        r"""Gets the used of this ShowResourcesDetailResponseBody.
 
         已使用的资源数。
 
@@ -109,7 +109,7 @@ class ShowResourcesDetailResponseBody:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowResourcesDetailResponseBody.
+        r"""Sets the used of this ShowResourcesDetailResponseBody.
 
         已使用的资源数。
 

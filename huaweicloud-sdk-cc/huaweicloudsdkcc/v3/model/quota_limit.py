@@ -25,7 +25,7 @@ class QuotaLimit:
     }
 
     def __init__(self, quota_limit=None):
-        """QuotaLimit
+        r"""QuotaLimit
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QuotaLimit:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this QuotaLimit.
+        r"""Gets the quota_limit of this QuotaLimit.
 
         配额大小。
 
@@ -53,7 +53,7 @@ class QuotaLimit:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this QuotaLimit.
+        r"""Sets the quota_limit of this QuotaLimit.
 
         配额大小。
 

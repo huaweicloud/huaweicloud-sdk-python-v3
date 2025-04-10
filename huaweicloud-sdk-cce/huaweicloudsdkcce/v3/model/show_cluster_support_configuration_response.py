@@ -26,7 +26,7 @@ class ShowClusterSupportConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowClusterSupportConfigurationResponse
+        r"""ShowClusterSupportConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClusterSupportConfigurationResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowClusterSupportConfigurationResponse.
+        r"""Gets the body of this ShowClusterSupportConfigurationResponse.
 
         获取指定集群配置项列表返回体
 
@@ -55,7 +55,7 @@ class ShowClusterSupportConfigurationResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowClusterSupportConfigurationResponse.
+        r"""Sets the body of this ShowClusterSupportConfigurationResponse.
 
         获取指定集群配置项列表返回体
 

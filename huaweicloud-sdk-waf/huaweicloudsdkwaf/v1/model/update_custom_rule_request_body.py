@@ -39,7 +39,7 @@ class UpdateCustomRuleRequestBody:
     }
 
     def __init__(self, name=None, time=None, start=None, terminal=None, description=None, conditions=None, action=None, priority=None):
-        """UpdateCustomRuleRequestBody
+        r"""UpdateCustomRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCustomRuleRequestBody.
+        r"""Gets the name of this UpdateCustomRuleRequestBody.
 
         规则名称
 
@@ -98,7 +98,7 @@ class UpdateCustomRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCustomRuleRequestBody.
+        r"""Sets the name of this UpdateCustomRuleRequestBody.
 
         规则名称
 
@@ -109,7 +109,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def time(self):
-        """Gets the time of this UpdateCustomRuleRequestBody.
+        r"""Gets the time of this UpdateCustomRuleRequestBody.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -120,7 +120,7 @@ class UpdateCustomRuleRequestBody:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this UpdateCustomRuleRequestBody.
+        r"""Sets the time of this UpdateCustomRuleRequestBody.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -131,7 +131,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def start(self):
-        """Gets the start of this UpdateCustomRuleRequestBody.
+        r"""Gets the start of this UpdateCustomRuleRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -142,7 +142,7 @@ class UpdateCustomRuleRequestBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this UpdateCustomRuleRequestBody.
+        r"""Sets the start of this UpdateCustomRuleRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -153,7 +153,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this UpdateCustomRuleRequestBody.
+        r"""Gets the terminal of this UpdateCustomRuleRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -164,7 +164,7 @@ class UpdateCustomRuleRequestBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this UpdateCustomRuleRequestBody.
+        r"""Sets the terminal of this UpdateCustomRuleRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -175,7 +175,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCustomRuleRequestBody.
+        r"""Gets the description of this UpdateCustomRuleRequestBody.
 
         规则描述
 
@@ -186,7 +186,7 @@ class UpdateCustomRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCustomRuleRequestBody.
+        r"""Sets the description of this UpdateCustomRuleRequestBody.
 
         规则描述
 
@@ -197,7 +197,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateCustomRuleRequestBody.
+        r"""Gets the conditions of this UpdateCustomRuleRequestBody.
 
         匹配条件列表
 
@@ -208,7 +208,7 @@ class UpdateCustomRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateCustomRuleRequestBody.
+        r"""Sets the conditions of this UpdateCustomRuleRequestBody.
 
         匹配条件列表
 
@@ -219,7 +219,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateCustomRuleRequestBody.
+        r"""Gets the action of this UpdateCustomRuleRequestBody.
 
         :return: The action of this UpdateCustomRuleRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -228,7 +228,7 @@ class UpdateCustomRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateCustomRuleRequestBody.
+        r"""Sets the action of this UpdateCustomRuleRequestBody.
 
         :param action: The action of this UpdateCustomRuleRequestBody.
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -237,7 +237,7 @@ class UpdateCustomRuleRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateCustomRuleRequestBody.
+        r"""Gets the priority of this UpdateCustomRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -248,7 +248,7 @@ class UpdateCustomRuleRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateCustomRuleRequestBody.
+        r"""Sets the priority of this UpdateCustomRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 

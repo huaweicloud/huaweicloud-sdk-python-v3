@@ -25,7 +25,7 @@ class DeleteHostGroupRequestBody:
     }
 
     def __init__(self, host_group_id_list=None):
-        """DeleteHostGroupRequestBody
+        r"""DeleteHostGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteHostGroupRequestBody:
 
     @property
     def host_group_id_list(self):
-        """Gets the host_group_id_list of this DeleteHostGroupRequestBody.
+        r"""Gets the host_group_id_list of this DeleteHostGroupRequestBody.
 
         主机组ID列表
 
@@ -53,7 +53,7 @@ class DeleteHostGroupRequestBody:
 
     @host_group_id_list.setter
     def host_group_id_list(self, host_group_id_list):
-        """Sets the host_group_id_list of this DeleteHostGroupRequestBody.
+        r"""Sets the host_group_id_list of this DeleteHostGroupRequestBody.
 
         主机组ID列表
 

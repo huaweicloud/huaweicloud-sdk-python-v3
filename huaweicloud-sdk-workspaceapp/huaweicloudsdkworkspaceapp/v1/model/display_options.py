@@ -53,7 +53,7 @@ class DisplayOptions:
     }
 
     def __init__(self, display_bandwidth=None, frame_rate=None, video_frame_rate=None, min_image_cache=None, smoothing_factor=None, lossless_compression_mode=None, deep_compression_options=None, lossy_compression_quality=None, color_enhancement_enable=None, quality_bandwidth_first=None, video_bit_rate_options=None, peak_video_bit_rate=None, video_quality_options=None, gop_size=None, encoding_preset=None):
-        """DisplayOptions
+        r"""DisplayOptions
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class DisplayOptions:
 
     @property
     def display_bandwidth(self):
-        """Gets the display_bandwidth of this DisplayOptions.
+        r"""Gets the display_bandwidth of this DisplayOptions.
 
         带宽（Kbps）。取值范围为[256-25000]。默认：20000。
 
@@ -152,7 +152,7 @@ class DisplayOptions:
 
     @display_bandwidth.setter
     def display_bandwidth(self, display_bandwidth):
-        """Sets the display_bandwidth of this DisplayOptions.
+        r"""Sets the display_bandwidth of this DisplayOptions.
 
         带宽（Kbps）。取值范围为[256-25000]。默认：20000。
 
@@ -163,7 +163,7 @@ class DisplayOptions:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this DisplayOptions.
+        r"""Gets the frame_rate of this DisplayOptions.
 
         帧率（fps）。取值范围为[1-60]。默认：25。
 
@@ -174,7 +174,7 @@ class DisplayOptions:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this DisplayOptions.
+        r"""Sets the frame_rate of this DisplayOptions.
 
         帧率（fps）。取值范围为[1-60]。默认：25。
 
@@ -185,7 +185,7 @@ class DisplayOptions:
 
     @property
     def video_frame_rate(self):
-        """Gets the video_frame_rate of this DisplayOptions.
+        r"""Gets the video_frame_rate of this DisplayOptions.
 
         视频帧率（fps）。取值范围为[1-60]。默认：30。
 
@@ -196,7 +196,7 @@ class DisplayOptions:
 
     @video_frame_rate.setter
     def video_frame_rate(self, video_frame_rate):
-        """Sets the video_frame_rate of this DisplayOptions.
+        r"""Sets the video_frame_rate of this DisplayOptions.
 
         视频帧率（fps）。取值范围为[1-60]。默认：30。
 
@@ -207,7 +207,7 @@ class DisplayOptions:
 
     @property
     def min_image_cache(self):
-        """Gets the min_image_cache of this DisplayOptions.
+        r"""Gets the min_image_cache of this DisplayOptions.
 
         图像缓存最低容量（MB）。取值范围[0-300]，默认：200。
 
@@ -218,7 +218,7 @@ class DisplayOptions:
 
     @min_image_cache.setter
     def min_image_cache(self, min_image_cache):
-        """Sets the min_image_cache of this DisplayOptions.
+        r"""Sets the min_image_cache of this DisplayOptions.
 
         图像缓存最低容量（MB）。取值范围[0-300]，默认：200。
 
@@ -229,7 +229,7 @@ class DisplayOptions:
 
     @property
     def smoothing_factor(self):
-        """Gets the smoothing_factor of this DisplayOptions.
+        r"""Gets the smoothing_factor of this DisplayOptions.
 
         有损压缩识别阈值。取值范围为[0-255]。默认：60。
 
@@ -240,7 +240,7 @@ class DisplayOptions:
 
     @smoothing_factor.setter
     def smoothing_factor(self, smoothing_factor):
-        """Sets the smoothing_factor of this DisplayOptions.
+        r"""Sets the smoothing_factor of this DisplayOptions.
 
         有损压缩识别阈值。取值范围为[0-255]。默认：60。
 
@@ -251,7 +251,7 @@ class DisplayOptions:
 
     @property
     def lossless_compression_mode(self):
-        """Gets the lossless_compression_mode of this DisplayOptions.
+        r"""Gets the lossless_compression_mode of this DisplayOptions.
 
         无损压缩模式。取值为： Basic Compression：表示初级压缩。 Deep Compression：表示深度压缩。
 
@@ -262,7 +262,7 @@ class DisplayOptions:
 
     @lossless_compression_mode.setter
     def lossless_compression_mode(self, lossless_compression_mode):
-        """Sets the lossless_compression_mode of this DisplayOptions.
+        r"""Sets the lossless_compression_mode of this DisplayOptions.
 
         无损压缩模式。取值为： Basic Compression：表示初级压缩。 Deep Compression：表示深度压缩。
 
@@ -273,7 +273,7 @@ class DisplayOptions:
 
     @property
     def deep_compression_options(self):
-        """Gets the deep_compression_options of this DisplayOptions.
+        r"""Gets the deep_compression_options of this DisplayOptions.
 
         :return: The deep_compression_options of this DisplayOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptionsDeepCompressionOptions`
@@ -282,7 +282,7 @@ class DisplayOptions:
 
     @deep_compression_options.setter
     def deep_compression_options(self, deep_compression_options):
-        """Sets the deep_compression_options of this DisplayOptions.
+        r"""Sets the deep_compression_options of this DisplayOptions.
 
         :param deep_compression_options: The deep_compression_options of this DisplayOptions.
         :type deep_compression_options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptionsDeepCompressionOptions`
@@ -291,7 +291,7 @@ class DisplayOptions:
 
     @property
     def lossy_compression_quality(self):
-        """Gets the lossy_compression_quality of this DisplayOptions.
+        r"""Gets the lossy_compression_quality of this DisplayOptions.
 
         有损压缩质量。取值范围为[20-100]。默认：85。
 
@@ -302,7 +302,7 @@ class DisplayOptions:
 
     @lossy_compression_quality.setter
     def lossy_compression_quality(self, lossy_compression_quality):
-        """Sets the lossy_compression_quality of this DisplayOptions.
+        r"""Sets the lossy_compression_quality of this DisplayOptions.
 
         有损压缩质量。取值范围为[20-100]。默认：85。
 
@@ -313,7 +313,7 @@ class DisplayOptions:
 
     @property
     def color_enhancement_enable(self):
-        """Gets the color_enhancement_enable of this DisplayOptions.
+        r"""Gets the color_enhancement_enable of this DisplayOptions.
 
         办公场景色彩增强：取值为： false：表示关闭。 true：表示开启。
 
@@ -324,7 +324,7 @@ class DisplayOptions:
 
     @color_enhancement_enable.setter
     def color_enhancement_enable(self, color_enhancement_enable):
-        """Sets the color_enhancement_enable of this DisplayOptions.
+        r"""Sets the color_enhancement_enable of this DisplayOptions.
 
         办公场景色彩增强：取值为： false：表示关闭。 true：表示开启。
 
@@ -335,7 +335,7 @@ class DisplayOptions:
 
     @property
     def quality_bandwidth_first(self):
-        """Gets the quality_bandwidth_first of this DisplayOptions.
+        r"""Gets the quality_bandwidth_first of this DisplayOptions.
 
         质量或带宽优先。取值为： Quality First：表示初级压缩。 Bandwidth First：表示深度压缩。
 
@@ -346,7 +346,7 @@ class DisplayOptions:
 
     @quality_bandwidth_first.setter
     def quality_bandwidth_first(self, quality_bandwidth_first):
-        """Sets the quality_bandwidth_first of this DisplayOptions.
+        r"""Sets the quality_bandwidth_first of this DisplayOptions.
 
         质量或带宽优先。取值为： Quality First：表示初级压缩。 Bandwidth First：表示深度压缩。
 
@@ -357,7 +357,7 @@ class DisplayOptions:
 
     @property
     def video_bit_rate_options(self):
-        """Gets the video_bit_rate_options of this DisplayOptions.
+        r"""Gets the video_bit_rate_options of this DisplayOptions.
 
         :return: The video_bit_rate_options of this DisplayOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptionsVideoBitRateOptions`
@@ -366,7 +366,7 @@ class DisplayOptions:
 
     @video_bit_rate_options.setter
     def video_bit_rate_options(self, video_bit_rate_options):
-        """Sets the video_bit_rate_options of this DisplayOptions.
+        r"""Sets the video_bit_rate_options of this DisplayOptions.
 
         :param video_bit_rate_options: The video_bit_rate_options of this DisplayOptions.
         :type video_bit_rate_options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptionsVideoBitRateOptions`
@@ -375,7 +375,7 @@ class DisplayOptions:
 
     @property
     def peak_video_bit_rate(self):
-        """Gets the peak_video_bit_rate of this DisplayOptions.
+        r"""Gets the peak_video_bit_rate of this DisplayOptions.
 
         视频峰值码率（Kbps）。取值范围为[256-100000]。默认：18000。
 
@@ -386,7 +386,7 @@ class DisplayOptions:
 
     @peak_video_bit_rate.setter
     def peak_video_bit_rate(self, peak_video_bit_rate):
-        """Sets the peak_video_bit_rate of this DisplayOptions.
+        r"""Sets the peak_video_bit_rate of this DisplayOptions.
 
         视频峰值码率（Kbps）。取值范围为[256-100000]。默认：18000。
 
@@ -397,7 +397,7 @@ class DisplayOptions:
 
     @property
     def video_quality_options(self):
-        """Gets the video_quality_options of this DisplayOptions.
+        r"""Gets the video_quality_options of this DisplayOptions.
 
         :return: The video_quality_options of this DisplayOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptionsVideoQualityOptions`
@@ -406,7 +406,7 @@ class DisplayOptions:
 
     @video_quality_options.setter
     def video_quality_options(self, video_quality_options):
-        """Sets the video_quality_options of this DisplayOptions.
+        r"""Sets the video_quality_options of this DisplayOptions.
 
         :param video_quality_options: The video_quality_options of this DisplayOptions.
         :type video_quality_options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptionsVideoQualityOptions`
@@ -415,7 +415,7 @@ class DisplayOptions:
 
     @property
     def gop_size(self):
-        """Gets the gop_size of this DisplayOptions.
+        r"""Gets the gop_size of this DisplayOptions.
 
         GOP大小。取值范围为[0-65535]。默认：100。
 
@@ -426,7 +426,7 @@ class DisplayOptions:
 
     @gop_size.setter
     def gop_size(self, gop_size):
-        """Sets the gop_size of this DisplayOptions.
+        r"""Sets the gop_size of this DisplayOptions.
 
         GOP大小。取值范围为[0-65535]。默认：100。
 
@@ -437,7 +437,7 @@ class DisplayOptions:
 
     @property
     def encoding_preset(self):
-        """Gets the encoding_preset of this DisplayOptions.
+        r"""Gets the encoding_preset of this DisplayOptions.
 
         编码预置。取值为： 预置1：Preset 1。 预置2：Preset 2。 预置3：Preset 3。 预置4：Preset 4。 预置5：Preset 5。 预置6：Preset 6。 预置7：Preset 7。
 
@@ -448,7 +448,7 @@ class DisplayOptions:
 
     @encoding_preset.setter
     def encoding_preset(self, encoding_preset):
-        """Sets the encoding_preset of this DisplayOptions.
+        r"""Sets the encoding_preset of this DisplayOptions.
 
         编码预置。取值为： 预置1：Preset 1。 预置2：Preset 2。 预置3：Preset 3。 预置4：Preset 4。 预置5：Preset 5。 预置6：Preset 6。 预置7：Preset 7。
 

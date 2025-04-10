@@ -25,7 +25,7 @@ class UpdateTemplateReq:
     }
 
     def __init__(self, template=None):
-        """UpdateTemplateReq
+        r"""UpdateTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTemplateReq:
 
     @property
     def template(self):
-        """Gets the template of this UpdateTemplateReq.
+        r"""Gets the template of this UpdateTemplateReq.
 
         :return: The template of this UpdateTemplateReq.
         :rtype: :class:`huaweicloudsdksms.v3.TemplateRequest`
@@ -52,7 +52,7 @@ class UpdateTemplateReq:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this UpdateTemplateReq.
+        r"""Sets the template of this UpdateTemplateReq.
 
         :param template: The template of this UpdateTemplateReq.
         :type template: :class:`huaweicloudsdksms.v3.TemplateRequest`

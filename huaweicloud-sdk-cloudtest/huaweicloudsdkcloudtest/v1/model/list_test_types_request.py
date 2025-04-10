@@ -25,7 +25,7 @@ class ListTestTypesRequest:
     }
 
     def __init__(self, project_id=None):
-        """ListTestTypesRequest
+        r"""ListTestTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTestTypesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestTypesRequest.
+        r"""Gets the project_id of this ListTestTypesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -53,7 +53,7 @@ class ListTestTypesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestTypesRequest.
+        r"""Sets the project_id of this ListTestTypesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 

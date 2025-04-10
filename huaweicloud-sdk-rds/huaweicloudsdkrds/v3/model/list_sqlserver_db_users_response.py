@@ -28,7 +28,7 @@ class ListSqlserverDbUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None):
-        """ListSqlserverDbUsersResponse
+        r"""ListSqlserverDbUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSqlserverDbUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListSqlserverDbUsersResponse.
+        r"""Gets the users of this ListSqlserverDbUsersResponse.
 
         用户信息。
 
@@ -62,7 +62,7 @@ class ListSqlserverDbUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListSqlserverDbUsersResponse.
+        r"""Sets the users of this ListSqlserverDbUsersResponse.
 
         用户信息。
 
@@ -73,7 +73,7 @@ class ListSqlserverDbUsersResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSqlserverDbUsersResponse.
+        r"""Gets the total_count of this ListSqlserverDbUsersResponse.
 
         总条数。
 
@@ -84,7 +84,7 @@ class ListSqlserverDbUsersResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSqlserverDbUsersResponse.
+        r"""Sets the total_count of this ListSqlserverDbUsersResponse.
 
         总条数。
 

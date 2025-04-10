@@ -25,7 +25,7 @@ class DeleteConfigurationRequest:
     }
 
     def __init__(self, config_id=None):
-        """DeleteConfigurationRequest
+        r"""DeleteConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this DeleteConfigurationRequest.
+        r"""Gets the config_id of this DeleteConfigurationRequest.
 
         参数模板ID。
 
@@ -53,7 +53,7 @@ class DeleteConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this DeleteConfigurationRequest.
+        r"""Sets the config_id of this DeleteConfigurationRequest.
 
         参数模板ID。
 

@@ -28,7 +28,7 @@ class CheckImageModerationResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, result=None):
-        """CheckImageModerationResponse
+        r"""CheckImageModerationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckImageModerationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CheckImageModerationResponse.
+        r"""Gets the request_id of this CheckImageModerationResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -62,7 +62,7 @@ class CheckImageModerationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CheckImageModerationResponse.
+        r"""Sets the request_id of this CheckImageModerationResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存。
 
@@ -73,7 +73,7 @@ class CheckImageModerationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckImageModerationResponse.
+        r"""Gets the result of this CheckImageModerationResponse.
 
         :return: The result of this CheckImageModerationResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResult`
@@ -82,7 +82,7 @@ class CheckImageModerationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckImageModerationResponse.
+        r"""Sets the result of this CheckImageModerationResponse.
 
         :param result: The result of this CheckImageModerationResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResult`

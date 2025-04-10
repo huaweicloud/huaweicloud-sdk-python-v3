@@ -23,7 +23,7 @@ class ResourceOwnerAccount:
     }
 
     def __init__(self):
-        """ResourceOwnerAccount
+        r"""ResourceOwnerAccount
 
         The model defined in huaweicloud sdk
 

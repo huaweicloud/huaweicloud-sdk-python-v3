@@ -23,7 +23,7 @@ class ShowProcessRequest:
     }
 
     def __init__(self):
-        """ShowProcessRequest
+        r"""ShowProcessRequest
 
         The model defined in huaweicloud sdk
 

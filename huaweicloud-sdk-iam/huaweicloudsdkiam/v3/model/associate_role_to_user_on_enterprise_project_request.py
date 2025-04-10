@@ -29,7 +29,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, user_id=None, role_id=None):
-        """AssociateRoleToUserOnEnterpriseProjectRequest
+        r"""AssociateRoleToUserOnEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
 
         企业项目ID。
 
@@ -65,7 +65,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
 
         企业项目ID。
 
@@ -76,7 +76,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
+        r"""Gets the user_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
 
         用户ID。
 
@@ -87,7 +87,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
+        r"""Sets the user_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
 
         用户ID。
 
@@ -98,7 +98,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
+        r"""Gets the role_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
 
         权限ID。
 
@@ -109,7 +109,7 @@ class AssociateRoleToUserOnEnterpriseProjectRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
+        r"""Sets the role_id of this AssociateRoleToUserOnEnterpriseProjectRequest.
 
         权限ID。
 

@@ -25,7 +25,7 @@ class UpdatePublicZoneStatusRequestBody:
     }
 
     def __init__(self, status=None):
-        """UpdatePublicZoneStatusRequestBody
+        r"""UpdatePublicZoneStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePublicZoneStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdatePublicZoneStatusRequestBody.
+        r"""Gets the status of this UpdatePublicZoneStatusRequestBody.
 
         Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
 
@@ -53,7 +53,7 @@ class UpdatePublicZoneStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePublicZoneStatusRequestBody.
+        r"""Sets the status of this UpdatePublicZoneStatusRequestBody.
 
         Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
 

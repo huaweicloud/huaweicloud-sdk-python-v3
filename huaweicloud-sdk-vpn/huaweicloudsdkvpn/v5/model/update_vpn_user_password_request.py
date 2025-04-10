@@ -29,7 +29,7 @@ class UpdateVpnUserPasswordRequest:
     }
 
     def __init__(self, vpn_server_id=None, user_id=None, body=None):
-        """UpdateVpnUserPasswordRequest
+        r"""UpdateVpnUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateVpnUserPasswordRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this UpdateVpnUserPasswordRequest.
+        r"""Gets the vpn_server_id of this UpdateVpnUserPasswordRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class UpdateVpnUserPasswordRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this UpdateVpnUserPasswordRequest.
+        r"""Sets the vpn_server_id of this UpdateVpnUserPasswordRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class UpdateVpnUserPasswordRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateVpnUserPasswordRequest.
+        r"""Gets the user_id of this UpdateVpnUserPasswordRequest.
 
         用户ID
 
@@ -88,7 +88,7 @@ class UpdateVpnUserPasswordRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateVpnUserPasswordRequest.
+        r"""Sets the user_id of this UpdateVpnUserPasswordRequest.
 
         用户ID
 
@@ -99,7 +99,7 @@ class UpdateVpnUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpnUserPasswordRequest.
+        r"""Gets the body of this UpdateVpnUserPasswordRequest.
 
         :return: The body of this UpdateVpnUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserPasswordRequestBody`
@@ -108,7 +108,7 @@ class UpdateVpnUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpnUserPasswordRequest.
+        r"""Sets the body of this UpdateVpnUserPasswordRequest.
 
         :param body: The body of this UpdateVpnUserPasswordRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVpnUserPasswordRequestBody`

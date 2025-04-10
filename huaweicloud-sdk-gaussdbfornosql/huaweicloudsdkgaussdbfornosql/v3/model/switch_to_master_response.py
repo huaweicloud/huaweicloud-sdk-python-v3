@@ -26,7 +26,7 @@ class SwitchToMasterResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchToMasterResponse
+        r"""SwitchToMasterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchToMasterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchToMasterResponse.
+        r"""Gets the job_id of this SwitchToMasterResponse.
 
         容灾实例主备倒换的工作ID。
 
@@ -55,7 +55,7 @@ class SwitchToMasterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchToMasterResponse.
+        r"""Sets the job_id of this SwitchToMasterResponse.
 
         容灾实例主备倒换的工作ID。
 

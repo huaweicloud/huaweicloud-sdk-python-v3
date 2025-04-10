@@ -27,7 +27,7 @@ class UserAttrs:
     }
 
     def __init__(self, data_type=None, name=None):
-        """UserAttrs
+        r"""UserAttrs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserAttrs:
 
     @property
     def data_type(self):
-        """Gets the data_type of this UserAttrs.
+        r"""Gets the data_type of this UserAttrs.
 
         数据类型。
 
@@ -61,7 +61,7 @@ class UserAttrs:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this UserAttrs.
+        r"""Sets the data_type of this UserAttrs.
 
         数据类型。
 
@@ -72,7 +72,7 @@ class UserAttrs:
 
     @property
     def name(self):
-        """Gets the name of this UserAttrs.
+        r"""Gets the name of this UserAttrs.
 
         用户名称。
 
@@ -83,7 +83,7 @@ class UserAttrs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserAttrs.
+        r"""Sets the name of this UserAttrs.
 
         用户名称。
 

@@ -35,7 +35,7 @@ class TimelineTrafficStatisticsRequestBody:
     }
 
     def __init__(self, start_time=None, end_time=None, period=None, resource_type=None, search_type=None, resource_id=None):
-        """TimelineTrafficStatisticsRequestBody
+        r"""TimelineTrafficStatisticsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TimelineTrafficStatisticsRequestBody.
+        r"""Gets the start_time of this TimelineTrafficStatisticsRequestBody.
 
         开始时间时间戳，毫秒时间，最多支持30天范围内的查询
 
@@ -84,7 +84,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TimelineTrafficStatisticsRequestBody.
+        r"""Sets the start_time of this TimelineTrafficStatisticsRequestBody.
 
         开始时间时间戳，毫秒时间，最多支持30天范围内的查询
 
@@ -95,7 +95,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TimelineTrafficStatisticsRequestBody.
+        r"""Gets the end_time of this TimelineTrafficStatisticsRequestBody.
 
         结束时间时间戳，毫秒时间
 
@@ -106,7 +106,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TimelineTrafficStatisticsRequestBody.
+        r"""Sets the end_time of this TimelineTrafficStatisticsRequestBody.
 
         结束时间时间戳，毫秒时间
 
@@ -117,7 +117,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @property
     def period(self):
-        """Gets the period of this TimelineTrafficStatisticsRequestBody.
+        r"""Gets the period of this TimelineTrafficStatisticsRequestBody.
 
         查询时间间隔，单位为小时，范围为1-24
 
@@ -128,7 +128,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this TimelineTrafficStatisticsRequestBody.
+        r"""Sets the period of this TimelineTrafficStatisticsRequestBody.
 
         查询时间间隔，单位为小时，范围为1-24
 
@@ -139,7 +139,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this TimelineTrafficStatisticsRequestBody.
+        r"""Gets the resource_type of this TimelineTrafficStatisticsRequestBody.
 
         资源类型，log_group / log_stream / tenant
 
@@ -150,7 +150,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this TimelineTrafficStatisticsRequestBody.
+        r"""Sets the resource_type of this TimelineTrafficStatisticsRequestBody.
 
         资源类型，log_group / log_stream / tenant
 
@@ -161,7 +161,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @property
     def search_type(self):
-        """Gets the search_type of this TimelineTrafficStatisticsRequestBody.
+        r"""Gets the search_type of this TimelineTrafficStatisticsRequestBody.
 
         查询流量类型值为：write，index，storage,basicTransfer，seniorTransfer
 
@@ -172,7 +172,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this TimelineTrafficStatisticsRequestBody.
+        r"""Sets the search_type of this TimelineTrafficStatisticsRequestBody.
 
         查询流量类型值为：write，index，storage,basicTransfer，seniorTransfer
 
@@ -183,7 +183,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TimelineTrafficStatisticsRequestBody.
+        r"""Gets the resource_id of this TimelineTrafficStatisticsRequestBody.
 
         资源ID
 
@@ -194,7 +194,7 @@ class TimelineTrafficStatisticsRequestBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TimelineTrafficStatisticsRequestBody.
+        r"""Sets the resource_id of this TimelineTrafficStatisticsRequestBody.
 
         资源ID
 

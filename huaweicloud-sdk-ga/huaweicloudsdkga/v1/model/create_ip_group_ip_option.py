@@ -27,7 +27,7 @@ class CreateIpGroupIpOption:
     }
 
     def __init__(self, cidr=None, description=None):
-        """CreateIpGroupIpOption
+        r"""CreateIpGroupIpOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateIpGroupIpOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateIpGroupIpOption.
+        r"""Gets the cidr of this CreateIpGroupIpOption.
 
         IP地址组中的IP网段，cidr格式。
 
@@ -60,7 +60,7 @@ class CreateIpGroupIpOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateIpGroupIpOption.
+        r"""Sets the cidr of this CreateIpGroupIpOption.
 
         IP地址组中的IP网段，cidr格式。
 
@@ -71,7 +71,7 @@ class CreateIpGroupIpOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateIpGroupIpOption.
+        r"""Gets the description of this CreateIpGroupIpOption.
 
         IP地址组中的IP网段描述，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -82,7 +82,7 @@ class CreateIpGroupIpOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIpGroupIpOption.
+        r"""Sets the description of this CreateIpGroupIpOption.
 
         IP地址组中的IP网段描述，取值范围：0~255个字符之间，禁止输入字符：<>。
 

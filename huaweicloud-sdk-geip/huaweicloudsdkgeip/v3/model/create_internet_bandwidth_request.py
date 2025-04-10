@@ -25,7 +25,7 @@ class CreateInternetBandwidthRequest:
     }
 
     def __init__(self, body=None):
-        """CreateInternetBandwidthRequest
+        r"""CreateInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateInternetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInternetBandwidthRequest.
+        r"""Gets the body of this CreateInternetBandwidthRequest.
 
         :return: The body of this CreateInternetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateInternetBandwidthRequestBody`
@@ -52,7 +52,7 @@ class CreateInternetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInternetBandwidthRequest.
+        r"""Sets the body of this CreateInternetBandwidthRequest.
 
         :param body: The body of this CreateInternetBandwidthRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.CreateInternetBandwidthRequestBody`

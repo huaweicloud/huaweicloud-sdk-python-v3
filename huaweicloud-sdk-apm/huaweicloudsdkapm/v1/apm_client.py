@@ -34,7 +34,7 @@ class ApmClient(Client):
         return client_builder
 
     def create_ak_sk(self, request):
-        """创建aksk
+        r"""创建aksk
 
         创建aksk。
         
@@ -99,7 +99,7 @@ class ApmClient(Client):
         return http_info
 
     def delete_ak_sk(self, request):
-        """删除aksk
+        r"""删除aksk
 
         删除aksk。
         
@@ -164,7 +164,7 @@ class ApmClient(Client):
         return http_info
 
     def show_ak_sks(self, request):
-        """查询租户的aksk
+        r"""查询租户的aksk
 
         查询租户的aksk。
         
@@ -227,7 +227,7 @@ class ApmClient(Client):
         return http_info
 
     def list_alarm_data(self, request):
-        """查询告警列表
+        r"""查询告警列表
 
         查询系统中存在的告警。
         
@@ -294,7 +294,7 @@ class ApmClient(Client):
         return http_info
 
     def list_alarm_notify(self, request):
-        """查询告警消息列表
+        r"""查询告警消息列表
 
         查询单个告警的触发详情与历史。
         
@@ -361,7 +361,7 @@ class ApmClient(Client):
         return http_info
 
     def change_agent_status(self, request):
-        """更改实例的采集状态
+        r"""更改实例的采集状态
 
         改变指定实例的采集状态：开启和关闭。
         
@@ -428,7 +428,7 @@ class ApmClient(Client):
         return http_info
 
     def delete_agent(self, request):
-        """删除agent
+        r"""删除agent
 
         删除agent
         
@@ -495,7 +495,7 @@ class ApmClient(Client):
         return http_info
 
     def list_ak_sk(self, request):
-        """获取ak/sk
+        r"""获取ak/sk
 
         获取该用户创建的ak/sk列表。
         
@@ -558,7 +558,7 @@ class ApmClient(Client):
         return http_info
 
     def list_business(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         该接口用于查询对应用户下的应用。
         
@@ -621,7 +621,7 @@ class ApmClient(Client):
         return http_info
 
     def list_env_monitor_item(self, request):
-        """查询监控项列表
+        r"""查询监控项列表
 
         查询监控项列表。
         
@@ -688,7 +688,7 @@ class ApmClient(Client):
         return http_info
 
     def save_monitor_item_config(self, request):
-        """保存监控项
+        r"""保存监控项
 
         保存监控项。
         
@@ -755,7 +755,7 @@ class ApmClient(Client):
         return http_info
 
     def search_agent(self, request):
-        """查询应用下所有探针
+        r"""查询应用下所有探针
 
         该接口用于搜索应用下所有探针情况。
         
@@ -822,7 +822,7 @@ class ApmClient(Client):
         return http_info
 
     def search_application(self, request):
-        """对指定区域下的组件和环境及其探针情况进行搜索
+        r"""对指定区域下的组件和环境及其探针情况进行搜索
 
         对指定区域下的组件和环境及其探针情况进行搜索。
         
@@ -889,7 +889,7 @@ class ApmClient(Client):
         return http_info
 
     def show_master_address(self, request):
-        """查询master地址
+        r"""查询master地址
 
         根据region名称获取该region下的master服务podlb地址信息。
         
@@ -954,7 +954,7 @@ class ApmClient(Client):
         return http_info
 
     def delete_app(self, request):
-        """根据组件id删除指定的组件
+        r"""根据组件id删除指定的组件
 
         该接口用于删除指定的组件。
         
@@ -1021,7 +1021,7 @@ class ApmClient(Client):
         return http_info
 
     def list_app_envs(self, request):
-        """获取组件下的环境列表
+        r"""获取组件下的环境列表
 
         获取组件下的环境列表。
         
@@ -1088,7 +1088,7 @@ class ApmClient(Client):
         return http_info
 
     def list_apps(self, request):
-        """获取组件列表
+        r"""获取组件列表
 
         获取组件列表。
         
@@ -1155,7 +1155,7 @@ class ApmClient(Client):
         return http_info
 
     def list_env_tags(self, request):
-        """查询环境标签
+        r"""查询环境标签
 
         查询环境标签接口。
         
@@ -1222,7 +1222,7 @@ class ApmClient(Client):
         return http_info
 
     def show_business_detail(self, request):
-        """查询单个应用的详情
+        r"""查询单个应用的详情
 
         查询单个应用的详情。
         
@@ -1289,7 +1289,7 @@ class ApmClient(Client):
         return http_info
 
     def show_sub_business_detail(self, request):
-        """查询子应用详情
+        r"""查询子应用详情
 
         查询单个子应用详情。
         
@@ -1356,7 +1356,7 @@ class ApmClient(Client):
         return http_info
 
     def show_topology_tree(self, request):
-        """获取应用树
+        r"""获取应用树
 
         获取应用树。
         
@@ -1429,7 +1429,7 @@ class ApmClient(Client):
         return http_info
 
     def show_flame_line_tree(self, request):
-        """show_flame_line_tree
+        r"""show_flame_line_tree
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1493,7 +1493,7 @@ class ApmClient(Client):
         return http_info
 
     def list_open_region(self, request):
-        """查询开通的region
+        r"""查询开通的region
 
         该接口用于查询用户开通的region信息。
         
@@ -1556,7 +1556,7 @@ class ApmClient(Client):
         return http_info
 
     def list_supported_region(self, request):
-        """查询所有的支持的region
+        r"""查询所有的支持的region
 
         查询所有的支持的region信息。
         
@@ -1619,7 +1619,7 @@ class ApmClient(Client):
         return http_info
 
     def search_business_topology(self, request):
-        """查询应用全局拓扑图
+        r"""查询应用全局拓扑图
 
         查询应用级别全局拓扑图信息。
         
@@ -1686,7 +1686,7 @@ class ApmClient(Client):
         return http_info
 
     def search_env_topology(self, request):
-        """查询组件环境拓扑图
+        r"""查询组件环境拓扑图
 
         查询组件环境级别全局拓扑图信息。
         
@@ -1753,7 +1753,7 @@ class ApmClient(Client):
         return http_info
 
     def create_business(self, request):
-        """创建链路追踪应用
+        r"""创建链路追踪应用
 
         创建链路追踪应用
         
@@ -1818,7 +1818,7 @@ class ApmClient(Client):
         return http_info
 
     def show_access_point(self, request):
-        """获取链路追踪应用接入地址
+        r"""获取链路追踪应用接入地址
 
         获取链路追踪应用接入地址
         
@@ -1887,7 +1887,7 @@ class ApmClient(Client):
         return http_info
 
     def show_token(self, request):
-        """获取链路追踪应用的token
+        r"""获取链路追踪应用的token
 
         获取链路追踪应用的token
         
@@ -1954,7 +1954,7 @@ class ApmClient(Client):
         return http_info
 
     def list_business_env(self, request):
-        """查询URL跟踪Region环境列表
+        r"""查询URL跟踪Region环境列表
 
         查询所选Region下设置了URL跟踪的环境列表。
         
@@ -2021,7 +2021,7 @@ class ApmClient(Client):
         return http_info
 
     def search_transaction(self, request):
-        """查询URL跟踪视图列表
+        r"""查询URL跟踪视图列表
 
         查询当前被调用的URL跟踪视图列表。
         
@@ -2088,7 +2088,7 @@ class ApmClient(Client):
         return http_info
 
     def search_transaction_config(self, request):
-        """查询URL跟踪配置列表
+        r"""查询URL跟踪配置列表
 
         查询已配置好的URL跟踪配置列表。
         
@@ -2155,7 +2155,7 @@ class ApmClient(Client):
         return http_info
 
     def show_transaction_detail(self, request):
-        """查询URL跟踪视图详情
+        r"""查询URL跟踪视图详情
 
         查询某条URL跟踪视图详情。
         
@@ -2222,7 +2222,7 @@ class ApmClient(Client):
         return http_info
 
     def list_env_instances(self, request):
-        """获取实例信息列表
+        r"""获取实例信息列表
 
         获取实例信息列表。
         
@@ -2289,7 +2289,7 @@ class ApmClient(Client):
         return http_info
 
     def show_clob_detail(self, request):
-        """获取原始数据详情
+        r"""获取原始数据详情
 
         获取原始数据详情。
         
@@ -2356,7 +2356,7 @@ class ApmClient(Client):
         return http_info
 
     def show_env_monitor_items(self, request):
-        """获取监控项信息
+        r"""获取监控项信息
 
         获取监控项信息。
         
@@ -2423,7 +2423,7 @@ class ApmClient(Client):
         return http_info
 
     def show_event_detail(self, request):
-        """获取event的详情
+        r"""获取event的详情
 
         获取event的详情。
         
@@ -2494,7 +2494,7 @@ class ApmClient(Client):
         return http_info
 
     def show_monitor_item_detail(self, request):
-        """获取一个监控项的详情
+        r"""获取一个监控项的详情
 
         获取一个监控项的详情。
         
@@ -2563,7 +2563,7 @@ class ApmClient(Client):
         return http_info
 
     def show_monitor_item_view_config(self, request):
-        """查询监控项配置信息
+        r"""查询监控项配置信息
 
         查询监控项配置信息。
         
@@ -2632,7 +2632,7 @@ class ApmClient(Client):
         return http_info
 
     def show_raw_table(self, request):
-        """获取原始数据表格
+        r"""获取原始数据表格
 
         获取原始数据表格。
         
@@ -2699,7 +2699,7 @@ class ApmClient(Client):
         return http_info
 
     def show_span_search(self, request):
-        """查询span数据
+        r"""查询span数据
 
         span数据查询接口。
         
@@ -2766,7 +2766,7 @@ class ApmClient(Client):
         return http_info
 
     def show_sum_table(self, request):
-        """获取汇总表格数据
+        r"""获取汇总表格数据
 
         获取汇总表格数据。
         
@@ -2833,7 +2833,7 @@ class ApmClient(Client):
         return http_info
 
     def show_topology(self, request):
-        """调用链拓扑图
+        r"""调用链拓扑图
 
         调用链拓扑图。
         
@@ -2898,7 +2898,7 @@ class ApmClient(Client):
         return http_info
 
     def show_trace_events(self, request):
-        """获取一个trace的所有调用链数据
+        r"""获取一个trace的所有调用链数据
 
         获取一个trace的所有调用链数据。
         
@@ -2963,7 +2963,7 @@ class ApmClient(Client):
         return http_info
 
     def show_trend(self, request):
-        """获取趋势图
+        r"""获取趋势图
 
         获取趋势图。
         

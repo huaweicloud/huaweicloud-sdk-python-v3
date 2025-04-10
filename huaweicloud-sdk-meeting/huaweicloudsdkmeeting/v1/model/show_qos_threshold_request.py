@@ -25,7 +25,7 @@ class ShowQosThresholdRequest:
     }
 
     def __init__(self, threshold_type=None):
-        """ShowQosThresholdRequest
+        r"""ShowQosThresholdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowQosThresholdRequest:
 
     @property
     def threshold_type(self):
-        """Gets the threshold_type of this ShowQosThresholdRequest.
+        r"""Gets the threshold_type of this ShowQosThresholdRequest.
 
         阈值类型。 * AUDIO：音频告警阈值 * VIDEO：视频告警阈值 * SCREEN：屏幕共享告警阈值 * CPU：CPU告警阈值
 
@@ -53,7 +53,7 @@ class ShowQosThresholdRequest:
 
     @threshold_type.setter
     def threshold_type(self, threshold_type):
-        """Sets the threshold_type of this ShowQosThresholdRequest.
+        r"""Sets the threshold_type of this ShowQosThresholdRequest.
 
         阈值类型。 * AUDIO：音频告警阈值 * VIDEO：视频告警阈值 * SCREEN：屏幕共享告警阈值 * CPU：CPU告警阈值
 

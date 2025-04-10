@@ -26,7 +26,7 @@ class UpdateDataConnectorResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateDataConnectorResponse
+        r"""UpdateDataConnectorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDataConnectorResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateDataConnectorResponse.
+        r"""Gets the result of this UpdateDataConnectorResponse.
 
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 
@@ -55,7 +55,7 @@ class UpdateDataConnectorResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateDataConnectorResponse.
+        r"""Sets the result of this UpdateDataConnectorResponse.
 
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 

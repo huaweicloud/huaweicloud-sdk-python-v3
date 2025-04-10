@@ -28,7 +28,7 @@ class ListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, data_center_list=None):
-        """ListRegionsResponse
+        r"""ListRegionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRegionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRegionsResponse.
+        r"""Gets the total_count of this ListRegionsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListRegionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRegionsResponse.
+        r"""Sets the total_count of this ListRegionsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListRegionsResponse(SdkResponse):
 
     @property
     def data_center_list(self):
-        """Gets the data_center_list of this ListRegionsResponse.
+        r"""Gets the data_center_list of this ListRegionsResponse.
 
         区域列表
 
@@ -84,7 +84,7 @@ class ListRegionsResponse(SdkResponse):
 
     @data_center_list.setter
     def data_center_list(self, data_center_list):
-        """Sets the data_center_list of this ListRegionsResponse.
+        r"""Sets the data_center_list of this ListRegionsResponse.
 
         区域列表
 

@@ -42,7 +42,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     }
 
     def __init__(self, error_count=None, data_struct=None, error_samples=None, inspect_result=None, is_success=None, message=None, legal_rate=None, inspect_rst_generated_time=None, final_report=None):
-        """ShowResDatasourceWorkDetailResponse
+        r"""ShowResDatasourceWorkDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def error_count(self):
-        """Gets the error_count of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the error_count of this ShowResDatasourceWorkDetailResponse.
 
         :return: The error_count of this ShowResDatasourceWorkDetailResponse.
         :rtype: :class:`huaweicloudsdkres.v1.ErrorCount`
@@ -109,7 +109,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the error_count of this ShowResDatasourceWorkDetailResponse.
 
         :param error_count: The error_count of this ShowResDatasourceWorkDetailResponse.
         :type error_count: :class:`huaweicloudsdkres.v1.ErrorCount`
@@ -118,7 +118,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def data_struct(self):
-        """Gets the data_struct of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the data_struct of this ShowResDatasourceWorkDetailResponse.
 
         :return: The data_struct of this ShowResDatasourceWorkDetailResponse.
         :rtype: :class:`huaweicloudsdkres.v1.DataStruct`
@@ -127,7 +127,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @data_struct.setter
     def data_struct(self, data_struct):
-        """Sets the data_struct of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the data_struct of this ShowResDatasourceWorkDetailResponse.
 
         :param data_struct: The data_struct of this ShowResDatasourceWorkDetailResponse.
         :type data_struct: :class:`huaweicloudsdkres.v1.DataStruct`
@@ -136,7 +136,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def error_samples(self):
-        """Gets the error_samples of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the error_samples of this ShowResDatasourceWorkDetailResponse.
 
         错误样例(请求类型为DATA_INSPECTION时返回)。
 
@@ -147,7 +147,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @error_samples.setter
     def error_samples(self, error_samples):
-        """Sets the error_samples of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the error_samples of this ShowResDatasourceWorkDetailResponse.
 
         错误样例(请求类型为DATA_INSPECTION时返回)。
 
@@ -158,7 +158,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def inspect_result(self):
-        """Gets the inspect_result of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the inspect_result of this ShowResDatasourceWorkDetailResponse.
 
         数据检测结果(请求类型为DATA_INSPECTION时返回)。
 
@@ -169,7 +169,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @inspect_result.setter
     def inspect_result(self, inspect_result):
-        """Sets the inspect_result of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the inspect_result of this ShowResDatasourceWorkDetailResponse.
 
         数据检测结果(请求类型为DATA_INSPECTION时返回)。
 
@@ -180,7 +180,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the is_success of this ShowResDatasourceWorkDetailResponse.
 
         是否成功。
 
@@ -191,7 +191,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the is_success of this ShowResDatasourceWorkDetailResponse.
 
         是否成功。
 
@@ -202,7 +202,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the message of this ShowResDatasourceWorkDetailResponse.
 
         返回消息。
 
@@ -213,7 +213,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the message of this ShowResDatasourceWorkDetailResponse.
 
         返回消息。
 
@@ -224,7 +224,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def legal_rate(self):
-        """Gets the legal_rate of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the legal_rate of this ShowResDatasourceWorkDetailResponse.
 
         合法率(请求类型为DATA_INSPECTION时返回)。
 
@@ -235,7 +235,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @legal_rate.setter
     def legal_rate(self, legal_rate):
-        """Sets the legal_rate of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the legal_rate of this ShowResDatasourceWorkDetailResponse.
 
         合法率(请求类型为DATA_INSPECTION时返回)。
 
@@ -246,7 +246,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def inspect_rst_generated_time(self):
-        """Gets the inspect_rst_generated_time of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the inspect_rst_generated_time of this ShowResDatasourceWorkDetailResponse.
 
         检测结果生成时间(请求类型为DATA_INSPECTION时返回)。
 
@@ -257,7 +257,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @inspect_rst_generated_time.setter
     def inspect_rst_generated_time(self, inspect_rst_generated_time):
-        """Sets the inspect_rst_generated_time of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the inspect_rst_generated_time of this ShowResDatasourceWorkDetailResponse.
 
         检测结果生成时间(请求类型为DATA_INSPECTION时返回)。
 
@@ -268,7 +268,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @property
     def final_report(self):
-        """Gets the final_report of this ShowResDatasourceWorkDetailResponse.
+        r"""Gets the final_report of this ShowResDatasourceWorkDetailResponse.
 
         :return: The final_report of this ShowResDatasourceWorkDetailResponse.
         :rtype: :class:`huaweicloudsdkres.v1.FinalReport`
@@ -277,7 +277,7 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
 
     @final_report.setter
     def final_report(self, final_report):
-        """Sets the final_report of this ShowResDatasourceWorkDetailResponse.
+        r"""Sets the final_report of this ShowResDatasourceWorkDetailResponse.
 
         :param final_report: The final_report of this ShowResDatasourceWorkDetailResponse.
         :type final_report: :class:`huaweicloudsdkres.v1.FinalReport`

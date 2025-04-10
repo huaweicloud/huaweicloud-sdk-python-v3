@@ -27,7 +27,7 @@ class StartRecyclePolicyRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """StartRecyclePolicyRequest
+        r"""StartRecyclePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StartRecyclePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartRecyclePolicyRequest.
+        r"""Gets the x_language of this StartRecyclePolicyRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class StartRecyclePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartRecyclePolicyRequest.
+        r"""Sets the x_language of this StartRecyclePolicyRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class StartRecyclePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartRecyclePolicyRequest.
+        r"""Gets the body of this StartRecyclePolicyRequest.
 
         :return: The body of this StartRecyclePolicyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RecyclePolicyRequestBody`
@@ -81,7 +81,7 @@ class StartRecyclePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartRecyclePolicyRequest.
+        r"""Sets the body of this StartRecyclePolicyRequest.
 
         :param body: The body of this StartRecyclePolicyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.RecyclePolicyRequestBody`

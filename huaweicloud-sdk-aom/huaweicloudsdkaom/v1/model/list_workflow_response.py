@@ -28,7 +28,7 @@ class ListWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, elements=None, total_elements=None):
-        """ListWorkflowResponse
+        r"""ListWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def elements(self):
-        """Gets the elements of this ListWorkflowResponse.
+        r"""Gets the elements of this ListWorkflowResponse.
 
         工作流详情集合。
 
@@ -62,7 +62,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @elements.setter
     def elements(self, elements):
-        """Sets the elements of this ListWorkflowResponse.
+        r"""Sets the elements of this ListWorkflowResponse.
 
         工作流详情集合。
 
@@ -73,7 +73,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def total_elements(self):
-        """Gets the total_elements of this ListWorkflowResponse.
+        r"""Gets the total_elements of this ListWorkflowResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @total_elements.setter
     def total_elements(self, total_elements):
-        """Sets the total_elements of this ListWorkflowResponse.
+        r"""Sets the total_elements of this ListWorkflowResponse.
 
         总数
 

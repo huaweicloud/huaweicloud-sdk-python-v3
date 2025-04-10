@@ -27,7 +27,7 @@ class MatchReq:
     }
 
     def __init__(self, key=None, value=None):
-        """MatchReq
+        r"""MatchReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MatchReq:
 
     @property
     def key(self):
-        """Gets the key of this MatchReq.
+        r"""Gets the key of this MatchReq.
 
         键。当前仅限定为resource_name
 
@@ -59,7 +59,7 @@ class MatchReq:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MatchReq.
+        r"""Sets the key of this MatchReq.
 
         键。当前仅限定为resource_name
 
@@ -70,7 +70,7 @@ class MatchReq:
 
     @property
     def value(self):
-        """Gets the value of this MatchReq.
+        r"""Gets the value of this MatchReq.
 
         值。每个值最大长度255个unicode字符。
 
@@ -81,7 +81,7 @@ class MatchReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MatchReq.
+        r"""Sets the value of this MatchReq.
 
         值。每个值最大长度255个unicode字符。
 

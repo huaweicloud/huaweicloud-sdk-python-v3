@@ -33,7 +33,7 @@ class ListCommonPoolsRequest:
     }
 
     def __init__(self, fields=None, limit=None, offset=None, name=None, public_border_group=None):
-        """ListCommonPoolsRequest
+        r"""ListCommonPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListCommonPoolsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListCommonPoolsRequest.
+        r"""Gets the fields of this ListCommonPoolsRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group/description
 
@@ -82,7 +82,7 @@ class ListCommonPoolsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListCommonPoolsRequest.
+        r"""Sets the fields of this ListCommonPoolsRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/status/type/used/allow_share_bandwidth_types/public_border_group/description
 
@@ -93,7 +93,7 @@ class ListCommonPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCommonPoolsRequest.
+        r"""Gets the limit of this ListCommonPoolsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -104,7 +104,7 @@ class ListCommonPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCommonPoolsRequest.
+        r"""Sets the limit of this ListCommonPoolsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -115,7 +115,7 @@ class ListCommonPoolsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCommonPoolsRequest.
+        r"""Gets the offset of this ListCommonPoolsRequest.
 
         分页查询起始的资源序号
 
@@ -126,7 +126,7 @@ class ListCommonPoolsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCommonPoolsRequest.
+        r"""Sets the offset of this ListCommonPoolsRequest.
 
         分页查询起始的资源序号
 
@@ -137,7 +137,7 @@ class ListCommonPoolsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCommonPoolsRequest.
+        r"""Gets the name of this ListCommonPoolsRequest.
 
         公共池名称
 
@@ -148,7 +148,7 @@ class ListCommonPoolsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCommonPoolsRequest.
+        r"""Sets the name of this ListCommonPoolsRequest.
 
         公共池名称
 
@@ -159,7 +159,7 @@ class ListCommonPoolsRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListCommonPoolsRequest.
+        r"""Gets the public_border_group of this ListCommonPoolsRequest.
 
         公共池位于中心还是边缘
 
@@ -170,7 +170,7 @@ class ListCommonPoolsRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListCommonPoolsRequest.
+        r"""Sets the public_border_group of this ListCommonPoolsRequest.
 
         公共池位于中心还是边缘
 

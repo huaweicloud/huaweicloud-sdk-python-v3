@@ -31,7 +31,7 @@ class DeployedResource:
     }
 
     def __init__(self, id=None, type=None, domain_name=None, enterprise_project_id=None):
-        """DeployedResource
+        r"""DeployedResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeployedResource:
 
     @property
     def id(self):
-        """Gets the id of this DeployedResource.
+        r"""Gets the id of this DeployedResource.
 
         资源Id，部署WAF与ELB时，必传此字段。
 
@@ -75,7 +75,7 @@ class DeployedResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeployedResource.
+        r"""Sets the id of this DeployedResource.
 
         资源Id，部署WAF与ELB时，必传此字段。
 
@@ -86,7 +86,7 @@ class DeployedResource:
 
     @property
     def type(self):
-        """Gets the type of this DeployedResource.
+        r"""Gets the type of this DeployedResource.
 
         资源类型，当前仅部署WAF资源时需传入，即独享模式（premium）与云模式（cloud）。
 
@@ -97,7 +97,7 @@ class DeployedResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeployedResource.
+        r"""Sets the type of this DeployedResource.
 
         资源类型，当前仅部署WAF资源时需传入，即独享模式（premium）与云模式（cloud）。
 
@@ -108,7 +108,7 @@ class DeployedResource:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DeployedResource.
+        r"""Gets the domain_name of this DeployedResource.
 
         需部署的域名，当前仅部署CDN时需传入，即需加速的域名，域名与证书必须可匹配。
 
@@ -119,7 +119,7 @@ class DeployedResource:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DeployedResource.
+        r"""Sets the domain_name of this DeployedResource.
 
         需部署的域名，当前仅部署CDN时需传入，即需加速的域名，域名与证书必须可匹配。
 
@@ -130,7 +130,7 @@ class DeployedResource:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeployedResource.
+        r"""Gets the enterprise_project_id of this DeployedResource.
 
         需部署的资源所属的企业项目ID，当前仅部署WAF资源时，需传入。
 
@@ -141,7 +141,7 @@ class DeployedResource:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeployedResource.
+        r"""Sets the enterprise_project_id of this DeployedResource.
 
         需部署的资源所属的企业项目ID，当前仅部署WAF资源时，需传入。
 

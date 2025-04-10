@@ -28,7 +28,7 @@ class ShowAdmetWithCustomPropsResponse(SdkResponse):
     }
 
     def __init__(self, custom_props=None, props=None):
-        """ShowAdmetWithCustomPropsResponse
+        r"""ShowAdmetWithCustomPropsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAdmetWithCustomPropsResponse(SdkResponse):
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this ShowAdmetWithCustomPropsResponse.
+        r"""Gets the custom_props of this ShowAdmetWithCustomPropsResponse.
 
         用户已开启的自定义属性集合
 
@@ -62,7 +62,7 @@ class ShowAdmetWithCustomPropsResponse(SdkResponse):
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this ShowAdmetWithCustomPropsResponse.
+        r"""Sets the custom_props of this ShowAdmetWithCustomPropsResponse.
 
         用户已开启的自定义属性集合
 
@@ -73,7 +73,7 @@ class ShowAdmetWithCustomPropsResponse(SdkResponse):
 
     @property
     def props(self):
-        """Gets the props of this ShowAdmetWithCustomPropsResponse.
+        r"""Gets the props of this ShowAdmetWithCustomPropsResponse.
 
         :return: The props of this ShowAdmetWithCustomPropsResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v2.AdmetPropertyDictWithCustom`
@@ -82,7 +82,7 @@ class ShowAdmetWithCustomPropsResponse(SdkResponse):
 
     @props.setter
     def props(self, props):
-        """Sets the props of this ShowAdmetWithCustomPropsResponse.
+        r"""Sets the props of this ShowAdmetWithCustomPropsResponse.
 
         :param props: The props of this ShowAdmetWithCustomPropsResponse.
         :type props: :class:`huaweicloudsdkeihealth.v2.AdmetPropertyDictWithCustom`

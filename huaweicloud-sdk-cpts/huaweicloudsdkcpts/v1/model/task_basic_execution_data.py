@@ -49,7 +49,7 @@ class TaskBasicExecutionData:
     }
 
     def __init__(self, complete_num=None, duration=None, end_time=None, executed_num=None, kpi_case_count=None, kpi_case_execute_count=None, kpi_case_pass_count=None, parallel=None, pass_num=None, start_time=None, task_status=None, total_num=None, vum=None):
-        """TaskBasicExecutionData
+        r"""TaskBasicExecutionData
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TaskBasicExecutionData:
 
     @property
     def complete_num(self):
-        """Gets the complete_num of this TaskBasicExecutionData.
+        r"""Gets the complete_num of this TaskBasicExecutionData.
 
         已执行完成的用例数
 
@@ -138,7 +138,7 @@ class TaskBasicExecutionData:
 
     @complete_num.setter
     def complete_num(self, complete_num):
-        """Sets the complete_num of this TaskBasicExecutionData.
+        r"""Sets the complete_num of this TaskBasicExecutionData.
 
         已执行完成的用例数
 
@@ -149,7 +149,7 @@ class TaskBasicExecutionData:
 
     @property
     def duration(self):
-        """Gets the duration of this TaskBasicExecutionData.
+        r"""Gets the duration of this TaskBasicExecutionData.
 
         持续时间
 
@@ -160,7 +160,7 @@ class TaskBasicExecutionData:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this TaskBasicExecutionData.
+        r"""Sets the duration of this TaskBasicExecutionData.
 
         持续时间
 
@@ -171,7 +171,7 @@ class TaskBasicExecutionData:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TaskBasicExecutionData.
+        r"""Gets the end_time of this TaskBasicExecutionData.
 
         结束时间
 
@@ -182,7 +182,7 @@ class TaskBasicExecutionData:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TaskBasicExecutionData.
+        r"""Sets the end_time of this TaskBasicExecutionData.
 
         结束时间
 
@@ -193,7 +193,7 @@ class TaskBasicExecutionData:
 
     @property
     def executed_num(self):
-        """Gets the executed_num of this TaskBasicExecutionData.
+        r"""Gets the executed_num of this TaskBasicExecutionData.
 
         已执行用例数
 
@@ -204,7 +204,7 @@ class TaskBasicExecutionData:
 
     @executed_num.setter
     def executed_num(self, executed_num):
-        """Sets the executed_num of this TaskBasicExecutionData.
+        r"""Sets the executed_num of this TaskBasicExecutionData.
 
         已执行用例数
 
@@ -215,7 +215,7 @@ class TaskBasicExecutionData:
 
     @property
     def kpi_case_count(self):
-        """Gets the kpi_case_count of this TaskBasicExecutionData.
+        r"""Gets the kpi_case_count of this TaskBasicExecutionData.
 
         【指标数据:最后一个轮次】 用例数
 
@@ -226,7 +226,7 @@ class TaskBasicExecutionData:
 
     @kpi_case_count.setter
     def kpi_case_count(self, kpi_case_count):
-        """Sets the kpi_case_count of this TaskBasicExecutionData.
+        r"""Sets the kpi_case_count of this TaskBasicExecutionData.
 
         【指标数据:最后一个轮次】 用例数
 
@@ -237,7 +237,7 @@ class TaskBasicExecutionData:
 
     @property
     def kpi_case_execute_count(self):
-        """Gets the kpi_case_execute_count of this TaskBasicExecutionData.
+        r"""Gets the kpi_case_execute_count of this TaskBasicExecutionData.
 
         【指标数据:最后一个轮次】 已执行的用例数
 
@@ -248,7 +248,7 @@ class TaskBasicExecutionData:
 
     @kpi_case_execute_count.setter
     def kpi_case_execute_count(self, kpi_case_execute_count):
-        """Sets the kpi_case_execute_count of this TaskBasicExecutionData.
+        r"""Sets the kpi_case_execute_count of this TaskBasicExecutionData.
 
         【指标数据:最后一个轮次】 已执行的用例数
 
@@ -259,7 +259,7 @@ class TaskBasicExecutionData:
 
     @property
     def kpi_case_pass_count(self):
-        """Gets the kpi_case_pass_count of this TaskBasicExecutionData.
+        r"""Gets the kpi_case_pass_count of this TaskBasicExecutionData.
 
         【指标数据:最后一个轮次】 最后一轮结果为Pass的用例数
 
@@ -270,7 +270,7 @@ class TaskBasicExecutionData:
 
     @kpi_case_pass_count.setter
     def kpi_case_pass_count(self, kpi_case_pass_count):
-        """Sets the kpi_case_pass_count of this TaskBasicExecutionData.
+        r"""Sets the kpi_case_pass_count of this TaskBasicExecutionData.
 
         【指标数据:最后一个轮次】 最后一轮结果为Pass的用例数
 
@@ -281,7 +281,7 @@ class TaskBasicExecutionData:
 
     @property
     def parallel(self):
-        """Gets the parallel of this TaskBasicExecutionData.
+        r"""Gets the parallel of this TaskBasicExecutionData.
 
         任务间用例是否并行执行
 
@@ -292,7 +292,7 @@ class TaskBasicExecutionData:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this TaskBasicExecutionData.
+        r"""Sets the parallel of this TaskBasicExecutionData.
 
         任务间用例是否并行执行
 
@@ -303,7 +303,7 @@ class TaskBasicExecutionData:
 
     @property
     def pass_num(self):
-        """Gets the pass_num of this TaskBasicExecutionData.
+        r"""Gets the pass_num of this TaskBasicExecutionData.
 
         用例通过数
 
@@ -314,7 +314,7 @@ class TaskBasicExecutionData:
 
     @pass_num.setter
     def pass_num(self, pass_num):
-        """Sets the pass_num of this TaskBasicExecutionData.
+        r"""Sets the pass_num of this TaskBasicExecutionData.
 
         用例通过数
 
@@ -325,7 +325,7 @@ class TaskBasicExecutionData:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskBasicExecutionData.
+        r"""Gets the start_time of this TaskBasicExecutionData.
 
         开始时间
 
@@ -336,7 +336,7 @@ class TaskBasicExecutionData:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskBasicExecutionData.
+        r"""Sets the start_time of this TaskBasicExecutionData.
 
         开始时间
 
@@ -347,7 +347,7 @@ class TaskBasicExecutionData:
 
     @property
     def task_status(self):
-        """Gets the task_status of this TaskBasicExecutionData.
+        r"""Gets the task_status of this TaskBasicExecutionData.
 
         任务状态
 
@@ -358,7 +358,7 @@ class TaskBasicExecutionData:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this TaskBasicExecutionData.
+        r"""Sets the task_status of this TaskBasicExecutionData.
 
         任务状态
 
@@ -369,7 +369,7 @@ class TaskBasicExecutionData:
 
     @property
     def total_num(self):
-        """Gets the total_num of this TaskBasicExecutionData.
+        r"""Gets the total_num of this TaskBasicExecutionData.
 
         总用例数
 
@@ -380,7 +380,7 @@ class TaskBasicExecutionData:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this TaskBasicExecutionData.
+        r"""Sets the total_num of this TaskBasicExecutionData.
 
         总用例数
 
@@ -391,7 +391,7 @@ class TaskBasicExecutionData:
 
     @property
     def vum(self):
-        """Gets the vum of this TaskBasicExecutionData.
+        r"""Gets the vum of this TaskBasicExecutionData.
 
         分钟*并发数
 
@@ -402,7 +402,7 @@ class TaskBasicExecutionData:
 
     @vum.setter
     def vum(self, vum):
-        """Sets the vum of this TaskBasicExecutionData.
+        r"""Sets the vum of this TaskBasicExecutionData.
 
         分钟*并发数
 

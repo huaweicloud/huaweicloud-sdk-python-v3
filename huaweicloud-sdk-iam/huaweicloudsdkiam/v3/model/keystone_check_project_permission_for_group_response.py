@@ -24,7 +24,7 @@ class KeystoneCheckProjectPermissionForGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneCheckProjectPermissionForGroupResponse
+        r"""KeystoneCheckProjectPermissionForGroupResponse
 
         The model defined in huaweicloud sdk
 

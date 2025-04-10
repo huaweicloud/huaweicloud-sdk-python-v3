@@ -31,7 +31,7 @@ class Catalog:
     }
 
     def __init__(self, name=None, create_time=None, parameters=None, description=None):
-        """Catalog
+        r"""Catalog
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Catalog:
 
     @property
     def name(self):
-        """Gets the name of this Catalog.
+        r"""Gets the name of this Catalog.
 
         DLI侧catalog映射名称。
 
@@ -75,7 +75,7 @@ class Catalog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Catalog.
+        r"""Sets the name of this Catalog.
 
         DLI侧catalog映射名称。
 
@@ -86,7 +86,7 @@ class Catalog:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Catalog.
+        r"""Gets the create_time of this Catalog.
 
         创建时间
 
@@ -97,7 +97,7 @@ class Catalog:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Catalog.
+        r"""Sets the create_time of this Catalog.
 
         创建时间
 
@@ -108,7 +108,7 @@ class Catalog:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Catalog.
+        r"""Gets the parameters of this Catalog.
 
         属性中包含type和externalCatalog
 
@@ -119,7 +119,7 @@ class Catalog:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Catalog.
+        r"""Sets the parameters of this Catalog.
 
         属性中包含type和externalCatalog
 
@@ -130,7 +130,7 @@ class Catalog:
 
     @property
     def description(self):
-        """Gets the description of this Catalog.
+        r"""Gets the description of this Catalog.
 
         描述
 
@@ -141,7 +141,7 @@ class Catalog:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Catalog.
+        r"""Sets the description of this Catalog.
 
         描述
 

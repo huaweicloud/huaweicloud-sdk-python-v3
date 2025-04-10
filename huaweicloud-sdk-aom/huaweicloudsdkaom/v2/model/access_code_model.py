@@ -31,7 +31,7 @@ class AccessCodeModel:
     }
 
     def __init__(self, access_code=None, access_code_id=None, create_at=None, status=None):
-        """AccessCodeModel
+        r"""AccessCodeModel
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AccessCodeModel:
 
     @property
     def access_code(self):
-        """Gets the access_code of this AccessCodeModel.
+        r"""Gets the access_code of this AccessCodeModel.
 
         access_code。
 
@@ -75,7 +75,7 @@ class AccessCodeModel:
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this AccessCodeModel.
+        r"""Sets the access_code of this AccessCodeModel.
 
         access_code。
 
@@ -86,7 +86,7 @@ class AccessCodeModel:
 
     @property
     def access_code_id(self):
-        """Gets the access_code_id of this AccessCodeModel.
+        r"""Gets the access_code_id of this AccessCodeModel.
 
         access_code_id。
 
@@ -97,7 +97,7 @@ class AccessCodeModel:
 
     @access_code_id.setter
     def access_code_id(self, access_code_id):
-        """Sets the access_code_id of this AccessCodeModel.
+        r"""Sets the access_code_id of this AccessCodeModel.
 
         access_code_id。
 
@@ -108,7 +108,7 @@ class AccessCodeModel:
 
     @property
     def create_at(self):
-        """Gets the create_at of this AccessCodeModel.
+        r"""Gets the create_at of this AccessCodeModel.
 
         创建时间。
 
@@ -119,7 +119,7 @@ class AccessCodeModel:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this AccessCodeModel.
+        r"""Sets the create_at of this AccessCodeModel.
 
         创建时间。
 
@@ -130,7 +130,7 @@ class AccessCodeModel:
 
     @property
     def status(self):
-        """Gets the status of this AccessCodeModel.
+        r"""Gets the status of this AccessCodeModel.
 
         状态。
 
@@ -141,7 +141,7 @@ class AccessCodeModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessCodeModel.
+        r"""Sets the status of this AccessCodeModel.
 
         状态。
 

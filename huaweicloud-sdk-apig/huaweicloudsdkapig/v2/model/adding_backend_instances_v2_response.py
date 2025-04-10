@@ -30,7 +30,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, members=None):
-        """AddingBackendInstancesV2Response
+        r"""AddingBackendInstancesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this AddingBackendInstancesV2Response.
+        r"""Gets the size of this AddingBackendInstancesV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AddingBackendInstancesV2Response.
+        r"""Sets the size of this AddingBackendInstancesV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this AddingBackendInstancesV2Response.
+        r"""Gets the total of this AddingBackendInstancesV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AddingBackendInstancesV2Response.
+        r"""Sets the total of this AddingBackendInstancesV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this AddingBackendInstancesV2Response.
+        r"""Gets the members of this AddingBackendInstancesV2Response.
 
         本次查询到的云服务器列表
 
@@ -111,7 +111,7 @@ class AddingBackendInstancesV2Response(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this AddingBackendInstancesV2Response.
+        r"""Sets the members of this AddingBackendInstancesV2Response.
 
         本次查询到的云服务器列表
 

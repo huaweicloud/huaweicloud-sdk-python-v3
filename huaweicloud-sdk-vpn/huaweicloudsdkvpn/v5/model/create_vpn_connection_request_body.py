@@ -25,7 +25,7 @@ class CreateVpnConnectionRequestBody:
     }
 
     def __init__(self, vpn_connection=None):
-        """CreateVpnConnectionRequestBody
+        r"""CreateVpnConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVpnConnectionRequestBody:
 
     @property
     def vpn_connection(self):
-        """Gets the vpn_connection of this CreateVpnConnectionRequestBody.
+        r"""Gets the vpn_connection of this CreateVpnConnectionRequestBody.
 
         :return: The vpn_connection of this CreateVpnConnectionRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnConnectionRequestBodyContent`
@@ -51,7 +51,7 @@ class CreateVpnConnectionRequestBody:
 
     @vpn_connection.setter
     def vpn_connection(self, vpn_connection):
-        """Sets the vpn_connection of this CreateVpnConnectionRequestBody.
+        r"""Sets the vpn_connection of this CreateVpnConnectionRequestBody.
 
         :param vpn_connection: The vpn_connection of this CreateVpnConnectionRequestBody.
         :type vpn_connection: :class:`huaweicloudsdkvpn.v5.CreateVpnConnectionRequestBodyContent`

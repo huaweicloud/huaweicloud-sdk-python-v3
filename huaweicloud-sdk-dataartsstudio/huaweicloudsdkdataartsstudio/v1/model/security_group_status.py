@@ -31,7 +31,7 @@ class SecurityGroupStatus:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, security_group_name=None, group_description=None):
-        """SecurityGroupStatus
+        r"""SecurityGroupStatus
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SecurityGroupStatus:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SecurityGroupStatus.
+        r"""Gets the cluster_id of this SecurityGroupStatus.
 
         集群id
 
@@ -75,7 +75,7 @@ class SecurityGroupStatus:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SecurityGroupStatus.
+        r"""Sets the cluster_id of this SecurityGroupStatus.
 
         集群id
 
@@ -86,7 +86,7 @@ class SecurityGroupStatus:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this SecurityGroupStatus.
+        r"""Gets the cluster_name of this SecurityGroupStatus.
 
         集群名称
 
@@ -97,7 +97,7 @@ class SecurityGroupStatus:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this SecurityGroupStatus.
+        r"""Sets the cluster_name of this SecurityGroupStatus.
 
         集群名称
 
@@ -108,7 +108,7 @@ class SecurityGroupStatus:
 
     @property
     def security_group_name(self):
-        """Gets the security_group_name of this SecurityGroupStatus.
+        r"""Gets the security_group_name of this SecurityGroupStatus.
 
         安全组名称
 
@@ -119,7 +119,7 @@ class SecurityGroupStatus:
 
     @security_group_name.setter
     def security_group_name(self, security_group_name):
-        """Sets the security_group_name of this SecurityGroupStatus.
+        r"""Sets the security_group_name of this SecurityGroupStatus.
 
         安全组名称
 
@@ -130,7 +130,7 @@ class SecurityGroupStatus:
 
     @property
     def group_description(self):
-        """Gets the group_description of this SecurityGroupStatus.
+        r"""Gets the group_description of this SecurityGroupStatus.
 
         风险说明
 
@@ -141,7 +141,7 @@ class SecurityGroupStatus:
 
     @group_description.setter
     def group_description(self, group_description):
-        """Sets the group_description of this SecurityGroupStatus.
+        r"""Sets the group_description of this SecurityGroupStatus.
 
         风险说明
 

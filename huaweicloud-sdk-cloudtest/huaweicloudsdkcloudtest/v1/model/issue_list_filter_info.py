@@ -33,7 +33,7 @@ class IssueListFilterInfo:
     }
 
     def __init__(self, iteration_ids=None, pi_sprints=None, subject=None, module_id=None, status_id=None):
-        """IssueListFilterInfo
+        r"""IssueListFilterInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IssueListFilterInfo:
 
     @property
     def iteration_ids(self):
-        """Gets the iteration_ids of this IssueListFilterInfo.
+        r"""Gets the iteration_ids of this IssueListFilterInfo.
 
         迭代id列表
 
@@ -82,7 +82,7 @@ class IssueListFilterInfo:
 
     @iteration_ids.setter
     def iteration_ids(self, iteration_ids):
-        """Sets the iteration_ids of this IssueListFilterInfo.
+        r"""Sets the iteration_ids of this IssueListFilterInfo.
 
         迭代id列表
 
@@ -93,7 +93,7 @@ class IssueListFilterInfo:
 
     @property
     def pi_sprints(self):
-        """Gets the pi_sprints of this IssueListFilterInfo.
+        r"""Gets the pi_sprints of this IssueListFilterInfo.
 
         pi过滤条件
 
@@ -104,7 +104,7 @@ class IssueListFilterInfo:
 
     @pi_sprints.setter
     def pi_sprints(self, pi_sprints):
-        """Sets the pi_sprints of this IssueListFilterInfo.
+        r"""Sets the pi_sprints of this IssueListFilterInfo.
 
         pi过滤条件
 
@@ -115,7 +115,7 @@ class IssueListFilterInfo:
 
     @property
     def subject(self):
-        """Gets the subject of this IssueListFilterInfo.
+        r"""Gets the subject of this IssueListFilterInfo.
 
         需求名
 
@@ -126,7 +126,7 @@ class IssueListFilterInfo:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this IssueListFilterInfo.
+        r"""Sets the subject of this IssueListFilterInfo.
 
         需求名
 
@@ -137,7 +137,7 @@ class IssueListFilterInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this IssueListFilterInfo.
+        r"""Gets the module_id of this IssueListFilterInfo.
 
         模块id
 
@@ -148,7 +148,7 @@ class IssueListFilterInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this IssueListFilterInfo.
+        r"""Sets the module_id of this IssueListFilterInfo.
 
         模块id
 
@@ -159,7 +159,7 @@ class IssueListFilterInfo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this IssueListFilterInfo.
+        r"""Gets the status_id of this IssueListFilterInfo.
 
         需求状态id
 
@@ -170,7 +170,7 @@ class IssueListFilterInfo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this IssueListFilterInfo.
+        r"""Sets the status_id of this IssueListFilterInfo.
 
         需求状态id
 

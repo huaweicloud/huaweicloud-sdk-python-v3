@@ -25,7 +25,7 @@ class CreateScaleOutPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScaleOutPolicyRequest
+        r"""CreateScaleOutPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateScaleOutPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScaleOutPolicyRequest.
+        r"""Gets the body of this CreateScaleOutPolicyRequest.
 
         :return: The body of this CreateScaleOutPolicyRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyReq`
@@ -52,7 +52,7 @@ class CreateScaleOutPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScaleOutPolicyRequest.
+        r"""Sets the body of this CreateScaleOutPolicyRequest.
 
         :param body: The body of this CreateScaleOutPolicyRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyReq`

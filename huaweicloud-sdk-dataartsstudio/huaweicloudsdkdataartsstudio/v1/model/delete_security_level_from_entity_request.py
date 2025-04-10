@@ -27,7 +27,7 @@ class DeleteSecurityLevelFromEntityRequest:
     }
 
     def __init__(self, workspace=None, guid=None):
-        """DeleteSecurityLevelFromEntityRequest
+        r"""DeleteSecurityLevelFromEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecurityLevelFromEntityRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteSecurityLevelFromEntityRequest.
+        r"""Gets the workspace of this DeleteSecurityLevelFromEntityRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DeleteSecurityLevelFromEntityRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteSecurityLevelFromEntityRequest.
+        r"""Sets the workspace of this DeleteSecurityLevelFromEntityRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DeleteSecurityLevelFromEntityRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this DeleteSecurityLevelFromEntityRequest.
+        r"""Gets the guid of this DeleteSecurityLevelFromEntityRequest.
 
         资产id
 
@@ -81,7 +81,7 @@ class DeleteSecurityLevelFromEntityRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this DeleteSecurityLevelFromEntityRequest.
+        r"""Sets the guid of this DeleteSecurityLevelFromEntityRequest.
 
         资产id
 

@@ -30,7 +30,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
     }
 
     def __init__(self, sync_task_id=None, statistic_time_type=None, statistic_datas=None):
-        """ListSyncTaskStatisticResponse
+        r"""ListSyncTaskStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this ListSyncTaskStatisticResponse.
+        r"""Gets the sync_task_id of this ListSyncTaskStatisticResponse.
 
         同步任务id
 
@@ -69,7 +69,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this ListSyncTaskStatisticResponse.
+        r"""Sets the sync_task_id of this ListSyncTaskStatisticResponse.
 
         同步任务id
 
@@ -80,7 +80,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
 
     @property
     def statistic_time_type(self):
-        """Gets the statistic_time_type of this ListSyncTaskStatisticResponse.
+        r"""Gets the statistic_time_type of this ListSyncTaskStatisticResponse.
 
         统计结果时间间隔说明描述 FIVE_MINUTES：5分钟 ONE_HOUR：1小时
 
@@ -91,7 +91,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
 
     @statistic_time_type.setter
     def statistic_time_type(self, statistic_time_type):
-        """Sets the statistic_time_type of this ListSyncTaskStatisticResponse.
+        r"""Sets the statistic_time_type of this ListSyncTaskStatisticResponse.
 
         统计结果时间间隔说明描述 FIVE_MINUTES：5分钟 ONE_HOUR：1小时
 
@@ -102,7 +102,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
 
     @property
     def statistic_datas(self):
-        """Gets the statistic_datas of this ListSyncTaskStatisticResponse.
+        r"""Gets the statistic_datas of this ListSyncTaskStatisticResponse.
 
         查询的同步任务统计结果集
 
@@ -113,7 +113,7 @@ class ListSyncTaskStatisticResponse(SdkResponse):
 
     @statistic_datas.setter
     def statistic_datas(self, statistic_datas):
-        """Sets the statistic_datas of this ListSyncTaskStatisticResponse.
+        r"""Sets the statistic_datas of this ListSyncTaskStatisticResponse.
 
         查询的同步任务统计结果集
 

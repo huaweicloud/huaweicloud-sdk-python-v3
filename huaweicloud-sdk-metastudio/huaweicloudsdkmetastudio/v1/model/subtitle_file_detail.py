@@ -33,7 +33,7 @@ class SubtitleFileDetail:
     }
 
     def __init__(self, sequence_no=None, subtitle_file_state=None, subtitle_file_download_url=None, subtitle_file_upload_url=None, generate_time=None):
-        """SubtitleFileDetail
+        r"""SubtitleFileDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SubtitleFileDetail:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this SubtitleFileDetail.
+        r"""Gets the sequence_no of this SubtitleFileDetail.
 
         剧本序号。
 
@@ -82,7 +82,7 @@ class SubtitleFileDetail:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this SubtitleFileDetail.
+        r"""Sets the sequence_no of this SubtitleFileDetail.
 
         剧本序号。
 
@@ -93,7 +93,7 @@ class SubtitleFileDetail:
 
     @property
     def subtitle_file_state(self):
-        """Gets the subtitle_file_state of this SubtitleFileDetail.
+        r"""Gets the subtitle_file_state of this SubtitleFileDetail.
 
         字幕文件生成状态。 * GENERATING：字幕文件生成中。 * GENERATE_SUCCEED：字幕文件生成成功。 * GENERATE_FAILED：字幕文件生成失败。
 
@@ -104,7 +104,7 @@ class SubtitleFileDetail:
 
     @subtitle_file_state.setter
     def subtitle_file_state(self, subtitle_file_state):
-        """Sets the subtitle_file_state of this SubtitleFileDetail.
+        r"""Sets the subtitle_file_state of this SubtitleFileDetail.
 
         字幕文件生成状态。 * GENERATING：字幕文件生成中。 * GENERATE_SUCCEED：字幕文件生成成功。 * GENERATE_FAILED：字幕文件生成失败。
 
@@ -115,7 +115,7 @@ class SubtitleFileDetail:
 
     @property
     def subtitle_file_download_url(self):
-        """Gets the subtitle_file_download_url of this SubtitleFileDetail.
+        r"""Gets the subtitle_file_download_url of this SubtitleFileDetail.
 
         字幕文件下载链接。
 
@@ -126,7 +126,7 @@ class SubtitleFileDetail:
 
     @subtitle_file_download_url.setter
     def subtitle_file_download_url(self, subtitle_file_download_url):
-        """Sets the subtitle_file_download_url of this SubtitleFileDetail.
+        r"""Sets the subtitle_file_download_url of this SubtitleFileDetail.
 
         字幕文件下载链接。
 
@@ -137,7 +137,7 @@ class SubtitleFileDetail:
 
     @property
     def subtitle_file_upload_url(self):
-        """Gets the subtitle_file_upload_url of this SubtitleFileDetail.
+        r"""Gets the subtitle_file_upload_url of this SubtitleFileDetail.
 
         字幕文件上传链接。
 
@@ -148,7 +148,7 @@ class SubtitleFileDetail:
 
     @subtitle_file_upload_url.setter
     def subtitle_file_upload_url(self, subtitle_file_upload_url):
-        """Sets the subtitle_file_upload_url of this SubtitleFileDetail.
+        r"""Sets the subtitle_file_upload_url of this SubtitleFileDetail.
 
         字幕文件上传链接。
 
@@ -159,7 +159,7 @@ class SubtitleFileDetail:
 
     @property
     def generate_time(self):
-        """Gets the generate_time of this SubtitleFileDetail.
+        r"""Gets the generate_time of this SubtitleFileDetail.
 
         字幕文件生成时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -170,7 +170,7 @@ class SubtitleFileDetail:
 
     @generate_time.setter
     def generate_time(self, generate_time):
-        """Sets the generate_time of this SubtitleFileDetail.
+        r"""Sets the generate_time of this SubtitleFileDetail.
 
         字幕文件生成时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

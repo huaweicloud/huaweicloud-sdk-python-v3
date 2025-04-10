@@ -27,7 +27,7 @@ class ListBaseRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListBaseRequest
+        r"""ListBaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListBaseRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBaseRequest.
+        r"""Gets the limit of this ListBaseRequest.
 
         limit
 
@@ -61,7 +61,7 @@ class ListBaseRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBaseRequest.
+        r"""Sets the limit of this ListBaseRequest.
 
         limit
 
@@ -72,7 +72,7 @@ class ListBaseRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBaseRequest.
+        r"""Gets the offset of this ListBaseRequest.
 
         查询数量 最小值0 最大值1000
 
@@ -83,7 +83,7 @@ class ListBaseRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBaseRequest.
+        r"""Sets the offset of this ListBaseRequest.
 
         查询数量 最小值0 最大值1000
 

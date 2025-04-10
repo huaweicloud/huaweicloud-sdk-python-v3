@@ -35,7 +35,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
     }
 
     def __init__(self, agency_domain_id=None, agency_domain_name=None, agency_name=None, agency_project_id=None, be_agency_domain_id=None, be_agency_project_id=None):
-        """CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer
+        r"""CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @property
     def agency_domain_id(self):
-        """Gets the agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Gets the agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方账号ID
 
@@ -83,7 +83,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @agency_domain_id.setter
     def agency_domain_id(self, agency_domain_id):
-        """Sets the agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Sets the agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方账号ID
 
@@ -94,7 +94,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @property
     def agency_domain_name(self):
-        """Gets the agency_domain_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Gets the agency_domain_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方账号名称
 
@@ -105,7 +105,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @agency_domain_name.setter
     def agency_domain_name(self, agency_domain_name):
-        """Sets the agency_domain_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Sets the agency_domain_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方账号名称
 
@@ -116,7 +116,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Gets the agency_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方配置的委托名称
 
@@ -127,7 +127,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Sets the agency_name of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方配置的委托名称
 
@@ -138,7 +138,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @property
     def agency_project_id(self):
-        """Gets the agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Gets the agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方项目ID
 
@@ -149,7 +149,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @agency_project_id.setter
     def agency_project_id(self, agency_project_id):
-        """Sets the agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Sets the agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         委托方项目ID
 
@@ -160,7 +160,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @property
     def be_agency_domain_id(self):
-        """Gets the be_agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Gets the be_agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         被委托方账号ID，实际配置转储的账号ID
 
@@ -171,7 +171,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @be_agency_domain_id.setter
     def be_agency_domain_id(self, be_agency_domain_id):
-        """Sets the be_agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Sets the be_agency_domain_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         被委托方账号ID，实际配置转储的账号ID
 
@@ -182,7 +182,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @property
     def be_agency_project_id(self):
-        """Gets the be_agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Gets the be_agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         被委托方项目ID，实际配置转储的账号的项目ID
 
@@ -193,7 +193,7 @@ class CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer:
 
     @be_agency_project_id.setter
     def be_agency_project_id(self, be_agency_project_id):
-        """Sets the be_agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
+        r"""Sets the be_agency_project_id of this CreateTransferResponseBodyLogTransferInfoLogAgencyTransfer.
 
         被委托方项目ID，实际配置转储的账号的项目ID
 

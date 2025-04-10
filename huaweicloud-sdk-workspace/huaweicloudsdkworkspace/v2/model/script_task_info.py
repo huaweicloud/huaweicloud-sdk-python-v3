@@ -57,7 +57,7 @@ class ScriptTaskInfo:
     }
 
     def __init__(self, id=None, task_scripts=None, command_content=None, command_type=None, resource_type=None, resource_group_id=None, resource_group_type=None, resource_ids=None, gray_resource_ids=None, pre_start=None, post_finish=None, success_num=None, failed_num=None, skip_num=None, start_time=None, end_time=None, status=None):
-        """ScriptTaskInfo
+        r"""ScriptTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ScriptTaskInfo:
 
     @property
     def id(self):
-        """Gets the id of this ScriptTaskInfo.
+        r"""Gets the id of this ScriptTaskInfo.
 
         脚本任务ID。
 
@@ -166,7 +166,7 @@ class ScriptTaskInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptTaskInfo.
+        r"""Sets the id of this ScriptTaskInfo.
 
         脚本任务ID。
 
@@ -177,7 +177,7 @@ class ScriptTaskInfo:
 
     @property
     def task_scripts(self):
-        """Gets the task_scripts of this ScriptTaskInfo.
+        r"""Gets the task_scripts of this ScriptTaskInfo.
 
         脚本列表。
 
@@ -188,7 +188,7 @@ class ScriptTaskInfo:
 
     @task_scripts.setter
     def task_scripts(self, task_scripts):
-        """Sets the task_scripts of this ScriptTaskInfo.
+        r"""Sets the task_scripts of this ScriptTaskInfo.
 
         脚本列表。
 
@@ -199,7 +199,7 @@ class ScriptTaskInfo:
 
     @property
     def command_content(self):
-        """Gets the command_content of this ScriptTaskInfo.
+        r"""Gets the command_content of this ScriptTaskInfo.
 
         执行命令时输入的命令。
 
@@ -210,7 +210,7 @@ class ScriptTaskInfo:
 
     @command_content.setter
     def command_content(self, command_content):
-        """Sets the command_content of this ScriptTaskInfo.
+        r"""Sets the command_content of this ScriptTaskInfo.
 
         执行命令时输入的命令。
 
@@ -221,7 +221,7 @@ class ScriptTaskInfo:
 
     @property
     def command_type(self):
-        """Gets the command_type of this ScriptTaskInfo.
+        r"""Gets the command_type of this ScriptTaskInfo.
 
         命令行类型(POWERSHELL/BAT/SHELL)。
 
@@ -232,7 +232,7 @@ class ScriptTaskInfo:
 
     @command_type.setter
     def command_type(self, command_type):
-        """Sets the command_type of this ScriptTaskInfo.
+        r"""Sets the command_type of this ScriptTaskInfo.
 
         命令行类型(POWERSHELL/BAT/SHELL)。
 
@@ -243,7 +243,7 @@ class ScriptTaskInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ScriptTaskInfo.
+        r"""Gets the resource_type of this ScriptTaskInfo.
 
         资源类型，如DESKTOP。
 
@@ -254,7 +254,7 @@ class ScriptTaskInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ScriptTaskInfo.
+        r"""Sets the resource_type of this ScriptTaskInfo.
 
         资源类型，如DESKTOP。
 
@@ -265,7 +265,7 @@ class ScriptTaskInfo:
 
     @property
     def resource_group_id(self):
-        """Gets the resource_group_id of this ScriptTaskInfo.
+        r"""Gets the resource_group_id of this ScriptTaskInfo.
 
         资源组ID，如桌面池ID。
 
@@ -276,7 +276,7 @@ class ScriptTaskInfo:
 
     @resource_group_id.setter
     def resource_group_id(self, resource_group_id):
-        """Sets the resource_group_id of this ScriptTaskInfo.
+        r"""Sets the resource_group_id of this ScriptTaskInfo.
 
         资源组ID，如桌面池ID。
 
@@ -287,7 +287,7 @@ class ScriptTaskInfo:
 
     @property
     def resource_group_type(self):
-        """Gets the resource_group_type of this ScriptTaskInfo.
+        r"""Gets the resource_group_type of this ScriptTaskInfo.
 
         资源组类型，如DESKTOP_POOL。
 
@@ -298,7 +298,7 @@ class ScriptTaskInfo:
 
     @resource_group_type.setter
     def resource_group_type(self, resource_group_type):
-        """Sets the resource_group_type of this ScriptTaskInfo.
+        r"""Sets the resource_group_type of this ScriptTaskInfo.
 
         资源组类型，如DESKTOP_POOL。
 
@@ -309,7 +309,7 @@ class ScriptTaskInfo:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ScriptTaskInfo.
+        r"""Gets the resource_ids of this ScriptTaskInfo.
 
         执行脚本的资源ID列表。
 
@@ -320,7 +320,7 @@ class ScriptTaskInfo:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ScriptTaskInfo.
+        r"""Sets the resource_ids of this ScriptTaskInfo.
 
         执行脚本的资源ID列表。
 
@@ -331,7 +331,7 @@ class ScriptTaskInfo:
 
     @property
     def gray_resource_ids(self):
-        """Gets the gray_resource_ids of this ScriptTaskInfo.
+        r"""Gets the gray_resource_ids of this ScriptTaskInfo.
 
         灰度批次执行资源ID列表。
 
@@ -342,7 +342,7 @@ class ScriptTaskInfo:
 
     @gray_resource_ids.setter
     def gray_resource_ids(self, gray_resource_ids):
-        """Sets the gray_resource_ids of this ScriptTaskInfo.
+        r"""Sets the gray_resource_ids of this ScriptTaskInfo.
 
         灰度批次执行资源ID列表。
 
@@ -353,7 +353,7 @@ class ScriptTaskInfo:
 
     @property
     def pre_start(self):
-        """Gets the pre_start of this ScriptTaskInfo.
+        r"""Gets the pre_start of this ScriptTaskInfo.
 
         执行脚本前置步骤。
 
@@ -364,7 +364,7 @@ class ScriptTaskInfo:
 
     @pre_start.setter
     def pre_start(self, pre_start):
-        """Sets the pre_start of this ScriptTaskInfo.
+        r"""Sets the pre_start of this ScriptTaskInfo.
 
         执行脚本前置步骤。
 
@@ -375,7 +375,7 @@ class ScriptTaskInfo:
 
     @property
     def post_finish(self):
-        """Gets the post_finish of this ScriptTaskInfo.
+        r"""Gets the post_finish of this ScriptTaskInfo.
 
         执行脚本后置步骤。
 
@@ -386,7 +386,7 @@ class ScriptTaskInfo:
 
     @post_finish.setter
     def post_finish(self, post_finish):
-        """Sets the post_finish of this ScriptTaskInfo.
+        r"""Sets the post_finish of this ScriptTaskInfo.
 
         执行脚本后置步骤。
 
@@ -397,7 +397,7 @@ class ScriptTaskInfo:
 
     @property
     def success_num(self):
-        """Gets the success_num of this ScriptTaskInfo.
+        r"""Gets the success_num of this ScriptTaskInfo.
 
         task中成功的执行记录数量。
 
@@ -408,7 +408,7 @@ class ScriptTaskInfo:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this ScriptTaskInfo.
+        r"""Sets the success_num of this ScriptTaskInfo.
 
         task中成功的执行记录数量。
 
@@ -419,7 +419,7 @@ class ScriptTaskInfo:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this ScriptTaskInfo.
+        r"""Gets the failed_num of this ScriptTaskInfo.
 
         task中失败的执行记录数量。
 
@@ -430,7 +430,7 @@ class ScriptTaskInfo:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this ScriptTaskInfo.
+        r"""Sets the failed_num of this ScriptTaskInfo.
 
         task中失败的执行记录数量。
 
@@ -441,7 +441,7 @@ class ScriptTaskInfo:
 
     @property
     def skip_num(self):
-        """Gets the skip_num of this ScriptTaskInfo.
+        r"""Gets the skip_num of this ScriptTaskInfo.
 
         task中跳过的执行记录数量。
 
@@ -452,7 +452,7 @@ class ScriptTaskInfo:
 
     @skip_num.setter
     def skip_num(self, skip_num):
-        """Sets the skip_num of this ScriptTaskInfo.
+        r"""Sets the skip_num of this ScriptTaskInfo.
 
         task中跳过的执行记录数量。
 
@@ -463,7 +463,7 @@ class ScriptTaskInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScriptTaskInfo.
+        r"""Gets the start_time of this ScriptTaskInfo.
 
         脚本执行开始时间。
 
@@ -474,7 +474,7 @@ class ScriptTaskInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScriptTaskInfo.
+        r"""Sets the start_time of this ScriptTaskInfo.
 
         脚本执行开始时间。
 
@@ -485,7 +485,7 @@ class ScriptTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScriptTaskInfo.
+        r"""Gets the end_time of this ScriptTaskInfo.
 
         脚本执行结束时间。
 
@@ -496,7 +496,7 @@ class ScriptTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScriptTaskInfo.
+        r"""Sets the end_time of this ScriptTaskInfo.
 
         脚本执行结束时间。
 
@@ -507,7 +507,7 @@ class ScriptTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this ScriptTaskInfo.
+        r"""Gets the status of this ScriptTaskInfo.
 
         任务结果。
 
@@ -518,7 +518,7 @@ class ScriptTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScriptTaskInfo.
+        r"""Sets the status of this ScriptTaskInfo.
 
         任务结果。
 

@@ -25,7 +25,7 @@ class ListOrderCouponsByOrderIdRequest:
     }
 
     def __init__(self, order_id=None):
-        """ListOrderCouponsByOrderIdRequest
+        r"""ListOrderCouponsByOrderIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListOrderCouponsByOrderIdRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListOrderCouponsByOrderIdRequest.
+        r"""Gets the order_id of this ListOrderCouponsByOrderIdRequest.
 
         订单ID。
 
@@ -53,7 +53,7 @@ class ListOrderCouponsByOrderIdRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListOrderCouponsByOrderIdRequest.
+        r"""Sets the order_id of this ListOrderCouponsByOrderIdRequest.
 
         订单ID。
 

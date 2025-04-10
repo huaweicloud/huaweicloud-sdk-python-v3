@@ -25,7 +25,7 @@ class RestorePtrReq:
     }
 
     def __init__(self, ptrdname=None):
-        """RestorePtrReq
+        r"""RestorePtrReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestorePtrReq:
 
     @property
     def ptrdname(self):
-        """Gets the ptrdname of this RestorePtrReq.
+        r"""Gets the ptrdname of this RestorePtrReq.
 
         PTR记录对应的域名。  此处值为null。
 
@@ -53,7 +53,7 @@ class RestorePtrReq:
 
     @ptrdname.setter
     def ptrdname(self, ptrdname):
-        """Sets the ptrdname of this RestorePtrReq.
+        r"""Sets the ptrdname of this RestorePtrReq.
 
         PTR记录对应的域名。  此处值为null。
 

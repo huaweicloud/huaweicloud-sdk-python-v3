@@ -23,7 +23,7 @@ class ListDisasterRecoverRequest:
     }
 
     def __init__(self):
-        """ListDisasterRecoverRequest
+        r"""ListDisasterRecoverRequest
 
         The model defined in huaweicloud sdk
 

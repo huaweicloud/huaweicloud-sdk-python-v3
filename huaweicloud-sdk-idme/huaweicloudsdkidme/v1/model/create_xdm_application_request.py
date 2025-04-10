@@ -25,7 +25,7 @@ class CreateXdmApplicationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateXdmApplicationRequest
+        r"""CreateXdmApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateXdmApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateXdmApplicationRequest.
+        r"""Gets the body of this CreateXdmApplicationRequest.
 
         :return: The body of this CreateXdmApplicationRequest.
         :rtype: :class:`huaweicloudsdkidme.v1.CreateXdmApplicationRequestBody`
@@ -52,7 +52,7 @@ class CreateXdmApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateXdmApplicationRequest.
+        r"""Sets the body of this CreateXdmApplicationRequest.
 
         :param body: The body of this CreateXdmApplicationRequest.
         :type body: :class:`huaweicloudsdkidme.v1.CreateXdmApplicationRequestBody`

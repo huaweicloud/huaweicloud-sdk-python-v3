@@ -28,7 +28,7 @@ class ListTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_array=None, total=None):
-        """ListTemplateResponse
+        r"""ListTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplateResponse(SdkResponse):
 
     @property
     def template_array(self):
-        """Gets the template_array of this ListTemplateResponse.
+        r"""Gets the template_array of this ListTemplateResponse.
 
         转码模板
 
@@ -62,7 +62,7 @@ class ListTemplateResponse(SdkResponse):
 
     @template_array.setter
     def template_array(self, template_array):
-        """Sets the template_array of this ListTemplateResponse.
+        r"""Sets the template_array of this ListTemplateResponse.
 
         转码模板
 
@@ -73,7 +73,7 @@ class ListTemplateResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTemplateResponse.
+        r"""Gets the total of this ListTemplateResponse.
 
         转码模板总数 
 
@@ -84,7 +84,7 @@ class ListTemplateResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTemplateResponse.
+        r"""Sets the total of this ListTemplateResponse.
 
         转码模板总数 
 

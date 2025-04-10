@@ -47,7 +47,7 @@ class CaseAwInfo:
     }
 
     def __init__(self, aw=None, aw_list=None, case_aw_id=None, case_uri=None, case_uri_i=None, datum_type=None, id=None, name=None, task_exec_id=None, task_id=None, testcase_id=None, transaction_list=None):
-        """CaseAwInfo
+        r"""CaseAwInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CaseAwInfo:
 
     @property
     def aw(self):
-        """Gets the aw of this CaseAwInfo.
+        r"""Gets the aw of this CaseAwInfo.
 
         aw信息
 
@@ -131,7 +131,7 @@ class CaseAwInfo:
 
     @aw.setter
     def aw(self, aw):
-        """Sets the aw of this CaseAwInfo.
+        r"""Sets the aw of this CaseAwInfo.
 
         aw信息
 
@@ -142,7 +142,7 @@ class CaseAwInfo:
 
     @property
     def aw_list(self):
-        """Gets the aw_list of this CaseAwInfo.
+        r"""Gets the aw_list of this CaseAwInfo.
 
         aw详细信息列表
 
@@ -153,7 +153,7 @@ class CaseAwInfo:
 
     @aw_list.setter
     def aw_list(self, aw_list):
-        """Sets the aw_list of this CaseAwInfo.
+        r"""Sets the aw_list of this CaseAwInfo.
 
         aw详细信息列表
 
@@ -164,7 +164,7 @@ class CaseAwInfo:
 
     @property
     def case_aw_id(self):
-        """Gets the case_aw_id of this CaseAwInfo.
+        r"""Gets the case_aw_id of this CaseAwInfo.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -175,7 +175,7 @@ class CaseAwInfo:
 
     @case_aw_id.setter
     def case_aw_id(self, case_aw_id):
-        """Sets the case_aw_id of this CaseAwInfo.
+        r"""Sets the case_aw_id of this CaseAwInfo.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -186,7 +186,7 @@ class CaseAwInfo:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this CaseAwInfo.
+        r"""Gets the case_uri of this CaseAwInfo.
 
         数据库中dc_testcase表中的case_uri
 
@@ -197,7 +197,7 @@ class CaseAwInfo:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this CaseAwInfo.
+        r"""Sets the case_uri of this CaseAwInfo.
 
         数据库中dc_testcase表中的case_uri
 
@@ -208,7 +208,7 @@ class CaseAwInfo:
 
     @property
     def case_uri_i(self):
-        """Gets the case_uri_i of this CaseAwInfo.
+        r"""Gets the case_uri_i of this CaseAwInfo.
 
         数据库中dc_testcase表中的case_uri_iteration
 
@@ -219,7 +219,7 @@ class CaseAwInfo:
 
     @case_uri_i.setter
     def case_uri_i(self, case_uri_i):
-        """Sets the case_uri_i of this CaseAwInfo.
+        r"""Sets the case_uri_i of this CaseAwInfo.
 
         数据库中dc_testcase表中的case_uri_iteration
 
@@ -230,7 +230,7 @@ class CaseAwInfo:
 
     @property
     def datum_type(self):
-        """Gets the datum_type of this CaseAwInfo.
+        r"""Gets the datum_type of this CaseAwInfo.
 
         数据类型（用例/aw/事务）
 
@@ -241,7 +241,7 @@ class CaseAwInfo:
 
     @datum_type.setter
     def datum_type(self, datum_type):
-        """Sets the datum_type of this CaseAwInfo.
+        r"""Sets the datum_type of this CaseAwInfo.
 
         数据类型（用例/aw/事务）
 
@@ -252,7 +252,7 @@ class CaseAwInfo:
 
     @property
     def id(self):
-        """Gets the id of this CaseAwInfo.
+        r"""Gets the id of this CaseAwInfo.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -263,7 +263,7 @@ class CaseAwInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CaseAwInfo.
+        r"""Sets the id of this CaseAwInfo.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -274,7 +274,7 @@ class CaseAwInfo:
 
     @property
     def name(self):
-        """Gets the name of this CaseAwInfo.
+        r"""Gets the name of this CaseAwInfo.
 
         用例名
 
@@ -285,7 +285,7 @@ class CaseAwInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaseAwInfo.
+        r"""Sets the name of this CaseAwInfo.
 
         用例名
 
@@ -296,7 +296,7 @@ class CaseAwInfo:
 
     @property
     def task_exec_id(self):
-        """Gets the task_exec_id of this CaseAwInfo.
+        r"""Gets the task_exec_id of this CaseAwInfo.
 
         数据库中dc_testcase表中的testcase_id
 
@@ -307,7 +307,7 @@ class CaseAwInfo:
 
     @task_exec_id.setter
     def task_exec_id(self, task_exec_id):
-        """Sets the task_exec_id of this CaseAwInfo.
+        r"""Sets the task_exec_id of this CaseAwInfo.
 
         数据库中dc_testcase表中的testcase_id
 
@@ -318,7 +318,7 @@ class CaseAwInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CaseAwInfo.
+        r"""Gets the task_id of this CaseAwInfo.
 
         任务ID
 
@@ -329,7 +329,7 @@ class CaseAwInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CaseAwInfo.
+        r"""Sets the task_id of this CaseAwInfo.
 
         任务ID
 
@@ -340,7 +340,7 @@ class CaseAwInfo:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this CaseAwInfo.
+        r"""Gets the testcase_id of this CaseAwInfo.
 
         数据库中dc_testcase表中的testcase_id
 
@@ -351,7 +351,7 @@ class CaseAwInfo:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this CaseAwInfo.
+        r"""Sets the testcase_id of this CaseAwInfo.
 
         数据库中dc_testcase表中的testcase_id
 
@@ -362,7 +362,7 @@ class CaseAwInfo:
 
     @property
     def transaction_list(self):
-        """Gets the transaction_list of this CaseAwInfo.
+        r"""Gets the transaction_list of this CaseAwInfo.
 
         事务详细信息列表
 
@@ -373,7 +373,7 @@ class CaseAwInfo:
 
     @transaction_list.setter
     def transaction_list(self, transaction_list):
-        """Sets the transaction_list of this CaseAwInfo.
+        r"""Sets the transaction_list of this CaseAwInfo.
 
         事务详细信息列表
 

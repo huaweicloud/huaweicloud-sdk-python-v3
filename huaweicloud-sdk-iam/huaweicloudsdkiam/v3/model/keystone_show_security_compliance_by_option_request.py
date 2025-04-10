@@ -27,7 +27,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
     }
 
     def __init__(self, domain_id=None, option=None):
-        """KeystoneShowSecurityComplianceByOptionRequest
+        r"""KeystoneShowSecurityComplianceByOptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
+        r"""Gets the domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
 
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -59,7 +59,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
+        r"""Sets the domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
 
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -70,7 +70,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
 
     @property
     def option(self):
-        """Gets the option of this KeystoneShowSecurityComplianceByOptionRequest.
+        r"""Gets the option of this KeystoneShowSecurityComplianceByOptionRequest.
 
         查询条件。该字段内容为：password_regex或password_regex_description。  password_regex：密码强度策略的正则表达式；password_regex_description：密码强度策略的描述。
 
@@ -81,7 +81,7 @@ class KeystoneShowSecurityComplianceByOptionRequest:
 
     @option.setter
     def option(self, option):
-        """Sets the option of this KeystoneShowSecurityComplianceByOptionRequest.
+        r"""Sets the option of this KeystoneShowSecurityComplianceByOptionRequest.
 
         查询条件。该字段内容为：password_regex或password_regex_description。  password_regex：密码强度策略的正则表达式；password_regex_description：密码强度策略的描述。
 

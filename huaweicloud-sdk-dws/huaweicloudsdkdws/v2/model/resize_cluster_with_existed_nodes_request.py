@@ -27,7 +27,7 @@ class ResizeClusterWithExistedNodesRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ResizeClusterWithExistedNodesRequest
+        r"""ResizeClusterWithExistedNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeClusterWithExistedNodesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ResizeClusterWithExistedNodesRequest.
+        r"""Gets the cluster_id of this ResizeClusterWithExistedNodesRequest.
 
         指定节点集群的ID
 
@@ -60,7 +60,7 @@ class ResizeClusterWithExistedNodesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ResizeClusterWithExistedNodesRequest.
+        r"""Sets the cluster_id of this ResizeClusterWithExistedNodesRequest.
 
         指定节点集群的ID
 
@@ -71,7 +71,7 @@ class ResizeClusterWithExistedNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeClusterWithExistedNodesRequest.
+        r"""Gets the body of this ResizeClusterWithExistedNodesRequest.
 
         :return: The body of this ResizeClusterWithExistedNodesRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ResizeClusterWithExistedNodesRequestBody`
@@ -80,7 +80,7 @@ class ResizeClusterWithExistedNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeClusterWithExistedNodesRequest.
+        r"""Sets the body of this ResizeClusterWithExistedNodesRequest.
 
         :param body: The body of this ResizeClusterWithExistedNodesRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ResizeClusterWithExistedNodesRequestBody`

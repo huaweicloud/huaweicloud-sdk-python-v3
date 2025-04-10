@@ -27,7 +27,7 @@ class ListResourceInstancesRequest:
     }
 
     def __init__(self, resource_instances=None, body=None):
-        """ListResourceInstancesRequest
+        r"""ListResourceInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListResourceInstancesRequest:
 
     @property
     def resource_instances(self):
-        """Gets the resource_instances of this ListResourceInstancesRequest.
+        r"""Gets the resource_instances of this ListResourceInstancesRequest.
 
         定值为resource_instances。
 
@@ -60,7 +60,7 @@ class ListResourceInstancesRequest:
 
     @resource_instances.setter
     def resource_instances(self, resource_instances):
-        """Sets the resource_instances of this ListResourceInstancesRequest.
+        r"""Sets the resource_instances of this ListResourceInstancesRequest.
 
         定值为resource_instances。
 
@@ -71,7 +71,7 @@ class ListResourceInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceInstancesRequest.
+        r"""Gets the body of this ListResourceInstancesRequest.
 
         :return: The body of this ListResourceInstancesRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequestBody`
@@ -80,7 +80,7 @@ class ListResourceInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceInstancesRequest.
+        r"""Sets the body of this ListResourceInstancesRequest.
 
         :param body: The body of this ListResourceInstancesRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequestBody`

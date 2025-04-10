@@ -31,7 +31,7 @@ class QueryStructDetailResp:
     }
 
     def __init__(self, job_id=None, error_code=None, error_message=None, struct_detail=None):
-        """QueryStructDetailResp
+        r"""QueryStructDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class QueryStructDetailResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryStructDetailResp.
+        r"""Gets the job_id of this QueryStructDetailResp.
 
         任务ID
 
@@ -74,7 +74,7 @@ class QueryStructDetailResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryStructDetailResp.
+        r"""Sets the job_id of this QueryStructDetailResp.
 
         任务ID
 
@@ -85,7 +85,7 @@ class QueryStructDetailResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryStructDetailResp.
+        r"""Gets the error_code of this QueryStructDetailResp.
 
         错误码
 
@@ -96,7 +96,7 @@ class QueryStructDetailResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryStructDetailResp.
+        r"""Sets the error_code of this QueryStructDetailResp.
 
         错误码
 
@@ -107,7 +107,7 @@ class QueryStructDetailResp:
 
     @property
     def error_message(self):
-        """Gets the error_message of this QueryStructDetailResp.
+        r"""Gets the error_message of this QueryStructDetailResp.
 
         错误信息
 
@@ -118,7 +118,7 @@ class QueryStructDetailResp:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this QueryStructDetailResp.
+        r"""Sets the error_message of this QueryStructDetailResp.
 
         错误信息
 
@@ -129,7 +129,7 @@ class QueryStructDetailResp:
 
     @property
     def struct_detail(self):
-        """Gets the struct_detail of this QueryStructDetailResp.
+        r"""Gets the struct_detail of this QueryStructDetailResp.
 
         :return: The struct_detail of this QueryStructDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`
@@ -138,7 +138,7 @@ class QueryStructDetailResp:
 
     @struct_detail.setter
     def struct_detail(self, struct_detail):
-        """Sets the struct_detail of this QueryStructDetailResp.
+        r"""Sets the struct_detail of this QueryStructDetailResp.
 
         :param struct_detail: The struct_detail of this QueryStructDetailResp.
         :type struct_detail: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`

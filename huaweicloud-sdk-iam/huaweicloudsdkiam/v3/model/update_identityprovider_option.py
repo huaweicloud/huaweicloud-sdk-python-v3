@@ -27,7 +27,7 @@ class UpdateIdentityproviderOption:
     }
 
     def __init__(self, description=None, enabled=None):
-        """UpdateIdentityproviderOption
+        r"""UpdateIdentityproviderOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateIdentityproviderOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIdentityproviderOption.
+        r"""Gets the description of this UpdateIdentityproviderOption.
 
         身份提供商描述信息。
 
@@ -61,7 +61,7 @@ class UpdateIdentityproviderOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIdentityproviderOption.
+        r"""Sets the description of this UpdateIdentityproviderOption.
 
         身份提供商描述信息。
 
@@ -72,7 +72,7 @@ class UpdateIdentityproviderOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateIdentityproviderOption.
+        r"""Gets the enabled of this UpdateIdentityproviderOption.
 
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
@@ -83,7 +83,7 @@ class UpdateIdentityproviderOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateIdentityproviderOption.
+        r"""Sets the enabled of this UpdateIdentityproviderOption.
 
         身份提供商是否启用，true为启用，false为停用，默认为false。
 

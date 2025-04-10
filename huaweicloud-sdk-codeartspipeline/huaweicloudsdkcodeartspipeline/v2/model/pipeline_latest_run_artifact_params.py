@@ -31,7 +31,7 @@ class PipelineLatestRunArtifactParams:
     }
 
     def __init__(self, version=None, branch_filter=None, package_name=None, organization=None):
-        """PipelineLatestRunArtifactParams
+        r"""PipelineLatestRunArtifactParams
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PipelineLatestRunArtifactParams:
 
     @property
     def version(self):
-        """Gets the version of this PipelineLatestRunArtifactParams.
+        r"""Gets the version of this PipelineLatestRunArtifactParams.
 
         包版本
 
@@ -75,7 +75,7 @@ class PipelineLatestRunArtifactParams:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PipelineLatestRunArtifactParams.
+        r"""Sets the version of this PipelineLatestRunArtifactParams.
 
         包版本
 
@@ -86,7 +86,7 @@ class PipelineLatestRunArtifactParams:
 
     @property
     def branch_filter(self):
-        """Gets the branch_filter of this PipelineLatestRunArtifactParams.
+        r"""Gets the branch_filter of this PipelineLatestRunArtifactParams.
 
         过滤分支
 
@@ -97,7 +97,7 @@ class PipelineLatestRunArtifactParams:
 
     @branch_filter.setter
     def branch_filter(self, branch_filter):
-        """Sets the branch_filter of this PipelineLatestRunArtifactParams.
+        r"""Sets the branch_filter of this PipelineLatestRunArtifactParams.
 
         过滤分支
 
@@ -108,7 +108,7 @@ class PipelineLatestRunArtifactParams:
 
     @property
     def package_name(self):
-        """Gets the package_name of this PipelineLatestRunArtifactParams.
+        r"""Gets the package_name of this PipelineLatestRunArtifactParams.
 
         包名称
 
@@ -119,7 +119,7 @@ class PipelineLatestRunArtifactParams:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this PipelineLatestRunArtifactParams.
+        r"""Sets the package_name of this PipelineLatestRunArtifactParams.
 
         包名称
 
@@ -130,7 +130,7 @@ class PipelineLatestRunArtifactParams:
 
     @property
     def organization(self):
-        """Gets the organization of this PipelineLatestRunArtifactParams.
+        r"""Gets the organization of this PipelineLatestRunArtifactParams.
 
         docker组织信息
 
@@ -141,7 +141,7 @@ class PipelineLatestRunArtifactParams:
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this PipelineLatestRunArtifactParams.
+        r"""Sets the organization of this PipelineLatestRunArtifactParams.
 
         docker组织信息
 

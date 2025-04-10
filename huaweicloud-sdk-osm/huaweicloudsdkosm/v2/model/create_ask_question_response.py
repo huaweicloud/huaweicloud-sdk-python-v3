@@ -34,7 +34,7 @@ class CreateAskQuestionResponse(SdkResponse):
     }
 
     def __init__(self, question=None, answers=None, error_code=None, error_msg=None, request_id=None):
-        """CreateAskQuestionResponse
+        r"""CreateAskQuestionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @property
     def question(self):
-        """Gets the question of this CreateAskQuestionResponse.
+        r"""Gets the question of this CreateAskQuestionResponse.
 
         问题
 
@@ -83,7 +83,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @question.setter
     def question(self, question):
-        """Sets the question of this CreateAskQuestionResponse.
+        r"""Sets the question of this CreateAskQuestionResponse.
 
         问题
 
@@ -94,7 +94,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @property
     def answers(self):
-        """Gets the answers of this CreateAskQuestionResponse.
+        r"""Gets the answers of this CreateAskQuestionResponse.
 
         答案列表
 
@@ -105,7 +105,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @answers.setter
     def answers(self, answers):
-        """Sets the answers of this CreateAskQuestionResponse.
+        r"""Sets the answers of this CreateAskQuestionResponse.
 
         答案列表
 
@@ -116,7 +116,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateAskQuestionResponse.
+        r"""Gets the error_code of this CreateAskQuestionResponse.
 
         错误码
 
@@ -127,7 +127,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateAskQuestionResponse.
+        r"""Sets the error_code of this CreateAskQuestionResponse.
 
         错误码
 
@@ -138,7 +138,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateAskQuestionResponse.
+        r"""Gets the error_msg of this CreateAskQuestionResponse.
 
         错误描述
 
@@ -149,7 +149,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateAskQuestionResponse.
+        r"""Sets the error_msg of this CreateAskQuestionResponse.
 
         错误描述
 
@@ -160,7 +160,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateAskQuestionResponse.
+        r"""Gets the request_id of this CreateAskQuestionResponse.
 
         请求Id
 
@@ -171,7 +171,7 @@ class CreateAskQuestionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateAskQuestionResponse.
+        r"""Sets the request_id of this CreateAskQuestionResponse.
 
         请求Id
 

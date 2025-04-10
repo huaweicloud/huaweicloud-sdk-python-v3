@@ -25,7 +25,7 @@ class UpdateOpenIdConnectConfigRequestBody:
     }
 
     def __init__(self, openid_connect_config=None):
-        """UpdateOpenIdConnectConfigRequestBody
+        r"""UpdateOpenIdConnectConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateOpenIdConnectConfigRequestBody:
 
     @property
     def openid_connect_config(self):
-        """Gets the openid_connect_config of this UpdateOpenIdConnectConfigRequestBody.
+        r"""Gets the openid_connect_config of this UpdateOpenIdConnectConfigRequestBody.
 
         :return: The openid_connect_config of this UpdateOpenIdConnectConfigRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfig`
@@ -51,7 +51,7 @@ class UpdateOpenIdConnectConfigRequestBody:
 
     @openid_connect_config.setter
     def openid_connect_config(self, openid_connect_config):
-        """Sets the openid_connect_config of this UpdateOpenIdConnectConfigRequestBody.
+        r"""Sets the openid_connect_config of this UpdateOpenIdConnectConfigRequestBody.
 
         :param openid_connect_config: The openid_connect_config of this UpdateOpenIdConnectConfigRequestBody.
         :type openid_connect_config: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfig`

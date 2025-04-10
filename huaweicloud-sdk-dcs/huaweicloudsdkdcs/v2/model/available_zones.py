@@ -33,7 +33,7 @@ class AvailableZones:
     }
 
     def __init__(self, code=None, port=None, name=None, id=None, resource_availability=None):
-        """AvailableZones
+        r"""AvailableZones
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AvailableZones:
 
     @property
     def code(self):
-        """Gets the code of this AvailableZones.
+        r"""Gets the code of this AvailableZones.
 
         可用区编码。
 
@@ -82,7 +82,7 @@ class AvailableZones:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailableZones.
+        r"""Sets the code of this AvailableZones.
 
         可用区编码。
 
@@ -93,7 +93,7 @@ class AvailableZones:
 
     @property
     def port(self):
-        """Gets the port of this AvailableZones.
+        r"""Gets the port of this AvailableZones.
 
         可用区端口号。
 
@@ -104,7 +104,7 @@ class AvailableZones:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AvailableZones.
+        r"""Sets the port of this AvailableZones.
 
         可用区端口号。
 
@@ -115,7 +115,7 @@ class AvailableZones:
 
     @property
     def name(self):
-        """Gets the name of this AvailableZones.
+        r"""Gets the name of this AvailableZones.
 
         可用区名称。
 
@@ -126,7 +126,7 @@ class AvailableZones:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AvailableZones.
+        r"""Sets the name of this AvailableZones.
 
         可用区名称。
 
@@ -137,7 +137,7 @@ class AvailableZones:
 
     @property
     def id(self):
-        """Gets the id of this AvailableZones.
+        r"""Gets the id of this AvailableZones.
 
         可用区ID。
 
@@ -148,7 +148,7 @@ class AvailableZones:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AvailableZones.
+        r"""Sets the id of this AvailableZones.
 
         可用区ID。
 
@@ -159,7 +159,7 @@ class AvailableZones:
 
     @property
     def resource_availability(self):
-        """Gets the resource_availability of this AvailableZones.
+        r"""Gets the resource_availability of this AvailableZones.
 
         分区上是否还有可用资源。 - true：还有资源。 - false：资源已售罄。 
 
@@ -170,7 +170,7 @@ class AvailableZones:
 
     @resource_availability.setter
     def resource_availability(self, resource_availability):
-        """Sets the resource_availability of this AvailableZones.
+        r"""Sets the resource_availability of this AvailableZones.
 
         分区上是否还有可用资源。 - true：还有资源。 - false：资源已售罄。 
 

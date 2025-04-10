@@ -28,7 +28,7 @@ class ListFrequencyControlRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListFrequencyControlRuleResponse
+        r"""ListFrequencyControlRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFrequencyControlRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFrequencyControlRuleResponse.
+        r"""Gets the total of this ListFrequencyControlRuleResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ListFrequencyControlRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFrequencyControlRuleResponse.
+        r"""Sets the total of this ListFrequencyControlRuleResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ListFrequencyControlRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListFrequencyControlRuleResponse.
+        r"""Gets the items of this ListFrequencyControlRuleResponse.
 
         items
 
@@ -84,7 +84,7 @@ class ListFrequencyControlRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListFrequencyControlRuleResponse.
+        r"""Sets the items of this ListFrequencyControlRuleResponse.
 
         items
 

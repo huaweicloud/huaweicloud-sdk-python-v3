@@ -29,7 +29,7 @@ class UnbindMfaDevice:
     }
 
     def __init__(self, user_id=None, authentication_code=None, serial_number=None):
-        """UnbindMfaDevice
+        r"""UnbindMfaDevice
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UnbindMfaDevice:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UnbindMfaDevice.
+        r"""Gets the user_id of this UnbindMfaDevice.
 
         待解绑MFA设备的IAM用户ID。
 
@@ -65,7 +65,7 @@ class UnbindMfaDevice:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UnbindMfaDevice.
+        r"""Sets the user_id of this UnbindMfaDevice.
 
         待解绑MFA设备的IAM用户ID。
 
@@ -76,7 +76,7 @@ class UnbindMfaDevice:
 
     @property
     def authentication_code(self):
-        """Gets the authentication_code of this UnbindMfaDevice.
+        r"""Gets the authentication_code of this UnbindMfaDevice.
 
         管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
@@ -87,7 +87,7 @@ class UnbindMfaDevice:
 
     @authentication_code.setter
     def authentication_code(self, authentication_code):
-        """Sets the authentication_code of this UnbindMfaDevice.
+        r"""Sets the authentication_code of this UnbindMfaDevice.
 
         管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
@@ -98,7 +98,7 @@ class UnbindMfaDevice:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this UnbindMfaDevice.
+        r"""Gets the serial_number of this UnbindMfaDevice.
 
         MFA设备序列号。
 
@@ -109,7 +109,7 @@ class UnbindMfaDevice:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this UnbindMfaDevice.
+        r"""Sets the serial_number of this UnbindMfaDevice.
 
         MFA设备序列号。
 

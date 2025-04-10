@@ -37,7 +37,7 @@ class CollectTrackedResourcesSummaryRequest:
     }
 
     def __init__(self, name=None, type=None, region_id=None, ep_id=None, project_id=None, tags=None, resource_deleted=None):
-        """CollectTrackedResourcesSummaryRequest
+        r"""CollectTrackedResourcesSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def name(self):
-        """Gets the name of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the name of this CollectTrackedResourcesSummaryRequest.
 
         资源名称
 
@@ -96,7 +96,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the name of this CollectTrackedResourcesSummaryRequest.
 
         资源名称
 
@@ -107,7 +107,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def type(self):
-        """Gets the type of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the type of this CollectTrackedResourcesSummaryRequest.
 
         资源类型（provider.type）
 
@@ -118,7 +118,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the type of this CollectTrackedResourcesSummaryRequest.
 
         资源类型（provider.type）
 
@@ -129,7 +129,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the region_id of this CollectTrackedResourcesSummaryRequest.
 
         区域ID列表
 
@@ -140,7 +140,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the region_id of this CollectTrackedResourcesSummaryRequest.
 
         区域ID列表
 
@@ -151,7 +151,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the ep_id of this CollectTrackedResourcesSummaryRequest.
 
         企业项目ID列表
 
@@ -162,7 +162,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the ep_id of this CollectTrackedResourcesSummaryRequest.
 
         企业项目ID列表
 
@@ -173,7 +173,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the project_id of this CollectTrackedResourcesSummaryRequest.
 
         项目ID
 
@@ -184,7 +184,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the project_id of this CollectTrackedResourcesSummaryRequest.
 
         项目ID
 
@@ -195,7 +195,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the tags of this CollectTrackedResourcesSummaryRequest.
 
         标签列表
 
@@ -206,7 +206,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the tags of this CollectTrackedResourcesSummaryRequest.
 
         标签列表
 
@@ -217,7 +217,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @property
     def resource_deleted(self):
-        """Gets the resource_deleted of this CollectTrackedResourcesSummaryRequest.
+        r"""Gets the resource_deleted of this CollectTrackedResourcesSummaryRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 
@@ -228,7 +228,7 @@ class CollectTrackedResourcesSummaryRequest:
 
     @resource_deleted.setter
     def resource_deleted(self, resource_deleted):
-        """Sets the resource_deleted of this CollectTrackedResourcesSummaryRequest.
+        r"""Sets the resource_deleted of this CollectTrackedResourcesSummaryRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 

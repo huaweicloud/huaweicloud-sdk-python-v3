@@ -36,7 +36,7 @@ class ShowOneTopicResponse(SdkResponse):
     }
 
     def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None, message_type=None):
-        """ShowOneTopicResponse
+        r"""ShowOneTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowOneTopicResponse.
+        r"""Gets the name of this ShowOneTopicResponse.
 
         Topic名称。
 
@@ -90,7 +90,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowOneTopicResponse.
+        r"""Sets the name of this ShowOneTopicResponse.
 
         Topic名称。
 
@@ -101,7 +101,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @property
     def total_read_queue_num(self):
-        """Gets the total_read_queue_num of this ShowOneTopicResponse.
+        r"""Gets the total_read_queue_num of this ShowOneTopicResponse.
 
         总读队列个数。
 
@@ -112,7 +112,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @total_read_queue_num.setter
     def total_read_queue_num(self, total_read_queue_num):
-        """Sets the total_read_queue_num of this ShowOneTopicResponse.
+        r"""Sets the total_read_queue_num of this ShowOneTopicResponse.
 
         总读队列个数。
 
@@ -123,7 +123,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @property
     def total_write_queue_num(self):
-        """Gets the total_write_queue_num of this ShowOneTopicResponse.
+        r"""Gets the total_write_queue_num of this ShowOneTopicResponse.
 
         总写队列个数。
 
@@ -134,7 +134,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @total_write_queue_num.setter
     def total_write_queue_num(self, total_write_queue_num):
-        """Sets the total_write_queue_num of this ShowOneTopicResponse.
+        r"""Sets the total_write_queue_num of this ShowOneTopicResponse.
 
         总写队列个数。
 
@@ -145,7 +145,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @property
     def permission(self):
-        """Gets the permission of this ShowOneTopicResponse.
+        r"""Gets the permission of this ShowOneTopicResponse.
 
         权限。
 
@@ -156,7 +156,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ShowOneTopicResponse.
+        r"""Sets the permission of this ShowOneTopicResponse.
 
         权限。
 
@@ -167,7 +167,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @property
     def brokers(self):
-        """Gets the brokers of this ShowOneTopicResponse.
+        r"""Gets the brokers of this ShowOneTopicResponse.
 
         关联的代理。
 
@@ -178,7 +178,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ShowOneTopicResponse.
+        r"""Sets the brokers of this ShowOneTopicResponse.
 
         关联的代理。
 
@@ -189,7 +189,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @property
     def message_type(self):
-        """Gets the message_type of this ShowOneTopicResponse.
+        r"""Gets the message_type of this ShowOneTopicResponse.
 
         消息类型（RocketMQ实例5.x版本才包含此参数）。
 
@@ -200,7 +200,7 @@ class ShowOneTopicResponse(SdkResponse):
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this ShowOneTopicResponse.
+        r"""Sets the message_type of this ShowOneTopicResponse.
 
         消息类型（RocketMQ实例5.x版本才包含此参数）。
 

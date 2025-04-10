@@ -27,7 +27,7 @@ class AreaTimeValue:
     }
 
     def __init__(self, name=None, data=None):
-        """AreaTimeValue
+        r"""AreaTimeValue
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AreaTimeValue:
 
     @property
     def name(self):
-        """Gets the name of this AreaTimeValue.
+        r"""Gets the name of this AreaTimeValue.
 
         各个大区下的具体省份、区域、国家的名称。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区下的地区/国家对应关系请参考[地区/国家代码对照表](https://support.huaweicloud.com/api-live/live_03_0049.html)。 
 
@@ -59,7 +59,7 @@ class AreaTimeValue:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AreaTimeValue.
+        r"""Sets the name of this AreaTimeValue.
 
         各个大区下的具体省份、区域、国家的名称。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区下的地区/国家对应关系请参考[地区/国家代码对照表](https://support.huaweicloud.com/api-live/live_03_0049.html)。 
 
@@ -70,7 +70,7 @@ class AreaTimeValue:
 
     @property
     def data(self):
-        """Gets the data of this AreaTimeValue.
+        r"""Gets the data of this AreaTimeValue.
 
         当前时间返回指定指标的值
 
@@ -81,7 +81,7 @@ class AreaTimeValue:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AreaTimeValue.
+        r"""Sets the data of this AreaTimeValue.
 
         当前时间返回指定指标的值
 

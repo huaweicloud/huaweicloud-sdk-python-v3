@@ -29,7 +29,7 @@ class CreateCompareTaskResult:
     }
 
     def __init__(self, compare_task_id=None, error_code=None, error_msg=None):
-        """CreateCompareTaskResult
+        r"""CreateCompareTaskResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateCompareTaskResult:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this CreateCompareTaskResult.
+        r"""Gets the compare_task_id of this CreateCompareTaskResult.
 
         对比任务创建成功后，返回对比任务的id，用于查询该对比任务的结果。
 
@@ -68,7 +68,7 @@ class CreateCompareTaskResult:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this CreateCompareTaskResult.
+        r"""Sets the compare_task_id of this CreateCompareTaskResult.
 
         对比任务创建成功后，返回对比任务的id，用于查询该对比任务的结果。
 
@@ -79,7 +79,7 @@ class CreateCompareTaskResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateCompareTaskResult.
+        r"""Gets the error_code of this CreateCompareTaskResult.
 
         错误码。
 
@@ -90,7 +90,7 @@ class CreateCompareTaskResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateCompareTaskResult.
+        r"""Sets the error_code of this CreateCompareTaskResult.
 
         错误码。
 
@@ -101,7 +101,7 @@ class CreateCompareTaskResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateCompareTaskResult.
+        r"""Gets the error_msg of this CreateCompareTaskResult.
 
         错误信息。
 
@@ -112,7 +112,7 @@ class CreateCompareTaskResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateCompareTaskResult.
+        r"""Sets the error_msg of this CreateCompareTaskResult.
 
         错误信息。
 

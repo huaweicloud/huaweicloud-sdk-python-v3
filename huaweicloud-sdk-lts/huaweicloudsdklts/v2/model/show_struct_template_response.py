@@ -48,7 +48,7 @@ class ShowStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, demo_fields=None, tag_fields=None, demo_log=None, demo_label=None, id=None, log_group_id=None, rule=None, cluster_info=None, log_stream_id=None, project_id=None, template_name=None, regex=None):
-        """ShowStructTemplateResponse
+        r"""ShowStructTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this ShowStructTemplateResponse.
+        r"""Gets the demo_fields of this ShowStructTemplateResponse.
 
         结构化字段
 
@@ -132,7 +132,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this ShowStructTemplateResponse.
+        r"""Sets the demo_fields of this ShowStructTemplateResponse.
 
         结构化字段
 
@@ -143,7 +143,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def tag_fields(self):
-        """Gets the tag_fields of this ShowStructTemplateResponse.
+        r"""Gets the tag_fields of this ShowStructTemplateResponse.
 
         关键词详细信息
 
@@ -154,7 +154,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @tag_fields.setter
     def tag_fields(self, tag_fields):
-        """Sets the tag_fields of this ShowStructTemplateResponse.
+        r"""Sets the tag_fields of this ShowStructTemplateResponse.
 
         关键词详细信息
 
@@ -165,7 +165,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def demo_log(self):
-        """Gets the demo_log of this ShowStructTemplateResponse.
+        r"""Gets the demo_log of this ShowStructTemplateResponse.
 
         示例日志
 
@@ -176,7 +176,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @demo_log.setter
     def demo_log(self, demo_log):
-        """Sets the demo_log of this ShowStructTemplateResponse.
+        r"""Sets the demo_log of this ShowStructTemplateResponse.
 
         示例日志
 
@@ -187,7 +187,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def demo_label(self):
-        """Gets the demo_label of this ShowStructTemplateResponse.
+        r"""Gets the demo_label of this ShowStructTemplateResponse.
 
         测试
 
@@ -198,7 +198,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @demo_label.setter
     def demo_label(self, demo_label):
-        """Sets the demo_label of this ShowStructTemplateResponse.
+        r"""Sets the demo_label of this ShowStructTemplateResponse.
 
         测试
 
@@ -209,7 +209,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowStructTemplateResponse.
+        r"""Gets the id of this ShowStructTemplateResponse.
 
         id
 
@@ -220,7 +220,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowStructTemplateResponse.
+        r"""Sets the id of this ShowStructTemplateResponse.
 
         id
 
@@ -231,7 +231,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ShowStructTemplateResponse.
+        r"""Gets the log_group_id of this ShowStructTemplateResponse.
 
         日志组ID
 
@@ -242,7 +242,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ShowStructTemplateResponse.
+        r"""Sets the log_group_id of this ShowStructTemplateResponse.
 
         日志组ID
 
@@ -253,7 +253,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this ShowStructTemplateResponse.
+        r"""Gets the rule of this ShowStructTemplateResponse.
 
         :return: The rule of this ShowStructTemplateResponse.
         :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
@@ -262,7 +262,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ShowStructTemplateResponse.
+        r"""Sets the rule of this ShowStructTemplateResponse.
 
         :param rule: The rule of this ShowStructTemplateResponse.
         :type rule: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
@@ -271,7 +271,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def cluster_info(self):
-        """Gets the cluster_info of this ShowStructTemplateResponse.
+        r"""Gets the cluster_info of this ShowStructTemplateResponse.
 
         :return: The cluster_info of this ShowStructTemplateResponse.
         :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`
@@ -280,7 +280,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @cluster_info.setter
     def cluster_info(self, cluster_info):
-        """Sets the cluster_info of this ShowStructTemplateResponse.
+        r"""Sets the cluster_info of this ShowStructTemplateResponse.
 
         :param cluster_info: The cluster_info of this ShowStructTemplateResponse.
         :type cluster_info: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`
@@ -289,7 +289,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ShowStructTemplateResponse.
+        r"""Gets the log_stream_id of this ShowStructTemplateResponse.
 
         日志流ID
 
@@ -300,7 +300,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ShowStructTemplateResponse.
+        r"""Sets the log_stream_id of this ShowStructTemplateResponse.
 
         日志流ID
 
@@ -311,7 +311,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowStructTemplateResponse.
+        r"""Gets the project_id of this ShowStructTemplateResponse.
 
         项目ID
 
@@ -322,7 +322,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowStructTemplateResponse.
+        r"""Sets the project_id of this ShowStructTemplateResponse.
 
         项目ID
 
@@ -333,7 +333,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowStructTemplateResponse.
+        r"""Gets the template_name of this ShowStructTemplateResponse.
 
         测试
 
@@ -344,7 +344,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowStructTemplateResponse.
+        r"""Sets the template_name of this ShowStructTemplateResponse.
 
         测试
 
@@ -355,7 +355,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @property
     def regex(self):
-        """Gets the regex of this ShowStructTemplateResponse.
+        r"""Gets the regex of this ShowStructTemplateResponse.
 
         为了兼容前台数据格式
 
@@ -366,7 +366,7 @@ class ShowStructTemplateResponse(SdkResponse):
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this ShowStructTemplateResponse.
+        r"""Sets the regex of this ShowStructTemplateResponse.
 
         为了兼容前台数据格式
 

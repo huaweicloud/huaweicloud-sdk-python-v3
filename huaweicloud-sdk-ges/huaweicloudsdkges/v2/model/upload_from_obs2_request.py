@@ -25,7 +25,7 @@ class UploadFromObs2Request:
     }
 
     def __init__(self, body=None):
-        """UploadFromObs2Request
+        r"""UploadFromObs2Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadFromObs2Request:
 
     @property
     def body(self):
-        """Gets the body of this UploadFromObs2Request.
+        r"""Gets the body of this UploadFromObs2Request.
 
         :return: The body of this UploadFromObs2Request.
         :rtype: :class:`huaweicloudsdkges.v2.UploadFromObsReq`
@@ -52,7 +52,7 @@ class UploadFromObs2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadFromObs2Request.
+        r"""Sets the body of this UploadFromObs2Request.
 
         :param body: The body of this UploadFromObs2Request.
         :type body: :class:`huaweicloudsdkges.v2.UploadFromObsReq`

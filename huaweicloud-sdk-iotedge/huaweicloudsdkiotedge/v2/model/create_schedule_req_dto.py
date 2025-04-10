@@ -41,7 +41,7 @@ class CreateScheduleReqDTO:
     }
 
     def __init__(self, schedule_id=None, name=None, cycle_type=None, enabled=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
-        """CreateScheduleReqDTO
+        r"""CreateScheduleReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateScheduleReqDTO:
 
     @property
     def schedule_id(self):
-        """Gets the schedule_id of this CreateScheduleReqDTO.
+        r"""Gets the schedule_id of this CreateScheduleReqDTO.
 
         调度计划id，租户下唯一，选填如不填则随机生成
 
@@ -104,7 +104,7 @@ class CreateScheduleReqDTO:
 
     @schedule_id.setter
     def schedule_id(self, schedule_id):
-        """Sets the schedule_id of this CreateScheduleReqDTO.
+        r"""Sets the schedule_id of this CreateScheduleReqDTO.
 
         调度计划id，租户下唯一，选填如不填则随机生成
 
@@ -115,7 +115,7 @@ class CreateScheduleReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateScheduleReqDTO.
+        r"""Gets the name of this CreateScheduleReqDTO.
 
         调度计划名称
 
@@ -126,7 +126,7 @@ class CreateScheduleReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateScheduleReqDTO.
+        r"""Sets the name of this CreateScheduleReqDTO.
 
         调度计划名称
 
@@ -137,7 +137,7 @@ class CreateScheduleReqDTO:
 
     @property
     def cycle_type(self):
-        """Gets the cycle_type of this CreateScheduleReqDTO.
+        r"""Gets the cycle_type of this CreateScheduleReqDTO.
 
         调度计划的循环类型，once表示在start_time执行，end_time结束；daliy表示start_time-end_time之间每天都执行
 
@@ -148,7 +148,7 @@ class CreateScheduleReqDTO:
 
     @cycle_type.setter
     def cycle_type(self, cycle_type):
-        """Sets the cycle_type of this CreateScheduleReqDTO.
+        r"""Sets the cycle_type of this CreateScheduleReqDTO.
 
         调度计划的循环类型，once表示在start_time执行，end_time结束；daliy表示start_time-end_time之间每天都执行
 
@@ -159,7 +159,7 @@ class CreateScheduleReqDTO:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateScheduleReqDTO.
+        r"""Gets the enabled of this CreateScheduleReqDTO.
 
         调度计划是否生效
 
@@ -170,7 +170,7 @@ class CreateScheduleReqDTO:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateScheduleReqDTO.
+        r"""Sets the enabled of this CreateScheduleReqDTO.
 
         调度计划是否生效
 
@@ -181,7 +181,7 @@ class CreateScheduleReqDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateScheduleReqDTO.
+        r"""Gets the start_time of this CreateScheduleReqDTO.
 
         调度计划起始时间，毫秒级别的时间戳，可选值，不填表示立即执行
 
@@ -192,7 +192,7 @@ class CreateScheduleReqDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateScheduleReqDTO.
+        r"""Sets the start_time of this CreateScheduleReqDTO.
 
         调度计划起始时间，毫秒级别的时间戳，可选值，不填表示立即执行
 
@@ -203,7 +203,7 @@ class CreateScheduleReqDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateScheduleReqDTO.
+        r"""Gets the end_time of this CreateScheduleReqDTO.
 
         调度计划结束时间，毫秒级别的时间戳
 
@@ -214,7 +214,7 @@ class CreateScheduleReqDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateScheduleReqDTO.
+        r"""Sets the end_time of this CreateScheduleReqDTO.
 
         调度计划结束时间，毫秒级别的时间戳
 
@@ -225,7 +225,7 @@ class CreateScheduleReqDTO:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateScheduleReqDTO.
+        r"""Gets the priority of this CreateScheduleReqDTO.
 
         调度计划优先级。
 
@@ -236,7 +236,7 @@ class CreateScheduleReqDTO:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateScheduleReqDTO.
+        r"""Sets the priority of this CreateScheduleReqDTO.
 
         调度计划优先级。
 
@@ -247,7 +247,7 @@ class CreateScheduleReqDTO:
 
     @property
     def daily(self):
-        """Gets the daily of this CreateScheduleReqDTO.
+        r"""Gets the daily of this CreateScheduleReqDTO.
 
         :return: The daily of this CreateScheduleReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DailyDto`
@@ -256,7 +256,7 @@ class CreateScheduleReqDTO:
 
     @daily.setter
     def daily(self, daily):
-        """Sets the daily of this CreateScheduleReqDTO.
+        r"""Sets the daily of this CreateScheduleReqDTO.
 
         :param daily: The daily of this CreateScheduleReqDTO.
         :type daily: :class:`huaweicloudsdkiotedge.v2.DailyDto`
@@ -265,7 +265,7 @@ class CreateScheduleReqDTO:
 
     @property
     def tasks(self):
-        """Gets the tasks of this CreateScheduleReqDTO.
+        r"""Gets the tasks of this CreateScheduleReqDTO.
 
         调度任务信息
 
@@ -276,7 +276,7 @@ class CreateScheduleReqDTO:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this CreateScheduleReqDTO.
+        r"""Sets the tasks of this CreateScheduleReqDTO.
 
         调度任务信息
 

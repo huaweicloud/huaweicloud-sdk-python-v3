@@ -25,7 +25,7 @@ class PrivateModuleVersionPrimitiveTypeHolder:
     }
 
     def __init__(self, module_version=None):
-        """PrivateModuleVersionPrimitiveTypeHolder
+        r"""PrivateModuleVersionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateModuleVersionPrimitiveTypeHolder:
 
     @property
     def module_version(self):
-        """Gets the module_version of this PrivateModuleVersionPrimitiveTypeHolder.
+        r"""Gets the module_version of this PrivateModuleVersionPrimitiveTypeHolder.
 
         模块的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -54,7 +54,7 @@ class PrivateModuleVersionPrimitiveTypeHolder:
 
     @module_version.setter
     def module_version(self, module_version):
-        """Sets the module_version of this PrivateModuleVersionPrimitiveTypeHolder.
+        r"""Sets the module_version of this PrivateModuleVersionPrimitiveTypeHolder.
 
         模块的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义
 

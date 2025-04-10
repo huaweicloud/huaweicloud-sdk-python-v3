@@ -27,7 +27,7 @@ class ErrorReasonResp:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ErrorReasonResp
+        r"""ErrorReasonResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ErrorReasonResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ErrorReasonResp.
+        r"""Gets the error_code of this ErrorReasonResp.
 
         迁移失败的错误码。
 
@@ -61,7 +61,7 @@ class ErrorReasonResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ErrorReasonResp.
+        r"""Sets the error_code of this ErrorReasonResp.
 
         迁移失败的错误码。
 
@@ -72,7 +72,7 @@ class ErrorReasonResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ErrorReasonResp.
+        r"""Gets the error_msg of this ErrorReasonResp.
 
         迁移失败的原因。
 
@@ -83,7 +83,7 @@ class ErrorReasonResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorReasonResp.
+        r"""Sets the error_msg of this ErrorReasonResp.
 
         迁移失败的原因。
 

@@ -25,7 +25,7 @@ class ShowGenerationTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowGenerationTaskResultRequest
+        r"""ShowGenerationTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowGenerationTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowGenerationTaskResultRequest.
+        r"""Gets the task_id of this ShowGenerationTaskResultRequest.
 
         分子生成任务ID
 
@@ -53,7 +53,7 @@ class ShowGenerationTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowGenerationTaskResultRequest.
+        r"""Sets the task_id of this ShowGenerationTaskResultRequest.
 
         分子生成任务ID
 

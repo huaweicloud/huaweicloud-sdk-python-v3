@@ -28,7 +28,7 @@ class ListConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, das_conn_info_list=None):
-        """ListConnectionsResponse
+        r"""ListConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListConnectionsResponse.
+        r"""Gets the total_record of this ListConnectionsResponse.
 
         总记录数目
 
@@ -62,7 +62,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListConnectionsResponse.
+        r"""Sets the total_record of this ListConnectionsResponse.
 
         总记录数目
 
@@ -73,7 +73,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def das_conn_info_list(self):
-        """Gets the das_conn_info_list of this ListConnectionsResponse.
+        r"""Gets the das_conn_info_list of this ListConnectionsResponse.
 
         连接信息列表
 
@@ -84,7 +84,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @das_conn_info_list.setter
     def das_conn_info_list(self, das_conn_info_list):
-        """Sets the das_conn_info_list of this ListConnectionsResponse.
+        r"""Sets the das_conn_info_list of this ListConnectionsResponse.
 
         连接信息列表
 

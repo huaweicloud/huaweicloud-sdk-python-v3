@@ -65,7 +65,7 @@ class Server:
     }
 
     def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None):
-        """Server
+        r"""Server
 
         The model defined in huaweicloud sdk
 
@@ -180,7 +180,7 @@ class Server:
 
     @property
     def id(self):
-        """Gets the id of this Server.
+        r"""Gets the id of this Server.
 
         源端在SMS数据库中的ID
 
@@ -191,7 +191,7 @@ class Server:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Server.
+        r"""Sets the id of this Server.
 
         源端在SMS数据库中的ID
 
@@ -202,7 +202,7 @@ class Server:
 
     @property
     def ip(self):
-        """Gets the ip of this Server.
+        r"""Gets the ip of this Server.
 
         源端服务器IP，注册源端时必选，更新非必选
 
@@ -213,7 +213,7 @@ class Server:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Server.
+        r"""Sets the ip of this Server.
 
         源端服务器IP，注册源端时必选，更新非必选
 
@@ -224,7 +224,7 @@ class Server:
 
     @property
     def name(self):
-        """Gets the name of this Server.
+        r"""Gets the name of this Server.
 
         用来区分不同源端服务器的名称
 
@@ -235,7 +235,7 @@ class Server:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Server.
+        r"""Sets the name of this Server.
 
         用来区分不同源端服务器的名称
 
@@ -246,7 +246,7 @@ class Server:
 
     @property
     def hostname(self):
-        """Gets the hostname of this Server.
+        r"""Gets the hostname of this Server.
 
         源端主机名，注册源端必选，更新非必选
 
@@ -257,7 +257,7 @@ class Server:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this Server.
+        r"""Sets the hostname of this Server.
 
         源端主机名，注册源端必选，更新非必选
 
@@ -268,7 +268,7 @@ class Server:
 
     @property
     def os_type(self):
-        """Gets the os_type of this Server.
+        r"""Gets the os_type of this Server.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -279,7 +279,7 @@ class Server:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this Server.
+        r"""Sets the os_type of this Server.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -290,7 +290,7 @@ class Server:
 
     @property
     def os_version(self):
-        """Gets the os_version of this Server.
+        r"""Gets the os_version of this Server.
 
         操作系统版本，注册必选，更新非必选
 
@@ -301,7 +301,7 @@ class Server:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this Server.
+        r"""Sets the os_version of this Server.
 
         操作系统版本，注册必选，更新非必选
 
@@ -312,7 +312,7 @@ class Server:
 
     @property
     def firmware(self):
-        """Gets the firmware of this Server.
+        r"""Gets the firmware of this Server.
 
         源端服务器启动类型，如BIOS或者UEFI
 
@@ -323,7 +323,7 @@ class Server:
 
     @firmware.setter
     def firmware(self, firmware):
-        """Sets the firmware of this Server.
+        r"""Sets the firmware of this Server.
 
         源端服务器启动类型，如BIOS或者UEFI
 
@@ -334,7 +334,7 @@ class Server:
 
     @property
     def cpu_quantity(self):
-        """Gets the cpu_quantity of this Server.
+        r"""Gets the cpu_quantity of this Server.
 
         CPU个数，单位vCPU
 
@@ -345,7 +345,7 @@ class Server:
 
     @cpu_quantity.setter
     def cpu_quantity(self, cpu_quantity):
-        """Sets the cpu_quantity of this Server.
+        r"""Sets the cpu_quantity of this Server.
 
         CPU个数，单位vCPU
 
@@ -356,7 +356,7 @@ class Server:
 
     @property
     def memory(self):
-        """Gets the memory of this Server.
+        r"""Gets the memory of this Server.
 
         内存大小，单位MB
 
@@ -367,7 +367,7 @@ class Server:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this Server.
+        r"""Sets the memory of this Server.
 
         内存大小，单位MB
 
@@ -378,7 +378,7 @@ class Server:
 
     @property
     def btrfs_list(self):
-        """Gets the btrfs_list of this Server.
+        r"""Gets the btrfs_list of this Server.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -389,7 +389,7 @@ class Server:
 
     @btrfs_list.setter
     def btrfs_list(self, btrfs_list):
-        """Sets the btrfs_list of this Server.
+        r"""Sets the btrfs_list of this Server.
 
         Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
 
@@ -400,7 +400,7 @@ class Server:
 
     @property
     def networks(self):
-        """Gets the networks of this Server.
+        r"""Gets the networks of this Server.
 
         源端服务器的网卡信息
 
@@ -411,7 +411,7 @@ class Server:
 
     @networks.setter
     def networks(self, networks):
-        """Sets the networks of this Server.
+        r"""Sets the networks of this Server.
 
         源端服务器的网卡信息
 
@@ -422,7 +422,7 @@ class Server:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Server.
+        r"""Gets the domain_id of this Server.
 
         租户的domainId
 
@@ -433,7 +433,7 @@ class Server:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Server.
+        r"""Sets the domain_id of this Server.
 
         租户的domainId
 
@@ -444,7 +444,7 @@ class Server:
 
     @property
     def has_rsync(self):
-        """Gets the has_rsync of this Server.
+        r"""Gets the has_rsync of this Server.
 
         是否安装rsync组件，Linux系统此参数为必选
 
@@ -455,7 +455,7 @@ class Server:
 
     @has_rsync.setter
     def has_rsync(self, has_rsync):
-        """Sets the has_rsync of this Server.
+        r"""Sets the has_rsync of this Server.
 
         是否安装rsync组件，Linux系统此参数为必选
 
@@ -466,7 +466,7 @@ class Server:
 
     @property
     def paravirtualization(self):
-        """Gets the paravirtualization of this Server.
+        r"""Gets the paravirtualization of this Server.
 
         Linux场景必选，源端是否是半虚拟化
 
@@ -477,7 +477,7 @@ class Server:
 
     @paravirtualization.setter
     def paravirtualization(self, paravirtualization):
-        """Sets the paravirtualization of this Server.
+        r"""Sets the paravirtualization of this Server.
 
         Linux场景必选，源端是否是半虚拟化
 
@@ -488,7 +488,7 @@ class Server:
 
     @property
     def raw_devices(self):
-        """Gets the raw_devices of this Server.
+        r"""Gets the raw_devices of this Server.
 
         Linux必选，裸设备列表
 
@@ -499,7 +499,7 @@ class Server:
 
     @raw_devices.setter
     def raw_devices(self, raw_devices):
-        """Sets the raw_devices of this Server.
+        r"""Sets the raw_devices of this Server.
 
         Linux必选，裸设备列表
 
@@ -510,7 +510,7 @@ class Server:
 
     @property
     def driver_files(self):
-        """Gets the driver_files of this Server.
+        r"""Gets the driver_files of this Server.
 
         Windows 必选，是否缺少驱动文件
 
@@ -521,7 +521,7 @@ class Server:
 
     @driver_files.setter
     def driver_files(self, driver_files):
-        """Sets the driver_files of this Server.
+        r"""Sets the driver_files of this Server.
 
         Windows 必选，是否缺少驱动文件
 
@@ -532,7 +532,7 @@ class Server:
 
     @property
     def system_services(self):
-        """Gets the system_services of this Server.
+        r"""Gets the system_services of this Server.
 
         Windows必选，是否存在不正常服务
 
@@ -543,7 +543,7 @@ class Server:
 
     @system_services.setter
     def system_services(self, system_services):
-        """Sets the system_services of this Server.
+        r"""Sets the system_services of this Server.
 
         Windows必选，是否存在不正常服务
 
@@ -554,7 +554,7 @@ class Server:
 
     @property
     def account_rights(self):
-        """Gets the account_rights of this Server.
+        r"""Gets the account_rights of this Server.
 
         Windows必选，权限是否满足要求
 
@@ -565,7 +565,7 @@ class Server:
 
     @account_rights.setter
     def account_rights(self, account_rights):
-        """Sets the account_rights of this Server.
+        r"""Sets the account_rights of this Server.
 
         Windows必选，权限是否满足要求
 
@@ -576,7 +576,7 @@ class Server:
 
     @property
     def boot_loader(self):
-        """Gets the boot_loader of this Server.
+        r"""Gets the boot_loader of this Server.
 
         Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
 
@@ -587,7 +587,7 @@ class Server:
 
     @boot_loader.setter
     def boot_loader(self, boot_loader):
-        """Sets the boot_loader of this Server.
+        r"""Sets the boot_loader of this Server.
 
         Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
 
@@ -598,7 +598,7 @@ class Server:
 
     @property
     def system_dir(self):
-        """Gets the system_dir of this Server.
+        r"""Gets the system_dir of this Server.
 
         Windows必选，系统目录
 
@@ -609,7 +609,7 @@ class Server:
 
     @system_dir.setter
     def system_dir(self, system_dir):
-        """Sets the system_dir of this Server.
+        r"""Sets the system_dir of this Server.
 
         Windows必选，系统目录
 
@@ -620,7 +620,7 @@ class Server:
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this Server.
+        r"""Gets the volume_groups of this Server.
 
         Linux必选，如果没有卷组，输入[]
 
@@ -631,7 +631,7 @@ class Server:
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this Server.
+        r"""Sets the volume_groups of this Server.
 
         Linux必选，如果没有卷组，输入[]
 

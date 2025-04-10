@@ -27,7 +27,7 @@ class TmsMatch:
     }
 
     def __init__(self, key=None, value=None):
-        """TmsMatch
+        r"""TmsMatch
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TmsMatch:
 
     @property
     def key(self):
-        """Gets the key of this TmsMatch.
+        r"""Gets the key of this TmsMatch.
 
         键。第一期限定为resource_name,后续扩展。
 
@@ -59,7 +59,7 @@ class TmsMatch:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TmsMatch.
+        r"""Sets the key of this TmsMatch.
 
         键。第一期限定为resource_name,后续扩展。
 
@@ -70,7 +70,7 @@ class TmsMatch:
 
     @property
     def value(self):
-        """Gets the value of this TmsMatch.
+        r"""Gets the value of this TmsMatch.
 
         值。
 
@@ -81,7 +81,7 @@ class TmsMatch:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TmsMatch.
+        r"""Sets the value of this TmsMatch.
 
         值。
 

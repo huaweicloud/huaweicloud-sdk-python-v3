@@ -69,7 +69,7 @@ class EcnItem:
     }
 
     def __init__(self, id=None, project_id=None, domain_id=None, name=None, description=None, bandwidth_size=None, type=None, area_id=None, region_id=None, ecn_asn=None, ieg_asn=None, vni=None, enterprise_router_ids=None, vpc_ids=None, bind_ieg_count=None, enterprise_project_id=None, status=None, frozen_effect=None, hub_enable=None, created_at=None, updated_at=None, order_id=None, product_id=None):
-        """EcnItem
+        r"""EcnItem
 
         The model defined in huaweicloud sdk
 
@@ -195,7 +195,7 @@ class EcnItem:
 
     @property
     def id(self):
-        """Gets the id of this EcnItem.
+        r"""Gets the id of this EcnItem.
 
         企业连接网络ID
 
@@ -206,7 +206,7 @@ class EcnItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EcnItem.
+        r"""Sets the id of this EcnItem.
 
         企业连接网络ID
 
@@ -217,7 +217,7 @@ class EcnItem:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EcnItem.
+        r"""Gets the project_id of this EcnItem.
 
         项目ID
 
@@ -228,7 +228,7 @@ class EcnItem:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EcnItem.
+        r"""Sets the project_id of this EcnItem.
 
         项目ID
 
@@ -239,7 +239,7 @@ class EcnItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EcnItem.
+        r"""Gets the domain_id of this EcnItem.
 
         租户账号ID
 
@@ -250,7 +250,7 @@ class EcnItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EcnItem.
+        r"""Sets the domain_id of this EcnItem.
 
         租户账号ID
 
@@ -261,7 +261,7 @@ class EcnItem:
 
     @property
     def name(self):
-        """Gets the name of this EcnItem.
+        r"""Gets the name of this EcnItem.
 
         企业连接网络名字
 
@@ -272,7 +272,7 @@ class EcnItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EcnItem.
+        r"""Sets the name of this EcnItem.
 
         企业连接网络名字
 
@@ -283,7 +283,7 @@ class EcnItem:
 
     @property
     def description(self):
-        """Gets the description of this EcnItem.
+        r"""Gets the description of this EcnItem.
 
         描述信息
 
@@ -294,7 +294,7 @@ class EcnItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EcnItem.
+        r"""Sets the description of this EcnItem.
 
         描述信息
 
@@ -305,7 +305,7 @@ class EcnItem:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this EcnItem.
+        r"""Gets the bandwidth_size of this EcnItem.
 
         带宽
 
@@ -316,7 +316,7 @@ class EcnItem:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this EcnItem.
+        r"""Sets the bandwidth_size of this EcnItem.
 
         带宽
 
@@ -327,7 +327,7 @@ class EcnItem:
 
     @property
     def type(self):
-        """Gets the type of this EcnItem.
+        r"""Gets the type of this EcnItem.
 
         企业连接网络类型
 
@@ -338,7 +338,7 @@ class EcnItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EcnItem.
+        r"""Sets the type of this EcnItem.
 
         企业连接网络类型
 
@@ -349,7 +349,7 @@ class EcnItem:
 
     @property
     def area_id(self):
-        """Gets the area_id of this EcnItem.
+        r"""Gets the area_id of this EcnItem.
 
         大区ID
 
@@ -360,7 +360,7 @@ class EcnItem:
 
     @area_id.setter
     def area_id(self, area_id):
-        """Sets the area_id of this EcnItem.
+        r"""Sets the area_id of this EcnItem.
 
         大区ID
 
@@ -371,7 +371,7 @@ class EcnItem:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EcnItem.
+        r"""Gets the region_id of this EcnItem.
 
         区域ID
 
@@ -382,7 +382,7 @@ class EcnItem:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EcnItem.
+        r"""Sets the region_id of this EcnItem.
 
         区域ID
 
@@ -393,7 +393,7 @@ class EcnItem:
 
     @property
     def ecn_asn(self):
-        """Gets the ecn_asn of this EcnItem.
+        r"""Gets the ecn_asn of this EcnItem.
 
         企业连接网络AS号
 
@@ -404,7 +404,7 @@ class EcnItem:
 
     @ecn_asn.setter
     def ecn_asn(self, ecn_asn):
-        """Sets the ecn_asn of this EcnItem.
+        r"""Sets the ecn_asn of this EcnItem.
 
         企业连接网络AS号
 
@@ -415,7 +415,7 @@ class EcnItem:
 
     @property
     def ieg_asn(self):
-        """Gets the ieg_asn of this EcnItem.
+        r"""Gets the ieg_asn of this EcnItem.
 
         智能企业网关AS号
 
@@ -426,7 +426,7 @@ class EcnItem:
 
     @ieg_asn.setter
     def ieg_asn(self, ieg_asn):
-        """Sets the ieg_asn of this EcnItem.
+        r"""Sets the ieg_asn of this EcnItem.
 
         智能企业网关AS号
 
@@ -437,7 +437,7 @@ class EcnItem:
 
     @property
     def vni(self):
-        """Gets the vni of this EcnItem.
+        r"""Gets the vni of this EcnItem.
 
         VXLAN网络标识
 
@@ -448,7 +448,7 @@ class EcnItem:
 
     @vni.setter
     def vni(self, vni):
-        """Sets the vni of this EcnItem.
+        r"""Sets the vni of this EcnItem.
 
         VXLAN网络标识
 
@@ -459,7 +459,7 @@ class EcnItem:
 
     @property
     def enterprise_router_ids(self):
-        """Gets the enterprise_router_ids of this EcnItem.
+        r"""Gets the enterprise_router_ids of this EcnItem.
 
         企业路由器列表
 
@@ -470,7 +470,7 @@ class EcnItem:
 
     @enterprise_router_ids.setter
     def enterprise_router_ids(self, enterprise_router_ids):
-        """Sets the enterprise_router_ids of this EcnItem.
+        r"""Sets the enterprise_router_ids of this EcnItem.
 
         企业路由器列表
 
@@ -481,7 +481,7 @@ class EcnItem:
 
     @property
     def vpc_ids(self):
-        """Gets the vpc_ids of this EcnItem.
+        r"""Gets the vpc_ids of this EcnItem.
 
         虚拟私有云列表
 
@@ -492,7 +492,7 @@ class EcnItem:
 
     @vpc_ids.setter
     def vpc_ids(self, vpc_ids):
-        """Sets the vpc_ids of this EcnItem.
+        r"""Sets the vpc_ids of this EcnItem.
 
         虚拟私有云列表
 
@@ -503,7 +503,7 @@ class EcnItem:
 
     @property
     def bind_ieg_count(self):
-        """Gets the bind_ieg_count of this EcnItem.
+        r"""Gets the bind_ieg_count of this EcnItem.
 
         绑定智能企业网关数量
 
@@ -514,7 +514,7 @@ class EcnItem:
 
     @bind_ieg_count.setter
     def bind_ieg_count(self, bind_ieg_count):
-        """Sets the bind_ieg_count of this EcnItem.
+        r"""Sets the bind_ieg_count of this EcnItem.
 
         绑定智能企业网关数量
 
@@ -525,7 +525,7 @@ class EcnItem:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EcnItem.
+        r"""Gets the enterprise_project_id of this EcnItem.
 
         企业项目ID
 
@@ -536,7 +536,7 @@ class EcnItem:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EcnItem.
+        r"""Sets the enterprise_project_id of this EcnItem.
 
         企业项目ID
 
@@ -547,7 +547,7 @@ class EcnItem:
 
     @property
     def status(self):
-        """Gets the status of this EcnItem.
+        r"""Gets the status of this EcnItem.
 
         状态
 
@@ -558,7 +558,7 @@ class EcnItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EcnItem.
+        r"""Sets the status of this EcnItem.
 
         状态
 
@@ -569,7 +569,7 @@ class EcnItem:
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this EcnItem.
+        r"""Gets the frozen_effect of this EcnItem.
 
         冻结效果
 
@@ -580,7 +580,7 @@ class EcnItem:
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this EcnItem.
+        r"""Sets the frozen_effect of this EcnItem.
 
         冻结效果
 
@@ -591,7 +591,7 @@ class EcnItem:
 
     @property
     def hub_enable(self):
-        """Gets the hub_enable of this EcnItem.
+        r"""Gets the hub_enable of this EcnItem.
 
         分支互联开关
 
@@ -602,7 +602,7 @@ class EcnItem:
 
     @hub_enable.setter
     def hub_enable(self, hub_enable):
-        """Sets the hub_enable of this EcnItem.
+        r"""Sets the hub_enable of this EcnItem.
 
         分支互联开关
 
@@ -613,7 +613,7 @@ class EcnItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EcnItem.
+        r"""Gets the created_at of this EcnItem.
 
         创建时间
 
@@ -624,7 +624,7 @@ class EcnItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EcnItem.
+        r"""Sets the created_at of this EcnItem.
 
         创建时间
 
@@ -635,7 +635,7 @@ class EcnItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EcnItem.
+        r"""Gets the updated_at of this EcnItem.
 
         更新时间
 
@@ -646,7 +646,7 @@ class EcnItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EcnItem.
+        r"""Sets the updated_at of this EcnItem.
 
         更新时间
 
@@ -657,7 +657,7 @@ class EcnItem:
 
     @property
     def order_id(self):
-        """Gets the order_id of this EcnItem.
+        r"""Gets the order_id of this EcnItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -668,7 +668,7 @@ class EcnItem:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this EcnItem.
+        r"""Sets the order_id of this EcnItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -679,7 +679,7 @@ class EcnItem:
 
     @property
     def product_id(self):
-        """Gets the product_id of this EcnItem.
+        r"""Gets the product_id of this EcnItem.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -690,7 +690,7 @@ class EcnItem:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this EcnItem.
+        r"""Sets the product_id of this EcnItem.
 
         包周期场景下购买的订单号，按需场景下为空
 

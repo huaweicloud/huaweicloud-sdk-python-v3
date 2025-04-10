@@ -41,7 +41,7 @@ class ListHostClustersRequest:
     }
 
     def __init__(self, project_id=None, name=None, os=None, page_index=None, page_size=None, sort_field=None, sort_type=None, is_proxy_mode=None, slave_cluster_id=None):
-        """ListHostClustersRequest
+        r"""ListHostClustersRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListHostClustersRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListHostClustersRequest.
+        r"""Gets the project_id of this ListHostClustersRequest.
 
         项目id
 
@@ -109,7 +109,7 @@ class ListHostClustersRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListHostClustersRequest.
+        r"""Sets the project_id of this ListHostClustersRequest.
 
         项目id
 
@@ -120,7 +120,7 @@ class ListHostClustersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHostClustersRequest.
+        r"""Gets the name of this ListHostClustersRequest.
 
         主机集群模糊查询信息
 
@@ -131,7 +131,7 @@ class ListHostClustersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHostClustersRequest.
+        r"""Sets the name of this ListHostClustersRequest.
 
         主机集群模糊查询信息
 
@@ -142,7 +142,7 @@ class ListHostClustersRequest:
 
     @property
     def os(self):
-        """Gets the os of this ListHostClustersRequest.
+        r"""Gets the os of this ListHostClustersRequest.
 
         操作系统：windows|linux
 
@@ -153,7 +153,7 @@ class ListHostClustersRequest:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ListHostClustersRequest.
+        r"""Sets the os of this ListHostClustersRequest.
 
         操作系统：windows|linux
 
@@ -164,7 +164,7 @@ class ListHostClustersRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListHostClustersRequest.
+        r"""Gets the page_index of this ListHostClustersRequest.
 
         页码数
 
@@ -175,7 +175,7 @@ class ListHostClustersRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListHostClustersRequest.
+        r"""Sets the page_index of this ListHostClustersRequest.
 
         页码数
 
@@ -186,7 +186,7 @@ class ListHostClustersRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListHostClustersRequest.
+        r"""Gets the page_size of this ListHostClustersRequest.
 
         每页显示的条目数量，默认为10
 
@@ -197,7 +197,7 @@ class ListHostClustersRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListHostClustersRequest.
+        r"""Sets the page_size of this ListHostClustersRequest.
 
         每页显示的条目数量，默认为10
 
@@ -208,7 +208,7 @@ class ListHostClustersRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListHostClustersRequest.
+        r"""Gets the sort_field of this ListHostClustersRequest.
 
         排序字段：nick_name|name|owner_name|create_time，不传使用默认排序
 
@@ -219,7 +219,7 @@ class ListHostClustersRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListHostClustersRequest.
+        r"""Sets the sort_field of this ListHostClustersRequest.
 
         排序字段：nick_name|name|owner_name|create_time，不传使用默认排序
 
@@ -230,7 +230,7 @@ class ListHostClustersRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListHostClustersRequest.
+        r"""Gets the sort_type of this ListHostClustersRequest.
 
         排序方式：DESC、ASC，默认为DESC
 
@@ -241,7 +241,7 @@ class ListHostClustersRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListHostClustersRequest.
+        r"""Sets the sort_type of this ListHostClustersRequest.
 
         排序方式：DESC、ASC，默认为DESC
 
@@ -252,7 +252,7 @@ class ListHostClustersRequest:
 
     @property
     def is_proxy_mode(self):
-        """Gets the is_proxy_mode of this ListHostClustersRequest.
+        r"""Gets the is_proxy_mode of this ListHostClustersRequest.
 
         是否为代理机
 
@@ -263,7 +263,7 @@ class ListHostClustersRequest:
 
     @is_proxy_mode.setter
     def is_proxy_mode(self, is_proxy_mode):
-        """Sets the is_proxy_mode of this ListHostClustersRequest.
+        r"""Sets the is_proxy_mode of this ListHostClustersRequest.
 
         是否为代理机
 
@@ -274,7 +274,7 @@ class ListHostClustersRequest:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this ListHostClustersRequest.
+        r"""Gets the slave_cluster_id of this ListHostClustersRequest.
 
         自定义资源池id
 
@@ -285,7 +285,7 @@ class ListHostClustersRequest:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this ListHostClustersRequest.
+        r"""Sets the slave_cluster_id of this ListHostClustersRequest.
 
         自定义资源池id
 

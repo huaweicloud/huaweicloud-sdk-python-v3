@@ -31,7 +31,7 @@ class RouteOption:
     }
 
     def __init__(self, type=None, destination=None, nexthop=None, description=None):
-        """RouteOption
+        r"""RouteOption
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RouteOption:
 
     @property
     def type(self):
-        """Gets the type of this RouteOption.
+        r"""Gets the type of this RouteOption.
 
         路由的类型  取值范围：     1）ecs：弹性云服务器     2）vip：虚拟IP
 
@@ -72,7 +72,7 @@ class RouteOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RouteOption.
+        r"""Sets the type of this RouteOption.
 
         路由的类型  取值范围：     1）ecs：弹性云服务器     2）vip：虚拟IP
 
@@ -83,7 +83,7 @@ class RouteOption:
 
     @property
     def destination(self):
-        """Gets the destination of this RouteOption.
+        r"""Gets the destination of this RouteOption.
 
         路由的目的网段  约束：合法的CIDR格式, 目的地址不可更新
 
@@ -94,7 +94,7 @@ class RouteOption:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this RouteOption.
+        r"""Sets the destination of this RouteOption.
 
         路由的目的网段  约束：合法的CIDR格式, 目的地址不可更新
 
@@ -105,7 +105,7 @@ class RouteOption:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this RouteOption.
+        r"""Gets the nexthop of this RouteOption.
 
         路由下一跳对象的ID  取值范围：     1）当type为ecs时，传入ecs实例ID；     2）当type为vip时，取值为vip的ip地址；
 
@@ -116,7 +116,7 @@ class RouteOption:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this RouteOption.
+        r"""Sets the nexthop of this RouteOption.
 
         路由下一跳对象的ID  取值范围：     1）当type为ecs时，传入ecs实例ID；     2）当type为vip时，取值为vip的ip地址；
 
@@ -127,7 +127,7 @@ class RouteOption:
 
     @property
     def description(self):
-        """Gets the description of this RouteOption.
+        r"""Gets the description of this RouteOption.
 
         路由的描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -138,7 +138,7 @@ class RouteOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RouteOption.
+        r"""Sets the description of this RouteOption.
 
         路由的描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 

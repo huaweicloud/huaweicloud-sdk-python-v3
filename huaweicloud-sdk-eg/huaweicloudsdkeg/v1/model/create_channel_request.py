@@ -27,7 +27,7 @@ class CreateChannelRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateChannelRequest
+        r"""CreateChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateChannelRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateChannelRequest.
+        r"""Gets the enterprise_project_id of this CreateChannelRequest.
 
         创建通道时所使用的企业项目id
 
@@ -61,7 +61,7 @@ class CreateChannelRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateChannelRequest.
+        r"""Sets the enterprise_project_id of this CreateChannelRequest.
 
         创建通道时所使用的企业项目id
 
@@ -72,7 +72,7 @@ class CreateChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateChannelRequest.
+        r"""Gets the body of this CreateChannelRequest.
 
         :return: The body of this CreateChannelRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.ChannelCreateReq`
@@ -81,7 +81,7 @@ class CreateChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateChannelRequest.
+        r"""Sets the body of this CreateChannelRequest.
 
         :param body: The body of this CreateChannelRequest.
         :type body: :class:`huaweicloudsdkeg.v1.ChannelCreateReq`

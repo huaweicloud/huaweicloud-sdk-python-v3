@@ -33,7 +33,7 @@ class Path:
     }
 
     def __init__(self, id=None, status=None, agent_id=None, dir_path=None, exclude_paths=None):
-        """Path
+        r"""Path
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Path:
 
     @property
     def id(self):
-        """Gets the id of this Path.
+        r"""Gets the id of this Path.
 
         路径ID
 
@@ -82,7 +82,7 @@ class Path:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Path.
+        r"""Sets the id of this Path.
 
         路径ID
 
@@ -93,7 +93,7 @@ class Path:
 
     @property
     def status(self):
-        """Gets the status of this Path.
+        r"""Gets the status of this Path.
 
         路径状态，有available和remove两种状态
 
@@ -104,7 +104,7 @@ class Path:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Path.
+        r"""Sets the status of this Path.
 
         路径状态，有available和remove两种状态
 
@@ -115,7 +115,7 @@ class Path:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this Path.
+        r"""Gets the agent_id of this Path.
 
         该路径所属于的客户端ID
 
@@ -126,7 +126,7 @@ class Path:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this Path.
+        r"""Sets the agent_id of this Path.
 
         该路径所属于的客户端ID
 
@@ -137,7 +137,7 @@ class Path:
 
     @property
     def dir_path(self):
-        """Gets the dir_path of this Path.
+        r"""Gets the dir_path of this Path.
 
         路径详情
 
@@ -148,7 +148,7 @@ class Path:
 
     @dir_path.setter
     def dir_path(self, dir_path):
-        """Sets the dir_path of this Path.
+        r"""Sets the dir_path of this Path.
 
         路径详情
 
@@ -159,7 +159,7 @@ class Path:
 
     @property
     def exclude_paths(self):
-        """Gets the exclude_paths of this Path.
+        r"""Gets the exclude_paths of this Path.
 
         排除目录列表，多个路径之间以英文逗号分隔 > 该特性目前处于公测阶段，部分region可能无法使用。 
 
@@ -170,7 +170,7 @@ class Path:
 
     @exclude_paths.setter
     def exclude_paths(self, exclude_paths):
-        """Sets the exclude_paths of this Path.
+        r"""Sets the exclude_paths of this Path.
 
         排除目录列表，多个路径之间以英文逗号分隔 > 该特性目前处于公测阶段，部分region可能无法使用。 
 

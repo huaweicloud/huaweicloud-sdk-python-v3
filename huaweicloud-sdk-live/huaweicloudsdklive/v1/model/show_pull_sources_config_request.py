@@ -25,7 +25,7 @@ class ShowPullSourcesConfigRequest:
     }
 
     def __init__(self, play_domain=None):
-        """ShowPullSourcesConfigRequest
+        r"""ShowPullSourcesConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPullSourcesConfigRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ShowPullSourcesConfigRequest.
+        r"""Gets the play_domain of this ShowPullSourcesConfigRequest.
 
         播放域名
 
@@ -53,7 +53,7 @@ class ShowPullSourcesConfigRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ShowPullSourcesConfigRequest.
+        r"""Sets the play_domain of this ShowPullSourcesConfigRequest.
 
         播放域名
 

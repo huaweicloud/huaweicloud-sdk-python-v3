@@ -26,7 +26,7 @@ class GetKvResponse(SdkResponse):
     }
 
     def __init__(self, kv_doc=None):
-        """GetKvResponse
+        r"""GetKvResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetKvResponse(SdkResponse):
 
     @property
     def kv_doc(self):
-        """Gets the kv_doc of this GetKvResponse.
+        r"""Gets the kv_doc of this GetKvResponse.
 
         对kv_doc有效。 > 内容字段：主键字段+投影字段或者全部字段。
 
@@ -55,7 +55,7 @@ class GetKvResponse(SdkResponse):
 
     @kv_doc.setter
     def kv_doc(self, kv_doc):
-        """Sets the kv_doc of this GetKvResponse.
+        r"""Sets the kv_doc of this GetKvResponse.
 
         对kv_doc有效。 > 内容字段：主键字段+投影字段或者全部字段。
 

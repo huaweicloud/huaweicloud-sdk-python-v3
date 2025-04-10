@@ -27,7 +27,7 @@ class TaskSourceUsageEstimate:
     }
 
     def __init__(self, cpu=None, memory=None):
-        """TaskSourceUsageEstimate
+        r"""TaskSourceUsageEstimate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TaskSourceUsageEstimate:
 
     @property
     def cpu(self):
-        """Gets the cpu of this TaskSourceUsageEstimate.
+        r"""Gets the cpu of this TaskSourceUsageEstimate.
 
         cpu消耗
 
@@ -59,7 +59,7 @@ class TaskSourceUsageEstimate:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this TaskSourceUsageEstimate.
+        r"""Sets the cpu of this TaskSourceUsageEstimate.
 
         cpu消耗
 
@@ -70,7 +70,7 @@ class TaskSourceUsageEstimate:
 
     @property
     def memory(self):
-        """Gets the memory of this TaskSourceUsageEstimate.
+        r"""Gets the memory of this TaskSourceUsageEstimate.
 
         内存消耗
 
@@ -81,7 +81,7 @@ class TaskSourceUsageEstimate:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this TaskSourceUsageEstimate.
+        r"""Sets the memory of this TaskSourceUsageEstimate.
 
         内存消耗
 

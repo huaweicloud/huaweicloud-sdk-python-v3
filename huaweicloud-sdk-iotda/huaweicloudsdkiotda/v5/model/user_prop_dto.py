@@ -27,7 +27,7 @@ class UserPropDTO:
     }
 
     def __init__(self, prop_key=None, prop_value=None):
-        """UserPropDTO
+        r"""UserPropDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserPropDTO:
 
     @property
     def prop_key(self):
-        """Gets the prop_key of this UserPropDTO.
+        r"""Gets the prop_key of this UserPropDTO.
 
         **参数说明**：用户自定义属性键。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -61,7 +61,7 @@ class UserPropDTO:
 
     @prop_key.setter
     def prop_key(self, prop_key):
-        """Sets the prop_key of this UserPropDTO.
+        r"""Sets the prop_key of this UserPropDTO.
 
         **参数说明**：用户自定义属性键。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -72,7 +72,7 @@ class UserPropDTO:
 
     @property
     def prop_value(self):
-        """Gets the prop_value of this UserPropDTO.
+        r"""Gets the prop_value of this UserPropDTO.
 
         **参数说明**：用户自定义属性值。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -83,7 +83,7 @@ class UserPropDTO:
 
     @prop_value.setter
     def prop_value(self, prop_value):
-        """Sets the prop_value of this UserPropDTO.
+        r"""Sets the prop_value of this UserPropDTO.
 
         **参数说明**：用户自定义属性值。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 

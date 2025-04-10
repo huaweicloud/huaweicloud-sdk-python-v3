@@ -39,7 +39,7 @@ class KvsClient(Client, KvsClientInterface):
         return client_builder
 
     def create_table(self, request):
-        """创建表
+        r"""创建表
 
         在指定仓内创建表，表名在仓内唯一；创建表时，指定主键模板及本地二级索引模板及全局二级索引模板。创建表时，如果仓不存在，将会自动创建仓。
         
@@ -106,7 +106,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def delete_table(self, request):
-        """删除表
+        r"""删除表
 
         删除指定表及所有kv文档，表标记为删除后，空间不会立刻释放，并发的读写访问仍需继续完成。
         
@@ -173,7 +173,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def describe_table(self, request):
-        """查询表
+        r"""查询表
 
         指定仓查询表属性，如容量，规模，配额。
         
@@ -240,7 +240,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def list_store(self, request):
-        """列举仓
+        r"""列举仓
 
         一个账户下可以创建最多25个仓，每个仓可以创建最多100个store，响应中一次性返回所有仓名称。
         
@@ -305,7 +305,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def list_table(self, request):
-        """列举表
+        r"""列举表
 
         指定仓列举创建的所有表。
         
@@ -372,7 +372,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def batch_write_kv(self, request):
-        """批量写请求
+        r"""批量写请求
 
         批量写请求，其中可以携带一或多个表的不同kv的写操作，上传kv/删除kv。
         
@@ -439,7 +439,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def delete_kv(self, request):
-        """删除单个kv
+        r"""删除单个kv
 
         指定表，指定主键，删除该文档；允许指定条件执行。
         
@@ -506,7 +506,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def get_kv(self, request):
-        """查询单个kv
+        r"""查询单个kv
 
         下载一个kv文档的全部内容，或者部分字段的内容。
         
@@ -573,7 +573,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def put_kv(self, request):
-        """上传单个kv
+        r"""上传单个kv
 
         指定表，新建kv或覆盖已有kv，且满足表的key schema描述；允许指定条件执行。
         
@@ -640,7 +640,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def scan_kv(self, request):
-        """扫描所有kv
+        r"""扫描所有kv
 
         指定表，扫描表下所有kv；允许指定过滤条件。
         
@@ -707,7 +707,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def scan_skey_kv(self, request):
-        """扫描分区键内kv
+        r"""扫描分区键内kv
 
         指定表及分区键，携带条件查询kv；允许指定过滤条件。
         
@@ -774,7 +774,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def update_kv(self, request):
-        """更新单个kv
+        r"""更新单个kv
 
         指定表，指定主键，指定更新文档的部分内容，如果是自描述文档，指定字段名；如果是二进制文档，指定偏移位置和长度；允许指定条件执行。
         
@@ -841,7 +841,7 @@ class KvsClient(Client, KvsClientInterface):
         return http_info
 
     def check_health(self, request):
-        """网络信道健康检查
+        r"""网络信道健康检查
 
         网络信道健康检查，返回response未抛出网络异常即为成功
         

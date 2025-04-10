@@ -27,7 +27,7 @@ class PublicMatch:
     }
 
     def __init__(self, key=None, value=None):
-        """PublicMatch
+        r"""PublicMatch
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PublicMatch:
 
     @property
     def key(self):
-        """Gets the key of this PublicMatch.
+        r"""Gets the key of this PublicMatch.
 
         键。限定为resource_name。
 
@@ -59,7 +59,7 @@ class PublicMatch:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PublicMatch.
+        r"""Sets the key of this PublicMatch.
 
         键。限定为resource_name。
 
@@ -70,7 +70,7 @@ class PublicMatch:
 
     @property
     def value(self):
-        """Gets the value of this PublicMatch.
+        r"""Gets the value of this PublicMatch.
 
         值。每个值最大长度255个unicode字符。
 
@@ -81,7 +81,7 @@ class PublicMatch:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PublicMatch.
+        r"""Sets the value of this PublicMatch.
 
         值。每个值最大长度255个unicode字符。
 

@@ -25,7 +25,7 @@ class CountEipAvailableResourcesRequest:
     }
 
     def __init__(self, body=None):
-        """CountEipAvailableResourcesRequest
+        r"""CountEipAvailableResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountEipAvailableResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountEipAvailableResourcesRequest.
+        r"""Gets the body of this CountEipAvailableResourcesRequest.
 
         :return: The body of this CountEipAvailableResourcesRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.EipResourcesAvailableV3RequestBody`
@@ -52,7 +52,7 @@ class CountEipAvailableResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountEipAvailableResourcesRequest.
+        r"""Sets the body of this CountEipAvailableResourcesRequest.
 
         :param body: The body of this CountEipAvailableResourcesRequest.
         :type body: :class:`huaweicloudsdkeip.v3.EipResourcesAvailableV3RequestBody`

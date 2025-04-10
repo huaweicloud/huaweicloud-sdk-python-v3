@@ -43,7 +43,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, action=None, status=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         每页条数
 
@@ -117,7 +117,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         每页条数
 
@@ -128,7 +128,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         分页起始点
 
@@ -139,7 +139,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         分页起始点
 
@@ -150,7 +150,7 @@ class ListJobsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListJobsRequest.
+        r"""Gets the marker of this ListJobsRequest.
 
         分页起始点
 
@@ -161,7 +161,7 @@ class ListJobsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListJobsRequest.
+        r"""Sets the marker of this ListJobsRequest.
 
         分页起始点
 
@@ -172,7 +172,7 @@ class ListJobsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListJobsRequest.
+        r"""Gets the page_reverse of this ListJobsRequest.
 
         翻页方向
 
@@ -183,7 +183,7 @@ class ListJobsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListJobsRequest.
+        r"""Sets the page_reverse of this ListJobsRequest.
 
         翻页方向
 
@@ -194,7 +194,7 @@ class ListJobsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListJobsRequest.
+        r"""Gets the fields of this ListJobsRequest.
 
         :return: The fields of this ListJobsRequest.
         :rtype: list[str]
@@ -203,7 +203,7 @@ class ListJobsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListJobsRequest.
+        r"""Sets the fields of this ListJobsRequest.
 
         :param fields: The fields of this ListJobsRequest.
         :type fields: list[str]
@@ -212,7 +212,7 @@ class ListJobsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListJobsRequest.
+        r"""Gets the sort_key of this ListJobsRequest.
 
         按照sort_key指定的字段排序
 
@@ -223,7 +223,7 @@ class ListJobsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListJobsRequest.
+        r"""Sets the sort_key of this ListJobsRequest.
 
         按照sort_key指定的字段排序
 
@@ -234,7 +234,7 @@ class ListJobsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListJobsRequest.
+        r"""Gets the sort_dir of this ListJobsRequest.
 
         排序的方向，倒序或者正序
 
@@ -245,7 +245,7 @@ class ListJobsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListJobsRequest.
+        r"""Sets the sort_dir of this ListJobsRequest.
 
         排序的方向，倒序或者正序
 
@@ -256,7 +256,7 @@ class ListJobsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListJobsRequest.
+        r"""Gets the id of this ListJobsRequest.
 
         :return: The id of this ListJobsRequest.
         :rtype: list[str]
@@ -265,7 +265,7 @@ class ListJobsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListJobsRequest.
+        r"""Sets the id of this ListJobsRequest.
 
         :param id: The id of this ListJobsRequest.
         :type id: list[str]
@@ -274,7 +274,7 @@ class ListJobsRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListJobsRequest.
+        r"""Gets the action of this ListJobsRequest.
 
         :return: The action of this ListJobsRequest.
         :rtype: list[str]
@@ -283,7 +283,7 @@ class ListJobsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListJobsRequest.
+        r"""Sets the action of this ListJobsRequest.
 
         :param action: The action of this ListJobsRequest.
         :type action: list[str]
@@ -292,7 +292,7 @@ class ListJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobsRequest.
+        r"""Gets the status of this ListJobsRequest.
 
         :return: The status of this ListJobsRequest.
         :rtype: list[str]
@@ -301,7 +301,7 @@ class ListJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobsRequest.
+        r"""Sets the status of this ListJobsRequest.
 
         :param status: The status of this ListJobsRequest.
         :type status: list[str]

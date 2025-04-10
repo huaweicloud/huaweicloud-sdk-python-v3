@@ -25,7 +25,7 @@ class RemoveHeadersConfig:
     }
 
     def __init__(self, configs=None):
-        """RemoveHeadersConfig
+        r"""RemoveHeadersConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveHeadersConfig:
 
     @property
     def configs(self):
-        """Gets the configs of this RemoveHeadersConfig.
+        r"""Gets the configs of this RemoveHeadersConfig.
 
         参数解释：要移除的请求头参数列表。
 
@@ -53,7 +53,7 @@ class RemoveHeadersConfig:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this RemoveHeadersConfig.
+        r"""Sets the configs of this RemoveHeadersConfig.
 
         参数解释：要移除的请求头参数列表。
 

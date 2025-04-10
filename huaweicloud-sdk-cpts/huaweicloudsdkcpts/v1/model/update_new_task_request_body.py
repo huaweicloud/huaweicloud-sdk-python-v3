@@ -33,7 +33,7 @@ class UpdateNewTaskRequestBody:
     }
 
     def __init__(self, name=None, parallel=None, project_id=None, operate_mode=None, case_id_list=None):
-        """UpdateNewTaskRequestBody
+        r"""UpdateNewTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class UpdateNewTaskRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateNewTaskRequestBody.
+        r"""Gets the name of this UpdateNewTaskRequestBody.
 
         名称
 
@@ -77,7 +77,7 @@ class UpdateNewTaskRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNewTaskRequestBody.
+        r"""Sets the name of this UpdateNewTaskRequestBody.
 
         名称
 
@@ -88,7 +88,7 @@ class UpdateNewTaskRequestBody:
 
     @property
     def parallel(self):
-        """Gets the parallel of this UpdateNewTaskRequestBody.
+        r"""Gets the parallel of this UpdateNewTaskRequestBody.
 
         并行状态（表示任务执行时用例是否并行执行；true：并行执行，false：串行执行）
 
@@ -99,7 +99,7 @@ class UpdateNewTaskRequestBody:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this UpdateNewTaskRequestBody.
+        r"""Sets the parallel of this UpdateNewTaskRequestBody.
 
         并行状态（表示任务执行时用例是否并行执行；true：并行执行，false：串行执行）
 
@@ -110,7 +110,7 @@ class UpdateNewTaskRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateNewTaskRequestBody.
+        r"""Gets the project_id of this UpdateNewTaskRequestBody.
 
         工程id
 
@@ -121,7 +121,7 @@ class UpdateNewTaskRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateNewTaskRequestBody.
+        r"""Sets the project_id of this UpdateNewTaskRequestBody.
 
         工程id
 
@@ -132,7 +132,7 @@ class UpdateNewTaskRequestBody:
 
     @property
     def operate_mode(self):
-        """Gets the operate_mode of this UpdateNewTaskRequestBody.
+        r"""Gets the operate_mode of this UpdateNewTaskRequestBody.
 
         任务模式（兼容旧版接口保留字段，0：时长模式，1：次数模式，2：混合模式；此处请传固定值：2）
 
@@ -143,7 +143,7 @@ class UpdateNewTaskRequestBody:
 
     @operate_mode.setter
     def operate_mode(self, operate_mode):
-        """Sets the operate_mode of this UpdateNewTaskRequestBody.
+        r"""Sets the operate_mode of this UpdateNewTaskRequestBody.
 
         任务模式（兼容旧版接口保留字段，0：时长模式，1：次数模式，2：混合模式；此处请传固定值：2）
 
@@ -154,7 +154,7 @@ class UpdateNewTaskRequestBody:
 
     @property
     def case_id_list(self):
-        """Gets the case_id_list of this UpdateNewTaskRequestBody.
+        r"""Gets the case_id_list of this UpdateNewTaskRequestBody.
 
         关联的用例id集合
 
@@ -165,7 +165,7 @@ class UpdateNewTaskRequestBody:
 
     @case_id_list.setter
     def case_id_list(self, case_id_list):
-        """Sets the case_id_list of this UpdateNewTaskRequestBody.
+        r"""Sets the case_id_list of this UpdateNewTaskRequestBody.
 
         关联的用例id集合
 

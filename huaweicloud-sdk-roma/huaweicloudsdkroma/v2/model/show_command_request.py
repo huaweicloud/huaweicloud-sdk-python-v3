@@ -29,7 +29,7 @@ class ShowCommandRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None):
-        """ShowCommandRequest
+        r"""ShowCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowCommandRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowCommandRequest.
+        r"""Gets the instance_id of this ShowCommandRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ShowCommandRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowCommandRequest.
+        r"""Sets the instance_id of this ShowCommandRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ShowCommandRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowCommandRequest.
+        r"""Gets the service_id of this ShowCommandRequest.
 
         服务ID
 
@@ -87,7 +87,7 @@ class ShowCommandRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowCommandRequest.
+        r"""Sets the service_id of this ShowCommandRequest.
 
         服务ID
 
@@ -98,7 +98,7 @@ class ShowCommandRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this ShowCommandRequest.
+        r"""Gets the command_id of this ShowCommandRequest.
 
         命令ID
 
@@ -109,7 +109,7 @@ class ShowCommandRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ShowCommandRequest.
+        r"""Sets the command_id of this ShowCommandRequest.
 
         命令ID
 

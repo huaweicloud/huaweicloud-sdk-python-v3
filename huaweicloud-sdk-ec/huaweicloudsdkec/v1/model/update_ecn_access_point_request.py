@@ -29,7 +29,7 @@ class UpdateEcnAccessPointRequest:
     }
 
     def __init__(self, ecn_id=None, access_point_id=None, body=None):
-        """UpdateEcnAccessPointRequest
+        r"""UpdateEcnAccessPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEcnAccessPointRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this UpdateEcnAccessPointRequest.
+        r"""Gets the ecn_id of this UpdateEcnAccessPointRequest.
 
         企业连接网络ID
 
@@ -66,7 +66,7 @@ class UpdateEcnAccessPointRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this UpdateEcnAccessPointRequest.
+        r"""Sets the ecn_id of this UpdateEcnAccessPointRequest.
 
         企业连接网络ID
 
@@ -77,7 +77,7 @@ class UpdateEcnAccessPointRequest:
 
     @property
     def access_point_id(self):
-        """Gets the access_point_id of this UpdateEcnAccessPointRequest.
+        r"""Gets the access_point_id of this UpdateEcnAccessPointRequest.
 
         企业连接网络接入点ID
 
@@ -88,7 +88,7 @@ class UpdateEcnAccessPointRequest:
 
     @access_point_id.setter
     def access_point_id(self, access_point_id):
-        """Sets the access_point_id of this UpdateEcnAccessPointRequest.
+        r"""Sets the access_point_id of this UpdateEcnAccessPointRequest.
 
         企业连接网络接入点ID
 
@@ -99,7 +99,7 @@ class UpdateEcnAccessPointRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEcnAccessPointRequest.
+        r"""Gets the body of this UpdateEcnAccessPointRequest.
 
         :return: The body of this UpdateEcnAccessPointRequest.
         :rtype: :class:`huaweicloudsdkec.v1.UpdateAccessPointRequestBody`
@@ -108,7 +108,7 @@ class UpdateEcnAccessPointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEcnAccessPointRequest.
+        r"""Sets the body of this UpdateEcnAccessPointRequest.
 
         :param body: The body of this UpdateEcnAccessPointRequest.
         :type body: :class:`huaweicloudsdkec.v1.UpdateAccessPointRequestBody`

@@ -28,7 +28,7 @@ class ShowDataProgressResponse(SdkResponse):
     }
 
     def __init__(self, data_process_info=None, count=None):
-        """ShowDataProgressResponse
+        r"""ShowDataProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDataProgressResponse(SdkResponse):
 
     @property
     def data_process_info(self):
-        """Gets the data_process_info of this ShowDataProgressResponse.
+        r"""Gets the data_process_info of this ShowDataProgressResponse.
 
         数据加工规则响应体
 
@@ -62,7 +62,7 @@ class ShowDataProgressResponse(SdkResponse):
 
     @data_process_info.setter
     def data_process_info(self, data_process_info):
-        """Sets the data_process_info of this ShowDataProgressResponse.
+        r"""Sets the data_process_info of this ShowDataProgressResponse.
 
         数据加工规则响应体
 
@@ -73,7 +73,7 @@ class ShowDataProgressResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDataProgressResponse.
+        r"""Gets the count of this ShowDataProgressResponse.
 
         数据加工规则总数目
 
@@ -84,7 +84,7 @@ class ShowDataProgressResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDataProgressResponse.
+        r"""Sets the count of this ShowDataProgressResponse.
 
         数据加工规则总数目
 

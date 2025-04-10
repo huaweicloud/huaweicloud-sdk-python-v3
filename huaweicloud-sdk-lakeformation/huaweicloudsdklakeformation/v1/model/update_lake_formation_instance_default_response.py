@@ -26,7 +26,7 @@ class UpdateLakeFormationInstanceDefaultResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateLakeFormationInstanceDefaultResponse
+        r"""UpdateLakeFormationInstanceDefaultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLakeFormationInstanceDefaultResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateLakeFormationInstanceDefaultResponse.
+        r"""Gets the x_request_id of this UpdateLakeFormationInstanceDefaultResponse.
 
         :return: The x_request_id of this UpdateLakeFormationInstanceDefaultResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateLakeFormationInstanceDefaultResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateLakeFormationInstanceDefaultResponse.
+        r"""Sets the x_request_id of this UpdateLakeFormationInstanceDefaultResponse.
 
         :param x_request_id: The x_request_id of this UpdateLakeFormationInstanceDefaultResponse.
         :type x_request_id: str

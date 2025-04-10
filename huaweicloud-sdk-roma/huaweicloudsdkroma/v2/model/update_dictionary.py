@@ -33,7 +33,7 @@ class UpdateDictionary:
     }
 
     def __init__(self, name=None, remark=None, order=None, extend_one=None, extend_two=None):
-        """UpdateDictionary
+        r"""UpdateDictionary
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateDictionary:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDictionary.
+        r"""Gets the name of this UpdateDictionary.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -82,7 +82,7 @@ class UpdateDictionary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDictionary.
+        r"""Sets the name of this UpdateDictionary.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -93,7 +93,7 @@ class UpdateDictionary:
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateDictionary.
+        r"""Gets the remark of this UpdateDictionary.
 
         字典描述
 
@@ -104,7 +104,7 @@ class UpdateDictionary:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateDictionary.
+        r"""Sets the remark of this UpdateDictionary.
 
         字典描述
 
@@ -115,7 +115,7 @@ class UpdateDictionary:
 
     @property
     def order(self):
-        """Gets the order of this UpdateDictionary.
+        r"""Gets the order of this UpdateDictionary.
 
         字典排序，值越小顺序越靠前
 
@@ -126,7 +126,7 @@ class UpdateDictionary:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this UpdateDictionary.
+        r"""Sets the order of this UpdateDictionary.
 
         字典排序，值越小顺序越靠前
 
@@ -137,7 +137,7 @@ class UpdateDictionary:
 
     @property
     def extend_one(self):
-        """Gets the extend_one of this UpdateDictionary.
+        r"""Gets the extend_one of this UpdateDictionary.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -148,7 +148,7 @@ class UpdateDictionary:
 
     @extend_one.setter
     def extend_one(self, extend_one):
-        """Sets the extend_one of this UpdateDictionary.
+        r"""Sets the extend_one of this UpdateDictionary.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -159,7 +159,7 @@ class UpdateDictionary:
 
     @property
     def extend_two(self):
-        """Gets the extend_two of this UpdateDictionary.
+        r"""Gets the extend_two of this UpdateDictionary.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -170,7 +170,7 @@ class UpdateDictionary:
 
     @extend_two.setter
     def extend_two(self, extend_two):
-        """Sets the extend_two of this UpdateDictionary.
+        r"""Sets the extend_two of this UpdateDictionary.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 

@@ -25,7 +25,7 @@ class ResetManagerPasswordReq:
     }
 
     def __init__(self, new_password=None):
-        """ResetManagerPasswordReq
+        r"""ResetManagerPasswordReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetManagerPasswordReq:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ResetManagerPasswordReq.
+        r"""Gets the new_password of this ResetManagerPasswordReq.
 
         8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
 
@@ -54,7 +54,7 @@ class ResetManagerPasswordReq:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ResetManagerPasswordReq.
+        r"""Sets the new_password of this ResetManagerPasswordReq.
 
         8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?  和空格，并且不能以-开头。
 

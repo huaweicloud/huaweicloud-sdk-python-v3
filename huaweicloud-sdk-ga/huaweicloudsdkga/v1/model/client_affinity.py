@@ -27,7 +27,7 @@ class ClientAffinity:
     }
 
     def __init__(self):
-        """ClientAffinity
+        r"""ClientAffinity
 
         The model defined in huaweicloud sdk
 

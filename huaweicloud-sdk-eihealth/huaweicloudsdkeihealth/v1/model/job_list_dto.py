@@ -57,7 +57,7 @@ class JobListDto:
     }
 
     def __init__(self, id=None, name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, status=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, user_name=None, tool_info=None, io_acc_id=None, io_acc_expected_usage=None, still_running_tasks=None):
-        """JobListDto
+        r"""JobListDto
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class JobListDto:
 
     @property
     def id(self):
-        """Gets the id of this JobListDto.
+        r"""Gets the id of this JobListDto.
 
         作业id
 
@@ -166,7 +166,7 @@ class JobListDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobListDto.
+        r"""Sets the id of this JobListDto.
 
         作业id
 
@@ -177,7 +177,7 @@ class JobListDto:
 
     @property
     def name(self):
-        """Gets the name of this JobListDto.
+        r"""Gets the name of this JobListDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -188,7 +188,7 @@ class JobListDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobListDto.
+        r"""Sets the name of this JobListDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -199,7 +199,7 @@ class JobListDto:
 
     @property
     def description(self):
-        """Gets the description of this JobListDto.
+        r"""Gets the description of this JobListDto.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -210,7 +210,7 @@ class JobListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JobListDto.
+        r"""Sets the description of this JobListDto.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -221,7 +221,7 @@ class JobListDto:
 
     @property
     def labels(self):
-        """Gets the labels of this JobListDto.
+        r"""Gets the labels of this JobListDto.
 
         作业标签
 
@@ -232,7 +232,7 @@ class JobListDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this JobListDto.
+        r"""Sets the labels of this JobListDto.
 
         作业标签
 
@@ -243,7 +243,7 @@ class JobListDto:
 
     @property
     def priority(self):
-        """Gets the priority of this JobListDto.
+        r"""Gets the priority of this JobListDto.
 
         作业优先级，[0,9]，0表示最低，默认0
 
@@ -254,7 +254,7 @@ class JobListDto:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this JobListDto.
+        r"""Sets the priority of this JobListDto.
 
         作业优先级，[0,9]，0表示最低，默认0
 
@@ -265,7 +265,7 @@ class JobListDto:
 
     @property
     def timeout(self):
-        """Gets the timeout of this JobListDto.
+        r"""Gets the timeout of this JobListDto.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -276,7 +276,7 @@ class JobListDto:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this JobListDto.
+        r"""Sets the timeout of this JobListDto.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -287,7 +287,7 @@ class JobListDto:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this JobListDto.
+        r"""Gets the output_dir of this JobListDto.
 
         job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准
 
@@ -298,7 +298,7 @@ class JobListDto:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this JobListDto.
+        r"""Sets the output_dir of this JobListDto.
 
         job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准
 
@@ -309,7 +309,7 @@ class JobListDto:
 
     @property
     def status(self):
-        """Gets the status of this JobListDto.
+        r"""Gets the status of this JobListDto.
 
         作业状态
 
@@ -320,7 +320,7 @@ class JobListDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobListDto.
+        r"""Sets the status of this JobListDto.
 
         作业状态
 
@@ -331,7 +331,7 @@ class JobListDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this JobListDto.
+        r"""Gets the create_time of this JobListDto.
 
         作业创建时间
 
@@ -342,7 +342,7 @@ class JobListDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this JobListDto.
+        r"""Sets the create_time of this JobListDto.
 
         作业创建时间
 
@@ -353,7 +353,7 @@ class JobListDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this JobListDto.
+        r"""Gets the finish_time of this JobListDto.
 
         作业结束时间
 
@@ -364,7 +364,7 @@ class JobListDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this JobListDto.
+        r"""Sets the finish_time of this JobListDto.
 
         作业结束时间
 
@@ -375,7 +375,7 @@ class JobListDto:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this JobListDto.
+        r"""Gets the failed_message of this JobListDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -386,7 +386,7 @@ class JobListDto:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this JobListDto.
+        r"""Sets the failed_message of this JobListDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -397,7 +397,7 @@ class JobListDto:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this JobListDto.
+        r"""Gets the failed_reason of this JobListDto.
 
         失败原因，当作业执行失败时会返回
 
@@ -408,7 +408,7 @@ class JobListDto:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this JobListDto.
+        r"""Sets the failed_reason of this JobListDto.
 
         失败原因，当作业执行失败时会返回
 
@@ -419,7 +419,7 @@ class JobListDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this JobListDto.
+        r"""Gets the user_name of this JobListDto.
 
         创建任务的用户名称
 
@@ -430,7 +430,7 @@ class JobListDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this JobListDto.
+        r"""Sets the user_name of this JobListDto.
 
         创建任务的用户名称
 
@@ -441,7 +441,7 @@ class JobListDto:
 
     @property
     def tool_info(self):
-        """Gets the tool_info of this JobListDto.
+        r"""Gets the tool_info of this JobListDto.
 
         :return: The tool_info of this JobListDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -450,7 +450,7 @@ class JobListDto:
 
     @tool_info.setter
     def tool_info(self, tool_info):
-        """Sets the tool_info of this JobListDto.
+        r"""Sets the tool_info of this JobListDto.
 
         :param tool_info: The tool_info of this JobListDto.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -459,7 +459,7 @@ class JobListDto:
 
     @property
     def io_acc_id(self):
-        """Gets the io_acc_id of this JobListDto.
+        r"""Gets the io_acc_id of this JobListDto.
 
         作业使用的IO加速实例id，不填表示不使用；
 
@@ -470,7 +470,7 @@ class JobListDto:
 
     @io_acc_id.setter
     def io_acc_id(self, io_acc_id):
-        """Sets the io_acc_id of this JobListDto.
+        r"""Sets the io_acc_id of this JobListDto.
 
         作业使用的IO加速实例id，不填表示不使用；
 
@@ -481,7 +481,7 @@ class JobListDto:
 
     @property
     def io_acc_expected_usage(self):
-        """Gets the io_acc_expected_usage of this JobListDto.
+        r"""Gets the io_acc_expected_usage of this JobListDto.
 
         作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
 
@@ -492,7 +492,7 @@ class JobListDto:
 
     @io_acc_expected_usage.setter
     def io_acc_expected_usage(self, io_acc_expected_usage):
-        """Sets the io_acc_expected_usage of this JobListDto.
+        r"""Sets the io_acc_expected_usage of this JobListDto.
 
         作业使用的SFS-Turbo实例预期占用存储量，单位G，用于投递作业时评估当前加速实例余量是否充足
 
@@ -503,7 +503,7 @@ class JobListDto:
 
     @property
     def still_running_tasks(self):
-        """Gets the still_running_tasks of this JobListDto.
+        r"""Gets the still_running_tasks of this JobListDto.
 
         仍在运行中的子任务
 
@@ -514,7 +514,7 @@ class JobListDto:
 
     @still_running_tasks.setter
     def still_running_tasks(self, still_running_tasks):
-        """Sets the still_running_tasks of this JobListDto.
+        r"""Sets the still_running_tasks of this JobListDto.
 
         仍在运行中的子任务
 

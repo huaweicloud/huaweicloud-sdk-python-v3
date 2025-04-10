@@ -35,7 +35,7 @@ class ExportTopRiskInstancesRequest:
     }
 
     def __init__(self, start_at=None, end_at=None, datastore_type=None, num=None, x_language=None, metric_code=None):
-        """ExportTopRiskInstancesRequest
+        r"""ExportTopRiskInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ExportTopRiskInstancesRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportTopRiskInstancesRequest.
+        r"""Gets the start_at of this ExportTopRiskInstancesRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -86,7 +86,7 @@ class ExportTopRiskInstancesRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportTopRiskInstancesRequest.
+        r"""Sets the start_at of this ExportTopRiskInstancesRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -97,7 +97,7 @@ class ExportTopRiskInstancesRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportTopRiskInstancesRequest.
+        r"""Gets the end_at of this ExportTopRiskInstancesRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -108,7 +108,7 @@ class ExportTopRiskInstancesRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportTopRiskInstancesRequest.
+        r"""Sets the end_at of this ExportTopRiskInstancesRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -119,7 +119,7 @@ class ExportTopRiskInstancesRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ExportTopRiskInstancesRequest.
+        r"""Gets the datastore_type of this ExportTopRiskInstancesRequest.
 
         数据库类型。
 
@@ -130,7 +130,7 @@ class ExportTopRiskInstancesRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ExportTopRiskInstancesRequest.
+        r"""Sets the datastore_type of this ExportTopRiskInstancesRequest.
 
         数据库类型。
 
@@ -141,7 +141,7 @@ class ExportTopRiskInstancesRequest:
 
     @property
     def num(self):
-        """Gets the num of this ExportTopRiskInstancesRequest.
+        r"""Gets the num of this ExportTopRiskInstancesRequest.
 
         返回TOP风险实例数量。
 
@@ -152,7 +152,7 @@ class ExportTopRiskInstancesRequest:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ExportTopRiskInstancesRequest.
+        r"""Sets the num of this ExportTopRiskInstancesRequest.
 
         返回TOP风险实例数量。
 
@@ -163,7 +163,7 @@ class ExportTopRiskInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportTopRiskInstancesRequest.
+        r"""Gets the x_language of this ExportTopRiskInstancesRequest.
 
         请求语言类型。
 
@@ -174,7 +174,7 @@ class ExportTopRiskInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportTopRiskInstancesRequest.
+        r"""Sets the x_language of this ExportTopRiskInstancesRequest.
 
         请求语言类型。
 
@@ -185,7 +185,7 @@ class ExportTopRiskInstancesRequest:
 
     @property
     def metric_code(self):
-        """Gets the metric_code of this ExportTopRiskInstancesRequest.
+        r"""Gets the metric_code of this ExportTopRiskInstancesRequest.
 
         指标码
 
@@ -196,7 +196,7 @@ class ExportTopRiskInstancesRequest:
 
     @metric_code.setter
     def metric_code(self, metric_code):
-        """Sets the metric_code of this ExportTopRiskInstancesRequest.
+        r"""Sets the metric_code of this ExportTopRiskInstancesRequest.
 
         指标码
 

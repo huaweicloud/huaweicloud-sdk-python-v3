@@ -27,7 +27,7 @@ class ListAppEnvsRequest:
     }
 
     def __init__(self, app_id=None, x_business_id=None):
-        """ListAppEnvsRequest
+        r"""ListAppEnvsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListAppEnvsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppEnvsRequest.
+        r"""Gets the app_id of this ListAppEnvsRequest.
 
         组件id。
 
@@ -59,7 +59,7 @@ class ListAppEnvsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppEnvsRequest.
+        r"""Sets the app_id of this ListAppEnvsRequest.
 
         组件id。
 
@@ -70,7 +70,7 @@ class ListAppEnvsRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ListAppEnvsRequest.
+        r"""Gets the x_business_id of this ListAppEnvsRequest.
 
         应用id。
 
@@ -81,7 +81,7 @@ class ListAppEnvsRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ListAppEnvsRequest.
+        r"""Sets the x_business_id of this ListAppEnvsRequest.
 
         应用id。
 

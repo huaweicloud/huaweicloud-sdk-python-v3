@@ -67,7 +67,7 @@ class ScheduledTaskBasicInfo:
     }
 
     def __init__(self, id=None, enterprise_project_id=None, name=None, scheduled_type=None, task_type=None, associated_task_type=None, risk_level=None, created_by=None, update_by=None, created_user_name=None, reviewer=None, reviewer_user_name=None, approve_status=None, last_execution_time=None, last_execution_status=None, execution_count=None, enabled=None, created_time=None, modified_time=None, region_id=None, associated_task_name=None, associated_task_name_en=None):
-        """ScheduledTaskBasicInfo
+        r"""ScheduledTaskBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def id(self):
-        """Gets the id of this ScheduledTaskBasicInfo.
+        r"""Gets the id of this ScheduledTaskBasicInfo.
 
         任务ID
 
@@ -201,7 +201,7 @@ class ScheduledTaskBasicInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduledTaskBasicInfo.
+        r"""Sets the id of this ScheduledTaskBasicInfo.
 
         任务ID
 
@@ -212,7 +212,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ScheduledTaskBasicInfo.
+        r"""Gets the enterprise_project_id of this ScheduledTaskBasicInfo.
 
         企业项目id
 
@@ -223,7 +223,7 @@ class ScheduledTaskBasicInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ScheduledTaskBasicInfo.
+        r"""Sets the enterprise_project_id of this ScheduledTaskBasicInfo.
 
         企业项目id
 
@@ -234,7 +234,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this ScheduledTaskBasicInfo.
+        r"""Gets the name of this ScheduledTaskBasicInfo.
 
         任务名称
 
@@ -245,7 +245,7 @@ class ScheduledTaskBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduledTaskBasicInfo.
+        r"""Sets the name of this ScheduledTaskBasicInfo.
 
         任务名称
 
@@ -256,7 +256,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ScheduledTaskBasicInfo.
+        r"""Gets the scheduled_type of this ScheduledTaskBasicInfo.
 
         定时类型
 
@@ -267,7 +267,7 @@ class ScheduledTaskBasicInfo:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ScheduledTaskBasicInfo.
+        r"""Sets the scheduled_type of this ScheduledTaskBasicInfo.
 
         定时类型
 
@@ -278,7 +278,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduledTaskBasicInfo.
+        r"""Gets the task_type of this ScheduledTaskBasicInfo.
 
         引用任务类型
 
@@ -289,7 +289,7 @@ class ScheduledTaskBasicInfo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduledTaskBasicInfo.
+        r"""Sets the task_type of this ScheduledTaskBasicInfo.
 
         引用任务类型
 
@@ -300,7 +300,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def associated_task_type(self):
-        """Gets the associated_task_type of this ScheduledTaskBasicInfo.
+        r"""Gets the associated_task_type of this ScheduledTaskBasicInfo.
 
         关联的任务类型
 
@@ -311,7 +311,7 @@ class ScheduledTaskBasicInfo:
 
     @associated_task_type.setter
     def associated_task_type(self, associated_task_type):
-        """Sets the associated_task_type of this ScheduledTaskBasicInfo.
+        r"""Sets the associated_task_type of this ScheduledTaskBasicInfo.
 
         关联的任务类型
 
@@ -322,7 +322,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ScheduledTaskBasicInfo.
+        r"""Gets the risk_level of this ScheduledTaskBasicInfo.
 
         风险等级
 
@@ -333,7 +333,7 @@ class ScheduledTaskBasicInfo:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ScheduledTaskBasicInfo.
+        r"""Sets the risk_level of this ScheduledTaskBasicInfo.
 
         风险等级
 
@@ -344,7 +344,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def created_by(self):
-        """Gets the created_by of this ScheduledTaskBasicInfo.
+        r"""Gets the created_by of this ScheduledTaskBasicInfo.
 
         创建人
 
@@ -355,7 +355,7 @@ class ScheduledTaskBasicInfo:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ScheduledTaskBasicInfo.
+        r"""Sets the created_by of this ScheduledTaskBasicInfo.
 
         创建人
 
@@ -366,7 +366,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def update_by(self):
-        """Gets the update_by of this ScheduledTaskBasicInfo.
+        r"""Gets the update_by of this ScheduledTaskBasicInfo.
 
         修改人
 
@@ -377,7 +377,7 @@ class ScheduledTaskBasicInfo:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this ScheduledTaskBasicInfo.
+        r"""Sets the update_by of this ScheduledTaskBasicInfo.
 
         修改人
 
@@ -388,7 +388,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def created_user_name(self):
-        """Gets the created_user_name of this ScheduledTaskBasicInfo.
+        r"""Gets the created_user_name of this ScheduledTaskBasicInfo.
 
         创建人昵称
 
@@ -399,7 +399,7 @@ class ScheduledTaskBasicInfo:
 
     @created_user_name.setter
     def created_user_name(self, created_user_name):
-        """Sets the created_user_name of this ScheduledTaskBasicInfo.
+        r"""Sets the created_user_name of this ScheduledTaskBasicInfo.
 
         创建人昵称
 
@@ -410,7 +410,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def reviewer(self):
-        """Gets the reviewer of this ScheduledTaskBasicInfo.
+        r"""Gets the reviewer of this ScheduledTaskBasicInfo.
 
         审批人
 
@@ -421,7 +421,7 @@ class ScheduledTaskBasicInfo:
 
     @reviewer.setter
     def reviewer(self, reviewer):
-        """Sets the reviewer of this ScheduledTaskBasicInfo.
+        r"""Sets the reviewer of this ScheduledTaskBasicInfo.
 
         审批人
 
@@ -432,7 +432,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def reviewer_user_name(self):
-        """Gets the reviewer_user_name of this ScheduledTaskBasicInfo.
+        r"""Gets the reviewer_user_name of this ScheduledTaskBasicInfo.
 
         审批人昵称
 
@@ -443,7 +443,7 @@ class ScheduledTaskBasicInfo:
 
     @reviewer_user_name.setter
     def reviewer_user_name(self, reviewer_user_name):
-        """Sets the reviewer_user_name of this ScheduledTaskBasicInfo.
+        r"""Sets the reviewer_user_name of this ScheduledTaskBasicInfo.
 
         审批人昵称
 
@@ -454,7 +454,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def approve_status(self):
-        """Gets the approve_status of this ScheduledTaskBasicInfo.
+        r"""Gets the approve_status of this ScheduledTaskBasicInfo.
 
         审批状态
 
@@ -465,7 +465,7 @@ class ScheduledTaskBasicInfo:
 
     @approve_status.setter
     def approve_status(self, approve_status):
-        """Sets the approve_status of this ScheduledTaskBasicInfo.
+        r"""Sets the approve_status of this ScheduledTaskBasicInfo.
 
         审批状态
 
@@ -476,7 +476,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def last_execution_time(self):
-        """Gets the last_execution_time of this ScheduledTaskBasicInfo.
+        r"""Gets the last_execution_time of this ScheduledTaskBasicInfo.
 
         最近执行时间时间戳
 
@@ -487,7 +487,7 @@ class ScheduledTaskBasicInfo:
 
     @last_execution_time.setter
     def last_execution_time(self, last_execution_time):
-        """Sets the last_execution_time of this ScheduledTaskBasicInfo.
+        r"""Sets the last_execution_time of this ScheduledTaskBasicInfo.
 
         最近执行时间时间戳
 
@@ -498,7 +498,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def last_execution_status(self):
-        """Gets the last_execution_status of this ScheduledTaskBasicInfo.
+        r"""Gets the last_execution_status of this ScheduledTaskBasicInfo.
 
         最近执行状态
 
@@ -509,7 +509,7 @@ class ScheduledTaskBasicInfo:
 
     @last_execution_status.setter
     def last_execution_status(self, last_execution_status):
-        """Sets the last_execution_status of this ScheduledTaskBasicInfo.
+        r"""Sets the last_execution_status of this ScheduledTaskBasicInfo.
 
         最近执行状态
 
@@ -520,7 +520,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def execution_count(self):
-        """Gets the execution_count of this ScheduledTaskBasicInfo.
+        r"""Gets the execution_count of this ScheduledTaskBasicInfo.
 
         执行次数
 
@@ -531,7 +531,7 @@ class ScheduledTaskBasicInfo:
 
     @execution_count.setter
     def execution_count(self, execution_count):
-        """Sets the execution_count of this ScheduledTaskBasicInfo.
+        r"""Sets the execution_count of this ScheduledTaskBasicInfo.
 
         执行次数
 
@@ -542,7 +542,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ScheduledTaskBasicInfo.
+        r"""Gets the enabled of this ScheduledTaskBasicInfo.
 
         是否启用
 
@@ -553,7 +553,7 @@ class ScheduledTaskBasicInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ScheduledTaskBasicInfo.
+        r"""Sets the enabled of this ScheduledTaskBasicInfo.
 
         是否启用
 
@@ -564,7 +564,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ScheduledTaskBasicInfo.
+        r"""Gets the created_time of this ScheduledTaskBasicInfo.
 
         创建时间
 
@@ -575,7 +575,7 @@ class ScheduledTaskBasicInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ScheduledTaskBasicInfo.
+        r"""Sets the created_time of this ScheduledTaskBasicInfo.
 
         创建时间
 
@@ -586,7 +586,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this ScheduledTaskBasicInfo.
+        r"""Gets the modified_time of this ScheduledTaskBasicInfo.
 
         更新时间
 
@@ -597,7 +597,7 @@ class ScheduledTaskBasicInfo:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this ScheduledTaskBasicInfo.
+        r"""Sets the modified_time of this ScheduledTaskBasicInfo.
 
         更新时间
 
@@ -608,7 +608,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ScheduledTaskBasicInfo.
+        r"""Gets the region_id of this ScheduledTaskBasicInfo.
 
         区域
 
@@ -619,7 +619,7 @@ class ScheduledTaskBasicInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ScheduledTaskBasicInfo.
+        r"""Sets the region_id of this ScheduledTaskBasicInfo.
 
         区域
 
@@ -630,7 +630,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def associated_task_name(self):
-        """Gets the associated_task_name of this ScheduledTaskBasicInfo.
+        r"""Gets the associated_task_name of this ScheduledTaskBasicInfo.
 
         脚本/作业名称
 
@@ -641,7 +641,7 @@ class ScheduledTaskBasicInfo:
 
     @associated_task_name.setter
     def associated_task_name(self, associated_task_name):
-        """Sets the associated_task_name of this ScheduledTaskBasicInfo.
+        r"""Sets the associated_task_name of this ScheduledTaskBasicInfo.
 
         脚本/作业名称
 
@@ -652,7 +652,7 @@ class ScheduledTaskBasicInfo:
 
     @property
     def associated_task_name_en(self):
-        """Gets the associated_task_name_en of this ScheduledTaskBasicInfo.
+        r"""Gets the associated_task_name_en of this ScheduledTaskBasicInfo.
 
         脚本/作业名称(英文)
 
@@ -663,7 +663,7 @@ class ScheduledTaskBasicInfo:
 
     @associated_task_name_en.setter
     def associated_task_name_en(self, associated_task_name_en):
-        """Sets the associated_task_name_en of this ScheduledTaskBasicInfo.
+        r"""Sets the associated_task_name_en of this ScheduledTaskBasicInfo.
 
         脚本/作业名称(英文)
 

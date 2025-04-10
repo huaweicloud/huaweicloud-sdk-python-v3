@@ -26,7 +26,7 @@ class CreatePrepayResizeResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """CreatePrepayResizeResponse
+        r"""CreatePrepayResizeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePrepayResizeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreatePrepayResizeResponse.
+        r"""Gets the order_id of this CreatePrepayResizeResponse.
 
         订单编号
 
@@ -55,7 +55,7 @@ class CreatePrepayResizeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreatePrepayResizeResponse.
+        r"""Sets the order_id of this CreatePrepayResizeResponse.
 
         订单编号
 

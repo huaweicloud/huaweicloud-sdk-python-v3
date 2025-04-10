@@ -41,7 +41,7 @@ class KeystoneUpdateUserByAdminResult:
     }
 
     def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None):
-        """KeystoneUpdateUserByAdminResult
+        r"""KeystoneUpdateUserByAdminResult
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the pwd_status of this KeystoneUpdateUserByAdminResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -104,7 +104,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the pwd_status of this KeystoneUpdateUserByAdminResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -115,7 +115,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the domain_id of this KeystoneUpdateUserByAdminResult.
 
         IAM用户所属账号ID。
 
@@ -126,7 +126,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the domain_id of this KeystoneUpdateUserByAdminResult.
 
         IAM用户所属账号ID。
 
@@ -137,7 +137,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def last_project_id(self):
-        """Gets the last_project_id of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the last_project_id of this KeystoneUpdateUserByAdminResult.
 
         IAM用户退出系统前，在控制台最后访问的项目ID。
 
@@ -148,7 +148,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @last_project_id.setter
     def last_project_id(self, last_project_id):
-        """Sets the last_project_id of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the last_project_id of this KeystoneUpdateUserByAdminResult.
 
         IAM用户退出系统前，在控制台最后访问的项目ID。
 
@@ -159,7 +159,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the name of this KeystoneUpdateUserByAdminResult.
 
         IAM用户名。
 
@@ -170,7 +170,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the name of this KeystoneUpdateUserByAdminResult.
 
         IAM用户名。
 
@@ -181,7 +181,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the description of this KeystoneUpdateUserByAdminResult.
 
         IAM用户描述信息。
 
@@ -192,7 +192,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the description of this KeystoneUpdateUserByAdminResult.
 
         IAM用户描述信息。
 
@@ -203,7 +203,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the password_expires_at of this KeystoneUpdateUserByAdminResult.
 
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -214,7 +214,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the password_expires_at of this KeystoneUpdateUserByAdminResult.
 
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -225,7 +225,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def links(self):
-        """Gets the links of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the links of this KeystoneUpdateUserByAdminResult.
 
         :return: The links of this KeystoneUpdateUserByAdminResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -234,7 +234,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the links of this KeystoneUpdateUserByAdminResult.
 
         :param links: The links of this KeystoneUpdateUserByAdminResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -243,7 +243,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the id of this KeystoneUpdateUserByAdminResult.
 
         IAM用户ID。
 
@@ -254,7 +254,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the id of this KeystoneUpdateUserByAdminResult.
 
         IAM用户ID。
 
@@ -265,7 +265,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneUpdateUserByAdminResult.
+        r"""Gets the enabled of this KeystoneUpdateUserByAdminResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
@@ -276,7 +276,7 @@ class KeystoneUpdateUserByAdminResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneUpdateUserByAdminResult.
+        r"""Sets the enabled of this KeystoneUpdateUserByAdminResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 

@@ -31,7 +31,7 @@ class IssueCoverRateVo:
     }
 
     def __init__(self, epic=None, feature=None, story=None, summary=None):
-        """IssueCoverRateVo
+        r"""IssueCoverRateVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IssueCoverRateVo:
 
     @property
     def epic(self):
-        """Gets the epic of this IssueCoverRateVo.
+        r"""Gets the epic of this IssueCoverRateVo.
 
         :return: The epic of this IssueCoverRateVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -73,7 +73,7 @@ class IssueCoverRateVo:
 
     @epic.setter
     def epic(self, epic):
-        """Sets the epic of this IssueCoverRateVo.
+        r"""Sets the epic of this IssueCoverRateVo.
 
         :param epic: The epic of this IssueCoverRateVo.
         :type epic: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -82,7 +82,7 @@ class IssueCoverRateVo:
 
     @property
     def feature(self):
-        """Gets the feature of this IssueCoverRateVo.
+        r"""Gets the feature of this IssueCoverRateVo.
 
         :return: The feature of this IssueCoverRateVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -91,7 +91,7 @@ class IssueCoverRateVo:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this IssueCoverRateVo.
+        r"""Sets the feature of this IssueCoverRateVo.
 
         :param feature: The feature of this IssueCoverRateVo.
         :type feature: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -100,7 +100,7 @@ class IssueCoverRateVo:
 
     @property
     def story(self):
-        """Gets the story of this IssueCoverRateVo.
+        r"""Gets the story of this IssueCoverRateVo.
 
         :return: The story of this IssueCoverRateVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -109,7 +109,7 @@ class IssueCoverRateVo:
 
     @story.setter
     def story(self, story):
-        """Sets the story of this IssueCoverRateVo.
+        r"""Sets the story of this IssueCoverRateVo.
 
         :param story: The story of this IssueCoverRateVo.
         :type story: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -118,7 +118,7 @@ class IssueCoverRateVo:
 
     @property
     def summary(self):
-        """Gets the summary of this IssueCoverRateVo.
+        r"""Gets the summary of this IssueCoverRateVo.
 
         :return: The summary of this IssueCoverRateVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`
@@ -127,7 +127,7 @@ class IssueCoverRateVo:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this IssueCoverRateVo.
+        r"""Sets the summary of this IssueCoverRateVo.
 
         :param summary: The summary of this IssueCoverRateVo.
         :type summary: :class:`huaweicloudsdkcloudtest.v1.CoverRateVo`

@@ -43,7 +43,7 @@ class TransitIp:
     }
 
     def __init__(self, id=None, project_id=None, network_interface_id=None, ip_address=None, created_at=None, updated_at=None, virsubnet_id=None, tags=None, gateway_id=None, enterprise_project_id=None):
-        """TransitIp
+        r"""TransitIp
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class TransitIp:
 
     @property
     def id(self):
-        """Gets the id of this TransitIp.
+        r"""Gets the id of this TransitIp.
 
         中转IP的ID。
 
@@ -109,7 +109,7 @@ class TransitIp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TransitIp.
+        r"""Sets the id of this TransitIp.
 
         中转IP的ID。
 
@@ -120,7 +120,7 @@ class TransitIp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TransitIp.
+        r"""Gets the project_id of this TransitIp.
 
         项目的ID。
 
@@ -131,7 +131,7 @@ class TransitIp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TransitIp.
+        r"""Sets the project_id of this TransitIp.
 
         项目的ID。
 
@@ -142,7 +142,7 @@ class TransitIp:
 
     @property
     def network_interface_id(self):
-        """Gets the network_interface_id of this TransitIp.
+        r"""Gets the network_interface_id of this TransitIp.
 
         中转IP的网络接口ID。
 
@@ -153,7 +153,7 @@ class TransitIp:
 
     @network_interface_id.setter
     def network_interface_id(self, network_interface_id):
-        """Sets the network_interface_id of this TransitIp.
+        r"""Sets the network_interface_id of this TransitIp.
 
         中转IP的网络接口ID。
 
@@ -164,7 +164,7 @@ class TransitIp:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this TransitIp.
+        r"""Gets the ip_address of this TransitIp.
 
         中转IP的地址。
 
@@ -175,7 +175,7 @@ class TransitIp:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this TransitIp.
+        r"""Sets the ip_address of this TransitIp.
 
         中转IP的地址。
 
@@ -186,7 +186,7 @@ class TransitIp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TransitIp.
+        r"""Gets the created_at of this TransitIp.
 
         中转IP的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ
 
@@ -197,7 +197,7 @@ class TransitIp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TransitIp.
+        r"""Sets the created_at of this TransitIp.
 
         中转IP的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ
 
@@ -208,7 +208,7 @@ class TransitIp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TransitIp.
+        r"""Gets the updated_at of this TransitIp.
 
         中转IP的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ
 
@@ -219,7 +219,7 @@ class TransitIp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TransitIp.
+        r"""Sets the updated_at of this TransitIp.
 
         中转IP的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ
 
@@ -230,7 +230,7 @@ class TransitIp:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this TransitIp.
+        r"""Gets the virsubnet_id of this TransitIp.
 
         当前租户子网的ID。
 
@@ -241,7 +241,7 @@ class TransitIp:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this TransitIp.
+        r"""Sets the virsubnet_id of this TransitIp.
 
         当前租户子网的ID。
 
@@ -252,7 +252,7 @@ class TransitIp:
 
     @property
     def tags(self):
-        """Gets the tags of this TransitIp.
+        r"""Gets the tags of this TransitIp.
 
         标签列表。
 
@@ -263,7 +263,7 @@ class TransitIp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TransitIp.
+        r"""Sets the tags of this TransitIp.
 
         标签列表。
 
@@ -274,7 +274,7 @@ class TransitIp:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this TransitIp.
+        r"""Gets the gateway_id of this TransitIp.
 
         中转IP绑定的私网NAT网关实例的ID。
 
@@ -285,7 +285,7 @@ class TransitIp:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this TransitIp.
+        r"""Sets the gateway_id of this TransitIp.
 
         中转IP绑定的私网NAT网关实例的ID。
 
@@ -296,7 +296,7 @@ class TransitIp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this TransitIp.
+        r"""Gets the enterprise_project_id of this TransitIp.
 
         企业项目ID。创建中转IP时，关联的企业项目ID。
 
@@ -307,7 +307,7 @@ class TransitIp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this TransitIp.
+        r"""Sets the enterprise_project_id of this TransitIp.
 
         企业项目ID。创建中转IP时，关联的企业项目ID。
 

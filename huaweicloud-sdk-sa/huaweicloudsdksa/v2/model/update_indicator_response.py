@@ -32,7 +32,7 @@ class UpdateIndicatorResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """UpdateIndicatorResponse
+        r"""UpdateIndicatorResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdateIndicatorResponse.
+        r"""Gets the code of this UpdateIndicatorResponse.
 
         Id value
 
@@ -76,7 +76,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdateIndicatorResponse.
+        r"""Sets the code of this UpdateIndicatorResponse.
 
         Id value
 
@@ -87,7 +87,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateIndicatorResponse.
+        r"""Gets the message of this UpdateIndicatorResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateIndicatorResponse.
+        r"""Sets the message of this UpdateIndicatorResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateIndicatorResponse.
+        r"""Gets the data of this UpdateIndicatorResponse.
 
         :return: The data of this UpdateIndicatorResponse.
         :rtype: :class:`huaweicloudsdksa.v2.IndicatorDetail`
@@ -118,7 +118,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateIndicatorResponse.
+        r"""Sets the data of this UpdateIndicatorResponse.
 
         :param data: The data of this UpdateIndicatorResponse.
         :type data: :class:`huaweicloudsdksa.v2.IndicatorDetail`
@@ -127,7 +127,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateIndicatorResponse.
+        r"""Gets the x_request_id of this UpdateIndicatorResponse.
 
         :return: The x_request_id of this UpdateIndicatorResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class UpdateIndicatorResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateIndicatorResponse.
+        r"""Sets the x_request_id of this UpdateIndicatorResponse.
 
         :param x_request_id: The x_request_id of this UpdateIndicatorResponse.
         :type x_request_id: str

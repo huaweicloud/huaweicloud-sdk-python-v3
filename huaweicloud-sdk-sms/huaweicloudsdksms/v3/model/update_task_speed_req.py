@@ -53,7 +53,7 @@ class UpdateTaskSpeedReq:
     }
 
     def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None, remain_time=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None, agent_time=None):
-        """UpdateTaskSpeedReq
+        r"""UpdateTaskSpeedReq
 
         The model defined in huaweicloud sdk
 
@@ -136,7 +136,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def subtask_name(self):
-        """Gets the subtask_name of this UpdateTaskSpeedReq.
+        r"""Gets the subtask_name of this UpdateTaskSpeedReq.
 
         当前上报进度的子任务名称，子任务名称包括： 创建虚拟机 CREATE_CLOUD_SERVER 配置安全通道 SSL_CONFIG 挂载代理镜像 ATTACH_AGENT_IMAGE 卸载载代理镜像 DETTACH_AGENT_IMAGE Linux分区格式化 FORMAT_DISK_LINUX Linux分区格式化(文件级级） FORMAT_DISK_LINUX_FILE Linux分区格式化(块级） FORMAT_DISK_LINUX_BLOCK Windows分区格式化 FORMAT_DISK_WINDOWS Linux文件级数据迁移 MIGRATE_LINUX_FILE, Linux块级数据迁移 MIGRATE_LINUX_BLOCK Windows块级数据迁移 MIGRATE_WINDOWS_BLOCK 克隆一个虚拟机 CLONE_VM Linux文件级数据同步 SYNC_LINUX_FILE Linux块级数据同步 SYNC_LINUX_BLOCK Windows块级数据同步 SYNC_WINDOWS_BLOCK Linux配置修改 CONFIGURE_LINUX Linux配置修改(块级）CONFIGURE_LINUX_BLOCK Linux配置修改（文件级） CONFIGURE_LINUX_FILE Windows配置修改 CONFIGURE_WINDOWS
 
@@ -147,7 +147,7 @@ class UpdateTaskSpeedReq:
 
     @subtask_name.setter
     def subtask_name(self, subtask_name):
-        """Sets the subtask_name of this UpdateTaskSpeedReq.
+        r"""Sets the subtask_name of this UpdateTaskSpeedReq.
 
         当前上报进度的子任务名称，子任务名称包括： 创建虚拟机 CREATE_CLOUD_SERVER 配置安全通道 SSL_CONFIG 挂载代理镜像 ATTACH_AGENT_IMAGE 卸载载代理镜像 DETTACH_AGENT_IMAGE Linux分区格式化 FORMAT_DISK_LINUX Linux分区格式化(文件级级） FORMAT_DISK_LINUX_FILE Linux分区格式化(块级） FORMAT_DISK_LINUX_BLOCK Windows分区格式化 FORMAT_DISK_WINDOWS Linux文件级数据迁移 MIGRATE_LINUX_FILE, Linux块级数据迁移 MIGRATE_LINUX_BLOCK Windows块级数据迁移 MIGRATE_WINDOWS_BLOCK 克隆一个虚拟机 CLONE_VM Linux文件级数据同步 SYNC_LINUX_FILE Linux块级数据同步 SYNC_LINUX_BLOCK Windows块级数据同步 SYNC_WINDOWS_BLOCK Linux配置修改 CONFIGURE_LINUX Linux配置修改(块级）CONFIGURE_LINUX_BLOCK Linux配置修改（文件级） CONFIGURE_LINUX_FILE Windows配置修改 CONFIGURE_WINDOWS
 
@@ -158,7 +158,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def progress(self):
-        """Gets the progress of this UpdateTaskSpeedReq.
+        r"""Gets the progress of this UpdateTaskSpeedReq.
 
         当前上报的子任务的最新百分比进度
 
@@ -169,7 +169,7 @@ class UpdateTaskSpeedReq:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this UpdateTaskSpeedReq.
+        r"""Sets the progress of this UpdateTaskSpeedReq.
 
         当前上报的子任务的最新百分比进度
 
@@ -180,7 +180,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def replicatesize(self):
-        """Gets the replicatesize of this UpdateTaskSpeedReq.
+        r"""Gets the replicatesize of this UpdateTaskSpeedReq.
 
         当前任务已经复制的数据量大小（B）
 
@@ -191,7 +191,7 @@ class UpdateTaskSpeedReq:
 
     @replicatesize.setter
     def replicatesize(self, replicatesize):
-        """Sets the replicatesize of this UpdateTaskSpeedReq.
+        r"""Sets the replicatesize of this UpdateTaskSpeedReq.
 
         当前任务已经复制的数据量大小（B）
 
@@ -202,7 +202,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def totalsize(self):
-        """Gets the totalsize of this UpdateTaskSpeedReq.
+        r"""Gets the totalsize of this UpdateTaskSpeedReq.
 
         当前任务的总迁移数据大小
 
@@ -213,7 +213,7 @@ class UpdateTaskSpeedReq:
 
     @totalsize.setter
     def totalsize(self, totalsize):
-        """Sets the totalsize of this UpdateTaskSpeedReq.
+        r"""Sets the totalsize of this UpdateTaskSpeedReq.
 
         当前任务的总迁移数据大小
 
@@ -224,7 +224,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def process_trace(self):
-        """Gets the process_trace of this UpdateTaskSpeedReq.
+        r"""Gets the process_trace of this UpdateTaskSpeedReq.
 
         迁移或同步时，具体的迁移详情
 
@@ -235,7 +235,7 @@ class UpdateTaskSpeedReq:
 
     @process_trace.setter
     def process_trace(self, process_trace):
-        """Sets the process_trace of this UpdateTaskSpeedReq.
+        r"""Sets the process_trace of this UpdateTaskSpeedReq.
 
         迁移或同步时，具体的迁移详情
 
@@ -246,7 +246,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def migrate_speed(self):
-        """Gets the migrate_speed of this UpdateTaskSpeedReq.
+        r"""Gets the migrate_speed of this UpdateTaskSpeedReq.
 
         实施迁移速率，单位Mb/s
 
@@ -257,7 +257,7 @@ class UpdateTaskSpeedReq:
 
     @migrate_speed.setter
     def migrate_speed(self, migrate_speed):
-        """Sets the migrate_speed of this UpdateTaskSpeedReq.
+        r"""Sets the migrate_speed of this UpdateTaskSpeedReq.
 
         实施迁移速率，单位Mb/s
 
@@ -268,7 +268,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def compress_rate(self):
-        """Gets the compress_rate of this UpdateTaskSpeedReq.
+        r"""Gets the compress_rate of this UpdateTaskSpeedReq.
 
         实施文件压缩率
 
@@ -279,7 +279,7 @@ class UpdateTaskSpeedReq:
 
     @compress_rate.setter
     def compress_rate(self, compress_rate):
-        """Sets the compress_rate of this UpdateTaskSpeedReq.
+        r"""Sets the compress_rate of this UpdateTaskSpeedReq.
 
         实施文件压缩率
 
@@ -290,7 +290,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def remain_time(self):
-        """Gets the remain_time of this UpdateTaskSpeedReq.
+        r"""Gets the remain_time of this UpdateTaskSpeedReq.
 
         剩余时间
 
@@ -301,7 +301,7 @@ class UpdateTaskSpeedReq:
 
     @remain_time.setter
     def remain_time(self, remain_time):
-        """Sets the remain_time of this UpdateTaskSpeedReq.
+        r"""Sets the remain_time of this UpdateTaskSpeedReq.
 
         剩余时间
 
@@ -312,7 +312,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def total_cpu_usage(self):
-        """Gets the total_cpu_usage of this UpdateTaskSpeedReq.
+        r"""Gets the total_cpu_usage of this UpdateTaskSpeedReq.
 
         主机的CPU使用率，0到100，单位是百分比
 
@@ -323,7 +323,7 @@ class UpdateTaskSpeedReq:
 
     @total_cpu_usage.setter
     def total_cpu_usage(self, total_cpu_usage):
-        """Sets the total_cpu_usage of this UpdateTaskSpeedReq.
+        r"""Sets the total_cpu_usage of this UpdateTaskSpeedReq.
 
         主机的CPU使用率，0到100，单位是百分比
 
@@ -334,7 +334,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def agent_cpu_usage(self):
-        """Gets the agent_cpu_usage of this UpdateTaskSpeedReq.
+        r"""Gets the agent_cpu_usage of this UpdateTaskSpeedReq.
 
         Agent的CPU使用率，0到100，单位是百分比
 
@@ -345,7 +345,7 @@ class UpdateTaskSpeedReq:
 
     @agent_cpu_usage.setter
     def agent_cpu_usage(self, agent_cpu_usage):
-        """Sets the agent_cpu_usage of this UpdateTaskSpeedReq.
+        r"""Sets the agent_cpu_usage of this UpdateTaskSpeedReq.
 
         Agent的CPU使用率，0到100，单位是百分比
 
@@ -356,7 +356,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def total_mem_usage(self):
-        """Gets the total_mem_usage of this UpdateTaskSpeedReq.
+        r"""Gets the total_mem_usage of this UpdateTaskSpeedReq.
 
         主机的内存使用值，单位是MB
 
@@ -367,7 +367,7 @@ class UpdateTaskSpeedReq:
 
     @total_mem_usage.setter
     def total_mem_usage(self, total_mem_usage):
-        """Sets the total_mem_usage of this UpdateTaskSpeedReq.
+        r"""Sets the total_mem_usage of this UpdateTaskSpeedReq.
 
         主机的内存使用值，单位是MB
 
@@ -378,7 +378,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def agent_mem_usage(self):
-        """Gets the agent_mem_usage of this UpdateTaskSpeedReq.
+        r"""Gets the agent_mem_usage of this UpdateTaskSpeedReq.
 
         Agent的内存使用值，单位是MB
 
@@ -389,7 +389,7 @@ class UpdateTaskSpeedReq:
 
     @agent_mem_usage.setter
     def agent_mem_usage(self, agent_mem_usage):
-        """Sets the agent_mem_usage of this UpdateTaskSpeedReq.
+        r"""Sets the agent_mem_usage of this UpdateTaskSpeedReq.
 
         Agent的内存使用值，单位是MB
 
@@ -400,7 +400,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def total_disk_io(self):
-        """Gets the total_disk_io of this UpdateTaskSpeedReq.
+        r"""Gets the total_disk_io of this UpdateTaskSpeedReq.
 
         主机的磁盘I/O值，单位是MB/s
 
@@ -411,7 +411,7 @@ class UpdateTaskSpeedReq:
 
     @total_disk_io.setter
     def total_disk_io(self, total_disk_io):
-        """Sets the total_disk_io of this UpdateTaskSpeedReq.
+        r"""Sets the total_disk_io of this UpdateTaskSpeedReq.
 
         主机的磁盘I/O值，单位是MB/s
 
@@ -422,7 +422,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def agent_disk_io(self):
-        """Gets the agent_disk_io of this UpdateTaskSpeedReq.
+        r"""Gets the agent_disk_io of this UpdateTaskSpeedReq.
 
         Agent的磁盘I/O值，单位是MB/s
 
@@ -433,7 +433,7 @@ class UpdateTaskSpeedReq:
 
     @agent_disk_io.setter
     def agent_disk_io(self, agent_disk_io):
-        """Sets the agent_disk_io of this UpdateTaskSpeedReq.
+        r"""Sets the agent_disk_io of this UpdateTaskSpeedReq.
 
         Agent的磁盘I/O值，单位是MB/s
 
@@ -444,7 +444,7 @@ class UpdateTaskSpeedReq:
 
     @property
     def agent_time(self):
-        """Gets the agent_time of this UpdateTaskSpeedReq.
+        r"""Gets the agent_time of this UpdateTaskSpeedReq.
 
         Agent的当前时间，用于超速检测，因为限速值是可以分时间段设置的
 
@@ -455,7 +455,7 @@ class UpdateTaskSpeedReq:
 
     @agent_time.setter
     def agent_time(self, agent_time):
-        """Sets the agent_time of this UpdateTaskSpeedReq.
+        r"""Sets the agent_time of this UpdateTaskSpeedReq.
 
         Agent的当前时间，用于超速检测，因为限速值是可以分时间段设置的
 

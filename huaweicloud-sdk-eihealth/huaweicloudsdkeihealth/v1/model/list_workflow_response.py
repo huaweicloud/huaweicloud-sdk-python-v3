@@ -28,7 +28,7 @@ class ListWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, workflows=None, count=None):
-        """ListWorkflowResponse
+        r"""ListWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def workflows(self):
-        """Gets the workflows of this ListWorkflowResponse.
+        r"""Gets the workflows of this ListWorkflowResponse.
 
         所查询类型的流程总数
 
@@ -62,7 +62,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @workflows.setter
     def workflows(self, workflows):
-        """Sets the workflows of this ListWorkflowResponse.
+        r"""Sets the workflows of this ListWorkflowResponse.
 
         所查询类型的流程总数
 
@@ -73,7 +73,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkflowResponse.
+        r"""Gets the count of this ListWorkflowResponse.
 
         当前页的流程列表
 
@@ -84,7 +84,7 @@ class ListWorkflowResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkflowResponse.
+        r"""Sets the count of this ListWorkflowResponse.
 
         当前页的流程列表
 

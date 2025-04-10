@@ -33,7 +33,7 @@ class InstanceConfig:
     }
 
     def __init__(self, config_id=None, config_name=None, config_value=None, config_time=None, remark=None):
-        """InstanceConfig
+        r"""InstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceConfig:
 
     @property
     def config_id(self):
-        """Gets the config_id of this InstanceConfig.
+        r"""Gets the config_id of this InstanceConfig.
 
         配额编号
 
@@ -82,7 +82,7 @@ class InstanceConfig:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this InstanceConfig.
+        r"""Sets the config_id of this InstanceConfig.
 
         配额编号
 
@@ -93,7 +93,7 @@ class InstanceConfig:
 
     @property
     def config_name(self):
-        """Gets the config_name of this InstanceConfig.
+        r"""Gets the config_name of this InstanceConfig.
 
         配额名称
 
@@ -104,7 +104,7 @@ class InstanceConfig:
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this InstanceConfig.
+        r"""Sets the config_name of this InstanceConfig.
 
         配额名称
 
@@ -115,7 +115,7 @@ class InstanceConfig:
 
     @property
     def config_value(self):
-        """Gets the config_value of this InstanceConfig.
+        r"""Gets the config_value of this InstanceConfig.
 
         配额值  当前实例所在租户该配额对应的数量
 
@@ -126,7 +126,7 @@ class InstanceConfig:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this InstanceConfig.
+        r"""Sets the config_value of this InstanceConfig.
 
         配额值  当前实例所在租户该配额对应的数量
 
@@ -137,7 +137,7 @@ class InstanceConfig:
 
     @property
     def config_time(self):
-        """Gets the config_time of this InstanceConfig.
+        r"""Gets the config_time of this InstanceConfig.
 
         配额创建时间
 
@@ -148,7 +148,7 @@ class InstanceConfig:
 
     @config_time.setter
     def config_time(self, config_time):
-        """Sets the config_time of this InstanceConfig.
+        r"""Sets the config_time of this InstanceConfig.
 
         配额创建时间
 
@@ -159,7 +159,7 @@ class InstanceConfig:
 
     @property
     def remark(self):
-        """Gets the remark of this InstanceConfig.
+        r"""Gets the remark of this InstanceConfig.
 
         配额描述 - INSTANCE_NUM_LIMIT：租户可以创建的实例个数限制
 
@@ -170,7 +170,7 @@ class InstanceConfig:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this InstanceConfig.
+        r"""Sets the remark of this InstanceConfig.
 
         配额描述 - INSTANCE_NUM_LIMIT：租户可以创建的实例个数限制
 

@@ -25,7 +25,7 @@ class CreateAlertRequestBody:
     }
 
     def __init__(self, data_object=None):
-        """CreateAlertRequestBody
+        r"""CreateAlertRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAlertRequestBody:
 
     @property
     def data_object(self):
-        """Gets the data_object of this CreateAlertRequestBody.
+        r"""Gets the data_object of this CreateAlertRequestBody.
 
         :return: The data_object of this CreateAlertRequestBody.
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlert`
@@ -52,7 +52,7 @@ class CreateAlertRequestBody:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this CreateAlertRequestBody.
+        r"""Sets the data_object of this CreateAlertRequestBody.
 
         :param data_object: The data_object of this CreateAlertRequestBody.
         :type data_object: :class:`huaweicloudsdksa.v2.CreateAlert`

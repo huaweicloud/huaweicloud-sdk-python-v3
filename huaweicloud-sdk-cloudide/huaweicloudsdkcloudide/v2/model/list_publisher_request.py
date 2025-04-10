@@ -25,7 +25,7 @@ class ListPublisherRequest:
     }
 
     def __init__(self, name=None):
-        """ListPublisherRequest
+        r"""ListPublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPublisherRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPublisherRequest.
+        r"""Gets the name of this ListPublisherRequest.
 
         发布商名称
 
@@ -54,7 +54,7 @@ class ListPublisherRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPublisherRequest.
+        r"""Sets the name of this ListPublisherRequest.
 
         发布商名称
 

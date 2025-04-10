@@ -28,7 +28,7 @@ class ShowPasswordlessConfigResponse(SdkResponse):
     }
 
     def __init__(self, config_ips=None, total_count=None):
-        """ShowPasswordlessConfigResponse
+        r"""ShowPasswordlessConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPasswordlessConfigResponse(SdkResponse):
 
     @property
     def config_ips(self):
-        """Gets the config_ips of this ShowPasswordlessConfigResponse.
+        r"""Gets the config_ips of this ShowPasswordlessConfigResponse.
 
         免密配置,IP与网段的列表,仅支持ipv4的IP或网段。
 
@@ -62,7 +62,7 @@ class ShowPasswordlessConfigResponse(SdkResponse):
 
     @config_ips.setter
     def config_ips(self, config_ips):
-        """Sets the config_ips of this ShowPasswordlessConfigResponse.
+        r"""Sets the config_ips of this ShowPasswordlessConfigResponse.
 
         免密配置,IP与网段的列表,仅支持ipv4的IP或网段。
 
@@ -73,7 +73,7 @@ class ShowPasswordlessConfigResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowPasswordlessConfigResponse.
+        r"""Gets the total_count of this ShowPasswordlessConfigResponse.
 
         免密配置的总数。
 
@@ -84,7 +84,7 @@ class ShowPasswordlessConfigResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowPasswordlessConfigResponse.
+        r"""Sets the total_count of this ShowPasswordlessConfigResponse.
 
         免密配置的总数。
 

@@ -27,7 +27,7 @@ class ModifyProxyWeightRequest:
     }
 
     def __init__(self, master_weight=None, readonly_instances=None):
-        """ModifyProxyWeightRequest
+        r"""ModifyProxyWeightRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyProxyWeightRequest:
 
     @property
     def master_weight(self):
-        """Gets the master_weight of this ModifyProxyWeightRequest.
+        r"""Gets the master_weight of this ModifyProxyWeightRequest.
 
         主实例权重，取值范围为0~1000。
 
@@ -59,7 +59,7 @@ class ModifyProxyWeightRequest:
 
     @master_weight.setter
     def master_weight(self, master_weight):
-        """Sets the master_weight of this ModifyProxyWeightRequest.
+        r"""Sets the master_weight of this ModifyProxyWeightRequest.
 
         主实例权重，取值范围为0~1000。
 
@@ -70,7 +70,7 @@ class ModifyProxyWeightRequest:
 
     @property
     def readonly_instances(self):
-        """Gets the readonly_instances of this ModifyProxyWeightRequest.
+        r"""Gets the readonly_instances of this ModifyProxyWeightRequest.
 
         只读实例信息。
 
@@ -81,7 +81,7 @@ class ModifyProxyWeightRequest:
 
     @readonly_instances.setter
     def readonly_instances(self, readonly_instances):
-        """Sets the readonly_instances of this ModifyProxyWeightRequest.
+        r"""Sets the readonly_instances of this ModifyProxyWeightRequest.
 
         只读实例信息。
 

@@ -35,7 +35,7 @@ class AIMResolveTaskMode:
     }
 
     def __init__(self, tpl_id=None, resolve_times=None, aim_code_type=None, domain=None, expiration_time=None, params=None):
-        """AIMResolveTaskMode
+        r"""AIMResolveTaskMode
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AIMResolveTaskMode:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AIMResolveTaskMode.
+        r"""Gets the tpl_id of this AIMResolveTaskMode.
 
         智能信息模板ID，由9位数字组成。
 
@@ -89,7 +89,7 @@ class AIMResolveTaskMode:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AIMResolveTaskMode.
+        r"""Sets the tpl_id of this AIMResolveTaskMode.
 
         智能信息模板ID，由9位数字组成。
 
@@ -100,7 +100,7 @@ class AIMResolveTaskMode:
 
     @property
     def resolve_times(self):
-        """Gets the resolve_times of this AIMResolveTaskMode.
+        r"""Gets the resolve_times of this AIMResolveTaskMode.
 
         短链的最大解析次数。
 
@@ -111,7 +111,7 @@ class AIMResolveTaskMode:
 
     @resolve_times.setter
     def resolve_times(self, resolve_times):
-        """Sets the resolve_times of this AIMResolveTaskMode.
+        r"""Sets the resolve_times of this AIMResolveTaskMode.
 
         短链的最大解析次数。
 
@@ -122,7 +122,7 @@ class AIMResolveTaskMode:
 
     @property
     def aim_code_type(self):
-        """Gets the aim_code_type of this AIMResolveTaskMode.
+        r"""Gets the aim_code_type of this AIMResolveTaskMode.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -133,7 +133,7 @@ class AIMResolveTaskMode:
 
     @aim_code_type.setter
     def aim_code_type(self, aim_code_type):
-        """Sets the aim_code_type of this AIMResolveTaskMode.
+        r"""Sets the aim_code_type of this AIMResolveTaskMode.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -144,7 +144,7 @@ class AIMResolveTaskMode:
 
     @property
     def domain(self):
-        """Gets the domain of this AIMResolveTaskMode.
+        r"""Gets the domain of this AIMResolveTaskMode.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。
 
@@ -155,7 +155,7 @@ class AIMResolveTaskMode:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AIMResolveTaskMode.
+        r"""Sets the domain of this AIMResolveTaskMode.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。
 
@@ -166,7 +166,7 @@ class AIMResolveTaskMode:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this AIMResolveTaskMode.
+        r"""Gets the expiration_time of this AIMResolveTaskMode.
 
         失效时间（天）。
 
@@ -177,7 +177,7 @@ class AIMResolveTaskMode:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this AIMResolveTaskMode.
+        r"""Sets the expiration_time of this AIMResolveTaskMode.
 
         失效时间（天）。
 
@@ -188,7 +188,7 @@ class AIMResolveTaskMode:
 
     @property
     def params(self):
-        """Gets the params of this AIMResolveTaskMode.
+        r"""Gets the params of this AIMResolveTaskMode.
 
         短链解析详情列表。一次请求最多100个短链。
 
@@ -199,7 +199,7 @@ class AIMResolveTaskMode:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this AIMResolveTaskMode.
+        r"""Sets the params of this AIMResolveTaskMode.
 
         短链解析详情列表。一次请求最多100个短链。
 

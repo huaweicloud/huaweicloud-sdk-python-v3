@@ -26,7 +26,7 @@ class CreateProductResponse(SdkResponse):
     }
 
     def __init__(self, product=None):
-        """CreateProductResponse
+        r"""CreateProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateProductResponse(SdkResponse):
 
     @property
     def product(self):
-        """Gets the product of this CreateProductResponse.
+        r"""Gets the product of this CreateProductResponse.
 
         :return: The product of this CreateProductResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ProductResponse`
@@ -53,7 +53,7 @@ class CreateProductResponse(SdkResponse):
 
     @product.setter
     def product(self, product):
-        """Sets the product of this CreateProductResponse.
+        r"""Sets the product of this CreateProductResponse.
 
         :param product: The product of this CreateProductResponse.
         :type product: :class:`huaweicloudsdkief.v1.ProductResponse`

@@ -29,7 +29,7 @@ class ApplicationCreate:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None):
-        """ApplicationCreate
+        r"""ApplicationCreate
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ApplicationCreate:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationCreate.
+        r"""Gets the name of this ApplicationCreate.
 
         应用名称。
 
@@ -67,7 +67,7 @@ class ApplicationCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationCreate.
+        r"""Sets the name of this ApplicationCreate.
 
         应用名称。
 
@@ -78,7 +78,7 @@ class ApplicationCreate:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationCreate.
+        r"""Gets the description of this ApplicationCreate.
 
         应用描述。
 
@@ -89,7 +89,7 @@ class ApplicationCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationCreate.
+        r"""Sets the description of this ApplicationCreate.
 
         应用描述。
 
@@ -100,7 +100,7 @@ class ApplicationCreate:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplicationCreate.
+        r"""Gets the enterprise_project_id of this ApplicationCreate.
 
         企业项目ID。默认值为0。
 
@@ -111,7 +111,7 @@ class ApplicationCreate:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplicationCreate.
+        r"""Sets the enterprise_project_id of this ApplicationCreate.
 
         企业项目ID。默认值为0。
 

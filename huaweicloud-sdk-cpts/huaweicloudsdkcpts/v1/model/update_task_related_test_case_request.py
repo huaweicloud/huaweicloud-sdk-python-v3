@@ -27,7 +27,7 @@ class UpdateTaskRelatedTestCaseRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateTaskRelatedTestCaseRequest
+        r"""UpdateTaskRelatedTestCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTaskRelatedTestCaseRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskRelatedTestCaseRequest.
+        r"""Gets the task_id of this UpdateTaskRelatedTestCaseRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class UpdateTaskRelatedTestCaseRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskRelatedTestCaseRequest.
+        r"""Sets the task_id of this UpdateTaskRelatedTestCaseRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class UpdateTaskRelatedTestCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskRelatedTestCaseRequest.
+        r"""Gets the body of this UpdateTaskRelatedTestCaseRequest.
 
         :return: The body of this UpdateTaskRelatedTestCaseRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateNewTaskRequestBody`
@@ -80,7 +80,7 @@ class UpdateTaskRelatedTestCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskRelatedTestCaseRequest.
+        r"""Sets the body of this UpdateTaskRelatedTestCaseRequest.
 
         :param body: The body of this UpdateTaskRelatedTestCaseRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateNewTaskRequestBody`

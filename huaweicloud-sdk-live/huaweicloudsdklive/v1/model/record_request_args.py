@@ -31,7 +31,7 @@ class RecordRequestArgs:
     }
 
     def __init__(self, start_time=None, end_time=None, format=None, unit=None):
-        """RecordRequestArgs
+        r"""RecordRequestArgs
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RecordRequestArgs:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RecordRequestArgs.
+        r"""Gets the start_time of this RecordRequestArgs.
 
         开始时间
 
@@ -75,7 +75,7 @@ class RecordRequestArgs:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RecordRequestArgs.
+        r"""Sets the start_time of this RecordRequestArgs.
 
         开始时间
 
@@ -86,7 +86,7 @@ class RecordRequestArgs:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RecordRequestArgs.
+        r"""Gets the end_time of this RecordRequestArgs.
 
         结束时间
 
@@ -97,7 +97,7 @@ class RecordRequestArgs:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RecordRequestArgs.
+        r"""Sets the end_time of this RecordRequestArgs.
 
         结束时间
 
@@ -108,7 +108,7 @@ class RecordRequestArgs:
 
     @property
     def format(self):
-        """Gets the format of this RecordRequestArgs.
+        r"""Gets the format of this RecordRequestArgs.
 
         格式
 
@@ -119,7 +119,7 @@ class RecordRequestArgs:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this RecordRequestArgs.
+        r"""Sets the format of this RecordRequestArgs.
 
         格式
 
@@ -130,7 +130,7 @@ class RecordRequestArgs:
 
     @property
     def unit(self):
-        """Gets the unit of this RecordRequestArgs.
+        r"""Gets the unit of this RecordRequestArgs.
 
         单位
 
@@ -141,7 +141,7 @@ class RecordRequestArgs:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this RecordRequestArgs.
+        r"""Sets the unit of this RecordRequestArgs.
 
         单位
 

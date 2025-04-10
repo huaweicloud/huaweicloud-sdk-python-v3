@@ -27,7 +27,7 @@ class UnusedPermissionDetails:
     }
 
     def __init__(self, service=None, actions=None):
-        """UnusedPermissionDetails
+        r"""UnusedPermissionDetails
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UnusedPermissionDetails:
 
     @property
     def service(self):
-        """Gets the service of this UnusedPermissionDetails.
+        r"""Gets the service of this UnusedPermissionDetails.
 
         权限对应的云服务名称。
 
@@ -59,7 +59,7 @@ class UnusedPermissionDetails:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this UnusedPermissionDetails.
+        r"""Sets the service of this UnusedPermissionDetails.
 
         权限对应的云服务名称。
 
@@ -70,7 +70,7 @@ class UnusedPermissionDetails:
 
     @property
     def actions(self):
-        """Gets the actions of this UnusedPermissionDetails.
+        r"""Gets the actions of this UnusedPermissionDetails.
 
         未使用的操作列表。
 
@@ -81,7 +81,7 @@ class UnusedPermissionDetails:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this UnusedPermissionDetails.
+        r"""Sets the actions of this UnusedPermissionDetails.
 
         未使用的操作列表。
 

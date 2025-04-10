@@ -43,7 +43,7 @@ class ExportSqlJobResultRequestBody:
     }
 
     def __init__(self, data_path=None, compress=None, data_type=None, queue_name=None, export_mode=None, with_column_header=None, limit_num=None, encoding_type=None, quote_char=None, escape_char=None):
-        """ExportSqlJobResultRequestBody
+        r"""ExportSqlJobResultRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def data_path(self):
-        """Gets the data_path of this ExportSqlJobResultRequestBody.
+        r"""Gets the data_path of this ExportSqlJobResultRequestBody.
 
         ExportResult
 
@@ -115,7 +115,7 @@ class ExportSqlJobResultRequestBody:
 
     @data_path.setter
     def data_path(self, data_path):
-        """Sets the data_path of this ExportSqlJobResultRequestBody.
+        r"""Sets the data_path of this ExportSqlJobResultRequestBody.
 
         ExportResult
 
@@ -126,7 +126,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def compress(self):
-        """Gets the compress of this ExportSqlJobResultRequestBody.
+        r"""Gets the compress of this ExportSqlJobResultRequestBody.
 
         导出数据的压缩格式，目前支持gzip，bzip2和deflate压缩方式； 默认值为none，表示不压缩。
 
@@ -137,7 +137,7 @@ class ExportSqlJobResultRequestBody:
 
     @compress.setter
     def compress(self, compress):
-        """Sets the compress of this ExportSqlJobResultRequestBody.
+        r"""Sets the compress of this ExportSqlJobResultRequestBody.
 
         导出数据的压缩格式，目前支持gzip，bzip2和deflate压缩方式； 默认值为none，表示不压缩。
 
@@ -148,7 +148,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ExportSqlJobResultRequestBody.
+        r"""Gets the data_type of this ExportSqlJobResultRequestBody.
 
         导出数据的存储格式，暂时只支持csv格式。
 
@@ -159,7 +159,7 @@ class ExportSqlJobResultRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ExportSqlJobResultRequestBody.
+        r"""Sets the data_type of this ExportSqlJobResultRequestBody.
 
         导出数据的存储格式，暂时只支持csv格式。
 
@@ -170,7 +170,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ExportSqlJobResultRequestBody.
+        r"""Gets the queue_name of this ExportSqlJobResultRequestBody.
 
         指定执行该任务的队列。若不指定队列，将采用default队列执行操作。
 
@@ -181,7 +181,7 @@ class ExportSqlJobResultRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ExportSqlJobResultRequestBody.
+        r"""Sets the queue_name of this ExportSqlJobResultRequestBody.
 
         指定执行该任务的队列。若不指定队列，将采用default队列执行操作。
 
@@ -192,7 +192,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def export_mode(self):
-        """Gets the export_mode of this ExportSqlJobResultRequestBody.
+        r"""Gets the export_mode of this ExportSqlJobResultRequestBody.
 
         导出模式，目前支持“ErrorIfExists”，“Overwrite”，不指定“export_mode”则默认为“ErrorIfExists”。  “ErrorIfExists”：存在即报错。指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。 “Overwrite”：覆盖。在指定目录下新建文件，会删除已有文件。
 
@@ -203,7 +203,7 @@ class ExportSqlJobResultRequestBody:
 
     @export_mode.setter
     def export_mode(self, export_mode):
-        """Sets the export_mode of this ExportSqlJobResultRequestBody.
+        r"""Sets the export_mode of this ExportSqlJobResultRequestBody.
 
         导出模式，目前支持“ErrorIfExists”，“Overwrite”，不指定“export_mode”则默认为“ErrorIfExists”。  “ErrorIfExists”：存在即报错。指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。 “Overwrite”：覆盖。在指定目录下新建文件，会删除已有文件。
 
@@ -214,7 +214,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this ExportSqlJobResultRequestBody.
+        r"""Gets the with_column_header of this ExportSqlJobResultRequestBody.
 
         导出csv格式数据时，是否导出列名。  设置为“true”，表示导出列名。 设置为“false”，表示不导出列名。 若为空，默认为“false”。
 
@@ -225,7 +225,7 @@ class ExportSqlJobResultRequestBody:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this ExportSqlJobResultRequestBody.
+        r"""Sets the with_column_header of this ExportSqlJobResultRequestBody.
 
         导出csv格式数据时，是否导出列名。  设置为“true”，表示导出列名。 设置为“false”，表示不导出列名。 若为空，默认为“false”。
 
@@ -236,7 +236,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this ExportSqlJobResultRequestBody.
+        r"""Gets the limit_num of this ExportSqlJobResultRequestBody.
 
         导出数据条数，默认为0表示全部
 
@@ -247,7 +247,7 @@ class ExportSqlJobResultRequestBody:
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this ExportSqlJobResultRequestBody.
+        r"""Sets the limit_num of this ExportSqlJobResultRequestBody.
 
         导出数据条数，默认为0表示全部
 
@@ -258,7 +258,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def encoding_type(self):
-        """Gets the encoding_type of this ExportSqlJobResultRequestBody.
+        r"""Gets the encoding_type of this ExportSqlJobResultRequestBody.
 
         导出数据的编码格式。支持\"utf-8\"，\"gb2312\"，\"gbk\"三种，如果不填写默认为\"utf-8\"。
 
@@ -269,7 +269,7 @@ class ExportSqlJobResultRequestBody:
 
     @encoding_type.setter
     def encoding_type(self, encoding_type):
-        """Sets the encoding_type of this ExportSqlJobResultRequestBody.
+        r"""Sets the encoding_type of this ExportSqlJobResultRequestBody.
 
         导出数据的编码格式。支持\"utf-8\"，\"gb2312\"，\"gbk\"三种，如果不填写默认为\"utf-8\"。
 
@@ -280,7 +280,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def quote_char(self):
-        """Gets the quote_char of this ExportSqlJobResultRequestBody.
+        r"""Gets the quote_char of this ExportSqlJobResultRequestBody.
 
         用户自定义引用字符
 
@@ -291,7 +291,7 @@ class ExportSqlJobResultRequestBody:
 
     @quote_char.setter
     def quote_char(self, quote_char):
-        """Sets the quote_char of this ExportSqlJobResultRequestBody.
+        r"""Sets the quote_char of this ExportSqlJobResultRequestBody.
 
         用户自定义引用字符
 
@@ -302,7 +302,7 @@ class ExportSqlJobResultRequestBody:
 
     @property
     def escape_char(self):
-        """Gets the escape_char of this ExportSqlJobResultRequestBody.
+        r"""Gets the escape_char of this ExportSqlJobResultRequestBody.
 
         用户自定义转义字符
 
@@ -313,7 +313,7 @@ class ExportSqlJobResultRequestBody:
 
     @escape_char.setter
     def escape_char(self, escape_char):
-        """Sets the escape_char of this ExportSqlJobResultRequestBody.
+        r"""Sets the escape_char of this ExportSqlJobResultRequestBody.
 
         用户自定义转义字符
 

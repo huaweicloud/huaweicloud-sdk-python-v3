@@ -30,7 +30,7 @@ class ListSubsetsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListSubsetsResponse
+        r"""ListSubsetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubsetsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSubsetsResponse.
+        r"""Gets the total of this ListSubsetsResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListSubsetsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSubsetsResponse.
+        r"""Sets the total of this ListSubsetsResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListSubsetsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListSubsetsResponse.
+        r"""Gets the size of this ListSubsetsResponse.
 
         本次返回数量
 
@@ -91,7 +91,7 @@ class ListSubsetsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListSubsetsResponse.
+        r"""Sets the size of this ListSubsetsResponse.
 
         本次返回数量
 
@@ -102,7 +102,7 @@ class ListSubsetsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListSubsetsResponse.
+        r"""Gets the items of this ListSubsetsResponse.
 
         设备ID列表
 
@@ -113,7 +113,7 @@ class ListSubsetsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListSubsetsResponse.
+        r"""Sets the items of this ListSubsetsResponse.
 
         设备ID列表
 

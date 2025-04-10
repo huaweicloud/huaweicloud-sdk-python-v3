@@ -24,7 +24,7 @@ class DeleteInstancesV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteInstancesV2Response
+        r"""DeleteInstancesV2Response
 
         The model defined in huaweicloud sdk
 

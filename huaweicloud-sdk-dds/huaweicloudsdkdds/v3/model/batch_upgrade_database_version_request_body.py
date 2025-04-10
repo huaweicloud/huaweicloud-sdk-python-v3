@@ -25,7 +25,7 @@ class BatchUpgradeDatabaseVersionRequestBody:
     }
 
     def __init__(self, instance_ids=None):
-        """BatchUpgradeDatabaseVersionRequestBody
+        r"""BatchUpgradeDatabaseVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpgradeDatabaseVersionRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this BatchUpgradeDatabaseVersionRequestBody.
+        r"""Gets the instance_ids of this BatchUpgradeDatabaseVersionRequestBody.
 
         指定需要升级数据库补丁版本的实例ID列表。 一次最多可传入10个实例ID。
 
@@ -53,7 +53,7 @@ class BatchUpgradeDatabaseVersionRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this BatchUpgradeDatabaseVersionRequestBody.
+        r"""Sets the instance_ids of this BatchUpgradeDatabaseVersionRequestBody.
 
         指定需要升级数据库补丁版本的实例ID列表。 一次最多可传入10个实例ID。
 

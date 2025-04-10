@@ -47,7 +47,7 @@ class ReinstallNodeSpec:
     }
 
     def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, initialized_conditions=None, extend_param=None, hostname_config=None, security_reinforcement_type=None):
-        """ReinstallNodeSpec
+        r"""ReinstallNodeSpec
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class ReinstallNodeSpec:
 
     @property
     def os(self):
-        """Gets the os of this ReinstallNodeSpec.
+        r"""Gets the os of this ReinstallNodeSpec.
 
         操作系统。指定自定义镜像场景将以IMS镜像的实际操作系统版本为准。请选择当前集群支持的操作系统版本，例如EulerOS 2.5、CentOS 7.6、EulerOS 2.8。 
 
@@ -129,7 +129,7 @@ class ReinstallNodeSpec:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ReinstallNodeSpec.
+        r"""Sets the os of this ReinstallNodeSpec.
 
         操作系统。指定自定义镜像场景将以IMS镜像的实际操作系统版本为准。请选择当前集群支持的操作系统版本，例如EulerOS 2.5、CentOS 7.6、EulerOS 2.8。 
 
@@ -140,7 +140,7 @@ class ReinstallNodeSpec:
 
     @property
     def login(self):
-        """Gets the login of this ReinstallNodeSpec.
+        r"""Gets the login of this ReinstallNodeSpec.
 
         :return: The login of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
@@ -149,7 +149,7 @@ class ReinstallNodeSpec:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this ReinstallNodeSpec.
+        r"""Sets the login of this ReinstallNodeSpec.
 
         :param login: The login of this ReinstallNodeSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -158,7 +158,7 @@ class ReinstallNodeSpec:
 
     @property
     def name(self):
-        """Gets the name of this ReinstallNodeSpec.
+        r"""Gets the name of this ReinstallNodeSpec.
 
         节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位。
 
@@ -169,7 +169,7 @@ class ReinstallNodeSpec:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReinstallNodeSpec.
+        r"""Sets the name of this ReinstallNodeSpec.
 
         节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位。
 
@@ -180,7 +180,7 @@ class ReinstallNodeSpec:
 
     @property
     def server_config(self):
-        """Gets the server_config of this ReinstallNodeSpec.
+        r"""Gets the server_config of this ReinstallNodeSpec.
 
         :return: The server_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
@@ -189,7 +189,7 @@ class ReinstallNodeSpec:
 
     @server_config.setter
     def server_config(self, server_config):
-        """Sets the server_config of this ReinstallNodeSpec.
+        r"""Sets the server_config of this ReinstallNodeSpec.
 
         :param server_config: The server_config of this ReinstallNodeSpec.
         :type server_config: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
@@ -198,7 +198,7 @@ class ReinstallNodeSpec:
 
     @property
     def volume_config(self):
-        """Gets the volume_config of this ReinstallNodeSpec.
+        r"""Gets the volume_config of this ReinstallNodeSpec.
 
         :return: The volume_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
@@ -207,7 +207,7 @@ class ReinstallNodeSpec:
 
     @volume_config.setter
     def volume_config(self, volume_config):
-        """Sets the volume_config of this ReinstallNodeSpec.
+        r"""Sets the volume_config of this ReinstallNodeSpec.
 
         :param volume_config: The volume_config of this ReinstallNodeSpec.
         :type volume_config: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
@@ -216,7 +216,7 @@ class ReinstallNodeSpec:
 
     @property
     def runtime_config(self):
-        """Gets the runtime_config of this ReinstallNodeSpec.
+        r"""Gets the runtime_config of this ReinstallNodeSpec.
 
         :return: The runtime_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
@@ -225,7 +225,7 @@ class ReinstallNodeSpec:
 
     @runtime_config.setter
     def runtime_config(self, runtime_config):
-        """Sets the runtime_config of this ReinstallNodeSpec.
+        r"""Sets the runtime_config of this ReinstallNodeSpec.
 
         :param runtime_config: The runtime_config of this ReinstallNodeSpec.
         :type runtime_config: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
@@ -234,7 +234,7 @@ class ReinstallNodeSpec:
 
     @property
     def k8s_options(self):
-        """Gets the k8s_options of this ReinstallNodeSpec.
+        r"""Gets the k8s_options of this ReinstallNodeSpec.
 
         :return: The k8s_options of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
@@ -243,7 +243,7 @@ class ReinstallNodeSpec:
 
     @k8s_options.setter
     def k8s_options(self, k8s_options):
-        """Sets the k8s_options of this ReinstallNodeSpec.
+        r"""Sets the k8s_options of this ReinstallNodeSpec.
 
         :param k8s_options: The k8s_options of this ReinstallNodeSpec.
         :type k8s_options: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
@@ -252,7 +252,7 @@ class ReinstallNodeSpec:
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this ReinstallNodeSpec.
+        r"""Gets the lifecycle of this ReinstallNodeSpec.
 
         :return: The lifecycle of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
@@ -261,7 +261,7 @@ class ReinstallNodeSpec:
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this ReinstallNodeSpec.
+        r"""Sets the lifecycle of this ReinstallNodeSpec.
 
         :param lifecycle: The lifecycle of this ReinstallNodeSpec.
         :type lifecycle: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
@@ -270,7 +270,7 @@ class ReinstallNodeSpec:
 
     @property
     def initialized_conditions(self):
-        """Gets the initialized_conditions of this ReinstallNodeSpec.
+        r"""Gets the initialized_conditions of this ReinstallNodeSpec.
 
         自定义初始化标记。  CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。  cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。  当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。  - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个 
 
@@ -281,7 +281,7 @@ class ReinstallNodeSpec:
 
     @initialized_conditions.setter
     def initialized_conditions(self, initialized_conditions):
-        """Sets the initialized_conditions of this ReinstallNodeSpec.
+        r"""Sets the initialized_conditions of this ReinstallNodeSpec.
 
         自定义初始化标记。  CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。  cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。  当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。  - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个 
 
@@ -292,7 +292,7 @@ class ReinstallNodeSpec:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this ReinstallNodeSpec.
+        r"""Gets the extend_param of this ReinstallNodeSpec.
 
         :return: The extend_param of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
@@ -301,7 +301,7 @@ class ReinstallNodeSpec:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this ReinstallNodeSpec.
+        r"""Sets the extend_param of this ReinstallNodeSpec.
 
         :param extend_param: The extend_param of this ReinstallNodeSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
@@ -310,7 +310,7 @@ class ReinstallNodeSpec:
 
     @property
     def hostname_config(self):
-        """Gets the hostname_config of this ReinstallNodeSpec.
+        r"""Gets the hostname_config of this ReinstallNodeSpec.
 
         :return: The hostname_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.HostnameConfig`
@@ -319,7 +319,7 @@ class ReinstallNodeSpec:
 
     @hostname_config.setter
     def hostname_config(self, hostname_config):
-        """Sets the hostname_config of this ReinstallNodeSpec.
+        r"""Sets the hostname_config of this ReinstallNodeSpec.
 
         :param hostname_config: The hostname_config of this ReinstallNodeSpec.
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
@@ -328,7 +328,7 @@ class ReinstallNodeSpec:
 
     @property
     def security_reinforcement_type(self):
-        """Gets the security_reinforcement_type of this ReinstallNodeSpec.
+        r"""Gets the security_reinforcement_type of this ReinstallNodeSpec.
 
         **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
 
@@ -339,7 +339,7 @@ class ReinstallNodeSpec:
 
     @security_reinforcement_type.setter
     def security_reinforcement_type(self, security_reinforcement_type):
-        """Sets the security_reinforcement_type of this ReinstallNodeSpec.
+        r"""Sets the security_reinforcement_type of this ReinstallNodeSpec.
 
         **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\"null\"。 **约束限制**： 不涉及 **取值范围**： 取值范围：['null', cybersecurity]; **默认取值**： 不涉及
 

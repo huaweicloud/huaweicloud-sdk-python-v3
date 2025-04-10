@@ -31,7 +31,7 @@ class BrowserCacheRules:
     }
 
     def __init__(self, condition=None, cache_type=None, ttl=None, ttl_unit=None):
-        """BrowserCacheRules
+        r"""BrowserCacheRules
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BrowserCacheRules:
 
     @property
     def condition(self):
-        """Gets the condition of this BrowserCacheRules.
+        r"""Gets the condition of this BrowserCacheRules.
 
         :return: The condition of this BrowserCacheRules.
         :rtype: :class:`huaweicloudsdkcdn.v2.BrowserCacheRulesCondition`
@@ -71,7 +71,7 @@ class BrowserCacheRules:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this BrowserCacheRules.
+        r"""Sets the condition of this BrowserCacheRules.
 
         :param condition: The condition of this BrowserCacheRules.
         :type condition: :class:`huaweicloudsdkcdn.v2.BrowserCacheRulesCondition`
@@ -80,7 +80,7 @@ class BrowserCacheRules:
 
     @property
     def cache_type(self):
-        """Gets the cache_type of this BrowserCacheRules.
+        r"""Gets the cache_type of this BrowserCacheRules.
 
         缓存生效类型：   - follow_origin：遵循源站的缓存策略，即Cache-Control头部的设置，   - ttl：浏览器缓存遵循当前规则设置的过期时间，   - never：浏览器不缓存资源。
 
@@ -91,7 +91,7 @@ class BrowserCacheRules:
 
     @cache_type.setter
     def cache_type(self, cache_type):
-        """Sets the cache_type of this BrowserCacheRules.
+        r"""Sets the cache_type of this BrowserCacheRules.
 
         缓存生效类型：   - follow_origin：遵循源站的缓存策略，即Cache-Control头部的设置，   - ttl：浏览器缓存遵循当前规则设置的过期时间，   - never：浏览器不缓存资源。
 
@@ -102,7 +102,7 @@ class BrowserCacheRules:
 
     @property
     def ttl(self):
-        """Gets the ttl of this BrowserCacheRules.
+        r"""Gets the ttl of this BrowserCacheRules.
 
         缓存过期时间，最大支持365天。   > 当缓存生效类型为ttl时必填。
 
@@ -113,7 +113,7 @@ class BrowserCacheRules:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this BrowserCacheRules.
+        r"""Sets the ttl of this BrowserCacheRules.
 
         缓存过期时间，最大支持365天。   > 当缓存生效类型为ttl时必填。
 
@@ -124,7 +124,7 @@ class BrowserCacheRules:
 
     @property
     def ttl_unit(self):
-        """Gets the ttl_unit of this BrowserCacheRules.
+        r"""Gets the ttl_unit of this BrowserCacheRules.
 
         缓存过期时间单位，s：秒；m：分种；h：小时；d：天。   > 当缓存生效类型为ttl时必填。
 
@@ -135,7 +135,7 @@ class BrowserCacheRules:
 
     @ttl_unit.setter
     def ttl_unit(self, ttl_unit):
-        """Sets the ttl_unit of this BrowserCacheRules.
+        r"""Sets the ttl_unit of this BrowserCacheRules.
 
         缓存过期时间单位，s：秒；m：分种；h：小时；d：天。   > 当缓存生效类型为ttl时必填。
 

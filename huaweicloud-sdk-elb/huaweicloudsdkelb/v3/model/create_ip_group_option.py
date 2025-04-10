@@ -33,7 +33,7 @@ class CreateIpGroupOption:
     }
 
     def __init__(self, project_id=None, description=None, name=None, ip_list=None, enterprise_project_id=None):
-        """CreateIpGroupOption
+        r"""CreateIpGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateIpGroupOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateIpGroupOption.
+        r"""Gets the project_id of this CreateIpGroupOption.
 
         参数解释：IP地址组所在的项目ID。
 
@@ -81,7 +81,7 @@ class CreateIpGroupOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateIpGroupOption.
+        r"""Sets the project_id of this CreateIpGroupOption.
 
         参数解释：IP地址组所在的项目ID。
 
@@ -92,7 +92,7 @@ class CreateIpGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateIpGroupOption.
+        r"""Gets the description of this CreateIpGroupOption.
 
         参数解释：IP地址组的描述。
 
@@ -103,7 +103,7 @@ class CreateIpGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIpGroupOption.
+        r"""Sets the description of this CreateIpGroupOption.
 
         参数解释：IP地址组的描述。
 
@@ -114,7 +114,7 @@ class CreateIpGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateIpGroupOption.
+        r"""Gets the name of this CreateIpGroupOption.
 
         参数解释：IP地址组的名称。
 
@@ -125,7 +125,7 @@ class CreateIpGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIpGroupOption.
+        r"""Sets the name of this CreateIpGroupOption.
 
         参数解释：IP地址组的名称。
 
@@ -136,7 +136,7 @@ class CreateIpGroupOption:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this CreateIpGroupOption.
+        r"""Gets the ip_list of this CreateIpGroupOption.
 
         参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
 
@@ -147,7 +147,7 @@ class CreateIpGroupOption:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this CreateIpGroupOption.
+        r"""Sets the ip_list of this CreateIpGroupOption.
 
         参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
 
@@ -158,7 +158,7 @@ class CreateIpGroupOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateIpGroupOption.
+        r"""Gets the enterprise_project_id of this CreateIpGroupOption.
 
         参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -169,7 +169,7 @@ class CreateIpGroupOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateIpGroupOption.
+        r"""Sets the enterprise_project_id of this CreateIpGroupOption.
 
         参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 

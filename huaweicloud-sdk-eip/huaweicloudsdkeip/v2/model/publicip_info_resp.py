@@ -33,7 +33,7 @@ class PublicipInfoResp:
     }
 
     def __init__(self, publicip_address=None, publicip_id=None, publicip_type=None, publicipv6_address=None, ip_version=None):
-        """PublicipInfoResp
+        r"""PublicipInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PublicipInfoResp:
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this PublicipInfoResp.
+        r"""Gets the publicip_address of this PublicipInfoResp.
 
         功能说明：弹性公网IP或者IPv6端口的地址
 
@@ -82,7 +82,7 @@ class PublicipInfoResp:
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this PublicipInfoResp.
+        r"""Sets the publicip_address of this PublicipInfoResp.
 
         功能说明：弹性公网IP或者IPv6端口的地址
 
@@ -93,7 +93,7 @@ class PublicipInfoResp:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this PublicipInfoResp.
+        r"""Gets the publicip_id of this PublicipInfoResp.
 
         功能说明：带宽对应的弹性公网IP或者IPv6端口的唯一标识
 
@@ -104,7 +104,7 @@ class PublicipInfoResp:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this PublicipInfoResp.
+        r"""Sets the publicip_id of this PublicipInfoResp.
 
         功能说明：带宽对应的弹性公网IP或者IPv6端口的唯一标识
 
@@ -115,7 +115,7 @@ class PublicipInfoResp:
 
     @property
     def publicip_type(self):
-        """Gets the publicip_type of this PublicipInfoResp.
+        r"""Gets the publicip_type of this PublicipInfoResp.
 
         功能说明：弹性公网IP或者IPv6端口的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型
 
@@ -126,7 +126,7 @@ class PublicipInfoResp:
 
     @publicip_type.setter
     def publicip_type(self, publicip_type):
-        """Sets the publicip_type of this PublicipInfoResp.
+        r"""Sets the publicip_type of this PublicipInfoResp.
 
         功能说明：弹性公网IP或者IPv6端口的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型
 
@@ -137,7 +137,7 @@ class PublicipInfoResp:
 
     @property
     def publicipv6_address(self):
-        """Gets the publicipv6_address of this PublicipInfoResp.
+        r"""Gets the publicipv6_address of this PublicipInfoResp.
 
         功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -148,7 +148,7 @@ class PublicipInfoResp:
 
     @publicipv6_address.setter
     def publicipv6_address(self, publicipv6_address):
-        """Sets the publicipv6_address of this PublicipInfoResp.
+        r"""Sets the publicipv6_address of this PublicipInfoResp.
 
         功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
@@ -159,7 +159,7 @@ class PublicipInfoResp:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicipInfoResp.
+        r"""Gets the ip_version of this PublicipInfoResp.
 
         IP版本信息  取值范围：  4：IPv4  6：IPv6
 
@@ -170,7 +170,7 @@ class PublicipInfoResp:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicipInfoResp.
+        r"""Sets the ip_version of this PublicipInfoResp.
 
         IP版本信息  取值范围：  4：IPv4  6：IPv6
 

@@ -27,7 +27,7 @@ class UpdateIpWhitelistRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateIpWhitelistRequest
+        r"""UpdateIpWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateIpWhitelistRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateIpWhitelistRequest.
+        r"""Gets the instance_id of this UpdateIpWhitelistRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateIpWhitelistRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateIpWhitelistRequest.
+        r"""Sets the instance_id of this UpdateIpWhitelistRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateIpWhitelistRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIpWhitelistRequest.
+        r"""Gets the body of this UpdateIpWhitelistRequest.
 
         :return: The body of this UpdateIpWhitelistRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.ModifyIpWhitelistBody`
@@ -80,7 +80,7 @@ class UpdateIpWhitelistRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIpWhitelistRequest.
+        r"""Sets the body of this UpdateIpWhitelistRequest.
 
         :param body: The body of this UpdateIpWhitelistRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.ModifyIpWhitelistBody`

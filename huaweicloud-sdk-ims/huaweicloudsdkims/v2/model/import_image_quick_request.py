@@ -25,7 +25,7 @@ class ImportImageQuickRequest:
     }
 
     def __init__(self, body=None):
-        """ImportImageQuickRequest
+        r"""ImportImageQuickRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportImageQuickRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportImageQuickRequest.
+        r"""Gets the body of this ImportImageQuickRequest.
 
         :return: The body of this ImportImageQuickRequest.
         :rtype: :class:`huaweicloudsdkims.v2.QuickImportImageByFileRequestBody`
@@ -52,7 +52,7 @@ class ImportImageQuickRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportImageQuickRequest.
+        r"""Sets the body of this ImportImageQuickRequest.
 
         :param body: The body of this ImportImageQuickRequest.
         :type body: :class:`huaweicloudsdkims.v2.QuickImportImageByFileRequestBody`

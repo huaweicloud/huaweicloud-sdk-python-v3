@@ -28,7 +28,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
     }
 
     def __init__(self, cross_region_configs=None, count=None):
-        """ListSnapshotCrossRegionPolicyResponse
+        r"""ListSnapshotCrossRegionPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
 
     @property
     def cross_region_configs(self):
-        """Gets the cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
+        r"""Gets the cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
 
         跨区域配置信息
 
@@ -62,7 +62,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
 
     @cross_region_configs.setter
     def cross_region_configs(self, cross_region_configs):
-        """Sets the cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
+        r"""Sets the cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
 
         跨区域配置信息
 
@@ -73,7 +73,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSnapshotCrossRegionPolicyResponse.
+        r"""Gets the count of this ListSnapshotCrossRegionPolicyResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSnapshotCrossRegionPolicyResponse.
+        r"""Sets the count of this ListSnapshotCrossRegionPolicyResponse.
 
         总数
 

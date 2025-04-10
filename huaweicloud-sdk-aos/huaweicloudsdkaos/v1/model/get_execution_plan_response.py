@@ -26,7 +26,7 @@ class GetExecutionPlanResponse(SdkResponse):
     }
 
     def __init__(self, execution_plan_items=None):
-        """GetExecutionPlanResponse
+        r"""GetExecutionPlanResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetExecutionPlanResponse(SdkResponse):
 
     @property
     def execution_plan_items(self):
-        """Gets the execution_plan_items of this GetExecutionPlanResponse.
+        r"""Gets the execution_plan_items of this GetExecutionPlanResponse.
 
         执行计划项目的列表
 
@@ -55,7 +55,7 @@ class GetExecutionPlanResponse(SdkResponse):
 
     @execution_plan_items.setter
     def execution_plan_items(self, execution_plan_items):
-        """Sets the execution_plan_items of this GetExecutionPlanResponse.
+        r"""Sets the execution_plan_items of this GetExecutionPlanResponse.
 
         执行计划项目的列表
 

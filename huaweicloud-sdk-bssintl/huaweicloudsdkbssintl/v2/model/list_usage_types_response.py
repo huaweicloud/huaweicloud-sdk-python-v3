@@ -28,7 +28,7 @@ class ListUsageTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, usage_types=None):
-        """ListUsageTypesResponse
+        r"""ListUsageTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUsageTypesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListUsageTypesResponse.
+        r"""Gets the total_count of this ListUsageTypesResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListUsageTypesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListUsageTypesResponse.
+        r"""Sets the total_count of this ListUsageTypesResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListUsageTypesResponse(SdkResponse):
 
     @property
     def usage_types(self):
-        """Gets the usage_types of this ListUsageTypesResponse.
+        r"""Gets the usage_types of this ListUsageTypesResponse.
 
         使用量类型列表，具体请参见表3。
 
@@ -84,7 +84,7 @@ class ListUsageTypesResponse(SdkResponse):
 
     @usage_types.setter
     def usage_types(self, usage_types):
-        """Sets the usage_types of this ListUsageTypesResponse.
+        r"""Sets the usage_types of this ListUsageTypesResponse.
 
         使用量类型列表，具体请参见表3。
 

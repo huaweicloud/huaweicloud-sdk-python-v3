@@ -23,7 +23,7 @@ class ShowMessageClearRuleRequest:
     }
 
     def __init__(self):
-        """ShowMessageClearRuleRequest
+        r"""ShowMessageClearRuleRequest
 
         The model defined in huaweicloud sdk
 

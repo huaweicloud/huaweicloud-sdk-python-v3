@@ -41,7 +41,7 @@ class ResourceInfo:
     }
 
     def __init__(self, id=None, name=None, type=None, location=None, depend_files=None, desc=None, directory=None, depend_packages=None, job_relation=None):
-        """ResourceInfo
+        r"""ResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResourceInfo:
 
     @property
     def id(self):
-        """Gets the id of this ResourceInfo.
+        r"""Gets the id of this ResourceInfo.
 
         资源id
 
@@ -110,7 +110,7 @@ class ResourceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceInfo.
+        r"""Sets the id of this ResourceInfo.
 
         资源id
 
@@ -121,7 +121,7 @@ class ResourceInfo:
 
     @property
     def name(self):
-        """Gets the name of this ResourceInfo.
+        r"""Gets the name of this ResourceInfo.
 
         资源名称，只能包含英文字母、数字、中文字符、下划线或中划线。
 
@@ -132,7 +132,7 @@ class ResourceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceInfo.
+        r"""Sets the name of this ResourceInfo.
 
         资源名称，只能包含英文字母、数字、中文字符、下划线或中划线。
 
@@ -143,7 +143,7 @@ class ResourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this ResourceInfo.
+        r"""Gets the type of this ResourceInfo.
 
         资源类型:   - archive: 压缩包   - file: 文件   - jar: jar文件   - pyFile：python文件
 
@@ -154,7 +154,7 @@ class ResourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceInfo.
+        r"""Sets the type of this ResourceInfo.
 
         资源类型:   - archive: 压缩包   - file: 文件   - jar: jar文件   - pyFile：python文件
 
@@ -165,7 +165,7 @@ class ResourceInfo:
 
     @property
     def location(self):
-        """Gets the location of this ResourceInfo.
+        r"""Gets the location of this ResourceInfo.
 
         资源文件所在OBS路径
 
@@ -176,7 +176,7 @@ class ResourceInfo:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ResourceInfo.
+        r"""Sets the location of this ResourceInfo.
 
         资源文件所在OBS路径
 
@@ -187,7 +187,7 @@ class ResourceInfo:
 
     @property
     def depend_files(self):
-        """Gets the depend_files of this ResourceInfo.
+        r"""Gets the depend_files of this ResourceInfo.
 
         主Jar包所依赖的JAR包、properties文件
 
@@ -198,7 +198,7 @@ class ResourceInfo:
 
     @depend_files.setter
     def depend_files(self, depend_files):
-        """Sets the depend_files of this ResourceInfo.
+        r"""Sets the depend_files of this ResourceInfo.
 
         主Jar包所依赖的JAR包、properties文件
 
@@ -209,7 +209,7 @@ class ResourceInfo:
 
     @property
     def desc(self):
-        """Gets the desc of this ResourceInfo.
+        r"""Gets the desc of this ResourceInfo.
 
         资源描述
 
@@ -220,7 +220,7 @@ class ResourceInfo:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ResourceInfo.
+        r"""Sets the desc of this ResourceInfo.
 
         资源描述
 
@@ -231,7 +231,7 @@ class ResourceInfo:
 
     @property
     def directory(self):
-        """Gets the directory of this ResourceInfo.
+        r"""Gets the directory of this ResourceInfo.
 
         资源所在目录
 
@@ -242,7 +242,7 @@ class ResourceInfo:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ResourceInfo.
+        r"""Sets the directory of this ResourceInfo.
 
         资源所在目录
 
@@ -253,7 +253,7 @@ class ResourceInfo:
 
     @property
     def depend_packages(self):
-        """Gets the depend_packages of this ResourceInfo.
+        r"""Gets the depend_packages of this ResourceInfo.
 
         主Jar包所依赖的JAR包、properties文件。同时存在dependFiles和dependPackages时，优先解析该字段。
 
@@ -264,7 +264,7 @@ class ResourceInfo:
 
     @depend_packages.setter
     def depend_packages(self, depend_packages):
-        """Sets the depend_packages of this ResourceInfo.
+        r"""Sets the depend_packages of this ResourceInfo.
 
         主Jar包所依赖的JAR包、properties文件。同时存在dependFiles和dependPackages时，优先解析该字段。
 
@@ -275,7 +275,7 @@ class ResourceInfo:
 
     @property
     def job_relation(self):
-        """Gets the job_relation of this ResourceInfo.
+        r"""Gets the job_relation of this ResourceInfo.
 
         通过jar包名称查询相关的job
 
@@ -286,7 +286,7 @@ class ResourceInfo:
 
     @job_relation.setter
     def job_relation(self, job_relation):
-        """Sets the job_relation of this ResourceInfo.
+        r"""Sets the job_relation of this ResourceInfo.
 
         通过jar包名称查询相关的job
 

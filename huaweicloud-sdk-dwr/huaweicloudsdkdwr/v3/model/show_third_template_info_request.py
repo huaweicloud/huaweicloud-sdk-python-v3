@@ -25,7 +25,7 @@ class ShowThirdTemplateInfoRequest:
     }
 
     def __init__(self, template_name=None):
-        """ShowThirdTemplateInfoRequest
+        r"""ShowThirdTemplateInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowThirdTemplateInfoRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowThirdTemplateInfoRequest.
+        r"""Gets the template_name of this ShowThirdTemplateInfoRequest.
 
         三方算子模板名称。
 
@@ -53,7 +53,7 @@ class ShowThirdTemplateInfoRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowThirdTemplateInfoRequest.
+        r"""Sets the template_name of this ShowThirdTemplateInfoRequest.
 
         三方算子模板名称。
 

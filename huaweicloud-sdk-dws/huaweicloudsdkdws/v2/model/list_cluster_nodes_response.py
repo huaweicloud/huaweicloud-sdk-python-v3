@@ -30,7 +30,7 @@ class ListClusterNodesResponse(SdkResponse):
     }
 
     def __init__(self, node_list=None, count=None, failed_count=None):
-        """ListClusterNodesResponse
+        r"""ListClusterNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClusterNodesResponse(SdkResponse):
 
     @property
     def node_list(self):
-        """Gets the node_list of this ListClusterNodesResponse.
+        r"""Gets the node_list of this ListClusterNodesResponse.
 
         逻辑集群节点列表
 
@@ -69,7 +69,7 @@ class ListClusterNodesResponse(SdkResponse):
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ListClusterNodesResponse.
+        r"""Sets the node_list of this ListClusterNodesResponse.
 
         逻辑集群节点列表
 
@@ -80,7 +80,7 @@ class ListClusterNodesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListClusterNodesResponse.
+        r"""Gets the count of this ListClusterNodesResponse.
 
         逻辑集群节点总数
 
@@ -91,7 +91,7 @@ class ListClusterNodesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListClusterNodesResponse.
+        r"""Sets the count of this ListClusterNodesResponse.
 
         逻辑集群节点总数
 
@@ -102,7 +102,7 @@ class ListClusterNodesResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this ListClusterNodesResponse.
+        r"""Gets the failed_count of this ListClusterNodesResponse.
 
         逻辑集群节点失败总数
 
@@ -113,7 +113,7 @@ class ListClusterNodesResponse(SdkResponse):
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this ListClusterNodesResponse.
+        r"""Sets the failed_count of this ListClusterNodesResponse.
 
         逻辑集群节点失败总数
 

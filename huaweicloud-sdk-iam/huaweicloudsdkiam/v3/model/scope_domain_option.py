@@ -27,7 +27,7 @@ class ScopeDomainOption:
     }
 
     def __init__(self, id=None, name=None):
-        """ScopeDomainOption
+        r"""ScopeDomainOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScopeDomainOption:
 
     @property
     def id(self):
-        """Gets the id of this ScopeDomainOption.
+        r"""Gets the id of this ScopeDomainOption.
 
         账号ID，id与name二选一即可。
 
@@ -61,7 +61,7 @@ class ScopeDomainOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScopeDomainOption.
+        r"""Sets the id of this ScopeDomainOption.
 
         账号ID，id与name二选一即可。
 
@@ -72,7 +72,7 @@ class ScopeDomainOption:
 
     @property
     def name(self):
-        """Gets the name of this ScopeDomainOption.
+        r"""Gets the name of this ScopeDomainOption.
 
         账号名，id与name二选一即可。
 
@@ -83,7 +83,7 @@ class ScopeDomainOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScopeDomainOption.
+        r"""Sets the name of this ScopeDomainOption.
 
         账号名，id与name二选一即可。
 

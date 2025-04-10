@@ -25,7 +25,7 @@ class KeystoneUpdateUserPasswordRequestBody:
     }
 
     def __init__(self, user=None):
-        """KeystoneUpdateUserPasswordRequestBody
+        r"""KeystoneUpdateUserPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneUpdateUserPasswordRequestBody:
 
     @property
     def user(self):
-        """Gets the user of this KeystoneUpdateUserPasswordRequestBody.
+        r"""Gets the user of this KeystoneUpdateUserPasswordRequestBody.
 
         :return: The user of this KeystoneUpdateUserPasswordRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdatePasswordOption`
@@ -51,7 +51,7 @@ class KeystoneUpdateUserPasswordRequestBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this KeystoneUpdateUserPasswordRequestBody.
+        r"""Sets the user of this KeystoneUpdateUserPasswordRequestBody.
 
         :param user: The user of this KeystoneUpdateUserPasswordRequestBody.
         :type user: :class:`huaweicloudsdkiam.v3.KeystoneUpdatePasswordOption`

@@ -28,7 +28,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, total=None):
-        """ListQualityEnhanceDefaultTemplateResponse
+        r"""ListQualityEnhanceDefaultTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
 
     @property
     def task_array(self):
-        """Gets the task_array of this ListQualityEnhanceDefaultTemplateResponse.
+        r"""Gets the task_array of this ListQualityEnhanceDefaultTemplateResponse.
 
         任务列表
 
@@ -62,7 +62,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
 
     @task_array.setter
     def task_array(self, task_array):
-        """Sets the task_array of this ListQualityEnhanceDefaultTemplateResponse.
+        r"""Sets the task_array of this ListQualityEnhanceDefaultTemplateResponse.
 
         任务列表
 
@@ -73,7 +73,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListQualityEnhanceDefaultTemplateResponse.
+        r"""Gets the total of this ListQualityEnhanceDefaultTemplateResponse.
 
         查询结果数量
 
@@ -84,7 +84,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListQualityEnhanceDefaultTemplateResponse.
+        r"""Sets the total of this ListQualityEnhanceDefaultTemplateResponse.
 
         查询结果数量
 

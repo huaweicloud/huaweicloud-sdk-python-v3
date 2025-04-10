@@ -30,7 +30,7 @@ class ListAppTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, next_marker=None, count=None):
-        """ListAppTemplatesResponse
+        r"""ListAppTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAppTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListAppTemplatesResponse.
+        r"""Gets the templates of this ListAppTemplatesResponse.
 
         函数应用程序模板列表
 
@@ -69,7 +69,7 @@ class ListAppTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListAppTemplatesResponse.
+        r"""Sets the templates of this ListAppTemplatesResponse.
 
         函数应用程序模板列表
 
@@ -80,7 +80,7 @@ class ListAppTemplatesResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListAppTemplatesResponse.
+        r"""Gets the next_marker of this ListAppTemplatesResponse.
 
         下次读取位置
 
@@ -91,7 +91,7 @@ class ListAppTemplatesResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListAppTemplatesResponse.
+        r"""Sets the next_marker of this ListAppTemplatesResponse.
 
         下次读取位置
 
@@ -102,7 +102,7 @@ class ListAppTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppTemplatesResponse.
+        r"""Gets the count of this ListAppTemplatesResponse.
 
         应用程序模板总数
 
@@ -113,7 +113,7 @@ class ListAppTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppTemplatesResponse.
+        r"""Sets the count of this ListAppTemplatesResponse.
 
         应用程序模板总数
 

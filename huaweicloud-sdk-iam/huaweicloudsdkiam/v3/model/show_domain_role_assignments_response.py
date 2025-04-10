@@ -28,7 +28,7 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, role_assignments=None):
-        """ShowDomainRoleAssignmentsResponse
+        r"""ShowDomainRoleAssignmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ShowDomainRoleAssignmentsResponse.
+        r"""Gets the total_num of this ShowDomainRoleAssignmentsResponse.
 
         返回授权记录的总条数。
 
@@ -62,7 +62,7 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ShowDomainRoleAssignmentsResponse.
+        r"""Sets the total_num of this ShowDomainRoleAssignmentsResponse.
 
         返回授权记录的总条数。
 
@@ -73,7 +73,7 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
 
     @property
     def role_assignments(self):
-        """Gets the role_assignments of this ShowDomainRoleAssignmentsResponse.
+        r"""Gets the role_assignments of this ShowDomainRoleAssignmentsResponse.
 
         :return: The role_assignments of this ShowDomainRoleAssignmentsResponse.
         :rtype: list[:class:`huaweicloudsdkiam.v3.RoleAssignmentBody`]
@@ -82,7 +82,7 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
 
     @role_assignments.setter
     def role_assignments(self, role_assignments):
-        """Sets the role_assignments of this ShowDomainRoleAssignmentsResponse.
+        r"""Sets the role_assignments of this ShowDomainRoleAssignmentsResponse.
 
         :param role_assignments: The role_assignments of this ShowDomainRoleAssignmentsResponse.
         :type role_assignments: list[:class:`huaweicloudsdkiam.v3.RoleAssignmentBody`]

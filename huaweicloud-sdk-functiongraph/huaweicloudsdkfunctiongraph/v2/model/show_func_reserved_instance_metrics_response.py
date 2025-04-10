@@ -28,7 +28,7 @@ class ShowFuncReservedInstanceMetricsResponse(SdkResponse):
     }
 
     def __init__(self, instance_num=None, reserved_instance_num=None):
-        """ShowFuncReservedInstanceMetricsResponse
+        r"""ShowFuncReservedInstanceMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFuncReservedInstanceMetricsResponse(SdkResponse):
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ShowFuncReservedInstanceMetricsResponse.
+        r"""Gets the instance_num of this ShowFuncReservedInstanceMetricsResponse.
 
         弹性实例指标
 
@@ -62,7 +62,7 @@ class ShowFuncReservedInstanceMetricsResponse(SdkResponse):
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ShowFuncReservedInstanceMetricsResponse.
+        r"""Sets the instance_num of this ShowFuncReservedInstanceMetricsResponse.
 
         弹性实例指标
 
@@ -73,7 +73,7 @@ class ShowFuncReservedInstanceMetricsResponse(SdkResponse):
 
     @property
     def reserved_instance_num(self):
-        """Gets the reserved_instance_num of this ShowFuncReservedInstanceMetricsResponse.
+        r"""Gets the reserved_instance_num of this ShowFuncReservedInstanceMetricsResponse.
 
         预留实例指标
 
@@ -84,7 +84,7 @@ class ShowFuncReservedInstanceMetricsResponse(SdkResponse):
 
     @reserved_instance_num.setter
     def reserved_instance_num(self, reserved_instance_num):
-        """Sets the reserved_instance_num of this ShowFuncReservedInstanceMetricsResponse.
+        r"""Sets the reserved_instance_num of this ShowFuncReservedInstanceMetricsResponse.
 
         预留实例指标
 

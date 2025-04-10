@@ -29,7 +29,7 @@ class CloudServiceRatingResult:
     }
 
     def __init__(self, order_request_id=None, official_website_rating_result=None, optional_discount_rating_results=None):
-        """CloudServiceRatingResult
+        r"""CloudServiceRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CloudServiceRatingResult:
 
     @property
     def order_request_id(self):
-        """Gets the order_request_id of this CloudServiceRatingResult.
+        r"""Gets the order_request_id of this CloudServiceRatingResult.
 
         下单请求体中的orderRequestId
 
@@ -68,7 +68,7 @@ class CloudServiceRatingResult:
 
     @order_request_id.setter
     def order_request_id(self, order_request_id):
-        """Sets the order_request_id of this CloudServiceRatingResult.
+        r"""Sets the order_request_id of this CloudServiceRatingResult.
 
         下单请求体中的orderRequestId
 
@@ -79,7 +79,7 @@ class CloudServiceRatingResult:
 
     @property
     def official_website_rating_result(self):
-        """Gets the official_website_rating_result of this CloudServiceRatingResult.
+        r"""Gets the official_website_rating_result of this CloudServiceRatingResult.
 
         :return: The official_website_rating_result of this CloudServiceRatingResult.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
@@ -88,7 +88,7 @@ class CloudServiceRatingResult:
 
     @official_website_rating_result.setter
     def official_website_rating_result(self, official_website_rating_result):
-        """Sets the official_website_rating_result of this CloudServiceRatingResult.
+        r"""Sets the official_website_rating_result of this CloudServiceRatingResult.
 
         :param official_website_rating_result: The official_website_rating_result of this CloudServiceRatingResult.
         :type official_website_rating_result: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
@@ -97,7 +97,7 @@ class CloudServiceRatingResult:
 
     @property
     def optional_discount_rating_results(self):
-        """Gets the optional_discount_rating_results of this CloudServiceRatingResult.
+        r"""Gets the optional_discount_rating_results of this CloudServiceRatingResult.
 
         优惠询价结果
 
@@ -108,7 +108,7 @@ class CloudServiceRatingResult:
 
     @optional_discount_rating_results.setter
     def optional_discount_rating_results(self, optional_discount_rating_results):
-        """Sets the optional_discount_rating_results of this CloudServiceRatingResult.
+        r"""Sets the optional_discount_rating_results of this CloudServiceRatingResult.
 
         优惠询价结果
 

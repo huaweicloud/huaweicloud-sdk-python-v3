@@ -28,7 +28,7 @@ class MeetingStatus:
     }
 
     def __init__(self):
-        """MeetingStatus
+        r"""MeetingStatus
 
         The model defined in huaweicloud sdk
 

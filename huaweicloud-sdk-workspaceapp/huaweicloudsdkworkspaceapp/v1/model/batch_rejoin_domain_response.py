@@ -26,7 +26,7 @@ class BatchRejoinDomainResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchRejoinDomainResponse
+        r"""BatchRejoinDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchRejoinDomainResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchRejoinDomainResponse.
+        r"""Gets the job_id of this BatchRejoinDomainResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class BatchRejoinDomainResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchRejoinDomainResponse.
+        r"""Sets the job_id of this BatchRejoinDomainResponse.
 
         任务ID。
 

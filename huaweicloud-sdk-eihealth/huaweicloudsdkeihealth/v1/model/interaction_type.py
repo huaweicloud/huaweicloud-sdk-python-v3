@@ -30,7 +30,7 @@ class InteractionType:
     }
 
     def __init__(self):
-        """InteractionType
+        r"""InteractionType
 
         The model defined in huaweicloud sdk
 

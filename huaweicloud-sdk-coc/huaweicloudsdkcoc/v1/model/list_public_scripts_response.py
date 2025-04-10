@@ -26,7 +26,7 @@ class ListPublicScriptsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListPublicScriptsResponse
+        r"""ListPublicScriptsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPublicScriptsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPublicScriptsResponse.
+        r"""Gets the data of this ListPublicScriptsResponse.
 
         :return: The data of this ListPublicScriptsResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.PublicScriptListPage`
@@ -53,7 +53,7 @@ class ListPublicScriptsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPublicScriptsResponse.
+        r"""Sets the data of this ListPublicScriptsResponse.
 
         :param data: The data of this ListPublicScriptsResponse.
         :type data: :class:`huaweicloudsdkcoc.v1.PublicScriptListPage`

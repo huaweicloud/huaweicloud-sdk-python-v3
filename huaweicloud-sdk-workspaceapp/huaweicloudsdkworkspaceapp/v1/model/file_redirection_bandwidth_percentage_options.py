@@ -25,7 +25,7 @@ class FileRedirectionBandwidthPercentageOptions:
     }
 
     def __init__(self, file_redirection_bandwidth_percentage_value=None):
-        """FileRedirectionBandwidthPercentageOptions
+        r"""FileRedirectionBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FileRedirectionBandwidthPercentageOptions:
 
     @property
     def file_redirection_bandwidth_percentage_value(self):
-        """Gets the file_redirection_bandwidth_percentage_value of this FileRedirectionBandwidthPercentageOptions.
+        r"""Gets the file_redirection_bandwidth_percentage_value of this FileRedirectionBandwidthPercentageOptions.
 
         文件重定向带宽百分比控制量（%）。取值范围为[0-100]。默认：30。
 
@@ -54,7 +54,7 @@ class FileRedirectionBandwidthPercentageOptions:
 
     @file_redirection_bandwidth_percentage_value.setter
     def file_redirection_bandwidth_percentage_value(self, file_redirection_bandwidth_percentage_value):
-        """Sets the file_redirection_bandwidth_percentage_value of this FileRedirectionBandwidthPercentageOptions.
+        r"""Sets the file_redirection_bandwidth_percentage_value of this FileRedirectionBandwidthPercentageOptions.
 
         文件重定向带宽百分比控制量（%）。取值范围为[0-100]。默认：30。
 

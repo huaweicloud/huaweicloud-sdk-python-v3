@@ -27,7 +27,7 @@ class ListSendCountryDetailsRequest:
     }
 
     def __init__(self, country_name_en=None, country_name_zh=None):
-        """ListSendCountryDetailsRequest
+        r"""ListSendCountryDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSendCountryDetailsRequest:
 
     @property
     def country_name_en(self):
-        """Gets the country_name_en of this ListSendCountryDetailsRequest.
+        r"""Gets the country_name_en of this ListSendCountryDetailsRequest.
 
         国家(英文)
 
@@ -61,7 +61,7 @@ class ListSendCountryDetailsRequest:
 
     @country_name_en.setter
     def country_name_en(self, country_name_en):
-        """Sets the country_name_en of this ListSendCountryDetailsRequest.
+        r"""Sets the country_name_en of this ListSendCountryDetailsRequest.
 
         国家(英文)
 
@@ -72,7 +72,7 @@ class ListSendCountryDetailsRequest:
 
     @property
     def country_name_zh(self):
-        """Gets the country_name_zh of this ListSendCountryDetailsRequest.
+        r"""Gets the country_name_zh of this ListSendCountryDetailsRequest.
 
         国家(中文)
 
@@ -83,7 +83,7 @@ class ListSendCountryDetailsRequest:
 
     @country_name_zh.setter
     def country_name_zh(self, country_name_zh):
-        """Sets the country_name_zh of this ListSendCountryDetailsRequest.
+        r"""Sets the country_name_zh of this ListSendCountryDetailsRequest.
 
         国家(中文)
 

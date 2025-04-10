@@ -29,7 +29,7 @@ class DeleteHttp2RpcRequest:
     }
 
     def __init__(self, gateway_id=None, http2_rpc_id=None, accept=None):
-        """DeleteHttp2RpcRequest
+        r"""DeleteHttp2RpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteHttp2RpcRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this DeleteHttp2RpcRequest.
+        r"""Gets the gateway_id of this DeleteHttp2RpcRequest.
 
         网关实例id
 
@@ -66,7 +66,7 @@ class DeleteHttp2RpcRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this DeleteHttp2RpcRequest.
+        r"""Sets the gateway_id of this DeleteHttp2RpcRequest.
 
         网关实例id
 
@@ -77,7 +77,7 @@ class DeleteHttp2RpcRequest:
 
     @property
     def http2_rpc_id(self):
-        """Gets the http2_rpc_id of this DeleteHttp2RpcRequest.
+        r"""Gets the http2_rpc_id of this DeleteHttp2RpcRequest.
 
         插件id
 
@@ -88,7 +88,7 @@ class DeleteHttp2RpcRequest:
 
     @http2_rpc_id.setter
     def http2_rpc_id(self, http2_rpc_id):
-        """Sets the http2_rpc_id of this DeleteHttp2RpcRequest.
+        r"""Sets the http2_rpc_id of this DeleteHttp2RpcRequest.
 
         插件id
 
@@ -99,7 +99,7 @@ class DeleteHttp2RpcRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this DeleteHttp2RpcRequest.
+        r"""Gets the accept of this DeleteHttp2RpcRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -110,7 +110,7 @@ class DeleteHttp2RpcRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this DeleteHttp2RpcRequest.
+        r"""Sets the accept of this DeleteHttp2RpcRequest.
 
         该字段内容填为 \"application/json\"
 

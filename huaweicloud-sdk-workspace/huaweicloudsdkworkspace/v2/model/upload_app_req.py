@@ -47,7 +47,7 @@ class UploadAppReq:
     }
 
     def __init__(self, name=None, version=None, description=None, authorization_type=None, app_file_store=None, app_icon_url=None, install_type=None, install_command=None, uninstall_command=None, support_os=None, catalog_id=None, install_info=None):
-        """UploadAppReq
+        r"""UploadAppReq
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class UploadAppReq:
 
     @property
     def name(self):
-        """Gets the name of this UploadAppReq.
+        r"""Gets the name of this UploadAppReq.
 
         应用名称,名称需满足如下规则: 1. 不可为全空格。 2. 不允许包含如下字符:^;|~`{}[]<>。 3. 长度1~128个字符。
 
@@ -123,7 +123,7 @@ class UploadAppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadAppReq.
+        r"""Sets the name of this UploadAppReq.
 
         应用名称,名称需满足如下规则: 1. 不可为全空格。 2. 不允许包含如下字符:^;|~`{}[]<>。 3. 长度1~128个字符。
 
@@ -134,7 +134,7 @@ class UploadAppReq:
 
     @property
     def version(self):
-        """Gets the version of this UploadAppReq.
+        r"""Gets the version of this UploadAppReq.
 
         版本号。
 
@@ -145,7 +145,7 @@ class UploadAppReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UploadAppReq.
+        r"""Sets the version of this UploadAppReq.
 
         版本号。
 
@@ -156,7 +156,7 @@ class UploadAppReq:
 
     @property
     def description(self):
-        """Gets the description of this UploadAppReq.
+        r"""Gets the description of this UploadAppReq.
 
         描述。
 
@@ -167,7 +167,7 @@ class UploadAppReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadAppReq.
+        r"""Sets the description of this UploadAppReq.
 
         描述。
 
@@ -178,7 +178,7 @@ class UploadAppReq:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this UploadAppReq.
+        r"""Gets the authorization_type of this UploadAppReq.
 
         :return: The authorization_type of this UploadAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -187,7 +187,7 @@ class UploadAppReq:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this UploadAppReq.
+        r"""Sets the authorization_type of this UploadAppReq.
 
         :param authorization_type: The authorization_type of this UploadAppReq.
         :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -196,7 +196,7 @@ class UploadAppReq:
 
     @property
     def app_file_store(self):
-        """Gets the app_file_store of this UploadAppReq.
+        r"""Gets the app_file_store of this UploadAppReq.
 
         :return: The app_file_store of this UploadAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -205,7 +205,7 @@ class UploadAppReq:
 
     @app_file_store.setter
     def app_file_store(self, app_file_store):
-        """Sets the app_file_store of this UploadAppReq.
+        r"""Sets the app_file_store of this UploadAppReq.
 
         :param app_file_store: The app_file_store of this UploadAppReq.
         :type app_file_store: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
@@ -214,7 +214,7 @@ class UploadAppReq:
 
     @property
     def app_icon_url(self):
-        """Gets the app_icon_url of this UploadAppReq.
+        r"""Gets the app_icon_url of this UploadAppReq.
 
         图片的路径,支持使用可访问的URL地址或DataURIscheme。 * `可访问的URL` - https://xxx.x.xx.x/xxx/xx.jpg。 * `DataURIscheme` -  data;image/png;base64,iVBORw0KGgoAAAANS; 注意使用dataURLStream时，字符串最大长度为87500，即最多使用约64KB大小的图片。
 
@@ -225,7 +225,7 @@ class UploadAppReq:
 
     @app_icon_url.setter
     def app_icon_url(self, app_icon_url):
-        """Sets the app_icon_url of this UploadAppReq.
+        r"""Sets the app_icon_url of this UploadAppReq.
 
         图片的路径,支持使用可访问的URL地址或DataURIscheme。 * `可访问的URL` - https://xxx.x.xx.x/xxx/xx.jpg。 * `DataURIscheme` -  data;image/png;base64,iVBORw0KGgoAAAANS; 注意使用dataURLStream时，字符串最大长度为87500，即最多使用约64KB大小的图片。
 
@@ -236,7 +236,7 @@ class UploadAppReq:
 
     @property
     def install_type(self):
-        """Gets the install_type of this UploadAppReq.
+        r"""Gets the install_type of this UploadAppReq.
 
         :return: The install_type of this UploadAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -245,7 +245,7 @@ class UploadAppReq:
 
     @install_type.setter
     def install_type(self, install_type):
-        """Sets the install_type of this UploadAppReq.
+        r"""Sets the install_type of this UploadAppReq.
 
         :param install_type: The install_type of this UploadAppReq.
         :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
@@ -254,7 +254,7 @@ class UploadAppReq:
 
     @property
     def install_command(self):
-        """Gets the install_command of this UploadAppReq.
+        r"""Gets the install_command of this UploadAppReq.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -265,7 +265,7 @@ class UploadAppReq:
 
     @install_command.setter
     def install_command(self, install_command):
-        """Sets the install_command of this UploadAppReq.
+        r"""Sets the install_command of this UploadAppReq.
 
         安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -276,7 +276,7 @@ class UploadAppReq:
 
     @property
     def uninstall_command(self):
-        """Gets the uninstall_command of this UploadAppReq.
+        r"""Gets the uninstall_command of this UploadAppReq.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -287,7 +287,7 @@ class UploadAppReq:
 
     @uninstall_command.setter
     def uninstall_command(self, uninstall_command):
-        """Sets the uninstall_command of this UploadAppReq.
+        r"""Sets the uninstall_command of this UploadAppReq.
 
         卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
 
@@ -298,7 +298,7 @@ class UploadAppReq:
 
     @property
     def support_os(self):
-        """Gets the support_os of this UploadAppReq.
+        r"""Gets the support_os of this UploadAppReq.
 
         :return: The support_os of this UploadAppReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -307,7 +307,7 @@ class UploadAppReq:
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this UploadAppReq.
+        r"""Sets the support_os of this UploadAppReq.
 
         :param support_os: The support_os of this UploadAppReq.
         :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
@@ -316,7 +316,7 @@ class UploadAppReq:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this UploadAppReq.
+        r"""Gets the catalog_id of this UploadAppReq.
 
         分类ID。
 
@@ -327,7 +327,7 @@ class UploadAppReq:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this UploadAppReq.
+        r"""Sets the catalog_id of this UploadAppReq.
 
         分类ID。
 
@@ -338,7 +338,7 @@ class UploadAppReq:
 
     @property
     def install_info(self):
-        """Gets the install_info of this UploadAppReq.
+        r"""Gets the install_info of this UploadAppReq.
 
         安装信息。
 
@@ -349,7 +349,7 @@ class UploadAppReq:
 
     @install_info.setter
     def install_info(self, install_info):
-        """Sets the install_info of this UploadAppReq.
+        r"""Sets the install_info of this UploadAppReq.
 
         安装信息。
 

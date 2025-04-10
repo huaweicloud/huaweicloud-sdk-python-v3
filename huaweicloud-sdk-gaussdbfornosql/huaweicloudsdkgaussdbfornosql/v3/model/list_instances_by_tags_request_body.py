@@ -33,7 +33,7 @@ class ListInstancesByTagsRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, action=None, matches=None, tags=None):
-        """ListInstancesByTagsRequestBody
+        r"""ListInstancesByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListInstancesByTagsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesByTagsRequestBody.
+        r"""Gets the offset of this ListInstancesByTagsRequestBody.
 
         索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。'
 
@@ -81,7 +81,7 @@ class ListInstancesByTagsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesByTagsRequestBody.
+        r"""Sets the offset of this ListInstancesByTagsRequestBody.
 
         索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。'
 
@@ -92,7 +92,7 @@ class ListInstancesByTagsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesByTagsRequestBody.
+        r"""Gets the limit of this ListInstancesByTagsRequestBody.
 
         查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
@@ -103,7 +103,7 @@ class ListInstancesByTagsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesByTagsRequestBody.
+        r"""Sets the limit of this ListInstancesByTagsRequestBody.
 
         查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
@@ -114,7 +114,7 @@ class ListInstancesByTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListInstancesByTagsRequestBody.
+        r"""Gets the action of this ListInstancesByTagsRequestBody.
 
         操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
 
@@ -125,7 +125,7 @@ class ListInstancesByTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListInstancesByTagsRequestBody.
+        r"""Sets the action of this ListInstancesByTagsRequestBody.
 
         操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
 
@@ -136,7 +136,7 @@ class ListInstancesByTagsRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListInstancesByTagsRequestBody.
+        r"""Gets the matches of this ListInstancesByTagsRequestBody.
 
         搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
 
@@ -147,7 +147,7 @@ class ListInstancesByTagsRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListInstancesByTagsRequestBody.
+        r"""Sets the matches of this ListInstancesByTagsRequestBody.
 
         搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
 
@@ -158,7 +158,7 @@ class ListInstancesByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInstancesByTagsRequestBody.
+        r"""Gets the tags of this ListInstancesByTagsRequestBody.
 
         包含标签，最多包含20个key。
 
@@ -169,7 +169,7 @@ class ListInstancesByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInstancesByTagsRequestBody.
+        r"""Sets the tags of this ListInstancesByTagsRequestBody.
 
         包含标签，最多包含20个key。
 

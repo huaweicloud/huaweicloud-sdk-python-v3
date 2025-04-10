@@ -27,7 +27,7 @@ class DeleteImageRequest:
     }
 
     def __init__(self, eihealth_project_id=None, image_id=None):
-        """DeleteImageRequest
+        r"""DeleteImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteImageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteImageRequest.
+        r"""Gets the eihealth_project_id of this DeleteImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class DeleteImageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteImageRequest.
+        r"""Sets the eihealth_project_id of this DeleteImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class DeleteImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this DeleteImageRequest.
+        r"""Gets the image_id of this DeleteImageRequest.
 
         镜像id
 
@@ -81,7 +81,7 @@ class DeleteImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this DeleteImageRequest.
+        r"""Sets the image_id of this DeleteImageRequest.
 
         镜像id
 

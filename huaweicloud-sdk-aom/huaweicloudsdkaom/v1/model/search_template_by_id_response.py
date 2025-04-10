@@ -66,7 +66,7 @@ class SearchTemplateByIdResponse(SdkResponse):
     }
 
     def __init__(self, approve_info=None, create_by=None, create_time=None, enterprise_project_id=None, id=None, is_collect=None, is_publish=None, job_id=None, job_version=None, name=None, need_synchronize=None, nodes=None, parameters=None, project_id=None, quote=None, rate_control=None, share_type=None, steps=None, update_by=None, update_time=None, version=None):
-        """SearchTemplateByIdResponse
+        r"""SearchTemplateByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def approve_info(self):
-        """Gets the approve_info of this SearchTemplateByIdResponse.
+        r"""Gets the approve_info of this SearchTemplateByIdResponse.
 
         :return: The approve_info of this SearchTemplateByIdResponse.
         :rtype: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -193,7 +193,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @approve_info.setter
     def approve_info(self, approve_info):
-        """Sets the approve_info of this SearchTemplateByIdResponse.
+        r"""Sets the approve_info of this SearchTemplateByIdResponse.
 
         :param approve_info: The approve_info of this SearchTemplateByIdResponse.
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -202,7 +202,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def create_by(self):
-        """Gets the create_by of this SearchTemplateByIdResponse.
+        r"""Gets the create_by of this SearchTemplateByIdResponse.
 
         模板创建人，从接口调用传入的token中获取。
 
@@ -213,7 +213,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this SearchTemplateByIdResponse.
+        r"""Sets the create_by of this SearchTemplateByIdResponse.
 
         模板创建人，从接口调用传入的token中获取。
 
@@ -224,7 +224,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this SearchTemplateByIdResponse.
+        r"""Gets the create_time of this SearchTemplateByIdResponse.
 
         模板创建时间，为utc时间毫秒数。
 
@@ -235,7 +235,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SearchTemplateByIdResponse.
+        r"""Sets the create_time of this SearchTemplateByIdResponse.
 
         模板创建时间，为utc时间毫秒数。
 
@@ -246,7 +246,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SearchTemplateByIdResponse.
+        r"""Gets the enterprise_project_id of this SearchTemplateByIdResponse.
 
         企业项目id
 
@@ -257,7 +257,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SearchTemplateByIdResponse.
+        r"""Sets the enterprise_project_id of this SearchTemplateByIdResponse.
 
         企业项目id
 
@@ -268,7 +268,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this SearchTemplateByIdResponse.
+        r"""Gets the id of this SearchTemplateByIdResponse.
 
         模板id，唯一标识，根据project_id和template_name生成。
 
@@ -279,7 +279,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SearchTemplateByIdResponse.
+        r"""Sets the id of this SearchTemplateByIdResponse.
 
         模板id，唯一标识，根据project_id和template_name生成。
 
@@ -290,7 +290,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def is_collect(self):
-        """Gets the is_collect of this SearchTemplateByIdResponse.
+        r"""Gets the is_collect of this SearchTemplateByIdResponse.
 
         模板是否收藏，不允许更新模板时修改，更改收藏状态调用单独的更新模板收藏状态接口
 
@@ -301,7 +301,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @is_collect.setter
     def is_collect(self, is_collect):
-        """Sets the is_collect of this SearchTemplateByIdResponse.
+        r"""Sets the is_collect of this SearchTemplateByIdResponse.
 
         模板是否收藏，不允许更新模板时修改，更改收藏状态调用单独的更新模板收藏状态接口
 
@@ -312,7 +312,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this SearchTemplateByIdResponse.
+        r"""Gets the is_publish of this SearchTemplateByIdResponse.
 
         是否发布成服务
 
@@ -323,7 +323,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this SearchTemplateByIdResponse.
+        r"""Sets the is_publish of this SearchTemplateByIdResponse.
 
         是否发布成服务
 
@@ -334,7 +334,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SearchTemplateByIdResponse.
+        r"""Gets the job_id of this SearchTemplateByIdResponse.
 
         作业id
 
@@ -345,7 +345,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SearchTemplateByIdResponse.
+        r"""Sets the job_id of this SearchTemplateByIdResponse.
 
         作业id
 
@@ -356,7 +356,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def job_version(self):
-        """Gets the job_version of this SearchTemplateByIdResponse.
+        r"""Gets the job_version of this SearchTemplateByIdResponse.
 
         作业版本
 
@@ -367,7 +367,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @job_version.setter
     def job_version(self, job_version):
-        """Sets the job_version of this SearchTemplateByIdResponse.
+        r"""Sets the job_version of this SearchTemplateByIdResponse.
 
         作业版本
 
@@ -378,7 +378,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this SearchTemplateByIdResponse.
+        r"""Gets the name of this SearchTemplateByIdResponse.
 
         模板名称
 
@@ -389,7 +389,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchTemplateByIdResponse.
+        r"""Sets the name of this SearchTemplateByIdResponse.
 
         模板名称
 
@@ -400,7 +400,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def need_synchronize(self):
-        """Gets the need_synchronize of this SearchTemplateByIdResponse.
+        r"""Gets the need_synchronize of this SearchTemplateByIdResponse.
 
         是否需要同步
 
@@ -411,7 +411,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @need_synchronize.setter
     def need_synchronize(self, need_synchronize):
-        """Sets the need_synchronize of this SearchTemplateByIdResponse.
+        r"""Sets the need_synchronize of this SearchTemplateByIdResponse.
 
         是否需要同步
 
@@ -422,7 +422,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this SearchTemplateByIdResponse.
+        r"""Gets the nodes of this SearchTemplateByIdResponse.
 
         任务执行时需要的参数列表。
 
@@ -433,7 +433,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this SearchTemplateByIdResponse.
+        r"""Sets the nodes of this SearchTemplateByIdResponse.
 
         任务执行时需要的参数列表。
 
@@ -444,7 +444,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this SearchTemplateByIdResponse.
+        r"""Gets the parameters of this SearchTemplateByIdResponse.
 
         任务执行时需要的参数列表。
 
@@ -455,7 +455,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this SearchTemplateByIdResponse.
+        r"""Sets the parameters of this SearchTemplateByIdResponse.
 
         任务执行时需要的参数列表。
 
@@ -466,7 +466,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this SearchTemplateByIdResponse.
+        r"""Gets the project_id of this SearchTemplateByIdResponse.
 
         项目id
 
@@ -477,7 +477,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SearchTemplateByIdResponse.
+        r"""Sets the project_id of this SearchTemplateByIdResponse.
 
         项目id
 
@@ -488,7 +488,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def quote(self):
-        """Gets the quote of this SearchTemplateByIdResponse.
+        r"""Gets the quote of this SearchTemplateByIdResponse.
 
         引用参数
 
@@ -499,7 +499,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @quote.setter
     def quote(self, quote):
-        """Sets the quote of this SearchTemplateByIdResponse.
+        r"""Sets the quote of this SearchTemplateByIdResponse.
 
         引用参数
 
@@ -510,7 +510,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def rate_control(self):
-        """Gets the rate_control of this SearchTemplateByIdResponse.
+        r"""Gets the rate_control of this SearchTemplateByIdResponse.
 
         :return: The rate_control of this SearchTemplateByIdResponse.
         :rtype: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -519,7 +519,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @rate_control.setter
     def rate_control(self, rate_control):
-        """Sets the rate_control of this SearchTemplateByIdResponse.
+        r"""Sets the rate_control of this SearchTemplateByIdResponse.
 
         :param rate_control: The rate_control of this SearchTemplateByIdResponse.
         :type rate_control: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -528,7 +528,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def share_type(self):
-        """Gets the share_type of this SearchTemplateByIdResponse.
+        r"""Gets the share_type of this SearchTemplateByIdResponse.
 
         默认模板为public，自定义模板为private
 
@@ -539,7 +539,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this SearchTemplateByIdResponse.
+        r"""Sets the share_type of this SearchTemplateByIdResponse.
 
         默认模板为public，自定义模板为private
 
@@ -550,7 +550,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def steps(self):
-        """Gets the steps of this SearchTemplateByIdResponse.
+        r"""Gets the steps of this SearchTemplateByIdResponse.
 
         作业步骤
 
@@ -561,7 +561,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this SearchTemplateByIdResponse.
+        r"""Sets the steps of this SearchTemplateByIdResponse.
 
         作业步骤
 
@@ -572,7 +572,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def update_by(self):
-        """Gets the update_by of this SearchTemplateByIdResponse.
+        r"""Gets the update_by of this SearchTemplateByIdResponse.
 
         模板更新人，从接口调用传入的token中获取。
 
@@ -583,7 +583,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this SearchTemplateByIdResponse.
+        r"""Sets the update_by of this SearchTemplateByIdResponse.
 
         模板更新人，从接口调用传入的token中获取。
 
@@ -594,7 +594,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this SearchTemplateByIdResponse.
+        r"""Gets the update_time of this SearchTemplateByIdResponse.
 
         模板更新时间，为utc时间毫秒数。
 
@@ -605,7 +605,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SearchTemplateByIdResponse.
+        r"""Sets the update_time of this SearchTemplateByIdResponse.
 
         模板更新时间，为utc时间毫秒数。
 
@@ -616,7 +616,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this SearchTemplateByIdResponse.
+        r"""Gets the version of this SearchTemplateByIdResponse.
 
         模板版本
 
@@ -627,7 +627,7 @@ class SearchTemplateByIdResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SearchTemplateByIdResponse.
+        r"""Sets the version of this SearchTemplateByIdResponse.
 
         模板版本
 

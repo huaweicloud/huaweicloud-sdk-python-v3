@@ -28,7 +28,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, phone_images=None):
-        """ListCloudPhoneImagesResponse
+        r"""ListCloudPhoneImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudPhoneImagesResponse.
+        r"""Gets the request_id of this ListCloudPhoneImagesResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudPhoneImagesResponse.
+        r"""Sets the request_id of this ListCloudPhoneImagesResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
 
     @property
     def phone_images(self):
-        """Gets the phone_images of this ListCloudPhoneImagesResponse.
+        r"""Gets the phone_images of this ListCloudPhoneImagesResponse.
 
         手机镜像信息。
 
@@ -84,7 +84,7 @@ class ListCloudPhoneImagesResponse(SdkResponse):
 
     @phone_images.setter
     def phone_images(self, phone_images):
-        """Sets the phone_images of this ListCloudPhoneImagesResponse.
+        r"""Sets the phone_images of this ListCloudPhoneImagesResponse.
 
         手机镜像信息。
 

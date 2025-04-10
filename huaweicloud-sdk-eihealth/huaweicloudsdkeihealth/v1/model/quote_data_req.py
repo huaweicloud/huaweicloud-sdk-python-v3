@@ -27,7 +27,7 @@ class QuoteDataReq:
     }
 
     def __init__(self, quote_project_id=None, sub_paths=None):
-        """QuoteDataReq
+        r"""QuoteDataReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QuoteDataReq:
 
     @property
     def quote_project_id(self):
-        """Gets the quote_project_id of this QuoteDataReq.
+        r"""Gets the quote_project_id of this QuoteDataReq.
 
         引入项目ID
 
@@ -59,7 +59,7 @@ class QuoteDataReq:
 
     @quote_project_id.setter
     def quote_project_id(self, quote_project_id):
-        """Sets the quote_project_id of this QuoteDataReq.
+        r"""Sets the quote_project_id of this QuoteDataReq.
 
         引入项目ID
 
@@ -70,7 +70,7 @@ class QuoteDataReq:
 
     @property
     def sub_paths(self):
-        """Gets the sub_paths of this QuoteDataReq.
+        r"""Gets the sub_paths of this QuoteDataReq.
 
         引入路径集
 
@@ -81,7 +81,7 @@ class QuoteDataReq:
 
     @sub_paths.setter
     def sub_paths(self, sub_paths):
-        """Sets the sub_paths of this QuoteDataReq.
+        r"""Sets the sub_paths of this QuoteDataReq.
 
         引入路径集
 

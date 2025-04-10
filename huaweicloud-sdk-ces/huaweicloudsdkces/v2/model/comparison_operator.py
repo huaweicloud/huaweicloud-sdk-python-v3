@@ -23,7 +23,7 @@ class ComparisonOperator:
     }
 
     def __init__(self):
-        """ComparisonOperator
+        r"""ComparisonOperator
 
         The model defined in huaweicloud sdk
 

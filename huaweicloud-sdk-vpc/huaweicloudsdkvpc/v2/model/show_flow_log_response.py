@@ -26,7 +26,7 @@ class ShowFlowLogResponse(SdkResponse):
     }
 
     def __init__(self, flow_log=None):
-        """ShowFlowLogResponse
+        r"""ShowFlowLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowFlowLogResponse(SdkResponse):
 
     @property
     def flow_log(self):
-        """Gets the flow_log of this ShowFlowLogResponse.
+        r"""Gets the flow_log of this ShowFlowLogResponse.
 
         :return: The flow_log of this ShowFlowLogResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.FlowLogResp`
@@ -53,7 +53,7 @@ class ShowFlowLogResponse(SdkResponse):
 
     @flow_log.setter
     def flow_log(self, flow_log):
-        """Sets the flow_log of this ShowFlowLogResponse.
+        r"""Sets the flow_log of this ShowFlowLogResponse.
 
         :param flow_log: The flow_log of this ShowFlowLogResponse.
         :type flow_log: :class:`huaweicloudsdkvpc.v2.FlowLogResp`

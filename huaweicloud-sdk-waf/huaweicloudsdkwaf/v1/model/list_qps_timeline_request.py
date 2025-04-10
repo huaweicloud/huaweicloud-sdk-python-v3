@@ -35,7 +35,7 @@ class ListQpsTimelineRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None, group_by=None):
-        """ListQpsTimelineRequest
+        r"""ListQpsTimelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListQpsTimelineRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListQpsTimelineRequest.
+        r"""Gets the enterprise_project_id of this ListQpsTimelineRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -87,7 +87,7 @@ class ListQpsTimelineRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListQpsTimelineRequest.
+        r"""Sets the enterprise_project_id of this ListQpsTimelineRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -98,7 +98,7 @@ class ListQpsTimelineRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListQpsTimelineRequest.
+        r"""Gets the _from of this ListQpsTimelineRequest.
 
         起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -109,7 +109,7 @@ class ListQpsTimelineRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListQpsTimelineRequest.
+        r"""Sets the _from of this ListQpsTimelineRequest.
 
         起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -120,7 +120,7 @@ class ListQpsTimelineRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListQpsTimelineRequest.
+        r"""Gets the to of this ListQpsTimelineRequest.
 
         结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -131,7 +131,7 @@ class ListQpsTimelineRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListQpsTimelineRequest.
+        r"""Sets the to of this ListQpsTimelineRequest.
 
         结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -142,7 +142,7 @@ class ListQpsTimelineRequest:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListQpsTimelineRequest.
+        r"""Gets the hosts of this ListQpsTimelineRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -153,7 +153,7 @@ class ListQpsTimelineRequest:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListQpsTimelineRequest.
+        r"""Sets the hosts of this ListQpsTimelineRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -164,7 +164,7 @@ class ListQpsTimelineRequest:
 
     @property
     def instances(self):
-        """Gets the instances of this ListQpsTimelineRequest.
+        r"""Gets the instances of this ListQpsTimelineRequest.
 
         要查询引擎实例id（仅独享或者ELB实例化模式涉及）
 
@@ -175,7 +175,7 @@ class ListQpsTimelineRequest:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListQpsTimelineRequest.
+        r"""Sets the instances of this ListQpsTimelineRequest.
 
         要查询引擎实例id（仅独享或者ELB实例化模式涉及）
 
@@ -186,7 +186,7 @@ class ListQpsTimelineRequest:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ListQpsTimelineRequest.
+        r"""Gets the group_by of this ListQpsTimelineRequest.
 
         展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
 
@@ -197,7 +197,7 @@ class ListQpsTimelineRequest:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ListQpsTimelineRequest.
+        r"""Sets the group_by of this ListQpsTimelineRequest.
 
         展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
 

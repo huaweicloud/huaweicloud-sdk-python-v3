@@ -26,7 +26,7 @@ class UpdateDatabaseAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, view_sql=None):
-        """UpdateDatabaseAuthorityResponse
+        r"""UpdateDatabaseAuthorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDatabaseAuthorityResponse(SdkResponse):
 
     @property
     def view_sql(self):
-        """Gets the view_sql of this UpdateDatabaseAuthorityResponse.
+        r"""Gets the view_sql of this UpdateDatabaseAuthorityResponse.
 
         sql列表
 
@@ -55,7 +55,7 @@ class UpdateDatabaseAuthorityResponse(SdkResponse):
 
     @view_sql.setter
     def view_sql(self, view_sql):
-        """Sets the view_sql of this UpdateDatabaseAuthorityResponse.
+        r"""Sets the view_sql of this UpdateDatabaseAuthorityResponse.
 
         sql列表
 

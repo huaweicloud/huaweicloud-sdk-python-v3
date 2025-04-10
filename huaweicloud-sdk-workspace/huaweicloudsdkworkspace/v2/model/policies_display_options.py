@@ -53,7 +53,7 @@ class PoliciesDisplayOptions:
     }
 
     def __init__(self, display_bandwidth=None, frame_rate=None, video_frame_rate=None, min_image_cache=None, smoothing_factor=None, lossless_compression_mode=None, deep_compression_options=None, lossy_compression_quality=None, color_enhancement_enable=None, quality_bandwidth_first=None, video_bit_rate_options=None, peak_video_bit_rate=None, video_quality_options=None, gop_size=None, encoding_preset=None):
-        """PoliciesDisplayOptions
+        r"""PoliciesDisplayOptions
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class PoliciesDisplayOptions:
 
     @property
     def display_bandwidth(self):
-        """Gets the display_bandwidth of this PoliciesDisplayOptions.
+        r"""Gets the display_bandwidth of this PoliciesDisplayOptions.
 
         带宽（Kbps）。取值范围为[256-25000]。默认：20000。
 
@@ -152,7 +152,7 @@ class PoliciesDisplayOptions:
 
     @display_bandwidth.setter
     def display_bandwidth(self, display_bandwidth):
-        """Sets the display_bandwidth of this PoliciesDisplayOptions.
+        r"""Sets the display_bandwidth of this PoliciesDisplayOptions.
 
         带宽（Kbps）。取值范围为[256-25000]。默认：20000。
 
@@ -163,7 +163,7 @@ class PoliciesDisplayOptions:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this PoliciesDisplayOptions.
+        r"""Gets the frame_rate of this PoliciesDisplayOptions.
 
         帧率（fps）。取值范围为[1-60]。默认：25。
 
@@ -174,7 +174,7 @@ class PoliciesDisplayOptions:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this PoliciesDisplayOptions.
+        r"""Sets the frame_rate of this PoliciesDisplayOptions.
 
         帧率（fps）。取值范围为[1-60]。默认：25。
 
@@ -185,7 +185,7 @@ class PoliciesDisplayOptions:
 
     @property
     def video_frame_rate(self):
-        """Gets the video_frame_rate of this PoliciesDisplayOptions.
+        r"""Gets the video_frame_rate of this PoliciesDisplayOptions.
 
         视频帧率（fps）。取值范围为[1-60]。默认：30。
 
@@ -196,7 +196,7 @@ class PoliciesDisplayOptions:
 
     @video_frame_rate.setter
     def video_frame_rate(self, video_frame_rate):
-        """Sets the video_frame_rate of this PoliciesDisplayOptions.
+        r"""Sets the video_frame_rate of this PoliciesDisplayOptions.
 
         视频帧率（fps）。取值范围为[1-60]。默认：30。
 
@@ -207,7 +207,7 @@ class PoliciesDisplayOptions:
 
     @property
     def min_image_cache(self):
-        """Gets the min_image_cache of this PoliciesDisplayOptions.
+        r"""Gets the min_image_cache of this PoliciesDisplayOptions.
 
         图像缓存最低容量（MB）。取值范围[0-300]，默认：200。
 
@@ -218,7 +218,7 @@ class PoliciesDisplayOptions:
 
     @min_image_cache.setter
     def min_image_cache(self, min_image_cache):
-        """Sets the min_image_cache of this PoliciesDisplayOptions.
+        r"""Sets the min_image_cache of this PoliciesDisplayOptions.
 
         图像缓存最低容量（MB）。取值范围[0-300]，默认：200。
 
@@ -229,7 +229,7 @@ class PoliciesDisplayOptions:
 
     @property
     def smoothing_factor(self):
-        """Gets the smoothing_factor of this PoliciesDisplayOptions.
+        r"""Gets the smoothing_factor of this PoliciesDisplayOptions.
 
         有损压缩识别阈值。取值范围为[0-255]。默认：60。
 
@@ -240,7 +240,7 @@ class PoliciesDisplayOptions:
 
     @smoothing_factor.setter
     def smoothing_factor(self, smoothing_factor):
-        """Sets the smoothing_factor of this PoliciesDisplayOptions.
+        r"""Sets the smoothing_factor of this PoliciesDisplayOptions.
 
         有损压缩识别阈值。取值范围为[0-255]。默认：60。
 
@@ -251,7 +251,7 @@ class PoliciesDisplayOptions:
 
     @property
     def lossless_compression_mode(self):
-        """Gets the lossless_compression_mode of this PoliciesDisplayOptions.
+        r"""Gets the lossless_compression_mode of this PoliciesDisplayOptions.
 
         无损压缩模式。取值为： Basic Compression：表示初级压缩。 Deep Compression：表示深度压缩。
 
@@ -262,7 +262,7 @@ class PoliciesDisplayOptions:
 
     @lossless_compression_mode.setter
     def lossless_compression_mode(self, lossless_compression_mode):
-        """Sets the lossless_compression_mode of this PoliciesDisplayOptions.
+        r"""Sets the lossless_compression_mode of this PoliciesDisplayOptions.
 
         无损压缩模式。取值为： Basic Compression：表示初级压缩。 Deep Compression：表示深度压缩。
 
@@ -273,7 +273,7 @@ class PoliciesDisplayOptions:
 
     @property
     def deep_compression_options(self):
-        """Gets the deep_compression_options of this PoliciesDisplayOptions.
+        r"""Gets the deep_compression_options of this PoliciesDisplayOptions.
 
         :return: The deep_compression_options of this PoliciesDisplayOptions.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptionsDeepCompressionOptions`
@@ -282,7 +282,7 @@ class PoliciesDisplayOptions:
 
     @deep_compression_options.setter
     def deep_compression_options(self, deep_compression_options):
-        """Sets the deep_compression_options of this PoliciesDisplayOptions.
+        r"""Sets the deep_compression_options of this PoliciesDisplayOptions.
 
         :param deep_compression_options: The deep_compression_options of this PoliciesDisplayOptions.
         :type deep_compression_options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptionsDeepCompressionOptions`
@@ -291,7 +291,7 @@ class PoliciesDisplayOptions:
 
     @property
     def lossy_compression_quality(self):
-        """Gets the lossy_compression_quality of this PoliciesDisplayOptions.
+        r"""Gets the lossy_compression_quality of this PoliciesDisplayOptions.
 
         有损压缩质量。取值范围为[20-100]。默认：85。
 
@@ -302,7 +302,7 @@ class PoliciesDisplayOptions:
 
     @lossy_compression_quality.setter
     def lossy_compression_quality(self, lossy_compression_quality):
-        """Sets the lossy_compression_quality of this PoliciesDisplayOptions.
+        r"""Sets the lossy_compression_quality of this PoliciesDisplayOptions.
 
         有损压缩质量。取值范围为[20-100]。默认：85。
 
@@ -313,7 +313,7 @@ class PoliciesDisplayOptions:
 
     @property
     def color_enhancement_enable(self):
-        """Gets the color_enhancement_enable of this PoliciesDisplayOptions.
+        r"""Gets the color_enhancement_enable of this PoliciesDisplayOptions.
 
         办公场景色彩增强：取值为： false：表示关闭。 true：表示开启。
 
@@ -324,7 +324,7 @@ class PoliciesDisplayOptions:
 
     @color_enhancement_enable.setter
     def color_enhancement_enable(self, color_enhancement_enable):
-        """Sets the color_enhancement_enable of this PoliciesDisplayOptions.
+        r"""Sets the color_enhancement_enable of this PoliciesDisplayOptions.
 
         办公场景色彩增强：取值为： false：表示关闭。 true：表示开启。
 
@@ -335,7 +335,7 @@ class PoliciesDisplayOptions:
 
     @property
     def quality_bandwidth_first(self):
-        """Gets the quality_bandwidth_first of this PoliciesDisplayOptions.
+        r"""Gets the quality_bandwidth_first of this PoliciesDisplayOptions.
 
         质量或带宽优先。取值为： Quality First：表示初级压缩。 Bandwidth First：表示深度压缩。
 
@@ -346,7 +346,7 @@ class PoliciesDisplayOptions:
 
     @quality_bandwidth_first.setter
     def quality_bandwidth_first(self, quality_bandwidth_first):
-        """Sets the quality_bandwidth_first of this PoliciesDisplayOptions.
+        r"""Sets the quality_bandwidth_first of this PoliciesDisplayOptions.
 
         质量或带宽优先。取值为： Quality First：表示初级压缩。 Bandwidth First：表示深度压缩。
 
@@ -357,7 +357,7 @@ class PoliciesDisplayOptions:
 
     @property
     def video_bit_rate_options(self):
-        """Gets the video_bit_rate_options of this PoliciesDisplayOptions.
+        r"""Gets the video_bit_rate_options of this PoliciesDisplayOptions.
 
         :return: The video_bit_rate_options of this PoliciesDisplayOptions.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptionsVideoBitRateOptions`
@@ -366,7 +366,7 @@ class PoliciesDisplayOptions:
 
     @video_bit_rate_options.setter
     def video_bit_rate_options(self, video_bit_rate_options):
-        """Sets the video_bit_rate_options of this PoliciesDisplayOptions.
+        r"""Sets the video_bit_rate_options of this PoliciesDisplayOptions.
 
         :param video_bit_rate_options: The video_bit_rate_options of this PoliciesDisplayOptions.
         :type video_bit_rate_options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptionsVideoBitRateOptions`
@@ -375,7 +375,7 @@ class PoliciesDisplayOptions:
 
     @property
     def peak_video_bit_rate(self):
-        """Gets the peak_video_bit_rate of this PoliciesDisplayOptions.
+        r"""Gets the peak_video_bit_rate of this PoliciesDisplayOptions.
 
         视频峰值码率（Kbps）。取值范围为[256-100000]。默认：18000。
 
@@ -386,7 +386,7 @@ class PoliciesDisplayOptions:
 
     @peak_video_bit_rate.setter
     def peak_video_bit_rate(self, peak_video_bit_rate):
-        """Sets the peak_video_bit_rate of this PoliciesDisplayOptions.
+        r"""Sets the peak_video_bit_rate of this PoliciesDisplayOptions.
 
         视频峰值码率（Kbps）。取值范围为[256-100000]。默认：18000。
 
@@ -397,7 +397,7 @@ class PoliciesDisplayOptions:
 
     @property
     def video_quality_options(self):
-        """Gets the video_quality_options of this PoliciesDisplayOptions.
+        r"""Gets the video_quality_options of this PoliciesDisplayOptions.
 
         :return: The video_quality_options of this PoliciesDisplayOptions.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptionsVideoQualityOptions`
@@ -406,7 +406,7 @@ class PoliciesDisplayOptions:
 
     @video_quality_options.setter
     def video_quality_options(self, video_quality_options):
-        """Sets the video_quality_options of this PoliciesDisplayOptions.
+        r"""Sets the video_quality_options of this PoliciesDisplayOptions.
 
         :param video_quality_options: The video_quality_options of this PoliciesDisplayOptions.
         :type video_quality_options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptionsVideoQualityOptions`
@@ -415,7 +415,7 @@ class PoliciesDisplayOptions:
 
     @property
     def gop_size(self):
-        """Gets the gop_size of this PoliciesDisplayOptions.
+        r"""Gets the gop_size of this PoliciesDisplayOptions.
 
         GOP大小。取值范围为[0-65535]。默认：100。
 
@@ -426,7 +426,7 @@ class PoliciesDisplayOptions:
 
     @gop_size.setter
     def gop_size(self, gop_size):
-        """Sets the gop_size of this PoliciesDisplayOptions.
+        r"""Sets the gop_size of this PoliciesDisplayOptions.
 
         GOP大小。取值范围为[0-65535]。默认：100。
 
@@ -437,7 +437,7 @@ class PoliciesDisplayOptions:
 
     @property
     def encoding_preset(self):
-        """Gets the encoding_preset of this PoliciesDisplayOptions.
+        r"""Gets the encoding_preset of this PoliciesDisplayOptions.
 
         编码预置。取值为： 预置1：Preset 1。 预置2：Preset 2。 预置3：Preset 3。 预置4：Preset 4。 预置5：Preset 5。 预置6：Preset 6。 预置7：Preset 7。
 
@@ -448,7 +448,7 @@ class PoliciesDisplayOptions:
 
     @encoding_preset.setter
     def encoding_preset(self, encoding_preset):
-        """Sets the encoding_preset of this PoliciesDisplayOptions.
+        r"""Sets the encoding_preset of this PoliciesDisplayOptions.
 
         编码预置。取值为： 预置1：Preset 1。 预置2：Preset 2。 预置3：Preset 3。 预置4：Preset 4。 预置5：Preset 5。 预置6：Preset 6。 预置7：Preset 7。
 

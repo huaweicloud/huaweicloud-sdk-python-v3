@@ -30,7 +30,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, responses=None):
-        """ListGatewayResponsesV2Response
+        r"""ListGatewayResponsesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListGatewayResponsesV2Response.
+        r"""Gets the size of this ListGatewayResponsesV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListGatewayResponsesV2Response.
+        r"""Sets the size of this ListGatewayResponsesV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListGatewayResponsesV2Response.
+        r"""Gets the total of this ListGatewayResponsesV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListGatewayResponsesV2Response.
+        r"""Sets the total of this ListGatewayResponsesV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
 
     @property
     def responses(self):
-        """Gets the responses of this ListGatewayResponsesV2Response.
+        r"""Gets the responses of this ListGatewayResponsesV2Response.
 
         响应列表
 
@@ -111,7 +111,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
 
     @responses.setter
     def responses(self, responses):
-        """Sets the responses of this ListGatewayResponsesV2Response.
+        r"""Sets the responses of this ListGatewayResponsesV2Response.
 
         响应列表
 

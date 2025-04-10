@@ -40,7 +40,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, schema_id=None, version=None, format=None, created_time=None, updated_time=None, definition=None, x_request_id=None):
-        """CreateEventSchemaVersionResponse
+        r"""CreateEventSchemaVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEventSchemaVersionResponse.
+        r"""Gets the id of this CreateEventSchemaVersionResponse.
 
         事件模型版本ID
 
@@ -104,7 +104,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEventSchemaVersionResponse.
+        r"""Sets the id of this CreateEventSchemaVersionResponse.
 
         事件模型版本ID
 
@@ -115,7 +115,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this CreateEventSchemaVersionResponse.
+        r"""Gets the schema_id of this CreateEventSchemaVersionResponse.
 
         事件模型ID
 
@@ -126,7 +126,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this CreateEventSchemaVersionResponse.
+        r"""Sets the schema_id of this CreateEventSchemaVersionResponse.
 
         事件模型ID
 
@@ -137,7 +137,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateEventSchemaVersionResponse.
+        r"""Gets the version of this CreateEventSchemaVersionResponse.
 
         事件模型版本号
 
@@ -148,7 +148,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateEventSchemaVersionResponse.
+        r"""Sets the version of this CreateEventSchemaVersionResponse.
 
         事件模型版本号
 
@@ -159,7 +159,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def format(self):
-        """Gets the format of this CreateEventSchemaVersionResponse.
+        r"""Gets the format of this CreateEventSchemaVersionResponse.
 
         事件模型格式
 
@@ -170,7 +170,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CreateEventSchemaVersionResponse.
+        r"""Sets the format of this CreateEventSchemaVersionResponse.
 
         事件模型格式
 
@@ -181,7 +181,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateEventSchemaVersionResponse.
+        r"""Gets the created_time of this CreateEventSchemaVersionResponse.
 
         创建时间
 
@@ -192,7 +192,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateEventSchemaVersionResponse.
+        r"""Sets the created_time of this CreateEventSchemaVersionResponse.
 
         创建时间
 
@@ -203,7 +203,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this CreateEventSchemaVersionResponse.
+        r"""Gets the updated_time of this CreateEventSchemaVersionResponse.
 
         更新时间
 
@@ -214,7 +214,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this CreateEventSchemaVersionResponse.
+        r"""Sets the updated_time of this CreateEventSchemaVersionResponse.
 
         更新时间
 
@@ -225,7 +225,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def definition(self):
-        """Gets the definition of this CreateEventSchemaVersionResponse.
+        r"""Gets the definition of this CreateEventSchemaVersionResponse.
 
         事件模型内容定义
 
@@ -236,7 +236,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this CreateEventSchemaVersionResponse.
+        r"""Sets the definition of this CreateEventSchemaVersionResponse.
 
         事件模型内容定义
 
@@ -247,7 +247,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateEventSchemaVersionResponse.
+        r"""Gets the x_request_id of this CreateEventSchemaVersionResponse.
 
         :return: The x_request_id of this CreateEventSchemaVersionResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class CreateEventSchemaVersionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateEventSchemaVersionResponse.
+        r"""Sets the x_request_id of this CreateEventSchemaVersionResponse.
 
         :param x_request_id: The x_request_id of this CreateEventSchemaVersionResponse.
         :type x_request_id: str

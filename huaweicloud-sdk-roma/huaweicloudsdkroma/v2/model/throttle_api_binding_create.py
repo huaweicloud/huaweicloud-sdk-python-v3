@@ -27,7 +27,7 @@ class ThrottleApiBindingCreate:
     }
 
     def __init__(self, strategy_id=None, publish_ids=None):
-        """ThrottleApiBindingCreate
+        r"""ThrottleApiBindingCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ThrottleApiBindingCreate:
 
     @property
     def strategy_id(self):
-        """Gets the strategy_id of this ThrottleApiBindingCreate.
+        r"""Gets the strategy_id of this ThrottleApiBindingCreate.
 
         流控策略编号
 
@@ -59,7 +59,7 @@ class ThrottleApiBindingCreate:
 
     @strategy_id.setter
     def strategy_id(self, strategy_id):
-        """Sets the strategy_id of this ThrottleApiBindingCreate.
+        r"""Sets the strategy_id of this ThrottleApiBindingCreate.
 
         流控策略编号
 
@@ -70,7 +70,7 @@ class ThrottleApiBindingCreate:
 
     @property
     def publish_ids(self):
-        """Gets the publish_ids of this ThrottleApiBindingCreate.
+        r"""Gets the publish_ids of this ThrottleApiBindingCreate.
 
         API的发布记录编号
 
@@ -81,7 +81,7 @@ class ThrottleApiBindingCreate:
 
     @publish_ids.setter
     def publish_ids(self, publish_ids):
-        """Sets the publish_ids of this ThrottleApiBindingCreate.
+        r"""Sets the publish_ids of this ThrottleApiBindingCreate.
 
         API的发布记录编号
 

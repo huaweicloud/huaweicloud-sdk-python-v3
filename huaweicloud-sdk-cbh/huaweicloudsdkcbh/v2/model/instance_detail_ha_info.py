@@ -27,7 +27,7 @@ class InstanceDetailHaInfo:
     }
 
     def __init__(self, ha_id=None, instance_type=None):
-        """InstanceDetailHaInfo
+        r"""InstanceDetailHaInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InstanceDetailHaInfo:
 
     @property
     def ha_id(self):
-        """Gets the ha_id of this InstanceDetailHaInfo.
+        r"""Gets the ha_id of this InstanceDetailHaInfo.
 
         主备ID。
 
@@ -59,7 +59,7 @@ class InstanceDetailHaInfo:
 
     @ha_id.setter
     def ha_id(self, ha_id):
-        """Sets the ha_id of this InstanceDetailHaInfo.
+        r"""Sets the ha_id of this InstanceDetailHaInfo.
 
         主备ID。
 
@@ -70,7 +70,7 @@ class InstanceDetailHaInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this InstanceDetailHaInfo.
+        r"""Gets the instance_type of this InstanceDetailHaInfo.
 
         实例类型。 - master：主 - slave：备
 
@@ -81,7 +81,7 @@ class InstanceDetailHaInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this InstanceDetailHaInfo.
+        r"""Sets the instance_type of this InstanceDetailHaInfo.
 
         实例类型。 - master：主 - slave：备
 

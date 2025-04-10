@@ -25,7 +25,7 @@ class SearchCodeTablesResultData:
     }
 
     def __init__(self, value=None):
-        """SearchCodeTablesResultData
+        r"""SearchCodeTablesResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SearchCodeTablesResultData:
 
     @property
     def value(self):
-        """Gets the value of this SearchCodeTablesResultData.
+        r"""Gets the value of this SearchCodeTablesResultData.
 
         :return: The value of this SearchCodeTablesResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCodeTablesResultDataValue`
@@ -52,7 +52,7 @@ class SearchCodeTablesResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SearchCodeTablesResultData.
+        r"""Sets the value of this SearchCodeTablesResultData.
 
         :param value: The value of this SearchCodeTablesResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.SearchCodeTablesResultDataValue`

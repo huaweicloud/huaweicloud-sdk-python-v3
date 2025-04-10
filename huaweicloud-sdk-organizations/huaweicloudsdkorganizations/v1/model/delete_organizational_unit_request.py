@@ -28,7 +28,7 @@ class DeleteOrganizationalUnitRequest:
     }
 
     def __init__(self, x_security_token=None, organizational_unit_id=None):
-        """DeleteOrganizationalUnitRequest
+        r"""DeleteOrganizationalUnitRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteOrganizationalUnitRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeleteOrganizationalUnitRequest.
+        r"""Gets the x_security_token of this DeleteOrganizationalUnitRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class DeleteOrganizationalUnitRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeleteOrganizationalUnitRequest.
+        r"""Sets the x_security_token of this DeleteOrganizationalUnitRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class DeleteOrganizationalUnitRequest:
 
     @property
     def organizational_unit_id(self):
-        """Gets the organizational_unit_id of this DeleteOrganizationalUnitRequest.
+        r"""Gets the organizational_unit_id of this DeleteOrganizationalUnitRequest.
 
         与组织单元关联的唯一标识符（ID）。
 
@@ -83,7 +83,7 @@ class DeleteOrganizationalUnitRequest:
 
     @organizational_unit_id.setter
     def organizational_unit_id(self, organizational_unit_id):
-        """Sets the organizational_unit_id of this DeleteOrganizationalUnitRequest.
+        r"""Sets the organizational_unit_id of this DeleteOrganizationalUnitRequest.
 
         与组织单元关联的唯一标识符（ID）。
 

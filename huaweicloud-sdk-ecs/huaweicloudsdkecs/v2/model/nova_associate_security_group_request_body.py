@@ -25,7 +25,7 @@ class NovaAssociateSecurityGroupRequestBody:
     }
 
     def __init__(self, add_security_group=None):
-        """NovaAssociateSecurityGroupRequestBody
+        r"""NovaAssociateSecurityGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaAssociateSecurityGroupRequestBody:
 
     @property
     def add_security_group(self):
-        """Gets the add_security_group of this NovaAssociateSecurityGroupRequestBody.
+        r"""Gets the add_security_group of this NovaAssociateSecurityGroupRequestBody.
 
         :return: The add_security_group of this NovaAssociateSecurityGroupRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`
@@ -51,7 +51,7 @@ class NovaAssociateSecurityGroupRequestBody:
 
     @add_security_group.setter
     def add_security_group(self, add_security_group):
-        """Sets the add_security_group of this NovaAssociateSecurityGroupRequestBody.
+        r"""Sets the add_security_group of this NovaAssociateSecurityGroupRequestBody.
 
         :param add_security_group: The add_security_group of this NovaAssociateSecurityGroupRequestBody.
         :type add_security_group: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`

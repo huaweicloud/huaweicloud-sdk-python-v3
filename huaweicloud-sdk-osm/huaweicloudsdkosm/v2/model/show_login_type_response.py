@@ -26,7 +26,7 @@ class ShowLoginTypeResponse(SdkResponse):
     }
 
     def __init__(self, login_type=None):
-        """ShowLoginTypeResponse
+        r"""ShowLoginTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowLoginTypeResponse(SdkResponse):
 
     @property
     def login_type(self):
-        """Gets the login_type of this ShowLoginTypeResponse.
+        r"""Gets the login_type of this ShowLoginTypeResponse.
 
         登录类型
 
@@ -55,7 +55,7 @@ class ShowLoginTypeResponse(SdkResponse):
 
     @login_type.setter
     def login_type(self, login_type):
-        """Sets the login_type of this ShowLoginTypeResponse.
+        r"""Sets the login_type of this ShowLoginTypeResponse.
 
         登录类型
 

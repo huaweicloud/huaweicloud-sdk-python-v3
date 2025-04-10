@@ -26,7 +26,7 @@ class ConsumerGroupHeartBeatResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ConsumerGroupHeartBeatResponse
+        r"""ConsumerGroupHeartBeatResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ConsumerGroupHeartBeatResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ConsumerGroupHeartBeatResponse.
+        r"""Gets the body of this ConsumerGroupHeartBeatResponse.
 
         :return: The body of this ConsumerGroupHeartBeatResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ConsumerGroupHeartBeatResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConsumerGroupHeartBeatResponse.
+        r"""Sets the body of this ConsumerGroupHeartBeatResponse.
 
         :param body: The body of this ConsumerGroupHeartBeatResponse.
         :type body: list[str]

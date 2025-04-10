@@ -30,7 +30,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListComponentConfigurationsResponse
+        r"""ListComponentConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListComponentConfigurationsResponse.
+        r"""Gets the api_version of this ListComponentConfigurationsResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListComponentConfigurationsResponse.
+        r"""Sets the api_version of this ListComponentConfigurationsResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListComponentConfigurationsResponse.
+        r"""Gets the kind of this ListComponentConfigurationsResponse.
 
         API类型，固定值“ComponentConfiguration”，该值不可修改。
 
@@ -91,7 +91,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListComponentConfigurationsResponse.
+        r"""Sets the kind of this ListComponentConfigurationsResponse.
 
         API类型，固定值“ComponentConfiguration”，该值不可修改。
 
@@ -102,7 +102,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListComponentConfigurationsResponse.
+        r"""Gets the items of this ListComponentConfigurationsResponse.
 
         组件配置列表。
 
@@ -113,7 +113,7 @@ class ListComponentConfigurationsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListComponentConfigurationsResponse.
+        r"""Sets the items of this ListComponentConfigurationsResponse.
 
         组件配置列表。
 

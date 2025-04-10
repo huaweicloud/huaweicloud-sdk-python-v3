@@ -26,7 +26,7 @@ class ExecuteUploadPptResponse(SdkResponse):
     }
 
     def __init__(self, list=None):
-        """ExecuteUploadPptResponse
+        r"""ExecuteUploadPptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteUploadPptResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ExecuteUploadPptResponse.
+        r"""Gets the list of this ExecuteUploadPptResponse.
 
         图片链接列表
 
@@ -55,7 +55,7 @@ class ExecuteUploadPptResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ExecuteUploadPptResponse.
+        r"""Sets the list of this ExecuteUploadPptResponse.
 
         图片链接列表
 

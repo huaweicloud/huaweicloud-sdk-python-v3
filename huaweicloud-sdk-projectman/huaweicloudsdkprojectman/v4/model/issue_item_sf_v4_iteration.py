@@ -27,7 +27,7 @@ class IssueItemSfV4Iteration:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueItemSfV4Iteration
+        r"""IssueItemSfV4Iteration
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueItemSfV4Iteration:
 
     @property
     def id(self):
-        """Gets the id of this IssueItemSfV4Iteration.
+        r"""Gets the id of this IssueItemSfV4Iteration.
 
         迭代id
 
@@ -61,7 +61,7 @@ class IssueItemSfV4Iteration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueItemSfV4Iteration.
+        r"""Sets the id of this IssueItemSfV4Iteration.
 
         迭代id
 
@@ -72,7 +72,7 @@ class IssueItemSfV4Iteration:
 
     @property
     def name(self):
-        """Gets the name of this IssueItemSfV4Iteration.
+        r"""Gets the name of this IssueItemSfV4Iteration.
 
         迭代名
 
@@ -83,7 +83,7 @@ class IssueItemSfV4Iteration:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueItemSfV4Iteration.
+        r"""Sets the name of this IssueItemSfV4Iteration.
 
         迭代名
 

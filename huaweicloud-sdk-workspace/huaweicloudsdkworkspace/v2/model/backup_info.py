@@ -29,7 +29,7 @@ class BackupInfo:
     }
 
     def __init__(self, priority=None, address=None, address_custom=None):
-        """BackupInfo
+        r"""BackupInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BackupInfo:
 
     @property
     def priority(self):
-        """Gets the priority of this BackupInfo.
+        r"""Gets the priority of this BackupInfo.
 
         优先级，数字越小，优先级越高，取值1-255。
 
@@ -66,7 +66,7 @@ class BackupInfo:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this BackupInfo.
+        r"""Sets the priority of this BackupInfo.
 
         优先级，数字越小，优先级越高，取值1-255。
 
@@ -77,7 +77,7 @@ class BackupInfo:
 
     @property
     def address(self):
-        """Gets the address of this BackupInfo.
+        r"""Gets the address of this BackupInfo.
 
         接入备份地址。
 
@@ -88,7 +88,7 @@ class BackupInfo:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BackupInfo.
+        r"""Sets the address of this BackupInfo.
 
         接入备份地址。
 
@@ -99,7 +99,7 @@ class BackupInfo:
 
     @property
     def address_custom(self):
-        """Gets the address_custom of this BackupInfo.
+        r"""Gets the address_custom of this BackupInfo.
 
         租户自定义接入备份地址。
 
@@ -110,7 +110,7 @@ class BackupInfo:
 
     @address_custom.setter
     def address_custom(self, address_custom):
-        """Sets the address_custom of this BackupInfo.
+        r"""Sets the address_custom of this BackupInfo.
 
         租户自定义接入备份地址。
 

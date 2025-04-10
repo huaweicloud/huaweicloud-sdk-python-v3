@@ -30,7 +30,7 @@ class TagResourceRequest:
     }
 
     def __init__(self, x_security_token=None, resource_id=None, body=None):
-        """TagResourceRequest
+        r"""TagResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TagResourceRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this TagResourceRequest.
+        r"""Gets the x_security_token of this TagResourceRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class TagResourceRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this TagResourceRequest.
+        r"""Sets the x_security_token of this TagResourceRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class TagResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TagResourceRequest.
+        r"""Gets the resource_id of this TagResourceRequest.
 
         根、组织单元、账号或策略的唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class TagResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TagResourceRequest.
+        r"""Sets the resource_id of this TagResourceRequest.
 
         根、组织单元、账号或策略的唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class TagResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this TagResourceRequest.
+        r"""Gets the body of this TagResourceRequest.
 
         :return: The body of this TagResourceRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.TagResourceReqBody`
@@ -110,7 +110,7 @@ class TagResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagResourceRequest.
+        r"""Sets the body of this TagResourceRequest.
 
         :param body: The body of this TagResourceRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.TagResourceReqBody`

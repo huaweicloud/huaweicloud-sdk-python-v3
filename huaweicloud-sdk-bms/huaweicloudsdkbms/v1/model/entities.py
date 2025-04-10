@@ -27,7 +27,7 @@ class Entities:
     }
 
     def __init__(self, sub_jobs_total=None, sub_jobs=None):
-        """Entities
+        r"""Entities
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Entities:
 
     @property
     def sub_jobs_total(self):
-        """Gets the sub_jobs_total of this Entities.
+        r"""Gets the sub_jobs_total of this Entities.
 
         子任务数量。没有子任务时为0
 
@@ -61,7 +61,7 @@ class Entities:
 
     @sub_jobs_total.setter
     def sub_jobs_total(self, sub_jobs_total):
-        """Sets the sub_jobs_total of this Entities.
+        r"""Sets the sub_jobs_total of this Entities.
 
         子任务数量。没有子任务时为0
 
@@ -72,7 +72,7 @@ class Entities:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this Entities.
+        r"""Gets the sub_jobs of this Entities.
 
         每个子任务的执行信息。没有子任务时为空列表
 
@@ -83,7 +83,7 @@ class Entities:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this Entities.
+        r"""Sets the sub_jobs of this Entities.
 
         每个子任务的执行信息。没有子任务时为空列表
 

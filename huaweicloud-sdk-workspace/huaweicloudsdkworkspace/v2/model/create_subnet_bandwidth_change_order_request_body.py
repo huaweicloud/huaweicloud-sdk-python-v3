@@ -33,7 +33,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
     }
 
     def __init__(self, bandwidth_name=None, bandwidth_size=None, cloud_service_console_url=None, enterprise_project_id=None, extend_param=None):
-        """CreateSubnetBandwidthChangeOrderRequestBody
+        r"""CreateSubnetBandwidthChangeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Gets the bandwidth_name of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         云办公带宽名称。
 
@@ -81,7 +81,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Sets the bandwidth_name of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         云办公带宽名称。
 
@@ -92,7 +92,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Gets the bandwidth_size of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         变更云办公带宽的带宽大小。
 
@@ -103,7 +103,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Sets the bandwidth_size of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         变更云办公带宽的带宽大小。
 
@@ -114,7 +114,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @property
     def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Gets the cloud_service_console_url of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         支付后跳转url
 
@@ -125,7 +125,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @cloud_service_console_url.setter
     def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Sets the cloud_service_console_url of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         支付后跳转url
 
@@ -136,7 +136,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Gets the enterprise_project_id of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         企业项目ID
 
@@ -147,7 +147,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Sets the enterprise_project_id of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         企业项目ID
 
@@ -158,7 +158,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Gets the extend_param of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         :return: The extend_param of this CreateSubnetBandwidthChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`
@@ -167,7 +167,7 @@ class CreateSubnetBandwidthChangeOrderRequestBody:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this CreateSubnetBandwidthChangeOrderRequestBody.
+        r"""Sets the extend_param of this CreateSubnetBandwidthChangeOrderRequestBody.
 
         :param extend_param: The extend_param of this CreateSubnetBandwidthChangeOrderRequestBody.
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`

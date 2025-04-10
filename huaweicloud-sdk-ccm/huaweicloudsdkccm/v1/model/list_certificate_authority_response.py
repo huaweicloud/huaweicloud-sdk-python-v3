@@ -28,7 +28,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, total=None, certificate_authorities=None):
-        """ListCertificateAuthorityResponse
+        r"""ListCertificateAuthorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCertificateAuthorityResponse.
+        r"""Gets the total of this ListCertificateAuthorityResponse.
 
         CA证书总数。
 
@@ -62,7 +62,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCertificateAuthorityResponse.
+        r"""Sets the total of this ListCertificateAuthorityResponse.
 
         CA证书总数。
 
@@ -73,7 +73,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
 
     @property
     def certificate_authorities(self):
-        """Gets the certificate_authorities of this ListCertificateAuthorityResponse.
+        r"""Gets the certificate_authorities of this ListCertificateAuthorityResponse.
 
         CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
 
@@ -84,7 +84,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
 
     @certificate_authorities.setter
     def certificate_authorities(self, certificate_authorities):
-        """Sets the certificate_authorities of this ListCertificateAuthorityResponse.
+        r"""Sets the certificate_authorities of this ListCertificateAuthorityResponse.
 
         CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
 

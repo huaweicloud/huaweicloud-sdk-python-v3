@@ -43,7 +43,7 @@ class QueryResourceResultDTO:
     }
 
     def __init__(self, id=None, type=None, type_id=None, type_desc=None, vmr_mode=None, count=None, expire_date=None, order_id=None, status=None, editable=None):
-        """QueryResourceResultDTO
+        r"""QueryResourceResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class QueryResourceResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryResourceResultDTO.
+        r"""Gets the id of this QueryResourceResultDTO.
 
         唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID。
 
@@ -117,7 +117,7 @@ class QueryResourceResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryResourceResultDTO.
+        r"""Sets the id of this QueryResourceResultDTO.
 
         唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID。
 
@@ -128,7 +128,7 @@ class QueryResourceResultDTO:
 
     @property
     def type(self):
-        """Gets the type of this QueryResourceResultDTO.
+        r"""Gets the type of this QueryResourceResultDTO.
 
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
@@ -139,7 +139,7 @@ class QueryResourceResultDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryResourceResultDTO.
+        r"""Sets the type of this QueryResourceResultDTO.
 
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
@@ -150,7 +150,7 @@ class QueryResourceResultDTO:
 
     @property
     def type_id(self):
-        """Gets the type_id of this QueryResourceResultDTO.
+        r"""Gets the type_id of this QueryResourceResultDTO.
 
         资源标识，比如资源类型为VMR，则该参数为vmrPkgId。
 
@@ -161,7 +161,7 @@ class QueryResourceResultDTO:
 
     @type_id.setter
     def type_id(self, type_id):
-        """Sets the type_id of this QueryResourceResultDTO.
+        r"""Sets the type_id of this QueryResourceResultDTO.
 
         资源标识，比如资源类型为VMR，则该参数为vmrPkgId。
 
@@ -172,7 +172,7 @@ class QueryResourceResultDTO:
 
     @property
     def type_desc(self):
-        """Gets the type_desc of this QueryResourceResultDTO.
+        r"""Gets the type_desc of this QueryResourceResultDTO.
 
         资源标识对应的回显描述,比如资源类型为VMR，则该参数为vmrPkgName。
 
@@ -183,7 +183,7 @@ class QueryResourceResultDTO:
 
     @type_desc.setter
     def type_desc(self, type_desc):
-        """Sets the type_desc of this QueryResourceResultDTO.
+        r"""Sets the type_desc of this QueryResourceResultDTO.
 
         资源标识对应的回显描述,比如资源类型为VMR，则该参数为vmrPkgName。
 
@@ -194,7 +194,7 @@ class QueryResourceResultDTO:
 
     @property
     def vmr_mode(self):
-        """Gets the vmr_mode of this QueryResourceResultDTO.
+        r"""Gets the vmr_mode of this QueryResourceResultDTO.
 
         VMR模式。 - 0：个人会议ID - 1：云会议室 - 2：网络研讨会
 
@@ -205,7 +205,7 @@ class QueryResourceResultDTO:
 
     @vmr_mode.setter
     def vmr_mode(self, vmr_mode):
-        """Sets the vmr_mode of this QueryResourceResultDTO.
+        r"""Sets the vmr_mode of this QueryResourceResultDTO.
 
         VMR模式。 - 0：个人会议ID - 1：云会议室 - 2：网络研讨会
 
@@ -216,7 +216,7 @@ class QueryResourceResultDTO:
 
     @property
     def count(self):
-        """Gets the count of this QueryResourceResultDTO.
+        r"""Gets the count of this QueryResourceResultDTO.
 
         资源数量。
 
@@ -227,7 +227,7 @@ class QueryResourceResultDTO:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this QueryResourceResultDTO.
+        r"""Sets the count of this QueryResourceResultDTO.
 
         资源数量。
 
@@ -238,7 +238,7 @@ class QueryResourceResultDTO:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this QueryResourceResultDTO.
+        r"""Gets the expire_date of this QueryResourceResultDTO.
 
         到期时间,utc时间戳。
 
@@ -249,7 +249,7 @@ class QueryResourceResultDTO:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this QueryResourceResultDTO.
+        r"""Sets the expire_date of this QueryResourceResultDTO.
 
         到期时间,utc时间戳。
 
@@ -260,7 +260,7 @@ class QueryResourceResultDTO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this QueryResourceResultDTO.
+        r"""Gets the order_id of this QueryResourceResultDTO.
 
         资源对应的订单id。
 
@@ -271,7 +271,7 @@ class QueryResourceResultDTO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this QueryResourceResultDTO.
+        r"""Sets the order_id of this QueryResourceResultDTO.
 
         资源对应的订单id。
 
@@ -282,7 +282,7 @@ class QueryResourceResultDTO:
 
     @property
     def status(self):
-        """Gets the status of this QueryResourceResultDTO.
+        r"""Gets the status of this QueryResourceResultDTO.
 
         资源状态: - 0：正常 - 1：到期 - 2：停用
 
@@ -293,7 +293,7 @@ class QueryResourceResultDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryResourceResultDTO.
+        r"""Sets the status of this QueryResourceResultDTO.
 
         资源状态: - 0：正常 - 1：到期 - 2：停用
 
@@ -304,7 +304,7 @@ class QueryResourceResultDTO:
 
     @property
     def editable(self):
-        """Gets the editable of this QueryResourceResultDTO.
+        r"""Gets the editable of this QueryResourceResultDTO.
 
         标识资源是否可以编辑或删除。
 
@@ -315,7 +315,7 @@ class QueryResourceResultDTO:
 
     @editable.setter
     def editable(self, editable):
-        """Sets the editable of this QueryResourceResultDTO.
+        r"""Sets the editable of this QueryResourceResultDTO.
 
         标识资源是否可以编辑或删除。
 

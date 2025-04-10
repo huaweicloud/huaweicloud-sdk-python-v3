@@ -28,7 +28,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
     }
 
     def __init__(self, success=None, failed=None):
-        """BatchFreezeDevicesResponse
+        r"""BatchFreezeDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this BatchFreezeDevicesResponse.
+        r"""Gets the success of this BatchFreezeDevicesResponse.
 
         下线成功设备列表
 
@@ -62,7 +62,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchFreezeDevicesResponse.
+        r"""Sets the success of this BatchFreezeDevicesResponse.
 
         下线成功设备列表
 
@@ -73,7 +73,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
 
     @property
     def failed(self):
-        """Gets the failed of this BatchFreezeDevicesResponse.
+        r"""Gets the failed of this BatchFreezeDevicesResponse.
 
         下线失败设备列表
 
@@ -84,7 +84,7 @@ class BatchFreezeDevicesResponse(SdkResponse):
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this BatchFreezeDevicesResponse.
+        r"""Sets the failed of this BatchFreezeDevicesResponse.
 
         下线失败设备列表
 

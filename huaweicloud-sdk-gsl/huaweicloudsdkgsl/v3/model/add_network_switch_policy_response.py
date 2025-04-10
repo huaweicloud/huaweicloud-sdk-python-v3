@@ -26,7 +26,7 @@ class AddNetworkSwitchPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddNetworkSwitchPolicyResponse
+        r"""AddNetworkSwitchPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddNetworkSwitchPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddNetworkSwitchPolicyResponse.
+        r"""Gets the body of this AddNetworkSwitchPolicyResponse.
 
         :return: The body of this AddNetworkSwitchPolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddNetworkSwitchPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddNetworkSwitchPolicyResponse.
+        r"""Sets the body of this AddNetworkSwitchPolicyResponse.
 
         :param body: The body of this AddNetworkSwitchPolicyResponse.
         :type body: str

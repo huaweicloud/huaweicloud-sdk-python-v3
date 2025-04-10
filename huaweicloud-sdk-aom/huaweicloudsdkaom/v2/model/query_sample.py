@@ -29,7 +29,7 @@ class QuerySample:
     }
 
     def __init__(self, namespace=None, dimensions=None, metric_name=None):
-        """QuerySample
+        r"""QuerySample
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class QuerySample:
 
     @property
     def namespace(self):
-        """Gets the namespace of this QuerySample.
+        r"""Gets the namespace of this QuerySample.
 
         时间序列命名空间。取值范围： PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。PAAS.CONTAINER：应用时间序列命名空间； PAAS.NODE：节点时间序列命名空间； PAAS.SLA：SLA时间序列命名空间；PAAS.AGGR：集群时间序列命名空间； CUSTOMMETRICS：自定义时间序列命名空间。
 
@@ -65,7 +65,7 @@ class QuerySample:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this QuerySample.
+        r"""Sets the namespace of this QuerySample.
 
         时间序列命名空间。取值范围： PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。PAAS.CONTAINER：应用时间序列命名空间； PAAS.NODE：节点时间序列命名空间； PAAS.SLA：SLA时间序列命名空间；PAAS.AGGR：集群时间序列命名空间； CUSTOMMETRICS：自定义时间序列命名空间。
 
@@ -76,7 +76,7 @@ class QuerySample:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this QuerySample.
+        r"""Gets the dimensions of this QuerySample.
 
         时间序列维度列表。 可通过/v2/{project_id}/series接口中namespace+metric_name，查询当前监控的时间序列名称的时间序列维度列表。
 
@@ -87,7 +87,7 @@ class QuerySample:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this QuerySample.
+        r"""Sets the dimensions of this QuerySample.
 
         时间序列维度列表。 可通过/v2/{project_id}/series接口中namespace+metric_name，查询当前监控的时间序列名称的时间序列维度列表。
 
@@ -98,7 +98,7 @@ class QuerySample:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this QuerySample.
+        r"""Gets the metric_name of this QuerySample.
 
         时间序列名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等，cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义时间序列名称。
 
@@ -109,7 +109,7 @@ class QuerySample:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this QuerySample.
+        r"""Sets the metric_name of this QuerySample.
 
         时间序列名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等，cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义时间序列名称。
 

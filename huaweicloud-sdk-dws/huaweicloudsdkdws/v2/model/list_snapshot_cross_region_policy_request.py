@@ -29,7 +29,7 @@ class ListSnapshotCrossRegionPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None):
-        """ListSnapshotCrossRegionPolicyRequest
+        r"""ListSnapshotCrossRegionPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSnapshotCrossRegionPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSnapshotCrossRegionPolicyRequest.
+        r"""Gets the cluster_id of this ListSnapshotCrossRegionPolicyRequest.
 
         集群ID
 
@@ -68,7 +68,7 @@ class ListSnapshotCrossRegionPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSnapshotCrossRegionPolicyRequest.
+        r"""Sets the cluster_id of this ListSnapshotCrossRegionPolicyRequest.
 
         集群ID
 
@@ -79,7 +79,7 @@ class ListSnapshotCrossRegionPolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSnapshotCrossRegionPolicyRequest.
+        r"""Gets the offset of this ListSnapshotCrossRegionPolicyRequest.
 
         分页偏移
 
@@ -90,7 +90,7 @@ class ListSnapshotCrossRegionPolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSnapshotCrossRegionPolicyRequest.
+        r"""Sets the offset of this ListSnapshotCrossRegionPolicyRequest.
 
         分页偏移
 
@@ -101,7 +101,7 @@ class ListSnapshotCrossRegionPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSnapshotCrossRegionPolicyRequest.
+        r"""Gets the limit of this ListSnapshotCrossRegionPolicyRequest.
 
         分页大小
 
@@ -112,7 +112,7 @@ class ListSnapshotCrossRegionPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSnapshotCrossRegionPolicyRequest.
+        r"""Sets the limit of this ListSnapshotCrossRegionPolicyRequest.
 
         分页大小
 

@@ -26,7 +26,7 @@ class RunActionsOnWorkspaceJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RunActionsOnWorkspaceJobResponse
+        r"""RunActionsOnWorkspaceJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunActionsOnWorkspaceJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunActionsOnWorkspaceJobResponse.
+        r"""Gets the job_id of this RunActionsOnWorkspaceJobResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class RunActionsOnWorkspaceJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunActionsOnWorkspaceJobResponse.
+        r"""Sets the job_id of this RunActionsOnWorkspaceJobResponse.
 
         任务ID
 

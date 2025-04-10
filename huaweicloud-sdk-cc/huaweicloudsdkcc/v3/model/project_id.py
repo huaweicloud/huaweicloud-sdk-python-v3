@@ -25,7 +25,7 @@ class ProjectId:
     }
 
     def __init__(self, project_id=None):
-        """ProjectId
+        r"""ProjectId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProjectId:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ProjectId.
+        r"""Gets the project_id of this ProjectId.
 
         实例所属项目ID。
 
@@ -53,7 +53,7 @@ class ProjectId:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ProjectId.
+        r"""Sets the project_id of this ProjectId.
 
         实例所属项目ID。
 

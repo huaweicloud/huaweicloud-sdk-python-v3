@@ -34,7 +34,7 @@ class DwrClient(Client):
         return client_builder
 
     def accept_service_contract(self, request):
-        """同意服务协议
+        r"""同意服务协议
 
         本接口用于使用工作流时需要同意服务使用协议。该函数具有幂等性。
         
@@ -99,7 +99,7 @@ class DwrClient(Client):
         return http_info
 
     def async_invoke_api_start_workflow(self, request):
-        """API异步启动工作流
+        r"""API异步启动工作流
 
         本接口用于API方式异步启动已有工作流，产生工作流实例
         
@@ -166,7 +166,7 @@ class DwrClient(Client):
         return http_info
 
     def check_workflow_authentication(self, request):
-        """查询授权
+        r"""查询授权
 
         本接口用于查询授权，查询由DWR服务自动帮助用户创建工作流运行时需要的函数服务权限，以及函数服务运行时的权限。该函数具有幂等性。
         
@@ -229,7 +229,7 @@ class DwrClient(Client):
         return http_info
 
     def create_my_action_template(self, request):
-        """创建第三方算子模板
+        r"""创建第三方算子模板
 
         创建第三方算子模板
         
@@ -296,7 +296,7 @@ class DwrClient(Client):
         return http_info
 
     def create_workflow_authentication(self, request):
-        """开通授权
+        r"""开通授权
 
         本接口用于开通授权，由DWR服务自动帮助用户创建工作流运行时需要的函数服务权限，以及函数服务运行时的权限。该函数具有幂等性。
         
@@ -359,7 +359,7 @@ class DwrClient(Client):
         return http_info
 
     def delete_my_action_template(self, request):
-        """删除第三方算子模板
+        r"""删除第三方算子模板
 
         本接口用于标记删除提交的第三方算子模板。
         
@@ -424,7 +424,7 @@ class DwrClient(Client):
         return http_info
 
     def list_my_action_template(self, request):
-        """查询第三方算子列表
+        r"""查询第三方算子列表
 
         本接口用于查询提交注册过的三方算子列表。
         
@@ -497,7 +497,7 @@ class DwrClient(Client):
         return http_info
 
     def list_system_templates(self, request):
-        """查询华为云内置算子列表
+        r"""查询华为云内置算子列表
 
         本接口用于按名称查询系统内置算子列表。
         
@@ -568,7 +568,7 @@ class DwrClient(Client):
         return http_info
 
     def list_workflow_instance(self, request):
-        """本接口用于查询用户工作流的实例列表
+        r"""本接口用于查询用户工作流的实例列表
 
         本接口用于查询用户工作流的实例列表。
         
@@ -643,7 +643,7 @@ class DwrClient(Client):
         return http_info
 
     def restore_workflow_execution(self, request):
-        """恢复一个执行失败状态的工作流实例
+        r"""恢复一个执行失败状态的工作流实例
 
         本接口用于恢复一个执行失败状态的工作流实例。恢复后，工作流实例将从上次失败的状态处继续执行，而工作流步骤中已经执行成功的状态不会再执行。
         
@@ -710,7 +710,7 @@ class DwrClient(Client):
         return http_info
 
     def show_public_action_list(self, request):
-        """查询已发布算子列表
+        r"""查询已发布算子列表
 
         本接口用于查询开放的算子列表。
         
@@ -781,7 +781,7 @@ class DwrClient(Client):
         return http_info
 
     def show_public_template_info(self, request):
-        """查询已发布算子模板详情
+        r"""查询已发布算子模板详情
 
         本接口用于按名称查询开放的算子详情。
         
@@ -846,7 +846,7 @@ class DwrClient(Client):
         return http_info
 
     def show_service_contract(self, request):
-        """查询服务协议
+        r"""查询服务协议
 
         本接口用于查询使用工作流时同意的服务协议。该函数具有幂等性。
         
@@ -911,7 +911,7 @@ class DwrClient(Client):
         return http_info
 
     def show_system_template_detail(self, request):
-        """查询华为云内置算子模板信息
+        r"""查询华为云内置算子模板信息
 
         本接口用于按名称查询系统内置算子详情。
         
@@ -976,7 +976,7 @@ class DwrClient(Client):
         return http_info
 
     def show_third_template_info(self, request):
-        """查询公共Action模板详情
+        r"""查询公共Action模板详情
 
         本接口用于按名称查询第三方模板详情
         
@@ -1041,7 +1041,7 @@ class DwrClient(Client):
         return http_info
 
     def show_workflow_instance(self, request):
-        """本接口用于查询指定工作流实例详细
+        r"""本接口用于查询指定工作流实例详细
 
         本接口用于查询指定工作流实例详细。
         
@@ -1108,7 +1108,7 @@ class DwrClient(Client):
         return http_info
 
     def update_my_action_template(self, request):
-        """更新第三方算子模板
+        r"""更新第三方算子模板
 
         本接口用于修改第三方算子和将三方算子提交审核
         
@@ -1175,7 +1175,7 @@ class DwrClient(Client):
         return http_info
 
     def update_my_action_template_to_deprecated(self, request):
-        """禁用第三方算子模板
+        r"""禁用第三方算子模板
 
         本接口用于申请禁用第三方算子。
         
@@ -1240,7 +1240,7 @@ class DwrClient(Client):
         return http_info
 
     def create_workflow(self, request):
-        """创建工作流
+        r"""创建工作流
 
         本接口用于通过Body体直接创建工作流
         
@@ -1307,7 +1307,7 @@ class DwrClient(Client):
         return http_info
 
     def delete_workflow(self, request):
-        """删除工作流
+        r"""删除工作流
 
         本接口用于删除工作流。
         
@@ -1372,7 +1372,7 @@ class DwrClient(Client):
         return http_info
 
     def list_workflows(self, request):
-        """查询工作流列表
+        r"""查询工作流列表
 
         本接口用于查询工作流列表。
         
@@ -1441,7 +1441,7 @@ class DwrClient(Client):
         return http_info
 
     def show_workflow_info(self, request):
-        """查询工作流信息
+        r"""查询工作流信息
 
         本接口用于根据工作流名称查询工作流详细信息。
         
@@ -1506,7 +1506,7 @@ class DwrClient(Client):
         return http_info
 
     def update_workflow(self, request):
-        """更新工作流
+        r"""更新工作流
 
         Update Workflow
         

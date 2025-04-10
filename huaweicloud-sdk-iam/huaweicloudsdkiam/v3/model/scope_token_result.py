@@ -39,7 +39,7 @@ class ScopeTokenResult:
     }
 
     def __init__(self, methods=None, expires_at=None, catalog=None, domain=None, project=None, roles=None, user=None, issued_at=None):
-        """ScopeTokenResult
+        r"""ScopeTokenResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ScopeTokenResult:
 
     @property
     def methods(self):
-        """Gets the methods of this ScopeTokenResult.
+        r"""Gets the methods of this ScopeTokenResult.
 
         获取token的方式。
 
@@ -96,7 +96,7 @@ class ScopeTokenResult:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this ScopeTokenResult.
+        r"""Sets the methods of this ScopeTokenResult.
 
         获取token的方式。
 
@@ -107,7 +107,7 @@ class ScopeTokenResult:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this ScopeTokenResult.
+        r"""Gets the expires_at of this ScopeTokenResult.
 
         token过期时间。
 
@@ -118,7 +118,7 @@ class ScopeTokenResult:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this ScopeTokenResult.
+        r"""Sets the expires_at of this ScopeTokenResult.
 
         token过期时间。
 
@@ -129,7 +129,7 @@ class ScopeTokenResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ScopeTokenResult.
+        r"""Gets the catalog of this ScopeTokenResult.
 
         服务目录信息。
 
@@ -140,7 +140,7 @@ class ScopeTokenResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ScopeTokenResult.
+        r"""Sets the catalog of this ScopeTokenResult.
 
         服务目录信息。
 
@@ -151,7 +151,7 @@ class ScopeTokenResult:
 
     @property
     def domain(self):
-        """Gets the domain of this ScopeTokenResult.
+        r"""Gets the domain of this ScopeTokenResult.
 
         :return: The domain of this ScopeTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -160,7 +160,7 @@ class ScopeTokenResult:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ScopeTokenResult.
+        r"""Sets the domain of this ScopeTokenResult.
 
         :param domain: The domain of this ScopeTokenResult.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -169,7 +169,7 @@ class ScopeTokenResult:
 
     @property
     def project(self):
-        """Gets the project of this ScopeTokenResult.
+        r"""Gets the project of this ScopeTokenResult.
 
         :return: The project of this ScopeTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
@@ -178,7 +178,7 @@ class ScopeTokenResult:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ScopeTokenResult.
+        r"""Sets the project of this ScopeTokenResult.
 
         :param project: The project of this ScopeTokenResult.
         :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
@@ -187,7 +187,7 @@ class ScopeTokenResult:
 
     @property
     def roles(self):
-        """Gets the roles of this ScopeTokenResult.
+        r"""Gets the roles of this ScopeTokenResult.
 
         token的权限信息。
 
@@ -198,7 +198,7 @@ class ScopeTokenResult:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ScopeTokenResult.
+        r"""Sets the roles of this ScopeTokenResult.
 
         token的权限信息。
 
@@ -209,7 +209,7 @@ class ScopeTokenResult:
 
     @property
     def user(self):
-        """Gets the user of this ScopeTokenResult.
+        r"""Gets the user of this ScopeTokenResult.
 
         :return: The user of this ScopeTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenUser`
@@ -218,7 +218,7 @@ class ScopeTokenResult:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ScopeTokenResult.
+        r"""Sets the user of this ScopeTokenResult.
 
         :param user: The user of this ScopeTokenResult.
         :type user: :class:`huaweicloudsdkiam.v3.ScopedTokenUser`
@@ -227,7 +227,7 @@ class ScopeTokenResult:
 
     @property
     def issued_at(self):
-        """Gets the issued_at of this ScopeTokenResult.
+        r"""Gets the issued_at of this ScopeTokenResult.
 
         token下发时间。
 
@@ -238,7 +238,7 @@ class ScopeTokenResult:
 
     @issued_at.setter
     def issued_at(self, issued_at):
-        """Sets the issued_at of this ScopeTokenResult.
+        r"""Sets the issued_at of this ScopeTokenResult.
 
         token下发时间。
 

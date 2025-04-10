@@ -39,7 +39,7 @@ class DdlAlarmResp:
     }
 
     def __init__(self, seqno=None, checkpoint=None, status=None, ddl_timestamp=None, ddl_text=None, exe_result=None, record_time=None, clean_time=None):
-        """DdlAlarmResp
+        r"""DdlAlarmResp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DdlAlarmResp:
 
     @property
     def seqno(self):
-        """Gets the seqno of this DdlAlarmResp.
+        r"""Gets the seqno of this DdlAlarmResp.
 
         记录唯一序号。
 
@@ -96,7 +96,7 @@ class DdlAlarmResp:
 
     @seqno.setter
     def seqno(self, seqno):
-        """Sets the seqno of this DdlAlarmResp.
+        r"""Sets the seqno of this DdlAlarmResp.
 
         记录唯一序号。
 
@@ -107,7 +107,7 @@ class DdlAlarmResp:
 
     @property
     def checkpoint(self):
-        """Gets the checkpoint of this DdlAlarmResp.
+        r"""Gets the checkpoint of this DdlAlarmResp.
 
         数据源库位点。
 
@@ -118,7 +118,7 @@ class DdlAlarmResp:
 
     @checkpoint.setter
     def checkpoint(self, checkpoint):
-        """Sets the checkpoint of this DdlAlarmResp.
+        r"""Sets the checkpoint of this DdlAlarmResp.
 
         数据源库位点。
 
@@ -129,7 +129,7 @@ class DdlAlarmResp:
 
     @property
     def status(self):
-        """Gets the status of this DdlAlarmResp.
+        r"""Gets the status of this DdlAlarmResp.
 
         DDL告警状态。0无告警，1告警中。
 
@@ -140,7 +140,7 @@ class DdlAlarmResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DdlAlarmResp.
+        r"""Sets the status of this DdlAlarmResp.
 
         DDL告警状态。0无告警，1告警中。
 
@@ -151,7 +151,7 @@ class DdlAlarmResp:
 
     @property
     def ddl_timestamp(self):
-        """Gets the ddl_timestamp of this DdlAlarmResp.
+        r"""Gets the ddl_timestamp of this DdlAlarmResp.
 
         DDL在源库执行时间。
 
@@ -162,7 +162,7 @@ class DdlAlarmResp:
 
     @ddl_timestamp.setter
     def ddl_timestamp(self, ddl_timestamp):
-        """Sets the ddl_timestamp of this DdlAlarmResp.
+        r"""Sets the ddl_timestamp of this DdlAlarmResp.
 
         DDL在源库执行时间。
 
@@ -173,7 +173,7 @@ class DdlAlarmResp:
 
     @property
     def ddl_text(self):
-        """Gets the ddl_text of this DdlAlarmResp.
+        r"""Gets the ddl_text of this DdlAlarmResp.
 
         DDL内容。
 
@@ -184,7 +184,7 @@ class DdlAlarmResp:
 
     @ddl_text.setter
     def ddl_text(self, ddl_text):
-        """Sets the ddl_text of this DdlAlarmResp.
+        r"""Sets the ddl_text of this DdlAlarmResp.
 
         DDL内容。
 
@@ -195,7 +195,7 @@ class DdlAlarmResp:
 
     @property
     def exe_result(self):
-        """Gets the exe_result of this DdlAlarmResp.
+        r"""Gets the exe_result of this DdlAlarmResp.
 
         DDL执行结果。false执行失败，true执行成功。
 
@@ -206,7 +206,7 @@ class DdlAlarmResp:
 
     @exe_result.setter
     def exe_result(self, exe_result):
-        """Sets the exe_result of this DdlAlarmResp.
+        r"""Sets the exe_result of this DdlAlarmResp.
 
         DDL执行结果。false执行失败，true执行成功。
 
@@ -217,7 +217,7 @@ class DdlAlarmResp:
 
     @property
     def record_time(self):
-        """Gets the record_time of this DdlAlarmResp.
+        r"""Gets the record_time of this DdlAlarmResp.
 
         数据记录时间。
 
@@ -228,7 +228,7 @@ class DdlAlarmResp:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this DdlAlarmResp.
+        r"""Sets the record_time of this DdlAlarmResp.
 
         数据记录时间。
 
@@ -239,7 +239,7 @@ class DdlAlarmResp:
 
     @property
     def clean_time(self):
-        """Gets the clean_time of this DdlAlarmResp.
+        r"""Gets the clean_time of this DdlAlarmResp.
 
         DDL告警清理时间。
 
@@ -250,7 +250,7 @@ class DdlAlarmResp:
 
     @clean_time.setter
     def clean_time(self, clean_time):
-        """Sets the clean_time of this DdlAlarmResp.
+        r"""Sets the clean_time of this DdlAlarmResp.
 
         DDL告警清理时间。
 

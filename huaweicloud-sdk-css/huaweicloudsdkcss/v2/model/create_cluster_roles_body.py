@@ -31,7 +31,7 @@ class CreateClusterRolesBody:
     }
 
     def __init__(self, flavor_ref=None, volume=None, type=None, instance_num=None):
-        """CreateClusterRolesBody
+        r"""CreateClusterRolesBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateClusterRolesBody:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateClusterRolesBody.
+        r"""Gets the flavor_ref of this CreateClusterRolesBody.
 
         实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
 
@@ -71,7 +71,7 @@ class CreateClusterRolesBody:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateClusterRolesBody.
+        r"""Sets the flavor_ref of this CreateClusterRolesBody.
 
         实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
 
@@ -82,7 +82,7 @@ class CreateClusterRolesBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateClusterRolesBody.
+        r"""Gets the volume of this CreateClusterRolesBody.
 
         :return: The volume of this CreateClusterRolesBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
@@ -91,7 +91,7 @@ class CreateClusterRolesBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateClusterRolesBody.
+        r"""Sets the volume of this CreateClusterRolesBody.
 
         :param volume: The volume of this CreateClusterRolesBody.
         :type volume: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
@@ -100,7 +100,7 @@ class CreateClusterRolesBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateClusterRolesBody.
+        r"""Gets the type of this CreateClusterRolesBody.
 
         实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
 
@@ -111,7 +111,7 @@ class CreateClusterRolesBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateClusterRolesBody.
+        r"""Sets the type of this CreateClusterRolesBody.
 
         实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
 
@@ -122,7 +122,7 @@ class CreateClusterRolesBody:
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this CreateClusterRolesBody.
+        r"""Gets the instance_num of this CreateClusterRolesBody.
 
         实例个数。 - ess节点，选择范围：1~32个节点数量。   - 若同时选择ess和ess-master时，可以选择1~200个节点数量。    - 若同时选择ess和ess-client时，可以选择1~32个节点数量。    - 若同时选择ess和ess-cold时，可以选择1~32个节点数量。 - ess-master节点，选择范围：3~10内的奇数个节点数量。 - ess-client节点，选择范围：1~32个节点数量。 - ess-cold节点，选择范围：1~32个节点数量。
 
@@ -133,7 +133,7 @@ class CreateClusterRolesBody:
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this CreateClusterRolesBody.
+        r"""Sets the instance_num of this CreateClusterRolesBody.
 
         实例个数。 - ess节点，选择范围：1~32个节点数量。   - 若同时选择ess和ess-master时，可以选择1~200个节点数量。    - 若同时选择ess和ess-client时，可以选择1~32个节点数量。    - 若同时选择ess和ess-cold时，可以选择1~32个节点数量。 - ess-master节点，选择范围：3~10内的奇数个节点数量。 - ess-client节点，选择范围：1~32个节点数量。 - ess-cold节点，选择范围：1~32个节点数量。
 

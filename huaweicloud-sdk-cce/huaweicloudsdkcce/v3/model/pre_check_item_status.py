@@ -39,7 +39,7 @@ class PreCheckItemStatus:
     }
 
     def __init__(self, name=None, kind=None, group=None, level=None, phase=None, message=None, risk_source=None, error_codes=None):
-        """PreCheckItemStatus
+        r"""PreCheckItemStatus
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PreCheckItemStatus:
 
     @property
     def name(self):
-        """Gets the name of this PreCheckItemStatus.
+        r"""Gets the name of this PreCheckItemStatus.
 
         检查项名称
 
@@ -103,7 +103,7 @@ class PreCheckItemStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PreCheckItemStatus.
+        r"""Sets the name of this PreCheckItemStatus.
 
         检查项名称
 
@@ -114,7 +114,7 @@ class PreCheckItemStatus:
 
     @property
     def kind(self):
-        """Gets the kind of this PreCheckItemStatus.
+        r"""Gets the kind of this PreCheckItemStatus.
 
         检查项类型，取值如下 - Exception: 异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过
 
@@ -125,7 +125,7 @@ class PreCheckItemStatus:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this PreCheckItemStatus.
+        r"""Sets the kind of this PreCheckItemStatus.
 
         检查项类型，取值如下 - Exception: 异常类，需要用户解决 - Risk：风险类，用户确认后可选择跳过
 
@@ -136,7 +136,7 @@ class PreCheckItemStatus:
 
     @property
     def group(self):
-        """Gets the group of this PreCheckItemStatus.
+        r"""Gets the group of this PreCheckItemStatus.
 
         检查项分组，取值如下 - LimitCheck: 集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误
 
@@ -147,7 +147,7 @@ class PreCheckItemStatus:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this PreCheckItemStatus.
+        r"""Sets the group of this PreCheckItemStatus.
 
         检查项分组，取值如下 - LimitCheck: 集群限制检查 - MasterCheck：控制节点检查 - NodeCheck：用户节点检查 - AddonCheck：插件检查 - ExecuteException：检查流程错误
 
@@ -158,7 +158,7 @@ class PreCheckItemStatus:
 
     @property
     def level(self):
-        """Gets the level of this PreCheckItemStatus.
+        r"""Gets the level of this PreCheckItemStatus.
 
         检查项风险级别，取值如下 - Info: 提示级别 - Warning：风险级别 - Fatal：严重级别
 
@@ -169,7 +169,7 @@ class PreCheckItemStatus:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this PreCheckItemStatus.
+        r"""Sets the level of this PreCheckItemStatus.
 
         检查项风险级别，取值如下 - Info: 提示级别 - Warning：风险级别 - Fatal：严重级别
 
@@ -180,7 +180,7 @@ class PreCheckItemStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this PreCheckItemStatus.
+        r"""Gets the phase of this PreCheckItemStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
 
@@ -191,7 +191,7 @@ class PreCheckItemStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this PreCheckItemStatus.
+        r"""Sets the phase of this PreCheckItemStatus.
 
         状态，取值如下 - Init: 初始化 - Running 运行中 - Success 成功 - Failed 失败
 
@@ -202,7 +202,7 @@ class PreCheckItemStatus:
 
     @property
     def message(self):
-        """Gets the message of this PreCheckItemStatus.
+        r"""Gets the message of this PreCheckItemStatus.
 
         提示信息
 
@@ -213,7 +213,7 @@ class PreCheckItemStatus:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PreCheckItemStatus.
+        r"""Sets the message of this PreCheckItemStatus.
 
         提示信息
 
@@ -224,7 +224,7 @@ class PreCheckItemStatus:
 
     @property
     def risk_source(self):
-        """Gets the risk_source of this PreCheckItemStatus.
+        r"""Gets the risk_source of this PreCheckItemStatus.
 
         :return: The risk_source of this PreCheckItemStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.RiskSource`
@@ -233,7 +233,7 @@ class PreCheckItemStatus:
 
     @risk_source.setter
     def risk_source(self, risk_source):
-        """Sets the risk_source of this PreCheckItemStatus.
+        r"""Sets the risk_source of this PreCheckItemStatus.
 
         :param risk_source: The risk_source of this PreCheckItemStatus.
         :type risk_source: :class:`huaweicloudsdkcce.v3.RiskSource`
@@ -242,7 +242,7 @@ class PreCheckItemStatus:
 
     @property
     def error_codes(self):
-        """Gets the error_codes of this PreCheckItemStatus.
+        r"""Gets the error_codes of this PreCheckItemStatus.
 
         错误码集合
 
@@ -253,7 +253,7 @@ class PreCheckItemStatus:
 
     @error_codes.setter
     def error_codes(self, error_codes):
-        """Sets the error_codes of this PreCheckItemStatus.
+        r"""Sets the error_codes of this PreCheckItemStatus.
 
         错误码集合
 

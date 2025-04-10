@@ -31,7 +31,7 @@ class ListAlertTemplatesRequest:
     }
 
     def __init__(self, service_id=None, name=None, page_num=None, page_size=None):
-        """ListAlertTemplatesRequest
+        r"""ListAlertTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAlertTemplatesRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListAlertTemplatesRequest.
+        r"""Gets the service_id of this ListAlertTemplatesRequest.
 
         服务id
 
@@ -74,7 +74,7 @@ class ListAlertTemplatesRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListAlertTemplatesRequest.
+        r"""Sets the service_id of this ListAlertTemplatesRequest.
 
         服务id
 
@@ -85,7 +85,7 @@ class ListAlertTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAlertTemplatesRequest.
+        r"""Gets the name of this ListAlertTemplatesRequest.
 
         模板名称
 
@@ -96,7 +96,7 @@ class ListAlertTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAlertTemplatesRequest.
+        r"""Sets the name of this ListAlertTemplatesRequest.
 
         模板名称
 
@@ -107,7 +107,7 @@ class ListAlertTemplatesRequest:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListAlertTemplatesRequest.
+        r"""Gets the page_num of this ListAlertTemplatesRequest.
 
         当前页数
 
@@ -118,7 +118,7 @@ class ListAlertTemplatesRequest:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListAlertTemplatesRequest.
+        r"""Sets the page_num of this ListAlertTemplatesRequest.
 
         当前页数
 
@@ -129,7 +129,7 @@ class ListAlertTemplatesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAlertTemplatesRequest.
+        r"""Gets the page_size of this ListAlertTemplatesRequest.
 
         每页数量
 
@@ -140,7 +140,7 @@ class ListAlertTemplatesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAlertTemplatesRequest.
+        r"""Sets the page_size of this ListAlertTemplatesRequest.
 
         每页数量
 

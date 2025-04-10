@@ -25,7 +25,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions:
     }
 
     def __init__(self, hid_redirection_customization_policy=None):
-        """PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions
+        r"""PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions:
 
     @property
     def hid_redirection_customization_policy(self):
-        """Gets the hid_redirection_customization_policy of this PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions.
+        r"""Gets the hid_redirection_customization_policy of this PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions.
 
         HID重定向自定义策略。
 
@@ -54,7 +54,7 @@ class PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions:
 
     @hid_redirection_customization_policy.setter
     def hid_redirection_customization_policy(self, hid_redirection_customization_policy):
-        """Sets the hid_redirection_customization_policy of this PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions.
+        r"""Sets the hid_redirection_customization_policy of this PoliciesPeripheralsDeviceRedirectionHidRedirectionOptions.
 
         HID重定向自定义策略。
 

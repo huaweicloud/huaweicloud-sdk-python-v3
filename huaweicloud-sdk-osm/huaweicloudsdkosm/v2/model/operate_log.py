@@ -27,7 +27,7 @@ class OperateLog:
     }
 
     def __init__(self, oper=None, operate_time=None):
-        """OperateLog
+        r"""OperateLog
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OperateLog:
 
     @property
     def oper(self):
-        """Gets the oper of this OperateLog.
+        r"""Gets the oper of this OperateLog.
 
         操作指令
 
@@ -61,7 +61,7 @@ class OperateLog:
 
     @oper.setter
     def oper(self, oper):
-        """Sets the oper of this OperateLog.
+        r"""Sets the oper of this OperateLog.
 
         操作指令
 
@@ -72,7 +72,7 @@ class OperateLog:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this OperateLog.
+        r"""Gets the operate_time of this OperateLog.
 
         操作时间
 
@@ -83,7 +83,7 @@ class OperateLog:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this OperateLog.
+        r"""Sets the operate_time of this OperateLog.
 
         操作时间
 

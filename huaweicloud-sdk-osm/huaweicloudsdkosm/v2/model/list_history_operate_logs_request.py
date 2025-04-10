@@ -43,7 +43,7 @@ class ListHistoryOperateLogsRequest:
     }
 
     def __init__(self, authorization_id=None, authorization_detail_id=None, group_id=None, session_id=None, sort=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListHistoryOperateLogsRequest
+        r"""ListHistoryOperateLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def authorization_id(self):
-        """Gets the authorization_id of this ListHistoryOperateLogsRequest.
+        r"""Gets the authorization_id of this ListHistoryOperateLogsRequest.
 
         授权id
 
@@ -114,7 +114,7 @@ class ListHistoryOperateLogsRequest:
 
     @authorization_id.setter
     def authorization_id(self, authorization_id):
-        """Sets the authorization_id of this ListHistoryOperateLogsRequest.
+        r"""Sets the authorization_id of this ListHistoryOperateLogsRequest.
 
         授权id
 
@@ -125,7 +125,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def authorization_detail_id(self):
-        """Gets the authorization_detail_id of this ListHistoryOperateLogsRequest.
+        r"""Gets the authorization_detail_id of this ListHistoryOperateLogsRequest.
 
         授权详情id
 
@@ -136,7 +136,7 @@ class ListHistoryOperateLogsRequest:
 
     @authorization_detail_id.setter
     def authorization_detail_id(self, authorization_detail_id):
-        """Sets the authorization_detail_id of this ListHistoryOperateLogsRequest.
+        r"""Sets the authorization_detail_id of this ListHistoryOperateLogsRequest.
 
         授权详情id
 
@@ -147,7 +147,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListHistoryOperateLogsRequest.
+        r"""Gets the group_id of this ListHistoryOperateLogsRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -158,7 +158,7 @@ class ListHistoryOperateLogsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListHistoryOperateLogsRequest.
+        r"""Sets the group_id of this ListHistoryOperateLogsRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -169,7 +169,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def session_id(self):
-        """Gets the session_id of this ListHistoryOperateLogsRequest.
+        r"""Gets the session_id of this ListHistoryOperateLogsRequest.
 
         会话id
 
@@ -180,7 +180,7 @@ class ListHistoryOperateLogsRequest:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this ListHistoryOperateLogsRequest.
+        r"""Sets the session_id of this ListHistoryOperateLogsRequest.
 
         会话id
 
@@ -191,7 +191,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListHistoryOperateLogsRequest.
+        r"""Gets the sort of this ListHistoryOperateLogsRequest.
 
         1：按操作时间升序； 0：按操作时间降序；默认0
 
@@ -202,7 +202,7 @@ class ListHistoryOperateLogsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListHistoryOperateLogsRequest.
+        r"""Sets the sort of this ListHistoryOperateLogsRequest.
 
         1：按操作时间升序； 0：按操作时间降序；默认0
 
@@ -213,7 +213,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHistoryOperateLogsRequest.
+        r"""Gets the offset of this ListHistoryOperateLogsRequest.
 
         查询偏移量
 
@@ -224,7 +224,7 @@ class ListHistoryOperateLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHistoryOperateLogsRequest.
+        r"""Sets the offset of this ListHistoryOperateLogsRequest.
 
         查询偏移量
 
@@ -235,7 +235,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHistoryOperateLogsRequest.
+        r"""Gets the limit of this ListHistoryOperateLogsRequest.
 
         查询限制条数
 
@@ -246,7 +246,7 @@ class ListHistoryOperateLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHistoryOperateLogsRequest.
+        r"""Sets the limit of this ListHistoryOperateLogsRequest.
 
         查询限制条数
 
@@ -257,7 +257,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListHistoryOperateLogsRequest.
+        r"""Gets the x_site of this ListHistoryOperateLogsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -268,7 +268,7 @@ class ListHistoryOperateLogsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListHistoryOperateLogsRequest.
+        r"""Sets the x_site of this ListHistoryOperateLogsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -279,7 +279,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHistoryOperateLogsRequest.
+        r"""Gets the x_language of this ListHistoryOperateLogsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -290,7 +290,7 @@ class ListHistoryOperateLogsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHistoryOperateLogsRequest.
+        r"""Sets the x_language of this ListHistoryOperateLogsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -301,7 +301,7 @@ class ListHistoryOperateLogsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListHistoryOperateLogsRequest.
+        r"""Gets the x_time_zone of this ListHistoryOperateLogsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -312,7 +312,7 @@ class ListHistoryOperateLogsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListHistoryOperateLogsRequest.
+        r"""Sets the x_time_zone of this ListHistoryOperateLogsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

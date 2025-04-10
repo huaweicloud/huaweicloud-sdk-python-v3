@@ -31,7 +31,7 @@ class UpdateDesignTableQualityRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, table_id=None, body=None):
-        """UpdateDesignTableQualityRequest
+        r"""UpdateDesignTableQualityRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateDesignTableQualityRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateDesignTableQualityRequest.
+        r"""Gets the workspace of this UpdateDesignTableQualityRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class UpdateDesignTableQualityRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateDesignTableQualityRequest.
+        r"""Sets the workspace of this UpdateDesignTableQualityRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class UpdateDesignTableQualityRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this UpdateDesignTableQualityRequest.
+        r"""Gets the x_project_id of this UpdateDesignTableQualityRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class UpdateDesignTableQualityRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this UpdateDesignTableQualityRequest.
+        r"""Sets the x_project_id of this UpdateDesignTableQualityRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class UpdateDesignTableQualityRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this UpdateDesignTableQualityRequest.
+        r"""Gets the table_id of this UpdateDesignTableQualityRequest.
 
         表的ID，ID字符串。
 
@@ -117,7 +117,7 @@ class UpdateDesignTableQualityRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this UpdateDesignTableQualityRequest.
+        r"""Sets the table_id of this UpdateDesignTableQualityRequest.
 
         表的ID，ID字符串。
 
@@ -128,7 +128,7 @@ class UpdateDesignTableQualityRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesignTableQualityRequest.
+        r"""Gets the body of this UpdateDesignTableQualityRequest.
 
         :return: The body of this UpdateDesignTableQualityRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignTableQualityParam`
@@ -137,7 +137,7 @@ class UpdateDesignTableQualityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesignTableQualityRequest.
+        r"""Sets the body of this UpdateDesignTableQualityRequest.
 
         :param body: The body of this UpdateDesignTableQualityRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDesignTableQualityParam`

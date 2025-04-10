@@ -73,7 +73,7 @@ class ApigCommodityOrder:
     }
 
     def __init__(self, project_id=None, order_id=None, region_id=None, resource_id=None, resource_name=None, subscription_id=None, resource_type=None, resource_spec_code=None, product_id=None, order_type=None, charge_type=None, is_auto_renew=None, status=None, vpc_id=None, security_group_id=None, eps_id=None, effective_time=None, expire_days=None, expire_time=None, lock_check_endpoint=None, create_user=None, create_time=None, domain_id=None, is_trial_order=None, work_space_mode=None):
-        """ApigCommodityOrder
+        r"""ApigCommodityOrder
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class ApigCommodityOrder:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ApigCommodityOrder.
+        r"""Gets the project_id of this ApigCommodityOrder.
 
         实例所属项目id
 
@@ -222,7 +222,7 @@ class ApigCommodityOrder:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ApigCommodityOrder.
+        r"""Sets the project_id of this ApigCommodityOrder.
 
         实例所属项目id
 
@@ -233,7 +233,7 @@ class ApigCommodityOrder:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ApigCommodityOrder.
+        r"""Gets the order_id of this ApigCommodityOrder.
 
         CBC订单id
 
@@ -244,7 +244,7 @@ class ApigCommodityOrder:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ApigCommodityOrder.
+        r"""Sets the order_id of this ApigCommodityOrder.
 
         CBC订单id
 
@@ -255,7 +255,7 @@ class ApigCommodityOrder:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ApigCommodityOrder.
+        r"""Gets the region_id of this ApigCommodityOrder.
 
         当前所属region Id
 
@@ -266,7 +266,7 @@ class ApigCommodityOrder:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ApigCommodityOrder.
+        r"""Sets the region_id of this ApigCommodityOrder.
 
         当前所属region Id
 
@@ -277,7 +277,7 @@ class ApigCommodityOrder:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ApigCommodityOrder.
+        r"""Gets the resource_id of this ApigCommodityOrder.
 
         实例id
 
@@ -288,7 +288,7 @@ class ApigCommodityOrder:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ApigCommodityOrder.
+        r"""Sets the resource_id of this ApigCommodityOrder.
 
         实例id
 
@@ -299,7 +299,7 @@ class ApigCommodityOrder:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ApigCommodityOrder.
+        r"""Gets the resource_name of this ApigCommodityOrder.
 
         实例名称
 
@@ -310,7 +310,7 @@ class ApigCommodityOrder:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ApigCommodityOrder.
+        r"""Sets the resource_name of this ApigCommodityOrder.
 
         实例名称
 
@@ -321,7 +321,7 @@ class ApigCommodityOrder:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this ApigCommodityOrder.
+        r"""Gets the subscription_id of this ApigCommodityOrder.
 
         CBC订购id
 
@@ -332,7 +332,7 @@ class ApigCommodityOrder:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this ApigCommodityOrder.
+        r"""Sets the subscription_id of this ApigCommodityOrder.
 
         CBC订购id
 
@@ -343,7 +343,7 @@ class ApigCommodityOrder:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ApigCommodityOrder.
+        r"""Gets the resource_type of this ApigCommodityOrder.
 
         资源类型，hws.resource.type.dayu
 
@@ -354,7 +354,7 @@ class ApigCommodityOrder:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ApigCommodityOrder.
+        r"""Sets the resource_type of this ApigCommodityOrder.
 
         资源类型，hws.resource.type.dayu
 
@@ -365,7 +365,7 @@ class ApigCommodityOrder:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ApigCommodityOrder.
+        r"""Gets the resource_spec_code of this ApigCommodityOrder.
 
         产品规格编码，例如dayu.starter，dayu.basic，dayu.advanced等
 
@@ -376,7 +376,7 @@ class ApigCommodityOrder:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ApigCommodityOrder.
+        r"""Sets the resource_spec_code of this ApigCommodityOrder.
 
         产品规格编码，例如dayu.starter，dayu.basic，dayu.advanced等
 
@@ -387,7 +387,7 @@ class ApigCommodityOrder:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ApigCommodityOrder.
+        r"""Gets the product_id of this ApigCommodityOrder.
 
         CBC产品id，未安装CBC的环境无需这个值
 
@@ -398,7 +398,7 @@ class ApigCommodityOrder:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ApigCommodityOrder.
+        r"""Sets the product_id of this ApigCommodityOrder.
 
         CBC产品id，未安装CBC的环境无需这个值
 
@@ -409,7 +409,7 @@ class ApigCommodityOrder:
 
     @property
     def order_type(self):
-        """Gets the order_type of this ApigCommodityOrder.
+        r"""Gets the order_type of this ApigCommodityOrder.
 
         订单类型标识符
 
@@ -420,7 +420,7 @@ class ApigCommodityOrder:
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this ApigCommodityOrder.
+        r"""Sets the order_type of this ApigCommodityOrder.
 
         订单类型标识符
 
@@ -431,7 +431,7 @@ class ApigCommodityOrder:
 
     @property
     def charge_type(self):
-        """Gets the charge_type of this ApigCommodityOrder.
+        r"""Gets the charge_type of this ApigCommodityOrder.
 
         支付选项，留空
 
@@ -442,7 +442,7 @@ class ApigCommodityOrder:
 
     @charge_type.setter
     def charge_type(self, charge_type):
-        """Sets the charge_type of this ApigCommodityOrder.
+        r"""Sets the charge_type of this ApigCommodityOrder.
 
         支付选项，留空
 
@@ -453,7 +453,7 @@ class ApigCommodityOrder:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ApigCommodityOrder.
+        r"""Gets the is_auto_renew of this ApigCommodityOrder.
 
         自动续费标识，当前实例为按需支付时必填，0代表不续费，1代表自动续费
 
@@ -464,7 +464,7 @@ class ApigCommodityOrder:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ApigCommodityOrder.
+        r"""Sets the is_auto_renew of this ApigCommodityOrder.
 
         自动续费标识，当前实例为按需支付时必填，0代表不续费，1代表自动续费
 
@@ -475,7 +475,7 @@ class ApigCommodityOrder:
 
     @property
     def status(self):
-        """Gets the status of this ApigCommodityOrder.
+        r"""Gets the status of this ApigCommodityOrder.
 
         实例状态,1未生效2生效中3已删除=退订4保留期=冻结5宽限期6删除中
 
@@ -486,7 +486,7 @@ class ApigCommodityOrder:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApigCommodityOrder.
+        r"""Sets the status of this ApigCommodityOrder.
 
         实例状态,1未生效2生效中3已删除=退订4保留期=冻结5宽限期6删除中
 
@@ -497,7 +497,7 @@ class ApigCommodityOrder:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ApigCommodityOrder.
+        r"""Gets the vpc_id of this ApigCommodityOrder.
 
         虚拟私有云id
 
@@ -508,7 +508,7 @@ class ApigCommodityOrder:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ApigCommodityOrder.
+        r"""Sets the vpc_id of this ApigCommodityOrder.
 
         虚拟私有云id
 
@@ -519,7 +519,7 @@ class ApigCommodityOrder:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ApigCommodityOrder.
+        r"""Gets the security_group_id of this ApigCommodityOrder.
 
         安全组id
 
@@ -530,7 +530,7 @@ class ApigCommodityOrder:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ApigCommodityOrder.
+        r"""Sets the security_group_id of this ApigCommodityOrder.
 
         安全组id
 
@@ -541,7 +541,7 @@ class ApigCommodityOrder:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this ApigCommodityOrder.
+        r"""Gets the eps_id of this ApigCommodityOrder.
 
         企业项目id，如果当前为公有云，且用户开启企业项目，则必选
 
@@ -552,7 +552,7 @@ class ApigCommodityOrder:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this ApigCommodityOrder.
+        r"""Sets the eps_id of this ApigCommodityOrder.
 
         企业项目id，如果当前为公有云，且用户开启企业项目，则必选
 
@@ -563,7 +563,7 @@ class ApigCommodityOrder:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this ApigCommodityOrder.
+        r"""Gets the effective_time of this ApigCommodityOrder.
 
         生效时间点，包周期实例有效
 
@@ -574,7 +574,7 @@ class ApigCommodityOrder:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this ApigCommodityOrder.
+        r"""Sets the effective_time of this ApigCommodityOrder.
 
         生效时间点，包周期实例有效
 
@@ -585,7 +585,7 @@ class ApigCommodityOrder:
 
     @property
     def expire_days(self):
-        """Gets the expire_days of this ApigCommodityOrder.
+        r"""Gets the expire_days of this ApigCommodityOrder.
 
         过期时间天数，包周期实例有效
 
@@ -596,7 +596,7 @@ class ApigCommodityOrder:
 
     @expire_days.setter
     def expire_days(self, expire_days):
-        """Sets the expire_days of this ApigCommodityOrder.
+        r"""Sets the expire_days of this ApigCommodityOrder.
 
         过期时间天数，包周期实例有效
 
@@ -607,7 +607,7 @@ class ApigCommodityOrder:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ApigCommodityOrder.
+        r"""Gets the expire_time of this ApigCommodityOrder.
 
         过期时间点，包周期有效
 
@@ -618,7 +618,7 @@ class ApigCommodityOrder:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ApigCommodityOrder.
+        r"""Sets the expire_time of this ApigCommodityOrder.
 
         过期时间点，包周期有效
 
@@ -629,7 +629,7 @@ class ApigCommodityOrder:
 
     @property
     def lock_check_endpoint(self):
-        """Gets the lock_check_endpoint of this ApigCommodityOrder.
+        r"""Gets the lock_check_endpoint of this ApigCommodityOrder.
 
         CBC锁定节点
 
@@ -640,7 +640,7 @@ class ApigCommodityOrder:
 
     @lock_check_endpoint.setter
     def lock_check_endpoint(self, lock_check_endpoint):
-        """Sets the lock_check_endpoint of this ApigCommodityOrder.
+        r"""Sets the lock_check_endpoint of this ApigCommodityOrder.
 
         CBC锁定节点
 
@@ -651,7 +651,7 @@ class ApigCommodityOrder:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ApigCommodityOrder.
+        r"""Gets the create_user of this ApigCommodityOrder.
 
         创建用户
 
@@ -662,7 +662,7 @@ class ApigCommodityOrder:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ApigCommodityOrder.
+        r"""Sets the create_user of this ApigCommodityOrder.
 
         创建用户
 
@@ -673,7 +673,7 @@ class ApigCommodityOrder:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApigCommodityOrder.
+        r"""Gets the create_time of this ApigCommodityOrder.
 
         创建时间点
 
@@ -684,7 +684,7 @@ class ApigCommodityOrder:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApigCommodityOrder.
+        r"""Sets the create_time of this ApigCommodityOrder.
 
         创建时间点
 
@@ -695,7 +695,7 @@ class ApigCommodityOrder:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ApigCommodityOrder.
+        r"""Gets the domain_id of this ApigCommodityOrder.
 
         用户domain id
 
@@ -706,7 +706,7 @@ class ApigCommodityOrder:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ApigCommodityOrder.
+        r"""Sets the domain_id of this ApigCommodityOrder.
 
         用户domain id
 
@@ -717,7 +717,7 @@ class ApigCommodityOrder:
 
     @property
     def is_trial_order(self):
-        """Gets the is_trial_order of this ApigCommodityOrder.
+        r"""Gets the is_trial_order of this ApigCommodityOrder.
 
         是否试用订单
 
@@ -728,7 +728,7 @@ class ApigCommodityOrder:
 
     @is_trial_order.setter
     def is_trial_order(self, is_trial_order):
-        """Sets the is_trial_order of this ApigCommodityOrder.
+        r"""Sets the is_trial_order of this ApigCommodityOrder.
 
         是否试用订单
 
@@ -739,7 +739,7 @@ class ApigCommodityOrder:
 
     @property
     def work_space_mode(self):
-        """Gets the work_space_mode of this ApigCommodityOrder.
+        r"""Gets the work_space_mode of this ApigCommodityOrder.
 
         工作空间模式说明
 
@@ -750,7 +750,7 @@ class ApigCommodityOrder:
 
     @work_space_mode.setter
     def work_space_mode(self, work_space_mode):
-        """Sets the work_space_mode of this ApigCommodityOrder.
+        r"""Sets the work_space_mode of this ApigCommodityOrder.
 
         工作空间模式说明
 

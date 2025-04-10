@@ -31,7 +31,7 @@ class ResendReq:
     }
 
     def __init__(self, group=None, topic=None, client_id=None, msg_id_list=None):
-        """ResendReq
+        r"""ResendReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResendReq:
 
     @property
     def group(self):
-        """Gets the group of this ResendReq.
+        r"""Gets the group of this ResendReq.
 
         Group ID。
 
@@ -75,7 +75,7 @@ class ResendReq:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ResendReq.
+        r"""Sets the group of this ResendReq.
 
         Group ID。
 
@@ -86,7 +86,7 @@ class ResendReq:
 
     @property
     def topic(self):
-        """Gets the topic of this ResendReq.
+        r"""Gets the topic of this ResendReq.
 
         消息所属Topic。
 
@@ -97,7 +97,7 @@ class ResendReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ResendReq.
+        r"""Sets the topic of this ResendReq.
 
         消息所属Topic。
 
@@ -108,7 +108,7 @@ class ResendReq:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ResendReq.
+        r"""Gets the client_id of this ResendReq.
 
         客户端ID。
 
@@ -119,7 +119,7 @@ class ResendReq:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ResendReq.
+        r"""Sets the client_id of this ResendReq.
 
         客户端ID。
 
@@ -130,7 +130,7 @@ class ResendReq:
 
     @property
     def msg_id_list(self):
-        """Gets the msg_id_list of this ResendReq.
+        r"""Gets the msg_id_list of this ResendReq.
 
         消息列表。
 
@@ -141,7 +141,7 @@ class ResendReq:
 
     @msg_id_list.setter
     def msg_id_list(self, msg_id_list):
-        """Sets the msg_id_list of this ResendReq.
+        r"""Sets the msg_id_list of this ResendReq.
 
         消息列表。
 

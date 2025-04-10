@@ -24,7 +24,7 @@ class DeleteMetricNotifyRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMetricNotifyRuleResponse
+        r"""DeleteMetricNotifyRuleResponse
 
         The model defined in huaweicloud sdk
 

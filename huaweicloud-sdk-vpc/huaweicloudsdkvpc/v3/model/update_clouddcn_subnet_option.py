@@ -27,7 +27,7 @@ class UpdateClouddcnSubnetOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateClouddcnSubnetOption
+        r"""UpdateClouddcnSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateClouddcnSubnetOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateClouddcnSubnetOption.
+        r"""Gets the name of this UpdateClouddcnSubnetOption.
 
         功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -61,7 +61,7 @@ class UpdateClouddcnSubnetOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateClouddcnSubnetOption.
+        r"""Sets the name of this UpdateClouddcnSubnetOption.
 
         功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -72,7 +72,7 @@ class UpdateClouddcnSubnetOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateClouddcnSubnetOption.
+        r"""Gets the description of this UpdateClouddcnSubnetOption.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -83,7 +83,7 @@ class UpdateClouddcnSubnetOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateClouddcnSubnetOption.
+        r"""Sets the description of this UpdateClouddcnSubnetOption.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 

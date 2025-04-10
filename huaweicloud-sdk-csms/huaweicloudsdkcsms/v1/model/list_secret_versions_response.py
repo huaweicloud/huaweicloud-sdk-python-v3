@@ -28,7 +28,7 @@ class ListSecretVersionsResponse(SdkResponse):
     }
 
     def __init__(self, version_metadatas=None, page_info=None):
-        """ListSecretVersionsResponse
+        r"""ListSecretVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecretVersionsResponse(SdkResponse):
 
     @property
     def version_metadatas(self):
-        """Gets the version_metadatas of this ListSecretVersionsResponse.
+        r"""Gets the version_metadatas of this ListSecretVersionsResponse.
 
         version_metadata对象。
 
@@ -62,7 +62,7 @@ class ListSecretVersionsResponse(SdkResponse):
 
     @version_metadatas.setter
     def version_metadatas(self, version_metadatas):
-        """Sets the version_metadatas of this ListSecretVersionsResponse.
+        r"""Sets the version_metadatas of this ListSecretVersionsResponse.
 
         version_metadata对象。
 
@@ -73,7 +73,7 @@ class ListSecretVersionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSecretVersionsResponse.
+        r"""Gets the page_info of this ListSecretVersionsResponse.
 
         :return: The page_info of this ListSecretVersionsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListSecretVersionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSecretVersionsResponse.
+        r"""Sets the page_info of this ListSecretVersionsResponse.
 
         :param page_info: The page_info of this ListSecretVersionsResponse.
         :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`

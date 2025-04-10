@@ -27,7 +27,7 @@ class UpdateDrugModelRequest:
     }
 
     def __init__(self, model_id=None, body=None):
-        """UpdateDrugModelRequest
+        r"""UpdateDrugModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDrugModelRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this UpdateDrugModelRequest.
+        r"""Gets the model_id of this UpdateDrugModelRequest.
 
         模型id
 
@@ -60,7 +60,7 @@ class UpdateDrugModelRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this UpdateDrugModelRequest.
+        r"""Sets the model_id of this UpdateDrugModelRequest.
 
         模型id
 
@@ -71,7 +71,7 @@ class UpdateDrugModelRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDrugModelRequest.
+        r"""Gets the body of this UpdateDrugModelRequest.
 
         :return: The body of this UpdateDrugModelRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDrugModelReq`
@@ -80,7 +80,7 @@ class UpdateDrugModelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDrugModelRequest.
+        r"""Sets the body of this UpdateDrugModelRequest.
 
         :param body: The body of this UpdateDrugModelRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateDrugModelReq`

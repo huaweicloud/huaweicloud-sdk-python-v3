@@ -24,7 +24,7 @@ class UpdateShrinkClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateShrinkClusterResponse
+        r"""UpdateShrinkClusterResponse
 
         The model defined in huaweicloud sdk
 

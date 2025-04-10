@@ -28,7 +28,7 @@ class ListDesktopNamePolicyResponse(SdkResponse):
     }
 
     def __init__(self, desktop_name_policy_infos=None, total_count=None):
-        """ListDesktopNamePolicyResponse
+        r"""ListDesktopNamePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopNamePolicyResponse(SdkResponse):
 
     @property
     def desktop_name_policy_infos(self):
-        """Gets the desktop_name_policy_infos of this ListDesktopNamePolicyResponse.
+        r"""Gets the desktop_name_policy_infos of this ListDesktopNamePolicyResponse.
 
         桌面名称策略信息。
 
@@ -62,7 +62,7 @@ class ListDesktopNamePolicyResponse(SdkResponse):
 
     @desktop_name_policy_infos.setter
     def desktop_name_policy_infos(self, desktop_name_policy_infos):
-        """Sets the desktop_name_policy_infos of this ListDesktopNamePolicyResponse.
+        r"""Sets the desktop_name_policy_infos of this ListDesktopNamePolicyResponse.
 
         桌面名称策略信息。
 
@@ -73,7 +73,7 @@ class ListDesktopNamePolicyResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopNamePolicyResponse.
+        r"""Gets the total_count of this ListDesktopNamePolicyResponse.
 
         查询返回总条数。
 
@@ -84,7 +84,7 @@ class ListDesktopNamePolicyResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopNamePolicyResponse.
+        r"""Sets the total_count of this ListDesktopNamePolicyResponse.
 
         查询返回总条数。
 

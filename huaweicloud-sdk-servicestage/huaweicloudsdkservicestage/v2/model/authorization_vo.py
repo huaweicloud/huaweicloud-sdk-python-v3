@@ -45,7 +45,7 @@ class AuthorizationVO:
     }
 
     def __init__(self, name=None, repo_type=None, repo_host=None, repo_home=None, repo_user=None, avartar=None, token_type=None, create_time=None, update_time=None, status=None, tag=None):
-        """AuthorizationVO
+        r"""AuthorizationVO
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class AuthorizationVO:
 
     @property
     def name(self):
-        """Gets the name of this AuthorizationVO.
+        r"""Gets the name of this AuthorizationVO.
 
         授权名称。
 
@@ -113,7 +113,7 @@ class AuthorizationVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthorizationVO.
+        r"""Sets the name of this AuthorizationVO.
 
         授权名称。
 
@@ -124,7 +124,7 @@ class AuthorizationVO:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this AuthorizationVO.
+        r"""Gets the repo_type of this AuthorizationVO.
 
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket、devcloud。 
 
@@ -135,7 +135,7 @@ class AuthorizationVO:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this AuthorizationVO.
+        r"""Sets the repo_type of this AuthorizationVO.
 
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket、devcloud。 
 
@@ -146,7 +146,7 @@ class AuthorizationVO:
 
     @property
     def repo_host(self):
-        """Gets the repo_host of this AuthorizationVO.
+        r"""Gets the repo_host of this AuthorizationVO.
 
         仓库地址。
 
@@ -157,7 +157,7 @@ class AuthorizationVO:
 
     @repo_host.setter
     def repo_host(self, repo_host):
-        """Sets the repo_host of this AuthorizationVO.
+        r"""Sets the repo_host of this AuthorizationVO.
 
         仓库地址。
 
@@ -168,7 +168,7 @@ class AuthorizationVO:
 
     @property
     def repo_home(self):
-        """Gets the repo_home of this AuthorizationVO.
+        r"""Gets the repo_home of this AuthorizationVO.
 
         仓库主页。
 
@@ -179,7 +179,7 @@ class AuthorizationVO:
 
     @repo_home.setter
     def repo_home(self, repo_home):
-        """Sets the repo_home of this AuthorizationVO.
+        r"""Sets the repo_home of this AuthorizationVO.
 
         仓库主页。
 
@@ -190,7 +190,7 @@ class AuthorizationVO:
 
     @property
     def repo_user(self):
-        """Gets the repo_user of this AuthorizationVO.
+        r"""Gets the repo_user of this AuthorizationVO.
 
         仓库用户名。
 
@@ -201,7 +201,7 @@ class AuthorizationVO:
 
     @repo_user.setter
     def repo_user(self, repo_user):
-        """Sets the repo_user of this AuthorizationVO.
+        r"""Sets the repo_user of this AuthorizationVO.
 
         仓库用户名。
 
@@ -212,7 +212,7 @@ class AuthorizationVO:
 
     @property
     def avartar(self):
-        """Gets the avartar of this AuthorizationVO.
+        r"""Gets the avartar of this AuthorizationVO.
 
         头像。
 
@@ -223,7 +223,7 @@ class AuthorizationVO:
 
     @avartar.setter
     def avartar(self, avartar):
-        """Sets the avartar of this AuthorizationVO.
+        r"""Sets the avartar of this AuthorizationVO.
 
         头像。
 
@@ -234,7 +234,7 @@ class AuthorizationVO:
 
     @property
     def token_type(self):
-        """Gets the token_type of this AuthorizationVO.
+        r"""Gets the token_type of this AuthorizationVO.
 
         授权方式。
 
@@ -245,7 +245,7 @@ class AuthorizationVO:
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this AuthorizationVO.
+        r"""Sets the token_type of this AuthorizationVO.
 
         授权方式。
 
@@ -256,7 +256,7 @@ class AuthorizationVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AuthorizationVO.
+        r"""Gets the create_time of this AuthorizationVO.
 
         创建时间。
 
@@ -267,7 +267,7 @@ class AuthorizationVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AuthorizationVO.
+        r"""Sets the create_time of this AuthorizationVO.
 
         创建时间。
 
@@ -278,7 +278,7 @@ class AuthorizationVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AuthorizationVO.
+        r"""Gets the update_time of this AuthorizationVO.
 
         修改时间。
 
@@ -289,7 +289,7 @@ class AuthorizationVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AuthorizationVO.
+        r"""Sets the update_time of this AuthorizationVO.
 
         修改时间。
 
@@ -300,7 +300,7 @@ class AuthorizationVO:
 
     @property
     def status(self):
-        """Gets the status of this AuthorizationVO.
+        r"""Gets the status of this AuthorizationVO.
 
         状态。
 
@@ -311,7 +311,7 @@ class AuthorizationVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuthorizationVO.
+        r"""Sets the status of this AuthorizationVO.
 
         状态。
 
@@ -322,7 +322,7 @@ class AuthorizationVO:
 
     @property
     def tag(self):
-        """Gets the tag of this AuthorizationVO.
+        r"""Gets the tag of this AuthorizationVO.
 
         授权局点的类型，默认为null。
 
@@ -333,7 +333,7 @@ class AuthorizationVO:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AuthorizationVO.
+        r"""Sets the tag of this AuthorizationVO.
 
         授权局点的类型，默认为null。
 

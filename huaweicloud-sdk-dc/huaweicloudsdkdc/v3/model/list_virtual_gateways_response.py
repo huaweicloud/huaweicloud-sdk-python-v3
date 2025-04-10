@@ -30,7 +30,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, virtual_gateways=None, page_info=None):
-        """ListVirtualGatewaysResponse
+        r"""ListVirtualGatewaysResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVirtualGatewaysResponse.
+        r"""Gets the request_id of this ListVirtualGatewaysResponse.
 
         操作请求ID
 
@@ -69,7 +69,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVirtualGatewaysResponse.
+        r"""Sets the request_id of this ListVirtualGatewaysResponse.
 
         操作请求ID
 
@@ -80,7 +80,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
 
     @property
     def virtual_gateways(self):
-        """Gets the virtual_gateways of this ListVirtualGatewaysResponse.
+        r"""Gets the virtual_gateways of this ListVirtualGatewaysResponse.
 
         虚拟网关对象列表
 
@@ -91,7 +91,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
 
     @virtual_gateways.setter
     def virtual_gateways(self, virtual_gateways):
-        """Sets the virtual_gateways of this ListVirtualGatewaysResponse.
+        r"""Sets the virtual_gateways of this ListVirtualGatewaysResponse.
 
         虚拟网关对象列表
 
@@ -102,7 +102,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVirtualGatewaysResponse.
+        r"""Gets the page_info of this ListVirtualGatewaysResponse.
 
         :return: The page_info of this ListVirtualGatewaysResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListVirtualGatewaysResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVirtualGatewaysResponse.
+        r"""Sets the page_info of this ListVirtualGatewaysResponse.
 
         :param page_info: The page_info of this ListVirtualGatewaysResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

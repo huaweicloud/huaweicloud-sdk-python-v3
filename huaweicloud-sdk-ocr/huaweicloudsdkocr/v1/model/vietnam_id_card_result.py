@@ -61,7 +61,7 @@ class VietnamIdCardResult:
     }
 
     def __init__(self, side=None, number=None, full_name=None, birth_date=None, sex=None, nationality=None, origin_place=None, residence_place=None, expiry_date=None, personal_identification=None, issue_date=None, machine_code1=None, machine_code2=None, machine_code3=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, text_location=None):
-        """VietnamIdCardResult
+        r"""VietnamIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class VietnamIdCardResult:
 
     @property
     def side(self):
-        """Gets the side of this VietnamIdCardResult.
+        r"""Gets the side of this VietnamIdCardResult.
 
         返回证件正反面。字段值为“front”或“back” 
 
@@ -180,7 +180,7 @@ class VietnamIdCardResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this VietnamIdCardResult.
+        r"""Sets the side of this VietnamIdCardResult.
 
         返回证件正反面。字段值为“front”或“back” 
 
@@ -191,7 +191,7 @@ class VietnamIdCardResult:
 
     @property
     def number(self):
-        """Gets the number of this VietnamIdCardResult.
+        r"""Gets the number of this VietnamIdCardResult.
 
         卡证编号。 
 
@@ -202,7 +202,7 @@ class VietnamIdCardResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this VietnamIdCardResult.
+        r"""Sets the number of this VietnamIdCardResult.
 
         卡证编号。 
 
@@ -213,7 +213,7 @@ class VietnamIdCardResult:
 
     @property
     def full_name(self):
-        """Gets the full_name of this VietnamIdCardResult.
+        r"""Gets the full_name of this VietnamIdCardResult.
 
         姓名。 
 
@@ -224,7 +224,7 @@ class VietnamIdCardResult:
 
     @full_name.setter
     def full_name(self, full_name):
-        """Sets the full_name of this VietnamIdCardResult.
+        r"""Sets the full_name of this VietnamIdCardResult.
 
         姓名。 
 
@@ -235,7 +235,7 @@ class VietnamIdCardResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this VietnamIdCardResult.
+        r"""Gets the birth_date of this VietnamIdCardResult.
 
         出生日期。 
 
@@ -246,7 +246,7 @@ class VietnamIdCardResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this VietnamIdCardResult.
+        r"""Sets the birth_date of this VietnamIdCardResult.
 
         出生日期。 
 
@@ -257,7 +257,7 @@ class VietnamIdCardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this VietnamIdCardResult.
+        r"""Gets the sex of this VietnamIdCardResult.
 
         性别。 
 
@@ -268,7 +268,7 @@ class VietnamIdCardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this VietnamIdCardResult.
+        r"""Sets the sex of this VietnamIdCardResult.
 
         性别。 
 
@@ -279,7 +279,7 @@ class VietnamIdCardResult:
 
     @property
     def nationality(self):
-        """Gets the nationality of this VietnamIdCardResult.
+        r"""Gets the nationality of this VietnamIdCardResult.
 
         国籍。 
 
@@ -290,7 +290,7 @@ class VietnamIdCardResult:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this VietnamIdCardResult.
+        r"""Sets the nationality of this VietnamIdCardResult.
 
         国籍。 
 
@@ -301,7 +301,7 @@ class VietnamIdCardResult:
 
     @property
     def origin_place(self):
-        """Gets the origin_place of this VietnamIdCardResult.
+        r"""Gets the origin_place of this VietnamIdCardResult.
 
         籍贯。 
 
@@ -312,7 +312,7 @@ class VietnamIdCardResult:
 
     @origin_place.setter
     def origin_place(self, origin_place):
-        """Sets the origin_place of this VietnamIdCardResult.
+        r"""Sets the origin_place of this VietnamIdCardResult.
 
         籍贯。 
 
@@ -323,7 +323,7 @@ class VietnamIdCardResult:
 
     @property
     def residence_place(self):
-        """Gets the residence_place of this VietnamIdCardResult.
+        r"""Gets the residence_place of this VietnamIdCardResult.
 
         居住地。 
 
@@ -334,7 +334,7 @@ class VietnamIdCardResult:
 
     @residence_place.setter
     def residence_place(self, residence_place):
-        """Sets the residence_place of this VietnamIdCardResult.
+        r"""Sets the residence_place of this VietnamIdCardResult.
 
         居住地。 
 
@@ -345,7 +345,7 @@ class VietnamIdCardResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this VietnamIdCardResult.
+        r"""Gets the expiry_date of this VietnamIdCardResult.
 
         有效日期。 
 
@@ -356,7 +356,7 @@ class VietnamIdCardResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this VietnamIdCardResult.
+        r"""Sets the expiry_date of this VietnamIdCardResult.
 
         有效日期。 
 
@@ -367,7 +367,7 @@ class VietnamIdCardResult:
 
     @property
     def personal_identification(self):
-        """Gets the personal_identification of this VietnamIdCardResult.
+        r"""Gets the personal_identification of this VietnamIdCardResult.
 
         个人识别。当参数“side”为back时，返回此字段。 
 
@@ -378,7 +378,7 @@ class VietnamIdCardResult:
 
     @personal_identification.setter
     def personal_identification(self, personal_identification):
-        """Sets the personal_identification of this VietnamIdCardResult.
+        r"""Sets the personal_identification of this VietnamIdCardResult.
 
         个人识别。当参数“side”为back时，返回此字段。 
 
@@ -389,7 +389,7 @@ class VietnamIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this VietnamIdCardResult.
+        r"""Gets the issue_date of this VietnamIdCardResult.
 
         签发日期。当参数“side”为back时，返回此字段。 
 
@@ -400,7 +400,7 @@ class VietnamIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this VietnamIdCardResult.
+        r"""Sets the issue_date of this VietnamIdCardResult.
 
         签发日期。当参数“side”为back时，返回此字段。 
 
@@ -411,7 +411,7 @@ class VietnamIdCardResult:
 
     @property
     def machine_code1(self):
-        """Gets the machine_code1 of this VietnamIdCardResult.
+        r"""Gets the machine_code1 of this VietnamIdCardResult.
 
         身份证背面第一行机器码。当参数“side”为back时，返回此字段。 
 
@@ -422,7 +422,7 @@ class VietnamIdCardResult:
 
     @machine_code1.setter
     def machine_code1(self, machine_code1):
-        """Sets the machine_code1 of this VietnamIdCardResult.
+        r"""Sets the machine_code1 of this VietnamIdCardResult.
 
         身份证背面第一行机器码。当参数“side”为back时，返回此字段。 
 
@@ -433,7 +433,7 @@ class VietnamIdCardResult:
 
     @property
     def machine_code2(self):
-        """Gets the machine_code2 of this VietnamIdCardResult.
+        r"""Gets the machine_code2 of this VietnamIdCardResult.
 
         身份证背面第二行机器码。当参数“side”为back时，返回此字段。 
 
@@ -444,7 +444,7 @@ class VietnamIdCardResult:
 
     @machine_code2.setter
     def machine_code2(self, machine_code2):
-        """Sets the machine_code2 of this VietnamIdCardResult.
+        r"""Sets the machine_code2 of this VietnamIdCardResult.
 
         身份证背面第二行机器码。当参数“side”为back时，返回此字段。 
 
@@ -455,7 +455,7 @@ class VietnamIdCardResult:
 
     @property
     def machine_code3(self):
-        """Gets the machine_code3 of this VietnamIdCardResult.
+        r"""Gets the machine_code3 of this VietnamIdCardResult.
 
         身份证背面第三行机器码。当参数“side”为back时，返回此字段。 
 
@@ -466,7 +466,7 @@ class VietnamIdCardResult:
 
     @machine_code3.setter
     def machine_code3(self, machine_code3):
-        """Sets the machine_code3 of this VietnamIdCardResult.
+        r"""Sets the machine_code3 of this VietnamIdCardResult.
 
         身份证背面第三行机器码。当参数“side”为back时，返回此字段。 
 
@@ -477,7 +477,7 @@ class VietnamIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this VietnamIdCardResult.
+        r"""Gets the confidence of this VietnamIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -488,7 +488,7 @@ class VietnamIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this VietnamIdCardResult.
+        r"""Sets the confidence of this VietnamIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -499,7 +499,7 @@ class VietnamIdCardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this VietnamIdCardResult.
+        r"""Gets the portrait_image of this VietnamIdCardResult.
 
         当参数return_portrait_image为true时，返回头像的base64编码。 
 
@@ -510,7 +510,7 @@ class VietnamIdCardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this VietnamIdCardResult.
+        r"""Sets the portrait_image of this VietnamIdCardResult.
 
         当参数return_portrait_image为true时，返回头像的base64编码。 
 
@@ -521,7 +521,7 @@ class VietnamIdCardResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this VietnamIdCardResult.
+        r"""Gets the portrait_location of this VietnamIdCardResult.
 
         当参数return_portrait_location为true时，返回头像在原图上的位置，以列表形式表示，包含头像区域四个顶点的二维坐标（x,y）；坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -532,7 +532,7 @@ class VietnamIdCardResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this VietnamIdCardResult.
+        r"""Sets the portrait_location of this VietnamIdCardResult.
 
         当参数return_portrait_location为true时，返回头像在原图上的位置，以列表形式表示，包含头像区域四个顶点的二维坐标（x,y）；坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -543,7 +543,7 @@ class VietnamIdCardResult:
 
     @property
     def idcard_type(self):
-        """Gets the idcard_type of this VietnamIdCardResult.
+        r"""Gets the idcard_type of this VietnamIdCardResult.
 
         输入参数return_idcard_type为true时，返回身份证的类型：normal是身份证原件，copy是复印的身份证，screen是屏幕翻拍。 
 
@@ -554,7 +554,7 @@ class VietnamIdCardResult:
 
     @idcard_type.setter
     def idcard_type(self, idcard_type):
-        """Sets the idcard_type of this VietnamIdCardResult.
+        r"""Sets the idcard_type of this VietnamIdCardResult.
 
         输入参数return_idcard_type为true时，返回身份证的类型：normal是身份证原件，copy是复印的身份证，screen是屏幕翻拍。 
 
@@ -565,7 +565,7 @@ class VietnamIdCardResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this VietnamIdCardResult.
+        r"""Gets the text_location of this VietnamIdCardResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -576,7 +576,7 @@ class VietnamIdCardResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this VietnamIdCardResult.
+        r"""Sets the text_location of this VietnamIdCardResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

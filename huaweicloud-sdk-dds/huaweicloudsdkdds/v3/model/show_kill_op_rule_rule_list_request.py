@@ -37,7 +37,7 @@ class ShowKillOpRuleRuleListRequest:
     }
 
     def __init__(self, instance_id=None, operation_types=None, namespaces=None, status=None, plan_summary=None, offset=None, limit=None):
-        """ShowKillOpRuleRuleListRequest
+        r"""ShowKillOpRuleRuleListRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the instance_id of this ShowKillOpRuleRuleListRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -95,7 +95,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the instance_id of this ShowKillOpRuleRuleListRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -106,7 +106,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def operation_types(self):
-        """Gets the operation_types of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the operation_types of this ShowKillOpRuleRuleListRequest.
 
         Sql语句操作类型。  - insert，表示插入语句。  - update，表示更新语句。  - query，表示查询语句。  - command，表示命令语句。  - remove，表示删除语句。  - getmore，表示获取更多数据语句。
 
@@ -117,7 +117,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @operation_types.setter
     def operation_types(self, operation_types):
-        """Sets the operation_types of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the operation_types of this ShowKillOpRuleRuleListRequest.
 
         Sql语句操作类型。  - insert，表示插入语句。  - update，表示更新语句。  - query，表示查询语句。  - command，表示命令语句。  - remove，表示删除语句。  - getmore，表示获取更多数据语句。
 
@@ -128,7 +128,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def namespaces(self):
-        """Gets the namespaces of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the namespaces of this ShowKillOpRuleRuleListRequest.
 
         表命名空间。取值格式：库名.表名。 - 可为空，表示不做限制。 - 单独库名，表示对某个库下的所有集合生效。 - 库名.表名，表示对具体库下的具体的集合生效。
 
@@ -139,7 +139,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @namespaces.setter
     def namespaces(self, namespaces):
-        """Sets the namespaces of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the namespaces of this ShowKillOpRuleRuleListRequest.
 
         表命名空间。取值格式：库名.表名。 - 可为空，表示不做限制。 - 单独库名，表示对某个库下的所有集合生效。 - 库名.表名，表示对具体库下的具体的集合生效。
 
@@ -150,7 +150,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the status of this ShowKillOpRuleRuleListRequest.
 
         killOp规则状态。  - ENABLED，规则生效中。 - DISABLED，规则禁用中。
 
@@ -161,7 +161,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the status of this ShowKillOpRuleRuleListRequest.
 
         killOp规则状态。  - ENABLED，规则生效中。 - DISABLED，规则禁用中。
 
@@ -172,7 +172,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def plan_summary(self):
-        """Gets the plan_summary of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the plan_summary of this ShowKillOpRuleRuleListRequest.
 
         执行计划。 默认值空，表示不做限制。  - COLLSCAN。 - SORT_KEY_GENERATOR。 - SKIP。 - LIMIT。 - GEO_NEAR_2DSPHERE。 - GEO_NEAR_2D。 - AGGREGATE。 - OR。
 
@@ -183,7 +183,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @plan_summary.setter
     def plan_summary(self, plan_summary):
-        """Sets the plan_summary of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the plan_summary of this ShowKillOpRuleRuleListRequest.
 
         执行计划。 默认值空，表示不做限制。  - COLLSCAN。 - SORT_KEY_GENERATOR。 - SKIP。 - LIMIT。 - GEO_NEAR_2DSPHERE。 - GEO_NEAR_2D。 - AGGREGATE。 - OR。
 
@@ -194,7 +194,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the offset of this ShowKillOpRuleRuleListRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -205,7 +205,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the offset of this ShowKillOpRuleRuleListRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -216,7 +216,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowKillOpRuleRuleListRequest.
+        r"""Gets the limit of this ShowKillOpRuleRuleListRequest.
 
         查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
 
@@ -227,7 +227,7 @@ class ShowKillOpRuleRuleListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowKillOpRuleRuleListRequest.
+        r"""Sets the limit of this ShowKillOpRuleRuleListRequest.
 
         查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
 

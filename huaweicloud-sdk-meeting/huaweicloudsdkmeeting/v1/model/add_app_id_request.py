@@ -27,7 +27,7 @@ class AddAppIdRequest:
     }
 
     def __init__(self, x_request_id=None, body=None):
-        """AddAppIdRequest
+        r"""AddAppIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddAppIdRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AddAppIdRequest.
+        r"""Gets the x_request_id of this AddAppIdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -61,7 +61,7 @@ class AddAppIdRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AddAppIdRequest.
+        r"""Sets the x_request_id of this AddAppIdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -72,7 +72,7 @@ class AddAppIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAppIdRequest.
+        r"""Gets the body of this AddAppIdRequest.
 
         :return: The body of this AddAppIdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddAppIdRequestBody`
@@ -81,7 +81,7 @@ class AddAppIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAppIdRequest.
+        r"""Sets the body of this AddAppIdRequest.
 
         :param body: The body of this AddAppIdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.AddAppIdRequestBody`

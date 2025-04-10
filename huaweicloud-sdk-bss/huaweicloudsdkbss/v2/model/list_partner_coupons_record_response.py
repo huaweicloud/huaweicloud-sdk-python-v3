@@ -28,7 +28,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None):
-        """ListPartnerCouponsRecordResponse
+        r"""ListPartnerCouponsRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPartnerCouponsRecordResponse.
+        r"""Gets the total_count of this ListPartnerCouponsRecordResponse.
 
         查询记录总数。
 
@@ -62,7 +62,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPartnerCouponsRecordResponse.
+        r"""Sets the total_count of this ListPartnerCouponsRecordResponse.
 
         查询记录总数。
 
@@ -73,7 +73,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListPartnerCouponsRecordResponse.
+        r"""Gets the records of this ListPartnerCouponsRecordResponse.
 
         日志记录列表。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListPartnerCouponsRecordResponse.
+        r"""Sets the records of this ListPartnerCouponsRecordResponse.
 
         日志记录列表。 具体请参见表2。
 

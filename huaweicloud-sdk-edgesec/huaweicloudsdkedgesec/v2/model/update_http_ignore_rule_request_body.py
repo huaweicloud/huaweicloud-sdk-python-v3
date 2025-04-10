@@ -43,7 +43,7 @@ class UpdateHttpIgnoreRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None, url=None, rule=None, mode=None, domains=None, url_logic=None, advanced=None, conditions=None):
-        """UpdateHttpIgnoreRuleRequestBody
+        r"""UpdateHttpIgnoreRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the name of this UpdateHttpIgnoreRuleRequestBody.
 
         规则名称
 
@@ -113,7 +113,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the name of this UpdateHttpIgnoreRuleRequestBody.
 
         规则名称
 
@@ -124,7 +124,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the description of this UpdateHttpIgnoreRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -135,7 +135,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the description of this UpdateHttpIgnoreRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -146,7 +146,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the status of this UpdateHttpIgnoreRuleRequestBody.
 
         规则开关状态
 
@@ -157,7 +157,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the status of this UpdateHttpIgnoreRuleRequestBody.
 
         规则开关状态
 
@@ -168,7 +168,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the url of this UpdateHttpIgnoreRuleRequestBody.
 
         误报路径
 
@@ -179,7 +179,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the url of this UpdateHttpIgnoreRuleRequestBody.
 
         误报路径
 
@@ -190,7 +190,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def rule(self):
-        """Gets the rule of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the rule of this UpdateHttpIgnoreRuleRequestBody.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -201,7 +201,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the rule of this UpdateHttpIgnoreRuleRequestBody.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -212,7 +212,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the mode of this UpdateHttpIgnoreRuleRequestBody.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -223,7 +223,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the mode of this UpdateHttpIgnoreRuleRequestBody.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -234,7 +234,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def domains(self):
-        """Gets the domains of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the domains of this UpdateHttpIgnoreRuleRequestBody.
 
         防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
 
@@ -245,7 +245,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the domains of this UpdateHttpIgnoreRuleRequestBody.
 
         防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
 
@@ -256,7 +256,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def url_logic(self):
-        """Gets the url_logic of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the url_logic of this UpdateHttpIgnoreRuleRequestBody.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -267,7 +267,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @url_logic.setter
     def url_logic(self, url_logic):
-        """Sets the url_logic of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the url_logic of this UpdateHttpIgnoreRuleRequestBody.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -278,7 +278,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def advanced(self):
-        """Gets the advanced of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the advanced of this UpdateHttpIgnoreRuleRequestBody.
 
         :return: The advanced of this UpdateHttpIgnoreRuleRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -287,7 +287,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the advanced of this UpdateHttpIgnoreRuleRequestBody.
 
         :param advanced: The advanced of this UpdateHttpIgnoreRuleRequestBody.
         :type advanced: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -296,7 +296,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Gets the conditions of this UpdateHttpIgnoreRuleRequestBody.
 
         命中条件
 
@@ -307,7 +307,7 @@ class UpdateHttpIgnoreRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateHttpIgnoreRuleRequestBody.
+        r"""Sets the conditions of this UpdateHttpIgnoreRuleRequestBody.
 
         命中条件
 

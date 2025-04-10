@@ -27,7 +27,7 @@ class CompareObjectInfoWithToken:
     }
 
     def __init__(self, db_name=None, table_name_with_token=None):
-        """CompareObjectInfoWithToken
+        r"""CompareObjectInfoWithToken
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CompareObjectInfoWithToken:
 
     @property
     def db_name(self):
-        """Gets the db_name of this CompareObjectInfoWithToken.
+        r"""Gets the db_name of this CompareObjectInfoWithToken.
 
         库名。
 
@@ -60,7 +60,7 @@ class CompareObjectInfoWithToken:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this CompareObjectInfoWithToken.
+        r"""Sets the db_name of this CompareObjectInfoWithToken.
 
         库名。
 
@@ -71,7 +71,7 @@ class CompareObjectInfoWithToken:
 
     @property
     def table_name_with_token(self):
-        """Gets the table_name_with_token of this CompareObjectInfoWithToken.
+        r"""Gets the table_name_with_token of this CompareObjectInfoWithToken.
 
         该库下的表信息列表（带token）。
 
@@ -82,7 +82,7 @@ class CompareObjectInfoWithToken:
 
     @table_name_with_token.setter
     def table_name_with_token(self, table_name_with_token):
-        """Sets the table_name_with_token of this CompareObjectInfoWithToken.
+        r"""Sets the table_name_with_token of this CompareObjectInfoWithToken.
 
         该库下的表信息列表（带token）。
 

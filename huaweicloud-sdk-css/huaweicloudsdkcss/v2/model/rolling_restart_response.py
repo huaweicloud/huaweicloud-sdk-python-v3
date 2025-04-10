@@ -24,7 +24,7 @@ class RollingRestartResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RollingRestartResponse
+        r"""RollingRestartResponse
 
         The model defined in huaweicloud sdk
 

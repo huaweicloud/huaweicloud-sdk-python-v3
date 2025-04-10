@@ -31,7 +31,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, source_from=None, source_id=None, offset=None, limit=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListJobsRequest:
 
     @property
     def source_from(self):
-        """Gets the source_from of this ListJobsRequest.
+        r"""Gets the source_from of this ListJobsRequest.
 
         作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
@@ -73,7 +73,7 @@ class ListJobsRequest:
 
     @source_from.setter
     def source_from(self, source_from):
-        """Sets the source_from of this ListJobsRequest.
+        r"""Sets the source_from of this ListJobsRequest.
 
         作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
@@ -84,7 +84,7 @@ class ListJobsRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ListJobsRequest.
+        r"""Gets the source_id of this ListJobsRequest.
 
         课堂ID或者课程ID。
 
@@ -95,7 +95,7 @@ class ListJobsRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ListJobsRequest.
+        r"""Sets the source_id of this ListJobsRequest.
 
         课堂ID或者课程ID。
 
@@ -106,7 +106,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         信息记录的起始编号
 
@@ -117,7 +117,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         信息记录的起始编号
 
@@ -128,7 +128,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         每页包含的信息记录数
 
@@ -139,7 +139,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         每页包含的信息记录数
 

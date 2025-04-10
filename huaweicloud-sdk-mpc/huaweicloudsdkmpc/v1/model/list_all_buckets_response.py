@@ -26,7 +26,7 @@ class ListAllBucketsResponse(SdkResponse):
     }
 
     def __init__(self, buckets=None):
-        """ListAllBucketsResponse
+        r"""ListAllBucketsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAllBucketsResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this ListAllBucketsResponse.
+        r"""Gets the buckets of this ListAllBucketsResponse.
 
         桶列表
 
@@ -55,7 +55,7 @@ class ListAllBucketsResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this ListAllBucketsResponse.
+        r"""Sets the buckets of this ListAllBucketsResponse.
 
         桶列表
 

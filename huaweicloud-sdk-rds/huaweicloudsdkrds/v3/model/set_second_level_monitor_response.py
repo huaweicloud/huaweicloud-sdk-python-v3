@@ -26,7 +26,7 @@ class SetSecondLevelMonitorResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SetSecondLevelMonitorResponse
+        r"""SetSecondLevelMonitorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetSecondLevelMonitorResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SetSecondLevelMonitorResponse.
+        r"""Gets the body of this SetSecondLevelMonitorResponse.
 
         :return: The body of this SetSecondLevelMonitorResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SetSecondLevelMonitorResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetSecondLevelMonitorResponse.
+        r"""Sets the body of this SetSecondLevelMonitorResponse.
 
         :param body: The body of this SetSecondLevelMonitorResponse.
         :type body: str

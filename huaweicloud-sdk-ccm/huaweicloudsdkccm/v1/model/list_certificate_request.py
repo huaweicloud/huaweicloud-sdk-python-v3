@@ -35,7 +35,7 @@ class ListCertificateRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None, sort_key=None, sort_dir=None):
-        """ListCertificateRequest
+        r"""ListCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListCertificateRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertificateRequest.
+        r"""Gets the limit of this ListCertificateRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -89,7 +89,7 @@ class ListCertificateRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertificateRequest.
+        r"""Sets the limit of this ListCertificateRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -100,7 +100,7 @@ class ListCertificateRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCertificateRequest.
+        r"""Gets the name of this ListCertificateRequest.
 
         私有证书名称，返回名称带有name字段的证书集合。
 
@@ -111,7 +111,7 @@ class ListCertificateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCertificateRequest.
+        r"""Sets the name of this ListCertificateRequest.
 
         私有证书名称，返回名称带有name字段的证书集合。
 
@@ -122,7 +122,7 @@ class ListCertificateRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCertificateRequest.
+        r"""Gets the offset of this ListCertificateRequest.
 
         索引位置，从offset指定的下一条数据开始查询。
 
@@ -133,7 +133,7 @@ class ListCertificateRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCertificateRequest.
+        r"""Sets the offset of this ListCertificateRequest.
 
         索引位置，从offset指定的下一条数据开始查询。
 
@@ -144,7 +144,7 @@ class ListCertificateRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCertificateRequest.
+        r"""Gets the status of this ListCertificateRequest.
 
         私有证书状态，通过状态过滤证书集合。   - **ISSUED** : 已签发；   - **REVOKED** : 已吊销；   - **EXPIRED** : 已过期。
 
@@ -155,7 +155,7 @@ class ListCertificateRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCertificateRequest.
+        r"""Sets the status of this ListCertificateRequest.
 
         私有证书状态，通过状态过滤证书集合。   - **ISSUED** : 已签发；   - **REVOKED** : 已吊销；   - **EXPIRED** : 已过期。
 
@@ -166,7 +166,7 @@ class ListCertificateRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCertificateRequest.
+        r"""Gets the sort_key of this ListCertificateRequest.
 
         排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **issuer_name** : 签发CA名称 - **not_after** : 证书到期时间
 
@@ -177,7 +177,7 @@ class ListCertificateRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCertificateRequest.
+        r"""Sets the sort_key of this ListCertificateRequest.
 
         排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **issuer_name** : 签发CA名称 - **not_after** : 证书到期时间
 
@@ -188,7 +188,7 @@ class ListCertificateRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCertificateRequest.
+        r"""Gets the sort_dir of this ListCertificateRequest.
 
         排序方向，支持以下值：   - **DESC** : 降序（默认）   - **ASC** : 升序
 
@@ -199,7 +199,7 @@ class ListCertificateRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCertificateRequest.
+        r"""Sets the sort_dir of this ListCertificateRequest.
 
         排序方向，支持以下值：   - **DESC** : 降序（默认）   - **ASC** : 升序
 

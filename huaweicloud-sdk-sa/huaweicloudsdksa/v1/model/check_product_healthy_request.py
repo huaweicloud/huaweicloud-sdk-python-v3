@@ -29,7 +29,7 @@ class CheckProductHealthyRequest:
     }
 
     def __init__(self, x_language=None, project_id=None, body=None):
-        """CheckProductHealthyRequest
+        r"""CheckProductHealthyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CheckProductHealthyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckProductHealthyRequest.
+        r"""Gets the x_language of this CheckProductHealthyRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CheckProductHealthyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckProductHealthyRequest.
+        r"""Sets the x_language of this CheckProductHealthyRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CheckProductHealthyRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckProductHealthyRequest.
+        r"""Gets the project_id of this CheckProductHealthyRequest.
 
         租户项目ID。
 
@@ -89,7 +89,7 @@ class CheckProductHealthyRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckProductHealthyRequest.
+        r"""Sets the project_id of this CheckProductHealthyRequest.
 
         租户项目ID。
 
@@ -100,7 +100,7 @@ class CheckProductHealthyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckProductHealthyRequest.
+        r"""Gets the body of this CheckProductHealthyRequest.
 
         :return: The body of this CheckProductHealthyRequest.
         :rtype: :class:`huaweicloudsdksa.v1.ProductInfo`
@@ -109,7 +109,7 @@ class CheckProductHealthyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckProductHealthyRequest.
+        r"""Sets the body of this CheckProductHealthyRequest.
 
         :param body: The body of this CheckProductHealthyRequest.
         :type body: :class:`huaweicloudsdksa.v1.ProductInfo`

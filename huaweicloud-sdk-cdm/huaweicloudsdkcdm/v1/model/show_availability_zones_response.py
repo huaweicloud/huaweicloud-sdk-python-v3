@@ -30,7 +30,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, region_id=None, default_az=None, available_zones=None):
-        """ShowAvailabilityZonesResponse
+        r"""ShowAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowAvailabilityZonesResponse.
+        r"""Gets the region_id of this ShowAvailabilityZonesResponse.
 
         区域ID。
 
@@ -69,7 +69,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowAvailabilityZonesResponse.
+        r"""Sets the region_id of this ShowAvailabilityZonesResponse.
 
         区域ID。
 
@@ -80,7 +80,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
 
     @property
     def default_az(self):
-        """Gets the default_az of this ShowAvailabilityZonesResponse.
+        r"""Gets the default_az of this ShowAvailabilityZonesResponse.
 
         默认可用区。
 
@@ -91,7 +91,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
 
     @default_az.setter
     def default_az(self, default_az):
-        """Sets the default_az of this ShowAvailabilityZonesResponse.
+        r"""Sets the default_az of this ShowAvailabilityZonesResponse.
 
         默认可用区。
 
@@ -102,7 +102,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ShowAvailabilityZonesResponse.
+        r"""Gets the available_zones of this ShowAvailabilityZonesResponse.
 
         可用区。
 
@@ -113,7 +113,7 @@ class ShowAvailabilityZonesResponse(SdkResponse):
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ShowAvailabilityZonesResponse.
+        r"""Sets the available_zones of this ShowAvailabilityZonesResponse.
 
         可用区。
 

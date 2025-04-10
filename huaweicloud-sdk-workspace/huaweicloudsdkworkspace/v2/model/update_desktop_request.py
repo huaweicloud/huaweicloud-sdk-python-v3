@@ -27,7 +27,7 @@ class UpdateDesktopRequest:
     }
 
     def __init__(self, desktop_id=None, body=None):
-        """UpdateDesktopRequest
+        r"""UpdateDesktopRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDesktopRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this UpdateDesktopRequest.
+        r"""Gets the desktop_id of this UpdateDesktopRequest.
 
         桌面ID。
 
@@ -60,7 +60,7 @@ class UpdateDesktopRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this UpdateDesktopRequest.
+        r"""Sets the desktop_id of this UpdateDesktopRequest.
 
         桌面ID。
 
@@ -71,7 +71,7 @@ class UpdateDesktopRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesktopRequest.
+        r"""Gets the body of this UpdateDesktopRequest.
 
         :return: The body of this UpdateDesktopRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ModifyDesktopAttributesReq`
@@ -80,7 +80,7 @@ class UpdateDesktopRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesktopRequest.
+        r"""Sets the body of this UpdateDesktopRequest.
 
         :param body: The body of this UpdateDesktopRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ModifyDesktopAttributesReq`

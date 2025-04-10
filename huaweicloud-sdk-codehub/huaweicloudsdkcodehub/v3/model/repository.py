@@ -25,7 +25,7 @@ class Repository:
     }
 
     def __init__(self, repository_uuid=None):
-        """Repository
+        r"""Repository
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Repository:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this Repository.
+        r"""Gets the repository_uuid of this Repository.
 
         创建仓库的UUID
 
@@ -54,7 +54,7 @@ class Repository:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this Repository.
+        r"""Sets the repository_uuid of this Repository.
 
         创建仓库的UUID
 

@@ -29,7 +29,7 @@ class ExtendedProperties:
     }
 
     def __init__(self, work_space_id=None, resource_id=None, trial=None):
-        """ExtendedProperties
+        r"""ExtendedProperties
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExtendedProperties:
 
     @property
     def work_space_id(self):
-        """Gets the work_space_id of this ExtendedProperties.
+        r"""Gets the work_space_id of this ExtendedProperties.
 
         工作空间ID。
 
@@ -68,7 +68,7 @@ class ExtendedProperties:
 
     @work_space_id.setter
     def work_space_id(self, work_space_id):
-        """Sets the work_space_id of this ExtendedProperties.
+        r"""Sets the work_space_id of this ExtendedProperties.
 
         工作空间ID。
 
@@ -79,7 +79,7 @@ class ExtendedProperties:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ExtendedProperties.
+        r"""Gets the resource_id of this ExtendedProperties.
 
         资源ID。
 
@@ -90,7 +90,7 @@ class ExtendedProperties:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ExtendedProperties.
+        r"""Sets the resource_id of this ExtendedProperties.
 
         资源ID。
 
@@ -101,7 +101,7 @@ class ExtendedProperties:
 
     @property
     def trial(self):
-        """Gets the trial of this ExtendedProperties.
+        r"""Gets the trial of this ExtendedProperties.
 
         是否是试用集群。
 
@@ -112,7 +112,7 @@ class ExtendedProperties:
 
     @trial.setter
     def trial(self, trial):
-        """Sets the trial of this ExtendedProperties.
+        r"""Sets the trial of this ExtendedProperties.
 
         是否是试用集群。
 

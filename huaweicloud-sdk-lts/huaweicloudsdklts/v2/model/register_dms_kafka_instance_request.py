@@ -25,7 +25,7 @@ class RegisterDmsKafkaInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterDmsKafkaInstanceRequest
+        r"""RegisterDmsKafkaInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterDmsKafkaInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterDmsKafkaInstanceRequest.
+        r"""Gets the body of this RegisterDmsKafkaInstanceRequest.
 
         :return: The body of this RegisterDmsKafkaInstanceRequest.
         :rtype: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBody`
@@ -52,7 +52,7 @@ class RegisterDmsKafkaInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterDmsKafkaInstanceRequest.
+        r"""Sets the body of this RegisterDmsKafkaInstanceRequest.
 
         :param body: The body of this RegisterDmsKafkaInstanceRequest.
         :type body: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBody`

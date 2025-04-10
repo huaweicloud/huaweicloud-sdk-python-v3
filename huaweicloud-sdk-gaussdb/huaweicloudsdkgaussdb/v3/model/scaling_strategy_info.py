@@ -27,7 +27,7 @@ class ScalingStrategyInfo:
     }
 
     def __init__(self, flavor_switch=None, read_only_switch=None):
-        """ScalingStrategyInfo
+        r"""ScalingStrategyInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScalingStrategyInfo:
 
     @property
     def flavor_switch(self):
-        """Gets the flavor_switch of this ScalingStrategyInfo.
+        r"""Gets the flavor_switch of this ScalingStrategyInfo.
 
         扩缩规格开关。 - ON：开启。 - OFF：关闭。
 
@@ -61,7 +61,7 @@ class ScalingStrategyInfo:
 
     @flavor_switch.setter
     def flavor_switch(self, flavor_switch):
-        """Sets the flavor_switch of this ScalingStrategyInfo.
+        r"""Sets the flavor_switch of this ScalingStrategyInfo.
 
         扩缩规格开关。 - ON：开启。 - OFF：关闭。
 
@@ -72,7 +72,7 @@ class ScalingStrategyInfo:
 
     @property
     def read_only_switch(self):
-        """Gets the read_only_switch of this ScalingStrategyInfo.
+        r"""Gets the read_only_switch of this ScalingStrategyInfo.
 
         增删只读节点开关。 - ON：开启。 - OFF：关闭。
 
@@ -83,7 +83,7 @@ class ScalingStrategyInfo:
 
     @read_only_switch.setter
     def read_only_switch(self, read_only_switch):
-        """Sets the read_only_switch of this ScalingStrategyInfo.
+        r"""Sets the read_only_switch of this ScalingStrategyInfo.
 
         增删只读节点开关。 - ON：开启。 - OFF：关闭。
 

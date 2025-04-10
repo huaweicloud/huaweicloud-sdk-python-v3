@@ -49,7 +49,7 @@ class AppRulesSpec:
     }
 
     def __init__(self, app_type=None, attr_list=None, detect_log=None, discovery_rule=None, is_default_rule=None, is_detect=None, log_file_fix=None, log_path_rule=None, name_rule=None, priority=None, data_source=None, editable=None, aom_metric_relabel_configs=None):
-        """AppRulesSpec
+        r"""AppRulesSpec
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class AppRulesSpec:
 
     @property
     def app_type(self):
-        """Gets the app_type of this AppRulesSpec.
+        r"""Gets the app_type of this AppRulesSpec.
 
         服务类型，用于标记服务的分类，仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java，Python。按作用分类可填写collector(采集)，database(数据库)等。
 
@@ -130,7 +130,7 @@ class AppRulesSpec:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this AppRulesSpec.
+        r"""Sets the app_type of this AppRulesSpec.
 
         服务类型，用于标记服务的分类，仅用于规则分类和界面展示。可以填写任意字段,如按技术栈分类可填写Java，Python。按作用分类可填写collector(采集)，database(数据库)等。
 
@@ -141,7 +141,7 @@ class AppRulesSpec:
 
     @property
     def attr_list(self):
-        """Gets the attr_list of this AppRulesSpec.
+        r"""Gets the attr_list of this AppRulesSpec.
 
         属性列表(暂不使用,可不传)。 cmdLine、env
 
@@ -152,7 +152,7 @@ class AppRulesSpec:
 
     @attr_list.setter
     def attr_list(self, attr_list):
-        """Sets the attr_list of this AppRulesSpec.
+        r"""Sets the attr_list of this AppRulesSpec.
 
         属性列表(暂不使用,可不传)。 cmdLine、env
 
@@ -163,7 +163,7 @@ class AppRulesSpec:
 
     @property
     def detect_log(self):
-        """Gets the detect_log of this AppRulesSpec.
+        r"""Gets the detect_log of this AppRulesSpec.
 
         是否开启日志采集。 true、false
 
@@ -174,7 +174,7 @@ class AppRulesSpec:
 
     @detect_log.setter
     def detect_log(self, detect_log):
-        """Sets the detect_log of this AppRulesSpec.
+        r"""Sets the detect_log of this AppRulesSpec.
 
         是否开启日志采集。 true、false
 
@@ -185,7 +185,7 @@ class AppRulesSpec:
 
     @property
     def discovery_rule(self):
-        """Gets the discovery_rule of this AppRulesSpec.
+        r"""Gets the discovery_rule of this AppRulesSpec.
 
         规则发现部分，数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain，checkContent格式为[\"xxx\"]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain，checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals，checkContent格式为节点ID数组[\"hostId1\",\"hostId2\"]，表示规则仅会在这些节点上生效(如果不指定节点范围，规则将下发到该项目所有的节点)。
 
@@ -196,7 +196,7 @@ class AppRulesSpec:
 
     @discovery_rule.setter
     def discovery_rule(self, discovery_rule):
-        """Sets the discovery_rule of this AppRulesSpec.
+        r"""Sets the discovery_rule of this AppRulesSpec.
 
         规则发现部分，数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain，checkContent格式为[\"xxx\"]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain，checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals，checkContent格式为节点ID数组[\"hostId1\",\"hostId2\"]，表示规则仅会在这些节点上生效(如果不指定节点范围，规则将下发到该项目所有的节点)。
 
@@ -207,7 +207,7 @@ class AppRulesSpec:
 
     @property
     def is_default_rule(self):
-        """Gets the is_default_rule of this AppRulesSpec.
+        r"""Gets the is_default_rule of this AppRulesSpec.
 
         是否为默认规则。 true、false
 
@@ -218,7 +218,7 @@ class AppRulesSpec:
 
     @is_default_rule.setter
     def is_default_rule(self, is_default_rule):
-        """Sets the is_default_rule of this AppRulesSpec.
+        r"""Sets the is_default_rule of this AppRulesSpec.
 
         是否为默认规则。 true、false
 
@@ -229,7 +229,7 @@ class AppRulesSpec:
 
     @property
     def is_detect(self):
-        """Gets the is_detect of this AppRulesSpec.
+        r"""Gets the is_detect of this AppRulesSpec.
 
         是否为规则预探测场景（预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程）。true、false
 
@@ -240,7 +240,7 @@ class AppRulesSpec:
 
     @is_detect.setter
     def is_detect(self, is_detect):
-        """Sets the is_detect of this AppRulesSpec.
+        r"""Sets the is_detect of this AppRulesSpec.
 
         是否为规则预探测场景（预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程）。true、false
 
@@ -251,7 +251,7 @@ class AppRulesSpec:
 
     @property
     def log_file_fix(self):
-        """Gets the log_file_fix of this AppRulesSpec.
+        r"""Gets the log_file_fix of this AppRulesSpec.
 
         日志文件的后缀。 log、trace、out
 
@@ -262,7 +262,7 @@ class AppRulesSpec:
 
     @log_file_fix.setter
     def log_file_fix(self, log_file_fix):
-        """Sets the log_file_fix of this AppRulesSpec.
+        r"""Sets the log_file_fix of this AppRulesSpec.
 
         日志文件的后缀。 log、trace、out
 
@@ -273,7 +273,7 @@ class AppRulesSpec:
 
     @property
     def log_path_rule(self):
-        """Gets the log_path_rule of this AppRulesSpec.
+        r"""Gets the log_path_rule of this AppRulesSpec.
 
         日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时，args格式为[\"00001\"]，value格式为[\"/xxx/xx.log\"]，表示当启动命令是00001时,日志路径为/xxx/xx.log。
 
@@ -284,7 +284,7 @@ class AppRulesSpec:
 
     @log_path_rule.setter
     def log_path_rule(self, log_path_rule):
-        """Sets the log_path_rule of this AppRulesSpec.
+        r"""Sets the log_path_rule of this AppRulesSpec.
 
         日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时，args格式为[\"00001\"]，value格式为[\"/xxx/xx.log\"]，表示当启动命令是00001时,日志路径为/xxx/xx.log。
 
@@ -295,7 +295,7 @@ class AppRulesSpec:
 
     @property
     def name_rule(self):
-        """Gets the name_rule of this AppRulesSpec.
+        r"""Gets the name_rule of this AppRulesSpec.
 
         :return: The name_rule of this AppRulesSpec.
         :rtype: :class:`huaweicloudsdkaom.v2.NameRule`
@@ -304,7 +304,7 @@ class AppRulesSpec:
 
     @name_rule.setter
     def name_rule(self, name_rule):
-        """Sets the name_rule of this AppRulesSpec.
+        r"""Sets the name_rule of this AppRulesSpec.
 
         :param name_rule: The name_rule of this AppRulesSpec.
         :type name_rule: :class:`huaweicloudsdkaom.v2.NameRule`
@@ -313,7 +313,7 @@ class AppRulesSpec:
 
     @property
     def priority(self):
-        """Gets the priority of this AppRulesSpec.
+        r"""Gets the priority of this AppRulesSpec.
 
         规则优先级。1~9999的整数字符串，默认取值为9999
 
@@ -324,7 +324,7 @@ class AppRulesSpec:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this AppRulesSpec.
+        r"""Sets the priority of this AppRulesSpec.
 
         规则优先级。1~9999的整数字符串，默认取值为9999
 
@@ -335,7 +335,7 @@ class AppRulesSpec:
 
     @property
     def data_source(self):
-        """Gets the data_source of this AppRulesSpec.
+        r"""Gets the data_source of this AppRulesSpec.
 
         数据源
 
@@ -346,7 +346,7 @@ class AppRulesSpec:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this AppRulesSpec.
+        r"""Sets the data_source of this AppRulesSpec.
 
         数据源
 
@@ -357,7 +357,7 @@ class AppRulesSpec:
 
     @property
     def editable(self):
-        """Gets the editable of this AppRulesSpec.
+        r"""Gets the editable of this AppRulesSpec.
 
         是否支持编辑 true、false
 
@@ -368,7 +368,7 @@ class AppRulesSpec:
 
     @editable.setter
     def editable(self, editable):
-        """Sets the editable of this AppRulesSpec.
+        r"""Sets the editable of this AppRulesSpec.
 
         是否支持编辑 true、false
 
@@ -379,7 +379,7 @@ class AppRulesSpec:
 
     @property
     def aom_metric_relabel_configs(self):
-        """Gets the aom_metric_relabel_configs of this AppRulesSpec.
+        r"""Gets the aom_metric_relabel_configs of this AppRulesSpec.
 
         指标配置
 
@@ -390,7 +390,7 @@ class AppRulesSpec:
 
     @aom_metric_relabel_configs.setter
     def aom_metric_relabel_configs(self, aom_metric_relabel_configs):
-        """Sets the aom_metric_relabel_configs of this AppRulesSpec.
+        r"""Sets the aom_metric_relabel_configs of this AppRulesSpec.
 
         指标配置
 

@@ -37,7 +37,7 @@ class UpdateWarehouseAppReq:
     }
 
     def __init__(self, app_name=None, app_category=None, os_type=None, version_id=None, app_description=None, version_name=None, app_icon=None):
-        """UpdateWarehouseAppReq
+        r"""UpdateWarehouseAppReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateWarehouseAppReq.
+        r"""Gets the app_name of this UpdateWarehouseAppReq.
 
         应用名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -96,7 +96,7 @@ class UpdateWarehouseAppReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateWarehouseAppReq.
+        r"""Sets the app_name of this UpdateWarehouseAppReq.
 
         应用名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -107,7 +107,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def app_category(self):
-        """Gets the app_category of this UpdateWarehouseAppReq.
+        r"""Gets the app_category of this UpdateWarehouseAppReq.
 
         :return: The app_category of this UpdateWarehouseAppReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
@@ -116,7 +116,7 @@ class UpdateWarehouseAppReq:
 
     @app_category.setter
     def app_category(self, app_category):
-        """Sets the app_category of this UpdateWarehouseAppReq.
+        r"""Sets the app_category of this UpdateWarehouseAppReq.
 
         :param app_category: The app_category of this UpdateWarehouseAppReq.
         :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
@@ -125,7 +125,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this UpdateWarehouseAppReq.
+        r"""Gets the os_type of this UpdateWarehouseAppReq.
 
         :return: The os_type of this UpdateWarehouseAppReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -134,7 +134,7 @@ class UpdateWarehouseAppReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this UpdateWarehouseAppReq.
+        r"""Sets the os_type of this UpdateWarehouseAppReq.
 
         :param os_type: The os_type of this UpdateWarehouseAppReq.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -143,7 +143,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def version_id(self):
-        """Gets the version_id of this UpdateWarehouseAppReq.
+        r"""Gets the version_id of this UpdateWarehouseAppReq.
 
         版本号,名称需满足如下规则: 1. 由可见字符组成。 2. 长度范围1~64个字符。
 
@@ -154,7 +154,7 @@ class UpdateWarehouseAppReq:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this UpdateWarehouseAppReq.
+        r"""Sets the version_id of this UpdateWarehouseAppReq.
 
         版本号,名称需满足如下规则: 1. 由可见字符组成。 2. 长度范围1~64个字符。
 
@@ -165,7 +165,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def app_description(self):
-        """Gets the app_description of this UpdateWarehouseAppReq.
+        r"""Gets the app_description of this UpdateWarehouseAppReq.
 
         应用仓库中的应用描述。
 
@@ -176,7 +176,7 @@ class UpdateWarehouseAppReq:
 
     @app_description.setter
     def app_description(self, app_description):
-        """Sets the app_description of this UpdateWarehouseAppReq.
+        r"""Sets the app_description of this UpdateWarehouseAppReq.
 
         应用仓库中的应用描述。
 
@@ -187,7 +187,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def version_name(self):
-        """Gets the version_name of this UpdateWarehouseAppReq.
+        r"""Gets the version_name of this UpdateWarehouseAppReq.
 
         版本描述,名称需满足如下规则: 1. 由可见字符组成。 2. 长度范围1~255个字符。
 
@@ -198,7 +198,7 @@ class UpdateWarehouseAppReq:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this UpdateWarehouseAppReq.
+        r"""Sets the version_name of this UpdateWarehouseAppReq.
 
         版本描述,名称需满足如下规则: 1. 由可见字符组成。 2. 长度范围1~255个字符。
 
@@ -209,7 +209,7 @@ class UpdateWarehouseAppReq:
 
     @property
     def app_icon(self):
-        """Gets the app_icon of this UpdateWarehouseAppReq.
+        r"""Gets the app_icon of this UpdateWarehouseAppReq.
 
         > - 图片的默认大小当前限制为8KB，即1024 * 8字节。 > - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
 
@@ -220,7 +220,7 @@ class UpdateWarehouseAppReq:
 
     @app_icon.setter
     def app_icon(self, app_icon):
-        """Sets the app_icon of this UpdateWarehouseAppReq.
+        r"""Sets the app_icon of this UpdateWarehouseAppReq.
 
         > - 图片的默认大小当前限制为8KB，即1024 * 8字节。 > - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
 

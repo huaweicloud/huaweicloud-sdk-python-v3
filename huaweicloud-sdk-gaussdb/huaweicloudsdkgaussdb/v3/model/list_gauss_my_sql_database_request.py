@@ -35,7 +35,7 @@ class ListGaussMySqlDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, name=None, charset=None):
-        """ListGaussMySqlDatabaseRequest
+        r"""ListGaussMySqlDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListGaussMySqlDatabaseRequest.
+        r"""Gets the x_language of this ListGaussMySqlDatabaseRequest.
 
         语言。
 
@@ -88,7 +88,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListGaussMySqlDatabaseRequest.
+        r"""Sets the x_language of this ListGaussMySqlDatabaseRequest.
 
         语言。
 
@@ -99,7 +99,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListGaussMySqlDatabaseRequest.
+        r"""Gets the instance_id of this ListGaussMySqlDatabaseRequest.
 
         实例ID。
 
@@ -110,7 +110,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListGaussMySqlDatabaseRequest.
+        r"""Sets the instance_id of this ListGaussMySqlDatabaseRequest.
 
         实例ID。
 
@@ -121,7 +121,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGaussMySqlDatabaseRequest.
+        r"""Gets the offset of this ListGaussMySqlDatabaseRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -132,7 +132,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGaussMySqlDatabaseRequest.
+        r"""Sets the offset of this ListGaussMySqlDatabaseRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -143,7 +143,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGaussMySqlDatabaseRequest.
+        r"""Gets the limit of this ListGaussMySqlDatabaseRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -154,7 +154,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGaussMySqlDatabaseRequest.
+        r"""Sets the limit of this ListGaussMySqlDatabaseRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -165,7 +165,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGaussMySqlDatabaseRequest.
+        r"""Gets the name of this ListGaussMySqlDatabaseRequest.
 
         数据库名称。
 
@@ -176,7 +176,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGaussMySqlDatabaseRequest.
+        r"""Sets the name of this ListGaussMySqlDatabaseRequest.
 
         数据库名称。
 
@@ -187,7 +187,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @property
     def charset(self):
-        """Gets the charset of this ListGaussMySqlDatabaseRequest.
+        r"""Gets the charset of this ListGaussMySqlDatabaseRequest.
 
         数据库使用的字符集，如utf8mb4、gbk等。
 
@@ -198,7 +198,7 @@ class ListGaussMySqlDatabaseRequest:
 
     @charset.setter
     def charset(self, charset):
-        """Sets the charset of this ListGaussMySqlDatabaseRequest.
+        r"""Sets the charset of this ListGaussMySqlDatabaseRequest.
 
         数据库使用的字符集，如utf8mb4、gbk等。
 

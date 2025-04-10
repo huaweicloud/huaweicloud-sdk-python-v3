@@ -25,7 +25,7 @@ class DeleteDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None):
-        """DeleteDeploymentRequest
+        r"""DeleteDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this DeleteDeploymentRequest.
+        r"""Gets the deployment_id of this DeleteDeploymentRequest.
 
         部署计划ID。
 
@@ -53,7 +53,7 @@ class DeleteDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this DeleteDeploymentRequest.
+        r"""Sets the deployment_id of this DeleteDeploymentRequest.
 
         部署计划ID。
 

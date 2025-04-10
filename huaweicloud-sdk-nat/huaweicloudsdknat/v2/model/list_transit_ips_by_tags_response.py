@@ -30,7 +30,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, request_id=None, total_count=None):
-        """ListTransitIpsByTagsResponse
+        r"""ListTransitIpsByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListTransitIpsByTagsResponse.
+        r"""Gets the resources of this ListTransitIpsByTagsResponse.
 
         资源列表。
 
@@ -69,7 +69,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListTransitIpsByTagsResponse.
+        r"""Sets the resources of this ListTransitIpsByTagsResponse.
 
         资源列表。
 
@@ -80,7 +80,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTransitIpsByTagsResponse.
+        r"""Gets the request_id of this ListTransitIpsByTagsResponse.
 
         请求id。
 
@@ -91,7 +91,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTransitIpsByTagsResponse.
+        r"""Sets the request_id of this ListTransitIpsByTagsResponse.
 
         请求id。
 
@@ -102,7 +102,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListTransitIpsByTagsResponse.
+        r"""Gets the total_count of this ListTransitIpsByTagsResponse.
 
         总记录数。
 
@@ -113,7 +113,7 @@ class ListTransitIpsByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListTransitIpsByTagsResponse.
+        r"""Sets the total_count of this ListTransitIpsByTagsResponse.
 
         总记录数。
 

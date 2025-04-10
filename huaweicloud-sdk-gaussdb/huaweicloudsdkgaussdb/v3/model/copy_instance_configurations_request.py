@@ -31,7 +31,7 @@ class CopyInstanceConfigurationsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, configuration_id=None, body=None):
-        """CopyInstanceConfigurationsRequest
+        r"""CopyInstanceConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CopyInstanceConfigurationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CopyInstanceConfigurationsRequest.
+        r"""Gets the x_language of this CopyInstanceConfigurationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -73,7 +73,7 @@ class CopyInstanceConfigurationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CopyInstanceConfigurationsRequest.
+        r"""Sets the x_language of this CopyInstanceConfigurationsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -84,7 +84,7 @@ class CopyInstanceConfigurationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CopyInstanceConfigurationsRequest.
+        r"""Gets the instance_id of this CopyInstanceConfigurationsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class CopyInstanceConfigurationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CopyInstanceConfigurationsRequest.
+        r"""Sets the instance_id of this CopyInstanceConfigurationsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class CopyInstanceConfigurationsRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this CopyInstanceConfigurationsRequest.
+        r"""Gets the configuration_id of this CopyInstanceConfigurationsRequest.
 
         参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
@@ -117,7 +117,7 @@ class CopyInstanceConfigurationsRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this CopyInstanceConfigurationsRequest.
+        r"""Sets the configuration_id of this CopyInstanceConfigurationsRequest.
 
         参数组ID。  通过调用[查询实例详情信息](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlInstanceInfo.html)接口获取。  请求响应成功后在响应消息体中包含的“configuration_id”的值即为configuration_id值。
 
@@ -128,7 +128,7 @@ class CopyInstanceConfigurationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyInstanceConfigurationsRequest.
+        r"""Gets the body of this CopyInstanceConfigurationsRequest.
 
         :return: The body of this CopyInstanceConfigurationsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsRequestBody`
@@ -137,7 +137,7 @@ class CopyInstanceConfigurationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyInstanceConfigurationsRequest.
+        r"""Sets the body of this CopyInstanceConfigurationsRequest.
 
         :param body: The body of this CopyInstanceConfigurationsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsRequestBody`

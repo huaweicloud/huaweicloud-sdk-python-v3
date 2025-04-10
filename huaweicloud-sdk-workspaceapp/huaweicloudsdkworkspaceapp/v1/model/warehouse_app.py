@@ -59,7 +59,7 @@ class WarehouseApp:
     }
 
     def __init__(self, id=None, app_id=None, tenant_id=None, app_name=None, app_category=None, os_type=None, version_id=None, version_name=None, appfile_store_path=None, app_file_size=None, app_description=None, appicon_store_path=None, create_time=None, modify_time=None, verify_time=None, verify_status=None, verify_comment=None, app_icon=None):
-        """WarehouseApp
+        r"""WarehouseApp
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class WarehouseApp:
 
     @property
     def id(self):
-        """Gets the id of this WarehouseApp.
+        r"""Gets the id of this WarehouseApp.
 
         应用的记录id。
 
@@ -173,7 +173,7 @@ class WarehouseApp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WarehouseApp.
+        r"""Sets the id of this WarehouseApp.
 
         应用的记录id。
 
@@ -184,7 +184,7 @@ class WarehouseApp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this WarehouseApp.
+        r"""Gets the app_id of this WarehouseApp.
 
         应用id。
 
@@ -195,7 +195,7 @@ class WarehouseApp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this WarehouseApp.
+        r"""Sets the app_id of this WarehouseApp.
 
         应用id。
 
@@ -206,7 +206,7 @@ class WarehouseApp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this WarehouseApp.
+        r"""Gets the tenant_id of this WarehouseApp.
 
         租户id。
 
@@ -217,7 +217,7 @@ class WarehouseApp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this WarehouseApp.
+        r"""Sets the tenant_id of this WarehouseApp.
 
         租户id。
 
@@ -228,7 +228,7 @@ class WarehouseApp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this WarehouseApp.
+        r"""Gets the app_name of this WarehouseApp.
 
         应用名称。
 
@@ -239,7 +239,7 @@ class WarehouseApp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this WarehouseApp.
+        r"""Sets the app_name of this WarehouseApp.
 
         应用名称。
 
@@ -250,7 +250,7 @@ class WarehouseApp:
 
     @property
     def app_category(self):
-        """Gets the app_category of this WarehouseApp.
+        r"""Gets the app_category of this WarehouseApp.
 
         :return: The app_category of this WarehouseApp.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
@@ -259,7 +259,7 @@ class WarehouseApp:
 
     @app_category.setter
     def app_category(self, app_category):
-        """Sets the app_category of this WarehouseApp.
+        r"""Sets the app_category of this WarehouseApp.
 
         :param app_category: The app_category of this WarehouseApp.
         :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
@@ -268,7 +268,7 @@ class WarehouseApp:
 
     @property
     def os_type(self):
-        """Gets the os_type of this WarehouseApp.
+        r"""Gets the os_type of this WarehouseApp.
 
         :return: The os_type of this WarehouseApp.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -277,7 +277,7 @@ class WarehouseApp:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this WarehouseApp.
+        r"""Sets the os_type of this WarehouseApp.
 
         :param os_type: The os_type of this WarehouseApp.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -286,7 +286,7 @@ class WarehouseApp:
 
     @property
     def version_id(self):
-        """Gets the version_id of this WarehouseApp.
+        r"""Gets the version_id of this WarehouseApp.
 
         版本号。
 
@@ -297,7 +297,7 @@ class WarehouseApp:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this WarehouseApp.
+        r"""Sets the version_id of this WarehouseApp.
 
         版本号。
 
@@ -308,7 +308,7 @@ class WarehouseApp:
 
     @property
     def version_name(self):
-        """Gets the version_name of this WarehouseApp.
+        r"""Gets the version_name of this WarehouseApp.
 
         版本名称。
 
@@ -319,7 +319,7 @@ class WarehouseApp:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this WarehouseApp.
+        r"""Sets the version_name of this WarehouseApp.
 
         版本名称。
 
@@ -330,7 +330,7 @@ class WarehouseApp:
 
     @property
     def appfile_store_path(self):
-        """Gets the appfile_store_path of this WarehouseApp.
+        r"""Gets the appfile_store_path of this WarehouseApp.
 
         应用文件的存放路径。
 
@@ -341,7 +341,7 @@ class WarehouseApp:
 
     @appfile_store_path.setter
     def appfile_store_path(self, appfile_store_path):
-        """Sets the appfile_store_path of this WarehouseApp.
+        r"""Sets the appfile_store_path of this WarehouseApp.
 
         应用文件的存放路径。
 
@@ -352,7 +352,7 @@ class WarehouseApp:
 
     @property
     def app_file_size(self):
-        """Gets the app_file_size of this WarehouseApp.
+        r"""Gets the app_file_size of this WarehouseApp.
 
         应用文件的大小，以KB为单位。
 
@@ -363,7 +363,7 @@ class WarehouseApp:
 
     @app_file_size.setter
     def app_file_size(self, app_file_size):
-        """Sets the app_file_size of this WarehouseApp.
+        r"""Sets the app_file_size of this WarehouseApp.
 
         应用文件的大小，以KB为单位。
 
@@ -374,7 +374,7 @@ class WarehouseApp:
 
     @property
     def app_description(self):
-        """Gets the app_description of this WarehouseApp.
+        r"""Gets the app_description of this WarehouseApp.
 
         应用描述。
 
@@ -385,7 +385,7 @@ class WarehouseApp:
 
     @app_description.setter
     def app_description(self, app_description):
-        """Sets the app_description of this WarehouseApp.
+        r"""Sets the app_description of this WarehouseApp.
 
         应用描述。
 
@@ -396,7 +396,7 @@ class WarehouseApp:
 
     @property
     def appicon_store_path(self):
-        """Gets the appicon_store_path of this WarehouseApp.
+        r"""Gets the appicon_store_path of this WarehouseApp.
 
         应用文件的存放路径。
 
@@ -407,7 +407,7 @@ class WarehouseApp:
 
     @appicon_store_path.setter
     def appicon_store_path(self, appicon_store_path):
-        """Sets the appicon_store_path of this WarehouseApp.
+        r"""Sets the appicon_store_path of this WarehouseApp.
 
         应用文件的存放路径。
 
@@ -418,7 +418,7 @@ class WarehouseApp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WarehouseApp.
+        r"""Gets the create_time of this WarehouseApp.
 
         应用创建时间。
 
@@ -429,7 +429,7 @@ class WarehouseApp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WarehouseApp.
+        r"""Sets the create_time of this WarehouseApp.
 
         应用创建时间。
 
@@ -440,7 +440,7 @@ class WarehouseApp:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this WarehouseApp.
+        r"""Gets the modify_time of this WarehouseApp.
 
         应用修改时间。
 
@@ -451,7 +451,7 @@ class WarehouseApp:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this WarehouseApp.
+        r"""Sets the modify_time of this WarehouseApp.
 
         应用修改时间。
 
@@ -462,7 +462,7 @@ class WarehouseApp:
 
     @property
     def verify_time(self):
-        """Gets the verify_time of this WarehouseApp.
+        r"""Gets the verify_time of this WarehouseApp.
 
         应用审核时间。
 
@@ -473,7 +473,7 @@ class WarehouseApp:
 
     @verify_time.setter
     def verify_time(self, verify_time):
-        """Sets the verify_time of this WarehouseApp.
+        r"""Sets the verify_time of this WarehouseApp.
 
         应用审核时间。
 
@@ -484,7 +484,7 @@ class WarehouseApp:
 
     @property
     def verify_status(self):
-        """Gets the verify_status of this WarehouseApp.
+        r"""Gets the verify_status of this WarehouseApp.
 
         :return: The verify_status of this WarehouseApp.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
@@ -493,7 +493,7 @@ class WarehouseApp:
 
     @verify_status.setter
     def verify_status(self, verify_status):
-        """Sets the verify_status of this WarehouseApp.
+        r"""Sets the verify_status of this WarehouseApp.
 
         :param verify_status: The verify_status of this WarehouseApp.
         :type verify_status: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
@@ -502,7 +502,7 @@ class WarehouseApp:
 
     @property
     def verify_comment(self):
-        """Gets the verify_comment of this WarehouseApp.
+        r"""Gets the verify_comment of this WarehouseApp.
 
         审核的评论意见。
 
@@ -513,7 +513,7 @@ class WarehouseApp:
 
     @verify_comment.setter
     def verify_comment(self, verify_comment):
-        """Sets the verify_comment of this WarehouseApp.
+        r"""Sets the verify_comment of this WarehouseApp.
 
         审核的评论意见。
 
@@ -524,7 +524,7 @@ class WarehouseApp:
 
     @property
     def app_icon(self):
-        """Gets the app_icon of this WarehouseApp.
+        r"""Gets the app_icon of this WarehouseApp.
 
         app的图标文件。
 
@@ -535,7 +535,7 @@ class WarehouseApp:
 
     @app_icon.setter
     def app_icon(self, app_icon):
-        """Sets the app_icon of this WarehouseApp.
+        r"""Sets the app_icon of this WarehouseApp.
 
         app的图标文件。
 

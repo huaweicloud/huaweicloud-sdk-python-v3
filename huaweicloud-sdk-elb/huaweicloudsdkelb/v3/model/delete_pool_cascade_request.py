@@ -25,7 +25,7 @@ class DeletePoolCascadeRequest:
     }
 
     def __init__(self, pool_id=None):
-        """DeletePoolCascadeRequest
+        r"""DeletePoolCascadeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePoolCascadeRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this DeletePoolCascadeRequest.
+        r"""Gets the pool_id of this DeletePoolCascadeRequest.
 
         参数解释：后端服务器组ID。
 
@@ -53,7 +53,7 @@ class DeletePoolCascadeRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this DeletePoolCascadeRequest.
+        r"""Sets the pool_id of this DeletePoolCascadeRequest.
 
         参数解释：后端服务器组ID。
 

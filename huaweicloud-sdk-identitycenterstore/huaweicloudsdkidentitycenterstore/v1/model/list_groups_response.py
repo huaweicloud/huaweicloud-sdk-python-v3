@@ -28,7 +28,7 @@ class ListGroupsResponse(SdkResponse):
     }
 
     def __init__(self, groups=None, page_info=None):
-        """ListGroupsResponse
+        r"""ListGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupsResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListGroupsResponse.
+        r"""Gets the groups of this ListGroupsResponse.
 
         满足查询条件的用户组对象列表
 
@@ -62,7 +62,7 @@ class ListGroupsResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListGroupsResponse.
+        r"""Sets the groups of this ListGroupsResponse.
 
         满足查询条件的用户组对象列表
 
@@ -73,7 +73,7 @@ class ListGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGroupsResponse.
+        r"""Gets the page_info of this ListGroupsResponse.
 
         :return: The page_info of this ListGroupsResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGroupsResponse.
+        r"""Sets the page_info of this ListGroupsResponse.
 
         :param page_info: The page_info of this ListGroupsResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`

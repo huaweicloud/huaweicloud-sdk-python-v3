@@ -30,7 +30,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
     }
 
     def __init__(self, is_upgrade=None, batch_inquiry_rsp_when_upgrade=None, batch_inquiry_rsp_when_downgrade=None):
-        """EstimateDesktopPoolResizeResponse
+        r"""EstimateDesktopPoolResizeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
     @property
     def is_upgrade(self):
-        """Gets the is_upgrade of this EstimateDesktopPoolResizeResponse.
+        r"""Gets the is_upgrade of this EstimateDesktopPoolResizeResponse.
 
         是否为升配
 
@@ -69,7 +69,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
     @is_upgrade.setter
     def is_upgrade(self, is_upgrade):
-        """Sets the is_upgrade of this EstimateDesktopPoolResizeResponse.
+        r"""Sets the is_upgrade of this EstimateDesktopPoolResizeResponse.
 
         是否为升配
 
@@ -80,7 +80,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
     @property
     def batch_inquiry_rsp_when_upgrade(self):
-        """Gets the batch_inquiry_rsp_when_upgrade of this EstimateDesktopPoolResizeResponse.
+        r"""Gets the batch_inquiry_rsp_when_upgrade of this EstimateDesktopPoolResizeResponse.
 
         :return: The batch_inquiry_rsp_when_upgrade of this EstimateDesktopPoolResizeResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PeriodBatchUpChangeResourceRsp`
@@ -89,7 +89,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
     @batch_inquiry_rsp_when_upgrade.setter
     def batch_inquiry_rsp_when_upgrade(self, batch_inquiry_rsp_when_upgrade):
-        """Sets the batch_inquiry_rsp_when_upgrade of this EstimateDesktopPoolResizeResponse.
+        r"""Sets the batch_inquiry_rsp_when_upgrade of this EstimateDesktopPoolResizeResponse.
 
         :param batch_inquiry_rsp_when_upgrade: The batch_inquiry_rsp_when_upgrade of this EstimateDesktopPoolResizeResponse.
         :type batch_inquiry_rsp_when_upgrade: :class:`huaweicloudsdkworkspace.v2.PeriodBatchUpChangeResourceRsp`
@@ -98,7 +98,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
     @property
     def batch_inquiry_rsp_when_downgrade(self):
-        """Gets the batch_inquiry_rsp_when_downgrade of this EstimateDesktopPoolResizeResponse.
+        r"""Gets the batch_inquiry_rsp_when_downgrade of this EstimateDesktopPoolResizeResponse.
 
         :return: The batch_inquiry_rsp_when_downgrade of this EstimateDesktopPoolResizeResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchInquiryChangeRsp`
@@ -107,7 +107,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
     @batch_inquiry_rsp_when_downgrade.setter
     def batch_inquiry_rsp_when_downgrade(self, batch_inquiry_rsp_when_downgrade):
-        """Sets the batch_inquiry_rsp_when_downgrade of this EstimateDesktopPoolResizeResponse.
+        r"""Sets the batch_inquiry_rsp_when_downgrade of this EstimateDesktopPoolResizeResponse.
 
         :param batch_inquiry_rsp_when_downgrade: The batch_inquiry_rsp_when_downgrade of this EstimateDesktopPoolResizeResponse.
         :type batch_inquiry_rsp_when_downgrade: :class:`huaweicloudsdkworkspace.v2.BatchInquiryChangeRsp`

@@ -26,7 +26,7 @@ class ShowGaussMySqlFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None):
-        """ShowGaussMySqlFlavorsResponse
+        r"""ShowGaussMySqlFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlFlavorsResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ShowGaussMySqlFlavorsResponse.
+        r"""Gets the flavors of this ShowGaussMySqlFlavorsResponse.
 
         实例规格信息列表
 
@@ -55,7 +55,7 @@ class ShowGaussMySqlFlavorsResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ShowGaussMySqlFlavorsResponse.
+        r"""Sets the flavors of this ShowGaussMySqlFlavorsResponse.
 
         实例规格信息列表
 

@@ -28,7 +28,7 @@ class DeleteShareAppsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """DeleteShareAppsResponse
+        r"""DeleteShareAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteShareAppsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteShareAppsResponse.
+        r"""Gets the request_id of this DeleteShareAppsResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class DeleteShareAppsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteShareAppsResponse.
+        r"""Sets the request_id of this DeleteShareAppsResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class DeleteShareAppsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this DeleteShareAppsResponse.
+        r"""Gets the jobs of this DeleteShareAppsResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class DeleteShareAppsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this DeleteShareAppsResponse.
+        r"""Sets the jobs of this DeleteShareAppsResponse.
 
         任务列表。
 

@@ -28,7 +28,7 @@ class ListFailureJobsResponse(SdkResponse):
     }
 
     def __init__(self, failure_jobs=None, count=None):
-        """ListFailureJobsResponse
+        r"""ListFailureJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFailureJobsResponse(SdkResponse):
 
     @property
     def failure_jobs(self):
-        """Gets the failure_jobs of this ListFailureJobsResponse.
+        r"""Gets the failure_jobs of this ListFailureJobsResponse.
 
         失败任务信息列表。
 
@@ -62,7 +62,7 @@ class ListFailureJobsResponse(SdkResponse):
 
     @failure_jobs.setter
     def failure_jobs(self, failure_jobs):
-        """Sets the failure_jobs of this ListFailureJobsResponse.
+        r"""Sets the failure_jobs of this ListFailureJobsResponse.
 
         失败任务信息列表。
 
@@ -73,7 +73,7 @@ class ListFailureJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFailureJobsResponse.
+        r"""Gets the count of this ListFailureJobsResponse.
 
         列表中失败任务个数。
 
@@ -84,7 +84,7 @@ class ListFailureJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFailureJobsResponse.
+        r"""Sets the count of this ListFailureJobsResponse.
 
         列表中失败任务个数。
 

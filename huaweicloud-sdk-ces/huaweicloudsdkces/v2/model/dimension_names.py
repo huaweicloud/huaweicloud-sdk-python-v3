@@ -27,7 +27,7 @@ class DimensionNames:
     }
 
     def __init__(self, metric=None, event=None):
-        """DimensionNames
+        r"""DimensionNames
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DimensionNames:
 
     @property
     def metric(self):
-        """Gets the metric of this DimensionNames.
+        r"""Gets the metric of this DimensionNames.
 
         启用一键告警关联指标告警规则的维度列表，未指定的维度默认不开启
 
@@ -59,7 +59,7 @@ class DimensionNames:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this DimensionNames.
+        r"""Sets the metric of this DimensionNames.
 
         启用一键告警关联指标告警规则的维度列表，未指定的维度默认不开启
 
@@ -70,7 +70,7 @@ class DimensionNames:
 
     @property
     def event(self):
-        """Gets the event of this DimensionNames.
+        r"""Gets the event of this DimensionNames.
 
         启用一键告警关联事件告警规则的维度列表，未指定的维度默认不开启，其中\"\"代表全部资源
 
@@ -81,7 +81,7 @@ class DimensionNames:
 
     @event.setter
     def event(self, event):
-        """Sets the event of this DimensionNames.
+        r"""Sets the event of this DimensionNames.
 
         启用一键告警关联事件告警规则的维度列表，未指定的维度默认不开启，其中\"\"代表全部资源
 

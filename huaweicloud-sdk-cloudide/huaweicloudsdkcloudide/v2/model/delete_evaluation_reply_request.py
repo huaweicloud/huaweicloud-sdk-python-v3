@@ -25,7 +25,7 @@ class DeleteEvaluationReplyRequest:
     }
 
     def __init__(self, reply_id=None):
-        """DeleteEvaluationReplyRequest
+        r"""DeleteEvaluationReplyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEvaluationReplyRequest:
 
     @property
     def reply_id(self):
-        """Gets the reply_id of this DeleteEvaluationReplyRequest.
+        r"""Gets the reply_id of this DeleteEvaluationReplyRequest.
 
         回复id
 
@@ -53,7 +53,7 @@ class DeleteEvaluationReplyRequest:
 
     @reply_id.setter
     def reply_id(self, reply_id):
-        """Sets the reply_id of this DeleteEvaluationReplyRequest.
+        r"""Sets the reply_id of this DeleteEvaluationReplyRequest.
 
         回复id
 

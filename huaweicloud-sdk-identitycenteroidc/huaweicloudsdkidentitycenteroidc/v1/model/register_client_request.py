@@ -25,7 +25,7 @@ class RegisterClientRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterClientRequest
+        r"""RegisterClientRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterClientRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterClientRequest.
+        r"""Gets the body of this RegisterClientRequest.
 
         :return: The body of this RegisterClientRequest.
         :rtype: :class:`huaweicloudsdkidentitycenteroidc.v1.RegisterClientReqBody`
@@ -52,7 +52,7 @@ class RegisterClientRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterClientRequest.
+        r"""Sets the body of this RegisterClientRequest.
 
         :param body: The body of this RegisterClientRequest.
         :type body: :class:`huaweicloudsdkidentitycenteroidc.v1.RegisterClientReqBody`

@@ -25,7 +25,7 @@ class ServerGroupStatus:
     }
 
     def __init__(self, aps_status=None):
-        """ServerGroupStatus
+        r"""ServerGroupStatus
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ServerGroupStatus:
 
     @property
     def aps_status(self):
-        """Gets the aps_status of this ServerGroupStatus.
+        r"""Gets the aps_status of this ServerGroupStatus.
 
         对应状态的服务器数量，参考ServerStatus。
 
@@ -54,7 +54,7 @@ class ServerGroupStatus:
 
     @aps_status.setter
     def aps_status(self, aps_status):
-        """Sets the aps_status of this ServerGroupStatus.
+        r"""Sets the aps_status of this ServerGroupStatus.
 
         对应状态的服务器数量，参考ServerStatus。
 

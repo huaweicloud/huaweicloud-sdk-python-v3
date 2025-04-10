@@ -28,7 +28,7 @@ class ListConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, configurations=None):
-        """ListConfigurationsResponse
+        r"""ListConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListConfigurationsResponse.
+        r"""Gets the total_count of this ListConfigurationsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListConfigurationsResponse.
+        r"""Sets the total_count of this ListConfigurationsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListConfigurationsResponse.
+        r"""Gets the configurations of this ListConfigurationsResponse.
 
         参数模板列表。
 
@@ -84,7 +84,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListConfigurationsResponse.
+        r"""Sets the configurations of this ListConfigurationsResponse.
 
         参数模板列表。
 

@@ -31,7 +31,7 @@ class PublicNetworkStatus:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, status=None, ip=None):
-        """PublicNetworkStatus
+        r"""PublicNetworkStatus
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PublicNetworkStatus:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PublicNetworkStatus.
+        r"""Gets the cluster_id of this PublicNetworkStatus.
 
         集群id
 
@@ -75,7 +75,7 @@ class PublicNetworkStatus:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PublicNetworkStatus.
+        r"""Sets the cluster_id of this PublicNetworkStatus.
 
         集群id
 
@@ -86,7 +86,7 @@ class PublicNetworkStatus:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this PublicNetworkStatus.
+        r"""Gets the cluster_name of this PublicNetworkStatus.
 
         集群名称
 
@@ -97,7 +97,7 @@ class PublicNetworkStatus:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this PublicNetworkStatus.
+        r"""Sets the cluster_name of this PublicNetworkStatus.
 
         集群名称
 
@@ -108,7 +108,7 @@ class PublicNetworkStatus:
 
     @property
     def status(self):
-        """Gets the status of this PublicNetworkStatus.
+        r"""Gets the status of this PublicNetworkStatus.
 
         是否开启了公网访问,true:开启，false:未开启
 
@@ -119,7 +119,7 @@ class PublicNetworkStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicNetworkStatus.
+        r"""Sets the status of this PublicNetworkStatus.
 
         是否开启了公网访问,true:开启，false:未开启
 
@@ -130,7 +130,7 @@ class PublicNetworkStatus:
 
     @property
     def ip(self):
-        """Gets the ip of this PublicNetworkStatus.
+        r"""Gets the ip of this PublicNetworkStatus.
 
         公网ip地址
 
@@ -141,7 +141,7 @@ class PublicNetworkStatus:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this PublicNetworkStatus.
+        r"""Sets the ip of this PublicNetworkStatus.
 
         公网ip地址
 

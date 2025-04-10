@@ -45,7 +45,7 @@ class CreateMqsInstanceTopicReq:
     }
 
     def __init__(self, name=None, app_id=None, partition=None, replication=None, access_policy=None, sync_message_flush=None, sync_replication=None, retention_time=None, tag=None, description=None, sensitive_word=None):
-        """CreateMqsInstanceTopicReq
+        r"""CreateMqsInstanceTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateMqsInstanceTopicReq.
+        r"""Gets the name of this CreateMqsInstanceTopicReq.
 
         topic名称，以字母开头，仅能包含数字,字母,下划线(_)，中划线（-）,长度3-200字符。
 
@@ -121,7 +121,7 @@ class CreateMqsInstanceTopicReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMqsInstanceTopicReq.
+        r"""Sets the name of this CreateMqsInstanceTopicReq.
 
         topic名称，以字母开头，仅能包含数字,字母,下划线(_)，中划线（-）,长度3-200字符。
 
@@ -132,7 +132,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateMqsInstanceTopicReq.
+        r"""Gets the app_id of this CreateMqsInstanceTopicReq.
 
         集成应用key。
 
@@ -143,7 +143,7 @@ class CreateMqsInstanceTopicReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateMqsInstanceTopicReq.
+        r"""Sets the app_id of this CreateMqsInstanceTopicReq.
 
         集成应用key。
 
@@ -154,7 +154,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def partition(self):
-        """Gets the partition of this CreateMqsInstanceTopicReq.
+        r"""Gets the partition of this CreateMqsInstanceTopicReq.
 
         topic分区数，设置消费的并发数。  取值范围：1-50。  默认值：3。
 
@@ -165,7 +165,7 @@ class CreateMqsInstanceTopicReq:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this CreateMqsInstanceTopicReq.
+        r"""Sets the partition of this CreateMqsInstanceTopicReq.
 
         topic分区数，设置消费的并发数。  取值范围：1-50。  默认值：3。
 
@@ -176,7 +176,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def replication(self):
-        """Gets the replication of this CreateMqsInstanceTopicReq.
+        r"""Gets the replication of this CreateMqsInstanceTopicReq.
 
         副本数，配置数据的可靠性。  取值范围：1-3。  默认值：3。  > 体验版实例的副本数只能为1。
 
@@ -187,7 +187,7 @@ class CreateMqsInstanceTopicReq:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this CreateMqsInstanceTopicReq.
+        r"""Sets the replication of this CreateMqsInstanceTopicReq.
 
         副本数，配置数据的可靠性。  取值范围：1-3。  默认值：3。  > 体验版实例的副本数只能为1。
 
@@ -198,7 +198,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this CreateMqsInstanceTopicReq.
+        r"""Gets the access_policy of this CreateMqsInstanceTopicReq.
 
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
@@ -209,7 +209,7 @@ class CreateMqsInstanceTopicReq:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this CreateMqsInstanceTopicReq.
+        r"""Sets the access_policy of this CreateMqsInstanceTopicReq.
 
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
@@ -220,7 +220,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def sync_message_flush(self):
-        """Gets the sync_message_flush of this CreateMqsInstanceTopicReq.
+        r"""Gets the sync_message_flush of this CreateMqsInstanceTopicReq.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -231,7 +231,7 @@ class CreateMqsInstanceTopicReq:
 
     @sync_message_flush.setter
     def sync_message_flush(self, sync_message_flush):
-        """Sets the sync_message_flush of this CreateMqsInstanceTopicReq.
+        r"""Sets the sync_message_flush of this CreateMqsInstanceTopicReq.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -242,7 +242,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def sync_replication(self):
-        """Gets the sync_replication of this CreateMqsInstanceTopicReq.
+        r"""Gets the sync_replication of this CreateMqsInstanceTopicReq.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效,默认关闭。
 
@@ -253,7 +253,7 @@ class CreateMqsInstanceTopicReq:
 
     @sync_replication.setter
     def sync_replication(self, sync_replication):
-        """Sets the sync_replication of this CreateMqsInstanceTopicReq.
+        r"""Sets the sync_replication of this CreateMqsInstanceTopicReq.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效,默认关闭。
 
@@ -264,7 +264,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def retention_time(self):
-        """Gets the retention_time of this CreateMqsInstanceTopicReq.
+        r"""Gets the retention_time of this CreateMqsInstanceTopicReq.
 
         消息老化时间。默认值为72。取值范围1~720，单位小时。
 
@@ -275,7 +275,7 @@ class CreateMqsInstanceTopicReq:
 
     @retention_time.setter
     def retention_time(self, retention_time):
-        """Sets the retention_time of this CreateMqsInstanceTopicReq.
+        r"""Sets the retention_time of this CreateMqsInstanceTopicReq.
 
         消息老化时间。默认值为72。取值范围1~720，单位小时。
 
@@ -286,7 +286,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateMqsInstanceTopicReq.
+        r"""Gets the tag of this CreateMqsInstanceTopicReq.
 
         权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&”隔开。  当有多个标签时，标签用符号“||”隔开。
 
@@ -297,7 +297,7 @@ class CreateMqsInstanceTopicReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateMqsInstanceTopicReq.
+        r"""Sets the tag of this CreateMqsInstanceTopicReq.
 
         权限类型对应的标签。  当权限类型是all时，发布和订阅的标签用符号“&”隔开。  当有多个标签时，标签用符号“||”隔开。
 
@@ -308,7 +308,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateMqsInstanceTopicReq.
+        r"""Gets the description of this CreateMqsInstanceTopicReq.
 
         描述。长度0-1000字符。
 
@@ -319,7 +319,7 @@ class CreateMqsInstanceTopicReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateMqsInstanceTopicReq.
+        r"""Sets the description of this CreateMqsInstanceTopicReq.
 
         描述。长度0-1000字符。
 
@@ -330,7 +330,7 @@ class CreateMqsInstanceTopicReq:
 
     @property
     def sensitive_word(self):
-        """Gets the sensitive_word of this CreateMqsInstanceTopicReq.
+        r"""Gets the sensitive_word of this CreateMqsInstanceTopicReq.
 
         敏感字段。  当有多个敏感字段时，敏感字段用符号“||”隔开。
 
@@ -341,7 +341,7 @@ class CreateMqsInstanceTopicReq:
 
     @sensitive_word.setter
     def sensitive_word(self, sensitive_word):
-        """Sets the sensitive_word of this CreateMqsInstanceTopicReq.
+        r"""Sets the sensitive_word of this CreateMqsInstanceTopicReq.
 
         敏感字段。  当有多个敏感字段时，敏感字段用符号“||”隔开。
 

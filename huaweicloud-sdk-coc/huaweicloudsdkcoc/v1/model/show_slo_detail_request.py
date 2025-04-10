@@ -25,7 +25,7 @@ class ShowSloDetailRequest:
     }
 
     def __init__(self, slo_id=None):
-        """ShowSloDetailRequest
+        r"""ShowSloDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSloDetailRequest:
 
     @property
     def slo_id(self):
-        """Gets the slo_id of this ShowSloDetailRequest.
+        r"""Gets the slo_id of this ShowSloDetailRequest.
 
         SLO的ID
 
@@ -53,7 +53,7 @@ class ShowSloDetailRequest:
 
     @slo_id.setter
     def slo_id(self, slo_id):
-        """Sets the slo_id of this ShowSloDetailRequest.
+        r"""Sets the slo_id of this ShowSloDetailRequest.
 
         SLO的ID
 

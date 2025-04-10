@@ -47,7 +47,7 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, scm_certificate_id=None, common_name=None, fingerprint=None):
-        """ListCertificatesRequest
+        r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListCertificatesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCertificatesRequest.
+        r"""Gets the marker of this ListCertificatesRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -131,7 +131,7 @@ class ListCertificatesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCertificatesRequest.
+        r"""Sets the marker of this ListCertificatesRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -142,7 +142,7 @@ class ListCertificatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertificatesRequest.
+        r"""Gets the limit of this ListCertificatesRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -153,7 +153,7 @@ class ListCertificatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertificatesRequest.
+        r"""Sets the limit of this ListCertificatesRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -164,7 +164,7 @@ class ListCertificatesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListCertificatesRequest.
+        r"""Gets the page_reverse of this ListCertificatesRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -175,7 +175,7 @@ class ListCertificatesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListCertificatesRequest.
+        r"""Sets the page_reverse of this ListCertificatesRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -186,7 +186,7 @@ class ListCertificatesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCertificatesRequest.
+        r"""Gets the id of this ListCertificatesRequest.
 
         证书ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -197,7 +197,7 @@ class ListCertificatesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCertificatesRequest.
+        r"""Sets the id of this ListCertificatesRequest.
 
         证书ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -208,7 +208,7 @@ class ListCertificatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCertificatesRequest.
+        r"""Gets the name of this ListCertificatesRequest.
 
         证书的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -219,7 +219,7 @@ class ListCertificatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCertificatesRequest.
+        r"""Sets the name of this ListCertificatesRequest.
 
         证书的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -230,7 +230,7 @@ class ListCertificatesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListCertificatesRequest.
+        r"""Gets the description of this ListCertificatesRequest.
 
         证书的描述。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -241,7 +241,7 @@ class ListCertificatesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListCertificatesRequest.
+        r"""Sets the description of this ListCertificatesRequest.
 
         证书的描述。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -252,7 +252,7 @@ class ListCertificatesRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListCertificatesRequest.
+        r"""Gets the admin_state_up of this ListCertificatesRequest.
 
         证书的管理状态。  不支持该字段，请勿使用。
 
@@ -263,7 +263,7 @@ class ListCertificatesRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListCertificatesRequest.
+        r"""Sets the admin_state_up of this ListCertificatesRequest.
 
         证书的管理状态。  不支持该字段，请勿使用。
 
@@ -274,7 +274,7 @@ class ListCertificatesRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListCertificatesRequest.
+        r"""Gets the domain of this ListCertificatesRequest.
 
         服务器证书所签域名。该字段仅type为server时有效。  支持多值查询，查询条件格式：domain=xxx&domain=xxx。
 
@@ -285,7 +285,7 @@ class ListCertificatesRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListCertificatesRequest.
+        r"""Sets the domain of this ListCertificatesRequest.
 
         服务器证书所签域名。该字段仅type为server时有效。  支持多值查询，查询条件格式：domain=xxx&domain=xxx。
 
@@ -296,7 +296,7 @@ class ListCertificatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListCertificatesRequest.
+        r"""Gets the type of this ListCertificatesRequest.
 
         证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type=xxx&type=xxx。
 
@@ -307,7 +307,7 @@ class ListCertificatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListCertificatesRequest.
+        r"""Sets the type of this ListCertificatesRequest.
 
         证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type=xxx&type=xxx。
 
@@ -318,7 +318,7 @@ class ListCertificatesRequest:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this ListCertificatesRequest.
+        r"""Gets the scm_certificate_id of this ListCertificatesRequest.
 
         SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。
 
@@ -329,7 +329,7 @@ class ListCertificatesRequest:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this ListCertificatesRequest.
+        r"""Sets the scm_certificate_id of this ListCertificatesRequest.
 
         SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。
 
@@ -340,7 +340,7 @@ class ListCertificatesRequest:
 
     @property
     def common_name(self):
-        """Gets the common_name of this ListCertificatesRequest.
+        r"""Gets the common_name of this ListCertificatesRequest.
 
         证书的主域名。  支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。
 
@@ -351,7 +351,7 @@ class ListCertificatesRequest:
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this ListCertificatesRequest.
+        r"""Sets the common_name of this ListCertificatesRequest.
 
         证书的主域名。  支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。
 
@@ -362,7 +362,7 @@ class ListCertificatesRequest:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this ListCertificatesRequest.
+        r"""Gets the fingerprint of this ListCertificatesRequest.
 
         证书的指纹。  支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。
 
@@ -373,7 +373,7 @@ class ListCertificatesRequest:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this ListCertificatesRequest.
+        r"""Sets the fingerprint of this ListCertificatesRequest.
 
         证书的指纹。  支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。
 

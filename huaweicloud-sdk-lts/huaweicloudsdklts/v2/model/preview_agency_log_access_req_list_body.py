@@ -25,7 +25,7 @@ class PreviewAgencyLogAccessReqListBody:
     }
 
     def __init__(self, preview_agency_list=None):
-        """PreviewAgencyLogAccessReqListBody
+        r"""PreviewAgencyLogAccessReqListBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PreviewAgencyLogAccessReqListBody:
 
     @property
     def preview_agency_list(self):
-        """Gets the preview_agency_list of this PreviewAgencyLogAccessReqListBody.
+        r"""Gets the preview_agency_list of this PreviewAgencyLogAccessReqListBody.
 
         预览代理列表
 
@@ -53,7 +53,7 @@ class PreviewAgencyLogAccessReqListBody:
 
     @preview_agency_list.setter
     def preview_agency_list(self, preview_agency_list):
-        """Sets the preview_agency_list of this PreviewAgencyLogAccessReqListBody.
+        r"""Sets the preview_agency_list of this PreviewAgencyLogAccessReqListBody.
 
         预览代理列表
 

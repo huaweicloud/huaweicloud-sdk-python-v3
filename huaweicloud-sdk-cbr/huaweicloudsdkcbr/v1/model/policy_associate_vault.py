@@ -27,7 +27,7 @@ class PolicyAssociateVault:
     }
 
     def __init__(self, destination_vault_id=None, vault_id=None):
-        """PolicyAssociateVault
+        r"""PolicyAssociateVault
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PolicyAssociateVault:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this PolicyAssociateVault.
+        r"""Gets the destination_vault_id of this PolicyAssociateVault.
 
         关联的远端存储库ID
 
@@ -60,7 +60,7 @@ class PolicyAssociateVault:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this PolicyAssociateVault.
+        r"""Sets the destination_vault_id of this PolicyAssociateVault.
 
         关联的远端存储库ID
 
@@ -71,7 +71,7 @@ class PolicyAssociateVault:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this PolicyAssociateVault.
+        r"""Gets the vault_id of this PolicyAssociateVault.
 
         存储库ID
 
@@ -82,7 +82,7 @@ class PolicyAssociateVault:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this PolicyAssociateVault.
+        r"""Sets the vault_id of this PolicyAssociateVault.
 
         存储库ID
 

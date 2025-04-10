@@ -30,7 +30,7 @@ class ListVhostsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, items=None):
-        """ListVhostsResponse
+        r"""ListVhostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVhostsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListVhostsResponse.
+        r"""Gets the size of this ListVhostsResponse.
 
         当前显示数量
 
@@ -69,7 +69,7 @@ class ListVhostsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListVhostsResponse.
+        r"""Sets the size of this ListVhostsResponse.
 
         当前显示数量
 
@@ -80,7 +80,7 @@ class ListVhostsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListVhostsResponse.
+        r"""Gets the total of this ListVhostsResponse.
 
         查询结果总数
 
@@ -91,7 +91,7 @@ class ListVhostsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListVhostsResponse.
+        r"""Sets the total of this ListVhostsResponse.
 
         查询结果总数
 
@@ -102,7 +102,7 @@ class ListVhostsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListVhostsResponse.
+        r"""Gets the items of this ListVhostsResponse.
 
         查询的Vhost信息列表
 
@@ -113,7 +113,7 @@ class ListVhostsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListVhostsResponse.
+        r"""Sets the items of this ListVhostsResponse.
 
         查询的Vhost信息列表
 

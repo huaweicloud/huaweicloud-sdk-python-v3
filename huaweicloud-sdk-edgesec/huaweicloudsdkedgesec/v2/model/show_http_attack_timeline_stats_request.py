@@ -39,7 +39,7 @@ class ShowHttpAttackTimelineStatsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, domain_name=None, stat_type=None, group_by=None, group_by_value=None, interval=None, start_time=None, end_time=None):
-        """ShowHttpAttackTimelineStatsRequest
+        r"""ShowHttpAttackTimelineStatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpAttackTimelineStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -98,7 +98,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpAttackTimelineStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -109,7 +109,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the domain_name of this ShowHttpAttackTimelineStatsRequest.
 
         域名
 
@@ -120,7 +120,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the domain_name of this ShowHttpAttackTimelineStatsRequest.
 
         域名
 
@@ -131,7 +131,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the stat_type of this ShowHttpAttackTimelineStatsRequest.
 
         指标类型，当前仅支持req_num
 
@@ -142,7 +142,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the stat_type of this ShowHttpAttackTimelineStatsRequest.
 
         指标类型，当前仅支持req_num
 
@@ -153,7 +153,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the group_by of this ShowHttpAttackTimelineStatsRequest.
 
         分组类型，当前仅支持action，attack_category
 
@@ -164,7 +164,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the group_by of this ShowHttpAttackTimelineStatsRequest.
 
         分组类型，当前仅支持action，attack_category
 
@@ -175,7 +175,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def group_by_value(self):
-        """Gets the group_by_value of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the group_by_value of this ShowHttpAttackTimelineStatsRequest.
 
         分组类型对应的具体的值，不传的话默认总和（例如：action指标类型：log、block、captcha、js_challenge） （例如：attack_category指标类型：cc、access_control、bot、web_app_attack）
 
@@ -186,7 +186,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @group_by_value.setter
     def group_by_value(self, group_by_value):
-        """Sets the group_by_value of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the group_by_value of this ShowHttpAttackTimelineStatsRequest.
 
         分组类型对应的具体的值，不传的话默认总和（例如：action指标类型：log、block、captcha、js_challenge） （例如：attack_category指标类型：cc、access_control、bot、web_app_attack）
 
@@ -197,7 +197,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the interval of this ShowHttpAttackTimelineStatsRequest.
 
         时间粒度(单位：秒)，不同时间范围有不同的可选时间粒度。[0,1H]，可选时间粒度为1M、5M；(1H,1D]，可选时间粒度为1M、5M、1H；(1D,3D]，可选时间粒度为1M、5M、1H、1D；(3D,7D]，可选时间粒度为5M、1H、1D；(7D,30D]，可选时间粒度为1H、1D。其中M代表分钟，H代表小时，D代表天。
 
@@ -208,7 +208,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the interval of this ShowHttpAttackTimelineStatsRequest.
 
         时间粒度(单位：秒)，不同时间范围有不同的可选时间粒度。[0,1H]，可选时间粒度为1M、5M；(1H,1D]，可选时间粒度为1M、5M、1H；(1D,3D]，可选时间粒度为1M、5M、1H、1D；(3D,7D]，可选时间粒度为5M、1H、1D；(7D,30D]，可选时间粒度为1H、1D。其中M代表分钟，H代表小时，D代表天。
 
@@ -219,7 +219,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the start_time of this ShowHttpAttackTimelineStatsRequest.
 
         开始时间
 
@@ -230,7 +230,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the start_time of this ShowHttpAttackTimelineStatsRequest.
 
         开始时间
 
@@ -241,7 +241,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHttpAttackTimelineStatsRequest.
+        r"""Gets the end_time of this ShowHttpAttackTimelineStatsRequest.
 
         结束时间
 
@@ -252,7 +252,7 @@ class ShowHttpAttackTimelineStatsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHttpAttackTimelineStatsRequest.
+        r"""Sets the end_time of this ShowHttpAttackTimelineStatsRequest.
 
         结束时间
 

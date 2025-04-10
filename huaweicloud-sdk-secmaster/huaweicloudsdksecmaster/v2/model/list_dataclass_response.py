@@ -30,7 +30,7 @@ class ListDataclassResponse(SdkResponse):
     }
 
     def __init__(self, dataclass_details=None, total=None, x_request_id=None):
-        """ListDataclassResponse
+        r"""ListDataclassResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDataclassResponse(SdkResponse):
 
     @property
     def dataclass_details(self):
-        """Gets the dataclass_details of this ListDataclassResponse.
+        r"""Gets the dataclass_details of this ListDataclassResponse.
 
         数据类详情
 
@@ -69,7 +69,7 @@ class ListDataclassResponse(SdkResponse):
 
     @dataclass_details.setter
     def dataclass_details(self, dataclass_details):
-        """Sets the dataclass_details of this ListDataclassResponse.
+        r"""Sets the dataclass_details of this ListDataclassResponse.
 
         数据类详情
 
@@ -80,7 +80,7 @@ class ListDataclassResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDataclassResponse.
+        r"""Gets the total of this ListDataclassResponse.
 
         数据总量
 
@@ -91,7 +91,7 @@ class ListDataclassResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDataclassResponse.
+        r"""Sets the total of this ListDataclassResponse.
 
         数据总量
 
@@ -102,7 +102,7 @@ class ListDataclassResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDataclassResponse.
+        r"""Gets the x_request_id of this ListDataclassResponse.
 
         :return: The x_request_id of this ListDataclassResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListDataclassResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDataclassResponse.
+        r"""Sets the x_request_id of this ListDataclassResponse.
 
         :param x_request_id: The x_request_id of this ListDataclassResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class CheckPrefixRequest:
     }
 
     def __init__(self, body=None):
-        """CheckPrefixRequest
+        r"""CheckPrefixRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckPrefixRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckPrefixRequest.
+        r"""Gets the body of this CheckPrefixRequest.
 
         :return: The body of this CheckPrefixRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.CheckPrefixReq`
@@ -52,7 +52,7 @@ class CheckPrefixRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckPrefixRequest.
+        r"""Sets the body of this CheckPrefixRequest.
 
         :param body: The body of this CheckPrefixRequest.
         :type body: :class:`huaweicloudsdkoms.v2.CheckPrefixReq`

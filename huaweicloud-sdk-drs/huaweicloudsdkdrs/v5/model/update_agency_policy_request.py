@@ -29,7 +29,7 @@ class UpdateAgencyPolicyRequest:
     }
 
     def __init__(self, x_language=None, agency_name=None, body=None):
-        """UpdateAgencyPolicyRequest
+        r"""UpdateAgencyPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateAgencyPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateAgencyPolicyRequest.
+        r"""Gets the x_language of this UpdateAgencyPolicyRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -67,7 +67,7 @@ class UpdateAgencyPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateAgencyPolicyRequest.
+        r"""Sets the x_language of this UpdateAgencyPolicyRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -78,7 +78,7 @@ class UpdateAgencyPolicyRequest:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this UpdateAgencyPolicyRequest.
+        r"""Gets the agency_name of this UpdateAgencyPolicyRequest.
 
         委托名称。
 
@@ -89,7 +89,7 @@ class UpdateAgencyPolicyRequest:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this UpdateAgencyPolicyRequest.
+        r"""Sets the agency_name of this UpdateAgencyPolicyRequest.
 
         委托名称。
 
@@ -100,7 +100,7 @@ class UpdateAgencyPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgencyPolicyRequest.
+        r"""Gets the body of this UpdateAgencyPolicyRequest.
 
         :return: The body of this UpdateAgencyPolicyRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateAgencyPolicyRequestBody`
@@ -109,7 +109,7 @@ class UpdateAgencyPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgencyPolicyRequest.
+        r"""Sets the body of this UpdateAgencyPolicyRequest.
 
         :param body: The body of this UpdateAgencyPolicyRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.UpdateAgencyPolicyRequestBody`

@@ -26,7 +26,7 @@ class CreateTransTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateTransTemplateResponse
+        r"""CreateTransTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTransTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateTransTemplateResponse.
+        r"""Gets the template_id of this CreateTransTemplateResponse.
 
         自定义转码模板编号。 
 
@@ -55,7 +55,7 @@ class CreateTransTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateTransTemplateResponse.
+        r"""Sets the template_id of this CreateTransTemplateResponse.
 
         自定义转码模板编号。 
 

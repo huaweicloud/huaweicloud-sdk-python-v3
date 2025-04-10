@@ -35,7 +35,7 @@ class ListObejectLevelCompareDetailRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_type=None, compare_job_id=None, limit=None, offset=None):
-        """ListObejectLevelCompareDetailRequest
+        r"""ListObejectLevelCompareDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListObejectLevelCompareDetailRequest.
+        r"""Gets the x_language of this ListObejectLevelCompareDetailRequest.
 
         请求语言类型。
 
@@ -87,7 +87,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListObejectLevelCompareDetailRequest.
+        r"""Sets the x_language of this ListObejectLevelCompareDetailRequest.
 
         请求语言类型。
 
@@ -98,7 +98,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListObejectLevelCompareDetailRequest.
+        r"""Gets the job_id of this ListObejectLevelCompareDetailRequest.
 
         任务ID。
 
@@ -109,7 +109,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListObejectLevelCompareDetailRequest.
+        r"""Sets the job_id of this ListObejectLevelCompareDetailRequest.
 
         任务ID。
 
@@ -120,7 +120,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this ListObejectLevelCompareDetailRequest.
+        r"""Gets the compare_type of this ListObejectLevelCompareDetailRequest.
 
         对象类型： - DB：数据库。 - TABLE：表。 - VIEW：视图。 - EVENT：事件。 - ROUTINE：存储过程和函数。 - INDEX：索引。 - TRIGGER：触发器。 - SYNONYM：同义词。 - FUNCTION：函数。 - PROCEDURE：存储过程。 - TYPE：自定义类型。 - RULE：规则。 - DEFAULT_TYPE：缺省值。 - PLAN_GUIDE：执行计划。 - CONSTRAINT：约束。 - FILE_GROUP：文件组。 - PARTITION_FUNCTION：分区函数。 - PARTITION_SCHEME：分区方案。 - TABLE_COLLATION：表的排序规则。
 
@@ -131,7 +131,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this ListObejectLevelCompareDetailRequest.
+        r"""Sets the compare_type of this ListObejectLevelCompareDetailRequest.
 
         对象类型： - DB：数据库。 - TABLE：表。 - VIEW：视图。 - EVENT：事件。 - ROUTINE：存储过程和函数。 - INDEX：索引。 - TRIGGER：触发器。 - SYNONYM：同义词。 - FUNCTION：函数。 - PROCEDURE：存储过程。 - TYPE：自定义类型。 - RULE：规则。 - DEFAULT_TYPE：缺省值。 - PLAN_GUIDE：执行计划。 - CONSTRAINT：约束。 - FILE_GROUP：文件组。 - PARTITION_FUNCTION：分区函数。 - PARTITION_SCHEME：分区方案。 - TABLE_COLLATION：表的排序规则。
 
@@ -142,7 +142,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ListObejectLevelCompareDetailRequest.
+        r"""Gets the compare_job_id of this ListObejectLevelCompareDetailRequest.
 
         对比任务ID，不填写时默认返回最新的对比任务信息。
 
@@ -153,7 +153,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ListObejectLevelCompareDetailRequest.
+        r"""Sets the compare_job_id of this ListObejectLevelCompareDetailRequest.
 
         对比任务ID，不填写时默认返回最新的对比任务信息。
 
@@ -164,7 +164,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListObejectLevelCompareDetailRequest.
+        r"""Gets the limit of this ListObejectLevelCompareDetailRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -175,7 +175,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListObejectLevelCompareDetailRequest.
+        r"""Sets the limit of this ListObejectLevelCompareDetailRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -186,7 +186,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListObejectLevelCompareDetailRequest.
+        r"""Gets the offset of this ListObejectLevelCompareDetailRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -197,7 +197,7 @@ class ListObejectLevelCompareDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListObejectLevelCompareDetailRequest.
+        r"""Sets the offset of this ListObejectLevelCompareDetailRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

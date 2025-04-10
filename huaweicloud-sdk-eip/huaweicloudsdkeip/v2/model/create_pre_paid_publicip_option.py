@@ -31,7 +31,7 @@ class CreatePrePaidPublicipOption:
     }
 
     def __init__(self, type=None, ip_version=None, alias=None, port_id=None):
-        """CreatePrePaidPublicipOption
+        r"""CreatePrePaidPublicipOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreatePrePaidPublicipOption:
 
     @property
     def type(self):
-        """Gets the type of this CreatePrePaidPublicipOption.
+        r"""Gets the type of this CreatePrePaidPublicipOption.
 
         功能说明：弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型publicip_id为IPv4端口，所以\"publicip_type\"字段未给定时，默认为5_bgp。
 
@@ -74,7 +74,7 @@ class CreatePrePaidPublicipOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreatePrePaidPublicipOption.
+        r"""Sets the type of this CreatePrePaidPublicipOption.
 
         功能说明：弹性公网IP的类型  取值范围：5_telcom（电信），5_union（联通），5_bgp（全动态BGP），5_sbgp（静态BGP），5_ipv6  东北-大连：5_telcom、5_union  华南-广州：5_bgp、5_sbgp  华东-上海二：5_bgp、5_sbgp  华北-北京一：5_bgp、5_sbgp、5_ipv6  亚太-香港：5_bgp  亚太-曼谷：5_bgp  亚太-新加坡：5_bgp  非洲-约翰内斯堡：5_bgp  西南-贵阳一：5_bgp、5_sbgp  华北-北京四：5_bgp、5_sbgp  约束：必须是系统具体支持的类型publicip_id为IPv4端口，所以\"publicip_type\"字段未给定时，默认为5_bgp。
 
@@ -85,7 +85,7 @@ class CreatePrePaidPublicipOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreatePrePaidPublicipOption.
+        r"""Gets the ip_version of this CreatePrePaidPublicipOption.
 
         功能说明：弹性公网IP的版本  取值范围：4、6，分别表示创建ipv4和ipv6  约束：必须是系统具体支持的类型  不填或空字符串时，默认创建ipv4
 
@@ -96,7 +96,7 @@ class CreatePrePaidPublicipOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreatePrePaidPublicipOption.
+        r"""Sets the ip_version of this CreatePrePaidPublicipOption.
 
         功能说明：弹性公网IP的版本  取值范围：4、6，分别表示创建ipv4和ipv6  约束：必须是系统具体支持的类型  不填或空字符串时，默认创建ipv4
 
@@ -107,7 +107,7 @@ class CreatePrePaidPublicipOption:
 
     @property
     def alias(self):
-        """Gets the alias of this CreatePrePaidPublicipOption.
+        r"""Gets the alias of this CreatePrePaidPublicipOption.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -118,7 +118,7 @@ class CreatePrePaidPublicipOption:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CreatePrePaidPublicipOption.
+        r"""Sets the alias of this CreatePrePaidPublicipOption.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -129,7 +129,7 @@ class CreatePrePaidPublicipOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this CreatePrePaidPublicipOption.
+        r"""Gets the port_id of this CreatePrePaidPublicipOption.
 
         功能说明：端口id  约束：必须是存在的端口id，如果该端口不存在或端口已绑定EIP则会提示出错。
 
@@ -140,7 +140,7 @@ class CreatePrePaidPublicipOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this CreatePrePaidPublicipOption.
+        r"""Sets the port_id of this CreatePrePaidPublicipOption.
 
         功能说明：端口id  约束：必须是存在的端口id，如果该端口不存在或端口已绑定EIP则会提示出错。
 

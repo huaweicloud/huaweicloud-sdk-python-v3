@@ -27,7 +27,7 @@ class DeleteRouteTableRequest:
     }
 
     def __init__(self, er_id=None, route_table_id=None):
-        """DeleteRouteTableRequest
+        r"""DeleteRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRouteTableRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this DeleteRouteTableRequest.
+        r"""Gets the er_id of this DeleteRouteTableRequest.
 
         企业路由器实例ID
 
@@ -59,7 +59,7 @@ class DeleteRouteTableRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this DeleteRouteTableRequest.
+        r"""Sets the er_id of this DeleteRouteTableRequest.
 
         企业路由器实例ID
 
@@ -70,7 +70,7 @@ class DeleteRouteTableRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this DeleteRouteTableRequest.
+        r"""Gets the route_table_id of this DeleteRouteTableRequest.
 
         路由表ID
 
@@ -81,7 +81,7 @@ class DeleteRouteTableRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this DeleteRouteTableRequest.
+        r"""Sets the route_table_id of this DeleteRouteTableRequest.
 
         路由表ID
 

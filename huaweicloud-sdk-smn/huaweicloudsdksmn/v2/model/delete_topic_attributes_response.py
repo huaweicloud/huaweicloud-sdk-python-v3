@@ -26,7 +26,7 @@ class DeleteTopicAttributesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """DeleteTopicAttributesResponse
+        r"""DeleteTopicAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTopicAttributesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteTopicAttributesResponse.
+        r"""Gets the request_id of this DeleteTopicAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -55,7 +55,7 @@ class DeleteTopicAttributesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteTopicAttributesResponse.
+        r"""Sets the request_id of this DeleteTopicAttributesResponse.
 
         请求的唯一标识ID。
 

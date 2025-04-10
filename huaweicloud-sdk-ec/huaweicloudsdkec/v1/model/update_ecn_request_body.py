@@ -33,7 +33,7 @@ class UpdateEcnRequestBody:
     }
 
     def __init__(self, name=None, description=None, ecn_asn=None, ieg_asn=None, hub_enable=None):
-        """UpdateEcnRequestBody
+        r"""UpdateEcnRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateEcnRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateEcnRequestBody.
+        r"""Gets the name of this UpdateEcnRequestBody.
 
         企业连接网络名字
 
@@ -82,7 +82,7 @@ class UpdateEcnRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEcnRequestBody.
+        r"""Sets the name of this UpdateEcnRequestBody.
 
         企业连接网络名字
 
@@ -93,7 +93,7 @@ class UpdateEcnRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEcnRequestBody.
+        r"""Gets the description of this UpdateEcnRequestBody.
 
         描述信息
 
@@ -104,7 +104,7 @@ class UpdateEcnRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEcnRequestBody.
+        r"""Sets the description of this UpdateEcnRequestBody.
 
         描述信息
 
@@ -115,7 +115,7 @@ class UpdateEcnRequestBody:
 
     @property
     def ecn_asn(self):
-        """Gets the ecn_asn of this UpdateEcnRequestBody.
+        r"""Gets the ecn_asn of this UpdateEcnRequestBody.
 
         企业连接网络AS号
 
@@ -126,7 +126,7 @@ class UpdateEcnRequestBody:
 
     @ecn_asn.setter
     def ecn_asn(self, ecn_asn):
-        """Sets the ecn_asn of this UpdateEcnRequestBody.
+        r"""Sets the ecn_asn of this UpdateEcnRequestBody.
 
         企业连接网络AS号
 
@@ -137,7 +137,7 @@ class UpdateEcnRequestBody:
 
     @property
     def ieg_asn(self):
-        """Gets the ieg_asn of this UpdateEcnRequestBody.
+        r"""Gets the ieg_asn of this UpdateEcnRequestBody.
 
         智能企业网关AS号
 
@@ -148,7 +148,7 @@ class UpdateEcnRequestBody:
 
     @ieg_asn.setter
     def ieg_asn(self, ieg_asn):
-        """Sets the ieg_asn of this UpdateEcnRequestBody.
+        r"""Sets the ieg_asn of this UpdateEcnRequestBody.
 
         智能企业网关AS号
 
@@ -159,7 +159,7 @@ class UpdateEcnRequestBody:
 
     @property
     def hub_enable(self):
-        """Gets the hub_enable of this UpdateEcnRequestBody.
+        r"""Gets the hub_enable of this UpdateEcnRequestBody.
 
         分支互联开关
 
@@ -170,7 +170,7 @@ class UpdateEcnRequestBody:
 
     @hub_enable.setter
     def hub_enable(self, hub_enable):
-        """Sets the hub_enable of this UpdateEcnRequestBody.
+        r"""Sets the hub_enable of this UpdateEcnRequestBody.
 
         分支互联开关
 

@@ -27,7 +27,7 @@ class CreateDomainsRequestBody:
     }
 
     def __init__(self, domain_name=None, alias=None):
-        """CreateDomainsRequestBody
+        r"""CreateDomainsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateDomainsRequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateDomainsRequestBody.
+        r"""Gets the domain_name of this CreateDomainsRequestBody.
 
         网站域名
 
@@ -59,7 +59,7 @@ class CreateDomainsRequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateDomainsRequestBody.
+        r"""Sets the domain_name of this CreateDomainsRequestBody.
 
         网站域名
 
@@ -70,7 +70,7 @@ class CreateDomainsRequestBody:
 
     @property
     def alias(self):
-        """Gets the alias of this CreateDomainsRequestBody.
+        r"""Gets the alias of this CreateDomainsRequestBody.
 
         网站域名的别名
 
@@ -81,7 +81,7 @@ class CreateDomainsRequestBody:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CreateDomainsRequestBody.
+        r"""Sets the alias of this CreateDomainsRequestBody.
 
         网站域名的别名
 

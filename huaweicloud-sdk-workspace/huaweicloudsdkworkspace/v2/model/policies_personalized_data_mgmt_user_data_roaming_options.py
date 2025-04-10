@@ -33,7 +33,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     }
 
     def __init__(self, profile_streaming_enable=None, roamed_files_local_path=None, exclude_folders_path=None, roaming_registry_method=None, roaming_registry_path=None):
-        """PoliciesPersonalizedDataMgmtUserDataRoamingOptions
+        r"""PoliciesPersonalizedDataMgmtUserDataRoamingOptions
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @property
     def profile_streaming_enable(self):
-        """Gets the profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Gets the profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         配置文件流式处理启用
 
@@ -82,7 +82,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @profile_streaming_enable.setter
     def profile_streaming_enable(self, profile_streaming_enable):
-        """Sets the profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Sets the profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         配置文件流式处理启用
 
@@ -93,7 +93,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @property
     def roamed_files_local_path(self):
-        """Gets the roamed_files_local_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Gets the roamed_files_local_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         漫游文件本地路径。
 
@@ -104,7 +104,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @roamed_files_local_path.setter
     def roamed_files_local_path(self, roamed_files_local_path):
-        """Sets the roamed_files_local_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Sets the roamed_files_local_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         漫游文件本地路径。
 
@@ -115,7 +115,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @property
     def exclude_folders_path(self):
-        """Gets the exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Gets the exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         排除文件夹路径
 
@@ -126,7 +126,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @exclude_folders_path.setter
     def exclude_folders_path(self, exclude_folders_path):
-        """Sets the exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Sets the exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         排除文件夹路径
 
@@ -137,7 +137,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @property
     def roaming_registry_method(self):
-        """Gets the roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Gets the roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         排除文件夹路径
 
@@ -148,7 +148,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @roaming_registry_method.setter
     def roaming_registry_method(self, roaming_registry_method):
-        """Sets the roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Sets the roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         排除文件夹路径
 
@@ -159,7 +159,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @property
     def roaming_registry_path(self):
-        """Gets the roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Gets the roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         漫游注册路径
 
@@ -170,7 +170,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
     @roaming_registry_path.setter
     def roaming_registry_path(self, roaming_registry_path):
-        """Sets the roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
+        r"""Sets the roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
         漫游注册路径
 

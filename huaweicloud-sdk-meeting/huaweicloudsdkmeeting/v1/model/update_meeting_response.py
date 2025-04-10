@@ -26,7 +26,7 @@ class UpdateMeetingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateMeetingResponse
+        r"""UpdateMeetingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMeetingResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateMeetingResponse.
+        r"""Gets the body of this UpdateMeetingResponse.
 
         会议信息列表。
 
@@ -55,7 +55,7 @@ class UpdateMeetingResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMeetingResponse.
+        r"""Sets the body of this UpdateMeetingResponse.
 
         会议信息列表。
 

@@ -30,7 +30,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """UpdateNoticeRuleResponse
+        r"""UpdateNoticeRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateNoticeRuleResponse.
+        r"""Gets the api_version of this UpdateNoticeRuleResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -69,7 +69,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateNoticeRuleResponse.
+        r"""Sets the api_version of this UpdateNoticeRuleResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -80,7 +80,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateNoticeRuleResponse.
+        r"""Gets the kind of this UpdateNoticeRuleResponse.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -91,7 +91,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateNoticeRuleResponse.
+        r"""Sets the kind of this UpdateNoticeRuleResponse.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -102,7 +102,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateNoticeRuleResponse.
+        r"""Gets the spec of this UpdateNoticeRuleResponse.
 
         :return: The spec of this UpdateNoticeRuleResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleRespItem`
@@ -111,7 +111,7 @@ class UpdateNoticeRuleResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateNoticeRuleResponse.
+        r"""Sets the spec of this UpdateNoticeRuleResponse.
 
         :param spec: The spec of this UpdateNoticeRuleResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleRespItem`

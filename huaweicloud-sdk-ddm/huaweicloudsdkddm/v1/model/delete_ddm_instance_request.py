@@ -27,7 +27,7 @@ class DeleteDdmInstanceRequest:
     }
 
     def __init__(self, instance_id=None, delete_dn_data=None):
-        """DeleteDdmInstanceRequest
+        r"""DeleteDdmInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDdmInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDdmInstanceRequest.
+        r"""Gets the instance_id of this DeleteDdmInstanceRequest.
 
         DDM实例ID。
 
@@ -60,7 +60,7 @@ class DeleteDdmInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDdmInstanceRequest.
+        r"""Sets the instance_id of this DeleteDdmInstanceRequest.
 
         DDM实例ID。
 
@@ -71,7 +71,7 @@ class DeleteDdmInstanceRequest:
 
     @property
     def delete_dn_data(self):
-        """Gets the delete_dn_data of this DeleteDdmInstanceRequest.
+        r"""Gets the delete_dn_data of this DeleteDdmInstanceRequest.
 
         是否同时删除关联后端数据库实例上存储的数据。  - 取值true：删除。 - 取值为空或false：不删除。 默认值为空。
 
@@ -82,7 +82,7 @@ class DeleteDdmInstanceRequest:
 
     @delete_dn_data.setter
     def delete_dn_data(self, delete_dn_data):
-        """Sets the delete_dn_data of this DeleteDdmInstanceRequest.
+        r"""Sets the delete_dn_data of this DeleteDdmInstanceRequest.
 
         是否同时删除关联后端数据库实例上存储的数据。  - 取值true：删除。 - 取值为空或false：不删除。 默认值为空。
 

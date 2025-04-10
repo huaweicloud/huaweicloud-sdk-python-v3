@@ -29,7 +29,7 @@ class MigrationRabbitQueueMetadata:
     }
 
     def __init__(self, vhost=None, name=None, durable=None):
-        """MigrationRabbitQueueMetadata
+        r"""MigrationRabbitQueueMetadata
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MigrationRabbitQueueMetadata:
 
     @property
     def vhost(self):
-        """Gets the vhost of this MigrationRabbitQueueMetadata.
+        r"""Gets the vhost of this MigrationRabbitQueueMetadata.
 
         vhost名称。
 
@@ -68,7 +68,7 @@ class MigrationRabbitQueueMetadata:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this MigrationRabbitQueueMetadata.
+        r"""Sets the vhost of this MigrationRabbitQueueMetadata.
 
         vhost名称。
 
@@ -79,7 +79,7 @@ class MigrationRabbitQueueMetadata:
 
     @property
     def name(self):
-        """Gets the name of this MigrationRabbitQueueMetadata.
+        r"""Gets the name of this MigrationRabbitQueueMetadata.
 
         队列名称。
 
@@ -90,7 +90,7 @@ class MigrationRabbitQueueMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MigrationRabbitQueueMetadata.
+        r"""Sets the name of this MigrationRabbitQueueMetadata.
 
         队列名称。
 
@@ -101,7 +101,7 @@ class MigrationRabbitQueueMetadata:
 
     @property
     def durable(self):
-        """Gets the durable of this MigrationRabbitQueueMetadata.
+        r"""Gets the durable of this MigrationRabbitQueueMetadata.
 
         是否持久化。
 
@@ -112,7 +112,7 @@ class MigrationRabbitQueueMetadata:
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this MigrationRabbitQueueMetadata.
+        r"""Sets the durable of this MigrationRabbitQueueMetadata.
 
         是否持久化。
 

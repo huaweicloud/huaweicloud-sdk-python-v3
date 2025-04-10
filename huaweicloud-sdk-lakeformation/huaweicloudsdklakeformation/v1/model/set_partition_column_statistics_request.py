@@ -33,7 +33,7 @@ class SetPartitionColumnStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, body=None):
-        """SetPartitionColumnStatisticsRequest
+        r"""SetPartitionColumnStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetPartitionColumnStatisticsRequest.
+        r"""Gets the instance_id of this SetPartitionColumnStatisticsRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetPartitionColumnStatisticsRequest.
+        r"""Sets the instance_id of this SetPartitionColumnStatisticsRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this SetPartitionColumnStatisticsRequest.
+        r"""Gets the catalog_name of this SetPartitionColumnStatisticsRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this SetPartitionColumnStatisticsRequest.
+        r"""Sets the catalog_name of this SetPartitionColumnStatisticsRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this SetPartitionColumnStatisticsRequest.
+        r"""Gets the database_name of this SetPartitionColumnStatisticsRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this SetPartitionColumnStatisticsRequest.
+        r"""Sets the database_name of this SetPartitionColumnStatisticsRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this SetPartitionColumnStatisticsRequest.
+        r"""Gets the table_name of this SetPartitionColumnStatisticsRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this SetPartitionColumnStatisticsRequest.
+        r"""Sets the table_name of this SetPartitionColumnStatisticsRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetPartitionColumnStatisticsRequest.
+        r"""Gets the body of this SetPartitionColumnStatisticsRequest.
 
         :return: The body of this SetPartitionColumnStatisticsRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.SetPartitionColumnStatisticsInput`
@@ -164,7 +164,7 @@ class SetPartitionColumnStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetPartitionColumnStatisticsRequest.
+        r"""Sets the body of this SetPartitionColumnStatisticsRequest.
 
         :param body: The body of this SetPartitionColumnStatisticsRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.SetPartitionColumnStatisticsInput`

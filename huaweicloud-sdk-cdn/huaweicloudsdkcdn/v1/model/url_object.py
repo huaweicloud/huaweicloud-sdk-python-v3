@@ -35,7 +35,7 @@ class UrlObject:
     }
 
     def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, task_type=None):
-        """UrlObject
+        r"""UrlObject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UrlObject:
 
     @property
     def id(self):
-        """Gets the id of this UrlObject.
+        r"""Gets the id of this UrlObject.
 
         url的id
 
@@ -89,7 +89,7 @@ class UrlObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UrlObject.
+        r"""Sets the id of this UrlObject.
 
         url的id
 
@@ -100,7 +100,7 @@ class UrlObject:
 
     @property
     def url(self):
-        """Gets the url of this UrlObject.
+        r"""Gets the url of this UrlObject.
 
         url的地址。
 
@@ -111,7 +111,7 @@ class UrlObject:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UrlObject.
+        r"""Sets the url of this UrlObject.
 
         url的地址。
 
@@ -122,7 +122,7 @@ class UrlObject:
 
     @property
     def status(self):
-        """Gets the status of this UrlObject.
+        r"""Gets the status of this UrlObject.
 
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
@@ -133,7 +133,7 @@ class UrlObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlObject.
+        r"""Sets the status of this UrlObject.
 
         url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
@@ -144,7 +144,7 @@ class UrlObject:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UrlObject.
+        r"""Gets the create_time of this UrlObject.
 
         url创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -155,7 +155,7 @@ class UrlObject:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UrlObject.
+        r"""Sets the create_time of this UrlObject.
 
         url创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -166,7 +166,7 @@ class UrlObject:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UrlObject.
+        r"""Gets the task_id of this UrlObject.
 
         任务id。
 
@@ -177,7 +177,7 @@ class UrlObject:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UrlObject.
+        r"""Sets the task_id of this UrlObject.
 
         任务id。
 
@@ -188,7 +188,7 @@ class UrlObject:
 
     @property
     def task_type(self):
-        """Gets the task_type of this UrlObject.
+        r"""Gets the task_type of this UrlObject.
 
         任务的类型， 其值可以为REFRESH、PREHEATING、REFRESH_AFTER_PREHEATING
 
@@ -199,7 +199,7 @@ class UrlObject:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this UrlObject.
+        r"""Sets the task_type of this UrlObject.
 
         任务的类型， 其值可以为REFRESH、PREHEATING、REFRESH_AFTER_PREHEATING
 

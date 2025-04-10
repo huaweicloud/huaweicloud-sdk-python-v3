@@ -37,7 +37,7 @@ class ListWhitelistsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enable_whitelist=None, listener_id=None, whitelist=None):
-        """ListWhitelistsRequest
+        r"""ListWhitelistsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListWhitelistsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWhitelistsRequest.
+        r"""Gets the limit of this ListWhitelistsRequest.
 
         分页查询中每页的白名单个数
 
@@ -96,7 +96,7 @@ class ListWhitelistsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWhitelistsRequest.
+        r"""Sets the limit of this ListWhitelistsRequest.
 
         分页查询中每页的白名单个数
 
@@ -107,7 +107,7 @@ class ListWhitelistsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListWhitelistsRequest.
+        r"""Gets the marker of this ListWhitelistsRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的白名单的id。不指定时表示查询第一页。
 
@@ -118,7 +118,7 @@ class ListWhitelistsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListWhitelistsRequest.
+        r"""Sets the marker of this ListWhitelistsRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的白名单的id。不指定时表示查询第一页。
 
@@ -129,7 +129,7 @@ class ListWhitelistsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListWhitelistsRequest.
+        r"""Gets the page_reverse of this ListWhitelistsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -140,7 +140,7 @@ class ListWhitelistsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListWhitelistsRequest.
+        r"""Sets the page_reverse of this ListWhitelistsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -151,7 +151,7 @@ class ListWhitelistsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListWhitelistsRequest.
+        r"""Gets the id of this ListWhitelistsRequest.
 
         白名单ID。
 
@@ -162,7 +162,7 @@ class ListWhitelistsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListWhitelistsRequest.
+        r"""Sets the id of this ListWhitelistsRequest.
 
         白名单ID。
 
@@ -173,7 +173,7 @@ class ListWhitelistsRequest:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this ListWhitelistsRequest.
+        r"""Gets the enable_whitelist of this ListWhitelistsRequest.
 
         是否开启访问控制开关。true：打开false：关闭
 
@@ -184,7 +184,7 @@ class ListWhitelistsRequest:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this ListWhitelistsRequest.
+        r"""Sets the enable_whitelist of this ListWhitelistsRequest.
 
         是否开启访问控制开关。true：打开false：关闭
 
@@ -195,7 +195,7 @@ class ListWhitelistsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListWhitelistsRequest.
+        r"""Gets the listener_id of this ListWhitelistsRequest.
 
         白名单关联的监听器ID。
 
@@ -206,7 +206,7 @@ class ListWhitelistsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListWhitelistsRequest.
+        r"""Sets the listener_id of this ListWhitelistsRequest.
 
         白名单关联的监听器ID。
 
@@ -217,7 +217,7 @@ class ListWhitelistsRequest:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this ListWhitelistsRequest.
+        r"""Gets the whitelist of this ListWhitelistsRequest.
 
         白名单IP的字符串。
 
@@ -228,7 +228,7 @@ class ListWhitelistsRequest:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this ListWhitelistsRequest.
+        r"""Sets the whitelist of this ListWhitelistsRequest.
 
         白名单IP的字符串。
 

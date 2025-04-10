@@ -28,7 +28,7 @@ class ListResourcesByTagResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListResourcesByTagResponse
+        r"""ListResourcesByTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourcesByTagResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourcesByTagResponse.
+        r"""Gets the resources of this ListResourcesByTagResponse.
 
         :return: The resources of this ListResourcesByTagResponse.
         :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceResp`]
@@ -60,7 +60,7 @@ class ListResourcesByTagResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourcesByTagResponse.
+        r"""Sets the resources of this ListResourcesByTagResponse.
 
         :param resources: The resources of this ListResourcesByTagResponse.
         :type resources: list[:class:`huaweicloudsdkconfig.v1.ResourceResp`]
@@ -69,7 +69,7 @@ class ListResourcesByTagResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourcesByTagResponse.
+        r"""Gets the total_count of this ListResourcesByTagResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class ListResourcesByTagResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourcesByTagResponse.
+        r"""Sets the total_count of this ListResourcesByTagResponse.
 
         总记录数
 

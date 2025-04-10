@@ -26,7 +26,7 @@ class ListScriptJobBatchesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListScriptJobBatchesResponse
+        r"""ListScriptJobBatchesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListScriptJobBatchesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListScriptJobBatchesResponse.
+        r"""Gets the data of this ListScriptJobBatchesResponse.
 
         展示批次列表
 
@@ -55,7 +55,7 @@ class ListScriptJobBatchesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListScriptJobBatchesResponse.
+        r"""Sets the data of this ListScriptJobBatchesResponse.
 
         展示批次列表
 

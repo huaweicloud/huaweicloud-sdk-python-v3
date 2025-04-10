@@ -28,7 +28,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, page_info=None):
-        """ListActiveOrHistoryAlarmsResponse
+        r"""ListActiveOrHistoryAlarmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ListActiveOrHistoryAlarmsResponse.
+        r"""Gets the events of this ListActiveOrHistoryAlarmsResponse.
 
         告警信息
 
@@ -62,7 +62,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ListActiveOrHistoryAlarmsResponse.
+        r"""Sets the events of this ListActiveOrHistoryAlarmsResponse.
 
         告警信息
 
@@ -73,7 +73,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListActiveOrHistoryAlarmsResponse.
+        r"""Gets the page_info of this ListActiveOrHistoryAlarmsResponse.
 
         :return: The page_info of this ListActiveOrHistoryAlarmsResponse.
         :rtype: :class:`huaweicloudsdklts.v2.PageInfo`
@@ -82,7 +82,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListActiveOrHistoryAlarmsResponse.
+        r"""Sets the page_info of this ListActiveOrHistoryAlarmsResponse.
 
         :param page_info: The page_info of this ListActiveOrHistoryAlarmsResponse.
         :type page_info: :class:`huaweicloudsdklts.v2.PageInfo`

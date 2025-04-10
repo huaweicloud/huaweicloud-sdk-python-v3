@@ -67,7 +67,7 @@ class UpdateServerResult:
     }
 
     def __init__(self, tenant_id=None, image=None, access_i_pv4=None, access_i_pv6=None, metadata=None, addresses=None, created=None, host_id=None, flavor=None, os_dc_fdisk_config=None, user_id=None, name=None, progress=None, links=None, id=None, updated=None, locked=None, description=None, tags=None, status=None, os_ext_srv_att_ruser_data=None, os_ext_srv_att_rhostname=None):
-        """UpdateServerResult
+        r"""UpdateServerResult
 
         The model defined in huaweicloud sdk
 
@@ -172,7 +172,7 @@ class UpdateServerResult:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this UpdateServerResult.
+        r"""Gets the tenant_id of this UpdateServerResult.
 
         项目ID。
 
@@ -183,7 +183,7 @@ class UpdateServerResult:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this UpdateServerResult.
+        r"""Sets the tenant_id of this UpdateServerResult.
 
         项目ID。
 
@@ -194,7 +194,7 @@ class UpdateServerResult:
 
     @property
     def image(self):
-        """Gets the image of this UpdateServerResult.
+        r"""Gets the image of this UpdateServerResult.
 
         镜像ID。
 
@@ -205,7 +205,7 @@ class UpdateServerResult:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this UpdateServerResult.
+        r"""Sets the image of this UpdateServerResult.
 
         镜像ID。
 
@@ -216,7 +216,7 @@ class UpdateServerResult:
 
     @property
     def access_i_pv4(self):
-        """Gets the access_i_pv4 of this UpdateServerResult.
+        r"""Gets the access_i_pv4 of this UpdateServerResult.
 
         预留属性。
 
@@ -227,7 +227,7 @@ class UpdateServerResult:
 
     @access_i_pv4.setter
     def access_i_pv4(self, access_i_pv4):
-        """Sets the access_i_pv4 of this UpdateServerResult.
+        r"""Sets the access_i_pv4 of this UpdateServerResult.
 
         预留属性。
 
@@ -238,7 +238,7 @@ class UpdateServerResult:
 
     @property
     def access_i_pv6(self):
-        """Gets the access_i_pv6 of this UpdateServerResult.
+        r"""Gets the access_i_pv6 of this UpdateServerResult.
 
         预留属性。
 
@@ -249,7 +249,7 @@ class UpdateServerResult:
 
     @access_i_pv6.setter
     def access_i_pv6(self, access_i_pv6):
-        """Sets the access_i_pv6 of this UpdateServerResult.
+        r"""Sets the access_i_pv6 of this UpdateServerResult.
 
         预留属性。
 
@@ -260,7 +260,7 @@ class UpdateServerResult:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateServerResult.
+        r"""Gets the metadata of this UpdateServerResult.
 
         云服务器元数据。
 
@@ -271,7 +271,7 @@ class UpdateServerResult:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateServerResult.
+        r"""Sets the metadata of this UpdateServerResult.
 
         云服务器元数据。
 
@@ -282,7 +282,7 @@ class UpdateServerResult:
 
     @property
     def addresses(self):
-        """Gets the addresses of this UpdateServerResult.
+        r"""Gets the addresses of this UpdateServerResult.
 
         弹性云服务器的网络属性。
 
@@ -293,7 +293,7 @@ class UpdateServerResult:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this UpdateServerResult.
+        r"""Sets the addresses of this UpdateServerResult.
 
         弹性云服务器的网络属性。
 
@@ -304,7 +304,7 @@ class UpdateServerResult:
 
     @property
     def created(self):
-        """Gets the created of this UpdateServerResult.
+        r"""Gets the created of this UpdateServerResult.
 
         弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
 
@@ -315,7 +315,7 @@ class UpdateServerResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this UpdateServerResult.
+        r"""Sets the created of this UpdateServerResult.
 
         弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
 
@@ -326,7 +326,7 @@ class UpdateServerResult:
 
     @property
     def host_id(self):
-        """Gets the host_id of this UpdateServerResult.
+        r"""Gets the host_id of this UpdateServerResult.
 
         弹性云服务器所在主机的主机ID。
 
@@ -337,7 +337,7 @@ class UpdateServerResult:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UpdateServerResult.
+        r"""Sets the host_id of this UpdateServerResult.
 
         弹性云服务器所在主机的主机ID。
 
@@ -348,7 +348,7 @@ class UpdateServerResult:
 
     @property
     def flavor(self):
-        """Gets the flavor of this UpdateServerResult.
+        r"""Gets the flavor of this UpdateServerResult.
 
         :return: The flavor of this UpdateServerResult.
         :rtype: :class:`huaweicloudsdkecs.v2.SimpleFlavor`
@@ -357,7 +357,7 @@ class UpdateServerResult:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this UpdateServerResult.
+        r"""Sets the flavor of this UpdateServerResult.
 
         :param flavor: The flavor of this UpdateServerResult.
         :type flavor: :class:`huaweicloudsdkecs.v2.SimpleFlavor`
@@ -366,7 +366,7 @@ class UpdateServerResult:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this UpdateServerResult.
+        r"""Gets the os_dc_fdisk_config of this UpdateServerResult.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -377,7 +377,7 @@ class UpdateServerResult:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this UpdateServerResult.
+        r"""Sets the os_dc_fdisk_config of this UpdateServerResult.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -388,7 +388,7 @@ class UpdateServerResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateServerResult.
+        r"""Gets the user_id of this UpdateServerResult.
 
         创建弹性云服务器的用户ID，格式为UUID。
 
@@ -399,7 +399,7 @@ class UpdateServerResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateServerResult.
+        r"""Sets the user_id of this UpdateServerResult.
 
         创建弹性云服务器的用户ID，格式为UUID。
 
@@ -410,7 +410,7 @@ class UpdateServerResult:
 
     @property
     def name(self):
-        """Gets the name of this UpdateServerResult.
+        r"""Gets the name of this UpdateServerResult.
 
         弹性云服务器名称。
 
@@ -421,7 +421,7 @@ class UpdateServerResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateServerResult.
+        r"""Sets the name of this UpdateServerResult.
 
         弹性云服务器名称。
 
@@ -432,7 +432,7 @@ class UpdateServerResult:
 
     @property
     def progress(self):
-        """Gets the progress of this UpdateServerResult.
+        r"""Gets the progress of this UpdateServerResult.
 
         弹性云服务器进度。
 
@@ -443,7 +443,7 @@ class UpdateServerResult:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this UpdateServerResult.
+        r"""Sets the progress of this UpdateServerResult.
 
         弹性云服务器进度。
 
@@ -454,7 +454,7 @@ class UpdateServerResult:
 
     @property
     def links(self):
-        """Gets the links of this UpdateServerResult.
+        r"""Gets the links of this UpdateServerResult.
 
         云服务器相关标记快捷链接信息。
 
@@ -465,7 +465,7 @@ class UpdateServerResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this UpdateServerResult.
+        r"""Sets the links of this UpdateServerResult.
 
         云服务器相关标记快捷链接信息。
 
@@ -476,7 +476,7 @@ class UpdateServerResult:
 
     @property
     def id(self):
-        """Gets the id of this UpdateServerResult.
+        r"""Gets the id of this UpdateServerResult.
 
         弹性云服务器ID，格式为UUID。
 
@@ -487,7 +487,7 @@ class UpdateServerResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateServerResult.
+        r"""Sets the id of this UpdateServerResult.
 
         弹性云服务器ID，格式为UUID。
 
@@ -498,7 +498,7 @@ class UpdateServerResult:
 
     @property
     def updated(self):
-        """Gets the updated of this UpdateServerResult.
+        r"""Gets the updated of this UpdateServerResult.
 
         弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
 
@@ -509,7 +509,7 @@ class UpdateServerResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this UpdateServerResult.
+        r"""Sets the updated of this UpdateServerResult.
 
         弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
 
@@ -520,7 +520,7 @@ class UpdateServerResult:
 
     @property
     def locked(self):
-        """Gets the locked of this UpdateServerResult.
+        r"""Gets the locked of this UpdateServerResult.
 
         弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -531,7 +531,7 @@ class UpdateServerResult:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UpdateServerResult.
+        r"""Sets the locked of this UpdateServerResult.
 
         弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -542,7 +542,7 @@ class UpdateServerResult:
 
     @property
     def description(self):
-        """Gets the description of this UpdateServerResult.
+        r"""Gets the description of this UpdateServerResult.
 
         弹性云服务器的描述信息。
 
@@ -553,7 +553,7 @@ class UpdateServerResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServerResult.
+        r"""Sets the description of this UpdateServerResult.
 
         弹性云服务器的描述信息。
 
@@ -564,7 +564,7 @@ class UpdateServerResult:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateServerResult.
+        r"""Gets the tags of this UpdateServerResult.
 
         云服务器的标签列表。  微版本2.26后支持，如果不使用微版本查询，响应中无tags字段。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。 - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。
 
@@ -575,7 +575,7 @@ class UpdateServerResult:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateServerResult.
+        r"""Sets the tags of this UpdateServerResult.
 
         云服务器的标签列表。  微版本2.26后支持，如果不使用微版本查询，响应中无tags字段。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。 - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。
 
@@ -586,7 +586,7 @@ class UpdateServerResult:
 
     @property
     def status(self):
-        """Gets the status of this UpdateServerResult.
+        r"""Gets the status of this UpdateServerResult.
 
         弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -597,7 +597,7 @@ class UpdateServerResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateServerResult.
+        r"""Sets the status of this UpdateServerResult.
 
         弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -608,7 +608,7 @@ class UpdateServerResult:
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this UpdateServerResult.
+        r"""Gets the os_ext_srv_att_ruser_data of this UpdateServerResult.
 
         创建弹性云服务器时指定的user_data（编码过后的信息）。
 
@@ -619,7 +619,7 @@ class UpdateServerResult:
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this UpdateServerResult.
+        r"""Sets the os_ext_srv_att_ruser_data of this UpdateServerResult.
 
         创建弹性云服务器时指定的user_data（编码过后的信息）。
 
@@ -630,7 +630,7 @@ class UpdateServerResult:
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this UpdateServerResult.
+        r"""Gets the os_ext_srv_att_rhostname of this UpdateServerResult.
 
         弹性云服务器的主机名。
 
@@ -641,7 +641,7 @@ class UpdateServerResult:
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this UpdateServerResult.
+        r"""Sets the os_ext_srv_att_rhostname of this UpdateServerResult.
 
         弹性云服务器的主机名。
 

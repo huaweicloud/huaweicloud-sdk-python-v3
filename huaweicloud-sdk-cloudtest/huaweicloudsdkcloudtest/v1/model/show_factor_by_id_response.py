@@ -30,7 +30,7 @@ class ShowFactorByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowFactorByIdResponse
+        r"""ShowFactorByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFactorByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowFactorByIdResponse.
+        r"""Gets the code of this ShowFactorByIdResponse.
 
         :return: The code of this ShowFactorByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowFactorByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowFactorByIdResponse.
+        r"""Sets the code of this ShowFactorByIdResponse.
 
         :param code: The code of this ShowFactorByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowFactorByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowFactorByIdResponse.
+        r"""Gets the data of this ShowFactorByIdResponse.
 
         :return: The data of this ShowFactorByIdResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class ShowFactorByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowFactorByIdResponse.
+        r"""Sets the data of this ShowFactorByIdResponse.
 
         :param data: The data of this ShowFactorByIdResponse.
         :type data: object
@@ -94,7 +94,7 @@ class ShowFactorByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowFactorByIdResponse.
+        r"""Gets the message of this ShowFactorByIdResponse.
 
         :return: The message of this ShowFactorByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowFactorByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowFactorByIdResponse.
+        r"""Sets the message of this ShowFactorByIdResponse.
 
         :param message: The message of this ShowFactorByIdResponse.
         :type message: str

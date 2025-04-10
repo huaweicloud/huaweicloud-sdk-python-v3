@@ -25,7 +25,7 @@ class Metadata:
     }
 
     def __init__(self, type=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Metadata:
 
     @property
     def type(self):
-        """Gets the type of this Metadata.
+        r"""Gets the type of this Metadata.
 
         属性类型标识，string|int|float|boolean（boolean类型为true或false），默认为string
 
@@ -54,7 +54,7 @@ class Metadata:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Metadata.
+        r"""Sets the type of this Metadata.
 
         属性类型标识，string|int|float|boolean（boolean类型为true或false），默认为string
 

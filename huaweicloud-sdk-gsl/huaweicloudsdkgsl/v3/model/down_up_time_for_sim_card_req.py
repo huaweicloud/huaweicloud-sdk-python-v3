@@ -27,7 +27,7 @@ class DownUpTimeForSimCardReq:
     }
 
     def __init__(self, down_up_switch=None, iccid=None):
-        """DownUpTimeForSimCardReq
+        r"""DownUpTimeForSimCardReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DownUpTimeForSimCardReq:
 
     @property
     def down_up_switch(self):
-        """Gets the down_up_switch of this DownUpTimeForSimCardReq.
+        r"""Gets the down_up_switch of this DownUpTimeForSimCardReq.
 
         启用停用开关
 
@@ -61,7 +61,7 @@ class DownUpTimeForSimCardReq:
 
     @down_up_switch.setter
     def down_up_switch(self, down_up_switch):
-        """Sets the down_up_switch of this DownUpTimeForSimCardReq.
+        r"""Sets the down_up_switch of this DownUpTimeForSimCardReq.
 
         启用停用开关
 
@@ -72,7 +72,7 @@ class DownUpTimeForSimCardReq:
 
     @property
     def iccid(self):
-        """Gets the iccid of this DownUpTimeForSimCardReq.
+        r"""Gets the iccid of this DownUpTimeForSimCardReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 
@@ -83,7 +83,7 @@ class DownUpTimeForSimCardReq:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this DownUpTimeForSimCardReq.
+        r"""Sets the iccid of this DownUpTimeForSimCardReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 

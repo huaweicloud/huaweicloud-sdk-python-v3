@@ -38,7 +38,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
     }
 
     def __init__(self, bill_cycle=None, initial_amount_due=None, consume_amount=None, refunds=None, adjustments=None, tax_amount=None, currency=None):
-        """ListPostpaidBillSumResponse
+        r"""ListPostpaidBillSumResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this ListPostpaidBillSumResponse.
+        r"""Gets the bill_cycle of this ListPostpaidBillSumResponse.
 
         账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
 
@@ -97,7 +97,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this ListPostpaidBillSumResponse.
+        r"""Sets the bill_cycle of this ListPostpaidBillSumResponse.
 
         账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
 
@@ -108,7 +108,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def initial_amount_due(self):
-        """Gets the initial_amount_due of this ListPostpaidBillSumResponse.
+        r"""Gets the initial_amount_due of this ListPostpaidBillSumResponse.
 
         账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
@@ -119,7 +119,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @initial_amount_due.setter
     def initial_amount_due(self, initial_amount_due):
-        """Sets the initial_amount_due of this ListPostpaidBillSumResponse.
+        r"""Sets the initial_amount_due of this ListPostpaidBillSumResponse.
 
         账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
@@ -130,7 +130,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this ListPostpaidBillSumResponse.
+        r"""Gets the consume_amount of this ListPostpaidBillSumResponse.
 
         账单中的消费金额。
 
@@ -141,7 +141,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this ListPostpaidBillSumResponse.
+        r"""Sets the consume_amount of this ListPostpaidBillSumResponse.
 
         账单中的消费金额。
 
@@ -152,7 +152,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def refunds(self):
-        """Gets the refunds of this ListPostpaidBillSumResponse.
+        r"""Gets the refunds of this ListPostpaidBillSumResponse.
 
         账单中的退款金额。
 
@@ -163,7 +163,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @refunds.setter
     def refunds(self, refunds):
-        """Sets the refunds of this ListPostpaidBillSumResponse.
+        r"""Sets the refunds of this ListPostpaidBillSumResponse.
 
         账单中的退款金额。
 
@@ -174,7 +174,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def adjustments(self):
-        """Gets the adjustments of this ListPostpaidBillSumResponse.
+        r"""Gets the adjustments of this ListPostpaidBillSumResponse.
 
         账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
@@ -185,7 +185,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @adjustments.setter
     def adjustments(self, adjustments):
-        """Sets the adjustments of this ListPostpaidBillSumResponse.
+        r"""Sets the adjustments of this ListPostpaidBillSumResponse.
 
         账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
@@ -196,7 +196,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def tax_amount(self):
-        """Gets the tax_amount of this ListPostpaidBillSumResponse.
+        r"""Gets the tax_amount of this ListPostpaidBillSumResponse.
 
         账单中的销项税金额，销项税不计入应还金额。
 
@@ -207,7 +207,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @tax_amount.setter
     def tax_amount(self, tax_amount):
-        """Sets the tax_amount of this ListPostpaidBillSumResponse.
+        r"""Sets the tax_amount of this ListPostpaidBillSumResponse.
 
         账单中的销项税金额，销项税不计入应还金额。
 
@@ -218,7 +218,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListPostpaidBillSumResponse.
+        r"""Gets the currency of this ListPostpaidBillSumResponse.
 
         只有成功才返回这个参数。 美金：USD
 
@@ -229,7 +229,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListPostpaidBillSumResponse.
+        r"""Sets the currency of this ListPostpaidBillSumResponse.
 
         只有成功才返回这个参数。 美金：USD
 

@@ -29,7 +29,7 @@ class FgacUpdateResult:
     }
 
     def __init__(self, id=None, status=None, error_msg=None):
-        """FgacUpdateResult
+        r"""FgacUpdateResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FgacUpdateResult:
 
     @property
     def id(self):
-        """Gets the id of this FgacUpdateResult.
+        r"""Gets the id of this FgacUpdateResult.
 
         数据连接id
 
@@ -68,7 +68,7 @@ class FgacUpdateResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FgacUpdateResult.
+        r"""Sets the id of this FgacUpdateResult.
 
         数据连接id
 
@@ -79,7 +79,7 @@ class FgacUpdateResult:
 
     @property
     def status(self):
-        """Gets the status of this FgacUpdateResult.
+        r"""Gets the status of this FgacUpdateResult.
 
         是否更新成功,true表示更新成功,false表示更新失败。
 
@@ -90,7 +90,7 @@ class FgacUpdateResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FgacUpdateResult.
+        r"""Sets the status of this FgacUpdateResult.
 
         是否更新成功,true表示更新成功,false表示更新失败。
 
@@ -101,7 +101,7 @@ class FgacUpdateResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this FgacUpdateResult.
+        r"""Gets the error_msg of this FgacUpdateResult.
 
         细粒度认证更新错误信息
 
@@ -112,7 +112,7 @@ class FgacUpdateResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this FgacUpdateResult.
+        r"""Sets the error_msg of this FgacUpdateResult.
 
         细粒度认证更新错误信息
 

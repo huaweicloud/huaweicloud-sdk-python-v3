@@ -45,7 +45,7 @@ class HandshakeDto:
     }
 
     def __init__(self, id=None, urn=None, updated_at=None, created_at=None, expired_at=None, management_account_id=None, management_account_name=None, organization_id=None, notes=None, target=None, status=None):
-        """HandshakeDto
+        r"""HandshakeDto
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class HandshakeDto:
 
     @property
     def id(self):
-        """Gets the id of this HandshakeDto.
+        r"""Gets the id of this HandshakeDto.
 
         邀请（握手）的唯一标识符（ID）。源账号在发起邀请（握手）时创建ID。
 
@@ -113,7 +113,7 @@ class HandshakeDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HandshakeDto.
+        r"""Sets the id of this HandshakeDto.
 
         邀请（握手）的唯一标识符（ID）。源账号在发起邀请（握手）时创建ID。
 
@@ -124,7 +124,7 @@ class HandshakeDto:
 
     @property
     def urn(self):
-        """Gets the urn of this HandshakeDto.
+        r"""Gets the urn of this HandshakeDto.
 
         邀请（握手）的统一资源名称。
 
@@ -135,7 +135,7 @@ class HandshakeDto:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this HandshakeDto.
+        r"""Sets the urn of this HandshakeDto.
 
         邀请（握手）的统一资源名称。
 
@@ -146,7 +146,7 @@ class HandshakeDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this HandshakeDto.
+        r"""Gets the updated_at of this HandshakeDto.
 
         邀请（握手）请求被接受、取消、拒绝或到期的日期和时间。
 
@@ -157,7 +157,7 @@ class HandshakeDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this HandshakeDto.
+        r"""Sets the updated_at of this HandshakeDto.
 
         邀请（握手）请求被接受、取消、拒绝或到期的日期和时间。
 
@@ -168,7 +168,7 @@ class HandshakeDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this HandshakeDto.
+        r"""Gets the created_at of this HandshakeDto.
 
         提出邀请（握手）请求的日期和时间。
 
@@ -179,7 +179,7 @@ class HandshakeDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this HandshakeDto.
+        r"""Sets the created_at of this HandshakeDto.
 
         提出邀请（握手）请求的日期和时间。
 
@@ -190,7 +190,7 @@ class HandshakeDto:
 
     @property
     def expired_at(self):
-        """Gets the expired_at of this HandshakeDto.
+        r"""Gets the expired_at of this HandshakeDto.
 
         邀请（握手）过期的日期和时间。
 
@@ -201,7 +201,7 @@ class HandshakeDto:
 
     @expired_at.setter
     def expired_at(self, expired_at):
-        """Sets the expired_at of this HandshakeDto.
+        r"""Sets the expired_at of this HandshakeDto.
 
         邀请（握手）过期的日期和时间。
 
@@ -212,7 +212,7 @@ class HandshakeDto:
 
     @property
     def management_account_id(self):
-        """Gets the management_account_id of this HandshakeDto.
+        r"""Gets the management_account_id of this HandshakeDto.
 
         组织管理账号的唯一标识符（ID）。
 
@@ -223,7 +223,7 @@ class HandshakeDto:
 
     @management_account_id.setter
     def management_account_id(self, management_account_id):
-        """Sets the management_account_id of this HandshakeDto.
+        r"""Sets the management_account_id of this HandshakeDto.
 
         组织管理账号的唯一标识符（ID）。
 
@@ -234,7 +234,7 @@ class HandshakeDto:
 
     @property
     def management_account_name(self):
-        """Gets the management_account_name of this HandshakeDto.
+        r"""Gets the management_account_name of this HandshakeDto.
 
         组织管理账号的名称。
 
@@ -245,7 +245,7 @@ class HandshakeDto:
 
     @management_account_name.setter
     def management_account_name(self, management_account_name):
-        """Sets the management_account_name of this HandshakeDto.
+        r"""Sets the management_account_name of this HandshakeDto.
 
         组织管理账号的名称。
 
@@ -256,7 +256,7 @@ class HandshakeDto:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this HandshakeDto.
+        r"""Gets the organization_id of this HandshakeDto.
 
         组织的唯一标识符（ID）。
 
@@ -267,7 +267,7 @@ class HandshakeDto:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this HandshakeDto.
+        r"""Sets the organization_id of this HandshakeDto.
 
         组织的唯一标识符（ID）。
 
@@ -278,7 +278,7 @@ class HandshakeDto:
 
     @property
     def notes(self):
-        """Gets the notes of this HandshakeDto.
+        r"""Gets the notes of this HandshakeDto.
 
         给收件账号所有者的邮件中的附加信息。
 
@@ -289,7 +289,7 @@ class HandshakeDto:
 
     @notes.setter
     def notes(self, notes):
-        """Sets the notes of this HandshakeDto.
+        r"""Sets the notes of this HandshakeDto.
 
         给收件账号所有者的邮件中的附加信息。
 
@@ -300,7 +300,7 @@ class HandshakeDto:
 
     @property
     def target(self):
-        """Gets the target of this HandshakeDto.
+        r"""Gets the target of this HandshakeDto.
 
         :return: The target of this HandshakeDto.
         :rtype: :class:`huaweicloudsdkorganizations.v1.TargetDto`
@@ -309,7 +309,7 @@ class HandshakeDto:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this HandshakeDto.
+        r"""Sets the target of this HandshakeDto.
 
         :param target: The target of this HandshakeDto.
         :type target: :class:`huaweicloudsdkorganizations.v1.TargetDto`
@@ -318,7 +318,7 @@ class HandshakeDto:
 
     @property
     def status(self):
-        """Gets the status of this HandshakeDto.
+        r"""Gets the status of this HandshakeDto.
 
         邀请（握手）的当前状态, pending：邀请中；accepted：接受邀请；cancelled：取消邀请；declined：拒绝邀请；expired：邀请过期。
 
@@ -329,7 +329,7 @@ class HandshakeDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HandshakeDto.
+        r"""Sets the status of this HandshakeDto.
 
         邀请（握手）的当前状态, pending：邀请中；accepted：接受邀请；cancelled：取消邀请；declined：拒绝邀请；expired：邀请过期。
 

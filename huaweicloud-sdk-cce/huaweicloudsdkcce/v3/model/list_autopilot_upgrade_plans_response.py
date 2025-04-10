@@ -30,7 +30,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAutopilotUpgradePlansResponse
+        r"""ListAutopilotUpgradePlansResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotUpgradePlansResponse.
+        r"""Gets the kind of this ListAutopilotUpgradePlansResponse.
 
         API类型，固定值“List”，该值不可修改。 
 
@@ -69,7 +69,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotUpgradePlansResponse.
+        r"""Sets the kind of this ListAutopilotUpgradePlansResponse.
 
         API类型，固定值“List”，该值不可修改。 
 
@@ -80,7 +80,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotUpgradePlansResponse.
+        r"""Gets the api_version of this ListAutopilotUpgradePlansResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -91,7 +91,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotUpgradePlansResponse.
+        r"""Sets the api_version of this ListAutopilotUpgradePlansResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -102,7 +102,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAutopilotUpgradePlansResponse.
+        r"""Gets the items of this ListAutopilotUpgradePlansResponse.
 
         :return: The items of this ListAutopilotUpgradePlansResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradePlan`
@@ -111,7 +111,7 @@ class ListAutopilotUpgradePlansResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAutopilotUpgradePlansResponse.
+        r"""Sets the items of this ListAutopilotUpgradePlansResponse.
 
         :param items: The items of this ListAutopilotUpgradePlansResponse.
         :type items: :class:`huaweicloudsdkcce.v3.UpgradePlan`

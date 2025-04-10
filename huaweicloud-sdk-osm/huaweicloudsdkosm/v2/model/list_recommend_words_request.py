@@ -35,7 +35,7 @@ class ListRecommendWordsRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, recommend_word_id=None, level_value=None, theme_name=None):
-        """ListRecommendWordsRequest
+        r"""ListRecommendWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListRecommendWordsRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ListRecommendWordsRequest.
+        r"""Gets the x_service_key of this ListRecommendWordsRequest.
 
         调用智能客服服务标志。
 
@@ -89,7 +89,7 @@ class ListRecommendWordsRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ListRecommendWordsRequest.
+        r"""Sets the x_service_key of this ListRecommendWordsRequest.
 
         调用智能客服服务标志。
 
@@ -100,7 +100,7 @@ class ListRecommendWordsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListRecommendWordsRequest.
+        r"""Gets the x_site of this ListRecommendWordsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -111,7 +111,7 @@ class ListRecommendWordsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListRecommendWordsRequest.
+        r"""Sets the x_site of this ListRecommendWordsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -122,7 +122,7 @@ class ListRecommendWordsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRecommendWordsRequest.
+        r"""Gets the x_language of this ListRecommendWordsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -133,7 +133,7 @@ class ListRecommendWordsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRecommendWordsRequest.
+        r"""Sets the x_language of this ListRecommendWordsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -144,7 +144,7 @@ class ListRecommendWordsRequest:
 
     @property
     def recommend_word_id(self):
-        """Gets the recommend_word_id of this ListRecommendWordsRequest.
+        r"""Gets the recommend_word_id of this ListRecommendWordsRequest.
 
         推荐词Id
 
@@ -155,7 +155,7 @@ class ListRecommendWordsRequest:
 
     @recommend_word_id.setter
     def recommend_word_id(self, recommend_word_id):
-        """Sets the recommend_word_id of this ListRecommendWordsRequest.
+        r"""Sets the recommend_word_id of this ListRecommendWordsRequest.
 
         推荐词Id
 
@@ -166,7 +166,7 @@ class ListRecommendWordsRequest:
 
     @property
     def level_value(self):
-        """Gets the level_value of this ListRecommendWordsRequest.
+        r"""Gets the level_value of this ListRecommendWordsRequest.
 
         推荐词层级
 
@@ -177,7 +177,7 @@ class ListRecommendWordsRequest:
 
     @level_value.setter
     def level_value(self, level_value):
-        """Sets the level_value of this ListRecommendWordsRequest.
+        r"""Sets the level_value of this ListRecommendWordsRequest.
 
         推荐词层级
 
@@ -188,7 +188,7 @@ class ListRecommendWordsRequest:
 
     @property
     def theme_name(self):
-        """Gets the theme_name of this ListRecommendWordsRequest.
+        r"""Gets the theme_name of this ListRecommendWordsRequest.
 
         主题名称
 
@@ -199,7 +199,7 @@ class ListRecommendWordsRequest:
 
     @theme_name.setter
     def theme_name(self, theme_name):
-        """Sets the theme_name of this ListRecommendWordsRequest.
+        r"""Sets the theme_name of this ListRecommendWordsRequest.
 
         主题名称
 

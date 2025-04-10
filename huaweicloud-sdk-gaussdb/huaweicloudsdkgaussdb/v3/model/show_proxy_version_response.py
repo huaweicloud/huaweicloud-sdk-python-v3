@@ -30,7 +30,7 @@ class ShowProxyVersionResponse(SdkResponse):
     }
 
     def __init__(self, current_version=None, latest_version=None, can_upgrade=None):
-        """ShowProxyVersionResponse
+        r"""ShowProxyVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowProxyVersionResponse(SdkResponse):
 
     @property
     def current_version(self):
-        """Gets the current_version of this ShowProxyVersionResponse.
+        r"""Gets the current_version of this ShowProxyVersionResponse.
 
         当前代理版本
 
@@ -69,7 +69,7 @@ class ShowProxyVersionResponse(SdkResponse):
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this ShowProxyVersionResponse.
+        r"""Sets the current_version of this ShowProxyVersionResponse.
 
         当前代理版本
 
@@ -80,7 +80,7 @@ class ShowProxyVersionResponse(SdkResponse):
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this ShowProxyVersionResponse.
+        r"""Gets the latest_version of this ShowProxyVersionResponse.
 
         最新代理版本
 
@@ -91,7 +91,7 @@ class ShowProxyVersionResponse(SdkResponse):
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this ShowProxyVersionResponse.
+        r"""Sets the latest_version of this ShowProxyVersionResponse.
 
         最新代理版本
 
@@ -102,7 +102,7 @@ class ShowProxyVersionResponse(SdkResponse):
 
     @property
     def can_upgrade(self):
-        """Gets the can_upgrade of this ShowProxyVersionResponse.
+        r"""Gets the can_upgrade of this ShowProxyVersionResponse.
 
         是否能升级
 
@@ -113,7 +113,7 @@ class ShowProxyVersionResponse(SdkResponse):
 
     @can_upgrade.setter
     def can_upgrade(self, can_upgrade):
-        """Sets the can_upgrade of this ShowProxyVersionResponse.
+        r"""Sets the can_upgrade of this ShowProxyVersionResponse.
 
         是否能升级
 

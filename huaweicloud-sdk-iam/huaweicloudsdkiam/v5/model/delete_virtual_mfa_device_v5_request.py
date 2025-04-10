@@ -27,7 +27,7 @@ class DeleteVirtualMfaDeviceV5Request:
     }
 
     def __init__(self, user_id=None, serial_number=None):
-        """DeleteVirtualMfaDeviceV5Request
+        r"""DeleteVirtualMfaDeviceV5Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVirtualMfaDeviceV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DeleteVirtualMfaDeviceV5Request.
+        r"""Gets the user_id of this DeleteVirtualMfaDeviceV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class DeleteVirtualMfaDeviceV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DeleteVirtualMfaDeviceV5Request.
+        r"""Sets the user_id of this DeleteVirtualMfaDeviceV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class DeleteVirtualMfaDeviceV5Request:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this DeleteVirtualMfaDeviceV5Request.
+        r"""Gets the serial_number of this DeleteVirtualMfaDeviceV5Request.
 
         MFA设备序列号。
 
@@ -81,7 +81,7 @@ class DeleteVirtualMfaDeviceV5Request:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this DeleteVirtualMfaDeviceV5Request.
+        r"""Sets the serial_number of this DeleteVirtualMfaDeviceV5Request.
 
         MFA设备序列号。
 

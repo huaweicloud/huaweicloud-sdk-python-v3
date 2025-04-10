@@ -31,7 +31,7 @@ class AnalysisInfo:
     }
 
     def __init__(self, diarization=None, channel=None, emotion=None, speed=None):
-        """AnalysisInfo
+        r"""AnalysisInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AnalysisInfo:
 
     @property
     def diarization(self):
-        """Gets the diarization of this AnalysisInfo.
+        r"""Gets the diarization of this AnalysisInfo.
 
         是否需要做话者分离。缺省为true，表示会进行话者分离，识别结果中会包含role项（角色）。如果diarization为false, 那么结果中不会出现role项。
 
@@ -75,7 +75,7 @@ class AnalysisInfo:
 
     @diarization.setter
     def diarization(self, diarization):
-        """Sets the diarization of this AnalysisInfo.
+        r"""Sets the diarization of this AnalysisInfo.
 
         是否需要做话者分离。缺省为true，表示会进行话者分离，识别结果中会包含role项（角色）。如果diarization为false, 那么结果中不会出现role项。
 
@@ -86,7 +86,7 @@ class AnalysisInfo:
 
     @property
     def channel(self):
-        """Gets the channel of this AnalysisInfo.
+        r"""Gets the channel of this AnalysisInfo.
 
         语音文件声道信息，可以为MONO（缺省), LEFT_AGENT, RIGHT_AGENT。  如果channel 为MONO，那么原始文件需要为单声道文件。  如果为双声道文件，系统会将其转换成单声道文件，可能会影响识别效果。  如果 channel 为 LEFT_AGENT或RIGHT_AGENT, 则原始文件需要为双声道文件，如果为单声道文件，系统会将其转换成双声道文件，可能会影响识别效果。  当channel 为 LEFT_AGENT或RIGHT_AGENT，且diarization为true时，系统会按照配置给出对应角色。其中：  LEFT_AGENT 指定左声道语音为agent（坐席）,  RIGHT_AGENT 指定右声道为agent（坐席）。
 
@@ -97,7 +97,7 @@ class AnalysisInfo:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this AnalysisInfo.
+        r"""Sets the channel of this AnalysisInfo.
 
         语音文件声道信息，可以为MONO（缺省), LEFT_AGENT, RIGHT_AGENT。  如果channel 为MONO，那么原始文件需要为单声道文件。  如果为双声道文件，系统会将其转换成单声道文件，可能会影响识别效果。  如果 channel 为 LEFT_AGENT或RIGHT_AGENT, 则原始文件需要为双声道文件，如果为单声道文件，系统会将其转换成双声道文件，可能会影响识别效果。  当channel 为 LEFT_AGENT或RIGHT_AGENT，且diarization为true时，系统会按照配置给出对应角色。其中：  LEFT_AGENT 指定左声道语音为agent（坐席）,  RIGHT_AGENT 指定右声道为agent（坐席）。
 
@@ -108,7 +108,7 @@ class AnalysisInfo:
 
     @property
     def emotion(self):
-        """Gets the emotion of this AnalysisInfo.
+        r"""Gets the emotion of this AnalysisInfo.
 
         是否需要做情绪检测, 缺省为true。
 
@@ -119,7 +119,7 @@ class AnalysisInfo:
 
     @emotion.setter
     def emotion(self, emotion):
-        """Sets the emotion of this AnalysisInfo.
+        r"""Sets the emotion of this AnalysisInfo.
 
         是否需要做情绪检测, 缺省为true。
 
@@ -130,7 +130,7 @@ class AnalysisInfo:
 
     @property
     def speed(self):
-        """Gets the speed of this AnalysisInfo.
+        r"""Gets the speed of this AnalysisInfo.
 
         是否需要输出语速信息, 缺省为true。
 
@@ -141,7 +141,7 @@ class AnalysisInfo:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this AnalysisInfo.
+        r"""Sets the speed of this AnalysisInfo.
 
         是否需要输出语速信息, 缺省为true。
 

@@ -27,7 +27,7 @@ class StopJobActionInfo:
     }
 
     def __init__(self, job_id=None, is_force_stop=None):
-        """StopJobActionInfo
+        r"""StopJobActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopJobActionInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopJobActionInfo.
+        r"""Gets the job_id of this StopJobActionInfo.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class StopJobActionInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopJobActionInfo.
+        r"""Sets the job_id of this StopJobActionInfo.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class StopJobActionInfo:
 
     @property
     def is_force_stop(self):
-        """Gets the is_force_stop of this StopJobActionInfo.
+        r"""Gets the is_force_stop of this StopJobActionInfo.
 
         强制结束任务时取值true，默认false。
 
@@ -82,7 +82,7 @@ class StopJobActionInfo:
 
     @is_force_stop.setter
     def is_force_stop(self, is_force_stop):
-        """Sets the is_force_stop of this StopJobActionInfo.
+        r"""Sets the is_force_stop of this StopJobActionInfo.
 
         强制结束任务时取值true，默认false。
 

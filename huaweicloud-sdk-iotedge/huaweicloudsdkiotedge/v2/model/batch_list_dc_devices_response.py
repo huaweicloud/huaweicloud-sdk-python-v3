@@ -30,7 +30,7 @@ class BatchListDcDevicesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, devices=None):
-        """BatchListDcDevicesResponse
+        r"""BatchListDcDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListDcDevicesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListDcDevicesResponse.
+        r"""Gets the count of this BatchListDcDevicesResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListDcDevicesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListDcDevicesResponse.
+        r"""Sets the count of this BatchListDcDevicesResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListDcDevicesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListDcDevicesResponse.
+        r"""Gets the page_info of this BatchListDcDevicesResponse.
 
         :return: The page_info of this BatchListDcDevicesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListDcDevicesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListDcDevicesResponse.
+        r"""Sets the page_info of this BatchListDcDevicesResponse.
 
         :param page_info: The page_info of this BatchListDcDevicesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListDcDevicesResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this BatchListDcDevicesResponse.
+        r"""Gets the devices of this BatchListDcDevicesResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class BatchListDcDevicesResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this BatchListDcDevicesResponse.
+        r"""Sets the devices of this BatchListDcDevicesResponse.
 
         每页记录数
 

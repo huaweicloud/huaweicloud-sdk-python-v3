@@ -31,7 +31,7 @@ class DeadLetterQueue:
     }
 
     def __init__(self, type=None, instance_id=None, connection_id=None, topic=None):
-        """DeadLetterQueue
+        r"""DeadLetterQueue
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeadLetterQueue:
 
     @property
     def type(self):
-        """Gets the type of this DeadLetterQueue.
+        r"""Gets the type of this DeadLetterQueue.
 
         队列类型
 
@@ -71,7 +71,7 @@ class DeadLetterQueue:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeadLetterQueue.
+        r"""Sets the type of this DeadLetterQueue.
 
         队列类型
 
@@ -82,7 +82,7 @@ class DeadLetterQueue:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeadLetterQueue.
+        r"""Gets the instance_id of this DeadLetterQueue.
 
         实例id
 
@@ -93,7 +93,7 @@ class DeadLetterQueue:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeadLetterQueue.
+        r"""Sets the instance_id of this DeadLetterQueue.
 
         实例id
 
@@ -104,7 +104,7 @@ class DeadLetterQueue:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DeadLetterQueue.
+        r"""Gets the connection_id of this DeadLetterQueue.
 
         目标连接id
 
@@ -115,7 +115,7 @@ class DeadLetterQueue:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DeadLetterQueue.
+        r"""Sets the connection_id of this DeadLetterQueue.
 
         目标连接id
 
@@ -126,7 +126,7 @@ class DeadLetterQueue:
 
     @property
     def topic(self):
-        """Gets the topic of this DeadLetterQueue.
+        r"""Gets the topic of this DeadLetterQueue.
 
         主题
 
@@ -137,7 +137,7 @@ class DeadLetterQueue:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this DeadLetterQueue.
+        r"""Sets the topic of this DeadLetterQueue.
 
         主题
 

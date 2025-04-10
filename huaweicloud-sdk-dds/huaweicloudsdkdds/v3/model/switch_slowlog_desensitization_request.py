@@ -29,7 +29,7 @@ class SwitchSlowlogDesensitizationRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, status=None):
-        """SwitchSlowlogDesensitizationRequest
+        r"""SwitchSlowlogDesensitizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchSlowlogDesensitizationRequest.
+        r"""Gets the x_language of this SwitchSlowlogDesensitizationRequest.
 
         语言。
 
@@ -66,7 +66,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchSlowlogDesensitizationRequest.
+        r"""Sets the x_language of this SwitchSlowlogDesensitizationRequest.
 
         语言。
 
@@ -77,7 +77,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchSlowlogDesensitizationRequest.
+        r"""Gets the instance_id of this SwitchSlowlogDesensitizationRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -88,7 +88,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchSlowlogDesensitizationRequest.
+        r"""Sets the instance_id of this SwitchSlowlogDesensitizationRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -99,7 +99,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @property
     def status(self):
-        """Gets the status of this SwitchSlowlogDesensitizationRequest.
+        r"""Gets the status of this SwitchSlowlogDesensitizationRequest.
 
         开启或关闭慢日志脱敏，取值为on或off。
 
@@ -110,7 +110,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SwitchSlowlogDesensitizationRequest.
+        r"""Sets the status of this SwitchSlowlogDesensitizationRequest.
 
         开启或关闭慢日志脱敏，取值为on或off。
 

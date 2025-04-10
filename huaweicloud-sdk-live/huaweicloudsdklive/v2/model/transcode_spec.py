@@ -27,7 +27,7 @@ class TranscodeSpec:
     }
 
     def __init__(self, type=None, value=None):
-        """TranscodeSpec
+        r"""TranscodeSpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TranscodeSpec:
 
     @property
     def type(self):
-        """Gets the type of this TranscodeSpec.
+        r"""Gets the type of this TranscodeSpec.
 
         转码规格，格式是“编码格式_分辨率档位”（未开启高清低码）和“编码格式_PVC_分辨率档位”（开启高清低码）。  其中编码格式包括H264、H265，分辨率档位包括：  4K（3840 x 2160）及以下，2K（2560 x 1440）及以下，FHD（1920 x 1080）及以下，HD（1280 x 720）及以下，SD（640 x 480）及以下。 
 
@@ -61,7 +61,7 @@ class TranscodeSpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TranscodeSpec.
+        r"""Sets the type of this TranscodeSpec.
 
         转码规格，格式是“编码格式_分辨率档位”（未开启高清低码）和“编码格式_PVC_分辨率档位”（开启高清低码）。  其中编码格式包括H264、H265，分辨率档位包括：  4K（3840 x 2160）及以下，2K（2560 x 1440）及以下，FHD（1920 x 1080）及以下，HD（1280 x 720）及以下，SD（640 x 480）及以下。 
 
@@ -72,7 +72,7 @@ class TranscodeSpec:
 
     @property
     def value(self):
-        """Gets the value of this TranscodeSpec.
+        r"""Gets the value of this TranscodeSpec.
 
         采样时间点转码时长，单位为分钟，保留两位小数。
 
@@ -83,7 +83,7 @@ class TranscodeSpec:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TranscodeSpec.
+        r"""Sets the value of this TranscodeSpec.
 
         采样时间点转码时长，单位为分钟，保留两位小数。
 

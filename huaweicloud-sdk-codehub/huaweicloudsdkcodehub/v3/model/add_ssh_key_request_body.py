@@ -27,7 +27,7 @@ class AddSshKeyRequestBody:
     }
 
     def __init__(self, key=None, title=None):
-        """AddSshKeyRequestBody
+        r"""AddSshKeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddSshKeyRequestBody:
 
     @property
     def key(self):
-        """Gets the key of this AddSshKeyRequestBody.
+        r"""Gets the key of this AddSshKeyRequestBody.
 
         密钥
 
@@ -59,7 +59,7 @@ class AddSshKeyRequestBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AddSshKeyRequestBody.
+        r"""Sets the key of this AddSshKeyRequestBody.
 
         密钥
 
@@ -70,7 +70,7 @@ class AddSshKeyRequestBody:
 
     @property
     def title(self):
-        """Gets the title of this AddSshKeyRequestBody.
+        r"""Gets the title of this AddSshKeyRequestBody.
 
         密钥名称
 
@@ -81,7 +81,7 @@ class AddSshKeyRequestBody:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this AddSshKeyRequestBody.
+        r"""Sets the title of this AddSshKeyRequestBody.
 
         密钥名称
 

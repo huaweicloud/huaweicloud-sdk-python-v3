@@ -24,7 +24,7 @@ class MoveAccountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """MoveAccountResponse
+        r"""MoveAccountResponse
 
         The model defined in huaweicloud sdk
 

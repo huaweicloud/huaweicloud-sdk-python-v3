@@ -25,7 +25,7 @@ class BatchModifyBandwidthRequest:
     }
 
     def __init__(self, body=None):
-        """BatchModifyBandwidthRequest
+        r"""BatchModifyBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchModifyBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchModifyBandwidthRequest.
+        r"""Gets the body of this BatchModifyBandwidthRequest.
 
         :return: The body of this BatchModifyBandwidthRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.ModifyBandwidthRequestBody`
@@ -52,7 +52,7 @@ class BatchModifyBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchModifyBandwidthRequest.
+        r"""Sets the body of this BatchModifyBandwidthRequest.
 
         :param body: The body of this BatchModifyBandwidthRequest.
         :type body: :class:`huaweicloudsdkeip.v2.ModifyBandwidthRequestBody`

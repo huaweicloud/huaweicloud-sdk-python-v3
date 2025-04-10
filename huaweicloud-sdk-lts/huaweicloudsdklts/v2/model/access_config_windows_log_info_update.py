@@ -29,7 +29,7 @@ class AccessConfigWindowsLogInfoUpdate:
     }
 
     def __init__(self, categorys=None, time_offset=None, event_level=None):
-        """AccessConfigWindowsLogInfoUpdate
+        r"""AccessConfigWindowsLogInfoUpdate
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccessConfigWindowsLogInfoUpdate:
 
     @property
     def categorys(self):
-        """Gets the categorys of this AccessConfigWindowsLogInfoUpdate.
+        r"""Gets the categorys of this AccessConfigWindowsLogInfoUpdate.
 
         采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
 
@@ -68,7 +68,7 @@ class AccessConfigWindowsLogInfoUpdate:
 
     @categorys.setter
     def categorys(self, categorys):
-        """Sets the categorys of this AccessConfigWindowsLogInfoUpdate.
+        r"""Sets the categorys of this AccessConfigWindowsLogInfoUpdate.
 
         采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
 
@@ -79,7 +79,7 @@ class AccessConfigWindowsLogInfoUpdate:
 
     @property
     def time_offset(self):
-        """Gets the time_offset of this AccessConfigWindowsLogInfoUpdate.
+        r"""Gets the time_offset of this AccessConfigWindowsLogInfoUpdate.
 
         :return: The time_offset of this AccessConfigWindowsLogInfoUpdate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
@@ -88,7 +88,7 @@ class AccessConfigWindowsLogInfoUpdate:
 
     @time_offset.setter
     def time_offset(self, time_offset):
-        """Sets the time_offset of this AccessConfigWindowsLogInfoUpdate.
+        r"""Sets the time_offset of this AccessConfigWindowsLogInfoUpdate.
 
         :param time_offset: The time_offset of this AccessConfigWindowsLogInfoUpdate.
         :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
@@ -97,7 +97,7 @@ class AccessConfigWindowsLogInfoUpdate:
 
     @property
     def event_level(self):
-        """Gets the event_level of this AccessConfigWindowsLogInfoUpdate.
+        r"""Gets the event_level of this AccessConfigWindowsLogInfoUpdate.
 
         事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
 
@@ -108,7 +108,7 @@ class AccessConfigWindowsLogInfoUpdate:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this AccessConfigWindowsLogInfoUpdate.
+        r"""Sets the event_level of this AccessConfigWindowsLogInfoUpdate.
 
         事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
 

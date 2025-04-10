@@ -32,7 +32,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
     }
 
     def __init__(self, testcases=None, total_count=None, page_no=None, page_size=None):
-        """ListTestcasesByProjectIssuesRelationResponse
+        r"""ListTestcasesByProjectIssuesRelationResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @property
     def testcases(self):
-        """Gets the testcases of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Gets the testcases of this ListTestcasesByProjectIssuesRelationResponse.
 
         用例详情
 
@@ -76,7 +76,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @testcases.setter
     def testcases(self, testcases):
-        """Sets the testcases of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Sets the testcases of this ListTestcasesByProjectIssuesRelationResponse.
 
         用例详情
 
@@ -87,7 +87,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Gets the total_count of this ListTestcasesByProjectIssuesRelationResponse.
 
         用例总数
 
@@ -98,7 +98,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Sets the total_count of this ListTestcasesByProjectIssuesRelationResponse.
 
         用例总数
 
@@ -109,7 +109,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Gets the page_no of this ListTestcasesByProjectIssuesRelationResponse.
 
         页码
 
@@ -120,7 +120,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Sets the page_no of this ListTestcasesByProjectIssuesRelationResponse.
 
         页码
 
@@ -131,7 +131,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Gets the page_size of this ListTestcasesByProjectIssuesRelationResponse.
 
         每页数量
 
@@ -142,7 +142,7 @@ class ListTestcasesByProjectIssuesRelationResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTestcasesByProjectIssuesRelationResponse.
+        r"""Sets the page_size of this ListTestcasesByProjectIssuesRelationResponse.
 
         每页数量
 

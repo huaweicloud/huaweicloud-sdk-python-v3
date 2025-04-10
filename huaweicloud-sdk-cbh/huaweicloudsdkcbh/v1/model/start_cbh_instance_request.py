@@ -25,7 +25,7 @@ class StartCbhInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """StartCbhInstanceRequest
+        r"""StartCbhInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartCbhInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartCbhInstanceRequest.
+        r"""Gets the body of this StartCbhInstanceRequest.
 
         :return: The body of this StartCbhInstanceRequest.
         :rtype: :class:`huaweicloudsdkcbh.v1.StartCbhRequestBody`
@@ -52,7 +52,7 @@ class StartCbhInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartCbhInstanceRequest.
+        r"""Sets the body of this StartCbhInstanceRequest.
 
         :param body: The body of this StartCbhInstanceRequest.
         :type body: :class:`huaweicloudsdkcbh.v1.StartCbhRequestBody`

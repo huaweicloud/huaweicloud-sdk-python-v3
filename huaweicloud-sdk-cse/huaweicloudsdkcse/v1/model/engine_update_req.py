@@ -25,7 +25,7 @@ class EngineUpdateReq:
     }
 
     def __init__(self, version=None):
-        """EngineUpdateReq
+        r"""EngineUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EngineUpdateReq:
 
     @property
     def version(self):
-        """Gets the version of this EngineUpdateReq.
+        r"""Gets the version of this EngineUpdateReq.
 
         版本号
 
@@ -53,7 +53,7 @@ class EngineUpdateReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EngineUpdateReq.
+        r"""Sets the version of this EngineUpdateReq.
 
         版本号
 

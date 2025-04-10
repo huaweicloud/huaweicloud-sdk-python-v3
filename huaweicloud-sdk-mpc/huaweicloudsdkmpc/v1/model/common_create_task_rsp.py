@@ -25,7 +25,7 @@ class CommonCreateTaskRsp:
     }
 
     def __init__(self, task_id=None):
-        """CommonCreateTaskRsp
+        r"""CommonCreateTaskRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommonCreateTaskRsp:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CommonCreateTaskRsp.
+        r"""Gets the task_id of this CommonCreateTaskRsp.
 
         任务ID 
 
@@ -54,7 +54,7 @@ class CommonCreateTaskRsp:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CommonCreateTaskRsp.
+        r"""Sets the task_id of this CommonCreateTaskRsp.
 
         任务ID 
 

@@ -33,7 +33,7 @@ class ServiceItemListResponseDtoDataRecords:
     }
 
     def __init__(self, item_id=None, protocol=None, source_port=None, dest_port=None, description=None):
-        """ServiceItemListResponseDtoDataRecords
+        r"""ServiceItemListResponseDtoDataRecords
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @property
     def item_id(self):
-        """Gets the item_id of this ServiceItemListResponseDtoDataRecords.
+        r"""Gets the item_id of this ServiceItemListResponseDtoDataRecords.
 
         服务成员id
 
@@ -82,7 +82,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this ServiceItemListResponseDtoDataRecords.
+        r"""Sets the item_id of this ServiceItemListResponseDtoDataRecords.
 
         服务成员id
 
@@ -93,7 +93,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ServiceItemListResponseDtoDataRecords.
+        r"""Gets the protocol of this ServiceItemListResponseDtoDataRecords.
 
         协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
 
@@ -104,7 +104,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ServiceItemListResponseDtoDataRecords.
+        r"""Sets the protocol of this ServiceItemListResponseDtoDataRecords.
 
         协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
 
@@ -115,7 +115,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @property
     def source_port(self):
-        """Gets the source_port of this ServiceItemListResponseDtoDataRecords.
+        r"""Gets the source_port of this ServiceItemListResponseDtoDataRecords.
 
         源端口
 
@@ -126,7 +126,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this ServiceItemListResponseDtoDataRecords.
+        r"""Sets the source_port of this ServiceItemListResponseDtoDataRecords.
 
         源端口
 
@@ -137,7 +137,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this ServiceItemListResponseDtoDataRecords.
+        r"""Gets the dest_port of this ServiceItemListResponseDtoDataRecords.
 
         目的端口
 
@@ -148,7 +148,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this ServiceItemListResponseDtoDataRecords.
+        r"""Sets the dest_port of this ServiceItemListResponseDtoDataRecords.
 
         目的端口
 
@@ -159,7 +159,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @property
     def description(self):
-        """Gets the description of this ServiceItemListResponseDtoDataRecords.
+        r"""Gets the description of this ServiceItemListResponseDtoDataRecords.
 
         服务成员描述
 
@@ -170,7 +170,7 @@ class ServiceItemListResponseDtoDataRecords:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceItemListResponseDtoDataRecords.
+        r"""Sets the description of this ServiceItemListResponseDtoDataRecords.
 
         服务成员描述
 

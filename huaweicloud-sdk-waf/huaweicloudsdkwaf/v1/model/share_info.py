@@ -29,7 +29,7 @@ class ShareInfo:
     }
 
     def __init__(self, share_count=None, accept_count=None, process_status=None):
-        """ShareInfo
+        r"""ShareInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShareInfo:
 
     @property
     def share_count(self):
-        """Gets the share_count of this ShareInfo.
+        r"""Gets the share_count of this ShareInfo.
 
         共享用户数
 
@@ -68,7 +68,7 @@ class ShareInfo:
 
     @share_count.setter
     def share_count(self, share_count):
-        """Sets the share_count of this ShareInfo.
+        r"""Sets the share_count of this ShareInfo.
 
         共享用户数
 
@@ -79,7 +79,7 @@ class ShareInfo:
 
     @property
     def accept_count(self):
-        """Gets the accept_count of this ShareInfo.
+        r"""Gets the accept_count of this ShareInfo.
 
         接受用户数
 
@@ -90,7 +90,7 @@ class ShareInfo:
 
     @accept_count.setter
     def accept_count(self, accept_count):
-        """Sets the accept_count of this ShareInfo.
+        r"""Sets the accept_count of this ShareInfo.
 
         接受用户数
 
@@ -101,7 +101,7 @@ class ShareInfo:
 
     @property
     def process_status(self):
-        """Gets the process_status of this ShareInfo.
+        r"""Gets the process_status of this ShareInfo.
 
         处理状态
 
@@ -112,7 +112,7 @@ class ShareInfo:
 
     @process_status.setter
     def process_status(self, process_status):
-        """Sets the process_status of this ShareInfo.
+        r"""Sets the process_status of this ShareInfo.
 
         处理状态
 

@@ -31,7 +31,7 @@ class ShowStorageUsageRequest:
     }
 
     def __init__(self, limit=None, offset=None, resource_id=None, resource_type=None):
-        """ShowStorageUsageRequest
+        r"""ShowStorageUsageRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowStorageUsageRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowStorageUsageRequest.
+        r"""Gets the limit of this ShowStorageUsageRequest.
 
         查询条数
 
@@ -75,7 +75,7 @@ class ShowStorageUsageRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowStorageUsageRequest.
+        r"""Sets the limit of this ShowStorageUsageRequest.
 
         查询条数
 
@@ -86,7 +86,7 @@ class ShowStorageUsageRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowStorageUsageRequest.
+        r"""Gets the offset of this ShowStorageUsageRequest.
 
         偏移值
 
@@ -97,7 +97,7 @@ class ShowStorageUsageRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowStorageUsageRequest.
+        r"""Sets the offset of this ShowStorageUsageRequest.
 
         偏移值
 
@@ -108,7 +108,7 @@ class ShowStorageUsageRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowStorageUsageRequest.
+        r"""Gets the resource_id of this ShowStorageUsageRequest.
 
         支持按照备份对象ID过滤
 
@@ -119,7 +119,7 @@ class ShowStorageUsageRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowStorageUsageRequest.
+        r"""Sets the resource_id of this ShowStorageUsageRequest.
 
         支持按照备份对象ID过滤
 
@@ -130,7 +130,7 @@ class ShowStorageUsageRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowStorageUsageRequest.
+        r"""Gets the resource_type of this ShowStorageUsageRequest.
 
         支持按照备份对象类型过滤
 
@@ -141,7 +141,7 @@ class ShowStorageUsageRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowStorageUsageRequest.
+        r"""Sets the resource_type of this ShowStorageUsageRequest.
 
         支持按照备份对象类型过滤
 

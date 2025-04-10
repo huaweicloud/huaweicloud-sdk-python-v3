@@ -27,7 +27,7 @@ class CreateSecurityAssignedQueueRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateSecurityAssignedQueueRequest
+        r"""CreateSecurityAssignedQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecurityAssignedQueueRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityAssignedQueueRequest.
+        r"""Gets the workspace of this CreateSecurityAssignedQueueRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateSecurityAssignedQueueRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityAssignedQueueRequest.
+        r"""Sets the workspace of this CreateSecurityAssignedQueueRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateSecurityAssignedQueueRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityAssignedQueueRequest.
+        r"""Gets the body of this CreateSecurityAssignedQueueRequest.
 
         :return: The body of this CreateSecurityAssignedQueueRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.QueueSrcAssignCreateDTO`
@@ -80,7 +80,7 @@ class CreateSecurityAssignedQueueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityAssignedQueueRequest.
+        r"""Sets the body of this CreateSecurityAssignedQueueRequest.
 
         :param body: The body of this CreateSecurityAssignedQueueRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.QueueSrcAssignCreateDTO`

@@ -25,7 +25,7 @@ class ShowPolicyAndInstanceQuotaRequest:
     }
 
     def __init__(self, scaling_group_id=None):
-        """ShowPolicyAndInstanceQuotaRequest
+        r"""ShowPolicyAndInstanceQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPolicyAndInstanceQuotaRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
+        r"""Gets the scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
 
         伸缩组ID。
 
@@ -53,7 +53,7 @@ class ShowPolicyAndInstanceQuotaRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
+        r"""Sets the scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
 
         伸缩组ID。
 

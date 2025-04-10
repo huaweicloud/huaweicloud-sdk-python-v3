@@ -27,7 +27,7 @@ class CreateSecrecyLevelDTO:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateSecrecyLevelDTO
+        r"""CreateSecrecyLevelDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSecrecyLevelDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateSecrecyLevelDTO.
+        r"""Gets the name of this CreateSecrecyLevelDTO.
 
         密级名称。名称应该唯一，只能由英文字母、数字、下划线、汉字构成。
 
@@ -61,7 +61,7 @@ class CreateSecrecyLevelDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSecrecyLevelDTO.
+        r"""Sets the name of this CreateSecrecyLevelDTO.
 
         密级名称。名称应该唯一，只能由英文字母、数字、下划线、汉字构成。
 
@@ -72,7 +72,7 @@ class CreateSecrecyLevelDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateSecrecyLevelDTO.
+        r"""Gets the description of this CreateSecrecyLevelDTO.
 
         密级描述
 
@@ -83,7 +83,7 @@ class CreateSecrecyLevelDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSecrecyLevelDTO.
+        r"""Sets the description of this CreateSecrecyLevelDTO.
 
         密级描述
 

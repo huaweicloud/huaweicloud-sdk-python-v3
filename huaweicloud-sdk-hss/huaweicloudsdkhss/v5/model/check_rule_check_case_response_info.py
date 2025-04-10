@@ -29,7 +29,7 @@ class CheckRuleCheckCaseResponseInfo:
     }
 
     def __init__(self, check_description=None, current_value=None, suggest_value=None):
-        """CheckRuleCheckCaseResponseInfo
+        r"""CheckRuleCheckCaseResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckRuleCheckCaseResponseInfo:
 
     @property
     def check_description(self):
-        """Gets the check_description of this CheckRuleCheckCaseResponseInfo.
+        r"""Gets the check_description of this CheckRuleCheckCaseResponseInfo.
 
         检测用例描述
 
@@ -68,7 +68,7 @@ class CheckRuleCheckCaseResponseInfo:
 
     @check_description.setter
     def check_description(self, check_description):
-        """Sets the check_description of this CheckRuleCheckCaseResponseInfo.
+        r"""Sets the check_description of this CheckRuleCheckCaseResponseInfo.
 
         检测用例描述
 
@@ -79,7 +79,7 @@ class CheckRuleCheckCaseResponseInfo:
 
     @property
     def current_value(self):
-        """Gets the current_value of this CheckRuleCheckCaseResponseInfo.
+        r"""Gets the current_value of this CheckRuleCheckCaseResponseInfo.
 
         当前结果
 
@@ -90,7 +90,7 @@ class CheckRuleCheckCaseResponseInfo:
 
     @current_value.setter
     def current_value(self, current_value):
-        """Sets the current_value of this CheckRuleCheckCaseResponseInfo.
+        r"""Sets the current_value of this CheckRuleCheckCaseResponseInfo.
 
         当前结果
 
@@ -101,7 +101,7 @@ class CheckRuleCheckCaseResponseInfo:
 
     @property
     def suggest_value(self):
-        """Gets the suggest_value of this CheckRuleCheckCaseResponseInfo.
+        r"""Gets the suggest_value of this CheckRuleCheckCaseResponseInfo.
 
         期待结果
 
@@ -112,7 +112,7 @@ class CheckRuleCheckCaseResponseInfo:
 
     @suggest_value.setter
     def suggest_value(self, suggest_value):
-        """Sets the suggest_value of this CheckRuleCheckCaseResponseInfo.
+        r"""Sets the suggest_value of this CheckRuleCheckCaseResponseInfo.
 
         期待结果
 

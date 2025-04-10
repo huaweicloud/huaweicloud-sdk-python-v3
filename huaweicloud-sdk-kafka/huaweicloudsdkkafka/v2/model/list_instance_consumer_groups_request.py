@@ -31,7 +31,7 @@ class ListInstanceConsumerGroupsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, group=None):
-        """ListInstanceConsumerGroupsRequest
+        r"""ListInstanceConsumerGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceConsumerGroupsRequest.
+        r"""Gets the instance_id of this ListInstanceConsumerGroupsRequest.
 
         实例ID。
 
@@ -74,7 +74,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceConsumerGroupsRequest.
+        r"""Sets the instance_id of this ListInstanceConsumerGroupsRequest.
 
         实例ID。
 
@@ -85,7 +85,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceConsumerGroupsRequest.
+        r"""Gets the offset of this ListInstanceConsumerGroupsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -96,7 +96,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceConsumerGroupsRequest.
+        r"""Sets the offset of this ListInstanceConsumerGroupsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -107,7 +107,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceConsumerGroupsRequest.
+        r"""Gets the limit of this ListInstanceConsumerGroupsRequest.
 
         当次查询返回的最大消费组ID个数，默认值为10，取值范围为1~50。
 
@@ -118,7 +118,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceConsumerGroupsRequest.
+        r"""Sets the limit of this ListInstanceConsumerGroupsRequest.
 
         当次查询返回的最大消费组ID个数，默认值为10，取值范围为1~50。
 
@@ -129,7 +129,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @property
     def group(self):
-        """Gets the group of this ListInstanceConsumerGroupsRequest.
+        r"""Gets the group of this ListInstanceConsumerGroupsRequest.
 
         消费组名过滤查询，过滤方式为字段包含过滤。
 
@@ -140,7 +140,7 @@ class ListInstanceConsumerGroupsRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ListInstanceConsumerGroupsRequest.
+        r"""Sets the group of this ListInstanceConsumerGroupsRequest.
 
         消费组名过滤查询，过滤方式为字段包含过滤。
 

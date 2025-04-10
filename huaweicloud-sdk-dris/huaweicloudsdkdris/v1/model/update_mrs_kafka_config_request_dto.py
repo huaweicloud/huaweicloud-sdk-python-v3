@@ -35,7 +35,7 @@ class UpdateMrsKafkaConfigRequestDTO:
     }
 
     def __init__(self, user_topics=None, brokers=None, username=None, authentication=None, krb5_content=None, keytab_content=None):
-        """UpdateMrsKafkaConfigRequestDTO
+        r"""UpdateMrsKafkaConfigRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @property
     def user_topics(self):
-        """Gets the user_topics of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Gets the user_topics of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：用户订阅kafka的主题列表。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -89,7 +89,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @user_topics.setter
     def user_topics(self, user_topics):
-        """Sets the user_topics of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Sets the user_topics of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：用户订阅kafka的主题列表。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -100,7 +100,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @property
     def brokers(self):
-        """Gets the brokers of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Gets the brokers of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：用户mrskafka的brokers列表。
 
@@ -111,7 +111,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Sets the brokers of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：用户mrskafka的brokers列表。
 
@@ -122,7 +122,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @property
     def username(self):
-        """Gets the username of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Gets the username of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：mrskafka用户名，若开启安全认证该参数必填。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -133,7 +133,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Sets the username of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：mrskafka用户名，若开启安全认证该参数必填。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -144,7 +144,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @property
     def authentication(self):
-        """Gets the authentication of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Gets the authentication of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：是否开启kerberos安全认证的开关。若开启安全认证则需要先上传kerberos安全认证的凭证。
 
@@ -155,7 +155,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Sets the authentication of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：是否开启kerberos安全认证的开关。若开启安全认证则需要先上传kerberos安全认证的凭证。
 
@@ -166,7 +166,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @property
     def krb5_content(self):
-        """Gets the krb5_content of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Gets the krb5_content of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：若开启安全认证则需要先上传kerberos安全认证的krb5_file的凭证内容。
 
@@ -177,7 +177,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @krb5_content.setter
     def krb5_content(self, krb5_content):
-        """Sets the krb5_content of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Sets the krb5_content of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：若开启安全认证则需要先上传kerberos安全认证的krb5_file的凭证内容。
 
@@ -188,7 +188,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @property
     def keytab_content(self):
-        """Gets the keytab_content of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Gets the keytab_content of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：若开启安全认证则需要先上传kerberos安全认证的keytab_file的凭证内容。
 
@@ -199,7 +199,7 @@ class UpdateMrsKafkaConfigRequestDTO:
 
     @keytab_content.setter
     def keytab_content(self, keytab_content):
-        """Sets the keytab_content of this UpdateMrsKafkaConfigRequestDTO.
+        r"""Sets the keytab_content of this UpdateMrsKafkaConfigRequestDTO.
 
         **参数说明**：若开启安全认证则需要先上传kerberos安全认证的keytab_file的凭证内容。
 

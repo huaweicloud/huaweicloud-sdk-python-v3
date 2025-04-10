@@ -25,7 +25,7 @@ class AlterPartitionsInput:
     }
 
     def __init__(self, partition_inputs=None):
-        """AlterPartitionsInput
+        r"""AlterPartitionsInput
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AlterPartitionsInput:
 
     @property
     def partition_inputs(self):
-        """Gets the partition_inputs of this AlterPartitionsInput.
+        r"""Gets the partition_inputs of this AlterPartitionsInput.
 
         批量修改分区对象数组
 
@@ -53,7 +53,7 @@ class AlterPartitionsInput:
 
     @partition_inputs.setter
     def partition_inputs(self, partition_inputs):
-        """Sets the partition_inputs of this AlterPartitionsInput.
+        r"""Sets the partition_inputs of this AlterPartitionsInput.
 
         批量修改分区对象数组
 

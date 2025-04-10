@@ -25,7 +25,7 @@ class ShowDatasourceConnectionRequest:
     }
 
     def __init__(self, connection_id=None):
-        """ShowDatasourceConnectionRequest
+        r"""ShowDatasourceConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDatasourceConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowDatasourceConnectionRequest.
+        r"""Gets the connection_id of this ShowDatasourceConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -53,7 +53,7 @@ class ShowDatasourceConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowDatasourceConnectionRequest.
+        r"""Sets the connection_id of this ShowDatasourceConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 

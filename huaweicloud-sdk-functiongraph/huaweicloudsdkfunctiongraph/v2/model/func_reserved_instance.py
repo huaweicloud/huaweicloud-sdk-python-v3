@@ -27,7 +27,7 @@ class FuncReservedInstance:
     }
 
     def __init__(self, func_urn=None, count=None):
-        """FuncReservedInstance
+        r"""FuncReservedInstance
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FuncReservedInstance:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this FuncReservedInstance.
+        r"""Gets the func_urn of this FuncReservedInstance.
 
         函数urn
 
@@ -59,7 +59,7 @@ class FuncReservedInstance:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this FuncReservedInstance.
+        r"""Sets the func_urn of this FuncReservedInstance.
 
         函数urn
 
@@ -70,7 +70,7 @@ class FuncReservedInstance:
 
     @property
     def count(self):
-        """Gets the count of this FuncReservedInstance.
+        r"""Gets the count of this FuncReservedInstance.
 
         预留实例数目
 
@@ -81,7 +81,7 @@ class FuncReservedInstance:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this FuncReservedInstance.
+        r"""Sets the count of this FuncReservedInstance.
 
         预留实例数目
 

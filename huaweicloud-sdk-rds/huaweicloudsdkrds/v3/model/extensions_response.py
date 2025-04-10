@@ -37,7 +37,7 @@ class ExtensionsResponse:
     }
 
     def __init__(self, name=None, database_name=None, version=None, version_update=None, shared_preload_libraries=None, created=None, description=None):
-        """ExtensionsResponse
+        r"""ExtensionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExtensionsResponse:
 
     @property
     def name(self):
-        """Gets the name of this ExtensionsResponse.
+        r"""Gets the name of this ExtensionsResponse.
 
         插件名称。
 
@@ -96,7 +96,7 @@ class ExtensionsResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtensionsResponse.
+        r"""Sets the name of this ExtensionsResponse.
 
         插件名称。
 
@@ -107,7 +107,7 @@ class ExtensionsResponse:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ExtensionsResponse.
+        r"""Gets the database_name of this ExtensionsResponse.
 
         数据库名称。
 
@@ -118,7 +118,7 @@ class ExtensionsResponse:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ExtensionsResponse.
+        r"""Sets the database_name of this ExtensionsResponse.
 
         数据库名称。
 
@@ -129,7 +129,7 @@ class ExtensionsResponse:
 
     @property
     def version(self):
-        """Gets the version of this ExtensionsResponse.
+        r"""Gets the version of this ExtensionsResponse.
 
         插件版本。
 
@@ -140,7 +140,7 @@ class ExtensionsResponse:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ExtensionsResponse.
+        r"""Sets the version of this ExtensionsResponse.
 
         插件版本。
 
@@ -151,7 +151,7 @@ class ExtensionsResponse:
 
     @property
     def version_update(self):
-        """Gets the version_update of this ExtensionsResponse.
+        r"""Gets the version_update of this ExtensionsResponse.
 
         可更新插件版本
 
@@ -162,7 +162,7 @@ class ExtensionsResponse:
 
     @version_update.setter
     def version_update(self, version_update):
-        """Sets the version_update of this ExtensionsResponse.
+        r"""Sets the version_update of this ExtensionsResponse.
 
         可更新插件版本
 
@@ -173,7 +173,7 @@ class ExtensionsResponse:
 
     @property
     def shared_preload_libraries(self):
-        """Gets the shared_preload_libraries of this ExtensionsResponse.
+        r"""Gets the shared_preload_libraries of this ExtensionsResponse.
 
         依赖预加载库。
 
@@ -184,7 +184,7 @@ class ExtensionsResponse:
 
     @shared_preload_libraries.setter
     def shared_preload_libraries(self, shared_preload_libraries):
-        """Sets the shared_preload_libraries of this ExtensionsResponse.
+        r"""Sets the shared_preload_libraries of this ExtensionsResponse.
 
         依赖预加载库。
 
@@ -195,7 +195,7 @@ class ExtensionsResponse:
 
     @property
     def created(self):
-        """Gets the created of this ExtensionsResponse.
+        r"""Gets the created of this ExtensionsResponse.
 
         是否创建。
 
@@ -206,7 +206,7 @@ class ExtensionsResponse:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ExtensionsResponse.
+        r"""Sets the created of this ExtensionsResponse.
 
         是否创建。
 
@@ -217,7 +217,7 @@ class ExtensionsResponse:
 
     @property
     def description(self):
-        """Gets the description of this ExtensionsResponse.
+        r"""Gets the description of this ExtensionsResponse.
 
         插件描述。
 
@@ -228,7 +228,7 @@ class ExtensionsResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExtensionsResponse.
+        r"""Sets the description of this ExtensionsResponse.
 
         插件描述。
 

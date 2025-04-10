@@ -38,7 +38,7 @@ class ShowRoomSettingResponse(SdkResponse):
     }
 
     def __init__(self, room_introduce=None, crop_logo_id=None, cover_picture_id=None, show_audience_mode=None, is_redouble_open=None, base_audience_count=None, multiple=None):
-        """ShowRoomSettingResponse
+        r"""ShowRoomSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def room_introduce(self):
-        """Gets the room_introduce of this ShowRoomSettingResponse.
+        r"""Gets the room_introduce of this ShowRoomSettingResponse.
 
         网络研讨会介绍。
 
@@ -97,7 +97,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @room_introduce.setter
     def room_introduce(self, room_introduce):
-        """Sets the room_introduce of this ShowRoomSettingResponse.
+        r"""Sets the room_introduce of this ShowRoomSettingResponse.
 
         网络研讨会介绍。
 
@@ -108,7 +108,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def crop_logo_id(self):
-        """Gets the crop_logo_id of this ShowRoomSettingResponse.
+        r"""Gets the crop_logo_id of this ShowRoomSettingResponse.
 
         企业Logo的文件id。
 
@@ -119,7 +119,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @crop_logo_id.setter
     def crop_logo_id(self, crop_logo_id):
-        """Sets the crop_logo_id of this ShowRoomSettingResponse.
+        r"""Sets the crop_logo_id of this ShowRoomSettingResponse.
 
         企业Logo的文件id。
 
@@ -130,7 +130,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def cover_picture_id(self):
-        """Gets the cover_picture_id of this ShowRoomSettingResponse.
+        r"""Gets the cover_picture_id of this ShowRoomSettingResponse.
 
         欢迎界面的文件id。
 
@@ -141,7 +141,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @cover_picture_id.setter
     def cover_picture_id(self, cover_picture_id):
-        """Sets the cover_picture_id of this ShowRoomSettingResponse.
+        r"""Sets the cover_picture_id of this ShowRoomSettingResponse.
 
         欢迎界面的文件id。
 
@@ -152,7 +152,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def show_audience_mode(self):
-        """Gets the show_audience_mode of this ShowRoomSettingResponse.
+        r"""Gets the show_audience_mode of this ShowRoomSettingResponse.
 
         显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
 
@@ -163,7 +163,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @show_audience_mode.setter
     def show_audience_mode(self, show_audience_mode):
-        """Sets the show_audience_mode of this ShowRoomSettingResponse.
+        r"""Sets the show_audience_mode of this ShowRoomSettingResponse.
 
         显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
 
@@ -174,7 +174,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def is_redouble_open(self):
-        """Gets the is_redouble_open of this ShowRoomSettingResponse.
+        r"""Gets the is_redouble_open of this ShowRoomSettingResponse.
 
         智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
 
@@ -185,7 +185,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @is_redouble_open.setter
     def is_redouble_open(self, is_redouble_open):
-        """Sets the is_redouble_open of this ShowRoomSettingResponse.
+        r"""Sets the is_redouble_open of this ShowRoomSettingResponse.
 
         智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
 
@@ -196,7 +196,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def base_audience_count(self):
-        """Gets the base_audience_count of this ShowRoomSettingResponse.
+        r"""Gets the base_audience_count of this ShowRoomSettingResponse.
 
         基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
 
@@ -207,7 +207,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @base_audience_count.setter
     def base_audience_count(self, base_audience_count):
-        """Sets the base_audience_count of this ShowRoomSettingResponse.
+        r"""Sets the base_audience_count of this ShowRoomSettingResponse.
 
         基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
 
@@ -218,7 +218,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @property
     def multiple(self):
-        """Gets the multiple of this ShowRoomSettingResponse.
+        r"""Gets the multiple of this ShowRoomSettingResponse.
 
         设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
 
@@ -229,7 +229,7 @@ class ShowRoomSettingResponse(SdkResponse):
 
     @multiple.setter
     def multiple(self, multiple):
-        """Sets the multiple of this ShowRoomSettingResponse.
+        r"""Sets the multiple of this ShowRoomSettingResponse.
 
         设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
 

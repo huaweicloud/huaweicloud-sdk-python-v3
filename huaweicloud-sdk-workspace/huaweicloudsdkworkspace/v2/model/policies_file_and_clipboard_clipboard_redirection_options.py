@@ -27,7 +27,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
     }
 
     def __init__(self, rich_text_redirection_enable=None, clipboard_file_redirection_enable=None):
-        """PoliciesFileAndClipboardClipboardRedirectionOptions
+        r"""PoliciesFileAndClipboardClipboardRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def rich_text_redirection_enable(self):
-        """Gets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板富文本重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @rich_text_redirection_enable.setter
     def rich_text_redirection_enable(self, rich_text_redirection_enable):
-        """Sets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the rich_text_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板富文本重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @property
     def clipboard_file_redirection_enable(self):
-        """Gets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Gets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板文件重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -83,7 +83,7 @@ class PoliciesFileAndClipboardClipboardRedirectionOptions:
 
     @clipboard_file_redirection_enable.setter
     def clipboard_file_redirection_enable(self, clipboard_file_redirection_enable):
-        """Sets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
+        r"""Sets the clipboard_file_redirection_enable of this PoliciesFileAndClipboardClipboardRedirectionOptions.
 
         是否开启剪切板文件重定向。取值为： false：表示关闭。 true：表示开启。
 

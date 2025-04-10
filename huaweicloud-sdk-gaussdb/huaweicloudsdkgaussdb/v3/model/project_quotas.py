@@ -25,7 +25,7 @@ class ProjectQuotas:
     }
 
     def __init__(self, resources=None):
-        """ProjectQuotas
+        r"""ProjectQuotas
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProjectQuotas:
 
     @property
     def resources(self):
-        """Gets the resources of this ProjectQuotas.
+        r"""Gets the resources of this ProjectQuotas.
 
         资源列表对象。
 
@@ -53,7 +53,7 @@ class ProjectQuotas:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ProjectQuotas.
+        r"""Sets the resources of this ProjectQuotas.
 
         资源列表对象。
 

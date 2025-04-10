@@ -28,7 +28,7 @@ class AcceptHandshakeRequest:
     }
 
     def __init__(self, x_security_token=None, handshake_id=None):
-        """AcceptHandshakeRequest
+        r"""AcceptHandshakeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AcceptHandshakeRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this AcceptHandshakeRequest.
+        r"""Gets the x_security_token of this AcceptHandshakeRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class AcceptHandshakeRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this AcceptHandshakeRequest.
+        r"""Sets the x_security_token of this AcceptHandshakeRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class AcceptHandshakeRequest:
 
     @property
     def handshake_id(self):
-        """Gets the handshake_id of this AcceptHandshakeRequest.
+        r"""Gets the handshake_id of this AcceptHandshakeRequest.
 
         邀请的唯一标识符（ID）。账号在发起邀请时创建ID。
 
@@ -83,7 +83,7 @@ class AcceptHandshakeRequest:
 
     @handshake_id.setter
     def handshake_id(self, handshake_id):
-        """Sets the handshake_id of this AcceptHandshakeRequest.
+        r"""Sets the handshake_id of this AcceptHandshakeRequest.
 
         邀请的唯一标识符（ID）。账号在发起邀请时创建ID。
 

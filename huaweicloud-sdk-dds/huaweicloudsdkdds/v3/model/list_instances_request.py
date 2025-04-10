@@ -41,7 +41,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, id=None, name=None, mode=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListInstancesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListInstancesRequest.
+        r"""Gets the id of this ListInstancesRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -110,7 +110,7 @@ class ListInstancesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstancesRequest.
+        r"""Sets the id of this ListInstancesRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -121,7 +121,7 @@ class ListInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesRequest.
+        r"""Gets the name of this ListInstancesRequest.
 
         实例名称。 如果name以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的name精确匹配查询。 - “*”为系统保留字符，不能只传入该字符。
 
@@ -132,7 +132,7 @@ class ListInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesRequest.
+        r"""Sets the name of this ListInstancesRequest.
 
         实例名称。 如果name以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的name精确匹配查询。 - “*”为系统保留字符，不能只传入该字符。
 
@@ -143,7 +143,7 @@ class ListInstancesRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this ListInstancesRequest.
+        r"""Gets the mode of this ListInstancesRequest.
 
         实例类型。 - 取值为“Sharding”，表示集群实例。 - 取值为“ReplicaSet”，表示副本集实例。 - 取值为“Single”，表示单节点实例。
 
@@ -154,7 +154,7 @@ class ListInstancesRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ListInstancesRequest.
+        r"""Sets the mode of this ListInstancesRequest.
 
         实例类型。 - 取值为“Sharding”，表示集群实例。 - 取值为“ReplicaSet”，表示副本集实例。 - 取值为“Single”，表示单节点实例。
 
@@ -165,7 +165,7 @@ class ListInstancesRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListInstancesRequest.
+        r"""Gets the datastore_type of this ListInstancesRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 
@@ -176,7 +176,7 @@ class ListInstancesRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListInstancesRequest.
+        r"""Sets the datastore_type of this ListInstancesRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 
@@ -187,7 +187,7 @@ class ListInstancesRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListInstancesRequest.
+        r"""Gets the vpc_id of this ListInstancesRequest.
 
         虚拟私有云ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云的ID。
 
@@ -198,7 +198,7 @@ class ListInstancesRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListInstancesRequest.
+        r"""Sets the vpc_id of this ListInstancesRequest.
 
         虚拟私有云ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云的ID。
 
@@ -209,7 +209,7 @@ class ListInstancesRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListInstancesRequest.
+        r"""Gets the subnet_id of this ListInstancesRequest.
 
         子网的网络ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云下子网的网络ID。
 
@@ -220,7 +220,7 @@ class ListInstancesRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListInstancesRequest.
+        r"""Sets the subnet_id of this ListInstancesRequest.
 
         子网的网络ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云下子网的网络ID。
 
@@ -231,7 +231,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         索引位置偏移量，表示从指定project ID下最新的实例创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新的实例创建时间对应的实例开始查询。
 
@@ -242,7 +242,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         索引位置偏移量，表示从指定project ID下最新的实例创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新的实例创建时间对应的实例开始查询。
 
@@ -253,7 +253,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
@@ -264,7 +264,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
@@ -275,7 +275,7 @@ class ListInstancesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInstancesRequest.
+        r"""Gets the tags of this ListInstancesRequest.
 
         根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含20组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
 
@@ -286,7 +286,7 @@ class ListInstancesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInstancesRequest.
+        r"""Sets the tags of this ListInstancesRequest.
 
         根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含20组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
 

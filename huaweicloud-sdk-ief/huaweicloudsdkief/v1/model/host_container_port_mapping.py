@@ -31,7 +31,7 @@ class HostContainerPortMapping:
     }
 
     def __init__(self, container_port=None, host_port=None, host_ip=None, host_port_range=None):
-        """HostContainerPortMapping
+        r"""HostContainerPortMapping
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class HostContainerPortMapping:
 
     @property
     def container_port(self):
-        """Gets the container_port of this HostContainerPortMapping.
+        r"""Gets the container_port of this HostContainerPortMapping.
 
         构成一堆映射的容器端口
 
@@ -74,7 +74,7 @@ class HostContainerPortMapping:
 
     @container_port.setter
     def container_port(self, container_port):
-        """Sets the container_port of this HostContainerPortMapping.
+        r"""Sets the container_port of this HostContainerPortMapping.
 
         构成一堆映射的容器端口
 
@@ -85,7 +85,7 @@ class HostContainerPortMapping:
 
     @property
     def host_port(self):
-        """Gets the host_port of this HostContainerPortMapping.
+        r"""Gets the host_port of this HostContainerPortMapping.
 
         构成一对映射的物理机对应网卡端口
 
@@ -96,7 +96,7 @@ class HostContainerPortMapping:
 
     @host_port.setter
     def host_port(self, host_port):
-        """Sets the host_port of this HostContainerPortMapping.
+        r"""Sets the host_port of this HostContainerPortMapping.
 
         构成一对映射的物理机对应网卡端口
 
@@ -107,7 +107,7 @@ class HostContainerPortMapping:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this HostContainerPortMapping.
+        r"""Gets the host_ip of this HostContainerPortMapping.
 
         对应网卡地址
 
@@ -118,7 +118,7 @@ class HostContainerPortMapping:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this HostContainerPortMapping.
+        r"""Sets the host_ip of this HostContainerPortMapping.
 
         对应网卡地址
 
@@ -129,7 +129,7 @@ class HostContainerPortMapping:
 
     @property
     def host_port_range(self):
-        """Gets the host_port_range of this HostContainerPortMapping.
+        r"""Gets the host_port_range of this HostContainerPortMapping.
 
         :return: The host_port_range of this HostContainerPortMapping.
         :rtype: :class:`huaweicloudsdkief.v1.HostPortRange`
@@ -138,7 +138,7 @@ class HostContainerPortMapping:
 
     @host_port_range.setter
     def host_port_range(self, host_port_range):
-        """Sets the host_port_range of this HostContainerPortMapping.
+        r"""Sets the host_port_range of this HostContainerPortMapping.
 
         :param host_port_range: The host_port_range of this HostContainerPortMapping.
         :type host_port_range: :class:`huaweicloudsdkief.v1.HostPortRange`

@@ -27,7 +27,7 @@ class RestartLogicalClusterRequest:
     }
 
     def __init__(self, cluster_id=None, logical_cluster_id=None):
-        """RestartLogicalClusterRequest
+        r"""RestartLogicalClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestartLogicalClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RestartLogicalClusterRequest.
+        r"""Gets the cluster_id of this RestartLogicalClusterRequest.
 
         指定重启集群的ID
 
@@ -59,7 +59,7 @@ class RestartLogicalClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RestartLogicalClusterRequest.
+        r"""Sets the cluster_id of this RestartLogicalClusterRequest.
 
         指定重启集群的ID
 
@@ -70,7 +70,7 @@ class RestartLogicalClusterRequest:
 
     @property
     def logical_cluster_id(self):
-        """Gets the logical_cluster_id of this RestartLogicalClusterRequest.
+        r"""Gets the logical_cluster_id of this RestartLogicalClusterRequest.
 
         指定待重启逻辑集群的ID
 
@@ -81,7 +81,7 @@ class RestartLogicalClusterRequest:
 
     @logical_cluster_id.setter
     def logical_cluster_id(self, logical_cluster_id):
-        """Sets the logical_cluster_id of this RestartLogicalClusterRequest.
+        r"""Sets the logical_cluster_id of this RestartLogicalClusterRequest.
 
         指定待重启逻辑集群的ID
 

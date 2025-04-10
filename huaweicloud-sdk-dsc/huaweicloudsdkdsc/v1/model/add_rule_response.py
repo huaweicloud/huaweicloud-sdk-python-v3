@@ -28,7 +28,7 @@ class AddRuleResponse(SdkResponse):
     }
 
     def __init__(self, msg=None, status=None):
-        """AddRuleResponse
+        r"""AddRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddRuleResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this AddRuleResponse.
+        r"""Gets the msg of this AddRuleResponse.
 
         返回消息
 
@@ -62,7 +62,7 @@ class AddRuleResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this AddRuleResponse.
+        r"""Sets the msg of this AddRuleResponse.
 
         返回消息
 
@@ -73,7 +73,7 @@ class AddRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddRuleResponse.
+        r"""Gets the status of this AddRuleResponse.
 
         返回状态，如'200','400'
 
@@ -84,7 +84,7 @@ class AddRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddRuleResponse.
+        r"""Sets the status of this AddRuleResponse.
 
         返回状态，如'200','400'
 

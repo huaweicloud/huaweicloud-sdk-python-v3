@@ -27,7 +27,7 @@ class RangeParam:
     }
 
     def __init__(self, _from=None, to=None):
-        """RangeParam
+        r"""RangeParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RangeParam:
 
     @property
     def _from(self):
-        """Gets the _from of this RangeParam.
+        r"""Gets the _from of this RangeParam.
 
         数值下界，默认包含该下界。
 
@@ -61,7 +61,7 @@ class RangeParam:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this RangeParam.
+        r"""Sets the _from of this RangeParam.
 
         数值下界，默认包含该下界。
 
@@ -72,7 +72,7 @@ class RangeParam:
 
     @property
     def to(self):
-        """Gets the to of this RangeParam.
+        r"""Gets the to of this RangeParam.
 
         数值上界，默认包含该上界。
 
@@ -83,7 +83,7 @@ class RangeParam:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this RangeParam.
+        r"""Sets the to of this RangeParam.
 
         数值上界，默认包含该上界。
 

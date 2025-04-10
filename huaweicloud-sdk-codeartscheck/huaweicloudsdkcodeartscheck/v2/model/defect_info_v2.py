@@ -49,7 +49,7 @@ class DefectInfoV2:
     }
 
     def __init__(self, defect_id=None, defect_checker_name=None, defect_status=None, rule_system_tags=None, rule_name=None, line_number=None, defect_content=None, defect_level=None, file_path=None, created_at=None, issue_key=None, fragment=None, events=None):
-        """DefectInfoV2
+        r"""DefectInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class DefectInfoV2:
 
     @property
     def defect_id(self):
-        """Gets the defect_id of this DefectInfoV2.
+        r"""Gets the defect_id of this DefectInfoV2.
 
         缺陷的id
 
@@ -138,7 +138,7 @@ class DefectInfoV2:
 
     @defect_id.setter
     def defect_id(self, defect_id):
-        """Sets the defect_id of this DefectInfoV2.
+        r"""Sets the defect_id of this DefectInfoV2.
 
         缺陷的id
 
@@ -149,7 +149,7 @@ class DefectInfoV2:
 
     @property
     def defect_checker_name(self):
-        """Gets the defect_checker_name of this DefectInfoV2.
+        r"""Gets the defect_checker_name of this DefectInfoV2.
 
         缺陷对应检查项的名称
 
@@ -160,7 +160,7 @@ class DefectInfoV2:
 
     @defect_checker_name.setter
     def defect_checker_name(self, defect_checker_name):
-        """Sets the defect_checker_name of this DefectInfoV2.
+        r"""Sets the defect_checker_name of this DefectInfoV2.
 
         缺陷对应检查项的名称
 
@@ -171,7 +171,7 @@ class DefectInfoV2:
 
     @property
     def defect_status(self):
-        """Gets the defect_status of this DefectInfoV2.
+        r"""Gets the defect_status of this DefectInfoV2.
 
         缺陷的状态0为解决 1已解决 2已忽略
 
@@ -182,7 +182,7 @@ class DefectInfoV2:
 
     @defect_status.setter
     def defect_status(self, defect_status):
-        """Sets the defect_status of this DefectInfoV2.
+        r"""Sets the defect_status of this DefectInfoV2.
 
         缺陷的状态0为解决 1已解决 2已忽略
 
@@ -193,7 +193,7 @@ class DefectInfoV2:
 
     @property
     def rule_system_tags(self):
-        """Gets the rule_system_tags of this DefectInfoV2.
+        r"""Gets the rule_system_tags of this DefectInfoV2.
 
         规则标签,多个标签用逗号隔开
 
@@ -204,7 +204,7 @@ class DefectInfoV2:
 
     @rule_system_tags.setter
     def rule_system_tags(self, rule_system_tags):
-        """Sets the rule_system_tags of this DefectInfoV2.
+        r"""Sets the rule_system_tags of this DefectInfoV2.
 
         规则标签,多个标签用逗号隔开
 
@@ -215,7 +215,7 @@ class DefectInfoV2:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this DefectInfoV2.
+        r"""Gets the rule_name of this DefectInfoV2.
 
         规则名
 
@@ -226,7 +226,7 @@ class DefectInfoV2:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this DefectInfoV2.
+        r"""Sets the rule_name of this DefectInfoV2.
 
         规则名
 
@@ -237,7 +237,7 @@ class DefectInfoV2:
 
     @property
     def line_number(self):
-        """Gets the line_number of this DefectInfoV2.
+        r"""Gets the line_number of this DefectInfoV2.
 
         缺陷所在文件行号
 
@@ -248,7 +248,7 @@ class DefectInfoV2:
 
     @line_number.setter
     def line_number(self, line_number):
-        """Sets the line_number of this DefectInfoV2.
+        r"""Sets the line_number of this DefectInfoV2.
 
         缺陷所在文件行号
 
@@ -259,7 +259,7 @@ class DefectInfoV2:
 
     @property
     def defect_content(self):
-        """Gets the defect_content of this DefectInfoV2.
+        r"""Gets the defect_content of this DefectInfoV2.
 
         缺陷描述
 
@@ -270,7 +270,7 @@ class DefectInfoV2:
 
     @defect_content.setter
     def defect_content(self, defect_content):
-        """Sets the defect_content of this DefectInfoV2.
+        r"""Sets the defect_content of this DefectInfoV2.
 
         缺陷描述
 
@@ -281,7 +281,7 @@ class DefectInfoV2:
 
     @property
     def defect_level(self):
-        """Gets the defect_level of this DefectInfoV2.
+        r"""Gets the defect_level of this DefectInfoV2.
 
         缺陷等级，0致命，1严重，2一般，3提示
 
@@ -292,7 +292,7 @@ class DefectInfoV2:
 
     @defect_level.setter
     def defect_level(self, defect_level):
-        """Sets the defect_level of this DefectInfoV2.
+        r"""Sets the defect_level of this DefectInfoV2.
 
         缺陷等级，0致命，1严重，2一般，3提示
 
@@ -303,7 +303,7 @@ class DefectInfoV2:
 
     @property
     def file_path(self):
-        """Gets the file_path of this DefectInfoV2.
+        r"""Gets the file_path of this DefectInfoV2.
 
         缺陷文件路径
 
@@ -314,7 +314,7 @@ class DefectInfoV2:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this DefectInfoV2.
+        r"""Sets the file_path of this DefectInfoV2.
 
         缺陷文件路径
 
@@ -325,7 +325,7 @@ class DefectInfoV2:
 
     @property
     def created_at(self):
-        """Gets the created_at of this DefectInfoV2.
+        r"""Gets the created_at of this DefectInfoV2.
 
         创建时间
 
@@ -336,7 +336,7 @@ class DefectInfoV2:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DefectInfoV2.
+        r"""Sets the created_at of this DefectInfoV2.
 
         创建时间
 
@@ -347,7 +347,7 @@ class DefectInfoV2:
 
     @property
     def issue_key(self):
-        """Gets the issue_key of this DefectInfoV2.
+        r"""Gets the issue_key of this DefectInfoV2.
 
         问题唯一标识
 
@@ -358,7 +358,7 @@ class DefectInfoV2:
 
     @issue_key.setter
     def issue_key(self, issue_key):
-        """Sets the issue_key of this DefectInfoV2.
+        r"""Sets the issue_key of this DefectInfoV2.
 
         问题唯一标识
 
@@ -369,7 +369,7 @@ class DefectInfoV2:
 
     @property
     def fragment(self):
-        """Gets the fragment of this DefectInfoV2.
+        r"""Gets the fragment of this DefectInfoV2.
 
         缺陷代码片段详情
 
@@ -380,7 +380,7 @@ class DefectInfoV2:
 
     @fragment.setter
     def fragment(self, fragment):
-        """Sets the fragment of this DefectInfoV2.
+        r"""Sets the fragment of this DefectInfoV2.
 
         缺陷代码片段详情
 
@@ -391,7 +391,7 @@ class DefectInfoV2:
 
     @property
     def events(self):
-        """Gets the events of this DefectInfoV2.
+        r"""Gets the events of this DefectInfoV2.
 
         调用链信息
 
@@ -402,7 +402,7 @@ class DefectInfoV2:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this DefectInfoV2.
+        r"""Sets the events of this DefectInfoV2.
 
         调用链信息
 

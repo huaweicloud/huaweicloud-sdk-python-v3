@@ -27,7 +27,7 @@ class RestoreClusterRequest:
     }
 
     def __init__(self, snapshot_id=None, body=None):
-        """RestoreClusterRequest
+        r"""RestoreClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreClusterRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this RestoreClusterRequest.
+        r"""Gets the snapshot_id of this RestoreClusterRequest.
 
         待恢复的快照ID。
 
@@ -60,7 +60,7 @@ class RestoreClusterRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this RestoreClusterRequest.
+        r"""Sets the snapshot_id of this RestoreClusterRequest.
 
         待恢复的快照ID。
 
@@ -71,7 +71,7 @@ class RestoreClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreClusterRequest.
+        r"""Gets the body of this RestoreClusterRequest.
 
         :return: The body of this RestoreClusterRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreClusterRequestBody`
@@ -80,7 +80,7 @@ class RestoreClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreClusterRequest.
+        r"""Sets the body of this RestoreClusterRequest.
 
         :param body: The body of this RestoreClusterRequest.
         :type body: :class:`huaweicloudsdkdws.v2.RestoreClusterRequestBody`

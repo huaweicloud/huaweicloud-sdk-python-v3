@@ -47,7 +47,7 @@ class ApplicationPermissionVO:
     }
 
     def __init__(self, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, name=None, region=None, role_id=None, role_type=None):
-        """ApplicationPermissionVO
+        r"""ApplicationPermissionVO
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_modify(self):
-        """Gets the can_modify of this ApplicationPermissionVO.
+        r"""Gets the can_modify of this ApplicationPermissionVO.
 
         是否有编辑权限
 
@@ -131,7 +131,7 @@ class ApplicationPermissionVO:
 
     @can_modify.setter
     def can_modify(self, can_modify):
-        """Sets the can_modify of this ApplicationPermissionVO.
+        r"""Sets the can_modify of this ApplicationPermissionVO.
 
         是否有编辑权限
 
@@ -142,7 +142,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this ApplicationPermissionVO.
+        r"""Gets the can_delete of this ApplicationPermissionVO.
 
         是否有删除的权限
 
@@ -153,7 +153,7 @@ class ApplicationPermissionVO:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this ApplicationPermissionVO.
+        r"""Sets the can_delete of this ApplicationPermissionVO.
 
         是否有删除的权限
 
@@ -164,7 +164,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_view(self):
-        """Gets the can_view of this ApplicationPermissionVO.
+        r"""Gets the can_view of this ApplicationPermissionVO.
 
         是否有查看权限
 
@@ -175,7 +175,7 @@ class ApplicationPermissionVO:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this ApplicationPermissionVO.
+        r"""Sets the can_view of this ApplicationPermissionVO.
 
         是否有查看权限
 
@@ -186,7 +186,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_execute(self):
-        """Gets the can_execute of this ApplicationPermissionVO.
+        r"""Gets the can_execute of this ApplicationPermissionVO.
 
         是否有执行权限
 
@@ -197,7 +197,7 @@ class ApplicationPermissionVO:
 
     @can_execute.setter
     def can_execute(self, can_execute):
-        """Sets the can_execute of this ApplicationPermissionVO.
+        r"""Sets the can_execute of this ApplicationPermissionVO.
 
         是否有执行权限
 
@@ -208,7 +208,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this ApplicationPermissionVO.
+        r"""Gets the can_copy of this ApplicationPermissionVO.
 
         是否有复制权限
 
@@ -219,7 +219,7 @@ class ApplicationPermissionVO:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this ApplicationPermissionVO.
+        r"""Sets the can_copy of this ApplicationPermissionVO.
 
         是否有复制权限
 
@@ -230,7 +230,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this ApplicationPermissionVO.
+        r"""Gets the can_manage of this ApplicationPermissionVO.
 
         是否有管理权限，包含增删改查执行以及权限修改
 
@@ -241,7 +241,7 @@ class ApplicationPermissionVO:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this ApplicationPermissionVO.
+        r"""Sets the can_manage of this ApplicationPermissionVO.
 
         是否有管理权限，包含增删改查执行以及权限修改
 
@@ -252,7 +252,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_create_env(self):
-        """Gets the can_create_env of this ApplicationPermissionVO.
+        r"""Gets the can_create_env of this ApplicationPermissionVO.
 
         是否有新建环境权限
 
@@ -263,7 +263,7 @@ class ApplicationPermissionVO:
 
     @can_create_env.setter
     def can_create_env(self, can_create_env):
-        """Sets the can_create_env of this ApplicationPermissionVO.
+        r"""Sets the can_create_env of this ApplicationPermissionVO.
 
         是否有新建环境权限
 
@@ -274,7 +274,7 @@ class ApplicationPermissionVO:
 
     @property
     def can_disable(self):
-        """Gets the can_disable of this ApplicationPermissionVO.
+        r"""Gets the can_disable of this ApplicationPermissionVO.
 
         是否有禁用权限
 
@@ -285,7 +285,7 @@ class ApplicationPermissionVO:
 
     @can_disable.setter
     def can_disable(self, can_disable):
-        """Sets the can_disable of this ApplicationPermissionVO.
+        r"""Sets the can_disable of this ApplicationPermissionVO.
 
         是否有禁用权限
 
@@ -296,7 +296,7 @@ class ApplicationPermissionVO:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationPermissionVO.
+        r"""Gets the name of this ApplicationPermissionVO.
 
         角色名称
 
@@ -307,7 +307,7 @@ class ApplicationPermissionVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationPermissionVO.
+        r"""Sets the name of this ApplicationPermissionVO.
 
         角色名称
 
@@ -318,7 +318,7 @@ class ApplicationPermissionVO:
 
     @property
     def region(self):
-        """Gets the region of this ApplicationPermissionVO.
+        r"""Gets the region of this ApplicationPermissionVO.
 
         局点信息
 
@@ -329,7 +329,7 @@ class ApplicationPermissionVO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ApplicationPermissionVO.
+        r"""Sets the region of this ApplicationPermissionVO.
 
         局点信息
 
@@ -340,7 +340,7 @@ class ApplicationPermissionVO:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ApplicationPermissionVO.
+        r"""Gets the role_id of this ApplicationPermissionVO.
 
         角色id
 
@@ -351,7 +351,7 @@ class ApplicationPermissionVO:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ApplicationPermissionVO.
+        r"""Sets the role_id of this ApplicationPermissionVO.
 
         角色id
 
@@ -362,7 +362,7 @@ class ApplicationPermissionVO:
 
     @property
     def role_type(self):
-        """Gets the role_type of this ApplicationPermissionVO.
+        r"""Gets the role_type of this ApplicationPermissionVO.
 
         角色类型， app-creator： 应用创建者； project： 项目管理员；template-customized-inst：系统角色； template-project-customized、project-customized：自定义角色
 
@@ -373,7 +373,7 @@ class ApplicationPermissionVO:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this ApplicationPermissionVO.
+        r"""Sets the role_type of this ApplicationPermissionVO.
 
         角色类型， app-creator： 应用创建者； project： 项目管理员；template-customized-inst：系统角色； template-project-customized、project-customized：自定义角色
 

@@ -37,7 +37,7 @@ class ChangeToPeriod:
     }
 
     def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, vault_ids=None):
-        """ChangeToPeriod
+        r"""ChangeToPeriod
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ChangeToPeriod:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ChangeToPeriod.
+        r"""Gets the charging_mode of this ChangeToPeriod.
 
         付费模式，当前仅可选择：pre_paid
 
@@ -93,7 +93,7 @@ class ChangeToPeriod:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ChangeToPeriod.
+        r"""Sets the charging_mode of this ChangeToPeriod.
 
         付费模式，当前仅可选择：pre_paid
 
@@ -104,7 +104,7 @@ class ChangeToPeriod:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ChangeToPeriod.
+        r"""Gets the period_type of this ChangeToPeriod.
 
         创建类型，按年(year)或者按月(month)
 
@@ -115,7 +115,7 @@ class ChangeToPeriod:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ChangeToPeriod.
+        r"""Sets the period_type of this ChangeToPeriod.
 
         创建类型，按年(year)或者按月(month)
 
@@ -126,7 +126,7 @@ class ChangeToPeriod:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ChangeToPeriod.
+        r"""Gets the period_num of this ChangeToPeriod.
 
         创建类型的数量，按年或按月的个数
 
@@ -137,7 +137,7 @@ class ChangeToPeriod:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ChangeToPeriod.
+        r"""Sets the period_num of this ChangeToPeriod.
 
         创建类型的数量，按年或按月的个数
 
@@ -148,7 +148,7 @@ class ChangeToPeriod:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ChangeToPeriod.
+        r"""Gets the is_auto_renew of this ChangeToPeriod.
 
         到期后是否自动续期，默认不续期
 
@@ -159,7 +159,7 @@ class ChangeToPeriod:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ChangeToPeriod.
+        r"""Sets the is_auto_renew of this ChangeToPeriod.
 
         到期后是否自动续期，默认不续期
 
@@ -170,7 +170,7 @@ class ChangeToPeriod:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ChangeToPeriod.
+        r"""Gets the is_auto_pay of this ChangeToPeriod.
 
         是否自动付费，默认为不自动付费
 
@@ -181,7 +181,7 @@ class ChangeToPeriod:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ChangeToPeriod.
+        r"""Sets the is_auto_pay of this ChangeToPeriod.
 
         是否自动付费，默认为不自动付费
 
@@ -192,7 +192,7 @@ class ChangeToPeriod:
 
     @property
     def console_url(self):
-        """Gets the console_url of this ChangeToPeriod.
+        r"""Gets the console_url of this ChangeToPeriod.
 
         跳转URL
 
@@ -203,7 +203,7 @@ class ChangeToPeriod:
 
     @console_url.setter
     def console_url(self, console_url):
-        """Sets the console_url of this ChangeToPeriod.
+        r"""Sets the console_url of this ChangeToPeriod.
 
         跳转URL
 
@@ -214,7 +214,7 @@ class ChangeToPeriod:
 
     @property
     def vault_ids(self):
-        """Gets the vault_ids of this ChangeToPeriod.
+        r"""Gets the vault_ids of this ChangeToPeriod.
 
         资源列表
 
@@ -225,7 +225,7 @@ class ChangeToPeriod:
 
     @vault_ids.setter
     def vault_ids(self, vault_ids):
-        """Sets the vault_ids of this ChangeToPeriod.
+        r"""Sets the vault_ids of this ChangeToPeriod.
 
         资源列表
 

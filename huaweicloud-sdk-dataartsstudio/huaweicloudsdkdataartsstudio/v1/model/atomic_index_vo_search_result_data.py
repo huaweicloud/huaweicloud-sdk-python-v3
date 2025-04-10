@@ -25,7 +25,7 @@ class AtomicIndexVOSearchResultData:
     }
 
     def __init__(self, value=None):
-        """AtomicIndexVOSearchResultData
+        r"""AtomicIndexVOSearchResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AtomicIndexVOSearchResultData:
 
     @property
     def value(self):
-        """Gets the value of this AtomicIndexVOSearchResultData.
+        r"""Gets the value of this AtomicIndexVOSearchResultData.
 
         :return: The value of this AtomicIndexVOSearchResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVOSearchResultDataValue`
@@ -52,7 +52,7 @@ class AtomicIndexVOSearchResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AtomicIndexVOSearchResultData.
+        r"""Sets the value of this AtomicIndexVOSearchResultData.
 
         :param value: The value of this AtomicIndexVOSearchResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVOSearchResultDataValue`

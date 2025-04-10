@@ -27,7 +27,7 @@ class ActionMatch:
     }
 
     def __init__(self, key=None, value=None):
-        """ActionMatch
+        r"""ActionMatch
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ActionMatch:
 
     @property
     def key(self):
-        """Gets the key of this ActionMatch.
+        r"""Gets the key of this ActionMatch.
 
         键。目前只支持resource_name。表示匹配资源实例的名称。
 
@@ -59,7 +59,7 @@ class ActionMatch:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ActionMatch.
+        r"""Sets the key of this ActionMatch.
 
         键。目前只支持resource_name。表示匹配资源实例的名称。
 
@@ -70,7 +70,7 @@ class ActionMatch:
 
     @property
     def value(self):
-        """Gets the value of this ActionMatch.
+        r"""Gets the value of this ActionMatch.
 
         值。每个值最大长度255个unicode字符 。当key为resource_name时，表示待匹配的资源实例的名称。
 
@@ -81,7 +81,7 @@ class ActionMatch:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ActionMatch.
+        r"""Sets the value of this ActionMatch.
 
         值。每个值最大长度255个unicode字符 。当key为resource_name时，表示待匹配的资源实例的名称。
 

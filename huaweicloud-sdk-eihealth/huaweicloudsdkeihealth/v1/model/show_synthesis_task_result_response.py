@@ -30,7 +30,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, task_data=None, result=None):
-        """ShowSynthesisTaskResultResponse
+        r"""ShowSynthesisTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSynthesisTaskResultResponse.
+        r"""Gets the status of this ShowSynthesisTaskResultResponse.
 
         :return: The status of this ShowSynthesisTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -67,7 +67,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSynthesisTaskResultResponse.
+        r"""Sets the status of this ShowSynthesisTaskResultResponse.
 
         :param status: The status of this ShowSynthesisTaskResultResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -76,7 +76,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowSynthesisTaskResultResponse.
+        r"""Gets the task_data of this ShowSynthesisTaskResultResponse.
 
         :return: The task_data of this ShowSynthesisTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SynthesisTaskData`
@@ -85,7 +85,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowSynthesisTaskResultResponse.
+        r"""Sets the task_data of this ShowSynthesisTaskResultResponse.
 
         :param task_data: The task_data of this ShowSynthesisTaskResultResponse.
         :type task_data: :class:`huaweicloudsdkeihealth.v1.SynthesisTaskData`
@@ -94,7 +94,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowSynthesisTaskResultResponse.
+        r"""Gets the result of this ShowSynthesisTaskResultResponse.
 
         :return: The result of this ShowSynthesisTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SynthesisResult`
@@ -103,7 +103,7 @@ class ShowSynthesisTaskResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowSynthesisTaskResultResponse.
+        r"""Sets the result of this ShowSynthesisTaskResultResponse.
 
         :param result: The result of this ShowSynthesisTaskResultResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.SynthesisResult`

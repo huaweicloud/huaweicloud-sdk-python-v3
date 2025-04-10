@@ -27,7 +27,7 @@ class ListNameServersRequest:
     }
 
     def __init__(self, type=None, region=None):
-        """ListNameServersRequest
+        r"""ListNameServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListNameServersRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListNameServersRequest.
+        r"""Gets the type of this ListNameServersRequest.
 
         待查询名称服务器的类型。 取值范围: public, private。 如果为空，表示查询所有类型的名称服务器。 如果为public，表示查询公网的名称服务器。 如果为private，表示查询内网的名称服务器。 搜索模式精确搜索。 默认值为空。
 
@@ -61,7 +61,7 @@ class ListNameServersRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListNameServersRequest.
+        r"""Sets the type of this ListNameServersRequest.
 
         待查询名称服务器的类型。 取值范围: public, private。 如果为空，表示查询所有类型的名称服务器。 如果为public，表示查询公网的名称服务器。 如果为private，表示查询内网的名称服务器。 搜索模式精确搜索。 默认值为空。
 
@@ -72,7 +72,7 @@ class ListNameServersRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListNameServersRequest.
+        r"""Gets the region of this ListNameServersRequest.
 
         待查询的region ID。 当查询公网的名称服务器时，此处不填。 搜索模式精确搜索。 默认值为空。
 
@@ -83,7 +83,7 @@ class ListNameServersRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListNameServersRequest.
+        r"""Sets the region of this ListNameServersRequest.
 
         待查询的region ID。 当查询公网的名称服务器时，此处不填。 搜索模式精确搜索。 默认值为空。
 

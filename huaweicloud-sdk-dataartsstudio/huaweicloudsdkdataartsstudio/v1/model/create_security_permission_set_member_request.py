@@ -29,7 +29,7 @@ class CreateSecurityPermissionSetMemberRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None, body=None):
-        """CreateSecurityPermissionSetMemberRequest
+        r"""CreateSecurityPermissionSetMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSecurityPermissionSetMemberRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this CreateSecurityPermissionSetMemberRequest.
+        r"""Gets the permission_set_id of this CreateSecurityPermissionSetMemberRequest.
 
         权限集id
 
@@ -66,7 +66,7 @@ class CreateSecurityPermissionSetMemberRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this CreateSecurityPermissionSetMemberRequest.
+        r"""Sets the permission_set_id of this CreateSecurityPermissionSetMemberRequest.
 
         权限集id
 
@@ -77,7 +77,7 @@ class CreateSecurityPermissionSetMemberRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityPermissionSetMemberRequest.
+        r"""Gets the workspace of this CreateSecurityPermissionSetMemberRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class CreateSecurityPermissionSetMemberRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityPermissionSetMemberRequest.
+        r"""Sets the workspace of this CreateSecurityPermissionSetMemberRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class CreateSecurityPermissionSetMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityPermissionSetMemberRequest.
+        r"""Gets the body of this CreateSecurityPermissionSetMemberRequest.
 
         :return: The body of this CreateSecurityPermissionSetMemberRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetMemberCreateDTO`
@@ -108,7 +108,7 @@ class CreateSecurityPermissionSetMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityPermissionSetMemberRequest.
+        r"""Sets the body of this CreateSecurityPermissionSetMemberRequest.
 
         :param body: The body of this CreateSecurityPermissionSetMemberRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetMemberCreateDTO`

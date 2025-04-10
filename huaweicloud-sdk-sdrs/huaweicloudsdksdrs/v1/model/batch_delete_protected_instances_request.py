@@ -25,7 +25,7 @@ class BatchDeleteProtectedInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteProtectedInstancesRequest
+        r"""BatchDeleteProtectedInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteProtectedInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteProtectedInstancesRequest.
+        r"""Gets the body of this BatchDeleteProtectedInstancesRequest.
 
         :return: The body of this BatchDeleteProtectedInstancesRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteProtectedInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteProtectedInstancesRequest.
+        r"""Sets the body of this BatchDeleteProtectedInstancesRequest.
 
         :param body: The body of this BatchDeleteProtectedInstancesRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesRequestBody`

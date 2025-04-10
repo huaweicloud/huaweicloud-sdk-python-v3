@@ -27,7 +27,7 @@ class ListAgentsRequest:
     }
 
     def __init__(self, cluster_id=None, namespace=None):
-        """ListAgentsRequest
+        r"""ListAgentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListAgentsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAgentsRequest.
+        r"""Gets the cluster_id of this ListAgentsRequest.
 
         - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“APM”。
 
@@ -59,7 +59,7 @@ class ListAgentsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAgentsRequest.
+        r"""Sets the cluster_id of this ListAgentsRequest.
 
         - 查询集群主机时，填写集群id。 - 查询用户自定义主机时，填写“APM”。
 
@@ -70,7 +70,7 @@ class ListAgentsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAgentsRequest.
+        r"""Gets the namespace of this ListAgentsRequest.
 
         - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“APM”。
 
@@ -81,7 +81,7 @@ class ListAgentsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAgentsRequest.
+        r"""Sets the namespace of this ListAgentsRequest.
 
         - 查询集群主机时，填写命名空间。 - 查询用户自定义主机时，填写“APM”。
 

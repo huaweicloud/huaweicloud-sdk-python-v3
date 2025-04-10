@@ -25,7 +25,7 @@ class TemplateBodyPrimitiveTypeHolder:
     }
 
     def __init__(self, template_body=None):
-        """TemplateBodyPrimitiveTypeHolder
+        r"""TemplateBodyPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TemplateBodyPrimitiveTypeHolder:
 
     @property
     def template_body(self):
-        """Gets the template_body of this TemplateBodyPrimitiveTypeHolder.
+        r"""Gets the template_body of this TemplateBodyPrimitiveTypeHolder.
 
         HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在  **注意：**   * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的template_body
 
@@ -54,7 +54,7 @@ class TemplateBodyPrimitiveTypeHolder:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this TemplateBodyPrimitiveTypeHolder.
+        r"""Sets the template_body of this TemplateBodyPrimitiveTypeHolder.
 
         HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在  **注意：**   * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的template_body
 

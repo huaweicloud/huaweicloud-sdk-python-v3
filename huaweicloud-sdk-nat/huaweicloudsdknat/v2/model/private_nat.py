@@ -45,7 +45,7 @@ class PrivateNat:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, spec=None, status=None, created_at=None, updated_at=None, downlink_vpcs=None, tags=None, enterprise_project_id=None):
-        """PrivateNat
+        r"""PrivateNat
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class PrivateNat:
 
     @property
     def id(self):
-        """Gets the id of this PrivateNat.
+        r"""Gets the id of this PrivateNat.
 
         私网NAT网关实例的ID。
 
@@ -114,7 +114,7 @@ class PrivateNat:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrivateNat.
+        r"""Sets the id of this PrivateNat.
 
         私网NAT网关实例的ID。
 
@@ -125,7 +125,7 @@ class PrivateNat:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PrivateNat.
+        r"""Gets the project_id of this PrivateNat.
 
         项目的ID。
 
@@ -136,7 +136,7 @@ class PrivateNat:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PrivateNat.
+        r"""Sets the project_id of this PrivateNat.
 
         项目的ID。
 
@@ -147,7 +147,7 @@ class PrivateNat:
 
     @property
     def name(self):
-        """Gets the name of this PrivateNat.
+        r"""Gets the name of this PrivateNat.
 
         私网NAT网关实例的名字。
 
@@ -158,7 +158,7 @@ class PrivateNat:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PrivateNat.
+        r"""Sets the name of this PrivateNat.
 
         私网NAT网关实例的名字。
 
@@ -169,7 +169,7 @@ class PrivateNat:
 
     @property
     def description(self):
-        """Gets the description of this PrivateNat.
+        r"""Gets the description of this PrivateNat.
 
         私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -180,7 +180,7 @@ class PrivateNat:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PrivateNat.
+        r"""Sets the description of this PrivateNat.
 
         私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -191,7 +191,7 @@ class PrivateNat:
 
     @property
     def spec(self):
-        """Gets the spec of this PrivateNat.
+        r"""Gets the spec of this PrivateNat.
 
         私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 
@@ -202,7 +202,7 @@ class PrivateNat:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this PrivateNat.
+        r"""Sets the spec of this PrivateNat.
 
         私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 
@@ -213,7 +213,7 @@ class PrivateNat:
 
     @property
     def status(self):
-        """Gets the status of this PrivateNat.
+        r"""Gets the status of this PrivateNat.
 
         私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
 
@@ -224,7 +224,7 @@ class PrivateNat:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PrivateNat.
+        r"""Sets the status of this PrivateNat.
 
         私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
 
@@ -235,7 +235,7 @@ class PrivateNat:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PrivateNat.
+        r"""Gets the created_at of this PrivateNat.
 
         私网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -246,7 +246,7 @@ class PrivateNat:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PrivateNat.
+        r"""Sets the created_at of this PrivateNat.
 
         私网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -257,7 +257,7 @@ class PrivateNat:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PrivateNat.
+        r"""Gets the updated_at of this PrivateNat.
 
         私网NAT网关实例的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -268,7 +268,7 @@ class PrivateNat:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PrivateNat.
+        r"""Sets the updated_at of this PrivateNat.
 
         私网NAT网关实例的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -279,7 +279,7 @@ class PrivateNat:
 
     @property
     def downlink_vpcs(self):
-        """Gets the downlink_vpcs of this PrivateNat.
+        r"""Gets the downlink_vpcs of this PrivateNat.
 
         私网NAT网关实例所属的VPC实例。
 
@@ -290,7 +290,7 @@ class PrivateNat:
 
     @downlink_vpcs.setter
     def downlink_vpcs(self, downlink_vpcs):
-        """Sets the downlink_vpcs of this PrivateNat.
+        r"""Sets the downlink_vpcs of this PrivateNat.
 
         私网NAT网关实例所属的VPC实例。
 
@@ -301,7 +301,7 @@ class PrivateNat:
 
     @property
     def tags(self):
-        """Gets the tags of this PrivateNat.
+        r"""Gets the tags of this PrivateNat.
 
         标签列表。
 
@@ -312,7 +312,7 @@ class PrivateNat:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PrivateNat.
+        r"""Sets the tags of this PrivateNat.
 
         标签列表。
 
@@ -323,7 +323,7 @@ class PrivateNat:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PrivateNat.
+        r"""Gets the enterprise_project_id of this PrivateNat.
 
         企业项目ID。 创建私网NAT网关实例时，关联的企业项目ID。
 
@@ -334,7 +334,7 @@ class PrivateNat:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PrivateNat.
+        r"""Sets the enterprise_project_id of this PrivateNat.
 
         企业项目ID。 创建私网NAT网关实例时，关联的企业项目ID。
 

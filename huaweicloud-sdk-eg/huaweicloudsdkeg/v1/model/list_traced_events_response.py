@@ -32,7 +32,7 @@ class ListTracedEventsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, result=None, x_request_id=None):
-        """ListTracedEventsResponse
+        r"""ListTracedEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTracedEventsResponse.
+        r"""Gets the total of this ListTracedEventsResponse.
 
         总数
 
@@ -76,7 +76,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTracedEventsResponse.
+        r"""Sets the total of this ListTracedEventsResponse.
 
         总数
 
@@ -87,7 +87,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListTracedEventsResponse.
+        r"""Gets the size of this ListTracedEventsResponse.
 
         本页数量
 
@@ -98,7 +98,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTracedEventsResponse.
+        r"""Sets the size of this ListTracedEventsResponse.
 
         本页数量
 
@@ -109,7 +109,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListTracedEventsResponse.
+        r"""Gets the result of this ListTracedEventsResponse.
 
         事件追踪列表
 
@@ -120,7 +120,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListTracedEventsResponse.
+        r"""Sets the result of this ListTracedEventsResponse.
 
         事件追踪列表
 
@@ -131,7 +131,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTracedEventsResponse.
+        r"""Gets the x_request_id of this ListTracedEventsResponse.
 
         :return: The x_request_id of this ListTracedEventsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListTracedEventsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTracedEventsResponse.
+        r"""Sets the x_request_id of this ListTracedEventsResponse.
 
         :param x_request_id: The x_request_id of this ListTracedEventsResponse.
         :type x_request_id: str

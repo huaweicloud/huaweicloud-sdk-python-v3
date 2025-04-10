@@ -101,7 +101,7 @@ class ConfigurationResponseDataSpec:
     }
 
     def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, scale_strategy=None, max_replica_count=None, min_replica_count=None, advanced=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, cloud_storage_log_paths=None, instrumentation=None, apm_application=None, type=None, app_name=None, instance_name=None, env_name=None, image_pull_policy=None, version=None, access_key=None, access_value=None, business=None, path=None, port=None, metrics=None):
-        """ConfigurationResponseDataSpec
+        r"""ConfigurationResponseDataSpec
 
         The model defined in huaweicloud sdk
 
@@ -309,7 +309,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def rds_id(self):
-        """Gets the rds_id of this ConfigurationResponseDataSpec.
+        r"""Gets the rds_id of this ConfigurationResponseDataSpec.
 
         RDS数据库实例ID。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -320,7 +320,7 @@ class ConfigurationResponseDataSpec:
 
     @rds_id.setter
     def rds_id(self, rds_id):
-        """Sets the rds_id of this ConfigurationResponseDataSpec.
+        r"""Sets the rds_id of this ConfigurationResponseDataSpec.
 
         RDS数据库实例ID。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -331,7 +331,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def rds_db_name(self):
-        """Gets the rds_db_name of this ConfigurationResponseDataSpec.
+        r"""Gets the rds_db_name of this ConfigurationResponseDataSpec.
 
         RDS数据库名称。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -342,7 +342,7 @@ class ConfigurationResponseDataSpec:
 
     @rds_db_name.setter
     def rds_db_name(self, rds_db_name):
-        """Sets the rds_db_name of this ConfigurationResponseDataSpec.
+        r"""Sets the rds_db_name of this ConfigurationResponseDataSpec.
 
         RDS数据库名称。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -353,7 +353,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def rds_address(self):
-        """Gets the rds_address of this ConfigurationResponseDataSpec.
+        r"""Gets the rds_address of this ConfigurationResponseDataSpec.
 
         RDS数据库地址。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -364,7 +364,7 @@ class ConfigurationResponseDataSpec:
 
     @rds_address.setter
     def rds_address(self, rds_address):
-        """Sets the rds_address of this ConfigurationResponseDataSpec.
+        r"""Sets the rds_address of this ConfigurationResponseDataSpec.
 
         RDS数据库地址。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -375,7 +375,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def rds_username(self):
-        """Gets the rds_username of this ConfigurationResponseDataSpec.
+        r"""Gets the rds_username of this ConfigurationResponseDataSpec.
 
         RDS数据库用户名称。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -386,7 +386,7 @@ class ConfigurationResponseDataSpec:
 
     @rds_username.setter
     def rds_username(self, rds_username):
-        """Sets the rds_username of this ConfigurationResponseDataSpec.
+        r"""Sets the rds_username of this ConfigurationResponseDataSpec.
 
         RDS数据库用户名称。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -397,7 +397,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def rds_password(self):
-        """Gets the rds_password of this ConfigurationResponseDataSpec.
+        r"""Gets the rds_password of this ConfigurationResponseDataSpec.
 
         RDS数据库密码。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -408,7 +408,7 @@ class ConfigurationResponseDataSpec:
 
     @rds_password.setter
     def rds_password(self, rds_password):
-        """Sets the rds_password of this ConfigurationResponseDataSpec.
+        r"""Sets the rds_password of this ConfigurationResponseDataSpec.
 
         RDS数据库密码。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -419,7 +419,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def rds_port(self):
-        """Gets the rds_port of this ConfigurationResponseDataSpec.
+        r"""Gets the rds_port of this ConfigurationResponseDataSpec.
 
         RDS数据库端口。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -430,7 +430,7 @@ class ConfigurationResponseDataSpec:
 
     @rds_port.setter
     def rds_port(self, rds_port):
-        """Sets the rds_port of this ConfigurationResponseDataSpec.
+        r"""Sets the rds_port of this ConfigurationResponseDataSpec.
 
         RDS数据库端口。  Configuration.type为\"rds\"时，返回此参数。 
 
@@ -441,7 +441,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def config_center_addr(self):
-        """Gets the config_center_addr of this ConfigurationResponseDataSpec.
+        r"""Gets the config_center_addr of this ConfigurationResponseDataSpec.
 
         CSE配置中心地址。  Configuration.type为\"cse\"时，返回此参数。 
 
@@ -452,7 +452,7 @@ class ConfigurationResponseDataSpec:
 
     @config_center_addr.setter
     def config_center_addr(self, config_center_addr):
-        """Sets the config_center_addr of this ConfigurationResponseDataSpec.
+        r"""Sets the config_center_addr of this ConfigurationResponseDataSpec.
 
         CSE配置中心地址。  Configuration.type为\"cse\"时，返回此参数。 
 
@@ -463,7 +463,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def service_center_addr(self):
-        """Gets the service_center_addr of this ConfigurationResponseDataSpec.
+        r"""Gets the service_center_addr of this ConfigurationResponseDataSpec.
 
         CSE服务注册发现地址。  Configuration.type为\"cse\"时，返回此参数。 
 
@@ -474,7 +474,7 @@ class ConfigurationResponseDataSpec:
 
     @service_center_addr.setter
     def service_center_addr(self, service_center_addr):
-        """Sets the service_center_addr of this ConfigurationResponseDataSpec.
+        r"""Sets the service_center_addr of this ConfigurationResponseDataSpec.
 
         CSE服务注册发现地址。  Configuration.type为\"cse\"时，返回此参数。 
 
@@ -485,7 +485,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def cse_id(self):
-        """Gets the cse_id of this ConfigurationResponseDataSpec.
+        r"""Gets the cse_id of this ConfigurationResponseDataSpec.
 
         CSE引擎ID。  Configuration.type为\"cse\"时，返回此参数。 
 
@@ -496,7 +496,7 @@ class ConfigurationResponseDataSpec:
 
     @cse_id.setter
     def cse_id(self, cse_id):
-        """Sets the cse_id of this ConfigurationResponseDataSpec.
+        r"""Sets the cse_id of this ConfigurationResponseDataSpec.
 
         CSE引擎ID。  Configuration.type为\"cse\"时，返回此参数。 
 
@@ -507,7 +507,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def envs(self):
-        """Gets the envs of this ConfigurationResponseDataSpec.
+        r"""Gets the envs of this ConfigurationResponseDataSpec.
 
         环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
 
@@ -518,7 +518,7 @@ class ConfigurationResponseDataSpec:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ConfigurationResponseDataSpec.
+        r"""Sets the envs of this ConfigurationResponseDataSpec.
 
         环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
 
@@ -529,7 +529,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def ip(self):
-        """Gets the ip of this ConfigurationResponseDataSpec.
+        r"""Gets the ip of this ConfigurationResponseDataSpec.
 
         弹性公网IP，响应体参数，未配置域名时返回此参数。
 
@@ -540,7 +540,7 @@ class ConfigurationResponseDataSpec:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ConfigurationResponseDataSpec.
+        r"""Sets the ip of this ConfigurationResponseDataSpec.
 
         弹性公网IP，响应体参数，未配置域名时返回此参数。
 
@@ -551,7 +551,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def items(self):
-        """Gets the items of this ConfigurationResponseDataSpec.
+        r"""Gets the items of this ConfigurationResponseDataSpec.
 
         访问方式配置列表。  Configuration.type为\"access\"时，返回此参数。 
 
@@ -562,7 +562,7 @@ class ConfigurationResponseDataSpec:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ConfigurationResponseDataSpec.
+        r"""Sets the items of this ConfigurationResponseDataSpec.
 
         访问方式配置列表。  Configuration.type为\"access\"时，返回此参数。 
 
@@ -573,7 +573,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def scale_strategy(self):
-        """Gets the scale_strategy of this ConfigurationResponseDataSpec.
+        r"""Gets the scale_strategy of this ConfigurationResponseDataSpec.
 
         伸缩策略配置策略类型。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -584,7 +584,7 @@ class ConfigurationResponseDataSpec:
 
     @scale_strategy.setter
     def scale_strategy(self, scale_strategy):
-        """Sets the scale_strategy of this ConfigurationResponseDataSpec.
+        r"""Sets the scale_strategy of this ConfigurationResponseDataSpec.
 
         伸缩策略配置策略类型。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -595,7 +595,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def max_replica_count(self):
-        """Gets the max_replica_count of this ConfigurationResponseDataSpec.
+        r"""Gets the max_replica_count of this ConfigurationResponseDataSpec.
 
         伸缩策略配置最大伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -606,7 +606,7 @@ class ConfigurationResponseDataSpec:
 
     @max_replica_count.setter
     def max_replica_count(self, max_replica_count):
-        """Sets the max_replica_count of this ConfigurationResponseDataSpec.
+        r"""Sets the max_replica_count of this ConfigurationResponseDataSpec.
 
         伸缩策略配置最大伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -617,7 +617,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def min_replica_count(self):
-        """Gets the min_replica_count of this ConfigurationResponseDataSpec.
+        r"""Gets the min_replica_count of this ConfigurationResponseDataSpec.
 
         伸缩策略配置最小伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -628,7 +628,7 @@ class ConfigurationResponseDataSpec:
 
     @min_replica_count.setter
     def min_replica_count(self, min_replica_count):
-        """Sets the min_replica_count of this ConfigurationResponseDataSpec.
+        r"""Sets the min_replica_count of this ConfigurationResponseDataSpec.
 
         伸缩策略配置最小伸缩个数。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -639,7 +639,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def advanced(self):
-        """Gets the advanced of this ConfigurationResponseDataSpec.
+        r"""Gets the advanced of this ConfigurationResponseDataSpec.
 
         :return: The advanced of this ConfigurationResponseDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataAdvanced`
@@ -648,7 +648,7 @@ class ConfigurationResponseDataSpec:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this ConfigurationResponseDataSpec.
+        r"""Sets the advanced of this ConfigurationResponseDataSpec.
 
         :param advanced: The advanced of this ConfigurationResponseDataSpec.
         :type advanced: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataAdvanced`
@@ -657,7 +657,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def triggers(self):
-        """Gets the triggers of this ConfigurationResponseDataSpec.
+        r"""Gets the triggers of this ConfigurationResponseDataSpec.
 
         伸缩策略配置触发器列表。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -668,7 +668,7 @@ class ConfigurationResponseDataSpec:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ConfigurationResponseDataSpec.
+        r"""Sets the triggers of this ConfigurationResponseDataSpec.
 
         伸缩策略配置触发器列表。  Configuration.type为\"scaling\"时，返回此参数。 
 
@@ -679,7 +679,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def volumes(self):
-        """Gets the volumes of this ConfigurationResponseDataSpec.
+        r"""Gets the volumes of this ConfigurationResponseDataSpec.
 
         云存储配置列表。  Configuration.type为\"volume\"时，返回此参数。 
 
@@ -690,7 +690,7 @@ class ConfigurationResponseDataSpec:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ConfigurationResponseDataSpec.
+        r"""Sets the volumes of this ConfigurationResponseDataSpec.
 
         云存储配置列表。  Configuration.type为\"volume\"时，返回此参数。 
 
@@ -701,7 +701,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ConfigurationResponseDataSpec.
+        r"""Gets the liveness_probe of this ConfigurationResponseDataSpec.
 
         :return: The liveness_probe of this ConfigurationResponseDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationLivenessProbe`
@@ -710,7 +710,7 @@ class ConfigurationResponseDataSpec:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ConfigurationResponseDataSpec.
+        r"""Sets the liveness_probe of this ConfigurationResponseDataSpec.
 
         :param liveness_probe: The liveness_probe of this ConfigurationResponseDataSpec.
         :type liveness_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationLivenessProbe`
@@ -719,7 +719,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def startup_probe(self):
-        """Gets the startup_probe of this ConfigurationResponseDataSpec.
+        r"""Gets the startup_probe of this ConfigurationResponseDataSpec.
 
         :return: The startup_probe of this ConfigurationResponseDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationStartupProbe`
@@ -728,7 +728,7 @@ class ConfigurationResponseDataSpec:
 
     @startup_probe.setter
     def startup_probe(self, startup_probe):
-        """Sets the startup_probe of this ConfigurationResponseDataSpec.
+        r"""Sets the startup_probe of this ConfigurationResponseDataSpec.
 
         :param startup_probe: The startup_probe of this ConfigurationResponseDataSpec.
         :type startup_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationStartupProbe`
@@ -737,7 +737,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ConfigurationResponseDataSpec.
+        r"""Gets the readiness_probe of this ConfigurationResponseDataSpec.
 
         :return: The readiness_probe of this ConfigurationResponseDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationReadinessProbe`
@@ -746,7 +746,7 @@ class ConfigurationResponseDataSpec:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ConfigurationResponseDataSpec.
+        r"""Sets the readiness_probe of this ConfigurationResponseDataSpec.
 
         :param readiness_probe: The readiness_probe of this ConfigurationResponseDataSpec.
         :type readiness_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationReadinessProbe`
@@ -755,7 +755,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def post_start(self):
-        """Gets the post_start of this ConfigurationResponseDataSpec.
+        r"""Gets the post_start of this ConfigurationResponseDataSpec.
 
         :return: The post_start of this ConfigurationResponseDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpecPostStart`
@@ -764,7 +764,7 @@ class ConfigurationResponseDataSpec:
 
     @post_start.setter
     def post_start(self, post_start):
-        """Sets the post_start of this ConfigurationResponseDataSpec.
+        r"""Sets the post_start of this ConfigurationResponseDataSpec.
 
         :param post_start: The post_start of this ConfigurationResponseDataSpec.
         :type post_start: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpecPostStart`
@@ -773,7 +773,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def pre_stop(self):
-        """Gets the pre_stop of this ConfigurationResponseDataSpec.
+        r"""Gets the pre_stop of this ConfigurationResponseDataSpec.
 
         :return: The pre_stop of this ConfigurationResponseDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpecPreStop`
@@ -782,7 +782,7 @@ class ConfigurationResponseDataSpec:
 
     @pre_stop.setter
     def pre_stop(self, pre_stop):
-        """Sets the pre_stop of this ConfigurationResponseDataSpec.
+        r"""Sets the pre_stop of this ConfigurationResponseDataSpec.
 
         :param pre_stop: The pre_stop of this ConfigurationResponseDataSpec.
         :type pre_stop: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpecPreStop`
@@ -791,7 +791,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def log_paths(self):
-        """Gets the log_paths of this ConfigurationResponseDataSpec.
+        r"""Gets the log_paths of this ConfigurationResponseDataSpec.
 
         自定义本地磁盘日志路径数组。  Configuration.type为\"log\"时，返回此参数。 
 
@@ -802,7 +802,7 @@ class ConfigurationResponseDataSpec:
 
     @log_paths.setter
     def log_paths(self, log_paths):
-        """Sets the log_paths of this ConfigurationResponseDataSpec.
+        r"""Sets the log_paths of this ConfigurationResponseDataSpec.
 
         自定义本地磁盘日志路径数组。  Configuration.type为\"log\"时，返回此参数。 
 
@@ -813,7 +813,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def cloud_storage_log_paths(self):
-        """Gets the cloud_storage_log_paths of this ConfigurationResponseDataSpec.
+        r"""Gets the cloud_storage_log_paths of this ConfigurationResponseDataSpec.
 
         自定义云存储日志路径数组。  Configuration.type为\"log\"时，返回此参数。 
 
@@ -824,7 +824,7 @@ class ConfigurationResponseDataSpec:
 
     @cloud_storage_log_paths.setter
     def cloud_storage_log_paths(self, cloud_storage_log_paths):
-        """Sets the cloud_storage_log_paths of this ConfigurationResponseDataSpec.
+        r"""Sets the cloud_storage_log_paths of this ConfigurationResponseDataSpec.
 
         自定义云存储日志路径数组。  Configuration.type为\"log\"时，返回此参数。 
 
@@ -835,7 +835,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def instrumentation(self):
-        """Gets the instrumentation of this ConfigurationResponseDataSpec.
+        r"""Gets the instrumentation of this ConfigurationResponseDataSpec.
 
         探针注入方式。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -846,7 +846,7 @@ class ConfigurationResponseDataSpec:
 
     @instrumentation.setter
     def instrumentation(self, instrumentation):
-        """Sets the instrumentation of this ConfigurationResponseDataSpec.
+        r"""Sets the instrumentation of this ConfigurationResponseDataSpec.
 
         探针注入方式。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -857,7 +857,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def apm_application(self):
-        """Gets the apm_application of this ConfigurationResponseDataSpec.
+        r"""Gets the apm_application of this ConfigurationResponseDataSpec.
 
         apm2应用。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -868,7 +868,7 @@ class ConfigurationResponseDataSpec:
 
     @apm_application.setter
     def apm_application(self, apm_application):
-        """Sets the apm_application of this ConfigurationResponseDataSpec.
+        r"""Sets the apm_application of this ConfigurationResponseDataSpec.
 
         apm2应用。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -879,7 +879,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationResponseDataSpec.
+        r"""Gets the type of this ConfigurationResponseDataSpec.
 
         监控系统类别，包括apm2和opentelemetry。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -890,7 +890,7 @@ class ConfigurationResponseDataSpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationResponseDataSpec.
+        r"""Sets the type of this ConfigurationResponseDataSpec.
 
         监控系统类别，包括apm2和opentelemetry。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -901,7 +901,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ConfigurationResponseDataSpec.
+        r"""Gets the app_name of this ConfigurationResponseDataSpec.
 
         apm2组件。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -912,7 +912,7 @@ class ConfigurationResponseDataSpec:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ConfigurationResponseDataSpec.
+        r"""Sets the app_name of this ConfigurationResponseDataSpec.
 
         apm2组件。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -923,7 +923,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ConfigurationResponseDataSpec.
+        r"""Gets the instance_name of this ConfigurationResponseDataSpec.
 
         apm2实例。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -934,7 +934,7 @@ class ConfigurationResponseDataSpec:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ConfigurationResponseDataSpec.
+        r"""Sets the instance_name of this ConfigurationResponseDataSpec.
 
         apm2实例。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -945,7 +945,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ConfigurationResponseDataSpec.
+        r"""Gets the env_name of this ConfigurationResponseDataSpec.
 
         apm2环境。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -956,7 +956,7 @@ class ConfigurationResponseDataSpec:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ConfigurationResponseDataSpec.
+        r"""Sets the env_name of this ConfigurationResponseDataSpec.
 
         apm2环境。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -967,7 +967,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def image_pull_policy(self):
-        """Gets the image_pull_policy of this ConfigurationResponseDataSpec.
+        r"""Gets the image_pull_policy of this ConfigurationResponseDataSpec.
 
         探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -978,7 +978,7 @@ class ConfigurationResponseDataSpec:
 
     @image_pull_policy.setter
     def image_pull_policy(self, image_pull_policy):
-        """Sets the image_pull_policy of this ConfigurationResponseDataSpec.
+        r"""Sets the image_pull_policy of this ConfigurationResponseDataSpec.
 
         探针镜像更新策略，已废弃，迁移到监控系统。  - Always，重启自动升级：每次都尝试重新下载镜像。 - IfNotPresent，手动升级: 如果本地有该镜像，则继续使用本地镜像，不下载镜像。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -989,7 +989,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def version(self):
-        """Gets the version of this ConfigurationResponseDataSpec.
+        r"""Gets the version of this ConfigurationResponseDataSpec.
 
         增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1000,7 +1000,7 @@ class ConfigurationResponseDataSpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ConfigurationResponseDataSpec.
+        r"""Sets the version of this ConfigurationResponseDataSpec.
 
         增强型探针/opentelemetry探针版本，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1011,7 +1011,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def access_key(self):
-        """Gets the access_key of this ConfigurationResponseDataSpec.
+        r"""Gets the access_key of this ConfigurationResponseDataSpec.
 
         apm2访问密钥Key，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1022,7 +1022,7 @@ class ConfigurationResponseDataSpec:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this ConfigurationResponseDataSpec.
+        r"""Sets the access_key of this ConfigurationResponseDataSpec.
 
         apm2访问密钥Key，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1033,7 +1033,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def access_value(self):
-        """Gets the access_value of this ConfigurationResponseDataSpec.
+        r"""Gets the access_value of this ConfigurationResponseDataSpec.
 
         apm2访问密钥value，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1044,7 +1044,7 @@ class ConfigurationResponseDataSpec:
 
     @access_value.setter
     def access_value(self, access_value):
-        """Sets the access_value of this ConfigurationResponseDataSpec.
+        r"""Sets the access_value of this ConfigurationResponseDataSpec.
 
         apm2访问密钥value，已废弃，迁移到监控系统。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1055,7 +1055,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def business(self):
-        """Gets the business of this ConfigurationResponseDataSpec.
+        r"""Gets the business of this ConfigurationResponseDataSpec.
 
         apm2应用，同apm_application，已废弃。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1066,7 +1066,7 @@ class ConfigurationResponseDataSpec:
 
     @business.setter
     def business(self, business):
-        """Sets the business of this ConfigurationResponseDataSpec.
+        r"""Sets the business of this ConfigurationResponseDataSpec.
 
         apm2应用，同apm_application，已废弃。  Configuration.type为\"apm2\"时，返回此参数。 
 
@@ -1077,7 +1077,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def path(self):
-        """Gets the path of this ConfigurationResponseDataSpec.
+        r"""Gets the path of this ConfigurationResponseDataSpec.
 
         自定义监控指标配置采集路径。  Configuration.type为\"customMetric\"时，返回此参数。 
 
@@ -1088,7 +1088,7 @@ class ConfigurationResponseDataSpec:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ConfigurationResponseDataSpec.
+        r"""Sets the path of this ConfigurationResponseDataSpec.
 
         自定义监控指标配置采集路径。  Configuration.type为\"customMetric\"时，返回此参数。 
 
@@ -1099,7 +1099,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def port(self):
-        """Gets the port of this ConfigurationResponseDataSpec.
+        r"""Gets the port of this ConfigurationResponseDataSpec.
 
         自定义监控指标配置采集端口。  Configuration.type为\"customMetric\"时，返回此参数。 
 
@@ -1110,7 +1110,7 @@ class ConfigurationResponseDataSpec:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ConfigurationResponseDataSpec.
+        r"""Sets the port of this ConfigurationResponseDataSpec.
 
         自定义监控指标配置采集端口。  Configuration.type为\"customMetric\"时，返回此参数。 
 
@@ -1121,7 +1121,7 @@ class ConfigurationResponseDataSpec:
 
     @property
     def metrics(self):
-        """Gets the metrics of this ConfigurationResponseDataSpec.
+        r"""Gets the metrics of this ConfigurationResponseDataSpec.
 
         自定义监控指标配置指标名称。  Configuration.type为\"customMetric\"时，返回此参数。 
 
@@ -1132,7 +1132,7 @@ class ConfigurationResponseDataSpec:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ConfigurationResponseDataSpec.
+        r"""Sets the metrics of this ConfigurationResponseDataSpec.
 
         自定义监控指标配置指标名称。  Configuration.type为\"customMetric\"时，返回此参数。 
 

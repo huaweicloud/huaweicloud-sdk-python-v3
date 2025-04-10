@@ -26,7 +26,7 @@ class ListPolicyOfPolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self, policies=None):
-        """ListPolicyOfPolicyGroupResponse
+        r"""ListPolicyOfPolicyGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPolicyOfPolicyGroupResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListPolicyOfPolicyGroupResponse.
+        r"""Gets the policies of this ListPolicyOfPolicyGroupResponse.
 
         :return: The policies of this ListPolicyOfPolicyGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -53,7 +53,7 @@ class ListPolicyOfPolicyGroupResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListPolicyOfPolicyGroupResponse.
+        r"""Sets the policies of this ListPolicyOfPolicyGroupResponse.
 
         :param policies: The policies of this ListPolicyOfPolicyGroupResponse.
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`

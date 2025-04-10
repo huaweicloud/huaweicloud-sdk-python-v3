@@ -57,7 +57,7 @@ class BasicAwCata:
     }
 
     def __init__(self, aw_dir=None, cata_type=None, create_time=None, create_user=None, create_user_id=None, desc=None, extra_info=None, id=None, is_folder=None, name=None, name_view=None, parent_id=None, project_id=None, ref_cnt=None, region=None, update_time=None, update_user=None):
-        """BasicAwCata
+        r"""BasicAwCata
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class BasicAwCata:
 
     @property
     def aw_dir(self):
-        """Gets the aw_dir of this BasicAwCata.
+        r"""Gets the aw_dir of this BasicAwCata.
 
         aw归属目录信息
 
@@ -166,7 +166,7 @@ class BasicAwCata:
 
     @aw_dir.setter
     def aw_dir(self, aw_dir):
-        """Sets the aw_dir of this BasicAwCata.
+        r"""Sets the aw_dir of this BasicAwCata.
 
         aw归属目录信息
 
@@ -177,7 +177,7 @@ class BasicAwCata:
 
     @property
     def cata_type(self):
-        """Gets the cata_type of this BasicAwCata.
+        r"""Gets the cata_type of this BasicAwCata.
 
         目录层级
 
@@ -188,7 +188,7 @@ class BasicAwCata:
 
     @cata_type.setter
     def cata_type(self, cata_type):
-        """Sets the cata_type of this BasicAwCata.
+        r"""Sets the cata_type of this BasicAwCata.
 
         目录层级
 
@@ -199,7 +199,7 @@ class BasicAwCata:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BasicAwCata.
+        r"""Gets the create_time of this BasicAwCata.
 
         创建时间
 
@@ -210,7 +210,7 @@ class BasicAwCata:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BasicAwCata.
+        r"""Sets the create_time of this BasicAwCata.
 
         创建时间
 
@@ -221,7 +221,7 @@ class BasicAwCata:
 
     @property
     def create_user(self):
-        """Gets the create_user of this BasicAwCata.
+        r"""Gets the create_user of this BasicAwCata.
 
         创建人
 
@@ -232,7 +232,7 @@ class BasicAwCata:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this BasicAwCata.
+        r"""Sets the create_user of this BasicAwCata.
 
         创建人
 
@@ -243,7 +243,7 @@ class BasicAwCata:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this BasicAwCata.
+        r"""Gets the create_user_id of this BasicAwCata.
 
         创建人id
 
@@ -254,7 +254,7 @@ class BasicAwCata:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this BasicAwCata.
+        r"""Sets the create_user_id of this BasicAwCata.
 
         创建人id
 
@@ -265,7 +265,7 @@ class BasicAwCata:
 
     @property
     def desc(self):
-        """Gets the desc of this BasicAwCata.
+        r"""Gets the desc of this BasicAwCata.
 
         目录描述
 
@@ -276,7 +276,7 @@ class BasicAwCata:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this BasicAwCata.
+        r"""Sets the desc of this BasicAwCata.
 
         目录描述
 
@@ -287,7 +287,7 @@ class BasicAwCata:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this BasicAwCata.
+        r"""Gets the extra_info of this BasicAwCata.
 
         引用次数
 
@@ -298,7 +298,7 @@ class BasicAwCata:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this BasicAwCata.
+        r"""Sets the extra_info of this BasicAwCata.
 
         引用次数
 
@@ -309,7 +309,7 @@ class BasicAwCata:
 
     @property
     def id(self):
-        """Gets the id of this BasicAwCata.
+        r"""Gets the id of this BasicAwCata.
 
         id
 
@@ -320,7 +320,7 @@ class BasicAwCata:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BasicAwCata.
+        r"""Sets the id of this BasicAwCata.
 
         id
 
@@ -331,7 +331,7 @@ class BasicAwCata:
 
     @property
     def is_folder(self):
-        """Gets the is_folder of this BasicAwCata.
+        r"""Gets the is_folder of this BasicAwCata.
 
         判断是否为文件夹的标识
 
@@ -342,7 +342,7 @@ class BasicAwCata:
 
     @is_folder.setter
     def is_folder(self, is_folder):
-        """Sets the is_folder of this BasicAwCata.
+        r"""Sets the is_folder of this BasicAwCata.
 
         判断是否为文件夹的标识
 
@@ -353,7 +353,7 @@ class BasicAwCata:
 
     @property
     def name(self):
-        """Gets the name of this BasicAwCata.
+        r"""Gets the name of this BasicAwCata.
 
         名称
 
@@ -364,7 +364,7 @@ class BasicAwCata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BasicAwCata.
+        r"""Sets the name of this BasicAwCata.
 
         名称
 
@@ -375,7 +375,7 @@ class BasicAwCata:
 
     @property
     def name_view(self):
-        """Gets the name_view of this BasicAwCata.
+        r"""Gets the name_view of this BasicAwCata.
 
         aw在页面上显示的名字
 
@@ -386,7 +386,7 @@ class BasicAwCata:
 
     @name_view.setter
     def name_view(self, name_view):
-        """Sets the name_view of this BasicAwCata.
+        r"""Sets the name_view of this BasicAwCata.
 
         aw在页面上显示的名字
 
@@ -397,7 +397,7 @@ class BasicAwCata:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this BasicAwCata.
+        r"""Gets the parent_id of this BasicAwCata.
 
         aw目录父编号
 
@@ -408,7 +408,7 @@ class BasicAwCata:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this BasicAwCata.
+        r"""Sets the parent_id of this BasicAwCata.
 
         aw目录父编号
 
@@ -419,7 +419,7 @@ class BasicAwCata:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BasicAwCata.
+        r"""Gets the project_id of this BasicAwCata.
 
         工程ID
 
@@ -430,7 +430,7 @@ class BasicAwCata:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BasicAwCata.
+        r"""Sets the project_id of this BasicAwCata.
 
         工程ID
 
@@ -441,7 +441,7 @@ class BasicAwCata:
 
     @property
     def ref_cnt(self):
-        """Gets the ref_cnt of this BasicAwCata.
+        r"""Gets the ref_cnt of this BasicAwCata.
 
         引用次数
 
@@ -452,7 +452,7 @@ class BasicAwCata:
 
     @ref_cnt.setter
     def ref_cnt(self, ref_cnt):
-        """Sets the ref_cnt of this BasicAwCata.
+        r"""Sets the ref_cnt of this BasicAwCata.
 
         引用次数
 
@@ -463,7 +463,7 @@ class BasicAwCata:
 
     @property
     def region(self):
-        """Gets the region of this BasicAwCata.
+        r"""Gets the region of this BasicAwCata.
 
         区域名称
 
@@ -474,7 +474,7 @@ class BasicAwCata:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BasicAwCata.
+        r"""Sets the region of this BasicAwCata.
 
         区域名称
 
@@ -485,7 +485,7 @@ class BasicAwCata:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BasicAwCata.
+        r"""Gets the update_time of this BasicAwCata.
 
         更新时间
 
@@ -496,7 +496,7 @@ class BasicAwCata:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BasicAwCata.
+        r"""Sets the update_time of this BasicAwCata.
 
         更新时间
 
@@ -507,7 +507,7 @@ class BasicAwCata:
 
     @property
     def update_user(self):
-        """Gets the update_user of this BasicAwCata.
+        r"""Gets the update_user of this BasicAwCata.
 
         更新人
 
@@ -518,7 +518,7 @@ class BasicAwCata:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this BasicAwCata.
+        r"""Sets the update_user of this BasicAwCata.
 
         更新人
 

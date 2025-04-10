@@ -27,7 +27,7 @@ class Indicator:
     }
 
     def __init__(self, indicator_name=None, indicator_params=None):
-        """Indicator
+        r"""Indicator
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Indicator:
 
     @property
     def indicator_name(self):
-        """Gets the indicator_name of this Indicator.
+        r"""Gets the indicator_name of this Indicator.
 
         指标名称： - clickPVRate，点击PV率 - clickUVRate，点击UV率 - customize，自定义
 
@@ -61,7 +61,7 @@ class Indicator:
 
     @indicator_name.setter
     def indicator_name(self, indicator_name):
-        """Sets the indicator_name of this Indicator.
+        r"""Sets the indicator_name of this Indicator.
 
         指标名称： - clickPVRate，点击PV率 - clickUVRate，点击UV率 - customize，自定义
 
@@ -72,7 +72,7 @@ class Indicator:
 
     @property
     def indicator_params(self):
-        """Gets the indicator_params of this Indicator.
+        r"""Gets the indicator_params of this Indicator.
 
         :return: The indicator_params of this Indicator.
         :rtype: :class:`huaweicloudsdkres.v1.IndicatorParam`
@@ -81,7 +81,7 @@ class Indicator:
 
     @indicator_params.setter
     def indicator_params(self, indicator_params):
-        """Sets the indicator_params of this Indicator.
+        r"""Sets the indicator_params of this Indicator.
 
         :param indicator_params: The indicator_params of this Indicator.
         :type indicator_params: :class:`huaweicloudsdkres.v1.IndicatorParam`

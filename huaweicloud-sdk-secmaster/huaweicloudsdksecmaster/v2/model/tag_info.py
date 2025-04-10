@@ -27,7 +27,7 @@ class TagInfo:
     }
 
     def __init__(self, key=None, value=None):
-        """TagInfo
+        r"""TagInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagInfo:
 
     @property
     def key(self):
-        """Gets the key of this TagInfo.
+        r"""Gets the key of this TagInfo.
 
         标识 中文、字母、数字、_或者-，且长度范围[2, 36]
 
@@ -59,7 +59,7 @@ class TagInfo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagInfo.
+        r"""Sets the key of this TagInfo.
 
         标识 中文、字母、数字、_或者-，且长度范围[2, 36]
 
@@ -70,7 +70,7 @@ class TagInfo:
 
     @property
     def value(self):
-        """Gets the value of this TagInfo.
+        r"""Gets the value of this TagInfo.
 
         内容 中文、字母、数字、_或者-，且长度范围[2, 36]
 
@@ -81,7 +81,7 @@ class TagInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagInfo.
+        r"""Sets the value of this TagInfo.
 
         内容 中文、字母、数字、_或者-，且长度范围[2, 36]
 

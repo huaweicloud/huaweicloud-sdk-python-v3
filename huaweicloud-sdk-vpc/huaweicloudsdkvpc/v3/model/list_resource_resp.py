@@ -31,7 +31,7 @@ class ListResourceResp:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, resource_name=None, tags=None):
-        """ListResourceResp
+        r"""ListResourceResp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListResourceResp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListResourceResp.
+        r"""Gets the resource_id of this ListResourceResp.
 
         资源ID
 
@@ -71,7 +71,7 @@ class ListResourceResp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListResourceResp.
+        r"""Sets the resource_id of this ListResourceResp.
 
         资源ID
 
@@ -82,7 +82,7 @@ class ListResourceResp:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ListResourceResp.
+        r"""Gets the resource_detail of this ListResourceResp.
 
         资源详情。 资源对象，用于扩展。默认为空
 
@@ -93,7 +93,7 @@ class ListResourceResp:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ListResourceResp.
+        r"""Sets the resource_detail of this ListResourceResp.
 
         资源详情。 资源对象，用于扩展。默认为空
 
@@ -104,7 +104,7 @@ class ListResourceResp:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListResourceResp.
+        r"""Gets the resource_name of this ListResourceResp.
 
         资源名称，资源没有名称时默认为空字符串.
 
@@ -115,7 +115,7 @@ class ListResourceResp:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListResourceResp.
+        r"""Sets the resource_name of this ListResourceResp.
 
         资源名称，资源没有名称时默认为空字符串.
 
@@ -126,7 +126,7 @@ class ListResourceResp:
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourceResp.
+        r"""Gets the tags of this ListResourceResp.
 
         标签列表，没有标签默认为空数组
 
@@ -137,7 +137,7 @@ class ListResourceResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourceResp.
+        r"""Sets the tags of this ListResourceResp.
 
         标签列表，没有标签默认为空数组
 

@@ -25,7 +25,7 @@ class ListLogtankRequest:
     }
 
     def __init__(self, topic_urn=None):
-        """ListLogtankRequest
+        r"""ListLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLogtankRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ListLogtankRequest.
+        r"""Gets the topic_urn of this ListLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class ListLogtankRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ListLogtankRequest.
+        r"""Sets the topic_urn of this ListLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 

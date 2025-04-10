@@ -27,7 +27,7 @@ class RolesOption:
     }
 
     def __init__(self, role_db_name=None, role_name=None):
-        """RolesOption
+        r"""RolesOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RolesOption:
 
     @property
     def role_db_name(self):
-        """Gets the role_db_name of this RolesOption.
+        r"""Gets the role_db_name of this RolesOption.
 
         被继承角色所在数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -59,7 +59,7 @@ class RolesOption:
 
     @role_db_name.setter
     def role_db_name(self, role_db_name):
-        """Sets the role_db_name of this RolesOption.
+        r"""Sets the role_db_name of this RolesOption.
 
         被继承角色所在数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -70,7 +70,7 @@ class RolesOption:
 
     @property
     def role_name(self):
-        """Gets the role_name of this RolesOption.
+        r"""Gets the role_name of this RolesOption.
 
         被继承角色的名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -81,7 +81,7 @@ class RolesOption:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this RolesOption.
+        r"""Sets the role_name of this RolesOption.
 
         被继承角色的名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 

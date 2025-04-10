@@ -24,7 +24,7 @@ class DeleteWebHookConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteWebHookConfigResponse
+        r"""DeleteWebHookConfigResponse
 
         The model defined in huaweicloud sdk
 

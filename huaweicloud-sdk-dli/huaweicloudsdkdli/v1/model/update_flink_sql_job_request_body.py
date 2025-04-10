@@ -77,7 +77,7 @@ class UpdateFlinkSqlJobRequestBody:
     }
 
     def __init__(self, name=None, desc=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, operator_config=None, static_estimator_config=None, flink_version=None):
-        """UpdateFlinkSqlJobRequestBody
+        r"""UpdateFlinkSqlJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the name of this UpdateFlinkSqlJobRequestBody.
 
         作业名称。长度限制：0-57个字符。
 
@@ -236,7 +236,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the name of this UpdateFlinkSqlJobRequestBody.
 
         作业名称。长度限制：0-57个字符。
 
@@ -247,7 +247,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def desc(self):
-        """Gets the desc of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the desc of this UpdateFlinkSqlJobRequestBody.
 
         作业描述。长度限制：0-2048个字符。
 
@@ -258,7 +258,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the desc of this UpdateFlinkSqlJobRequestBody.
 
         作业描述。长度限制：0-2048个字符。
 
@@ -269,7 +269,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the queue_name of this UpdateFlinkSqlJobRequestBody.
 
         队列名称。长度限制：1-128个字符。
 
@@ -280,7 +280,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the queue_name of this UpdateFlinkSqlJobRequestBody.
 
         队列名称。长度限制：1-128个字符。
 
@@ -291,7 +291,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def sql_body(self):
-        """Gets the sql_body of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the sql_body of this UpdateFlinkSqlJobRequestBody.
 
         Stream SQL语句。长度限制：0-1024*1024个字符。
 
@@ -302,7 +302,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @sql_body.setter
     def sql_body(self, sql_body):
-        """Sets the sql_body of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the sql_body of this UpdateFlinkSqlJobRequestBody.
 
         Stream SQL语句。长度限制：0-1024*1024个字符。
 
@@ -313,7 +313,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def run_mode(self):
-        """Gets the run_mode of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the run_mode of this UpdateFlinkSqlJobRequestBody.
 
         作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 默认值为shared_cluster。
 
@@ -324,7 +324,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @run_mode.setter
     def run_mode(self, run_mode):
-        """Sets the run_mode of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the run_mode of this UpdateFlinkSqlJobRequestBody.
 
         作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 默认值为shared_cluster。
 
@@ -335,7 +335,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def cu_number(self):
-        """Gets the cu_number of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the cu_number of this UpdateFlinkSqlJobRequestBody.
 
         用户为作业选择的CU数量。默认值为2。
 
@@ -346,7 +346,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @cu_number.setter
     def cu_number(self, cu_number):
-        """Sets the cu_number of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the cu_number of this UpdateFlinkSqlJobRequestBody.
 
         用户为作业选择的CU数量。默认值为2。
 
@@ -357,7 +357,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def parallel_number(self):
-        """Gets the parallel_number of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the parallel_number of this UpdateFlinkSqlJobRequestBody.
 
         用户设置的作业并行数目。默认值为1。
 
@@ -368,7 +368,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @parallel_number.setter
     def parallel_number(self, parallel_number):
-        """Sets the parallel_number of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the parallel_number of this UpdateFlinkSqlJobRequestBody.
 
         用户设置的作业并行数目。默认值为1。
 
@@ -379,7 +379,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def checkpoint_enabled(self):
-        """Gets the checkpoint_enabled of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the checkpoint_enabled of this UpdateFlinkSqlJobRequestBody.
 
         是否开启作业自动快照功能。 开启：true; 关闭：false; 默认：false.
 
@@ -390,7 +390,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @checkpoint_enabled.setter
     def checkpoint_enabled(self, checkpoint_enabled):
-        """Sets the checkpoint_enabled of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the checkpoint_enabled of this UpdateFlinkSqlJobRequestBody.
 
         是否开启作业自动快照功能。 开启：true; 关闭：false; 默认：false.
 
@@ -401,7 +401,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def checkpoint_mode(self):
-        """Gets the checkpoint_mode of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the checkpoint_mode of this UpdateFlinkSqlJobRequestBody.
 
         快照模式： 1表示ExactlyOnce：数据只被消费一次。 2表示AtLeastOnce：数据至少被消费一次。 默认值为1。
 
@@ -412,7 +412,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @checkpoint_mode.setter
     def checkpoint_mode(self, checkpoint_mode):
-        """Sets the checkpoint_mode of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the checkpoint_mode of this UpdateFlinkSqlJobRequestBody.
 
         快照模式： 1表示ExactlyOnce：数据只被消费一次。 2表示AtLeastOnce：数据至少被消费一次。 默认值为1。
 
@@ -423,7 +423,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def checkpoint_interval(self):
-        """Gets the checkpoint_interval of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the checkpoint_interval of this UpdateFlinkSqlJobRequestBody.
 
         快照时间间隔, 单位为秒，默认值为10。
 
@@ -434,7 +434,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @checkpoint_interval.setter
     def checkpoint_interval(self, checkpoint_interval):
-        """Sets the checkpoint_interval of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the checkpoint_interval of this UpdateFlinkSqlJobRequestBody.
 
         快照时间间隔, 单位为秒，默认值为10。
 
@@ -445,7 +445,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the obs_bucket of this UpdateFlinkSqlJobRequestBody.
 
         当checkpoint_enabled为true时，该参数是用户授权保存快照的OBS路径。当log_enabled 为true时，该参数是用户授权保存作业日志的OBS路径。
 
@@ -456,7 +456,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the obs_bucket of this UpdateFlinkSqlJobRequestBody.
 
         当checkpoint_enabled为true时，该参数是用户授权保存快照的OBS路径。当log_enabled 为true时，该参数是用户授权保存作业日志的OBS路径。
 
@@ -467,7 +467,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def log_enabled(self):
-        """Gets the log_enabled of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the log_enabled of this UpdateFlinkSqlJobRequestBody.
 
         是否开启作业的日志上传到用户的OBS功能，默认为false。
 
@@ -478,7 +478,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @log_enabled.setter
     def log_enabled(self, log_enabled):
-        """Sets the log_enabled of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the log_enabled of this UpdateFlinkSqlJobRequestBody.
 
         是否开启作业的日志上传到用户的OBS功能，默认为false。
 
@@ -489,7 +489,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def smn_topic(self):
-        """Gets the smn_topic of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the smn_topic of this UpdateFlinkSqlJobRequestBody.
 
         当作业异常时，向该SMN主题推送告警信息。
 
@@ -500,7 +500,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @smn_topic.setter
     def smn_topic(self, smn_topic):
-        """Sets the smn_topic of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the smn_topic of this UpdateFlinkSqlJobRequestBody.
 
         当作业异常时，向该SMN主题推送告警信息。
 
@@ -511,7 +511,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def restart_when_exception(self):
-        """Gets the restart_when_exception of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the restart_when_exception of this UpdateFlinkSqlJobRequestBody.
 
         是否开启作业异常自动重启，默认为false。
 
@@ -522,7 +522,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @restart_when_exception.setter
     def restart_when_exception(self, restart_when_exception):
-        """Sets the restart_when_exception of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the restart_when_exception of this UpdateFlinkSqlJobRequestBody.
 
         是否开启作业异常自动重启，默认为false。
 
@@ -533,7 +533,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def idle_state_retention(self):
-        """Gets the idle_state_retention of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the idle_state_retention of this UpdateFlinkSqlJobRequestBody.
 
         空闲状态过期周期，单位为秒，默认值为3600。
 
@@ -544,7 +544,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @idle_state_retention.setter
     def idle_state_retention(self, idle_state_retention):
-        """Sets the idle_state_retention of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the idle_state_retention of this UpdateFlinkSqlJobRequestBody.
 
         空闲状态过期周期，单位为秒，默认值为3600。
 
@@ -555,7 +555,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def edge_group_ids(self):
-        """Gets the edge_group_ids of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the edge_group_ids of this UpdateFlinkSqlJobRequestBody.
 
         边缘计算组ID列表。
 
@@ -566,7 +566,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @edge_group_ids.setter
     def edge_group_ids(self, edge_group_ids):
-        """Sets the edge_group_ids of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the edge_group_ids of this UpdateFlinkSqlJobRequestBody.
 
         边缘计算组ID列表。
 
@@ -577,7 +577,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def dirty_data_strategy(self):
-        """Gets the dirty_data_strategy of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the dirty_data_strategy of this UpdateFlinkSqlJobRequestBody.
 
         作业脏数据策略。 “2”：保存； “1”：抛出异常； “0”：忽略； 默认值为“0”。
 
@@ -588,7 +588,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @dirty_data_strategy.setter
     def dirty_data_strategy(self, dirty_data_strategy):
-        """Sets the dirty_data_strategy of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the dirty_data_strategy of this UpdateFlinkSqlJobRequestBody.
 
         作业脏数据策略。 “2”：保存； “1”：抛出异常； “0”：忽略； 默认值为“0”。
 
@@ -599,7 +599,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def udf_jar_url(self):
-        """Gets the udf_jar_url of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the udf_jar_url of this UpdateFlinkSqlJobRequestBody.
 
         用户自定义UDF文件，在后续作业中可以调用插入Jar包中的自定义函数。 UDF Jar包的管理方式： 上传OBS管理UDF Jar包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理UDF Jar包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不再支持DLI管理UDF Jar包。
 
@@ -610,7 +610,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @udf_jar_url.setter
     def udf_jar_url(self, udf_jar_url):
-        """Sets the udf_jar_url of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the udf_jar_url of this UpdateFlinkSqlJobRequestBody.
 
         用户自定义UDF文件，在后续作业中可以调用插入Jar包中的自定义函数。 UDF Jar包的管理方式： 上传OBS管理UDF Jar包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理UDF Jar包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不再支持DLI管理UDF Jar包。
 
@@ -621,7 +621,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def manager_cu_number(self):
-        """Gets the manager_cu_number of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the manager_cu_number of this UpdateFlinkSqlJobRequestBody.
 
         用户为作业选择的管理单元（jobmanager）CU数量，默认值为“1”。
 
@@ -632,7 +632,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @manager_cu_number.setter
     def manager_cu_number(self, manager_cu_number):
-        """Sets the manager_cu_number of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the manager_cu_number of this UpdateFlinkSqlJobRequestBody.
 
         用户为作业选择的管理单元（jobmanager）CU数量，默认值为“1”。
 
@@ -643,7 +643,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def tm_cus(self):
-        """Gets the tm_cus of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the tm_cus of this UpdateFlinkSqlJobRequestBody.
 
         每个taskmanager的CU数，默认值为“1”。
 
@@ -654,7 +654,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @tm_cus.setter
     def tm_cus(self, tm_cus):
-        """Sets the tm_cus of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the tm_cus of this UpdateFlinkSqlJobRequestBody.
 
         每个taskmanager的CU数，默认值为“1”。
 
@@ -665,7 +665,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def tm_slot_num(self):
-        """Gets the tm_slot_num of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the tm_slot_num of this UpdateFlinkSqlJobRequestBody.
 
         每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”。
 
@@ -676,7 +676,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @tm_slot_num.setter
     def tm_slot_num(self, tm_slot_num):
-        """Sets the tm_slot_num of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the tm_slot_num of this UpdateFlinkSqlJobRequestBody.
 
         每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”。
 
@@ -687,7 +687,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def resume_checkpoint(self):
-        """Gets the resume_checkpoint of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the resume_checkpoint of this UpdateFlinkSqlJobRequestBody.
 
         异常重启是否从checkpoint恢复。
 
@@ -698,7 +698,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @resume_checkpoint.setter
     def resume_checkpoint(self, resume_checkpoint):
-        """Sets the resume_checkpoint of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the resume_checkpoint of this UpdateFlinkSqlJobRequestBody.
 
         异常重启是否从checkpoint恢复。
 
@@ -709,7 +709,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def resume_max_num(self):
-        """Gets the resume_max_num of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the resume_max_num of this UpdateFlinkSqlJobRequestBody.
 
         异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
 
@@ -720,7 +720,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @resume_max_num.setter
     def resume_max_num(self, resume_max_num):
-        """Sets the resume_max_num of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the resume_max_num of this UpdateFlinkSqlJobRequestBody.
 
         异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
 
@@ -731,7 +731,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def runtime_config(self):
-        """Gets the runtime_config of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the runtime_config of this UpdateFlinkSqlJobRequestBody.
 
         Flink作业运行时自定义优化参数。
 
@@ -742,7 +742,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @runtime_config.setter
     def runtime_config(self, runtime_config):
-        """Sets the runtime_config of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the runtime_config of this UpdateFlinkSqlJobRequestBody.
 
         Flink作业运行时自定义优化参数。
 
@@ -753,7 +753,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def operator_config(self):
-        """Gets the operator_config of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the operator_config of this UpdateFlinkSqlJobRequestBody.
 
         算子的并行度配置。
 
@@ -764,7 +764,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @operator_config.setter
     def operator_config(self, operator_config):
-        """Sets the operator_config of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the operator_config of this UpdateFlinkSqlJobRequestBody.
 
         算子的并行度配置。
 
@@ -775,7 +775,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def static_estimator_config(self):
-        """Gets the static_estimator_config of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the static_estimator_config of this UpdateFlinkSqlJobRequestBody.
 
         每个算子的流量/命中率配置，json格式的字符串。例如： {\"operator_list\":[   {\"id\":\"0a448493b4782967b150582570326227\",\"rate_factor\":0.55},   {\"id\":\"6d2677a0ecc3fd8df0b72ec675edf8f4\",\"rate_factor\":1},   {\"id\":\"ea632d67b7d595e5b851708ae9ad79d6\",\"rate_factor\":0.55},   {\"id\":\"bc764cd8ddf7a0cff126f51c16239658\",\"output_rate\":2000} ]}
 
@@ -786,7 +786,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @static_estimator_config.setter
     def static_estimator_config(self, static_estimator_config):
-        """Sets the static_estimator_config of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the static_estimator_config of this UpdateFlinkSqlJobRequestBody.
 
         每个算子的流量/命中率配置，json格式的字符串。例如： {\"operator_list\":[   {\"id\":\"0a448493b4782967b150582570326227\",\"rate_factor\":0.55},   {\"id\":\"6d2677a0ecc3fd8df0b72ec675edf8f4\",\"rate_factor\":1},   {\"id\":\"ea632d67b7d595e5b851708ae9ad79d6\",\"rate_factor\":0.55},   {\"id\":\"bc764cd8ddf7a0cff126f51c16239658\",\"output_rate\":2000} ]}
 
@@ -797,7 +797,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @property
     def flink_version(self):
-        """Gets the flink_version of this UpdateFlinkSqlJobRequestBody.
+        r"""Gets the flink_version of this UpdateFlinkSqlJobRequestBody.
 
         Flink版本。当前只支持1.10和1.12。
 
@@ -808,7 +808,7 @@ class UpdateFlinkSqlJobRequestBody:
 
     @flink_version.setter
     def flink_version(self, flink_version):
-        """Sets the flink_version of this UpdateFlinkSqlJobRequestBody.
+        r"""Sets the flink_version of this UpdateFlinkSqlJobRequestBody.
 
         Flink版本。当前只支持1.10和1.12。
 

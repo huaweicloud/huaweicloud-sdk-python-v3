@@ -51,7 +51,7 @@ class TicsApproveLogVo:
     }
 
     def __init__(self, create_time=None, creator_id=None, creator_name=None, domain_alias=None, domain_name=None, league=None, league_id=None, league_name=None, partner_id=None, partner_status=None, partners=None, update_id=None, update_name=None, update_time=None):
-        """TicsApproveLogVo
+        r"""TicsApproveLogVo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class TicsApproveLogVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TicsApproveLogVo.
+        r"""Gets the create_time of this TicsApproveLogVo.
 
         创建时间
 
@@ -145,7 +145,7 @@ class TicsApproveLogVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TicsApproveLogVo.
+        r"""Sets the create_time of this TicsApproveLogVo.
 
         创建时间
 
@@ -156,7 +156,7 @@ class TicsApproveLogVo:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this TicsApproveLogVo.
+        r"""Gets the creator_id of this TicsApproveLogVo.
 
         创建者Id
 
@@ -167,7 +167,7 @@ class TicsApproveLogVo:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this TicsApproveLogVo.
+        r"""Sets the creator_id of this TicsApproveLogVo.
 
         创建者Id
 
@@ -178,7 +178,7 @@ class TicsApproveLogVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TicsApproveLogVo.
+        r"""Gets the creator_name of this TicsApproveLogVo.
 
         创建者名称
 
@@ -189,7 +189,7 @@ class TicsApproveLogVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TicsApproveLogVo.
+        r"""Sets the creator_name of this TicsApproveLogVo.
 
         创建者名称
 
@@ -200,7 +200,7 @@ class TicsApproveLogVo:
 
     @property
     def domain_alias(self):
-        """Gets the domain_alias of this TicsApproveLogVo.
+        r"""Gets the domain_alias of this TicsApproveLogVo.
 
         租户别名
 
@@ -211,7 +211,7 @@ class TicsApproveLogVo:
 
     @domain_alias.setter
     def domain_alias(self, domain_alias):
-        """Sets the domain_alias of this TicsApproveLogVo.
+        r"""Sets the domain_alias of this TicsApproveLogVo.
 
         租户别名
 
@@ -222,7 +222,7 @@ class TicsApproveLogVo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this TicsApproveLogVo.
+        r"""Gets the domain_name of this TicsApproveLogVo.
 
         租户名称
 
@@ -233,7 +233,7 @@ class TicsApproveLogVo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this TicsApproveLogVo.
+        r"""Sets the domain_name of this TicsApproveLogVo.
 
         租户名称
 
@@ -244,7 +244,7 @@ class TicsApproveLogVo:
 
     @property
     def league(self):
-        """Gets the league of this TicsApproveLogVo.
+        r"""Gets the league of this TicsApproveLogVo.
 
         :return: The league of this TicsApproveLogVo.
         :rtype: :class:`huaweicloudsdktics.v1.TicsLeagueNoticeVo`
@@ -253,7 +253,7 @@ class TicsApproveLogVo:
 
     @league.setter
     def league(self, league):
-        """Sets the league of this TicsApproveLogVo.
+        r"""Sets the league of this TicsApproveLogVo.
 
         :param league: The league of this TicsApproveLogVo.
         :type league: :class:`huaweicloudsdktics.v1.TicsLeagueNoticeVo`
@@ -262,7 +262,7 @@ class TicsApproveLogVo:
 
     @property
     def league_id(self):
-        """Gets the league_id of this TicsApproveLogVo.
+        r"""Gets the league_id of this TicsApproveLogVo.
 
         联盟Id
 
@@ -273,7 +273,7 @@ class TicsApproveLogVo:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this TicsApproveLogVo.
+        r"""Sets the league_id of this TicsApproveLogVo.
 
         联盟Id
 
@@ -284,7 +284,7 @@ class TicsApproveLogVo:
 
     @property
     def league_name(self):
-        """Gets the league_name of this TicsApproveLogVo.
+        r"""Gets the league_name of this TicsApproveLogVo.
 
         联盟名称
 
@@ -295,7 +295,7 @@ class TicsApproveLogVo:
 
     @league_name.setter
     def league_name(self, league_name):
-        """Sets the league_name of this TicsApproveLogVo.
+        r"""Sets the league_name of this TicsApproveLogVo.
 
         联盟名称
 
@@ -306,7 +306,7 @@ class TicsApproveLogVo:
 
     @property
     def partner_id(self):
-        """Gets the partner_id of this TicsApproveLogVo.
+        r"""Gets the partner_id of this TicsApproveLogVo.
 
         联盟参与方Id
 
@@ -317,7 +317,7 @@ class TicsApproveLogVo:
 
     @partner_id.setter
     def partner_id(self, partner_id):
-        """Sets the partner_id of this TicsApproveLogVo.
+        r"""Sets the partner_id of this TicsApproveLogVo.
 
         联盟参与方Id
 
@@ -328,7 +328,7 @@ class TicsApproveLogVo:
 
     @property
     def partner_status(self):
-        """Gets the partner_status of this TicsApproveLogVo.
+        r"""Gets the partner_status of this TicsApproveLogVo.
 
         联盟参与方状态，JOINED.已加入，JOIN_PENDING_APPROVAL.待审核，JOIN_REJECTED.拒绝加入，QUIT.已退出
 
@@ -339,7 +339,7 @@ class TicsApproveLogVo:
 
     @partner_status.setter
     def partner_status(self, partner_status):
-        """Sets the partner_status of this TicsApproveLogVo.
+        r"""Sets the partner_status of this TicsApproveLogVo.
 
         联盟参与方状态，JOINED.已加入，JOIN_PENDING_APPROVAL.待审核，JOIN_REJECTED.拒绝加入，QUIT.已退出
 
@@ -350,7 +350,7 @@ class TicsApproveLogVo:
 
     @property
     def partners(self):
-        """Gets the partners of this TicsApproveLogVo.
+        r"""Gets the partners of this TicsApproveLogVo.
 
         :return: The partners of this TicsApproveLogVo.
         :rtype: list[:class:`huaweicloudsdktics.v1.TicsLeaguePartnerVo`]
@@ -359,7 +359,7 @@ class TicsApproveLogVo:
 
     @partners.setter
     def partners(self, partners):
-        """Sets the partners of this TicsApproveLogVo.
+        r"""Sets the partners of this TicsApproveLogVo.
 
         :param partners: The partners of this TicsApproveLogVo.
         :type partners: list[:class:`huaweicloudsdktics.v1.TicsLeaguePartnerVo`]
@@ -368,7 +368,7 @@ class TicsApproveLogVo:
 
     @property
     def update_id(self):
-        """Gets the update_id of this TicsApproveLogVo.
+        r"""Gets the update_id of this TicsApproveLogVo.
 
         更新者Id
 
@@ -379,7 +379,7 @@ class TicsApproveLogVo:
 
     @update_id.setter
     def update_id(self, update_id):
-        """Sets the update_id of this TicsApproveLogVo.
+        r"""Sets the update_id of this TicsApproveLogVo.
 
         更新者Id
 
@@ -390,7 +390,7 @@ class TicsApproveLogVo:
 
     @property
     def update_name(self):
-        """Gets the update_name of this TicsApproveLogVo.
+        r"""Gets the update_name of this TicsApproveLogVo.
 
         更新者名称
 
@@ -401,7 +401,7 @@ class TicsApproveLogVo:
 
     @update_name.setter
     def update_name(self, update_name):
-        """Sets the update_name of this TicsApproveLogVo.
+        r"""Sets the update_name of this TicsApproveLogVo.
 
         更新者名称
 
@@ -412,7 +412,7 @@ class TicsApproveLogVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TicsApproveLogVo.
+        r"""Gets the update_time of this TicsApproveLogVo.
 
         更新时间
 
@@ -423,7 +423,7 @@ class TicsApproveLogVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TicsApproveLogVo.
+        r"""Sets the update_time of this TicsApproveLogVo.
 
         更新时间
 

@@ -25,7 +25,7 @@ class DeleteSyncTaskRequest:
     }
 
     def __init__(self, sync_task_id=None):
-        """DeleteSyncTaskRequest
+        r"""DeleteSyncTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSyncTaskRequest:
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this DeleteSyncTaskRequest.
+        r"""Gets the sync_task_id of this DeleteSyncTaskRequest.
 
         同步任务ID。
 
@@ -53,7 +53,7 @@ class DeleteSyncTaskRequest:
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this DeleteSyncTaskRequest.
+        r"""Sets the sync_task_id of this DeleteSyncTaskRequest.
 
         同步任务ID。
 

@@ -55,7 +55,7 @@ class ListL7policiesRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, listener_id=None, action=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, position=None, provisioning_status=None, enterprise_project_id=None, display_all_rules=None):
-        """ListL7policiesRequest
+        r"""ListL7policiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListL7policiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListL7policiesRequest.
+        r"""Gets the limit of this ListL7policiesRequest.
 
         分页查询中每页的转发策略个数
 
@@ -159,7 +159,7 @@ class ListL7policiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListL7policiesRequest.
+        r"""Sets the limit of this ListL7policiesRequest.
 
         分页查询中每页的转发策略个数
 
@@ -170,7 +170,7 @@ class ListL7policiesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListL7policiesRequest.
+        r"""Gets the marker of this ListL7policiesRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的转发策略的id。不指定时表示查询第一页。
 
@@ -181,7 +181,7 @@ class ListL7policiesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListL7policiesRequest.
+        r"""Sets the marker of this ListL7policiesRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的转发策略的id。不指定时表示查询第一页。
 
@@ -192,7 +192,7 @@ class ListL7policiesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListL7policiesRequest.
+        r"""Gets the page_reverse of this ListL7policiesRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -203,7 +203,7 @@ class ListL7policiesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListL7policiesRequest.
+        r"""Sets the page_reverse of this ListL7policiesRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -214,7 +214,7 @@ class ListL7policiesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListL7policiesRequest.
+        r"""Gets the id of this ListL7policiesRequest.
 
         转发策略ID。
 
@@ -225,7 +225,7 @@ class ListL7policiesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListL7policiesRequest.
+        r"""Sets the id of this ListL7policiesRequest.
 
         转发策略ID。
 
@@ -236,7 +236,7 @@ class ListL7policiesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListL7policiesRequest.
+        r"""Gets the name of this ListL7policiesRequest.
 
         转发策略名称。
 
@@ -247,7 +247,7 @@ class ListL7policiesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListL7policiesRequest.
+        r"""Sets the name of this ListL7policiesRequest.
 
         转发策略名称。
 
@@ -258,7 +258,7 @@ class ListL7policiesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListL7policiesRequest.
+        r"""Gets the description of this ListL7policiesRequest.
 
         转发策略的描述信息。
 
@@ -269,7 +269,7 @@ class ListL7policiesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListL7policiesRequest.
+        r"""Sets the description of this ListL7policiesRequest.
 
         转发策略的描述信息。
 
@@ -280,7 +280,7 @@ class ListL7policiesRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListL7policiesRequest.
+        r"""Gets the admin_state_up of this ListL7policiesRequest.
 
         转发策略的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
@@ -291,7 +291,7 @@ class ListL7policiesRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListL7policiesRequest.
+        r"""Sets the admin_state_up of this ListL7policiesRequest.
 
         转发策略的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
@@ -302,7 +302,7 @@ class ListL7policiesRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListL7policiesRequest.
+        r"""Gets the listener_id of this ListL7policiesRequest.
 
         转发策略所在的监听器ID。
 
@@ -313,7 +313,7 @@ class ListL7policiesRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListL7policiesRequest.
+        r"""Sets the listener_id of this ListL7policiesRequest.
 
         转发策略所在的监听器ID。
 
@@ -324,7 +324,7 @@ class ListL7policiesRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListL7policiesRequest.
+        r"""Gets the action of this ListL7policiesRequest.
 
         转发策略的匹配动作。 取值范围：REDIRECT_TO_POOL：将匹配的流量转发到redirect_pool_id指定的后端云服务器组上；REDIRECT_TO_LISTENER：将listener_id指定的HTTP监听器的流量重定向到redirect_listener_id指定的TERMINATED_HTTPS监听器上。
 
@@ -335,7 +335,7 @@ class ListL7policiesRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListL7policiesRequest.
+        r"""Sets the action of this ListL7policiesRequest.
 
         转发策略的匹配动作。 取值范围：REDIRECT_TO_POOL：将匹配的流量转发到redirect_pool_id指定的后端云服务器组上；REDIRECT_TO_LISTENER：将listener_id指定的HTTP监听器的流量重定向到redirect_listener_id指定的TERMINATED_HTTPS监听器上。
 
@@ -346,7 +346,7 @@ class ListL7policiesRequest:
 
     @property
     def redirect_pool_id(self):
-        """Gets the redirect_pool_id of this ListL7policiesRequest.
+        r"""Gets the redirect_pool_id of this ListL7policiesRequest.
 
         流量匹配后转发到后端云服务器组的ID。
 
@@ -357,7 +357,7 @@ class ListL7policiesRequest:
 
     @redirect_pool_id.setter
     def redirect_pool_id(self, redirect_pool_id):
-        """Sets the redirect_pool_id of this ListL7policiesRequest.
+        r"""Sets the redirect_pool_id of this ListL7policiesRequest.
 
         流量匹配后转发到后端云服务器组的ID。
 
@@ -368,7 +368,7 @@ class ListL7policiesRequest:
 
     @property
     def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this ListL7policiesRequest.
+        r"""Gets the redirect_listener_id of this ListL7policiesRequest.
 
         流量匹配后转发到的监听器的ID。
 
@@ -379,7 +379,7 @@ class ListL7policiesRequest:
 
     @redirect_listener_id.setter
     def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this ListL7policiesRequest.
+        r"""Sets the redirect_listener_id of this ListL7policiesRequest.
 
         流量匹配后转发到的监听器的ID。
 
@@ -390,7 +390,7 @@ class ListL7policiesRequest:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this ListL7policiesRequest.
+        r"""Gets the redirect_url of this ListL7policiesRequest.
 
         转发策略重定向到的url。该字段为预留字段，暂未启用。
 
@@ -401,7 +401,7 @@ class ListL7policiesRequest:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this ListL7policiesRequest.
+        r"""Sets the redirect_url of this ListL7policiesRequest.
 
         转发策略重定向到的url。该字段为预留字段，暂未启用。
 
@@ -412,7 +412,7 @@ class ListL7policiesRequest:
 
     @property
     def position(self):
-        """Gets the position of this ListL7policiesRequest.
+        r"""Gets the position of this ListL7policiesRequest.
 
         转发优先级，从1递增，最高100。默认值：100；该字段为预留字段，暂未启用。
 
@@ -423,7 +423,7 @@ class ListL7policiesRequest:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ListL7policiesRequest.
+        r"""Sets the position of this ListL7policiesRequest.
 
         转发优先级，从1递增，最高100。默认值：100；该字段为预留字段，暂未启用。
 
@@ -434,7 +434,7 @@ class ListL7policiesRequest:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListL7policiesRequest.
+        r"""Gets the provisioning_status of this ListL7policiesRequest.
 
         转发策略的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
 
@@ -445,7 +445,7 @@ class ListL7policiesRequest:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListL7policiesRequest.
+        r"""Sets the provisioning_status of this ListL7policiesRequest.
 
         转发策略的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
 
@@ -456,7 +456,7 @@ class ListL7policiesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListL7policiesRequest.
+        r"""Gets the enterprise_project_id of this ListL7policiesRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -467,7 +467,7 @@ class ListL7policiesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListL7policiesRequest.
+        r"""Sets the enterprise_project_id of this ListL7policiesRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -478,7 +478,7 @@ class ListL7policiesRequest:
 
     @property
     def display_all_rules(self):
-        """Gets the display_all_rules of this ListL7policiesRequest.
+        r"""Gets the display_all_rules of this ListL7policiesRequest.
 
         是否显示所有的rule信息。取值范围：false表示不显示（跟以前一样只显示ID）；true表示显示。
 
@@ -489,7 +489,7 @@ class ListL7policiesRequest:
 
     @display_all_rules.setter
     def display_all_rules(self, display_all_rules):
-        """Sets the display_all_rules of this ListL7policiesRequest.
+        r"""Sets the display_all_rules of this ListL7policiesRequest.
 
         是否显示所有的rule信息。取值范围：false表示不显示（跟以前一样只显示ID）；true表示显示。
 

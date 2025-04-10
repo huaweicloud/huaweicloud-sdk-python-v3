@@ -50,7 +50,7 @@ class ShowNotebookResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, creator=None, url=None, flavor=None, status=None, image=None, storages=None, create_time=None, update_time=None, failed_message=None, events=None):
-        """ShowNotebookResponse
+        r"""ShowNotebookResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNotebookResponse.
+        r"""Gets the id of this ShowNotebookResponse.
 
         notebook ID
 
@@ -139,7 +139,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNotebookResponse.
+        r"""Sets the id of this ShowNotebookResponse.
 
         notebook ID
 
@@ -150,7 +150,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNotebookResponse.
+        r"""Gets the name of this ShowNotebookResponse.
 
         notebook名称
 
@@ -161,7 +161,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNotebookResponse.
+        r"""Sets the name of this ShowNotebookResponse.
 
         notebook名称
 
@@ -172,7 +172,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowNotebookResponse.
+        r"""Gets the description of this ShowNotebookResponse.
 
         notebook描述
 
@@ -183,7 +183,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowNotebookResponse.
+        r"""Sets the description of this ShowNotebookResponse.
 
         notebook描述
 
@@ -194,7 +194,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowNotebookResponse.
+        r"""Gets the creator of this ShowNotebookResponse.
 
         notebook所属用户
 
@@ -205,7 +205,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowNotebookResponse.
+        r"""Sets the creator of this ShowNotebookResponse.
 
         notebook所属用户
 
@@ -216,7 +216,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowNotebookResponse.
+        r"""Gets the url of this ShowNotebookResponse.
 
         notebook访问URL
 
@@ -227,7 +227,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowNotebookResponse.
+        r"""Sets the url of this ShowNotebookResponse.
 
         notebook访问URL
 
@@ -238,7 +238,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowNotebookResponse.
+        r"""Gets the flavor of this ShowNotebookResponse.
 
         :return: The flavor of this ShowNotebookResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -247,7 +247,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowNotebookResponse.
+        r"""Sets the flavor of this ShowNotebookResponse.
 
         :param flavor: The flavor of this ShowNotebookResponse.
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -256,7 +256,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNotebookResponse.
+        r"""Gets the status of this ShowNotebookResponse.
 
         :return: The status of this ShowNotebookResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
@@ -265,7 +265,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNotebookResponse.
+        r"""Sets the status of this ShowNotebookResponse.
 
         :param status: The status of this ShowNotebookResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
@@ -274,7 +274,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def image(self):
-        """Gets the image of this ShowNotebookResponse.
+        r"""Gets the image of this ShowNotebookResponse.
 
         :return: The image of this ShowNotebookResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
@@ -283,7 +283,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ShowNotebookResponse.
+        r"""Sets the image of this ShowNotebookResponse.
 
         :param image: The image of this ShowNotebookResponse.
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
@@ -292,7 +292,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def storages(self):
-        """Gets the storages of this ShowNotebookResponse.
+        r"""Gets the storages of this ShowNotebookResponse.
 
         notebook存储信息
 
@@ -303,7 +303,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @storages.setter
     def storages(self, storages):
-        """Sets the storages of this ShowNotebookResponse.
+        r"""Sets the storages of this ShowNotebookResponse.
 
         notebook存储信息
 
@@ -314,7 +314,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowNotebookResponse.
+        r"""Gets the create_time of this ShowNotebookResponse.
 
         notebook创建时间
 
@@ -325,7 +325,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowNotebookResponse.
+        r"""Sets the create_time of this ShowNotebookResponse.
 
         notebook创建时间
 
@@ -336,7 +336,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowNotebookResponse.
+        r"""Gets the update_time of this ShowNotebookResponse.
 
         notebook更新时间
 
@@ -347,7 +347,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowNotebookResponse.
+        r"""Sets the update_time of this ShowNotebookResponse.
 
         notebook更新时间
 
@@ -358,7 +358,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this ShowNotebookResponse.
+        r"""Gets the failed_message of this ShowNotebookResponse.
 
         notebook失败信息
 
@@ -369,7 +369,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this ShowNotebookResponse.
+        r"""Sets the failed_message of this ShowNotebookResponse.
 
         notebook失败信息
 
@@ -380,7 +380,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ShowNotebookResponse.
+        r"""Gets the events of this ShowNotebookResponse.
 
         cce事件
 
@@ -391,7 +391,7 @@ class ShowNotebookResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ShowNotebookResponse.
+        r"""Sets the events of this ShowNotebookResponse.
 
         cce事件
 

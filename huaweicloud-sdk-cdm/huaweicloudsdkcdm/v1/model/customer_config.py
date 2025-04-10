@@ -43,7 +43,7 @@ class CustomerConfig:
     }
 
     def __init__(self, failure_remind=None, cluster_name=None, service_provider=None, local_disk=None, ssl=None, create_from=None, resource_id=None, flavor_type=None, work_space_id=None, trial=None):
-        """CustomerConfig
+        r"""CustomerConfig
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CustomerConfig:
 
     @property
     def failure_remind(self):
-        """Gets the failure_remind of this CustomerConfig.
+        r"""Gets the failure_remind of this CustomerConfig.
 
         失败提醒。
 
@@ -117,7 +117,7 @@ class CustomerConfig:
 
     @failure_remind.setter
     def failure_remind(self, failure_remind):
-        """Sets the failure_remind of this CustomerConfig.
+        r"""Sets the failure_remind of this CustomerConfig.
 
         失败提醒。
 
@@ -128,7 +128,7 @@ class CustomerConfig:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CustomerConfig.
+        r"""Gets the cluster_name of this CustomerConfig.
 
         集群类型。
 
@@ -139,7 +139,7 @@ class CustomerConfig:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CustomerConfig.
+        r"""Sets the cluster_name of this CustomerConfig.
 
         集群类型。
 
@@ -150,7 +150,7 @@ class CustomerConfig:
 
     @property
     def service_provider(self):
-        """Gets the service_provider of this CustomerConfig.
+        r"""Gets the service_provider of this CustomerConfig.
 
         服务提供
 
@@ -161,7 +161,7 @@ class CustomerConfig:
 
     @service_provider.setter
     def service_provider(self, service_provider):
-        """Sets the service_provider of this CustomerConfig.
+        r"""Sets the service_provider of this CustomerConfig.
 
         服务提供
 
@@ -172,7 +172,7 @@ class CustomerConfig:
 
     @property
     def local_disk(self):
-        """Gets the local_disk of this CustomerConfig.
+        r"""Gets the local_disk of this CustomerConfig.
 
         是否本地磁盘。
 
@@ -183,7 +183,7 @@ class CustomerConfig:
 
     @local_disk.setter
     def local_disk(self, local_disk):
-        """Sets the local_disk of this CustomerConfig.
+        r"""Sets the local_disk of this CustomerConfig.
 
         是否本地磁盘。
 
@@ -194,7 +194,7 @@ class CustomerConfig:
 
     @property
     def ssl(self):
-        """Gets the ssl of this CustomerConfig.
+        r"""Gets the ssl of this CustomerConfig.
 
         是否使用ssl。
 
@@ -205,7 +205,7 @@ class CustomerConfig:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this CustomerConfig.
+        r"""Sets the ssl of this CustomerConfig.
 
         是否使用ssl。
 
@@ -216,7 +216,7 @@ class CustomerConfig:
 
     @property
     def create_from(self):
-        """Gets the create_from of this CustomerConfig.
+        r"""Gets the create_from of this CustomerConfig.
 
         创建来源
 
@@ -227,7 +227,7 @@ class CustomerConfig:
 
     @create_from.setter
     def create_from(self, create_from):
-        """Sets the create_from of this CustomerConfig.
+        r"""Sets the create_from of this CustomerConfig.
 
         创建来源
 
@@ -238,7 +238,7 @@ class CustomerConfig:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CustomerConfig.
+        r"""Gets the resource_id of this CustomerConfig.
 
         资源ID
 
@@ -249,7 +249,7 @@ class CustomerConfig:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CustomerConfig.
+        r"""Sets the resource_id of this CustomerConfig.
 
         资源ID
 
@@ -260,7 +260,7 @@ class CustomerConfig:
 
     @property
     def flavor_type(self):
-        """Gets the flavor_type of this CustomerConfig.
+        r"""Gets the flavor_type of this CustomerConfig.
 
         规格类型
 
@@ -271,7 +271,7 @@ class CustomerConfig:
 
     @flavor_type.setter
     def flavor_type(self, flavor_type):
-        """Sets the flavor_type of this CustomerConfig.
+        r"""Sets the flavor_type of this CustomerConfig.
 
         规格类型
 
@@ -282,7 +282,7 @@ class CustomerConfig:
 
     @property
     def work_space_id(self):
-        """Gets the work_space_id of this CustomerConfig.
+        r"""Gets the work_space_id of this CustomerConfig.
 
         工作空间ID
 
@@ -293,7 +293,7 @@ class CustomerConfig:
 
     @work_space_id.setter
     def work_space_id(self, work_space_id):
-        """Sets the work_space_id of this CustomerConfig.
+        r"""Sets the work_space_id of this CustomerConfig.
 
         工作空间ID
 
@@ -304,7 +304,7 @@ class CustomerConfig:
 
     @property
     def trial(self):
-        """Gets the trial of this CustomerConfig.
+        r"""Gets the trial of this CustomerConfig.
 
         适用
 
@@ -315,7 +315,7 @@ class CustomerConfig:
 
     @trial.setter
     def trial(self, trial):
-        """Sets the trial of this CustomerConfig.
+        r"""Sets the trial of this CustomerConfig.
 
         适用
 

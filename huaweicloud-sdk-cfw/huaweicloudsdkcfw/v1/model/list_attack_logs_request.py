@@ -79,7 +79,7 @@ class ListAttackLogsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, enterprise_project_id=None, dst_host=None, log_type=None, attack_rule_id=None, src_region_name=None, dst_region_name=None, src_province_name=None, dst_province_name=None, src_city_name=None, dst_city_name=None):
-        """ListAttackLogsRequest
+        r"""ListAttackLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -228,7 +228,7 @@ class ListAttackLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAttackLogsRequest.
+        r"""Gets the start_time of this ListAttackLogsRequest.
 
         开始时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -239,7 +239,7 @@ class ListAttackLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAttackLogsRequest.
+        r"""Sets the start_time of this ListAttackLogsRequest.
 
         开始时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -250,7 +250,7 @@ class ListAttackLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAttackLogsRequest.
+        r"""Gets the end_time of this ListAttackLogsRequest.
 
         结束时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -261,7 +261,7 @@ class ListAttackLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAttackLogsRequest.
+        r"""Sets the end_time of this ListAttackLogsRequest.
 
         结束时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -272,7 +272,7 @@ class ListAttackLogsRequest:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this ListAttackLogsRequest.
+        r"""Gets the src_ip of this ListAttackLogsRequest.
 
         源IP
 
@@ -283,7 +283,7 @@ class ListAttackLogsRequest:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this ListAttackLogsRequest.
+        r"""Sets the src_ip of this ListAttackLogsRequest.
 
         源IP
 
@@ -294,7 +294,7 @@ class ListAttackLogsRequest:
 
     @property
     def src_port(self):
-        """Gets the src_port of this ListAttackLogsRequest.
+        r"""Gets the src_port of this ListAttackLogsRequest.
 
         源端口号
 
@@ -305,7 +305,7 @@ class ListAttackLogsRequest:
 
     @src_port.setter
     def src_port(self, src_port):
-        """Sets the src_port of this ListAttackLogsRequest.
+        r"""Sets the src_port of this ListAttackLogsRequest.
 
         源端口号
 
@@ -316,7 +316,7 @@ class ListAttackLogsRequest:
 
     @property
     def dst_ip(self):
-        """Gets the dst_ip of this ListAttackLogsRequest.
+        r"""Gets the dst_ip of this ListAttackLogsRequest.
 
         目的IP
 
@@ -327,7 +327,7 @@ class ListAttackLogsRequest:
 
     @dst_ip.setter
     def dst_ip(self, dst_ip):
-        """Sets the dst_ip of this ListAttackLogsRequest.
+        r"""Sets the dst_ip of this ListAttackLogsRequest.
 
         目的IP
 
@@ -338,7 +338,7 @@ class ListAttackLogsRequest:
 
     @property
     def dst_port(self):
-        """Gets the dst_port of this ListAttackLogsRequest.
+        r"""Gets the dst_port of this ListAttackLogsRequest.
 
         目的端口号
 
@@ -349,7 +349,7 @@ class ListAttackLogsRequest:
 
     @dst_port.setter
     def dst_port(self, dst_port):
-        """Sets the dst_port of this ListAttackLogsRequest.
+        r"""Sets the dst_port of this ListAttackLogsRequest.
 
         目的端口号
 
@@ -360,7 +360,7 @@ class ListAttackLogsRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListAttackLogsRequest.
+        r"""Gets the protocol of this ListAttackLogsRequest.
 
         协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
@@ -371,7 +371,7 @@ class ListAttackLogsRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListAttackLogsRequest.
+        r"""Sets the protocol of this ListAttackLogsRequest.
 
         协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
@@ -382,7 +382,7 @@ class ListAttackLogsRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListAttackLogsRequest.
+        r"""Gets the app of this ListAttackLogsRequest.
 
         规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -393,7 +393,7 @@ class ListAttackLogsRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListAttackLogsRequest.
+        r"""Sets the app of this ListAttackLogsRequest.
 
         规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -404,7 +404,7 @@ class ListAttackLogsRequest:
 
     @property
     def log_id(self):
-        """Gets the log_id of this ListAttackLogsRequest.
+        r"""Gets the log_id of this ListAttackLogsRequest.
 
         文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
 
@@ -415,7 +415,7 @@ class ListAttackLogsRequest:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this ListAttackLogsRequest.
+        r"""Sets the log_id of this ListAttackLogsRequest.
 
         文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
 
@@ -426,7 +426,7 @@ class ListAttackLogsRequest:
 
     @property
     def next_date(self):
-        """Gets the next_date of this ListAttackLogsRequest.
+        r"""Gets the next_date of this ListAttackLogsRequest.
 
         下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的event_time
 
@@ -437,7 +437,7 @@ class ListAttackLogsRequest:
 
     @next_date.setter
     def next_date(self, next_date):
-        """Sets the next_date of this ListAttackLogsRequest.
+        r"""Sets the next_date of this ListAttackLogsRequest.
 
         下个日期，当是第一页时为空，不是第一页时不为空，其他页可取上一次查询最后一条数据的event_time
 
@@ -448,7 +448,7 @@ class ListAttackLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAttackLogsRequest.
+        r"""Gets the offset of this ListAttackLogsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
 
@@ -459,7 +459,7 @@ class ListAttackLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAttackLogsRequest.
+        r"""Sets the offset of this ListAttackLogsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于0，首页时为空，非首页时不为空
 
@@ -470,7 +470,7 @@ class ListAttackLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAttackLogsRequest.
+        r"""Gets the limit of this ListAttackLogsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -481,7 +481,7 @@ class ListAttackLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAttackLogsRequest.
+        r"""Sets the limit of this ListAttackLogsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -492,7 +492,7 @@ class ListAttackLogsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListAttackLogsRequest.
+        r"""Gets the fw_instance_id of this ListAttackLogsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -503,7 +503,7 @@ class ListAttackLogsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListAttackLogsRequest.
+        r"""Sets the fw_instance_id of this ListAttackLogsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -514,7 +514,7 @@ class ListAttackLogsRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListAttackLogsRequest.
+        r"""Gets the action of this ListAttackLogsRequest.
 
         动作包含permit，deny
 
@@ -525,7 +525,7 @@ class ListAttackLogsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListAttackLogsRequest.
+        r"""Sets the action of this ListAttackLogsRequest.
 
         动作包含permit，deny
 
@@ -536,7 +536,7 @@ class ListAttackLogsRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ListAttackLogsRequest.
+        r"""Gets the direction of this ListAttackLogsRequest.
 
         方向，包含in2out，out2in
 
@@ -547,7 +547,7 @@ class ListAttackLogsRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ListAttackLogsRequest.
+        r"""Sets the direction of this ListAttackLogsRequest.
 
         方向，包含in2out，out2in
 
@@ -558,7 +558,7 @@ class ListAttackLogsRequest:
 
     @property
     def attack_type(self):
-        """Gets the attack_type of this ListAttackLogsRequest.
+        r"""Gets the attack_type of this ListAttackLogsRequest.
 
         入侵事件类型
 
@@ -569,7 +569,7 @@ class ListAttackLogsRequest:
 
     @attack_type.setter
     def attack_type(self, attack_type):
-        """Sets the attack_type of this ListAttackLogsRequest.
+        r"""Sets the attack_type of this ListAttackLogsRequest.
 
         入侵事件类型
 
@@ -580,7 +580,7 @@ class ListAttackLogsRequest:
 
     @property
     def attack_rule(self):
-        """Gets the attack_rule of this ListAttackLogsRequest.
+        r"""Gets the attack_rule of this ListAttackLogsRequest.
 
         入侵事件规则
 
@@ -591,7 +591,7 @@ class ListAttackLogsRequest:
 
     @attack_rule.setter
     def attack_rule(self, attack_rule):
-        """Sets the attack_rule of this ListAttackLogsRequest.
+        r"""Sets the attack_rule of this ListAttackLogsRequest.
 
         入侵事件规则
 
@@ -602,7 +602,7 @@ class ListAttackLogsRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListAttackLogsRequest.
+        r"""Gets the level of this ListAttackLogsRequest.
 
         威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
@@ -613,7 +613,7 @@ class ListAttackLogsRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListAttackLogsRequest.
+        r"""Sets the level of this ListAttackLogsRequest.
 
         威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
@@ -624,7 +624,7 @@ class ListAttackLogsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAttackLogsRequest.
+        r"""Gets the enterprise_project_id of this ListAttackLogsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -635,7 +635,7 @@ class ListAttackLogsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAttackLogsRequest.
+        r"""Sets the enterprise_project_id of this ListAttackLogsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -646,7 +646,7 @@ class ListAttackLogsRequest:
 
     @property
     def dst_host(self):
-        """Gets the dst_host of this ListAttackLogsRequest.
+        r"""Gets the dst_host of this ListAttackLogsRequest.
 
         目标主机
 
@@ -657,7 +657,7 @@ class ListAttackLogsRequest:
 
     @dst_host.setter
     def dst_host(self, dst_host):
-        """Sets the dst_host of this ListAttackLogsRequest.
+        r"""Sets the dst_host of this ListAttackLogsRequest.
 
         目标主机
 
@@ -668,7 +668,7 @@ class ListAttackLogsRequest:
 
     @property
     def log_type(self):
-        """Gets the log_type of this ListAttackLogsRequest.
+        r"""Gets the log_type of this ListAttackLogsRequest.
 
         日志类型包括：internet，vpc，nat
 
@@ -679,7 +679,7 @@ class ListAttackLogsRequest:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this ListAttackLogsRequest.
+        r"""Sets the log_type of this ListAttackLogsRequest.
 
         日志类型包括：internet，vpc，nat
 
@@ -690,7 +690,7 @@ class ListAttackLogsRequest:
 
     @property
     def attack_rule_id(self):
-        """Gets the attack_rule_id of this ListAttackLogsRequest.
+        r"""Gets the attack_rule_id of this ListAttackLogsRequest.
 
         入侵事件id
 
@@ -701,7 +701,7 @@ class ListAttackLogsRequest:
 
     @attack_rule_id.setter
     def attack_rule_id(self, attack_rule_id):
-        """Sets the attack_rule_id of this ListAttackLogsRequest.
+        r"""Sets the attack_rule_id of this ListAttackLogsRequest.
 
         入侵事件id
 
@@ -712,7 +712,7 @@ class ListAttackLogsRequest:
 
     @property
     def src_region_name(self):
-        """Gets the src_region_name of this ListAttackLogsRequest.
+        r"""Gets the src_region_name of this ListAttackLogsRequest.
 
         源region名称
 
@@ -723,7 +723,7 @@ class ListAttackLogsRequest:
 
     @src_region_name.setter
     def src_region_name(self, src_region_name):
-        """Sets the src_region_name of this ListAttackLogsRequest.
+        r"""Sets the src_region_name of this ListAttackLogsRequest.
 
         源region名称
 
@@ -734,7 +734,7 @@ class ListAttackLogsRequest:
 
     @property
     def dst_region_name(self):
-        """Gets the dst_region_name of this ListAttackLogsRequest.
+        r"""Gets the dst_region_name of this ListAttackLogsRequest.
 
         目的region名称
 
@@ -745,7 +745,7 @@ class ListAttackLogsRequest:
 
     @dst_region_name.setter
     def dst_region_name(self, dst_region_name):
-        """Sets the dst_region_name of this ListAttackLogsRequest.
+        r"""Sets the dst_region_name of this ListAttackLogsRequest.
 
         目的region名称
 
@@ -756,7 +756,7 @@ class ListAttackLogsRequest:
 
     @property
     def src_province_name(self):
-        """Gets the src_province_name of this ListAttackLogsRequest.
+        r"""Gets the src_province_name of this ListAttackLogsRequest.
 
         源省份名称
 
@@ -767,7 +767,7 @@ class ListAttackLogsRequest:
 
     @src_province_name.setter
     def src_province_name(self, src_province_name):
-        """Sets the src_province_name of this ListAttackLogsRequest.
+        r"""Sets the src_province_name of this ListAttackLogsRequest.
 
         源省份名称
 
@@ -778,7 +778,7 @@ class ListAttackLogsRequest:
 
     @property
     def dst_province_name(self):
-        """Gets the dst_province_name of this ListAttackLogsRequest.
+        r"""Gets the dst_province_name of this ListAttackLogsRequest.
 
         目的省份名称
 
@@ -789,7 +789,7 @@ class ListAttackLogsRequest:
 
     @dst_province_name.setter
     def dst_province_name(self, dst_province_name):
-        """Sets the dst_province_name of this ListAttackLogsRequest.
+        r"""Sets the dst_province_name of this ListAttackLogsRequest.
 
         目的省份名称
 
@@ -800,7 +800,7 @@ class ListAttackLogsRequest:
 
     @property
     def src_city_name(self):
-        """Gets the src_city_name of this ListAttackLogsRequest.
+        r"""Gets the src_city_name of this ListAttackLogsRequest.
 
         源城市名称
 
@@ -811,7 +811,7 @@ class ListAttackLogsRequest:
 
     @src_city_name.setter
     def src_city_name(self, src_city_name):
-        """Sets the src_city_name of this ListAttackLogsRequest.
+        r"""Sets the src_city_name of this ListAttackLogsRequest.
 
         源城市名称
 
@@ -822,7 +822,7 @@ class ListAttackLogsRequest:
 
     @property
     def dst_city_name(self):
-        """Gets the dst_city_name of this ListAttackLogsRequest.
+        r"""Gets the dst_city_name of this ListAttackLogsRequest.
 
         目的城市名称
 
@@ -833,7 +833,7 @@ class ListAttackLogsRequest:
 
     @dst_city_name.setter
     def dst_city_name(self, dst_city_name):
-        """Sets the dst_city_name of this ListAttackLogsRequest.
+        r"""Sets the dst_city_name of this ListAttackLogsRequest.
 
         目的城市名称
 

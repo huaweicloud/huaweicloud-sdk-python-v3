@@ -28,7 +28,7 @@ class RunInstanceActionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """RunInstanceActionResponse
+        r"""RunInstanceActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunInstanceActionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunInstanceActionResponse.
+        r"""Gets the job_id of this RunInstanceActionResponse.
 
         任务id。按需实例时仅返回任务id。
 
@@ -62,7 +62,7 @@ class RunInstanceActionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunInstanceActionResponse.
+        r"""Sets the job_id of this RunInstanceActionResponse.
 
         任务id。按需实例时仅返回任务id。
 
@@ -73,7 +73,7 @@ class RunInstanceActionResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this RunInstanceActionResponse.
+        r"""Gets the order_id of this RunInstanceActionResponse.
 
         订单id。包周期实例时仅返回订单id。
 
@@ -84,7 +84,7 @@ class RunInstanceActionResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this RunInstanceActionResponse.
+        r"""Sets the order_id of this RunInstanceActionResponse.
 
         订单id。包周期实例时仅返回订单id。
 

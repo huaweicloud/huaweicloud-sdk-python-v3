@@ -29,7 +29,7 @@ class ListStorageTypesRequest:
     }
 
     def __init__(self, x_language=None, version=None, ha_mode=None):
-        """ListStorageTypesRequest
+        r"""ListStorageTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListStorageTypesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStorageTypesRequest.
+        r"""Gets the x_language of this ListStorageTypesRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ListStorageTypesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStorageTypesRequest.
+        r"""Sets the x_language of this ListStorageTypesRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ListStorageTypesRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListStorageTypesRequest.
+        r"""Gets the version of this ListStorageTypesRequest.
 
         数据库版本号。
 
@@ -89,7 +89,7 @@ class ListStorageTypesRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListStorageTypesRequest.
+        r"""Sets the version of this ListStorageTypesRequest.
 
         数据库版本号。
 
@@ -100,7 +100,7 @@ class ListStorageTypesRequest:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this ListStorageTypesRequest.
+        r"""Gets the ha_mode of this ListStorageTypesRequest.
 
         实例类型： enterprise(企业版)， centralization_standard(主备版)，不区分大小写。
 
@@ -111,7 +111,7 @@ class ListStorageTypesRequest:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this ListStorageTypesRequest.
+        r"""Sets the ha_mode of this ListStorageTypesRequest.
 
         实例类型： enterprise(企业版)， centralization_standard(主备版)，不区分大小写。
 

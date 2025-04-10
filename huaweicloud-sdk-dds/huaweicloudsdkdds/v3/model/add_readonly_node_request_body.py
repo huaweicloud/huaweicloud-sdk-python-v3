@@ -31,7 +31,7 @@ class AddReadonlyNodeRequestBody:
     }
 
     def __init__(self, spec_code=None, num=None, delay=None, is_auto_pay=None):
-        """AddReadonlyNodeRequestBody
+        r"""AddReadonlyNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class AddReadonlyNodeRequestBody:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this AddReadonlyNodeRequestBody.
+        r"""Gets the spec_code of this AddReadonlyNodeRequestBody.
 
         资源规格编码。获取方法请参见[查询数据库规格](x-wc://file=zh-cn_topic_0000001321087266.xml)中参数“spec_code”的值。  示例：dds.mongodb.c6.xlarge.2.shard
 
@@ -73,7 +73,7 @@ class AddReadonlyNodeRequestBody:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this AddReadonlyNodeRequestBody.
+        r"""Sets the spec_code of this AddReadonlyNodeRequestBody.
 
         资源规格编码。获取方法请参见[查询数据库规格](x-wc://file=zh-cn_topic_0000001321087266.xml)中参数“spec_code”的值。  示例：dds.mongodb.c6.xlarge.2.shard
 
@@ -84,7 +84,7 @@ class AddReadonlyNodeRequestBody:
 
     @property
     def num(self):
-        """Gets the num of this AddReadonlyNodeRequestBody.
+        r"""Gets the num of this AddReadonlyNodeRequestBody.
 
         待新增只读节点个数。 取值范围：1-5。
 
@@ -95,7 +95,7 @@ class AddReadonlyNodeRequestBody:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this AddReadonlyNodeRequestBody.
+        r"""Sets the num of this AddReadonlyNodeRequestBody.
 
         待新增只读节点个数。 取值范围：1-5。
 
@@ -106,7 +106,7 @@ class AddReadonlyNodeRequestBody:
 
     @property
     def delay(self):
-        """Gets the delay of this AddReadonlyNodeRequestBody.
+        r"""Gets the delay of this AddReadonlyNodeRequestBody.
 
         同步延迟时间。取值范围：0~1200毫秒。默认取值为0。
 
@@ -117,7 +117,7 @@ class AddReadonlyNodeRequestBody:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this AddReadonlyNodeRequestBody.
+        r"""Sets the delay of this AddReadonlyNodeRequestBody.
 
         同步延迟时间。取值范围：0~1200毫秒。默认取值为0。
 
@@ -128,7 +128,7 @@ class AddReadonlyNodeRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this AddReadonlyNodeRequestBody.
+        r"""Gets the is_auto_pay of this AddReadonlyNodeRequestBody.
 
         新增包年包月实例的只读节点时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
@@ -139,7 +139,7 @@ class AddReadonlyNodeRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this AddReadonlyNodeRequestBody.
+        r"""Sets the is_auto_pay of this AddReadonlyNodeRequestBody.
 
         新增包年包月实例的只读节点时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 

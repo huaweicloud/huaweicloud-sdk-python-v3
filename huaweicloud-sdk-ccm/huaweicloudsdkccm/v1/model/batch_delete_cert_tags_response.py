@@ -24,7 +24,7 @@ class BatchDeleteCertTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteCertTagsResponse
+        r"""BatchDeleteCertTagsResponse
 
         The model defined in huaweicloud sdk
 

@@ -89,7 +89,7 @@ class JobExeResult:
     }
 
     def __init__(self, id=None, create_at=None, update_at=None, tenant_id=None, job_id=None, job_name=None, start_time=None, end_time=None, cluster_id=None, group_id=None, jar_path=None, input=None, output=None, job_log=None, job_type=None, file_action=None, arguments=None, hql=None, job_state=None, job_final_status=None, hive_script_path=None, create_by=None, finished_step=None, job_main_id=None, job_step_id=None, postpone_at=None, step_name=None, step_num=None, task_num=None, update_by=None, spend_time=None, step_seq=None, progress=None):
-        """JobExeResult
+        r"""JobExeResult
 
         The model defined in huaweicloud sdk
 
@@ -235,7 +235,7 @@ class JobExeResult:
 
     @property
     def id(self):
-        """Gets the id of this JobExeResult.
+        r"""Gets the id of this JobExeResult.
 
         作业ID。
 
@@ -246,7 +246,7 @@ class JobExeResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobExeResult.
+        r"""Sets the id of this JobExeResult.
 
         作业ID。
 
@@ -257,7 +257,7 @@ class JobExeResult:
 
     @property
     def create_at(self):
-        """Gets the create_at of this JobExeResult.
+        r"""Gets the create_at of this JobExeResult.
 
         作业创建时间，十三位时间戳。
 
@@ -268,7 +268,7 @@ class JobExeResult:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this JobExeResult.
+        r"""Sets the create_at of this JobExeResult.
 
         作业创建时间，十三位时间戳。
 
@@ -279,7 +279,7 @@ class JobExeResult:
 
     @property
     def update_at(self):
-        """Gets the update_at of this JobExeResult.
+        r"""Gets the update_at of this JobExeResult.
 
         作业更新时间，十三位时间戳。  
 
@@ -290,7 +290,7 @@ class JobExeResult:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this JobExeResult.
+        r"""Sets the update_at of this JobExeResult.
 
         作业更新时间，十三位时间戳。  
 
@@ -301,7 +301,7 @@ class JobExeResult:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this JobExeResult.
+        r"""Gets the tenant_id of this JobExeResult.
 
         项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
 
@@ -312,7 +312,7 @@ class JobExeResult:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this JobExeResult.
+        r"""Sets the tenant_id of this JobExeResult.
 
         项目编号。获取方法，请参见[获取项目ID](https://support.huaweicloud.com/api-mrs/mrs_02_0011.html)。
 
@@ -323,7 +323,7 @@ class JobExeResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobExeResult.
+        r"""Gets the job_id of this JobExeResult.
 
         作业ID。
 
@@ -334,7 +334,7 @@ class JobExeResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobExeResult.
+        r"""Sets the job_id of this JobExeResult.
 
         作业ID。
 
@@ -345,7 +345,7 @@ class JobExeResult:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobExeResult.
+        r"""Gets the job_name of this JobExeResult.
 
         作业名称。
 
@@ -356,7 +356,7 @@ class JobExeResult:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobExeResult.
+        r"""Sets the job_name of this JobExeResult.
 
         作业名称。
 
@@ -367,7 +367,7 @@ class JobExeResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobExeResult.
+        r"""Gets the start_time of this JobExeResult.
 
         作业执行开始时间，十三位时间戳。
 
@@ -378,7 +378,7 @@ class JobExeResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobExeResult.
+        r"""Sets the start_time of this JobExeResult.
 
         作业执行开始时间，十三位时间戳。
 
@@ -389,7 +389,7 @@ class JobExeResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobExeResult.
+        r"""Gets the end_time of this JobExeResult.
 
         作业执行结束时间，十三位时间戳。
 
@@ -400,7 +400,7 @@ class JobExeResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobExeResult.
+        r"""Sets the end_time of this JobExeResult.
 
         作业执行结束时间，十三位时间戳。
 
@@ -411,7 +411,7 @@ class JobExeResult:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this JobExeResult.
+        r"""Gets the cluster_id of this JobExeResult.
 
         作业所属集群ID。
 
@@ -422,7 +422,7 @@ class JobExeResult:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this JobExeResult.
+        r"""Sets the cluster_id of this JobExeResult.
 
         作业所属集群ID。
 
@@ -433,7 +433,7 @@ class JobExeResult:
 
     @property
     def group_id(self):
-        """Gets the group_id of this JobExeResult.
+        r"""Gets the group_id of this JobExeResult.
 
         作业执行组ID
 
@@ -444,7 +444,7 @@ class JobExeResult:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this JobExeResult.
+        r"""Sets the group_id of this JobExeResult.
 
         作业执行组ID
 
@@ -455,7 +455,7 @@ class JobExeResult:
 
     @property
     def jar_path(self):
-        """Gets the jar_path of this JobExeResult.
+        r"""Gets the jar_path of this JobExeResult.
 
         执行程序jar包或sql文件地址。
 
@@ -466,7 +466,7 @@ class JobExeResult:
 
     @jar_path.setter
     def jar_path(self, jar_path):
-        """Sets the jar_path of this JobExeResult.
+        r"""Sets the jar_path of this JobExeResult.
 
         执行程序jar包或sql文件地址。
 
@@ -477,7 +477,7 @@ class JobExeResult:
 
     @property
     def input(self):
-        """Gets the input of this JobExeResult.
+        r"""Gets the input of this JobExeResult.
 
         数据输入地址。
 
@@ -488,7 +488,7 @@ class JobExeResult:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this JobExeResult.
+        r"""Sets the input of this JobExeResult.
 
         数据输入地址。
 
@@ -499,7 +499,7 @@ class JobExeResult:
 
     @property
     def output(self):
-        """Gets the output of this JobExeResult.
+        r"""Gets the output of this JobExeResult.
 
         数据输出地址。
 
@@ -510,7 +510,7 @@ class JobExeResult:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this JobExeResult.
+        r"""Sets the output of this JobExeResult.
 
         数据输出地址。
 
@@ -521,7 +521,7 @@ class JobExeResult:
 
     @property
     def job_log(self):
-        """Gets the job_log of this JobExeResult.
+        r"""Gets the job_log of this JobExeResult.
 
         作业日志存储地址
 
@@ -532,7 +532,7 @@ class JobExeResult:
 
     @job_log.setter
     def job_log(self, job_log):
-        """Sets the job_log of this JobExeResult.
+        r"""Sets the job_log of this JobExeResult.
 
         作业日志存储地址
 
@@ -543,7 +543,7 @@ class JobExeResult:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobExeResult.
+        r"""Gets the job_type of this JobExeResult.
 
         作业类型码。  - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp - 6：Spark Script - 7：Spark SQL（该接口当前不支持）
 
@@ -554,7 +554,7 @@ class JobExeResult:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobExeResult.
+        r"""Sets the job_type of this JobExeResult.
 
         作业类型码。  - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp - 6：Spark Script - 7：Spark SQL（该接口当前不支持）
 
@@ -565,7 +565,7 @@ class JobExeResult:
 
     @property
     def file_action(self):
-        """Gets the file_action of this JobExeResult.
+        r"""Gets the file_action of this JobExeResult.
 
         导入导出数据。
 
@@ -576,7 +576,7 @@ class JobExeResult:
 
     @file_action.setter
     def file_action(self, file_action):
-        """Sets the file_action of this JobExeResult.
+        r"""Sets the file_action of this JobExeResult.
 
         导入导出数据。
 
@@ -587,7 +587,7 @@ class JobExeResult:
 
     @property
     def arguments(self):
-        """Gets the arguments of this JobExeResult.
+        r"""Gets the arguments of this JobExeResult.
 
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。该参数可为空。
 
@@ -598,7 +598,7 @@ class JobExeResult:
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this JobExeResult.
+        r"""Sets the arguments of this JobExeResult.
 
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。该参数可为空。
 
@@ -609,7 +609,7 @@ class JobExeResult:
 
     @property
     def hql(self):
-        """Gets the hql of this JobExeResult.
+        r"""Gets the hql of this JobExeResult.
 
         HQL脚本语句。
 
@@ -620,7 +620,7 @@ class JobExeResult:
 
     @hql.setter
     def hql(self, hql):
-        """Sets the hql of this JobExeResult.
+        r"""Sets the hql of this JobExeResult.
 
         HQL脚本语句。
 
@@ -631,7 +631,7 @@ class JobExeResult:
 
     @property
     def job_state(self):
-        """Gets the job_state of this JobExeResult.
+        r"""Gets the job_state of this JobExeResult.
 
         作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
@@ -642,7 +642,7 @@ class JobExeResult:
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this JobExeResult.
+        r"""Sets the job_state of this JobExeResult.
 
         作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
@@ -653,7 +653,7 @@ class JobExeResult:
 
     @property
     def job_final_status(self):
-        """Gets the job_final_status of this JobExeResult.
+        r"""Gets the job_final_status of this JobExeResult.
 
         作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
 
@@ -664,7 +664,7 @@ class JobExeResult:
 
     @job_final_status.setter
     def job_final_status(self, job_final_status):
-        """Sets the job_final_status of this JobExeResult.
+        r"""Sets the job_final_status of this JobExeResult.
 
         作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
 
@@ -675,7 +675,7 @@ class JobExeResult:
 
     @property
     def hive_script_path(self):
-        """Gets the hive_script_path of this JobExeResult.
+        r"""Gets the hive_script_path of this JobExeResult.
 
         Hive脚本地址。
 
@@ -686,7 +686,7 @@ class JobExeResult:
 
     @hive_script_path.setter
     def hive_script_path(self, hive_script_path):
-        """Sets the hive_script_path of this JobExeResult.
+        r"""Sets the hive_script_path of this JobExeResult.
 
         Hive脚本地址。
 
@@ -697,7 +697,7 @@ class JobExeResult:
 
     @property
     def create_by(self):
-        """Gets the create_by of this JobExeResult.
+        r"""Gets the create_by of this JobExeResult.
 
         创建作业的用户ID。
 
@@ -708,7 +708,7 @@ class JobExeResult:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this JobExeResult.
+        r"""Sets the create_by of this JobExeResult.
 
         创建作业的用户ID。
 
@@ -719,7 +719,7 @@ class JobExeResult:
 
     @property
     def finished_step(self):
-        """Gets the finished_step of this JobExeResult.
+        r"""Gets the finished_step of this JobExeResult.
 
         当前已完成的步骤数。
 
@@ -730,7 +730,7 @@ class JobExeResult:
 
     @finished_step.setter
     def finished_step(self, finished_step):
-        """Sets the finished_step of this JobExeResult.
+        r"""Sets the finished_step of this JobExeResult.
 
         当前已完成的步骤数。
 
@@ -741,7 +741,7 @@ class JobExeResult:
 
     @property
     def job_main_id(self):
-        """Gets the job_main_id of this JobExeResult.
+        r"""Gets the job_main_id of this JobExeResult.
 
         作业主ID。
 
@@ -752,7 +752,7 @@ class JobExeResult:
 
     @job_main_id.setter
     def job_main_id(self, job_main_id):
-        """Sets the job_main_id of this JobExeResult.
+        r"""Sets the job_main_id of this JobExeResult.
 
         作业主ID。
 
@@ -763,7 +763,7 @@ class JobExeResult:
 
     @property
     def job_step_id(self):
-        """Gets the job_step_id of this JobExeResult.
+        r"""Gets the job_step_id of this JobExeResult.
 
         作业步骤ID。
 
@@ -774,7 +774,7 @@ class JobExeResult:
 
     @job_step_id.setter
     def job_step_id(self, job_step_id):
-        """Sets the job_step_id of this JobExeResult.
+        r"""Sets the job_step_id of this JobExeResult.
 
         作业步骤ID。
 
@@ -785,7 +785,7 @@ class JobExeResult:
 
     @property
     def postpone_at(self):
-        """Gets the postpone_at of this JobExeResult.
+        r"""Gets the postpone_at of this JobExeResult.
 
         延迟时间，十三位时间戳。
 
@@ -796,7 +796,7 @@ class JobExeResult:
 
     @postpone_at.setter
     def postpone_at(self, postpone_at):
-        """Sets the postpone_at of this JobExeResult.
+        r"""Sets the postpone_at of this JobExeResult.
 
         延迟时间，十三位时间戳。
 
@@ -807,7 +807,7 @@ class JobExeResult:
 
     @property
     def step_name(self):
-        """Gets the step_name of this JobExeResult.
+        r"""Gets the step_name of this JobExeResult.
 
         作业步骤名。
 
@@ -818,7 +818,7 @@ class JobExeResult:
 
     @step_name.setter
     def step_name(self, step_name):
-        """Sets the step_name of this JobExeResult.
+        r"""Sets the step_name of this JobExeResult.
 
         作业步骤名。
 
@@ -829,7 +829,7 @@ class JobExeResult:
 
     @property
     def step_num(self):
-        """Gets the step_num of this JobExeResult.
+        r"""Gets the step_num of this JobExeResult.
 
         步骤数量。
 
@@ -840,7 +840,7 @@ class JobExeResult:
 
     @step_num.setter
     def step_num(self, step_num):
-        """Sets the step_num of this JobExeResult.
+        r"""Sets the step_num of this JobExeResult.
 
         步骤数量。
 
@@ -851,7 +851,7 @@ class JobExeResult:
 
     @property
     def task_num(self):
-        """Gets the task_num of this JobExeResult.
+        r"""Gets the task_num of this JobExeResult.
 
         任务数量。
 
@@ -862,7 +862,7 @@ class JobExeResult:
 
     @task_num.setter
     def task_num(self, task_num):
-        """Sets the task_num of this JobExeResult.
+        r"""Sets the task_num of this JobExeResult.
 
         任务数量。
 
@@ -873,7 +873,7 @@ class JobExeResult:
 
     @property
     def update_by(self):
-        """Gets the update_by of this JobExeResult.
+        r"""Gets the update_by of this JobExeResult.
 
         更新作业的用户ID。
 
@@ -884,7 +884,7 @@ class JobExeResult:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this JobExeResult.
+        r"""Sets the update_by of this JobExeResult.
 
         更新作业的用户ID。
 
@@ -895,7 +895,7 @@ class JobExeResult:
 
     @property
     def spend_time(self):
-        """Gets the spend_time of this JobExeResult.
+        r"""Gets the spend_time of this JobExeResult.
 
         作业执行持续时间，单位：秒。
 
@@ -906,7 +906,7 @@ class JobExeResult:
 
     @spend_time.setter
     def spend_time(self, spend_time):
-        """Sets the spend_time of this JobExeResult.
+        r"""Sets the spend_time of this JobExeResult.
 
         作业执行持续时间，单位：秒。
 
@@ -917,7 +917,7 @@ class JobExeResult:
 
     @property
     def step_seq(self):
-        """Gets the step_seq of this JobExeResult.
+        r"""Gets the step_seq of this JobExeResult.
 
         步骤序列号。
 
@@ -928,7 +928,7 @@ class JobExeResult:
 
     @step_seq.setter
     def step_seq(self, step_seq):
-        """Sets the step_seq of this JobExeResult.
+        r"""Sets the step_seq of this JobExeResult.
 
         步骤序列号。
 
@@ -939,7 +939,7 @@ class JobExeResult:
 
     @property
     def progress(self):
-        """Gets the progress of this JobExeResult.
+        r"""Gets the progress of this JobExeResult.
 
         作业执行进度。
 
@@ -950,7 +950,7 @@ class JobExeResult:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobExeResult.
+        r"""Sets the progress of this JobExeResult.
 
         作业执行进度。
 

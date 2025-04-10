@@ -37,7 +37,7 @@ class ApiPolicyHttpBase:
     }
 
     def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, enable_sm_channel=None):
-        """ApiPolicyHttpBase
+        r"""ApiPolicyHttpBase
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ApiPolicyHttpBase:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this ApiPolicyHttpBase.
+        r"""Gets the url_domain of this ApiPolicyHttpBase.
 
         策略后端的Endpoint。  由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。
 
@@ -93,7 +93,7 @@ class ApiPolicyHttpBase:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this ApiPolicyHttpBase.
+        r"""Sets the url_domain of this ApiPolicyHttpBase.
 
         策略后端的Endpoint。  由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。
 
@@ -104,7 +104,7 @@ class ApiPolicyHttpBase:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiPolicyHttpBase.
+        r"""Gets the req_protocol of this ApiPolicyHttpBase.
 
         请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC时可选GRPC、GRPCS
 
@@ -115,7 +115,7 @@ class ApiPolicyHttpBase:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiPolicyHttpBase.
+        r"""Sets the req_protocol of this ApiPolicyHttpBase.
 
         请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC时可选GRPC、GRPCS
 
@@ -126,7 +126,7 @@ class ApiPolicyHttpBase:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiPolicyHttpBase.
+        r"""Gets the req_method of this ApiPolicyHttpBase.
 
         请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
 
@@ -137,7 +137,7 @@ class ApiPolicyHttpBase:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiPolicyHttpBase.
+        r"""Sets the req_method of this ApiPolicyHttpBase.
 
         请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
 
@@ -148,7 +148,7 @@ class ApiPolicyHttpBase:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiPolicyHttpBase.
+        r"""Gets the req_uri of this ApiPolicyHttpBase.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
@@ -159,7 +159,7 @@ class ApiPolicyHttpBase:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiPolicyHttpBase.
+        r"""Sets the req_uri of this ApiPolicyHttpBase.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
@@ -170,7 +170,7 @@ class ApiPolicyHttpBase:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApiPolicyHttpBase.
+        r"""Gets the timeout of this ApiPolicyHttpBase.
 
         API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
@@ -181,7 +181,7 @@ class ApiPolicyHttpBase:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApiPolicyHttpBase.
+        r"""Sets the timeout of this ApiPolicyHttpBase.
 
         API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
@@ -192,7 +192,7 @@ class ApiPolicyHttpBase:
 
     @property
     def retry_count(self):
-        """Gets the retry_count of this ApiPolicyHttpBase.
+        r"""Gets the retry_count of this ApiPolicyHttpBase.
 
         请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
 
@@ -203,7 +203,7 @@ class ApiPolicyHttpBase:
 
     @retry_count.setter
     def retry_count(self, retry_count):
-        """Sets the retry_count of this ApiPolicyHttpBase.
+        r"""Sets the retry_count of this ApiPolicyHttpBase.
 
         请求后端服务的重试次数，默认为-1，范围[-1,10]。  当该值为-1时，幂等的接口会重试1次，非幂等的不会重试。POST，PATCH方法为非幂等；GET，HEAD，PUT，OPTIONS和DELETE等方法为幂等的。
 
@@ -214,7 +214,7 @@ class ApiPolicyHttpBase:
 
     @property
     def enable_sm_channel(self):
-        """Gets the enable_sm_channel of this ApiPolicyHttpBase.
+        r"""Gets the enable_sm_channel of this ApiPolicyHttpBase.
 
         是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
 
@@ -225,7 +225,7 @@ class ApiPolicyHttpBase:
 
     @enable_sm_channel.setter
     def enable_sm_channel(self, enable_sm_channel):
-        """Sets the enable_sm_channel of this ApiPolicyHttpBase.
+        r"""Sets the enable_sm_channel of this ApiPolicyHttpBase.
 
         是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
 

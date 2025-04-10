@@ -37,7 +37,7 @@ class ListPipelineRunsQuery:
     }
 
     def __init__(self, status=None, start_time=None, end_time=None, offset=None, limit=None, sort_key=None, sort_dir=None):
-        """ListPipelineRunsQuery
+        r"""ListPipelineRunsQuery
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListPipelineRunsQuery:
 
     @property
     def status(self):
-        """Gets the status of this ListPipelineRunsQuery.
+        r"""Gets the status of this ListPipelineRunsQuery.
 
         状态
 
@@ -96,7 +96,7 @@ class ListPipelineRunsQuery:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPipelineRunsQuery.
+        r"""Sets the status of this ListPipelineRunsQuery.
 
         状态
 
@@ -107,7 +107,7 @@ class ListPipelineRunsQuery:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPipelineRunsQuery.
+        r"""Gets the start_time of this ListPipelineRunsQuery.
 
         开始时间
 
@@ -118,7 +118,7 @@ class ListPipelineRunsQuery:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPipelineRunsQuery.
+        r"""Sets the start_time of this ListPipelineRunsQuery.
 
         开始时间
 
@@ -129,7 +129,7 @@ class ListPipelineRunsQuery:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPipelineRunsQuery.
+        r"""Gets the end_time of this ListPipelineRunsQuery.
 
         结束时间
 
@@ -140,7 +140,7 @@ class ListPipelineRunsQuery:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPipelineRunsQuery.
+        r"""Sets the end_time of this ListPipelineRunsQuery.
 
         结束时间
 
@@ -151,7 +151,7 @@ class ListPipelineRunsQuery:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineRunsQuery.
+        r"""Gets the offset of this ListPipelineRunsQuery.
 
         起始偏移
 
@@ -162,7 +162,7 @@ class ListPipelineRunsQuery:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineRunsQuery.
+        r"""Sets the offset of this ListPipelineRunsQuery.
 
         起始偏移
 
@@ -173,7 +173,7 @@ class ListPipelineRunsQuery:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineRunsQuery.
+        r"""Gets the limit of this ListPipelineRunsQuery.
 
         查询大小
 
@@ -184,7 +184,7 @@ class ListPipelineRunsQuery:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineRunsQuery.
+        r"""Sets the limit of this ListPipelineRunsQuery.
 
         查询大小
 
@@ -195,7 +195,7 @@ class ListPipelineRunsQuery:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPipelineRunsQuery.
+        r"""Gets the sort_key of this ListPipelineRunsQuery.
 
         排序字段名称
 
@@ -206,7 +206,7 @@ class ListPipelineRunsQuery:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPipelineRunsQuery.
+        r"""Sets the sort_key of this ListPipelineRunsQuery.
 
         排序字段名称
 
@@ -217,7 +217,7 @@ class ListPipelineRunsQuery:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPipelineRunsQuery.
+        r"""Gets the sort_dir of this ListPipelineRunsQuery.
 
         排序规则
 
@@ -228,7 +228,7 @@ class ListPipelineRunsQuery:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPipelineRunsQuery.
+        r"""Sets the sort_dir of this ListPipelineRunsQuery.
 
         排序规则
 

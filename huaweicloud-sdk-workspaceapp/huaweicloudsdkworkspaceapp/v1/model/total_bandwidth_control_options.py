@@ -73,7 +73,7 @@ class TotalBandwidthControlOptions:
     }
 
     def __init__(self, total_bandwidth_control_value=None, display_bandwidth_percentage_enable=None, display_bandwidth_percentage_options=None, multimedia_bandwidth_percentage_enable=None, multimedia_bandwidth_percentage_options=None, usb_bandwidth_percentage_enable=None, usb_bandwidth_percentage_options=None, pcsc_bandwidth_percentage_enable=None, pcsc_bandwidth_percentage_options=None, twain_bandwidth_percentage_enable=None, twain_bandwidth_percentage_options=None, printer_bandwidth_percentage_enable=None, printer_bandwidth_percentage_options=None, com_bandwidth_percentage_enable=None, com_bandwidth_percentage_options=None, file_redirection_bandwidth_percentage_enable=None, file_redirection_bandwidth_percentage_options=None, clipboard_bandwidth_percentage_enable=None, clipboard_bandwidth_percentage_options=None, secure_channel_bandwidth_percentage_enable=None, secure_channel_bandwidth_percentage_options=None, camera_bandwidth_percentage_enable=None, camera_bandwidth_percentage_options=None, virtual_channel_bandwidth_percentage_enable=None, virtual_channel_bandwidth_percentage_options=None):
-        """TotalBandwidthControlOptions
+        r"""TotalBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def total_bandwidth_control_value(self):
-        """Gets the total_bandwidth_control_value of this TotalBandwidthControlOptions.
+        r"""Gets the total_bandwidth_control_value of this TotalBandwidthControlOptions.
 
         总带宽控制量（Kbps）。取值范围为[10000-1000000]。默认：30000。
 
@@ -222,7 +222,7 @@ class TotalBandwidthControlOptions:
 
     @total_bandwidth_control_value.setter
     def total_bandwidth_control_value(self, total_bandwidth_control_value):
-        """Sets the total_bandwidth_control_value of this TotalBandwidthControlOptions.
+        r"""Sets the total_bandwidth_control_value of this TotalBandwidthControlOptions.
 
         总带宽控制量（Kbps）。取值范围为[10000-1000000]。默认：30000。
 
@@ -233,7 +233,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def display_bandwidth_percentage_enable(self):
-        """Gets the display_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the display_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         显示带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -244,7 +244,7 @@ class TotalBandwidthControlOptions:
 
     @display_bandwidth_percentage_enable.setter
     def display_bandwidth_percentage_enable(self, display_bandwidth_percentage_enable):
-        """Sets the display_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the display_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         显示带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -255,7 +255,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def display_bandwidth_percentage_options(self):
-        """Gets the display_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the display_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The display_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DisplayBandwidthPercentageOptions`
@@ -264,7 +264,7 @@ class TotalBandwidthControlOptions:
 
     @display_bandwidth_percentage_options.setter
     def display_bandwidth_percentage_options(self, display_bandwidth_percentage_options):
-        """Sets the display_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the display_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param display_bandwidth_percentage_options: The display_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type display_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayBandwidthPercentageOptions`
@@ -273,7 +273,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def multimedia_bandwidth_percentage_enable(self):
-        """Gets the multimedia_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the multimedia_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         多媒体带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -284,7 +284,7 @@ class TotalBandwidthControlOptions:
 
     @multimedia_bandwidth_percentage_enable.setter
     def multimedia_bandwidth_percentage_enable(self, multimedia_bandwidth_percentage_enable):
-        """Sets the multimedia_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the multimedia_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         多媒体带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -295,7 +295,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def multimedia_bandwidth_percentage_options(self):
-        """Gets the multimedia_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the multimedia_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The multimedia_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.MultimediaBandwidthPercentageOptions`
@@ -304,7 +304,7 @@ class TotalBandwidthControlOptions:
 
     @multimedia_bandwidth_percentage_options.setter
     def multimedia_bandwidth_percentage_options(self, multimedia_bandwidth_percentage_options):
-        """Sets the multimedia_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the multimedia_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param multimedia_bandwidth_percentage_options: The multimedia_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type multimedia_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.MultimediaBandwidthPercentageOptions`
@@ -313,7 +313,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def usb_bandwidth_percentage_enable(self):
-        """Gets the usb_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the usb_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         USB带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -324,7 +324,7 @@ class TotalBandwidthControlOptions:
 
     @usb_bandwidth_percentage_enable.setter
     def usb_bandwidth_percentage_enable(self, usb_bandwidth_percentage_enable):
-        """Sets the usb_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the usb_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         USB带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -335,7 +335,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def usb_bandwidth_percentage_options(self):
-        """Gets the usb_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the usb_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The usb_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UsbBandwidthPercentageOptions`
@@ -344,7 +344,7 @@ class TotalBandwidthControlOptions:
 
     @usb_bandwidth_percentage_options.setter
     def usb_bandwidth_percentage_options(self, usb_bandwidth_percentage_options):
-        """Sets the usb_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the usb_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param usb_bandwidth_percentage_options: The usb_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type usb_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.UsbBandwidthPercentageOptions`
@@ -353,7 +353,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def pcsc_bandwidth_percentage_enable(self):
-        """Gets the pcsc_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the pcsc_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         PCSC带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -364,7 +364,7 @@ class TotalBandwidthControlOptions:
 
     @pcsc_bandwidth_percentage_enable.setter
     def pcsc_bandwidth_percentage_enable(self, pcsc_bandwidth_percentage_enable):
-        """Sets the pcsc_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the pcsc_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         PCSC带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -375,7 +375,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def pcsc_bandwidth_percentage_options(self):
-        """Gets the pcsc_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the pcsc_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The pcsc_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PcscBandwidthPercentageOptions`
@@ -384,7 +384,7 @@ class TotalBandwidthControlOptions:
 
     @pcsc_bandwidth_percentage_options.setter
     def pcsc_bandwidth_percentage_options(self, pcsc_bandwidth_percentage_options):
-        """Sets the pcsc_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the pcsc_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param pcsc_bandwidth_percentage_options: The pcsc_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type pcsc_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.PcscBandwidthPercentageOptions`
@@ -393,7 +393,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def twain_bandwidth_percentage_enable(self):
-        """Gets the twain_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the twain_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         TWAIN带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -404,7 +404,7 @@ class TotalBandwidthControlOptions:
 
     @twain_bandwidth_percentage_enable.setter
     def twain_bandwidth_percentage_enable(self, twain_bandwidth_percentage_enable):
-        """Sets the twain_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the twain_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         TWAIN带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -415,7 +415,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def twain_bandwidth_percentage_options(self):
-        """Gets the twain_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the twain_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The twain_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.TwainBandwidthPercentageOptions`
@@ -424,7 +424,7 @@ class TotalBandwidthControlOptions:
 
     @twain_bandwidth_percentage_options.setter
     def twain_bandwidth_percentage_options(self, twain_bandwidth_percentage_options):
-        """Sets the twain_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the twain_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param twain_bandwidth_percentage_options: The twain_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type twain_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.TwainBandwidthPercentageOptions`
@@ -433,7 +433,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def printer_bandwidth_percentage_enable(self):
-        """Gets the printer_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the printer_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         打印机带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -444,7 +444,7 @@ class TotalBandwidthControlOptions:
 
     @printer_bandwidth_percentage_enable.setter
     def printer_bandwidth_percentage_enable(self, printer_bandwidth_percentage_enable):
-        """Sets the printer_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the printer_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         打印机带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -455,7 +455,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def printer_bandwidth_percentage_options(self):
-        """Gets the printer_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the printer_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The printer_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PrinterBandwidthPercentageOptions`
@@ -464,7 +464,7 @@ class TotalBandwidthControlOptions:
 
     @printer_bandwidth_percentage_options.setter
     def printer_bandwidth_percentage_options(self, printer_bandwidth_percentage_options):
-        """Sets the printer_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the printer_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param printer_bandwidth_percentage_options: The printer_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type printer_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.PrinterBandwidthPercentageOptions`
@@ -473,7 +473,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def com_bandwidth_percentage_enable(self):
-        """Gets the com_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the com_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         串口带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -484,7 +484,7 @@ class TotalBandwidthControlOptions:
 
     @com_bandwidth_percentage_enable.setter
     def com_bandwidth_percentage_enable(self, com_bandwidth_percentage_enable):
-        """Sets the com_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the com_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         串口带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -495,7 +495,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def com_bandwidth_percentage_options(self):
-        """Gets the com_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the com_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The com_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ComBandwidthPercentageOptions`
@@ -504,7 +504,7 @@ class TotalBandwidthControlOptions:
 
     @com_bandwidth_percentage_options.setter
     def com_bandwidth_percentage_options(self, com_bandwidth_percentage_options):
-        """Sets the com_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the com_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param com_bandwidth_percentage_options: The com_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type com_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.ComBandwidthPercentageOptions`
@@ -513,7 +513,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def file_redirection_bandwidth_percentage_enable(self):
-        """Gets the file_redirection_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the file_redirection_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         文件重定向带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -524,7 +524,7 @@ class TotalBandwidthControlOptions:
 
     @file_redirection_bandwidth_percentage_enable.setter
     def file_redirection_bandwidth_percentage_enable(self, file_redirection_bandwidth_percentage_enable):
-        """Sets the file_redirection_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the file_redirection_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         文件重定向带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -535,7 +535,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def file_redirection_bandwidth_percentage_options(self):
-        """Gets the file_redirection_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the file_redirection_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The file_redirection_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionBandwidthPercentageOptions`
@@ -544,7 +544,7 @@ class TotalBandwidthControlOptions:
 
     @file_redirection_bandwidth_percentage_options.setter
     def file_redirection_bandwidth_percentage_options(self, file_redirection_bandwidth_percentage_options):
-        """Sets the file_redirection_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the file_redirection_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param file_redirection_bandwidth_percentage_options: The file_redirection_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type file_redirection_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionBandwidthPercentageOptions`
@@ -553,7 +553,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def clipboard_bandwidth_percentage_enable(self):
-        """Gets the clipboard_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the clipboard_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         剪切板带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -564,7 +564,7 @@ class TotalBandwidthControlOptions:
 
     @clipboard_bandwidth_percentage_enable.setter
     def clipboard_bandwidth_percentage_enable(self, clipboard_bandwidth_percentage_enable):
-        """Sets the clipboard_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the clipboard_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         剪切板带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -575,7 +575,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def clipboard_bandwidth_percentage_options(self):
-        """Gets the clipboard_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the clipboard_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The clipboard_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClipboardBandwidthPercentageOptions`
@@ -584,7 +584,7 @@ class TotalBandwidthControlOptions:
 
     @clipboard_bandwidth_percentage_options.setter
     def clipboard_bandwidth_percentage_options(self, clipboard_bandwidth_percentage_options):
-        """Sets the clipboard_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the clipboard_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param clipboard_bandwidth_percentage_options: The clipboard_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type clipboard_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.ClipboardBandwidthPercentageOptions`
@@ -593,7 +593,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def secure_channel_bandwidth_percentage_enable(self):
-        """Gets the secure_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the secure_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         安全通道带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -604,7 +604,7 @@ class TotalBandwidthControlOptions:
 
     @secure_channel_bandwidth_percentage_enable.setter
     def secure_channel_bandwidth_percentage_enable(self, secure_channel_bandwidth_percentage_enable):
-        """Sets the secure_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the secure_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         安全通道带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -615,7 +615,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def secure_channel_bandwidth_percentage_options(self):
-        """Gets the secure_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the secure_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The secure_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SecureChannelBandwidthPercentageOptions`
@@ -624,7 +624,7 @@ class TotalBandwidthControlOptions:
 
     @secure_channel_bandwidth_percentage_options.setter
     def secure_channel_bandwidth_percentage_options(self, secure_channel_bandwidth_percentage_options):
-        """Sets the secure_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the secure_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param secure_channel_bandwidth_percentage_options: The secure_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type secure_channel_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.SecureChannelBandwidthPercentageOptions`
@@ -633,7 +633,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def camera_bandwidth_percentage_enable(self):
-        """Gets the camera_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the camera_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         摄像头带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -644,7 +644,7 @@ class TotalBandwidthControlOptions:
 
     @camera_bandwidth_percentage_enable.setter
     def camera_bandwidth_percentage_enable(self, camera_bandwidth_percentage_enable):
-        """Sets the camera_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the camera_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         摄像头带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -655,7 +655,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def camera_bandwidth_percentage_options(self):
-        """Gets the camera_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the camera_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The camera_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CameraBandwidthPercentageOptions`
@@ -664,7 +664,7 @@ class TotalBandwidthControlOptions:
 
     @camera_bandwidth_percentage_options.setter
     def camera_bandwidth_percentage_options(self, camera_bandwidth_percentage_options):
-        """Sets the camera_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the camera_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param camera_bandwidth_percentage_options: The camera_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type camera_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.CameraBandwidthPercentageOptions`
@@ -673,7 +673,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def virtual_channel_bandwidth_percentage_enable(self):
-        """Gets the virtual_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Gets the virtual_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         虚拟通道带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -684,7 +684,7 @@ class TotalBandwidthControlOptions:
 
     @virtual_channel_bandwidth_percentage_enable.setter
     def virtual_channel_bandwidth_percentage_enable(self, virtual_channel_bandwidth_percentage_enable):
-        """Sets the virtual_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
+        r"""Sets the virtual_channel_bandwidth_percentage_enable of this TotalBandwidthControlOptions.
 
         虚拟通道带宽百分比控制。取值为：false：表示关闭。true：表示开启。
 
@@ -695,7 +695,7 @@ class TotalBandwidthControlOptions:
 
     @property
     def virtual_channel_bandwidth_percentage_options(self):
-        """Gets the virtual_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Gets the virtual_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :return: The virtual_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VirtualChannelBandwidthPercentageOptions`
@@ -704,7 +704,7 @@ class TotalBandwidthControlOptions:
 
     @virtual_channel_bandwidth_percentage_options.setter
     def virtual_channel_bandwidth_percentage_options(self, virtual_channel_bandwidth_percentage_options):
-        """Sets the virtual_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
+        r"""Sets the virtual_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
 
         :param virtual_channel_bandwidth_percentage_options: The virtual_channel_bandwidth_percentage_options of this TotalBandwidthControlOptions.
         :type virtual_channel_bandwidth_percentage_options: :class:`huaweicloudsdkworkspaceapp.v1.VirtualChannelBandwidthPercentageOptions`

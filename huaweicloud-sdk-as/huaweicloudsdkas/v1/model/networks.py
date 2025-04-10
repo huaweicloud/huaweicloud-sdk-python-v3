@@ -31,7 +31,7 @@ class Networks:
     }
 
     def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
-        """Networks
+        r"""Networks
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class Networks:
 
     @property
     def id(self):
-        """Gets the id of this Networks.
+        r"""Gets the id of this Networks.
 
         子网的网络id。
 
@@ -74,7 +74,7 @@ class Networks:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Networks.
+        r"""Sets the id of this Networks.
 
         子网的网络id。
 
@@ -85,7 +85,7 @@ class Networks:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this Networks.
+        r"""Gets the ipv6_enable of this Networks.
 
         是否启用IPv6。取值为true时，标识此网卡已启用IPv6。
 
@@ -96,7 +96,7 @@ class Networks:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this Networks.
+        r"""Sets the ipv6_enable of this Networks.
 
         是否启用IPv6。取值为true时，标识此网卡已启用IPv6。
 
@@ -107,7 +107,7 @@ class Networks:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this Networks.
+        r"""Gets the ipv6_bandwidth of this Networks.
 
         :return: The ipv6_bandwidth of this Networks.
         :rtype: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
@@ -116,7 +116,7 @@ class Networks:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this Networks.
+        r"""Sets the ipv6_bandwidth of this Networks.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this Networks.
         :type ipv6_bandwidth: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
@@ -125,7 +125,7 @@ class Networks:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this Networks.
+        r"""Gets the allowed_address_pairs of this Networks.
 
         是否开启源/目的检查开关。
 
@@ -136,7 +136,7 @@ class Networks:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this Networks.
+        r"""Sets the allowed_address_pairs of this Networks.
 
         是否开启源/目的检查开关。
 

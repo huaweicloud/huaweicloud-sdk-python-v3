@@ -35,7 +35,7 @@ class RecurrenceSchedule:
     }
 
     def __init__(self, day_of_month=None, day_of_week=None, hour=None, minute=None, month=None, year=None):
-        """RecurrenceSchedule
+        r"""RecurrenceSchedule
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RecurrenceSchedule:
 
     @property
     def day_of_month(self):
-        """Gets the day_of_month of this RecurrenceSchedule.
+        r"""Gets the day_of_month of this RecurrenceSchedule.
 
         日期按月
 
@@ -89,7 +89,7 @@ class RecurrenceSchedule:
 
     @day_of_month.setter
     def day_of_month(self, day_of_month):
-        """Sets the day_of_month of this RecurrenceSchedule.
+        r"""Sets the day_of_month of this RecurrenceSchedule.
 
         日期按月
 
@@ -100,7 +100,7 @@ class RecurrenceSchedule:
 
     @property
     def day_of_week(self):
-        """Gets the day_of_week of this RecurrenceSchedule.
+        r"""Gets the day_of_week of this RecurrenceSchedule.
 
         日期按星期
 
@@ -111,7 +111,7 @@ class RecurrenceSchedule:
 
     @day_of_week.setter
     def day_of_week(self, day_of_week):
-        """Sets the day_of_week of this RecurrenceSchedule.
+        r"""Sets the day_of_week of this RecurrenceSchedule.
 
         日期按星期
 
@@ -122,7 +122,7 @@ class RecurrenceSchedule:
 
     @property
     def hour(self):
-        """Gets the hour of this RecurrenceSchedule.
+        r"""Gets the hour of this RecurrenceSchedule.
 
         时
 
@@ -133,7 +133,7 @@ class RecurrenceSchedule:
 
     @hour.setter
     def hour(self, hour):
-        """Sets the hour of this RecurrenceSchedule.
+        r"""Sets the hour of this RecurrenceSchedule.
 
         时
 
@@ -144,7 +144,7 @@ class RecurrenceSchedule:
 
     @property
     def minute(self):
-        """Gets the minute of this RecurrenceSchedule.
+        r"""Gets the minute of this RecurrenceSchedule.
 
         分
 
@@ -155,7 +155,7 @@ class RecurrenceSchedule:
 
     @minute.setter
     def minute(self, minute):
-        """Sets the minute of this RecurrenceSchedule.
+        r"""Sets the minute of this RecurrenceSchedule.
 
         分
 
@@ -166,7 +166,7 @@ class RecurrenceSchedule:
 
     @property
     def month(self):
-        """Gets the month of this RecurrenceSchedule.
+        r"""Gets the month of this RecurrenceSchedule.
 
         月
 
@@ -177,7 +177,7 @@ class RecurrenceSchedule:
 
     @month.setter
     def month(self, month):
-        """Sets the month of this RecurrenceSchedule.
+        r"""Sets the month of this RecurrenceSchedule.
 
         月
 
@@ -188,7 +188,7 @@ class RecurrenceSchedule:
 
     @property
     def year(self):
-        """Gets the year of this RecurrenceSchedule.
+        r"""Gets the year of this RecurrenceSchedule.
 
         年
 
@@ -199,7 +199,7 @@ class RecurrenceSchedule:
 
     @year.setter
     def year(self, year):
-        """Sets the year of this RecurrenceSchedule.
+        r"""Sets the year of this RecurrenceSchedule.
 
         年
 

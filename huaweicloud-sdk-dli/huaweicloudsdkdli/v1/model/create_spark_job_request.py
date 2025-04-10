@@ -27,7 +27,7 @@ class CreateSparkJobRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """CreateSparkJobRequest
+        r"""CreateSparkJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSparkJobRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateSparkJobRequest.
+        r"""Gets the user_id of this CreateSparkJobRequest.
 
         :return: The user_id of this CreateSparkJobRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateSparkJobRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateSparkJobRequest.
+        r"""Sets the user_id of this CreateSparkJobRequest.
 
         :param user_id: The user_id of this CreateSparkJobRequest.
         :type user_id: str
@@ -68,7 +68,7 @@ class CreateSparkJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSparkJobRequest.
+        r"""Gets the body of this CreateSparkJobRequest.
 
         :return: The body of this CreateSparkJobRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSparkJobRequestBody`
@@ -77,7 +77,7 @@ class CreateSparkJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSparkJobRequest.
+        r"""Sets the body of this CreateSparkJobRequest.
 
         :param body: The body of this CreateSparkJobRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateSparkJobRequestBody`

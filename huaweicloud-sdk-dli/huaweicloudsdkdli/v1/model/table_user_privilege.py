@@ -31,7 +31,7 @@ class TableUserPrivilege:
     }
 
     def __init__(self, is_admin=None, object=None, privileges=None, user_name=None):
-        """TableUserPrivilege
+        r"""TableUserPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TableUserPrivilege:
 
     @property
     def is_admin(self):
-        """Gets the is_admin of this TableUserPrivilege.
+        r"""Gets the is_admin of this TableUserPrivilege.
 
         判断是否为管理用户。
 
@@ -75,7 +75,7 @@ class TableUserPrivilege:
 
     @is_admin.setter
     def is_admin(self, is_admin):
-        """Sets the is_admin of this TableUserPrivilege.
+        r"""Sets the is_admin of this TableUserPrivilege.
 
         判断是否为管理用户。
 
@@ -86,7 +86,7 @@ class TableUserPrivilege:
 
     @property
     def object(self):
-        """Gets the object of this TableUserPrivilege.
+        r"""Gets the object of this TableUserPrivilege.
 
         该用户有权限的对象： “databases.数据库名.tables.表名”，用户在当前表上的权限。 “databases.数据库名.tables.表名.columns.列名”，用户在列上的权限。
 
@@ -97,7 +97,7 @@ class TableUserPrivilege:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this TableUserPrivilege.
+        r"""Sets the object of this TableUserPrivilege.
 
         该用户有权限的对象： “databases.数据库名.tables.表名”，用户在当前表上的权限。 “databases.数据库名.tables.表名.columns.列名”，用户在列上的权限。
 
@@ -108,7 +108,7 @@ class TableUserPrivilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this TableUserPrivilege.
+        r"""Gets the privileges of this TableUserPrivilege.
 
         该用户在相应object上的权限。
 
@@ -119,7 +119,7 @@ class TableUserPrivilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this TableUserPrivilege.
+        r"""Sets the privileges of this TableUserPrivilege.
 
         该用户在相应object上的权限。
 
@@ -130,7 +130,7 @@ class TableUserPrivilege:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TableUserPrivilege.
+        r"""Gets the user_name of this TableUserPrivilege.
 
         拥有该权限的用户名。
 
@@ -141,7 +141,7 @@ class TableUserPrivilege:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TableUserPrivilege.
+        r"""Sets the user_name of this TableUserPrivilege.
 
         拥有该权限的用户名。
 

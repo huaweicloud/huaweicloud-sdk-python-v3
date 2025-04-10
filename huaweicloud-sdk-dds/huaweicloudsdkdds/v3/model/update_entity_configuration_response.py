@@ -28,7 +28,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, restart_required=None):
-        """UpdateEntityConfigurationResponse
+        r"""UpdateEntityConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateEntityConfigurationResponse.
+        r"""Gets the job_id of this UpdateEntityConfigurationResponse.
 
         修改实例参数的异步任务ID。
 
@@ -62,7 +62,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateEntityConfigurationResponse.
+        r"""Sets the job_id of this UpdateEntityConfigurationResponse.
 
         修改实例参数的异步任务ID。
 
@@ -73,7 +73,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this UpdateEntityConfigurationResponse.
+        r"""Gets the restart_required of this UpdateEntityConfigurationResponse.
 
         参数修改涉及范围（实例，组，节点）否需要重启。 - false不需要重启 - true需要重启。
 
@@ -84,7 +84,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this UpdateEntityConfigurationResponse.
+        r"""Sets the restart_required of this UpdateEntityConfigurationResponse.
 
         参数修改涉及范围（实例，组，节点）否需要重启。 - false不需要重启 - true需要重启。
 

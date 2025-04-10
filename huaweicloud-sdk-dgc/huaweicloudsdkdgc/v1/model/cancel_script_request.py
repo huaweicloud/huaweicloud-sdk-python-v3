@@ -29,7 +29,7 @@ class CancelScriptRequest:
     }
 
     def __init__(self, workspace=None, script_name=None, instance_id=None):
-        """CancelScriptRequest
+        r"""CancelScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CancelScriptRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CancelScriptRequest.
+        r"""Gets the workspace of this CancelScriptRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class CancelScriptRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CancelScriptRequest.
+        r"""Sets the workspace of this CancelScriptRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class CancelScriptRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this CancelScriptRequest.
+        r"""Gets the script_name of this CancelScriptRequest.
 
         :return: The script_name of this CancelScriptRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class CancelScriptRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this CancelScriptRequest.
+        r"""Sets the script_name of this CancelScriptRequest.
 
         :param script_name: The script_name of this CancelScriptRequest.
         :type script_name: str
@@ -95,7 +95,7 @@ class CancelScriptRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CancelScriptRequest.
+        r"""Gets the instance_id of this CancelScriptRequest.
 
         :return: The instance_id of this CancelScriptRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class CancelScriptRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CancelScriptRequest.
+        r"""Sets the instance_id of this CancelScriptRequest.
 
         :param instance_id: The instance_id of this CancelScriptRequest.
         :type instance_id: str

@@ -39,7 +39,7 @@ class ListAddressItemsRequest:
     }
 
     def __init__(self, set_id=None, key_word=None, limit=None, offset=None, address=None, enterprise_project_id=None, fw_instance_id=None, query_address_set_type=None):
-        """ListAddressItemsRequest
+        r"""ListAddressItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListAddressItemsRequest:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ListAddressItemsRequest.
+        r"""Gets the set_id of this ListAddressItemsRequest.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -100,7 +100,7 @@ class ListAddressItemsRequest:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ListAddressItemsRequest.
+        r"""Sets the set_id of this ListAddressItemsRequest.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -111,7 +111,7 @@ class ListAddressItemsRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListAddressItemsRequest.
+        r"""Gets the key_word of this ListAddressItemsRequest.
 
         关键字，包括地址组成员名称或描述的一部分
 
@@ -122,7 +122,7 @@ class ListAddressItemsRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListAddressItemsRequest.
+        r"""Sets the key_word of this ListAddressItemsRequest.
 
         关键字，包括地址组成员名称或描述的一部分
 
@@ -133,7 +133,7 @@ class ListAddressItemsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAddressItemsRequest.
+        r"""Gets the limit of this ListAddressItemsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -144,7 +144,7 @@ class ListAddressItemsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAddressItemsRequest.
+        r"""Sets the limit of this ListAddressItemsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -155,7 +155,7 @@ class ListAddressItemsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAddressItemsRequest.
+        r"""Gets the offset of this ListAddressItemsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -166,7 +166,7 @@ class ListAddressItemsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAddressItemsRequest.
+        r"""Sets the offset of this ListAddressItemsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -177,7 +177,7 @@ class ListAddressItemsRequest:
 
     @property
     def address(self):
-        """Gets the address of this ListAddressItemsRequest.
+        r"""Gets the address of this ListAddressItemsRequest.
 
         ip地址
 
@@ -188,7 +188,7 @@ class ListAddressItemsRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListAddressItemsRequest.
+        r"""Sets the address of this ListAddressItemsRequest.
 
         ip地址
 
@@ -199,7 +199,7 @@ class ListAddressItemsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAddressItemsRequest.
+        r"""Gets the enterprise_project_id of this ListAddressItemsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -210,7 +210,7 @@ class ListAddressItemsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAddressItemsRequest.
+        r"""Sets the enterprise_project_id of this ListAddressItemsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -221,7 +221,7 @@ class ListAddressItemsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListAddressItemsRequest.
+        r"""Gets the fw_instance_id of this ListAddressItemsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -232,7 +232,7 @@ class ListAddressItemsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListAddressItemsRequest.
+        r"""Sets the fw_instance_id of this ListAddressItemsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -243,7 +243,7 @@ class ListAddressItemsRequest:
 
     @property
     def query_address_set_type(self):
-        """Gets the query_address_set_type of this ListAddressItemsRequest.
+        r"""Gets the query_address_set_type of this ListAddressItemsRequest.
 
         查询地址组类型，0表示自定义地址组，1表示预定义地址组
 
@@ -254,7 +254,7 @@ class ListAddressItemsRequest:
 
     @query_address_set_type.setter
     def query_address_set_type(self, query_address_set_type):
-        """Sets the query_address_set_type of this ListAddressItemsRequest.
+        r"""Sets the query_address_set_type of this ListAddressItemsRequest.
 
         查询地址组类型，0表示自定义地址组，1表示预定义地址组
 

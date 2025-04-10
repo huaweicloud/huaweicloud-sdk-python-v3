@@ -25,7 +25,7 @@ class ClusterDescriptionInfo:
     }
 
     def __init__(self, description_info=None):
-        """ClusterDescriptionInfo
+        r"""ClusterDescriptionInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ClusterDescriptionInfo:
 
     @property
     def description_info(self):
-        """Gets the description_info of this ClusterDescriptionInfo.
+        r"""Gets the description_info of this ClusterDescriptionInfo.
 
         集群描述信息
 
@@ -53,7 +53,7 @@ class ClusterDescriptionInfo:
 
     @description_info.setter
     def description_info(self, description_info):
-        """Sets the description_info of this ClusterDescriptionInfo.
+        r"""Sets the description_info of this ClusterDescriptionInfo.
 
         集群描述信息
 

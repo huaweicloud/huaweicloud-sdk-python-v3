@@ -26,7 +26,7 @@ class ListAgenciesResponse(SdkResponse):
     }
 
     def __init__(self, agencies=None):
-        """ListAgenciesResponse
+        r"""ListAgenciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @property
     def agencies(self):
-        """Gets the agencies of this ListAgenciesResponse.
+        r"""Gets the agencies of this ListAgenciesResponse.
 
         委托信息列表。
 
@@ -55,7 +55,7 @@ class ListAgenciesResponse(SdkResponse):
 
     @agencies.setter
     def agencies(self, agencies):
-        """Sets the agencies of this ListAgenciesResponse.
+        r"""Sets the agencies of this ListAgenciesResponse.
 
         委托信息列表。
 

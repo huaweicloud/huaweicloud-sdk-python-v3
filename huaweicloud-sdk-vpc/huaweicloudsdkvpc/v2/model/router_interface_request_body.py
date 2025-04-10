@@ -27,7 +27,7 @@ class RouterInterfaceRequestBody:
     }
 
     def __init__(self, port_id=None, subnet_id=None):
-        """RouterInterfaceRequestBody
+        r"""RouterInterfaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RouterInterfaceRequestBody:
 
     @property
     def port_id(self):
-        """Gets the port_id of this RouterInterfaceRequestBody.
+        r"""Gets the port_id of this RouterInterfaceRequestBody.
 
         功能说明：路由器添加（或删除）接口请求参数port对应的id 约束：  - 使用端口的时候，端口上有且只有一个IP地址  - subnet_id与port_id其中之一必须指定
 
@@ -61,7 +61,7 @@ class RouterInterfaceRequestBody:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this RouterInterfaceRequestBody.
+        r"""Sets the port_id of this RouterInterfaceRequestBody.
 
         功能说明：路由器添加（或删除）接口请求参数port对应的id 约束：  - 使用端口的时候，端口上有且只有一个IP地址  - subnet_id与port_id其中之一必须指定
 
@@ -72,7 +72,7 @@ class RouterInterfaceRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this RouterInterfaceRequestBody.
+        r"""Gets the subnet_id of this RouterInterfaceRequestBody.
 
         功能说明：路由器添加（或删除）接口请求参数subnet对应的id 约束：  - 使用子网的时候，子网上必须配置gatewayIP地址  - \"provider:network_type\"为\"geneve\"的网络不可以添加路由器  - subnet_id与port_id其中之一必须指定。
 
@@ -83,7 +83,7 @@ class RouterInterfaceRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this RouterInterfaceRequestBody.
+        r"""Sets the subnet_id of this RouterInterfaceRequestBody.
 
         功能说明：路由器添加（或删除）接口请求参数subnet对应的id 约束：  - 使用子网的时候，子网上必须配置gatewayIP地址  - \"provider:network_type\"为\"geneve\"的网络不可以添加路由器  - subnet_id与port_id其中之一必须指定。
 

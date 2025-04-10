@@ -33,7 +33,7 @@ class ListInternetBandwidthLimitsRequest:
     }
 
     def __init__(self, fields=None, sort_key=None, sort_dir=None, charge_mode=None, type=None):
-        """ListInternetBandwidthLimitsRequest
+        r"""ListInternetBandwidthLimitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListInternetBandwidthLimitsRequest.
+        r"""Gets the fields of this ListInternetBandwidthLimitsRequest.
 
         :return: The fields of this ListInternetBandwidthLimitsRequest.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListInternetBandwidthLimitsRequest.
+        r"""Sets the fields of this ListInternetBandwidthLimitsRequest.
 
         :param fields: The fields of this ListInternetBandwidthLimitsRequest.
         :type fields: list[str]
@@ -89,7 +89,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListInternetBandwidthLimitsRequest.
+        r"""Gets the sort_key of this ListInternetBandwidthLimitsRequest.
 
         按照sort_key指定的字段排序
 
@@ -100,7 +100,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListInternetBandwidthLimitsRequest.
+        r"""Sets the sort_key of this ListInternetBandwidthLimitsRequest.
 
         按照sort_key指定的字段排序
 
@@ -111,7 +111,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListInternetBandwidthLimitsRequest.
+        r"""Gets the sort_dir of this ListInternetBandwidthLimitsRequest.
 
         排序的方向，倒序或者正序
 
@@ -122,7 +122,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListInternetBandwidthLimitsRequest.
+        r"""Sets the sort_dir of this ListInternetBandwidthLimitsRequest.
 
         排序的方向，倒序或者正序
 
@@ -133,7 +133,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListInternetBandwidthLimitsRequest.
+        r"""Gets the charge_mode of this ListInternetBandwidthLimitsRequest.
 
         :return: The charge_mode of this ListInternetBandwidthLimitsRequest.
         :rtype: list[str]
@@ -142,7 +142,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListInternetBandwidthLimitsRequest.
+        r"""Sets the charge_mode of this ListInternetBandwidthLimitsRequest.
 
         :param charge_mode: The charge_mode of this ListInternetBandwidthLimitsRequest.
         :type charge_mode: list[str]
@@ -151,7 +151,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListInternetBandwidthLimitsRequest.
+        r"""Gets the type of this ListInternetBandwidthLimitsRequest.
 
         :return: The type of this ListInternetBandwidthLimitsRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListInternetBandwidthLimitsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInternetBandwidthLimitsRequest.
+        r"""Sets the type of this ListInternetBandwidthLimitsRequest.
 
         :param type: The type of this ListInternetBandwidthLimitsRequest.
         :type type: str

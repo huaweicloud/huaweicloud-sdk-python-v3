@@ -25,7 +25,7 @@ class DeleteDisasterRecoveryRequest:
     }
 
     def __init__(self, instance_id=None):
-        """DeleteDisasterRecoveryRequest
+        r"""DeleteDisasterRecoveryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDisasterRecoveryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDisasterRecoveryRequest.
+        r"""Gets the instance_id of this DeleteDisasterRecoveryRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DeleteDisasterRecoveryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDisasterRecoveryRequest.
+        r"""Sets the instance_id of this DeleteDisasterRecoveryRequest.
 
         实例ID。
 

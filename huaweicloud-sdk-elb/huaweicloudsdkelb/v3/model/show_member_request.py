@@ -27,7 +27,7 @@ class ShowMemberRequest:
     }
 
     def __init__(self, pool_id=None, member_id=None):
-        """ShowMemberRequest
+        r"""ShowMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMemberRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ShowMemberRequest.
+        r"""Gets the pool_id of this ShowMemberRequest.
 
         参数解释：后端服务器组ID。
 
@@ -59,7 +59,7 @@ class ShowMemberRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ShowMemberRequest.
+        r"""Sets the pool_id of this ShowMemberRequest.
 
         参数解释：后端服务器组ID。
 
@@ -70,7 +70,7 @@ class ShowMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ShowMemberRequest.
+        r"""Gets the member_id of this ShowMemberRequest.
 
         后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -81,7 +81,7 @@ class ShowMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ShowMemberRequest.
+        r"""Sets the member_id of this ShowMemberRequest.
 
         后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 

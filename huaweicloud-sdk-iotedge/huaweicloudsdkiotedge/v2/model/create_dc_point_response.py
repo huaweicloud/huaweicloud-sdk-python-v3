@@ -44,7 +44,7 @@ class CreateDcPointResponse(SdkResponse):
     }
 
     def __init__(self, point_id=None, name=None, collection_config=None, device_id=None, _property=None, data_type=None, ds_id=None, processing_config=None, create_time=None, update_time=None):
-        """CreateDcPointResponse
+        r"""CreateDcPointResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def point_id(self):
-        """Gets the point_id of this CreateDcPointResponse.
+        r"""Gets the point_id of this CreateDcPointResponse.
 
         点位表id，数据源下唯一
 
@@ -118,7 +118,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this CreateDcPointResponse.
+        r"""Sets the point_id of this CreateDcPointResponse.
 
         点位表id，数据源下唯一
 
@@ -129,7 +129,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateDcPointResponse.
+        r"""Gets the name of this CreateDcPointResponse.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -140,7 +140,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDcPointResponse.
+        r"""Sets the name of this CreateDcPointResponse.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -151,7 +151,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def collection_config(self):
-        """Gets the collection_config of this CreateDcPointResponse.
+        r"""Gets the collection_config of this CreateDcPointResponse.
 
         点位采集配置
 
@@ -162,7 +162,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @collection_config.setter
     def collection_config(self, collection_config):
-        """Sets the collection_config of this CreateDcPointResponse.
+        r"""Sets the collection_config of this CreateDcPointResponse.
 
         点位采集配置
 
@@ -173,7 +173,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateDcPointResponse.
+        r"""Gets the device_id of this CreateDcPointResponse.
 
         设备id
 
@@ -184,7 +184,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateDcPointResponse.
+        r"""Sets the device_id of this CreateDcPointResponse.
 
         设备id
 
@@ -195,7 +195,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def _property(self):
-        """Gets the _property of this CreateDcPointResponse.
+        r"""Gets the _property of this CreateDcPointResponse.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -206,7 +206,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this CreateDcPointResponse.
+        r"""Sets the _property of this CreateDcPointResponse.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -217,7 +217,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateDcPointResponse.
+        r"""Gets the data_type of this CreateDcPointResponse.
 
         点位数据类型
 
@@ -228,7 +228,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateDcPointResponse.
+        r"""Sets the data_type of this CreateDcPointResponse.
 
         点位数据类型
 
@@ -239,7 +239,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this CreateDcPointResponse.
+        r"""Gets the ds_id of this CreateDcPointResponse.
 
         采集数据源id，节点下唯一
 
@@ -250,7 +250,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this CreateDcPointResponse.
+        r"""Sets the ds_id of this CreateDcPointResponse.
 
         采集数据源id，节点下唯一
 
@@ -261,7 +261,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def processing_config(self):
-        """Gets the processing_config of this CreateDcPointResponse.
+        r"""Gets the processing_config of this CreateDcPointResponse.
 
         :return: The processing_config of this CreateDcPointResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
@@ -270,7 +270,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @processing_config.setter
     def processing_config(self, processing_config):
-        """Sets the processing_config of this CreateDcPointResponse.
+        r"""Sets the processing_config of this CreateDcPointResponse.
 
         :param processing_config: The processing_config of this CreateDcPointResponse.
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
@@ -279,7 +279,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDcPointResponse.
+        r"""Gets the create_time of this CreateDcPointResponse.
 
         创建时间
 
@@ -290,7 +290,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDcPointResponse.
+        r"""Sets the create_time of this CreateDcPointResponse.
 
         创建时间
 
@@ -301,7 +301,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateDcPointResponse.
+        r"""Gets the update_time of this CreateDcPointResponse.
 
         最后一次修改时间
 
@@ -312,7 +312,7 @@ class CreateDcPointResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateDcPointResponse.
+        r"""Sets the update_time of this CreateDcPointResponse.
 
         最后一次修改时间
 

@@ -25,7 +25,7 @@ class BatchDisassociateDesktopsEipRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDisassociateDesktopsEipRequest
+        r"""BatchDisassociateDesktopsEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDisassociateDesktopsEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDisassociateDesktopsEipRequest.
+        r"""Gets the body of this BatchDisassociateDesktopsEipRequest.
 
         :return: The body of this BatchDisassociateDesktopsEipRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDisassociateDesktopsEipReq`
@@ -52,7 +52,7 @@ class BatchDisassociateDesktopsEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDisassociateDesktopsEipRequest.
+        r"""Sets the body of this BatchDisassociateDesktopsEipRequest.
 
         :param body: The body of this BatchDisassociateDesktopsEipRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDisassociateDesktopsEipReq`

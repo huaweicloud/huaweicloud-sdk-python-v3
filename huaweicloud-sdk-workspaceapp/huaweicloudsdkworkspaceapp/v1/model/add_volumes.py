@@ -27,7 +27,7 @@ class AddVolumes:
     }
 
     def __init__(self, service_id=None, volumes=None):
-        """AddVolumes
+        r"""AddVolumes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddVolumes:
 
     @property
     def service_id(self):
-        """Gets the service_id of this AddVolumes.
+        r"""Gets the service_id of this AddVolumes.
 
         服务ID。
 
@@ -61,7 +61,7 @@ class AddVolumes:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this AddVolumes.
+        r"""Sets the service_id of this AddVolumes.
 
         服务ID。
 
@@ -72,7 +72,7 @@ class AddVolumes:
 
     @property
     def volumes(self):
-        """Gets the volumes of this AddVolumes.
+        r"""Gets the volumes of this AddVolumes.
 
         订单的磁盘信息列表。
 
@@ -83,7 +83,7 @@ class AddVolumes:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this AddVolumes.
+        r"""Sets the volumes of this AddVolumes.
 
         订单的磁盘信息列表。
 

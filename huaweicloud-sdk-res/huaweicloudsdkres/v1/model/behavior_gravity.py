@@ -29,7 +29,7 @@ class BehaviorGravity:
     }
 
     def __init__(self, weaken_factor=None, view_type=None, algo_type=None):
-        """BehaviorGravity
+        r"""BehaviorGravity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BehaviorGravity:
 
     @property
     def weaken_factor(self):
-        """Gets the weaken_factor of this BehaviorGravity.
+        r"""Gets the weaken_factor of this BehaviorGravity.
 
         衰减因子。
 
@@ -68,7 +68,7 @@ class BehaviorGravity:
 
     @weaken_factor.setter
     def weaken_factor(self, weaken_factor):
-        """Sets the weaken_factor of this BehaviorGravity.
+        r"""Sets the weaken_factor of this BehaviorGravity.
 
         衰减因子。
 
@@ -79,7 +79,7 @@ class BehaviorGravity:
 
     @property
     def view_type(self):
-        """Gets the view_type of this BehaviorGravity.
+        r"""Gets the view_type of this BehaviorGravity.
 
         行为次数统计方法： - pv，访问量 - uv，独立访客
 
@@ -90,7 +90,7 @@ class BehaviorGravity:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this BehaviorGravity.
+        r"""Sets the view_type of this BehaviorGravity.
 
         行为次数统计方法： - pv，访问量 - uv，独立访客
 
@@ -101,7 +101,7 @@ class BehaviorGravity:
 
     @property
     def algo_type(self):
-        """Gets the algo_type of this BehaviorGravity.
+        r"""Gets the algo_type of this BehaviorGravity.
 
         算法类型: - normal，通用 - time，时间
 
@@ -112,7 +112,7 @@ class BehaviorGravity:
 
     @algo_type.setter
     def algo_type(self, algo_type):
-        """Sets the algo_type of this BehaviorGravity.
+        r"""Sets the algo_type of this BehaviorGravity.
 
         算法类型: - normal，通用 - time，时间
 

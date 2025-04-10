@@ -29,7 +29,7 @@ class UpgradeInfoSpec:
     }
 
     def __init__(self, last_upgrade_info=None, version_info=None, upgrade_feature_gates=None):
-        """UpgradeInfoSpec
+        r"""UpgradeInfoSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpgradeInfoSpec:
 
     @property
     def last_upgrade_info(self):
-        """Gets the last_upgrade_info of this UpgradeInfoSpec.
+        r"""Gets the last_upgrade_info of this UpgradeInfoSpec.
 
         :return: The last_upgrade_info of this UpgradeInfoSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeInfoStatus`
@@ -66,7 +66,7 @@ class UpgradeInfoSpec:
 
     @last_upgrade_info.setter
     def last_upgrade_info(self, last_upgrade_info):
-        """Sets the last_upgrade_info of this UpgradeInfoSpec.
+        r"""Sets the last_upgrade_info of this UpgradeInfoSpec.
 
         :param last_upgrade_info: The last_upgrade_info of this UpgradeInfoSpec.
         :type last_upgrade_info: :class:`huaweicloudsdkcce.v3.UpgradeInfoStatus`
@@ -75,7 +75,7 @@ class UpgradeInfoSpec:
 
     @property
     def version_info(self):
-        """Gets the version_info of this UpgradeInfoSpec.
+        r"""Gets the version_info of this UpgradeInfoSpec.
 
         :return: The version_info of this UpgradeInfoSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeVersionInfo`
@@ -84,7 +84,7 @@ class UpgradeInfoSpec:
 
     @version_info.setter
     def version_info(self, version_info):
-        """Sets the version_info of this UpgradeInfoSpec.
+        r"""Sets the version_info of this UpgradeInfoSpec.
 
         :param version_info: The version_info of this UpgradeInfoSpec.
         :type version_info: :class:`huaweicloudsdkcce.v3.UpgradeVersionInfo`
@@ -93,7 +93,7 @@ class UpgradeInfoSpec:
 
     @property
     def upgrade_feature_gates(self):
-        """Gets the upgrade_feature_gates of this UpgradeInfoSpec.
+        r"""Gets the upgrade_feature_gates of this UpgradeInfoSpec.
 
         :return: The upgrade_feature_gates of this UpgradeInfoSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeFeatureGates`
@@ -102,7 +102,7 @@ class UpgradeInfoSpec:
 
     @upgrade_feature_gates.setter
     def upgrade_feature_gates(self, upgrade_feature_gates):
-        """Sets the upgrade_feature_gates of this UpgradeInfoSpec.
+        r"""Sets the upgrade_feature_gates of this UpgradeInfoSpec.
 
         :param upgrade_feature_gates: The upgrade_feature_gates of this UpgradeInfoSpec.
         :type upgrade_feature_gates: :class:`huaweicloudsdkcce.v3.UpgradeFeatureGates`

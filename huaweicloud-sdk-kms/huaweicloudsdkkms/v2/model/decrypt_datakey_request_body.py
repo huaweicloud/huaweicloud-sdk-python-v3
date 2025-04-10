@@ -33,7 +33,7 @@ class DecryptDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, cipher_text=None, datakey_cipher_length=None, additional_authenticated_data=None, sequence=None):
-        """DecryptDatakeyRequestBody
+        r"""DecryptDatakeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DecryptDatakeyRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this DecryptDatakeyRequestBody.
+        r"""Gets the key_id of this DecryptDatakeyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -79,7 +79,7 @@ class DecryptDatakeyRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this DecryptDatakeyRequestBody.
+        r"""Sets the key_id of this DecryptDatakeyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -90,7 +90,7 @@ class DecryptDatakeyRequestBody:
 
     @property
     def cipher_text(self):
-        """Gets the cipher_text of this DecryptDatakeyRequestBody.
+        r"""Gets the cipher_text of this DecryptDatakeyRequestBody.
 
         DEK密文及元数据的16进制字符串。取值为加密数据密钥结果中的cipher_text的值。
 
@@ -101,7 +101,7 @@ class DecryptDatakeyRequestBody:
 
     @cipher_text.setter
     def cipher_text(self, cipher_text):
-        """Sets the cipher_text of this DecryptDatakeyRequestBody.
+        r"""Sets the cipher_text of this DecryptDatakeyRequestBody.
 
         DEK密文及元数据的16进制字符串。取值为加密数据密钥结果中的cipher_text的值。
 
@@ -112,7 +112,7 @@ class DecryptDatakeyRequestBody:
 
     @property
     def datakey_cipher_length(self):
-        """Gets the datakey_cipher_length of this DecryptDatakeyRequestBody.
+        r"""Gets the datakey_cipher_length of this DecryptDatakeyRequestBody.
 
         密钥字节长度，取值范围为1~1024。 密钥字节长度，取值为“64”。
 
@@ -123,7 +123,7 @@ class DecryptDatakeyRequestBody:
 
     @datakey_cipher_length.setter
     def datakey_cipher_length(self, datakey_cipher_length):
-        """Sets the datakey_cipher_length of this DecryptDatakeyRequestBody.
+        r"""Sets the datakey_cipher_length of this DecryptDatakeyRequestBody.
 
         密钥字节长度，取值范围为1~1024。 密钥字节长度，取值为“64”。
 
@@ -134,7 +134,7 @@ class DecryptDatakeyRequestBody:
 
     @property
     def additional_authenticated_data(self):
-        """Gets the additional_authenticated_data of this DecryptDatakeyRequestBody.
+        r"""Gets the additional_authenticated_data of this DecryptDatakeyRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -145,7 +145,7 @@ class DecryptDatakeyRequestBody:
 
     @additional_authenticated_data.setter
     def additional_authenticated_data(self, additional_authenticated_data):
-        """Sets the additional_authenticated_data of this DecryptDatakeyRequestBody.
+        r"""Sets the additional_authenticated_data of this DecryptDatakeyRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -156,7 +156,7 @@ class DecryptDatakeyRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this DecryptDatakeyRequestBody.
+        r"""Gets the sequence of this DecryptDatakeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -167,7 +167,7 @@ class DecryptDatakeyRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this DecryptDatakeyRequestBody.
+        r"""Sets the sequence of this DecryptDatakeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

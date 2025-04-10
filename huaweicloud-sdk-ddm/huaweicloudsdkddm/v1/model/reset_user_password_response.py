@@ -30,7 +30,7 @@ class ResetUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self, success=None, instance_id=None, user_name=None):
-        """ResetUserPasswordResponse
+        r"""ResetUserPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ResetUserPasswordResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ResetUserPasswordResponse.
+        r"""Gets the success of this ResetUserPasswordResponse.
 
         操作是否成功。
 
@@ -69,7 +69,7 @@ class ResetUserPasswordResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ResetUserPasswordResponse.
+        r"""Sets the success of this ResetUserPasswordResponse.
 
         操作是否成功。
 
@@ -80,7 +80,7 @@ class ResetUserPasswordResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetUserPasswordResponse.
+        r"""Gets the instance_id of this ResetUserPasswordResponse.
 
         DDM实例ID。
 
@@ -91,7 +91,7 @@ class ResetUserPasswordResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetUserPasswordResponse.
+        r"""Sets the instance_id of this ResetUserPasswordResponse.
 
         DDM实例ID。
 
@@ -102,7 +102,7 @@ class ResetUserPasswordResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ResetUserPasswordResponse.
+        r"""Gets the user_name of this ResetUserPasswordResponse.
 
         DDM账号名称
 
@@ -113,7 +113,7 @@ class ResetUserPasswordResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ResetUserPasswordResponse.
+        r"""Sets the user_name of this ResetUserPasswordResponse.
 
         DDM账号名称
 

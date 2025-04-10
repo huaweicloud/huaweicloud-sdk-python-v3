@@ -25,7 +25,7 @@ class ChangeRuleRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeRuleRequest
+        r"""ChangeRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeRuleRequest.
+        r"""Gets the body of this ChangeRuleRequest.
 
         :return: The body of this ChangeRuleRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.RuleChangeRequest`
@@ -52,7 +52,7 @@ class ChangeRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeRuleRequest.
+        r"""Sets the body of this ChangeRuleRequest.
 
         :param body: The body of this ChangeRuleRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.RuleChangeRequest`

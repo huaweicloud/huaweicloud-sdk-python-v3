@@ -24,7 +24,7 @@ class DeleteLabelPageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteLabelPageResponse
+        r"""DeleteLabelPageResponse
 
         The model defined in huaweicloud sdk
 

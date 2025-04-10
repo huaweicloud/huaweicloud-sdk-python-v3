@@ -29,7 +29,7 @@ class DbConfigCheckResult:
     }
 
     def __init__(self, param_name=None, value=None, check_result=None):
-        """DbConfigCheckResult
+        r"""DbConfigCheckResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DbConfigCheckResult:
 
     @property
     def param_name(self):
-        """Gets the param_name of this DbConfigCheckResult.
+        r"""Gets the param_name of this DbConfigCheckResult.
 
         参数名。
 
@@ -68,7 +68,7 @@ class DbConfigCheckResult:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this DbConfigCheckResult.
+        r"""Sets the param_name of this DbConfigCheckResult.
 
         参数名。
 
@@ -79,7 +79,7 @@ class DbConfigCheckResult:
 
     @property
     def value(self):
-        """Gets the value of this DbConfigCheckResult.
+        r"""Gets the value of this DbConfigCheckResult.
 
         参数值。
 
@@ -90,7 +90,7 @@ class DbConfigCheckResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DbConfigCheckResult.
+        r"""Sets the value of this DbConfigCheckResult.
 
         参数值。
 
@@ -101,7 +101,7 @@ class DbConfigCheckResult:
 
     @property
     def check_result(self):
-        """Gets the check_result of this DbConfigCheckResult.
+        r"""Gets the check_result of this DbConfigCheckResult.
 
         校验结果。
 
@@ -112,7 +112,7 @@ class DbConfigCheckResult:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this DbConfigCheckResult.
+        r"""Sets the check_result of this DbConfigCheckResult.
 
         校验结果。
 

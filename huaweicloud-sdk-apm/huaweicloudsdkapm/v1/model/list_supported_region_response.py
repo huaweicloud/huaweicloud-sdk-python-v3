@@ -26,7 +26,7 @@ class ListSupportedRegionResponse(SdkResponse):
     }
 
     def __init__(self, region_list=None):
-        """ListSupportedRegionResponse
+        r"""ListSupportedRegionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSupportedRegionResponse(SdkResponse):
 
     @property
     def region_list(self):
-        """Gets the region_list of this ListSupportedRegionResponse.
+        r"""Gets the region_list of this ListSupportedRegionResponse.
 
         region列表。
 
@@ -55,7 +55,7 @@ class ListSupportedRegionResponse(SdkResponse):
 
     @region_list.setter
     def region_list(self, region_list):
-        """Sets the region_list of this ListSupportedRegionResponse.
+        r"""Sets the region_list of this ListSupportedRegionResponse.
 
         region列表。
 

@@ -34,7 +34,7 @@ class SaAsyncClient(Client):
         return client_builder
 
     def create_alert_rule_async(self, request):
-        """创建告警规则（仅支持华东-上海一使用）
+        r"""创建告警规则（仅支持华东-上海一使用）
 
         Create alert rule
         
@@ -103,7 +103,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_alert_rule_simulation_async(self, request):
-        """模拟告警规则（仅支持华东-上海一使用）
+        r"""模拟告警规则（仅支持华东-上海一使用）
 
         Simulate alert rule
         
@@ -172,7 +172,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_alert_rule_async(self, request):
-        """删除告警规则（仅支持华东-上海一使用）
+        r"""删除告警规则（仅支持华东-上海一使用）
 
         Delete alert rule
         
@@ -241,7 +241,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def disable_alert_rule_async(self, request):
-        """停用告警规则（仅支持华东-上海一使用）
+        r"""停用告警规则（仅支持华东-上海一使用）
 
         Disable alert rule
         
@@ -310,7 +310,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def enable_alert_rule_async(self, request):
-        """启用告警规则（仅支持华东-上海一使用）
+        r"""启用告警规则（仅支持华东-上海一使用）
 
         Enable alert rule
         
@@ -379,7 +379,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_alert_rule_metrics_async(self, request):
-        """告警规则总览（仅支持华东-上海一使用）
+        r"""告警规则总览（仅支持华东-上海一使用）
 
         List alert rule metrics
         
@@ -446,7 +446,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_alert_rule_templates_async(self, request):
-        """列出告警规则模板（仅支持华东-上海一使用）
+        r"""列出告警规则模板（仅支持华东-上海一使用）
 
         List alert rule templates
         
@@ -524,7 +524,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_alert_rules_async(self, request):
-        """列出告警规则（仅支持华东-上海一使用）
+        r"""列出告警规则（仅支持华东-上海一使用）
 
         List alert rules
         
@@ -611,7 +611,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_alert_rule_async(self, request):
-        """查看告警规则（仅支持华东-上海一使用）
+        r"""查看告警规则（仅支持华东-上海一使用）
 
         Get alert rule
         
@@ -680,7 +680,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_alert_rule_template_async(self, request):
-        """查看告警规则模板（仅支持华东-上海一使用）
+        r"""查看告警规则模板（仅支持华东-上海一使用）
 
         List alert rule templates
         
@@ -749,7 +749,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def update_alert_rule_async(self, request):
-        """更新告警规则（仅支持华东-上海一使用）
+        r"""更新告警规则（仅支持华东-上海一使用）
 
         Update alert rule
         
@@ -820,7 +820,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def change_alert_async(self, request):
-        """更新告警（仅支持华东-上海一使用）
+        r"""更新告警（仅支持华东-上海一使用）
 
         编辑告警，根据实际修改的属性更新，未修改的列不更新
         
@@ -891,7 +891,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_alert_async(self, request):
-        """创建告警（仅支持华东-上海一使用）
+        r"""创建告警（仅支持华东-上海一使用）
 
         创建告警
         
@@ -960,7 +960,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_batch_order_alerts_async(self, request):
-        """告警转事件（仅支持华东-上海一使用）
+        r"""告警转事件（仅支持华东-上海一使用）
 
         告警转事件
         
@@ -1029,7 +1029,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_alert_async(self, request):
-        """删除告警（仅支持华东-上海一使用）
+        r"""删除告警（仅支持华东-上海一使用）
 
         删除告警
         
@@ -1098,7 +1098,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_alerts_async(self, request):
-        """搜索告警列表（仅支持华东-上海一使用）
+        r"""搜索告警列表（仅支持华东-上海一使用）
 
         搜索告警列表
         
@@ -1167,7 +1167,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_alert_async(self, request):
-        """获取告警详情（仅支持华东-上海一使用）
+        r"""获取告警详情（仅支持华东-上海一使用）
 
         获取告警详情
         
@@ -1236,7 +1236,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def change_incident_async(self, request):
-        """更新事件（仅支持华东-上海一使用）
+        r"""更新事件（仅支持华东-上海一使用）
 
         编辑事件，根据实际修改的属性更新，未修改的列不更新
         
@@ -1307,7 +1307,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_incident_async(self, request):
-        """创建事件（仅支持华东-上海一使用）
+        r"""创建事件（仅支持华东-上海一使用）
 
         创建事件
         
@@ -1376,7 +1376,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_incident_async(self, request):
-        """创建事件（仅支持华东-上海一使用）
+        r"""创建事件（仅支持华东-上海一使用）
 
         创建事件
         
@@ -1445,7 +1445,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_incident_types_async(self, request):
-        """获取事件的类型列表（仅支持华东-上海一使用）
+        r"""获取事件的类型列表（仅支持华东-上海一使用）
 
         获取事件的类型列表
         
@@ -1530,7 +1530,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_incidents_async(self, request):
-        """搜索事件列表（仅支持华东-上海一使用）
+        r"""搜索事件列表（仅支持华东-上海一使用）
 
         搜索事件列表
         
@@ -1599,7 +1599,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_incident_async(self, request):
-        """获取事件详情（仅支持华东-上海一使用）
+        r"""获取事件详情（仅支持华东-上海一使用）
 
         获取事件详情
         
@@ -1668,7 +1668,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_indicator_async(self, request):
-        """创建指标
+        r"""创建指标
 
         创建指标（仅支持华东-上海一使用）
         
@@ -1737,7 +1737,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_indicator_async(self, request):
-        """删除指标
+        r"""删除指标
 
         删除指标（仅支持华东-上海一使用）
         
@@ -1806,7 +1806,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_indicators_async(self, request):
-        """查询指标列表（仅支持华东-上海一使用）
+        r"""查询指标列表（仅支持华东-上海一使用）
 
         List all indicators
         
@@ -1881,7 +1881,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_indicator_detail_async(self, request):
-        """查询指标详情
+        r"""查询指标详情
 
         查询指标详情（仅支持华东-上海一使用）
         
@@ -1950,7 +1950,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def update_indicator_async(self, request):
-        """更新指标
+        r"""更新指标
 
         更新指标（仅支持华东-上海一使用）
         
@@ -2021,7 +2021,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_playbook_async(self, request):
-        """创建剧本（仅支持华东-上海一使用）
+        r"""创建剧本（仅支持华东-上海一使用）
 
         Create playbook.
         
@@ -2090,7 +2090,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_playbook_async(self, request):
-        """删除剧本（仅支持华东-上海一使用）
+        r"""删除剧本（仅支持华东-上海一使用）
 
         Delete playbook.
         
@@ -2159,7 +2159,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_playbooks_async(self, request):
-        """查询剧本列表（仅支持华东-上海一使用）
+        r"""查询剧本列表（仅支持华东-上海一使用）
 
         List all playbooks.
         
@@ -2242,7 +2242,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_async(self, request):
-        """查询剧本详情（仅支持华东-上海一使用）
+        r"""查询剧本详情（仅支持华东-上海一使用）
 
         Show playbook
         
@@ -2311,7 +2311,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_monitors_async(self, request):
-        """剧本运行监控（仅支持华东-上海一使用）
+        r"""剧本运行监控（仅支持华东-上海一使用）
 
         剧本运行监控
         
@@ -2386,7 +2386,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_statistics_async(self, request):
-        """剧本数据统计（仅支持华东-上海一使用）
+        r"""剧本数据统计（仅支持华东-上海一使用）
 
         剧本统计数据
         
@@ -2453,7 +2453,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def update_playbook_async(self, request):
-        """修改剧本（仅支持华东-上海一使用）
+        r"""修改剧本（仅支持华东-上海一使用）
 
         Update playbook.
         
@@ -2524,7 +2524,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_playbook_action_async(self, request):
-        """创建剧本动作（仅支持华东-上海一使用）
+        r"""创建剧本动作（仅支持华东-上海一使用）
 
         Create action.
         
@@ -2595,7 +2595,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_playbook_action_async(self, request):
-        """删除剧本动作（仅支持华东-上海一使用）
+        r"""删除剧本动作（仅支持华东-上海一使用）
 
         Delete action.
         
@@ -2666,7 +2666,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_playbook_actions_async(self, request):
-        """查询剧本动作（仅支持华东-上海一使用）
+        r"""查询剧本动作（仅支持华东-上海一使用）
 
         List all actions.
         
@@ -2739,7 +2739,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def update_playbook_action_async(self, request):
-        """更新剧本动作（仅支持华东-上海一使用）
+        r"""更新剧本动作（仅支持华东-上海一使用）
 
         Update action.
         
@@ -2812,7 +2812,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_playbook_approve_async(self, request):
-        """审核剧本（仅支持华东-上海一使用）
+        r"""审核剧本（仅支持华东-上海一使用）
 
         Create playbook approve.
         
@@ -2883,7 +2883,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_playbook_approves_async(self, request):
-        """查询剧本审核结果（仅支持华东-上海一使用）
+        r"""查询剧本审核结果（仅支持华东-上海一使用）
 
         List approves.
         
@@ -2954,7 +2954,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def change_playbook_instance_async(self, request):
-        """操作剧本实例（仅支持华东-上海一使用）
+        r"""操作剧本实例（仅支持华东-上海一使用）
 
         Operation Playbook Instance.
         
@@ -3025,7 +3025,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_playbook_audit_logs_async(self, request):
-        """查询剧本实例审计日志（仅支持华东-上海一使用）
+        r"""查询剧本实例审计日志（仅支持华东-上海一使用）
 
         List audit logs.
         
@@ -3102,7 +3102,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_playbook_instances_async(self, request):
-        """查询剧本实例列表（仅支持华东-上海一使用）
+        r"""查询剧本实例列表（仅支持华东-上海一使用）
 
         List playbook instances
         
@@ -3191,7 +3191,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_instance_async(self, request):
-        """查询剧本实例详情（仅支持华东-上海一使用）
+        r"""查询剧本实例详情（仅支持华东-上海一使用）
 
         Show playbook instance
         
@@ -3260,7 +3260,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_topology_async(self, request):
-        """查询剧本拓扑关系（仅支持华东-上海一使用）
+        r"""查询剧本拓扑关系（仅支持华东-上海一使用）
 
         Show playbook Topology
         
@@ -3329,7 +3329,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_playbook_rule_async(self, request):
-        """创建剧本规则（仅支持华东-上海一使用）
+        r"""创建剧本规则（仅支持华东-上海一使用）
 
         Create rule.
         
@@ -3400,7 +3400,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_playbook_rule_async(self, request):
-        """删除剧本规则（仅支持华东-上海一使用）
+        r"""删除剧本规则（仅支持华东-上海一使用）
 
         Delete rule.
         
@@ -3471,7 +3471,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_rule_async(self, request):
-        """查询剧本规则详情（仅支持华东-上海一使用）
+        r"""查询剧本规则详情（仅支持华东-上海一使用）
 
         Show rule formation.
         
@@ -3542,7 +3542,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def update_playbook_rule_async(self, request):
-        """更新剧本规则（仅支持华东-上海一使用）
+        r"""更新剧本规则（仅支持华东-上海一使用）
 
         Update rule.
         
@@ -3615,7 +3615,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def copy_playbook_version_async(self, request):
-        """克隆剧本及版本（仅支持华东-上海一使用）
+        r"""克隆剧本及版本（仅支持华东-上海一使用）
 
         Copy Playbook and version to a new one
         
@@ -3686,7 +3686,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_playbook_version_async(self, request):
-        """创建剧本版本（仅支持华东-上海一使用）
+        r"""创建剧本版本（仅支持华东-上海一使用）
 
         Create playbook version.
         
@@ -3757,7 +3757,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_playbook_version_async(self, request):
-        """删除剧本版本（仅支持华东-上海一使用）
+        r"""删除剧本版本（仅支持华东-上海一使用）
 
         Delete playbook version.
         
@@ -3826,7 +3826,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_playbook_versions_async(self, request):
-        """查询剧本版本列表（仅支持华东-上海一使用）
+        r"""查询剧本版本列表（仅支持华东-上海一使用）
 
         List all versions of playbook.
         
@@ -3907,7 +3907,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def show_playbook_version_async(self, request):
-        """查询剧本版本详情（仅支持华东-上海一使用）
+        r"""查询剧本版本详情（仅支持华东-上海一使用）
 
         Show playbook version version
         
@@ -3976,7 +3976,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def update_playbook_version_async(self, request):
-        """更新剧本版本（仅支持华东-上海一使用）
+        r"""更新剧本版本（仅支持华东-上海一使用）
 
         Update playbook version.
         
@@ -4047,7 +4047,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def create_dataobject_relation_async(self, request):
-        """创建Dataobject关系
+        r"""创建Dataobject关系
 
         Create Dataobject Relation
         
@@ -4122,7 +4122,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def delete_dataobject_relation_async(self, request):
-        """删除Dataobject关系
+        r"""删除Dataobject关系
 
         Delete Dataobject Relation
         
@@ -4197,7 +4197,7 @@ class SaAsyncClient(Client):
         return http_info
 
     def list_dataobject_relation_async(self, request):
-        """查询Dataobject关系列表
+        r"""查询Dataobject关系列表
 
         List Dataobject Relation
         

@@ -27,7 +27,7 @@ class ListDimensionLogicTablesResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListDimensionLogicTablesResultDataValue
+        r"""ListDimensionLogicTablesResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDimensionLogicTablesResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListDimensionLogicTablesResultDataValue.
+        r"""Gets the total of this ListDimensionLogicTablesResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListDimensionLogicTablesResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDimensionLogicTablesResultDataValue.
+        r"""Sets the total of this ListDimensionLogicTablesResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListDimensionLogicTablesResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListDimensionLogicTablesResultDataValue.
+        r"""Gets the records of this ListDimensionLogicTablesResultDataValue.
 
         DimensionVO信息。
 
@@ -83,7 +83,7 @@ class ListDimensionLogicTablesResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListDimensionLogicTablesResultDataValue.
+        r"""Sets the records of this ListDimensionLogicTablesResultDataValue.
 
         DimensionVO信息。
 

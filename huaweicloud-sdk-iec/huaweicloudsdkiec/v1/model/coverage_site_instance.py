@@ -27,7 +27,7 @@ class CoverageSiteInstance:
     }
 
     def __init__(self, site=None, demands=None):
-        """CoverageSiteInstance
+        r"""CoverageSiteInstance
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CoverageSiteInstance:
 
     @property
     def site(self):
-        """Gets the site of this CoverageSiteInstance.
+        r"""Gets the site of this CoverageSiteInstance.
 
         站点ID。 具体信息可通过调用“查询边缘站点列表”来查询。
 
@@ -59,7 +59,7 @@ class CoverageSiteInstance:
 
     @site.setter
     def site(self, site):
-        """Sets the site of this CoverageSiteInstance.
+        r"""Sets the site of this CoverageSiteInstance.
 
         站点ID。 具体信息可通过调用“查询边缘站点列表”来查询。
 
@@ -70,7 +70,7 @@ class CoverageSiteInstance:
 
     @property
     def demands(self):
-        """Gets the demands of this CoverageSiteInstance.
+        r"""Gets the demands of this CoverageSiteInstance.
 
         租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
 
@@ -81,7 +81,7 @@ class CoverageSiteInstance:
 
     @demands.setter
     def demands(self, demands):
-        """Sets the demands of this CoverageSiteInstance.
+        r"""Sets the demands of this CoverageSiteInstance.
 
         租户需求数量列表。表示租户发放资源站点的运营商和发放的资源组的数量。
 

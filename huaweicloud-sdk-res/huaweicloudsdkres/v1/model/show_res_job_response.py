@@ -32,7 +32,7 @@ class ShowResJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, jobs=None, message=None, error_code=None):
-        """ShowResJobResponse
+        r"""ShowResJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowResJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowResJobResponse.
+        r"""Gets the is_success of this ShowResJobResponse.
 
         是否成功
 
@@ -76,7 +76,7 @@ class ShowResJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowResJobResponse.
+        r"""Sets the is_success of this ShowResJobResponse.
 
         是否成功
 
@@ -87,7 +87,7 @@ class ShowResJobResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ShowResJobResponse.
+        r"""Gets the jobs of this ShowResJobResponse.
 
         作业详情
 
@@ -98,7 +98,7 @@ class ShowResJobResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ShowResJobResponse.
+        r"""Sets the jobs of this ShowResJobResponse.
 
         作业详情
 
@@ -109,7 +109,7 @@ class ShowResJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowResJobResponse.
+        r"""Gets the message of this ShowResJobResponse.
 
         返回消息（请求成功时，不返回此字段）
 
@@ -120,7 +120,7 @@ class ShowResJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowResJobResponse.
+        r"""Sets the message of this ShowResJobResponse.
 
         返回消息（请求成功时，不返回此字段）
 
@@ -131,7 +131,7 @@ class ShowResJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowResJobResponse.
+        r"""Gets the error_code of this ShowResJobResponse.
 
         错误码（请求成功时，不返回此字段）
 
@@ -142,7 +142,7 @@ class ShowResJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowResJobResponse.
+        r"""Sets the error_code of this ShowResJobResponse.
 
         错误码（请求成功时，不返回此字段）
 

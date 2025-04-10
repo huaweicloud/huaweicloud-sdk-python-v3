@@ -27,7 +27,7 @@ class AgenciesPermissionInfo:
     }
 
     def __init__(self, system_permission_display_names=None, wanted_system_permission_display_names=None):
-        """AgenciesPermissionInfo
+        r"""AgenciesPermissionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AgenciesPermissionInfo:
 
     @property
     def system_permission_display_names(self):
-        """Gets the system_permission_display_names of this AgenciesPermissionInfo.
+        r"""Gets the system_permission_display_names of this AgenciesPermissionInfo.
 
         委托权限项
 
@@ -61,7 +61,7 @@ class AgenciesPermissionInfo:
 
     @system_permission_display_names.setter
     def system_permission_display_names(self, system_permission_display_names):
-        """Sets the system_permission_display_names of this AgenciesPermissionInfo.
+        r"""Sets the system_permission_display_names of this AgenciesPermissionInfo.
 
         委托权限项
 
@@ -72,7 +72,7 @@ class AgenciesPermissionInfo:
 
     @property
     def wanted_system_permission_display_names(self):
-        """Gets the wanted_system_permission_display_names of this AgenciesPermissionInfo.
+        r"""Gets the wanted_system_permission_display_names of this AgenciesPermissionInfo.
 
         需要委托的权限项
 
@@ -83,7 +83,7 @@ class AgenciesPermissionInfo:
 
     @wanted_system_permission_display_names.setter
     def wanted_system_permission_display_names(self, wanted_system_permission_display_names):
-        """Sets the wanted_system_permission_display_names of this AgenciesPermissionInfo.
+        r"""Sets the wanted_system_permission_display_names of this AgenciesPermissionInfo.
 
         需要委托的权限项
 

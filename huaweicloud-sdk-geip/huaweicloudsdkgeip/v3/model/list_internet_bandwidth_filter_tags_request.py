@@ -29,7 +29,7 @@ class ListInternetBandwidthFilterTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListInternetBandwidthFilterTagsRequest
+        r"""ListInternetBandwidthFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListInternetBandwidthFilterTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInternetBandwidthFilterTagsRequest.
+        r"""Gets the limit of this ListInternetBandwidthFilterTagsRequest.
 
         :return: The limit of this ListInternetBandwidthFilterTagsRequest.
         :rtype: list[int]
@@ -66,7 +66,7 @@ class ListInternetBandwidthFilterTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInternetBandwidthFilterTagsRequest.
+        r"""Sets the limit of this ListInternetBandwidthFilterTagsRequest.
 
         :param limit: The limit of this ListInternetBandwidthFilterTagsRequest.
         :type limit: list[int]
@@ -75,7 +75,7 @@ class ListInternetBandwidthFilterTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInternetBandwidthFilterTagsRequest.
+        r"""Gets the offset of this ListInternetBandwidthFilterTagsRequest.
 
         :return: The offset of this ListInternetBandwidthFilterTagsRequest.
         :rtype: list[int]
@@ -84,7 +84,7 @@ class ListInternetBandwidthFilterTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInternetBandwidthFilterTagsRequest.
+        r"""Sets the offset of this ListInternetBandwidthFilterTagsRequest.
 
         :param offset: The offset of this ListInternetBandwidthFilterTagsRequest.
         :type offset: list[int]
@@ -93,7 +93,7 @@ class ListInternetBandwidthFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInternetBandwidthFilterTagsRequest.
+        r"""Gets the body of this ListInternetBandwidthFilterTagsRequest.
 
         :return: The body of this ListInternetBandwidthFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -102,7 +102,7 @@ class ListInternetBandwidthFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInternetBandwidthFilterTagsRequest.
+        r"""Sets the body of this ListInternetBandwidthFilterTagsRequest.
 
         :param body: The body of this ListInternetBandwidthFilterTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`

@@ -25,7 +25,7 @@ class BatchChangeServerMaintainModeRequest:
     }
 
     def __init__(self, body=None):
-        """BatchChangeServerMaintainModeRequest
+        r"""BatchChangeServerMaintainModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchChangeServerMaintainModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchChangeServerMaintainModeRequest.
+        r"""Gets the body of this BatchChangeServerMaintainModeRequest.
 
         :return: The body of this BatchChangeServerMaintainModeRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchChangeMaintainServerReq`
@@ -52,7 +52,7 @@ class BatchChangeServerMaintainModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchChangeServerMaintainModeRequest.
+        r"""Sets the body of this BatchChangeServerMaintainModeRequest.
 
         :param body: The body of this BatchChangeServerMaintainModeRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchChangeMaintainServerReq`

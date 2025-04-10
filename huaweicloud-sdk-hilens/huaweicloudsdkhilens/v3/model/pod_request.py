@@ -31,7 +31,7 @@ class PodRequest:
     }
 
     def __init__(self, affinity=None, apps=None, configs=None, init_containers=None):
-        """PodRequest
+        r"""PodRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PodRequest:
 
     @property
     def affinity(self):
-        """Gets the affinity of this PodRequest.
+        r"""Gets the affinity of this PodRequest.
 
         :return: The affinity of this PodRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.PodAffinity`
@@ -71,7 +71,7 @@ class PodRequest:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this PodRequest.
+        r"""Sets the affinity of this PodRequest.
 
         :param affinity: The affinity of this PodRequest.
         :type affinity: :class:`huaweicloudsdkhilens.v3.PodAffinity`
@@ -80,7 +80,7 @@ class PodRequest:
 
     @property
     def apps(self):
-        """Gets the apps of this PodRequest.
+        r"""Gets the apps of this PodRequest.
 
         应用部署业务容器或RPM程序包
 
@@ -91,7 +91,7 @@ class PodRequest:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this PodRequest.
+        r"""Sets the apps of this PodRequest.
 
         应用部署业务容器或RPM程序包
 
@@ -102,7 +102,7 @@ class PodRequest:
 
     @property
     def configs(self):
-        """Gets the configs of this PodRequest.
+        r"""Gets the configs of this PodRequest.
 
         :return: The configs of this PodRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.PodConfig`
@@ -111,7 +111,7 @@ class PodRequest:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this PodRequest.
+        r"""Sets the configs of this PodRequest.
 
         :param configs: The configs of this PodRequest.
         :type configs: :class:`huaweicloudsdkhilens.v3.PodConfig`
@@ -120,7 +120,7 @@ class PodRequest:
 
     @property
     def init_containers(self):
-        """Gets the init_containers of this PodRequest.
+        r"""Gets the init_containers of this PodRequest.
 
         应用部署初始化业务容器，容器部署有效。预留，暂不支持
 
@@ -131,7 +131,7 @@ class PodRequest:
 
     @init_containers.setter
     def init_containers(self, init_containers):
-        """Sets the init_containers of this PodRequest.
+        r"""Sets the init_containers of this PodRequest.
 
         应用部署初始化业务容器，容器部署有效。预留，暂不支持
 

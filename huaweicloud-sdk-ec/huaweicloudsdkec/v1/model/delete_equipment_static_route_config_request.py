@@ -33,7 +33,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, prefix=None, next_hop=None, interface_name=None):
-        """DeleteEquipmentStaticRouteConfigRequest
+        r"""DeleteEquipmentStaticRouteConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Gets the ieg_id of this DeleteEquipmentStaticRouteConfigRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Sets the ieg_id of this DeleteEquipmentStaticRouteConfigRequest.
 
         智能企业网关ID
 
@@ -88,7 +88,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Gets the equipment_id of this DeleteEquipmentStaticRouteConfigRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Sets the equipment_id of this DeleteEquipmentStaticRouteConfigRequest.
 
         智能企业网关设备ID
 
@@ -110,7 +110,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Gets the prefix of this DeleteEquipmentStaticRouteConfigRequest.
 
         目标网络
 
@@ -121,7 +121,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Sets the prefix of this DeleteEquipmentStaticRouteConfigRequest.
 
         目标网络
 
@@ -132,7 +132,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @property
     def next_hop(self):
-        """Gets the next_hop of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Gets the next_hop of this DeleteEquipmentStaticRouteConfigRequest.
 
         下一跳地址
 
@@ -143,7 +143,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @next_hop.setter
     def next_hop(self, next_hop):
-        """Sets the next_hop of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Sets the next_hop of this DeleteEquipmentStaticRouteConfigRequest.
 
         下一跳地址
 
@@ -154,7 +154,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Gets the interface_name of this DeleteEquipmentStaticRouteConfigRequest.
 
         接口名字
 
@@ -165,7 +165,7 @@ class DeleteEquipmentStaticRouteConfigRequest:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this DeleteEquipmentStaticRouteConfigRequest.
+        r"""Sets the interface_name of this DeleteEquipmentStaticRouteConfigRequest.
 
         接口名字
 

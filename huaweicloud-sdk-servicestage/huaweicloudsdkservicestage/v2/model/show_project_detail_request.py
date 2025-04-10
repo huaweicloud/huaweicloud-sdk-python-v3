@@ -27,7 +27,7 @@ class ShowProjectDetailRequest:
     }
 
     def __init__(self, x_repo_auth=None, clone_url=None):
-        """ShowProjectDetailRequest
+        r"""ShowProjectDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowProjectDetailRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ShowProjectDetailRequest.
+        r"""Gets the x_repo_auth of this ShowProjectDetailRequest.
 
         授权名称。
 
@@ -59,7 +59,7 @@ class ShowProjectDetailRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ShowProjectDetailRequest.
+        r"""Sets the x_repo_auth of this ShowProjectDetailRequest.
 
         授权名称。
 
@@ -70,7 +70,7 @@ class ShowProjectDetailRequest:
 
     @property
     def clone_url(self):
-        """Gets the clone_url of this ShowProjectDetailRequest.
+        r"""Gets the clone_url of this ShowProjectDetailRequest.
 
         仓库克隆URL。
 
@@ -81,7 +81,7 @@ class ShowProjectDetailRequest:
 
     @clone_url.setter
     def clone_url(self, clone_url):
-        """Sets the clone_url of this ShowProjectDetailRequest.
+        r"""Sets the clone_url of this ShowProjectDetailRequest.
 
         仓库克隆URL。
 

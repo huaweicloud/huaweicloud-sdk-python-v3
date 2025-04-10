@@ -29,7 +29,7 @@ class TestCaseCommentInfo:
     }
 
     def __init__(self, comment=None, notifier=None, version_uri=None):
-        """TestCaseCommentInfo
+        r"""TestCaseCommentInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class TestCaseCommentInfo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestCaseCommentInfo.
+        r"""Gets the comment of this TestCaseCommentInfo.
 
         评论
 
@@ -67,7 +67,7 @@ class TestCaseCommentInfo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestCaseCommentInfo.
+        r"""Sets the comment of this TestCaseCommentInfo.
 
         评论
 
@@ -78,7 +78,7 @@ class TestCaseCommentInfo:
 
     @property
     def notifier(self):
-        """Gets the notifier of this TestCaseCommentInfo.
+        r"""Gets the notifier of this TestCaseCommentInfo.
 
         通知人列表
 
@@ -89,7 +89,7 @@ class TestCaseCommentInfo:
 
     @notifier.setter
     def notifier(self, notifier):
-        """Sets the notifier of this TestCaseCommentInfo.
+        r"""Sets the notifier of this TestCaseCommentInfo.
 
         通知人列表
 
@@ -100,7 +100,7 @@ class TestCaseCommentInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCaseCommentInfo.
+        r"""Gets the version_uri of this TestCaseCommentInfo.
 
         分支uri/测试计划uri
 
@@ -111,7 +111,7 @@ class TestCaseCommentInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCaseCommentInfo.
+        r"""Sets the version_uri of this TestCaseCommentInfo.
 
         分支uri/测试计划uri
 

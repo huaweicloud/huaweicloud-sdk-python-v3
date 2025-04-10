@@ -27,7 +27,7 @@ class VodPackageInfo:
     }
 
     def __init__(self, packaging_group_id=None, resource_id=None):
-        """VodPackageInfo
+        r"""VodPackageInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VodPackageInfo:
 
     @property
     def packaging_group_id(self):
-        """Gets the packaging_group_id of this VodPackageInfo.
+        r"""Gets the packaging_group_id of this VodPackageInfo.
 
         VOD 打包信息，转封装模板ID，模板ID通过VOD查询
 
@@ -61,7 +61,7 @@ class VodPackageInfo:
 
     @packaging_group_id.setter
     def packaging_group_id(self, packaging_group_id):
-        """Sets the packaging_group_id of this VodPackageInfo.
+        r"""Sets the packaging_group_id of this VodPackageInfo.
 
         VOD 打包信息，转封装模板ID，模板ID通过VOD查询
 
@@ -72,7 +72,7 @@ class VodPackageInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this VodPackageInfo.
+        r"""Gets the resource_id of this VodPackageInfo.
 
         DRM resourceID
 
@@ -83,7 +83,7 @@ class VodPackageInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this VodPackageInfo.
+        r"""Sets the resource_id of this VodPackageInfo.
 
         DRM resourceID
 

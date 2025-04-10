@@ -35,7 +35,7 @@ class SvcSpec:
     }
 
     def __init__(self, cluster_ip=None, external_ips=None, external_name=None, ports=None, selector=None, type=None):
-        """SvcSpec
+        r"""SvcSpec
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SvcSpec:
 
     @property
     def cluster_ip(self):
-        """Gets the cluster_ip of this SvcSpec.
+        r"""Gets the cluster_ip of this SvcSpec.
 
         虚拟服务IP地址
 
@@ -88,7 +88,7 @@ class SvcSpec:
 
     @cluster_ip.setter
     def cluster_ip(self, cluster_ip):
-        """Sets the cluster_ip of this SvcSpec.
+        r"""Sets the cluster_ip of this SvcSpec.
 
         虚拟服务IP地址
 
@@ -99,7 +99,7 @@ class SvcSpec:
 
     @property
     def external_ips(self):
-        """Gets the external_ips of this SvcSpec.
+        r"""Gets the external_ips of this SvcSpec.
 
         外部IP列表 --- 暂不支持
 
@@ -110,7 +110,7 @@ class SvcSpec:
 
     @external_ips.setter
     def external_ips(self, external_ips):
-        """Sets the external_ips of this SvcSpec.
+        r"""Sets the external_ips of this SvcSpec.
 
         外部IP列表 --- 暂不支持
 
@@ -121,7 +121,7 @@ class SvcSpec:
 
     @property
     def external_name(self):
-        """Gets the external_name of this SvcSpec.
+        r"""Gets the external_name of this SvcSpec.
 
         外部域名 --- 暂不支持
 
@@ -132,7 +132,7 @@ class SvcSpec:
 
     @external_name.setter
     def external_name(self, external_name):
-        """Sets the external_name of this SvcSpec.
+        r"""Sets the external_name of this SvcSpec.
 
         外部域名 --- 暂不支持
 
@@ -143,7 +143,7 @@ class SvcSpec:
 
     @property
     def ports(self):
-        """Gets the ports of this SvcSpec.
+        r"""Gets the ports of this SvcSpec.
 
         服务需要暴露的端口列表
 
@@ -154,7 +154,7 @@ class SvcSpec:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this SvcSpec.
+        r"""Sets the ports of this SvcSpec.
 
         服务需要暴露的端口列表
 
@@ -165,7 +165,7 @@ class SvcSpec:
 
     @property
     def selector(self):
-        """Gets the selector of this SvcSpec.
+        r"""Gets the selector of this SvcSpec.
 
         标签选择器，将选择具有指定Label标签的Pod作为管理范围
 
@@ -176,7 +176,7 @@ class SvcSpec:
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this SvcSpec.
+        r"""Sets the selector of this SvcSpec.
 
         标签选择器，将选择具有指定Label标签的Pod作为管理范围
 
@@ -187,7 +187,7 @@ class SvcSpec:
 
     @property
     def type(self):
-        """Gets the type of this SvcSpec.
+        r"""Gets the type of this SvcSpec.
 
         服务的类型
 
@@ -198,7 +198,7 @@ class SvcSpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SvcSpec.
+        r"""Sets the type of this SvcSpec.
 
         服务的类型
 

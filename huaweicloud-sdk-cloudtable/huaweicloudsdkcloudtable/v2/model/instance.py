@@ -33,7 +33,7 @@ class Instance:
     }
 
     def __init__(self, availability_zone=None, cu_num=None, lemon_num=None, nics=None, tsd_num=None):
-        """Instance
+        r"""Instance
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class Instance:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Instance.
+        r"""Gets the availability_zone of this Instance.
 
         集群所在可用区的ID。
 
@@ -78,7 +78,7 @@ class Instance:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Instance.
+        r"""Sets the availability_zone of this Instance.
 
         集群所在可用区的ID。
 
@@ -89,7 +89,7 @@ class Instance:
 
     @property
     def cu_num(self):
-        """Gets the cu_num of this Instance.
+        r"""Gets the cu_num of this Instance.
 
         CloudTable集群计算单元节点数目，至少为2。
 
@@ -100,7 +100,7 @@ class Instance:
 
     @cu_num.setter
     def cu_num(self, cu_num):
-        """Sets the cu_num of this Instance.
+        r"""Sets the cu_num of this Instance.
 
         CloudTable集群计算单元节点数目，至少为2。
 
@@ -111,7 +111,7 @@ class Instance:
 
     @property
     def lemon_num(self):
-        """Gets the lemon_num of this Instance.
+        r"""Gets the lemon_num of this Instance.
 
         CloudTable集群Lemon节点数目。
 
@@ -122,7 +122,7 @@ class Instance:
 
     @lemon_num.setter
     def lemon_num(self, lemon_num):
-        """Sets the lemon_num of this Instance.
+        r"""Sets the lemon_num of this Instance.
 
         CloudTable集群Lemon节点数目。
 
@@ -133,7 +133,7 @@ class Instance:
 
     @property
     def nics(self):
-        """Gets the nics of this Instance.
+        r"""Gets the nics of this Instance.
 
         集群所在网络信息。
 
@@ -144,7 +144,7 @@ class Instance:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this Instance.
+        r"""Sets the nics of this Instance.
 
         集群所在网络信息。
 
@@ -155,7 +155,7 @@ class Instance:
 
     @property
     def tsd_num(self):
-        """Gets the tsd_num of this Instance.
+        r"""Gets the tsd_num of this Instance.
 
         CloudTable集群TSD节点数目，至少为2。
 
@@ -166,7 +166,7 @@ class Instance:
 
     @tsd_num.setter
     def tsd_num(self, tsd_num):
-        """Sets the tsd_num of this Instance.
+        r"""Sets the tsd_num of this Instance.
 
         CloudTable集群TSD节点数目，至少为2。
 

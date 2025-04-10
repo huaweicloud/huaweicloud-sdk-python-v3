@@ -28,7 +28,7 @@ class DeleteXdmApplicationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_msg=None):
-        """DeleteXdmApplicationResponse
+        r"""DeleteXdmApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteXdmApplicationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteXdmApplicationResponse.
+        r"""Gets the result of this DeleteXdmApplicationResponse.
 
         返回结果。
 
@@ -62,7 +62,7 @@ class DeleteXdmApplicationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteXdmApplicationResponse.
+        r"""Sets the result of this DeleteXdmApplicationResponse.
 
         返回结果。
 
@@ -73,7 +73,7 @@ class DeleteXdmApplicationResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteXdmApplicationResponse.
+        r"""Gets the error_msg of this DeleteXdmApplicationResponse.
 
         错误信息。
 
@@ -84,7 +84,7 @@ class DeleteXdmApplicationResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteXdmApplicationResponse.
+        r"""Sets the error_msg of this DeleteXdmApplicationResponse.
 
         错误信息。
 

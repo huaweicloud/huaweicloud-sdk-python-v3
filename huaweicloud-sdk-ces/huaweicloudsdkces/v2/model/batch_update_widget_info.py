@@ -29,7 +29,7 @@ class BatchUpdateWidgetInfo:
     }
 
     def __init__(self, widget_id=None, ret_status=None, error_msg=None):
-        """BatchUpdateWidgetInfo
+        r"""BatchUpdateWidgetInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchUpdateWidgetInfo:
 
     @property
     def widget_id(self):
-        """Gets the widget_id of this BatchUpdateWidgetInfo.
+        r"""Gets the widget_id of this BatchUpdateWidgetInfo.
 
         视图id
 
@@ -68,7 +68,7 @@ class BatchUpdateWidgetInfo:
 
     @widget_id.setter
     def widget_id(self, widget_id):
-        """Sets the widget_id of this BatchUpdateWidgetInfo.
+        r"""Sets the widget_id of this BatchUpdateWidgetInfo.
 
         视图id
 
@@ -79,7 +79,7 @@ class BatchUpdateWidgetInfo:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this BatchUpdateWidgetInfo.
+        r"""Gets the ret_status of this BatchUpdateWidgetInfo.
 
         修改结果；成功: successful, 失败: error 
 
@@ -90,7 +90,7 @@ class BatchUpdateWidgetInfo:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this BatchUpdateWidgetInfo.
+        r"""Sets the ret_status of this BatchUpdateWidgetInfo.
 
         修改结果；成功: successful, 失败: error 
 
@@ -101,7 +101,7 @@ class BatchUpdateWidgetInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchUpdateWidgetInfo.
+        r"""Gets the error_msg of this BatchUpdateWidgetInfo.
 
         如果失败则返回失败信息
 
@@ -112,7 +112,7 @@ class BatchUpdateWidgetInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchUpdateWidgetInfo.
+        r"""Sets the error_msg of this BatchUpdateWidgetInfo.
 
         如果失败则返回失败信息
 

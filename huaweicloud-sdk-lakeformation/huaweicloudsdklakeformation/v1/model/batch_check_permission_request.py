@@ -27,7 +27,7 @@ class BatchCheckPermissionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCheckPermissionRequest
+        r"""BatchCheckPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCheckPermissionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCheckPermissionRequest.
+        r"""Gets the instance_id of this BatchCheckPermissionRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -60,7 +60,7 @@ class BatchCheckPermissionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCheckPermissionRequest.
+        r"""Sets the instance_id of this BatchCheckPermissionRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -71,7 +71,7 @@ class BatchCheckPermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckPermissionRequest.
+        r"""Gets the body of this BatchCheckPermissionRequest.
 
         :return: The body of this BatchCheckPermissionRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.CheckPermissionInput`
@@ -80,7 +80,7 @@ class BatchCheckPermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckPermissionRequest.
+        r"""Sets the body of this BatchCheckPermissionRequest.
 
         :param body: The body of this BatchCheckPermissionRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.CheckPermissionInput`

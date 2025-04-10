@@ -29,7 +29,7 @@ class UpdateMysqlCompatibilityRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateMysqlCompatibilityRequest
+        r"""UpdateMysqlCompatibilityRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateMysqlCompatibilityRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateMysqlCompatibilityRequest.
+        r"""Gets the instance_id of this UpdateMysqlCompatibilityRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class UpdateMysqlCompatibilityRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateMysqlCompatibilityRequest.
+        r"""Sets the instance_id of this UpdateMysqlCompatibilityRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class UpdateMysqlCompatibilityRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateMysqlCompatibilityRequest.
+        r"""Gets the x_language of this UpdateMysqlCompatibilityRequest.
 
         语言。默认值：en-us。
 
@@ -89,7 +89,7 @@ class UpdateMysqlCompatibilityRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateMysqlCompatibilityRequest.
+        r"""Sets the x_language of this UpdateMysqlCompatibilityRequest.
 
         语言。默认值：en-us。
 
@@ -100,7 +100,7 @@ class UpdateMysqlCompatibilityRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMysqlCompatibilityRequest.
+        r"""Gets the body of this UpdateMysqlCompatibilityRequest.
 
         :return: The body of this UpdateMysqlCompatibilityRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateMySQLCompatibilityRequestBody`
@@ -109,7 +109,7 @@ class UpdateMysqlCompatibilityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMysqlCompatibilityRequest.
+        r"""Sets the body of this UpdateMysqlCompatibilityRequest.
 
         :param body: The body of this UpdateMysqlCompatibilityRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateMySQLCompatibilityRequestBody`

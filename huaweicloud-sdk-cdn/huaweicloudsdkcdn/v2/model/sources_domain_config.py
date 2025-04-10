@@ -39,7 +39,7 @@ class SourcesDomainConfig:
     }
 
     def __init__(self, origin_type=None, origin_addr=None, priority=None, obs_web_hosting_status=None, http_port=None, https_port=None, host_name=None, obs_bucket_type=None):
-        """SourcesDomainConfig
+        r"""SourcesDomainConfig
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class SourcesDomainConfig:
 
     @property
     def origin_type(self):
-        """Gets the origin_type of this SourcesDomainConfig.
+        r"""Gets the origin_type of this SourcesDomainConfig.
 
         源站类型。 - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
 
@@ -100,7 +100,7 @@ class SourcesDomainConfig:
 
     @origin_type.setter
     def origin_type(self, origin_type):
-        """Sets the origin_type of this SourcesDomainConfig.
+        r"""Sets the origin_type of this SourcesDomainConfig.
 
         源站类型。 - ipaddr：源站IP； - domain：源站域名； - obs_bucket：OBS桶域名； - third_bucket：第三方桶。
 
@@ -111,7 +111,7 @@ class SourcesDomainConfig:
 
     @property
     def origin_addr(self):
-        """Gets the origin_addr of this SourcesDomainConfig.
+        r"""Gets the origin_addr of this SourcesDomainConfig.
 
         源站IP或者域名。
 
@@ -122,7 +122,7 @@ class SourcesDomainConfig:
 
     @origin_addr.setter
     def origin_addr(self, origin_addr):
-        """Sets the origin_addr of this SourcesDomainConfig.
+        r"""Sets the origin_addr of this SourcesDomainConfig.
 
         源站IP或者域名。
 
@@ -133,7 +133,7 @@ class SourcesDomainConfig:
 
     @property
     def priority(self):
-        """Gets the priority of this SourcesDomainConfig.
+        r"""Gets the priority of this SourcesDomainConfig.
 
         源站优先级，70：主，30：备。
 
@@ -144,7 +144,7 @@ class SourcesDomainConfig:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this SourcesDomainConfig.
+        r"""Sets the priority of this SourcesDomainConfig.
 
         源站优先级，70：主，30：备。
 
@@ -155,7 +155,7 @@ class SourcesDomainConfig:
 
     @property
     def obs_web_hosting_status(self):
-        """Gets the obs_web_hosting_status of this SourcesDomainConfig.
+        r"""Gets the obs_web_hosting_status of this SourcesDomainConfig.
 
         是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
 
@@ -166,7 +166,7 @@ class SourcesDomainConfig:
 
     @obs_web_hosting_status.setter
     def obs_web_hosting_status(self, obs_web_hosting_status):
-        """Sets the obs_web_hosting_status of this SourcesDomainConfig.
+        r"""Sets the obs_web_hosting_status of this SourcesDomainConfig.
 
         是否开启OBS静态网站托管，源站类型为obs_bucket时传递，off：关闭，on：开启。
 
@@ -177,7 +177,7 @@ class SourcesDomainConfig:
 
     @property
     def http_port(self):
-        """Gets the http_port of this SourcesDomainConfig.
+        r"""Gets the http_port of this SourcesDomainConfig.
 
         HTTP端口，默认80,端口取值取值范围1-65535。
 
@@ -188,7 +188,7 @@ class SourcesDomainConfig:
 
     @http_port.setter
     def http_port(self, http_port):
-        """Sets the http_port of this SourcesDomainConfig.
+        r"""Sets the http_port of this SourcesDomainConfig.
 
         HTTP端口，默认80,端口取值取值范围1-65535。
 
@@ -199,7 +199,7 @@ class SourcesDomainConfig:
 
     @property
     def https_port(self):
-        """Gets the https_port of this SourcesDomainConfig.
+        r"""Gets the https_port of this SourcesDomainConfig.
 
         HTTPS端口，默认443,端口取值取值范围1-65535。
 
@@ -210,7 +210,7 @@ class SourcesDomainConfig:
 
     @https_port.setter
     def https_port(self, https_port):
-        """Sets the https_port of this SourcesDomainConfig.
+        r"""Sets the https_port of this SourcesDomainConfig.
 
         HTTPS端口，默认443,端口取值取值范围1-65535。
 
@@ -221,7 +221,7 @@ class SourcesDomainConfig:
 
     @property
     def host_name(self):
-        """Gets the host_name of this SourcesDomainConfig.
+        r"""Gets the host_name of this SourcesDomainConfig.
 
         回源HOST，默认加速域名。
 
@@ -232,7 +232,7 @@ class SourcesDomainConfig:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this SourcesDomainConfig.
+        r"""Sets the host_name of this SourcesDomainConfig.
 
         回源HOST，默认加速域名。
 
@@ -243,7 +243,7 @@ class SourcesDomainConfig:
 
     @property
     def obs_bucket_type(self):
-        """Gets the obs_bucket_type of this SourcesDomainConfig.
+        r"""Gets the obs_bucket_type of this SourcesDomainConfig.
 
         OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -254,7 +254,7 @@ class SourcesDomainConfig:
 
     @obs_bucket_type.setter
     def obs_bucket_type(self, obs_bucket_type):
-        """Sets the obs_bucket_type of this SourcesDomainConfig.
+        r"""Sets the obs_bucket_type of this SourcesDomainConfig.
 
         OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 

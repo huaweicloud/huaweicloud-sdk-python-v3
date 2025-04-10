@@ -43,7 +43,7 @@ class QueryIssueTreeInfo:
     }
 
     def __init__(self, service_type=None, service_types=None, parent_id=None, page_number=None, page_size=None, filter=None, tracker_id=None, module_id=None, task_uri=None, include_sub_issue=None):
-        """QueryIssueTreeInfo
+        r"""QueryIssueTreeInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class QueryIssueTreeInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this QueryIssueTreeInfo.
+        r"""Gets the service_type of this QueryIssueTreeInfo.
 
         服务类型
 
@@ -117,7 +117,7 @@ class QueryIssueTreeInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this QueryIssueTreeInfo.
+        r"""Sets the service_type of this QueryIssueTreeInfo.
 
         服务类型
 
@@ -128,7 +128,7 @@ class QueryIssueTreeInfo:
 
     @property
     def service_types(self):
-        """Gets the service_types of this QueryIssueTreeInfo.
+        r"""Gets the service_types of this QueryIssueTreeInfo.
 
         服务类型集合
 
@@ -139,7 +139,7 @@ class QueryIssueTreeInfo:
 
     @service_types.setter
     def service_types(self, service_types):
-        """Sets the service_types of this QueryIssueTreeInfo.
+        r"""Sets the service_types of this QueryIssueTreeInfo.
 
         服务类型集合
 
@@ -150,7 +150,7 @@ class QueryIssueTreeInfo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this QueryIssueTreeInfo.
+        r"""Gets the parent_id of this QueryIssueTreeInfo.
 
         父节点id
 
@@ -161,7 +161,7 @@ class QueryIssueTreeInfo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this QueryIssueTreeInfo.
+        r"""Sets the parent_id of this QueryIssueTreeInfo.
 
         父节点id
 
@@ -172,7 +172,7 @@ class QueryIssueTreeInfo:
 
     @property
     def page_number(self):
-        """Gets the page_number of this QueryIssueTreeInfo.
+        r"""Gets the page_number of this QueryIssueTreeInfo.
 
         页码
 
@@ -183,7 +183,7 @@ class QueryIssueTreeInfo:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this QueryIssueTreeInfo.
+        r"""Sets the page_number of this QueryIssueTreeInfo.
 
         页码
 
@@ -194,7 +194,7 @@ class QueryIssueTreeInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryIssueTreeInfo.
+        r"""Gets the page_size of this QueryIssueTreeInfo.
 
         每页数量
 
@@ -205,7 +205,7 @@ class QueryIssueTreeInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryIssueTreeInfo.
+        r"""Sets the page_size of this QueryIssueTreeInfo.
 
         每页数量
 
@@ -216,7 +216,7 @@ class QueryIssueTreeInfo:
 
     @property
     def filter(self):
-        """Gets the filter of this QueryIssueTreeInfo.
+        r"""Gets the filter of this QueryIssueTreeInfo.
 
         :return: The filter of this QueryIssueTreeInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IssueListFilterInfo`
@@ -225,7 +225,7 @@ class QueryIssueTreeInfo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this QueryIssueTreeInfo.
+        r"""Sets the filter of this QueryIssueTreeInfo.
 
         :param filter: The filter of this QueryIssueTreeInfo.
         :type filter: :class:`huaweicloudsdkcloudtest.v1.IssueListFilterInfo`
@@ -234,7 +234,7 @@ class QueryIssueTreeInfo:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this QueryIssueTreeInfo.
+        r"""Gets the tracker_id of this QueryIssueTreeInfo.
 
         trackerId
 
@@ -245,7 +245,7 @@ class QueryIssueTreeInfo:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this QueryIssueTreeInfo.
+        r"""Sets the tracker_id of this QueryIssueTreeInfo.
 
         trackerId
 
@@ -256,7 +256,7 @@ class QueryIssueTreeInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this QueryIssueTreeInfo.
+        r"""Gets the module_id of this QueryIssueTreeInfo.
 
         模块id
 
@@ -267,7 +267,7 @@ class QueryIssueTreeInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this QueryIssueTreeInfo.
+        r"""Sets the module_id of this QueryIssueTreeInfo.
 
         模块id
 
@@ -278,7 +278,7 @@ class QueryIssueTreeInfo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this QueryIssueTreeInfo.
+        r"""Gets the task_uri of this QueryIssueTreeInfo.
 
         任务udi
 
@@ -289,7 +289,7 @@ class QueryIssueTreeInfo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this QueryIssueTreeInfo.
+        r"""Sets the task_uri of this QueryIssueTreeInfo.
 
         任务udi
 
@@ -300,7 +300,7 @@ class QueryIssueTreeInfo:
 
     @property
     def include_sub_issue(self):
-        """Gets the include_sub_issue of this QueryIssueTreeInfo.
+        r"""Gets the include_sub_issue of this QueryIssueTreeInfo.
 
         是否统计子需求的用例数，默认true
 
@@ -311,7 +311,7 @@ class QueryIssueTreeInfo:
 
     @include_sub_issue.setter
     def include_sub_issue(self, include_sub_issue):
-        """Sets the include_sub_issue of this QueryIssueTreeInfo.
+        r"""Sets the include_sub_issue of this QueryIssueTreeInfo.
 
         是否统计子需求的用例数，默认true
 

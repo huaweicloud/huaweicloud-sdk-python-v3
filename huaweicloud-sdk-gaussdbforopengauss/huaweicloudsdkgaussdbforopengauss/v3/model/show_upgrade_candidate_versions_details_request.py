@@ -27,7 +27,7 @@ class ShowUpgradeCandidateVersionsDetailsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ShowUpgradeCandidateVersionsDetailsRequest
+        r"""ShowUpgradeCandidateVersionsDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowUpgradeCandidateVersionsDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowUpgradeCandidateVersionsDetailsRequest.
+        r"""Gets the instance_id of this ShowUpgradeCandidateVersionsDetailsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ShowUpgradeCandidateVersionsDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowUpgradeCandidateVersionsDetailsRequest.
+        r"""Sets the instance_id of this ShowUpgradeCandidateVersionsDetailsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ShowUpgradeCandidateVersionsDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowUpgradeCandidateVersionsDetailsRequest.
+        r"""Gets the x_language of this ShowUpgradeCandidateVersionsDetailsRequest.
 
         语言[zh-cn, en-us]。
 
@@ -82,7 +82,7 @@ class ShowUpgradeCandidateVersionsDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowUpgradeCandidateVersionsDetailsRequest.
+        r"""Sets the x_language of this ShowUpgradeCandidateVersionsDetailsRequest.
 
         语言[zh-cn, en-us]。
 

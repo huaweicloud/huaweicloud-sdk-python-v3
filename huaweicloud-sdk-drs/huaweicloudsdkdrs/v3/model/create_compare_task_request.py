@@ -27,7 +27,7 @@ class CreateCompareTaskRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateCompareTaskRequest
+        r"""CreateCompareTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateCompareTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateCompareTaskRequest.
+        r"""Gets the x_language of this CreateCompareTaskRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class CreateCompareTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateCompareTaskRequest.
+        r"""Sets the x_language of this CreateCompareTaskRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class CreateCompareTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCompareTaskRequest.
+        r"""Gets the body of this CreateCompareTaskRequest.
 
         :return: The body of this CreateCompareTaskRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`
@@ -81,7 +81,7 @@ class CreateCompareTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCompareTaskRequest.
+        r"""Sets the body of this CreateCompareTaskRequest.
 
         :param body: The body of this CreateCompareTaskRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`

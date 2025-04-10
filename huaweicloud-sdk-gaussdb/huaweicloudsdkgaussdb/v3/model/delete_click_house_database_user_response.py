@@ -26,7 +26,7 @@ class DeleteClickHouseDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteClickHouseDatabaseUserResponse
+        r"""DeleteClickHouseDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteClickHouseDatabaseUserResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteClickHouseDatabaseUserResponse.
+        r"""Gets the result of this DeleteClickHouseDatabaseUserResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class DeleteClickHouseDatabaseUserResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteClickHouseDatabaseUserResponse.
+        r"""Sets the result of this DeleteClickHouseDatabaseUserResponse.
 
         请求结果。
 

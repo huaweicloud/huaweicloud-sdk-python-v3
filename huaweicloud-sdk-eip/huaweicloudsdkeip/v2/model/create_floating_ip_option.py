@@ -31,7 +31,7 @@ class CreateFloatingIpOption:
     }
 
     def __init__(self, floating_ip_address=None, floating_network_id=None, port_id=None, fixed_ip_address=None):
-        """CreateFloatingIpOption
+        r"""CreateFloatingIpOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateFloatingIpOption:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this CreateFloatingIpOption.
+        r"""Gets the floating_ip_address of this CreateFloatingIpOption.
 
         浮动IP地址。
 
@@ -74,7 +74,7 @@ class CreateFloatingIpOption:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this CreateFloatingIpOption.
+        r"""Sets the floating_ip_address of this CreateFloatingIpOption.
 
         浮动IP地址。
 
@@ -85,7 +85,7 @@ class CreateFloatingIpOption:
 
     @property
     def floating_network_id(self):
-        """Gets the floating_network_id of this CreateFloatingIpOption.
+        r"""Gets the floating_network_id of this CreateFloatingIpOption.
 
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
@@ -96,7 +96,7 @@ class CreateFloatingIpOption:
 
     @floating_network_id.setter
     def floating_network_id(self, floating_network_id):
-        """Sets the floating_network_id of this CreateFloatingIpOption.
+        r"""Sets the floating_network_id of this CreateFloatingIpOption.
 
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
@@ -107,7 +107,7 @@ class CreateFloatingIpOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this CreateFloatingIpOption.
+        r"""Gets the port_id of this CreateFloatingIpOption.
 
         端口id
 
@@ -118,7 +118,7 @@ class CreateFloatingIpOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this CreateFloatingIpOption.
+        r"""Sets the port_id of this CreateFloatingIpOption.
 
         端口id
 
@@ -129,7 +129,7 @@ class CreateFloatingIpOption:
 
     @property
     def fixed_ip_address(self):
-        """Gets the fixed_ip_address of this CreateFloatingIpOption.
+        r"""Gets the fixed_ip_address of this CreateFloatingIpOption.
 
         关联端口的私有IP地址。
 
@@ -140,7 +140,7 @@ class CreateFloatingIpOption:
 
     @fixed_ip_address.setter
     def fixed_ip_address(self, fixed_ip_address):
-        """Sets the fixed_ip_address of this CreateFloatingIpOption.
+        r"""Sets the fixed_ip_address of this CreateFloatingIpOption.
 
         关联端口的私有IP地址。
 

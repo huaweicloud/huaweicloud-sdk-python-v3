@@ -30,7 +30,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_network_policies=None):
-        """ListCentralNetworkPoliciesResponse
+        r"""ListCentralNetworkPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworkPoliciesResponse.
+        r"""Gets the request_id of this ListCentralNetworkPoliciesResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworkPoliciesResponse.
+        r"""Sets the request_id of this ListCentralNetworkPoliciesResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworkPoliciesResponse.
+        r"""Gets the page_info of this ListCentralNetworkPoliciesResponse.
 
         :return: The page_info of this ListCentralNetworkPoliciesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworkPoliciesResponse.
+        r"""Sets the page_info of this ListCentralNetworkPoliciesResponse.
 
         :param page_info: The page_info of this ListCentralNetworkPoliciesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
 
     @property
     def central_network_policies(self):
-        """Gets the central_network_policies of this ListCentralNetworkPoliciesResponse.
+        r"""Gets the central_network_policies of this ListCentralNetworkPoliciesResponse.
 
         中心网络策略列表。
 
@@ -107,7 +107,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
 
     @central_network_policies.setter
     def central_network_policies(self, central_network_policies):
-        """Sets the central_network_policies of this ListCentralNetworkPoliciesResponse.
+        r"""Sets the central_network_policies of this ListCentralNetworkPoliciesResponse.
 
         中心网络策略列表。
 

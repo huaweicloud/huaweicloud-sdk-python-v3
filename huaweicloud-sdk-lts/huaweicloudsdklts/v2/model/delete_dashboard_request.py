@@ -27,7 +27,7 @@ class DeleteDashboardRequest:
     }
 
     def __init__(self, id=None, is_delete_charts=None):
-        """DeleteDashboardRequest
+        r"""DeleteDashboardRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDashboardRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteDashboardRequest.
+        r"""Gets the id of this DeleteDashboardRequest.
 
         仪表盘id
 
@@ -59,7 +59,7 @@ class DeleteDashboardRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteDashboardRequest.
+        r"""Sets the id of this DeleteDashboardRequest.
 
         仪表盘id
 
@@ -70,7 +70,7 @@ class DeleteDashboardRequest:
 
     @property
     def is_delete_charts(self):
-        """Gets the is_delete_charts of this DeleteDashboardRequest.
+        r"""Gets the is_delete_charts of this DeleteDashboardRequest.
 
         是否删除图表
 
@@ -81,7 +81,7 @@ class DeleteDashboardRequest:
 
     @is_delete_charts.setter
     def is_delete_charts(self, is_delete_charts):
-        """Sets the is_delete_charts of this DeleteDashboardRequest.
+        r"""Sets the is_delete_charts of this DeleteDashboardRequest.
 
         是否删除图表
 

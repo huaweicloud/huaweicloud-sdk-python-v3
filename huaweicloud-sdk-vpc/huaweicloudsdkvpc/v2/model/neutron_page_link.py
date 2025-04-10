@@ -27,7 +27,7 @@ class NeutronPageLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """NeutronPageLink
+        r"""NeutronPageLink
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NeutronPageLink:
 
     @property
     def href(self):
-        """Gets the href of this NeutronPageLink.
+        r"""Gets the href of this NeutronPageLink.
 
         API链接
 
@@ -59,7 +59,7 @@ class NeutronPageLink:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this NeutronPageLink.
+        r"""Sets the href of this NeutronPageLink.
 
         API链接
 
@@ -70,7 +70,7 @@ class NeutronPageLink:
 
     @property
     def rel(self):
-        """Gets the rel of this NeutronPageLink.
+        r"""Gets the rel of this NeutronPageLink.
 
         API链接与该API版本的关系
 
@@ -81,7 +81,7 @@ class NeutronPageLink:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this NeutronPageLink.
+        r"""Sets the rel of this NeutronPageLink.
 
         API链接与该API版本的关系
 

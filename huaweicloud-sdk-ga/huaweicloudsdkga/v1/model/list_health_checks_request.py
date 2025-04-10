@@ -35,7 +35,7 @@ class ListHealthChecksRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, status=None, endpoint_group_id=None):
-        """ListHealthChecksRequest
+        r"""ListHealthChecksRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListHealthChecksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHealthChecksRequest.
+        r"""Gets the limit of this ListHealthChecksRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -89,7 +89,7 @@ class ListHealthChecksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHealthChecksRequest.
+        r"""Sets the limit of this ListHealthChecksRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -100,7 +100,7 @@ class ListHealthChecksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListHealthChecksRequest.
+        r"""Gets the marker of this ListHealthChecksRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -111,7 +111,7 @@ class ListHealthChecksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListHealthChecksRequest.
+        r"""Sets the marker of this ListHealthChecksRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -122,7 +122,7 @@ class ListHealthChecksRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListHealthChecksRequest.
+        r"""Gets the page_reverse of this ListHealthChecksRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -133,7 +133,7 @@ class ListHealthChecksRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListHealthChecksRequest.
+        r"""Sets the page_reverse of this ListHealthChecksRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -144,7 +144,7 @@ class ListHealthChecksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListHealthChecksRequest.
+        r"""Gets the id of this ListHealthChecksRequest.
 
         资源ID。
 
@@ -155,7 +155,7 @@ class ListHealthChecksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListHealthChecksRequest.
+        r"""Sets the id of this ListHealthChecksRequest.
 
         资源ID。
 
@@ -166,7 +166,7 @@ class ListHealthChecksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListHealthChecksRequest.
+        r"""Gets the status of this ListHealthChecksRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -177,7 +177,7 @@ class ListHealthChecksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListHealthChecksRequest.
+        r"""Sets the status of this ListHealthChecksRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -188,7 +188,7 @@ class ListHealthChecksRequest:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this ListHealthChecksRequest.
+        r"""Gets the endpoint_group_id of this ListHealthChecksRequest.
 
         终端节点组ID。
 
@@ -199,7 +199,7 @@ class ListHealthChecksRequest:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this ListHealthChecksRequest.
+        r"""Sets the endpoint_group_id of this ListHealthChecksRequest.
 
         终端节点组ID。
 

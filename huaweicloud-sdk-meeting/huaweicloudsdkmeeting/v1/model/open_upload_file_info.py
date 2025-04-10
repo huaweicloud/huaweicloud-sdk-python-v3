@@ -27,7 +27,7 @@ class OpenUploadFileInfo:
     }
 
     def __init__(self, file_id=None, image_moderation=None):
-        """OpenUploadFileInfo
+        r"""OpenUploadFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenUploadFileInfo:
 
     @property
     def file_id(self):
-        """Gets the file_id of this OpenUploadFileInfo.
+        r"""Gets the file_id of this OpenUploadFileInfo.
 
         文件Id。
 
@@ -61,7 +61,7 @@ class OpenUploadFileInfo:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this OpenUploadFileInfo.
+        r"""Sets the file_id of this OpenUploadFileInfo.
 
         文件Id。
 
@@ -72,7 +72,7 @@ class OpenUploadFileInfo:
 
     @property
     def image_moderation(self):
-        """Gets the image_moderation of this OpenUploadFileInfo.
+        r"""Gets the image_moderation of this OpenUploadFileInfo.
 
         :return: The image_moderation of this OpenUploadFileInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
@@ -81,7 +81,7 @@ class OpenUploadFileInfo:
 
     @image_moderation.setter
     def image_moderation(self, image_moderation):
-        """Sets the image_moderation of this OpenUploadFileInfo.
+        r"""Sets the image_moderation of this OpenUploadFileInfo.
 
         :param image_moderation: The image_moderation of this OpenUploadFileInfo.
         :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`

@@ -25,7 +25,7 @@ class ListClustersTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListClustersTagsRequest
+        r"""ListClustersTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListClustersTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListClustersTagsRequest.
+        r"""Gets the resource_type of this ListClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 
@@ -53,7 +53,7 @@ class ListClustersTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListClustersTagsRequest.
+        r"""Sets the resource_type of this ListClustersTagsRequest.
 
         资源类型，当前固定值为“css-cluster”，表示是集群类型。
 

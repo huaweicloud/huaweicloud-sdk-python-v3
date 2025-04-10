@@ -27,7 +27,7 @@ class DimensionGroup:
     }
 
     def __init__(self, key=None, value=None):
-        """DimensionGroup
+        r"""DimensionGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DimensionGroup:
 
     @property
     def key(self):
-        """Gets the key of this DimensionGroup.
+        r"""Gets the key of this DimensionGroup.
 
         分组条件。 产品类型：CLOUD_SERVICE_TYPE企业项目：ENTERPRISE_PROJECT_ID使用量类型：USAGE_TYPE产品：RESOURCE_TYPE可用区：AZ_CODE账单类型：BILL_TYPE关联账号：ASSOCIATED_ACCOUNT规格编码：RES_SPEC_CODE运营实体：BE_ID区域：REGION_CODE计费模式：CHARGING_MODE交易账号：PAYER_ACCOUNT_ID资源tag：RESOURCE_TAG资源id：RESOURCE_ID成本单元：COST_UNIT
 
@@ -61,7 +61,7 @@ class DimensionGroup:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DimensionGroup.
+        r"""Sets the key of this DimensionGroup.
 
         分组条件。 产品类型：CLOUD_SERVICE_TYPE企业项目：ENTERPRISE_PROJECT_ID使用量类型：USAGE_TYPE产品：RESOURCE_TYPE可用区：AZ_CODE账单类型：BILL_TYPE关联账号：ASSOCIATED_ACCOUNT规格编码：RES_SPEC_CODE运营实体：BE_ID区域：REGION_CODE计费模式：CHARGING_MODE交易账号：PAYER_ACCOUNT_ID资源tag：RESOURCE_TAG资源id：RESOURCE_ID成本单元：COST_UNIT
 
@@ -72,7 +72,7 @@ class DimensionGroup:
 
     @property
     def value(self):
-        """Gets the value of this DimensionGroup.
+        r"""Gets the value of this DimensionGroup.
 
         维度值。
 
@@ -83,7 +83,7 @@ class DimensionGroup:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DimensionGroup.
+        r"""Sets the value of this DimensionGroup.
 
         维度值。
 

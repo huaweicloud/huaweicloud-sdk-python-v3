@@ -26,7 +26,7 @@ class CheckParametersResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CheckParametersResponse
+        r"""CheckParametersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckParametersResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CheckParametersResponse.
+        r"""Gets the body of this CheckParametersResponse.
 
         :return: The body of this CheckParametersResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]
@@ -53,7 +53,7 @@ class CheckParametersResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckParametersResponse.
+        r"""Sets the body of this CheckParametersResponse.
 
         :param body: The body of this CheckParametersResponse.
         :type body: list[:class:`huaweicloudsdkcodeartscheck.v2.TaskCheckParamters`]

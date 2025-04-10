@@ -35,7 +35,7 @@ class MobvoiConfig:
     }
 
     def __init__(self, app_key=None, app_secret=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None):
-        """MobvoiConfig
+        r"""MobvoiConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MobvoiConfig:
 
     @property
     def app_key(self):
-        """Gets the app_key of this MobvoiConfig.
+        r"""Gets the app_key of this MobvoiConfig.
 
         奇妙问应用帐号。
 
@@ -89,7 +89,7 @@ class MobvoiConfig:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this MobvoiConfig.
+        r"""Sets the app_key of this MobvoiConfig.
 
         奇妙问应用帐号。
 
@@ -100,7 +100,7 @@ class MobvoiConfig:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this MobvoiConfig.
+        r"""Gets the app_secret of this MobvoiConfig.
 
         奇妙问应用Secret。
 
@@ -111,7 +111,7 @@ class MobvoiConfig:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this MobvoiConfig.
+        r"""Sets the app_secret of this MobvoiConfig.
 
         奇妙问应用Secret。
 
@@ -122,7 +122,7 @@ class MobvoiConfig:
 
     @property
     def role_id(self):
-        """Gets the role_id of this MobvoiConfig.
+        r"""Gets the role_id of this MobvoiConfig.
 
         奇妙问角色ID。
 
@@ -133,7 +133,7 @@ class MobvoiConfig:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this MobvoiConfig.
+        r"""Sets the role_id of this MobvoiConfig.
 
         奇妙问角色ID。
 
@@ -144,7 +144,7 @@ class MobvoiConfig:
 
     @property
     def sis_region(self):
-        """Gets the sis_region of this MobvoiConfig.
+        r"""Gets the sis_region of this MobvoiConfig.
 
         SIS所在区域
 
@@ -155,7 +155,7 @@ class MobvoiConfig:
 
     @sis_region.setter
     def sis_region(self, sis_region):
-        """Sets the sis_region of this MobvoiConfig.
+        r"""Sets the sis_region of this MobvoiConfig.
 
         SIS所在区域
 
@@ -166,7 +166,7 @@ class MobvoiConfig:
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this MobvoiConfig.
+        r"""Gets the sis_project_id of this MobvoiConfig.
 
         SIS所在区域的projectId
 
@@ -177,7 +177,7 @@ class MobvoiConfig:
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this MobvoiConfig.
+        r"""Sets the sis_project_id of this MobvoiConfig.
 
         SIS所在区域的projectId
 
@@ -188,7 +188,7 @@ class MobvoiConfig:
 
     @property
     def enable_hot_words(self):
-        """Gets the enable_hot_words of this MobvoiConfig.
+        r"""Gets the enable_hot_words of this MobvoiConfig.
 
         是否开启热词
 
@@ -199,7 +199,7 @@ class MobvoiConfig:
 
     @enable_hot_words.setter
     def enable_hot_words(self, enable_hot_words):
-        """Sets the enable_hot_words of this MobvoiConfig.
+        r"""Sets the enable_hot_words of this MobvoiConfig.
 
         是否开启热词
 

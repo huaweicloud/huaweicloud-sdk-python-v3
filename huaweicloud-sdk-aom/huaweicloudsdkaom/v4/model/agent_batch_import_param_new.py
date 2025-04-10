@@ -37,7 +37,7 @@ class AgentBatchImportParamNew:
     }
 
     def __init__(self, agent_import_param_list=None, proxy_region_id=None, installer_agent_id=None, icagent_install_flag=None, plugin_install_base_param=None, version=None, public_net_flag=None):
-        """AgentBatchImportParamNew
+        r"""AgentBatchImportParamNew
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AgentBatchImportParamNew:
 
     @property
     def agent_import_param_list(self):
-        """Gets the agent_import_param_list of this AgentBatchImportParamNew.
+        r"""Gets the agent_import_param_list of this AgentBatchImportParamNew.
 
         导入待安装UniAgent的机器参数列表。
 
@@ -91,7 +91,7 @@ class AgentBatchImportParamNew:
 
     @agent_import_param_list.setter
     def agent_import_param_list(self, agent_import_param_list):
-        """Sets the agent_import_param_list of this AgentBatchImportParamNew.
+        r"""Sets the agent_import_param_list of this AgentBatchImportParamNew.
 
         导入待安装UniAgent的机器参数列表。
 
@@ -102,7 +102,7 @@ class AgentBatchImportParamNew:
 
     @property
     def proxy_region_id(self):
-        """Gets the proxy_region_id of this AgentBatchImportParamNew.
+        r"""Gets the proxy_region_id of this AgentBatchImportParamNew.
 
         代理区域ID： - 直连接入填0。 - 代理接入填实际代理区域ID。
 
@@ -113,7 +113,7 @@ class AgentBatchImportParamNew:
 
     @proxy_region_id.setter
     def proxy_region_id(self, proxy_region_id):
-        """Sets the proxy_region_id of this AgentBatchImportParamNew.
+        r"""Sets the proxy_region_id of this AgentBatchImportParamNew.
 
         代理区域ID： - 直连接入填0。 - 代理接入填实际代理区域ID。
 
@@ -124,7 +124,7 @@ class AgentBatchImportParamNew:
 
     @property
     def installer_agent_id(self):
-        """Gets the installer_agent_id of this AgentBatchImportParamNew.
+        r"""Gets the installer_agent_id of this AgentBatchImportParamNew.
 
         安装机（代理机）的agent ID。
 
@@ -135,7 +135,7 @@ class AgentBatchImportParamNew:
 
     @installer_agent_id.setter
     def installer_agent_id(self, installer_agent_id):
-        """Sets the installer_agent_id of this AgentBatchImportParamNew.
+        r"""Sets the installer_agent_id of this AgentBatchImportParamNew.
 
         安装机（代理机）的agent ID。
 
@@ -146,7 +146,7 @@ class AgentBatchImportParamNew:
 
     @property
     def icagent_install_flag(self):
-        """Gets the icagent_install_flag of this AgentBatchImportParamNew.
+        r"""Gets the icagent_install_flag of this AgentBatchImportParamNew.
 
         是否需要安装ICAgent插件： - true：安装ICAgent插件。默认安装最新版本的ICAgent插件。 - false：不安装ICAgent插件。
 
@@ -157,7 +157,7 @@ class AgentBatchImportParamNew:
 
     @icagent_install_flag.setter
     def icagent_install_flag(self, icagent_install_flag):
-        """Sets the icagent_install_flag of this AgentBatchImportParamNew.
+        r"""Sets the icagent_install_flag of this AgentBatchImportParamNew.
 
         是否需要安装ICAgent插件： - true：安装ICAgent插件。默认安装最新版本的ICAgent插件。 - false：不安装ICAgent插件。
 
@@ -168,7 +168,7 @@ class AgentBatchImportParamNew:
 
     @property
     def plugin_install_base_param(self):
-        """Gets the plugin_install_base_param of this AgentBatchImportParamNew.
+        r"""Gets the plugin_install_base_param of this AgentBatchImportParamNew.
 
         :return: The plugin_install_base_param of this AgentBatchImportParamNew.
         :rtype: :class:`huaweicloudsdkaom.v4.PluginInstallBasicParam`
@@ -177,7 +177,7 @@ class AgentBatchImportParamNew:
 
     @plugin_install_base_param.setter
     def plugin_install_base_param(self, plugin_install_base_param):
-        """Sets the plugin_install_base_param of this AgentBatchImportParamNew.
+        r"""Sets the plugin_install_base_param of this AgentBatchImportParamNew.
 
         :param plugin_install_base_param: The plugin_install_base_param of this AgentBatchImportParamNew.
         :type plugin_install_base_param: :class:`huaweicloudsdkaom.v4.PluginInstallBasicParam`
@@ -186,7 +186,7 @@ class AgentBatchImportParamNew:
 
     @property
     def version(self):
-        """Gets the version of this AgentBatchImportParamNew.
+        r"""Gets the version of this AgentBatchImportParamNew.
 
         待安装的UniAgent版本号。
 
@@ -197,7 +197,7 @@ class AgentBatchImportParamNew:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AgentBatchImportParamNew.
+        r"""Sets the version of this AgentBatchImportParamNew.
 
         待安装的UniAgent版本号。
 
@@ -208,7 +208,7 @@ class AgentBatchImportParamNew:
 
     @property
     def public_net_flag(self):
-        """Gets the public_net_flag of this AgentBatchImportParamNew.
+        r"""Gets the public_net_flag of this AgentBatchImportParamNew.
 
         是否公网接入： - true：公网接入设置。 - false：代理接入设置。
 
@@ -219,7 +219,7 @@ class AgentBatchImportParamNew:
 
     @public_net_flag.setter
     def public_net_flag(self, public_net_flag):
-        """Sets the public_net_flag of this AgentBatchImportParamNew.
+        r"""Sets the public_net_flag of this AgentBatchImportParamNew.
 
         是否公网接入： - true：公网接入设置。 - false：代理接入设置。
 

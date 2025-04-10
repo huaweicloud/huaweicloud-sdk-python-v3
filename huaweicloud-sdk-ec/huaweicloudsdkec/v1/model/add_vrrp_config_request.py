@@ -27,7 +27,7 @@ class AddVrrpConfigRequest:
     }
 
     def __init__(self, ieg_id=None, body=None):
-        """AddVrrpConfigRequest
+        r"""AddVrrpConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddVrrpConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this AddVrrpConfigRequest.
+        r"""Gets the ieg_id of this AddVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -60,7 +60,7 @@ class AddVrrpConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this AddVrrpConfigRequest.
+        r"""Sets the ieg_id of this AddVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -71,7 +71,7 @@ class AddVrrpConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddVrrpConfigRequest.
+        r"""Gets the body of this AddVrrpConfigRequest.
 
         :return: The body of this AddVrrpConfigRequest.
         :rtype: :class:`huaweicloudsdkec.v1.CreateUpdateVrrpConfigRequestBody`
@@ -80,7 +80,7 @@ class AddVrrpConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddVrrpConfigRequest.
+        r"""Sets the body of this AddVrrpConfigRequest.
 
         :param body: The body of this AddVrrpConfigRequest.
         :type body: :class:`huaweicloudsdkec.v1.CreateUpdateVrrpConfigRequestBody`

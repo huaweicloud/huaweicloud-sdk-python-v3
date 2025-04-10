@@ -25,7 +25,7 @@ class CreateConfigurationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateConfigurationRequest
+        r"""CreateConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConfigurationRequest.
+        r"""Gets the body of this CreateConfigurationRequest.
 
         :return: The body of this CreateConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequestBody`
@@ -52,7 +52,7 @@ class CreateConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConfigurationRequest.
+        r"""Sets the body of this CreateConfigurationRequest.
 
         :param body: The body of this CreateConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequestBody`

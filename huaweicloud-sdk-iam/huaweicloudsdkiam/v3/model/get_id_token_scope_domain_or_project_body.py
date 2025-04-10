@@ -27,7 +27,7 @@ class GetIdTokenScopeDomainOrProjectBody:
     }
 
     def __init__(self, id=None, name=None):
-        """GetIdTokenScopeDomainOrProjectBody
+        r"""GetIdTokenScopeDomainOrProjectBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GetIdTokenScopeDomainOrProjectBody:
 
     @property
     def id(self):
-        """Gets the id of this GetIdTokenScopeDomainOrProjectBody.
+        r"""Gets the id of this GetIdTokenScopeDomainOrProjectBody.
 
         domain id 或者 project id，与name字段至少存在一个。
 
@@ -61,7 +61,7 @@ class GetIdTokenScopeDomainOrProjectBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetIdTokenScopeDomainOrProjectBody.
+        r"""Sets the id of this GetIdTokenScopeDomainOrProjectBody.
 
         domain id 或者 project id，与name字段至少存在一个。
 
@@ -72,7 +72,7 @@ class GetIdTokenScopeDomainOrProjectBody:
 
     @property
     def name(self):
-        """Gets the name of this GetIdTokenScopeDomainOrProjectBody.
+        r"""Gets the name of this GetIdTokenScopeDomainOrProjectBody.
 
         domain name 或者 project name，与id字段至少存在一个。
 
@@ -83,7 +83,7 @@ class GetIdTokenScopeDomainOrProjectBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetIdTokenScopeDomainOrProjectBody.
+        r"""Sets the name of this GetIdTokenScopeDomainOrProjectBody.
 
         domain name 或者 project name，与id字段至少存在一个。
 

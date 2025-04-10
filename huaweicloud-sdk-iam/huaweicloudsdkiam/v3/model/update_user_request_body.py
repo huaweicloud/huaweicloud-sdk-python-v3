@@ -25,7 +25,7 @@ class UpdateUserRequestBody:
     }
 
     def __init__(self, user=None):
-        """UpdateUserRequestBody
+        r"""UpdateUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateUserRequestBody:
 
     @property
     def user(self):
-        """Gets the user of this UpdateUserRequestBody.
+        r"""Gets the user of this UpdateUserRequestBody.
 
         :return: The user of this UpdateUserRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserOption`
@@ -51,7 +51,7 @@ class UpdateUserRequestBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UpdateUserRequestBody.
+        r"""Sets the user of this UpdateUserRequestBody.
 
         :param user: The user of this UpdateUserRequestBody.
         :type user: :class:`huaweicloudsdkiam.v3.UpdateUserOption`

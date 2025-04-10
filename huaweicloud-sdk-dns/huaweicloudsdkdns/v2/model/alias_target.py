@@ -27,7 +27,7 @@ class AliasTarget:
     }
 
     def __init__(self, resource_type=None, resource_domain_name=None):
-        """AliasTarget
+        r"""AliasTarget
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AliasTarget:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this AliasTarget.
+        r"""Gets the resource_type of this AliasTarget.
 
         资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
 
@@ -61,7 +61,7 @@ class AliasTarget:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this AliasTarget.
+        r"""Sets the resource_type of this AliasTarget.
 
         资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
 
@@ -72,7 +72,7 @@ class AliasTarget:
 
     @property
     def resource_domain_name(self):
-        """Gets the resource_domain_name of this AliasTarget.
+        r"""Gets the resource_domain_name of this AliasTarget.
 
         对应服务下的域名，由各服务提供。
 
@@ -83,7 +83,7 @@ class AliasTarget:
 
     @resource_domain_name.setter
     def resource_domain_name(self, resource_domain_name):
-        """Sets the resource_domain_name of this AliasTarget.
+        r"""Sets the resource_domain_name of this AliasTarget.
 
         对应服务下的域名，由各服务提供。
 

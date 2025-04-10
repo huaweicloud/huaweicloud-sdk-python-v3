@@ -27,7 +27,7 @@ class RestoreInfo:
     }
 
     def __init__(self, old_name=None, new_name=None):
-        """RestoreInfo
+        r"""RestoreInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestoreInfo:
 
     @property
     def old_name(self):
-        """Gets the old_name of this RestoreInfo.
+        r"""Gets the old_name of this RestoreInfo.
 
         需恢复的原库名称
 
@@ -59,7 +59,7 @@ class RestoreInfo:
 
     @old_name.setter
     def old_name(self, old_name):
-        """Sets the old_name of this RestoreInfo.
+        r"""Sets the old_name of this RestoreInfo.
 
         需恢复的原库名称
 
@@ -70,7 +70,7 @@ class RestoreInfo:
 
     @property
     def new_name(self):
-        """Gets the new_name of this RestoreInfo.
+        r"""Gets the new_name of this RestoreInfo.
 
         恢复后的新库名称
 
@@ -81,7 +81,7 @@ class RestoreInfo:
 
     @new_name.setter
     def new_name(self, new_name):
-        """Sets the new_name of this RestoreInfo.
+        r"""Sets the new_name of this RestoreInfo.
 
         恢复后的新库名称
 

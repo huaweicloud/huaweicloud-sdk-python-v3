@@ -24,7 +24,7 @@ class BatchCreateKmsTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateKmsTagsResponse
+        r"""BatchCreateKmsTagsResponse
 
         The model defined in huaweicloud sdk
 

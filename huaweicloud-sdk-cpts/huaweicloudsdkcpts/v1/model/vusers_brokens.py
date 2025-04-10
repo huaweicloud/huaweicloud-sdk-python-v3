@@ -25,7 +25,7 @@ class VusersBrokens:
     }
 
     def __init__(self, vusers=None):
-        """VusersBrokens
+        r"""VusersBrokens
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VusersBrokens:
 
     @property
     def vusers(self):
-        """Gets the vusers of this VusersBrokens.
+        r"""Gets the vusers of this VusersBrokens.
 
         虚拟用户数
 
@@ -54,7 +54,7 @@ class VusersBrokens:
 
     @vusers.setter
     def vusers(self, vusers):
-        """Sets the vusers of this VusersBrokens.
+        r"""Sets the vusers of this VusersBrokens.
 
         虚拟用户数
 

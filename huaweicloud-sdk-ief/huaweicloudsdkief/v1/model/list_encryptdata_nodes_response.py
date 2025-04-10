@@ -28,7 +28,7 @@ class ListEncryptdataNodesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, nodes=None):
-        """ListEncryptdataNodesResponse
+        r"""ListEncryptdataNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEncryptdataNodesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEncryptdataNodesResponse.
+        r"""Gets the count of this ListEncryptdataNodesResponse.
 
         绑定的边缘节点总数
 
@@ -62,7 +62,7 @@ class ListEncryptdataNodesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEncryptdataNodesResponse.
+        r"""Sets the count of this ListEncryptdataNodesResponse.
 
         绑定的边缘节点总数
 
@@ -73,7 +73,7 @@ class ListEncryptdataNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListEncryptdataNodesResponse.
+        r"""Gets the nodes of this ListEncryptdataNodesResponse.
 
         边缘节点列表
 
@@ -84,7 +84,7 @@ class ListEncryptdataNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListEncryptdataNodesResponse.
+        r"""Sets the nodes of this ListEncryptdataNodesResponse.
 
         边缘节点列表
 

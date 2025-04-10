@@ -24,7 +24,7 @@ class DeleteVpcEgressResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVpcEgressResponse
+        r"""DeleteVpcEgressResponse
 
         The model defined in huaweicloud sdk
 

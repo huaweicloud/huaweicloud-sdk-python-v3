@@ -27,7 +27,7 @@ class ShowAssetReplicationInfoRequest:
     }
 
     def __init__(self, x_app_user_id=None, asset_id=None):
-        """ShowAssetReplicationInfoRequest
+        r"""ShowAssetReplicationInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowAssetReplicationInfoRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowAssetReplicationInfoRequest.
+        r"""Gets the x_app_user_id of this ShowAssetReplicationInfoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowAssetReplicationInfoRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowAssetReplicationInfoRequest.
+        r"""Sets the x_app_user_id of this ShowAssetReplicationInfoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowAssetReplicationInfoRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetReplicationInfoRequest.
+        r"""Gets the asset_id of this ShowAssetReplicationInfoRequest.
 
         资产ID。
 
@@ -82,7 +82,7 @@ class ShowAssetReplicationInfoRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetReplicationInfoRequest.
+        r"""Sets the asset_id of this ShowAssetReplicationInfoRequest.
 
         资产ID。
 

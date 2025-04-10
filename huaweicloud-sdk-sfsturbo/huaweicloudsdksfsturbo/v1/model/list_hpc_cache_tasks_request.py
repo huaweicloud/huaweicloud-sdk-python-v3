@@ -37,7 +37,7 @@ class ListHpcCacheTasksRequest:
     }
 
     def __init__(self, share_id=None, type=None, status=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ListHpcCacheTasksRequest
+        r"""ListHpcCacheTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ListHpcCacheTasksRequest.
+        r"""Gets the share_id of this ListHpcCacheTasksRequest.
 
         文件系统ID
 
@@ -95,7 +95,7 @@ class ListHpcCacheTasksRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ListHpcCacheTasksRequest.
+        r"""Sets the share_id of this ListHpcCacheTasksRequest.
 
         文件系统ID
 
@@ -106,7 +106,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListHpcCacheTasksRequest.
+        r"""Gets the type of this ListHpcCacheTasksRequest.
 
         任务类型
 
@@ -117,7 +117,7 @@ class ListHpcCacheTasksRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListHpcCacheTasksRequest.
+        r"""Sets the type of this ListHpcCacheTasksRequest.
 
         任务类型
 
@@ -128,7 +128,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListHpcCacheTasksRequest.
+        r"""Gets the status of this ListHpcCacheTasksRequest.
 
         任务状态
 
@@ -139,7 +139,7 @@ class ListHpcCacheTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListHpcCacheTasksRequest.
+        r"""Sets the status of this ListHpcCacheTasksRequest.
 
         任务状态
 
@@ -150,7 +150,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHpcCacheTasksRequest.
+        r"""Gets the offset of this ListHpcCacheTasksRequest.
 
         offset，默认值为 0
 
@@ -161,7 +161,7 @@ class ListHpcCacheTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHpcCacheTasksRequest.
+        r"""Sets the offset of this ListHpcCacheTasksRequest.
 
         offset，默认值为 0
 
@@ -172,7 +172,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHpcCacheTasksRequest.
+        r"""Gets the limit of this ListHpcCacheTasksRequest.
 
         limit，默认值为 20
 
@@ -183,7 +183,7 @@ class ListHpcCacheTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHpcCacheTasksRequest.
+        r"""Sets the limit of this ListHpcCacheTasksRequest.
 
         limit，默认值为 20
 
@@ -194,7 +194,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHpcCacheTasksRequest.
+        r"""Gets the start_time of this ListHpcCacheTasksRequest.
 
         start_time
 
@@ -205,7 +205,7 @@ class ListHpcCacheTasksRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHpcCacheTasksRequest.
+        r"""Sets the start_time of this ListHpcCacheTasksRequest.
 
         start_time
 
@@ -216,7 +216,7 @@ class ListHpcCacheTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHpcCacheTasksRequest.
+        r"""Gets the end_time of this ListHpcCacheTasksRequest.
 
         end_time
 
@@ -227,7 +227,7 @@ class ListHpcCacheTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHpcCacheTasksRequest.
+        r"""Sets the end_time of this ListHpcCacheTasksRequest.
 
         end_time
 

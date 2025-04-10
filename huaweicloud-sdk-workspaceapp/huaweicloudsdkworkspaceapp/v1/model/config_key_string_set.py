@@ -25,7 +25,7 @@ class ConfigKeyStringSet:
     }
 
     def __init__(self, items=None):
-        """ConfigKeyStringSet
+        r"""ConfigKeyStringSet
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConfigKeyStringSet:
 
     @property
     def items(self):
-        """Gets the items of this ConfigKeyStringSet.
+        r"""Gets the items of this ConfigKeyStringSet.
 
         查询企业配置请求的key，一次请求数量区间 [0, 100]。
 
@@ -53,7 +53,7 @@ class ConfigKeyStringSet:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ConfigKeyStringSet.
+        r"""Sets the items of this ConfigKeyStringSet.
 
         查询企业配置请求的key，一次请求数量区间 [0, 100]。
 

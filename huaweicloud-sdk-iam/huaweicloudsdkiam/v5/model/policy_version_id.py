@@ -23,7 +23,7 @@ class PolicyVersionId:
     }
 
     def __init__(self):
-        """PolicyVersionId
+        r"""PolicyVersionId
 
         The model defined in huaweicloud sdk
 

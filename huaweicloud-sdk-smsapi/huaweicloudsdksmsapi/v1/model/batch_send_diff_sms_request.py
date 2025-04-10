@@ -27,7 +27,7 @@ class BatchSendDiffSmsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchSendDiffSmsRequest
+        r"""BatchSendDiffSmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class BatchSendDiffSmsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSendDiffSmsRequest.
+        r"""Gets the body of this BatchSendDiffSmsRequest.
 
         :return: The body of this BatchSendDiffSmsRequest.
         :rtype: :class:`huaweicloudsdksmsapi.v1.BatchSendDiffSmsRequestBody`
@@ -54,7 +54,7 @@ class BatchSendDiffSmsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSendDiffSmsRequest.
+        r"""Sets the body of this BatchSendDiffSmsRequest.
 
         :param body: The body of this BatchSendDiffSmsRequest.
         :type body: :class:`huaweicloudsdksmsapi.v1.BatchSendDiffSmsRequestBody`

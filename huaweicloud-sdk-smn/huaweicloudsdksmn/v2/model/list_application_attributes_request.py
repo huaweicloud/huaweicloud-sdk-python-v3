@@ -25,7 +25,7 @@ class ListApplicationAttributesRequest:
     }
 
     def __init__(self, application_urn=None):
-        """ListApplicationAttributesRequest
+        r"""ListApplicationAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListApplicationAttributesRequest:
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this ListApplicationAttributesRequest.
+        r"""Gets the application_urn of this ListApplicationAttributesRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class ListApplicationAttributesRequest:
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this ListApplicationAttributesRequest.
+        r"""Sets the application_urn of this ListApplicationAttributesRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 

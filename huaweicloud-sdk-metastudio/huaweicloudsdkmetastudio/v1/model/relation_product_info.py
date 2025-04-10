@@ -27,7 +27,7 @@ class RelationProductInfo:
     }
 
     def __init__(self, product_id=None, product_title=None):
-        """RelationProductInfo
+        r"""RelationProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RelationProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this RelationProductInfo.
+        r"""Gets the product_id of this RelationProductInfo.
 
         关联商品ID。如果配置，则段落切换回调中会携带该信息。美团平台对应goodsId
 
@@ -61,7 +61,7 @@ class RelationProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this RelationProductInfo.
+        r"""Sets the product_id of this RelationProductInfo.
 
         关联商品ID。如果配置，则段落切换回调中会携带该信息。美团平台对应goodsId
 
@@ -72,7 +72,7 @@ class RelationProductInfo:
 
     @property
     def product_title(self):
-        """Gets the product_title of this RelationProductInfo.
+        r"""Gets the product_title of this RelationProductInfo.
 
         关联商品标题/名称。如果配置，则段落切换回调中会携带该信息。美团平台对应goodsTitle
 
@@ -83,7 +83,7 @@ class RelationProductInfo:
 
     @product_title.setter
     def product_title(self, product_title):
-        """Sets the product_title of this RelationProductInfo.
+        r"""Sets the product_title of this RelationProductInfo.
 
         关联商品标题/名称。如果配置，则段落切换回调中会携带该信息。美团平台对应goodsTitle
 

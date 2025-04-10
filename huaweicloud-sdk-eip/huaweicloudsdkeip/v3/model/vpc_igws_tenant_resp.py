@@ -39,7 +39,7 @@ class VpcIgwsTenantResp:
     }
 
     def __init__(self, id=None, project_id=None, vpc_id=None, name=None, created_at=None, updated_at=None, network_id=None, enable_ipv6=None):
-        """VpcIgwsTenantResp
+        r"""VpcIgwsTenantResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VpcIgwsTenantResp:
 
     @property
     def id(self):
-        """Gets the id of this VpcIgwsTenantResp.
+        r"""Gets the id of this VpcIgwsTenantResp.
 
         虚拟IGW的uuid
 
@@ -103,7 +103,7 @@ class VpcIgwsTenantResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpcIgwsTenantResp.
+        r"""Sets the id of this VpcIgwsTenantResp.
 
         虚拟IGW的uuid
 
@@ -114,7 +114,7 @@ class VpcIgwsTenantResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this VpcIgwsTenantResp.
+        r"""Gets the project_id of this VpcIgwsTenantResp.
 
         虚拟IGW的租户id
 
@@ -125,7 +125,7 @@ class VpcIgwsTenantResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this VpcIgwsTenantResp.
+        r"""Sets the project_id of this VpcIgwsTenantResp.
 
         虚拟IGW的租户id
 
@@ -136,7 +136,7 @@ class VpcIgwsTenantResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcIgwsTenantResp.
+        r"""Gets the vpc_id of this VpcIgwsTenantResp.
 
         虚拟IGW的vpcid
 
@@ -147,7 +147,7 @@ class VpcIgwsTenantResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcIgwsTenantResp.
+        r"""Sets the vpc_id of this VpcIgwsTenantResp.
 
         虚拟IGW的vpcid
 
@@ -158,7 +158,7 @@ class VpcIgwsTenantResp:
 
     @property
     def name(self):
-        """Gets the name of this VpcIgwsTenantResp.
+        r"""Gets the name of this VpcIgwsTenantResp.
 
         虚拟IGW的名称
 
@@ -169,7 +169,7 @@ class VpcIgwsTenantResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcIgwsTenantResp.
+        r"""Sets the name of this VpcIgwsTenantResp.
 
         虚拟IGW的名称
 
@@ -180,7 +180,7 @@ class VpcIgwsTenantResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpcIgwsTenantResp.
+        r"""Gets the created_at of this VpcIgwsTenantResp.
 
         创建时间
 
@@ -191,7 +191,7 @@ class VpcIgwsTenantResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpcIgwsTenantResp.
+        r"""Sets the created_at of this VpcIgwsTenantResp.
 
         创建时间
 
@@ -202,7 +202,7 @@ class VpcIgwsTenantResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VpcIgwsTenantResp.
+        r"""Gets the updated_at of this VpcIgwsTenantResp.
 
         更新时间
 
@@ -213,7 +213,7 @@ class VpcIgwsTenantResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VpcIgwsTenantResp.
+        r"""Sets the updated_at of this VpcIgwsTenantResp.
 
         更新时间
 
@@ -224,7 +224,7 @@ class VpcIgwsTenantResp:
 
     @property
     def network_id(self):
-        """Gets the network_id of this VpcIgwsTenantResp.
+        r"""Gets the network_id of this VpcIgwsTenantResp.
 
         创建IGW使用的VPC具体子网
 
@@ -235,7 +235,7 @@ class VpcIgwsTenantResp:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this VpcIgwsTenantResp.
+        r"""Sets the network_id of this VpcIgwsTenantResp.
 
         创建IGW使用的VPC具体子网
 
@@ -246,7 +246,7 @@ class VpcIgwsTenantResp:
 
     @property
     def enable_ipv6(self):
-        """Gets the enable_ipv6 of this VpcIgwsTenantResp.
+        r"""Gets the enable_ipv6 of this VpcIgwsTenantResp.
 
         是否使能IPV6
 
@@ -257,7 +257,7 @@ class VpcIgwsTenantResp:
 
     @enable_ipv6.setter
     def enable_ipv6(self, enable_ipv6):
-        """Sets the enable_ipv6 of this VpcIgwsTenantResp.
+        r"""Sets the enable_ipv6 of this VpcIgwsTenantResp.
 
         是否使能IPV6
 

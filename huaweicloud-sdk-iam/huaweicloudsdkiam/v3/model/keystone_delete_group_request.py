@@ -25,7 +25,7 @@ class KeystoneDeleteGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """KeystoneDeleteGroupRequest
+        r"""KeystoneDeleteGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneDeleteGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneDeleteGroupRequest.
+        r"""Gets the group_id of this KeystoneDeleteGroupRequest.
 
         待删除的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class KeystoneDeleteGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneDeleteGroupRequest.
+        r"""Sets the group_id of this KeystoneDeleteGroupRequest.
 
         待删除的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

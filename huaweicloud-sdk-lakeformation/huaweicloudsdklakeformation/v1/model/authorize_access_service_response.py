@@ -26,7 +26,7 @@ class AuthorizeAccessServiceResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """AuthorizeAccessServiceResponse
+        r"""AuthorizeAccessServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AuthorizeAccessServiceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AuthorizeAccessServiceResponse.
+        r"""Gets the x_request_id of this AuthorizeAccessServiceResponse.
 
         :return: The x_request_id of this AuthorizeAccessServiceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AuthorizeAccessServiceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AuthorizeAccessServiceResponse.
+        r"""Sets the x_request_id of this AuthorizeAccessServiceResponse.
 
         :param x_request_id: The x_request_id of this AuthorizeAccessServiceResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class BatchSetPolicyRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetPolicyRequest
+        r"""BatchSetPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSetPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchSetPolicyRequest.
+        r"""Gets the x_language of this BatchSetPolicyRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class BatchSetPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchSetPolicyRequest.
+        r"""Sets the x_language of this BatchSetPolicyRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class BatchSetPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetPolicyRequest.
+        r"""Gets the body of this BatchSetPolicyRequest.
 
         :return: The body of this BatchSetPolicyRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`
@@ -81,7 +81,7 @@ class BatchSetPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetPolicyRequest.
+        r"""Sets the body of this BatchSetPolicyRequest.
 
         :param body: The body of this BatchSetPolicyRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`

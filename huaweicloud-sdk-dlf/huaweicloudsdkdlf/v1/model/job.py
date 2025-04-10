@@ -29,7 +29,7 @@ class Job:
     }
 
     def __init__(self, name=None, path=None, params=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Job:
 
     @property
     def name(self):
-        """Gets the name of this Job.
+        r"""Gets the name of this Job.
 
         :return: The name of this Job.
         :rtype: str
@@ -66,7 +66,7 @@ class Job:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Job.
+        r"""Sets the name of this Job.
 
         :param name: The name of this Job.
         :type name: str
@@ -75,7 +75,7 @@ class Job:
 
     @property
     def path(self):
-        """Gets the path of this Job.
+        r"""Gets the path of this Job.
 
         :return: The path of this Job.
         :rtype: str
@@ -84,7 +84,7 @@ class Job:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Job.
+        r"""Sets the path of this Job.
 
         :param path: The path of this Job.
         :type path: str
@@ -93,7 +93,7 @@ class Job:
 
     @property
     def params(self):
-        """Gets the params of this Job.
+        r"""Gets the params of this Job.
 
         :return: The params of this Job.
         :rtype: object
@@ -102,7 +102,7 @@ class Job:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this Job.
+        r"""Sets the params of this Job.
 
         :param params: The params of this Job.
         :type params: object

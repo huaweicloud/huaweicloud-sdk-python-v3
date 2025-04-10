@@ -33,7 +33,7 @@ class OrganizationDto:
     }
 
     def __init__(self, id=None, urn=None, management_account_id=None, management_account_name=None, created_at=None):
-        """OrganizationDto
+        r"""OrganizationDto
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class OrganizationDto:
 
     @property
     def id(self):
-        """Gets the id of this OrganizationDto.
+        r"""Gets the id of this OrganizationDto.
 
         组织的唯一标识符（ID）。
 
@@ -77,7 +77,7 @@ class OrganizationDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrganizationDto.
+        r"""Sets the id of this OrganizationDto.
 
         组织的唯一标识符（ID）。
 
@@ -88,7 +88,7 @@ class OrganizationDto:
 
     @property
     def urn(self):
-        """Gets the urn of this OrganizationDto.
+        r"""Gets the urn of this OrganizationDto.
 
         组织的统一资源名称。
 
@@ -99,7 +99,7 @@ class OrganizationDto:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this OrganizationDto.
+        r"""Sets the urn of this OrganizationDto.
 
         组织的统一资源名称。
 
@@ -110,7 +110,7 @@ class OrganizationDto:
 
     @property
     def management_account_id(self):
-        """Gets the management_account_id of this OrganizationDto.
+        r"""Gets the management_account_id of this OrganizationDto.
 
         组织管理账号的唯一标识符（ID）。
 
@@ -121,7 +121,7 @@ class OrganizationDto:
 
     @management_account_id.setter
     def management_account_id(self, management_account_id):
-        """Sets the management_account_id of this OrganizationDto.
+        r"""Sets the management_account_id of this OrganizationDto.
 
         组织管理账号的唯一标识符（ID）。
 
@@ -132,7 +132,7 @@ class OrganizationDto:
 
     @property
     def management_account_name(self):
-        """Gets the management_account_name of this OrganizationDto.
+        r"""Gets the management_account_name of this OrganizationDto.
 
         组织的管理账号的名称。
 
@@ -143,7 +143,7 @@ class OrganizationDto:
 
     @management_account_name.setter
     def management_account_name(self, management_account_name):
-        """Sets the management_account_name of this OrganizationDto.
+        r"""Sets the management_account_name of this OrganizationDto.
 
         组织的管理账号的名称。
 
@@ -154,7 +154,7 @@ class OrganizationDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this OrganizationDto.
+        r"""Gets the created_at of this OrganizationDto.
 
         组织的创建时间。
 
@@ -165,7 +165,7 @@ class OrganizationDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OrganizationDto.
+        r"""Sets the created_at of this OrganizationDto.
 
         组织的创建时间。
 

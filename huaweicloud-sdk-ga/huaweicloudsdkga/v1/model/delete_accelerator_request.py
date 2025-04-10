@@ -25,7 +25,7 @@ class DeleteAcceleratorRequest:
     }
 
     def __init__(self, accelerator_id=None):
-        """DeleteAcceleratorRequest
+        r"""DeleteAcceleratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAcceleratorRequest:
 
     @property
     def accelerator_id(self):
-        """Gets the accelerator_id of this DeleteAcceleratorRequest.
+        r"""Gets the accelerator_id of this DeleteAcceleratorRequest.
 
         全球加速器ID。
 
@@ -53,7 +53,7 @@ class DeleteAcceleratorRequest:
 
     @accelerator_id.setter
     def accelerator_id(self, accelerator_id):
-        """Sets the accelerator_id of this DeleteAcceleratorRequest.
+        r"""Sets the accelerator_id of this DeleteAcceleratorRequest.
 
         全球加速器ID。
 

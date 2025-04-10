@@ -25,7 +25,7 @@ class BatchDeleteAclRulesResponseData:
     }
 
     def __init__(self, response_datas=None):
-        """BatchDeleteAclRulesResponseData
+        r"""BatchDeleteAclRulesResponseData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteAclRulesResponseData:
 
     @property
     def response_datas(self):
-        """Gets the response_datas of this BatchDeleteAclRulesResponseData.
+        r"""Gets the response_datas of this BatchDeleteAclRulesResponseData.
 
         批量删除规则返回data
 
@@ -54,7 +54,7 @@ class BatchDeleteAclRulesResponseData:
 
     @response_datas.setter
     def response_datas(self, response_datas):
-        """Sets the response_datas of this BatchDeleteAclRulesResponseData.
+        r"""Sets the response_datas of this BatchDeleteAclRulesResponseData.
 
         批量删除规则返回data
 

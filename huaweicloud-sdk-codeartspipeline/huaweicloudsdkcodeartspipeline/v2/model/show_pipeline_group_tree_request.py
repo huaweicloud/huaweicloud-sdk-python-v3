@@ -25,7 +25,7 @@ class ShowPipelineGroupTreeRequest:
     }
 
     def __init__(self, project_id=None):
-        """ShowPipelineGroupTreeRequest
+        r"""ShowPipelineGroupTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPipelineGroupTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPipelineGroupTreeRequest.
+        r"""Gets the project_id of this ShowPipelineGroupTreeRequest.
 
         项目ID
 
@@ -53,7 +53,7 @@ class ShowPipelineGroupTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPipelineGroupTreeRequest.
+        r"""Sets the project_id of this ShowPipelineGroupTreeRequest.
 
         项目ID
 

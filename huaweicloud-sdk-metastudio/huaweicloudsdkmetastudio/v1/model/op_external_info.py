@@ -25,7 +25,7 @@ class OpExternalInfo:
     }
 
     def __init__(self, review_id_list=None):
-        """OpExternalInfo
+        r"""OpExternalInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OpExternalInfo:
 
     @property
     def review_id_list(self):
-        """Gets the review_id_list of this OpExternalInfo.
+        r"""Gets the review_id_list of this OpExternalInfo.
 
         审核详情id列表
 
@@ -54,7 +54,7 @@ class OpExternalInfo:
 
     @review_id_list.setter
     def review_id_list(self, review_id_list):
-        """Sets the review_id_list of this OpExternalInfo.
+        r"""Sets the review_id_list of this OpExternalInfo.
 
         审核详情id列表
 

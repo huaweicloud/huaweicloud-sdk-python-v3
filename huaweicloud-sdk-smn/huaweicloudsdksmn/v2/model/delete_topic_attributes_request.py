@@ -25,7 +25,7 @@ class DeleteTopicAttributesRequest:
     }
 
     def __init__(self, topic_urn=None):
-        """DeleteTopicAttributesRequest
+        r"""DeleteTopicAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTopicAttributesRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DeleteTopicAttributesRequest.
+        r"""Gets the topic_urn of this DeleteTopicAttributesRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class DeleteTopicAttributesRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DeleteTopicAttributesRequest.
+        r"""Sets the topic_urn of this DeleteTopicAttributesRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 

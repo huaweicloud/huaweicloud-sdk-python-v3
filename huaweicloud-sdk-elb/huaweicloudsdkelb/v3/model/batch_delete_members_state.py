@@ -27,7 +27,7 @@ class BatchDeleteMembersState:
     }
 
     def __init__(self, id=None, ret_status=None):
-        """BatchDeleteMembersState
+        r"""BatchDeleteMembersState
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteMembersState:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteMembersState.
+        r"""Gets the id of this BatchDeleteMembersState.
 
         后端服务器ID。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -59,7 +59,7 @@ class BatchDeleteMembersState:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteMembersState.
+        r"""Sets the id of this BatchDeleteMembersState.
 
         后端服务器ID。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -70,7 +70,7 @@ class BatchDeleteMembersState:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this BatchDeleteMembersState.
+        r"""Gets the ret_status of this BatchDeleteMembersState.
 
         当前后端服务器删除结果状态。  取值： - successful：删除成功。 - not found：member不存在。
 
@@ -81,7 +81,7 @@ class BatchDeleteMembersState:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this BatchDeleteMembersState.
+        r"""Sets the ret_status of this BatchDeleteMembersState.
 
         当前后端服务器删除结果状态。  取值： - successful：删除成功。 - not found：member不存在。
 

@@ -25,7 +25,7 @@ class ConfigurationPrimitiveTypeHolder:
     }
 
     def __init__(self, configuration=None):
-        """ConfigurationPrimitiveTypeHolder
+        r"""ConfigurationPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfigurationPrimitiveTypeHolder:
 
     @property
     def configuration(self):
-        """Gets the configuration of this ConfigurationPrimitiveTypeHolder.
+        r"""Gets the configuration of this ConfigurationPrimitiveTypeHolder.
 
         :return: The configuration of this ConfigurationPrimitiveTypeHolder.
         :rtype: :class:`huaweicloudsdkaos.v1.ConfigurationPrimitiveTypeHolderConfiguration`
@@ -52,7 +52,7 @@ class ConfigurationPrimitiveTypeHolder:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ConfigurationPrimitiveTypeHolder.
+        r"""Sets the configuration of this ConfigurationPrimitiveTypeHolder.
 
         :param configuration: The configuration of this ConfigurationPrimitiveTypeHolder.
         :type configuration: :class:`huaweicloudsdkaos.v1.ConfigurationPrimitiveTypeHolderConfiguration`

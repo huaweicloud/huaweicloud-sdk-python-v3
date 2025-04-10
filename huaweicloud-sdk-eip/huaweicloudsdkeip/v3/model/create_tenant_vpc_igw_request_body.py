@@ -25,7 +25,7 @@ class CreateTenantVpcIgwRequestBody:
     }
 
     def __init__(self, vpc_igw=None):
-        """CreateTenantVpcIgwRequestBody
+        r"""CreateTenantVpcIgwRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateTenantVpcIgwRequestBody:
 
     @property
     def vpc_igw(self):
-        """Gets the vpc_igw of this CreateTenantVpcIgwRequestBody.
+        r"""Gets the vpc_igw of this CreateTenantVpcIgwRequestBody.
 
         :return: The vpc_igw of this CreateTenantVpcIgwRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwRequestBodyVpcIgw`
@@ -51,7 +51,7 @@ class CreateTenantVpcIgwRequestBody:
 
     @vpc_igw.setter
     def vpc_igw(self, vpc_igw):
-        """Sets the vpc_igw of this CreateTenantVpcIgwRequestBody.
+        r"""Sets the vpc_igw of this CreateTenantVpcIgwRequestBody.
 
         :param vpc_igw: The vpc_igw of this CreateTenantVpcIgwRequestBody.
         :type vpc_igw: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwRequestBodyVpcIgw`

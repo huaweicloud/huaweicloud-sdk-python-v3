@@ -28,7 +28,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery_drills=None, count=None):
-        """ListDisasterRecoveryDrillsResponse
+        r"""ListDisasterRecoveryDrillsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
 
     @property
     def disaster_recovery_drills(self):
-        """Gets the disaster_recovery_drills of this ListDisasterRecoveryDrillsResponse.
+        r"""Gets the disaster_recovery_drills of this ListDisasterRecoveryDrillsResponse.
 
         容灾演练列表。
 
@@ -62,7 +62,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
 
     @disaster_recovery_drills.setter
     def disaster_recovery_drills(self, disaster_recovery_drills):
-        """Sets the disaster_recovery_drills of this ListDisasterRecoveryDrillsResponse.
+        r"""Sets the disaster_recovery_drills of this ListDisasterRecoveryDrillsResponse.
 
         容灾演练列表。
 
@@ -73,7 +73,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDisasterRecoveryDrillsResponse.
+        r"""Gets the count of this ListDisasterRecoveryDrillsResponse.
 
         列表中包含的容灾演练个数。
 
@@ -84,7 +84,7 @@ class ListDisasterRecoveryDrillsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDisasterRecoveryDrillsResponse.
+        r"""Sets the count of this ListDisasterRecoveryDrillsResponse.
 
         列表中包含的容灾演练个数。
 

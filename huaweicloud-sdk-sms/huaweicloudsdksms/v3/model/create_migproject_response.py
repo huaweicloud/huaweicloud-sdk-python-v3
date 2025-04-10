@@ -26,7 +26,7 @@ class CreateMigprojectResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateMigprojectResponse
+        r"""CreateMigprojectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateMigprojectResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateMigprojectResponse.
+        r"""Gets the id of this CreateMigprojectResponse.
 
         创建迁移项目返回的新添加的迁移项目的id
 
@@ -55,7 +55,7 @@ class CreateMigprojectResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateMigprojectResponse.
+        r"""Sets the id of this CreateMigprojectResponse.
 
         创建迁移项目返回的新添加的迁移项目的id
 

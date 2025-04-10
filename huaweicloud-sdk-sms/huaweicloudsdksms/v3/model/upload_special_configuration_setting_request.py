@@ -27,7 +27,7 @@ class UploadSpecialConfigurationSettingRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UploadSpecialConfigurationSettingRequest
+        r"""UploadSpecialConfigurationSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UploadSpecialConfigurationSettingRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UploadSpecialConfigurationSettingRequest.
+        r"""Gets the task_id of this UploadSpecialConfigurationSettingRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class UploadSpecialConfigurationSettingRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UploadSpecialConfigurationSettingRequest.
+        r"""Sets the task_id of this UploadSpecialConfigurationSettingRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class UploadSpecialConfigurationSettingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadSpecialConfigurationSettingRequest.
+        r"""Gets the body of this UploadSpecialConfigurationSettingRequest.
 
         :return: The body of this UploadSpecialConfigurationSettingRequest.
         :rtype: :class:`huaweicloudsdksms.v3.ConfigurationRequestBody`
@@ -80,7 +80,7 @@ class UploadSpecialConfigurationSettingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadSpecialConfigurationSettingRequest.
+        r"""Sets the body of this UploadSpecialConfigurationSettingRequest.
 
         :param body: The body of this UploadSpecialConfigurationSettingRequest.
         :type body: :class:`huaweicloudsdksms.v3.ConfigurationRequestBody`

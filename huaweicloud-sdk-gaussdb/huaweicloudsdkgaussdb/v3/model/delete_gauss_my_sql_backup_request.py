@@ -27,7 +27,7 @@ class DeleteGaussMySqlBackupRequest:
     }
 
     def __init__(self, x_language=None, backup_id=None):
-        """DeleteGaussMySqlBackupRequest
+        r"""DeleteGaussMySqlBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteGaussMySqlBackupRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteGaussMySqlBackupRequest.
+        r"""Gets the x_language of this DeleteGaussMySqlBackupRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class DeleteGaussMySqlBackupRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteGaussMySqlBackupRequest.
+        r"""Sets the x_language of this DeleteGaussMySqlBackupRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class DeleteGaussMySqlBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteGaussMySqlBackupRequest.
+        r"""Gets the backup_id of this DeleteGaussMySqlBackupRequest.
 
         备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlBackupList.html)。
 
@@ -82,7 +82,7 @@ class DeleteGaussMySqlBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteGaussMySqlBackupRequest.
+        r"""Sets the backup_id of this DeleteGaussMySqlBackupRequest.
 
         备份文件ID。  获取方法参见[查询备份列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlBackupList.html)。
 

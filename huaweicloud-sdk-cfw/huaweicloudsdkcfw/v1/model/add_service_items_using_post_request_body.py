@@ -27,7 +27,7 @@ class AddServiceItemsUsingPOSTRequestBody:
     }
 
     def __init__(self, set_id=None, service_items=None):
-        """AddServiceItemsUsingPOSTRequestBody
+        r"""AddServiceItemsUsingPOSTRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddServiceItemsUsingPOSTRequestBody:
 
     @property
     def set_id(self):
-        """Gets the set_id of this AddServiceItemsUsingPOSTRequestBody.
+        r"""Gets the set_id of this AddServiceItemsUsingPOSTRequestBody.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -59,7 +59,7 @@ class AddServiceItemsUsingPOSTRequestBody:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this AddServiceItemsUsingPOSTRequestBody.
+        r"""Sets the set_id of this AddServiceItemsUsingPOSTRequestBody.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -70,7 +70,7 @@ class AddServiceItemsUsingPOSTRequestBody:
 
     @property
     def service_items(self):
-        """Gets the service_items of this AddServiceItemsUsingPOSTRequestBody.
+        r"""Gets the service_items of this AddServiceItemsUsingPOSTRequestBody.
 
         服务组成员列表
 
@@ -81,7 +81,7 @@ class AddServiceItemsUsingPOSTRequestBody:
 
     @service_items.setter
     def service_items(self, service_items):
-        """Sets the service_items of this AddServiceItemsUsingPOSTRequestBody.
+        r"""Sets the service_items of this AddServiceItemsUsingPOSTRequestBody.
 
         服务组成员列表
 

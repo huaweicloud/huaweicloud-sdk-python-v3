@@ -31,7 +31,7 @@ class BatchDeleteUsersRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, account_type=None, body=None):
-        """BatchDeleteUsersRequest
+        r"""BatchDeleteUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchDeleteUsersRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchDeleteUsersRequest.
+        r"""Gets the x_request_id of this BatchDeleteUsersRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -75,7 +75,7 @@ class BatchDeleteUsersRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchDeleteUsersRequest.
+        r"""Sets the x_request_id of this BatchDeleteUsersRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -86,7 +86,7 @@ class BatchDeleteUsersRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this BatchDeleteUsersRequest.
+        r"""Gets the accept_language of this BatchDeleteUsersRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -97,7 +97,7 @@ class BatchDeleteUsersRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this BatchDeleteUsersRequest.
+        r"""Sets the accept_language of this BatchDeleteUsersRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -108,7 +108,7 @@ class BatchDeleteUsersRequest:
 
     @property
     def account_type(self):
-        """Gets the account_type of this BatchDeleteUsersRequest.
+        r"""Gets the account_type of this BatchDeleteUsersRequest.
 
         帐号类型。默认0。 * 0：会议帐号 * 1：第三方帐号 
 
@@ -119,7 +119,7 @@ class BatchDeleteUsersRequest:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this BatchDeleteUsersRequest.
+        r"""Sets the account_type of this BatchDeleteUsersRequest.
 
         帐号类型。默认0。 * 0：会议帐号 * 1：第三方帐号 
 
@@ -130,7 +130,7 @@ class BatchDeleteUsersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteUsersRequest.
+        r"""Gets the body of this BatchDeleteUsersRequest.
 
         :return: The body of this BatchDeleteUsersRequest.
         :rtype: list[str]
@@ -139,7 +139,7 @@ class BatchDeleteUsersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteUsersRequest.
+        r"""Sets the body of this BatchDeleteUsersRequest.
 
         :param body: The body of this BatchDeleteUsersRequest.
         :type body: list[str]

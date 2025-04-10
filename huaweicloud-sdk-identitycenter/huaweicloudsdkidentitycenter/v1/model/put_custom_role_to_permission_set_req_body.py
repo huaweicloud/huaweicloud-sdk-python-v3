@@ -25,7 +25,7 @@ class PutCustomRoleToPermissionSetReqBody:
     }
 
     def __init__(self, custom_role=None):
-        """PutCustomRoleToPermissionSetReqBody
+        r"""PutCustomRoleToPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PutCustomRoleToPermissionSetReqBody:
 
     @property
     def custom_role(self):
-        """Gets the custom_role of this PutCustomRoleToPermissionSetReqBody.
+        r"""Gets the custom_role of this PutCustomRoleToPermissionSetReqBody.
 
         要附加到权限集的自定义策略
 
@@ -53,7 +53,7 @@ class PutCustomRoleToPermissionSetReqBody:
 
     @custom_role.setter
     def custom_role(self, custom_role):
-        """Sets the custom_role of this PutCustomRoleToPermissionSetReqBody.
+        r"""Sets the custom_role of this PutCustomRoleToPermissionSetReqBody.
 
         要附加到权限集的自定义策略
 

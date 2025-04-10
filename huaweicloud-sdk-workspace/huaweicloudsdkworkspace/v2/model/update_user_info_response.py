@@ -26,7 +26,7 @@ class UpdateUserInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """UpdateUserInfoResponse
+        r"""UpdateUserInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateUserInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateUserInfoResponse.
+        r"""Gets the id of this UpdateUserInfoResponse.
 
         用户id。
 
@@ -55,7 +55,7 @@ class UpdateUserInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateUserInfoResponse.
+        r"""Sets the id of this UpdateUserInfoResponse.
 
         用户id。
 

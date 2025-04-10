@@ -25,7 +25,7 @@ class AuthorizeCsmsAndKmsRequestBody:
     }
 
     def __init__(self, authorization=None):
-        """AuthorizeCsmsAndKmsRequestBody
+        r"""AuthorizeCsmsAndKmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AuthorizeCsmsAndKmsRequestBody:
 
     @property
     def authorization(self):
-        """Gets the authorization of this AuthorizeCsmsAndKmsRequestBody.
+        r"""Gets the authorization of this AuthorizeCsmsAndKmsRequestBody.
 
         :return: The authorization of this AuthorizeCsmsAndKmsRequestBody.
         :rtype: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`
@@ -51,7 +51,7 @@ class AuthorizeCsmsAndKmsRequestBody:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this AuthorizeCsmsAndKmsRequestBody.
+        r"""Sets the authorization of this AuthorizeCsmsAndKmsRequestBody.
 
         :param authorization: The authorization of this AuthorizeCsmsAndKmsRequestBody.
         :type authorization: :class:`huaweicloudsdkcbh.v2.AgencyAuthorizeInfo`

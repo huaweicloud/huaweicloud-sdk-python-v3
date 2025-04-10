@@ -33,7 +33,7 @@ class UpdateMeetingRequest:
     }
 
     def __init__(self, conference_id=None, user_uuid=None, x_authorization_type=None, x_site_id=None, body=None):
-        """UpdateMeetingRequest
+        r"""UpdateMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UpdateMeetingRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this UpdateMeetingRequest.
+        r"""Gets the conference_id of this UpdateMeetingRequest.
 
         会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -81,7 +81,7 @@ class UpdateMeetingRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this UpdateMeetingRequest.
+        r"""Sets the conference_id of this UpdateMeetingRequest.
 
         会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -92,7 +92,7 @@ class UpdateMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this UpdateMeetingRequest.
+        r"""Gets the user_uuid of this UpdateMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -103,7 +103,7 @@ class UpdateMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this UpdateMeetingRequest.
+        r"""Sets the user_uuid of this UpdateMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -114,7 +114,7 @@ class UpdateMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this UpdateMeetingRequest.
+        r"""Gets the x_authorization_type of this UpdateMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -125,7 +125,7 @@ class UpdateMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this UpdateMeetingRequest.
+        r"""Sets the x_authorization_type of this UpdateMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -136,7 +136,7 @@ class UpdateMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this UpdateMeetingRequest.
+        r"""Gets the x_site_id of this UpdateMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -147,7 +147,7 @@ class UpdateMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this UpdateMeetingRequest.
+        r"""Sets the x_site_id of this UpdateMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -158,7 +158,7 @@ class UpdateMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMeetingRequest.
+        r"""Gets the body of this UpdateMeetingRequest.
 
         :return: The body of this UpdateMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`
@@ -167,7 +167,7 @@ class UpdateMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMeetingRequest.
+        r"""Sets the body of this UpdateMeetingRequest.
 
         :param body: The body of this UpdateMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`

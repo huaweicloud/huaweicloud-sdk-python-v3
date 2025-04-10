@@ -27,7 +27,7 @@ class BackupRestoreServerMapping:
     }
 
     def __init__(self, backup_id=None, volume_id=None):
-        """BackupRestoreServerMapping
+        r"""BackupRestoreServerMapping
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BackupRestoreServerMapping:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this BackupRestoreServerMapping.
+        r"""Gets the backup_id of this BackupRestoreServerMapping.
 
         卷备份ID，可以通过控制台查看云服务器备份详情中磁盘级备份的ID；或“查询指定备份”接口，获取备份中children内的磁盘级备份的ID。
 
@@ -59,7 +59,7 @@ class BackupRestoreServerMapping:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this BackupRestoreServerMapping.
+        r"""Sets the backup_id of this BackupRestoreServerMapping.
 
         卷备份ID，可以通过控制台查看云服务器备份详情中磁盘级备份的ID；或“查询指定备份”接口，获取备份中children内的磁盘级备份的ID。
 
@@ -70,7 +70,7 @@ class BackupRestoreServerMapping:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this BackupRestoreServerMapping.
+        r"""Gets the volume_id of this BackupRestoreServerMapping.
 
         待恢复目标卷ID
 
@@ -81,7 +81,7 @@ class BackupRestoreServerMapping:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this BackupRestoreServerMapping.
+        r"""Sets the volume_id of this BackupRestoreServerMapping.
 
         待恢复目标卷ID
 

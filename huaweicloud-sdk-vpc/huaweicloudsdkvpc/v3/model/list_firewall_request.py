@@ -37,7 +37,7 @@ class ListFirewallRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, status=None, admin_state_up=None, enterprise_project_id=None):
-        """ListFirewallRequest
+        r"""ListFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListFirewallRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFirewallRequest.
+        r"""Gets the limit of this ListFirewallRequest.
 
         功能说明：每页返回的个数 取值范围：0~2000
 
@@ -96,7 +96,7 @@ class ListFirewallRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFirewallRequest.
+        r"""Sets the limit of this ListFirewallRequest.
 
         功能说明：每页返回的个数 取值范围：0~2000
 
@@ -107,7 +107,7 @@ class ListFirewallRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFirewallRequest.
+        r"""Gets the marker of this ListFirewallRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -118,7 +118,7 @@ class ListFirewallRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFirewallRequest.
+        r"""Sets the marker of this ListFirewallRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -129,7 +129,7 @@ class ListFirewallRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListFirewallRequest.
+        r"""Gets the id of this ListFirewallRequest.
 
         ACL唯一标识，填写后接口按照id进行过滤，支持多id同时过滤
 
@@ -140,7 +140,7 @@ class ListFirewallRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFirewallRequest.
+        r"""Sets the id of this ListFirewallRequest.
 
         ACL唯一标识，填写后接口按照id进行过滤，支持多id同时过滤
 
@@ -151,7 +151,7 @@ class ListFirewallRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFirewallRequest.
+        r"""Gets the name of this ListFirewallRequest.
 
         ACL名称，填写后按照名称进行过滤，支持多名称同时过滤
 
@@ -162,7 +162,7 @@ class ListFirewallRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFirewallRequest.
+        r"""Sets the name of this ListFirewallRequest.
 
         ACL名称，填写后按照名称进行过滤，支持多名称同时过滤
 
@@ -173,7 +173,7 @@ class ListFirewallRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListFirewallRequest.
+        r"""Gets the status of this ListFirewallRequest.
 
         ACL的状态
 
@@ -184,7 +184,7 @@ class ListFirewallRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFirewallRequest.
+        r"""Sets the status of this ListFirewallRequest.
 
         ACL的状态
 
@@ -195,7 +195,7 @@ class ListFirewallRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListFirewallRequest.
+        r"""Gets the admin_state_up of this ListFirewallRequest.
 
         ACL是否启用
 
@@ -206,7 +206,7 @@ class ListFirewallRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListFirewallRequest.
+        r"""Sets the admin_state_up of this ListFirewallRequest.
 
         ACL是否启用
 
@@ -217,7 +217,7 @@ class ListFirewallRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFirewallRequest.
+        r"""Gets the enterprise_project_id of this ListFirewallRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的ACL。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的ACL，请传参all_granted_eps。
 
@@ -228,7 +228,7 @@ class ListFirewallRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFirewallRequest.
+        r"""Sets the enterprise_project_id of this ListFirewallRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的ACL。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的ACL，请传参all_granted_eps。
 

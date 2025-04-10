@@ -26,7 +26,7 @@ class SwitchoverReplicaSetResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchoverReplicaSetResponse
+        r"""SwitchoverReplicaSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchoverReplicaSetResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchoverReplicaSetResponse.
+        r"""Gets the job_id of this SwitchoverReplicaSetResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class SwitchoverReplicaSetResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchoverReplicaSetResponse.
+        r"""Sets the job_id of this SwitchoverReplicaSetResponse.
 
         任务ID。
 

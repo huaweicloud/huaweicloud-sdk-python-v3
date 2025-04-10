@@ -29,7 +29,7 @@ class LineCompareResultDetails:
     }
 
     def __init__(self, source_db_name=None, line_compare_detail=None, line_compare_detail_count=None):
-        """LineCompareResultDetails
+        r"""LineCompareResultDetails
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LineCompareResultDetails:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this LineCompareResultDetails.
+        r"""Gets the source_db_name of this LineCompareResultDetails.
 
         源库名称。
 
@@ -65,7 +65,7 @@ class LineCompareResultDetails:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this LineCompareResultDetails.
+        r"""Sets the source_db_name of this LineCompareResultDetails.
 
         源库名称。
 
@@ -76,7 +76,7 @@ class LineCompareResultDetails:
 
     @property
     def line_compare_detail(self):
-        """Gets the line_compare_detail of this LineCompareResultDetails.
+        r"""Gets the line_compare_detail of this LineCompareResultDetails.
 
         该库的表的行对比详情。
 
@@ -87,7 +87,7 @@ class LineCompareResultDetails:
 
     @line_compare_detail.setter
     def line_compare_detail(self, line_compare_detail):
-        """Sets the line_compare_detail of this LineCompareResultDetails.
+        r"""Sets the line_compare_detail of this LineCompareResultDetails.
 
         该库的表的行对比详情。
 
@@ -98,7 +98,7 @@ class LineCompareResultDetails:
 
     @property
     def line_compare_detail_count(self):
-        """Gets the line_compare_detail_count of this LineCompareResultDetails.
+        r"""Gets the line_compare_detail_count of this LineCompareResultDetails.
 
         该库的行对比结果详情总数。
 
@@ -109,7 +109,7 @@ class LineCompareResultDetails:
 
     @line_compare_detail_count.setter
     def line_compare_detail_count(self, line_compare_detail_count):
-        """Sets the line_compare_detail_count of this LineCompareResultDetails.
+        r"""Sets the line_compare_detail_count of this LineCompareResultDetails.
 
         该库的行对比结果详情总数。
 

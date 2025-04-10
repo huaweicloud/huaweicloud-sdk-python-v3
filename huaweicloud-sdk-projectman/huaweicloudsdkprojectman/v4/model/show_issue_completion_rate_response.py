@@ -28,7 +28,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
     }
 
     def __init__(self, issue_completion_rates=None, total=None):
-        """ShowIssueCompletionRateResponse
+        r"""ShowIssueCompletionRateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
 
     @property
     def issue_completion_rates(self):
-        """Gets the issue_completion_rates of this ShowIssueCompletionRateResponse.
+        r"""Gets the issue_completion_rates of this ShowIssueCompletionRateResponse.
 
         不同类型的工作项完成率
 
@@ -62,7 +62,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
 
     @issue_completion_rates.setter
     def issue_completion_rates(self, issue_completion_rates):
-        """Sets the issue_completion_rates of this ShowIssueCompletionRateResponse.
+        r"""Sets the issue_completion_rates of this ShowIssueCompletionRateResponse.
 
         不同类型的工作项完成率
 
@@ -73,7 +73,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowIssueCompletionRateResponse.
+        r"""Gets the total of this ShowIssueCompletionRateResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowIssueCompletionRateResponse.
+        r"""Sets the total of this ShowIssueCompletionRateResponse.
 
         总数
 

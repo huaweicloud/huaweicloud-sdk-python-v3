@@ -27,7 +27,7 @@ class FuncCode:
     }
 
     def __init__(self, file=None, link=None):
-        """FuncCode
+        r"""FuncCode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FuncCode:
 
     @property
     def file(self):
-        """Gets the file of this FuncCode.
+        r"""Gets the file of this FuncCode.
 
         函数代码，如果不为空必须进行base64编码，为空时使用默认的代码。
 
@@ -61,7 +61,7 @@ class FuncCode:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this FuncCode.
+        r"""Sets the file of this FuncCode.
 
         函数代码，如果不为空必须进行base64编码，为空时使用默认的代码。
 
@@ -72,7 +72,7 @@ class FuncCode:
 
     @property
     def link(self):
-        """Gets the link of this FuncCode.
+        r"""Gets the link of this FuncCode.
 
         函数代码链接。
 
@@ -83,7 +83,7 @@ class FuncCode:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this FuncCode.
+        r"""Sets the link of this FuncCode.
 
         函数代码链接。
 

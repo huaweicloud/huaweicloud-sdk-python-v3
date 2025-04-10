@@ -41,7 +41,7 @@ class RuleChangeRequest:
     }
 
     def __init__(self, category=None, id=None, logic_operator=None, min_match=None, risk_level=None, rule_content=None, rule_desc=None, rule_name=None, rule_type=None):
-        """RuleChangeRequest
+        r"""RuleChangeRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class RuleChangeRequest:
 
     @property
     def category(self):
-        """Gets the category of this RuleChangeRequest.
+        r"""Gets the category of this RuleChangeRequest.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -102,7 +102,7 @@ class RuleChangeRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this RuleChangeRequest.
+        r"""Sets the category of this RuleChangeRequest.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -113,7 +113,7 @@ class RuleChangeRequest:
 
     @property
     def id(self):
-        """Gets the id of this RuleChangeRequest.
+        r"""Gets the id of this RuleChangeRequest.
 
         规则ID
 
@@ -124,7 +124,7 @@ class RuleChangeRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleChangeRequest.
+        r"""Sets the id of this RuleChangeRequest.
 
         规则ID
 
@@ -135,7 +135,7 @@ class RuleChangeRequest:
 
     @property
     def logic_operator(self):
-        """Gets the logic_operator of this RuleChangeRequest.
+        r"""Gets the logic_operator of this RuleChangeRequest.
 
         逻辑运算符，\"AND\",\"OR\",\"REGEX\"
 
@@ -146,7 +146,7 @@ class RuleChangeRequest:
 
     @logic_operator.setter
     def logic_operator(self, logic_operator):
-        """Sets the logic_operator of this RuleChangeRequest.
+        r"""Sets the logic_operator of this RuleChangeRequest.
 
         逻辑运算符，\"AND\",\"OR\",\"REGEX\"
 
@@ -157,7 +157,7 @@ class RuleChangeRequest:
 
     @property
     def min_match(self):
-        """Gets the min_match of this RuleChangeRequest.
+        r"""Gets the min_match of this RuleChangeRequest.
 
         最小匹配次数
 
@@ -168,7 +168,7 @@ class RuleChangeRequest:
 
     @min_match.setter
     def min_match(self, min_match):
-        """Sets the min_match of this RuleChangeRequest.
+        r"""Sets the min_match of this RuleChangeRequest.
 
         最小匹配次数
 
@@ -179,7 +179,7 @@ class RuleChangeRequest:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this RuleChangeRequest.
+        r"""Gets the risk_level of this RuleChangeRequest.
 
         风险等级
 
@@ -190,7 +190,7 @@ class RuleChangeRequest:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this RuleChangeRequest.
+        r"""Sets the risk_level of this RuleChangeRequest.
 
         风险等级
 
@@ -201,7 +201,7 @@ class RuleChangeRequest:
 
     @property
     def rule_content(self):
-        """Gets the rule_content of this RuleChangeRequest.
+        r"""Gets the rule_content of this RuleChangeRequest.
 
         规则内容
 
@@ -212,7 +212,7 @@ class RuleChangeRequest:
 
     @rule_content.setter
     def rule_content(self, rule_content):
-        """Sets the rule_content of this RuleChangeRequest.
+        r"""Sets the rule_content of this RuleChangeRequest.
 
         规则内容
 
@@ -223,7 +223,7 @@ class RuleChangeRequest:
 
     @property
     def rule_desc(self):
-        """Gets the rule_desc of this RuleChangeRequest.
+        r"""Gets the rule_desc of this RuleChangeRequest.
 
         规则描述
 
@@ -234,7 +234,7 @@ class RuleChangeRequest:
 
     @rule_desc.setter
     def rule_desc(self, rule_desc):
-        """Sets the rule_desc of this RuleChangeRequest.
+        r"""Sets the rule_desc of this RuleChangeRequest.
 
         规则描述
 
@@ -245,7 +245,7 @@ class RuleChangeRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this RuleChangeRequest.
+        r"""Gets the rule_name of this RuleChangeRequest.
 
         规则名称
 
@@ -256,7 +256,7 @@ class RuleChangeRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this RuleChangeRequest.
+        r"""Sets the rule_name of this RuleChangeRequest.
 
         规则名称
 
@@ -267,7 +267,7 @@ class RuleChangeRequest:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this RuleChangeRequest.
+        r"""Gets the rule_type of this RuleChangeRequest.
 
         规则类型，关键字(KEYWORD)、正则表达式(REGEX)或自然语言(NLP)
 
@@ -278,7 +278,7 @@ class RuleChangeRequest:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this RuleChangeRequest.
+        r"""Sets the rule_type of this RuleChangeRequest.
 
         规则类型，关键字(KEYWORD)、正则表达式(REGEX)或自然语言(NLP)
 

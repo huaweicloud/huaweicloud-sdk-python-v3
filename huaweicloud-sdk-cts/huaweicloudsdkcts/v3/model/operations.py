@@ -29,7 +29,7 @@ class Operations:
     }
 
     def __init__(self, service_type=None, resource_type=None, trace_names=None):
-        """Operations
+        r"""Operations
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Operations:
 
     @property
     def service_type(self):
-        """Gets the service_type of this Operations.
+        r"""Gets the service_type of this Operations.
 
         标识云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。 已对接的云服务列表参见《云审计服务用户指南》“支持的服务”章节。
 
@@ -65,7 +65,7 @@ class Operations:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this Operations.
+        r"""Sets the service_type of this Operations.
 
         标识云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。 已对接的云服务列表参见《云审计服务用户指南》“支持的服务”章节。
 
@@ -76,7 +76,7 @@ class Operations:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Operations.
+        r"""Gets the resource_type of this Operations.
 
         标识资源类型。
 
@@ -87,7 +87,7 @@ class Operations:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Operations.
+        r"""Sets the resource_type of this Operations.
 
         标识资源类型。
 
@@ -98,7 +98,7 @@ class Operations:
 
     @property
     def trace_names(self):
-        """Gets the trace_names of this Operations.
+        r"""Gets the trace_names of this Operations.
 
         标识事件名称。
 
@@ -109,7 +109,7 @@ class Operations:
 
     @trace_names.setter
     def trace_names(self, trace_names):
-        """Sets the trace_names of this Operations.
+        r"""Sets the trace_names of this Operations.
 
         标识事件名称。
 

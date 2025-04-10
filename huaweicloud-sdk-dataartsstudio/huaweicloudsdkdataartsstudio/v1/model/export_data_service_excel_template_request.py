@@ -27,7 +27,7 @@ class ExportDataServiceExcelTemplateRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None):
-        """ExportDataServiceExcelTemplateRequest
+        r"""ExportDataServiceExcelTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportDataServiceExcelTemplateRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExportDataServiceExcelTemplateRequest.
+        r"""Gets the workspace of this ExportDataServiceExcelTemplateRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -60,7 +60,7 @@ class ExportDataServiceExcelTemplateRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExportDataServiceExcelTemplateRequest.
+        r"""Sets the workspace of this ExportDataServiceExcelTemplateRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -71,7 +71,7 @@ class ExportDataServiceExcelTemplateRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ExportDataServiceExcelTemplateRequest.
+        r"""Gets the dlm_type of this ExportDataServiceExcelTemplateRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -82,7 +82,7 @@ class ExportDataServiceExcelTemplateRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ExportDataServiceExcelTemplateRequest.
+        r"""Sets the dlm_type of this ExportDataServiceExcelTemplateRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 

@@ -23,7 +23,7 @@ class SupportVersion:
     }
 
     def __init__(self):
-        """SupportVersion
+        r"""SupportVersion
 
         The model defined in huaweicloud sdk
 

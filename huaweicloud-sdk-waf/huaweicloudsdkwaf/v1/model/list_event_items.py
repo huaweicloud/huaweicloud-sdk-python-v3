@@ -67,7 +67,7 @@ class ListEventItems:
     }
 
     def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, payload_location=None, action=None, request_line=None, headers=None, cookie=None, status=None, process_time=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None, request_body=None):
-        """ListEventItems
+        r"""ListEventItems
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ListEventItems:
 
     @property
     def id(self):
-        """Gets the id of this ListEventItems.
+        r"""Gets the id of this ListEventItems.
 
         事件id
 
@@ -201,7 +201,7 @@ class ListEventItems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEventItems.
+        r"""Sets the id of this ListEventItems.
 
         事件id
 
@@ -212,7 +212,7 @@ class ListEventItems:
 
     @property
     def time(self):
-        """Gets the time of this ListEventItems.
+        r"""Gets the time of this ListEventItems.
 
         攻击发生时的时间戳(毫秒)
 
@@ -223,7 +223,7 @@ class ListEventItems:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListEventItems.
+        r"""Sets the time of this ListEventItems.
 
         攻击发生时的时间戳(毫秒)
 
@@ -234,7 +234,7 @@ class ListEventItems:
 
     @property
     def policyid(self):
-        """Gets the policyid of this ListEventItems.
+        r"""Gets the policyid of this ListEventItems.
 
         策略id
 
@@ -245,7 +245,7 @@ class ListEventItems:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this ListEventItems.
+        r"""Sets the policyid of this ListEventItems.
 
         策略id
 
@@ -256,7 +256,7 @@ class ListEventItems:
 
     @property
     def sip(self):
-        """Gets the sip of this ListEventItems.
+        r"""Gets the sip of this ListEventItems.
 
         源ip，Web访问者的IP地址（攻击者IP地址）
 
@@ -267,7 +267,7 @@ class ListEventItems:
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this ListEventItems.
+        r"""Sets the sip of this ListEventItems.
 
         源ip，Web访问者的IP地址（攻击者IP地址）
 
@@ -278,7 +278,7 @@ class ListEventItems:
 
     @property
     def host(self):
-        """Gets the host of this ListEventItems.
+        r"""Gets the host of this ListEventItems.
 
         域名
 
@@ -289,7 +289,7 @@ class ListEventItems:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ListEventItems.
+        r"""Sets the host of this ListEventItems.
 
         域名
 
@@ -300,7 +300,7 @@ class ListEventItems:
 
     @property
     def url(self):
-        """Gets the url of this ListEventItems.
+        r"""Gets the url of this ListEventItems.
 
         攻击的url链接
 
@@ -311,7 +311,7 @@ class ListEventItems:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ListEventItems.
+        r"""Sets the url of this ListEventItems.
 
         攻击的url链接
 
@@ -322,7 +322,7 @@ class ListEventItems:
 
     @property
     def attack(self):
-        """Gets the attack of this ListEventItems.
+        r"""Gets the attack of this ListEventItems.
 
         攻击类型:   - vuln：其它攻击类型   - sqli： sql注入攻击   - lfi： 本地文件包含  - cmdi：命令注入攻击   - xss：XSS攻击   - robot：恶意爬虫   - rfi：远程文件包含   - custom_custom：精准防护   - webshell：网站木马   - custom_whiteblackip：黑白名单拦截   - custom_geoip：地理访问控制拦截   - antitamper：防篡改   - anticrawler：反爬虫    - leakage：网站信息防泄漏   - illegal：非法请求   - antiscan_high_freq_scan：高频扫描封禁   - antiscan_dir_traversal：目录遍历防护
 
@@ -333,7 +333,7 @@ class ListEventItems:
 
     @attack.setter
     def attack(self, attack):
-        """Sets the attack of this ListEventItems.
+        r"""Sets the attack of this ListEventItems.
 
         攻击类型:   - vuln：其它攻击类型   - sqli： sql注入攻击   - lfi： 本地文件包含  - cmdi：命令注入攻击   - xss：XSS攻击   - robot：恶意爬虫   - rfi：远程文件包含   - custom_custom：精准防护   - webshell：网站木马   - custom_whiteblackip：黑白名单拦截   - custom_geoip：地理访问控制拦截   - antitamper：防篡改   - anticrawler：反爬虫    - leakage：网站信息防泄漏   - illegal：非法请求   - antiscan_high_freq_scan：高频扫描封禁   - antiscan_dir_traversal：目录遍历防护
 
@@ -344,7 +344,7 @@ class ListEventItems:
 
     @property
     def rule(self):
-        """Gets the rule of this ListEventItems.
+        r"""Gets the rule of this ListEventItems.
 
         命中的规则id
 
@@ -355,7 +355,7 @@ class ListEventItems:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ListEventItems.
+        r"""Sets the rule of this ListEventItems.
 
         命中的规则id
 
@@ -366,7 +366,7 @@ class ListEventItems:
 
     @property
     def payload(self):
-        """Gets the payload of this ListEventItems.
+        r"""Gets the payload of this ListEventItems.
 
         命中的载荷
 
@@ -377,7 +377,7 @@ class ListEventItems:
 
     @payload.setter
     def payload(self, payload):
-        """Sets the payload of this ListEventItems.
+        r"""Sets the payload of this ListEventItems.
 
         命中的载荷
 
@@ -388,7 +388,7 @@ class ListEventItems:
 
     @property
     def payload_location(self):
-        """Gets the payload_location of this ListEventItems.
+        r"""Gets the payload_location of this ListEventItems.
 
         命中的载荷位置
 
@@ -399,7 +399,7 @@ class ListEventItems:
 
     @payload_location.setter
     def payload_location(self, payload_location):
-        """Sets the payload_location of this ListEventItems.
+        r"""Sets the payload_location of this ListEventItems.
 
         命中的载荷位置
 
@@ -410,7 +410,7 @@ class ListEventItems:
 
     @property
     def action(self):
-        """Gets the action of this ListEventItems.
+        r"""Gets the action of this ListEventItems.
 
         防护动作
 
@@ -421,7 +421,7 @@ class ListEventItems:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListEventItems.
+        r"""Sets the action of this ListEventItems.
 
         防护动作
 
@@ -432,7 +432,7 @@ class ListEventItems:
 
     @property
     def request_line(self):
-        """Gets the request_line of this ListEventItems.
+        r"""Gets the request_line of this ListEventItems.
 
         请求方法和路径
 
@@ -443,7 +443,7 @@ class ListEventItems:
 
     @request_line.setter
     def request_line(self, request_line):
-        """Sets the request_line of this ListEventItems.
+        r"""Sets the request_line of this ListEventItems.
 
         请求方法和路径
 
@@ -454,7 +454,7 @@ class ListEventItems:
 
     @property
     def headers(self):
-        """Gets the headers of this ListEventItems.
+        r"""Gets the headers of this ListEventItems.
 
         http请求header
 
@@ -465,7 +465,7 @@ class ListEventItems:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ListEventItems.
+        r"""Sets the headers of this ListEventItems.
 
         http请求header
 
@@ -476,7 +476,7 @@ class ListEventItems:
 
     @property
     def cookie(self):
-        """Gets the cookie of this ListEventItems.
+        r"""Gets the cookie of this ListEventItems.
 
         请求cookie
 
@@ -487,7 +487,7 @@ class ListEventItems:
 
     @cookie.setter
     def cookie(self, cookie):
-        """Sets the cookie of this ListEventItems.
+        r"""Sets the cookie of this ListEventItems.
 
         请求cookie
 
@@ -498,7 +498,7 @@ class ListEventItems:
 
     @property
     def status(self):
-        """Gets the status of this ListEventItems.
+        r"""Gets the status of this ListEventItems.
 
         响应码状态
 
@@ -509,7 +509,7 @@ class ListEventItems:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEventItems.
+        r"""Sets the status of this ListEventItems.
 
         响应码状态
 
@@ -520,7 +520,7 @@ class ListEventItems:
 
     @property
     def process_time(self):
-        """Gets the process_time of this ListEventItems.
+        r"""Gets the process_time of this ListEventItems.
 
         处理时长
 
@@ -531,7 +531,7 @@ class ListEventItems:
 
     @process_time.setter
     def process_time(self, process_time):
-        """Sets the process_time of this ListEventItems.
+        r"""Sets the process_time of this ListEventItems.
 
         处理时长
 
@@ -542,7 +542,7 @@ class ListEventItems:
 
     @property
     def region(self):
-        """Gets the region of this ListEventItems.
+        r"""Gets the region of this ListEventItems.
 
         地理位置
 
@@ -553,7 +553,7 @@ class ListEventItems:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListEventItems.
+        r"""Sets the region of this ListEventItems.
 
         地理位置
 
@@ -564,7 +564,7 @@ class ListEventItems:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListEventItems.
+        r"""Gets the host_id of this ListEventItems.
 
         域名id
 
@@ -575,7 +575,7 @@ class ListEventItems:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListEventItems.
+        r"""Sets the host_id of this ListEventItems.
 
         域名id
 
@@ -586,7 +586,7 @@ class ListEventItems:
 
     @property
     def response_time(self):
-        """Gets the response_time of this ListEventItems.
+        r"""Gets the response_time of this ListEventItems.
 
         响应时长
 
@@ -597,7 +597,7 @@ class ListEventItems:
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this ListEventItems.
+        r"""Sets the response_time of this ListEventItems.
 
         响应时长
 
@@ -608,7 +608,7 @@ class ListEventItems:
 
     @property
     def response_size(self):
-        """Gets the response_size of this ListEventItems.
+        r"""Gets the response_size of this ListEventItems.
 
         响应体大小
 
@@ -619,7 +619,7 @@ class ListEventItems:
 
     @response_size.setter
     def response_size(self, response_size):
-        """Sets the response_size of this ListEventItems.
+        r"""Sets the response_size of this ListEventItems.
 
         响应体大小
 
@@ -630,7 +630,7 @@ class ListEventItems:
 
     @property
     def response_body(self):
-        """Gets the response_body of this ListEventItems.
+        r"""Gets the response_body of this ListEventItems.
 
         响应体
 
@@ -641,7 +641,7 @@ class ListEventItems:
 
     @response_body.setter
     def response_body(self, response_body):
-        """Sets the response_body of this ListEventItems.
+        r"""Sets the response_body of this ListEventItems.
 
         响应体
 
@@ -652,7 +652,7 @@ class ListEventItems:
 
     @property
     def request_body(self):
-        """Gets the request_body of this ListEventItems.
+        r"""Gets the request_body of this ListEventItems.
 
         请求体
 
@@ -663,7 +663,7 @@ class ListEventItems:
 
     @request_body.setter
     def request_body(self, request_body):
-        """Sets the request_body of this ListEventItems.
+        r"""Sets the request_body of this ListEventItems.
 
         请求体
 

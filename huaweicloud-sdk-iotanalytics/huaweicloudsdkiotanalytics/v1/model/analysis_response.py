@@ -37,7 +37,7 @@ class AnalysisResponse:
     }
 
     def __init__(self, analysis_id=None, name=None, display_name=None, type=None, transform=None, aggregate=None, stream=None):
-        """AnalysisResponse
+        r"""AnalysisResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AnalysisResponse:
 
     @property
     def analysis_id(self):
-        """Gets the analysis_id of this AnalysisResponse.
+        r"""Gets the analysis_id of this AnalysisResponse.
 
         分析任务ID
 
@@ -96,7 +96,7 @@ class AnalysisResponse:
 
     @analysis_id.setter
     def analysis_id(self, analysis_id):
-        """Sets the analysis_id of this AnalysisResponse.
+        r"""Sets the analysis_id of this AnalysisResponse.
 
         分析任务ID
 
@@ -107,7 +107,7 @@ class AnalysisResponse:
 
     @property
     def name(self):
-        """Gets the name of this AnalysisResponse.
+        r"""Gets the name of this AnalysisResponse.
 
         分析任务名称
 
@@ -118,7 +118,7 @@ class AnalysisResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AnalysisResponse.
+        r"""Sets the name of this AnalysisResponse.
 
         分析任务名称
 
@@ -129,7 +129,7 @@ class AnalysisResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AnalysisResponse.
+        r"""Gets the display_name of this AnalysisResponse.
 
         分析任务显示名称
 
@@ -140,7 +140,7 @@ class AnalysisResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AnalysisResponse.
+        r"""Sets the display_name of this AnalysisResponse.
 
         分析任务显示名称
 
@@ -151,7 +151,7 @@ class AnalysisResponse:
 
     @property
     def type(self):
-        """Gets the type of this AnalysisResponse.
+        r"""Gets the type of this AnalysisResponse.
 
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
@@ -162,7 +162,7 @@ class AnalysisResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AnalysisResponse.
+        r"""Sets the type of this AnalysisResponse.
 
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
@@ -173,7 +173,7 @@ class AnalysisResponse:
 
     @property
     def transform(self):
-        """Gets the transform of this AnalysisResponse.
+        r"""Gets the transform of this AnalysisResponse.
 
         :return: The transform of this AnalysisResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformResponse`
@@ -182,7 +182,7 @@ class AnalysisResponse:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this AnalysisResponse.
+        r"""Sets the transform of this AnalysisResponse.
 
         :param transform: The transform of this AnalysisResponse.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformResponse`
@@ -191,7 +191,7 @@ class AnalysisResponse:
 
     @property
     def aggregate(self):
-        """Gets the aggregate of this AnalysisResponse.
+        r"""Gets the aggregate of this AnalysisResponse.
 
         :return: The aggregate of this AnalysisResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateResponse`
@@ -200,7 +200,7 @@ class AnalysisResponse:
 
     @aggregate.setter
     def aggregate(self, aggregate):
-        """Sets the aggregate of this AnalysisResponse.
+        r"""Sets the aggregate of this AnalysisResponse.
 
         :param aggregate: The aggregate of this AnalysisResponse.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateResponse`
@@ -209,7 +209,7 @@ class AnalysisResponse:
 
     @property
     def stream(self):
-        """Gets the stream of this AnalysisResponse.
+        r"""Gets the stream of this AnalysisResponse.
 
         :return: The stream of this AnalysisResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamResponse`
@@ -218,7 +218,7 @@ class AnalysisResponse:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this AnalysisResponse.
+        r"""Sets the stream of this AnalysisResponse.
 
         :param stream: The stream of this AnalysisResponse.
         :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamResponse`

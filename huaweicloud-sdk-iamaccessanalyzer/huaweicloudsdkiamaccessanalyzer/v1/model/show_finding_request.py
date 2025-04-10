@@ -27,7 +27,7 @@ class ShowFindingRequest:
     }
 
     def __init__(self, analyzer_id=None, finding_id=None):
-        """ShowFindingRequest
+        r"""ShowFindingRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowFindingRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ShowFindingRequest.
+        r"""Gets the analyzer_id of this ShowFindingRequest.
 
         分析器的唯一标识符。
 
@@ -59,7 +59,7 @@ class ShowFindingRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ShowFindingRequest.
+        r"""Sets the analyzer_id of this ShowFindingRequest.
 
         分析器的唯一标识符。
 
@@ -70,7 +70,7 @@ class ShowFindingRequest:
 
     @property
     def finding_id(self):
-        """Gets the finding_id of this ShowFindingRequest.
+        r"""Gets the finding_id of this ShowFindingRequest.
 
         访问分析结果的唯一标识符。
 
@@ -81,7 +81,7 @@ class ShowFindingRequest:
 
     @finding_id.setter
     def finding_id(self, finding_id):
-        """Sets the finding_id of this ShowFindingRequest.
+        r"""Sets the finding_id of this ShowFindingRequest.
 
         访问分析结果的唯一标识符。
 

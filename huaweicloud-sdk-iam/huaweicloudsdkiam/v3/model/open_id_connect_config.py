@@ -39,7 +39,7 @@ class OpenIdConnectConfig:
     }
 
     def __init__(self, access_mode=None, idp_url=None, client_id=None, authorization_endpoint=None, scope=None, response_type=None, response_mode=None, signing_key=None):
-        """OpenIdConnectConfig
+        r"""OpenIdConnectConfig
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class OpenIdConnectConfig:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this OpenIdConnectConfig.
+        r"""Gets the access_mode of this OpenIdConnectConfig.
 
         访问方式: program_console: 支持编程访问和管理控制台访问方式; program: 支持编程访问方式
 
@@ -95,7 +95,7 @@ class OpenIdConnectConfig:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this OpenIdConnectConfig.
+        r"""Sets the access_mode of this OpenIdConnectConfig.
 
         访问方式: program_console: 支持编程访问和管理控制台访问方式; program: 支持编程访问方式
 
@@ -106,7 +106,7 @@ class OpenIdConnectConfig:
 
     @property
     def idp_url(self):
-        """Gets the idp_url of this OpenIdConnectConfig.
+        r"""Gets the idp_url of this OpenIdConnectConfig.
 
         OpenID Connect身份提供商标识, 对应ID token 中 iss
 
@@ -117,7 +117,7 @@ class OpenIdConnectConfig:
 
     @idp_url.setter
     def idp_url(self, idp_url):
-        """Sets the idp_url of this OpenIdConnectConfig.
+        r"""Sets the idp_url of this OpenIdConnectConfig.
 
         OpenID Connect身份提供商标识, 对应ID token 中 iss
 
@@ -128,7 +128,7 @@ class OpenIdConnectConfig:
 
     @property
     def client_id(self):
-        """Gets the client_id of this OpenIdConnectConfig.
+        r"""Gets the client_id of this OpenIdConnectConfig.
 
         在OpenID Connect身份提供商注册的客户端ID
 
@@ -139,7 +139,7 @@ class OpenIdConnectConfig:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this OpenIdConnectConfig.
+        r"""Sets the client_id of this OpenIdConnectConfig.
 
         在OpenID Connect身份提供商注册的客户端ID
 
@@ -150,7 +150,7 @@ class OpenIdConnectConfig:
 
     @property
     def authorization_endpoint(self):
-        """Gets the authorization_endpoint of this OpenIdConnectConfig.
+        r"""Gets the authorization_endpoint of this OpenIdConnectConfig.
 
         OpenID Connect身份提供商授权地址; 编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
 
@@ -161,7 +161,7 @@ class OpenIdConnectConfig:
 
     @authorization_endpoint.setter
     def authorization_endpoint(self, authorization_endpoint):
-        """Sets the authorization_endpoint of this OpenIdConnectConfig.
+        r"""Sets the authorization_endpoint of this OpenIdConnectConfig.
 
         OpenID Connect身份提供商授权地址; 编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
 
@@ -172,7 +172,7 @@ class OpenIdConnectConfig:
 
     @property
     def scope(self):
-        """Gets the scope of this OpenIdConnectConfig.
+        r"""Gets the scope of this OpenIdConnectConfig.
 
         授权请求信息范围，编程访问和管理控制台访问方式必选，编程访问方式不可选，可选值：openid 、email、profile，IDP自定义scope，字符集a-zA-Z_0-9 ，1-10个可选值组合空格分割，至少包括openid，顺序无关，总长度最长255字符，例如：\"openid\"、\"openid email\"、\"openid profile\" 、\"openid email profile\"
 
@@ -183,7 +183,7 @@ class OpenIdConnectConfig:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this OpenIdConnectConfig.
+        r"""Sets the scope of this OpenIdConnectConfig.
 
         授权请求信息范围，编程访问和管理控制台访问方式必选，编程访问方式不可选，可选值：openid 、email、profile，IDP自定义scope，字符集a-zA-Z_0-9 ，1-10个可选值组合空格分割，至少包括openid，顺序无关，总长度最长255字符，例如：\"openid\"、\"openid email\"、\"openid profile\" 、\"openid email profile\"
 
@@ -194,7 +194,7 @@ class OpenIdConnectConfig:
 
     @property
     def response_type(self):
-        """Gets the response_type of this OpenIdConnectConfig.
+        r"""Gets the response_type of this OpenIdConnectConfig.
 
         授权请求返回的类型；id_token ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空 
 
@@ -205,7 +205,7 @@ class OpenIdConnectConfig:
 
     @response_type.setter
     def response_type(self, response_type):
-        """Sets the response_type of this OpenIdConnectConfig.
+        r"""Sets the response_type of this OpenIdConnectConfig.
 
         授权请求返回的类型；id_token ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空 
 
@@ -216,7 +216,7 @@ class OpenIdConnectConfig:
 
     @property
     def response_mode(self):
-        """Gets the response_mode of this OpenIdConnectConfig.
+        r"""Gets the response_mode of this OpenIdConnectConfig.
 
         授权请求返回方式， form_post 或 fragment ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
 
@@ -227,7 +227,7 @@ class OpenIdConnectConfig:
 
     @response_mode.setter
     def response_mode(self, response_mode):
-        """Sets the response_mode of this OpenIdConnectConfig.
+        r"""Sets the response_mode of this OpenIdConnectConfig.
 
         授权请求返回方式， form_post 或 fragment ；编程访问和管理控制台访问方式值不为空，编程访问方式值可为空
 
@@ -238,7 +238,7 @@ class OpenIdConnectConfig:
 
     @property
     def signing_key(self):
-        """Gets the signing_key of this OpenIdConnectConfig.
+        r"""Gets the signing_key of this OpenIdConnectConfig.
 
         OpenID Connect身份提供商ID Token签名的公钥
 
@@ -249,7 +249,7 @@ class OpenIdConnectConfig:
 
     @signing_key.setter
     def signing_key(self, signing_key):
-        """Sets the signing_key of this OpenIdConnectConfig.
+        r"""Sets the signing_key of this OpenIdConnectConfig.
 
         OpenID Connect身份提供商ID Token签名的公钥
 

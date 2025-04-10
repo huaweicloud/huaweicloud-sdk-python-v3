@@ -24,7 +24,7 @@ class DeleteHttpReferenceTableResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttpReferenceTableResponse
+        r"""DeleteHttpReferenceTableResponse
 
         The model defined in huaweicloud sdk
 

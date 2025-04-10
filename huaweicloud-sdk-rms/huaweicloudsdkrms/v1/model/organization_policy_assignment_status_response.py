@@ -37,7 +37,7 @@ class OrganizationPolicyAssignmentStatusResponse:
     }
 
     def __init__(self, organization_policy_assignment_id=None, organization_policy_assignment_name=None, organization_policy_assignment_status=None, error_code=None, error_message=None, created_at=None, updated_at=None):
-        """OrganizationPolicyAssignmentStatusResponse
+        r"""OrganizationPolicyAssignmentStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def organization_policy_assignment_id(self):
-        """Gets the organization_policy_assignment_id of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the organization_policy_assignment_id of this OrganizationPolicyAssignmentStatusResponse.
 
         组织合规规则ID。
 
@@ -96,7 +96,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @organization_policy_assignment_id.setter
     def organization_policy_assignment_id(self, organization_policy_assignment_id):
-        """Sets the organization_policy_assignment_id of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the organization_policy_assignment_id of this OrganizationPolicyAssignmentStatusResponse.
 
         组织合规规则ID。
 
@@ -107,7 +107,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def organization_policy_assignment_name(self):
-        """Gets the organization_policy_assignment_name of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the organization_policy_assignment_name of this OrganizationPolicyAssignmentStatusResponse.
 
         组织合规规则名称。
 
@@ -118,7 +118,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @organization_policy_assignment_name.setter
     def organization_policy_assignment_name(self, organization_policy_assignment_name):
-        """Sets the organization_policy_assignment_name of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the organization_policy_assignment_name of this OrganizationPolicyAssignmentStatusResponse.
 
         组织合规规则名称。
 
@@ -129,7 +129,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def organization_policy_assignment_status(self):
-        """Gets the organization_policy_assignment_status of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the organization_policy_assignment_status of this OrganizationPolicyAssignmentStatusResponse.
 
         组织合规规则部署状态。
 
@@ -140,7 +140,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @organization_policy_assignment_status.setter
     def organization_policy_assignment_status(self, organization_policy_assignment_status):
-        """Sets the organization_policy_assignment_status of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the organization_policy_assignment_status of this OrganizationPolicyAssignmentStatusResponse.
 
         组织合规规则部署状态。
 
@@ -151,7 +151,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the error_code of this OrganizationPolicyAssignmentStatusResponse.
 
         当创建或更新组织合规规则失败时错误码。
 
@@ -162,7 +162,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the error_code of this OrganizationPolicyAssignmentStatusResponse.
 
         当创建或更新组织合规规则失败时错误码。
 
@@ -173,7 +173,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def error_message(self):
-        """Gets the error_message of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the error_message of this OrganizationPolicyAssignmentStatusResponse.
 
         当创建或更新组织合规规则失败时错误信息。
 
@@ -184,7 +184,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the error_message of this OrganizationPolicyAssignmentStatusResponse.
 
         当创建或更新组织合规规则失败时错误信息。
 
@@ -195,7 +195,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the created_at of this OrganizationPolicyAssignmentStatusResponse.
 
         创建时间。
 
@@ -206,7 +206,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the created_at of this OrganizationPolicyAssignmentStatusResponse.
 
         创建时间。
 
@@ -217,7 +217,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Gets the updated_at of this OrganizationPolicyAssignmentStatusResponse.
 
         更新时间。
 
@@ -228,7 +228,7 @@ class OrganizationPolicyAssignmentStatusResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this OrganizationPolicyAssignmentStatusResponse.
+        r"""Sets the updated_at of this OrganizationPolicyAssignmentStatusResponse.
 
         更新时间。
 

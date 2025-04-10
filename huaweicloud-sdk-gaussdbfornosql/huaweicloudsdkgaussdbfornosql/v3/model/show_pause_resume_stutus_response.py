@@ -34,7 +34,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
     }
 
     def __init__(self, master_instance_id=None, slave_instance_id=None, status=None, data_sync_indicators=None, rto_and_rpo_indicators=None):
-        """ShowPauseResumeStutusResponse
+        r"""ShowPauseResumeStutusResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @property
     def master_instance_id(self):
-        """Gets the master_instance_id of this ShowPauseResumeStutusResponse.
+        r"""Gets the master_instance_id of this ShowPauseResumeStutusResponse.
 
         主实例id
 
@@ -83,7 +83,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @master_instance_id.setter
     def master_instance_id(self, master_instance_id):
-        """Sets the master_instance_id of this ShowPauseResumeStutusResponse.
+        r"""Sets the master_instance_id of this ShowPauseResumeStutusResponse.
 
         主实例id
 
@@ -94,7 +94,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @property
     def slave_instance_id(self):
-        """Gets the slave_instance_id of this ShowPauseResumeStutusResponse.
+        r"""Gets the slave_instance_id of this ShowPauseResumeStutusResponse.
 
         备实例id
 
@@ -105,7 +105,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @slave_instance_id.setter
     def slave_instance_id(self, slave_instance_id):
-        """Sets the slave_instance_id of this ShowPauseResumeStutusResponse.
+        r"""Sets the slave_instance_id of this ShowPauseResumeStutusResponse.
 
         备实例id
 
@@ -116,7 +116,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPauseResumeStutusResponse.
+        r"""Gets the status of this ShowPauseResumeStutusResponse.
 
         容灾实例数据同步状态 - NA：实例尚未搭建容灾关系 - NEW：尚未启动的数据同步状态 - SYNCING：数据同步正常进行中 - SUSPENDING：正在暂停数据同步 - SUSPENDED：数据同步已暂停 - RECOVERYING：正在恢复数据同步
 
@@ -127,7 +127,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPauseResumeStutusResponse.
+        r"""Sets the status of this ShowPauseResumeStutusResponse.
 
         容灾实例数据同步状态 - NA：实例尚未搭建容灾关系 - NEW：尚未启动的数据同步状态 - SYNCING：数据同步正常进行中 - SUSPENDING：正在暂停数据同步 - SUSPENDED：数据同步已暂停 - RECOVERYING：正在恢复数据同步
 
@@ -138,7 +138,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @property
     def data_sync_indicators(self):
-        """Gets the data_sync_indicators of this ShowPauseResumeStutusResponse.
+        r"""Gets the data_sync_indicators of this ShowPauseResumeStutusResponse.
 
         :return: The data_sync_indicators of this ShowPauseResumeStutusResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSQLDrDateSyncIndicators`
@@ -147,7 +147,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @data_sync_indicators.setter
     def data_sync_indicators(self, data_sync_indicators):
-        """Sets the data_sync_indicators of this ShowPauseResumeStutusResponse.
+        r"""Sets the data_sync_indicators of this ShowPauseResumeStutusResponse.
 
         :param data_sync_indicators: The data_sync_indicators of this ShowPauseResumeStutusResponse.
         :type data_sync_indicators: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSQLDrDateSyncIndicators`
@@ -156,7 +156,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @property
     def rto_and_rpo_indicators(self):
-        """Gets the rto_and_rpo_indicators of this ShowPauseResumeStutusResponse.
+        r"""Gets the rto_and_rpo_indicators of this ShowPauseResumeStutusResponse.
 
         切换或倒换RPO和RTO值，仅当请求实例id为主实例时有值
 
@@ -167,7 +167,7 @@ class ShowPauseResumeStutusResponse(SdkResponse):
 
     @rto_and_rpo_indicators.setter
     def rto_and_rpo_indicators(self, rto_and_rpo_indicators):
-        """Sets the rto_and_rpo_indicators of this ShowPauseResumeStutusResponse.
+        r"""Sets the rto_and_rpo_indicators of this ShowPauseResumeStutusResponse.
 
         切换或倒换RPO和RTO值，仅当请求实例id为主实例时有值
 

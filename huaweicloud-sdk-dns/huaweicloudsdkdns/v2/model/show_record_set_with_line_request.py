@@ -27,7 +27,7 @@ class ShowRecordSetWithLineRequest:
     }
 
     def __init__(self, zone_id=None, recordset_id=None):
-        """ShowRecordSetWithLineRequest
+        r"""ShowRecordSetWithLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowRecordSetWithLineRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ShowRecordSetWithLineRequest.
+        r"""Gets the zone_id of this ShowRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -59,7 +59,7 @@ class ShowRecordSetWithLineRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ShowRecordSetWithLineRequest.
+        r"""Sets the zone_id of this ShowRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -70,7 +70,7 @@ class ShowRecordSetWithLineRequest:
 
     @property
     def recordset_id(self):
-        """Gets the recordset_id of this ShowRecordSetWithLineRequest.
+        r"""Gets the recordset_id of this ShowRecordSetWithLineRequest.
 
         待查询recordset的ID信息。
 
@@ -81,7 +81,7 @@ class ShowRecordSetWithLineRequest:
 
     @recordset_id.setter
     def recordset_id(self, recordset_id):
-        """Sets the recordset_id of this ShowRecordSetWithLineRequest.
+        r"""Sets the recordset_id of this ShowRecordSetWithLineRequest.
 
         待查询recordset的ID信息。
 

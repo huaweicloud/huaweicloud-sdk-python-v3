@@ -27,7 +27,7 @@ class DeleteDigitalHumanBusinessCardRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None):
-        """DeleteDigitalHumanBusinessCardRequest
+        r"""DeleteDigitalHumanBusinessCardRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDigitalHumanBusinessCardRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDigitalHumanBusinessCardRequest.
+        r"""Gets the job_id of this DeleteDigitalHumanBusinessCardRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class DeleteDigitalHumanBusinessCardRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDigitalHumanBusinessCardRequest.
+        r"""Sets the job_id of this DeleteDigitalHumanBusinessCardRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class DeleteDigitalHumanBusinessCardRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteDigitalHumanBusinessCardRequest.
+        r"""Gets the x_app_user_id of this DeleteDigitalHumanBusinessCardRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class DeleteDigitalHumanBusinessCardRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteDigitalHumanBusinessCardRequest.
+        r"""Sets the x_app_user_id of this DeleteDigitalHumanBusinessCardRequest.
 
         第三方用户ID。不允许输入中文。
 

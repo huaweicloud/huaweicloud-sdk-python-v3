@@ -29,7 +29,7 @@ class VideoSharp:
     }
 
     def __init__(self, name=None, execution_order=None, amount=None):
-        """VideoSharp
+        r"""VideoSharp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VideoSharp:
 
     @property
     def name(self):
-        """Gets the name of this VideoSharp.
+        r"""Gets the name of this VideoSharp.
 
         锐化算法名称\"hw-sharp\"。 
 
@@ -68,7 +68,7 @@ class VideoSharp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VideoSharp.
+        r"""Sets the name of this VideoSharp.
 
         锐化算法名称\"hw-sharp\"。 
 
@@ -79,7 +79,7 @@ class VideoSharp:
 
     @property
     def execution_order(self):
-        """Gets the execution_order of this VideoSharp.
+        r"""Gets the execution_order of this VideoSharp.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -90,7 +90,7 @@ class VideoSharp:
 
     @execution_order.setter
     def execution_order(self, execution_order):
-        """Sets the execution_order of this VideoSharp.
+        r"""Sets the execution_order of this VideoSharp.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -101,7 +101,7 @@ class VideoSharp:
 
     @property
     def amount(self):
-        """Gets the amount of this VideoSharp.
+        r"""Gets the amount of this VideoSharp.
 
         锐化的程度， 值越大，锐化越强。 
 
@@ -112,7 +112,7 @@ class VideoSharp:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this VideoSharp.
+        r"""Sets the amount of this VideoSharp.
 
         锐化的程度， 值越大，锐化越强。 
 

@@ -29,7 +29,7 @@ class BatchUpdatePermissionLevelRequestBody:
     }
 
     def __init__(self, project_id=None, permission_level=None, application_ids=None):
-        """BatchUpdatePermissionLevelRequestBody
+        r"""BatchUpdatePermissionLevelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BatchUpdatePermissionLevelRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchUpdatePermissionLevelRequestBody.
+        r"""Gets the project_id of this BatchUpdatePermissionLevelRequestBody.
 
         项目id
 
@@ -65,7 +65,7 @@ class BatchUpdatePermissionLevelRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchUpdatePermissionLevelRequestBody.
+        r"""Sets the project_id of this BatchUpdatePermissionLevelRequestBody.
 
         项目id
 
@@ -76,7 +76,7 @@ class BatchUpdatePermissionLevelRequestBody:
 
     @property
     def permission_level(self):
-        """Gets the permission_level of this BatchUpdatePermissionLevelRequestBody.
+        r"""Gets the permission_level of this BatchUpdatePermissionLevelRequestBody.
 
         应用鉴权级别，instance：实例级；project：项目级
 
@@ -87,7 +87,7 @@ class BatchUpdatePermissionLevelRequestBody:
 
     @permission_level.setter
     def permission_level(self, permission_level):
-        """Sets the permission_level of this BatchUpdatePermissionLevelRequestBody.
+        r"""Sets the permission_level of this BatchUpdatePermissionLevelRequestBody.
 
         应用鉴权级别，instance：实例级；project：项目级
 
@@ -98,7 +98,7 @@ class BatchUpdatePermissionLevelRequestBody:
 
     @property
     def application_ids(self):
-        """Gets the application_ids of this BatchUpdatePermissionLevelRequestBody.
+        r"""Gets the application_ids of this BatchUpdatePermissionLevelRequestBody.
 
         应用id列表
 
@@ -109,7 +109,7 @@ class BatchUpdatePermissionLevelRequestBody:
 
     @application_ids.setter
     def application_ids(self, application_ids):
-        """Sets the application_ids of this BatchUpdatePermissionLevelRequestBody.
+        r"""Sets the application_ids of this BatchUpdatePermissionLevelRequestBody.
 
         应用id列表
 

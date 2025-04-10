@@ -27,7 +27,7 @@ class PolicyDelta:
     }
 
     def __init__(self, policy=None, change_type=None):
-        """PolicyDelta
+        r"""PolicyDelta
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyDelta:
 
     @property
     def policy(self):
-        """Gets the policy of this PolicyDelta.
+        r"""Gets the policy of this PolicyDelta.
 
         :return: The policy of this PolicyDelta.
         :rtype: :class:`huaweicloudsdklakeformation.v1.Policy`
@@ -59,7 +59,7 @@ class PolicyDelta:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this PolicyDelta.
+        r"""Sets the policy of this PolicyDelta.
 
         :param policy: The policy of this PolicyDelta.
         :type policy: :class:`huaweicloudsdklakeformation.v1.Policy`
@@ -68,7 +68,7 @@ class PolicyDelta:
 
     @property
     def change_type(self):
-        """Gets the change_type of this PolicyDelta.
+        r"""Gets the change_type of this PolicyDelta.
 
         变更类型
 
@@ -79,7 +79,7 @@ class PolicyDelta:
 
     @change_type.setter
     def change_type(self, change_type):
-        """Sets the change_type of this PolicyDelta.
+        r"""Sets the change_type of this PolicyDelta.
 
         变更类型
 

@@ -24,7 +24,7 @@ class BatchDeletePartitionedStatisticsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeletePartitionedStatisticsResponse
+        r"""BatchDeletePartitionedStatisticsResponse
 
         The model defined in huaweicloud sdk
 

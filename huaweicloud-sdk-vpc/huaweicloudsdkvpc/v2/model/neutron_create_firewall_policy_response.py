@@ -26,7 +26,7 @@ class NeutronCreateFirewallPolicyResponse(SdkResponse):
     }
 
     def __init__(self, firewall_policy=None):
-        """NeutronCreateFirewallPolicyResponse
+        r"""NeutronCreateFirewallPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NeutronCreateFirewallPolicyResponse(SdkResponse):
 
     @property
     def firewall_policy(self):
-        """Gets the firewall_policy of this NeutronCreateFirewallPolicyResponse.
+        r"""Gets the firewall_policy of this NeutronCreateFirewallPolicyResponse.
 
         :return: The firewall_policy of this NeutronCreateFirewallPolicyResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`
@@ -53,7 +53,7 @@ class NeutronCreateFirewallPolicyResponse(SdkResponse):
 
     @firewall_policy.setter
     def firewall_policy(self, firewall_policy):
-        """Sets the firewall_policy of this NeutronCreateFirewallPolicyResponse.
+        r"""Sets the firewall_policy of this NeutronCreateFirewallPolicyResponse.
 
         :param firewall_policy: The firewall_policy of this NeutronCreateFirewallPolicyResponse.
         :type firewall_policy: :class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`

@@ -51,7 +51,7 @@ class TestPlanIssueDetail:
     }
 
     def __init__(self, project_id=None, plan_id=None, workitem_id=None, parent_issue=None, start_date=None, end_date=None, name=None, region_id=None, owner=None, severity=None, status=None, tracker=None, iteration=None, module=None):
-        """TestPlanIssueDetail
+        r"""TestPlanIssueDetail
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class TestPlanIssueDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TestPlanIssueDetail.
+        r"""Gets the project_id of this TestPlanIssueDetail.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -145,7 +145,7 @@ class TestPlanIssueDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TestPlanIssueDetail.
+        r"""Sets the project_id of this TestPlanIssueDetail.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -156,7 +156,7 @@ class TestPlanIssueDetail:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestPlanIssueDetail.
+        r"""Gets the plan_id of this TestPlanIssueDetail.
 
         测试计划id
 
@@ -167,7 +167,7 @@ class TestPlanIssueDetail:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestPlanIssueDetail.
+        r"""Sets the plan_id of this TestPlanIssueDetail.
 
         测试计划id
 
@@ -178,7 +178,7 @@ class TestPlanIssueDetail:
 
     @property
     def workitem_id(self):
-        """Gets the workitem_id of this TestPlanIssueDetail.
+        r"""Gets the workitem_id of this TestPlanIssueDetail.
 
         工作项id
 
@@ -189,7 +189,7 @@ class TestPlanIssueDetail:
 
     @workitem_id.setter
     def workitem_id(self, workitem_id):
-        """Sets the workitem_id of this TestPlanIssueDetail.
+        r"""Sets the workitem_id of this TestPlanIssueDetail.
 
         工作项id
 
@@ -200,7 +200,7 @@ class TestPlanIssueDetail:
 
     @property
     def parent_issue(self):
-        """Gets the parent_issue of this TestPlanIssueDetail.
+        r"""Gets the parent_issue of this TestPlanIssueDetail.
 
         父工作项
 
@@ -211,7 +211,7 @@ class TestPlanIssueDetail:
 
     @parent_issue.setter
     def parent_issue(self, parent_issue):
-        """Sets the parent_issue of this TestPlanIssueDetail.
+        r"""Sets the parent_issue of this TestPlanIssueDetail.
 
         父工作项
 
@@ -222,7 +222,7 @@ class TestPlanIssueDetail:
 
     @property
     def start_date(self):
-        """Gets the start_date of this TestPlanIssueDetail.
+        r"""Gets the start_date of this TestPlanIssueDetail.
 
         预计开始日期
 
@@ -233,7 +233,7 @@ class TestPlanIssueDetail:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this TestPlanIssueDetail.
+        r"""Sets the start_date of this TestPlanIssueDetail.
 
         预计开始日期
 
@@ -244,7 +244,7 @@ class TestPlanIssueDetail:
 
     @property
     def end_date(self):
-        """Gets the end_date of this TestPlanIssueDetail.
+        r"""Gets the end_date of this TestPlanIssueDetail.
 
         预计结束日期
 
@@ -255,7 +255,7 @@ class TestPlanIssueDetail:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this TestPlanIssueDetail.
+        r"""Sets the end_date of this TestPlanIssueDetail.
 
         预计结束日期
 
@@ -266,7 +266,7 @@ class TestPlanIssueDetail:
 
     @property
     def name(self):
-        """Gets the name of this TestPlanIssueDetail.
+        r"""Gets the name of this TestPlanIssueDetail.
 
         工作项名称
 
@@ -277,7 +277,7 @@ class TestPlanIssueDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestPlanIssueDetail.
+        r"""Sets the name of this TestPlanIssueDetail.
 
         工作项名称
 
@@ -288,7 +288,7 @@ class TestPlanIssueDetail:
 
     @property
     def region_id(self):
-        """Gets the region_id of this TestPlanIssueDetail.
+        r"""Gets the region_id of this TestPlanIssueDetail.
 
         region信息
 
@@ -299,7 +299,7 @@ class TestPlanIssueDetail:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this TestPlanIssueDetail.
+        r"""Sets the region_id of this TestPlanIssueDetail.
 
         region信息
 
@@ -310,7 +310,7 @@ class TestPlanIssueDetail:
 
     @property
     def owner(self):
-        """Gets the owner of this TestPlanIssueDetail.
+        r"""Gets the owner of this TestPlanIssueDetail.
 
         :return: The owner of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -319,7 +319,7 @@ class TestPlanIssueDetail:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestPlanIssueDetail.
+        r"""Sets the owner of this TestPlanIssueDetail.
 
         :param owner: The owner of this TestPlanIssueDetail.
         :type owner: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -328,7 +328,7 @@ class TestPlanIssueDetail:
 
     @property
     def severity(self):
-        """Gets the severity of this TestPlanIssueDetail.
+        r"""Gets the severity of this TestPlanIssueDetail.
 
         :return: The severity of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -337,7 +337,7 @@ class TestPlanIssueDetail:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this TestPlanIssueDetail.
+        r"""Sets the severity of this TestPlanIssueDetail.
 
         :param severity: The severity of this TestPlanIssueDetail.
         :type severity: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -346,7 +346,7 @@ class TestPlanIssueDetail:
 
     @property
     def status(self):
-        """Gets the status of this TestPlanIssueDetail.
+        r"""Gets the status of this TestPlanIssueDetail.
 
         :return: The status of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -355,7 +355,7 @@ class TestPlanIssueDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TestPlanIssueDetail.
+        r"""Sets the status of this TestPlanIssueDetail.
 
         :param status: The status of this TestPlanIssueDetail.
         :type status: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -364,7 +364,7 @@ class TestPlanIssueDetail:
 
     @property
     def tracker(self):
-        """Gets the tracker of this TestPlanIssueDetail.
+        r"""Gets the tracker of this TestPlanIssueDetail.
 
         :return: The tracker of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -373,7 +373,7 @@ class TestPlanIssueDetail:
 
     @tracker.setter
     def tracker(self, tracker):
-        """Sets the tracker of this TestPlanIssueDetail.
+        r"""Sets the tracker of this TestPlanIssueDetail.
 
         :param tracker: The tracker of this TestPlanIssueDetail.
         :type tracker: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -382,7 +382,7 @@ class TestPlanIssueDetail:
 
     @property
     def iteration(self):
-        """Gets the iteration of this TestPlanIssueDetail.
+        r"""Gets the iteration of this TestPlanIssueDetail.
 
         :return: The iteration of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -391,7 +391,7 @@ class TestPlanIssueDetail:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this TestPlanIssueDetail.
+        r"""Sets the iteration of this TestPlanIssueDetail.
 
         :param iteration: The iteration of this TestPlanIssueDetail.
         :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -400,7 +400,7 @@ class TestPlanIssueDetail:
 
     @property
     def module(self):
-        """Gets the module of this TestPlanIssueDetail.
+        r"""Gets the module of this TestPlanIssueDetail.
 
         :return: The module of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -409,7 +409,7 @@ class TestPlanIssueDetail:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this TestPlanIssueDetail.
+        r"""Sets the module of this TestPlanIssueDetail.
 
         :param module: The module of this TestPlanIssueDetail.
         :type module: :class:`huaweicloudsdkcloudtest.v1.NameAndId`

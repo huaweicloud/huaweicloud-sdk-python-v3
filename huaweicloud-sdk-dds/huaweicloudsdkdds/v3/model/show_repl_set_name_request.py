@@ -25,7 +25,7 @@ class ShowReplSetNameRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowReplSetNameRequest
+        r"""ShowReplSetNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowReplSetNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowReplSetNameRequest.
+        r"""Gets the instance_id of this ShowReplSetNameRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -53,7 +53,7 @@ class ShowReplSetNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowReplSetNameRequest.
+        r"""Sets the instance_id of this ShowReplSetNameRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 

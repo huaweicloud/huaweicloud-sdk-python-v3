@@ -31,7 +31,7 @@ class UpdateDocRequestDto:
     }
 
     def __init__(self, document_id=None, title=None, instance_id=None, modifier=None):
-        """UpdateDocRequestDto
+        r"""UpdateDocRequestDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateDocRequestDto:
 
     @property
     def document_id(self):
-        """Gets the document_id of this UpdateDocRequestDto.
+        r"""Gets the document_id of this UpdateDocRequestDto.
 
         **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -75,7 +75,7 @@ class UpdateDocRequestDto:
 
     @document_id.setter
     def document_id(self, document_id):
-        """Sets the document_id of this UpdateDocRequestDto.
+        r"""Sets the document_id of this UpdateDocRequestDto.
 
         **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -86,7 +86,7 @@ class UpdateDocRequestDto:
 
     @property
     def title(self):
-        """Gets the title of this UpdateDocRequestDto.
+        r"""Gets the title of this UpdateDocRequestDto.
 
         **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -97,7 +97,7 @@ class UpdateDocRequestDto:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this UpdateDocRequestDto.
+        r"""Sets the title of this UpdateDocRequestDto.
 
         **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -108,7 +108,7 @@ class UpdateDocRequestDto:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDocRequestDto.
+        r"""Gets the instance_id of this UpdateDocRequestDto.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -119,7 +119,7 @@ class UpdateDocRequestDto:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDocRequestDto.
+        r"""Sets the instance_id of this UpdateDocRequestDto.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -130,7 +130,7 @@ class UpdateDocRequestDto:
 
     @property
     def modifier(self):
-        """Gets the modifier of this UpdateDocRequestDto.
+        r"""Gets the modifier of this UpdateDocRequestDto.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -141,7 +141,7 @@ class UpdateDocRequestDto:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this UpdateDocRequestDto.
+        r"""Sets the modifier of this UpdateDocRequestDto.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 

@@ -27,7 +27,7 @@ class ShowDetailOfChannelRequest:
     }
 
     def __init__(self, channel_id=None, enterprise_project_id=None):
-        """ShowDetailOfChannelRequest
+        r"""ShowDetailOfChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDetailOfChannelRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ShowDetailOfChannelRequest.
+        r"""Gets the channel_id of this ShowDetailOfChannelRequest.
 
         指定查询的事件通道ID
 
@@ -60,7 +60,7 @@ class ShowDetailOfChannelRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ShowDetailOfChannelRequest.
+        r"""Sets the channel_id of this ShowDetailOfChannelRequest.
 
         指定查询的事件通道ID
 
@@ -71,7 +71,7 @@ class ShowDetailOfChannelRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDetailOfChannelRequest.
+        r"""Gets the enterprise_project_id of this ShowDetailOfChannelRequest.
 
         企业项目id
 
@@ -82,7 +82,7 @@ class ShowDetailOfChannelRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDetailOfChannelRequest.
+        r"""Sets the enterprise_project_id of this ShowDetailOfChannelRequest.
 
         企业项目id
 

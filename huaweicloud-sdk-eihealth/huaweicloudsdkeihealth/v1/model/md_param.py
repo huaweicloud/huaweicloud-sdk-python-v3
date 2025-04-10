@@ -29,7 +29,7 @@ class MdParam:
     }
 
     def __init__(self, timestep_size=None, temperature=None, step_params=None):
-        """MdParam
+        r"""MdParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MdParam:
 
     @property
     def timestep_size(self):
-        """Gets the timestep_size of this MdParam.
+        r"""Gets the timestep_size of this MdParam.
 
         MD模拟的时间步长，单位fs，取值范围：大于0，小于等于5
 
@@ -68,7 +68,7 @@ class MdParam:
 
     @timestep_size.setter
     def timestep_size(self, timestep_size):
-        """Sets the timestep_size of this MdParam.
+        r"""Sets the timestep_size of this MdParam.
 
         MD模拟的时间步长，单位fs，取值范围：大于0，小于等于5
 
@@ -79,7 +79,7 @@ class MdParam:
 
     @property
     def temperature(self):
-        """Gets the temperature of this MdParam.
+        r"""Gets the temperature of this MdParam.
 
         MD模拟的温度，单位K
 
@@ -90,7 +90,7 @@ class MdParam:
 
     @temperature.setter
     def temperature(self, temperature):
-        """Sets the temperature of this MdParam.
+        r"""Sets the temperature of this MdParam.
 
         MD模拟的温度，单位K
 
@@ -101,7 +101,7 @@ class MdParam:
 
     @property
     def step_params(self):
-        """Gets the step_params of this MdParam.
+        r"""Gets the step_params of this MdParam.
 
         :return: The step_params of this MdParam.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MdStepParam`
@@ -110,7 +110,7 @@ class MdParam:
 
     @step_params.setter
     def step_params(self, step_params):
-        """Sets the step_params of this MdParam.
+        r"""Sets the step_params of this MdParam.
 
         :param step_params: The step_params of this MdParam.
         :type step_params: :class:`huaweicloudsdkeihealth.v1.MdStepParam`

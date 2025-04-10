@@ -27,7 +27,7 @@ class ReclaimCouponQuotasReq:
     }
 
     def __init__(self, quota_ids=None, remark=None):
-        """ReclaimCouponQuotasReq
+        r"""ReclaimCouponQuotasReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReclaimCouponQuotasReq:
 
     @property
     def quota_ids(self):
-        """Gets the quota_ids of this ReclaimCouponQuotasReq.
+        r"""Gets the quota_ids of this ReclaimCouponQuotasReq.
 
         被回收的云经销商的代金券额度ID。获取方法请参见查询优惠券额度。
 
@@ -60,7 +60,7 @@ class ReclaimCouponQuotasReq:
 
     @quota_ids.setter
     def quota_ids(self, quota_ids):
-        """Sets the quota_ids of this ReclaimCouponQuotasReq.
+        r"""Sets the quota_ids of this ReclaimCouponQuotasReq.
 
         被回收的云经销商的代金券额度ID。获取方法请参见查询优惠券额度。
 
@@ -71,7 +71,7 @@ class ReclaimCouponQuotasReq:
 
     @property
     def remark(self):
-        """Gets the remark of this ReclaimCouponQuotasReq.
+        r"""Gets the remark of this ReclaimCouponQuotasReq.
 
         回收时的备注。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
@@ -82,7 +82,7 @@ class ReclaimCouponQuotasReq:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ReclaimCouponQuotasReq.
+        r"""Sets the remark of this ReclaimCouponQuotasReq.
 
         回收时的备注。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 

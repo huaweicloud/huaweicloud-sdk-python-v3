@@ -35,7 +35,7 @@ class CheckConstraintInput:
     }
 
     def __init__(self, column_name=None, constraint_name=None, check_expression=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """CheckConstraintInput
+        r"""CheckConstraintInput
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CheckConstraintInput:
 
     @property
     def column_name(self):
-        """Gets the column_name of this CheckConstraintInput.
+        r"""Gets the column_name of this CheckConstraintInput.
 
         列名
 
@@ -84,7 +84,7 @@ class CheckConstraintInput:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this CheckConstraintInput.
+        r"""Sets the column_name of this CheckConstraintInput.
 
         列名
 
@@ -95,7 +95,7 @@ class CheckConstraintInput:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this CheckConstraintInput.
+        r"""Gets the constraint_name of this CheckConstraintInput.
 
         constraint Name
 
@@ -106,7 +106,7 @@ class CheckConstraintInput:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this CheckConstraintInput.
+        r"""Sets the constraint_name of this CheckConstraintInput.
 
         constraint Name
 
@@ -117,7 +117,7 @@ class CheckConstraintInput:
 
     @property
     def check_expression(self):
-        """Gets the check_expression of this CheckConstraintInput.
+        r"""Gets the check_expression of this CheckConstraintInput.
 
         检查条件表达式
 
@@ -128,7 +128,7 @@ class CheckConstraintInput:
 
     @check_expression.setter
     def check_expression(self, check_expression):
-        """Sets the check_expression of this CheckConstraintInput.
+        r"""Sets the check_expression of this CheckConstraintInput.
 
         检查条件表达式
 
@@ -139,7 +139,7 @@ class CheckConstraintInput:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this CheckConstraintInput.
+        r"""Gets the enable_constraint of this CheckConstraintInput.
 
         enable constraint
 
@@ -150,7 +150,7 @@ class CheckConstraintInput:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this CheckConstraintInput.
+        r"""Sets the enable_constraint of this CheckConstraintInput.
 
         enable constraint
 
@@ -161,7 +161,7 @@ class CheckConstraintInput:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this CheckConstraintInput.
+        r"""Gets the rely_constraint of this CheckConstraintInput.
 
         constraint is rely when Query
 
@@ -172,7 +172,7 @@ class CheckConstraintInput:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this CheckConstraintInput.
+        r"""Sets the rely_constraint of this CheckConstraintInput.
 
         constraint is rely when Query
 
@@ -183,7 +183,7 @@ class CheckConstraintInput:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this CheckConstraintInput.
+        r"""Gets the validate_constraint of this CheckConstraintInput.
 
         constraint is validated
 
@@ -194,7 +194,7 @@ class CheckConstraintInput:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this CheckConstraintInput.
+        r"""Sets the validate_constraint of this CheckConstraintInput.
 
         constraint is validated
 

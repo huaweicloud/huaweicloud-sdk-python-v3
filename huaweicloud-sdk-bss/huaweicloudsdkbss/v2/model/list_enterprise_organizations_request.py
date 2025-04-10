@@ -27,7 +27,7 @@ class ListEnterpriseOrganizationsRequest:
     }
 
     def __init__(self, recursive_query=None, parent_id=None):
-        """ListEnterpriseOrganizationsRequest
+        r"""ListEnterpriseOrganizationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEnterpriseOrganizationsRequest:
 
     @property
     def recursive_query(self):
-        """Gets the recursive_query of this ListEnterpriseOrganizationsRequest.
+        r"""Gets the recursive_query of this ListEnterpriseOrganizationsRequest.
 
         是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -61,7 +61,7 @@ class ListEnterpriseOrganizationsRequest:
 
     @recursive_query.setter
     def recursive_query(self, recursive_query):
-        """Sets the recursive_query of this ListEnterpriseOrganizationsRequest.
+        r"""Sets the recursive_query of this ListEnterpriseOrganizationsRequest.
 
         是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -72,7 +72,7 @@ class ListEnterpriseOrganizationsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListEnterpriseOrganizationsRequest.
+        r"""Gets the parent_id of this ListEnterpriseOrganizationsRequest.
 
         指定的节点ID。为空则从根节点查起。此参数不携带或携带值为空时，不作为筛选条件。 说明： 此参数须由纯数字组成。
 
@@ -83,7 +83,7 @@ class ListEnterpriseOrganizationsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListEnterpriseOrganizationsRequest.
+        r"""Sets the parent_id of this ListEnterpriseOrganizationsRequest.
 
         指定的节点ID。为空则从根节点查起。此参数不携带或携带值为空时，不作为筛选条件。 说明： 此参数须由纯数字组成。
 

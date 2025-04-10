@@ -40,7 +40,7 @@ class CreateSourceResponse(SdkResponse):
     }
 
     def __init__(self, source_id=None, product_id=None, device_id=None, topic=None, device_name=None, product_name=None, is_base64=None, contain_device_info=None):
-        """CreateSourceResponse
+        r"""CreateSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def source_id(self):
-        """Gets the source_id of this CreateSourceResponse.
+        r"""Gets the source_id of this CreateSourceResponse.
 
         源数据源ID
 
@@ -104,7 +104,7 @@ class CreateSourceResponse(SdkResponse):
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this CreateSourceResponse.
+        r"""Sets the source_id of this CreateSourceResponse.
 
         源数据源ID
 
@@ -115,7 +115,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateSourceResponse.
+        r"""Gets the product_id of this CreateSourceResponse.
 
         产品ID
 
@@ -126,7 +126,7 @@ class CreateSourceResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateSourceResponse.
+        r"""Sets the product_id of this CreateSourceResponse.
 
         产品ID
 
@@ -137,7 +137,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateSourceResponse.
+        r"""Gets the device_id of this CreateSourceResponse.
 
         设备ID，不填为全部设备
 
@@ -148,7 +148,7 @@ class CreateSourceResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateSourceResponse.
+        r"""Sets the device_id of this CreateSourceResponse.
 
         设备ID，不填为全部设备
 
@@ -159,7 +159,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this CreateSourceResponse.
+        r"""Gets the topic of this CreateSourceResponse.
 
         主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
 
@@ -170,7 +170,7 @@ class CreateSourceResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this CreateSourceResponse.
+        r"""Sets the topic of this CreateSourceResponse.
 
         主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
 
@@ -181,7 +181,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def device_name(self):
-        """Gets the device_name of this CreateSourceResponse.
+        r"""Gets the device_name of this CreateSourceResponse.
 
         设备名称
 
@@ -192,7 +192,7 @@ class CreateSourceResponse(SdkResponse):
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this CreateSourceResponse.
+        r"""Sets the device_name of this CreateSourceResponse.
 
         设备名称
 
@@ -203,7 +203,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def product_name(self):
-        """Gets the product_name of this CreateSourceResponse.
+        r"""Gets the product_name of this CreateSourceResponse.
 
         产品名称
 
@@ -214,7 +214,7 @@ class CreateSourceResponse(SdkResponse):
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this CreateSourceResponse.
+        r"""Sets the product_name of this CreateSourceResponse.
 
         产品名称
 
@@ -225,7 +225,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def is_base64(self):
-        """Gets the is_base64 of this CreateSourceResponse.
+        r"""Gets the is_base64 of this CreateSourceResponse.
 
         是否payload使用base64，0-是 1-否
 
@@ -236,7 +236,7 @@ class CreateSourceResponse(SdkResponse):
 
     @is_base64.setter
     def is_base64(self, is_base64):
-        """Sets the is_base64 of this CreateSourceResponse.
+        r"""Sets the is_base64 of this CreateSourceResponse.
 
         是否payload使用base64，0-是 1-否
 
@@ -247,7 +247,7 @@ class CreateSourceResponse(SdkResponse):
 
     @property
     def contain_device_info(self):
-        """Gets the contain_device_info of this CreateSourceResponse.
+        r"""Gets the contain_device_info of this CreateSourceResponse.
 
         是否包含设备信息，0-是，1-否
 
@@ -258,7 +258,7 @@ class CreateSourceResponse(SdkResponse):
 
     @contain_device_info.setter
     def contain_device_info(self, contain_device_info):
-        """Sets the contain_device_info of this CreateSourceResponse.
+        r"""Sets the contain_device_info of this CreateSourceResponse.
 
         是否包含设备信息，0-是，1-否
 

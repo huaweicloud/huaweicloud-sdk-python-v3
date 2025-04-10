@@ -40,7 +40,7 @@ class EquipmentWlanItem:
     }
 
     def __init__(self, support_wlan=None, wlan_enabled=None, name=None, security_enabled=None, password=None, authentication_method=None, encrption_method=None, name_hided=None):
-        """EquipmentWlanItem
+        r"""EquipmentWlanItem
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class EquipmentWlanItem:
 
     @property
     def support_wlan(self):
-        """Gets the support_wlan of this EquipmentWlanItem.
+        r"""Gets the support_wlan of this EquipmentWlanItem.
 
         是否支持wlan，提供给UI识别是否显示Wi-Fi配置页面
 
@@ -102,7 +102,7 @@ class EquipmentWlanItem:
 
     @support_wlan.setter
     def support_wlan(self, support_wlan):
-        """Sets the support_wlan of this EquipmentWlanItem.
+        r"""Sets the support_wlan of this EquipmentWlanItem.
 
         是否支持wlan，提供给UI识别是否显示Wi-Fi配置页面
 
@@ -113,7 +113,7 @@ class EquipmentWlanItem:
 
     @property
     def wlan_enabled(self):
-        """Gets the wlan_enabled of this EquipmentWlanItem.
+        r"""Gets the wlan_enabled of this EquipmentWlanItem.
 
         是否使能wlan，取值为true时，必须填写name、security_enabled、name_hided
 
@@ -124,7 +124,7 @@ class EquipmentWlanItem:
 
     @wlan_enabled.setter
     def wlan_enabled(self, wlan_enabled):
-        """Sets the wlan_enabled of this EquipmentWlanItem.
+        r"""Sets the wlan_enabled of this EquipmentWlanItem.
 
         是否使能wlan，取值为true时，必须填写name、security_enabled、name_hided
 
@@ -135,7 +135,7 @@ class EquipmentWlanItem:
 
     @property
     def name(self):
-        """Gets the name of this EquipmentWlanItem.
+        r"""Gets the name of this EquipmentWlanItem.
 
         Wi-Fi名称，长度1-32个字符，不支持中文字符，特殊字符只支持!~@_.?
 
@@ -146,7 +146,7 @@ class EquipmentWlanItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EquipmentWlanItem.
+        r"""Sets the name of this EquipmentWlanItem.
 
         Wi-Fi名称，长度1-32个字符，不支持中文字符，特殊字符只支持!~@_.?
 
@@ -157,7 +157,7 @@ class EquipmentWlanItem:
 
     @property
     def security_enabled(self):
-        """Gets the security_enabled of this EquipmentWlanItem.
+        r"""Gets the security_enabled of this EquipmentWlanItem.
 
         是否开启无线安全，取值为true时，必须填写authentication_method、encrption_method
 
@@ -168,7 +168,7 @@ class EquipmentWlanItem:
 
     @security_enabled.setter
     def security_enabled(self, security_enabled):
-        """Sets the security_enabled of this EquipmentWlanItem.
+        r"""Sets the security_enabled of this EquipmentWlanItem.
 
         是否开启无线安全，取值为true时，必须填写authentication_method、encrption_method
 
@@ -179,7 +179,7 @@ class EquipmentWlanItem:
 
     @property
     def password(self):
-        """Gets the password of this EquipmentWlanItem.
+        r"""Gets the password of this EquipmentWlanItem.
 
         Wi-Fi密码，长度8-63个字符，包含大写字母、小写字母、数字、特殊字符中至少两种，不能和Wi-Fi名称及名称逆序相同，特殊字符只支持!~@_.?
 
@@ -190,7 +190,7 @@ class EquipmentWlanItem:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this EquipmentWlanItem.
+        r"""Sets the password of this EquipmentWlanItem.
 
         Wi-Fi密码，长度8-63个字符，包含大写字母、小写字母、数字、特殊字符中至少两种，不能和Wi-Fi名称及名称逆序相同，特殊字符只支持!~@_.?
 
@@ -201,7 +201,7 @@ class EquipmentWlanItem:
 
     @property
     def authentication_method(self):
-        """Gets the authentication_method of this EquipmentWlanItem.
+        r"""Gets the authentication_method of this EquipmentWlanItem.
 
         认证类型
 
@@ -212,7 +212,7 @@ class EquipmentWlanItem:
 
     @authentication_method.setter
     def authentication_method(self, authentication_method):
-        """Sets the authentication_method of this EquipmentWlanItem.
+        r"""Sets the authentication_method of this EquipmentWlanItem.
 
         认证类型
 
@@ -223,7 +223,7 @@ class EquipmentWlanItem:
 
     @property
     def encrption_method(self):
-        """Gets the encrption_method of this EquipmentWlanItem.
+        r"""Gets the encrption_method of this EquipmentWlanItem.
 
         加密方式，认证类型为WPA或者WPA2时，可选TKIP、AES
 
@@ -234,7 +234,7 @@ class EquipmentWlanItem:
 
     @encrption_method.setter
     def encrption_method(self, encrption_method):
-        """Sets the encrption_method of this EquipmentWlanItem.
+        r"""Sets the encrption_method of this EquipmentWlanItem.
 
         加密方式，认证类型为WPA或者WPA2时，可选TKIP、AES
 
@@ -245,7 +245,7 @@ class EquipmentWlanItem:
 
     @property
     def name_hided(self):
-        """Gets the name_hided of this EquipmentWlanItem.
+        r"""Gets the name_hided of this EquipmentWlanItem.
 
         是否隐藏Wi-Fi名称
 
@@ -256,7 +256,7 @@ class EquipmentWlanItem:
 
     @name_hided.setter
     def name_hided(self, name_hided):
-        """Sets the name_hided of this EquipmentWlanItem.
+        r"""Sets the name_hided of this EquipmentWlanItem.
 
         是否隐藏Wi-Fi名称
 

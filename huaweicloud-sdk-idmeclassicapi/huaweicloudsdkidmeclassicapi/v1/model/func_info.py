@@ -27,7 +27,7 @@ class FuncInfo:
     }
 
     def __init__(self, func=None, func_by=None):
-        """FuncInfo
+        r"""FuncInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FuncInfo:
 
     @property
     def func(self):
-        """Gets the func of this FuncInfo.
+        r"""Gets the func of this FuncInfo.
 
         **参数解释：**  指定简单函数名称。  **约束限制：**  不涉及。  **取值范围：**  - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。  **默认取值：**  不涉及。 
 
@@ -59,7 +59,7 @@ class FuncInfo:
 
     @func.setter
     def func(self, func):
-        """Sets the func of this FuncInfo.
+        r"""Sets the func of this FuncInfo.
 
         **参数解释：**  指定简单函数名称。  **约束限制：**  不涉及。  **取值范围：**  - AVG：求平均值。 - COUNT：求总数。 - MAX：求最大值。 - MIX：求最小值。  **默认取值：**  不涉及。 
 
@@ -70,7 +70,7 @@ class FuncInfo:
 
     @property
     def func_by(self):
-        """Gets the func_by of this FuncInfo.
+        r"""Gets the func_by of this FuncInfo.
 
         **参数解释：**  指定简单函数以哪个属性为维度操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -81,7 +81,7 @@ class FuncInfo:
 
     @func_by.setter
     def func_by(self, func_by):
-        """Sets the func_by of this FuncInfo.
+        r"""Sets the func_by of this FuncInfo.
 
         **参数解释：**  指定简单函数以哪个属性为维度操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

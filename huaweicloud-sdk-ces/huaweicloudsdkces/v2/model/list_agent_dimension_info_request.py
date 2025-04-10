@@ -33,7 +33,7 @@ class ListAgentDimensionInfoRequest:
     }
 
     def __init__(self, instance_id=None, dim_name=None, dim_value=None, offset=None, limit=None):
-        """ListAgentDimensionInfoRequest
+        r"""ListAgentDimensionInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListAgentDimensionInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAgentDimensionInfoRequest.
+        r"""Gets the instance_id of this ListAgentDimensionInfoRequest.
 
         资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。
 
@@ -80,7 +80,7 @@ class ListAgentDimensionInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAgentDimensionInfoRequest.
+        r"""Sets the instance_id of this ListAgentDimensionInfoRequest.
 
         资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。
 
@@ -91,7 +91,7 @@ class ListAgentDimensionInfoRequest:
 
     @property
     def dim_name(self):
-        """Gets the dim_name of this ListAgentDimensionInfoRequest.
+        r"""Gets the dim_name of this ListAgentDimensionInfoRequest.
 
         维度名称，枚举类型，类型有：   mount_point：挂载点,   disk：磁盘,   proc：进程,   gpu：显卡,   raid: RAID控制器,
 
@@ -102,7 +102,7 @@ class ListAgentDimensionInfoRequest:
 
     @dim_name.setter
     def dim_name(self, dim_name):
-        """Sets the dim_name of this ListAgentDimensionInfoRequest.
+        r"""Sets the dim_name of this ListAgentDimensionInfoRequest.
 
         维度名称，枚举类型，类型有：   mount_point：挂载点,   disk：磁盘,   proc：进程,   gpu：显卡,   raid: RAID控制器,
 
@@ -113,7 +113,7 @@ class ListAgentDimensionInfoRequest:
 
     @property
     def dim_value(self):
-        """Gets the dim_value of this ListAgentDimensionInfoRequest.
+        r"""Gets the dim_value of this ListAgentDimensionInfoRequest.
 
         维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615。
 
@@ -124,7 +124,7 @@ class ListAgentDimensionInfoRequest:
 
     @dim_value.setter
     def dim_value(self, dim_value):
-        """Sets the dim_value of this ListAgentDimensionInfoRequest.
+        r"""Sets the dim_value of this ListAgentDimensionInfoRequest.
 
         维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615。
 
@@ -135,7 +135,7 @@ class ListAgentDimensionInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAgentDimensionInfoRequest.
+        r"""Gets the offset of this ListAgentDimensionInfoRequest.
 
         分页偏移量
 
@@ -146,7 +146,7 @@ class ListAgentDimensionInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAgentDimensionInfoRequest.
+        r"""Sets the offset of this ListAgentDimensionInfoRequest.
 
         分页偏移量
 
@@ -157,7 +157,7 @@ class ListAgentDimensionInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgentDimensionInfoRequest.
+        r"""Gets the limit of this ListAgentDimensionInfoRequest.
 
         分页大小
 
@@ -168,7 +168,7 @@ class ListAgentDimensionInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgentDimensionInfoRequest.
+        r"""Sets the limit of this ListAgentDimensionInfoRequest.
 
         分页大小
 

@@ -42,7 +42,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, request_id=None, success=None, total=None, limit=None, offset=None, data=None, x_request_id=None):
-        """CreateDataobjectRelationResponse
+        r"""CreateDataobjectRelationResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateDataobjectRelationResponse.
+        r"""Gets the code of this CreateDataobjectRelationResponse.
 
         Id value
 
@@ -111,7 +111,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateDataobjectRelationResponse.
+        r"""Sets the code of this CreateDataobjectRelationResponse.
 
         Id value
 
@@ -122,7 +122,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateDataobjectRelationResponse.
+        r"""Gets the message of this CreateDataobjectRelationResponse.
 
         Error message
 
@@ -133,7 +133,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateDataobjectRelationResponse.
+        r"""Sets the message of this CreateDataobjectRelationResponse.
 
         Error message
 
@@ -144,7 +144,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateDataobjectRelationResponse.
+        r"""Gets the request_id of this CreateDataobjectRelationResponse.
 
         Error message
 
@@ -155,7 +155,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateDataobjectRelationResponse.
+        r"""Sets the request_id of this CreateDataobjectRelationResponse.
 
         Error message
 
@@ -166,7 +166,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this CreateDataobjectRelationResponse.
+        r"""Gets the success of this CreateDataobjectRelationResponse.
 
         Error message
 
@@ -177,7 +177,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this CreateDataobjectRelationResponse.
+        r"""Sets the success of this CreateDataobjectRelationResponse.
 
         Error message
 
@@ -188,7 +188,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CreateDataobjectRelationResponse.
+        r"""Gets the total of this CreateDataobjectRelationResponse.
 
         tatal count
 
@@ -199,7 +199,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CreateDataobjectRelationResponse.
+        r"""Sets the total of this CreateDataobjectRelationResponse.
 
         tatal count
 
@@ -210,7 +210,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this CreateDataobjectRelationResponse.
+        r"""Gets the limit of this CreateDataobjectRelationResponse.
 
         current page count
 
@@ -221,7 +221,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CreateDataobjectRelationResponse.
+        r"""Sets the limit of this CreateDataobjectRelationResponse.
 
         current page count
 
@@ -232,7 +232,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this CreateDataobjectRelationResponse.
+        r"""Gets the offset of this CreateDataobjectRelationResponse.
 
         current page size
 
@@ -243,7 +243,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CreateDataobjectRelationResponse.
+        r"""Sets the offset of this CreateDataobjectRelationResponse.
 
         current page size
 
@@ -254,7 +254,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateDataobjectRelationResponse.
+        r"""Gets the data of this CreateDataobjectRelationResponse.
 
         :return: The data of this CreateDataobjectRelationResponse.
         :rtype: :class:`huaweicloudsdksa.v2.DataResponse`
@@ -263,7 +263,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateDataobjectRelationResponse.
+        r"""Sets the data of this CreateDataobjectRelationResponse.
 
         :param data: The data of this CreateDataobjectRelationResponse.
         :type data: :class:`huaweicloudsdksa.v2.DataResponse`
@@ -272,7 +272,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateDataobjectRelationResponse.
+        r"""Gets the x_request_id of this CreateDataobjectRelationResponse.
 
         :return: The x_request_id of this CreateDataobjectRelationResponse.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateDataobjectRelationResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateDataobjectRelationResponse.
+        r"""Sets the x_request_id of this CreateDataobjectRelationResponse.
 
         :param x_request_id: The x_request_id of this CreateDataobjectRelationResponse.
         :type x_request_id: str

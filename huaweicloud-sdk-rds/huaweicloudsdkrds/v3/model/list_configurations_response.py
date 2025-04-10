@@ -26,7 +26,7 @@ class ListConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None):
-        """ListConfigurationsResponse
+        r"""ListConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListConfigurationsResponse.
+        r"""Gets the configurations of this ListConfigurationsResponse.
 
         :return: The configurations of this ListConfigurationsResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.ConfigurationSummary`]
@@ -53,7 +53,7 @@ class ListConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListConfigurationsResponse.
+        r"""Sets the configurations of this ListConfigurationsResponse.
 
         :param configurations: The configurations of this ListConfigurationsResponse.
         :type configurations: list[:class:`huaweicloudsdkrds.v3.ConfigurationSummary`]

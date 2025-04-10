@@ -25,7 +25,7 @@ class ShowVaultResourceInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """ShowVaultResourceInstancesRequest
+        r"""ShowVaultResourceInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowVaultResourceInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowVaultResourceInstancesRequest.
+        r"""Gets the body of this ShowVaultResourceInstancesRequest.
 
         :return: The body of this ShowVaultResourceInstancesRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultResourceInstancesReq`
@@ -52,7 +52,7 @@ class ShowVaultResourceInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowVaultResourceInstancesRequest.
+        r"""Sets the body of this ShowVaultResourceInstancesRequest.
 
         :param body: The body of this ShowVaultResourceInstancesRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultResourceInstancesReq`

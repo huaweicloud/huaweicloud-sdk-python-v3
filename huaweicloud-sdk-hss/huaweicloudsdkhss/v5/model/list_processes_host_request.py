@@ -37,11 +37,11 @@ class ListProcessesHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_name=None, host_ip=None, path=None, category=None, limit=None, offset=None):
-        """ListProcessesHostRequest
+        r"""ListProcessesHostRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_name: 主机名称
         :type host_name: str
@@ -85,9 +85,9 @@ class ListProcessesHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListProcessesHostRequest.
+        r"""Gets the enterprise_project_id of this ListProcessesHostRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListProcessesHostRequest.
         :rtype: str
@@ -96,9 +96,9 @@ class ListProcessesHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListProcessesHostRequest.
+        r"""Sets the enterprise_project_id of this ListProcessesHostRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListProcessesHostRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class ListProcessesHostRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListProcessesHostRequest.
+        r"""Gets the host_name of this ListProcessesHostRequest.
 
         主机名称
 
@@ -118,7 +118,7 @@ class ListProcessesHostRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListProcessesHostRequest.
+        r"""Sets the host_name of this ListProcessesHostRequest.
 
         主机名称
 
@@ -129,7 +129,7 @@ class ListProcessesHostRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListProcessesHostRequest.
+        r"""Gets the host_ip of this ListProcessesHostRequest.
 
         主机ip
 
@@ -140,7 +140,7 @@ class ListProcessesHostRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListProcessesHostRequest.
+        r"""Sets the host_ip of this ListProcessesHostRequest.
 
         主机ip
 
@@ -151,7 +151,7 @@ class ListProcessesHostRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListProcessesHostRequest.
+        r"""Gets the path of this ListProcessesHostRequest.
 
         进程可执行文件路径
 
@@ -162,7 +162,7 @@ class ListProcessesHostRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListProcessesHostRequest.
+        r"""Sets the path of this ListProcessesHostRequest.
 
         进程可执行文件路径
 
@@ -173,7 +173,7 @@ class ListProcessesHostRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListProcessesHostRequest.
+        r"""Gets the category of this ListProcessesHostRequest.
 
         类型，默认为host，包含如下： - host：主机 - container：容器
 
@@ -184,7 +184,7 @@ class ListProcessesHostRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListProcessesHostRequest.
+        r"""Sets the category of this ListProcessesHostRequest.
 
         类型，默认为host，包含如下： - host：主机 - container：容器
 
@@ -195,7 +195,7 @@ class ListProcessesHostRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProcessesHostRequest.
+        r"""Gets the limit of this ListProcessesHostRequest.
 
         每页显示数量
 
@@ -206,7 +206,7 @@ class ListProcessesHostRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProcessesHostRequest.
+        r"""Sets the limit of this ListProcessesHostRequest.
 
         每页显示数量
 
@@ -217,7 +217,7 @@ class ListProcessesHostRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProcessesHostRequest.
+        r"""Gets the offset of this ListProcessesHostRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -228,7 +228,7 @@ class ListProcessesHostRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProcessesHostRequest.
+        r"""Sets the offset of this ListProcessesHostRequest.
 
         偏移量：指定返回记录的开始位置
 

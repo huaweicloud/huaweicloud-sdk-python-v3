@@ -33,7 +33,7 @@ class AlertEnvironment:
     }
 
     def __init__(self, vendor_type=None, domain_id=None, region_id=None, cross_workspace_id=None, project_id=None):
-        """AlertEnvironment
+        r"""AlertEnvironment
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AlertEnvironment:
 
     @property
     def vendor_type(self):
-        """Gets the vendor_type of this AlertEnvironment.
+        r"""Gets the vendor_type of this AlertEnvironment.
 
         环境供应商：HWCP/HWC/AWS/Azure/GCP
 
@@ -82,7 +82,7 @@ class AlertEnvironment:
 
     @vendor_type.setter
     def vendor_type(self, vendor_type):
-        """Sets the vendor_type of this AlertEnvironment.
+        r"""Sets the vendor_type of this AlertEnvironment.
 
         环境供应商：HWCP/HWC/AWS/Azure/GCP
 
@@ -93,7 +93,7 @@ class AlertEnvironment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AlertEnvironment.
+        r"""Gets the domain_id of this AlertEnvironment.
 
         租户id
 
@@ -104,7 +104,7 @@ class AlertEnvironment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AlertEnvironment.
+        r"""Sets the domain_id of this AlertEnvironment.
 
         租户id
 
@@ -115,7 +115,7 @@ class AlertEnvironment:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AlertEnvironment.
+        r"""Gets the region_id of this AlertEnvironment.
 
         区域id，全局服务global
 
@@ -126,7 +126,7 @@ class AlertEnvironment:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AlertEnvironment.
+        r"""Sets the region_id of this AlertEnvironment.
 
         区域id，全局服务global
 
@@ -137,7 +137,7 @@ class AlertEnvironment:
 
     @property
     def cross_workspace_id(self):
-        """Gets the cross_workspace_id of this AlertEnvironment.
+        r"""Gets the cross_workspace_id of this AlertEnvironment.
 
         数据投递前的源工作空间id，在源空间下值为null，投递后为被委托用户的id
 
@@ -148,7 +148,7 @@ class AlertEnvironment:
 
     @cross_workspace_id.setter
     def cross_workspace_id(self, cross_workspace_id):
-        """Sets the cross_workspace_id of this AlertEnvironment.
+        r"""Sets the cross_workspace_id of this AlertEnvironment.
 
         数据投递前的源工作空间id，在源空间下值为null，投递后为被委托用户的id
 
@@ -159,7 +159,7 @@ class AlertEnvironment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AlertEnvironment.
+        r"""Gets the project_id of this AlertEnvironment.
 
         项目id， 全局服务默认null
 
@@ -170,7 +170,7 @@ class AlertEnvironment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AlertEnvironment.
+        r"""Sets the project_id of this AlertEnvironment.
 
         项目id， 全局服务默认null
 

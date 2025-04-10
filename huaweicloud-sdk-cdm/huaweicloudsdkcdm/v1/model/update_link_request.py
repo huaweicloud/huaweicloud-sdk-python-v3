@@ -29,7 +29,7 @@ class UpdateLinkRequest:
     }
 
     def __init__(self, cluster_id=None, link_name=None, body=None):
-        """UpdateLinkRequest
+        r"""UpdateLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLinkRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateLinkRequest.
+        r"""Gets the cluster_id of this UpdateLinkRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class UpdateLinkRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateLinkRequest.
+        r"""Sets the cluster_id of this UpdateLinkRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class UpdateLinkRequest:
 
     @property
     def link_name(self):
-        """Gets the link_name of this UpdateLinkRequest.
+        r"""Gets the link_name of this UpdateLinkRequest.
 
         连接名称
 
@@ -88,7 +88,7 @@ class UpdateLinkRequest:
 
     @link_name.setter
     def link_name(self, link_name):
-        """Sets the link_name of this UpdateLinkRequest.
+        r"""Sets the link_name of this UpdateLinkRequest.
 
         连接名称
 
@@ -99,7 +99,7 @@ class UpdateLinkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLinkRequest.
+        r"""Gets the body of this UpdateLinkRequest.
 
         :return: The body of this UpdateLinkRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
@@ -108,7 +108,7 @@ class UpdateLinkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLinkRequest.
+        r"""Sets the body of this UpdateLinkRequest.
 
         :param body: The body of this UpdateLinkRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`

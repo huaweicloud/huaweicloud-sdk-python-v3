@@ -29,7 +29,7 @@ class ShowFuncReservedInstanceMetricsRequest:
     }
 
     def __init__(self, marker=None, limit=None, func_urn=None):
-        """ShowFuncReservedInstanceMetricsRequest
+        r"""ShowFuncReservedInstanceMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowFuncReservedInstanceMetricsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowFuncReservedInstanceMetricsRequest.
+        r"""Gets the marker of this ShowFuncReservedInstanceMetricsRequest.
 
         本次查询起始位置，默认值0
 
@@ -67,7 +67,7 @@ class ShowFuncReservedInstanceMetricsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowFuncReservedInstanceMetricsRequest.
+        r"""Sets the marker of this ShowFuncReservedInstanceMetricsRequest.
 
         本次查询起始位置，默认值0
 
@@ -78,7 +78,7 @@ class ShowFuncReservedInstanceMetricsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowFuncReservedInstanceMetricsRequest.
+        r"""Gets the limit of this ShowFuncReservedInstanceMetricsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -89,7 +89,7 @@ class ShowFuncReservedInstanceMetricsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowFuncReservedInstanceMetricsRequest.
+        r"""Sets the limit of this ShowFuncReservedInstanceMetricsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -100,7 +100,7 @@ class ShowFuncReservedInstanceMetricsRequest:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ShowFuncReservedInstanceMetricsRequest.
+        r"""Gets the func_urn of this ShowFuncReservedInstanceMetricsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -111,7 +111,7 @@ class ShowFuncReservedInstanceMetricsRequest:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ShowFuncReservedInstanceMetricsRequest.
+        r"""Sets the func_urn of this ShowFuncReservedInstanceMetricsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 

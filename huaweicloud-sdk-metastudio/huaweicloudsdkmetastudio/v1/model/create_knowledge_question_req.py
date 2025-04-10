@@ -27,7 +27,7 @@ class CreateKnowledgeQuestionReq:
     }
 
     def __init__(self, question=None, intent_id=None):
-        """CreateKnowledgeQuestionReq
+        r"""CreateKnowledgeQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateKnowledgeQuestionReq:
 
     @property
     def question(self):
-        """Gets the question of this CreateKnowledgeQuestionReq.
+        r"""Gets the question of this CreateKnowledgeQuestionReq.
 
         问法。
 
@@ -60,7 +60,7 @@ class CreateKnowledgeQuestionReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this CreateKnowledgeQuestionReq.
+        r"""Sets the question of this CreateKnowledgeQuestionReq.
 
         问法。
 
@@ -71,7 +71,7 @@ class CreateKnowledgeQuestionReq:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this CreateKnowledgeQuestionReq.
+        r"""Gets the intent_id of this CreateKnowledgeQuestionReq.
 
         意图ID。
 
@@ -82,7 +82,7 @@ class CreateKnowledgeQuestionReq:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this CreateKnowledgeQuestionReq.
+        r"""Sets the intent_id of this CreateKnowledgeQuestionReq.
 
         意图ID。
 

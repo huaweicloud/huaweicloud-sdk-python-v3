@@ -29,7 +29,7 @@ class BindEIPRequestBody:
     }
 
     def __init__(self, action=None, public_ip=None, public_ip_id=None):
-        """BindEIPRequestBody
+        r"""BindEIPRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BindEIPRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BindEIPRequestBody.
+        r"""Gets the action of this BindEIPRequestBody.
 
         操作标识。取值： - BIND，表示绑定弹性公网IP。 - UNBIND，表示解绑弹性公网IP。
 
@@ -65,7 +65,7 @@ class BindEIPRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BindEIPRequestBody.
+        r"""Sets the action of this BindEIPRequestBody.
 
         操作标识。取值： - BIND，表示绑定弹性公网IP。 - UNBIND，表示解绑弹性公网IP。
 
@@ -76,7 +76,7 @@ class BindEIPRequestBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this BindEIPRequestBody.
+        r"""Gets the public_ip of this BindEIPRequestBody.
 
         弹性公网IP
 
@@ -87,7 +87,7 @@ class BindEIPRequestBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this BindEIPRequestBody.
+        r"""Sets the public_ip of this BindEIPRequestBody.
 
         弹性公网IP
 
@@ -98,7 +98,7 @@ class BindEIPRequestBody:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this BindEIPRequestBody.
+        r"""Gets the public_ip_id of this BindEIPRequestBody.
 
         弹性公网IP的ID
 
@@ -109,7 +109,7 @@ class BindEIPRequestBody:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this BindEIPRequestBody.
+        r"""Sets the public_ip_id of this BindEIPRequestBody.
 
         弹性公网IP的ID
 

@@ -25,7 +25,7 @@ class DeleteVpnConnectionRequest:
     }
 
     def __init__(self, vpn_connection_id=None):
-        """DeleteVpnConnectionRequest
+        r"""DeleteVpnConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVpnConnectionRequest:
 
     @property
     def vpn_connection_id(self):
-        """Gets the vpn_connection_id of this DeleteVpnConnectionRequest.
+        r"""Gets the vpn_connection_id of this DeleteVpnConnectionRequest.
 
         vpn连接ID
 
@@ -53,7 +53,7 @@ class DeleteVpnConnectionRequest:
 
     @vpn_connection_id.setter
     def vpn_connection_id(self, vpn_connection_id):
-        """Sets the vpn_connection_id of this DeleteVpnConnectionRequest.
+        r"""Sets the vpn_connection_id of this DeleteVpnConnectionRequest.
 
         vpn连接ID
 

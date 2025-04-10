@@ -23,7 +23,7 @@ class ListSystemSecurityPoliciesRequest:
     }
 
     def __init__(self):
-        """ListSystemSecurityPoliciesRequest
+        r"""ListSystemSecurityPoliciesRequest
 
         The model defined in huaweicloud sdk
 

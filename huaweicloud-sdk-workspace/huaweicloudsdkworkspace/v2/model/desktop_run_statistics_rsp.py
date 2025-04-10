@@ -31,7 +31,7 @@ class DesktopRunStatisticsRsp:
     }
 
     def __init__(self, stop_num=None, active_num=None, error_num=None, hibernated_num=None):
-        """DesktopRunStatisticsRsp
+        r"""DesktopRunStatisticsRsp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DesktopRunStatisticsRsp:
 
     @property
     def stop_num(self):
-        """Gets the stop_num of this DesktopRunStatisticsRsp.
+        r"""Gets the stop_num of this DesktopRunStatisticsRsp.
 
         停止个数。
 
@@ -71,7 +71,7 @@ class DesktopRunStatisticsRsp:
 
     @stop_num.setter
     def stop_num(self, stop_num):
-        """Sets the stop_num of this DesktopRunStatisticsRsp.
+        r"""Sets the stop_num of this DesktopRunStatisticsRsp.
 
         停止个数。
 
@@ -82,7 +82,7 @@ class DesktopRunStatisticsRsp:
 
     @property
     def active_num(self):
-        """Gets the active_num of this DesktopRunStatisticsRsp.
+        r"""Gets the active_num of this DesktopRunStatisticsRsp.
 
         运行中个数。
 
@@ -93,7 +93,7 @@ class DesktopRunStatisticsRsp:
 
     @active_num.setter
     def active_num(self, active_num):
-        """Sets the active_num of this DesktopRunStatisticsRsp.
+        r"""Sets the active_num of this DesktopRunStatisticsRsp.
 
         运行中个数。
 
@@ -104,7 +104,7 @@ class DesktopRunStatisticsRsp:
 
     @property
     def error_num(self):
-        """Gets the error_num of this DesktopRunStatisticsRsp.
+        r"""Gets the error_num of this DesktopRunStatisticsRsp.
 
         故障个数。
 
@@ -115,7 +115,7 @@ class DesktopRunStatisticsRsp:
 
     @error_num.setter
     def error_num(self, error_num):
-        """Sets the error_num of this DesktopRunStatisticsRsp.
+        r"""Sets the error_num of this DesktopRunStatisticsRsp.
 
         故障个数。
 
@@ -126,7 +126,7 @@ class DesktopRunStatisticsRsp:
 
     @property
     def hibernated_num(self):
-        """Gets the hibernated_num of this DesktopRunStatisticsRsp.
+        r"""Gets the hibernated_num of this DesktopRunStatisticsRsp.
 
         休眠个数。
 
@@ -137,7 +137,7 @@ class DesktopRunStatisticsRsp:
 
     @hibernated_num.setter
     def hibernated_num(self, hibernated_num):
-        """Sets the hibernated_num of this DesktopRunStatisticsRsp.
+        r"""Sets the hibernated_num of this DesktopRunStatisticsRsp.
 
         休眠个数。
 

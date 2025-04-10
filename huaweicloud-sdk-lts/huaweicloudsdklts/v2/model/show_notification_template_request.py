@@ -27,7 +27,7 @@ class ShowNotificationTemplateRequest:
     }
 
     def __init__(self, domain_id=None, template_name=None):
-        """ShowNotificationTemplateRequest
+        r"""ShowNotificationTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNotificationTemplateRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowNotificationTemplateRequest.
+        r"""Gets the domain_id of this ShowNotificationTemplateRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -59,7 +59,7 @@ class ShowNotificationTemplateRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowNotificationTemplateRequest.
+        r"""Sets the domain_id of this ShowNotificationTemplateRequest.
 
         账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -70,7 +70,7 @@ class ShowNotificationTemplateRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowNotificationTemplateRequest.
+        r"""Gets the template_name of this ShowNotificationTemplateRequest.
 
         template_name
 
@@ -81,7 +81,7 @@ class ShowNotificationTemplateRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowNotificationTemplateRequest.
+        r"""Sets the template_name of this ShowNotificationTemplateRequest.
 
         template_name
 

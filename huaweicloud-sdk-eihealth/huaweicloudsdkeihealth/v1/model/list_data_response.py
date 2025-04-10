@@ -30,7 +30,7 @@ class ListDataResponse(SdkResponse):
     }
 
     def __init__(self, count=None, datas=None, next_marker=None):
-        """ListDataResponse
+        r"""ListDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDataResponse.
+        r"""Gets the count of this ListDataResponse.
 
         数据对象（目录，文件）总数量
 
@@ -69,7 +69,7 @@ class ListDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDataResponse.
+        r"""Sets the count of this ListDataResponse.
 
         数据对象（目录，文件）总数量
 
@@ -80,7 +80,7 @@ class ListDataResponse(SdkResponse):
 
     @property
     def datas(self):
-        """Gets the datas of this ListDataResponse.
+        r"""Gets the datas of this ListDataResponse.
 
         数据对象列表
 
@@ -91,7 +91,7 @@ class ListDataResponse(SdkResponse):
 
     @datas.setter
     def datas(self, datas):
-        """Sets the datas of this ListDataResponse.
+        r"""Sets the datas of this ListDataResponse.
 
         数据对象列表
 
@@ -102,7 +102,7 @@ class ListDataResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListDataResponse.
+        r"""Gets the next_marker of this ListDataResponse.
 
         下一页开始标签
 
@@ -113,7 +113,7 @@ class ListDataResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListDataResponse.
+        r"""Sets the next_marker of this ListDataResponse.
 
         下一页开始标签
 

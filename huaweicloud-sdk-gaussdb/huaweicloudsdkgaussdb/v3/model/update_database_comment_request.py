@@ -25,7 +25,7 @@ class UpdateDatabaseCommentRequest:
     }
 
     def __init__(self, databases=None):
-        """UpdateDatabaseCommentRequest
+        r"""UpdateDatabaseCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDatabaseCommentRequest:
 
     @property
     def databases(self):
-        """Gets the databases of this UpdateDatabaseCommentRequest.
+        r"""Gets the databases of this UpdateDatabaseCommentRequest.
 
         准备修改备注的数据库列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class UpdateDatabaseCommentRequest:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this UpdateDatabaseCommentRequest.
+        r"""Sets the databases of this UpdateDatabaseCommentRequest.
 
         准备修改备注的数据库列表，列表最大长度为50。
 

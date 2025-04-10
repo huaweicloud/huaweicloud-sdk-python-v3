@@ -30,7 +30,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, domain_infos=None):
-        """ListCustomIngressPortDomainsResponse
+        r"""ListCustomIngressPortDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListCustomIngressPortDomainsResponse.
+        r"""Gets the size of this ListCustomIngressPortDomainsResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListCustomIngressPortDomainsResponse.
+        r"""Sets the size of this ListCustomIngressPortDomainsResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCustomIngressPortDomainsResponse.
+        r"""Gets the total of this ListCustomIngressPortDomainsResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCustomIngressPortDomainsResponse.
+        r"""Sets the total of this ListCustomIngressPortDomainsResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
 
     @property
     def domain_infos(self):
-        """Gets the domain_infos of this ListCustomIngressPortDomainsResponse.
+        r"""Gets the domain_infos of this ListCustomIngressPortDomainsResponse.
 
         入方向端口绑定的域名信息列表。
 
@@ -111,7 +111,7 @@ class ListCustomIngressPortDomainsResponse(SdkResponse):
 
     @domain_infos.setter
     def domain_infos(self, domain_infos):
-        """Sets the domain_infos of this ListCustomIngressPortDomainsResponse.
+        r"""Sets the domain_infos of this ListCustomIngressPortDomainsResponse.
 
         入方向端口绑定的域名信息列表。
 

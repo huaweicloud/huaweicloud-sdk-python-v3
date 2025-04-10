@@ -29,7 +29,7 @@ class UpdateDataSourceRequest:
     }
 
     def __init__(self, cluster_id=None, ext_data_source_id=None, body=None):
-        """UpdateDataSourceRequest
+        r"""UpdateDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDataSourceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateDataSourceRequest.
+        r"""Gets the cluster_id of this UpdateDataSourceRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class UpdateDataSourceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateDataSourceRequest.
+        r"""Sets the cluster_id of this UpdateDataSourceRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class UpdateDataSourceRequest:
 
     @property
     def ext_data_source_id(self):
-        """Gets the ext_data_source_id of this UpdateDataSourceRequest.
+        r"""Gets the ext_data_source_id of this UpdateDataSourceRequest.
 
         数据源id
 
@@ -88,7 +88,7 @@ class UpdateDataSourceRequest:
 
     @ext_data_source_id.setter
     def ext_data_source_id(self, ext_data_source_id):
-        """Sets the ext_data_source_id of this UpdateDataSourceRequest.
+        r"""Sets the ext_data_source_id of this UpdateDataSourceRequest.
 
         数据源id
 
@@ -99,7 +99,7 @@ class UpdateDataSourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataSourceRequest.
+        r"""Gets the body of this UpdateDataSourceRequest.
 
         :return: The body of this UpdateDataSourceRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceActionReq`
@@ -108,7 +108,7 @@ class UpdateDataSourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataSourceRequest.
+        r"""Sets the body of this UpdateDataSourceRequest.
 
         :param body: The body of this UpdateDataSourceRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceActionReq`

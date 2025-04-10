@@ -26,7 +26,7 @@ class ChangeDesktopNetworkResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeDesktopNetworkResponse
+        r"""ChangeDesktopNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeDesktopNetworkResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeDesktopNetworkResponse.
+        r"""Gets the job_id of this ChangeDesktopNetworkResponse.
 
         任务id。
 
@@ -55,7 +55,7 @@ class ChangeDesktopNetworkResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeDesktopNetworkResponse.
+        r"""Sets the job_id of this ChangeDesktopNetworkResponse.
 
         任务id。
 

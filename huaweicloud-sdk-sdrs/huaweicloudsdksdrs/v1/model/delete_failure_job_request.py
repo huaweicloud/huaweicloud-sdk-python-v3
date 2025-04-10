@@ -25,7 +25,7 @@ class DeleteFailureJobRequest:
     }
 
     def __init__(self, failure_job_id=None):
-        """DeleteFailureJobRequest
+        r"""DeleteFailureJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFailureJobRequest:
 
     @property
     def failure_job_id(self):
-        """Gets the failure_job_id of this DeleteFailureJobRequest.
+        r"""Gets the failure_job_id of this DeleteFailureJobRequest.
 
         失败任务ID。
 
@@ -53,7 +53,7 @@ class DeleteFailureJobRequest:
 
     @failure_job_id.setter
     def failure_job_id(self, failure_job_id):
-        """Sets the failure_job_id of this DeleteFailureJobRequest.
+        r"""Sets the failure_job_id of this DeleteFailureJobRequest.
 
         失败任务ID。
 

@@ -29,7 +29,7 @@ class PauseStarRocksDataReplicationRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """PauseStarRocksDataReplicationRequest
+        r"""PauseStarRocksDataReplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PauseStarRocksDataReplicationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PauseStarRocksDataReplicationRequest.
+        r"""Gets the instance_id of this PauseStarRocksDataReplicationRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class PauseStarRocksDataReplicationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PauseStarRocksDataReplicationRequest.
+        r"""Sets the instance_id of this PauseStarRocksDataReplicationRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class PauseStarRocksDataReplicationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this PauseStarRocksDataReplicationRequest.
+        r"""Gets the x_language of this PauseStarRocksDataReplicationRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -88,7 +88,7 @@ class PauseStarRocksDataReplicationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this PauseStarRocksDataReplicationRequest.
+        r"""Sets the x_language of this PauseStarRocksDataReplicationRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -99,7 +99,7 @@ class PauseStarRocksDataReplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this PauseStarRocksDataReplicationRequest.
+        r"""Gets the body of this PauseStarRocksDataReplicationRequest.
 
         :return: The body of this PauseStarRocksDataReplicationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.PauseStarRocksDataReplication`
@@ -108,7 +108,7 @@ class PauseStarRocksDataReplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PauseStarRocksDataReplicationRequest.
+        r"""Sets the body of this PauseStarRocksDataReplicationRequest.
 
         :param body: The body of this PauseStarRocksDataReplicationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.PauseStarRocksDataReplication`

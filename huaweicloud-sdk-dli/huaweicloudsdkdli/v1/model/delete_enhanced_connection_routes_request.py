@@ -27,7 +27,7 @@ class DeleteEnhancedConnectionRoutesRequest:
     }
 
     def __init__(self, connection_id=None, name=None):
-        """DeleteEnhancedConnectionRoutesRequest
+        r"""DeleteEnhancedConnectionRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEnhancedConnectionRoutesRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DeleteEnhancedConnectionRoutesRequest.
+        r"""Gets the connection_id of this DeleteEnhancedConnectionRoutesRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -59,7 +59,7 @@ class DeleteEnhancedConnectionRoutesRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DeleteEnhancedConnectionRoutesRequest.
+        r"""Sets the connection_id of this DeleteEnhancedConnectionRoutesRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -70,7 +70,7 @@ class DeleteEnhancedConnectionRoutesRequest:
 
     @property
     def name(self):
-        """Gets the name of this DeleteEnhancedConnectionRoutesRequest.
+        r"""Gets the name of this DeleteEnhancedConnectionRoutesRequest.
 
         :return: The name of this DeleteEnhancedConnectionRoutesRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class DeleteEnhancedConnectionRoutesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteEnhancedConnectionRoutesRequest.
+        r"""Sets the name of this DeleteEnhancedConnectionRoutesRequest.
 
         :param name: The name of this DeleteEnhancedConnectionRoutesRequest.
         :type name: str

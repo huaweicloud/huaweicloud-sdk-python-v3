@@ -33,7 +33,7 @@ class ListConsumeGroupAccessPolicyRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, group_id=None, offset=None, limit=None):
-        """ListConsumeGroupAccessPolicyRequest
+        r"""ListConsumeGroupAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListConsumeGroupAccessPolicyRequest.
+        r"""Gets the engine of this ListConsumeGroupAccessPolicyRequest.
 
         消息引擎。
 
@@ -79,7 +79,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListConsumeGroupAccessPolicyRequest.
+        r"""Sets the engine of this ListConsumeGroupAccessPolicyRequest.
 
         消息引擎。
 
@@ -90,7 +90,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConsumeGroupAccessPolicyRequest.
+        r"""Gets the instance_id of this ListConsumeGroupAccessPolicyRequest.
 
         实例ID。
 
@@ -101,7 +101,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConsumeGroupAccessPolicyRequest.
+        r"""Sets the instance_id of this ListConsumeGroupAccessPolicyRequest.
 
         实例ID。
 
@@ -112,7 +112,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListConsumeGroupAccessPolicyRequest.
+        r"""Gets the group_id of this ListConsumeGroupAccessPolicyRequest.
 
         消费组。
 
@@ -123,7 +123,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListConsumeGroupAccessPolicyRequest.
+        r"""Sets the group_id of this ListConsumeGroupAccessPolicyRequest.
 
         消费组。
 
@@ -134,7 +134,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConsumeGroupAccessPolicyRequest.
+        r"""Gets the offset of this ListConsumeGroupAccessPolicyRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -145,7 +145,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConsumeGroupAccessPolicyRequest.
+        r"""Sets the offset of this ListConsumeGroupAccessPolicyRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -156,7 +156,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConsumeGroupAccessPolicyRequest.
+        r"""Gets the limit of this ListConsumeGroupAccessPolicyRequest.
 
         查询数量。
 
@@ -167,7 +167,7 @@ class ListConsumeGroupAccessPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConsumeGroupAccessPolicyRequest.
+        r"""Sets the limit of this ListConsumeGroupAccessPolicyRequest.
 
         查询数量。
 

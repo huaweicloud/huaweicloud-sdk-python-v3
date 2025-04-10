@@ -29,7 +29,7 @@ class SetSqlFilterRuleRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetSqlFilterRuleRequest
+        r"""SetSqlFilterRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetSqlFilterRuleRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetSqlFilterRuleRequest.
+        r"""Gets the x_language of this SetSqlFilterRuleRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class SetSqlFilterRuleRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetSqlFilterRuleRequest.
+        r"""Sets the x_language of this SetSqlFilterRuleRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class SetSqlFilterRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetSqlFilterRuleRequest.
+        r"""Gets the instance_id of this SetSqlFilterRuleRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetSqlFilterRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetSqlFilterRuleRequest.
+        r"""Sets the instance_id of this SetSqlFilterRuleRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetSqlFilterRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetSqlFilterRuleRequest.
+        r"""Gets the body of this SetSqlFilterRuleRequest.
 
         :return: The body of this SetSqlFilterRuleRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.OperateSqlFilterRuleReq`
@@ -109,7 +109,7 @@ class SetSqlFilterRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetSqlFilterRuleRequest.
+        r"""Sets the body of this SetSqlFilterRuleRequest.
 
         :param body: The body of this SetSqlFilterRuleRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.OperateSqlFilterRuleReq`

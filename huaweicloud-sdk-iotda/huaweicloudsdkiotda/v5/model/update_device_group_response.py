@@ -36,7 +36,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, name=None, description=None, super_group_id=None, group_type=None, dynamic_group_rule=None):
-        """UpdateDeviceGroupResponse
+        r"""UpdateDeviceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDeviceGroupResponse.
+        r"""Gets the group_id of this UpdateDeviceGroupResponse.
 
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
@@ -90,7 +90,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDeviceGroupResponse.
+        r"""Sets the group_id of this UpdateDeviceGroupResponse.
 
         设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
@@ -101,7 +101,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateDeviceGroupResponse.
+        r"""Gets the name of this UpdateDeviceGroupResponse.
 
         设备组名称，单个资源空间下不可重复。
 
@@ -112,7 +112,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDeviceGroupResponse.
+        r"""Sets the name of this UpdateDeviceGroupResponse.
 
         设备组名称，单个资源空间下不可重复。
 
@@ -123,7 +123,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateDeviceGroupResponse.
+        r"""Gets the description of this UpdateDeviceGroupResponse.
 
         设备组描述。
 
@@ -134,7 +134,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDeviceGroupResponse.
+        r"""Sets the description of this UpdateDeviceGroupResponse.
 
         设备组描述。
 
@@ -145,7 +145,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @property
     def super_group_id(self):
-        """Gets the super_group_id of this UpdateDeviceGroupResponse.
+        r"""Gets the super_group_id of this UpdateDeviceGroupResponse.
 
         父设备组ID，该设备组的父设备组ID。
 
@@ -156,7 +156,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @super_group_id.setter
     def super_group_id(self, super_group_id):
-        """Sets the super_group_id of this UpdateDeviceGroupResponse.
+        r"""Sets the super_group_id of this UpdateDeviceGroupResponse.
 
         父设备组ID，该设备组的父设备组ID。
 
@@ -167,7 +167,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @property
     def group_type(self):
-        """Gets the group_type of this UpdateDeviceGroupResponse.
+        r"""Gets the group_type of this UpdateDeviceGroupResponse.
 
         设备组类型，分为动态设备组和静态设备组两种
 
@@ -178,7 +178,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this UpdateDeviceGroupResponse.
+        r"""Sets the group_type of this UpdateDeviceGroupResponse.
 
         设备组类型，分为动态设备组和静态设备组两种
 
@@ -189,7 +189,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @property
     def dynamic_group_rule(self):
-        """Gets the dynamic_group_rule of this UpdateDeviceGroupResponse.
+        r"""Gets the dynamic_group_rule of this UpdateDeviceGroupResponse.
 
         动态设备组规则
 
@@ -200,7 +200,7 @@ class UpdateDeviceGroupResponse(SdkResponse):
 
     @dynamic_group_rule.setter
     def dynamic_group_rule(self, dynamic_group_rule):
-        """Sets the dynamic_group_rule of this UpdateDeviceGroupResponse.
+        r"""Sets the dynamic_group_rule of this UpdateDeviceGroupResponse.
 
         动态设备组规则
 

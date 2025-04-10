@@ -23,7 +23,7 @@ class ListNextflowVersionRequest:
     }
 
     def __init__(self):
-        """ListNextflowVersionRequest
+        r"""ListNextflowVersionRequest
 
         The model defined in huaweicloud sdk
 

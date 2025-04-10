@@ -27,7 +27,7 @@ class ValidateRobotRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """ValidateRobotRequest
+        r"""ValidateRobotRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValidateRobotRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ValidateRobotRequest.
+        r"""Gets the x_app_user_id of this ValidateRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class ValidateRobotRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ValidateRobotRequest.
+        r"""Sets the x_app_user_id of this ValidateRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class ValidateRobotRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateRobotRequest.
+        r"""Gets the body of this ValidateRobotRequest.
 
         :return: The body of this ValidateRobotRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ValidateRobotReq`
@@ -81,7 +81,7 @@ class ValidateRobotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateRobotRequest.
+        r"""Sets the body of this ValidateRobotRequest.
 
         :param body: The body of this ValidateRobotRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ValidateRobotReq`

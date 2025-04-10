@@ -29,7 +29,7 @@ class CreateSynthesisJobReq:
     }
 
     def __init__(self, basic_info=None, smiles=None, params=None):
-        """CreateSynthesisJobReq
+        r"""CreateSynthesisJobReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateSynthesisJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateSynthesisJobReq.
+        r"""Gets the basic_info of this CreateSynthesisJobReq.
 
         :return: The basic_info of this CreateSynthesisJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -63,7 +63,7 @@ class CreateSynthesisJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateSynthesisJobReq.
+        r"""Sets the basic_info of this CreateSynthesisJobReq.
 
         :param basic_info: The basic_info of this CreateSynthesisJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -72,7 +72,7 @@ class CreateSynthesisJobReq:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CreateSynthesisJobReq.
+        r"""Gets the smiles of this CreateSynthesisJobReq.
 
         分子SMILES表达式
 
@@ -83,7 +83,7 @@ class CreateSynthesisJobReq:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CreateSynthesisJobReq.
+        r"""Sets the smiles of this CreateSynthesisJobReq.
 
         分子SMILES表达式
 
@@ -94,7 +94,7 @@ class CreateSynthesisJobReq:
 
     @property
     def params(self):
-        """Gets the params of this CreateSynthesisJobReq.
+        r"""Gets the params of this CreateSynthesisJobReq.
 
         :return: The params of this CreateSynthesisJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SynthesisParamDto`
@@ -103,7 +103,7 @@ class CreateSynthesisJobReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateSynthesisJobReq.
+        r"""Sets the params of this CreateSynthesisJobReq.
 
         :param params: The params of this CreateSynthesisJobReq.
         :type params: :class:`huaweicloudsdkeihealth.v1.SynthesisParamDto`

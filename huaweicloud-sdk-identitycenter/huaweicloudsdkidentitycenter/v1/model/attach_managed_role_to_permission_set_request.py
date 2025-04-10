@@ -32,7 +32,7 @@ class AttachManagedRoleToPermissionSetRequest:
     }
 
     def __init__(self, instance_id=None, permission_set_id=None, x_security_token=None, body=None):
-        """AttachManagedRoleToPermissionSetRequest
+        r"""AttachManagedRoleToPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AttachManagedRoleToPermissionSetRequest.
+        r"""Gets the instance_id of this AttachManagedRoleToPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -74,7 +74,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AttachManagedRoleToPermissionSetRequest.
+        r"""Sets the instance_id of this AttachManagedRoleToPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -85,7 +85,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this AttachManagedRoleToPermissionSetRequest.
+        r"""Gets the permission_set_id of this AttachManagedRoleToPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -96,7 +96,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this AttachManagedRoleToPermissionSetRequest.
+        r"""Sets the permission_set_id of this AttachManagedRoleToPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -107,7 +107,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
+        r"""Gets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -118,7 +118,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
+        r"""Sets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -129,7 +129,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachManagedRoleToPermissionSetRequest.
+        r"""Gets the body of this AttachManagedRoleToPermissionSetRequest.
 
         :return: The body of this AttachManagedRoleToPermissionSetRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ResourceAttachManagedPolicyToPermissionSetReqBody`
@@ -138,7 +138,7 @@ class AttachManagedRoleToPermissionSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachManagedRoleToPermissionSetRequest.
+        r"""Sets the body of this AttachManagedRoleToPermissionSetRequest.
 
         :param body: The body of this AttachManagedRoleToPermissionSetRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.ResourceAttachManagedPolicyToPermissionSetReqBody`

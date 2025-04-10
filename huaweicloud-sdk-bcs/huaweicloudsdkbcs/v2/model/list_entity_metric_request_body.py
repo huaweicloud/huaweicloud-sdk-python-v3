@@ -27,7 +27,7 @@ class ListEntityMetricRequestBody:
     }
 
     def __init__(self, type=None, entity_name=None):
-        """ListEntityMetricRequestBody
+        r"""ListEntityMetricRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEntityMetricRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this ListEntityMetricRequestBody.
+        r"""Gets the type of this ListEntityMetricRequestBody.
 
         实体类型，[可选值如下: org(节点组织), plugin(插件)] 默认为org 
 
@@ -60,7 +60,7 @@ class ListEntityMetricRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEntityMetricRequestBody.
+        r"""Sets the type of this ListEntityMetricRequestBody.
 
         实体类型，[可选值如下: org(节点组织), plugin(插件)] 默认为org 
 
@@ -71,7 +71,7 @@ class ListEntityMetricRequestBody:
 
     @property
     def entity_name(self):
-        """Gets the entity_name of this ListEntityMetricRequestBody.
+        r"""Gets the entity_name of this ListEntityMetricRequestBody.
 
         具体实体的名称
 
@@ -82,7 +82,7 @@ class ListEntityMetricRequestBody:
 
     @entity_name.setter
     def entity_name(self, entity_name):
-        """Sets the entity_name of this ListEntityMetricRequestBody.
+        r"""Sets the entity_name of this ListEntityMetricRequestBody.
 
         具体实体的名称
 

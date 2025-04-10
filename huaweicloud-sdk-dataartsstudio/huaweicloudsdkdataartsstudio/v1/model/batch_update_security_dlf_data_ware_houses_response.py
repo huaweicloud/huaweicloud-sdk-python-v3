@@ -26,7 +26,7 @@ class BatchUpdateSecurityDlfDataWareHousesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """BatchUpdateSecurityDlfDataWareHousesResponse
+        r"""BatchUpdateSecurityDlfDataWareHousesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateSecurityDlfDataWareHousesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchUpdateSecurityDlfDataWareHousesResponse.
+        r"""Gets the results of this BatchUpdateSecurityDlfDataWareHousesResponse.
 
         细粒度认证更新结果
 
@@ -55,7 +55,7 @@ class BatchUpdateSecurityDlfDataWareHousesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchUpdateSecurityDlfDataWareHousesResponse.
+        r"""Sets the results of this BatchUpdateSecurityDlfDataWareHousesResponse.
 
         细粒度认证更新结果
 

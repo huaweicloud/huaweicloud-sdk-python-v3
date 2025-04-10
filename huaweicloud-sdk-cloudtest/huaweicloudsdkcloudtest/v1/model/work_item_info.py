@@ -31,7 +31,7 @@ class WorkItemInfo:
     }
 
     def __init__(self, work_item_id=None, has_child=None, is_open=None, child_list=None):
-        """WorkItemInfo
+        r"""WorkItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class WorkItemInfo:
 
     @property
     def work_item_id(self):
-        """Gets the work_item_id of this WorkItemInfo.
+        r"""Gets the work_item_id of this WorkItemInfo.
 
         工作项编号
 
@@ -72,7 +72,7 @@ class WorkItemInfo:
 
     @work_item_id.setter
     def work_item_id(self, work_item_id):
-        """Sets the work_item_id of this WorkItemInfo.
+        r"""Sets the work_item_id of this WorkItemInfo.
 
         工作项编号
 
@@ -83,7 +83,7 @@ class WorkItemInfo:
 
     @property
     def has_child(self):
-        """Gets the has_child of this WorkItemInfo.
+        r"""Gets the has_child of this WorkItemInfo.
 
         是否有子需求
 
@@ -94,7 +94,7 @@ class WorkItemInfo:
 
     @has_child.setter
     def has_child(self, has_child):
-        """Sets the has_child of this WorkItemInfo.
+        r"""Sets the has_child of this WorkItemInfo.
 
         是否有子需求
 
@@ -105,7 +105,7 @@ class WorkItemInfo:
 
     @property
     def is_open(self):
-        """Gets the is_open of this WorkItemInfo.
+        r"""Gets the is_open of this WorkItemInfo.
 
         是否展开
 
@@ -116,7 +116,7 @@ class WorkItemInfo:
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this WorkItemInfo.
+        r"""Sets the is_open of this WorkItemInfo.
 
         是否展开
 
@@ -127,7 +127,7 @@ class WorkItemInfo:
 
     @property
     def child_list(self):
-        """Gets the child_list of this WorkItemInfo.
+        r"""Gets the child_list of this WorkItemInfo.
 
         子需求
 
@@ -138,7 +138,7 @@ class WorkItemInfo:
 
     @child_list.setter
     def child_list(self, child_list):
-        """Sets the child_list of this WorkItemInfo.
+        r"""Sets the child_list of this WorkItemInfo.
 
         子需求
 

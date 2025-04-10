@@ -25,7 +25,7 @@ class ListUsersForEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ListUsersForEnterpriseProjectRequest
+        r"""ListUsersForEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListUsersForEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListUsersForEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this ListUsersForEnterpriseProjectRequest.
 
         待查询企业项目ID。
 
@@ -53,7 +53,7 @@ class ListUsersForEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListUsersForEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this ListUsersForEnterpriseProjectRequest.
 
         待查询企业项目ID。
 

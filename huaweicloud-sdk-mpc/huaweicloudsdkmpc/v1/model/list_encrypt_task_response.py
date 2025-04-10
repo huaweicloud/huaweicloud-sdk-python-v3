@@ -30,7 +30,7 @@ class ListEncryptTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListEncryptTaskResponse
+        r"""ListEncryptTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEncryptTaskResponse(SdkResponse):
 
     @property
     def task_array(self):
-        """Gets the task_array of this ListEncryptTaskResponse.
+        r"""Gets the task_array of this ListEncryptTaskResponse.
 
         任务列表
 
@@ -69,7 +69,7 @@ class ListEncryptTaskResponse(SdkResponse):
 
     @task_array.setter
     def task_array(self, task_array):
-        """Sets the task_array of this ListEncryptTaskResponse.
+        r"""Sets the task_array of this ListEncryptTaskResponse.
 
         任务列表
 
@@ -80,7 +80,7 @@ class ListEncryptTaskResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListEncryptTaskResponse.
+        r"""Gets the is_truncated of this ListEncryptTaskResponse.
 
         是否截断
 
@@ -91,7 +91,7 @@ class ListEncryptTaskResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListEncryptTaskResponse.
+        r"""Sets the is_truncated of this ListEncryptTaskResponse.
 
         是否截断
 
@@ -102,7 +102,7 @@ class ListEncryptTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEncryptTaskResponse.
+        r"""Gets the total of this ListEncryptTaskResponse.
 
         查询结果数量
 
@@ -113,7 +113,7 @@ class ListEncryptTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEncryptTaskResponse.
+        r"""Sets the total of this ListEncryptTaskResponse.
 
         查询结果数量
 

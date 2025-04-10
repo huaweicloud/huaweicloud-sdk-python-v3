@@ -26,7 +26,7 @@ class UploadJdbcDriverResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UploadJdbcDriverResponse
+        r"""UploadJdbcDriverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadJdbcDriverResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UploadJdbcDriverResponse.
+        r"""Gets the body of this UploadJdbcDriverResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class UploadJdbcDriverResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadJdbcDriverResponse.
+        r"""Sets the body of this UploadJdbcDriverResponse.
 
         空响应体。
 

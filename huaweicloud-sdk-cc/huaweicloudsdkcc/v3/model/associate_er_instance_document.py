@@ -29,7 +29,7 @@ class AssociateErInstanceDocument:
     }
 
     def __init__(self, enterprise_router_id=None, project_id=None, region_id=None):
-        """AssociateErInstanceDocument
+        r"""AssociateErInstanceDocument
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AssociateErInstanceDocument:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this AssociateErInstanceDocument.
+        r"""Gets the enterprise_router_id of this AssociateErInstanceDocument.
 
         企业路由器的ID。
 
@@ -65,7 +65,7 @@ class AssociateErInstanceDocument:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this AssociateErInstanceDocument.
+        r"""Sets the enterprise_router_id of this AssociateErInstanceDocument.
 
         企业路由器的ID。
 
@@ -76,7 +76,7 @@ class AssociateErInstanceDocument:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateErInstanceDocument.
+        r"""Gets the project_id of this AssociateErInstanceDocument.
 
         实例所属项目ID。
 
@@ -87,7 +87,7 @@ class AssociateErInstanceDocument:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateErInstanceDocument.
+        r"""Sets the project_id of this AssociateErInstanceDocument.
 
         实例所属项目ID。
 
@@ -98,7 +98,7 @@ class AssociateErInstanceDocument:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AssociateErInstanceDocument.
+        r"""Gets the region_id of this AssociateErInstanceDocument.
 
         RegionID。
 
@@ -109,7 +109,7 @@ class AssociateErInstanceDocument:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AssociateErInstanceDocument.
+        r"""Sets the region_id of this AssociateErInstanceDocument.
 
         RegionID。
 

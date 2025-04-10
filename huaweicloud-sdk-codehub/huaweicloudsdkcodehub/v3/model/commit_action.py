@@ -37,7 +37,7 @@ class CommitAction:
     }
 
     def __init__(self, action=None, file_path=None, previous_path=None, content=None, encoding=None, last_commit_id=None, execute_filemode=None):
-        """CommitAction
+        r"""CommitAction
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CommitAction:
 
     @property
     def action(self):
-        """Gets the action of this CommitAction.
+        r"""Gets the action of this CommitAction.
 
         要执行的操作：create、delete、move、update、chmod
 
@@ -94,7 +94,7 @@ class CommitAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CommitAction.
+        r"""Sets the action of this CommitAction.
 
         要执行的操作：create、delete、move、update、chmod
 
@@ -105,7 +105,7 @@ class CommitAction:
 
     @property
     def file_path(self):
-        """Gets the file_path of this CommitAction.
+        r"""Gets the file_path of this CommitAction.
 
         文件的完整路径。例如lib/class.rb
 
@@ -116,7 +116,7 @@ class CommitAction:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this CommitAction.
+        r"""Sets the file_path of this CommitAction.
 
         文件的完整路径。例如lib/class.rb
 
@@ -127,7 +127,7 @@ class CommitAction:
 
     @property
     def previous_path(self):
-        """Gets the previous_path of this CommitAction.
+        r"""Gets the previous_path of this CommitAction.
 
         要移动的文件的原始完整路径。例如lib/class1.rb。仅在move操作时生效
 
@@ -138,7 +138,7 @@ class CommitAction:
 
     @previous_path.setter
     def previous_path(self, previous_path):
-        """Sets the previous_path of this CommitAction.
+        r"""Sets the previous_path of this CommitAction.
 
         要移动的文件的原始完整路径。例如lib/class1.rb。仅在move操作时生效
 
@@ -149,7 +149,7 @@ class CommitAction:
 
     @property
     def content(self):
-        """Gets the content of this CommitAction.
+        r"""Gets the content of this CommitAction.
 
         文件内容，create和update操作时必须。未指定内容的移动操作将保留现有文件内容，内容的任何其他值将覆盖文件内容。
 
@@ -160,7 +160,7 @@ class CommitAction:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CommitAction.
+        r"""Sets the content of this CommitAction.
 
         文件内容，create和update操作时必须。未指定内容的移动操作将保留现有文件内容，内容的任何其他值将覆盖文件内容。
 
@@ -171,7 +171,7 @@ class CommitAction:
 
     @property
     def encoding(self):
-        """Gets the encoding of this CommitAction.
+        r"""Gets the encoding of this CommitAction.
 
         文件编码：text、base64。默认为text
 
@@ -182,7 +182,7 @@ class CommitAction:
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this CommitAction.
+        r"""Sets the encoding of this CommitAction.
 
         文件编码：text、base64。默认为text
 
@@ -193,7 +193,7 @@ class CommitAction:
 
     @property
     def last_commit_id(self):
-        """Gets the last_commit_id of this CommitAction.
+        r"""Gets the last_commit_id of this CommitAction.
 
         最后一个已知的提交ID。仅在update、move、delete操作时生效
 
@@ -204,7 +204,7 @@ class CommitAction:
 
     @last_commit_id.setter
     def last_commit_id(self, last_commit_id):
-        """Sets the last_commit_id of this CommitAction.
+        r"""Sets the last_commit_id of this CommitAction.
 
         最后一个已知的提交ID。仅在update、move、delete操作时生效
 
@@ -215,7 +215,7 @@ class CommitAction:
 
     @property
     def execute_filemode(self):
-        """Gets the execute_filemode of this CommitAction.
+        r"""Gets the execute_filemode of this CommitAction.
 
         启用或者禁用文件的执行模式。仅在chmod操作时生效
 
@@ -226,7 +226,7 @@ class CommitAction:
 
     @execute_filemode.setter
     def execute_filemode(self, execute_filemode):
-        """Sets the execute_filemode of this CommitAction.
+        r"""Sets the execute_filemode of this CommitAction.
 
         启用或者禁用文件的执行模式。仅在chmod操作时生效
 

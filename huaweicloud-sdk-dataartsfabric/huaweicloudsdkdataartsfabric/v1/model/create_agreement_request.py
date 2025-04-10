@@ -25,7 +25,7 @@ class CreateAgreementRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAgreementRequest
+        r"""CreateAgreementRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAgreementRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAgreementRequest.
+        r"""Gets the body of this CreateAgreementRequest.
 
         :return: The body of this CreateAgreementRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.TenantAgreementBody`
@@ -52,7 +52,7 @@ class CreateAgreementRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAgreementRequest.
+        r"""Sets the body of this CreateAgreementRequest.
 
         :param body: The body of this CreateAgreementRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.TenantAgreementBody`

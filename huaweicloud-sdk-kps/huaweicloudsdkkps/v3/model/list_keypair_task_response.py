@@ -30,7 +30,7 @@ class ListKeypairTaskResponse(SdkResponse):
     }
 
     def __init__(self, server_id=None, task_id=None, task_status=None):
-        """ListKeypairTaskResponse
+        r"""ListKeypairTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListKeypairTaskResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListKeypairTaskResponse.
+        r"""Gets the server_id of this ListKeypairTaskResponse.
 
         租户虚拟机ID
 
@@ -69,7 +69,7 @@ class ListKeypairTaskResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListKeypairTaskResponse.
+        r"""Sets the server_id of this ListKeypairTaskResponse.
 
         租户虚拟机ID
 
@@ -80,7 +80,7 @@ class ListKeypairTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListKeypairTaskResponse.
+        r"""Gets the task_id of this ListKeypairTaskResponse.
 
         任务下发成功返回的ID
 
@@ -91,7 +91,7 @@ class ListKeypairTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListKeypairTaskResponse.
+        r"""Sets the task_id of this ListKeypairTaskResponse.
 
         任务下发成功返回的ID
 
@@ -102,7 +102,7 @@ class ListKeypairTaskResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ListKeypairTaskResponse.
+        r"""Gets the task_status of this ListKeypairTaskResponse.
 
         密钥对正在处理的状态。 - READY_RESET 准备重置 - RUNNING_RESET 正在重置 - FAILED_RESET 重置失败 - SUCCESS_RESET 重置成功 - READY_REPLACE 准备替换 - RUNNING_REPLACE 正在替换 - FAILED_RESET 替换失败 - SUCCESS_RESET 替换成功 - READY_UNBIND 准备解绑 - RUNNING_UNBIND 正在解绑 - FAILED_UNBIND 解绑失败 - SUCCESS_UNBIND 解绑成功
 
@@ -113,7 +113,7 @@ class ListKeypairTaskResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ListKeypairTaskResponse.
+        r"""Sets the task_status of this ListKeypairTaskResponse.
 
         密钥对正在处理的状态。 - READY_RESET 准备重置 - RUNNING_RESET 正在重置 - FAILED_RESET 重置失败 - SUCCESS_RESET 重置成功 - READY_REPLACE 准备替换 - RUNNING_REPLACE 正在替换 - FAILED_RESET 替换失败 - SUCCESS_RESET 替换成功 - READY_UNBIND 准备解绑 - RUNNING_UNBIND 正在解绑 - FAILED_UNBIND 解绑失败 - SUCCESS_UNBIND 解绑成功
 

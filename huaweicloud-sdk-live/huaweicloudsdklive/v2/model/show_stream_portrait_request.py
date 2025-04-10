@@ -29,7 +29,7 @@ class ShowStreamPortraitRequest:
     }
 
     def __init__(self, play_domain=None, stream=None, time=None):
-        """ShowStreamPortraitRequest
+        r"""ShowStreamPortraitRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowStreamPortraitRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ShowStreamPortraitRequest.
+        r"""Gets the play_domain of this ShowStreamPortraitRequest.
 
         播放域名。 
 
@@ -66,7 +66,7 @@ class ShowStreamPortraitRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ShowStreamPortraitRequest.
+        r"""Sets the play_domain of this ShowStreamPortraitRequest.
 
         播放域名。 
 
@@ -77,7 +77,7 @@ class ShowStreamPortraitRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ShowStreamPortraitRequest.
+        r"""Gets the stream of this ShowStreamPortraitRequest.
 
         流名。 
 
@@ -88,7 +88,7 @@ class ShowStreamPortraitRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ShowStreamPortraitRequest.
+        r"""Sets the stream of this ShowStreamPortraitRequest.
 
         流名。 
 
@@ -99,7 +99,7 @@ class ShowStreamPortraitRequest:
 
     @property
     def time(self):
-        """Gets the time of this ShowStreamPortraitRequest.
+        r"""Gets the time of this ShowStreamPortraitRequest.
 
         统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。可以查询过去31天的数据（不含当天）。 
 
@@ -110,7 +110,7 @@ class ShowStreamPortraitRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ShowStreamPortraitRequest.
+        r"""Sets the time of this ShowStreamPortraitRequest.
 
         统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。可以查询过去31天的数据（不含当天）。 
 

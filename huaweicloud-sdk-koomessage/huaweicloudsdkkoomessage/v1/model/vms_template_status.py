@@ -49,7 +49,7 @@ class VmsTemplateStatus:
     }
 
     def __init__(self, tpl_id=None, audit_state=None, audit_desc=None, tpl_size=None, valid_time=None, status_detail=None, preview_url=None, tpl_name=None, title=None, tpl_sign=None, create_time=None, var_info=None, restags=None):
-        """VmsTemplateStatus
+        r"""VmsTemplateStatus
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class VmsTemplateStatus:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this VmsTemplateStatus.
+        r"""Gets the tpl_id of this VmsTemplateStatus.
 
         智能信息基础版模板ID。
 
@@ -138,7 +138,7 @@ class VmsTemplateStatus:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this VmsTemplateStatus.
+        r"""Sets the tpl_id of this VmsTemplateStatus.
 
         智能信息基础版模板ID。
 
@@ -149,7 +149,7 @@ class VmsTemplateStatus:
 
     @property
     def audit_state(self):
-        """Gets the audit_state of this VmsTemplateStatus.
+        r"""Gets the audit_state of this VmsTemplateStatus.
 
         智能信息基础版审核状态。 - 0：正常可用 - 1：审核中 - 2：审核不通过 - 3：模板已禁用 - 4：模板不存在 - 5：模板已过期 
 
@@ -160,7 +160,7 @@ class VmsTemplateStatus:
 
     @audit_state.setter
     def audit_state(self, audit_state):
-        """Sets the audit_state of this VmsTemplateStatus.
+        r"""Sets the audit_state of this VmsTemplateStatus.
 
         智能信息基础版审核状态。 - 0：正常可用 - 1：审核中 - 2：审核不通过 - 3：模板已禁用 - 4：模板不存在 - 5：模板已过期 
 
@@ -171,7 +171,7 @@ class VmsTemplateStatus:
 
     @property
     def audit_desc(self):
-        """Gets the audit_desc of this VmsTemplateStatus.
+        r"""Gets the audit_desc of this VmsTemplateStatus.
 
         智能信息基础版模板状态的描述，若状态是审核不通过或被禁用，描述表示的是不通过或禁用的原因。 > 长度不超过 1024 字。 
 
@@ -182,7 +182,7 @@ class VmsTemplateStatus:
 
     @audit_desc.setter
     def audit_desc(self, audit_desc):
-        """Sets the audit_desc of this VmsTemplateStatus.
+        r"""Sets the audit_desc of this VmsTemplateStatus.
 
         智能信息基础版模板状态的描述，若状态是审核不通过或被禁用，描述表示的是不通过或禁用的原因。 > 长度不超过 1024 字。 
 
@@ -193,7 +193,7 @@ class VmsTemplateStatus:
 
     @property
     def tpl_size(self):
-        """Gets the tpl_size of this VmsTemplateStatus.
+        r"""Gets the tpl_size of this VmsTemplateStatus.
 
         智能信息基础版模板的大小。  >  单位：字节。 
 
@@ -204,7 +204,7 @@ class VmsTemplateStatus:
 
     @tpl_size.setter
     def tpl_size(self, tpl_size):
-        """Sets the tpl_size of this VmsTemplateStatus.
+        r"""Sets the tpl_size of this VmsTemplateStatus.
 
         智能信息基础版模板的大小。  >  单位：字节。 
 
@@ -215,7 +215,7 @@ class VmsTemplateStatus:
 
     @property
     def valid_time(self):
-        """Gets the valid_time of this VmsTemplateStatus.
+        r"""Gets the valid_time of this VmsTemplateStatus.
 
         模板截止有效日期，格式：yyyy-MM-ddTHH:mm:ssZ，0：表示永久有效。样例：2020-01-31T23:59:59Z。
 
@@ -226,7 +226,7 @@ class VmsTemplateStatus:
 
     @valid_time.setter
     def valid_time(self, valid_time):
-        """Sets the valid_time of this VmsTemplateStatus.
+        r"""Sets the valid_time of this VmsTemplateStatus.
 
         模板截止有效日期，格式：yyyy-MM-ddTHH:mm:ssZ，0：表示永久有效。样例：2020-01-31T23:59:59Z。
 
@@ -237,7 +237,7 @@ class VmsTemplateStatus:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this VmsTemplateStatus.
+        r"""Gets the status_detail of this VmsTemplateStatus.
 
         运营商的模板状态详情。
 
@@ -248,7 +248,7 @@ class VmsTemplateStatus:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this VmsTemplateStatus.
+        r"""Sets the status_detail of this VmsTemplateStatus.
 
         运营商的模板状态详情。
 
@@ -259,7 +259,7 @@ class VmsTemplateStatus:
 
     @property
     def preview_url(self):
-        """Gets the preview_url of this VmsTemplateStatus.
+        r"""Gets the preview_url of this VmsTemplateStatus.
 
         智能信息基础版模板预览地址。
 
@@ -270,7 +270,7 @@ class VmsTemplateStatus:
 
     @preview_url.setter
     def preview_url(self, preview_url):
-        """Sets the preview_url of this VmsTemplateStatus.
+        r"""Sets the preview_url of this VmsTemplateStatus.
 
         智能信息基础版模板预览地址。
 
@@ -281,7 +281,7 @@ class VmsTemplateStatus:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this VmsTemplateStatus.
+        r"""Gets the tpl_name of this VmsTemplateStatus.
 
         智能信息基础版模板名称。
 
@@ -292,7 +292,7 @@ class VmsTemplateStatus:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this VmsTemplateStatus.
+        r"""Sets the tpl_name of this VmsTemplateStatus.
 
         智能信息基础版模板名称。
 
@@ -303,7 +303,7 @@ class VmsTemplateStatus:
 
     @property
     def title(self):
-        """Gets the title of this VmsTemplateStatus.
+        r"""Gets the title of this VmsTemplateStatus.
 
         智能信息基础版模板主题。
 
@@ -314,7 +314,7 @@ class VmsTemplateStatus:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this VmsTemplateStatus.
+        r"""Sets the title of this VmsTemplateStatus.
 
         智能信息基础版模板主题。
 
@@ -325,7 +325,7 @@ class VmsTemplateStatus:
 
     @property
     def tpl_sign(self):
-        """Gets the tpl_sign of this VmsTemplateStatus.
+        r"""Gets the tpl_sign of this VmsTemplateStatus.
 
         智能信息基础版模板签名。
 
@@ -336,7 +336,7 @@ class VmsTemplateStatus:
 
     @tpl_sign.setter
     def tpl_sign(self, tpl_sign):
-        """Sets the tpl_sign of this VmsTemplateStatus.
+        r"""Sets the tpl_sign of this VmsTemplateStatus.
 
         智能信息基础版模板签名。
 
@@ -347,7 +347,7 @@ class VmsTemplateStatus:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VmsTemplateStatus.
+        r"""Gets the create_time of this VmsTemplateStatus.
 
         智能信息基础版模板创建时间，格式：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -358,7 +358,7 @@ class VmsTemplateStatus:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VmsTemplateStatus.
+        r"""Sets the create_time of this VmsTemplateStatus.
 
         智能信息基础版模板创建时间，格式：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -369,7 +369,7 @@ class VmsTemplateStatus:
 
     @property
     def var_info(self):
-        """Gets the var_info of this VmsTemplateStatus.
+        r"""Gets the var_info of this VmsTemplateStatus.
 
         智能信息基础版模板动参信息，静态模板没有动参，该字段填空。
 
@@ -380,7 +380,7 @@ class VmsTemplateStatus:
 
     @var_info.setter
     def var_info(self, var_info):
-        """Sets the var_info of this VmsTemplateStatus.
+        r"""Sets the var_info of this VmsTemplateStatus.
 
         智能信息基础版模板动参信息，静态模板没有动参，该字段填空。
 
@@ -391,7 +391,7 @@ class VmsTemplateStatus:
 
     @property
     def restags(self):
-        """Gets the restags of this VmsTemplateStatus.
+        r"""Gets the restags of this VmsTemplateStatus.
 
         资源分配标签，取值如下： - 三网一般 - 三网抗诉 - 单网一般 - 单网抗诉 
 
@@ -402,7 +402,7 @@ class VmsTemplateStatus:
 
     @restags.setter
     def restags(self, restags):
-        """Sets the restags of this VmsTemplateStatus.
+        r"""Sets the restags of this VmsTemplateStatus.
 
         资源分配标签，取值如下： - 三网一般 - 三网抗诉 - 单网一般 - 单网抗诉 
 

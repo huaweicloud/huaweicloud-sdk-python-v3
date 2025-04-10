@@ -27,7 +27,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
     }
 
     def __init__(self, replication_id=None, device=None):
-        """ProtectedInstanceAttachReplicationRequestParams
+        r"""ProtectedInstanceAttachReplicationRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this ProtectedInstanceAttachReplicationRequestParams.
+        r"""Gets the replication_id of this ProtectedInstanceAttachReplicationRequestParams.
 
         复制对的ID。
 
@@ -59,7 +59,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this ProtectedInstanceAttachReplicationRequestParams.
+        r"""Sets the replication_id of this ProtectedInstanceAttachReplicationRequestParams.
 
         复制对的ID。
 
@@ -70,7 +70,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
 
     @property
     def device(self):
-        """Gets the device of this ProtectedInstanceAttachReplicationRequestParams.
+        r"""Gets the device of this ProtectedInstanceAttachReplicationRequestParams.
 
         复制对中使用的磁盘挂载点。  说明:新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 对于采用XEN虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。对于采用KVM虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/vda；数据盘挂载点请按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
@@ -81,7 +81,7 @@ class ProtectedInstanceAttachReplicationRequestParams:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this ProtectedInstanceAttachReplicationRequestParams.
+        r"""Sets the device of this ProtectedInstanceAttachReplicationRequestParams.
 
         复制对中使用的磁盘挂载点。  说明:新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 对于采用XEN虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。对于采用KVM虚拟化类型的弹性云服务器组成的保护实例，系统盘挂载点请指定/dev/vda；数据盘挂载点请按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 

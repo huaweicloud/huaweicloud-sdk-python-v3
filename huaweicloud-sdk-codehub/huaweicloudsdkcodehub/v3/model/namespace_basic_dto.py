@@ -49,7 +49,7 @@ class NamespaceBasicDto:
     }
 
     def __init__(self, id=None, name=None, path=None, develop_mode=None, region=None, cell=None, kind=None, full_path=None, full_name=None, parent_id=None, visibility_level=None, enable_file_control=None, owner_id=None):
-        """NamespaceBasicDto
+        r"""NamespaceBasicDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NamespaceBasicDto:
 
     @property
     def id(self):
-        """Gets the id of this NamespaceBasicDto.
+        r"""Gets the id of this NamespaceBasicDto.
 
         namespace id
 
@@ -138,7 +138,7 @@ class NamespaceBasicDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NamespaceBasicDto.
+        r"""Sets the id of this NamespaceBasicDto.
 
         namespace id
 
@@ -149,7 +149,7 @@ class NamespaceBasicDto:
 
     @property
     def name(self):
-        """Gets the name of this NamespaceBasicDto.
+        r"""Gets the name of this NamespaceBasicDto.
 
         namespace name
 
@@ -160,7 +160,7 @@ class NamespaceBasicDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NamespaceBasicDto.
+        r"""Sets the name of this NamespaceBasicDto.
 
         namespace name
 
@@ -171,7 +171,7 @@ class NamespaceBasicDto:
 
     @property
     def path(self):
-        """Gets the path of this NamespaceBasicDto.
+        r"""Gets the path of this NamespaceBasicDto.
 
         namespace path
 
@@ -182,7 +182,7 @@ class NamespaceBasicDto:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this NamespaceBasicDto.
+        r"""Sets the path of this NamespaceBasicDto.
 
         namespace path
 
@@ -193,7 +193,7 @@ class NamespaceBasicDto:
 
     @property
     def develop_mode(self):
-        """Gets the develop_mode of this NamespaceBasicDto.
+        r"""Gets the develop_mode of this NamespaceBasicDto.
 
         namespace 开发模式
 
@@ -204,7 +204,7 @@ class NamespaceBasicDto:
 
     @develop_mode.setter
     def develop_mode(self, develop_mode):
-        """Sets the develop_mode of this NamespaceBasicDto.
+        r"""Sets the develop_mode of this NamespaceBasicDto.
 
         namespace 开发模式
 
@@ -215,7 +215,7 @@ class NamespaceBasicDto:
 
     @property
     def region(self):
-        """Gets the region of this NamespaceBasicDto.
+        r"""Gets the region of this NamespaceBasicDto.
 
         namespace region
 
@@ -226,7 +226,7 @@ class NamespaceBasicDto:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this NamespaceBasicDto.
+        r"""Sets the region of this NamespaceBasicDto.
 
         namespace region
 
@@ -237,7 +237,7 @@ class NamespaceBasicDto:
 
     @property
     def cell(self):
-        """Gets the cell of this NamespaceBasicDto.
+        r"""Gets the cell of this NamespaceBasicDto.
 
         namespace cell
 
@@ -248,7 +248,7 @@ class NamespaceBasicDto:
 
     @cell.setter
     def cell(self, cell):
-        """Sets the cell of this NamespaceBasicDto.
+        r"""Sets the cell of this NamespaceBasicDto.
 
         namespace cell
 
@@ -259,7 +259,7 @@ class NamespaceBasicDto:
 
     @property
     def kind(self):
-        """Gets the kind of this NamespaceBasicDto.
+        r"""Gets the kind of this NamespaceBasicDto.
 
         namespace kind
 
@@ -270,7 +270,7 @@ class NamespaceBasicDto:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this NamespaceBasicDto.
+        r"""Sets the kind of this NamespaceBasicDto.
 
         namespace kind
 
@@ -281,7 +281,7 @@ class NamespaceBasicDto:
 
     @property
     def full_path(self):
-        """Gets the full_path of this NamespaceBasicDto.
+        r"""Gets the full_path of this NamespaceBasicDto.
 
         namespace full path
 
@@ -292,7 +292,7 @@ class NamespaceBasicDto:
 
     @full_path.setter
     def full_path(self, full_path):
-        """Sets the full_path of this NamespaceBasicDto.
+        r"""Sets the full_path of this NamespaceBasicDto.
 
         namespace full path
 
@@ -303,7 +303,7 @@ class NamespaceBasicDto:
 
     @property
     def full_name(self):
-        """Gets the full_name of this NamespaceBasicDto.
+        r"""Gets the full_name of this NamespaceBasicDto.
 
         namespace full name
 
@@ -314,7 +314,7 @@ class NamespaceBasicDto:
 
     @full_name.setter
     def full_name(self, full_name):
-        """Sets the full_name of this NamespaceBasicDto.
+        r"""Sets the full_name of this NamespaceBasicDto.
 
         namespace full name
 
@@ -325,7 +325,7 @@ class NamespaceBasicDto:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this NamespaceBasicDto.
+        r"""Gets the parent_id of this NamespaceBasicDto.
 
         namespace parent id
 
@@ -336,7 +336,7 @@ class NamespaceBasicDto:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this NamespaceBasicDto.
+        r"""Sets the parent_id of this NamespaceBasicDto.
 
         namespace parent id
 
@@ -347,7 +347,7 @@ class NamespaceBasicDto:
 
     @property
     def visibility_level(self):
-        """Gets the visibility_level of this NamespaceBasicDto.
+        r"""Gets the visibility_level of this NamespaceBasicDto.
 
         namespace visibility level
 
@@ -358,7 +358,7 @@ class NamespaceBasicDto:
 
     @visibility_level.setter
     def visibility_level(self, visibility_level):
-        """Sets the visibility_level of this NamespaceBasicDto.
+        r"""Sets the visibility_level of this NamespaceBasicDto.
 
         namespace visibility level
 
@@ -369,7 +369,7 @@ class NamespaceBasicDto:
 
     @property
     def enable_file_control(self):
-        """Gets the enable_file_control of this NamespaceBasicDto.
+        r"""Gets the enable_file_control of this NamespaceBasicDto.
 
         namespace file control enable
 
@@ -380,7 +380,7 @@ class NamespaceBasicDto:
 
     @enable_file_control.setter
     def enable_file_control(self, enable_file_control):
-        """Sets the enable_file_control of this NamespaceBasicDto.
+        r"""Sets the enable_file_control of this NamespaceBasicDto.
 
         namespace file control enable
 
@@ -391,7 +391,7 @@ class NamespaceBasicDto:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this NamespaceBasicDto.
+        r"""Gets the owner_id of this NamespaceBasicDto.
 
         namespace owner id
 
@@ -402,7 +402,7 @@ class NamespaceBasicDto:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this NamespaceBasicDto.
+        r"""Sets the owner_id of this NamespaceBasicDto.
 
         namespace owner id
 

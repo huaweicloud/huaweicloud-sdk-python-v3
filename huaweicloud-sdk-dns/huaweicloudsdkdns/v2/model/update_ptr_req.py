@@ -31,7 +31,7 @@ class UpdatePtrReq:
     }
 
     def __init__(self, ptrdname=None, description=None, ttl=None, tags=None):
-        """UpdatePtrReq
+        r"""UpdatePtrReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdatePtrReq:
 
     @property
     def ptrdname(self):
-        """Gets the ptrdname of this UpdatePtrReq.
+        r"""Gets the ptrdname of this UpdatePtrReq.
 
         PTR记录对应的域名。
 
@@ -74,7 +74,7 @@ class UpdatePtrReq:
 
     @ptrdname.setter
     def ptrdname(self, ptrdname):
-        """Sets the ptrdname of this UpdatePtrReq.
+        r"""Sets the ptrdname of this UpdatePtrReq.
 
         PTR记录对应的域名。
 
@@ -85,7 +85,7 @@ class UpdatePtrReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePtrReq.
+        r"""Gets the description of this UpdatePtrReq.
 
         对PTR记录的描述。
 
@@ -96,7 +96,7 @@ class UpdatePtrReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePtrReq.
+        r"""Sets the description of this UpdatePtrReq.
 
         对PTR记录的描述。
 
@@ -107,7 +107,7 @@ class UpdatePtrReq:
 
     @property
     def ttl(self):
-        """Gets the ttl of this UpdatePtrReq.
+        r"""Gets the ttl of this UpdatePtrReq.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -118,7 +118,7 @@ class UpdatePtrReq:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this UpdatePtrReq.
+        r"""Sets the ttl of this UpdatePtrReq.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -129,7 +129,7 @@ class UpdatePtrReq:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdatePtrReq.
+        r"""Gets the tags of this UpdatePtrReq.
 
         资源标签。
 
@@ -140,7 +140,7 @@ class UpdatePtrReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdatePtrReq.
+        r"""Sets the tags of this UpdatePtrReq.
 
         资源标签。
 

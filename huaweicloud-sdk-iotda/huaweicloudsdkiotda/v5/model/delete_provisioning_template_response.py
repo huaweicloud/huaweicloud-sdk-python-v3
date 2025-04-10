@@ -26,7 +26,7 @@ class DeleteProvisioningTemplateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteProvisioningTemplateResponse
+        r"""DeleteProvisioningTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteProvisioningTemplateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteProvisioningTemplateResponse.
+        r"""Gets the body of this DeleteProvisioningTemplateResponse.
 
         :return: The body of this DeleteProvisioningTemplateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteProvisioningTemplateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteProvisioningTemplateResponse.
+        r"""Sets the body of this DeleteProvisioningTemplateResponse.
 
         :param body: The body of this DeleteProvisioningTemplateResponse.
         :type body: str

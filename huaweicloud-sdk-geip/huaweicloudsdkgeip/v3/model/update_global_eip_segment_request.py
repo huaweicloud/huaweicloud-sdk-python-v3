@@ -27,7 +27,7 @@ class UpdateGlobalEipSegmentRequest:
     }
 
     def __init__(self, global_eip_segment_id=None, body=None):
-        """UpdateGlobalEipSegmentRequest
+        r"""UpdateGlobalEipSegmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGlobalEipSegmentRequest:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this UpdateGlobalEipSegmentRequest.
+        r"""Gets the global_eip_segment_id of this UpdateGlobalEipSegmentRequest.
 
         :return: The global_eip_segment_id of this UpdateGlobalEipSegmentRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class UpdateGlobalEipSegmentRequest:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this UpdateGlobalEipSegmentRequest.
+        r"""Sets the global_eip_segment_id of this UpdateGlobalEipSegmentRequest.
 
         :param global_eip_segment_id: The global_eip_segment_id of this UpdateGlobalEipSegmentRequest.
         :type global_eip_segment_id: str
@@ -67,7 +67,7 @@ class UpdateGlobalEipSegmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGlobalEipSegmentRequest.
+        r"""Gets the body of this UpdateGlobalEipSegmentRequest.
 
         :return: The body of this UpdateGlobalEipSegmentRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEipSegmentRequestBody`
@@ -76,7 +76,7 @@ class UpdateGlobalEipSegmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGlobalEipSegmentRequest.
+        r"""Sets the body of this UpdateGlobalEipSegmentRequest.
 
         :param body: The body of this UpdateGlobalEipSegmentRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEipSegmentRequestBody`

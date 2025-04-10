@@ -27,7 +27,7 @@ class UpdateResourceGroupRequestBody:
     }
 
     def __init__(self, group_name=None, resources=None):
-        """UpdateResourceGroupRequestBody
+        r"""UpdateResourceGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateResourceGroupRequestBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this UpdateResourceGroupRequestBody.
+        r"""Gets the group_name of this UpdateResourceGroupRequestBody.
 
         资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
@@ -59,7 +59,7 @@ class UpdateResourceGroupRequestBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UpdateResourceGroupRequestBody.
+        r"""Sets the group_name of this UpdateResourceGroupRequestBody.
 
         资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
@@ -70,7 +70,7 @@ class UpdateResourceGroupRequestBody:
 
     @property
     def resources(self):
-        """Gets the resources of this UpdateResourceGroupRequestBody.
+        r"""Gets the resources of this UpdateResourceGroupRequestBody.
 
         更新资源分组选择一个或者多个资源。
 
@@ -81,7 +81,7 @@ class UpdateResourceGroupRequestBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this UpdateResourceGroupRequestBody.
+        r"""Sets the resources of this UpdateResourceGroupRequestBody.
 
         更新资源分组选择一个或者多个资源。
 

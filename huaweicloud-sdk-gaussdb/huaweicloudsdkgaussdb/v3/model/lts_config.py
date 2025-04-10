@@ -31,7 +31,7 @@ class LtsConfig:
     }
 
     def __init__(self, log_type=None, lts_group_id=None, lts_stream_id=None, enabled=None):
-        """LtsConfig
+        r"""LtsConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LtsConfig:
 
     @property
     def log_type(self):
-        """Gets the log_type of this LtsConfig.
+        r"""Gets the log_type of this LtsConfig.
 
         日志类型。
 
@@ -75,7 +75,7 @@ class LtsConfig:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this LtsConfig.
+        r"""Sets the log_type of this LtsConfig.
 
         日志类型。
 
@@ -86,7 +86,7 @@ class LtsConfig:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this LtsConfig.
+        r"""Gets the lts_group_id of this LtsConfig.
 
         日志组ID。
 
@@ -97,7 +97,7 @@ class LtsConfig:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this LtsConfig.
+        r"""Sets the lts_group_id of this LtsConfig.
 
         日志组ID。
 
@@ -108,7 +108,7 @@ class LtsConfig:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this LtsConfig.
+        r"""Gets the lts_stream_id of this LtsConfig.
 
         日志流ID。
 
@@ -119,7 +119,7 @@ class LtsConfig:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this LtsConfig.
+        r"""Sets the lts_stream_id of this LtsConfig.
 
         日志流ID。
 
@@ -130,7 +130,7 @@ class LtsConfig:
 
     @property
     def enabled(self):
-        """Gets the enabled of this LtsConfig.
+        r"""Gets the enabled of this LtsConfig.
 
         是否开启
 
@@ -141,7 +141,7 @@ class LtsConfig:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this LtsConfig.
+        r"""Sets the enabled of this LtsConfig.
 
         是否开启
 

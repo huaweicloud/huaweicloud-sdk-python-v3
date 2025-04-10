@@ -31,7 +31,7 @@ class ChatSubtitleConfig:
     }
 
     def __init__(self, dx=None, dy=None, width=None, height=None):
-        """ChatSubtitleConfig
+        r"""ChatSubtitleConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ChatSubtitleConfig:
 
     @property
     def dx(self):
-        """Gets the dx of this ChatSubtitleConfig.
+        r"""Gets the dx of this ChatSubtitleConfig.
 
         **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -75,7 +75,7 @@ class ChatSubtitleConfig:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this ChatSubtitleConfig.
+        r"""Sets the dx of this ChatSubtitleConfig.
 
         **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -86,7 +86,7 @@ class ChatSubtitleConfig:
 
     @property
     def dy(self):
-        """Gets the dy of this ChatSubtitleConfig.
+        r"""Gets the dy of this ChatSubtitleConfig.
 
         **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -97,7 +97,7 @@ class ChatSubtitleConfig:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this ChatSubtitleConfig.
+        r"""Sets the dy of this ChatSubtitleConfig.
 
         **参数解释**： 字幕左上角像素点坐标。  横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
@@ -108,7 +108,7 @@ class ChatSubtitleConfig:
 
     @property
     def width(self):
-        """Gets the width of this ChatSubtitleConfig.
+        r"""Gets the width of this ChatSubtitleConfig.
 
         **参数解释**： 图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
@@ -119,7 +119,7 @@ class ChatSubtitleConfig:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this ChatSubtitleConfig.
+        r"""Sets the width of this ChatSubtitleConfig.
 
         **参数解释**： 图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
@@ -130,7 +130,7 @@ class ChatSubtitleConfig:
 
     @property
     def height(self):
-        """Gets the height of this ChatSubtitleConfig.
+        r"""Gets the height of this ChatSubtitleConfig.
 
         **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 
@@ -141,7 +141,7 @@ class ChatSubtitleConfig:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this ChatSubtitleConfig.
+        r"""Sets the height of this ChatSubtitleConfig.
 
         **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。
 

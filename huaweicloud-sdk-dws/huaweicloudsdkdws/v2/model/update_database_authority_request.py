@@ -27,7 +27,7 @@ class UpdateDatabaseAuthorityRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateDatabaseAuthorityRequest
+        r"""UpdateDatabaseAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDatabaseAuthorityRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateDatabaseAuthorityRequest.
+        r"""Gets the cluster_id of this UpdateDatabaseAuthorityRequest.
 
         cluster_id
 
@@ -60,7 +60,7 @@ class UpdateDatabaseAuthorityRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateDatabaseAuthorityRequest.
+        r"""Sets the cluster_id of this UpdateDatabaseAuthorityRequest.
 
         cluster_id
 
@@ -71,7 +71,7 @@ class UpdateDatabaseAuthorityRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatabaseAuthorityRequest.
+        r"""Gets the body of this UpdateDatabaseAuthorityRequest.
 
         :return: The body of this UpdateDatabaseAuthorityRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.DatabasePermissionReq`
@@ -80,7 +80,7 @@ class UpdateDatabaseAuthorityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatabaseAuthorityRequest.
+        r"""Sets the body of this UpdateDatabaseAuthorityRequest.
 
         :param body: The body of this UpdateDatabaseAuthorityRequest.
         :type body: :class:`huaweicloudsdkdws.v2.DatabasePermissionReq`

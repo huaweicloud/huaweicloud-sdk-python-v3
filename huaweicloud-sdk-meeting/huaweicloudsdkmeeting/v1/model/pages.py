@@ -29,7 +29,7 @@ class Pages:
     }
 
     def __init__(self, offset=None, limit=None, count=None):
-        """Pages
+        r"""Pages
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Pages:
 
     @property
     def offset(self):
-        """Gets the offset of this Pages.
+        r"""Gets the offset of this Pages.
 
         页面起始页，从0开始。
 
@@ -68,7 +68,7 @@ class Pages:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this Pages.
+        r"""Sets the offset of this Pages.
 
         页面起始页，从0开始。
 
@@ -79,7 +79,7 @@ class Pages:
 
     @property
     def limit(self):
-        """Gets the limit of this Pages.
+        r"""Gets the limit of this Pages.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -90,7 +90,7 @@ class Pages:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this Pages.
+        r"""Sets the limit of this Pages.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -101,7 +101,7 @@ class Pages:
 
     @property
     def count(self):
-        """Gets the count of this Pages.
+        r"""Gets the count of this Pages.
 
         总数量。
 
@@ -112,7 +112,7 @@ class Pages:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this Pages.
+        r"""Sets the count of this Pages.
 
         总数量。
 

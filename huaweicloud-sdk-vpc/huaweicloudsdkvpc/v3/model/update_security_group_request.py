@@ -27,7 +27,7 @@ class UpdateSecurityGroupRequest:
     }
 
     def __init__(self, security_group_id=None, body=None):
-        """UpdateSecurityGroupRequest
+        r"""UpdateSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSecurityGroupRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this UpdateSecurityGroupRequest.
+        r"""Gets the security_group_id of this UpdateSecurityGroupRequest.
 
         安全组ID
 
@@ -60,7 +60,7 @@ class UpdateSecurityGroupRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this UpdateSecurityGroupRequest.
+        r"""Sets the security_group_id of this UpdateSecurityGroupRequest.
 
         安全组ID
 
@@ -71,7 +71,7 @@ class UpdateSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityGroupRequest.
+        r"""Gets the body of this UpdateSecurityGroupRequest.
 
         :return: The body of this UpdateSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequestBody`
@@ -80,7 +80,7 @@ class UpdateSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityGroupRequest.
+        r"""Sets the body of this UpdateSecurityGroupRequest.
 
         :param body: The body of this UpdateSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequestBody`

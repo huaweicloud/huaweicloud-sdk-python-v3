@@ -34,7 +34,7 @@ class ShowAssetDetailResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, base_info=None, transcode_info=None, thumbnail_info=None, review_info=None):
-        """ShowAssetDetailResponse
+        r"""ShowAssetDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetDetailResponse.
+        r"""Gets the asset_id of this ShowAssetDetailResponse.
 
         媒资ID。
 
@@ -83,7 +83,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetDetailResponse.
+        r"""Sets the asset_id of this ShowAssetDetailResponse.
 
         媒资ID。
 
@@ -94,7 +94,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @property
     def base_info(self):
-        """Gets the base_info of this ShowAssetDetailResponse.
+        r"""Gets the base_info of this ShowAssetDetailResponse.
 
         :return: The base_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -103,7 +103,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this ShowAssetDetailResponse.
+        r"""Sets the base_info of this ShowAssetDetailResponse.
 
         :param base_info: The base_info of this ShowAssetDetailResponse.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -112,7 +112,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @property
     def transcode_info(self):
-        """Gets the transcode_info of this ShowAssetDetailResponse.
+        r"""Gets the transcode_info of this ShowAssetDetailResponse.
 
         :return: The transcode_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
@@ -121,7 +121,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @transcode_info.setter
     def transcode_info(self, transcode_info):
-        """Sets the transcode_info of this ShowAssetDetailResponse.
+        r"""Sets the transcode_info of this ShowAssetDetailResponse.
 
         :param transcode_info: The transcode_info of this ShowAssetDetailResponse.
         :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
@@ -130,7 +130,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @property
     def thumbnail_info(self):
-        """Gets the thumbnail_info of this ShowAssetDetailResponse.
+        r"""Gets the thumbnail_info of this ShowAssetDetailResponse.
 
         :return: The thumbnail_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
@@ -139,7 +139,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @thumbnail_info.setter
     def thumbnail_info(self, thumbnail_info):
-        """Sets the thumbnail_info of this ShowAssetDetailResponse.
+        r"""Sets the thumbnail_info of this ShowAssetDetailResponse.
 
         :param thumbnail_info: The thumbnail_info of this ShowAssetDetailResponse.
         :type thumbnail_info: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
@@ -148,7 +148,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @property
     def review_info(self):
-        """Gets the review_info of this ShowAssetDetailResponse.
+        r"""Gets the review_info of this ShowAssetDetailResponse.
 
         :return: The review_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.ReviewInfo`
@@ -157,7 +157,7 @@ class ShowAssetDetailResponse(SdkResponse):
 
     @review_info.setter
     def review_info(self, review_info):
-        """Sets the review_info of this ShowAssetDetailResponse.
+        r"""Sets the review_info of this ShowAssetDetailResponse.
 
         :param review_info: The review_info of this ShowAssetDetailResponse.
         :type review_info: :class:`huaweicloudsdkvod.v1.ReviewInfo`

@@ -33,7 +33,7 @@ class ListFactoryAlarmInfoRequest:
     }
 
     def __init__(self, workspace=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListFactoryAlarmInfoRequest
+        r"""ListFactoryAlarmInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListFactoryAlarmInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListFactoryAlarmInfoRequest.
+        r"""Gets the workspace of this ListFactoryAlarmInfoRequest.
 
         工作空间ID
 
@@ -82,7 +82,7 @@ class ListFactoryAlarmInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListFactoryAlarmInfoRequest.
+        r"""Sets the workspace of this ListFactoryAlarmInfoRequest.
 
         工作空间ID
 
@@ -93,7 +93,7 @@ class ListFactoryAlarmInfoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListFactoryAlarmInfoRequest.
+        r"""Gets the start_time of this ListFactoryAlarmInfoRequest.
 
         告警的开始时间，默认当前时间的前一个小时，13位时间戳
 
@@ -104,7 +104,7 @@ class ListFactoryAlarmInfoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListFactoryAlarmInfoRequest.
+        r"""Sets the start_time of this ListFactoryAlarmInfoRequest.
 
         告警的开始时间，默认当前时间的前一个小时，13位时间戳
 
@@ -115,7 +115,7 @@ class ListFactoryAlarmInfoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListFactoryAlarmInfoRequest.
+        r"""Gets the end_time of this ListFactoryAlarmInfoRequest.
 
         告警的最后时间，默认为当前时间，13位时间戳
 
@@ -126,7 +126,7 @@ class ListFactoryAlarmInfoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListFactoryAlarmInfoRequest.
+        r"""Sets the end_time of this ListFactoryAlarmInfoRequest.
 
         告警的最后时间，默认为当前时间，13位时间戳
 
@@ -137,7 +137,7 @@ class ListFactoryAlarmInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFactoryAlarmInfoRequest.
+        r"""Gets the offset of this ListFactoryAlarmInfoRequest.
 
         分页的起始页，默认值为0。取值范围大于等于0。
 
@@ -148,7 +148,7 @@ class ListFactoryAlarmInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFactoryAlarmInfoRequest.
+        r"""Sets the offset of this ListFactoryAlarmInfoRequest.
 
         分页的起始页，默认值为0。取值范围大于等于0。
 
@@ -159,7 +159,7 @@ class ListFactoryAlarmInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFactoryAlarmInfoRequest.
+        r"""Gets the limit of this ListFactoryAlarmInfoRequest.
 
         分页返回结果，指定每页最大记录数。默认值10
 
@@ -170,7 +170,7 @@ class ListFactoryAlarmInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFactoryAlarmInfoRequest.
+        r"""Sets the limit of this ListFactoryAlarmInfoRequest.
 
         分页返回结果，指定每页最大记录数。默认值10
 

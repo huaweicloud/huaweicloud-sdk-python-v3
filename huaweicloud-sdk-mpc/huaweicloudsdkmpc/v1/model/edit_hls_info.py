@@ -25,7 +25,7 @@ class EditHlsInfo:
     }
 
     def __init__(self, interval=None):
-        """EditHlsInfo
+        r"""EditHlsInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EditHlsInfo:
 
     @property
     def interval(self):
-        """Gets the interval of this EditHlsInfo.
+        r"""Gets the interval of this EditHlsInfo.
 
         切片间隔。
 
@@ -54,7 +54,7 @@ class EditHlsInfo:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this EditHlsInfo.
+        r"""Sets the interval of this EditHlsInfo.
 
         切片间隔。
 

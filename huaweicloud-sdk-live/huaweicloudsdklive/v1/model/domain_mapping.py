@@ -27,7 +27,7 @@ class DomainMapping:
     }
 
     def __init__(self, pull_domain=None, push_domain=None):
-        """DomainMapping
+        r"""DomainMapping
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DomainMapping:
 
     @property
     def pull_domain(self):
-        """Gets the pull_domain of this DomainMapping.
+        r"""Gets the pull_domain of this DomainMapping.
 
         直播播放域名
 
@@ -59,7 +59,7 @@ class DomainMapping:
 
     @pull_domain.setter
     def pull_domain(self, pull_domain):
-        """Sets the pull_domain of this DomainMapping.
+        r"""Sets the pull_domain of this DomainMapping.
 
         直播播放域名
 
@@ -70,7 +70,7 @@ class DomainMapping:
 
     @property
     def push_domain(self):
-        """Gets the push_domain of this DomainMapping.
+        r"""Gets the push_domain of this DomainMapping.
 
         直播播放域名关联的推流域名
 
@@ -81,7 +81,7 @@ class DomainMapping:
 
     @push_domain.setter
     def push_domain(self, push_domain):
-        """Sets the push_domain of this DomainMapping.
+        r"""Sets the push_domain of this DomainMapping.
 
         直播播放域名关联的推流域名
 

@@ -27,7 +27,7 @@ class CreatePublicipTagRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """CreatePublicipTagRequest
+        r"""CreatePublicipTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePublicipTagRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this CreatePublicipTagRequest.
+        r"""Gets the publicip_id of this CreatePublicipTagRequest.
 
         资源ID
 
@@ -60,7 +60,7 @@ class CreatePublicipTagRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this CreatePublicipTagRequest.
+        r"""Sets the publicip_id of this CreatePublicipTagRequest.
 
         资源ID
 
@@ -71,7 +71,7 @@ class CreatePublicipTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePublicipTagRequest.
+        r"""Gets the body of this CreatePublicipTagRequest.
 
         :return: The body of this CreatePublicipTagRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipTagRequestBody`
@@ -80,7 +80,7 @@ class CreatePublicipTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePublicipTagRequest.
+        r"""Sets the body of this CreatePublicipTagRequest.
 
         :param body: The body of this CreatePublicipTagRequest.
         :type body: :class:`huaweicloudsdkeip.v2.CreatePublicipTagRequestBody`

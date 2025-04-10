@@ -28,7 +28,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
     }
 
     def __init__(self, features=None, request_id=None):
-        """ListLoadbalancerFeatureResponse
+        r"""ListLoadbalancerFeatureResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
 
     @property
     def features(self):
-        """Gets the features of this ListLoadbalancerFeatureResponse.
+        r"""Gets the features of this ListLoadbalancerFeatureResponse.
 
         参数解释：ELB实例特性信息列表。
 
@@ -62,7 +62,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
 
     @features.setter
     def features(self, features):
-        """Sets the features of this ListLoadbalancerFeatureResponse.
+        r"""Sets the features of this ListLoadbalancerFeatureResponse.
 
         参数解释：ELB实例特性信息列表。
 
@@ -73,7 +73,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListLoadbalancerFeatureResponse.
+        r"""Gets the request_id of this ListLoadbalancerFeatureResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -84,7 +84,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListLoadbalancerFeatureResponse.
+        r"""Sets the request_id of this ListLoadbalancerFeatureResponse.
 
         参数解释：请求ID。  注：自动生成 。
 

@@ -27,7 +27,7 @@ class OpenAPISpecSpec:
     }
 
     def __init__(self, eip=None, is_dynamic=None):
-        """OpenAPISpecSpec
+        r"""OpenAPISpecSpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenAPISpecSpec:
 
     @property
     def eip(self):
-        """Gets the eip of this OpenAPISpecSpec.
+        r"""Gets the eip of this OpenAPISpecSpec.
 
         :return: The eip of this OpenAPISpecSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.EipSpec`
@@ -59,7 +59,7 @@ class OpenAPISpecSpec:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this OpenAPISpecSpec.
+        r"""Sets the eip of this OpenAPISpecSpec.
 
         :param eip: The eip of this OpenAPISpecSpec.
         :type eip: :class:`huaweicloudsdkcce.v3.EipSpec`
@@ -68,7 +68,7 @@ class OpenAPISpecSpec:
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this OpenAPISpecSpec.
+        r"""Gets the is_dynamic of this OpenAPISpecSpec.
 
         是否动态创建
 
@@ -79,7 +79,7 @@ class OpenAPISpecSpec:
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this OpenAPISpecSpec.
+        r"""Sets the is_dynamic of this OpenAPISpecSpec.
 
         是否动态创建
 

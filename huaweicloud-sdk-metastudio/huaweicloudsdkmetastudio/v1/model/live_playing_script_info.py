@@ -29,7 +29,7 @@ class LivePlayingScriptInfo:
     }
 
     def __init__(self, script_name=None, model_asset_id=None, shoot_scripts=None):
-        """LivePlayingScriptInfo
+        r"""LivePlayingScriptInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LivePlayingScriptInfo:
 
     @property
     def script_name(self):
-        """Gets the script_name of this LivePlayingScriptInfo.
+        r"""Gets the script_name of this LivePlayingScriptInfo.
 
         剧本名称
 
@@ -68,7 +68,7 @@ class LivePlayingScriptInfo:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this LivePlayingScriptInfo.
+        r"""Sets the script_name of this LivePlayingScriptInfo.
 
         剧本名称
 
@@ -79,7 +79,7 @@ class LivePlayingScriptInfo:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this LivePlayingScriptInfo.
+        r"""Gets the model_asset_id of this LivePlayingScriptInfo.
 
         数字人模型资产ID，可以从资产库中查询。
 
@@ -90,7 +90,7 @@ class LivePlayingScriptInfo:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this LivePlayingScriptInfo.
+        r"""Sets the model_asset_id of this LivePlayingScriptInfo.
 
         数字人模型资产ID，可以从资产库中查询。
 
@@ -101,7 +101,7 @@ class LivePlayingScriptInfo:
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this LivePlayingScriptInfo.
+        r"""Gets the shoot_scripts of this LivePlayingScriptInfo.
 
         拍摄脚本列表。
 
@@ -112,7 +112,7 @@ class LivePlayingScriptInfo:
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this LivePlayingScriptInfo.
+        r"""Sets the shoot_scripts of this LivePlayingScriptInfo.
 
         拍摄脚本列表。
 

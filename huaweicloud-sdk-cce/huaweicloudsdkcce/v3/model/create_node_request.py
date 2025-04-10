@@ -29,7 +29,7 @@ class CreateNodeRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_scale_up=None, body=None):
-        """CreateNodeRequest
+        r"""CreateNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateNodeRequest.
+        r"""Gets the cluster_id of this CreateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -67,7 +67,7 @@ class CreateNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateNodeRequest.
+        r"""Sets the cluster_id of this CreateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -78,7 +78,7 @@ class CreateNodeRequest:
 
     @property
     def nodepool_scale_up(self):
-        """Gets the nodepool_scale_up of this CreateNodeRequest.
+        r"""Gets the nodepool_scale_up of this CreateNodeRequest.
 
         标明是否为nodepool下发的请求。若不为“NodepoolScaleUp”将自动更新对应节点池的实例数
 
@@ -89,7 +89,7 @@ class CreateNodeRequest:
 
     @nodepool_scale_up.setter
     def nodepool_scale_up(self, nodepool_scale_up):
-        """Sets the nodepool_scale_up of this CreateNodeRequest.
+        r"""Sets the nodepool_scale_up of this CreateNodeRequest.
 
         标明是否为nodepool下发的请求。若不为“NodepoolScaleUp”将自动更新对应节点池的实例数
 
@@ -100,7 +100,7 @@ class CreateNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNodeRequest.
+        r"""Gets the body of this CreateNodeRequest.
 
         :return: The body of this CreateNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`
@@ -109,7 +109,7 @@ class CreateNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNodeRequest.
+        r"""Sets the body of this CreateNodeRequest.
 
         :param body: The body of this CreateNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`

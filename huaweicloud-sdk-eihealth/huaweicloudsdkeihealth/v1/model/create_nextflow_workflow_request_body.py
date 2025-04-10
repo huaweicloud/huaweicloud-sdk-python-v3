@@ -35,7 +35,7 @@ class CreateNextflowWorkflowRequestBody:
     }
 
     def __init__(self, workflow_file=None, name=None, description=None, labels=None, main_file=None, params=None):
-        """CreateNextflowWorkflowRequestBody
+        r"""CreateNextflowWorkflowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @property
     def workflow_file(self):
-        """Gets the workflow_file of this CreateNextflowWorkflowRequestBody.
+        r"""Gets the workflow_file of this CreateNextflowWorkflowRequestBody.
 
         流程文件，文件大小[0,10M]
 
@@ -86,7 +86,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @workflow_file.setter
     def workflow_file(self, workflow_file):
-        """Sets the workflow_file of this CreateNextflowWorkflowRequestBody.
+        r"""Sets the workflow_file of this CreateNextflowWorkflowRequestBody.
 
         流程文件，文件大小[0,10M]
 
@@ -97,7 +97,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateNextflowWorkflowRequestBody.
+        r"""Gets the name of this CreateNextflowWorkflowRequestBody.
 
         流程名称，取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。更新流程时，流程名称不支持修改。
 
@@ -108,7 +108,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNextflowWorkflowRequestBody.
+        r"""Sets the name of this CreateNextflowWorkflowRequestBody.
 
         流程名称，取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。更新流程时，流程名称不支持修改。
 
@@ -119,7 +119,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateNextflowWorkflowRequestBody.
+        r"""Gets the description of this CreateNextflowWorkflowRequestBody.
 
         流程描述 取值范围[0,65535]
 
@@ -130,7 +130,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNextflowWorkflowRequestBody.
+        r"""Sets the description of this CreateNextflowWorkflowRequestBody.
 
         流程描述 取值范围[0,65535]
 
@@ -141,7 +141,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateNextflowWorkflowRequestBody.
+        r"""Gets the labels of this CreateNextflowWorkflowRequestBody.
 
         流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -152,7 +152,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateNextflowWorkflowRequestBody.
+        r"""Sets the labels of this CreateNextflowWorkflowRequestBody.
 
         流程标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -163,7 +163,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @property
     def main_file(self):
-        """Gets the main_file of this CreateNextflowWorkflowRequestBody.
+        r"""Gets the main_file of this CreateNextflowWorkflowRequestBody.
 
         主文件名
 
@@ -174,7 +174,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @main_file.setter
     def main_file(self, main_file):
-        """Sets the main_file of this CreateNextflowWorkflowRequestBody.
+        r"""Sets the main_file of this CreateNextflowWorkflowRequestBody.
 
         主文件名
 
@@ -185,7 +185,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this CreateNextflowWorkflowRequestBody.
+        r"""Gets the params of this CreateNextflowWorkflowRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 
@@ -196,7 +196,7 @@ class CreateNextflowWorkflowRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateNextflowWorkflowRequestBody.
+        r"""Sets the params of this CreateNextflowWorkflowRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 

@@ -30,7 +30,7 @@ class CreateConnectionInfoResponse(SdkResponse):
     }
 
     def __init__(self, res_code=None, res_log=None, res_msg=None):
-        """CreateConnectionInfoResponse
+        r"""CreateConnectionInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateConnectionInfoResponse(SdkResponse):
 
     @property
     def res_code(self):
-        """Gets the res_code of this CreateConnectionInfoResponse.
+        r"""Gets the res_code of this CreateConnectionInfoResponse.
 
         状态码
 
@@ -69,7 +69,7 @@ class CreateConnectionInfoResponse(SdkResponse):
 
     @res_code.setter
     def res_code(self, res_code):
-        """Sets the res_code of this CreateConnectionInfoResponse.
+        r"""Sets the res_code of this CreateConnectionInfoResponse.
 
         状态码
 
@@ -80,7 +80,7 @@ class CreateConnectionInfoResponse(SdkResponse):
 
     @property
     def res_log(self):
-        """Gets the res_log of this CreateConnectionInfoResponse.
+        r"""Gets the res_log of this CreateConnectionInfoResponse.
 
         成功信息
 
@@ -91,7 +91,7 @@ class CreateConnectionInfoResponse(SdkResponse):
 
     @res_log.setter
     def res_log(self, res_log):
-        """Sets the res_log of this CreateConnectionInfoResponse.
+        r"""Sets the res_log of this CreateConnectionInfoResponse.
 
         成功信息
 
@@ -102,7 +102,7 @@ class CreateConnectionInfoResponse(SdkResponse):
 
     @property
     def res_msg(self):
-        """Gets the res_msg of this CreateConnectionInfoResponse.
+        r"""Gets the res_msg of this CreateConnectionInfoResponse.
 
         成功信息
 
@@ -113,7 +113,7 @@ class CreateConnectionInfoResponse(SdkResponse):
 
     @res_msg.setter
     def res_msg(self, res_msg):
-        """Sets the res_msg of this CreateConnectionInfoResponse.
+        r"""Sets the res_msg of this CreateConnectionInfoResponse.
 
         成功信息
 

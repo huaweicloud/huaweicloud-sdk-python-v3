@@ -34,7 +34,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, equipment_id=None, url_config_content=None, script_config_content=None, expire_at=None):
-        """GenerateInitialConfigurationResponse
+        r"""GenerateInitialConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this GenerateInitialConfigurationResponse.
+        r"""Gets the equipment_id of this GenerateInitialConfigurationResponse.
 
         智能企业网关设备ID
 
@@ -78,7 +78,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this GenerateInitialConfigurationResponse.
+        r"""Sets the equipment_id of this GenerateInitialConfigurationResponse.
 
         智能企业网关设备ID
 
@@ -89,7 +89,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @property
     def url_config_content(self):
-        """Gets the url_config_content of this GenerateInitialConfigurationResponse.
+        r"""Gets the url_config_content of this GenerateInitialConfigurationResponse.
 
         初始配置URL
 
@@ -100,7 +100,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @url_config_content.setter
     def url_config_content(self, url_config_content):
-        """Sets the url_config_content of this GenerateInitialConfigurationResponse.
+        r"""Sets the url_config_content of this GenerateInitialConfigurationResponse.
 
         初始配置URL
 
@@ -111,7 +111,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @property
     def script_config_content(self):
-        """Gets the script_config_content of this GenerateInitialConfigurationResponse.
+        r"""Gets the script_config_content of this GenerateInitialConfigurationResponse.
 
         初始配置文件
 
@@ -122,7 +122,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @script_config_content.setter
     def script_config_content(self, script_config_content):
-        """Sets the script_config_content of this GenerateInitialConfigurationResponse.
+        r"""Sets the script_config_content of this GenerateInitialConfigurationResponse.
 
         初始配置文件
 
@@ -133,7 +133,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @property
     def expire_at(self):
-        """Gets the expire_at of this GenerateInitialConfigurationResponse.
+        r"""Gets the expire_at of this GenerateInitialConfigurationResponse.
 
         URL失效时间
 
@@ -144,7 +144,7 @@ class GenerateInitialConfigurationResponse(SdkResponse):
 
     @expire_at.setter
     def expire_at(self, expire_at):
-        """Sets the expire_at of this GenerateInitialConfigurationResponse.
+        r"""Sets the expire_at of this GenerateInitialConfigurationResponse.
 
         URL失效时间
 

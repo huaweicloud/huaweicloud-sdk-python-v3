@@ -31,7 +31,7 @@ class ListMetricRelationsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, id=None, biz_type=None):
-        """ListMetricRelationsRequest
+        r"""ListMetricRelationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListMetricRelationsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListMetricRelationsRequest.
+        r"""Gets the workspace of this ListMetricRelationsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -72,7 +72,7 @@ class ListMetricRelationsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListMetricRelationsRequest.
+        r"""Sets the workspace of this ListMetricRelationsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -83,7 +83,7 @@ class ListMetricRelationsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListMetricRelationsRequest.
+        r"""Gets the x_project_id of this ListMetricRelationsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -94,7 +94,7 @@ class ListMetricRelationsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListMetricRelationsRequest.
+        r"""Sets the x_project_id of this ListMetricRelationsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -105,7 +105,7 @@ class ListMetricRelationsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListMetricRelationsRequest.
+        r"""Gets the id of this ListMetricRelationsRequest.
 
         实体ID，ID字符串。
 
@@ -116,7 +116,7 @@ class ListMetricRelationsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListMetricRelationsRequest.
+        r"""Sets the id of this ListMetricRelationsRequest.
 
         实体ID，ID字符串。
 
@@ -127,7 +127,7 @@ class ListMetricRelationsRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ListMetricRelationsRequest.
+        r"""Gets the biz_type of this ListMetricRelationsRequest.
 
         指标类型。
 
@@ -138,7 +138,7 @@ class ListMetricRelationsRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ListMetricRelationsRequest.
+        r"""Sets the biz_type of this ListMetricRelationsRequest.
 
         指标类型。
 

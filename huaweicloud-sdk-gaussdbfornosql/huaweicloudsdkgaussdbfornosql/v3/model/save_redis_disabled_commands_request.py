@@ -27,7 +27,7 @@ class SaveRedisDisabledCommandsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SaveRedisDisabledCommandsRequest
+        r"""SaveRedisDisabledCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SaveRedisDisabledCommandsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SaveRedisDisabledCommandsRequest.
+        r"""Gets the instance_id of this SaveRedisDisabledCommandsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SaveRedisDisabledCommandsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SaveRedisDisabledCommandsRequest.
+        r"""Sets the instance_id of this SaveRedisDisabledCommandsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SaveRedisDisabledCommandsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SaveRedisDisabledCommandsRequest.
+        r"""Gets the body of this SaveRedisDisabledCommandsRequest.
 
         :return: The body of this SaveRedisDisabledCommandsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveRedisDisabledCommandsRequestBody`
@@ -80,7 +80,7 @@ class SaveRedisDisabledCommandsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SaveRedisDisabledCommandsRequest.
+        r"""Sets the body of this SaveRedisDisabledCommandsRequest.
 
         :param body: The body of this SaveRedisDisabledCommandsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveRedisDisabledCommandsRequestBody`

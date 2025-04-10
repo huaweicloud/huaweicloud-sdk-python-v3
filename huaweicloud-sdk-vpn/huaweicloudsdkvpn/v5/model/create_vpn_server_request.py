@@ -30,7 +30,7 @@ class CreateVpnServerRequest:
     }
 
     def __init__(self, p2c_vgw_id=None, x_client_token=None, body=None):
-        """CreateVpnServerRequest
+        r"""CreateVpnServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVpnServerRequest:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this CreateVpnServerRequest.
+        r"""Gets the p2c_vgw_id of this CreateVpnServerRequest.
 
         P2C VPN网关实例ID
 
@@ -68,7 +68,7 @@ class CreateVpnServerRequest:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this CreateVpnServerRequest.
+        r"""Sets the p2c_vgw_id of this CreateVpnServerRequest.
 
         P2C VPN网关实例ID
 
@@ -79,7 +79,7 @@ class CreateVpnServerRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVpnServerRequest.
+        r"""Gets the x_client_token of this CreateVpnServerRequest.
 
         幂等性标识
 
@@ -90,7 +90,7 @@ class CreateVpnServerRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVpnServerRequest.
+        r"""Sets the x_client_token of this CreateVpnServerRequest.
 
         幂等性标识
 
@@ -101,7 +101,7 @@ class CreateVpnServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpnServerRequest.
+        r"""Gets the body of this CreateVpnServerRequest.
 
         :return: The body of this CreateVpnServerRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateServerRequestBody`
@@ -110,7 +110,7 @@ class CreateVpnServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpnServerRequest.
+        r"""Sets the body of this CreateVpnServerRequest.
 
         :param body: The body of this CreateVpnServerRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateServerRequestBody`

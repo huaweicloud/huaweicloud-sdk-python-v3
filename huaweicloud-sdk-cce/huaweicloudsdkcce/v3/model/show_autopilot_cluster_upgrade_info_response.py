@@ -34,7 +34,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """ShowAutopilotClusterUpgradeInfoResponse
+        r"""ShowAutopilotClusterUpgradeInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Gets the kind of this ShowAutopilotClusterUpgradeInfoResponse.
 
         类型
 
@@ -83,7 +83,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Sets the kind of this ShowAutopilotClusterUpgradeInfoResponse.
 
         类型
 
@@ -94,7 +94,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Gets the api_version of this ShowAutopilotClusterUpgradeInfoResponse.
 
         API版本
 
@@ -105,7 +105,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Sets the api_version of this ShowAutopilotClusterUpgradeInfoResponse.
 
         API版本
 
@@ -116,7 +116,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Gets the metadata of this ShowAutopilotClusterUpgradeInfoResponse.
 
         :return: The metadata of this ShowAutopilotClusterUpgradeInfoResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -125,7 +125,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Sets the metadata of this ShowAutopilotClusterUpgradeInfoResponse.
 
         :param metadata: The metadata of this ShowAutopilotClusterUpgradeInfoResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -134,7 +134,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Gets the spec of this ShowAutopilotClusterUpgradeInfoResponse.
 
         :return: The spec of this ShowAutopilotClusterUpgradeInfoResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeInfoSpec`
@@ -143,7 +143,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Sets the spec of this ShowAutopilotClusterUpgradeInfoResponse.
 
         :param spec: The spec of this ShowAutopilotClusterUpgradeInfoResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradeInfoSpec`
@@ -152,7 +152,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Gets the status of this ShowAutopilotClusterUpgradeInfoResponse.
 
         :return: The status of this ShowAutopilotClusterUpgradeInfoResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeInfoStatus`
@@ -161,7 +161,7 @@ class ShowAutopilotClusterUpgradeInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAutopilotClusterUpgradeInfoResponse.
+        r"""Sets the status of this ShowAutopilotClusterUpgradeInfoResponse.
 
         :param status: The status of this ShowAutopilotClusterUpgradeInfoResponse.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeInfoStatus`

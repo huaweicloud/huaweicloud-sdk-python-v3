@@ -29,7 +29,7 @@ class HtapInstanceListAvailableZones:
     }
 
     def __init__(self, code=None, description=None, az_type=None):
-        """HtapInstanceListAvailableZones
+        r"""HtapInstanceListAvailableZones
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HtapInstanceListAvailableZones:
 
     @property
     def code(self):
-        """Gets the code of this HtapInstanceListAvailableZones.
+        r"""Gets the code of this HtapInstanceListAvailableZones.
 
         可用区码。
 
@@ -68,7 +68,7 @@ class HtapInstanceListAvailableZones:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this HtapInstanceListAvailableZones.
+        r"""Sets the code of this HtapInstanceListAvailableZones.
 
         可用区码。
 
@@ -79,7 +79,7 @@ class HtapInstanceListAvailableZones:
 
     @property
     def description(self):
-        """Gets the description of this HtapInstanceListAvailableZones.
+        r"""Gets the description of this HtapInstanceListAvailableZones.
 
         可用区描述。
 
@@ -90,7 +90,7 @@ class HtapInstanceListAvailableZones:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HtapInstanceListAvailableZones.
+        r"""Sets the description of this HtapInstanceListAvailableZones.
 
         可用区描述。
 
@@ -101,7 +101,7 @@ class HtapInstanceListAvailableZones:
 
     @property
     def az_type(self):
-        """Gets the az_type of this HtapInstanceListAvailableZones.
+        r"""Gets the az_type of this HtapInstanceListAvailableZones.
 
         可用区类型。
 
@@ -112,7 +112,7 @@ class HtapInstanceListAvailableZones:
 
     @az_type.setter
     def az_type(self, az_type):
-        """Sets the az_type of this HtapInstanceListAvailableZones.
+        r"""Sets the az_type of this HtapInstanceListAvailableZones.
 
         可用区类型。
 

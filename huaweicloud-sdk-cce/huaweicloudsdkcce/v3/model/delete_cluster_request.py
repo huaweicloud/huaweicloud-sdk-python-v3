@@ -47,7 +47,7 @@ class DeleteClusterRequest:
     }
 
     def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, delete_sfs30=None, lts_reclaim_policy=None, tobedeleted=None, ondemand_node_policy=None, periodic_node_policy=None):
-        """DeleteClusterRequest
+        r"""DeleteClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class DeleteClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteClusterRequest.
+        r"""Gets the cluster_id of this DeleteClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -130,7 +130,7 @@ class DeleteClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteClusterRequest.
+        r"""Sets the cluster_id of this DeleteClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -141,7 +141,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_efs(self):
-        """Gets the delete_efs of this DeleteClusterRequest.
+        r"""Gets the delete_efs of this DeleteClusterRequest.
 
         是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -152,7 +152,7 @@ class DeleteClusterRequest:
 
     @delete_efs.setter
     def delete_efs(self, delete_efs):
-        """Sets the delete_efs of this DeleteClusterRequest.
+        r"""Sets the delete_efs of this DeleteClusterRequest.
 
         是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -163,7 +163,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_eni(self):
-        """Gets the delete_eni of this DeleteClusterRequest.
+        r"""Gets the delete_eni of this DeleteClusterRequest.
 
         是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -174,7 +174,7 @@ class DeleteClusterRequest:
 
     @delete_eni.setter
     def delete_eni(self, delete_eni):
-        """Sets the delete_eni of this DeleteClusterRequest.
+        r"""Sets the delete_eni of this DeleteClusterRequest.
 
         是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -185,7 +185,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_evs(self):
-        """Gets the delete_evs of this DeleteClusterRequest.
+        r"""Gets the delete_evs of this DeleteClusterRequest.
 
         是否删除evs（云硬盘）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -196,7 +196,7 @@ class DeleteClusterRequest:
 
     @delete_evs.setter
     def delete_evs(self, delete_evs):
-        """Sets the delete_evs of this DeleteClusterRequest.
+        r"""Sets the delete_evs of this DeleteClusterRequest.
 
         是否删除evs（云硬盘）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -207,7 +207,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_net(self):
-        """Gets the delete_net of this DeleteClusterRequest.
+        r"""Gets the delete_net of this DeleteClusterRequest.
 
         是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -218,7 +218,7 @@ class DeleteClusterRequest:
 
     @delete_net.setter
     def delete_net(self, delete_net):
-        """Sets the delete_net of this DeleteClusterRequest.
+        r"""Sets the delete_net of this DeleteClusterRequest.
 
         是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
@@ -229,7 +229,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_obs(self):
-        """Gets the delete_obs of this DeleteClusterRequest.
+        r"""Gets the delete_obs of this DeleteClusterRequest.
 
         是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -240,7 +240,7 @@ class DeleteClusterRequest:
 
     @delete_obs.setter
     def delete_obs(self, delete_obs):
-        """Sets the delete_obs of this DeleteClusterRequest.
+        r"""Sets the delete_obs of this DeleteClusterRequest.
 
         是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -251,7 +251,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_sfs(self):
-        """Gets the delete_sfs of this DeleteClusterRequest.
+        r"""Gets the delete_sfs of this DeleteClusterRequest.
 
         是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -262,7 +262,7 @@ class DeleteClusterRequest:
 
     @delete_sfs.setter
     def delete_sfs(self, delete_sfs):
-        """Sets the delete_sfs of this DeleteClusterRequest.
+        r"""Sets the delete_sfs of this DeleteClusterRequest.
 
         是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -273,7 +273,7 @@ class DeleteClusterRequest:
 
     @property
     def delete_sfs30(self):
-        """Gets the delete_sfs30 of this DeleteClusterRequest.
+        r"""Gets the delete_sfs30 of this DeleteClusterRequest.
 
         是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -284,7 +284,7 @@ class DeleteClusterRequest:
 
     @delete_sfs30.setter
     def delete_sfs30(self, delete_sfs30):
-        """Sets the delete_sfs30 of this DeleteClusterRequest.
+        r"""Sets the delete_sfs30 of this DeleteClusterRequest.
 
         是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -295,7 +295,7 @@ class DeleteClusterRequest:
 
     @property
     def lts_reclaim_policy(self):
-        """Gets the lts_reclaim_policy of this DeleteClusterRequest.
+        r"""Gets the lts_reclaim_policy of this DeleteClusterRequest.
 
         是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -306,7 +306,7 @@ class DeleteClusterRequest:
 
     @lts_reclaim_policy.setter
     def lts_reclaim_policy(self, lts_reclaim_policy):
-        """Sets the lts_reclaim_policy of this DeleteClusterRequest.
+        r"""Sets the lts_reclaim_policy of this DeleteClusterRequest.
 
         是否删除LTS LogStream（日志流）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
@@ -317,7 +317,7 @@ class DeleteClusterRequest:
 
     @property
     def tobedeleted(self):
-        """Gets the tobedeleted of this DeleteClusterRequest.
+        r"""Gets the tobedeleted of this DeleteClusterRequest.
 
         是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。  需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。  使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。  允许重复执行，覆盖预置的删除参数。  枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
 
@@ -328,7 +328,7 @@ class DeleteClusterRequest:
 
     @tobedeleted.setter
     def tobedeleted(self, tobedeleted):
-        """Sets the tobedeleted of this DeleteClusterRequest.
+        r"""Sets the tobedeleted of this DeleteClusterRequest.
 
         是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。  需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。  使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。  允许重复执行，覆盖预置的删除参数。  枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
 
@@ -339,7 +339,7 @@ class DeleteClusterRequest:
 
     @property
     def ondemand_node_policy(self):
-        """Gets the ondemand_node_policy of this DeleteClusterRequest.
+        r"""Gets the ondemand_node_policy of this DeleteClusterRequest.
 
         集群下所有按需节点处理策略， 枚举取值： - delete (删除服务器) - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
 
@@ -350,7 +350,7 @@ class DeleteClusterRequest:
 
     @ondemand_node_policy.setter
     def ondemand_node_policy(self, ondemand_node_policy):
-        """Sets the ondemand_node_policy of this DeleteClusterRequest.
+        r"""Sets the ondemand_node_policy of this DeleteClusterRequest.
 
         集群下所有按需节点处理策略， 枚举取值： - delete (删除服务器) - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
 
@@ -361,7 +361,7 @@ class DeleteClusterRequest:
 
     @property
     def periodic_node_policy(self):
-        """Gets the periodic_node_policy of this DeleteClusterRequest.
+        r"""Gets the periodic_node_policy of this DeleteClusterRequest.
 
         集群下所有包周期节点处理策略， 枚举取值： - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
 
@@ -372,7 +372,7 @@ class DeleteClusterRequest:
 
     @periodic_node_policy.setter
     def periodic_node_policy(self, periodic_node_policy):
-        """Sets the periodic_node_policy of this DeleteClusterRequest.
+        r"""Sets the periodic_node_policy of this DeleteClusterRequest.
 
         集群下所有包周期节点处理策略， 枚举取值： - reset (保留服务器并重置服务器，数据不保留) - retain （保留服务器不重置服务器，数据保留）
 

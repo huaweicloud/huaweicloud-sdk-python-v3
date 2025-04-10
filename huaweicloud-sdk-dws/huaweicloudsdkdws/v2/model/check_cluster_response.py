@@ -24,7 +24,7 @@ class CheckClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckClusterResponse
+        r"""CheckClusterResponse
 
         The model defined in huaweicloud sdk
 

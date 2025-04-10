@@ -25,7 +25,7 @@ class DetachSharedbwReq:
     }
 
     def __init__(self, publicip=None):
-        """DetachSharedbwReq
+        r"""DetachSharedbwReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetachSharedbwReq:
 
     @property
     def publicip(self):
-        """Gets the publicip of this DetachSharedbwReq.
+        r"""Gets the publicip of this DetachSharedbwReq.
 
         :return: The publicip of this DetachSharedbwReq.
         :rtype: :class:`huaweicloudsdkeip.v3.DetachSharedbwReqPublicip`
@@ -51,7 +51,7 @@ class DetachSharedbwReq:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this DetachSharedbwReq.
+        r"""Sets the publicip of this DetachSharedbwReq.
 
         :param publicip: The publicip of this DetachSharedbwReq.
         :type publicip: :class:`huaweicloudsdkeip.v3.DetachSharedbwReqPublicip`

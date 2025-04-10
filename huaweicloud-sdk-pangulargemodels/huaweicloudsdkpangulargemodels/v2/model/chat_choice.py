@@ -27,7 +27,7 @@ class ChatChoice:
     }
 
     def __init__(self, index=None, message=None):
-        """ChatChoice
+        r"""ChatChoice
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChatChoice:
 
     @property
     def index(self):
-        """Gets the index of this ChatChoice.
+        r"""Gets the index of this ChatChoice.
 
         回复的索引
 
@@ -59,7 +59,7 @@ class ChatChoice:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ChatChoice.
+        r"""Sets the index of this ChatChoice.
 
         回复的索引
 
@@ -70,7 +70,7 @@ class ChatChoice:
 
     @property
     def message(self):
-        """Gets the message of this ChatChoice.
+        r"""Gets the message of this ChatChoice.
 
         :return: The message of this ChatChoice.
         :rtype: :class:`huaweicloudsdkpangulargemodels.v2.MessageItem`
@@ -79,7 +79,7 @@ class ChatChoice:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ChatChoice.
+        r"""Sets the message of this ChatChoice.
 
         :param message: The message of this ChatChoice.
         :type message: :class:`huaweicloudsdkpangulargemodels.v2.MessageItem`

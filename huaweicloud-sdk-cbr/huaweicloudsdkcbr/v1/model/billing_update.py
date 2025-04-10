@@ -27,7 +27,7 @@ class BillingUpdate:
     }
 
     def __init__(self, consistent_level=None, size=None):
-        """BillingUpdate
+        r"""BillingUpdate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BillingUpdate:
 
     @property
     def consistent_level(self):
-        """Gets the consistent_level of this BillingUpdate.
+        r"""Gets the consistent_level of this BillingUpdate.
 
         存储库规格
 
@@ -61,7 +61,7 @@ class BillingUpdate:
 
     @consistent_level.setter
     def consistent_level(self, consistent_level):
-        """Sets the consistent_level of this BillingUpdate.
+        r"""Sets the consistent_level of this BillingUpdate.
 
         存储库规格
 
@@ -72,7 +72,7 @@ class BillingUpdate:
 
     @property
     def size(self):
-        """Gets the size of this BillingUpdate.
+        r"""Gets the size of this BillingUpdate.
 
         存储库大小，单位为GB
 
@@ -83,7 +83,7 @@ class BillingUpdate:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BillingUpdate.
+        r"""Sets the size of this BillingUpdate.
 
         存储库大小，单位为GB
 

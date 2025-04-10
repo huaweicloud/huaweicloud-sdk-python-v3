@@ -37,7 +37,7 @@ class InstanceInfo:
     }
 
     def __init__(self, instance_id=None, instance_name=None, ips=None, expire_time=None, service_bandwidth=None, instance_status=None, enterprise_project_id=None):
-        """InstanceInfo
+        r"""InstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceInfo.
+        r"""Gets the instance_id of this InstanceInfo.
 
         实例ID
 
@@ -96,7 +96,7 @@ class InstanceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceInfo.
+        r"""Sets the instance_id of this InstanceInfo.
 
         实例ID
 
@@ -107,7 +107,7 @@ class InstanceInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceInfo.
+        r"""Gets the instance_name of this InstanceInfo.
 
         实例名
 
@@ -118,7 +118,7 @@ class InstanceInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceInfo.
+        r"""Sets the instance_name of this InstanceInfo.
 
         实例名
 
@@ -129,7 +129,7 @@ class InstanceInfo:
 
     @property
     def ips(self):
-        """Gets the ips of this InstanceInfo.
+        r"""Gets the ips of this InstanceInfo.
 
         实例IP
 
@@ -140,7 +140,7 @@ class InstanceInfo:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this InstanceInfo.
+        r"""Sets the ips of this InstanceInfo.
 
         实例IP
 
@@ -151,7 +151,7 @@ class InstanceInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this InstanceInfo.
+        r"""Gets the expire_time of this InstanceInfo.
 
         实例过期时间
 
@@ -162,7 +162,7 @@ class InstanceInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this InstanceInfo.
+        r"""Sets the expire_time of this InstanceInfo.
 
         实例过期时间
 
@@ -173,7 +173,7 @@ class InstanceInfo:
 
     @property
     def service_bandwidth(self):
-        """Gets the service_bandwidth of this InstanceInfo.
+        r"""Gets the service_bandwidth of this InstanceInfo.
 
         业务带宽
 
@@ -184,7 +184,7 @@ class InstanceInfo:
 
     @service_bandwidth.setter
     def service_bandwidth(self, service_bandwidth):
-        """Sets the service_bandwidth of this InstanceInfo.
+        r"""Sets the service_bandwidth of this InstanceInfo.
 
         业务带宽
 
@@ -195,7 +195,7 @@ class InstanceInfo:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this InstanceInfo.
+        r"""Gets the instance_status of this InstanceInfo.
 
         实例状态
 
@@ -206,7 +206,7 @@ class InstanceInfo:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this InstanceInfo.
+        r"""Sets the instance_status of this InstanceInfo.
 
         实例状态
 
@@ -217,7 +217,7 @@ class InstanceInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceInfo.
+        r"""Gets the enterprise_project_id of this InstanceInfo.
 
         企业项目ID
 
@@ -228,7 +228,7 @@ class InstanceInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceInfo.
+        r"""Sets the enterprise_project_id of this InstanceInfo.
 
         企业项目ID
 

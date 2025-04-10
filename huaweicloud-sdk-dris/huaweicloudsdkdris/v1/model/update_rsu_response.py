@@ -54,7 +54,7 @@ class UpdateRsuResponse(SdkResponse):
     }
 
     def __init__(self, rsu_id=None, name=None, description=None, esn=None, last_modified_time=None, created_time=None, last_online_time=None, ip=None, position_description=None, location=None, status=None, rsu_model_id=None, intersection_id=None, related_edge_num=None, software_version=None):
-        """UpdateRsuResponse
+        r"""UpdateRsuResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def rsu_id(self):
-        """Gets the rsu_id of this UpdateRsuResponse.
+        r"""Gets the rsu_id of this UpdateRsuResponse.
 
         **参数说明**：RSU的唯一标识符，在平台创建RSU时由平台生成。
 
@@ -153,7 +153,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @rsu_id.setter
     def rsu_id(self, rsu_id):
-        """Sets the rsu_id of this UpdateRsuResponse.
+        r"""Sets the rsu_id of this UpdateRsuResponse.
 
         **参数说明**：RSU的唯一标识符，在平台创建RSU时由平台生成。
 
@@ -164,7 +164,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateRsuResponse.
+        r"""Gets the name of this UpdateRsuResponse.
 
         **参数说明**：RSU的名字。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -175,7 +175,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRsuResponse.
+        r"""Sets the name of this UpdateRsuResponse.
 
         **参数说明**：RSU的名字。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -186,7 +186,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateRsuResponse.
+        r"""Gets the description of this UpdateRsuResponse.
 
         **参数说明**：RSU的描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文分号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -197,7 +197,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRsuResponse.
+        r"""Sets the description of this UpdateRsuResponse.
 
         **参数说明**：RSU的描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文分号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -208,7 +208,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this UpdateRsuResponse.
+        r"""Gets the esn of this UpdateRsuResponse.
 
         **参数说明**：RSU的设备序列号。  **取值范围**：只允许字母、数字、下划线（_）的组合。
 
@@ -219,7 +219,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this UpdateRsuResponse.
+        r"""Sets the esn of this UpdateRsuResponse.
 
         **参数说明**：RSU的设备序列号。  **取值范围**：只允许字母、数字、下划线（_）的组合。
 
@@ -230,7 +230,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this UpdateRsuResponse.
+        r"""Gets the last_modified_time of this UpdateRsuResponse.
 
         **参数说明**：最后修改的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如 2020-09-01T01:37:01Z
 
@@ -241,7 +241,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this UpdateRsuResponse.
+        r"""Sets the last_modified_time of this UpdateRsuResponse.
 
         **参数说明**：最后修改的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如 2020-09-01T01:37:01Z
 
@@ -252,7 +252,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateRsuResponse.
+        r"""Gets the created_time of this UpdateRsuResponse.
 
         **参数说明**：创建的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如 2020-09-01T01:37:01Z
 
@@ -263,7 +263,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateRsuResponse.
+        r"""Sets the created_time of this UpdateRsuResponse.
 
         **参数说明**：创建的时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如 2020-09-01T01:37:01Z
 
@@ -274,7 +274,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def last_online_time(self):
-        """Gets the last_online_time of this UpdateRsuResponse.
+        r"""Gets the last_online_time of this UpdateRsuResponse.
 
         **参数说明**：最后的在线时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如 2020-09-01T01:37:01Z
 
@@ -285,7 +285,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @last_online_time.setter
     def last_online_time(self, last_online_time):
-        """Sets the last_online_time of this UpdateRsuResponse.
+        r"""Sets the last_online_time of this UpdateRsuResponse.
 
         **参数说明**：最后的在线时间。  格式：yyyy-MM-dd'T'HH:mm:ss'Z'  例如 2020-09-01T01:37:01Z
 
@@ -296,7 +296,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateRsuResponse.
+        r"""Gets the ip of this UpdateRsuResponse.
 
         **参数说明**：RSU的IP。满足IP的格式，例如127.0.0.1。
 
@@ -307,7 +307,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateRsuResponse.
+        r"""Sets the ip of this UpdateRsuResponse.
 
         **参数说明**：RSU的IP。满足IP的格式，例如127.0.0.1。
 
@@ -318,7 +318,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def position_description(self):
-        """Gets the position_description of this UpdateRsuResponse.
+        r"""Gets the position_description of this UpdateRsuResponse.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -329,7 +329,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @position_description.setter
     def position_description(self, position_description):
-        """Sets the position_description of this UpdateRsuResponse.
+        r"""Sets the position_description of this UpdateRsuResponse.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -340,7 +340,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this UpdateRsuResponse.
+        r"""Gets the location of this UpdateRsuResponse.
 
         :return: The location of this UpdateRsuResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.RsuLocation`
@@ -349,7 +349,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this UpdateRsuResponse.
+        r"""Sets the location of this UpdateRsuResponse.
 
         :param location: The location of this UpdateRsuResponse.
         :type location: :class:`huaweicloudsdkdris.v1.RsuLocation`
@@ -358,7 +358,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateRsuResponse.
+        r"""Gets the status of this UpdateRsuResponse.
 
         **参数说明**：RSU设备状态。  **取值范围**：  - ONLINE：在线  - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知
 
@@ -369,7 +369,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateRsuResponse.
+        r"""Sets the status of this UpdateRsuResponse.
 
         **参数说明**：RSU设备状态。  **取值范围**：  - ONLINE：在线  - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知
 
@@ -380,7 +380,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def rsu_model_id(self):
-        """Gets the rsu_model_id of this UpdateRsuResponse.
+        r"""Gets the rsu_model_id of this UpdateRsuResponse.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得，获取方法可参见 [创建RSU型号](https://support.huaweicloud.com/api-v2x/v2x_04_0020.html)。  **取值范围**：长度不低于1不超过36，只允许字母、数字、连接符（-）的组合。  **该字段仅供使用MQTT协议RSU设备的用户输入。使用websocket协议RSU设备的用户需忽略此字段。**
 
@@ -391,7 +391,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @rsu_model_id.setter
     def rsu_model_id(self, rsu_model_id):
-        """Sets the rsu_model_id of this UpdateRsuResponse.
+        r"""Sets the rsu_model_id of this UpdateRsuResponse.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得，获取方法可参见 [创建RSU型号](https://support.huaweicloud.com/api-v2x/v2x_04_0020.html)。  **取值范围**：长度不低于1不超过36，只允许字母、数字、连接符（-）的组合。  **该字段仅供使用MQTT协议RSU设备的用户输入。使用websocket协议RSU设备的用户需忽略此字段。**
 
@@ -402,7 +402,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def intersection_id(self):
-        """Gets the intersection_id of this UpdateRsuResponse.
+        r"""Gets the intersection_id of this UpdateRsuResponse.
 
         **参数说明**：在地图中，rsu所在区域对应的路口ID，也即区域ID拼接路口ID，格式为：region-node_id。其中路网最基本的构成即节点和节点之间连接的路段。节点可以是路口，也可以是一条 路的端点。一个节点的ID在同一个区域内是唯一的。
 
@@ -413,7 +413,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @intersection_id.setter
     def intersection_id(self, intersection_id):
-        """Sets the intersection_id of this UpdateRsuResponse.
+        r"""Sets the intersection_id of this UpdateRsuResponse.
 
         **参数说明**：在地图中，rsu所在区域对应的路口ID，也即区域ID拼接路口ID，格式为：region-node_id。其中路网最基本的构成即节点和节点之间连接的路段。节点可以是路口，也可以是一条 路的端点。一个节点的ID在同一个区域内是唯一的。
 
@@ -424,7 +424,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def related_edge_num(self):
-        """Gets the related_edge_num of this UpdateRsuResponse.
+        r"""Gets the related_edge_num of this UpdateRsuResponse.
 
         **参数说明**：RSU可关联的Edge的数量。
 
@@ -435,7 +435,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @related_edge_num.setter
     def related_edge_num(self, related_edge_num):
-        """Sets the related_edge_num of this UpdateRsuResponse.
+        r"""Sets the related_edge_num of this UpdateRsuResponse.
 
         **参数说明**：RSU可关联的Edge的数量。
 
@@ -446,7 +446,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @property
     def software_version(self):
-        """Gets the software_version of this UpdateRsuResponse.
+        r"""Gets the software_version of this UpdateRsuResponse.
 
         **参数说明**：RSU的软件版本，由RSU上报其软件版本。
 
@@ -457,7 +457,7 @@ class UpdateRsuResponse(SdkResponse):
 
     @software_version.setter
     def software_version(self, software_version):
-        """Sets the software_version of this UpdateRsuResponse.
+        r"""Sets the software_version of this UpdateRsuResponse.
 
         **参数说明**：RSU的软件版本，由RSU上报其软件版本。
 

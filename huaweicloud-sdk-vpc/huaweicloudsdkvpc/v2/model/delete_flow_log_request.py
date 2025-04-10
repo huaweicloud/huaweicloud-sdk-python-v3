@@ -25,7 +25,7 @@ class DeleteFlowLogRequest:
     }
 
     def __init__(self, flowlog_id=None):
-        """DeleteFlowLogRequest
+        r"""DeleteFlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFlowLogRequest:
 
     @property
     def flowlog_id(self):
-        """Gets the flowlog_id of this DeleteFlowLogRequest.
+        r"""Gets the flowlog_id of this DeleteFlowLogRequest.
 
         流日志资源唯一标识
 
@@ -53,7 +53,7 @@ class DeleteFlowLogRequest:
 
     @flowlog_id.setter
     def flowlog_id(self, flowlog_id):
-        """Sets the flowlog_id of this DeleteFlowLogRequest.
+        r"""Sets the flowlog_id of this DeleteFlowLogRequest.
 
         流日志资源唯一标识
 

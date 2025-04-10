@@ -39,7 +39,7 @@ class DataClassificationGroupCombineRuleDTO:
     }
 
     def __init__(self, name=None, secrecy_level_id=None, combine_expression=None, description=None, category_id=None, enable=None, method=None, single_expressions=None):
-        """DataClassificationGroupCombineRuleDTO
+        r"""DataClassificationGroupCombineRuleDTO
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the name of this DataClassificationGroupCombineRuleDTO.
 
         规则名称
 
@@ -98,7 +98,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the name of this DataClassificationGroupCombineRuleDTO.
 
         规则名称
 
@@ -109,7 +109,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def secrecy_level_id(self):
-        """Gets the secrecy_level_id of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the secrecy_level_id of this DataClassificationGroupCombineRuleDTO.
 
         密级ID
 
@@ -120,7 +120,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @secrecy_level_id.setter
     def secrecy_level_id(self, secrecy_level_id):
-        """Sets the secrecy_level_id of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the secrecy_level_id of this DataClassificationGroupCombineRuleDTO.
 
         密级ID
 
@@ -131,7 +131,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def combine_expression(self):
-        """Gets the combine_expression of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the combine_expression of this DataClassificationGroupCombineRuleDTO.
 
         条件表达式
 
@@ -142,7 +142,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @combine_expression.setter
     def combine_expression(self, combine_expression):
-        """Sets the combine_expression of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the combine_expression of this DataClassificationGroupCombineRuleDTO.
 
         条件表达式
 
@@ -153,7 +153,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the description of this DataClassificationGroupCombineRuleDTO.
 
         规则描述
 
@@ -164,7 +164,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the description of this DataClassificationGroupCombineRuleDTO.
 
         规则描述
 
@@ -175,7 +175,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def category_id(self):
-        """Gets the category_id of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the category_id of this DataClassificationGroupCombineRuleDTO.
 
         分类ID
 
@@ -186,7 +186,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the category_id of this DataClassificationGroupCombineRuleDTO.
 
         分类ID
 
@@ -197,7 +197,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def enable(self):
-        """Gets the enable of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the enable of this DataClassificationGroupCombineRuleDTO.
 
         使能状态。
 
@@ -208,7 +208,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the enable of this DataClassificationGroupCombineRuleDTO.
 
         使能状态。
 
@@ -219,7 +219,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def method(self):
-        """Gets the method of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the method of this DataClassificationGroupCombineRuleDTO.
 
         规则方式, COMBINE
 
@@ -230,7 +230,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the method of this DataClassificationGroupCombineRuleDTO.
 
         规则方式, COMBINE
 
@@ -241,7 +241,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @property
     def single_expressions(self):
-        """Gets the single_expressions of this DataClassificationGroupCombineRuleDTO.
+        r"""Gets the single_expressions of this DataClassificationGroupCombineRuleDTO.
 
         条件单规则
 
@@ -252,7 +252,7 @@ class DataClassificationGroupCombineRuleDTO:
 
     @single_expressions.setter
     def single_expressions(self, single_expressions):
-        """Sets the single_expressions of this DataClassificationGroupCombineRuleDTO.
+        r"""Sets the single_expressions of this DataClassificationGroupCombineRuleDTO.
 
         条件单规则
 

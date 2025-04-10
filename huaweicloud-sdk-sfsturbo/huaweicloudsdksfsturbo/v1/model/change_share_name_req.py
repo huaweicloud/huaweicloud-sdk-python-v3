@@ -25,7 +25,7 @@ class ChangeShareNameReq:
     }
 
     def __init__(self, change_name=None):
-        """ChangeShareNameReq
+        r"""ChangeShareNameReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeShareNameReq:
 
     @property
     def change_name(self):
-        """Gets the change_name of this ChangeShareNameReq.
+        r"""Gets the change_name of this ChangeShareNameReq.
 
         :return: The change_name of this ChangeShareNameReq.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ShareName`
@@ -51,7 +51,7 @@ class ChangeShareNameReq:
 
     @change_name.setter
     def change_name(self, change_name):
-        """Sets the change_name of this ChangeShareNameReq.
+        r"""Sets the change_name of this ChangeShareNameReq.
 
         :param change_name: The change_name of this ChangeShareNameReq.
         :type change_name: :class:`huaweicloudsdksfsturbo.v1.ShareName`

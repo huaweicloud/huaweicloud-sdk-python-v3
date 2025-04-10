@@ -30,7 +30,7 @@ class ListEdgeNodesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, nodes=None):
-        """ListEdgeNodesResponse
+        r"""ListEdgeNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEdgeNodesResponse.
+        r"""Gets the count of this ListEdgeNodesResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEdgeNodesResponse.
+        r"""Sets the count of this ListEdgeNodesResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEdgeNodesResponse.
+        r"""Gets the page_info of this ListEdgeNodesResponse.
 
         :return: The page_info of this ListEdgeNodesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEdgeNodesResponse.
+        r"""Sets the page_info of this ListEdgeNodesResponse.
 
         :param page_info: The page_info of this ListEdgeNodesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListEdgeNodesResponse.
+        r"""Gets the nodes of this ListEdgeNodesResponse.
 
         节点列表
 
@@ -109,7 +109,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListEdgeNodesResponse.
+        r"""Sets the nodes of this ListEdgeNodesResponse.
 
         节点列表
 

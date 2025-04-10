@@ -25,7 +25,7 @@ class DeleteConnectionRequest:
     }
 
     def __init__(self, connection_id=None):
-        """DeleteConnectionRequest
+        r"""DeleteConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DeleteConnectionRequest.
+        r"""Gets the connection_id of this DeleteConnectionRequest.
 
         指定查询的目标连接ID
 
@@ -53,7 +53,7 @@ class DeleteConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DeleteConnectionRequest.
+        r"""Sets the connection_id of this DeleteConnectionRequest.
 
         指定查询的目标连接ID
 

@@ -37,7 +37,7 @@ class ListSubMetricsRequest:
     }
 
     def __init__(self, filter=None, period=None, start_time=None, end_time=None, subscription_id=None, provider_type=None, target_id=None):
-        """ListSubMetricsRequest
+        r"""ListSubMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListSubMetricsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListSubMetricsRequest.
+        r"""Gets the filter of this ListSubMetricsRequest.
 
         指标数据统计方式
 
@@ -94,7 +94,7 @@ class ListSubMetricsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListSubMetricsRequest.
+        r"""Sets the filter of this ListSubMetricsRequest.
 
         指标数据统计方式
 
@@ -105,7 +105,7 @@ class ListSubMetricsRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListSubMetricsRequest.
+        r"""Gets the period of this ListSubMetricsRequest.
 
         指标数据统计周期，单位minute。
 
@@ -116,7 +116,7 @@ class ListSubMetricsRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListSubMetricsRequest.
+        r"""Sets the period of this ListSubMetricsRequest.
 
         指标数据统计周期，单位minute。
 
@@ -127,7 +127,7 @@ class ListSubMetricsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSubMetricsRequest.
+        r"""Gets the start_time of this ListSubMetricsRequest.
 
         获取指标数据起始时间
 
@@ -138,7 +138,7 @@ class ListSubMetricsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSubMetricsRequest.
+        r"""Sets the start_time of this ListSubMetricsRequest.
 
         获取指标数据起始时间
 
@@ -149,7 +149,7 @@ class ListSubMetricsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSubMetricsRequest.
+        r"""Gets the end_time of this ListSubMetricsRequest.
 
         获取指标数据结束时间
 
@@ -160,7 +160,7 @@ class ListSubMetricsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSubMetricsRequest.
+        r"""Sets the end_time of this ListSubMetricsRequest.
 
         获取指标数据结束时间
 
@@ -171,7 +171,7 @@ class ListSubMetricsRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this ListSubMetricsRequest.
+        r"""Gets the subscription_id of this ListSubMetricsRequest.
 
         事件订阅id
 
@@ -182,7 +182,7 @@ class ListSubMetricsRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this ListSubMetricsRequest.
+        r"""Sets the subscription_id of this ListSubMetricsRequest.
 
         事件订阅id
 
@@ -193,7 +193,7 @@ class ListSubMetricsRequest:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ListSubMetricsRequest.
+        r"""Gets the provider_type of this ListSubMetricsRequest.
 
         事件目标类型/事件通道类型
 
@@ -204,7 +204,7 @@ class ListSubMetricsRequest:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ListSubMetricsRequest.
+        r"""Sets the provider_type of this ListSubMetricsRequest.
 
         事件目标类型/事件通道类型
 
@@ -215,7 +215,7 @@ class ListSubMetricsRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ListSubMetricsRequest.
+        r"""Gets the target_id of this ListSubMetricsRequest.
 
         事件目标id
 
@@ -226,7 +226,7 @@ class ListSubMetricsRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ListSubMetricsRequest.
+        r"""Sets the target_id of this ListSubMetricsRequest.
 
         事件目标id
 

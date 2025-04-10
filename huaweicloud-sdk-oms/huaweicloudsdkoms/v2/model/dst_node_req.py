@@ -35,7 +35,7 @@ class DstNodeReq:
     }
 
     def __init__(self, ak=None, sk=None, security_token=None, bucket=None, save_prefix=None, region=None):
-        """DstNodeReq
+        r"""DstNodeReq
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class DstNodeReq:
 
     @property
     def ak(self):
-        """Gets the ak of this DstNodeReq.
+        r"""Gets the ak of this DstNodeReq.
 
         目的端桶的AK（最大长度100个字符）。
 
@@ -85,7 +85,7 @@ class DstNodeReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this DstNodeReq.
+        r"""Sets the ak of this DstNodeReq.
 
         目的端桶的AK（最大长度100个字符）。
 
@@ -96,7 +96,7 @@ class DstNodeReq:
 
     @property
     def sk(self):
-        """Gets the sk of this DstNodeReq.
+        r"""Gets the sk of this DstNodeReq.
 
         目的端桶的SK（最大长度100个字符）。
 
@@ -107,7 +107,7 @@ class DstNodeReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this DstNodeReq.
+        r"""Sets the sk of this DstNodeReq.
 
         目的端桶的SK（最大长度100个字符）。
 
@@ -118,7 +118,7 @@ class DstNodeReq:
 
     @property
     def security_token(self):
-        """Gets the security_token of this DstNodeReq.
+        r"""Gets the security_token of this DstNodeReq.
 
         目的端的临时Token（最大长度16384个字符）。
 
@@ -129,7 +129,7 @@ class DstNodeReq:
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this DstNodeReq.
+        r"""Sets the security_token of this DstNodeReq.
 
         目的端的临时Token（最大长度16384个字符）。
 
@@ -140,7 +140,7 @@ class DstNodeReq:
 
     @property
     def bucket(self):
-        """Gets the bucket of this DstNodeReq.
+        r"""Gets the bucket of this DstNodeReq.
 
         目的端桶的名称。
 
@@ -151,7 +151,7 @@ class DstNodeReq:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this DstNodeReq.
+        r"""Sets the bucket of this DstNodeReq.
 
         目的端桶的名称。
 
@@ -162,7 +162,7 @@ class DstNodeReq:
 
     @property
     def save_prefix(self):
-        """Gets the save_prefix of this DstNodeReq.
+        r"""Gets the save_prefix of this DstNodeReq.
 
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 
@@ -173,7 +173,7 @@ class DstNodeReq:
 
     @save_prefix.setter
     def save_prefix(self, save_prefix):
-        """Sets the save_prefix of this DstNodeReq.
+        r"""Sets the save_prefix of this DstNodeReq.
 
         目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
 
@@ -184,7 +184,7 @@ class DstNodeReq:
 
     @property
     def region(self):
-        """Gets the region of this DstNodeReq.
+        r"""Gets the region of this DstNodeReq.
 
         目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
 
@@ -195,7 +195,7 @@ class DstNodeReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DstNodeReq.
+        r"""Sets the region of this DstNodeReq.
 
         目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
 

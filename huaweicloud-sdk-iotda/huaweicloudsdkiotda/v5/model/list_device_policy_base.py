@@ -33,7 +33,7 @@ class ListDevicePolicyBase:
     }
 
     def __init__(self, app_id=None, policy_id=None, policy_name=None, create_time=None, update_time=None):
-        """ListDevicePolicyBase
+        r"""ListDevicePolicyBase
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListDevicePolicyBase:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListDevicePolicyBase.
+        r"""Gets the app_id of this ListDevicePolicyBase.
 
         **参数说明**：资源空间ID。
 
@@ -82,7 +82,7 @@ class ListDevicePolicyBase:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListDevicePolicyBase.
+        r"""Sets the app_id of this ListDevicePolicyBase.
 
         **参数说明**：资源空间ID。
 
@@ -93,7 +93,7 @@ class ListDevicePolicyBase:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListDevicePolicyBase.
+        r"""Gets the policy_id of this ListDevicePolicyBase.
 
         策略ID。
 
@@ -104,7 +104,7 @@ class ListDevicePolicyBase:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListDevicePolicyBase.
+        r"""Sets the policy_id of this ListDevicePolicyBase.
 
         策略ID。
 
@@ -115,7 +115,7 @@ class ListDevicePolicyBase:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ListDevicePolicyBase.
+        r"""Gets the policy_name of this ListDevicePolicyBase.
 
         策略名称。
 
@@ -126,7 +126,7 @@ class ListDevicePolicyBase:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ListDevicePolicyBase.
+        r"""Sets the policy_name of this ListDevicePolicyBase.
 
         策略名称。
 
@@ -137,7 +137,7 @@ class ListDevicePolicyBase:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListDevicePolicyBase.
+        r"""Gets the create_time of this ListDevicePolicyBase.
 
         在物联网平台创建策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -148,7 +148,7 @@ class ListDevicePolicyBase:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListDevicePolicyBase.
+        r"""Sets the create_time of this ListDevicePolicyBase.
 
         在物联网平台创建策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -159,7 +159,7 @@ class ListDevicePolicyBase:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListDevicePolicyBase.
+        r"""Gets the update_time of this ListDevicePolicyBase.
 
         在物联网平台更新策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -170,7 +170,7 @@ class ListDevicePolicyBase:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListDevicePolicyBase.
+        r"""Sets the update_time of this ListDevicePolicyBase.
 
         在物联网平台更新策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

@@ -25,7 +25,7 @@ class NeutronShowNetworkRequest:
     }
 
     def __init__(self, network_id=None):
-        """NeutronShowNetworkRequest
+        r"""NeutronShowNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronShowNetworkRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronShowNetworkRequest.
+        r"""Gets the network_id of this NeutronShowNetworkRequest.
 
         网络ID
 
@@ -53,7 +53,7 @@ class NeutronShowNetworkRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronShowNetworkRequest.
+        r"""Sets the network_id of this NeutronShowNetworkRequest.
 
         网络ID
 

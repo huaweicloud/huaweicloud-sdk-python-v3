@@ -29,7 +29,7 @@ class AppBaseInfo:
     }
 
     def __init__(self, id=None, name=None, remark=None):
-        """AppBaseInfo
+        r"""AppBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AppBaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppBaseInfo.
+        r"""Gets the id of this AppBaseInfo.
 
         编号
 
@@ -68,7 +68,7 @@ class AppBaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppBaseInfo.
+        r"""Sets the id of this AppBaseInfo.
 
         编号
 
@@ -79,7 +79,7 @@ class AppBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppBaseInfo.
+        r"""Gets the name of this AppBaseInfo.
 
         名称
 
@@ -90,7 +90,7 @@ class AppBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppBaseInfo.
+        r"""Sets the name of this AppBaseInfo.
 
         名称
 
@@ -101,7 +101,7 @@ class AppBaseInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this AppBaseInfo.
+        r"""Gets the remark of this AppBaseInfo.
 
         描述
 
@@ -112,7 +112,7 @@ class AppBaseInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AppBaseInfo.
+        r"""Sets the remark of this AppBaseInfo.
 
         描述
 

@@ -31,7 +31,7 @@ class SmnConfig:
     }
 
     def __init__(self, language=None, topic_urn=None, trigger_conditions=None, message_template_name=None):
-        """SmnConfig
+        r"""SmnConfig
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SmnConfig:
 
     @property
     def language(self):
-        """Gets the language of this SmnConfig.
+        r"""Gets the language of this SmnConfig.
 
         当前用户所使用的管理控制台的语言。  可以选择zh-cn或者en-us。
 
@@ -73,7 +73,7 @@ class SmnConfig:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SmnConfig.
+        r"""Sets the language of this SmnConfig.
 
         当前用户所使用的管理控制台的语言。  可以选择zh-cn或者en-us。
 
@@ -84,7 +84,7 @@ class SmnConfig:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this SmnConfig.
+        r"""Gets the topic_urn of this SmnConfig.
 
         迁移任务所绑定的SMN消息主题的urn号。
 
@@ -95,7 +95,7 @@ class SmnConfig:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this SmnConfig.
+        r"""Sets the topic_urn of this SmnConfig.
 
         迁移任务所绑定的SMN消息主题的urn号。
 
@@ -106,7 +106,7 @@ class SmnConfig:
 
     @property
     def trigger_conditions(self):
-        """Gets the trigger_conditions of this SmnConfig.
+        r"""Gets the trigger_conditions of this SmnConfig.
 
         SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
 
@@ -117,7 +117,7 @@ class SmnConfig:
 
     @trigger_conditions.setter
     def trigger_conditions(self, trigger_conditions):
-        """Sets the trigger_conditions of this SmnConfig.
+        r"""Sets the trigger_conditions of this SmnConfig.
 
         SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
 
@@ -128,7 +128,7 @@ class SmnConfig:
 
     @property
     def message_template_name(self):
-        """Gets the message_template_name of this SmnConfig.
+        r"""Gets the message_template_name of this SmnConfig.
 
         如果设置此值，则表示用模板方式发送smn信息。 模板示例: {  “Task_Status”: \"\",     \"Task_Name\" : \"\",     \"Start_Time\": \"\",     \"Total_Time_Used\": \"\",     \"Transferred_Data\": \"\",     \"Average_Speed\": \"\",     \"Source_Bucket\": \"\",     \"Destination_Bucket\": \"\",     \"List_File_Bucket\": \"\",     \"List_File_Key\": \"\",     \"Success_object_list_path\": \"\",     \"Skip_object_list_path\": \"\",     \"Failed_object_list_path\": \"\" }
 
@@ -139,7 +139,7 @@ class SmnConfig:
 
     @message_template_name.setter
     def message_template_name(self, message_template_name):
-        """Sets the message_template_name of this SmnConfig.
+        r"""Sets the message_template_name of this SmnConfig.
 
         如果设置此值，则表示用模板方式发送smn信息。 模板示例: {  “Task_Status”: \"\",     \"Task_Name\" : \"\",     \"Start_Time\": \"\",     \"Total_Time_Used\": \"\",     \"Transferred_Data\": \"\",     \"Average_Speed\": \"\",     \"Source_Bucket\": \"\",     \"Destination_Bucket\": \"\",     \"List_File_Bucket\": \"\",     \"List_File_Key\": \"\",     \"Success_object_list_path\": \"\",     \"Skip_object_list_path\": \"\",     \"Failed_object_list_path\": \"\" }
 

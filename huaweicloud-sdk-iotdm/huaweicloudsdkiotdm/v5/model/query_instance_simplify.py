@@ -41,7 +41,7 @@ class QueryInstanceSimplify:
     }
 
     def __init__(self, instance_type=None, instance_id=None, name=None, charge_mode=None, flavor=None, status=None, create_time=None, update_time=None, enterprise_project_id=None):
-        """QueryInstanceSimplify
+        r"""QueryInstanceSimplify
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryInstanceSimplify:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this QueryInstanceSimplify.
+        r"""Gets the instance_type of this QueryInstanceSimplify.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -110,7 +110,7 @@ class QueryInstanceSimplify:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this QueryInstanceSimplify.
+        r"""Sets the instance_type of this QueryInstanceSimplify.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -121,7 +121,7 @@ class QueryInstanceSimplify:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this QueryInstanceSimplify.
+        r"""Gets the instance_id of this QueryInstanceSimplify.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -132,7 +132,7 @@ class QueryInstanceSimplify:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this QueryInstanceSimplify.
+        r"""Sets the instance_id of this QueryInstanceSimplify.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -143,7 +143,7 @@ class QueryInstanceSimplify:
 
     @property
     def name(self):
-        """Gets the name of this QueryInstanceSimplify.
+        r"""Gets the name of this QueryInstanceSimplify.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -154,7 +154,7 @@ class QueryInstanceSimplify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryInstanceSimplify.
+        r"""Sets the name of this QueryInstanceSimplify.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -165,7 +165,7 @@ class QueryInstanceSimplify:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this QueryInstanceSimplify.
+        r"""Gets the charge_mode of this QueryInstanceSimplify.
 
         **参数说明**：实例的付费方式。 **取值范围**： - prePaid：包年/包月 - postPaid：按需计费 
 
@@ -176,7 +176,7 @@ class QueryInstanceSimplify:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this QueryInstanceSimplify.
+        r"""Sets the charge_mode of this QueryInstanceSimplify.
 
         **参数说明**：实例的付费方式。 **取值范围**： - prePaid：包年/包月 - postPaid：按需计费 
 
@@ -187,7 +187,7 @@ class QueryInstanceSimplify:
 
     @property
     def flavor(self):
-        """Gets the flavor of this QueryInstanceSimplify.
+        r"""Gets the flavor of this QueryInstanceSimplify.
 
         :return: The flavor of this QueryInstanceSimplify.
         :rtype: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -196,7 +196,7 @@ class QueryInstanceSimplify:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this QueryInstanceSimplify.
+        r"""Sets the flavor of this QueryInstanceSimplify.
 
         :param flavor: The flavor of this QueryInstanceSimplify.
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -205,7 +205,7 @@ class QueryInstanceSimplify:
 
     @property
     def status(self):
-        """Gets the status of this QueryInstanceSimplify.
+        r"""Gets the status of this QueryInstanceSimplify.
 
         **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
 
@@ -216,7 +216,7 @@ class QueryInstanceSimplify:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryInstanceSimplify.
+        r"""Sets the status of this QueryInstanceSimplify.
 
         **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
 
@@ -227,7 +227,7 @@ class QueryInstanceSimplify:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryInstanceSimplify.
+        r"""Gets the create_time of this QueryInstanceSimplify.
 
         **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -238,7 +238,7 @@ class QueryInstanceSimplify:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryInstanceSimplify.
+        r"""Sets the create_time of this QueryInstanceSimplify.
 
         **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -249,7 +249,7 @@ class QueryInstanceSimplify:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryInstanceSimplify.
+        r"""Gets the update_time of this QueryInstanceSimplify.
 
         **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -260,7 +260,7 @@ class QueryInstanceSimplify:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryInstanceSimplify.
+        r"""Sets the update_time of this QueryInstanceSimplify.
 
         **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -271,7 +271,7 @@ class QueryInstanceSimplify:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this QueryInstanceSimplify.
+        r"""Gets the enterprise_project_id of this QueryInstanceSimplify.
 
         **参数说明**：企业项目Id。
 
@@ -282,7 +282,7 @@ class QueryInstanceSimplify:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this QueryInstanceSimplify.
+        r"""Sets the enterprise_project_id of this QueryInstanceSimplify.
 
         **参数说明**：企业项目Id。
 

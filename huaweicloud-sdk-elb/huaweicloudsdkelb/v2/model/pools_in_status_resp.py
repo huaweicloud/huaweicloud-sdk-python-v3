@@ -35,7 +35,7 @@ class PoolsInStatusResp:
     }
 
     def __init__(self, id=None, name=None, members=None, operating_status=None, provisioning_status=None, healthmonitor=None):
-        """PoolsInStatusResp
+        r"""PoolsInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class PoolsInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this PoolsInStatusResp.
+        r"""Gets the id of this PoolsInStatusResp.
 
         后端云服务器组ID
 
@@ -83,7 +83,7 @@ class PoolsInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PoolsInStatusResp.
+        r"""Sets the id of this PoolsInStatusResp.
 
         后端云服务器组ID
 
@@ -94,7 +94,7 @@ class PoolsInStatusResp:
 
     @property
     def name(self):
-        """Gets the name of this PoolsInStatusResp.
+        r"""Gets the name of this PoolsInStatusResp.
 
         后端云服务器组名称
 
@@ -105,7 +105,7 @@ class PoolsInStatusResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PoolsInStatusResp.
+        r"""Sets the name of this PoolsInStatusResp.
 
         后端云服务器组名称
 
@@ -116,7 +116,7 @@ class PoolsInStatusResp:
 
     @property
     def members(self):
-        """Gets the members of this PoolsInStatusResp.
+        r"""Gets the members of this PoolsInStatusResp.
 
         后端云服务器组关联的后端云服务器列表
 
@@ -127,7 +127,7 @@ class PoolsInStatusResp:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this PoolsInStatusResp.
+        r"""Sets the members of this PoolsInStatusResp.
 
         后端云服务器组关联的后端云服务器列表
 
@@ -138,7 +138,7 @@ class PoolsInStatusResp:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this PoolsInStatusResp.
+        r"""Gets the operating_status of this PoolsInStatusResp.
 
         后端云服务器组的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
@@ -149,7 +149,7 @@ class PoolsInStatusResp:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this PoolsInStatusResp.
+        r"""Sets the operating_status of this PoolsInStatusResp.
 
         后端云服务器组的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
@@ -160,7 +160,7 @@ class PoolsInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this PoolsInStatusResp.
+        r"""Gets the provisioning_status of this PoolsInStatusResp.
 
         后端云服务器组的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -171,7 +171,7 @@ class PoolsInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this PoolsInStatusResp.
+        r"""Sets the provisioning_status of this PoolsInStatusResp.
 
         后端云服务器组的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -182,7 +182,7 @@ class PoolsInStatusResp:
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this PoolsInStatusResp.
+        r"""Gets the healthmonitor of this PoolsInStatusResp.
 
         :return: The healthmonitor of this PoolsInStatusResp.
         :rtype: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`
@@ -191,7 +191,7 @@ class PoolsInStatusResp:
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this PoolsInStatusResp.
+        r"""Sets the healthmonitor of this PoolsInStatusResp.
 
         :param healthmonitor: The healthmonitor of this PoolsInStatusResp.
         :type healthmonitor: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`

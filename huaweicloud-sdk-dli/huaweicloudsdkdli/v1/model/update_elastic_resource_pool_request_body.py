@@ -29,7 +29,7 @@ class UpdateElasticResourcePoolRequestBody:
     }
 
     def __init__(self, description=None, max_cu=None, min_cu=None):
-        """UpdateElasticResourcePoolRequestBody
+        r"""UpdateElasticResourcePoolRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateElasticResourcePoolRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateElasticResourcePoolRequestBody.
+        r"""Gets the description of this UpdateElasticResourcePoolRequestBody.
 
         描述信息。长度限制：256个字符以内。
 
@@ -68,7 +68,7 @@ class UpdateElasticResourcePoolRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateElasticResourcePoolRequestBody.
+        r"""Sets the description of this UpdateElasticResourcePoolRequestBody.
 
         描述信息。长度限制：256个字符以内。
 
@@ -79,7 +79,7 @@ class UpdateElasticResourcePoolRequestBody:
 
     @property
     def max_cu(self):
-        """Gets the max_cu of this UpdateElasticResourcePoolRequestBody.
+        r"""Gets the max_cu of this UpdateElasticResourcePoolRequestBody.
 
         max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -90,7 +90,7 @@ class UpdateElasticResourcePoolRequestBody:
 
     @max_cu.setter
     def max_cu(self, max_cu):
-        """Sets the max_cu of this UpdateElasticResourcePoolRequestBody.
+        r"""Sets the max_cu of this UpdateElasticResourcePoolRequestBody.
 
         max_cu大于等于该弹性资源池下任意一个队列的最大CU。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -101,7 +101,7 @@ class UpdateElasticResourcePoolRequestBody:
 
     @property
     def min_cu(self):
-        """Gets the min_cu of this UpdateElasticResourcePoolRequestBody.
+        r"""Gets the min_cu of this UpdateElasticResourcePoolRequestBody.
 
         min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 
@@ -112,7 +112,7 @@ class UpdateElasticResourcePoolRequestBody:
 
     @min_cu.setter
     def min_cu(self, min_cu):
-        """Sets the min_cu of this UpdateElasticResourcePoolRequestBody.
+        r"""Sets the min_cu of this UpdateElasticResourcePoolRequestBody.
 
         min_cu大于等于该弹性资源池下所有队列最小CU之和，且小于等于max_cu。标准版弹性资源池最小值为64，最大值为32000；基础版弹性资源池最小值为16，最大值为64。
 

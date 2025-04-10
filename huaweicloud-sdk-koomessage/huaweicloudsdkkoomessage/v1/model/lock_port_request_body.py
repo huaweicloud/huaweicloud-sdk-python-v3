@@ -33,7 +33,7 @@ class LockPortRequestBody:
     }
 
     def __init__(self, pub_id=None, port=None, province=None, sign=None, ext_port_id=None):
-        """LockPortRequestBody
+        r"""LockPortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class LockPortRequestBody:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this LockPortRequestBody.
+        r"""Gets the pub_id of this LockPortRequestBody.
 
         服务号ID。
 
@@ -77,7 +77,7 @@ class LockPortRequestBody:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this LockPortRequestBody.
+        r"""Sets the pub_id of this LockPortRequestBody.
 
         服务号ID。
 
@@ -88,7 +88,7 @@ class LockPortRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this LockPortRequestBody.
+        r"""Gets the port of this LockPortRequestBody.
 
         通道号。 - port_type=5时，长度必须为5 - port_type=1或3，长度在21位内 
 
@@ -99,7 +99,7 @@ class LockPortRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this LockPortRequestBody.
+        r"""Sets the port of this LockPortRequestBody.
 
         通道号。 - port_type=5时，长度必须为5 - port_type=1或3，长度在21位内 
 
@@ -110,7 +110,7 @@ class LockPortRequestBody:
 
     @property
     def province(self):
-        """Gets the province of this LockPortRequestBody.
+        r"""Gets the province of this LockPortRequestBody.
 
         绑定的地区，不允许传入重叠地区。地区取值见《地区名称列表》。
 
@@ -121,7 +121,7 @@ class LockPortRequestBody:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this LockPortRequestBody.
+        r"""Sets the province of this LockPortRequestBody.
 
         绑定的地区，不允许传入重叠地区。地区取值见《地区名称列表》。
 
@@ -132,7 +132,7 @@ class LockPortRequestBody:
 
     @property
     def sign(self):
-        """Gets the sign of this LockPortRequestBody.
+        r"""Gets the sign of this LockPortRequestBody.
 
         绑定签名，必须是该端口号签名的子集。单个签名长度为2-18。
 
@@ -143,7 +143,7 @@ class LockPortRequestBody:
 
     @sign.setter
     def sign(self, sign):
-        """Sets the sign of this LockPortRequestBody.
+        r"""Sets the sign of this LockPortRequestBody.
 
         绑定签名，必须是该端口号签名的子集。单个签名长度为2-18。
 
@@ -154,7 +154,7 @@ class LockPortRequestBody:
 
     @property
     def ext_port_id(self):
-        """Gets the ext_port_id of this LockPortRequestBody.
+        r"""Gets the ext_port_id of this LockPortRequestBody.
 
         关联通道号ID，取通道号列表返回的ID。
 
@@ -165,7 +165,7 @@ class LockPortRequestBody:
 
     @ext_port_id.setter
     def ext_port_id(self, ext_port_id):
-        """Sets the ext_port_id of this LockPortRequestBody.
+        r"""Sets the ext_port_id of this LockPortRequestBody.
 
         关联通道号ID，取通道号列表返回的ID。
 

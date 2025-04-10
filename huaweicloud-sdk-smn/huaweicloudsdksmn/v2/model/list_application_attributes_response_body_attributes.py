@@ -27,7 +27,7 @@ class ListApplicationAttributesResponseBodyAttributes:
     }
 
     def __init__(self, enabled=None, apple_certificate_expiration_date=None):
-        """ListApplicationAttributesResponseBodyAttributes
+        r"""ListApplicationAttributesResponseBodyAttributes
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListApplicationAttributesResponseBodyAttributes:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListApplicationAttributesResponseBodyAttributes.
+        r"""Gets the enabled of this ListApplicationAttributesResponseBodyAttributes.
 
         应用平台是否启用。
 
@@ -60,7 +60,7 @@ class ListApplicationAttributesResponseBodyAttributes:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListApplicationAttributesResponseBodyAttributes.
+        r"""Sets the enabled of this ListApplicationAttributesResponseBodyAttributes.
 
         应用平台是否启用。
 
@@ -71,7 +71,7 @@ class ListApplicationAttributesResponseBodyAttributes:
 
     @property
     def apple_certificate_expiration_date(self):
-        """Gets the apple_certificate_expiration_date of this ListApplicationAttributesResponseBodyAttributes.
+        r"""Gets the apple_certificate_expiration_date of this ListApplicationAttributesResponseBodyAttributes.
 
         苹果证书过期时间，APNS、APNS_SANDBOX平台特有属性 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -82,7 +82,7 @@ class ListApplicationAttributesResponseBodyAttributes:
 
     @apple_certificate_expiration_date.setter
     def apple_certificate_expiration_date(self, apple_certificate_expiration_date):
-        """Sets the apple_certificate_expiration_date of this ListApplicationAttributesResponseBodyAttributes.
+        r"""Sets the apple_certificate_expiration_date of this ListApplicationAttributesResponseBodyAttributes.
 
         苹果证书过期时间，APNS、APNS_SANDBOX平台特有属性 时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 

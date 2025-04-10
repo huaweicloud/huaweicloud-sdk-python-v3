@@ -26,7 +26,7 @@ class CreateOptimizationTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateOptimizationTaskResponse
+        r"""CreateOptimizationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateOptimizationTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateOptimizationTaskResponse.
+        r"""Gets the body of this CreateOptimizationTaskResponse.
 
         分子优化任务ID
 
@@ -55,7 +55,7 @@ class CreateOptimizationTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOptimizationTaskResponse.
+        r"""Sets the body of this CreateOptimizationTaskResponse.
 
         分子优化任务ID
 

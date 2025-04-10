@@ -29,7 +29,7 @@ class ShowPlaybookVersionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None):
-        """ShowPlaybookVersionRequest
+        r"""ShowPlaybookVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowPlaybookVersionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlaybookVersionRequest.
+        r"""Gets the project_id of this ShowPlaybookVersionRequest.
 
         ID of project
 
@@ -65,7 +65,7 @@ class ShowPlaybookVersionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlaybookVersionRequest.
+        r"""Sets the project_id of this ShowPlaybookVersionRequest.
 
         ID of project
 
@@ -76,7 +76,7 @@ class ShowPlaybookVersionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowPlaybookVersionRequest.
+        r"""Gets the workspace_id of this ShowPlaybookVersionRequest.
 
         ID of workspace
 
@@ -87,7 +87,7 @@ class ShowPlaybookVersionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowPlaybookVersionRequest.
+        r"""Sets the workspace_id of this ShowPlaybookVersionRequest.
 
         ID of workspace
 
@@ -98,7 +98,7 @@ class ShowPlaybookVersionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ShowPlaybookVersionRequest.
+        r"""Gets the version_id of this ShowPlaybookVersionRequest.
 
         version Id value
 
@@ -109,7 +109,7 @@ class ShowPlaybookVersionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ShowPlaybookVersionRequest.
+        r"""Sets the version_id of this ShowPlaybookVersionRequest.
 
         version Id value
 

@@ -32,7 +32,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchStatisticResourceInfoResponse
+        r"""SearchStatisticResourceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchStatisticResourceInfoResponse.
+        r"""Gets the count of this SearchStatisticResourceInfoResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchStatisticResourceInfoResponse.
+        r"""Sets the count of this SearchStatisticResourceInfoResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchStatisticResourceInfoResponse.
+        r"""Gets the limit of this SearchStatisticResourceInfoResponse.
 
         查询条目数量。
 
@@ -98,7 +98,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchStatisticResourceInfoResponse.
+        r"""Sets the limit of this SearchStatisticResourceInfoResponse.
 
         查询条目数量。
 
@@ -109,7 +109,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchStatisticResourceInfoResponse.
+        r"""Gets the offset of this SearchStatisticResourceInfoResponse.
 
         查询偏移量。
 
@@ -120,7 +120,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchStatisticResourceInfoResponse.
+        r"""Sets the offset of this SearchStatisticResourceInfoResponse.
 
         查询偏移量。
 
@@ -131,7 +131,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchStatisticResourceInfoResponse.
+        r"""Gets the data of this SearchStatisticResourceInfoResponse.
 
         会议已购资源使用数据按时间点统计的查询结果数组。
 
@@ -142,7 +142,7 @@ class SearchStatisticResourceInfoResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchStatisticResourceInfoResponse.
+        r"""Sets the data of this SearchStatisticResourceInfoResponse.
 
         会议已购资源使用数据按时间点统计的查询结果数组。
 

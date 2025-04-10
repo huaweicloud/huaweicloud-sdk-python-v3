@@ -28,7 +28,7 @@ class ListProjectDomainsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domains=None):
-        """ListProjectDomainsResponse
+        r"""ListProjectDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectDomainsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectDomainsResponse.
+        r"""Gets the total of this ListProjectDomainsResponse.
 
         领域总数
 
@@ -62,7 +62,7 @@ class ListProjectDomainsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectDomainsResponse.
+        r"""Sets the total of this ListProjectDomainsResponse.
 
         领域总数
 
@@ -73,7 +73,7 @@ class ListProjectDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this ListProjectDomainsResponse.
+        r"""Gets the domains of this ListProjectDomainsResponse.
 
         领域列表
 
@@ -84,7 +84,7 @@ class ListProjectDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListProjectDomainsResponse.
+        r"""Sets the domains of this ListProjectDomainsResponse.
 
         领域列表
 

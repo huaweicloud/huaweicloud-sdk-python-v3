@@ -41,7 +41,7 @@ class BelongItemList:
     }
 
     def __init__(self, name=None, item_number=None, specification=None, unit=None, quantity=None, unit_price=None, amount=None, tax_rate=None, tax=None):
-        """BelongItemList
+        r"""BelongItemList
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class BelongItemList:
 
     @property
     def name(self):
-        """Gets the name of this BelongItemList.
+        r"""Gets the name of this BelongItemList.
 
         货物或应税劳务、服务名称。 
 
@@ -110,7 +110,7 @@ class BelongItemList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BelongItemList.
+        r"""Sets the name of this BelongItemList.
 
         货物或应税劳务、服务名称。 
 
@@ -121,7 +121,7 @@ class BelongItemList:
 
     @property
     def item_number(self):
-        """Gets the item_number of this BelongItemList.
+        r"""Gets the item_number of this BelongItemList.
 
         序号。 
 
@@ -132,7 +132,7 @@ class BelongItemList:
 
     @item_number.setter
     def item_number(self, item_number):
-        """Sets the item_number of this BelongItemList.
+        r"""Sets the item_number of this BelongItemList.
 
         序号。 
 
@@ -143,7 +143,7 @@ class BelongItemList:
 
     @property
     def specification(self):
-        """Gets the specification of this BelongItemList.
+        r"""Gets the specification of this BelongItemList.
 
         规格型号。 
 
@@ -154,7 +154,7 @@ class BelongItemList:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this BelongItemList.
+        r"""Sets the specification of this BelongItemList.
 
         规格型号。 
 
@@ -165,7 +165,7 @@ class BelongItemList:
 
     @property
     def unit(self):
-        """Gets the unit of this BelongItemList.
+        r"""Gets the unit of this BelongItemList.
 
         单位。 
 
@@ -176,7 +176,7 @@ class BelongItemList:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this BelongItemList.
+        r"""Sets the unit of this BelongItemList.
 
         单位。 
 
@@ -187,7 +187,7 @@ class BelongItemList:
 
     @property
     def quantity(self):
-        """Gets the quantity of this BelongItemList.
+        r"""Gets the quantity of this BelongItemList.
 
         数量。 
 
@@ -198,7 +198,7 @@ class BelongItemList:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this BelongItemList.
+        r"""Sets the quantity of this BelongItemList.
 
         数量。 
 
@@ -209,7 +209,7 @@ class BelongItemList:
 
     @property
     def unit_price(self):
-        """Gets the unit_price of this BelongItemList.
+        r"""Gets the unit_price of this BelongItemList.
 
         单价。 
 
@@ -220,7 +220,7 @@ class BelongItemList:
 
     @unit_price.setter
     def unit_price(self, unit_price):
-        """Sets the unit_price of this BelongItemList.
+        r"""Sets the unit_price of this BelongItemList.
 
         单价。 
 
@@ -231,7 +231,7 @@ class BelongItemList:
 
     @property
     def amount(self):
-        """Gets the amount of this BelongItemList.
+        r"""Gets the amount of this BelongItemList.
 
         金额。 
 
@@ -242,7 +242,7 @@ class BelongItemList:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this BelongItemList.
+        r"""Sets the amount of this BelongItemList.
 
         金额。 
 
@@ -253,7 +253,7 @@ class BelongItemList:
 
     @property
     def tax_rate(self):
-        """Gets the tax_rate of this BelongItemList.
+        r"""Gets the tax_rate of this BelongItemList.
 
         税率。 
 
@@ -264,7 +264,7 @@ class BelongItemList:
 
     @tax_rate.setter
     def tax_rate(self, tax_rate):
-        """Sets the tax_rate of this BelongItemList.
+        r"""Sets the tax_rate of this BelongItemList.
 
         税率。 
 
@@ -275,7 +275,7 @@ class BelongItemList:
 
     @property
     def tax(self):
-        """Gets the tax of this BelongItemList.
+        r"""Gets the tax of this BelongItemList.
 
         税额。 
 
@@ -286,7 +286,7 @@ class BelongItemList:
 
     @tax.setter
     def tax(self, tax):
-        """Sets the tax of this BelongItemList.
+        r"""Sets the tax of this BelongItemList.
 
         税额。 
 

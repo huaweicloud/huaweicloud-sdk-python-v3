@@ -25,7 +25,7 @@ class InstanceAccessControlAttributeConfigurationDto:
     }
 
     def __init__(self, access_control_attributes=None):
-        """InstanceAccessControlAttributeConfigurationDto
+        r"""InstanceAccessControlAttributeConfigurationDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InstanceAccessControlAttributeConfigurationDto:
 
     @property
     def access_control_attributes(self):
-        """Gets the access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
+        r"""Gets the access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
 
         IAM身份中心实例中ABAC配置的属性
 
@@ -53,7 +53,7 @@ class InstanceAccessControlAttributeConfigurationDto:
 
     @access_control_attributes.setter
     def access_control_attributes(self, access_control_attributes):
-        """Sets the access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
+        r"""Sets the access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
 
         IAM身份中心实例中ABAC配置的属性
 

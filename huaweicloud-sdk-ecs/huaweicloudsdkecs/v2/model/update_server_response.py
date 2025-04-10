@@ -26,7 +26,7 @@ class UpdateServerResponse(SdkResponse):
     }
 
     def __init__(self, server=None):
-        """UpdateServerResponse
+        r"""UpdateServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateServerResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this UpdateServerResponse.
+        r"""Gets the server of this UpdateServerResponse.
 
         :return: The server of this UpdateServerResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerResult`
@@ -53,7 +53,7 @@ class UpdateServerResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this UpdateServerResponse.
+        r"""Sets the server of this UpdateServerResponse.
 
         :param server: The server of this UpdateServerResponse.
         :type server: :class:`huaweicloudsdkecs.v2.UpdateServerResult`

@@ -31,7 +31,7 @@ class ListGaussMysqlDatabaseInfo:
     }
 
     def __init__(self, name=None, charset=None, comment=None, users=None):
-        """ListGaussMysqlDatabaseInfo
+        r"""ListGaussMysqlDatabaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this ListGaussMysqlDatabaseInfo.
+        r"""Gets the name of this ListGaussMysqlDatabaseInfo.
 
         数据库名称。
 
@@ -75,7 +75,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGaussMysqlDatabaseInfo.
+        r"""Sets the name of this ListGaussMysqlDatabaseInfo.
 
         数据库名称。
 
@@ -86,7 +86,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @property
     def charset(self):
-        """Gets the charset of this ListGaussMysqlDatabaseInfo.
+        r"""Gets the charset of this ListGaussMysqlDatabaseInfo.
 
         数据库使用的字符集，如utf8mb4、gbk等。
 
@@ -97,7 +97,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @charset.setter
     def charset(self, charset):
-        """Sets the charset of this ListGaussMysqlDatabaseInfo.
+        r"""Sets the charset of this ListGaussMysqlDatabaseInfo.
 
         数据库使用的字符集，如utf8mb4、gbk等。
 
@@ -108,7 +108,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @property
     def comment(self):
-        """Gets the comment of this ListGaussMysqlDatabaseInfo.
+        r"""Gets the comment of this ListGaussMysqlDatabaseInfo.
 
         数据库备注。
 
@@ -119,7 +119,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this ListGaussMysqlDatabaseInfo.
+        r"""Sets the comment of this ListGaussMysqlDatabaseInfo.
 
         数据库备注。
 
@@ -130,7 +130,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @property
     def users(self):
-        """Gets the users of this ListGaussMysqlDatabaseInfo.
+        r"""Gets the users of this ListGaussMysqlDatabaseInfo.
 
         已授权数据库用户列表。
 
@@ -141,7 +141,7 @@ class ListGaussMysqlDatabaseInfo:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListGaussMysqlDatabaseInfo.
+        r"""Sets the users of this ListGaussMysqlDatabaseInfo.
 
         已授权数据库用户列表。
 

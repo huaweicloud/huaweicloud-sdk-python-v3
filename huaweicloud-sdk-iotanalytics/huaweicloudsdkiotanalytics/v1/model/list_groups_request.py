@@ -35,7 +35,7 @@ class ListGroupsRequest:
     }
 
     def __init__(self, unit=None, type=None, group_id=None, name=None, offset=None, limit=None):
-        """ListGroupsRequest
+        r"""ListGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListGroupsRequest:
 
     @property
     def unit(self):
-        """Gets the unit of this ListGroupsRequest.
+        r"""Gets the unit of this ListGroupsRequest.
 
         存储用量单位
 
@@ -89,7 +89,7 @@ class ListGroupsRequest:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ListGroupsRequest.
+        r"""Sets the unit of this ListGroupsRequest.
 
         存储用量单位
 
@@ -100,7 +100,7 @@ class ListGroupsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListGroupsRequest.
+        r"""Gets the type of this ListGroupsRequest.
 
         存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
 
@@ -111,7 +111,7 @@ class ListGroupsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListGroupsRequest.
+        r"""Sets the type of this ListGroupsRequest.
 
         存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
 
@@ -122,7 +122,7 @@ class ListGroupsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListGroupsRequest.
+        r"""Gets the group_id of this ListGroupsRequest.
 
         存储组 ID
 
@@ -133,7 +133,7 @@ class ListGroupsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListGroupsRequest.
+        r"""Sets the group_id of this ListGroupsRequest.
 
         存储组 ID
 
@@ -144,7 +144,7 @@ class ListGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGroupsRequest.
+        r"""Gets the name of this ListGroupsRequest.
 
         存储组名称
 
@@ -155,7 +155,7 @@ class ListGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGroupsRequest.
+        r"""Sets the name of this ListGroupsRequest.
 
         存储组名称
 
@@ -166,7 +166,7 @@ class ListGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGroupsRequest.
+        r"""Gets the offset of this ListGroupsRequest.
 
         页码
 
@@ -177,7 +177,7 @@ class ListGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGroupsRequest.
+        r"""Sets the offset of this ListGroupsRequest.
 
         页码
 
@@ -188,7 +188,7 @@ class ListGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupsRequest.
+        r"""Gets the limit of this ListGroupsRequest.
 
         返回条数限制
 
@@ -199,7 +199,7 @@ class ListGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupsRequest.
+        r"""Sets the limit of this ListGroupsRequest.
 
         返回条数限制
 

@@ -39,7 +39,7 @@ class ListAssetRequest:
     }
 
     def __init__(self, categories=None, key_word=None, labels=None, limit=None, offset=None, publishers=None, scope=None, vendor_ids=None):
-        """ListAssetRequest
+        r"""ListAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListAssetRequest:
 
     @property
     def categories(self):
-        """Gets the categories of this ListAssetRequest.
+        r"""Gets the categories of this ListAssetRequest.
 
         资产类别，支持IMAGE/APP/WORKFLOW/DATASET，支持查询多个，以','分割
 
@@ -102,7 +102,7 @@ class ListAssetRequest:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this ListAssetRequest.
+        r"""Sets the categories of this ListAssetRequest.
 
         资产类别，支持IMAGE/APP/WORKFLOW/DATASET，支持查询多个，以','分割
 
@@ -113,7 +113,7 @@ class ListAssetRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListAssetRequest.
+        r"""Gets the key_word of this ListAssetRequest.
 
         关键字，支持在资产名、资产标题、短描述、长描述中搜索
 
@@ -124,7 +124,7 @@ class ListAssetRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListAssetRequest.
+        r"""Sets the key_word of this ListAssetRequest.
 
         关键字，支持在资产名、资产标题、短描述、长描述中搜索
 
@@ -135,7 +135,7 @@ class ListAssetRequest:
 
     @property
     def labels(self):
-        """Gets the labels of this ListAssetRequest.
+        r"""Gets the labels of this ListAssetRequest.
 
         标签，支持查询多个，以','分割
 
@@ -146,7 +146,7 @@ class ListAssetRequest:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ListAssetRequest.
+        r"""Sets the labels of this ListAssetRequest.
 
         标签，支持查询多个，以','分割
 
@@ -157,7 +157,7 @@ class ListAssetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssetRequest.
+        r"""Gets the limit of this ListAssetRequest.
 
         返回记录限制
 
@@ -168,7 +168,7 @@ class ListAssetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssetRequest.
+        r"""Sets the limit of this ListAssetRequest.
 
         返回记录限制
 
@@ -179,7 +179,7 @@ class ListAssetRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssetRequest.
+        r"""Gets the offset of this ListAssetRequest.
 
         偏移量
 
@@ -190,7 +190,7 @@ class ListAssetRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssetRequest.
+        r"""Sets the offset of this ListAssetRequest.
 
         偏移量
 
@@ -201,7 +201,7 @@ class ListAssetRequest:
 
     @property
     def publishers(self):
-        """Gets the publishers of this ListAssetRequest.
+        r"""Gets the publishers of this ListAssetRequest.
 
         发布者，支持查询多个，以','分割
 
@@ -212,7 +212,7 @@ class ListAssetRequest:
 
     @publishers.setter
     def publishers(self, publishers):
-        """Sets the publishers of this ListAssetRequest.
+        r"""Sets the publishers of this ListAssetRequest.
 
         发布者，支持查询多个，以','分割
 
@@ -223,7 +223,7 @@ class ListAssetRequest:
 
     @property
     def scope(self):
-        """Gets the scope of this ListAssetRequest.
+        r"""Gets the scope of this ListAssetRequest.
 
         查询范围，支持PUBLIC/INTERNAL/SELF
 
@@ -234,7 +234,7 @@ class ListAssetRequest:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ListAssetRequest.
+        r"""Sets the scope of this ListAssetRequest.
 
         查询范围，支持PUBLIC/INTERNAL/SELF
 
@@ -245,7 +245,7 @@ class ListAssetRequest:
 
     @property
     def vendor_ids(self):
-        """Gets the vendor_ids of this ListAssetRequest.
+        r"""Gets the vendor_ids of this ListAssetRequest.
 
         供应商，支持查询多个，以','分割
 
@@ -256,7 +256,7 @@ class ListAssetRequest:
 
     @vendor_ids.setter
     def vendor_ids(self, vendor_ids):
-        """Sets the vendor_ids of this ListAssetRequest.
+        r"""Sets the vendor_ids of this ListAssetRequest.
 
         供应商，支持查询多个，以','分割
 

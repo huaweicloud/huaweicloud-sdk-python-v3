@@ -41,7 +41,7 @@ class ExecuteRecordV2Body:
     }
 
     def __init__(self, duration=None, state=None, operator=None, execution_id=None, start_time=None, nickname=None, end_time=None, release_id=None, type=None):
-        """ExecuteRecordV2Body
+        r"""ExecuteRecordV2Body
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExecuteRecordV2Body:
 
     @property
     def duration(self):
-        """Gets the duration of this ExecuteRecordV2Body.
+        r"""Gets the duration of this ExecuteRecordV2Body.
 
         部署用时
 
@@ -110,7 +110,7 @@ class ExecuteRecordV2Body:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ExecuteRecordV2Body.
+        r"""Sets the duration of this ExecuteRecordV2Body.
 
         部署用时
 
@@ -121,7 +121,7 @@ class ExecuteRecordV2Body:
 
     @property
     def state(self):
-        """Gets the state of this ExecuteRecordV2Body.
+        r"""Gets the state of this ExecuteRecordV2Body.
 
         应用状态
 
@@ -132,7 +132,7 @@ class ExecuteRecordV2Body:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ExecuteRecordV2Body.
+        r"""Sets the state of this ExecuteRecordV2Body.
 
         应用状态
 
@@ -143,7 +143,7 @@ class ExecuteRecordV2Body:
 
     @property
     def operator(self):
-        """Gets the operator of this ExecuteRecordV2Body.
+        r"""Gets the operator of this ExecuteRecordV2Body.
 
         操作人用户名
 
@@ -154,7 +154,7 @@ class ExecuteRecordV2Body:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ExecuteRecordV2Body.
+        r"""Sets the operator of this ExecuteRecordV2Body.
 
         操作人用户名
 
@@ -165,7 +165,7 @@ class ExecuteRecordV2Body:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this ExecuteRecordV2Body.
+        r"""Gets the execution_id of this ExecuteRecordV2Body.
 
         部署记录id
 
@@ -176,7 +176,7 @@ class ExecuteRecordV2Body:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this ExecuteRecordV2Body.
+        r"""Sets the execution_id of this ExecuteRecordV2Body.
 
         部署记录id
 
@@ -187,7 +187,7 @@ class ExecuteRecordV2Body:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ExecuteRecordV2Body.
+        r"""Gets the start_time of this ExecuteRecordV2Body.
 
         部署应用的开始时间
 
@@ -198,7 +198,7 @@ class ExecuteRecordV2Body:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ExecuteRecordV2Body.
+        r"""Sets the start_time of this ExecuteRecordV2Body.
 
         部署应用的开始时间
 
@@ -209,7 +209,7 @@ class ExecuteRecordV2Body:
 
     @property
     def nickname(self):
-        """Gets the nickname of this ExecuteRecordV2Body.
+        r"""Gets the nickname of this ExecuteRecordV2Body.
 
         操作人昵称
 
@@ -220,7 +220,7 @@ class ExecuteRecordV2Body:
 
     @nickname.setter
     def nickname(self, nickname):
-        """Sets the nickname of this ExecuteRecordV2Body.
+        r"""Sets the nickname of this ExecuteRecordV2Body.
 
         操作人昵称
 
@@ -231,7 +231,7 @@ class ExecuteRecordV2Body:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ExecuteRecordV2Body.
+        r"""Gets the end_time of this ExecuteRecordV2Body.
 
         部署应用的结束时间
 
@@ -242,7 +242,7 @@ class ExecuteRecordV2Body:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ExecuteRecordV2Body.
+        r"""Sets the end_time of this ExecuteRecordV2Body.
 
         部署应用的结束时间
 
@@ -253,7 +253,7 @@ class ExecuteRecordV2Body:
 
     @property
     def release_id(self):
-        """Gets the release_id of this ExecuteRecordV2Body.
+        r"""Gets the release_id of this ExecuteRecordV2Body.
 
         部署记录序列号
 
@@ -264,7 +264,7 @@ class ExecuteRecordV2Body:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this ExecuteRecordV2Body.
+        r"""Sets the release_id of this ExecuteRecordV2Body.
 
         部署记录序列号
 
@@ -275,7 +275,7 @@ class ExecuteRecordV2Body:
 
     @property
     def type(self):
-        """Gets the type of this ExecuteRecordV2Body.
+        r"""Gets the type of this ExecuteRecordV2Body.
 
         类型
 
@@ -286,7 +286,7 @@ class ExecuteRecordV2Body:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExecuteRecordV2Body.
+        r"""Sets the type of this ExecuteRecordV2Body.
 
         类型
 

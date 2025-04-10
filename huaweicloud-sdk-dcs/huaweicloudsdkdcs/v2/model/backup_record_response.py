@@ -53,7 +53,7 @@ class BackupRecordResponse:
     }
 
     def __init__(self, backup_id=None, period=None, backup_name=None, instance_id=None, size=None, backup_type=None, created_at=None, updated_at=None, progress=None, error_code=None, remark=None, status=None, is_support_restore=None, backup_format=None, execution_at=None):
-        """BackupRecordResponse
+        r"""BackupRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class BackupRecordResponse:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this BackupRecordResponse.
+        r"""Gets the backup_id of this BackupRecordResponse.
 
         备份记录ID。
 
@@ -152,7 +152,7 @@ class BackupRecordResponse:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this BackupRecordResponse.
+        r"""Sets the backup_id of this BackupRecordResponse.
 
         备份记录ID。
 
@@ -163,7 +163,7 @@ class BackupRecordResponse:
 
     @property
     def period(self):
-        """Gets the period of this BackupRecordResponse.
+        r"""Gets the period of this BackupRecordResponse.
 
         备份执行时间段。
 
@@ -174,7 +174,7 @@ class BackupRecordResponse:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this BackupRecordResponse.
+        r"""Sets the period of this BackupRecordResponse.
 
         备份执行时间段。
 
@@ -185,7 +185,7 @@ class BackupRecordResponse:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this BackupRecordResponse.
+        r"""Gets the backup_name of this BackupRecordResponse.
 
         备份记录名称。
 
@@ -196,7 +196,7 @@ class BackupRecordResponse:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this BackupRecordResponse.
+        r"""Sets the backup_name of this BackupRecordResponse.
 
         备份记录名称。
 
@@ -207,7 +207,7 @@ class BackupRecordResponse:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BackupRecordResponse.
+        r"""Gets the instance_id of this BackupRecordResponse.
 
         实例ID。
 
@@ -218,7 +218,7 @@ class BackupRecordResponse:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BackupRecordResponse.
+        r"""Sets the instance_id of this BackupRecordResponse.
 
         实例ID。
 
@@ -229,7 +229,7 @@ class BackupRecordResponse:
 
     @property
     def size(self):
-        """Gets the size of this BackupRecordResponse.
+        r"""Gets the size of this BackupRecordResponse.
 
         备份文件大小（Byte）。
 
@@ -240,7 +240,7 @@ class BackupRecordResponse:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BackupRecordResponse.
+        r"""Sets the size of this BackupRecordResponse.
 
         备份文件大小（Byte）。
 
@@ -251,7 +251,7 @@ class BackupRecordResponse:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this BackupRecordResponse.
+        r"""Gets the backup_type of this BackupRecordResponse.
 
         备份类型。 - manual：表示备份类型为手动备份 - auto：表示备份类型为自动备份 
 
@@ -262,7 +262,7 @@ class BackupRecordResponse:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this BackupRecordResponse.
+        r"""Sets the backup_type of this BackupRecordResponse.
 
         备份类型。 - manual：表示备份类型为手动备份 - auto：表示备份类型为自动备份 
 
@@ -273,7 +273,7 @@ class BackupRecordResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BackupRecordResponse.
+        r"""Gets the created_at of this BackupRecordResponse.
 
         备份任务创建时间。
 
@@ -284,7 +284,7 @@ class BackupRecordResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BackupRecordResponse.
+        r"""Sets the created_at of this BackupRecordResponse.
 
         备份任务创建时间。
 
@@ -295,7 +295,7 @@ class BackupRecordResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BackupRecordResponse.
+        r"""Gets the updated_at of this BackupRecordResponse.
 
         备份完成时间。
 
@@ -306,7 +306,7 @@ class BackupRecordResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BackupRecordResponse.
+        r"""Sets the updated_at of this BackupRecordResponse.
 
         备份完成时间。
 
@@ -317,7 +317,7 @@ class BackupRecordResponse:
 
     @property
     def progress(self):
-        """Gets the progress of this BackupRecordResponse.
+        r"""Gets the progress of this BackupRecordResponse.
 
         备份进度。
 
@@ -328,7 +328,7 @@ class BackupRecordResponse:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this BackupRecordResponse.
+        r"""Sets the progress of this BackupRecordResponse.
 
         备份进度。
 
@@ -339,7 +339,7 @@ class BackupRecordResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BackupRecordResponse.
+        r"""Gets the error_code of this BackupRecordResponse.
 
         备份失败后错误码 * `dcs.08.0001` - 启动备份恢复工具失败。 * `dcs.08.0002` - 执行超时。 * `dcs.08.0003` - 删除桶失败。 * `dcs.08.0004` - 获取ak/sk 失败。 * `dcs.08.0005` - 创建桶失败。 * `dcs.08.0006` - 查询备份数据大小失败。 * `dcs.08.0007` - 恢复时同步数据失败。 * `dcs.08.0008` - 自动备份任务未运行，实例正在运行其他任务。 
 
@@ -350,7 +350,7 @@ class BackupRecordResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BackupRecordResponse.
+        r"""Sets the error_code of this BackupRecordResponse.
 
         备份失败后错误码 * `dcs.08.0001` - 启动备份恢复工具失败。 * `dcs.08.0002` - 执行超时。 * `dcs.08.0003` - 删除桶失败。 * `dcs.08.0004` - 获取ak/sk 失败。 * `dcs.08.0005` - 创建桶失败。 * `dcs.08.0006` - 查询备份数据大小失败。 * `dcs.08.0007` - 恢复时同步数据失败。 * `dcs.08.0008` - 自动备份任务未运行，实例正在运行其他任务。 
 
@@ -361,7 +361,7 @@ class BackupRecordResponse:
 
     @property
     def remark(self):
-        """Gets the remark of this BackupRecordResponse.
+        r"""Gets the remark of this BackupRecordResponse.
 
         备份缓存实例的备注信息。
 
@@ -372,7 +372,7 @@ class BackupRecordResponse:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this BackupRecordResponse.
+        r"""Sets the remark of this BackupRecordResponse.
 
         备份缓存实例的备注信息。
 
@@ -383,7 +383,7 @@ class BackupRecordResponse:
 
     @property
     def status(self):
-        """Gets the status of this BackupRecordResponse.
+        r"""Gets the status of this BackupRecordResponse.
 
         备份状态。 - waiting：等待中。 - backuping：备份中。 - succeed：备份成功。 - failed：备份失败。 - expired：备份文件过期。 - deleted：已手动删除备份文件。 
 
@@ -394,7 +394,7 @@ class BackupRecordResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BackupRecordResponse.
+        r"""Sets the status of this BackupRecordResponse.
 
         备份状态。 - waiting：等待中。 - backuping：备份中。 - succeed：备份成功。 - failed：备份失败。 - expired：备份文件过期。 - deleted：已手动删除备份文件。 
 
@@ -405,7 +405,7 @@ class BackupRecordResponse:
 
     @property
     def is_support_restore(self):
-        """Gets the is_support_restore of this BackupRecordResponse.
+        r"""Gets the is_support_restore of this BackupRecordResponse.
 
         是否可以进行恢复操作，取值为TRUE或FALSE。
 
@@ -416,7 +416,7 @@ class BackupRecordResponse:
 
     @is_support_restore.setter
     def is_support_restore(self, is_support_restore):
-        """Sets the is_support_restore of this BackupRecordResponse.
+        r"""Sets the is_support_restore of this BackupRecordResponse.
 
         是否可以进行恢复操作，取值为TRUE或FALSE。
 
@@ -427,7 +427,7 @@ class BackupRecordResponse:
 
     @property
     def backup_format(self):
-        """Gets the backup_format of this BackupRecordResponse.
+        r"""Gets the backup_format of this BackupRecordResponse.
 
         备份类型。
 
@@ -438,7 +438,7 @@ class BackupRecordResponse:
 
     @backup_format.setter
     def backup_format(self, backup_format):
-        """Sets the backup_format of this BackupRecordResponse.
+        r"""Sets the backup_format of this BackupRecordResponse.
 
         备份类型。
 
@@ -449,7 +449,7 @@ class BackupRecordResponse:
 
     @property
     def execution_at(self):
-        """Gets the execution_at of this BackupRecordResponse.
+        r"""Gets the execution_at of this BackupRecordResponse.
 
         执行时间.
 
@@ -460,7 +460,7 @@ class BackupRecordResponse:
 
     @execution_at.setter
     def execution_at(self, execution_at):
-        """Sets the execution_at of this BackupRecordResponse.
+        r"""Sets the execution_at of this BackupRecordResponse.
 
         执行时间.
 

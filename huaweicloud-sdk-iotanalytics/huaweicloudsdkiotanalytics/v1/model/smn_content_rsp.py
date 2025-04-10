@@ -29,7 +29,7 @@ class SmnContentRsp:
     }
 
     def __init__(self, project_id=None, ak=None, sk=None):
-        """SmnContentRsp
+        r"""SmnContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmnContentRsp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SmnContentRsp.
+        r"""Gets the project_id of this SmnContentRsp.
 
         项目id
 
@@ -68,7 +68,7 @@ class SmnContentRsp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SmnContentRsp.
+        r"""Sets the project_id of this SmnContentRsp.
 
         项目id
 
@@ -79,7 +79,7 @@ class SmnContentRsp:
 
     @property
     def ak(self):
-        """Gets the ak of this SmnContentRsp.
+        r"""Gets the ak of this SmnContentRsp.
 
         租户的AK
 
@@ -90,7 +90,7 @@ class SmnContentRsp:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this SmnContentRsp.
+        r"""Sets the ak of this SmnContentRsp.
 
         租户的AK
 
@@ -101,7 +101,7 @@ class SmnContentRsp:
 
     @property
     def sk(self):
-        """Gets the sk of this SmnContentRsp.
+        r"""Gets the sk of this SmnContentRsp.
 
         租户的SK
 
@@ -112,7 +112,7 @@ class SmnContentRsp:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this SmnContentRsp.
+        r"""Sets the sk of this SmnContentRsp.
 
         租户的SK
 

@@ -33,7 +33,7 @@ class CreateAlarmTemplateRequestBody:
     }
 
     def __init__(self, template_name=None, template_description=None, namespace=None, dimension_name=None, template_items=None):
-        """CreateAlarmTemplateRequestBody
+        r"""CreateAlarmTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateAlarmTemplateRequestBody:
 
     @property
     def template_name(self):
-        """Gets the template_name of this CreateAlarmTemplateRequestBody.
+        r"""Gets the template_name of this CreateAlarmTemplateRequestBody.
 
         自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。。
 
@@ -78,7 +78,7 @@ class CreateAlarmTemplateRequestBody:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this CreateAlarmTemplateRequestBody.
+        r"""Sets the template_name of this CreateAlarmTemplateRequestBody.
 
         自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。。
 
@@ -89,7 +89,7 @@ class CreateAlarmTemplateRequestBody:
 
     @property
     def template_description(self):
-        """Gets the template_description of this CreateAlarmTemplateRequestBody.
+        r"""Gets the template_description of this CreateAlarmTemplateRequestBody.
 
         自定义告警模板详细描述，长度为0-256。
 
@@ -100,7 +100,7 @@ class CreateAlarmTemplateRequestBody:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this CreateAlarmTemplateRequestBody.
+        r"""Sets the template_description of this CreateAlarmTemplateRequestBody.
 
         自定义告警模板详细描述，长度为0-256。
 
@@ -111,7 +111,7 @@ class CreateAlarmTemplateRequestBody:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateAlarmTemplateRequestBody.
+        r"""Gets the namespace of this CreateAlarmTemplateRequestBody.
 
         创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -122,7 +122,7 @@ class CreateAlarmTemplateRequestBody:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateAlarmTemplateRequestBody.
+        r"""Sets the namespace of this CreateAlarmTemplateRequestBody.
 
         创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -133,7 +133,7 @@ class CreateAlarmTemplateRequestBody:
 
     @property
     def dimension_name(self):
-        """Gets the dimension_name of this CreateAlarmTemplateRequestBody.
+        r"""Gets the dimension_name of this CreateAlarmTemplateRequestBody.
 
         资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -144,7 +144,7 @@ class CreateAlarmTemplateRequestBody:
 
     @dimension_name.setter
     def dimension_name(self, dimension_name):
-        """Sets the dimension_name of this CreateAlarmTemplateRequestBody.
+        r"""Sets the dimension_name of this CreateAlarmTemplateRequestBody.
 
         资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -155,7 +155,7 @@ class CreateAlarmTemplateRequestBody:
 
     @property
     def template_items(self):
-        """Gets the template_items of this CreateAlarmTemplateRequestBody.
+        r"""Gets the template_items of this CreateAlarmTemplateRequestBody.
 
         创建自定义告警模板添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
 
@@ -166,7 +166,7 @@ class CreateAlarmTemplateRequestBody:
 
     @template_items.setter
     def template_items(self, template_items):
-        """Sets the template_items of this CreateAlarmTemplateRequestBody.
+        r"""Sets the template_items of this CreateAlarmTemplateRequestBody.
 
         创建自定义告警模板添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
 

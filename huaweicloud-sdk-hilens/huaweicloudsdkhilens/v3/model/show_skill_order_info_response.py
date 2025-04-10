@@ -82,7 +82,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
     }
 
     def __init__(self, expiration_stop_flag=None, package_order_id=None, icon=None, commission_flag=None, product_info=None, package_id=None, measure_type=None, update_time=None, channel_limit=None, resource_step_size=None, cloud_service_type=None, developer_id=None, amount=None, format=None, resource_type=None, expire_time=None, measure_unit=None, skill_chip=None, versions=None, skill_name=None, skill_type=None, used_amount=None, charge_model=None, resource_spec_code=None, skill_id=None, skill_platform=None, order_limit=None, order_id=None, status=None):
-        """ShowSkillOrderInfoResponse
+        r"""ShowSkillOrderInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -240,7 +240,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def expiration_stop_flag(self):
-        """Gets the expiration_stop_flag of this ShowSkillOrderInfoResponse.
+        r"""Gets the expiration_stop_flag of this ShowSkillOrderInfoResponse.
 
         技能是否支持永久使用标识。1标识支持，0为不支持
 
@@ -251,7 +251,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @expiration_stop_flag.setter
     def expiration_stop_flag(self, expiration_stop_flag):
-        """Sets the expiration_stop_flag of this ShowSkillOrderInfoResponse.
+        r"""Sets the expiration_stop_flag of this ShowSkillOrderInfoResponse.
 
         技能是否支持永久使用标识。1标识支持，0为不支持
 
@@ -262,7 +262,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def package_order_id(self):
-        """Gets the package_order_id of this ShowSkillOrderInfoResponse.
+        r"""Gets the package_order_id of this ShowSkillOrderInfoResponse.
 
         技能套餐包订单ID
 
@@ -273,7 +273,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @package_order_id.setter
     def package_order_id(self, package_order_id):
-        """Sets the package_order_id of this ShowSkillOrderInfoResponse.
+        r"""Sets the package_order_id of this ShowSkillOrderInfoResponse.
 
         技能套餐包订单ID
 
@@ -284,7 +284,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def icon(self):
-        """Gets the icon of this ShowSkillOrderInfoResponse.
+        r"""Gets the icon of this ShowSkillOrderInfoResponse.
 
         技能图标
 
@@ -295,7 +295,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ShowSkillOrderInfoResponse.
+        r"""Sets the icon of this ShowSkillOrderInfoResponse.
 
         技能图标
 
@@ -306,7 +306,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def commission_flag(self):
-        """Gets the commission_flag of this ShowSkillOrderInfoResponse.
+        r"""Gets the commission_flag of this ShowSkillOrderInfoResponse.
 
         定制技能标识
 
@@ -317,7 +317,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @commission_flag.setter
     def commission_flag(self, commission_flag):
-        """Sets the commission_flag of this ShowSkillOrderInfoResponse.
+        r"""Sets the commission_flag of this ShowSkillOrderInfoResponse.
 
         定制技能标识
 
@@ -328,7 +328,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def product_info(self):
-        """Gets the product_info of this ShowSkillOrderInfoResponse.
+        r"""Gets the product_info of this ShowSkillOrderInfoResponse.
 
         产品收费编码信息
 
@@ -339,7 +339,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this ShowSkillOrderInfoResponse.
+        r"""Sets the product_info of this ShowSkillOrderInfoResponse.
 
         产品收费编码信息
 
@@ -350,7 +350,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def package_id(self):
-        """Gets the package_id of this ShowSkillOrderInfoResponse.
+        r"""Gets the package_id of this ShowSkillOrderInfoResponse.
 
         套餐包ID
 
@@ -361,7 +361,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ShowSkillOrderInfoResponse.
+        r"""Sets the package_id of this ShowSkillOrderInfoResponse.
 
         套餐包ID
 
@@ -372,7 +372,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def measure_type(self):
-        """Gets the measure_type of this ShowSkillOrderInfoResponse.
+        r"""Gets the measure_type of this ShowSkillOrderInfoResponse.
 
         计费类型，physical_src表示按物理量纲收费，比如包周期 ，src表示一次性收费
 
@@ -383,7 +383,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @measure_type.setter
     def measure_type(self, measure_type):
-        """Sets the measure_type of this ShowSkillOrderInfoResponse.
+        r"""Sets the measure_type of this ShowSkillOrderInfoResponse.
 
         计费类型，physical_src表示按物理量纲收费，比如包周期 ，src表示一次性收费
 
@@ -394,7 +394,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowSkillOrderInfoResponse.
+        r"""Gets the update_time of this ShowSkillOrderInfoResponse.
 
         更新时间
 
@@ -405,7 +405,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowSkillOrderInfoResponse.
+        r"""Sets the update_time of this ShowSkillOrderInfoResponse.
 
         更新时间
 
@@ -416,7 +416,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def channel_limit(self):
-        """Gets the channel_limit of this ShowSkillOrderInfoResponse.
+        r"""Gets the channel_limit of this ShowSkillOrderInfoResponse.
 
         通道数限制
 
@@ -427,7 +427,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @channel_limit.setter
     def channel_limit(self, channel_limit):
-        """Sets the channel_limit of this ShowSkillOrderInfoResponse.
+        r"""Sets the channel_limit of this ShowSkillOrderInfoResponse.
 
         通道数限制
 
@@ -438,7 +438,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def resource_step_size(self):
-        """Gets the resource_step_size of this ShowSkillOrderInfoResponse.
+        r"""Gets the resource_step_size of this ShowSkillOrderInfoResponse.
 
         步长
 
@@ -449,7 +449,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @resource_step_size.setter
     def resource_step_size(self, resource_step_size):
-        """Sets the resource_step_size of this ShowSkillOrderInfoResponse.
+        r"""Sets the resource_step_size of this ShowSkillOrderInfoResponse.
 
         步长
 
@@ -460,7 +460,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ShowSkillOrderInfoResponse.
+        r"""Gets the cloud_service_type of this ShowSkillOrderInfoResponse.
 
         云服务编码
 
@@ -471,7 +471,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ShowSkillOrderInfoResponse.
+        r"""Sets the cloud_service_type of this ShowSkillOrderInfoResponse.
 
         云服务编码
 
@@ -482,7 +482,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def developer_id(self):
-        """Gets the developer_id of this ShowSkillOrderInfoResponse.
+        r"""Gets the developer_id of this ShowSkillOrderInfoResponse.
 
         开发者ID
 
@@ -493,7 +493,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @developer_id.setter
     def developer_id(self, developer_id):
-        """Sets the developer_id of this ShowSkillOrderInfoResponse.
+        r"""Sets the developer_id of this ShowSkillOrderInfoResponse.
 
         开发者ID
 
@@ -504,7 +504,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def amount(self):
-        """Gets the amount of this ShowSkillOrderInfoResponse.
+        r"""Gets the amount of this ShowSkillOrderInfoResponse.
 
         订单数量
 
@@ -515,7 +515,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ShowSkillOrderInfoResponse.
+        r"""Sets the amount of this ShowSkillOrderInfoResponse.
 
         订单数量
 
@@ -526,7 +526,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def format(self):
-        """Gets the format of this ShowSkillOrderInfoResponse.
+        r"""Gets the format of this ShowSkillOrderInfoResponse.
 
         技能类型，文件类型file，镜像类型iamge
 
@@ -537,7 +537,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ShowSkillOrderInfoResponse.
+        r"""Sets the format of this ShowSkillOrderInfoResponse.
 
         技能类型，文件类型file，镜像类型iamge
 
@@ -548,7 +548,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowSkillOrderInfoResponse.
+        r"""Gets the resource_type of this ShowSkillOrderInfoResponse.
 
         资源类别
 
@@ -559,7 +559,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowSkillOrderInfoResponse.
+        r"""Sets the resource_type of this ShowSkillOrderInfoResponse.
 
         资源类别
 
@@ -570,7 +570,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowSkillOrderInfoResponse.
+        r"""Gets the expire_time of this ShowSkillOrderInfoResponse.
 
         到期时间
 
@@ -581,7 +581,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowSkillOrderInfoResponse.
+        r"""Sets the expire_time of this ShowSkillOrderInfoResponse.
 
         到期时间
 
@@ -592,7 +592,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def measure_unit(self):
-        """Gets the measure_unit of this ShowSkillOrderInfoResponse.
+        r"""Gets the measure_unit of this ShowSkillOrderInfoResponse.
 
         计费单位 qps 表示按qps收费，road表示技能路数instance 表示按实例收费
 
@@ -603,7 +603,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @measure_unit.setter
     def measure_unit(self, measure_unit):
-        """Sets the measure_unit of this ShowSkillOrderInfoResponse.
+        r"""Sets the measure_unit of this ShowSkillOrderInfoResponse.
 
         计费单位 qps 表示按qps收费，road表示技能路数instance 表示按实例收费
 
@@ -614,7 +614,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def skill_chip(self):
-        """Gets the skill_chip of this ShowSkillOrderInfoResponse.
+        r"""Gets the skill_chip of this ShowSkillOrderInfoResponse.
 
         芯片类别
 
@@ -625,7 +625,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @skill_chip.setter
     def skill_chip(self, skill_chip):
-        """Sets the skill_chip of this ShowSkillOrderInfoResponse.
+        r"""Sets the skill_chip of this ShowSkillOrderInfoResponse.
 
         芯片类别
 
@@ -636,7 +636,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ShowSkillOrderInfoResponse.
+        r"""Gets the versions of this ShowSkillOrderInfoResponse.
 
         技能版本列表
 
@@ -647,7 +647,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ShowSkillOrderInfoResponse.
+        r"""Sets the versions of this ShowSkillOrderInfoResponse.
 
         技能版本列表
 
@@ -658,7 +658,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def skill_name(self):
-        """Gets the skill_name of this ShowSkillOrderInfoResponse.
+        r"""Gets the skill_name of this ShowSkillOrderInfoResponse.
 
         技能名字
 
@@ -669,7 +669,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @skill_name.setter
     def skill_name(self, skill_name):
-        """Sets the skill_name of this ShowSkillOrderInfoResponse.
+        r"""Sets the skill_name of this ShowSkillOrderInfoResponse.
 
         技能名字
 
@@ -680,7 +680,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def skill_type(self):
-        """Gets the skill_type of this ShowSkillOrderInfoResponse.
+        r"""Gets the skill_type of this ShowSkillOrderInfoResponse.
 
         技能类别
 
@@ -691,7 +691,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @skill_type.setter
     def skill_type(self, skill_type):
-        """Sets the skill_type of this ShowSkillOrderInfoResponse.
+        r"""Sets the skill_type of this ShowSkillOrderInfoResponse.
 
         技能类别
 
@@ -702,7 +702,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def used_amount(self):
-        """Gets the used_amount of this ShowSkillOrderInfoResponse.
+        r"""Gets the used_amount of this ShowSkillOrderInfoResponse.
 
         订单使用份数
 
@@ -713,7 +713,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @used_amount.setter
     def used_amount(self, used_amount):
-        """Sets the used_amount of this ShowSkillOrderInfoResponse.
+        r"""Sets the used_amount of this ShowSkillOrderInfoResponse.
 
         订单使用份数
 
@@ -724,7 +724,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def charge_model(self):
-        """Gets the charge_model of this ShowSkillOrderInfoResponse.
+        r"""Gets the charge_model of this ShowSkillOrderInfoResponse.
 
         计费模式
 
@@ -735,7 +735,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @charge_model.setter
     def charge_model(self, charge_model):
-        """Sets the charge_model of this ShowSkillOrderInfoResponse.
+        r"""Sets the charge_model of this ShowSkillOrderInfoResponse.
 
         计费模式
 
@@ -746,7 +746,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowSkillOrderInfoResponse.
+        r"""Gets the resource_spec_code of this ShowSkillOrderInfoResponse.
 
         资源编码
 
@@ -757,7 +757,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowSkillOrderInfoResponse.
+        r"""Sets the resource_spec_code of this ShowSkillOrderInfoResponse.
 
         资源编码
 
@@ -768,7 +768,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ShowSkillOrderInfoResponse.
+        r"""Gets the skill_id of this ShowSkillOrderInfoResponse.
 
         技能ID
 
@@ -779,7 +779,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ShowSkillOrderInfoResponse.
+        r"""Sets the skill_id of this ShowSkillOrderInfoResponse.
 
         技能ID
 
@@ -790,7 +790,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def skill_platform(self):
-        """Gets the skill_platform of this ShowSkillOrderInfoResponse.
+        r"""Gets the skill_platform of this ShowSkillOrderInfoResponse.
 
         技能支持的平台
 
@@ -801,7 +801,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @skill_platform.setter
     def skill_platform(self, skill_platform):
-        """Sets the skill_platform of this ShowSkillOrderInfoResponse.
+        r"""Sets the skill_platform of this ShowSkillOrderInfoResponse.
 
         技能支持的平台
 
@@ -812,7 +812,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def order_limit(self):
-        """Gets the order_limit of this ShowSkillOrderInfoResponse.
+        r"""Gets the order_limit of this ShowSkillOrderInfoResponse.
 
         订单购买限制
 
@@ -823,7 +823,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @order_limit.setter
     def order_limit(self, order_limit):
-        """Sets the order_limit of this ShowSkillOrderInfoResponse.
+        r"""Sets the order_limit of this ShowSkillOrderInfoResponse.
 
         订单购买限制
 
@@ -834,7 +834,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowSkillOrderInfoResponse.
+        r"""Gets the order_id of this ShowSkillOrderInfoResponse.
 
         订单ID
 
@@ -845,7 +845,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowSkillOrderInfoResponse.
+        r"""Sets the order_id of this ShowSkillOrderInfoResponse.
 
         订单ID
 
@@ -856,7 +856,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSkillOrderInfoResponse.
+        r"""Gets the status of this ShowSkillOrderInfoResponse.
 
         订单状态，0表示正常状态，1表示冻结状态，2表示受限状态
 
@@ -867,7 +867,7 @@ class ShowSkillOrderInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSkillOrderInfoResponse.
+        r"""Sets the status of this ShowSkillOrderInfoResponse.
 
         订单状态，0表示正常状态，1表示冻结状态，2表示受限状态
 

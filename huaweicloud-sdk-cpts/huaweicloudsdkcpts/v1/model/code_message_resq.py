@@ -27,7 +27,7 @@ class CodeMessageResq:
     }
 
     def __init__(self, code=None, message=None):
-        """CodeMessageResq
+        r"""CodeMessageResq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CodeMessageResq:
 
     @property
     def code(self):
-        """Gets the code of this CodeMessageResq.
+        r"""Gets the code of this CodeMessageResq.
 
         响应码
 
@@ -61,7 +61,7 @@ class CodeMessageResq:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CodeMessageResq.
+        r"""Sets the code of this CodeMessageResq.
 
         响应码
 
@@ -72,7 +72,7 @@ class CodeMessageResq:
 
     @property
     def message(self):
-        """Gets the message of this CodeMessageResq.
+        r"""Gets the message of this CodeMessageResq.
 
         响应消息
 
@@ -83,7 +83,7 @@ class CodeMessageResq:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CodeMessageResq.
+        r"""Sets the message of this CodeMessageResq.
 
         响应消息
 

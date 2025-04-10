@@ -37,7 +37,7 @@ class ParameterValuesInfo:
     }
 
     def __init__(self, name=None, value=None, restart_required=None, readonly=None, value_range=None, type=None, description=None):
-        """ParameterValuesInfo
+        r"""ParameterValuesInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ParameterValuesInfo:
 
     @property
     def name(self):
-        """Gets the name of this ParameterValuesInfo.
+        r"""Gets the name of this ParameterValuesInfo.
 
         参数名称。
 
@@ -96,7 +96,7 @@ class ParameterValuesInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParameterValuesInfo.
+        r"""Sets the name of this ParameterValuesInfo.
 
         参数名称。
 
@@ -107,7 +107,7 @@ class ParameterValuesInfo:
 
     @property
     def value(self):
-        """Gets the value of this ParameterValuesInfo.
+        r"""Gets the value of this ParameterValuesInfo.
 
         参数值。
 
@@ -118,7 +118,7 @@ class ParameterValuesInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ParameterValuesInfo.
+        r"""Sets the value of this ParameterValuesInfo.
 
         参数值。
 
@@ -129,7 +129,7 @@ class ParameterValuesInfo:
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this ParameterValuesInfo.
+        r"""Gets the restart_required of this ParameterValuesInfo.
 
         是否需要重启。 - false：否。 - true：是。
 
@@ -140,7 +140,7 @@ class ParameterValuesInfo:
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this ParameterValuesInfo.
+        r"""Sets the restart_required of this ParameterValuesInfo.
 
         是否需要重启。 - false：否。 - true：是。
 
@@ -151,7 +151,7 @@ class ParameterValuesInfo:
 
     @property
     def readonly(self):
-        """Gets the readonly of this ParameterValuesInfo.
+        r"""Gets the readonly of this ParameterValuesInfo.
 
         是否只读。 - false：否。 - true：是。
 
@@ -162,7 +162,7 @@ class ParameterValuesInfo:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this ParameterValuesInfo.
+        r"""Sets the readonly of this ParameterValuesInfo.
 
         是否只读。 - false：否。 - true：是。
 
@@ -173,7 +173,7 @@ class ParameterValuesInfo:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ParameterValuesInfo.
+        r"""Gets the value_range of this ParameterValuesInfo.
 
         参数值范围，如Integer取值0-1、Boolean取值true|false等。
 
@@ -184,7 +184,7 @@ class ParameterValuesInfo:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ParameterValuesInfo.
+        r"""Sets the value_range of this ParameterValuesInfo.
 
         参数值范围，如Integer取值0-1、Boolean取值true|false等。
 
@@ -195,7 +195,7 @@ class ParameterValuesInfo:
 
     @property
     def type(self):
-        """Gets the type of this ParameterValuesInfo.
+        r"""Gets the type of this ParameterValuesInfo.
 
         参数类型,可取取值如下： - string - integer - boolean  - list  - float
 
@@ -206,7 +206,7 @@ class ParameterValuesInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ParameterValuesInfo.
+        r"""Sets the type of this ParameterValuesInfo.
 
         参数类型,可取取值如下： - string - integer - boolean  - list  - float
 
@@ -217,7 +217,7 @@ class ParameterValuesInfo:
 
     @property
     def description(self):
-        """Gets the description of this ParameterValuesInfo.
+        r"""Gets the description of this ParameterValuesInfo.
 
         参数描述。
 
@@ -228,7 +228,7 @@ class ParameterValuesInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ParameterValuesInfo.
+        r"""Sets the description of this ParameterValuesInfo.
 
         参数描述。
 

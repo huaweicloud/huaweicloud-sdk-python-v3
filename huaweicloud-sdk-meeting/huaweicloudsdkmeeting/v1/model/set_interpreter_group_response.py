@@ -24,7 +24,7 @@ class SetInterpreterGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetInterpreterGroupResponse
+        r"""SetInterpreterGroupResponse
 
         The model defined in huaweicloud sdk
 

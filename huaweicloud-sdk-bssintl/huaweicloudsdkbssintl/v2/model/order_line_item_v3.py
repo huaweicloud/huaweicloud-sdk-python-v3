@@ -31,7 +31,7 @@ class OrderLineItemV3:
     }
 
     def __init__(self, order_line_item_ids=None, discount_mode=None, discount_amount=None, discount_ratio=None):
-        """OrderLineItemV3
+        r"""OrderLineItemV3
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OrderLineItemV3:
 
     @property
     def order_line_item_ids(self):
-        """Gets the order_line_item_ids of this OrderLineItemV3.
+        r"""Gets the order_line_item_ids of this OrderLineItemV3.
 
         可使用相同折扣的订单项合并后的订单项ID列表。 相同产品、相同规格（对于线性产品）、相同最终价格（例如，严选产品改价）的订单项将进行合并。
 
@@ -71,7 +71,7 @@ class OrderLineItemV3:
 
     @order_line_item_ids.setter
     def order_line_item_ids(self, order_line_item_ids):
-        """Sets the order_line_item_ids of this OrderLineItemV3.
+        r"""Sets the order_line_item_ids of this OrderLineItemV3.
 
         可使用相同折扣的订单项合并后的订单项ID列表。 相同产品、相同规格（对于线性产品）、相同最终价格（例如，严选产品改价）的订单项将进行合并。
 
@@ -82,7 +82,7 @@ class OrderLineItemV3:
 
     @property
     def discount_mode(self):
-        """Gets the discount_mode of this OrderLineItemV3.
+        r"""Gets the discount_mode of this OrderLineItemV3.
 
         订单可用折扣的模式 。 0：折扣1：一口价2：满减
 
@@ -93,7 +93,7 @@ class OrderLineItemV3:
 
     @discount_mode.setter
     def discount_mode(self, discount_mode):
-        """Sets the discount_mode of this OrderLineItemV3.
+        r"""Sets the discount_mode of this OrderLineItemV3.
 
         订单可用折扣的模式 。 0：折扣1：一口价2：满减
 
@@ -104,7 +104,7 @@ class OrderLineItemV3:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this OrderLineItemV3.
+        r"""Gets the discount_amount of this OrderLineItemV3.
 
         订单可用的折扣金额（即减免金额）。
 
@@ -115,7 +115,7 @@ class OrderLineItemV3:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this OrderLineItemV3.
+        r"""Sets the discount_amount of this OrderLineItemV3.
 
         订单可用的折扣金额（即减免金额）。
 
@@ -126,7 +126,7 @@ class OrderLineItemV3:
 
     @property
     def discount_ratio(self):
-        """Gets the discount_ratio of this OrderLineItemV3.
+        r"""Gets the discount_ratio of this OrderLineItemV3.
 
         订单可用的折扣比例。
 
@@ -137,7 +137,7 @@ class OrderLineItemV3:
 
     @discount_ratio.setter
     def discount_ratio(self, discount_ratio):
-        """Sets the discount_ratio of this OrderLineItemV3.
+        r"""Sets the discount_ratio of this OrderLineItemV3.
 
         订单可用的折扣比例。
 

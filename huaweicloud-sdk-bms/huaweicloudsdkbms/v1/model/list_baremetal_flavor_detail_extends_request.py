@@ -25,7 +25,7 @@ class ListBaremetalFlavorDetailExtendsRequest:
     }
 
     def __init__(self, availability_zone=None):
-        """ListBaremetalFlavorDetailExtendsRequest
+        r"""ListBaremetalFlavorDetailExtendsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListBaremetalFlavorDetailExtendsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
+        r"""Gets the availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
 
         可用区，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 
@@ -54,7 +54,7 @@ class ListBaremetalFlavorDetailExtendsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
+        r"""Sets the availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
 
         可用区，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 

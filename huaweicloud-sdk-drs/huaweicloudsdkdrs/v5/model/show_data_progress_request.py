@@ -31,7 +31,7 @@ class ShowDataProgressRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, offset=None, limit=None):
-        """ShowDataProgressRequest
+        r"""ShowDataProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowDataProgressRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDataProgressRequest.
+        r"""Gets the job_id of this ShowDataProgressRequest.
 
         任务ID。
 
@@ -74,7 +74,7 @@ class ShowDataProgressRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDataProgressRequest.
+        r"""Sets the job_id of this ShowDataProgressRequest.
 
         任务ID。
 
@@ -85,7 +85,7 @@ class ShowDataProgressRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDataProgressRequest.
+        r"""Gets the x_language of this ShowDataProgressRequest.
 
         请求语言类型。
 
@@ -96,7 +96,7 @@ class ShowDataProgressRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDataProgressRequest.
+        r"""Sets the x_language of this ShowDataProgressRequest.
 
         请求语言类型。
 
@@ -107,7 +107,7 @@ class ShowDataProgressRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDataProgressRequest.
+        r"""Gets the offset of this ShowDataProgressRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -118,7 +118,7 @@ class ShowDataProgressRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDataProgressRequest.
+        r"""Sets the offset of this ShowDataProgressRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -129,7 +129,7 @@ class ShowDataProgressRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDataProgressRequest.
+        r"""Gets the limit of this ShowDataProgressRequest.
 
         查询返回记录的数量限制。
 
@@ -140,7 +140,7 @@ class ShowDataProgressRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDataProgressRequest.
+        r"""Sets the limit of this ShowDataProgressRequest.
 
         查询返回记录的数量限制。
 

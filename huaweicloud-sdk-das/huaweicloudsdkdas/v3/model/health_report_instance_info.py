@@ -45,7 +45,7 @@ class HealthReportInstanceInfo:
     }
 
     def __init__(self, tenant_id=None, project_id=None, instance_id=None, master_node_id=None, instance_name=None, cpu=None, mem=None, disk_size=None, disk_type=None, engine=None, engine_version=None):
-        """HealthReportInstanceInfo
+        r"""HealthReportInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class HealthReportInstanceInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this HealthReportInstanceInfo.
+        r"""Gets the tenant_id of this HealthReportInstanceInfo.
 
         账号ID。
 
@@ -113,7 +113,7 @@ class HealthReportInstanceInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this HealthReportInstanceInfo.
+        r"""Sets the tenant_id of this HealthReportInstanceInfo.
 
         账号ID。
 
@@ -124,7 +124,7 @@ class HealthReportInstanceInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HealthReportInstanceInfo.
+        r"""Gets the project_id of this HealthReportInstanceInfo.
 
         项目ID。
 
@@ -135,7 +135,7 @@ class HealthReportInstanceInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HealthReportInstanceInfo.
+        r"""Sets the project_id of this HealthReportInstanceInfo.
 
         项目ID。
 
@@ -146,7 +146,7 @@ class HealthReportInstanceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this HealthReportInstanceInfo.
+        r"""Gets the instance_id of this HealthReportInstanceInfo.
 
         实例ID。
 
@@ -157,7 +157,7 @@ class HealthReportInstanceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this HealthReportInstanceInfo.
+        r"""Sets the instance_id of this HealthReportInstanceInfo.
 
         实例ID。
 
@@ -168,7 +168,7 @@ class HealthReportInstanceInfo:
 
     @property
     def master_node_id(self):
-        """Gets the master_node_id of this HealthReportInstanceInfo.
+        r"""Gets the master_node_id of this HealthReportInstanceInfo.
 
         主节点ID。
 
@@ -179,7 +179,7 @@ class HealthReportInstanceInfo:
 
     @master_node_id.setter
     def master_node_id(self, master_node_id):
-        """Sets the master_node_id of this HealthReportInstanceInfo.
+        r"""Sets the master_node_id of this HealthReportInstanceInfo.
 
         主节点ID。
 
@@ -190,7 +190,7 @@ class HealthReportInstanceInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this HealthReportInstanceInfo.
+        r"""Gets the instance_name of this HealthReportInstanceInfo.
 
         实例名称。
 
@@ -201,7 +201,7 @@ class HealthReportInstanceInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this HealthReportInstanceInfo.
+        r"""Sets the instance_name of this HealthReportInstanceInfo.
 
         实例名称。
 
@@ -212,7 +212,7 @@ class HealthReportInstanceInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this HealthReportInstanceInfo.
+        r"""Gets the cpu of this HealthReportInstanceInfo.
 
         实例cpu核数。
 
@@ -223,7 +223,7 @@ class HealthReportInstanceInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this HealthReportInstanceInfo.
+        r"""Sets the cpu of this HealthReportInstanceInfo.
 
         实例cpu核数。
 
@@ -234,7 +234,7 @@ class HealthReportInstanceInfo:
 
     @property
     def mem(self):
-        """Gets the mem of this HealthReportInstanceInfo.
+        r"""Gets the mem of this HealthReportInstanceInfo.
 
         实例内存大小。
 
@@ -245,7 +245,7 @@ class HealthReportInstanceInfo:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this HealthReportInstanceInfo.
+        r"""Sets the mem of this HealthReportInstanceInfo.
 
         实例内存大小。
 
@@ -256,7 +256,7 @@ class HealthReportInstanceInfo:
 
     @property
     def disk_size(self):
-        """Gets the disk_size of this HealthReportInstanceInfo.
+        r"""Gets the disk_size of this HealthReportInstanceInfo.
 
         磁盘大小。
 
@@ -267,7 +267,7 @@ class HealthReportInstanceInfo:
 
     @disk_size.setter
     def disk_size(self, disk_size):
-        """Sets the disk_size of this HealthReportInstanceInfo.
+        r"""Sets the disk_size of this HealthReportInstanceInfo.
 
         磁盘大小。
 
@@ -278,7 +278,7 @@ class HealthReportInstanceInfo:
 
     @property
     def disk_type(self):
-        """Gets the disk_type of this HealthReportInstanceInfo.
+        r"""Gets the disk_type of this HealthReportInstanceInfo.
 
         磁盘类型。
 
@@ -289,7 +289,7 @@ class HealthReportInstanceInfo:
 
     @disk_type.setter
     def disk_type(self, disk_type):
-        """Sets the disk_type of this HealthReportInstanceInfo.
+        r"""Sets the disk_type of this HealthReportInstanceInfo.
 
         磁盘类型。
 
@@ -300,7 +300,7 @@ class HealthReportInstanceInfo:
 
     @property
     def engine(self):
-        """Gets the engine of this HealthReportInstanceInfo.
+        r"""Gets the engine of this HealthReportInstanceInfo.
 
         实例引擎类型。
 
@@ -311,7 +311,7 @@ class HealthReportInstanceInfo:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this HealthReportInstanceInfo.
+        r"""Sets the engine of this HealthReportInstanceInfo.
 
         实例引擎类型。
 
@@ -322,7 +322,7 @@ class HealthReportInstanceInfo:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this HealthReportInstanceInfo.
+        r"""Gets the engine_version of this HealthReportInstanceInfo.
 
         引擎内核版本。
 
@@ -333,7 +333,7 @@ class HealthReportInstanceInfo:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this HealthReportInstanceInfo.
+        r"""Sets the engine_version of this HealthReportInstanceInfo.
 
         引擎内核版本。
 

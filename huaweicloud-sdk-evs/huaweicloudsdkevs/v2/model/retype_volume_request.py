@@ -27,7 +27,7 @@ class RetypeVolumeRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """RetypeVolumeRequest
+        r"""RetypeVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RetypeVolumeRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this RetypeVolumeRequest.
+        r"""Gets the volume_id of this RetypeVolumeRequest.
 
         磁盘ID。
 
@@ -60,7 +60,7 @@ class RetypeVolumeRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this RetypeVolumeRequest.
+        r"""Sets the volume_id of this RetypeVolumeRequest.
 
         磁盘ID。
 
@@ -71,7 +71,7 @@ class RetypeVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RetypeVolumeRequest.
+        r"""Gets the body of this RetypeVolumeRequest.
 
         :return: The body of this RetypeVolumeRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.RetypeVolumeRequestBody`
@@ -80,7 +80,7 @@ class RetypeVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RetypeVolumeRequest.
+        r"""Sets the body of this RetypeVolumeRequest.
 
         :param body: The body of this RetypeVolumeRequest.
         :type body: :class:`huaweicloudsdkevs.v2.RetypeVolumeRequestBody`

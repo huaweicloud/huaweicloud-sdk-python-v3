@@ -31,7 +31,7 @@ class ListCustomRulesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None):
-        """ListCustomRulesRequest
+        r"""ListCustomRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListCustomRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCustomRulesRequest.
+        r"""Gets the enterprise_project_id of this ListCustomRulesRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -72,7 +72,7 @@ class ListCustomRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCustomRulesRequest.
+        r"""Sets the enterprise_project_id of this ListCustomRulesRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -83,7 +83,7 @@ class ListCustomRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListCustomRulesRequest.
+        r"""Gets the policy_id of this ListCustomRulesRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -94,7 +94,7 @@ class ListCustomRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListCustomRulesRequest.
+        r"""Sets the policy_id of this ListCustomRulesRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -105,7 +105,7 @@ class ListCustomRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomRulesRequest.
+        r"""Gets the offset of this ListCustomRulesRequest.
 
         偏移量，表示查询该偏移量之后的记录。
 
@@ -116,7 +116,7 @@ class ListCustomRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomRulesRequest.
+        r"""Sets the offset of this ListCustomRulesRequest.
 
         偏移量，表示查询该偏移量之后的记录。
 
@@ -127,7 +127,7 @@ class ListCustomRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomRulesRequest.
+        r"""Gets the limit of this ListCustomRulesRequest.
 
         查询返回记录的数量限制。
 
@@ -138,7 +138,7 @@ class ListCustomRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomRulesRequest.
+        r"""Sets the limit of this ListCustomRulesRequest.
 
         查询返回记录的数量限制。
 

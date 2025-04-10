@@ -28,7 +28,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, x_request_id=None):
-        """ListRtcAbnormalEventDimensionResponse
+        r"""ListRtcAbnormalEventDimensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ListRtcAbnormalEventDimensionResponse.
+        r"""Gets the dimensions of this ListRtcAbnormalEventDimensionResponse.
 
         异常体验列表
 
@@ -62,7 +62,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ListRtcAbnormalEventDimensionResponse.
+        r"""Sets the dimensions of this ListRtcAbnormalEventDimensionResponse.
 
         异常体验列表
 
@@ -73,7 +73,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcAbnormalEventDimensionResponse.
+        r"""Gets the x_request_id of this ListRtcAbnormalEventDimensionResponse.
 
         :return: The x_request_id of this ListRtcAbnormalEventDimensionResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRtcAbnormalEventDimensionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcAbnormalEventDimensionResponse.
+        r"""Sets the x_request_id of this ListRtcAbnormalEventDimensionResponse.
 
         :param x_request_id: The x_request_id of this ListRtcAbnormalEventDimensionResponse.
         :type x_request_id: str

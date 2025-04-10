@@ -45,13 +45,13 @@ class ListQuotasDetailRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, version=None, category=None, quota_status=None, used_status=None, host_name=None, resource_id=None, charging_mode=None, limit=None, offset=None):
-        """ListQuotasDetailRequest
+        r"""ListQuotasDetailRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
         :type version: str
@@ -113,7 +113,7 @@ class ListQuotasDetailRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListQuotasDetailRequest.
+        r"""Gets the region of this ListQuotasDetailRequest.
 
         Region ID
 
@@ -124,7 +124,7 @@ class ListQuotasDetailRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListQuotasDetailRequest.
+        r"""Sets the region of this ListQuotasDetailRequest.
 
         Region ID
 
@@ -135,9 +135,9 @@ class ListQuotasDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListQuotasDetailRequest.
+        r"""Gets the enterprise_project_id of this ListQuotasDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListQuotasDetailRequest.
         :rtype: str
@@ -146,9 +146,9 @@ class ListQuotasDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListQuotasDetailRequest.
+        r"""Sets the enterprise_project_id of this ListQuotasDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListQuotasDetailRequest.
         :type enterprise_project_id: str
@@ -157,7 +157,7 @@ class ListQuotasDetailRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListQuotasDetailRequest.
+        r"""Gets the version of this ListQuotasDetailRequest.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -168,7 +168,7 @@ class ListQuotasDetailRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListQuotasDetailRequest.
+        r"""Sets the version of this ListQuotasDetailRequest.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -179,7 +179,7 @@ class ListQuotasDetailRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListQuotasDetailRequest.
+        r"""Gets the category of this ListQuotasDetailRequest.
 
         类别，包含如下几种：   - host_resource ：HOST_RESOURCE   - container_resource ：CONTAINER_RESOURCE
 
@@ -190,7 +190,7 @@ class ListQuotasDetailRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListQuotasDetailRequest.
+        r"""Sets the category of this ListQuotasDetailRequest.
 
         类别，包含如下几种：   - host_resource ：HOST_RESOURCE   - container_resource ：CONTAINER_RESOURCE
 
@@ -201,7 +201,7 @@ class ListQuotasDetailRequest:
 
     @property
     def quota_status(self):
-        """Gets the quota_status of this ListQuotasDetailRequest.
+        r"""Gets the quota_status of this ListQuotasDetailRequest.
 
         配额状态，包含如下几种：   - normal ： QUOTA_STATUS_NORMAL   - expired ：QUOTA_STATUS_EXPIRED   - freeze ：QUOTA_STATUS_FREEZE
 
@@ -212,7 +212,7 @@ class ListQuotasDetailRequest:
 
     @quota_status.setter
     def quota_status(self, quota_status):
-        """Sets the quota_status of this ListQuotasDetailRequest.
+        r"""Sets the quota_status of this ListQuotasDetailRequest.
 
         配额状态，包含如下几种：   - normal ： QUOTA_STATUS_NORMAL   - expired ：QUOTA_STATUS_EXPIRED   - freeze ：QUOTA_STATUS_FREEZE
 
@@ -223,7 +223,7 @@ class ListQuotasDetailRequest:
 
     @property
     def used_status(self):
-        """Gets the used_status of this ListQuotasDetailRequest.
+        r"""Gets the used_status of this ListQuotasDetailRequest.
 
         使用状态，包含如下几种：   - idle ：USED_STATUS_IDLE   - used ：USED_STATUS_USED
 
@@ -234,7 +234,7 @@ class ListQuotasDetailRequest:
 
     @used_status.setter
     def used_status(self, used_status):
-        """Sets the used_status of this ListQuotasDetailRequest.
+        r"""Sets the used_status of this ListQuotasDetailRequest.
 
         使用状态，包含如下几种：   - idle ：USED_STATUS_IDLE   - used ：USED_STATUS_USED
 
@@ -245,7 +245,7 @@ class ListQuotasDetailRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListQuotasDetailRequest.
+        r"""Gets the host_name of this ListQuotasDetailRequest.
 
         服务器名称
 
@@ -256,7 +256,7 @@ class ListQuotasDetailRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListQuotasDetailRequest.
+        r"""Sets the host_name of this ListQuotasDetailRequest.
 
         服务器名称
 
@@ -267,7 +267,7 @@ class ListQuotasDetailRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListQuotasDetailRequest.
+        r"""Gets the resource_id of this ListQuotasDetailRequest.
 
         HSS配额的资源ID
 
@@ -278,7 +278,7 @@ class ListQuotasDetailRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListQuotasDetailRequest.
+        r"""Sets the resource_id of this ListQuotasDetailRequest.
 
         HSS配额的资源ID
 
@@ -289,7 +289,7 @@ class ListQuotasDetailRequest:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ListQuotasDetailRequest.
+        r"""Gets the charging_mode of this ListQuotasDetailRequest.
 
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
@@ -300,7 +300,7 @@ class ListQuotasDetailRequest:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ListQuotasDetailRequest.
+        r"""Sets the charging_mode of this ListQuotasDetailRequest.
 
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
@@ -311,7 +311,7 @@ class ListQuotasDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListQuotasDetailRequest.
+        r"""Gets the limit of this ListQuotasDetailRequest.
 
         每页数量
 
@@ -322,7 +322,7 @@ class ListQuotasDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListQuotasDetailRequest.
+        r"""Sets the limit of this ListQuotasDetailRequest.
 
         每页数量
 
@@ -333,7 +333,7 @@ class ListQuotasDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListQuotasDetailRequest.
+        r"""Gets the offset of this ListQuotasDetailRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -344,7 +344,7 @@ class ListQuotasDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListQuotasDetailRequest.
+        r"""Sets the offset of this ListQuotasDetailRequest.
 
         偏移量：指定返回记录的开始位置
 

@@ -26,7 +26,7 @@ class ParseSqlLimitRulesResponse(SdkResponse):
     }
 
     def __init__(self, rule=None):
-        """ParseSqlLimitRulesResponse
+        r"""ParseSqlLimitRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ParseSqlLimitRulesResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this ParseSqlLimitRulesResponse.
+        r"""Gets the rule of this ParseSqlLimitRulesResponse.
 
         SQL限流关键字
 
@@ -55,7 +55,7 @@ class ParseSqlLimitRulesResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ParseSqlLimitRulesResponse.
+        r"""Sets the rule of this ParseSqlLimitRulesResponse.
 
         SQL限流关键字
 

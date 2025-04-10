@@ -29,7 +29,7 @@ class RemuxOutputParam:
     }
 
     def __init__(self, format=None, segment_duration=None, remove_meta=None):
-        """RemuxOutputParam
+        r"""RemuxOutputParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RemuxOutputParam:
 
     @property
     def format(self):
-        """Gets the format of this RemuxOutputParam.
+        r"""Gets the format of this RemuxOutputParam.
 
         输出格式。取值范围： - HLS - MP4 
 
@@ -68,7 +68,7 @@ class RemuxOutputParam:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this RemuxOutputParam.
+        r"""Sets the format of this RemuxOutputParam.
 
         输出格式。取值范围： - HLS - MP4 
 
@@ -79,7 +79,7 @@ class RemuxOutputParam:
 
     @property
     def segment_duration(self):
-        """Gets the segment_duration of this RemuxOutputParam.
+        r"""Gets the segment_duration of this RemuxOutputParam.
 
         分片时长，仅当“format”为“HLS”时有效。  取值范围：[2，10]。  默认值： 5。  单位：秒。 
 
@@ -90,7 +90,7 @@ class RemuxOutputParam:
 
     @segment_duration.setter
     def segment_duration(self, segment_duration):
-        """Sets the segment_duration of this RemuxOutputParam.
+        r"""Sets the segment_duration of this RemuxOutputParam.
 
         分片时长，仅当“format”为“HLS”时有效。  取值范围：[2，10]。  默认值： 5。  单位：秒。 
 
@@ -101,7 +101,7 @@ class RemuxOutputParam:
 
     @property
     def remove_meta(self):
-        """Gets the remove_meta of this RemuxOutputParam.
+        r"""Gets the remove_meta of this RemuxOutputParam.
 
         输出媒体是否去除片源的中metadata自定义信息。默认值：false 
 
@@ -112,7 +112,7 @@ class RemuxOutputParam:
 
     @remove_meta.setter
     def remove_meta(self, remove_meta):
-        """Sets the remove_meta of this RemuxOutputParam.
+        r"""Sets the remove_meta of this RemuxOutputParam.
 
         输出媒体是否去除片源的中metadata自定义信息。默认值：false 
 

@@ -28,7 +28,7 @@ class ShowClusterSettingResponse(SdkResponse):
     }
 
     def __init__(self, parm_status=None, parameter_info=None):
-        """ShowClusterSettingResponse
+        r"""ShowClusterSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowClusterSettingResponse(SdkResponse):
 
     @property
     def parm_status(self):
-        """Gets the parm_status of this ShowClusterSettingResponse.
+        r"""Gets the parm_status of this ShowClusterSettingResponse.
 
         集群参数生效状态：0、未更改 1、未应用 2、应用中 3、已应用 4、应用失败
 
@@ -62,7 +62,7 @@ class ShowClusterSettingResponse(SdkResponse):
 
     @parm_status.setter
     def parm_status(self, parm_status):
-        """Sets the parm_status of this ShowClusterSettingResponse.
+        r"""Sets the parm_status of this ShowClusterSettingResponse.
 
         集群参数生效状态：0、未更改 1、未应用 2、应用中 3、已应用 4、应用失败
 
@@ -73,7 +73,7 @@ class ShowClusterSettingResponse(SdkResponse):
 
     @property
     def parameter_info(self):
-        """Gets the parameter_info of this ShowClusterSettingResponse.
+        r"""Gets the parameter_info of this ShowClusterSettingResponse.
 
         参数列表
 
@@ -84,7 +84,7 @@ class ShowClusterSettingResponse(SdkResponse):
 
     @parameter_info.setter
     def parameter_info(self, parameter_info):
-        """Sets the parameter_info of this ShowClusterSettingResponse.
+        r"""Sets the parameter_info of this ShowClusterSettingResponse.
 
         参数列表
 

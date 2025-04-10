@@ -27,7 +27,7 @@ class ShowBranchRequest:
     }
 
     def __init__(self, branch_id=None, project_uuid=None):
-        """ShowBranchRequest
+        r"""ShowBranchRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBranchRequest:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this ShowBranchRequest.
+        r"""Gets the branch_id of this ShowBranchRequest.
 
         分支URI
 
@@ -60,7 +60,7 @@ class ShowBranchRequest:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this ShowBranchRequest.
+        r"""Sets the branch_id of this ShowBranchRequest.
 
         分支URI
 
@@ -71,7 +71,7 @@ class ShowBranchRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowBranchRequest.
+        r"""Gets the project_uuid of this ShowBranchRequest.
 
         项目ID
 
@@ -82,7 +82,7 @@ class ShowBranchRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowBranchRequest.
+        r"""Sets the project_uuid of this ShowBranchRequest.
 
         项目ID
 

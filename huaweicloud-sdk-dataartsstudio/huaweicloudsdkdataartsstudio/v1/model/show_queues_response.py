@@ -26,7 +26,7 @@ class ShowQueuesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowQueuesResponse
+        r"""ShowQueuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowQueuesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowQueuesResponse.
+        r"""Gets the data of this ShowQueuesResponse.
 
         队列信息列表
 
@@ -55,7 +55,7 @@ class ShowQueuesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowQueuesResponse.
+        r"""Sets the data of this ShowQueuesResponse.
 
         队列信息列表
 

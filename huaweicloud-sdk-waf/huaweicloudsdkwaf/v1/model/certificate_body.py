@@ -35,7 +35,7 @@ class CertificateBody:
     }
 
     def __init__(self, id=None, name=None, expire_time=None, exp_status=None, timestamp=None, bind_host=None):
-        """CertificateBody
+        r"""CertificateBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CertificateBody:
 
     @property
     def id(self):
-        """Gets the id of this CertificateBody.
+        r"""Gets the id of this CertificateBody.
 
         证书id
 
@@ -86,7 +86,7 @@ class CertificateBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertificateBody.
+        r"""Sets the id of this CertificateBody.
 
         证书id
 
@@ -97,7 +97,7 @@ class CertificateBody:
 
     @property
     def name(self):
-        """Gets the name of this CertificateBody.
+        r"""Gets the name of this CertificateBody.
 
         证书名
 
@@ -108,7 +108,7 @@ class CertificateBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertificateBody.
+        r"""Sets the name of this CertificateBody.
 
         证书名
 
@@ -119,7 +119,7 @@ class CertificateBody:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CertificateBody.
+        r"""Gets the expire_time of this CertificateBody.
 
         证书过期时间戳
 
@@ -130,7 +130,7 @@ class CertificateBody:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CertificateBody.
+        r"""Sets the expire_time of this CertificateBody.
 
         证书过期时间戳
 
@@ -141,7 +141,7 @@ class CertificateBody:
 
     @property
     def exp_status(self):
-        """Gets the exp_status of this CertificateBody.
+        r"""Gets the exp_status of this CertificateBody.
 
         证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
 
@@ -152,7 +152,7 @@ class CertificateBody:
 
     @exp_status.setter
     def exp_status(self, exp_status):
-        """Sets the exp_status of this CertificateBody.
+        r"""Sets the exp_status of this CertificateBody.
 
         证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
 
@@ -163,7 +163,7 @@ class CertificateBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CertificateBody.
+        r"""Gets the timestamp of this CertificateBody.
 
         证书上传时间戳
 
@@ -174,7 +174,7 @@ class CertificateBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CertificateBody.
+        r"""Sets the timestamp of this CertificateBody.
 
         证书上传时间戳
 
@@ -185,7 +185,7 @@ class CertificateBody:
 
     @property
     def bind_host(self):
-        """Gets the bind_host of this CertificateBody.
+        r"""Gets the bind_host of this CertificateBody.
 
         证书关联的域名信息
 
@@ -196,7 +196,7 @@ class CertificateBody:
 
     @bind_host.setter
     def bind_host(self, bind_host):
-        """Sets the bind_host of this CertificateBody.
+        r"""Sets the bind_host of this CertificateBody.
 
         证书关联的域名信息
 

@@ -27,7 +27,7 @@ class UpdateAgentHealthStatusRequest:
     }
 
     def __init__(self, agent_id=None, body=None):
-        """UpdateAgentHealthStatusRequest
+        r"""UpdateAgentHealthStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAgentHealthStatusRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this UpdateAgentHealthStatusRequest.
+        r"""Gets the agent_id of this UpdateAgentHealthStatusRequest.
 
         探针id
 
@@ -60,7 +60,7 @@ class UpdateAgentHealthStatusRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this UpdateAgentHealthStatusRequest.
+        r"""Sets the agent_id of this UpdateAgentHealthStatusRequest.
 
         探针id
 
@@ -71,7 +71,7 @@ class UpdateAgentHealthStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgentHealthStatusRequest.
+        r"""Gets the body of this UpdateAgentHealthStatusRequest.
 
         :return: The body of this UpdateAgentHealthStatusRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateAgentHealthStatusRequestBody`
@@ -80,7 +80,7 @@ class UpdateAgentHealthStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgentHealthStatusRequest.
+        r"""Sets the body of this UpdateAgentHealthStatusRequest.
 
         :param body: The body of this UpdateAgentHealthStatusRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateAgentHealthStatusRequestBody`

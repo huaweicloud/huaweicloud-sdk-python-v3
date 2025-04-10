@@ -25,7 +25,7 @@ class AuthAkSkInfo:
     }
 
     def __init__(self, secret=None):
-        """AuthAkSkInfo
+        r"""AuthAkSkInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AuthAkSkInfo:
 
     @property
     def secret(self):
-        """Gets the secret of this AuthAkSkInfo.
+        r"""Gets the secret of this AuthAkSkInfo.
 
         鉴权秘钥
 
@@ -54,7 +54,7 @@ class AuthAkSkInfo:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AuthAkSkInfo.
+        r"""Sets the secret of this AuthAkSkInfo.
 
         鉴权秘钥
 

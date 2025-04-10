@@ -27,7 +27,7 @@ class BatchDeleteVolumeTagsRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """BatchDeleteVolumeTagsRequest
+        r"""BatchDeleteVolumeTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteVolumeTagsRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this BatchDeleteVolumeTagsRequest.
+        r"""Gets the volume_id of this BatchDeleteVolumeTagsRequest.
 
         磁盘ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteVolumeTagsRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this BatchDeleteVolumeTagsRequest.
+        r"""Sets the volume_id of this BatchDeleteVolumeTagsRequest.
 
         磁盘ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteVolumeTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteVolumeTagsRequest.
+        r"""Gets the body of this BatchDeleteVolumeTagsRequest.
 
         :return: The body of this BatchDeleteVolumeTagsRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteVolumeTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteVolumeTagsRequest.
+        r"""Sets the body of this BatchDeleteVolumeTagsRequest.
 
         :param body: The body of this BatchDeleteVolumeTagsRequest.
         :type body: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequestBody`

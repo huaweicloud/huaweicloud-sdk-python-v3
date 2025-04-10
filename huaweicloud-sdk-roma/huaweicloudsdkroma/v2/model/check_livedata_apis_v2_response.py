@@ -24,7 +24,7 @@ class CheckLivedataApisV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """CheckLivedataApisV2Response
+        r"""CheckLivedataApisV2Response
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class DemandDiscountRatingResult:
     }
 
     def __init__(self, discount_id=None, discount_type=None, amount=None, measure_id=None, discount_name=None):
-        """DemandDiscountRatingResult
+        r"""DemandDiscountRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DemandDiscountRatingResult:
 
     @property
     def discount_id(self):
-        """Gets the discount_id of this DemandDiscountRatingResult.
+        r"""Gets the discount_id of this DemandDiscountRatingResult.
 
         优惠标识ID。
 
@@ -82,7 +82,7 @@ class DemandDiscountRatingResult:
 
     @discount_id.setter
     def discount_id(self, discount_id):
-        """Sets the discount_id of this DemandDiscountRatingResult.
+        r"""Sets the discount_id of this DemandDiscountRatingResult.
 
         优惠标识ID。
 
@@ -93,7 +93,7 @@ class DemandDiscountRatingResult:
 
     @property
     def discount_type(self):
-        """Gets the discount_type of this DemandDiscountRatingResult.
+        r"""Gets the discount_type of this DemandDiscountRatingResult.
 
         折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
@@ -104,7 +104,7 @@ class DemandDiscountRatingResult:
 
     @discount_type.setter
     def discount_type(self, discount_type):
-        """Sets the discount_type of this DemandDiscountRatingResult.
+        r"""Sets the discount_type of this DemandDiscountRatingResult.
 
         折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
@@ -115,7 +115,7 @@ class DemandDiscountRatingResult:
 
     @property
     def amount(self):
-        """Gets the amount of this DemandDiscountRatingResult.
+        r"""Gets the amount of this DemandDiscountRatingResult.
 
         折扣的金额。
 
@@ -126,7 +126,7 @@ class DemandDiscountRatingResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this DemandDiscountRatingResult.
+        r"""Sets the amount of this DemandDiscountRatingResult.
 
         折扣的金额。
 
@@ -137,7 +137,7 @@ class DemandDiscountRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this DemandDiscountRatingResult.
+        r"""Gets the measure_id of this DemandDiscountRatingResult.
 
         度量单位标识。 1：元
 
@@ -148,7 +148,7 @@ class DemandDiscountRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this DemandDiscountRatingResult.
+        r"""Sets the measure_id of this DemandDiscountRatingResult.
 
         度量单位标识。 1：元
 
@@ -159,7 +159,7 @@ class DemandDiscountRatingResult:
 
     @property
     def discount_name(self):
-        """Gets the discount_name of this DemandDiscountRatingResult.
+        r"""Gets the discount_name of this DemandDiscountRatingResult.
 
         折扣名称。
 
@@ -170,7 +170,7 @@ class DemandDiscountRatingResult:
 
     @discount_name.setter
     def discount_name(self, discount_name):
-        """Sets the discount_name of this DemandDiscountRatingResult.
+        r"""Sets the discount_name of this DemandDiscountRatingResult.
 
         折扣名称。
 

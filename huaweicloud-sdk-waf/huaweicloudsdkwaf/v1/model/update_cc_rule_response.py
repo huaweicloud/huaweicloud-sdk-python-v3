@@ -68,7 +68,7 @@ class UpdateCcRuleResponse(SdkResponse):
     }
 
     def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None):
-        """UpdateCcRuleResponse
+        r"""UpdateCcRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateCcRuleResponse.
+        r"""Gets the name of this UpdateCcRuleResponse.
 
         规则名称
 
@@ -202,7 +202,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCcRuleResponse.
+        r"""Sets the name of this UpdateCcRuleResponse.
 
         规则名称
 
@@ -213,7 +213,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateCcRuleResponse.
+        r"""Gets the id of this UpdateCcRuleResponse.
 
         Rule ID.
 
@@ -224,7 +224,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateCcRuleResponse.
+        r"""Sets the id of this UpdateCcRuleResponse.
 
         Rule ID.
 
@@ -235,7 +235,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateCcRuleResponse.
+        r"""Gets the policyid of this UpdateCcRuleResponse.
 
         Policy ID.
 
@@ -246,7 +246,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateCcRuleResponse.
+        r"""Sets the policyid of this UpdateCcRuleResponse.
 
         Policy ID.
 
@@ -257,7 +257,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this UpdateCcRuleResponse.
+        r"""Gets the url of this UpdateCcRuleResponse.
 
         当mode值为0时，该参数有返回值。规则应用的URL链接，不包含域名。
 
@@ -268,7 +268,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateCcRuleResponse.
+        r"""Sets the url of this UpdateCcRuleResponse.
 
         当mode值为0时，该参数有返回值。规则应用的URL链接，不包含域名。
 
@@ -279,7 +279,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def prefix(self):
-        """Gets the prefix of this UpdateCcRuleResponse.
+        r"""Gets the prefix of this UpdateCcRuleResponse.
 
         路径是否为前缀模式，当防护url以*结束，则为前缀模式。
 
@@ -290,7 +290,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this UpdateCcRuleResponse.
+        r"""Sets the prefix of this UpdateCcRuleResponse.
 
         路径是否为前缀模式，当防护url以*结束，则为前缀模式。
 
@@ -301,7 +301,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this UpdateCcRuleResponse.
+        r"""Gets the mode of this UpdateCcRuleResponse.
 
         cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
@@ -312,7 +312,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this UpdateCcRuleResponse.
+        r"""Sets the mode of this UpdateCcRuleResponse.
 
         cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
@@ -323,7 +323,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateCcRuleResponse.
+        r"""Gets the conditions of this UpdateCcRuleResponse.
 
         cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
 
@@ -334,7 +334,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateCcRuleResponse.
+        r"""Sets the conditions of this UpdateCcRuleResponse.
 
         cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
 
@@ -345,7 +345,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this UpdateCcRuleResponse.
+        r"""Gets the action of this UpdateCcRuleResponse.
 
         :return: The action of this UpdateCcRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoAction`
@@ -354,7 +354,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateCcRuleResponse.
+        r"""Sets the action of this UpdateCcRuleResponse.
 
         :param action: The action of this UpdateCcRuleResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoAction`
@@ -363,7 +363,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this UpdateCcRuleResponse.
+        r"""Gets the tag_type of this UpdateCcRuleResponse.
 
         限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
 
@@ -374,7 +374,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this UpdateCcRuleResponse.
+        r"""Sets the tag_type of this UpdateCcRuleResponse.
 
         限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
 
@@ -385,7 +385,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def tag_index(self):
-        """Gets the tag_index of this UpdateCcRuleResponse.
+        r"""Gets the tag_index of this UpdateCcRuleResponse.
 
         用户标识，当限速模式为用户限速(cookie或header)时，需要传该参数。   - 选择cookie时，设置cookie字段名，即用户需要根据网站实际情况配置唯一可识别Web访问者的cookie中的某属性变量名。用户标识的cookie，不支持正则，必须完全匹配。例如：如果网站使用cookie中的某个字段name唯一标识用户，那么可以选取name字段来区分Web访问者。   - 选择header时，设置需要防护的自定义HTTP首部，即用户需要根据网站实际情况配置可识别Web访问者的HTTP首部。
 
@@ -396,7 +396,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @tag_index.setter
     def tag_index(self, tag_index):
-        """Sets the tag_index of this UpdateCcRuleResponse.
+        r"""Sets the tag_index of this UpdateCcRuleResponse.
 
         用户标识，当限速模式为用户限速(cookie或header)时，需要传该参数。   - 选择cookie时，设置cookie字段名，即用户需要根据网站实际情况配置唯一可识别Web访问者的cookie中的某属性变量名。用户标识的cookie，不支持正则，必须完全匹配。例如：如果网站使用cookie中的某个字段name唯一标识用户，那么可以选取name字段来区分Web访问者。   - 选择header时，设置需要防护的自定义HTTP首部，即用户需要根据网站实际情况配置可识别Web访问者的HTTP首部。
 
@@ -407,7 +407,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def tag_condition(self):
-        """Gets the tag_condition of this UpdateCcRuleResponse.
+        r"""Gets the tag_condition of this UpdateCcRuleResponse.
 
         :return: The tag_condition of this UpdateCcRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoTagCondition`
@@ -416,7 +416,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @tag_condition.setter
     def tag_condition(self, tag_condition):
-        """Sets the tag_condition of this UpdateCcRuleResponse.
+        r"""Sets the tag_condition of this UpdateCcRuleResponse.
 
         :param tag_condition: The tag_condition of this UpdateCcRuleResponse.
         :type tag_condition: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoTagCondition`
@@ -425,7 +425,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this UpdateCcRuleResponse.
+        r"""Gets the limit_num of this UpdateCcRuleResponse.
 
         限制频率，单位为次，范围为1~2147483647
 
@@ -436,7 +436,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this UpdateCcRuleResponse.
+        r"""Sets the limit_num of this UpdateCcRuleResponse.
 
         限制频率，单位为次，范围为1~2147483647
 
@@ -447,7 +447,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def limit_period(self):
-        """Gets the limit_period of this UpdateCcRuleResponse.
+        r"""Gets the limit_period of this UpdateCcRuleResponse.
 
         限速周期，单位为秒，范围1~3600
 
@@ -458,7 +458,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @limit_period.setter
     def limit_period(self, limit_period):
-        """Sets the limit_period of this UpdateCcRuleResponse.
+        r"""Sets the limit_period of this UpdateCcRuleResponse.
 
         限速周期，单位为秒，范围1~3600
 
@@ -469,7 +469,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def unlock_num(self):
-        """Gets the unlock_num of this UpdateCcRuleResponse.
+        r"""Gets the unlock_num of this UpdateCcRuleResponse.
 
         放行频率，单位为次，范围为0~2147483647。只有当防护动作类型为dynamic_block时，才需要传该参数。
 
@@ -480,7 +480,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @unlock_num.setter
     def unlock_num(self, unlock_num):
-        """Sets the unlock_num of this UpdateCcRuleResponse.
+        r"""Sets the unlock_num of this UpdateCcRuleResponse.
 
         放行频率，单位为次，范围为0~2147483647。只有当防护动作类型为dynamic_block时，才需要传该参数。
 
@@ -491,7 +491,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this UpdateCcRuleResponse.
+        r"""Gets the lock_time of this UpdateCcRuleResponse.
 
         阻断时间，单位为秒，范围为0~65535。当“防护动作”选择“阻断”时，可设置阻断后恢复正常访问页面的时间。
 
@@ -502,7 +502,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this UpdateCcRuleResponse.
+        r"""Sets the lock_time of this UpdateCcRuleResponse.
 
         阻断时间，单位为秒，范围为0~65535。当“防护动作”选择“阻断”时，可设置阻断后恢复正常访问页面的时间。
 
@@ -513,7 +513,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def domain_aggregation(self):
-        """Gets the domain_aggregation of this UpdateCcRuleResponse.
+        r"""Gets the domain_aggregation of this UpdateCcRuleResponse.
 
         是否开启域名聚合统计。
 
@@ -524,7 +524,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @domain_aggregation.setter
     def domain_aggregation(self, domain_aggregation):
-        """Sets the domain_aggregation of this UpdateCcRuleResponse.
+        r"""Sets the domain_aggregation of this UpdateCcRuleResponse.
 
         是否开启域名聚合统计。
 
@@ -535,7 +535,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def region_aggregation(self):
-        """Gets the region_aggregation of this UpdateCcRuleResponse.
+        r"""Gets the region_aggregation of this UpdateCcRuleResponse.
 
         是否开启全局计数。
 
@@ -546,7 +546,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @region_aggregation.setter
     def region_aggregation(self, region_aggregation):
-        """Sets the region_aggregation of this UpdateCcRuleResponse.
+        r"""Sets the region_aggregation of this UpdateCcRuleResponse.
 
         是否开启全局计数。
 
@@ -557,7 +557,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateCcRuleResponse.
+        r"""Gets the description of this UpdateCcRuleResponse.
 
         规则描述
 
@@ -568,7 +568,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCcRuleResponse.
+        r"""Sets the description of this UpdateCcRuleResponse.
 
         规则描述
 
@@ -579,7 +579,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this UpdateCcRuleResponse.
+        r"""Gets the total_num of this UpdateCcRuleResponse.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -590,7 +590,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this UpdateCcRuleResponse.
+        r"""Sets the total_num of this UpdateCcRuleResponse.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -601,7 +601,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def unaggregation(self):
-        """Gets the unaggregation of this UpdateCcRuleResponse.
+        r"""Gets the unaggregation of this UpdateCcRuleResponse.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -612,7 +612,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @unaggregation.setter
     def unaggregation(self, unaggregation):
-        """Sets the unaggregation of this UpdateCcRuleResponse.
+        r"""Sets the unaggregation of this UpdateCcRuleResponse.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -623,7 +623,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def aging_time(self):
-        """Gets the aging_time of this UpdateCcRuleResponse.
+        r"""Gets the aging_time of this UpdateCcRuleResponse.
 
         规则老化时间，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -634,7 +634,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @aging_time.setter
     def aging_time(self, aging_time):
-        """Sets the aging_time of this UpdateCcRuleResponse.
+        r"""Sets the aging_time of this UpdateCcRuleResponse.
 
         规则老化时间，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -645,7 +645,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this UpdateCcRuleResponse.
+        r"""Gets the producer of this UpdateCcRuleResponse.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -656,7 +656,7 @@ class UpdateCcRuleResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this UpdateCcRuleResponse.
+        r"""Sets the producer of this UpdateCcRuleResponse.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 

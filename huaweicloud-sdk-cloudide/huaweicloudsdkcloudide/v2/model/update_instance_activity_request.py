@@ -25,7 +25,7 @@ class UpdateInstanceActivityRequest:
     }
 
     def __init__(self, instance_id=None):
-        """UpdateInstanceActivityRequest
+        r"""UpdateInstanceActivityRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceActivityRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceActivityRequest.
+        r"""Gets the instance_id of this UpdateInstanceActivityRequest.
 
         CodeArtsIDEOnline实例id
 
@@ -53,7 +53,7 @@ class UpdateInstanceActivityRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceActivityRequest.
+        r"""Sets the instance_id of this UpdateInstanceActivityRequest.
 
         CodeArtsIDEOnline实例id
 

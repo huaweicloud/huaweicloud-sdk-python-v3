@@ -29,7 +29,7 @@ class AccessRequest:
     }
 
     def __init__(self, resource=None, principal=None, action=None):
-        """AccessRequest
+        r"""AccessRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AccessRequest:
 
     @property
     def resource(self):
-        """Gets the resource of this AccessRequest.
+        r"""Gets the resource of this AccessRequest.
 
         :return: The resource of this AccessRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.ResourceInput`
@@ -63,7 +63,7 @@ class AccessRequest:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this AccessRequest.
+        r"""Sets the resource of this AccessRequest.
 
         :param resource: The resource of this AccessRequest.
         :type resource: :class:`huaweicloudsdklakeformation.v1.ResourceInput`
@@ -72,7 +72,7 @@ class AccessRequest:
 
     @property
     def principal(self):
-        """Gets the principal of this AccessRequest.
+        r"""Gets the principal of this AccessRequest.
 
         授权主体信息
 
@@ -83,7 +83,7 @@ class AccessRequest:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this AccessRequest.
+        r"""Sets the principal of this AccessRequest.
 
         授权主体信息
 
@@ -94,7 +94,7 @@ class AccessRequest:
 
     @property
     def action(self):
-        """Gets the action of this AccessRequest.
+        r"""Gets the action of this AccessRequest.
 
         权限信息,ALL,CREATE,ALTER,DROP,DESCRIBE,EXEC,CREATE_DATABASE,LIST_DATABASE,CREATE_TABLE,LIST_TABLE,CREATE_FUNC,LIST_FUNC,REGISTER_MODEL,LIST_MODEL,INSERT,UPDATE,DELETE,SELECT,READ,WRITE,OPERATE,USE
 
@@ -105,7 +105,7 @@ class AccessRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this AccessRequest.
+        r"""Sets the action of this AccessRequest.
 
         权限信息,ALL,CREATE,ALTER,DROP,DESCRIBE,EXEC,CREATE_DATABASE,LIST_DATABASE,CREATE_TABLE,LIST_TABLE,CREATE_FUNC,LIST_FUNC,REGISTER_MODEL,LIST_MODEL,INSERT,UPDATE,DELETE,SELECT,READ,WRITE,OPERATE,USE
 

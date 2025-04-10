@@ -34,7 +34,7 @@ class ListTagResourcesRequest:
     }
 
     def __init__(self, x_security_token=None, resource_type=None, resource_id=None, limit=None, marker=None):
-        """ListTagResourcesRequest
+        r"""ListTagResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListTagResourcesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListTagResourcesRequest.
+        r"""Gets the x_security_token of this ListTagResourcesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -81,7 +81,7 @@ class ListTagResourcesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListTagResourcesRequest.
+        r"""Sets the x_security_token of this ListTagResourcesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -92,7 +92,7 @@ class ListTagResourcesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagResourcesRequest.
+        r"""Gets the resource_type of this ListTagResourcesRequest.
 
         资源类型 identitycenter:permissionset（权限集）
 
@@ -103,7 +103,7 @@ class ListTagResourcesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagResourcesRequest.
+        r"""Sets the resource_type of this ListTagResourcesRequest.
 
         资源类型 identitycenter:permissionset（权限集）
 
@@ -114,7 +114,7 @@ class ListTagResourcesRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListTagResourcesRequest.
+        r"""Gets the resource_id of this ListTagResourcesRequest.
 
         权限集的唯一标识符（ID）。
 
@@ -125,7 +125,7 @@ class ListTagResourcesRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListTagResourcesRequest.
+        r"""Sets the resource_id of this ListTagResourcesRequest.
 
         权限集的唯一标识符（ID）。
 
@@ -136,7 +136,7 @@ class ListTagResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagResourcesRequest.
+        r"""Gets the limit of this ListTagResourcesRequest.
 
         每个请求返回的最大结果数
 
@@ -147,7 +147,7 @@ class ListTagResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagResourcesRequest.
+        r"""Sets the limit of this ListTagResourcesRequest.
 
         每个请求返回的最大结果数
 
@@ -158,7 +158,7 @@ class ListTagResourcesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTagResourcesRequest.
+        r"""Gets the marker of this ListTagResourcesRequest.
 
         分页标记
 
@@ -169,7 +169,7 @@ class ListTagResourcesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTagResourcesRequest.
+        r"""Sets the marker of this ListTagResourcesRequest.
 
         分页标记
 

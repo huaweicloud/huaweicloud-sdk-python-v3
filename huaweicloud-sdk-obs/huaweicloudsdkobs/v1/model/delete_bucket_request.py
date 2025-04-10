@@ -29,7 +29,7 @@ class DeleteBucketRequest:
     }
 
     def __init__(self, bucket_name=None, date=None):
-        """DeleteBucketRequest
+        r"""DeleteBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteBucketRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this DeleteBucketRequest.
+        r"""Gets the bucket_name of this DeleteBucketRequest.
 
         Name of the bucket.
 
@@ -62,7 +62,7 @@ class DeleteBucketRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this DeleteBucketRequest.
+        r"""Sets the bucket_name of this DeleteBucketRequest.
 
         Name of the bucket.
 
@@ -73,7 +73,7 @@ class DeleteBucketRequest:
 
     @property
     def date(self):
-        """Gets the date of this DeleteBucketRequest.
+        r"""Gets the date of this DeleteBucketRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -84,7 +84,7 @@ class DeleteBucketRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteBucketRequest.
+        r"""Sets the date of this DeleteBucketRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 

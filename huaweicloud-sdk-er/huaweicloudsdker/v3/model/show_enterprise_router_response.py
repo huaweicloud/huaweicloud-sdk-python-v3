@@ -28,7 +28,7 @@ class ShowEnterpriseRouterResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, request_id=None):
-        """ShowEnterpriseRouterResponse
+        r"""ShowEnterpriseRouterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEnterpriseRouterResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ShowEnterpriseRouterResponse.
+        r"""Gets the instance of this ShowEnterpriseRouterResponse.
 
         :return: The instance of this ShowEnterpriseRouterResponse.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -60,7 +60,7 @@ class ShowEnterpriseRouterResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowEnterpriseRouterResponse.
+        r"""Sets the instance of this ShowEnterpriseRouterResponse.
 
         :param instance: The instance of this ShowEnterpriseRouterResponse.
         :type instance: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -69,7 +69,7 @@ class ShowEnterpriseRouterResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowEnterpriseRouterResponse.
+        r"""Gets the request_id of this ShowEnterpriseRouterResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowEnterpriseRouterResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowEnterpriseRouterResponse.
+        r"""Sets the request_id of this ShowEnterpriseRouterResponse.
 
         请求ID
 

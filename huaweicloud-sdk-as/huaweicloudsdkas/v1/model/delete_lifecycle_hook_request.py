@@ -27,7 +27,7 @@ class DeleteLifecycleHookRequest:
     }
 
     def __init__(self, scaling_group_id=None, lifecycle_hook_name=None):
-        """DeleteLifecycleHookRequest
+        r"""DeleteLifecycleHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLifecycleHookRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this DeleteLifecycleHookRequest.
+        r"""Gets the scaling_group_id of this DeleteLifecycleHookRequest.
 
         伸缩组标识。
 
@@ -59,7 +59,7 @@ class DeleteLifecycleHookRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this DeleteLifecycleHookRequest.
+        r"""Sets the scaling_group_id of this DeleteLifecycleHookRequest.
 
         伸缩组标识。
 
@@ -70,7 +70,7 @@ class DeleteLifecycleHookRequest:
 
     @property
     def lifecycle_hook_name(self):
-        """Gets the lifecycle_hook_name of this DeleteLifecycleHookRequest.
+        r"""Gets the lifecycle_hook_name of this DeleteLifecycleHookRequest.
 
         生命周期挂钩标识。
 
@@ -81,7 +81,7 @@ class DeleteLifecycleHookRequest:
 
     @lifecycle_hook_name.setter
     def lifecycle_hook_name(self, lifecycle_hook_name):
-        """Sets the lifecycle_hook_name of this DeleteLifecycleHookRequest.
+        r"""Sets the lifecycle_hook_name of this DeleteLifecycleHookRequest.
 
         生命周期挂钩标识。
 

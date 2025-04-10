@@ -37,7 +37,7 @@ class InstanceModify:
     }
 
     def __init__(self, version=None, flavor_id=None, artifacts=None, configuration=None, description=None, external_accesses=None, refer_resources=None):
-        """InstanceModify
+        r"""InstanceModify
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class InstanceModify:
 
     @property
     def version(self):
-        """Gets the version of this InstanceModify.
+        r"""Gets the version of this InstanceModify.
 
         应用组件版本号，满足版本语义，如1.0.1。
 
@@ -95,7 +95,7 @@ class InstanceModify:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceModify.
+        r"""Sets the version of this InstanceModify.
 
         应用组件版本号，满足版本语义，如1.0.1。
 
@@ -106,7 +106,7 @@ class InstanceModify:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this InstanceModify.
+        r"""Gets the flavor_id of this InstanceModify.
 
         :return: The flavor_id of this InstanceModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -115,7 +115,7 @@ class InstanceModify:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this InstanceModify.
+        r"""Sets the flavor_id of this InstanceModify.
 
         :param flavor_id: The flavor_id of this InstanceModify.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -124,7 +124,7 @@ class InstanceModify:
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this InstanceModify.
+        r"""Gets the artifacts of this InstanceModify.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -135,7 +135,7 @@ class InstanceModify:
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this InstanceModify.
+        r"""Sets the artifacts of this InstanceModify.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -146,7 +146,7 @@ class InstanceModify:
 
     @property
     def configuration(self):
-        """Gets the configuration of this InstanceModify.
+        r"""Gets the configuration of this InstanceModify.
 
         :return: The configuration of this InstanceModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
@@ -155,7 +155,7 @@ class InstanceModify:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this InstanceModify.
+        r"""Sets the configuration of this InstanceModify.
 
         :param configuration: The configuration of this InstanceModify.
         :type configuration: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
@@ -164,7 +164,7 @@ class InstanceModify:
 
     @property
     def description(self):
-        """Gets the description of this InstanceModify.
+        r"""Gets the description of this InstanceModify.
 
         描述。
 
@@ -175,7 +175,7 @@ class InstanceModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceModify.
+        r"""Sets the description of this InstanceModify.
 
         描述。
 
@@ -186,7 +186,7 @@ class InstanceModify:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this InstanceModify.
+        r"""Gets the external_accesses of this InstanceModify.
 
         访问方式列表。
 
@@ -197,7 +197,7 @@ class InstanceModify:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this InstanceModify.
+        r"""Sets the external_accesses of this InstanceModify.
 
         访问方式列表。
 
@@ -208,7 +208,7 @@ class InstanceModify:
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this InstanceModify.
+        r"""Gets the refer_resources of this InstanceModify.
 
         部署资源列表。
 
@@ -219,7 +219,7 @@ class InstanceModify:
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this InstanceModify.
+        r"""Sets the refer_resources of this InstanceModify.
 
         部署资源列表。
 

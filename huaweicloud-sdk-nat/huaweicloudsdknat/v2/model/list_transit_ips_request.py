@@ -41,7 +41,7 @@ class ListTransitIpsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, network_interface_id=None, ip_address=None, gateway_id=None, enterprise_project_id=None, virsubnet_id=None):
-        """ListTransitIpsRequest
+        r"""ListTransitIpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListTransitIpsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTransitIpsRequest.
+        r"""Gets the limit of this ListTransitIpsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -110,7 +110,7 @@ class ListTransitIpsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTransitIpsRequest.
+        r"""Sets the limit of this ListTransitIpsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -121,7 +121,7 @@ class ListTransitIpsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTransitIpsRequest.
+        r"""Gets the marker of this ListTransitIpsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -132,7 +132,7 @@ class ListTransitIpsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTransitIpsRequest.
+        r"""Sets the marker of this ListTransitIpsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -143,7 +143,7 @@ class ListTransitIpsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListTransitIpsRequest.
+        r"""Gets the page_reverse of this ListTransitIpsRequest.
 
         是否查询前一页。
 
@@ -154,7 +154,7 @@ class ListTransitIpsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListTransitIpsRequest.
+        r"""Sets the page_reverse of this ListTransitIpsRequest.
 
         是否查询前一页。
 
@@ -165,7 +165,7 @@ class ListTransitIpsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTransitIpsRequest.
+        r"""Gets the id of this ListTransitIpsRequest.
 
         中转IP的ID。
 
@@ -176,7 +176,7 @@ class ListTransitIpsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTransitIpsRequest.
+        r"""Sets the id of this ListTransitIpsRequest.
 
         中转IP的ID。
 
@@ -187,7 +187,7 @@ class ListTransitIpsRequest:
 
     @property
     def network_interface_id(self):
-        """Gets the network_interface_id of this ListTransitIpsRequest.
+        r"""Gets the network_interface_id of this ListTransitIpsRequest.
 
         中转IP的网络接口ID。
 
@@ -198,7 +198,7 @@ class ListTransitIpsRequest:
 
     @network_interface_id.setter
     def network_interface_id(self, network_interface_id):
-        """Sets the network_interface_id of this ListTransitIpsRequest.
+        r"""Sets the network_interface_id of this ListTransitIpsRequest.
 
         中转IP的网络接口ID。
 
@@ -209,7 +209,7 @@ class ListTransitIpsRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ListTransitIpsRequest.
+        r"""Gets the ip_address of this ListTransitIpsRequest.
 
         中转IP地址。
 
@@ -220,7 +220,7 @@ class ListTransitIpsRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ListTransitIpsRequest.
+        r"""Sets the ip_address of this ListTransitIpsRequest.
 
         中转IP地址。
 
@@ -231,7 +231,7 @@ class ListTransitIpsRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ListTransitIpsRequest.
+        r"""Gets the gateway_id of this ListTransitIpsRequest.
 
         中转IP绑定的私网NAT网关实例的ID。
 
@@ -242,7 +242,7 @@ class ListTransitIpsRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ListTransitIpsRequest.
+        r"""Sets the gateway_id of this ListTransitIpsRequest.
 
         中转IP绑定的私网NAT网关实例的ID。
 
@@ -253,7 +253,7 @@ class ListTransitIpsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTransitIpsRequest.
+        r"""Gets the enterprise_project_id of this ListTransitIpsRequest.
 
         企业项目ID。创建中转IP时，关联的企业项目ID。
 
@@ -264,7 +264,7 @@ class ListTransitIpsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTransitIpsRequest.
+        r"""Sets the enterprise_project_id of this ListTransitIpsRequest.
 
         企业项目ID。创建中转IP时，关联的企业项目ID。
 
@@ -275,7 +275,7 @@ class ListTransitIpsRequest:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this ListTransitIpsRequest.
+        r"""Gets the virsubnet_id of this ListTransitIpsRequest.
 
         当前租户子网的ID。
 
@@ -286,7 +286,7 @@ class ListTransitIpsRequest:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this ListTransitIpsRequest.
+        r"""Sets the virsubnet_id of this ListTransitIpsRequest.
 
         当前租户子网的ID。
 

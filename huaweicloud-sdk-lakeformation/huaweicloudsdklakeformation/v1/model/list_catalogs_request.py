@@ -25,7 +25,7 @@ class ListCatalogsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListCatalogsRequest
+        r"""ListCatalogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListCatalogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCatalogsRequest.
+        r"""Gets the instance_id of this ListCatalogsRequest.
 
         实例Id
 
@@ -53,7 +53,7 @@ class ListCatalogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCatalogsRequest.
+        r"""Sets the instance_id of this ListCatalogsRequest.
 
         实例Id
 

@@ -27,7 +27,7 @@ class DeleteFirewallTagRequest:
     }
 
     def __init__(self, firewall_id=None, tag_key=None):
-        """DeleteFirewallTagRequest
+        r"""DeleteFirewallTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteFirewallTagRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this DeleteFirewallTagRequest.
+        r"""Gets the firewall_id of this DeleteFirewallTagRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -59,7 +59,7 @@ class DeleteFirewallTagRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this DeleteFirewallTagRequest.
+        r"""Sets the firewall_id of this DeleteFirewallTagRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -70,7 +70,7 @@ class DeleteFirewallTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteFirewallTagRequest.
+        r"""Gets the tag_key of this DeleteFirewallTagRequest.
 
         功能说明：标签键
 
@@ -81,7 +81,7 @@ class DeleteFirewallTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteFirewallTagRequest.
+        r"""Sets the tag_key of this DeleteFirewallTagRequest.
 
         功能说明：标签键
 

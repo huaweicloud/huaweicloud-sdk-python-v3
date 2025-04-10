@@ -25,7 +25,7 @@ class ContainerNetworkUpdate:
     }
 
     def __init__(self, cidrs=None):
-        """ContainerNetworkUpdate
+        r"""ContainerNetworkUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ContainerNetworkUpdate:
 
     @property
     def cidrs(self):
-        """Gets the cidrs of this ContainerNetworkUpdate.
+        r"""Gets the cidrs of this ContainerNetworkUpdate.
 
         容器网络网段列表。1.21及新版本集群，当集群网络类型为vpc-router时，支持增量添加容器网段，最多配置20个。  此参数在集群更新后不可更改，请谨慎选择。
 
@@ -54,7 +54,7 @@ class ContainerNetworkUpdate:
 
     @cidrs.setter
     def cidrs(self, cidrs):
-        """Sets the cidrs of this ContainerNetworkUpdate.
+        r"""Sets the cidrs of this ContainerNetworkUpdate.
 
         容器网络网段列表。1.21及新版本集群，当集群网络类型为vpc-router时，支持增量添加容器网段，最多配置20个。  此参数在集群更新后不可更改，请谨慎选择。
 

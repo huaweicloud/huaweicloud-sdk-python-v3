@@ -28,7 +28,7 @@ class ListRolesResponse(SdkResponse):
     }
 
     def __init__(self, roles=None, page_info=None):
-        """ListRolesResponse
+        r"""ListRolesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRolesResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListRolesResponse.
+        r"""Gets the roles of this ListRolesResponse.
 
         :return: The roles of this ListRolesResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Role`]
@@ -60,7 +60,7 @@ class ListRolesResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListRolesResponse.
+        r"""Sets the roles of this ListRolesResponse.
 
         :param roles: The roles of this ListRolesResponse.
         :type roles: list[:class:`huaweicloudsdklakeformation.v1.Role`]
@@ -69,7 +69,7 @@ class ListRolesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListRolesResponse.
+        r"""Gets the page_info of this ListRolesResponse.
 
         :return: The page_info of this ListRolesResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -78,7 +78,7 @@ class ListRolesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListRolesResponse.
+        r"""Sets the page_info of this ListRolesResponse.
 
         :param page_info: The page_info of this ListRolesResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

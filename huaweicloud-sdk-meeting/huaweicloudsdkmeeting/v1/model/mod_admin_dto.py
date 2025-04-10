@@ -31,7 +31,7 @@ class ModAdminDTO:
     }
 
     def __init__(self, name=None, email=None, phone=None, country=None):
-        """ModAdminDTO
+        r"""ModAdminDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ModAdminDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModAdminDTO.
+        r"""Gets the name of this ModAdminDTO.
 
         名称。
 
@@ -75,7 +75,7 @@ class ModAdminDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModAdminDTO.
+        r"""Sets the name of this ModAdminDTO.
 
         名称。
 
@@ -86,7 +86,7 @@ class ModAdminDTO:
 
     @property
     def email(self):
-        """Gets the email of this ModAdminDTO.
+        r"""Gets the email of this ModAdminDTO.
 
         邮箱地址。
 
@@ -97,7 +97,7 @@ class ModAdminDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ModAdminDTO.
+        r"""Sets the email of this ModAdminDTO.
 
         邮箱地址。
 
@@ -108,7 +108,7 @@ class ModAdminDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this ModAdminDTO.
+        r"""Gets the phone of this ModAdminDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填。
 
@@ -119,7 +119,7 @@ class ModAdminDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ModAdminDTO.
+        r"""Sets the phone of this ModAdminDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填。
 
@@ -130,7 +130,7 @@ class ModAdminDTO:
 
     @property
     def country(self):
-        """Gets the country of this ModAdminDTO.
+        r"""Gets the country of this ModAdminDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -141,7 +141,7 @@ class ModAdminDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ModAdminDTO.
+        r"""Sets the country of this ModAdminDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 

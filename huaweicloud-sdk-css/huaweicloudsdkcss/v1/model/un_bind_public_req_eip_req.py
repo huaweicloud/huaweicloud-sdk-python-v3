@@ -25,7 +25,7 @@ class UnBindPublicReqEipReq:
     }
 
     def __init__(self, band_width=None):
-        """UnBindPublicReqEipReq
+        r"""UnBindPublicReqEipReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnBindPublicReqEipReq:
 
     @property
     def band_width(self):
-        """Gets the band_width of this UnBindPublicReqEipReq.
+        r"""Gets the band_width of this UnBindPublicReqEipReq.
 
         :return: The band_width of this UnBindPublicReqEipReq.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`
@@ -52,7 +52,7 @@ class UnBindPublicReqEipReq:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this UnBindPublicReqEipReq.
+        r"""Sets the band_width of this UnBindPublicReqEipReq.
 
         :param band_width: The band_width of this UnBindPublicReqEipReq.
         :type band_width: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`

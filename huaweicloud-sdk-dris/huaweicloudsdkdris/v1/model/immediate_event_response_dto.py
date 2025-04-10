@@ -45,7 +45,7 @@ class ImmediateEventResponseDTO:
     }
 
     def __init__(self, time_stamp=None, event_class=None, event_type=None, event_source=None, event_source_id=None, event_confidence=None, event_position=None, event_radius=None, event_description=None, event_priority=None, reference_paths=None):
-        """ImmediateEventResponseDTO
+        r"""ImmediateEventResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def time_stamp(self):
-        """Gets the time_stamp of this ImmediateEventResponseDTO.
+        r"""Gets the time_stamp of this ImmediateEventResponseDTO.
 
         **参数说明**：事件发生时间，毫秒级。  格式：yyyy-MM-dd''T''HH:mm:ss.SSS''Z''  例如 2015-12-12T12:12:12.356Z。
 
@@ -124,7 +124,7 @@ class ImmediateEventResponseDTO:
 
     @time_stamp.setter
     def time_stamp(self, time_stamp):
-        """Sets the time_stamp of this ImmediateEventResponseDTO.
+        r"""Sets the time_stamp of this ImmediateEventResponseDTO.
 
         **参数说明**：事件发生时间，毫秒级。  格式：yyyy-MM-dd''T''HH:mm:ss.SSS''Z''  例如 2015-12-12T12:12:12.356Z。
 
@@ -135,7 +135,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_class(self):
-        """Gets the event_class of this ImmediateEventResponseDTO.
+        r"""Gets the event_class of this ImmediateEventResponseDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -146,7 +146,7 @@ class ImmediateEventResponseDTO:
 
     @event_class.setter
     def event_class(self, event_class):
-        """Sets the event_class of this ImmediateEventResponseDTO.
+        r"""Sets the event_class of this ImmediateEventResponseDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -157,7 +157,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ImmediateEventResponseDTO.
+        r"""Gets the event_type of this ImmediateEventResponseDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件
 
@@ -168,7 +168,7 @@ class ImmediateEventResponseDTO:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ImmediateEventResponseDTO.
+        r"""Sets the event_type of this ImmediateEventResponseDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件
 
@@ -179,7 +179,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_source(self):
-        """Gets the event_source of this ImmediateEventResponseDTO.
+        r"""Gets the event_source of this ImmediateEventResponseDTO.
 
         **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据
 
@@ -190,7 +190,7 @@ class ImmediateEventResponseDTO:
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this ImmediateEventResponseDTO.
+        r"""Sets the event_source of this ImmediateEventResponseDTO.
 
         **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据
 
@@ -201,7 +201,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_source_id(self):
-        """Gets the event_source_id of this ImmediateEventResponseDTO.
+        r"""Gets the event_source_id of this ImmediateEventResponseDTO.
 
         **参数说明**：事件来源的ID，由用户自定义。
 
@@ -212,7 +212,7 @@ class ImmediateEventResponseDTO:
 
     @event_source_id.setter
     def event_source_id(self, event_source_id):
-        """Sets the event_source_id of this ImmediateEventResponseDTO.
+        r"""Sets the event_source_id of this ImmediateEventResponseDTO.
 
         **参数说明**：事件来源的ID，由用户自定义。
 
@@ -223,7 +223,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_confidence(self):
-        """Gets the event_confidence of this ImmediateEventResponseDTO.
+        r"""Gets the event_confidence of this ImmediateEventResponseDTO.
 
         **参数说明**：道路交通事件的信息来源提供的事件置信度水平，帮助接收端判断是否相信该事件信息，可选。
 
@@ -234,7 +234,7 @@ class ImmediateEventResponseDTO:
 
     @event_confidence.setter
     def event_confidence(self, event_confidence):
-        """Sets the event_confidence of this ImmediateEventResponseDTO.
+        r"""Sets the event_confidence of this ImmediateEventResponseDTO.
 
         **参数说明**：道路交通事件的信息来源提供的事件置信度水平，帮助接收端判断是否相信该事件信息，可选。
 
@@ -245,7 +245,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_position(self):
-        """Gets the event_position of this ImmediateEventResponseDTO.
+        r"""Gets the event_position of this ImmediateEventResponseDTO.
 
         :return: The event_position of this ImmediateEventResponseDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.ImmediateEventPosition3D`
@@ -254,7 +254,7 @@ class ImmediateEventResponseDTO:
 
     @event_position.setter
     def event_position(self, event_position):
-        """Sets the event_position of this ImmediateEventResponseDTO.
+        r"""Sets the event_position of this ImmediateEventResponseDTO.
 
         :param event_position: The event_position of this ImmediateEventResponseDTO.
         :type event_position: :class:`huaweicloudsdkdris.v1.ImmediateEventPosition3D`
@@ -263,7 +263,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_radius(self):
-        """Gets the event_radius of this ImmediateEventResponseDTO.
+        r"""Gets the event_radius of this ImmediateEventResponseDTO.
 
         **参数说明**：事件的发生区域半径，单位为分米。
 
@@ -274,7 +274,7 @@ class ImmediateEventResponseDTO:
 
     @event_radius.setter
     def event_radius(self, event_radius):
-        """Sets the event_radius of this ImmediateEventResponseDTO.
+        r"""Sets the event_radius of this ImmediateEventResponseDTO.
 
         **参数说明**：事件的发生区域半径，单位为分米。
 
@@ -285,7 +285,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_description(self):
-        """Gets the event_description of this ImmediateEventResponseDTO.
+        r"""Gets the event_description of this ImmediateEventResponseDTO.
 
         **参数说明**：事件的文本描述信息,可自行扩展需传递的信息。
 
@@ -296,7 +296,7 @@ class ImmediateEventResponseDTO:
 
     @event_description.setter
     def event_description(self, event_description):
-        """Sets the event_description of this ImmediateEventResponseDTO.
+        r"""Sets the event_description of this ImmediateEventResponseDTO.
 
         **参数说明**：事件的文本描述信息,可自行扩展需传递的信息。
 
@@ -307,7 +307,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def event_priority(self):
-        """Gets the event_priority of this ImmediateEventResponseDTO.
+        r"""Gets the event_priority of this ImmediateEventResponseDTO.
 
         **参数说明**：事件优先级，0-7，数字越大，级别越高。
 
@@ -318,7 +318,7 @@ class ImmediateEventResponseDTO:
 
     @event_priority.setter
     def event_priority(self, event_priority):
-        """Sets the event_priority of this ImmediateEventResponseDTO.
+        r"""Sets the event_priority of this ImmediateEventResponseDTO.
 
         **参数说明**：事件优先级，0-7，数字越大，级别越高。
 
@@ -329,7 +329,7 @@ class ImmediateEventResponseDTO:
 
     @property
     def reference_paths(self):
-        """Gets the reference_paths of this ImmediateEventResponseDTO.
+        r"""Gets the reference_paths of this ImmediateEventResponseDTO.
 
         **参数说明**：事件生效的关联路径。
 
@@ -340,7 +340,7 @@ class ImmediateEventResponseDTO:
 
     @reference_paths.setter
     def reference_paths(self, reference_paths):
-        """Sets the reference_paths of this ImmediateEventResponseDTO.
+        r"""Sets the reference_paths of this ImmediateEventResponseDTO.
 
         **参数说明**：事件生效的关联路径。
 

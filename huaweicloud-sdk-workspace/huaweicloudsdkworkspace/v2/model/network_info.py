@@ -33,7 +33,7 @@ class NetworkInfo:
     }
 
     def __init__(self, vpc_info=None, subnet_info=None, port_info=None, public_ip_info=None, security_groups=None):
-        """NetworkInfo
+        r"""NetworkInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NetworkInfo:
 
     @property
     def vpc_info(self):
-        """Gets the vpc_info of this NetworkInfo.
+        r"""Gets the vpc_info of this NetworkInfo.
 
         :return: The vpc_info of this NetworkInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Vpc`
@@ -80,7 +80,7 @@ class NetworkInfo:
 
     @vpc_info.setter
     def vpc_info(self, vpc_info):
-        """Sets the vpc_info of this NetworkInfo.
+        r"""Sets the vpc_info of this NetworkInfo.
 
         :param vpc_info: The vpc_info of this NetworkInfo.
         :type vpc_info: :class:`huaweicloudsdkworkspace.v2.Vpc`
@@ -89,7 +89,7 @@ class NetworkInfo:
 
     @property
     def subnet_info(self):
-        """Gets the subnet_info of this NetworkInfo.
+        r"""Gets the subnet_info of this NetworkInfo.
 
         :return: The subnet_info of this NetworkInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopSubnet`
@@ -98,7 +98,7 @@ class NetworkInfo:
 
     @subnet_info.setter
     def subnet_info(self, subnet_info):
-        """Sets the subnet_info of this NetworkInfo.
+        r"""Sets the subnet_info of this NetworkInfo.
 
         :param subnet_info: The subnet_info of this NetworkInfo.
         :type subnet_info: :class:`huaweicloudsdkworkspace.v2.DesktopSubnet`
@@ -107,7 +107,7 @@ class NetworkInfo:
 
     @property
     def port_info(self):
-        """Gets the port_info of this NetworkInfo.
+        r"""Gets the port_info of this NetworkInfo.
 
         :return: The port_info of this NetworkInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Port`
@@ -116,7 +116,7 @@ class NetworkInfo:
 
     @port_info.setter
     def port_info(self, port_info):
-        """Sets the port_info of this NetworkInfo.
+        r"""Sets the port_info of this NetworkInfo.
 
         :param port_info: The port_info of this NetworkInfo.
         :type port_info: :class:`huaweicloudsdkworkspace.v2.Port`
@@ -125,7 +125,7 @@ class NetworkInfo:
 
     @property
     def public_ip_info(self):
-        """Gets the public_ip_info of this NetworkInfo.
+        r"""Gets the public_ip_info of this NetworkInfo.
 
         :return: The public_ip_info of this NetworkInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PublicIp`
@@ -134,7 +134,7 @@ class NetworkInfo:
 
     @public_ip_info.setter
     def public_ip_info(self, public_ip_info):
-        """Sets the public_ip_info of this NetworkInfo.
+        r"""Sets the public_ip_info of this NetworkInfo.
 
         :param public_ip_info: The public_ip_info of this NetworkInfo.
         :type public_ip_info: :class:`huaweicloudsdkworkspace.v2.PublicIp`
@@ -143,7 +143,7 @@ class NetworkInfo:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NetworkInfo.
+        r"""Gets the security_groups of this NetworkInfo.
 
         桌面绑定的安全组列表
 
@@ -154,7 +154,7 @@ class NetworkInfo:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NetworkInfo.
+        r"""Sets the security_groups of this NetworkInfo.
 
         桌面绑定的安全组列表
 

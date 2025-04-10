@@ -30,7 +30,7 @@ class ListSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None, request_id=None, page_info=None):
-        """ListSecurityGroupsResponse
+        r"""ListSecurityGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ListSecurityGroupsResponse.
+        r"""Gets the security_groups of this ListSecurityGroupsResponse.
 
         安全组列表响应体
 
@@ -69,7 +69,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ListSecurityGroupsResponse.
+        r"""Sets the security_groups of this ListSecurityGroupsResponse.
 
         安全组列表响应体
 
@@ -80,7 +80,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSecurityGroupsResponse.
+        r"""Gets the request_id of this ListSecurityGroupsResponse.
 
         请求ID
 
@@ -91,7 +91,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSecurityGroupsResponse.
+        r"""Sets the request_id of this ListSecurityGroupsResponse.
 
         请求ID
 
@@ -102,7 +102,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSecurityGroupsResponse.
+        r"""Gets the page_info of this ListSecurityGroupsResponse.
 
         :return: The page_info of this ListSecurityGroupsResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListSecurityGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSecurityGroupsResponse.
+        r"""Sets the page_info of this ListSecurityGroupsResponse.
 
         :param page_info: The page_info of this ListSecurityGroupsResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

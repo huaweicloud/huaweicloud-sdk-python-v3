@@ -24,7 +24,7 @@ class CloseAccountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CloseAccountResponse
+        r"""CloseAccountResponse
 
         The model defined in huaweicloud sdk
 

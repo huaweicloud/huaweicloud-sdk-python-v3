@@ -28,7 +28,7 @@ class ListGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListGroupsResponse
+        r"""ListGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListGroupsResponse.
+        r"""Gets the total of this ListGroupsResponse.
 
         群组总数
 
@@ -62,7 +62,7 @@ class ListGroupsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListGroupsResponse.
+        r"""Sets the total of this ListGroupsResponse.
 
         群组总数
 
@@ -73,7 +73,7 @@ class ListGroupsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListGroupsResponse.
+        r"""Gets the items of this ListGroupsResponse.
 
         群组列表
 
@@ -84,7 +84,7 @@ class ListGroupsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListGroupsResponse.
+        r"""Sets the items of this ListGroupsResponse.
 
         群组列表
 

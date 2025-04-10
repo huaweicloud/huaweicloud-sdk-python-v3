@@ -27,7 +27,7 @@ class ConfirmImageUploadReq:
     }
 
     def __init__(self, id=None, status=None):
-        """ConfirmImageUploadReq
+        r"""ConfirmImageUploadReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfirmImageUploadReq:
 
     @property
     def id(self):
-        """Gets the id of this ConfirmImageUploadReq.
+        r"""Gets the id of this ConfirmImageUploadReq.
 
         水印配置模板id。
 
@@ -59,7 +59,7 @@ class ConfirmImageUploadReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfirmImageUploadReq.
+        r"""Sets the id of this ConfirmImageUploadReq.
 
         水印配置模板id。
 
@@ -70,7 +70,7 @@ class ConfirmImageUploadReq:
 
     @property
     def status(self):
-        """Gets the status of this ConfirmImageUploadReq.
+        r"""Gets the status of this ConfirmImageUploadReq.
 
         水印上传状态。
 
@@ -81,7 +81,7 @@ class ConfirmImageUploadReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConfirmImageUploadReq.
+        r"""Sets the status of this ConfirmImageUploadReq.
 
         水印上传状态。
 

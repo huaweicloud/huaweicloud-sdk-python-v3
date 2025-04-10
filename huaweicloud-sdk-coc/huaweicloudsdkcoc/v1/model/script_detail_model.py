@@ -53,7 +53,7 @@ class ScriptDetailModel:
     }
 
     def __init__(self, script_uuid=None, name=None, version=None, description=None, type=None, content=None, script_params=None, status=None, gmt_created=None, gmt_modified=None, creator=None, creator_id=None, operator=None, properties=None, enterprise_project_id=None):
-        """ScriptDetailModel
+        r"""ScriptDetailModel
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class ScriptDetailModel:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this ScriptDetailModel.
+        r"""Gets the script_uuid of this ScriptDetailModel.
 
         脚本uuid
 
@@ -142,7 +142,7 @@ class ScriptDetailModel:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this ScriptDetailModel.
+        r"""Sets the script_uuid of this ScriptDetailModel.
 
         脚本uuid
 
@@ -153,7 +153,7 @@ class ScriptDetailModel:
 
     @property
     def name(self):
-        """Gets the name of this ScriptDetailModel.
+        r"""Gets the name of this ScriptDetailModel.
 
         脚本名称
 
@@ -164,7 +164,7 @@ class ScriptDetailModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptDetailModel.
+        r"""Sets the name of this ScriptDetailModel.
 
         脚本名称
 
@@ -175,7 +175,7 @@ class ScriptDetailModel:
 
     @property
     def version(self):
-        """Gets the version of this ScriptDetailModel.
+        r"""Gets the version of this ScriptDetailModel.
 
         脚本版本号 约束条件  后期废除，不建议使用
 
@@ -186,7 +186,7 @@ class ScriptDetailModel:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ScriptDetailModel.
+        r"""Sets the version of this ScriptDetailModel.
 
         脚本版本号 约束条件  后期废除，不建议使用
 
@@ -197,7 +197,7 @@ class ScriptDetailModel:
 
     @property
     def description(self):
-        """Gets the description of this ScriptDetailModel.
+        r"""Gets the description of this ScriptDetailModel.
 
         脚本描述
 
@@ -208,7 +208,7 @@ class ScriptDetailModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScriptDetailModel.
+        r"""Sets the description of this ScriptDetailModel.
 
         脚本描述
 
@@ -219,7 +219,7 @@ class ScriptDetailModel:
 
     @property
     def type(self):
-        """Gets the type of this ScriptDetailModel.
+        r"""Gets the type of this ScriptDetailModel.
 
         脚本类型 SHELL:shell脚本， PYTHON:Python脚本， BAT:Bat脚本，
 
@@ -230,7 +230,7 @@ class ScriptDetailModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScriptDetailModel.
+        r"""Sets the type of this ScriptDetailModel.
 
         脚本类型 SHELL:shell脚本， PYTHON:Python脚本， BAT:Bat脚本，
 
@@ -241,7 +241,7 @@ class ScriptDetailModel:
 
     @property
     def content(self):
-        """Gets the content of this ScriptDetailModel.
+        r"""Gets the content of this ScriptDetailModel.
 
         脚本内容
 
@@ -252,7 +252,7 @@ class ScriptDetailModel:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ScriptDetailModel.
+        r"""Sets the content of this ScriptDetailModel.
 
         脚本内容
 
@@ -263,7 +263,7 @@ class ScriptDetailModel:
 
     @property
     def script_params(self):
-        """Gets the script_params of this ScriptDetailModel.
+        r"""Gets the script_params of this ScriptDetailModel.
 
         脚本入参
 
@@ -274,7 +274,7 @@ class ScriptDetailModel:
 
     @script_params.setter
     def script_params(self, script_params):
-        """Sets the script_params of this ScriptDetailModel.
+        r"""Sets the script_params of this ScriptDetailModel.
 
         脚本入参
 
@@ -285,7 +285,7 @@ class ScriptDetailModel:
 
     @property
     def status(self):
-        """Gets the status of this ScriptDetailModel.
+        r"""Gets the status of this ScriptDetailModel.
 
         脚本状态 PENDING_APPROVE:待审批 APPROVED：正常（审批通过） REJECTED：驳回（审批人，驳回该脚本）
 
@@ -296,7 +296,7 @@ class ScriptDetailModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScriptDetailModel.
+        r"""Sets the status of this ScriptDetailModel.
 
         脚本状态 PENDING_APPROVE:待审批 APPROVED：正常（审批通过） REJECTED：驳回（审批人，驳回该脚本）
 
@@ -307,7 +307,7 @@ class ScriptDetailModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this ScriptDetailModel.
+        r"""Gets the gmt_created of this ScriptDetailModel.
 
         创建时间
 
@@ -318,7 +318,7 @@ class ScriptDetailModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this ScriptDetailModel.
+        r"""Sets the gmt_created of this ScriptDetailModel.
 
         创建时间
 
@@ -329,7 +329,7 @@ class ScriptDetailModel:
 
     @property
     def gmt_modified(self):
-        """Gets the gmt_modified of this ScriptDetailModel.
+        r"""Gets the gmt_modified of this ScriptDetailModel.
 
         修改时间
 
@@ -340,7 +340,7 @@ class ScriptDetailModel:
 
     @gmt_modified.setter
     def gmt_modified(self, gmt_modified):
-        """Sets the gmt_modified of this ScriptDetailModel.
+        r"""Sets the gmt_modified of this ScriptDetailModel.
 
         修改时间
 
@@ -351,7 +351,7 @@ class ScriptDetailModel:
 
     @property
     def creator(self):
-        """Gets the creator of this ScriptDetailModel.
+        r"""Gets the creator of this ScriptDetailModel.
 
         创建人
 
@@ -362,7 +362,7 @@ class ScriptDetailModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ScriptDetailModel.
+        r"""Sets the creator of this ScriptDetailModel.
 
         创建人
 
@@ -373,7 +373,7 @@ class ScriptDetailModel:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ScriptDetailModel.
+        r"""Gets the creator_id of this ScriptDetailModel.
 
         创建人Id
 
@@ -384,7 +384,7 @@ class ScriptDetailModel:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ScriptDetailModel.
+        r"""Sets the creator_id of this ScriptDetailModel.
 
         创建人Id
 
@@ -395,7 +395,7 @@ class ScriptDetailModel:
 
     @property
     def operator(self):
-        """Gets the operator of this ScriptDetailModel.
+        r"""Gets the operator of this ScriptDetailModel.
 
         修改人
 
@@ -406,7 +406,7 @@ class ScriptDetailModel:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ScriptDetailModel.
+        r"""Sets the operator of this ScriptDetailModel.
 
         修改人
 
@@ -417,7 +417,7 @@ class ScriptDetailModel:
 
     @property
     def properties(self):
-        """Gets the properties of this ScriptDetailModel.
+        r"""Gets the properties of this ScriptDetailModel.
 
         :return: The properties of this ScriptDetailModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -426,7 +426,7 @@ class ScriptDetailModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ScriptDetailModel.
+        r"""Sets the properties of this ScriptDetailModel.
 
         :param properties: The properties of this ScriptDetailModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -435,7 +435,7 @@ class ScriptDetailModel:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ScriptDetailModel.
+        r"""Gets the enterprise_project_id of this ScriptDetailModel.
 
         企业项目id
 
@@ -446,7 +446,7 @@ class ScriptDetailModel:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ScriptDetailModel.
+        r"""Sets the enterprise_project_id of this ScriptDetailModel.
 
         企业项目id
 

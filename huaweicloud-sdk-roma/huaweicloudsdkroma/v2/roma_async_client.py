@@ -34,7 +34,7 @@ class RomaAsyncClient(Client):
         return client_builder
 
     def add_subsets_to_gateway_async(self, request):
-        """添加子设备到网关
+        r"""添加子设备到网关
 
         添加子设备到网关
         
@@ -103,7 +103,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def associate_apps_for_app_quota_async(self, request):
-        """客户端配额绑定客户端应用列表
+        r"""客户端配额绑定客户端应用列表
 
         客户端配额绑定客户端应用列表
         
@@ -172,7 +172,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def associate_certificate_v2_async(self, request):
-        """绑定域名证书
+        r"""绑定域名证书
 
         如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
         本章节主要介绍为特定域名绑定证书。
@@ -244,7 +244,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def associate_domain_v2_async(self, request):
-        """绑定域名
+        r"""绑定域名
 
         用户自定义的域名，需要CNAME到API分组的子域名上才能生效。
         每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
@@ -314,7 +314,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def associate_signature_key_v2_async(self, request):
-        """绑定签名密钥
+        r"""绑定签名密钥
 
         签名密钥创建后，需要绑定到API才能生效。
         
@@ -387,7 +387,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def attach_api_to_plugin_async(self, request):
-        """插件绑定API
+        r"""插件绑定API
 
         绑定插件到API上。
         - 只能选择发布状态的API
@@ -460,7 +460,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def attach_plugin_to_api_async(self, request):
-        """API绑定插件
+        r"""API绑定插件
 
         绑定插件到API上。
         - 只能选择发布状态的API
@@ -533,7 +533,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_add_device_to_group_async(self, request):
-        """批量添加设备到设备分组
+        r"""批量添加设备到设备分组
 
         批量添加设备到设备分组
         
@@ -602,7 +602,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_delete_devices_async(self, request):
-        """批量删除设备
+        r"""批量删除设备
 
         批量删除设备
         
@@ -669,7 +669,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_delete_mqs_instance_topic_async(self, request):
-        """批量删除Topic
+        r"""批量删除Topic
 
         批量删除Topic。
         
@@ -736,7 +736,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_delete_rules_async(self, request):
-        """批量删除规则
+        r"""批量删除规则
 
         批量删除规则
         
@@ -803,7 +803,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_freeze_devices_async(self, request):
-        """设备批量下线
+        r"""设备批量下线
 
         设备批量下线
         
@@ -870,7 +870,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_start_or_stop_tasks_async(self, request):
-        """批量启动\\停止任务
+        r"""批量启动\\停止任务
 
         批量启动\\停止任务
         
@@ -937,7 +937,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_livedata_apis_v2_async(self, request):
-        """校验自定义后端API定义
+        r"""校验自定义后端API定义
 
         校验自定义后端API定义。校验自定义后端API的路径或名称是否已存在
         
@@ -1004,7 +1004,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def count_devices_async(self, request):
-        """设备数量统计
+        r"""设备数量统计
 
         设备数量统计
         
@@ -1069,7 +1069,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def count_tasks_async(self, request):
-        """统计不同类型不同状态任务数量
+        r"""统计不同类型不同状态任务数量
 
         统计不同类型不同状态任务数量
         
@@ -1134,7 +1134,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_app_code_auto_v2_async(self, request):
-        """自动生成APP Code
+        r"""自动生成APP Code
 
         创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
         
@@ -1201,7 +1201,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_app_code_v2_async(self, request):
-        """创建APP Code
+        r"""创建APP Code
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
@@ -1270,7 +1270,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_app_config_v2_async(self, request):
-        """创建应用配置
+        r"""创建应用配置
 
         创建应用配置
         
@@ -1339,7 +1339,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_app_quota_async(self, request):
-        """创建客户端配额
+        r"""创建客户端配额
 
         创建客户端配额
         
@@ -1406,7 +1406,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_command_async(self, request):
-        """创建命令
+        r"""创建命令
 
         创建命令
         
@@ -1475,7 +1475,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_common_task_async(self, request):
-        """创建普通任务
+        r"""创建普通任务
 
         创建普通任务(区别于组合任务)
         
@@ -1542,7 +1542,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_custom_authorizer_v2_async(self, request):
-        """创建自定义认证
+        r"""创建自定义认证
 
         创建自定义认证
         
@@ -1609,7 +1609,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_datasource_info_async(self, request):
-        """创建数据源
+        r"""创建数据源
 
         创建数据源
         
@@ -1676,7 +1676,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_destination_async(self, request):
-        """添加目标数据源
+        r"""添加目标数据源
 
         添加目标数据源
         
@@ -1745,7 +1745,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_device_async(self, request):
-        """创建设备
+        r"""创建设备
 
         创建设备
         
@@ -1812,7 +1812,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_device_group_async(self, request):
-        """创建设备分组
+        r"""创建设备分组
 
         创建设备分组
         
@@ -1879,7 +1879,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_dispatches_async(self, request):
-        """创建调度计划
+        r"""创建调度计划
 
         创建调度计划
         
@@ -1948,7 +1948,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_environment_v2_async(self, request):
-        """创建环境
+        r"""创建环境
 
         在实际的生产中，API提供者可能有多个环境，如开发环境、测试环境、生产环境等，用户可以自由将API发布到某个环境，供调用者调用。
         
@@ -2021,7 +2021,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_environment_variable_v2_async(self, request):
-        """新建变量
+        r"""新建变量
 
         将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。
         
@@ -2099,7 +2099,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_feature_v2_async(self, request):
-        """实例配置特性
+        r"""实例配置特性
 
         为实例配置需要的特性。
         
@@ -2168,7 +2168,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_live_data_api_script_v2_async(self, request):
-        """创建后端API脚本
+        r"""创建后端API脚本
 
         在某个实例中创建后端API脚本。
         
@@ -2237,7 +2237,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_live_data_api_v2_async(self, request):
-        """创建后端API
+        r"""创建后端API
 
         在某个实例中创建后端API。
         
@@ -2304,7 +2304,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_mqs_instance_topic_async(self, request):
-        """创建Topic
+        r"""创建Topic
 
         创建Topic。
         
@@ -2371,7 +2371,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_multi_task_mappings_async(self, request):
-        """创建组合任务映射
+        r"""创建组合任务映射
 
         创建组合任务映射
         
@@ -2440,7 +2440,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_multi_tasks_async(self, request):
-        """创建组合任务
+        r"""创建组合任务
 
         创建组合任务
         
@@ -2507,7 +2507,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_notification_async(self, request):
-        """创建订阅管理
+        r"""创建订阅管理
 
         该接口用于创建指定实例下对应的应用下的设备操作，订阅到指定的topic
         
@@ -2574,7 +2574,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_plugin_async(self, request):
-        """创建插件
+        r"""创建插件
 
         创建插件信息。
         - 插件不允许重名
@@ -2643,7 +2643,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_product_async(self, request):
-        """创建产品
+        r"""创建产品
 
         创建产品
         
@@ -2710,7 +2710,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_product_template_async(self, request):
-        """创建产品模板
+        r"""创建产品模板
 
         创建产品模板
         
@@ -2777,7 +2777,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_product_topic_async(self, request):
-        """添加产品主题
+        r"""添加产品主题
 
         添加产品主题
         
@@ -2846,7 +2846,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_property_async(self, request):
-        """创建属性
+        r"""创建属性
 
         创建属性
         
@@ -2915,7 +2915,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_request_property_async(self, request):
-        """创建请求属性
+        r"""创建请求属性
 
         创建请求属性
         
@@ -2986,7 +2986,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_request_throttling_policy_v2_async(self, request):
-        """创建流控策略
+        r"""创建流控策略
 
         当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。
         流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
@@ -3054,7 +3054,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_response_property_async(self, request):
-        """创建响应属性
+        r"""创建响应属性
 
         创建响应属性
         
@@ -3125,7 +3125,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_rule_async(self, request):
-        """创建规则
+        r"""创建规则
 
         创建规则
         
@@ -3192,7 +3192,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_service_async(self, request):
-        """创建服务
+        r"""创建服务
 
         创建服务
         
@@ -3259,7 +3259,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_signature_key_v2_async(self, request):
-        """创建签名密钥
+        r"""创建签名密钥
 
         为了保护API的安全性，建议租户为API的访问提供一套保护机制，即租户开放的API，需要对请求来源进行认证，不符合认证的请求直接拒绝访问。
         
@@ -3330,7 +3330,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_source_async(self, request):
-        """添加源数据源
+        r"""添加源数据源
 
         添加源数据源
         
@@ -3399,7 +3399,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_special_throttling_configuration_v2_async(self, request):
-        """创建特殊设置
+        r"""创建特殊设置
 
         流控策略可以限制一段时间内可以访问API的最大次数，也可以限制一段时间内单个租户和单个APP可以访问API的最大次数。
         
@@ -3472,7 +3472,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def debug_live_data_api_v2_async(self, request):
-        """测试后端API
+        r"""测试后端API
 
         测试后端API是否可用。
         
@@ -3541,7 +3541,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def debug_rule_async(self, request):
-        """规则调试
+        r"""规则调试
 
         规则调试
         
@@ -3608,7 +3608,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_app_acl_async(self, request):
-        """删除APP的访问控制
+        r"""删除APP的访问控制
 
         删除客户端配置的访问控制信息。
         
@@ -3675,7 +3675,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_app_code_v2_async(self, request):
-        """删除APP Code
+        r"""删除APP Code
 
         删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
         
@@ -3744,7 +3744,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_app_config_v2_async(self, request):
-        """删除应用配置
+        r"""删除应用配置
 
         删除应用配置
         
@@ -3813,7 +3813,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_app_quota_async(self, request):
-        """删除客户端配额
+        r"""删除客户端配额
 
         删除客户端配额。删除客户端配额时，同时删除客户端配额和客户端应用的关联关系
         
@@ -3880,7 +3880,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_command_async(self, request):
-        """删除命令
+        r"""删除命令
 
         删除命令
         
@@ -3949,7 +3949,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_custom_authorizer_v2_async(self, request):
-        """删除自定义认证
+        r"""删除自定义认证
 
         删除自定义认证
         
@@ -4016,7 +4016,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_datasource_info_by_id_async(self, request):
-        """通过数据源Id删除指定数据源信息
+        r"""通过数据源Id删除指定数据源信息
 
         通过数据源Id删除指定数据源信息
         
@@ -4083,7 +4083,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_destination_async(self, request):
-        """删除目标数据源
+        r"""删除目标数据源
 
         删除目标数据源
         
@@ -4152,7 +4152,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_device_async(self, request):
-        """删除设备
+        r"""删除设备
 
         删除指定设备ID的设备
         
@@ -4219,7 +4219,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_device_from_group_async(self, request):
-        """删除设备分组内的设备
+        r"""删除设备分组内的设备
 
         删除设备分组内的设备
         
@@ -4288,7 +4288,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_device_group_async(self, request):
-        """删除设备分组
+        r"""删除设备分组
 
         删除分组
         
@@ -4355,7 +4355,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_environment_v2_async(self, request):
-        """删除环境
+        r"""删除环境
 
         删除指定的环境。
         该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。环境上存在已发布的API时，该环境不能被删除。
@@ -4423,7 +4423,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_environment_variable_v2_async(self, request):
-        """删除变量
+        r"""删除变量
 
         删除指定的环境变量。
         
@@ -4490,7 +4490,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_live_data_api_v2_async(self, request):
-        """删除后端API
+        r"""删除后端API
 
         在某个实例中删除后端API。
         
@@ -4557,7 +4557,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_mqs_instance_topic_async(self, request):
-        """删除Topic
+        r"""删除Topic
 
         删除Topic。
         
@@ -4624,7 +4624,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_multi_task_mapping_async(self, request):
-        """删除指定任务映射
+        r"""删除指定任务映射
 
         通过映射ID删除指定任务映射
         
@@ -4693,7 +4693,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_notification_async(self, request):
-        """删除订阅管理
+        r"""删除订阅管理
 
         该接口用于删除指定订阅管理
         
@@ -4760,7 +4760,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_plugin_async(self, request):
-        """删除插件
+        r"""删除插件
 
         删除插件。
         - 必须先解除API和插件的绑定关系，否则删除报错
@@ -4828,7 +4828,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_product_async(self, request):
-        """删除产品
+        r"""删除产品
 
         删除产品
         
@@ -4895,7 +4895,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_product_template_async(self, request):
-        """删除产品模板
+        r"""删除产品模板
 
         删除产品模板
         
@@ -4962,7 +4962,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_product_topic_async(self, request):
-        """删除产品主题
+        r"""删除产品主题
 
         删除产品主题
         
@@ -5031,7 +5031,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_property_async(self, request):
-        """删除服务属性
+        r"""删除服务属性
 
         删除服务属性
         
@@ -5100,7 +5100,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_request_property_async(self, request):
-        """删除请求属性
+        r"""删除请求属性
 
         删除请求属性
         
@@ -5171,7 +5171,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_request_throttling_policy_v2_async(self, request):
-        """删除流控策略
+        r"""删除流控策略
 
         删除指定的流控策略。当该流控策略绑定了API时，需要先解除流控策略与API的所有绑定关系后再删除。
         
@@ -5238,7 +5238,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_response_property_async(self, request):
-        """删除响应属性
+        r"""删除响应属性
 
         删除响应属性
         
@@ -5309,7 +5309,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_rule_async(self, request):
-        """删除规则
+        r"""删除规则
 
         删除规则
         
@@ -5376,7 +5376,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_service_async(self, request):
-        """删除服务
+        r"""删除服务
 
         删除服务
         
@@ -5443,7 +5443,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_signature_key_v2_async(self, request):
-        """删除签名密钥
+        r"""删除签名密钥
 
         删除指定的签名密钥。签名密钥绑定了API时无法删除，需要先解除与API的绑定关系后删除。
         
@@ -5510,7 +5510,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_source_async(self, request):
-        """删除源数据源
+        r"""删除源数据源
 
         删除源数据源
         
@@ -5579,7 +5579,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_special_throttling_configuration_v2_async(self, request):
-        """删除特殊设置
+        r"""删除特殊设置
 
         删除某个流控策略的某个特殊配置。
         
@@ -5648,7 +5648,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_task_async(self, request):
-        """通过任务ID删除指定任务
+        r"""通过任务ID删除指定任务
 
         通过任务ID删除指定任务
         
@@ -5715,7 +5715,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def detach_api_from_plugin_async(self, request):
-        """解除绑定插件的API
+        r"""解除绑定插件的API
 
         解除绑定在插件上的API
         - 解绑及时生效
@@ -5785,7 +5785,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def detach_plugin_from_api_async(self, request):
-        """解除绑定API的插件
+        r"""解除绑定API的插件
 
         解除绑定在API上的插件
         - 解绑及时生效
@@ -5855,7 +5855,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def disassociate_app_quota_with_app_async(self, request):
-        """解除客户端配额和客户端应用的绑定
+        r"""解除客户端配额和客户端应用的绑定
 
         解除客户端配额和客户端应用的绑定
         
@@ -5924,7 +5924,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def disassociate_certificate_v2_async(self, request):
-        """删除域名证书
+        r"""删除域名证书
 
         如果域名证书不再需要或者已过期，则可以删除证书内容。
         
@@ -5995,7 +5995,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def disassociate_domain_v2_async(self, request):
-        """解绑域名
+        r"""解绑域名
 
         如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
         
@@ -6064,7 +6064,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def disassociate_signature_key_v2_async(self, request):
-        """解除绑定
+        r"""解除绑定
 
         解除API与签名密钥的绑定关系。
         
@@ -6131,7 +6131,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def download_products_async(self, request):
-        """导出产品
+        r"""导出产品
 
         导出产品
         
@@ -6199,7 +6199,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def export_mqs_instance_topic_async(self, request):
-        """导出Topic
+        r"""导出Topic
 
         导出Topic。
         
@@ -6266,7 +6266,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def import_mqs_instance_topic_async(self, request):
-        """导入Topic
+        r"""导入Topic
 
         导入Topic。
         
@@ -6339,7 +6339,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def install_multi_tasks_async(self, request):
-        """组合任务初始化
+        r"""组合任务初始化
 
         初始化组合任务，分配任务ID，初始化映射等
         
@@ -6406,7 +6406,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_api_attachable_plugins_async(self, request):
-        """查询可绑定当前API的插件
+        r"""查询可绑定当前API的插件
 
         查询可绑定当前API的插件信息。
         - 支持分页返回
@@ -6491,7 +6491,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_api_attached_plugins_async(self, request):
-        """查询API下绑定的插件
+        r"""查询API下绑定的插件
 
         查询指定API下绑定的插件信息
         - 用于查询指定API下已经绑定的插件列表信息
@@ -6579,7 +6579,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_signature_key_v2_async(self, request):
-        """查看签名密钥绑定的API列表
+        r"""查看签名密钥绑定的API列表
 
         查询某个签名密钥上已经绑定的API列表。
         
@@ -6658,7 +6658,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_not_bound_with_signature_key_v2_async(self, request):
-        """查看签名密钥未绑定的API列表
+        r"""查看签名密钥未绑定的API列表
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
         
@@ -6737,7 +6737,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_app_codes_v2_async(self, request):
-        """查询APP Code列表
+        r"""查询APP Code列表
 
         查询App Code列表。
         
@@ -6808,7 +6808,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_app_configs_v2_async(self, request):
-        """查询应用配置列表
+        r"""查询应用配置列表
 
         查询应用配置列表
         
@@ -6883,7 +6883,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_app_quota_bindable_apps_async(self, request):
-        """查询客户端配额可绑定的客户端应用列表
+        r"""查询客户端配额可绑定的客户端应用列表
 
         查询客户端配额可绑定的客户端应用列表。支持按客户端应用名称模糊搜索
         
@@ -6956,7 +6956,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_app_quota_bound_apps_async(self, request):
-        """查询客户端配额已绑定的客户端应用列表
+        r"""查询客户端配额已绑定的客户端应用列表
 
         查询客户端配额已绑定的客户端应用列表。支持按客户端应用名称模糊匹配
         
@@ -7029,7 +7029,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_app_quotas_async(self, request):
-        """获取客户端配额列表
+        r"""获取客户端配额列表
 
         获取客户端配额列表。支持根据名称模糊查询
         
@@ -7100,7 +7100,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apps_v2_async(self, request):
-        """查询APP列表
+        r"""查询APP列表
 
         查询APP列表。
         
@@ -7179,7 +7179,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_commands_async(self, request):
-        """查询命令
+        r"""查询命令
 
         查询命令
         
@@ -7254,7 +7254,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_custom_authorizers_v2_async(self, request):
-        """查询自定义认证列表
+        r"""查询自定义认证列表
 
         查询自定义认证列表
         
@@ -7329,7 +7329,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_datasource_columns_async(self, request):
-        """获取数据源中某个表中所有字段
+        r"""获取数据源中某个表中所有字段
 
         获取数据源中中某个表中所有字段
         
@@ -7402,7 +7402,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_datasource_tables_async(self, request):
-        """获取数据源中所有的表
+        r"""获取数据源中所有的表
 
         获取数据源中所有的表
         
@@ -7477,7 +7477,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_datasources_async(self, request):
-        """查询数据源
+        r"""查询数据源
 
         查询数据源
         
@@ -7558,7 +7558,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_destinations_async(self, request):
-        """查询目标数据源列表
+        r"""查询目标数据源列表
 
         查询目标数据源列表
         
@@ -7629,7 +7629,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_devices_async(self, request):
-        """查询设备
+        r"""查询设备
 
         查询设备
         
@@ -7720,7 +7720,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_devices_in_product_async(self, request):
-        """查询产品内设备数量
+        r"""查询产品内设备数量
 
         查询产品内设备数量
         
@@ -7787,7 +7787,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_environment_variables_v2_async(self, request):
-        """查询变量列表
+        r"""查询变量列表
 
         查询分组下的所有环境变量的列表。
         
@@ -7864,7 +7864,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_environments_v2_async(self, request):
-        """查询环境列表
+        r"""查询环境列表
 
         查询符合条件的环境列表。
         
@@ -7935,7 +7935,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_features_v2_async(self, request):
-        """查看实例特性列表
+        r"""查看实例特性列表
 
         查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。
         
@@ -8006,7 +8006,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_lately_api_statistics_v2_async(self, request):
-        """API指标统计值查询-最近一段时间
+        r"""API指标统计值查询-最近一段时间
 
         根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
@@ -8076,7 +8076,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_live_data_api_deployment_history_v2_async(self, request):
-        """查询后端API部署历史
+        r"""查询后端API部署历史
 
         在某个实例中查询后端API的部署记录。
         
@@ -8143,7 +8143,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_live_data_api_test_history_v2_async(self, request):
-        """查询后端API测试结果
+        r"""查询后端API测试结果
 
         在某个实例中查询后端API的测试结果。
         
@@ -8214,7 +8214,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_live_data_api_v2_async(self, request):
-        """查询后端API列表
+        r"""查询后端API列表
 
         获取某个实例下的所有后端API。
         
@@ -8295,7 +8295,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_live_data_data_sources_v2_async(self, request):
-        """查询自定义后端服务数据源列表
+        r"""查询自定义后端服务数据源列表
 
         查询自定义后端服务数据源列表。
         
@@ -8368,7 +8368,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_live_data_quota_v2_async(self, request):
-        """查询自定义后端服务配额
+        r"""查询自定义后端服务配额
 
         查询自定义后端服务配额。
         
@@ -8433,7 +8433,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_monitor_infos_async(self, request):
-        """任务监控信息列表查询
+        r"""任务监控信息列表查询
 
         查询所有任务的监控信息
         
@@ -8506,7 +8506,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_monitor_log_async(self, request):
-        """任务监控日志查询
+        r"""任务监控日志查询
 
         查询单个任务的所有日志信息
         
@@ -8581,7 +8581,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_mqs_instance_topics_async(self, request):
-        """查询Topic列表
+        r"""查询Topic列表
 
         查询Topic列表。
         
@@ -8656,7 +8656,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_notification_async(self, request):
-        """查询订阅管理信息
+        r"""查询订阅管理信息
 
         该接口用于查询指定应用订阅管理信息的数据
         
@@ -8727,7 +8727,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_plugin_attachable_apis_async(self, request):
-        """查询可绑定当前插件的API
+        r"""查询可绑定当前插件的API
 
         查询可绑定当前插件的API信息。
         - 支持分页返回
@@ -8813,7 +8813,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_plugin_attached_apis_async(self, request):
-        """查询插件下绑定的API
+        r"""查询插件下绑定的API
 
         查询指定插件下绑定的API信息
         - 用于查询指定插件下已经绑定的API列表信息
@@ -8900,7 +8900,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_plugins_async(self, request):
-        """查询插件列表
+        r"""查询插件列表
 
         查询一组符合条件的API网关插件详情。
         - 支持分页
@@ -8990,7 +8990,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_product_templates_async(self, request):
-        """查询产品模板
+        r"""查询产品模板
 
         查询产品模板
         
@@ -9071,7 +9071,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_product_topics_async(self, request):
-        """查询产品主题
+        r"""查询产品主题
 
         查询产品主题
         
@@ -9142,7 +9142,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_products_async(self, request):
-        """查询产品
+        r"""查询产品
 
         查询产品
         
@@ -9239,7 +9239,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_project_cofigs_v2_async(self, request):
-        """查询某个实例的租户配置列表
+        r"""查询某个实例的租户配置列表
 
         查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
         
@@ -9308,7 +9308,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_properties_async(self, request):
-        """查询属性
+        r"""查询属性
 
         查询属性
         
@@ -9383,7 +9383,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_request_properties_async(self, request):
-        """查询请求属性
+        r"""查询请求属性
 
         查询请求属性
         
@@ -9460,7 +9460,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_request_throttling_policy_v2_async(self, request):
-        """查询流控策略列表
+        r"""查询流控策略列表
 
         查询所有流控策略的信息。
         
@@ -9535,7 +9535,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_response_properties_async(self, request):
-        """查询响应属性
+        r"""查询响应属性
 
         查询响应属性
         
@@ -9612,7 +9612,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_rules_async(self, request):
-        """查询规则
+        r"""查询规则
 
         查询规则
         
@@ -9685,7 +9685,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_services_async(self, request):
-        """查询服务
+        r"""查询服务
 
         查询服务
         
@@ -9768,7 +9768,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_shadows_async(self, request):
-        """查询设备影子
+        r"""查询设备影子
 
         查询设备影子
         
@@ -9835,7 +9835,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_signature_keys_binded_to_api_v2_async(self, request):
-        """查看API绑定的签名密钥列表
+        r"""查看API绑定的签名密钥列表
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
         
@@ -9912,7 +9912,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_signature_keys_v2_async(self, request):
-        """查询签名密钥列表
+        r"""查询签名密钥列表
 
         查询所有签名密钥的信息。
         
@@ -9987,7 +9987,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_sources_async(self, request):
-        """查询源数据源列表
+        r"""查询源数据源列表
 
         查询源数据源列表
         
@@ -10058,7 +10058,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_special_throttling_configurations_v2_async(self, request):
-        """查看特殊设置列表
+        r"""查看特殊设置列表
 
         查看给流控策略设置的特殊配置。
         
@@ -10133,7 +10133,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_statistics_api_async(self, request):
-        """查询API指标统计值
+        r"""查询API指标统计值
 
         查询某个实例下的API统计信息。
         
@@ -10212,7 +10212,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_subsets_async(self, request):
-        """查询子设备
+        r"""查询子设备
 
         查询子设备
         
@@ -10289,7 +10289,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_tags_v2_async(self, request):
-        """查询标签列表
+        r"""查询标签列表
 
         查询标签列表
         
@@ -10358,7 +10358,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_tasks_async(self, request):
-        """查询任务列表
+        r"""查询任务列表
 
         查询任务列表
         
@@ -10451,7 +10451,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_topics_async(self, request):
-        """查询设备主题
+        r"""查询设备主题
 
         查询设备主题
         
@@ -10530,7 +10530,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def publish_live_data_api_v2_async(self, request):
-        """部署后端API
+        r"""部署后端API
 
         在某个实例中部署后端API。
         
@@ -10599,7 +10599,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def reset_authentication_async(self, request):
-        """重置设备鉴权信息
+        r"""重置设备鉴权信息
 
         重置设备鉴权信息
         
@@ -10668,7 +10668,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def reset_messages_async(self, request):
-        """重发消息
+        r"""重发消息
 
         重发消息。
         
@@ -10737,7 +10737,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def reset_multi_task_offset_async(self, request):
-        """重置组合任务进度
+        r"""重置组合任务进度
 
         重置组合任务进度
         
@@ -10806,7 +10806,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def reset_product_authentication_async(self, request):
-        """重置产品鉴权信息
+        r"""重置产品鉴权信息
 
         重置产品鉴权信息
         
@@ -10875,7 +10875,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def run_task_async(self, request):
-        """手工触发单个任务
+        r"""手工触发单个任务
 
         手工触发一次任务调度
         
@@ -10942,7 +10942,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def send_command_async(self, request):
-        """发送命令
+        r"""发送命令
 
         发送命令
         
@@ -11011,7 +11011,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_app_bound_app_quota_async(self, request):
-        """查询客户端应用关联的应用配额
+        r"""查询客户端应用关联的应用配额
 
         查看指定客户端应用关联的应用配额。
         
@@ -11078,7 +11078,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_app_quota_async(self, request):
-        """获取客户端配额详情
+        r"""获取客户端配额详情
 
         获取客户端配额详情
         
@@ -11145,7 +11145,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_authentication_async(self, request):
-        """查询设备鉴权信息
+        r"""查询设备鉴权信息
 
         查询设备鉴权信息
         
@@ -11212,7 +11212,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_command_async(self, request):
-        """查询命令详情
+        r"""查询命令详情
 
         查询命令详情
         
@@ -11281,7 +11281,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_dataource_detail_async(self, request):
-        """查询指定数据源
+        r"""查询指定数据源
 
         根据数据源id查询数据源
         
@@ -11348,7 +11348,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_app_acl_async(self, request):
-        """查看APP的访问控制详情
+        r"""查看APP的访问控制详情
 
         查看APP的访问控制详情。
         
@@ -11415,7 +11415,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_app_code_v2_async(self, request):
-        """查看APP Code详情
+        r"""查看APP Code详情
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
@@ -11484,7 +11484,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_app_config_v2_async(self, request):
-        """查看应用配置详情
+        r"""查看应用配置详情
 
         查看应用配置详情
         
@@ -11553,7 +11553,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_app_v2_async(self, request):
-        """查看APP详情
+        r"""查看APP详情
 
         查看指定APP的详细信息。
         
@@ -11620,7 +11620,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_custom_authorizers_v2_async(self, request):
-        """查看自定义认证详情
+        r"""查看自定义认证详情
 
         查看自定义认证详情
         
@@ -11687,7 +11687,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_domain_name_certificate_v2_async(self, request):
-        """查看域名证书
+        r"""查看域名证书
 
         查看域名下绑定的证书详情。
         
@@ -11758,7 +11758,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_environment_variable_v2_async(self, request):
-        """查看变量详情
+        r"""查看变量详情
 
         查看指定的环境变量的详情。
         
@@ -11825,7 +11825,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_instance_v2_async(self, request):
-        """查看实例详情
+        r"""查看实例详情
 
         查看实例详情
         
@@ -11890,7 +11890,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_request_throttling_policy_v2_async(self, request):
-        """查看流控策略详情
+        r"""查看流控策略详情
 
         查看指定流控策略的详细信息。
         
@@ -11957,7 +11957,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_device_async(self, request):
-        """查询设备详情
+        r"""查询设备详情
 
         查询设备详情
         
@@ -12024,7 +12024,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_device_group_async(self, request):
-        """查询设备分组详情
+        r"""查询设备分组详情
 
         获取设备分组及下一层分组信息
         
@@ -12091,7 +12091,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_device_group_tree_async(self, request):
-        """查询所有设备分组
+        r"""查询所有设备分组
 
         查询所有设备分组
         
@@ -12158,7 +12158,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_devices_in_group_async(self, request):
-        """查询设备分组内设备
+        r"""查询设备分组内设备
 
         查询设备分组内设备
         
@@ -12233,7 +12233,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_dispatches_async(self, request):
-        """查询调度计划
+        r"""查询调度计划
 
         查询调度计划
         
@@ -12300,7 +12300,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_live_data_api_v2_async(self, request):
-        """查询后端API详情
+        r"""查询后端API详情
 
         查询后端API的详细信息。
         
@@ -12367,7 +12367,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_mqs_instance_messages_async(self, request):
-        """查询消息
+        r"""查询消息
 
         查询消息的偏移量和消息内容。
         先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
@@ -12457,7 +12457,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_mqs_instance_topic_access_policy_async(self, request):
-        """查询Topic权限
+        r"""查询Topic权限
 
         查询Topic权限。
         
@@ -12528,7 +12528,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_plugin_async(self, request):
-        """查询插件详情
+        r"""查询插件详情
 
         查询插件详情。
         
@@ -12595,7 +12595,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_product_async(self, request):
-        """查询产品详情
+        r"""查询产品详情
 
         查询产品详情
         
@@ -12662,7 +12662,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_product_authentication_async(self, request):
-        """查询产品鉴权信息
+        r"""查询产品鉴权信息
 
         查询产品鉴权信息
         
@@ -12729,7 +12729,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_product_template_async(self, request):
-        """查询产品模板详情
+        r"""查询产品模板详情
 
         查询产品模板详情
         
@@ -12796,7 +12796,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_property_async(self, request):
-        """查询服务属性详情
+        r"""查询服务属性详情
 
         查询服务属性详情
         
@@ -12865,7 +12865,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_request_property_async(self, request):
-        """查询请求属性详情
+        r"""查询请求属性详情
 
         查询请求属性详情
         
@@ -12936,7 +12936,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_response_property_async(self, request):
-        """查询响应属性详情
+        r"""查询响应属性详情
 
         查询响应属性详情
         
@@ -13007,7 +13007,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_restriction_of_instance_v2_async(self, request):
-        """查看实例约束信息
+        r"""查看实例约束信息
 
         查看实例约束信息
         
@@ -13072,7 +13072,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_rule_async(self, request):
-        """查询规则详情
+        r"""查询规则详情
 
         查询规则详情
         
@@ -13139,7 +13139,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_service_async(self, request):
-        """查询服务详情
+        r"""查询服务详情
 
         查询服务详情
         
@@ -13206,7 +13206,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_task_async(self, request):
-        """通过任务ID查询指定任务的信息
+        r"""通过任务ID查询指定任务的信息
 
         通过任务ID查询指定任务的信息
         
@@ -13273,7 +13273,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def start_test_datasource_async(self, request):
-        """测试数据源连通性
+        r"""测试数据源连通性
 
         测试数据源连通性
         
@@ -13342,7 +13342,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def stop_task_async(self, request):
-        """手工停止当前执行的任务
+        r"""手工停止当前执行的任务
 
         手工停止当前执行的任务
         
@@ -13409,7 +13409,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def unpublish_live_data_api_v2_async(self, request):
-        """撤销后端API
+        r"""撤销后端API
 
         在某个实例中取消部署后端API。
         
@@ -13476,7 +13476,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_app_acl_async(self, request):
-        """设置APP的访问控制
+        r"""设置APP的访问控制
 
         设置客户端配置的访问控制。
         
@@ -13545,7 +13545,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_app_config_v2_async(self, request):
-        """修改应用配置
+        r"""修改应用配置
 
         修改应用配置
         
@@ -13616,7 +13616,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_app_quota_async(self, request):
-        """修改客户端配额
+        r"""修改客户端配额
 
         修改客户端配额
         
@@ -13685,7 +13685,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_command_async(self, request):
-        """修改命令
+        r"""修改命令
 
         修改命令
         
@@ -13756,7 +13756,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_custom_authorizer_v2_async(self, request):
-        """修改自定义认证
+        r"""修改自定义认证
 
         修改自定义认证
         
@@ -13825,7 +13825,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_datasource_info_async(self, request):
-        """修改数据源
+        r"""修改数据源
 
         修改数据源
         
@@ -13894,7 +13894,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_device_async(self, request):
-        """修改设备
+        r"""修改设备
 
         修改设备信息
         
@@ -13963,7 +13963,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_device_group_async(self, request):
-        """修改设备分组
+        r"""修改设备分组
 
         修改设备分组
         
@@ -14032,7 +14032,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_dispatches_async(self, request):
-        """修改调度计划
+        r"""修改调度计划
 
         通过任务ID和调度ID修改调度计划
         
@@ -14103,7 +14103,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_domain_v2_async(self, request):
-        """修改域名
+        r"""修改域名
 
         修改绑定的域名所对应的配置信息。
         
@@ -14174,7 +14174,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_environment_v2_async(self, request):
-        """修改环境
+        r"""修改环境
 
         修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
         
@@ -14243,7 +14243,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_environment_variable_v2_async(self, request):
-        """修改变量
+        r"""修改变量
 
         修改环境变量。环境变量引用位置为api的后端服务地址时，修改对应环境变量会将使用该变量的所有api重新发布。
         
@@ -14312,7 +14312,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_live_data_api_v2_async(self, request):
-        """修改后端API
+        r"""修改后端API
 
         在某个实例中更新后端API的参数。
         
@@ -14381,7 +14381,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_mqs_instance_topic_async(self, request):
-        """修改Topic
+        r"""修改Topic
 
         修改Topic。
         
@@ -14448,7 +14448,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_multi_tasks_async(self, request):
-        """修改组合任务
+        r"""修改组合任务
 
         修改组合任务
         
@@ -14517,7 +14517,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_notification_async(self, request):
-        """修改订阅管理
+        r"""修改订阅管理
 
         该接口用于修改指定的订阅管理
         
@@ -14586,7 +14586,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_plugin_async(self, request):
-        """修改插件
+        r"""修改插件
 
         修改插件信息。
         - 插件不允许重名
@@ -14657,7 +14657,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_product_async(self, request):
-        """修改产品信息
+        r"""修改产品信息
 
         修改产品信息
         
@@ -14726,7 +14726,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_product_template_async(self, request):
-        """修改产品模板
+        r"""修改产品模板
 
         修改产品模板
         
@@ -14795,7 +14795,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_product_topic_async(self, request):
-        """更新产品主题
+        r"""更新产品主题
 
         更新产品主题
         
@@ -14866,7 +14866,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_property_async(self, request):
-        """修改服务属性
+        r"""修改服务属性
 
         修改服务属性
         
@@ -14937,7 +14937,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_request_property_async(self, request):
-        """修改请求属性
+        r"""修改请求属性
 
         修改请求属性
         
@@ -15010,7 +15010,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_request_throttling_policy_v2_async(self, request):
-        """修改流控策略
+        r"""修改流控策略
 
         修改指定流控策略的详细信息。
         
@@ -15079,7 +15079,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_response_property_async(self, request):
-        """修改响应属性
+        r"""修改响应属性
 
         修改响应属性
         
@@ -15152,7 +15152,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_rule_async(self, request):
-        """修改规则
+        r"""修改规则
 
         修改规则
         
@@ -15221,7 +15221,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_service_async(self, request):
-        """修改服务
+        r"""修改服务
 
         修改服务
         
@@ -15290,7 +15290,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_signature_key_v2_async(self, request):
-        """修改签名密钥
+        r"""修改签名密钥
 
         修改指定签名密钥的详细信息。
         
@@ -15359,7 +15359,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_special_throttling_configuration_v2_async(self, request):
-        """修改特殊设置
+        r"""修改特殊设置
 
         修改某个流控策略下的某个特殊设置。
         
@@ -15430,7 +15430,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_task_async(self, request):
-        """更新普通任务
+        r"""更新普通任务
 
         更新普通任务
         
@@ -15499,7 +15499,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_topic_access_policy_async(self, request):
-        """更新Topic权限
+        r"""更新Topic权限
 
         更新Topic权限。
         
@@ -15566,7 +15566,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def upload_product_async(self, request):
-        """导入产品
+        r"""导入产品
 
         导入产品
         
@@ -15635,7 +15635,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_delete_acl_v2_async(self, request):
-        """批量删除ACL策略
+        r"""批量删除ACL策略
 
         批量删除指定的多个ACL策略。
         
@@ -15706,7 +15706,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_acl_strategy_v2_async(self, request):
-        """创建ACL策略
+        r"""创建ACL策略
 
         增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)
         
@@ -15773,7 +15773,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_acl_v2_async(self, request):
-        """删除ACL策略
+        r"""删除ACL策略
 
         删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
         
@@ -15840,7 +15840,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_acl_strategies_v2_async(self, request):
-        """查看ACL策略列表
+        r"""查看ACL策略列表
 
         查询所有的ACL策略列表。
         
@@ -15919,7 +15919,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_acl_policy_v2_async(self, request):
-        """查看ACL策略详情
+        r"""查看ACL策略详情
 
         查询指定ACL策略的详情。
         
@@ -15986,7 +15986,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_acl_strategy_v2_async(self, request):
-        """修改ACL策略
+        r"""修改ACL策略
 
         修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
         
@@ -16055,7 +16055,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def associate_request_throttling_policy_v2_async(self, request):
-        """绑定流控策略
+        r"""绑定流控策略
 
         将流控策略应用于API，则所有对该API的访问将会受到该流控策略的限制。
         
@@ -16128,7 +16128,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_disassociate_throttling_policy_v2_async(self, request):
-        """批量解绑流控策略
+        r"""批量解绑流控策略
 
         批量解除API与流控策略的绑定关系
         
@@ -16197,7 +16197,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_publish_or_offline_api_v2_async(self, request):
-        """批量发布或下线API
+        r"""批量发布或下线API
 
         将多个API发布到一个指定的环境，或将多个API从指定的环境下线。
         
@@ -16268,7 +16268,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def change_api_version_v2_async(self, request):
-        """切换API版本
+        r"""切换API版本
 
         API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。
         
@@ -16339,7 +16339,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_api_groups_v2_async(self, request):
-        """校验API分组名称是否存在
+        r"""校验API分组名称是否存在
 
         校验API分组名称是否存在。
         
@@ -16406,7 +16406,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_apis_v2_async(self, request):
-        """校验API定义
+        r"""校验API定义
 
         校验API定义。校验API的路径或名称是否已存在
         
@@ -16473,7 +16473,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_api_group_v2_async(self, request):
-        """创建API分组
+        r"""创建API分组
 
         API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。
         
@@ -16540,7 +16540,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_api_v2_async(self, request):
-        """创建API
+        r"""创建API
 
         添加一个API，API即一个服务接口，具体的服务能力。
         API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了[ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)如何去访问真实的后端服务。API的真实后端服务目前支持的类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)MOCK。
@@ -16608,7 +16608,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_or_delete_publish_record_for_api_v2_async(self, request):
-        """发布或下线API
+        r"""发布或下线API
 
         对API进行发布或下线。
         
@@ -16679,7 +16679,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def debug_api_v2_async(self, request):
-        """调试API
+        r"""调试API
 
         调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
         
@@ -16748,7 +16748,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_api_by_version_id_v2_async(self, request):
-        """根据版本编号下线API
+        r"""根据版本编号下线API
 
         对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
         
@@ -16815,7 +16815,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_api_group_v2_async(self, request):
-        """删除API分组
+        r"""删除API分组
 
         删除指定的API分组。
         
@@ -16886,7 +16886,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_api_v2_async(self, request):
-        """删除API
+        r"""删除API
 
         删除指定的API。
         
@@ -16955,7 +16955,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def disassociate_request_throttling_policy_v2_async(self, request):
-        """解除API与流控策略的绑定关系
+        r"""解除API与流控策略的绑定关系
 
         解除API与流控策略的绑定关系。
         
@@ -17022,7 +17022,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_api_groups_v2_async(self, request):
-        """查询分组列表
+        r"""查询分组列表
 
         查询API分组列表。
         
@@ -17103,7 +17103,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_api_runtime_definition_v2_async(self, request):
-        """查询API运行时定义
+        r"""查询API运行时定义
 
         查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。
         
@@ -17178,7 +17178,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_api_version_detail_v2_async(self, request):
-        """查看版本详情
+        r"""查看版本详情
 
         查询某个指定的版本详情。
         
@@ -17245,7 +17245,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_api_versions_v2_async(self, request):
-        """查询API历史版本列表
+        r"""查询API历史版本列表
 
         查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
         
@@ -17320,7 +17320,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_request_throttling_policy_v2_async(self, request):
-        """查看流控策略绑定的API列表
+        r"""查看流控策略绑定的API列表
 
         查询某个流控策略上已经绑定的API列表。
         
@@ -17399,7 +17399,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_request_throttling_policy_v2_async(self, request):
-        """查看流控策略未绑定的API列表
+        r"""查看流控策略未绑定的API列表
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
         
@@ -17478,7 +17478,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_v2_async(self, request):
-        """查询API列表
+        r"""查询API列表
 
         查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息。
         
@@ -17575,7 +17575,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_request_throttling_policies_binded_to_api_v2_async(self, request):
-        """查看API绑定的流控策略列表
+        r"""查看API绑定的流控策略列表
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
         
@@ -17652,7 +17652,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_api_group_v2_async(self, request):
-        """查询分组详情
+        r"""查询分组详情
 
         查询指定分组的详细信息。
         
@@ -17719,7 +17719,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_api_v2_async(self, request):
-        """查询API详情
+        r"""查询API详情
 
         查看指定的API的详细信息。
         
@@ -17786,7 +17786,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_api_group_v2_async(self, request):
-        """修改API分组
+        r"""修改API分组
 
         修改API分组属性。其中name和remark可修改，其他属性不可修改。
         
@@ -17855,7 +17855,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_api_v2_async(self, request):
-        """修改API
+        r"""修改API
 
         修改指定API的信息，包括后端服务信息。
         
@@ -17924,7 +17924,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_delete_api_acl_binding_v2_async(self, request):
-        """批量解除API与ACL策略的绑定
+        r"""批量解除API与ACL策略的绑定
 
         批量解除API与ACL策略的绑定
         
@@ -17993,7 +17993,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_api_acl_binding_v2_async(self, request):
-        """将API与ACL策略进行绑定
+        r"""将API与ACL策略进行绑定
 
         将API与ACL策略进行绑定。
         
@@ -18062,7 +18062,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_api_acl_binding_v2_async(self, request):
-        """解除API与ACL策略的绑定
+        r"""解除API与ACL策略的绑定
 
         解除某条API与ACL策略的绑定关系
         
@@ -18129,7 +18129,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_acl_policy_binded_to_api_v2_async(self, request):
-        """查看API绑定的ACL策略列表
+        r"""查看API绑定的ACL策略列表
 
         查看API绑定的ACL策略列表
         
@@ -18208,7 +18208,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_acl_policy_v2_async(self, request):
-        """查看ACL策略绑定的API列表
+        r"""查看ACL策略绑定的API列表
 
         查看ACL策略绑定的API列表
         
@@ -18285,7 +18285,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_acl_policy_v2_async(self, request):
-        """查看ACL策略未绑定的API列表
+        r"""查看ACL策略未绑定的API列表
 
         查看ACL策略未绑定的API列表，需要API已发布
         
@@ -18364,7 +18364,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def canceling_authorization_v2_async(self, request):
-        """解除授权
+        r"""解除授权
 
         解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
         
@@ -18431,7 +18431,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_authorizing_apps_v2_async(self, request):
-        """APP授权
+        r"""APP授权
 
         APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。
         
@@ -18498,7 +18498,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_app_v2_async(self, request):
-        """查看APP已绑定的API列表
+        r"""查看APP已绑定的API列表
 
         查询APP已经绑定的API列表。
         
@@ -18579,7 +18579,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_app_v2_async(self, request):
-        """查看APP未绑定的API列表
+        r"""查看APP未绑定的API列表
 
         查询指定环境上某个APP未绑定的API列表，包括自有API和从云市场购买的API。
         
@@ -18658,7 +18658,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_apps_binded_to_api_v2_async(self, request):
-        """查看API已绑定的APP列表
+        r"""查看API已绑定的APP列表
 
         查询API绑定的APP列表。
         
@@ -18735,7 +18735,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_duplicate_apis_for_app_v2_async(self, request):
-        """查看APP下路径冲突的api列表
+        r"""查看APP下路径冲突的api列表
 
         查询指定APP下路径冲突的api列表。
         
@@ -18802,7 +18802,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def add_user_to_app_async(self, request):
-        """设置用户成员
+        r"""设置用户成员
 
         - 设置应用的用户成员，为空数组时会清空已有应用成员列表
         - 设置动作为全量更新非增量更新，应用的成员列表都会替换为当次请求的应用成员列表
@@ -18872,7 +18872,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_auth_users_of_app_async(self, request):
-        """查询用户成员列表
+        r"""查询用户成员列表
 
         查询用户成列表
         
@@ -18941,7 +18941,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_can_auth_users_of_app_async(self, request):
-        """查询候选用户成员
+        r"""查询候选用户成员
 
         查询应用的候选用户成员列表,会过滤掉异常状态用户
         
@@ -19010,7 +19010,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_roma_app_details_async(self, request):
-        """查询应用详情
+        r"""查询应用详情
 
         查询应用详情
         
@@ -19077,7 +19077,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_roma_app_secret_async(self, request):
-        """查询应用密钥
+        r"""查询应用密钥
 
         查询应用密钥
         
@@ -19144,7 +19144,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_roma_app_async(self, request):
-        """创建应用
+        r"""创建应用
 
         创建应用
         
@@ -19211,7 +19211,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_roma_app_async(self, request):
-        """删除应用
+        r"""删除应用
 
         删除单个应用
         
@@ -19278,7 +19278,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_roma_app_async(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         查询应用列表，支持条件查询，所有条件是并且的关系
         
@@ -19357,7 +19357,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def reset_roma_app_secret_async(self, request):
-        """重置应用密钥
+        r"""重置应用密钥
 
         重置应用密钥
         
@@ -19426,7 +19426,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_roma_app_async(self, request):
-        """更新应用
+        r"""更新应用
 
         更新应用
         
@@ -19495,7 +19495,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def validate_roma_app_async(self, request):
-        """校验应用是否存在
+        r"""校验应用是否存在
 
         校验指定条件的应用是否存在
         
@@ -19566,7 +19566,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_asset_job_status_async(self, request):
-        """查询作业进度
+        r"""查询作业进度
 
         查询作业进度
         
@@ -19633,7 +19633,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_asset_async(self, request):
-        """批量删除资产
+        r"""批量删除资产
 
         批量删除资产
         - 创建批量删除指定条件的资产的作业任务
@@ -19703,7 +19703,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def download_asset_archive_async(self, request):
-        """下载资产包
+        r"""下载资产包
 
         - 导出作业执行成功后，通过该接口获取导出作业产生的资产包，仅能下载一次
         - 可先压缩后存在数据库，下载后删除
@@ -19771,7 +19771,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def export_asset_async(self, request):
-        """批量导出资产
+        r"""批量导出资产
 
         批量导出资产
         - 创建批量导出指定条件的资产的作业任务
@@ -19841,7 +19841,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def import_asset_async(self, request):
-        """导入资产
+        r"""导入资产
 
         - 创建导入资产作业任务，资产版本和具体哪些资产从资产内容里读取
         - 最大支持100个应用和任务
@@ -19912,7 +19912,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_dictionary_async(self, request):
-        """查询字典详情
+        r"""查询字典详情
 
         查询字典详情,
         
@@ -19979,7 +19979,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_dictionary_async(self, request):
-        """创建字典
+        r"""创建字典
 
         创建字典
         
@@ -20046,7 +20046,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_dictionary_async(self, request):
-        """删除字典
+        r"""删除字典
 
         删除单个字典，会同时删除该字典的所有子字典
         
@@ -20113,7 +20113,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_dictionary_async(self, request):
-        """查询字典列表
+        r"""查询字典列表
 
         查询字典列表
         
@@ -20188,7 +20188,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_dictionary_async(self, request):
-        """更新字典
+        r"""更新字典
 
         更新字典
         
@@ -20257,7 +20257,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def validate_dictionary_async(self, request):
-        """校验字典是否存在
+        r"""校验字典是否存在
 
         校验指定条件的字典是否存在，支持字典名称和字典编码
         
@@ -20326,7 +20326,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def check_roma_instance_list_v2_async(self, request):
-        """查询实例列表
+        r"""查询实例列表
 
         获取符合条件的服务实例列表。
         
@@ -20395,7 +20395,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_mqs_instance_async(self, request):
-        """查询MQS实例列表
+        r"""查询MQS实例列表
 
         查询MQS实例列表。
         
@@ -20460,7 +20460,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_mqs_instance_async(self, request):
-        """查询MQS实例详情
+        r"""查询MQS实例详情
 
         查询指定MQS实例详情。
         
@@ -20525,7 +20525,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def export_api_definitions_v2_async(self, request):
-        """导出API
+        r"""导出API
 
         导出分组下API的定义信息，导出文件内容符合swagger标准规范。
         
@@ -20592,7 +20592,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def export_live_data_api_definitions_v2_async(self, request):
-        """导出自定义后端API
+        r"""导出自定义后端API
 
         导出自定义后端API，导出文件内容符合swagger标准规范。
         
@@ -20659,7 +20659,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def import_api_definitions_v2_async(self, request):
-        """导入API
+        r"""导入API
 
         导入API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：前端API的Swagger扩展定义”章节。
         
@@ -20742,7 +20742,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def import_live_data_api_definitions_v2_async(self, request):
-        """导入自定义后端API
+        r"""导入自定义后端API
 
         导入自定义后端API。导入文件内容需要符合swagger标准规范，自定义扩展字段请参考用户指南的“附录：后端API的Swagger扩展定义”章节
         
@@ -20815,7 +20815,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_associate_certs_v2_async(self, request):
-        """域名绑定SSL证书
+        r"""域名绑定SSL证书
 
         域名绑定SSL证书。[目前暂时仅支持单个绑定,请求体当中的certificate_ids里面有且只能有一个证书ID](tag:hws,hws_hk,fcs,g42,Site)
         
@@ -20886,7 +20886,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_associate_domains_v2_async(self, request):
-        """SSL证书绑定域名
+        r"""SSL证书绑定域名
 
         SSL证书绑定域名
         
@@ -20953,7 +20953,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_disassociate_certs_v2_async(self, request):
-        """域名解绑SSL证书
+        r"""域名解绑SSL证书
 
         域名解绑SSL证书。目前暂时仅支持单个解绑,请求体当中的certificate_ids里面有且只能有一个证书ID
         
@@ -21024,7 +21024,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_disassociate_domains_v2_async(self, request):
-        """SSL证书解绑域名
+        r"""SSL证书解绑域名
 
         SSL证书解绑域名
         
@@ -21091,7 +21091,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_certificate_v2_async(self, request):
-        """创建SSL证书
+        r"""创建SSL证书
 
         创建SSL证书
         
@@ -21156,7 +21156,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_certificate_v2_async(self, request):
-        """删除SSL证书
+        r"""删除SSL证书
 
         删除ssl证书接口,删除时只有没有关联域名的证书才能被删除
         
@@ -21221,7 +21221,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_attached_domains_v2_async(self, request):
-        """获取SSL证书已绑定域名列表
+        r"""获取SSL证书已绑定域名列表
 
         获取SSL证书已绑定域名列表。
         
@@ -21292,7 +21292,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_certificates_v2_async(self, request):
-        """获取SSL证书列表
+        r"""获取SSL证书列表
 
         获取SSL证书列表。
         
@@ -21371,7 +21371,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_certificate_v2_async(self, request):
-        """查看证书详情
+        r"""查看证书详情
 
         查看证书详情
         
@@ -21436,7 +21436,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_certificate_v2_async(self, request):
-        """修改SSL证书
+        r"""修改SSL证书
 
         修改SSL证书
         
@@ -21503,7 +21503,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def adding_backend_instances_v2_async(self, request):
-        """添加后端实例
+        r"""添加后端实例
 
         为指定的VPC通道添加后端实例
         
@@ -21574,7 +21574,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_disable_members_async(self, request):
-        """批量修改后端服务器状态不可用
+        r"""批量修改后端服务器状态不可用
 
         批量修改后端服务器状态不可用。
         
@@ -21643,7 +21643,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def batch_enable_members_async(self, request):
-        """批量修改后端服务器状态可用
+        r"""批量修改后端服务器状态可用
 
         批量修改后端服务器状态可用。
         
@@ -21712,7 +21712,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_member_group_async(self, request):
-        """添加VPC通道后端服务器组
+        r"""添加VPC通道后端服务器组
 
         在服务集成中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
         
@@ -21783,7 +21783,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_vpc_channel_v2_async(self, request):
-        """创建VPC通道
+        r"""创建VPC通道
 
         在服务集成中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便服务集成直接访问私有VPC资源。
         &gt; 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
@@ -21851,7 +21851,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_backend_instance_v2_async(self, request):
-        """删除后端实例
+        r"""删除后端实例
 
         删除指定VPC通道中的后端实例
         
@@ -21920,7 +21920,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_member_group_async(self, request):
-        """删除VPC通道后端服务器组
+        r"""删除VPC通道后端服务器组
 
         删除指定的VPC通道后端服务器组
         
@@ -21989,7 +21989,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def delete_vpc_channel_v2_async(self, request):
-        """删除VPC通道
+        r"""删除VPC通道
 
         删除指定的VPC通道
         
@@ -22056,7 +22056,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_backend_instances_v2_async(self, request):
-        """查看后端实例列表
+        r"""查看后端实例列表
 
         查看指定VPC通道的后端实例列表。
         
@@ -22135,7 +22135,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_member_groups_async(self, request):
-        """查询VPC通道后端云服务组列表
+        r"""查询VPC通道后端云服务组列表
 
         查询VPC通道后端云服务组列表
         
@@ -22212,7 +22212,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_vpc_channels_v2_async(self, request):
-        """查询VPC通道列表
+        r"""查询VPC通道列表
 
         查看VPC通道列表
         
@@ -22297,7 +22297,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_member_group_async(self, request):
-        """查看VPC通道后端服务器组详情
+        r"""查看VPC通道后端服务器组详情
 
         查看指定的VPC通道后端服务器组详情
         
@@ -22366,7 +22366,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def show_details_of_vpc_channel_v2_async(self, request):
-        """查看VPC通道详情
+        r"""查看VPC通道详情
 
         查看指定的VPC通道详情
         
@@ -22433,7 +22433,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_backend_instances_v2_async(self, request):
-        """修改后端实例
+        r"""修改后端实例
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
         
@@ -22502,7 +22502,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_health_check_async(self, request):
-        """修改VPC通道健康检查
+        r"""修改VPC通道健康检查
 
         修改VPC通道健康检查。
         
@@ -22571,7 +22571,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_member_group_async(self, request):
-        """修改VPC通道后端服务器组
+        r"""修改VPC通道后端服务器组
 
         更新指定VPC通道后端服务器组
         
@@ -22642,7 +22642,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_vpc_channel_v2_async(self, request):
-        """修改VPC通道
+        r"""修改VPC通道
 
         更新指定VPC通道的参数
         
@@ -22715,7 +22715,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_project_vpc_channel_async(self, request):
-        """项目下创建VPC通道
+        r"""项目下创建VPC通道
 
         创建相同的VPC通道关联到多个实例。同一个项目下VPC通道名称不可重复。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
@@ -22780,7 +22780,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def create_project_vpc_channel_syncs_async(self, request):
-        """项目下同步VPC通道
+        r"""项目下同步VPC通道
 
         同步VPC通道到多个实例。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         
@@ -22845,7 +22845,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def list_project_vpc_channels_v2_async(self, request):
-        """查询项目下所有实例的VPC通道列表
+        r"""查询项目下所有实例的VPC通道列表
 
         查询项目下所有实例的VPC通道列表
         
@@ -22928,7 +22928,7 @@ class RomaAsyncClient(Client):
         return http_info
 
     def update_project_vpc_channel_async(self, request):
-        """项目下批量修改VPC通道
+        r"""项目下批量修改VPC通道
 
         项目下根据VPC通道名称批量修改多个多个实例下的VPC通道。若实例下不存在该VPC通道则创建。注意：实例特性vpc_name_modifiable配置为off时才可使用。
         

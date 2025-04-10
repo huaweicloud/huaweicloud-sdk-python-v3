@@ -35,7 +35,7 @@ class ReadConfigResp:
     }
 
     def __init__(self, image_read_configs=None, ppt_read_configs=None, read_type=None, read_content=None, character_position=None, read_content_paragragh_times=None):
-        """ReadConfigResp
+        r"""ReadConfigResp
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ReadConfigResp:
 
     @property
     def image_read_configs(self):
-        """Gets the image_read_configs of this ReadConfigResp.
+        r"""Gets the image_read_configs of this ReadConfigResp.
 
         图片播报配置
 
@@ -87,7 +87,7 @@ class ReadConfigResp:
 
     @image_read_configs.setter
     def image_read_configs(self, image_read_configs):
-        """Sets the image_read_configs of this ReadConfigResp.
+        r"""Sets the image_read_configs of this ReadConfigResp.
 
         图片播报配置
 
@@ -98,7 +98,7 @@ class ReadConfigResp:
 
     @property
     def ppt_read_configs(self):
-        """Gets the ppt_read_configs of this ReadConfigResp.
+        r"""Gets the ppt_read_configs of this ReadConfigResp.
 
         ppt播报配置
 
@@ -109,7 +109,7 @@ class ReadConfigResp:
 
     @ppt_read_configs.setter
     def ppt_read_configs(self, ppt_read_configs):
-        """Sets the ppt_read_configs of this ReadConfigResp.
+        r"""Sets the ppt_read_configs of this ReadConfigResp.
 
         ppt播报配置
 
@@ -120,7 +120,7 @@ class ReadConfigResp:
 
     @property
     def read_type(self):
-        """Gets the read_type of this ReadConfigResp.
+        r"""Gets the read_type of this ReadConfigResp.
 
         播报选项： 0：纯文本播报 1：图片播报 2：ppt播报 默认：0 配置哪项会校验哪项是否为空 
 
@@ -131,7 +131,7 @@ class ReadConfigResp:
 
     @read_type.setter
     def read_type(self, read_type):
-        """Sets the read_type of this ReadConfigResp.
+        r"""Sets the read_type of this ReadConfigResp.
 
         播报选项： 0：纯文本播报 1：图片播报 2：ppt播报 默认：0 配置哪项会校验哪项是否为空 
 
@@ -142,7 +142,7 @@ class ReadConfigResp:
 
     @property
     def read_content(self):
-        """Gets the read_content of this ReadConfigResp.
+        r"""Gets the read_content of this ReadConfigResp.
 
         纯文本播报内容。 换行符会按400ms的静音进行分割
 
@@ -153,7 +153,7 @@ class ReadConfigResp:
 
     @read_content.setter
     def read_content(self, read_content):
-        """Sets the read_content of this ReadConfigResp.
+        r"""Sets the read_content of this ReadConfigResp.
 
         纯文本播报内容。 换行符会按400ms的静音进行分割
 
@@ -164,7 +164,7 @@ class ReadConfigResp:
 
     @property
     def character_position(self):
-        """Gets the character_position of this ReadConfigResp.
+        r"""Gets the character_position of this ReadConfigResp.
 
         0：左 1：中 2：右
 
@@ -175,7 +175,7 @@ class ReadConfigResp:
 
     @character_position.setter
     def character_position(self, character_position):
-        """Sets the character_position of this ReadConfigResp.
+        r"""Sets the character_position of this ReadConfigResp.
 
         0：左 1：中 2：右
 
@@ -186,7 +186,7 @@ class ReadConfigResp:
 
     @property
     def read_content_paragragh_times(self):
-        """Gets the read_content_paragragh_times of this ReadConfigResp.
+        r"""Gets the read_content_paragragh_times of this ReadConfigResp.
 
         read_content 每段播报时间
 
@@ -197,7 +197,7 @@ class ReadConfigResp:
 
     @read_content_paragragh_times.setter
     def read_content_paragragh_times(self, read_content_paragragh_times):
-        """Sets the read_content_paragragh_times of this ReadConfigResp.
+        r"""Sets the read_content_paragragh_times of this ReadConfigResp.
 
         read_content 每段播报时间
 

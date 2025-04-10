@@ -27,7 +27,7 @@ class BatchDeleteDevicesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchDeleteDevicesRequest
+        r"""BatchDeleteDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteDevicesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeleteDevicesRequest.
+        r"""Gets the instance_id of this BatchDeleteDevicesRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class BatchDeleteDevicesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeleteDevicesRequest.
+        r"""Sets the instance_id of this BatchDeleteDevicesRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class BatchDeleteDevicesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteDevicesRequest.
+        r"""Gets the body of this BatchDeleteDevicesRequest.
 
         :return: The body of this BatchDeleteDevicesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteDevicesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteDevicesRequest.
+        r"""Sets the body of this BatchDeleteDevicesRequest.
 
         :param body: The body of this BatchDeleteDevicesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequestBody`

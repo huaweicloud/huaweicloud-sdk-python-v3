@@ -24,7 +24,7 @@ class EnableTrustedServiceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableTrustedServiceResponse
+        r"""EnableTrustedServiceResponse
 
         The model defined in huaweicloud sdk
 

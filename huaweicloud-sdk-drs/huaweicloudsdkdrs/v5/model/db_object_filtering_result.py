@@ -43,7 +43,7 @@ class DbObjectFilteringResult:
     }
 
     def __init__(self, db_name=None, schema_name=None, table_name=None, is_success=None, message=None, source=None, target_result=None, source_result=None, target_message=None, source_message=None):
-        """DbObjectFilteringResult
+        r"""DbObjectFilteringResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class DbObjectFilteringResult:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DbObjectFilteringResult.
+        r"""Gets the db_name of this DbObjectFilteringResult.
 
         数据库库名。
 
@@ -117,7 +117,7 @@ class DbObjectFilteringResult:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DbObjectFilteringResult.
+        r"""Sets the db_name of this DbObjectFilteringResult.
 
         数据库库名。
 
@@ -128,7 +128,7 @@ class DbObjectFilteringResult:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this DbObjectFilteringResult.
+        r"""Gets the schema_name of this DbObjectFilteringResult.
 
         数据库Schema名称。
 
@@ -139,7 +139,7 @@ class DbObjectFilteringResult:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this DbObjectFilteringResult.
+        r"""Sets the schema_name of this DbObjectFilteringResult.
 
         数据库Schema名称。
 
@@ -150,7 +150,7 @@ class DbObjectFilteringResult:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DbObjectFilteringResult.
+        r"""Gets the table_name of this DbObjectFilteringResult.
 
         数据库表名称。
 
@@ -161,7 +161,7 @@ class DbObjectFilteringResult:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DbObjectFilteringResult.
+        r"""Sets the table_name of this DbObjectFilteringResult.
 
         数据库表名称。
 
@@ -172,7 +172,7 @@ class DbObjectFilteringResult:
 
     @property
     def is_success(self):
-        """Gets the is_success of this DbObjectFilteringResult.
+        r"""Gets the is_success of this DbObjectFilteringResult.
 
         数据过滤校验结果。
 
@@ -183,7 +183,7 @@ class DbObjectFilteringResult:
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this DbObjectFilteringResult.
+        r"""Sets the is_success of this DbObjectFilteringResult.
 
         数据过滤校验结果。
 
@@ -194,7 +194,7 @@ class DbObjectFilteringResult:
 
     @property
     def message(self):
-        """Gets the message of this DbObjectFilteringResult.
+        r"""Gets the message of this DbObjectFilteringResult.
 
         当数据过滤校验结果是false，返回校验失败的原因。
 
@@ -205,7 +205,7 @@ class DbObjectFilteringResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DbObjectFilteringResult.
+        r"""Sets the message of this DbObjectFilteringResult.
 
         当数据过滤校验结果是false，返回校验失败的原因。
 
@@ -216,7 +216,7 @@ class DbObjectFilteringResult:
 
     @property
     def source(self):
-        """Gets the source of this DbObjectFilteringResult.
+        r"""Gets the source of this DbObjectFilteringResult.
 
         对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
 
@@ -227,7 +227,7 @@ class DbObjectFilteringResult:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this DbObjectFilteringResult.
+        r"""Sets the source of this DbObjectFilteringResult.
 
         对比的来源 - job 表示数据同步时的过滤 - compare 表示数据对比的过滤
 
@@ -238,7 +238,7 @@ class DbObjectFilteringResult:
 
     @property
     def target_result(self):
-        """Gets the target_result of this DbObjectFilteringResult.
+        r"""Gets the target_result of this DbObjectFilteringResult.
 
         校验目标库比对条件过滤的结果
 
@@ -249,7 +249,7 @@ class DbObjectFilteringResult:
 
     @target_result.setter
     def target_result(self, target_result):
-        """Sets the target_result of this DbObjectFilteringResult.
+        r"""Sets the target_result of this DbObjectFilteringResult.
 
         校验目标库比对条件过滤的结果
 
@@ -260,7 +260,7 @@ class DbObjectFilteringResult:
 
     @property
     def source_result(self):
-        """Gets the source_result of this DbObjectFilteringResult.
+        r"""Gets the source_result of this DbObjectFilteringResult.
 
         校验源库比对条件过滤的结果
 
@@ -271,7 +271,7 @@ class DbObjectFilteringResult:
 
     @source_result.setter
     def source_result(self, source_result):
-        """Sets the source_result of this DbObjectFilteringResult.
+        r"""Sets the source_result of this DbObjectFilteringResult.
 
         校验源库比对条件过滤的结果
 
@@ -282,7 +282,7 @@ class DbObjectFilteringResult:
 
     @property
     def target_message(self):
-        """Gets the target_message of this DbObjectFilteringResult.
+        r"""Gets the target_message of this DbObjectFilteringResult.
 
         校验目标库比对条件过滤的失败原因
 
@@ -293,7 +293,7 @@ class DbObjectFilteringResult:
 
     @target_message.setter
     def target_message(self, target_message):
-        """Sets the target_message of this DbObjectFilteringResult.
+        r"""Sets the target_message of this DbObjectFilteringResult.
 
         校验目标库比对条件过滤的失败原因
 
@@ -304,7 +304,7 @@ class DbObjectFilteringResult:
 
     @property
     def source_message(self):
-        """Gets the source_message of this DbObjectFilteringResult.
+        r"""Gets the source_message of this DbObjectFilteringResult.
 
         校验源库比对条件过滤的失败原因
 
@@ -315,7 +315,7 @@ class DbObjectFilteringResult:
 
     @source_message.setter
     def source_message(self, source_message):
-        """Sets the source_message of this DbObjectFilteringResult.
+        r"""Sets the source_message of this DbObjectFilteringResult.
 
         校验源库比对条件过滤的失败原因
 

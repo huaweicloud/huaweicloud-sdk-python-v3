@@ -27,7 +27,7 @@ class ChangeOpsWindowRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ChangeOpsWindowRequest
+        r"""ChangeOpsWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeOpsWindowRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeOpsWindowRequest.
+        r"""Gets the instance_id of this ChangeOpsWindowRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ChangeOpsWindowRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeOpsWindowRequest.
+        r"""Sets the instance_id of this ChangeOpsWindowRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ChangeOpsWindowRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeOpsWindowRequest.
+        r"""Gets the body of this ChangeOpsWindowRequest.
 
         :return: The body of this ChangeOpsWindowRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.OpsWindowRequestBody`
@@ -80,7 +80,7 @@ class ChangeOpsWindowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeOpsWindowRequest.
+        r"""Sets the body of this ChangeOpsWindowRequest.
 
         :param body: The body of this ChangeOpsWindowRequest.
         :type body: :class:`huaweicloudsdkdds.v3.OpsWindowRequestBody`

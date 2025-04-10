@@ -29,7 +29,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, eihealth_project_id=None, image_id=None, tag=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteTagRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteTagRequest.
+        r"""Gets the eihealth_project_id of this DeleteTagRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -65,7 +65,7 @@ class DeleteTagRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteTagRequest.
+        r"""Sets the eihealth_project_id of this DeleteTagRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -76,7 +76,7 @@ class DeleteTagRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this DeleteTagRequest.
+        r"""Gets the image_id of this DeleteTagRequest.
 
         镜像id
 
@@ -87,7 +87,7 @@ class DeleteTagRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this DeleteTagRequest.
+        r"""Sets the image_id of this DeleteTagRequest.
 
         镜像id
 
@@ -98,7 +98,7 @@ class DeleteTagRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this DeleteTagRequest.
+        r"""Gets the tag of this DeleteTagRequest.
 
         镜像版本名称
 
@@ -109,7 +109,7 @@ class DeleteTagRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this DeleteTagRequest.
+        r"""Sets the tag of this DeleteTagRequest.
 
         镜像版本名称
 

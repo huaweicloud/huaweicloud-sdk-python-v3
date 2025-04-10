@@ -26,7 +26,7 @@ class GetCustomPolicyForPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self, custom_policy=None):
-        """GetCustomPolicyForPermissionSetResponse
+        r"""GetCustomPolicyForPermissionSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetCustomPolicyForPermissionSetResponse(SdkResponse):
 
     @property
     def custom_policy(self):
-        """Gets the custom_policy of this GetCustomPolicyForPermissionSetResponse.
+        r"""Gets the custom_policy of this GetCustomPolicyForPermissionSetResponse.
 
         附加到权限集的自定义身份策略
 
@@ -55,7 +55,7 @@ class GetCustomPolicyForPermissionSetResponse(SdkResponse):
 
     @custom_policy.setter
     def custom_policy(self, custom_policy):
-        """Sets the custom_policy of this GetCustomPolicyForPermissionSetResponse.
+        r"""Sets the custom_policy of this GetCustomPolicyForPermissionSetResponse.
 
         附加到权限集的自定义身份策略
 

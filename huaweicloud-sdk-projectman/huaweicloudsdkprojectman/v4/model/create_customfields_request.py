@@ -27,7 +27,7 @@ class CreateCustomfieldsRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateCustomfieldsRequest
+        r"""CreateCustomfieldsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCustomfieldsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateCustomfieldsRequest.
+        r"""Gets the project_id of this CreateCustomfieldsRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class CreateCustomfieldsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateCustomfieldsRequest.
+        r"""Sets the project_id of this CreateCustomfieldsRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class CreateCustomfieldsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomfieldsRequest.
+        r"""Gets the body of this CreateCustomfieldsRequest.
 
         :return: The body of this CreateCustomfieldsRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`
@@ -80,7 +80,7 @@ class CreateCustomfieldsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomfieldsRequest.
+        r"""Sets the body of this CreateCustomfieldsRequest.
 
         :param body: The body of this CreateCustomfieldsRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`

@@ -29,7 +29,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
     }
 
     def __init__(self, ids=None, eip=None, count=None):
-        """ChangeCloudPhoneServerRequestBodyPublicIp
+        r"""ChangeCloudPhoneServerRequestBodyPublicIp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
 
     @property
     def ids(self):
-        """Gets the ids of this ChangeCloudPhoneServerRequestBodyPublicIp.
+        r"""Gets the ids of this ChangeCloudPhoneServerRequestBodyPublicIp.
 
         指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID。
 
@@ -68,7 +68,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ChangeCloudPhoneServerRequestBodyPublicIp.
+        r"""Sets the ids of this ChangeCloudPhoneServerRequestBodyPublicIp.
 
         指定已有的EIP进行服务器创建，当前只支持传入一个已有的EIP ID。
 
@@ -79,7 +79,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
 
     @property
     def eip(self):
-        """Gets the eip of this ChangeCloudPhoneServerRequestBodyPublicIp.
+        r"""Gets the eip of this ChangeCloudPhoneServerRequestBodyPublicIp.
 
         :return: The eip of this ChangeCloudPhoneServerRequestBodyPublicIp.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`
@@ -88,7 +88,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this ChangeCloudPhoneServerRequestBodyPublicIp.
+        r"""Sets the eip of this ChangeCloudPhoneServerRequestBodyPublicIp.
 
         :param eip: The eip of this ChangeCloudPhoneServerRequestBodyPublicIp.
         :type eip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`
@@ -97,7 +97,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
 
     @property
     def count(self):
-        """Gets the count of this ChangeCloudPhoneServerRequestBodyPublicIp.
+        r"""Gets the count of this ChangeCloudPhoneServerRequestBodyPublicIp.
 
         Eip数量。默认为1，不需要Eip可设置为0，取值范围为0到手机IP数。
 
@@ -108,7 +108,7 @@ class ChangeCloudPhoneServerRequestBodyPublicIp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ChangeCloudPhoneServerRequestBodyPublicIp.
+        r"""Sets the count of this ChangeCloudPhoneServerRequestBodyPublicIp.
 
         Eip数量。默认为1，不需要Eip可设置为0，取值范围为0到手机IP数。
 

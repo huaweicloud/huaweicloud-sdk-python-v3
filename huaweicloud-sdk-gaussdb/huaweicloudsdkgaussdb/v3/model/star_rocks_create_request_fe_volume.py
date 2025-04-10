@@ -27,7 +27,7 @@ class StarRocksCreateRequestFeVolume:
     }
 
     def __init__(self, io_type=None, capacity_in_gb=None):
-        """StarRocksCreateRequestFeVolume
+        r"""StarRocksCreateRequestFeVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StarRocksCreateRequestFeVolume:
 
     @property
     def io_type(self):
-        """Gets the io_type of this StarRocksCreateRequestFeVolume.
+        r"""Gets the io_type of this StarRocksCreateRequestFeVolume.
 
         磁盘类型。通过查询HTAP引擎资源返回消息获取。
 
@@ -59,7 +59,7 @@ class StarRocksCreateRequestFeVolume:
 
     @io_type.setter
     def io_type(self, io_type):
-        """Sets the io_type of this StarRocksCreateRequestFeVolume.
+        r"""Sets the io_type of this StarRocksCreateRequestFeVolume.
 
         磁盘类型。通过查询HTAP引擎资源返回消息获取。
 
@@ -70,7 +70,7 @@ class StarRocksCreateRequestFeVolume:
 
     @property
     def capacity_in_gb(self):
-        """Gets the capacity_in_gb of this StarRocksCreateRequestFeVolume.
+        r"""Gets the capacity_in_gb of this StarRocksCreateRequestFeVolume.
 
         磁盘容量，单位GB 增长的步长：10GB。
 
@@ -81,7 +81,7 @@ class StarRocksCreateRequestFeVolume:
 
     @capacity_in_gb.setter
     def capacity_in_gb(self, capacity_in_gb):
-        """Sets the capacity_in_gb of this StarRocksCreateRequestFeVolume.
+        r"""Sets the capacity_in_gb of this StarRocksCreateRequestFeVolume.
 
         磁盘容量，单位GB 增长的步长：10GB。
 

@@ -28,7 +28,7 @@ class ListTagKeysResponse(SdkResponse):
     }
 
     def __init__(self, keys=None, page_info=None):
-        """ListTagKeysResponse
+        r"""ListTagKeysResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTagKeysResponse(SdkResponse):
 
     @property
     def keys(self):
-        """Gets the keys of this ListTagKeysResponse.
+        r"""Gets the keys of this ListTagKeysResponse.
 
         标签键列表
 
@@ -62,7 +62,7 @@ class ListTagKeysResponse(SdkResponse):
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ListTagKeysResponse.
+        r"""Sets the keys of this ListTagKeysResponse.
 
         标签键列表
 
@@ -73,7 +73,7 @@ class ListTagKeysResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListTagKeysResponse.
+        r"""Gets the page_info of this ListTagKeysResponse.
 
         :return: The page_info of this ListTagKeysResponse.
         :rtype: :class:`huaweicloudsdktms.v1.PageInfoTagKeys`
@@ -82,7 +82,7 @@ class ListTagKeysResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListTagKeysResponse.
+        r"""Sets the page_info of this ListTagKeysResponse.
 
         :param page_info: The page_info of this ListTagKeysResponse.
         :type page_info: :class:`huaweicloudsdktms.v1.PageInfoTagKeys`

@@ -25,7 +25,7 @@ class CommRequestBackUpMindmapParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestBackUpMindmapParam
+        r"""CommRequestBackUpMindmapParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestBackUpMindmapParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestBackUpMindmapParam.
+        r"""Gets the params of this CommRequestBackUpMindmapParam.
 
         :return: The params of this CommRequestBackUpMindmapParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BackUpMindmapParam`
@@ -51,7 +51,7 @@ class CommRequestBackUpMindmapParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestBackUpMindmapParam.
+        r"""Sets the params of this CommRequestBackUpMindmapParam.
 
         :param params: The params of this CommRequestBackUpMindmapParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.BackUpMindmapParam`

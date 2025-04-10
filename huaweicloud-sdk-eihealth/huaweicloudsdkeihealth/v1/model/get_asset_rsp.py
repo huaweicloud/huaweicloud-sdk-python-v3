@@ -47,7 +47,7 @@ class GetAssetRsp:
     }
 
     def __init__(self, id=None, category=None, name=None, title=None, labels=None, picture=None, vendor_id=None, versions=None, create_time=None, update_time=None, stars=None, subscribes=None):
-        """GetAssetRsp
+        r"""GetAssetRsp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class GetAssetRsp:
 
     @property
     def id(self):
-        """Gets the id of this GetAssetRsp.
+        r"""Gets the id of this GetAssetRsp.
 
         资产id
 
@@ -131,7 +131,7 @@ class GetAssetRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetAssetRsp.
+        r"""Sets the id of this GetAssetRsp.
 
         资产id
 
@@ -142,7 +142,7 @@ class GetAssetRsp:
 
     @property
     def category(self):
-        """Gets the category of this GetAssetRsp.
+        r"""Gets the category of this GetAssetRsp.
 
         类别
 
@@ -153,7 +153,7 @@ class GetAssetRsp:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this GetAssetRsp.
+        r"""Sets the category of this GetAssetRsp.
 
         类别
 
@@ -164,7 +164,7 @@ class GetAssetRsp:
 
     @property
     def name(self):
-        """Gets the name of this GetAssetRsp.
+        r"""Gets the name of this GetAssetRsp.
 
         资产名
 
@@ -175,7 +175,7 @@ class GetAssetRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetAssetRsp.
+        r"""Sets the name of this GetAssetRsp.
 
         资产名
 
@@ -186,7 +186,7 @@ class GetAssetRsp:
 
     @property
     def title(self):
-        """Gets the title of this GetAssetRsp.
+        r"""Gets the title of this GetAssetRsp.
 
         资产展示名
 
@@ -197,7 +197,7 @@ class GetAssetRsp:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this GetAssetRsp.
+        r"""Sets the title of this GetAssetRsp.
 
         资产展示名
 
@@ -208,7 +208,7 @@ class GetAssetRsp:
 
     @property
     def labels(self):
-        """Gets the labels of this GetAssetRsp.
+        r"""Gets the labels of this GetAssetRsp.
 
         资产标签列表
 
@@ -219,7 +219,7 @@ class GetAssetRsp:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this GetAssetRsp.
+        r"""Sets the labels of this GetAssetRsp.
 
         资产标签列表
 
@@ -230,7 +230,7 @@ class GetAssetRsp:
 
     @property
     def picture(self):
-        """Gets the picture of this GetAssetRsp.
+        r"""Gets the picture of this GetAssetRsp.
 
         资产封面图访问链接
 
@@ -241,7 +241,7 @@ class GetAssetRsp:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this GetAssetRsp.
+        r"""Sets the picture of this GetAssetRsp.
 
         资产封面图访问链接
 
@@ -252,7 +252,7 @@ class GetAssetRsp:
 
     @property
     def vendor_id(self):
-        """Gets the vendor_id of this GetAssetRsp.
+        r"""Gets the vendor_id of this GetAssetRsp.
 
         供应商id
 
@@ -263,7 +263,7 @@ class GetAssetRsp:
 
     @vendor_id.setter
     def vendor_id(self, vendor_id):
-        """Sets the vendor_id of this GetAssetRsp.
+        r"""Sets the vendor_id of this GetAssetRsp.
 
         供应商id
 
@@ -274,7 +274,7 @@ class GetAssetRsp:
 
     @property
     def versions(self):
-        """Gets the versions of this GetAssetRsp.
+        r"""Gets the versions of this GetAssetRsp.
 
         资产版本号列表
 
@@ -285,7 +285,7 @@ class GetAssetRsp:
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this GetAssetRsp.
+        r"""Sets the versions of this GetAssetRsp.
 
         资产版本号列表
 
@@ -296,7 +296,7 @@ class GetAssetRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetAssetRsp.
+        r"""Gets the create_time of this GetAssetRsp.
 
         创建时间
 
@@ -307,7 +307,7 @@ class GetAssetRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetAssetRsp.
+        r"""Sets the create_time of this GetAssetRsp.
 
         创建时间
 
@@ -318,7 +318,7 @@ class GetAssetRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetAssetRsp.
+        r"""Gets the update_time of this GetAssetRsp.
 
         更新时间
 
@@ -329,7 +329,7 @@ class GetAssetRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetAssetRsp.
+        r"""Sets the update_time of this GetAssetRsp.
 
         更新时间
 
@@ -340,7 +340,7 @@ class GetAssetRsp:
 
     @property
     def stars(self):
-        """Gets the stars of this GetAssetRsp.
+        r"""Gets the stars of this GetAssetRsp.
 
         收藏数
 
@@ -351,7 +351,7 @@ class GetAssetRsp:
 
     @stars.setter
     def stars(self, stars):
-        """Sets the stars of this GetAssetRsp.
+        r"""Sets the stars of this GetAssetRsp.
 
         收藏数
 
@@ -362,7 +362,7 @@ class GetAssetRsp:
 
     @property
     def subscribes(self):
-        """Gets the subscribes of this GetAssetRsp.
+        r"""Gets the subscribes of this GetAssetRsp.
 
         订阅数
 
@@ -373,7 +373,7 @@ class GetAssetRsp:
 
     @subscribes.setter
     def subscribes(self, subscribes):
-        """Sets the subscribes of this GetAssetRsp.
+        r"""Sets the subscribes of this GetAssetRsp.
 
         订阅数
 

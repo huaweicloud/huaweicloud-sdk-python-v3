@@ -31,7 +31,7 @@ class SimplifyDevice:
     }
 
     def __init__(self, device_id=None, node_id=None, device_name=None, product_id=None):
-        """SimplifyDevice
+        r"""SimplifyDevice
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SimplifyDevice:
 
     @property
     def device_id(self):
-        """Gets the device_id of this SimplifyDevice.
+        r"""Gets the device_id of this SimplifyDevice.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -75,7 +75,7 @@ class SimplifyDevice:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this SimplifyDevice.
+        r"""Sets the device_id of this SimplifyDevice.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -86,7 +86,7 @@ class SimplifyDevice:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SimplifyDevice.
+        r"""Gets the node_id of this SimplifyDevice.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
 
@@ -97,7 +97,7 @@ class SimplifyDevice:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SimplifyDevice.
+        r"""Sets the node_id of this SimplifyDevice.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
 
@@ -108,7 +108,7 @@ class SimplifyDevice:
 
     @property
     def device_name(self):
-        """Gets the device_name of this SimplifyDevice.
+        r"""Gets the device_name of this SimplifyDevice.
 
         设备名称。
 
@@ -119,7 +119,7 @@ class SimplifyDevice:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this SimplifyDevice.
+        r"""Sets the device_name of this SimplifyDevice.
 
         设备名称。
 
@@ -130,7 +130,7 @@ class SimplifyDevice:
 
     @property
     def product_id(self):
-        """Gets the product_id of this SimplifyDevice.
+        r"""Gets the product_id of this SimplifyDevice.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -141,7 +141,7 @@ class SimplifyDevice:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this SimplifyDevice.
+        r"""Sets the product_id of this SimplifyDevice.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 

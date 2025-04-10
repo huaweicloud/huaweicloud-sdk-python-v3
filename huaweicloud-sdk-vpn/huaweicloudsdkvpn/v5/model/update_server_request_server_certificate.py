@@ -25,7 +25,7 @@ class UpdateServerRequestServerCertificate:
     }
 
     def __init__(self, id=None):
-        """UpdateServerRequestServerCertificate
+        r"""UpdateServerRequestServerCertificate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateServerRequestServerCertificate:
 
     @property
     def id(self):
-        """Gets the id of this UpdateServerRequestServerCertificate.
+        r"""Gets the id of this UpdateServerRequestServerCertificate.
 
         服务端证书ID,为CCM服务中的证书ID
 
@@ -53,7 +53,7 @@ class UpdateServerRequestServerCertificate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateServerRequestServerCertificate.
+        r"""Sets the id of this UpdateServerRequestServerCertificate.
 
         服务端证书ID,为CCM服务中的证书ID
 

@@ -27,7 +27,7 @@ class ResourceDTO:
     }
 
     def __init__(self, limits=None, requests=None):
-        """ResourceDTO
+        r"""ResourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceDTO:
 
     @property
     def limits(self):
-        """Gets the limits of this ResourceDTO.
+        r"""Gets the limits of this ResourceDTO.
 
         :return: The limits of this ResourceDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
@@ -59,7 +59,7 @@ class ResourceDTO:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this ResourceDTO.
+        r"""Sets the limits of this ResourceDTO.
 
         :param limits: The limits of this ResourceDTO.
         :type limits: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
@@ -68,7 +68,7 @@ class ResourceDTO:
 
     @property
     def requests(self):
-        """Gets the requests of this ResourceDTO.
+        r"""Gets the requests of this ResourceDTO.
 
         :return: The requests of this ResourceDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`
@@ -77,7 +77,7 @@ class ResourceDTO:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this ResourceDTO.
+        r"""Sets the requests of this ResourceDTO.
 
         :param requests: The requests of this ResourceDTO.
         :type requests: :class:`huaweicloudsdkiotedge.v2.ResourceConfigDTO`

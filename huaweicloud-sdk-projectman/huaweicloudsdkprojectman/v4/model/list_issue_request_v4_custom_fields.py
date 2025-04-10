@@ -27,7 +27,7 @@ class ListIssueRequestV4CustomFields:
     }
 
     def __init__(self, custom_field=None, value=None):
-        """ListIssueRequestV4CustomFields
+        r"""ListIssueRequestV4CustomFields
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListIssueRequestV4CustomFields:
 
     @property
     def custom_field(self):
-        """Gets the custom_field of this ListIssueRequestV4CustomFields.
+        r"""Gets the custom_field of this ListIssueRequestV4CustomFields.
 
         自定义属性字段
 
@@ -61,7 +61,7 @@ class ListIssueRequestV4CustomFields:
 
     @custom_field.setter
     def custom_field(self, custom_field):
-        """Sets the custom_field of this ListIssueRequestV4CustomFields.
+        r"""Sets the custom_field of this ListIssueRequestV4CustomFields.
 
         自定义属性字段
 
@@ -72,7 +72,7 @@ class ListIssueRequestV4CustomFields:
 
     @property
     def value(self):
-        """Gets the value of this ListIssueRequestV4CustomFields.
+        r"""Gets the value of this ListIssueRequestV4CustomFields.
 
         自定义属性对应的值
 
@@ -83,7 +83,7 @@ class ListIssueRequestV4CustomFields:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListIssueRequestV4CustomFields.
+        r"""Sets the value of this ListIssueRequestV4CustomFields.
 
         自定义属性对应的值
 

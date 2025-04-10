@@ -31,7 +31,7 @@ class FlavorId:
     }
 
     def __init__(self):
-        """FlavorId
+        r"""FlavorId
 
         The model defined in huaweicloud sdk
 

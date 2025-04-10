@@ -28,7 +28,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, amount_infos=None):
-        """ShowMultiAccountTransferAmountResponse
+        r"""ShowMultiAccountTransferAmountResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowMultiAccountTransferAmountResponse.
+        r"""Gets the total_count of this ShowMultiAccountTransferAmountResponse.
 
         记录条数。
 
@@ -62,7 +62,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowMultiAccountTransferAmountResponse.
+        r"""Sets the total_count of this ShowMultiAccountTransferAmountResponse.
 
         记录条数。
 
@@ -73,7 +73,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
 
     @property
     def amount_infos(self):
-        """Gets the amount_infos of this ShowMultiAccountTransferAmountResponse.
+        r"""Gets the amount_infos of this ShowMultiAccountTransferAmountResponse.
 
         可拨款余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
 
     @amount_infos.setter
     def amount_infos(self, amount_infos):
-        """Sets the amount_infos of this ShowMultiAccountTransferAmountResponse.
+        r"""Sets the amount_infos of this ShowMultiAccountTransferAmountResponse.
 
         可拨款余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 

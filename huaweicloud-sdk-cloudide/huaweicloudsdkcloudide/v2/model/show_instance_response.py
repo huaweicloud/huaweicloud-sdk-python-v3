@@ -30,7 +30,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, status=None, bundle_url=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ShowInstanceResponse.
+        r"""Gets the instance of this ShowInstanceResponse.
 
         :return: The instance of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.InstancesVO`
@@ -67,7 +67,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowInstanceResponse.
+        r"""Sets the instance of this ShowInstanceResponse.
 
         :param instance: The instance of this ShowInstanceResponse.
         :type instance: :class:`huaweicloudsdkcloudide.v2.InstancesVO`
@@ -76,7 +76,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceResponse.
+        r"""Gets the status of this ShowInstanceResponse.
 
         状态
 
@@ -87,7 +87,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceResponse.
+        r"""Sets the status of this ShowInstanceResponse.
 
         状态
 
@@ -98,7 +98,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def bundle_url(self):
-        """Gets the bundle_url of this ShowInstanceResponse.
+        r"""Gets the bundle_url of this ShowInstanceResponse.
 
         静态资源链接
 
@@ -109,7 +109,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @bundle_url.setter
     def bundle_url(self, bundle_url):
-        """Sets the bundle_url of this ShowInstanceResponse.
+        r"""Sets the bundle_url of this ShowInstanceResponse.
 
         静态资源链接
 

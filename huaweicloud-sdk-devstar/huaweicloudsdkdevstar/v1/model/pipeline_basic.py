@@ -33,7 +33,7 @@ class PipelineBasic:
     }
 
     def __init__(self, uuid=None, id=None, name=None, url=None, last_running_status=None):
-        """PipelineBasic
+        r"""PipelineBasic
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PipelineBasic:
 
     @property
     def uuid(self):
-        """Gets the uuid of this PipelineBasic.
+        r"""Gets the uuid of this PipelineBasic.
 
         DevStar系统生成的流水线UUID
 
@@ -82,7 +82,7 @@ class PipelineBasic:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this PipelineBasic.
+        r"""Sets the uuid of this PipelineBasic.
 
         DevStar系统生成的流水线UUID
 
@@ -93,7 +93,7 @@ class PipelineBasic:
 
     @property
     def id(self):
-        """Gets the id of this PipelineBasic.
+        r"""Gets the id of this PipelineBasic.
 
         CloudPipeline系统对应流水线ID
 
@@ -104,7 +104,7 @@ class PipelineBasic:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineBasic.
+        r"""Sets the id of this PipelineBasic.
 
         CloudPipeline系统对应流水线ID
 
@@ -115,7 +115,7 @@ class PipelineBasic:
 
     @property
     def name(self):
-        """Gets the name of this PipelineBasic.
+        r"""Gets the name of this PipelineBasic.
 
         流水线名称
 
@@ -126,7 +126,7 @@ class PipelineBasic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineBasic.
+        r"""Sets the name of this PipelineBasic.
 
         流水线名称
 
@@ -137,7 +137,7 @@ class PipelineBasic:
 
     @property
     def url(self):
-        """Gets the url of this PipelineBasic.
+        r"""Gets the url of this PipelineBasic.
 
         流水线地址
 
@@ -148,7 +148,7 @@ class PipelineBasic:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PipelineBasic.
+        r"""Sets the url of this PipelineBasic.
 
         流水线地址
 
@@ -159,7 +159,7 @@ class PipelineBasic:
 
     @property
     def last_running_status(self):
-        """Gets the last_running_status of this PipelineBasic.
+        r"""Gets the last_running_status of this PipelineBasic.
 
         流水线最后一次运行状态,success:成功,failed:失败,running:运行中
 
@@ -170,7 +170,7 @@ class PipelineBasic:
 
     @last_running_status.setter
     def last_running_status(self, last_running_status):
-        """Sets the last_running_status of this PipelineBasic.
+        r"""Sets the last_running_status of this PipelineBasic.
 
         流水线最后一次运行状态,success:成功,failed:失败,running:运行中
 

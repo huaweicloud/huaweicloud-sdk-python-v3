@@ -27,7 +27,7 @@ class ProjectResp:
     }
 
     def __init__(self, code=None, message=None):
-        """ProjectResp
+        r"""ProjectResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProjectResp:
 
     @property
     def code(self):
-        """Gets the code of this ProjectResp.
+        r"""Gets the code of this ProjectResp.
 
         状态码
 
@@ -61,7 +61,7 @@ class ProjectResp:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ProjectResp.
+        r"""Sets the code of this ProjectResp.
 
         状态码
 
@@ -72,7 +72,7 @@ class ProjectResp:
 
     @property
     def message(self):
-        """Gets the message of this ProjectResp.
+        r"""Gets the message of this ProjectResp.
 
         描述
 
@@ -83,7 +83,7 @@ class ProjectResp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ProjectResp.
+        r"""Sets the message of this ProjectResp.
 
         描述
 

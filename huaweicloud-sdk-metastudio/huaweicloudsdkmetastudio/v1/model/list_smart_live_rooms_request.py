@@ -47,7 +47,7 @@ class ListSmartLiveRoomsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, room_name=None, dh_id=None, model_name=None, live_state=None, start_time=None, end_time=None, room_type=None, template_own_type=None, confirm_state=None):
-        """ListSmartLiveRoomsRequest
+        r"""ListSmartLiveRoomsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListSmartLiveRoomsRequest.
+        r"""Gets the x_app_user_id of this ListSmartLiveRoomsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -131,7 +131,7 @@ class ListSmartLiveRoomsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListSmartLiveRoomsRequest.
+        r"""Sets the x_app_user_id of this ListSmartLiveRoomsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -142,7 +142,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSmartLiveRoomsRequest.
+        r"""Gets the offset of this ListSmartLiveRoomsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -153,7 +153,7 @@ class ListSmartLiveRoomsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSmartLiveRoomsRequest.
+        r"""Sets the offset of this ListSmartLiveRoomsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -164,7 +164,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSmartLiveRoomsRequest.
+        r"""Gets the limit of this ListSmartLiveRoomsRequest.
 
         每页显示的条目数量。
 
@@ -175,7 +175,7 @@ class ListSmartLiveRoomsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSmartLiveRoomsRequest.
+        r"""Sets the limit of this ListSmartLiveRoomsRequest.
 
         每页显示的条目数量。
 
@@ -186,7 +186,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def room_name(self):
-        """Gets the room_name of this ListSmartLiveRoomsRequest.
+        r"""Gets the room_name of this ListSmartLiveRoomsRequest.
 
         按直播间名称模糊查询。
 
@@ -197,7 +197,7 @@ class ListSmartLiveRoomsRequest:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this ListSmartLiveRoomsRequest.
+        r"""Sets the room_name of this ListSmartLiveRoomsRequest.
 
         按直播间名称模糊查询。
 
@@ -208,7 +208,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def dh_id(self):
-        """Gets the dh_id of this ListSmartLiveRoomsRequest.
+        r"""Gets the dh_id of this ListSmartLiveRoomsRequest.
 
         按数字人形象ID查询。
 
@@ -219,7 +219,7 @@ class ListSmartLiveRoomsRequest:
 
     @dh_id.setter
     def dh_id(self, dh_id):
-        """Sets the dh_id of this ListSmartLiveRoomsRequest.
+        r"""Sets the dh_id of this ListSmartLiveRoomsRequest.
 
         按数字人形象ID查询。
 
@@ -230,7 +230,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this ListSmartLiveRoomsRequest.
+        r"""Gets the model_name of this ListSmartLiveRoomsRequest.
 
         按形象名称模糊查询。
 
@@ -241,7 +241,7 @@ class ListSmartLiveRoomsRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this ListSmartLiveRoomsRequest.
+        r"""Sets the model_name of this ListSmartLiveRoomsRequest.
 
         按形象名称模糊查询。
 
@@ -252,7 +252,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def live_state(self):
-        """Gets the live_state of this ListSmartLiveRoomsRequest.
+        r"""Gets the live_state of this ListSmartLiveRoomsRequest.
 
         当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED，CANCELED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
 
@@ -263,7 +263,7 @@ class ListSmartLiveRoomsRequest:
 
     @live_state.setter
     def live_state(self, live_state):
-        """Sets the live_state of this ListSmartLiveRoomsRequest.
+        r"""Sets the live_state of this ListSmartLiveRoomsRequest.
 
         当前直播间直播状态。 WAITING，PROCESSING，SUCCESS，FAILED，CANCELED对应直播任务状态 NULL 对应没有直播任务 可多个状态查询，使用英文逗号分隔。
 
@@ -274,7 +274,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSmartLiveRoomsRequest.
+        r"""Gets the start_time of this ListSmartLiveRoomsRequest.
 
         最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -285,7 +285,7 @@ class ListSmartLiveRoomsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSmartLiveRoomsRequest.
+        r"""Sets the start_time of this ListSmartLiveRoomsRequest.
 
         最近直播任务起始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -296,7 +296,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSmartLiveRoomsRequest.
+        r"""Gets the end_time of this ListSmartLiveRoomsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -307,7 +307,7 @@ class ListSmartLiveRoomsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSmartLiveRoomsRequest.
+        r"""Sets the end_time of this ListSmartLiveRoomsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -318,7 +318,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def room_type(self):
-        """Gets the room_type of this ListSmartLiveRoomsRequest.
+        r"""Gets the room_type of this ListSmartLiveRoomsRequest.
 
         按直播间类型查询。直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -329,7 +329,7 @@ class ListSmartLiveRoomsRequest:
 
     @room_type.setter
     def room_type(self, room_type):
-        """Sets the room_type of this ListSmartLiveRoomsRequest.
+        r"""Sets the room_type of this ListSmartLiveRoomsRequest.
 
         按直播间类型查询。直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -340,7 +340,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def template_own_type(self):
-        """Gets the template_own_type of this ListSmartLiveRoomsRequest.
+        r"""Gets the template_own_type of this ListSmartLiveRoomsRequest.
 
         按照自己拥有的和别人分享以及公共的模板进行查询 * OWNED 自己拥有且暂未共享的 * SHARED_TO_OHTERS 分享给别人的 * SHARED_FROM_OHTERS 别人分享给我的 * PUBLIC 公共模板
 
@@ -351,7 +351,7 @@ class ListSmartLiveRoomsRequest:
 
     @template_own_type.setter
     def template_own_type(self, template_own_type):
-        """Sets the template_own_type of this ListSmartLiveRoomsRequest.
+        r"""Sets the template_own_type of this ListSmartLiveRoomsRequest.
 
         按照自己拥有的和别人分享以及公共的模板进行查询 * OWNED 自己拥有且暂未共享的 * SHARED_TO_OHTERS 分享给别人的 * SHARED_FROM_OHTERS 别人分享给我的 * PUBLIC 公共模板
 
@@ -362,7 +362,7 @@ class ListSmartLiveRoomsRequest:
 
     @property
     def confirm_state(self):
-        """Gets the confirm_state of this ListSmartLiveRoomsRequest.
+        r"""Gets the confirm_state of this ListSmartLiveRoomsRequest.
 
         直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - unconfirm: 未确认 - confirmed：已确认 - reject： 拒绝
 
@@ -373,7 +373,7 @@ class ListSmartLiveRoomsRequest:
 
     @confirm_state.setter
     def confirm_state(self, confirm_state):
-        """Sets the confirm_state of this ListSmartLiveRoomsRequest.
+        r"""Sets the confirm_state of this ListSmartLiveRoomsRequest.
 
         直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - unconfirm: 未确认 - confirmed：已确认 - reject： 拒绝
 

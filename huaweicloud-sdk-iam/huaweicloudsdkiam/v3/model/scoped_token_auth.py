@@ -27,7 +27,7 @@ class ScopedTokenAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """ScopedTokenAuth
+        r"""ScopedTokenAuth
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScopedTokenAuth:
 
     @property
     def identity(self):
-        """Gets the identity of this ScopedTokenAuth.
+        r"""Gets the identity of this ScopedTokenAuth.
 
         :return: The identity of this ScopedTokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenIdentity`
@@ -57,7 +57,7 @@ class ScopedTokenAuth:
 
     @identity.setter
     def identity(self, identity):
-        """Sets the identity of this ScopedTokenAuth.
+        r"""Sets the identity of this ScopedTokenAuth.
 
         :param identity: The identity of this ScopedTokenAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.ScopedTokenIdentity`
@@ -66,7 +66,7 @@ class ScopedTokenAuth:
 
     @property
     def scope(self):
-        """Gets the scope of this ScopedTokenAuth.
+        r"""Gets the scope of this ScopedTokenAuth.
 
         :return: The scope of this ScopedTokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenSocpeOption`
@@ -75,7 +75,7 @@ class ScopedTokenAuth:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ScopedTokenAuth.
+        r"""Sets the scope of this ScopedTokenAuth.
 
         :param scope: The scope of this ScopedTokenAuth.
         :type scope: :class:`huaweicloudsdkiam.v3.TokenSocpeOption`

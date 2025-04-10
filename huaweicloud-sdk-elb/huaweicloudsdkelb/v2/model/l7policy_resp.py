@@ -51,7 +51,7 @@ class L7policyResp:
     }
 
     def __init__(self, id=None, name=None, rules=None, action=None, provisioning_status=None, tenant_id=None, project_id=None, admin_state_up=None, description=None, listener_id=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, position=None):
-        """L7policyResp
+        r"""L7policyResp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class L7policyResp:
 
     @property
     def id(self):
-        """Gets the id of this L7policyResp.
+        r"""Gets the id of this L7policyResp.
 
         转发策略ID
 
@@ -131,7 +131,7 @@ class L7policyResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this L7policyResp.
+        r"""Sets the id of this L7policyResp.
 
         转发策略ID
 
@@ -142,7 +142,7 @@ class L7policyResp:
 
     @property
     def name(self):
-        """Gets the name of this L7policyResp.
+        r"""Gets the name of this L7policyResp.
 
         转发策略名称
 
@@ -153,7 +153,7 @@ class L7policyResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this L7policyResp.
+        r"""Sets the name of this L7policyResp.
 
         转发策略名称
 
@@ -164,7 +164,7 @@ class L7policyResp:
 
     @property
     def rules(self):
-        """Gets the rules of this L7policyResp.
+        r"""Gets the rules of this L7policyResp.
 
         转发策略关联的转发规则列表
 
@@ -175,7 +175,7 @@ class L7policyResp:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this L7policyResp.
+        r"""Sets the rules of this L7policyResp.
 
         转发策略关联的转发规则列表
 
@@ -186,7 +186,7 @@ class L7policyResp:
 
     @property
     def action(self):
-        """Gets the action of this L7policyResp.
+        r"""Gets the action of this L7policyResp.
 
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
@@ -197,7 +197,7 @@ class L7policyResp:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this L7policyResp.
+        r"""Sets the action of this L7policyResp.
 
         转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
@@ -208,7 +208,7 @@ class L7policyResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this L7policyResp.
+        r"""Gets the provisioning_status of this L7policyResp.
 
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -219,7 +219,7 @@ class L7policyResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this L7policyResp.
+        r"""Sets the provisioning_status of this L7policyResp.
 
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -230,7 +230,7 @@ class L7policyResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this L7policyResp.
+        r"""Gets the tenant_id of this L7policyResp.
 
         转发策略所在的项目ID。
 
@@ -241,7 +241,7 @@ class L7policyResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this L7policyResp.
+        r"""Sets the tenant_id of this L7policyResp.
 
         转发策略所在的项目ID。
 
@@ -252,7 +252,7 @@ class L7policyResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this L7policyResp.
+        r"""Gets the project_id of this L7policyResp.
 
         转发策略所在的项目ID。
 
@@ -263,7 +263,7 @@ class L7policyResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this L7policyResp.
+        r"""Sets the project_id of this L7policyResp.
 
         转发策略所在的项目ID。
 
@@ -274,7 +274,7 @@ class L7policyResp:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this L7policyResp.
+        r"""Gets the admin_state_up of this L7policyResp.
 
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -285,7 +285,7 @@ class L7policyResp:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this L7policyResp.
+        r"""Sets the admin_state_up of this L7policyResp.
 
         转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
@@ -296,7 +296,7 @@ class L7policyResp:
 
     @property
     def description(self):
-        """Gets the description of this L7policyResp.
+        r"""Gets the description of this L7policyResp.
 
         转发策略额描述信息
 
@@ -307,7 +307,7 @@ class L7policyResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this L7policyResp.
+        r"""Sets the description of this L7policyResp.
 
         转发策略额描述信息
 
@@ -318,7 +318,7 @@ class L7policyResp:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this L7policyResp.
+        r"""Gets the listener_id of this L7policyResp.
 
         转发策略对应的监听器ID
 
@@ -329,7 +329,7 @@ class L7policyResp:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this L7policyResp.
+        r"""Sets the listener_id of this L7policyResp.
 
         转发策略对应的监听器ID
 
@@ -340,7 +340,7 @@ class L7policyResp:
 
     @property
     def redirect_pool_id(self):
-        """Gets the redirect_pool_id of this L7policyResp.
+        r"""Gets the redirect_pool_id of this L7policyResp.
 
         转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
 
@@ -351,7 +351,7 @@ class L7policyResp:
 
     @redirect_pool_id.setter
     def redirect_pool_id(self, redirect_pool_id):
-        """Sets the redirect_pool_id of this L7policyResp.
+        r"""Sets the redirect_pool_id of this L7policyResp.
 
         转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。
 
@@ -362,7 +362,7 @@ class L7policyResp:
 
     @property
     def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this L7policyResp.
+        r"""Gets the redirect_listener_id of this L7policyResp.
 
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。
 
@@ -373,7 +373,7 @@ class L7policyResp:
 
     @redirect_listener_id.setter
     def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this L7policyResp.
+        r"""Sets the redirect_listener_id of this L7policyResp.
 
         转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。
 
@@ -384,7 +384,7 @@ class L7policyResp:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this L7policyResp.
+        r"""Gets the redirect_url of this L7policyResp.
 
         转发到的url。该字段未启用。
 
@@ -395,7 +395,7 @@ class L7policyResp:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this L7policyResp.
+        r"""Sets the redirect_url of this L7policyResp.
 
         转发到的url。该字段未启用。
 
@@ -406,7 +406,7 @@ class L7policyResp:
 
     @property
     def position(self):
-        """Gets the position of this L7policyResp.
+        r"""Gets the position of this L7policyResp.
 
         转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
@@ -417,7 +417,7 @@ class L7policyResp:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this L7policyResp.
+        r"""Sets the position of this L7policyResp.
 
         转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 

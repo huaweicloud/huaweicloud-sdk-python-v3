@@ -31,7 +31,7 @@ class ListChartsRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, offset=None, limit=None):
-        """ListChartsRequest
+        r"""ListChartsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListChartsRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListChartsRequest.
+        r"""Gets the log_group_id of this ListChartsRequest.
 
         日志组ID
 
@@ -73,7 +73,7 @@ class ListChartsRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListChartsRequest.
+        r"""Sets the log_group_id of this ListChartsRequest.
 
         日志组ID
 
@@ -84,7 +84,7 @@ class ListChartsRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListChartsRequest.
+        r"""Gets the log_stream_id of this ListChartsRequest.
 
         日志流ID
 
@@ -95,7 +95,7 @@ class ListChartsRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListChartsRequest.
+        r"""Sets the log_stream_id of this ListChartsRequest.
 
         日志流ID
 
@@ -106,7 +106,7 @@ class ListChartsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListChartsRequest.
+        r"""Gets the offset of this ListChartsRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -117,7 +117,7 @@ class ListChartsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListChartsRequest.
+        r"""Sets the offset of this ListChartsRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -128,7 +128,7 @@ class ListChartsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListChartsRequest.
+        r"""Gets the limit of this ListChartsRequest.
 
         每页数据量，最大值为100
 
@@ -139,7 +139,7 @@ class ListChartsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListChartsRequest.
+        r"""Sets the limit of this ListChartsRequest.
 
         每页数据量，最大值为100
 

@@ -32,7 +32,7 @@ class SearchCorpAdminsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCorpAdminsResponse
+        r"""SearchCorpAdminsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpAdminsResponse.
+        r"""Gets the offset of this SearchCorpAdminsResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpAdminsResponse.
+        r"""Sets the offset of this SearchCorpAdminsResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpAdminsResponse.
+        r"""Gets the limit of this SearchCorpAdminsResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpAdminsResponse.
+        r"""Sets the limit of this SearchCorpAdminsResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchCorpAdminsResponse.
+        r"""Gets the count of this SearchCorpAdminsResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchCorpAdminsResponse.
+        r"""Sets the count of this SearchCorpAdminsResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchCorpAdminsResponse.
+        r"""Gets the data of this SearchCorpAdminsResponse.
 
         查询企业管理员返回的结果。
 
@@ -142,7 +142,7 @@ class SearchCorpAdminsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchCorpAdminsResponse.
+        r"""Sets the data of this SearchCorpAdminsResponse.
 
         查询企业管理员返回的结果。
 

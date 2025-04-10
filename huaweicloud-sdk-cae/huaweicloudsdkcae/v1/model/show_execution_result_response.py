@@ -30,7 +30,7 @@ class ShowExecutionResultResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """ShowExecutionResultResponse
+        r"""ShowExecutionResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowExecutionResultResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowExecutionResultResponse.
+        r"""Gets the api_version of this ShowExecutionResultResponse.
 
         :return: The api_version of this ShowExecutionResultResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ShowExecutionResultResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowExecutionResultResponse.
+        r"""Sets the api_version of this ShowExecutionResultResponse.
 
         :param api_version: The api_version of this ShowExecutionResultResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ShowExecutionResultResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowExecutionResultResponse.
+        r"""Gets the kind of this ShowExecutionResultResponse.
 
         :return: The kind of this ShowExecutionResultResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
@@ -85,7 +85,7 @@ class ShowExecutionResultResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowExecutionResultResponse.
+        r"""Sets the kind of this ShowExecutionResultResponse.
 
         :param kind: The kind of this ShowExecutionResultResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.TimeRuleKindObj`
@@ -94,7 +94,7 @@ class ShowExecutionResultResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowExecutionResultResponse.
+        r"""Gets the spec of this ShowExecutionResultResponse.
 
         :return: The spec of this ShowExecutionResultResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ExecutionDetails`
@@ -103,7 +103,7 @@ class ShowExecutionResultResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowExecutionResultResponse.
+        r"""Sets the spec of this ShowExecutionResultResponse.
 
         :param spec: The spec of this ShowExecutionResultResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.ExecutionDetails`

@@ -29,7 +29,7 @@ class PrePaidServerSchedulerHints:
     }
 
     def __init__(self, group=None, tenancy=None, dedicated_host_id=None):
-        """PrePaidServerSchedulerHints
+        r"""PrePaidServerSchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PrePaidServerSchedulerHints:
 
     @property
     def group(self):
-        """Gets the group of this PrePaidServerSchedulerHints.
+        r"""Gets the group of this PrePaidServerSchedulerHints.
 
         云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
@@ -68,7 +68,7 @@ class PrePaidServerSchedulerHints:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this PrePaidServerSchedulerHints.
+        r"""Sets the group of this PrePaidServerSchedulerHints.
 
         云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
@@ -79,7 +79,7 @@ class PrePaidServerSchedulerHints:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this PrePaidServerSchedulerHints.
+        r"""Gets the tenancy of this PrePaidServerSchedulerHints.
 
         在指定的专属主机或者共享主机上创建弹性云服务器。参数值为shared或者dedicated。
 
@@ -90,7 +90,7 @@ class PrePaidServerSchedulerHints:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this PrePaidServerSchedulerHints.
+        r"""Sets the tenancy of this PrePaidServerSchedulerHints.
 
         在指定的专属主机或者共享主机上创建弹性云服务器。参数值为shared或者dedicated。
 
@@ -101,7 +101,7 @@ class PrePaidServerSchedulerHints:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this PrePaidServerSchedulerHints.
+        r"""Gets the dedicated_host_id of this PrePaidServerSchedulerHints.
 
         专属主机的ID。
 
@@ -112,7 +112,7 @@ class PrePaidServerSchedulerHints:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this PrePaidServerSchedulerHints.
+        r"""Sets the dedicated_host_id of this PrePaidServerSchedulerHints.
 
         专属主机的ID。
 

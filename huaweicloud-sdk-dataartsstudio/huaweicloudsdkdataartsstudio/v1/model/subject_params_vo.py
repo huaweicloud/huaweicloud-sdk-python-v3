@@ -43,7 +43,7 @@ class SubjectParamsVO:
     }
 
     def __init__(self, id=None, name_ch=None, name_en=None, description=None, alias=None, data_owner=None, data_owner_list=None, level=None, parent_id=None, self_defined_fields=None):
-        """SubjectParamsVO
+        r"""SubjectParamsVO
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class SubjectParamsVO:
 
     @property
     def id(self):
-        """Gets the id of this SubjectParamsVO.
+        r"""Gets the id of this SubjectParamsVO.
 
         编码。更新时必填，创建时可以为空，ID字符串。
 
@@ -113,7 +113,7 @@ class SubjectParamsVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubjectParamsVO.
+        r"""Sets the id of this SubjectParamsVO.
 
         编码。更新时必填，创建时可以为空，ID字符串。
 
@@ -124,7 +124,7 @@ class SubjectParamsVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this SubjectParamsVO.
+        r"""Gets the name_ch of this SubjectParamsVO.
 
         中文名称。
 
@@ -135,7 +135,7 @@ class SubjectParamsVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this SubjectParamsVO.
+        r"""Sets the name_ch of this SubjectParamsVO.
 
         中文名称。
 
@@ -146,7 +146,7 @@ class SubjectParamsVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this SubjectParamsVO.
+        r"""Gets the name_en of this SubjectParamsVO.
 
         英文名称。
 
@@ -157,7 +157,7 @@ class SubjectParamsVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this SubjectParamsVO.
+        r"""Sets the name_en of this SubjectParamsVO.
 
         英文名称。
 
@@ -168,7 +168,7 @@ class SubjectParamsVO:
 
     @property
     def description(self):
-        """Gets the description of this SubjectParamsVO.
+        r"""Gets the description of this SubjectParamsVO.
 
         描述信息，业务对象必填。
 
@@ -179,7 +179,7 @@ class SubjectParamsVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubjectParamsVO.
+        r"""Sets the description of this SubjectParamsVO.
 
         描述信息，业务对象必填。
 
@@ -190,7 +190,7 @@ class SubjectParamsVO:
 
     @property
     def alias(self):
-        """Gets the alias of this SubjectParamsVO.
+        r"""Gets the alias of this SubjectParamsVO.
 
         别名。
 
@@ -201,7 +201,7 @@ class SubjectParamsVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this SubjectParamsVO.
+        r"""Sets the alias of this SubjectParamsVO.
 
         别名。
 
@@ -212,7 +212,7 @@ class SubjectParamsVO:
 
     @property
     def data_owner(self):
-        """Gets the data_owner of this SubjectParamsVO.
+        r"""Gets the data_owner of this SubjectParamsVO.
 
         数据owner部门。
 
@@ -223,7 +223,7 @@ class SubjectParamsVO:
 
     @data_owner.setter
     def data_owner(self, data_owner):
-        """Sets the data_owner of this SubjectParamsVO.
+        r"""Sets the data_owner of this SubjectParamsVO.
 
         数据owner部门。
 
@@ -234,7 +234,7 @@ class SubjectParamsVO:
 
     @property
     def data_owner_list(self):
-        """Gets the data_owner_list of this SubjectParamsVO.
+        r"""Gets the data_owner_list of this SubjectParamsVO.
 
         数据owner人员。拼接成数组格式：[\"user_1\",\"user_2\"]。
 
@@ -245,7 +245,7 @@ class SubjectParamsVO:
 
     @data_owner_list.setter
     def data_owner_list(self, data_owner_list):
-        """Sets the data_owner_list of this SubjectParamsVO.
+        r"""Sets the data_owner_list of this SubjectParamsVO.
 
         数据owner人员。拼接成数组格式：[\"user_1\",\"user_2\"]。
 
@@ -256,7 +256,7 @@ class SubjectParamsVO:
 
     @property
     def level(self):
-        """Gets the level of this SubjectParamsVO.
+        r"""Gets the level of this SubjectParamsVO.
 
         层级。取值范围1-7。
 
@@ -267,7 +267,7 @@ class SubjectParamsVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this SubjectParamsVO.
+        r"""Sets the level of this SubjectParamsVO.
 
         层级。取值范围1-7。
 
@@ -278,7 +278,7 @@ class SubjectParamsVO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this SubjectParamsVO.
+        r"""Gets the parent_id of this SubjectParamsVO.
 
         上层主题ID，首层则为空，ID字符串。
 
@@ -289,7 +289,7 @@ class SubjectParamsVO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this SubjectParamsVO.
+        r"""Sets the parent_id of this SubjectParamsVO.
 
         上层主题ID，首层则为空，ID字符串。
 
@@ -300,7 +300,7 @@ class SubjectParamsVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this SubjectParamsVO.
+        r"""Gets the self_defined_fields of this SubjectParamsVO.
 
         自定义项。主题的自定义属性。
 
@@ -311,7 +311,7 @@ class SubjectParamsVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this SubjectParamsVO.
+        r"""Sets the self_defined_fields of this SubjectParamsVO.
 
         自定义项。主题的自定义属性。
 

@@ -49,7 +49,7 @@ class TemplateRepository:
     }
 
     def __init__(self, id=None, name=None, template_name=None, tags=None, description=None, brief_introduction=None, auto_pending_pipelines=None, language=None, created_at=None, used_times=None, liked_times=None, creator_name=None, https_url=None):
-        """TemplateRepository
+        r"""TemplateRepository
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TemplateRepository:
 
     @property
     def id(self):
-        """Gets the id of this TemplateRepository.
+        r"""Gets the id of this TemplateRepository.
 
         模板唯一标识
 
@@ -138,7 +138,7 @@ class TemplateRepository:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateRepository.
+        r"""Sets the id of this TemplateRepository.
 
         模板唯一标识
 
@@ -149,7 +149,7 @@ class TemplateRepository:
 
     @property
     def name(self):
-        """Gets the name of this TemplateRepository.
+        r"""Gets the name of this TemplateRepository.
 
         模板名称
 
@@ -160,7 +160,7 @@ class TemplateRepository:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateRepository.
+        r"""Sets the name of this TemplateRepository.
 
         模板名称
 
@@ -171,7 +171,7 @@ class TemplateRepository:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TemplateRepository.
+        r"""Gets the template_name of this TemplateRepository.
 
         模板关联仓库名称
 
@@ -182,7 +182,7 @@ class TemplateRepository:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TemplateRepository.
+        r"""Sets the template_name of this TemplateRepository.
 
         模板关联仓库名称
 
@@ -193,7 +193,7 @@ class TemplateRepository:
 
     @property
     def tags(self):
-        """Gets the tags of this TemplateRepository.
+        r"""Gets the tags of this TemplateRepository.
 
         模板标签
 
@@ -204,7 +204,7 @@ class TemplateRepository:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TemplateRepository.
+        r"""Sets the tags of this TemplateRepository.
 
         模板标签
 
@@ -215,7 +215,7 @@ class TemplateRepository:
 
     @property
     def description(self):
-        """Gets the description of this TemplateRepository.
+        r"""Gets the description of this TemplateRepository.
 
         模板描述
 
@@ -226,7 +226,7 @@ class TemplateRepository:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateRepository.
+        r"""Sets the description of this TemplateRepository.
 
         模板描述
 
@@ -237,7 +237,7 @@ class TemplateRepository:
 
     @property
     def brief_introduction(self):
-        """Gets the brief_introduction of this TemplateRepository.
+        r"""Gets the brief_introduction of this TemplateRepository.
 
         模板简介
 
@@ -248,7 +248,7 @@ class TemplateRepository:
 
     @brief_introduction.setter
     def brief_introduction(self, brief_introduction):
-        """Sets the brief_introduction of this TemplateRepository.
+        r"""Sets the brief_introduction of this TemplateRepository.
 
         模板简介
 
@@ -259,7 +259,7 @@ class TemplateRepository:
 
     @property
     def auto_pending_pipelines(self):
-        """Gets the auto_pending_pipelines of this TemplateRepository.
+        r"""Gets the auto_pending_pipelines of this TemplateRepository.
 
         是否自动创建流水线
 
@@ -270,7 +270,7 @@ class TemplateRepository:
 
     @auto_pending_pipelines.setter
     def auto_pending_pipelines(self, auto_pending_pipelines):
-        """Sets the auto_pending_pipelines of this TemplateRepository.
+        r"""Sets the auto_pending_pipelines of this TemplateRepository.
 
         是否自动创建流水线
 
@@ -281,7 +281,7 @@ class TemplateRepository:
 
     @property
     def language(self):
-        """Gets the language of this TemplateRepository.
+        r"""Gets the language of this TemplateRepository.
 
         模板语言分类
 
@@ -292,7 +292,7 @@ class TemplateRepository:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this TemplateRepository.
+        r"""Sets the language of this TemplateRepository.
 
         模板语言分类
 
@@ -303,7 +303,7 @@ class TemplateRepository:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TemplateRepository.
+        r"""Gets the created_at of this TemplateRepository.
 
         模板创建时间
 
@@ -314,7 +314,7 @@ class TemplateRepository:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TemplateRepository.
+        r"""Sets the created_at of this TemplateRepository.
 
         模板创建时间
 
@@ -325,7 +325,7 @@ class TemplateRepository:
 
     @property
     def used_times(self):
-        """Gets the used_times of this TemplateRepository.
+        r"""Gets the used_times of this TemplateRepository.
 
         模板引用次数
 
@@ -336,7 +336,7 @@ class TemplateRepository:
 
     @used_times.setter
     def used_times(self, used_times):
-        """Sets the used_times of this TemplateRepository.
+        r"""Sets the used_times of this TemplateRepository.
 
         模板引用次数
 
@@ -347,7 +347,7 @@ class TemplateRepository:
 
     @property
     def liked_times(self):
-        """Gets the liked_times of this TemplateRepository.
+        r"""Gets the liked_times of this TemplateRepository.
 
         模板被点赞次数
 
@@ -358,7 +358,7 @@ class TemplateRepository:
 
     @liked_times.setter
     def liked_times(self, liked_times):
-        """Sets the liked_times of this TemplateRepository.
+        r"""Sets the liked_times of this TemplateRepository.
 
         模板被点赞次数
 
@@ -369,7 +369,7 @@ class TemplateRepository:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TemplateRepository.
+        r"""Gets the creator_name of this TemplateRepository.
 
         模板创建人
 
@@ -380,7 +380,7 @@ class TemplateRepository:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TemplateRepository.
+        r"""Sets the creator_name of this TemplateRepository.
 
         模板创建人
 
@@ -391,7 +391,7 @@ class TemplateRepository:
 
     @property
     def https_url(self):
-        """Gets the https_url of this TemplateRepository.
+        r"""Gets the https_url of this TemplateRepository.
 
         模板https链接
 
@@ -402,7 +402,7 @@ class TemplateRepository:
 
     @https_url.setter
     def https_url(self, https_url):
-        """Sets the https_url of this TemplateRepository.
+        r"""Sets the https_url of this TemplateRepository.
 
         模板https链接
 

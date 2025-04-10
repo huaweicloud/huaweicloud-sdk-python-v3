@@ -26,7 +26,7 @@ class ExecuteWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, execution_id=None):
-        """ExecuteWorkflowResponse
+        r"""ExecuteWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteWorkflowResponse(SdkResponse):
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this ExecuteWorkflowResponse.
+        r"""Gets the execution_id of this ExecuteWorkflowResponse.
 
         执行ID
 
@@ -55,7 +55,7 @@ class ExecuteWorkflowResponse(SdkResponse):
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this ExecuteWorkflowResponse.
+        r"""Sets the execution_id of this ExecuteWorkflowResponse.
 
         执行ID
 

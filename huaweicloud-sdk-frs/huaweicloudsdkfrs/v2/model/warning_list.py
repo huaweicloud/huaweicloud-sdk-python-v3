@@ -27,7 +27,7 @@ class WarningList:
     }
 
     def __init__(self, warning_code=None, warning_msg=None):
-        """WarningList
+        r"""WarningList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WarningList:
 
     @property
     def warning_code(self):
-        """Gets the warning_code of this WarningList.
+        r"""Gets the warning_code of this WarningList.
 
         警告ID。
 
@@ -61,7 +61,7 @@ class WarningList:
 
     @warning_code.setter
     def warning_code(self, warning_code):
-        """Sets the warning_code of this WarningList.
+        r"""Sets the warning_code of this WarningList.
 
         警告ID。
 
@@ -72,7 +72,7 @@ class WarningList:
 
     @property
     def warning_msg(self):
-        """Gets the warning_msg of this WarningList.
+        r"""Gets the warning_msg of this WarningList.
 
         告警消息。
 
@@ -83,7 +83,7 @@ class WarningList:
 
     @warning_msg.setter
     def warning_msg(self, warning_msg):
-        """Sets the warning_msg of this WarningList.
+        r"""Sets the warning_msg of this WarningList.
 
         告警消息。
 

@@ -39,7 +39,7 @@ class SourcesRequestBody:
     }
 
     def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, obs_bucket_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
-        """SourcesRequestBody
+        r"""SourcesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class SourcesRequestBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SourcesRequestBody.
+        r"""Gets the domain_id of this SourcesRequestBody.
 
         加速域名id。
 
@@ -100,7 +100,7 @@ class SourcesRequestBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SourcesRequestBody.
+        r"""Sets the domain_id of this SourcesRequestBody.
 
         加速域名id。
 
@@ -111,7 +111,7 @@ class SourcesRequestBody:
 
     @property
     def ip_or_domain(self):
-        """Gets the ip_or_domain of this SourcesRequestBody.
+        r"""Gets the ip_or_domain of this SourcesRequestBody.
 
         源站IP（非内网IP）或者域名。
 
@@ -122,7 +122,7 @@ class SourcesRequestBody:
 
     @ip_or_domain.setter
     def ip_or_domain(self, ip_or_domain):
-        """Sets the ip_or_domain of this SourcesRequestBody.
+        r"""Sets the ip_or_domain of this SourcesRequestBody.
 
         源站IP（非内网IP）或者域名。
 
@@ -133,7 +133,7 @@ class SourcesRequestBody:
 
     @property
     def origin_type(self):
-        """Gets the origin_type of this SourcesRequestBody.
+        r"""Gets the origin_type of this SourcesRequestBody.
 
         源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
 
@@ -144,7 +144,7 @@ class SourcesRequestBody:
 
     @origin_type.setter
     def origin_type(self, origin_type):
-        """Sets the origin_type of this SourcesRequestBody.
+        r"""Sets the origin_type of this SourcesRequestBody.
 
         源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
 
@@ -155,7 +155,7 @@ class SourcesRequestBody:
 
     @property
     def obs_bucket_type(self):
-        """Gets the obs_bucket_type of this SourcesRequestBody.
+        r"""Gets the obs_bucket_type of this SourcesRequestBody.
 
         OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -166,7 +166,7 @@ class SourcesRequestBody:
 
     @obs_bucket_type.setter
     def obs_bucket_type(self, obs_bucket_type):
-        """Sets the obs_bucket_type of this SourcesRequestBody.
+        r"""Sets the obs_bucket_type of this SourcesRequestBody.
 
         OBS桶类型，源站类型是“OBS桶域名”时需要传该参数，不传默认为“public”。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -177,7 +177,7 @@ class SourcesRequestBody:
 
     @property
     def active_standby(self):
-        """Gets the active_standby of this SourcesRequestBody.
+        r"""Gets the active_standby of this SourcesRequestBody.
 
         主备状态，1代表主源站，0代表备源站。
 
@@ -188,7 +188,7 @@ class SourcesRequestBody:
 
     @active_standby.setter
     def active_standby(self, active_standby):
-        """Sets the active_standby of this SourcesRequestBody.
+        r"""Sets the active_standby of this SourcesRequestBody.
 
         主备状态，1代表主源站，0代表备源站。
 
@@ -199,7 +199,7 @@ class SourcesRequestBody:
 
     @property
     def enable_obs_web_hosting(self):
-        """Gets the enable_obs_web_hosting of this SourcesRequestBody.
+        r"""Gets the enable_obs_web_hosting of this SourcesRequestBody.
 
         是否开启OBS静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
@@ -210,7 +210,7 @@ class SourcesRequestBody:
 
     @enable_obs_web_hosting.setter
     def enable_obs_web_hosting(self, enable_obs_web_hosting):
-        """Sets the enable_obs_web_hosting of this SourcesRequestBody.
+        r"""Sets the enable_obs_web_hosting of this SourcesRequestBody.
 
         是否开启OBS静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
@@ -221,7 +221,7 @@ class SourcesRequestBody:
 
     @property
     def http_port(self):
-        """Gets the http_port of this SourcesRequestBody.
+        r"""Gets the http_port of this SourcesRequestBody.
 
         HTTP端口，默认80,端口取值取值范围1-65535。
 
@@ -232,7 +232,7 @@ class SourcesRequestBody:
 
     @http_port.setter
     def http_port(self, http_port):
-        """Sets the http_port of this SourcesRequestBody.
+        r"""Sets the http_port of this SourcesRequestBody.
 
         HTTP端口，默认80,端口取值取值范围1-65535。
 
@@ -243,7 +243,7 @@ class SourcesRequestBody:
 
     @property
     def https_port(self):
-        """Gets the https_port of this SourcesRequestBody.
+        r"""Gets the https_port of this SourcesRequestBody.
 
         HTTPS端口，默认443,端口取值取值范围1-65535。
 
@@ -254,7 +254,7 @@ class SourcesRequestBody:
 
     @https_port.setter
     def https_port(self, https_port):
-        """Sets the https_port of this SourcesRequestBody.
+        r"""Sets the https_port of this SourcesRequestBody.
 
         HTTPS端口，默认443,端口取值取值范围1-65535。
 

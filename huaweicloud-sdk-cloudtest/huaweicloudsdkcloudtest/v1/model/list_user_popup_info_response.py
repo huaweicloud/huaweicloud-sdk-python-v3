@@ -30,7 +30,7 @@ class ListUserPopupInfoResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None):
-        """ListUserPopupInfoResponse
+        r"""ListUserPopupInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListUserPopupInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListUserPopupInfoResponse.
+        r"""Gets the status of this ListUserPopupInfoResponse.
 
         是否请求成功
 
@@ -69,7 +69,7 @@ class ListUserPopupInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListUserPopupInfoResponse.
+        r"""Sets the status of this ListUserPopupInfoResponse.
 
         是否请求成功
 
@@ -80,7 +80,7 @@ class ListUserPopupInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListUserPopupInfoResponse.
+        r"""Gets the result of this ListUserPopupInfoResponse.
 
         :return: The result of this ListUserPopupInfoResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PopUpInfo`
@@ -89,7 +89,7 @@ class ListUserPopupInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListUserPopupInfoResponse.
+        r"""Sets the result of this ListUserPopupInfoResponse.
 
         :param result: The result of this ListUserPopupInfoResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.PopUpInfo`
@@ -98,7 +98,7 @@ class ListUserPopupInfoResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListUserPopupInfoResponse.
+        r"""Gets the error of this ListUserPopupInfoResponse.
 
         :return: The error of this ListUserPopupInfoResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -107,7 +107,7 @@ class ListUserPopupInfoResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListUserPopupInfoResponse.
+        r"""Sets the error of this ListUserPopupInfoResponse.
 
         :param error: The error of this ListUserPopupInfoResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`

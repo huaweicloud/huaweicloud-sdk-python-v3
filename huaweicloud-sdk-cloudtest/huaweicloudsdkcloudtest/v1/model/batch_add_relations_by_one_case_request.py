@@ -27,7 +27,7 @@ class BatchAddRelationsByOneCaseRequest:
     }
 
     def __init__(self, workitem_id=None, body=None):
-        """BatchAddRelationsByOneCaseRequest
+        r"""BatchAddRelationsByOneCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddRelationsByOneCaseRequest:
 
     @property
     def workitem_id(self):
-        """Gets the workitem_id of this BatchAddRelationsByOneCaseRequest.
+        r"""Gets the workitem_id of this BatchAddRelationsByOneCaseRequest.
 
         需求/缺陷id
 
@@ -60,7 +60,7 @@ class BatchAddRelationsByOneCaseRequest:
 
     @workitem_id.setter
     def workitem_id(self, workitem_id):
-        """Sets the workitem_id of this BatchAddRelationsByOneCaseRequest.
+        r"""Sets the workitem_id of this BatchAddRelationsByOneCaseRequest.
 
         需求/缺陷id
 
@@ -71,7 +71,7 @@ class BatchAddRelationsByOneCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddRelationsByOneCaseRequest.
+        r"""Gets the body of this BatchAddRelationsByOneCaseRequest.
 
         :return: The body of this BatchAddRelationsByOneCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AddRelationsInfo`
@@ -80,7 +80,7 @@ class BatchAddRelationsByOneCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddRelationsByOneCaseRequest.
+        r"""Sets the body of this BatchAddRelationsByOneCaseRequest.
 
         :param body: The body of this BatchAddRelationsByOneCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.AddRelationsInfo`

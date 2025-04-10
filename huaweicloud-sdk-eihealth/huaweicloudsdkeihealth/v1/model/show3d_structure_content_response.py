@@ -24,7 +24,7 @@ class Show3dStructureContentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """Show3dStructureContentResponse
+        r"""Show3dStructureContentResponse
 
         The model defined in huaweicloud sdk
 

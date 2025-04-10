@@ -28,7 +28,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_templates=None, count=None):
-        """ListAlarmTemplatesResponse
+        r"""ListAlarmTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @property
     def alarm_templates(self):
-        """Gets the alarm_templates of this ListAlarmTemplatesResponse.
+        r"""Gets the alarm_templates of this ListAlarmTemplatesResponse.
 
         告警模板列表
 
@@ -62,7 +62,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @alarm_templates.setter
     def alarm_templates(self, alarm_templates):
-        """Sets the alarm_templates of this ListAlarmTemplatesResponse.
+        r"""Sets the alarm_templates of this ListAlarmTemplatesResponse.
 
         告警模板列表
 
@@ -73,7 +73,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAlarmTemplatesResponse.
+        r"""Gets the count of this ListAlarmTemplatesResponse.
 
         告警模板记录总数
 
@@ -84,7 +84,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlarmTemplatesResponse.
+        r"""Sets the count of this ListAlarmTemplatesResponse.
 
         告警模板记录总数
 

@@ -41,7 +41,7 @@ class DBMaskTaskInfo:
     }
 
     def __init__(self, db_type=None, end_time=None, execute_line=None, id=None, progress=None, run_status=None, start_time=None, task_template_id=None, type=None):
-        """DBMaskTaskInfo
+        r"""DBMaskTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DBMaskTaskInfo:
 
     @property
     def db_type(self):
-        """Gets the db_type of this DBMaskTaskInfo.
+        r"""Gets the db_type of this DBMaskTaskInfo.
 
         DB类型
 
@@ -110,7 +110,7 @@ class DBMaskTaskInfo:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this DBMaskTaskInfo.
+        r"""Sets the db_type of this DBMaskTaskInfo.
 
         DB类型
 
@@ -121,7 +121,7 @@ class DBMaskTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DBMaskTaskInfo.
+        r"""Gets the end_time of this DBMaskTaskInfo.
 
         任务结束时间
 
@@ -132,7 +132,7 @@ class DBMaskTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DBMaskTaskInfo.
+        r"""Sets the end_time of this DBMaskTaskInfo.
 
         任务结束时间
 
@@ -143,7 +143,7 @@ class DBMaskTaskInfo:
 
     @property
     def execute_line(self):
-        """Gets the execute_line of this DBMaskTaskInfo.
+        r"""Gets the execute_line of this DBMaskTaskInfo.
 
         执行行数
 
@@ -154,7 +154,7 @@ class DBMaskTaskInfo:
 
     @execute_line.setter
     def execute_line(self, execute_line):
-        """Sets the execute_line of this DBMaskTaskInfo.
+        r"""Sets the execute_line of this DBMaskTaskInfo.
 
         执行行数
 
@@ -165,7 +165,7 @@ class DBMaskTaskInfo:
 
     @property
     def id(self):
-        """Gets the id of this DBMaskTaskInfo.
+        r"""Gets the id of this DBMaskTaskInfo.
 
         任务ID
 
@@ -176,7 +176,7 @@ class DBMaskTaskInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DBMaskTaskInfo.
+        r"""Sets the id of this DBMaskTaskInfo.
 
         任务ID
 
@@ -187,7 +187,7 @@ class DBMaskTaskInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this DBMaskTaskInfo.
+        r"""Gets the progress of this DBMaskTaskInfo.
 
         执行进度
 
@@ -198,7 +198,7 @@ class DBMaskTaskInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this DBMaskTaskInfo.
+        r"""Sets the progress of this DBMaskTaskInfo.
 
         执行进度
 
@@ -209,7 +209,7 @@ class DBMaskTaskInfo:
 
     @property
     def run_status(self):
-        """Gets the run_status of this DBMaskTaskInfo.
+        r"""Gets the run_status of this DBMaskTaskInfo.
 
         任务运行状态
 
@@ -220,7 +220,7 @@ class DBMaskTaskInfo:
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this DBMaskTaskInfo.
+        r"""Sets the run_status of this DBMaskTaskInfo.
 
         任务运行状态
 
@@ -231,7 +231,7 @@ class DBMaskTaskInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DBMaskTaskInfo.
+        r"""Gets the start_time of this DBMaskTaskInfo.
 
         任务开始时间
 
@@ -242,7 +242,7 @@ class DBMaskTaskInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DBMaskTaskInfo.
+        r"""Sets the start_time of this DBMaskTaskInfo.
 
         任务开始时间
 
@@ -253,7 +253,7 @@ class DBMaskTaskInfo:
 
     @property
     def task_template_id(self):
-        """Gets the task_template_id of this DBMaskTaskInfo.
+        r"""Gets the task_template_id of this DBMaskTaskInfo.
 
         任务模板ID
 
@@ -264,7 +264,7 @@ class DBMaskTaskInfo:
 
     @task_template_id.setter
     def task_template_id(self, task_template_id):
-        """Sets the task_template_id of this DBMaskTaskInfo.
+        r"""Sets the task_template_id of this DBMaskTaskInfo.
 
         任务模板ID
 
@@ -275,7 +275,7 @@ class DBMaskTaskInfo:
 
     @property
     def type(self):
-        """Gets the type of this DBMaskTaskInfo.
+        r"""Gets the type of this DBMaskTaskInfo.
 
         任务类型
 
@@ -286,7 +286,7 @@ class DBMaskTaskInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DBMaskTaskInfo.
+        r"""Sets the type of this DBMaskTaskInfo.
 
         任务类型
 

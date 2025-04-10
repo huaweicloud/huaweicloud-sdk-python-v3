@@ -27,7 +27,7 @@ class NodeIps:
     }
 
     def __init__(self, livedata=None, shubao=None):
-        """NodeIps
+        r"""NodeIps
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeIps:
 
     @property
     def livedata(self):
-        """Gets the livedata of this NodeIps.
+        r"""Gets the livedata of this NodeIps.
 
         livedata节点IP地址列表
 
@@ -61,7 +61,7 @@ class NodeIps:
 
     @livedata.setter
     def livedata(self, livedata):
-        """Sets the livedata of this NodeIps.
+        r"""Sets the livedata of this NodeIps.
 
         livedata节点IP地址列表
 
@@ -72,7 +72,7 @@ class NodeIps:
 
     @property
     def shubao(self):
-        """Gets the shubao of this NodeIps.
+        r"""Gets the shubao of this NodeIps.
 
         shubao节点IP地址列表
 
@@ -83,7 +83,7 @@ class NodeIps:
 
     @shubao.setter
     def shubao(self, shubao):
-        """Sets the shubao of this NodeIps.
+        r"""Sets the shubao of this NodeIps.
 
         shubao节点IP地址列表
 

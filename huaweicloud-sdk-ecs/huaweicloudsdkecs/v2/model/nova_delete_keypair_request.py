@@ -25,7 +25,7 @@ class NovaDeleteKeypairRequest:
     }
 
     def __init__(self, keypair_name=None):
-        """NovaDeleteKeypairRequest
+        r"""NovaDeleteKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaDeleteKeypairRequest:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this NovaDeleteKeypairRequest.
+        r"""Gets the keypair_name of this NovaDeleteKeypairRequest.
 
         密钥名称。
 
@@ -53,7 +53,7 @@ class NovaDeleteKeypairRequest:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this NovaDeleteKeypairRequest.
+        r"""Sets the keypair_name of this NovaDeleteKeypairRequest.
 
         密钥名称。
 

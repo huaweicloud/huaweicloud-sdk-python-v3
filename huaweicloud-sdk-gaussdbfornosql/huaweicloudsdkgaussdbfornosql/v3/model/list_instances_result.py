@@ -21,10 +21,10 @@ class ListInstancesResult:
         'name': 'str',
         'status': 'str',
         'port': 'str',
-        'mode': 'str',
-        'product_type': 'str',
         'region': 'str',
         'datastore': 'ListInstancesDatastoreResult',
+        'mode': 'str',
+        'product_type': 'str',
         'engine': 'str',
         'created': 'str',
         'updated': 'str',
@@ -50,10 +50,10 @@ class ListInstancesResult:
         'name': 'name',
         'status': 'status',
         'port': 'port',
-        'mode': 'mode',
-        'product_type': 'product_type',
         'region': 'region',
         'datastore': 'datastore',
+        'mode': 'mode',
+        'product_type': 'product_type',
         'engine': 'engine',
         'created': 'created',
         'updated': 'updated',
@@ -74,8 +74,8 @@ class ListInstancesResult:
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, product_type=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None):
-        """ListInstancesResult
+    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None):
+        r"""ListInstancesResult
 
         The model defined in huaweicloud sdk
 
@@ -87,14 +87,14 @@ class ListInstancesResult:
         :type status: str
         :param port: 数据库端口。
         :type port: str
-        :param mode: 实例类型。 -  取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。  -  取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 -  取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 -  取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。  -  取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 -  取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。 -  如果不传datastore_type参数，自动忽略该参数设置。 -  默认取值：不涉及。
-        :type mode: str
-        :param product_type: 产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
-        :type product_type: str
         :param region: 实例所在区域。
         :type region: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
+        :param mode: 实例类型。与请求参数相同。
+        :type mode: str
+        :param product_type: 产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        :type product_type: str
         :param engine: 存储引擎。取值为“rocksDB”。
         :type engine: str
         :param created: 实例创建时间。
@@ -139,10 +139,10 @@ class ListInstancesResult:
         self._name = None
         self._status = None
         self._port = None
-        self._mode = None
-        self._product_type = None
         self._region = None
         self._datastore = None
+        self._mode = None
+        self._product_type = None
         self._engine = None
         self._created = None
         self._updated = None
@@ -167,11 +167,11 @@ class ListInstancesResult:
         self.name = name
         self.status = status
         self.port = port
+        self.region = region
+        self.datastore = datastore
         self.mode = mode
         if product_type is not None:
             self.product_type = product_type
-        self.region = region
-        self.datastore = datastore
         self.engine = engine
         self.created = created
         self.updated = updated
@@ -197,7 +197,7 @@ class ListInstancesResult:
 
     @property
     def id(self):
-        """Gets the id of this ListInstancesResult.
+        r"""Gets the id of this ListInstancesResult.
 
         实例ID。
 
@@ -208,7 +208,7 @@ class ListInstancesResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstancesResult.
+        r"""Sets the id of this ListInstancesResult.
 
         实例ID。
 
@@ -219,7 +219,7 @@ class ListInstancesResult:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesResult.
+        r"""Gets the name of this ListInstancesResult.
 
         实例名称。
 
@@ -230,7 +230,7 @@ class ListInstancesResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesResult.
+        r"""Sets the name of this ListInstancesResult.
 
         实例名称。
 
@@ -241,7 +241,7 @@ class ListInstancesResult:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesResult.
+        r"""Gets the status of this ListInstancesResult.
 
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
@@ -252,7 +252,7 @@ class ListInstancesResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesResult.
+        r"""Sets the status of this ListInstancesResult.
 
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
@@ -263,7 +263,7 @@ class ListInstancesResult:
 
     @property
     def port(self):
-        """Gets the port of this ListInstancesResult.
+        r"""Gets the port of this ListInstancesResult.
 
         数据库端口。
 
@@ -274,7 +274,7 @@ class ListInstancesResult:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListInstancesResult.
+        r"""Sets the port of this ListInstancesResult.
 
         数据库端口。
 
@@ -284,52 +284,8 @@ class ListInstancesResult:
         self._port = port
 
     @property
-    def mode(self):
-        """Gets the mode of this ListInstancesResult.
-
-        实例类型。 -  取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。  -  取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 -  取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 -  取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。  -  取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 -  取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。 -  如果不传datastore_type参数，自动忽略该参数设置。 -  默认取值：不涉及。
-
-        :return: The mode of this ListInstancesResult.
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this ListInstancesResult.
-
-        实例类型。 -  取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。  -  取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 -  取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 -  取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。  -  取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 -  取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。 -  如果不传datastore_type参数，自动忽略该参数设置。 -  默认取值：不涉及。
-
-        :param mode: The mode of this ListInstancesResult.
-        :type mode: str
-        """
-        self._mode = mode
-
-    @property
-    def product_type(self):
-        """Gets the product_type of this ListInstancesResult.
-
-        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
-
-        :return: The product_type of this ListInstancesResult.
-        :rtype: str
-        """
-        return self._product_type
-
-    @product_type.setter
-    def product_type(self, product_type):
-        """Sets the product_type of this ListInstancesResult.
-
-        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
-
-        :param product_type: The product_type of this ListInstancesResult.
-        :type product_type: str
-        """
-        self._product_type = product_type
-
-    @property
     def region(self):
-        """Gets the region of this ListInstancesResult.
+        r"""Gets the region of this ListInstancesResult.
 
         实例所在区域。
 
@@ -340,7 +296,7 @@ class ListInstancesResult:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListInstancesResult.
+        r"""Sets the region of this ListInstancesResult.
 
         实例所在区域。
 
@@ -351,7 +307,7 @@ class ListInstancesResult:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ListInstancesResult.
+        r"""Gets the datastore of this ListInstancesResult.
 
         :return: The datastore of this ListInstancesResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
@@ -360,7 +316,7 @@ class ListInstancesResult:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ListInstancesResult.
+        r"""Sets the datastore of this ListInstancesResult.
 
         :param datastore: The datastore of this ListInstancesResult.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
@@ -368,8 +324,52 @@ class ListInstancesResult:
         self._datastore = datastore
 
     @property
+    def mode(self):
+        r"""Gets the mode of this ListInstancesResult.
+
+        实例类型。与请求参数相同。
+
+        :return: The mode of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this ListInstancesResult.
+
+        实例类型。与请求参数相同。
+
+        :param mode: The mode of this ListInstancesResult.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def product_type(self):
+        r"""Gets the product_type of this ListInstancesResult.
+
+        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+
+        :return: The product_type of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._product_type
+
+    @product_type.setter
+    def product_type(self, product_type):
+        r"""Sets the product_type of this ListInstancesResult.
+
+        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+
+        :param product_type: The product_type of this ListInstancesResult.
+        :type product_type: str
+        """
+        self._product_type = product_type
+
+    @property
     def engine(self):
-        """Gets the engine of this ListInstancesResult.
+        r"""Gets the engine of this ListInstancesResult.
 
         存储引擎。取值为“rocksDB”。
 
@@ -380,7 +380,7 @@ class ListInstancesResult:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListInstancesResult.
+        r"""Sets the engine of this ListInstancesResult.
 
         存储引擎。取值为“rocksDB”。
 
@@ -391,7 +391,7 @@ class ListInstancesResult:
 
     @property
     def created(self):
-        """Gets the created of this ListInstancesResult.
+        r"""Gets the created of this ListInstancesResult.
 
         实例创建时间。
 
@@ -402,7 +402,7 @@ class ListInstancesResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListInstancesResult.
+        r"""Sets the created of this ListInstancesResult.
 
         实例创建时间。
 
@@ -413,7 +413,7 @@ class ListInstancesResult:
 
     @property
     def updated(self):
-        """Gets the updated of this ListInstancesResult.
+        r"""Gets the updated of this ListInstancesResult.
 
         实例操作最新变更的时间。
 
@@ -424,7 +424,7 @@ class ListInstancesResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListInstancesResult.
+        r"""Sets the updated of this ListInstancesResult.
 
         实例操作最新变更的时间。
 
@@ -435,7 +435,7 @@ class ListInstancesResult:
 
     @property
     def db_user_name(self):
-        """Gets the db_user_name of this ListInstancesResult.
+        r"""Gets the db_user_name of this ListInstancesResult.
 
         默认用户名。取值为“rwuser”。
 
@@ -446,7 +446,7 @@ class ListInstancesResult:
 
     @db_user_name.setter
     def db_user_name(self, db_user_name):
-        """Sets the db_user_name of this ListInstancesResult.
+        r"""Sets the db_user_name of this ListInstancesResult.
 
         默认用户名。取值为“rwuser”。
 
@@ -457,7 +457,7 @@ class ListInstancesResult:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListInstancesResult.
+        r"""Gets the vpc_id of this ListInstancesResult.
 
         虚拟私有云ID。
 
@@ -468,7 +468,7 @@ class ListInstancesResult:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListInstancesResult.
+        r"""Sets the vpc_id of this ListInstancesResult.
 
         虚拟私有云ID。
 
@@ -479,7 +479,7 @@ class ListInstancesResult:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListInstancesResult.
+        r"""Gets the subnet_id of this ListInstancesResult.
 
         子网ID。
 
@@ -490,7 +490,7 @@ class ListInstancesResult:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListInstancesResult.
+        r"""Sets the subnet_id of this ListInstancesResult.
 
         子网ID。
 
@@ -501,7 +501,7 @@ class ListInstancesResult:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ListInstancesResult.
+        r"""Gets the security_group_id of this ListInstancesResult.
 
         安全组ID。
 
@@ -512,7 +512,7 @@ class ListInstancesResult:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ListInstancesResult.
+        r"""Sets the security_group_id of this ListInstancesResult.
 
         安全组ID。
 
@@ -523,7 +523,7 @@ class ListInstancesResult:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this ListInstancesResult.
+        r"""Gets the backup_strategy of this ListInstancesResult.
 
         :return: The backup_strategy of this ListInstancesResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
@@ -532,7 +532,7 @@ class ListInstancesResult:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this ListInstancesResult.
+        r"""Sets the backup_strategy of this ListInstancesResult.
 
         :param backup_strategy: The backup_strategy of this ListInstancesResult.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
@@ -541,7 +541,7 @@ class ListInstancesResult:
 
     @property
     def pay_mode(self):
-        """Gets the pay_mode of this ListInstancesResult.
+        r"""Gets the pay_mode of this ListInstancesResult.
 
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
@@ -552,7 +552,7 @@ class ListInstancesResult:
 
     @pay_mode.setter
     def pay_mode(self, pay_mode):
-        """Sets the pay_mode of this ListInstancesResult.
+        r"""Sets the pay_mode of this ListInstancesResult.
 
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
@@ -563,7 +563,7 @@ class ListInstancesResult:
 
     @property
     def maintenance_window(self):
-        """Gets the maintenance_window of this ListInstancesResult.
+        r"""Gets the maintenance_window of this ListInstancesResult.
 
         系统可维护时间窗。
 
@@ -574,7 +574,7 @@ class ListInstancesResult:
 
     @maintenance_window.setter
     def maintenance_window(self, maintenance_window):
-        """Sets the maintenance_window of this ListInstancesResult.
+        r"""Sets the maintenance_window of this ListInstancesResult.
 
         系统可维护时间窗。
 
@@ -585,7 +585,7 @@ class ListInstancesResult:
 
     @property
     def groups(self):
-        """Gets the groups of this ListInstancesResult.
+        r"""Gets the groups of this ListInstancesResult.
 
         组信息。
 
@@ -596,7 +596,7 @@ class ListInstancesResult:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListInstancesResult.
+        r"""Sets the groups of this ListInstancesResult.
 
         组信息。
 
@@ -607,7 +607,7 @@ class ListInstancesResult:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInstancesResult.
+        r"""Gets the enterprise_project_id of this ListInstancesResult.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -618,7 +618,7 @@ class ListInstancesResult:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInstancesResult.
+        r"""Sets the enterprise_project_id of this ListInstancesResult.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -629,7 +629,7 @@ class ListInstancesResult:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this ListInstancesResult.
+        r"""Gets the dedicated_resource_id of this ListInstancesResult.
 
         专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -640,7 +640,7 @@ class ListInstancesResult:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this ListInstancesResult.
+        r"""Sets the dedicated_resource_id of this ListInstancesResult.
 
         专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -651,7 +651,7 @@ class ListInstancesResult:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ListInstancesResult.
+        r"""Gets the time_zone of this ListInstancesResult.
 
         时区。
 
@@ -662,7 +662,7 @@ class ListInstancesResult:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ListInstancesResult.
+        r"""Sets the time_zone of this ListInstancesResult.
 
         时区。
 
@@ -673,7 +673,7 @@ class ListInstancesResult:
 
     @property
     def actions(self):
-        """Gets the actions of this ListInstancesResult.
+        r"""Gets the actions of this ListInstancesResult.
 
         实例正在执行的动作。
 
@@ -684,7 +684,7 @@ class ListInstancesResult:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ListInstancesResult.
+        r"""Sets the actions of this ListInstancesResult.
 
         实例正在执行的动作。
 
@@ -695,7 +695,7 @@ class ListInstancesResult:
 
     @property
     def lb_ip_address(self):
-        """Gets the lb_ip_address of this ListInstancesResult.
+        r"""Gets the lb_ip_address of this ListInstancesResult.
 
         负载均衡ip，只有存在负载均衡ip，才会返回该参数。
 
@@ -706,7 +706,7 @@ class ListInstancesResult:
 
     @lb_ip_address.setter
     def lb_ip_address(self, lb_ip_address):
-        """Sets the lb_ip_address of this ListInstancesResult.
+        r"""Sets the lb_ip_address of this ListInstancesResult.
 
         负载均衡ip，只有存在负载均衡ip，才会返回该参数。
 
@@ -717,7 +717,7 @@ class ListInstancesResult:
 
     @property
     def lb_port(self):
-        """Gets the lb_port of this ListInstancesResult.
+        r"""Gets the lb_port of this ListInstancesResult.
 
         负载均衡端口，只有存在负载均衡ip，才会返回该参数。
 
@@ -728,7 +728,7 @@ class ListInstancesResult:
 
     @lb_port.setter
     def lb_port(self, lb_port):
-        """Sets the lb_port of this ListInstancesResult.
+        r"""Sets the lb_port of this ListInstancesResult.
 
         负载均衡端口，只有存在负载均衡ip，才会返回该参数。
 
@@ -739,7 +739,7 @@ class ListInstancesResult:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListInstancesResult.
+        r"""Gets the availability_zone of this ListInstancesResult.
 
         实例可用区。
 
@@ -750,7 +750,7 @@ class ListInstancesResult:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListInstancesResult.
+        r"""Sets the availability_zone of this ListInstancesResult.
 
         实例可用区。
 

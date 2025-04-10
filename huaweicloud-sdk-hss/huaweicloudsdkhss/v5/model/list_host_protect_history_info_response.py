@@ -32,7 +32,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     }
 
     def __init__(self, host_name=None, protect_status=None, total_num=None, data_list=None):
-        """ListHostProtectHistoryInfoResponse
+        r"""ListHostProtectHistoryInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListHostProtectHistoryInfoResponse.
+        r"""Gets the host_name of this ListHostProtectHistoryInfoResponse.
 
         服务器名称
 
@@ -76,7 +76,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListHostProtectHistoryInfoResponse.
+        r"""Sets the host_name of this ListHostProtectHistoryInfoResponse.
 
         服务器名称
 
@@ -87,7 +87,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ListHostProtectHistoryInfoResponse.
+        r"""Gets the protect_status of this ListHostProtectHistoryInfoResponse.
 
         防护状态   - close : 未开启   - opened : 防护中
 
@@ -98,7 +98,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ListHostProtectHistoryInfoResponse.
+        r"""Sets the protect_status of this ListHostProtectHistoryInfoResponse.
 
         防护状态   - close : 未开启   - opened : 防护中
 
@@ -109,7 +109,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListHostProtectHistoryInfoResponse.
+        r"""Gets the total_num of this ListHostProtectHistoryInfoResponse.
 
         total number of static WTPs
 
@@ -120,7 +120,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListHostProtectHistoryInfoResponse.
+        r"""Sets the total_num of this ListHostProtectHistoryInfoResponse.
 
         total number of static WTPs
 
@@ -131,7 +131,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListHostProtectHistoryInfoResponse.
+        r"""Gets the data_list of this ListHostProtectHistoryInfoResponse.
 
         data list
 
@@ -142,7 +142,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListHostProtectHistoryInfoResponse.
+        r"""Sets the data_list of this ListHostProtectHistoryInfoResponse.
 
         data list
 

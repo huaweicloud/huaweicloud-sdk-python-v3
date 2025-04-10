@@ -23,7 +23,7 @@ class ListEvent2alarmRuleRequest:
     }
 
     def __init__(self):
-        """ListEvent2alarmRuleRequest
+        r"""ListEvent2alarmRuleRequest
 
         The model defined in huaweicloud sdk
 

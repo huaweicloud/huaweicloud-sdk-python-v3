@@ -33,7 +33,7 @@ class ListInstanceByTagsRequest:
     }
 
     def __init__(self, resource_type=None, x_language=None, limit=None, offset=None, body=None):
-        """ListInstanceByTagsRequest
+        r"""ListInstanceByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListInstanceByTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListInstanceByTagsRequest.
+        r"""Gets the resource_type of this ListInstanceByTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -81,7 +81,7 @@ class ListInstanceByTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListInstanceByTagsRequest.
+        r"""Sets the resource_type of this ListInstanceByTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -92,7 +92,7 @@ class ListInstanceByTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstanceByTagsRequest.
+        r"""Gets the x_language of this ListInstanceByTagsRequest.
 
         请求语言类型。
 
@@ -103,7 +103,7 @@ class ListInstanceByTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstanceByTagsRequest.
+        r"""Sets the x_language of this ListInstanceByTagsRequest.
 
         请求语言类型。
 
@@ -114,7 +114,7 @@ class ListInstanceByTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceByTagsRequest.
+        r"""Gets the limit of this ListInstanceByTagsRequest.
 
         查询记录数，默认为1000，limit最多为1000,不能为负数，最小值为1。
 
@@ -125,7 +125,7 @@ class ListInstanceByTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceByTagsRequest.
+        r"""Sets the limit of this ListInstanceByTagsRequest.
 
         查询记录数，默认为1000，limit最多为1000,不能为负数，最小值为1。
 
@@ -136,7 +136,7 @@ class ListInstanceByTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceByTagsRequest.
+        r"""Gets the offset of this ListInstanceByTagsRequest.
 
         索引位置，偏移量从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
 
@@ -147,7 +147,7 @@ class ListInstanceByTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceByTagsRequest.
+        r"""Sets the offset of this ListInstanceByTagsRequest.
 
         索引位置，偏移量从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
 
@@ -158,7 +158,7 @@ class ListInstanceByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstanceByTagsRequest.
+        r"""Gets the body of this ListInstanceByTagsRequest.
 
         :return: The body of this ListInstanceByTagsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryInstanceByTagReq`
@@ -167,7 +167,7 @@ class ListInstanceByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstanceByTagsRequest.
+        r"""Sets the body of this ListInstanceByTagsRequest.
 
         :param body: The body of this ListInstanceByTagsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.QueryInstanceByTagReq`

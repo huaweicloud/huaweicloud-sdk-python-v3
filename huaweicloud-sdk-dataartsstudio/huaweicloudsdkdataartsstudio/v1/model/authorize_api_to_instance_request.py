@@ -33,7 +33,7 @@ class AuthorizeApiToInstanceRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, instance_id=None, body=None):
-        """AuthorizeApiToInstanceRequest
+        r"""AuthorizeApiToInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class AuthorizeApiToInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this AuthorizeApiToInstanceRequest.
+        r"""Gets the workspace of this AuthorizeApiToInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -79,7 +79,7 @@ class AuthorizeApiToInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this AuthorizeApiToInstanceRequest.
+        r"""Sets the workspace of this AuthorizeApiToInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -90,7 +90,7 @@ class AuthorizeApiToInstanceRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this AuthorizeApiToInstanceRequest.
+        r"""Gets the dlm_type of this AuthorizeApiToInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -101,7 +101,7 @@ class AuthorizeApiToInstanceRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this AuthorizeApiToInstanceRequest.
+        r"""Sets the dlm_type of this AuthorizeApiToInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -112,7 +112,7 @@ class AuthorizeApiToInstanceRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this AuthorizeApiToInstanceRequest.
+        r"""Gets the api_id of this AuthorizeApiToInstanceRequest.
 
         api编号。
 
@@ -123,7 +123,7 @@ class AuthorizeApiToInstanceRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this AuthorizeApiToInstanceRequest.
+        r"""Sets the api_id of this AuthorizeApiToInstanceRequest.
 
         api编号。
 
@@ -134,7 +134,7 @@ class AuthorizeApiToInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AuthorizeApiToInstanceRequest.
+        r"""Gets the instance_id of this AuthorizeApiToInstanceRequest.
 
         集群编号。
 
@@ -145,7 +145,7 @@ class AuthorizeApiToInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AuthorizeApiToInstanceRequest.
+        r"""Sets the instance_id of this AuthorizeApiToInstanceRequest.
 
         集群编号。
 
@@ -156,7 +156,7 @@ class AuthorizeApiToInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AuthorizeApiToInstanceRequest.
+        r"""Gets the body of this AuthorizeApiToInstanceRequest.
 
         :return: The body of this AuthorizeApiToInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiParaForAuthorizeToInstance`
@@ -165,7 +165,7 @@ class AuthorizeApiToInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AuthorizeApiToInstanceRequest.
+        r"""Sets the body of this AuthorizeApiToInstanceRequest.
 
         :param body: The body of this AuthorizeApiToInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiParaForAuthorizeToInstance`

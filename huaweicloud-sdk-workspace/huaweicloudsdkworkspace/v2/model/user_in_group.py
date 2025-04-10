@@ -35,7 +35,7 @@ class UserInGroup:
     }
 
     def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, total_desktops=None, description=None):
-        """UserInGroup
+        r"""UserInGroup
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UserInGroup:
 
     @property
     def id(self):
-        """Gets the id of this UserInGroup.
+        r"""Gets the id of this UserInGroup.
 
         用户ID。
 
@@ -89,7 +89,7 @@ class UserInGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserInGroup.
+        r"""Sets the id of this UserInGroup.
 
         用户ID。
 
@@ -100,7 +100,7 @@ class UserInGroup:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserInGroup.
+        r"""Gets the user_name of this UserInGroup.
 
         桌面用户名。
 
@@ -111,7 +111,7 @@ class UserInGroup:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserInGroup.
+        r"""Sets the user_name of this UserInGroup.
 
         桌面用户名。
 
@@ -122,7 +122,7 @@ class UserInGroup:
 
     @property
     def user_email(self):
-        """Gets the user_email of this UserInGroup.
+        r"""Gets the user_email of this UserInGroup.
 
         用户邮箱。
 
@@ -133,7 +133,7 @@ class UserInGroup:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this UserInGroup.
+        r"""Sets the user_email of this UserInGroup.
 
         用户邮箱。
 
@@ -144,7 +144,7 @@ class UserInGroup:
 
     @property
     def user_phone(self):
-        """Gets the user_phone of this UserInGroup.
+        r"""Gets the user_phone of this UserInGroup.
 
         用户手机号。
 
@@ -155,7 +155,7 @@ class UserInGroup:
 
     @user_phone.setter
     def user_phone(self, user_phone):
-        """Sets the user_phone of this UserInGroup.
+        r"""Sets the user_phone of this UserInGroup.
 
         用户手机号。
 
@@ -166,7 +166,7 @@ class UserInGroup:
 
     @property
     def total_desktops(self):
-        """Gets the total_desktops of this UserInGroup.
+        r"""Gets the total_desktops of this UserInGroup.
 
         用户桌面数。
 
@@ -177,7 +177,7 @@ class UserInGroup:
 
     @total_desktops.setter
     def total_desktops(self, total_desktops):
-        """Sets the total_desktops of this UserInGroup.
+        r"""Sets the total_desktops of this UserInGroup.
 
         用户桌面数。
 
@@ -188,7 +188,7 @@ class UserInGroup:
 
     @property
     def description(self):
-        """Gets the description of this UserInGroup.
+        r"""Gets the description of this UserInGroup.
 
         用户描述。
 
@@ -199,7 +199,7 @@ class UserInGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UserInGroup.
+        r"""Sets the description of this UserInGroup.
 
         用户描述。
 

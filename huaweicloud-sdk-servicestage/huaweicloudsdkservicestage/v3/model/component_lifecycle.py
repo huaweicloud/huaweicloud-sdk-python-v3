@@ -35,7 +35,7 @@ class ComponentLifecycle:
     }
 
     def __init__(self, type=None, scheme=None, host=None, port=None, path=None, command=None):
-        """ComponentLifecycle
+        r"""ComponentLifecycle
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ComponentLifecycle:
 
     @property
     def type(self):
-        """Gets the type of this ComponentLifecycle.
+        r"""Gets the type of this ComponentLifecycle.
 
         :return: The type of this ComponentLifecycle.
         :rtype: str
@@ -86,7 +86,7 @@ class ComponentLifecycle:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ComponentLifecycle.
+        r"""Sets the type of this ComponentLifecycle.
 
         :param type: The type of this ComponentLifecycle.
         :type type: str
@@ -95,7 +95,7 @@ class ComponentLifecycle:
 
     @property
     def scheme(self):
-        """Gets the scheme of this ComponentLifecycle.
+        r"""Gets the scheme of this ComponentLifecycle.
 
         type为http类型时生效
 
@@ -106,7 +106,7 @@ class ComponentLifecycle:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this ComponentLifecycle.
+        r"""Sets the scheme of this ComponentLifecycle.
 
         type为http类型时生效
 
@@ -117,7 +117,7 @@ class ComponentLifecycle:
 
     @property
     def host(self):
-        """Gets the host of this ComponentLifecycle.
+        r"""Gets the host of this ComponentLifecycle.
 
         type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
 
@@ -128,7 +128,7 @@ class ComponentLifecycle:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ComponentLifecycle.
+        r"""Sets the host of this ComponentLifecycle.
 
         type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
 
@@ -139,7 +139,7 @@ class ComponentLifecycle:
 
     @property
     def port(self):
-        """Gets the port of this ComponentLifecycle.
+        r"""Gets the port of this ComponentLifecycle.
 
         type为http类型时生效。
 
@@ -150,7 +150,7 @@ class ComponentLifecycle:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ComponentLifecycle.
+        r"""Sets the port of this ComponentLifecycle.
 
         type为http类型时生效。
 
@@ -161,7 +161,7 @@ class ComponentLifecycle:
 
     @property
     def path(self):
-        """Gets the path of this ComponentLifecycle.
+        r"""Gets the path of this ComponentLifecycle.
 
         type为http类型时生效。请求路径。
 
@@ -172,7 +172,7 @@ class ComponentLifecycle:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ComponentLifecycle.
+        r"""Sets the path of this ComponentLifecycle.
 
         type为http类型时生效。请求路径。
 
@@ -183,7 +183,7 @@ class ComponentLifecycle:
 
     @property
     def command(self):
-        """Gets the command of this ComponentLifecycle.
+        r"""Gets the command of this ComponentLifecycle.
 
         type为command类型时生效。命令列表
 
@@ -194,7 +194,7 @@ class ComponentLifecycle:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ComponentLifecycle.
+        r"""Sets the command of this ComponentLifecycle.
 
         type为command类型时生效。命令列表
 

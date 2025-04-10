@@ -31,7 +31,7 @@ class BatchShowEdgeAppsRequest:
     }
 
     def __init__(self, instance_id=None, edge_app_id=None, offset=None, limit=None):
-        """BatchShowEdgeAppsRequest
+        r"""BatchShowEdgeAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchShowEdgeAppsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowEdgeAppsRequest.
+        r"""Gets the instance_id of this BatchShowEdgeAppsRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -75,7 +75,7 @@ class BatchShowEdgeAppsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowEdgeAppsRequest.
+        r"""Sets the instance_id of this BatchShowEdgeAppsRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -86,7 +86,7 @@ class BatchShowEdgeAppsRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this BatchShowEdgeAppsRequest.
+        r"""Gets the edge_app_id of this BatchShowEdgeAppsRequest.
 
         **参数说明**：应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -97,7 +97,7 @@ class BatchShowEdgeAppsRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this BatchShowEdgeAppsRequest.
+        r"""Sets the edge_app_id of this BatchShowEdgeAppsRequest.
 
         **参数说明**：应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -108,7 +108,7 @@ class BatchShowEdgeAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowEdgeAppsRequest.
+        r"""Gets the offset of this BatchShowEdgeAppsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -119,7 +119,7 @@ class BatchShowEdgeAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowEdgeAppsRequest.
+        r"""Sets the offset of this BatchShowEdgeAppsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -130,7 +130,7 @@ class BatchShowEdgeAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowEdgeAppsRequest.
+        r"""Gets the limit of this BatchShowEdgeAppsRequest.
 
         **参数说明**：每页记录数。
 
@@ -141,7 +141,7 @@ class BatchShowEdgeAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowEdgeAppsRequest.
+        r"""Sets the limit of this BatchShowEdgeAppsRequest.
 
         **参数说明**：每页记录数。
 

@@ -29,7 +29,7 @@ class ApproveInfo:
     }
 
     def __init__(self, topic_selected=None, need_approve=None, smn_urn_list=None):
-        """ApproveInfo
+        r"""ApproveInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApproveInfo:
 
     @property
     def topic_selected(self):
-        """Gets the topic_selected of this ApproveInfo.
+        r"""Gets the topic_selected of this ApproveInfo.
 
         审批人主题选择。
 
@@ -68,7 +68,7 @@ class ApproveInfo:
 
     @topic_selected.setter
     def topic_selected(self, topic_selected):
-        """Sets the topic_selected of this ApproveInfo.
+        r"""Sets the topic_selected of this ApproveInfo.
 
         审批人主题选择。
 
@@ -79,7 +79,7 @@ class ApproveInfo:
 
     @property
     def need_approve(self):
-        """Gets the need_approve of this ApproveInfo.
+        r"""Gets the need_approve of this ApproveInfo.
 
         是否审核,默认是不审核，true，false。
 
@@ -90,7 +90,7 @@ class ApproveInfo:
 
     @need_approve.setter
     def need_approve(self, need_approve):
-        """Sets the need_approve of this ApproveInfo.
+        r"""Sets the need_approve of this ApproveInfo.
 
         是否审核,默认是不审核，true，false。
 
@@ -101,7 +101,7 @@ class ApproveInfo:
 
     @property
     def smn_urn_list(self):
-        """Gets the smn_urn_list of this ApproveInfo.
+        r"""Gets the smn_urn_list of this ApproveInfo.
 
         审批主题urn集合。
 
@@ -112,7 +112,7 @@ class ApproveInfo:
 
     @smn_urn_list.setter
     def smn_urn_list(self, smn_urn_list):
-        """Sets the smn_urn_list of this ApproveInfo.
+        r"""Sets the smn_urn_list of this ApproveInfo.
 
         审批主题urn集合。
 

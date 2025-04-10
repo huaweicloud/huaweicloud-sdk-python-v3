@@ -29,7 +29,7 @@ class ConfigStatus:
     }
 
     def __init__(self):
-        """ConfigStatus
+        r"""ConfigStatus
 
         The model defined in huaweicloud sdk
 

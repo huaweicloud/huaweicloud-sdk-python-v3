@@ -26,7 +26,7 @@ class ListSecurityDatasourceConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None):
-        """ListSecurityDatasourceConfigurationsResponse
+        r"""ListSecurityDatasourceConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSecurityDatasourceConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListSecurityDatasourceConfigurationsResponse.
+        r"""Gets the configurations of this ListSecurityDatasourceConfigurationsResponse.
 
         数据源操作权限列表
 
@@ -55,7 +55,7 @@ class ListSecurityDatasourceConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListSecurityDatasourceConfigurationsResponse.
+        r"""Sets the configurations of this ListSecurityDatasourceConfigurationsResponse.
 
         数据源操作权限列表
 

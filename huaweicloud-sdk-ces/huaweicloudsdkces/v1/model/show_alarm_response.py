@@ -26,7 +26,7 @@ class ShowAlarmResponse(SdkResponse):
     }
 
     def __init__(self, metric_alarms=None):
-        """ShowAlarmResponse
+        r"""ShowAlarmResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAlarmResponse(SdkResponse):
 
     @property
     def metric_alarms(self):
-        """Gets the metric_alarms of this ShowAlarmResponse.
+        r"""Gets the metric_alarms of this ShowAlarmResponse.
 
         告警对象列表。
 
@@ -55,7 +55,7 @@ class ShowAlarmResponse(SdkResponse):
 
     @metric_alarms.setter
     def metric_alarms(self, metric_alarms):
-        """Sets the metric_alarms of this ShowAlarmResponse.
+        r"""Sets the metric_alarms of this ShowAlarmResponse.
 
         告警对象列表。
 

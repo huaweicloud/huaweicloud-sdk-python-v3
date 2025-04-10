@@ -29,7 +29,7 @@ class OpenTSDBTimestamp:
     }
 
     def __init__(self, type=None, value=None, format=None):
-        """OpenTSDBTimestamp
+        r"""OpenTSDBTimestamp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OpenTSDBTimestamp:
 
     @property
     def type(self):
-        """Gets the type of this OpenTSDBTimestamp.
+        r"""Gets the type of this OpenTSDBTimestamp.
 
         - Timestamp类型表示通道内用户数据对应JSON属性的取值为Timestamp类型，不需要进行数据格式转换就可以生成OpenTSDB的timestamp。 - String类型表示通道内用户数据对应JSON属性的取值为Date格式，需要进行数据格式转换才能生成OpenTSDB的timestamp。
 
@@ -65,7 +65,7 @@ class OpenTSDBTimestamp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenTSDBTimestamp.
+        r"""Sets the type of this OpenTSDBTimestamp.
 
         - Timestamp类型表示通道内用户数据对应JSON属性的取值为Timestamp类型，不需要进行数据格式转换就可以生成OpenTSDB的timestamp。 - String类型表示通道内用户数据对应JSON属性的取值为Date格式，需要进行数据格式转换才能生成OpenTSDB的timestamp。
 
@@ -76,7 +76,7 @@ class OpenTSDBTimestamp:
 
     @property
     def value(self):
-        """Gets the value of this OpenTSDBTimestamp.
+        r"""Gets the value of this OpenTSDBTimestamp.
 
         通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -87,7 +87,7 @@ class OpenTSDBTimestamp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OpenTSDBTimestamp.
+        r"""Sets the value of this OpenTSDBTimestamp.
 
         通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -98,7 +98,7 @@ class OpenTSDBTimestamp:
 
     @property
     def format(self):
-        """Gets the format of this OpenTSDBTimestamp.
+        r"""Gets the format of this OpenTSDBTimestamp.
 
         “type”为“String”类型时必选。表示通道内用户数据对应JSON属性的取值为Date格式，需要根据format字段进行数据格式转换生成OpenTSDB的timestamp。  取值范围：  - yyyy/MM/dd HH:mm:ss - MM/dd/yyyy HH:mm:ss - dd/MM/yyyy HH:mm:ss - yyyy-MM-dd HH:mm:ss - MM-dd-yyyy HH:mm:ss - dd-MM-yyyy HH:mm:ss
 
@@ -109,7 +109,7 @@ class OpenTSDBTimestamp:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this OpenTSDBTimestamp.
+        r"""Sets the format of this OpenTSDBTimestamp.
 
         “type”为“String”类型时必选。表示通道内用户数据对应JSON属性的取值为Date格式，需要根据format字段进行数据格式转换生成OpenTSDB的timestamp。  取值范围：  - yyyy/MM/dd HH:mm:ss - MM/dd/yyyy HH:mm:ss - dd/MM/yyyy HH:mm:ss - yyyy-MM-dd HH:mm:ss - MM-dd-yyyy HH:mm:ss - dd-MM-yyyy HH:mm:ss
 

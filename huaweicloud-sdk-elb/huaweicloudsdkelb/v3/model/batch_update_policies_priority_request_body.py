@@ -25,7 +25,7 @@ class BatchUpdatePoliciesPriorityRequestBody:
     }
 
     def __init__(self, l7policies=None):
-        """BatchUpdatePoliciesPriorityRequestBody
+        r"""BatchUpdatePoliciesPriorityRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdatePoliciesPriorityRequestBody:
 
     @property
     def l7policies(self):
-        """Gets the l7policies of this BatchUpdatePoliciesPriorityRequestBody.
+        r"""Gets the l7policies of this BatchUpdatePoliciesPriorityRequestBody.
 
         参数解释：转发策略的结构体。
 
@@ -54,7 +54,7 @@ class BatchUpdatePoliciesPriorityRequestBody:
 
     @l7policies.setter
     def l7policies(self, l7policies):
-        """Sets the l7policies of this BatchUpdatePoliciesPriorityRequestBody.
+        r"""Sets the l7policies of this BatchUpdatePoliciesPriorityRequestBody.
 
         参数解释：转发策略的结构体。
 

@@ -30,7 +30,7 @@ class ChangeFailoverModeResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, replication_mode=None, workflow_id=None):
-        """ChangeFailoverModeResponse
+        r"""ChangeFailoverModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ChangeFailoverModeResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeFailoverModeResponse.
+        r"""Gets the instance_id of this ChangeFailoverModeResponse.
 
         实例Id
 
@@ -69,7 +69,7 @@ class ChangeFailoverModeResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeFailoverModeResponse.
+        r"""Sets the instance_id of this ChangeFailoverModeResponse.
 
         实例Id
 
@@ -80,7 +80,7 @@ class ChangeFailoverModeResponse(SdkResponse):
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this ChangeFailoverModeResponse.
+        r"""Gets the replication_mode of this ChangeFailoverModeResponse.
 
         同步模式
 
@@ -91,7 +91,7 @@ class ChangeFailoverModeResponse(SdkResponse):
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this ChangeFailoverModeResponse.
+        r"""Sets the replication_mode of this ChangeFailoverModeResponse.
 
         同步模式
 
@@ -102,7 +102,7 @@ class ChangeFailoverModeResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ChangeFailoverModeResponse.
+        r"""Gets the workflow_id of this ChangeFailoverModeResponse.
 
         任务id
 
@@ -113,7 +113,7 @@ class ChangeFailoverModeResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ChangeFailoverModeResponse.
+        r"""Sets the workflow_id of this ChangeFailoverModeResponse.
 
         任务id
 

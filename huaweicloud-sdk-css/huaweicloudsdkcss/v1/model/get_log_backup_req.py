@@ -29,7 +29,7 @@ class GetLogBackupReq:
     }
 
     def __init__(self, instance_name=None, level=None, log_type=None):
-        """GetLogBackupReq
+        r"""GetLogBackupReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GetLogBackupReq:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this GetLogBackupReq.
+        r"""Gets the instance_name of this GetLogBackupReq.
 
         节点名称。通过[查询集群详情](ShowClusterDetail.xml)获取instances中的name属性。
 
@@ -65,7 +65,7 @@ class GetLogBackupReq:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this GetLogBackupReq.
+        r"""Sets the instance_name of this GetLogBackupReq.
 
         节点名称。通过[查询集群详情](ShowClusterDetail.xml)获取instances中的name属性。
 
@@ -76,7 +76,7 @@ class GetLogBackupReq:
 
     @property
     def level(self):
-        """Gets the level of this GetLogBackupReq.
+        r"""Gets the level of this GetLogBackupReq.
 
         日志级别。可查询的日志级别为：INFO，ERROR，DEBUG，WARN。
 
@@ -87,7 +87,7 @@ class GetLogBackupReq:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this GetLogBackupReq.
+        r"""Sets the level of this GetLogBackupReq.
 
         日志级别。可查询的日志级别为：INFO，ERROR，DEBUG，WARN。
 
@@ -98,7 +98,7 @@ class GetLogBackupReq:
 
     @property
     def log_type(self):
-        """Gets the log_type of this GetLogBackupReq.
+        r"""Gets the log_type of this GetLogBackupReq.
 
         日志类型。可查询的日志类型为：deprecation，indexingSlow，searchSlow， instance。
 
@@ -109,7 +109,7 @@ class GetLogBackupReq:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this GetLogBackupReq.
+        r"""Sets the log_type of this GetLogBackupReq.
 
         日志类型。可查询的日志类型为：deprecation，indexingSlow，searchSlow， instance。
 

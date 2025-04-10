@@ -25,7 +25,7 @@ class DownloadFailureReportRequest:
     }
 
     def __init__(self, migration_project_id=None):
-        """DownloadFailureReportRequest
+        r"""DownloadFailureReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadFailureReportRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this DownloadFailureReportRequest.
+        r"""Gets the migration_project_id of this DownloadFailureReportRequest.
 
         迁移项目ID。
 
@@ -53,7 +53,7 @@ class DownloadFailureReportRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this DownloadFailureReportRequest.
+        r"""Sets the migration_project_id of this DownloadFailureReportRequest.
 
         迁移项目ID。
 

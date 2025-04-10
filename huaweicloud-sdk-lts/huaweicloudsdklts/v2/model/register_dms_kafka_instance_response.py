@@ -26,7 +26,7 @@ class RegisterDmsKafkaInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """RegisterDmsKafkaInstanceResponse
+        r"""RegisterDmsKafkaInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterDmsKafkaInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RegisterDmsKafkaInstanceResponse.
+        r"""Gets the instance_id of this RegisterDmsKafkaInstanceResponse.
 
         kafka ID
 
@@ -55,7 +55,7 @@ class RegisterDmsKafkaInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RegisterDmsKafkaInstanceResponse.
+        r"""Sets the instance_id of this RegisterDmsKafkaInstanceResponse.
 
         kafka ID
 

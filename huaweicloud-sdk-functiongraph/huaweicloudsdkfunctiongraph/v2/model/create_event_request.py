@@ -27,7 +27,7 @@ class CreateEventRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CreateEventRequest
+        r"""CreateEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEventRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this CreateEventRequest.
+        r"""Gets the function_urn of this CreateEventRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class CreateEventRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this CreateEventRequest.
+        r"""Sets the function_urn of this CreateEventRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class CreateEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEventRequest.
+        r"""Gets the body of this CreateEventRequest.
 
         :return: The body of this CreateEventRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventRequestBody`
@@ -80,7 +80,7 @@ class CreateEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEventRequest.
+        r"""Sets the body of this CreateEventRequest.
 
         :param body: The body of this CreateEventRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventRequestBody`

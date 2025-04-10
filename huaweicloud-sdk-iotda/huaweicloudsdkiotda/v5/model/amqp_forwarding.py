@@ -25,7 +25,7 @@ class AmqpForwarding:
     }
 
     def __init__(self, queue_name=None):
-        """AmqpForwarding
+        r"""AmqpForwarding
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AmqpForwarding:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this AmqpForwarding.
+        r"""Gets the queue_name of this AmqpForwarding.
 
         **参数说明**：用于接收满足规则条件数据的amqp queue。
 
@@ -53,7 +53,7 @@ class AmqpForwarding:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this AmqpForwarding.
+        r"""Sets the queue_name of this AmqpForwarding.
 
         **参数说明**：用于接收满足规则条件数据的amqp queue。
 

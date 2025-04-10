@@ -35,7 +35,7 @@ class ListUserRolesRequest:
     }
 
     def __init__(self, instance_id=None, role_pattern=None, limit=None, marker=None, reverse_page=None, user_name=None):
-        """ListUserRolesRequest
+        r"""ListUserRolesRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListUserRolesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListUserRolesRequest.
+        r"""Gets the instance_id of this ListUserRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -87,7 +87,7 @@ class ListUserRolesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListUserRolesRequest.
+        r"""Sets the instance_id of this ListUserRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -98,7 +98,7 @@ class ListUserRolesRequest:
 
     @property
     def role_pattern(self):
-        """Gets the role_pattern of this ListUserRolesRequest.
+        r"""Gets the role_pattern of this ListUserRolesRequest.
 
         模糊匹配角色名称。只能包含字母、数字和_|*.特殊字符，且长度为1~255个字符。
 
@@ -109,7 +109,7 @@ class ListUserRolesRequest:
 
     @role_pattern.setter
     def role_pattern(self, role_pattern):
-        """Sets the role_pattern of this ListUserRolesRequest.
+        r"""Sets the role_pattern of this ListUserRolesRequest.
 
         模糊匹配角色名称。只能包含字母、数字和_|*.特殊字符，且长度为1~255个字符。
 
@@ -120,7 +120,7 @@ class ListUserRolesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserRolesRequest.
+        r"""Gets the limit of this ListUserRolesRequest.
 
         查询返回条数。默认值为100。最小值为1，最大值为1000。
 
@@ -131,7 +131,7 @@ class ListUserRolesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserRolesRequest.
+        r"""Sets the limit of this ListUserRolesRequest.
 
         查询返回条数。默认值为100。最小值为1，最大值为1000。
 
@@ -142,7 +142,7 @@ class ListUserRolesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListUserRolesRequest.
+        r"""Gets the marker of this ListUserRolesRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为1024。
 
@@ -153,7 +153,7 @@ class ListUserRolesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListUserRolesRequest.
+        r"""Sets the marker of this ListUserRolesRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为1024。
 
@@ -164,7 +164,7 @@ class ListUserRolesRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListUserRolesRequest.
+        r"""Gets the reverse_page of this ListUserRolesRequest.
 
         是否查询上一页。默认为false。
 
@@ -175,7 +175,7 @@ class ListUserRolesRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListUserRolesRequest.
+        r"""Sets the reverse_page of this ListUserRolesRequest.
 
         是否查询上一页。默认为false。
 
@@ -186,7 +186,7 @@ class ListUserRolesRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUserRolesRequest.
+        r"""Gets the user_name of this ListUserRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -197,7 +197,7 @@ class ListUserRolesRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUserRolesRequest.
+        r"""Sets the user_name of this ListUserRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 

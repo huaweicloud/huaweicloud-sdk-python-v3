@@ -27,7 +27,7 @@ class UpdateAimMsgAppRequest:
     }
 
     def __init__(self, app_id=None, body=None):
-        """UpdateAimMsgAppRequest
+        r"""UpdateAimMsgAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAimMsgAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAimMsgAppRequest.
+        r"""Gets the app_id of this UpdateAimMsgAppRequest.
 
         应用ID。
 
@@ -60,7 +60,7 @@ class UpdateAimMsgAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAimMsgAppRequest.
+        r"""Sets the app_id of this UpdateAimMsgAppRequest.
 
         应用ID。
 
@@ -71,7 +71,7 @@ class UpdateAimMsgAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAimMsgAppRequest.
+        r"""Gets the body of this UpdateAimMsgAppRequest.
 
         :return: The body of this UpdateAimMsgAppRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.MsgAppRequest`
@@ -80,7 +80,7 @@ class UpdateAimMsgAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAimMsgAppRequest.
+        r"""Sets the body of this UpdateAimMsgAppRequest.
 
         :param body: The body of this UpdateAimMsgAppRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.MsgAppRequest`

@@ -29,7 +29,7 @@ class RulesRemote:
     }
 
     def __init__(self, type=None, any_one_of=None, not_any_of=None):
-        """RulesRemote
+        r"""RulesRemote
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RulesRemote:
 
     @property
     def type(self):
-        """Gets the type of this RulesRemote.
+        r"""Gets the type of this RulesRemote.
 
         表示IdP断言中的属性。
 
@@ -67,7 +67,7 @@ class RulesRemote:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RulesRemote.
+        r"""Sets the type of this RulesRemote.
 
         表示IdP断言中的属性。
 
@@ -78,7 +78,7 @@ class RulesRemote:
 
     @property
     def any_one_of(self):
-        """Gets the any_one_of of this RulesRemote.
+        r"""Gets the any_one_of of this RulesRemote.
 
         输入属性值中包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
 
@@ -89,7 +89,7 @@ class RulesRemote:
 
     @any_one_of.setter
     def any_one_of(self, any_one_of):
-        """Sets the any_one_of of this RulesRemote.
+        r"""Sets the any_one_of of this RulesRemote.
 
         输入属性值中包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
 
@@ -100,7 +100,7 @@ class RulesRemote:
 
     @property
     def not_any_of(self):
-        """Gets the not_any_of of this RulesRemote.
+        r"""Gets the not_any_of of this RulesRemote.
 
         输入属性值中不包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
 
@@ -111,7 +111,7 @@ class RulesRemote:
 
     @not_any_of.setter
     def not_any_of(self, not_any_of):
-        """Sets the not_any_of of this RulesRemote.
+        r"""Sets the not_any_of of this RulesRemote.
 
         输入属性值中不包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
 

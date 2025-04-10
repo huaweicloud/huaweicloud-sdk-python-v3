@@ -44,7 +44,7 @@ class CreateAppInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, namespace=None, version=None, app_id=None, app_version=None, status=None, status_description=None, values=None, create_time=None, update_time=None):
-        """CreateAppInstanceResponse
+        r"""CreateAppInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAppInstanceResponse.
+        r"""Gets the id of this CreateAppInstanceResponse.
 
         应用实例ID
 
@@ -118,7 +118,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAppInstanceResponse.
+        r"""Sets the id of this CreateAppInstanceResponse.
 
         应用实例ID
 
@@ -129,7 +129,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateAppInstanceResponse.
+        r"""Gets the namespace of this CreateAppInstanceResponse.
 
         边缘集群命名空间
 
@@ -140,7 +140,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateAppInstanceResponse.
+        r"""Sets the namespace of this CreateAppInstanceResponse.
 
         边缘集群命名空间
 
@@ -151,7 +151,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateAppInstanceResponse.
+        r"""Gets the version of this CreateAppInstanceResponse.
 
         应用实例版本
 
@@ -162,7 +162,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateAppInstanceResponse.
+        r"""Sets the version of this CreateAppInstanceResponse.
 
         应用实例版本
 
@@ -173,7 +173,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppInstanceResponse.
+        r"""Gets the app_id of this CreateAppInstanceResponse.
 
         应用ID
 
@@ -184,7 +184,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppInstanceResponse.
+        r"""Sets the app_id of this CreateAppInstanceResponse.
 
         应用ID
 
@@ -195,7 +195,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def app_version(self):
-        """Gets the app_version of this CreateAppInstanceResponse.
+        r"""Gets the app_version of this CreateAppInstanceResponse.
 
         应用版本
 
@@ -206,7 +206,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this CreateAppInstanceResponse.
+        r"""Sets the app_version of this CreateAppInstanceResponse.
 
         应用版本
 
@@ -217,7 +217,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAppInstanceResponse.
+        r"""Gets the status of this CreateAppInstanceResponse.
 
         应用实例状态
 
@@ -228,7 +228,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAppInstanceResponse.
+        r"""Sets the status of this CreateAppInstanceResponse.
 
         应用实例状态
 
@@ -239,7 +239,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def status_description(self):
-        """Gets the status_description of this CreateAppInstanceResponse.
+        r"""Gets the status_description of this CreateAppInstanceResponse.
 
         状态描述
 
@@ -250,7 +250,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @status_description.setter
     def status_description(self, status_description):
-        """Sets the status_description of this CreateAppInstanceResponse.
+        r"""Sets the status_description of this CreateAppInstanceResponse.
 
         状态描述
 
@@ -261,7 +261,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this CreateAppInstanceResponse.
+        r"""Gets the values of this CreateAppInstanceResponse.
 
         应用实例chart配置
 
@@ -272,7 +272,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateAppInstanceResponse.
+        r"""Sets the values of this CreateAppInstanceResponse.
 
         应用实例chart配置
 
@@ -283,7 +283,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateAppInstanceResponse.
+        r"""Gets the create_time of this CreateAppInstanceResponse.
 
         创建时间
 
@@ -294,7 +294,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateAppInstanceResponse.
+        r"""Sets the create_time of this CreateAppInstanceResponse.
 
         创建时间
 
@@ -305,7 +305,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateAppInstanceResponse.
+        r"""Gets the update_time of this CreateAppInstanceResponse.
 
         最后一次更新时间
 
@@ -316,7 +316,7 @@ class CreateAppInstanceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateAppInstanceResponse.
+        r"""Sets the update_time of this CreateAppInstanceResponse.
 
         最后一次更新时间
 

@@ -41,7 +41,7 @@ class ListDomainBandwidthPeakRequest:
     }
 
     def __init__(self, play_domains=None, app=None, stream=None, region=None, isp=None, protocol=None, start_time=None, end_time=None, service_type=None):
-        """ListDomainBandwidthPeakRequest
+        r"""ListDomainBandwidthPeakRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def play_domains(self):
-        """Gets the play_domains of this ListDomainBandwidthPeakRequest.
+        r"""Gets the play_domains of this ListDomainBandwidthPeakRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽峰值。 
 
@@ -110,7 +110,7 @@ class ListDomainBandwidthPeakRequest:
 
     @play_domains.setter
     def play_domains(self, play_domains):
-        """Sets the play_domains of this ListDomainBandwidthPeakRequest.
+        r"""Sets the play_domains of this ListDomainBandwidthPeakRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽峰值。 
 
@@ -121,7 +121,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListDomainBandwidthPeakRequest.
+        r"""Gets the app of this ListDomainBandwidthPeakRequest.
 
         应用名称。
 
@@ -132,7 +132,7 @@ class ListDomainBandwidthPeakRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListDomainBandwidthPeakRequest.
+        r"""Sets the app of this ListDomainBandwidthPeakRequest.
 
         应用名称。
 
@@ -143,7 +143,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListDomainBandwidthPeakRequest.
+        r"""Gets the stream of this ListDomainBandwidthPeakRequest.
 
         流名。
 
@@ -154,7 +154,7 @@ class ListDomainBandwidthPeakRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListDomainBandwidthPeakRequest.
+        r"""Sets the stream of this ListDomainBandwidthPeakRequest.
 
         流名。
 
@@ -165,7 +165,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListDomainBandwidthPeakRequest.
+        r"""Gets the region of this ListDomainBandwidthPeakRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -176,7 +176,7 @@ class ListDomainBandwidthPeakRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListDomainBandwidthPeakRequest.
+        r"""Sets the region of this ListDomainBandwidthPeakRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -187,7 +187,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListDomainBandwidthPeakRequest.
+        r"""Gets the isp of this ListDomainBandwidthPeakRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -198,7 +198,7 @@ class ListDomainBandwidthPeakRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListDomainBandwidthPeakRequest.
+        r"""Sets the isp of this ListDomainBandwidthPeakRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -209,7 +209,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListDomainBandwidthPeakRequest.
+        r"""Gets the protocol of this ListDomainBandwidthPeakRequest.
 
         请求协议
 
@@ -220,7 +220,7 @@ class ListDomainBandwidthPeakRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListDomainBandwidthPeakRequest.
+        r"""Sets the protocol of this ListDomainBandwidthPeakRequest.
 
         请求协议
 
@@ -231,7 +231,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListDomainBandwidthPeakRequest.
+        r"""Gets the start_time of this ListDomainBandwidthPeakRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -242,7 +242,7 @@ class ListDomainBandwidthPeakRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListDomainBandwidthPeakRequest.
+        r"""Sets the start_time of this ListDomainBandwidthPeakRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -253,7 +253,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDomainBandwidthPeakRequest.
+        r"""Gets the end_time of this ListDomainBandwidthPeakRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -264,7 +264,7 @@ class ListDomainBandwidthPeakRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDomainBandwidthPeakRequest.
+        r"""Sets the end_time of this ListDomainBandwidthPeakRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -275,7 +275,7 @@ class ListDomainBandwidthPeakRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListDomainBandwidthPeakRequest.
+        r"""Gets the service_type of this ListDomainBandwidthPeakRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
 
@@ -286,7 +286,7 @@ class ListDomainBandwidthPeakRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListDomainBandwidthPeakRequest.
+        r"""Sets the service_type of this ListDomainBandwidthPeakRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
 

@@ -26,7 +26,7 @@ class ListDatastoresResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """ListDatastoresResponse
+        r"""ListDatastoresResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDatastoresResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListDatastoresResponse.
+        r"""Gets the versions of this ListDatastoresResponse.
 
         数据库版本号。
 
@@ -55,7 +55,7 @@ class ListDatastoresResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListDatastoresResponse.
+        r"""Sets the versions of this ListDatastoresResponse.
 
         数据库版本号。
 

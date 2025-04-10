@@ -31,7 +31,7 @@ class Address:
     }
 
     def __init__(self, intranet_ip=None, access_ip=None, server_ip=None, public_ip=None):
-        """Address
+        r"""Address
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Address:
 
     @property
     def intranet_ip(self):
-        """Gets the intranet_ip of this Address.
+        r"""Gets the intranet_ip of this Address.
 
         云手机服务器的内网IP，过期字段。
 
@@ -75,7 +75,7 @@ class Address:
 
     @intranet_ip.setter
     def intranet_ip(self, intranet_ip):
-        """Sets the intranet_ip of this Address.
+        r"""Sets the intranet_ip of this Address.
 
         云手机服务器的内网IP，过期字段。
 
@@ -86,7 +86,7 @@ class Address:
 
     @property
     def access_ip(self):
-        """Gets the access_ip of this Address.
+        r"""Gets the access_ip of this Address.
 
         云手机服务器的公网IP，过期字段。
 
@@ -97,7 +97,7 @@ class Address:
 
     @access_ip.setter
     def access_ip(self, access_ip):
-        """Sets the access_ip of this Address.
+        r"""Sets the access_ip of this Address.
 
         云手机服务器的公网IP，过期字段。
 
@@ -108,7 +108,7 @@ class Address:
 
     @property
     def server_ip(self):
-        """Gets the server_ip of this Address.
+        r"""Gets the server_ip of this Address.
 
         云手机服务器的内网IP，新增字段。
 
@@ -119,7 +119,7 @@ class Address:
 
     @server_ip.setter
     def server_ip(self, server_ip):
-        """Sets the server_ip of this Address.
+        r"""Sets the server_ip of this Address.
 
         云手机服务器的内网IP，新增字段。
 
@@ -130,7 +130,7 @@ class Address:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this Address.
+        r"""Gets the public_ip of this Address.
 
         云手机服务器的公网IP，新增字段。
 
@@ -141,7 +141,7 @@ class Address:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this Address.
+        r"""Sets the public_ip of this Address.
 
         云手机服务器的公网IP，新增字段。
 

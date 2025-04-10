@@ -32,7 +32,7 @@ class SearchUsersResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchUsersResponse
+        r"""SearchUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchUsersResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchUsersResponse.
+        r"""Gets the offset of this SearchUsersResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchUsersResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchUsersResponse.
+        r"""Sets the offset of this SearchUsersResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchUsersResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchUsersResponse.
+        r"""Gets the limit of this SearchUsersResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchUsersResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchUsersResponse.
+        r"""Sets the limit of this SearchUsersResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchUsersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchUsersResponse.
+        r"""Gets the count of this SearchUsersResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchUsersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchUsersResponse.
+        r"""Sets the count of this SearchUsersResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchUsersResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchUsersResponse.
+        r"""Gets the data of this SearchUsersResponse.
 
         分页查询企业用户信息。
 
@@ -142,7 +142,7 @@ class SearchUsersResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchUsersResponse.
+        r"""Sets the data of this SearchUsersResponse.
 
         分页查询企业用户信息。
 

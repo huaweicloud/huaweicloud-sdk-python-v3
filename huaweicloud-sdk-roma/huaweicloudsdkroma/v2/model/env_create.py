@@ -27,7 +27,7 @@ class EnvCreate:
     }
 
     def __init__(self, name=None, remark=None):
-        """EnvCreate
+        r"""EnvCreate
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EnvCreate:
 
     @property
     def name(self):
-        """Gets the name of this EnvCreate.
+        r"""Gets the name of this EnvCreate.
 
         环境的名称，支持英文，数字，下划线，且只能以英文字母开头。
 
@@ -60,7 +60,7 @@ class EnvCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvCreate.
+        r"""Sets the name of this EnvCreate.
 
         环境的名称，支持英文，数字，下划线，且只能以英文字母开头。
 
@@ -71,7 +71,7 @@ class EnvCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this EnvCreate.
+        r"""Gets the remark of this EnvCreate.
 
         描述信息 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -82,7 +82,7 @@ class EnvCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this EnvCreate.
+        r"""Sets the remark of this EnvCreate.
 
         描述信息 > 中文字符必须为UTF-8或者unicode编码。
 

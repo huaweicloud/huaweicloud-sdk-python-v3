@@ -24,7 +24,7 @@ class CreateCertTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateCertTagResponse
+        r"""CreateCertTagResponse
 
         The model defined in huaweicloud sdk
 

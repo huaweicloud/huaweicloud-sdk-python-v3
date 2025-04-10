@@ -30,7 +30,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
     }
 
     def __init__(self, auths=None, x_swr_dockerlogin=None, x_swr_expireat=None):
-        """CreateAuthorizationTokenResponse
+        r"""CreateAuthorizationTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
 
     @property
     def auths(self):
-        """Gets the auths of this CreateAuthorizationTokenResponse.
+        r"""Gets the auths of this CreateAuthorizationTokenResponse.
 
         认证信息
 
@@ -69,7 +69,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
 
     @auths.setter
     def auths(self, auths):
-        """Sets the auths of this CreateAuthorizationTokenResponse.
+        r"""Sets the auths of this CreateAuthorizationTokenResponse.
 
         认证信息
 
@@ -80,7 +80,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
 
     @property
     def x_swr_dockerlogin(self):
-        """Gets the x_swr_dockerlogin of this CreateAuthorizationTokenResponse.
+        r"""Gets the x_swr_dockerlogin of this CreateAuthorizationTokenResponse.
 
         :return: The x_swr_dockerlogin of this CreateAuthorizationTokenResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
 
     @x_swr_dockerlogin.setter
     def x_swr_dockerlogin(self, x_swr_dockerlogin):
-        """Sets the x_swr_dockerlogin of this CreateAuthorizationTokenResponse.
+        r"""Sets the x_swr_dockerlogin of this CreateAuthorizationTokenResponse.
 
         :param x_swr_dockerlogin: The x_swr_dockerlogin of this CreateAuthorizationTokenResponse.
         :type x_swr_dockerlogin: str
@@ -98,7 +98,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
 
     @property
     def x_swr_expireat(self):
-        """Gets the x_swr_expireat of this CreateAuthorizationTokenResponse.
+        r"""Gets the x_swr_expireat of this CreateAuthorizationTokenResponse.
 
         :return: The x_swr_expireat of this CreateAuthorizationTokenResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateAuthorizationTokenResponse(SdkResponse):
 
     @x_swr_expireat.setter
     def x_swr_expireat(self, x_swr_expireat):
-        """Sets the x_swr_expireat of this CreateAuthorizationTokenResponse.
+        r"""Sets the x_swr_expireat of this CreateAuthorizationTokenResponse.
 
         :param x_swr_expireat: The x_swr_expireat of this CreateAuthorizationTokenResponse.
         :type x_swr_expireat: str

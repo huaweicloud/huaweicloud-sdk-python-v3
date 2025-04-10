@@ -29,7 +29,7 @@ class JobScriptBatchDetailModel:
     }
 
     def __init__(self, batch_index=None, total_instances=None, execute_instances=None):
-        """JobScriptBatchDetailModel
+        r"""JobScriptBatchDetailModel
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobScriptBatchDetailModel:
 
     @property
     def batch_index(self):
-        """Gets the batch_index of this JobScriptBatchDetailModel.
+        r"""Gets the batch_index of this JobScriptBatchDetailModel.
 
         批次索引，从1开始
 
@@ -68,7 +68,7 @@ class JobScriptBatchDetailModel:
 
     @batch_index.setter
     def batch_index(self, batch_index):
-        """Sets the batch_index of this JobScriptBatchDetailModel.
+        r"""Sets the batch_index of this JobScriptBatchDetailModel.
 
         批次索引，从1开始
 
@@ -79,7 +79,7 @@ class JobScriptBatchDetailModel:
 
     @property
     def total_instances(self):
-        """Gets the total_instances of this JobScriptBatchDetailModel.
+        r"""Gets the total_instances of this JobScriptBatchDetailModel.
 
         批次内执行实例数量
 
@@ -90,7 +90,7 @@ class JobScriptBatchDetailModel:
 
     @total_instances.setter
     def total_instances(self, total_instances):
-        """Sets the total_instances of this JobScriptBatchDetailModel.
+        r"""Sets the total_instances of this JobScriptBatchDetailModel.
 
         批次内执行实例数量
 
@@ -101,7 +101,7 @@ class JobScriptBatchDetailModel:
 
     @property
     def execute_instances(self):
-        """Gets the execute_instances of this JobScriptBatchDetailModel.
+        r"""Gets the execute_instances of this JobScriptBatchDetailModel.
 
         执行实例列表，分页
 
@@ -112,7 +112,7 @@ class JobScriptBatchDetailModel:
 
     @execute_instances.setter
     def execute_instances(self, execute_instances):
-        """Sets the execute_instances of this JobScriptBatchDetailModel.
+        r"""Sets the execute_instances of this JobScriptBatchDetailModel.
 
         执行实例列表，分页
 

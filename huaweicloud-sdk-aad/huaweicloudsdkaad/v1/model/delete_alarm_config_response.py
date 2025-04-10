@@ -26,7 +26,7 @@ class DeleteAlarmConfigResponse(SdkResponse):
     }
 
     def __init__(self, topic_urn=None):
-        """DeleteAlarmConfigResponse
+        r"""DeleteAlarmConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAlarmConfigResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DeleteAlarmConfigResponse.
+        r"""Gets the topic_urn of this DeleteAlarmConfigResponse.
 
         SMN的topic urn
 
@@ -55,7 +55,7 @@ class DeleteAlarmConfigResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DeleteAlarmConfigResponse.
+        r"""Sets the topic_urn of this DeleteAlarmConfigResponse.
 
         SMN的topic urn
 

@@ -26,7 +26,7 @@ class ListRuntimesResponse(SdkResponse):
     }
 
     def __init__(self, runtimes=None):
-        """ListRuntimesResponse
+        r"""ListRuntimesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRuntimesResponse(SdkResponse):
 
     @property
     def runtimes(self):
-        """Gets the runtimes of this ListRuntimesResponse.
+        r"""Gets the runtimes of this ListRuntimesResponse.
 
         运行时列表。
 
@@ -55,7 +55,7 @@ class ListRuntimesResponse(SdkResponse):
 
     @runtimes.setter
     def runtimes(self, runtimes):
-        """Sets the runtimes of this ListRuntimesResponse.
+        r"""Sets the runtimes of this ListRuntimesResponse.
 
         运行时列表。
 

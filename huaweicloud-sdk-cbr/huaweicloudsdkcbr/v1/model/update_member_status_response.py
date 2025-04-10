@@ -26,7 +26,7 @@ class UpdateMemberStatusResponse(SdkResponse):
     }
 
     def __init__(self, member=None):
-        """UpdateMemberStatusResponse
+        r"""UpdateMemberStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMemberStatusResponse(SdkResponse):
 
     @property
     def member(self):
-        """Gets the member of this UpdateMemberStatusResponse.
+        r"""Gets the member of this UpdateMemberStatusResponse.
 
         :return: The member of this UpdateMemberStatusResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.Member`
@@ -53,7 +53,7 @@ class UpdateMemberStatusResponse(SdkResponse):
 
     @member.setter
     def member(self, member):
-        """Sets the member of this UpdateMemberStatusResponse.
+        r"""Sets the member of this UpdateMemberStatusResponse.
 
         :param member: The member of this UpdateMemberStatusResponse.
         :type member: :class:`huaweicloudsdkcbr.v1.Member`

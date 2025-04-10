@@ -31,7 +31,7 @@ class ListTopSlowLogRequest:
     }
 
     def __init__(self, num=None, x_language=None, start_at=None, end_at=None):
-        """ListTopSlowLogRequest
+        r"""ListTopSlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListTopSlowLogRequest:
 
     @property
     def num(self):
-        """Gets the num of this ListTopSlowLogRequest.
+        r"""Gets the num of this ListTopSlowLogRequest.
 
         TOP数量
 
@@ -72,7 +72,7 @@ class ListTopSlowLogRequest:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ListTopSlowLogRequest.
+        r"""Sets the num of this ListTopSlowLogRequest.
 
         TOP数量
 
@@ -83,7 +83,7 @@ class ListTopSlowLogRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTopSlowLogRequest.
+        r"""Gets the x_language of this ListTopSlowLogRequest.
 
         语言
 
@@ -94,7 +94,7 @@ class ListTopSlowLogRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTopSlowLogRequest.
+        r"""Sets the x_language of this ListTopSlowLogRequest.
 
         语言
 
@@ -105,7 +105,7 @@ class ListTopSlowLogRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ListTopSlowLogRequest.
+        r"""Gets the start_at of this ListTopSlowLogRequest.
 
         开始时间
 
@@ -116,7 +116,7 @@ class ListTopSlowLogRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ListTopSlowLogRequest.
+        r"""Sets the start_at of this ListTopSlowLogRequest.
 
         开始时间
 
@@ -127,7 +127,7 @@ class ListTopSlowLogRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ListTopSlowLogRequest.
+        r"""Gets the end_at of this ListTopSlowLogRequest.
 
         结束时间
 
@@ -138,7 +138,7 @@ class ListTopSlowLogRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ListTopSlowLogRequest.
+        r"""Sets the end_at of this ListTopSlowLogRequest.
 
         结束时间
 

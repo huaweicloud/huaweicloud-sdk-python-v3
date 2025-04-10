@@ -29,7 +29,7 @@ class BehaviorWeights:
     }
 
     def __init__(self, behavior_type=None, weight=None, other_uses=None):
-        """BehaviorWeights
+        r"""BehaviorWeights
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BehaviorWeights:
 
     @property
     def behavior_type(self):
-        """Gets the behavior_type of this BehaviorWeights.
+        r"""Gets the behavior_type of this BehaviorWeights.
 
         行为类型。
 
@@ -68,7 +68,7 @@ class BehaviorWeights:
 
     @behavior_type.setter
     def behavior_type(self, behavior_type):
-        """Sets the behavior_type of this BehaviorWeights.
+        r"""Sets the behavior_type of this BehaviorWeights.
 
         行为类型。
 
@@ -79,7 +79,7 @@ class BehaviorWeights:
 
     @property
     def weight(self):
-        """Gets the weight of this BehaviorWeights.
+        r"""Gets the weight of this BehaviorWeights.
 
         行为权重。
 
@@ -90,7 +90,7 @@ class BehaviorWeights:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this BehaviorWeights.
+        r"""Sets the weight of this BehaviorWeights.
 
         行为权重。
 
@@ -101,7 +101,7 @@ class BehaviorWeights:
 
     @property
     def other_uses(self):
-        """Gets the other_uses of this BehaviorWeights.
+        r"""Gets the other_uses of this BehaviorWeights.
 
         其他用途。
 
@@ -112,7 +112,7 @@ class BehaviorWeights:
 
     @other_uses.setter
     def other_uses(self, other_uses):
-        """Sets the other_uses of this BehaviorWeights.
+        r"""Sets the other_uses of this BehaviorWeights.
 
         其他用途。
 

@@ -27,7 +27,7 @@ class UpdateInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceRequest
+        r"""UpdateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceRequest.
+        r"""Gets the instance_id of this UpdateInstanceRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceRequest.
+        r"""Sets the instance_id of this UpdateInstanceRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceRequest.
+        r"""Gets the body of this UpdateInstanceRequest.
 
         :return: The body of this UpdateInstanceRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateInstanceReq`
@@ -80,7 +80,7 @@ class UpdateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceRequest.
+        r"""Sets the body of this UpdateInstanceRequest.
 
         :param body: The body of this UpdateInstanceRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.UpdateInstanceReq`

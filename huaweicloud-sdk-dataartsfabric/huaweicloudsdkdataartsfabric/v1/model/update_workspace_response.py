@@ -44,7 +44,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, create_time=None, create_domain_name=None, create_user_name=None, metastore_id=None, access_url=None, enterprise_project_id=None, x_request_id=None):
-        """UpdateWorkspaceResponse
+        r"""UpdateWorkspaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateWorkspaceResponse.
+        r"""Gets the id of this UpdateWorkspaceResponse.
 
         工作空间ID。
 
@@ -118,7 +118,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateWorkspaceResponse.
+        r"""Sets the id of this UpdateWorkspaceResponse.
 
         工作空间ID。
 
@@ -129,7 +129,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateWorkspaceResponse.
+        r"""Gets the name of this UpdateWorkspaceResponse.
 
         工作空间名称。
 
@@ -140,7 +140,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateWorkspaceResponse.
+        r"""Sets the name of this UpdateWorkspaceResponse.
 
         工作空间名称。
 
@@ -151,7 +151,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateWorkspaceResponse.
+        r"""Gets the description of this UpdateWorkspaceResponse.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -162,7 +162,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateWorkspaceResponse.
+        r"""Sets the description of this UpdateWorkspaceResponse.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -173,7 +173,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateWorkspaceResponse.
+        r"""Gets the create_time of this UpdateWorkspaceResponse.
 
         创建时间
 
@@ -184,7 +184,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateWorkspaceResponse.
+        r"""Sets the create_time of this UpdateWorkspaceResponse.
 
         创建时间
 
@@ -195,7 +195,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def create_domain_name(self):
-        """Gets the create_domain_name of this UpdateWorkspaceResponse.
+        r"""Gets the create_domain_name of this UpdateWorkspaceResponse.
 
         创建账号名称。
 
@@ -206,7 +206,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @create_domain_name.setter
     def create_domain_name(self, create_domain_name):
-        """Sets the create_domain_name of this UpdateWorkspaceResponse.
+        r"""Sets the create_domain_name of this UpdateWorkspaceResponse.
 
         创建账号名称。
 
@@ -217,7 +217,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def create_user_name(self):
-        """Gets the create_user_name of this UpdateWorkspaceResponse.
+        r"""Gets the create_user_name of this UpdateWorkspaceResponse.
 
         创建用户名称。
 
@@ -228,7 +228,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @create_user_name.setter
     def create_user_name(self, create_user_name):
-        """Sets the create_user_name of this UpdateWorkspaceResponse.
+        r"""Sets the create_user_name of this UpdateWorkspaceResponse.
 
         创建用户名称。
 
@@ -239,7 +239,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def metastore_id(self):
-        """Gets the metastore_id of this UpdateWorkspaceResponse.
+        r"""Gets the metastore_id of this UpdateWorkspaceResponse.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -250,7 +250,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @metastore_id.setter
     def metastore_id(self, metastore_id):
-        """Sets the metastore_id of this UpdateWorkspaceResponse.
+        r"""Sets the metastore_id of this UpdateWorkspaceResponse.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -261,7 +261,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def access_url(self):
-        """Gets the access_url of this UpdateWorkspaceResponse.
+        r"""Gets the access_url of this UpdateWorkspaceResponse.
 
         访问资源地址
 
@@ -272,7 +272,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @access_url.setter
     def access_url(self, access_url):
-        """Sets the access_url of this UpdateWorkspaceResponse.
+        r"""Sets the access_url of this UpdateWorkspaceResponse.
 
         访问资源地址
 
@@ -283,7 +283,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateWorkspaceResponse.
+        r"""Gets the enterprise_project_id of this UpdateWorkspaceResponse.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。默认是0，即default
 
@@ -294,7 +294,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateWorkspaceResponse.
+        r"""Sets the enterprise_project_id of this UpdateWorkspaceResponse.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。默认是0，即default
 
@@ -305,7 +305,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateWorkspaceResponse.
+        r"""Gets the x_request_id of this UpdateWorkspaceResponse.
 
         :return: The x_request_id of this UpdateWorkspaceResponse.
         :rtype: str
@@ -314,7 +314,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateWorkspaceResponse.
+        r"""Sets the x_request_id of this UpdateWorkspaceResponse.
 
         :param x_request_id: The x_request_id of this UpdateWorkspaceResponse.
         :type x_request_id: str

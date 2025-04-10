@@ -29,7 +29,7 @@ class ErrorCaseInfoBean:
     }
 
     def __init__(self, error_code=None, error_msg=None, testcase_id=None):
-        """ErrorCaseInfoBean
+        r"""ErrorCaseInfoBean
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ErrorCaseInfoBean:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ErrorCaseInfoBean.
+        r"""Gets the error_code of this ErrorCaseInfoBean.
 
         失败错误码
 
@@ -68,7 +68,7 @@ class ErrorCaseInfoBean:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ErrorCaseInfoBean.
+        r"""Sets the error_code of this ErrorCaseInfoBean.
 
         失败错误码
 
@@ -79,7 +79,7 @@ class ErrorCaseInfoBean:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ErrorCaseInfoBean.
+        r"""Gets the error_msg of this ErrorCaseInfoBean.
 
         失败错误信息
 
@@ -90,7 +90,7 @@ class ErrorCaseInfoBean:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorCaseInfoBean.
+        r"""Sets the error_msg of this ErrorCaseInfoBean.
 
         失败错误信息
 
@@ -101,7 +101,7 @@ class ErrorCaseInfoBean:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ErrorCaseInfoBean.
+        r"""Gets the testcase_id of this ErrorCaseInfoBean.
 
         失败资源信息
 
@@ -112,7 +112,7 @@ class ErrorCaseInfoBean:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ErrorCaseInfoBean.
+        r"""Sets the testcase_id of this ErrorCaseInfoBean.
 
         失败资源信息
 

@@ -29,7 +29,7 @@ class BandwidthTypeOption:
     }
 
     def __init__(self, name=None, bandwidth_type=None, site_id=None):
-        """BandwidthTypeOption
+        r"""BandwidthTypeOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BandwidthTypeOption:
 
     @property
     def name(self):
-        """Gets the name of this BandwidthTypeOption.
+        r"""Gets the name of this BandwidthTypeOption.
 
         共享带宽类型名称
 
@@ -68,7 +68,7 @@ class BandwidthTypeOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BandwidthTypeOption.
+        r"""Sets the name of this BandwidthTypeOption.
 
         共享带宽类型名称
 
@@ -79,7 +79,7 @@ class BandwidthTypeOption:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this BandwidthTypeOption.
+        r"""Gets the bandwidth_type of this BandwidthTypeOption.
 
         共享带宽类型
 
@@ -90,7 +90,7 @@ class BandwidthTypeOption:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this BandwidthTypeOption.
+        r"""Sets the bandwidth_type of this BandwidthTypeOption.
 
         共享带宽类型
 
@@ -101,7 +101,7 @@ class BandwidthTypeOption:
 
     @property
     def site_id(self):
-        """Gets the site_id of this BandwidthTypeOption.
+        r"""Gets the site_id of this BandwidthTypeOption.
 
         站点ID
 
@@ -112,7 +112,7 @@ class BandwidthTypeOption:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this BandwidthTypeOption.
+        r"""Sets the site_id of this BandwidthTypeOption.
 
         站点ID
 

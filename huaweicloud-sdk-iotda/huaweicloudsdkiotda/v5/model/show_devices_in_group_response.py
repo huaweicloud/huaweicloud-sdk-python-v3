@@ -28,7 +28,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
     }
 
     def __init__(self, devices=None, page=None):
-        """ShowDevicesInGroupResponse
+        r"""ShowDevicesInGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this ShowDevicesInGroupResponse.
+        r"""Gets the devices of this ShowDevicesInGroupResponse.
 
         设备列表。
 
@@ -62,7 +62,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this ShowDevicesInGroupResponse.
+        r"""Sets the devices of this ShowDevicesInGroupResponse.
 
         设备列表。
 
@@ -73,7 +73,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ShowDevicesInGroupResponse.
+        r"""Gets the page of this ShowDevicesInGroupResponse.
 
         :return: The page of this ShowDevicesInGroupResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowDevicesInGroupResponse.
+        r"""Sets the page of this ShowDevicesInGroupResponse.
 
         :param page: The page of this ShowDevicesInGroupResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

@@ -26,7 +26,7 @@ class DeleteLogtankResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """DeleteLogtankResponse
+        r"""DeleteLogtankResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteLogtankResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteLogtankResponse.
+        r"""Gets the request_id of this DeleteLogtankResponse.
 
         请求的唯一标识。
 
@@ -55,7 +55,7 @@ class DeleteLogtankResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteLogtankResponse.
+        r"""Sets the request_id of this DeleteLogtankResponse.
 
         请求的唯一标识。
 

@@ -29,7 +29,7 @@ class ComponentMount:
     }
 
     def __init__(self, path=None, sub_path=None, read_only=None):
-        """ComponentMount
+        r"""ComponentMount
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ComponentMount:
 
     @property
     def path(self):
-        """Gets the path of this ComponentMount.
+        r"""Gets the path of this ComponentMount.
 
         挂载路径
 
@@ -66,7 +66,7 @@ class ComponentMount:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ComponentMount.
+        r"""Sets the path of this ComponentMount.
 
         挂载路径
 
@@ -77,7 +77,7 @@ class ComponentMount:
 
     @property
     def sub_path(self):
-        """Gets the sub_path of this ComponentMount.
+        r"""Gets the sub_path of this ComponentMount.
 
         挂载路径的子路径
 
@@ -88,7 +88,7 @@ class ComponentMount:
 
     @sub_path.setter
     def sub_path(self, sub_path):
-        """Sets the sub_path of this ComponentMount.
+        r"""Sets the sub_path of this ComponentMount.
 
         挂载路径的子路径
 
@@ -99,7 +99,7 @@ class ComponentMount:
 
     @property
     def read_only(self):
-        """Gets the read_only of this ComponentMount.
+        r"""Gets the read_only of this ComponentMount.
 
         是否只读
 
@@ -110,7 +110,7 @@ class ComponentMount:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this ComponentMount.
+        r"""Sets the read_only of this ComponentMount.
 
         是否只读
 

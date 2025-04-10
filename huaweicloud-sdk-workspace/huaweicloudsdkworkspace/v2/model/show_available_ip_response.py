@@ -26,7 +26,7 @@ class ShowAvailableIpResponse(SdkResponse):
     }
 
     def __init__(self, available_ip=None):
-        """ShowAvailableIpResponse
+        r"""ShowAvailableIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAvailableIpResponse(SdkResponse):
 
     @property
     def available_ip(self):
-        """Gets the available_ip of this ShowAvailableIpResponse.
+        r"""Gets the available_ip of this ShowAvailableIpResponse.
 
         可用ip数
 
@@ -55,7 +55,7 @@ class ShowAvailableIpResponse(SdkResponse):
 
     @available_ip.setter
     def available_ip(self, available_ip):
-        """Sets the available_ip of this ShowAvailableIpResponse.
+        r"""Sets the available_ip of this ShowAvailableIpResponse.
 
         可用ip数
 

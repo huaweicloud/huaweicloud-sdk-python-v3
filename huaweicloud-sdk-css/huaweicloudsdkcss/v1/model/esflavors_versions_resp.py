@@ -29,7 +29,7 @@ class EsflavorsVersionsResp:
     }
 
     def __init__(self, version=None, flavors=None, type=None):
-        """EsflavorsVersionsResp
+        r"""EsflavorsVersionsResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EsflavorsVersionsResp:
 
     @property
     def version(self):
-        """Gets the version of this EsflavorsVersionsResp.
+        r"""Gets the version of this EsflavorsVersionsResp.
 
         Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -68,7 +68,7 @@ class EsflavorsVersionsResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EsflavorsVersionsResp.
+        r"""Sets the version of this EsflavorsVersionsResp.
 
         Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -79,7 +79,7 @@ class EsflavorsVersionsResp:
 
     @property
     def flavors(self):
-        """Gets the flavors of this EsflavorsVersionsResp.
+        r"""Gets the flavors of this EsflavorsVersionsResp.
 
         规格列表。
 
@@ -90,7 +90,7 @@ class EsflavorsVersionsResp:
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this EsflavorsVersionsResp.
+        r"""Sets the flavors of this EsflavorsVersionsResp.
 
         规格列表。
 
@@ -101,7 +101,7 @@ class EsflavorsVersionsResp:
 
     @property
     def type(self):
-        """Gets the type of this EsflavorsVersionsResp.
+        r"""Gets the type of this EsflavorsVersionsResp.
 
         实例类型，包括为ess、ess-cold、ess-master和ess-client。
 
@@ -112,7 +112,7 @@ class EsflavorsVersionsResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EsflavorsVersionsResp.
+        r"""Sets the type of this EsflavorsVersionsResp.
 
         实例类型，包括为ess、ess-cold、ess-master和ess-client。
 

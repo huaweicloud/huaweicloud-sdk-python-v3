@@ -34,7 +34,7 @@ class UgoAsyncClient(Client):
         return client_builder
 
     def check_permission_async(self, request):
-        """目标库权限检查。
+        r"""目标库权限检查。
 
         目标库权限检查。
         
@@ -99,7 +99,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def commit_syntax_conversion_async(self, request):
-        """提交语法转换
+        r"""提交语法转换
 
         提交语法转换。只有migration_project_status为\&quot;READY\&quot;时才能调用该接口。
         
@@ -164,7 +164,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def commit_verification_async(self, request):
-        """提交验证。
+        r"""提交验证。
 
         提交验证。语法转换完成后，才能调用该接口。
         
@@ -229,7 +229,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def confirm_target_db_type_async(self, request):
-        """评估项目确认目标数据库类型。
+        r"""评估项目确认目标数据库类型。
 
         评估项目确认目标数据库类型。
         
@@ -294,7 +294,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def create_evaluation_project_async(self, request):
-        """创建评估项目。
+        r"""创建评估项目。
 
         创建评估项目。评估项目分2个阶段：采集、评估。
         
@@ -359,7 +359,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def create_migration_project_async(self, request):
-        """创建迁移项目。
+        r"""创建迁移项目。
 
         创建迁移项目。创建迁移项目需要关联状态为“COMPLETED”的评估项目。迁移项目依次经历以下几个阶段：目标库权限检查、语法转换、验证、下载迁移失败的报告、删除。
         
@@ -424,7 +424,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def delete_evaluation_project_async(self, request):
-        """删除评估项目。
+        r"""删除评估项目。
 
         删除评估项目。
         
@@ -489,7 +489,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def delete_migration_project_async(self, request):
-        """删除迁移项目
+        r"""删除迁移项目
 
         删除迁移项目。
         
@@ -554,7 +554,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def download_failure_report_async(self, request):
-        """下载迁移错误报告。
+        r"""下载迁移错误报告。
 
         下载迁移错误报告。
         
@@ -619,7 +619,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_evaluation_projects_async(self, request):
-        """查询评估项目列表。
+        r"""查询评估项目列表。
 
         查询评估项目列表。
         
@@ -690,7 +690,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_migration_projects_async(self, request):
-        """查询迁移项目列表。
+        r"""查询迁移项目列表。
 
         查询迁移项目列表。创建迁移项目之后，调用该接口，根据项目名称，获取项目ID。
         
@@ -757,7 +757,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_permission_check_result_async(self, request):
-        """查询权限检查结果。
+        r"""查询权限检查结果。
 
         查询权限检查结果。permission_check_status 为 \&quot;SUCCESS\&quot; 或者 \&quot;FAILED\&quot; 时，才能调用该接口。
         
@@ -826,7 +826,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_quotas_async(self, request):
-        """查询配额。
+        r"""查询配额。
 
         查询单租户的配额，包括评估项目配额、迁移项目配额。
         
@@ -889,7 +889,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_syntax_conversion_progress_async(self, request):
-        """查询语法转换的进度。
+        r"""查询语法转换的进度。
 
         查询语法转换的进度。
         
@@ -954,7 +954,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_verification_progress_async(self, request):
-        """查询验证进度。
+        r"""查询验证进度。
 
         查询验证进度。
         
@@ -1019,7 +1019,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def show_evaluation_project_detail_async(self, request):
-        """查询评估项目详情。
+        r"""查询评估项目详情。
 
         查询评估项目详情。
         
@@ -1084,7 +1084,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def show_evaluation_project_status_async(self, request):
-        """查询评估项目状态。
+        r"""查询评估项目状态。
 
         查询评估项目状态。
         
@@ -1149,7 +1149,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def show_migration_project_detail_async(self, request):
-        """查询迁移项目详情。
+        r"""查询迁移项目详情。
 
         查询迁移项目详情。只有migration_project_status为\&quot;READY\&quot;时才能调用该接口。
         
@@ -1214,7 +1214,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def show_migration_project_status_async(self, request):
-        """查询迁移项目状态。
+        r"""查询迁移项目状态。
 
         查询迁移项目状态。
         
@@ -1279,7 +1279,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def list_api_versions_async(self, request):
-        """查询API版本信息列表。
+        r"""查询API版本信息列表。
 
         查询API版本信息列表。
         
@@ -1342,7 +1342,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def show_api_version_info_async(self, request):
-        """查询指定版本号的API版本信息。
+        r"""查询指定版本号的API版本信息。
 
         查询指定版本号的API版本信息。
         
@@ -1407,7 +1407,7 @@ class UgoAsyncClient(Client):
         return http_info
 
     def run_sql_conversion_async(self, request):
-        """SQL语句转换。
+        r"""SQL语句转换。
 
         SQL语句转换。
         

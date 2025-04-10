@@ -30,7 +30,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, start_time=None, interval=None, values=None):
-        """ShowCdnStatisticsResponse
+        r"""ShowCdnStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowCdnStatisticsResponse.
+        r"""Gets the start_time of this ShowCdnStatisticsResponse.
 
         统计起始时间。
 
@@ -69,7 +69,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowCdnStatisticsResponse.
+        r"""Sets the start_time of this ShowCdnStatisticsResponse.
 
         统计起始时间。
 
@@ -80,7 +80,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowCdnStatisticsResponse.
+        r"""Gets the interval of this ShowCdnStatisticsResponse.
 
         统计间隔。
 
@@ -91,7 +91,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowCdnStatisticsResponse.
+        r"""Sets the interval of this ShowCdnStatisticsResponse.
 
         统计间隔。
 
@@ -102,7 +102,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowCdnStatisticsResponse.
+        r"""Gets the values of this ShowCdnStatisticsResponse.
 
         采样数据数组。  从start_time开始，每个间隔对应一个采样数据。
 
@@ -113,7 +113,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowCdnStatisticsResponse.
+        r"""Sets the values of this ShowCdnStatisticsResponse.
 
         采样数据数组。  从start_time开始，每个间隔对应一个采样数据。
 

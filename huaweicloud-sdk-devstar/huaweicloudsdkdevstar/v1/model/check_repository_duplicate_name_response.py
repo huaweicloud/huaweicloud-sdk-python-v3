@@ -26,7 +26,7 @@ class CheckRepositoryDuplicateNameResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CheckRepositoryDuplicateNameResponse
+        r"""CheckRepositoryDuplicateNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckRepositoryDuplicateNameResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckRepositoryDuplicateNameResponse.
+        r"""Gets the result of this CheckRepositoryDuplicateNameResponse.
 
         重名校验是否通过,true:校验通过不重名,false:校验不通过重名
 
@@ -55,7 +55,7 @@ class CheckRepositoryDuplicateNameResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckRepositoryDuplicateNameResponse.
+        r"""Sets the result of this CheckRepositoryDuplicateNameResponse.
 
         重名校验是否通过,true:校验通过不重名,false:校验不通过重名
 

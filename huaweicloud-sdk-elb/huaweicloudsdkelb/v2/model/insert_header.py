@@ -27,7 +27,7 @@ class InsertHeader:
     }
 
     def __init__(self, x_forwarded_elb_ip=None, x_forwarded_host=None):
-        """InsertHeader
+        r"""InsertHeader
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InsertHeader:
 
     @property
     def x_forwarded_elb_ip(self):
-        """Gets the x_forwarded_elb_ip of this InsertHeader.
+        r"""Gets the x_forwarded_elb_ip of this InsertHeader.
 
         负载均衡器弹性公网IP透传开关。
 
@@ -61,7 +61,7 @@ class InsertHeader:
 
     @x_forwarded_elb_ip.setter
     def x_forwarded_elb_ip(self, x_forwarded_elb_ip):
-        """Sets the x_forwarded_elb_ip of this InsertHeader.
+        r"""Sets the x_forwarded_elb_ip of this InsertHeader.
 
         负载均衡器弹性公网IP透传开关。
 
@@ -72,7 +72,7 @@ class InsertHeader:
 
     @property
     def x_forwarded_host(self):
-        """Gets the x_forwarded_host of this InsertHeader.
+        r"""Gets the x_forwarded_host of this InsertHeader.
 
         X-Forwarded-Host设为true可以将客户请求头的第一个X-Forwarded-Host设置为请求头的Host带到后端云服务器。
 
@@ -83,7 +83,7 @@ class InsertHeader:
 
     @x_forwarded_host.setter
     def x_forwarded_host(self, x_forwarded_host):
-        """Sets the x_forwarded_host of this InsertHeader.
+        r"""Sets the x_forwarded_host of this InsertHeader.
 
         X-Forwarded-Host设为true可以将客户请求头的第一个X-Forwarded-Host设置为请求头的Host带到后端云服务器。
 

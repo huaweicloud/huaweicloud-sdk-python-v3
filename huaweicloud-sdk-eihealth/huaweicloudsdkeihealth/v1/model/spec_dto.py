@@ -27,7 +27,7 @@ class SpecDto:
     }
 
     def __init__(self, code=None, name=None):
-        """SpecDto
+        r"""SpecDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SpecDto:
 
     @property
     def code(self):
-        """Gets the code of this SpecDto.
+        r"""Gets the code of this SpecDto.
 
         规格编号
 
@@ -59,7 +59,7 @@ class SpecDto:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SpecDto.
+        r"""Sets the code of this SpecDto.
 
         规格编号
 
@@ -70,7 +70,7 @@ class SpecDto:
 
     @property
     def name(self):
-        """Gets the name of this SpecDto.
+        r"""Gets the name of this SpecDto.
 
         规格名称
 
@@ -81,7 +81,7 @@ class SpecDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SpecDto.
+        r"""Sets the name of this SpecDto.
 
         规格名称
 

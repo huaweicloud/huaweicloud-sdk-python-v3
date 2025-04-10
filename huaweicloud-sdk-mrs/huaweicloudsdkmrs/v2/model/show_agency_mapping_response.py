@@ -26,7 +26,7 @@ class ShowAgencyMappingResponse(SdkResponse):
     }
 
     def __init__(self, agency_mappings=None):
-        """ShowAgencyMappingResponse
+        r"""ShowAgencyMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAgencyMappingResponse(SdkResponse):
 
     @property
     def agency_mappings(self):
-        """Gets the agency_mappings of this ShowAgencyMappingResponse.
+        r"""Gets the agency_mappings of this ShowAgencyMappingResponse.
 
         用户（组）与委托之间的映射关系详细信息。
 
@@ -55,7 +55,7 @@ class ShowAgencyMappingResponse(SdkResponse):
 
     @agency_mappings.setter
     def agency_mappings(self, agency_mappings):
-        """Sets the agency_mappings of this ShowAgencyMappingResponse.
+        r"""Sets the agency_mappings of this ShowAgencyMappingResponse.
 
         用户（组）与委托之间的映射关系详细信息。
 

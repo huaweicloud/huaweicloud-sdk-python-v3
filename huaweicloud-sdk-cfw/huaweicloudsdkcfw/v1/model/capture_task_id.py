@@ -27,7 +27,7 @@ class CaptureTaskId:
     }
 
     def __init__(self, id=None, name=None):
-        """CaptureTaskId
+        r"""CaptureTaskId
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaptureTaskId:
 
     @property
     def id(self):
-        """Gets the id of this CaptureTaskId.
+        r"""Gets the id of this CaptureTaskId.
 
         防火墙id
 
@@ -61,7 +61,7 @@ class CaptureTaskId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CaptureTaskId.
+        r"""Sets the id of this CaptureTaskId.
 
         防火墙id
 
@@ -72,7 +72,7 @@ class CaptureTaskId:
 
     @property
     def name(self):
-        """Gets the name of this CaptureTaskId.
+        r"""Gets the name of this CaptureTaskId.
 
         防火墙名称
 
@@ -83,7 +83,7 @@ class CaptureTaskId:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaptureTaskId.
+        r"""Sets the name of this CaptureTaskId.
 
         防火墙名称
 

@@ -28,7 +28,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
     }
 
     def __init__(self, backup=None, job_id=None):
-        """CreateGaussMySqlBackupResponse
+        r"""CreateGaussMySqlBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
 
     @property
     def backup(self):
-        """Gets the backup of this CreateGaussMySqlBackupResponse.
+        r"""Gets the backup of this CreateGaussMySqlBackupResponse.
 
         :return: The backup of this CreateGaussMySqlBackupResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.Backup`
@@ -60,7 +60,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
 
     @backup.setter
     def backup(self, backup):
-        """Sets the backup of this CreateGaussMySqlBackupResponse.
+        r"""Sets the backup of this CreateGaussMySqlBackupResponse.
 
         :param backup: The backup of this CreateGaussMySqlBackupResponse.
         :type backup: :class:`huaweicloudsdkgaussdb.v3.Backup`
@@ -69,7 +69,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateGaussMySqlBackupResponse.
+        r"""Gets the job_id of this CreateGaussMySqlBackupResponse.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateGaussMySqlBackupResponse.
+        r"""Sets the job_id of this CreateGaussMySqlBackupResponse.
 
         任务ID。
 

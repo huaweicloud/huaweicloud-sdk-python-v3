@@ -24,7 +24,7 @@ class BatchStopServerResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchStopServerResponse
+        r"""BatchStopServerResponse
 
         The model defined in huaweicloud sdk
 

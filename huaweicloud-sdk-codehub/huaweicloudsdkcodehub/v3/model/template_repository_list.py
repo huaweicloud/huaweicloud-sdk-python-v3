@@ -27,7 +27,7 @@ class TemplateRepositoryList:
     }
 
     def __init__(self, projects=None, total=None):
-        """TemplateRepositoryList
+        r"""TemplateRepositoryList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TemplateRepositoryList:
 
     @property
     def projects(self):
-        """Gets the projects of this TemplateRepositoryList.
+        r"""Gets the projects of this TemplateRepositoryList.
 
         模板列表
 
@@ -61,7 +61,7 @@ class TemplateRepositoryList:
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this TemplateRepositoryList.
+        r"""Sets the projects of this TemplateRepositoryList.
 
         模板列表
 
@@ -72,7 +72,7 @@ class TemplateRepositoryList:
 
     @property
     def total(self):
-        """Gets the total of this TemplateRepositoryList.
+        r"""Gets the total of this TemplateRepositoryList.
 
         模板总数
 
@@ -83,7 +83,7 @@ class TemplateRepositoryList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TemplateRepositoryList.
+        r"""Sets the total of this TemplateRepositoryList.
 
         模板总数
 

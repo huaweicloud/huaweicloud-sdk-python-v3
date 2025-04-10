@@ -29,7 +29,7 @@ class StrongConstraintType:
     }
 
     def __init__(self):
-        """StrongConstraintType
+        r"""StrongConstraintType
 
         The model defined in huaweicloud sdk
 

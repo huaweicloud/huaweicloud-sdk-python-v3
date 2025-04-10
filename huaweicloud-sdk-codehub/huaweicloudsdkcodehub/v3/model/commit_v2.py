@@ -35,7 +35,7 @@ class CommitV2:
     }
 
     def __init__(self, committed_date=None, committer_name=None, id=None, message=None, short_id=None, title=None):
-        """CommitV2
+        r"""CommitV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CommitV2:
 
     @property
     def committed_date(self):
-        """Gets the committed_date of this CommitV2.
+        r"""Gets the committed_date of this CommitV2.
 
         提交时间
 
@@ -89,7 +89,7 @@ class CommitV2:
 
     @committed_date.setter
     def committed_date(self, committed_date):
-        """Sets the committed_date of this CommitV2.
+        r"""Sets the committed_date of this CommitV2.
 
         提交时间
 
@@ -100,7 +100,7 @@ class CommitV2:
 
     @property
     def committer_name(self):
-        """Gets the committer_name of this CommitV2.
+        r"""Gets the committer_name of this CommitV2.
 
         提交者
 
@@ -111,7 +111,7 @@ class CommitV2:
 
     @committer_name.setter
     def committer_name(self, committer_name):
-        """Sets the committer_name of this CommitV2.
+        r"""Sets the committer_name of this CommitV2.
 
         提交者
 
@@ -122,7 +122,7 @@ class CommitV2:
 
     @property
     def id(self):
-        """Gets the id of this CommitV2.
+        r"""Gets the id of this CommitV2.
 
         提交id
 
@@ -133,7 +133,7 @@ class CommitV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CommitV2.
+        r"""Sets the id of this CommitV2.
 
         提交id
 
@@ -144,7 +144,7 @@ class CommitV2:
 
     @property
     def message(self):
-        """Gets the message of this CommitV2.
+        r"""Gets the message of this CommitV2.
 
         提交信息
 
@@ -155,7 +155,7 @@ class CommitV2:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CommitV2.
+        r"""Sets the message of this CommitV2.
 
         提交信息
 
@@ -166,7 +166,7 @@ class CommitV2:
 
     @property
     def short_id(self):
-        """Gets the short_id of this CommitV2.
+        r"""Gets the short_id of this CommitV2.
 
         提交短id
 
@@ -177,7 +177,7 @@ class CommitV2:
 
     @short_id.setter
     def short_id(self, short_id):
-        """Sets the short_id of this CommitV2.
+        r"""Sets the short_id of this CommitV2.
 
         提交短id
 
@@ -188,7 +188,7 @@ class CommitV2:
 
     @property
     def title(self):
-        """Gets the title of this CommitV2.
+        r"""Gets the title of this CommitV2.
 
         提交标题
 
@@ -199,7 +199,7 @@ class CommitV2:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CommitV2.
+        r"""Sets the title of this CommitV2.
 
         提交标题
 

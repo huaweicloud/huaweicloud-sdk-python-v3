@@ -24,7 +24,7 @@ class LeaveOrganizationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """LeaveOrganizationResponse
+        r"""LeaveOrganizationResponse
 
         The model defined in huaweicloud sdk
 

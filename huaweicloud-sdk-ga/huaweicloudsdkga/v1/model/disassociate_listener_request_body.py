@@ -25,7 +25,7 @@ class DisassociateListenerRequestBody:
     }
 
     def __init__(self, listener_id=None):
-        """DisassociateListenerRequestBody
+        r"""DisassociateListenerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateListenerRequestBody:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this DisassociateListenerRequestBody.
+        r"""Gets the listener_id of this DisassociateListenerRequestBody.
 
         监听器ID。
 
@@ -53,7 +53,7 @@ class DisassociateListenerRequestBody:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this DisassociateListenerRequestBody.
+        r"""Sets the listener_id of this DisassociateListenerRequestBody.
 
         监听器ID。
 

@@ -29,7 +29,7 @@ class AzInfoResp:
     }
 
     def __init__(self, code=None, name=None, status=None):
-        """AzInfoResp
+        r"""AzInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AzInfoResp:
 
     @property
     def code(self):
-        """Gets the code of this AzInfoResp.
+        r"""Gets the code of this AzInfoResp.
 
         可用区标识代码
 
@@ -68,7 +68,7 @@ class AzInfoResp:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AzInfoResp.
+        r"""Sets the code of this AzInfoResp.
 
         可用区标识代码
 
@@ -79,7 +79,7 @@ class AzInfoResp:
 
     @property
     def name(self):
-        """Gets the name of this AzInfoResp.
+        r"""Gets the name of this AzInfoResp.
 
         可用区名称
 
@@ -90,7 +90,7 @@ class AzInfoResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AzInfoResp.
+        r"""Sets the name of this AzInfoResp.
 
         可用区名称
 
@@ -101,7 +101,7 @@ class AzInfoResp:
 
     @property
     def status(self):
-        """Gets the status of this AzInfoResp.
+        r"""Gets the status of this AzInfoResp.
 
         可用区状态
 
@@ -112,7 +112,7 @@ class AzInfoResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AzInfoResp.
+        r"""Sets the status of this AzInfoResp.
 
         可用区状态
 

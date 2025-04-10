@@ -29,7 +29,7 @@ class CheckpointRsp:
     }
 
     def __init__(self, source=None, timestamp=None, message=None):
-        """CheckpointRsp
+        r"""CheckpointRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckpointRsp:
 
     @property
     def source(self):
-        """Gets the source of this CheckpointRsp.
+        r"""Gets the source of this CheckpointRsp.
 
         数据名称
 
@@ -68,7 +68,7 @@ class CheckpointRsp:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CheckpointRsp.
+        r"""Sets the source of this CheckpointRsp.
 
         数据名称
 
@@ -79,7 +79,7 @@ class CheckpointRsp:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CheckpointRsp.
+        r"""Gets the timestamp of this CheckpointRsp.
 
         日志时间戳
 
@@ -90,7 +90,7 @@ class CheckpointRsp:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CheckpointRsp.
+        r"""Sets the timestamp of this CheckpointRsp.
 
         日志时间戳
 
@@ -101,7 +101,7 @@ class CheckpointRsp:
 
     @property
     def message(self):
-        """Gets the message of this CheckpointRsp.
+        r"""Gets the message of this CheckpointRsp.
 
         执行信息
 
@@ -112,7 +112,7 @@ class CheckpointRsp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CheckpointRsp.
+        r"""Sets the message of this CheckpointRsp.
 
         执行信息
 

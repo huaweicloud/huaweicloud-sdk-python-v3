@@ -29,7 +29,7 @@ class UpdateTaskRequest:
     }
 
     def __init__(self, deployment_id=None, task_id=None, body=None):
-        """UpdateTaskRequest
+        r"""UpdateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTaskRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this UpdateTaskRequest.
+        r"""Gets the deployment_id of this UpdateTaskRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -66,7 +66,7 @@ class UpdateTaskRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this UpdateTaskRequest.
+        r"""Sets the deployment_id of this UpdateTaskRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -77,7 +77,7 @@ class UpdateTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskRequest.
+        r"""Gets the task_id of this UpdateTaskRequest.
 
         作业ID，从专业版HiLens控制台作业管理[获取作业列表](listTasksUsingGET.xml)获取
 
@@ -88,7 +88,7 @@ class UpdateTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskRequest.
+        r"""Sets the task_id of this UpdateTaskRequest.
 
         作业ID，从专业版HiLens控制台作业管理[获取作业列表](listTasksUsingGET.xml)获取
 
@@ -99,7 +99,7 @@ class UpdateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskRequest.
+        r"""Gets the body of this UpdateTaskRequest.
 
         :return: The body of this UpdateTaskRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskRequest`
@@ -108,7 +108,7 @@ class UpdateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskRequest.
+        r"""Sets the body of this UpdateTaskRequest.
 
         :param body: The body of this UpdateTaskRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.TaskRequest`

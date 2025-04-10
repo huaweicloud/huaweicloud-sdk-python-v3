@@ -33,7 +33,7 @@ class ParamTypeLimits:
     }
 
     def __init__(self, disable=None, name=None, displayname=None, id=None, language=None):
-        """ParamTypeLimits
+        r"""ParamTypeLimits
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ParamTypeLimits:
 
     @property
     def disable(self):
-        """Gets the disable of this ParamTypeLimits.
+        r"""Gets the disable of this ParamTypeLimits.
 
         是否废弃
 
@@ -77,7 +77,7 @@ class ParamTypeLimits:
 
     @disable.setter
     def disable(self, disable):
-        """Sets the disable of this ParamTypeLimits.
+        r"""Sets the disable of this ParamTypeLimits.
 
         是否废弃
 
@@ -88,7 +88,7 @@ class ParamTypeLimits:
 
     @property
     def name(self):
-        """Gets the name of this ParamTypeLimits.
+        r"""Gets the name of this ParamTypeLimits.
 
         语言名字
 
@@ -99,7 +99,7 @@ class ParamTypeLimits:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParamTypeLimits.
+        r"""Sets the name of this ParamTypeLimits.
 
         语言名字
 
@@ -110,7 +110,7 @@ class ParamTypeLimits:
 
     @property
     def displayname(self):
-        """Gets the displayname of this ParamTypeLimits.
+        r"""Gets the displayname of this ParamTypeLimits.
 
         语言展示名字
 
@@ -121,7 +121,7 @@ class ParamTypeLimits:
 
     @displayname.setter
     def displayname(self, displayname):
-        """Sets the displayname of this ParamTypeLimits.
+        r"""Sets the displayname of this ParamTypeLimits.
 
         语言展示名字
 
@@ -132,7 +132,7 @@ class ParamTypeLimits:
 
     @property
     def id(self):
-        """Gets the id of this ParamTypeLimits.
+        r"""Gets the id of this ParamTypeLimits.
 
         策略ID
 
@@ -143,7 +143,7 @@ class ParamTypeLimits:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ParamTypeLimits.
+        r"""Sets the id of this ParamTypeLimits.
 
         策略ID
 
@@ -154,7 +154,7 @@ class ParamTypeLimits:
 
     @property
     def language(self):
-        """Gets the language of this ParamTypeLimits.
+        r"""Gets the language of this ParamTypeLimits.
 
         扫描语言
 
@@ -165,7 +165,7 @@ class ParamTypeLimits:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ParamTypeLimits.
+        r"""Sets the language of this ParamTypeLimits.
 
         扫描语言
 

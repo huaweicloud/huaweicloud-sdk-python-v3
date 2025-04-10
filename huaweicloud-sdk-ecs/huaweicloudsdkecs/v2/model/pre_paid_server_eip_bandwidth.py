@@ -31,7 +31,7 @@ class PrePaidServerEipBandwidth:
     }
 
     def __init__(self, size=None, sharetype=None, chargemode=None, id=None):
-        """PrePaidServerEipBandwidth
+        r"""PrePaidServerEipBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PrePaidServerEipBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this PrePaidServerEipBandwidth.
+        r"""Gets the size of this PrePaidServerEipBandwidth.
 
         功能说明：带宽大小  带宽（Mbit/s），取值范围为[1,2000]。  调整带宽时的最小单位会根据带宽范围不同存在差异。  - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。  > 说明： >  > 如果share_type是PER，该参数必选项；如果share_type是WHOLE并且id有值，该参数会忽略。
 
@@ -74,7 +74,7 @@ class PrePaidServerEipBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PrePaidServerEipBandwidth.
+        r"""Sets the size of this PrePaidServerEipBandwidth.
 
         功能说明：带宽大小  带宽（Mbit/s），取值范围为[1,2000]。  调整带宽时的最小单位会根据带宽范围不同存在差异。  - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。  > 说明： >  > 如果share_type是PER，该参数必选项；如果share_type是WHOLE并且id有值，该参数会忽略。
 
@@ -85,7 +85,7 @@ class PrePaidServerEipBandwidth:
 
     @property
     def sharetype(self):
-        """Gets the sharetype of this PrePaidServerEipBandwidth.
+        r"""Gets the sharetype of this PrePaidServerEipBandwidth.
 
         带宽的共享类型。  共享类型枚举：PER，表示独享。WHOLE，表示共享。
 
@@ -96,7 +96,7 @@ class PrePaidServerEipBandwidth:
 
     @sharetype.setter
     def sharetype(self, sharetype):
-        """Sets the sharetype of this PrePaidServerEipBandwidth.
+        r"""Sets the sharetype of this PrePaidServerEipBandwidth.
 
         带宽的共享类型。  共享类型枚举：PER，表示独享。WHOLE，表示共享。
 
@@ -107,7 +107,7 @@ class PrePaidServerEipBandwidth:
 
     @property
     def chargemode(self):
-        """Gets the chargemode of this PrePaidServerEipBandwidth.
+        r"""Gets the chargemode of this PrePaidServerEipBandwidth.
 
         带宽的计费类型。  - 未传该字段，表示按带宽计费。 - 字段值为空，表示按带宽计费。 - 字段值为“traffic”，表示按流量计费。 - 字段为其它值，会导致创建云服务器失败。  > 说明： >  > 如果share_type是WHOLE并且id有值，该参数会忽略。
 
@@ -118,7 +118,7 @@ class PrePaidServerEipBandwidth:
 
     @chargemode.setter
     def chargemode(self, chargemode):
-        """Sets the chargemode of this PrePaidServerEipBandwidth.
+        r"""Sets the chargemode of this PrePaidServerEipBandwidth.
 
         带宽的计费类型。  - 未传该字段，表示按带宽计费。 - 字段值为空，表示按带宽计费。 - 字段值为“traffic”，表示按流量计费。 - 字段为其它值，会导致创建云服务器失败。  > 说明： >  > 如果share_type是WHOLE并且id有值，该参数会忽略。
 
@@ -129,7 +129,7 @@ class PrePaidServerEipBandwidth:
 
     @property
     def id(self):
-        """Gets the id of this PrePaidServerEipBandwidth.
+        r"""Gets the id of this PrePaidServerEipBandwidth.
 
         带宽ID，创建WHOLE类型带宽的弹性IP时可以指定之前的共享带宽创建。  取值范围：WHOLE类型的带宽ID。  > 说明： >  > 当创建WHOLE类型的带宽时，该字段必选。
 
@@ -140,7 +140,7 @@ class PrePaidServerEipBandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrePaidServerEipBandwidth.
+        r"""Sets the id of this PrePaidServerEipBandwidth.
 
         带宽ID，创建WHOLE类型带宽的弹性IP时可以指定之前的共享带宽创建。  取值范围：WHOLE类型的带宽ID。  > 说明： >  > 当创建WHOLE类型的带宽时，该字段必选。
 

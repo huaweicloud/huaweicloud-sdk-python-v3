@@ -25,7 +25,7 @@ class NodeSpecUpdateNodeNicSpecUpdate:
     }
 
     def __init__(self, primary_nic=None):
-        """NodeSpecUpdateNodeNicSpecUpdate
+        r"""NodeSpecUpdateNodeNicSpecUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeSpecUpdateNodeNicSpecUpdate:
 
     @property
     def primary_nic(self):
-        """Gets the primary_nic of this NodeSpecUpdateNodeNicSpecUpdate.
+        r"""Gets the primary_nic of this NodeSpecUpdateNodeNicSpecUpdate.
 
         :return: The primary_nic of this NodeSpecUpdateNodeNicSpecUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdatePrimaryNic`
@@ -52,7 +52,7 @@ class NodeSpecUpdateNodeNicSpecUpdate:
 
     @primary_nic.setter
     def primary_nic(self, primary_nic):
-        """Sets the primary_nic of this NodeSpecUpdateNodeNicSpecUpdate.
+        r"""Sets the primary_nic of this NodeSpecUpdateNodeNicSpecUpdate.
 
         :param primary_nic: The primary_nic of this NodeSpecUpdateNodeNicSpecUpdate.
         :type primary_nic: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdatePrimaryNic`

@@ -29,7 +29,7 @@ class DbObject:
     }
 
     def __init__(self, object_scope=None, target_root_db=None, object_info=None):
-        """DbObject
+        r"""DbObject
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DbObject:
 
     @property
     def object_scope(self):
-        """Gets the object_scope of this DbObject.
+        r"""Gets the object_scope of this DbObject.
 
         数据库对象迁移或同步范围。取值： - all：全部迁移。 - database：库级迁移或同步。 - table：表级迁移或同步。
 
@@ -67,7 +67,7 @@ class DbObject:
 
     @object_scope.setter
     def object_scope(self, object_scope):
-        """Sets the object_scope of this DbObject.
+        r"""Sets the object_scope of this DbObject.
 
         数据库对象迁移或同步范围。取值： - all：全部迁移。 - database：库级迁移或同步。 - table：表级迁移或同步。
 
@@ -78,7 +78,7 @@ class DbObject:
 
     @property
     def target_root_db(self):
-        """Gets the target_root_db of this DbObject.
+        r"""Gets the target_root_db of this DbObject.
 
         :return: The target_root_db of this DbObject.
         :rtype: :class:`huaweicloudsdkdrs.v5.TargetRootDb`
@@ -87,7 +87,7 @@ class DbObject:
 
     @target_root_db.setter
     def target_root_db(self, target_root_db):
-        """Sets the target_root_db of this DbObject.
+        r"""Sets the target_root_db of this DbObject.
 
         :param target_root_db: The target_root_db of this DbObject.
         :type target_root_db: :class:`huaweicloudsdkdrs.v5.TargetRootDb`
@@ -96,7 +96,7 @@ class DbObject:
 
     @property
     def object_info(self):
-        """Gets the object_info of this DbObject.
+        r"""Gets the object_info of this DbObject.
 
         数据库对象迁移或同步信息，object_scope为all时不填，为库级或表级时必填。
 
@@ -107,7 +107,7 @@ class DbObject:
 
     @object_info.setter
     def object_info(self, object_info):
-        """Sets the object_info of this DbObject.
+        r"""Sets the object_info of this DbObject.
 
         数据库对象迁移或同步信息，object_scope为all时不填，为库级或表级时必填。
 

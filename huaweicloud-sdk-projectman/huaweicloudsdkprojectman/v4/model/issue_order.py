@@ -27,7 +27,7 @@ class IssueOrder:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueOrder
+        r"""IssueOrder
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueOrder:
 
     @property
     def id(self):
-        """Gets the id of this IssueOrder.
+        r"""Gets the id of this IssueOrder.
 
         顺序id
 
@@ -61,7 +61,7 @@ class IssueOrder:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueOrder.
+        r"""Sets the id of this IssueOrder.
 
         顺序id
 
@@ -72,7 +72,7 @@ class IssueOrder:
 
     @property
     def name(self):
-        """Gets the name of this IssueOrder.
+        r"""Gets the name of this IssueOrder.
 
         顺序值
 
@@ -83,7 +83,7 @@ class IssueOrder:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueOrder.
+        r"""Sets the name of this IssueOrder.
 
         顺序值
 

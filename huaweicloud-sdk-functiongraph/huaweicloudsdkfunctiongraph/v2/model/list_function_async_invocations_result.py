@@ -35,7 +35,7 @@ class ListFunctionAsyncInvocationsResult:
     }
 
     def __init__(self, request_id=None, status=None, error_message=None, error_code=None, start_time=None, end_time=None):
-        """ListFunctionAsyncInvocationsResult
+        r"""ListFunctionAsyncInvocationsResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListFunctionAsyncInvocationsResult.
+        r"""Gets the request_id of this ListFunctionAsyncInvocationsResult.
 
         异步调用请求ID
 
@@ -89,7 +89,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListFunctionAsyncInvocationsResult.
+        r"""Sets the request_id of this ListFunctionAsyncInvocationsResult.
 
         异步调用请求ID
 
@@ -100,7 +100,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @property
     def status(self):
-        """Gets the status of this ListFunctionAsyncInvocationsResult.
+        r"""Gets the status of this ListFunctionAsyncInvocationsResult.
 
         异步调用状态，支持5种状态 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
 
@@ -111,7 +111,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFunctionAsyncInvocationsResult.
+        r"""Sets the status of this ListFunctionAsyncInvocationsResult.
 
         异步调用状态，支持5种状态 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
 
@@ -122,7 +122,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListFunctionAsyncInvocationsResult.
+        r"""Gets the error_message of this ListFunctionAsyncInvocationsResult.
 
         异步调用错误信息，如果执行成功，则返回空
 
@@ -133,7 +133,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListFunctionAsyncInvocationsResult.
+        r"""Sets the error_message of this ListFunctionAsyncInvocationsResult.
 
         异步调用错误信息，如果执行成功，则返回空
 
@@ -144,7 +144,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListFunctionAsyncInvocationsResult.
+        r"""Gets the error_code of this ListFunctionAsyncInvocationsResult.
 
         异步调用错误码，如果执行成功，则返回0
 
@@ -155,7 +155,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListFunctionAsyncInvocationsResult.
+        r"""Sets the error_code of this ListFunctionAsyncInvocationsResult.
 
         异步调用错误码，如果执行成功，则返回0
 
@@ -166,7 +166,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListFunctionAsyncInvocationsResult.
+        r"""Gets the start_time of this ListFunctionAsyncInvocationsResult.
 
         异步调用开始时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
@@ -177,7 +177,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListFunctionAsyncInvocationsResult.
+        r"""Sets the start_time of this ListFunctionAsyncInvocationsResult.
 
         异步调用开始时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
@@ -188,7 +188,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListFunctionAsyncInvocationsResult.
+        r"""Gets the end_time of this ListFunctionAsyncInvocationsResult.
 
         异步调用结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 
@@ -199,7 +199,7 @@ class ListFunctionAsyncInvocationsResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListFunctionAsyncInvocationsResult.
+        r"""Sets the end_time of this ListFunctionAsyncInvocationsResult.
 
         异步调用结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。
 

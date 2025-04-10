@@ -27,7 +27,7 @@ class SimpleProject:
     }
 
     def __init__(self, project_name=None, project_id=None):
-        """SimpleProject
+        r"""SimpleProject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SimpleProject:
 
     @property
     def project_name(self):
-        """Gets the project_name of this SimpleProject.
+        r"""Gets the project_name of this SimpleProject.
 
         项目名称
 
@@ -61,7 +61,7 @@ class SimpleProject:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this SimpleProject.
+        r"""Sets the project_name of this SimpleProject.
 
         项目名称
 
@@ -72,7 +72,7 @@ class SimpleProject:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SimpleProject.
+        r"""Gets the project_id of this SimpleProject.
 
         项目id
 
@@ -83,7 +83,7 @@ class SimpleProject:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SimpleProject.
+        r"""Sets the project_id of this SimpleProject.
 
         项目id
 

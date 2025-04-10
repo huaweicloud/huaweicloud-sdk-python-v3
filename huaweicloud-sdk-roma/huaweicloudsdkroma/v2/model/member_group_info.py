@@ -43,7 +43,7 @@ class MemberGroupInfo:
     }
 
     def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None, member_group_id=None, create_time=None, update_time=None):
-        """MemberGroupInfo
+        r"""MemberGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class MemberGroupInfo:
 
     @property
     def member_group_name(self):
-        """Gets the member_group_name of this MemberGroupInfo.
+        r"""Gets the member_group_name of this MemberGroupInfo.
 
         VPC通道后端服务器组名称
 
@@ -116,7 +116,7 @@ class MemberGroupInfo:
 
     @member_group_name.setter
     def member_group_name(self, member_group_name):
-        """Sets the member_group_name of this MemberGroupInfo.
+        r"""Sets the member_group_name of this MemberGroupInfo.
 
         VPC通道后端服务器组名称
 
@@ -127,7 +127,7 @@ class MemberGroupInfo:
 
     @property
     def member_group_remark(self):
-        """Gets the member_group_remark of this MemberGroupInfo.
+        r"""Gets the member_group_remark of this MemberGroupInfo.
 
         VPC通道后端服务器组描述
 
@@ -138,7 +138,7 @@ class MemberGroupInfo:
 
     @member_group_remark.setter
     def member_group_remark(self, member_group_remark):
-        """Sets the member_group_remark of this MemberGroupInfo.
+        r"""Sets the member_group_remark of this MemberGroupInfo.
 
         VPC通道后端服务器组描述
 
@@ -149,7 +149,7 @@ class MemberGroupInfo:
 
     @property
     def member_group_weight(self):
-        """Gets the member_group_weight of this MemberGroupInfo.
+        r"""Gets the member_group_weight of this MemberGroupInfo.
 
         VPC通道后端服务器组权重值。  当前服务器组存在服务器且此权重值存在时，自动使用此权重值分配权重。
 
@@ -160,7 +160,7 @@ class MemberGroupInfo:
 
     @member_group_weight.setter
     def member_group_weight(self, member_group_weight):
-        """Sets the member_group_weight of this MemberGroupInfo.
+        r"""Sets the member_group_weight of this MemberGroupInfo.
 
         VPC通道后端服务器组权重值。  当前服务器组存在服务器且此权重值存在时，自动使用此权重值分配权重。
 
@@ -171,7 +171,7 @@ class MemberGroupInfo:
 
     @property
     def dict_code(self):
-        """Gets the dict_code of this MemberGroupInfo.
+        r"""Gets the dict_code of this MemberGroupInfo.
 
         VPC通道后端服务器组的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -182,7 +182,7 @@ class MemberGroupInfo:
 
     @dict_code.setter
     def dict_code(self, dict_code):
-        """Sets the dict_code of this MemberGroupInfo.
+        r"""Sets the dict_code of this MemberGroupInfo.
 
         VPC通道后端服务器组的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -193,7 +193,7 @@ class MemberGroupInfo:
 
     @property
     def microservice_version(self):
-        """Gets the microservice_version of this MemberGroupInfo.
+        r"""Gets the microservice_version of this MemberGroupInfo.
 
         VPC通道后端服务器组的版本，仅VPC通道类型为微服务时支持。
 
@@ -204,7 +204,7 @@ class MemberGroupInfo:
 
     @microservice_version.setter
     def microservice_version(self, microservice_version):
-        """Sets the microservice_version of this MemberGroupInfo.
+        r"""Sets the microservice_version of this MemberGroupInfo.
 
         VPC通道后端服务器组的版本，仅VPC通道类型为微服务时支持。
 
@@ -215,7 +215,7 @@ class MemberGroupInfo:
 
     @property
     def microservice_port(self):
-        """Gets the microservice_port of this MemberGroupInfo.
+        r"""Gets the microservice_port of this MemberGroupInfo.
 
         VPC通道后端服务器组的端口号，仅VPC通道类型为微服务时支持。端口号为0时后端服务器组下的所有地址沿用原来负载端口继承逻辑。
 
@@ -226,7 +226,7 @@ class MemberGroupInfo:
 
     @microservice_port.setter
     def microservice_port(self, microservice_port):
-        """Sets the microservice_port of this MemberGroupInfo.
+        r"""Sets the microservice_port of this MemberGroupInfo.
 
         VPC通道后端服务器组的端口号，仅VPC通道类型为微服务时支持。端口号为0时后端服务器组下的所有地址沿用原来负载端口继承逻辑。
 
@@ -237,7 +237,7 @@ class MemberGroupInfo:
 
     @property
     def microservice_labels(self):
-        """Gets the microservice_labels of this MemberGroupInfo.
+        r"""Gets the microservice_labels of this MemberGroupInfo.
 
         VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
 
@@ -248,7 +248,7 @@ class MemberGroupInfo:
 
     @microservice_labels.setter
     def microservice_labels(self, microservice_labels):
-        """Sets the microservice_labels of this MemberGroupInfo.
+        r"""Sets the microservice_labels of this MemberGroupInfo.
 
         VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
 
@@ -259,7 +259,7 @@ class MemberGroupInfo:
 
     @property
     def member_group_id(self):
-        """Gets the member_group_id of this MemberGroupInfo.
+        r"""Gets the member_group_id of this MemberGroupInfo.
 
         VPC通道后端服务器组编号
 
@@ -270,7 +270,7 @@ class MemberGroupInfo:
 
     @member_group_id.setter
     def member_group_id(self, member_group_id):
-        """Sets the member_group_id of this MemberGroupInfo.
+        r"""Sets the member_group_id of this MemberGroupInfo.
 
         VPC通道后端服务器组编号
 
@@ -281,7 +281,7 @@ class MemberGroupInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MemberGroupInfo.
+        r"""Gets the create_time of this MemberGroupInfo.
 
         VPC通道后端服务器组创建时间
 
@@ -292,7 +292,7 @@ class MemberGroupInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MemberGroupInfo.
+        r"""Sets the create_time of this MemberGroupInfo.
 
         VPC通道后端服务器组创建时间
 
@@ -303,7 +303,7 @@ class MemberGroupInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MemberGroupInfo.
+        r"""Gets the update_time of this MemberGroupInfo.
 
         VPC通道后端服务器组更新时间
 
@@ -314,7 +314,7 @@ class MemberGroupInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MemberGroupInfo.
+        r"""Sets the update_time of this MemberGroupInfo.
 
         VPC通道后端服务器组更新时间
 

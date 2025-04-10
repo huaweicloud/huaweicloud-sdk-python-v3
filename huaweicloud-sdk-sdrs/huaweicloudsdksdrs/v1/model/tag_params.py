@@ -27,7 +27,7 @@ class TagParams:
     }
 
     def __init__(self, key=None, values=None):
-        """TagParams
+        r"""TagParams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagParams:
 
     @property
     def key(self):
-        """Gets the key of this TagParams.
+        r"""Gets the key of this TagParams.
 
         键。最大长度127个unicode字符。 key不能为空。key不能为空或者空字符串，不能为空格，使用之前先trim 前后半角空格。
 
@@ -59,7 +59,7 @@ class TagParams:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagParams.
+        r"""Sets the key of this TagParams.
 
         键。最大长度127个unicode字符。 key不能为空。key不能为空或者空字符串，不能为空格，使用之前先trim 前后半角空格。
 
@@ -70,7 +70,7 @@ class TagParams:
 
     @property
     def values(self):
-        """Gets the values of this TagParams.
+        r"""Gets the values of this TagParams.
 
         值列表。每个值最大长度255个unicode字符，使用之前先trim 前后半角空格。\\*为系统保留字符，如果value是以\\*开头表示按照\\*后面的值全模糊匹配。不能只传入“\\*”。如果values为空列表，则表示any_value（查询任意value）。value之间为或的关系。
 
@@ -81,7 +81,7 @@ class TagParams:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagParams.
+        r"""Sets the values of this TagParams.
 
         值列表。每个值最大长度255个unicode字符，使用之前先trim 前后半角空格。\\*为系统保留字符，如果value是以\\*开头表示按照\\*后面的值全模糊匹配。不能只传入“\\*”。如果values为空列表，则表示any_value（查询任意value）。value之间为或的关系。
 

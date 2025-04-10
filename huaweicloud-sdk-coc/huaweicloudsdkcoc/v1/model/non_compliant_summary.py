@@ -27,7 +27,7 @@ class NonCompliantSummary:
     }
 
     def __init__(self, non_compliant_count=None, severity_summary=None):
-        """NonCompliantSummary
+        r"""NonCompliantSummary
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NonCompliantSummary:
 
     @property
     def non_compliant_count(self):
-        """Gets the non_compliant_count of this NonCompliantSummary.
+        r"""Gets the non_compliant_count of this NonCompliantSummary.
 
         不合规补丁数量
 
@@ -61,7 +61,7 @@ class NonCompliantSummary:
 
     @non_compliant_count.setter
     def non_compliant_count(self, non_compliant_count):
-        """Sets the non_compliant_count of this NonCompliantSummary.
+        r"""Sets the non_compliant_count of this NonCompliantSummary.
 
         不合规补丁数量
 
@@ -72,7 +72,7 @@ class NonCompliantSummary:
 
     @property
     def severity_summary(self):
-        """Gets the severity_summary of this NonCompliantSummary.
+        r"""Gets the severity_summary of this NonCompliantSummary.
 
         :return: The severity_summary of this NonCompliantSummary.
         :rtype: :class:`huaweicloudsdkcoc.v1.SeveritySummary`
@@ -81,7 +81,7 @@ class NonCompliantSummary:
 
     @severity_summary.setter
     def severity_summary(self, severity_summary):
-        """Sets the severity_summary of this NonCompliantSummary.
+        r"""Sets the severity_summary of this NonCompliantSummary.
 
         :param severity_summary: The severity_summary of this NonCompliantSummary.
         :type severity_summary: :class:`huaweicloudsdkcoc.v1.SeveritySummary`

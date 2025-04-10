@@ -24,7 +24,7 @@ class ShowBackupPathResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ShowBackupPathResponse
+        r"""ShowBackupPathResponse
 
         The model defined in huaweicloud sdk
 

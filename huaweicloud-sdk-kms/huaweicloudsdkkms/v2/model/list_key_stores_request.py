@@ -27,7 +27,7 @@ class ListKeyStoresRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListKeyStoresRequest
+        r"""ListKeyStoresRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListKeyStoresRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListKeyStoresRequest.
+        r"""Gets the limit of this ListKeyStoresRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -61,7 +61,7 @@ class ListKeyStoresRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListKeyStoresRequest.
+        r"""Sets the limit of this ListKeyStoresRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -72,7 +72,7 @@ class ListKeyStoresRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListKeyStoresRequest.
+        r"""Gets the offset of this ListKeyStoresRequest.
 
         索引位置，从offset指定的下一条数据开始查询。
 
@@ -83,7 +83,7 @@ class ListKeyStoresRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListKeyStoresRequest.
+        r"""Sets the offset of this ListKeyStoresRequest.
 
         索引位置，从offset指定的下一条数据开始查询。
 

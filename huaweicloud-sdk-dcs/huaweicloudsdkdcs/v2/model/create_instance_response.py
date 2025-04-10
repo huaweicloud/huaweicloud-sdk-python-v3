@@ -28,7 +28,7 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, instances=None):
-        """CreateInstanceResponse
+        r"""CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateInstanceResponse.
+        r"""Gets the order_id of this CreateInstanceResponse.
 
         订单ID，仅在创建包周期实例时返回。
 
@@ -62,7 +62,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateInstanceResponse.
+        r"""Sets the order_id of this CreateInstanceResponse.
 
         订单ID，仅在创建包周期实例时返回。
 
@@ -73,7 +73,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this CreateInstanceResponse.
+        r"""Gets the instances of this CreateInstanceResponse.
 
         缓存实例ID和名称，如果批量创建实例，则会返回多个。
 
@@ -84,7 +84,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this CreateInstanceResponse.
+        r"""Sets the instances of this CreateInstanceResponse.
 
         缓存实例ID和名称，如果批量创建实例，则会返回多个。
 

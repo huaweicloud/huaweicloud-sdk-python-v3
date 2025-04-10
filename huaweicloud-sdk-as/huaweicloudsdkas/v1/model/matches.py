@@ -27,7 +27,7 @@ class Matches:
     }
 
     def __init__(self, key=None, value=None):
-        """Matches
+        r"""Matches
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Matches:
 
     @property
     def key(self):
-        """Gets the key of this Matches.
+        r"""Gets the key of this Matches.
 
         键。暂限定为resource_name。
 
@@ -59,7 +59,7 @@ class Matches:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Matches.
+        r"""Sets the key of this Matches.
 
         键。暂限定为resource_name。
 
@@ -70,7 +70,7 @@ class Matches:
 
     @property
     def value(self):
-        """Gets the value of this Matches.
+        r"""Gets the value of this Matches.
 
         值。为固定字典值。每个值最大长度255个unicode字符。若为空字符串、resource_id时为精确匹配。
 
@@ -81,7 +81,7 @@ class Matches:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Matches.
+        r"""Sets the value of this Matches.
 
         值。为固定字典值。每个值最大长度255个unicode字符。若为空字符串、resource_id时为精确匹配。
 

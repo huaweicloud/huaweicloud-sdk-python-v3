@@ -27,7 +27,7 @@ class TrustProcessInfo:
     }
 
     def __init__(self, path=None, hash=None):
-        """TrustProcessInfo
+        r"""TrustProcessInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TrustProcessInfo:
 
     @property
     def path(self):
-        """Gets the path of this TrustProcessInfo.
+        r"""Gets the path of this TrustProcessInfo.
 
         进程路径
 
@@ -61,7 +61,7 @@ class TrustProcessInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this TrustProcessInfo.
+        r"""Sets the path of this TrustProcessInfo.
 
         进程路径
 
@@ -72,7 +72,7 @@ class TrustProcessInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this TrustProcessInfo.
+        r"""Gets the hash of this TrustProcessInfo.
 
         进程hash
 
@@ -83,7 +83,7 @@ class TrustProcessInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this TrustProcessInfo.
+        r"""Sets the hash of this TrustProcessInfo.
 
         进程hash
 

@@ -37,7 +37,7 @@ class ConfigurationInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_name=None, created=None, updated=None, user_defined=None):
-        """ConfigurationInfo
+        r"""ConfigurationInfo
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ConfigurationInfo:
 
     @property
     def id(self):
-        """Gets the id of this ConfigurationInfo.
+        r"""Gets the id of this ConfigurationInfo.
 
         参数模板ID。
 
@@ -90,7 +90,7 @@ class ConfigurationInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigurationInfo.
+        r"""Sets the id of this ConfigurationInfo.
 
         参数模板ID。
 
@@ -101,7 +101,7 @@ class ConfigurationInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationInfo.
+        r"""Gets the name of this ConfigurationInfo.
 
         参数模板名称。
 
@@ -112,7 +112,7 @@ class ConfigurationInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationInfo.
+        r"""Sets the name of this ConfigurationInfo.
 
         参数模板名称。
 
@@ -123,7 +123,7 @@ class ConfigurationInfo:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationInfo.
+        r"""Gets the description of this ConfigurationInfo.
 
         参数模板描述。
 
@@ -134,7 +134,7 @@ class ConfigurationInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationInfo.
+        r"""Sets the description of this ConfigurationInfo.
 
         参数模板描述。
 
@@ -145,7 +145,7 @@ class ConfigurationInfo:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ConfigurationInfo.
+        r"""Gets the datastore_name of this ConfigurationInfo.
 
         数据库类型。
 
@@ -156,7 +156,7 @@ class ConfigurationInfo:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ConfigurationInfo.
+        r"""Sets the datastore_name of this ConfigurationInfo.
 
         数据库类型。
 
@@ -167,7 +167,7 @@ class ConfigurationInfo:
 
     @property
     def created(self):
-        """Gets the created of this ConfigurationInfo.
+        r"""Gets the created of this ConfigurationInfo.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -178,7 +178,7 @@ class ConfigurationInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ConfigurationInfo.
+        r"""Sets the created of this ConfigurationInfo.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -189,7 +189,7 @@ class ConfigurationInfo:
 
     @property
     def updated(self):
-        """Gets the updated of this ConfigurationInfo.
+        r"""Gets the updated of this ConfigurationInfo.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -200,7 +200,7 @@ class ConfigurationInfo:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ConfigurationInfo.
+        r"""Sets the updated of this ConfigurationInfo.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -211,7 +211,7 @@ class ConfigurationInfo:
 
     @property
     def user_defined(self):
-        """Gets the user_defined of this ConfigurationInfo.
+        r"""Gets the user_defined of this ConfigurationInfo.
 
         是否是用户自定义参数模板：  false，表示为系统默认参数模板。 true，表示为用户自定义参数模板。
 
@@ -222,7 +222,7 @@ class ConfigurationInfo:
 
     @user_defined.setter
     def user_defined(self, user_defined):
-        """Sets the user_defined of this ConfigurationInfo.
+        r"""Sets the user_defined of this ConfigurationInfo.
 
         是否是用户自定义参数模板：  false，表示为系统默认参数模板。 true，表示为用户自定义参数模板。
 

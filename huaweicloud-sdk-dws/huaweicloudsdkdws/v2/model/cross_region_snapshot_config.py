@@ -41,7 +41,7 @@ class CrossRegionSnapshotConfig:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, source_region=None, source_project_id=None, destination_region=None, destination_project_id=None, status=None, back_keep_day=None, total_size=None):
-        """CrossRegionSnapshotConfig
+        r"""CrossRegionSnapshotConfig
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CrossRegionSnapshotConfig.
+        r"""Gets the cluster_id of this CrossRegionSnapshotConfig.
 
         集群ID
 
@@ -110,7 +110,7 @@ class CrossRegionSnapshotConfig:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CrossRegionSnapshotConfig.
+        r"""Sets the cluster_id of this CrossRegionSnapshotConfig.
 
         集群ID
 
@@ -121,7 +121,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CrossRegionSnapshotConfig.
+        r"""Gets the cluster_name of this CrossRegionSnapshotConfig.
 
         集群名称
 
@@ -132,7 +132,7 @@ class CrossRegionSnapshotConfig:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CrossRegionSnapshotConfig.
+        r"""Sets the cluster_name of this CrossRegionSnapshotConfig.
 
         集群名称
 
@@ -143,7 +143,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def source_region(self):
-        """Gets the source_region of this CrossRegionSnapshotConfig.
+        r"""Gets the source_region of this CrossRegionSnapshotConfig.
 
         源区域
 
@@ -154,7 +154,7 @@ class CrossRegionSnapshotConfig:
 
     @source_region.setter
     def source_region(self, source_region):
-        """Sets the source_region of this CrossRegionSnapshotConfig.
+        r"""Sets the source_region of this CrossRegionSnapshotConfig.
 
         源区域
 
@@ -165,7 +165,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this CrossRegionSnapshotConfig.
+        r"""Gets the source_project_id of this CrossRegionSnapshotConfig.
 
         源项目ID
 
@@ -176,7 +176,7 @@ class CrossRegionSnapshotConfig:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this CrossRegionSnapshotConfig.
+        r"""Sets the source_project_id of this CrossRegionSnapshotConfig.
 
         源项目ID
 
@@ -187,7 +187,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this CrossRegionSnapshotConfig.
+        r"""Gets the destination_region of this CrossRegionSnapshotConfig.
 
         目的区域
 
@@ -198,7 +198,7 @@ class CrossRegionSnapshotConfig:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this CrossRegionSnapshotConfig.
+        r"""Sets the destination_region of this CrossRegionSnapshotConfig.
 
         目的区域
 
@@ -209,7 +209,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this CrossRegionSnapshotConfig.
+        r"""Gets the destination_project_id of this CrossRegionSnapshotConfig.
 
         目的项目ID
 
@@ -220,7 +220,7 @@ class CrossRegionSnapshotConfig:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this CrossRegionSnapshotConfig.
+        r"""Sets the destination_project_id of this CrossRegionSnapshotConfig.
 
         目的项目ID
 
@@ -231,7 +231,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def status(self):
-        """Gets the status of this CrossRegionSnapshotConfig.
+        r"""Gets the status of this CrossRegionSnapshotConfig.
 
         状态
 
@@ -242,7 +242,7 @@ class CrossRegionSnapshotConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CrossRegionSnapshotConfig.
+        r"""Sets the status of this CrossRegionSnapshotConfig.
 
         状态
 
@@ -253,7 +253,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def back_keep_day(self):
-        """Gets the back_keep_day of this CrossRegionSnapshotConfig.
+        r"""Gets the back_keep_day of this CrossRegionSnapshotConfig.
 
         保存时间
 
@@ -264,7 +264,7 @@ class CrossRegionSnapshotConfig:
 
     @back_keep_day.setter
     def back_keep_day(self, back_keep_day):
-        """Sets the back_keep_day of this CrossRegionSnapshotConfig.
+        r"""Sets the back_keep_day of this CrossRegionSnapshotConfig.
 
         保存时间
 
@@ -275,7 +275,7 @@ class CrossRegionSnapshotConfig:
 
     @property
     def total_size(self):
-        """Gets the total_size of this CrossRegionSnapshotConfig.
+        r"""Gets the total_size of this CrossRegionSnapshotConfig.
 
         总大小
 
@@ -286,7 +286,7 @@ class CrossRegionSnapshotConfig:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this CrossRegionSnapshotConfig.
+        r"""Sets the total_size of this CrossRegionSnapshotConfig.
 
         总大小
 

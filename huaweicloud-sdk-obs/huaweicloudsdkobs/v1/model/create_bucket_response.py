@@ -38,7 +38,7 @@ class CreateBucketResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """CreateBucketResponse
+        r"""CreateBucketResponse
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreateBucketResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this CreateBucketResponse.
+        r"""Gets the x_obs_id_2 of this CreateBucketResponse.
 
         :return: The x_obs_id_2 of this CreateBucketResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateBucketResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this CreateBucketResponse.
+        r"""Sets the x_obs_id_2 of this CreateBucketResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this CreateBucketResponse.
         :type x_obs_id_2: str
@@ -99,7 +99,7 @@ class CreateBucketResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this CreateBucketResponse.
+        r"""Gets the x_obs_request_id of this CreateBucketResponse.
 
         :return: The x_obs_request_id of this CreateBucketResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateBucketResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this CreateBucketResponse.
+        r"""Sets the x_obs_request_id of this CreateBucketResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this CreateBucketResponse.
         :type x_obs_request_id: str
@@ -117,7 +117,7 @@ class CreateBucketResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this CreateBucketResponse.
+        r"""Gets the e_tag of this CreateBucketResponse.
 
         :return: The e_tag of this CreateBucketResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class CreateBucketResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this CreateBucketResponse.
+        r"""Sets the e_tag of this CreateBucketResponse.
 
         :param e_tag: The e_tag of this CreateBucketResponse.
         :type e_tag: str
@@ -135,7 +135,7 @@ class CreateBucketResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this CreateBucketResponse.
+        r"""Gets the connection of this CreateBucketResponse.
 
         :return: The connection of this CreateBucketResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class CreateBucketResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this CreateBucketResponse.
+        r"""Sets the connection of this CreateBucketResponse.
 
         :param connection: The connection of this CreateBucketResponse.
         :type connection: str
@@ -153,7 +153,7 @@ class CreateBucketResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this CreateBucketResponse.
+        r"""Gets the content_length of this CreateBucketResponse.
 
         :return: The content_length of this CreateBucketResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class CreateBucketResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this CreateBucketResponse.
+        r"""Sets the content_length of this CreateBucketResponse.
 
         :param content_length: The content_length of this CreateBucketResponse.
         :type content_length: str
@@ -171,7 +171,7 @@ class CreateBucketResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this CreateBucketResponse.
+        r"""Gets the date of this CreateBucketResponse.
 
         :return: The date of this CreateBucketResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class CreateBucketResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CreateBucketResponse.
+        r"""Sets the date of this CreateBucketResponse.
 
         :param date: The date of this CreateBucketResponse.
         :type date: str

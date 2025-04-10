@@ -25,7 +25,7 @@ class CreateClusterV2Request:
     }
 
     def __init__(self, body=None):
-        """CreateClusterV2Request
+        r"""CreateClusterV2Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateClusterV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateClusterV2Request.
+        r"""Gets the body of this CreateClusterV2Request.
 
         :return: The body of this CreateClusterV2Request.
         :rtype: :class:`huaweicloudsdkdws.v2.V2CreateClusterReq`
@@ -52,7 +52,7 @@ class CreateClusterV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClusterV2Request.
+        r"""Sets the body of this CreateClusterV2Request.
 
         :param body: The body of this CreateClusterV2Request.
         :type body: :class:`huaweicloudsdkdws.v2.V2CreateClusterReq`

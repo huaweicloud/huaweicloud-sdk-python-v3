@@ -27,7 +27,7 @@ class InstanceDeploymentVariables:
     }
 
     def __init__(self, environment=None, components=None):
-        """InstanceDeploymentVariables
+        r"""InstanceDeploymentVariables
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceDeploymentVariables:
 
     @property
     def environment(self):
-        """Gets the environment of this InstanceDeploymentVariables.
+        r"""Gets the environment of this InstanceDeploymentVariables.
 
         环境变量
 
@@ -61,7 +61,7 @@ class InstanceDeploymentVariables:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this InstanceDeploymentVariables.
+        r"""Sets the environment of this InstanceDeploymentVariables.
 
         环境变量
 
@@ -72,7 +72,7 @@ class InstanceDeploymentVariables:
 
     @property
     def components(self):
-        """Gets the components of this InstanceDeploymentVariables.
+        r"""Gets the components of this InstanceDeploymentVariables.
 
         组件变量
 
@@ -83,7 +83,7 @@ class InstanceDeploymentVariables:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this InstanceDeploymentVariables.
+        r"""Sets the components of this InstanceDeploymentVariables.
 
         组件变量
 

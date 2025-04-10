@@ -25,7 +25,7 @@ class UpdateDatabaseUserCommentRequest:
     }
 
     def __init__(self, users=None):
-        """UpdateDatabaseUserCommentRequest
+        r"""UpdateDatabaseUserCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDatabaseUserCommentRequest:
 
     @property
     def users(self):
-        """Gets the users of this UpdateDatabaseUserCommentRequest.
+        r"""Gets the users of this UpdateDatabaseUserCommentRequest.
 
         准备修改备注的数据库用户列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class UpdateDatabaseUserCommentRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this UpdateDatabaseUserCommentRequest.
+        r"""Sets the users of this UpdateDatabaseUserCommentRequest.
 
         准备修改备注的数据库用户列表，列表最大长度为50。
 

@@ -29,7 +29,7 @@ class BatchDeleteDocRequestDto:
     }
 
     def __init__(self, ids=None, model_name=None, is_check=None):
-        """BatchDeleteDocRequestDto
+        r"""BatchDeleteDocRequestDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchDeleteDocRequestDto:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchDeleteDocRequestDto.
+        r"""Gets the ids of this BatchDeleteDocRequestDto.
 
         **参数解释**：  文档ID列表。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -68,7 +68,7 @@ class BatchDeleteDocRequestDto:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchDeleteDocRequestDto.
+        r"""Sets the ids of this BatchDeleteDocRequestDto.
 
         **参数解释**：  文档ID列表。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -79,7 +79,7 @@ class BatchDeleteDocRequestDto:
 
     @property
     def model_name(self):
-        """Gets the model_name of this BatchDeleteDocRequestDto.
+        r"""Gets the model_name of this BatchDeleteDocRequestDto.
 
         **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -90,7 +90,7 @@ class BatchDeleteDocRequestDto:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this BatchDeleteDocRequestDto.
+        r"""Sets the model_name of this BatchDeleteDocRequestDto.
 
         **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -101,7 +101,7 @@ class BatchDeleteDocRequestDto:
 
     @property
     def is_check(self):
-        """Gets the is_check of this BatchDeleteDocRequestDto.
+        r"""Gets the is_check of this BatchDeleteDocRequestDto.
 
         **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
 
@@ -112,7 +112,7 @@ class BatchDeleteDocRequestDto:
 
     @is_check.setter
     def is_check(self, is_check):
-        """Sets the is_check of this BatchDeleteDocRequestDto.
+        r"""Sets the is_check of this BatchDeleteDocRequestDto.
 
         **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
 

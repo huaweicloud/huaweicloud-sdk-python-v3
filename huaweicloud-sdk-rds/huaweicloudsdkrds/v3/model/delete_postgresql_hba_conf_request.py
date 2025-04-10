@@ -27,7 +27,7 @@ class DeletePostgresqlHbaConfRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeletePostgresqlHbaConfRequest
+        r"""DeletePostgresqlHbaConfRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeletePostgresqlHbaConfRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePostgresqlHbaConfRequest.
+        r"""Gets the instance_id of this DeletePostgresqlHbaConfRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class DeletePostgresqlHbaConfRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePostgresqlHbaConfRequest.
+        r"""Sets the instance_id of this DeletePostgresqlHbaConfRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class DeletePostgresqlHbaConfRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeletePostgresqlHbaConfRequest.
+        r"""Gets the body of this DeletePostgresqlHbaConfRequest.
 
         :return: The body of this DeletePostgresqlHbaConfRequest.
         :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaConf`]
@@ -80,7 +80,7 @@ class DeletePostgresqlHbaConfRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePostgresqlHbaConfRequest.
+        r"""Sets the body of this DeletePostgresqlHbaConfRequest.
 
         :param body: The body of this DeletePostgresqlHbaConfRequest.
         :type body: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaConf`]

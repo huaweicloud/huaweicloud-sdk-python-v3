@@ -43,7 +43,7 @@ class ProtectionInfoRequestInfo:
     }
 
     def __init__(self, operating_system=None, ransom_protection_status=None, protection_policy_id=None, create_protection_policy=None, backup_protection_status=None, backup_resources=None, backup_policy_id=None, backup_cycle=None, agent_id_list=None, host_id_list=None):
-        """ProtectionInfoRequestInfo
+        r"""ProtectionInfoRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this ProtectionInfoRequestInfo.
+        r"""Gets the operating_system of this ProtectionInfoRequestInfo.
 
         需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
@@ -112,7 +112,7 @@ class ProtectionInfoRequestInfo:
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this ProtectionInfoRequestInfo.
+        r"""Sets the operating_system of this ProtectionInfoRequestInfo.
 
         需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
 
@@ -123,7 +123,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def ransom_protection_status(self):
-        """Gets the ransom_protection_status of this ProtectionInfoRequestInfo.
+        r"""Gets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
         勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
 
@@ -134,7 +134,7 @@ class ProtectionInfoRequestInfo:
 
     @ransom_protection_status.setter
     def ransom_protection_status(self, ransom_protection_status):
-        """Sets the ransom_protection_status of this ProtectionInfoRequestInfo.
+        r"""Sets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
         勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
 
@@ -145,7 +145,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def protection_policy_id(self):
-        """Gets the protection_policy_id of this ProtectionInfoRequestInfo.
+        r"""Gets the protection_policy_id of this ProtectionInfoRequestInfo.
 
         勒索防护策略ID,若选择已有策略防护,则该字段必选
 
@@ -156,7 +156,7 @@ class ProtectionInfoRequestInfo:
 
     @protection_policy_id.setter
     def protection_policy_id(self, protection_policy_id):
-        """Sets the protection_policy_id of this ProtectionInfoRequestInfo.
+        r"""Sets the protection_policy_id of this ProtectionInfoRequestInfo.
 
         勒索防护策略ID,若选择已有策略防护,则该字段必选
 
@@ -167,7 +167,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def create_protection_policy(self):
-        """Gets the create_protection_policy of this ProtectionInfoRequestInfo.
+        r"""Gets the create_protection_policy of this ProtectionInfoRequestInfo.
 
         :return: The create_protection_policy of this ProtectionInfoRequestInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
@@ -176,7 +176,7 @@ class ProtectionInfoRequestInfo:
 
     @create_protection_policy.setter
     def create_protection_policy(self, create_protection_policy):
-        """Sets the create_protection_policy of this ProtectionInfoRequestInfo.
+        r"""Sets the create_protection_policy of this ProtectionInfoRequestInfo.
 
         :param create_protection_policy: The create_protection_policy of this ProtectionInfoRequestInfo.
         :type create_protection_policy: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
@@ -185,7 +185,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def backup_protection_status(self):
-        """Gets the backup_protection_status of this ProtectionInfoRequestInfo.
+        r"""Gets the backup_protection_status of this ProtectionInfoRequestInfo.
 
         是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
 
@@ -196,7 +196,7 @@ class ProtectionInfoRequestInfo:
 
     @backup_protection_status.setter
     def backup_protection_status(self, backup_protection_status):
-        """Sets the backup_protection_status of this ProtectionInfoRequestInfo.
+        r"""Sets the backup_protection_status of this ProtectionInfoRequestInfo.
 
         是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
 
@@ -207,7 +207,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def backup_resources(self):
-        """Gets the backup_resources of this ProtectionInfoRequestInfo.
+        r"""Gets the backup_resources of this ProtectionInfoRequestInfo.
 
         :return: The backup_resources of this ProtectionInfoRequestInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.BackupResources`
@@ -216,7 +216,7 @@ class ProtectionInfoRequestInfo:
 
     @backup_resources.setter
     def backup_resources(self, backup_resources):
-        """Sets the backup_resources of this ProtectionInfoRequestInfo.
+        r"""Sets the backup_resources of this ProtectionInfoRequestInfo.
 
         :param backup_resources: The backup_resources of this ProtectionInfoRequestInfo.
         :type backup_resources: :class:`huaweicloudsdkhss.v5.BackupResources`
@@ -225,7 +225,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def backup_policy_id(self):
-        """Gets the backup_policy_id of this ProtectionInfoRequestInfo.
+        r"""Gets the backup_policy_id of this ProtectionInfoRequestInfo.
 
         备份策略ID
 
@@ -236,7 +236,7 @@ class ProtectionInfoRequestInfo:
 
     @backup_policy_id.setter
     def backup_policy_id(self, backup_policy_id):
-        """Sets the backup_policy_id of this ProtectionInfoRequestInfo.
+        r"""Sets the backup_policy_id of this ProtectionInfoRequestInfo.
 
         备份策略ID
 
@@ -247,7 +247,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def backup_cycle(self):
-        """Gets the backup_cycle of this ProtectionInfoRequestInfo.
+        r"""Gets the backup_cycle of this ProtectionInfoRequestInfo.
 
         :return: The backup_cycle of this ProtectionInfoRequestInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo1`
@@ -256,7 +256,7 @@ class ProtectionInfoRequestInfo:
 
     @backup_cycle.setter
     def backup_cycle(self, backup_cycle):
-        """Sets the backup_cycle of this ProtectionInfoRequestInfo.
+        r"""Sets the backup_cycle of this ProtectionInfoRequestInfo.
 
         :param backup_cycle: The backup_cycle of this ProtectionInfoRequestInfo.
         :type backup_cycle: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo1`
@@ -265,7 +265,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def agent_id_list(self):
-        """Gets the agent_id_list of this ProtectionInfoRequestInfo.
+        r"""Gets the agent_id_list of this ProtectionInfoRequestInfo.
 
         开启防护的Agent id列表
 
@@ -276,7 +276,7 @@ class ProtectionInfoRequestInfo:
 
     @agent_id_list.setter
     def agent_id_list(self, agent_id_list):
-        """Sets the agent_id_list of this ProtectionInfoRequestInfo.
+        r"""Sets the agent_id_list of this ProtectionInfoRequestInfo.
 
         开启防护的Agent id列表
 
@@ -287,7 +287,7 @@ class ProtectionInfoRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this ProtectionInfoRequestInfo.
+        r"""Gets the host_id_list of this ProtectionInfoRequestInfo.
 
         开启防护的host id列表
 
@@ -298,7 +298,7 @@ class ProtectionInfoRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this ProtectionInfoRequestInfo.
+        r"""Sets the host_id_list of this ProtectionInfoRequestInfo.
 
         开启防护的host id列表
 

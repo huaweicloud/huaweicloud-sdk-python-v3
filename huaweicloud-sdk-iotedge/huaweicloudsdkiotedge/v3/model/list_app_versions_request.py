@@ -31,7 +31,7 @@ class ListAppVersionsRequest:
     }
 
     def __init__(self, app_id=None, version=None, limit=None, offset=None):
-        """ListAppVersionsRequest
+        r"""ListAppVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAppVersionsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppVersionsRequest.
+        r"""Gets the app_id of this ListAppVersionsRequest.
 
         应用ID
 
@@ -74,7 +74,7 @@ class ListAppVersionsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppVersionsRequest.
+        r"""Sets the app_id of this ListAppVersionsRequest.
 
         应用ID
 
@@ -85,7 +85,7 @@ class ListAppVersionsRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListAppVersionsRequest.
+        r"""Gets the version of this ListAppVersionsRequest.
 
         应用版本号
 
@@ -96,7 +96,7 @@ class ListAppVersionsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListAppVersionsRequest.
+        r"""Sets the version of this ListAppVersionsRequest.
 
         应用版本号
 
@@ -107,7 +107,7 @@ class ListAppVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppVersionsRequest.
+        r"""Gets the limit of this ListAppVersionsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -118,7 +118,7 @@ class ListAppVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppVersionsRequest.
+        r"""Sets the limit of this ListAppVersionsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -129,7 +129,7 @@ class ListAppVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppVersionsRequest.
+        r"""Gets the offset of this ListAppVersionsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 
@@ -140,7 +140,7 @@ class ListAppVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppVersionsRequest.
+        r"""Sets the offset of this ListAppVersionsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 

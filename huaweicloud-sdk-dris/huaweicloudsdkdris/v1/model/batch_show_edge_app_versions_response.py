@@ -28,7 +28,7 @@ class BatchShowEdgeAppVersionsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, versions=None):
-        """BatchShowEdgeAppVersionsResponse
+        r"""BatchShowEdgeAppVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowEdgeAppVersionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowEdgeAppVersionsResponse.
+        r"""Gets the count of this BatchShowEdgeAppVersionsResponse.
 
         **参数说明**：总记录数。
 
@@ -62,7 +62,7 @@ class BatchShowEdgeAppVersionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowEdgeAppVersionsResponse.
+        r"""Sets the count of this BatchShowEdgeAppVersionsResponse.
 
         **参数说明**：总记录数。
 
@@ -73,7 +73,7 @@ class BatchShowEdgeAppVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this BatchShowEdgeAppVersionsResponse.
+        r"""Gets the versions of this BatchShowEdgeAppVersionsResponse.
 
         **参数说明**：列举每条记录。
 
@@ -84,7 +84,7 @@ class BatchShowEdgeAppVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this BatchShowEdgeAppVersionsResponse.
+        r"""Sets the versions of this BatchShowEdgeAppVersionsResponse.
 
         **参数说明**：列举每条记录。
 

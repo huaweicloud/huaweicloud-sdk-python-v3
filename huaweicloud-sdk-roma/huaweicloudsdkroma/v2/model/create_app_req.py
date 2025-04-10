@@ -33,7 +33,7 @@ class CreateAppReq:
     }
 
     def __init__(self, name=None, remark=None, key=None, secret=None, favorite=None):
-        """CreateAppReq
+        r"""CreateAppReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateAppReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateAppReq.
+        r"""Gets the name of this CreateAppReq.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -81,7 +81,7 @@ class CreateAppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAppReq.
+        r"""Sets the name of this CreateAppReq.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -92,7 +92,7 @@ class CreateAppReq:
 
     @property
     def remark(self):
-        """Gets the remark of this CreateAppReq.
+        r"""Gets the remark of this CreateAppReq.
 
         应用描述
 
@@ -103,7 +103,7 @@ class CreateAppReq:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CreateAppReq.
+        r"""Sets the remark of this CreateAppReq.
 
         应用描述
 
@@ -114,7 +114,7 @@ class CreateAppReq:
 
     @property
     def key(self):
-        """Gets the key of this CreateAppReq.
+        r"""Gets the key of this CreateAppReq.
 
         应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
 
@@ -125,7 +125,7 @@ class CreateAppReq:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateAppReq.
+        r"""Sets the key of this CreateAppReq.
 
         应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
 
@@ -136,7 +136,7 @@ class CreateAppReq:
 
     @property
     def secret(self):
-        """Gets the secret of this CreateAppReq.
+        r"""Gets the secret of this CreateAppReq.
 
         应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、=、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
 
@@ -147,7 +147,7 @@ class CreateAppReq:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this CreateAppReq.
+        r"""Sets the secret of this CreateAppReq.
 
         应用认证访问SECRET,未提供（字段不存在或值为null）时随机生成 - 字符集：英文字母、数字、！、@、#、$、%、+、=、点、中划线、斜线/ - 复杂度：满足大小写字母、数字、特殊字符的复杂度组合，考虑兼容性暂时可不做
 
@@ -158,7 +158,7 @@ class CreateAppReq:
 
     @property
     def favorite(self):
-        """Gets the favorite of this CreateAppReq.
+        r"""Gets the favorite of this CreateAppReq.
 
         是否收藏应用，收藏的应用会在列表里优先显示
 
@@ -169,7 +169,7 @@ class CreateAppReq:
 
     @favorite.setter
     def favorite(self, favorite):
-        """Sets the favorite of this CreateAppReq.
+        r"""Sets the favorite of this CreateAppReq.
 
         是否收藏应用，收藏的应用会在列表里优先显示
 

@@ -33,7 +33,7 @@ class UpdateBackupOffsitePolicyInfo:
     }
 
     def __init__(self, open_auto_backup=None, open_incremental_backup=None, destination_project_id=None, destination_region=None, keep_days=None):
-        """UpdateBackupOffsitePolicyInfo
+        r"""UpdateBackupOffsitePolicyInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @property
     def open_auto_backup(self):
-        """Gets the open_auto_backup of this UpdateBackupOffsitePolicyInfo.
+        r"""Gets the open_auto_backup of this UpdateBackupOffsitePolicyInfo.
 
         是否开启跨区域全量备份。 - true：开启跨区域全量备份。 - false：关闭跨区域全量备份。
 
@@ -77,7 +77,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @open_auto_backup.setter
     def open_auto_backup(self, open_auto_backup):
-        """Sets the open_auto_backup of this UpdateBackupOffsitePolicyInfo.
+        r"""Sets the open_auto_backup of this UpdateBackupOffsitePolicyInfo.
 
         是否开启跨区域全量备份。 - true：开启跨区域全量备份。 - false：关闭跨区域全量备份。
 
@@ -88,7 +88,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @property
     def open_incremental_backup(self):
-        """Gets the open_incremental_backup of this UpdateBackupOffsitePolicyInfo.
+        r"""Gets the open_incremental_backup of this UpdateBackupOffsitePolicyInfo.
 
         是否开启跨区域增量备份。 - true：开启跨区域增量备份，当open_auto_backup开启时才可以开启。 - false：关闭跨区域增量备份。
 
@@ -99,7 +99,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @open_incremental_backup.setter
     def open_incremental_backup(self, open_incremental_backup):
-        """Sets the open_incremental_backup of this UpdateBackupOffsitePolicyInfo.
+        r"""Sets the open_incremental_backup of this UpdateBackupOffsitePolicyInfo.
 
         是否开启跨区域增量备份。 - true：开启跨区域增量备份，当open_auto_backup开启时才可以开启。 - false：关闭跨区域增量备份。
 
@@ -110,7 +110,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this UpdateBackupOffsitePolicyInfo.
+        r"""Gets the destination_project_id of this UpdateBackupOffsitePolicyInfo.
 
         设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-taurusdb/taurusdb_10_0004.html)。
 
@@ -121,7 +121,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this UpdateBackupOffsitePolicyInfo.
+        r"""Sets the destination_project_id of this UpdateBackupOffsitePolicyInfo.
 
         设置跨区域备份策略的目标project ID。    租户在某一Region下的project ID。                              获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-taurusdb/taurusdb_10_0004.html)。
 
@@ -132,7 +132,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this UpdateBackupOffsitePolicyInfo.
+        r"""Gets the destination_region of this UpdateBackupOffsitePolicyInfo.
 
         设置跨区域备份策略的目标区域。
 
@@ -143,7 +143,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this UpdateBackupOffsitePolicyInfo.
+        r"""Sets the destination_region of this UpdateBackupOffsitePolicyInfo.
 
         设置跨区域备份策略的目标区域。
 
@@ -154,7 +154,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this UpdateBackupOffsitePolicyInfo.
+        r"""Gets the keep_days of this UpdateBackupOffsitePolicyInfo.
 
         指定已生成的备份文件可以保存的天数。  取值范围：1～1825。
 
@@ -165,7 +165,7 @@ class UpdateBackupOffsitePolicyInfo:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this UpdateBackupOffsitePolicyInfo.
+        r"""Sets the keep_days of this UpdateBackupOffsitePolicyInfo.
 
         指定已生成的备份文件可以保存的天数。  取值范围：1～1825。
 

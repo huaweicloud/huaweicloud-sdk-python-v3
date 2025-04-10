@@ -25,7 +25,7 @@ class AttrPairRules:
     }
 
     def __init__(self, attr_pairs=None):
-        """AttrPairRules
+        r"""AttrPairRules
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AttrPairRules:
 
     @property
     def attr_pairs(self):
-        """Gets the attr_pairs of this AttrPairRules.
+        r"""Gets the attr_pairs of this AttrPairRules.
 
         属性对。
 
@@ -54,7 +54,7 @@ class AttrPairRules:
 
     @attr_pairs.setter
     def attr_pairs(self, attr_pairs):
-        """Sets the attr_pairs of this AttrPairRules.
+        r"""Sets the attr_pairs of this AttrPairRules.
 
         属性对。
 

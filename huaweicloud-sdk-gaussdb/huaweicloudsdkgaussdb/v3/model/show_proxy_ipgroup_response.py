@@ -30,7 +30,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
     }
 
     def __init__(self, enable_ip_group=None, type=None, ip_group=None):
-        """ShowProxyIpgroupResponse
+        r"""ShowProxyIpgroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
 
     @property
     def enable_ip_group(self):
-        """Gets the enable_ip_group of this ShowProxyIpgroupResponse.
+        r"""Gets the enable_ip_group of this ShowProxyIpgroupResponse.
 
         允许访问控制或者不允许 true | false。
 
@@ -69,7 +69,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
 
     @enable_ip_group.setter
     def enable_ip_group(self, enable_ip_group):
-        """Sets the enable_ip_group of this ShowProxyIpgroupResponse.
+        r"""Sets the enable_ip_group of this ShowProxyIpgroupResponse.
 
         允许访问控制或者不允许 true | false。
 
@@ -80,7 +80,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowProxyIpgroupResponse.
+        r"""Gets the type of this ShowProxyIpgroupResponse.
 
         白名单或者黑名单 'white' | 'black'
 
@@ -91,7 +91,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowProxyIpgroupResponse.
+        r"""Sets the type of this ShowProxyIpgroupResponse.
 
         白名单或者黑名单 'white' | 'black'
 
@@ -102,7 +102,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this ShowProxyIpgroupResponse.
+        r"""Gets the ip_group of this ShowProxyIpgroupResponse.
 
         :return: The ip_group of this ShowProxyIpgroupResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ProxyIpGroupDetail`
@@ -111,7 +111,7 @@ class ShowProxyIpgroupResponse(SdkResponse):
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this ShowProxyIpgroupResponse.
+        r"""Sets the ip_group of this ShowProxyIpgroupResponse.
 
         :param ip_group: The ip_group of this ShowProxyIpgroupResponse.
         :type ip_group: :class:`huaweicloudsdkgaussdb.v3.ProxyIpGroupDetail`

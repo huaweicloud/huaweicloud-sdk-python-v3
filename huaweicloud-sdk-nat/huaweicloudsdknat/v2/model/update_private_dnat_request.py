@@ -27,7 +27,7 @@ class UpdatePrivateDnatRequest:
     }
 
     def __init__(self, dnat_rule_id=None, body=None):
-        """UpdatePrivateDnatRequest
+        r"""UpdatePrivateDnatRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePrivateDnatRequest:
 
     @property
     def dnat_rule_id(self):
-        """Gets the dnat_rule_id of this UpdatePrivateDnatRequest.
+        r"""Gets the dnat_rule_id of this UpdatePrivateDnatRequest.
 
         DNAT规则的ID。
 
@@ -60,7 +60,7 @@ class UpdatePrivateDnatRequest:
 
     @dnat_rule_id.setter
     def dnat_rule_id(self, dnat_rule_id):
-        """Sets the dnat_rule_id of this UpdatePrivateDnatRequest.
+        r"""Sets the dnat_rule_id of this UpdatePrivateDnatRequest.
 
         DNAT规则的ID。
 
@@ -71,7 +71,7 @@ class UpdatePrivateDnatRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrivateDnatRequest.
+        r"""Gets the body of this UpdatePrivateDnatRequest.
 
         :return: The body of this UpdatePrivateDnatRequest.
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatRequestBody`
@@ -80,7 +80,7 @@ class UpdatePrivateDnatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrivateDnatRequest.
+        r"""Sets the body of this UpdatePrivateDnatRequest.
 
         :param body: The body of this UpdatePrivateDnatRequest.
         :type body: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatRequestBody`

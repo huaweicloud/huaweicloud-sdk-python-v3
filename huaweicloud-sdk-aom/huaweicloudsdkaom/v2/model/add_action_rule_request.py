@@ -25,7 +25,7 @@ class AddActionRuleRequest:
     }
 
     def __init__(self, body=None):
-        """AddActionRuleRequest
+        r"""AddActionRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddActionRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddActionRuleRequest.
+        r"""Gets the body of this AddActionRuleRequest.
 
         :return: The body of this AddActionRuleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.ActionRule`
@@ -52,7 +52,7 @@ class AddActionRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddActionRuleRequest.
+        r"""Sets the body of this AddActionRuleRequest.
 
         :param body: The body of this AddActionRuleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.ActionRule`

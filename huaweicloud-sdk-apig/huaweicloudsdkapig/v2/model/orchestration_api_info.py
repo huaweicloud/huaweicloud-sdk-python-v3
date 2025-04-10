@@ -41,7 +41,7 @@ class OrchestrationApiInfo:
     }
 
     def __init__(self, api_id=None, api_name=None, req_method=None, req_uri=None, auth_type=None, match_mode=None, group_id=None, group_name=None, attached_time=None):
-        """OrchestrationApiInfo
+        r"""OrchestrationApiInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class OrchestrationApiInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this OrchestrationApiInfo.
+        r"""Gets the api_id of this OrchestrationApiInfo.
 
         API编号。
 
@@ -110,7 +110,7 @@ class OrchestrationApiInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this OrchestrationApiInfo.
+        r"""Sets the api_id of this OrchestrationApiInfo.
 
         API编号。
 
@@ -121,7 +121,7 @@ class OrchestrationApiInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this OrchestrationApiInfo.
+        r"""Gets the api_name of this OrchestrationApiInfo.
 
         API名称。 支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。  > 中文字符必须为UTF-8或者unicode编码。
 
@@ -132,7 +132,7 @@ class OrchestrationApiInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this OrchestrationApiInfo.
+        r"""Sets the api_name of this OrchestrationApiInfo.
 
         API名称。 支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。  > 中文字符必须为UTF-8或者unicode编码。
 
@@ -143,7 +143,7 @@ class OrchestrationApiInfo:
 
     @property
     def req_method(self):
-        """Gets the req_method of this OrchestrationApiInfo.
+        r"""Gets the req_method of this OrchestrationApiInfo.
 
         API的请求方式。
 
@@ -154,7 +154,7 @@ class OrchestrationApiInfo:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this OrchestrationApiInfo.
+        r"""Sets the req_method of this OrchestrationApiInfo.
 
         API的请求方式。
 
@@ -165,7 +165,7 @@ class OrchestrationApiInfo:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this OrchestrationApiInfo.
+        r"""Gets the req_uri of this OrchestrationApiInfo.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -176,7 +176,7 @@ class OrchestrationApiInfo:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this OrchestrationApiInfo.
+        r"""Sets the req_uri of this OrchestrationApiInfo.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -187,7 +187,7 @@ class OrchestrationApiInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this OrchestrationApiInfo.
+        r"""Gets the auth_type of this OrchestrationApiInfo.
 
         API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -198,7 +198,7 @@ class OrchestrationApiInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this OrchestrationApiInfo.
+        r"""Sets the auth_type of this OrchestrationApiInfo.
 
         API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -209,7 +209,7 @@ class OrchestrationApiInfo:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this OrchestrationApiInfo.
+        r"""Gets the match_mode of this OrchestrationApiInfo.
 
         API的匹配方式。 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -220,7 +220,7 @@ class OrchestrationApiInfo:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this OrchestrationApiInfo.
+        r"""Sets the match_mode of this OrchestrationApiInfo.
 
         API的匹配方式。 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -231,7 +231,7 @@ class OrchestrationApiInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this OrchestrationApiInfo.
+        r"""Gets the group_id of this OrchestrationApiInfo.
 
         API所属的分组编号。
 
@@ -242,7 +242,7 @@ class OrchestrationApiInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this OrchestrationApiInfo.
+        r"""Sets the group_id of this OrchestrationApiInfo.
 
         API所属的分组编号。
 
@@ -253,7 +253,7 @@ class OrchestrationApiInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this OrchestrationApiInfo.
+        r"""Gets the group_name of this OrchestrationApiInfo.
 
         API所属分组的名称。
 
@@ -264,7 +264,7 @@ class OrchestrationApiInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this OrchestrationApiInfo.
+        r"""Sets the group_name of this OrchestrationApiInfo.
 
         API所属分组的名称。
 
@@ -275,7 +275,7 @@ class OrchestrationApiInfo:
 
     @property
     def attached_time(self):
-        """Gets the attached_time of this OrchestrationApiInfo.
+        r"""Gets the attached_time of this OrchestrationApiInfo.
 
         绑定时间。
 
@@ -286,7 +286,7 @@ class OrchestrationApiInfo:
 
     @attached_time.setter
     def attached_time(self, attached_time):
-        """Sets the attached_time of this OrchestrationApiInfo.
+        r"""Sets the attached_time of this OrchestrationApiInfo.
 
         绑定时间。
 

@@ -41,7 +41,7 @@ class ListFreeResourceInfosReq:
     }
 
     def __init__(self, region_code=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, status=None, offset=None, limit=None, service_type_code_list=None):
-        """ListFreeResourceInfosReq
+        r"""ListFreeResourceInfosReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def region_code(self):
-        """Gets the region_code of this ListFreeResourceInfosReq.
+        r"""Gets the region_code of this ListFreeResourceInfosReq.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -110,7 +110,7 @@ class ListFreeResourceInfosReq:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this ListFreeResourceInfosReq.
+        r"""Sets the region_code of this ListFreeResourceInfosReq.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -121,7 +121,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListFreeResourceInfosReq.
+        r"""Gets the order_id of this ListFreeResourceInfosReq.
 
         订单ID。
 
@@ -132,7 +132,7 @@ class ListFreeResourceInfosReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListFreeResourceInfosReq.
+        r"""Sets the order_id of this ListFreeResourceInfosReq.
 
         订单ID。
 
@@ -143,7 +143,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListFreeResourceInfosReq.
+        r"""Gets the product_id of this ListFreeResourceInfosReq.
 
         产品ID，即资源包ID。
 
@@ -154,7 +154,7 @@ class ListFreeResourceInfosReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListFreeResourceInfosReq.
+        r"""Sets the product_id of this ListFreeResourceInfosReq.
 
         产品ID，即资源包ID。
 
@@ -165,7 +165,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ListFreeResourceInfosReq.
+        r"""Gets the product_name of this ListFreeResourceInfosReq.
 
         产品名称，即资源包名称。
 
@@ -176,7 +176,7 @@ class ListFreeResourceInfosReq:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ListFreeResourceInfosReq.
+        r"""Sets the product_name of this ListFreeResourceInfosReq.
 
         产品名称，即资源包名称。
 
@@ -187,7 +187,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFreeResourceInfosReq.
+        r"""Gets the enterprise_project_id of this ListFreeResourceInfosReq.
 
         企业项目ID。
 
@@ -198,7 +198,7 @@ class ListFreeResourceInfosReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFreeResourceInfosReq.
+        r"""Sets the enterprise_project_id of this ListFreeResourceInfosReq.
 
         企业项目ID。
 
@@ -209,7 +209,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def status(self):
-        """Gets the status of this ListFreeResourceInfosReq.
+        r"""Gets the status of this ListFreeResourceInfosReq.
 
         状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
@@ -220,7 +220,7 @@ class ListFreeResourceInfosReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFreeResourceInfosReq.
+        r"""Sets the status of this ListFreeResourceInfosReq.
 
         状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
@@ -231,7 +231,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFreeResourceInfosReq.
+        r"""Gets the offset of this ListFreeResourceInfosReq.
 
         偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -242,7 +242,7 @@ class ListFreeResourceInfosReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFreeResourceInfosReq.
+        r"""Sets the offset of this ListFreeResourceInfosReq.
 
         偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -253,7 +253,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFreeResourceInfosReq.
+        r"""Gets the limit of this ListFreeResourceInfosReq.
 
         每次查询的记录数，默认为10。
 
@@ -264,7 +264,7 @@ class ListFreeResourceInfosReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFreeResourceInfosReq.
+        r"""Sets the limit of this ListFreeResourceInfosReq.
 
         每次查询的记录数，默认为10。
 
@@ -275,7 +275,7 @@ class ListFreeResourceInfosReq:
 
     @property
     def service_type_code_list(self):
-        """Gets the service_type_code_list of this ListFreeResourceInfosReq.
+        r"""Gets the service_type_code_list of this ListFreeResourceInfosReq.
 
         云服务类型编码列表，大小写不敏感。 例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
 
@@ -286,7 +286,7 @@ class ListFreeResourceInfosReq:
 
     @service_type_code_list.setter
     def service_type_code_list(self, service_type_code_list):
-        """Sets the service_type_code_list of this ListFreeResourceInfosReq.
+        r"""Sets the service_type_code_list of this ListFreeResourceInfosReq.
 
         云服务类型编码列表，大小写不敏感。 例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
 

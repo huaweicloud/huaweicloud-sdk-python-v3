@@ -30,7 +30,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, model_asset_id=None, x_request_id=None):
-        """CreatePictureModelingByUrlJobResponse
+        r"""CreatePictureModelingByUrlJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreatePictureModelingByUrlJobResponse.
+        r"""Gets the job_id of this CreatePictureModelingByUrlJobResponse.
 
         任务ID。
 
@@ -69,7 +69,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreatePictureModelingByUrlJobResponse.
+        r"""Sets the job_id of this CreatePictureModelingByUrlJobResponse.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this CreatePictureModelingByUrlJobResponse.
+        r"""Gets the model_asset_id of this CreatePictureModelingByUrlJobResponse.
 
         数字人资产ID。
 
@@ -91,7 +91,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this CreatePictureModelingByUrlJobResponse.
+        r"""Sets the model_asset_id of this CreatePictureModelingByUrlJobResponse.
 
         数字人资产ID。
 
@@ -102,7 +102,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreatePictureModelingByUrlJobResponse.
+        r"""Gets the x_request_id of this CreatePictureModelingByUrlJobResponse.
 
         :return: The x_request_id of this CreatePictureModelingByUrlJobResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreatePictureModelingByUrlJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreatePictureModelingByUrlJobResponse.
+        r"""Sets the x_request_id of this CreatePictureModelingByUrlJobResponse.
 
         :param x_request_id: The x_request_id of this CreatePictureModelingByUrlJobResponse.
         :type x_request_id: str

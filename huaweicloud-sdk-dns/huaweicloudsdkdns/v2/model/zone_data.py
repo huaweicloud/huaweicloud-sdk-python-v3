@@ -53,7 +53,7 @@ class ZoneData:
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, ttl=None, serial=None, masters=None, status=None, pool_id=None, project_id=None, zone_type=None, created_at=None, updated_at=None, record_num=None, links=None):
-        """ZoneData
+        r"""ZoneData
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ZoneData:
 
     @property
     def id(self):
-        """Gets the id of this ZoneData.
+        r"""Gets the id of this ZoneData.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -152,7 +152,7 @@ class ZoneData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ZoneData.
+        r"""Sets the id of this ZoneData.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -163,7 +163,7 @@ class ZoneData:
 
     @property
     def name(self):
-        """Gets the name of this ZoneData.
+        r"""Gets the name of this ZoneData.
 
         zone名称。
 
@@ -174,7 +174,7 @@ class ZoneData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ZoneData.
+        r"""Sets the name of this ZoneData.
 
         zone名称。
 
@@ -185,7 +185,7 @@ class ZoneData:
 
     @property
     def description(self):
-        """Gets the description of this ZoneData.
+        r"""Gets the description of this ZoneData.
 
         对zone的描述信息。
 
@@ -196,7 +196,7 @@ class ZoneData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ZoneData.
+        r"""Sets the description of this ZoneData.
 
         对zone的描述信息。
 
@@ -207,7 +207,7 @@ class ZoneData:
 
     @property
     def email(self):
-        """Gets the email of this ZoneData.
+        r"""Gets the email of this ZoneData.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -218,7 +218,7 @@ class ZoneData:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ZoneData.
+        r"""Sets the email of this ZoneData.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -229,7 +229,7 @@ class ZoneData:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ZoneData.
+        r"""Gets the ttl of this ZoneData.
 
         该zone下SOA记录中的ttl值。
 
@@ -240,7 +240,7 @@ class ZoneData:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ZoneData.
+        r"""Sets the ttl of this ZoneData.
 
         该zone下SOA记录中的ttl值。
 
@@ -251,7 +251,7 @@ class ZoneData:
 
     @property
     def serial(self):
-        """Gets the serial of this ZoneData.
+        r"""Gets the serial of this ZoneData.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -262,7 +262,7 @@ class ZoneData:
 
     @serial.setter
     def serial(self, serial):
-        """Sets the serial of this ZoneData.
+        r"""Sets the serial of this ZoneData.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -273,7 +273,7 @@ class ZoneData:
 
     @property
     def masters(self):
-        """Gets the masters of this ZoneData.
+        r"""Gets the masters of this ZoneData.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -284,7 +284,7 @@ class ZoneData:
 
     @masters.setter
     def masters(self, masters):
-        """Sets the masters of this ZoneData.
+        r"""Sets the masters of this ZoneData.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -295,7 +295,7 @@ class ZoneData:
 
     @property
     def status(self):
-        """Gets the status of this ZoneData.
+        r"""Gets the status of this ZoneData.
 
         资源状态。
 
@@ -306,7 +306,7 @@ class ZoneData:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ZoneData.
+        r"""Sets the status of this ZoneData.
 
         资源状态。
 
@@ -317,7 +317,7 @@ class ZoneData:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ZoneData.
+        r"""Gets the pool_id of this ZoneData.
 
         托管该zone的pool，由系统分配。
 
@@ -328,7 +328,7 @@ class ZoneData:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ZoneData.
+        r"""Sets the pool_id of this ZoneData.
 
         托管该zone的pool，由系统分配。
 
@@ -339,7 +339,7 @@ class ZoneData:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ZoneData.
+        r"""Gets the project_id of this ZoneData.
 
         zone所属的项目ID。
 
@@ -350,7 +350,7 @@ class ZoneData:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ZoneData.
+        r"""Sets the project_id of this ZoneData.
 
         zone所属的项目ID。
 
@@ -361,7 +361,7 @@ class ZoneData:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this ZoneData.
+        r"""Gets the zone_type of this ZoneData.
 
         zone类型，取值 public 或 private。
 
@@ -372,7 +372,7 @@ class ZoneData:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this ZoneData.
+        r"""Sets the zone_type of this ZoneData.
 
         zone类型，取值 public 或 private。
 
@@ -383,7 +383,7 @@ class ZoneData:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ZoneData.
+        r"""Gets the created_at of this ZoneData.
 
         创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
 
@@ -394,7 +394,7 @@ class ZoneData:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ZoneData.
+        r"""Sets the created_at of this ZoneData.
 
         创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
 
@@ -405,7 +405,7 @@ class ZoneData:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ZoneData.
+        r"""Gets the updated_at of this ZoneData.
 
         更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
 
@@ -416,7 +416,7 @@ class ZoneData:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ZoneData.
+        r"""Sets the updated_at of this ZoneData.
 
         更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
 
@@ -427,7 +427,7 @@ class ZoneData:
 
     @property
     def record_num(self):
-        """Gets the record_num of this ZoneData.
+        r"""Gets the record_num of this ZoneData.
 
         该zone下的recordset个数。
 
@@ -438,7 +438,7 @@ class ZoneData:
 
     @record_num.setter
     def record_num(self, record_num):
-        """Sets the record_num of this ZoneData.
+        r"""Sets the record_num of this ZoneData.
 
         该zone下的recordset个数。
 
@@ -449,7 +449,7 @@ class ZoneData:
 
     @property
     def links(self):
-        """Gets the links of this ZoneData.
+        r"""Gets the links of this ZoneData.
 
         :return: The links of this ZoneData.
         :rtype: :class:`huaweicloudsdkdns.v2.Link`
@@ -458,7 +458,7 @@ class ZoneData:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ZoneData.
+        r"""Sets the links of this ZoneData.
 
         :param links: The links of this ZoneData.
         :type links: :class:`huaweicloudsdkdns.v2.Link`

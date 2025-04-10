@@ -27,7 +27,7 @@ class DeleteSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, sign_id=None):
-        """DeleteSignatureKeyV2Request
+        r"""DeleteSignatureKeyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSignatureKeyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSignatureKeyV2Request.
+        r"""Gets the instance_id of this DeleteSignatureKeyV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DeleteSignatureKeyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSignatureKeyV2Request.
+        r"""Sets the instance_id of this DeleteSignatureKeyV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DeleteSignatureKeyV2Request:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this DeleteSignatureKeyV2Request.
+        r"""Gets the sign_id of this DeleteSignatureKeyV2Request.
 
         签名密钥编号
 
@@ -81,7 +81,7 @@ class DeleteSignatureKeyV2Request:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this DeleteSignatureKeyV2Request.
+        r"""Sets the sign_id of this DeleteSignatureKeyV2Request.
 
         签名密钥编号
 

@@ -33,7 +33,7 @@ class ShowConsumerConnectionsRequest:
     }
 
     def __init__(self, instance_id=None, group=None, limit=None, offset=None, is_detail=None):
-        """ShowConsumerConnectionsRequest
+        r"""ShowConsumerConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowConsumerConnectionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowConsumerConnectionsRequest.
+        r"""Gets the instance_id of this ShowConsumerConnectionsRequest.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class ShowConsumerConnectionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowConsumerConnectionsRequest.
+        r"""Sets the instance_id of this ShowConsumerConnectionsRequest.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class ShowConsumerConnectionsRequest:
 
     @property
     def group(self):
-        """Gets the group of this ShowConsumerConnectionsRequest.
+        r"""Gets the group of this ShowConsumerConnectionsRequest.
 
         消费组名称。
 
@@ -102,7 +102,7 @@ class ShowConsumerConnectionsRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowConsumerConnectionsRequest.
+        r"""Sets the group of this ShowConsumerConnectionsRequest.
 
         消费组名称。
 
@@ -113,7 +113,7 @@ class ShowConsumerConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowConsumerConnectionsRequest.
+        r"""Gets the limit of this ShowConsumerConnectionsRequest.
 
         查询数量，取值范围为1~50。
 
@@ -124,7 +124,7 @@ class ShowConsumerConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowConsumerConnectionsRequest.
+        r"""Sets the limit of this ShowConsumerConnectionsRequest.
 
         查询数量，取值范围为1~50。
 
@@ -135,7 +135,7 @@ class ShowConsumerConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowConsumerConnectionsRequest.
+        r"""Gets the offset of this ShowConsumerConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -146,7 +146,7 @@ class ShowConsumerConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowConsumerConnectionsRequest.
+        r"""Sets the offset of this ShowConsumerConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -157,7 +157,7 @@ class ShowConsumerConnectionsRequest:
 
     @property
     def is_detail(self):
-        """Gets the is_detail of this ShowConsumerConnectionsRequest.
+        r"""Gets the is_detail of this ShowConsumerConnectionsRequest.
 
         是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。
 
@@ -168,7 +168,7 @@ class ShowConsumerConnectionsRequest:
 
     @is_detail.setter
     def is_detail(self, is_detail):
-        """Sets the is_detail of this ShowConsumerConnectionsRequest.
+        r"""Sets the is_detail of this ShowConsumerConnectionsRequest.
 
         是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。
 

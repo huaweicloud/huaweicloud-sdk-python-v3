@@ -33,7 +33,7 @@ class BaseSignature:
     }
 
     def __init__(self, name=None, sign_type=None, sign_key=None, sign_secret=None, sign_algorithm=None):
-        """BaseSignature
+        r"""BaseSignature
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BaseSignature:
 
     @property
     def name(self):
-        """Gets the name of this BaseSignature.
+        r"""Gets the name of this BaseSignature.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -81,7 +81,7 @@ class BaseSignature:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseSignature.
+        r"""Sets the name of this BaseSignature.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -92,7 +92,7 @@ class BaseSignature:
 
     @property
     def sign_type(self):
-        """Gets the sign_type of this BaseSignature.
+        r"""Gets the sign_type of this BaseSignature.
 
         签名密钥类型： - hmac - basic - public_key - aes  basic类型需要实例升级到对应版本，如果不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIG特性”，如确认实例不存在public_key配置可联系技术工程师开启。  aes类型需要实例升级到对应版本，如果不存在可联系技术工程师升级。
 
@@ -103,7 +103,7 @@ class BaseSignature:
 
     @sign_type.setter
     def sign_type(self, sign_type):
-        """Sets the sign_type of this BaseSignature.
+        r"""Sets the sign_type of this BaseSignature.
 
         签名密钥类型： - hmac - basic - public_key - aes  basic类型需要实例升级到对应版本，如果不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIG特性”，如确认实例不存在public_key配置可联系技术工程师开启。  aes类型需要实例升级到对应版本，如果不存在可联系技术工程师升级。
 
@@ -114,7 +114,7 @@ class BaseSignature:
 
     @property
     def sign_key(self):
-        """Gets the sign_key of this BaseSignature.
+        r"""Gets the sign_key of this BaseSignature.
 
         签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
 
@@ -125,7 +125,7 @@ class BaseSignature:
 
     @sign_key.setter
     def sign_key(self, sign_key):
-        """Sets the sign_key of this BaseSignature.
+        r"""Sets the sign_key of this BaseSignature.
 
         签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
 
@@ -136,7 +136,7 @@ class BaseSignature:
 
     @property
     def sign_secret(self):
-        """Gets the sign_secret of this BaseSignature.
+        r"""Gets the sign_secret of this BaseSignature.
 
         签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
@@ -147,7 +147,7 @@ class BaseSignature:
 
     @sign_secret.setter
     def sign_secret(self, sign_secret):
-        """Sets the sign_secret of this BaseSignature.
+        r"""Sets the sign_secret of this BaseSignature.
 
         签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
@@ -158,7 +158,7 @@ class BaseSignature:
 
     @property
     def sign_algorithm(self):
-        """Gets the sign_algorithm of this BaseSignature.
+        r"""Gets the sign_algorithm of this BaseSignature.
 
         签名算法。默认值为空，仅aes类型签名密钥支持选择签名算法，其他类型签名密钥不支持签名算法。
 
@@ -169,7 +169,7 @@ class BaseSignature:
 
     @sign_algorithm.setter
     def sign_algorithm(self, sign_algorithm):
-        """Sets the sign_algorithm of this BaseSignature.
+        r"""Sets the sign_algorithm of this BaseSignature.
 
         签名算法。默认值为空，仅aes类型签名密钥支持选择签名算法，其他类型签名密钥不支持签名算法。
 

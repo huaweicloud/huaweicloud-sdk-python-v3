@@ -23,7 +23,7 @@ class BaseModelType:
     }
 
     def __init__(self):
-        """BaseModelType
+        r"""BaseModelType
 
         The model defined in huaweicloud sdk
 

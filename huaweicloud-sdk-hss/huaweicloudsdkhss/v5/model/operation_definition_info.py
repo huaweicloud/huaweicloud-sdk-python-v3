@@ -37,7 +37,7 @@ class OperationDefinitionInfo:
     }
 
     def __init__(self, day_backups=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None):
-        """OperationDefinitionInfo
+        r"""OperationDefinitionInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OperationDefinitionInfo:
 
     @property
     def day_backups(self):
-        """Gets the day_backups of this OperationDefinitionInfo.
+        r"""Gets the day_backups of this OperationDefinitionInfo.
 
         保留日备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。最小值：0,最大值：100
 
@@ -96,7 +96,7 @@ class OperationDefinitionInfo:
 
     @day_backups.setter
     def day_backups(self, day_backups):
-        """Sets the day_backups of this OperationDefinitionInfo.
+        r"""Sets the day_backups of this OperationDefinitionInfo.
 
         保留日备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。最小值：0,最大值：100
 
@@ -107,7 +107,7 @@ class OperationDefinitionInfo:
 
     @property
     def max_backups(self):
-        """Gets the max_backups of this OperationDefinitionInfo.
+        r"""Gets the max_backups of this OperationDefinitionInfo.
 
         单个备份对象自动备份的最大备份数。取值为-1或0-99999。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。最小值：1,最大值：99999,缺省值：-1
 
@@ -118,7 +118,7 @@ class OperationDefinitionInfo:
 
     @max_backups.setter
     def max_backups(self, max_backups):
-        """Sets the max_backups of this OperationDefinitionInfo.
+        r"""Sets the max_backups of this OperationDefinitionInfo.
 
         单个备份对象自动备份的最大备份数。取值为-1或0-99999。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。最小值：1,最大值：99999,缺省值：-1
 
@@ -129,7 +129,7 @@ class OperationDefinitionInfo:
 
     @property
     def month_backups(self):
-        """Gets the month_backups of this OperationDefinitionInfo.
+        r"""Gets the month_backups of this OperationDefinitionInfo.
 
         保留月备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。最小值：0, 最大值：100
 
@@ -140,7 +140,7 @@ class OperationDefinitionInfo:
 
     @month_backups.setter
     def month_backups(self, month_backups):
-        """Sets the month_backups of this OperationDefinitionInfo.
+        r"""Sets the month_backups of this OperationDefinitionInfo.
 
         保留月备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。最小值：0, 最大值：100
 
@@ -151,7 +151,7 @@ class OperationDefinitionInfo:
 
     @property
     def retention_duration_days(self):
-        """Gets the retention_duration_days of this OperationDefinitionInfo.
+        r"""Gets the retention_duration_days of this OperationDefinitionInfo.
 
         备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。最小值：1, 最大值：99999, 缺省值：-1
 
@@ -162,7 +162,7 @@ class OperationDefinitionInfo:
 
     @retention_duration_days.setter
     def retention_duration_days(self, retention_duration_days):
-        """Sets the retention_duration_days of this OperationDefinitionInfo.
+        r"""Sets the retention_duration_days of this OperationDefinitionInfo.
 
         备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。最小值：1, 最大值：99999, 缺省值：-1
 
@@ -173,7 +173,7 @@ class OperationDefinitionInfo:
 
     @property
     def timezone(self):
-        """Gets the timezone of this OperationDefinitionInfo.
+        r"""Gets the timezone of this OperationDefinitionInfo.
 
         用户所在时区,格式形如UTC+08:00,若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。
 
@@ -184,7 +184,7 @@ class OperationDefinitionInfo:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this OperationDefinitionInfo.
+        r"""Sets the timezone of this OperationDefinitionInfo.
 
         用户所在时区,格式形如UTC+08:00,若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。
 
@@ -195,7 +195,7 @@ class OperationDefinitionInfo:
 
     @property
     def week_backups(self):
-        """Gets the week_backups of this OperationDefinitionInfo.
+        r"""Gets the week_backups of this OperationDefinitionInfo.
 
         保留周备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -206,7 +206,7 @@ class OperationDefinitionInfo:
 
     @week_backups.setter
     def week_backups(self, week_backups):
-        """Sets the week_backups of this OperationDefinitionInfo.
+        r"""Sets the week_backups of this OperationDefinitionInfo.
 
         保留周备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。
 
@@ -217,7 +217,7 @@ class OperationDefinitionInfo:
 
     @property
     def year_backups(self):
-        """Gets the year_backups of this OperationDefinitionInfo.
+        r"""Gets the year_backups of this OperationDefinitionInfo.
 
         保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。最小值：0，最大值：100
 
@@ -228,7 +228,7 @@ class OperationDefinitionInfo:
 
     @year_backups.setter
     def year_backups(self, year_backups):
-        """Sets the year_backups of this OperationDefinitionInfo.
+        r"""Sets the year_backups of this OperationDefinitionInfo.
 
         保留年备个数，该备份不受保留最大备份数限制。取值为0到100。若选择该参数，则timezone 也必选。最小值：0，最大值：100
 

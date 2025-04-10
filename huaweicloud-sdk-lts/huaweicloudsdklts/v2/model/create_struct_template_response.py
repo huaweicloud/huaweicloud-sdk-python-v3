@@ -26,7 +26,7 @@ class CreateStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateStructTemplateResponse
+        r"""CreateStructTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateStructTemplateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateStructTemplateResponse.
+        r"""Gets the body of this CreateStructTemplateResponse.
 
         :return: The body of this CreateStructTemplateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateStructTemplateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStructTemplateResponse.
+        r"""Sets the body of this CreateStructTemplateResponse.
 
         :param body: The body of this CreateStructTemplateResponse.
         :type body: str

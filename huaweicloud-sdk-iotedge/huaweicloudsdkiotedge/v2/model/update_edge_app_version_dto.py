@@ -51,7 +51,7 @@ class UpdateEdgeAppVersionDTO:
     }
 
     def __init__(self, description=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, sdk_version=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None, tpl_id=None):
-        """UpdateEdgeAppVersionDTO
+        r"""UpdateEdgeAppVersionDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEdgeAppVersionDTO.
+        r"""Gets the description of this UpdateEdgeAppVersionDTO.
 
         应用描述
 
@@ -145,7 +145,7 @@ class UpdateEdgeAppVersionDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEdgeAppVersionDTO.
+        r"""Sets the description of this UpdateEdgeAppVersionDTO.
 
         应用描述
 
@@ -156,7 +156,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this UpdateEdgeAppVersionDTO.
+        r"""Gets the deploy_type of this UpdateEdgeAppVersionDTO.
 
         部署类型docker|process
 
@@ -167,7 +167,7 @@ class UpdateEdgeAppVersionDTO:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this UpdateEdgeAppVersionDTO.
+        r"""Sets the deploy_type of this UpdateEdgeAppVersionDTO.
 
         部署类型docker|process
 
@@ -178,7 +178,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def deploy_multi_instance(self):
-        """Gets the deploy_multi_instance of this UpdateEdgeAppVersionDTO.
+        r"""Gets the deploy_multi_instance of this UpdateEdgeAppVersionDTO.
 
         是否允许部署多实例
 
@@ -189,7 +189,7 @@ class UpdateEdgeAppVersionDTO:
 
     @deploy_multi_instance.setter
     def deploy_multi_instance(self, deploy_multi_instance):
-        """Sets the deploy_multi_instance of this UpdateEdgeAppVersionDTO.
+        r"""Sets the deploy_multi_instance of this UpdateEdgeAppVersionDTO.
 
         是否允许部署多实例
 
@@ -200,7 +200,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this UpdateEdgeAppVersionDTO.
+        r"""Gets the container_settings of this UpdateEdgeAppVersionDTO.
 
         :return: The container_settings of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -209,7 +209,7 @@ class UpdateEdgeAppVersionDTO:
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this UpdateEdgeAppVersionDTO.
+        r"""Sets the container_settings of this UpdateEdgeAppVersionDTO.
 
         :param container_settings: The container_settings of this UpdateEdgeAppVersionDTO.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -218,7 +218,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this UpdateEdgeAppVersionDTO.
+        r"""Gets the liveness_probe of this UpdateEdgeAppVersionDTO.
 
         :return: The liveness_probe of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -227,7 +227,7 @@ class UpdateEdgeAppVersionDTO:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this UpdateEdgeAppVersionDTO.
+        r"""Sets the liveness_probe of this UpdateEdgeAppVersionDTO.
 
         :param liveness_probe: The liveness_probe of this UpdateEdgeAppVersionDTO.
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -236,7 +236,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this UpdateEdgeAppVersionDTO.
+        r"""Gets the readiness_probe of this UpdateEdgeAppVersionDTO.
 
         :return: The readiness_probe of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -245,7 +245,7 @@ class UpdateEdgeAppVersionDTO:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this UpdateEdgeAppVersionDTO.
+        r"""Sets the readiness_probe of this UpdateEdgeAppVersionDTO.
 
         :param readiness_probe: The readiness_probe of this UpdateEdgeAppVersionDTO.
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -254,7 +254,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def sdk_version(self):
-        """Gets the sdk_version of this UpdateEdgeAppVersionDTO.
+        r"""Gets the sdk_version of this UpdateEdgeAppVersionDTO.
 
         应用集成的边缘SDK版本
 
@@ -265,7 +265,7 @@ class UpdateEdgeAppVersionDTO:
 
     @sdk_version.setter
     def sdk_version(self, sdk_version):
-        """Sets the sdk_version of this UpdateEdgeAppVersionDTO.
+        r"""Sets the sdk_version of this UpdateEdgeAppVersionDTO.
 
         应用集成的边缘SDK版本
 
@@ -276,7 +276,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def arch(self):
-        """Gets the arch of this UpdateEdgeAppVersionDTO.
+        r"""Gets the arch of this UpdateEdgeAppVersionDTO.
 
         架构
 
@@ -287,7 +287,7 @@ class UpdateEdgeAppVersionDTO:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this UpdateEdgeAppVersionDTO.
+        r"""Sets the arch of this UpdateEdgeAppVersionDTO.
 
         架构
 
@@ -298,7 +298,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def command(self):
-        """Gets the command of this UpdateEdgeAppVersionDTO.
+        r"""Gets the command of this UpdateEdgeAppVersionDTO.
 
         启动命令
 
@@ -309,7 +309,7 @@ class UpdateEdgeAppVersionDTO:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this UpdateEdgeAppVersionDTO.
+        r"""Sets the command of this UpdateEdgeAppVersionDTO.
 
         启动命令
 
@@ -320,7 +320,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def args(self):
-        """Gets the args of this UpdateEdgeAppVersionDTO.
+        r"""Gets the args of this UpdateEdgeAppVersionDTO.
 
         启动参数
 
@@ -331,7 +331,7 @@ class UpdateEdgeAppVersionDTO:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this UpdateEdgeAppVersionDTO.
+        r"""Sets the args of this UpdateEdgeAppVersionDTO.
 
         启动参数
 
@@ -342,7 +342,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def outputs(self):
-        """Gets the outputs of this UpdateEdgeAppVersionDTO.
+        r"""Gets the outputs of this UpdateEdgeAppVersionDTO.
 
         应用输出路由端点
 
@@ -353,7 +353,7 @@ class UpdateEdgeAppVersionDTO:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this UpdateEdgeAppVersionDTO.
+        r"""Sets the outputs of this UpdateEdgeAppVersionDTO.
 
         应用输出路由端点
 
@@ -364,7 +364,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def inputs(self):
-        """Gets the inputs of this UpdateEdgeAppVersionDTO.
+        r"""Gets the inputs of this UpdateEdgeAppVersionDTO.
 
         应用输入路由
 
@@ -375,7 +375,7 @@ class UpdateEdgeAppVersionDTO:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this UpdateEdgeAppVersionDTO.
+        r"""Sets the inputs of this UpdateEdgeAppVersionDTO.
 
         应用输入路由
 
@@ -386,7 +386,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def services(self):
-        """Gets the services of this UpdateEdgeAppVersionDTO.
+        r"""Gets the services of this UpdateEdgeAppVersionDTO.
 
         应用实现的服务列表
 
@@ -397,7 +397,7 @@ class UpdateEdgeAppVersionDTO:
 
     @services.setter
     def services(self, services):
-        """Sets the services of this UpdateEdgeAppVersionDTO.
+        r"""Sets the services of this UpdateEdgeAppVersionDTO.
 
         应用实现的服务列表
 
@@ -408,7 +408,7 @@ class UpdateEdgeAppVersionDTO:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this UpdateEdgeAppVersionDTO.
+        r"""Gets the tpl_id of this UpdateEdgeAppVersionDTO.
 
         模板id
 
@@ -419,7 +419,7 @@ class UpdateEdgeAppVersionDTO:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this UpdateEdgeAppVersionDTO.
+        r"""Sets the tpl_id of this UpdateEdgeAppVersionDTO.
 
         模板id
 

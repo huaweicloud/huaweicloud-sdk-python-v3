@@ -27,7 +27,7 @@ class ReportData:
     }
 
     def __init__(self, date=None, value=None):
-        """ReportData
+        r"""ReportData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReportData:
 
     @property
     def date(self):
-        """Gets the date of this ReportData.
+        r"""Gets the date of this ReportData.
 
         时间点
 
@@ -61,7 +61,7 @@ class ReportData:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ReportData.
+        r"""Sets the date of this ReportData.
 
         时间点
 
@@ -72,7 +72,7 @@ class ReportData:
 
     @property
     def value(self):
-        """Gets the value of this ReportData.
+        r"""Gets the value of this ReportData.
 
         统计值
 
@@ -83,7 +83,7 @@ class ReportData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ReportData.
+        r"""Sets the value of this ReportData.
 
         统计值
 

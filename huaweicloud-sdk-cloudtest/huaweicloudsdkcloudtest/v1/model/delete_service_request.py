@@ -25,7 +25,7 @@ class DeleteServiceRequest:
     }
 
     def __init__(self, service_id=None):
-        """DeleteServiceRequest
+        r"""DeleteServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteServiceRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this DeleteServiceRequest.
+        r"""Gets the service_id of this DeleteServiceRequest.
 
         注册服务唯一标识，该值由注册接口返回
 
@@ -53,7 +53,7 @@ class DeleteServiceRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this DeleteServiceRequest.
+        r"""Sets the service_id of this DeleteServiceRequest.
 
         注册服务唯一标识，该值由注册接口返回
 

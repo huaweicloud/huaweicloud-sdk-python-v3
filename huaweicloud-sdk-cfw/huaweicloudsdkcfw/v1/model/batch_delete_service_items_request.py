@@ -29,7 +29,7 @@ class BatchDeleteServiceItemsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, fw_instance_id=None, body=None):
-        """BatchDeleteServiceItemsRequest
+        r"""BatchDeleteServiceItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchDeleteServiceItemsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchDeleteServiceItemsRequest.
+        r"""Gets the enterprise_project_id of this BatchDeleteServiceItemsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -68,7 +68,7 @@ class BatchDeleteServiceItemsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchDeleteServiceItemsRequest.
+        r"""Sets the enterprise_project_id of this BatchDeleteServiceItemsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -79,7 +79,7 @@ class BatchDeleteServiceItemsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this BatchDeleteServiceItemsRequest.
+        r"""Gets the fw_instance_id of this BatchDeleteServiceItemsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -90,7 +90,7 @@ class BatchDeleteServiceItemsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this BatchDeleteServiceItemsRequest.
+        r"""Sets the fw_instance_id of this BatchDeleteServiceItemsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -101,7 +101,7 @@ class BatchDeleteServiceItemsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteServiceItemsRequest.
+        r"""Gets the body of this BatchDeleteServiceItemsRequest.
 
         :return: The body of this BatchDeleteServiceItemsRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemDto`
@@ -110,7 +110,7 @@ class BatchDeleteServiceItemsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteServiceItemsRequest.
+        r"""Sets the body of this BatchDeleteServiceItemsRequest.
 
         :param body: The body of this BatchDeleteServiceItemsRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemDto`

@@ -25,7 +25,7 @@ class DeleteDomainKeyChainRequest:
     }
 
     def __init__(self, domain=None):
-        """DeleteDomainKeyChainRequest
+        r"""DeleteDomainKeyChainRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDomainKeyChainRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteDomainKeyChainRequest.
+        r"""Gets the domain of this DeleteDomainKeyChainRequest.
 
         直播域名，包括推流域名和播放域名
 
@@ -53,7 +53,7 @@ class DeleteDomainKeyChainRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteDomainKeyChainRequest.
+        r"""Sets the domain of this DeleteDomainKeyChainRequest.
 
         直播域名，包括推流域名和播放域名
 

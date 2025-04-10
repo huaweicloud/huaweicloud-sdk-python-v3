@@ -25,7 +25,7 @@ class ExecuteDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None):
-        """ExecuteDeploymentRequest
+        r"""ExecuteDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ExecuteDeploymentRequest.
+        r"""Gets the deployment_id of this ExecuteDeploymentRequest.
 
         部署计划ID。  约束： - 该接口只能执行指定名称（name）创建的部署计划。
 
@@ -53,7 +53,7 @@ class ExecuteDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ExecuteDeploymentRequest.
+        r"""Sets the deployment_id of this ExecuteDeploymentRequest.
 
         部署计划ID。  约束： - 该接口只能执行指定名称（name）创建的部署计划。
 

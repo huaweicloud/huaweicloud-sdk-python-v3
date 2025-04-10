@@ -35,7 +35,7 @@ class CloudWafServer:
     }
 
     def __init__(self, front_protocol=None, back_protocol=None, weight=None, address=None, port=None, type=None):
-        """CloudWafServer
+        r"""CloudWafServer
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CloudWafServer:
 
     @property
     def front_protocol(self):
-        """Gets the front_protocol of this CloudWafServer.
+        r"""Gets the front_protocol of this CloudWafServer.
 
         客户端请求访问防护域名源站服务器的协议
 
@@ -84,7 +84,7 @@ class CloudWafServer:
 
     @front_protocol.setter
     def front_protocol(self, front_protocol):
-        """Sets the front_protocol of this CloudWafServer.
+        r"""Sets the front_protocol of this CloudWafServer.
 
         客户端请求访问防护域名源站服务器的协议
 
@@ -95,7 +95,7 @@ class CloudWafServer:
 
     @property
     def back_protocol(self):
-        """Gets the back_protocol of this CloudWafServer.
+        r"""Gets the back_protocol of this CloudWafServer.
 
         WAF转发客户端请求到防护域名源站服务器的协议
 
@@ -106,7 +106,7 @@ class CloudWafServer:
 
     @back_protocol.setter
     def back_protocol(self, back_protocol):
-        """Sets the back_protocol of this CloudWafServer.
+        r"""Sets the back_protocol of this CloudWafServer.
 
         WAF转发客户端请求到防护域名源站服务器的协议
 
@@ -117,7 +117,7 @@ class CloudWafServer:
 
     @property
     def weight(self):
-        """Gets the weight of this CloudWafServer.
+        r"""Gets the weight of this CloudWafServer.
 
         源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
 
@@ -128,7 +128,7 @@ class CloudWafServer:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this CloudWafServer.
+        r"""Sets the weight of this CloudWafServer.
 
         源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
 
@@ -139,7 +139,7 @@ class CloudWafServer:
 
     @property
     def address(self):
-        """Gets the address of this CloudWafServer.
+        r"""Gets the address of this CloudWafServer.
 
         客户端访问的源站服务器的IP地址
 
@@ -150,7 +150,7 @@ class CloudWafServer:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CloudWafServer.
+        r"""Sets the address of this CloudWafServer.
 
         客户端访问的源站服务器的IP地址
 
@@ -161,7 +161,7 @@ class CloudWafServer:
 
     @property
     def port(self):
-        """Gets the port of this CloudWafServer.
+        r"""Gets the port of this CloudWafServer.
 
         WAF转发客户端请求到源站服务的业务端口
 
@@ -172,7 +172,7 @@ class CloudWafServer:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CloudWafServer.
+        r"""Sets the port of this CloudWafServer.
 
         WAF转发客户端请求到源站服务的业务端口
 
@@ -183,7 +183,7 @@ class CloudWafServer:
 
     @property
     def type(self):
-        """Gets the type of this CloudWafServer.
+        r"""Gets the type of this CloudWafServer.
 
         源站地址为ipv4或ipv6
 
@@ -194,7 +194,7 @@ class CloudWafServer:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CloudWafServer.
+        r"""Sets the type of this CloudWafServer.
 
         源站地址为ipv4或ipv6
 

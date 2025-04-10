@@ -25,7 +25,7 @@ class KillProcessesOpenRequest:
     }
 
     def __init__(self, process_ids=None):
-        """KillProcessesOpenRequest
+        r"""KillProcessesOpenRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KillProcessesOpenRequest:
 
     @property
     def process_ids(self):
-        """Gets the process_ids of this KillProcessesOpenRequest.
+        r"""Gets the process_ids of this KillProcessesOpenRequest.
 
         会话id集合
 
@@ -53,7 +53,7 @@ class KillProcessesOpenRequest:
 
     @process_ids.setter
     def process_ids(self, process_ids):
-        """Sets the process_ids of this KillProcessesOpenRequest.
+        r"""Sets the process_ids of this KillProcessesOpenRequest.
 
         会话id集合
 

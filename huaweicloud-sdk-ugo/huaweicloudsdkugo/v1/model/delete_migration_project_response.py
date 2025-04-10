@@ -26,7 +26,7 @@ class DeleteMigrationProjectResponse(SdkResponse):
     }
 
     def __init__(self, migration_project_id=None):
-        """DeleteMigrationProjectResponse
+        r"""DeleteMigrationProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMigrationProjectResponse(SdkResponse):
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this DeleteMigrationProjectResponse.
+        r"""Gets the migration_project_id of this DeleteMigrationProjectResponse.
 
         迁移项目ID。
 
@@ -55,7 +55,7 @@ class DeleteMigrationProjectResponse(SdkResponse):
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this DeleteMigrationProjectResponse.
+        r"""Sets the migration_project_id of this DeleteMigrationProjectResponse.
 
         迁移项目ID。
 

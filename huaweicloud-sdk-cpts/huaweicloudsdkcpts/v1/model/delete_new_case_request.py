@@ -25,7 +25,7 @@ class DeleteNewCaseRequest:
     }
 
     def __init__(self, case_id=None):
-        """DeleteNewCaseRequest
+        r"""DeleteNewCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteNewCaseRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this DeleteNewCaseRequest.
+        r"""Gets the case_id of this DeleteNewCaseRequest.
 
         用例id
 
@@ -53,7 +53,7 @@ class DeleteNewCaseRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this DeleteNewCaseRequest.
+        r"""Sets the case_id of this DeleteNewCaseRequest.
 
         用例id
 

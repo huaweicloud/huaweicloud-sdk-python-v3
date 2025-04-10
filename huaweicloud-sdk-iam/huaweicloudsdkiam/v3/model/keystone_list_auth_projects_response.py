@@ -28,7 +28,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, projects=None):
-        """KeystoneListAuthProjectsResponse
+        r"""KeystoneListAuthProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListAuthProjectsResponse.
+        r"""Gets the links of this KeystoneListAuthProjectsResponse.
 
         :return: The links of this KeystoneListAuthProjectsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -60,7 +60,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListAuthProjectsResponse.
+        r"""Sets the links of this KeystoneListAuthProjectsResponse.
 
         :param links: The links of this KeystoneListAuthProjectsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -69,7 +69,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this KeystoneListAuthProjectsResponse.
+        r"""Gets the projects of this KeystoneListAuthProjectsResponse.
 
         项目信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListAuthProjectsResponse(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this KeystoneListAuthProjectsResponse.
+        r"""Sets the projects of this KeystoneListAuthProjectsResponse.
 
         项目信息列表。
 

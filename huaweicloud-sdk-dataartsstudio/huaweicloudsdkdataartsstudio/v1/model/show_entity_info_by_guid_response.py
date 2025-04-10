@@ -28,7 +28,7 @@ class ShowEntityInfoByGuidResponse(SdkResponse):
     }
 
     def __init__(self, entity=None, referred_entities=None):
-        """ShowEntityInfoByGuidResponse
+        r"""ShowEntityInfoByGuidResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEntityInfoByGuidResponse(SdkResponse):
 
     @property
     def entity(self):
-        """Gets the entity of this ShowEntityInfoByGuidResponse.
+        r"""Gets the entity of this ShowEntityInfoByGuidResponse.
 
         :return: The entity of this ShowEntityInfoByGuidResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OpenEntityWithExtInfoEntity`
@@ -60,7 +60,7 @@ class ShowEntityInfoByGuidResponse(SdkResponse):
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this ShowEntityInfoByGuidResponse.
+        r"""Sets the entity of this ShowEntityInfoByGuidResponse.
 
         :param entity: The entity of this ShowEntityInfoByGuidResponse.
         :type entity: :class:`huaweicloudsdkdataartsstudio.v1.OpenEntityWithExtInfoEntity`
@@ -69,7 +69,7 @@ class ShowEntityInfoByGuidResponse(SdkResponse):
 
     @property
     def referred_entities(self):
-        """Gets the referred_entities of this ShowEntityInfoByGuidResponse.
+        r"""Gets the referred_entities of this ShowEntityInfoByGuidResponse.
 
         引用实体 Map<String, OpenEntity>
 
@@ -80,7 +80,7 @@ class ShowEntityInfoByGuidResponse(SdkResponse):
 
     @referred_entities.setter
     def referred_entities(self, referred_entities):
-        """Sets the referred_entities of this ShowEntityInfoByGuidResponse.
+        r"""Sets the referred_entities of this ShowEntityInfoByGuidResponse.
 
         引用实体 Map<String, OpenEntity>
 

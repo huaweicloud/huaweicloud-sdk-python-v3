@@ -33,7 +33,7 @@ class CreateAcceleratorOption:
     }
 
     def __init__(self, name=None, description=None, ip_sets=None, enterprise_project_id=None, tags=None):
-        """CreateAcceleratorOption
+        r"""CreateAcceleratorOption
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateAcceleratorOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateAcceleratorOption.
+        r"""Gets the name of this CreateAcceleratorOption.
 
         全球加速器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -79,7 +79,7 @@ class CreateAcceleratorOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAcceleratorOption.
+        r"""Sets the name of this CreateAcceleratorOption.
 
         全球加速器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -90,7 +90,7 @@ class CreateAcceleratorOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateAcceleratorOption.
+        r"""Gets the description of this CreateAcceleratorOption.
 
         全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -101,7 +101,7 @@ class CreateAcceleratorOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAcceleratorOption.
+        r"""Sets the description of this CreateAcceleratorOption.
 
         全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -112,7 +112,7 @@ class CreateAcceleratorOption:
 
     @property
     def ip_sets(self):
-        """Gets the ip_sets of this CreateAcceleratorOption.
+        r"""Gets the ip_sets of this CreateAcceleratorOption.
 
         全球加速器IP列表。
 
@@ -123,7 +123,7 @@ class CreateAcceleratorOption:
 
     @ip_sets.setter
     def ip_sets(self, ip_sets):
-        """Sets the ip_sets of this CreateAcceleratorOption.
+        r"""Sets the ip_sets of this CreateAcceleratorOption.
 
         全球加速器IP列表。
 
@@ -134,7 +134,7 @@ class CreateAcceleratorOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateAcceleratorOption.
+        r"""Gets the enterprise_project_id of this CreateAcceleratorOption.
 
         租户的企业项目ID，最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。
 
@@ -145,7 +145,7 @@ class CreateAcceleratorOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateAcceleratorOption.
+        r"""Sets the enterprise_project_id of this CreateAcceleratorOption.
 
         租户的企业项目ID，最大长度36个字符，带\"-\"连字符的UUID格式，或者是字符串\"0\"。\"0\"表示默认企业项目。
 
@@ -156,7 +156,7 @@ class CreateAcceleratorOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateAcceleratorOption.
+        r"""Gets the tags of this CreateAcceleratorOption.
 
         标签列表。
 
@@ -167,7 +167,7 @@ class CreateAcceleratorOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateAcceleratorOption.
+        r"""Sets the tags of this CreateAcceleratorOption.
 
         标签列表。
 

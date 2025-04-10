@@ -25,7 +25,7 @@ class ShowNaRequest:
     }
 
     def __init__(self, na_id=None):
-        """ShowNaRequest
+        r"""ShowNaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNaRequest:
 
     @property
     def na_id(self):
-        """Gets the na_id of this ShowNaRequest.
+        r"""Gets the na_id of this ShowNaRequest.
 
         北向数据接收端点ID
 
@@ -53,7 +53,7 @@ class ShowNaRequest:
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this ShowNaRequest.
+        r"""Sets the na_id of this ShowNaRequest.
 
         北向数据接收端点ID
 

@@ -25,7 +25,7 @@ class ShowVpcTagsRequest:
     }
 
     def __init__(self, vpc_id=None):
-        """ShowVpcTagsRequest
+        r"""ShowVpcTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpcTagsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowVpcTagsRequest.
+        r"""Gets the vpc_id of this ShowVpcTagsRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -53,7 +53,7 @@ class ShowVpcTagsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowVpcTagsRequest.
+        r"""Sets the vpc_id of this ShowVpcTagsRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 

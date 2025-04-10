@@ -26,7 +26,7 @@ class ListCorpConfigInfoResponse(SdkResponse):
     }
 
     def __init__(self, config_infos=None):
-        """ListCorpConfigInfoResponse
+        r"""ListCorpConfigInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCorpConfigInfoResponse(SdkResponse):
 
     @property
     def config_infos(self):
-        """Gets the config_infos of this ListCorpConfigInfoResponse.
+        r"""Gets the config_infos of this ListCorpConfigInfoResponse.
 
         批量配置项列表。
 
@@ -55,7 +55,7 @@ class ListCorpConfigInfoResponse(SdkResponse):
 
     @config_infos.setter
     def config_infos(self, config_infos):
-        """Sets the config_infos of this ListCorpConfigInfoResponse.
+        r"""Sets the config_infos of this ListCorpConfigInfoResponse.
 
         批量配置项列表。
 

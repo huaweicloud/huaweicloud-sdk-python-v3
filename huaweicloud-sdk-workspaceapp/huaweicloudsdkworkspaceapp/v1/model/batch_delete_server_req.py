@@ -25,7 +25,7 @@ class BatchDeleteServerReq:
     }
 
     def __init__(self, items=None):
-        """BatchDeleteServerReq
+        r"""BatchDeleteServerReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteServerReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchDeleteServerReq.
+        r"""Gets the items of this BatchDeleteServerReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -53,7 +53,7 @@ class BatchDeleteServerReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchDeleteServerReq.
+        r"""Sets the items of this BatchDeleteServerReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 

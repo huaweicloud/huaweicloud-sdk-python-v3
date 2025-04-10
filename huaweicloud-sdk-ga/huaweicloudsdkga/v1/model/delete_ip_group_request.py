@@ -25,7 +25,7 @@ class DeleteIpGroupRequest:
     }
 
     def __init__(self, ip_group_id=None):
-        """DeleteIpGroupRequest
+        r"""DeleteIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteIpGroupRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this DeleteIpGroupRequest.
+        r"""Gets the ip_group_id of this DeleteIpGroupRequest.
 
         IP地址组ID。
 
@@ -53,7 +53,7 @@ class DeleteIpGroupRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this DeleteIpGroupRequest.
+        r"""Sets the ip_group_id of this DeleteIpGroupRequest.
 
         IP地址组ID。
 

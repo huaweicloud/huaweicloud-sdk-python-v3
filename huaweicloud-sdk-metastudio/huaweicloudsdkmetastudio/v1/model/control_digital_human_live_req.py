@@ -27,7 +27,7 @@ class ControlDigitalHumanLiveReq:
     }
 
     def __init__(self, command=None, params=None):
-        """ControlDigitalHumanLiveReq
+        r"""ControlDigitalHumanLiveReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ControlDigitalHumanLiveReq:
 
     @property
     def command(self):
-        """Gets the command of this ControlDigitalHumanLiveReq.
+        r"""Gets the command of this ControlDigitalHumanLiveReq.
 
         命令名称。 - BODY_POS_RESET：视觉驱动复位 - HIPS_POS_ADJUST：模型位移调整 - EYE_POS：眼神锁定/解锁 - SKELETON_ROTATION_ADJUST：骨骼旋转 - LOCK_SKELETONS：骨骼锁定 - UNLOCK_SKELETONS：骨骼解锁
 
@@ -60,7 +60,7 @@ class ControlDigitalHumanLiveReq:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ControlDigitalHumanLiveReq.
+        r"""Sets the command of this ControlDigitalHumanLiveReq.
 
         命令名称。 - BODY_POS_RESET：视觉驱动复位 - HIPS_POS_ADJUST：模型位移调整 - EYE_POS：眼神锁定/解锁 - SKELETON_ROTATION_ADJUST：骨骼旋转 - LOCK_SKELETONS：骨骼锁定 - UNLOCK_SKELETONS：骨骼解锁
 
@@ -71,7 +71,7 @@ class ControlDigitalHumanLiveReq:
 
     @property
     def params(self):
-        """Gets the params of this ControlDigitalHumanLiveReq.
+        r"""Gets the params of this ControlDigitalHumanLiveReq.
 
         命令参数。
 
@@ -82,7 +82,7 @@ class ControlDigitalHumanLiveReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ControlDigitalHumanLiveReq.
+        r"""Sets the params of this ControlDigitalHumanLiveReq.
 
         命令参数。
 

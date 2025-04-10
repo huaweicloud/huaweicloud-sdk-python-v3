@@ -30,7 +30,7 @@ class ListAimCallbacksResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """ListAimCallbacksResponse
+        r"""ListAimCallbacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAimCallbacksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAimCallbacksResponse.
+        r"""Gets the status of this ListAimCallbacksResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class ListAimCallbacksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAimCallbacksResponse.
+        r"""Sets the status of this ListAimCallbacksResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class ListAimCallbacksResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListAimCallbacksResponse.
+        r"""Gets the message of this ListAimCallbacksResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class ListAimCallbacksResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListAimCallbacksResponse.
+        r"""Sets the message of this ListAimCallbacksResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class ListAimCallbacksResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAimCallbacksResponse.
+        r"""Gets the data of this ListAimCallbacksResponse.
 
         回调地址列表。
 
@@ -113,7 +113,7 @@ class ListAimCallbacksResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAimCallbacksResponse.
+        r"""Sets the data of this ListAimCallbacksResponse.
 
         回调地址列表。
 

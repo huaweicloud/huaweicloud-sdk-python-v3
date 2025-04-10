@@ -26,7 +26,7 @@ class ListDisasterRecoverResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery=None):
-        """ListDisasterRecoverResponse
+        r"""ListDisasterRecoverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDisasterRecoverResponse(SdkResponse):
 
     @property
     def disaster_recovery(self):
-        """Gets the disaster_recovery of this ListDisasterRecoverResponse.
+        r"""Gets the disaster_recovery of this ListDisasterRecoverResponse.
 
         容灾对象
 
@@ -55,7 +55,7 @@ class ListDisasterRecoverResponse(SdkResponse):
 
     @disaster_recovery.setter
     def disaster_recovery(self, disaster_recovery):
-        """Sets the disaster_recovery of this ListDisasterRecoverResponse.
+        r"""Sets the disaster_recovery of this ListDisasterRecoverResponse.
 
         容灾对象
 

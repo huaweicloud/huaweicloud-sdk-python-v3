@@ -29,7 +29,7 @@ class DeleteMemberGroupRequest:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, member_group_id=None):
-        """DeleteMemberGroupRequest
+        r"""DeleteMemberGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteMemberGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteMemberGroupRequest.
+        r"""Gets the instance_id of this DeleteMemberGroupRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteMemberGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteMemberGroupRequest.
+        r"""Sets the instance_id of this DeleteMemberGroupRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteMemberGroupRequest:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this DeleteMemberGroupRequest.
+        r"""Gets the vpc_channel_id of this DeleteMemberGroupRequest.
 
         VPC通道的编号
 
@@ -87,7 +87,7 @@ class DeleteMemberGroupRequest:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this DeleteMemberGroupRequest.
+        r"""Sets the vpc_channel_id of this DeleteMemberGroupRequest.
 
         VPC通道的编号
 
@@ -98,7 +98,7 @@ class DeleteMemberGroupRequest:
 
     @property
     def member_group_id(self):
-        """Gets the member_group_id of this DeleteMemberGroupRequest.
+        r"""Gets the member_group_id of this DeleteMemberGroupRequest.
 
         VPC通道后端服务器组编号
 
@@ -109,7 +109,7 @@ class DeleteMemberGroupRequest:
 
     @member_group_id.setter
     def member_group_id(self, member_group_id):
-        """Sets the member_group_id of this DeleteMemberGroupRequest.
+        r"""Sets the member_group_id of this DeleteMemberGroupRequest.
 
         VPC通道后端服务器组编号
 

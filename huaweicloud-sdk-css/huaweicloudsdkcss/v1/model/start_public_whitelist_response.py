@@ -24,7 +24,7 @@ class StartPublicWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartPublicWhitelistResponse
+        r"""StartPublicWhitelistResponse
 
         The model defined in huaweicloud sdk
 

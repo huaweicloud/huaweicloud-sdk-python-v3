@@ -27,7 +27,7 @@ class ShowIteratorByDefectRequest:
     }
 
     def __init__(self, project_id=None, defect_id=None):
-        """ShowIteratorByDefectRequest
+        r"""ShowIteratorByDefectRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowIteratorByDefectRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowIteratorByDefectRequest.
+        r"""Gets the project_id of this ShowIteratorByDefectRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ShowIteratorByDefectRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowIteratorByDefectRequest.
+        r"""Sets the project_id of this ShowIteratorByDefectRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ShowIteratorByDefectRequest:
 
     @property
     def defect_id(self):
-        """Gets the defect_id of this ShowIteratorByDefectRequest.
+        r"""Gets the defect_id of this ShowIteratorByDefectRequest.
 
         缺陷id
 
@@ -81,7 +81,7 @@ class ShowIteratorByDefectRequest:
 
     @defect_id.setter
     def defect_id(self, defect_id):
-        """Sets the defect_id of this ShowIteratorByDefectRequest.
+        r"""Sets the defect_id of this ShowIteratorByDefectRequest.
 
         缺陷id
 

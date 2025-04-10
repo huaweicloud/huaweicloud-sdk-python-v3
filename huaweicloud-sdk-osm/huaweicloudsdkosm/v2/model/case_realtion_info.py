@@ -29,7 +29,7 @@ class CaseRealtionInfo:
     }
 
     def __init__(self, case_id=None, simple_description=None, user_name=None):
-        """CaseRealtionInfo
+        r"""CaseRealtionInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseRealtionInfo:
 
     @property
     def case_id(self):
-        """Gets the case_id of this CaseRealtionInfo.
+        r"""Gets the case_id of this CaseRealtionInfo.
 
         工单id
 
@@ -68,7 +68,7 @@ class CaseRealtionInfo:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this CaseRealtionInfo.
+        r"""Sets the case_id of this CaseRealtionInfo.
 
         工单id
 
@@ -79,7 +79,7 @@ class CaseRealtionInfo:
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this CaseRealtionInfo.
+        r"""Gets the simple_description of this CaseRealtionInfo.
 
         简要描述
 
@@ -90,7 +90,7 @@ class CaseRealtionInfo:
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this CaseRealtionInfo.
+        r"""Sets the simple_description of this CaseRealtionInfo.
 
         简要描述
 
@@ -101,7 +101,7 @@ class CaseRealtionInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CaseRealtionInfo.
+        r"""Gets the user_name of this CaseRealtionInfo.
 
         提交人，即用户名称
 
@@ -112,7 +112,7 @@ class CaseRealtionInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CaseRealtionInfo.
+        r"""Sets the user_name of this CaseRealtionInfo.
 
         提交人，即用户名称
 

@@ -29,7 +29,7 @@ class InstanceUpdateParam:
     }
 
     def __init__(self, description=None, display_name=None, refresh_interval=None):
-        """InstanceUpdateParam
+        r"""InstanceUpdateParam
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class InstanceUpdateParam:
 
     @property
     def description(self):
-        """Gets the description of this InstanceUpdateParam.
+        r"""Gets the description of this InstanceUpdateParam.
 
         描述
 
@@ -66,7 +66,7 @@ class InstanceUpdateParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceUpdateParam.
+        r"""Sets the description of this InstanceUpdateParam.
 
         描述
 
@@ -77,7 +77,7 @@ class InstanceUpdateParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this InstanceUpdateParam.
+        r"""Gets the display_name of this InstanceUpdateParam.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -88,7 +88,7 @@ class InstanceUpdateParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this InstanceUpdateParam.
+        r"""Sets the display_name of this InstanceUpdateParam.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -99,7 +99,7 @@ class InstanceUpdateParam:
 
     @property
     def refresh_interval(self):
-        """Gets the refresh_interval of this InstanceUpdateParam.
+        r"""Gets the refresh_interval of this InstanceUpdateParam.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
@@ -110,7 +110,7 @@ class InstanceUpdateParam:
 
     @refresh_interval.setter
     def refresh_interval(self, refresh_interval):
-        """Sets the refresh_interval of this InstanceUpdateParam.
+        r"""Sets the refresh_interval of this InstanceUpdateParam.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 

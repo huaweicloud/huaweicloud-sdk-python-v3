@@ -48,7 +48,7 @@ class ShowAccessDomainResponse(SdkResponse):
     }
 
     def __init__(self, exist=None, namespace=None, repository=None, access_domain=None, permit=None, deadline=None, description=None, creator_id=None, creator_name=None, created=None, updated=None, status=None):
-        """ShowAccessDomainResponse
+        r"""ShowAccessDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def exist(self):
-        """Gets the exist of this ShowAccessDomainResponse.
+        r"""Gets the exist of this ShowAccessDomainResponse.
 
         true：存在；false：不存在
 
@@ -132,7 +132,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @exist.setter
     def exist(self, exist):
-        """Sets the exist of this ShowAccessDomainResponse.
+        r"""Sets the exist of this ShowAccessDomainResponse.
 
         true：存在；false：不存在
 
@@ -143,7 +143,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowAccessDomainResponse.
+        r"""Gets the namespace of this ShowAccessDomainResponse.
 
         组织名称
 
@@ -154,7 +154,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowAccessDomainResponse.
+        r"""Sets the namespace of this ShowAccessDomainResponse.
 
         组织名称
 
@@ -165,7 +165,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def repository(self):
-        """Gets the repository of this ShowAccessDomainResponse.
+        r"""Gets the repository of this ShowAccessDomainResponse.
 
         镜像仓库名称
 
@@ -176,7 +176,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this ShowAccessDomainResponse.
+        r"""Sets the repository of this ShowAccessDomainResponse.
 
         镜像仓库名称
 
@@ -187,7 +187,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def access_domain(self):
-        """Gets the access_domain of this ShowAccessDomainResponse.
+        r"""Gets the access_domain of this ShowAccessDomainResponse.
 
         共享帐号名
 
@@ -198,7 +198,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @access_domain.setter
     def access_domain(self, access_domain):
-        """Sets the access_domain of this ShowAccessDomainResponse.
+        r"""Sets the access_domain of this ShowAccessDomainResponse.
 
         共享帐号名
 
@@ -209,7 +209,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def permit(self):
-        """Gets the permit of this ShowAccessDomainResponse.
+        r"""Gets the permit of this ShowAccessDomainResponse.
 
         权限
 
@@ -220,7 +220,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @permit.setter
     def permit(self, permit):
-        """Sets the permit of this ShowAccessDomainResponse.
+        r"""Sets the permit of this ShowAccessDomainResponse.
 
         权限
 
@@ -231,7 +231,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def deadline(self):
-        """Gets the deadline of this ShowAccessDomainResponse.
+        r"""Gets the deadline of this ShowAccessDomainResponse.
 
         截止时间
 
@@ -242,7 +242,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this ShowAccessDomainResponse.
+        r"""Sets the deadline of this ShowAccessDomainResponse.
 
         截止时间
 
@@ -253,7 +253,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAccessDomainResponse.
+        r"""Gets the description of this ShowAccessDomainResponse.
 
         描述
 
@@ -264,7 +264,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAccessDomainResponse.
+        r"""Sets the description of this ShowAccessDomainResponse.
 
         描述
 
@@ -275,7 +275,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowAccessDomainResponse.
+        r"""Gets the creator_id of this ShowAccessDomainResponse.
 
         创建者ID
 
@@ -286,7 +286,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowAccessDomainResponse.
+        r"""Sets the creator_id of this ShowAccessDomainResponse.
 
         创建者ID
 
@@ -297,7 +297,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowAccessDomainResponse.
+        r"""Gets the creator_name of this ShowAccessDomainResponse.
 
         创建者名称
 
@@ -308,7 +308,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowAccessDomainResponse.
+        r"""Sets the creator_name of this ShowAccessDomainResponse.
 
         创建者名称
 
@@ -319,7 +319,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowAccessDomainResponse.
+        r"""Gets the created of this ShowAccessDomainResponse.
 
         镜像创建时间，UTC时间格式，时间为UTC标准时间
 
@@ -330,7 +330,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowAccessDomainResponse.
+        r"""Sets the created of this ShowAccessDomainResponse.
 
         镜像创建时间，UTC时间格式，时间为UTC标准时间
 
@@ -341,7 +341,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowAccessDomainResponse.
+        r"""Gets the updated of this ShowAccessDomainResponse.
 
         镜像更新时间，UTC时间格式，时间为UTC标准时间
 
@@ -352,7 +352,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowAccessDomainResponse.
+        r"""Sets the updated of this ShowAccessDomainResponse.
 
         镜像更新时间，UTC时间格式，时间为UTC标准时间
 
@@ -363,7 +363,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAccessDomainResponse.
+        r"""Gets the status of this ShowAccessDomainResponse.
 
         是否过期，true：有效；false：过期
 
@@ -374,7 +374,7 @@ class ShowAccessDomainResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAccessDomainResponse.
+        r"""Sets the status of this ShowAccessDomainResponse.
 
         是否过期，true：有效；false：过期
 

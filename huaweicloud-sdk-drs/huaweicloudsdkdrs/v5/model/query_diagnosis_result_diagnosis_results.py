@@ -35,7 +35,7 @@ class QueryDiagnosisResultDiagnosisResults:
     }
 
     def __init__(self, item=None, state=None, result_list=None, suggestion_list=None, score=None, time=None):
-        """QueryDiagnosisResultDiagnosisResults
+        r"""QueryDiagnosisResultDiagnosisResults
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @property
     def item(self):
-        """Gets the item of this QueryDiagnosisResultDiagnosisResults.
+        r"""Gets the item of this QueryDiagnosisResultDiagnosisResults.
 
         :return: The item of this QueryDiagnosisResultDiagnosisResults.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryDiagnosisResultItem`
@@ -87,7 +87,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this QueryDiagnosisResultDiagnosisResults.
+        r"""Sets the item of this QueryDiagnosisResultDiagnosisResults.
 
         :param item: The item of this QueryDiagnosisResultDiagnosisResults.
         :type item: :class:`huaweicloudsdkdrs.v5.QueryDiagnosisResultItem`
@@ -96,7 +96,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @property
     def state(self):
-        """Gets the state of this QueryDiagnosisResultDiagnosisResults.
+        r"""Gets the state of this QueryDiagnosisResultDiagnosisResults.
 
         诊断项状态。
 
@@ -107,7 +107,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this QueryDiagnosisResultDiagnosisResults.
+        r"""Sets the state of this QueryDiagnosisResultDiagnosisResults.
 
         诊断项状态。
 
@@ -118,7 +118,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @property
     def result_list(self):
-        """Gets the result_list of this QueryDiagnosisResultDiagnosisResults.
+        r"""Gets the result_list of this QueryDiagnosisResultDiagnosisResults.
 
         诊断结果。
 
@@ -129,7 +129,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @result_list.setter
     def result_list(self, result_list):
-        """Sets the result_list of this QueryDiagnosisResultDiagnosisResults.
+        r"""Sets the result_list of this QueryDiagnosisResultDiagnosisResults.
 
         诊断结果。
 
@@ -140,7 +140,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @property
     def suggestion_list(self):
-        """Gets the suggestion_list of this QueryDiagnosisResultDiagnosisResults.
+        r"""Gets the suggestion_list of this QueryDiagnosisResultDiagnosisResults.
 
         诊断建议。
 
@@ -151,7 +151,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @suggestion_list.setter
     def suggestion_list(self, suggestion_list):
-        """Sets the suggestion_list of this QueryDiagnosisResultDiagnosisResults.
+        r"""Sets the suggestion_list of this QueryDiagnosisResultDiagnosisResults.
 
         诊断建议。
 
@@ -162,7 +162,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @property
     def score(self):
-        """Gets the score of this QueryDiagnosisResultDiagnosisResults.
+        r"""Gets the score of this QueryDiagnosisResultDiagnosisResults.
 
         诊断项得分。
 
@@ -173,7 +173,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this QueryDiagnosisResultDiagnosisResults.
+        r"""Sets the score of this QueryDiagnosisResultDiagnosisResults.
 
         诊断项得分。
 
@@ -184,7 +184,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @property
     def time(self):
-        """Gets the time of this QueryDiagnosisResultDiagnosisResults.
+        r"""Gets the time of this QueryDiagnosisResultDiagnosisResults.
 
         完成时间。
 
@@ -195,7 +195,7 @@ class QueryDiagnosisResultDiagnosisResults:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this QueryDiagnosisResultDiagnosisResults.
+        r"""Sets the time of this QueryDiagnosisResultDiagnosisResults.
 
         完成时间。
 

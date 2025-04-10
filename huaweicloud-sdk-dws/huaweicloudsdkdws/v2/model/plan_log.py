@@ -31,7 +31,7 @@ class PlanLog:
     }
 
     def __init__(self, exec_time=None, stage_info=None, exec_result=None, exec_log=None):
-        """PlanLog
+        r"""PlanLog
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class PlanLog:
 
     @property
     def exec_time(self):
-        """Gets the exec_time of this PlanLog.
+        r"""Gets the exec_time of this PlanLog.
 
         执行时间
 
@@ -71,7 +71,7 @@ class PlanLog:
 
     @exec_time.setter
     def exec_time(self, exec_time):
-        """Sets the exec_time of this PlanLog.
+        r"""Sets the exec_time of this PlanLog.
 
         执行时间
 
@@ -82,7 +82,7 @@ class PlanLog:
 
     @property
     def stage_info(self):
-        """Gets the stage_info of this PlanLog.
+        r"""Gets the stage_info of this PlanLog.
 
         执行计划阶段
 
@@ -93,7 +93,7 @@ class PlanLog:
 
     @stage_info.setter
     def stage_info(self, stage_info):
-        """Sets the stage_info of this PlanLog.
+        r"""Sets the stage_info of this PlanLog.
 
         执行计划阶段
 
@@ -104,7 +104,7 @@ class PlanLog:
 
     @property
     def exec_result(self):
-        """Gets the exec_result of this PlanLog.
+        r"""Gets the exec_result of this PlanLog.
 
         执行结果。
 
@@ -115,7 +115,7 @@ class PlanLog:
 
     @exec_result.setter
     def exec_result(self, exec_result):
-        """Sets the exec_result of this PlanLog.
+        r"""Sets the exec_result of this PlanLog.
 
         执行结果。
 
@@ -126,7 +126,7 @@ class PlanLog:
 
     @property
     def exec_log(self):
-        """Gets the exec_log of this PlanLog.
+        r"""Gets the exec_log of this PlanLog.
 
         执行日志。
 
@@ -137,7 +137,7 @@ class PlanLog:
 
     @exec_log.setter
     def exec_log(self, exec_log):
-        """Sets the exec_log of this PlanLog.
+        r"""Sets the exec_log of this PlanLog.
 
         执行日志。
 

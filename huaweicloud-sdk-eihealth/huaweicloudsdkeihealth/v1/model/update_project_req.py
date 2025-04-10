@@ -33,7 +33,7 @@ class UpdateProjectReq:
     }
 
     def __init__(self, description=None, status=None, tags=None, is_core=None, storage_quota=None):
-        """UpdateProjectReq
+        r"""UpdateProjectReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateProjectReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProjectReq.
+        r"""Gets the description of this UpdateProjectReq.
 
         项目描述
 
@@ -82,7 +82,7 @@ class UpdateProjectReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProjectReq.
+        r"""Sets the description of this UpdateProjectReq.
 
         项目描述
 
@@ -93,7 +93,7 @@ class UpdateProjectReq:
 
     @property
     def status(self):
-        """Gets the status of this UpdateProjectReq.
+        r"""Gets the status of this UpdateProjectReq.
 
         :return: The status of this UpdateProjectReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`
@@ -102,7 +102,7 @@ class UpdateProjectReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateProjectReq.
+        r"""Sets the status of this UpdateProjectReq.
 
         :param status: The status of this UpdateProjectReq.
         :type status: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`
@@ -111,7 +111,7 @@ class UpdateProjectReq:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateProjectReq.
+        r"""Gets the tags of this UpdateProjectReq.
 
         项目标签
 
@@ -122,7 +122,7 @@ class UpdateProjectReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateProjectReq.
+        r"""Sets the tags of this UpdateProjectReq.
 
         项目标签
 
@@ -133,7 +133,7 @@ class UpdateProjectReq:
 
     @property
     def is_core(self):
-        """Gets the is_core of this UpdateProjectReq.
+        r"""Gets the is_core of this UpdateProjectReq.
 
         是否为核心项目标记
 
@@ -144,7 +144,7 @@ class UpdateProjectReq:
 
     @is_core.setter
     def is_core(self, is_core):
-        """Sets the is_core of this UpdateProjectReq.
+        r"""Sets the is_core of this UpdateProjectReq.
 
         是否为核心项目标记
 
@@ -155,7 +155,7 @@ class UpdateProjectReq:
 
     @property
     def storage_quota(self):
-        """Gets the storage_quota of this UpdateProjectReq.
+        r"""Gets the storage_quota of this UpdateProjectReq.
 
         项目数据容量配额，单位为字节，范围为1073741824-11258999068426240，-1表示无容量限制
 
@@ -166,7 +166,7 @@ class UpdateProjectReq:
 
     @storage_quota.setter
     def storage_quota(self, storage_quota):
-        """Sets the storage_quota of this UpdateProjectReq.
+        r"""Sets the storage_quota of this UpdateProjectReq.
 
         项目数据容量配额，单位为字节，范围为1073741824-11258999068426240，-1表示无容量限制
 

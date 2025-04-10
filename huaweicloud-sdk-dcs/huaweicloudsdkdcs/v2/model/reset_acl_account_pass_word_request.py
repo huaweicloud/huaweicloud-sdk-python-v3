@@ -29,7 +29,7 @@ class ResetAclAccountPassWordRequest:
     }
 
     def __init__(self, instance_id=None, account_id=None, body=None):
-        """ResetAclAccountPassWordRequest
+        r"""ResetAclAccountPassWordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetAclAccountPassWordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetAclAccountPassWordRequest.
+        r"""Gets the instance_id of this ResetAclAccountPassWordRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ResetAclAccountPassWordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetAclAccountPassWordRequest.
+        r"""Sets the instance_id of this ResetAclAccountPassWordRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ResetAclAccountPassWordRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ResetAclAccountPassWordRequest.
+        r"""Gets the account_id of this ResetAclAccountPassWordRequest.
 
         ACL账号ID。
 
@@ -88,7 +88,7 @@ class ResetAclAccountPassWordRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ResetAclAccountPassWordRequest.
+        r"""Sets the account_id of this ResetAclAccountPassWordRequest.
 
         ACL账号ID。
 
@@ -99,7 +99,7 @@ class ResetAclAccountPassWordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetAclAccountPassWordRequest.
+        r"""Gets the body of this ResetAclAccountPassWordRequest.
 
         :return: The body of this ResetAclAccountPassWordRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.AclAccountResetPasswordBody`
@@ -108,7 +108,7 @@ class ResetAclAccountPassWordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetAclAccountPassWordRequest.
+        r"""Sets the body of this ResetAclAccountPassWordRequest.
 
         :param body: The body of this ResetAclAccountPassWordRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.AclAccountResetPasswordBody`

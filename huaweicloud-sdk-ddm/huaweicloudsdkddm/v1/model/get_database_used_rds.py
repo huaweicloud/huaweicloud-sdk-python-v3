@@ -31,7 +31,7 @@ class GetDatabaseUsedRds:
     }
 
     def __init__(self, id=None, name=None, status=None, error_msg=None):
-        """GetDatabaseUsedRds
+        r"""GetDatabaseUsedRds
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class GetDatabaseUsedRds:
 
     @property
     def id(self):
-        """Gets the id of this GetDatabaseUsedRds.
+        r"""Gets the id of this GetDatabaseUsedRds.
 
         关联RDS节点ID。
 
@@ -72,7 +72,7 @@ class GetDatabaseUsedRds:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetDatabaseUsedRds.
+        r"""Sets the id of this GetDatabaseUsedRds.
 
         关联RDS节点ID。
 
@@ -83,7 +83,7 @@ class GetDatabaseUsedRds:
 
     @property
     def name(self):
-        """Gets the name of this GetDatabaseUsedRds.
+        r"""Gets the name of this GetDatabaseUsedRds.
 
         关联RDS名称
 
@@ -94,7 +94,7 @@ class GetDatabaseUsedRds:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDatabaseUsedRds.
+        r"""Sets the name of this GetDatabaseUsedRds.
 
         关联RDS名称
 
@@ -105,7 +105,7 @@ class GetDatabaseUsedRds:
 
     @property
     def status(self):
-        """Gets the status of this GetDatabaseUsedRds.
+        r"""Gets the status of this GetDatabaseUsedRds.
 
         关联RDS状态。
 
@@ -116,7 +116,7 @@ class GetDatabaseUsedRds:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetDatabaseUsedRds.
+        r"""Sets the status of this GetDatabaseUsedRds.
 
         关联RDS状态。
 
@@ -127,7 +127,7 @@ class GetDatabaseUsedRds:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this GetDatabaseUsedRds.
+        r"""Gets the error_msg of this GetDatabaseUsedRds.
 
         响应信息，若无异常信息则不返回该参数。
 
@@ -138,7 +138,7 @@ class GetDatabaseUsedRds:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this GetDatabaseUsedRds.
+        r"""Sets the error_msg of this GetDatabaseUsedRds.
 
         响应信息，若无异常信息则不返回该参数。
 

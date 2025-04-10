@@ -28,7 +28,7 @@ class CreateOrganizationalUnitRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """CreateOrganizationalUnitRequest
+        r"""CreateOrganizationalUnitRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateOrganizationalUnitRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CreateOrganizationalUnitRequest.
+        r"""Gets the x_security_token of this CreateOrganizationalUnitRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -62,7 +62,7 @@ class CreateOrganizationalUnitRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CreateOrganizationalUnitRequest.
+        r"""Sets the x_security_token of this CreateOrganizationalUnitRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -73,7 +73,7 @@ class CreateOrganizationalUnitRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrganizationalUnitRequest.
+        r"""Gets the body of this CreateOrganizationalUnitRequest.
 
         :return: The body of this CreateOrganizationalUnitRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationalUnitReqBody`
@@ -82,7 +82,7 @@ class CreateOrganizationalUnitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrganizationalUnitRequest.
+        r"""Sets the body of this CreateOrganizationalUnitRequest.
 
         :param body: The body of this CreateOrganizationalUnitRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationalUnitReqBody`

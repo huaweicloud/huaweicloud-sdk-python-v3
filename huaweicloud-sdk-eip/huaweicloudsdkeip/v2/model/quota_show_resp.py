@@ -31,7 +31,7 @@ class QuotaShowResp:
     }
 
     def __init__(self, type=None, used=None, quota=None, min=None):
-        """QuotaShowResp
+        r"""QuotaShowResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QuotaShowResp:
 
     @property
     def type(self):
-        """Gets the type of this QuotaShowResp.
+        r"""Gets the type of this QuotaShowResp.
 
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP
 
@@ -75,7 +75,7 @@ class QuotaShowResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaShowResp.
+        r"""Sets the type of this QuotaShowResp.
 
         功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP
 
@@ -86,7 +86,7 @@ class QuotaShowResp:
 
     @property
     def used(self):
-        """Gets the used of this QuotaShowResp.
+        r"""Gets the used of this QuotaShowResp.
 
         功能说明：已创建的资源个数 取值范围：0~quota数
 
@@ -97,7 +97,7 @@ class QuotaShowResp:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaShowResp.
+        r"""Sets the used of this QuotaShowResp.
 
         功能说明：已创建的资源个数 取值范围：0~quota数
 
@@ -108,7 +108,7 @@ class QuotaShowResp:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaShowResp.
+        r"""Gets the quota of this QuotaShowResp.
 
         功能说明：资源的最大配额数 取值范围：各类型资源默认配额数~Integer最大值 约束：资源的默认配额数可以修改，而且配额需要提前在底层配置，参考默认配置为：vpc默认5，子网默认100，安全组默认100，安全组规则默认5000，弹性公网IP默认10，vpn默认5，vpngw默认2，vpcPeer默认50，firewall默认200，shareBandwidth默认5，shareBandwidthIP默认20
 
@@ -119,7 +119,7 @@ class QuotaShowResp:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaShowResp.
+        r"""Sets the quota of this QuotaShowResp.
 
         功能说明：资源的最大配额数 取值范围：各类型资源默认配额数~Integer最大值 约束：资源的默认配额数可以修改，而且配额需要提前在底层配置，参考默认配置为：vpc默认5，子网默认100，安全组默认100，安全组规则默认5000，弹性公网IP默认10，vpn默认5，vpngw默认2，vpcPeer默认50，firewall默认200，shareBandwidth默认5，shareBandwidthIP默认20
 
@@ -130,7 +130,7 @@ class QuotaShowResp:
 
     @property
     def min(self):
-        """Gets the min of this QuotaShowResp.
+        r"""Gets the min of this QuotaShowResp.
 
         允许修改的配额最小值
 
@@ -141,7 +141,7 @@ class QuotaShowResp:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaShowResp.
+        r"""Sets the min of this QuotaShowResp.
 
         允许修改的配额最小值
 

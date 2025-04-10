@@ -27,7 +27,7 @@ class CopyConfigurationRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """CopyConfigurationRequestBody
+        r"""CopyConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyConfigurationRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CopyConfigurationRequestBody.
+        r"""Gets the name of this CopyConfigurationRequestBody.
 
         复制后的参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
 
@@ -60,7 +60,7 @@ class CopyConfigurationRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyConfigurationRequestBody.
+        r"""Sets the name of this CopyConfigurationRequestBody.
 
         复制后的参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
 
@@ -71,7 +71,7 @@ class CopyConfigurationRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CopyConfigurationRequestBody.
+        r"""Gets the description of this CopyConfigurationRequestBody.
 
         参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
 
@@ -82,7 +82,7 @@ class CopyConfigurationRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CopyConfigurationRequestBody.
+        r"""Sets the description of this CopyConfigurationRequestBody.
 
         参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
 

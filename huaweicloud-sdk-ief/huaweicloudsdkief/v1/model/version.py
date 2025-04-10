@@ -25,7 +25,7 @@ class Version:
     }
 
     def __init__(self, version=None):
-        """Version
+        r"""Version
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Version:
 
     @property
     def version(self):
-        """Gets the version of this Version.
+        r"""Gets the version of this Version.
 
         :return: The version of this Version.
         :rtype: :class:`huaweicloudsdkief.v1.VersionDetail`
@@ -51,7 +51,7 @@ class Version:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Version.
+        r"""Sets the version of this Version.
 
         :param version: The version of this Version.
         :type version: :class:`huaweicloudsdkief.v1.VersionDetail`

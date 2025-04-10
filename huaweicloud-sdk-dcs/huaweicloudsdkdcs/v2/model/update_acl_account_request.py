@@ -29,7 +29,7 @@ class UpdateAclAccountRequest:
     }
 
     def __init__(self, instance_id=None, account_id=None, body=None):
-        """UpdateAclAccountRequest
+        r"""UpdateAclAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAclAccountRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAclAccountRequest.
+        r"""Gets the instance_id of this UpdateAclAccountRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateAclAccountRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAclAccountRequest.
+        r"""Sets the instance_id of this UpdateAclAccountRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateAclAccountRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this UpdateAclAccountRequest.
+        r"""Gets the account_id of this UpdateAclAccountRequest.
 
         ACL账号ID。
 
@@ -88,7 +88,7 @@ class UpdateAclAccountRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this UpdateAclAccountRequest.
+        r"""Sets the account_id of this UpdateAclAccountRequest.
 
         ACL账号ID。
 
@@ -99,7 +99,7 @@ class UpdateAclAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAclAccountRequest.
+        r"""Gets the body of this UpdateAclAccountRequest.
 
         :return: The body of this UpdateAclAccountRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.AclAccountRoleModifyBody`
@@ -108,7 +108,7 @@ class UpdateAclAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAclAccountRequest.
+        r"""Sets the body of this UpdateAclAccountRequest.
 
         :param body: The body of this UpdateAclAccountRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.AclAccountRoleModifyBody`

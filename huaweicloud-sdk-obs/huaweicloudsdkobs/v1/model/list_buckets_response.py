@@ -44,7 +44,7 @@ class ListBucketsResponse(SdkResponse):
     }
 
     def __init__(self, owner=None, buckets=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, x_obs_bucket_type=None, connection=None, content_length=None, date=None):
-        """ListBucketsResponse
+        r"""ListBucketsResponse
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ListBucketsResponse.
+        r"""Gets the owner of this ListBucketsResponse.
 
         :return: The owner of this ListBucketsResponse.
         :rtype: :class:`huaweicloudsdkobs.v1.Owner`
@@ -111,7 +111,7 @@ class ListBucketsResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListBucketsResponse.
+        r"""Sets the owner of this ListBucketsResponse.
 
         :param owner: The owner of this ListBucketsResponse.
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
@@ -120,7 +120,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this ListBucketsResponse.
+        r"""Gets the buckets of this ListBucketsResponse.
 
         :return: The buckets of this ListBucketsResponse.
         :rtype: :class:`huaweicloudsdkobs.v1.Buckets`
@@ -129,7 +129,7 @@ class ListBucketsResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this ListBucketsResponse.
+        r"""Sets the buckets of this ListBucketsResponse.
 
         :param buckets: The buckets of this ListBucketsResponse.
         :type buckets: :class:`huaweicloudsdkobs.v1.Buckets`
@@ -138,7 +138,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this ListBucketsResponse.
+        r"""Gets the x_obs_id_2 of this ListBucketsResponse.
 
         :return: The x_obs_id_2 of this ListBucketsResponse.
         :rtype: str
@@ -147,7 +147,7 @@ class ListBucketsResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this ListBucketsResponse.
+        r"""Sets the x_obs_id_2 of this ListBucketsResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this ListBucketsResponse.
         :type x_obs_id_2: str
@@ -156,7 +156,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this ListBucketsResponse.
+        r"""Gets the x_obs_request_id of this ListBucketsResponse.
 
         :return: The x_obs_request_id of this ListBucketsResponse.
         :rtype: str
@@ -165,7 +165,7 @@ class ListBucketsResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this ListBucketsResponse.
+        r"""Sets the x_obs_request_id of this ListBucketsResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this ListBucketsResponse.
         :type x_obs_request_id: str
@@ -174,7 +174,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this ListBucketsResponse.
+        r"""Gets the e_tag of this ListBucketsResponse.
 
         :return: The e_tag of this ListBucketsResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class ListBucketsResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this ListBucketsResponse.
+        r"""Sets the e_tag of this ListBucketsResponse.
 
         :param e_tag: The e_tag of this ListBucketsResponse.
         :type e_tag: str
@@ -192,7 +192,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def x_obs_bucket_type(self):
-        """Gets the x_obs_bucket_type of this ListBucketsResponse.
+        r"""Gets the x_obs_bucket_type of this ListBucketsResponse.
 
         :return: The x_obs_bucket_type of this ListBucketsResponse.
         :rtype: str
@@ -201,7 +201,7 @@ class ListBucketsResponse(SdkResponse):
 
     @x_obs_bucket_type.setter
     def x_obs_bucket_type(self, x_obs_bucket_type):
-        """Sets the x_obs_bucket_type of this ListBucketsResponse.
+        r"""Sets the x_obs_bucket_type of this ListBucketsResponse.
 
         :param x_obs_bucket_type: The x_obs_bucket_type of this ListBucketsResponse.
         :type x_obs_bucket_type: str
@@ -210,7 +210,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ListBucketsResponse.
+        r"""Gets the connection of this ListBucketsResponse.
 
         :return: The connection of this ListBucketsResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class ListBucketsResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ListBucketsResponse.
+        r"""Sets the connection of this ListBucketsResponse.
 
         :param connection: The connection of this ListBucketsResponse.
         :type connection: str
@@ -228,7 +228,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ListBucketsResponse.
+        r"""Gets the content_length of this ListBucketsResponse.
 
         :return: The content_length of this ListBucketsResponse.
         :rtype: str
@@ -237,7 +237,7 @@ class ListBucketsResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ListBucketsResponse.
+        r"""Sets the content_length of this ListBucketsResponse.
 
         :param content_length: The content_length of this ListBucketsResponse.
         :type content_length: str
@@ -246,7 +246,7 @@ class ListBucketsResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ListBucketsResponse.
+        r"""Gets the date of this ListBucketsResponse.
 
         :return: The date of this ListBucketsResponse.
         :rtype: str
@@ -255,7 +255,7 @@ class ListBucketsResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListBucketsResponse.
+        r"""Sets the date of this ListBucketsResponse.
 
         :param date: The date of this ListBucketsResponse.
         :type date: str

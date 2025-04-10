@@ -26,7 +26,7 @@ class CreateVmsTemplateResponse(SdkResponse):
     }
 
     def __init__(self, tplid=None):
-        """CreateVmsTemplateResponse
+        r"""CreateVmsTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateVmsTemplateResponse(SdkResponse):
 
     @property
     def tplid(self):
-        """Gets the tplid of this CreateVmsTemplateResponse.
+        r"""Gets the tplid of this CreateVmsTemplateResponse.
 
         智能信息基础版模板ID，用来唯一标识上传的模板。
 
@@ -55,7 +55,7 @@ class CreateVmsTemplateResponse(SdkResponse):
 
     @tplid.setter
     def tplid(self, tplid):
-        """Sets the tplid of this CreateVmsTemplateResponse.
+        r"""Sets the tplid of this CreateVmsTemplateResponse.
 
         智能信息基础版模板ID，用来唯一标识上传的模板。
 

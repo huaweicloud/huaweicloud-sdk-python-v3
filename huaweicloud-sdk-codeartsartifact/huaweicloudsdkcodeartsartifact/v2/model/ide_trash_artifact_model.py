@@ -31,7 +31,7 @@ class IDETrashArtifactModel:
     }
 
     def __init__(self, id=None, format=None, status=None, uri=None):
-        """IDETrashArtifactModel
+        r"""IDETrashArtifactModel
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IDETrashArtifactModel:
 
     @property
     def id(self):
-        """Gets the id of this IDETrashArtifactModel.
+        r"""Gets the id of this IDETrashArtifactModel.
 
         仓库id
 
@@ -75,7 +75,7 @@ class IDETrashArtifactModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IDETrashArtifactModel.
+        r"""Sets the id of this IDETrashArtifactModel.
 
         仓库id
 
@@ -86,7 +86,7 @@ class IDETrashArtifactModel:
 
     @property
     def format(self):
-        """Gets the format of this IDETrashArtifactModel.
+        r"""Gets the format of this IDETrashArtifactModel.
 
         类型
 
@@ -97,7 +97,7 @@ class IDETrashArtifactModel:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this IDETrashArtifactModel.
+        r"""Sets the format of this IDETrashArtifactModel.
 
         类型
 
@@ -108,7 +108,7 @@ class IDETrashArtifactModel:
 
     @property
     def status(self):
-        """Gets the status of this IDETrashArtifactModel.
+        r"""Gets the status of this IDETrashArtifactModel.
 
         当前仓库状态
 
@@ -119,7 +119,7 @@ class IDETrashArtifactModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IDETrashArtifactModel.
+        r"""Sets the status of this IDETrashArtifactModel.
 
         当前仓库状态
 
@@ -130,7 +130,7 @@ class IDETrashArtifactModel:
 
     @property
     def uri(self):
-        """Gets the uri of this IDETrashArtifactModel.
+        r"""Gets the uri of this IDETrashArtifactModel.
 
         待还原的文件路径
 
@@ -141,7 +141,7 @@ class IDETrashArtifactModel:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this IDETrashArtifactModel.
+        r"""Sets the uri of this IDETrashArtifactModel.
 
         待还原的文件路径
 

@@ -30,7 +30,7 @@ class ListQueuePropertiesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, properties=None):
-        """ListQueuePropertiesResponse
+        r"""ListQueuePropertiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListQueuePropertiesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListQueuePropertiesResponse.
+        r"""Gets the is_success of this ListQueuePropertiesResponse.
 
         :return: The is_success of this ListQueuePropertiesResponse.
         :rtype: bool
@@ -67,7 +67,7 @@ class ListQueuePropertiesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListQueuePropertiesResponse.
+        r"""Sets the is_success of this ListQueuePropertiesResponse.
 
         :param is_success: The is_success of this ListQueuePropertiesResponse.
         :type is_success: bool
@@ -76,7 +76,7 @@ class ListQueuePropertiesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListQueuePropertiesResponse.
+        r"""Gets the message of this ListQueuePropertiesResponse.
 
         :return: The message of this ListQueuePropertiesResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ListQueuePropertiesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListQueuePropertiesResponse.
+        r"""Sets the message of this ListQueuePropertiesResponse.
 
         :param message: The message of this ListQueuePropertiesResponse.
         :type message: str
@@ -94,7 +94,7 @@ class ListQueuePropertiesResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ListQueuePropertiesResponse.
+        r"""Gets the properties of this ListQueuePropertiesResponse.
 
         :return: The properties of this ListQueuePropertiesResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.QueueProperty`]
@@ -103,7 +103,7 @@ class ListQueuePropertiesResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ListQueuePropertiesResponse.
+        r"""Sets the properties of this ListQueuePropertiesResponse.
 
         :param properties: The properties of this ListQueuePropertiesResponse.
         :type properties: list[:class:`huaweicloudsdkdli.v1.QueueProperty`]

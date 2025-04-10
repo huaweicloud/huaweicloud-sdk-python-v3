@@ -33,7 +33,7 @@ class EventInfo:
     }
 
     def __init__(self, event_name=None, event_type=None, event_count=None, latest_occur_time=None, latest_event_source=None):
-        """EventInfo
+        r"""EventInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EventInfo:
 
     @property
     def event_name(self):
-        """Gets the event_name of this EventInfo.
+        r"""Gets the event_name of this EventInfo.
 
         事件名称。
 
@@ -82,7 +82,7 @@ class EventInfo:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this EventInfo.
+        r"""Sets the event_name of this EventInfo.
 
         事件名称。
 
@@ -93,7 +93,7 @@ class EventInfo:
 
     @property
     def event_type(self):
-        """Gets the event_type of this EventInfo.
+        r"""Gets the event_type of this EventInfo.
 
         事件类型。
 
@@ -104,7 +104,7 @@ class EventInfo:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this EventInfo.
+        r"""Sets the event_type of this EventInfo.
 
         事件类型。
 
@@ -115,7 +115,7 @@ class EventInfo:
 
     @property
     def event_count(self):
-        """Gets the event_count of this EventInfo.
+        r"""Gets the event_count of this EventInfo.
 
         选择查询的时间范围内，此事件发生的数量。
 
@@ -126,7 +126,7 @@ class EventInfo:
 
     @event_count.setter
     def event_count(self, event_count):
-        """Sets the event_count of this EventInfo.
+        r"""Sets the event_count of this EventInfo.
 
         选择查询的时间范围内，此事件发生的数量。
 
@@ -137,7 +137,7 @@ class EventInfo:
 
     @property
     def latest_occur_time(self):
-        """Gets the latest_occur_time of this EventInfo.
+        r"""Gets the latest_occur_time of this EventInfo.
 
         此事件最近一次发生的时间。
 
@@ -148,7 +148,7 @@ class EventInfo:
 
     @latest_occur_time.setter
     def latest_occur_time(self, latest_occur_time):
-        """Sets the latest_occur_time of this EventInfo.
+        r"""Sets the latest_occur_time of this EventInfo.
 
         此事件最近一次发生的时间。
 
@@ -159,7 +159,7 @@ class EventInfo:
 
     @property
     def latest_event_source(self):
-        """Gets the latest_event_source of this EventInfo.
+        r"""Gets the latest_event_source of this EventInfo.
 
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
@@ -170,7 +170,7 @@ class EventInfo:
 
     @latest_event_source.setter
     def latest_event_source(self, latest_event_source):
-        """Sets the latest_event_source of this EventInfo.
+        r"""Sets the latest_event_source of this EventInfo.
 
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 

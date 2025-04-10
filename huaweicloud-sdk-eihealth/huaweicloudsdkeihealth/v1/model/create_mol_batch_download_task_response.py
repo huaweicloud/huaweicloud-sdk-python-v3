@@ -26,7 +26,7 @@ class CreateMolBatchDownloadTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateMolBatchDownloadTaskResponse
+        r"""CreateMolBatchDownloadTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateMolBatchDownloadTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateMolBatchDownloadTaskResponse.
+        r"""Gets the id of this CreateMolBatchDownloadTaskResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class CreateMolBatchDownloadTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateMolBatchDownloadTaskResponse.
+        r"""Sets the id of this CreateMolBatchDownloadTaskResponse.
 
         任务ID
 

@@ -27,7 +27,7 @@ class RevokeKubernetesClusterCertRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """RevokeKubernetesClusterCertRequest
+        r"""RevokeKubernetesClusterCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RevokeKubernetesClusterCertRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RevokeKubernetesClusterCertRequest.
+        r"""Gets the cluster_id of this RevokeKubernetesClusterCertRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class RevokeKubernetesClusterCertRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RevokeKubernetesClusterCertRequest.
+        r"""Sets the cluster_id of this RevokeKubernetesClusterCertRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class RevokeKubernetesClusterCertRequest:
 
     @property
     def body(self):
-        """Gets the body of this RevokeKubernetesClusterCertRequest.
+        r"""Gets the body of this RevokeKubernetesClusterCertRequest.
 
         :return: The body of this RevokeKubernetesClusterCertRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.CertRevokeConfigRequestBody`
@@ -80,7 +80,7 @@ class RevokeKubernetesClusterCertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokeKubernetesClusterCertRequest.
+        r"""Sets the body of this RevokeKubernetesClusterCertRequest.
 
         :param body: The body of this RevokeKubernetesClusterCertRequest.
         :type body: :class:`huaweicloudsdkcce.v3.CertRevokeConfigRequestBody`

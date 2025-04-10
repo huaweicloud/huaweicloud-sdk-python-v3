@@ -39,7 +39,7 @@ class ImageFrame:
     }
 
     def __init__(self, create_time=None, update_time=None, frame_resolution_type=None, id=None, image_frame_position=None, image_position=None, resolution_type=None, url=None):
-        """ImageFrame
+        r"""ImageFrame
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ImageFrame:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ImageFrame.
+        r"""Gets the create_time of this ImageFrame.
 
         创建时间
 
@@ -95,7 +95,7 @@ class ImageFrame:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ImageFrame.
+        r"""Sets the create_time of this ImageFrame.
 
         创建时间
 
@@ -106,7 +106,7 @@ class ImageFrame:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ImageFrame.
+        r"""Gets the update_time of this ImageFrame.
 
         更新时间
 
@@ -117,7 +117,7 @@ class ImageFrame:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ImageFrame.
+        r"""Sets the update_time of this ImageFrame.
 
         更新时间
 
@@ -128,7 +128,7 @@ class ImageFrame:
 
     @property
     def frame_resolution_type(self):
-        """Gets the frame_resolution_type of this ImageFrame.
+        r"""Gets the frame_resolution_type of this ImageFrame.
 
         0: 16/9 1: 4/3 2: 3/4
 
@@ -139,7 +139,7 @@ class ImageFrame:
 
     @frame_resolution_type.setter
     def frame_resolution_type(self, frame_resolution_type):
-        """Sets the frame_resolution_type of this ImageFrame.
+        r"""Sets the frame_resolution_type of this ImageFrame.
 
         0: 16/9 1: 4/3 2: 3/4
 
@@ -150,7 +150,7 @@ class ImageFrame:
 
     @property
     def id(self):
-        """Gets the id of this ImageFrame.
+        r"""Gets the id of this ImageFrame.
 
         
 
@@ -161,7 +161,7 @@ class ImageFrame:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageFrame.
+        r"""Sets the id of this ImageFrame.
 
         
 
@@ -172,7 +172,7 @@ class ImageFrame:
 
     @property
     def image_frame_position(self):
-        """Gets the image_frame_position of this ImageFrame.
+        r"""Gets the image_frame_position of this ImageFrame.
 
         :return: The image_frame_position of this ImageFrame.
         :rtype: :class:`huaweicloudsdkcbs.v1.LeftRightPosition`
@@ -181,7 +181,7 @@ class ImageFrame:
 
     @image_frame_position.setter
     def image_frame_position(self, image_frame_position):
-        """Sets the image_frame_position of this ImageFrame.
+        r"""Sets the image_frame_position of this ImageFrame.
 
         :param image_frame_position: The image_frame_position of this ImageFrame.
         :type image_frame_position: :class:`huaweicloudsdkcbs.v1.LeftRightPosition`
@@ -190,7 +190,7 @@ class ImageFrame:
 
     @property
     def image_position(self):
-        """Gets the image_position of this ImageFrame.
+        r"""Gets the image_position of this ImageFrame.
 
         :return: The image_position of this ImageFrame.
         :rtype: :class:`huaweicloudsdkcbs.v1.LeftRightPosition`
@@ -199,7 +199,7 @@ class ImageFrame:
 
     @image_position.setter
     def image_position(self, image_position):
-        """Sets the image_position of this ImageFrame.
+        r"""Sets the image_position of this ImageFrame.
 
         :param image_position: The image_position of this ImageFrame.
         :type image_position: :class:`huaweicloudsdkcbs.v1.LeftRightPosition`
@@ -208,7 +208,7 @@ class ImageFrame:
 
     @property
     def resolution_type(self):
-        """Gets the resolution_type of this ImageFrame.
+        r"""Gets the resolution_type of this ImageFrame.
 
         横版：0 竖版：1
 
@@ -219,7 +219,7 @@ class ImageFrame:
 
     @resolution_type.setter
     def resolution_type(self, resolution_type):
-        """Sets the resolution_type of this ImageFrame.
+        r"""Sets the resolution_type of this ImageFrame.
 
         横版：0 竖版：1
 
@@ -230,7 +230,7 @@ class ImageFrame:
 
     @property
     def url(self):
-        """Gets the url of this ImageFrame.
+        r"""Gets the url of this ImageFrame.
 
         
 
@@ -241,7 +241,7 @@ class ImageFrame:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ImageFrame.
+        r"""Sets the url of this ImageFrame.
 
         
 

@@ -43,7 +43,7 @@ class PluginApiAttachInfo:
     }
 
     def __init__(self, plugin_attach_id=None, plugin_id=None, plugin_name=None, plugin_type=None, plugin_scope=None, env_id=None, env_name=None, api_id=None, api_name=None, attached_time=None):
-        """PluginApiAttachInfo
+        r"""PluginApiAttachInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PluginApiAttachInfo:
 
     @property
     def plugin_attach_id(self):
-        """Gets the plugin_attach_id of this PluginApiAttachInfo.
+        r"""Gets the plugin_attach_id of this PluginApiAttachInfo.
 
         插件绑定编码。
 
@@ -117,7 +117,7 @@ class PluginApiAttachInfo:
 
     @plugin_attach_id.setter
     def plugin_attach_id(self, plugin_attach_id):
-        """Sets the plugin_attach_id of this PluginApiAttachInfo.
+        r"""Sets the plugin_attach_id of this PluginApiAttachInfo.
 
         插件绑定编码。
 
@@ -128,7 +128,7 @@ class PluginApiAttachInfo:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this PluginApiAttachInfo.
+        r"""Gets the plugin_id of this PluginApiAttachInfo.
 
         插件编码。
 
@@ -139,7 +139,7 @@ class PluginApiAttachInfo:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this PluginApiAttachInfo.
+        r"""Sets the plugin_id of this PluginApiAttachInfo.
 
         插件编码。
 
@@ -150,7 +150,7 @@ class PluginApiAttachInfo:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginApiAttachInfo.
+        r"""Gets the plugin_name of this PluginApiAttachInfo.
 
         插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -161,7 +161,7 @@ class PluginApiAttachInfo:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginApiAttachInfo.
+        r"""Sets the plugin_name of this PluginApiAttachInfo.
 
         插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -172,7 +172,7 @@ class PluginApiAttachInfo:
 
     @property
     def plugin_type(self):
-        """Gets the plugin_type of this PluginApiAttachInfo.
+        r"""Gets the plugin_type of this PluginApiAttachInfo.
 
         插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像
 
@@ -183,7 +183,7 @@ class PluginApiAttachInfo:
 
     @plugin_type.setter
     def plugin_type(self, plugin_type):
-        """Sets the plugin_type of this PluginApiAttachInfo.
+        r"""Sets the plugin_type of this PluginApiAttachInfo.
 
         插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像
 
@@ -194,7 +194,7 @@ class PluginApiAttachInfo:
 
     @property
     def plugin_scope(self):
-        """Gets the plugin_scope of this PluginApiAttachInfo.
+        r"""Gets the plugin_scope of this PluginApiAttachInfo.
 
         插件可见范围。global：全局可见。
 
@@ -205,7 +205,7 @@ class PluginApiAttachInfo:
 
     @plugin_scope.setter
     def plugin_scope(self, plugin_scope):
-        """Sets the plugin_scope of this PluginApiAttachInfo.
+        r"""Sets the plugin_scope of this PluginApiAttachInfo.
 
         插件可见范围。global：全局可见。
 
@@ -216,7 +216,7 @@ class PluginApiAttachInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this PluginApiAttachInfo.
+        r"""Gets the env_id of this PluginApiAttachInfo.
 
         绑定API的环境编码。
 
@@ -227,7 +227,7 @@ class PluginApiAttachInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this PluginApiAttachInfo.
+        r"""Sets the env_id of this PluginApiAttachInfo.
 
         绑定API的环境编码。
 
@@ -238,7 +238,7 @@ class PluginApiAttachInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this PluginApiAttachInfo.
+        r"""Gets the env_name of this PluginApiAttachInfo.
 
         api授权绑定的环境名称
 
@@ -249,7 +249,7 @@ class PluginApiAttachInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this PluginApiAttachInfo.
+        r"""Sets the env_name of this PluginApiAttachInfo.
 
         api授权绑定的环境名称
 
@@ -260,7 +260,7 @@ class PluginApiAttachInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this PluginApiAttachInfo.
+        r"""Gets the api_id of this PluginApiAttachInfo.
 
         绑定的API编码。
 
@@ -271,7 +271,7 @@ class PluginApiAttachInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this PluginApiAttachInfo.
+        r"""Sets the api_id of this PluginApiAttachInfo.
 
         绑定的API编码。
 
@@ -282,7 +282,7 @@ class PluginApiAttachInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this PluginApiAttachInfo.
+        r"""Gets the api_name of this PluginApiAttachInfo.
 
         API的名称
 
@@ -293,7 +293,7 @@ class PluginApiAttachInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this PluginApiAttachInfo.
+        r"""Sets the api_name of this PluginApiAttachInfo.
 
         API的名称
 
@@ -304,7 +304,7 @@ class PluginApiAttachInfo:
 
     @property
     def attached_time(self):
-        """Gets the attached_time of this PluginApiAttachInfo.
+        r"""Gets the attached_time of this PluginApiAttachInfo.
 
         绑定时间。
 
@@ -315,7 +315,7 @@ class PluginApiAttachInfo:
 
     @attached_time.setter
     def attached_time(self, attached_time):
-        """Sets the attached_time of this PluginApiAttachInfo.
+        r"""Sets the attached_time of this PluginApiAttachInfo.
 
         绑定时间。
 

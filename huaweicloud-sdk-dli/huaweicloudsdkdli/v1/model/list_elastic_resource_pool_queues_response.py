@@ -32,7 +32,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, queues=None, count=None):
-        """ListElasticResourcePoolQueuesResponse
+        r"""ListElasticResourcePoolQueuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListElasticResourcePoolQueuesResponse.
+        r"""Gets the is_success of this ListElasticResourcePoolQueuesResponse.
 
         是否成功
 
@@ -76,7 +76,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListElasticResourcePoolQueuesResponse.
+        r"""Sets the is_success of this ListElasticResourcePoolQueuesResponse.
 
         是否成功
 
@@ -87,7 +87,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListElasticResourcePoolQueuesResponse.
+        r"""Gets the message of this ListElasticResourcePoolQueuesResponse.
 
         请求消息
 
@@ -98,7 +98,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListElasticResourcePoolQueuesResponse.
+        r"""Sets the message of this ListElasticResourcePoolQueuesResponse.
 
         请求消息
 
@@ -109,7 +109,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @property
     def queues(self):
-        """Gets the queues of this ListElasticResourcePoolQueuesResponse.
+        r"""Gets the queues of this ListElasticResourcePoolQueuesResponse.
 
         该弹性资源池下所有queue信息及队列扩缩容策略信息。
 
@@ -120,7 +120,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this ListElasticResourcePoolQueuesResponse.
+        r"""Sets the queues of this ListElasticResourcePoolQueuesResponse.
 
         该弹性资源池下所有queue信息及队列扩缩容策略信息。
 
@@ -131,7 +131,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListElasticResourcePoolQueuesResponse.
+        r"""Gets the count of this ListElasticResourcePoolQueuesResponse.
 
         该资源池下关联的队列数量
 
@@ -142,7 +142,7 @@ class ListElasticResourcePoolQueuesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListElasticResourcePoolQueuesResponse.
+        r"""Sets the count of this ListElasticResourcePoolQueuesResponse.
 
         该资源池下关联的队列数量
 

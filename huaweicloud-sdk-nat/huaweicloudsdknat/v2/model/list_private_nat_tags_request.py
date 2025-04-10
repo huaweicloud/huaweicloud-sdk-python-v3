@@ -23,7 +23,7 @@ class ListPrivateNatTagsRequest:
     }
 
     def __init__(self):
-        """ListPrivateNatTagsRequest
+        r"""ListPrivateNatTagsRequest
 
         The model defined in huaweicloud sdk
 

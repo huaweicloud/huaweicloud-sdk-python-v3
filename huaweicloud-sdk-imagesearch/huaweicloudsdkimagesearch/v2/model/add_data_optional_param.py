@@ -31,7 +31,7 @@ class AddDataOptionalParam:
     }
 
     def __init__(self, do_det=None, box=None, do_cls=None, category=None):
-        """AddDataOptionalParam
+        r"""AddDataOptionalParam
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AddDataOptionalParam:
 
     @property
     def do_det(self):
-        """Gets the do_det of this AddDataOptionalParam.
+        r"""Gets the do_det of this AddDataOptionalParam.
 
         是否进行目标检测，默认为true。
 
@@ -75,7 +75,7 @@ class AddDataOptionalParam:
 
     @do_det.setter
     def do_det(self, do_det):
-        """Sets the do_det of this AddDataOptionalParam.
+        r"""Sets the do_det of this AddDataOptionalParam.
 
         是否进行目标检测，默认为true。
 
@@ -86,7 +86,7 @@ class AddDataOptionalParam:
 
     @property
     def box(self):
-        """Gets the box of this AddDataOptionalParam.
+        r"""Gets the box of this AddDataOptionalParam.
 
         目标矩形框坐标，如给定则不进行目标检测，直接使用该box作为目标。格式为“x1,y1,x2,y2”（无空格），x1/y1为目标左上角坐标，x2/y2为目标右下角坐标，具体要求如下： - 0 <= x1 < x2 <= width，默认要求x2-x1 >= 15，具体可参考服务类型说明。 - 0 <= y1 < y2 <= height，默认要求y2-y1 >= 15，具体可参考服务类型说明。
 
@@ -97,7 +97,7 @@ class AddDataOptionalParam:
 
     @box.setter
     def box(self, box):
-        """Sets the box of this AddDataOptionalParam.
+        r"""Sets the box of this AddDataOptionalParam.
 
         目标矩形框坐标，如给定则不进行目标检测，直接使用该box作为目标。格式为“x1,y1,x2,y2”（无空格），x1/y1为目标左上角坐标，x2/y2为目标右下角坐标，具体要求如下： - 0 <= x1 < x2 <= width，默认要求x2-x1 >= 15，具体可参考服务类型说明。 - 0 <= y1 < y2 <= height，默认要求y2-y1 >= 15，具体可参考服务类型说明。
 
@@ -108,7 +108,7 @@ class AddDataOptionalParam:
 
     @property
     def do_cls(self):
-        """Gets the do_cls of this AddDataOptionalParam.
+        r"""Gets the do_cls of this AddDataOptionalParam.
 
         是否进行对象分类，默认为true。
 
@@ -119,7 +119,7 @@ class AddDataOptionalParam:
 
     @do_cls.setter
     def do_cls(self, do_cls):
-        """Sets the do_cls of this AddDataOptionalParam.
+        r"""Sets the do_cls of this AddDataOptionalParam.
 
         是否进行对象分类，默认为true。
 
@@ -130,7 +130,7 @@ class AddDataOptionalParam:
 
     @property
     def category(self):
-        """Gets the category of this AddDataOptionalParam.
+        r"""Gets the category of this AddDataOptionalParam.
 
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
@@ -141,7 +141,7 @@ class AddDataOptionalParam:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AddDataOptionalParam.
+        r"""Sets the category of this AddDataOptionalParam.
 
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 

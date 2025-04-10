@@ -35,7 +35,7 @@ class CreateEvaluateRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, session_id=None, request_id=None, body=None):
-        """CreateEvaluateRequest
+        r"""CreateEvaluateRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateEvaluateRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this CreateEvaluateRequest.
+        r"""Gets the x_service_key of this CreateEvaluateRequest.
 
         调用智能客服服务标志。
 
@@ -86,7 +86,7 @@ class CreateEvaluateRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this CreateEvaluateRequest.
+        r"""Sets the x_service_key of this CreateEvaluateRequest.
 
         调用智能客服服务标志。
 
@@ -97,7 +97,7 @@ class CreateEvaluateRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CreateEvaluateRequest.
+        r"""Gets the x_site of this CreateEvaluateRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -108,7 +108,7 @@ class CreateEvaluateRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CreateEvaluateRequest.
+        r"""Sets the x_site of this CreateEvaluateRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -119,7 +119,7 @@ class CreateEvaluateRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateEvaluateRequest.
+        r"""Gets the x_language of this CreateEvaluateRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -130,7 +130,7 @@ class CreateEvaluateRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateEvaluateRequest.
+        r"""Sets the x_language of this CreateEvaluateRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -141,7 +141,7 @@ class CreateEvaluateRequest:
 
     @property
     def session_id(self):
-        """Gets the session_id of this CreateEvaluateRequest.
+        r"""Gets the session_id of this CreateEvaluateRequest.
 
         会话Id
 
@@ -152,7 +152,7 @@ class CreateEvaluateRequest:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this CreateEvaluateRequest.
+        r"""Sets the session_id of this CreateEvaluateRequest.
 
         会话Id
 
@@ -163,7 +163,7 @@ class CreateEvaluateRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateEvaluateRequest.
+        r"""Gets the request_id of this CreateEvaluateRequest.
 
         请求Id
 
@@ -174,7 +174,7 @@ class CreateEvaluateRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateEvaluateRequest.
+        r"""Sets the request_id of this CreateEvaluateRequest.
 
         请求Id
 
@@ -185,7 +185,7 @@ class CreateEvaluateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEvaluateRequest.
+        r"""Gets the body of this CreateEvaluateRequest.
 
         :return: The body of this CreateEvaluateRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.EvaluateRequestReq`
@@ -194,7 +194,7 @@ class CreateEvaluateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEvaluateRequest.
+        r"""Sets the body of this CreateEvaluateRequest.
 
         :param body: The body of this CreateEvaluateRequest.
         :type body: :class:`huaweicloudsdkosm.v2.EvaluateRequestReq`

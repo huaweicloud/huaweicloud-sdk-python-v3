@@ -37,7 +37,7 @@ class NoSQLDrDateSyncIndicators:
     }
 
     def __init__(self, rsync_ops=None, rsync_wal_size=None, rsync_push_cost=None, rsync_send_cost=None, rsync_max_push_cost=None, rsync_max_send_cost=None, rsync_status=None):
-        """NoSQLDrDateSyncIndicators
+        r"""NoSQLDrDateSyncIndicators
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_ops(self):
-        """Gets the rsync_ops of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_ops of this NoSQLDrDateSyncIndicators.
 
         节点内同步命令的执行速率,每秒多少条数据；
 
@@ -96,7 +96,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_ops.setter
     def rsync_ops(self, rsync_ops):
-        """Sets the rsync_ops of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_ops of this NoSQLDrDateSyncIndicators.
 
         节点内同步命令的执行速率,每秒多少条数据；
 
@@ -107,7 +107,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_wal_size(self):
-        """Gets the rsync_wal_size of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_wal_size of this NoSQLDrDateSyncIndicators.
 
         节点内的同步WAL堆积大小,单位MB；
 
@@ -118,7 +118,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_wal_size.setter
     def rsync_wal_size(self, rsync_wal_size):
-        """Sets the rsync_wal_size of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_wal_size of this NoSQLDrDateSyncIndicators.
 
         节点内的同步WAL堆积大小,单位MB；
 
@@ -129,7 +129,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_push_cost(self):
-        """Gets the rsync_push_cost of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_push_cost of this NoSQLDrDateSyncIndicators.
 
         同步消息从放入消息队列，直到收到对端响应的平均耗时，单位us；
 
@@ -140,7 +140,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_push_cost.setter
     def rsync_push_cost(self, rsync_push_cost):
-        """Sets the rsync_push_cost of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_push_cost of this NoSQLDrDateSyncIndicators.
 
         同步消息从放入消息队列，直到收到对端响应的平均耗时，单位us；
 
@@ -151,7 +151,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_send_cost(self):
-        """Gets the rsync_send_cost of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_send_cost of this NoSQLDrDateSyncIndicators.
 
         同步消息从消息队列取出，直到收到对端响应的平均耗时，单位us；
 
@@ -162,7 +162,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_send_cost.setter
     def rsync_send_cost(self, rsync_send_cost):
-        """Sets the rsync_send_cost of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_send_cost of this NoSQLDrDateSyncIndicators.
 
         同步消息从消息队列取出，直到收到对端响应的平均耗时，单位us；
 
@@ -173,7 +173,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_max_push_cost(self):
-        """Gets the rsync_max_push_cost of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_max_push_cost of this NoSQLDrDateSyncIndicators.
 
         采集周期内rsync的同步推送耗时最大值，单位us;
 
@@ -184,7 +184,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_max_push_cost.setter
     def rsync_max_push_cost(self, rsync_max_push_cost):
-        """Sets the rsync_max_push_cost of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_max_push_cost of this NoSQLDrDateSyncIndicators.
 
         采集周期内rsync的同步推送耗时最大值，单位us;
 
@@ -195,7 +195,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_max_send_cost(self):
-        """Gets the rsync_max_send_cost of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_max_send_cost of this NoSQLDrDateSyncIndicators.
 
         采集周期内rsync的同步发送耗时最大值，单位us;
 
@@ -206,7 +206,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_max_send_cost.setter
     def rsync_max_send_cost(self, rsync_max_send_cost):
-        """Sets the rsync_max_send_cost of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_max_send_cost of this NoSQLDrDateSyncIndicators.
 
         采集周期内rsync的同步发送耗时最大值，单位us;
 
@@ -217,7 +217,7 @@ class NoSQLDrDateSyncIndicators:
 
     @property
     def rsync_status(self):
-        """Gets the rsync_status of this NoSQLDrDateSyncIndicators.
+        r"""Gets the rsync_status of this NoSQLDrDateSyncIndicators.
 
         rsync的同步状态，1表示正在同步，0表示没有同步;
 
@@ -228,7 +228,7 @@ class NoSQLDrDateSyncIndicators:
 
     @rsync_status.setter
     def rsync_status(self, rsync_status):
-        """Sets the rsync_status of this NoSQLDrDateSyncIndicators.
+        r"""Sets the rsync_status of this NoSQLDrDateSyncIndicators.
 
         rsync的同步状态，1表示正在同步，0表示没有同步;
 

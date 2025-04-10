@@ -24,7 +24,7 @@ class BatchDeletePersistentStorageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeletePersistentStorageResponse
+        r"""BatchDeletePersistentStorageResponse
 
         The model defined in huaweicloud sdk
 

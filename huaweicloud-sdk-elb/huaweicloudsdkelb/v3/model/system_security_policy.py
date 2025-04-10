@@ -31,7 +31,7 @@ class SystemSecurityPolicy:
     }
 
     def __init__(self, name=None, protocols=None, ciphers=None, project_id=None):
-        """SystemSecurityPolicy
+        r"""SystemSecurityPolicy
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SystemSecurityPolicy:
 
     @property
     def name(self):
-        """Gets the name of this SystemSecurityPolicy.
+        r"""Gets the name of this SystemSecurityPolicy.
 
         系统安全策略的名称。
 
@@ -71,7 +71,7 @@ class SystemSecurityPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SystemSecurityPolicy.
+        r"""Sets the name of this SystemSecurityPolicy.
 
         系统安全策略的名称。
 
@@ -82,7 +82,7 @@ class SystemSecurityPolicy:
 
     @property
     def protocols(self):
-        """Gets the protocols of this SystemSecurityPolicy.
+        r"""Gets the protocols of this SystemSecurityPolicy.
 
         系统安全策略的TLS协议列表。
 
@@ -93,7 +93,7 @@ class SystemSecurityPolicy:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this SystemSecurityPolicy.
+        r"""Sets the protocols of this SystemSecurityPolicy.
 
         系统安全策略的TLS协议列表。
 
@@ -104,7 +104,7 @@ class SystemSecurityPolicy:
 
     @property
     def ciphers(self):
-        """Gets the ciphers of this SystemSecurityPolicy.
+        r"""Gets the ciphers of this SystemSecurityPolicy.
 
         系统安全策略的加密套件列表。
 
@@ -115,7 +115,7 @@ class SystemSecurityPolicy:
 
     @ciphers.setter
     def ciphers(self, ciphers):
-        """Sets the ciphers of this SystemSecurityPolicy.
+        r"""Sets the ciphers of this SystemSecurityPolicy.
 
         系统安全策略的加密套件列表。
 
@@ -126,7 +126,7 @@ class SystemSecurityPolicy:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SystemSecurityPolicy.
+        r"""Gets the project_id of this SystemSecurityPolicy.
 
         项目id。
 
@@ -137,7 +137,7 @@ class SystemSecurityPolicy:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SystemSecurityPolicy.
+        r"""Sets the project_id of this SystemSecurityPolicy.
 
         项目id。
 

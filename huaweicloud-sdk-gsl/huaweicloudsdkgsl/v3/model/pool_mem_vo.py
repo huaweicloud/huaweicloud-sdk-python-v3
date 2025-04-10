@@ -31,7 +31,7 @@ class PoolMemVO:
     }
 
     def __init__(self, id=None, cid=None, sim_price_plan_id=None, flow_used=None):
-        """PoolMemVO
+        r"""PoolMemVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PoolMemVO:
 
     @property
     def id(self):
-        """Gets the id of this PoolMemVO.
+        r"""Gets the id of this PoolMemVO.
 
         流量池标识
 
@@ -75,7 +75,7 @@ class PoolMemVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PoolMemVO.
+        r"""Sets the id of this PoolMemVO.
 
         流量池标识
 
@@ -86,7 +86,7 @@ class PoolMemVO:
 
     @property
     def cid(self):
-        """Gets the cid of this PoolMemVO.
+        r"""Gets the cid of this PoolMemVO.
 
         容器ID
 
@@ -97,7 +97,7 @@ class PoolMemVO:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this PoolMemVO.
+        r"""Sets the cid of this PoolMemVO.
 
         容器ID
 
@@ -108,7 +108,7 @@ class PoolMemVO:
 
     @property
     def sim_price_plan_id(self):
-        """Gets the sim_price_plan_id of this PoolMemVO.
+        r"""Gets the sim_price_plan_id of this PoolMemVO.
 
         套餐订购实例ID
 
@@ -119,7 +119,7 @@ class PoolMemVO:
 
     @sim_price_plan_id.setter
     def sim_price_plan_id(self, sim_price_plan_id):
-        """Sets the sim_price_plan_id of this PoolMemVO.
+        r"""Sets the sim_price_plan_id of this PoolMemVO.
 
         套餐订购实例ID
 
@@ -130,7 +130,7 @@ class PoolMemVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this PoolMemVO.
+        r"""Gets the flow_used of this PoolMemVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -141,7 +141,7 @@ class PoolMemVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this PoolMemVO.
+        r"""Sets the flow_used of this PoolMemVO.
 
         已用流量(查询账期所在月份), 单位MB
 

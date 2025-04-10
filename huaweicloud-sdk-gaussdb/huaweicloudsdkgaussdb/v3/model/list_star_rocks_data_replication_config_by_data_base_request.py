@@ -29,7 +29,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, database=None):
-        """ListStarRocksDataReplicationConfigByDataBaseRequest
+        r"""ListStarRocksDataReplicationConfigByDataBaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStarRocksDataReplicationConfigByDataBaseRequest.
+        r"""Gets the instance_id of this ListStarRocksDataReplicationConfigByDataBaseRequest.
 
         **参数解释**：  StarRocks实例ID，严格匹配UUID规则。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in17，且长度为36个字符。  **默认值**：  不涉及。
 
@@ -65,7 +65,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStarRocksDataReplicationConfigByDataBaseRequest.
+        r"""Sets the instance_id of this ListStarRocksDataReplicationConfigByDataBaseRequest.
 
         **参数解释**：  StarRocks实例ID，严格匹配UUID规则。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in17，且长度为36个字符。  **默认值**：  不涉及。
 
@@ -76,7 +76,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStarRocksDataReplicationConfigByDataBaseRequest.
+        r"""Gets the x_language of this ListStarRocksDataReplicationConfigByDataBaseRequest.
 
         **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us - zh-cn  **默认值**：  en-us。
 
@@ -87,7 +87,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStarRocksDataReplicationConfigByDataBaseRequest.
+        r"""Sets the x_language of this ListStarRocksDataReplicationConfigByDataBaseRequest.
 
         **参数解释**：  请求语言类型。  **约束限制**：  不涉及。  **取值范围**：  - en-us - zh-cn  **默认值**：  en-us。
 
@@ -98,7 +98,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
 
     @property
     def database(self):
-        """Gets the database of this ListStarRocksDataReplicationConfigByDataBaseRequest.
+        r"""Gets the database of this ListStarRocksDataReplicationConfigByDataBaseRequest.
 
         **参数解释**：  目标数据库名。  **约束限制**：  不涉及。  **取值范围**：  字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。  **默认值**：  不涉及。
 
@@ -109,7 +109,7 @@ class ListStarRocksDataReplicationConfigByDataBaseRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ListStarRocksDataReplicationConfigByDataBaseRequest.
+        r"""Sets the database of this ListStarRocksDataReplicationConfigByDataBaseRequest.
 
         **参数解释**：  目标数据库名。  **约束限制**：  不涉及。  **取值范围**：  字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。  **默认值**：  不涉及。
 

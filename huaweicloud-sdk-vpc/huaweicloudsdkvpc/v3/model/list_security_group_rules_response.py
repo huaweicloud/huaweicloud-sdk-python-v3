@@ -30,7 +30,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, security_group_rules=None, page_info=None):
-        """ListSecurityGroupRulesResponse
+        r"""ListSecurityGroupRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSecurityGroupRulesResponse.
+        r"""Gets the request_id of this ListSecurityGroupRulesResponse.
 
         请求ID
 
@@ -69,7 +69,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSecurityGroupRulesResponse.
+        r"""Sets the request_id of this ListSecurityGroupRulesResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this ListSecurityGroupRulesResponse.
+        r"""Gets the security_group_rules of this ListSecurityGroupRulesResponse.
 
         安全组规则列表响应体
 
@@ -91,7 +91,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this ListSecurityGroupRulesResponse.
+        r"""Sets the security_group_rules of this ListSecurityGroupRulesResponse.
 
         安全组规则列表响应体
 
@@ -102,7 +102,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSecurityGroupRulesResponse.
+        r"""Gets the page_info of this ListSecurityGroupRulesResponse.
 
         :return: The page_info of this ListSecurityGroupRulesResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListSecurityGroupRulesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSecurityGroupRulesResponse.
+        r"""Sets the page_info of this ListSecurityGroupRulesResponse.
 
         :param page_info: The page_info of this ListSecurityGroupRulesResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

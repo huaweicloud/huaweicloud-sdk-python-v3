@@ -27,7 +27,7 @@ class BatchRebuildDesktopsSystemDiskRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """BatchRebuildDesktopsSystemDiskRequest
+        r"""BatchRebuildDesktopsSystemDiskRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchRebuildDesktopsSystemDiskRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
+        r"""Gets the service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class BatchRebuildDesktopsSystemDiskRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
+        r"""Sets the service_transaction_id of this BatchRebuildDesktopsSystemDiskRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class BatchRebuildDesktopsSystemDiskRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRebuildDesktopsSystemDiskRequest.
+        r"""Gets the body of this BatchRebuildDesktopsSystemDiskRequest.
 
         :return: The body of this BatchRebuildDesktopsSystemDiskRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopsReq`
@@ -81,7 +81,7 @@ class BatchRebuildDesktopsSystemDiskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRebuildDesktopsSystemDiskRequest.
+        r"""Sets the body of this BatchRebuildDesktopsSystemDiskRequest.
 
         :param body: The body of this BatchRebuildDesktopsSystemDiskRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopsReq`

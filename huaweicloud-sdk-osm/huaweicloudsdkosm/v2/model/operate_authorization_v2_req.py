@@ -27,7 +27,7 @@ class OperateAuthorizationV2Req:
     }
 
     def __init__(self, reject_reason=None, group_id=None):
-        """OperateAuthorizationV2Req
+        r"""OperateAuthorizationV2Req
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OperateAuthorizationV2Req:
 
     @property
     def reject_reason(self):
-        """Gets the reject_reason of this OperateAuthorizationV2Req.
+        r"""Gets the reject_reason of this OperateAuthorizationV2Req.
 
         拒绝理由
 
@@ -61,7 +61,7 @@ class OperateAuthorizationV2Req:
 
     @reject_reason.setter
     def reject_reason(self, reject_reason):
-        """Sets the reject_reason of this OperateAuthorizationV2Req.
+        r"""Sets the reject_reason of this OperateAuthorizationV2Req.
 
         拒绝理由
 
@@ -72,7 +72,7 @@ class OperateAuthorizationV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this OperateAuthorizationV2Req.
+        r"""Gets the group_id of this OperateAuthorizationV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -83,7 +83,7 @@ class OperateAuthorizationV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this OperateAuthorizationV2Req.
+        r"""Sets the group_id of this OperateAuthorizationV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

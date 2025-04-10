@@ -25,7 +25,7 @@ class ShowAggregateResourceConfigRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAggregateResourceConfigRequest
+        r"""ShowAggregateResourceConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAggregateResourceConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAggregateResourceConfigRequest.
+        r"""Gets the body of this ShowAggregateResourceConfigRequest.
 
         :return: The body of this ShowAggregateResourceConfigRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.AggregateResourceConfigRequest`
@@ -52,7 +52,7 @@ class ShowAggregateResourceConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAggregateResourceConfigRequest.
+        r"""Sets the body of this ShowAggregateResourceConfigRequest.
 
         :param body: The body of this ShowAggregateResourceConfigRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.AggregateResourceConfigRequest`

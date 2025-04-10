@@ -25,7 +25,7 @@ class ShowWidgetRequest:
     }
 
     def __init__(self, widget_id=None):
-        """ShowWidgetRequest
+        r"""ShowWidgetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowWidgetRequest:
 
     @property
     def widget_id(self):
-        """Gets the widget_id of this ShowWidgetRequest.
+        r"""Gets the widget_id of this ShowWidgetRequest.
 
         监控视图id
 
@@ -53,7 +53,7 @@ class ShowWidgetRequest:
 
     @widget_id.setter
     def widget_id(self, widget_id):
-        """Sets the widget_id of this ShowWidgetRequest.
+        r"""Sets the widget_id of this ShowWidgetRequest.
 
         监控视图id
 

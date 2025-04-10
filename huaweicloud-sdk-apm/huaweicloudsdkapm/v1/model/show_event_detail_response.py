@@ -26,7 +26,7 @@ class ShowEventDetailResponse(SdkResponse):
     }
 
     def __init__(self, event_info=None):
-        """ShowEventDetailResponse
+        r"""ShowEventDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEventDetailResponse(SdkResponse):
 
     @property
     def event_info(self):
-        """Gets the event_info of this ShowEventDetailResponse.
+        r"""Gets the event_info of this ShowEventDetailResponse.
 
         :return: The event_info of this ShowEventDetailResponse.
         :rtype: :class:`huaweicloudsdkapm.v1.SpanEventInfo`
@@ -53,7 +53,7 @@ class ShowEventDetailResponse(SdkResponse):
 
     @event_info.setter
     def event_info(self, event_info):
-        """Sets the event_info of this ShowEventDetailResponse.
+        r"""Sets the event_info of this ShowEventDetailResponse.
 
         :param event_info: The event_info of this ShowEventDetailResponse.
         :type event_info: :class:`huaweicloudsdkapm.v1.SpanEventInfo`

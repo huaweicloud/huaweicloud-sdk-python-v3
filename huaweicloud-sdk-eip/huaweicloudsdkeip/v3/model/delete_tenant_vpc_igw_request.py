@@ -25,7 +25,7 @@ class DeleteTenantVpcIgwRequest:
     }
 
     def __init__(self, vpc_igw_id=None):
-        """DeleteTenantVpcIgwRequest
+        r"""DeleteTenantVpcIgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTenantVpcIgwRequest:
 
     @property
     def vpc_igw_id(self):
-        """Gets the vpc_igw_id of this DeleteTenantVpcIgwRequest.
+        r"""Gets the vpc_igw_id of this DeleteTenantVpcIgwRequest.
 
         虚拟igw的uuid
 
@@ -53,7 +53,7 @@ class DeleteTenantVpcIgwRequest:
 
     @vpc_igw_id.setter
     def vpc_igw_id(self, vpc_igw_id):
-        """Sets the vpc_igw_id of this DeleteTenantVpcIgwRequest.
+        r"""Sets the vpc_igw_id of this DeleteTenantVpcIgwRequest.
 
         虚拟igw的uuid
 

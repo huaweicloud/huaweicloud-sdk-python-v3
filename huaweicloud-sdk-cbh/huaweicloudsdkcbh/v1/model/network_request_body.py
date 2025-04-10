@@ -31,7 +31,7 @@ class NetworkRequestBody:
     }
 
     def __init__(self, type=None, security_groups=None, nics=None, server_id=None):
-        """NetworkRequestBody
+        r"""NetworkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class NetworkRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this NetworkRequestBody.
+        r"""Gets the type of this NetworkRequestBody.
 
         云堡垒机实例状态，枚举值如下： - create  创建 - renewals  更新 - change  变更 状态为renewals或change时server_id必传。
 
@@ -72,7 +72,7 @@ class NetworkRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NetworkRequestBody.
+        r"""Sets the type of this NetworkRequestBody.
 
         云堡垒机实例状态，枚举值如下： - create  创建 - renewals  更新 - change  变更 状态为renewals或change时server_id必传。
 
@@ -83,7 +83,7 @@ class NetworkRequestBody:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NetworkRequestBody.
+        r"""Gets the security_groups of this NetworkRequestBody.
 
         云堡垒升级实例所在安全组信息。
 
@@ -94,7 +94,7 @@ class NetworkRequestBody:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NetworkRequestBody.
+        r"""Sets the security_groups of this NetworkRequestBody.
 
         云堡垒升级实例所在安全组信息。
 
@@ -105,7 +105,7 @@ class NetworkRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this NetworkRequestBody.
+        r"""Gets the nics of this NetworkRequestBody.
 
         云堡垒机实例的网卡信息。
 
@@ -116,7 +116,7 @@ class NetworkRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this NetworkRequestBody.
+        r"""Sets the nics of this NetworkRequestBody.
 
         云堡垒机实例的网卡信息。
 
@@ -127,7 +127,7 @@ class NetworkRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NetworkRequestBody.
+        r"""Gets the server_id of this NetworkRequestBody.
 
         云堡垒机实例ID。
 
@@ -138,7 +138,7 @@ class NetworkRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NetworkRequestBody.
+        r"""Sets the server_id of this NetworkRequestBody.
 
         云堡垒机实例ID。
 

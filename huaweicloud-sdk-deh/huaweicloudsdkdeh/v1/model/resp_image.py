@@ -25,7 +25,7 @@ class RespImage:
     }
 
     def __init__(self, id=None):
-        """RespImage
+        r"""RespImage
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RespImage:
 
     @property
     def id(self):
-        """Gets the id of this RespImage.
+        r"""Gets the id of this RespImage.
 
         弹性云服务器镜像ID。
 
@@ -54,7 +54,7 @@ class RespImage:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RespImage.
+        r"""Sets the id of this RespImage.
 
         弹性云服务器镜像ID。
 

@@ -29,7 +29,7 @@ class GetPartitionColumnStatisticsInput:
     }
 
     def __init__(self, aggregate_statics=None, column_names=None, partition_values_list=None):
-        """GetPartitionColumnStatisticsInput
+        r"""GetPartitionColumnStatisticsInput
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GetPartitionColumnStatisticsInput:
 
     @property
     def aggregate_statics(self):
-        """Gets the aggregate_statics of this GetPartitionColumnStatisticsInput.
+        r"""Gets the aggregate_statics of this GetPartitionColumnStatisticsInput.
 
         是否聚合返回统计信息
 
@@ -65,7 +65,7 @@ class GetPartitionColumnStatisticsInput:
 
     @aggregate_statics.setter
     def aggregate_statics(self, aggregate_statics):
-        """Sets the aggregate_statics of this GetPartitionColumnStatisticsInput.
+        r"""Sets the aggregate_statics of this GetPartitionColumnStatisticsInput.
 
         是否聚合返回统计信息
 
@@ -76,7 +76,7 @@ class GetPartitionColumnStatisticsInput:
 
     @property
     def column_names(self):
-        """Gets the column_names of this GetPartitionColumnStatisticsInput.
+        r"""Gets the column_names of this GetPartitionColumnStatisticsInput.
 
         统计信息的列名
 
@@ -87,7 +87,7 @@ class GetPartitionColumnStatisticsInput:
 
     @column_names.setter
     def column_names(self, column_names):
-        """Sets the column_names of this GetPartitionColumnStatisticsInput.
+        r"""Sets the column_names of this GetPartitionColumnStatisticsInput.
 
         统计信息的列名
 
@@ -98,7 +98,7 @@ class GetPartitionColumnStatisticsInput:
 
     @property
     def partition_values_list(self):
-        """Gets the partition_values_list of this GetPartitionColumnStatisticsInput.
+        r"""Gets the partition_values_list of this GetPartitionColumnStatisticsInput.
 
         需要统计的分区值列表
 
@@ -109,7 +109,7 @@ class GetPartitionColumnStatisticsInput:
 
     @partition_values_list.setter
     def partition_values_list(self, partition_values_list):
-        """Sets the partition_values_list of this GetPartitionColumnStatisticsInput.
+        r"""Sets the partition_values_list of this GetPartitionColumnStatisticsInput.
 
         需要统计的分区值列表
 

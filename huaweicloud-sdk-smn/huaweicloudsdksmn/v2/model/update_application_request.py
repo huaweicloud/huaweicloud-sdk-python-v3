@@ -27,7 +27,7 @@ class UpdateApplicationRequest:
     }
 
     def __init__(self, application_urn=None, body=None):
-        """UpdateApplicationRequest
+        r"""UpdateApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateApplicationRequest:
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this UpdateApplicationRequest.
+        r"""Gets the application_urn of this UpdateApplicationRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class UpdateApplicationRequest:
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this UpdateApplicationRequest.
+        r"""Sets the application_urn of this UpdateApplicationRequest.
 
         Application的唯一资源标识，可通过[查询Application](smn_api_57004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class UpdateApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateApplicationRequest.
+        r"""Gets the body of this UpdateApplicationRequest.
 
         :return: The body of this UpdateApplicationRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequestBody`
@@ -80,7 +80,7 @@ class UpdateApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateApplicationRequest.
+        r"""Sets the body of this UpdateApplicationRequest.
 
         :param body: The body of this UpdateApplicationRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequestBody`

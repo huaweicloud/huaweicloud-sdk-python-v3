@@ -29,7 +29,7 @@ class LaneOccupancy:
     }
 
     def __init__(self, lane_id=None, space_occupancy=None, time_occupancy=None):
-        """LaneOccupancy
+        r"""LaneOccupancy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LaneOccupancy:
 
     @property
     def lane_id(self):
-        """Gets the lane_id of this LaneOccupancy.
+        r"""Gets the lane_id of this LaneOccupancy.
 
         **参数说明**：车道编号。车道从左到右，从0开始编号
 
@@ -68,7 +68,7 @@ class LaneOccupancy:
 
     @lane_id.setter
     def lane_id(self, lane_id):
-        """Sets the lane_id of this LaneOccupancy.
+        r"""Sets the lane_id of this LaneOccupancy.
 
         **参数说明**：车道编号。车道从左到右，从0开始编号
 
@@ -79,7 +79,7 @@ class LaneOccupancy:
 
     @property
     def space_occupancy(self):
-        """Gets the space_occupancy of this LaneOccupancy.
+        r"""Gets the space_occupancy of this LaneOccupancy.
 
         **参数说明**：车道的空间占有率。
 
@@ -90,7 +90,7 @@ class LaneOccupancy:
 
     @space_occupancy.setter
     def space_occupancy(self, space_occupancy):
-        """Sets the space_occupancy of this LaneOccupancy.
+        r"""Sets the space_occupancy of this LaneOccupancy.
 
         **参数说明**：车道的空间占有率。
 
@@ -101,7 +101,7 @@ class LaneOccupancy:
 
     @property
     def time_occupancy(self):
-        """Gets the time_occupancy of this LaneOccupancy.
+        r"""Gets the time_occupancy of this LaneOccupancy.
 
         **参数说明**：车道的时间占有率。
 
@@ -112,7 +112,7 @@ class LaneOccupancy:
 
     @time_occupancy.setter
     def time_occupancy(self, time_occupancy):
-        """Sets the time_occupancy of this LaneOccupancy.
+        r"""Sets the time_occupancy of this LaneOccupancy.
 
         **参数说明**：车道的时间占有率。
 

@@ -27,7 +27,7 @@ class ListMonitoredObjectsOfInstanceRequest:
     }
 
     def __init__(self, instance_id=None, dim_name=None):
-        """ListMonitoredObjectsOfInstanceRequest
+        r"""ListMonitoredObjectsOfInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListMonitoredObjectsOfInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMonitoredObjectsOfInstanceRequest.
+        r"""Gets the instance_id of this ListMonitoredObjectsOfInstanceRequest.
 
         主维度对象ID，与DCS实例列表中实例ID相同。
 
@@ -59,7 +59,7 @@ class ListMonitoredObjectsOfInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMonitoredObjectsOfInstanceRequest.
+        r"""Sets the instance_id of this ListMonitoredObjectsOfInstanceRequest.
 
         主维度对象ID，与DCS实例列表中实例ID相同。
 
@@ -70,7 +70,7 @@ class ListMonitoredObjectsOfInstanceRequest:
 
     @property
     def dim_name(self):
-        """Gets the dim_name of this ListMonitoredObjectsOfInstanceRequest.
+        r"""Gets the dim_name of this ListMonitoredObjectsOfInstanceRequest.
 
         主维度ID，当前支持子维度的主维度ID的有dcs_instance_id。
 
@@ -81,7 +81,7 @@ class ListMonitoredObjectsOfInstanceRequest:
 
     @dim_name.setter
     def dim_name(self, dim_name):
-        """Sets the dim_name of this ListMonitoredObjectsOfInstanceRequest.
+        r"""Sets the dim_name of this ListMonitoredObjectsOfInstanceRequest.
 
         主维度ID，当前支持子维度的主维度ID的有dcs_instance_id。
 

@@ -47,7 +47,7 @@ class Attributes:
     }
 
     def __init__(self, gender=None, dress=None, glass=None, hat=None, age=None, mask=None, beard=None, phototype=None, quality=None, hair=None, expression=None, face_angle=None):
-        """Attributes
+        r"""Attributes
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class Attributes:
 
     @property
     def gender(self):
-        """Gets the gender of this Attributes.
+        r"""Gets the gender of this Attributes.
 
         性别： • male：男性 • female：女性
 
@@ -119,7 +119,7 @@ class Attributes:
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this Attributes.
+        r"""Sets the gender of this Attributes.
 
         性别： • male：男性 • female：女性
 
@@ -130,7 +130,7 @@ class Attributes:
 
     @property
     def dress(self):
-        """Gets the dress of this Attributes.
+        r"""Gets the dress of this Attributes.
 
         :return: The dress of this Attributes.
         :rtype: :class:`huaweicloudsdkfrs.v2.Dress`
@@ -139,7 +139,7 @@ class Attributes:
 
     @dress.setter
     def dress(self, dress):
-        """Sets the dress of this Attributes.
+        r"""Sets the dress of this Attributes.
 
         :param dress: The dress of this Attributes.
         :type dress: :class:`huaweicloudsdkfrs.v2.Dress`
@@ -148,7 +148,7 @@ class Attributes:
 
     @property
     def glass(self):
-        """Gets the glass of this Attributes.
+        r"""Gets the glass of this Attributes.
 
         是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
 
@@ -159,7 +159,7 @@ class Attributes:
 
     @glass.setter
     def glass(self, glass):
-        """Sets the glass of this Attributes.
+        r"""Sets the glass of this Attributes.
 
         是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
 
@@ -170,7 +170,7 @@ class Attributes:
 
     @property
     def hat(self):
-        """Gets the hat of this Attributes.
+        r"""Gets the hat of this Attributes.
 
         是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
 
@@ -181,7 +181,7 @@ class Attributes:
 
     @hat.setter
     def hat(self, hat):
-        """Sets the hat of this Attributes.
+        r"""Sets the hat of this Attributes.
 
         是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
 
@@ -192,7 +192,7 @@ class Attributes:
 
     @property
     def age(self):
-        """Gets the age of this Attributes.
+        r"""Gets the age of this Attributes.
 
         年龄。
 
@@ -203,7 +203,7 @@ class Attributes:
 
     @age.setter
     def age(self, age):
-        """Sets the age of this Attributes.
+        r"""Sets the age of this Attributes.
 
         年龄。
 
@@ -214,7 +214,7 @@ class Attributes:
 
     @property
     def mask(self):
-        """Gets the mask of this Attributes.
+        r"""Gets the mask of this Attributes.
 
         是否戴口罩： • yes：戴口罩 • none：未戴口罩 • unknown：未知
 
@@ -225,7 +225,7 @@ class Attributes:
 
     @mask.setter
     def mask(self, mask):
-        """Sets the mask of this Attributes.
+        r"""Sets the mask of this Attributes.
 
         是否戴口罩： • yes：戴口罩 • none：未戴口罩 • unknown：未知
 
@@ -236,7 +236,7 @@ class Attributes:
 
     @property
     def beard(self):
-        """Gets the beard of this Attributes.
+        r"""Gets the beard of this Attributes.
 
         胡须： • yes：有胡须 • none：无胡须 • unknown：未知
 
@@ -247,7 +247,7 @@ class Attributes:
 
     @beard.setter
     def beard(self, beard):
-        """Sets the beard of this Attributes.
+        r"""Sets the beard of this Attributes.
 
         胡须： • yes：有胡须 • none：无胡须 • unknown：未知
 
@@ -258,7 +258,7 @@ class Attributes:
 
     @property
     def phototype(self):
-        """Gets the phototype of this Attributes.
+        r"""Gets the phototype of this Attributes.
 
         图片类型： • idcard：证件照 • monitor：摄像头监控 • internet photo：网络图片
 
@@ -269,7 +269,7 @@ class Attributes:
 
     @phototype.setter
     def phototype(self, phototype):
-        """Sets the phototype of this Attributes.
+        r"""Sets the phototype of this Attributes.
 
         图片类型： • idcard：证件照 • monitor：摄像头监控 • internet photo：网络图片
 
@@ -280,7 +280,7 @@ class Attributes:
 
     @property
     def quality(self):
-        """Gets the quality of this Attributes.
+        r"""Gets the quality of this Attributes.
 
         :return: The quality of this Attributes.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceQuality`
@@ -289,7 +289,7 @@ class Attributes:
 
     @quality.setter
     def quality(self, quality):
-        """Sets the quality of this Attributes.
+        r"""Sets the quality of this Attributes.
 
         :param quality: The quality of this Attributes.
         :type quality: :class:`huaweicloudsdkfrs.v2.FaceQuality`
@@ -298,7 +298,7 @@ class Attributes:
 
     @property
     def hair(self):
-        """Gets the hair of this Attributes.
+        r"""Gets the hair of this Attributes.
 
         发型： • long：长发 • short：短发 • unknown：未知
 
@@ -309,7 +309,7 @@ class Attributes:
 
     @hair.setter
     def hair(self, hair):
-        """Sets the hair of this Attributes.
+        r"""Sets the hair of this Attributes.
 
         发型： • long：长发 • short：短发 • unknown：未知
 
@@ -320,7 +320,7 @@ class Attributes:
 
     @property
     def expression(self):
-        """Gets the expression of this Attributes.
+        r"""Gets the expression of this Attributes.
 
         :return: The expression of this Attributes.
         :rtype: :class:`huaweicloudsdkfrs.v2.AttributesExpression`
@@ -329,7 +329,7 @@ class Attributes:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this Attributes.
+        r"""Sets the expression of this Attributes.
 
         :param expression: The expression of this Attributes.
         :type expression: :class:`huaweicloudsdkfrs.v2.AttributesExpression`
@@ -338,7 +338,7 @@ class Attributes:
 
     @property
     def face_angle(self):
-        """Gets the face_angle of this Attributes.
+        r"""Gets the face_angle of this Attributes.
 
         人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转。
 
@@ -349,7 +349,7 @@ class Attributes:
 
     @face_angle.setter
     def face_angle(self, face_angle):
-        """Sets the face_angle of this Attributes.
+        r"""Sets the face_angle of this Attributes.
 
         人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转。
 

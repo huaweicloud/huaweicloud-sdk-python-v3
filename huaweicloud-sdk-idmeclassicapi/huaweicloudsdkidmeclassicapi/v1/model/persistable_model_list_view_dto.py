@@ -69,7 +69,7 @@ class PersistableModelListViewDTO:
     }
 
     def __init__(self, acl_entry=None, class_name=None, cls_attrs=None, create_time=None, creator=None, disable_flag=None, folder=None, full_path=None, id=None, last_update_time=None, leaf_flag=None, lifecycle_state=None, lifecycle_template=None, modifier=None, owner=None, parent_node=None, raw_full_path=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, root_node=None, tenant=None, unique_key=None):
-        """PersistableModelListViewDTO
+        r"""PersistableModelListViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class PersistableModelListViewDTO:
 
     @property
     def acl_entry(self):
-        """Gets the acl_entry of this PersistableModelListViewDTO.
+        r"""Gets the acl_entry of this PersistableModelListViewDTO.
 
         **参数解释：**  访问控制列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -208,7 +208,7 @@ class PersistableModelListViewDTO:
 
     @acl_entry.setter
     def acl_entry(self, acl_entry):
-        """Sets the acl_entry of this PersistableModelListViewDTO.
+        r"""Sets the acl_entry of this PersistableModelListViewDTO.
 
         **参数解释：**  访问控制列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -219,7 +219,7 @@ class PersistableModelListViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this PersistableModelListViewDTO.
+        r"""Gets the class_name of this PersistableModelListViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -230,7 +230,7 @@ class PersistableModelListViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this PersistableModelListViewDTO.
+        r"""Sets the class_name of this PersistableModelListViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -241,7 +241,7 @@ class PersistableModelListViewDTO:
 
     @property
     def cls_attrs(self):
-        """Gets the cls_attrs of this PersistableModelListViewDTO.
+        r"""Gets the cls_attrs of this PersistableModelListViewDTO.
 
         **参数解释：**  分类属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -252,7 +252,7 @@ class PersistableModelListViewDTO:
 
     @cls_attrs.setter
     def cls_attrs(self, cls_attrs):
-        """Sets the cls_attrs of this PersistableModelListViewDTO.
+        r"""Sets the cls_attrs of this PersistableModelListViewDTO.
 
         **参数解释：**  分类属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -263,7 +263,7 @@ class PersistableModelListViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PersistableModelListViewDTO.
+        r"""Gets the create_time of this PersistableModelListViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -274,7 +274,7 @@ class PersistableModelListViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PersistableModelListViewDTO.
+        r"""Sets the create_time of this PersistableModelListViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -285,7 +285,7 @@ class PersistableModelListViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this PersistableModelListViewDTO.
+        r"""Gets the creator of this PersistableModelListViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -296,7 +296,7 @@ class PersistableModelListViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PersistableModelListViewDTO.
+        r"""Sets the creator of this PersistableModelListViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -307,7 +307,7 @@ class PersistableModelListViewDTO:
 
     @property
     def disable_flag(self):
-        """Gets the disable_flag of this PersistableModelListViewDTO.
+        r"""Gets the disable_flag of this PersistableModelListViewDTO.
 
         **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
 
@@ -318,7 +318,7 @@ class PersistableModelListViewDTO:
 
     @disable_flag.setter
     def disable_flag(self, disable_flag):
-        """Sets the disable_flag of this PersistableModelListViewDTO.
+        r"""Sets the disable_flag of this PersistableModelListViewDTO.
 
         **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
 
@@ -329,7 +329,7 @@ class PersistableModelListViewDTO:
 
     @property
     def folder(self):
-        """Gets the folder of this PersistableModelListViewDTO.
+        r"""Gets the folder of this PersistableModelListViewDTO.
 
         :return: The folder of this PersistableModelListViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -338,7 +338,7 @@ class PersistableModelListViewDTO:
 
     @folder.setter
     def folder(self, folder):
-        """Sets the folder of this PersistableModelListViewDTO.
+        r"""Sets the folder of this PersistableModelListViewDTO.
 
         :param folder: The folder of this PersistableModelListViewDTO.
         :type folder: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -347,7 +347,7 @@ class PersistableModelListViewDTO:
 
     @property
     def full_path(self):
-        """Gets the full_path of this PersistableModelListViewDTO.
+        r"""Gets the full_path of this PersistableModelListViewDTO.
 
         **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -358,7 +358,7 @@ class PersistableModelListViewDTO:
 
     @full_path.setter
     def full_path(self, full_path):
-        """Sets the full_path of this PersistableModelListViewDTO.
+        r"""Sets the full_path of this PersistableModelListViewDTO.
 
         **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -369,7 +369,7 @@ class PersistableModelListViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this PersistableModelListViewDTO.
+        r"""Gets the id of this PersistableModelListViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -380,7 +380,7 @@ class PersistableModelListViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersistableModelListViewDTO.
+        r"""Sets the id of this PersistableModelListViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -391,7 +391,7 @@ class PersistableModelListViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this PersistableModelListViewDTO.
+        r"""Gets the last_update_time of this PersistableModelListViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -402,7 +402,7 @@ class PersistableModelListViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this PersistableModelListViewDTO.
+        r"""Sets the last_update_time of this PersistableModelListViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -413,7 +413,7 @@ class PersistableModelListViewDTO:
 
     @property
     def leaf_flag(self):
-        """Gets the leaf_flag of this PersistableModelListViewDTO.
+        r"""Gets the leaf_flag of this PersistableModelListViewDTO.
 
         **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  false。 
 
@@ -424,7 +424,7 @@ class PersistableModelListViewDTO:
 
     @leaf_flag.setter
     def leaf_flag(self, leaf_flag):
-        """Sets the leaf_flag of this PersistableModelListViewDTO.
+        r"""Sets the leaf_flag of this PersistableModelListViewDTO.
 
         **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  false。 
 
@@ -435,7 +435,7 @@ class PersistableModelListViewDTO:
 
     @property
     def lifecycle_state(self):
-        """Gets the lifecycle_state of this PersistableModelListViewDTO.
+        r"""Gets the lifecycle_state of this PersistableModelListViewDTO.
 
         :return: The lifecycle_state of this PersistableModelListViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -444,7 +444,7 @@ class PersistableModelListViewDTO:
 
     @lifecycle_state.setter
     def lifecycle_state(self, lifecycle_state):
-        """Sets the lifecycle_state of this PersistableModelListViewDTO.
+        r"""Sets the lifecycle_state of this PersistableModelListViewDTO.
 
         :param lifecycle_state: The lifecycle_state of this PersistableModelListViewDTO.
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -453,7 +453,7 @@ class PersistableModelListViewDTO:
 
     @property
     def lifecycle_template(self):
-        """Gets the lifecycle_template of this PersistableModelListViewDTO.
+        r"""Gets the lifecycle_template of this PersistableModelListViewDTO.
 
         :return: The lifecycle_template of this PersistableModelListViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -462,7 +462,7 @@ class PersistableModelListViewDTO:
 
     @lifecycle_template.setter
     def lifecycle_template(self, lifecycle_template):
-        """Sets the lifecycle_template of this PersistableModelListViewDTO.
+        r"""Sets the lifecycle_template of this PersistableModelListViewDTO.
 
         :param lifecycle_template: The lifecycle_template of this PersistableModelListViewDTO.
         :type lifecycle_template: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -471,7 +471,7 @@ class PersistableModelListViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this PersistableModelListViewDTO.
+        r"""Gets the modifier of this PersistableModelListViewDTO.
 
         **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -482,7 +482,7 @@ class PersistableModelListViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this PersistableModelListViewDTO.
+        r"""Sets the modifier of this PersistableModelListViewDTO.
 
         **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -493,7 +493,7 @@ class PersistableModelListViewDTO:
 
     @property
     def owner(self):
-        """Gets the owner of this PersistableModelListViewDTO.
+        r"""Gets the owner of this PersistableModelListViewDTO.
 
         **参数解释：**  拥有者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -504,7 +504,7 @@ class PersistableModelListViewDTO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PersistableModelListViewDTO.
+        r"""Sets the owner of this PersistableModelListViewDTO.
 
         **参数解释：**  拥有者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -515,7 +515,7 @@ class PersistableModelListViewDTO:
 
     @property
     def parent_node(self):
-        """Gets the parent_node of this PersistableModelListViewDTO.
+        r"""Gets the parent_node of this PersistableModelListViewDTO.
 
         :return: The parent_node of this PersistableModelListViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -524,7 +524,7 @@ class PersistableModelListViewDTO:
 
     @parent_node.setter
     def parent_node(self, parent_node):
-        """Sets the parent_node of this PersistableModelListViewDTO.
+        r"""Sets the parent_node of this PersistableModelListViewDTO.
 
         :param parent_node: The parent_node of this PersistableModelListViewDTO.
         :type parent_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -533,7 +533,7 @@ class PersistableModelListViewDTO:
 
     @property
     def raw_full_path(self):
-        """Gets the raw_full_path of this PersistableModelListViewDTO.
+        r"""Gets the raw_full_path of this PersistableModelListViewDTO.
 
         **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -544,7 +544,7 @@ class PersistableModelListViewDTO:
 
     @raw_full_path.setter
     def raw_full_path(self, raw_full_path):
-        """Sets the raw_full_path of this PersistableModelListViewDTO.
+        r"""Sets the raw_full_path of this PersistableModelListViewDTO.
 
         **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -555,7 +555,7 @@ class PersistableModelListViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this PersistableModelListViewDTO.
+        r"""Gets the rdm_delete_flag of this PersistableModelListViewDTO.
 
         **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -566,7 +566,7 @@ class PersistableModelListViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this PersistableModelListViewDTO.
+        r"""Sets the rdm_delete_flag of this PersistableModelListViewDTO.
 
         **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -577,7 +577,7 @@ class PersistableModelListViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this PersistableModelListViewDTO.
+        r"""Gets the rdm_extension_type of this PersistableModelListViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -588,7 +588,7 @@ class PersistableModelListViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this PersistableModelListViewDTO.
+        r"""Sets the rdm_extension_type of this PersistableModelListViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -599,7 +599,7 @@ class PersistableModelListViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this PersistableModelListViewDTO.
+        r"""Gets the rdm_version of this PersistableModelListViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -610,7 +610,7 @@ class PersistableModelListViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this PersistableModelListViewDTO.
+        r"""Sets the rdm_version of this PersistableModelListViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -621,7 +621,7 @@ class PersistableModelListViewDTO:
 
     @property
     def root_node(self):
-        """Gets the root_node of this PersistableModelListViewDTO.
+        r"""Gets the root_node of this PersistableModelListViewDTO.
 
         :return: The root_node of this PersistableModelListViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -630,7 +630,7 @@ class PersistableModelListViewDTO:
 
     @root_node.setter
     def root_node(self, root_node):
-        """Sets the root_node of this PersistableModelListViewDTO.
+        r"""Sets the root_node of this PersistableModelListViewDTO.
 
         :param root_node: The root_node of this PersistableModelListViewDTO.
         :type root_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -639,7 +639,7 @@ class PersistableModelListViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this PersistableModelListViewDTO.
+        r"""Gets the tenant of this PersistableModelListViewDTO.
 
         :return: The tenant of this PersistableModelListViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -648,7 +648,7 @@ class PersistableModelListViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this PersistableModelListViewDTO.
+        r"""Sets the tenant of this PersistableModelListViewDTO.
 
         :param tenant: The tenant of this PersistableModelListViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
@@ -657,7 +657,7 @@ class PersistableModelListViewDTO:
 
     @property
     def unique_key(self):
-        """Gets the unique_key of this PersistableModelListViewDTO.
+        r"""Gets the unique_key of this PersistableModelListViewDTO.
 
         **参数解释：**  示例模型的唯一键约束属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -668,7 +668,7 @@ class PersistableModelListViewDTO:
 
     @unique_key.setter
     def unique_key(self, unique_key):
-        """Sets the unique_key of this PersistableModelListViewDTO.
+        r"""Sets the unique_key of this PersistableModelListViewDTO.
 
         **参数解释：**  示例模型的唯一键约束属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

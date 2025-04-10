@@ -29,7 +29,7 @@ class CreateConnectorReq:
     }
 
     def __init__(self, specification=None, node_cnt=None, spec_code=None):
-        """CreateConnectorReq
+        r"""CreateConnectorReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateConnectorReq:
 
     @property
     def specification(self):
-        """Gets the specification of this CreateConnectorReq.
+        r"""Gets the specification of this CreateConnectorReq.
 
         部署Smart Connect的规格，基准带宽，表示单位时间内传送的最大数据量。请保持和当前实例规格一致。仅老规格实例需要填写。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
 
@@ -68,7 +68,7 @@ class CreateConnectorReq:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this CreateConnectorReq.
+        r"""Sets the specification of this CreateConnectorReq.
 
         部署Smart Connect的规格，基准带宽，表示单位时间内传送的最大数据量。请保持和当前实例规格一致。仅老规格实例需要填写。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
 
@@ -79,7 +79,7 @@ class CreateConnectorReq:
 
     @property
     def node_cnt(self):
-        """Gets the node_cnt of this CreateConnectorReq.
+        r"""Gets the node_cnt of this CreateConnectorReq.
 
         Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
 
@@ -90,7 +90,7 @@ class CreateConnectorReq:
 
     @node_cnt.setter
     def node_cnt(self, node_cnt):
-        """Sets the node_cnt of this CreateConnectorReq.
+        r"""Sets the node_cnt of this CreateConnectorReq.
 
         Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
 
@@ -101,7 +101,7 @@ class CreateConnectorReq:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateConnectorReq.
+        r"""Gets the spec_code of this CreateConnectorReq.
 
         转储节点规格编码。仅老规格实例需要填写。 
 
@@ -112,7 +112,7 @@ class CreateConnectorReq:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateConnectorReq.
+        r"""Sets the spec_code of this CreateConnectorReq.
 
         转储节点规格编码。仅老规格实例需要填写。 
 

@@ -25,7 +25,7 @@ class ShowSynthesisTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowSynthesisTaskResultRequest
+        r"""ShowSynthesisTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSynthesisTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSynthesisTaskResultRequest.
+        r"""Gets the task_id of this ShowSynthesisTaskResultRequest.
 
         分子合成路径规划任务ID
 
@@ -53,7 +53,7 @@ class ShowSynthesisTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSynthesisTaskResultRequest.
+        r"""Sets the task_id of this ShowSynthesisTaskResultRequest.
 
         分子合成路径规划任务ID
 

@@ -33,7 +33,7 @@ class ListWelcomeSpeechRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None, language=None):
-        """ListWelcomeSpeechRequest
+        r"""ListWelcomeSpeechRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListWelcomeSpeechRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListWelcomeSpeechRequest.
+        r"""Gets the x_app_user_id of this ListWelcomeSpeechRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -81,7 +81,7 @@ class ListWelcomeSpeechRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListWelcomeSpeechRequest.
+        r"""Sets the x_app_user_id of this ListWelcomeSpeechRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -92,7 +92,7 @@ class ListWelcomeSpeechRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWelcomeSpeechRequest.
+        r"""Gets the offset of this ListWelcomeSpeechRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -103,7 +103,7 @@ class ListWelcomeSpeechRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWelcomeSpeechRequest.
+        r"""Sets the offset of this ListWelcomeSpeechRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -114,7 +114,7 @@ class ListWelcomeSpeechRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWelcomeSpeechRequest.
+        r"""Gets the limit of this ListWelcomeSpeechRequest.
 
         每页显示的条目数量。
 
@@ -125,7 +125,7 @@ class ListWelcomeSpeechRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWelcomeSpeechRequest.
+        r"""Sets the limit of this ListWelcomeSpeechRequest.
 
         每页显示的条目数量。
 
@@ -136,7 +136,7 @@ class ListWelcomeSpeechRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ListWelcomeSpeechRequest.
+        r"""Gets the robot_id of this ListWelcomeSpeechRequest.
 
         应用ID。
 
@@ -147,7 +147,7 @@ class ListWelcomeSpeechRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ListWelcomeSpeechRequest.
+        r"""Sets the robot_id of this ListWelcomeSpeechRequest.
 
         应用ID。
 
@@ -158,7 +158,7 @@ class ListWelcomeSpeechRequest:
 
     @property
     def language(self):
-        """Gets the language of this ListWelcomeSpeechRequest.
+        r"""Gets the language of this ListWelcomeSpeechRequest.
 
         智能交互语言  * CN:中文  * EN:英文
 
@@ -169,7 +169,7 @@ class ListWelcomeSpeechRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ListWelcomeSpeechRequest.
+        r"""Sets the language of this ListWelcomeSpeechRequest.
 
         智能交互语言  * CN:中文  * EN:英文
 

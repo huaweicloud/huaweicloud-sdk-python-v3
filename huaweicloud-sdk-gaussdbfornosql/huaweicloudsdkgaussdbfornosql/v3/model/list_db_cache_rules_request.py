@@ -37,7 +37,7 @@ class ListDbCacheRulesRequest:
     }
 
     def __init__(self, dbcache_mapping_id=None, rule_id=None, rule_name=None, source_db_schema=None, source_db_table=None, offset=None, limit=None):
-        """ListDbCacheRulesRequest
+        r"""ListDbCacheRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def dbcache_mapping_id(self):
-        """Gets the dbcache_mapping_id of this ListDbCacheRulesRequest.
+        r"""Gets the dbcache_mapping_id of this ListDbCacheRulesRequest.
 
         内存加速映射ID。
 
@@ -95,7 +95,7 @@ class ListDbCacheRulesRequest:
 
     @dbcache_mapping_id.setter
     def dbcache_mapping_id(self, dbcache_mapping_id):
-        """Sets the dbcache_mapping_id of this ListDbCacheRulesRequest.
+        r"""Sets the dbcache_mapping_id of this ListDbCacheRulesRequest.
 
         内存加速映射ID。
 
@@ -106,7 +106,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ListDbCacheRulesRequest.
+        r"""Gets the rule_id of this ListDbCacheRulesRequest.
 
         内存加速规则ID。
 
@@ -117,7 +117,7 @@ class ListDbCacheRulesRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ListDbCacheRulesRequest.
+        r"""Sets the rule_id of this ListDbCacheRulesRequest.
 
         内存加速规则ID。
 
@@ -128,7 +128,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ListDbCacheRulesRequest.
+        r"""Gets the rule_name of this ListDbCacheRulesRequest.
 
         内存加速规则名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -139,7 +139,7 @@ class ListDbCacheRulesRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ListDbCacheRulesRequest.
+        r"""Sets the rule_name of this ListDbCacheRulesRequest.
 
         内存加速规则名称。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -150,7 +150,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def source_db_schema(self):
-        """Gets the source_db_schema of this ListDbCacheRulesRequest.
+        r"""Gets the source_db_schema of this ListDbCacheRulesRequest.
 
         源端数据库名。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -161,7 +161,7 @@ class ListDbCacheRulesRequest:
 
     @source_db_schema.setter
     def source_db_schema(self, source_db_schema):
-        """Sets the source_db_schema of this ListDbCacheRulesRequest.
+        r"""Sets the source_db_schema of this ListDbCacheRulesRequest.
 
         源端数据库名。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -172,7 +172,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def source_db_table(self):
-        """Gets the source_db_table of this ListDbCacheRulesRequest.
+        r"""Gets the source_db_table of this ListDbCacheRulesRequest.
 
         源端数据表名。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -183,7 +183,7 @@ class ListDbCacheRulesRequest:
 
     @source_db_table.setter
     def source_db_table(self, source_db_table):
-        """Sets the source_db_table of this ListDbCacheRulesRequest.
+        r"""Sets the source_db_table of this ListDbCacheRulesRequest.
 
         源端数据表名。名称以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的名称精确匹配查询。
 
@@ -194,7 +194,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDbCacheRulesRequest.
+        r"""Gets the offset of this ListDbCacheRulesRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -205,7 +205,7 @@ class ListDbCacheRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDbCacheRulesRequest.
+        r"""Sets the offset of this ListDbCacheRulesRequest.
 
         索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -216,7 +216,7 @@ class ListDbCacheRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDbCacheRulesRequest.
+        r"""Gets the limit of this ListDbCacheRulesRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
@@ -227,7 +227,7 @@ class ListDbCacheRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDbCacheRulesRequest.
+        r"""Sets the limit of this ListDbCacheRulesRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 

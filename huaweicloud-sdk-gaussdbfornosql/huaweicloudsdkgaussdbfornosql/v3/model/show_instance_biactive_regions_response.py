@@ -26,7 +26,7 @@ class ShowInstanceBiactiveRegionsResponse(SdkResponse):
     }
 
     def __init__(self, region_codes=None):
-        """ShowInstanceBiactiveRegionsResponse
+        r"""ShowInstanceBiactiveRegionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowInstanceBiactiveRegionsResponse(SdkResponse):
 
     @property
     def region_codes(self):
-        """Gets the region_codes of this ShowInstanceBiactiveRegionsResponse.
+        r"""Gets the region_codes of this ShowInstanceBiactiveRegionsResponse.
 
         :return: The region_codes of this ShowInstanceBiactiveRegionsResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ShowInstanceBiactiveRegionsResponse(SdkResponse):
 
     @region_codes.setter
     def region_codes(self, region_codes):
-        """Sets the region_codes of this ShowInstanceBiactiveRegionsResponse.
+        r"""Sets the region_codes of this ShowInstanceBiactiveRegionsResponse.
 
         :param region_codes: The region_codes of this ShowInstanceBiactiveRegionsResponse.
         :type region_codes: list[str]

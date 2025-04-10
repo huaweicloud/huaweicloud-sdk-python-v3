@@ -37,7 +37,7 @@ class ListAimSendReportsRequestBody:
     }
 
     def __init__(self, report_type=None, tpl_id=None, tpl_name=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ListAimSendReportsRequestBody
+        r"""ListAimSendReportsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def report_type(self):
-        """Gets the report_type of this ListAimSendReportsRequestBody.
+        r"""Gets the report_type of this ListAimSendReportsRequestBody.
 
         报表类型。  - 1：日报表 - 2：月报表  > 若不填，默认是1，即查询日报表。 
 
@@ -96,7 +96,7 @@ class ListAimSendReportsRequestBody:
 
     @report_type.setter
     def report_type(self, report_type):
-        """Sets the report_type of this ListAimSendReportsRequestBody.
+        r"""Sets the report_type of this ListAimSendReportsRequestBody.
 
         报表类型。  - 1：日报表 - 2：月报表  > 若不填，默认是1，即查询日报表。 
 
@@ -107,7 +107,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListAimSendReportsRequestBody.
+        r"""Gets the tpl_id of this ListAimSendReportsRequestBody.
 
         智能信息模板ID。
 
@@ -118,7 +118,7 @@ class ListAimSendReportsRequestBody:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListAimSendReportsRequestBody.
+        r"""Sets the tpl_id of this ListAimSendReportsRequestBody.
 
         智能信息模板ID。
 
@@ -129,7 +129,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListAimSendReportsRequestBody.
+        r"""Gets the tpl_name of this ListAimSendReportsRequestBody.
 
         智能信息模板名称。
 
@@ -140,7 +140,7 @@ class ListAimSendReportsRequestBody:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListAimSendReportsRequestBody.
+        r"""Sets the tpl_name of this ListAimSendReportsRequestBody.
 
         智能信息模板名称。
 
@@ -151,7 +151,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimSendReportsRequestBody.
+        r"""Gets the begin_time of this ListAimSendReportsRequestBody.
 
         开始时间。格式为：2022-05-01T00:00:00Z。
 
@@ -162,7 +162,7 @@ class ListAimSendReportsRequestBody:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimSendReportsRequestBody.
+        r"""Sets the begin_time of this ListAimSendReportsRequestBody.
 
         开始时间。格式为：2022-05-01T00:00:00Z。
 
@@ -173,7 +173,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimSendReportsRequestBody.
+        r"""Gets the end_time of this ListAimSendReportsRequestBody.
 
         结束时间。格式为：2022-05-01T00:00:00Z。
 
@@ -184,7 +184,7 @@ class ListAimSendReportsRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimSendReportsRequestBody.
+        r"""Sets the end_time of this ListAimSendReportsRequestBody.
 
         结束时间。格式为：2022-05-01T00:00:00Z。
 
@@ -195,7 +195,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimSendReportsRequestBody.
+        r"""Gets the offset of this ListAimSendReportsRequestBody.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  > 为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -206,7 +206,7 @@ class ListAimSendReportsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimSendReportsRequestBody.
+        r"""Sets the offset of this ListAimSendReportsRequestBody.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  > 为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -217,7 +217,7 @@ class ListAimSendReportsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimSendReportsRequestBody.
+        r"""Gets the limit of this ListAimSendReportsRequestBody.
 
         每页显示的条目数量。 
 
@@ -228,7 +228,7 @@ class ListAimSendReportsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimSendReportsRequestBody.
+        r"""Sets the limit of this ListAimSendReportsRequestBody.
 
         每页显示的条目数量。 
 

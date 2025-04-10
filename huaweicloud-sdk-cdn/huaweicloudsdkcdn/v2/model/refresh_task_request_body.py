@@ -31,7 +31,7 @@ class RefreshTaskRequestBody:
     }
 
     def __init__(self, type=None, mode=None, zh_url_encode=None, urls=None):
-        """RefreshTaskRequestBody
+        r"""RefreshTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class RefreshTaskRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this RefreshTaskRequestBody.
+        r"""Gets the type of this RefreshTaskRequestBody.
 
         刷新的类型，其值可以为file：文件，或directory：目录，默认为file。
 
@@ -74,7 +74,7 @@ class RefreshTaskRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RefreshTaskRequestBody.
+        r"""Sets the type of this RefreshTaskRequestBody.
 
         刷新的类型，其值可以为file：文件，或directory：目录，默认为file。
 
@@ -85,7 +85,7 @@ class RefreshTaskRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this RefreshTaskRequestBody.
+        r"""Gets the mode of this RefreshTaskRequestBody.
 
         目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
 
@@ -96,7 +96,7 @@ class RefreshTaskRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RefreshTaskRequestBody.
+        r"""Sets the mode of this RefreshTaskRequestBody.
 
         目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
 
@@ -107,7 +107,7 @@ class RefreshTaskRequestBody:
 
     @property
     def zh_url_encode(self):
-        """Gets the zh_url_encode of this RefreshTaskRequestBody.
+        r"""Gets the zh_url_encode of this RefreshTaskRequestBody.
 
         是否对url中的中文字符进行编码后刷新，false代表不开启，true代表开启，开启后仅刷新转码后的URL。
 
@@ -118,7 +118,7 @@ class RefreshTaskRequestBody:
 
     @zh_url_encode.setter
     def zh_url_encode(self, zh_url_encode):
-        """Sets the zh_url_encode of this RefreshTaskRequestBody.
+        r"""Sets the zh_url_encode of this RefreshTaskRequestBody.
 
         是否对url中的中文字符进行编码后刷新，false代表不开启，true代表开启，开启后仅刷新转码后的URL。
 
@@ -129,7 +129,7 @@ class RefreshTaskRequestBody:
 
     @property
     def urls(self):
-        """Gets the urls of this RefreshTaskRequestBody.
+        r"""Gets the urls of this RefreshTaskRequestBody.
 
         需要刷新的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\", \"url2\"），单个url的长度限制为4096字符，单次最多输入1000个url，如果输入的是目录，支持100个目录刷新。   > - 如果您需要刷新的URL中有中文，请同时刷新中文URL（输入中文URL且不开启zh_url_encode）和转码后的URL（输入中文URL且开启zh_url_encode）。   > - 如果您的URL中带有空格，请自行转码后输入，且不要开启URL Encode。 
 
@@ -140,7 +140,7 @@ class RefreshTaskRequestBody:
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this RefreshTaskRequestBody.
+        r"""Sets the urls of this RefreshTaskRequestBody.
 
         需要刷新的URL必须带有“http://”或“https://”，多个URL用逗号分隔（\"url1\", \"url2\"），单个url的长度限制为4096字符，单次最多输入1000个url，如果输入的是目录，支持100个目录刷新。   > - 如果您需要刷新的URL中有中文，请同时刷新中文URL（输入中文URL且不开启zh_url_encode）和转码后的URL（输入中文URL且开启zh_url_encode）。   > - 如果您的URL中带有空格，请自行转码后输入，且不要开启URL Encode。 
 

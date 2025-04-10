@@ -29,7 +29,7 @@ class FileTreeNode:
     }
 
     def __init__(self, file_path=None, file_name=None, file_type=None):
-        """FileTreeNode
+        r"""FileTreeNode
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FileTreeNode:
 
     @property
     def file_path(self):
-        """Gets the file_path of this FileTreeNode.
+        r"""Gets the file_path of this FileTreeNode.
 
         文件路径
 
@@ -68,7 +68,7 @@ class FileTreeNode:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this FileTreeNode.
+        r"""Sets the file_path of this FileTreeNode.
 
         文件路径
 
@@ -79,7 +79,7 @@ class FileTreeNode:
 
     @property
     def file_name(self):
-        """Gets the file_name of this FileTreeNode.
+        r"""Gets the file_name of this FileTreeNode.
 
         文件名称
 
@@ -90,7 +90,7 @@ class FileTreeNode:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this FileTreeNode.
+        r"""Sets the file_name of this FileTreeNode.
 
         文件名称
 
@@ -101,7 +101,7 @@ class FileTreeNode:
 
     @property
     def file_type(self):
-        """Gets the file_type of this FileTreeNode.
+        r"""Gets the file_type of this FileTreeNode.
 
         是否文件夹
 
@@ -112,7 +112,7 @@ class FileTreeNode:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this FileTreeNode.
+        r"""Sets the file_type of this FileTreeNode.
 
         是否文件夹
 

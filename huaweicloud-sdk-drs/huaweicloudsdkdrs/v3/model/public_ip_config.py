@@ -29,7 +29,7 @@ class PublicIpConfig:
     }
 
     def __init__(self, id=None, public_ip=None, type=None):
-        """PublicIpConfig
+        r"""PublicIpConfig
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PublicIpConfig:
 
     @property
     def id(self):
-        """Gets the id of this PublicIpConfig.
+        r"""Gets the id of this PublicIpConfig.
 
         指定公网IP的ID
 
@@ -65,7 +65,7 @@ class PublicIpConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicIpConfig.
+        r"""Sets the id of this PublicIpConfig.
 
         指定公网IP的ID
 
@@ -76,7 +76,7 @@ class PublicIpConfig:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this PublicIpConfig.
+        r"""Gets the public_ip of this PublicIpConfig.
 
         指定公网IP
 
@@ -87,7 +87,7 @@ class PublicIpConfig:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this PublicIpConfig.
+        r"""Sets the public_ip of this PublicIpConfig.
 
         指定公网IP
 
@@ -98,7 +98,7 @@ class PublicIpConfig:
 
     @property
     def type(self):
-        """Gets the type of this PublicIpConfig.
+        r"""Gets the type of this PublicIpConfig.
 
         指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定传master
 
@@ -109,7 +109,7 @@ class PublicIpConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicIpConfig.
+        r"""Sets the type of this PublicIpConfig.
 
         指定公网IP绑定任务的类型： - 主备任务：主是master，备是slave - 其他固定传master
 

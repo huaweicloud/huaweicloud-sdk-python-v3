@@ -43,7 +43,7 @@ class PrivateSnat:
     }
 
     def __init__(self, id=None, project_id=None, gateway_id=None, cidr=None, virsubnet_id=None, description=None, transit_ip_associations=None, created_at=None, updated_at=None, enterprise_project_id=None):
-        """PrivateSnat
+        r"""PrivateSnat
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PrivateSnat:
 
     @property
     def id(self):
-        """Gets the id of this PrivateSnat.
+        r"""Gets the id of this PrivateSnat.
 
         SNAT规则的ID。
 
@@ -117,7 +117,7 @@ class PrivateSnat:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrivateSnat.
+        r"""Sets the id of this PrivateSnat.
 
         SNAT规则的ID。
 
@@ -128,7 +128,7 @@ class PrivateSnat:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PrivateSnat.
+        r"""Gets the project_id of this PrivateSnat.
 
         项目的ID。
 
@@ -139,7 +139,7 @@ class PrivateSnat:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PrivateSnat.
+        r"""Sets the project_id of this PrivateSnat.
 
         项目的ID。
 
@@ -150,7 +150,7 @@ class PrivateSnat:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this PrivateSnat.
+        r"""Gets the gateway_id of this PrivateSnat.
 
         私网NAT网关实例的ID。
 
@@ -161,7 +161,7 @@ class PrivateSnat:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this PrivateSnat.
+        r"""Sets the gateway_id of this PrivateSnat.
 
         私网NAT网关实例的ID。
 
@@ -172,7 +172,7 @@ class PrivateSnat:
 
     @property
     def cidr(self):
-        """Gets the cidr of this PrivateSnat.
+        r"""Gets the cidr of this PrivateSnat.
 
         功能说明：规则匹配的CIDR。 取值约束： - 与virsubnet_id参数二选一。 - cidr不能与已有snat规则的网段相同。
 
@@ -183,7 +183,7 @@ class PrivateSnat:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this PrivateSnat.
+        r"""Sets the cidr of this PrivateSnat.
 
         功能说明：规则匹配的CIDR。 取值约束： - 与virsubnet_id参数二选一。 - cidr不能与已有snat规则的网段相同。
 
@@ -194,7 +194,7 @@ class PrivateSnat:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this PrivateSnat.
+        r"""Gets the virsubnet_id of this PrivateSnat.
 
         功能说明：规则匹配的子网的ID。 取值约束：与cidr参数二选一。
 
@@ -205,7 +205,7 @@ class PrivateSnat:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this PrivateSnat.
+        r"""Sets the virsubnet_id of this PrivateSnat.
 
         功能说明：规则匹配的子网的ID。 取值约束：与cidr参数二选一。
 
@@ -216,7 +216,7 @@ class PrivateSnat:
 
     @property
     def description(self):
-        """Gets the description of this PrivateSnat.
+        r"""Gets the description of this PrivateSnat.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -227,7 +227,7 @@ class PrivateSnat:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PrivateSnat.
+        r"""Sets the description of this PrivateSnat.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -238,7 +238,7 @@ class PrivateSnat:
 
     @property
     def transit_ip_associations(self):
-        """Gets the transit_ip_associations of this PrivateSnat.
+        r"""Gets the transit_ip_associations of this PrivateSnat.
 
         关联的中转IP详情列表。
 
@@ -249,7 +249,7 @@ class PrivateSnat:
 
     @transit_ip_associations.setter
     def transit_ip_associations(self, transit_ip_associations):
-        """Sets the transit_ip_associations of this PrivateSnat.
+        r"""Sets the transit_ip_associations of this PrivateSnat.
 
         关联的中转IP详情列表。
 
@@ -260,7 +260,7 @@ class PrivateSnat:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PrivateSnat.
+        r"""Gets the created_at of this PrivateSnat.
 
         SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -271,7 +271,7 @@ class PrivateSnat:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PrivateSnat.
+        r"""Sets the created_at of this PrivateSnat.
 
         SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -282,7 +282,7 @@ class PrivateSnat:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PrivateSnat.
+        r"""Gets the updated_at of this PrivateSnat.
 
         SNAT规则的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -293,7 +293,7 @@ class PrivateSnat:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PrivateSnat.
+        r"""Sets the updated_at of this PrivateSnat.
 
         SNAT规则的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
@@ -304,7 +304,7 @@ class PrivateSnat:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PrivateSnat.
+        r"""Gets the enterprise_project_id of this PrivateSnat.
 
         企业项目id
 
@@ -315,7 +315,7 @@ class PrivateSnat:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PrivateSnat.
+        r"""Sets the enterprise_project_id of this PrivateSnat.
 
         企业项目id
 

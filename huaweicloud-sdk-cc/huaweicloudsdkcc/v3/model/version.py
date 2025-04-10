@@ -25,7 +25,7 @@ class Version:
     }
 
     def __init__(self, version=None):
-        """Version
+        r"""Version
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Version:
 
     @property
     def version(self):
-        """Gets the version of this Version.
+        r"""Gets the version of this Version.
 
         版本标识符
 
@@ -53,7 +53,7 @@ class Version:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Version.
+        r"""Sets the version of this Version.
 
         版本标识符
 

@@ -29,7 +29,7 @@ class DeleteDeviceFromGroupRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, group_id=None):
-        """DeleteDeviceFromGroupRequest
+        r"""DeleteDeviceFromGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteDeviceFromGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDeviceFromGroupRequest.
+        r"""Gets the instance_id of this DeleteDeviceFromGroupRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteDeviceFromGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDeviceFromGroupRequest.
+        r"""Sets the instance_id of this DeleteDeviceFromGroupRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteDeviceFromGroupRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DeleteDeviceFromGroupRequest.
+        r"""Gets the device_id of this DeleteDeviceFromGroupRequest.
 
         设备ID
 
@@ -87,7 +87,7 @@ class DeleteDeviceFromGroupRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DeleteDeviceFromGroupRequest.
+        r"""Sets the device_id of this DeleteDeviceFromGroupRequest.
 
         设备ID
 
@@ -98,7 +98,7 @@ class DeleteDeviceFromGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteDeviceFromGroupRequest.
+        r"""Gets the group_id of this DeleteDeviceFromGroupRequest.
 
         设备分组ID
 
@@ -109,7 +109,7 @@ class DeleteDeviceFromGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteDeviceFromGroupRequest.
+        r"""Sets the group_id of this DeleteDeviceFromGroupRequest.
 
         设备分组ID
 

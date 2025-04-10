@@ -29,7 +29,7 @@ class TagOperationDTO:
     }
 
     def __init__(self, object_id=None, tag_id=None, modifier=None):
-        """TagOperationDTO
+        r"""TagOperationDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TagOperationDTO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this TagOperationDTO.
+        r"""Gets the object_id of this TagOperationDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class TagOperationDTO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this TagOperationDTO.
+        r"""Sets the object_id of this TagOperationDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class TagOperationDTO:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this TagOperationDTO.
+        r"""Gets the tag_id of this TagOperationDTO.
 
         **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class TagOperationDTO:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this TagOperationDTO.
+        r"""Sets the tag_id of this TagOperationDTO.
 
         **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class TagOperationDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this TagOperationDTO.
+        r"""Gets the modifier of this TagOperationDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -110,7 +110,7 @@ class TagOperationDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this TagOperationDTO.
+        r"""Sets the modifier of this TagOperationDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

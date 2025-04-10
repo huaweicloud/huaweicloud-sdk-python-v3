@@ -37,7 +37,7 @@ class ListInterruptRecordsRequest:
     }
 
     def __init__(self, slo_id=None, offset=None, limit=None, source_id=None, region_id=None, start_time=None, end_time=None):
-        """ListInterruptRecordsRequest
+        r"""ListInterruptRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def slo_id(self):
-        """Gets the slo_id of this ListInterruptRecordsRequest.
+        r"""Gets the slo_id of this ListInterruptRecordsRequest.
 
         SLO的ID
 
@@ -95,7 +95,7 @@ class ListInterruptRecordsRequest:
 
     @slo_id.setter
     def slo_id(self, slo_id):
-        """Sets the slo_id of this ListInterruptRecordsRequest.
+        r"""Sets the slo_id of this ListInterruptRecordsRequest.
 
         SLO的ID
 
@@ -106,7 +106,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInterruptRecordsRequest.
+        r"""Gets the offset of this ListInterruptRecordsRequest.
 
         分页指针
 
@@ -117,7 +117,7 @@ class ListInterruptRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInterruptRecordsRequest.
+        r"""Sets the offset of this ListInterruptRecordsRequest.
 
         分页指针
 
@@ -128,7 +128,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInterruptRecordsRequest.
+        r"""Gets the limit of this ListInterruptRecordsRequest.
 
         每页数量
 
@@ -139,7 +139,7 @@ class ListInterruptRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInterruptRecordsRequest.
+        r"""Sets the limit of this ListInterruptRecordsRequest.
 
         每页数量
 
@@ -150,7 +150,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ListInterruptRecordsRequest.
+        r"""Gets the source_id of this ListInterruptRecordsRequest.
 
         资源ID
 
@@ -161,7 +161,7 @@ class ListInterruptRecordsRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ListInterruptRecordsRequest.
+        r"""Sets the source_id of this ListInterruptRecordsRequest.
 
         资源ID
 
@@ -172,7 +172,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListInterruptRecordsRequest.
+        r"""Gets the region_id of this ListInterruptRecordsRequest.
 
         regionId
 
@@ -183,7 +183,7 @@ class ListInterruptRecordsRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListInterruptRecordsRequest.
+        r"""Sets the region_id of this ListInterruptRecordsRequest.
 
         regionId
 
@@ -194,7 +194,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListInterruptRecordsRequest.
+        r"""Gets the start_time of this ListInterruptRecordsRequest.
 
         时间范围 - 开始时间
 
@@ -205,7 +205,7 @@ class ListInterruptRecordsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListInterruptRecordsRequest.
+        r"""Sets the start_time of this ListInterruptRecordsRequest.
 
         时间范围 - 开始时间
 
@@ -216,7 +216,7 @@ class ListInterruptRecordsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListInterruptRecordsRequest.
+        r"""Gets the end_time of this ListInterruptRecordsRequest.
 
         时间范围 - 结束时间
 
@@ -227,7 +227,7 @@ class ListInterruptRecordsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListInterruptRecordsRequest.
+        r"""Sets the end_time of this ListInterruptRecordsRequest.
 
         时间范围 - 结束时间
 

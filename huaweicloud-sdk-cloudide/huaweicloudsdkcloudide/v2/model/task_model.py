@@ -47,7 +47,7 @@ class TaskModel:
     }
 
     def __init__(self, docker_id=None, exception=None, generated_snippet=None, language=None, model_id=None, record_time=None, request_id=None, snippet=None, start_time=None, status=None, task_id=None, time_consuming=None):
-        """TaskModel
+        r"""TaskModel
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TaskModel:
 
     @property
     def docker_id(self):
-        """Gets the docker_id of this TaskModel.
+        r"""Gets the docker_id of this TaskModel.
 
         the docker_id
 
@@ -131,7 +131,7 @@ class TaskModel:
 
     @docker_id.setter
     def docker_id(self, docker_id):
-        """Sets the docker_id of this TaskModel.
+        r"""Sets the docker_id of this TaskModel.
 
         the docker_id
 
@@ -142,7 +142,7 @@ class TaskModel:
 
     @property
     def exception(self):
-        """Gets the exception of this TaskModel.
+        r"""Gets the exception of this TaskModel.
 
         exception
 
@@ -153,7 +153,7 @@ class TaskModel:
 
     @exception.setter
     def exception(self, exception):
-        """Sets the exception of this TaskModel.
+        r"""Sets the exception of this TaskModel.
 
         exception
 
@@ -164,7 +164,7 @@ class TaskModel:
 
     @property
     def generated_snippet(self):
-        """Gets the generated_snippet of this TaskModel.
+        r"""Gets the generated_snippet of this TaskModel.
 
         the generated_snippet
 
@@ -175,7 +175,7 @@ class TaskModel:
 
     @generated_snippet.setter
     def generated_snippet(self, generated_snippet):
-        """Sets the generated_snippet of this TaskModel.
+        r"""Sets the generated_snippet of this TaskModel.
 
         the generated_snippet
 
@@ -186,7 +186,7 @@ class TaskModel:
 
     @property
     def language(self):
-        """Gets the language of this TaskModel.
+        r"""Gets the language of this TaskModel.
 
         code language
 
@@ -197,7 +197,7 @@ class TaskModel:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this TaskModel.
+        r"""Sets the language of this TaskModel.
 
         code language
 
@@ -208,7 +208,7 @@ class TaskModel:
 
     @property
     def model_id(self):
-        """Gets the model_id of this TaskModel.
+        r"""Gets the model_id of this TaskModel.
 
         model_id
 
@@ -219,7 +219,7 @@ class TaskModel:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this TaskModel.
+        r"""Sets the model_id of this TaskModel.
 
         model_id
 
@@ -230,7 +230,7 @@ class TaskModel:
 
     @property
     def record_time(self):
-        """Gets the record_time of this TaskModel.
+        r"""Gets the record_time of this TaskModel.
 
         record_time
 
@@ -241,7 +241,7 @@ class TaskModel:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this TaskModel.
+        r"""Sets the record_time of this TaskModel.
 
         record_time
 
@@ -252,7 +252,7 @@ class TaskModel:
 
     @property
     def request_id(self):
-        """Gets the request_id of this TaskModel.
+        r"""Gets the request_id of this TaskModel.
 
         the unique id of request
 
@@ -263,7 +263,7 @@ class TaskModel:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this TaskModel.
+        r"""Sets the request_id of this TaskModel.
 
         the unique id of request
 
@@ -274,7 +274,7 @@ class TaskModel:
 
     @property
     def snippet(self):
-        """Gets the snippet of this TaskModel.
+        r"""Gets the snippet of this TaskModel.
 
         the snippet of code
 
@@ -285,7 +285,7 @@ class TaskModel:
 
     @snippet.setter
     def snippet(self, snippet):
-        """Sets the snippet of this TaskModel.
+        r"""Sets the snippet of this TaskModel.
 
         the snippet of code
 
@@ -296,7 +296,7 @@ class TaskModel:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskModel.
+        r"""Gets the start_time of this TaskModel.
 
         start_time
 
@@ -307,7 +307,7 @@ class TaskModel:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskModel.
+        r"""Sets the start_time of this TaskModel.
 
         start_time
 
@@ -318,7 +318,7 @@ class TaskModel:
 
     @property
     def status(self):
-        """Gets the status of this TaskModel.
+        r"""Gets the status of this TaskModel.
 
         status
 
@@ -329,7 +329,7 @@ class TaskModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskModel.
+        r"""Sets the status of this TaskModel.
 
         status
 
@@ -340,7 +340,7 @@ class TaskModel:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskModel.
+        r"""Gets the task_id of this TaskModel.
 
         task_id
 
@@ -351,7 +351,7 @@ class TaskModel:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskModel.
+        r"""Sets the task_id of this TaskModel.
 
         task_id
 
@@ -362,7 +362,7 @@ class TaskModel:
 
     @property
     def time_consuming(self):
-        """Gets the time_consuming of this TaskModel.
+        r"""Gets the time_consuming of this TaskModel.
 
         the time_consuming
 
@@ -373,7 +373,7 @@ class TaskModel:
 
     @time_consuming.setter
     def time_consuming(self, time_consuming):
-        """Sets the time_consuming of this TaskModel.
+        r"""Sets the time_consuming of this TaskModel.
 
         the time_consuming
 

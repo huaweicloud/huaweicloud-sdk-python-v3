@@ -27,7 +27,7 @@ class CandidatesUser:
     }
 
     def __init__(self, name=None, id=None):
-        """CandidatesUser
+        r"""CandidatesUser
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CandidatesUser:
 
     @property
     def name(self):
-        """Gets the name of this CandidatesUser.
+        r"""Gets the name of this CandidatesUser.
 
         用户名称
 
@@ -61,7 +61,7 @@ class CandidatesUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CandidatesUser.
+        r"""Sets the name of this CandidatesUser.
 
         用户名称
 
@@ -72,7 +72,7 @@ class CandidatesUser:
 
     @property
     def id(self):
-        """Gets the id of this CandidatesUser.
+        r"""Gets the id of this CandidatesUser.
 
         用户ID
 
@@ -83,7 +83,7 @@ class CandidatesUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CandidatesUser.
+        r"""Sets the id of this CandidatesUser.
 
         用户ID
 

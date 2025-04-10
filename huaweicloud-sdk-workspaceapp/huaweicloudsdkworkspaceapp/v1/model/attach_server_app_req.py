@@ -25,7 +25,7 @@ class AttachServerAppReq:
     }
 
     def __init__(self, items=None):
-        """AttachServerAppReq
+        r"""AttachServerAppReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachServerAppReq:
 
     @property
     def items(self):
-        """Gets the items of this AttachServerAppReq.
+        r"""Gets the items of this AttachServerAppReq.
 
         云应用仓库软件唯一标识请求列表。
 
@@ -53,7 +53,7 @@ class AttachServerAppReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this AttachServerAppReq.
+        r"""Sets the items of this AttachServerAppReq.
 
         云应用仓库软件唯一标识请求列表。
 

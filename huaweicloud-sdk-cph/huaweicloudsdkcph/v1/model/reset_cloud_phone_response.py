@@ -28,7 +28,7 @@ class ResetCloudPhoneResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """ResetCloudPhoneResponse
+        r"""ResetCloudPhoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResetCloudPhoneResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ResetCloudPhoneResponse.
+        r"""Gets the request_id of this ResetCloudPhoneResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ResetCloudPhoneResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ResetCloudPhoneResponse.
+        r"""Sets the request_id of this ResetCloudPhoneResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ResetCloudPhoneResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ResetCloudPhoneResponse.
+        r"""Gets the jobs of this ResetCloudPhoneResponse.
 
         任务信息。
 
@@ -84,7 +84,7 @@ class ResetCloudPhoneResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ResetCloudPhoneResponse.
+        r"""Sets the jobs of this ResetCloudPhoneResponse.
 
         任务信息。
 

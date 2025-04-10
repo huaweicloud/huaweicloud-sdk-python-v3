@@ -26,7 +26,7 @@ class CreateAccessKeyV5Response(SdkResponse):
     }
 
     def __init__(self, access_key=None):
-        """CreateAccessKeyV5Response
+        r"""CreateAccessKeyV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAccessKeyV5Response(SdkResponse):
 
     @property
     def access_key(self):
-        """Gets the access_key of this CreateAccessKeyV5Response.
+        r"""Gets the access_key of this CreateAccessKeyV5Response.
 
         :return: The access_key of this CreateAccessKeyV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.AccessKey`
@@ -53,7 +53,7 @@ class CreateAccessKeyV5Response(SdkResponse):
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this CreateAccessKeyV5Response.
+        r"""Sets the access_key of this CreateAccessKeyV5Response.
 
         :param access_key: The access_key of this CreateAccessKeyV5Response.
         :type access_key: :class:`huaweicloudsdkiam.v5.AccessKey`

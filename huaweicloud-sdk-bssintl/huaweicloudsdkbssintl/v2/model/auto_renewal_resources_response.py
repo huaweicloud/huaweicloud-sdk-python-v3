@@ -24,7 +24,7 @@ class AutoRenewalResourcesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AutoRenewalResourcesResponse
+        r"""AutoRenewalResourcesResponse
 
         The model defined in huaweicloud sdk
 

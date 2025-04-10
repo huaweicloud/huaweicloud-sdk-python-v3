@@ -51,7 +51,7 @@ class PreviewAgencyLogAccessReqBody:
     }
 
     def __init__(self, agency_access_type=None, agency_log_access=None, log_agency_stream_name=None, log_agency_stream_id=None, log_agency_group_name=None, log_agency_group_id=None, log_be_agencystream_name=None, log_be_agencystream_id=None, log_be_agencygroup_name=None, log_be_agencygroup_id=None, be_agency_project_id=None, agency_project_id=None, agency_domain_name=None, agency_name=None):
-        """PreviewAgencyLogAccessReqBody
+        r"""PreviewAgencyLogAccessReqBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def agency_access_type(self):
-        """Gets the agency_access_type of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the agency_access_type of this PreviewAgencyLogAccessReqBody.
 
         日志访问类型
 
@@ -131,7 +131,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @agency_access_type.setter
     def agency_access_type(self, agency_access_type):
-        """Sets the agency_access_type of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the agency_access_type of this PreviewAgencyLogAccessReqBody.
 
         日志访问类型
 
@@ -142,7 +142,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def agency_log_access(self):
-        """Gets the agency_log_access of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the agency_log_access of this PreviewAgencyLogAccessReqBody.
 
         跨账号日志接入配置名称
 
@@ -153,7 +153,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @agency_log_access.setter
     def agency_log_access(self, agency_log_access):
-        """Sets the agency_log_access of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the agency_log_access of this PreviewAgencyLogAccessReqBody.
 
         跨账号日志接入配置名称
 
@@ -164,7 +164,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_agency_stream_name(self):
-        """Gets the log_agency_stream_name of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_agency_stream_name of this PreviewAgencyLogAccessReqBody.
 
         委托日志流名称
 
@@ -175,7 +175,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_agency_stream_name.setter
     def log_agency_stream_name(self, log_agency_stream_name):
-        """Sets the log_agency_stream_name of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_agency_stream_name of this PreviewAgencyLogAccessReqBody.
 
         委托日志流名称
 
@@ -186,7 +186,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_agency_stream_id(self):
-        """Gets the log_agency_stream_id of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_agency_stream_id of this PreviewAgencyLogAccessReqBody.
 
         委托日志流id
 
@@ -197,7 +197,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_agency_stream_id.setter
     def log_agency_stream_id(self, log_agency_stream_id):
-        """Sets the log_agency_stream_id of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_agency_stream_id of this PreviewAgencyLogAccessReqBody.
 
         委托日志流id
 
@@ -208,7 +208,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_agency_group_name(self):
-        """Gets the log_agency_group_name of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_agency_group_name of this PreviewAgencyLogAccessReqBody.
 
         委托日志组名称
 
@@ -219,7 +219,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_agency_group_name.setter
     def log_agency_group_name(self, log_agency_group_name):
-        """Sets the log_agency_group_name of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_agency_group_name of this PreviewAgencyLogAccessReqBody.
 
         委托日志组名称
 
@@ -230,7 +230,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_agency_group_id(self):
-        """Gets the log_agency_group_id of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_agency_group_id of this PreviewAgencyLogAccessReqBody.
 
         委托日志组id
 
@@ -241,7 +241,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_agency_group_id.setter
     def log_agency_group_id(self, log_agency_group_id):
-        """Sets the log_agency_group_id of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_agency_group_id of this PreviewAgencyLogAccessReqBody.
 
         委托日志组id
 
@@ -252,7 +252,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_be_agencystream_name(self):
-        """Gets the log_be_agencystream_name of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_be_agencystream_name of this PreviewAgencyLogAccessReqBody.
 
         被委托日志流名称
 
@@ -263,7 +263,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_be_agencystream_name.setter
     def log_be_agencystream_name(self, log_be_agencystream_name):
-        """Sets the log_be_agencystream_name of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_be_agencystream_name of this PreviewAgencyLogAccessReqBody.
 
         被委托日志流名称
 
@@ -274,7 +274,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_be_agencystream_id(self):
-        """Gets the log_be_agencystream_id of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_be_agencystream_id of this PreviewAgencyLogAccessReqBody.
 
         被委托日志流id
 
@@ -285,7 +285,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_be_agencystream_id.setter
     def log_be_agencystream_id(self, log_be_agencystream_id):
-        """Sets the log_be_agencystream_id of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_be_agencystream_id of this PreviewAgencyLogAccessReqBody.
 
         被委托日志流id
 
@@ -296,7 +296,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_be_agencygroup_name(self):
-        """Gets the log_be_agencygroup_name of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_be_agencygroup_name of this PreviewAgencyLogAccessReqBody.
 
         被委托日志组名称
 
@@ -307,7 +307,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_be_agencygroup_name.setter
     def log_be_agencygroup_name(self, log_be_agencygroup_name):
-        """Sets the log_be_agencygroup_name of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_be_agencygroup_name of this PreviewAgencyLogAccessReqBody.
 
         被委托日志组名称
 
@@ -318,7 +318,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def log_be_agencygroup_id(self):
-        """Gets the log_be_agencygroup_id of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the log_be_agencygroup_id of this PreviewAgencyLogAccessReqBody.
 
         被委托日志组id
 
@@ -329,7 +329,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @log_be_agencygroup_id.setter
     def log_be_agencygroup_id(self, log_be_agencygroup_id):
-        """Sets the log_be_agencygroup_id of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the log_be_agencygroup_id of this PreviewAgencyLogAccessReqBody.
 
         被委托日志组id
 
@@ -340,7 +340,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def be_agency_project_id(self):
-        """Gets the be_agency_project_id of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the be_agency_project_id of this PreviewAgencyLogAccessReqBody.
 
         被委托项目id
 
@@ -351,7 +351,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @be_agency_project_id.setter
     def be_agency_project_id(self, be_agency_project_id):
-        """Sets the be_agency_project_id of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the be_agency_project_id of this PreviewAgencyLogAccessReqBody.
 
         被委托项目id
 
@@ -362,7 +362,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def agency_project_id(self):
-        """Gets the agency_project_id of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the agency_project_id of this PreviewAgencyLogAccessReqBody.
 
         委托项目id
 
@@ -373,7 +373,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @agency_project_id.setter
     def agency_project_id(self, agency_project_id):
-        """Sets the agency_project_id of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the agency_project_id of this PreviewAgencyLogAccessReqBody.
 
         委托项目id
 
@@ -384,7 +384,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def agency_domain_name(self):
-        """Gets the agency_domain_name of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the agency_domain_name of this PreviewAgencyLogAccessReqBody.
 
         委托账号名称
 
@@ -395,7 +395,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @agency_domain_name.setter
     def agency_domain_name(self, agency_domain_name):
-        """Sets the agency_domain_name of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the agency_domain_name of this PreviewAgencyLogAccessReqBody.
 
         委托账号名称
 
@@ -406,7 +406,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this PreviewAgencyLogAccessReqBody.
+        r"""Gets the agency_name of this PreviewAgencyLogAccessReqBody.
 
         委托名称
 
@@ -417,7 +417,7 @@ class PreviewAgencyLogAccessReqBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this PreviewAgencyLogAccessReqBody.
+        r"""Sets the agency_name of this PreviewAgencyLogAccessReqBody.
 
         委托名称
 

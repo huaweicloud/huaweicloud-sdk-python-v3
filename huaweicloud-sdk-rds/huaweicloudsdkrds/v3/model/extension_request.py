@@ -27,7 +27,7 @@ class ExtensionRequest:
     }
 
     def __init__(self, database_name=None, extension_name=None):
-        """ExtensionRequest
+        r"""ExtensionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExtensionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ExtensionRequest.
+        r"""Gets the database_name of this ExtensionRequest.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class ExtensionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ExtensionRequest.
+        r"""Sets the database_name of this ExtensionRequest.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class ExtensionRequest:
 
     @property
     def extension_name(self):
-        """Gets the extension_name of this ExtensionRequest.
+        r"""Gets the extension_name of this ExtensionRequest.
 
         插件名称。
 
@@ -81,7 +81,7 @@ class ExtensionRequest:
 
     @extension_name.setter
     def extension_name(self, extension_name):
-        """Sets the extension_name of this ExtensionRequest.
+        r"""Sets the extension_name of this ExtensionRequest.
 
         插件名称。
 

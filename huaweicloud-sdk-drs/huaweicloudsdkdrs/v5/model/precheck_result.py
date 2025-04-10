@@ -41,7 +41,7 @@ class PrecheckResult:
     }
 
     def __init__(self, item=None, result=None, failed_reason=None, data=None, raw_error_msg=None, group=None, is_support_skip=None, is_skipped=None, failed_sub_jobs=None):
-        """PrecheckResult
+        r"""PrecheckResult
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PrecheckResult:
 
     @property
     def item(self):
-        """Gets the item of this PrecheckResult.
+        r"""Gets the item of this PrecheckResult.
 
         检查项。
 
@@ -110,7 +110,7 @@ class PrecheckResult:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this PrecheckResult.
+        r"""Sets the item of this PrecheckResult.
 
         检查项。
 
@@ -121,7 +121,7 @@ class PrecheckResult:
 
     @property
     def result(self):
-        """Gets the result of this PrecheckResult.
+        r"""Gets the result of this PrecheckResult.
 
         检查结果。取值： - PASSED：检查通过。 - ALARM：检查告警项。 - FAILED：检查失败。
 
@@ -132,7 +132,7 @@ class PrecheckResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this PrecheckResult.
+        r"""Sets the result of this PrecheckResult.
 
         检查结果。取值： - PASSED：检查通过。 - ALARM：检查告警项。 - FAILED：检查失败。
 
@@ -143,7 +143,7 @@ class PrecheckResult:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this PrecheckResult.
+        r"""Gets the failed_reason of this PrecheckResult.
 
         失败原因。
 
@@ -154,7 +154,7 @@ class PrecheckResult:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this PrecheckResult.
+        r"""Sets the failed_reason of this PrecheckResult.
 
         失败原因。
 
@@ -165,7 +165,7 @@ class PrecheckResult:
 
     @property
     def data(self):
-        """Gets the data of this PrecheckResult.
+        r"""Gets the data of this PrecheckResult.
 
         失败数据。
 
@@ -176,7 +176,7 @@ class PrecheckResult:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PrecheckResult.
+        r"""Sets the data of this PrecheckResult.
 
         失败数据。
 
@@ -187,7 +187,7 @@ class PrecheckResult:
 
     @property
     def raw_error_msg(self):
-        """Gets the raw_error_msg of this PrecheckResult.
+        r"""Gets the raw_error_msg of this PrecheckResult.
 
         失败详情。
 
@@ -198,7 +198,7 @@ class PrecheckResult:
 
     @raw_error_msg.setter
     def raw_error_msg(self, raw_error_msg):
-        """Sets the raw_error_msg of this PrecheckResult.
+        r"""Sets the raw_error_msg of this PrecheckResult.
 
         失败详情。
 
@@ -209,7 +209,7 @@ class PrecheckResult:
 
     @property
     def group(self):
-        """Gets the group of this PrecheckResult.
+        r"""Gets the group of this PrecheckResult.
 
         检查项分组。
 
@@ -220,7 +220,7 @@ class PrecheckResult:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this PrecheckResult.
+        r"""Sets the group of this PrecheckResult.
 
         检查项分组。
 
@@ -231,7 +231,7 @@ class PrecheckResult:
 
     @property
     def is_support_skip(self):
-        """Gets the is_support_skip of this PrecheckResult.
+        r"""Gets the is_support_skip of this PrecheckResult.
 
         是否支持跳过。
 
@@ -242,7 +242,7 @@ class PrecheckResult:
 
     @is_support_skip.setter
     def is_support_skip(self, is_support_skip):
-        """Sets the is_support_skip of this PrecheckResult.
+        r"""Sets the is_support_skip of this PrecheckResult.
 
         是否支持跳过。
 
@@ -253,7 +253,7 @@ class PrecheckResult:
 
     @property
     def is_skipped(self):
-        """Gets the is_skipped of this PrecheckResult.
+        r"""Gets the is_skipped of this PrecheckResult.
 
         是否已跳过。
 
@@ -264,7 +264,7 @@ class PrecheckResult:
 
     @is_skipped.setter
     def is_skipped(self, is_skipped):
-        """Sets the is_skipped of this PrecheckResult.
+        r"""Sets the is_skipped of this PrecheckResult.
 
         是否已跳过。
 
@@ -275,7 +275,7 @@ class PrecheckResult:
 
     @property
     def failed_sub_jobs(self):
-        """Gets the failed_sub_jobs of this PrecheckResult.
+        r"""Gets the failed_sub_jobs of this PrecheckResult.
 
         失败子任务详情。
 
@@ -286,7 +286,7 @@ class PrecheckResult:
 
     @failed_sub_jobs.setter
     def failed_sub_jobs(self, failed_sub_jobs):
-        """Sets the failed_sub_jobs of this PrecheckResult.
+        r"""Sets the failed_sub_jobs of this PrecheckResult.
 
         失败子任务详情。
 

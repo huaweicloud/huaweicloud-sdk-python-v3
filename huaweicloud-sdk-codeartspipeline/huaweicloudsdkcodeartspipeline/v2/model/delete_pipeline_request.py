@@ -27,7 +27,7 @@ class DeletePipelineRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None):
-        """DeletePipelineRequest
+        r"""DeletePipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePipelineRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeletePipelineRequest.
+        r"""Gets the project_id of this DeletePipelineRequest.
 
         项目ID
 
@@ -59,7 +59,7 @@ class DeletePipelineRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeletePipelineRequest.
+        r"""Sets the project_id of this DeletePipelineRequest.
 
         项目ID
 
@@ -70,7 +70,7 @@ class DeletePipelineRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this DeletePipelineRequest.
+        r"""Gets the pipeline_id of this DeletePipelineRequest.
 
         流水线ID
 
@@ -81,7 +81,7 @@ class DeletePipelineRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this DeletePipelineRequest.
+        r"""Sets the pipeline_id of this DeletePipelineRequest.
 
         流水线ID
 

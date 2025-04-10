@@ -27,7 +27,7 @@ class PoliciesPeripheralsSerialPortRedirection:
     }
 
     def __init__(self, serial_port_enable=None, options=None):
-        """PoliciesPeripheralsSerialPortRedirection
+        r"""PoliciesPeripheralsSerialPortRedirection
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsSerialPortRedirection:
 
     @property
     def serial_port_enable(self):
-        """Gets the serial_port_enable of this PoliciesPeripheralsSerialPortRedirection.
+        r"""Gets the serial_port_enable of this PoliciesPeripheralsSerialPortRedirection.
 
         是否开启串口重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsSerialPortRedirection:
 
     @serial_port_enable.setter
     def serial_port_enable(self, serial_port_enable):
-        """Sets the serial_port_enable of this PoliciesPeripheralsSerialPortRedirection.
+        r"""Sets the serial_port_enable of this PoliciesPeripheralsSerialPortRedirection.
 
         是否开启串口重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsSerialPortRedirection:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesPeripheralsSerialPortRedirection.
+        r"""Gets the options of this PoliciesPeripheralsSerialPortRedirection.
 
         :return: The options of this PoliciesPeripheralsSerialPortRedirection.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsSerialPortRedirectionOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsSerialPortRedirection:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesPeripheralsSerialPortRedirection.
+        r"""Sets the options of this PoliciesPeripheralsSerialPortRedirection.
 
         :param options: The options of this PoliciesPeripheralsSerialPortRedirection.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsSerialPortRedirectionOptions`

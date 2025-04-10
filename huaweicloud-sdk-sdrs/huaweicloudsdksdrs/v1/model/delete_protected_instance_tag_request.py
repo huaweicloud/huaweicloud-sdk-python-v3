@@ -27,7 +27,7 @@ class DeleteProtectedInstanceTagRequest:
     }
 
     def __init__(self, protected_instance_id=None, key=None):
-        """DeleteProtectedInstanceTagRequest
+        r"""DeleteProtectedInstanceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteProtectedInstanceTagRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this DeleteProtectedInstanceTagRequest.
+        r"""Gets the protected_instance_id of this DeleteProtectedInstanceTagRequest.
 
         保护实例的ID。
 
@@ -59,7 +59,7 @@ class DeleteProtectedInstanceTagRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this DeleteProtectedInstanceTagRequest.
+        r"""Sets the protected_instance_id of this DeleteProtectedInstanceTagRequest.
 
         保护实例的ID。
 
@@ -70,7 +70,7 @@ class DeleteProtectedInstanceTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteProtectedInstanceTagRequest.
+        r"""Gets the key of this DeleteProtectedInstanceTagRequest.
 
         标签key。
 
@@ -81,7 +81,7 @@ class DeleteProtectedInstanceTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteProtectedInstanceTagRequest.
+        r"""Sets the key of this DeleteProtectedInstanceTagRequest.
 
         标签key。
 

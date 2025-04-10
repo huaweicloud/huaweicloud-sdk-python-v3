@@ -28,7 +28,7 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, server_ids=None):
-        """CreateInstanceResponse
+        r"""CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateInstanceResponse.
+        r"""Gets the job_id of this CreateInstanceResponse.
 
         :return: The job_id of this CreateInstanceResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateInstanceResponse.
+        r"""Sets the job_id of this CreateInstanceResponse.
 
         :param job_id: The job_id of this CreateInstanceResponse.
         :type job_id: str
@@ -69,7 +69,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this CreateInstanceResponse.
+        r"""Gets the server_ids of this CreateInstanceResponse.
 
         创建中实例的ID。
 
@@ -80,7 +80,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this CreateInstanceResponse.
+        r"""Sets the server_ids of this CreateInstanceResponse.
 
         创建中实例的ID。
 

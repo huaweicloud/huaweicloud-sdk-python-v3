@@ -30,7 +30,7 @@ class ListPrivateSnatsResponse(SdkResponse):
     }
 
     def __init__(self, snat_rules=None, page_info=None, request_id=None):
-        """ListPrivateSnatsResponse
+        r"""ListPrivateSnatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPrivateSnatsResponse(SdkResponse):
 
     @property
     def snat_rules(self):
-        """Gets the snat_rules of this ListPrivateSnatsResponse.
+        r"""Gets the snat_rules of this ListPrivateSnatsResponse.
 
         查询SNAT规则列表的响应体。
 
@@ -69,7 +69,7 @@ class ListPrivateSnatsResponse(SdkResponse):
 
     @snat_rules.setter
     def snat_rules(self, snat_rules):
-        """Sets the snat_rules of this ListPrivateSnatsResponse.
+        r"""Sets the snat_rules of this ListPrivateSnatsResponse.
 
         查询SNAT规则列表的响应体。
 
@@ -80,7 +80,7 @@ class ListPrivateSnatsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPrivateSnatsResponse.
+        r"""Gets the page_info of this ListPrivateSnatsResponse.
 
         :return: The page_info of this ListPrivateSnatsResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PageInfo`
@@ -89,7 +89,7 @@ class ListPrivateSnatsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPrivateSnatsResponse.
+        r"""Sets the page_info of this ListPrivateSnatsResponse.
 
         :param page_info: The page_info of this ListPrivateSnatsResponse.
         :type page_info: :class:`huaweicloudsdknat.v2.PageInfo`
@@ -98,7 +98,7 @@ class ListPrivateSnatsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPrivateSnatsResponse.
+        r"""Gets the request_id of this ListPrivateSnatsResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListPrivateSnatsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPrivateSnatsResponse.
+        r"""Sets the request_id of this ListPrivateSnatsResponse.
 
         请求ID。
 

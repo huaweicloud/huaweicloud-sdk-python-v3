@@ -51,7 +51,7 @@ class ChildrenJobInfo:
     }
 
     def __init__(self, billing_tag=None, create_time=None, db_use_type=None, description=None, engine_type=None, error_msg=None, id=None, job_direction=None, name=None, net_type=None, node_new_framework=None, status=None, task_type=None, job_action=None):
-        """ChildrenJobInfo
+        r"""ChildrenJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ChildrenJobInfo:
 
     @property
     def billing_tag(self):
-        """Gets the billing_tag of this ChildrenJobInfo.
+        r"""Gets the billing_tag of this ChildrenJobInfo.
 
         计费字段
 
@@ -132,7 +132,7 @@ class ChildrenJobInfo:
 
     @billing_tag.setter
     def billing_tag(self, billing_tag):
-        """Sets the billing_tag of this ChildrenJobInfo.
+        r"""Sets the billing_tag of this ChildrenJobInfo.
 
         计费字段
 
@@ -143,7 +143,7 @@ class ChildrenJobInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ChildrenJobInfo.
+        r"""Gets the create_time of this ChildrenJobInfo.
 
         任务创建时间
 
@@ -154,7 +154,7 @@ class ChildrenJobInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ChildrenJobInfo.
+        r"""Sets the create_time of this ChildrenJobInfo.
 
         任务创建时间
 
@@ -165,7 +165,7 @@ class ChildrenJobInfo:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this ChildrenJobInfo.
+        r"""Gets the db_use_type of this ChildrenJobInfo.
 
         复制场景
 
@@ -176,7 +176,7 @@ class ChildrenJobInfo:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this ChildrenJobInfo.
+        r"""Sets the db_use_type of this ChildrenJobInfo.
 
         复制场景
 
@@ -187,7 +187,7 @@ class ChildrenJobInfo:
 
     @property
     def description(self):
-        """Gets the description of this ChildrenJobInfo.
+        r"""Gets the description of this ChildrenJobInfo.
 
         任务描述
 
@@ -198,7 +198,7 @@ class ChildrenJobInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChildrenJobInfo.
+        r"""Sets the description of this ChildrenJobInfo.
 
         任务描述
 
@@ -209,7 +209,7 @@ class ChildrenJobInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this ChildrenJobInfo.
+        r"""Gets the engine_type of this ChildrenJobInfo.
 
         引擎类型
 
@@ -220,7 +220,7 @@ class ChildrenJobInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this ChildrenJobInfo.
+        r"""Sets the engine_type of this ChildrenJobInfo.
 
         引擎类型
 
@@ -231,7 +231,7 @@ class ChildrenJobInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ChildrenJobInfo.
+        r"""Gets the error_msg of this ChildrenJobInfo.
 
         任务失败原因
 
@@ -242,7 +242,7 @@ class ChildrenJobInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ChildrenJobInfo.
+        r"""Sets the error_msg of this ChildrenJobInfo.
 
         任务失败原因
 
@@ -253,7 +253,7 @@ class ChildrenJobInfo:
 
     @property
     def id(self):
-        """Gets the id of this ChildrenJobInfo.
+        r"""Gets the id of this ChildrenJobInfo.
 
         任务id
 
@@ -264,7 +264,7 @@ class ChildrenJobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChildrenJobInfo.
+        r"""Sets the id of this ChildrenJobInfo.
 
         任务id
 
@@ -275,7 +275,7 @@ class ChildrenJobInfo:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this ChildrenJobInfo.
+        r"""Gets the job_direction of this ChildrenJobInfo.
 
         迁移方向
 
@@ -286,7 +286,7 @@ class ChildrenJobInfo:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this ChildrenJobInfo.
+        r"""Sets the job_direction of this ChildrenJobInfo.
 
         迁移方向
 
@@ -297,7 +297,7 @@ class ChildrenJobInfo:
 
     @property
     def name(self):
-        """Gets the name of this ChildrenJobInfo.
+        r"""Gets the name of this ChildrenJobInfo.
 
         任务名称
 
@@ -308,7 +308,7 @@ class ChildrenJobInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChildrenJobInfo.
+        r"""Sets the name of this ChildrenJobInfo.
 
         任务名称
 
@@ -319,7 +319,7 @@ class ChildrenJobInfo:
 
     @property
     def net_type(self):
-        """Gets the net_type of this ChildrenJobInfo.
+        r"""Gets the net_type of this ChildrenJobInfo.
 
         网络类型
 
@@ -330,7 +330,7 @@ class ChildrenJobInfo:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this ChildrenJobInfo.
+        r"""Sets the net_type of this ChildrenJobInfo.
 
         网络类型
 
@@ -341,7 +341,7 @@ class ChildrenJobInfo:
 
     @property
     def node_new_framework(self):
-        """Gets the node_new_framework of this ChildrenJobInfo.
+        r"""Gets the node_new_framework of this ChildrenJobInfo.
 
         新框架
 
@@ -352,7 +352,7 @@ class ChildrenJobInfo:
 
     @node_new_framework.setter
     def node_new_framework(self, node_new_framework):
-        """Sets the node_new_framework of this ChildrenJobInfo.
+        r"""Sets the node_new_framework of this ChildrenJobInfo.
 
         新框架
 
@@ -363,7 +363,7 @@ class ChildrenJobInfo:
 
     @property
     def status(self):
-        """Gets the status of this ChildrenJobInfo.
+        r"""Gets the status of this ChildrenJobInfo.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -374,7 +374,7 @@ class ChildrenJobInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChildrenJobInfo.
+        r"""Sets the status of this ChildrenJobInfo.
 
         任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
@@ -385,7 +385,7 @@ class ChildrenJobInfo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ChildrenJobInfo.
+        r"""Gets the task_type of this ChildrenJobInfo.
 
         迁移模式
 
@@ -396,7 +396,7 @@ class ChildrenJobInfo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ChildrenJobInfo.
+        r"""Sets the task_type of this ChildrenJobInfo.
 
         迁移模式
 
@@ -407,7 +407,7 @@ class ChildrenJobInfo:
 
     @property
     def job_action(self):
-        """Gets the job_action of this ChildrenJobInfo.
+        r"""Gets the job_action of this ChildrenJobInfo.
 
         :return: The job_action of this ChildrenJobInfo.
         :rtype: :class:`huaweicloudsdkdrs.v3.JobActionResp`
@@ -416,7 +416,7 @@ class ChildrenJobInfo:
 
     @job_action.setter
     def job_action(self, job_action):
-        """Sets the job_action of this ChildrenJobInfo.
+        r"""Sets the job_action of this ChildrenJobInfo.
 
         :param job_action: The job_action of this ChildrenJobInfo.
         :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`

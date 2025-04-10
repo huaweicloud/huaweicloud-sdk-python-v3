@@ -30,7 +30,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None, x_request_id=None):
-        """DetectStandardByVideoAndNameAndIdResponse
+        r"""DetectStandardByVideoAndNameAndIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this DetectStandardByVideoAndNameAndIdResponse.
+        r"""Gets the meta of this DetectStandardByVideoAndNameAndIdResponse.
 
         :return: The meta of this DetectStandardByVideoAndNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -67,7 +67,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this DetectStandardByVideoAndNameAndIdResponse.
+        r"""Sets the meta of this DetectStandardByVideoAndNameAndIdResponse.
 
         :param meta: The meta of this DetectStandardByVideoAndNameAndIdResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +76,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectStandardByVideoAndNameAndIdResponse.
+        r"""Gets the result of this DetectStandardByVideoAndNameAndIdResponse.
 
         :return: The result of this DetectStandardByVideoAndNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByVideoAndNameAndIdResponseBodyResult`
@@ -85,7 +85,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectStandardByVideoAndNameAndIdResponse.
+        r"""Sets the result of this DetectStandardByVideoAndNameAndIdResponse.
 
         :param result: The result of this DetectStandardByVideoAndNameAndIdResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByVideoAndNameAndIdResponseBodyResult`
@@ -94,7 +94,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectStandardByVideoAndNameAndIdResponse.
+        r"""Gets the x_request_id of this DetectStandardByVideoAndNameAndIdResponse.
 
         :return: The x_request_id of this DetectStandardByVideoAndNameAndIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DetectStandardByVideoAndNameAndIdResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectStandardByVideoAndNameAndIdResponse.
+        r"""Sets the x_request_id of this DetectStandardByVideoAndNameAndIdResponse.
 
         :param x_request_id: The x_request_id of this DetectStandardByVideoAndNameAndIdResponse.
         :type x_request_id: str

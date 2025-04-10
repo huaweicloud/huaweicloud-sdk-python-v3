@@ -31,7 +31,7 @@ class CreateMigrationProject:
     }
 
     def __init__(self, migration_project_name=None, evaluation_project_id=None, target_db_info=None, open_gauss_config=None):
-        """CreateMigrationProject
+        r"""CreateMigrationProject
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateMigrationProject:
 
     @property
     def migration_project_name(self):
-        """Gets the migration_project_name of this CreateMigrationProject.
+        r"""Gets the migration_project_name of this CreateMigrationProject.
 
         迁移项目名称。长度为5-50个字符，以英文字母开头，英文字母或数字结束，允许包含下划线和中划线。不允许重复。
 
@@ -72,7 +72,7 @@ class CreateMigrationProject:
 
     @migration_project_name.setter
     def migration_project_name(self, migration_project_name):
-        """Sets the migration_project_name of this CreateMigrationProject.
+        r"""Sets the migration_project_name of this CreateMigrationProject.
 
         迁移项目名称。长度为5-50个字符，以英文字母开头，英文字母或数字结束，允许包含下划线和中划线。不允许重复。
 
@@ -83,7 +83,7 @@ class CreateMigrationProject:
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this CreateMigrationProject.
+        r"""Gets the evaluation_project_id of this CreateMigrationProject.
 
         评估项目ID。
 
@@ -94,7 +94,7 @@ class CreateMigrationProject:
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this CreateMigrationProject.
+        r"""Sets the evaluation_project_id of this CreateMigrationProject.
 
         评估项目ID。
 
@@ -105,7 +105,7 @@ class CreateMigrationProject:
 
     @property
     def target_db_info(self):
-        """Gets the target_db_info of this CreateMigrationProject.
+        r"""Gets the target_db_info of this CreateMigrationProject.
 
         :return: The target_db_info of this CreateMigrationProject.
         :rtype: :class:`huaweicloudsdkugo.v1.TargetDBInfo`
@@ -114,7 +114,7 @@ class CreateMigrationProject:
 
     @target_db_info.setter
     def target_db_info(self, target_db_info):
-        """Sets the target_db_info of this CreateMigrationProject.
+        r"""Sets the target_db_info of this CreateMigrationProject.
 
         :param target_db_info: The target_db_info of this CreateMigrationProject.
         :type target_db_info: :class:`huaweicloudsdkugo.v1.TargetDBInfo`
@@ -123,7 +123,7 @@ class CreateMigrationProject:
 
     @property
     def open_gauss_config(self):
-        """Gets the open_gauss_config of this CreateMigrationProject.
+        r"""Gets the open_gauss_config of this CreateMigrationProject.
 
         :return: The open_gauss_config of this CreateMigrationProject.
         :rtype: :class:`huaweicloudsdkugo.v1.OpenGaussConfig`
@@ -132,7 +132,7 @@ class CreateMigrationProject:
 
     @open_gauss_config.setter
     def open_gauss_config(self, open_gauss_config):
-        """Sets the open_gauss_config of this CreateMigrationProject.
+        r"""Sets the open_gauss_config of this CreateMigrationProject.
 
         :param open_gauss_config: The open_gauss_config of this CreateMigrationProject.
         :type open_gauss_config: :class:`huaweicloudsdkugo.v1.OpenGaussConfig`

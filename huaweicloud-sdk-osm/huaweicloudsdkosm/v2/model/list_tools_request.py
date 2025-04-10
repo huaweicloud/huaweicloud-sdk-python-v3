@@ -31,7 +31,7 @@ class ListToolsRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, body=None):
-        """ListToolsRequest
+        r"""ListToolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListToolsRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ListToolsRequest.
+        r"""Gets the x_service_key of this ListToolsRequest.
 
         调用智能客服服务标志。
 
@@ -75,7 +75,7 @@ class ListToolsRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ListToolsRequest.
+        r"""Sets the x_service_key of this ListToolsRequest.
 
         调用智能客服服务标志。
 
@@ -86,7 +86,7 @@ class ListToolsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListToolsRequest.
+        r"""Gets the x_site of this ListToolsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -97,7 +97,7 @@ class ListToolsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListToolsRequest.
+        r"""Sets the x_site of this ListToolsRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -108,7 +108,7 @@ class ListToolsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListToolsRequest.
+        r"""Gets the x_language of this ListToolsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -119,7 +119,7 @@ class ListToolsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListToolsRequest.
+        r"""Sets the x_language of this ListToolsRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -130,7 +130,7 @@ class ListToolsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListToolsRequest.
+        r"""Gets the body of this ListToolsRequest.
 
         :return: The body of this ListToolsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SearchToolsReq`
@@ -139,7 +139,7 @@ class ListToolsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListToolsRequest.
+        r"""Sets the body of this ListToolsRequest.
 
         :param body: The body of this ListToolsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SearchToolsReq`

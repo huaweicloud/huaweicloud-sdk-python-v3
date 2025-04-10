@@ -49,7 +49,7 @@ class ObsBucketInfo:
     }
 
     def __init__(self, response_headers=None, original_headers=None, status_code=None, bucket_name=None, owner=None, creation_date=None, location=None, storage_class=None, metadata=None, acl=None, bucket_storage_class=None, bucket_type=None, request_id=None):
-        """ObsBucketInfo
+        r"""ObsBucketInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ObsBucketInfo:
 
     @property
     def response_headers(self):
-        """Gets the response_headers of this ObsBucketInfo.
+        r"""Gets the response_headers of this ObsBucketInfo.
 
         响应头
 
@@ -138,7 +138,7 @@ class ObsBucketInfo:
 
     @response_headers.setter
     def response_headers(self, response_headers):
-        """Sets the response_headers of this ObsBucketInfo.
+        r"""Sets the response_headers of this ObsBucketInfo.
 
         响应头
 
@@ -149,7 +149,7 @@ class ObsBucketInfo:
 
     @property
     def original_headers(self):
-        """Gets the original_headers of this ObsBucketInfo.
+        r"""Gets the original_headers of this ObsBucketInfo.
 
         请求头
 
@@ -160,7 +160,7 @@ class ObsBucketInfo:
 
     @original_headers.setter
     def original_headers(self, original_headers):
-        """Sets the original_headers of this ObsBucketInfo.
+        r"""Sets the original_headers of this ObsBucketInfo.
 
         请求头
 
@@ -171,7 +171,7 @@ class ObsBucketInfo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this ObsBucketInfo.
+        r"""Gets the status_code of this ObsBucketInfo.
 
         状态
 
@@ -182,7 +182,7 @@ class ObsBucketInfo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this ObsBucketInfo.
+        r"""Sets the status_code of this ObsBucketInfo.
 
         状态
 
@@ -193,7 +193,7 @@ class ObsBucketInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ObsBucketInfo.
+        r"""Gets the bucket_name of this ObsBucketInfo.
 
         桶名称
 
@@ -204,7 +204,7 @@ class ObsBucketInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ObsBucketInfo.
+        r"""Sets the bucket_name of this ObsBucketInfo.
 
         桶名称
 
@@ -215,7 +215,7 @@ class ObsBucketInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this ObsBucketInfo.
+        r"""Gets the owner of this ObsBucketInfo.
 
         :return: The owner of this ObsBucketInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.ObsBucketInfoOwner`
@@ -224,7 +224,7 @@ class ObsBucketInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ObsBucketInfo.
+        r"""Sets the owner of this ObsBucketInfo.
 
         :param owner: The owner of this ObsBucketInfo.
         :type owner: :class:`huaweicloudsdkeg.v1.ObsBucketInfoOwner`
@@ -233,7 +233,7 @@ class ObsBucketInfo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this ObsBucketInfo.
+        r"""Gets the creation_date of this ObsBucketInfo.
 
         桶的创建时间
 
@@ -244,7 +244,7 @@ class ObsBucketInfo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this ObsBucketInfo.
+        r"""Sets the creation_date of this ObsBucketInfo.
 
         桶的创建时间
 
@@ -255,7 +255,7 @@ class ObsBucketInfo:
 
     @property
     def location(self):
-        """Gets the location of this ObsBucketInfo.
+        r"""Gets the location of this ObsBucketInfo.
 
         桶的位置信息
 
@@ -266,7 +266,7 @@ class ObsBucketInfo:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ObsBucketInfo.
+        r"""Sets the location of this ObsBucketInfo.
 
         桶的位置信息
 
@@ -277,7 +277,7 @@ class ObsBucketInfo:
 
     @property
     def storage_class(self):
-        """Gets the storage_class of this ObsBucketInfo.
+        r"""Gets the storage_class of this ObsBucketInfo.
 
         对象的存储类型
 
@@ -288,7 +288,7 @@ class ObsBucketInfo:
 
     @storage_class.setter
     def storage_class(self, storage_class):
-        """Sets the storage_class of this ObsBucketInfo.
+        r"""Sets the storage_class of this ObsBucketInfo.
 
         对象的存储类型
 
@@ -299,7 +299,7 @@ class ObsBucketInfo:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ObsBucketInfo.
+        r"""Gets the metadata of this ObsBucketInfo.
 
         桶元数据
 
@@ -310,7 +310,7 @@ class ObsBucketInfo:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ObsBucketInfo.
+        r"""Sets the metadata of this ObsBucketInfo.
 
         桶元数据
 
@@ -321,7 +321,7 @@ class ObsBucketInfo:
 
     @property
     def acl(self):
-        """Gets the acl of this ObsBucketInfo.
+        r"""Gets the acl of this ObsBucketInfo.
 
         桶ACL
 
@@ -332,7 +332,7 @@ class ObsBucketInfo:
 
     @acl.setter
     def acl(self, acl):
-        """Sets the acl of this ObsBucketInfo.
+        r"""Sets the acl of this ObsBucketInfo.
 
         桶ACL
 
@@ -343,7 +343,7 @@ class ObsBucketInfo:
 
     @property
     def bucket_storage_class(self):
-        """Gets the bucket_storage_class of this ObsBucketInfo.
+        r"""Gets the bucket_storage_class of this ObsBucketInfo.
 
         桶的存储类型
 
@@ -354,7 +354,7 @@ class ObsBucketInfo:
 
     @bucket_storage_class.setter
     def bucket_storage_class(self, bucket_storage_class):
-        """Sets the bucket_storage_class of this ObsBucketInfo.
+        r"""Sets the bucket_storage_class of this ObsBucketInfo.
 
         桶的存储类型
 
@@ -365,7 +365,7 @@ class ObsBucketInfo:
 
     @property
     def bucket_type(self):
-        """Gets the bucket_type of this ObsBucketInfo.
+        r"""Gets the bucket_type of this ObsBucketInfo.
 
         桶类型
 
@@ -376,7 +376,7 @@ class ObsBucketInfo:
 
     @bucket_type.setter
     def bucket_type(self, bucket_type):
-        """Sets the bucket_type of this ObsBucketInfo.
+        r"""Sets the bucket_type of this ObsBucketInfo.
 
         桶类型
 
@@ -387,7 +387,7 @@ class ObsBucketInfo:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ObsBucketInfo.
+        r"""Gets the request_id of this ObsBucketInfo.
 
         请求id
 
@@ -398,7 +398,7 @@ class ObsBucketInfo:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ObsBucketInfo.
+        r"""Sets the request_id of this ObsBucketInfo.
 
         请求id
 

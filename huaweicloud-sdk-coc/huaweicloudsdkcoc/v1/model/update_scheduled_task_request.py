@@ -27,7 +27,7 @@ class UpdateScheduledTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateScheduledTaskRequest
+        r"""UpdateScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateScheduledTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateScheduledTaskRequest.
+        r"""Gets the task_id of this UpdateScheduledTaskRequest.
 
         ID of ScheduledTask
 
@@ -60,7 +60,7 @@ class UpdateScheduledTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateScheduledTaskRequest.
+        r"""Sets the task_id of this UpdateScheduledTaskRequest.
 
         ID of ScheduledTask
 
@@ -71,7 +71,7 @@ class UpdateScheduledTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScheduledTaskRequest.
+        r"""Gets the body of this UpdateScheduledTaskRequest.
 
         :return: The body of this UpdateScheduledTaskRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScheduledTaskRequestBody`
@@ -80,7 +80,7 @@ class UpdateScheduledTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScheduledTaskRequest.
+        r"""Sets the body of this UpdateScheduledTaskRequest.
 
         :param body: The body of this UpdateScheduledTaskRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.ScheduledTaskRequestBody`

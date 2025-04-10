@@ -27,7 +27,7 @@ class KeystoneCreateIdentityProviderRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """KeystoneCreateIdentityProviderRequest
+        r"""KeystoneCreateIdentityProviderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneCreateIdentityProviderRequest:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneCreateIdentityProviderRequest.
+        r"""Gets the id of this KeystoneCreateIdentityProviderRequest.
 
         待注册的身份提供商ID。
 
@@ -60,7 +60,7 @@ class KeystoneCreateIdentityProviderRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneCreateIdentityProviderRequest.
+        r"""Sets the id of this KeystoneCreateIdentityProviderRequest.
 
         待注册的身份提供商ID。
 
@@ -71,7 +71,7 @@ class KeystoneCreateIdentityProviderRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateIdentityProviderRequest.
+        r"""Gets the body of this KeystoneCreateIdentityProviderRequest.
 
         :return: The body of this KeystoneCreateIdentityProviderRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequestBody`
@@ -80,7 +80,7 @@ class KeystoneCreateIdentityProviderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateIdentityProviderRequest.
+        r"""Sets the body of this KeystoneCreateIdentityProviderRequest.
 
         :param body: The body of this KeystoneCreateIdentityProviderRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequestBody`

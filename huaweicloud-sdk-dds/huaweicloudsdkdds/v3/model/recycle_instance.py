@@ -43,7 +43,7 @@ class RecycleInstance:
     }
 
     def __init__(self, id=None, name=None, mode=None, datastore=None, pay_mode=None, enterprise_project_id=None, backup_id=None, created_at=None, deleted_at=None, retained_until=None):
-        """RecycleInstance
+        r"""RecycleInstance
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RecycleInstance:
 
     @property
     def id(self):
-        """Gets the id of this RecycleInstance.
+        r"""Gets the id of this RecycleInstance.
 
         实例ID
 
@@ -117,7 +117,7 @@ class RecycleInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecycleInstance.
+        r"""Sets the id of this RecycleInstance.
 
         实例ID
 
@@ -128,7 +128,7 @@ class RecycleInstance:
 
     @property
     def name(self):
-        """Gets the name of this RecycleInstance.
+        r"""Gets the name of this RecycleInstance.
 
         实例名称
 
@@ -139,7 +139,7 @@ class RecycleInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecycleInstance.
+        r"""Sets the name of this RecycleInstance.
 
         实例名称
 
@@ -150,7 +150,7 @@ class RecycleInstance:
 
     @property
     def mode(self):
-        """Gets the mode of this RecycleInstance.
+        r"""Gets the mode of this RecycleInstance.
 
         实例类型。支持集群、副本集、以及单节点。 取值   - Sharding   - ReplicaSet   - Single
 
@@ -161,7 +161,7 @@ class RecycleInstance:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RecycleInstance.
+        r"""Sets the mode of this RecycleInstance.
 
         实例类型。支持集群、副本集、以及单节点。 取值   - Sharding   - ReplicaSet   - Single
 
@@ -172,7 +172,7 @@ class RecycleInstance:
 
     @property
     def datastore(self):
-        """Gets the datastore of this RecycleInstance.
+        r"""Gets the datastore of this RecycleInstance.
 
         :return: The datastore of this RecycleInstance.
         :rtype: :class:`huaweicloudsdkdds.v3.RecycleDatastore`
@@ -181,7 +181,7 @@ class RecycleInstance:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this RecycleInstance.
+        r"""Sets the datastore of this RecycleInstance.
 
         :param datastore: The datastore of this RecycleInstance.
         :type datastore: :class:`huaweicloudsdkdds.v3.RecycleDatastore`
@@ -190,7 +190,7 @@ class RecycleInstance:
 
     @property
     def pay_mode(self):
-        """Gets the pay_mode of this RecycleInstance.
+        r"""Gets the pay_mode of this RecycleInstance.
 
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
@@ -201,7 +201,7 @@ class RecycleInstance:
 
     @pay_mode.setter
     def pay_mode(self, pay_mode):
-        """Sets the pay_mode of this RecycleInstance.
+        r"""Sets the pay_mode of this RecycleInstance.
 
         计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
@@ -212,7 +212,7 @@ class RecycleInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RecycleInstance.
+        r"""Gets the enterprise_project_id of this RecycleInstance.
 
         企业项目ID，取值为“0”，表示为default企业项目
 
@@ -223,7 +223,7 @@ class RecycleInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RecycleInstance.
+        r"""Sets the enterprise_project_id of this RecycleInstance.
 
         企业项目ID，取值为“0”，表示为default企业项目
 
@@ -234,7 +234,7 @@ class RecycleInstance:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RecycleInstance.
+        r"""Gets the backup_id of this RecycleInstance.
 
         备份ID
 
@@ -245,7 +245,7 @@ class RecycleInstance:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RecycleInstance.
+        r"""Sets the backup_id of this RecycleInstance.
 
         备份ID
 
@@ -256,7 +256,7 @@ class RecycleInstance:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RecycleInstance.
+        r"""Gets the created_at of this RecycleInstance.
 
         创建时间
 
@@ -267,7 +267,7 @@ class RecycleInstance:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RecycleInstance.
+        r"""Sets the created_at of this RecycleInstance.
 
         创建时间
 
@@ -278,7 +278,7 @@ class RecycleInstance:
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this RecycleInstance.
+        r"""Gets the deleted_at of this RecycleInstance.
 
         删除时间
 
@@ -289,7 +289,7 @@ class RecycleInstance:
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this RecycleInstance.
+        r"""Sets the deleted_at of this RecycleInstance.
 
         删除时间
 
@@ -300,7 +300,7 @@ class RecycleInstance:
 
     @property
     def retained_until(self):
-        """Gets the retained_until of this RecycleInstance.
+        r"""Gets the retained_until of this RecycleInstance.
 
         保留截止时间
 
@@ -311,7 +311,7 @@ class RecycleInstance:
 
     @retained_until.setter
     def retained_until(self, retained_until):
-        """Sets the retained_until of this RecycleInstance.
+        r"""Sets the retained_until of this RecycleInstance.
 
         保留截止时间
 

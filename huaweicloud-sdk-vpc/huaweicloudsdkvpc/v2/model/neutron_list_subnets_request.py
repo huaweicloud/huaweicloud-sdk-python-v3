@@ -43,7 +43,7 @@ class NeutronListSubnetsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, cidr=None, name=None, enable_dhcp=None, network_id=None, ip_version=None, gateway_ip=None, tenant_id=None):
-        """NeutronListSubnetsRequest
+        r"""NeutronListSubnetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListSubnetsRequest.
+        r"""Gets the limit of this NeutronListSubnetsRequest.
 
         每页返回的个数
 
@@ -117,7 +117,7 @@ class NeutronListSubnetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListSubnetsRequest.
+        r"""Sets the limit of this NeutronListSubnetsRequest.
 
         每页返回的个数
 
@@ -128,7 +128,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListSubnetsRequest.
+        r"""Gets the marker of this NeutronListSubnetsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -139,7 +139,7 @@ class NeutronListSubnetsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListSubnetsRequest.
+        r"""Sets the marker of this NeutronListSubnetsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -150,7 +150,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListSubnetsRequest.
+        r"""Gets the id of this NeutronListSubnetsRequest.
 
         按照子网对应的ID过滤查询
 
@@ -161,7 +161,7 @@ class NeutronListSubnetsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListSubnetsRequest.
+        r"""Sets the id of this NeutronListSubnetsRequest.
 
         按照子网对应的ID过滤查询
 
@@ -172,7 +172,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def cidr(self):
-        """Gets the cidr of this NeutronListSubnetsRequest.
+        r"""Gets the cidr of this NeutronListSubnetsRequest.
 
         按照子网的cidr过滤查询
 
@@ -183,7 +183,7 @@ class NeutronListSubnetsRequest:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this NeutronListSubnetsRequest.
+        r"""Sets the cidr of this NeutronListSubnetsRequest.
 
         按照子网的cidr过滤查询
 
@@ -194,7 +194,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def name(self):
-        """Gets the name of this NeutronListSubnetsRequest.
+        r"""Gets the name of this NeutronListSubnetsRequest.
 
         按照子网的名称过滤查询
 
@@ -205,7 +205,7 @@ class NeutronListSubnetsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronListSubnetsRequest.
+        r"""Sets the name of this NeutronListSubnetsRequest.
 
         按照子网的名称过滤查询
 
@@ -216,7 +216,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def enable_dhcp(self):
-        """Gets the enable_dhcp of this NeutronListSubnetsRequest.
+        r"""Gets the enable_dhcp of this NeutronListSubnetsRequest.
 
         按照子网是否开启dhcp过滤查询，取值范围：true or false
 
@@ -227,7 +227,7 @@ class NeutronListSubnetsRequest:
 
     @enable_dhcp.setter
     def enable_dhcp(self, enable_dhcp):
-        """Sets the enable_dhcp of this NeutronListSubnetsRequest.
+        r"""Sets the enable_dhcp of this NeutronListSubnetsRequest.
 
         按照子网是否开启dhcp过滤查询，取值范围：true or false
 
@@ -238,7 +238,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronListSubnetsRequest.
+        r"""Gets the network_id of this NeutronListSubnetsRequest.
 
         按照子网所属network_id过滤查询
 
@@ -249,7 +249,7 @@ class NeutronListSubnetsRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronListSubnetsRequest.
+        r"""Sets the network_id of this NeutronListSubnetsRequest.
 
         按照子网所属network_id过滤查询
 
@@ -260,7 +260,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this NeutronListSubnetsRequest.
+        r"""Gets the ip_version of this NeutronListSubnetsRequest.
 
         按照子网的IP协议版本过滤查询
 
@@ -271,7 +271,7 @@ class NeutronListSubnetsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this NeutronListSubnetsRequest.
+        r"""Sets the ip_version of this NeutronListSubnetsRequest.
 
         按照子网的IP协议版本过滤查询
 
@@ -282,7 +282,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this NeutronListSubnetsRequest.
+        r"""Gets the gateway_ip of this NeutronListSubnetsRequest.
 
         按照子网的网关IP过滤查询
 
@@ -293,7 +293,7 @@ class NeutronListSubnetsRequest:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this NeutronListSubnetsRequest.
+        r"""Sets the gateway_ip of this NeutronListSubnetsRequest.
 
         按照子网的网关IP过滤查询
 
@@ -304,7 +304,7 @@ class NeutronListSubnetsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListSubnetsRequest.
+        r"""Gets the tenant_id of this NeutronListSubnetsRequest.
 
         按照子网所属的项目ID过滤查询
 
@@ -315,7 +315,7 @@ class NeutronListSubnetsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListSubnetsRequest.
+        r"""Sets the tenant_id of this NeutronListSubnetsRequest.
 
         按照子网所属的项目ID过滤查询
 

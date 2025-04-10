@@ -25,7 +25,7 @@ class ListVmsCallbacksMode:
     }
 
     def __init__(self, callbacks=None):
-        """ListVmsCallbacksMode
+        r"""ListVmsCallbacksMode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListVmsCallbacksMode:
 
     @property
     def callbacks(self):
-        """Gets the callbacks of this ListVmsCallbacksMode.
+        r"""Gets the callbacks of this ListVmsCallbacksMode.
 
         回执接口列表。
 
@@ -54,7 +54,7 @@ class ListVmsCallbacksMode:
 
     @callbacks.setter
     def callbacks(self, callbacks):
-        """Sets the callbacks of this ListVmsCallbacksMode.
+        r"""Sets the callbacks of this ListVmsCallbacksMode.
 
         回执接口列表。
 

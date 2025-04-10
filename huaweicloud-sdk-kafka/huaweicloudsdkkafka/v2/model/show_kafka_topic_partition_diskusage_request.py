@@ -31,7 +31,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
     }
 
     def __init__(self, instance_id=None, min_size=None, top=None, percentage=None):
-        """ShowKafkaTopicPartitionDiskusageRequest
+        r"""ShowKafkaTopicPartitionDiskusageRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Gets the instance_id of this ShowKafkaTopicPartitionDiskusageRequest.
 
         实例ID。
 
@@ -74,7 +74,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Sets the instance_id of this ShowKafkaTopicPartitionDiskusageRequest.
 
         实例ID。
 
@@ -85,7 +85,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @property
     def min_size(self):
-        """Gets the min_size of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Gets the min_size of this ShowKafkaTopicPartitionDiskusageRequest.
 
         占用磁盘大小，默认值1G (1K，1M，1G)。
 
@@ -96,7 +96,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @min_size.setter
     def min_size(self, min_size):
-        """Sets the min_size of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Sets the min_size of this ShowKafkaTopicPartitionDiskusageRequest.
 
         占用磁盘大小，默认值1G (1K，1M，1G)。
 
@@ -107,7 +107,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @property
     def top(self):
-        """Gets the top of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Gets the top of this ShowKafkaTopicPartitionDiskusageRequest.
 
         占用磁盘大小，查询top N。
 
@@ -118,7 +118,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Sets the top of this ShowKafkaTopicPartitionDiskusageRequest.
 
         占用磁盘大小，查询top N。
 
@@ -129,7 +129,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @property
     def percentage(self):
-        """Gets the percentage of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Gets the percentage of this ShowKafkaTopicPartitionDiskusageRequest.
 
         占用磁盘大小，查询大于占比的分区。
 
@@ -140,7 +140,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
 
     @percentage.setter
     def percentage(self, percentage):
-        """Sets the percentage of this ShowKafkaTopicPartitionDiskusageRequest.
+        r"""Sets the percentage of this ShowKafkaTopicPartitionDiskusageRequest.
 
         占用磁盘大小，查询大于占比的分区。
 

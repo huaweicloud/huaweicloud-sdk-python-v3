@@ -26,7 +26,7 @@ class SendNotificationsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SendNotificationsResponse
+        r"""SendNotificationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SendNotificationsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SendNotificationsResponse.
+        r"""Gets the job_id of this SendNotificationsResponse.
 
         发送桌面消息任务id
 
@@ -55,7 +55,7 @@ class SendNotificationsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SendNotificationsResponse.
+        r"""Sets the job_id of this SendNotificationsResponse.
 
         发送桌面消息任务id
 

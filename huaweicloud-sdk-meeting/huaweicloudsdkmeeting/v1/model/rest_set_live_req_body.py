@@ -25,7 +25,7 @@ class RestSetLiveReqBody:
     }
 
     def __init__(self, is_live=None):
-        """RestSetLiveReqBody
+        r"""RestSetLiveReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestSetLiveReqBody:
 
     @property
     def is_live(self):
-        """Gets the is_live of this RestSetLiveReqBody.
+        r"""Gets the is_live of this RestSetLiveReqBody.
 
         会议直播开关。默认值为0。 - 0: 停止会议直播 - 1: 启动会议直播
 
@@ -53,7 +53,7 @@ class RestSetLiveReqBody:
 
     @is_live.setter
     def is_live(self, is_live):
-        """Sets the is_live of this RestSetLiveReqBody.
+        r"""Sets the is_live of this RestSetLiveReqBody.
 
         会议直播开关。默认值为0。 - 0: 停止会议直播 - 1: 启动会议直播
 

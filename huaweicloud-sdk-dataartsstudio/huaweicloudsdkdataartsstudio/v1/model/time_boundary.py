@@ -29,7 +29,7 @@ class TimeBoundary:
     }
 
     def __init__(self, start_time=None, end_time=None, time_zone=None):
-        """TimeBoundary
+        r"""TimeBoundary
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TimeBoundary:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TimeBoundary.
+        r"""Gets the start_time of this TimeBoundary.
 
         开始时间
 
@@ -68,7 +68,7 @@ class TimeBoundary:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TimeBoundary.
+        r"""Sets the start_time of this TimeBoundary.
 
         开始时间
 
@@ -79,7 +79,7 @@ class TimeBoundary:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TimeBoundary.
+        r"""Gets the end_time of this TimeBoundary.
 
         结束时间
 
@@ -90,7 +90,7 @@ class TimeBoundary:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TimeBoundary.
+        r"""Sets the end_time of this TimeBoundary.
 
         结束时间
 
@@ -101,7 +101,7 @@ class TimeBoundary:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this TimeBoundary.
+        r"""Gets the time_zone of this TimeBoundary.
 
         时区
 
@@ -112,7 +112,7 @@ class TimeBoundary:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this TimeBoundary.
+        r"""Sets the time_zone of this TimeBoundary.
 
         时区
 

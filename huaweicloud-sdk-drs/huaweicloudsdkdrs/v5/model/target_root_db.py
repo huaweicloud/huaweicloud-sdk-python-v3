@@ -27,7 +27,7 @@ class TargetRootDb:
     }
 
     def __init__(self, db_name=None, db_encoding=None):
-        """TargetRootDb
+        r"""TargetRootDb
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TargetRootDb:
 
     @property
     def db_name(self):
-        """Gets the db_name of this TargetRootDb.
+        r"""Gets the db_name of this TargetRootDb.
 
         库名。
 
@@ -61,7 +61,7 @@ class TargetRootDb:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this TargetRootDb.
+        r"""Sets the db_name of this TargetRootDb.
 
         库名。
 
@@ -72,7 +72,7 @@ class TargetRootDb:
 
     @property
     def db_encoding(self):
-        """Gets the db_encoding of this TargetRootDb.
+        r"""Gets the db_encoding of this TargetRootDb.
 
         默认编码格式是utf8。
 
@@ -83,7 +83,7 @@ class TargetRootDb:
 
     @db_encoding.setter
     def db_encoding(self, db_encoding):
-        """Sets the db_encoding of this TargetRootDb.
+        r"""Sets the db_encoding of this TargetRootDb.
 
         默认编码格式是utf8。
 

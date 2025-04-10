@@ -55,7 +55,7 @@ class InstanceListView:
     }
 
     def __init__(self, id=None, application_id=None, application_name=None, component_id=None, component_name=None, name=None, environment_id=None, environment_name=None, platform_type=None, version=None, external_accesses=None, artifacts=None, creator=None, create_time=None, update_time=None, status_detail=None):
-        """InstanceListView
+        r"""InstanceListView
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class InstanceListView:
 
     @property
     def id(self):
-        """Gets the id of this InstanceListView.
+        r"""Gets the id of this InstanceListView.
 
         应用组件实例ID。
 
@@ -159,7 +159,7 @@ class InstanceListView:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceListView.
+        r"""Sets the id of this InstanceListView.
 
         应用组件实例ID。
 
@@ -170,7 +170,7 @@ class InstanceListView:
 
     @property
     def application_id(self):
-        """Gets the application_id of this InstanceListView.
+        r"""Gets the application_id of this InstanceListView.
 
         应用ID。
 
@@ -181,7 +181,7 @@ class InstanceListView:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this InstanceListView.
+        r"""Sets the application_id of this InstanceListView.
 
         应用ID。
 
@@ -192,7 +192,7 @@ class InstanceListView:
 
     @property
     def application_name(self):
-        """Gets the application_name of this InstanceListView.
+        r"""Gets the application_name of this InstanceListView.
 
         应用名称。
 
@@ -203,7 +203,7 @@ class InstanceListView:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this InstanceListView.
+        r"""Sets the application_name of this InstanceListView.
 
         应用名称。
 
@@ -214,7 +214,7 @@ class InstanceListView:
 
     @property
     def component_id(self):
-        """Gets the component_id of this InstanceListView.
+        r"""Gets the component_id of this InstanceListView.
 
         组件ID。
 
@@ -225,7 +225,7 @@ class InstanceListView:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this InstanceListView.
+        r"""Sets the component_id of this InstanceListView.
 
         组件ID。
 
@@ -236,7 +236,7 @@ class InstanceListView:
 
     @property
     def component_name(self):
-        """Gets the component_name of this InstanceListView.
+        r"""Gets the component_name of this InstanceListView.
 
         组件名称。
 
@@ -247,7 +247,7 @@ class InstanceListView:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this InstanceListView.
+        r"""Sets the component_name of this InstanceListView.
 
         组件名称。
 
@@ -258,7 +258,7 @@ class InstanceListView:
 
     @property
     def name(self):
-        """Gets the name of this InstanceListView.
+        r"""Gets the name of this InstanceListView.
 
         应用组件实例名称。
 
@@ -269,7 +269,7 @@ class InstanceListView:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceListView.
+        r"""Sets the name of this InstanceListView.
 
         应用组件实例名称。
 
@@ -280,7 +280,7 @@ class InstanceListView:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this InstanceListView.
+        r"""Gets the environment_id of this InstanceListView.
 
         应用组件环境ID。
 
@@ -291,7 +291,7 @@ class InstanceListView:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this InstanceListView.
+        r"""Sets the environment_id of this InstanceListView.
 
         应用组件环境ID。
 
@@ -302,7 +302,7 @@ class InstanceListView:
 
     @property
     def environment_name(self):
-        """Gets the environment_name of this InstanceListView.
+        r"""Gets the environment_name of this InstanceListView.
 
         环境名称。
 
@@ -313,7 +313,7 @@ class InstanceListView:
 
     @environment_name.setter
     def environment_name(self, environment_name):
-        """Sets the environment_name of this InstanceListView.
+        r"""Sets the environment_name of this InstanceListView.
 
         环境名称。
 
@@ -324,7 +324,7 @@ class InstanceListView:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this InstanceListView.
+        r"""Gets the platform_type of this InstanceListView.
 
         运行平台类型。 应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
 
@@ -335,7 +335,7 @@ class InstanceListView:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this InstanceListView.
+        r"""Sets the platform_type of this InstanceListView.
 
         运行平台类型。 应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
 
@@ -346,7 +346,7 @@ class InstanceListView:
 
     @property
     def version(self):
-        """Gets the version of this InstanceListView.
+        r"""Gets the version of this InstanceListView.
 
         应用组件版本号。
 
@@ -357,7 +357,7 @@ class InstanceListView:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceListView.
+        r"""Sets the version of this InstanceListView.
 
         应用组件版本号。
 
@@ -368,7 +368,7 @@ class InstanceListView:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this InstanceListView.
+        r"""Gets the external_accesses of this InstanceListView.
 
         访问方式。
 
@@ -379,7 +379,7 @@ class InstanceListView:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this InstanceListView.
+        r"""Sets the external_accesses of this InstanceListView.
 
         访问方式。
 
@@ -390,7 +390,7 @@ class InstanceListView:
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this InstanceListView.
+        r"""Gets the artifacts of this InstanceListView.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -401,7 +401,7 @@ class InstanceListView:
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this InstanceListView.
+        r"""Sets the artifacts of this InstanceListView.
 
         组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
 
@@ -412,7 +412,7 @@ class InstanceListView:
 
     @property
     def creator(self):
-        """Gets the creator of this InstanceListView.
+        r"""Gets the creator of this InstanceListView.
 
         创建人。
 
@@ -423,7 +423,7 @@ class InstanceListView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this InstanceListView.
+        r"""Sets the creator of this InstanceListView.
 
         创建人。
 
@@ -434,7 +434,7 @@ class InstanceListView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InstanceListView.
+        r"""Gets the create_time of this InstanceListView.
 
         创建时间。
 
@@ -445,7 +445,7 @@ class InstanceListView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InstanceListView.
+        r"""Sets the create_time of this InstanceListView.
 
         创建时间。
 
@@ -456,7 +456,7 @@ class InstanceListView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this InstanceListView.
+        r"""Gets the update_time of this InstanceListView.
 
         修改时间。
 
@@ -467,7 +467,7 @@ class InstanceListView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this InstanceListView.
+        r"""Sets the update_time of this InstanceListView.
 
         修改时间。
 
@@ -478,7 +478,7 @@ class InstanceListView:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this InstanceListView.
+        r"""Gets the status_detail of this InstanceListView.
 
         :return: The status_detail of this InstanceListView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
@@ -487,7 +487,7 @@ class InstanceListView:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this InstanceListView.
+        r"""Sets the status_detail of this InstanceListView.
 
         :param status_detail: The status_detail of this InstanceListView.
         :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`

@@ -27,7 +27,7 @@ class CreateMolDockingJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateMolDockingJobRequest
+        r"""CreateMolDockingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMolDockingJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateMolDockingJobRequest.
+        r"""Gets the eihealth_project_id of this CreateMolDockingJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateMolDockingJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateMolDockingJobRequest.
+        r"""Sets the eihealth_project_id of this CreateMolDockingJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateMolDockingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMolDockingJobRequest.
+        r"""Gets the body of this CreateMolDockingJobRequest.
 
         :return: The body of this CreateMolDockingJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateMolDockingJobReq`
@@ -80,7 +80,7 @@ class CreateMolDockingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMolDockingJobRequest.
+        r"""Sets the body of this CreateMolDockingJobRequest.
 
         :param body: The body of this CreateMolDockingJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateMolDockingJobReq`

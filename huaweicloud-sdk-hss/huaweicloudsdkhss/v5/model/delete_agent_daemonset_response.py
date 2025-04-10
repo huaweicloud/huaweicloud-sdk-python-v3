@@ -24,7 +24,7 @@ class DeleteAgentDaemonsetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAgentDaemonsetResponse
+        r"""DeleteAgentDaemonsetResponse
 
         The model defined in huaweicloud sdk
 

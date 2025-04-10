@@ -27,7 +27,7 @@ class CountResourcesByTagsRequest:
     }
 
     def __init__(self, resource_type=None, body=None):
-        """CountResourcesByTagsRequest
+        r"""CountResourcesByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CountResourcesByTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CountResourcesByTagsRequest.
+        r"""Gets the resource_type of this CountResourcesByTagsRequest.
 
         资源类型
 
@@ -60,7 +60,7 @@ class CountResourcesByTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CountResourcesByTagsRequest.
+        r"""Sets the resource_type of this CountResourcesByTagsRequest.
 
         资源类型
 
@@ -71,7 +71,7 @@ class CountResourcesByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountResourcesByTagsRequest.
+        r"""Gets the body of this CountResourcesByTagsRequest.
 
         :return: The body of this CountResourcesByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.QueryResourcesRequestBody`
@@ -80,7 +80,7 @@ class CountResourcesByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountResourcesByTagsRequest.
+        r"""Sets the body of this CountResourcesByTagsRequest.
 
         :param body: The body of this CountResourcesByTagsRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.QueryResourcesRequestBody`

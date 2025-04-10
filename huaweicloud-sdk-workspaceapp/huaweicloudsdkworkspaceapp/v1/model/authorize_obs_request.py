@@ -25,7 +25,7 @@ class AuthorizeObsRequest:
     }
 
     def __init__(self, body=None):
-        """AuthorizeObsRequest
+        r"""AuthorizeObsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AuthorizeObsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AuthorizeObsRequest.
+        r"""Gets the body of this AuthorizeObsRequest.
 
         :return: The body of this AuthorizeObsRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizeObsReq`
@@ -52,7 +52,7 @@ class AuthorizeObsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AuthorizeObsRequest.
+        r"""Sets the body of this AuthorizeObsRequest.
 
         :param body: The body of this AuthorizeObsRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizeObsReq`

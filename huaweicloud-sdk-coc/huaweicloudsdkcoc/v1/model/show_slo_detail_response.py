@@ -34,7 +34,7 @@ class ShowSloDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, application_name=None, application_id=None, slo_targets=None, sli_list=None):
-        """ShowSloDetailResponse
+        r"""ShowSloDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSloDetailResponse.
+        r"""Gets the id of this ShowSloDetailResponse.
 
         SLO的ID
 
@@ -83,7 +83,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSloDetailResponse.
+        r"""Sets the id of this ShowSloDetailResponse.
 
         SLO的ID
 
@@ -94,7 +94,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @property
     def application_name(self):
-        """Gets the application_name of this ShowSloDetailResponse.
+        r"""Gets the application_name of this ShowSloDetailResponse.
 
         应用名称
 
@@ -105,7 +105,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this ShowSloDetailResponse.
+        r"""Sets the application_name of this ShowSloDetailResponse.
 
         应用名称
 
@@ -116,7 +116,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowSloDetailResponse.
+        r"""Gets the application_id of this ShowSloDetailResponse.
 
         应用ID
 
@@ -127,7 +127,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowSloDetailResponse.
+        r"""Sets the application_id of this ShowSloDetailResponse.
 
         应用ID
 
@@ -138,7 +138,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @property
     def slo_targets(self):
-        """Gets the slo_targets of this ShowSloDetailResponse.
+        r"""Gets the slo_targets of this ShowSloDetailResponse.
 
         SLO的目标值
 
@@ -149,7 +149,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @slo_targets.setter
     def slo_targets(self, slo_targets):
-        """Sets the slo_targets of this ShowSloDetailResponse.
+        r"""Sets the slo_targets of this ShowSloDetailResponse.
 
         SLO的目标值
 
@@ -160,7 +160,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @property
     def sli_list(self):
-        """Gets the sli_list of this ShowSloDetailResponse.
+        r"""Gets the sli_list of this ShowSloDetailResponse.
 
         SLi列表
 
@@ -171,7 +171,7 @@ class ShowSloDetailResponse(SdkResponse):
 
     @sli_list.setter
     def sli_list(self, sli_list):
-        """Sets the sli_list of this ShowSloDetailResponse.
+        r"""Sets the sli_list of this ShowSloDetailResponse.
 
         SLi列表
 

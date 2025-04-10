@@ -27,7 +27,7 @@ class VarsStructure:
     }
 
     def __init__(self, var_key=None, var_value=None):
-        """VarsStructure
+        r"""VarsStructure
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VarsStructure:
 
     @property
     def var_key(self):
-        """Gets the var_key of this VarsStructure.
+        r"""Gets the var_key of this VarsStructure.
 
         参数名称。
 
@@ -61,7 +61,7 @@ class VarsStructure:
 
     @var_key.setter
     def var_key(self, var_key):
-        """Sets the var_key of this VarsStructure.
+        r"""Sets the var_key of this VarsStructure.
 
         参数名称。
 
@@ -72,7 +72,7 @@ class VarsStructure:
 
     @property
     def var_value(self):
-        """Gets the var_value of this VarsStructure.
+        r"""Gets the var_value of this VarsStructure.
 
         参数的值。
 
@@ -83,7 +83,7 @@ class VarsStructure:
 
     @var_value.setter
     def var_value(self, var_value):
-        """Sets the var_value of this VarsStructure.
+        r"""Sets the var_value of this VarsStructure.
 
         参数的值。
 

@@ -30,7 +30,7 @@ class ShowQaPairsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, qa_pairs=None):
-        """ShowQaPairsResponse
+        r"""ShowQaPairsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowQaPairsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowQaPairsResponse.
+        r"""Gets the error_code of this ShowQaPairsResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowQaPairsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowQaPairsResponse.
+        r"""Sets the error_code of this ShowQaPairsResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowQaPairsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowQaPairsResponse.
+        r"""Gets the error_msg of this ShowQaPairsResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class ShowQaPairsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowQaPairsResponse.
+        r"""Sets the error_msg of this ShowQaPairsResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class ShowQaPairsResponse(SdkResponse):
 
     @property
     def qa_pairs(self):
-        """Gets the qa_pairs of this ShowQaPairsResponse.
+        r"""Gets the qa_pairs of this ShowQaPairsResponse.
 
         语料列表
 
@@ -113,7 +113,7 @@ class ShowQaPairsResponse(SdkResponse):
 
     @qa_pairs.setter
     def qa_pairs(self, qa_pairs):
-        """Sets the qa_pairs of this ShowQaPairsResponse.
+        r"""Sets the qa_pairs of this ShowQaPairsResponse.
 
         语料列表
 

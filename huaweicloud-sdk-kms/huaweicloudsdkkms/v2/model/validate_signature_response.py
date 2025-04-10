@@ -28,7 +28,7 @@ class ValidateSignatureResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, signature_valid=None):
-        """ValidateSignatureResponse
+        r"""ValidateSignatureResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ValidateSignatureResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this ValidateSignatureResponse.
+        r"""Gets the key_id of this ValidateSignatureResponse.
 
         密钥ID。
 
@@ -62,7 +62,7 @@ class ValidateSignatureResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ValidateSignatureResponse.
+        r"""Sets the key_id of this ValidateSignatureResponse.
 
         密钥ID。
 
@@ -73,7 +73,7 @@ class ValidateSignatureResponse(SdkResponse):
 
     @property
     def signature_valid(self):
-        """Gets the signature_valid of this ValidateSignatureResponse.
+        r"""Gets the signature_valid of this ValidateSignatureResponse.
 
         签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
 
@@ -84,7 +84,7 @@ class ValidateSignatureResponse(SdkResponse):
 
     @signature_valid.setter
     def signature_valid(self, signature_valid):
-        """Sets the signature_valid of this ValidateSignatureResponse.
+        r"""Sets the signature_valid of this ValidateSignatureResponse.
 
         签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
 

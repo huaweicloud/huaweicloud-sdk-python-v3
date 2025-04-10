@@ -29,7 +29,7 @@ class UpdateDatabaseUserInfoRequest:
     }
 
     def __init__(self, cluster_id=None, name=None, body=None):
-        """UpdateDatabaseUserInfoRequest
+        r"""UpdateDatabaseUserInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDatabaseUserInfoRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateDatabaseUserInfoRequest.
+        r"""Gets the cluster_id of this UpdateDatabaseUserInfoRequest.
 
         cluster_id
 
@@ -66,7 +66,7 @@ class UpdateDatabaseUserInfoRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateDatabaseUserInfoRequest.
+        r"""Sets the cluster_id of this UpdateDatabaseUserInfoRequest.
 
         cluster_id
 
@@ -77,7 +77,7 @@ class UpdateDatabaseUserInfoRequest:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDatabaseUserInfoRequest.
+        r"""Gets the name of this UpdateDatabaseUserInfoRequest.
 
         name
 
@@ -88,7 +88,7 @@ class UpdateDatabaseUserInfoRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDatabaseUserInfoRequest.
+        r"""Sets the name of this UpdateDatabaseUserInfoRequest.
 
         name
 
@@ -99,7 +99,7 @@ class UpdateDatabaseUserInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatabaseUserInfoRequest.
+        r"""Gets the body of this UpdateDatabaseUserInfoRequest.
 
         :return: The body of this UpdateDatabaseUserInfoRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.DatabaseUserInfoReq`
@@ -108,7 +108,7 @@ class UpdateDatabaseUserInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatabaseUserInfoRequest.
+        r"""Sets the body of this UpdateDatabaseUserInfoRequest.
 
         :param body: The body of this UpdateDatabaseUserInfoRequest.
         :type body: :class:`huaweicloudsdkdws.v2.DatabaseUserInfoReq`

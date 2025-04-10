@@ -27,7 +27,7 @@ class ServerInfo:
     }
 
     def __init__(self, server_id=None, flavor_ref=None):
-        """ServerInfo
+        r"""ServerInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ServerInfo:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerInfo.
+        r"""Gets the server_id of this ServerInfo.
 
         指定的生产站点云服务器ID。
 
@@ -60,7 +60,7 @@ class ServerInfo:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerInfo.
+        r"""Sets the server_id of this ServerInfo.
 
         指定的生产站点云服务器ID。
 
@@ -71,7 +71,7 @@ class ServerInfo:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this ServerInfo.
+        r"""Gets the flavor_ref of this ServerInfo.
 
         指定的容灾站点云服务器的flavor ID。
 
@@ -82,7 +82,7 @@ class ServerInfo:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this ServerInfo.
+        r"""Sets the flavor_ref of this ServerInfo.
 
         指定的容灾站点云服务器的flavor ID。
 

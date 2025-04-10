@@ -29,7 +29,7 @@ class OpenGaussInstanceActionRequest:
     }
 
     def __init__(self, expand_cluster=None, enlarge_volume=None, is_auto_pay=None):
-        """OpenGaussInstanceActionRequest
+        r"""OpenGaussInstanceActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OpenGaussInstanceActionRequest:
 
     @property
     def expand_cluster(self):
-        """Gets the expand_cluster of this OpenGaussInstanceActionRequest.
+        r"""Gets the expand_cluster of this OpenGaussInstanceActionRequest.
 
         :return: The expand_cluster of this OpenGaussInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
@@ -66,7 +66,7 @@ class OpenGaussInstanceActionRequest:
 
     @expand_cluster.setter
     def expand_cluster(self, expand_cluster):
-        """Sets the expand_cluster of this OpenGaussInstanceActionRequest.
+        r"""Sets the expand_cluster of this OpenGaussInstanceActionRequest.
 
         :param expand_cluster: The expand_cluster of this OpenGaussInstanceActionRequest.
         :type expand_cluster: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
@@ -75,7 +75,7 @@ class OpenGaussInstanceActionRequest:
 
     @property
     def enlarge_volume(self):
-        """Gets the enlarge_volume of this OpenGaussInstanceActionRequest.
+        r"""Gets the enlarge_volume of this OpenGaussInstanceActionRequest.
 
         :return: The enlarge_volume of this OpenGaussInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
@@ -84,7 +84,7 @@ class OpenGaussInstanceActionRequest:
 
     @enlarge_volume.setter
     def enlarge_volume(self, enlarge_volume):
-        """Sets the enlarge_volume of this OpenGaussInstanceActionRequest.
+        r"""Sets the enlarge_volume of this OpenGaussInstanceActionRequest.
 
         :param enlarge_volume: The enlarge_volume of this OpenGaussInstanceActionRequest.
         :type enlarge_volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
@@ -93,7 +93,7 @@ class OpenGaussInstanceActionRequest:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this OpenGaussInstanceActionRequest.
+        r"""Gets the is_auto_pay of this OpenGaussInstanceActionRequest.
 
         包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该方式。
 
@@ -104,7 +104,7 @@ class OpenGaussInstanceActionRequest:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this OpenGaussInstanceActionRequest.
+        r"""Sets the is_auto_pay of this OpenGaussInstanceActionRequest.
 
         包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该方式。
 

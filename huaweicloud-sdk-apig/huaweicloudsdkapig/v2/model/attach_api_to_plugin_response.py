@@ -26,7 +26,7 @@ class AttachApiToPluginResponse(SdkResponse):
     }
 
     def __init__(self, attached_plugins=None):
-        """AttachApiToPluginResponse
+        r"""AttachApiToPluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AttachApiToPluginResponse(SdkResponse):
 
     @property
     def attached_plugins(self):
-        """Gets the attached_plugins of this AttachApiToPluginResponse.
+        r"""Gets the attached_plugins of this AttachApiToPluginResponse.
 
         绑定插件信息列表。
 
@@ -55,7 +55,7 @@ class AttachApiToPluginResponse(SdkResponse):
 
     @attached_plugins.setter
     def attached_plugins(self, attached_plugins):
-        """Sets the attached_plugins of this AttachApiToPluginResponse.
+        r"""Sets the attached_plugins of this AttachApiToPluginResponse.
 
         绑定插件信息列表。
 

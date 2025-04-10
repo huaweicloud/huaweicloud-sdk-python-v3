@@ -33,7 +33,7 @@ class ObjectCompareResultDetails:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, source_db_value=None, target_db_value=None, error_message=None):
-        """ObjectCompareResultDetails
+        r"""ObjectCompareResultDetails
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ObjectCompareResultDetails:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this ObjectCompareResultDetails.
+        r"""Gets the source_db_name of this ObjectCompareResultDetails.
 
         源库名称。
 
@@ -80,7 +80,7 @@ class ObjectCompareResultDetails:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this ObjectCompareResultDetails.
+        r"""Sets the source_db_name of this ObjectCompareResultDetails.
 
         源库名称。
 
@@ -91,7 +91,7 @@ class ObjectCompareResultDetails:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this ObjectCompareResultDetails.
+        r"""Gets the target_db_name of this ObjectCompareResultDetails.
 
         目标库名称。
 
@@ -102,7 +102,7 @@ class ObjectCompareResultDetails:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this ObjectCompareResultDetails.
+        r"""Sets the target_db_name of this ObjectCompareResultDetails.
 
         目标库名称。
 
@@ -113,7 +113,7 @@ class ObjectCompareResultDetails:
 
     @property
     def source_db_value(self):
-        """Gets the source_db_value of this ObjectCompareResultDetails.
+        r"""Gets the source_db_value of this ObjectCompareResultDetails.
 
         在源库的值。
 
@@ -124,7 +124,7 @@ class ObjectCompareResultDetails:
 
     @source_db_value.setter
     def source_db_value(self, source_db_value):
-        """Sets the source_db_value of this ObjectCompareResultDetails.
+        r"""Sets the source_db_value of this ObjectCompareResultDetails.
 
         在源库的值。
 
@@ -135,7 +135,7 @@ class ObjectCompareResultDetails:
 
     @property
     def target_db_value(self):
-        """Gets the target_db_value of this ObjectCompareResultDetails.
+        r"""Gets the target_db_value of this ObjectCompareResultDetails.
 
         在目标库的值。
 
@@ -146,7 +146,7 @@ class ObjectCompareResultDetails:
 
     @target_db_value.setter
     def target_db_value(self, target_db_value):
-        """Sets the target_db_value of this ObjectCompareResultDetails.
+        r"""Sets the target_db_value of this ObjectCompareResultDetails.
 
         在目标库的值。
 
@@ -157,7 +157,7 @@ class ObjectCompareResultDetails:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ObjectCompareResultDetails.
+        r"""Gets the error_message of this ObjectCompareResultDetails.
 
         错误信息。
 
@@ -168,7 +168,7 @@ class ObjectCompareResultDetails:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ObjectCompareResultDetails.
+        r"""Sets the error_message of this ObjectCompareResultDetails.
 
         错误信息。
 

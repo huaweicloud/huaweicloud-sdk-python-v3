@@ -25,7 +25,7 @@ class DeleteAccessConfigRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteAccessConfigRequest
+        r"""DeleteAccessConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteAccessConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAccessConfigRequest.
+        r"""Gets the body of this DeleteAccessConfigRequest.
 
         :return: The body of this DeleteAccessConfigRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteAccessConfigRequestBody`
@@ -52,7 +52,7 @@ class DeleteAccessConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAccessConfigRequest.
+        r"""Sets the body of this DeleteAccessConfigRequest.
 
         :param body: The body of this DeleteAccessConfigRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteAccessConfigRequestBody`

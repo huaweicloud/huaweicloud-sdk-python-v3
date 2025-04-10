@@ -34,7 +34,7 @@ class CreateAppVersionResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, version=None, values=None, create_time=None, update_time=None):
-        """CreateAppVersionResponse
+        r"""CreateAppVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppVersionResponse.
+        r"""Gets the app_id of this CreateAppVersionResponse.
 
         应用模板ID
 
@@ -83,7 +83,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppVersionResponse.
+        r"""Sets the app_id of this CreateAppVersionResponse.
 
         应用模板ID
 
@@ -94,7 +94,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateAppVersionResponse.
+        r"""Gets the version of this CreateAppVersionResponse.
 
         应用版本
 
@@ -105,7 +105,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateAppVersionResponse.
+        r"""Sets the version of this CreateAppVersionResponse.
 
         应用版本
 
@@ -116,7 +116,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this CreateAppVersionResponse.
+        r"""Gets the values of this CreateAppVersionResponse.
 
         应用版本配置
 
@@ -127,7 +127,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateAppVersionResponse.
+        r"""Sets the values of this CreateAppVersionResponse.
 
         应用版本配置
 
@@ -138,7 +138,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateAppVersionResponse.
+        r"""Gets the create_time of this CreateAppVersionResponse.
 
         创建时间
 
@@ -149,7 +149,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateAppVersionResponse.
+        r"""Sets the create_time of this CreateAppVersionResponse.
 
         创建时间
 
@@ -160,7 +160,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateAppVersionResponse.
+        r"""Gets the update_time of this CreateAppVersionResponse.
 
         最后一次修改时间
 
@@ -171,7 +171,7 @@ class CreateAppVersionResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateAppVersionResponse.
+        r"""Sets the update_time of this CreateAppVersionResponse.
 
         最后一次修改时间
 

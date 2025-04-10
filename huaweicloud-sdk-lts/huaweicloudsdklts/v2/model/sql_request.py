@@ -41,7 +41,7 @@ class SqlRequest:
     }
 
     def __init__(self, is_time_range_relative=None, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None):
-        """SqlRequest
+        r"""SqlRequest
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class SqlRequest:
 
     @property
     def is_time_range_relative(self):
-        """Gets the is_time_range_relative of this SqlRequest.
+        r"""Gets the is_time_range_relative of this SqlRequest.
 
         是时间范围相对
 
@@ -104,7 +104,7 @@ class SqlRequest:
 
     @is_time_range_relative.setter
     def is_time_range_relative(self, is_time_range_relative):
-        """Sets the is_time_range_relative of this SqlRequest.
+        r"""Sets the is_time_range_relative of this SqlRequest.
 
         是时间范围相对
 
@@ -115,7 +115,7 @@ class SqlRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this SqlRequest.
+        r"""Gets the log_stream_id of this SqlRequest.
 
         日志流id
 
@@ -126,7 +126,7 @@ class SqlRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this SqlRequest.
+        r"""Sets the log_stream_id of this SqlRequest.
 
         日志流id
 
@@ -137,7 +137,7 @@ class SqlRequest:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this SqlRequest.
+        r"""Gets the log_stream_name of this SqlRequest.
 
         日志流名称
 
@@ -148,7 +148,7 @@ class SqlRequest:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this SqlRequest.
+        r"""Sets the log_stream_name of this SqlRequest.
 
         日志流名称
 
@@ -159,7 +159,7 @@ class SqlRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this SqlRequest.
+        r"""Gets the log_group_id of this SqlRequest.
 
         日志组id
 
@@ -170,7 +170,7 @@ class SqlRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this SqlRequest.
+        r"""Sets the log_group_id of this SqlRequest.
 
         日志组id
 
@@ -181,7 +181,7 @@ class SqlRequest:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this SqlRequest.
+        r"""Gets the log_group_name of this SqlRequest.
 
         日志组名称
 
@@ -192,7 +192,7 @@ class SqlRequest:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this SqlRequest.
+        r"""Sets the log_group_name of this SqlRequest.
 
         日志组名称
 
@@ -203,7 +203,7 @@ class SqlRequest:
 
     @property
     def sql(self):
-        """Gets the sql of this SqlRequest.
+        r"""Gets the sql of this SqlRequest.
 
         sql语句
 
@@ -214,7 +214,7 @@ class SqlRequest:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this SqlRequest.
+        r"""Sets the sql of this SqlRequest.
 
         sql语句
 
@@ -225,7 +225,7 @@ class SqlRequest:
 
     @property
     def sql_request_title(self):
-        """Gets the sql_request_title of this SqlRequest.
+        r"""Gets the sql_request_title of this SqlRequest.
 
         图表名称
 
@@ -236,7 +236,7 @@ class SqlRequest:
 
     @sql_request_title.setter
     def sql_request_title(self, sql_request_title):
-        """Sets the sql_request_title of this SqlRequest.
+        r"""Sets the sql_request_title of this SqlRequest.
 
         图表名称
 
@@ -247,7 +247,7 @@ class SqlRequest:
 
     @property
     def search_time_range(self):
-        """Gets the search_time_range of this SqlRequest.
+        r"""Gets the search_time_range of this SqlRequest.
 
         查询执行任务时最近数据的时间范围(当search_time_range_unit为minute，则最大值为60;当search_time_range_unit为hour，则最大值为24)
 
@@ -258,7 +258,7 @@ class SqlRequest:
 
     @search_time_range.setter
     def search_time_range(self, search_time_range):
-        """Sets the search_time_range of this SqlRequest.
+        r"""Sets the search_time_range of this SqlRequest.
 
         查询执行任务时最近数据的时间范围(当search_time_range_unit为minute，则最大值为60;当search_time_range_unit为hour，则最大值为24)
 
@@ -269,7 +269,7 @@ class SqlRequest:
 
     @property
     def search_time_range_unit(self):
-        """Gets the search_time_range_unit of this SqlRequest.
+        r"""Gets the search_time_range_unit of this SqlRequest.
 
         查询时间单位
 
@@ -280,7 +280,7 @@ class SqlRequest:
 
     @search_time_range_unit.setter
     def search_time_range_unit(self, search_time_range_unit):
-        """Sets the search_time_range_unit of this SqlRequest.
+        r"""Sets the search_time_range_unit of this SqlRequest.
 
         查询时间单位
 

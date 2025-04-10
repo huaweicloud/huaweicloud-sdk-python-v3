@@ -35,7 +35,7 @@ class ModelArtsContentRsp:
     }
 
     def __init__(self, service_name=None, access_address=None, verify_body=None, ak=None, sk=None, project_id=None):
-        """ModelArtsContentRsp
+        r"""ModelArtsContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ModelArtsContentRsp:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ModelArtsContentRsp.
+        r"""Gets the service_name of this ModelArtsContentRsp.
 
         服务名称
 
@@ -89,7 +89,7 @@ class ModelArtsContentRsp:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ModelArtsContentRsp.
+        r"""Sets the service_name of this ModelArtsContentRsp.
 
         服务名称
 
@@ -100,7 +100,7 @@ class ModelArtsContentRsp:
 
     @property
     def access_address(self):
-        """Gets the access_address of this ModelArtsContentRsp.
+        r"""Gets the access_address of this ModelArtsContentRsp.
 
         访问地址
 
@@ -111,7 +111,7 @@ class ModelArtsContentRsp:
 
     @access_address.setter
     def access_address(self, access_address):
-        """Sets the access_address of this ModelArtsContentRsp.
+        r"""Sets the access_address of this ModelArtsContentRsp.
 
         访问地址
 
@@ -122,7 +122,7 @@ class ModelArtsContentRsp:
 
     @property
     def verify_body(self):
-        """Gets the verify_body of this ModelArtsContentRsp.
+        r"""Gets the verify_body of this ModelArtsContentRsp.
 
         校验参数
 
@@ -133,7 +133,7 @@ class ModelArtsContentRsp:
 
     @verify_body.setter
     def verify_body(self, verify_body):
-        """Sets the verify_body of this ModelArtsContentRsp.
+        r"""Sets the verify_body of this ModelArtsContentRsp.
 
         校验参数
 
@@ -144,7 +144,7 @@ class ModelArtsContentRsp:
 
     @property
     def ak(self):
-        """Gets the ak of this ModelArtsContentRsp.
+        r"""Gets the ak of this ModelArtsContentRsp.
 
         租户的AK
 
@@ -155,7 +155,7 @@ class ModelArtsContentRsp:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ModelArtsContentRsp.
+        r"""Sets the ak of this ModelArtsContentRsp.
 
         租户的AK
 
@@ -166,7 +166,7 @@ class ModelArtsContentRsp:
 
     @property
     def sk(self):
-        """Gets the sk of this ModelArtsContentRsp.
+        r"""Gets the sk of this ModelArtsContentRsp.
 
         租户的SK
 
@@ -177,7 +177,7 @@ class ModelArtsContentRsp:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ModelArtsContentRsp.
+        r"""Sets the sk of this ModelArtsContentRsp.
 
         租户的SK
 
@@ -188,7 +188,7 @@ class ModelArtsContentRsp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ModelArtsContentRsp.
+        r"""Gets the project_id of this ModelArtsContentRsp.
 
         项目id
 
@@ -199,7 +199,7 @@ class ModelArtsContentRsp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ModelArtsContentRsp.
+        r"""Sets the project_id of this ModelArtsContentRsp.
 
         项目id
 

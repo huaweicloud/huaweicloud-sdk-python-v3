@@ -33,7 +33,7 @@ class IncidentProductCategoryV2:
     }
 
     def __init__(self, incident_product_category_id=None, incident_product_category_name=None, incident_product_category_desc=None, incident_product_category_acronym=None, can_use_support_plan=None):
-        """IncidentProductCategoryV2
+        r"""IncidentProductCategoryV2
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IncidentProductCategoryV2:
 
     @property
     def incident_product_category_id(self):
-        """Gets the incident_product_category_id of this IncidentProductCategoryV2.
+        r"""Gets the incident_product_category_id of this IncidentProductCategoryV2.
 
         产品类型id
 
@@ -82,7 +82,7 @@ class IncidentProductCategoryV2:
 
     @incident_product_category_id.setter
     def incident_product_category_id(self, incident_product_category_id):
-        """Sets the incident_product_category_id of this IncidentProductCategoryV2.
+        r"""Sets the incident_product_category_id of this IncidentProductCategoryV2.
 
         产品类型id
 
@@ -93,7 +93,7 @@ class IncidentProductCategoryV2:
 
     @property
     def incident_product_category_name(self):
-        """Gets the incident_product_category_name of this IncidentProductCategoryV2.
+        r"""Gets the incident_product_category_name of this IncidentProductCategoryV2.
 
         产品类型名称
 
@@ -104,7 +104,7 @@ class IncidentProductCategoryV2:
 
     @incident_product_category_name.setter
     def incident_product_category_name(self, incident_product_category_name):
-        """Sets the incident_product_category_name of this IncidentProductCategoryV2.
+        r"""Sets the incident_product_category_name of this IncidentProductCategoryV2.
 
         产品类型名称
 
@@ -115,7 +115,7 @@ class IncidentProductCategoryV2:
 
     @property
     def incident_product_category_desc(self):
-        """Gets the incident_product_category_desc of this IncidentProductCategoryV2.
+        r"""Gets the incident_product_category_desc of this IncidentProductCategoryV2.
 
         产品类型描述
 
@@ -126,7 +126,7 @@ class IncidentProductCategoryV2:
 
     @incident_product_category_desc.setter
     def incident_product_category_desc(self, incident_product_category_desc):
-        """Sets the incident_product_category_desc of this IncidentProductCategoryV2.
+        r"""Sets the incident_product_category_desc of this IncidentProductCategoryV2.
 
         产品类型描述
 
@@ -137,7 +137,7 @@ class IncidentProductCategoryV2:
 
     @property
     def incident_product_category_acronym(self):
-        """Gets the incident_product_category_acronym of this IncidentProductCategoryV2.
+        r"""Gets the incident_product_category_acronym of this IncidentProductCategoryV2.
 
         产品类型简称
 
@@ -148,7 +148,7 @@ class IncidentProductCategoryV2:
 
     @incident_product_category_acronym.setter
     def incident_product_category_acronym(self, incident_product_category_acronym):
-        """Sets the incident_product_category_acronym of this IncidentProductCategoryV2.
+        r"""Sets the incident_product_category_acronym of this IncidentProductCategoryV2.
 
         产品类型简称
 
@@ -159,7 +159,7 @@ class IncidentProductCategoryV2:
 
     @property
     def can_use_support_plan(self):
-        """Gets the can_use_support_plan of this IncidentProductCategoryV2.
+        r"""Gets the can_use_support_plan of this IncidentProductCategoryV2.
 
         是否可以使用支持计划权益
 
@@ -170,7 +170,7 @@ class IncidentProductCategoryV2:
 
     @can_use_support_plan.setter
     def can_use_support_plan(self, can_use_support_plan):
-        """Sets the can_use_support_plan of this IncidentProductCategoryV2.
+        r"""Sets the can_use_support_plan of this IncidentProductCategoryV2.
 
         是否可以使用支持计划权益
 

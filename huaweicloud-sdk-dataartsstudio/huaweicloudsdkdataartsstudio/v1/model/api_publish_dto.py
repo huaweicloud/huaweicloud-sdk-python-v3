@@ -35,7 +35,7 @@ class ApiPublishDTO:
     }
 
     def __init__(self, id=None, api_id=None, instance_id=None, instance_name=None, api_status=None, api_debug=None):
-        """ApiPublishDTO
+        r"""ApiPublishDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ApiPublishDTO:
 
     @property
     def id(self):
-        """Gets the id of this ApiPublishDTO.
+        r"""Gets the id of this ApiPublishDTO.
 
         发布编号
 
@@ -89,7 +89,7 @@ class ApiPublishDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiPublishDTO.
+        r"""Sets the id of this ApiPublishDTO.
 
         发布编号
 
@@ -100,7 +100,7 @@ class ApiPublishDTO:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiPublishDTO.
+        r"""Gets the api_id of this ApiPublishDTO.
 
         api编号
 
@@ -111,7 +111,7 @@ class ApiPublishDTO:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiPublishDTO.
+        r"""Sets the api_id of this ApiPublishDTO.
 
         api编号
 
@@ -122,7 +122,7 @@ class ApiPublishDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApiPublishDTO.
+        r"""Gets the instance_id of this ApiPublishDTO.
 
         集群编号
 
@@ -133,7 +133,7 @@ class ApiPublishDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApiPublishDTO.
+        r"""Sets the instance_id of this ApiPublishDTO.
 
         集群编号
 
@@ -144,7 +144,7 @@ class ApiPublishDTO:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ApiPublishDTO.
+        r"""Gets the instance_name of this ApiPublishDTO.
 
         集群名称
 
@@ -155,7 +155,7 @@ class ApiPublishDTO:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ApiPublishDTO.
+        r"""Sets the instance_name of this ApiPublishDTO.
 
         集群名称
 
@@ -166,7 +166,7 @@ class ApiPublishDTO:
 
     @property
     def api_status(self):
-        """Gets the api_status of this ApiPublishDTO.
+        r"""Gets the api_status of this ApiPublishDTO.
 
         api状态
 
@@ -177,7 +177,7 @@ class ApiPublishDTO:
 
     @api_status.setter
     def api_status(self, api_status):
-        """Sets the api_status of this ApiPublishDTO.
+        r"""Sets the api_status of this ApiPublishDTO.
 
         api状态
 
@@ -188,7 +188,7 @@ class ApiPublishDTO:
 
     @property
     def api_debug(self):
-        """Gets the api_debug of this ApiPublishDTO.
+        r"""Gets the api_debug of this ApiPublishDTO.
 
         api调试状态
 
@@ -199,7 +199,7 @@ class ApiPublishDTO:
 
     @api_debug.setter
     def api_debug(self, api_debug):
-        """Sets the api_debug of this ApiPublishDTO.
+        r"""Sets the api_debug of this ApiPublishDTO.
 
         api调试状态
 

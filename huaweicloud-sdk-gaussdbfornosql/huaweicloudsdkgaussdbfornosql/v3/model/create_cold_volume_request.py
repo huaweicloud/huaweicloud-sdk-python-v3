@@ -27,7 +27,7 @@ class CreateColdVolumeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateColdVolumeRequest
+        r"""CreateColdVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateColdVolumeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateColdVolumeRequest.
+        r"""Gets the instance_id of this CreateColdVolumeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateColdVolumeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateColdVolumeRequest.
+        r"""Sets the instance_id of this CreateColdVolumeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateColdVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateColdVolumeRequest.
+        r"""Gets the body of this CreateColdVolumeRequest.
 
         :return: The body of this CreateColdVolumeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateColdVolumeRequestBody`
@@ -80,7 +80,7 @@ class CreateColdVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateColdVolumeRequest.
+        r"""Sets the body of this CreateColdVolumeRequest.
 
         :param body: The body of this CreateColdVolumeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateColdVolumeRequestBody`

@@ -23,7 +23,7 @@ class KeystoneListRegionsRequest:
     }
 
     def __init__(self):
-        """KeystoneListRegionsRequest
+        r"""KeystoneListRegionsRequest
 
         The model defined in huaweicloud sdk
 

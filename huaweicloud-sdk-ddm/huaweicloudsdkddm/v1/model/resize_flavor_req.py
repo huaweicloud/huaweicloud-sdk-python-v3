@@ -29,7 +29,7 @@ class ResizeFlavorReq:
     }
 
     def __init__(self, spec_code=None, group_id=None, is_auto_pay=None):
-        """ResizeFlavorReq
+        r"""ResizeFlavorReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResizeFlavorReq:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ResizeFlavorReq.
+        r"""Gets the spec_code of this ResizeFlavorReq.
 
         变更至新规格的资源规格编码。
 
@@ -67,7 +67,7 @@ class ResizeFlavorReq:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ResizeFlavorReq.
+        r"""Sets the spec_code of this ResizeFlavorReq.
 
         变更至新规格的资源规格编码。
 
@@ -78,7 +78,7 @@ class ResizeFlavorReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ResizeFlavorReq.
+        r"""Gets the group_id of this ResizeFlavorReq.
 
         实例默认一个组，此时不需要传入该参数。当使用组功能创建多个组时, 需要传入需要规格变更的对应组的group_id。
 
@@ -89,7 +89,7 @@ class ResizeFlavorReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ResizeFlavorReq.
+        r"""Sets the group_id of this ResizeFlavorReq.
 
         实例默认一个组，此时不需要传入该参数。当使用组功能创建多个组时, 需要传入需要规格变更的对应组的group_id。
 
@@ -100,7 +100,7 @@ class ResizeFlavorReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeFlavorReq.
+        r"""Gets the is_auto_pay of this ResizeFlavorReq.
 
         变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
@@ -111,7 +111,7 @@ class ResizeFlavorReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeFlavorReq.
+        r"""Sets the is_auto_pay of this ResizeFlavorReq.
 
         变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 

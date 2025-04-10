@@ -25,7 +25,7 @@ class PauseScalingPolicyOption:
     }
 
     def __init__(self, action=None):
-        """PauseScalingPolicyOption
+        r"""PauseScalingPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PauseScalingPolicyOption:
 
     @property
     def action(self):
-        """Gets the action of this PauseScalingPolicyOption.
+        r"""Gets the action of this PauseScalingPolicyOption.
 
         执行或启用或停止伸缩策略操作的标识。执行：execute。启用：resume。停止：pause。
 
@@ -53,7 +53,7 @@ class PauseScalingPolicyOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PauseScalingPolicyOption.
+        r"""Sets the action of this PauseScalingPolicyOption.
 
         执行或启用或停止伸缩策略操作的标识。执行：execute。启用：resume。停止：pause。
 

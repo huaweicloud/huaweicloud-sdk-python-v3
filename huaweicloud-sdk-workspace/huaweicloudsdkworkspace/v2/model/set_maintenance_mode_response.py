@@ -24,7 +24,7 @@ class SetMaintenanceModeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetMaintenanceModeResponse
+        r"""SetMaintenanceModeResponse
 
         The model defined in huaweicloud sdk
 

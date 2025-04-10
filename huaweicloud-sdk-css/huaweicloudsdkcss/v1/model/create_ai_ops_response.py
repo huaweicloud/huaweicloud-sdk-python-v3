@@ -24,7 +24,7 @@ class CreateAiOpsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateAiOpsResponse
+        r"""CreateAiOpsResponse
 
         The model defined in huaweicloud sdk
 

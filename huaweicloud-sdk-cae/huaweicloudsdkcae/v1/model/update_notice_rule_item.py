@@ -31,7 +31,7 @@ class UpdateNoticeRuleItem:
     }
 
     def __init__(self, event_name=None, scope=None, trigger_policy=None, enable=None):
-        """UpdateNoticeRuleItem
+        r"""UpdateNoticeRuleItem
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateNoticeRuleItem:
 
     @property
     def event_name(self):
-        """Gets the event_name of this UpdateNoticeRuleItem.
+        r"""Gets the event_name of this UpdateNoticeRuleItem.
 
         触发事件名称，支持实例调度成功、实例调度失败、健康检查成功、健康检查失败、镜像拉取成功、镜像拉取失败、容器启动成功、容器启动失败、卷挂载成功、卷挂载失败。
 
@@ -73,7 +73,7 @@ class UpdateNoticeRuleItem:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this UpdateNoticeRuleItem.
+        r"""Sets the event_name of this UpdateNoticeRuleItem.
 
         触发事件名称，支持实例调度成功、实例调度失败、健康检查成功、健康检查失败、镜像拉取成功、镜像拉取失败、容器启动成功、容器启动失败、卷挂载成功、卷挂载失败。
 
@@ -84,7 +84,7 @@ class UpdateNoticeRuleItem:
 
     @property
     def scope(self):
-        """Gets the scope of this UpdateNoticeRuleItem.
+        r"""Gets the scope of this UpdateNoticeRuleItem.
 
         :return: The scope of this UpdateNoticeRuleItem.
         :rtype: :class:`huaweicloudsdkcae.v1.NoticeRuleScope`
@@ -93,7 +93,7 @@ class UpdateNoticeRuleItem:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this UpdateNoticeRuleItem.
+        r"""Sets the scope of this UpdateNoticeRuleItem.
 
         :param scope: The scope of this UpdateNoticeRuleItem.
         :type scope: :class:`huaweicloudsdkcae.v1.NoticeRuleScope`
@@ -102,7 +102,7 @@ class UpdateNoticeRuleItem:
 
     @property
     def trigger_policy(self):
-        """Gets the trigger_policy of this UpdateNoticeRuleItem.
+        r"""Gets the trigger_policy of this UpdateNoticeRuleItem.
 
         :return: The trigger_policy of this UpdateNoticeRuleItem.
         :rtype: :class:`huaweicloudsdkcae.v1.TriggerPolicy`
@@ -111,7 +111,7 @@ class UpdateNoticeRuleItem:
 
     @trigger_policy.setter
     def trigger_policy(self, trigger_policy):
-        """Sets the trigger_policy of this UpdateNoticeRuleItem.
+        r"""Sets the trigger_policy of this UpdateNoticeRuleItem.
 
         :param trigger_policy: The trigger_policy of this UpdateNoticeRuleItem.
         :type trigger_policy: :class:`huaweicloudsdkcae.v1.TriggerPolicy`
@@ -120,7 +120,7 @@ class UpdateNoticeRuleItem:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateNoticeRuleItem.
+        r"""Gets the enable of this UpdateNoticeRuleItem.
 
         是否启用。
 
@@ -131,7 +131,7 @@ class UpdateNoticeRuleItem:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateNoticeRuleItem.
+        r"""Sets the enable of this UpdateNoticeRuleItem.
 
         是否启用。
 

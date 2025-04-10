@@ -43,7 +43,7 @@ class ShowHistoryTasksRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None, task_type=None):
-        """ShowHistoryTasksRequest
+        r"""ShowHistoryTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHistoryTasksRequest.
+        r"""Gets the enterprise_project_id of this ShowHistoryTasksRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -117,7 +117,7 @@ class ShowHistoryTasksRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHistoryTasksRequest.
+        r"""Sets the enterprise_project_id of this ShowHistoryTasksRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -128,7 +128,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowHistoryTasksRequest.
+        r"""Gets the page_size of this ShowHistoryTasksRequest.
 
         单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
@@ -139,7 +139,7 @@ class ShowHistoryTasksRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowHistoryTasksRequest.
+        r"""Sets the page_size of this ShowHistoryTasksRequest.
 
         单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
@@ -150,7 +150,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ShowHistoryTasksRequest.
+        r"""Gets the page_number of this ShowHistoryTasksRequest.
 
         当前查询第几页，取值范围为1-65535。默认值1。
 
@@ -161,7 +161,7 @@ class ShowHistoryTasksRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ShowHistoryTasksRequest.
+        r"""Sets the page_number of this ShowHistoryTasksRequest.
 
         当前查询第几页，取值范围为1-65535。默认值1。
 
@@ -172,7 +172,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowHistoryTasksRequest.
+        r"""Gets the status of this ShowHistoryTasksRequest.
 
         任务状态。 task_inprocess 表示任务处理中，task_done表示任务完成。
 
@@ -183,7 +183,7 @@ class ShowHistoryTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHistoryTasksRequest.
+        r"""Sets the status of this ShowHistoryTasksRequest.
 
         任务状态。 task_inprocess 表示任务处理中，task_done表示任务完成。
 
@@ -194,7 +194,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ShowHistoryTasksRequest.
+        r"""Gets the start_date of this ShowHistoryTasksRequest.
 
         查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -205,7 +205,7 @@ class ShowHistoryTasksRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ShowHistoryTasksRequest.
+        r"""Sets the start_date of this ShowHistoryTasksRequest.
 
         查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -216,7 +216,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowHistoryTasksRequest.
+        r"""Gets the end_date of this ShowHistoryTasksRequest.
 
         查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -227,7 +227,7 @@ class ShowHistoryTasksRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowHistoryTasksRequest.
+        r"""Sets the end_date of this ShowHistoryTasksRequest.
 
         查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -238,7 +238,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def order_field(self):
-        """Gets the order_field of this ShowHistoryTasksRequest.
+        r"""Gets the order_field of this ShowHistoryTasksRequest.
 
         用来排序的字段，支持的字段有“task_type”：任务的类型，“total”：url总数，“processing”：处理中的url个数， “succeed”：成功处理的url个数，“failed”：处理失败的url个数，“create_time”：任务的创建时间。order_field和order_type必须同时传值，否则使用默认值\"create_time\" 和 \"desc\"：降序。
 
@@ -249,7 +249,7 @@ class ShowHistoryTasksRequest:
 
     @order_field.setter
     def order_field(self, order_field):
-        """Sets the order_field of this ShowHistoryTasksRequest.
+        r"""Sets the order_field of this ShowHistoryTasksRequest.
 
         用来排序的字段，支持的字段有“task_type”：任务的类型，“total”：url总数，“processing”：处理中的url个数， “succeed”：成功处理的url个数，“failed”：处理失败的url个数，“create_time”：任务的创建时间。order_field和order_type必须同时传值，否则使用默认值\"create_time\" 和 \"desc\"：降序。
 
@@ -260,7 +260,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def order_type(self):
-        """Gets the order_type of this ShowHistoryTasksRequest.
+        r"""Gets the order_type of this ShowHistoryTasksRequest.
 
         desc：降序，或者asc：升序。默认值desc。
 
@@ -271,7 +271,7 @@ class ShowHistoryTasksRequest:
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this ShowHistoryTasksRequest.
+        r"""Sets the order_type of this ShowHistoryTasksRequest.
 
         desc：降序，或者asc：升序。默认值desc。
 
@@ -282,7 +282,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def file_type(self):
-        """Gets the file_type of this ShowHistoryTasksRequest.
+        r"""Gets the file_type of this ShowHistoryTasksRequest.
 
         默认是文件file。file：文件,directory：目录。
 
@@ -293,7 +293,7 @@ class ShowHistoryTasksRequest:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ShowHistoryTasksRequest.
+        r"""Sets the file_type of this ShowHistoryTasksRequest.
 
         默认是文件file。file：文件,directory：目录。
 
@@ -304,7 +304,7 @@ class ShowHistoryTasksRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowHistoryTasksRequest.
+        r"""Gets the task_type of this ShowHistoryTasksRequest.
 
         任务类型，refresh：刷新任务；preheating：预热任务
 
@@ -315,7 +315,7 @@ class ShowHistoryTasksRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowHistoryTasksRequest.
+        r"""Sets the task_type of this ShowHistoryTasksRequest.
 
         任务类型，refresh：刷新任务；preheating：预热任务
 

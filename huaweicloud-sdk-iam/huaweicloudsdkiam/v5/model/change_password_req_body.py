@@ -27,7 +27,7 @@ class ChangePasswordReqBody:
     }
 
     def __init__(self, new_password=None, old_password=None):
-        """ChangePasswordReqBody
+        r"""ChangePasswordReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangePasswordReqBody:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ChangePasswordReqBody.
+        r"""Gets the new_password of this ChangePasswordReqBody.
 
         IAM用户的新密码。
 
@@ -59,7 +59,7 @@ class ChangePasswordReqBody:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ChangePasswordReqBody.
+        r"""Sets the new_password of this ChangePasswordReqBody.
 
         IAM用户的新密码。
 
@@ -70,7 +70,7 @@ class ChangePasswordReqBody:
 
     @property
     def old_password(self):
-        """Gets the old_password of this ChangePasswordReqBody.
+        r"""Gets the old_password of this ChangePasswordReqBody.
 
         IAM用户的旧密码。
 
@@ -81,7 +81,7 @@ class ChangePasswordReqBody:
 
     @old_password.setter
     def old_password(self, old_password):
-        """Sets the old_password of this ChangePasswordReqBody.
+        r"""Sets the old_password of this ChangePasswordReqBody.
 
         IAM用户的旧密码。
 

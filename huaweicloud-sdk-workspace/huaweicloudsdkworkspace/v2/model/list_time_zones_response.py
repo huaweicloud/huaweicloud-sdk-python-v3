@@ -26,7 +26,7 @@ class ListTimeZonesResponse(SdkResponse):
     }
 
     def __init__(self, time_zones=None):
-        """ListTimeZonesResponse
+        r"""ListTimeZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTimeZonesResponse(SdkResponse):
 
     @property
     def time_zones(self):
-        """Gets the time_zones of this ListTimeZonesResponse.
+        r"""Gets the time_zones of this ListTimeZonesResponse.
 
         时区列表。
 
@@ -55,7 +55,7 @@ class ListTimeZonesResponse(SdkResponse):
 
     @time_zones.setter
     def time_zones(self, time_zones):
-        """Sets the time_zones of this ListTimeZonesResponse.
+        r"""Sets the time_zones of this ListTimeZonesResponse.
 
         时区列表。
 

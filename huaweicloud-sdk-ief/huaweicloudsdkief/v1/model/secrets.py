@@ -27,7 +27,7 @@ class Secrets:
     }
 
     def __init__(self, name=None, key=None):
-        """Secrets
+        r"""Secrets
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Secrets:
 
     @property
     def name(self):
-        """Gets the name of this Secrets.
+        r"""Gets the name of this Secrets.
 
         密钥的名称
 
@@ -59,7 +59,7 @@ class Secrets:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Secrets.
+        r"""Sets the name of this Secrets.
 
         密钥的名称
 
@@ -70,7 +70,7 @@ class Secrets:
 
     @property
     def key(self):
-        """Gets the key of this Secrets.
+        r"""Gets the key of this Secrets.
 
         密钥的属性名
 
@@ -81,7 +81,7 @@ class Secrets:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Secrets.
+        r"""Sets the key of this Secrets.
 
         密钥的属性名
 

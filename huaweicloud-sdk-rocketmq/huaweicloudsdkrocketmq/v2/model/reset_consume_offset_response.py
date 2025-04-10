@@ -26,7 +26,7 @@ class ResetConsumeOffsetResponse(SdkResponse):
     }
 
     def __init__(self, queues=None):
-        """ResetConsumeOffsetResponse
+        r"""ResetConsumeOffsetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetConsumeOffsetResponse(SdkResponse):
 
     @property
     def queues(self):
-        """Gets the queues of this ResetConsumeOffsetResponse.
+        r"""Gets the queues of this ResetConsumeOffsetResponse.
 
         重置的队列。
 
@@ -55,7 +55,7 @@ class ResetConsumeOffsetResponse(SdkResponse):
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this ResetConsumeOffsetResponse.
+        r"""Sets the queues of this ResetConsumeOffsetResponse.
 
         重置的队列。
 

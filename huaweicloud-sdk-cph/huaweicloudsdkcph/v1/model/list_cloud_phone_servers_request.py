@@ -41,7 +41,7 @@ class ListCloudPhoneServersRequest:
     }
 
     def __init__(self, offset=None, limit=None, server_name=None, server_id=None, network_version=None, phone_model_name=None, create_since=None, create_until=None, status=None):
-        """ListCloudPhoneServersRequest
+        r"""ListCloudPhoneServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCloudPhoneServersRequest.
+        r"""Gets the offset of this ListCloudPhoneServersRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -110,7 +110,7 @@ class ListCloudPhoneServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCloudPhoneServersRequest.
+        r"""Sets the offset of this ListCloudPhoneServersRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -121,7 +121,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudPhoneServersRequest.
+        r"""Gets the limit of this ListCloudPhoneServersRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -132,7 +132,7 @@ class ListCloudPhoneServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudPhoneServersRequest.
+        r"""Sets the limit of this ListCloudPhoneServersRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -143,7 +143,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ListCloudPhoneServersRequest.
+        r"""Gets the server_name of this ListCloudPhoneServersRequest.
 
         云手机服务器名称，支持模糊查询。
 
@@ -154,7 +154,7 @@ class ListCloudPhoneServersRequest:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ListCloudPhoneServersRequest.
+        r"""Sets the server_name of this ListCloudPhoneServersRequest.
 
         云手机服务器名称，支持模糊查询。
 
@@ -165,7 +165,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListCloudPhoneServersRequest.
+        r"""Gets the server_id of this ListCloudPhoneServersRequest.
 
         云手机服务器的唯一标识。
 
@@ -176,7 +176,7 @@ class ListCloudPhoneServersRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListCloudPhoneServersRequest.
+        r"""Sets the server_id of this ListCloudPhoneServersRequest.
 
         云手机服务器的唯一标识。
 
@@ -187,7 +187,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def network_version(self):
-        """Gets the network_version of this ListCloudPhoneServersRequest.
+        r"""Gets the network_version of this ListCloudPhoneServersRequest.
 
         云手机服务器是否为自定义网络标识。 - v1：系统定义网络的云手机服务器 - v2：自定义网络的云手机服务器
 
@@ -198,7 +198,7 @@ class ListCloudPhoneServersRequest:
 
     @network_version.setter
     def network_version(self, network_version):
-        """Sets the network_version of this ListCloudPhoneServersRequest.
+        r"""Sets the network_version of this ListCloudPhoneServersRequest.
 
         云手机服务器是否为自定义网络标识。 - v1：系统定义网络的云手机服务器 - v2：自定义网络的云手机服务器
 
@@ -209,7 +209,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this ListCloudPhoneServersRequest.
+        r"""Gets the phone_model_name of this ListCloudPhoneServersRequest.
 
         手机规格名称。
 
@@ -220,7 +220,7 @@ class ListCloudPhoneServersRequest:
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this ListCloudPhoneServersRequest.
+        r"""Sets the phone_model_name of this ListCloudPhoneServersRequest.
 
         手机规格名称。
 
@@ -231,7 +231,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListCloudPhoneServersRequest.
+        r"""Gets the create_since of this ListCloudPhoneServersRequest.
 
         查询的起始时间戳。
 
@@ -242,7 +242,7 @@ class ListCloudPhoneServersRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListCloudPhoneServersRequest.
+        r"""Sets the create_since of this ListCloudPhoneServersRequest.
 
         查询的起始时间戳。
 
@@ -253,7 +253,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListCloudPhoneServersRequest.
+        r"""Gets the create_until of this ListCloudPhoneServersRequest.
 
         查询的结束时间戳。
 
@@ -264,7 +264,7 @@ class ListCloudPhoneServersRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListCloudPhoneServersRequest.
+        r"""Sets the create_until of this ListCloudPhoneServersRequest.
 
         查询的结束时间戳。
 
@@ -275,7 +275,7 @@ class ListCloudPhoneServersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCloudPhoneServersRequest.
+        r"""Gets the status of this ListCloudPhoneServersRequest.
 
         服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
@@ -286,7 +286,7 @@ class ListCloudPhoneServersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCloudPhoneServersRequest.
+        r"""Sets the status of this ListCloudPhoneServersRequest.
 
         服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 

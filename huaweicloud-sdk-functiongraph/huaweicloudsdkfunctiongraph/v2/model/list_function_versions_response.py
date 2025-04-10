@@ -30,7 +30,7 @@ class ListFunctionVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None, next_marker=None, count=None):
-        """ListFunctionVersionsResponse
+        r"""ListFunctionVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListFunctionVersionsResponse.
+        r"""Gets the versions of this ListFunctionVersionsResponse.
 
         版本列表
 
@@ -69,7 +69,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListFunctionVersionsResponse.
+        r"""Sets the versions of this ListFunctionVersionsResponse.
 
         版本列表
 
@@ -80,7 +80,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListFunctionVersionsResponse.
+        r"""Gets the next_marker of this ListFunctionVersionsResponse.
 
         下一次记录位置
 
@@ -91,7 +91,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListFunctionVersionsResponse.
+        r"""Sets the next_marker of this ListFunctionVersionsResponse.
 
         下一次记录位置
 
@@ -102,7 +102,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionVersionsResponse.
+        r"""Gets the count of this ListFunctionVersionsResponse.
 
         版本总数
 
@@ -113,7 +113,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionVersionsResponse.
+        r"""Sets the count of this ListFunctionVersionsResponse.
 
         版本总数
 

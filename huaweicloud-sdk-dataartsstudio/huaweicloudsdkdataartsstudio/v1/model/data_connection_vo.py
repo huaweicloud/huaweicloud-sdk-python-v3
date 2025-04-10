@@ -31,7 +31,7 @@ class DataConnectionVO:
     }
 
     def __init__(self, dw_name=None, dw_id=None, display_name=None, dw_type=None):
-        """DataConnectionVO
+        r"""DataConnectionVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataConnectionVO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this DataConnectionVO.
+        r"""Gets the dw_name of this DataConnectionVO.
 
         数据连接名称。
 
@@ -75,7 +75,7 @@ class DataConnectionVO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this DataConnectionVO.
+        r"""Sets the dw_name of this DataConnectionVO.
 
         数据连接名称。
 
@@ -86,7 +86,7 @@ class DataConnectionVO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this DataConnectionVO.
+        r"""Gets the dw_id of this DataConnectionVO.
 
         数据连接ID。
 
@@ -97,7 +97,7 @@ class DataConnectionVO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this DataConnectionVO.
+        r"""Sets the dw_id of this DataConnectionVO.
 
         数据连接ID。
 
@@ -108,7 +108,7 @@ class DataConnectionVO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this DataConnectionVO.
+        r"""Gets the display_name of this DataConnectionVO.
 
         数据连接名称，适配现有实现。
 
@@ -119,7 +119,7 @@ class DataConnectionVO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this DataConnectionVO.
+        r"""Sets the display_name of this DataConnectionVO.
 
         数据连接名称，适配现有实现。
 
@@ -130,7 +130,7 @@ class DataConnectionVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this DataConnectionVO.
+        r"""Gets the dw_type of this DataConnectionVO.
 
         数据连接类型。
 
@@ -141,7 +141,7 @@ class DataConnectionVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this DataConnectionVO.
+        r"""Sets the dw_type of this DataConnectionVO.
 
         数据连接类型。
 

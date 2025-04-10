@@ -36,7 +36,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
     }
 
     def __init__(self, job_name=None, build_number=None, project_id=None, project_name=None, parameters=None, build_steps=None):
-        """ShowHistoryDetailsResponse
+        r"""ShowHistoryDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowHistoryDetailsResponse.
+        r"""Gets the job_name of this ShowHistoryDetailsResponse.
 
         构建任务名称
 
@@ -90,7 +90,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowHistoryDetailsResponse.
+        r"""Sets the job_name of this ShowHistoryDetailsResponse.
 
         构建任务名称
 
@@ -101,7 +101,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @property
     def build_number(self):
-        """Gets the build_number of this ShowHistoryDetailsResponse.
+        r"""Gets the build_number of this ShowHistoryDetailsResponse.
 
         构建编号
 
@@ -112,7 +112,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @build_number.setter
     def build_number(self, build_number):
-        """Sets the build_number of this ShowHistoryDetailsResponse.
+        r"""Sets the build_number of this ShowHistoryDetailsResponse.
 
         构建编号
 
@@ -123,7 +123,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowHistoryDetailsResponse.
+        r"""Gets the project_id of this ShowHistoryDetailsResponse.
 
         构建任务所在项目的ID
 
@@ -134,7 +134,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowHistoryDetailsResponse.
+        r"""Sets the project_id of this ShowHistoryDetailsResponse.
 
         构建任务所在项目的ID
 
@@ -145,7 +145,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowHistoryDetailsResponse.
+        r"""Gets the project_name of this ShowHistoryDetailsResponse.
 
         构建任务所在项目的名称
 
@@ -156,7 +156,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowHistoryDetailsResponse.
+        r"""Sets the project_name of this ShowHistoryDetailsResponse.
 
         构建任务所在项目的名称
 
@@ -167,7 +167,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowHistoryDetailsResponse.
+        r"""Gets the parameters of this ShowHistoryDetailsResponse.
 
         本次构建的参数，Map类型，敏感参数值返回*号
 
@@ -178,7 +178,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowHistoryDetailsResponse.
+        r"""Sets the parameters of this ShowHistoryDetailsResponse.
 
         本次构建的参数，Map类型，敏感参数值返回*号
 
@@ -189,7 +189,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @property
     def build_steps(self):
-        """Gets the build_steps of this ShowHistoryDetailsResponse.
+        r"""Gets the build_steps of this ShowHistoryDetailsResponse.
 
         本次任务的构建步骤详情，返回的步骤为页面可见步骤
 
@@ -200,7 +200,7 @@ class ShowHistoryDetailsResponse(SdkResponse):
 
     @build_steps.setter
     def build_steps(self, build_steps):
-        """Sets the build_steps of this ShowHistoryDetailsResponse.
+        r"""Sets the build_steps of this ShowHistoryDetailsResponse.
 
         本次任务的构建步骤详情，返回的步骤为页面可见步骤
 

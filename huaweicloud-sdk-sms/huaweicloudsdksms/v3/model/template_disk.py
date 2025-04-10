@@ -35,7 +35,7 @@ class TemplateDisk:
     }
 
     def __init__(self, id=None, index=None, name=None, disktype=None, size=None, device_use=None):
-        """TemplateDisk
+        r"""TemplateDisk
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TemplateDisk:
 
     @property
     def id(self):
-        """Gets the id of this TemplateDisk.
+        r"""Gets the id of this TemplateDisk.
 
         磁盘ID
 
@@ -85,7 +85,7 @@ class TemplateDisk:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateDisk.
+        r"""Sets the id of this TemplateDisk.
 
         磁盘ID
 
@@ -96,7 +96,7 @@ class TemplateDisk:
 
     @property
     def index(self):
-        """Gets the index of this TemplateDisk.
+        r"""Gets the index of this TemplateDisk.
 
         磁盘序号，从0开始
 
@@ -107,7 +107,7 @@ class TemplateDisk:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TemplateDisk.
+        r"""Sets the index of this TemplateDisk.
 
         磁盘序号，从0开始
 
@@ -118,7 +118,7 @@ class TemplateDisk:
 
     @property
     def name(self):
-        """Gets the name of this TemplateDisk.
+        r"""Gets the name of this TemplateDisk.
 
         磁盘名称
 
@@ -129,7 +129,7 @@ class TemplateDisk:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateDisk.
+        r"""Sets the name of this TemplateDisk.
 
         磁盘名称
 
@@ -140,7 +140,7 @@ class TemplateDisk:
 
     @property
     def disktype(self):
-        """Gets the disktype of this TemplateDisk.
+        r"""Gets the disktype of this TemplateDisk.
 
         磁盘类型，同volumetype字段
 
@@ -151,7 +151,7 @@ class TemplateDisk:
 
     @disktype.setter
     def disktype(self, disktype):
-        """Sets the disktype of this TemplateDisk.
+        r"""Sets the disktype of this TemplateDisk.
 
         磁盘类型，同volumetype字段
 
@@ -162,7 +162,7 @@ class TemplateDisk:
 
     @property
     def size(self):
-        """Gets the size of this TemplateDisk.
+        r"""Gets the size of this TemplateDisk.
 
         磁盘大小，单位：GB
 
@@ -173,7 +173,7 @@ class TemplateDisk:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this TemplateDisk.
+        r"""Sets the size of this TemplateDisk.
 
         磁盘大小，单位：GB
 
@@ -184,7 +184,7 @@ class TemplateDisk:
 
     @property
     def device_use(self):
-        """Gets the device_use of this TemplateDisk.
+        r"""Gets the device_use of this TemplateDisk.
 
         磁盘使用
 
@@ -195,7 +195,7 @@ class TemplateDisk:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this TemplateDisk.
+        r"""Sets the device_use of this TemplateDisk.
 
         磁盘使用
 

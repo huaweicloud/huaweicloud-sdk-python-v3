@@ -24,7 +24,7 @@ class CancelRemoteAssistanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelRemoteAssistanceResponse
+        r"""CancelRemoteAssistanceResponse
 
         The model defined in huaweicloud sdk
 

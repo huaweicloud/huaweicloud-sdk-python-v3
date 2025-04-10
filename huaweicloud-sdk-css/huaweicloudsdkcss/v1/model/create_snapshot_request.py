@@ -27,7 +27,7 @@ class CreateSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateSnapshotRequest
+        r"""CreateSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSnapshotRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateSnapshotRequest.
+        r"""Gets the cluster_id of this CreateSnapshotRequest.
 
         指定要创建快照的集群ID。
 
@@ -60,7 +60,7 @@ class CreateSnapshotRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateSnapshotRequest.
+        r"""Sets the cluster_id of this CreateSnapshotRequest.
 
         指定要创建快照的集群ID。
 
@@ -71,7 +71,7 @@ class CreateSnapshotRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSnapshotRequest.
+        r"""Gets the body of this CreateSnapshotRequest.
 
         :return: The body of this CreateSnapshotRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateSnapshotReq`
@@ -80,7 +80,7 @@ class CreateSnapshotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSnapshotRequest.
+        r"""Sets the body of this CreateSnapshotRequest.
 
         :param body: The body of this CreateSnapshotRequest.
         :type body: :class:`huaweicloudsdkcss.v1.CreateSnapshotReq`

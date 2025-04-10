@@ -25,7 +25,7 @@ class CreateAudioJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAudioJobRequest
+        r"""CreateAudioJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAudioJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAudioJobRequest.
+        r"""Gets the body of this CreateAudioJobRequest.
 
         :return: The body of this CreateAudioJobRequest.
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequestBody`
@@ -52,7 +52,7 @@ class CreateAudioJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAudioJobRequest.
+        r"""Sets the body of this CreateAudioJobRequest.
 
         :param body: The body of this CreateAudioJobRequest.
         :type body: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequestBody`

@@ -43,7 +43,7 @@ class ThrottleBaseInfo:
     }
 
     def __init__(self, app_call_limits=None, name=None, time_unit=None, remark=None, api_call_limits=None, type=None, enable_adaptive_control=None, user_call_limits=None, time_interval=None, ip_call_limits=None):
-        """ThrottleBaseInfo
+        r"""ThrottleBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ThrottleBaseInfo:
 
     @property
     def app_call_limits(self):
-        """Gets the app_call_limits of this ThrottleBaseInfo.
+        r"""Gets the app_call_limits of this ThrottleBaseInfo.
 
         APP流量限制是指一个API在时长之内被每个APP访问的次数上限，该数值不超过用户流量限制值。输入的值不超过2147483647。正整数。 
 
@@ -113,7 +113,7 @@ class ThrottleBaseInfo:
 
     @app_call_limits.setter
     def app_call_limits(self, app_call_limits):
-        """Sets the app_call_limits of this ThrottleBaseInfo.
+        r"""Sets the app_call_limits of this ThrottleBaseInfo.
 
         APP流量限制是指一个API在时长之内被每个APP访问的次数上限，该数值不超过用户流量限制值。输入的值不超过2147483647。正整数。 
 
@@ -124,7 +124,7 @@ class ThrottleBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this ThrottleBaseInfo.
+        r"""Gets the name of this ThrottleBaseInfo.
 
         流控策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -135,7 +135,7 @@ class ThrottleBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ThrottleBaseInfo.
+        r"""Sets the name of this ThrottleBaseInfo.
 
         流控策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -146,7 +146,7 @@ class ThrottleBaseInfo:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ThrottleBaseInfo.
+        r"""Gets the time_unit of this ThrottleBaseInfo.
 
         流控的时间单位
 
@@ -157,7 +157,7 @@ class ThrottleBaseInfo:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ThrottleBaseInfo.
+        r"""Sets the time_unit of this ThrottleBaseInfo.
 
         流控的时间单位
 
@@ -168,7 +168,7 @@ class ThrottleBaseInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ThrottleBaseInfo.
+        r"""Gets the remark of this ThrottleBaseInfo.
 
         流控策略描述字符长度不超过255。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -179,7 +179,7 @@ class ThrottleBaseInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ThrottleBaseInfo.
+        r"""Sets the remark of this ThrottleBaseInfo.
 
         流控策略描述字符长度不超过255。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -190,7 +190,7 @@ class ThrottleBaseInfo:
 
     @property
     def api_call_limits(self):
-        """Gets the api_call_limits of this ThrottleBaseInfo.
+        r"""Gets the api_call_limits of this ThrottleBaseInfo.
 
         API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
 
@@ -201,7 +201,7 @@ class ThrottleBaseInfo:
 
     @api_call_limits.setter
     def api_call_limits(self, api_call_limits):
-        """Sets the api_call_limits of this ThrottleBaseInfo.
+        r"""Sets the api_call_limits of this ThrottleBaseInfo.
 
         API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
 
@@ -212,7 +212,7 @@ class ThrottleBaseInfo:
 
     @property
     def type(self):
-        """Gets the type of this ThrottleBaseInfo.
+        r"""Gets the type of this ThrottleBaseInfo.
 
         流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
 
@@ -223,7 +223,7 @@ class ThrottleBaseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ThrottleBaseInfo.
+        r"""Sets the type of this ThrottleBaseInfo.
 
         流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
 
@@ -234,7 +234,7 @@ class ThrottleBaseInfo:
 
     @property
     def enable_adaptive_control(self):
-        """Gets the enable_adaptive_control of this ThrottleBaseInfo.
+        r"""Gets the enable_adaptive_control of this ThrottleBaseInfo.
 
         是否开启动态流控： - TRUE - FALSE  暂不支持
 
@@ -245,7 +245,7 @@ class ThrottleBaseInfo:
 
     @enable_adaptive_control.setter
     def enable_adaptive_control(self, enable_adaptive_control):
-        """Sets the enable_adaptive_control of this ThrottleBaseInfo.
+        r"""Sets the enable_adaptive_control of this ThrottleBaseInfo.
 
         是否开启动态流控： - TRUE - FALSE  暂不支持
 
@@ -256,7 +256,7 @@ class ThrottleBaseInfo:
 
     @property
     def user_call_limits(self):
-        """Gets the user_call_limits of this ThrottleBaseInfo.
+        r"""Gets the user_call_limits of this ThrottleBaseInfo.
 
         用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -267,7 +267,7 @@ class ThrottleBaseInfo:
 
     @user_call_limits.setter
     def user_call_limits(self, user_call_limits):
-        """Sets the user_call_limits of this ThrottleBaseInfo.
+        r"""Sets the user_call_limits of this ThrottleBaseInfo.
 
         用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -278,7 +278,7 @@ class ThrottleBaseInfo:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this ThrottleBaseInfo.
+        r"""Gets the time_interval of this ThrottleBaseInfo.
 
         流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
 
@@ -289,7 +289,7 @@ class ThrottleBaseInfo:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this ThrottleBaseInfo.
+        r"""Sets the time_interval of this ThrottleBaseInfo.
 
         流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
 
@@ -300,7 +300,7 @@ class ThrottleBaseInfo:
 
     @property
     def ip_call_limits(self):
-        """Gets the ip_call_limits of this ThrottleBaseInfo.
+        r"""Gets the ip_call_limits of this ThrottleBaseInfo.
 
         源IP流量限制是指一个API在时长之内被每个IP访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -311,7 +311,7 @@ class ThrottleBaseInfo:
 
     @ip_call_limits.setter
     def ip_call_limits(self, ip_call_limits):
-        """Sets the ip_call_limits of this ThrottleBaseInfo.
+        r"""Sets the ip_call_limits of this ThrottleBaseInfo.
 
         源IP流量限制是指一个API在时长之内被每个IP访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 

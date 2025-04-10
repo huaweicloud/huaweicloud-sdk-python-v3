@@ -25,7 +25,7 @@ class CreateDataCompareDatabaseObject:
     }
 
     def __init__(self, id=None):
-        """CreateDataCompareDatabaseObject
+        r"""CreateDataCompareDatabaseObject
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDataCompareDatabaseObject:
 
     @property
     def id(self):
-        """Gets the id of this CreateDataCompareDatabaseObject.
+        r"""Gets the id of this CreateDataCompareDatabaseObject.
 
         两层数据库场景： 数据库名称和数据库表名称，例如格式为t_auto_db-*-*-users，其中t_auto_db为数据库名称，users为表名称。  三层数据库场景： 数据库名称、数据库schema名称、数据库表名称，例如格式为t_auto_db-*-*-schema1-*-*-users，其中t_auto_db为数据库名称，schema1为数据库schema名称，users为表名称。
 
@@ -54,7 +54,7 @@ class CreateDataCompareDatabaseObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDataCompareDatabaseObject.
+        r"""Sets the id of this CreateDataCompareDatabaseObject.
 
         两层数据库场景： 数据库名称和数据库表名称，例如格式为t_auto_db-*-*-users，其中t_auto_db为数据库名称，users为表名称。  三层数据库场景： 数据库名称、数据库schema名称、数据库表名称，例如格式为t_auto_db-*-*-schema1-*-*-users，其中t_auto_db为数据库名称，schema1为数据库schema名称，users为表名称。
 

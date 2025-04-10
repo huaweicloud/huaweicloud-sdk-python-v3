@@ -27,7 +27,7 @@ class OptionalFlavorsInfo:
     }
 
     def __init__(self, list=None, total_count=None):
-        """OptionalFlavorsInfo
+        r"""OptionalFlavorsInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OptionalFlavorsInfo:
 
     @property
     def list(self):
-        """Gets the list of this OptionalFlavorsInfo.
+        r"""Gets the list of this OptionalFlavorsInfo.
 
         实例规格变更时可用的规格列表。
 
@@ -59,7 +59,7 @@ class OptionalFlavorsInfo:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this OptionalFlavorsInfo.
+        r"""Sets the list of this OptionalFlavorsInfo.
 
         实例规格变更时可用的规格列表。
 
@@ -70,7 +70,7 @@ class OptionalFlavorsInfo:
 
     @property
     def total_count(self):
-        """Gets the total_count of this OptionalFlavorsInfo.
+        r"""Gets the total_count of this OptionalFlavorsInfo.
 
         总记录数。
 
@@ -81,7 +81,7 @@ class OptionalFlavorsInfo:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this OptionalFlavorsInfo.
+        r"""Sets the total_count of this OptionalFlavorsInfo.
 
         总记录数。
 

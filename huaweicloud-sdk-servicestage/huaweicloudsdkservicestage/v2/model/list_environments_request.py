@@ -31,7 +31,7 @@ class ListEnvironmentsRequest:
     }
 
     def __init__(self, limit=None, offset=None, order_by=None, order=None):
-        """ListEnvironmentsRequest
+        r"""ListEnvironmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEnvironmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnvironmentsRequest.
+        r"""Gets the limit of this ListEnvironmentsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -75,7 +75,7 @@ class ListEnvironmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnvironmentsRequest.
+        r"""Sets the limit of this ListEnvironmentsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -86,7 +86,7 @@ class ListEnvironmentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnvironmentsRequest.
+        r"""Gets the offset of this ListEnvironmentsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -97,7 +97,7 @@ class ListEnvironmentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnvironmentsRequest.
+        r"""Sets the offset of this ListEnvironmentsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -108,7 +108,7 @@ class ListEnvironmentsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListEnvironmentsRequest.
+        r"""Gets the order_by of this ListEnvironmentsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -119,7 +119,7 @@ class ListEnvironmentsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListEnvironmentsRequest.
+        r"""Sets the order_by of this ListEnvironmentsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -130,7 +130,7 @@ class ListEnvironmentsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListEnvironmentsRequest.
+        r"""Gets the order of this ListEnvironmentsRequest.
 
         desc/asc，默认desc。
 
@@ -141,7 +141,7 @@ class ListEnvironmentsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListEnvironmentsRequest.
+        r"""Sets the order of this ListEnvironmentsRequest.
 
         desc/asc，默认desc。
 

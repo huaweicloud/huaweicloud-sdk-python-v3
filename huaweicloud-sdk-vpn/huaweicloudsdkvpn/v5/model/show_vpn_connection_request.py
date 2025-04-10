@@ -25,7 +25,7 @@ class ShowVpnConnectionRequest:
     }
 
     def __init__(self, vpn_connection_id=None):
-        """ShowVpnConnectionRequest
+        r"""ShowVpnConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpnConnectionRequest:
 
     @property
     def vpn_connection_id(self):
-        """Gets the vpn_connection_id of this ShowVpnConnectionRequest.
+        r"""Gets the vpn_connection_id of this ShowVpnConnectionRequest.
 
         vpn连接ID
 
@@ -53,7 +53,7 @@ class ShowVpnConnectionRequest:
 
     @vpn_connection_id.setter
     def vpn_connection_id(self, vpn_connection_id):
-        """Sets the vpn_connection_id of this ShowVpnConnectionRequest.
+        r"""Sets the vpn_connection_id of this ShowVpnConnectionRequest.
 
         vpn连接ID
 

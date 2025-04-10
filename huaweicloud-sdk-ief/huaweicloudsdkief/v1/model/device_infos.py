@@ -29,7 +29,7 @@ class DeviceInfos:
     }
 
     def __init__(self, relation=None, comment=None, device_ids=None):
-        """DeviceInfos
+        r"""DeviceInfos
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeviceInfos:
 
     @property
     def relation(self):
-        """Gets the relation of this DeviceInfos.
+        r"""Gets the relation of this DeviceInfos.
 
         设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -66,7 +66,7 @@ class DeviceInfos:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this DeviceInfos.
+        r"""Sets the relation of this DeviceInfos.
 
         设备和节点关系的名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -77,7 +77,7 @@ class DeviceInfos:
 
     @property
     def comment(self):
-        """Gets the comment of this DeviceInfos.
+        r"""Gets the comment of this DeviceInfos.
 
         设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -88,7 +88,7 @@ class DeviceInfos:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this DeviceInfos.
+        r"""Sets the comment of this DeviceInfos.
 
         设备和节点关系的描述，最大长度64，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -99,7 +99,7 @@ class DeviceInfos:
 
     @property
     def device_ids(self):
-        """Gets the device_ids of this DeviceInfos.
+        r"""Gets the device_ids of this DeviceInfos.
 
         设备ID列表
 
@@ -110,7 +110,7 @@ class DeviceInfos:
 
     @device_ids.setter
     def device_ids(self, device_ids):
-        """Sets the device_ids of this DeviceInfos.
+        r"""Sets the device_ids of this DeviceInfos.
 
         设备ID列表
 

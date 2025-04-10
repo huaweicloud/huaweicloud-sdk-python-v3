@@ -29,7 +29,7 @@ class DeleteIgnoreRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """DeleteIgnoreRuleRequest
+        r"""DeleteIgnoreRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteIgnoreRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteIgnoreRuleRequest.
+        r"""Gets the enterprise_project_id of this DeleteIgnoreRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -66,7 +66,7 @@ class DeleteIgnoreRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteIgnoreRuleRequest.
+        r"""Sets the enterprise_project_id of this DeleteIgnoreRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -77,7 +77,7 @@ class DeleteIgnoreRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteIgnoreRuleRequest.
+        r"""Gets the policy_id of this DeleteIgnoreRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -88,7 +88,7 @@ class DeleteIgnoreRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteIgnoreRuleRequest.
+        r"""Sets the policy_id of this DeleteIgnoreRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -99,7 +99,7 @@ class DeleteIgnoreRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteIgnoreRuleRequest.
+        r"""Gets the rule_id of this DeleteIgnoreRuleRequest.
 
         误报屏蔽规则id，您可以通过查询误报屏蔽规则列表（ListIgnoreRule）接口的响应体中的id字段获取误报屏蔽规则id
 
@@ -110,7 +110,7 @@ class DeleteIgnoreRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteIgnoreRuleRequest.
+        r"""Sets the rule_id of this DeleteIgnoreRuleRequest.
 
         误报屏蔽规则id，您可以通过查询误报屏蔽规则列表（ListIgnoreRule）接口的响应体中的id字段获取误报屏蔽规则id
 

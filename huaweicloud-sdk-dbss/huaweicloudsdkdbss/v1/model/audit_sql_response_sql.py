@@ -49,7 +49,7 @@ class AuditSqlResponseSql:
     }
 
     def __init__(self, id=None, sql_statement=None, client_ip=None, client_name=None, db_ip=None, db_user=None, query_type=None, operated_obj_info=None, rule_name=None, risk_level=None, start_time=None, sql_response=None, db_instance=None):
-        """AuditSqlResponseSql
+        r"""AuditSqlResponseSql
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class AuditSqlResponseSql:
 
     @property
     def id(self):
-        """Gets the id of this AuditSqlResponseSql.
+        r"""Gets the id of this AuditSqlResponseSql.
 
         ID
 
@@ -136,7 +136,7 @@ class AuditSqlResponseSql:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AuditSqlResponseSql.
+        r"""Sets the id of this AuditSqlResponseSql.
 
         ID
 
@@ -147,7 +147,7 @@ class AuditSqlResponseSql:
 
     @property
     def sql_statement(self):
-        """Gets the sql_statement of this AuditSqlResponseSql.
+        r"""Gets the sql_statement of this AuditSqlResponseSql.
 
         sql语句
 
@@ -158,7 +158,7 @@ class AuditSqlResponseSql:
 
     @sql_statement.setter
     def sql_statement(self, sql_statement):
-        """Sets the sql_statement of this AuditSqlResponseSql.
+        r"""Sets the sql_statement of this AuditSqlResponseSql.
 
         sql语句
 
@@ -169,7 +169,7 @@ class AuditSqlResponseSql:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this AuditSqlResponseSql.
+        r"""Gets the client_ip of this AuditSqlResponseSql.
 
         客户端IP
 
@@ -180,7 +180,7 @@ class AuditSqlResponseSql:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this AuditSqlResponseSql.
+        r"""Sets the client_ip of this AuditSqlResponseSql.
 
         客户端IP
 
@@ -191,7 +191,7 @@ class AuditSqlResponseSql:
 
     @property
     def client_name(self):
-        """Gets the client_name of this AuditSqlResponseSql.
+        r"""Gets the client_name of this AuditSqlResponseSql.
 
         客户端名称
 
@@ -202,7 +202,7 @@ class AuditSqlResponseSql:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this AuditSqlResponseSql.
+        r"""Sets the client_name of this AuditSqlResponseSql.
 
         客户端名称
 
@@ -213,7 +213,7 @@ class AuditSqlResponseSql:
 
     @property
     def db_ip(self):
-        """Gets the db_ip of this AuditSqlResponseSql.
+        r"""Gets the db_ip of this AuditSqlResponseSql.
 
         数据库IP
 
@@ -224,7 +224,7 @@ class AuditSqlResponseSql:
 
     @db_ip.setter
     def db_ip(self, db_ip):
-        """Sets the db_ip of this AuditSqlResponseSql.
+        r"""Sets the db_ip of this AuditSqlResponseSql.
 
         数据库IP
 
@@ -235,7 +235,7 @@ class AuditSqlResponseSql:
 
     @property
     def db_user(self):
-        """Gets the db_user of this AuditSqlResponseSql.
+        r"""Gets the db_user of this AuditSqlResponseSql.
 
         数据库用户名
 
@@ -246,7 +246,7 @@ class AuditSqlResponseSql:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this AuditSqlResponseSql.
+        r"""Sets the db_user of this AuditSqlResponseSql.
 
         数据库用户名
 
@@ -257,7 +257,7 @@ class AuditSqlResponseSql:
 
     @property
     def query_type(self):
-        """Gets the query_type of this AuditSqlResponseSql.
+        r"""Gets the query_type of this AuditSqlResponseSql.
 
         查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
@@ -268,7 +268,7 @@ class AuditSqlResponseSql:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this AuditSqlResponseSql.
+        r"""Sets the query_type of this AuditSqlResponseSql.
 
         查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
 
@@ -279,7 +279,7 @@ class AuditSqlResponseSql:
 
     @property
     def operated_obj_info(self):
-        """Gets the operated_obj_info of this AuditSqlResponseSql.
+        r"""Gets the operated_obj_info of this AuditSqlResponseSql.
 
         操作对象列表
 
@@ -290,7 +290,7 @@ class AuditSqlResponseSql:
 
     @operated_obj_info.setter
     def operated_obj_info(self, operated_obj_info):
-        """Sets the operated_obj_info of this AuditSqlResponseSql.
+        r"""Sets the operated_obj_info of this AuditSqlResponseSql.
 
         操作对象列表
 
@@ -301,7 +301,7 @@ class AuditSqlResponseSql:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this AuditSqlResponseSql.
+        r"""Gets the rule_name of this AuditSqlResponseSql.
 
         规则名称
 
@@ -312,7 +312,7 @@ class AuditSqlResponseSql:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this AuditSqlResponseSql.
+        r"""Sets the rule_name of this AuditSqlResponseSql.
 
         规则名称
 
@@ -323,7 +323,7 @@ class AuditSqlResponseSql:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this AuditSqlResponseSql.
+        r"""Gets the risk_level of this AuditSqlResponseSql.
 
         风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
@@ -334,7 +334,7 @@ class AuditSqlResponseSql:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this AuditSqlResponseSql.
+        r"""Sets the risk_level of this AuditSqlResponseSql.
 
         风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
@@ -345,7 +345,7 @@ class AuditSqlResponseSql:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AuditSqlResponseSql.
+        r"""Gets the start_time of this AuditSqlResponseSql.
 
         审计开始时间
 
@@ -356,7 +356,7 @@ class AuditSqlResponseSql:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AuditSqlResponseSql.
+        r"""Sets the start_time of this AuditSqlResponseSql.
 
         审计开始时间
 
@@ -367,7 +367,7 @@ class AuditSqlResponseSql:
 
     @property
     def sql_response(self):
-        """Gets the sql_response of this AuditSqlResponseSql.
+        r"""Gets the sql_response of this AuditSqlResponseSql.
 
         响应结果 - SUCCESS - FAILED
 
@@ -378,7 +378,7 @@ class AuditSqlResponseSql:
 
     @sql_response.setter
     def sql_response(self, sql_response):
-        """Sets the sql_response of this AuditSqlResponseSql.
+        r"""Sets the sql_response of this AuditSqlResponseSql.
 
         响应结果 - SUCCESS - FAILED
 
@@ -389,7 +389,7 @@ class AuditSqlResponseSql:
 
     @property
     def db_instance(self):
-        """Gets the db_instance of this AuditSqlResponseSql.
+        r"""Gets the db_instance of this AuditSqlResponseSql.
 
         数据库实例
 
@@ -400,7 +400,7 @@ class AuditSqlResponseSql:
 
     @db_instance.setter
     def db_instance(self, db_instance):
-        """Sets the db_instance of this AuditSqlResponseSql.
+        r"""Sets the db_instance of this AuditSqlResponseSql.
 
         数据库实例
 

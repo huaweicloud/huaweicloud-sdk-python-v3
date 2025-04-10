@@ -31,7 +31,7 @@ class AccountStatus:
     }
 
     def __init__(self, cur_org_create_role=None, cur_org_open=None, has_free_trial=None, show_manage=None):
-        """AccountStatus
+        r"""AccountStatus
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AccountStatus:
 
     @property
     def cur_org_create_role(self):
-        """Gets the cur_org_create_role of this AccountStatus.
+        r"""Gets the cur_org_create_role of this AccountStatus.
 
         是否有创建实例权限
 
@@ -75,7 +75,7 @@ class AccountStatus:
 
     @cur_org_create_role.setter
     def cur_org_create_role(self, cur_org_create_role):
-        """Sets the cur_org_create_role of this AccountStatus.
+        r"""Sets the cur_org_create_role of this AccountStatus.
 
         是否有创建实例权限
 
@@ -86,7 +86,7 @@ class AccountStatus:
 
     @property
     def cur_org_open(self):
-        """Gets the cur_org_open of this AccountStatus.
+        r"""Gets the cur_org_open of this AccountStatus.
 
         帐号所属租户是否开通服务
 
@@ -97,7 +97,7 @@ class AccountStatus:
 
     @cur_org_open.setter
     def cur_org_open(self, cur_org_open):
-        """Sets the cur_org_open of this AccountStatus.
+        r"""Sets the cur_org_open of this AccountStatus.
 
         帐号所属租户是否开通服务
 
@@ -108,7 +108,7 @@ class AccountStatus:
 
     @property
     def has_free_trial(self):
-        """Gets the has_free_trial of this AccountStatus.
+        r"""Gets the has_free_trial of this AccountStatus.
 
         免费试用
 
@@ -119,7 +119,7 @@ class AccountStatus:
 
     @has_free_trial.setter
     def has_free_trial(self, has_free_trial):
-        """Sets the has_free_trial of this AccountStatus.
+        r"""Sets the has_free_trial of this AccountStatus.
 
         免费试用
 
@@ -130,7 +130,7 @@ class AccountStatus:
 
     @property
     def show_manage(self):
-        """Gets the show_manage of this AccountStatus.
+        r"""Gets the show_manage of this AccountStatus.
 
         是否有管理入口的权限
 
@@ -141,7 +141,7 @@ class AccountStatus:
 
     @show_manage.setter
     def show_manage(self, show_manage):
-        """Sets the show_manage of this AccountStatus.
+        r"""Sets the show_manage of this AccountStatus.
 
         是否有管理入口的权限
 

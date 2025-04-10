@@ -51,7 +51,7 @@ class CreateEndpointRequestBody:
     }
 
     def __init__(self, subnet_id=None, endpoint_service_id=None, vpc_id=None, enable_dns=None, tags=None, routetables=None, port_ip=None, whitelist=None, enable_whitelist=None, description=None, policy_statement=None, policy_document=None, ip_version=None, ipv6_address=None):
-        """CreateEndpointRequestBody
+        r"""CreateEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class CreateEndpointRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateEndpointRequestBody.
+        r"""Gets the subnet_id of this CreateEndpointRequestBody.
 
         创建连接Interface类型终端节点服务的终端节点时，此参数必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 说明： - VPC的子网网段不能与198.19.128.0/17重叠 - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
 
@@ -143,7 +143,7 @@ class CreateEndpointRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateEndpointRequestBody.
+        r"""Sets the subnet_id of this CreateEndpointRequestBody.
 
         创建连接Interface类型终端节点服务的终端节点时，此参数必选。 需要指定vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。 说明： - VPC的子网网段不能与198.19.128.0/17重叠 - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
 
@@ -154,7 +154,7 @@ class CreateEndpointRequestBody:
 
     @property
     def endpoint_service_id(self):
-        """Gets the endpoint_service_id of this CreateEndpointRequestBody.
+        r"""Gets the endpoint_service_id of this CreateEndpointRequestBody.
 
         终端节点服务的ID。 可以通过查询终端节点服务概 要获取要连接的终端节点服务 ID。
 
@@ -165,7 +165,7 @@ class CreateEndpointRequestBody:
 
     @endpoint_service_id.setter
     def endpoint_service_id(self, endpoint_service_id):
-        """Sets the endpoint_service_id of this CreateEndpointRequestBody.
+        r"""Sets the endpoint_service_id of this CreateEndpointRequestBody.
 
         终端节点服务的ID。 可以通过查询终端节点服务概 要获取要连接的终端节点服务 ID。
 
@@ -176,7 +176,7 @@ class CreateEndpointRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateEndpointRequestBody.
+        r"""Gets the vpc_id of this CreateEndpointRequestBody.
 
         终端节点所在的VPC的ID。
 
@@ -187,7 +187,7 @@ class CreateEndpointRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateEndpointRequestBody.
+        r"""Sets the vpc_id of this CreateEndpointRequestBody.
 
         终端节点所在的VPC的ID。
 
@@ -198,7 +198,7 @@ class CreateEndpointRequestBody:
 
     @property
     def enable_dns(self):
-        """Gets the enable_dns of this CreateEndpointRequestBody.
+        r"""Gets the enable_dns of this CreateEndpointRequestBody.
 
         是否创建域名。  - true：创建域名  - false：不创建域名 默认值为false。 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
@@ -209,7 +209,7 @@ class CreateEndpointRequestBody:
 
     @enable_dns.setter
     def enable_dns(self, enable_dns):
-        """Sets the enable_dns of this CreateEndpointRequestBody.
+        r"""Sets the enable_dns of this CreateEndpointRequestBody.
 
         是否创建域名。  - true：创建域名  - false：不创建域名 默认值为false。 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
@@ -220,7 +220,7 @@ class CreateEndpointRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateEndpointRequestBody.
+        r"""Gets the tags of this CreateEndpointRequestBody.
 
         标签列表，没有标签默认为空数组。
 
@@ -231,7 +231,7 @@ class CreateEndpointRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateEndpointRequestBody.
+        r"""Sets the tags of this CreateEndpointRequestBody.
 
         标签列表，没有标签默认为空数组。
 
@@ -242,7 +242,7 @@ class CreateEndpointRequestBody:
 
     @property
     def routetables(self):
-        """Gets the routetables of this CreateEndpointRequestBody.
+        r"""Gets the routetables of this CreateEndpointRequestBody.
 
         路由表ID列表。 创建gateway类型终端节点服务的终端节点时，此参数必选。 不设置此参数时，选择默认路由表。
 
@@ -253,7 +253,7 @@ class CreateEndpointRequestBody:
 
     @routetables.setter
     def routetables(self, routetables):
-        """Sets the routetables of this CreateEndpointRequestBody.
+        r"""Sets the routetables of this CreateEndpointRequestBody.
 
         路由表ID列表。 创建gateway类型终端节点服务的终端节点时，此参数必选。 不设置此参数时，选择默认路由表。
 
@@ -264,7 +264,7 @@ class CreateEndpointRequestBody:
 
     @property
     def port_ip(self):
-        """Gets the port_ip of this CreateEndpointRequestBody.
+        r"""Gets the port_ip of this CreateEndpointRequestBody.
 
         访问所连接的终端节点服务的IP。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，目前只支持IPv4类型 。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。
 
@@ -275,7 +275,7 @@ class CreateEndpointRequestBody:
 
     @port_ip.setter
     def port_ip(self, port_ip):
-        """Sets the port_ip of this CreateEndpointRequestBody.
+        r"""Sets the port_ip of this CreateEndpointRequestBody.
 
         访问所连接的终端节点服务的IP。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，目前只支持IPv4类型 。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。
 
@@ -286,7 +286,7 @@ class CreateEndpointRequestBody:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this CreateEndpointRequestBody.
+        r"""Gets the whitelist of this CreateEndpointRequestBody.
 
         添加用于控制访问终端节点的白名单。 创建终端节点时，支持访问控制，使用此参数可以添加IPv4或CIDR，默认空列表。 仅当创建连接Interface类型终端节点服务的终端节点时，支持设置此参数。
 
@@ -297,7 +297,7 @@ class CreateEndpointRequestBody:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this CreateEndpointRequestBody.
+        r"""Sets the whitelist of this CreateEndpointRequestBody.
 
         添加用于控制访问终端节点的白名单。 创建终端节点时，支持访问控制，使用此参数可以添加IPv4或CIDR，默认空列表。 仅当创建连接Interface类型终端节点服务的终端节点时，支持设置此参数。
 
@@ -308,7 +308,7 @@ class CreateEndpointRequestBody:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this CreateEndpointRequestBody.
+        r"""Gets the enable_whitelist of this CreateEndpointRequestBody.
 
         是否开启网络ACL隔离。
 
@@ -319,7 +319,7 @@ class CreateEndpointRequestBody:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this CreateEndpointRequestBody.
+        r"""Sets the enable_whitelist of this CreateEndpointRequestBody.
 
         是否开启网络ACL隔离。
 
@@ -330,7 +330,7 @@ class CreateEndpointRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateEndpointRequestBody.
+        r"""Gets the description of this CreateEndpointRequestBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -341,7 +341,7 @@ class CreateEndpointRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEndpointRequestBody.
+        r"""Sets the description of this CreateEndpointRequestBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -352,7 +352,7 @@ class CreateEndpointRequestBody:
 
     @property
     def policy_statement(self):
-        """Gets the policy_statement of this CreateEndpointRequestBody.
+        r"""Gets the policy_statement of this CreateEndpointRequestBody.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -363,7 +363,7 @@ class CreateEndpointRequestBody:
 
     @policy_statement.setter
     def policy_statement(self, policy_statement):
-        """Sets the policy_statement of this CreateEndpointRequestBody.
+        r"""Sets the policy_statement of this CreateEndpointRequestBody.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -374,7 +374,7 @@ class CreateEndpointRequestBody:
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this CreateEndpointRequestBody.
+        r"""Gets the policy_document of this CreateEndpointRequestBody.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
@@ -385,7 +385,7 @@ class CreateEndpointRequestBody:
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this CreateEndpointRequestBody.
+        r"""Sets the policy_document of this CreateEndpointRequestBody.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
@@ -396,7 +396,7 @@ class CreateEndpointRequestBody:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreateEndpointRequestBody.
+        r"""Gets the ip_version of this CreateEndpointRequestBody.
 
         指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
 
@@ -407,7 +407,7 @@ class CreateEndpointRequestBody:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreateEndpointRequestBody.
+        r"""Sets the ip_version of this CreateEndpointRequestBody.
 
         指定终端节点的IP版本，仅专业型终端节点支持此参数。  - ipv4,  IPv4 - dualstack, 双栈
 
@@ -418,7 +418,7 @@ class CreateEndpointRequestBody:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this CreateEndpointRequestBody.
+        r"""Gets the ipv6_address of this CreateEndpointRequestBody.
 
         访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
 
@@ -429,7 +429,7 @@ class CreateEndpointRequestBody:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this CreateEndpointRequestBody.
+        r"""Sets the ipv6_address of this CreateEndpointRequestBody.
 
         访问所连接的终端节点服务的IPv6的地址。  创建终端节点时，可以指定访问所连接的终端节点服务的IP，不指定的情况下，会使用系统生成的一个地址。  仅专业型终端节点支持此参数。
 

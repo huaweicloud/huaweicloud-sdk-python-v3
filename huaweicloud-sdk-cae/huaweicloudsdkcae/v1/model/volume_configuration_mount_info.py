@@ -29,7 +29,7 @@ class VolumeConfigurationMountInfo:
     }
 
     def __init__(self, path=None, sub_path=None, access_mode=None):
-        """VolumeConfigurationMountInfo
+        r"""VolumeConfigurationMountInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VolumeConfigurationMountInfo:
 
     @property
     def path(self):
-        """Gets the path of this VolumeConfigurationMountInfo.
+        r"""Gets the path of this VolumeConfigurationMountInfo.
 
         容器挂载路径。
 
@@ -68,7 +68,7 @@ class VolumeConfigurationMountInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this VolumeConfigurationMountInfo.
+        r"""Sets the path of this VolumeConfigurationMountInfo.
 
         容器挂载路径。
 
@@ -79,7 +79,7 @@ class VolumeConfigurationMountInfo:
 
     @property
     def sub_path(self):
-        """Gets the sub_path of this VolumeConfigurationMountInfo.
+        r"""Gets the sub_path of this VolumeConfigurationMountInfo.
 
         子路径。
 
@@ -90,7 +90,7 @@ class VolumeConfigurationMountInfo:
 
     @sub_path.setter
     def sub_path(self, sub_path):
-        """Sets the sub_path of this VolumeConfigurationMountInfo.
+        r"""Sets the sub_path of this VolumeConfigurationMountInfo.
 
         子路径。
 
@@ -101,7 +101,7 @@ class VolumeConfigurationMountInfo:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this VolumeConfigurationMountInfo.
+        r"""Gets the access_mode of this VolumeConfigurationMountInfo.
 
         读写权限。
 
@@ -112,7 +112,7 @@ class VolumeConfigurationMountInfo:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this VolumeConfigurationMountInfo.
+        r"""Sets the access_mode of this VolumeConfigurationMountInfo.
 
         读写权限。
 

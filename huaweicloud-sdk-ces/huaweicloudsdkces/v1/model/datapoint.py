@@ -37,7 +37,7 @@ class Datapoint:
     }
 
     def __init__(self, max=None, min=None, average=None, sum=None, variance=None, timestamp=None, unit=None):
-        """Datapoint
+        r"""Datapoint
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class Datapoint:
 
     @property
     def max(self):
-        """Gets the max of this Datapoint.
+        r"""Gets the max of this Datapoint.
 
         聚合周期内指标数据的最大值。
 
@@ -95,7 +95,7 @@ class Datapoint:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this Datapoint.
+        r"""Sets the max of this Datapoint.
 
         聚合周期内指标数据的最大值。
 
@@ -106,7 +106,7 @@ class Datapoint:
 
     @property
     def min(self):
-        """Gets the min of this Datapoint.
+        r"""Gets the min of this Datapoint.
 
         聚合周期内指标数据的最小值。
 
@@ -117,7 +117,7 @@ class Datapoint:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this Datapoint.
+        r"""Sets the min of this Datapoint.
 
         聚合周期内指标数据的最小值。
 
@@ -128,7 +128,7 @@ class Datapoint:
 
     @property
     def average(self):
-        """Gets the average of this Datapoint.
+        r"""Gets the average of this Datapoint.
 
         聚合周期内指标数据的平均值。
 
@@ -139,7 +139,7 @@ class Datapoint:
 
     @average.setter
     def average(self, average):
-        """Sets the average of this Datapoint.
+        r"""Sets the average of this Datapoint.
 
         聚合周期内指标数据的平均值。
 
@@ -150,7 +150,7 @@ class Datapoint:
 
     @property
     def sum(self):
-        """Gets the sum of this Datapoint.
+        r"""Gets the sum of this Datapoint.
 
         聚合周期内指标数据的求和值。
 
@@ -161,7 +161,7 @@ class Datapoint:
 
     @sum.setter
     def sum(self, sum):
-        """Sets the sum of this Datapoint.
+        r"""Sets the sum of this Datapoint.
 
         聚合周期内指标数据的求和值。
 
@@ -172,7 +172,7 @@ class Datapoint:
 
     @property
     def variance(self):
-        """Gets the variance of this Datapoint.
+        r"""Gets the variance of this Datapoint.
 
         聚合周期内指标数据的方差。
 
@@ -183,7 +183,7 @@ class Datapoint:
 
     @variance.setter
     def variance(self, variance):
-        """Sets the variance of this Datapoint.
+        r"""Sets the variance of this Datapoint.
 
         聚合周期内指标数据的方差。
 
@@ -194,7 +194,7 @@ class Datapoint:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this Datapoint.
+        r"""Gets the timestamp of this Datapoint.
 
         指标采集时间，UNIX时间戳，单位毫秒。
 
@@ -205,7 +205,7 @@ class Datapoint:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this Datapoint.
+        r"""Sets the timestamp of this Datapoint.
 
         指标采集时间，UNIX时间戳，单位毫秒。
 
@@ -216,7 +216,7 @@ class Datapoint:
 
     @property
     def unit(self):
-        """Gets the unit of this Datapoint.
+        r"""Gets the unit of this Datapoint.
 
         指标单位。
 
@@ -227,7 +227,7 @@ class Datapoint:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Datapoint.
+        r"""Sets the unit of this Datapoint.
 
         指标单位。
 

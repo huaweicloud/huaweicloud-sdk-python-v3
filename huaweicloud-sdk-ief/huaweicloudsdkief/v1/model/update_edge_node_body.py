@@ -25,7 +25,7 @@ class UpdateEdgeNodeBody:
     }
 
     def __init__(self, node=None):
-        """UpdateEdgeNodeBody
+        r"""UpdateEdgeNodeBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEdgeNodeBody:
 
     @property
     def node(self):
-        """Gets the node of this UpdateEdgeNodeBody.
+        r"""Gets the node of this UpdateEdgeNodeBody.
 
         :return: The node of this UpdateEdgeNodeBody.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
@@ -51,7 +51,7 @@ class UpdateEdgeNodeBody:
 
     @node.setter
     def node(self, node):
-        """Sets the node of this UpdateEdgeNodeBody.
+        r"""Sets the node of this UpdateEdgeNodeBody.
 
         :param node: The node of this UpdateEdgeNodeBody.
         :type node: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`

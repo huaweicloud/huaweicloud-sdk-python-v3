@@ -23,7 +23,7 @@ class DictionaryParent:
     }
 
     def __init__(self):
-        """DictionaryParent
+        r"""DictionaryParent
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class CreateDisasterRecoveryRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDisasterRecoveryRequest
+        r"""CreateDisasterRecoveryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDisasterRecoveryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDisasterRecoveryRequest.
+        r"""Gets the instance_id of this CreateDisasterRecoveryRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateDisasterRecoveryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDisasterRecoveryRequest.
+        r"""Sets the instance_id of this CreateDisasterRecoveryRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateDisasterRecoveryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDisasterRecoveryRequest.
+        r"""Gets the body of this CreateDisasterRecoveryRequest.
 
         :return: The body of this CreateDisasterRecoveryRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ConstructDisasterRecoveryBody`
@@ -80,7 +80,7 @@ class CreateDisasterRecoveryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDisasterRecoveryRequest.
+        r"""Sets the body of this CreateDisasterRecoveryRequest.
 
         :param body: The body of this CreateDisasterRecoveryRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ConstructDisasterRecoveryBody`

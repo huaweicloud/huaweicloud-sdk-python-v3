@@ -29,7 +29,7 @@ class Grantee:
     }
 
     def __init__(self, id=None, canned=None):
-        """Grantee
+        r"""Grantee
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class Grantee:
 
     @property
     def id(self):
-        """Gets the id of this Grantee.
+        r"""Gets the id of this Grantee.
 
         Account ID of the grantee
 
@@ -63,7 +63,7 @@ class Grantee:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Grantee.
+        r"""Sets the id of this Grantee.
 
         Account ID of the grantee
 
@@ -74,7 +74,7 @@ class Grantee:
 
     @property
     def canned(self):
-        """Gets the canned of this Grantee.
+        r"""Gets the canned of this Grantee.
 
         Grant permissions to everyone. 
 
@@ -85,7 +85,7 @@ class Grantee:
 
     @canned.setter
     def canned(self, canned):
-        """Sets the canned of this Grantee.
+        r"""Sets the canned of this Grantee.
 
         Grant permissions to everyone. 
 

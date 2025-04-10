@@ -33,7 +33,7 @@ class TestPlanJournalList:
     }
 
     def __init__(self, project_id=None, plan_id=None, operate_time=None, operator=None, detail=None):
-        """TestPlanJournalList
+        r"""TestPlanJournalList
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TestPlanJournalList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TestPlanJournalList.
+        r"""Gets the project_id of this TestPlanJournalList.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -82,7 +82,7 @@ class TestPlanJournalList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TestPlanJournalList.
+        r"""Sets the project_id of this TestPlanJournalList.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -93,7 +93,7 @@ class TestPlanJournalList:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestPlanJournalList.
+        r"""Gets the plan_id of this TestPlanJournalList.
 
         测试计划id
 
@@ -104,7 +104,7 @@ class TestPlanJournalList:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestPlanJournalList.
+        r"""Sets the plan_id of this TestPlanJournalList.
 
         测试计划id
 
@@ -115,7 +115,7 @@ class TestPlanJournalList:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this TestPlanJournalList.
+        r"""Gets the operate_time of this TestPlanJournalList.
 
         变更时间
 
@@ -126,7 +126,7 @@ class TestPlanJournalList:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this TestPlanJournalList.
+        r"""Sets the operate_time of this TestPlanJournalList.
 
         变更时间
 
@@ -137,7 +137,7 @@ class TestPlanJournalList:
 
     @property
     def operator(self):
-        """Gets the operator of this TestPlanJournalList.
+        r"""Gets the operator of this TestPlanJournalList.
 
         :return: The operator of this TestPlanJournalList.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -146,7 +146,7 @@ class TestPlanJournalList:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this TestPlanJournalList.
+        r"""Sets the operator of this TestPlanJournalList.
 
         :param operator: The operator of this TestPlanJournalList.
         :type operator: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -155,7 +155,7 @@ class TestPlanJournalList:
 
     @property
     def detail(self):
-        """Gets the detail of this TestPlanJournalList.
+        r"""Gets the detail of this TestPlanJournalList.
 
         历史记录详情
 
@@ -166,7 +166,7 @@ class TestPlanJournalList:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this TestPlanJournalList.
+        r"""Sets the detail of this TestPlanJournalList.
 
         历史记录详情
 

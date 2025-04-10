@@ -36,7 +36,7 @@ class CreateNotificationResponse(SdkResponse):
     }
 
     def __init__(self, notification_id=None, type=None, status=None, topic=None, instance_id=None, app_id=None):
-        """CreateNotificationResponse
+        r"""CreateNotificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this CreateNotificationResponse.
+        r"""Gets the notification_id of this CreateNotificationResponse.
 
         订阅ID
 
@@ -90,7 +90,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this CreateNotificationResponse.
+        r"""Sets the notification_id of this CreateNotificationResponse.
 
         订阅ID
 
@@ -101,7 +101,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateNotificationResponse.
+        r"""Gets the type of this CreateNotificationResponse.
 
         订阅类型, 0:设备上线通知类型, 1:设备下线通知类型, 2:设备添加通知类型, 3:设备删除通知类型, 4:设备变更通知类型
 
@@ -112,7 +112,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNotificationResponse.
+        r"""Sets the type of this CreateNotificationResponse.
 
         订阅类型, 0:设备上线通知类型, 1:设备下线通知类型, 2:设备添加通知类型, 3:设备删除通知类型, 4:设备变更通知类型
 
@@ -123,7 +123,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateNotificationResponse.
+        r"""Gets the status of this CreateNotificationResponse.
 
         订阅管理状态，0：启用，1：停用
 
@@ -134,7 +134,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateNotificationResponse.
+        r"""Sets the status of this CreateNotificationResponse.
 
         订阅管理状态，0：启用，1：停用
 
@@ -145,7 +145,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this CreateNotificationResponse.
+        r"""Gets the topic of this CreateNotificationResponse.
 
         订阅的topic名称
 
@@ -156,7 +156,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this CreateNotificationResponse.
+        r"""Sets the topic of this CreateNotificationResponse.
 
         订阅的topic名称
 
@@ -167,7 +167,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateNotificationResponse.
+        r"""Gets the instance_id of this CreateNotificationResponse.
 
         实例ID
 
@@ -178,7 +178,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateNotificationResponse.
+        r"""Sets the instance_id of this CreateNotificationResponse.
 
         实例ID
 
@@ -189,7 +189,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateNotificationResponse.
+        r"""Gets the app_id of this CreateNotificationResponse.
 
         应用ID
 
@@ -200,7 +200,7 @@ class CreateNotificationResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateNotificationResponse.
+        r"""Sets the app_id of this CreateNotificationResponse.
 
         应用ID
 

@@ -29,7 +29,7 @@ class StopPipelineRunRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None):
-        """StopPipelineRunRequest
+        r"""StopPipelineRunRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class StopPipelineRunRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this StopPipelineRunRequest.
+        r"""Gets the project_id of this StopPipelineRunRequest.
 
         项目ID
 
@@ -65,7 +65,7 @@ class StopPipelineRunRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this StopPipelineRunRequest.
+        r"""Sets the project_id of this StopPipelineRunRequest.
 
         项目ID
 
@@ -76,7 +76,7 @@ class StopPipelineRunRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StopPipelineRunRequest.
+        r"""Gets the pipeline_id of this StopPipelineRunRequest.
 
         流水线ID
 
@@ -87,7 +87,7 @@ class StopPipelineRunRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StopPipelineRunRequest.
+        r"""Sets the pipeline_id of this StopPipelineRunRequest.
 
         流水线ID
 
@@ -98,7 +98,7 @@ class StopPipelineRunRequest:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this StopPipelineRunRequest.
+        r"""Gets the pipeline_run_id of this StopPipelineRunRequest.
 
         流水线运行实例ID
 
@@ -109,7 +109,7 @@ class StopPipelineRunRequest:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this StopPipelineRunRequest.
+        r"""Sets the pipeline_run_id of this StopPipelineRunRequest.
 
         流水线运行实例ID
 

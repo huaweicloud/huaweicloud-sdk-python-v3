@@ -27,7 +27,7 @@ class ParseTemplateVariablesRequestBody:
     }
 
     def __init__(self, template_body=None, template_uri=None):
-        """ParseTemplateVariablesRequestBody
+        r"""ParseTemplateVariablesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ParseTemplateVariablesRequestBody:
 
     @property
     def template_body(self):
-        """Gets the template_body of this ParseTemplateVariablesRequestBody.
+        r"""Gets the template_body of this ParseTemplateVariablesRequestBody.
 
         HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在  **注意：**   * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的template_body
 
@@ -61,7 +61,7 @@ class ParseTemplateVariablesRequestBody:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this ParseTemplateVariablesRequestBody.
+        r"""Sets the template_body of this ParseTemplateVariablesRequestBody.
 
         HCL模板，描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别。  template_body和template_uri 必须有且只有一个存在  **注意：**   * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的template_body
 
@@ -72,7 +72,7 @@ class ParseTemplateVariablesRequestBody:
 
     @property
     def template_uri(self):
-        """Gets the template_uri of this ParseTemplateVariablesRequestBody.
+        r"""Gets the template_uri of this ParseTemplateVariablesRequestBody.
 
         HCL模板的OBS地址，该模板描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别  请确保OBS地址所在局点与使用RFS服务局点一致。  对应的文件应该是纯tf文件或zip压缩包  纯tf文件需要以“.tf”或者“.tf.json”结尾，并遵守HCL语法，且文件的编码格式须为UTF-8  压缩包目前只支持zip格式，文件需要以\".zip\"结尾。解压后的文件不得包含\".tfvars\"文件。解压前最大支持1MB，解压后最大支持1MB。zip压缩包文件数量不能超过100个  template_body和template_uri 必须有且只有一个存在  **注意：**   * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储template_uri对应的模板文件内容。   * template_uri对应的模板文件如果为zip类型，则内部的文件或文件夹名称长度不得超过255个字节，最深路径长度不得超过2048字节，zip包大小不得超过1MB
 
@@ -83,7 +83,7 @@ class ParseTemplateVariablesRequestBody:
 
     @template_uri.setter
     def template_uri(self, template_uri):
-        """Sets the template_uri of this ParseTemplateVariablesRequestBody.
+        r"""Sets the template_uri of this ParseTemplateVariablesRequestBody.
 
         HCL模板的OBS地址，该模板描述了资源的目标状态。资源编排服务将比较此模板与当前远程资源的状态之间的区别  请确保OBS地址所在局点与使用RFS服务局点一致。  对应的文件应该是纯tf文件或zip压缩包  纯tf文件需要以“.tf”或者“.tf.json”结尾，并遵守HCL语法，且文件的编码格式须为UTF-8  压缩包目前只支持zip格式，文件需要以\".zip\"结尾。解压后的文件不得包含\".tfvars\"文件。解压前最大支持1MB，解压后最大支持1MB。zip压缩包文件数量不能超过100个  template_body和template_uri 必须有且只有一个存在  **注意：**   * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储template_uri对应的模板文件内容。   * template_uri对应的模板文件如果为zip类型，则内部的文件或文件夹名称长度不得超过255个字节，最深路径长度不得超过2048字节，zip包大小不得超过1MB
 

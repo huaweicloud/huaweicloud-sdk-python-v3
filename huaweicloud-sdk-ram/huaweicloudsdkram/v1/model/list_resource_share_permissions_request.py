@@ -34,7 +34,7 @@ class ListResourceSharePermissionsRequest:
     }
 
     def __init__(self, x_security_token=None, resource_share_id=None, permission_name=None, limit=None, marker=None):
-        """ListResourceSharePermissionsRequest
+        r"""ListResourceSharePermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListResourceSharePermissionsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListResourceSharePermissionsRequest.
+        r"""Gets the x_security_token of this ListResourceSharePermissionsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListResourceSharePermissionsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListResourceSharePermissionsRequest.
+        r"""Sets the x_security_token of this ListResourceSharePermissionsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListResourceSharePermissionsRequest:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this ListResourceSharePermissionsRequest.
+        r"""Gets the resource_share_id of this ListResourceSharePermissionsRequest.
 
         资源共享实例的ID。
 
@@ -104,7 +104,7 @@ class ListResourceSharePermissionsRequest:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this ListResourceSharePermissionsRequest.
+        r"""Sets the resource_share_id of this ListResourceSharePermissionsRequest.
 
         资源共享实例的ID。
 
@@ -115,7 +115,7 @@ class ListResourceSharePermissionsRequest:
 
     @property
     def permission_name(self):
-        """Gets the permission_name of this ListResourceSharePermissionsRequest.
+        r"""Gets the permission_name of this ListResourceSharePermissionsRequest.
 
         共享资源权限的名称。
 
@@ -126,7 +126,7 @@ class ListResourceSharePermissionsRequest:
 
     @permission_name.setter
     def permission_name(self, permission_name):
-        """Sets the permission_name of this ListResourceSharePermissionsRequest.
+        r"""Sets the permission_name of this ListResourceSharePermissionsRequest.
 
         共享资源权限的名称。
 
@@ -137,7 +137,7 @@ class ListResourceSharePermissionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceSharePermissionsRequest.
+        r"""Gets the limit of this ListResourceSharePermissionsRequest.
 
         分页页面的最大值。
 
@@ -148,7 +148,7 @@ class ListResourceSharePermissionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceSharePermissionsRequest.
+        r"""Sets the limit of this ListResourceSharePermissionsRequest.
 
         分页页面的最大值。
 
@@ -159,7 +159,7 @@ class ListResourceSharePermissionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListResourceSharePermissionsRequest.
+        r"""Gets the marker of this ListResourceSharePermissionsRequest.
 
         页面标记。
 
@@ -170,7 +170,7 @@ class ListResourceSharePermissionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListResourceSharePermissionsRequest.
+        r"""Sets the marker of this ListResourceSharePermissionsRequest.
 
         页面标记。
 

@@ -35,7 +35,7 @@ class QueryCorpGroupDTO:
     }
 
     def __init__(self, group_id=None, group_name=None, group_type=None, remarks=None, region_id=None, status=None):
-        """QueryCorpGroupDTO
+        r"""QueryCorpGroupDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryCorpGroupDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this QueryCorpGroupDTO.
+        r"""Gets the group_id of this QueryCorpGroupDTO.
 
         媒体接入分组id。
 
@@ -89,7 +89,7 @@ class QueryCorpGroupDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this QueryCorpGroupDTO.
+        r"""Sets the group_id of this QueryCorpGroupDTO.
 
         媒体接入分组id。
 
@@ -100,7 +100,7 @@ class QueryCorpGroupDTO:
 
     @property
     def group_name(self):
-        """Gets the group_name of this QueryCorpGroupDTO.
+        r"""Gets the group_name of this QueryCorpGroupDTO.
 
         分组名称。
 
@@ -111,7 +111,7 @@ class QueryCorpGroupDTO:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this QueryCorpGroupDTO.
+        r"""Sets the group_name of this QueryCorpGroupDTO.
 
         分组名称。
 
@@ -122,7 +122,7 @@ class QueryCorpGroupDTO:
 
     @property
     def group_type(self):
-        """Gets the group_type of this QueryCorpGroupDTO.
+        r"""Gets the group_type of this QueryCorpGroupDTO.
 
         分组类型。
 
@@ -133,7 +133,7 @@ class QueryCorpGroupDTO:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this QueryCorpGroupDTO.
+        r"""Sets the group_type of this QueryCorpGroupDTO.
 
         分组类型。
 
@@ -144,7 +144,7 @@ class QueryCorpGroupDTO:
 
     @property
     def remarks(self):
-        """Gets the remarks of this QueryCorpGroupDTO.
+        r"""Gets the remarks of this QueryCorpGroupDTO.
 
         分组备注信息。
 
@@ -155,7 +155,7 @@ class QueryCorpGroupDTO:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this QueryCorpGroupDTO.
+        r"""Sets the remarks of this QueryCorpGroupDTO.
 
         分组备注信息。
 
@@ -166,7 +166,7 @@ class QueryCorpGroupDTO:
 
     @property
     def region_id(self):
-        """Gets the region_id of this QueryCorpGroupDTO.
+        r"""Gets the region_id of this QueryCorpGroupDTO.
 
         区域ID，仅服务列表类型场景必填。
 
@@ -177,7 +177,7 @@ class QueryCorpGroupDTO:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this QueryCorpGroupDTO.
+        r"""Sets the region_id of this QueryCorpGroupDTO.
 
         区域ID，仅服务列表类型场景必填。
 
@@ -188,7 +188,7 @@ class QueryCorpGroupDTO:
 
     @property
     def status(self):
-        """Gets the status of this QueryCorpGroupDTO.
+        r"""Gets the status of this QueryCorpGroupDTO.
 
         分组状态。 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
 
@@ -199,7 +199,7 @@ class QueryCorpGroupDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryCorpGroupDTO.
+        r"""Sets the status of this QueryCorpGroupDTO.
 
         分组状态。 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
 

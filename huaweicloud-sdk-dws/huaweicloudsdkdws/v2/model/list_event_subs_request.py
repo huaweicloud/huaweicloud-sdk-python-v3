@@ -27,7 +27,7 @@ class ListEventSubsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListEventSubsRequest
+        r"""ListEventSubsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEventSubsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventSubsRequest.
+        r"""Gets the offset of this ListEventSubsRequest.
 
         偏移量
 
@@ -61,7 +61,7 @@ class ListEventSubsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventSubsRequest.
+        r"""Sets the offset of this ListEventSubsRequest.
 
         偏移量
 
@@ -72,7 +72,7 @@ class ListEventSubsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventSubsRequest.
+        r"""Gets the limit of this ListEventSubsRequest.
 
         限制条目数
 
@@ -83,7 +83,7 @@ class ListEventSubsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventSubsRequest.
+        r"""Sets the limit of this ListEventSubsRequest.
 
         限制条目数
 

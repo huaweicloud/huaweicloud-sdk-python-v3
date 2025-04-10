@@ -26,7 +26,7 @@ class ShowDockerLoginResponse(SdkResponse):
     }
 
     def __init__(self, login_cmd=None):
-        """ShowDockerLoginResponse
+        r"""ShowDockerLoginResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDockerLoginResponse(SdkResponse):
 
     @property
     def login_cmd(self):
-        """Gets the login_cmd of this ShowDockerLoginResponse.
+        r"""Gets the login_cmd of this ShowDockerLoginResponse.
 
         临时登录指令
 
@@ -55,7 +55,7 @@ class ShowDockerLoginResponse(SdkResponse):
 
     @login_cmd.setter
     def login_cmd(self, login_cmd):
-        """Sets the login_cmd of this ShowDockerLoginResponse.
+        r"""Sets the login_cmd of this ShowDockerLoginResponse.
 
         临时登录指令
 

@@ -31,7 +31,7 @@ class PacketThresholdData:
     }
 
     def __init__(self, receiving=None, receiving_default=None, sending=None, sending_default=None):
-        """PacketThresholdData
+        r"""PacketThresholdData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PacketThresholdData:
 
     @property
     def receiving(self):
-        """Gets the receiving of this PacketThresholdData.
+        r"""Gets the receiving of this PacketThresholdData.
 
         自定义接收方向阈值，单位为百分比(%)
 
@@ -75,7 +75,7 @@ class PacketThresholdData:
 
     @receiving.setter
     def receiving(self, receiving):
-        """Sets the receiving of this PacketThresholdData.
+        r"""Sets the receiving of this PacketThresholdData.
 
         自定义接收方向阈值，单位为百分比(%)
 
@@ -86,7 +86,7 @@ class PacketThresholdData:
 
     @property
     def receiving_default(self):
-        """Gets the receiving_default of this PacketThresholdData.
+        r"""Gets the receiving_default of this PacketThresholdData.
 
         默认接收方向阈值，单位为百分比(%)
 
@@ -97,7 +97,7 @@ class PacketThresholdData:
 
     @receiving_default.setter
     def receiving_default(self, receiving_default):
-        """Sets the receiving_default of this PacketThresholdData.
+        r"""Sets the receiving_default of this PacketThresholdData.
 
         默认接收方向阈值，单位为百分比(%)
 
@@ -108,7 +108,7 @@ class PacketThresholdData:
 
     @property
     def sending(self):
-        """Gets the sending of this PacketThresholdData.
+        r"""Gets the sending of this PacketThresholdData.
 
         自定义发送方向阈值，单位为百分比(%)
 
@@ -119,7 +119,7 @@ class PacketThresholdData:
 
     @sending.setter
     def sending(self, sending):
-        """Sets the sending of this PacketThresholdData.
+        r"""Sets the sending of this PacketThresholdData.
 
         自定义发送方向阈值，单位为百分比(%)
 
@@ -130,7 +130,7 @@ class PacketThresholdData:
 
     @property
     def sending_default(self):
-        """Gets the sending_default of this PacketThresholdData.
+        r"""Gets the sending_default of this PacketThresholdData.
 
         默认发送方向阈值，单位为百分比(%)
 
@@ -141,7 +141,7 @@ class PacketThresholdData:
 
     @sending_default.setter
     def sending_default(self, sending_default):
-        """Sets the sending_default of this PacketThresholdData.
+        r"""Sets the sending_default of this PacketThresholdData.
 
         默认发送方向阈值，单位为百分比(%)
 

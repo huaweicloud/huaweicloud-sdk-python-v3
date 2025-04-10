@@ -41,7 +41,7 @@ class ListAimSendTasksRequest:
     }
 
     def __init__(self, task_id=None, task_name=None, tpl_id=None, tpl_name=None, begin_time=None, end_time=None, task_status=None, offset=None, limit=None):
-        """ListAimSendTasksRequest
+        r"""ListAimSendTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAimSendTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListAimSendTasksRequest.
+        r"""Gets the task_id of this ListAimSendTasksRequest.
 
         智能信息发送任务ID。
 
@@ -110,7 +110,7 @@ class ListAimSendTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListAimSendTasksRequest.
+        r"""Sets the task_id of this ListAimSendTasksRequest.
 
         智能信息发送任务ID。
 
@@ -121,7 +121,7 @@ class ListAimSendTasksRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListAimSendTasksRequest.
+        r"""Gets the task_name of this ListAimSendTasksRequest.
 
         智能信息发送任务名称。
 
@@ -132,7 +132,7 @@ class ListAimSendTasksRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListAimSendTasksRequest.
+        r"""Sets the task_name of this ListAimSendTasksRequest.
 
         智能信息发送任务名称。
 
@@ -143,7 +143,7 @@ class ListAimSendTasksRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListAimSendTasksRequest.
+        r"""Gets the tpl_id of this ListAimSendTasksRequest.
 
         智能信息模板ID。
 
@@ -154,7 +154,7 @@ class ListAimSendTasksRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListAimSendTasksRequest.
+        r"""Sets the tpl_id of this ListAimSendTasksRequest.
 
         智能信息模板ID。
 
@@ -165,7 +165,7 @@ class ListAimSendTasksRequest:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListAimSendTasksRequest.
+        r"""Gets the tpl_name of this ListAimSendTasksRequest.
 
         智能信息模板名称。
 
@@ -176,7 +176,7 @@ class ListAimSendTasksRequest:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListAimSendTasksRequest.
+        r"""Sets the tpl_name of this ListAimSendTasksRequest.
 
         智能信息模板名称。
 
@@ -187,7 +187,7 @@ class ListAimSendTasksRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimSendTasksRequest.
+        r"""Gets the begin_time of this ListAimSendTasksRequest.
 
         智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 > > 仅支持查询最近1年内创建的智能信息发送任务。 
 
@@ -198,7 +198,7 @@ class ListAimSendTasksRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimSendTasksRequest.
+        r"""Sets the begin_time of this ListAimSendTasksRequest.
 
         智能信息发送任务创建开始时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 > > 仅支持查询最近1年内创建的智能信息发送任务。 
 
@@ -209,7 +209,7 @@ class ListAimSendTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimSendTasksRequest.
+        r"""Gets the end_time of this ListAimSendTasksRequest.
 
         智能信息发送任务创建结束时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 
 
@@ -220,7 +220,7 @@ class ListAimSendTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimSendTasksRequest.
+        r"""Sets the end_time of this ListAimSendTasksRequest.
 
         智能信息发送任务创建结束时间。样例：2019-10-12T07:20:50.522Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。缺省：查询最近7天（168小时）数据。 
 
@@ -231,7 +231,7 @@ class ListAimSendTasksRequest:
 
     @property
     def task_status(self):
-        """Gets the task_status of this ListAimSendTasksRequest.
+        r"""Gets the task_status of this ListAimSendTasksRequest.
 
         智能信息发送任务状态。  - Success：创建成功  - Fail：创建失败 
 
@@ -242,7 +242,7 @@ class ListAimSendTasksRequest:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ListAimSendTasksRequest.
+        r"""Sets the task_status of this ListAimSendTasksRequest.
 
         智能信息发送任务状态。  - Success：创建成功  - Fail：创建失败 
 
@@ -253,7 +253,7 @@ class ListAimSendTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimSendTasksRequest.
+        r"""Gets the offset of this ListAimSendTasksRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -264,7 +264,7 @@ class ListAimSendTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimSendTasksRequest.
+        r"""Sets the offset of this ListAimSendTasksRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -275,7 +275,7 @@ class ListAimSendTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimSendTasksRequest.
+        r"""Gets the limit of this ListAimSendTasksRequest.
 
         每页显示的条目数量。 
 
@@ -286,7 +286,7 @@ class ListAimSendTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimSendTasksRequest.
+        r"""Sets the limit of this ListAimSendTasksRequest.
 
         每页显示的条目数量。 
 

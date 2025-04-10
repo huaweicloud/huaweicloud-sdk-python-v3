@@ -27,7 +27,7 @@ class RequiredTag:
     }
 
     def __init__(self, key=None, value=None):
-        """RequiredTag
+        r"""RequiredTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RequiredTag:
 
     @property
     def key(self):
-        """Gets the key of this RequiredTag.
+        r"""Gets the key of this RequiredTag.
 
         键
 
@@ -59,7 +59,7 @@ class RequiredTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this RequiredTag.
+        r"""Sets the key of this RequiredTag.
 
         键
 
@@ -70,7 +70,7 @@ class RequiredTag:
 
     @property
     def value(self):
-        """Gets the value of this RequiredTag.
+        r"""Gets the value of this RequiredTag.
 
         值
 
@@ -81,7 +81,7 @@ class RequiredTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RequiredTag.
+        r"""Sets the value of this RequiredTag.
 
         值
 

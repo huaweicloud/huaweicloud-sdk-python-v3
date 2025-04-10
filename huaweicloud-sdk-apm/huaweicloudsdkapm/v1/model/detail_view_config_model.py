@@ -29,7 +29,7 @@ class DetailViewConfigModel:
     }
 
     def __init__(self, metric_set=None, filter_prefix=None, detail_view_item_list=None):
-        """DetailViewConfigModel
+        r"""DetailViewConfigModel
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DetailViewConfigModel:
 
     @property
     def metric_set(self):
-        """Gets the metric_set of this DetailViewConfigModel.
+        r"""Gets the metric_set of this DetailViewConfigModel.
 
         视图对应的指标集的名称。
 
@@ -68,7 +68,7 @@ class DetailViewConfigModel:
 
     @metric_set.setter
     def metric_set(self, metric_set):
-        """Sets the metric_set of this DetailViewConfigModel.
+        r"""Sets the metric_set of this DetailViewConfigModel.
 
         视图对应的指标集的名称。
 
@@ -79,7 +79,7 @@ class DetailViewConfigModel:
 
     @property
     def filter_prefix(self):
-        """Gets the filter_prefix of this DetailViewConfigModel.
+        r"""Gets the filter_prefix of this DetailViewConfigModel.
 
         过滤参数。
 
@@ -90,7 +90,7 @@ class DetailViewConfigModel:
 
     @filter_prefix.setter
     def filter_prefix(self, filter_prefix):
-        """Sets the filter_prefix of this DetailViewConfigModel.
+        r"""Sets the filter_prefix of this DetailViewConfigModel.
 
         过滤参数。
 
@@ -101,7 +101,7 @@ class DetailViewConfigModel:
 
     @property
     def detail_view_item_list(self):
-        """Gets the detail_view_item_list of this DetailViewConfigModel.
+        r"""Gets the detail_view_item_list of this DetailViewConfigModel.
 
         视图函数集合。
 
@@ -112,7 +112,7 @@ class DetailViewConfigModel:
 
     @detail_view_item_list.setter
     def detail_view_item_list(self, detail_view_item_list):
-        """Sets the detail_view_item_list of this DetailViewConfigModel.
+        r"""Sets the detail_view_item_list of this DetailViewConfigModel.
 
         视图函数集合。
 

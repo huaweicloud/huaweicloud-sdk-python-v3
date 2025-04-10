@@ -29,7 +29,7 @@ class ListServersDedicatedHostRequest:
     }
 
     def __init__(self, dedicated_host_id=None, limit=None, marker=None):
-        """ListServersDedicatedHostRequest
+        r"""ListServersDedicatedHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListServersDedicatedHostRequest:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this ListServersDedicatedHostRequest.
+        r"""Gets the dedicated_host_id of this ListServersDedicatedHostRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -67,7 +67,7 @@ class ListServersDedicatedHostRequest:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this ListServersDedicatedHostRequest.
+        r"""Sets the dedicated_host_id of this ListServersDedicatedHostRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -78,7 +78,7 @@ class ListServersDedicatedHostRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServersDedicatedHostRequest.
+        r"""Gets the limit of this ListServersDedicatedHostRequest.
 
         每个页面上显示的条目数。
 
@@ -89,7 +89,7 @@ class ListServersDedicatedHostRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServersDedicatedHostRequest.
+        r"""Sets the limit of this ListServersDedicatedHostRequest.
 
         每个页面上显示的条目数。
 
@@ -100,7 +100,7 @@ class ListServersDedicatedHostRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListServersDedicatedHostRequest.
+        r"""Gets the marker of this ListServersDedicatedHostRequest.
 
         该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
 
@@ -111,7 +111,7 @@ class ListServersDedicatedHostRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListServersDedicatedHostRequest.
+        r"""Sets the marker of this ListServersDedicatedHostRequest.
 
         该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
 

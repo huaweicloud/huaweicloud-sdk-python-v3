@@ -25,7 +25,7 @@ class UpdateFunctionMaxInstanceConfigRequestBody:
     }
 
     def __init__(self, max_instance_num=None):
-        """UpdateFunctionMaxInstanceConfigRequestBody
+        r"""UpdateFunctionMaxInstanceConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateFunctionMaxInstanceConfigRequestBody:
 
     @property
     def max_instance_num(self):
-        """Gets the max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
+        r"""Gets the max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
 
         最大实例数；-1代表该函数实例数无限制，0代表该函数被禁用
 
@@ -54,7 +54,7 @@ class UpdateFunctionMaxInstanceConfigRequestBody:
 
     @max_instance_num.setter
     def max_instance_num(self, max_instance_num):
-        """Sets the max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
+        r"""Sets the max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
 
         最大实例数；-1代表该函数实例数无限制，0代表该函数被禁用
 

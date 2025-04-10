@@ -25,7 +25,7 @@ class AgencyRequestBody:
     }
 
     def __init__(self, agency_type=None):
-        """AgencyRequestBody
+        r"""AgencyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgencyRequestBody:
 
     @property
     def agency_type(self):
-        """Gets the agency_type of this AgencyRequestBody.
+        r"""Gets the agency_type of this AgencyRequestBody.
 
         委托类型，JOB_TRUST-任务委托,ADMIN_TRUST-系统委托
 
@@ -53,7 +53,7 @@ class AgencyRequestBody:
 
     @agency_type.setter
     def agency_type(self, agency_type):
-        """Sets the agency_type of this AgencyRequestBody.
+        r"""Sets the agency_type of this AgencyRequestBody.
 
         委托类型，JOB_TRUST-任务委托,ADMIN_TRUST-系统委托
 

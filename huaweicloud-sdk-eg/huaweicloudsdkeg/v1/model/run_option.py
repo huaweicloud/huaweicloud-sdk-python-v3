@@ -27,7 +27,7 @@ class RunOption:
     }
 
     def __init__(self, thread_num=None, batch_window=None):
-        """RunOption
+        r"""RunOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RunOption:
 
     @property
     def thread_num(self):
-        """Gets the thread_num of this RunOption.
+        r"""Gets the thread_num of this RunOption.
 
         并发数
 
@@ -61,7 +61,7 @@ class RunOption:
 
     @thread_num.setter
     def thread_num(self, thread_num):
-        """Sets the thread_num of this RunOption.
+        r"""Sets the thread_num of this RunOption.
 
         并发数
 
@@ -72,7 +72,7 @@ class RunOption:
 
     @property
     def batch_window(self):
-        """Gets the batch_window of this RunOption.
+        r"""Gets the batch_window of this RunOption.
 
         :return: The batch_window of this RunOption.
         :rtype: :class:`huaweicloudsdkeg.v1.BatchWindow`
@@ -81,7 +81,7 @@ class RunOption:
 
     @batch_window.setter
     def batch_window(self, batch_window):
-        """Sets the batch_window of this RunOption.
+        r"""Sets the batch_window of this RunOption.
 
         :param batch_window: The batch_window of this RunOption.
         :type batch_window: :class:`huaweicloudsdkeg.v1.BatchWindow`

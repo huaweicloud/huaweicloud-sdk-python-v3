@@ -39,7 +39,7 @@ class ActiveCodeInfo:
     }
 
     def __init__(self, active_code_id=None, active_code=None, robot_id=None, room_id=None, valid_period=None, expire_time=None, create_time=None, update_time=None):
-        """ActiveCodeInfo
+        r"""ActiveCodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ActiveCodeInfo:
 
     @property
     def active_code_id(self):
-        """Gets the active_code_id of this ActiveCodeInfo.
+        r"""Gets the active_code_id of this ActiveCodeInfo.
 
         激活码ID。
 
@@ -103,7 +103,7 @@ class ActiveCodeInfo:
 
     @active_code_id.setter
     def active_code_id(self, active_code_id):
-        """Sets the active_code_id of this ActiveCodeInfo.
+        r"""Sets the active_code_id of this ActiveCodeInfo.
 
         激活码ID。
 
@@ -114,7 +114,7 @@ class ActiveCodeInfo:
 
     @property
     def active_code(self):
-        """Gets the active_code of this ActiveCodeInfo.
+        r"""Gets the active_code of this ActiveCodeInfo.
 
         激活码。
 
@@ -125,7 +125,7 @@ class ActiveCodeInfo:
 
     @active_code.setter
     def active_code(self, active_code):
-        """Sets the active_code of this ActiveCodeInfo.
+        r"""Sets the active_code of this ActiveCodeInfo.
 
         激活码。
 
@@ -136,7 +136,7 @@ class ActiveCodeInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ActiveCodeInfo.
+        r"""Gets the robot_id of this ActiveCodeInfo.
 
         应用ID。
 
@@ -147,7 +147,7 @@ class ActiveCodeInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ActiveCodeInfo.
+        r"""Sets the robot_id of this ActiveCodeInfo.
 
         应用ID。
 
@@ -158,7 +158,7 @@ class ActiveCodeInfo:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ActiveCodeInfo.
+        r"""Gets the room_id of this ActiveCodeInfo.
 
         智能交互对话ID。
 
@@ -169,7 +169,7 @@ class ActiveCodeInfo:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ActiveCodeInfo.
+        r"""Sets the room_id of this ActiveCodeInfo.
 
         智能交互对话ID。
 
@@ -180,7 +180,7 @@ class ActiveCodeInfo:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this ActiveCodeInfo.
+        r"""Gets the valid_period of this ActiveCodeInfo.
 
         有效天数（0表示长期有效）。
 
@@ -191,7 +191,7 @@ class ActiveCodeInfo:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this ActiveCodeInfo.
+        r"""Sets the valid_period of this ActiveCodeInfo.
 
         有效天数（0表示长期有效）。
 
@@ -202,7 +202,7 @@ class ActiveCodeInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ActiveCodeInfo.
+        r"""Gets the expire_time of this ActiveCodeInfo.
 
         过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -213,7 +213,7 @@ class ActiveCodeInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ActiveCodeInfo.
+        r"""Sets the expire_time of this ActiveCodeInfo.
 
         过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -224,7 +224,7 @@ class ActiveCodeInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ActiveCodeInfo.
+        r"""Gets the create_time of this ActiveCodeInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -235,7 +235,7 @@ class ActiveCodeInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ActiveCodeInfo.
+        r"""Sets the create_time of this ActiveCodeInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -246,7 +246,7 @@ class ActiveCodeInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ActiveCodeInfo.
+        r"""Gets the update_time of this ActiveCodeInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -257,7 +257,7 @@ class ActiveCodeInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ActiveCodeInfo.
+        r"""Sets the update_time of this ActiveCodeInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

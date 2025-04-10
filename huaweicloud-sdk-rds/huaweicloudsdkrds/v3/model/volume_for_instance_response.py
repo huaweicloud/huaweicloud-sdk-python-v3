@@ -27,7 +27,7 @@ class VolumeForInstanceResponse:
     }
 
     def __init__(self, type=None, size=None):
-        """VolumeForInstanceResponse
+        r"""VolumeForInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VolumeForInstanceResponse:
 
     @property
     def type(self):
-        """Gets the type of this VolumeForInstanceResponse.
+        r"""Gets the type of this VolumeForInstanceResponse.
 
         磁盘类型。 取值范围如下，区分大小写： - COMMON，表示SATA。 - HIGH，表示SAS。 - ULTRAHIGH，表示SSD。 - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版。 - CLOUDSSD，表示SSD云盘，仅支持通用型和独享型规格实例。 - LOCALSSD，表示本地SSD。 - ESSD，表示极速型SSD，仅支持独享型规格实例。
 
@@ -59,7 +59,7 @@ class VolumeForInstanceResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VolumeForInstanceResponse.
+        r"""Sets the type of this VolumeForInstanceResponse.
 
         磁盘类型。 取值范围如下，区分大小写： - COMMON，表示SATA。 - HIGH，表示SAS。 - ULTRAHIGH，表示SSD。 - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版。 - CLOUDSSD，表示SSD云盘，仅支持通用型和独享型规格实例。 - LOCALSSD，表示本地SSD。 - ESSD，表示极速型SSD，仅支持独享型规格实例。
 
@@ -70,7 +70,7 @@ class VolumeForInstanceResponse:
 
     @property
     def size(self):
-        """Gets the size of this VolumeForInstanceResponse.
+        r"""Gets the size of this VolumeForInstanceResponse.
 
         磁盘大小，单位为GB。
 
@@ -81,7 +81,7 @@ class VolumeForInstanceResponse:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeForInstanceResponse.
+        r"""Sets the size of this VolumeForInstanceResponse.
 
         磁盘大小，单位为GB。
 

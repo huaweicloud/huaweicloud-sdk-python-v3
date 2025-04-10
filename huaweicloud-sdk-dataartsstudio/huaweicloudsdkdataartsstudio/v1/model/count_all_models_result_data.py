@@ -25,7 +25,7 @@ class CountAllModelsResultData:
     }
 
     def __init__(self, value=None):
-        """CountAllModelsResultData
+        r"""CountAllModelsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountAllModelsResultData:
 
     @property
     def value(self):
-        """Gets the value of this CountAllModelsResultData.
+        r"""Gets the value of this CountAllModelsResultData.
 
         :return: The value of this CountAllModelsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AllModelStatisticVO`
@@ -52,7 +52,7 @@ class CountAllModelsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CountAllModelsResultData.
+        r"""Sets the value of this CountAllModelsResultData.
 
         :param value: The value of this CountAllModelsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.AllModelStatisticVO`

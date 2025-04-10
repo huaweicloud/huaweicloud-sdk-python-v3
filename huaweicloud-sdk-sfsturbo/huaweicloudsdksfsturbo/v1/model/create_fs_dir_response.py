@@ -24,7 +24,7 @@ class CreateFsDirResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateFsDirResponse
+        r"""CreateFsDirResponse
 
         The model defined in huaweicloud sdk
 

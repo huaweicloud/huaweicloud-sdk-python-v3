@@ -25,7 +25,7 @@ class BatchDeleteZonesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteZonesRequest
+        r"""BatchDeleteZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteZonesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteZonesRequest.
+        r"""Gets the body of this BatchDeleteZonesRequest.
 
         :return: The body of this BatchDeleteZonesRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteZonesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteZonesRequest.
+        r"""Sets the body of this BatchDeleteZonesRequest.
 
         :param body: The body of this BatchDeleteZonesRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesRequestBody`

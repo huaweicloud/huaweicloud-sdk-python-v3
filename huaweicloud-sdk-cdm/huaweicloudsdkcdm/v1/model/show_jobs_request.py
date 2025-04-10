@@ -35,7 +35,7 @@ class ShowJobsRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, filter=None, page_no=None, page_size=None, job_type=None):
-        """ShowJobsRequest
+        r"""ShowJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowJobsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowJobsRequest.
+        r"""Gets the cluster_id of this ShowJobsRequest.
 
         集群ID
 
@@ -87,7 +87,7 @@ class ShowJobsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowJobsRequest.
+        r"""Sets the cluster_id of this ShowJobsRequest.
 
         集群ID
 
@@ -98,7 +98,7 @@ class ShowJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobsRequest.
+        r"""Gets the job_name of this ShowJobsRequest.
 
         查询多个作业用all,查询单个作业输入作业名
 
@@ -109,7 +109,7 @@ class ShowJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobsRequest.
+        r"""Sets the job_name of this ShowJobsRequest.
 
         查询多个作业用all,查询单个作业输入作业名
 
@@ -120,7 +120,7 @@ class ShowJobsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ShowJobsRequest.
+        r"""Gets the filter of this ShowJobsRequest.
 
         当“job_name”为“all”时，此参数用于模糊过滤作业
 
@@ -131,7 +131,7 @@ class ShowJobsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ShowJobsRequest.
+        r"""Sets the filter of this ShowJobsRequest.
 
         当“job_name”为“all”时，此参数用于模糊过滤作业
 
@@ -142,7 +142,7 @@ class ShowJobsRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ShowJobsRequest.
+        r"""Gets the page_no of this ShowJobsRequest.
 
         指定作业页号
 
@@ -153,7 +153,7 @@ class ShowJobsRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ShowJobsRequest.
+        r"""Sets the page_no of this ShowJobsRequest.
 
         指定作业页号
 
@@ -164,7 +164,7 @@ class ShowJobsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowJobsRequest.
+        r"""Gets the page_size of this ShowJobsRequest.
 
         每页作业数，值在10-100之间
 
@@ -175,7 +175,7 @@ class ShowJobsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowJobsRequest.
+        r"""Sets the page_size of this ShowJobsRequest.
 
         每页作业数，值在10-100之间
 
@@ -186,7 +186,7 @@ class ShowJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobsRequest.
+        r"""Gets the job_type of this ShowJobsRequest.
 
         作业类型: - jobType=NORMAL_JOB：表示查询表/文件迁移的作业。 - jobType=BATCH_JOB：表示查询整库迁移的作业。 - jobType=SCENARIO_JOB：表示查询场景迁移的作业。 - 不指定该参数时，默认只查询表/文件迁移的作业。
 
@@ -197,7 +197,7 @@ class ShowJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobsRequest.
+        r"""Sets the job_type of this ShowJobsRequest.
 
         作业类型: - jobType=NORMAL_JOB：表示查询表/文件迁移的作业。 - jobType=BATCH_JOB：表示查询整库迁移的作业。 - jobType=SCENARIO_JOB：表示查询场景迁移的作业。 - 不指定该参数时，默认只查询表/文件迁移的作业。
 

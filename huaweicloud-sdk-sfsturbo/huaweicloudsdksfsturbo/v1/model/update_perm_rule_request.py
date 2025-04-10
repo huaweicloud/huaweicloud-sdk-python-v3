@@ -29,7 +29,7 @@ class UpdatePermRuleRequest:
     }
 
     def __init__(self, share_id=None, rule_id=None, body=None):
-        """UpdatePermRuleRequest
+        r"""UpdatePermRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePermRuleRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this UpdatePermRuleRequest.
+        r"""Gets the share_id of this UpdatePermRuleRequest.
 
         文件系统id
 
@@ -66,7 +66,7 @@ class UpdatePermRuleRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this UpdatePermRuleRequest.
+        r"""Sets the share_id of this UpdatePermRuleRequest.
 
         文件系统id
 
@@ -77,7 +77,7 @@ class UpdatePermRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdatePermRuleRequest.
+        r"""Gets the rule_id of this UpdatePermRuleRequest.
 
         权限规则id
 
@@ -88,7 +88,7 @@ class UpdatePermRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdatePermRuleRequest.
+        r"""Sets the rule_id of this UpdatePermRuleRequest.
 
         权限规则id
 
@@ -99,7 +99,7 @@ class UpdatePermRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePermRuleRequest.
+        r"""Gets the body of this UpdatePermRuleRequest.
 
         :return: The body of this UpdatePermRuleRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.OnePermRuleRequestInfo`
@@ -108,7 +108,7 @@ class UpdatePermRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePermRuleRequest.
+        r"""Sets the body of this UpdatePermRuleRequest.
 
         :param body: The body of this UpdatePermRuleRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.OnePermRuleRequestInfo`

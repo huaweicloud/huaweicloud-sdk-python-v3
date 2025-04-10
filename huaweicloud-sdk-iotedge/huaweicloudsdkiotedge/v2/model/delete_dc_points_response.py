@@ -28,7 +28,7 @@ class DeleteDcPointsResponse(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None):
-        """DeleteDcPointsResponse
+        r"""DeleteDcPointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteDcPointsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this DeleteDcPointsResponse.
+        r"""Gets the success of this DeleteDcPointsResponse.
 
         :return: The success of this DeleteDcPointsResponse.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class DeleteDcPointsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this DeleteDcPointsResponse.
+        r"""Sets the success of this DeleteDcPointsResponse.
 
         :param success: The success of this DeleteDcPointsResponse.
         :type success: list[str]
@@ -69,7 +69,7 @@ class DeleteDcPointsResponse(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this DeleteDcPointsResponse.
+        r"""Gets the failure of this DeleteDcPointsResponse.
 
         删除失败的点位和详情
 
@@ -80,7 +80,7 @@ class DeleteDcPointsResponse(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this DeleteDcPointsResponse.
+        r"""Sets the failure of this DeleteDcPointsResponse.
 
         删除失败的点位和详情
 

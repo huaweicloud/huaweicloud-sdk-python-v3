@@ -23,7 +23,7 @@ class HandleExternalIncidentResponseData:
     }
 
     def __init__(self):
-        """HandleExternalIncidentResponseData
+        r"""HandleExternalIncidentResponseData
 
         The model defined in huaweicloud sdk
 

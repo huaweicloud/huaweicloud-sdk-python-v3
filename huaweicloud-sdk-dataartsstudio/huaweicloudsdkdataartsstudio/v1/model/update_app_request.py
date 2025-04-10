@@ -31,7 +31,7 @@ class UpdateAppRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, app_id=None, body=None):
-        """UpdateAppRequest
+        r"""UpdateAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateAppRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateAppRequest.
+        r"""Gets the workspace of this UpdateAppRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class UpdateAppRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateAppRequest.
+        r"""Sets the workspace of this UpdateAppRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class UpdateAppRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this UpdateAppRequest.
+        r"""Gets the dlm_type of this UpdateAppRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -95,7 +95,7 @@ class UpdateAppRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this UpdateAppRequest.
+        r"""Sets the dlm_type of this UpdateAppRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -106,7 +106,7 @@ class UpdateAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppRequest.
+        r"""Gets the app_id of this UpdateAppRequest.
 
         应用编号。
 
@@ -117,7 +117,7 @@ class UpdateAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppRequest.
+        r"""Sets the app_id of this UpdateAppRequest.
 
         应用编号。
 
@@ -128,7 +128,7 @@ class UpdateAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppRequest.
+        r"""Gets the body of this UpdateAppRequest.
 
         :return: The body of this UpdateAppRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AppUpdateDTO`
@@ -137,7 +137,7 @@ class UpdateAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppRequest.
+        r"""Sets the body of this UpdateAppRequest.
 
         :param body: The body of this UpdateAppRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.AppUpdateDTO`

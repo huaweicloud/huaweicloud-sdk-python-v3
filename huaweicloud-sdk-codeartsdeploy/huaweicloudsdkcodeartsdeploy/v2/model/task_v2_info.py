@@ -87,7 +87,7 @@ class TaskV2Info:
     }
 
     def __init__(self, id=None, name=None, state=None, description=None, owner=None, steps=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, role_id=None, is_defaut_permission=None, template_id=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, app_component_list=None, release_id=None, app_id=None, is_disable=None):
-        """TaskV2Info
+        r"""TaskV2Info
 
         The model defined in huaweicloud sdk
 
@@ -260,7 +260,7 @@ class TaskV2Info:
 
     @property
     def id(self):
-        """Gets the id of this TaskV2Info.
+        r"""Gets the id of this TaskV2Info.
 
         部署任务id
 
@@ -271,7 +271,7 @@ class TaskV2Info:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskV2Info.
+        r"""Sets the id of this TaskV2Info.
 
         部署任务id
 
@@ -282,7 +282,7 @@ class TaskV2Info:
 
     @property
     def name(self):
-        """Gets the name of this TaskV2Info.
+        r"""Gets the name of this TaskV2Info.
 
         部署任务名称
 
@@ -293,7 +293,7 @@ class TaskV2Info:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskV2Info.
+        r"""Sets the name of this TaskV2Info.
 
         部署任务名称
 
@@ -304,7 +304,7 @@ class TaskV2Info:
 
     @property
     def state(self):
-        """Gets the state of this TaskV2Info.
+        r"""Gets the state of this TaskV2Info.
 
         部署任务状态
 
@@ -315,7 +315,7 @@ class TaskV2Info:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TaskV2Info.
+        r"""Sets the state of this TaskV2Info.
 
         部署任务状态
 
@@ -326,7 +326,7 @@ class TaskV2Info:
 
     @property
     def description(self):
-        """Gets the description of this TaskV2Info.
+        r"""Gets the description of this TaskV2Info.
 
         描述
 
@@ -337,7 +337,7 @@ class TaskV2Info:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskV2Info.
+        r"""Sets the description of this TaskV2Info.
 
         描述
 
@@ -348,7 +348,7 @@ class TaskV2Info:
 
     @property
     def owner(self):
-        """Gets the owner of this TaskV2Info.
+        r"""Gets the owner of this TaskV2Info.
 
         部署任务所属人
 
@@ -359,7 +359,7 @@ class TaskV2Info:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TaskV2Info.
+        r"""Sets the owner of this TaskV2Info.
 
         部署任务所属人
 
@@ -370,7 +370,7 @@ class TaskV2Info:
 
     @property
     def steps(self):
-        """Gets the steps of this TaskV2Info.
+        r"""Gets the steps of this TaskV2Info.
 
         部署步骤
 
@@ -381,7 +381,7 @@ class TaskV2Info:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this TaskV2Info.
+        r"""Sets the steps of this TaskV2Info.
 
         部署步骤
 
@@ -392,7 +392,7 @@ class TaskV2Info:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TaskV2Info.
+        r"""Gets the project_id of this TaskV2Info.
 
         项目id
 
@@ -403,7 +403,7 @@ class TaskV2Info:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TaskV2Info.
+        r"""Sets the project_id of this TaskV2Info.
 
         项目id
 
@@ -414,7 +414,7 @@ class TaskV2Info:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TaskV2Info.
+        r"""Gets the project_name of this TaskV2Info.
 
         项目名称
 
@@ -425,7 +425,7 @@ class TaskV2Info:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TaskV2Info.
+        r"""Sets the project_name of this TaskV2Info.
 
         项目名称
 
@@ -436,7 +436,7 @@ class TaskV2Info:
 
     @property
     def deploy_system(self):
-        """Gets the deploy_system of this TaskV2Info.
+        r"""Gets the deploy_system of this TaskV2Info.
 
         部署类型模式，包括deployTemplate、ansible、shell
 
@@ -447,7 +447,7 @@ class TaskV2Info:
 
     @deploy_system.setter
     def deploy_system(self, deploy_system):
-        """Sets the deploy_system of this TaskV2Info.
+        r"""Sets the deploy_system of this TaskV2Info.
 
         部署类型模式，包括deployTemplate、ansible、shell
 
@@ -458,7 +458,7 @@ class TaskV2Info:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskV2Info.
+        r"""Gets the create_time of this TaskV2Info.
 
         创建时间
 
@@ -469,7 +469,7 @@ class TaskV2Info:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskV2Info.
+        r"""Sets the create_time of this TaskV2Info.
 
         创建时间
 
@@ -480,7 +480,7 @@ class TaskV2Info:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TaskV2Info.
+        r"""Gets the update_time of this TaskV2Info.
 
         修改时间
 
@@ -491,7 +491,7 @@ class TaskV2Info:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TaskV2Info.
+        r"""Sets the update_time of this TaskV2Info.
 
         修改时间
 
@@ -502,7 +502,7 @@ class TaskV2Info:
 
     @property
     def role_id(self):
-        """Gets the role_id of this TaskV2Info.
+        r"""Gets the role_id of this TaskV2Info.
 
         角色id
 
@@ -513,7 +513,7 @@ class TaskV2Info:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this TaskV2Info.
+        r"""Sets the role_id of this TaskV2Info.
 
         角色id
 
@@ -524,7 +524,7 @@ class TaskV2Info:
 
     @property
     def is_defaut_permission(self):
-        """Gets the is_defaut_permission of this TaskV2Info.
+        r"""Gets the is_defaut_permission of this TaskV2Info.
 
         是否为默认角色
 
@@ -535,7 +535,7 @@ class TaskV2Info:
 
     @is_defaut_permission.setter
     def is_defaut_permission(self, is_defaut_permission):
-        """Sets the is_defaut_permission of this TaskV2Info.
+        r"""Sets the is_defaut_permission of this TaskV2Info.
 
         是否为默认角色
 
@@ -546,7 +546,7 @@ class TaskV2Info:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TaskV2Info.
+        r"""Gets the template_id of this TaskV2Info.
 
         模板id
 
@@ -557,7 +557,7 @@ class TaskV2Info:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TaskV2Info.
+        r"""Sets the template_id of this TaskV2Info.
 
         模板id
 
@@ -568,7 +568,7 @@ class TaskV2Info:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this TaskV2Info.
+        r"""Gets the nick_name of this TaskV2Info.
 
         应用创建者昵称
 
@@ -579,7 +579,7 @@ class TaskV2Info:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this TaskV2Info.
+        r"""Sets the nick_name of this TaskV2Info.
 
         应用创建者昵称
 
@@ -590,7 +590,7 @@ class TaskV2Info:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this TaskV2Info.
+        r"""Gets the owner_id of this TaskV2Info.
 
         应用创建者用户id
 
@@ -601,7 +601,7 @@ class TaskV2Info:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this TaskV2Info.
+        r"""Sets the owner_id of this TaskV2Info.
 
         应用创建者用户id
 
@@ -612,7 +612,7 @@ class TaskV2Info:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this TaskV2Info.
+        r"""Gets the tenant_id of this TaskV2Info.
 
         应用创建者租户id
 
@@ -623,7 +623,7 @@ class TaskV2Info:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this TaskV2Info.
+        r"""Sets the tenant_id of this TaskV2Info.
 
         应用创建者租户id
 
@@ -634,7 +634,7 @@ class TaskV2Info:
 
     @property
     def tenant_name(self):
-        """Gets the tenant_name of this TaskV2Info.
+        r"""Gets the tenant_name of this TaskV2Info.
 
         应用创建者租户名
 
@@ -645,7 +645,7 @@ class TaskV2Info:
 
     @tenant_name.setter
     def tenant_name(self, tenant_name):
-        """Sets the tenant_name of this TaskV2Info.
+        r"""Sets the tenant_name of this TaskV2Info.
 
         应用创建者租户名
 
@@ -656,7 +656,7 @@ class TaskV2Info:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this TaskV2Info.
+        r"""Gets the slave_cluster_id of this TaskV2Info.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -667,7 +667,7 @@ class TaskV2Info:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this TaskV2Info.
+        r"""Sets the slave_cluster_id of this TaskV2Info.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -678,7 +678,7 @@ class TaskV2Info:
 
     @property
     def is_care(self):
-        """Gets the is_care of this TaskV2Info.
+        r"""Gets the is_care of this TaskV2Info.
 
         当前用户是否已收藏
 
@@ -689,7 +689,7 @@ class TaskV2Info:
 
     @is_care.setter
     def is_care(self, is_care):
-        """Sets the is_care of this TaskV2Info.
+        r"""Sets the is_care of this TaskV2Info.
 
         当前用户是否已收藏
 
@@ -700,7 +700,7 @@ class TaskV2Info:
 
     @property
     def can_modify(self):
-        """Gets the can_modify of this TaskV2Info.
+        r"""Gets the can_modify of this TaskV2Info.
 
         是否有编辑权限
 
@@ -711,7 +711,7 @@ class TaskV2Info:
 
     @can_modify.setter
     def can_modify(self, can_modify):
-        """Sets the can_modify of this TaskV2Info.
+        r"""Sets the can_modify of this TaskV2Info.
 
         是否有编辑权限
 
@@ -722,7 +722,7 @@ class TaskV2Info:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this TaskV2Info.
+        r"""Gets the can_delete of this TaskV2Info.
 
         是否有删除的权限
 
@@ -733,7 +733,7 @@ class TaskV2Info:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this TaskV2Info.
+        r"""Sets the can_delete of this TaskV2Info.
 
         是否有删除的权限
 
@@ -744,7 +744,7 @@ class TaskV2Info:
 
     @property
     def can_view(self):
-        """Gets the can_view of this TaskV2Info.
+        r"""Gets the can_view of this TaskV2Info.
 
         是否有查看权限
 
@@ -755,7 +755,7 @@ class TaskV2Info:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this TaskV2Info.
+        r"""Sets the can_view of this TaskV2Info.
 
         是否有查看权限
 
@@ -766,7 +766,7 @@ class TaskV2Info:
 
     @property
     def can_execute(self):
-        """Gets the can_execute of this TaskV2Info.
+        r"""Gets the can_execute of this TaskV2Info.
 
         是否有部署权限
 
@@ -777,7 +777,7 @@ class TaskV2Info:
 
     @can_execute.setter
     def can_execute(self, can_execute):
-        """Sets the can_execute of this TaskV2Info.
+        r"""Sets the can_execute of this TaskV2Info.
 
         是否有部署权限
 
@@ -788,7 +788,7 @@ class TaskV2Info:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this TaskV2Info.
+        r"""Gets the can_copy of this TaskV2Info.
 
         是否有复制权限
 
@@ -799,7 +799,7 @@ class TaskV2Info:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this TaskV2Info.
+        r"""Sets the can_copy of this TaskV2Info.
 
         是否有复制权限
 
@@ -810,7 +810,7 @@ class TaskV2Info:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this TaskV2Info.
+        r"""Gets the can_manage of this TaskV2Info.
 
         是否有编辑应用权限矩阵的权限
 
@@ -821,7 +821,7 @@ class TaskV2Info:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this TaskV2Info.
+        r"""Sets the can_manage of this TaskV2Info.
 
         是否有编辑应用权限矩阵的权限
 
@@ -832,7 +832,7 @@ class TaskV2Info:
 
     @property
     def can_create_env(self):
-        """Gets the can_create_env of this TaskV2Info.
+        r"""Gets the can_create_env of this TaskV2Info.
 
         是否有创建环境的权限
 
@@ -843,7 +843,7 @@ class TaskV2Info:
 
     @can_create_env.setter
     def can_create_env(self, can_create_env):
-        """Sets the can_create_env of this TaskV2Info.
+        r"""Sets the can_create_env of this TaskV2Info.
 
         是否有创建环境的权限
 
@@ -854,7 +854,7 @@ class TaskV2Info:
 
     @property
     def can_disable(self):
-        """Gets the can_disable of this TaskV2Info.
+        r"""Gets the can_disable of this TaskV2Info.
 
         是否有禁用应用的权限
 
@@ -865,7 +865,7 @@ class TaskV2Info:
 
     @can_disable.setter
     def can_disable(self, can_disable):
-        """Sets the can_disable of this TaskV2Info.
+        r"""Sets the can_disable of this TaskV2Info.
 
         是否有禁用应用的权限
 
@@ -876,7 +876,7 @@ class TaskV2Info:
 
     @property
     def app_component_list(self):
-        """Gets the app_component_list of this TaskV2Info.
+        r"""Gets the app_component_list of this TaskV2Info.
 
         应用组件列表
 
@@ -887,7 +887,7 @@ class TaskV2Info:
 
     @app_component_list.setter
     def app_component_list(self, app_component_list):
-        """Sets the app_component_list of this TaskV2Info.
+        r"""Sets the app_component_list of this TaskV2Info.
 
         应用组件列表
 
@@ -898,7 +898,7 @@ class TaskV2Info:
 
     @property
     def release_id(self):
-        """Gets the release_id of this TaskV2Info.
+        r"""Gets the release_id of this TaskV2Info.
 
         部署记录序列号
 
@@ -909,7 +909,7 @@ class TaskV2Info:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this TaskV2Info.
+        r"""Sets the release_id of this TaskV2Info.
 
         部署记录序列号
 
@@ -920,7 +920,7 @@ class TaskV2Info:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TaskV2Info.
+        r"""Gets the app_id of this TaskV2Info.
 
         部署任务所属应用id
 
@@ -931,7 +931,7 @@ class TaskV2Info:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TaskV2Info.
+        r"""Sets the app_id of this TaskV2Info.
 
         部署任务所属应用id
 
@@ -942,7 +942,7 @@ class TaskV2Info:
 
     @property
     def is_disable(self):
-        """Gets the is_disable of this TaskV2Info.
+        r"""Gets the is_disable of this TaskV2Info.
 
         当前应用是否被禁用
 
@@ -953,7 +953,7 @@ class TaskV2Info:
 
     @is_disable.setter
     def is_disable(self, is_disable):
-        """Sets the is_disable of this TaskV2Info.
+        r"""Sets the is_disable of this TaskV2Info.
 
         当前应用是否被禁用
 

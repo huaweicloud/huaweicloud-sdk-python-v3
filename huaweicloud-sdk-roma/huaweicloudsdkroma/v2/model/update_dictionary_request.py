@@ -29,7 +29,7 @@ class UpdateDictionaryRequest:
     }
 
     def __init__(self, dict_id=None, instance_id=None, body=None):
-        """UpdateDictionaryRequest
+        r"""UpdateDictionaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDictionaryRequest:
 
     @property
     def dict_id(self):
-        """Gets the dict_id of this UpdateDictionaryRequest.
+        r"""Gets the dict_id of this UpdateDictionaryRequest.
 
         字典ID
 
@@ -66,7 +66,7 @@ class UpdateDictionaryRequest:
 
     @dict_id.setter
     def dict_id(self, dict_id):
-        """Sets the dict_id of this UpdateDictionaryRequest.
+        r"""Sets the dict_id of this UpdateDictionaryRequest.
 
         字典ID
 
@@ -77,7 +77,7 @@ class UpdateDictionaryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDictionaryRequest.
+        r"""Gets the instance_id of this UpdateDictionaryRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class UpdateDictionaryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDictionaryRequest.
+        r"""Sets the instance_id of this UpdateDictionaryRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class UpdateDictionaryRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDictionaryRequest.
+        r"""Gets the body of this UpdateDictionaryRequest.
 
         :return: The body of this UpdateDictionaryRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDictionary`
@@ -108,7 +108,7 @@ class UpdateDictionaryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDictionaryRequest.
+        r"""Sets the body of this UpdateDictionaryRequest.
 
         :param body: The body of this UpdateDictionaryRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateDictionary`

@@ -28,7 +28,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
     }
 
     def __init__(self, follow_status=None, x_request_id=None):
-        """UpdateFollow302SwitchResponse
+        r"""UpdateFollow302SwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
 
     @property
     def follow_status(self):
-        """Gets the follow_status of this UpdateFollow302SwitchResponse.
+        r"""Gets the follow_status of this UpdateFollow302SwitchResponse.
 
         :return: The follow_status of this UpdateFollow302SwitchResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
@@ -60,7 +60,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
 
     @follow_status.setter
     def follow_status(self, follow_status):
-        """Sets the follow_status of this UpdateFollow302SwitchResponse.
+        r"""Sets the follow_status of this UpdateFollow302SwitchResponse.
 
         :param follow_status: The follow_status of this UpdateFollow302SwitchResponse.
         :type follow_status: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
@@ -69,7 +69,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateFollow302SwitchResponse.
+        r"""Gets the x_request_id of this UpdateFollow302SwitchResponse.
 
         :return: The x_request_id of this UpdateFollow302SwitchResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateFollow302SwitchResponse.
+        r"""Sets the x_request_id of this UpdateFollow302SwitchResponse.
 
         :param x_request_id: The x_request_id of this UpdateFollow302SwitchResponse.
         :type x_request_id: str

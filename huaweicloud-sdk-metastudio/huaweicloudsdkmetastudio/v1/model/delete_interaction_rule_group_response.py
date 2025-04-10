@@ -26,7 +26,7 @@ class DeleteInteractionRuleGroupResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteInteractionRuleGroupResponse
+        r"""DeleteInteractionRuleGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteInteractionRuleGroupResponse.
+        r"""Gets the x_request_id of this DeleteInteractionRuleGroupResponse.
 
         :return: The x_request_id of this DeleteInteractionRuleGroupResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteInteractionRuleGroupResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteInteractionRuleGroupResponse.
+        r"""Sets the x_request_id of this DeleteInteractionRuleGroupResponse.
 
         :param x_request_id: The x_request_id of this DeleteInteractionRuleGroupResponse.
         :type x_request_id: str

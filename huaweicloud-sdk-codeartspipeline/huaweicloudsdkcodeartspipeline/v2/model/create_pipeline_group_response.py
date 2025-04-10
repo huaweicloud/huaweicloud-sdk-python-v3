@@ -48,7 +48,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, domain_id=None, project_id=None, name=None, parent_id=None, path_id=None, ordinal=None, creator=None, updater=None, create_time=None, update_time=None, children=None):
-        """CreatePipelineGroupResponse
+        r"""CreatePipelineGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePipelineGroupResponse.
+        r"""Gets the id of this CreatePipelineGroupResponse.
 
         分组ID
 
@@ -132,7 +132,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePipelineGroupResponse.
+        r"""Sets the id of this CreatePipelineGroupResponse.
 
         分组ID
 
@@ -143,7 +143,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreatePipelineGroupResponse.
+        r"""Gets the domain_id of this CreatePipelineGroupResponse.
 
         租户ID
 
@@ -154,7 +154,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreatePipelineGroupResponse.
+        r"""Sets the domain_id of this CreatePipelineGroupResponse.
 
         租户ID
 
@@ -165,7 +165,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePipelineGroupResponse.
+        r"""Gets the project_id of this CreatePipelineGroupResponse.
 
         项目ID
 
@@ -176,7 +176,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePipelineGroupResponse.
+        r"""Sets the project_id of this CreatePipelineGroupResponse.
 
         项目ID
 
@@ -187,7 +187,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreatePipelineGroupResponse.
+        r"""Gets the name of this CreatePipelineGroupResponse.
 
         分组名
 
@@ -198,7 +198,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePipelineGroupResponse.
+        r"""Sets the name of this CreatePipelineGroupResponse.
 
         分组名
 
@@ -209,7 +209,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreatePipelineGroupResponse.
+        r"""Gets the parent_id of this CreatePipelineGroupResponse.
 
         父分组ID
 
@@ -220,7 +220,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreatePipelineGroupResponse.
+        r"""Sets the parent_id of this CreatePipelineGroupResponse.
 
         父分组ID
 
@@ -231,7 +231,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def path_id(self):
-        """Gets the path_id of this CreatePipelineGroupResponse.
+        r"""Gets the path_id of this CreatePipelineGroupResponse.
 
         分组路径ID
 
@@ -242,7 +242,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @path_id.setter
     def path_id(self, path_id):
-        """Sets the path_id of this CreatePipelineGroupResponse.
+        r"""Sets the path_id of this CreatePipelineGroupResponse.
 
         分组路径ID
 
@@ -253,7 +253,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this CreatePipelineGroupResponse.
+        r"""Gets the ordinal of this CreatePipelineGroupResponse.
 
         序号
 
@@ -264,7 +264,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this CreatePipelineGroupResponse.
+        r"""Sets the ordinal of this CreatePipelineGroupResponse.
 
         序号
 
@@ -275,7 +275,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreatePipelineGroupResponse.
+        r"""Gets the creator of this CreatePipelineGroupResponse.
 
         创建用户ID
 
@@ -286,7 +286,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreatePipelineGroupResponse.
+        r"""Sets the creator of this CreatePipelineGroupResponse.
 
         创建用户ID
 
@@ -297,7 +297,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def updater(self):
-        """Gets the updater of this CreatePipelineGroupResponse.
+        r"""Gets the updater of this CreatePipelineGroupResponse.
 
         更新用户ID
 
@@ -308,7 +308,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this CreatePipelineGroupResponse.
+        r"""Sets the updater of this CreatePipelineGroupResponse.
 
         更新用户ID
 
@@ -319,7 +319,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreatePipelineGroupResponse.
+        r"""Gets the create_time of this CreatePipelineGroupResponse.
 
         创建时间
 
@@ -330,7 +330,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreatePipelineGroupResponse.
+        r"""Sets the create_time of this CreatePipelineGroupResponse.
 
         创建时间
 
@@ -341,7 +341,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreatePipelineGroupResponse.
+        r"""Gets the update_time of this CreatePipelineGroupResponse.
 
         更新时间
 
@@ -352,7 +352,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreatePipelineGroupResponse.
+        r"""Sets the update_time of this CreatePipelineGroupResponse.
 
         更新时间
 
@@ -363,7 +363,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @property
     def children(self):
-        """Gets the children of this CreatePipelineGroupResponse.
+        r"""Gets the children of this CreatePipelineGroupResponse.
 
         子分组列表
 
@@ -374,7 +374,7 @@ class CreatePipelineGroupResponse(SdkResponse):
 
     @children.setter
     def children(self, children):
-        """Sets the children of this CreatePipelineGroupResponse.
+        r"""Sets the children of this CreatePipelineGroupResponse.
 
         子分组列表
 

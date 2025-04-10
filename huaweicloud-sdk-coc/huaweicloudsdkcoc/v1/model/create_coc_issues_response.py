@@ -32,7 +32,7 @@ class CreateCocIssuesResponse(SdkResponse):
     }
 
     def __init__(self, provider_code=None, error_code=None, error_msg=None, data=None):
-        """CreateCocIssuesResponse
+        r"""CreateCocIssuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @property
     def provider_code(self):
-        """Gets the provider_code of this CreateCocIssuesResponse.
+        r"""Gets the provider_code of this CreateCocIssuesResponse.
 
         服务标识
 
@@ -74,7 +74,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @provider_code.setter
     def provider_code(self, provider_code):
-        """Sets the provider_code of this CreateCocIssuesResponse.
+        r"""Sets the provider_code of this CreateCocIssuesResponse.
 
         服务标识
 
@@ -85,7 +85,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateCocIssuesResponse.
+        r"""Gets the error_code of this CreateCocIssuesResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -96,7 +96,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateCocIssuesResponse.
+        r"""Sets the error_code of this CreateCocIssuesResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -107,7 +107,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateCocIssuesResponse.
+        r"""Gets the error_msg of this CreateCocIssuesResponse.
 
         请求响应描述
 
@@ -118,7 +118,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateCocIssuesResponse.
+        r"""Sets the error_msg of this CreateCocIssuesResponse.
 
         请求响应描述
 
@@ -129,7 +129,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateCocIssuesResponse.
+        r"""Gets the data of this CreateCocIssuesResponse.
 
         :return: The data of this CreateCocIssuesResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.CreateExternalIssuesResponseData`
@@ -138,7 +138,7 @@ class CreateCocIssuesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateCocIssuesResponse.
+        r"""Sets the data of this CreateCocIssuesResponse.
 
         :param data: The data of this CreateCocIssuesResponse.
         :type data: :class:`huaweicloudsdkcoc.v1.CreateExternalIssuesResponseData`

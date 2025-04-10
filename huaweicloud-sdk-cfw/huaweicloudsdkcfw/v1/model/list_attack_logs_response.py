@@ -26,7 +26,7 @@ class ListAttackLogsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAttackLogsResponse
+        r"""ListAttackLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAttackLogsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAttackLogsResponse.
+        r"""Gets the data of this ListAttackLogsResponse.
 
         :return: The data of this ListAttackLogsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.HttpQueryCfwAttackLogsResponseDTOData`
@@ -53,7 +53,7 @@ class ListAttackLogsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAttackLogsResponse.
+        r"""Sets the data of this ListAttackLogsResponse.
 
         :param data: The data of this ListAttackLogsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.HttpQueryCfwAttackLogsResponseDTOData`

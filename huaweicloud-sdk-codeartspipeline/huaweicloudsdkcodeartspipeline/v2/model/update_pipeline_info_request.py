@@ -31,7 +31,7 @@ class UpdatePipelineInfoRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, component_id=None, body=None):
-        """UpdatePipelineInfoRequest
+        r"""UpdatePipelineInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdatePipelineInfoRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdatePipelineInfoRequest.
+        r"""Gets the project_id of this UpdatePipelineInfoRequest.
 
         项目ID
 
@@ -73,7 +73,7 @@ class UpdatePipelineInfoRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdatePipelineInfoRequest.
+        r"""Sets the project_id of this UpdatePipelineInfoRequest.
 
         项目ID
 
@@ -84,7 +84,7 @@ class UpdatePipelineInfoRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this UpdatePipelineInfoRequest.
+        r"""Gets the pipeline_id of this UpdatePipelineInfoRequest.
 
         流水线ID
 
@@ -95,7 +95,7 @@ class UpdatePipelineInfoRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this UpdatePipelineInfoRequest.
+        r"""Sets the pipeline_id of this UpdatePipelineInfoRequest.
 
         流水线ID
 
@@ -106,7 +106,7 @@ class UpdatePipelineInfoRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this UpdatePipelineInfoRequest.
+        r"""Gets the component_id of this UpdatePipelineInfoRequest.
 
         微服务ID
 
@@ -117,7 +117,7 @@ class UpdatePipelineInfoRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this UpdatePipelineInfoRequest.
+        r"""Sets the component_id of this UpdatePipelineInfoRequest.
 
         微服务ID
 
@@ -128,7 +128,7 @@ class UpdatePipelineInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePipelineInfoRequest.
+        r"""Gets the body of this UpdatePipelineInfoRequest.
 
         :return: The body of this UpdatePipelineInfoRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineDTO`
@@ -137,7 +137,7 @@ class UpdatePipelineInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePipelineInfoRequest.
+        r"""Sets the body of this UpdatePipelineInfoRequest.
 
         :param body: The body of this UpdatePipelineInfoRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineDTO`

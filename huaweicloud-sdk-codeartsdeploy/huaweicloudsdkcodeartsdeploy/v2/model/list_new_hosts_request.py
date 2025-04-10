@@ -39,7 +39,7 @@ class ListNewHostsRequest:
     }
 
     def __init__(self, group_id=None, key_field=None, environment_id=None, page_index=None, page_size=None, sort_key=None, sort_dir=None, as_proxy=None):
-        """ListNewHostsRequest
+        r"""ListNewHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListNewHostsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListNewHostsRequest.
+        r"""Gets the group_id of this ListNewHostsRequest.
 
         项目id
 
@@ -102,7 +102,7 @@ class ListNewHostsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListNewHostsRequest.
+        r"""Sets the group_id of this ListNewHostsRequest.
 
         项目id
 
@@ -113,7 +113,7 @@ class ListNewHostsRequest:
 
     @property
     def key_field(self):
-        """Gets the key_field of this ListNewHostsRequest.
+        r"""Gets the key_field of this ListNewHostsRequest.
 
         主机名模糊查询信息
 
@@ -124,7 +124,7 @@ class ListNewHostsRequest:
 
     @key_field.setter
     def key_field(self, key_field):
-        """Sets the key_field of this ListNewHostsRequest.
+        r"""Sets the key_field of this ListNewHostsRequest.
 
         主机名模糊查询信息
 
@@ -135,7 +135,7 @@ class ListNewHostsRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ListNewHostsRequest.
+        r"""Gets the environment_id of this ListNewHostsRequest.
 
         环境id
 
@@ -146,7 +146,7 @@ class ListNewHostsRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ListNewHostsRequest.
+        r"""Sets the environment_id of this ListNewHostsRequest.
 
         环境id
 
@@ -157,7 +157,7 @@ class ListNewHostsRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListNewHostsRequest.
+        r"""Gets the page_index of this ListNewHostsRequest.
 
         页码数
 
@@ -168,7 +168,7 @@ class ListNewHostsRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListNewHostsRequest.
+        r"""Sets the page_index of this ListNewHostsRequest.
 
         页码数
 
@@ -179,7 +179,7 @@ class ListNewHostsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListNewHostsRequest.
+        r"""Gets the page_size of this ListNewHostsRequest.
 
         每页显示的条目数量，默认为10
 
@@ -190,7 +190,7 @@ class ListNewHostsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListNewHostsRequest.
+        r"""Sets the page_size of this ListNewHostsRequest.
 
         每页显示的条目数量，默认为10
 
@@ -201,7 +201,7 @@ class ListNewHostsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListNewHostsRequest.
+        r"""Gets the sort_key of this ListNewHostsRequest.
 
         排序字段：as_proxy|host_name|owner_name，不传使用默认排序
 
@@ -212,7 +212,7 @@ class ListNewHostsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListNewHostsRequest.
+        r"""Sets the sort_key of this ListNewHostsRequest.
 
         排序字段：as_proxy|host_name|owner_name，不传使用默认排序
 
@@ -223,7 +223,7 @@ class ListNewHostsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListNewHostsRequest.
+        r"""Gets the sort_dir of this ListNewHostsRequest.
 
         排序方式：DESC、ASC，默认为DESC
 
@@ -234,7 +234,7 @@ class ListNewHostsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListNewHostsRequest.
+        r"""Sets the sort_dir of this ListNewHostsRequest.
 
         排序方式：DESC、ASC，默认为DESC
 
@@ -245,7 +245,7 @@ class ListNewHostsRequest:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this ListNewHostsRequest.
+        r"""Gets the as_proxy of this ListNewHostsRequest.
 
         是否为代理机
 
@@ -256,7 +256,7 @@ class ListNewHostsRequest:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this ListNewHostsRequest.
+        r"""Sets the as_proxy of this ListNewHostsRequest.
 
         是否为代理机
 

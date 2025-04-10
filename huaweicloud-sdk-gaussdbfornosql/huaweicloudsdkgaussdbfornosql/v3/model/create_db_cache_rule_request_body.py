@@ -47,7 +47,7 @@ class CreateDbCacheRuleRequestBody:
     }
 
     def __init__(self, dbcache_mapping_id=None, name=None, source_db_schema=None, source_db_table=None, storage_type=None, target_database=None, key_columns=None, value_columns=None, ttl=None, key_separator=None, value_separator=None, key_prefix=None):
-        """CreateDbCacheRuleRequestBody
+        r"""CreateDbCacheRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def dbcache_mapping_id(self):
-        """Gets the dbcache_mapping_id of this CreateDbCacheRuleRequestBody.
+        r"""Gets the dbcache_mapping_id of this CreateDbCacheRuleRequestBody.
 
         内存加速映射ID。
 
@@ -121,7 +121,7 @@ class CreateDbCacheRuleRequestBody:
 
     @dbcache_mapping_id.setter
     def dbcache_mapping_id(self, dbcache_mapping_id):
-        """Sets the dbcache_mapping_id of this CreateDbCacheRuleRequestBody.
+        r"""Sets the dbcache_mapping_id of this CreateDbCacheRuleRequestBody.
 
         内存加速映射ID。
 
@@ -132,7 +132,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDbCacheRuleRequestBody.
+        r"""Gets the name of this CreateDbCacheRuleRequestBody.
 
         内存加速规则名称。不超过256字符，需要确保在当前映射下唯一。
 
@@ -143,7 +143,7 @@ class CreateDbCacheRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDbCacheRuleRequestBody.
+        r"""Sets the name of this CreateDbCacheRuleRequestBody.
 
         内存加速规则名称。不超过256字符，需要确保在当前映射下唯一。
 
@@ -154,7 +154,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def source_db_schema(self):
-        """Gets the source_db_schema of this CreateDbCacheRuleRequestBody.
+        r"""Gets the source_db_schema of this CreateDbCacheRuleRequestBody.
 
         源端数据库。
 
@@ -165,7 +165,7 @@ class CreateDbCacheRuleRequestBody:
 
     @source_db_schema.setter
     def source_db_schema(self, source_db_schema):
-        """Sets the source_db_schema of this CreateDbCacheRuleRequestBody.
+        r"""Sets the source_db_schema of this CreateDbCacheRuleRequestBody.
 
         源端数据库。
 
@@ -176,7 +176,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def source_db_table(self):
-        """Gets the source_db_table of this CreateDbCacheRuleRequestBody.
+        r"""Gets the source_db_table of this CreateDbCacheRuleRequestBody.
 
         源端数据表。
 
@@ -187,7 +187,7 @@ class CreateDbCacheRuleRequestBody:
 
     @source_db_table.setter
     def source_db_table(self, source_db_table):
-        """Sets the source_db_table of this CreateDbCacheRuleRequestBody.
+        r"""Sets the source_db_table of this CreateDbCacheRuleRequestBody.
 
         源端数据表。
 
@@ -198,7 +198,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this CreateDbCacheRuleRequestBody.
+        r"""Gets the storage_type of this CreateDbCacheRuleRequestBody.
 
         目标数据存储类型。 取值为： hash。
 
@@ -209,7 +209,7 @@ class CreateDbCacheRuleRequestBody:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this CreateDbCacheRuleRequestBody.
+        r"""Sets the storage_type of this CreateDbCacheRuleRequestBody.
 
         目标数据存储类型。 取值为： hash。
 
@@ -220,7 +220,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def target_database(self):
-        """Gets the target_database of this CreateDbCacheRuleRequestBody.
+        r"""Gets the target_database of this CreateDbCacheRuleRequestBody.
 
         目标数据库。取值范围： [0-999]。
 
@@ -231,7 +231,7 @@ class CreateDbCacheRuleRequestBody:
 
     @target_database.setter
     def target_database(self, target_database):
-        """Sets the target_database of this CreateDbCacheRuleRequestBody.
+        r"""Sets the target_database of this CreateDbCacheRuleRequestBody.
 
         目标数据库。取值范围： [0-999]。
 
@@ -242,7 +242,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def key_columns(self):
-        """Gets the key_columns of this CreateDbCacheRuleRequestBody.
+        r"""Gets the key_columns of this CreateDbCacheRuleRequestBody.
 
         映射的key使用的column列表。
 
@@ -253,7 +253,7 @@ class CreateDbCacheRuleRequestBody:
 
     @key_columns.setter
     def key_columns(self, key_columns):
-        """Sets the key_columns of this CreateDbCacheRuleRequestBody.
+        r"""Sets the key_columns of this CreateDbCacheRuleRequestBody.
 
         映射的key使用的column列表。
 
@@ -264,7 +264,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def value_columns(self):
-        """Gets the value_columns of this CreateDbCacheRuleRequestBody.
+        r"""Gets the value_columns of this CreateDbCacheRuleRequestBody.
 
         映射的value使用的column列表。
 
@@ -275,7 +275,7 @@ class CreateDbCacheRuleRequestBody:
 
     @value_columns.setter
     def value_columns(self, value_columns):
-        """Sets the value_columns of this CreateDbCacheRuleRequestBody.
+        r"""Sets the value_columns of this CreateDbCacheRuleRequestBody.
 
         映射的value使用的column列表。
 
@@ -286,7 +286,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreateDbCacheRuleRequestBody.
+        r"""Gets the ttl of this CreateDbCacheRuleRequestBody.
 
         key的生存时间。单位:ms。不传该值，默认取2592000000，表示30天。
 
@@ -297,7 +297,7 @@ class CreateDbCacheRuleRequestBody:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreateDbCacheRuleRequestBody.
+        r"""Sets the ttl of this CreateDbCacheRuleRequestBody.
 
         key的生存时间。单位:ms。不传该值，默认取2592000000，表示30天。
 
@@ -308,7 +308,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def key_separator(self):
-        """Gets the key_separator of this CreateDbCacheRuleRequestBody.
+        r"""Gets the key_separator of this CreateDbCacheRuleRequestBody.
 
         映射的key分隔符。只允许一个字符。
 
@@ -319,7 +319,7 @@ class CreateDbCacheRuleRequestBody:
 
     @key_separator.setter
     def key_separator(self, key_separator):
-        """Sets the key_separator of this CreateDbCacheRuleRequestBody.
+        r"""Sets the key_separator of this CreateDbCacheRuleRequestBody.
 
         映射的key分隔符。只允许一个字符。
 
@@ -330,7 +330,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def value_separator(self):
-        """Gets the value_separator of this CreateDbCacheRuleRequestBody.
+        r"""Gets the value_separator of this CreateDbCacheRuleRequestBody.
 
         映射的value分隔符。只允许一个字符。
 
@@ -341,7 +341,7 @@ class CreateDbCacheRuleRequestBody:
 
     @value_separator.setter
     def value_separator(self, value_separator):
-        """Sets the value_separator of this CreateDbCacheRuleRequestBody.
+        r"""Sets the value_separator of this CreateDbCacheRuleRequestBody.
 
         映射的value分隔符。只允许一个字符。
 
@@ -352,7 +352,7 @@ class CreateDbCacheRuleRequestBody:
 
     @property
     def key_prefix(self):
-        """Gets the key_prefix of this CreateDbCacheRuleRequestBody.
+        r"""Gets the key_prefix of this CreateDbCacheRuleRequestBody.
 
         键前缀。最长限制1024字符。需确保key_prefix和target_database在当前映射下唯一。
 
@@ -363,7 +363,7 @@ class CreateDbCacheRuleRequestBody:
 
     @key_prefix.setter
     def key_prefix(self, key_prefix):
-        """Sets the key_prefix of this CreateDbCacheRuleRequestBody.
+        r"""Sets the key_prefix of this CreateDbCacheRuleRequestBody.
 
         键前缀。最长限制1024字符。需确保key_prefix和target_database在当前映射下唯一。
 

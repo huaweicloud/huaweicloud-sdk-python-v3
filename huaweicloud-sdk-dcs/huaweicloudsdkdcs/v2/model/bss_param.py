@@ -33,7 +33,7 @@ class BssParam:
     }
 
     def __init__(self, is_auto_renew=None, charging_mode=None, is_auto_pay=None, period_type=None, period_num=None):
-        """BssParam
+        r"""BssParam
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BssParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this BssParam.
+        r"""Gets the is_auto_renew of this BssParam.
 
         当选择包年包月时，该字段为必选，表示是否自动续订资源。 取值范围： - false：不自动续订； - true：自动续订； 默认值为：false 约束： 如果设置为自动续订，到期后，会自动续订一个月（自动续订时间后续可能会变化），详情可联系客服咨询。 
 
@@ -81,7 +81,7 @@ class BssParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this BssParam.
+        r"""Sets the is_auto_renew of this BssParam.
 
         当选择包年包月时，该字段为必选，表示是否自动续订资源。 取值范围： - false：不自动续订； - true：自动续订； 默认值为：false 约束： 如果设置为自动续订，到期后，会自动续订一个月（自动续订时间后续可能会变化），详情可联系客服咨询。 
 
@@ -92,7 +92,7 @@ class BssParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BssParam.
+        r"""Gets the charging_mode of this BssParam.
 
         功能说明：付费方式（预付费、按需付费；预付费，即包周期付费）。 取值范围： - prePaid：预付费，即包年包月； - postPaid：后付费，即按需付费； 默认值是postPaid。 后付费的场景下，bss_param参数的其他字段都会被忽略。 
 
@@ -103,7 +103,7 @@ class BssParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BssParam.
+        r"""Sets the charging_mode of this BssParam.
 
         功能说明：付费方式（预付费、按需付费；预付费，即包周期付费）。 取值范围： - prePaid：预付费，即包年包月； - postPaid：后付费，即按需付费； 默认值是postPaid。 后付费的场景下，bss_param参数的其他字段都会被忽略。 
 
@@ -114,7 +114,7 @@ class BssParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BssParam.
+        r"""Gets the is_auto_pay of this BssParam.
 
         功能说明：下单订购后，是否自动从客户的账户中支付；默认是“不自动支付” 。  取值范围： - true：是（自动支付，从账户余额自动扣费） - false：否（默认值，只提交订单不支付，需要客户手动去支付）  约束： 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **如果没有设置成自动支付，即设置为false时，在创建实例之后，实例状态为“支付中”，用户必须在“费用中心 > 我的订单”，完成订单支付，否则订单一直在支付中，实例没有创建成功**。 
 
@@ -125,7 +125,7 @@ class BssParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BssParam.
+        r"""Sets the is_auto_pay of this BssParam.
 
         功能说明：下单订购后，是否自动从客户的账户中支付；默认是“不自动支付” 。  取值范围： - true：是（自动支付，从账户余额自动扣费） - false：否（默认值，只提交订单不支付，需要客户手动去支付）  约束： 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **如果没有设置成自动支付，即设置为false时，在创建实例之后，实例状态为“支付中”，用户必须在“费用中心 > 我的订单”，完成订单支付，否则订单一直在支付中，实例没有创建成功**。 
 
@@ -136,7 +136,7 @@ class BssParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this BssParam.
+        r"""Gets the period_type of this BssParam.
 
         当选择包年包月时，该字段为必选，表示订购资源的周期类型。  取值范围如下： - month：表示包月 - year：表示包年 
 
@@ -147,7 +147,7 @@ class BssParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this BssParam.
+        r"""Sets the period_type of this BssParam.
 
         当选择包年包月时，该字段为必选，表示订购资源的周期类型。  取值范围如下： - month：表示包月 - year：表示包年 
 
@@ -158,7 +158,7 @@ class BssParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this BssParam.
+        r"""Gets the period_num of this BssParam.
 
         功能说明：订购周期数 取值范围：(后续会随运营策略变化) - period_type为month时，为[1,9]， - period_type为year时，为[1,3]  约束：同period_type约束。 
 
@@ -169,7 +169,7 @@ class BssParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this BssParam.
+        r"""Sets the period_num of this BssParam.
 
         功能说明：订购周期数 取值范围：(后续会随运营策略变化) - period_type为month时，为[1,9]， - period_type为year时，为[1,3]  约束：同period_type约束。 
 

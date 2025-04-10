@@ -27,7 +27,7 @@ class UpdateVpnConnectionsLogConfigRequest:
     }
 
     def __init__(self, p2c_vgw_id=None, body=None):
-        """UpdateVpnConnectionsLogConfigRequest
+        r"""UpdateVpnConnectionsLogConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVpnConnectionsLogConfigRequest:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this UpdateVpnConnectionsLogConfigRequest.
+        r"""Gets the p2c_vgw_id of this UpdateVpnConnectionsLogConfigRequest.
 
         P2C VPN网关实例ID
 
@@ -60,7 +60,7 @@ class UpdateVpnConnectionsLogConfigRequest:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this UpdateVpnConnectionsLogConfigRequest.
+        r"""Sets the p2c_vgw_id of this UpdateVpnConnectionsLogConfigRequest.
 
         P2C VPN网关实例ID
 
@@ -71,7 +71,7 @@ class UpdateVpnConnectionsLogConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpnConnectionsLogConfigRequest.
+        r"""Gets the body of this UpdateVpnConnectionsLogConfigRequest.
 
         :return: The body of this UpdateVpnConnectionsLogConfigRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnLogConfigRequestBody`
@@ -80,7 +80,7 @@ class UpdateVpnConnectionsLogConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpnConnectionsLogConfigRequest.
+        r"""Sets the body of this UpdateVpnConnectionsLogConfigRequest.
 
         :param body: The body of this UpdateVpnConnectionsLogConfigRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateVpnLogConfigRequestBody`

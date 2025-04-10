@@ -27,7 +27,7 @@ class ShowTaskCmetricsRequest:
     }
 
     def __init__(self, project_id=None, task_id=None):
-        """ShowTaskCmetricsRequest
+        r"""ShowTaskCmetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTaskCmetricsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTaskCmetricsRequest.
+        r"""Gets the project_id of this ShowTaskCmetricsRequest.
 
         项目ID
 
@@ -59,7 +59,7 @@ class ShowTaskCmetricsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTaskCmetricsRequest.
+        r"""Sets the project_id of this ShowTaskCmetricsRequest.
 
         项目ID
 
@@ -70,7 +70,7 @@ class ShowTaskCmetricsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskCmetricsRequest.
+        r"""Gets the task_id of this ShowTaskCmetricsRequest.
 
         任务ID
 
@@ -81,7 +81,7 @@ class ShowTaskCmetricsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskCmetricsRequest.
+        r"""Sets the task_id of this ShowTaskCmetricsRequest.
 
         任务ID
 

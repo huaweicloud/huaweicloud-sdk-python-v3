@@ -31,7 +31,7 @@ class ExerciseFilter:
     }
 
     def __init__(self, name=None, exercise_type=None, difficult_ids=None, knowledge_point_ids=None):
-        """ExerciseFilter
+        r"""ExerciseFilter
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ExerciseFilter:
 
     @property
     def name(self):
-        """Gets the name of this ExerciseFilter.
+        r"""Gets the name of this ExerciseFilter.
 
         需查询的习题名称
 
@@ -75,7 +75,7 @@ class ExerciseFilter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExerciseFilter.
+        r"""Sets the name of this ExerciseFilter.
 
         需查询的习题名称
 
@@ -86,7 +86,7 @@ class ExerciseFilter:
 
     @property
     def exercise_type(self):
-        """Gets the exercise_type of this ExerciseFilter.
+        r"""Gets the exercise_type of this ExerciseFilter.
 
         习题类型列表
 
@@ -97,7 +97,7 @@ class ExerciseFilter:
 
     @exercise_type.setter
     def exercise_type(self, exercise_type):
-        """Sets the exercise_type of this ExerciseFilter.
+        r"""Sets the exercise_type of this ExerciseFilter.
 
         习题类型列表
 
@@ -108,7 +108,7 @@ class ExerciseFilter:
 
     @property
     def difficult_ids(self):
-        """Gets the difficult_ids of this ExerciseFilter.
+        r"""Gets the difficult_ids of this ExerciseFilter.
 
         难度id列表
 
@@ -119,7 +119,7 @@ class ExerciseFilter:
 
     @difficult_ids.setter
     def difficult_ids(self, difficult_ids):
-        """Sets the difficult_ids of this ExerciseFilter.
+        r"""Sets the difficult_ids of this ExerciseFilter.
 
         难度id列表
 
@@ -130,7 +130,7 @@ class ExerciseFilter:
 
     @property
     def knowledge_point_ids(self):
-        """Gets the knowledge_point_ids of this ExerciseFilter.
+        r"""Gets the knowledge_point_ids of this ExerciseFilter.
 
         知识点id列表
 
@@ -141,7 +141,7 @@ class ExerciseFilter:
 
     @knowledge_point_ids.setter
     def knowledge_point_ids(self, knowledge_point_ids):
-        """Sets the knowledge_point_ids of this ExerciseFilter.
+        r"""Sets the knowledge_point_ids of this ExerciseFilter.
 
         知识点id列表
 

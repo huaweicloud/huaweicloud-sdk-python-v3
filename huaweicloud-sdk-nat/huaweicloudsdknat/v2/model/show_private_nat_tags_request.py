@@ -25,7 +25,7 @@ class ShowPrivateNatTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowPrivateNatTagsRequest
+        r"""ShowPrivateNatTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPrivateNatTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowPrivateNatTagsRequest.
+        r"""Gets the resource_id of this ShowPrivateNatTagsRequest.
 
         私网NAT网关的ID。
 
@@ -53,7 +53,7 @@ class ShowPrivateNatTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowPrivateNatTagsRequest.
+        r"""Sets the resource_id of this ShowPrivateNatTagsRequest.
 
         私网NAT网关的ID。
 

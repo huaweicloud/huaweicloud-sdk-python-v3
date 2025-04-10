@@ -31,7 +31,7 @@ class FrontRow:
     }
 
     def __init__(self, cell_list=None, filter=None, header=None, tx_id=None):
-        """FrontRow
+        r"""FrontRow
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FrontRow:
 
     @property
     def cell_list(self):
-        """Gets the cell_list of this FrontRow.
+        r"""Gets the cell_list of this FrontRow.
 
         数据单元集合。
 
@@ -75,7 +75,7 @@ class FrontRow:
 
     @cell_list.setter
     def cell_list(self, cell_list):
-        """Sets the cell_list of this FrontRow.
+        r"""Sets the cell_list of this FrontRow.
 
         数据单元集合。
 
@@ -86,7 +86,7 @@ class FrontRow:
 
     @property
     def filter(self):
-        """Gets the filter of this FrontRow.
+        r"""Gets the filter of this FrontRow.
 
         将group by的字段拼接成过滤字符串，用于后续点网格点击使用。
 
@@ -97,7 +97,7 @@ class FrontRow:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this FrontRow.
+        r"""Sets the filter of this FrontRow.
 
         将group by的字段拼接成过滤字符串，用于后续点网格点击使用。
 
@@ -108,7 +108,7 @@ class FrontRow:
 
     @property
     def header(self):
-        """Gets the header of this FrontRow.
+        r"""Gets the header of this FrontRow.
 
         是否是header信息。
 
@@ -119,7 +119,7 @@ class FrontRow:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this FrontRow.
+        r"""Sets the header of this FrontRow.
 
         是否是header信息。
 
@@ -130,7 +130,7 @@ class FrontRow:
 
     @property
     def tx_id(self):
-        """Gets the tx_id of this FrontRow.
+        r"""Gets the tx_id of this FrontRow.
 
         Url跟踪id。
 
@@ -141,7 +141,7 @@ class FrontRow:
 
     @tx_id.setter
     def tx_id(self, tx_id):
-        """Sets the tx_id of this FrontRow.
+        r"""Sets the tx_id of this FrontRow.
 
         Url跟踪id。
 

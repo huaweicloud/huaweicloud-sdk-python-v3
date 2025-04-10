@@ -27,7 +27,7 @@ class DomainInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """DomainInfo
+        r"""DomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DomainInfo:
 
     @property
     def id(self):
-        """Gets the id of this DomainInfo.
+        r"""Gets the id of this DomainInfo.
 
         租户id。
 
@@ -60,7 +60,7 @@ class DomainInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DomainInfo.
+        r"""Sets the id of this DomainInfo.
 
         租户id。
 
@@ -71,7 +71,7 @@ class DomainInfo:
 
     @property
     def name(self):
-        """Gets the name of this DomainInfo.
+        r"""Gets the name of this DomainInfo.
 
         租户name。
 
@@ -82,7 +82,7 @@ class DomainInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DomainInfo.
+        r"""Sets the name of this DomainInfo.
 
         租户name。
 

@@ -35,7 +35,7 @@ class Service:
     }
 
     def __init__(self, name=None, description=None, links=None, id=None, type=None, enabled=None):
-        """Service
+        r"""Service
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class Service:
 
     @property
     def name(self):
-        """Gets the name of this Service.
+        r"""Gets the name of this Service.
 
         服务名。
 
@@ -84,7 +84,7 @@ class Service:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Service.
+        r"""Sets the name of this Service.
 
         服务名。
 
@@ -95,7 +95,7 @@ class Service:
 
     @property
     def description(self):
-        """Gets the description of this Service.
+        r"""Gets the description of this Service.
 
         服务描述信息。
 
@@ -106,7 +106,7 @@ class Service:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Service.
+        r"""Sets the description of this Service.
 
         服务描述信息。
 
@@ -117,7 +117,7 @@ class Service:
 
     @property
     def links(self):
-        """Gets the links of this Service.
+        r"""Gets the links of this Service.
 
         :return: The links of this Service.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -126,7 +126,7 @@ class Service:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Service.
+        r"""Sets the links of this Service.
 
         :param links: The links of this Service.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -135,7 +135,7 @@ class Service:
 
     @property
     def id(self):
-        """Gets the id of this Service.
+        r"""Gets the id of this Service.
 
         服务ID。
 
@@ -146,7 +146,7 @@ class Service:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Service.
+        r"""Sets the id of this Service.
 
         服务ID。
 
@@ -157,7 +157,7 @@ class Service:
 
     @property
     def type(self):
-        """Gets the type of this Service.
+        r"""Gets the type of this Service.
 
         服务类型。
 
@@ -168,7 +168,7 @@ class Service:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Service.
+        r"""Sets the type of this Service.
 
         服务类型。
 
@@ -179,7 +179,7 @@ class Service:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Service.
+        r"""Gets the enabled of this Service.
 
         服务是否可用。
 
@@ -190,7 +190,7 @@ class Service:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Service.
+        r"""Sets the enabled of this Service.
 
         服务是否可用。
 

@@ -35,7 +35,7 @@ class ListSharesByTagRequestBody:
     }
 
     def __init__(self, action=None, limit=None, offset=None, without_any_tag=None, tags=None, matches=None):
-        """ListSharesByTagRequestBody
+        r"""ListSharesByTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSharesByTagRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListSharesByTagRequestBody.
+        r"""Gets the action of this ListSharesByTagRequestBody.
 
         通过标签查询文件系统列表的操作类型。仅支持取值为\"filter\" 或 \"count\"。
 
@@ -89,7 +89,7 @@ class ListSharesByTagRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListSharesByTagRequestBody.
+        r"""Sets the action of this ListSharesByTagRequestBody.
 
         通过标签查询文件系统列表的操作类型。仅支持取值为\"filter\" 或 \"count\"。
 
@@ -100,7 +100,7 @@ class ListSharesByTagRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSharesByTagRequestBody.
+        r"""Gets the limit of this ListSharesByTagRequestBody.
 
         设置返回的文件系统个数的最大值。
 
@@ -111,7 +111,7 @@ class ListSharesByTagRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSharesByTagRequestBody.
+        r"""Sets the limit of this ListSharesByTagRequestBody.
 
         设置返回的文件系统个数的最大值。
 
@@ -122,7 +122,7 @@ class ListSharesByTagRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSharesByTagRequestBody.
+        r"""Gets the offset of this ListSharesByTagRequestBody.
 
         设置返回的文件系统的偏移量
 
@@ -133,7 +133,7 @@ class ListSharesByTagRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSharesByTagRequestBody.
+        r"""Sets the offset of this ListSharesByTagRequestBody.
 
         设置返回的文件系统的偏移量
 
@@ -144,7 +144,7 @@ class ListSharesByTagRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ListSharesByTagRequestBody.
+        r"""Gets the without_any_tag of this ListSharesByTagRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\"tags\"，\"matches\"等条件过滤。
 
@@ -155,7 +155,7 @@ class ListSharesByTagRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ListSharesByTagRequestBody.
+        r"""Sets the without_any_tag of this ListSharesByTagRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\"tags\"，\"matches\"等条件过滤。
 
@@ -166,7 +166,7 @@ class ListSharesByTagRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListSharesByTagRequestBody.
+        r"""Gets the tags of this ListSharesByTagRequestBody.
 
         包含标签，最多包含20个key，每个key下面的value最多20个，每个key对应的value可以为空数组但结构体不能缺失。key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -177,7 +177,7 @@ class ListSharesByTagRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListSharesByTagRequestBody.
+        r"""Sets the tags of this ListSharesByTagRequestBody.
 
         包含标签，最多包含20个key，每个key下面的value最多20个，每个key对应的value可以为空数组但结构体不能缺失。key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -188,7 +188,7 @@ class ListSharesByTagRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListSharesByTagRequestBody.
+        r"""Gets the matches of this ListSharesByTagRequestBody.
 
         搜索字段,key为要匹配的字段，仅支持取值“resource_name”。value为匹配的值，当value以“\\*”结尾时，为前缀搜索。例如：value值为“sfsturbo\\*”时，返回名称为“sfsturbo”开头的所有资源列表。
 
@@ -199,7 +199,7 @@ class ListSharesByTagRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListSharesByTagRequestBody.
+        r"""Sets the matches of this ListSharesByTagRequestBody.
 
         搜索字段,key为要匹配的字段，仅支持取值“resource_name”。value为匹配的值，当value以“\\*”结尾时，为前缀搜索。例如：value值为“sfsturbo\\*”时，返回名称为“sfsturbo”开头的所有资源列表。
 

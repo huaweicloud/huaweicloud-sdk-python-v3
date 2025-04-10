@@ -27,7 +27,7 @@ class DeleteAddressItemsInfoDto:
     }
 
     def __init__(self, set_id=None, address_item_ids=None):
-        """DeleteAddressItemsInfoDto
+        r"""DeleteAddressItemsInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAddressItemsInfoDto:
 
     @property
     def set_id(self):
-        """Gets the set_id of this DeleteAddressItemsInfoDto.
+        r"""Gets the set_id of this DeleteAddressItemsInfoDto.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -59,7 +59,7 @@ class DeleteAddressItemsInfoDto:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this DeleteAddressItemsInfoDto.
+        r"""Sets the set_id of this DeleteAddressItemsInfoDto.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -70,7 +70,7 @@ class DeleteAddressItemsInfoDto:
 
     @property
     def address_item_ids(self):
-        """Gets the address_item_ids of this DeleteAddressItemsInfoDto.
+        r"""Gets the address_item_ids of this DeleteAddressItemsInfoDto.
 
         地址组成员id列表，地址组成员id可通过[查询地址组成员接口](ListAddressItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 
@@ -81,7 +81,7 @@ class DeleteAddressItemsInfoDto:
 
     @address_item_ids.setter
     def address_item_ids(self, address_item_ids):
-        """Sets the address_item_ids of this DeleteAddressItemsInfoDto.
+        r"""Sets the address_item_ids of this DeleteAddressItemsInfoDto.
 
         地址组成员id列表，地址组成员id可通过[查询地址组成员接口](ListAddressItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
 

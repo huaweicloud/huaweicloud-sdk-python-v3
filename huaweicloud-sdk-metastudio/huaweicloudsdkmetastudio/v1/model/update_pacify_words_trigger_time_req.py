@@ -29,7 +29,7 @@ class UpdatePacifyWordsTriggerTimeReq:
     }
 
     def __init__(self, robot_id=None, language=None, trigger_time=None):
-        """UpdatePacifyWordsTriggerTimeReq
+        r"""UpdatePacifyWordsTriggerTimeReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdatePacifyWordsTriggerTimeReq.
+        r"""Gets the robot_id of this UpdatePacifyWordsTriggerTimeReq.
 
         应用ID。
 
@@ -65,7 +65,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdatePacifyWordsTriggerTimeReq.
+        r"""Sets the robot_id of this UpdatePacifyWordsTriggerTimeReq.
 
         应用ID。
 
@@ -76,7 +76,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     @property
     def language(self):
-        """Gets the language of this UpdatePacifyWordsTriggerTimeReq.
+        r"""Gets the language of this UpdatePacifyWordsTriggerTimeReq.
 
         :return: The language of this UpdatePacifyWordsTriggerTimeReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -85,7 +85,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdatePacifyWordsTriggerTimeReq.
+        r"""Sets the language of this UpdatePacifyWordsTriggerTimeReq.
 
         :param language: The language of this UpdatePacifyWordsTriggerTimeReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -94,7 +94,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this UpdatePacifyWordsTriggerTimeReq.
+        r"""Gets the trigger_time of this UpdatePacifyWordsTriggerTimeReq.
 
         安抚话术等待触发时长，单位毫秒
 
@@ -105,7 +105,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this UpdatePacifyWordsTriggerTimeReq.
+        r"""Sets the trigger_time of this UpdatePacifyWordsTriggerTimeReq.
 
         安抚话术等待触发时长，单位毫秒
 

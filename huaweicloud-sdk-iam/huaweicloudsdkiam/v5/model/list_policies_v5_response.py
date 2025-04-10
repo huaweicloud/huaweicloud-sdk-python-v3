@@ -28,7 +28,7 @@ class ListPoliciesV5Response(SdkResponse):
     }
 
     def __init__(self, policies=None, page_info=None):
-        """ListPoliciesV5Response
+        r"""ListPoliciesV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPoliciesV5Response(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListPoliciesV5Response.
+        r"""Gets the policies of this ListPoliciesV5Response.
 
         身份策略列表。
 
@@ -62,7 +62,7 @@ class ListPoliciesV5Response(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListPoliciesV5Response.
+        r"""Sets the policies of this ListPoliciesV5Response.
 
         身份策略列表。
 
@@ -73,7 +73,7 @@ class ListPoliciesV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPoliciesV5Response.
+        r"""Gets the page_info of this ListPoliciesV5Response.
 
         :return: The page_info of this ListPoliciesV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListPoliciesV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPoliciesV5Response.
+        r"""Sets the page_info of this ListPoliciesV5Response.
 
         :param page_info: The page_info of this ListPoliciesV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

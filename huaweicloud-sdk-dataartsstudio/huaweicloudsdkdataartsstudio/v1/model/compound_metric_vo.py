@@ -85,7 +85,7 @@ class CompoundMetricVO:
     }
 
     def __init__(self, id=None, name_en=None, name_ch=None, description=None, dimension_group=None, group_name=None, group_code=None, compound_type=None, comparison_type=None, metric_ids=None, metric_names=None, compound_metric_ids=None, compound_metric_names=None, cal_fn_ids=None, cal_exp=None, l1_id=None, l2_id=None, l3_id=None, data_type=None, create_by=None, update_by=None, status=None, create_time=None, update_time=None, approval_info=None, new_biz=None, monitor=None, l1=None, l2=None, l3=None, summary_table_id=None):
-        """CompoundMetricVO
+        r"""CompoundMetricVO
 
         The model defined in huaweicloud sdk
 
@@ -247,7 +247,7 @@ class CompoundMetricVO:
 
     @property
     def id(self):
-        """Gets the id of this CompoundMetricVO.
+        r"""Gets the id of this CompoundMetricVO.
 
         编码，ID字符串。
 
@@ -258,7 +258,7 @@ class CompoundMetricVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CompoundMetricVO.
+        r"""Sets the id of this CompoundMetricVO.
 
         编码，ID字符串。
 
@@ -269,7 +269,7 @@ class CompoundMetricVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CompoundMetricVO.
+        r"""Gets the name_en of this CompoundMetricVO.
 
         字段名。
 
@@ -280,7 +280,7 @@ class CompoundMetricVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CompoundMetricVO.
+        r"""Sets the name_en of this CompoundMetricVO.
 
         字段名。
 
@@ -291,7 +291,7 @@ class CompoundMetricVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this CompoundMetricVO.
+        r"""Gets the name_ch of this CompoundMetricVO.
 
         业务属性。
 
@@ -302,7 +302,7 @@ class CompoundMetricVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this CompoundMetricVO.
+        r"""Sets the name_ch of this CompoundMetricVO.
 
         业务属性。
 
@@ -313,7 +313,7 @@ class CompoundMetricVO:
 
     @property
     def description(self):
-        """Gets the description of this CompoundMetricVO.
+        r"""Gets the description of this CompoundMetricVO.
 
         描述
 
@@ -324,7 +324,7 @@ class CompoundMetricVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CompoundMetricVO.
+        r"""Sets the description of this CompoundMetricVO.
 
         描述
 
@@ -335,7 +335,7 @@ class CompoundMetricVO:
 
     @property
     def dimension_group(self):
-        """Gets the dimension_group of this CompoundMetricVO.
+        r"""Gets the dimension_group of this CompoundMetricVO.
 
         颗粒度ID。
 
@@ -346,7 +346,7 @@ class CompoundMetricVO:
 
     @dimension_group.setter
     def dimension_group(self, dimension_group):
-        """Sets the dimension_group of this CompoundMetricVO.
+        r"""Sets the dimension_group of this CompoundMetricVO.
 
         颗粒度ID。
 
@@ -357,7 +357,7 @@ class CompoundMetricVO:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CompoundMetricVO.
+        r"""Gets the group_name of this CompoundMetricVO.
 
         颗粒度名称，只读。
 
@@ -368,7 +368,7 @@ class CompoundMetricVO:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CompoundMetricVO.
+        r"""Sets the group_name of this CompoundMetricVO.
 
         颗粒度名称，只读。
 
@@ -379,7 +379,7 @@ class CompoundMetricVO:
 
     @property
     def group_code(self):
-        """Gets the group_code of this CompoundMetricVO.
+        r"""Gets the group_code of this CompoundMetricVO.
 
         颗粒度编码，只读。
 
@@ -390,7 +390,7 @@ class CompoundMetricVO:
 
     @group_code.setter
     def group_code(self, group_code):
-        """Sets the group_code of this CompoundMetricVO.
+        r"""Sets the group_code of this CompoundMetricVO.
 
         颗粒度编码，只读。
 
@@ -401,7 +401,7 @@ class CompoundMetricVO:
 
     @property
     def compound_type(self):
-        """Gets the compound_type of this CompoundMetricVO.
+        r"""Gets the compound_type of this CompoundMetricVO.
 
         复合指标类型。 枚举值：   - EXPRESSION: 表达式   - PERIODICITY_VALUED_COMPARISON: 环比   - INTERVAL_VALUED_COMPARISON: 同比 
 
@@ -412,7 +412,7 @@ class CompoundMetricVO:
 
     @compound_type.setter
     def compound_type(self, compound_type):
-        """Sets the compound_type of this CompoundMetricVO.
+        r"""Sets the compound_type of this CompoundMetricVO.
 
         复合指标类型。 枚举值：   - EXPRESSION: 表达式   - PERIODICITY_VALUED_COMPARISON: 环比   - INTERVAL_VALUED_COMPARISON: 同比 
 
@@ -423,7 +423,7 @@ class CompoundMetricVO:
 
     @property
     def comparison_type(self):
-        """Gets the comparison_type of this CompoundMetricVO.
+        r"""Gets the comparison_type of this CompoundMetricVO.
 
         比较类型。 枚举值：   - YEAR_TO_YEAR: 年同比   - MONTH_TO_MONTH: 月同比   - WEEK_TO_WEEK: 周同比 
 
@@ -434,7 +434,7 @@ class CompoundMetricVO:
 
     @comparison_type.setter
     def comparison_type(self, comparison_type):
-        """Sets the comparison_type of this CompoundMetricVO.
+        r"""Sets the comparison_type of this CompoundMetricVO.
 
         比较类型。 枚举值：   - YEAR_TO_YEAR: 年同比   - MONTH_TO_MONTH: 月同比   - WEEK_TO_WEEK: 周同比 
 
@@ -445,7 +445,7 @@ class CompoundMetricVO:
 
     @property
     def metric_ids(self):
-        """Gets the metric_ids of this CompoundMetricVO.
+        r"""Gets the metric_ids of this CompoundMetricVO.
 
         指标信息，ID字符串。
 
@@ -456,7 +456,7 @@ class CompoundMetricVO:
 
     @metric_ids.setter
     def metric_ids(self, metric_ids):
-        """Sets the metric_ids of this CompoundMetricVO.
+        r"""Sets the metric_ids of this CompoundMetricVO.
 
         指标信息，ID字符串。
 
@@ -467,7 +467,7 @@ class CompoundMetricVO:
 
     @property
     def metric_names(self):
-        """Gets the metric_names of this CompoundMetricVO.
+        r"""Gets the metric_names of this CompoundMetricVO.
 
         指标名称信息。
 
@@ -478,7 +478,7 @@ class CompoundMetricVO:
 
     @metric_names.setter
     def metric_names(self, metric_names):
-        """Sets the metric_names of this CompoundMetricVO.
+        r"""Sets the metric_names of this CompoundMetricVO.
 
         指标名称信息。
 
@@ -489,7 +489,7 @@ class CompoundMetricVO:
 
     @property
     def compound_metric_ids(self):
-        """Gets the compound_metric_ids of this CompoundMetricVO.
+        r"""Gets the compound_metric_ids of this CompoundMetricVO.
 
         复合指标信息，ID字符串。
 
@@ -500,7 +500,7 @@ class CompoundMetricVO:
 
     @compound_metric_ids.setter
     def compound_metric_ids(self, compound_metric_ids):
-        """Sets the compound_metric_ids of this CompoundMetricVO.
+        r"""Sets the compound_metric_ids of this CompoundMetricVO.
 
         复合指标信息，ID字符串。
 
@@ -511,7 +511,7 @@ class CompoundMetricVO:
 
     @property
     def compound_metric_names(self):
-        """Gets the compound_metric_names of this CompoundMetricVO.
+        r"""Gets the compound_metric_names of this CompoundMetricVO.
 
         复合指标名称信息
 
@@ -522,7 +522,7 @@ class CompoundMetricVO:
 
     @compound_metric_names.setter
     def compound_metric_names(self, compound_metric_names):
-        """Sets the compound_metric_names of this CompoundMetricVO.
+        r"""Sets the compound_metric_names of this CompoundMetricVO.
 
         复合指标名称信息
 
@@ -533,7 +533,7 @@ class CompoundMetricVO:
 
     @property
     def cal_fn_ids(self):
-        """Gets the cal_fn_ids of this CompoundMetricVO.
+        r"""Gets the cal_fn_ids of this CompoundMetricVO.
 
         引用函数ID，ID字符串。
 
@@ -544,7 +544,7 @@ class CompoundMetricVO:
 
     @cal_fn_ids.setter
     def cal_fn_ids(self, cal_fn_ids):
-        """Sets the cal_fn_ids of this CompoundMetricVO.
+        r"""Sets the cal_fn_ids of this CompoundMetricVO.
 
         引用函数ID，ID字符串。
 
@@ -555,7 +555,7 @@ class CompoundMetricVO:
 
     @property
     def cal_exp(self):
-        """Gets the cal_exp of this CompoundMetricVO.
+        r"""Gets the cal_exp of this CompoundMetricVO.
 
         计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
 
@@ -566,7 +566,7 @@ class CompoundMetricVO:
 
     @cal_exp.setter
     def cal_exp(self, cal_exp):
-        """Sets the cal_exp of this CompoundMetricVO.
+        r"""Sets the cal_exp of this CompoundMetricVO.
 
         计算表达式，形如${index_id} + ${compound#index_id}，其中index_id代表引用的衍生指标ID，compound#index_id代表引用的复合指标ID。
 
@@ -577,7 +577,7 @@ class CompoundMetricVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this CompoundMetricVO.
+        r"""Gets the l1_id of this CompoundMetricVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -588,7 +588,7 @@ class CompoundMetricVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this CompoundMetricVO.
+        r"""Sets the l1_id of this CompoundMetricVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -599,7 +599,7 @@ class CompoundMetricVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this CompoundMetricVO.
+        r"""Gets the l2_id of this CompoundMetricVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -610,7 +610,7 @@ class CompoundMetricVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this CompoundMetricVO.
+        r"""Sets the l2_id of this CompoundMetricVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -621,7 +621,7 @@ class CompoundMetricVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this CompoundMetricVO.
+        r"""Gets the l3_id of this CompoundMetricVO.
 
         业务对象ID，ID字符串。
 
@@ -632,7 +632,7 @@ class CompoundMetricVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this CompoundMetricVO.
+        r"""Sets the l3_id of this CompoundMetricVO.
 
         业务对象ID，ID字符串。
 
@@ -643,7 +643,7 @@ class CompoundMetricVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CompoundMetricVO.
+        r"""Gets the data_type of this CompoundMetricVO.
 
         字段类型。
 
@@ -654,7 +654,7 @@ class CompoundMetricVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CompoundMetricVO.
+        r"""Sets the data_type of this CompoundMetricVO.
 
         字段类型。
 
@@ -665,7 +665,7 @@ class CompoundMetricVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this CompoundMetricVO.
+        r"""Gets the create_by of this CompoundMetricVO.
 
         创建人。
 
@@ -676,7 +676,7 @@ class CompoundMetricVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CompoundMetricVO.
+        r"""Sets the create_by of this CompoundMetricVO.
 
         创建人。
 
@@ -687,7 +687,7 @@ class CompoundMetricVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this CompoundMetricVO.
+        r"""Gets the update_by of this CompoundMetricVO.
 
         更新人。
 
@@ -698,7 +698,7 @@ class CompoundMetricVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this CompoundMetricVO.
+        r"""Sets the update_by of this CompoundMetricVO.
 
         更新人。
 
@@ -709,7 +709,7 @@ class CompoundMetricVO:
 
     @property
     def status(self):
-        """Gets the status of this CompoundMetricVO.
+        r"""Gets the status of this CompoundMetricVO.
 
         :return: The status of this CompoundMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -718,7 +718,7 @@ class CompoundMetricVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CompoundMetricVO.
+        r"""Sets the status of this CompoundMetricVO.
 
         :param status: The status of this CompoundMetricVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -727,7 +727,7 @@ class CompoundMetricVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CompoundMetricVO.
+        r"""Gets the create_time of this CompoundMetricVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -738,7 +738,7 @@ class CompoundMetricVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CompoundMetricVO.
+        r"""Sets the create_time of this CompoundMetricVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -749,7 +749,7 @@ class CompoundMetricVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CompoundMetricVO.
+        r"""Gets the update_time of this CompoundMetricVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -760,7 +760,7 @@ class CompoundMetricVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CompoundMetricVO.
+        r"""Sets the update_time of this CompoundMetricVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -771,7 +771,7 @@ class CompoundMetricVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this CompoundMetricVO.
+        r"""Gets the approval_info of this CompoundMetricVO.
 
         :return: The approval_info of this CompoundMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -780,7 +780,7 @@ class CompoundMetricVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this CompoundMetricVO.
+        r"""Sets the approval_info of this CompoundMetricVO.
 
         :param approval_info: The approval_info of this CompoundMetricVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -789,7 +789,7 @@ class CompoundMetricVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this CompoundMetricVO.
+        r"""Gets the new_biz of this CompoundMetricVO.
 
         :return: The new_biz of this CompoundMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -798,7 +798,7 @@ class CompoundMetricVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this CompoundMetricVO.
+        r"""Sets the new_biz of this CompoundMetricVO.
 
         :param new_biz: The new_biz of this CompoundMetricVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -807,7 +807,7 @@ class CompoundMetricVO:
 
     @property
     def monitor(self):
-        """Gets the monitor of this CompoundMetricVO.
+        r"""Gets the monitor of this CompoundMetricVO.
 
         :return: The monitor of this CompoundMetricVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MetricMonitorVO`
@@ -816,7 +816,7 @@ class CompoundMetricVO:
 
     @monitor.setter
     def monitor(self, monitor):
-        """Sets the monitor of this CompoundMetricVO.
+        r"""Sets the monitor of this CompoundMetricVO.
 
         :param monitor: The monitor of this CompoundMetricVO.
         :type monitor: :class:`huaweicloudsdkdataartsstudio.v1.MetricMonitorVO`
@@ -825,7 +825,7 @@ class CompoundMetricVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this CompoundMetricVO.
+        r"""Gets the l1 of this CompoundMetricVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -836,7 +836,7 @@ class CompoundMetricVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this CompoundMetricVO.
+        r"""Sets the l1 of this CompoundMetricVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -847,7 +847,7 @@ class CompoundMetricVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this CompoundMetricVO.
+        r"""Gets the l2 of this CompoundMetricVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -858,7 +858,7 @@ class CompoundMetricVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this CompoundMetricVO.
+        r"""Sets the l2 of this CompoundMetricVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -869,7 +869,7 @@ class CompoundMetricVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this CompoundMetricVO.
+        r"""Gets the l3 of this CompoundMetricVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -880,7 +880,7 @@ class CompoundMetricVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this CompoundMetricVO.
+        r"""Sets the l3 of this CompoundMetricVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -891,7 +891,7 @@ class CompoundMetricVO:
 
     @property
     def summary_table_id(self):
-        """Gets the summary_table_id of this CompoundMetricVO.
+        r"""Gets the summary_table_id of this CompoundMetricVO.
 
         汇总表ID，只读，ID字符串。
 
@@ -902,7 +902,7 @@ class CompoundMetricVO:
 
     @summary_table_id.setter
     def summary_table_id(self, summary_table_id):
-        """Sets the summary_table_id of this CompoundMetricVO.
+        r"""Sets the summary_table_id of this CompoundMetricVO.
 
         汇总表ID，只读，ID字符串。
 

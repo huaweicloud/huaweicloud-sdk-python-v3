@@ -33,7 +33,7 @@ class UpdateTableRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, body=None):
-        """UpdateTableRequest
+        r"""UpdateTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateTableRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateTableRequest.
+        r"""Gets the instance_id of this UpdateTableRequest.
 
         实例Id
 
@@ -78,7 +78,7 @@ class UpdateTableRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateTableRequest.
+        r"""Sets the instance_id of this UpdateTableRequest.
 
         实例Id
 
@@ -89,7 +89,7 @@ class UpdateTableRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this UpdateTableRequest.
+        r"""Gets the catalog_name of this UpdateTableRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class UpdateTableRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this UpdateTableRequest.
+        r"""Sets the catalog_name of this UpdateTableRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class UpdateTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UpdateTableRequest.
+        r"""Gets the database_name of this UpdateTableRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class UpdateTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UpdateTableRequest.
+        r"""Sets the database_name of this UpdateTableRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class UpdateTableRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this UpdateTableRequest.
+        r"""Gets the table_name of this UpdateTableRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class UpdateTableRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this UpdateTableRequest.
+        r"""Sets the table_name of this UpdateTableRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class UpdateTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTableRequest.
+        r"""Gets the body of this UpdateTableRequest.
 
         :return: The body of this UpdateTableRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.AlterTableInput`
@@ -164,7 +164,7 @@ class UpdateTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTableRequest.
+        r"""Sets the body of this UpdateTableRequest.
 
         :param body: The body of this UpdateTableRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.AlterTableInput`

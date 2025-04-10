@@ -29,7 +29,7 @@ class CreateAppRuleReq:
     }
 
     def __init__(self, name=None, description=None, rule=None):
-        """CreateAppRuleReq
+        r"""CreateAppRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAppRuleReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateAppRuleReq.
+        r"""Gets the name of this CreateAppRuleReq.
 
         规则名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
@@ -66,7 +66,7 @@ class CreateAppRuleReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAppRuleReq.
+        r"""Sets the name of this CreateAppRuleReq.
 
         规则名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
@@ -77,7 +77,7 @@ class CreateAppRuleReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateAppRuleReq.
+        r"""Gets the description of this CreateAppRuleReq.
 
         规则描述： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。
 
@@ -88,7 +88,7 @@ class CreateAppRuleReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAppRuleReq.
+        r"""Sets the description of this CreateAppRuleReq.
 
         规则描述： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。
 
@@ -99,7 +99,7 @@ class CreateAppRuleReq:
 
     @property
     def rule(self):
-        """Gets the rule of this CreateAppRuleReq.
+        r"""Gets the rule of this CreateAppRuleReq.
 
         :return: The rule of this CreateAppRuleReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Rule`
@@ -108,7 +108,7 @@ class CreateAppRuleReq:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateAppRuleReq.
+        r"""Sets the rule of this CreateAppRuleReq.
 
         :param rule: The rule of this CreateAppRuleReq.
         :type rule: :class:`huaweicloudsdkworkspace.v2.Rule`

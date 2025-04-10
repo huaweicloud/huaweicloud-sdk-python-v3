@@ -43,7 +43,7 @@ class HlsPackageItem:
     }
 
     def __init__(self, url=None, stream_selection=None, hls_version=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ads=None, ext_args=None, request_args=None, ad_marker=None):
-        """HlsPackageItem
+        r"""HlsPackageItem
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class HlsPackageItem:
 
     @property
     def url(self):
-        """Gets the url of this HlsPackageItem.
+        r"""Gets the url of this HlsPackageItem.
 
         客户自定义的拉流地址，包括方法、域名、路径
 
@@ -115,7 +115,7 @@ class HlsPackageItem:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this HlsPackageItem.
+        r"""Sets the url of this HlsPackageItem.
 
         客户自定义的拉流地址，包括方法、域名、路径
 
@@ -126,7 +126,7 @@ class HlsPackageItem:
 
     @property
     def stream_selection(self):
-        """Gets the stream_selection of this HlsPackageItem.
+        r"""Gets the stream_selection of this HlsPackageItem.
 
         从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
 
@@ -137,7 +137,7 @@ class HlsPackageItem:
 
     @stream_selection.setter
     def stream_selection(self, stream_selection):
-        """Sets the stream_selection of this HlsPackageItem.
+        r"""Sets the stream_selection of this HlsPackageItem.
 
         从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
 
@@ -148,7 +148,7 @@ class HlsPackageItem:
 
     @property
     def hls_version(self):
-        """Gets the hls_version of this HlsPackageItem.
+        r"""Gets the hls_version of this HlsPackageItem.
 
         HLS版本号
 
@@ -159,7 +159,7 @@ class HlsPackageItem:
 
     @hls_version.setter
     def hls_version(self, hls_version):
-        """Sets the hls_version of this HlsPackageItem.
+        r"""Sets the hls_version of this HlsPackageItem.
 
         HLS版本号
 
@@ -170,7 +170,7 @@ class HlsPackageItem:
 
     @property
     def segment_duration_seconds(self):
-        """Gets the segment_duration_seconds of this HlsPackageItem.
+        r"""Gets the segment_duration_seconds of this HlsPackageItem.
 
         频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
@@ -181,7 +181,7 @@ class HlsPackageItem:
 
     @segment_duration_seconds.setter
     def segment_duration_seconds(self, segment_duration_seconds):
-        """Sets the segment_duration_seconds of this HlsPackageItem.
+        r"""Sets the segment_duration_seconds of this HlsPackageItem.
 
         频道输出分片的时长，为必选项  单位：秒。取值范围：1-10 > 修改分片时长会影响已录制内容的时移和回看服务，请谨慎修改！
 
@@ -192,7 +192,7 @@ class HlsPackageItem:
 
     @property
     def playlist_window_seconds(self):
-        """Gets the playlist_window_seconds of this HlsPackageItem.
+        r"""Gets the playlist_window_seconds of this HlsPackageItem.
 
         频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
 
@@ -203,7 +203,7 @@ class HlsPackageItem:
 
     @playlist_window_seconds.setter
     def playlist_window_seconds(self, playlist_window_seconds):
-        """Sets the playlist_window_seconds of this HlsPackageItem.
+        r"""Sets the playlist_window_seconds of this HlsPackageItem.
 
         频道直播返回分片的窗口长度，为频道输出分片的时长乘以数量后得到的值。实际返回的分片数不小于3个。  单位：秒。取值范围：0 - 86400（24小时转化成秒后的取值）
 
@@ -214,7 +214,7 @@ class HlsPackageItem:
 
     @property
     def encryption(self):
-        """Gets the encryption of this HlsPackageItem.
+        r"""Gets the encryption of this HlsPackageItem.
 
         :return: The encryption of this HlsPackageItem.
         :rtype: :class:`huaweicloudsdklive.v1.Encryption`
@@ -223,7 +223,7 @@ class HlsPackageItem:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this HlsPackageItem.
+        r"""Sets the encryption of this HlsPackageItem.
 
         :param encryption: The encryption of this HlsPackageItem.
         :type encryption: :class:`huaweicloudsdklive.v1.Encryption`
@@ -232,7 +232,7 @@ class HlsPackageItem:
 
     @property
     def ads(self):
-        """Gets the ads of this HlsPackageItem.
+        r"""Gets the ads of this HlsPackageItem.
 
         广告配置
 
@@ -243,7 +243,7 @@ class HlsPackageItem:
 
     @ads.setter
     def ads(self, ads):
-        """Sets the ads of this HlsPackageItem.
+        r"""Sets the ads of this HlsPackageItem.
 
         广告配置
 
@@ -254,7 +254,7 @@ class HlsPackageItem:
 
     @property
     def ext_args(self):
-        """Gets the ext_args of this HlsPackageItem.
+        r"""Gets the ext_args of this HlsPackageItem.
 
         其他额外参数
 
@@ -265,7 +265,7 @@ class HlsPackageItem:
 
     @ext_args.setter
     def ext_args(self, ext_args):
-        """Sets the ext_args of this HlsPackageItem.
+        r"""Sets the ext_args of this HlsPackageItem.
 
         其他额外参数
 
@@ -276,7 +276,7 @@ class HlsPackageItem:
 
     @property
     def request_args(self):
-        """Gets the request_args of this HlsPackageItem.
+        r"""Gets the request_args of this HlsPackageItem.
 
         :return: The request_args of this HlsPackageItem.
         :rtype: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
@@ -285,7 +285,7 @@ class HlsPackageItem:
 
     @request_args.setter
     def request_args(self, request_args):
-        """Sets the request_args of this HlsPackageItem.
+        r"""Sets the request_args of this HlsPackageItem.
 
         :param request_args: The request_args of this HlsPackageItem.
         :type request_args: :class:`huaweicloudsdklive.v1.PackageRequestArgs`
@@ -294,7 +294,7 @@ class HlsPackageItem:
 
     @property
     def ad_marker(self):
-        """Gets the ad_marker of this HlsPackageItem.
+        r"""Gets the ad_marker of this HlsPackageItem.
 
         广告标识。  HLS取值：[\"ENHANCED_SCTE35\"]。 
 
@@ -305,7 +305,7 @@ class HlsPackageItem:
 
     @ad_marker.setter
     def ad_marker(self, ad_marker):
-        """Sets the ad_marker of this HlsPackageItem.
+        r"""Sets the ad_marker of this HlsPackageItem.
 
         广告标识。  HLS取值：[\"ENHANCED_SCTE35\"]。 
 

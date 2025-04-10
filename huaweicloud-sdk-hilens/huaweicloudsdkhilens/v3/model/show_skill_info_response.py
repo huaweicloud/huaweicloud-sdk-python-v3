@@ -106,7 +106,7 @@ class ShowSkillInfoResponse(SdkResponse):
     }
 
     def __init__(self, sub_scenes=None, app_template_id=None, icon=None, version_num=None, description=None, product_info=None, type=None, platform=None, self_dev_flag=None, measure_type=None, approval_result=None, update_time=None, channel_limit=None, publish_time=None, resource_step_size=None, approval_time=None, cloud_service_type=None, summary=None, test_status=None, chip=None, is_verify_model=None, format=None, resource_type=None, version=None, measure_unit=None, tags=None, size=None, test_result=None, install_times=None, privacy_policy=None, name=None, scenes=None, charge_model=None, resource_spec_code=None, skill_id=None, developer=None, main_scenes=None, device_types=None, status=None, versions=None, x_request_id=None):
-        """ShowSkillInfoResponse
+        r"""ShowSkillInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -324,7 +324,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def sub_scenes(self):
-        """Gets the sub_scenes of this ShowSkillInfoResponse.
+        r"""Gets the sub_scenes of this ShowSkillInfoResponse.
 
         技能应用场景
 
@@ -335,7 +335,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @sub_scenes.setter
     def sub_scenes(self, sub_scenes):
-        """Sets the sub_scenes of this ShowSkillInfoResponse.
+        r"""Sets the sub_scenes of this ShowSkillInfoResponse.
 
         技能应用场景
 
@@ -346,7 +346,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def app_template_id(self):
-        """Gets the app_template_id of this ShowSkillInfoResponse.
+        r"""Gets the app_template_id of this ShowSkillInfoResponse.
 
         应用模板ID
 
@@ -357,7 +357,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @app_template_id.setter
     def app_template_id(self, app_template_id):
-        """Sets the app_template_id of this ShowSkillInfoResponse.
+        r"""Sets the app_template_id of this ShowSkillInfoResponse.
 
         应用模板ID
 
@@ -368,7 +368,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def icon(self):
-        """Gets the icon of this ShowSkillInfoResponse.
+        r"""Gets the icon of this ShowSkillInfoResponse.
 
         技能图标
 
@@ -379,7 +379,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ShowSkillInfoResponse.
+        r"""Sets the icon of this ShowSkillInfoResponse.
 
         技能图标
 
@@ -390,7 +390,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def version_num(self):
-        """Gets the version_num of this ShowSkillInfoResponse.
+        r"""Gets the version_num of this ShowSkillInfoResponse.
 
         技能版本数量
 
@@ -401,7 +401,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @version_num.setter
     def version_num(self, version_num):
-        """Sets the version_num of this ShowSkillInfoResponse.
+        r"""Sets the version_num of this ShowSkillInfoResponse.
 
         技能版本数量
 
@@ -412,7 +412,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowSkillInfoResponse.
+        r"""Gets the description of this ShowSkillInfoResponse.
 
         技能描述
 
@@ -423,7 +423,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowSkillInfoResponse.
+        r"""Sets the description of this ShowSkillInfoResponse.
 
         技能描述
 
@@ -434,7 +434,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def product_info(self):
-        """Gets the product_info of this ShowSkillInfoResponse.
+        r"""Gets the product_info of this ShowSkillInfoResponse.
 
         计费编码信息
 
@@ -445,7 +445,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this ShowSkillInfoResponse.
+        r"""Sets the product_info of this ShowSkillInfoResponse.
 
         计费编码信息
 
@@ -456,7 +456,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowSkillInfoResponse.
+        r"""Gets the type of this ShowSkillInfoResponse.
 
         技能类别，分为standard和lite
 
@@ -467,7 +467,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSkillInfoResponse.
+        r"""Sets the type of this ShowSkillInfoResponse.
 
         技能类别，分为standard和lite
 
@@ -478,7 +478,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def platform(self):
-        """Gets the platform of this ShowSkillInfoResponse.
+        r"""Gets the platform of this ShowSkillInfoResponse.
 
         技能操作系统平台，其值为：Linux，Android， iOS， LiteOS，Windows
 
@@ -489,7 +489,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ShowSkillInfoResponse.
+        r"""Sets the platform of this ShowSkillInfoResponse.
 
         技能操作系统平台，其值为：Linux，Android， iOS， LiteOS，Windows
 
@@ -500,7 +500,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def self_dev_flag(self):
-        """Gets the self_dev_flag of this ShowSkillInfoResponse.
+        r"""Gets the self_dev_flag of this ShowSkillInfoResponse.
 
         自研标识，1表示是HiLens自研算法。
 
@@ -511,7 +511,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @self_dev_flag.setter
     def self_dev_flag(self, self_dev_flag):
-        """Sets the self_dev_flag of this ShowSkillInfoResponse.
+        r"""Sets the self_dev_flag of this ShowSkillInfoResponse.
 
         自研标识，1表示是HiLens自研算法。
 
@@ -522,7 +522,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def measure_type(self):
-        """Gets the measure_type of this ShowSkillInfoResponse.
+        r"""Gets the measure_type of this ShowSkillInfoResponse.
 
         计费类型，physical_src表示 src
 
@@ -533,7 +533,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @measure_type.setter
     def measure_type(self, measure_type):
-        """Sets the measure_type of this ShowSkillInfoResponse.
+        r"""Sets the measure_type of this ShowSkillInfoResponse.
 
         计费类型，physical_src表示 src
 
@@ -544,7 +544,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def approval_result(self):
-        """Gets the approval_result of this ShowSkillInfoResponse.
+        r"""Gets the approval_result of this ShowSkillInfoResponse.
 
         技能审核结果
 
@@ -555,7 +555,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @approval_result.setter
     def approval_result(self, approval_result):
-        """Sets the approval_result of this ShowSkillInfoResponse.
+        r"""Sets the approval_result of this ShowSkillInfoResponse.
 
         技能审核结果
 
@@ -566,7 +566,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowSkillInfoResponse.
+        r"""Gets the update_time of this ShowSkillInfoResponse.
 
         更新时间，形如2022-06-30 17:22:48 GMT+08:00
 
@@ -577,7 +577,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowSkillInfoResponse.
+        r"""Sets the update_time of this ShowSkillInfoResponse.
 
         更新时间，形如2022-06-30 17:22:48 GMT+08:00
 
@@ -588,7 +588,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def channel_limit(self):
-        """Gets the channel_limit of this ShowSkillInfoResponse.
+        r"""Gets the channel_limit of this ShowSkillInfoResponse.
 
         通道数
 
@@ -599,7 +599,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @channel_limit.setter
     def channel_limit(self, channel_limit):
-        """Sets the channel_limit of this ShowSkillInfoResponse.
+        r"""Sets the channel_limit of this ShowSkillInfoResponse.
 
         通道数
 
@@ -610,7 +610,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this ShowSkillInfoResponse.
+        r"""Gets the publish_time of this ShowSkillInfoResponse.
 
         发布时间
 
@@ -621,7 +621,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this ShowSkillInfoResponse.
+        r"""Sets the publish_time of this ShowSkillInfoResponse.
 
         发布时间
 
@@ -632,7 +632,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def resource_step_size(self):
-        """Gets the resource_step_size of this ShowSkillInfoResponse.
+        r"""Gets the resource_step_size of this ShowSkillInfoResponse.
 
         步长
 
@@ -643,7 +643,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @resource_step_size.setter
     def resource_step_size(self, resource_step_size):
-        """Sets the resource_step_size of this ShowSkillInfoResponse.
+        r"""Sets the resource_step_size of this ShowSkillInfoResponse.
 
         步长
 
@@ -654,7 +654,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def approval_time(self):
-        """Gets the approval_time of this ShowSkillInfoResponse.
+        r"""Gets the approval_time of this ShowSkillInfoResponse.
 
         审批时间
 
@@ -665,7 +665,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @approval_time.setter
     def approval_time(self, approval_time):
-        """Sets the approval_time of this ShowSkillInfoResponse.
+        r"""Sets the approval_time of this ShowSkillInfoResponse.
 
         审批时间
 
@@ -676,7 +676,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ShowSkillInfoResponse.
+        r"""Gets the cloud_service_type of this ShowSkillInfoResponse.
 
         云服务编码
 
@@ -687,7 +687,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ShowSkillInfoResponse.
+        r"""Sets the cloud_service_type of this ShowSkillInfoResponse.
 
         云服务编码
 
@@ -698,7 +698,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this ShowSkillInfoResponse.
+        r"""Gets the summary of this ShowSkillInfoResponse.
 
         摘要
 
@@ -709,7 +709,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ShowSkillInfoResponse.
+        r"""Sets the summary of this ShowSkillInfoResponse.
 
         摘要
 
@@ -720,7 +720,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def test_status(self):
-        """Gets the test_status of this ShowSkillInfoResponse.
+        r"""Gets the test_status of this ShowSkillInfoResponse.
 
         测试状态
 
@@ -731,7 +731,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @test_status.setter
     def test_status(self, test_status):
-        """Sets the test_status of this ShowSkillInfoResponse.
+        r"""Sets the test_status of this ShowSkillInfoResponse.
 
         测试状态
 
@@ -742,7 +742,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def chip(self):
-        """Gets the chip of this ShowSkillInfoResponse.
+        r"""Gets the chip of this ShowSkillInfoResponse.
 
         芯片
 
@@ -753,7 +753,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @chip.setter
     def chip(self, chip):
-        """Sets the chip of this ShowSkillInfoResponse.
+        r"""Sets the chip of this ShowSkillInfoResponse.
 
         芯片
 
@@ -764,7 +764,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def is_verify_model(self):
-        """Gets the is_verify_model of this ShowSkillInfoResponse.
+        r"""Gets the is_verify_model of this ShowSkillInfoResponse.
 
         是否校验模型
 
@@ -775,7 +775,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @is_verify_model.setter
     def is_verify_model(self, is_verify_model):
-        """Sets the is_verify_model of this ShowSkillInfoResponse.
+        r"""Sets the is_verify_model of this ShowSkillInfoResponse.
 
         是否校验模型
 
@@ -786,7 +786,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def format(self):
-        """Gets the format of this ShowSkillInfoResponse.
+        r"""Gets the format of this ShowSkillInfoResponse.
 
         技能类型，文件类型file，镜像类型iamge
 
@@ -797,7 +797,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ShowSkillInfoResponse.
+        r"""Sets the format of this ShowSkillInfoResponse.
 
         技能类型，文件类型file，镜像类型iamge
 
@@ -808,7 +808,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowSkillInfoResponse.
+        r"""Gets the resource_type of this ShowSkillInfoResponse.
 
         资源类别
 
@@ -819,7 +819,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowSkillInfoResponse.
+        r"""Sets the resource_type of this ShowSkillInfoResponse.
 
         资源类别
 
@@ -830,7 +830,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowSkillInfoResponse.
+        r"""Gets the version of this ShowSkillInfoResponse.
 
         技能版本
 
@@ -841,7 +841,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowSkillInfoResponse.
+        r"""Sets the version of this ShowSkillInfoResponse.
 
         技能版本
 
@@ -852,7 +852,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def measure_unit(self):
-        """Gets the measure_unit of this ShowSkillInfoResponse.
+        r"""Gets the measure_unit of this ShowSkillInfoResponse.
 
         计费单位 qps 表示按qps收费，road表示技能路数instance 表示按实例收费
 
@@ -863,7 +863,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @measure_unit.setter
     def measure_unit(self, measure_unit):
-        """Sets the measure_unit of this ShowSkillInfoResponse.
+        r"""Sets the measure_unit of this ShowSkillInfoResponse.
 
         计费单位 qps 表示按qps收费，road表示技能路数instance 表示按实例收费
 
@@ -874,7 +874,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowSkillInfoResponse.
+        r"""Gets the tags of this ShowSkillInfoResponse.
 
         标签
 
@@ -885,7 +885,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowSkillInfoResponse.
+        r"""Sets the tags of this ShowSkillInfoResponse.
 
         标签
 
@@ -896,7 +896,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowSkillInfoResponse.
+        r"""Gets the size of this ShowSkillInfoResponse.
 
         技能大小
 
@@ -907,7 +907,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowSkillInfoResponse.
+        r"""Sets the size of this ShowSkillInfoResponse.
 
         技能大小
 
@@ -918,7 +918,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def test_result(self):
-        """Gets the test_result of this ShowSkillInfoResponse.
+        r"""Gets the test_result of this ShowSkillInfoResponse.
 
         测试结果
 
@@ -929,7 +929,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this ShowSkillInfoResponse.
+        r"""Sets the test_result of this ShowSkillInfoResponse.
 
         测试结果
 
@@ -940,7 +940,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def install_times(self):
-        """Gets the install_times of this ShowSkillInfoResponse.
+        r"""Gets the install_times of this ShowSkillInfoResponse.
 
         安装次数
 
@@ -951,7 +951,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @install_times.setter
     def install_times(self, install_times):
-        """Sets the install_times of this ShowSkillInfoResponse.
+        r"""Sets the install_times of this ShowSkillInfoResponse.
 
         安装次数
 
@@ -962,7 +962,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def privacy_policy(self):
-        """Gets the privacy_policy of this ShowSkillInfoResponse.
+        r"""Gets the privacy_policy of this ShowSkillInfoResponse.
 
         隐私条款
 
@@ -973,7 +973,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @privacy_policy.setter
     def privacy_policy(self, privacy_policy):
-        """Sets the privacy_policy of this ShowSkillInfoResponse.
+        r"""Sets the privacy_policy of this ShowSkillInfoResponse.
 
         隐私条款
 
@@ -984,7 +984,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowSkillInfoResponse.
+        r"""Gets the name of this ShowSkillInfoResponse.
 
         技能名字
 
@@ -995,7 +995,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowSkillInfoResponse.
+        r"""Sets the name of this ShowSkillInfoResponse.
 
         技能名字
 
@@ -1006,7 +1006,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def scenes(self):
-        """Gets the scenes of this ShowSkillInfoResponse.
+        r"""Gets the scenes of this ShowSkillInfoResponse.
 
         技能场景
 
@@ -1017,7 +1017,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @scenes.setter
     def scenes(self, scenes):
-        """Sets the scenes of this ShowSkillInfoResponse.
+        r"""Sets the scenes of this ShowSkillInfoResponse.
 
         技能场景
 
@@ -1028,7 +1028,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def charge_model(self):
-        """Gets the charge_model of this ShowSkillInfoResponse.
+        r"""Gets the charge_model of this ShowSkillInfoResponse.
 
         计费模式
 
@@ -1039,7 +1039,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @charge_model.setter
     def charge_model(self, charge_model):
-        """Sets the charge_model of this ShowSkillInfoResponse.
+        r"""Sets the charge_model of this ShowSkillInfoResponse.
 
         计费模式
 
@@ -1050,7 +1050,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowSkillInfoResponse.
+        r"""Gets the resource_spec_code of this ShowSkillInfoResponse.
 
         云服务资源编码
 
@@ -1061,7 +1061,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowSkillInfoResponse.
+        r"""Sets the resource_spec_code of this ShowSkillInfoResponse.
 
         云服务资源编码
 
@@ -1072,7 +1072,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ShowSkillInfoResponse.
+        r"""Gets the skill_id of this ShowSkillInfoResponse.
 
         技能Id
 
@@ -1083,7 +1083,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ShowSkillInfoResponse.
+        r"""Sets the skill_id of this ShowSkillInfoResponse.
 
         技能Id
 
@@ -1094,7 +1094,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def developer(self):
-        """Gets the developer of this ShowSkillInfoResponse.
+        r"""Gets the developer of this ShowSkillInfoResponse.
 
         开发者名字
 
@@ -1105,7 +1105,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this ShowSkillInfoResponse.
+        r"""Sets the developer of this ShowSkillInfoResponse.
 
         开发者名字
 
@@ -1116,7 +1116,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def main_scenes(self):
-        """Gets the main_scenes of this ShowSkillInfoResponse.
+        r"""Gets the main_scenes of this ShowSkillInfoResponse.
 
         主场景
 
@@ -1127,7 +1127,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @main_scenes.setter
     def main_scenes(self, main_scenes):
-        """Sets the main_scenes of this ShowSkillInfoResponse.
+        r"""Sets the main_scenes of this ShowSkillInfoResponse.
 
         主场景
 
@@ -1138,7 +1138,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def device_types(self):
-        """Gets the device_types of this ShowSkillInfoResponse.
+        r"""Gets the device_types of this ShowSkillInfoResponse.
 
         所支持的设备类别
 
@@ -1149,7 +1149,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @device_types.setter
     def device_types(self, device_types):
-        """Sets the device_types of this ShowSkillInfoResponse.
+        r"""Sets the device_types of this ShowSkillInfoResponse.
 
         所支持的设备类别
 
@@ -1160,7 +1160,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSkillInfoResponse.
+        r"""Gets the status of this ShowSkillInfoResponse.
 
         技能状态
 
@@ -1171,7 +1171,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSkillInfoResponse.
+        r"""Sets the status of this ShowSkillInfoResponse.
 
         技能状态
 
@@ -1182,7 +1182,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ShowSkillInfoResponse.
+        r"""Gets the versions of this ShowSkillInfoResponse.
 
         技能版本号列表
 
@@ -1193,7 +1193,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ShowSkillInfoResponse.
+        r"""Sets the versions of this ShowSkillInfoResponse.
 
         技能版本号列表
 
@@ -1204,7 +1204,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowSkillInfoResponse.
+        r"""Gets the x_request_id of this ShowSkillInfoResponse.
 
         :return: The x_request_id of this ShowSkillInfoResponse.
         :rtype: str
@@ -1213,7 +1213,7 @@ class ShowSkillInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowSkillInfoResponse.
+        r"""Sets the x_request_id of this ShowSkillInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowSkillInfoResponse.
         :type x_request_id: str

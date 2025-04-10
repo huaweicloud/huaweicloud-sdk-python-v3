@@ -126,7 +126,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     }
 
     def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, peering_cidr=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, enable_auth_in_header=None, custom_image=None, is_return_stream=None, enable_lts_log=None, lts_custom_tag=None):
-        """UpdateFunctionConfigResponse
+        r"""UpdateFunctionConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -394,7 +394,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def func_id(self):
-        """Gets the func_id of this UpdateFunctionConfigResponse.
+        r"""Gets the func_id of this UpdateFunctionConfigResponse.
 
         函数id，唯一标识函数。
 
@@ -405,7 +405,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @func_id.setter
     def func_id(self, func_id):
-        """Sets the func_id of this UpdateFunctionConfigResponse.
+        r"""Sets the func_id of this UpdateFunctionConfigResponse.
 
         函数id，唯一标识函数。
 
@@ -416,7 +416,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UpdateFunctionConfigResponse.
+        r"""Gets the resource_id of this UpdateFunctionConfigResponse.
 
         函数资源id。
 
@@ -427,7 +427,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UpdateFunctionConfigResponse.
+        r"""Sets the resource_id of this UpdateFunctionConfigResponse.
 
         函数资源id。
 
@@ -438,7 +438,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this UpdateFunctionConfigResponse.
+        r"""Gets the func_urn of this UpdateFunctionConfigResponse.
 
         函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -449,7 +449,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this UpdateFunctionConfigResponse.
+        r"""Sets the func_urn of this UpdateFunctionConfigResponse.
 
         函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -460,7 +460,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def func_name(self):
-        """Gets the func_name of this UpdateFunctionConfigResponse.
+        r"""Gets the func_name of this UpdateFunctionConfigResponse.
 
         函数名称。
 
@@ -471,7 +471,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this UpdateFunctionConfigResponse.
+        r"""Sets the func_name of this UpdateFunctionConfigResponse.
 
         函数名称。
 
@@ -482,7 +482,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateFunctionConfigResponse.
+        r"""Gets the domain_id of this UpdateFunctionConfigResponse.
 
         域名id。
 
@@ -493,7 +493,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateFunctionConfigResponse.
+        r"""Sets the domain_id of this UpdateFunctionConfigResponse.
 
         域名id。
 
@@ -504,7 +504,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateFunctionConfigResponse.
+        r"""Gets the namespace of this UpdateFunctionConfigResponse.
 
         租户的project id。
 
@@ -515,7 +515,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateFunctionConfigResponse.
+        r"""Sets the namespace of this UpdateFunctionConfigResponse.
 
         租户的project id。
 
@@ -526,7 +526,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this UpdateFunctionConfigResponse.
+        r"""Gets the project_name of this UpdateFunctionConfigResponse.
 
         租户的project name。
 
@@ -537,7 +537,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this UpdateFunctionConfigResponse.
+        r"""Sets the project_name of this UpdateFunctionConfigResponse.
 
         租户的project name。
 
@@ -548,7 +548,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def package(self):
-        """Gets the package of this UpdateFunctionConfigResponse.
+        r"""Gets the package of this UpdateFunctionConfigResponse.
 
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
@@ -559,7 +559,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @package.setter
     def package(self, package):
-        """Sets the package of this UpdateFunctionConfigResponse.
+        r"""Sets the package of this UpdateFunctionConfigResponse.
 
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
@@ -570,7 +570,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def runtime(self):
-        """Gets the runtime of this UpdateFunctionConfigResponse.
+        r"""Gets the runtime of this UpdateFunctionConfigResponse.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -581,7 +581,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this UpdateFunctionConfigResponse.
+        r"""Sets the runtime of this UpdateFunctionConfigResponse.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -592,7 +592,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateFunctionConfigResponse.
+        r"""Gets the timeout of this UpdateFunctionConfigResponse.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -603,7 +603,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateFunctionConfigResponse.
+        r"""Sets the timeout of this UpdateFunctionConfigResponse.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -614,7 +614,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def handler(self):
-        """Gets the handler of this UpdateFunctionConfigResponse.
+        r"""Gets the handler of this UpdateFunctionConfigResponse.
 
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -625,7 +625,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this UpdateFunctionConfigResponse.
+        r"""Sets the handler of this UpdateFunctionConfigResponse.
 
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -636,7 +636,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def memory_size(self):
-        """Gets the memory_size of this UpdateFunctionConfigResponse.
+        r"""Gets the memory_size of this UpdateFunctionConfigResponse.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -647,7 +647,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @memory_size.setter
     def memory_size(self, memory_size):
-        """Sets the memory_size of this UpdateFunctionConfigResponse.
+        r"""Sets the memory_size of this UpdateFunctionConfigResponse.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -658,7 +658,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def gpu_memory(self):
-        """Gets the gpu_memory of this UpdateFunctionConfigResponse.
+        r"""Gets the gpu_memory of this UpdateFunctionConfigResponse.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -669,7 +669,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @gpu_memory.setter
     def gpu_memory(self, gpu_memory):
-        """Sets the gpu_memory of this UpdateFunctionConfigResponse.
+        r"""Sets the gpu_memory of this UpdateFunctionConfigResponse.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -680,7 +680,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def cpu(self):
-        """Gets the cpu of this UpdateFunctionConfigResponse.
+        r"""Gets the cpu of this UpdateFunctionConfigResponse.
 
         函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
@@ -691,7 +691,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this UpdateFunctionConfigResponse.
+        r"""Sets the cpu of this UpdateFunctionConfigResponse.
 
         函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
@@ -702,7 +702,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def code_type(self):
-        """Gets the code_type of this UpdateFunctionConfigResponse.
+        r"""Gets the code_type of this UpdateFunctionConfigResponse.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -713,7 +713,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this UpdateFunctionConfigResponse.
+        r"""Sets the code_type of this UpdateFunctionConfigResponse.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -724,7 +724,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def code_url(self):
-        """Gets the code_url of this UpdateFunctionConfigResponse.
+        r"""Gets the code_url of this UpdateFunctionConfigResponse.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -735,7 +735,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this UpdateFunctionConfigResponse.
+        r"""Sets the code_url of this UpdateFunctionConfigResponse.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -746,7 +746,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def code_filename(self):
-        """Gets the code_filename of this UpdateFunctionConfigResponse.
+        r"""Gets the code_filename of this UpdateFunctionConfigResponse.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -757,7 +757,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @code_filename.setter
     def code_filename(self, code_filename):
-        """Sets the code_filename of this UpdateFunctionConfigResponse.
+        r"""Sets the code_filename of this UpdateFunctionConfigResponse.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -768,7 +768,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def code_size(self):
-        """Gets the code_size of this UpdateFunctionConfigResponse.
+        r"""Gets the code_size of this UpdateFunctionConfigResponse.
 
         函数大小，单位：字节。
 
@@ -779,7 +779,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @code_size.setter
     def code_size(self, code_size):
-        """Sets the code_size of this UpdateFunctionConfigResponse.
+        r"""Sets the code_size of this UpdateFunctionConfigResponse.
 
         函数大小，单位：字节。
 
@@ -790,7 +790,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def user_data(self):
-        """Gets the user_data of this UpdateFunctionConfigResponse.
+        r"""Gets the user_data of this UpdateFunctionConfigResponse.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -801,7 +801,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this UpdateFunctionConfigResponse.
+        r"""Sets the user_data of this UpdateFunctionConfigResponse.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -812,7 +812,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def encrypted_user_data(self):
-        """Gets the encrypted_user_data of this UpdateFunctionConfigResponse.
+        r"""Gets the encrypted_user_data of this UpdateFunctionConfigResponse.
 
         用户自定义的name/value信息，用于需要加密的配置。
 
@@ -823,7 +823,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @encrypted_user_data.setter
     def encrypted_user_data(self, encrypted_user_data):
-        """Sets the encrypted_user_data of this UpdateFunctionConfigResponse.
+        r"""Sets the encrypted_user_data of this UpdateFunctionConfigResponse.
 
         用户自定义的name/value信息，用于需要加密的配置。
 
@@ -834,7 +834,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def digest(self):
-        """Gets the digest of this UpdateFunctionConfigResponse.
+        r"""Gets the digest of this UpdateFunctionConfigResponse.
 
         函数代码SHA512 hash值，用于判断函数是否变化。
 
@@ -845,7 +845,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this UpdateFunctionConfigResponse.
+        r"""Sets the digest of this UpdateFunctionConfigResponse.
 
         函数代码SHA512 hash值，用于判断函数是否变化。
 
@@ -856,7 +856,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateFunctionConfigResponse.
+        r"""Gets the version of this UpdateFunctionConfigResponse.
 
         函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
 
@@ -867,7 +867,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateFunctionConfigResponse.
+        r"""Sets the version of this UpdateFunctionConfigResponse.
 
         函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。
 
@@ -878,7 +878,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def image_name(self):
-        """Gets the image_name of this UpdateFunctionConfigResponse.
+        r"""Gets the image_name of this UpdateFunctionConfigResponse.
 
         函数版本的内部标识。
 
@@ -889,7 +889,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this UpdateFunctionConfigResponse.
+        r"""Sets the image_name of this UpdateFunctionConfigResponse.
 
         函数版本的内部标识。
 
@@ -900,7 +900,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def xrole(self):
-        """Gets the xrole of this UpdateFunctionConfigResponse.
+        r"""Gets the xrole of this UpdateFunctionConfigResponse.
 
         函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
@@ -911,7 +911,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @xrole.setter
     def xrole(self, xrole):
-        """Sets the xrole of this UpdateFunctionConfigResponse.
+        r"""Sets the xrole of this UpdateFunctionConfigResponse.
 
         函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
@@ -922,7 +922,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def app_xrole(self):
-        """Gets the app_xrole of this UpdateFunctionConfigResponse.
+        r"""Gets the app_xrole of this UpdateFunctionConfigResponse.
 
         函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
@@ -933,7 +933,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @app_xrole.setter
     def app_xrole(self, app_xrole):
-        """Sets the app_xrole of this UpdateFunctionConfigResponse.
+        r"""Sets the app_xrole of this UpdateFunctionConfigResponse.
 
         函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
@@ -944,7 +944,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateFunctionConfigResponse.
+        r"""Gets the description of this UpdateFunctionConfigResponse.
 
         函数描述。
 
@@ -955,7 +955,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFunctionConfigResponse.
+        r"""Sets the description of this UpdateFunctionConfigResponse.
 
         函数描述。
 
@@ -966,7 +966,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this UpdateFunctionConfigResponse.
+        r"""Gets the last_modified of this UpdateFunctionConfigResponse.
 
         函数最后一次更新时间。
 
@@ -977,7 +977,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this UpdateFunctionConfigResponse.
+        r"""Sets the last_modified of this UpdateFunctionConfigResponse.
 
         函数最后一次更新时间。
 
@@ -988,7 +988,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def ephemeral_storage(self):
-        """Gets the ephemeral_storage of this UpdateFunctionConfigResponse.
+        r"""Gets the ephemeral_storage of this UpdateFunctionConfigResponse.
 
         临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
@@ -999,7 +999,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @ephemeral_storage.setter
     def ephemeral_storage(self, ephemeral_storage):
-        """Sets the ephemeral_storage of this UpdateFunctionConfigResponse.
+        r"""Sets the ephemeral_storage of this UpdateFunctionConfigResponse.
 
         临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
@@ -1010,7 +1010,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def func_vpc(self):
-        """Gets the func_vpc of this UpdateFunctionConfigResponse.
+        r"""Gets the func_vpc of this UpdateFunctionConfigResponse.
 
         :return: The func_vpc of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -1019,7 +1019,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @func_vpc.setter
     def func_vpc(self, func_vpc):
-        """Sets the func_vpc of this UpdateFunctionConfigResponse.
+        r"""Sets the func_vpc of this UpdateFunctionConfigResponse.
 
         :param func_vpc: The func_vpc of this UpdateFunctionConfigResponse.
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -1028,7 +1028,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def peering_cidr(self):
-        """Gets the peering_cidr of this UpdateFunctionConfigResponse.
+        r"""Gets the peering_cidr of this UpdateFunctionConfigResponse.
 
         VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
 
@@ -1039,7 +1039,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @peering_cidr.setter
     def peering_cidr(self, peering_cidr):
-        """Sets the peering_cidr of this UpdateFunctionConfigResponse.
+        r"""Sets the peering_cidr of this UpdateFunctionConfigResponse.
 
         VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
 
@@ -1050,7 +1050,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def mount_config(self):
-        """Gets the mount_config of this UpdateFunctionConfigResponse.
+        r"""Gets the mount_config of this UpdateFunctionConfigResponse.
 
         :return: The mount_config of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -1059,7 +1059,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @mount_config.setter
     def mount_config(self, mount_config):
-        """Sets the mount_config of this UpdateFunctionConfigResponse.
+        r"""Sets the mount_config of this UpdateFunctionConfigResponse.
 
         :param mount_config: The mount_config of this UpdateFunctionConfigResponse.
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -1068,7 +1068,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def strategy_config(self):
-        """Gets the strategy_config of this UpdateFunctionConfigResponse.
+        r"""Gets the strategy_config of this UpdateFunctionConfigResponse.
 
         :return: The strategy_config of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -1077,7 +1077,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @strategy_config.setter
     def strategy_config(self, strategy_config):
-        """Sets the strategy_config of this UpdateFunctionConfigResponse.
+        r"""Sets the strategy_config of this UpdateFunctionConfigResponse.
 
         :param strategy_config: The strategy_config of this UpdateFunctionConfigResponse.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -1086,7 +1086,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this UpdateFunctionConfigResponse.
+        r"""Gets the dependencies of this UpdateFunctionConfigResponse.
 
         函数依赖代码包列表。
 
@@ -1097,7 +1097,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this UpdateFunctionConfigResponse.
+        r"""Sets the dependencies of this UpdateFunctionConfigResponse.
 
         函数依赖代码包列表。
 
@@ -1108,7 +1108,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def initializer_handler(self):
-        """Gets the initializer_handler of this UpdateFunctionConfigResponse.
+        r"""Gets the initializer_handler of this UpdateFunctionConfigResponse.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -1119,7 +1119,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @initializer_handler.setter
     def initializer_handler(self, initializer_handler):
-        """Sets the initializer_handler of this UpdateFunctionConfigResponse.
+        r"""Sets the initializer_handler of this UpdateFunctionConfigResponse.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -1130,7 +1130,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def initializer_timeout(self):
-        """Gets the initializer_timeout of this UpdateFunctionConfigResponse.
+        r"""Gets the initializer_timeout of this UpdateFunctionConfigResponse.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -1141,7 +1141,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @initializer_timeout.setter
     def initializer_timeout(self, initializer_timeout):
-        """Sets the initializer_timeout of this UpdateFunctionConfigResponse.
+        r"""Sets the initializer_timeout of this UpdateFunctionConfigResponse.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -1152,7 +1152,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def pre_stop_handler(self):
-        """Gets the pre_stop_handler of this UpdateFunctionConfigResponse.
+        r"""Gets the pre_stop_handler of this UpdateFunctionConfigResponse.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -1163,7 +1163,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @pre_stop_handler.setter
     def pre_stop_handler(self, pre_stop_handler):
-        """Sets the pre_stop_handler of this UpdateFunctionConfigResponse.
+        r"""Sets the pre_stop_handler of this UpdateFunctionConfigResponse.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -1174,7 +1174,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def pre_stop_timeout(self):
-        """Gets the pre_stop_timeout of this UpdateFunctionConfigResponse.
+        r"""Gets the pre_stop_timeout of this UpdateFunctionConfigResponse.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -1185,7 +1185,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @pre_stop_timeout.setter
     def pre_stop_timeout(self, pre_stop_timeout):
-        """Sets the pre_stop_timeout of this UpdateFunctionConfigResponse.
+        r"""Sets the pre_stop_timeout of this UpdateFunctionConfigResponse.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -1196,7 +1196,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateFunctionConfigResponse.
+        r"""Gets the enterprise_project_id of this UpdateFunctionConfigResponse.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -1207,7 +1207,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateFunctionConfigResponse.
+        r"""Sets the enterprise_project_id of this UpdateFunctionConfigResponse.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -1218,7 +1218,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def long_time(self):
-        """Gets the long_time of this UpdateFunctionConfigResponse.
+        r"""Gets the long_time of this UpdateFunctionConfigResponse.
 
         是否允许进行长时间超时设置。
 
@@ -1229,7 +1229,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @long_time.setter
     def long_time(self, long_time):
-        """Sets the long_time of this UpdateFunctionConfigResponse.
+        r"""Sets the long_time of this UpdateFunctionConfigResponse.
 
         是否允许进行长时间超时设置。
 
@@ -1240,7 +1240,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateFunctionConfigResponse.
+        r"""Gets the log_group_id of this UpdateFunctionConfigResponse.
 
         自定义日志查询组id
 
@@ -1251,7 +1251,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateFunctionConfigResponse.
+        r"""Sets the log_group_id of this UpdateFunctionConfigResponse.
 
         自定义日志查询组id
 
@@ -1262,7 +1262,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this UpdateFunctionConfigResponse.
+        r"""Gets the log_stream_id of this UpdateFunctionConfigResponse.
 
         自定义日志查询流id
 
@@ -1273,7 +1273,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this UpdateFunctionConfigResponse.
+        r"""Sets the log_stream_id of this UpdateFunctionConfigResponse.
 
         自定义日志查询流id
 
@@ -1284,7 +1284,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateFunctionConfigResponse.
+        r"""Gets the type of this UpdateFunctionConfigResponse.
 
         v2表示为正式版本,v1为废弃版本。
 
@@ -1295,7 +1295,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateFunctionConfigResponse.
+        r"""Sets the type of this UpdateFunctionConfigResponse.
 
         v2表示为正式版本,v1为废弃版本。
 
@@ -1306,7 +1306,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def enable_cloud_debug(self):
-        """Gets the enable_cloud_debug of this UpdateFunctionConfigResponse.
+        r"""Gets the enable_cloud_debug of this UpdateFunctionConfigResponse.
 
         适配CloudDebug场景，是否开启云调试（已废弃）
 
@@ -1317,7 +1317,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @enable_cloud_debug.setter
     def enable_cloud_debug(self, enable_cloud_debug):
-        """Sets the enable_cloud_debug of this UpdateFunctionConfigResponse.
+        r"""Sets the enable_cloud_debug of this UpdateFunctionConfigResponse.
 
         适配CloudDebug场景，是否开启云调试（已废弃）
 
@@ -1328,7 +1328,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def enable_dynamic_memory(self):
-        """Gets the enable_dynamic_memory of this UpdateFunctionConfigResponse.
+        r"""Gets the enable_dynamic_memory of this UpdateFunctionConfigResponse.
 
         是否启动动态内存配置
 
@@ -1339,7 +1339,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @enable_dynamic_memory.setter
     def enable_dynamic_memory(self, enable_dynamic_memory):
-        """Sets the enable_dynamic_memory of this UpdateFunctionConfigResponse.
+        r"""Sets the enable_dynamic_memory of this UpdateFunctionConfigResponse.
 
         是否启动动态内存配置
 
@@ -1350,7 +1350,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def is_stateful_function(self):
-        """Gets the is_stateful_function of this UpdateFunctionConfigResponse.
+        r"""Gets the is_stateful_function of this UpdateFunctionConfigResponse.
 
         是否支持有状态，v2版本支持
 
@@ -1361,7 +1361,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @is_stateful_function.setter
     def is_stateful_function(self, is_stateful_function):
-        """Sets the is_stateful_function of this UpdateFunctionConfigResponse.
+        r"""Sets the is_stateful_function of this UpdateFunctionConfigResponse.
 
         是否支持有状态，v2版本支持
 
@@ -1372,7 +1372,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def domain_names(self):
-        """Gets the domain_names of this UpdateFunctionConfigResponse.
+        r"""Gets the domain_names of this UpdateFunctionConfigResponse.
 
         函数配置的需要支持域名解析的内网域名。
 
@@ -1383,7 +1383,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @domain_names.setter
     def domain_names(self, domain_names):
-        """Sets the domain_names of this UpdateFunctionConfigResponse.
+        r"""Sets the domain_names of this UpdateFunctionConfigResponse.
 
         函数配置的需要支持域名解析的内网域名。
 
@@ -1394,7 +1394,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def enable_auth_in_header(self):
-        """Gets the enable_auth_in_header of this UpdateFunctionConfigResponse.
+        r"""Gets the enable_auth_in_header of this UpdateFunctionConfigResponse.
 
         是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
 
@@ -1405,7 +1405,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @enable_auth_in_header.setter
     def enable_auth_in_header(self, enable_auth_in_header):
-        """Sets the enable_auth_in_header of this UpdateFunctionConfigResponse.
+        r"""Sets the enable_auth_in_header of this UpdateFunctionConfigResponse.
 
         是否允许在请求头中添加鉴权信息，只支持自定义镜像函数
 
@@ -1416,7 +1416,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def custom_image(self):
-        """Gets the custom_image of this UpdateFunctionConfigResponse.
+        r"""Gets the custom_image of this UpdateFunctionConfigResponse.
 
         :return: The custom_image of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -1425,7 +1425,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @custom_image.setter
     def custom_image(self, custom_image):
-        """Sets the custom_image of this UpdateFunctionConfigResponse.
+        r"""Sets the custom_image of this UpdateFunctionConfigResponse.
 
         :param custom_image: The custom_image of this UpdateFunctionConfigResponse.
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -1434,7 +1434,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def is_return_stream(self):
-        """Gets the is_return_stream of this UpdateFunctionConfigResponse.
+        r"""Gets the is_return_stream of this UpdateFunctionConfigResponse.
 
         是否返回流式数据（已废弃）
 
@@ -1445,7 +1445,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @is_return_stream.setter
     def is_return_stream(self, is_return_stream):
-        """Sets the is_return_stream of this UpdateFunctionConfigResponse.
+        r"""Sets the is_return_stream of this UpdateFunctionConfigResponse.
 
         是否返回流式数据（已废弃）
 
@@ -1456,7 +1456,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def enable_lts_log(self):
-        """Gets the enable_lts_log of this UpdateFunctionConfigResponse.
+        r"""Gets the enable_lts_log of this UpdateFunctionConfigResponse.
 
         是否开启日志。
 
@@ -1467,7 +1467,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @enable_lts_log.setter
     def enable_lts_log(self, enable_lts_log):
-        """Sets the enable_lts_log of this UpdateFunctionConfigResponse.
+        r"""Sets the enable_lts_log of this UpdateFunctionConfigResponse.
 
         是否开启日志。
 
@@ -1478,7 +1478,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @property
     def lts_custom_tag(self):
-        """Gets the lts_custom_tag of this UpdateFunctionConfigResponse.
+        r"""Gets the lts_custom_tag of this UpdateFunctionConfigResponse.
 
         自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
 
@@ -1489,7 +1489,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
 
     @lts_custom_tag.setter
     def lts_custom_tag(self, lts_custom_tag):
-        """Sets the lts_custom_tag of this UpdateFunctionConfigResponse.
+        r"""Sets the lts_custom_tag of this UpdateFunctionConfigResponse.
 
         自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
 

@@ -27,7 +27,7 @@ class DataAuthorizationPrivilege:
     }
 
     def __init__(self, object=None, privileges=None):
-        """DataAuthorizationPrivilege
+        r"""DataAuthorizationPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DataAuthorizationPrivilege:
 
     @property
     def object(self):
-        """Gets the object of this DataAuthorizationPrivilege.
+        r"""Gets the object of this DataAuthorizationPrivilege.
 
         被赋权的数据对象，命名方式为： “databases.数据库名”，则数据库下面的所有数据都将被共享。 “databases.数据库名.tables.表名”, 指定的表的数据将被共享。 “databases.数据库名.tables.表名.columns.列名”，指定的列将被共享。 \"jobs.flink.flink作业ID\"，指定的作业将被共享。 \"groups.程序包组名\"，指定的程序包组将被共享。 \"resources.程序包名\"，指定程序包将被共享。
 
@@ -59,7 +59,7 @@ class DataAuthorizationPrivilege:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this DataAuthorizationPrivilege.
+        r"""Sets the object of this DataAuthorizationPrivilege.
 
         被赋权的数据对象，命名方式为： “databases.数据库名”，则数据库下面的所有数据都将被共享。 “databases.数据库名.tables.表名”, 指定的表的数据将被共享。 “databases.数据库名.tables.表名.columns.列名”，指定的列将被共享。 \"jobs.flink.flink作业ID\"，指定的作业将被共享。 \"groups.程序包组名\"，指定的程序包组将被共享。 \"resources.程序包名\"，指定程序包将被共享。
 
@@ -70,7 +70,7 @@ class DataAuthorizationPrivilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this DataAuthorizationPrivilege.
+        r"""Gets the privileges of this DataAuthorizationPrivilege.
 
         待赋权、回收或更新的权限列表。 说明： 若“action”为“update”，更新列表为空，则表示回收用户在该数据库或表的所有权限
 
@@ -81,7 +81,7 @@ class DataAuthorizationPrivilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this DataAuthorizationPrivilege.
+        r"""Sets the privileges of this DataAuthorizationPrivilege.
 
         待赋权、回收或更新的权限列表。 说明： 若“action”为“update”，更新列表为空，则表示回收用户在该数据库或表的所有权限
 

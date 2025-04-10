@@ -27,7 +27,7 @@ class ExpandDesktopPoolReq:
     }
 
     def __init__(self, size=None, order_id=None):
-        """ExpandDesktopPoolReq
+        r"""ExpandDesktopPoolReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandDesktopPoolReq:
 
     @property
     def size(self):
-        """Gets the size of this ExpandDesktopPoolReq.
+        r"""Gets the size of this ExpandDesktopPoolReq.
 
         扩容桌面池的大小。
 
@@ -60,7 +60,7 @@ class ExpandDesktopPoolReq:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ExpandDesktopPoolReq.
+        r"""Sets the size of this ExpandDesktopPoolReq.
 
         扩容桌面池的大小。
 
@@ -71,7 +71,7 @@ class ExpandDesktopPoolReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandDesktopPoolReq.
+        r"""Gets the order_id of this ExpandDesktopPoolReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -82,7 +82,7 @@ class ExpandDesktopPoolReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandDesktopPoolReq.
+        r"""Sets the order_id of this ExpandDesktopPoolReq.
 
         包周期订购ID，CBC订购回调时使用。
 

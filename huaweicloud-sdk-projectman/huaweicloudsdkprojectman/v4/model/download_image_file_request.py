@@ -27,7 +27,7 @@ class DownloadImageFileRequest:
     }
 
     def __init__(self, project_id=None, image_uri=None):
-        """DownloadImageFileRequest
+        r"""DownloadImageFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadImageFileRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DownloadImageFileRequest.
+        r"""Gets the project_id of this DownloadImageFileRequest.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class DownloadImageFileRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DownloadImageFileRequest.
+        r"""Sets the project_id of this DownloadImageFileRequest.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class DownloadImageFileRequest:
 
     @property
     def image_uri(self):
-        """Gets the image_uri of this DownloadImageFileRequest.
+        r"""Gets the image_uri of this DownloadImageFileRequest.
 
         图片URI
 
@@ -81,7 +81,7 @@ class DownloadImageFileRequest:
 
     @image_uri.setter
     def image_uri(self, image_uri):
-        """Sets the image_uri of this DownloadImageFileRequest.
+        r"""Sets the image_uri of this DownloadImageFileRequest.
 
         图片URI
 

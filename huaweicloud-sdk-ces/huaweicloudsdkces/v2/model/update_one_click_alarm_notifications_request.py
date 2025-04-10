@@ -27,7 +27,7 @@ class UpdateOneClickAlarmNotificationsRequest:
     }
 
     def __init__(self, one_click_alarm_id=None, body=None):
-        """UpdateOneClickAlarmNotificationsRequest
+        r"""UpdateOneClickAlarmNotificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateOneClickAlarmNotificationsRequest:
 
     @property
     def one_click_alarm_id(self):
-        """Gets the one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
+        r"""Gets the one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
 
         一键告警ID
 
@@ -60,7 +60,7 @@ class UpdateOneClickAlarmNotificationsRequest:
 
     @one_click_alarm_id.setter
     def one_click_alarm_id(self, one_click_alarm_id):
-        """Sets the one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
+        r"""Sets the one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
 
         一键告警ID
 
@@ -71,7 +71,7 @@ class UpdateOneClickAlarmNotificationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOneClickAlarmNotificationsRequest.
+        r"""Gets the body of this UpdateOneClickAlarmNotificationsRequest.
 
         :return: The body of this UpdateOneClickAlarmNotificationsRequest.
         :rtype: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`
@@ -80,7 +80,7 @@ class UpdateOneClickAlarmNotificationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOneClickAlarmNotificationsRequest.
+        r"""Sets the body of this UpdateOneClickAlarmNotificationsRequest.
 
         :param body: The body of this UpdateOneClickAlarmNotificationsRequest.
         :type body: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`

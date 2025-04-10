@@ -39,7 +39,7 @@ class ItemResultDetailVo:
     }
 
     def __init__(self, status=None, level=None, suggestion=None, response=None, check_id=None, check_name=None, check_name_en=None, suggestion_url=None):
-        """ItemResultDetailVo
+        r"""ItemResultDetailVo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ItemResultDetailVo:
 
     @property
     def status(self):
-        """Gets the status of this ItemResultDetailVo.
+        r"""Gets the status of this ItemResultDetailVo.
 
         状态
 
@@ -103,7 +103,7 @@ class ItemResultDetailVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ItemResultDetailVo.
+        r"""Sets the status of this ItemResultDetailVo.
 
         状态
 
@@ -114,7 +114,7 @@ class ItemResultDetailVo:
 
     @property
     def level(self):
-        """Gets the level of this ItemResultDetailVo.
+        r"""Gets the level of this ItemResultDetailVo.
 
         检查项风险等级
 
@@ -125,7 +125,7 @@ class ItemResultDetailVo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ItemResultDetailVo.
+        r"""Sets the level of this ItemResultDetailVo.
 
         检查项风险等级
 
@@ -136,7 +136,7 @@ class ItemResultDetailVo:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ItemResultDetailVo.
+        r"""Gets the suggestion of this ItemResultDetailVo.
 
         检查项修复建议
 
@@ -147,7 +147,7 @@ class ItemResultDetailVo:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ItemResultDetailVo.
+        r"""Sets the suggestion of this ItemResultDetailVo.
 
         检查项修复建议
 
@@ -158,7 +158,7 @@ class ItemResultDetailVo:
 
     @property
     def response(self):
-        """Gets the response of this ItemResultDetailVo.
+        r"""Gets the response of this ItemResultDetailVo.
 
         检查项response
 
@@ -169,7 +169,7 @@ class ItemResultDetailVo:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this ItemResultDetailVo.
+        r"""Sets the response of this ItemResultDetailVo.
 
         检查项response
 
@@ -180,7 +180,7 @@ class ItemResultDetailVo:
 
     @property
     def check_id(self):
-        """Gets the check_id of this ItemResultDetailVo.
+        r"""Gets the check_id of this ItemResultDetailVo.
 
         检查项ID
 
@@ -191,7 +191,7 @@ class ItemResultDetailVo:
 
     @check_id.setter
     def check_id(self, check_id):
-        """Sets the check_id of this ItemResultDetailVo.
+        r"""Sets the check_id of this ItemResultDetailVo.
 
         检查项ID
 
@@ -202,7 +202,7 @@ class ItemResultDetailVo:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ItemResultDetailVo.
+        r"""Gets the check_name of this ItemResultDetailVo.
 
         检查项名称
 
@@ -213,7 +213,7 @@ class ItemResultDetailVo:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ItemResultDetailVo.
+        r"""Sets the check_name of this ItemResultDetailVo.
 
         检查项名称
 
@@ -224,7 +224,7 @@ class ItemResultDetailVo:
 
     @property
     def check_name_en(self):
-        """Gets the check_name_en of this ItemResultDetailVo.
+        r"""Gets the check_name_en of this ItemResultDetailVo.
 
         检查项英文名称
 
@@ -235,7 +235,7 @@ class ItemResultDetailVo:
 
     @check_name_en.setter
     def check_name_en(self, check_name_en):
-        """Sets the check_name_en of this ItemResultDetailVo.
+        r"""Sets the check_name_en of this ItemResultDetailVo.
 
         检查项英文名称
 
@@ -246,7 +246,7 @@ class ItemResultDetailVo:
 
     @property
     def suggestion_url(self):
-        """Gets the suggestion_url of this ItemResultDetailVo.
+        r"""Gets the suggestion_url of this ItemResultDetailVo.
 
         检查项修复建议URL
 
@@ -257,7 +257,7 @@ class ItemResultDetailVo:
 
     @suggestion_url.setter
     def suggestion_url(self, suggestion_url):
-        """Sets the suggestion_url of this ItemResultDetailVo.
+        r"""Sets the suggestion_url of this ItemResultDetailVo.
 
         检查项修复建议URL
 

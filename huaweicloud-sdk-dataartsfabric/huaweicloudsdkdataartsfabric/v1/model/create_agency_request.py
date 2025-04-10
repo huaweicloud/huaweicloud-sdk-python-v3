@@ -25,7 +25,7 @@ class CreateAgencyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAgencyRequest
+        r"""CreateAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAgencyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAgencyRequest.
+        r"""Gets the body of this CreateAgencyRequest.
 
         :return: The body of this CreateAgencyRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.AgencyTypeBody`
@@ -52,7 +52,7 @@ class CreateAgencyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAgencyRequest.
+        r"""Sets the body of this CreateAgencyRequest.
 
         :param body: The body of this CreateAgencyRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.AgencyTypeBody`

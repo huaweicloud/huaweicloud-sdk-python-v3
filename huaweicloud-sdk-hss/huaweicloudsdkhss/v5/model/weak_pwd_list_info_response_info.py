@@ -22,6 +22,7 @@ class WeakPwdListInfoResponseInfo:
         'host_ip': 'str',
         'private_ip': 'str',
         'public_ip': 'str',
+        'update_time': 'int',
         'weak_pwd_accounts': 'list[WeakPwdAccountInfoResponseInfo]'
     }
 
@@ -31,11 +32,12 @@ class WeakPwdListInfoResponseInfo:
         'host_ip': 'host_ip',
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
+        'update_time': 'update_time',
         'weak_pwd_accounts': 'weak_pwd_accounts'
     }
 
-    def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, weak_pwd_accounts=None):
-        """WeakPwdListInfoResponseInfo
+    def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, update_time=None, weak_pwd_accounts=None):
+        r"""WeakPwdListInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,6 +51,8 @@ class WeakPwdListInfoResponseInfo:
         :type private_ip: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
+        :param update_time: 最近扫描时间，时间戳单位：毫秒
+        :type update_time: int
         :param weak_pwd_accounts: 弱口令账号列表
         :type weak_pwd_accounts: list[:class:`huaweicloudsdkhss.v5.WeakPwdAccountInfoResponseInfo`]
         """
@@ -60,6 +64,7 @@ class WeakPwdListInfoResponseInfo:
         self._host_ip = None
         self._private_ip = None
         self._public_ip = None
+        self._update_time = None
         self._weak_pwd_accounts = None
         self.discriminator = None
 
@@ -73,12 +78,14 @@ class WeakPwdListInfoResponseInfo:
             self.private_ip = private_ip
         if public_ip is not None:
             self.public_ip = public_ip
+        if update_time is not None:
+            self.update_time = update_time
         if weak_pwd_accounts is not None:
             self.weak_pwd_accounts = weak_pwd_accounts
 
     @property
     def host_id(self):
-        """Gets the host_id of this WeakPwdListInfoResponseInfo.
+        r"""Gets the host_id of this WeakPwdListInfoResponseInfo.
 
         主机ID
 
@@ -89,7 +96,7 @@ class WeakPwdListInfoResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this WeakPwdListInfoResponseInfo.
+        r"""Sets the host_id of this WeakPwdListInfoResponseInfo.
 
         主机ID
 
@@ -100,7 +107,7 @@ class WeakPwdListInfoResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this WeakPwdListInfoResponseInfo.
+        r"""Gets the host_name of this WeakPwdListInfoResponseInfo.
 
         服务器名称
 
@@ -111,7 +118,7 @@ class WeakPwdListInfoResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this WeakPwdListInfoResponseInfo.
+        r"""Sets the host_name of this WeakPwdListInfoResponseInfo.
 
         服务器名称
 
@@ -122,7 +129,7 @@ class WeakPwdListInfoResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this WeakPwdListInfoResponseInfo.
+        r"""Gets the host_ip of this WeakPwdListInfoResponseInfo.
 
         服务器IP（私有IP），为兼容用户使用，不删除此字段
 
@@ -133,7 +140,7 @@ class WeakPwdListInfoResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this WeakPwdListInfoResponseInfo.
+        r"""Sets the host_ip of this WeakPwdListInfoResponseInfo.
 
         服务器IP（私有IP），为兼容用户使用，不删除此字段
 
@@ -144,7 +151,7 @@ class WeakPwdListInfoResponseInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this WeakPwdListInfoResponseInfo.
+        r"""Gets the private_ip of this WeakPwdListInfoResponseInfo.
 
         服务器私有IP
 
@@ -155,7 +162,7 @@ class WeakPwdListInfoResponseInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this WeakPwdListInfoResponseInfo.
+        r"""Sets the private_ip of this WeakPwdListInfoResponseInfo.
 
         服务器私有IP
 
@@ -166,7 +173,7 @@ class WeakPwdListInfoResponseInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this WeakPwdListInfoResponseInfo.
+        r"""Gets the public_ip of this WeakPwdListInfoResponseInfo.
 
         服务器公网IP
 
@@ -177,7 +184,7 @@ class WeakPwdListInfoResponseInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this WeakPwdListInfoResponseInfo.
+        r"""Sets the public_ip of this WeakPwdListInfoResponseInfo.
 
         服务器公网IP
 
@@ -187,8 +194,30 @@ class WeakPwdListInfoResponseInfo:
         self._public_ip = public_ip
 
     @property
+    def update_time(self):
+        r"""Gets the update_time of this WeakPwdListInfoResponseInfo.
+
+        最近扫描时间，时间戳单位：毫秒
+
+        :return: The update_time of this WeakPwdListInfoResponseInfo.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this WeakPwdListInfoResponseInfo.
+
+        最近扫描时间，时间戳单位：毫秒
+
+        :param update_time: The update_time of this WeakPwdListInfoResponseInfo.
+        :type update_time: int
+        """
+        self._update_time = update_time
+
+    @property
     def weak_pwd_accounts(self):
-        """Gets the weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
+        r"""Gets the weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
 
         弱口令账号列表
 
@@ -199,7 +228,7 @@ class WeakPwdListInfoResponseInfo:
 
     @weak_pwd_accounts.setter
     def weak_pwd_accounts(self, weak_pwd_accounts):
-        """Sets the weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
+        r"""Sets the weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
 
         弱口令账号列表
 

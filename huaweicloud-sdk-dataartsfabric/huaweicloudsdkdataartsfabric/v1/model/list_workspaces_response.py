@@ -30,7 +30,7 @@ class ListWorkspacesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, workspaces=None, x_request_id=None):
-        """ListWorkspacesResponse
+        r"""ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWorkspacesResponse.
+        r"""Gets the total of this ListWorkspacesResponse.
 
         workspace总数
 
@@ -69,7 +69,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkspacesResponse.
+        r"""Sets the total of this ListWorkspacesResponse.
 
         workspace总数
 
@@ -80,7 +80,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def workspaces(self):
-        """Gets the workspaces of this ListWorkspacesResponse.
+        r"""Gets the workspaces of this ListWorkspacesResponse.
 
         workaspace列表
 
@@ -91,7 +91,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @workspaces.setter
     def workspaces(self, workspaces):
-        """Sets the workspaces of this ListWorkspacesResponse.
+        r"""Sets the workspaces of this ListWorkspacesResponse.
 
         workaspace列表
 
@@ -102,7 +102,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListWorkspacesResponse.
+        r"""Gets the x_request_id of this ListWorkspacesResponse.
 
         :return: The x_request_id of this ListWorkspacesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListWorkspacesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListWorkspacesResponse.
+        r"""Sets the x_request_id of this ListWorkspacesResponse.
 
         :param x_request_id: The x_request_id of this ListWorkspacesResponse.
         :type x_request_id: str

@@ -36,7 +36,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_name=None, status=None, region=None, create_time=None, up_link_addr=None):
-        """ListAimMsgAppDetailResponse
+        r"""ListAimMsgAppDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAimMsgAppDetailResponse.
+        r"""Gets the app_id of this ListAimMsgAppDetailResponse.
 
         应用ID，用于获取、修改应用的唯一标识。
 
@@ -90,7 +90,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAimMsgAppDetailResponse.
+        r"""Sets the app_id of this ListAimMsgAppDetailResponse.
 
         应用ID，用于获取、修改应用的唯一标识。
 
@@ -101,7 +101,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAimMsgAppDetailResponse.
+        r"""Gets the app_name of this ListAimMsgAppDetailResponse.
 
         应用名称。
 
@@ -112,7 +112,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAimMsgAppDetailResponse.
+        r"""Sets the app_name of this ListAimMsgAppDetailResponse.
 
         应用名称。
 
@@ -123,7 +123,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAimMsgAppDetailResponse.
+        r"""Gets the status of this ListAimMsgAppDetailResponse.
 
         状态。
 
@@ -134,7 +134,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAimMsgAppDetailResponse.
+        r"""Sets the status of this ListAimMsgAppDetailResponse.
 
         状态。
 
@@ -145,7 +145,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ListAimMsgAppDetailResponse.
+        r"""Gets the region of this ListAimMsgAppDetailResponse.
 
         地域。
 
@@ -156,7 +156,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListAimMsgAppDetailResponse.
+        r"""Sets the region of this ListAimMsgAppDetailResponse.
 
         地域。
 
@@ -167,7 +167,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListAimMsgAppDetailResponse.
+        r"""Gets the create_time of this ListAimMsgAppDetailResponse.
 
         创建时间，格式：yyyy-MM-dd'T'HH:mm:ss。
 
@@ -178,7 +178,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListAimMsgAppDetailResponse.
+        r"""Sets the create_time of this ListAimMsgAppDetailResponse.
 
         创建时间，格式：yyyy-MM-dd'T'HH:mm:ss。
 
@@ -189,7 +189,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @property
     def up_link_addr(self):
-        """Gets the up_link_addr of this ListAimMsgAppDetailResponse.
+        r"""Gets the up_link_addr of this ListAimMsgAppDetailResponse.
 
         上行短信地址。
 
@@ -200,7 +200,7 @@ class ListAimMsgAppDetailResponse(SdkResponse):
 
     @up_link_addr.setter
     def up_link_addr(self, up_link_addr):
-        """Sets the up_link_addr of this ListAimMsgAppDetailResponse.
+        r"""Sets the up_link_addr of this ListAimMsgAppDetailResponse.
 
         上行短信地址。
 

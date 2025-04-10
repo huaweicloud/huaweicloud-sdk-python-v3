@@ -27,7 +27,7 @@ class UpgradeDatabaseVersionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpgradeDatabaseVersionRequest
+        r"""UpgradeDatabaseVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeDatabaseVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeDatabaseVersionRequest.
+        r"""Gets the instance_id of this UpgradeDatabaseVersionRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpgradeDatabaseVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeDatabaseVersionRequest.
+        r"""Sets the instance_id of this UpgradeDatabaseVersionRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpgradeDatabaseVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeDatabaseVersionRequest.
+        r"""Gets the body of this UpgradeDatabaseVersionRequest.
 
         :return: The body of this UpgradeDatabaseVersionRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionRequestBody`
@@ -80,7 +80,7 @@ class UpgradeDatabaseVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeDatabaseVersionRequest.
+        r"""Sets the body of this UpgradeDatabaseVersionRequest.
 
         :param body: The body of this UpgradeDatabaseVersionRequest.
         :type body: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionRequestBody`

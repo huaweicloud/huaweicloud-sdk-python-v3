@@ -33,7 +33,7 @@ class ListListenersByTagsRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, action=None, matches=None, tags=None):
-        """ListListenersByTagsRequestBody
+        r"""ListListenersByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListListenersByTagsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListListenersByTagsRequestBody.
+        r"""Gets the offset of this ListListenersByTagsRequestBody.
 
         分页起始。
 
@@ -81,7 +81,7 @@ class ListListenersByTagsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListListenersByTagsRequestBody.
+        r"""Sets the offset of this ListListenersByTagsRequestBody.
 
         分页起始。
 
@@ -92,7 +92,7 @@ class ListListenersByTagsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListListenersByTagsRequestBody.
+        r"""Gets the limit of this ListListenersByTagsRequestBody.
 
         分页大小。
 
@@ -103,7 +103,7 @@ class ListListenersByTagsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListListenersByTagsRequestBody.
+        r"""Sets the limit of this ListListenersByTagsRequestBody.
 
         分页大小。
 
@@ -114,7 +114,7 @@ class ListListenersByTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListListenersByTagsRequestBody.
+        r"""Gets the action of this ListListenersByTagsRequestBody.
 
         操作标识（仅限于filter，count）： filter（过滤），如果是filter就是分页查询 count(查询总条数)，按照条件将总条数返回。
 
@@ -125,7 +125,7 @@ class ListListenersByTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListListenersByTagsRequestBody.
+        r"""Sets the action of this ListListenersByTagsRequestBody.
 
         操作标识（仅限于filter，count）： filter（过滤），如果是filter就是分页查询 count(查询总条数)，按照条件将总条数返回。
 
@@ -136,7 +136,7 @@ class ListListenersByTagsRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListListenersByTagsRequestBody.
+        r"""Gets the matches of this ListListenersByTagsRequestBody.
 
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值。根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。key如果是resource_id则精确匹配。
 
@@ -147,7 +147,7 @@ class ListListenersByTagsRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListListenersByTagsRequestBody.
+        r"""Sets the matches of this ListListenersByTagsRequestBody.
 
         搜索字段，key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值。根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索，如果value为空字符串精确匹配。key如果是resource_id则精确匹配。
 
@@ -158,7 +158,7 @@ class ListListenersByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListListenersByTagsRequestBody.
+        r"""Gets the tags of this ListListenersByTagsRequestBody.
 
         要搜索的标签值
 
@@ -169,7 +169,7 @@ class ListListenersByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListListenersByTagsRequestBody.
+        r"""Sets the tags of this ListListenersByTagsRequestBody.
 
         要搜索的标签值
 

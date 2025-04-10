@@ -27,7 +27,7 @@ class DeleteApiAclBindingV2Request:
     }
 
     def __init__(self, instance_id=None, acl_bindings_id=None):
-        """DeleteApiAclBindingV2Request
+        r"""DeleteApiAclBindingV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteApiAclBindingV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteApiAclBindingV2Request.
+        r"""Gets the instance_id of this DeleteApiAclBindingV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DeleteApiAclBindingV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteApiAclBindingV2Request.
+        r"""Sets the instance_id of this DeleteApiAclBindingV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DeleteApiAclBindingV2Request:
 
     @property
     def acl_bindings_id(self):
-        """Gets the acl_bindings_id of this DeleteApiAclBindingV2Request.
+        r"""Gets the acl_bindings_id of this DeleteApiAclBindingV2Request.
 
         绑定关系编号
 
@@ -81,7 +81,7 @@ class DeleteApiAclBindingV2Request:
 
     @acl_bindings_id.setter
     def acl_bindings_id(self, acl_bindings_id):
-        """Sets the acl_bindings_id of this DeleteApiAclBindingV2Request.
+        r"""Sets the acl_bindings_id of this DeleteApiAclBindingV2Request.
 
         绑定关系编号
 

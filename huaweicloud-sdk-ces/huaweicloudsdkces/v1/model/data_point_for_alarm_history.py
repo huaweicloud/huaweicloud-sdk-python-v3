@@ -27,7 +27,7 @@ class DataPointForAlarmHistory:
     }
 
     def __init__(self, time=None, value=None):
-        """DataPointForAlarmHistory
+        r"""DataPointForAlarmHistory
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataPointForAlarmHistory:
 
     @property
     def time(self):
-        """Gets the time of this DataPointForAlarmHistory.
+        r"""Gets the time of this DataPointForAlarmHistory.
 
         计算出该条告警历史的资源监控数据上报时间，UNIX时间戳，单位毫秒，如：1603131028000。
 
@@ -61,7 +61,7 @@ class DataPointForAlarmHistory:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this DataPointForAlarmHistory.
+        r"""Sets the time of this DataPointForAlarmHistory.
 
         计算出该条告警历史的资源监控数据上报时间，UNIX时间戳，单位毫秒，如：1603131028000。
 
@@ -72,7 +72,7 @@ class DataPointForAlarmHistory:
 
     @property
     def value(self):
-        """Gets the value of this DataPointForAlarmHistory.
+        r"""Gets the value of this DataPointForAlarmHistory.
 
         计算出该条告警历史的资源监控数据在该时间点的监控数值，如：7.019。
 
@@ -83,7 +83,7 @@ class DataPointForAlarmHistory:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DataPointForAlarmHistory.
+        r"""Sets the value of this DataPointForAlarmHistory.
 
         计算出该条告警历史的资源监控数据在该时间点的监控数值，如：7.019。
 

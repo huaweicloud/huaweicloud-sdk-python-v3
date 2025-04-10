@@ -35,7 +35,7 @@ class Metadata:
     }
 
     def __init__(self, uid=None, name=None, labels=None, annotations=None, update_timestamp=None, creation_timestamp=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Metadata:
 
     @property
     def uid(self):
-        """Gets the uid of this Metadata.
+        r"""Gets the uid of this Metadata.
 
         唯一id标识
 
@@ -89,7 +89,7 @@ class Metadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this Metadata.
+        r"""Sets the uid of this Metadata.
 
         唯一id标识
 
@@ -100,7 +100,7 @@ class Metadata:
 
     @property
     def name(self):
-        """Gets the name of this Metadata.
+        r"""Gets the name of this Metadata.
 
         资源名称
 
@@ -111,7 +111,7 @@ class Metadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Metadata.
+        r"""Sets the name of this Metadata.
 
         资源名称
 
@@ -122,7 +122,7 @@ class Metadata:
 
     @property
     def labels(self):
-        """Gets the labels of this Metadata.
+        r"""Gets the labels of this Metadata.
 
         资源标签，key/value对格式，接口保留字段，填写不会生效
 
@@ -133,7 +133,7 @@ class Metadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this Metadata.
+        r"""Sets the labels of this Metadata.
 
         资源标签，key/value对格式，接口保留字段，填写不会生效
 
@@ -144,7 +144,7 @@ class Metadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this Metadata.
+        r"""Gets the annotations of this Metadata.
 
         资源注解，由key/value组成 
 
@@ -155,7 +155,7 @@ class Metadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this Metadata.
+        r"""Sets the annotations of this Metadata.
 
         资源注解，由key/value组成 
 
@@ -166,7 +166,7 @@ class Metadata:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this Metadata.
+        r"""Gets the update_timestamp of this Metadata.
 
         更新时间
 
@@ -177,7 +177,7 @@ class Metadata:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this Metadata.
+        r"""Sets the update_timestamp of this Metadata.
 
         更新时间
 
@@ -188,7 +188,7 @@ class Metadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this Metadata.
+        r"""Gets the creation_timestamp of this Metadata.
 
         创建时间
 
@@ -199,7 +199,7 @@ class Metadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this Metadata.
+        r"""Sets the creation_timestamp of this Metadata.
 
         创建时间
 

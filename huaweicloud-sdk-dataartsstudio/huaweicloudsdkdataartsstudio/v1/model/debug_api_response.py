@@ -38,7 +38,7 @@ class DebugApiResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, url=None, result=None, timeout=None, success=None, request_header=None, response_header=None):
-        """DebugApiResponse
+        r"""DebugApiResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DebugApiResponse.
+        r"""Gets the request_id of this DebugApiResponse.
 
         请求编号
 
@@ -97,7 +97,7 @@ class DebugApiResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DebugApiResponse.
+        r"""Sets the request_id of this DebugApiResponse.
 
         请求编号
 
@@ -108,7 +108,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this DebugApiResponse.
+        r"""Gets the url of this DebugApiResponse.
 
         请求url
 
@@ -119,7 +119,7 @@ class DebugApiResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DebugApiResponse.
+        r"""Sets the url of this DebugApiResponse.
 
         请求url
 
@@ -130,7 +130,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DebugApiResponse.
+        r"""Gets the result of this DebugApiResponse.
 
         调试结果
 
@@ -141,7 +141,7 @@ class DebugApiResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DebugApiResponse.
+        r"""Sets the result of this DebugApiResponse.
 
         调试结果
 
@@ -152,7 +152,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this DebugApiResponse.
+        r"""Gets the timeout of this DebugApiResponse.
 
         调试耗时
 
@@ -163,7 +163,7 @@ class DebugApiResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this DebugApiResponse.
+        r"""Sets the timeout of this DebugApiResponse.
 
         调试耗时
 
@@ -174,7 +174,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this DebugApiResponse.
+        r"""Gets the success of this DebugApiResponse.
 
         是否调试成功
 
@@ -185,7 +185,7 @@ class DebugApiResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this DebugApiResponse.
+        r"""Sets the success of this DebugApiResponse.
 
         是否调试成功
 
@@ -196,7 +196,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def request_header(self):
-        """Gets the request_header of this DebugApiResponse.
+        r"""Gets the request_header of this DebugApiResponse.
 
         :return: The request_header of this DebugApiResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiTestRequestHeader`
@@ -205,7 +205,7 @@ class DebugApiResponse(SdkResponse):
 
     @request_header.setter
     def request_header(self, request_header):
-        """Sets the request_header of this DebugApiResponse.
+        r"""Sets the request_header of this DebugApiResponse.
 
         :param request_header: The request_header of this DebugApiResponse.
         :type request_header: :class:`huaweicloudsdkdataartsstudio.v1.ApiTestRequestHeader`
@@ -214,7 +214,7 @@ class DebugApiResponse(SdkResponse):
 
     @property
     def response_header(self):
-        """Gets the response_header of this DebugApiResponse.
+        r"""Gets the response_header of this DebugApiResponse.
 
         :return: The response_header of this DebugApiResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiTestResponseHeader`
@@ -223,7 +223,7 @@ class DebugApiResponse(SdkResponse):
 
     @response_header.setter
     def response_header(self, response_header):
-        """Sets the response_header of this DebugApiResponse.
+        r"""Sets the response_header of this DebugApiResponse.
 
         :param response_header: The response_header of this DebugApiResponse.
         :type response_header: :class:`huaweicloudsdkdataartsstudio.v1.ApiTestResponseHeader`

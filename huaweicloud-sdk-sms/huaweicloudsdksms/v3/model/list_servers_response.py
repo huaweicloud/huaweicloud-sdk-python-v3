@@ -28,7 +28,7 @@ class ListServersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, source_servers=None):
-        """ListServersResponse
+        r"""ListServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListServersResponse.
+        r"""Gets the count of this ListServersResponse.
 
         符合查询条件的源端总数量，不受limit和offset影响
 
@@ -62,7 +62,7 @@ class ListServersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListServersResponse.
+        r"""Sets the count of this ListServersResponse.
 
         符合查询条件的源端总数量，不受limit和offset影响
 
@@ -73,7 +73,7 @@ class ListServersResponse(SdkResponse):
 
     @property
     def source_servers(self):
-        """Gets the source_servers of this ListServersResponse.
+        r"""Gets the source_servers of this ListServersResponse.
 
         批量查询的源端服务器详列表
 
@@ -84,7 +84,7 @@ class ListServersResponse(SdkResponse):
 
     @source_servers.setter
     def source_servers(self, source_servers):
-        """Sets the source_servers of this ListServersResponse.
+        r"""Sets the source_servers of this ListServersResponse.
 
         批量查询的源端服务器详列表
 

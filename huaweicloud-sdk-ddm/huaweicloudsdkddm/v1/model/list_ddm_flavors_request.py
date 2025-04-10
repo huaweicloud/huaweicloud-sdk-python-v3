@@ -33,7 +33,7 @@ class ListDdmFlavorsRequest:
     }
 
     def __init__(self, offset=None, limit=None, engine_id=None, engine_version=None, available_zones=None):
-        """ListDdmFlavorsRequest
+        r"""ListDdmFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListDdmFlavorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDdmFlavorsRequest.
+        r"""Gets the offset of this ListDdmFlavorsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -82,7 +82,7 @@ class ListDdmFlavorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDdmFlavorsRequest.
+        r"""Sets the offset of this ListDdmFlavorsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -93,7 +93,7 @@ class ListDdmFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDdmFlavorsRequest.
+        r"""Gets the limit of this ListDdmFlavorsRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -104,7 +104,7 @@ class ListDdmFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDdmFlavorsRequest.
+        r"""Sets the limit of this ListDdmFlavorsRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -115,7 +115,7 @@ class ListDdmFlavorsRequest:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this ListDdmFlavorsRequest.
+        r"""Gets the engine_id of this ListDdmFlavorsRequest.
 
         引擎ID,通过查询DDM引擎信息接口获取，引擎ID与引擎版本至少指定一个
 
@@ -126,7 +126,7 @@ class ListDdmFlavorsRequest:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this ListDdmFlavorsRequest.
+        r"""Sets the engine_id of this ListDdmFlavorsRequest.
 
         引擎ID,通过查询DDM引擎信息接口获取，引擎ID与引擎版本至少指定一个
 
@@ -137,7 +137,7 @@ class ListDdmFlavorsRequest:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ListDdmFlavorsRequest.
+        r"""Gets the engine_version of this ListDdmFlavorsRequest.
 
         引擎版本,通过查询DDM引擎信息接口获取，引擎ID与引擎版本至少指定一个
 
@@ -148,7 +148,7 @@ class ListDdmFlavorsRequest:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ListDdmFlavorsRequest.
+        r"""Sets the engine_version of this ListDdmFlavorsRequest.
 
         引擎版本,通过查询DDM引擎信息接口获取，引擎ID与引擎版本至少指定一个
 
@@ -159,7 +159,7 @@ class ListDdmFlavorsRequest:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ListDdmFlavorsRequest.
+        r"""Gets the available_zones of this ListDdmFlavorsRequest.
 
         可用区，多个用\",\"分割，如cn-southwest-244a,cn-southwest-244b。请参见地区和终端节点(https://console.huaweicloud.com/apiexplorer/#/endpoint/DDM)。
 
@@ -170,7 +170,7 @@ class ListDdmFlavorsRequest:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ListDdmFlavorsRequest.
+        r"""Sets the available_zones of this ListDdmFlavorsRequest.
 
         可用区，多个用\",\"分割，如cn-southwest-244a,cn-southwest-244b。请参见地区和终端节点(https://console.huaweicloud.com/apiexplorer/#/endpoint/DDM)。
 

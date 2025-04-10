@@ -26,7 +26,7 @@ class ListKernelPluginsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListKernelPluginsResponse
+        r"""ListKernelPluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListKernelPluginsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListKernelPluginsResponse.
+        r"""Gets the body of this ListKernelPluginsResponse.
 
         插件列表
 
@@ -55,7 +55,7 @@ class ListKernelPluginsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListKernelPluginsResponse.
+        r"""Sets the body of this ListKernelPluginsResponse.
 
         插件列表
 

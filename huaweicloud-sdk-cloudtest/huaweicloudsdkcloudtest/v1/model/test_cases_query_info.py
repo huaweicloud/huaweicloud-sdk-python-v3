@@ -107,7 +107,7 @@ class TestCasesQueryInfo:
     }
 
     def __init__(self, keyword=None, exeplatforms=None, own=None, use_offset=None, version_uri=None, case_uris=None, owner_ids=None, status_codes=None, rank_ids=None, module_ids=None, issue_id=None, creator_ids=None, result_codes=None, iteration_ids=None, create_start_time=None, create_end_time=None, associated_issue=None, associated_defects=None, include_sub_issue=None, include_sub_feature=None, label_ids=None, execute_start_time=None, execute_end_time=None, executor_ids=None, test_types=None, is_keyword=None, issue_tree_search=None, service_type=None, service_types=None, stage_type=None, feature_uri=None, sort_field=None, sort_type=None, page_no=None, page_size=None, case_type=None, custom_field_info=None, task_uri=None, associate_issue_detail=None, not_assign_task=None, test_designs=None, review_status=None):
-        """TestCasesQueryInfo
+        r"""TestCasesQueryInfo
 
         The model defined in huaweicloud sdk
 
@@ -330,7 +330,7 @@ class TestCasesQueryInfo:
 
     @property
     def keyword(self):
-        """Gets the keyword of this TestCasesQueryInfo.
+        r"""Gets the keyword of this TestCasesQueryInfo.
 
         关键字查询，用例名或编号
 
@@ -341,7 +341,7 @@ class TestCasesQueryInfo:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this TestCasesQueryInfo.
+        r"""Sets the keyword of this TestCasesQueryInfo.
 
         关键字查询，用例名或编号
 
@@ -352,7 +352,7 @@ class TestCasesQueryInfo:
 
     @property
     def exeplatforms(self):
-        """Gets the exeplatforms of this TestCasesQueryInfo.
+        r"""Gets the exeplatforms of this TestCasesQueryInfo.
 
         执行平台
 
@@ -363,7 +363,7 @@ class TestCasesQueryInfo:
 
     @exeplatforms.setter
     def exeplatforms(self, exeplatforms):
-        """Sets the exeplatforms of this TestCasesQueryInfo.
+        r"""Sets the exeplatforms of this TestCasesQueryInfo.
 
         执行平台
 
@@ -374,7 +374,7 @@ class TestCasesQueryInfo:
 
     @property
     def own(self):
-        """Gets the own of this TestCasesQueryInfo.
+        r"""Gets the own of this TestCasesQueryInfo.
 
         是否是我的
 
@@ -385,7 +385,7 @@ class TestCasesQueryInfo:
 
     @own.setter
     def own(self, own):
-        """Sets the own of this TestCasesQueryInfo.
+        r"""Sets the own of this TestCasesQueryInfo.
 
         是否是我的
 
@@ -396,7 +396,7 @@ class TestCasesQueryInfo:
 
     @property
     def use_offset(self):
-        """Gets the use_offset of this TestCasesQueryInfo.
+        r"""Gets the use_offset of this TestCasesQueryInfo.
 
         :return: The use_offset of this TestCasesQueryInfo.
         :rtype: bool
@@ -405,7 +405,7 @@ class TestCasesQueryInfo:
 
     @use_offset.setter
     def use_offset(self, use_offset):
-        """Sets the use_offset of this TestCasesQueryInfo.
+        r"""Sets the use_offset of this TestCasesQueryInfo.
 
         :param use_offset: The use_offset of this TestCasesQueryInfo.
         :type use_offset: bool
@@ -414,7 +414,7 @@ class TestCasesQueryInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCasesQueryInfo.
+        r"""Gets the version_uri of this TestCasesQueryInfo.
 
         版本URI
 
@@ -425,7 +425,7 @@ class TestCasesQueryInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCasesQueryInfo.
+        r"""Sets the version_uri of this TestCasesQueryInfo.
 
         版本URI
 
@@ -436,7 +436,7 @@ class TestCasesQueryInfo:
 
     @property
     def case_uris(self):
-        """Gets the case_uris of this TestCasesQueryInfo.
+        r"""Gets the case_uris of this TestCasesQueryInfo.
 
         用例URI集合
 
@@ -447,7 +447,7 @@ class TestCasesQueryInfo:
 
     @case_uris.setter
     def case_uris(self, case_uris):
-        """Sets the case_uris of this TestCasesQueryInfo.
+        r"""Sets the case_uris of this TestCasesQueryInfo.
 
         用例URI集合
 
@@ -458,7 +458,7 @@ class TestCasesQueryInfo:
 
     @property
     def owner_ids(self):
-        """Gets the owner_ids of this TestCasesQueryInfo.
+        r"""Gets the owner_ids of this TestCasesQueryInfo.
 
         处理者ID集合
 
@@ -469,7 +469,7 @@ class TestCasesQueryInfo:
 
     @owner_ids.setter
     def owner_ids(self, owner_ids):
-        """Sets the owner_ids of this TestCasesQueryInfo.
+        r"""Sets the owner_ids of this TestCasesQueryInfo.
 
         处理者ID集合
 
@@ -480,7 +480,7 @@ class TestCasesQueryInfo:
 
     @property
     def status_codes(self):
-        """Gets the status_codes of this TestCasesQueryInfo.
+        r"""Gets the status_codes of this TestCasesQueryInfo.
 
         状态Code集合
 
@@ -491,7 +491,7 @@ class TestCasesQueryInfo:
 
     @status_codes.setter
     def status_codes(self, status_codes):
-        """Sets the status_codes of this TestCasesQueryInfo.
+        r"""Sets the status_codes of this TestCasesQueryInfo.
 
         状态Code集合
 
@@ -502,7 +502,7 @@ class TestCasesQueryInfo:
 
     @property
     def rank_ids(self):
-        """Gets the rank_ids of this TestCasesQueryInfo.
+        r"""Gets the rank_ids of this TestCasesQueryInfo.
 
         用例等级ID集合
 
@@ -513,7 +513,7 @@ class TestCasesQueryInfo:
 
     @rank_ids.setter
     def rank_ids(self, rank_ids):
-        """Sets the rank_ids of this TestCasesQueryInfo.
+        r"""Sets the rank_ids of this TestCasesQueryInfo.
 
         用例等级ID集合
 
@@ -524,7 +524,7 @@ class TestCasesQueryInfo:
 
     @property
     def module_ids(self):
-        """Gets the module_ids of this TestCasesQueryInfo.
+        r"""Gets the module_ids of this TestCasesQueryInfo.
 
         模块ID集合
 
@@ -535,7 +535,7 @@ class TestCasesQueryInfo:
 
     @module_ids.setter
     def module_ids(self, module_ids):
-        """Sets the module_ids of this TestCasesQueryInfo.
+        r"""Sets the module_ids of this TestCasesQueryInfo.
 
         模块ID集合
 
@@ -546,7 +546,7 @@ class TestCasesQueryInfo:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this TestCasesQueryInfo.
+        r"""Gets the issue_id of this TestCasesQueryInfo.
 
         需求编号
 
@@ -557,7 +557,7 @@ class TestCasesQueryInfo:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this TestCasesQueryInfo.
+        r"""Sets the issue_id of this TestCasesQueryInfo.
 
         需求编号
 
@@ -568,7 +568,7 @@ class TestCasesQueryInfo:
 
     @property
     def creator_ids(self):
-        """Gets the creator_ids of this TestCasesQueryInfo.
+        r"""Gets the creator_ids of this TestCasesQueryInfo.
 
         创建者ID集合
 
@@ -579,7 +579,7 @@ class TestCasesQueryInfo:
 
     @creator_ids.setter
     def creator_ids(self, creator_ids):
-        """Sets the creator_ids of this TestCasesQueryInfo.
+        r"""Sets the creator_ids of this TestCasesQueryInfo.
 
         创建者ID集合
 
@@ -590,7 +590,7 @@ class TestCasesQueryInfo:
 
     @property
     def result_codes(self):
-        """Gets the result_codes of this TestCasesQueryInfo.
+        r"""Gets the result_codes of this TestCasesQueryInfo.
 
         结果Code集合
 
@@ -601,7 +601,7 @@ class TestCasesQueryInfo:
 
     @result_codes.setter
     def result_codes(self, result_codes):
-        """Sets the result_codes of this TestCasesQueryInfo.
+        r"""Sets the result_codes of this TestCasesQueryInfo.
 
         结果Code集合
 
@@ -612,7 +612,7 @@ class TestCasesQueryInfo:
 
     @property
     def iteration_ids(self):
-        """Gets the iteration_ids of this TestCasesQueryInfo.
+        r"""Gets the iteration_ids of this TestCasesQueryInfo.
 
         归属迭代ID集合
 
@@ -623,7 +623,7 @@ class TestCasesQueryInfo:
 
     @iteration_ids.setter
     def iteration_ids(self, iteration_ids):
-        """Sets the iteration_ids of this TestCasesQueryInfo.
+        r"""Sets the iteration_ids of this TestCasesQueryInfo.
 
         归属迭代ID集合
 
@@ -634,7 +634,7 @@ class TestCasesQueryInfo:
 
     @property
     def create_start_time(self):
-        """Gets the create_start_time of this TestCasesQueryInfo.
+        r"""Gets the create_start_time of this TestCasesQueryInfo.
 
         创建开始时间
 
@@ -645,7 +645,7 @@ class TestCasesQueryInfo:
 
     @create_start_time.setter
     def create_start_time(self, create_start_time):
-        """Sets the create_start_time of this TestCasesQueryInfo.
+        r"""Sets the create_start_time of this TestCasesQueryInfo.
 
         创建开始时间
 
@@ -656,7 +656,7 @@ class TestCasesQueryInfo:
 
     @property
     def create_end_time(self):
-        """Gets the create_end_time of this TestCasesQueryInfo.
+        r"""Gets the create_end_time of this TestCasesQueryInfo.
 
         创建结束时间
 
@@ -667,7 +667,7 @@ class TestCasesQueryInfo:
 
     @create_end_time.setter
     def create_end_time(self, create_end_time):
-        """Sets the create_end_time of this TestCasesQueryInfo.
+        r"""Sets the create_end_time of this TestCasesQueryInfo.
 
         创建结束时间
 
@@ -678,7 +678,7 @@ class TestCasesQueryInfo:
 
     @property
     def associated_issue(self):
-        """Gets the associated_issue of this TestCasesQueryInfo.
+        r"""Gets the associated_issue of this TestCasesQueryInfo.
 
         是否关联需求（null：不限，false：未关联，true：已关联）
 
@@ -689,7 +689,7 @@ class TestCasesQueryInfo:
 
     @associated_issue.setter
     def associated_issue(self, associated_issue):
-        """Sets the associated_issue of this TestCasesQueryInfo.
+        r"""Sets the associated_issue of this TestCasesQueryInfo.
 
         是否关联需求（null：不限，false：未关联，true：已关联）
 
@@ -700,7 +700,7 @@ class TestCasesQueryInfo:
 
     @property
     def associated_defects(self):
-        """Gets the associated_defects of this TestCasesQueryInfo.
+        r"""Gets the associated_defects of this TestCasesQueryInfo.
 
         是否关联缺陷（null：不限，false：未关联，true：已关联）
 
@@ -711,7 +711,7 @@ class TestCasesQueryInfo:
 
     @associated_defects.setter
     def associated_defects(self, associated_defects):
-        """Sets the associated_defects of this TestCasesQueryInfo.
+        r"""Sets the associated_defects of this TestCasesQueryInfo.
 
         是否关联缺陷（null：不限，false：未关联，true：已关联）
 
@@ -722,7 +722,7 @@ class TestCasesQueryInfo:
 
     @property
     def include_sub_issue(self):
-        """Gets the include_sub_issue of this TestCasesQueryInfo.
+        r"""Gets the include_sub_issue of this TestCasesQueryInfo.
 
         是否查询子需求关联的用例，默认true
 
@@ -733,7 +733,7 @@ class TestCasesQueryInfo:
 
     @include_sub_issue.setter
     def include_sub_issue(self, include_sub_issue):
-        """Sets the include_sub_issue of this TestCasesQueryInfo.
+        r"""Sets the include_sub_issue of this TestCasesQueryInfo.
 
         是否查询子需求关联的用例，默认true
 
@@ -744,7 +744,7 @@ class TestCasesQueryInfo:
 
     @property
     def include_sub_feature(self):
-        """Gets the include_sub_feature of this TestCasesQueryInfo.
+        r"""Gets the include_sub_feature of this TestCasesQueryInfo.
 
         是否查询子目录的用例，默认true
 
@@ -755,7 +755,7 @@ class TestCasesQueryInfo:
 
     @include_sub_feature.setter
     def include_sub_feature(self, include_sub_feature):
-        """Sets the include_sub_feature of this TestCasesQueryInfo.
+        r"""Sets the include_sub_feature of this TestCasesQueryInfo.
 
         是否查询子目录的用例，默认true
 
@@ -766,7 +766,7 @@ class TestCasesQueryInfo:
 
     @property
     def label_ids(self):
-        """Gets the label_ids of this TestCasesQueryInfo.
+        r"""Gets the label_ids of this TestCasesQueryInfo.
 
         标签ID集合
 
@@ -777,7 +777,7 @@ class TestCasesQueryInfo:
 
     @label_ids.setter
     def label_ids(self, label_ids):
-        """Sets the label_ids of this TestCasesQueryInfo.
+        r"""Sets the label_ids of this TestCasesQueryInfo.
 
         标签ID集合
 
@@ -788,7 +788,7 @@ class TestCasesQueryInfo:
 
     @property
     def execute_start_time(self):
-        """Gets the execute_start_time of this TestCasesQueryInfo.
+        r"""Gets the execute_start_time of this TestCasesQueryInfo.
 
         执行开始时间
 
@@ -799,7 +799,7 @@ class TestCasesQueryInfo:
 
     @execute_start_time.setter
     def execute_start_time(self, execute_start_time):
-        """Sets the execute_start_time of this TestCasesQueryInfo.
+        r"""Sets the execute_start_time of this TestCasesQueryInfo.
 
         执行开始时间
 
@@ -810,7 +810,7 @@ class TestCasesQueryInfo:
 
     @property
     def execute_end_time(self):
-        """Gets the execute_end_time of this TestCasesQueryInfo.
+        r"""Gets the execute_end_time of this TestCasesQueryInfo.
 
         执行结束时间
 
@@ -821,7 +821,7 @@ class TestCasesQueryInfo:
 
     @execute_end_time.setter
     def execute_end_time(self, execute_end_time):
-        """Sets the execute_end_time of this TestCasesQueryInfo.
+        r"""Sets the execute_end_time of this TestCasesQueryInfo.
 
         执行结束时间
 
@@ -832,7 +832,7 @@ class TestCasesQueryInfo:
 
     @property
     def executor_ids(self):
-        """Gets the executor_ids of this TestCasesQueryInfo.
+        r"""Gets the executor_ids of this TestCasesQueryInfo.
 
         执行者ID集合
 
@@ -843,7 +843,7 @@ class TestCasesQueryInfo:
 
     @executor_ids.setter
     def executor_ids(self, executor_ids):
-        """Sets the executor_ids of this TestCasesQueryInfo.
+        r"""Sets the executor_ids of this TestCasesQueryInfo.
 
         执行者ID集合
 
@@ -854,7 +854,7 @@ class TestCasesQueryInfo:
 
     @property
     def test_types(self):
-        """Gets the test_types of this TestCasesQueryInfo.
+        r"""Gets the test_types of this TestCasesQueryInfo.
 
         类型
 
@@ -865,7 +865,7 @@ class TestCasesQueryInfo:
 
     @test_types.setter
     def test_types(self, test_types):
-        """Sets the test_types of this TestCasesQueryInfo.
+        r"""Sets the test_types of this TestCasesQueryInfo.
 
         类型
 
@@ -876,7 +876,7 @@ class TestCasesQueryInfo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this TestCasesQueryInfo.
+        r"""Gets the is_keyword of this TestCasesQueryInfo.
 
         是否组合关键字
 
@@ -887,7 +887,7 @@ class TestCasesQueryInfo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this TestCasesQueryInfo.
+        r"""Sets the is_keyword of this TestCasesQueryInfo.
 
         是否组合关键字
 
@@ -898,7 +898,7 @@ class TestCasesQueryInfo:
 
     @property
     def issue_tree_search(self):
-        """Gets the issue_tree_search of this TestCasesQueryInfo.
+        r"""Gets the issue_tree_search of this TestCasesQueryInfo.
 
         是否是需求树点击的查询关联用例
 
@@ -909,7 +909,7 @@ class TestCasesQueryInfo:
 
     @issue_tree_search.setter
     def issue_tree_search(self, issue_tree_search):
-        """Sets the issue_tree_search of this TestCasesQueryInfo.
+        r"""Sets the issue_tree_search of this TestCasesQueryInfo.
 
         是否是需求树点击的查询关联用例
 
@@ -920,7 +920,7 @@ class TestCasesQueryInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TestCasesQueryInfo.
+        r"""Gets the service_type of this TestCasesQueryInfo.
 
         服务类型
 
@@ -931,7 +931,7 @@ class TestCasesQueryInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TestCasesQueryInfo.
+        r"""Sets the service_type of this TestCasesQueryInfo.
 
         服务类型
 
@@ -942,7 +942,7 @@ class TestCasesQueryInfo:
 
     @property
     def service_types(self):
-        """Gets the service_types of this TestCasesQueryInfo.
+        r"""Gets the service_types of this TestCasesQueryInfo.
 
         服务类型集合
 
@@ -953,7 +953,7 @@ class TestCasesQueryInfo:
 
     @service_types.setter
     def service_types(self, service_types):
-        """Sets the service_types of this TestCasesQueryInfo.
+        r"""Sets the service_types of this TestCasesQueryInfo.
 
         服务类型集合
 
@@ -964,7 +964,7 @@ class TestCasesQueryInfo:
 
     @property
     def stage_type(self):
-        """Gets the stage_type of this TestCasesQueryInfo.
+        r"""Gets the stage_type of this TestCasesQueryInfo.
 
         阶段过程（2：测试设计，3：测试执行，4：质量报告）
 
@@ -975,7 +975,7 @@ class TestCasesQueryInfo:
 
     @stage_type.setter
     def stage_type(self, stage_type):
-        """Sets the stage_type of this TestCasesQueryInfo.
+        r"""Sets the stage_type of this TestCasesQueryInfo.
 
         阶段过程（2：测试设计，3：测试执行，4：质量报告）
 
@@ -986,7 +986,7 @@ class TestCasesQueryInfo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this TestCasesQueryInfo.
+        r"""Gets the feature_uri of this TestCasesQueryInfo.
 
         目录URI
 
@@ -997,7 +997,7 @@ class TestCasesQueryInfo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this TestCasesQueryInfo.
+        r"""Sets the feature_uri of this TestCasesQueryInfo.
 
         目录URI
 
@@ -1008,7 +1008,7 @@ class TestCasesQueryInfo:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this TestCasesQueryInfo.
+        r"""Gets the sort_field of this TestCasesQueryInfo.
 
         排序字段
 
@@ -1019,7 +1019,7 @@ class TestCasesQueryInfo:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this TestCasesQueryInfo.
+        r"""Sets the sort_field of this TestCasesQueryInfo.
 
         排序字段
 
@@ -1030,7 +1030,7 @@ class TestCasesQueryInfo:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this TestCasesQueryInfo.
+        r"""Gets the sort_type of this TestCasesQueryInfo.
 
         排序方式
 
@@ -1041,7 +1041,7 @@ class TestCasesQueryInfo:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this TestCasesQueryInfo.
+        r"""Sets the sort_type of this TestCasesQueryInfo.
 
         排序方式
 
@@ -1052,7 +1052,7 @@ class TestCasesQueryInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this TestCasesQueryInfo.
+        r"""Gets the page_no of this TestCasesQueryInfo.
 
         当前页数
 
@@ -1063,7 +1063,7 @@ class TestCasesQueryInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this TestCasesQueryInfo.
+        r"""Sets the page_no of this TestCasesQueryInfo.
 
         当前页数
 
@@ -1074,7 +1074,7 @@ class TestCasesQueryInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this TestCasesQueryInfo.
+        r"""Gets the page_size of this TestCasesQueryInfo.
 
         每页条数
 
@@ -1085,7 +1085,7 @@ class TestCasesQueryInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this TestCasesQueryInfo.
+        r"""Sets the page_size of this TestCasesQueryInfo.
 
         每页条数
 
@@ -1096,7 +1096,7 @@ class TestCasesQueryInfo:
 
     @property
     def case_type(self):
-        """Gets the case_type of this TestCasesQueryInfo.
+        r"""Gets the case_type of this TestCasesQueryInfo.
 
         用例类型
 
@@ -1107,7 +1107,7 @@ class TestCasesQueryInfo:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this TestCasesQueryInfo.
+        r"""Sets the case_type of this TestCasesQueryInfo.
 
         用例类型
 
@@ -1118,7 +1118,7 @@ class TestCasesQueryInfo:
 
     @property
     def custom_field_info(self):
-        """Gets the custom_field_info of this TestCasesQueryInfo.
+        r"""Gets the custom_field_info of this TestCasesQueryInfo.
 
         用例自定义字段信息
 
@@ -1129,7 +1129,7 @@ class TestCasesQueryInfo:
 
     @custom_field_info.setter
     def custom_field_info(self, custom_field_info):
-        """Sets the custom_field_info of this TestCasesQueryInfo.
+        r"""Sets the custom_field_info of this TestCasesQueryInfo.
 
         用例自定义字段信息
 
@@ -1140,7 +1140,7 @@ class TestCasesQueryInfo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this TestCasesQueryInfo.
+        r"""Gets the task_uri of this TestCasesQueryInfo.
 
         测试套uri
 
@@ -1151,7 +1151,7 @@ class TestCasesQueryInfo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this TestCasesQueryInfo.
+        r"""Sets the task_uri of this TestCasesQueryInfo.
 
         测试套uri
 
@@ -1162,7 +1162,7 @@ class TestCasesQueryInfo:
 
     @property
     def associate_issue_detail(self):
-        """Gets the associate_issue_detail of this TestCasesQueryInfo.
+        r"""Gets the associate_issue_detail of this TestCasesQueryInfo.
 
         是否返回需求具体信息（返回需求名称，需求id）
 
@@ -1173,7 +1173,7 @@ class TestCasesQueryInfo:
 
     @associate_issue_detail.setter
     def associate_issue_detail(self, associate_issue_detail):
-        """Sets the associate_issue_detail of this TestCasesQueryInfo.
+        r"""Sets the associate_issue_detail of this TestCasesQueryInfo.
 
         是否返回需求具体信息（返回需求名称，需求id）
 
@@ -1184,7 +1184,7 @@ class TestCasesQueryInfo:
 
     @property
     def not_assign_task(self):
-        """Gets the not_assign_task of this TestCasesQueryInfo.
+        r"""Gets the not_assign_task of this TestCasesQueryInfo.
 
         该字段为false,则查询全量用例，为true表示查询未分配测试套的用例
 
@@ -1195,7 +1195,7 @@ class TestCasesQueryInfo:
 
     @not_assign_task.setter
     def not_assign_task(self, not_assign_task):
-        """Sets the not_assign_task of this TestCasesQueryInfo.
+        r"""Sets the not_assign_task of this TestCasesQueryInfo.
 
         该字段为false,则查询全量用例，为true表示查询未分配测试套的用例
 
@@ -1206,7 +1206,7 @@ class TestCasesQueryInfo:
 
     @property
     def test_designs(self):
-        """Gets the test_designs of this TestCasesQueryInfo.
+        r"""Gets the test_designs of this TestCasesQueryInfo.
 
         是否来自测试设计（null或者[true, false]：不限，[true]：来自测试设计，[false]：否来自测试设计）
 
@@ -1217,7 +1217,7 @@ class TestCasesQueryInfo:
 
     @test_designs.setter
     def test_designs(self, test_designs):
-        """Sets the test_designs of this TestCasesQueryInfo.
+        r"""Sets the test_designs of this TestCasesQueryInfo.
 
         是否来自测试设计（null或者[true, false]：不限，[true]：来自测试设计，[false]：否来自测试设计）
 
@@ -1228,7 +1228,7 @@ class TestCasesQueryInfo:
 
     @property
     def review_status(self):
-        """Gets the review_status of this TestCasesQueryInfo.
+        r"""Gets the review_status of this TestCasesQueryInfo.
 
         用例评审状态
 
@@ -1239,7 +1239,7 @@ class TestCasesQueryInfo:
 
     @review_status.setter
     def review_status(self, review_status):
-        """Sets the review_status of this TestCasesQueryInfo.
+        r"""Sets the review_status of this TestCasesQueryInfo.
 
         用例评审状态
 

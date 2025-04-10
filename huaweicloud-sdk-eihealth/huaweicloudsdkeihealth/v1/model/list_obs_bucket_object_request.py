@@ -33,7 +33,7 @@ class ListObsBucketObjectRequest:
     }
 
     def __init__(self, bucket_name=None, limit=None, offset=None, path=None, search_key=None):
-        """ListObsBucketObjectRequest
+        r"""ListObsBucketObjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListObsBucketObjectRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ListObsBucketObjectRequest.
+        r"""Gets the bucket_name of this ListObsBucketObjectRequest.
 
         桶名称
 
@@ -81,7 +81,7 @@ class ListObsBucketObjectRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ListObsBucketObjectRequest.
+        r"""Sets the bucket_name of this ListObsBucketObjectRequest.
 
         桶名称
 
@@ -92,7 +92,7 @@ class ListObsBucketObjectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListObsBucketObjectRequest.
+        r"""Gets the limit of this ListObsBucketObjectRequest.
 
         限制量，单次查询总量[1, 1000]，默认100
 
@@ -103,7 +103,7 @@ class ListObsBucketObjectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListObsBucketObjectRequest.
+        r"""Sets the limit of this ListObsBucketObjectRequest.
 
         限制量，单次查询总量[1, 1000]，默认100
 
@@ -114,7 +114,7 @@ class ListObsBucketObjectRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListObsBucketObjectRequest.
+        r"""Gets the offset of this ListObsBucketObjectRequest.
 
         偏移量，查询起始偏移，默认为0
 
@@ -125,7 +125,7 @@ class ListObsBucketObjectRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListObsBucketObjectRequest.
+        r"""Sets the offset of this ListObsBucketObjectRequest.
 
         偏移量，查询起始偏移，默认为0
 
@@ -136,7 +136,7 @@ class ListObsBucketObjectRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListObsBucketObjectRequest.
+        r"""Gets the path of this ListObsBucketObjectRequest.
 
         子路径
 
@@ -147,7 +147,7 @@ class ListObsBucketObjectRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListObsBucketObjectRequest.
+        r"""Sets the path of this ListObsBucketObjectRequest.
 
         子路径
 
@@ -158,7 +158,7 @@ class ListObsBucketObjectRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListObsBucketObjectRequest.
+        r"""Gets the search_key of this ListObsBucketObjectRequest.
 
         查询关键词
 
@@ -169,7 +169,7 @@ class ListObsBucketObjectRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListObsBucketObjectRequest.
+        r"""Sets the search_key of this ListObsBucketObjectRequest.
 
         查询关键词
 

@@ -43,7 +43,7 @@ class UpdateDesktopPoolAttributesReq:
     }
 
     def __init__(self, name=None, description=None, ou_name=None, tags=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, in_maintenance_mode=None, desktop_name_policy_id=None, availability_zone=None):
-        """UpdateDesktopPoolAttributesReq
+        r"""UpdateDesktopPoolAttributesReq
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the name of this UpdateDesktopPoolAttributesReq.
 
         桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
 
@@ -117,7 +117,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the name of this UpdateDesktopPoolAttributesReq.
 
         桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
 
@@ -128,7 +128,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the description of this UpdateDesktopPoolAttributesReq.
 
         桌面池描述。
 
@@ -139,7 +139,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the description of this UpdateDesktopPoolAttributesReq.
 
         桌面池描述。
 
@@ -150,7 +150,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the ou_name of this UpdateDesktopPoolAttributesReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -161,7 +161,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the ou_name of this UpdateDesktopPoolAttributesReq.
 
         OU名称，在对接AD时使用，需提前在AD中创建OU。
 
@@ -172,7 +172,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the tags of this UpdateDesktopPoolAttributesReq.
 
         标签列表。
 
@@ -183,7 +183,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the tags of this UpdateDesktopPoolAttributesReq.
 
         标签列表。
 
@@ -194,7 +194,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def disconnected_retention_period(self):
-        """Gets the disconnected_retention_period of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the disconnected_retention_period of this UpdateDesktopPoolAttributesReq.
 
         桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
 
@@ -205,7 +205,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @disconnected_retention_period.setter
     def disconnected_retention_period(self, disconnected_retention_period):
-        """Sets the disconnected_retention_period of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the disconnected_retention_period of this UpdateDesktopPoolAttributesReq.
 
         桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
 
@@ -216,7 +216,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def enable_autoscale(self):
-        """Gets the enable_autoscale of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the enable_autoscale of this UpdateDesktopPoolAttributesReq.
 
         桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
 
@@ -227,7 +227,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @enable_autoscale.setter
     def enable_autoscale(self, enable_autoscale):
-        """Sets the enable_autoscale of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the enable_autoscale of this UpdateDesktopPoolAttributesReq.
 
         桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
 
@@ -238,7 +238,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def autoscale_policy(self):
-        """Gets the autoscale_policy of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the autoscale_policy of this UpdateDesktopPoolAttributesReq.
 
         :return: The autoscale_policy of this UpdateDesktopPoolAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
@@ -247,7 +247,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @autoscale_policy.setter
     def autoscale_policy(self, autoscale_policy):
-        """Sets the autoscale_policy of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the autoscale_policy of this UpdateDesktopPoolAttributesReq.
 
         :param autoscale_policy: The autoscale_policy of this UpdateDesktopPoolAttributesReq.
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
@@ -256,7 +256,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
 
         是否处于管理员维护模式
 
@@ -267,7 +267,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
 
         是否处于管理员维护模式
 
@@ -278,7 +278,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def desktop_name_policy_id(self):
-        """Gets the desktop_name_policy_id of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the desktop_name_policy_id of this UpdateDesktopPoolAttributesReq.
 
         策略id，用于指定生成桌面名称策略。
 
@@ -289,7 +289,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @desktop_name_policy_id.setter
     def desktop_name_policy_id(self, desktop_name_policy_id):
-        """Sets the desktop_name_policy_id of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the desktop_name_policy_id of this UpdateDesktopPoolAttributesReq.
 
         策略id，用于指定生成桌面名称策略。
 
@@ -300,7 +300,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this UpdateDesktopPoolAttributesReq.
+        r"""Gets the availability_zone of this UpdateDesktopPoolAttributesReq.
 
         桌面池的可用区。
 
@@ -311,7 +311,7 @@ class UpdateDesktopPoolAttributesReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this UpdateDesktopPoolAttributesReq.
+        r"""Sets the availability_zone of this UpdateDesktopPoolAttributesReq.
 
         桌面池的可用区。
 

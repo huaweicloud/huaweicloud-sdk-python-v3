@@ -27,7 +27,7 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListProjectTagsRequest
+        r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListProjectTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectTagsRequest.
+        r"""Gets the offset of this ListProjectTagsRequest.
 
         索引位置，偏移量。    - 从第一条数据偏移offset条数据后开始查询，默认为0。   - 取值必须为数字，且不能为负数。
 
@@ -61,7 +61,7 @@ class ListProjectTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectTagsRequest.
+        r"""Sets the offset of this ListProjectTagsRequest.
 
         索引位置，偏移量。    - 从第一条数据偏移offset条数据后开始查询，默认为0。   - 取值必须为数字，且不能为负数。
 
@@ -72,7 +72,7 @@ class ListProjectTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectTagsRequest.
+        r"""Gets the limit of this ListProjectTagsRequest.
 
         查询个数上限值。    - 取值范围：1~100。   - 不传该参数时，默认查询前100条信息。
 
@@ -83,7 +83,7 @@ class ListProjectTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectTagsRequest.
+        r"""Sets the limit of this ListProjectTagsRequest.
 
         查询个数上限值。    - 取值范围：1~100。   - 不传该参数时，默认查询前100条信息。
 

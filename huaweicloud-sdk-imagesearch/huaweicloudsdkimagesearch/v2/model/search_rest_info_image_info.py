@@ -31,7 +31,7 @@ class SearchRestInfoImageInfo:
     }
 
     def __init__(self, box=None, category=None, category_name=None, objects=None):
-        """SearchRestInfoImageInfo
+        r"""SearchRestInfoImageInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SearchRestInfoImageInfo:
 
     @property
     def box(self):
-        """Gets the box of this SearchRestInfoImageInfo.
+        r"""Gets the box of this SearchRestInfoImageInfo.
 
         用于搜索的主体目标框。
 
@@ -75,7 +75,7 @@ class SearchRestInfoImageInfo:
 
     @box.setter
     def box(self, box):
-        """Sets the box of this SearchRestInfoImageInfo.
+        r"""Sets the box of this SearchRestInfoImageInfo.
 
         用于搜索的主体目标框。
 
@@ -86,7 +86,7 @@ class SearchRestInfoImageInfo:
 
     @property
     def category(self):
-        """Gets the category of this SearchRestInfoImageInfo.
+        r"""Gets the category of this SearchRestInfoImageInfo.
 
         用于搜索的主体类目序号。
 
@@ -97,7 +97,7 @@ class SearchRestInfoImageInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this SearchRestInfoImageInfo.
+        r"""Sets the category of this SearchRestInfoImageInfo.
 
         用于搜索的主体类目序号。
 
@@ -108,7 +108,7 @@ class SearchRestInfoImageInfo:
 
     @property
     def category_name(self):
-        """Gets the category_name of this SearchRestInfoImageInfo.
+        r"""Gets the category_name of this SearchRestInfoImageInfo.
 
         用于搜索的主体类目名称。
 
@@ -119,7 +119,7 @@ class SearchRestInfoImageInfo:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this SearchRestInfoImageInfo.
+        r"""Sets the category_name of this SearchRestInfoImageInfo.
 
         用于搜索的主体类目名称。
 
@@ -130,7 +130,7 @@ class SearchRestInfoImageInfo:
 
     @property
     def objects(self):
-        """Gets the objects of this SearchRestInfoImageInfo.
+        r"""Gets the objects of this SearchRestInfoImageInfo.
 
         搜索图像中的所有主体列表。
 
@@ -141,7 +141,7 @@ class SearchRestInfoImageInfo:
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this SearchRestInfoImageInfo.
+        r"""Sets the objects of this SearchRestInfoImageInfo.
 
         搜索图像中的所有主体列表。
 

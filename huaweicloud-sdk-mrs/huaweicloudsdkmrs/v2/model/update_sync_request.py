@@ -29,7 +29,7 @@ class UpdateSyncRequest:
     }
 
     def __init__(self, is_all_sync=None, group_names=None, user_names=None):
-        """UpdateSyncRequest
+        r"""UpdateSyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateSyncRequest:
 
     @property
     def is_all_sync(self):
-        """Gets the is_all_sync of this UpdateSyncRequest.
+        r"""Gets the is_all_sync of this UpdateSyncRequest.
 
         是否是全量同步。true为全量同步，false为指定用户、用户组同步。默认值为false。
 
@@ -68,7 +68,7 @@ class UpdateSyncRequest:
 
     @is_all_sync.setter
     def is_all_sync(self, is_all_sync):
-        """Sets the is_all_sync of this UpdateSyncRequest.
+        r"""Sets the is_all_sync of this UpdateSyncRequest.
 
         是否是全量同步。true为全量同步，false为指定用户、用户组同步。默认值为false。
 
@@ -79,7 +79,7 @@ class UpdateSyncRequest:
 
     @property
     def group_names(self):
-        """Gets the group_names of this UpdateSyncRequest.
+        r"""Gets the group_names of this UpdateSyncRequest.
 
         指定同步的IAM用户组。
 
@@ -90,7 +90,7 @@ class UpdateSyncRequest:
 
     @group_names.setter
     def group_names(self, group_names):
-        """Sets the group_names of this UpdateSyncRequest.
+        r"""Sets the group_names of this UpdateSyncRequest.
 
         指定同步的IAM用户组。
 
@@ -101,7 +101,7 @@ class UpdateSyncRequest:
 
     @property
     def user_names(self):
-        """Gets the user_names of this UpdateSyncRequest.
+        r"""Gets the user_names of this UpdateSyncRequest.
 
         指定同步的IAM用户。
 
@@ -112,7 +112,7 @@ class UpdateSyncRequest:
 
     @user_names.setter
     def user_names(self, user_names):
-        """Sets the user_names of this UpdateSyncRequest.
+        r"""Sets the user_names of this UpdateSyncRequest.
 
         指定同步的IAM用户。
 

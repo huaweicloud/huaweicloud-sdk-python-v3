@@ -27,7 +27,7 @@ class Location:
     }
 
     def __init__(self, x=None, y=None):
-        """Location
+        r"""Location
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Location:
 
     @property
     def x(self):
-        """Gets the x of this Location.
+        r"""Gets the x of this Location.
 
         :return: The x of this Location.
         :rtype: int
@@ -59,7 +59,7 @@ class Location:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this Location.
+        r"""Sets the x of this Location.
 
         :param x: The x of this Location.
         :type x: int
@@ -68,7 +68,7 @@ class Location:
 
     @property
     def y(self):
-        """Gets the y of this Location.
+        r"""Gets the y of this Location.
 
         :return: The y of this Location.
         :rtype: int
@@ -77,7 +77,7 @@ class Location:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this Location.
+        r"""Sets the y of this Location.
 
         :param y: The y of this Location.
         :type y: int

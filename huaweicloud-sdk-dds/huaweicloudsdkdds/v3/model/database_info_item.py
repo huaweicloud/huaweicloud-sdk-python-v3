@@ -31,7 +31,7 @@ class DatabaseInfoItem:
     }
 
     def __init__(self, name=None, data_size=None, storage_size=None, collection_num=None):
-        """DatabaseInfoItem
+        r"""DatabaseInfoItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DatabaseInfoItem:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseInfoItem.
+        r"""Gets the name of this DatabaseInfoItem.
 
         数据库名称, config admin 库不做展示。
 
@@ -75,7 +75,7 @@ class DatabaseInfoItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseInfoItem.
+        r"""Sets the name of this DatabaseInfoItem.
 
         数据库名称, config admin 库不做展示。
 
@@ -86,7 +86,7 @@ class DatabaseInfoItem:
 
     @property
     def data_size(self):
-        """Gets the data_size of this DatabaseInfoItem.
+        r"""Gets the data_size of this DatabaseInfoItem.
 
         数据库存储大小（以GB为单位）,保留两位小数。 存储大小: 实际磁盘上占用的物理空间大小，包括数据文件、日志文件、索引文件等。
 
@@ -97,7 +97,7 @@ class DatabaseInfoItem:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this DatabaseInfoItem.
+        r"""Sets the data_size of this DatabaseInfoItem.
 
         数据库存储大小（以GB为单位）,保留两位小数。 存储大小: 实际磁盘上占用的物理空间大小，包括数据文件、日志文件、索引文件等。
 
@@ -108,7 +108,7 @@ class DatabaseInfoItem:
 
     @property
     def storage_size(self):
-        """Gets the storage_size of this DatabaseInfoItem.
+        r"""Gets the storage_size of this DatabaseInfoItem.
 
         数据库逻辑大小 （以GB为单位）,保留两位小数。 逻辑大小指的是数据库中实际存储的数据大小，不包括索引大小、日志大小等。
 
@@ -119,7 +119,7 @@ class DatabaseInfoItem:
 
     @storage_size.setter
     def storage_size(self, storage_size):
-        """Sets the storage_size of this DatabaseInfoItem.
+        r"""Sets the storage_size of this DatabaseInfoItem.
 
         数据库逻辑大小 （以GB为单位）,保留两位小数。 逻辑大小指的是数据库中实际存储的数据大小，不包括索引大小、日志大小等。
 
@@ -130,7 +130,7 @@ class DatabaseInfoItem:
 
     @property
     def collection_num(self):
-        """Gets the collection_num of this DatabaseInfoItem.
+        r"""Gets the collection_num of this DatabaseInfoItem.
 
         数据库中的集合数。
 
@@ -141,7 +141,7 @@ class DatabaseInfoItem:
 
     @collection_num.setter
     def collection_num(self, collection_num):
-        """Sets the collection_num of this DatabaseInfoItem.
+        r"""Sets the collection_num of this DatabaseInfoItem.
 
         数据库中的集合数。
 

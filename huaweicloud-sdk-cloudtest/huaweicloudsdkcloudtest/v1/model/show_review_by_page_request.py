@@ -27,7 +27,7 @@ class ShowReviewByPageRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowReviewByPageRequest
+        r"""ShowReviewByPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowReviewByPageRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowReviewByPageRequest.
+        r"""Gets the project_id of this ShowReviewByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowReviewByPageRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowReviewByPageRequest.
+        r"""Sets the project_id of this ShowReviewByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowReviewByPageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowReviewByPageRequest.
+        r"""Gets the body of this ShowReviewByPageRequest.
 
         :return: The body of this ShowReviewByPageRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestReviewPageParam`
@@ -80,7 +80,7 @@ class ShowReviewByPageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowReviewByPageRequest.
+        r"""Sets the body of this ShowReviewByPageRequest.
 
         :param body: The body of this ShowReviewByPageRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestReviewPageParam`

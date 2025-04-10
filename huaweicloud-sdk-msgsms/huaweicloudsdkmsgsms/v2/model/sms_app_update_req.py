@@ -35,7 +35,7 @@ class SmsAppUpdateReq:
     }
 
     def __init__(self, app_name=None, create_sign_and_template=None, enterprise_project_id=None, enterprise_project_name=None, region=None, up_link_addr=None):
-        """SmsAppUpdateReq
+        r"""SmsAppUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class SmsAppUpdateReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsAppUpdateReq.
+        r"""Gets the app_name of this SmsAppUpdateReq.
 
         应用名称
 
@@ -87,7 +87,7 @@ class SmsAppUpdateReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsAppUpdateReq.
+        r"""Sets the app_name of this SmsAppUpdateReq.
 
         应用名称
 
@@ -98,7 +98,7 @@ class SmsAppUpdateReq:
 
     @property
     def create_sign_and_template(self):
-        """Gets the create_sign_and_template of this SmsAppUpdateReq.
+        r"""Gets the create_sign_and_template of this SmsAppUpdateReq.
 
         是否创建测试签名和模板。只有地域为国内时，该字段有效 1. true：是 2. false：否
 
@@ -109,7 +109,7 @@ class SmsAppUpdateReq:
 
     @create_sign_and_template.setter
     def create_sign_and_template(self, create_sign_and_template):
-        """Sets the create_sign_and_template of this SmsAppUpdateReq.
+        r"""Sets the create_sign_and_template of this SmsAppUpdateReq.
 
         是否创建测试签名和模板。只有地域为国内时，该字段有效 1. true：是 2. false：否
 
@@ -120,7 +120,7 @@ class SmsAppUpdateReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SmsAppUpdateReq.
+        r"""Gets the enterprise_project_id of this SmsAppUpdateReq.
 
         企业项目ID，默认为0
 
@@ -131,7 +131,7 @@ class SmsAppUpdateReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SmsAppUpdateReq.
+        r"""Sets the enterprise_project_id of this SmsAppUpdateReq.
 
         企业项目ID，默认为0
 
@@ -142,7 +142,7 @@ class SmsAppUpdateReq:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this SmsAppUpdateReq.
+        r"""Gets the enterprise_project_name of this SmsAppUpdateReq.
 
         企业项目名称，默认为default
 
@@ -153,7 +153,7 @@ class SmsAppUpdateReq:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this SmsAppUpdateReq.
+        r"""Sets the enterprise_project_name of this SmsAppUpdateReq.
 
         企业项目名称，默认为default
 
@@ -164,7 +164,7 @@ class SmsAppUpdateReq:
 
     @property
     def region(self):
-        """Gets the region of this SmsAppUpdateReq.
+        r"""Gets the region of this SmsAppUpdateReq.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -175,7 +175,7 @@ class SmsAppUpdateReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SmsAppUpdateReq.
+        r"""Sets the region of this SmsAppUpdateReq.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -186,7 +186,7 @@ class SmsAppUpdateReq:
 
     @property
     def up_link_addr(self):
-        """Gets the up_link_addr of this SmsAppUpdateReq.
+        r"""Gets the up_link_addr of this SmsAppUpdateReq.
 
         上行回调地址。只有地域为国内时，该字段有效
 
@@ -197,7 +197,7 @@ class SmsAppUpdateReq:
 
     @up_link_addr.setter
     def up_link_addr(self, up_link_addr):
-        """Sets the up_link_addr of this SmsAppUpdateReq.
+        r"""Sets the up_link_addr of this SmsAppUpdateReq.
 
         上行回调地址。只有地域为国内时，该字段有效
 

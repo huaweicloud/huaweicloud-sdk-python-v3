@@ -29,7 +29,7 @@ class CreateHttp2RpcRequest:
     }
 
     def __init__(self, gateway_id=None, accept=None, body=None):
-        """CreateHttp2RpcRequest
+        r"""CreateHttp2RpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateHttp2RpcRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreateHttp2RpcRequest.
+        r"""Gets the gateway_id of this CreateHttp2RpcRequest.
 
         网关实例id
 
@@ -67,7 +67,7 @@ class CreateHttp2RpcRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreateHttp2RpcRequest.
+        r"""Sets the gateway_id of this CreateHttp2RpcRequest.
 
         网关实例id
 
@@ -78,7 +78,7 @@ class CreateHttp2RpcRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this CreateHttp2RpcRequest.
+        r"""Gets the accept of this CreateHttp2RpcRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -89,7 +89,7 @@ class CreateHttp2RpcRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this CreateHttp2RpcRequest.
+        r"""Sets the accept of this CreateHttp2RpcRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -100,7 +100,7 @@ class CreateHttp2RpcRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttp2RpcRequest.
+        r"""Gets the body of this CreateHttp2RpcRequest.
 
         :return: The body of this CreateHttp2RpcRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.Http2Rpc`
@@ -109,7 +109,7 @@ class CreateHttp2RpcRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttp2RpcRequest.
+        r"""Sets the body of this CreateHttp2RpcRequest.
 
         :param body: The body of this CreateHttp2RpcRequest.
         :type body: :class:`huaweicloudsdkcse.v1.Http2Rpc`

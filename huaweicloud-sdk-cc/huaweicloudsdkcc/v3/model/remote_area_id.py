@@ -25,7 +25,7 @@ class RemoteAreaId:
     }
 
     def __init__(self, remote_area_id=None):
-        """RemoteAreaId
+        r"""RemoteAreaId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoteAreaId:
 
     @property
     def remote_area_id(self):
-        """Gets the remote_area_id of this RemoteAreaId.
+        r"""Gets the remote_area_id of this RemoteAreaId.
 
         :return: The remote_area_id of this RemoteAreaId.
         :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
@@ -51,7 +51,7 @@ class RemoteAreaId:
 
     @remote_area_id.setter
     def remote_area_id(self, remote_area_id):
-        """Sets the remote_area_id of this RemoteAreaId.
+        r"""Sets the remote_area_id of this RemoteAreaId.
 
         :param remote_area_id: The remote_area_id of this RemoteAreaId.
         :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`

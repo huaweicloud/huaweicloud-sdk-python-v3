@@ -27,7 +27,7 @@ class SetRaspSwitchRequestInfo:
     }
 
     def __init__(self, host_id_list=None, status=None):
-        """SetRaspSwitchRequestInfo
+        r"""SetRaspSwitchRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetRaspSwitchRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this SetRaspSwitchRequestInfo.
+        r"""Gets the host_id_list of this SetRaspSwitchRequestInfo.
 
         HostId list
 
@@ -61,7 +61,7 @@ class SetRaspSwitchRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this SetRaspSwitchRequestInfo.
+        r"""Sets the host_id_list of this SetRaspSwitchRequestInfo.
 
         HostId list
 
@@ -72,7 +72,7 @@ class SetRaspSwitchRequestInfo:
 
     @property
     def status(self):
-        """Gets the status of this SetRaspSwitchRequestInfo.
+        r"""Gets the status of this SetRaspSwitchRequestInfo.
 
         动态网页防篡改状态
 
@@ -83,7 +83,7 @@ class SetRaspSwitchRequestInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetRaspSwitchRequestInfo.
+        r"""Sets the status of this SetRaspSwitchRequestInfo.
 
         动态网页防篡改状态
 

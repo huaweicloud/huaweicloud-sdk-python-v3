@@ -30,7 +30,7 @@ class ListConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListConnectionsResponse
+        r"""ListConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListConnectionsResponse.
+        r"""Gets the total of this ListConnectionsResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListConnectionsResponse.
+        r"""Sets the total of this ListConnectionsResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListConnectionsResponse.
+        r"""Gets the size of this ListConnectionsResponse.
 
         本页数量
 
@@ -91,7 +91,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListConnectionsResponse.
+        r"""Sets the size of this ListConnectionsResponse.
 
         本页数量
 
@@ -102,7 +102,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListConnectionsResponse.
+        r"""Gets the items of this ListConnectionsResponse.
 
         对象列表
 
@@ -113,7 +113,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListConnectionsResponse.
+        r"""Sets the items of this ListConnectionsResponse.
 
         对象列表
 

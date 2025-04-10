@@ -35,7 +35,7 @@ class IpsRuleListVO:
     }
 
     def __init__(self, fw_instance_id=None, limit=None, object_id=None, offset=None, records=None, total=None):
-        """IpsRuleListVO
+        r"""IpsRuleListVO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IpsRuleListVO:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this IpsRuleListVO.
+        r"""Gets the fw_instance_id of this IpsRuleListVO.
 
         :return: The fw_instance_id of this IpsRuleListVO.
         :rtype: str
@@ -87,7 +87,7 @@ class IpsRuleListVO:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this IpsRuleListVO.
+        r"""Sets the fw_instance_id of this IpsRuleListVO.
 
         :param fw_instance_id: The fw_instance_id of this IpsRuleListVO.
         :type fw_instance_id: str
@@ -96,7 +96,7 @@ class IpsRuleListVO:
 
     @property
     def limit(self):
-        """Gets the limit of this IpsRuleListVO.
+        r"""Gets the limit of this IpsRuleListVO.
 
         :return: The limit of this IpsRuleListVO.
         :rtype: int
@@ -105,7 +105,7 @@ class IpsRuleListVO:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this IpsRuleListVO.
+        r"""Sets the limit of this IpsRuleListVO.
 
         :param limit: The limit of this IpsRuleListVO.
         :type limit: int
@@ -114,7 +114,7 @@ class IpsRuleListVO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this IpsRuleListVO.
+        r"""Gets the object_id of this IpsRuleListVO.
 
         :return: The object_id of this IpsRuleListVO.
         :rtype: str
@@ -123,7 +123,7 @@ class IpsRuleListVO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this IpsRuleListVO.
+        r"""Sets the object_id of this IpsRuleListVO.
 
         :param object_id: The object_id of this IpsRuleListVO.
         :type object_id: str
@@ -132,7 +132,7 @@ class IpsRuleListVO:
 
     @property
     def offset(self):
-        """Gets the offset of this IpsRuleListVO.
+        r"""Gets the offset of this IpsRuleListVO.
 
         :return: The offset of this IpsRuleListVO.
         :rtype: int
@@ -141,7 +141,7 @@ class IpsRuleListVO:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this IpsRuleListVO.
+        r"""Sets the offset of this IpsRuleListVO.
 
         :param offset: The offset of this IpsRuleListVO.
         :type offset: int
@@ -150,7 +150,7 @@ class IpsRuleListVO:
 
     @property
     def records(self):
-        """Gets the records of this IpsRuleListVO.
+        r"""Gets the records of this IpsRuleListVO.
 
         :return: The records of this IpsRuleListVO.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.IpsRuleVO`]
@@ -159,7 +159,7 @@ class IpsRuleListVO:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this IpsRuleListVO.
+        r"""Sets the records of this IpsRuleListVO.
 
         :param records: The records of this IpsRuleListVO.
         :type records: list[:class:`huaweicloudsdkcfw.v1.IpsRuleVO`]
@@ -168,7 +168,7 @@ class IpsRuleListVO:
 
     @property
     def total(self):
-        """Gets the total of this IpsRuleListVO.
+        r"""Gets the total of this IpsRuleListVO.
 
         :return: The total of this IpsRuleListVO.
         :rtype: int
@@ -177,7 +177,7 @@ class IpsRuleListVO:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this IpsRuleListVO.
+        r"""Sets the total of this IpsRuleListVO.
 
         :param total: The total of this IpsRuleListVO.
         :type total: int

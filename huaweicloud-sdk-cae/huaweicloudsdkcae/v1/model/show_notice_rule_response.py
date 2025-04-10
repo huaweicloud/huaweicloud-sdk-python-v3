@@ -30,7 +30,7 @@ class ShowNoticeRuleResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """ShowNoticeRuleResponse
+        r"""ShowNoticeRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowNoticeRuleResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowNoticeRuleResponse.
+        r"""Gets the api_version of this ShowNoticeRuleResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ShowNoticeRuleResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowNoticeRuleResponse.
+        r"""Sets the api_version of this ShowNoticeRuleResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ShowNoticeRuleResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowNoticeRuleResponse.
+        r"""Gets the kind of this ShowNoticeRuleResponse.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -91,7 +91,7 @@ class ShowNoticeRuleResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowNoticeRuleResponse.
+        r"""Sets the kind of this ShowNoticeRuleResponse.
 
         API类型，固定值“NoticeRule”，该值不可修改。
 
@@ -102,7 +102,7 @@ class ShowNoticeRuleResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowNoticeRuleResponse.
+        r"""Gets the spec of this ShowNoticeRuleResponse.
 
         :return: The spec of this ShowNoticeRuleResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleRespItem`
@@ -111,7 +111,7 @@ class ShowNoticeRuleResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowNoticeRuleResponse.
+        r"""Sets the spec of this ShowNoticeRuleResponse.
 
         :param spec: The spec of this ShowNoticeRuleResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateNoticeRuleRespItem`

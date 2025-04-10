@@ -27,7 +27,7 @@ class CreateEnhancedConnectionRoutesRequestBody:
     }
 
     def __init__(self, name=None, cidr=None):
-        """CreateEnhancedConnectionRoutesRequestBody
+        r"""CreateEnhancedConnectionRoutesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateEnhancedConnectionRoutesRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateEnhancedConnectionRoutesRequestBody.
+        r"""Gets the name of this CreateEnhancedConnectionRoutesRequestBody.
 
         路由名称，长度限制：1-64个字符。
 
@@ -59,7 +59,7 @@ class CreateEnhancedConnectionRoutesRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEnhancedConnectionRoutesRequestBody.
+        r"""Sets the name of this CreateEnhancedConnectionRoutesRequestBody.
 
         路由名称，长度限制：1-64个字符。
 
@@ -70,7 +70,7 @@ class CreateEnhancedConnectionRoutesRequestBody:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateEnhancedConnectionRoutesRequestBody.
+        r"""Gets the cidr of this CreateEnhancedConnectionRoutesRequestBody.
 
         路由网段范围。
 
@@ -81,7 +81,7 @@ class CreateEnhancedConnectionRoutesRequestBody:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateEnhancedConnectionRoutesRequestBody.
+        r"""Sets the cidr of this CreateEnhancedConnectionRoutesRequestBody.
 
         路由网段范围。
 

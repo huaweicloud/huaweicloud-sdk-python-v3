@@ -26,7 +26,7 @@ class CountTableModelsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CountTableModelsResponse
+        r"""CountTableModelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountTableModelsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CountTableModelsResponse.
+        r"""Gets the data of this CountTableModelsResponse.
 
         :return: The data of this CountTableModelsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CountTableModelsResultData`
@@ -53,7 +53,7 @@ class CountTableModelsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CountTableModelsResponse.
+        r"""Sets the data of this CountTableModelsResponse.
 
         :param data: The data of this CountTableModelsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CountTableModelsResultData`

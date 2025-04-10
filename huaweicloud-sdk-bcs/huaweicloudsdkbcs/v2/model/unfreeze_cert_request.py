@@ -31,7 +31,7 @@ class UnfreezeCertRequest:
     }
 
     def __init__(self, user_name=None, blockchain_id=None, org_name=None, body=None):
-        """UnfreezeCertRequest
+        r"""UnfreezeCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UnfreezeCertRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UnfreezeCertRequest.
+        r"""Gets the user_name of this UnfreezeCertRequest.
 
         userName
 
@@ -72,7 +72,7 @@ class UnfreezeCertRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UnfreezeCertRequest.
+        r"""Sets the user_name of this UnfreezeCertRequest.
 
         userName
 
@@ -83,7 +83,7 @@ class UnfreezeCertRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this UnfreezeCertRequest.
+        r"""Gets the blockchain_id of this UnfreezeCertRequest.
 
         blockchainID
 
@@ -94,7 +94,7 @@ class UnfreezeCertRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this UnfreezeCertRequest.
+        r"""Sets the blockchain_id of this UnfreezeCertRequest.
 
         blockchainID
 
@@ -105,7 +105,7 @@ class UnfreezeCertRequest:
 
     @property
     def org_name(self):
-        """Gets the org_name of this UnfreezeCertRequest.
+        r"""Gets the org_name of this UnfreezeCertRequest.
 
         orgName
 
@@ -116,7 +116,7 @@ class UnfreezeCertRequest:
 
     @org_name.setter
     def org_name(self, org_name):
-        """Sets the org_name of this UnfreezeCertRequest.
+        r"""Sets the org_name of this UnfreezeCertRequest.
 
         orgName
 
@@ -127,7 +127,7 @@ class UnfreezeCertRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnfreezeCertRequest.
+        r"""Gets the body of this UnfreezeCertRequest.
 
         :return: The body of this UnfreezeCertRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.UnfreezeCertRequestBody`
@@ -136,7 +136,7 @@ class UnfreezeCertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnfreezeCertRequest.
+        r"""Sets the body of this UnfreezeCertRequest.
 
         :param body: The body of this UnfreezeCertRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.UnfreezeCertRequestBody`

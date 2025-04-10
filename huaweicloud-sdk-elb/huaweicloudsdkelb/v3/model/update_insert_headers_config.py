@@ -25,7 +25,7 @@ class UpdateInsertHeadersConfig:
     }
 
     def __init__(self, configs=None):
-        """UpdateInsertHeadersConfig
+        r"""UpdateInsertHeadersConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInsertHeadersConfig:
 
     @property
     def configs(self):
-        """Gets the configs of this UpdateInsertHeadersConfig.
+        r"""Gets the configs of this UpdateInsertHeadersConfig.
 
         参数解释：要添加请求头参数列表。
 
@@ -53,7 +53,7 @@ class UpdateInsertHeadersConfig:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this UpdateInsertHeadersConfig.
+        r"""Sets the configs of this UpdateInsertHeadersConfig.
 
         参数解释：要添加请求头参数列表。
 

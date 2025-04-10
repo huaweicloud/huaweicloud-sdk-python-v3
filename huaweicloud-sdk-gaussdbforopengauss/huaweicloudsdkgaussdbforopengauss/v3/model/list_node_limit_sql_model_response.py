@@ -32,7 +32,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
     }
 
     def __init__(self, node_limit_sql_model_list=None, limit=None, offset=None, total_count=None):
-        """ListNodeLimitSqlModelResponse
+        r"""ListNodeLimitSqlModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @property
     def node_limit_sql_model_list(self):
-        """Gets the node_limit_sql_model_list of this ListNodeLimitSqlModelResponse.
+        r"""Gets the node_limit_sql_model_list of this ListNodeLimitSqlModelResponse.
 
         限流SQL模板匹配信息
 
@@ -76,7 +76,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @node_limit_sql_model_list.setter
     def node_limit_sql_model_list(self, node_limit_sql_model_list):
-        """Sets the node_limit_sql_model_list of this ListNodeLimitSqlModelResponse.
+        r"""Sets the node_limit_sql_model_list of this ListNodeLimitSqlModelResponse.
 
         限流SQL模板匹配信息
 
@@ -87,7 +87,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListNodeLimitSqlModelResponse.
+        r"""Gets the limit of this ListNodeLimitSqlModelResponse.
 
         查询记录数。
 
@@ -98,7 +98,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNodeLimitSqlModelResponse.
+        r"""Sets the limit of this ListNodeLimitSqlModelResponse.
 
         查询记录数。
 
@@ -109,7 +109,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListNodeLimitSqlModelResponse.
+        r"""Gets the offset of this ListNodeLimitSqlModelResponse.
 
         索引位置。
 
@@ -120,7 +120,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNodeLimitSqlModelResponse.
+        r"""Sets the offset of this ListNodeLimitSqlModelResponse.
 
         索引位置。
 
@@ -131,7 +131,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListNodeLimitSqlModelResponse.
+        r"""Gets the total_count of this ListNodeLimitSqlModelResponse.
 
         总数。
 
@@ -142,7 +142,7 @@ class ListNodeLimitSqlModelResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListNodeLimitSqlModelResponse.
+        r"""Sets the total_count of this ListNodeLimitSqlModelResponse.
 
         总数。
 

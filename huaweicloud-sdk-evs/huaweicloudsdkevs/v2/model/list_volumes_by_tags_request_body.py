@@ -33,7 +33,7 @@ class ListVolumesByTagsRequestBody:
     }
 
     def __init__(self, action=None, limit=None, matches=None, offset=None, tags=None):
-        """ListVolumesByTagsRequestBody
+        r"""ListVolumesByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListVolumesByTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListVolumesByTagsRequestBody.
+        r"""Gets the action of this ListVolumesByTagsRequestBody.
 
         操作标识。  根据标签查询云硬盘实例详情时使用“filter”。
 
@@ -80,7 +80,7 @@ class ListVolumesByTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListVolumesByTagsRequestBody.
+        r"""Sets the action of this ListVolumesByTagsRequestBody.
 
         操作标识。  根据标签查询云硬盘实例详情时使用“filter”。
 
@@ -91,7 +91,7 @@ class ListVolumesByTagsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVolumesByTagsRequestBody.
+        r"""Gets the limit of this ListVolumesByTagsRequestBody.
 
         查询记录数。最小值1，最大值1000，默认为1000。返回的结果中记录数不超过limit值
 
@@ -102,7 +102,7 @@ class ListVolumesByTagsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVolumesByTagsRequestBody.
+        r"""Sets the limit of this ListVolumesByTagsRequestBody.
 
         查询记录数。最小值1，最大值1000，默认为1000。返回的结果中记录数不超过limit值
 
@@ -113,7 +113,7 @@ class ListVolumesByTagsRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListVolumesByTagsRequestBody.
+        r"""Gets the matches of this ListVolumesByTagsRequestBody.
 
         资源本身支持的查询条件。标签列表中的标签key值不允许重复。
 
@@ -124,7 +124,7 @@ class ListVolumesByTagsRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListVolumesByTagsRequestBody.
+        r"""Sets the matches of this ListVolumesByTagsRequestBody.
 
         资源本身支持的查询条件。标签列表中的标签key值不允许重复。
 
@@ -135,7 +135,7 @@ class ListVolumesByTagsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVolumesByTagsRequestBody.
+        r"""Gets the offset of this ListVolumesByTagsRequestBody.
 
         索引位置。最小值0，默认为0。返回的结果中第一条记录为符合查询条件的第“offset值+1”条记录
 
@@ -146,7 +146,7 @@ class ListVolumesByTagsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVolumesByTagsRequestBody.
+        r"""Sets the offset of this ListVolumesByTagsRequestBody.
 
         索引位置。最小值0，默认为0。返回的结果中第一条记录为符合查询条件的第“offset值+1”条记录
 
@@ -157,7 +157,7 @@ class ListVolumesByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListVolumesByTagsRequestBody.
+        r"""Gets the tags of this ListVolumesByTagsRequestBody.
 
         标签的键值对。标签列表中最多包含10个key 。标签列表中的标签key值不允许重复。标签列表中多个key之间是“与”的关系，云硬盘必须满足请求中所有key才会匹配出来。
 
@@ -168,7 +168,7 @@ class ListVolumesByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListVolumesByTagsRequestBody.
+        r"""Sets the tags of this ListVolumesByTagsRequestBody.
 
         标签的键值对。标签列表中最多包含10个key 。标签列表中的标签key值不允许重复。标签列表中多个key之间是“与”的关系，云硬盘必须满足请求中所有key才会匹配出来。
 

@@ -39,7 +39,7 @@ class FrontAlarmNotifyResult:
     }
 
     def __init__(self, id=None, gmt_create=None, notify_type=None, alarm_rule_id=None, template_id=None, alarm_data_event_id=None, notify_status=None, alarm_content=None):
-        """FrontAlarmNotifyResult
+        r"""FrontAlarmNotifyResult
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def id(self):
-        """Gets the id of this FrontAlarmNotifyResult.
+        r"""Gets the id of this FrontAlarmNotifyResult.
 
         告警通知id。
 
@@ -103,7 +103,7 @@ class FrontAlarmNotifyResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FrontAlarmNotifyResult.
+        r"""Sets the id of this FrontAlarmNotifyResult.
 
         告警通知id。
 
@@ -114,7 +114,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this FrontAlarmNotifyResult.
+        r"""Gets the gmt_create of this FrontAlarmNotifyResult.
 
         创建时间。
 
@@ -125,7 +125,7 @@ class FrontAlarmNotifyResult:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this FrontAlarmNotifyResult.
+        r"""Sets the gmt_create of this FrontAlarmNotifyResult.
 
         创建时间。
 
@@ -136,7 +136,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def notify_type(self):
-        """Gets the notify_type of this FrontAlarmNotifyResult.
+        r"""Gets the notify_type of this FrontAlarmNotifyResult.
 
         通知类型。
 
@@ -147,7 +147,7 @@ class FrontAlarmNotifyResult:
 
     @notify_type.setter
     def notify_type(self, notify_type):
-        """Sets the notify_type of this FrontAlarmNotifyResult.
+        r"""Sets the notify_type of this FrontAlarmNotifyResult.
 
         通知类型。
 
@@ -158,7 +158,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this FrontAlarmNotifyResult.
+        r"""Gets the alarm_rule_id of this FrontAlarmNotifyResult.
 
         告警规则id。
 
@@ -169,7 +169,7 @@ class FrontAlarmNotifyResult:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this FrontAlarmNotifyResult.
+        r"""Sets the alarm_rule_id of this FrontAlarmNotifyResult.
 
         告警规则id。
 
@@ -180,7 +180,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def template_id(self):
-        """Gets the template_id of this FrontAlarmNotifyResult.
+        r"""Gets the template_id of this FrontAlarmNotifyResult.
 
         模板id。
 
@@ -191,7 +191,7 @@ class FrontAlarmNotifyResult:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this FrontAlarmNotifyResult.
+        r"""Sets the template_id of this FrontAlarmNotifyResult.
 
         模板id。
 
@@ -202,7 +202,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def alarm_data_event_id(self):
-        """Gets the alarm_data_event_id of this FrontAlarmNotifyResult.
+        r"""Gets the alarm_data_event_id of this FrontAlarmNotifyResult.
 
         关联事件id。
 
@@ -213,7 +213,7 @@ class FrontAlarmNotifyResult:
 
     @alarm_data_event_id.setter
     def alarm_data_event_id(self, alarm_data_event_id):
-        """Sets the alarm_data_event_id of this FrontAlarmNotifyResult.
+        r"""Sets the alarm_data_event_id of this FrontAlarmNotifyResult.
 
         关联事件id。
 
@@ -224,7 +224,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def notify_status(self):
-        """Gets the notify_status of this FrontAlarmNotifyResult.
+        r"""Gets the notify_status of this FrontAlarmNotifyResult.
 
         通知结果。
 
@@ -235,7 +235,7 @@ class FrontAlarmNotifyResult:
 
     @notify_status.setter
     def notify_status(self, notify_status):
-        """Sets the notify_status of this FrontAlarmNotifyResult.
+        r"""Sets the notify_status of this FrontAlarmNotifyResult.
 
         通知结果。
 
@@ -246,7 +246,7 @@ class FrontAlarmNotifyResult:
 
     @property
     def alarm_content(self):
-        """Gets the alarm_content of this FrontAlarmNotifyResult.
+        r"""Gets the alarm_content of this FrontAlarmNotifyResult.
 
         通知内容。
 
@@ -257,7 +257,7 @@ class FrontAlarmNotifyResult:
 
     @alarm_content.setter
     def alarm_content(self, alarm_content):
-        """Sets the alarm_content of this FrontAlarmNotifyResult.
+        r"""Sets the alarm_content of this FrontAlarmNotifyResult.
 
         通知内容。
 

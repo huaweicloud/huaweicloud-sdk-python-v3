@@ -27,7 +27,7 @@ class CreateMessageV2Req:
     }
 
     def __init__(self, message=None, group_id=None):
-        """CreateMessageV2Req
+        r"""CreateMessageV2Req
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMessageV2Req:
 
     @property
     def message(self):
-        """Gets the message of this CreateMessageV2Req.
+        r"""Gets the message of this CreateMessageV2Req.
 
         :return: The message of this CreateMessageV2Req.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
@@ -58,7 +58,7 @@ class CreateMessageV2Req:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateMessageV2Req.
+        r"""Sets the message of this CreateMessageV2Req.
 
         :param message: The message of this CreateMessageV2Req.
         :type message: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
@@ -67,7 +67,7 @@ class CreateMessageV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateMessageV2Req.
+        r"""Gets the group_id of this CreateMessageV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -78,7 +78,7 @@ class CreateMessageV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateMessageV2Req.
+        r"""Sets the group_id of this CreateMessageV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

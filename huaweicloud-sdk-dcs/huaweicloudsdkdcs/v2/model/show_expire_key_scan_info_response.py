@@ -32,7 +32,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
     }
 
     def __init__(self, records=None, instance_id=None, total=None, count=None):
-        """ShowExpireKeyScanInfoResponse
+        r"""ShowExpireKeyScanInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ShowExpireKeyScanInfoResponse.
+        r"""Gets the records of this ShowExpireKeyScanInfoResponse.
 
         记录
 
@@ -76,7 +76,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowExpireKeyScanInfoResponse.
+        r"""Sets the records of this ShowExpireKeyScanInfoResponse.
 
         记录
 
@@ -87,7 +87,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowExpireKeyScanInfoResponse.
+        r"""Gets the instance_id of this ShowExpireKeyScanInfoResponse.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowExpireKeyScanInfoResponse.
+        r"""Sets the instance_id of this ShowExpireKeyScanInfoResponse.
 
         实例ID
 
@@ -109,7 +109,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowExpireKeyScanInfoResponse.
+        r"""Gets the total of this ShowExpireKeyScanInfoResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowExpireKeyScanInfoResponse.
+        r"""Sets the total of this ShowExpireKeyScanInfoResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowExpireKeyScanInfoResponse.
+        r"""Gets the count of this ShowExpireKeyScanInfoResponse.
 
         统计
 
@@ -142,7 +142,7 @@ class ShowExpireKeyScanInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowExpireKeyScanInfoResponse.
+        r"""Sets the count of this ShowExpireKeyScanInfoResponse.
 
         统计
 

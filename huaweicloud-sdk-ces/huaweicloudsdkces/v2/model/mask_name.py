@@ -23,7 +23,7 @@ class MaskName:
     }
 
     def __init__(self):
-        """MaskName
+        r"""MaskName
 
         The model defined in huaweicloud sdk
 

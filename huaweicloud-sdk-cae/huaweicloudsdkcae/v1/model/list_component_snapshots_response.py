@@ -30,7 +30,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListComponentSnapshotsResponse
+        r"""ListComponentSnapshotsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListComponentSnapshotsResponse.
+        r"""Gets the api_version of this ListComponentSnapshotsResponse.
 
         :return: The api_version of this ListComponentSnapshotsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListComponentSnapshotsResponse.
+        r"""Sets the api_version of this ListComponentSnapshotsResponse.
 
         :param api_version: The api_version of this ListComponentSnapshotsResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListComponentSnapshotsResponse.
+        r"""Gets the kind of this ListComponentSnapshotsResponse.
 
         :return: The kind of this ListComponentSnapshotsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentSnapshotKindObj`
@@ -85,7 +85,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListComponentSnapshotsResponse.
+        r"""Sets the kind of this ListComponentSnapshotsResponse.
 
         :param kind: The kind of this ListComponentSnapshotsResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentSnapshotKindObj`
@@ -94,7 +94,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListComponentSnapshotsResponse.
+        r"""Gets the items of this ListComponentSnapshotsResponse.
 
         快照列表。
 
@@ -105,7 +105,7 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListComponentSnapshotsResponse.
+        r"""Sets the items of this ListComponentSnapshotsResponse.
 
         快照列表。
 

@@ -29,7 +29,7 @@ class AssociateServerVirtualIpOption:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, reverse_binding=None):
-        """AssociateServerVirtualIpOption
+        r"""AssociateServerVirtualIpOption
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AssociateServerVirtualIpOption:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AssociateServerVirtualIpOption.
+        r"""Gets the subnet_id of this AssociateServerVirtualIpOption.
 
         网卡的子网ID。
 
@@ -66,7 +66,7 @@ class AssociateServerVirtualIpOption:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AssociateServerVirtualIpOption.
+        r"""Sets the subnet_id of this AssociateServerVirtualIpOption.
 
         网卡的子网ID。
 
@@ -77,7 +77,7 @@ class AssociateServerVirtualIpOption:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AssociateServerVirtualIpOption.
+        r"""Gets the ip_address of this AssociateServerVirtualIpOption.
 
         网卡即将配置的私有IP的地址。
 
@@ -88,7 +88,7 @@ class AssociateServerVirtualIpOption:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AssociateServerVirtualIpOption.
+        r"""Sets the ip_address of this AssociateServerVirtualIpOption.
 
         网卡即将配置的私有IP的地址。
 
@@ -99,7 +99,7 @@ class AssociateServerVirtualIpOption:
 
     @property
     def reverse_binding(self):
-        """Gets the reverse_binding of this AssociateServerVirtualIpOption.
+        r"""Gets the reverse_binding of this AssociateServerVirtualIpOption.
 
         私有IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
 
@@ -110,7 +110,7 @@ class AssociateServerVirtualIpOption:
 
     @reverse_binding.setter
     def reverse_binding(self, reverse_binding):
-        """Sets the reverse_binding of this AssociateServerVirtualIpOption.
+        r"""Sets the reverse_binding of this AssociateServerVirtualIpOption.
 
         私有IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
 

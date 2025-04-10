@@ -27,7 +27,7 @@ class UpdateRedirectPoolsStickySessionConfig:
     }
 
     def __init__(self, enable=None, timeout=None):
-        """UpdateRedirectPoolsStickySessionConfig
+        r"""UpdateRedirectPoolsStickySessionConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateRedirectPoolsStickySessionConfig:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateRedirectPoolsStickySessionConfig.
+        r"""Gets the enable of this UpdateRedirectPoolsStickySessionConfig.
 
         参数解释：转发策略主机组会话保持开启的开关。  默认取值：false，表示关闭主机组会话保持。
 
@@ -61,7 +61,7 @@ class UpdateRedirectPoolsStickySessionConfig:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateRedirectPoolsStickySessionConfig.
+        r"""Sets the enable of this UpdateRedirectPoolsStickySessionConfig.
 
         参数解释：转发策略主机组会话保持开启的开关。  默认取值：false，表示关闭主机组会话保持。
 
@@ -72,7 +72,7 @@ class UpdateRedirectPoolsStickySessionConfig:
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateRedirectPoolsStickySessionConfig.
+        r"""Gets the timeout of this UpdateRedirectPoolsStickySessionConfig.
 
         参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
 
@@ -83,7 +83,7 @@ class UpdateRedirectPoolsStickySessionConfig:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateRedirectPoolsStickySessionConfig.
+        r"""Sets the timeout of this UpdateRedirectPoolsStickySessionConfig.
 
         参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
 

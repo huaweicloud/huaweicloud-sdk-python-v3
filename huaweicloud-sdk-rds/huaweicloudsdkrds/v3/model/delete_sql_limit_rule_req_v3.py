@@ -27,7 +27,7 @@ class DeleteSqlLimitRuleReqV3:
     }
 
     def __init__(self, db_name=None, id=None):
-        """DeleteSqlLimitRuleReqV3
+        r"""DeleteSqlLimitRuleReqV3
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSqlLimitRuleReqV3:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeleteSqlLimitRuleReqV3.
+        r"""Gets the db_name of this DeleteSqlLimitRuleReqV3.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class DeleteSqlLimitRuleReqV3:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeleteSqlLimitRuleReqV3.
+        r"""Sets the db_name of this DeleteSqlLimitRuleReqV3.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class DeleteSqlLimitRuleReqV3:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSqlLimitRuleReqV3.
+        r"""Gets the id of this DeleteSqlLimitRuleReqV3.
 
         SQL限流ID。
 
@@ -81,7 +81,7 @@ class DeleteSqlLimitRuleReqV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSqlLimitRuleReqV3.
+        r"""Sets the id of this DeleteSqlLimitRuleReqV3.
 
         SQL限流ID。
 

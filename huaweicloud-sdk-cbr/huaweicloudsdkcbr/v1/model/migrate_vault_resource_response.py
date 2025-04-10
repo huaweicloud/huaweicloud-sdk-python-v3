@@ -26,7 +26,7 @@ class MigrateVaultResourceResponse(SdkResponse):
     }
 
     def __init__(self, migrated_resources=None):
-        """MigrateVaultResourceResponse
+        r"""MigrateVaultResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class MigrateVaultResourceResponse(SdkResponse):
 
     @property
     def migrated_resources(self):
-        """Gets the migrated_resources of this MigrateVaultResourceResponse.
+        r"""Gets the migrated_resources of this MigrateVaultResourceResponse.
 
         
 
@@ -55,7 +55,7 @@ class MigrateVaultResourceResponse(SdkResponse):
 
     @migrated_resources.setter
     def migrated_resources(self, migrated_resources):
-        """Sets the migrated_resources of this MigrateVaultResourceResponse.
+        r"""Sets the migrated_resources of this MigrateVaultResourceResponse.
 
         
 

@@ -31,7 +31,7 @@ class NeutronCreateFirewallPolicyOption:
     }
 
     def __init__(self, audited=None, description=None, firewall_rules=None, name=None):
-        """NeutronCreateFirewallPolicyOption
+        r"""NeutronCreateFirewallPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @property
     def audited(self):
-        """Gets the audited of this NeutronCreateFirewallPolicyOption.
+        r"""Gets the audited of this NeutronCreateFirewallPolicyOption.
 
         审计标记。
 
@@ -75,7 +75,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @audited.setter
     def audited(self, audited):
-        """Sets the audited of this NeutronCreateFirewallPolicyOption.
+        r"""Sets the audited of this NeutronCreateFirewallPolicyOption.
 
         审计标记。
 
@@ -86,7 +86,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronCreateFirewallPolicyOption.
+        r"""Gets the description of this NeutronCreateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
 
@@ -97,7 +97,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronCreateFirewallPolicyOption.
+        r"""Sets the description of this NeutronCreateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略描述 取值范围：最长255个字符
 
@@ -108,7 +108,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @property
     def firewall_rules(self):
-        """Gets the firewall_rules of this NeutronCreateFirewallPolicyOption.
+        r"""Gets the firewall_rules of this NeutronCreateFirewallPolicyOption.
 
         策略引用的网络ACL防火墙规则链。
 
@@ -119,7 +119,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @firewall_rules.setter
     def firewall_rules(self, firewall_rules):
-        """Sets the firewall_rules of this NeutronCreateFirewallPolicyOption.
+        r"""Sets the firewall_rules of this NeutronCreateFirewallPolicyOption.
 
         策略引用的网络ACL防火墙规则链。
 
@@ -130,7 +130,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreateFirewallPolicyOption.
+        r"""Gets the name of this NeutronCreateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
 
@@ -141,7 +141,7 @@ class NeutronCreateFirewallPolicyOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreateFirewallPolicyOption.
+        r"""Sets the name of this NeutronCreateFirewallPolicyOption.
 
         功能说明：网络ACL防火墙策略名称 取值范围：最长255个字符
 

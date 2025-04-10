@@ -51,7 +51,7 @@ class ListGeipPoolsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, code=None, access_site=None, isp=None, ip_version=None, status=None, type=None):
-        """ListGeipPoolsRequest
+        r"""ListGeipPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListGeipPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGeipPoolsRequest.
+        r"""Gets the limit of this ListGeipPoolsRequest.
 
         每页条数
 
@@ -145,7 +145,7 @@ class ListGeipPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGeipPoolsRequest.
+        r"""Sets the limit of this ListGeipPoolsRequest.
 
         每页条数
 
@@ -156,7 +156,7 @@ class ListGeipPoolsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGeipPoolsRequest.
+        r"""Gets the offset of this ListGeipPoolsRequest.
 
         分页起始点
 
@@ -167,7 +167,7 @@ class ListGeipPoolsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGeipPoolsRequest.
+        r"""Sets the offset of this ListGeipPoolsRequest.
 
         分页起始点
 
@@ -178,7 +178,7 @@ class ListGeipPoolsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGeipPoolsRequest.
+        r"""Gets the marker of this ListGeipPoolsRequest.
 
         分页起始点
 
@@ -189,7 +189,7 @@ class ListGeipPoolsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGeipPoolsRequest.
+        r"""Sets the marker of this ListGeipPoolsRequest.
 
         分页起始点
 
@@ -200,7 +200,7 @@ class ListGeipPoolsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListGeipPoolsRequest.
+        r"""Gets the page_reverse of this ListGeipPoolsRequest.
 
         翻页方向
 
@@ -211,7 +211,7 @@ class ListGeipPoolsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListGeipPoolsRequest.
+        r"""Sets the page_reverse of this ListGeipPoolsRequest.
 
         翻页方向
 
@@ -222,7 +222,7 @@ class ListGeipPoolsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGeipPoolsRequest.
+        r"""Gets the fields of this ListGeipPoolsRequest.
 
         :return: The fields of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -231,7 +231,7 @@ class ListGeipPoolsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGeipPoolsRequest.
+        r"""Sets the fields of this ListGeipPoolsRequest.
 
         :param fields: The fields of this ListGeipPoolsRequest.
         :type fields: list[str]
@@ -240,7 +240,7 @@ class ListGeipPoolsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListGeipPoolsRequest.
+        r"""Gets the sort_key of this ListGeipPoolsRequest.
 
         按照sort_key指定的字段排序
 
@@ -251,7 +251,7 @@ class ListGeipPoolsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListGeipPoolsRequest.
+        r"""Sets the sort_key of this ListGeipPoolsRequest.
 
         按照sort_key指定的字段排序
 
@@ -262,7 +262,7 @@ class ListGeipPoolsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListGeipPoolsRequest.
+        r"""Gets the sort_dir of this ListGeipPoolsRequest.
 
         排序的方向，倒序或者正序
 
@@ -273,7 +273,7 @@ class ListGeipPoolsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListGeipPoolsRequest.
+        r"""Sets the sort_dir of this ListGeipPoolsRequest.
 
         排序的方向，倒序或者正序
 
@@ -284,7 +284,7 @@ class ListGeipPoolsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGeipPoolsRequest.
+        r"""Gets the id of this ListGeipPoolsRequest.
 
         :return: The id of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -293,7 +293,7 @@ class ListGeipPoolsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGeipPoolsRequest.
+        r"""Sets the id of this ListGeipPoolsRequest.
 
         :param id: The id of this ListGeipPoolsRequest.
         :type id: list[str]
@@ -302,7 +302,7 @@ class ListGeipPoolsRequest:
 
     @property
     def code(self):
-        """Gets the code of this ListGeipPoolsRequest.
+        r"""Gets the code of this ListGeipPoolsRequest.
 
         :return: The code of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -311,7 +311,7 @@ class ListGeipPoolsRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListGeipPoolsRequest.
+        r"""Sets the code of this ListGeipPoolsRequest.
 
         :param code: The code of this ListGeipPoolsRequest.
         :type code: list[str]
@@ -320,7 +320,7 @@ class ListGeipPoolsRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListGeipPoolsRequest.
+        r"""Gets the access_site of this ListGeipPoolsRequest.
 
         :return: The access_site of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -329,7 +329,7 @@ class ListGeipPoolsRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListGeipPoolsRequest.
+        r"""Sets the access_site of this ListGeipPoolsRequest.
 
         :param access_site: The access_site of this ListGeipPoolsRequest.
         :type access_site: list[str]
@@ -338,7 +338,7 @@ class ListGeipPoolsRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListGeipPoolsRequest.
+        r"""Gets the isp of this ListGeipPoolsRequest.
 
         :return: The isp of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -347,7 +347,7 @@ class ListGeipPoolsRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListGeipPoolsRequest.
+        r"""Sets the isp of this ListGeipPoolsRequest.
 
         :param isp: The isp of this ListGeipPoolsRequest.
         :type isp: list[str]
@@ -356,7 +356,7 @@ class ListGeipPoolsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListGeipPoolsRequest.
+        r"""Gets the ip_version of this ListGeipPoolsRequest.
 
         :return: The ip_version of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -365,7 +365,7 @@ class ListGeipPoolsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListGeipPoolsRequest.
+        r"""Sets the ip_version of this ListGeipPoolsRequest.
 
         :param ip_version: The ip_version of this ListGeipPoolsRequest.
         :type ip_version: list[str]
@@ -374,7 +374,7 @@ class ListGeipPoolsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListGeipPoolsRequest.
+        r"""Gets the status of this ListGeipPoolsRequest.
 
         :return: The status of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -383,7 +383,7 @@ class ListGeipPoolsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGeipPoolsRequest.
+        r"""Sets the status of this ListGeipPoolsRequest.
 
         :param status: The status of this ListGeipPoolsRequest.
         :type status: list[str]
@@ -392,7 +392,7 @@ class ListGeipPoolsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListGeipPoolsRequest.
+        r"""Gets the type of this ListGeipPoolsRequest.
 
         :return: The type of this ListGeipPoolsRequest.
         :rtype: list[str]
@@ -401,7 +401,7 @@ class ListGeipPoolsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListGeipPoolsRequest.
+        r"""Sets the type of this ListGeipPoolsRequest.
 
         :param type: The type of this ListGeipPoolsRequest.
         :type type: list[str]

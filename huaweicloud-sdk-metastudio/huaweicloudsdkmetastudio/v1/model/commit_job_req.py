@@ -41,7 +41,7 @@ class CommitJobReq:
     }
 
     def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, phone=None, app_user_id=None, output_language=None, custom_text=None):
-        """CommitJobReq
+        r"""CommitJobReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CommitJobReq:
 
     @property
     def tag(self):
-        """Gets the tag of this CommitJobReq.
+        r"""Gets the tag of this CommitJobReq.
 
         :return: The tag of this CommitJobReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.JobTag`
@@ -108,7 +108,7 @@ class CommitJobReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CommitJobReq.
+        r"""Sets the tag of this CommitJobReq.
 
         :param tag: The tag of this CommitJobReq.
         :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
@@ -117,7 +117,7 @@ class CommitJobReq:
 
     @property
     def description(self):
-        """Gets the description of this CommitJobReq.
+        r"""Gets the description of this CommitJobReq.
 
         一段描述信息,会呈现在资产库中。
 
@@ -128,7 +128,7 @@ class CommitJobReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CommitJobReq.
+        r"""Sets the description of this CommitJobReq.
 
         一段描述信息,会呈现在资产库中。
 
@@ -139,7 +139,7 @@ class CommitJobReq:
 
     @property
     def sex(self):
-        """Gets the sex of this CommitJobReq.
+        r"""Gets the sex of this CommitJobReq.
 
         语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
 
@@ -150,7 +150,7 @@ class CommitJobReq:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this CommitJobReq.
+        r"""Sets the sex of this CommitJobReq.
 
         语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
 
@@ -161,7 +161,7 @@ class CommitJobReq:
 
     @property
     def voice_name(self):
-        """Gets the voice_name of this CommitJobReq.
+        r"""Gets the voice_name of this CommitJobReq.
 
         音色名称。该名称会作为资产库中音色模型资产名称。
 
@@ -172,7 +172,7 @@ class CommitJobReq:
 
     @voice_name.setter
     def voice_name(self, voice_name):
-        """Sets the voice_name of this CommitJobReq.
+        r"""Sets the voice_name of this CommitJobReq.
 
         音色名称。该名称会作为资产库中音色模型资产名称。
 
@@ -183,7 +183,7 @@ class CommitJobReq:
 
     @property
     def language(self):
-        """Gets the language of this CommitJobReq.
+        r"""Gets the language of this CommitJobReq.
 
         训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
 
@@ -194,7 +194,7 @@ class CommitJobReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CommitJobReq.
+        r"""Sets the language of this CommitJobReq.
 
         训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
 
@@ -205,7 +205,7 @@ class CommitJobReq:
 
     @property
     def phone(self):
-        """Gets the phone of this CommitJobReq.
+        r"""Gets the phone of this CommitJobReq.
 
         手机号
 
@@ -216,7 +216,7 @@ class CommitJobReq:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CommitJobReq.
+        r"""Sets the phone of this CommitJobReq.
 
         手机号
 
@@ -227,7 +227,7 @@ class CommitJobReq:
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this CommitJobReq.
+        r"""Gets the app_user_id of this CommitJobReq.
 
         第三方用户id
 
@@ -238,7 +238,7 @@ class CommitJobReq:
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this CommitJobReq.
+        r"""Sets the app_user_id of this CommitJobReq.
 
         第三方用户id
 
@@ -249,7 +249,7 @@ class CommitJobReq:
 
     @property
     def output_language(self):
-        """Gets the output_language of this CommitJobReq.
+        r"""Gets the output_language of this CommitJobReq.
 
         模型输出语言类型
 
@@ -260,7 +260,7 @@ class CommitJobReq:
 
     @output_language.setter
     def output_language(self, output_language):
-        """Sets the output_language of this CommitJobReq.
+        r"""Sets the output_language of this CommitJobReq.
 
         模型输出语言类型
 
@@ -271,7 +271,7 @@ class CommitJobReq:
 
     @property
     def custom_text(self):
-        """Gets the custom_text of this CommitJobReq.
+        r"""Gets the custom_text of this CommitJobReq.
 
         自定义试听文本
 
@@ -282,7 +282,7 @@ class CommitJobReq:
 
     @custom_text.setter
     def custom_text(self, custom_text):
-        """Sets the custom_text of this CommitJobReq.
+        r"""Sets the custom_text of this CommitJobReq.
 
         自定义试听文本
 

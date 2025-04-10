@@ -29,7 +29,7 @@ class UpdateObsTargetAttributesRequest:
     }
 
     def __init__(self, share_id=None, target_id=None, body=None):
-        """UpdateObsTargetAttributesRequest
+        r"""UpdateObsTargetAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateObsTargetAttributesRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this UpdateObsTargetAttributesRequest.
+        r"""Gets the share_id of this UpdateObsTargetAttributesRequest.
 
         文件系统id
 
@@ -66,7 +66,7 @@ class UpdateObsTargetAttributesRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this UpdateObsTargetAttributesRequest.
+        r"""Sets the share_id of this UpdateObsTargetAttributesRequest.
 
         文件系统id
 
@@ -77,7 +77,7 @@ class UpdateObsTargetAttributesRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this UpdateObsTargetAttributesRequest.
+        r"""Gets the target_id of this UpdateObsTargetAttributesRequest.
 
         绑定关系id
 
@@ -88,7 +88,7 @@ class UpdateObsTargetAttributesRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this UpdateObsTargetAttributesRequest.
+        r"""Sets the target_id of this UpdateObsTargetAttributesRequest.
 
         绑定关系id
 
@@ -99,7 +99,7 @@ class UpdateObsTargetAttributesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateObsTargetAttributesRequest.
+        r"""Gets the body of this UpdateObsTargetAttributesRequest.
 
         :return: The body of this UpdateObsTargetAttributesRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetAttributesRequestBody`
@@ -108,7 +108,7 @@ class UpdateObsTargetAttributesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateObsTargetAttributesRequest.
+        r"""Sets the body of this UpdateObsTargetAttributesRequest.
 
         :param body: The body of this UpdateObsTargetAttributesRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetAttributesRequestBody`

@@ -29,7 +29,7 @@ class DeleteStarRocksDatabaseUserRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, x_language=None):
-        """DeleteStarRocksDatabaseUserRequest
+        r"""DeleteStarRocksDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteStarRocksDatabaseUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteStarRocksDatabaseUserRequest.
+        r"""Gets the instance_id of this DeleteStarRocksDatabaseUserRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class DeleteStarRocksDatabaseUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteStarRocksDatabaseUserRequest.
+        r"""Sets the instance_id of this DeleteStarRocksDatabaseUserRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class DeleteStarRocksDatabaseUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DeleteStarRocksDatabaseUserRequest.
+        r"""Gets the user_name of this DeleteStarRocksDatabaseUserRequest.
 
         数据库账户名。
 
@@ -88,7 +88,7 @@ class DeleteStarRocksDatabaseUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DeleteStarRocksDatabaseUserRequest.
+        r"""Sets the user_name of this DeleteStarRocksDatabaseUserRequest.
 
         数据库账户名。
 
@@ -99,7 +99,7 @@ class DeleteStarRocksDatabaseUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteStarRocksDatabaseUserRequest.
+        r"""Gets the x_language of this DeleteStarRocksDatabaseUserRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class DeleteStarRocksDatabaseUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteStarRocksDatabaseUserRequest.
+        r"""Sets the x_language of this DeleteStarRocksDatabaseUserRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

@@ -27,7 +27,7 @@ class CompressRules:
     }
 
     def __init__(self, compress_type=None, compress_file_type=None):
-        """CompressRules
+        r"""CompressRules
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CompressRules:
 
     @property
     def compress_type(self):
-        """Gets the compress_type of this CompressRules.
+        r"""Gets the compress_type of this CompressRules.
 
         GZIP压缩类型（目前只支持 gzip）
 
@@ -61,7 +61,7 @@ class CompressRules:
 
     @compress_type.setter
     def compress_type(self, compress_type):
-        """Sets the compress_type of this CompressRules.
+        r"""Sets the compress_type of this CompressRules.
 
         GZIP压缩类型（目前只支持 gzip）
 
@@ -72,7 +72,7 @@ class CompressRules:
 
     @property
     def compress_file_type(self):
-        """Gets the compress_file_type of this CompressRules.
+        r"""Gets the compress_file_type of this CompressRules.
 
         GZIP压缩文件类型（文件后缀竖线分割，如：.js|.html|.css|.xml）
 
@@ -83,7 +83,7 @@ class CompressRules:
 
     @compress_file_type.setter
     def compress_file_type(self, compress_file_type):
-        """Sets the compress_file_type of this CompressRules.
+        r"""Sets the compress_file_type of this CompressRules.
 
         GZIP压缩文件类型（文件后缀竖线分割，如：.js|.html|.css|.xml）
 

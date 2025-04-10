@@ -37,7 +37,7 @@ class MigrationRocketMqTopicConfig:
     }
 
     def __init__(self, topic_name=None, order=None, perm=None, read_queue_nums=None, write_queue_nums=None, topic_filter_type=None, topic_sys_flag=None):
-        """MigrationRocketMqTopicConfig
+        r"""MigrationRocketMqTopicConfig
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this MigrationRocketMqTopicConfig.
+        r"""Gets the topic_name of this MigrationRocketMqTopicConfig.
 
         Topic名称。
 
@@ -96,7 +96,7 @@ class MigrationRocketMqTopicConfig:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this MigrationRocketMqTopicConfig.
+        r"""Sets the topic_name of this MigrationRocketMqTopicConfig.
 
         Topic名称。
 
@@ -107,7 +107,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def order(self):
-        """Gets the order of this MigrationRocketMqTopicConfig.
+        r"""Gets the order of this MigrationRocketMqTopicConfig.
 
         是否有序消息。
 
@@ -118,7 +118,7 @@ class MigrationRocketMqTopicConfig:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this MigrationRocketMqTopicConfig.
+        r"""Sets the order of this MigrationRocketMqTopicConfig.
 
         是否有序消息。
 
@@ -129,7 +129,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def perm(self):
-        """Gets the perm of this MigrationRocketMqTopicConfig.
+        r"""Gets the perm of this MigrationRocketMqTopicConfig.
 
         Topic权限。
 
@@ -140,7 +140,7 @@ class MigrationRocketMqTopicConfig:
 
     @perm.setter
     def perm(self, perm):
-        """Sets the perm of this MigrationRocketMqTopicConfig.
+        r"""Sets the perm of this MigrationRocketMqTopicConfig.
 
         Topic权限。
 
@@ -151,7 +151,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def read_queue_nums(self):
-        """Gets the read_queue_nums of this MigrationRocketMqTopicConfig.
+        r"""Gets the read_queue_nums of this MigrationRocketMqTopicConfig.
 
         读队列个数。
 
@@ -162,7 +162,7 @@ class MigrationRocketMqTopicConfig:
 
     @read_queue_nums.setter
     def read_queue_nums(self, read_queue_nums):
-        """Sets the read_queue_nums of this MigrationRocketMqTopicConfig.
+        r"""Sets the read_queue_nums of this MigrationRocketMqTopicConfig.
 
         读队列个数。
 
@@ -173,7 +173,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def write_queue_nums(self):
-        """Gets the write_queue_nums of this MigrationRocketMqTopicConfig.
+        r"""Gets the write_queue_nums of this MigrationRocketMqTopicConfig.
 
         写队列个数。
 
@@ -184,7 +184,7 @@ class MigrationRocketMqTopicConfig:
 
     @write_queue_nums.setter
     def write_queue_nums(self, write_queue_nums):
-        """Sets the write_queue_nums of this MigrationRocketMqTopicConfig.
+        r"""Sets the write_queue_nums of this MigrationRocketMqTopicConfig.
 
         写队列个数。
 
@@ -195,7 +195,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def topic_filter_type(self):
-        """Gets the topic_filter_type of this MigrationRocketMqTopicConfig.
+        r"""Gets the topic_filter_type of this MigrationRocketMqTopicConfig.
 
         Topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
 
@@ -206,7 +206,7 @@ class MigrationRocketMqTopicConfig:
 
     @topic_filter_type.setter
     def topic_filter_type(self, topic_filter_type):
-        """Sets the topic_filter_type of this MigrationRocketMqTopicConfig.
+        r"""Sets the topic_filter_type of this MigrationRocketMqTopicConfig.
 
         Topic过滤类型。   - SINGLE_TAG：单标签   - MULTI_TAG：多标签
 
@@ -217,7 +217,7 @@ class MigrationRocketMqTopicConfig:
 
     @property
     def topic_sys_flag(self):
-        """Gets the topic_sys_flag of this MigrationRocketMqTopicConfig.
+        r"""Gets the topic_sys_flag of this MigrationRocketMqTopicConfig.
 
         Topic系统标志位。
 
@@ -228,7 +228,7 @@ class MigrationRocketMqTopicConfig:
 
     @topic_sys_flag.setter
     def topic_sys_flag(self, topic_sys_flag):
-        """Sets the topic_sys_flag of this MigrationRocketMqTopicConfig.
+        r"""Sets the topic_sys_flag of this MigrationRocketMqTopicConfig.
 
         Topic系统标志位。
 

@@ -27,7 +27,7 @@ class AddAuditDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddAuditDatabaseRequest
+        r"""AddAuditDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddAuditDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddAuditDatabaseRequest.
+        r"""Gets the instance_id of this AddAuditDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class AddAuditDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddAuditDatabaseRequest.
+        r"""Sets the instance_id of this AddAuditDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class AddAuditDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAuditDatabaseRequest.
+        r"""Gets the body of this AddAuditDatabaseRequest.
 
         :return: The body of this AddAuditDatabaseRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.CreateDatabaseRequest`
@@ -80,7 +80,7 @@ class AddAuditDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAuditDatabaseRequest.
+        r"""Sets the body of this AddAuditDatabaseRequest.
 
         :param body: The body of this AddAuditDatabaseRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.CreateDatabaseRequest`

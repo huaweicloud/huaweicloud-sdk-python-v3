@@ -41,7 +41,7 @@ class ClassroomMember:
     }
 
     def __init__(self, member_id=None, name=None, number=None, class_name=None, user_name=None, join_time=None, job_received_count=None, job_finished_count=None, job_finished_rate=None):
-        """ClassroomMember
+        r"""ClassroomMember
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ClassroomMember:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ClassroomMember.
+        r"""Gets the member_id of this ClassroomMember.
 
         成员ID
 
@@ -101,7 +101,7 @@ class ClassroomMember:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ClassroomMember.
+        r"""Sets the member_id of this ClassroomMember.
 
         成员ID
 
@@ -112,7 +112,7 @@ class ClassroomMember:
 
     @property
     def name(self):
-        """Gets the name of this ClassroomMember.
+        r"""Gets the name of this ClassroomMember.
 
         成员名称
 
@@ -123,7 +123,7 @@ class ClassroomMember:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClassroomMember.
+        r"""Sets the name of this ClassroomMember.
 
         成员名称
 
@@ -134,7 +134,7 @@ class ClassroomMember:
 
     @property
     def number(self):
-        """Gets the number of this ClassroomMember.
+        r"""Gets the number of this ClassroomMember.
 
         成员学号/工号
 
@@ -145,7 +145,7 @@ class ClassroomMember:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ClassroomMember.
+        r"""Sets the number of this ClassroomMember.
 
         成员学号/工号
 
@@ -156,7 +156,7 @@ class ClassroomMember:
 
     @property
     def class_name(self):
-        """Gets the class_name of this ClassroomMember.
+        r"""Gets the class_name of this ClassroomMember.
 
         成员所在班级的名字
 
@@ -167,7 +167,7 @@ class ClassroomMember:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this ClassroomMember.
+        r"""Sets the class_name of this ClassroomMember.
 
         成员所在班级的名字
 
@@ -178,7 +178,7 @@ class ClassroomMember:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ClassroomMember.
+        r"""Gets the user_name of this ClassroomMember.
 
         成员用户名
 
@@ -189,7 +189,7 @@ class ClassroomMember:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ClassroomMember.
+        r"""Sets the user_name of this ClassroomMember.
 
         成员用户名
 
@@ -200,7 +200,7 @@ class ClassroomMember:
 
     @property
     def join_time(self):
-        """Gets the join_time of this ClassroomMember.
+        r"""Gets the join_time of this ClassroomMember.
 
         成员加入课堂时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -211,7 +211,7 @@ class ClassroomMember:
 
     @join_time.setter
     def join_time(self, join_time):
-        """Sets the join_time of this ClassroomMember.
+        r"""Sets the join_time of this ClassroomMember.
 
         成员加入课堂时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -222,7 +222,7 @@ class ClassroomMember:
 
     @property
     def job_received_count(self):
-        """Gets the job_received_count of this ClassroomMember.
+        r"""Gets the job_received_count of this ClassroomMember.
 
         该成员已接收到的作业数量
 
@@ -233,7 +233,7 @@ class ClassroomMember:
 
     @job_received_count.setter
     def job_received_count(self, job_received_count):
-        """Sets the job_received_count of this ClassroomMember.
+        r"""Sets the job_received_count of this ClassroomMember.
 
         该成员已接收到的作业数量
 
@@ -244,7 +244,7 @@ class ClassroomMember:
 
     @property
     def job_finished_count(self):
-        """Gets the job_finished_count of this ClassroomMember.
+        r"""Gets the job_finished_count of this ClassroomMember.
 
         该成员已完成的作业数量
 
@@ -255,7 +255,7 @@ class ClassroomMember:
 
     @job_finished_count.setter
     def job_finished_count(self, job_finished_count):
-        """Sets the job_finished_count of this ClassroomMember.
+        r"""Sets the job_finished_count of this ClassroomMember.
 
         该成员已完成的作业数量
 
@@ -266,7 +266,7 @@ class ClassroomMember:
 
     @property
     def job_finished_rate(self):
-        """Gets the job_finished_rate of this ClassroomMember.
+        r"""Gets the job_finished_rate of this ClassroomMember.
 
         该成员作业完成率
 
@@ -277,7 +277,7 @@ class ClassroomMember:
 
     @job_finished_rate.setter
     def job_finished_rate(self, job_finished_rate):
-        """Sets the job_finished_rate of this ClassroomMember.
+        r"""Sets the job_finished_rate of this ClassroomMember.
 
         该成员作业完成率
 

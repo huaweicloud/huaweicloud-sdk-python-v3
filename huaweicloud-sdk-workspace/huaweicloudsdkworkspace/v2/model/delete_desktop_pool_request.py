@@ -25,7 +25,7 @@ class DeleteDesktopPoolRequest:
     }
 
     def __init__(self, pool_id=None):
-        """DeleteDesktopPoolRequest
+        r"""DeleteDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDesktopPoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this DeleteDesktopPoolRequest.
+        r"""Gets the pool_id of this DeleteDesktopPoolRequest.
 
         桌面池ID。
 
@@ -53,7 +53,7 @@ class DeleteDesktopPoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this DeleteDesktopPoolRequest.
+        r"""Sets the pool_id of this DeleteDesktopPoolRequest.
 
         桌面池ID。
 

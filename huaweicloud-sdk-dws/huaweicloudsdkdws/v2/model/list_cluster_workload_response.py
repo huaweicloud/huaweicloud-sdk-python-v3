@@ -30,7 +30,7 @@ class ListClusterWorkloadResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, workload_status=None):
-        """ListClusterWorkloadResponse
+        r"""ListClusterWorkloadResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClusterWorkloadResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ListClusterWorkloadResponse.
+        r"""Gets the workload_res_code of this ListClusterWorkloadResponse.
 
         结果状态码。
 
@@ -69,7 +69,7 @@ class ListClusterWorkloadResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ListClusterWorkloadResponse.
+        r"""Sets the workload_res_code of this ListClusterWorkloadResponse.
 
         结果状态码。
 
@@ -80,7 +80,7 @@ class ListClusterWorkloadResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ListClusterWorkloadResponse.
+        r"""Gets the workload_res_str of this ListClusterWorkloadResponse.
 
         结果描述。
 
@@ -91,7 +91,7 @@ class ListClusterWorkloadResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ListClusterWorkloadResponse.
+        r"""Sets the workload_res_str of this ListClusterWorkloadResponse.
 
         结果描述。
 
@@ -102,7 +102,7 @@ class ListClusterWorkloadResponse(SdkResponse):
 
     @property
     def workload_status(self):
-        """Gets the workload_status of this ListClusterWorkloadResponse.
+        r"""Gets the workload_status of this ListClusterWorkloadResponse.
 
         :return: The workload_status of this ListClusterWorkloadResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadStatus`
@@ -111,7 +111,7 @@ class ListClusterWorkloadResponse(SdkResponse):
 
     @workload_status.setter
     def workload_status(self, workload_status):
-        """Sets the workload_status of this ListClusterWorkloadResponse.
+        r"""Sets the workload_status of this ListClusterWorkloadResponse.
 
         :param workload_status: The workload_status of this ListClusterWorkloadResponse.
         :type workload_status: :class:`huaweicloudsdkdws.v2.WorkloadStatus`

@@ -39,7 +39,7 @@ class Partition:
     }
 
     def __init__(self, partition_name=None, create_time=None, last_access_time=None, locations=None, last_ddl_time=None, num_rows=None, num_files=None, total_size=None):
-        """Partition
+        r"""Partition
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class Partition:
 
     @property
     def partition_name(self):
-        """Gets the partition_name of this Partition.
+        r"""Gets the partition_name of this Partition.
 
         分区名
 
@@ -100,7 +100,7 @@ class Partition:
 
     @partition_name.setter
     def partition_name(self, partition_name):
-        """Sets the partition_name of this Partition.
+        r"""Sets the partition_name of this Partition.
 
         分区名
 
@@ -111,7 +111,7 @@ class Partition:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Partition.
+        r"""Gets the create_time of this Partition.
 
         创建时间
 
@@ -122,7 +122,7 @@ class Partition:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Partition.
+        r"""Sets the create_time of this Partition.
 
         创建时间
 
@@ -133,7 +133,7 @@ class Partition:
 
     @property
     def last_access_time(self):
-        """Gets the last_access_time of this Partition.
+        r"""Gets the last_access_time of this Partition.
 
         最后改动时间
 
@@ -144,7 +144,7 @@ class Partition:
 
     @last_access_time.setter
     def last_access_time(self, last_access_time):
-        """Sets the last_access_time of this Partition.
+        r"""Sets the last_access_time of this Partition.
 
         最后改动时间
 
@@ -155,7 +155,7 @@ class Partition:
 
     @property
     def locations(self):
-        """Gets the locations of this Partition.
+        r"""Gets the locations of this Partition.
 
         路径，外表显示，内表不显示
 
@@ -166,7 +166,7 @@ class Partition:
 
     @locations.setter
     def locations(self, locations):
-        """Sets the locations of this Partition.
+        r"""Sets the locations of this Partition.
 
         路径，外表显示，内表不显示
 
@@ -177,7 +177,7 @@ class Partition:
 
     @property
     def last_ddl_time(self):
-        """Gets the last_ddl_time of this Partition.
+        r"""Gets the last_ddl_time of this Partition.
 
         最后一个ddl语句执行时间，时间戳单位：秒
 
@@ -188,7 +188,7 @@ class Partition:
 
     @last_ddl_time.setter
     def last_ddl_time(self, last_ddl_time):
-        """Sets the last_ddl_time of this Partition.
+        r"""Sets the last_ddl_time of this Partition.
 
         最后一个ddl语句执行时间，时间戳单位：秒
 
@@ -199,7 +199,7 @@ class Partition:
 
     @property
     def num_rows(self):
-        """Gets the num_rows of this Partition.
+        r"""Gets the num_rows of this Partition.
 
         该分区数据总行数
 
@@ -210,7 +210,7 @@ class Partition:
 
     @num_rows.setter
     def num_rows(self, num_rows):
-        """Sets the num_rows of this Partition.
+        r"""Sets the num_rows of this Partition.
 
         该分区数据总行数
 
@@ -221,7 +221,7 @@ class Partition:
 
     @property
     def num_files(self):
-        """Gets the num_files of this Partition.
+        r"""Gets the num_files of this Partition.
 
         分区文件数
 
@@ -232,7 +232,7 @@ class Partition:
 
     @num_files.setter
     def num_files(self, num_files):
-        """Sets the num_files of this Partition.
+        r"""Sets the num_files of this Partition.
 
         分区文件数
 
@@ -243,7 +243,7 @@ class Partition:
 
     @property
     def total_size(self):
-        """Gets the total_size of this Partition.
+        r"""Gets the total_size of this Partition.
 
         该分区总的数据大小（单位：字节）
 
@@ -254,7 +254,7 @@ class Partition:
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this Partition.
+        r"""Sets the total_size of this Partition.
 
         该分区总的数据大小（单位：字节）
 

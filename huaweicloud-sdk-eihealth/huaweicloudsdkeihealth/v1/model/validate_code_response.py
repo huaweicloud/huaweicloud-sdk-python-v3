@@ -26,7 +26,7 @@ class ValidateCodeResponse(SdkResponse):
     }
 
     def __init__(self, ticket=None):
-        """ValidateCodeResponse
+        r"""ValidateCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateCodeResponse(SdkResponse):
 
     @property
     def ticket(self):
-        """Gets the ticket of this ValidateCodeResponse.
+        r"""Gets the ticket of this ValidateCodeResponse.
 
         预验证ticket
 
@@ -55,7 +55,7 @@ class ValidateCodeResponse(SdkResponse):
 
     @ticket.setter
     def ticket(self, ticket):
-        """Sets the ticket of this ValidateCodeResponse.
+        r"""Sets the ticket of this ValidateCodeResponse.
 
         预验证ticket
 

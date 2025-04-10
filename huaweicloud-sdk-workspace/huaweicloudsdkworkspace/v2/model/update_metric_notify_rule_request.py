@@ -27,7 +27,7 @@ class UpdateMetricNotifyRuleRequest:
     }
 
     def __init__(self, rule_id=None, body=None):
-        """UpdateMetricNotifyRuleRequest
+        r"""UpdateMetricNotifyRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMetricNotifyRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateMetricNotifyRuleRequest.
+        r"""Gets the rule_id of this UpdateMetricNotifyRuleRequest.
 
         通知规则ID
 
@@ -60,7 +60,7 @@ class UpdateMetricNotifyRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateMetricNotifyRuleRequest.
+        r"""Sets the rule_id of this UpdateMetricNotifyRuleRequest.
 
         通知规则ID
 
@@ -71,7 +71,7 @@ class UpdateMetricNotifyRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMetricNotifyRuleRequest.
+        r"""Gets the body of this UpdateMetricNotifyRuleRequest.
 
         :return: The body of this UpdateMetricNotifyRuleRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateMetricNotifyRuleReq`
@@ -80,7 +80,7 @@ class UpdateMetricNotifyRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMetricNotifyRuleRequest.
+        r"""Sets the body of this UpdateMetricNotifyRuleRequest.
 
         :param body: The body of this UpdateMetricNotifyRuleRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateMetricNotifyRuleReq`

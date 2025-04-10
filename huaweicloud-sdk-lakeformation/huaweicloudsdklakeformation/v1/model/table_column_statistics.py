@@ -27,7 +27,7 @@ class TableColumnStatistics:
     }
 
     def __init__(self, column_statistics_desc=None, column_statistics_objects=None):
-        """TableColumnStatistics
+        r"""TableColumnStatistics
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TableColumnStatistics:
 
     @property
     def column_statistics_desc(self):
-        """Gets the column_statistics_desc of this TableColumnStatistics.
+        r"""Gets the column_statistics_desc of this TableColumnStatistics.
 
         :return: The column_statistics_desc of this TableColumnStatistics.
         :rtype: :class:`huaweicloudsdklakeformation.v1.TableColumnStatisticsDescription`
@@ -57,7 +57,7 @@ class TableColumnStatistics:
 
     @column_statistics_desc.setter
     def column_statistics_desc(self, column_statistics_desc):
-        """Sets the column_statistics_desc of this TableColumnStatistics.
+        r"""Sets the column_statistics_desc of this TableColumnStatistics.
 
         :param column_statistics_desc: The column_statistics_desc of this TableColumnStatistics.
         :type column_statistics_desc: :class:`huaweicloudsdklakeformation.v1.TableColumnStatisticsDescription`
@@ -66,7 +66,7 @@ class TableColumnStatistics:
 
     @property
     def column_statistics_objects(self):
-        """Gets the column_statistics_objects of this TableColumnStatistics.
+        r"""Gets the column_statistics_objects of this TableColumnStatistics.
 
         列统计信息
 
@@ -77,7 +77,7 @@ class TableColumnStatistics:
 
     @column_statistics_objects.setter
     def column_statistics_objects(self, column_statistics_objects):
-        """Sets the column_statistics_objects of this TableColumnStatistics.
+        r"""Sets the column_statistics_objects of this TableColumnStatistics.
 
         列统计信息
 

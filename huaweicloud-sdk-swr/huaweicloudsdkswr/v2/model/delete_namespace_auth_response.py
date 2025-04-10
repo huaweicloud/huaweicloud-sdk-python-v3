@@ -24,7 +24,7 @@ class DeleteNamespaceAuthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteNamespaceAuthResponse
+        r"""DeleteNamespaceAuthResponse
 
         The model defined in huaweicloud sdk
 

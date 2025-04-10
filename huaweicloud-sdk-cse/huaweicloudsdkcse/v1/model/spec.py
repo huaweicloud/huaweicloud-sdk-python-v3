@@ -43,7 +43,7 @@ class Spec:
     }
 
     def __init__(self, id=None, engine_id=None, spec_type=None, cluster=None, cluster_id=None, cluster_nodes=None, flavor=None, region=None, version=None, extend_param=None):
-        """Spec
+        r"""Spec
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Spec:
 
     @property
     def id(self):
-        """Gets the id of this Spec.
+        r"""Gets the id of this Spec.
 
         微服务引擎CCE规格ID
 
@@ -117,7 +117,7 @@ class Spec:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Spec.
+        r"""Sets the id of this Spec.
 
         微服务引擎CCE规格ID
 
@@ -128,7 +128,7 @@ class Spec:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this Spec.
+        r"""Gets the engine_id of this Spec.
 
         微服务引擎ID
 
@@ -139,7 +139,7 @@ class Spec:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this Spec.
+        r"""Sets the engine_id of this Spec.
 
         微服务引擎ID
 
@@ -150,7 +150,7 @@ class Spec:
 
     @property
     def spec_type(self):
-        """Gets the spec_type of this Spec.
+        r"""Gets the spec_type of this Spec.
 
         微服务引擎的集群部署类型
 
@@ -161,7 +161,7 @@ class Spec:
 
     @spec_type.setter
     def spec_type(self, spec_type):
-        """Sets the spec_type of this Spec.
+        r"""Sets the spec_type of this Spec.
 
         微服务引擎的集群部署类型
 
@@ -172,7 +172,7 @@ class Spec:
 
     @property
     def cluster(self):
-        """Gets the cluster of this Spec.
+        r"""Gets the cluster of this Spec.
 
         微服务引擎的CCE集群信息，目前为null
 
@@ -183,7 +183,7 @@ class Spec:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this Spec.
+        r"""Sets the cluster of this Spec.
 
         微服务引擎的CCE集群信息，目前为null
 
@@ -194,7 +194,7 @@ class Spec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Spec.
+        r"""Gets the cluster_id of this Spec.
 
         微服务引擎的CCE集群ID
 
@@ -205,7 +205,7 @@ class Spec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Spec.
+        r"""Sets the cluster_id of this Spec.
 
         微服务引擎的CCE集群ID
 
@@ -216,7 +216,7 @@ class Spec:
 
     @property
     def cluster_nodes(self):
-        """Gets the cluster_nodes of this Spec.
+        r"""Gets the cluster_nodes of this Spec.
 
         :return: The cluster_nodes of this Spec.
         :rtype: :class:`huaweicloudsdkcse.v1.SpecClusterNode`
@@ -225,7 +225,7 @@ class Spec:
 
     @cluster_nodes.setter
     def cluster_nodes(self, cluster_nodes):
-        """Sets the cluster_nodes of this Spec.
+        r"""Sets the cluster_nodes of this Spec.
 
         :param cluster_nodes: The cluster_nodes of this Spec.
         :type cluster_nodes: :class:`huaweicloudsdkcse.v1.SpecClusterNode`
@@ -234,7 +234,7 @@ class Spec:
 
     @property
     def flavor(self):
-        """Gets the flavor of this Spec.
+        r"""Gets the flavor of this Spec.
 
         微服务引擎的CCE集群规格
 
@@ -245,7 +245,7 @@ class Spec:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this Spec.
+        r"""Sets the flavor of this Spec.
 
         微服务引擎的CCE集群规格
 
@@ -256,7 +256,7 @@ class Spec:
 
     @property
     def region(self):
-        """Gets the region of this Spec.
+        r"""Gets the region of this Spec.
 
         微服务引擎的CCE集群所在region
 
@@ -267,7 +267,7 @@ class Spec:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this Spec.
+        r"""Sets the region of this Spec.
 
         微服务引擎的CCE集群所在region
 
@@ -278,7 +278,7 @@ class Spec:
 
     @property
     def version(self):
-        """Gets the version of this Spec.
+        r"""Gets the version of this Spec.
 
         微服务引擎的CCE集群版本
 
@@ -289,7 +289,7 @@ class Spec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Spec.
+        r"""Sets the version of this Spec.
 
         微服务引擎的CCE集群版本
 
@@ -300,7 +300,7 @@ class Spec:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this Spec.
+        r"""Gets the extend_param of this Spec.
 
         微服务引擎的CCE集群附加参数
 
@@ -311,7 +311,7 @@ class Spec:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this Spec.
+        r"""Sets the extend_param of this Spec.
 
         微服务引擎的CCE集群附加参数
 

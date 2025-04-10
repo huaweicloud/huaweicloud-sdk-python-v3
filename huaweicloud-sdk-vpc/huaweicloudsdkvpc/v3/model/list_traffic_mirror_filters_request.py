@@ -37,7 +37,7 @@ class ListTrafficMirrorFiltersRequest:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, limit=None, marker=None):
-        """ListTrafficMirrorFiltersRequest
+        r"""ListTrafficMirrorFiltersRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the id of this ListTrafficMirrorFiltersRequest.
 
         使用ID过滤查询或排序
 
@@ -96,7 +96,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the id of this ListTrafficMirrorFiltersRequest.
 
         使用ID过滤查询或排序
 
@@ -107,7 +107,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the name of this ListTrafficMirrorFiltersRequest.
 
         使用name过滤或排序
 
@@ -118,7 +118,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the name of this ListTrafficMirrorFiltersRequest.
 
         使用name过滤或排序
 
@@ -129,7 +129,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the description of this ListTrafficMirrorFiltersRequest.
 
         使用description过滤查询
 
@@ -140,7 +140,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the description of this ListTrafficMirrorFiltersRequest.
 
         使用description过滤查询
 
@@ -151,7 +151,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the created_at of this ListTrafficMirrorFiltersRequest.
 
         使用创建时间戳排序
 
@@ -162,7 +162,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the created_at of this ListTrafficMirrorFiltersRequest.
 
         使用创建时间戳排序
 
@@ -173,7 +173,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the updated_at of this ListTrafficMirrorFiltersRequest.
 
         使用更新时间戳排序
 
@@ -184,7 +184,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the updated_at of this ListTrafficMirrorFiltersRequest.
 
         使用更新时间戳排序
 
@@ -195,7 +195,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the limit of this ListTrafficMirrorFiltersRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -206,7 +206,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the limit of this ListTrafficMirrorFiltersRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -217,7 +217,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTrafficMirrorFiltersRequest.
+        r"""Gets the marker of this ListTrafficMirrorFiltersRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -228,7 +228,7 @@ class ListTrafficMirrorFiltersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTrafficMirrorFiltersRequest.
+        r"""Sets the marker of this ListTrafficMirrorFiltersRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 

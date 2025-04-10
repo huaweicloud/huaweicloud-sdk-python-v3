@@ -28,7 +28,7 @@ class ListCertResourceInstancesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListCertResourceInstancesResponse
+        r"""ListCertResourceInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCertResourceInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCertResourceInstancesResponse.
+        r"""Gets the total_count of this ListCertResourceInstancesResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListCertResourceInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCertResourceInstancesResponse.
+        r"""Sets the total_count of this ListCertResourceInstancesResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListCertResourceInstancesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListCertResourceInstancesResponse.
+        r"""Gets the resources of this ListCertResourceInstancesResponse.
 
         资源实例列表，详情请参见TagResource字段数据结构说明。
 
@@ -84,7 +84,7 @@ class ListCertResourceInstancesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListCertResourceInstancesResponse.
+        r"""Sets the resources of this ListCertResourceInstancesResponse.
 
         资源实例列表，详情请参见TagResource字段数据结构说明。
 

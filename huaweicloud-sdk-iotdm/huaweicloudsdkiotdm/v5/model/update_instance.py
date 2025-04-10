@@ -33,7 +33,7 @@ class UpdateInstance:
     }
 
     def __init__(self, name=None, description=None, operate_window=None, forwarding_info=None, access_info=None):
-        """UpdateInstance
+        r"""UpdateInstance
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateInstance:
 
     @property
     def name(self):
-        """Gets the name of this UpdateInstance.
+        r"""Gets the name of this UpdateInstance.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -82,7 +82,7 @@ class UpdateInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateInstance.
+        r"""Sets the name of this UpdateInstance.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -93,7 +93,7 @@ class UpdateInstance:
 
     @property
     def description(self):
-        """Gets the description of this UpdateInstance.
+        r"""Gets the description of this UpdateInstance.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
 
@@ -104,7 +104,7 @@ class UpdateInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateInstance.
+        r"""Sets the description of this UpdateInstance.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
 
@@ -115,7 +115,7 @@ class UpdateInstance:
 
     @property
     def operate_window(self):
-        """Gets the operate_window of this UpdateInstance.
+        r"""Gets the operate_window of this UpdateInstance.
 
         :return: The operate_window of this UpdateInstance.
         :rtype: :class:`huaweicloudsdkiotdm.v5.OperateWindow`
@@ -124,7 +124,7 @@ class UpdateInstance:
 
     @operate_window.setter
     def operate_window(self, operate_window):
-        """Sets the operate_window of this UpdateInstance.
+        r"""Sets the operate_window of this UpdateInstance.
 
         :param operate_window: The operate_window of this UpdateInstance.
         :type operate_window: :class:`huaweicloudsdkiotdm.v5.OperateWindow`
@@ -133,7 +133,7 @@ class UpdateInstance:
 
     @property
     def forwarding_info(self):
-        """Gets the forwarding_info of this UpdateInstance.
+        r"""Gets the forwarding_info of this UpdateInstance.
 
         :return: The forwarding_info of this UpdateInstance.
         :rtype: :class:`huaweicloudsdkiotdm.v5.UpdateForwardingInfo`
@@ -142,7 +142,7 @@ class UpdateInstance:
 
     @forwarding_info.setter
     def forwarding_info(self, forwarding_info):
-        """Sets the forwarding_info of this UpdateInstance.
+        r"""Sets the forwarding_info of this UpdateInstance.
 
         :param forwarding_info: The forwarding_info of this UpdateInstance.
         :type forwarding_info: :class:`huaweicloudsdkiotdm.v5.UpdateForwardingInfo`
@@ -151,7 +151,7 @@ class UpdateInstance:
 
     @property
     def access_info(self):
-        """Gets the access_info of this UpdateInstance.
+        r"""Gets the access_info of this UpdateInstance.
 
         :return: The access_info of this UpdateInstance.
         :rtype: :class:`huaweicloudsdkiotdm.v5.UpdateAccessInfo`
@@ -160,7 +160,7 @@ class UpdateInstance:
 
     @access_info.setter
     def access_info(self, access_info):
-        """Sets the access_info of this UpdateInstance.
+        r"""Sets the access_info of this UpdateInstance.
 
         :param access_info: The access_info of this UpdateInstance.
         :type access_info: :class:`huaweicloudsdkiotdm.v5.UpdateAccessInfo`

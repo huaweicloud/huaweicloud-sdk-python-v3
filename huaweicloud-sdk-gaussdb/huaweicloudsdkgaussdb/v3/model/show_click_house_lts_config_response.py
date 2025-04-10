@@ -28,7 +28,7 @@ class ShowClickHouseLtsConfigResponse(SdkResponse):
     }
 
     def __init__(self, instance_lts_configs=None, total_count=None):
-        """ShowClickHouseLtsConfigResponse
+        r"""ShowClickHouseLtsConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowClickHouseLtsConfigResponse(SdkResponse):
 
     @property
     def instance_lts_configs(self):
-        """Gets the instance_lts_configs of this ShowClickHouseLtsConfigResponse.
+        r"""Gets the instance_lts_configs of this ShowClickHouseLtsConfigResponse.
 
         实例LTS配置信息。
 
@@ -62,7 +62,7 @@ class ShowClickHouseLtsConfigResponse(SdkResponse):
 
     @instance_lts_configs.setter
     def instance_lts_configs(self, instance_lts_configs):
-        """Sets the instance_lts_configs of this ShowClickHouseLtsConfigResponse.
+        r"""Sets the instance_lts_configs of this ShowClickHouseLtsConfigResponse.
 
         实例LTS配置信息。
 
@@ -73,7 +73,7 @@ class ShowClickHouseLtsConfigResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowClickHouseLtsConfigResponse.
+        r"""Gets the total_count of this ShowClickHouseLtsConfigResponse.
 
         实例总数。
 
@@ -84,7 +84,7 @@ class ShowClickHouseLtsConfigResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowClickHouseLtsConfigResponse.
+        r"""Sets the total_count of this ShowClickHouseLtsConfigResponse.
 
         实例总数。
 

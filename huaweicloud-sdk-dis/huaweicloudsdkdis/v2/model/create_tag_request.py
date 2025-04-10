@@ -27,7 +27,7 @@ class CreateTagRequest:
     }
 
     def __init__(self, stream_id=None, body=None):
-        """CreateTagRequest
+        r"""CreateTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTagRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this CreateTagRequest.
+        r"""Gets the stream_id of this CreateTagRequest.
 
         通道ID。
 
@@ -60,7 +60,7 @@ class CreateTagRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this CreateTagRequest.
+        r"""Sets the stream_id of this CreateTagRequest.
 
         通道ID。
 
@@ -71,7 +71,7 @@ class CreateTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagRequest.
+        r"""Gets the body of this CreateTagRequest.
 
         :return: The body of this CreateTagRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.CreateTagReq`
@@ -80,7 +80,7 @@ class CreateTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagRequest.
+        r"""Sets the body of this CreateTagRequest.
 
         :param body: The body of this CreateTagRequest.
         :type body: :class:`huaweicloudsdkdis.v2.CreateTagReq`

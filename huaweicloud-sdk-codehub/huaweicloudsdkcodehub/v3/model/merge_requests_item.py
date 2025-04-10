@@ -51,7 +51,7 @@ class MergeRequestsItem:
     }
 
     def __init__(self, author=None, closed_at=None, created_at=None, description=None, devcloud_source_branch=None, id=None, iid=None, merge_request_assignee_list=None, merge_status=None, source_branch=None, state=None, target_branch=None, title=None, updated_at=None):
-        """MergeRequestsItem
+        r"""MergeRequestsItem
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class MergeRequestsItem:
 
     @property
     def author(self):
-        """Gets the author of this MergeRequestsItem.
+        r"""Gets the author of this MergeRequestsItem.
 
         :return: The author of this MergeRequestsItem.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -143,7 +143,7 @@ class MergeRequestsItem:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this MergeRequestsItem.
+        r"""Sets the author of this MergeRequestsItem.
 
         :param author: The author of this MergeRequestsItem.
         :type author: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -152,7 +152,7 @@ class MergeRequestsItem:
 
     @property
     def closed_at(self):
-        """Gets the closed_at of this MergeRequestsItem.
+        r"""Gets the closed_at of this MergeRequestsItem.
 
         关闭时间
 
@@ -163,7 +163,7 @@ class MergeRequestsItem:
 
     @closed_at.setter
     def closed_at(self, closed_at):
-        """Sets the closed_at of this MergeRequestsItem.
+        r"""Sets the closed_at of this MergeRequestsItem.
 
         关闭时间
 
@@ -174,7 +174,7 @@ class MergeRequestsItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MergeRequestsItem.
+        r"""Gets the created_at of this MergeRequestsItem.
 
         创建时间
 
@@ -185,7 +185,7 @@ class MergeRequestsItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MergeRequestsItem.
+        r"""Sets the created_at of this MergeRequestsItem.
 
         创建时间
 
@@ -196,7 +196,7 @@ class MergeRequestsItem:
 
     @property
     def description(self):
-        """Gets the description of this MergeRequestsItem.
+        r"""Gets the description of this MergeRequestsItem.
 
         合并请求描述
 
@@ -207,7 +207,7 @@ class MergeRequestsItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MergeRequestsItem.
+        r"""Sets the description of this MergeRequestsItem.
 
         合并请求描述
 
@@ -218,7 +218,7 @@ class MergeRequestsItem:
 
     @property
     def devcloud_source_branch(self):
-        """Gets the devcloud_source_branch of this MergeRequestsItem.
+        r"""Gets the devcloud_source_branch of this MergeRequestsItem.
 
         源分支
 
@@ -229,7 +229,7 @@ class MergeRequestsItem:
 
     @devcloud_source_branch.setter
     def devcloud_source_branch(self, devcloud_source_branch):
-        """Sets the devcloud_source_branch of this MergeRequestsItem.
+        r"""Sets the devcloud_source_branch of this MergeRequestsItem.
 
         源分支
 
@@ -240,7 +240,7 @@ class MergeRequestsItem:
 
     @property
     def id(self):
-        """Gets the id of this MergeRequestsItem.
+        r"""Gets the id of this MergeRequestsItem.
 
         合并请求id
 
@@ -251,7 +251,7 @@ class MergeRequestsItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MergeRequestsItem.
+        r"""Sets the id of this MergeRequestsItem.
 
         合并请求id
 
@@ -262,7 +262,7 @@ class MergeRequestsItem:
 
     @property
     def iid(self):
-        """Gets the iid of this MergeRequestsItem.
+        r"""Gets the iid of this MergeRequestsItem.
 
         当前仓库内合并请求序号
 
@@ -273,7 +273,7 @@ class MergeRequestsItem:
 
     @iid.setter
     def iid(self, iid):
-        """Sets the iid of this MergeRequestsItem.
+        r"""Sets the iid of this MergeRequestsItem.
 
         当前仓库内合并请求序号
 
@@ -284,7 +284,7 @@ class MergeRequestsItem:
 
     @property
     def merge_request_assignee_list(self):
-        """Gets the merge_request_assignee_list of this MergeRequestsItem.
+        r"""Gets the merge_request_assignee_list of this MergeRequestsItem.
 
         检视人
 
@@ -295,7 +295,7 @@ class MergeRequestsItem:
 
     @merge_request_assignee_list.setter
     def merge_request_assignee_list(self, merge_request_assignee_list):
-        """Sets the merge_request_assignee_list of this MergeRequestsItem.
+        r"""Sets the merge_request_assignee_list of this MergeRequestsItem.
 
         检视人
 
@@ -306,7 +306,7 @@ class MergeRequestsItem:
 
     @property
     def merge_status(self):
-        """Gets the merge_status of this MergeRequestsItem.
+        r"""Gets the merge_status of this MergeRequestsItem.
 
         是否可以被合并
 
@@ -317,7 +317,7 @@ class MergeRequestsItem:
 
     @merge_status.setter
     def merge_status(self, merge_status):
-        """Sets the merge_status of this MergeRequestsItem.
+        r"""Sets the merge_status of this MergeRequestsItem.
 
         是否可以被合并
 
@@ -328,7 +328,7 @@ class MergeRequestsItem:
 
     @property
     def source_branch(self):
-        """Gets the source_branch of this MergeRequestsItem.
+        r"""Gets the source_branch of this MergeRequestsItem.
 
         源分支
 
@@ -339,7 +339,7 @@ class MergeRequestsItem:
 
     @source_branch.setter
     def source_branch(self, source_branch):
-        """Sets the source_branch of this MergeRequestsItem.
+        r"""Sets the source_branch of this MergeRequestsItem.
 
         源分支
 
@@ -350,7 +350,7 @@ class MergeRequestsItem:
 
     @property
     def state(self):
-        """Gets the state of this MergeRequestsItem.
+        r"""Gets the state of this MergeRequestsItem.
 
         合并请求状态
 
@@ -361,7 +361,7 @@ class MergeRequestsItem:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this MergeRequestsItem.
+        r"""Sets the state of this MergeRequestsItem.
 
         合并请求状态
 
@@ -372,7 +372,7 @@ class MergeRequestsItem:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this MergeRequestsItem.
+        r"""Gets the target_branch of this MergeRequestsItem.
 
         目标分支
 
@@ -383,7 +383,7 @@ class MergeRequestsItem:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this MergeRequestsItem.
+        r"""Sets the target_branch of this MergeRequestsItem.
 
         目标分支
 
@@ -394,7 +394,7 @@ class MergeRequestsItem:
 
     @property
     def title(self):
-        """Gets the title of this MergeRequestsItem.
+        r"""Gets the title of this MergeRequestsItem.
 
         标题
 
@@ -405,7 +405,7 @@ class MergeRequestsItem:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this MergeRequestsItem.
+        r"""Sets the title of this MergeRequestsItem.
 
         标题
 
@@ -416,7 +416,7 @@ class MergeRequestsItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this MergeRequestsItem.
+        r"""Gets the updated_at of this MergeRequestsItem.
 
         更新时间
 
@@ -427,7 +427,7 @@ class MergeRequestsItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this MergeRequestsItem.
+        r"""Sets the updated_at of this MergeRequestsItem.
 
         更新时间
 

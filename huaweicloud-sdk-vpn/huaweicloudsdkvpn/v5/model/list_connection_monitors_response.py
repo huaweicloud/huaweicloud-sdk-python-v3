@@ -28,7 +28,7 @@ class ListConnectionMonitorsResponse(SdkResponse):
     }
 
     def __init__(self, connection_monitors=None, request_id=None):
-        """ListConnectionMonitorsResponse
+        r"""ListConnectionMonitorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConnectionMonitorsResponse(SdkResponse):
 
     @property
     def connection_monitors(self):
-        """Gets the connection_monitors of this ListConnectionMonitorsResponse.
+        r"""Gets the connection_monitors of this ListConnectionMonitorsResponse.
 
         :return: The connection_monitors of this ListConnectionMonitorsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ConnectionMonitorInfo`]
@@ -60,7 +60,7 @@ class ListConnectionMonitorsResponse(SdkResponse):
 
     @connection_monitors.setter
     def connection_monitors(self, connection_monitors):
-        """Sets the connection_monitors of this ListConnectionMonitorsResponse.
+        r"""Sets the connection_monitors of this ListConnectionMonitorsResponse.
 
         :param connection_monitors: The connection_monitors of this ListConnectionMonitorsResponse.
         :type connection_monitors: list[:class:`huaweicloudsdkvpn.v5.ConnectionMonitorInfo`]
@@ -69,7 +69,7 @@ class ListConnectionMonitorsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListConnectionMonitorsResponse.
+        r"""Gets the request_id of this ListConnectionMonitorsResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class ListConnectionMonitorsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListConnectionMonitorsResponse.
+        r"""Sets the request_id of this ListConnectionMonitorsResponse.
 
         请求id
 

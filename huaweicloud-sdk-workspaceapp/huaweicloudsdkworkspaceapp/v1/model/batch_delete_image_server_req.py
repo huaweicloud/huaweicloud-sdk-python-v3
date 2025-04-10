@@ -27,7 +27,7 @@ class BatchDeleteImageServerReq:
     }
 
     def __init__(self, items=None, recursive=None):
-        """BatchDeleteImageServerReq
+        r"""BatchDeleteImageServerReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteImageServerReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchDeleteImageServerReq.
+        r"""Gets the items of this BatchDeleteImageServerReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 
@@ -60,7 +60,7 @@ class BatchDeleteImageServerReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchDeleteImageServerReq.
+        r"""Sets the items of this BatchDeleteImageServerReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]
 
@@ -71,7 +71,7 @@ class BatchDeleteImageServerReq:
 
     @property
     def recursive(self):
-        """Gets the recursive of this BatchDeleteImageServerReq.
+        r"""Gets the recursive of this BatchDeleteImageServerReq.
 
         是否同时删除镜像实例关联资源： **⚠ 警告: 关联资源删除，对应的应用将不可用** * `true` 同时删除关联资源，包括APS服务器组，APS服务器，应用组相关资源。镜像产物相关信息保留。 * `false` 只删除镜像实例记录，保留关联资源。
 
@@ -82,7 +82,7 @@ class BatchDeleteImageServerReq:
 
     @recursive.setter
     def recursive(self, recursive):
-        """Sets the recursive of this BatchDeleteImageServerReq.
+        r"""Sets the recursive of this BatchDeleteImageServerReq.
 
         是否同时删除镜像实例关联资源： **⚠ 警告: 关联资源删除，对应的应用将不可用** * `true` 同时删除关联资源，包括APS服务器组，APS服务器，应用组相关资源。镜像产物相关信息保留。 * `false` 只删除镜像实例记录，保留关联资源。
 

@@ -26,7 +26,7 @@ class DeleteVideoScriptResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteVideoScriptResponse
+        r"""DeleteVideoScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteVideoScriptResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteVideoScriptResponse.
+        r"""Gets the x_request_id of this DeleteVideoScriptResponse.
 
         :return: The x_request_id of this DeleteVideoScriptResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteVideoScriptResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteVideoScriptResponse.
+        r"""Sets the x_request_id of this DeleteVideoScriptResponse.
 
         :param x_request_id: The x_request_id of this DeleteVideoScriptResponse.
         :type x_request_id: str

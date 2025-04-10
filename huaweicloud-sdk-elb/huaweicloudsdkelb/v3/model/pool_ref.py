@@ -25,7 +25,7 @@ class PoolRef:
     }
 
     def __init__(self, id=None):
-        """PoolRef
+        r"""PoolRef
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PoolRef:
 
     @property
     def id(self):
-        """Gets the id of this PoolRef.
+        r"""Gets the id of this PoolRef.
 
         参数解释：后端服务器组ID。
 
@@ -53,7 +53,7 @@ class PoolRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PoolRef.
+        r"""Sets the id of this PoolRef.
 
         参数解释：后端服务器组ID。
 

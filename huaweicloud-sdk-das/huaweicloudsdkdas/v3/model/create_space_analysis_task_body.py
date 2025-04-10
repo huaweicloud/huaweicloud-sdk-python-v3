@@ -27,7 +27,7 @@ class CreateSpaceAnalysisTaskBody:
     }
 
     def __init__(self, operate=None, datastore_type=None):
-        """CreateSpaceAnalysisTaskBody
+        r"""CreateSpaceAnalysisTaskBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateSpaceAnalysisTaskBody:
 
     @property
     def operate(self):
-        """Gets the operate of this CreateSpaceAnalysisTaskBody.
+        r"""Gets the operate of this CreateSpaceAnalysisTaskBody.
 
         操作类型
 
@@ -59,7 +59,7 @@ class CreateSpaceAnalysisTaskBody:
 
     @operate.setter
     def operate(self, operate):
-        """Sets the operate of this CreateSpaceAnalysisTaskBody.
+        r"""Sets the operate of this CreateSpaceAnalysisTaskBody.
 
         操作类型
 
@@ -70,7 +70,7 @@ class CreateSpaceAnalysisTaskBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this CreateSpaceAnalysisTaskBody.
+        r"""Gets the datastore_type of this CreateSpaceAnalysisTaskBody.
 
         引擎类型
 
@@ -81,7 +81,7 @@ class CreateSpaceAnalysisTaskBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this CreateSpaceAnalysisTaskBody.
+        r"""Sets the datastore_type of this CreateSpaceAnalysisTaskBody.
 
         引擎类型
 

@@ -39,7 +39,7 @@ class ProjectsSet:
     }
 
     def __init__(self, create_time=None, update_time=None, description=None, id=None, name=None, source=None, external_params=None, variables_no_file=None):
-        """ProjectsSet
+        r"""ProjectsSet
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ProjectsSet:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProjectsSet.
+        r"""Gets the create_time of this ProjectsSet.
 
         创建时间
 
@@ -103,7 +103,7 @@ class ProjectsSet:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProjectsSet.
+        r"""Sets the create_time of this ProjectsSet.
 
         创建时间
 
@@ -114,7 +114,7 @@ class ProjectsSet:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProjectsSet.
+        r"""Gets the update_time of this ProjectsSet.
 
         更新时间
 
@@ -125,7 +125,7 @@ class ProjectsSet:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProjectsSet.
+        r"""Sets the update_time of this ProjectsSet.
 
         更新时间
 
@@ -136,7 +136,7 @@ class ProjectsSet:
 
     @property
     def description(self):
-        """Gets the description of this ProjectsSet.
+        r"""Gets the description of this ProjectsSet.
 
         描述
 
@@ -147,7 +147,7 @@ class ProjectsSet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectsSet.
+        r"""Sets the description of this ProjectsSet.
 
         描述
 
@@ -158,7 +158,7 @@ class ProjectsSet:
 
     @property
     def id(self):
-        """Gets the id of this ProjectsSet.
+        r"""Gets the id of this ProjectsSet.
 
         工程id
 
@@ -169,7 +169,7 @@ class ProjectsSet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectsSet.
+        r"""Sets the id of this ProjectsSet.
 
         工程id
 
@@ -180,7 +180,7 @@ class ProjectsSet:
 
     @property
     def name(self):
-        """Gets the name of this ProjectsSet.
+        r"""Gets the name of this ProjectsSet.
 
         工程名字
 
@@ -191,7 +191,7 @@ class ProjectsSet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectsSet.
+        r"""Sets the name of this ProjectsSet.
 
         工程名字
 
@@ -202,7 +202,7 @@ class ProjectsSet:
 
     @property
     def source(self):
-        """Gets the source of this ProjectsSet.
+        r"""Gets the source of this ProjectsSet.
 
         工程来源 0：PerfTest，2：CloudTest
 
@@ -213,7 +213,7 @@ class ProjectsSet:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ProjectsSet.
+        r"""Sets the source of this ProjectsSet.
 
         工程来源 0：PerfTest，2：CloudTest
 
@@ -224,7 +224,7 @@ class ProjectsSet:
 
     @property
     def external_params(self):
-        """Gets the external_params of this ProjectsSet.
+        r"""Gets the external_params of this ProjectsSet.
 
         外部参数
 
@@ -235,7 +235,7 @@ class ProjectsSet:
 
     @external_params.setter
     def external_params(self, external_params):
-        """Sets the external_params of this ProjectsSet.
+        r"""Sets the external_params of this ProjectsSet.
 
         外部参数
 
@@ -246,7 +246,7 @@ class ProjectsSet:
 
     @property
     def variables_no_file(self):
-        """Gets the variables_no_file of this ProjectsSet.
+        r"""Gets the variables_no_file of this ProjectsSet.
 
         文件变量
 
@@ -257,7 +257,7 @@ class ProjectsSet:
 
     @variables_no_file.setter
     def variables_no_file(self, variables_no_file):
-        """Sets the variables_no_file of this ProjectsSet.
+        r"""Sets the variables_no_file of this ProjectsSet.
 
         文件变量
 

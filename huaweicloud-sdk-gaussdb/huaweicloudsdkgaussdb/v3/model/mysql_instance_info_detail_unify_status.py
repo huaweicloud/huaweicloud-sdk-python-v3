@@ -87,7 +87,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
     }
 
     def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None, tde_info=None):
-        """MysqlInstanceInfoDetailUnifyStatus
+        r"""MysqlInstanceInfoDetailUnifyStatus
 
         The model defined in huaweicloud sdk
 
@@ -257,7 +257,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def id(self):
-        """Gets the id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the id of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例ID，严格匹配UUID规则。
 
@@ -268,7 +268,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the id of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例ID，严格匹配UUID规则。
 
@@ -279,7 +279,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def name(self):
-        """Gets the name of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the name of this MysqlInstanceInfoDetailUnifyStatus.
 
         创建的实例名称。
 
@@ -290,7 +290,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the name of this MysqlInstanceInfoDetailUnifyStatus.
 
         创建的实例名称。
 
@@ -301,7 +301,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the project_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         租户在某一Region下的project ID。
 
@@ -312,7 +312,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the project_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         租户在某一Region下的project ID。
 
@@ -323,7 +323,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def status(self):
-        """Gets the status of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the status of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例状态。  取值： - 值为“creating”，表示实例正在创建。 - 值为“normal”，表示实例正常。 - 值为“abnormal”，表示实例异常。 - 值为“createfail”，表示实例创建失败。
 
@@ -334,7 +334,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the status of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例状态。  取值： - 值为“creating”，表示实例正在创建。 - 值为“normal”，表示实例正常。 - 值为“abnormal”，表示实例异常。 - 值为“createfail”，表示实例创建失败。
 
@@ -345,7 +345,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def port(self):
-        """Gets the port of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the port of this MysqlInstanceInfoDetailUnifyStatus.
 
         数据库端口号。
 
@@ -356,7 +356,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the port of this MysqlInstanceInfoDetailUnifyStatus.
 
         数据库端口号。
 
@@ -367,7 +367,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def alias(self):
-        """Gets the alias of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the alias of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例备注
 
@@ -378,7 +378,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the alias of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例备注
 
@@ -389,7 +389,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def type(self):
-        """Gets the type of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the type of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例类型，取Cluster”。
 
@@ -400,7 +400,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the type of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例类型，取Cluster”。
 
@@ -411,7 +411,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the charge_info of this MysqlInstanceInfoDetailUnifyStatus.
 
         :return: The charge_info of this MysqlInstanceInfoDetailUnifyStatus.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
@@ -420,7 +420,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the charge_info of this MysqlInstanceInfoDetailUnifyStatus.
 
         :param charge_info: The charge_info of this MysqlInstanceInfoDetailUnifyStatus.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
@@ -429,7 +429,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def node_count(self):
-        """Gets the node_count of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the node_count of this MysqlInstanceInfoDetailUnifyStatus.
 
         节点个数。
 
@@ -440,7 +440,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the node_count of this MysqlInstanceInfoDetailUnifyStatus.
 
         节点个数。
 
@@ -451,7 +451,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def datastore(self):
-        """Gets the datastore of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the datastore of this MysqlInstanceInfoDetailUnifyStatus.
 
         :return: The datastore of this MysqlInstanceInfoDetailUnifyStatus.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
@@ -460,7 +460,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the datastore of this MysqlInstanceInfoDetailUnifyStatus.
 
         :param datastore: The datastore of this MysqlInstanceInfoDetailUnifyStatus.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
@@ -469,7 +469,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def backup_used_space(self):
-        """Gets the backup_used_space of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the backup_used_space of this MysqlInstanceInfoDetailUnifyStatus.
 
         备份空间使用大小，单位为GB。
 
@@ -480,7 +480,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @backup_used_space.setter
     def backup_used_space(self, backup_used_space):
-        """Sets the backup_used_space of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the backup_used_space of this MysqlInstanceInfoDetailUnifyStatus.
 
         备份空间使用大小，单位为GB。
 
@@ -491,7 +491,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def created(self):
-        """Gets the created of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the created of this MysqlInstanceInfoDetailUnifyStatus.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -502,7 +502,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the created of this MysqlInstanceInfoDetailUnifyStatus.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -513,7 +513,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def updated(self):
-        """Gets the updated of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the updated of this MysqlInstanceInfoDetailUnifyStatus.
 
         更新时间，格式与\"created\"字段对应格式完全相同。
 
@@ -524,7 +524,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the updated of this MysqlInstanceInfoDetailUnifyStatus.
 
         更新时间，格式与\"created\"字段对应格式完全相同。
 
@@ -535,7 +535,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def private_write_ips(self):
-        """Gets the private_write_ips of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the private_write_ips of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例的写内网IP地址。
 
@@ -546,7 +546,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @private_write_ips.setter
     def private_write_ips(self, private_write_ips):
-        """Sets the private_write_ips of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the private_write_ips of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例的写内网IP地址。
 
@@ -557,7 +557,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def private_dns_names(self):
-        """Gets the private_dns_names of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the private_dns_names of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
 
@@ -568,7 +568,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @private_dns_names.setter
     def private_dns_names(self, private_dns_names):
-        """Sets the private_dns_names of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the private_dns_names of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
 
@@ -579,7 +579,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def public_ips(self):
-        """Gets the public_ips of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the public_ips of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例的公网IP地址。
 
@@ -590,7 +590,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @public_ips.setter
     def public_ips(self, public_ips):
-        """Sets the public_ips of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the public_ips of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例的公网IP地址。
 
@@ -601,7 +601,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def db_user_name(self):
-        """Gets the db_user_name of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the db_user_name of this MysqlInstanceInfoDetailUnifyStatus.
 
         默认用户名。
 
@@ -612,7 +612,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @db_user_name.setter
     def db_user_name(self, db_user_name):
-        """Sets the db_user_name of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the db_user_name of this MysqlInstanceInfoDetailUnifyStatus.
 
         默认用户名。
 
@@ -623,7 +623,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the vpc_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         虚拟私有云ID。
 
@@ -634,7 +634,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the vpc_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         虚拟私有云ID。
 
@@ -645,7 +645,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the subnet_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         子网的网络ID信息。
 
@@ -656,7 +656,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the subnet_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         子网的网络ID信息。
 
@@ -667,7 +667,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the security_group_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         安全组ID。
 
@@ -678,7 +678,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the security_group_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         安全组ID。
 
@@ -689,7 +689,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the configuration_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例创建的模板ID，或者应用到实例的最新参数组模板ID。
 
@@ -700,7 +700,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the configuration_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例创建的模板ID，或者应用到实例的最新参数组模板ID。
 
@@ -711,7 +711,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the backup_strategy of this MysqlInstanceInfoDetailUnifyStatus.
 
         :return: The backup_strategy of this MysqlInstanceInfoDetailUnifyStatus.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -720,7 +720,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the backup_strategy of this MysqlInstanceInfoDetailUnifyStatus.
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceInfoDetailUnifyStatus.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -729,7 +729,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def nodes(self):
-        """Gets the nodes of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the nodes of this MysqlInstanceInfoDetailUnifyStatus.
 
         节点信息。
 
@@ -740,7 +740,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the nodes of this MysqlInstanceInfoDetailUnifyStatus.
 
         节点信息。
 
@@ -751,7 +751,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the enterprise_project_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         企业项目ID。
 
@@ -762,7 +762,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the enterprise_project_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         企业项目ID。
 
@@ -773,7 +773,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the time_zone of this MysqlInstanceInfoDetailUnifyStatus.
 
         时区。
 
@@ -784,7 +784,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the time_zone of this MysqlInstanceInfoDetailUnifyStatus.
 
         时区。
 
@@ -795,7 +795,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the az_mode of this MysqlInstanceInfoDetailUnifyStatus.
 
         可用区模式。  取值范围： - single：单可用区。 - multi：多可用区。
 
@@ -806,7 +806,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the az_mode of this MysqlInstanceInfoDetailUnifyStatus.
 
         可用区模式。  取值范围： - single：单可用区。 - multi：多可用区。
 
@@ -817,7 +817,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def master_az_code(self):
-        """Gets the master_az_code of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the master_az_code of this MysqlInstanceInfoDetailUnifyStatus.
 
         主可用区。
 
@@ -828,7 +828,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @master_az_code.setter
     def master_az_code(self, master_az_code):
-        """Sets the master_az_code of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the master_az_code of this MysqlInstanceInfoDetailUnifyStatus.
 
         主可用区。
 
@@ -839,7 +839,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def maintenance_window(self):
-        """Gets the maintenance_window of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the maintenance_window of this MysqlInstanceInfoDetailUnifyStatus.
 
         可维护时间窗，为UTC时间。
 
@@ -850,7 +850,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @maintenance_window.setter
     def maintenance_window(self, maintenance_window):
-        """Sets the maintenance_window of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the maintenance_window of this MysqlInstanceInfoDetailUnifyStatus.
 
         可维护时间窗，为UTC时间。
 
@@ -861,7 +861,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def tags(self):
-        """Gets the tags of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the tags of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例标签。
 
@@ -872,7 +872,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the tags of this MysqlInstanceInfoDetailUnifyStatus.
 
         实例标签。
 
@@ -883,7 +883,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the dedicated_resource_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -894,7 +894,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the dedicated_resource_id of this MysqlInstanceInfoDetailUnifyStatus.
 
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -905,7 +905,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def proxies(self):
-        """Gets the proxies of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the proxies of this MysqlInstanceInfoDetailUnifyStatus.
 
         代理信息。
 
@@ -916,7 +916,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @proxies.setter
     def proxies(self, proxies):
-        """Sets the proxies of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the proxies of this MysqlInstanceInfoDetailUnifyStatus.
 
         代理信息。
 
@@ -927,7 +927,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @property
     def tde_info(self):
-        """Gets the tde_info of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Gets the tde_info of this MysqlInstanceInfoDetailUnifyStatus.
 
         :return: The tde_info of this MysqlInstanceInfoDetailUnifyStatus.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
@@ -936,7 +936,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
 
     @tde_info.setter
     def tde_info(self, tde_info):
-        """Sets the tde_info of this MysqlInstanceInfoDetailUnifyStatus.
+        r"""Sets the tde_info of this MysqlInstanceInfoDetailUnifyStatus.
 
         :param tde_info: The tde_info of this MysqlInstanceInfoDetailUnifyStatus.
         :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`

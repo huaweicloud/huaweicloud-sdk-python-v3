@@ -27,7 +27,7 @@ class DelayConfig:
     }
 
     def __init__(self, app=None, delay=None):
-        """DelayConfig
+        r"""DelayConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DelayConfig:
 
     @property
     def app(self):
-        """Gets the app of this DelayConfig.
+        r"""Gets the app of this DelayConfig.
 
         应用名，默认为live
 
@@ -61,7 +61,7 @@ class DelayConfig:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this DelayConfig.
+        r"""Sets the app of this DelayConfig.
 
         应用名，默认为live
 
@@ -72,7 +72,7 @@ class DelayConfig:
 
     @property
     def delay(self):
-        """Gets the delay of this DelayConfig.
+        r"""Gets the delay of this DelayConfig.
 
         延时时间，单位：ms。  包含如下取值： - 2000（低）。 - 4000（中）。 - 6000（高）。
 
@@ -83,7 +83,7 @@ class DelayConfig:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this DelayConfig.
+        r"""Sets the delay of this DelayConfig.
 
         延时时间，单位：ms。  包含如下取值： - 2000（低）。 - 4000（中）。 - 6000（高）。
 

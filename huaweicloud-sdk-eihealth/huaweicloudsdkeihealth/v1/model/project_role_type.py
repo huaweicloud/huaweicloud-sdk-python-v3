@@ -29,7 +29,7 @@ class ProjectRoleType:
     }
 
     def __init__(self):
-        """ProjectRoleType
+        r"""ProjectRoleType
 
         The model defined in huaweicloud sdk
 

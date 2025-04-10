@@ -30,7 +30,7 @@ class SendKafkaMessageResponse(SdkResponse):
     }
 
     def __init__(self, topic=None, body=None, property_list=None):
-        """SendKafkaMessageResponse
+        r"""SendKafkaMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SendKafkaMessageResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this SendKafkaMessageResponse.
+        r"""Gets the topic of this SendKafkaMessageResponse.
 
         Kafka的topic
 
@@ -69,7 +69,7 @@ class SendKafkaMessageResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SendKafkaMessageResponse.
+        r"""Sets the topic of this SendKafkaMessageResponse.
 
         Kafka的topic
 
@@ -80,7 +80,7 @@ class SendKafkaMessageResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SendKafkaMessageResponse.
+        r"""Gets the body of this SendKafkaMessageResponse.
 
         消息内容
 
@@ -91,7 +91,7 @@ class SendKafkaMessageResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendKafkaMessageResponse.
+        r"""Sets the body of this SendKafkaMessageResponse.
 
         消息内容
 
@@ -102,7 +102,7 @@ class SendKafkaMessageResponse(SdkResponse):
 
     @property
     def property_list(self):
-        """Gets the property_list of this SendKafkaMessageResponse.
+        r"""Gets the property_list of this SendKafkaMessageResponse.
 
         topic的分区信息等
 
@@ -113,7 +113,7 @@ class SendKafkaMessageResponse(SdkResponse):
 
     @property_list.setter
     def property_list(self, property_list):
-        """Sets the property_list of this SendKafkaMessageResponse.
+        r"""Sets the property_list of this SendKafkaMessageResponse.
 
         topic的分区信息等
 

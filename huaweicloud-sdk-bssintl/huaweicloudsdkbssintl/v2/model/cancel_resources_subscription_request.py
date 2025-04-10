@@ -25,7 +25,7 @@ class CancelResourcesSubscriptionRequest:
     }
 
     def __init__(self, body=None):
-        """CancelResourcesSubscriptionRequest
+        r"""CancelResourcesSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CancelResourcesSubscriptionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelResourcesSubscriptionRequest.
+        r"""Gets the body of this CancelResourcesSubscriptionRequest.
 
         :return: The body of this CancelResourcesSubscriptionRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.UnsubscribeResourcesReq`
@@ -52,7 +52,7 @@ class CancelResourcesSubscriptionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelResourcesSubscriptionRequest.
+        r"""Sets the body of this CancelResourcesSubscriptionRequest.
 
         :param body: The body of this CancelResourcesSubscriptionRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.UnsubscribeResourcesReq`

@@ -25,7 +25,7 @@ class ListTemplateVarilableDetailsRequest:
     }
 
     def __init__(self, id=None):
-        """ListTemplateVarilableDetailsRequest
+        r"""ListTemplateVarilableDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTemplateVarilableDetailsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTemplateVarilableDetailsRequest.
+        r"""Gets the id of this ListTemplateVarilableDetailsRequest.
 
         模板ID
 
@@ -53,7 +53,7 @@ class ListTemplateVarilableDetailsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTemplateVarilableDetailsRequest.
+        r"""Sets the id of this ListTemplateVarilableDetailsRequest.
 
         模板ID
 

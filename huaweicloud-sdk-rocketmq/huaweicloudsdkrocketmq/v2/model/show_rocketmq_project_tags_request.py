@@ -23,7 +23,7 @@ class ShowRocketmqProjectTagsRequest:
     }
 
     def __init__(self):
-        """ShowRocketmqProjectTagsRequest
+        r"""ShowRocketmqProjectTagsRequest
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class QueryDocParamDto:
     }
 
     def __init__(self, instance_id=None, type=None):
-        """QueryDocParamDto
+        r"""QueryDocParamDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryDocParamDto:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this QueryDocParamDto.
+        r"""Gets the instance_id of this QueryDocParamDto.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -61,7 +61,7 @@ class QueryDocParamDto:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this QueryDocParamDto.
+        r"""Sets the instance_id of this QueryDocParamDto.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -72,7 +72,7 @@ class QueryDocParamDto:
 
     @property
     def type(self):
-        """Gets the type of this QueryDocParamDto.
+        r"""Gets the type of this QueryDocParamDto.
 
         **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
@@ -83,7 +83,7 @@ class QueryDocParamDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QueryDocParamDto.
+        r"""Sets the type of this QueryDocParamDto.
 
         **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 

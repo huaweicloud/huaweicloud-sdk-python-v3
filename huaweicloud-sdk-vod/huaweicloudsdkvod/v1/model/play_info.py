@@ -35,7 +35,7 @@ class PlayInfo:
     }
 
     def __init__(self, play_type=None, group_id=None, group_name=None, url=None, encrypted=None, meta_data=None):
-        """PlayInfo
+        r"""PlayInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PlayInfo:
 
     @property
     def play_type(self):
-        """Gets the play_type of this PlayInfo.
+        r"""Gets the play_type of this PlayInfo.
 
         播放协议类型。  取值如下： - hls - dash - mp4
 
@@ -89,7 +89,7 @@ class PlayInfo:
 
     @play_type.setter
     def play_type(self, play_type):
-        """Sets the play_type of this PlayInfo.
+        r"""Sets the play_type of this PlayInfo.
 
         播放协议类型。  取值如下： - hls - dash - mp4
 
@@ -100,7 +100,7 @@ class PlayInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PlayInfo.
+        r"""Gets the group_id of this PlayInfo.
 
         所属转码组Id
 
@@ -111,7 +111,7 @@ class PlayInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PlayInfo.
+        r"""Sets the group_id of this PlayInfo.
 
         所属转码组Id
 
@@ -122,7 +122,7 @@ class PlayInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PlayInfo.
+        r"""Gets the group_name of this PlayInfo.
 
         所属转码组名称
 
@@ -133,7 +133,7 @@ class PlayInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PlayInfo.
+        r"""Sets the group_name of this PlayInfo.
 
         所属转码组名称
 
@@ -144,7 +144,7 @@ class PlayInfo:
 
     @property
     def url(self):
-        """Gets the url of this PlayInfo.
+        r"""Gets the url of this PlayInfo.
 
         播放URL。
 
@@ -155,7 +155,7 @@ class PlayInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PlayInfo.
+        r"""Sets the url of this PlayInfo.
 
         播放URL。
 
@@ -166,7 +166,7 @@ class PlayInfo:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this PlayInfo.
+        r"""Gets the encrypted of this PlayInfo.
 
         标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
 
@@ -177,7 +177,7 @@ class PlayInfo:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this PlayInfo.
+        r"""Sets the encrypted of this PlayInfo.
 
         标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
 
@@ -188,7 +188,7 @@ class PlayInfo:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this PlayInfo.
+        r"""Gets the meta_data of this PlayInfo.
 
         :return: The meta_data of this PlayInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
@@ -197,7 +197,7 @@ class PlayInfo:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this PlayInfo.
+        r"""Sets the meta_data of this PlayInfo.
 
         :param meta_data: The meta_data of this PlayInfo.
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`

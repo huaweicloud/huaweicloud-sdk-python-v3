@@ -27,7 +27,7 @@ class DeleteBackupRequest:
     }
 
     def __init__(self, backup_id=None, eihealth_project_id=None):
-        """DeleteBackupRequest
+        r"""DeleteBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteBackupRequest.
+        r"""Gets the backup_id of this DeleteBackupRequest.
 
         归档ID
 
@@ -59,7 +59,7 @@ class DeleteBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteBackupRequest.
+        r"""Sets the backup_id of this DeleteBackupRequest.
 
         归档ID
 
@@ -70,7 +70,7 @@ class DeleteBackupRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteBackupRequest.
+        r"""Gets the eihealth_project_id of this DeleteBackupRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -81,7 +81,7 @@ class DeleteBackupRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteBackupRequest.
+        r"""Sets the eihealth_project_id of this DeleteBackupRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 

@@ -27,7 +27,7 @@ class BaseDemand:
     }
 
     def __init__(self, min=None, max=None):
-        """BaseDemand
+        r"""BaseDemand
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BaseDemand:
 
     @property
     def min(self):
-        """Gets the min of this BaseDemand.
+        r"""Gets the min of this BaseDemand.
 
         最小数
 
@@ -59,7 +59,7 @@ class BaseDemand:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this BaseDemand.
+        r"""Sets the min of this BaseDemand.
 
         最小数
 
@@ -70,7 +70,7 @@ class BaseDemand:
 
     @property
     def max(self):
-        """Gets the max of this BaseDemand.
+        r"""Gets the max of this BaseDemand.
 
         最大数，最小值为1，最大值为1000。
 
@@ -81,7 +81,7 @@ class BaseDemand:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this BaseDemand.
+        r"""Sets the max of this BaseDemand.
 
         最大数，最小值为1，最大值为1000。
 

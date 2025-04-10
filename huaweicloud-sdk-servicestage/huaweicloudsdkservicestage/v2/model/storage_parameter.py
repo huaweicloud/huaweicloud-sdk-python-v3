@@ -31,7 +31,7 @@ class StorageParameter:
     }
 
     def __init__(self, path=None, name=None, default_mode=None, medium=None):
-        """StorageParameter
+        r"""StorageParameter
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StorageParameter:
 
     @property
     def path(self):
-        """Gets the path of this StorageParameter.
+        r"""Gets the path of this StorageParameter.
 
         主机路径， 适用于HostPath的存储类型
 
@@ -75,7 +75,7 @@ class StorageParameter:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this StorageParameter.
+        r"""Sets the path of this StorageParameter.
 
         主机路径， 适用于HostPath的存储类型
 
@@ -86,7 +86,7 @@ class StorageParameter:
 
     @property
     def name(self):
-        """Gets the name of this StorageParameter.
+        r"""Gets the name of this StorageParameter.
 
         配置项、密钥或者PVC的名字， 适用于ConfigMap、Secret和PersistentVolumeClaim的存储类型
 
@@ -97,7 +97,7 @@ class StorageParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StorageParameter.
+        r"""Sets the name of this StorageParameter.
 
         配置项、密钥或者PVC的名字， 适用于ConfigMap、Secret和PersistentVolumeClaim的存储类型
 
@@ -108,7 +108,7 @@ class StorageParameter:
 
     @property
     def default_mode(self):
-        """Gets the default_mode of this StorageParameter.
+        r"""Gets the default_mode of this StorageParameter.
 
         挂载的权限，十进制格式，如384
 
@@ -119,7 +119,7 @@ class StorageParameter:
 
     @default_mode.setter
     def default_mode(self, default_mode):
-        """Sets the default_mode of this StorageParameter.
+        r"""Sets the default_mode of this StorageParameter.
 
         挂载的权限，十进制格式，如384
 
@@ -130,7 +130,7 @@ class StorageParameter:
 
     @property
     def medium(self):
-        """Gets the medium of this StorageParameter.
+        r"""Gets the medium of this StorageParameter.
 
         适用于EmptyDir类型的存储。不传参数为默认的磁盘介质，传参为memory则开启内存存储。
 
@@ -141,7 +141,7 @@ class StorageParameter:
 
     @medium.setter
     def medium(self, medium):
-        """Sets the medium of this StorageParameter.
+        r"""Sets the medium of this StorageParameter.
 
         适用于EmptyDir类型的存储。不传参数为默认的磁盘介质，传参为memory则开启内存存储。
 

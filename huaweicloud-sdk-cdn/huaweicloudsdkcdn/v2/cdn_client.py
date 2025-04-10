@@ -34,7 +34,7 @@ class CdnClient(Client):
         return client_builder
 
     def batch_copy_domain(self, request):
-        """批量域名复制
+        r"""批量域名复制
 
         批量域名复制接口。
          &gt; 将某个加速域名的配置批量复制到其他域名。
@@ -100,7 +100,7 @@ class CdnClient(Client):
         return http_info
 
     def batch_delete_tags(self, request):
-        """删除资源标签配置接口
+        r"""删除资源标签配置接口
 
         用于删除资源标签。
         
@@ -165,7 +165,7 @@ class CdnClient(Client):
         return http_info
 
     def create_domain(self, request):
-        """创建加速域名
+        r"""创建加速域名
 
         创建加速域名。
         
@@ -230,7 +230,7 @@ class CdnClient(Client):
         return http_info
 
     def create_preheating_tasks(self, request):
-        """创建预热缓存任务
+        r"""创建预热缓存任务
 
         创建预热任务。
         
@@ -297,7 +297,7 @@ class CdnClient(Client):
         return http_info
 
     def create_refresh_tasks(self, request):
-        """创建刷新缓存任务
+        r"""创建刷新缓存任务
 
         创建刷新缓存任务。
         
@@ -364,7 +364,7 @@ class CdnClient(Client):
         return http_info
 
     def create_tags(self, request):
-        """创建资源标签配置接口
+        r"""创建资源标签配置接口
 
         用于创建资源标签。
         
@@ -429,7 +429,7 @@ class CdnClient(Client):
         return http_info
 
     def delete_domain(self, request):
-        """删除加速域名
+        r"""删除加速域名
 
         删除加速域名。
         
@@ -496,7 +496,7 @@ class CdnClient(Client):
         return http_info
 
     def disable_domain(self, request):
-        """停用加速域名
+        r"""停用加速域名
 
         停用加速域名。
         
@@ -563,7 +563,7 @@ class CdnClient(Client):
         return http_info
 
     def download_region_carrier_excel(self, request):
-        """下载区域运营商指标数据表格文件
+        r"""下载区域运营商指标数据表格文件
 
         - 下载区域运营商指标数据表格文件。
         
@@ -658,7 +658,7 @@ class CdnClient(Client):
         return http_info
 
     def download_statistics_excel(self, request):
-        """下载统计指标数据表格文件
+        r"""下载统计指标数据表格文件
 
         - 下载统计指标数据表格文件。
         
@@ -749,7 +749,7 @@ class CdnClient(Client):
         return http_info
 
     def enable_domain(self, request):
-        """启用加速域名
+        r"""启用加速域名
 
         启用加速域名。
         
@@ -816,7 +816,7 @@ class CdnClient(Client):
         return http_info
 
     def list_cdn_domain_top_refers(self, request):
-        """查询统计TOP100 referer数据明细
+        r"""查询统计TOP100 referer数据明细
 
         - 查询TOP100 referer数据。
         
@@ -899,7 +899,7 @@ class CdnClient(Client):
         return http_info
 
     def list_domains(self, request):
-        """查询加速域名
+        r"""查询加速域名
 
         查询加速域名。
         
@@ -980,7 +980,7 @@ class CdnClient(Client):
         return http_info
 
     def set_charge_modes(self, request):
-        """设置用户计费模式
+        r"""设置用户计费模式
 
         - 设置用户计费模式。
         
@@ -1053,7 +1053,7 @@ class CdnClient(Client):
         return http_info
 
     def show_bandwidth_calc(self, request):
-        """查询域名带宽峰值类数据
+        r"""查询域名带宽峰值类数据
 
         - 查询域名带宽峰值类数据。
         
@@ -1142,7 +1142,7 @@ class CdnClient(Client):
         return http_info
 
     def show_certificates_https_info(self, request):
-        """查询所有绑定HTTPS证书的域名信息
+        r"""查询所有绑定HTTPS证书的域名信息
 
         查询所有绑定HTTPS证书的域名信息
         
@@ -1215,7 +1215,7 @@ class CdnClient(Client):
         return http_info
 
     def show_charge_modes(self, request):
-        """查询用户计费模式
+        r"""查询用户计费模式
 
         - 查询用户计费模式。
         
@@ -1292,7 +1292,7 @@ class CdnClient(Client):
         return http_info
 
     def show_domain_detail_by_name(self, request):
-        """查询加速域名详情
+        r"""查询加速域名详情
 
         加速域名详情信息接口。
         
@@ -1359,7 +1359,7 @@ class CdnClient(Client):
         return http_info
 
     def show_domain_full_config(self, request):
-        """查询域名配置接口
+        r"""查询域名配置接口
 
         查询域名配置接口，支持查询业务类型、服务范围、备注、IPv6开关、回源方式、回源URL改写、高级回源、Range回源、回源跟随、回源是否校验Etag、回源超时时间、回源请求头、HTTPS配置、TLS版本配置、强制跳转、HSTS、HTTP/2、OCSP Stapling、QUIC、缓存规则、状态码缓存时间、防盗链、IP黑白名单、 Use-Agent黑白名单、URL鉴权配置、远程鉴权配置、IP访问限频、HTTP header配置、自定义错误页面配置、智能压缩、请求限速配置、WebSocket配置、视频拖拽、回源SNI、访问URL重写、浏览器缓存过期时间、区域访问控制。
         
@@ -1428,7 +1428,7 @@ class CdnClient(Client):
         return http_info
 
     def show_domain_location_stats(self, request):
-        """按区域运营商查询域名统计数据
+        r"""按区域运营商查询域名统计数据
 
         - 支持查询90天内的数据。
         
@@ -1525,7 +1525,7 @@ class CdnClient(Client):
         return http_info
 
     def show_domain_stats(self, request):
-        """查询域名统计数据
+        r"""查询域名统计数据
 
         - 支持查询90天内的数据。
         
@@ -1618,7 +1618,7 @@ class CdnClient(Client):
         return http_info
 
     def show_history_task_details(self, request):
-        """查询刷新预热任务详情
+        r"""查询刷新预热任务详情
 
         查询刷新预热任务详情。
         
@@ -1695,7 +1695,7 @@ class CdnClient(Client):
         return http_info
 
     def show_history_tasks(self, request):
-        """查询刷新预热任务
+        r"""查询刷新预热任务
 
         查询刷新预热任务。
         
@@ -1778,7 +1778,7 @@ class CdnClient(Client):
         return http_info
 
     def show_ip_info(self, request):
-        """查询IP归属信息
+        r"""查询IP归属信息
 
         查询IP归属信息。
         
@@ -1845,7 +1845,7 @@ class CdnClient(Client):
         return http_info
 
     def show_logs(self, request):
-        """日志查询
+        r"""日志查询
 
         查询日志下载链接，支持查询30天内的日志信息。
         
@@ -1920,7 +1920,7 @@ class CdnClient(Client):
         return http_info
 
     def show_quota(self, request):
-        """查询用户配额
+        r"""查询用户配额
 
         查询当前用户域名、刷新文件、刷新目录和预热的配额
         
@@ -1983,7 +1983,7 @@ class CdnClient(Client):
         return http_info
 
     def show_tags(self, request):
-        """查询资源标签列表配置接口
+        r"""查询资源标签列表配置接口
 
         用于查询资源标签列表。
         
@@ -2048,7 +2048,7 @@ class CdnClient(Client):
         return http_info
 
     def show_top_domain_names(self, request):
-        """查询TOP域名
+        r"""查询TOP域名
 
         - 查询TOP域名。
         
@@ -2137,7 +2137,7 @@ class CdnClient(Client):
         return http_info
 
     def show_top_url(self, request):
-        """查询TOP100 URL明细
+        r"""查询TOP100 URL明细
 
         - 查询TOP100 URL明细。
         
@@ -2224,7 +2224,7 @@ class CdnClient(Client):
         return http_info
 
     def show_url_task_info(self, request):
-        """查询刷新预热URL记录
+        r"""查询刷新预热URL记录
 
         查询刷新预热URL记录。如需此接口，请提交工单开通。
         
@@ -2303,7 +2303,7 @@ class CdnClient(Client):
         return http_info
 
     def show_verify_domain_owner_info(self, request):
-        """查询域名归属校验信息
+        r"""查询域名归属校验信息
 
         用于查询域名归属校验信息
         
@@ -2368,7 +2368,7 @@ class CdnClient(Client):
         return http_info
 
     def update_domain_full_config(self, request):
-        """修改域名全量配置接口
+        r"""修改域名全量配置接口
 
         修改域名配置接口，支持修改业务类型、服务范围、备注、IPv6开关、回源方式、回源URL改写、高级回源、Range回源、回源跟随、回源是否校验Etag、回源超时时间、回源请求头、HTTPS配置、TLS版本配置、强制跳转、HSTS、HTTP/2、OCSP Stapling、QUIC、缓存规则、状态码缓存时间、防盗链、IP黑白名单、Use-Agent黑白名单、URL鉴权配置、远程鉴权配置、IP访问限频、HTTP header配置、自定义错误页面配置、智能压缩、请求限速配置、WebSocket配置、视频拖拽、回源SNI、访问URL重写、浏览器缓存过期时间、区域访问控制。
         
@@ -2437,7 +2437,7 @@ class CdnClient(Client):
         return http_info
 
     def update_domain_multi_certificates(self, request):
-        """一个证书批量设置多个域名
+        r"""一个证书批量设置多个域名
 
         一个证书配置多个域名，设置域名强制https回源参数。
         
@@ -2504,7 +2504,7 @@ class CdnClient(Client):
         return http_info
 
     def update_private_bucket_access(self, request):
-        """修改私有桶开启关闭状态
+        r"""修改私有桶开启关闭状态
 
         修改私有桶开启关闭状态。
         
@@ -2573,7 +2573,7 @@ class CdnClient(Client):
         return http_info
 
     def verify_domain_owner(self, request):
-        """域名归属校验
+        r"""域名归属校验
 
         用于域名归属校验
         

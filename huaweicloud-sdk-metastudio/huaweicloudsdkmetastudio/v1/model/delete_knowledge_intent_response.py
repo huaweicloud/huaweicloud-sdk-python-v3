@@ -26,7 +26,7 @@ class DeleteKnowledgeIntentResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteKnowledgeIntentResponse
+        r"""DeleteKnowledgeIntentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteKnowledgeIntentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteKnowledgeIntentResponse.
+        r"""Gets the x_request_id of this DeleteKnowledgeIntentResponse.
 
         :return: The x_request_id of this DeleteKnowledgeIntentResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteKnowledgeIntentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteKnowledgeIntentResponse.
+        r"""Sets the x_request_id of this DeleteKnowledgeIntentResponse.
 
         :param x_request_id: The x_request_id of this DeleteKnowledgeIntentResponse.
         :type x_request_id: str

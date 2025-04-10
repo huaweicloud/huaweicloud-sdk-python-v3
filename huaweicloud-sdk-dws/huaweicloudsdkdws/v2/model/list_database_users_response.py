@@ -26,7 +26,7 @@ class ListDatabaseUsersResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """ListDatabaseUsersResponse
+        r"""ListDatabaseUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDatabaseUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListDatabaseUsersResponse.
+        r"""Gets the users of this ListDatabaseUsersResponse.
 
         user list
 
@@ -55,7 +55,7 @@ class ListDatabaseUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListDatabaseUsersResponse.
+        r"""Sets the users of this ListDatabaseUsersResponse.
 
         user list
 

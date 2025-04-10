@@ -29,7 +29,7 @@ class ListClickHouseInstanceRequest:
     }
 
     def __init__(self, instance_id=None, clickhouse_instance_id=None, x_language=None):
-        """ListClickHouseInstanceRequest
+        r"""ListClickHouseInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListClickHouseInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListClickHouseInstanceRequest.
+        r"""Gets the instance_id of this ListClickHouseInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class ListClickHouseInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListClickHouseInstanceRequest.
+        r"""Sets the instance_id of this ListClickHouseInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class ListClickHouseInstanceRequest:
 
     @property
     def clickhouse_instance_id(self):
-        """Gets the clickhouse_instance_id of this ListClickHouseInstanceRequest.
+        r"""Gets the clickhouse_instance_id of this ListClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class ListClickHouseInstanceRequest:
 
     @clickhouse_instance_id.setter
     def clickhouse_instance_id(self, clickhouse_instance_id):
-        """Sets the clickhouse_instance_id of this ListClickHouseInstanceRequest.
+        r"""Sets the clickhouse_instance_id of this ListClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class ListClickHouseInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListClickHouseInstanceRequest.
+        r"""Gets the x_language of this ListClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class ListClickHouseInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListClickHouseInstanceRequest.
+        r"""Sets the x_language of this ListClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

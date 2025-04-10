@@ -36,7 +36,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, block_time=None, category=None, description=None, timestamp=None):
-        """CreatePunishmentRuleResponse
+        r"""CreatePunishmentRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePunishmentRuleResponse.
+        r"""Gets the id of this CreatePunishmentRuleResponse.
 
         规则id
 
@@ -90,7 +90,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePunishmentRuleResponse.
+        r"""Sets the id of this CreatePunishmentRuleResponse.
 
         规则id
 
@@ -101,7 +101,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreatePunishmentRuleResponse.
+        r"""Gets the policyid of this CreatePunishmentRuleResponse.
 
         所属策略id
 
@@ -112,7 +112,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreatePunishmentRuleResponse.
+        r"""Sets the policyid of this CreatePunishmentRuleResponse.
 
         所属策略id
 
@@ -123,7 +123,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @property
     def block_time(self):
-        """Gets the block_time of this CreatePunishmentRuleResponse.
+        r"""Gets the block_time of this CreatePunishmentRuleResponse.
 
         拦截时间
 
@@ -134,7 +134,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this CreatePunishmentRuleResponse.
+        r"""Sets the block_time of this CreatePunishmentRuleResponse.
 
         拦截时间
 
@@ -145,7 +145,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this CreatePunishmentRuleResponse.
+        r"""Gets the category of this CreatePunishmentRuleResponse.
 
         攻击惩罚类别
 
@@ -156,7 +156,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreatePunishmentRuleResponse.
+        r"""Sets the category of this CreatePunishmentRuleResponse.
 
         攻击惩罚类别
 
@@ -167,7 +167,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreatePunishmentRuleResponse.
+        r"""Gets the description of this CreatePunishmentRuleResponse.
 
         规则描述
 
@@ -178,7 +178,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePunishmentRuleResponse.
+        r"""Sets the description of this CreatePunishmentRuleResponse.
 
         规则描述
 
@@ -189,7 +189,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreatePunishmentRuleResponse.
+        r"""Gets the timestamp of this CreatePunishmentRuleResponse.
 
         创建规则时间戳
 
@@ -200,7 +200,7 @@ class CreatePunishmentRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreatePunishmentRuleResponse.
+        r"""Sets the timestamp of this CreatePunishmentRuleResponse.
 
         创建规则时间戳
 

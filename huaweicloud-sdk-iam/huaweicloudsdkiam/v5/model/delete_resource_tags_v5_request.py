@@ -29,7 +29,7 @@ class DeleteResourceTagsV5Request:
     }
 
     def __init__(self, resource_id=None, resource_type=None, body=None):
-        """DeleteResourceTagsV5Request
+        r"""DeleteResourceTagsV5Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteResourceTagsV5Request:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResourceTagsV5Request.
+        r"""Gets the resource_id of this DeleteResourceTagsV5Request.
 
         资源ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -66,7 +66,7 @@ class DeleteResourceTagsV5Request:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResourceTagsV5Request.
+        r"""Sets the resource_id of this DeleteResourceTagsV5Request.
 
         资源ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -77,7 +77,7 @@ class DeleteResourceTagsV5Request:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteResourceTagsV5Request.
+        r"""Gets the resource_type of this DeleteResourceTagsV5Request.
 
         资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
 
@@ -88,7 +88,7 @@ class DeleteResourceTagsV5Request:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteResourceTagsV5Request.
+        r"""Sets the resource_type of this DeleteResourceTagsV5Request.
 
         资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
 
@@ -99,7 +99,7 @@ class DeleteResourceTagsV5Request:
 
     @property
     def body(self):
-        """Gets the body of this DeleteResourceTagsV5Request.
+        r"""Gets the body of this DeleteResourceTagsV5Request.
 
         待删除的标签键列表。
 
@@ -110,7 +110,7 @@ class DeleteResourceTagsV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteResourceTagsV5Request.
+        r"""Sets the body of this DeleteResourceTagsV5Request.
 
         待删除的标签键列表。
 

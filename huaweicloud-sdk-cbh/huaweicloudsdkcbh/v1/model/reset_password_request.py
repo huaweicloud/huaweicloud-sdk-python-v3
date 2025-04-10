@@ -25,7 +25,7 @@ class ResetPasswordRequest:
     }
 
     def __init__(self, body=None):
-        """ResetPasswordRequest
+        r"""ResetPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetPasswordRequest.
+        r"""Gets the body of this ResetPasswordRequest.
 
         :return: The body of this ResetPasswordRequest.
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetPassword`
@@ -52,7 +52,7 @@ class ResetPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetPasswordRequest.
+        r"""Sets the body of this ResetPasswordRequest.
 
         :param body: The body of this ResetPasswordRequest.
         :type body: :class:`huaweicloudsdkcbh.v1.ResetPassword`

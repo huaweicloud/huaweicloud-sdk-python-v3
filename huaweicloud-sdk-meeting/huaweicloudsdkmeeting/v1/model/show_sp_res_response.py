@@ -26,7 +26,7 @@ class ShowSpResResponse(SdkResponse):
     }
 
     def __init__(self, used_accounts_count=None):
-        """ShowSpResResponse
+        r"""ShowSpResResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSpResResponse(SdkResponse):
 
     @property
     def used_accounts_count(self):
-        """Gets the used_accounts_count of this ShowSpResResponse.
+        r"""Gets the used_accounts_count of this ShowSpResResponse.
 
         SP下所有企业已使用的会议并发数量。
 
@@ -55,7 +55,7 @@ class ShowSpResResponse(SdkResponse):
 
     @used_accounts_count.setter
     def used_accounts_count(self, used_accounts_count):
-        """Sets the used_accounts_count of this ShowSpResResponse.
+        r"""Sets the used_accounts_count of this ShowSpResResponse.
 
         SP下所有企业已使用的会议并发数量。
 

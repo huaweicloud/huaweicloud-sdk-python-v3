@@ -24,7 +24,7 @@ class TagResourceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """TagResourceResponse
+        r"""TagResourceResponse
 
         The model defined in huaweicloud sdk
 

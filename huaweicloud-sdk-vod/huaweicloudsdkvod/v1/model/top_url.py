@@ -35,7 +35,7 @@ class TopUrl:
     }
 
     def __init__(self, value=None, asset_id=None, title=None, duration=None, duration_ms=None, size=None):
-        """TopUrl
+        r"""TopUrl
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TopUrl:
 
     @property
     def value(self):
-        """Gets the value of this TopUrl.
+        r"""Gets the value of this TopUrl.
 
         总播放次数。
 
@@ -89,7 +89,7 @@ class TopUrl:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TopUrl.
+        r"""Sets the value of this TopUrl.
 
         总播放次数。
 
@@ -100,7 +100,7 @@ class TopUrl:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this TopUrl.
+        r"""Gets the asset_id of this TopUrl.
 
         媒资ID。
 
@@ -111,7 +111,7 @@ class TopUrl:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this TopUrl.
+        r"""Sets the asset_id of this TopUrl.
 
         媒资ID。
 
@@ -122,7 +122,7 @@ class TopUrl:
 
     @property
     def title(self):
-        """Gets the title of this TopUrl.
+        r"""Gets the title of this TopUrl.
 
         媒资名称。
 
@@ -133,7 +133,7 @@ class TopUrl:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this TopUrl.
+        r"""Sets the title of this TopUrl.
 
         媒资名称。
 
@@ -144,7 +144,7 @@ class TopUrl:
 
     @property
     def duration(self):
-        """Gets the duration of this TopUrl.
+        r"""Gets the duration of this TopUrl.
 
         媒资时长。  单位：秒。
 
@@ -155,7 +155,7 @@ class TopUrl:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this TopUrl.
+        r"""Sets the duration of this TopUrl.
 
         媒资时长。  单位：秒。
 
@@ -166,7 +166,7 @@ class TopUrl:
 
     @property
     def duration_ms(self):
-        """Gets the duration_ms of this TopUrl.
+        r"""Gets the duration_ms of this TopUrl.
 
         视频时长，单位毫秒。
 
@@ -177,7 +177,7 @@ class TopUrl:
 
     @duration_ms.setter
     def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this TopUrl.
+        r"""Sets the duration_ms of this TopUrl.
 
         视频时长，单位毫秒。
 
@@ -188,7 +188,7 @@ class TopUrl:
 
     @property
     def size(self):
-        """Gets the size of this TopUrl.
+        r"""Gets the size of this TopUrl.
 
         媒资原始大小。  单位：字节。
 
@@ -199,7 +199,7 @@ class TopUrl:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this TopUrl.
+        r"""Sets the size of this TopUrl.
 
         媒资原始大小。  单位：字节。
 

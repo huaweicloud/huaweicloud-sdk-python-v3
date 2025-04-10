@@ -28,7 +28,7 @@ class ListEnabledControlsResponse(SdkResponse):
     }
 
     def __init__(self, enabled_controls=None, page_info=None):
-        """ListEnabledControlsResponse
+        r"""ListEnabledControlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEnabledControlsResponse(SdkResponse):
 
     @property
     def enabled_controls(self):
-        """Gets the enabled_controls of this ListEnabledControlsResponse.
+        r"""Gets the enabled_controls of this ListEnabledControlsResponse.
 
         开启控制策略信息。
 
@@ -62,7 +62,7 @@ class ListEnabledControlsResponse(SdkResponse):
 
     @enabled_controls.setter
     def enabled_controls(self, enabled_controls):
-        """Sets the enabled_controls of this ListEnabledControlsResponse.
+        r"""Sets the enabled_controls of this ListEnabledControlsResponse.
 
         开启控制策略信息。
 
@@ -73,7 +73,7 @@ class ListEnabledControlsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEnabledControlsResponse.
+        r"""Gets the page_info of this ListEnabledControlsResponse.
 
         :return: The page_info of this ListEnabledControlsResponse.
         :rtype: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListEnabledControlsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEnabledControlsResponse.
+        r"""Sets the page_info of this ListEnabledControlsResponse.
 
         :param page_info: The page_info of this ListEnabledControlsResponse.
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`

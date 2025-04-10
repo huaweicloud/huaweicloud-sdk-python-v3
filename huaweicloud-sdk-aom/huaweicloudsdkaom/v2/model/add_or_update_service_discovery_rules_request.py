@@ -25,7 +25,7 @@ class AddOrUpdateServiceDiscoveryRulesRequest:
     }
 
     def __init__(self, body=None):
-        """AddOrUpdateServiceDiscoveryRulesRequest
+        r"""AddOrUpdateServiceDiscoveryRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddOrUpdateServiceDiscoveryRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddOrUpdateServiceDiscoveryRulesRequest.
+        r"""Gets the body of this AddOrUpdateServiceDiscoveryRulesRequest.
 
         :return: The body of this AddOrUpdateServiceDiscoveryRulesRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.AppRulesBody`
@@ -52,7 +52,7 @@ class AddOrUpdateServiceDiscoveryRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddOrUpdateServiceDiscoveryRulesRequest.
+        r"""Sets the body of this AddOrUpdateServiceDiscoveryRulesRequest.
 
         :param body: The body of this AddOrUpdateServiceDiscoveryRulesRequest.
         :type body: :class:`huaweicloudsdkaom.v2.AppRulesBody`

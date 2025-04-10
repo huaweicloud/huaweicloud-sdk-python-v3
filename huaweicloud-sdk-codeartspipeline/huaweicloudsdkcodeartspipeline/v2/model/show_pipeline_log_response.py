@@ -36,7 +36,7 @@ class ShowPipelineLogResponse(SdkResponse):
     }
 
     def __init__(self, has_more=None, end_offset=None, start_offset=None, log=None, location=None, step_run_id=None):
-        """ShowPipelineLogResponse
+        r"""ShowPipelineLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @property
     def has_more(self):
-        """Gets the has_more of this ShowPipelineLogResponse.
+        r"""Gets the has_more of this ShowPipelineLogResponse.
 
         是否有更多日志
 
@@ -90,7 +90,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this ShowPipelineLogResponse.
+        r"""Sets the has_more of this ShowPipelineLogResponse.
 
         是否有更多日志
 
@@ -101,7 +101,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @property
     def end_offset(self):
-        """Gets the end_offset of this ShowPipelineLogResponse.
+        r"""Gets the end_offset of this ShowPipelineLogResponse.
 
         查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
 
@@ -112,7 +112,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @end_offset.setter
     def end_offset(self, end_offset):
-        """Sets the end_offset of this ShowPipelineLogResponse.
+        r"""Sets the end_offset of this ShowPipelineLogResponse.
 
         查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
 
@@ -123,7 +123,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @property
     def start_offset(self):
-        """Gets the start_offset of this ShowPipelineLogResponse.
+        r"""Gets the start_offset of this ShowPipelineLogResponse.
 
         查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
 
@@ -134,7 +134,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @start_offset.setter
     def start_offset(self, start_offset):
-        """Sets the start_offset of this ShowPipelineLogResponse.
+        r"""Sets the start_offset of this ShowPipelineLogResponse.
 
         查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
 
@@ -145,7 +145,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @property
     def log(self):
-        """Gets the log of this ShowPipelineLogResponse.
+        r"""Gets the log of this ShowPipelineLogResponse.
 
         日志内容
 
@@ -156,7 +156,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @log.setter
     def log(self, log):
-        """Sets the log of this ShowPipelineLogResponse.
+        r"""Sets the log of this ShowPipelineLogResponse.
 
         日志内容
 
@@ -167,7 +167,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowPipelineLogResponse.
+        r"""Gets the location of this ShowPipelineLogResponse.
 
         日志存储位置
 
@@ -178,7 +178,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowPipelineLogResponse.
+        r"""Sets the location of this ShowPipelineLogResponse.
 
         日志存储位置
 
@@ -189,7 +189,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @property
     def step_run_id(self):
-        """Gets the step_run_id of this ShowPipelineLogResponse.
+        r"""Gets the step_run_id of this ShowPipelineLogResponse.
 
         所属步骤ID
 
@@ -200,7 +200,7 @@ class ShowPipelineLogResponse(SdkResponse):
 
     @step_run_id.setter
     def step_run_id(self, step_run_id):
-        """Sets the step_run_id of this ShowPipelineLogResponse.
+        r"""Sets the step_run_id of this ShowPipelineLogResponse.
 
         所属步骤ID
 

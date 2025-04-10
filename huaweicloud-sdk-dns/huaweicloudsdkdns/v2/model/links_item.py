@@ -27,7 +27,7 @@ class LinksItem:
     }
 
     def __init__(self, href=None, rel=None):
-        """LinksItem
+        r"""LinksItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LinksItem:
 
     @property
     def href(self):
-        """Gets the href of this LinksItem.
+        r"""Gets the href of this LinksItem.
 
         对应快捷链接。
 
@@ -59,7 +59,7 @@ class LinksItem:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this LinksItem.
+        r"""Sets the href of this LinksItem.
 
         对应快捷链接。
 
@@ -70,7 +70,7 @@ class LinksItem:
 
     @property
     def rel(self):
-        """Gets the rel of this LinksItem.
+        r"""Gets the rel of this LinksItem.
 
         快捷链接标记名称。
 
@@ -81,7 +81,7 @@ class LinksItem:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this LinksItem.
+        r"""Sets the rel of this LinksItem.
 
         快捷链接标记名称。
 

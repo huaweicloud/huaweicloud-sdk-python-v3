@@ -26,7 +26,7 @@ class ShowIncreBackupPolicy1Response(SdkResponse):
     }
 
     def __init__(self, incre_backup_policy=None):
-        """ShowIncreBackupPolicy1Response
+        r"""ShowIncreBackupPolicy1Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowIncreBackupPolicy1Response(SdkResponse):
 
     @property
     def incre_backup_policy(self):
-        """Gets the incre_backup_policy of this ShowIncreBackupPolicy1Response.
+        r"""Gets the incre_backup_policy of this ShowIncreBackupPolicy1Response.
 
         :return: The incre_backup_policy of this ShowIncreBackupPolicy1Response.
         :rtype: :class:`huaweicloudsdkrds.v3.ShowIncreBackupPolicyRespBodyIncreBackupPolicy`
@@ -53,7 +53,7 @@ class ShowIncreBackupPolicy1Response(SdkResponse):
 
     @incre_backup_policy.setter
     def incre_backup_policy(self, incre_backup_policy):
-        """Sets the incre_backup_policy of this ShowIncreBackupPolicy1Response.
+        r"""Sets the incre_backup_policy of this ShowIncreBackupPolicy1Response.
 
         :param incre_backup_policy: The incre_backup_policy of this ShowIncreBackupPolicy1Response.
         :type incre_backup_policy: :class:`huaweicloudsdkrds.v3.ShowIncreBackupPolicyRespBodyIncreBackupPolicy`

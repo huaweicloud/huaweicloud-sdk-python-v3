@@ -30,7 +30,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
     }
 
     def __init__(self, user_group=None, request_id=None, header_response_token=None):
-        """UpdateVpnUserGroupResponse
+        r"""UpdateVpnUserGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
 
     @property
     def user_group(self):
-        """Gets the user_group of this UpdateVpnUserGroupResponse.
+        r"""Gets the user_group of this UpdateVpnUserGroupResponse.
 
         :return: The user_group of this UpdateVpnUserGroupResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.VpnUserGroup`
@@ -67,7 +67,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this UpdateVpnUserGroupResponse.
+        r"""Sets the user_group of this UpdateVpnUserGroupResponse.
 
         :param user_group: The user_group of this UpdateVpnUserGroupResponse.
         :type user_group: :class:`huaweicloudsdkvpn.v5.VpnUserGroup`
@@ -76,7 +76,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVpnUserGroupResponse.
+        r"""Gets the request_id of this UpdateVpnUserGroupResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVpnUserGroupResponse.
+        r"""Sets the request_id of this UpdateVpnUserGroupResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVpnUserGroupResponse.
+        r"""Gets the header_response_token of this UpdateVpnUserGroupResponse.
 
         :return: The header_response_token of this UpdateVpnUserGroupResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateVpnUserGroupResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVpnUserGroupResponse.
+        r"""Sets the header_response_token of this UpdateVpnUserGroupResponse.
 
         :param header_response_token: The header_response_token of this UpdateVpnUserGroupResponse.
         :type header_response_token: str

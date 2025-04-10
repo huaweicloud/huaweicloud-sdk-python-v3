@@ -26,7 +26,7 @@ class GenerateSurfacePointsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """GenerateSurfacePointsResponse
+        r"""GenerateSurfacePointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GenerateSurfacePointsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this GenerateSurfacePointsResponse.
+        r"""Gets the body of this GenerateSurfacePointsResponse.
 
         :return: The body of this GenerateSurfacePointsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class GenerateSurfacePointsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateSurfacePointsResponse.
+        r"""Sets the body of this GenerateSurfacePointsResponse.
 
         :param body: The body of this GenerateSurfacePointsResponse.
         :type body: str

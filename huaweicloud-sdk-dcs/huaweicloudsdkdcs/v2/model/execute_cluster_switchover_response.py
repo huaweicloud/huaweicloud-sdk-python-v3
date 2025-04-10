@@ -26,7 +26,7 @@ class ExecuteClusterSwitchoverResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ExecuteClusterSwitchoverResponse
+        r"""ExecuteClusterSwitchoverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteClusterSwitchoverResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecuteClusterSwitchoverResponse.
+        r"""Gets the job_id of this ExecuteClusterSwitchoverResponse.
 
         集群分片倒换的任务ID
 
@@ -55,7 +55,7 @@ class ExecuteClusterSwitchoverResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecuteClusterSwitchoverResponse.
+        r"""Sets the job_id of this ExecuteClusterSwitchoverResponse.
 
         集群分片倒换的任务ID
 

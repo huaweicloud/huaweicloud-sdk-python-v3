@@ -50,7 +50,7 @@ class UpdateSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, used=None, sources=None, targets=None, created_time=None, updated_time=None, x_request_id=None):
-        """UpdateSubscriptionResponse
+        r"""UpdateSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateSubscriptionResponse.
+        r"""Gets the id of this UpdateSubscriptionResponse.
 
         订阅ID
 
@@ -139,7 +139,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSubscriptionResponse.
+        r"""Sets the id of this UpdateSubscriptionResponse.
 
         订阅ID
 
@@ -150,7 +150,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateSubscriptionResponse.
+        r"""Gets the name of this UpdateSubscriptionResponse.
 
         订阅名称
 
@@ -161,7 +161,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSubscriptionResponse.
+        r"""Sets the name of this UpdateSubscriptionResponse.
 
         订阅名称
 
@@ -172,7 +172,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateSubscriptionResponse.
+        r"""Gets the description of this UpdateSubscriptionResponse.
 
         订阅描述
 
@@ -183,7 +183,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSubscriptionResponse.
+        r"""Sets the description of this UpdateSubscriptionResponse.
 
         订阅描述
 
@@ -194,7 +194,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateSubscriptionResponse.
+        r"""Gets the type of this UpdateSubscriptionResponse.
 
         类型
 
@@ -205,7 +205,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateSubscriptionResponse.
+        r"""Sets the type of this UpdateSubscriptionResponse.
 
         类型
 
@@ -216,7 +216,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateSubscriptionResponse.
+        r"""Gets the status of this UpdateSubscriptionResponse.
 
         状态
 
@@ -227,7 +227,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateSubscriptionResponse.
+        r"""Sets the status of this UpdateSubscriptionResponse.
 
         状态
 
@@ -238,7 +238,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this UpdateSubscriptionResponse.
+        r"""Gets the channel_id of this UpdateSubscriptionResponse.
 
         通道ID
 
@@ -249,7 +249,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this UpdateSubscriptionResponse.
+        r"""Sets the channel_id of this UpdateSubscriptionResponse.
 
         通道ID
 
@@ -260,7 +260,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this UpdateSubscriptionResponse.
+        r"""Gets the channel_name of this UpdateSubscriptionResponse.
 
         通道名称
 
@@ -271,7 +271,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this UpdateSubscriptionResponse.
+        r"""Sets the channel_name of this UpdateSubscriptionResponse.
 
         通道名称
 
@@ -282,7 +282,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def used(self):
-        """Gets the used of this UpdateSubscriptionResponse.
+        r"""Gets the used of this UpdateSubscriptionResponse.
 
         标签信息
 
@@ -293,7 +293,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @used.setter
     def used(self, used):
-        """Sets the used of this UpdateSubscriptionResponse.
+        r"""Sets the used of this UpdateSubscriptionResponse.
 
         标签信息
 
@@ -304,7 +304,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this UpdateSubscriptionResponse.
+        r"""Gets the sources of this UpdateSubscriptionResponse.
 
         订阅源列表
 
@@ -315,7 +315,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this UpdateSubscriptionResponse.
+        r"""Sets the sources of this UpdateSubscriptionResponse.
 
         订阅源列表
 
@@ -326,7 +326,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def targets(self):
-        """Gets the targets of this UpdateSubscriptionResponse.
+        r"""Gets the targets of this UpdateSubscriptionResponse.
 
         订阅目标列表
 
@@ -337,7 +337,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this UpdateSubscriptionResponse.
+        r"""Sets the targets of this UpdateSubscriptionResponse.
 
         订阅目标列表
 
@@ -348,7 +348,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateSubscriptionResponse.
+        r"""Gets the created_time of this UpdateSubscriptionResponse.
 
         创建时间
 
@@ -359,7 +359,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateSubscriptionResponse.
+        r"""Sets the created_time of this UpdateSubscriptionResponse.
 
         创建时间
 
@@ -370,7 +370,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this UpdateSubscriptionResponse.
+        r"""Gets the updated_time of this UpdateSubscriptionResponse.
 
         更新时间
 
@@ -381,7 +381,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this UpdateSubscriptionResponse.
+        r"""Sets the updated_time of this UpdateSubscriptionResponse.
 
         更新时间
 
@@ -392,7 +392,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateSubscriptionResponse.
+        r"""Gets the x_request_id of this UpdateSubscriptionResponse.
 
         :return: The x_request_id of this UpdateSubscriptionResponse.
         :rtype: str
@@ -401,7 +401,7 @@ class UpdateSubscriptionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateSubscriptionResponse.
+        r"""Sets the x_request_id of this UpdateSubscriptionResponse.
 
         :param x_request_id: The x_request_id of this UpdateSubscriptionResponse.
         :type x_request_id: str

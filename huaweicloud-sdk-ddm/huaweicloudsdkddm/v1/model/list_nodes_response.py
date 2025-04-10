@@ -32,7 +32,7 @@ class ListNodesResponse(SdkResponse):
     }
 
     def __init__(self, nodes=None, offset=None, limit=None, total=None):
-        """ListNodesResponse
+        r"""ListNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListNodesResponse.
+        r"""Gets the nodes of this ListNodesResponse.
 
         DDM实例节点信息列表的集合。
 
@@ -76,7 +76,7 @@ class ListNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListNodesResponse.
+        r"""Sets the nodes of this ListNodesResponse.
 
         DDM实例节点信息列表的集合。
 
@@ -87,7 +87,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListNodesResponse.
+        r"""Gets the offset of this ListNodesResponse.
 
         分页参数: 起始值。
 
@@ -98,7 +98,7 @@ class ListNodesResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNodesResponse.
+        r"""Sets the offset of this ListNodesResponse.
 
         分页参数: 起始值。
 
@@ -109,7 +109,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListNodesResponse.
+        r"""Gets the limit of this ListNodesResponse.
 
         分页参数：每页多少条。
 
@@ -120,7 +120,7 @@ class ListNodesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNodesResponse.
+        r"""Sets the limit of this ListNodesResponse.
 
         分页参数：每页多少条。
 
@@ -131,7 +131,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListNodesResponse.
+        r"""Gets the total of this ListNodesResponse.
 
         DDM实例节点个数。
 
@@ -142,7 +142,7 @@ class ListNodesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListNodesResponse.
+        r"""Sets the total of this ListNodesResponse.
 
         DDM实例节点个数。
 

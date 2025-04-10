@@ -31,7 +31,7 @@ class ListRulesRequest:
     }
 
     def __init__(self, rule_languages=None, rule_severity=None, offset=None, limit=None):
-        """ListRulesRequest
+        r"""ListRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListRulesRequest:
 
     @property
     def rule_languages(self):
-        """Gets the rule_languages of this ListRulesRequest.
+        r"""Gets the rule_languages of this ListRulesRequest.
 
         规则对应的语言
 
@@ -75,7 +75,7 @@ class ListRulesRequest:
 
     @rule_languages.setter
     def rule_languages(self, rule_languages):
-        """Sets the rule_languages of this ListRulesRequest.
+        r"""Sets the rule_languages of this ListRulesRequest.
 
         规则对应的语言
 
@@ -86,7 +86,7 @@ class ListRulesRequest:
 
     @property
     def rule_severity(self):
-        """Gets the rule_severity of this ListRulesRequest.
+        r"""Gets the rule_severity of this ListRulesRequest.
 
         缺陷等级，0致命，1严重，2一般，3提示
 
@@ -97,7 +97,7 @@ class ListRulesRequest:
 
     @rule_severity.setter
     def rule_severity(self, rule_severity):
-        """Sets the rule_severity of this ListRulesRequest.
+        r"""Sets the rule_severity of this ListRulesRequest.
 
         缺陷等级，0致命，1严重，2一般，3提示
 
@@ -108,7 +108,7 @@ class ListRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRulesRequest.
+        r"""Gets the offset of this ListRulesRequest.
 
         分页索引，偏移量
 
@@ -119,7 +119,7 @@ class ListRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRulesRequest.
+        r"""Sets the offset of this ListRulesRequest.
 
         分页索引，偏移量
 
@@ -130,7 +130,7 @@ class ListRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRulesRequest.
+        r"""Gets the limit of this ListRulesRequest.
 
         每页显示的数量
 
@@ -141,7 +141,7 @@ class ListRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRulesRequest.
+        r"""Sets the limit of this ListRulesRequest.
 
         每页显示的数量
 

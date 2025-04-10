@@ -28,7 +28,7 @@ class ListAttachedGroupPoliciesV5Response(SdkResponse):
     }
 
     def __init__(self, attached_policies=None, page_info=None):
-        """ListAttachedGroupPoliciesV5Response
+        r"""ListAttachedGroupPoliciesV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAttachedGroupPoliciesV5Response(SdkResponse):
 
     @property
     def attached_policies(self):
-        """Gets the attached_policies of this ListAttachedGroupPoliciesV5Response.
+        r"""Gets the attached_policies of this ListAttachedGroupPoliciesV5Response.
 
         身份策略列表。
 
@@ -62,7 +62,7 @@ class ListAttachedGroupPoliciesV5Response(SdkResponse):
 
     @attached_policies.setter
     def attached_policies(self, attached_policies):
-        """Sets the attached_policies of this ListAttachedGroupPoliciesV5Response.
+        r"""Sets the attached_policies of this ListAttachedGroupPoliciesV5Response.
 
         身份策略列表。
 
@@ -73,7 +73,7 @@ class ListAttachedGroupPoliciesV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAttachedGroupPoliciesV5Response.
+        r"""Gets the page_info of this ListAttachedGroupPoliciesV5Response.
 
         :return: The page_info of this ListAttachedGroupPoliciesV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListAttachedGroupPoliciesV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAttachedGroupPoliciesV5Response.
+        r"""Sets the page_info of this ListAttachedGroupPoliciesV5Response.
 
         :param page_info: The page_info of this ListAttachedGroupPoliciesV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

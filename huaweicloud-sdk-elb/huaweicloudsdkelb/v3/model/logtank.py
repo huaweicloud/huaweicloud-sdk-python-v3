@@ -33,7 +33,7 @@ class Logtank:
     }
 
     def __init__(self, id=None, project_id=None, loadbalancer_id=None, log_group_id=None, log_topic_id=None):
-        """Logtank
+        r"""Logtank
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Logtank:
 
     @property
     def id(self):
-        """Gets the id of this Logtank.
+        r"""Gets the id of this Logtank.
 
         云日志ID。
 
@@ -77,7 +77,7 @@ class Logtank:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Logtank.
+        r"""Sets the id of this Logtank.
 
         云日志ID。
 
@@ -88,7 +88,7 @@ class Logtank:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Logtank.
+        r"""Gets the project_id of this Logtank.
 
         参数解释：项目ID。
 
@@ -99,7 +99,7 @@ class Logtank:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Logtank.
+        r"""Sets the project_id of this Logtank.
 
         参数解释：项目ID。
 
@@ -110,7 +110,7 @@ class Logtank:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this Logtank.
+        r"""Gets the loadbalancer_id of this Logtank.
 
         负载均衡器ID。
 
@@ -121,7 +121,7 @@ class Logtank:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this Logtank.
+        r"""Sets the loadbalancer_id of this Logtank.
 
         负载均衡器ID。
 
@@ -132,7 +132,7 @@ class Logtank:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this Logtank.
+        r"""Gets the log_group_id of this Logtank.
 
         云日志分组ID。
 
@@ -143,7 +143,7 @@ class Logtank:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this Logtank.
+        r"""Sets the log_group_id of this Logtank.
 
         云日志分组ID。
 
@@ -154,7 +154,7 @@ class Logtank:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this Logtank.
+        r"""Gets the log_topic_id of this Logtank.
 
         云日志主题ID。
 
@@ -165,7 +165,7 @@ class Logtank:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this Logtank.
+        r"""Sets the log_topic_id of this Logtank.
 
         云日志主题ID。
 

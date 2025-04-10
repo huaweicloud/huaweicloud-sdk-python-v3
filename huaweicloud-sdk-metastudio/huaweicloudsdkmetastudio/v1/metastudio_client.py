@@ -34,7 +34,7 @@ class MetaStudioClient(Client):
         return client_builder
 
     def create_active_code(self, request):
-        """创建激活码
+        r"""创建激活码
 
         该接口用于创建激活码。
         
@@ -101,7 +101,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_active_code(self, request):
-        """删除激活码
+        r"""删除激活码
 
         该接口用于删除激活码。
         
@@ -168,7 +168,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_active_code(self, request):
-        """查询激活码列表
+        r"""查询激活码列表
 
         该接口用于查询激活码列表。
         
@@ -239,7 +239,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def reset_active_code(self, request):
-        """重置激活码
+        r"""重置激活码
 
         该接口用于重置激活码。
         
@@ -308,7 +308,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_active_code(self, request):
-        """查询激活码详情
+        r"""查询激活码详情
 
         该接口用于查询激活码详情。
         
@@ -375,7 +375,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_active_code(self, request):
-        """修改激活码
+        r"""修改激活码
 
         该接口用于修改激活码。
         
@@ -444,7 +444,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_agency_with_role_type(self, request):
-        """创建委托
+        r"""创建委托
 
         该接口用于创建委托。
         
@@ -509,7 +509,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_agency_with_role_type(self, request):
-        """删除委托
+        r"""删除委托
 
         该接口用于删除项目下委托。
         
@@ -574,7 +574,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_agency(self, request):
-        """查询委托
+        r"""查询委托
 
         该接口用于查询项目下委托
         
@@ -639,7 +639,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_dialog_url(self, request):
-        """创建对话链接
+        r"""创建对话链接
 
         该接口用于创建对话链接。
         
@@ -706,7 +706,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_smart_chat_job(self, request):
-        """查询数字人智能交互任务
+        r"""查询数字人智能交互任务
 
         该接口用于查询数字人智能交互任务。
         
@@ -775,7 +775,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def start_smart_chat_job(self, request):
-        """启动数字人智能交互任务
+        r"""启动数字人智能交互任务
 
         该接口用于启动数字人智能交互任务。
         
@@ -846,7 +846,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def stop_smart_chat_job(self, request):
-        """结束数字人智能交互任务
+        r"""结束数字人智能交互任务
 
         该接口用于结束数字人智能交互任务。
         
@@ -915,7 +915,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def batch_execute_asset_action(self, request):
-        """批量资产操作
+        r"""批量资产操作
 
         该接口用批量资产操作。
         
@@ -982,7 +982,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_asset_by_replication_info(self, request):
-        """复制资产
+        r"""复制资产
 
         该接口用于在Region B复制Region A的指定资产。
         
@@ -1049,7 +1049,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_digital_asset(self, request):
-        """创建资产
+        r"""创建资产
 
         该接口用于在资产库中添加上传新的媒体资产。可上传的资产类型包括：分身数字人模型、背景图片、素材图片、素材视频、PPT等。
         &gt; 上传的图片、视频和背景图片，如果需要在视频制作素材中可见，需要设置system_properties。
@@ -1122,7 +1122,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_asset(self, request):
-        """删除资产
+        r"""删除资产
 
         该接口用于删除资产库中的媒体资产。调用该接口删除媒体资产时，媒体资产会放入回收站中，不会彻底删除。如需彻底删除资产，需增加“mode&#x3D;force”参数配置。
         
@@ -1191,7 +1191,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_asset_summary(self, request):
-        """查询资产概要
+        r"""查询资产概要
 
         该接口用于查询媒体资产库中指定的多个资产的概要信息。
         
@@ -1258,7 +1258,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_assets(self, request):
-        """查询资产列表
+        r"""查询资产列表
 
         该接口用于查询资产库中的媒体资产列表。
         
@@ -1385,7 +1385,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def restore_asset(self, request):
-        """恢复被删除的资产
+        r"""恢复被删除的资产
 
         该接口用于恢复被删除至回收站的媒体资产。
         
@@ -1452,7 +1452,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_asset(self, request):
-        """查询资产详情
+        r"""查询资产详情
 
         该接口用于查询资产库中指定媒体资产的详情。
         
@@ -1519,7 +1519,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_asset_replication_info(self, request):
-        """查询资产复制信息
+        r"""查询资产复制信息
 
         当需要将资产从A Region复制到B Region时，先要在A Region调用该接口用于查询资产复制信息。
         
@@ -1586,7 +1586,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_digital_asset(self, request):
-        """更新资产
+        r"""更新资产
 
         该接口用于更新资产库中的媒体资产信息。
         
@@ -1655,7 +1655,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_digital_human_business_card(self, request):
-        """创建数字人名片制作
+        r"""创建数字人名片制作
 
         该接口用于数字人名片制作任务。
         
@@ -1722,7 +1722,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_digital_human_business_card(self, request):
-        """删除数字人名片制作任务
+        r"""删除数字人名片制作任务
 
         该接口用于删除数字人名片制作任务。
         
@@ -1789,7 +1789,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_digital_human_business_card(self, request):
-        """查询数字人名片制作任务列表
+        r"""查询数字人名片制作任务列表
 
         该接口用于查询数字人名片制作任务列表。
         
@@ -1870,7 +1870,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_digital_human_business_card(self, request):
-        """查询数字人名片制作任务详情
+        r"""查询数字人名片制作任务详情
 
         该接口用于查询数字人名片制作任务详情。
         
@@ -1937,7 +1937,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_digital_human_business_card(self, request):
-        """更新数字人名片制作
+        r"""更新数字人名片制作
 
         该接口用于更新数字人名片制作任务。
         
@@ -2006,7 +2006,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_digital_human_video(self, request):
-        """查询视频制作任务列表
+        r"""查询视频制作任务列表
 
         该接口用于查询视频制作任务列表。可查询分身数字人视频制作列表，照片数字人视频制作列表等。
         &gt; - 默认查询最近一个月任务记录。
@@ -2097,7 +2097,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def cancel2_d_digital_human_video(self, request):
-        """取消等待中的分身数字人视频制作任务
+        r"""取消等待中的分身数字人视频制作任务
 
         该接口用于取消等待中的分身数字人视频制作任务。
         
@@ -2164,7 +2164,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create2_d_digital_human_video(self, request):
-        """创建分身数字人视频制作任务
+        r"""创建分身数字人视频制作任务
 
         该接口用于创建分身数字人视频制作任务。
         
@@ -2231,7 +2231,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show2_d_digital_human_video(self, request):
-        """查询分身数字人视频制作任务详情
+        r"""查询分身数字人视频制作任务详情
 
         该接口用于查询分身数字人视频制作任务详情。
         
@@ -2300,7 +2300,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def cancel_photo_digital_human_video(self, request):
-        """取消等待中的照片分身数字人视频制作任务
+        r"""取消等待中的照片分身数字人视频制作任务
 
         该接口用于取消等待中的照片分身数字人视频制作任务。
         
@@ -2367,7 +2367,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_photo_detection(self, request):
-        """创建照片检测任务
+        r"""创建照片检测任务
 
         该接口用于创建照片检测任务，检测照片是否满足制作照片数字人的要求。
         
@@ -2434,7 +2434,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_photo_digital_human_video(self, request):
-        """创建照片分身数字人视频制作任务
+        r"""创建照片分身数字人视频制作任务
 
         该接口用于创建照片分身数字人视频制作任务。
         
@@ -2501,7 +2501,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_photo_detection(self, request):
-        """查询照片检测任务详情
+        r"""查询照片检测任务详情
 
         该接口用于查询照片检测任务详情。
         
@@ -2568,7 +2568,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_photo_digital_human_video(self, request):
-        """查询照片分身数字人视频制作任务详情
+        r"""查询照片分身数字人视频制作任务详情
 
         该接口用于查询照片分身数字人视频制作任务详情。
         
@@ -2637,7 +2637,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def confirm_file_upload(self, request):
-        """确认文件已上传
+        r"""确认文件已上传
 
         资产文件上传完毕后，通过该接口确认上传完成。
         
@@ -2706,7 +2706,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_file(self, request):
-        """创建文件并获取上传URL
+        r"""创建文件并获取上传URL
 
         该接口用于创建文件并获取上传URL。
         
@@ -2773,7 +2773,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_large_file(self, request):
-        """创建大文件
+        r"""创建大文件
 
         该接口用于创建大文件（超过5G），获取分段上传URL。
         
@@ -2840,7 +2840,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_file(self, request):
-        """删除文件
+        r"""删除文件
 
         该接口用于删除媒体资产库中指定的文件。
         
@@ -2907,7 +2907,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_hot_question(self, request):
-        """创建热点问题
+        r"""创建热点问题
 
         该接口用于创建热点问题。
         
@@ -2974,7 +2974,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_hot_question(self, request):
-        """删除热点问题
+        r"""删除热点问题
 
         该接口用于删除热点问题。
         
@@ -3041,7 +3041,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_hot_question(self, request):
-        """查询热点问题列表
+        r"""查询热点问题列表
 
         该接口用于查询热点问题列表。
         
@@ -3116,7 +3116,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_hot_question(self, request):
-        """查询热点问题详情
+        r"""查询热点问题详情
 
         该接口用于查询热点问题详情。
         
@@ -3183,7 +3183,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_hot_question(self, request):
-        """修改热点问题
+        r"""修改热点问题
 
         该接口用于修改热点问题。
         
@@ -3252,7 +3252,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_hot_words(self, request):
-        """创建热词记录
+        r"""创建热词记录
 
         该接口用于创建热词记录。
         
@@ -3319,7 +3319,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_hot_words(self, request):
-        """删除热词记录
+        r"""删除热词记录
 
         该接口用于删除热词记录。
         
@@ -3386,7 +3386,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_hot_words(self, request):
-        """查询热词记录列表
+        r"""查询热词记录列表
 
         该接口用于查询热词记录列表。
         
@@ -3461,7 +3461,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_hot_words(self, request):
-        """查询配置热词记录详情
+        r"""查询配置热词记录详情
 
         该接口用于查询热词记录详情。
         
@@ -3528,7 +3528,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_hot_words_switch(self, request):
-        """查询热词功能开关
+        r"""查询热词功能开关
 
         该接口用于查询热词功能开关。
         
@@ -3595,7 +3595,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_hot_words(self, request):
-        """修改热词记录
+        r"""修改热词记录
 
         该接口用于修改热词记录。
         
@@ -3664,7 +3664,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_hot_words_switch(self, request):
-        """修改热词功能开关
+        r"""修改热词功能开关
 
         该接口用于修改热词功能开关。
         
@@ -3731,7 +3731,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_intent_and_question(self, request):
-        """创建知识库意图和问法
+        r"""创建知识库意图和问法
 
         该接口用于创建知识库意图和问法。一个意图包含一个主题，一个答案，若干个问法等。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -3798,7 +3798,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_knowledge_intent(self, request):
-        """创建知识库意图
+        r"""创建知识库意图
 
         该接口用于创建知识库意图。一个意图包含一个主题，一个答案，若干个问法等。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -3865,7 +3865,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_knowledge_intent(self, request):
-        """删除知识库意图
+        r"""删除知识库意图
 
         该接口用于删除知识库意图。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -3932,7 +3932,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_knowledge_intent(self, request):
-        """查询知识库意图列表
+        r"""查询知识库意图列表
 
         该接口用于查询知识库意图列表。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4003,7 +4003,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_knowledge_intent(self, request):
-        """查询知识库意图详情
+        r"""查询知识库意图详情
 
         该接口用于查询知识库意图详情。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4070,7 +4070,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_knowledge_intent(self, request):
-        """修改知识库意图
+        r"""修改知识库意图
 
         该接口用于修改知识库意图。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4139,7 +4139,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_batch_knowledge_question(self, request):
-        """批量创建知识库问法
+        r"""批量创建知识库问法
 
         该接口用于批量创建知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4206,7 +4206,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_knowledge_question(self, request):
-        """创建知识库问法
+        r"""创建知识库问法
 
         该接口用于创建知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4273,7 +4273,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_knowledge_question(self, request):
-        """删除知识库问法
+        r"""删除知识库问法
 
         该接口用于删除知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4340,7 +4340,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_knowledge_question(self, request):
-        """查询知识库问法列表
+        r"""查询知识库问法列表
 
         该接口用于查询知识库问法列表。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4411,7 +4411,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_knowledge_question(self, request):
-        """查询知识库问法详情
+        r"""查询知识库问法详情
 
         该接口用于查询知识库问法详情。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4478,7 +4478,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_batch_knowledge_question(self, request):
-        """批量修改知识库问法
+        r"""批量修改知识库问法
 
         该接口用于批量修改知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4545,7 +4545,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_knowledge_question(self, request):
-        """修改知识库问法
+        r"""修改知识库问法
 
         该接口用于修改知识库问法。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4614,7 +4614,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_knowledge_skill(self, request):
-        """创建知识库技能
+        r"""创建知识库技能
 
         该接口用于创建知识库技能。一个技能用于特定场景的交互问答，包含若干个意图等。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4681,7 +4681,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_knowledge_skill(self, request):
-        """删除知识库技能
+        r"""删除知识库技能
 
         该接口用于删除知识库技能。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4748,7 +4748,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def export_knowledge_skill(self, request):
-        """导出知识库技能
+        r"""导出知识库技能
 
         该接口用于导出知识库技能。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4817,7 +4817,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_knowledge_skill(self, request):
-        """查询知识库技能列表
+        r"""查询知识库技能列表
 
         该接口用于查询知识库技能列表。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4886,7 +4886,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_knowledge_skill(self, request):
-        """查询知识库技能详情
+        r"""查询知识库技能详情
 
         该接口用于查询知识库技能详情。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -4953,7 +4953,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_knowledge_skill(self, request):
-        """修改知识库技能
+        r"""修改知识库技能
 
         该接口用于修改知识库技能。接口使用限制详见[API使用限制](metastudio_02_0000.xml)。
         
@@ -5022,7 +5022,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_live_platform(self, request):
-        """创建第三方直播平台
+        r"""创建第三方直播平台
 
         该接口用于创建第三方直播平台。
         
@@ -5089,7 +5089,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_live_platform(self, request):
-        """删除第三方直播平台信息
+        r"""删除第三方直播平台信息
 
         该接口用于删除第三方直播平台信息。
         
@@ -5156,7 +5156,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_live_platform_products(self, request):
-        """查询第三方直播平台商品列表
+        r"""查询第三方直播平台商品列表
 
         该接口用于查询第三方直播平台商品列表。
         
@@ -5227,7 +5227,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_live_platforms(self, request):
-        """查询直播平台列表
+        r"""查询直播平台列表
 
         该接口用于查询直播平台列表。
         
@@ -5296,7 +5296,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_live_platform(self, request):
-        """查询第三方直播平台信息
+        r"""查询第三方直播平台信息
 
         该接口用于查询第三方直播平台信息。
         
@@ -5363,7 +5363,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_live_platform(self, request):
-        """更新第三方直播平台信息
+        r"""更新第三方直播平台信息
 
         该接口用于更新第三方直播平台信息。
         
@@ -5432,7 +5432,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_once_code(self, request):
-        """创建一次性鉴权码
+        r"""创建一次性鉴权码
 
         该接口用于创建一次性鉴权码，有效期5分钟，鉴权码只能使用一次，每次使用后需要重新获取。
         &gt; 接口只能通过第三方后台调用，不能在浏览器前台直接调用，否则会有跨域问题。
@@ -5498,7 +5498,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_meta_studio_orders(self, request):
-        """订购metastudio云服务产品
+        r"""订购metastudio云服务产品
 
         该接口用于订购MetaStudio服务的包周期,一次性,按需套餐包产品
         
@@ -5563,7 +5563,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def batch_delete_pacify_words(self, request):
-        """批量删除安抚话术
+        r"""批量删除安抚话术
 
         该接口用于批量删除安抚话术。
         
@@ -5630,7 +5630,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_pacify_words(self, request):
-        """创建安抚话术
+        r"""创建安抚话术
 
         该接口用于创建安抚话术。
         
@@ -5697,7 +5697,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_pacify_words(self, request):
-        """删除安抚话术
+        r"""删除安抚话术
 
         该接口用于删除安抚话术。
         
@@ -5764,7 +5764,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_pacify_words(self, request):
-        """查询安抚话术列表
+        r"""查询安抚话术列表
 
         该接口用于查询安抚话术列表。
         
@@ -5841,7 +5841,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_pacify_words(self, request):
-        """查询安抚话术详情
+        r"""查询安抚话术详情
 
         该接口用于查询安抚话术详情。
         
@@ -5908,7 +5908,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_pacify_words_intent(self, request):
-        """查询安抚话术意图
+        r"""查询安抚话术意图
 
         该接口用于查询安抚话术意图。
         
@@ -5975,7 +5975,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_pacify_words_switch(self, request):
-        """查询安抚话术功能开关
+        r"""查询安抚话术功能开关
 
         该接口用于查询安抚话术功能开关。
         
@@ -6044,7 +6044,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_pacify_words_trigger_time(self, request):
-        """查询安抚话术等待触发时长
+        r"""查询安抚话术等待触发时长
 
         该接口用于查询等待触发时长。
         
@@ -6113,7 +6113,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_pacify_words(self, request):
-        """修改安抚话术
+        r"""修改安抚话术
 
         该接口用于修改安抚话术。
         
@@ -6182,7 +6182,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_pacify_words_switch(self, request):
-        """修改安抚话术功能开关
+        r"""修改安抚话术功能开关
 
         该接口用于修改安抚话术功能开关。
         
@@ -6249,7 +6249,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_pacify_words_trigger_time(self, request):
-        """修改安抚话术等待触发时长
+        r"""修改安抚话术等待触发时长
 
         该接口用于修改安抚话术等待触发时长。
         
@@ -6316,7 +6316,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_picture_modeling_by_url_job(self, request):
-        """基于图片URL创建照片建模任务
+        r"""基于图片URL创建照片建模任务
 
         该接口用于从URL中获取图片进行照片建模任务。
         
@@ -6383,7 +6383,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_picture_modeling_job(self, request):
-        """创建照片建模任务
+        r"""创建照片建模任务
 
         该接口用于创建风格化照片建模任务。通过上传照片，生成风格化数字人模型。
         
@@ -6458,7 +6458,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_picture_modeling_jobs(self, request):
-        """照片建模任务列表查询
+        r"""照片建模任务列表查询
 
         该接口用于查询风格化照片建模任务列表。
         
@@ -6537,7 +6537,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_picture_modeling_job(self, request):
-        """照片建模任务详情查询
+        r"""照片建模任务详情查询
 
         该接口用于风格化查询照片建模任务详情。
         
@@ -6604,7 +6604,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_product(self, request):
-        """创建商品
+        r"""创建商品
 
         Create product
         
@@ -6671,7 +6671,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_product(self, request):
-        """删除商品
+        r"""删除商品
 
         删除商品
         
@@ -6738,7 +6738,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_products(self, request):
-        """查询商品列表
+        r"""查询商品列表
 
         查询商品列表
         
@@ -6821,7 +6821,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def set_product_asset(self, request):
-        """商品资产组合配置
+        r"""商品资产组合配置
 
         商品资产组合配置
         
@@ -6890,7 +6890,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_product(self, request):
-        """查询商品详情
+        r"""查询商品详情
 
         Show product
         
@@ -6957,7 +6957,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_product(self, request):
-        """更新商品
+        r"""更新商品
 
         Update product
         
@@ -7026,7 +7026,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_robot(self, request):
-        """创建应用
+        r"""创建应用
 
         该接口用于创建应用。
         
@@ -7093,7 +7093,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_robot(self, request):
-        """删除应用
+        r"""删除应用
 
         该接口用于删除应用。
         
@@ -7160,7 +7160,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_robot(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         该接口用于查询应用列表。
         
@@ -7233,7 +7233,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_robot(self, request):
-        """查询应用详情
+        r"""查询应用详情
 
         该接口用于查询应用详情。
         
@@ -7300,7 +7300,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_robot(self, request):
-        """修改应用
+        r"""修改应用
 
         该接口用于修改应用。
         
@@ -7369,7 +7369,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def validate_robot(self, request):
-        """校验应用
+        r"""校验应用
 
         该接口用于校验应用。
         
@@ -7436,7 +7436,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_smart_chat_room(self, request):
-        """创建智能交互对话
+        r"""创建智能交互对话
 
         该接口用于创建智能交互对话。
         
@@ -7503,7 +7503,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_smart_chat_room(self, request):
-        """删除智能交互对话
+        r"""删除智能交互对话
 
         该接口用于删除智能交互对话。
         
@@ -7570,7 +7570,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_chat_rooms(self, request):
-        """查询智能交互对话列表
+        r"""查询智能交互对话列表
 
         该接口用于智能交互对话列表。
         
@@ -7647,7 +7647,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_smart_chat_room(self, request):
-        """查询智能交互对话详情
+        r"""查询智能交互对话详情
 
         该接口用于查询智能交互对话详情。
         
@@ -7714,7 +7714,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_smart_chat_room(self, request):
-        """更新智能交互对话信息
+        r"""更新智能交互对话信息
 
         该接口用于智能交互对话信息。
         
@@ -7783,7 +7783,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def batch_confirm_live_commands(self, request):
-        """批量确认命令
+        r"""批量确认命令
 
         该接口用于批量确认命令列表
         
@@ -7854,7 +7854,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def execute_smart_live_command(self, request):
-        """控制数字人直播过程
+        r"""控制数字人直播过程
 
         该接口用于控制数字人直播过程。
         
@@ -7925,7 +7925,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_live(self, request):
-        """查询某个智能直播间下直播任务列表
+        r"""查询某个智能直播间下直播任务列表
 
         该接口用于查询某个智能直播间的直播任务列表。
         
@@ -8006,7 +8006,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_live_jobs(self, request):
-        """查询租户所有数字人直播任务列表
+        r"""查询租户所有数字人直播任务列表
 
         该接口用于查询租户所有数字人智能直播任务列表。
         
@@ -8087,7 +8087,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_live_rule_commands(self, request):
-        """查询租户未确认的互动规则命令列表
+        r"""查询租户未确认的互动规则命令列表
 
         该接口用于查询租户未确认的互动规则命令列表，仅限于需要做二次确认的特定用户使用。
         
@@ -8158,7 +8158,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_live_script_commands(self, request):
-        """查询租户未确认的剧本命令列表
+        r"""查询租户未确认的剧本命令列表
 
         该接口用于查询租户未确认的剧本命令列表，仅限于需要做二次确认的特定用户使用。
         
@@ -8229,7 +8229,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def live_event_report(self, request):
-        """上报直播间事件
+        r"""上报直播间事件
 
         该接口用于上报直播间事件。
         
@@ -8306,7 +8306,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_smart_live(self, request):
-        """查询数字人智能直播任务详情
+        r"""查询数字人智能直播任务详情
 
         该接口用于查询数字人智能直播任务详情。
         
@@ -8375,7 +8375,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def start_smart_live(self, request):
-        """启动数字人智能直播任务
+        r"""启动数字人智能直播任务
 
         该接口用于启动数字人智能直播任务。
         
@@ -8444,7 +8444,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def stop_smart_live(self, request):
-        """结束数字人智能直播任务
+        r"""结束数字人智能直播任务
 
         该接口用于结束数字人智能直播任务。
         
@@ -8513,7 +8513,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def confirm_smar_live_room(self, request):
-        """直播间确认
+        r"""直播间确认
 
         该接口用直播间二次确认
         
@@ -8582,7 +8582,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_interaction_rule_group(self, request):
-        """创建智能直播间互动规则库
+        r"""创建智能直播间互动规则库
 
         该接口用于创建智能直播间互动规则库。
         
@@ -8649,7 +8649,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_smart_live_room(self, request):
-        """创建智能直播间
+        r"""创建智能直播间
 
         该接口用于创建智能直播间。
         
@@ -8716,7 +8716,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_interaction_rule_group(self, request):
-        """删除智能直播间互动规则库
+        r"""删除智能直播间互动规则库
 
         该接口用于删除智能直播间互动规则库。
         
@@ -8783,7 +8783,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_smart_live_room(self, request):
-        """删除智能直播间
+        r"""删除智能直播间
 
         该接口用于删除智能直播间。
         
@@ -8850,7 +8850,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_interaction_rule_groups(self, request):
-        """查询智能直播间互动规则库列表
+        r"""查询智能直播间互动规则库列表
 
         该接口用于智能直播间互动规则库列表。
         
@@ -8925,7 +8925,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_smart_live_rooms(self, request):
-        """查询智能直播间列表
+        r"""查询智能直播间列表
 
         该接口用于智能直播间列表。
         
@@ -9012,7 +9012,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_smart_live_room(self, request):
-        """查询智能直播剧本详情
+        r"""查询智能直播剧本详情
 
         该接口用于查询智能直播剧本详情。
         
@@ -9079,7 +9079,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_interaction_rule_group(self, request):
-        """更新智能直播间互动规则库
+        r"""更新智能直播间互动规则库
 
         该接口用于更新智能直播间互动规则库。
         
@@ -9148,7 +9148,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_smart_live_room(self, request):
-        """更新智能直播间信息
+        r"""更新智能直播间信息
 
         该接口用于智能直播间信息。
         
@@ -9217,7 +9217,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_styles(self, request):
-        """查询数字人风格列表
+        r"""查询数字人风格列表
 
         查询数字人风格列表
         
@@ -9296,7 +9296,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_subtitle_file(self, request):
-        """创建分身数字人视频字幕文件
+        r"""创建分身数字人视频字幕文件
 
         该接口用于创建分身数字人视频字幕文件任务。
         
@@ -9363,7 +9363,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_subtitle_file(self, request):
-        """查询分身数字人视频字幕文件任务详情
+        r"""查询分身数字人视频字幕文件任务详情
 
         该接口用于查询分身数字人视频字幕文件任务详情。
         
@@ -9430,7 +9430,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_facial_animations(self, request):
-        """创建语音驱动表情动画任务
+        r"""创建语音驱动表情动画任务
 
         该接口用于创建驱动数字人表情的任务。
         
@@ -9495,7 +9495,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_ttsa(self, request):
-        """创建语音驱动任务
+        r"""创建语音驱动任务
 
         该接口用于创建驱动数字人表情、动作及语音的任务。
         
@@ -9562,7 +9562,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_facial_animations_data(self, request):
-        """获取语音驱动表情数据
+        r"""获取语音驱动表情数据
 
         该接口用于获取生成的数字人表情驱动数据
         
@@ -9627,7 +9627,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_ttsa_data(self, request):
-        """获取语音驱动数据
+        r"""获取语音驱动数据
 
         该接口用于获取生成的数字人驱动数据，包括语音、表情、动作等。
         
@@ -9694,7 +9694,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_ttsa_jobs(self, request):
-        """获取语音驱动任务列表
+        r"""获取语音驱动任务列表
 
         该接口用于查询驱动数字人表情、动作及语音的任务列表。
         
@@ -9763,7 +9763,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def count_tenant_resources(self, request):
-        """统计时间段内过期的资源数量
+        r"""统计时间段内过期的资源数量
 
         统计指定时间段内即将过期的包周期与一次性资源数量。
         
@@ -9832,7 +9832,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_tenant_resources(self, request):
-        """查看租户资源列表
+        r"""查看租户资源列表
 
         查看租户资源列表。
          &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询，详见[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
@@ -9921,7 +9921,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_resource_usage(self, request):
-        """查看租户资源用量信息
+        r"""查看租户资源用量信息
 
         查询租户一次性和包周期（包年/包月）资源用量信息。
         &gt; 按需套餐包用量本接口无法查询，需要调用CBC接口查询，详见[按需套餐包用量查询](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0001239.html)和[查询资源包信息](https://cbc.huaweicloud.com/bm/support/api-apidt/CBCInterface_0000511.html)。
@@ -9990,7 +9990,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def commit_voice_training_job(self, request):
-        """提交语音训练任务
+        r"""提交语音训练任务
 
         提交训练任务,执行该接口后,任务会进入审核状态,审核完成后会等待训练。
         
@@ -10059,7 +10059,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def confirm_training_segment(self, request):
-        """确认在线录音结果
+        r"""确认在线录音结果
 
         确认在线录音结果。
         
@@ -10126,7 +10126,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_training_advance_job(self, request):
-        """创建高级版语音训练任务
+        r"""创建高级版语音训练任务
 
         用户创建语音训练高级版任务，该接口会返回一个obs上传地址，用于上传语音文件。
         
@@ -10197,7 +10197,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_training_basic_job(self, request):
-        """创建基础版语音训练任务
+        r"""创建基础版语音训练任务
 
         用户创建语音训练基础版任务，该接口会返回一个obs上传地址，用于上传语音文件。
         
@@ -10270,7 +10270,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_training_middle_job(self, request):
-        """创建进阶版语音训练任务
+        r"""创建进阶版语音训练任务
 
         用户创建语音训练进阶版任务，该接口会返回一个obs上传地址，用于上传语音文件。
         
@@ -10343,7 +10343,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_voice_training_job(self, request):
-        """删除语音训练任务
+        r"""删除语音训练任务
 
         删除语音训练任务
         
@@ -10410,7 +10410,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_job_operation_log(self, request):
-        """查询任务操作日志
+        r"""查询任务操作日志
 
         查询任务操作日志
         
@@ -10479,7 +10479,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_voice_training_job(self, request):
-        """查询语音训练任务列表
+        r"""查询语音训练任务列表
 
         查询语音训练任务列表
         
@@ -10572,7 +10572,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def set_job_batch_name(self, request):
-        """设置任务批次
+        r"""设置任务批次
 
         用户设置任务批次，该接口用于批量任务管理场景，设置任务的批次
         * 需要开通NA租户权限后才能正常调用
@@ -10638,7 +10638,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_job_audit_result(self, request):
-        """获取语音训练任务审核结果
+        r"""获取语音训练任务审核结果
 
         获取语音训练任务审核结果。
         
@@ -10703,7 +10703,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_job_uploading_address(self, request):
-        """获取语音文件上传地址
+        r"""获取语音文件上传地址
 
         获取语音文件上传地址
         
@@ -10768,7 +10768,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_tenant_duration_cfg(self, request):
-        """查询用户配置的个性化音频时长
+        r"""查询用户配置的个性化音频时长
 
         查询用户配置的个性化音频时长
         
@@ -10831,7 +10831,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_training_segment_info(self, request):
-        """获取在线录音确认结果
+        r"""获取在线录音确认结果
 
         获取在线录音确认结果。
         
@@ -10896,7 +10896,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_voice_training_job(self, request):
-        """查询语音训练任务详情
+        r"""查询语音训练任务详情
 
         查询语音训练任务详情
         
@@ -10963,7 +10963,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create2d_model_training_job(self, request):
-        """创建分身数字人模型训练任务
+        r"""创建分身数字人模型训练任务
 
         该接口用于创建分身数字人模型训练任务。
         
@@ -11030,7 +11030,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete2d_model_training_job(self, request):
-        """删除分身数字人模型训练任务
+        r"""删除分身数字人模型训练任务
 
         该接口用于删除分身数字人模型训练任务。同时需要删除训练任务相关的训练视频、身份证照片、授权文件、模型资产等。
         &gt; * 该接口应当在任务处于以下状态时调用：WAIT_FILE_UPLOAD、AUTO_VERIFY_FAILED、MANUAL_VERIFYING、MANUAL_VERIFY_FAILED、TRAINING_DATA_PREPROCESS_FAILED、TRAIN_FAILED、INFERENCE_DATA_PREPROCESS_FAILED、JOB_SUCCESS、WAIT_USER_CONFIRM、JOB_REJECT、JOB_FINISH
@@ -11098,7 +11098,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def execute2d_model_training_command_by_user(self, request):
-        """租户执行分身数字人模型训练任务命令
+        r"""租户执行分身数字人模型训练任务命令
 
         该接口用于租户执行分身数字人模型训练任务命令，如提交训练审核等。
         
@@ -11167,7 +11167,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list2d_model_training_job(self, request):
-        """查询分身数字人模型训练任务列表
+        r"""查询分身数字人模型训练任务列表
 
         该接口用于查询分身数字人模型训练任务列表。
         
@@ -11260,7 +11260,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show2d_model_training_job(self, request):
-        """查询分身数字人模型训练任务详情
+        r"""查询分身数字人模型训练任务详情
 
         该接口用于查询分身数字人模型训练任务详情。
         
@@ -11327,7 +11327,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update2d_model_training_job(self, request):
-        """更新分身数字人模型训练任务
+        r"""更新分身数字人模型训练任务
 
         该接口用于更新分身数字人模型训练任务。用于在自动审核或者人工审核不通过情况下，更新训练视频、身份证照片等。
         &gt; * 该接口只能在AUTO_VERIFY_FAILED或者MANUAL_VERIFY_FAILED状态下调用
@@ -11397,7 +11397,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_async_tts_job(self, request):
-        """创建TTS异步任务
+        r"""创建TTS异步任务
 
         该接口用于对外生成音频文件
         
@@ -11468,7 +11468,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_tts_audition(self, request):
-        """创建TTS试听任务
+        r"""创建TTS试听任务
 
         该接口用于创建生成播报内容的语音试听文件任务。
         
@@ -11541,7 +11541,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_ttsc_vocabulary_configs(self, request):
-        """设置TTS租户级自定义读法配置
+        r"""设置TTS租户级自定义读法配置
 
         该接口用于设置TTS租户级自定义读法配置。
         
@@ -11610,7 +11610,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_ttsc_vocabulary_configs(self, request):
-        """删除TTS租户级自定义读法配置
+        r"""删除TTS租户级自定义读法配置
 
         该接口用于删除TTS租户级自定义读法配置。
         
@@ -11683,7 +11683,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_ttsc_vocabulary_configs(self, request):
-        """获取TTS租户级自定义读法配置
+        r"""获取TTS租户级自定义读法配置
 
         该接口用于获取TTS租户级自定义读法配置。
         
@@ -11762,7 +11762,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def save_ttsc_vocabulary_configs(self, request):
-        """修改TTS租户级自定义读法配置
+        r"""修改TTS租户级自定义读法配置
 
         该接口用于修改TTS租户级自定义读法配置。
         
@@ -11833,7 +11833,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_async_tts_job(self, request):
-        """获取TTS异步任务
+        r"""获取TTS异步任务
 
         该接口用于获取TTS音频文件下载链接。
         
@@ -11900,7 +11900,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_tts_audition_file(self, request):
-        """获取TTS试听文件
+        r"""获取TTS试听文件
 
         该接口用于获取TTS试听文件下载链接，返回List中包含当前已生产的试听文件。
         
@@ -11969,7 +11969,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_video_motion_capture_job(self, request):
-        """创建视频驱动任务
+        r"""创建视频驱动任务
 
         该接口用于创建视频驱动任务。
         
@@ -12038,7 +12038,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def execute_video_motion_capture_command(self, request):
-        """控制数字人驱动
+        r"""控制数字人驱动
 
         该接口用于控制数字人驱动。
         
@@ -12107,7 +12107,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_video_motion_capture_jobs(self, request):
-        """查询视频驱动任务列表
+        r"""查询视频驱动任务列表
 
         该接口用于查询视频驱动任务列表。
         
@@ -12176,7 +12176,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_video_motion_capture_job(self, request):
-        """查询视频驱动任务详情
+        r"""查询视频驱动任务详情
 
         该接口用于查询视频驱动任务详情。
         
@@ -12243,7 +12243,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def stop_video_motion_capture_job(self, request):
-        """停止视频驱动任务
+        r"""停止视频驱动任务
 
         该接口用于停止视频驱动任务。
         
@@ -12310,7 +12310,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def copy_video_scripts(self, request):
-        """复制视频制作剧本
+        r"""复制视频制作剧本
 
         该接口用于复制视频制作剧本。
         
@@ -12377,7 +12377,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_video_scripts(self, request):
-        """创建视频制作剧本
+        r"""创建视频制作剧本
 
         该接口用于创建视频制作剧本。
         
@@ -12444,7 +12444,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_video_script(self, request):
-        """删除视频制作剧本
+        r"""删除视频制作剧本
 
         该接口用于删除视频制作剧本。
         
@@ -12511,7 +12511,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_video_scripts(self, request):
-        """查询视频制作剧本列表
+        r"""查询视频制作剧本列表
 
         该接口用于查询视频制作剧本列表。
         
@@ -12586,7 +12586,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_video_script(self, request):
-        """查询视频制作剧本详情
+        r"""查询视频制作剧本详情
 
         该接口用于查询视频制作剧本详情。
         
@@ -12653,7 +12653,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_video_script(self, request):
-        """更新视频制作剧本
+        r"""更新视频制作剧本
 
         该接口用于更新视频制作剧本。
         
@@ -12722,7 +12722,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def create_welcome_speech(self, request):
-        """创建欢迎词
+        r"""创建欢迎词
 
         该接口用于创建欢迎词。
         
@@ -12789,7 +12789,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def delete_welcome_speech(self, request):
-        """删除欢迎词
+        r"""删除欢迎词
 
         该接口用于删除欢迎词。
         
@@ -12856,7 +12856,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def list_welcome_speech(self, request):
-        """查询欢迎词列表
+        r"""查询欢迎词列表
 
         该接口用于查询欢迎词列表。
         
@@ -12929,7 +12929,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_welcome_speech(self, request):
-        """查询欢迎词详情
+        r"""查询欢迎词详情
 
         该接口用于查询欢迎词详情。
         
@@ -12996,7 +12996,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_welcome_speech_switch(self, request):
-        """查询欢迎词功能开关
+        r"""查询欢迎词功能开关
 
         该接口用于查询欢迎词功能开关。
         
@@ -13065,7 +13065,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_welcome_speech(self, request):
-        """修改欢迎词
+        r"""修改欢迎词
 
         该接口用于修改欢迎词。
         
@@ -13134,7 +13134,7 @@ class MetaStudioClient(Client):
         return http_info
 
     def update_welcome_speech_switch(self, request):
-        """修改欢迎词功能开关
+        r"""修改欢迎词功能开关
 
         该接口用于修改欢迎词功能开关。
         

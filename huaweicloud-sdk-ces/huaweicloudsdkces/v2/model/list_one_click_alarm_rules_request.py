@@ -25,7 +25,7 @@ class ListOneClickAlarmRulesRequest:
     }
 
     def __init__(self, one_click_alarm_id=None):
-        """ListOneClickAlarmRulesRequest
+        r"""ListOneClickAlarmRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListOneClickAlarmRulesRequest:
 
     @property
     def one_click_alarm_id(self):
-        """Gets the one_click_alarm_id of this ListOneClickAlarmRulesRequest.
+        r"""Gets the one_click_alarm_id of this ListOneClickAlarmRulesRequest.
 
         一键告警ID
 
@@ -53,7 +53,7 @@ class ListOneClickAlarmRulesRequest:
 
     @one_click_alarm_id.setter
     def one_click_alarm_id(self, one_click_alarm_id):
-        """Sets the one_click_alarm_id of this ListOneClickAlarmRulesRequest.
+        r"""Sets the one_click_alarm_id of this ListOneClickAlarmRulesRequest.
 
         一键告警ID
 

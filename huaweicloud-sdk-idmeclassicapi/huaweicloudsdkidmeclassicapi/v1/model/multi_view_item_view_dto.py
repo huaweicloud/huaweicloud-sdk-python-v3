@@ -43,7 +43,7 @@ class MultiViewItemViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, id=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, modifier=None, last_update_time=None, tenant=None):
-        """MultiViewItemViewDTO
+        r"""MultiViewItemViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class MultiViewItemViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this MultiViewItemViewDTO.
+        r"""Gets the class_name of this MultiViewItemViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -117,7 +117,7 @@ class MultiViewItemViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this MultiViewItemViewDTO.
+        r"""Sets the class_name of this MultiViewItemViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -128,7 +128,7 @@ class MultiViewItemViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MultiViewItemViewDTO.
+        r"""Gets the create_time of this MultiViewItemViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -139,7 +139,7 @@ class MultiViewItemViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MultiViewItemViewDTO.
+        r"""Sets the create_time of this MultiViewItemViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -150,7 +150,7 @@ class MultiViewItemViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this MultiViewItemViewDTO.
+        r"""Gets the creator of this MultiViewItemViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -161,7 +161,7 @@ class MultiViewItemViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this MultiViewItemViewDTO.
+        r"""Sets the creator of this MultiViewItemViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -172,7 +172,7 @@ class MultiViewItemViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this MultiViewItemViewDTO.
+        r"""Gets the id of this MultiViewItemViewDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -183,7 +183,7 @@ class MultiViewItemViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MultiViewItemViewDTO.
+        r"""Sets the id of this MultiViewItemViewDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -194,7 +194,7 @@ class MultiViewItemViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this MultiViewItemViewDTO.
+        r"""Gets the rdm_delete_flag of this MultiViewItemViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -205,7 +205,7 @@ class MultiViewItemViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this MultiViewItemViewDTO.
+        r"""Sets the rdm_delete_flag of this MultiViewItemViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -216,7 +216,7 @@ class MultiViewItemViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this MultiViewItemViewDTO.
+        r"""Gets the rdm_extension_type of this MultiViewItemViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -227,7 +227,7 @@ class MultiViewItemViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this MultiViewItemViewDTO.
+        r"""Sets the rdm_extension_type of this MultiViewItemViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -238,7 +238,7 @@ class MultiViewItemViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this MultiViewItemViewDTO.
+        r"""Gets the rdm_version of this MultiViewItemViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -249,7 +249,7 @@ class MultiViewItemViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this MultiViewItemViewDTO.
+        r"""Sets the rdm_version of this MultiViewItemViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -260,7 +260,7 @@ class MultiViewItemViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this MultiViewItemViewDTO.
+        r"""Gets the modifier of this MultiViewItemViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -271,7 +271,7 @@ class MultiViewItemViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this MultiViewItemViewDTO.
+        r"""Sets the modifier of this MultiViewItemViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -282,7 +282,7 @@ class MultiViewItemViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this MultiViewItemViewDTO.
+        r"""Gets the last_update_time of this MultiViewItemViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -293,7 +293,7 @@ class MultiViewItemViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this MultiViewItemViewDTO.
+        r"""Sets the last_update_time of this MultiViewItemViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -304,7 +304,7 @@ class MultiViewItemViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this MultiViewItemViewDTO.
+        r"""Gets the tenant of this MultiViewItemViewDTO.
 
         :return: The tenant of this MultiViewItemViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -313,7 +313,7 @@ class MultiViewItemViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this MultiViewItemViewDTO.
+        r"""Sets the tenant of this MultiViewItemViewDTO.
 
         :param tenant: The tenant of this MultiViewItemViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`

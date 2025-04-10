@@ -26,7 +26,7 @@ class DisassociateElbResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DisassociateElbResponse
+        r"""DisassociateElbResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisassociateElbResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DisassociateElbResponse.
+        r"""Gets the job_id of this DisassociateElbResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class DisassociateElbResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DisassociateElbResponse.
+        r"""Sets the job_id of this DisassociateElbResponse.
 
         任务ID
 

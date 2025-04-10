@@ -26,7 +26,7 @@ class CreateTagResponse(SdkResponse):
     }
 
     def __init__(self, name=None):
-        """CreateTagResponse
+        r"""CreateTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTagResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateTagResponse.
+        r"""Gets the name of this CreateTagResponse.
 
         tag标签名称。
 
@@ -55,7 +55,7 @@ class CreateTagResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTagResponse.
+        r"""Sets the name of this CreateTagResponse.
 
         tag标签名称。
 

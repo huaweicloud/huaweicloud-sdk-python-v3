@@ -33,7 +33,7 @@ class OrderAlert:
     }
 
     def __init__(self, ids=None, incident_id=None, event_content=None, incident_content=None, marked_evidence=None):
-        """OrderAlert
+        r"""OrderAlert
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OrderAlert:
 
     @property
     def ids(self):
-        """Gets the ids of this OrderAlert.
+        r"""Gets the ids of this OrderAlert.
 
         转事件的ID列表
 
@@ -82,7 +82,7 @@ class OrderAlert:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this OrderAlert.
+        r"""Sets the ids of this OrderAlert.
 
         转事件的ID列表
 
@@ -93,7 +93,7 @@ class OrderAlert:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this OrderAlert.
+        r"""Gets the incident_id of this OrderAlert.
 
         事件id
 
@@ -104,7 +104,7 @@ class OrderAlert:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this OrderAlert.
+        r"""Sets the incident_id of this OrderAlert.
 
         事件id
 
@@ -115,7 +115,7 @@ class OrderAlert:
 
     @property
     def event_content(self):
-        """Gets the event_content of this OrderAlert.
+        r"""Gets the event_content of this OrderAlert.
 
         :return: The event_content of this OrderAlert.
         :rtype: :class:`huaweicloudsdksa.v2.OrderAlertEventContent`
@@ -124,7 +124,7 @@ class OrderAlert:
 
     @event_content.setter
     def event_content(self, event_content):
-        """Sets the event_content of this OrderAlert.
+        r"""Sets the event_content of this OrderAlert.
 
         :param event_content: The event_content of this OrderAlert.
         :type event_content: :class:`huaweicloudsdksa.v2.OrderAlertEventContent`
@@ -133,7 +133,7 @@ class OrderAlert:
 
     @property
     def incident_content(self):
-        """Gets the incident_content of this OrderAlert.
+        r"""Gets the incident_content of this OrderAlert.
 
         :return: The incident_content of this OrderAlert.
         :rtype: :class:`huaweicloudsdksa.v2.OrderAlertIncidentContent`
@@ -142,7 +142,7 @@ class OrderAlert:
 
     @incident_content.setter
     def incident_content(self, incident_content):
-        """Sets the incident_content of this OrderAlert.
+        r"""Sets the incident_content of this OrderAlert.
 
         :param incident_content: The incident_content of this OrderAlert.
         :type incident_content: :class:`huaweicloudsdksa.v2.OrderAlertIncidentContent`
@@ -151,7 +151,7 @@ class OrderAlert:
 
     @property
     def marked_evidence(self):
-        """Gets the marked_evidence of this OrderAlert.
+        r"""Gets the marked_evidence of this OrderAlert.
 
         标记为证据
 
@@ -162,7 +162,7 @@ class OrderAlert:
 
     @marked_evidence.setter
     def marked_evidence(self, marked_evidence):
-        """Sets the marked_evidence of this OrderAlert.
+        r"""Sets the marked_evidence of this OrderAlert.
 
         标记为证据
 

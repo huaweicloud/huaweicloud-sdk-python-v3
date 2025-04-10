@@ -33,7 +33,7 @@ class DataBase:
     }
 
     def __init__(self, port=None, ip=None, user_name=None, service_name=None, connection_string=None):
-        """DataBase
+        r"""DataBase
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DataBase:
 
     @property
     def port(self):
-        """Gets the port of this DataBase.
+        r"""Gets the port of this DataBase.
 
         端口。
 
@@ -80,7 +80,7 @@ class DataBase:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DataBase.
+        r"""Sets the port of this DataBase.
 
         端口。
 
@@ -91,7 +91,7 @@ class DataBase:
 
     @property
     def ip(self):
-        """Gets the ip of this DataBase.
+        r"""Gets the ip of this DataBase.
 
         连接IP。
 
@@ -102,7 +102,7 @@ class DataBase:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DataBase.
+        r"""Sets the ip of this DataBase.
 
         连接IP。
 
@@ -113,7 +113,7 @@ class DataBase:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DataBase.
+        r"""Gets the user_name of this DataBase.
 
         用户名。
 
@@ -124,7 +124,7 @@ class DataBase:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DataBase.
+        r"""Sets the user_name of this DataBase.
 
         用户名。
 
@@ -135,7 +135,7 @@ class DataBase:
 
     @property
     def service_name(self):
-        """Gets the service_name of this DataBase.
+        r"""Gets the service_name of this DataBase.
 
         服务名。
 
@@ -146,7 +146,7 @@ class DataBase:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this DataBase.
+        r"""Sets the service_name of this DataBase.
 
         服务名。
 
@@ -157,7 +157,7 @@ class DataBase:
 
     @property
     def connection_string(self):
-        """Gets the connection_string of this DataBase.
+        r"""Gets the connection_string of this DataBase.
 
         连接字符串。
 
@@ -168,7 +168,7 @@ class DataBase:
 
     @connection_string.setter
     def connection_string(self, connection_string):
-        """Sets the connection_string of this DataBase.
+        r"""Sets the connection_string of this DataBase.
 
         连接字符串。
 

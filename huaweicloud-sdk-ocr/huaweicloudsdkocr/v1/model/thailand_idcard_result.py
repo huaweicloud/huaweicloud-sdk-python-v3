@@ -71,7 +71,7 @@ class ThailandIdcardResult:
     }
 
     def __init__(self, type=None, name_en=None, ref_number=None, side=None, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, text_location=None):
-        """ThailandIdcardResult
+        r"""ThailandIdcardResult
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class ThailandIdcardResult:
 
     @property
     def type(self):
-        """Gets the type of this ThailandIdcardResult.
+        r"""Gets the type of this ThailandIdcardResult.
 
         返回证件类型，\"normal\"表示普通泰文证件，\"pink\"表示外国人身份证件 
 
@@ -215,7 +215,7 @@ class ThailandIdcardResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ThailandIdcardResult.
+        r"""Sets the type of this ThailandIdcardResult.
 
         返回证件类型，\"normal\"表示普通泰文证件，\"pink\"表示外国人身份证件 
 
@@ -226,7 +226,7 @@ class ThailandIdcardResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ThailandIdcardResult.
+        r"""Gets the name_en of this ThailandIdcardResult.
 
         英文名。 
 
@@ -237,7 +237,7 @@ class ThailandIdcardResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ThailandIdcardResult.
+        r"""Sets the name_en of this ThailandIdcardResult.
 
         英文名。 
 
@@ -248,7 +248,7 @@ class ThailandIdcardResult:
 
     @property
     def ref_number(self):
-        """Gets the ref_number of this ThailandIdcardResult.
+        r"""Gets the ref_number of this ThailandIdcardResult.
 
         参考编码。 
 
@@ -259,7 +259,7 @@ class ThailandIdcardResult:
 
     @ref_number.setter
     def ref_number(self, ref_number):
-        """Sets the ref_number of this ThailandIdcardResult.
+        r"""Sets the ref_number of this ThailandIdcardResult.
 
         参考编码。 
 
@@ -270,7 +270,7 @@ class ThailandIdcardResult:
 
     @property
     def side(self):
-        """Gets the side of this ThailandIdcardResult.
+        r"""Gets the side of this ThailandIdcardResult.
 
         标示正面还是反面，取值为front或back。 
 
@@ -281,7 +281,7 @@ class ThailandIdcardResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this ThailandIdcardResult.
+        r"""Sets the side of this ThailandIdcardResult.
 
         标示正面还是反面，取值为front或back。 
 
@@ -292,7 +292,7 @@ class ThailandIdcardResult:
 
     @property
     def id_number(self):
-        """Gets the id_number of this ThailandIdcardResult.
+        r"""Gets the id_number of this ThailandIdcardResult.
 
         身份证号。 
 
@@ -303,7 +303,7 @@ class ThailandIdcardResult:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this ThailandIdcardResult.
+        r"""Sets the id_number of this ThailandIdcardResult.
 
         身份证号。 
 
@@ -314,7 +314,7 @@ class ThailandIdcardResult:
 
     @property
     def name_th(self):
-        """Gets the name_th of this ThailandIdcardResult.
+        r"""Gets the name_th of this ThailandIdcardResult.
 
         泰文名字。 
 
@@ -325,7 +325,7 @@ class ThailandIdcardResult:
 
     @name_th.setter
     def name_th(self, name_th):
-        """Sets the name_th of this ThailandIdcardResult.
+        r"""Sets the name_th of this ThailandIdcardResult.
 
         泰文名字。 
 
@@ -336,7 +336,7 @@ class ThailandIdcardResult:
 
     @property
     def first_name_en(self):
-        """Gets the first_name_en of this ThailandIdcardResult.
+        r"""Gets the first_name_en of this ThailandIdcardResult.
 
         英文名字。 
 
@@ -347,7 +347,7 @@ class ThailandIdcardResult:
 
     @first_name_en.setter
     def first_name_en(self, first_name_en):
-        """Sets the first_name_en of this ThailandIdcardResult.
+        r"""Sets the first_name_en of this ThailandIdcardResult.
 
         英文名字。 
 
@@ -358,7 +358,7 @@ class ThailandIdcardResult:
 
     @property
     def last_name_en(self):
-        """Gets the last_name_en of this ThailandIdcardResult.
+        r"""Gets the last_name_en of this ThailandIdcardResult.
 
         英文姓氏。 
 
@@ -369,7 +369,7 @@ class ThailandIdcardResult:
 
     @last_name_en.setter
     def last_name_en(self, last_name_en):
-        """Sets the last_name_en of this ThailandIdcardResult.
+        r"""Sets the last_name_en of this ThailandIdcardResult.
 
         英文姓氏。 
 
@@ -380,7 +380,7 @@ class ThailandIdcardResult:
 
     @property
     def date_of_birth_th(self):
-        """Gets the date_of_birth_th of this ThailandIdcardResult.
+        r"""Gets the date_of_birth_th of this ThailandIdcardResult.
 
         泰文出生日期。 
 
@@ -391,7 +391,7 @@ class ThailandIdcardResult:
 
     @date_of_birth_th.setter
     def date_of_birth_th(self, date_of_birth_th):
-        """Sets the date_of_birth_th of this ThailandIdcardResult.
+        r"""Sets the date_of_birth_th of this ThailandIdcardResult.
 
         泰文出生日期。 
 
@@ -402,7 +402,7 @@ class ThailandIdcardResult:
 
     @property
     def date_of_birth_en(self):
-        """Gets the date_of_birth_en of this ThailandIdcardResult.
+        r"""Gets the date_of_birth_en of this ThailandIdcardResult.
 
         英文出生日期。 
 
@@ -413,7 +413,7 @@ class ThailandIdcardResult:
 
     @date_of_birth_en.setter
     def date_of_birth_en(self, date_of_birth_en):
-        """Sets the date_of_birth_en of this ThailandIdcardResult.
+        r"""Sets the date_of_birth_en of this ThailandIdcardResult.
 
         英文出生日期。 
 
@@ -424,7 +424,7 @@ class ThailandIdcardResult:
 
     @property
     def religion_th(self):
-        """Gets the religion_th of this ThailandIdcardResult.
+        r"""Gets the religion_th of this ThailandIdcardResult.
 
         宗教。 
 
@@ -435,7 +435,7 @@ class ThailandIdcardResult:
 
     @religion_th.setter
     def religion_th(self, religion_th):
-        """Sets the religion_th of this ThailandIdcardResult.
+        r"""Sets the religion_th of this ThailandIdcardResult.
 
         宗教。 
 
@@ -446,7 +446,7 @@ class ThailandIdcardResult:
 
     @property
     def address_th(self):
-        """Gets the address_th of this ThailandIdcardResult.
+        r"""Gets the address_th of this ThailandIdcardResult.
 
         地址。 
 
@@ -457,7 +457,7 @@ class ThailandIdcardResult:
 
     @address_th.setter
     def address_th(self, address_th):
-        """Sets the address_th of this ThailandIdcardResult.
+        r"""Sets the address_th of this ThailandIdcardResult.
 
         地址。 
 
@@ -468,7 +468,7 @@ class ThailandIdcardResult:
 
     @property
     def date_of_issue_th(self):
-        """Gets the date_of_issue_th of this ThailandIdcardResult.
+        r"""Gets the date_of_issue_th of this ThailandIdcardResult.
 
         泰文签发日期。 
 
@@ -479,7 +479,7 @@ class ThailandIdcardResult:
 
     @date_of_issue_th.setter
     def date_of_issue_th(self, date_of_issue_th):
-        """Sets the date_of_issue_th of this ThailandIdcardResult.
+        r"""Sets the date_of_issue_th of this ThailandIdcardResult.
 
         泰文签发日期。 
 
@@ -490,7 +490,7 @@ class ThailandIdcardResult:
 
     @property
     def date_of_issue_en(self):
-        """Gets the date_of_issue_en of this ThailandIdcardResult.
+        r"""Gets the date_of_issue_en of this ThailandIdcardResult.
 
         英文签发日期。 
 
@@ -501,7 +501,7 @@ class ThailandIdcardResult:
 
     @date_of_issue_en.setter
     def date_of_issue_en(self, date_of_issue_en):
-        """Sets the date_of_issue_en of this ThailandIdcardResult.
+        r"""Sets the date_of_issue_en of this ThailandIdcardResult.
 
         英文签发日期。 
 
@@ -512,7 +512,7 @@ class ThailandIdcardResult:
 
     @property
     def date_of_expiry_th(self):
-        """Gets the date_of_expiry_th of this ThailandIdcardResult.
+        r"""Gets the date_of_expiry_th of this ThailandIdcardResult.
 
         泰文有效期。 
 
@@ -523,7 +523,7 @@ class ThailandIdcardResult:
 
     @date_of_expiry_th.setter
     def date_of_expiry_th(self, date_of_expiry_th):
-        """Sets the date_of_expiry_th of this ThailandIdcardResult.
+        r"""Sets the date_of_expiry_th of this ThailandIdcardResult.
 
         泰文有效期。 
 
@@ -534,7 +534,7 @@ class ThailandIdcardResult:
 
     @property
     def date_of_expiry_en(self):
-        """Gets the date_of_expiry_en of this ThailandIdcardResult.
+        r"""Gets the date_of_expiry_en of this ThailandIdcardResult.
 
         英文有效期。 
 
@@ -545,7 +545,7 @@ class ThailandIdcardResult:
 
     @date_of_expiry_en.setter
     def date_of_expiry_en(self, date_of_expiry_en):
-        """Sets the date_of_expiry_en of this ThailandIdcardResult.
+        r"""Sets the date_of_expiry_en of this ThailandIdcardResult.
 
         英文有效期。 
 
@@ -556,7 +556,7 @@ class ThailandIdcardResult:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this ThailandIdcardResult.
+        r"""Gets the serial_number of this ThailandIdcardResult.
 
         序列号。 
 
@@ -567,7 +567,7 @@ class ThailandIdcardResult:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this ThailandIdcardResult.
+        r"""Sets the serial_number of this ThailandIdcardResult.
 
         序列号。 
 
@@ -578,7 +578,7 @@ class ThailandIdcardResult:
 
     @property
     def card_number(self):
-        """Gets the card_number of this ThailandIdcardResult.
+        r"""Gets the card_number of this ThailandIdcardResult.
 
         身份证反面卡号。 
 
@@ -589,7 +589,7 @@ class ThailandIdcardResult:
 
     @card_number.setter
     def card_number(self, card_number):
-        """Sets the card_number of this ThailandIdcardResult.
+        r"""Sets the card_number of this ThailandIdcardResult.
 
         身份证反面卡号。 
 
@@ -600,7 +600,7 @@ class ThailandIdcardResult:
 
     @property
     def laser_number(self):
-        """Gets the laser_number of this ThailandIdcardResult.
+        r"""Gets the laser_number of this ThailandIdcardResult.
 
         激光码。 
 
@@ -611,7 +611,7 @@ class ThailandIdcardResult:
 
     @laser_number.setter
     def laser_number(self, laser_number):
-        """Sets the laser_number of this ThailandIdcardResult.
+        r"""Sets the laser_number of this ThailandIdcardResult.
 
         激光码。 
 
@@ -622,7 +622,7 @@ class ThailandIdcardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ThailandIdcardResult.
+        r"""Gets the confidence of this ThailandIdcardResult.
 
         :return: The confidence of this ThailandIdcardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ThailandIdcardConfidence`
@@ -631,7 +631,7 @@ class ThailandIdcardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ThailandIdcardResult.
+        r"""Sets the confidence of this ThailandIdcardResult.
 
         :param confidence: The confidence of this ThailandIdcardResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.ThailandIdcardConfidence`
@@ -640,7 +640,7 @@ class ThailandIdcardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this ThailandIdcardResult.
+        r"""Gets the portrait_image of this ThailandIdcardResult.
 
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -651,7 +651,7 @@ class ThailandIdcardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this ThailandIdcardResult.
+        r"""Sets the portrait_image of this ThailandIdcardResult.
 
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -662,7 +662,7 @@ class ThailandIdcardResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this ThailandIdcardResult.
+        r"""Gets the portrait_location of this ThailandIdcardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
 
@@ -673,7 +673,7 @@ class ThailandIdcardResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this ThailandIdcardResult.
+        r"""Sets the portrait_location of this ThailandIdcardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向 
 
@@ -684,7 +684,7 @@ class ThailandIdcardResult:
 
     @property
     def idcard_type(self):
-        """Gets the idcard_type of this ThailandIdcardResult.
+        r"""Gets the idcard_type of this ThailandIdcardResult.
 
         身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 - screen：屏幕翻拍 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
@@ -695,7 +695,7 @@ class ThailandIdcardResult:
 
     @idcard_type.setter
     def idcard_type(self, idcard_type):
-        """Sets the idcard_type of this ThailandIdcardResult.
+        r"""Sets the idcard_type of this ThailandIdcardResult.
 
         身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 - screen：屏幕翻拍 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
 
@@ -706,7 +706,7 @@ class ThailandIdcardResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this ThailandIdcardResult.
+        r"""Gets the text_location of this ThailandIdcardResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -717,7 +717,7 @@ class ThailandIdcardResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this ThailandIdcardResult.
+        r"""Sets the text_location of this ThailandIdcardResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

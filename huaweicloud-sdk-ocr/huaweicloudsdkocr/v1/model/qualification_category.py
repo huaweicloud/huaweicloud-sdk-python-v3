@@ -31,7 +31,7 @@ class QualificationCategory:
     }
 
     def __init__(self, category=None, initial_issue_date=None, issue_date=None, expiry_date=None):
-        """QualificationCategory
+        r"""QualificationCategory
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QualificationCategory:
 
     @property
     def category(self):
-        """Gets the category of this QualificationCategory.
+        r"""Gets the category of this QualificationCategory.
 
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
@@ -75,7 +75,7 @@ class QualificationCategory:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this QualificationCategory.
+        r"""Sets the category of this QualificationCategory.
 
         诚信考核信息（非必有，依赖对应从业资格证板式）。 
 
@@ -86,7 +86,7 @@ class QualificationCategory:
 
     @property
     def initial_issue_date(self):
-        """Gets the initial_issue_date of this QualificationCategory.
+        r"""Gets the initial_issue_date of this QualificationCategory.
 
         初次领证日期（非必有，依赖对应从业资格证板式） 
 
@@ -97,7 +97,7 @@ class QualificationCategory:
 
     @initial_issue_date.setter
     def initial_issue_date(self, initial_issue_date):
-        """Sets the initial_issue_date of this QualificationCategory.
+        r"""Sets the initial_issue_date of this QualificationCategory.
 
         初次领证日期（非必有，依赖对应从业资格证板式） 
 
@@ -108,7 +108,7 @@ class QualificationCategory:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this QualificationCategory.
+        r"""Gets the issue_date of this QualificationCategory.
 
         有效起始日期（非必有，依赖对应从业资格证板式） 
 
@@ -119,7 +119,7 @@ class QualificationCategory:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this QualificationCategory.
+        r"""Sets the issue_date of this QualificationCategory.
 
         有效起始日期（非必有，依赖对应从业资格证板式） 
 
@@ -130,7 +130,7 @@ class QualificationCategory:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this QualificationCategory.
+        r"""Gets the expiry_date of this QualificationCategory.
 
         有效期至 
 
@@ -141,7 +141,7 @@ class QualificationCategory:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this QualificationCategory.
+        r"""Sets the expiry_date of this QualificationCategory.
 
         有效期至 
 

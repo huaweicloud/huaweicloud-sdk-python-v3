@@ -28,7 +28,7 @@ class ShowMigrateStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, project_status=None):
-        """ShowMigrateStatusResponse
+        r"""ShowMigrateStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMigrateStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowMigrateStatusResponse.
+        r"""Gets the status of this ShowMigrateStatusResponse.
 
         租户迁移状态
 
@@ -62,7 +62,7 @@ class ShowMigrateStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMigrateStatusResponse.
+        r"""Sets the status of this ShowMigrateStatusResponse.
 
         租户迁移状态
 
@@ -73,7 +73,7 @@ class ShowMigrateStatusResponse(SdkResponse):
 
     @property
     def project_status(self):
-        """Gets the project_status of this ShowMigrateStatusResponse.
+        r"""Gets the project_status of this ShowMigrateStatusResponse.
 
         项目迁移状态
 
@@ -84,7 +84,7 @@ class ShowMigrateStatusResponse(SdkResponse):
 
     @project_status.setter
     def project_status(self, project_status):
-        """Sets the project_status of this ShowMigrateStatusResponse.
+        r"""Sets the project_status of this ShowMigrateStatusResponse.
 
         项目迁移状态
 

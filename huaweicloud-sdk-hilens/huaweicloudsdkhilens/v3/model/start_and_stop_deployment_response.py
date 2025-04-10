@@ -26,7 +26,7 @@ class StartAndStopDeploymentResponse(SdkResponse):
     }
 
     def __init__(self, deployment_id=None):
-        """StartAndStopDeploymentResponse
+        r"""StartAndStopDeploymentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartAndStopDeploymentResponse(SdkResponse):
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this StartAndStopDeploymentResponse.
+        r"""Gets the deployment_id of this StartAndStopDeploymentResponse.
 
         部署Id
 
@@ -55,7 +55,7 @@ class StartAndStopDeploymentResponse(SdkResponse):
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this StartAndStopDeploymentResponse.
+        r"""Sets the deployment_id of this StartAndStopDeploymentResponse.
 
         部署Id
 

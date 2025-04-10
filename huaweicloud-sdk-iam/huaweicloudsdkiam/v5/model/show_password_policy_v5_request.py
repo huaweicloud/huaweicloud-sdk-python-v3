@@ -23,7 +23,7 @@ class ShowPasswordPolicyV5Request:
     }
 
     def __init__(self):
-        """ShowPasswordPolicyV5Request
+        r"""ShowPasswordPolicyV5Request
 
         The model defined in huaweicloud sdk
 

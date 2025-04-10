@@ -30,7 +30,7 @@ class DataTypeDomainEnum:
     }
 
     def __init__(self):
-        """DataTypeDomainEnum
+        r"""DataTypeDomainEnum
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class ShowNodePoolConfigurationDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowNodePoolConfigurationDetailsResponse
+        r"""ShowNodePoolConfigurationDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNodePoolConfigurationDetailsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowNodePoolConfigurationDetailsResponse.
+        r"""Gets the body of this ShowNodePoolConfigurationDetailsResponse.
 
         获取指定节点池配置参数列表返回体
 
@@ -55,7 +55,7 @@ class ShowNodePoolConfigurationDetailsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowNodePoolConfigurationDetailsResponse.
+        r"""Sets the body of this ShowNodePoolConfigurationDetailsResponse.
 
         获取指定节点池配置参数列表返回体
 

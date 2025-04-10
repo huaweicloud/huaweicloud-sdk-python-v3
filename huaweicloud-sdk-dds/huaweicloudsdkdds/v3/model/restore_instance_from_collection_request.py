@@ -29,7 +29,7 @@ class RestoreInstanceFromCollectionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """RestoreInstanceFromCollectionRequest
+        r"""RestoreInstanceFromCollectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RestoreInstanceFromCollectionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestoreInstanceFromCollectionRequest.
+        r"""Gets the x_language of this RestoreInstanceFromCollectionRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class RestoreInstanceFromCollectionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestoreInstanceFromCollectionRequest.
+        r"""Sets the x_language of this RestoreInstanceFromCollectionRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class RestoreInstanceFromCollectionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestoreInstanceFromCollectionRequest.
+        r"""Gets the instance_id of this RestoreInstanceFromCollectionRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -89,7 +89,7 @@ class RestoreInstanceFromCollectionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestoreInstanceFromCollectionRequest.
+        r"""Sets the instance_id of this RestoreInstanceFromCollectionRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -100,7 +100,7 @@ class RestoreInstanceFromCollectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreInstanceFromCollectionRequest.
+        r"""Gets the body of this RestoreInstanceFromCollectionRequest.
 
         :return: The body of this RestoreInstanceFromCollectionRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBody`
@@ -109,7 +109,7 @@ class RestoreInstanceFromCollectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreInstanceFromCollectionRequest.
+        r"""Sets the body of this RestoreInstanceFromCollectionRequest.
 
         :param body: The body of this RestoreInstanceFromCollectionRequest.
         :type body: :class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBody`

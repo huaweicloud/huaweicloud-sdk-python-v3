@@ -27,7 +27,7 @@ class OutputRespOutputResult:
     }
 
     def __init__(self, key=None, value=None):
-        """OutputRespOutputResult
+        r"""OutputRespOutputResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OutputRespOutputResult:
 
     @property
     def key(self):
-        """Gets the key of this OutputRespOutputResult.
+        r"""Gets the key of this OutputRespOutputResult.
 
         output名称
 
@@ -61,7 +61,7 @@ class OutputRespOutputResult:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this OutputRespOutputResult.
+        r"""Sets the key of this OutputRespOutputResult.
 
         output名称
 
@@ -72,7 +72,7 @@ class OutputRespOutputResult:
 
     @property
     def value(self):
-        """Gets the value of this OutputRespOutputResult.
+        r"""Gets the value of this OutputRespOutputResult.
 
         output值
 
@@ -83,7 +83,7 @@ class OutputRespOutputResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OutputRespOutputResult.
+        r"""Sets the value of this OutputRespOutputResult.
 
         output值
 

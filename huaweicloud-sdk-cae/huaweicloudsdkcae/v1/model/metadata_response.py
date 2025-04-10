@@ -33,7 +33,7 @@ class MetadataResponse:
     }
 
     def __init__(self, id=None, name=None, annotations=None, created_at=None, updated_at=None):
-        """MetadataResponse
+        r"""MetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MetadataResponse:
 
     @property
     def id(self):
-        """Gets the id of this MetadataResponse.
+        r"""Gets the id of this MetadataResponse.
 
         组件ID。
 
@@ -82,7 +82,7 @@ class MetadataResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MetadataResponse.
+        r"""Sets the id of this MetadataResponse.
 
         组件ID。
 
@@ -93,7 +93,7 @@ class MetadataResponse:
 
     @property
     def name(self):
-        """Gets the name of this MetadataResponse.
+        r"""Gets the name of this MetadataResponse.
 
         组件名称。
 
@@ -104,7 +104,7 @@ class MetadataResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetadataResponse.
+        r"""Sets the name of this MetadataResponse.
 
         组件名称。
 
@@ -115,7 +115,7 @@ class MetadataResponse:
 
     @property
     def annotations(self):
-        """Gets the annotations of this MetadataResponse.
+        r"""Gets the annotations of this MetadataResponse.
 
         组件附加属性。 - log_group_id：LTS日志组的ID。 - log_stream_id：LTS日志流的ID。 - version：组件版本。
 
@@ -126,7 +126,7 @@ class MetadataResponse:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this MetadataResponse.
+        r"""Sets the annotations of this MetadataResponse.
 
         组件附加属性。 - log_group_id：LTS日志组的ID。 - log_stream_id：LTS日志流的ID。 - version：组件版本。
 
@@ -137,7 +137,7 @@ class MetadataResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MetadataResponse.
+        r"""Gets the created_at of this MetadataResponse.
 
         创建时间。
 
@@ -148,7 +148,7 @@ class MetadataResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MetadataResponse.
+        r"""Sets the created_at of this MetadataResponse.
 
         创建时间。
 
@@ -159,7 +159,7 @@ class MetadataResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this MetadataResponse.
+        r"""Gets the updated_at of this MetadataResponse.
 
         更新时间。
 
@@ -170,7 +170,7 @@ class MetadataResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this MetadataResponse.
+        r"""Sets the updated_at of this MetadataResponse.
 
         更新时间。
 

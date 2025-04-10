@@ -51,7 +51,7 @@ class AuditSummaryResponseDataList:
     }
 
     def __init__(self, id=None, status=None, project_id=None, instance_id=None, instance_name=None, audit_duration=None, total_sql=None, total_risk=None, today_sql=None, today_risk=None, today_session=None, update_time=None, reserve1=None, reserve2=None):
-        """AuditSummaryResponseDataList
+        r"""AuditSummaryResponseDataList
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def id(self):
-        """Gets the id of this AuditSummaryResponseDataList.
+        r"""Gets the id of this AuditSummaryResponseDataList.
 
         ID
 
@@ -145,7 +145,7 @@ class AuditSummaryResponseDataList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AuditSummaryResponseDataList.
+        r"""Sets the id of this AuditSummaryResponseDataList.
 
         ID
 
@@ -156,7 +156,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def status(self):
-        """Gets the status of this AuditSummaryResponseDataList.
+        r"""Gets the status of this AuditSummaryResponseDataList.
 
         状态 - 1: success - 2: failure
 
@@ -167,7 +167,7 @@ class AuditSummaryResponseDataList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuditSummaryResponseDataList.
+        r"""Sets the status of this AuditSummaryResponseDataList.
 
         状态 - 1: success - 2: failure
 
@@ -178,7 +178,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AuditSummaryResponseDataList.
+        r"""Gets the project_id of this AuditSummaryResponseDataList.
 
         项目ID
 
@@ -189,7 +189,7 @@ class AuditSummaryResponseDataList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AuditSummaryResponseDataList.
+        r"""Sets the project_id of this AuditSummaryResponseDataList.
 
         项目ID
 
@@ -200,7 +200,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AuditSummaryResponseDataList.
+        r"""Gets the instance_id of this AuditSummaryResponseDataList.
 
         实例ID
 
@@ -211,7 +211,7 @@ class AuditSummaryResponseDataList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AuditSummaryResponseDataList.
+        r"""Sets the instance_id of this AuditSummaryResponseDataList.
 
         实例ID
 
@@ -222,7 +222,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this AuditSummaryResponseDataList.
+        r"""Gets the instance_name of this AuditSummaryResponseDataList.
 
         实例名称
 
@@ -233,7 +233,7 @@ class AuditSummaryResponseDataList:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this AuditSummaryResponseDataList.
+        r"""Sets the instance_name of this AuditSummaryResponseDataList.
 
         实例名称
 
@@ -244,7 +244,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def audit_duration(self):
-        """Gets the audit_duration of this AuditSummaryResponseDataList.
+        r"""Gets the audit_duration of this AuditSummaryResponseDataList.
 
         审计时长
 
@@ -255,7 +255,7 @@ class AuditSummaryResponseDataList:
 
     @audit_duration.setter
     def audit_duration(self, audit_duration):
-        """Sets the audit_duration of this AuditSummaryResponseDataList.
+        r"""Sets the audit_duration of this AuditSummaryResponseDataList.
 
         审计时长
 
@@ -266,7 +266,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def total_sql(self):
-        """Gets the total_sql of this AuditSummaryResponseDataList.
+        r"""Gets the total_sql of this AuditSummaryResponseDataList.
 
         语句总量
 
@@ -277,7 +277,7 @@ class AuditSummaryResponseDataList:
 
     @total_sql.setter
     def total_sql(self, total_sql):
-        """Sets the total_sql of this AuditSummaryResponseDataList.
+        r"""Sets the total_sql of this AuditSummaryResponseDataList.
 
         语句总量
 
@@ -288,7 +288,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def total_risk(self):
-        """Gets the total_risk of this AuditSummaryResponseDataList.
+        r"""Gets the total_risk of this AuditSummaryResponseDataList.
 
         风险总量
 
@@ -299,7 +299,7 @@ class AuditSummaryResponseDataList:
 
     @total_risk.setter
     def total_risk(self, total_risk):
-        """Sets the total_risk of this AuditSummaryResponseDataList.
+        r"""Sets the total_risk of this AuditSummaryResponseDataList.
 
         风险总量
 
@@ -310,7 +310,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def today_sql(self):
-        """Gets the today_sql of this AuditSummaryResponseDataList.
+        r"""Gets the today_sql of this AuditSummaryResponseDataList.
 
         今日语句
 
@@ -321,7 +321,7 @@ class AuditSummaryResponseDataList:
 
     @today_sql.setter
     def today_sql(self, today_sql):
-        """Sets the today_sql of this AuditSummaryResponseDataList.
+        r"""Sets the today_sql of this AuditSummaryResponseDataList.
 
         今日语句
 
@@ -332,7 +332,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def today_risk(self):
-        """Gets the today_risk of this AuditSummaryResponseDataList.
+        r"""Gets the today_risk of this AuditSummaryResponseDataList.
 
         今日风险
 
@@ -343,7 +343,7 @@ class AuditSummaryResponseDataList:
 
     @today_risk.setter
     def today_risk(self, today_risk):
-        """Sets the today_risk of this AuditSummaryResponseDataList.
+        r"""Sets the today_risk of this AuditSummaryResponseDataList.
 
         今日风险
 
@@ -354,7 +354,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def today_session(self):
-        """Gets the today_session of this AuditSummaryResponseDataList.
+        r"""Gets the today_session of this AuditSummaryResponseDataList.
 
         今日会话
 
@@ -365,7 +365,7 @@ class AuditSummaryResponseDataList:
 
     @today_session.setter
     def today_session(self, today_session):
-        """Sets the today_session of this AuditSummaryResponseDataList.
+        r"""Sets the today_session of this AuditSummaryResponseDataList.
 
         今日会话
 
@@ -376,7 +376,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AuditSummaryResponseDataList.
+        r"""Gets the update_time of this AuditSummaryResponseDataList.
 
         更新时间
 
@@ -387,7 +387,7 @@ class AuditSummaryResponseDataList:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AuditSummaryResponseDataList.
+        r"""Sets the update_time of this AuditSummaryResponseDataList.
 
         更新时间
 
@@ -398,7 +398,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def reserve1(self):
-        """Gets the reserve1 of this AuditSummaryResponseDataList.
+        r"""Gets the reserve1 of this AuditSummaryResponseDataList.
 
         保留字1
 
@@ -409,7 +409,7 @@ class AuditSummaryResponseDataList:
 
     @reserve1.setter
     def reserve1(self, reserve1):
-        """Sets the reserve1 of this AuditSummaryResponseDataList.
+        r"""Sets the reserve1 of this AuditSummaryResponseDataList.
 
         保留字1
 
@@ -420,7 +420,7 @@ class AuditSummaryResponseDataList:
 
     @property
     def reserve2(self):
-        """Gets the reserve2 of this AuditSummaryResponseDataList.
+        r"""Gets the reserve2 of this AuditSummaryResponseDataList.
 
         保留字2
 
@@ -431,7 +431,7 @@ class AuditSummaryResponseDataList:
 
     @reserve2.setter
     def reserve2(self, reserve2):
-        """Sets the reserve2 of this AuditSummaryResponseDataList.
+        r"""Sets the reserve2 of this AuditSummaryResponseDataList.
 
         保留字2
 

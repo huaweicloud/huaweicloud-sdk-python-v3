@@ -27,7 +27,7 @@ class BatchDeleteListenerTagsRequest:
     }
 
     def __init__(self, listener_id=None, body=None):
-        """BatchDeleteListenerTagsRequest
+        r"""BatchDeleteListenerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteListenerTagsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this BatchDeleteListenerTagsRequest.
+        r"""Gets the listener_id of this BatchDeleteListenerTagsRequest.
 
         监听器ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteListenerTagsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this BatchDeleteListenerTagsRequest.
+        r"""Sets the listener_id of this BatchDeleteListenerTagsRequest.
 
         监听器ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteListenerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteListenerTagsRequest.
+        r"""Gets the body of this BatchDeleteListenerTagsRequest.
 
         :return: The body of this BatchDeleteListenerTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.BatchDeleteListenerTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteListenerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteListenerTagsRequest.
+        r"""Sets the body of this BatchDeleteListenerTagsRequest.
 
         :param body: The body of this BatchDeleteListenerTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.BatchDeleteListenerTagsRequestBody`

@@ -31,7 +31,7 @@ class TaskHostingResultHostingResult:
     }
 
     def __init__(self, overdue_date=None, status=None, data=None, file_size=None):
-        """TaskHostingResultHostingResult
+        r"""TaskHostingResultHostingResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskHostingResultHostingResult:
 
     @property
     def overdue_date(self):
-        """Gets the overdue_date of this TaskHostingResultHostingResult.
+        r"""Gets the overdue_date of this TaskHostingResultHostingResult.
 
         结果文件result.json的过期时间
 
@@ -75,7 +75,7 @@ class TaskHostingResultHostingResult:
 
     @overdue_date.setter
     def overdue_date(self, overdue_date):
-        """Sets the overdue_date of this TaskHostingResultHostingResult.
+        r"""Sets the overdue_date of this TaskHostingResultHostingResult.
 
         结果文件result.json的过期时间
 
@@ -86,7 +86,7 @@ class TaskHostingResultHostingResult:
 
     @property
     def status(self):
-        """Gets the status of this TaskHostingResultHostingResult.
+        r"""Gets the status of this TaskHostingResultHostingResult.
 
         结果文件result.json的状态
 
@@ -97,7 +97,7 @@ class TaskHostingResultHostingResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskHostingResultHostingResult.
+        r"""Sets the status of this TaskHostingResultHostingResult.
 
         结果文件result.json的状态
 
@@ -108,7 +108,7 @@ class TaskHostingResultHostingResult:
 
     @property
     def data(self):
-        """Gets the data of this TaskHostingResultHostingResult.
+        r"""Gets the data of this TaskHostingResultHostingResult.
 
         结果文件result.json的具体内容
 
@@ -119,7 +119,7 @@ class TaskHostingResultHostingResult:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TaskHostingResultHostingResult.
+        r"""Sets the data of this TaskHostingResultHostingResult.
 
         结果文件result.json的具体内容
 
@@ -130,7 +130,7 @@ class TaskHostingResultHostingResult:
 
     @property
     def file_size(self):
-        """Gets the file_size of this TaskHostingResultHostingResult.
+        r"""Gets the file_size of this TaskHostingResultHostingResult.
 
         结果文件result.json的大小
 
@@ -141,7 +141,7 @@ class TaskHostingResultHostingResult:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this TaskHostingResultHostingResult.
+        r"""Sets the file_size of this TaskHostingResultHostingResult.
 
         结果文件result.json的大小
 

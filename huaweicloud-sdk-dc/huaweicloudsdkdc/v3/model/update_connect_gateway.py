@@ -29,7 +29,7 @@ class UpdateConnectGateway:
     }
 
     def __init__(self, name=None, description=None, address_family=None):
-        """UpdateConnectGateway
+        r"""UpdateConnectGateway
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateConnectGateway:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConnectGateway.
+        r"""Gets the name of this UpdateConnectGateway.
 
         网关名字
 
@@ -68,7 +68,7 @@ class UpdateConnectGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConnectGateway.
+        r"""Sets the name of this UpdateConnectGateway.
 
         网关名字
 
@@ -79,7 +79,7 @@ class UpdateConnectGateway:
 
     @property
     def description(self):
-        """Gets the description of this UpdateConnectGateway.
+        r"""Gets the description of this UpdateConnectGateway.
 
         描述信息
 
@@ -90,7 +90,7 @@ class UpdateConnectGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateConnectGateway.
+        r"""Sets the description of this UpdateConnectGateway.
 
         描述信息
 
@@ -101,7 +101,7 @@ class UpdateConnectGateway:
 
     @property
     def address_family(self):
-        """Gets the address_family of this UpdateConnectGateway.
+        r"""Gets the address_family of this UpdateConnectGateway.
 
         地址族信息
 
@@ -112,7 +112,7 @@ class UpdateConnectGateway:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this UpdateConnectGateway.
+        r"""Sets the address_family of this UpdateConnectGateway.
 
         地址族信息
 

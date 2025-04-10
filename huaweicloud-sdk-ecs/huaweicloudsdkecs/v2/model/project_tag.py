@@ -27,7 +27,7 @@ class ProjectTag:
     }
 
     def __init__(self, key=None, values=None):
-        """ProjectTag
+        r"""ProjectTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ProjectTag:
 
     @property
     def key(self):
-        """Gets the key of this ProjectTag.
+        r"""Gets the key of this ProjectTag.
 
         键。  - 最大长度36个unicode字符。  - 只能包含数字、字母、中划线“-”、下划线“_”。  - 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。  - 不能包含以下ASCII非打印字符：“=”,“*”,“<”,“>”,“\\”,“|”,“/”,“,”。  - 标签的键必须唯一且输入不能为空。
 
@@ -60,7 +60,7 @@ class ProjectTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ProjectTag.
+        r"""Sets the key of this ProjectTag.
 
         键。  - 最大长度36个unicode字符。  - 只能包含数字、字母、中划线“-”、下划线“_”。  - 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。  - 不能包含以下ASCII非打印字符：“=”,“*”,“<”,“>”,“\\”,“|”,“/”,“,”。  - 标签的键必须唯一且输入不能为空。
 
@@ -71,7 +71,7 @@ class ProjectTag:
 
     @property
     def values(self):
-        """Gets the values of this ProjectTag.
+        r"""Gets the values of this ProjectTag.
 
         值。  - 每个值最大长度43个unicode字符。  - 可以为空字符串。  - 只能包含数字、字母、中划线“-”、下划线“_”。  - 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。  - 不能包含以下ASCII非打印字符：“=”,“*”,“<”,“>”,“\\”,“|”,“/”,“,”。
 
@@ -82,7 +82,7 @@ class ProjectTag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ProjectTag.
+        r"""Sets the values of this ProjectTag.
 
         值。  - 每个值最大长度43个unicode字符。  - 可以为空字符串。  - 只能包含数字、字母、中划线“-”、下划线“_”。  - 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。  - 不能包含以下ASCII非打印字符：“=”,“*”,“<”,“>”,“\\”,“|”,“/”,“,”。
 

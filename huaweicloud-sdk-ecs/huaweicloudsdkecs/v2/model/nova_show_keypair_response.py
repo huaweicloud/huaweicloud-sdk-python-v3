@@ -26,7 +26,7 @@ class NovaShowKeypairResponse(SdkResponse):
     }
 
     def __init__(self, keypair=None):
-        """NovaShowKeypairResponse
+        r"""NovaShowKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaShowKeypairResponse(SdkResponse):
 
     @property
     def keypair(self):
-        """Gets the keypair of this NovaShowKeypairResponse.
+        r"""Gets the keypair of this NovaShowKeypairResponse.
 
         :return: The keypair of this NovaShowKeypairResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaKeypairDetail`
@@ -53,7 +53,7 @@ class NovaShowKeypairResponse(SdkResponse):
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this NovaShowKeypairResponse.
+        r"""Sets the keypair of this NovaShowKeypairResponse.
 
         :param keypair: The keypair of this NovaShowKeypairResponse.
         :type keypair: :class:`huaweicloudsdkecs.v2.NovaKeypairDetail`

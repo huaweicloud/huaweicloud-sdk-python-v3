@@ -29,7 +29,7 @@ class ConnectErrorInfo:
     }
 
     def __init__(self, phone_id=None, error_code=None, error_msg=None):
-        """ConnectErrorInfo
+        r"""ConnectErrorInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConnectErrorInfo:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this ConnectErrorInfo.
+        r"""Gets the phone_id of this ConnectErrorInfo.
 
         云手机的唯一标识ID。
 
@@ -68,7 +68,7 @@ class ConnectErrorInfo:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this ConnectErrorInfo.
+        r"""Sets the phone_id of this ConnectErrorInfo.
 
         云手机的唯一标识ID。
 
@@ -79,7 +79,7 @@ class ConnectErrorInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ConnectErrorInfo.
+        r"""Gets the error_code of this ConnectErrorInfo.
 
         错误码。
 
@@ -90,7 +90,7 @@ class ConnectErrorInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ConnectErrorInfo.
+        r"""Sets the error_code of this ConnectErrorInfo.
 
         错误码。
 
@@ -101,7 +101,7 @@ class ConnectErrorInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ConnectErrorInfo.
+        r"""Gets the error_msg of this ConnectErrorInfo.
 
         错误说明。
 
@@ -112,7 +112,7 @@ class ConnectErrorInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ConnectErrorInfo.
+        r"""Sets the error_msg of this ConnectErrorInfo.
 
         错误说明。
 

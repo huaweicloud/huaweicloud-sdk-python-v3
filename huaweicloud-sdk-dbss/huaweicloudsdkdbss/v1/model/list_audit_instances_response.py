@@ -28,7 +28,7 @@ class ListAuditInstancesResponse(SdkResponse):
     }
 
     def __init__(self, servers=None, total=None):
-        """ListAuditInstancesResponse
+        r"""ListAuditInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditInstancesResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this ListAuditInstancesResponse.
+        r"""Gets the servers of this ListAuditInstancesResponse.
 
         实例信息列表
 
@@ -62,7 +62,7 @@ class ListAuditInstancesResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ListAuditInstancesResponse.
+        r"""Sets the servers of this ListAuditInstancesResponse.
 
         实例信息列表
 
@@ -73,7 +73,7 @@ class ListAuditInstancesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditInstancesResponse.
+        r"""Gets the total of this ListAuditInstancesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAuditInstancesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditInstancesResponse.
+        r"""Sets the total of this ListAuditInstancesResponse.
 
         总数
 

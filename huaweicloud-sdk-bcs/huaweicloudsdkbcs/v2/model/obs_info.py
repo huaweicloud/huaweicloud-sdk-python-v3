@@ -27,7 +27,7 @@ class OBSInfo:
     }
 
     def __init__(self, name=None, addr=None):
-        """OBSInfo
+        r"""OBSInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OBSInfo:
 
     @property
     def name(self):
-        """Gets the name of this OBSInfo.
+        r"""Gets the name of this OBSInfo.
 
         OBS桶名称
 
@@ -61,7 +61,7 @@ class OBSInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OBSInfo.
+        r"""Sets the name of this OBSInfo.
 
         OBS桶名称
 
@@ -72,7 +72,7 @@ class OBSInfo:
 
     @property
     def addr(self):
-        """Gets the addr of this OBSInfo.
+        r"""Gets the addr of this OBSInfo.
 
         OBS桶地址
 
@@ -83,7 +83,7 @@ class OBSInfo:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this OBSInfo.
+        r"""Sets the addr of this OBSInfo.
 
         OBS桶地址
 

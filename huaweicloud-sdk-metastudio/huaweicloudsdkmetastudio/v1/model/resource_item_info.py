@@ -51,7 +51,7 @@ class ResourceItemInfo:
     }
 
     def __init__(self, resource_id=None, order_id=None, bound_asset=None, resource_expire_time=None, resource_type=None, business_type=None, sub_resource_type=None, is_sub_resource=None, charging_mode=None, resource_source=None, amount=None, usage=None, status=None, unit=None):
-        """ResourceItemInfo
+        r"""ResourceItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ResourceItemInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceItemInfo.
+        r"""Gets the resource_id of this ResourceItemInfo.
 
         资源ID。
 
@@ -145,7 +145,7 @@ class ResourceItemInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceItemInfo.
+        r"""Sets the resource_id of this ResourceItemInfo.
 
         资源ID。
 
@@ -156,7 +156,7 @@ class ResourceItemInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResourceItemInfo.
+        r"""Gets the order_id of this ResourceItemInfo.
 
         cloudServiceId的订单id。 云服务购买清单等场景必填（purchaseMode取值为3、4），每个CloudService生成一个订单；此场景如果为空，则报错。 其他场景，为空。
 
@@ -167,7 +167,7 @@ class ResourceItemInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResourceItemInfo.
+        r"""Sets the order_id of this ResourceItemInfo.
 
         cloudServiceId的订单id。 云服务购买清单等场景必填（purchaseMode取值为3、4），每个CloudService生成一个订单；此场景如果为空，则报错。 其他场景，为空。
 
@@ -178,7 +178,7 @@ class ResourceItemInfo:
 
     @property
     def bound_asset(self):
-        """Gets the bound_asset of this ResourceItemInfo.
+        r"""Gets the bound_asset of this ResourceItemInfo.
 
         :return: The bound_asset of this ResourceItemInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BoundAssetInfo`
@@ -187,7 +187,7 @@ class ResourceItemInfo:
 
     @bound_asset.setter
     def bound_asset(self, bound_asset):
-        """Sets the bound_asset of this ResourceItemInfo.
+        r"""Sets the bound_asset of this ResourceItemInfo.
 
         :param bound_asset: The bound_asset of this ResourceItemInfo.
         :type bound_asset: :class:`huaweicloudsdkmetastudio.v1.BoundAssetInfo`
@@ -196,7 +196,7 @@ class ResourceItemInfo:
 
     @property
     def resource_expire_time(self):
-        """Gets the resource_expire_time of this ResourceItemInfo.
+        r"""Gets the resource_expire_time of this ResourceItemInfo.
 
         资源截止时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -207,7 +207,7 @@ class ResourceItemInfo:
 
     @resource_expire_time.setter
     def resource_expire_time(self, resource_expire_time):
-        """Sets the resource_expire_time of this ResourceItemInfo.
+        r"""Sets the resource_expire_time of this ResourceItemInfo.
 
         资源截止时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -218,7 +218,7 @@ class ResourceItemInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceItemInfo.
+        r"""Gets the resource_type of this ResourceItemInfo.
 
         资源类型。详见[资源类型](metastudio_02_0042.xml)。
 
@@ -229,7 +229,7 @@ class ResourceItemInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceItemInfo.
+        r"""Sets the resource_type of this ResourceItemInfo.
 
         资源类型。详见[资源类型](metastudio_02_0042.xml)。
 
@@ -240,7 +240,7 @@ class ResourceItemInfo:
 
     @property
     def business_type(self):
-        """Gets the business_type of this ResourceItemInfo.
+        r"""Gets the business_type of this ResourceItemInfo.
 
         业务类型。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：flexus版本资源
 
@@ -251,7 +251,7 @@ class ResourceItemInfo:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this ResourceItemInfo.
+        r"""Sets the business_type of this ResourceItemInfo.
 
         业务类型。 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：flexus版本资源
 
@@ -262,7 +262,7 @@ class ResourceItemInfo:
 
     @property
     def sub_resource_type(self):
-        """Gets the sub_resource_type of this ResourceItemInfo.
+        r"""Gets the sub_resource_type of this ResourceItemInfo.
 
         子资源类型。当前只有flexus套餐包存在该字段 * voice_clone_flexus: 语音克隆Flexus版 * modeling_count_2d_model_flexus: 分身数字人形象制作Flexus版 * video_time_flexus_2d_model: 分身数字人Flexus版本视频制作
 
@@ -273,7 +273,7 @@ class ResourceItemInfo:
 
     @sub_resource_type.setter
     def sub_resource_type(self, sub_resource_type):
-        """Sets the sub_resource_type of this ResourceItemInfo.
+        r"""Sets the sub_resource_type of this ResourceItemInfo.
 
         子资源类型。当前只有flexus套餐包存在该字段 * voice_clone_flexus: 语音克隆Flexus版 * modeling_count_2d_model_flexus: 分身数字人形象制作Flexus版 * video_time_flexus_2d_model: 分身数字人Flexus版本视频制作
 
@@ -284,7 +284,7 @@ class ResourceItemInfo:
 
     @property
     def is_sub_resource(self):
-        """Gets the is_sub_resource of this ResourceItemInfo.
+        r"""Gets the is_sub_resource of this ResourceItemInfo.
 
         是否子资源。子资源描述的是子资源的数量和单位
 
@@ -295,7 +295,7 @@ class ResourceItemInfo:
 
     @is_sub_resource.setter
     def is_sub_resource(self, is_sub_resource):
-        """Sets the is_sub_resource of this ResourceItemInfo.
+        r"""Sets the is_sub_resource of this ResourceItemInfo.
 
         是否子资源。子资源描述的是子资源的数量和单位
 
@@ -306,7 +306,7 @@ class ResourceItemInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ResourceItemInfo.
+        r"""Gets the charging_mode of this ResourceItemInfo.
 
         计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性 * ON_DEMAND：按需
 
@@ -317,7 +317,7 @@ class ResourceItemInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ResourceItemInfo.
+        r"""Sets the charging_mode of this ResourceItemInfo.
 
         计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性 * ON_DEMAND：按需
 
@@ -328,7 +328,7 @@ class ResourceItemInfo:
 
     @property
     def resource_source(self):
-        """Gets the resource_source of this ResourceItemInfo.
+        r"""Gets the resource_source of this ResourceItemInfo.
 
         资源来源。 * PURCHASED: 购买 * SP_ALLOCATED：SP分配 * ADMIN_ALLOCATED：系统管理员分配
 
@@ -339,7 +339,7 @@ class ResourceItemInfo:
 
     @resource_source.setter
     def resource_source(self, resource_source):
-        """Sets the resource_source of this ResourceItemInfo.
+        r"""Sets the resource_source of this ResourceItemInfo.
 
         资源来源。 * PURCHASED: 购买 * SP_ALLOCATED：SP分配 * ADMIN_ALLOCATED：系统管理员分配
 
@@ -350,7 +350,7 @@ class ResourceItemInfo:
 
     @property
     def amount(self):
-        """Gets the amount of this ResourceItemInfo.
+        r"""Gets the amount of this ResourceItemInfo.
 
         总量
 
@@ -361,7 +361,7 @@ class ResourceItemInfo:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ResourceItemInfo.
+        r"""Sets the amount of this ResourceItemInfo.
 
         总量
 
@@ -372,7 +372,7 @@ class ResourceItemInfo:
 
     @property
     def usage(self):
-        """Gets the usage of this ResourceItemInfo.
+        r"""Gets the usage of this ResourceItemInfo.
 
         使用量
 
@@ -383,7 +383,7 @@ class ResourceItemInfo:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ResourceItemInfo.
+        r"""Sets the usage of this ResourceItemInfo.
 
         使用量
 
@@ -394,7 +394,7 @@ class ResourceItemInfo:
 
     @property
     def status(self):
-        """Gets the status of this ResourceItemInfo.
+        r"""Gets the status of this ResourceItemInfo.
 
         资源状态 0:正常 1:冻结
 
@@ -405,7 +405,7 @@ class ResourceItemInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResourceItemInfo.
+        r"""Sets the status of this ResourceItemInfo.
 
         资源状态 0:正常 1:冻结
 
@@ -416,7 +416,7 @@ class ResourceItemInfo:
 
     @property
     def unit(self):
-        """Gets the unit of this ResourceItemInfo.
+        r"""Gets the unit of this ResourceItemInfo.
 
         单位。 * NUM：个数(形象/声音) * MIN：分钟（视频制作） * HOUR：小时 （直播） * CHANNEL：路（直播/交互） * GB：GB(资产管理) * MILLION_WORDS：百万字 * TEN_THOUSAND_WORDS：万字 * TIME：次
 
@@ -427,7 +427,7 @@ class ResourceItemInfo:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ResourceItemInfo.
+        r"""Sets the unit of this ResourceItemInfo.
 
         单位。 * NUM：个数(形象/声音) * MIN：分钟（视频制作） * HOUR：小时 （直播） * CHANNEL：路（直播/交互） * GB：GB(资产管理) * MILLION_WORDS：百万字 * TEN_THOUSAND_WORDS：万字 * TIME：次
 

@@ -45,7 +45,7 @@ class ListSubCustomerCouponsRequest:
     }
 
     def __init__(self, coupon_id=None, order_id=None, promotion_plan_id=None, coupon_type=None, status=None, active_start_time=None, active_end_time=None, offset=None, limit=None, source_id=None, indirect_partner_id=None):
-        """ListSubCustomerCouponsRequest
+        r"""ListSubCustomerCouponsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this ListSubCustomerCouponsRequest.
+        r"""Gets the coupon_id of this ListSubCustomerCouponsRequest.
 
         优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -124,7 +124,7 @@ class ListSubCustomerCouponsRequest:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this ListSubCustomerCouponsRequest.
+        r"""Sets the coupon_id of this ListSubCustomerCouponsRequest.
 
         优惠券ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -135,7 +135,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListSubCustomerCouponsRequest.
+        r"""Gets the order_id of this ListSubCustomerCouponsRequest.
 
         订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -146,7 +146,7 @@ class ListSubCustomerCouponsRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListSubCustomerCouponsRequest.
+        r"""Sets the order_id of this ListSubCustomerCouponsRequest.
 
         订单ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -157,7 +157,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this ListSubCustomerCouponsRequest.
+        r"""Gets the promotion_plan_id of this ListSubCustomerCouponsRequest.
 
         促销计划ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -168,7 +168,7 @@ class ListSubCustomerCouponsRequest:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this ListSubCustomerCouponsRequest.
+        r"""Sets the promotion_plan_id of this ListSubCustomerCouponsRequest.
 
         促销计划ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -179,7 +179,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def coupon_type(self):
-        """Gets the coupon_type of this ListSubCustomerCouponsRequest.
+        r"""Gets the coupon_type of this ListSubCustomerCouponsRequest.
 
         优惠券类型：1：代金券2：折扣券3：产品券4：现金券。此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
@@ -190,7 +190,7 @@ class ListSubCustomerCouponsRequest:
 
     @coupon_type.setter
     def coupon_type(self, coupon_type):
-        """Sets the coupon_type of this ListSubCustomerCouponsRequest.
+        r"""Sets the coupon_type of this ListSubCustomerCouponsRequest.
 
         优惠券类型：1：代金券2：折扣券3：产品券4：现金券。此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
@@ -201,7 +201,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSubCustomerCouponsRequest.
+        r"""Gets the status of this ListSubCustomerCouponsRequest.
 
         客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期5：已回收。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已使用、已过期和已回收优惠券，只返回12个月以内的数据。
 
@@ -212,7 +212,7 @@ class ListSubCustomerCouponsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubCustomerCouponsRequest.
+        r"""Sets the status of this ListSubCustomerCouponsRequest.
 
         客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期5：已回收。此参数不携带或携带值为空时，不作为筛选条件。 说明： 已使用、已过期和已回收优惠券，只返回12个月以内的数据。
 
@@ -223,7 +223,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def active_start_time(self):
-        """Gets the active_start_time of this ListSubCustomerCouponsRequest.
+        r"""Gets the active_start_time of this ListSubCustomerCouponsRequest.
 
         激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
@@ -234,7 +234,7 @@ class ListSubCustomerCouponsRequest:
 
     @active_start_time.setter
     def active_start_time(self, active_start_time):
-        """Sets the active_start_time of this ListSubCustomerCouponsRequest.
+        r"""Sets the active_start_time of this ListSubCustomerCouponsRequest.
 
         激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
@@ -245,7 +245,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def active_end_time(self):
-        """Gets the active_end_time of this ListSubCustomerCouponsRequest.
+        r"""Gets the active_end_time of this ListSubCustomerCouponsRequest.
 
         结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
@@ -256,7 +256,7 @@ class ListSubCustomerCouponsRequest:
 
     @active_end_time.setter
     def active_end_time(self, active_end_time):
-        """Sets the active_end_time of this ListSubCustomerCouponsRequest.
+        r"""Sets the active_end_time of this ListSubCustomerCouponsRequest.
 
         结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串或携带值为null。
 
@@ -267,7 +267,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubCustomerCouponsRequest.
+        r"""Gets the offset of this ListSubCustomerCouponsRequest.
 
         偏移量，从0开始。默认值为0。此参数需与limit联合使用，不支持单独使用。说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -278,7 +278,7 @@ class ListSubCustomerCouponsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubCustomerCouponsRequest.
+        r"""Sets the offset of this ListSubCustomerCouponsRequest.
 
         偏移量，从0开始。默认值为0。此参数需与limit联合使用，不支持单独使用。说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -289,7 +289,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubCustomerCouponsRequest.
+        r"""Gets the limit of this ListSubCustomerCouponsRequest.
 
         查询的优惠券数量，默认值为10。
 
@@ -300,7 +300,7 @@ class ListSubCustomerCouponsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubCustomerCouponsRequest.
+        r"""Sets the limit of this ListSubCustomerCouponsRequest.
 
         查询的优惠券数量，默认值为10。
 
@@ -311,7 +311,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ListSubCustomerCouponsRequest.
+        r"""Gets the source_id of this ListSubCustomerCouponsRequest.
 
         发券来源，如果是合作伙伴发送的券，此处为伙伴ID。如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -322,7 +322,7 @@ class ListSubCustomerCouponsRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ListSubCustomerCouponsRequest.
+        r"""Sets the source_id of this ListSubCustomerCouponsRequest.
 
         发券来源，如果是合作伙伴发送的券，此处为伙伴ID。如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -333,7 +333,7 @@ class ListSubCustomerCouponsRequest:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ListSubCustomerCouponsRequest.
+        r"""Gets the indirect_partner_id of this ListSubCustomerCouponsRequest.
 
         云经销商（二级经销商）ID。华为云总经销商（一级经销商）查询云经销商名下的优惠券时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己的优惠券列表。
 
@@ -344,7 +344,7 @@ class ListSubCustomerCouponsRequest:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ListSubCustomerCouponsRequest.
+        r"""Sets the indirect_partner_id of this ListSubCustomerCouponsRequest.
 
         云经销商（二级经销商）ID。华为云总经销商（一级经销商）查询云经销商名下的优惠券时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己的优惠券列表。
 

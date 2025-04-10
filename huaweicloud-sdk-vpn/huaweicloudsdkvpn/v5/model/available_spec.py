@@ -29,7 +29,7 @@ class AvailableSpec:
     }
 
     def __init__(self, flavor=None, attachment_type=None, ip_version=None):
-        """AvailableSpec
+        r"""AvailableSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AvailableSpec:
 
     @property
     def flavor(self):
-        """Gets the flavor of this AvailableSpec.
+        r"""Gets the flavor of this AvailableSpec.
 
         VPN网关规格
 
@@ -68,7 +68,7 @@ class AvailableSpec:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this AvailableSpec.
+        r"""Sets the flavor of this AvailableSpec.
 
         VPN网关规格
 
@@ -79,7 +79,7 @@ class AvailableSpec:
 
     @property
     def attachment_type(self):
-        """Gets the attachment_type of this AvailableSpec.
+        r"""Gets the attachment_type of this AvailableSpec.
 
         关联模式
 
@@ -90,7 +90,7 @@ class AvailableSpec:
 
     @attachment_type.setter
     def attachment_type(self, attachment_type):
-        """Sets the attachment_type of this AvailableSpec.
+        r"""Sets the attachment_type of this AvailableSpec.
 
         关联模式
 
@@ -101,7 +101,7 @@ class AvailableSpec:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this AvailableSpec.
+        r"""Gets the ip_version of this AvailableSpec.
 
         网关的IP协议版本
 
@@ -112,7 +112,7 @@ class AvailableSpec:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this AvailableSpec.
+        r"""Sets the ip_version of this AvailableSpec.
 
         网关的IP协议版本
 

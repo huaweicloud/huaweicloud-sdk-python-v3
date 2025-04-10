@@ -27,7 +27,7 @@ class AssignType:
     }
 
     def __init__(self):
-        """AssignType
+        r"""AssignType
 
         The model defined in huaweicloud sdk
 

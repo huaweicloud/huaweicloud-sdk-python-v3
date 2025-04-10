@@ -45,7 +45,7 @@ class TollInvoiceResult:
     }
 
     def __init__(self, code=None, number=None, entry=None, exit=None, amount=None, cashier=None, vehicle_type=None, date=None, time=None, confidence=None, text_location=None):
-        """TollInvoiceResult
+        r"""TollInvoiceResult
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TollInvoiceResult:
 
     @property
     def code(self):
-        """Gets the code of this TollInvoiceResult.
+        r"""Gets the code of this TollInvoiceResult.
 
         发票代码。 
 
@@ -124,7 +124,7 @@ class TollInvoiceResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this TollInvoiceResult.
+        r"""Sets the code of this TollInvoiceResult.
 
         发票代码。 
 
@@ -135,7 +135,7 @@ class TollInvoiceResult:
 
     @property
     def number(self):
-        """Gets the number of this TollInvoiceResult.
+        r"""Gets the number of this TollInvoiceResult.
 
         发票号码。 
 
@@ -146,7 +146,7 @@ class TollInvoiceResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TollInvoiceResult.
+        r"""Sets the number of this TollInvoiceResult.
 
         发票号码。 
 
@@ -157,7 +157,7 @@ class TollInvoiceResult:
 
     @property
     def entry(self):
-        """Gets the entry of this TollInvoiceResult.
+        r"""Gets the entry of this TollInvoiceResult.
 
         入口。 
 
@@ -168,7 +168,7 @@ class TollInvoiceResult:
 
     @entry.setter
     def entry(self, entry):
-        """Sets the entry of this TollInvoiceResult.
+        r"""Sets the entry of this TollInvoiceResult.
 
         入口。 
 
@@ -179,7 +179,7 @@ class TollInvoiceResult:
 
     @property
     def exit(self):
-        """Gets the exit of this TollInvoiceResult.
+        r"""Gets the exit of this TollInvoiceResult.
 
         出口。 
 
@@ -190,7 +190,7 @@ class TollInvoiceResult:
 
     @exit.setter
     def exit(self, exit):
-        """Sets the exit of this TollInvoiceResult.
+        r"""Sets the exit of this TollInvoiceResult.
 
         出口。 
 
@@ -201,7 +201,7 @@ class TollInvoiceResult:
 
     @property
     def amount(self):
-        """Gets the amount of this TollInvoiceResult.
+        r"""Gets the amount of this TollInvoiceResult.
 
         收费金额。 
 
@@ -212,7 +212,7 @@ class TollInvoiceResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this TollInvoiceResult.
+        r"""Sets the amount of this TollInvoiceResult.
 
         收费金额。 
 
@@ -223,7 +223,7 @@ class TollInvoiceResult:
 
     @property
     def cashier(self):
-        """Gets the cashier of this TollInvoiceResult.
+        r"""Gets the cashier of this TollInvoiceResult.
 
         收费员。 
 
@@ -234,7 +234,7 @@ class TollInvoiceResult:
 
     @cashier.setter
     def cashier(self, cashier):
-        """Sets the cashier of this TollInvoiceResult.
+        r"""Sets the cashier of this TollInvoiceResult.
 
         收费员。 
 
@@ -245,7 +245,7 @@ class TollInvoiceResult:
 
     @property
     def vehicle_type(self):
-        """Gets the vehicle_type of this TollInvoiceResult.
+        r"""Gets the vehicle_type of this TollInvoiceResult.
 
         车辆类型。 
 
@@ -256,7 +256,7 @@ class TollInvoiceResult:
 
     @vehicle_type.setter
     def vehicle_type(self, vehicle_type):
-        """Sets the vehicle_type of this TollInvoiceResult.
+        r"""Sets the vehicle_type of this TollInvoiceResult.
 
         车辆类型。 
 
@@ -267,7 +267,7 @@ class TollInvoiceResult:
 
     @property
     def date(self):
-        """Gets the date of this TollInvoiceResult.
+        r"""Gets the date of this TollInvoiceResult.
 
         日期。 
 
@@ -278,7 +278,7 @@ class TollInvoiceResult:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this TollInvoiceResult.
+        r"""Sets the date of this TollInvoiceResult.
 
         日期。 
 
@@ -289,7 +289,7 @@ class TollInvoiceResult:
 
     @property
     def time(self):
-        """Gets the time of this TollInvoiceResult.
+        r"""Gets the time of this TollInvoiceResult.
 
         时间。 
 
@@ -300,7 +300,7 @@ class TollInvoiceResult:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this TollInvoiceResult.
+        r"""Sets the time of this TollInvoiceResult.
 
         时间。 
 
@@ -311,7 +311,7 @@ class TollInvoiceResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this TollInvoiceResult.
+        r"""Gets the confidence of this TollInvoiceResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -322,7 +322,7 @@ class TollInvoiceResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this TollInvoiceResult.
+        r"""Sets the confidence of this TollInvoiceResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -333,7 +333,7 @@ class TollInvoiceResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this TollInvoiceResult.
+        r"""Gets the text_location of this TollInvoiceResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -344,7 +344,7 @@ class TollInvoiceResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this TollInvoiceResult.
+        r"""Sets the text_location of this TollInvoiceResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

@@ -27,7 +27,7 @@ class PipelineDeleteStatus:
     }
 
     def __init__(self, name=None, status=None):
-        """PipelineDeleteStatus
+        r"""PipelineDeleteStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PipelineDeleteStatus:
 
     @property
     def name(self):
-        """Gets the name of this PipelineDeleteStatus.
+        r"""Gets the name of this PipelineDeleteStatus.
 
         流水线名称
 
@@ -61,7 +61,7 @@ class PipelineDeleteStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineDeleteStatus.
+        r"""Sets the name of this PipelineDeleteStatus.
 
         流水线名称
 
@@ -72,7 +72,7 @@ class PipelineDeleteStatus:
 
     @property
     def status(self):
-        """Gets the status of this PipelineDeleteStatus.
+        r"""Gets the status of this PipelineDeleteStatus.
 
         流水线删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
 
@@ -83,7 +83,7 @@ class PipelineDeleteStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineDeleteStatus.
+        r"""Sets the status of this PipelineDeleteStatus.
 
         流水线删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
 

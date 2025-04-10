@@ -26,7 +26,7 @@ class ListNamespacesResponse(SdkResponse):
     }
 
     def __init__(self, namespaces=None):
-        """ListNamespacesResponse
+        r"""ListNamespacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNamespacesResponse(SdkResponse):
 
     @property
     def namespaces(self):
-        """Gets the namespaces of this ListNamespacesResponse.
+        r"""Gets the namespaces of this ListNamespacesResponse.
 
         组织列表
 
@@ -55,7 +55,7 @@ class ListNamespacesResponse(SdkResponse):
 
     @namespaces.setter
     def namespaces(self, namespaces):
-        """Sets the namespaces of this ListNamespacesResponse.
+        r"""Sets the namespaces of this ListNamespacesResponse.
 
         组织列表
 

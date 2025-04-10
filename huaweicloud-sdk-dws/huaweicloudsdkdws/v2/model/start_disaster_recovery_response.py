@@ -26,7 +26,7 @@ class StartDisasterRecoveryResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery=None):
-        """StartDisasterRecoveryResponse
+        r"""StartDisasterRecoveryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartDisasterRecoveryResponse(SdkResponse):
 
     @property
     def disaster_recovery(self):
-        """Gets the disaster_recovery of this StartDisasterRecoveryResponse.
+        r"""Gets the disaster_recovery of this StartDisasterRecoveryResponse.
 
         :return: The disaster_recovery of this StartDisasterRecoveryResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`
@@ -53,7 +53,7 @@ class StartDisasterRecoveryResponse(SdkResponse):
 
     @disaster_recovery.setter
     def disaster_recovery(self, disaster_recovery):
-        """Sets the disaster_recovery of this StartDisasterRecoveryResponse.
+        r"""Sets the disaster_recovery of this StartDisasterRecoveryResponse.
 
         :param disaster_recovery: The disaster_recovery of this StartDisasterRecoveryResponse.
         :type disaster_recovery: :class:`huaweicloudsdkdws.v2.DisasterRecoveryId`

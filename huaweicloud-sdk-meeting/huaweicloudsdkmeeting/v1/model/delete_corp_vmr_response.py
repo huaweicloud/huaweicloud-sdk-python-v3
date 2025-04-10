@@ -24,7 +24,7 @@ class DeleteCorpVmrResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteCorpVmrResponse
+        r"""DeleteCorpVmrResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class PostMultiGainedSegmentResponseItem:
     }
 
     def __init__(self, content=None, type=None, sub_contents=None):
-        """PostMultiGainedSegmentResponseItem
+        r"""PostMultiGainedSegmentResponseItem
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PostMultiGainedSegmentResponseItem:
 
     @property
     def content(self):
-        """Gets the content of this PostMultiGainedSegmentResponseItem.
+        r"""Gets the content of this PostMultiGainedSegmentResponseItem.
 
         当前节点对应的文本内容
 
@@ -66,7 +66,7 @@ class PostMultiGainedSegmentResponseItem:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PostMultiGainedSegmentResponseItem.
+        r"""Sets the content of this PostMultiGainedSegmentResponseItem.
 
         当前节点对应的文本内容
 
@@ -77,7 +77,7 @@ class PostMultiGainedSegmentResponseItem:
 
     @property
     def type(self):
-        """Gets the type of this PostMultiGainedSegmentResponseItem.
+        r"""Gets the type of this PostMultiGainedSegmentResponseItem.
 
         文本类型，取值如下： WORD-词汇类型 CHAR-字符类型
 
@@ -88,7 +88,7 @@ class PostMultiGainedSegmentResponseItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostMultiGainedSegmentResponseItem.
+        r"""Sets the type of this PostMultiGainedSegmentResponseItem.
 
         文本类型，取值如下： WORD-词汇类型 CHAR-字符类型
 
@@ -99,7 +99,7 @@ class PostMultiGainedSegmentResponseItem:
 
     @property
     def sub_contents(self):
-        """Gets the sub_contents of this PostMultiGainedSegmentResponseItem.
+        r"""Gets the sub_contents of this PostMultiGainedSegmentResponseItem.
 
         当前节点的子节点列表
 
@@ -110,7 +110,7 @@ class PostMultiGainedSegmentResponseItem:
 
     @sub_contents.setter
     def sub_contents(self, sub_contents):
-        """Sets the sub_contents of this PostMultiGainedSegmentResponseItem.
+        r"""Sets the sub_contents of this PostMultiGainedSegmentResponseItem.
 
         当前节点的子节点列表
 

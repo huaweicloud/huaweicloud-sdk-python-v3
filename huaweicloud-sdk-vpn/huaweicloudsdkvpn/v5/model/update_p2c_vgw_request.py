@@ -27,7 +27,7 @@ class UpdateP2cVgwRequest:
     }
 
     def __init__(self, p2c_vgw_id=None, body=None):
-        """UpdateP2cVgwRequest
+        r"""UpdateP2cVgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateP2cVgwRequest:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this UpdateP2cVgwRequest.
+        r"""Gets the p2c_vgw_id of this UpdateP2cVgwRequest.
 
         P2C VPN网关实例ID
 
@@ -60,7 +60,7 @@ class UpdateP2cVgwRequest:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this UpdateP2cVgwRequest.
+        r"""Sets the p2c_vgw_id of this UpdateP2cVgwRequest.
 
         P2C VPN网关实例ID
 
@@ -71,7 +71,7 @@ class UpdateP2cVgwRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateP2cVgwRequest.
+        r"""Gets the body of this UpdateP2cVgwRequest.
 
         :return: The body of this UpdateP2cVgwRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateP2cVgwRequestBody`
@@ -80,7 +80,7 @@ class UpdateP2cVgwRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateP2cVgwRequest.
+        r"""Sets the body of this UpdateP2cVgwRequest.
 
         :param body: The body of this UpdateP2cVgwRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateP2cVgwRequestBody`

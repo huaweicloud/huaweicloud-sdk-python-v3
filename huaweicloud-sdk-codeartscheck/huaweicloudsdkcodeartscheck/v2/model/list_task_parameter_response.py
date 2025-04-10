@@ -24,7 +24,7 @@ class ListTaskParameterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ListTaskParameterResponse
+        r"""ListTaskParameterResponse
 
         The model defined in huaweicloud sdk
 

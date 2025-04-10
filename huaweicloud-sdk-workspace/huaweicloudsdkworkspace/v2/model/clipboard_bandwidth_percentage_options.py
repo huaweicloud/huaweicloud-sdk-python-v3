@@ -25,7 +25,7 @@ class ClipboardBandwidthPercentageOptions:
     }
 
     def __init__(self, clipboard_bandwidth_percentage_value=None):
-        """ClipboardBandwidthPercentageOptions
+        r"""ClipboardBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ClipboardBandwidthPercentageOptions:
 
     @property
     def clipboard_bandwidth_percentage_value(self):
-        """Gets the clipboard_bandwidth_percentage_value of this ClipboardBandwidthPercentageOptions.
+        r"""Gets the clipboard_bandwidth_percentage_value of this ClipboardBandwidthPercentageOptions.
 
         剪切板带宽百分比控制量（%）。取值范围为[0-100]。默认：3。
 
@@ -54,7 +54,7 @@ class ClipboardBandwidthPercentageOptions:
 
     @clipboard_bandwidth_percentage_value.setter
     def clipboard_bandwidth_percentage_value(self, clipboard_bandwidth_percentage_value):
-        """Sets the clipboard_bandwidth_percentage_value of this ClipboardBandwidthPercentageOptions.
+        r"""Sets the clipboard_bandwidth_percentage_value of this ClipboardBandwidthPercentageOptions.
 
         剪切板带宽百分比控制量（%）。取值范围为[0-100]。默认：3。
 

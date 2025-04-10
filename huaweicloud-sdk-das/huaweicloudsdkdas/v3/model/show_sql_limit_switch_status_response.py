@@ -26,7 +26,7 @@ class ShowSqlLimitSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, switch_status=None):
-        """ShowSqlLimitSwitchStatusResponse
+        r"""ShowSqlLimitSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSqlLimitSwitchStatusResponse(SdkResponse):
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this ShowSqlLimitSwitchStatusResponse.
+        r"""Gets the switch_status of this ShowSqlLimitSwitchStatusResponse.
 
         开关状态
 
@@ -55,7 +55,7 @@ class ShowSqlLimitSwitchStatusResponse(SdkResponse):
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this ShowSqlLimitSwitchStatusResponse.
+        r"""Sets the switch_status of this ShowSqlLimitSwitchStatusResponse.
 
         开关状态
 

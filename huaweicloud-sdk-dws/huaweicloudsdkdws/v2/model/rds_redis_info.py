@@ -39,7 +39,7 @@ class RdsRedisInfo:
     }
 
     def __init__(self, id=None, cluster_id=None, start_time=None, end_time=None, status=None, redis_conf=None, redis_progress=None, redis_table_detail=None):
-        """RdsRedisInfo
+        r"""RdsRedisInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RdsRedisInfo:
 
     @property
     def id(self):
-        """Gets the id of this RdsRedisInfo.
+        r"""Gets the id of this RdsRedisInfo.
 
         ID
 
@@ -103,7 +103,7 @@ class RdsRedisInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RdsRedisInfo.
+        r"""Sets the id of this RdsRedisInfo.
 
         ID
 
@@ -114,7 +114,7 @@ class RdsRedisInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RdsRedisInfo.
+        r"""Gets the cluster_id of this RdsRedisInfo.
 
         集群ID
 
@@ -125,7 +125,7 @@ class RdsRedisInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RdsRedisInfo.
+        r"""Sets the cluster_id of this RdsRedisInfo.
 
         集群ID
 
@@ -136,7 +136,7 @@ class RdsRedisInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RdsRedisInfo.
+        r"""Gets the start_time of this RdsRedisInfo.
 
         开始时间
 
@@ -147,7 +147,7 @@ class RdsRedisInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RdsRedisInfo.
+        r"""Sets the start_time of this RdsRedisInfo.
 
         开始时间
 
@@ -158,7 +158,7 @@ class RdsRedisInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RdsRedisInfo.
+        r"""Gets the end_time of this RdsRedisInfo.
 
         结束时间
 
@@ -169,7 +169,7 @@ class RdsRedisInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RdsRedisInfo.
+        r"""Sets the end_time of this RdsRedisInfo.
 
         结束时间
 
@@ -180,7 +180,7 @@ class RdsRedisInfo:
 
     @property
     def status(self):
-        """Gets the status of this RdsRedisInfo.
+        r"""Gets the status of this RdsRedisInfo.
 
         状态
 
@@ -191,7 +191,7 @@ class RdsRedisInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RdsRedisInfo.
+        r"""Sets the status of this RdsRedisInfo.
 
         状态
 
@@ -202,7 +202,7 @@ class RdsRedisInfo:
 
     @property
     def redis_conf(self):
-        """Gets the redis_conf of this RdsRedisInfo.
+        r"""Gets the redis_conf of this RdsRedisInfo.
 
         :return: The redis_conf of this RdsRedisInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.RedisConf`
@@ -211,7 +211,7 @@ class RdsRedisInfo:
 
     @redis_conf.setter
     def redis_conf(self, redis_conf):
-        """Sets the redis_conf of this RdsRedisInfo.
+        r"""Sets the redis_conf of this RdsRedisInfo.
 
         :param redis_conf: The redis_conf of this RdsRedisInfo.
         :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConf`
@@ -220,7 +220,7 @@ class RdsRedisInfo:
 
     @property
     def redis_progress(self):
-        """Gets the redis_progress of this RdsRedisInfo.
+        r"""Gets the redis_progress of this RdsRedisInfo.
 
         :return: The redis_progress of this RdsRedisInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.RedisProgress`
@@ -229,7 +229,7 @@ class RdsRedisInfo:
 
     @redis_progress.setter
     def redis_progress(self, redis_progress):
-        """Sets the redis_progress of this RdsRedisInfo.
+        r"""Sets the redis_progress of this RdsRedisInfo.
 
         :param redis_progress: The redis_progress of this RdsRedisInfo.
         :type redis_progress: :class:`huaweicloudsdkdws.v2.RedisProgress`
@@ -238,7 +238,7 @@ class RdsRedisInfo:
 
     @property
     def redis_table_detail(self):
-        """Gets the redis_table_detail of this RdsRedisInfo.
+        r"""Gets the redis_table_detail of this RdsRedisInfo.
 
         :return: The redis_table_detail of this RdsRedisInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.RedisTableDetail`
@@ -247,7 +247,7 @@ class RdsRedisInfo:
 
     @redis_table_detail.setter
     def redis_table_detail(self, redis_table_detail):
-        """Sets the redis_table_detail of this RdsRedisInfo.
+        r"""Sets the redis_table_detail of this RdsRedisInfo.
 
         :param redis_table_detail: The redis_table_detail of this RdsRedisInfo.
         :type redis_table_detail: :class:`huaweicloudsdkdws.v2.RedisTableDetail`

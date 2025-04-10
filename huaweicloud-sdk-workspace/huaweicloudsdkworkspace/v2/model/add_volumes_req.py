@@ -29,7 +29,7 @@ class AddVolumesReq:
     }
 
     def __init__(self, order_id=None, enterprise_project_id=None, volumes=None):
-        """AddVolumesReq
+        r"""AddVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddVolumesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this AddVolumesReq.
+        r"""Gets the order_id of this AddVolumesReq.
 
         订单ID，包周期桌面添加磁盘时使用。
 
@@ -67,7 +67,7 @@ class AddVolumesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this AddVolumesReq.
+        r"""Sets the order_id of this AddVolumesReq.
 
         订单ID，包周期桌面添加磁盘时使用。
 
@@ -78,7 +78,7 @@ class AddVolumesReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AddVolumesReq.
+        r"""Gets the enterprise_project_id of this AddVolumesReq.
 
         企业项目ID，默认\"0\"
 
@@ -89,7 +89,7 @@ class AddVolumesReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AddVolumesReq.
+        r"""Sets the enterprise_project_id of this AddVolumesReq.
 
         企业项目ID，默认\"0\"
 
@@ -100,7 +100,7 @@ class AddVolumesReq:
 
     @property
     def volumes(self):
-        """Gets the volumes of this AddVolumesReq.
+        r"""Gets the volumes of this AddVolumesReq.
 
         待新增的磁盘信息，每个桌面的数据盘数量不超过10个。
 
@@ -111,7 +111,7 @@ class AddVolumesReq:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this AddVolumesReq.
+        r"""Sets the volumes of this AddVolumesReq.
 
         待新增的磁盘信息，每个桌面的数据盘数量不超过10个。
 

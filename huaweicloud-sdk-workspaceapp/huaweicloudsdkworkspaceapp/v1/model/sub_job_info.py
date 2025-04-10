@@ -41,7 +41,7 @@ class SubJobInfo:
     }
 
     def __init__(self, job_id=None, job_type=None, job_status=None, entities=None, begin_time=None, end_time=None, expected_end_time=None, execute_code=None, execute_message=None):
-        """SubJobInfo
+        r"""SubJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SubJobInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SubJobInfo.
+        r"""Gets the job_id of this SubJobInfo.
 
         子job标识。
 
@@ -110,7 +110,7 @@ class SubJobInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SubJobInfo.
+        r"""Sets the job_id of this SubJobInfo.
 
         子job标识。
 
@@ -121,7 +121,7 @@ class SubJobInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this SubJobInfo.
+        r"""Gets the job_type of this SubJobInfo.
 
         任务类型，固定值2：子Job。
 
@@ -132,7 +132,7 @@ class SubJobInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this SubJobInfo.
+        r"""Sets the job_type of this SubJobInfo.
 
         任务类型，固定值2：子Job。
 
@@ -143,7 +143,7 @@ class SubJobInfo:
 
     @property
     def job_status(self):
-        """Gets the job_status of this SubJobInfo.
+        r"""Gets the job_status of this SubJobInfo.
 
         job状态 - 0：失败。 - 1：成功。 - 2：处理中。 - 3：正在初始化。
 
@@ -154,7 +154,7 @@ class SubJobInfo:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this SubJobInfo.
+        r"""Sets the job_status of this SubJobInfo.
 
         job状态 - 0：失败。 - 1：成功。 - 2：处理中。 - 3：正在初始化。
 
@@ -165,7 +165,7 @@ class SubJobInfo:
 
     @property
     def entities(self):
-        """Gets the entities of this SubJobInfo.
+        r"""Gets the entities of this SubJobInfo.
 
         SubJob中处理的云服务/云资源对象。 创建、规格变更等场景是必填；冻结、解冻、删除等场景可空。
 
@@ -176,7 +176,7 @@ class SubJobInfo:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this SubJobInfo.
+        r"""Sets the entities of this SubJobInfo.
 
         SubJob中处理的云服务/云资源对象。 创建、规格变更等场景是必填；冻结、解冻、删除等场景可空。
 
@@ -187,7 +187,7 @@ class SubJobInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SubJobInfo.
+        r"""Gets the begin_time of this SubJobInfo.
 
         任务开始时间。
 
@@ -198,7 +198,7 @@ class SubJobInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SubJobInfo.
+        r"""Sets the begin_time of this SubJobInfo.
 
         任务开始时间。
 
@@ -209,7 +209,7 @@ class SubJobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SubJobInfo.
+        r"""Gets the end_time of this SubJobInfo.
 
         任务结束时间。
 
@@ -220,7 +220,7 @@ class SubJobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SubJobInfo.
+        r"""Sets the end_time of this SubJobInfo.
 
         任务结束时间。
 
@@ -231,7 +231,7 @@ class SubJobInfo:
 
     @property
     def expected_end_time(self):
-        """Gets the expected_end_time of this SubJobInfo.
+        r"""Gets the expected_end_time of this SubJobInfo.
 
         云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
 
@@ -242,7 +242,7 @@ class SubJobInfo:
 
     @expected_end_time.setter
     def expected_end_time(self, expected_end_time):
-        """Sets the expected_end_time of this SubJobInfo.
+        r"""Sets the expected_end_time of this SubJobInfo.
 
         云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
 
@@ -253,7 +253,7 @@ class SubJobInfo:
 
     @property
     def execute_code(self):
-        """Gets the execute_code of this SubJobInfo.
+        r"""Gets the execute_code of this SubJobInfo.
 
         Job执行结果码。
 
@@ -264,7 +264,7 @@ class SubJobInfo:
 
     @execute_code.setter
     def execute_code(self, execute_code):
-        """Sets the execute_code of this SubJobInfo.
+        r"""Sets the execute_code of this SubJobInfo.
 
         Job执行结果码。
 
@@ -275,7 +275,7 @@ class SubJobInfo:
 
     @property
     def execute_message(self):
-        """Gets the execute_message of this SubJobInfo.
+        r"""Gets the execute_message of this SubJobInfo.
 
         Job执行结果描述，以及每个SubJob的执行结果描述。
 
@@ -286,7 +286,7 @@ class SubJobInfo:
 
     @execute_message.setter
     def execute_message(self, execute_message):
-        """Sets the execute_message of this SubJobInfo.
+        r"""Sets the execute_message of this SubJobInfo.
 
         Job执行结果描述，以及每个SubJob的执行结果描述。
 

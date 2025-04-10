@@ -26,7 +26,7 @@ class UpdateSyncIamUserResponse(SdkResponse):
     }
 
     def __init__(self, state=None):
-        """UpdateSyncIamUserResponse
+        r"""UpdateSyncIamUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSyncIamUserResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateSyncIamUserResponse.
+        r"""Gets the state of this UpdateSyncIamUserResponse.
 
         请求下发的结果
 
@@ -55,7 +55,7 @@ class UpdateSyncIamUserResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateSyncIamUserResponse.
+        r"""Sets the state of this UpdateSyncIamUserResponse.
 
         请求下发的结果
 

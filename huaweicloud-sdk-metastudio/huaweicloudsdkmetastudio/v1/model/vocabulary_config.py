@@ -33,7 +33,7 @@ class VocabularyConfig:
     }
 
     def __init__(self, id=None, key=None, value=None, create_time=None, update_time=None):
-        """VocabularyConfig
+        r"""VocabularyConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VocabularyConfig:
 
     @property
     def id(self):
-        """Gets the id of this VocabularyConfig.
+        r"""Gets the id of this VocabularyConfig.
 
         id
 
@@ -82,7 +82,7 @@ class VocabularyConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VocabularyConfig.
+        r"""Sets the id of this VocabularyConfig.
 
         id
 
@@ -93,7 +93,7 @@ class VocabularyConfig:
 
     @property
     def key(self):
-        """Gets the key of this VocabularyConfig.
+        r"""Gets the key of this VocabularyConfig.
 
         原始词
 
@@ -104,7 +104,7 @@ class VocabularyConfig:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this VocabularyConfig.
+        r"""Sets the key of this VocabularyConfig.
 
         原始词
 
@@ -115,7 +115,7 @@ class VocabularyConfig:
 
     @property
     def value(self):
-        """Gets the value of this VocabularyConfig.
+        r"""Gets the value of this VocabularyConfig.
 
         设置的自定义读法
 
@@ -126,7 +126,7 @@ class VocabularyConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this VocabularyConfig.
+        r"""Sets the value of this VocabularyConfig.
 
         设置的自定义读法
 
@@ -137,7 +137,7 @@ class VocabularyConfig:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VocabularyConfig.
+        r"""Gets the create_time of this VocabularyConfig.
 
         创建时间。
 
@@ -148,7 +148,7 @@ class VocabularyConfig:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VocabularyConfig.
+        r"""Sets the create_time of this VocabularyConfig.
 
         创建时间。
 
@@ -159,7 +159,7 @@ class VocabularyConfig:
 
     @property
     def update_time(self):
-        """Gets the update_time of this VocabularyConfig.
+        r"""Gets the update_time of this VocabularyConfig.
 
         更新时间。
 
@@ -170,7 +170,7 @@ class VocabularyConfig:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this VocabularyConfig.
+        r"""Sets the update_time of this VocabularyConfig.
 
         更新时间。
 

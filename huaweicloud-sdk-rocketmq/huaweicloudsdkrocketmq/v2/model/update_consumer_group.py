@@ -33,7 +33,7 @@ class UpdateConsumerGroup:
     }
 
     def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None):
-        """UpdateConsumerGroup
+        r"""UpdateConsumerGroup
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class UpdateConsumerGroup:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateConsumerGroup.
+        r"""Gets the enabled of this UpdateConsumerGroup.
 
         是否可以消费。
 
@@ -79,7 +79,7 @@ class UpdateConsumerGroup:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateConsumerGroup.
+        r"""Sets the enabled of this UpdateConsumerGroup.
 
         是否可以消费。
 
@@ -90,7 +90,7 @@ class UpdateConsumerGroup:
 
     @property
     def broadcast(self):
-        """Gets the broadcast of this UpdateConsumerGroup.
+        r"""Gets the broadcast of this UpdateConsumerGroup.
 
         是否广播。
 
@@ -101,7 +101,7 @@ class UpdateConsumerGroup:
 
     @broadcast.setter
     def broadcast(self, broadcast):
-        """Sets the broadcast of this UpdateConsumerGroup.
+        r"""Sets the broadcast of this UpdateConsumerGroup.
 
         是否广播。
 
@@ -112,7 +112,7 @@ class UpdateConsumerGroup:
 
     @property
     def brokers(self):
-        """Gets the brokers of this UpdateConsumerGroup.
+        r"""Gets the brokers of this UpdateConsumerGroup.
 
         关联的代理列表。
 
@@ -123,7 +123,7 @@ class UpdateConsumerGroup:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this UpdateConsumerGroup.
+        r"""Sets the brokers of this UpdateConsumerGroup.
 
         关联的代理列表。
 
@@ -134,7 +134,7 @@ class UpdateConsumerGroup:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConsumerGroup.
+        r"""Gets the name of this UpdateConsumerGroup.
 
         待修改参数的消费组（消费组名称不支持修改）。
 
@@ -145,7 +145,7 @@ class UpdateConsumerGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConsumerGroup.
+        r"""Sets the name of this UpdateConsumerGroup.
 
         待修改参数的消费组（消费组名称不支持修改）。
 
@@ -156,7 +156,7 @@ class UpdateConsumerGroup:
 
     @property
     def retry_max_time(self):
-        """Gets the retry_max_time of this UpdateConsumerGroup.
+        r"""Gets the retry_max_time of this UpdateConsumerGroup.
 
         最大重试次数，取值范围为1~16。
 
@@ -167,7 +167,7 @@ class UpdateConsumerGroup:
 
     @retry_max_time.setter
     def retry_max_time(self, retry_max_time):
-        """Sets the retry_max_time of this UpdateConsumerGroup.
+        r"""Sets the retry_max_time of this UpdateConsumerGroup.
 
         最大重试次数，取值范围为1~16。
 

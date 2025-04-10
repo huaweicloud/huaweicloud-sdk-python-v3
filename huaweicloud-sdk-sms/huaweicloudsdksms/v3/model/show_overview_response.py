@@ -52,7 +52,7 @@ class ShowOverviewResponse(SdkResponse):
     }
 
     def __init__(self, waiting=None, replicate=None, syncing=None, stopped=None, deleting=None, cutovering=None, unavailable=None, stopping=None, skipping=None, finished=None, initialize=None, error=None, cloning=None, unconfigured=None):
-        """ShowOverviewResponse
+        r"""ShowOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def waiting(self):
-        """Gets the waiting of this ShowOverviewResponse.
+        r"""Gets the waiting of this ShowOverviewResponse.
 
         等待中
 
@@ -146,7 +146,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @waiting.setter
     def waiting(self, waiting):
-        """Sets the waiting of this ShowOverviewResponse.
+        r"""Sets the waiting of this ShowOverviewResponse.
 
         等待中
 
@@ -157,7 +157,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def replicate(self):
-        """Gets the replicate of this ShowOverviewResponse.
+        r"""Gets the replicate of this ShowOverviewResponse.
 
         复制中
 
@@ -168,7 +168,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @replicate.setter
     def replicate(self, replicate):
-        """Sets the replicate of this ShowOverviewResponse.
+        r"""Sets the replicate of this ShowOverviewResponse.
 
         复制中
 
@@ -179,7 +179,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def syncing(self):
-        """Gets the syncing of this ShowOverviewResponse.
+        r"""Gets the syncing of this ShowOverviewResponse.
 
         同步中
 
@@ -190,7 +190,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this ShowOverviewResponse.
+        r"""Sets the syncing of this ShowOverviewResponse.
 
         同步中
 
@@ -201,7 +201,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def stopped(self):
-        """Gets the stopped of this ShowOverviewResponse.
+        r"""Gets the stopped of this ShowOverviewResponse.
 
         已暂停
 
@@ -212,7 +212,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @stopped.setter
     def stopped(self, stopped):
-        """Sets the stopped of this ShowOverviewResponse.
+        r"""Sets the stopped of this ShowOverviewResponse.
 
         已暂停
 
@@ -223,7 +223,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def deleting(self):
-        """Gets the deleting of this ShowOverviewResponse.
+        r"""Gets the deleting of this ShowOverviewResponse.
 
         删除中
 
@@ -234,7 +234,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @deleting.setter
     def deleting(self, deleting):
-        """Sets the deleting of this ShowOverviewResponse.
+        r"""Sets the deleting of this ShowOverviewResponse.
 
         删除中
 
@@ -245,7 +245,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def cutovering(self):
-        """Gets the cutovering of this ShowOverviewResponse.
+        r"""Gets the cutovering of this ShowOverviewResponse.
 
         启动目的端中
 
@@ -256,7 +256,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @cutovering.setter
     def cutovering(self, cutovering):
-        """Sets the cutovering of this ShowOverviewResponse.
+        r"""Sets the cutovering of this ShowOverviewResponse.
 
         启动目的端中
 
@@ -267,7 +267,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def unavailable(self):
-        """Gets the unavailable of this ShowOverviewResponse.
+        r"""Gets the unavailable of this ShowOverviewResponse.
 
         环境校验不通过
 
@@ -278,7 +278,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @unavailable.setter
     def unavailable(self, unavailable):
-        """Sets the unavailable of this ShowOverviewResponse.
+        r"""Sets the unavailable of this ShowOverviewResponse.
 
         环境校验不通过
 
@@ -289,7 +289,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def stopping(self):
-        """Gets the stopping of this ShowOverviewResponse.
+        r"""Gets the stopping of this ShowOverviewResponse.
 
         暂停中
 
@@ -300,7 +300,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @stopping.setter
     def stopping(self, stopping):
-        """Sets the stopping of this ShowOverviewResponse.
+        r"""Sets the stopping of this ShowOverviewResponse.
 
         暂停中
 
@@ -311,7 +311,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def skipping(self):
-        """Gets the skipping of this ShowOverviewResponse.
+        r"""Gets the skipping of this ShowOverviewResponse.
 
         跳过中
 
@@ -322,7 +322,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @skipping.setter
     def skipping(self, skipping):
-        """Sets the skipping of this ShowOverviewResponse.
+        r"""Sets the skipping of this ShowOverviewResponse.
 
         跳过中
 
@@ -333,7 +333,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def finished(self):
-        """Gets the finished of this ShowOverviewResponse.
+        r"""Gets the finished of this ShowOverviewResponse.
 
         启动目的端完成
 
@@ -344,7 +344,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @finished.setter
     def finished(self, finished):
-        """Sets the finished of this ShowOverviewResponse.
+        r"""Sets the finished of this ShowOverviewResponse.
 
         启动目的端完成
 
@@ -355,7 +355,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def initialize(self):
-        """Gets the initialize of this ShowOverviewResponse.
+        r"""Gets the initialize of this ShowOverviewResponse.
 
         初始化
 
@@ -366,7 +366,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @initialize.setter
     def initialize(self, initialize):
-        """Sets the initialize of this ShowOverviewResponse.
+        r"""Sets the initialize of this ShowOverviewResponse.
 
         初始化
 
@@ -377,7 +377,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowOverviewResponse.
+        r"""Gets the error of this ShowOverviewResponse.
 
         错误
 
@@ -388,7 +388,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowOverviewResponse.
+        r"""Sets the error of this ShowOverviewResponse.
 
         错误
 
@@ -399,7 +399,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def cloning(self):
-        """Gets the cloning of this ShowOverviewResponse.
+        r"""Gets the cloning of this ShowOverviewResponse.
 
         等待克隆完成
 
@@ -410,7 +410,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @cloning.setter
     def cloning(self, cloning):
-        """Sets the cloning of this ShowOverviewResponse.
+        r"""Sets the cloning of this ShowOverviewResponse.
 
         等待克隆完成
 
@@ -421,7 +421,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def unconfigured(self):
-        """Gets the unconfigured of this ShowOverviewResponse.
+        r"""Gets the unconfigured of this ShowOverviewResponse.
 
         未配置目的端
 
@@ -432,7 +432,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @unconfigured.setter
     def unconfigured(self, unconfigured):
-        """Sets the unconfigured of this ShowOverviewResponse.
+        r"""Sets the unconfigured of this ShowOverviewResponse.
 
         未配置目的端
 

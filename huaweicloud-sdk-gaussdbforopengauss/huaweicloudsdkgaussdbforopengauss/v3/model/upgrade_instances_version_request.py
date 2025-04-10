@@ -27,7 +27,7 @@ class UpgradeInstancesVersionRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """UpgradeInstancesVersionRequest
+        r"""UpgradeInstancesVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpgradeInstancesVersionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpgradeInstancesVersionRequest.
+        r"""Gets the x_language of this UpgradeInstancesVersionRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class UpgradeInstancesVersionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpgradeInstancesVersionRequest.
+        r"""Sets the x_language of this UpgradeInstancesVersionRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class UpgradeInstancesVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeInstancesVersionRequest.
+        r"""Gets the body of this UpgradeInstancesVersionRequest.
 
         :return: The body of this UpgradeInstancesVersionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBUpgradeInstancesVersionRequest`
@@ -81,7 +81,7 @@ class UpgradeInstancesVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeInstancesVersionRequest.
+        r"""Sets the body of this UpgradeInstancesVersionRequest.
 
         :param body: The body of this UpgradeInstancesVersionRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBUpgradeInstancesVersionRequest`

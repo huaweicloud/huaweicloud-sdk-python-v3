@@ -27,7 +27,7 @@ class ServiceType:
     }
 
     def __init__(self):
-        """ServiceType
+        r"""ServiceType
 
         The model defined in huaweicloud sdk
 

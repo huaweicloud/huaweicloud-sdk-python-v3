@@ -37,7 +37,7 @@ class TableMeta:
     }
 
     def __init__(self, catalog_name=None, database_name=None, table_name=None, table_type=None, comments=None, columns=None, partition_keys=None):
-        """TableMeta
+        r"""TableMeta
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class TableMeta:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this TableMeta.
+        r"""Gets the catalog_name of this TableMeta.
 
         表名
 
@@ -91,7 +91,7 @@ class TableMeta:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this TableMeta.
+        r"""Sets the catalog_name of this TableMeta.
 
         表名
 
@@ -102,7 +102,7 @@ class TableMeta:
 
     @property
     def database_name(self):
-        """Gets the database_name of this TableMeta.
+        r"""Gets the database_name of this TableMeta.
 
         数据库名字
 
@@ -113,7 +113,7 @@ class TableMeta:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this TableMeta.
+        r"""Sets the database_name of this TableMeta.
 
         数据库名字
 
@@ -124,7 +124,7 @@ class TableMeta:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TableMeta.
+        r"""Gets the table_name of this TableMeta.
 
         表名字
 
@@ -135,7 +135,7 @@ class TableMeta:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TableMeta.
+        r"""Sets the table_name of this TableMeta.
 
         表名字
 
@@ -146,7 +146,7 @@ class TableMeta:
 
     @property
     def table_type(self):
-        """Gets the table_type of this TableMeta.
+        r"""Gets the table_type of this TableMeta.
 
         表类型
 
@@ -157,7 +157,7 @@ class TableMeta:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this TableMeta.
+        r"""Sets the table_type of this TableMeta.
 
         表类型
 
@@ -168,7 +168,7 @@ class TableMeta:
 
     @property
     def comments(self):
-        """Gets the comments of this TableMeta.
+        r"""Gets the comments of this TableMeta.
 
         表描述信息
 
@@ -179,7 +179,7 @@ class TableMeta:
 
     @comments.setter
     def comments(self, comments):
-        """Sets the comments of this TableMeta.
+        r"""Sets the comments of this TableMeta.
 
         表描述信息
 
@@ -190,7 +190,7 @@ class TableMeta:
 
     @property
     def columns(self):
-        """Gets the columns of this TableMeta.
+        r"""Gets the columns of this TableMeta.
 
         分区列以外的所有字段。
 
@@ -201,7 +201,7 @@ class TableMeta:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this TableMeta.
+        r"""Sets the columns of this TableMeta.
 
         分区列以外的所有字段。
 
@@ -212,7 +212,7 @@ class TableMeta:
 
     @property
     def partition_keys(self):
-        """Gets the partition_keys of this TableMeta.
+        r"""Gets the partition_keys of this TableMeta.
 
         分区列的信息。
 
@@ -223,7 +223,7 @@ class TableMeta:
 
     @partition_keys.setter
     def partition_keys(self, partition_keys):
-        """Sets the partition_keys of this TableMeta.
+        r"""Sets the partition_keys of this TableMeta.
 
         分区列的信息。
 

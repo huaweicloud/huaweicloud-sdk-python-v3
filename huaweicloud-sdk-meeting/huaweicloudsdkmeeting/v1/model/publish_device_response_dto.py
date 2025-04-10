@@ -27,7 +27,7 @@ class PublishDeviceResponseDTO:
     }
 
     def __init__(self, device_user_id=None, device_name=None):
-        """PublishDeviceResponseDTO
+        r"""PublishDeviceResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublishDeviceResponseDTO:
 
     @property
     def device_user_id(self):
-        """Gets the device_user_id of this PublishDeviceResponseDTO.
+        r"""Gets the device_user_id of this PublishDeviceResponseDTO.
 
         设备用户ID。
 
@@ -61,7 +61,7 @@ class PublishDeviceResponseDTO:
 
     @device_user_id.setter
     def device_user_id(self, device_user_id):
-        """Sets the device_user_id of this PublishDeviceResponseDTO.
+        r"""Sets the device_user_id of this PublishDeviceResponseDTO.
 
         设备用户ID。
 
@@ -72,7 +72,7 @@ class PublishDeviceResponseDTO:
 
     @property
     def device_name(self):
-        """Gets the device_name of this PublishDeviceResponseDTO.
+        r"""Gets the device_name of this PublishDeviceResponseDTO.
 
         设备名称。
 
@@ -83,7 +83,7 @@ class PublishDeviceResponseDTO:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this PublishDeviceResponseDTO.
+        r"""Sets the device_name of this PublishDeviceResponseDTO.
 
         设备名称。
 

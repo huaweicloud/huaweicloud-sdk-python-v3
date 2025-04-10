@@ -37,7 +37,7 @@ class UpdateLocation:
     }
 
     def __init__(self, name=None, country=None, province=None, city=None, district=None, condition=None, description=None):
-        """UpdateLocation
+        r"""UpdateLocation
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateLocation:
 
     @property
     def name(self):
-        """Gets the name of this UpdateLocation.
+        r"""Gets the name of this UpdateLocation.
 
         场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
@@ -96,7 +96,7 @@ class UpdateLocation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateLocation.
+        r"""Sets the name of this UpdateLocation.
 
         场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
@@ -107,7 +107,7 @@ class UpdateLocation:
 
     @property
     def country(self):
-        """Gets the country of this UpdateLocation.
+        r"""Gets the country of this UpdateLocation.
 
         场地所在国家
 
@@ -118,7 +118,7 @@ class UpdateLocation:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this UpdateLocation.
+        r"""Sets the country of this UpdateLocation.
 
         场地所在国家
 
@@ -129,7 +129,7 @@ class UpdateLocation:
 
     @property
     def province(self):
-        """Gets the province of this UpdateLocation.
+        r"""Gets the province of this UpdateLocation.
 
         场地所在省/自治区/直辖市
 
@@ -140,7 +140,7 @@ class UpdateLocation:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this UpdateLocation.
+        r"""Sets the province of this UpdateLocation.
 
         场地所在省/自治区/直辖市
 
@@ -151,7 +151,7 @@ class UpdateLocation:
 
     @property
     def city(self):
-        """Gets the city of this UpdateLocation.
+        r"""Gets the city of this UpdateLocation.
 
         场地所在市/区
 
@@ -162,7 +162,7 @@ class UpdateLocation:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this UpdateLocation.
+        r"""Sets the city of this UpdateLocation.
 
         场地所在市/区
 
@@ -173,7 +173,7 @@ class UpdateLocation:
 
     @property
     def district(self):
-        """Gets the district of this UpdateLocation.
+        r"""Gets the district of this UpdateLocation.
 
         场地所在区/县
 
@@ -184,7 +184,7 @@ class UpdateLocation:
 
     @district.setter
     def district(self, district):
-        """Sets the district of this UpdateLocation.
+        r"""Sets the district of this UpdateLocation.
 
         场地所在区/县
 
@@ -195,7 +195,7 @@ class UpdateLocation:
 
     @property
     def condition(self):
-        """Gets the condition of this UpdateLocation.
+        r"""Gets the condition of this UpdateLocation.
 
         :return: The condition of this UpdateLocation.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.UpdateCondition`
@@ -204,7 +204,7 @@ class UpdateLocation:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this UpdateLocation.
+        r"""Sets the condition of this UpdateLocation.
 
         :param condition: The condition of this UpdateLocation.
         :type condition: :class:`huaweicloudsdkcloudpond.v1.UpdateCondition`
@@ -213,7 +213,7 @@ class UpdateLocation:
 
     @property
     def description(self):
-        """Gets the description of this UpdateLocation.
+        r"""Gets the description of this UpdateLocation.
 
         场地描述，最大支持长度为255个字节，不允许包含<>
 
@@ -224,7 +224,7 @@ class UpdateLocation:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateLocation.
+        r"""Sets the description of this UpdateLocation.
 
         场地描述，最大支持长度为255个字节，不允许包含<>
 

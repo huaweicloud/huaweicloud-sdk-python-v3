@@ -29,7 +29,7 @@ class CountInstanceByTagsRequest:
     }
 
     def __init__(self, resource_type=None, x_language=None, body=None):
-        """CountInstanceByTagsRequest
+        r"""CountInstanceByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CountInstanceByTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CountInstanceByTagsRequest.
+        r"""Gets the resource_type of this CountInstanceByTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -67,7 +67,7 @@ class CountInstanceByTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CountInstanceByTagsRequest.
+        r"""Sets the resource_type of this CountInstanceByTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -78,7 +78,7 @@ class CountInstanceByTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CountInstanceByTagsRequest.
+        r"""Gets the x_language of this CountInstanceByTagsRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CountInstanceByTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CountInstanceByTagsRequest.
+        r"""Sets the x_language of this CountInstanceByTagsRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CountInstanceByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountInstanceByTagsRequest.
+        r"""Gets the body of this CountInstanceByTagsRequest.
 
         :return: The body of this CountInstanceByTagsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.QueryInstanceByTagReq`
@@ -109,7 +109,7 @@ class CountInstanceByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountInstanceByTagsRequest.
+        r"""Sets the body of this CountInstanceByTagsRequest.
 
         :param body: The body of this CountInstanceByTagsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.QueryInstanceByTagReq`

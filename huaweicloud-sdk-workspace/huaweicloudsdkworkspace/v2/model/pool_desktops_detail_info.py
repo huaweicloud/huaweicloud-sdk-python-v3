@@ -129,7 +129,7 @@ class PoolDesktopsDetailInfo:
     }
 
     def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, resource_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, join_domain=None, order_id=None, tags=None, deh_id=None, platform_kind=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, need_apply_adn=None, is_attaching_eip=None, desktop_isv=None, creation_type=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, inconsistent_types=None):
-        """PoolDesktopsDetailInfo
+        r"""PoolDesktopsDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -407,7 +407,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this PoolDesktopsDetailInfo.
+        r"""Gets the desktop_id of this PoolDesktopsDetailInfo.
 
         桌面ID。
 
@@ -418,7 +418,7 @@ class PoolDesktopsDetailInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this PoolDesktopsDetailInfo.
+        r"""Sets the desktop_id of this PoolDesktopsDetailInfo.
 
         桌面ID。
 
@@ -429,7 +429,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this PoolDesktopsDetailInfo.
+        r"""Gets the computer_name of this PoolDesktopsDetailInfo.
 
         桌面名。
 
@@ -440,7 +440,7 @@ class PoolDesktopsDetailInfo:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this PoolDesktopsDetailInfo.
+        r"""Sets the computer_name of this PoolDesktopsDetailInfo.
 
         桌面名。
 
@@ -451,7 +451,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def os_host_name(self):
-        """Gets the os_host_name of this PoolDesktopsDetailInfo.
+        r"""Gets the os_host_name of this PoolDesktopsDetailInfo.
 
         系统计算机名。
 
@@ -462,7 +462,7 @@ class PoolDesktopsDetailInfo:
 
     @os_host_name.setter
     def os_host_name(self, os_host_name):
-        """Sets the os_host_name of this PoolDesktopsDetailInfo.
+        r"""Sets the os_host_name of this PoolDesktopsDetailInfo.
 
         系统计算机名。
 
@@ -473,7 +473,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def addresses(self):
-        """Gets the addresses of this PoolDesktopsDetailInfo.
+        r"""Gets the addresses of this PoolDesktopsDetailInfo.
 
         桌面IP地址列表。
 
@@ -484,7 +484,7 @@ class PoolDesktopsDetailInfo:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this PoolDesktopsDetailInfo.
+        r"""Sets the addresses of this PoolDesktopsDetailInfo.
 
         桌面IP地址列表。
 
@@ -495,7 +495,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def ip_addresses(self):
-        """Gets the ip_addresses of this PoolDesktopsDetailInfo.
+        r"""Gets the ip_addresses of this PoolDesktopsDetailInfo.
 
         IP地址列表。
 
@@ -506,7 +506,7 @@ class PoolDesktopsDetailInfo:
 
     @ip_addresses.setter
     def ip_addresses(self, ip_addresses):
-        """Sets the ip_addresses of this PoolDesktopsDetailInfo.
+        r"""Sets the ip_addresses of this PoolDesktopsDetailInfo.
 
         IP地址列表。
 
@@ -517,7 +517,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def ipv4(self):
-        """Gets the ipv4 of this PoolDesktopsDetailInfo.
+        r"""Gets the ipv4 of this PoolDesktopsDetailInfo.
 
         系统计算机IPV4。
 
@@ -528,7 +528,7 @@ class PoolDesktopsDetailInfo:
 
     @ipv4.setter
     def ipv4(self, ipv4):
-        """Sets the ipv4 of this PoolDesktopsDetailInfo.
+        r"""Sets the ipv4 of this PoolDesktopsDetailInfo.
 
         系统计算机IPV4。
 
@@ -539,7 +539,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def ipv6(self):
-        """Gets the ipv6 of this PoolDesktopsDetailInfo.
+        r"""Gets the ipv6 of this PoolDesktopsDetailInfo.
 
         系统计算机IPV6。
 
@@ -550,7 +550,7 @@ class PoolDesktopsDetailInfo:
 
     @ipv6.setter
     def ipv6(self, ipv6):
-        """Sets the ipv6 of this PoolDesktopsDetailInfo.
+        r"""Sets the ipv6 of this PoolDesktopsDetailInfo.
 
         系统计算机IPV6。
 
@@ -561,7 +561,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def user_list(self):
-        """Gets the user_list of this PoolDesktopsDetailInfo.
+        r"""Gets the user_list of this PoolDesktopsDetailInfo.
 
         用户列表
 
@@ -572,7 +572,7 @@ class PoolDesktopsDetailInfo:
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this PoolDesktopsDetailInfo.
+        r"""Sets the user_list of this PoolDesktopsDetailInfo.
 
         用户列表
 
@@ -583,7 +583,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def user_group_list(self):
-        """Gets the user_group_list of this PoolDesktopsDetailInfo.
+        r"""Gets the user_group_list of this PoolDesktopsDetailInfo.
 
         用户组列表
 
@@ -594,7 +594,7 @@ class PoolDesktopsDetailInfo:
 
     @user_group_list.setter
     def user_group_list(self, user_group_list):
-        """Sets the user_group_list of this PoolDesktopsDetailInfo.
+        r"""Sets the user_group_list of this PoolDesktopsDetailInfo.
 
         用户组列表
 
@@ -605,7 +605,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this PoolDesktopsDetailInfo.
+        r"""Gets the desktop_type of this PoolDesktopsDetailInfo.
 
         桌面类型。  - DEDICATED：专属桌面。
 
@@ -616,7 +616,7 @@ class PoolDesktopsDetailInfo:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this PoolDesktopsDetailInfo.
+        r"""Sets the desktop_type of this PoolDesktopsDetailInfo.
 
         桌面类型。  - DEDICATED：专属桌面。
 
@@ -627,7 +627,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PoolDesktopsDetailInfo.
+        r"""Gets the resource_type of this PoolDesktopsDetailInfo.
 
         resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
 
@@ -638,7 +638,7 @@ class PoolDesktopsDetailInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PoolDesktopsDetailInfo.
+        r"""Sets the resource_type of this PoolDesktopsDetailInfo.
 
         resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
 
@@ -649,7 +649,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def metadata(self):
-        """Gets the metadata of this PoolDesktopsDetailInfo.
+        r"""Gets the metadata of this PoolDesktopsDetailInfo.
 
         桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
@@ -660,7 +660,7 @@ class PoolDesktopsDetailInfo:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this PoolDesktopsDetailInfo.
+        r"""Sets the metadata of this PoolDesktopsDetailInfo.
 
         桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
@@ -671,7 +671,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def flavor(self):
-        """Gets the flavor of this PoolDesktopsDetailInfo.
+        r"""Gets the flavor of this PoolDesktopsDetailInfo.
 
         :return: The flavor of this PoolDesktopsDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -680,7 +680,7 @@ class PoolDesktopsDetailInfo:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this PoolDesktopsDetailInfo.
+        r"""Sets the flavor of this PoolDesktopsDetailInfo.
 
         :param flavor: The flavor of this PoolDesktopsDetailInfo.
         :type flavor: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -689,7 +689,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this PoolDesktopsDetailInfo.
+        r"""Gets the status of this PoolDesktopsDetailInfo.
 
         桌面状态。
 
@@ -700,7 +700,7 @@ class PoolDesktopsDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PoolDesktopsDetailInfo.
+        r"""Sets the status of this PoolDesktopsDetailInfo.
 
         桌面状态。
 
@@ -711,7 +711,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this PoolDesktopsDetailInfo.
+        r"""Gets the task_status of this PoolDesktopsDetailInfo.
 
         任务状态。  - scheduling：创建中，正在进行调度。 - block_device_mapping：创建中，正在准备磁盘。 - networking：创建中，正在准备网络。 - spawning：创建中，正在内部创建。 - rebooting：重启中。 - reboot_pending：重启中，正在下发重启。 - reboot_started：重启中，开始内部重启。 - rebooting_hard：强制重启中。 - reboot_pending_hard：强制重启中，正在下发重启。 - reboot_started_hard：强制重启中，开始内部重启。 - rebuilding：重建中。 - rebuild_block_device_mapping：重建中，正在准备磁盘。 - rebuild_spawning：重建中，正在内部重建。 - migrating：热迁移中。 - resize_prep：调整规格中，正在准备阶段。 - resize_migrating：调整规格中，正在迁移阶段。 - resize_migrated：调整规格中，已经完成迁移。 - resize_finish：调整规格中，正在完成调整。 - resize_reverting：调整规格中，正在回退调整。 - powering-off：停止中。 - powering-on：启动中。 - deleting：删除中。 - deleteFailed：删除失败。 - updating: 更新中。 - desktopNetworkChanging: 切换网络中。
 
@@ -722,7 +722,7 @@ class PoolDesktopsDetailInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this PoolDesktopsDetailInfo.
+        r"""Sets the task_status of this PoolDesktopsDetailInfo.
 
         任务状态。  - scheduling：创建中，正在进行调度。 - block_device_mapping：创建中，正在准备磁盘。 - networking：创建中，正在准备网络。 - spawning：创建中，正在内部创建。 - rebooting：重启中。 - reboot_pending：重启中，正在下发重启。 - reboot_started：重启中，开始内部重启。 - rebooting_hard：强制重启中。 - reboot_pending_hard：强制重启中，正在下发重启。 - reboot_started_hard：强制重启中，开始内部重启。 - rebuilding：重建中。 - rebuild_block_device_mapping：重建中，正在准备磁盘。 - rebuild_spawning：重建中，正在内部重建。 - migrating：热迁移中。 - resize_prep：调整规格中，正在准备阶段。 - resize_migrating：调整规格中，正在迁移阶段。 - resize_migrated：调整规格中，已经完成迁移。 - resize_finish：调整规格中，正在完成调整。 - resize_reverting：调整规格中，正在回退调整。 - powering-off：停止中。 - powering-on：启动中。 - deleting：删除中。 - deleteFailed：删除失败。 - updating: 更新中。 - desktopNetworkChanging: 切换网络中。
 
@@ -733,7 +733,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this PoolDesktopsDetailInfo.
+        r"""Gets the in_maintenance_mode of this PoolDesktopsDetailInfo.
 
         是否处于维护模式,true表示维护模式，false表示不处于维护模式
 
@@ -744,7 +744,7 @@ class PoolDesktopsDetailInfo:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this PoolDesktopsDetailInfo.
+        r"""Sets the in_maintenance_mode of this PoolDesktopsDetailInfo.
 
         是否处于维护模式,true表示维护模式，false表示不处于维护模式
 
@@ -755,7 +755,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def created(self):
-        """Gets the created of this PoolDesktopsDetailInfo.
+        r"""Gets the created of this PoolDesktopsDetailInfo.
 
         桌面创建时间。
 
@@ -766,7 +766,7 @@ class PoolDesktopsDetailInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this PoolDesktopsDetailInfo.
+        r"""Sets the created of this PoolDesktopsDetailInfo.
 
         桌面创建时间。
 
@@ -777,7 +777,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this PoolDesktopsDetailInfo.
+        r"""Gets the security_groups of this PoolDesktopsDetailInfo.
 
         桌面安全组。
 
@@ -788,7 +788,7 @@ class PoolDesktopsDetailInfo:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this PoolDesktopsDetailInfo.
+        r"""Sets the security_groups of this PoolDesktopsDetailInfo.
 
         桌面安全组。
 
@@ -799,7 +799,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def login_status(self):
-        """Gets the login_status of this PoolDesktopsDetailInfo.
+        r"""Gets the login_status of this PoolDesktopsDetailInfo.
 
         桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -810,7 +810,7 @@ class PoolDesktopsDetailInfo:
 
     @login_status.setter
     def login_status(self, login_status):
-        """Sets the login_status of this PoolDesktopsDetailInfo.
+        r"""Sets the login_status of this PoolDesktopsDetailInfo.
 
         桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -821,7 +821,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this PoolDesktopsDetailInfo.
+        r"""Gets the user_name of this PoolDesktopsDetailInfo.
 
         桌面所属用户。
 
@@ -832,7 +832,7 @@ class PoolDesktopsDetailInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this PoolDesktopsDetailInfo.
+        r"""Sets the user_name of this PoolDesktopsDetailInfo.
 
         桌面所属用户。
 
@@ -843,7 +843,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def attach_user_infos(self):
-        """Gets the attach_user_infos of this PoolDesktopsDetailInfo.
+        r"""Gets the attach_user_infos of this PoolDesktopsDetailInfo.
 
         桌面已分配的用户信息列表。
 
@@ -854,7 +854,7 @@ class PoolDesktopsDetailInfo:
 
     @attach_user_infos.setter
     def attach_user_infos(self, attach_user_infos):
-        """Sets the attach_user_infos of this PoolDesktopsDetailInfo.
+        r"""Sets the attach_user_infos of this PoolDesktopsDetailInfo.
 
         桌面已分配的用户信息列表。
 
@@ -865,7 +865,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this PoolDesktopsDetailInfo.
+        r"""Gets the product_id of this PoolDesktopsDetailInfo.
 
         产品ID。
 
@@ -876,7 +876,7 @@ class PoolDesktopsDetailInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this PoolDesktopsDetailInfo.
+        r"""Sets the product_id of this PoolDesktopsDetailInfo.
 
         产品ID。
 
@@ -887,7 +887,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def share_resource_sku(self):
-        """Gets the share_resource_sku of this PoolDesktopsDetailInfo.
+        r"""Gets the share_resource_sku of this PoolDesktopsDetailInfo.
 
         桌面协同资源SKU码
 
@@ -898,7 +898,7 @@ class PoolDesktopsDetailInfo:
 
     @share_resource_sku.setter
     def share_resource_sku(self, share_resource_sku):
-        """Sets the share_resource_sku of this PoolDesktopsDetailInfo.
+        r"""Sets the share_resource_sku of this PoolDesktopsDetailInfo.
 
         桌面协同资源SKU码
 
@@ -909,7 +909,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this PoolDesktopsDetailInfo.
+        r"""Gets the root_volume of this PoolDesktopsDetailInfo.
 
         :return: The root_volume of this PoolDesktopsDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
@@ -918,7 +918,7 @@ class PoolDesktopsDetailInfo:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this PoolDesktopsDetailInfo.
+        r"""Sets the root_volume of this PoolDesktopsDetailInfo.
 
         :param root_volume: The root_volume of this PoolDesktopsDetailInfo.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
@@ -927,7 +927,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this PoolDesktopsDetailInfo.
+        r"""Gets the data_volumes of this PoolDesktopsDetailInfo.
 
         数据盘列表。
 
@@ -938,7 +938,7 @@ class PoolDesktopsDetailInfo:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this PoolDesktopsDetailInfo.
+        r"""Sets the data_volumes of this PoolDesktopsDetailInfo.
 
         数据盘列表。
 
@@ -949,7 +949,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def user_group(self):
-        """Gets the user_group of this PoolDesktopsDetailInfo.
+        r"""Gets the user_group of this PoolDesktopsDetailInfo.
 
         桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -960,7 +960,7 @@ class PoolDesktopsDetailInfo:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this PoolDesktopsDetailInfo.
+        r"""Sets the user_group of this PoolDesktopsDetailInfo.
 
         桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -971,7 +971,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this PoolDesktopsDetailInfo.
+        r"""Gets the availability_zone of this PoolDesktopsDetailInfo.
 
         可用分区。
 
@@ -982,7 +982,7 @@ class PoolDesktopsDetailInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this PoolDesktopsDetailInfo.
+        r"""Sets the availability_zone of this PoolDesktopsDetailInfo.
 
         可用分区。
 
@@ -993,7 +993,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def site_type(self):
-        """Gets the site_type of this PoolDesktopsDetailInfo.
+        r"""Gets the site_type of this PoolDesktopsDetailInfo.
 
         站点类型
 
@@ -1004,7 +1004,7 @@ class PoolDesktopsDetailInfo:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this PoolDesktopsDetailInfo.
+        r"""Sets the site_type of this PoolDesktopsDetailInfo.
 
         站点类型
 
@@ -1015,7 +1015,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def site_name(self):
-        """Gets the site_name of this PoolDesktopsDetailInfo.
+        r"""Gets the site_name of this PoolDesktopsDetailInfo.
 
         站点名字
 
@@ -1026,7 +1026,7 @@ class PoolDesktopsDetailInfo:
 
     @site_name.setter
     def site_name(self, site_name):
-        """Sets the site_name of this PoolDesktopsDetailInfo.
+        r"""Sets the site_name of this PoolDesktopsDetailInfo.
 
         站点名字
 
@@ -1037,7 +1037,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def product(self):
-        """Gets the product of this PoolDesktopsDetailInfo.
+        r"""Gets the product of this PoolDesktopsDetailInfo.
 
         :return: The product of this PoolDesktopsDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -1046,7 +1046,7 @@ class PoolDesktopsDetailInfo:
 
     @product.setter
     def product(self, product):
-        """Sets the product of this PoolDesktopsDetailInfo.
+        r"""Sets the product of this PoolDesktopsDetailInfo.
 
         :param product: The product of this PoolDesktopsDetailInfo.
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -1055,7 +1055,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this PoolDesktopsDetailInfo.
+        r"""Gets the ou_name of this PoolDesktopsDetailInfo.
 
         创建桌面时加入的OU名称。
 
@@ -1066,7 +1066,7 @@ class PoolDesktopsDetailInfo:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this PoolDesktopsDetailInfo.
+        r"""Sets the ou_name of this PoolDesktopsDetailInfo.
 
         创建桌面时加入的OU名称。
 
@@ -1077,7 +1077,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def os_version(self):
-        """Gets the os_version of this PoolDesktopsDetailInfo.
+        r"""Gets the os_version of this PoolDesktopsDetailInfo.
 
         操作系统版本号。
 
@@ -1088,7 +1088,7 @@ class PoolDesktopsDetailInfo:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this PoolDesktopsDetailInfo.
+        r"""Sets the os_version of this PoolDesktopsDetailInfo.
 
         操作系统版本号。
 
@@ -1099,7 +1099,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def sid(self):
-        """Gets the sid of this PoolDesktopsDetailInfo.
+        r"""Gets the sid of this PoolDesktopsDetailInfo.
 
         SID
 
@@ -1110,7 +1110,7 @@ class PoolDesktopsDetailInfo:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this PoolDesktopsDetailInfo.
+        r"""Sets the sid of this PoolDesktopsDetailInfo.
 
         SID
 
@@ -1121,7 +1121,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def join_domain(self):
-        """Gets the join_domain of this PoolDesktopsDetailInfo.
+        r"""Gets the join_domain of this PoolDesktopsDetailInfo.
 
         计算机是否加入域。  - 0：不加入域。 - 1：加入域。
 
@@ -1132,7 +1132,7 @@ class PoolDesktopsDetailInfo:
 
     @join_domain.setter
     def join_domain(self, join_domain):
-        """Sets the join_domain of this PoolDesktopsDetailInfo.
+        r"""Sets the join_domain of this PoolDesktopsDetailInfo.
 
         计算机是否加入域。  - 0：不加入域。 - 1：加入域。
 
@@ -1143,7 +1143,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this PoolDesktopsDetailInfo.
+        r"""Gets the order_id of this PoolDesktopsDetailInfo.
 
         包周期产品的订单ID。
 
@@ -1154,7 +1154,7 @@ class PoolDesktopsDetailInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PoolDesktopsDetailInfo.
+        r"""Sets the order_id of this PoolDesktopsDetailInfo.
 
         包周期产品的订单ID。
 
@@ -1165,7 +1165,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this PoolDesktopsDetailInfo.
+        r"""Gets the tags of this PoolDesktopsDetailInfo.
 
         桌面标签列表。
 
@@ -1176,7 +1176,7 @@ class PoolDesktopsDetailInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PoolDesktopsDetailInfo.
+        r"""Sets the tags of this PoolDesktopsDetailInfo.
 
         桌面标签列表。
 
@@ -1187,7 +1187,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def deh_id(self):
-        """Gets the deh_id of this PoolDesktopsDetailInfo.
+        r"""Gets the deh_id of this PoolDesktopsDetailInfo.
 
         云办公主机id。
 
@@ -1198,7 +1198,7 @@ class PoolDesktopsDetailInfo:
 
     @deh_id.setter
     def deh_id(self, deh_id):
-        """Sets the deh_id of this PoolDesktopsDetailInfo.
+        r"""Sets the deh_id of this PoolDesktopsDetailInfo.
 
         云办公主机id。
 
@@ -1209,7 +1209,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def platform_kind(self):
-        """Gets the platform_kind of this PoolDesktopsDetailInfo.
+        r"""Gets the platform_kind of this PoolDesktopsDetailInfo.
 
         平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
 
@@ -1220,7 +1220,7 @@ class PoolDesktopsDetailInfo:
 
     @platform_kind.setter
     def platform_kind(self, platform_kind):
-        """Sets the platform_kind of this PoolDesktopsDetailInfo.
+        r"""Sets the platform_kind of this PoolDesktopsDetailInfo.
 
         平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
 
@@ -1231,7 +1231,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def is_support_internet(self):
-        """Gets the is_support_internet of this PoolDesktopsDetailInfo.
+        r"""Gets the is_support_internet of this PoolDesktopsDetailInfo.
 
         是否开通互联网，true：已开通，false：未开通
 
@@ -1242,7 +1242,7 @@ class PoolDesktopsDetailInfo:
 
     @is_support_internet.setter
     def is_support_internet(self, is_support_internet):
-        """Sets the is_support_internet of this PoolDesktopsDetailInfo.
+        r"""Sets the is_support_internet of this PoolDesktopsDetailInfo.
 
         是否开通互联网，true：已开通，false：未开通
 
@@ -1253,7 +1253,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def internet_mode(self):
-        """Gets the internet_mode of this PoolDesktopsDetailInfo.
+        r"""Gets the internet_mode of this PoolDesktopsDetailInfo.
 
         上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
 
@@ -1264,7 +1264,7 @@ class PoolDesktopsDetailInfo:
 
     @internet_mode.setter
     def internet_mode(self, internet_mode):
-        """Sets the internet_mode of this PoolDesktopsDetailInfo.
+        r"""Sets the internet_mode of this PoolDesktopsDetailInfo.
 
         上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
 
@@ -1275,7 +1275,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def internet_mode_list(self):
-        """Gets the internet_mode_list of this PoolDesktopsDetailInfo.
+        r"""Gets the internet_mode_list of this PoolDesktopsDetailInfo.
 
         桌面使用的上网方式列表。
 
@@ -1286,7 +1286,7 @@ class PoolDesktopsDetailInfo:
 
     @internet_mode_list.setter
     def internet_mode_list(self, internet_mode_list):
-        """Sets the internet_mode_list of this PoolDesktopsDetailInfo.
+        r"""Sets the internet_mode_list of this PoolDesktopsDetailInfo.
 
         桌面使用的上网方式列表。
 
@@ -1297,7 +1297,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def need_apply_adn(self):
-        """Gets the need_apply_adn of this PoolDesktopsDetailInfo.
+        r"""Gets the need_apply_adn of this PoolDesktopsDetailInfo.
 
         是否需要开通云办公带宽。
 
@@ -1308,7 +1308,7 @@ class PoolDesktopsDetailInfo:
 
     @need_apply_adn.setter
     def need_apply_adn(self, need_apply_adn):
-        """Sets the need_apply_adn of this PoolDesktopsDetailInfo.
+        r"""Sets the need_apply_adn of this PoolDesktopsDetailInfo.
 
         是否需要开通云办公带宽。
 
@@ -1319,7 +1319,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def is_attaching_eip(self):
-        """Gets the is_attaching_eip of this PoolDesktopsDetailInfo.
+        r"""Gets the is_attaching_eip of this PoolDesktopsDetailInfo.
 
         桌面是否正在绑定EIP。
 
@@ -1330,7 +1330,7 @@ class PoolDesktopsDetailInfo:
 
     @is_attaching_eip.setter
     def is_attaching_eip(self, is_attaching_eip):
-        """Sets the is_attaching_eip of this PoolDesktopsDetailInfo.
+        r"""Sets the is_attaching_eip of this PoolDesktopsDetailInfo.
 
         桌面是否正在绑定EIP。
 
@@ -1341,7 +1341,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def desktop_isv(self):
-        """Gets the desktop_isv of this PoolDesktopsDetailInfo.
+        r"""Gets the desktop_isv of this PoolDesktopsDetailInfo.
 
         桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
 
@@ -1352,7 +1352,7 @@ class PoolDesktopsDetailInfo:
 
     @desktop_isv.setter
     def desktop_isv(self, desktop_isv):
-        """Sets the desktop_isv of this PoolDesktopsDetailInfo.
+        r"""Sets the desktop_isv of this PoolDesktopsDetailInfo.
 
         桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
 
@@ -1363,7 +1363,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def creation_type(self):
-        """Gets the creation_type of this PoolDesktopsDetailInfo.
+        r"""Gets the creation_type of this PoolDesktopsDetailInfo.
 
         桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
 
@@ -1374,7 +1374,7 @@ class PoolDesktopsDetailInfo:
 
     @creation_type.setter
     def creation_type(self, creation_type):
-        """Sets the creation_type of this PoolDesktopsDetailInfo.
+        r"""Sets the creation_type of this PoolDesktopsDetailInfo.
 
         桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
 
@@ -1385,7 +1385,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def attach_state(self):
-        """Gets the attach_state of this PoolDesktopsDetailInfo.
+        r"""Gets the attach_state of this PoolDesktopsDetailInfo.
 
         分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
 
@@ -1396,7 +1396,7 @@ class PoolDesktopsDetailInfo:
 
     @attach_state.setter
     def attach_state(self, attach_state):
-        """Sets the attach_state of this PoolDesktopsDetailInfo.
+        r"""Sets the attach_state of this PoolDesktopsDetailInfo.
 
         分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
 
@@ -1407,7 +1407,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PoolDesktopsDetailInfo.
+        r"""Gets the enterprise_project_id of this PoolDesktopsDetailInfo.
 
         企业项目ID
 
@@ -1418,7 +1418,7 @@ class PoolDesktopsDetailInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PoolDesktopsDetailInfo.
+        r"""Sets the enterprise_project_id of this PoolDesktopsDetailInfo.
 
         企业项目ID
 
@@ -1429,7 +1429,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this PoolDesktopsDetailInfo.
+        r"""Gets the subnet_id of this PoolDesktopsDetailInfo.
 
         桌面的子网ID。
 
@@ -1440,7 +1440,7 @@ class PoolDesktopsDetailInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this PoolDesktopsDetailInfo.
+        r"""Sets the subnet_id of this PoolDesktopsDetailInfo.
 
         桌面的子网ID。
 
@@ -1451,7 +1451,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def bill_resource_id(self):
-        """Gets the bill_resource_id of this PoolDesktopsDetailInfo.
+        r"""Gets the bill_resource_id of this PoolDesktopsDetailInfo.
 
         桌面计费资源ID
 
@@ -1462,7 +1462,7 @@ class PoolDesktopsDetailInfo:
 
     @bill_resource_id.setter
     def bill_resource_id(self, bill_resource_id):
-        """Sets the bill_resource_id of this PoolDesktopsDetailInfo.
+        r"""Sets the bill_resource_id of this PoolDesktopsDetailInfo.
 
         桌面计费资源ID
 
@@ -1473,7 +1473,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def process(self):
-        """Gets the process of this PoolDesktopsDetailInfo.
+        r"""Gets the process of this PoolDesktopsDetailInfo.
 
         桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
 
@@ -1484,7 +1484,7 @@ class PoolDesktopsDetailInfo:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this PoolDesktopsDetailInfo.
+        r"""Sets the process of this PoolDesktopsDetailInfo.
 
         桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
 
@@ -1495,7 +1495,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def root_resource_id(self):
-        """Gets the root_resource_id of this PoolDesktopsDetailInfo.
+        r"""Gets the root_resource_id of this PoolDesktopsDetailInfo.
 
         整机实例根资源ID。
 
@@ -1506,7 +1506,7 @@ class PoolDesktopsDetailInfo:
 
     @root_resource_id.setter
     def root_resource_id(self, root_resource_id):
-        """Sets the root_resource_id of this PoolDesktopsDetailInfo.
+        r"""Sets the root_resource_id of this PoolDesktopsDetailInfo.
 
         整机实例根资源ID。
 
@@ -1517,7 +1517,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def hour_package_info(self):
-        """Gets the hour_package_info of this PoolDesktopsDetailInfo.
+        r"""Gets the hour_package_info of this PoolDesktopsDetailInfo.
 
         :return: The hour_package_info of this PoolDesktopsDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
@@ -1526,7 +1526,7 @@ class PoolDesktopsDetailInfo:
 
     @hour_package_info.setter
     def hour_package_info(self, hour_package_info):
-        """Sets the hour_package_info of this PoolDesktopsDetailInfo.
+        r"""Sets the hour_package_info of this PoolDesktopsDetailInfo.
 
         :param hour_package_info: The hour_package_info of this PoolDesktopsDetailInfo.
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
@@ -1535,7 +1535,7 @@ class PoolDesktopsDetailInfo:
 
     @property
     def inconsistent_types(self):
-        """Gets the inconsistent_types of this PoolDesktopsDetailInfo.
+        r"""Gets the inconsistent_types of this PoolDesktopsDetailInfo.
 
         桌面与桌面池不一致的规格类型: - PRODUCT: 产品ID不一致 - IMAGE: 镜像ID不一致
 
@@ -1546,7 +1546,7 @@ class PoolDesktopsDetailInfo:
 
     @inconsistent_types.setter
     def inconsistent_types(self, inconsistent_types):
-        """Sets the inconsistent_types of this PoolDesktopsDetailInfo.
+        r"""Sets the inconsistent_types of this PoolDesktopsDetailInfo.
 
         桌面与桌面池不一致的规格类型: - PRODUCT: 产品ID不一致 - IMAGE: 镜像ID不一致
 

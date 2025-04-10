@@ -25,7 +25,7 @@ class RenewalResourcesRequest:
     }
 
     def __init__(self, body=None):
-        """RenewalResourcesRequest
+        r"""RenewalResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RenewalResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this RenewalResourcesRequest.
+        r"""Gets the body of this RenewalResourcesRequest.
 
         :return: The body of this RenewalResourcesRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`
@@ -52,7 +52,7 @@ class RenewalResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RenewalResourcesRequest.
+        r"""Sets the body of this RenewalResourcesRequest.
 
         :param body: The body of this RenewalResourcesRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`

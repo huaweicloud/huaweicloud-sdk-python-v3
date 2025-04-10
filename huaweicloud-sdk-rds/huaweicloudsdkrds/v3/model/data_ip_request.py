@@ -25,7 +25,7 @@ class DataIpRequest:
     }
 
     def __init__(self, new_ip=None):
-        """DataIpRequest
+        r"""DataIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DataIpRequest:
 
     @property
     def new_ip(self):
-        """Gets the new_ip of this DataIpRequest.
+        r"""Gets the new_ip of this DataIpRequest.
 
         内网ip
 
@@ -53,7 +53,7 @@ class DataIpRequest:
 
     @new_ip.setter
     def new_ip(self, new_ip):
-        """Sets the new_ip of this DataIpRequest.
+        r"""Sets the new_ip of this DataIpRequest.
 
         内网ip
 

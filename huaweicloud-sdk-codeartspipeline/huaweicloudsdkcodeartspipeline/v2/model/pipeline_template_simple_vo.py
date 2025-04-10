@@ -57,7 +57,7 @@ class PipelineTemplateSimpleVO:
     }
 
     def __init__(self, id=None, name=None, icon=None, manifest_version=None, language=None, description=None, is_system=None, region=None, domain_id=None, creator_id=None, creator_name=None, updater_id=None, create_time=None, update_time=None, is_collect=None, is_show_source=None, stages=None):
-        """PipelineTemplateSimpleVO
+        r"""PipelineTemplateSimpleVO
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def id(self):
-        """Gets the id of this PipelineTemplateSimpleVO.
+        r"""Gets the id of this PipelineTemplateSimpleVO.
 
         模板ID
 
@@ -166,7 +166,7 @@ class PipelineTemplateSimpleVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineTemplateSimpleVO.
+        r"""Sets the id of this PipelineTemplateSimpleVO.
 
         模板ID
 
@@ -177,7 +177,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def name(self):
-        """Gets the name of this PipelineTemplateSimpleVO.
+        r"""Gets the name of this PipelineTemplateSimpleVO.
 
         模板名称
 
@@ -188,7 +188,7 @@ class PipelineTemplateSimpleVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineTemplateSimpleVO.
+        r"""Sets the name of this PipelineTemplateSimpleVO.
 
         模板名称
 
@@ -199,7 +199,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def icon(self):
-        """Gets the icon of this PipelineTemplateSimpleVO.
+        r"""Gets the icon of this PipelineTemplateSimpleVO.
 
         模板图标
 
@@ -210,7 +210,7 @@ class PipelineTemplateSimpleVO:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this PipelineTemplateSimpleVO.
+        r"""Sets the icon of this PipelineTemplateSimpleVO.
 
         模板图标
 
@@ -221,7 +221,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this PipelineTemplateSimpleVO.
+        r"""Gets the manifest_version of this PipelineTemplateSimpleVO.
 
         流水线结构定义版本，新版默认为3.0
 
@@ -232,7 +232,7 @@ class PipelineTemplateSimpleVO:
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this PipelineTemplateSimpleVO.
+        r"""Sets the manifest_version of this PipelineTemplateSimpleVO.
 
         流水线结构定义版本，新版默认为3.0
 
@@ -243,7 +243,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def language(self):
-        """Gets the language of this PipelineTemplateSimpleVO.
+        r"""Gets the language of this PipelineTemplateSimpleVO.
 
         模板语言
 
@@ -254,7 +254,7 @@ class PipelineTemplateSimpleVO:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this PipelineTemplateSimpleVO.
+        r"""Sets the language of this PipelineTemplateSimpleVO.
 
         模板语言
 
@@ -265,7 +265,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def description(self):
-        """Gets the description of this PipelineTemplateSimpleVO.
+        r"""Gets the description of this PipelineTemplateSimpleVO.
 
         模板描述
 
@@ -276,7 +276,7 @@ class PipelineTemplateSimpleVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineTemplateSimpleVO.
+        r"""Sets the description of this PipelineTemplateSimpleVO.
 
         模板描述
 
@@ -287,7 +287,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def is_system(self):
-        """Gets the is_system of this PipelineTemplateSimpleVO.
+        r"""Gets the is_system of this PipelineTemplateSimpleVO.
 
         是否系统模板
 
@@ -298,7 +298,7 @@ class PipelineTemplateSimpleVO:
 
     @is_system.setter
     def is_system(self, is_system):
-        """Sets the is_system of this PipelineTemplateSimpleVO.
+        r"""Sets the is_system of this PipelineTemplateSimpleVO.
 
         是否系统模板
 
@@ -309,7 +309,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def region(self):
-        """Gets the region of this PipelineTemplateSimpleVO.
+        r"""Gets the region of this PipelineTemplateSimpleVO.
 
         模板局点
 
@@ -320,7 +320,7 @@ class PipelineTemplateSimpleVO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this PipelineTemplateSimpleVO.
+        r"""Sets the region of this PipelineTemplateSimpleVO.
 
         模板局点
 
@@ -331,7 +331,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PipelineTemplateSimpleVO.
+        r"""Gets the domain_id of this PipelineTemplateSimpleVO.
 
         模板所属租户ID
 
@@ -342,7 +342,7 @@ class PipelineTemplateSimpleVO:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PipelineTemplateSimpleVO.
+        r"""Sets the domain_id of this PipelineTemplateSimpleVO.
 
         模板所属租户ID
 
@@ -353,7 +353,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this PipelineTemplateSimpleVO.
+        r"""Gets the creator_id of this PipelineTemplateSimpleVO.
 
         模板创建人ID
 
@@ -364,7 +364,7 @@ class PipelineTemplateSimpleVO:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this PipelineTemplateSimpleVO.
+        r"""Sets the creator_id of this PipelineTemplateSimpleVO.
 
         模板创建人ID
 
@@ -375,7 +375,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this PipelineTemplateSimpleVO.
+        r"""Gets the creator_name of this PipelineTemplateSimpleVO.
 
         模板创建人名称
 
@@ -386,7 +386,7 @@ class PipelineTemplateSimpleVO:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this PipelineTemplateSimpleVO.
+        r"""Sets the creator_name of this PipelineTemplateSimpleVO.
 
         模板创建人名称
 
@@ -397,7 +397,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def updater_id(self):
-        """Gets the updater_id of this PipelineTemplateSimpleVO.
+        r"""Gets the updater_id of this PipelineTemplateSimpleVO.
 
         模板更新人ID
 
@@ -408,7 +408,7 @@ class PipelineTemplateSimpleVO:
 
     @updater_id.setter
     def updater_id(self, updater_id):
-        """Sets the updater_id of this PipelineTemplateSimpleVO.
+        r"""Sets the updater_id of this PipelineTemplateSimpleVO.
 
         模板更新人ID
 
@@ -419,7 +419,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PipelineTemplateSimpleVO.
+        r"""Gets the create_time of this PipelineTemplateSimpleVO.
 
         创建时间
 
@@ -430,7 +430,7 @@ class PipelineTemplateSimpleVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PipelineTemplateSimpleVO.
+        r"""Sets the create_time of this PipelineTemplateSimpleVO.
 
         创建时间
 
@@ -441,7 +441,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PipelineTemplateSimpleVO.
+        r"""Gets the update_time of this PipelineTemplateSimpleVO.
 
         更新时间
 
@@ -452,7 +452,7 @@ class PipelineTemplateSimpleVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PipelineTemplateSimpleVO.
+        r"""Sets the update_time of this PipelineTemplateSimpleVO.
 
         更新时间
 
@@ -463,7 +463,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def is_collect(self):
-        """Gets the is_collect of this PipelineTemplateSimpleVO.
+        r"""Gets the is_collect of this PipelineTemplateSimpleVO.
 
         是否收藏
 
@@ -474,7 +474,7 @@ class PipelineTemplateSimpleVO:
 
     @is_collect.setter
     def is_collect(self, is_collect):
-        """Sets the is_collect of this PipelineTemplateSimpleVO.
+        r"""Sets the is_collect of this PipelineTemplateSimpleVO.
 
         是否收藏
 
@@ -485,7 +485,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def is_show_source(self):
-        """Gets the is_show_source of this PipelineTemplateSimpleVO.
+        r"""Gets the is_show_source of this PipelineTemplateSimpleVO.
 
         是否展示流水线源
 
@@ -496,7 +496,7 @@ class PipelineTemplateSimpleVO:
 
     @is_show_source.setter
     def is_show_source(self, is_show_source):
-        """Sets the is_show_source of this PipelineTemplateSimpleVO.
+        r"""Sets the is_show_source of this PipelineTemplateSimpleVO.
 
         是否展示流水线源
 
@@ -507,7 +507,7 @@ class PipelineTemplateSimpleVO:
 
     @property
     def stages(self):
-        """Gets the stages of this PipelineTemplateSimpleVO.
+        r"""Gets the stages of this PipelineTemplateSimpleVO.
 
         模板编排stages
 
@@ -518,7 +518,7 @@ class PipelineTemplateSimpleVO:
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this PipelineTemplateSimpleVO.
+        r"""Sets the stages of this PipelineTemplateSimpleVO.
 
         模板编排stages
 

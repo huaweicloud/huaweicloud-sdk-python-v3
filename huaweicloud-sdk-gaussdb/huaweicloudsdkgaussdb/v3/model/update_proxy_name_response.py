@@ -26,7 +26,7 @@ class UpdateProxyNameResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateProxyNameResponse
+        r"""UpdateProxyNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateProxyNameResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateProxyNameResponse.
+        r"""Gets the result of this UpdateProxyNameResponse.
 
         修改成功或者失败。
 
@@ -55,7 +55,7 @@ class UpdateProxyNameResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateProxyNameResponse.
+        r"""Sets the result of this UpdateProxyNameResponse.
 
         修改成功或者失败。
 

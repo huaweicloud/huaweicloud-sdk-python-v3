@@ -26,7 +26,7 @@ class DeleteDemoInfoResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteDemoInfoResponse
+        r"""DeleteDemoInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDemoInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteDemoInfoResponse.
+        r"""Gets the result of this DeleteDemoInfoResponse.
 
         返回结果
 
@@ -55,7 +55,7 @@ class DeleteDemoInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteDemoInfoResponse.
+        r"""Sets the result of this DeleteDemoInfoResponse.
 
         返回结果
 

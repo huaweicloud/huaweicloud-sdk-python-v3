@@ -41,7 +41,7 @@ class CycleSubConf:
     }
 
     def __init__(self, cycle_sub_conf_id=None, conference_id=None, media_type=None, start_time=None, end_time=None, is_auto_record=None, conf_config_info=None, record_auth_type=None, description=None):
-        """CycleSubConf
+        r"""CycleSubConf
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CycleSubConf:
 
     @property
     def cycle_sub_conf_id(self):
-        """Gets the cycle_sub_conf_id of this CycleSubConf.
+        r"""Gets the cycle_sub_conf_id of this CycleSubConf.
 
         子会议UUID。
 
@@ -109,7 +109,7 @@ class CycleSubConf:
 
     @cycle_sub_conf_id.setter
     def cycle_sub_conf_id(self, cycle_sub_conf_id):
-        """Sets the cycle_sub_conf_id of this CycleSubConf.
+        r"""Sets the cycle_sub_conf_id of this CycleSubConf.
 
         子会议UUID。
 
@@ -120,7 +120,7 @@ class CycleSubConf:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this CycleSubConf.
+        r"""Gets the conference_id of this CycleSubConf.
 
         会议ID。
 
@@ -131,7 +131,7 @@ class CycleSubConf:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this CycleSubConf.
+        r"""Sets the conference_id of this CycleSubConf.
 
         会议ID。
 
@@ -142,7 +142,7 @@ class CycleSubConf:
 
     @property
     def media_type(self):
-        """Gets the media_type of this CycleSubConf.
+        r"""Gets the media_type of this CycleSubConf.
 
         会议的媒体类型。 * Voice：语音 * Video：标清视频 * HDVideo：高清视频 * Data：数据 
 
@@ -153,7 +153,7 @@ class CycleSubConf:
 
     @media_type.setter
     def media_type(self, media_type):
-        """Sets the media_type of this CycleSubConf.
+        r"""Sets the media_type of this CycleSubConf.
 
         会议的媒体类型。 * Voice：语音 * Video：标清视频 * HDVideo：高清视频 * Data：数据 
 
@@ -164,7 +164,7 @@ class CycleSubConf:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CycleSubConf.
+        r"""Gets the start_time of this CycleSubConf.
 
         会议起始时间(格式：YYYY-MM-DD HH:MM)。
 
@@ -175,7 +175,7 @@ class CycleSubConf:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CycleSubConf.
+        r"""Sets the start_time of this CycleSubConf.
 
         会议起始时间(格式：YYYY-MM-DD HH:MM)。
 
@@ -186,7 +186,7 @@ class CycleSubConf:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CycleSubConf.
+        r"""Gets the end_time of this CycleSubConf.
 
         会议结束时间(格式：YYYY-MM-DD HH:MM)。
 
@@ -197,7 +197,7 @@ class CycleSubConf:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CycleSubConf.
+        r"""Sets the end_time of this CycleSubConf.
 
         会议结束时间(格式：YYYY-MM-DD HH:MM)。
 
@@ -208,7 +208,7 @@ class CycleSubConf:
 
     @property
     def is_auto_record(self):
-        """Gets the is_auto_record of this CycleSubConf.
+        r"""Gets the is_auto_record of this CycleSubConf.
 
         是否自动开启云录制。 - 0: 不自动启动 - 1: 自动启动 
 
@@ -219,7 +219,7 @@ class CycleSubConf:
 
     @is_auto_record.setter
     def is_auto_record(self, is_auto_record):
-        """Sets the is_auto_record of this CycleSubConf.
+        r"""Sets the is_auto_record of this CycleSubConf.
 
         是否自动开启云录制。 - 0: 不自动启动 - 1: 自动启动 
 
@@ -230,7 +230,7 @@ class CycleSubConf:
 
     @property
     def conf_config_info(self):
-        """Gets the conf_config_info of this CycleSubConf.
+        r"""Gets the conf_config_info of this CycleSubConf.
 
         :return: The conf_config_info of this CycleSubConf.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
@@ -239,7 +239,7 @@ class CycleSubConf:
 
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
-        """Sets the conf_config_info of this CycleSubConf.
+        r"""Sets the conf_config_info of this CycleSubConf.
 
         :param conf_config_info: The conf_config_info of this CycleSubConf.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
@@ -248,7 +248,7 @@ class CycleSubConf:
 
     @property
     def record_auth_type(self):
-        """Gets the record_auth_type of this CycleSubConf.
+        r"""Gets the record_auth_type of this CycleSubConf.
 
         观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载 
 
@@ -259,7 +259,7 @@ class CycleSubConf:
 
     @record_auth_type.setter
     def record_auth_type(self, record_auth_type):
-        """Sets the record_auth_type of this CycleSubConf.
+        r"""Sets the record_auth_type of this CycleSubConf.
 
         观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载 
 
@@ -270,7 +270,7 @@ class CycleSubConf:
 
     @property
     def description(self):
-        """Gets the description of this CycleSubConf.
+        r"""Gets the description of this CycleSubConf.
 
         会议描述。长度限制为200个字符。
 
@@ -281,7 +281,7 @@ class CycleSubConf:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CycleSubConf.
+        r"""Sets the description of this CycleSubConf.
 
         会议描述。长度限制为200个字符。
 

@@ -73,7 +73,7 @@ class UserDetail:
     }
 
     def __init__(self, description=None, id=None, user_name=None, user_email=None, user_phone=None, active_type=None, object_sid=None, sam_account_name=None, user_principal_name=None, full_name=None, distinguished_name=None, account_type=None, when_created=None, account_expires=None, is_pre_user=None, user_expired=None, locked=None, enable_change_password=None, password_never_expired=None, next_login_change_password=None, disabled=None, group_names=None, share_space_subscription=None, share_space_desktops=None, total_desktops=None):
-        """UserDetail
+        r"""UserDetail
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class UserDetail:
 
     @property
     def description(self):
-        """Gets the description of this UserDetail.
+        r"""Gets the description of this UserDetail.
 
         用户描述。
 
@@ -222,7 +222,7 @@ class UserDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UserDetail.
+        r"""Sets the description of this UserDetail.
 
         用户描述。
 
@@ -233,7 +233,7 @@ class UserDetail:
 
     @property
     def id(self):
-        """Gets the id of this UserDetail.
+        r"""Gets the id of this UserDetail.
 
         用户id。
 
@@ -244,7 +244,7 @@ class UserDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserDetail.
+        r"""Sets the id of this UserDetail.
 
         用户id。
 
@@ -255,7 +255,7 @@ class UserDetail:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserDetail.
+        r"""Gets the user_name of this UserDetail.
 
         桌面用户名。
 
@@ -266,7 +266,7 @@ class UserDetail:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserDetail.
+        r"""Sets the user_name of this UserDetail.
 
         桌面用户名。
 
@@ -277,7 +277,7 @@ class UserDetail:
 
     @property
     def user_email(self):
-        """Gets the user_email of this UserDetail.
+        r"""Gets the user_email of this UserDetail.
 
         用户邮箱。
 
@@ -288,7 +288,7 @@ class UserDetail:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this UserDetail.
+        r"""Sets the user_email of this UserDetail.
 
         用户邮箱。
 
@@ -299,7 +299,7 @@ class UserDetail:
 
     @property
     def user_phone(self):
-        """Gets the user_phone of this UserDetail.
+        r"""Gets the user_phone of this UserDetail.
 
         手机号。
 
@@ -310,7 +310,7 @@ class UserDetail:
 
     @user_phone.setter
     def user_phone(self, user_phone):
-        """Sets the user_phone of this UserDetail.
+        r"""Sets the user_phone of this UserDetail.
 
         手机号。
 
@@ -321,7 +321,7 @@ class UserDetail:
 
     @property
     def active_type(self):
-        """Gets the active_type of this UserDetail.
+        r"""Gets the active_type of this UserDetail.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -332,7 +332,7 @@ class UserDetail:
 
     @active_type.setter
     def active_type(self, active_type):
-        """Sets the active_type of this UserDetail.
+        r"""Sets the active_type of this UserDetail.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -343,7 +343,7 @@ class UserDetail:
 
     @property
     def object_sid(self):
-        """Gets the object_sid of this UserDetail.
+        r"""Gets the object_sid of this UserDetail.
 
         用户sid。
 
@@ -354,7 +354,7 @@ class UserDetail:
 
     @object_sid.setter
     def object_sid(self, object_sid):
-        """Sets the object_sid of this UserDetail.
+        r"""Sets the object_sid of this UserDetail.
 
         用户sid。
 
@@ -365,7 +365,7 @@ class UserDetail:
 
     @property
     def sam_account_name(self):
-        """Gets the sam_account_name of this UserDetail.
+        r"""Gets the sam_account_name of this UserDetail.
 
         登录名(windows以前版本)。
 
@@ -376,7 +376,7 @@ class UserDetail:
 
     @sam_account_name.setter
     def sam_account_name(self, sam_account_name):
-        """Sets the sam_account_name of this UserDetail.
+        r"""Sets the sam_account_name of this UserDetail.
 
         登录名(windows以前版本)。
 
@@ -387,7 +387,7 @@ class UserDetail:
 
     @property
     def user_principal_name(self):
-        """Gets the user_principal_name of this UserDetail.
+        r"""Gets the user_principal_name of this UserDetail.
 
         用户登录名。
 
@@ -398,7 +398,7 @@ class UserDetail:
 
     @user_principal_name.setter
     def user_principal_name(self, user_principal_name):
-        """Sets the user_principal_name of this UserDetail.
+        r"""Sets the user_principal_name of this UserDetail.
 
         用户登录名。
 
@@ -409,7 +409,7 @@ class UserDetail:
 
     @property
     def full_name(self):
-        """Gets the full_name of this UserDetail.
+        r"""Gets the full_name of this UserDetail.
 
         全名。
 
@@ -420,7 +420,7 @@ class UserDetail:
 
     @full_name.setter
     def full_name(self, full_name):
-        """Sets the full_name of this UserDetail.
+        r"""Sets the full_name of this UserDetail.
 
         全名。
 
@@ -431,7 +431,7 @@ class UserDetail:
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this UserDetail.
+        r"""Gets the distinguished_name of this UserDetail.
 
         用户在域树上的唯一位置。
 
@@ -442,7 +442,7 @@ class UserDetail:
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this UserDetail.
+        r"""Sets the distinguished_name of this UserDetail.
 
         用户在域树上的唯一位置。
 
@@ -453,7 +453,7 @@ class UserDetail:
 
     @property
     def account_type(self):
-        """Gets the account_type of this UserDetail.
+        r"""Gets the account_type of this UserDetail.
 
         帐号类型(0：用户；1：用户组)。
 
@@ -464,7 +464,7 @@ class UserDetail:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this UserDetail.
+        r"""Sets the account_type of this UserDetail.
 
         帐号类型(0：用户；1：用户组)。
 
@@ -475,7 +475,7 @@ class UserDetail:
 
     @property
     def when_created(self):
-        """Gets the when_created of this UserDetail.
+        r"""Gets the when_created of this UserDetail.
 
         UTC时间毫秒数对应的字符，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -486,7 +486,7 @@ class UserDetail:
 
     @when_created.setter
     def when_created(self, when_created):
-        """Sets the when_created of this UserDetail.
+        r"""Sets the when_created of this UserDetail.
 
         UTC时间毫秒数对应的字符，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -497,7 +497,7 @@ class UserDetail:
 
     @property
     def account_expires(self):
-        """Gets the account_expires of this UserDetail.
+        r"""Gets the account_expires of this UserDetail.
 
         账号有效期最后一天对应的UTC时间，以毫秒为单位。
 
@@ -508,7 +508,7 @@ class UserDetail:
 
     @account_expires.setter
     def account_expires(self, account_expires):
-        """Sets the account_expires of this UserDetail.
+        r"""Sets the account_expires of this UserDetail.
 
         账号有效期最后一天对应的UTC时间，以毫秒为单位。
 
@@ -519,7 +519,7 @@ class UserDetail:
 
     @property
     def is_pre_user(self):
-        """Gets the is_pre_user of this UserDetail.
+        r"""Gets the is_pre_user of this UserDetail.
 
         是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
 
@@ -530,7 +530,7 @@ class UserDetail:
 
     @is_pre_user.setter
     def is_pre_user(self, is_pre_user):
-        """Sets the is_pre_user of this UserDetail.
+        r"""Sets the is_pre_user of this UserDetail.
 
         是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
 
@@ -541,7 +541,7 @@ class UserDetail:
 
     @property
     def user_expired(self):
-        """Gets the user_expired of this UserDetail.
+        r"""Gets the user_expired of this UserDetail.
 
         账户是否过期，true表示过期，false表示未过期。
 
@@ -552,7 +552,7 @@ class UserDetail:
 
     @user_expired.setter
     def user_expired(self, user_expired):
-        """Sets the user_expired of this UserDetail.
+        r"""Sets the user_expired of this UserDetail.
 
         账户是否过期，true表示过期，false表示未过期。
 
@@ -563,7 +563,7 @@ class UserDetail:
 
     @property
     def locked(self):
-        """Gets the locked of this UserDetail.
+        r"""Gets the locked of this UserDetail.
 
         账户是否被锁定，true表示被锁定，false表示未锁定。
 
@@ -574,7 +574,7 @@ class UserDetail:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UserDetail.
+        r"""Sets the locked of this UserDetail.
 
         账户是否被锁定，true表示被锁定，false表示未锁定。
 
@@ -585,7 +585,7 @@ class UserDetail:
 
     @property
     def enable_change_password(self):
-        """Gets the enable_change_password of this UserDetail.
+        r"""Gets the enable_change_password of this UserDetail.
 
         是否允许修改密码，true表示允许修改密码，false表示不允许。
 
@@ -596,7 +596,7 @@ class UserDetail:
 
     @enable_change_password.setter
     def enable_change_password(self, enable_change_password):
-        """Sets the enable_change_password of this UserDetail.
+        r"""Sets the enable_change_password of this UserDetail.
 
         是否允许修改密码，true表示允许修改密码，false表示不允许。
 
@@ -607,7 +607,7 @@ class UserDetail:
 
     @property
     def password_never_expired(self):
-        """Gets the password_never_expired of this UserDetail.
+        r"""Gets the password_never_expired of this UserDetail.
 
         密码是否永不过期，true表示密码永不过期，false表示密码会过期。
 
@@ -618,7 +618,7 @@ class UserDetail:
 
     @password_never_expired.setter
     def password_never_expired(self, password_never_expired):
-        """Sets the password_never_expired of this UserDetail.
+        r"""Sets the password_never_expired of this UserDetail.
 
         密码是否永不过期，true表示密码永不过期，false表示密码会过期。
 
@@ -629,7 +629,7 @@ class UserDetail:
 
     @property
     def next_login_change_password(self):
-        """Gets the next_login_change_password of this UserDetail.
+        r"""Gets the next_login_change_password of this UserDetail.
 
         下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
 
@@ -640,7 +640,7 @@ class UserDetail:
 
     @next_login_change_password.setter
     def next_login_change_password(self, next_login_change_password):
-        """Sets the next_login_change_password of this UserDetail.
+        r"""Sets the next_login_change_password of this UserDetail.
 
         下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
 
@@ -651,7 +651,7 @@ class UserDetail:
 
     @property
     def disabled(self):
-        """Gets the disabled of this UserDetail.
+        r"""Gets the disabled of this UserDetail.
 
         账户是否禁用，true表示被禁用，false表示未禁用。
 
@@ -662,7 +662,7 @@ class UserDetail:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this UserDetail.
+        r"""Sets the disabled of this UserDetail.
 
         账户是否禁用，true表示被禁用，false表示未禁用。
 
@@ -673,7 +673,7 @@ class UserDetail:
 
     @property
     def group_names(self):
-        """Gets the group_names of this UserDetail.
+        r"""Gets the group_names of this UserDetail.
 
         加入的组列表。
 
@@ -684,7 +684,7 @@ class UserDetail:
 
     @group_names.setter
     def group_names(self, group_names):
-        """Sets the group_names of this UserDetail.
+        r"""Sets the group_names of this UserDetail.
 
         加入的组列表。
 
@@ -695,7 +695,7 @@ class UserDetail:
 
     @property
     def share_space_subscription(self):
-        """Gets the share_space_subscription of this UserDetail.
+        r"""Gets the share_space_subscription of this UserDetail.
 
         用户是否订阅协同，true表示已订阅，false表示未订阅
 
@@ -706,7 +706,7 @@ class UserDetail:
 
     @share_space_subscription.setter
     def share_space_subscription(self, share_space_subscription):
-        """Sets the share_space_subscription of this UserDetail.
+        r"""Sets the share_space_subscription of this UserDetail.
 
         用户是否订阅协同，true表示已订阅，false表示未订阅
 
@@ -717,7 +717,7 @@ class UserDetail:
 
     @property
     def share_space_desktops(self):
-        """Gets the share_space_desktops of this UserDetail.
+        r"""Gets the share_space_desktops of this UserDetail.
 
         用户已绑定协同桌面数
 
@@ -728,7 +728,7 @@ class UserDetail:
 
     @share_space_desktops.setter
     def share_space_desktops(self, share_space_desktops):
-        """Sets the share_space_desktops of this UserDetail.
+        r"""Sets the share_space_desktops of this UserDetail.
 
         用户已绑定协同桌面数
 
@@ -739,7 +739,7 @@ class UserDetail:
 
     @property
     def total_desktops(self):
-        """Gets the total_desktops of this UserDetail.
+        r"""Gets the total_desktops of this UserDetail.
 
         用户绑定桌面云总数。
 
@@ -750,7 +750,7 @@ class UserDetail:
 
     @total_desktops.setter
     def total_desktops(self, total_desktops):
-        """Sets the total_desktops of this UserDetail.
+        r"""Sets the total_desktops of this UserDetail.
 
         用户绑定桌面云总数。
 

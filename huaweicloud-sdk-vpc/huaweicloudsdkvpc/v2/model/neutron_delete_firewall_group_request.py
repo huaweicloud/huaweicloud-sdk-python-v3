@@ -25,7 +25,7 @@ class NeutronDeleteFirewallGroupRequest:
     }
 
     def __init__(self, firewall_group_id=None):
-        """NeutronDeleteFirewallGroupRequest
+        r"""NeutronDeleteFirewallGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronDeleteFirewallGroupRequest:
 
     @property
     def firewall_group_id(self):
-        """Gets the firewall_group_id of this NeutronDeleteFirewallGroupRequest.
+        r"""Gets the firewall_group_id of this NeutronDeleteFirewallGroupRequest.
 
         网络ACL防火墙组ID
 
@@ -53,7 +53,7 @@ class NeutronDeleteFirewallGroupRequest:
 
     @firewall_group_id.setter
     def firewall_group_id(self, firewall_group_id):
-        """Sets the firewall_group_id of this NeutronDeleteFirewallGroupRequest.
+        r"""Sets the firewall_group_id of this NeutronDeleteFirewallGroupRequest.
 
         网络ACL防火墙组ID
 

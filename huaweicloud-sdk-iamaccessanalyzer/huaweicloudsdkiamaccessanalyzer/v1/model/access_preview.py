@@ -35,7 +35,7 @@ class AccessPreview:
     }
 
     def __init__(self, access_preview_id=None, analyzer_id=None, configurations=None, created_at=None, status=None, status_reason=None):
-        """AccessPreview
+        r"""AccessPreview
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class AccessPreview:
 
     @property
     def access_preview_id(self):
-        """Gets the access_preview_id of this AccessPreview.
+        r"""Gets the access_preview_id of this AccessPreview.
 
         访问预览的唯一标识符。
 
@@ -84,7 +84,7 @@ class AccessPreview:
 
     @access_preview_id.setter
     def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this AccessPreview.
+        r"""Sets the access_preview_id of this AccessPreview.
 
         访问预览的唯一标识符。
 
@@ -95,7 +95,7 @@ class AccessPreview:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this AccessPreview.
+        r"""Gets the analyzer_id of this AccessPreview.
 
         分析器的唯一标识符。
 
@@ -106,7 +106,7 @@ class AccessPreview:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this AccessPreview.
+        r"""Sets the analyzer_id of this AccessPreview.
 
         分析器的唯一标识符。
 
@@ -117,7 +117,7 @@ class AccessPreview:
 
     @property
     def configurations(self):
-        """Gets the configurations of this AccessPreview.
+        r"""Gets the configurations of this AccessPreview.
 
         :return: The configurations of this AccessPreview.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
@@ -126,7 +126,7 @@ class AccessPreview:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this AccessPreview.
+        r"""Sets the configurations of this AccessPreview.
 
         :param configurations: The configurations of this AccessPreview.
         :type configurations: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
@@ -135,7 +135,7 @@ class AccessPreview:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AccessPreview.
+        r"""Gets the created_at of this AccessPreview.
 
         访问预览创建时间。
 
@@ -146,7 +146,7 @@ class AccessPreview:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AccessPreview.
+        r"""Sets the created_at of this AccessPreview.
 
         访问预览创建时间。
 
@@ -157,7 +157,7 @@ class AccessPreview:
 
     @property
     def status(self):
-        """Gets the status of this AccessPreview.
+        r"""Gets the status of this AccessPreview.
 
         :return: The status of this AccessPreview.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
@@ -166,7 +166,7 @@ class AccessPreview:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessPreview.
+        r"""Sets the status of this AccessPreview.
 
         :param status: The status of this AccessPreview.
         :type status: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
@@ -175,7 +175,7 @@ class AccessPreview:
 
     @property
     def status_reason(self):
-        """Gets the status_reason of this AccessPreview.
+        r"""Gets the status_reason of this AccessPreview.
 
         :return: The status_reason of this AccessPreview.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewStatusReason`
@@ -184,7 +184,7 @@ class AccessPreview:
 
     @status_reason.setter
     def status_reason(self, status_reason):
-        """Sets the status_reason of this AccessPreview.
+        r"""Sets the status_reason of this AccessPreview.
 
         :param status_reason: The status_reason of this AccessPreview.
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewStatusReason`

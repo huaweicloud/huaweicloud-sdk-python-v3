@@ -27,7 +27,7 @@ class CreateUserDefinedUrlKeyWordRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateUserDefinedUrlKeyWordRequest
+        r"""CreateUserDefinedUrlKeyWordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateUserDefinedUrlKeyWordRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateUserDefinedUrlKeyWordRequest.
+        r"""Gets the project_id of this CreateUserDefinedUrlKeyWordRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class CreateUserDefinedUrlKeyWordRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateUserDefinedUrlKeyWordRequest.
+        r"""Sets the project_id of this CreateUserDefinedUrlKeyWordRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class CreateUserDefinedUrlKeyWordRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUserDefinedUrlKeyWordRequest.
+        r"""Gets the body of this CreateUserDefinedUrlKeyWordRequest.
 
         :return: The body of this CreateUserDefinedUrlKeyWordRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateBasicAwReq`
@@ -80,7 +80,7 @@ class CreateUserDefinedUrlKeyWordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUserDefinedUrlKeyWordRequest.
+        r"""Sets the body of this CreateUserDefinedUrlKeyWordRequest.
 
         :param body: The body of this CreateUserDefinedUrlKeyWordRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateBasicAwReq`

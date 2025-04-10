@@ -52,7 +52,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
     }
 
     def __init__(self, corp_id=None, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, child_depts=None, sort_level=None):
-        """ShowDeptAndChildDeptResponse
+        r"""ShowDeptAndChildDeptResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this ShowDeptAndChildDeptResponse.
+        r"""Gets the corp_id of this ShowDeptAndChildDeptResponse.
 
         企业ID。
 
@@ -146,7 +146,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this ShowDeptAndChildDeptResponse.
+        r"""Sets the corp_id of this ShowDeptAndChildDeptResponse.
 
         企业ID。
 
@@ -157,7 +157,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this ShowDeptAndChildDeptResponse.
+        r"""Gets the dept_code of this ShowDeptAndChildDeptResponse.
 
         部门编码。
 
@@ -168,7 +168,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this ShowDeptAndChildDeptResponse.
+        r"""Sets the dept_code of this ShowDeptAndChildDeptResponse.
 
         部门编码。
 
@@ -179,7 +179,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def dept_level(self):
-        """Gets the dept_level of this ShowDeptAndChildDeptResponse.
+        r"""Gets the dept_level of this ShowDeptAndChildDeptResponse.
 
         部门层级。
 
@@ -190,7 +190,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @dept_level.setter
     def dept_level(self, dept_level):
-        """Sets the dept_level of this ShowDeptAndChildDeptResponse.
+        r"""Sets the dept_level of this ShowDeptAndChildDeptResponse.
 
         部门层级。
 
@@ -201,7 +201,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ShowDeptAndChildDeptResponse.
+        r"""Gets the dept_name of this ShowDeptAndChildDeptResponse.
 
         部门名称。
 
@@ -212,7 +212,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ShowDeptAndChildDeptResponse.
+        r"""Sets the dept_name of this ShowDeptAndChildDeptResponse.
 
         部门名称。
 
@@ -223,7 +223,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def dept_name_path(self):
-        """Gets the dept_name_path of this ShowDeptAndChildDeptResponse.
+        r"""Gets the dept_name_path of this ShowDeptAndChildDeptResponse.
 
         部门名路径。
 
@@ -234,7 +234,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @dept_name_path.setter
     def dept_name_path(self, dept_name_path):
-        """Sets the dept_name_path of this ShowDeptAndChildDeptResponse.
+        r"""Sets the dept_name_path of this ShowDeptAndChildDeptResponse.
 
         部门名路径。
 
@@ -245,7 +245,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def is_leaf_node(self):
-        """Gets the is_leaf_node of this ShowDeptAndChildDeptResponse.
+        r"""Gets the is_leaf_node of this ShowDeptAndChildDeptResponse.
 
         是否叶子节点。
 
@@ -256,7 +256,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @is_leaf_node.setter
     def is_leaf_node(self, is_leaf_node):
-        """Sets the is_leaf_node of this ShowDeptAndChildDeptResponse.
+        r"""Sets the is_leaf_node of this ShowDeptAndChildDeptResponse.
 
         是否叶子节点。
 
@@ -267,7 +267,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def parent_dept_code(self):
-        """Gets the parent_dept_code of this ShowDeptAndChildDeptResponse.
+        r"""Gets the parent_dept_code of this ShowDeptAndChildDeptResponse.
 
         父部门编码。
 
@@ -278,7 +278,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @parent_dept_code.setter
     def parent_dept_code(self, parent_dept_code):
-        """Sets the parent_dept_code of this ShowDeptAndChildDeptResponse.
+        r"""Sets the parent_dept_code of this ShowDeptAndChildDeptResponse.
 
         父部门编码。
 
@@ -289,7 +289,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def dept_code_path(self):
-        """Gets the dept_code_path of this ShowDeptAndChildDeptResponse.
+        r"""Gets the dept_code_path of this ShowDeptAndChildDeptResponse.
 
         部门编码路径。
 
@@ -300,7 +300,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @dept_code_path.setter
     def dept_code_path(self, dept_code_path):
-        """Sets the dept_code_path of this ShowDeptAndChildDeptResponse.
+        r"""Sets the dept_code_path of this ShowDeptAndChildDeptResponse.
 
         部门编码路径。
 
@@ -311,7 +311,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def note(self):
-        """Gets the note of this ShowDeptAndChildDeptResponse.
+        r"""Gets the note of this ShowDeptAndChildDeptResponse.
 
         备注。
 
@@ -322,7 +322,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @note.setter
     def note(self, note):
-        """Sets the note of this ShowDeptAndChildDeptResponse.
+        r"""Sets the note of this ShowDeptAndChildDeptResponse.
 
         备注。
 
@@ -333,7 +333,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def in_permission(self):
-        """Gets the in_permission of this ShowDeptAndChildDeptResponse.
+        r"""Gets the in_permission of this ShowDeptAndChildDeptResponse.
 
         其他用户对该部门下用户的访问权限。
 
@@ -344,7 +344,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @in_permission.setter
     def in_permission(self, in_permission):
-        """Sets the in_permission of this ShowDeptAndChildDeptResponse.
+        r"""Sets the in_permission of this ShowDeptAndChildDeptResponse.
 
         其他用户对该部门下用户的访问权限。
 
@@ -355,7 +355,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def out_permission(self):
-        """Gets the out_permission of this ShowDeptAndChildDeptResponse.
+        r"""Gets the out_permission of this ShowDeptAndChildDeptResponse.
 
         该部门下用户访问权限控制。
 
@@ -366,7 +366,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @out_permission.setter
     def out_permission(self, out_permission):
-        """Sets the out_permission of this ShowDeptAndChildDeptResponse.
+        r"""Sets the out_permission of this ShowDeptAndChildDeptResponse.
 
         该部门下用户访问权限控制。
 
@@ -377,7 +377,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def designated_out_dept_codes(self):
-        """Gets the designated_out_dept_codes of this ShowDeptAndChildDeptResponse.
+        r"""Gets the designated_out_dept_codes of this ShowDeptAndChildDeptResponse.
 
         允许访问的部门列表。
 
@@ -388,7 +388,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @designated_out_dept_codes.setter
     def designated_out_dept_codes(self, designated_out_dept_codes):
-        """Sets the designated_out_dept_codes of this ShowDeptAndChildDeptResponse.
+        r"""Sets the designated_out_dept_codes of this ShowDeptAndChildDeptResponse.
 
         允许访问的部门列表。
 
@@ -399,7 +399,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def child_depts(self):
-        """Gets the child_depts of this ShowDeptAndChildDeptResponse.
+        r"""Gets the child_depts of this ShowDeptAndChildDeptResponse.
 
         子部门列表。
 
@@ -410,7 +410,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @child_depts.setter
     def child_depts(self, child_depts):
-        """Sets the child_depts of this ShowDeptAndChildDeptResponse.
+        r"""Sets the child_depts of this ShowDeptAndChildDeptResponse.
 
         子部门列表。
 
@@ -421,7 +421,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this ShowDeptAndChildDeptResponse.
+        r"""Gets the sort_level of this ShowDeptAndChildDeptResponse.
 
         部门排序号。
 
@@ -432,7 +432,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this ShowDeptAndChildDeptResponse.
+        r"""Sets the sort_level of this ShowDeptAndChildDeptResponse.
 
         部门排序号。
 

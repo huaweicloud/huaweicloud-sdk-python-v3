@@ -25,7 +25,7 @@ class UpdateAgencyCustomPolicyRequestBody:
     }
 
     def __init__(self, role=None):
-        """UpdateAgencyCustomPolicyRequestBody
+        r"""UpdateAgencyCustomPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAgencyCustomPolicyRequestBody:
 
     @property
     def role(self):
-        """Gets the role of this UpdateAgencyCustomPolicyRequestBody.
+        r"""Gets the role of this UpdateAgencyCustomPolicyRequestBody.
 
         :return: The role of this UpdateAgencyCustomPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicyRoleOption`
@@ -51,7 +51,7 @@ class UpdateAgencyCustomPolicyRequestBody:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this UpdateAgencyCustomPolicyRequestBody.
+        r"""Sets the role of this UpdateAgencyCustomPolicyRequestBody.
 
         :param role: The role of this UpdateAgencyCustomPolicyRequestBody.
         :type role: :class:`huaweicloudsdkiam.v3.AgencyPolicyRoleOption`

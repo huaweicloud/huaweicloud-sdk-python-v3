@@ -29,7 +29,7 @@ class ListInternetRequest:
     }
 
     def __init__(self, enterprise_project_id=None, nat_name=None, eip=None):
-        """ListInternetRequest
+        r"""ListInternetRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListInternetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInternetRequest.
+        r"""Gets the enterprise_project_id of this ListInternetRequest.
 
         企业项目ID
 
@@ -68,7 +68,7 @@ class ListInternetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInternetRequest.
+        r"""Sets the enterprise_project_id of this ListInternetRequest.
 
         企业项目ID
 
@@ -79,7 +79,7 @@ class ListInternetRequest:
 
     @property
     def nat_name(self):
-        """Gets the nat_name of this ListInternetRequest.
+        r"""Gets the nat_name of this ListInternetRequest.
 
         NAT网关名称
 
@@ -90,7 +90,7 @@ class ListInternetRequest:
 
     @nat_name.setter
     def nat_name(self, nat_name):
-        """Sets the nat_name of this ListInternetRequest.
+        r"""Sets the nat_name of this ListInternetRequest.
 
         NAT网关名称
 
@@ -101,7 +101,7 @@ class ListInternetRequest:
 
     @property
     def eip(self):
-        """Gets the eip of this ListInternetRequest.
+        r"""Gets the eip of this ListInternetRequest.
 
         EIP地址
 
@@ -112,7 +112,7 @@ class ListInternetRequest:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this ListInternetRequest.
+        r"""Sets the eip of this ListInternetRequest.
 
         EIP地址
 

@@ -25,7 +25,7 @@ class ListHlsConfigRequest:
     }
 
     def __init__(self, push_domain=None):
-        """ListHlsConfigRequest
+        r"""ListHlsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListHlsConfigRequest:
 
     @property
     def push_domain(self):
-        """Gets the push_domain of this ListHlsConfigRequest.
+        r"""Gets the push_domain of this ListHlsConfigRequest.
 
         推流域名
 
@@ -53,7 +53,7 @@ class ListHlsConfigRequest:
 
     @push_domain.setter
     def push_domain(self, push_domain):
-        """Sets the push_domain of this ListHlsConfigRequest.
+        r"""Sets the push_domain of this ListHlsConfigRequest.
 
         推流域名
 

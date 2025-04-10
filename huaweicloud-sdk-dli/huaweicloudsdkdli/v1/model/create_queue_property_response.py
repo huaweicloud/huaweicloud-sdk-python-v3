@@ -28,7 +28,7 @@ class CreateQueuePropertyResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None):
-        """CreateQueuePropertyResponse
+        r"""CreateQueuePropertyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateQueuePropertyResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateQueuePropertyResponse.
+        r"""Gets the is_success of this CreateQueuePropertyResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -62,7 +62,7 @@ class CreateQueuePropertyResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateQueuePropertyResponse.
+        r"""Sets the is_success of this CreateQueuePropertyResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -73,7 +73,7 @@ class CreateQueuePropertyResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateQueuePropertyResponse.
+        r"""Gets the message of this CreateQueuePropertyResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -84,7 +84,7 @@ class CreateQueuePropertyResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateQueuePropertyResponse.
+        r"""Sets the message of this CreateQueuePropertyResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 

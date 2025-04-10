@@ -25,7 +25,7 @@ class CreateTerminalsBindingDesktopsRequestBody:
     }
 
     def __init__(self, bind_list=None):
-        """CreateTerminalsBindingDesktopsRequestBody
+        r"""CreateTerminalsBindingDesktopsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTerminalsBindingDesktopsRequestBody:
 
     @property
     def bind_list(self):
-        """Gets the bind_list of this CreateTerminalsBindingDesktopsRequestBody.
+        r"""Gets the bind_list of this CreateTerminalsBindingDesktopsRequestBody.
 
         需要新增的MAC绑定VM策略信息列表
 
@@ -54,7 +54,7 @@ class CreateTerminalsBindingDesktopsRequestBody:
 
     @bind_list.setter
     def bind_list(self, bind_list):
-        """Sets the bind_list of this CreateTerminalsBindingDesktopsRequestBody.
+        r"""Sets the bind_list of this CreateTerminalsBindingDesktopsRequestBody.
 
         需要新增的MAC绑定VM策略信息列表
 

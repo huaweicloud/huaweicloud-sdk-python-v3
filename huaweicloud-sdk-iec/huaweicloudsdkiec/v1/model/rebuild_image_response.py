@@ -24,7 +24,7 @@ class RebuildImageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RebuildImageResponse
+        r"""RebuildImageResponse
 
         The model defined in huaweicloud sdk
 

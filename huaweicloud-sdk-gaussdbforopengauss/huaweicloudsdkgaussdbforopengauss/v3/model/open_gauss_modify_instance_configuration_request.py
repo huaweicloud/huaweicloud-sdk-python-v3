@@ -25,7 +25,7 @@ class OpenGaussModifyInstanceConfigurationRequest:
     }
 
     def __init__(self, values=None):
-        """OpenGaussModifyInstanceConfigurationRequest
+        r"""OpenGaussModifyInstanceConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OpenGaussModifyInstanceConfigurationRequest:
 
     @property
     def values(self):
-        """Gets the values of this OpenGaussModifyInstanceConfigurationRequest.
+        r"""Gets the values of this OpenGaussModifyInstanceConfigurationRequest.
 
         参数值对象Map<String,String>，用户基于默认参数模板自定义的参数值。
 
@@ -53,7 +53,7 @@ class OpenGaussModifyInstanceConfigurationRequest:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this OpenGaussModifyInstanceConfigurationRequest.
+        r"""Sets the values of this OpenGaussModifyInstanceConfigurationRequest.
 
         参数值对象Map<String,String>，用户基于默认参数模板自定义的参数值。
 

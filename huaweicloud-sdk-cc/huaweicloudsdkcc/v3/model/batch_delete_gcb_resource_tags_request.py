@@ -27,7 +27,7 @@ class BatchDeleteGcbResourceTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchDeleteGcbResourceTagsRequest
+        r"""BatchDeleteGcbResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteGcbResourceTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchDeleteGcbResourceTagsRequest.
+        r"""Gets the resource_id of this BatchDeleteGcbResourceTagsRequest.
 
         资源唯一标识符。
 
@@ -60,7 +60,7 @@ class BatchDeleteGcbResourceTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchDeleteGcbResourceTagsRequest.
+        r"""Sets the resource_id of this BatchDeleteGcbResourceTagsRequest.
 
         资源唯一标识符。
 
@@ -71,7 +71,7 @@ class BatchDeleteGcbResourceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteGcbResourceTagsRequest.
+        r"""Gets the body of this BatchDeleteGcbResourceTagsRequest.
 
         :return: The body of this BatchDeleteGcbResourceTagsRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateDeleteGcbTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteGcbResourceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteGcbResourceTagsRequest.
+        r"""Sets the body of this BatchDeleteGcbResourceTagsRequest.
 
         :param body: The body of this BatchDeleteGcbResourceTagsRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateDeleteGcbTagsRequestBody`

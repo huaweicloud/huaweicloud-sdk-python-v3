@@ -57,7 +57,7 @@ class SlaRecord:
     }
 
     def __init__(self, status_type=None, sub_trigger_node=None, sla_status=None, sla_order_id=None, duration=None, triggering_rule_enable=None, triggering_rule=None, break_time=None, owner_id=None, owner_name=None, notice_time=None, status_start_time=None, pre_warning_rule_enable=None, pre_warning_rule=None, escalate_rule_enable=None, escalate_rules=None, current_node=None):
-        """SlaRecord
+        r"""SlaRecord
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class SlaRecord:
 
     @property
     def status_type(self):
-        """Gets the status_type of this SlaRecord.
+        r"""Gets the status_type of this SlaRecord.
 
         状态类型: EVENT_TICKET_NOT_ACCEPTED EVENT_TICKET_PROCESSING EVENT_TICKET_NOT_IN_TIME EVENT_TICKET_RESOLVED ALARM_TICKET_RESOLVED ALARM_TICKET_ALARMING ALARM_TICKET_NOT_IN_TIME CHANGE_NOT_IN_TIME CHANGE_REVIEW CHANGE_IMPLEMENTATION CHANGE_VERIFICATION TO_DO_TASKS_NOT_IN_TIME TO_DO_TASKS_TO_BE_HANDLED TO_DO_TASKS_PROCESSING TO_DO_TASKS_COMPLETED ISSUE_TICKET_NOT_IN_TIME ISSUE_TICKET_NOT_ACCEPTED ISSUE_TICKET_POSITIONING ISSUE_TICKET_WAITING_IMPLEMENT ISSUE_TICKET_RESOLVED
 
@@ -166,7 +166,7 @@ class SlaRecord:
 
     @status_type.setter
     def status_type(self, status_type):
-        """Sets the status_type of this SlaRecord.
+        r"""Sets the status_type of this SlaRecord.
 
         状态类型: EVENT_TICKET_NOT_ACCEPTED EVENT_TICKET_PROCESSING EVENT_TICKET_NOT_IN_TIME EVENT_TICKET_RESOLVED ALARM_TICKET_RESOLVED ALARM_TICKET_ALARMING ALARM_TICKET_NOT_IN_TIME CHANGE_NOT_IN_TIME CHANGE_REVIEW CHANGE_IMPLEMENTATION CHANGE_VERIFICATION TO_DO_TASKS_NOT_IN_TIME TO_DO_TASKS_TO_BE_HANDLED TO_DO_TASKS_PROCESSING TO_DO_TASKS_COMPLETED ISSUE_TICKET_NOT_IN_TIME ISSUE_TICKET_NOT_ACCEPTED ISSUE_TICKET_POSITIONING ISSUE_TICKET_WAITING_IMPLEMENT ISSUE_TICKET_RESOLVED
 
@@ -177,7 +177,7 @@ class SlaRecord:
 
     @property
     def sub_trigger_node(self):
-        """Gets the sub_trigger_node of this SlaRecord.
+        r"""Gets the sub_trigger_node of this SlaRecord.
 
         子状态(NORMAL,FORWARDING,RESUBMIT)
 
@@ -188,7 +188,7 @@ class SlaRecord:
 
     @sub_trigger_node.setter
     def sub_trigger_node(self, sub_trigger_node):
-        """Sets the sub_trigger_node of this SlaRecord.
+        r"""Sets the sub_trigger_node of this SlaRecord.
 
         子状态(NORMAL,FORWARDING,RESUBMIT)
 
@@ -199,7 +199,7 @@ class SlaRecord:
 
     @property
     def sla_status(self):
-        """Gets the sla_status of this SlaRecord.
+        r"""Gets the sla_status of this SlaRecord.
 
         Sla状态  false 未打破
 
@@ -210,7 +210,7 @@ class SlaRecord:
 
     @sla_status.setter
     def sla_status(self, sla_status):
-        """Sets the sla_status of this SlaRecord.
+        r"""Sets the sla_status of this SlaRecord.
 
         Sla状态  false 未打破
 
@@ -221,7 +221,7 @@ class SlaRecord:
 
     @property
     def sla_order_id(self):
-        """Gets the sla_order_id of this SlaRecord.
+        r"""Gets the sla_order_id of this SlaRecord.
 
         工单ID
 
@@ -232,7 +232,7 @@ class SlaRecord:
 
     @sla_order_id.setter
     def sla_order_id(self, sla_order_id):
-        """Sets the sla_order_id of this SlaRecord.
+        r"""Sets the sla_order_id of this SlaRecord.
 
         工单ID
 
@@ -243,7 +243,7 @@ class SlaRecord:
 
     @property
     def duration(self):
-        """Gets the duration of this SlaRecord.
+        r"""Gets the duration of this SlaRecord.
 
         持续时间
 
@@ -254,7 +254,7 @@ class SlaRecord:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SlaRecord.
+        r"""Sets the duration of this SlaRecord.
 
         持续时间
 
@@ -265,7 +265,7 @@ class SlaRecord:
 
     @property
     def triggering_rule_enable(self):
-        """Gets the triggering_rule_enable of this SlaRecord.
+        r"""Gets the triggering_rule_enable of this SlaRecord.
 
         SLA 触发规则是否开启
 
@@ -276,7 +276,7 @@ class SlaRecord:
 
     @triggering_rule_enable.setter
     def triggering_rule_enable(self, triggering_rule_enable):
-        """Sets the triggering_rule_enable of this SlaRecord.
+        r"""Sets the triggering_rule_enable of this SlaRecord.
 
         SLA 触发规则是否开启
 
@@ -287,7 +287,7 @@ class SlaRecord:
 
     @property
     def triggering_rule(self):
-        """Gets the triggering_rule of this SlaRecord.
+        r"""Gets the triggering_rule of this SlaRecord.
 
         :return: The triggering_rule of this SlaRecord.
         :rtype: :class:`huaweicloudsdkcoc.v1.SlaTriggeringRuleInfo`
@@ -296,7 +296,7 @@ class SlaRecord:
 
     @triggering_rule.setter
     def triggering_rule(self, triggering_rule):
-        """Sets the triggering_rule of this SlaRecord.
+        r"""Sets the triggering_rule of this SlaRecord.
 
         :param triggering_rule: The triggering_rule of this SlaRecord.
         :type triggering_rule: :class:`huaweicloudsdkcoc.v1.SlaTriggeringRuleInfo`
@@ -305,7 +305,7 @@ class SlaRecord:
 
     @property
     def break_time(self):
-        """Gets the break_time of this SlaRecord.
+        r"""Gets the break_time of this SlaRecord.
 
         打破时间
 
@@ -316,7 +316,7 @@ class SlaRecord:
 
     @break_time.setter
     def break_time(self, break_time):
-        """Sets the break_time of this SlaRecord.
+        r"""Sets the break_time of this SlaRecord.
 
         打破时间
 
@@ -327,7 +327,7 @@ class SlaRecord:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this SlaRecord.
+        r"""Gets the owner_id of this SlaRecord.
 
         对象ID
 
@@ -338,7 +338,7 @@ class SlaRecord:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this SlaRecord.
+        r"""Sets the owner_id of this SlaRecord.
 
         对象ID
 
@@ -349,7 +349,7 @@ class SlaRecord:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this SlaRecord.
+        r"""Gets the owner_name of this SlaRecord.
 
         对象人名
 
@@ -360,7 +360,7 @@ class SlaRecord:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this SlaRecord.
+        r"""Sets the owner_name of this SlaRecord.
 
         对象人名
 
@@ -371,7 +371,7 @@ class SlaRecord:
 
     @property
     def notice_time(self):
-        """Gets the notice_time of this SlaRecord.
+        r"""Gets the notice_time of this SlaRecord.
 
         通知时间
 
@@ -382,7 +382,7 @@ class SlaRecord:
 
     @notice_time.setter
     def notice_time(self, notice_time):
-        """Sets the notice_time of this SlaRecord.
+        r"""Sets the notice_time of this SlaRecord.
 
         通知时间
 
@@ -393,7 +393,7 @@ class SlaRecord:
 
     @property
     def status_start_time(self):
-        """Gets the status_start_time of this SlaRecord.
+        r"""Gets the status_start_time of this SlaRecord.
 
         状态开始时间
 
@@ -404,7 +404,7 @@ class SlaRecord:
 
     @status_start_time.setter
     def status_start_time(self, status_start_time):
-        """Sets the status_start_time of this SlaRecord.
+        r"""Sets the status_start_time of this SlaRecord.
 
         状态开始时间
 
@@ -415,7 +415,7 @@ class SlaRecord:
 
     @property
     def pre_warning_rule_enable(self):
-        """Gets the pre_warning_rule_enable of this SlaRecord.
+        r"""Gets the pre_warning_rule_enable of this SlaRecord.
 
         SLA 预警通知是否开启
 
@@ -426,7 +426,7 @@ class SlaRecord:
 
     @pre_warning_rule_enable.setter
     def pre_warning_rule_enable(self, pre_warning_rule_enable):
-        """Sets the pre_warning_rule_enable of this SlaRecord.
+        r"""Sets the pre_warning_rule_enable of this SlaRecord.
 
         SLA 预警通知是否开启
 
@@ -437,7 +437,7 @@ class SlaRecord:
 
     @property
     def pre_warning_rule(self):
-        """Gets the pre_warning_rule of this SlaRecord.
+        r"""Gets the pre_warning_rule of this SlaRecord.
 
         :return: The pre_warning_rule of this SlaRecord.
         :rtype: :class:`huaweicloudsdkcoc.v1.SlaPreWarningRuleInfo`
@@ -446,7 +446,7 @@ class SlaRecord:
 
     @pre_warning_rule.setter
     def pre_warning_rule(self, pre_warning_rule):
-        """Sets the pre_warning_rule of this SlaRecord.
+        r"""Sets the pre_warning_rule of this SlaRecord.
 
         :param pre_warning_rule: The pre_warning_rule of this SlaRecord.
         :type pre_warning_rule: :class:`huaweicloudsdkcoc.v1.SlaPreWarningRuleInfo`
@@ -455,7 +455,7 @@ class SlaRecord:
 
     @property
     def escalate_rule_enable(self):
-        """Gets the escalate_rule_enable of this SlaRecord.
+        r"""Gets the escalate_rule_enable of this SlaRecord.
 
         SLA 上升通知是否开启
 
@@ -466,7 +466,7 @@ class SlaRecord:
 
     @escalate_rule_enable.setter
     def escalate_rule_enable(self, escalate_rule_enable):
-        """Sets the escalate_rule_enable of this SlaRecord.
+        r"""Sets the escalate_rule_enable of this SlaRecord.
 
         SLA 上升通知是否开启
 
@@ -477,7 +477,7 @@ class SlaRecord:
 
     @property
     def escalate_rules(self):
-        """Gets the escalate_rules of this SlaRecord.
+        r"""Gets the escalate_rules of this SlaRecord.
 
         SLA 上升通知配置
 
@@ -488,7 +488,7 @@ class SlaRecord:
 
     @escalate_rules.setter
     def escalate_rules(self, escalate_rules):
-        """Sets the escalate_rules of this SlaRecord.
+        r"""Sets the escalate_rules of this SlaRecord.
 
         SLA 上升通知配置
 
@@ -499,7 +499,7 @@ class SlaRecord:
 
     @property
     def current_node(self):
-        """Gets the current_node of this SlaRecord.
+        r"""Gets the current_node of this SlaRecord.
 
         SLA是否在当前状态
 
@@ -510,7 +510,7 @@ class SlaRecord:
 
     @current_node.setter
     def current_node(self, current_node):
-        """Sets the current_node of this SlaRecord.
+        r"""Sets the current_node of this SlaRecord.
 
         SLA是否在当前状态
 

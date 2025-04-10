@@ -29,7 +29,7 @@ class TemplateSimpleInfo:
     }
 
     def __init__(self, id=None, title=None, description=None):
-        """TemplateSimpleInfo
+        r"""TemplateSimpleInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TemplateSimpleInfo:
 
     @property
     def id(self):
-        """Gets the id of this TemplateSimpleInfo.
+        r"""Gets the id of this TemplateSimpleInfo.
 
         模板id。
 
@@ -68,7 +68,7 @@ class TemplateSimpleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateSimpleInfo.
+        r"""Sets the id of this TemplateSimpleInfo.
 
         模板id。
 
@@ -79,7 +79,7 @@ class TemplateSimpleInfo:
 
     @property
     def title(self):
-        """Gets the title of this TemplateSimpleInfo.
+        r"""Gets the title of this TemplateSimpleInfo.
 
         模板名。
 
@@ -90,7 +90,7 @@ class TemplateSimpleInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this TemplateSimpleInfo.
+        r"""Sets the title of this TemplateSimpleInfo.
 
         模板名。
 
@@ -101,7 +101,7 @@ class TemplateSimpleInfo:
 
     @property
     def description(self):
-        """Gets the description of this TemplateSimpleInfo.
+        r"""Gets the description of this TemplateSimpleInfo.
 
         模板描述。
 
@@ -112,7 +112,7 @@ class TemplateSimpleInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateSimpleInfo.
+        r"""Sets the description of this TemplateSimpleInfo.
 
         模板描述。
 

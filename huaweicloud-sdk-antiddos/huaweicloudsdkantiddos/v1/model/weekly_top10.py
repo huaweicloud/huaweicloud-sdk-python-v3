@@ -27,7 +27,7 @@ class WeeklyTop10:
     }
 
     def __init__(self, floating_ip_address=None, times=None):
-        """WeeklyTop10
+        r"""WeeklyTop10
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class WeeklyTop10:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this WeeklyTop10.
+        r"""Gets the floating_ip_address of this WeeklyTop10.
 
         弹性IP地址
 
@@ -59,7 +59,7 @@ class WeeklyTop10:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this WeeklyTop10.
+        r"""Sets the floating_ip_address of this WeeklyTop10.
 
         弹性IP地址
 
@@ -70,7 +70,7 @@ class WeeklyTop10:
 
     @property
     def times(self):
-        """Gets the times of this WeeklyTop10.
+        r"""Gets the times of this WeeklyTop10.
 
         DDoS拦截次数，包括清洗和黑洞
 
@@ -81,7 +81,7 @@ class WeeklyTop10:
 
     @times.setter
     def times(self, times):
-        """Sets the times of this WeeklyTop10.
+        r"""Sets the times of this WeeklyTop10.
 
         DDoS拦截次数，包括清洗和黑洞
 

@@ -29,7 +29,7 @@ class DailyDto:
     }
 
     def __init__(self, exceptional_dates=None, time_spans=None, weekdays=None):
-        """DailyDto
+        r"""DailyDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DailyDto:
 
     @property
     def exceptional_dates(self):
-        """Gets the exceptional_dates of this DailyDto.
+        r"""Gets the exceptional_dates of this DailyDto.
 
         :return: The exceptional_dates of this DailyDto.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ExceptionalDates`
@@ -65,7 +65,7 @@ class DailyDto:
 
     @exceptional_dates.setter
     def exceptional_dates(self, exceptional_dates):
-        """Sets the exceptional_dates of this DailyDto.
+        r"""Sets the exceptional_dates of this DailyDto.
 
         :param exceptional_dates: The exceptional_dates of this DailyDto.
         :type exceptional_dates: :class:`huaweicloudsdkiotedge.v2.ExceptionalDates`
@@ -74,7 +74,7 @@ class DailyDto:
 
     @property
     def time_spans(self):
-        """Gets the time_spans of this DailyDto.
+        r"""Gets the time_spans of this DailyDto.
 
         时间段描述
 
@@ -85,7 +85,7 @@ class DailyDto:
 
     @time_spans.setter
     def time_spans(self, time_spans):
-        """Sets the time_spans of this DailyDto.
+        r"""Sets the time_spans of this DailyDto.
 
         时间段描述
 
@@ -96,7 +96,7 @@ class DailyDto:
 
     @property
     def weekdays(self):
-        """Gets the weekdays of this DailyDto.
+        r"""Gets the weekdays of this DailyDto.
 
         描述此任务有效的星期几，为数组。如果为null，则表示start_time-endtime之间，每天都执行；如果为空数组，则表示start_time-endtime之间，每天都不执行；如果为[1, 2]，则表示每周一、二执行。
 
@@ -107,7 +107,7 @@ class DailyDto:
 
     @weekdays.setter
     def weekdays(self, weekdays):
-        """Sets the weekdays of this DailyDto.
+        r"""Sets the weekdays of this DailyDto.
 
         描述此任务有效的星期几，为数组。如果为null，则表示start_time-endtime之间，每天都执行；如果为空数组，则表示start_time-endtime之间，每天都不执行；如果为[1, 2]，则表示每周一、二执行。
 

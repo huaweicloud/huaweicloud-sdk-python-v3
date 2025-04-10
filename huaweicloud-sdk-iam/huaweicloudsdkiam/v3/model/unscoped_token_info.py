@@ -35,7 +35,7 @@ class UnscopedTokenInfo:
     }
 
     def __init__(self, expires_at=None, methods=None, issued_at=None, user=None, roles=None, catalog=None):
-        """UnscopedTokenInfo
+        r"""UnscopedTokenInfo
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class UnscopedTokenInfo:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this UnscopedTokenInfo.
+        r"""Gets the expires_at of this UnscopedTokenInfo.
 
         过期时间。
 
@@ -85,7 +85,7 @@ class UnscopedTokenInfo:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this UnscopedTokenInfo.
+        r"""Sets the expires_at of this UnscopedTokenInfo.
 
         过期时间。
 
@@ -96,7 +96,7 @@ class UnscopedTokenInfo:
 
     @property
     def methods(self):
-        """Gets the methods of this UnscopedTokenInfo.
+        r"""Gets the methods of this UnscopedTokenInfo.
 
         token获取方式，联邦认证默认为mapped。
 
@@ -107,7 +107,7 @@ class UnscopedTokenInfo:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this UnscopedTokenInfo.
+        r"""Sets the methods of this UnscopedTokenInfo.
 
         token获取方式，联邦认证默认为mapped。
 
@@ -118,7 +118,7 @@ class UnscopedTokenInfo:
 
     @property
     def issued_at(self):
-        """Gets the issued_at of this UnscopedTokenInfo.
+        r"""Gets the issued_at of this UnscopedTokenInfo.
 
         生成时间。
 
@@ -129,7 +129,7 @@ class UnscopedTokenInfo:
 
     @issued_at.setter
     def issued_at(self, issued_at):
-        """Sets the issued_at of this UnscopedTokenInfo.
+        r"""Sets the issued_at of this UnscopedTokenInfo.
 
         生成时间。
 
@@ -140,7 +140,7 @@ class UnscopedTokenInfo:
 
     @property
     def user(self):
-        """Gets the user of this UnscopedTokenInfo.
+        r"""Gets the user of this UnscopedTokenInfo.
 
         :return: The user of this UnscopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.FederationUserBody`
@@ -149,7 +149,7 @@ class UnscopedTokenInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UnscopedTokenInfo.
+        r"""Sets the user of this UnscopedTokenInfo.
 
         :param user: The user of this UnscopedTokenInfo.
         :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
@@ -158,7 +158,7 @@ class UnscopedTokenInfo:
 
     @property
     def roles(self):
-        """Gets the roles of this UnscopedTokenInfo.
+        r"""Gets the roles of this UnscopedTokenInfo.
 
         roles信息。
 
@@ -169,7 +169,7 @@ class UnscopedTokenInfo:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this UnscopedTokenInfo.
+        r"""Sets the roles of this UnscopedTokenInfo.
 
         roles信息。
 
@@ -180,7 +180,7 @@ class UnscopedTokenInfo:
 
     @property
     def catalog(self):
-        """Gets the catalog of this UnscopedTokenInfo.
+        r"""Gets the catalog of this UnscopedTokenInfo.
 
         catalog信息。
 
@@ -191,7 +191,7 @@ class UnscopedTokenInfo:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this UnscopedTokenInfo.
+        r"""Sets the catalog of this UnscopedTokenInfo.
 
         catalog信息。
 

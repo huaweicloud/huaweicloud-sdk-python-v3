@@ -30,7 +30,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
     }
 
     def __init__(self, invalid_users=None, request_id=None, header_response_token=None):
-        """BatchCreateVpnUsersResponse
+        r"""BatchCreateVpnUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
 
     @property
     def invalid_users(self):
-        """Gets the invalid_users of this BatchCreateVpnUsersResponse.
+        r"""Gets the invalid_users of this BatchCreateVpnUsersResponse.
 
         异常的用户列表
 
@@ -69,7 +69,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
 
     @invalid_users.setter
     def invalid_users(self, invalid_users):
-        """Sets the invalid_users of this BatchCreateVpnUsersResponse.
+        r"""Sets the invalid_users of this BatchCreateVpnUsersResponse.
 
         异常的用户列表
 
@@ -80,7 +80,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCreateVpnUsersResponse.
+        r"""Gets the request_id of this BatchCreateVpnUsersResponse.
 
         请求ID
 
@@ -91,7 +91,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCreateVpnUsersResponse.
+        r"""Sets the request_id of this BatchCreateVpnUsersResponse.
 
         请求ID
 
@@ -102,7 +102,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this BatchCreateVpnUsersResponse.
+        r"""Gets the header_response_token of this BatchCreateVpnUsersResponse.
 
         :return: The header_response_token of this BatchCreateVpnUsersResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class BatchCreateVpnUsersResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this BatchCreateVpnUsersResponse.
+        r"""Sets the header_response_token of this BatchCreateVpnUsersResponse.
 
         :param header_response_token: The header_response_token of this BatchCreateVpnUsersResponse.
         :type header_response_token: str

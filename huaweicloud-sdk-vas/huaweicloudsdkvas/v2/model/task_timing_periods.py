@@ -27,7 +27,7 @@ class TaskTimingPeriods:
     }
 
     def __init__(self, begin_at=None, end_at=None):
-        """TaskTimingPeriods
+        r"""TaskTimingPeriods
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskTimingPeriods:
 
     @property
     def begin_at(self):
-        """Gets the begin_at of this TaskTimingPeriods.
+        r"""Gets the begin_at of this TaskTimingPeriods.
 
         单个时间段执行的起始时间，和end_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
 
@@ -61,7 +61,7 @@ class TaskTimingPeriods:
 
     @begin_at.setter
     def begin_at(self, begin_at):
-        """Sets the begin_at of this TaskTimingPeriods.
+        r"""Sets the begin_at of this TaskTimingPeriods.
 
         单个时间段执行的起始时间，和end_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
 
@@ -72,7 +72,7 @@ class TaskTimingPeriods:
 
     @property
     def end_at(self):
-        """Gets the end_at of this TaskTimingPeriods.
+        r"""Gets the end_at of this TaskTimingPeriods.
 
         单个时间段执行的结束时间，和begin_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
 
@@ -83,7 +83,7 @@ class TaskTimingPeriods:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this TaskTimingPeriods.
+        r"""Sets the end_at of this TaskTimingPeriods.
 
         单个时间段执行的结束时间，和begin_at需成对出现。计划任务类型为once时，格式为yyyy-MM-ddThh:mm:ss，其余计划任务类型时，格式为hh:mm:ss。
 

@@ -24,7 +24,7 @@ class UpdateDataServiceInstanceLtsLogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDataServiceInstanceLtsLogResponse
+        r"""UpdateDataServiceInstanceLtsLogResponse
 
         The model defined in huaweicloud sdk
 

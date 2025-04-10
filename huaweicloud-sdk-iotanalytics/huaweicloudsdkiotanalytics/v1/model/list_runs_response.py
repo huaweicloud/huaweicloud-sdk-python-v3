@@ -28,7 +28,7 @@ class ListRunsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, runs=None):
-        """ListRunsResponse
+        r"""ListRunsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRunsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRunsResponse.
+        r"""Gets the count of this ListRunsResponse.
 
         作业总个数。
 
@@ -62,7 +62,7 @@ class ListRunsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRunsResponse.
+        r"""Sets the count of this ListRunsResponse.
 
         作业总个数。
 
@@ -73,7 +73,7 @@ class ListRunsResponse(SdkResponse):
 
     @property
     def runs(self):
-        """Gets the runs of this ListRunsResponse.
+        r"""Gets the runs of this ListRunsResponse.
 
         作业运行列表。
 
@@ -84,7 +84,7 @@ class ListRunsResponse(SdkResponse):
 
     @runs.setter
     def runs(self, runs):
-        """Sets the runs of this ListRunsResponse.
+        r"""Sets the runs of this ListRunsResponse.
 
         作业运行列表。
 

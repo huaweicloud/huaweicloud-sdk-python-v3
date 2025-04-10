@@ -45,7 +45,7 @@ class ListVaultRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, cloud_type=None, protect_type=None, object_type=None, enterprise_project_id=None, id=None, policy_id=None, status=None, resource_ids=None):
-        """ListVaultRequest
+        r"""ListVaultRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListVaultRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVaultRequest.
+        r"""Gets the limit of this ListVaultRequest.
 
         每页显示条目数，正整数
 
@@ -124,7 +124,7 @@ class ListVaultRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVaultRequest.
+        r"""Sets the limit of this ListVaultRequest.
 
         每页显示条目数，正整数
 
@@ -135,7 +135,7 @@ class ListVaultRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVaultRequest.
+        r"""Gets the name of this ListVaultRequest.
 
         存储库名称
 
@@ -146,7 +146,7 @@ class ListVaultRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVaultRequest.
+        r"""Sets the name of this ListVaultRequest.
 
         存储库名称
 
@@ -157,7 +157,7 @@ class ListVaultRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVaultRequest.
+        r"""Gets the offset of this ListVaultRequest.
 
         偏移值,正整数
 
@@ -168,7 +168,7 @@ class ListVaultRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVaultRequest.
+        r"""Sets the offset of this ListVaultRequest.
 
         偏移值,正整数
 
@@ -179,7 +179,7 @@ class ListVaultRequest:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this ListVaultRequest.
+        r"""Gets the cloud_type of this ListVaultRequest.
 
         云类型
 
@@ -190,7 +190,7 @@ class ListVaultRequest:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this ListVaultRequest.
+        r"""Sets the cloud_type of this ListVaultRequest.
 
         云类型
 
@@ -201,7 +201,7 @@ class ListVaultRequest:
 
     @property
     def protect_type(self):
-        """Gets the protect_type of this ListVaultRequest.
+        r"""Gets the protect_type of this ListVaultRequest.
 
         保护类型
 
@@ -212,7 +212,7 @@ class ListVaultRequest:
 
     @protect_type.setter
     def protect_type(self, protect_type):
-        """Sets the protect_type of this ListVaultRequest.
+        r"""Sets the protect_type of this ListVaultRequest.
 
         保护类型
 
@@ -223,7 +223,7 @@ class ListVaultRequest:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ListVaultRequest.
+        r"""Gets the object_type of this ListVaultRequest.
 
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
@@ -234,7 +234,7 @@ class ListVaultRequest:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ListVaultRequest.
+        r"""Sets the object_type of this ListVaultRequest.
 
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
@@ -245,7 +245,7 @@ class ListVaultRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVaultRequest.
+        r"""Gets the enterprise_project_id of this ListVaultRequest.
 
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
@@ -256,7 +256,7 @@ class ListVaultRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVaultRequest.
+        r"""Sets the enterprise_project_id of this ListVaultRequest.
 
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
@@ -267,7 +267,7 @@ class ListVaultRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVaultRequest.
+        r"""Gets the id of this ListVaultRequest.
 
         存储库ID
 
@@ -278,7 +278,7 @@ class ListVaultRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVaultRequest.
+        r"""Sets the id of this ListVaultRequest.
 
         存储库ID
 
@@ -289,7 +289,7 @@ class ListVaultRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListVaultRequest.
+        r"""Gets the policy_id of this ListVaultRequest.
 
         策略ID
 
@@ -300,7 +300,7 @@ class ListVaultRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListVaultRequest.
+        r"""Sets the policy_id of this ListVaultRequest.
 
         策略ID
 
@@ -311,7 +311,7 @@ class ListVaultRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVaultRequest.
+        r"""Gets the status of this ListVaultRequest.
 
         状态
 
@@ -322,7 +322,7 @@ class ListVaultRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVaultRequest.
+        r"""Sets the status of this ListVaultRequest.
 
         状态
 
@@ -333,7 +333,7 @@ class ListVaultRequest:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ListVaultRequest.
+        r"""Gets the resource_ids of this ListVaultRequest.
 
         资源id，支持多资源，以英文逗号分隔
 
@@ -344,7 +344,7 @@ class ListVaultRequest:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ListVaultRequest.
+        r"""Sets the resource_ids of this ListVaultRequest.
 
         资源id，支持多资源，以英文逗号分隔
 

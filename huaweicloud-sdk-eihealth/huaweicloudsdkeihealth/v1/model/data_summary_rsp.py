@@ -37,7 +37,7 @@ class DataSummaryRsp:
     }
 
     def __init__(self, path=None, name=None, type=None, size=None, create_time=None, allowed_operate=None, deletable=None):
-        """DataSummaryRsp
+        r"""DataSummaryRsp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DataSummaryRsp:
 
     @property
     def path(self):
-        """Gets the path of this DataSummaryRsp.
+        r"""Gets the path of this DataSummaryRsp.
 
         对象全路径（项目名称:/路径）
 
@@ -96,7 +96,7 @@ class DataSummaryRsp:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this DataSummaryRsp.
+        r"""Sets the path of this DataSummaryRsp.
 
         对象全路径（项目名称:/路径）
 
@@ -107,7 +107,7 @@ class DataSummaryRsp:
 
     @property
     def name(self):
-        """Gets the name of this DataSummaryRsp.
+        r"""Gets the name of this DataSummaryRsp.
 
         名称
 
@@ -118,7 +118,7 @@ class DataSummaryRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataSummaryRsp.
+        r"""Sets the name of this DataSummaryRsp.
 
         名称
 
@@ -129,7 +129,7 @@ class DataSummaryRsp:
 
     @property
     def type(self):
-        """Gets the type of this DataSummaryRsp.
+        r"""Gets the type of this DataSummaryRsp.
 
         :return: The type of this DataSummaryRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -138,7 +138,7 @@ class DataSummaryRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataSummaryRsp.
+        r"""Sets the type of this DataSummaryRsp.
 
         :param type: The type of this DataSummaryRsp.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -147,7 +147,7 @@ class DataSummaryRsp:
 
     @property
     def size(self):
-        """Gets the size of this DataSummaryRsp.
+        r"""Gets the size of this DataSummaryRsp.
 
         大小
 
@@ -158,7 +158,7 @@ class DataSummaryRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DataSummaryRsp.
+        r"""Sets the size of this DataSummaryRsp.
 
         大小
 
@@ -169,7 +169,7 @@ class DataSummaryRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataSummaryRsp.
+        r"""Gets the create_time of this DataSummaryRsp.
 
         创建时间
 
@@ -180,7 +180,7 @@ class DataSummaryRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataSummaryRsp.
+        r"""Sets the create_time of this DataSummaryRsp.
 
         创建时间
 
@@ -191,7 +191,7 @@ class DataSummaryRsp:
 
     @property
     def allowed_operate(self):
-        """Gets the allowed_operate of this DataSummaryRsp.
+        r"""Gets the allowed_operate of this DataSummaryRsp.
 
         可操作标记
 
@@ -202,7 +202,7 @@ class DataSummaryRsp:
 
     @allowed_operate.setter
     def allowed_operate(self, allowed_operate):
-        """Sets the allowed_operate of this DataSummaryRsp.
+        r"""Sets the allowed_operate of this DataSummaryRsp.
 
         可操作标记
 
@@ -213,7 +213,7 @@ class DataSummaryRsp:
 
     @property
     def deletable(self):
-        """Gets the deletable of this DataSummaryRsp.
+        r"""Gets the deletable of this DataSummaryRsp.
 
         可删除标记
 
@@ -224,7 +224,7 @@ class DataSummaryRsp:
 
     @deletable.setter
     def deletable(self, deletable):
-        """Sets the deletable of this DataSummaryRsp.
+        r"""Sets the deletable of this DataSummaryRsp.
 
         可删除标记
 

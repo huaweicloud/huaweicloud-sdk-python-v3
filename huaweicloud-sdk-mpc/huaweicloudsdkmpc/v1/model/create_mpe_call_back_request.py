@@ -25,7 +25,7 @@ class CreateMpeCallBackRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMpeCallBackRequest
+        r"""CreateMpeCallBackRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMpeCallBackRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMpeCallBackRequest.
+        r"""Gets the body of this CreateMpeCallBackRequest.
 
         :return: The body of this CreateMpeCallBackRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`
@@ -52,7 +52,7 @@ class CreateMpeCallBackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMpeCallBackRequest.
+        r"""Sets the body of this CreateMpeCallBackRequest.
 
         :param body: The body of this CreateMpeCallBackRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`

@@ -37,7 +37,7 @@ class GetDatabases:
     }
 
     def __init__(self, dbslot=None, name=None, status=None, created=None, updated=None, id=None, id_name=None):
-        """GetDatabases
+        r"""GetDatabases
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GetDatabases:
 
     @property
     def dbslot(self):
-        """Gets the dbslot of this GetDatabases.
+        r"""Gets the dbslot of this GetDatabases.
 
         分片数。
 
@@ -89,7 +89,7 @@ class GetDatabases:
 
     @dbslot.setter
     def dbslot(self, dbslot):
-        """Sets the dbslot of this GetDatabases.
+        r"""Sets the dbslot of this GetDatabases.
 
         分片数。
 
@@ -100,7 +100,7 @@ class GetDatabases:
 
     @property
     def name(self):
-        """Gets the name of this GetDatabases.
+        r"""Gets the name of this GetDatabases.
 
         分片名称。
 
@@ -111,7 +111,7 @@ class GetDatabases:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDatabases.
+        r"""Sets the name of this GetDatabases.
 
         分片名称。
 
@@ -122,7 +122,7 @@ class GetDatabases:
 
     @property
     def status(self):
-        """Gets the status of this GetDatabases.
+        r"""Gets the status of this GetDatabases.
 
         状态。
 
@@ -133,7 +133,7 @@ class GetDatabases:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetDatabases.
+        r"""Sets the status of this GetDatabases.
 
         状态。
 
@@ -144,7 +144,7 @@ class GetDatabases:
 
     @property
     def created(self):
-        """Gets the created of this GetDatabases.
+        r"""Gets the created of this GetDatabases.
 
         创建时间。
 
@@ -155,7 +155,7 @@ class GetDatabases:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetDatabases.
+        r"""Sets the created of this GetDatabases.
 
         创建时间。
 
@@ -166,7 +166,7 @@ class GetDatabases:
 
     @property
     def updated(self):
-        """Gets the updated of this GetDatabases.
+        r"""Gets the updated of this GetDatabases.
 
         最近更新时间。
 
@@ -177,7 +177,7 @@ class GetDatabases:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this GetDatabases.
+        r"""Sets the updated of this GetDatabases.
 
         最近更新时间。
 
@@ -188,7 +188,7 @@ class GetDatabases:
 
     @property
     def id(self):
-        """Gets the id of this GetDatabases.
+        r"""Gets the id of this GetDatabases.
 
         所在RDS的id。
 
@@ -199,7 +199,7 @@ class GetDatabases:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetDatabases.
+        r"""Sets the id of this GetDatabases.
 
         所在RDS的id。
 
@@ -210,7 +210,7 @@ class GetDatabases:
 
     @property
     def id_name(self):
-        """Gets the id_name of this GetDatabases.
+        r"""Gets the id_name of this GetDatabases.
 
         所在RDS的名称。
 
@@ -221,7 +221,7 @@ class GetDatabases:
 
     @id_name.setter
     def id_name(self, id_name):
-        """Sets the id_name of this GetDatabases.
+        r"""Sets the id_name of this GetDatabases.
 
         所在RDS的名称。
 

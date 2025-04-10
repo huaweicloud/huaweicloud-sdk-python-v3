@@ -31,7 +31,7 @@ class DesktopDimensionAttachInfo:
     }
 
     def __init__(self, desktop_name=None, desktop_id=None, user_num=None, user_name=None):
-        """DesktopDimensionAttachInfo
+        r"""DesktopDimensionAttachInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DesktopDimensionAttachInfo:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this DesktopDimensionAttachInfo.
+        r"""Gets the desktop_name of this DesktopDimensionAttachInfo.
 
         桌面名称。
 
@@ -75,7 +75,7 @@ class DesktopDimensionAttachInfo:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this DesktopDimensionAttachInfo.
+        r"""Sets the desktop_name of this DesktopDimensionAttachInfo.
 
         桌面名称。
 
@@ -86,7 +86,7 @@ class DesktopDimensionAttachInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopDimensionAttachInfo.
+        r"""Gets the desktop_id of this DesktopDimensionAttachInfo.
 
         桌面id。
 
@@ -97,7 +97,7 @@ class DesktopDimensionAttachInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopDimensionAttachInfo.
+        r"""Sets the desktop_id of this DesktopDimensionAttachInfo.
 
         桌面id。
 
@@ -108,7 +108,7 @@ class DesktopDimensionAttachInfo:
 
     @property
     def user_num(self):
-        """Gets the user_num of this DesktopDimensionAttachInfo.
+        r"""Gets the user_num of this DesktopDimensionAttachInfo.
 
         计划分配用户数。
 
@@ -119,7 +119,7 @@ class DesktopDimensionAttachInfo:
 
     @user_num.setter
     def user_num(self, user_num):
-        """Sets the user_num of this DesktopDimensionAttachInfo.
+        r"""Sets the user_num of this DesktopDimensionAttachInfo.
 
         计划分配用户数。
 
@@ -130,7 +130,7 @@ class DesktopDimensionAttachInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DesktopDimensionAttachInfo.
+        r"""Gets the user_name of this DesktopDimensionAttachInfo.
 
         计划分配用户名称，如果有多个用逗号隔开。
 
@@ -141,7 +141,7 @@ class DesktopDimensionAttachInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DesktopDimensionAttachInfo.
+        r"""Sets the user_name of this DesktopDimensionAttachInfo.
 
         计划分配用户名称，如果有多个用逗号隔开。
 

@@ -31,7 +31,7 @@ class ListPLuginVersionRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, offset=None, limit=None):
-        """ListPLuginVersionRequest
+        r"""ListPLuginVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListPLuginVersionRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListPLuginVersionRequest.
+        r"""Gets the domain_id of this ListPLuginVersionRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ListPLuginVersionRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListPLuginVersionRequest.
+        r"""Sets the domain_id of this ListPLuginVersionRequest.
 
         租户ID
 
@@ -82,7 +82,7 @@ class ListPLuginVersionRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ListPLuginVersionRequest.
+        r"""Gets the plugin_name of this ListPLuginVersionRequest.
 
         插件名
 
@@ -93,7 +93,7 @@ class ListPLuginVersionRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ListPLuginVersionRequest.
+        r"""Sets the plugin_name of this ListPLuginVersionRequest.
 
         插件名
 
@@ -104,7 +104,7 @@ class ListPLuginVersionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPLuginVersionRequest.
+        r"""Gets the offset of this ListPLuginVersionRequest.
 
         偏移
 
@@ -115,7 +115,7 @@ class ListPLuginVersionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPLuginVersionRequest.
+        r"""Sets the offset of this ListPLuginVersionRequest.
 
         偏移
 
@@ -126,7 +126,7 @@ class ListPLuginVersionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPLuginVersionRequest.
+        r"""Gets the limit of this ListPLuginVersionRequest.
 
         大小
 
@@ -137,7 +137,7 @@ class ListPLuginVersionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPLuginVersionRequest.
+        r"""Sets the limit of this ListPLuginVersionRequest.
 
         大小
 

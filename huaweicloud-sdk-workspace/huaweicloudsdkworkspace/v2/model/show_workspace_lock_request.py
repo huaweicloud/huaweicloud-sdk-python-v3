@@ -23,7 +23,7 @@ class ShowWorkspaceLockRequest:
     }
 
     def __init__(self):
-        """ShowWorkspaceLockRequest
+        r"""ShowWorkspaceLockRequest
 
         The model defined in huaweicloud sdk
 

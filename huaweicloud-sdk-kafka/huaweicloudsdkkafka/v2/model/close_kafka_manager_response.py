@@ -24,7 +24,7 @@ class CloseKafkaManagerResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CloseKafkaManagerResponse
+        r"""CloseKafkaManagerResponse
 
         The model defined in huaweicloud sdk
 

@@ -24,7 +24,7 @@ class TransferProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """TransferProjectResponse
+        r"""TransferProjectResponse
 
         The model defined in huaweicloud sdk
 

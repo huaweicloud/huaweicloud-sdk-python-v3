@@ -27,7 +27,7 @@ class CinderListVolumeTransfersRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """CinderListVolumeTransfersRequest
+        r"""CinderListVolumeTransfersRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CinderListVolumeTransfersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CinderListVolumeTransfersRequest.
+        r"""Gets the limit of this CinderListVolumeTransfersRequest.
 
         返回结果个数限制，取值为大 于0的整数
 
@@ -61,7 +61,7 @@ class CinderListVolumeTransfersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CinderListVolumeTransfersRequest.
+        r"""Sets the limit of this CinderListVolumeTransfersRequest.
 
         返回结果个数限制，取值为大 于0的整数
 
@@ -72,7 +72,7 @@ class CinderListVolumeTransfersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this CinderListVolumeTransfersRequest.
+        r"""Gets the offset of this CinderListVolumeTransfersRequest.
 
         偏移量，偏移量为一个大于0小 于云硬盘过户记录总个数的整 数，表示查询该偏移量后面的 所有的云硬盘过户记录
 
@@ -83,7 +83,7 @@ class CinderListVolumeTransfersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CinderListVolumeTransfersRequest.
+        r"""Sets the offset of this CinderListVolumeTransfersRequest.
 
         偏移量，偏移量为一个大于0小 于云硬盘过户记录总个数的整 数，表示查询该偏移量后面的 所有的云硬盘过户记录
 

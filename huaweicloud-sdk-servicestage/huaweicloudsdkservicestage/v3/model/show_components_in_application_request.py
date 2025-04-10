@@ -33,7 +33,7 @@ class ShowComponentsInApplicationRequest:
     }
 
     def __init__(self, application_id=None, limit=None, offset=None, order_by=None, order=None):
-        """ShowComponentsInApplicationRequest
+        r"""ShowComponentsInApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowComponentsInApplicationRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowComponentsInApplicationRequest.
+        r"""Gets the application_id of this ShowComponentsInApplicationRequest.
 
         应用id
 
@@ -81,7 +81,7 @@ class ShowComponentsInApplicationRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowComponentsInApplicationRequest.
+        r"""Sets the application_id of this ShowComponentsInApplicationRequest.
 
         应用id
 
@@ -92,7 +92,7 @@ class ShowComponentsInApplicationRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowComponentsInApplicationRequest.
+        r"""Gets the limit of this ShowComponentsInApplicationRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -103,7 +103,7 @@ class ShowComponentsInApplicationRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowComponentsInApplicationRequest.
+        r"""Sets the limit of this ShowComponentsInApplicationRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -114,7 +114,7 @@ class ShowComponentsInApplicationRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowComponentsInApplicationRequest.
+        r"""Gets the offset of this ShowComponentsInApplicationRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -125,7 +125,7 @@ class ShowComponentsInApplicationRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowComponentsInApplicationRequest.
+        r"""Sets the offset of this ShowComponentsInApplicationRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -136,7 +136,7 @@ class ShowComponentsInApplicationRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ShowComponentsInApplicationRequest.
+        r"""Gets the order_by of this ShowComponentsInApplicationRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -147,7 +147,7 @@ class ShowComponentsInApplicationRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ShowComponentsInApplicationRequest.
+        r"""Sets the order_by of this ShowComponentsInApplicationRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -158,7 +158,7 @@ class ShowComponentsInApplicationRequest:
 
     @property
     def order(self):
-        """Gets the order of this ShowComponentsInApplicationRequest.
+        r"""Gets the order of this ShowComponentsInApplicationRequest.
 
         desc/asc，默认desc。
 
@@ -169,7 +169,7 @@ class ShowComponentsInApplicationRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ShowComponentsInApplicationRequest.
+        r"""Sets the order of this ShowComponentsInApplicationRequest.
 
         desc/asc，默认desc。
 

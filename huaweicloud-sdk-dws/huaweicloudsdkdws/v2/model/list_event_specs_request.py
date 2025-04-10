@@ -37,7 +37,7 @@ class ListEventSpecsRequest:
     }
 
     def __init__(self, spec_name=None, category=None, severity=None, source_type=None, tag=None, offset=None, limit=None):
-        """ListEventSpecsRequest
+        r"""ListEventSpecsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListEventSpecsRequest:
 
     @property
     def spec_name(self):
-        """Gets the spec_name of this ListEventSpecsRequest.
+        r"""Gets the spec_name of this ListEventSpecsRequest.
 
         事件配置名称
 
@@ -96,7 +96,7 @@ class ListEventSpecsRequest:
 
     @spec_name.setter
     def spec_name(self, spec_name):
-        """Sets the spec_name of this ListEventSpecsRequest.
+        r"""Sets the spec_name of this ListEventSpecsRequest.
 
         事件配置名称
 
@@ -107,7 +107,7 @@ class ListEventSpecsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListEventSpecsRequest.
+        r"""Gets the category of this ListEventSpecsRequest.
 
         事件类别
 
@@ -118,7 +118,7 @@ class ListEventSpecsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListEventSpecsRequest.
+        r"""Sets the category of this ListEventSpecsRequest.
 
         事件类别
 
@@ -129,7 +129,7 @@ class ListEventSpecsRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListEventSpecsRequest.
+        r"""Gets the severity of this ListEventSpecsRequest.
 
         事件级别
 
@@ -140,7 +140,7 @@ class ListEventSpecsRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListEventSpecsRequest.
+        r"""Sets the severity of this ListEventSpecsRequest.
 
         事件级别
 
@@ -151,7 +151,7 @@ class ListEventSpecsRequest:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ListEventSpecsRequest.
+        r"""Gets the source_type of this ListEventSpecsRequest.
 
         事件源类别
 
@@ -162,7 +162,7 @@ class ListEventSpecsRequest:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ListEventSpecsRequest.
+        r"""Sets the source_type of this ListEventSpecsRequest.
 
         事件源类别
 
@@ -173,7 +173,7 @@ class ListEventSpecsRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListEventSpecsRequest.
+        r"""Gets the tag of this ListEventSpecsRequest.
 
         事件标签
 
@@ -184,7 +184,7 @@ class ListEventSpecsRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListEventSpecsRequest.
+        r"""Sets the tag of this ListEventSpecsRequest.
 
         事件标签
 
@@ -195,7 +195,7 @@ class ListEventSpecsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventSpecsRequest.
+        r"""Gets the offset of this ListEventSpecsRequest.
 
         偏移量
 
@@ -206,7 +206,7 @@ class ListEventSpecsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventSpecsRequest.
+        r"""Sets the offset of this ListEventSpecsRequest.
 
         偏移量
 
@@ -217,7 +217,7 @@ class ListEventSpecsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventSpecsRequest.
+        r"""Gets the limit of this ListEventSpecsRequest.
 
         限制条目数
 
@@ -228,7 +228,7 @@ class ListEventSpecsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventSpecsRequest.
+        r"""Sets the limit of this ListEventSpecsRequest.
 
         限制条目数
 

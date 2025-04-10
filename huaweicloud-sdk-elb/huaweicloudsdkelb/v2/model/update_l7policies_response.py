@@ -26,7 +26,7 @@ class UpdateL7policiesResponse(SdkResponse):
     }
 
     def __init__(self, l7policy=None):
-        """UpdateL7policiesResponse
+        r"""UpdateL7policiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateL7policiesResponse(SdkResponse):
 
     @property
     def l7policy(self):
-        """Gets the l7policy of this UpdateL7policiesResponse.
+        r"""Gets the l7policy of this UpdateL7policiesResponse.
 
         :return: The l7policy of this UpdateL7policiesResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.L7policyResp`
@@ -53,7 +53,7 @@ class UpdateL7policiesResponse(SdkResponse):
 
     @l7policy.setter
     def l7policy(self, l7policy):
-        """Sets the l7policy of this UpdateL7policiesResponse.
+        r"""Sets the l7policy of this UpdateL7policiesResponse.
 
         :param l7policy: The l7policy of this UpdateL7policiesResponse.
         :type l7policy: :class:`huaweicloudsdkelb.v2.L7policyResp`

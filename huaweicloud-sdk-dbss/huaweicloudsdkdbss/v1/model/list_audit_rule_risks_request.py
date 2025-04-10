@@ -29,7 +29,7 @@ class ListAuditRuleRisksRequest:
     }
 
     def __init__(self, instance_id=None, name=None, risk_levels=None):
-        """ListAuditRuleRisksRequest
+        r"""ListAuditRuleRisksRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAuditRuleRisksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditRuleRisksRequest.
+        r"""Gets the instance_id of this ListAuditRuleRisksRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -67,7 +67,7 @@ class ListAuditRuleRisksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditRuleRisksRequest.
+        r"""Sets the instance_id of this ListAuditRuleRisksRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -78,7 +78,7 @@ class ListAuditRuleRisksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAuditRuleRisksRequest.
+        r"""Gets the name of this ListAuditRuleRisksRequest.
 
         风险名称
 
@@ -89,7 +89,7 @@ class ListAuditRuleRisksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAuditRuleRisksRequest.
+        r"""Sets the name of this ListAuditRuleRisksRequest.
 
         风险名称
 
@@ -100,7 +100,7 @@ class ListAuditRuleRisksRequest:
 
     @property
     def risk_levels(self):
-        """Gets the risk_levels of this ListAuditRuleRisksRequest.
+        r"""Gets the risk_levels of this ListAuditRuleRisksRequest.
 
         风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
@@ -111,7 +111,7 @@ class ListAuditRuleRisksRequest:
 
     @risk_levels.setter
     def risk_levels(self, risk_levels):
-        """Sets the risk_levels of this ListAuditRuleRisksRequest.
+        r"""Sets the risk_levels of this ListAuditRuleRisksRequest.
 
         风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 

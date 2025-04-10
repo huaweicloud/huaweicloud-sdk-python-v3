@@ -28,7 +28,7 @@ class RunCodehubTemplateJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, file_list=None):
-        """RunCodehubTemplateJobResponse
+        r"""RunCodehubTemplateJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunCodehubTemplateJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunCodehubTemplateJobResponse.
+        r"""Gets the job_id of this RunCodehubTemplateJobResponse.
 
         任务id。
 
@@ -62,7 +62,7 @@ class RunCodehubTemplateJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunCodehubTemplateJobResponse.
+        r"""Sets the job_id of this RunCodehubTemplateJobResponse.
 
         任务id。
 
@@ -73,7 +73,7 @@ class RunCodehubTemplateJobResponse(SdkResponse):
 
     @property
     def file_list(self):
-        """Gets the file_list of this RunCodehubTemplateJobResponse.
+        r"""Gets the file_list of this RunCodehubTemplateJobResponse.
 
         文件列表。
 
@@ -84,7 +84,7 @@ class RunCodehubTemplateJobResponse(SdkResponse):
 
     @file_list.setter
     def file_list(self, file_list):
-        """Sets the file_list of this RunCodehubTemplateJobResponse.
+        r"""Sets the file_list of this RunCodehubTemplateJobResponse.
 
         文件列表。
 

@@ -28,7 +28,7 @@ class ListCreateAccountStatusesResponse(SdkResponse):
     }
 
     def __init__(self, create_account_statuses=None, page_info=None):
-        """ListCreateAccountStatusesResponse
+        r"""ListCreateAccountStatusesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCreateAccountStatusesResponse(SdkResponse):
 
     @property
     def create_account_statuses(self):
-        """Gets the create_account_statuses of this ListCreateAccountStatusesResponse.
+        r"""Gets the create_account_statuses of this ListCreateAccountStatusesResponse.
 
         包含有关请求的详细信息的对象列表。
 
@@ -62,7 +62,7 @@ class ListCreateAccountStatusesResponse(SdkResponse):
 
     @create_account_statuses.setter
     def create_account_statuses(self, create_account_statuses):
-        """Sets the create_account_statuses of this ListCreateAccountStatusesResponse.
+        r"""Sets the create_account_statuses of this ListCreateAccountStatusesResponse.
 
         包含有关请求的详细信息的对象列表。
 
@@ -73,7 +73,7 @@ class ListCreateAccountStatusesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCreateAccountStatusesResponse.
+        r"""Gets the page_info of this ListCreateAccountStatusesResponse.
 
         :return: The page_info of this ListCreateAccountStatusesResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListCreateAccountStatusesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCreateAccountStatusesResponse.
+        r"""Sets the page_info of this ListCreateAccountStatusesResponse.
 
         :param page_info: The page_info of this ListCreateAccountStatusesResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

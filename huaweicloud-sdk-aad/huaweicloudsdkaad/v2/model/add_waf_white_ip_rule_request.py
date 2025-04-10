@@ -25,7 +25,7 @@ class AddWafWhiteIpRuleRequest:
     }
 
     def __init__(self, body=None):
-        """AddWafWhiteIpRuleRequest
+        r"""AddWafWhiteIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddWafWhiteIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddWafWhiteIpRuleRequest.
+        r"""Gets the body of this AddWafWhiteIpRuleRequest.
 
         :return: The body of this AddWafWhiteIpRuleRequest.
         :rtype: :class:`huaweicloudsdkaad.v2.AddWafWhiteIpRuleV2RequestBody`
@@ -52,7 +52,7 @@ class AddWafWhiteIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddWafWhiteIpRuleRequest.
+        r"""Sets the body of this AddWafWhiteIpRuleRequest.
 
         :param body: The body of this AddWafWhiteIpRuleRequest.
         :type body: :class:`huaweicloudsdkaad.v2.AddWafWhiteIpRuleV2RequestBody`

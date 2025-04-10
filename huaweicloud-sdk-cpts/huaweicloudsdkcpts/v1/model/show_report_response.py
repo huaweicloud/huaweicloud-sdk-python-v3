@@ -32,7 +32,7 @@ class ShowReportResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """ShowReportResponse
+        r"""ShowReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowReportResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowReportResponse.
+        r"""Gets the code of this ShowReportResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ShowReportResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowReportResponse.
+        r"""Sets the code of this ShowReportResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ShowReportResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowReportResponse.
+        r"""Gets the message of this ShowReportResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class ShowReportResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowReportResponse.
+        r"""Sets the message of this ShowReportResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class ShowReportResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowReportResponse.
+        r"""Gets the extend of this ShowReportResponse.
 
         扩展信息
 
@@ -120,7 +120,7 @@ class ShowReportResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowReportResponse.
+        r"""Sets the extend of this ShowReportResponse.
 
         扩展信息
 
@@ -131,7 +131,7 @@ class ShowReportResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowReportResponse.
+        r"""Gets the result of this ShowReportResponse.
 
         :return: The result of this ShowReportResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportInfo`
@@ -140,7 +140,7 @@ class ShowReportResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowReportResponse.
+        r"""Sets the result of this ShowReportResponse.
 
         :param result: The result of this ShowReportResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.ReportInfo`

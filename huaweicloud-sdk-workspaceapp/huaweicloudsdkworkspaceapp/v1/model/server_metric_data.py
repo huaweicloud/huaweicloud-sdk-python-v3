@@ -29,7 +29,7 @@ class ServerMetricData:
     }
 
     def __init__(self, metric_name=None, datapoints=None, dimension_value=None):
-        """ServerMetricData
+        r"""ServerMetricData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ServerMetricData:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ServerMetricData.
+        r"""Gets the metric_name of this ServerMetricData.
 
         监控指标名称。
 
@@ -68,7 +68,7 @@ class ServerMetricData:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ServerMetricData.
+        r"""Sets the metric_name of this ServerMetricData.
 
         监控指标名称。
 
@@ -79,7 +79,7 @@ class ServerMetricData:
 
     @property
     def datapoints(self):
-        """Gets the datapoints of this ServerMetricData.
+        r"""Gets the datapoints of this ServerMetricData.
 
         指标数据列表。
 
@@ -90,7 +90,7 @@ class ServerMetricData:
 
     @datapoints.setter
     def datapoints(self, datapoints):
-        """Sets the datapoints of this ServerMetricData.
+        r"""Sets the datapoints of this ServerMetricData.
 
         指标数据列表。
 
@@ -101,7 +101,7 @@ class ServerMetricData:
 
     @property
     def dimension_value(self):
-        """Gets the dimension_value of this ServerMetricData.
+        r"""Gets the dimension_value of this ServerMetricData.
 
         维度值，仅查询GPU监控信息时有值。
 
@@ -112,7 +112,7 @@ class ServerMetricData:
 
     @dimension_value.setter
     def dimension_value(self, dimension_value):
-        """Sets the dimension_value of this ServerMetricData.
+        r"""Sets the dimension_value of this ServerMetricData.
 
         维度值，仅查询GPU监控信息时有值。
 

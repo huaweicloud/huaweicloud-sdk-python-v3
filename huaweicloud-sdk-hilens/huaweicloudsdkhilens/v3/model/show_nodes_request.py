@@ -43,7 +43,7 @@ class ShowNodesRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, workspace_id=None, app_name=None, tags=None, provider=None, cluster_id=None, status=None, active_status=None):
-        """ShowNodesRequest
+        r"""ShowNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ShowNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowNodesRequest.
+        r"""Gets the offset of this ShowNodesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -117,7 +117,7 @@ class ShowNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowNodesRequest.
+        r"""Sets the offset of this ShowNodesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -128,7 +128,7 @@ class ShowNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowNodesRequest.
+        r"""Gets the limit of this ShowNodesRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -139,7 +139,7 @@ class ShowNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowNodesRequest.
+        r"""Sets the limit of this ShowNodesRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -150,7 +150,7 @@ class ShowNodesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowNodesRequest.
+        r"""Gets the name of this ShowNodesRequest.
 
         设备名称，模糊匹配，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -161,7 +161,7 @@ class ShowNodesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNodesRequest.
+        r"""Sets the name of this ShowNodesRequest.
 
         设备名称，模糊匹配，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -172,7 +172,7 @@ class ShowNodesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowNodesRequest.
+        r"""Gets the workspace_id of this ShowNodesRequest.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -183,7 +183,7 @@ class ShowNodesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowNodesRequest.
+        r"""Sets the workspace_id of this ShowNodesRequest.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -194,7 +194,7 @@ class ShowNodesRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowNodesRequest.
+        r"""Gets the app_name of this ShowNodesRequest.
 
         应用名称，模糊匹配，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
@@ -205,7 +205,7 @@ class ShowNodesRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowNodesRequest.
+        r"""Sets the app_name of this ShowNodesRequest.
 
         应用名称，模糊匹配，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
@@ -216,7 +216,7 @@ class ShowNodesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowNodesRequest.
+        r"""Gets the tags of this ShowNodesRequest.
 
         标签的key和value通过点连接，多个标签通过逗号连接，如：tags=key1.value1,key2.value2
 
@@ -227,7 +227,7 @@ class ShowNodesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowNodesRequest.
+        r"""Sets the tags of this ShowNodesRequest.
 
         标签的key和value通过点连接，多个标签通过逗号连接，如：tags=key1.value1,key2.value2
 
@@ -238,7 +238,7 @@ class ShowNodesRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ShowNodesRequest.
+        r"""Gets the provider of this ShowNodesRequest.
 
         服务提供者：ief或hilens。不传会查询全部服务类型的设备列表
 
@@ -249,7 +249,7 @@ class ShowNodesRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ShowNodesRequest.
+        r"""Sets the provider of this ShowNodesRequest.
 
         服务提供者：ief或hilens。不传会查询全部服务类型的设备列表
 
@@ -260,7 +260,7 @@ class ShowNodesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowNodesRequest.
+        r"""Gets the cluster_id of this ShowNodesRequest.
 
         集群ID，若值为0会过滤出不隶属任何集群的设备
 
@@ -271,7 +271,7 @@ class ShowNodesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowNodesRequest.
+        r"""Sets the cluster_id of this ShowNodesRequest.
 
         集群ID，若值为0会过滤出不隶属任何集群的设备
 
@@ -282,7 +282,7 @@ class ShowNodesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowNodesRequest.
+        r"""Gets the status of this ShowNodesRequest.
 
         状态
 
@@ -293,7 +293,7 @@ class ShowNodesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNodesRequest.
+        r"""Sets the status of this ShowNodesRequest.
 
         状态
 
@@ -304,7 +304,7 @@ class ShowNodesRequest:
 
     @property
     def active_status(self):
-        """Gets the active_status of this ShowNodesRequest.
+        r"""Gets the active_status of this ShowNodesRequest.
 
         设备激活状态，分别是未激活（INACTIVE）、已激活（ACTIVATED）、已到期（EXPIRED）
 
@@ -315,7 +315,7 @@ class ShowNodesRequest:
 
     @active_status.setter
     def active_status(self, active_status):
-        """Sets the active_status of this ShowNodesRequest.
+        r"""Sets the active_status of this ShowNodesRequest.
 
         设备激活状态，分别是未激活（INACTIVE）、已激活（ACTIVATED）、已到期（EXPIRED）
 

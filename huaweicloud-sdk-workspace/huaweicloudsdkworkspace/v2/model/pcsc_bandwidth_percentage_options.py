@@ -25,7 +25,7 @@ class PcscBandwidthPercentageOptions:
     }
 
     def __init__(self, pcsc_bandwidth_percentage_value=None):
-        """PcscBandwidthPercentageOptions
+        r"""PcscBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PcscBandwidthPercentageOptions:
 
     @property
     def pcsc_bandwidth_percentage_value(self):
-        """Gets the pcsc_bandwidth_percentage_value of this PcscBandwidthPercentageOptions.
+        r"""Gets the pcsc_bandwidth_percentage_value of this PcscBandwidthPercentageOptions.
 
         PCSC带宽百分比控制量（%）。取值范围为[0-100]。默认：5。
 
@@ -54,7 +54,7 @@ class PcscBandwidthPercentageOptions:
 
     @pcsc_bandwidth_percentage_value.setter
     def pcsc_bandwidth_percentage_value(self, pcsc_bandwidth_percentage_value):
-        """Sets the pcsc_bandwidth_percentage_value of this PcscBandwidthPercentageOptions.
+        r"""Sets the pcsc_bandwidth_percentage_value of this PcscBandwidthPercentageOptions.
 
         PCSC带宽百分比控制量（%）。取值范围为[0-100]。默认：5。
 

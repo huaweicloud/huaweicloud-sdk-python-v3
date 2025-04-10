@@ -39,7 +39,7 @@ class ResourceInput:
     }
 
     def __init__(self, resource_type=None, catalog=None, database=None, function=None, table=None, column=None, uri=None, columns=None):
-        """ResourceInput
+        r"""ResourceInput
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ResourceInput:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceInput.
+        r"""Gets the resource_type of this ResourceInput.
 
         元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI
 
@@ -102,7 +102,7 @@ class ResourceInput:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceInput.
+        r"""Sets the resource_type of this ResourceInput.
 
         元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI
 
@@ -113,7 +113,7 @@ class ResourceInput:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ResourceInput.
+        r"""Gets the catalog of this ResourceInput.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -124,7 +124,7 @@ class ResourceInput:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ResourceInput.
+        r"""Sets the catalog of this ResourceInput.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -135,7 +135,7 @@ class ResourceInput:
 
     @property
     def database(self):
-        """Gets the database of this ResourceInput.
+        r"""Gets the database of this ResourceInput.
 
         数据库名称。只能包含中文、字母、数字和下划线，且长度为1到128个字符。
 
@@ -146,7 +146,7 @@ class ResourceInput:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ResourceInput.
+        r"""Sets the database of this ResourceInput.
 
         数据库名称。只能包含中文、字母、数字和下划线，且长度为1到128个字符。
 
@@ -157,7 +157,7 @@ class ResourceInput:
 
     @property
     def function(self):
-        """Gets the function of this ResourceInput.
+        r"""Gets the function of this ResourceInput.
 
         函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -168,7 +168,7 @@ class ResourceInput:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this ResourceInput.
+        r"""Sets the function of this ResourceInput.
 
         函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -179,7 +179,7 @@ class ResourceInput:
 
     @property
     def table(self):
-        """Gets the table of this ResourceInput.
+        r"""Gets the table of this ResourceInput.
 
         表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
@@ -190,7 +190,7 @@ class ResourceInput:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ResourceInput.
+        r"""Sets the table of this ResourceInput.
 
         表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
@@ -201,7 +201,7 @@ class ResourceInput:
 
     @property
     def column(self):
-        """Gets the column of this ResourceInput.
+        r"""Gets the column of this ResourceInput.
 
         列名称。只能包含中文、字母、数字和_-+*\\(), 特殊字符，且长度为1~767个字符。
 
@@ -212,7 +212,7 @@ class ResourceInput:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this ResourceInput.
+        r"""Sets the column of this ResourceInput.
 
         列名称。只能包含中文、字母、数字和_-+*\\(), 特殊字符，且长度为1~767个字符。
 
@@ -223,7 +223,7 @@ class ResourceInput:
 
     @property
     def uri(self):
-        """Gets the uri of this ResourceInput.
+        r"""Gets the uri of this ResourceInput.
 
         URI
 
@@ -234,7 +234,7 @@ class ResourceInput:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ResourceInput.
+        r"""Sets the uri of this ResourceInput.
 
         URI
 
@@ -245,7 +245,7 @@ class ResourceInput:
 
     @property
     def columns(self):
-        """Gets the columns of this ResourceInput.
+        r"""Gets the columns of this ResourceInput.
 
         列名称列表
 
@@ -256,7 +256,7 @@ class ResourceInput:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ResourceInput.
+        r"""Sets the columns of this ResourceInput.
 
         列名称列表
 

@@ -45,7 +45,7 @@ class ScheduledTaskHistory:
     }
 
     def __init__(self, id=None, task_type=None, execution_id=None, associated_task_name=None, associated_task_name_en=None, region=None, created_by=None, started_time=None, finished_time=None, status=None, execution_msg=None):
-        """ScheduledTaskHistory
+        r"""ScheduledTaskHistory
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScheduledTaskHistory:
 
     @property
     def id(self):
-        """Gets the id of this ScheduledTaskHistory.
+        r"""Gets the id of this ScheduledTaskHistory.
 
         历史记录ID
 
@@ -124,7 +124,7 @@ class ScheduledTaskHistory:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduledTaskHistory.
+        r"""Sets the id of this ScheduledTaskHistory.
 
         历史记录ID
 
@@ -135,7 +135,7 @@ class ScheduledTaskHistory:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduledTaskHistory.
+        r"""Gets the task_type of this ScheduledTaskHistory.
 
         引用任务类型
 
@@ -146,7 +146,7 @@ class ScheduledTaskHistory:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduledTaskHistory.
+        r"""Sets the task_type of this ScheduledTaskHistory.
 
         引用任务类型
 
@@ -157,7 +157,7 @@ class ScheduledTaskHistory:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this ScheduledTaskHistory.
+        r"""Gets the execution_id of this ScheduledTaskHistory.
 
         执行ID
 
@@ -168,7 +168,7 @@ class ScheduledTaskHistory:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this ScheduledTaskHistory.
+        r"""Sets the execution_id of this ScheduledTaskHistory.
 
         执行ID
 
@@ -179,7 +179,7 @@ class ScheduledTaskHistory:
 
     @property
     def associated_task_name(self):
-        """Gets the associated_task_name of this ScheduledTaskHistory.
+        r"""Gets the associated_task_name of this ScheduledTaskHistory.
 
         引用任务名称
 
@@ -190,7 +190,7 @@ class ScheduledTaskHistory:
 
     @associated_task_name.setter
     def associated_task_name(self, associated_task_name):
-        """Sets the associated_task_name of this ScheduledTaskHistory.
+        r"""Sets the associated_task_name of this ScheduledTaskHistory.
 
         引用任务名称
 
@@ -201,7 +201,7 @@ class ScheduledTaskHistory:
 
     @property
     def associated_task_name_en(self):
-        """Gets the associated_task_name_en of this ScheduledTaskHistory.
+        r"""Gets the associated_task_name_en of this ScheduledTaskHistory.
 
         引用任务名称(英文)
 
@@ -212,7 +212,7 @@ class ScheduledTaskHistory:
 
     @associated_task_name_en.setter
     def associated_task_name_en(self, associated_task_name_en):
-        """Sets the associated_task_name_en of this ScheduledTaskHistory.
+        r"""Sets the associated_task_name_en of this ScheduledTaskHistory.
 
         引用任务名称(英文)
 
@@ -223,7 +223,7 @@ class ScheduledTaskHistory:
 
     @property
     def region(self):
-        """Gets the region of this ScheduledTaskHistory.
+        r"""Gets the region of this ScheduledTaskHistory.
 
         区域
 
@@ -234,7 +234,7 @@ class ScheduledTaskHistory:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ScheduledTaskHistory.
+        r"""Sets the region of this ScheduledTaskHistory.
 
         区域
 
@@ -245,7 +245,7 @@ class ScheduledTaskHistory:
 
     @property
     def created_by(self):
-        """Gets the created_by of this ScheduledTaskHistory.
+        r"""Gets the created_by of this ScheduledTaskHistory.
 
         创建人
 
@@ -256,7 +256,7 @@ class ScheduledTaskHistory:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ScheduledTaskHistory.
+        r"""Sets the created_by of this ScheduledTaskHistory.
 
         创建人
 
@@ -267,7 +267,7 @@ class ScheduledTaskHistory:
 
     @property
     def started_time(self):
-        """Gets the started_time of this ScheduledTaskHistory.
+        r"""Gets the started_time of this ScheduledTaskHistory.
 
         开始时间时间戳
 
@@ -278,7 +278,7 @@ class ScheduledTaskHistory:
 
     @started_time.setter
     def started_time(self, started_time):
-        """Sets the started_time of this ScheduledTaskHistory.
+        r"""Sets the started_time of this ScheduledTaskHistory.
 
         开始时间时间戳
 
@@ -289,7 +289,7 @@ class ScheduledTaskHistory:
 
     @property
     def finished_time(self):
-        """Gets the finished_time of this ScheduledTaskHistory.
+        r"""Gets the finished_time of this ScheduledTaskHistory.
 
         结束时间时间戳
 
@@ -300,7 +300,7 @@ class ScheduledTaskHistory:
 
     @finished_time.setter
     def finished_time(self, finished_time):
-        """Sets the finished_time of this ScheduledTaskHistory.
+        r"""Sets the finished_time of this ScheduledTaskHistory.
 
         结束时间时间戳
 
@@ -311,7 +311,7 @@ class ScheduledTaskHistory:
 
     @property
     def status(self):
-        """Gets the status of this ScheduledTaskHistory.
+        r"""Gets the status of this ScheduledTaskHistory.
 
         状态
 
@@ -322,7 +322,7 @@ class ScheduledTaskHistory:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScheduledTaskHistory.
+        r"""Sets the status of this ScheduledTaskHistory.
 
         状态
 
@@ -333,7 +333,7 @@ class ScheduledTaskHistory:
 
     @property
     def execution_msg(self):
-        """Gets the execution_msg of this ScheduledTaskHistory.
+        r"""Gets the execution_msg of this ScheduledTaskHistory.
 
         执行结果描述
 
@@ -344,7 +344,7 @@ class ScheduledTaskHistory:
 
     @execution_msg.setter
     def execution_msg(self, execution_msg):
-        """Sets the execution_msg of this ScheduledTaskHistory.
+        r"""Sets the execution_msg of this ScheduledTaskHistory.
 
         执行结果描述
 

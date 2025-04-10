@@ -29,7 +29,7 @@ class ListServicePrincipalsV5Request:
     }
 
     def __init__(self, limit=None, marker=None, x_language=None):
-        """ListServicePrincipalsV5Request
+        r"""ListServicePrincipalsV5Request
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListServicePrincipalsV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServicePrincipalsV5Request.
+        r"""Gets the limit of this ListServicePrincipalsV5Request.
 
         每页显示的条目数量。
 
@@ -68,7 +68,7 @@ class ListServicePrincipalsV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServicePrincipalsV5Request.
+        r"""Sets the limit of this ListServicePrincipalsV5Request.
 
         每页显示的条目数量。
 
@@ -79,7 +79,7 @@ class ListServicePrincipalsV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListServicePrincipalsV5Request.
+        r"""Gets the marker of this ListServicePrincipalsV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -90,7 +90,7 @@ class ListServicePrincipalsV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListServicePrincipalsV5Request.
+        r"""Sets the marker of this ListServicePrincipalsV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -101,7 +101,7 @@ class ListServicePrincipalsV5Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListServicePrincipalsV5Request.
+        r"""Gets the x_language of this ListServicePrincipalsV5Request.
 
         选择接口返回的信息的语言，可以为中文（\"zh-cn\"）或英文（\"en-us\"），默认为中文。
 
@@ -112,7 +112,7 @@ class ListServicePrincipalsV5Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListServicePrincipalsV5Request.
+        r"""Sets the x_language of this ListServicePrincipalsV5Request.
 
         选择接口返回的信息的语言，可以为中文（\"zh-cn\"）或英文（\"en-us\"），默认为中文。
 

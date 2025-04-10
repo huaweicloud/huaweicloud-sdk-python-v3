@@ -30,7 +30,7 @@ class ListCloudConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, cloud_connections=None):
-        """ListCloudConnectionsResponse
+        r"""ListCloudConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCloudConnectionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudConnectionsResponse.
+        r"""Gets the request_id of this ListCloudConnectionsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCloudConnectionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudConnectionsResponse.
+        r"""Sets the request_id of this ListCloudConnectionsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCloudConnectionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCloudConnectionsResponse.
+        r"""Gets the page_info of this ListCloudConnectionsResponse.
 
         :return: The page_info of this ListCloudConnectionsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCloudConnectionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCloudConnectionsResponse.
+        r"""Sets the page_info of this ListCloudConnectionsResponse.
 
         :param page_info: The page_info of this ListCloudConnectionsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCloudConnectionsResponse(SdkResponse):
 
     @property
     def cloud_connections(self):
-        """Gets the cloud_connections of this ListCloudConnectionsResponse.
+        r"""Gets the cloud_connections of this ListCloudConnectionsResponse.
 
         云连接实例列表。
 
@@ -107,7 +107,7 @@ class ListCloudConnectionsResponse(SdkResponse):
 
     @cloud_connections.setter
     def cloud_connections(self, cloud_connections):
-        """Sets the cloud_connections of this ListCloudConnectionsResponse.
+        r"""Sets the cloud_connections of this ListCloudConnectionsResponse.
 
         云连接实例列表。
 

@@ -29,7 +29,7 @@ class TableConfigCheckResult:
     }
 
     def __init__(self, table_name=None, table_config=None, check_result=None):
-        """TableConfigCheckResult
+        r"""TableConfigCheckResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TableConfigCheckResult:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TableConfigCheckResult.
+        r"""Gets the table_name of this TableConfigCheckResult.
 
         表名。
 
@@ -68,7 +68,7 @@ class TableConfigCheckResult:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TableConfigCheckResult.
+        r"""Sets the table_name of this TableConfigCheckResult.
 
         表名。
 
@@ -79,7 +79,7 @@ class TableConfigCheckResult:
 
     @property
     def table_config(self):
-        """Gets the table_config of this TableConfigCheckResult.
+        r"""Gets the table_config of this TableConfigCheckResult.
 
         表配置项。
 
@@ -90,7 +90,7 @@ class TableConfigCheckResult:
 
     @table_config.setter
     def table_config(self, table_config):
-        """Sets the table_config of this TableConfigCheckResult.
+        r"""Sets the table_config of this TableConfigCheckResult.
 
         表配置项。
 
@@ -101,7 +101,7 @@ class TableConfigCheckResult:
 
     @property
     def check_result(self):
-        """Gets the check_result of this TableConfigCheckResult.
+        r"""Gets the check_result of this TableConfigCheckResult.
 
         校验结果。
 
@@ -112,7 +112,7 @@ class TableConfigCheckResult:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this TableConfigCheckResult.
+        r"""Sets the check_result of this TableConfigCheckResult.
 
         校验结果。
 

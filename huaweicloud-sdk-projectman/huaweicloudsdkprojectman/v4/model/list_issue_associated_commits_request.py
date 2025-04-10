@@ -33,7 +33,7 @@ class ListIssueAssociatedCommitsRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, type=None, limit=None, offset=None):
-        """ListIssueAssociatedCommitsRequest
+        r"""ListIssueAssociatedCommitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIssueAssociatedCommitsRequest.
+        r"""Gets the project_id of this ListIssueAssociatedCommitsRequest.
 
         devcloud项目的32位id
 
@@ -80,7 +80,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIssueAssociatedCommitsRequest.
+        r"""Sets the project_id of this ListIssueAssociatedCommitsRequest.
 
         devcloud项目的32位id
 
@@ -91,7 +91,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ListIssueAssociatedCommitsRequest.
+        r"""Gets the issue_id of this ListIssueAssociatedCommitsRequest.
 
         工作项ID
 
@@ -102,7 +102,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ListIssueAssociatedCommitsRequest.
+        r"""Sets the issue_id of this ListIssueAssociatedCommitsRequest.
 
         工作项ID
 
@@ -113,7 +113,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListIssueAssociatedCommitsRequest.
+        r"""Gets the type of this ListIssueAssociatedCommitsRequest.
 
         查询类型：commit（提交记录） || branch（分支记录）
 
@@ -124,7 +124,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListIssueAssociatedCommitsRequest.
+        r"""Sets the type of this ListIssueAssociatedCommitsRequest.
 
         查询类型：commit（提交记录） || branch（分支记录）
 
@@ -135,7 +135,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIssueAssociatedCommitsRequest.
+        r"""Gets the limit of this ListIssueAssociatedCommitsRequest.
 
         每页数量
 
@@ -146,7 +146,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIssueAssociatedCommitsRequest.
+        r"""Sets the limit of this ListIssueAssociatedCommitsRequest.
 
         每页数量
 
@@ -157,7 +157,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIssueAssociatedCommitsRequest.
+        r"""Gets the offset of this ListIssueAssociatedCommitsRequest.
 
         偏移量
 
@@ -168,7 +168,7 @@ class ListIssueAssociatedCommitsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIssueAssociatedCommitsRequest.
+        r"""Sets the offset of this ListIssueAssociatedCommitsRequest.
 
         偏移量
 

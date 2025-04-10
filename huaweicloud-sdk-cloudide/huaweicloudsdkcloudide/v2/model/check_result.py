@@ -29,7 +29,7 @@ class CheckResult:
     }
 
     def __init__(self, status=None, errors=None, extension_version_compare=None):
-        """CheckResult
+        r"""CheckResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckResult:
 
     @property
     def status(self):
-        """Gets the status of this CheckResult.
+        r"""Gets the status of this CheckResult.
 
         解析状态
 
@@ -68,7 +68,7 @@ class CheckResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckResult.
+        r"""Sets the status of this CheckResult.
 
         解析状态
 
@@ -79,7 +79,7 @@ class CheckResult:
 
     @property
     def errors(self):
-        """Gets the errors of this CheckResult.
+        r"""Gets the errors of this CheckResult.
 
         检查插件错误结果集
 
@@ -90,7 +90,7 @@ class CheckResult:
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this CheckResult.
+        r"""Sets the errors of this CheckResult.
 
         检查插件错误结果集
 
@@ -101,7 +101,7 @@ class CheckResult:
 
     @property
     def extension_version_compare(self):
-        """Gets the extension_version_compare of this CheckResult.
+        r"""Gets the extension_version_compare of this CheckResult.
 
         插件版本信息
 
@@ -112,7 +112,7 @@ class CheckResult:
 
     @extension_version_compare.setter
     def extension_version_compare(self, extension_version_compare):
-        """Sets the extension_version_compare of this CheckResult.
+        r"""Sets the extension_version_compare of this CheckResult.
 
         插件版本信息
 

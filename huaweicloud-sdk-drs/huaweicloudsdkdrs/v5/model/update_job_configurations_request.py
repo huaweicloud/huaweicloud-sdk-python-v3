@@ -29,7 +29,7 @@ class UpdateJobConfigurationsRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateJobConfigurationsRequest
+        r"""UpdateJobConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateJobConfigurationsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateJobConfigurationsRequest.
+        r"""Gets the job_id of this UpdateJobConfigurationsRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class UpdateJobConfigurationsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateJobConfigurationsRequest.
+        r"""Sets the job_id of this UpdateJobConfigurationsRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class UpdateJobConfigurationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateJobConfigurationsRequest.
+        r"""Gets the x_language of this UpdateJobConfigurationsRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class UpdateJobConfigurationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateJobConfigurationsRequest.
+        r"""Sets the x_language of this UpdateJobConfigurationsRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class UpdateJobConfigurationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateJobConfigurationsRequest.
+        r"""Gets the body of this UpdateJobConfigurationsRequest.
 
         :return: The body of this UpdateJobConfigurationsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.ModifyParameterReq`
@@ -109,7 +109,7 @@ class UpdateJobConfigurationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateJobConfigurationsRequest.
+        r"""Sets the body of this UpdateJobConfigurationsRequest.
 
         :param body: The body of this UpdateJobConfigurationsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.ModifyParameterReq`

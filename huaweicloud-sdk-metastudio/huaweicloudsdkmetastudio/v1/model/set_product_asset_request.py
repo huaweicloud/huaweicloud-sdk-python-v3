@@ -29,7 +29,7 @@ class SetProductAssetRequest:
     }
 
     def __init__(self, x_app_user_id=None, product_id=None, body=None):
-        """SetProductAssetRequest
+        r"""SetProductAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetProductAssetRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this SetProductAssetRequest.
+        r"""Gets the x_app_user_id of this SetProductAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class SetProductAssetRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this SetProductAssetRequest.
+        r"""Sets the x_app_user_id of this SetProductAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class SetProductAssetRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this SetProductAssetRequest.
+        r"""Gets the product_id of this SetProductAssetRequest.
 
         商品ID。
 
@@ -89,7 +89,7 @@ class SetProductAssetRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this SetProductAssetRequest.
+        r"""Sets the product_id of this SetProductAssetRequest.
 
         商品ID。
 
@@ -100,7 +100,7 @@ class SetProductAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetProductAssetRequest.
+        r"""Gets the body of this SetProductAssetRequest.
 
         :return: The body of this SetProductAssetRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductAssetReleation`
@@ -109,7 +109,7 @@ class SetProductAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetProductAssetRequest.
+        r"""Sets the body of this SetProductAssetRequest.
 
         :param body: The body of this SetProductAssetRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ProductAssetReleation`

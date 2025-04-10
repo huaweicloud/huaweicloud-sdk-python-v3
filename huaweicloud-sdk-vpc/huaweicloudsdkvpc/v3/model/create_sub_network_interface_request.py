@@ -25,7 +25,7 @@ class CreateSubNetworkInterfaceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSubNetworkInterfaceRequest
+        r"""CreateSubNetworkInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSubNetworkInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubNetworkInterfaceRequest.
+        r"""Gets the body of this CreateSubNetworkInterfaceRequest.
 
         :return: The body of this CreateSubNetworkInterfaceRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequestBody`
@@ -52,7 +52,7 @@ class CreateSubNetworkInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubNetworkInterfaceRequest.
+        r"""Sets the body of this CreateSubNetworkInterfaceRequest.
 
         :param body: The body of this CreateSubNetworkInterfaceRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequestBody`

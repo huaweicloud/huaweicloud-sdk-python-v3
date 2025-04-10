@@ -33,7 +33,7 @@ class IssueDetailCustomField:
     }
 
     def __init__(self, custom_field=None, field_name=None, value=None, field_type=None, description=None):
-        """IssueDetailCustomField
+        r"""IssueDetailCustomField
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IssueDetailCustomField:
 
     @property
     def custom_field(self):
-        """Gets the custom_field of this IssueDetailCustomField.
+        r"""Gets the custom_field of this IssueDetailCustomField.
 
         自定义字段
 
@@ -82,7 +82,7 @@ class IssueDetailCustomField:
 
     @custom_field.setter
     def custom_field(self, custom_field):
-        """Sets the custom_field of this IssueDetailCustomField.
+        r"""Sets the custom_field of this IssueDetailCustomField.
 
         自定义字段
 
@@ -93,7 +93,7 @@ class IssueDetailCustomField:
 
     @property
     def field_name(self):
-        """Gets the field_name of this IssueDetailCustomField.
+        r"""Gets the field_name of this IssueDetailCustomField.
 
         自定义字段名称
 
@@ -104,7 +104,7 @@ class IssueDetailCustomField:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this IssueDetailCustomField.
+        r"""Sets the field_name of this IssueDetailCustomField.
 
         自定义字段名称
 
@@ -115,7 +115,7 @@ class IssueDetailCustomField:
 
     @property
     def value(self):
-        """Gets the value of this IssueDetailCustomField.
+        r"""Gets the value of this IssueDetailCustomField.
 
         自定义属性对应的值，多个值以英文逗号区分开
 
@@ -126,7 +126,7 @@ class IssueDetailCustomField:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this IssueDetailCustomField.
+        r"""Sets the value of this IssueDetailCustomField.
 
         自定义属性对应的值，多个值以英文逗号区分开
 
@@ -137,7 +137,7 @@ class IssueDetailCustomField:
 
     @property
     def field_type(self):
-        """Gets the field_type of this IssueDetailCustomField.
+        r"""Gets the field_type of this IssueDetailCustomField.
 
         自定义字段类型， textArea 多行文本，text 单行文本，select 下拉框，number 数字，time_date 日期，checkbox 多选框，radio 单选框
 
@@ -148,7 +148,7 @@ class IssueDetailCustomField:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this IssueDetailCustomField.
+        r"""Sets the field_type of this IssueDetailCustomField.
 
         自定义字段类型， textArea 多行文本，text 单行文本，select 下拉框，number 数字，time_date 日期，checkbox 多选框，radio 单选框
 
@@ -159,7 +159,7 @@ class IssueDetailCustomField:
 
     @property
     def description(self):
-        """Gets the description of this IssueDetailCustomField.
+        r"""Gets the description of this IssueDetailCustomField.
 
         自定义字段描述
 
@@ -170,7 +170,7 @@ class IssueDetailCustomField:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IssueDetailCustomField.
+        r"""Sets the description of this IssueDetailCustomField.
 
         自定义字段描述
 

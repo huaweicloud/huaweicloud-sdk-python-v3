@@ -29,7 +29,7 @@ class SmnTargetDetailSubjectTransform:
     }
 
     def __init__(self, type=None, value=None, template=None):
-        """SmnTargetDetailSubjectTransform
+        r"""SmnTargetDetailSubjectTransform
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SmnTargetDetailSubjectTransform:
 
     @property
     def type(self):
-        """Gets the type of this SmnTargetDetailSubjectTransform.
+        r"""Gets the type of this SmnTargetDetailSubjectTransform.
 
         标题规则类型
 
@@ -66,7 +66,7 @@ class SmnTargetDetailSubjectTransform:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SmnTargetDetailSubjectTransform.
+        r"""Sets the type of this SmnTargetDetailSubjectTransform.
 
         标题规则类型
 
@@ -77,7 +77,7 @@ class SmnTargetDetailSubjectTransform:
 
     @property
     def value(self):
-        """Gets the value of this SmnTargetDetailSubjectTransform.
+        r"""Gets the value of this SmnTargetDetailSubjectTransform.
 
         标题规则
 
@@ -88,7 +88,7 @@ class SmnTargetDetailSubjectTransform:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SmnTargetDetailSubjectTransform.
+        r"""Sets the value of this SmnTargetDetailSubjectTransform.
 
         标题规则
 
@@ -99,7 +99,7 @@ class SmnTargetDetailSubjectTransform:
 
     @property
     def template(self):
-        """Gets the template of this SmnTargetDetailSubjectTransform.
+        r"""Gets the template of this SmnTargetDetailSubjectTransform.
 
         标题规则模板，键值规则为VARIABLE时必填
 
@@ -110,7 +110,7 @@ class SmnTargetDetailSubjectTransform:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this SmnTargetDetailSubjectTransform.
+        r"""Sets the template of this SmnTargetDetailSubjectTransform.
 
         标题规则模板，键值规则为VARIABLE时必填
 

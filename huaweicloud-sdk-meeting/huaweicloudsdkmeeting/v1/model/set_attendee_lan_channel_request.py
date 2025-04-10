@@ -29,7 +29,7 @@ class SetAttendeeLanChannelRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """SetAttendeeLanChannelRequest
+        r"""SetAttendeeLanChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SetAttendeeLanChannelRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this SetAttendeeLanChannelRequest.
+        r"""Gets the conference_id of this SetAttendeeLanChannelRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class SetAttendeeLanChannelRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this SetAttendeeLanChannelRequest.
+        r"""Sets the conference_id of this SetAttendeeLanChannelRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class SetAttendeeLanChannelRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this SetAttendeeLanChannelRequest.
+        r"""Gets the x_conference_authorization of this SetAttendeeLanChannelRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class SetAttendeeLanChannelRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this SetAttendeeLanChannelRequest.
+        r"""Sets the x_conference_authorization of this SetAttendeeLanChannelRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class SetAttendeeLanChannelRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetAttendeeLanChannelRequest.
+        r"""Gets the body of this SetAttendeeLanChannelRequest.
 
         :return: The body of this SetAttendeeLanChannelRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestSetAttendeeLanChannelBody`
@@ -108,7 +108,7 @@ class SetAttendeeLanChannelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetAttendeeLanChannelRequest.
+        r"""Sets the body of this SetAttendeeLanChannelRequest.
 
         :param body: The body of this SetAttendeeLanChannelRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestSetAttendeeLanChannelBody`

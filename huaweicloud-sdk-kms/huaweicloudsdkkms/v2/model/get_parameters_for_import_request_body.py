@@ -29,7 +29,7 @@ class GetParametersForImportRequestBody:
     }
 
     def __init__(self, key_id=None, wrapping_algorithm=None, sequence=None):
-        """GetParametersForImportRequestBody
+        r"""GetParametersForImportRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GetParametersForImportRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this GetParametersForImportRequestBody.
+        r"""Gets the key_id of this GetParametersForImportRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -66,7 +66,7 @@ class GetParametersForImportRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this GetParametersForImportRequestBody.
+        r"""Sets the key_id of this GetParametersForImportRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -77,7 +77,7 @@ class GetParametersForImportRequestBody:
 
     @property
     def wrapping_algorithm(self):
-        """Gets the wrapping_algorithm of this GetParametersForImportRequestBody.
+        r"""Gets the wrapping_algorithm of this GetParametersForImportRequestBody.
 
         密钥材料加密算法，枚举如下：  - RSAES_OAEP_SHA_256  - SM2_ENCRYPT，部分局点不支持该导入类型
 
@@ -88,7 +88,7 @@ class GetParametersForImportRequestBody:
 
     @wrapping_algorithm.setter
     def wrapping_algorithm(self, wrapping_algorithm):
-        """Sets the wrapping_algorithm of this GetParametersForImportRequestBody.
+        r"""Sets the wrapping_algorithm of this GetParametersForImportRequestBody.
 
         密钥材料加密算法，枚举如下：  - RSAES_OAEP_SHA_256  - SM2_ENCRYPT，部分局点不支持该导入类型
 
@@ -99,7 +99,7 @@ class GetParametersForImportRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this GetParametersForImportRequestBody.
+        r"""Gets the sequence of this GetParametersForImportRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -110,7 +110,7 @@ class GetParametersForImportRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this GetParametersForImportRequestBody.
+        r"""Sets the sequence of this GetParametersForImportRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

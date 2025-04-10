@@ -28,7 +28,7 @@ class ShowConfigResponse(SdkResponse):
     }
 
     def __init__(self, config=None, regions=None):
-        """ShowConfigResponse
+        r"""ShowConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowConfigResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this ShowConfigResponse.
+        r"""Gets the config of this ShowConfigResponse.
 
         mainRegion,obs_domain,disktype,process_and_it及以后增加的信息
 
@@ -62,7 +62,7 @@ class ShowConfigResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ShowConfigResponse.
+        r"""Sets the config of this ShowConfigResponse.
 
         mainRegion,obs_domain,disktype,process_and_it及以后增加的信息
 
@@ -73,7 +73,7 @@ class ShowConfigResponse(SdkResponse):
 
     @property
     def regions(self):
-        """Gets the regions of this ShowConfigResponse.
+        r"""Gets the regions of this ShowConfigResponse.
 
         region数组
 
@@ -84,7 +84,7 @@ class ShowConfigResponse(SdkResponse):
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ShowConfigResponse.
+        r"""Sets the regions of this ShowConfigResponse.
 
         region数组
 

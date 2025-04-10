@@ -26,7 +26,7 @@ class MigrateFollowerResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """MigrateFollowerResponse
+        r"""MigrateFollowerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class MigrateFollowerResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this MigrateFollowerResponse.
+        r"""Gets the workflow_id of this MigrateFollowerResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class MigrateFollowerResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this MigrateFollowerResponse.
+        r"""Sets the workflow_id of this MigrateFollowerResponse.
 
         任务ID
 

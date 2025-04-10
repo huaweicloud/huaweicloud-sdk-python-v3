@@ -33,7 +33,7 @@ class ActionBaseResp:
     }
 
     def __init__(self, error_code=None, error_msg=None, id=None, name=None, status=None):
-        """ActionBaseResp
+        r"""ActionBaseResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ActionBaseResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ActionBaseResp.
+        r"""Gets the error_code of this ActionBaseResp.
 
         错误码。
 
@@ -77,7 +77,7 @@ class ActionBaseResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ActionBaseResp.
+        r"""Sets the error_code of this ActionBaseResp.
 
         错误码。
 
@@ -88,7 +88,7 @@ class ActionBaseResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ActionBaseResp.
+        r"""Gets the error_msg of this ActionBaseResp.
 
         错误描述。
 
@@ -99,7 +99,7 @@ class ActionBaseResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ActionBaseResp.
+        r"""Sets the error_msg of this ActionBaseResp.
 
         错误描述。
 
@@ -110,7 +110,7 @@ class ActionBaseResp:
 
     @property
     def id(self):
-        """Gets the id of this ActionBaseResp.
+        r"""Gets the id of this ActionBaseResp.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class ActionBaseResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ActionBaseResp.
+        r"""Sets the id of this ActionBaseResp.
 
         任务ID。
 
@@ -132,7 +132,7 @@ class ActionBaseResp:
 
     @property
     def name(self):
-        """Gets the name of this ActionBaseResp.
+        r"""Gets the name of this ActionBaseResp.
 
         任务名称。
 
@@ -143,7 +143,7 @@ class ActionBaseResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ActionBaseResp.
+        r"""Sets the name of this ActionBaseResp.
 
         任务名称。
 
@@ -154,7 +154,7 @@ class ActionBaseResp:
 
     @property
     def status(self):
-        """Gets the status of this ActionBaseResp.
+        r"""Gets the status of this ActionBaseResp.
 
         操作结果。
 
@@ -165,7 +165,7 @@ class ActionBaseResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ActionBaseResp.
+        r"""Sets the status of this ActionBaseResp.
 
         操作结果。
 

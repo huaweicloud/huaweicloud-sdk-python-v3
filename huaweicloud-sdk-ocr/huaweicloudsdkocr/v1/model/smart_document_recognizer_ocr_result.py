@@ -29,7 +29,7 @@ class SmartDocumentRecognizerOcrResult:
     }
 
     def __init__(self, direction=None, words_block_count=None, words_block_list=None):
-        """SmartDocumentRecognizerOcrResult
+        r"""SmartDocumentRecognizerOcrResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmartDocumentRecognizerOcrResult:
 
     @property
     def direction(self):
-        """Gets the direction of this SmartDocumentRecognizerOcrResult.
+        r"""Gets the direction of this SmartDocumentRecognizerOcrResult.
 
         图片朝向 
 
@@ -68,7 +68,7 @@ class SmartDocumentRecognizerOcrResult:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this SmartDocumentRecognizerOcrResult.
+        r"""Sets the direction of this SmartDocumentRecognizerOcrResult.
 
         图片朝向 
 
@@ -79,7 +79,7 @@ class SmartDocumentRecognizerOcrResult:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this SmartDocumentRecognizerOcrResult.
+        r"""Gets the words_block_count of this SmartDocumentRecognizerOcrResult.
 
         识别文字块数目。 
 
@@ -90,7 +90,7 @@ class SmartDocumentRecognizerOcrResult:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this SmartDocumentRecognizerOcrResult.
+        r"""Sets the words_block_count of this SmartDocumentRecognizerOcrResult.
 
         识别文字块数目。 
 
@@ -101,7 +101,7 @@ class SmartDocumentRecognizerOcrResult:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this SmartDocumentRecognizerOcrResult.
+        r"""Gets the words_block_list of this SmartDocumentRecognizerOcrResult.
 
         识别文字块列表，输出顺序从左到右，先上后下。 
 
@@ -112,7 +112,7 @@ class SmartDocumentRecognizerOcrResult:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this SmartDocumentRecognizerOcrResult.
+        r"""Sets the words_block_list of this SmartDocumentRecognizerOcrResult.
 
         识别文字块列表，输出顺序从左到右，先上后下。 
 

@@ -25,7 +25,7 @@ class DeleteAlarmRuleRequest:
     }
 
     def __init__(self, alarm_rule_id=None):
-        """DeleteAlarmRuleRequest
+        r"""DeleteAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAlarmRuleRequest:
 
     @property
     def alarm_rule_id(self):
-        """Gets the alarm_rule_id of this DeleteAlarmRuleRequest.
+        r"""Gets the alarm_rule_id of this DeleteAlarmRuleRequest.
 
         阈值规则ID。
 
@@ -53,7 +53,7 @@ class DeleteAlarmRuleRequest:
 
     @alarm_rule_id.setter
     def alarm_rule_id(self, alarm_rule_id):
-        """Sets the alarm_rule_id of this DeleteAlarmRuleRequest.
+        r"""Sets the alarm_rule_id of this DeleteAlarmRuleRequest.
 
         阈值规则ID。
 

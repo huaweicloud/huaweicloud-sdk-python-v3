@@ -35,7 +35,7 @@ class ListScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, life_cycle_state=None, health_status=None, protect_from_scaling_down=None, start_number=None, limit=None):
-        """ListScalingInstancesRequest
+        r"""ListScalingInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListScalingInstancesRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListScalingInstancesRequest.
+        r"""Gets the scaling_group_id of this ListScalingInstancesRequest.
 
         伸缩组ID。
 
@@ -88,7 +88,7 @@ class ListScalingInstancesRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListScalingInstancesRequest.
+        r"""Sets the scaling_group_id of this ListScalingInstancesRequest.
 
         伸缩组ID。
 
@@ -99,7 +99,7 @@ class ListScalingInstancesRequest:
 
     @property
     def life_cycle_state(self):
-        """Gets the life_cycle_state of this ListScalingInstancesRequest.
+        r"""Gets the life_cycle_state of this ListScalingInstancesRequest.
 
         实例在伸缩组中的生命周期状态：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
 
@@ -110,7 +110,7 @@ class ListScalingInstancesRequest:
 
     @life_cycle_state.setter
     def life_cycle_state(self, life_cycle_state):
-        """Sets the life_cycle_state of this ListScalingInstancesRequest.
+        r"""Sets the life_cycle_state of this ListScalingInstancesRequest.
 
         实例在伸缩组中的生命周期状态：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
 
@@ -121,7 +121,7 @@ class ListScalingInstancesRequest:
 
     @property
     def health_status(self):
-        """Gets the health_status of this ListScalingInstancesRequest.
+        r"""Gets the health_status of this ListScalingInstancesRequest.
 
         实例健康状态：INITIALIZING：初始化。NORMAL：正常。ERROR：异常
 
@@ -132,7 +132,7 @@ class ListScalingInstancesRequest:
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this ListScalingInstancesRequest.
+        r"""Sets the health_status of this ListScalingInstancesRequest.
 
         实例健康状态：INITIALIZING：初始化。NORMAL：正常。ERROR：异常
 
@@ -143,7 +143,7 @@ class ListScalingInstancesRequest:
 
     @property
     def protect_from_scaling_down(self):
-        """Gets the protect_from_scaling_down of this ListScalingInstancesRequest.
+        r"""Gets the protect_from_scaling_down of this ListScalingInstancesRequest.
 
         实例保护状态：true：已设置实例保护。false：未设置实例保护。
 
@@ -154,7 +154,7 @@ class ListScalingInstancesRequest:
 
     @protect_from_scaling_down.setter
     def protect_from_scaling_down(self, protect_from_scaling_down):
-        """Sets the protect_from_scaling_down of this ListScalingInstancesRequest.
+        r"""Sets the protect_from_scaling_down of this ListScalingInstancesRequest.
 
         实例保护状态：true：已设置实例保护。false：未设置实例保护。
 
@@ -165,7 +165,7 @@ class ListScalingInstancesRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingInstancesRequest.
+        r"""Gets the start_number of this ListScalingInstancesRequest.
 
         查询的起始行号，默认为0。
 
@@ -176,7 +176,7 @@ class ListScalingInstancesRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingInstancesRequest.
+        r"""Sets the start_number of this ListScalingInstancesRequest.
 
         查询的起始行号，默认为0。
 
@@ -187,7 +187,7 @@ class ListScalingInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingInstancesRequest.
+        r"""Gets the limit of this ListScalingInstancesRequest.
 
         查询的记录条数，默认为20。
 
@@ -198,7 +198,7 @@ class ListScalingInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingInstancesRequest.
+        r"""Sets the limit of this ListScalingInstancesRequest.
 
         查询的记录条数，默认为20。
 

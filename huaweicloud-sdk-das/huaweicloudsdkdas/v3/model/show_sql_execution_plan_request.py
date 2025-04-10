@@ -33,7 +33,7 @@ class ShowSqlExecutionPlanRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, database=None, sql=None, x_language=None):
-        """ShowSqlExecutionPlanRequest
+        r"""ShowSqlExecutionPlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ShowSqlExecutionPlanRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSqlExecutionPlanRequest.
+        r"""Gets the instance_id of this ShowSqlExecutionPlanRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ShowSqlExecutionPlanRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSqlExecutionPlanRequest.
+        r"""Sets the instance_id of this ShowSqlExecutionPlanRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class ShowSqlExecutionPlanRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this ShowSqlExecutionPlanRequest.
+        r"""Gets the db_user_id of this ShowSqlExecutionPlanRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -100,7 +100,7 @@ class ShowSqlExecutionPlanRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this ShowSqlExecutionPlanRequest.
+        r"""Sets the db_user_id of this ShowSqlExecutionPlanRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -111,7 +111,7 @@ class ShowSqlExecutionPlanRequest:
 
     @property
     def database(self):
-        """Gets the database of this ShowSqlExecutionPlanRequest.
+        r"""Gets the database of this ShowSqlExecutionPlanRequest.
 
         数据库名称
 
@@ -122,7 +122,7 @@ class ShowSqlExecutionPlanRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowSqlExecutionPlanRequest.
+        r"""Sets the database of this ShowSqlExecutionPlanRequest.
 
         数据库名称
 
@@ -133,7 +133,7 @@ class ShowSqlExecutionPlanRequest:
 
     @property
     def sql(self):
-        """Gets the sql of this ShowSqlExecutionPlanRequest.
+        r"""Gets the sql of this ShowSqlExecutionPlanRequest.
 
         SQL语句
 
@@ -144,7 +144,7 @@ class ShowSqlExecutionPlanRequest:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this ShowSqlExecutionPlanRequest.
+        r"""Sets the sql of this ShowSqlExecutionPlanRequest.
 
         SQL语句
 
@@ -155,7 +155,7 @@ class ShowSqlExecutionPlanRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSqlExecutionPlanRequest.
+        r"""Gets the x_language of this ShowSqlExecutionPlanRequest.
 
         语言
 
@@ -166,7 +166,7 @@ class ShowSqlExecutionPlanRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSqlExecutionPlanRequest.
+        r"""Sets the x_language of this ShowSqlExecutionPlanRequest.
 
         语言
 

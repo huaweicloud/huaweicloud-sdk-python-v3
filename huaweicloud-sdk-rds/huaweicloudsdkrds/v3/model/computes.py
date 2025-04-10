@@ -27,7 +27,7 @@ class Computes:
     }
 
     def __init__(self, group_type=None, compute_flavors=None):
-        """Computes
+        r"""Computes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Computes:
 
     @property
     def group_type(self):
-        """Gets the group_type of this Computes.
+        r"""Gets the group_type of this Computes.
 
         群组类型。  - X86：X86架构。 - ARM：ARM架构。
 
@@ -61,7 +61,7 @@ class Computes:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this Computes.
+        r"""Sets the group_type of this Computes.
 
         群组类型。  - X86：X86架构。 - ARM：ARM架构。
 
@@ -72,7 +72,7 @@ class Computes:
 
     @property
     def compute_flavors(self):
-        """Gets the compute_flavors of this Computes.
+        r"""Gets the compute_flavors of this Computes.
 
         计算规格信息。
 
@@ -83,7 +83,7 @@ class Computes:
 
     @compute_flavors.setter
     def compute_flavors(self, compute_flavors):
-        """Sets the compute_flavors of this Computes.
+        r"""Sets the compute_flavors of this Computes.
 
         计算规格信息。
 

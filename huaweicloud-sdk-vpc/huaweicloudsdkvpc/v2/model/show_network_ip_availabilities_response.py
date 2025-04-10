@@ -26,7 +26,7 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
     }
 
     def __init__(self, network_ip_availability=None):
-        """ShowNetworkIpAvailabilitiesResponse
+        r"""ShowNetworkIpAvailabilitiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
 
     @property
     def network_ip_availability(self):
-        """Gets the network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
+        r"""Gets the network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
 
         :return: The network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NetworkIpAvailability`
@@ -53,7 +53,7 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
 
     @network_ip_availability.setter
     def network_ip_availability(self, network_ip_availability):
-        """Sets the network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
+        r"""Sets the network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
 
         :param network_ip_availability: The network_ip_availability of this ShowNetworkIpAvailabilitiesResponse.
         :type network_ip_availability: :class:`huaweicloudsdkvpc.v2.NetworkIpAvailability`

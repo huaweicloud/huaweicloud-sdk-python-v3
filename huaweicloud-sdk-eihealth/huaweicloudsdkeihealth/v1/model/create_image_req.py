@@ -33,7 +33,7 @@ class CreateImageReq:
     }
 
     def __init__(self, description=None, name=None, tag=None, type=None, chip_type=None):
-        """CreateImageReq
+        r"""CreateImageReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateImageReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateImageReq.
+        r"""Gets the description of this CreateImageReq.
 
         描述信息
 
@@ -80,7 +80,7 @@ class CreateImageReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateImageReq.
+        r"""Sets the description of this CreateImageReq.
 
         描述信息
 
@@ -91,7 +91,7 @@ class CreateImageReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateImageReq.
+        r"""Gets the name of this CreateImageReq.
 
         镜像名称
 
@@ -102,7 +102,7 @@ class CreateImageReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateImageReq.
+        r"""Sets the name of this CreateImageReq.
 
         镜像名称
 
@@ -113,7 +113,7 @@ class CreateImageReq:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateImageReq.
+        r"""Gets the tag of this CreateImageReq.
 
         镜像版本
 
@@ -124,7 +124,7 @@ class CreateImageReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateImageReq.
+        r"""Sets the tag of this CreateImageReq.
 
         镜像版本
 
@@ -135,7 +135,7 @@ class CreateImageReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateImageReq.
+        r"""Gets the type of this CreateImageReq.
 
         :return: The type of this CreateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageType`
@@ -144,7 +144,7 @@ class CreateImageReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateImageReq.
+        r"""Sets the type of this CreateImageReq.
 
         :param type: The type of this CreateImageReq.
         :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
@@ -153,7 +153,7 @@ class CreateImageReq:
 
     @property
     def chip_type(self):
-        """Gets the chip_type of this CreateImageReq.
+        r"""Gets the chip_type of this CreateImageReq.
 
         :return: The chip_type of this CreateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
@@ -162,7 +162,7 @@ class CreateImageReq:
 
     @chip_type.setter
     def chip_type(self, chip_type):
-        """Sets the chip_type of this CreateImageReq.
+        r"""Sets the chip_type of this CreateImageReq.
 
         :param chip_type: The chip_type of this CreateImageReq.
         :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`

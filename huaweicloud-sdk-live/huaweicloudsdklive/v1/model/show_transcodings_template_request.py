@@ -31,7 +31,7 @@ class ShowTranscodingsTemplateRequest:
     }
 
     def __init__(self, domain=None, app_name=None, page=None, size=None):
-        """ShowTranscodingsTemplateRequest
+        r"""ShowTranscodingsTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowTranscodingsTemplateRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ShowTranscodingsTemplateRequest.
+        r"""Gets the domain of this ShowTranscodingsTemplateRequest.
 
         推流域名
 
@@ -74,7 +74,7 @@ class ShowTranscodingsTemplateRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowTranscodingsTemplateRequest.
+        r"""Sets the domain of this ShowTranscodingsTemplateRequest.
 
         推流域名
 
@@ -85,7 +85,7 @@ class ShowTranscodingsTemplateRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowTranscodingsTemplateRequest.
+        r"""Gets the app_name of this ShowTranscodingsTemplateRequest.
 
         应用名称
 
@@ -96,7 +96,7 @@ class ShowTranscodingsTemplateRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowTranscodingsTemplateRequest.
+        r"""Sets the app_name of this ShowTranscodingsTemplateRequest.
 
         应用名称
 
@@ -107,7 +107,7 @@ class ShowTranscodingsTemplateRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowTranscodingsTemplateRequest.
+        r"""Gets the page of this ShowTranscodingsTemplateRequest.
 
         分页编号，默认为0。
 
@@ -118,7 +118,7 @@ class ShowTranscodingsTemplateRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowTranscodingsTemplateRequest.
+        r"""Sets the page of this ShowTranscodingsTemplateRequest.
 
         分页编号，默认为0。
 
@@ -129,7 +129,7 @@ class ShowTranscodingsTemplateRequest:
 
     @property
     def size(self):
-        """Gets the size of this ShowTranscodingsTemplateRequest.
+        r"""Gets the size of this ShowTranscodingsTemplateRequest.
 
         每页记录数。  取值范围：1-100。  默认为10。 
 
@@ -140,7 +140,7 @@ class ShowTranscodingsTemplateRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowTranscodingsTemplateRequest.
+        r"""Sets the size of this ShowTranscodingsTemplateRequest.
 
         每页记录数。  取值范围：1-100。  默认为10。 
 

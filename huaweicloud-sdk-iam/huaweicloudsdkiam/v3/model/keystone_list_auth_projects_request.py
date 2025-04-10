@@ -23,7 +23,7 @@ class KeystoneListAuthProjectsRequest:
     }
 
     def __init__(self):
-        """KeystoneListAuthProjectsRequest
+        r"""KeystoneListAuthProjectsRequest
 
         The model defined in huaweicloud sdk
 

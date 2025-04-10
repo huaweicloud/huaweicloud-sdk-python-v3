@@ -25,7 +25,7 @@ class ShowNewTaskStatusRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowNewTaskStatusRequest
+        r"""ShowNewTaskStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNewTaskStatusRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowNewTaskStatusRequest.
+        r"""Gets the task_id of this ShowNewTaskStatusRequest.
 
         任务ID（非负整数）的字符串
 
@@ -53,7 +53,7 @@ class ShowNewTaskStatusRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowNewTaskStatusRequest.
+        r"""Sets the task_id of this ShowNewTaskStatusRequest.
 
         任务ID（非负整数）的字符串
 

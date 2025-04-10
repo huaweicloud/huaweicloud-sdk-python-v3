@@ -33,7 +33,7 @@ class GrantSecretReqBody:
     }
 
     def __init__(self, resource_id=None, type=None, grantee_type=None, grantee_target_id=None, validity_time=None):
-        """GrantSecretReqBody
+        r"""GrantSecretReqBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class GrantSecretReqBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this GrantSecretReqBody.
+        r"""Gets the resource_id of this GrantSecretReqBody.
 
         资源id
 
@@ -78,7 +78,7 @@ class GrantSecretReqBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this GrantSecretReqBody.
+        r"""Sets the resource_id of this GrantSecretReqBody.
 
         资源id
 
@@ -89,7 +89,7 @@ class GrantSecretReqBody:
 
     @property
     def type(self):
-        """Gets the type of this GrantSecretReqBody.
+        r"""Gets the type of this GrantSecretReqBody.
 
         资源类型（SECRET、GROUP）
 
@@ -100,7 +100,7 @@ class GrantSecretReqBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GrantSecretReqBody.
+        r"""Sets the type of this GrantSecretReqBody.
 
         资源类型（SECRET、GROUP）
 
@@ -111,7 +111,7 @@ class GrantSecretReqBody:
 
     @property
     def grantee_type(self):
-        """Gets the grantee_type of this GrantSecretReqBody.
+        r"""Gets the grantee_type of this GrantSecretReqBody.
 
         被授权类型，（0：USER；2：GROUP）个人，群组
 
@@ -122,7 +122,7 @@ class GrantSecretReqBody:
 
     @grantee_type.setter
     def grantee_type(self, grantee_type):
-        """Sets the grantee_type of this GrantSecretReqBody.
+        r"""Sets the grantee_type of this GrantSecretReqBody.
 
         被授权类型，（0：USER；2：GROUP）个人，群组
 
@@ -133,7 +133,7 @@ class GrantSecretReqBody:
 
     @property
     def grantee_target_id(self):
-        """Gets the grantee_target_id of this GrantSecretReqBody.
+        r"""Gets the grantee_target_id of this GrantSecretReqBody.
 
         被授权id
 
@@ -144,7 +144,7 @@ class GrantSecretReqBody:
 
     @grantee_target_id.setter
     def grantee_target_id(self, grantee_target_id):
-        """Sets the grantee_target_id of this GrantSecretReqBody.
+        r"""Sets the grantee_target_id of this GrantSecretReqBody.
 
         被授权id
 
@@ -155,7 +155,7 @@ class GrantSecretReqBody:
 
     @property
     def validity_time(self):
-        """Gets the validity_time of this GrantSecretReqBody.
+        r"""Gets the validity_time of this GrantSecretReqBody.
 
         有效期截止时间
 
@@ -166,7 +166,7 @@ class GrantSecretReqBody:
 
     @validity_time.setter
     def validity_time(self, validity_time):
-        """Sets the validity_time of this GrantSecretReqBody.
+        r"""Sets the validity_time of this GrantSecretReqBody.
 
         有效期截止时间
 

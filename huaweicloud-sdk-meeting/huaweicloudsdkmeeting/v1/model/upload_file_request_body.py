@@ -25,7 +25,7 @@ class UploadFileRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadFileRequestBody
+        r"""UploadFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadFileRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadFileRequestBody.
+        r"""Gets the file of this UploadFileRequestBody.
 
         需要上传的图片文件。
 
@@ -53,7 +53,7 @@ class UploadFileRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadFileRequestBody.
+        r"""Sets the file of this UploadFileRequestBody.
 
         需要上传的图片文件。
 

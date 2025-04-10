@@ -35,7 +35,7 @@ class ListSimPoolsRequest:
     }
 
     def __init__(self, pool_name=None, limit=None, offset=None, billing_cycle=None, all_billing_cycle=None, status=None):
-        """ListSimPoolsRequest
+        r"""ListSimPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSimPoolsRequest:
 
     @property
     def pool_name(self):
-        """Gets the pool_name of this ListSimPoolsRequest.
+        r"""Gets the pool_name of this ListSimPoolsRequest.
 
         流量池名称
 
@@ -89,7 +89,7 @@ class ListSimPoolsRequest:
 
     @pool_name.setter
     def pool_name(self, pool_name):
-        """Sets the pool_name of this ListSimPoolsRequest.
+        r"""Sets the pool_name of this ListSimPoolsRequest.
 
         流量池名称
 
@@ -100,7 +100,7 @@ class ListSimPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimPoolsRequest.
+        r"""Gets the limit of this ListSimPoolsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -111,7 +111,7 @@ class ListSimPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimPoolsRequest.
+        r"""Sets the limit of this ListSimPoolsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -122,7 +122,7 @@ class ListSimPoolsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimPoolsRequest.
+        r"""Gets the offset of this ListSimPoolsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -133,7 +133,7 @@ class ListSimPoolsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimPoolsRequest.
+        r"""Sets the offset of this ListSimPoolsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -144,7 +144,7 @@ class ListSimPoolsRequest:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this ListSimPoolsRequest.
+        r"""Gets the billing_cycle of this ListSimPoolsRequest.
 
         账期，例如：2021-04
 
@@ -155,7 +155,7 @@ class ListSimPoolsRequest:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this ListSimPoolsRequest.
+        r"""Sets the billing_cycle of this ListSimPoolsRequest.
 
         账期，例如：2021-04
 
@@ -166,7 +166,7 @@ class ListSimPoolsRequest:
 
     @property
     def all_billing_cycle(self):
-        """Gets the all_billing_cycle of this ListSimPoolsRequest.
+        r"""Gets the all_billing_cycle of this ListSimPoolsRequest.
 
         是否查询近六个月账期标识
 
@@ -177,7 +177,7 @@ class ListSimPoolsRequest:
 
     @all_billing_cycle.setter
     def all_billing_cycle(self, all_billing_cycle):
-        """Sets the all_billing_cycle of this ListSimPoolsRequest.
+        r"""Sets the all_billing_cycle of this ListSimPoolsRequest.
 
         是否查询近六个月账期标识
 
@@ -188,7 +188,7 @@ class ListSimPoolsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSimPoolsRequest.
+        r"""Gets the status of this ListSimPoolsRequest.
 
         流量池状态
 
@@ -199,7 +199,7 @@ class ListSimPoolsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSimPoolsRequest.
+        r"""Sets the status of this ListSimPoolsRequest.
 
         流量池状态
 

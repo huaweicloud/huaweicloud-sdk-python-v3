@@ -35,7 +35,7 @@ class ListMessageNotificationPolicyRequest:
     }
 
     def __init__(self, workspace_id=None, offset=None, limit=None, message_type=None, name_pattern=None, notify_type=None):
-        """ListMessageNotificationPolicyRequest
+        r"""ListMessageNotificationPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListMessageNotificationPolicyRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListMessageNotificationPolicyRequest.
+        r"""Gets the workspace_id of this ListMessageNotificationPolicyRequest.
 
         Workspace的ID
 
@@ -88,7 +88,7 @@ class ListMessageNotificationPolicyRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListMessageNotificationPolicyRequest.
+        r"""Sets the workspace_id of this ListMessageNotificationPolicyRequest.
 
         Workspace的ID
 
@@ -99,7 +99,7 @@ class ListMessageNotificationPolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMessageNotificationPolicyRequest.
+        r"""Gets the offset of this ListMessageNotificationPolicyRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -110,7 +110,7 @@ class ListMessageNotificationPolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMessageNotificationPolicyRequest.
+        r"""Sets the offset of this ListMessageNotificationPolicyRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -121,7 +121,7 @@ class ListMessageNotificationPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMessageNotificationPolicyRequest.
+        r"""Gets the limit of this ListMessageNotificationPolicyRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -132,7 +132,7 @@ class ListMessageNotificationPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMessageNotificationPolicyRequest.
+        r"""Sets the limit of this ListMessageNotificationPolicyRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -143,7 +143,7 @@ class ListMessageNotificationPolicyRequest:
 
     @property
     def message_type(self):
-        """Gets the message_type of this ListMessageNotificationPolicyRequest.
+        r"""Gets the message_type of this ListMessageNotificationPolicyRequest.
 
         消息类型。job:任务执行结果消息。
 
@@ -154,7 +154,7 @@ class ListMessageNotificationPolicyRequest:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this ListMessageNotificationPolicyRequest.
+        r"""Sets the message_type of this ListMessageNotificationPolicyRequest.
 
         消息类型。job:任务执行结果消息。
 
@@ -165,7 +165,7 @@ class ListMessageNotificationPolicyRequest:
 
     @property
     def name_pattern(self):
-        """Gets the name_pattern of this ListMessageNotificationPolicyRequest.
+        r"""Gets the name_pattern of this ListMessageNotificationPolicyRequest.
 
         名称样式。支持模糊匹配，区分大小写
 
@@ -176,7 +176,7 @@ class ListMessageNotificationPolicyRequest:
 
     @name_pattern.setter
     def name_pattern(self, name_pattern):
-        """Sets the name_pattern of this ListMessageNotificationPolicyRequest.
+        r"""Sets the name_pattern of this ListMessageNotificationPolicyRequest.
 
         名称样式。支持模糊匹配，区分大小写
 
@@ -187,7 +187,7 @@ class ListMessageNotificationPolicyRequest:
 
     @property
     def notify_type(self):
-        """Gets the notify_type of this ListMessageNotificationPolicyRequest.
+        r"""Gets the notify_type of this ListMessageNotificationPolicyRequest.
 
         消息类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -198,7 +198,7 @@ class ListMessageNotificationPolicyRequest:
 
     @notify_type.setter
     def notify_type(self, notify_type):
-        """Sets the notify_type of this ListMessageNotificationPolicyRequest.
+        r"""Sets the notify_type of this ListMessageNotificationPolicyRequest.
 
         消息类型。SUCCESS:成功通知；FAILED：失败通知
 

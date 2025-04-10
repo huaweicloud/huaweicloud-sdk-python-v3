@@ -25,7 +25,7 @@ class SecurityGroupOption:
     }
 
     def __init__(self, id=None):
-        """SecurityGroupOption
+        r"""SecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SecurityGroupOption:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupOption.
+        r"""Gets the id of this SecurityGroupOption.
 
         边缘实例的安全组，会对边缘实例中配置的网卡生效。需要指定已有安全组的ID。不填写时选择默认安全组
 
@@ -54,7 +54,7 @@ class SecurityGroupOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupOption.
+        r"""Sets the id of this SecurityGroupOption.
 
         边缘实例的安全组，会对边缘实例中配置的网卡生效。需要指定已有安全组的ID。不填写时选择默认安全组
 

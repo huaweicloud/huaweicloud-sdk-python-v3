@@ -27,7 +27,7 @@ class UpdateAgentRequest:
     }
 
     def __init__(self, agent_id=None, body=None):
-        """UpdateAgentRequest
+        r"""UpdateAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAgentRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this UpdateAgentRequest.
+        r"""Gets the agent_id of this UpdateAgentRequest.
 
         :return: The agent_id of this UpdateAgentRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class UpdateAgentRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this UpdateAgentRequest.
+        r"""Sets the agent_id of this UpdateAgentRequest.
 
         :param agent_id: The agent_id of this UpdateAgentRequest.
         :type agent_id: str
@@ -67,7 +67,7 @@ class UpdateAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgentRequest.
+        r"""Gets the body of this UpdateAgentRequest.
 
         :return: The body of this UpdateAgentRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.AgentUpdateReq`
@@ -76,7 +76,7 @@ class UpdateAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgentRequest.
+        r"""Sets the body of this UpdateAgentRequest.
 
         :param body: The body of this UpdateAgentRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.AgentUpdateReq`

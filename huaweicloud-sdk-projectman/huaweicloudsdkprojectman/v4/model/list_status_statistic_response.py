@@ -26,7 +26,7 @@ class ListStatusStatisticResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListStatusStatisticResponse
+        r"""ListStatusStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStatusStatisticResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListStatusStatisticResponse.
+        r"""Gets the body of this ListStatusStatisticResponse.
 
         :return: The body of this ListStatusStatisticResponse.
         :rtype: list[:class:`huaweicloudsdkprojectman.v4.UserStatusStatistic`]
@@ -53,7 +53,7 @@ class ListStatusStatisticResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListStatusStatisticResponse.
+        r"""Sets the body of this ListStatusStatisticResponse.
 
         :param body: The body of this ListStatusStatisticResponse.
         :type body: list[:class:`huaweicloudsdkprojectman.v4.UserStatusStatistic`]

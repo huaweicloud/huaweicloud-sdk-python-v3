@@ -33,7 +33,7 @@ class CreateAppInstanceRequestDTO:
     }
 
     def __init__(self, id=None, namespace=None, app_id=None, app_version=None, values=None):
-        """CreateAppInstanceRequestDTO
+        r"""CreateAppInstanceRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateAppInstanceRequestDTO:
 
     @property
     def id(self):
-        """Gets the id of this CreateAppInstanceRequestDTO.
+        r"""Gets the id of this CreateAppInstanceRequestDTO.
 
         应用实例ID
 
@@ -79,7 +79,7 @@ class CreateAppInstanceRequestDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAppInstanceRequestDTO.
+        r"""Sets the id of this CreateAppInstanceRequestDTO.
 
         应用实例ID
 
@@ -90,7 +90,7 @@ class CreateAppInstanceRequestDTO:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateAppInstanceRequestDTO.
+        r"""Gets the namespace of this CreateAppInstanceRequestDTO.
 
         边缘集群命名空间
 
@@ -101,7 +101,7 @@ class CreateAppInstanceRequestDTO:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateAppInstanceRequestDTO.
+        r"""Sets the namespace of this CreateAppInstanceRequestDTO.
 
         边缘集群命名空间
 
@@ -112,7 +112,7 @@ class CreateAppInstanceRequestDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppInstanceRequestDTO.
+        r"""Gets the app_id of this CreateAppInstanceRequestDTO.
 
         应用ID
 
@@ -123,7 +123,7 @@ class CreateAppInstanceRequestDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppInstanceRequestDTO.
+        r"""Sets the app_id of this CreateAppInstanceRequestDTO.
 
         应用ID
 
@@ -134,7 +134,7 @@ class CreateAppInstanceRequestDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this CreateAppInstanceRequestDTO.
+        r"""Gets the app_version of this CreateAppInstanceRequestDTO.
 
         应用版本
 
@@ -145,7 +145,7 @@ class CreateAppInstanceRequestDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this CreateAppInstanceRequestDTO.
+        r"""Sets the app_version of this CreateAppInstanceRequestDTO.
 
         应用版本
 
@@ -156,7 +156,7 @@ class CreateAppInstanceRequestDTO:
 
     @property
     def values(self):
-        """Gets the values of this CreateAppInstanceRequestDTO.
+        r"""Gets the values of this CreateAppInstanceRequestDTO.
 
         应用实例chart配置
 
@@ -167,7 +167,7 @@ class CreateAppInstanceRequestDTO:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateAppInstanceRequestDTO.
+        r"""Sets the values of this CreateAppInstanceRequestDTO.
 
         应用实例chart配置
 

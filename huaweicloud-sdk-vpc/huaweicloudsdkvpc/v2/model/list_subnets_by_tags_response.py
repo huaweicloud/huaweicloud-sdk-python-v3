@@ -28,7 +28,7 @@ class ListSubnetsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListSubnetsByTagsResponse
+        r"""ListSubnetsByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSubnetsByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListSubnetsByTagsResponse.
+        r"""Gets the resources of this ListSubnetsByTagsResponse.
 
         资源列表
 
@@ -62,7 +62,7 @@ class ListSubnetsByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListSubnetsByTagsResponse.
+        r"""Sets the resources of this ListSubnetsByTagsResponse.
 
         资源列表
 
@@ -73,7 +73,7 @@ class ListSubnetsByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSubnetsByTagsResponse.
+        r"""Gets the total_count of this ListSubnetsByTagsResponse.
 
         资源数量
 
@@ -84,7 +84,7 @@ class ListSubnetsByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSubnetsByTagsResponse.
+        r"""Sets the total_count of this ListSubnetsByTagsResponse.
 
         资源数量
 

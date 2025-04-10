@@ -28,7 +28,7 @@ class RunTextModerationResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, result=None):
-        """RunTextModerationResponse
+        r"""RunTextModerationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunTextModerationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this RunTextModerationResponse.
+        r"""Gets the request_id of this RunTextModerationResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存
 
@@ -62,7 +62,7 @@ class RunTextModerationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this RunTextModerationResponse.
+        r"""Sets the request_id of this RunTextModerationResponse.
 
         本次请求的唯⼀标识，⽤于问题排查，建议保存
 
@@ -73,7 +73,7 @@ class RunTextModerationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunTextModerationResponse.
+        r"""Gets the result of this RunTextModerationResponse.
 
         :return: The result of this RunTextModerationResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.TextDetectionResult`
@@ -82,7 +82,7 @@ class RunTextModerationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunTextModerationResponse.
+        r"""Sets the result of this RunTextModerationResponse.
 
         :param result: The result of this RunTextModerationResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.TextDetectionResult`

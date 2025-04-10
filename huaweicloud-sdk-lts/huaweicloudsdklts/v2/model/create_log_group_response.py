@@ -26,7 +26,7 @@ class CreateLogGroupResponse(SdkResponse):
     }
 
     def __init__(self, log_group_id=None):
-        """CreateLogGroupResponse
+        r"""CreateLogGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateLogGroupResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateLogGroupResponse.
+        r"""Gets the log_group_id of this CreateLogGroupResponse.
 
         创建的日志组的Id。
 
@@ -55,7 +55,7 @@ class CreateLogGroupResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateLogGroupResponse.
+        r"""Sets the log_group_id of this CreateLogGroupResponse.
 
         创建的日志组的Id。
 

@@ -26,7 +26,7 @@ class CreateScalingGroupResponse(SdkResponse):
     }
 
     def __init__(self, scaling_group_id=None):
-        """CreateScalingGroupResponse
+        r"""CreateScalingGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateScalingGroupResponse(SdkResponse):
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this CreateScalingGroupResponse.
+        r"""Gets the scaling_group_id of this CreateScalingGroupResponse.
 
         伸缩组ID
 
@@ -55,7 +55,7 @@ class CreateScalingGroupResponse(SdkResponse):
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this CreateScalingGroupResponse.
+        r"""Sets the scaling_group_id of this CreateScalingGroupResponse.
 
         伸缩组ID
 

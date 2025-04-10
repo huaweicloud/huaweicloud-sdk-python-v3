@@ -25,7 +25,7 @@ class GlanceAddImageMemberRequestBody:
     }
 
     def __init__(self, member=None):
-        """GlanceAddImageMemberRequestBody
+        r"""GlanceAddImageMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GlanceAddImageMemberRequestBody:
 
     @property
     def member(self):
-        """Gets the member of this GlanceAddImageMemberRequestBody.
+        r"""Gets the member of this GlanceAddImageMemberRequestBody.
 
         镜像成员。取值为目标用户的项目ID。
 
@@ -53,7 +53,7 @@ class GlanceAddImageMemberRequestBody:
 
     @member.setter
     def member(self, member):
-        """Sets the member of this GlanceAddImageMemberRequestBody.
+        r"""Sets the member of this GlanceAddImageMemberRequestBody.
 
         镜像成员。取值为目标用户的项目ID。
 

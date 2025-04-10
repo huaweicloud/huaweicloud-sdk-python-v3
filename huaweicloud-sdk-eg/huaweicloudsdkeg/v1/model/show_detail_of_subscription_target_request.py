@@ -29,7 +29,7 @@ class ShowDetailOfSubscriptionTargetRequest:
     }
 
     def __init__(self, subscription_id=None, target_id=None, enterprise_project_id=None):
-        """ShowDetailOfSubscriptionTargetRequest
+        r"""ShowDetailOfSubscriptionTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this ShowDetailOfSubscriptionTargetRequest.
+        r"""Gets the subscription_id of this ShowDetailOfSubscriptionTargetRequest.
 
         事件订阅ID
 
@@ -66,7 +66,7 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this ShowDetailOfSubscriptionTargetRequest.
+        r"""Sets the subscription_id of this ShowDetailOfSubscriptionTargetRequest.
 
         事件订阅ID
 
@@ -77,7 +77,7 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ShowDetailOfSubscriptionTargetRequest.
+        r"""Gets the target_id of this ShowDetailOfSubscriptionTargetRequest.
 
         事件订阅目标ID
 
@@ -88,7 +88,7 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ShowDetailOfSubscriptionTargetRequest.
+        r"""Sets the target_id of this ShowDetailOfSubscriptionTargetRequest.
 
         事件订阅目标ID
 
@@ -99,7 +99,7 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
+        r"""Gets the enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -110,7 +110,7 @@ class ShowDetailOfSubscriptionTargetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
+        r"""Sets the enterprise_project_id of this ShowDetailOfSubscriptionTargetRequest.
 
         创建订阅时所使用的企业项目id
 

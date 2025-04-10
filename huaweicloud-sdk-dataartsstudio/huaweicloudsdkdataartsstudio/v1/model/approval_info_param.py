@@ -27,7 +27,7 @@ class ApprovalInfoParam:
     }
 
     def __init__(self, ids=None, msg=None):
-        """ApprovalInfoParam
+        r"""ApprovalInfoParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ApprovalInfoParam:
 
     @property
     def ids(self):
-        """Gets the ids of this ApprovalInfoParam.
+        r"""Gets the ids of this ApprovalInfoParam.
 
         审批单ID列表，ID字符串。
 
@@ -59,7 +59,7 @@ class ApprovalInfoParam:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ApprovalInfoParam.
+        r"""Sets the ids of this ApprovalInfoParam.
 
         审批单ID列表，ID字符串。
 
@@ -70,7 +70,7 @@ class ApprovalInfoParam:
 
     @property
     def msg(self):
-        """Gets the msg of this ApprovalInfoParam.
+        r"""Gets the msg of this ApprovalInfoParam.
 
         审批单信息，审批人填写的审批意见。
 
@@ -81,7 +81,7 @@ class ApprovalInfoParam:
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ApprovalInfoParam.
+        r"""Sets the msg of this ApprovalInfoParam.
 
         审批单信息，审批人填写的审批意见。
 

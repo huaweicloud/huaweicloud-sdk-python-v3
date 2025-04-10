@@ -31,7 +31,7 @@ class ListAntitamperRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, page=None, pagesize=None):
-        """ListAntitamperRuleRequest
+        r"""ListAntitamperRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAntitamperRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAntitamperRuleRequest.
+        r"""Gets the enterprise_project_id of this ListAntitamperRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -74,7 +74,7 @@ class ListAntitamperRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAntitamperRuleRequest.
+        r"""Sets the enterprise_project_id of this ListAntitamperRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -85,7 +85,7 @@ class ListAntitamperRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListAntitamperRuleRequest.
+        r"""Gets the policy_id of this ListAntitamperRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -96,7 +96,7 @@ class ListAntitamperRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListAntitamperRuleRequest.
+        r"""Sets the policy_id of this ListAntitamperRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -107,7 +107,7 @@ class ListAntitamperRuleRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListAntitamperRuleRequest.
+        r"""Gets the page of this ListAntitamperRuleRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -118,7 +118,7 @@ class ListAntitamperRuleRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListAntitamperRuleRequest.
+        r"""Sets the page of this ListAntitamperRuleRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -129,7 +129,7 @@ class ListAntitamperRuleRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListAntitamperRuleRequest.
+        r"""Gets the pagesize of this ListAntitamperRuleRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -140,7 +140,7 @@ class ListAntitamperRuleRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListAntitamperRuleRequest.
+        r"""Sets the pagesize of this ListAntitamperRuleRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 

@@ -23,7 +23,7 @@ class ShowPartnerConsumptionQuotaRequest:
     }
 
     def __init__(self):
-        """ShowPartnerConsumptionQuotaRequest
+        r"""ShowPartnerConsumptionQuotaRequest
 
         The model defined in huaweicloud sdk
 

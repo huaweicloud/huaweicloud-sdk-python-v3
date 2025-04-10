@@ -25,7 +25,7 @@ class DeleteQualityEnhanceTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteQualityEnhanceTemplateRequest
+        r"""DeleteQualityEnhanceTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteQualityEnhanceTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteQualityEnhanceTemplateRequest.
+        r"""Gets the template_id of this DeleteQualityEnhanceTemplateRequest.
 
         模板ID 
 
@@ -53,7 +53,7 @@ class DeleteQualityEnhanceTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteQualityEnhanceTemplateRequest.
+        r"""Sets the template_id of this DeleteQualityEnhanceTemplateRequest.
 
         模板ID 
 

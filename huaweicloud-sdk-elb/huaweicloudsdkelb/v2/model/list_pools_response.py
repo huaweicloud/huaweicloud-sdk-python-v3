@@ -26,7 +26,7 @@ class ListPoolsResponse(SdkResponse):
     }
 
     def __init__(self, pools=None):
-        """ListPoolsResponse
+        r"""ListPoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPoolsResponse(SdkResponse):
 
     @property
     def pools(self):
-        """Gets the pools of this ListPoolsResponse.
+        r"""Gets the pools of this ListPoolsResponse.
 
         后端云服务器对象组列表
 
@@ -55,7 +55,7 @@ class ListPoolsResponse(SdkResponse):
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this ListPoolsResponse.
+        r"""Sets the pools of this ListPoolsResponse.
 
         后端云服务器对象组列表
 

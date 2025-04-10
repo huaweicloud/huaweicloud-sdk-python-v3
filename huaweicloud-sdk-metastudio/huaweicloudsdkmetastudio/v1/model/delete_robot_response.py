@@ -26,7 +26,7 @@ class DeleteRobotResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteRobotResponse
+        r"""DeleteRobotResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteRobotResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteRobotResponse.
+        r"""Gets the x_request_id of this DeleteRobotResponse.
 
         :return: The x_request_id of this DeleteRobotResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteRobotResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteRobotResponse.
+        r"""Sets the x_request_id of this DeleteRobotResponse.
 
         :param x_request_id: The x_request_id of this DeleteRobotResponse.
         :type x_request_id: str

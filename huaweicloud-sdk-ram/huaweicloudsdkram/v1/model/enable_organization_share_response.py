@@ -24,7 +24,7 @@ class EnableOrganizationShareResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableOrganizationShareResponse
+        r"""EnableOrganizationShareResponse
 
         The model defined in huaweicloud sdk
 

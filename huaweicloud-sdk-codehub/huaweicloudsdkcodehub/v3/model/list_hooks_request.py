@@ -29,7 +29,7 @@ class ListHooksRequest:
     }
 
     def __init__(self, group_name=None, hook_id=None, repository_name=None):
-        """ListHooksRequest
+        r"""ListHooksRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListHooksRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListHooksRequest.
+        r"""Gets the group_name of this ListHooksRequest.
 
         组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -66,7 +66,7 @@ class ListHooksRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListHooksRequest.
+        r"""Sets the group_name of this ListHooksRequest.
 
         组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -77,7 +77,7 @@ class ListHooksRequest:
 
     @property
     def hook_id(self):
-        """Gets the hook_id of this ListHooksRequest.
+        r"""Gets the hook_id of this ListHooksRequest.
 
         hook id
 
@@ -88,7 +88,7 @@ class ListHooksRequest:
 
     @hook_id.setter
     def hook_id(self, hook_id):
-        """Sets the hook_id of this ListHooksRequest.
+        r"""Sets the hook_id of this ListHooksRequest.
 
         hook id
 
@@ -99,7 +99,7 @@ class ListHooksRequest:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this ListHooksRequest.
+        r"""Gets the repository_name of this ListHooksRequest.
 
         仓库名
 
@@ -110,7 +110,7 @@ class ListHooksRequest:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this ListHooksRequest.
+        r"""Sets the repository_name of this ListHooksRequest.
 
         仓库名
 

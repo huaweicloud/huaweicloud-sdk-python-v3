@@ -27,7 +27,7 @@ class ScheduleGroupInfo:
     }
 
     def __init__(self, role_id=None, scene_id=None):
-        """ScheduleGroupInfo
+        r"""ScheduleGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScheduleGroupInfo:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ScheduleGroupInfo.
+        r"""Gets the role_id of this ScheduleGroupInfo.
 
         角色id
 
@@ -59,7 +59,7 @@ class ScheduleGroupInfo:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ScheduleGroupInfo.
+        r"""Sets the role_id of this ScheduleGroupInfo.
 
         角色id
 
@@ -70,7 +70,7 @@ class ScheduleGroupInfo:
 
     @property
     def scene_id(self):
-        """Gets the scene_id of this ScheduleGroupInfo.
+        r"""Gets the scene_id of this ScheduleGroupInfo.
 
         场景id
 
@@ -81,7 +81,7 @@ class ScheduleGroupInfo:
 
     @scene_id.setter
     def scene_id(self, scene_id):
-        """Sets the scene_id of this ScheduleGroupInfo.
+        r"""Sets the scene_id of this ScheduleGroupInfo.
 
         场景id
 

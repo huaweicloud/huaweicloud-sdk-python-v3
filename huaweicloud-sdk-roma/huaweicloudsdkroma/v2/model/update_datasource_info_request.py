@@ -29,7 +29,7 @@ class UpdateDatasourceInfoRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, body=None):
-        """UpdateDatasourceInfoRequest
+        r"""UpdateDatasourceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDatasourceInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDatasourceInfoRequest.
+        r"""Gets the instance_id of this UpdateDatasourceInfoRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateDatasourceInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDatasourceInfoRequest.
+        r"""Sets the instance_id of this UpdateDatasourceInfoRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateDatasourceInfoRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this UpdateDatasourceInfoRequest.
+        r"""Gets the datasource_id of this UpdateDatasourceInfoRequest.
 
         数据源ID
 
@@ -88,7 +88,7 @@ class UpdateDatasourceInfoRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this UpdateDatasourceInfoRequest.
+        r"""Sets the datasource_id of this UpdateDatasourceInfoRequest.
 
         数据源ID
 
@@ -99,7 +99,7 @@ class UpdateDatasourceInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatasourceInfoRequest.
+        r"""Gets the body of this UpdateDatasourceInfoRequest.
 
         :return: The body of this UpdateDatasourceInfoRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.DatasourceInfo`
@@ -108,7 +108,7 @@ class UpdateDatasourceInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatasourceInfoRequest.
+        r"""Sets the body of this UpdateDatasourceInfoRequest.
 
         :param body: The body of this UpdateDatasourceInfoRequest.
         :type body: :class:`huaweicloudsdkroma.v2.DatasourceInfo`

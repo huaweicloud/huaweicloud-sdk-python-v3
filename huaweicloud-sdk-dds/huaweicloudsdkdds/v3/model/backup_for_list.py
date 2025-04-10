@@ -45,7 +45,7 @@ class BackupForList:
     }
 
     def __init__(self, id=None, name=None, instance_id=None, instance_name=None, datastore=None, type=None, begin_time=None, end_time=None, status=None, size=None, description=None):
-        """BackupForList
+        r"""BackupForList
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class BackupForList:
 
     @property
     def id(self):
-        """Gets the id of this BackupForList.
+        r"""Gets the id of this BackupForList.
 
         备份ID。
 
@@ -113,7 +113,7 @@ class BackupForList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupForList.
+        r"""Sets the id of this BackupForList.
 
         备份ID。
 
@@ -124,7 +124,7 @@ class BackupForList:
 
     @property
     def name(self):
-        """Gets the name of this BackupForList.
+        r"""Gets the name of this BackupForList.
 
         备份名称。
 
@@ -135,7 +135,7 @@ class BackupForList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupForList.
+        r"""Sets the name of this BackupForList.
 
         备份名称。
 
@@ -146,7 +146,7 @@ class BackupForList:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BackupForList.
+        r"""Gets the instance_id of this BackupForList.
 
         备份所属的实例ID。
 
@@ -157,7 +157,7 @@ class BackupForList:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BackupForList.
+        r"""Sets the instance_id of this BackupForList.
 
         备份所属的实例ID。
 
@@ -168,7 +168,7 @@ class BackupForList:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this BackupForList.
+        r"""Gets the instance_name of this BackupForList.
 
         备份所属的实例名称。
 
@@ -179,7 +179,7 @@ class BackupForList:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this BackupForList.
+        r"""Sets the instance_name of this BackupForList.
 
         备份所属的实例名称。
 
@@ -190,7 +190,7 @@ class BackupForList:
 
     @property
     def datastore(self):
-        """Gets the datastore of this BackupForList.
+        r"""Gets the datastore of this BackupForList.
 
         :return: The datastore of this BackupForList.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupDatabase`
@@ -199,7 +199,7 @@ class BackupForList:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this BackupForList.
+        r"""Sets the datastore of this BackupForList.
 
         :param datastore: The datastore of this BackupForList.
         :type datastore: :class:`huaweicloudsdkdds.v3.BackupDatabase`
@@ -208,7 +208,7 @@ class BackupForList:
 
     @property
     def type(self):
-        """Gets the type of this BackupForList.
+        r"""Gets the type of this BackupForList.
 
         备份类型。 - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。 - 取值为“Incremental”，表示自动增量备份。
 
@@ -219,7 +219,7 @@ class BackupForList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupForList.
+        r"""Sets the type of this BackupForList.
 
         备份类型。 - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。 - 取值为“Incremental”，表示自动增量备份。
 
@@ -230,7 +230,7 @@ class BackupForList:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this BackupForList.
+        r"""Gets the begin_time of this BackupForList.
 
         备份开始时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -241,7 +241,7 @@ class BackupForList:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this BackupForList.
+        r"""Sets the begin_time of this BackupForList.
 
         备份开始时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -252,7 +252,7 @@ class BackupForList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BackupForList.
+        r"""Gets the end_time of this BackupForList.
 
         备份结束时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -263,7 +263,7 @@ class BackupForList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BackupForList.
+        r"""Sets the end_time of this BackupForList.
 
         备份结束时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。
 
@@ -274,7 +274,7 @@ class BackupForList:
 
     @property
     def status(self):
-        """Gets the status of this BackupForList.
+        r"""Gets the status of this BackupForList.
 
         备份状态。 取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - DISABLED：备份删除中。
 
@@ -285,7 +285,7 @@ class BackupForList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BackupForList.
+        r"""Sets the status of this BackupForList.
 
         备份状态。 取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - DISABLED：备份删除中。
 
@@ -296,7 +296,7 @@ class BackupForList:
 
     @property
     def size(self):
-        """Gets the size of this BackupForList.
+        r"""Gets the size of this BackupForList.
 
         备份大小，单位：KB。
 
@@ -307,7 +307,7 @@ class BackupForList:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BackupForList.
+        r"""Sets the size of this BackupForList.
 
         备份大小，单位：KB。
 
@@ -318,7 +318,7 @@ class BackupForList:
 
     @property
     def description(self):
-        """Gets the description of this BackupForList.
+        r"""Gets the description of this BackupForList.
 
         备份描述。
 
@@ -329,7 +329,7 @@ class BackupForList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupForList.
+        r"""Sets the description of this BackupForList.
 
         备份描述。
 

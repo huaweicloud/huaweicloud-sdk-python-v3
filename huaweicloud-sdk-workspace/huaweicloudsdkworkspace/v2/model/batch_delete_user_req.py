@@ -25,7 +25,7 @@ class BatchDeleteUserReq:
     }
 
     def __init__(self, user_ids=None):
-        """BatchDeleteUserReq
+        r"""BatchDeleteUserReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteUserReq:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this BatchDeleteUserReq.
+        r"""Gets the user_ids of this BatchDeleteUserReq.
 
         桌面用户ID列表。
 
@@ -53,7 +53,7 @@ class BatchDeleteUserReq:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this BatchDeleteUserReq.
+        r"""Sets the user_ids of this BatchDeleteUserReq.
 
         桌面用户ID列表。
 

@@ -37,7 +37,7 @@ class PasswordPolicyOption:
     }
 
     def __init__(self, maximum_consecutive_identical_chars=None, minimum_password_age=None, minimum_password_length=None, number_of_recent_passwords_disallowed=None, password_not_username_or_invert=None, password_validity_period=None, password_char_combination=None):
-        """PasswordPolicyOption
+        r"""PasswordPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PasswordPolicyOption:
 
     @property
     def maximum_consecutive_identical_chars(self):
-        """Gets the maximum_consecutive_identical_chars of this PasswordPolicyOption.
+        r"""Gets the maximum_consecutive_identical_chars of this PasswordPolicyOption.
 
         同一字符连续出现的最大次数，取值范围[0,32]。
 
@@ -96,7 +96,7 @@ class PasswordPolicyOption:
 
     @maximum_consecutive_identical_chars.setter
     def maximum_consecutive_identical_chars(self, maximum_consecutive_identical_chars):
-        """Sets the maximum_consecutive_identical_chars of this PasswordPolicyOption.
+        r"""Sets the maximum_consecutive_identical_chars of this PasswordPolicyOption.
 
         同一字符连续出现的最大次数，取值范围[0,32]。
 
@@ -107,7 +107,7 @@ class PasswordPolicyOption:
 
     @property
     def minimum_password_age(self):
-        """Gets the minimum_password_age of this PasswordPolicyOption.
+        r"""Gets the minimum_password_age of this PasswordPolicyOption.
 
         密码最短使用时间(分钟)，取值范围[0,1440]。
 
@@ -118,7 +118,7 @@ class PasswordPolicyOption:
 
     @minimum_password_age.setter
     def minimum_password_age(self, minimum_password_age):
-        """Sets the minimum_password_age of this PasswordPolicyOption.
+        r"""Sets the minimum_password_age of this PasswordPolicyOption.
 
         密码最短使用时间(分钟)，取值范围[0,1440]。
 
@@ -129,7 +129,7 @@ class PasswordPolicyOption:
 
     @property
     def minimum_password_length(self):
-        """Gets the minimum_password_length of this PasswordPolicyOption.
+        r"""Gets the minimum_password_length of this PasswordPolicyOption.
 
         密码最小字符数，取值范围[6,32]。
 
@@ -140,7 +140,7 @@ class PasswordPolicyOption:
 
     @minimum_password_length.setter
     def minimum_password_length(self, minimum_password_length):
-        """Sets the minimum_password_length of this PasswordPolicyOption.
+        r"""Sets the minimum_password_length of this PasswordPolicyOption.
 
         密码最小字符数，取值范围[6,32]。
 
@@ -151,7 +151,7 @@ class PasswordPolicyOption:
 
     @property
     def number_of_recent_passwords_disallowed(self):
-        """Gets the number_of_recent_passwords_disallowed of this PasswordPolicyOption.
+        r"""Gets the number_of_recent_passwords_disallowed of this PasswordPolicyOption.
 
         密码不能与历史密码重复次数，取值范围[0,10]。
 
@@ -162,7 +162,7 @@ class PasswordPolicyOption:
 
     @number_of_recent_passwords_disallowed.setter
     def number_of_recent_passwords_disallowed(self, number_of_recent_passwords_disallowed):
-        """Sets the number_of_recent_passwords_disallowed of this PasswordPolicyOption.
+        r"""Sets the number_of_recent_passwords_disallowed of this PasswordPolicyOption.
 
         密码不能与历史密码重复次数，取值范围[0,10]。
 
@@ -173,7 +173,7 @@ class PasswordPolicyOption:
 
     @property
     def password_not_username_or_invert(self):
-        """Gets the password_not_username_or_invert of this PasswordPolicyOption.
+        r"""Gets the password_not_username_or_invert of this PasswordPolicyOption.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -184,7 +184,7 @@ class PasswordPolicyOption:
 
     @password_not_username_or_invert.setter
     def password_not_username_or_invert(self, password_not_username_or_invert):
-        """Sets the password_not_username_or_invert of this PasswordPolicyOption.
+        r"""Sets the password_not_username_or_invert of this PasswordPolicyOption.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -195,7 +195,7 @@ class PasswordPolicyOption:
 
     @property
     def password_validity_period(self):
-        """Gets the password_validity_period of this PasswordPolicyOption.
+        r"""Gets the password_validity_period of this PasswordPolicyOption.
 
         密码有效期（天），取值范围[0,180]，设置0表示关闭该策略。
 
@@ -206,7 +206,7 @@ class PasswordPolicyOption:
 
     @password_validity_period.setter
     def password_validity_period(self, password_validity_period):
-        """Sets the password_validity_period of this PasswordPolicyOption.
+        r"""Sets the password_validity_period of this PasswordPolicyOption.
 
         密码有效期（天），取值范围[0,180]，设置0表示关闭该策略。
 
@@ -217,7 +217,7 @@ class PasswordPolicyOption:
 
     @property
     def password_char_combination(self):
-        """Gets the password_char_combination of this PasswordPolicyOption.
+        r"""Gets the password_char_combination of this PasswordPolicyOption.
 
         至少包含字符种类的个数，取值区间[2,4]。
 
@@ -228,7 +228,7 @@ class PasswordPolicyOption:
 
     @password_char_combination.setter
     def password_char_combination(self, password_char_combination):
-        """Sets the password_char_combination of this PasswordPolicyOption.
+        r"""Sets the password_char_combination of this PasswordPolicyOption.
 
         至少包含字符种类的个数，取值区间[2,4]。
 

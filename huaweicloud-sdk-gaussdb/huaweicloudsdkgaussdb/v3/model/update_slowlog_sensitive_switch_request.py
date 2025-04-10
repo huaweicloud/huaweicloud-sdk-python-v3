@@ -29,7 +29,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateSlowlogSensitiveSwitchRequest
+        r"""UpdateSlowlogSensitiveSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateSlowlogSensitiveSwitchRequest.
+        r"""Gets the x_language of this UpdateSlowlogSensitiveSwitchRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateSlowlogSensitiveSwitchRequest.
+        r"""Sets the x_language of this UpdateSlowlogSensitiveSwitchRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSlowlogSensitiveSwitchRequest.
+        r"""Gets the instance_id of this UpdateSlowlogSensitiveSwitchRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSlowlogSensitiveSwitchRequest.
+        r"""Sets the instance_id of this UpdateSlowlogSensitiveSwitchRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSlowlogSensitiveSwitchRequest.
+        r"""Gets the body of this UpdateSlowlogSensitiveSwitchRequest.
 
         :return: The body of this UpdateSlowlogSensitiveSwitchRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSlowlogSensitiveSwitchRequestBody`
@@ -109,7 +109,7 @@ class UpdateSlowlogSensitiveSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSlowlogSensitiveSwitchRequest.
+        r"""Sets the body of this UpdateSlowlogSensitiveSwitchRequest.
 
         :param body: The body of this UpdateSlowlogSensitiveSwitchRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateSlowlogSensitiveSwitchRequestBody`

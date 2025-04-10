@@ -29,7 +29,7 @@ class ParseSqlLimitRulesRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ParseSqlLimitRulesRequest
+        r"""ParseSqlLimitRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ParseSqlLimitRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ParseSqlLimitRulesRequest.
+        r"""Gets the instance_id of this ParseSqlLimitRulesRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ParseSqlLimitRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ParseSqlLimitRulesRequest.
+        r"""Sets the instance_id of this ParseSqlLimitRulesRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ParseSqlLimitRulesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ParseSqlLimitRulesRequest.
+        r"""Gets the x_language of this ParseSqlLimitRulesRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ParseSqlLimitRulesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ParseSqlLimitRulesRequest.
+        r"""Sets the x_language of this ParseSqlLimitRulesRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ParseSqlLimitRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ParseSqlLimitRulesRequest.
+        r"""Gets the body of this ParseSqlLimitRulesRequest.
 
         :return: The body of this ParseSqlLimitRulesRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ParseSqlLimitRulesReq`
@@ -109,7 +109,7 @@ class ParseSqlLimitRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ParseSqlLimitRulesRequest.
+        r"""Sets the body of this ParseSqlLimitRulesRequest.
 
         :param body: The body of this ParseSqlLimitRulesRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ParseSqlLimitRulesReq`

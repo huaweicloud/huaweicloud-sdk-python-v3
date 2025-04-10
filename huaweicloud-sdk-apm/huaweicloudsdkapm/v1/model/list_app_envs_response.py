@@ -26,7 +26,7 @@ class ListAppEnvsResponse(SdkResponse):
     }
 
     def __init__(self, envs=None):
-        """ListAppEnvsResponse
+        r"""ListAppEnvsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAppEnvsResponse(SdkResponse):
 
     @property
     def envs(self):
-        """Gets the envs of this ListAppEnvsResponse.
+        r"""Gets the envs of this ListAppEnvsResponse.
 
         环境信息列表。
 
@@ -55,7 +55,7 @@ class ListAppEnvsResponse(SdkResponse):
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ListAppEnvsResponse.
+        r"""Sets the envs of this ListAppEnvsResponse.
 
         环境信息列表。
 

@@ -33,7 +33,7 @@ class EncoderSettingsExpandAudioDescriptions:
     }
 
     def __init__(self, name=None, audio_selector_name=None, language_code_control=None, language_code=None, stream_name=None):
-        """EncoderSettingsExpandAudioDescriptions
+        r"""EncoderSettingsExpandAudioDescriptions
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @property
     def name(self):
-        """Gets the name of this EncoderSettingsExpandAudioDescriptions.
+        r"""Gets the name of this EncoderSettingsExpandAudioDescriptions.
 
         音频输出配置的名称。仅支持大小写字母，数字，中划线（-），下划线（_）。  同一个频道不同的音频输出配置名称，不允许重复。
 
@@ -80,7 +80,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EncoderSettingsExpandAudioDescriptions.
+        r"""Sets the name of this EncoderSettingsExpandAudioDescriptions.
 
         音频输出配置的名称。仅支持大小写字母，数字，中划线（-），下划线（_）。  同一个频道不同的音频输出配置名称，不允许重复。
 
@@ -91,7 +91,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @property
     def audio_selector_name(self):
-        """Gets the audio_selector_name of this EncoderSettingsExpandAudioDescriptions.
+        r"""Gets the audio_selector_name of this EncoderSettingsExpandAudioDescriptions.
 
         音频选择器名称
 
@@ -102,7 +102,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @audio_selector_name.setter
     def audio_selector_name(self, audio_selector_name):
-        """Sets the audio_selector_name of this EncoderSettingsExpandAudioDescriptions.
+        r"""Sets the audio_selector_name of this EncoderSettingsExpandAudioDescriptions.
 
         音频选择器名称
 
@@ -113,7 +113,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @property
     def language_code_control(self):
-        """Gets the language_code_control of this EncoderSettingsExpandAudioDescriptions.
+        r"""Gets the language_code_control of this EncoderSettingsExpandAudioDescriptions.
 
         语言代码控制。这里的设置不会修改音频实际的语言，只会修改音频对外展示的语言。  包含如下选项： - FOLLOW_INPUT：如果所选音频选择器对应的输出音频有语言，则与其保持一致，否则会以这里配置的语言代码和流名称进行兜底。推荐当前选项，为默认值。 - USE_CONFIGURED：用户根据实际情况自定义输出音频的语言和流名称。
 
@@ -124,7 +124,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @language_code_control.setter
     def language_code_control(self, language_code_control):
-        """Sets the language_code_control of this EncoderSettingsExpandAudioDescriptions.
+        r"""Sets the language_code_control of this EncoderSettingsExpandAudioDescriptions.
 
         语言代码控制。这里的设置不会修改音频实际的语言，只会修改音频对外展示的语言。  包含如下选项： - FOLLOW_INPUT：如果所选音频选择器对应的输出音频有语言，则与其保持一致，否则会以这里配置的语言代码和流名称进行兜底。推荐当前选项，为默认值。 - USE_CONFIGURED：用户根据实际情况自定义输出音频的语言和流名称。
 
@@ -135,7 +135,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @property
     def language_code(self):
-        """Gets the language_code of this EncoderSettingsExpandAudioDescriptions.
+        r"""Gets the language_code of this EncoderSettingsExpandAudioDescriptions.
 
         语言代码，输入2或3个小写字母。
 
@@ -146,7 +146,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @language_code.setter
     def language_code(self, language_code):
-        """Sets the language_code of this EncoderSettingsExpandAudioDescriptions.
+        r"""Sets the language_code of this EncoderSettingsExpandAudioDescriptions.
 
         语言代码，输入2或3个小写字母。
 
@@ -157,7 +157,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this EncoderSettingsExpandAudioDescriptions.
+        r"""Gets the stream_name of this EncoderSettingsExpandAudioDescriptions.
 
         流名称
 
@@ -168,7 +168,7 @@ class EncoderSettingsExpandAudioDescriptions:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this EncoderSettingsExpandAudioDescriptions.
+        r"""Sets the stream_name of this EncoderSettingsExpandAudioDescriptions.
 
         流名称
 

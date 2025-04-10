@@ -61,7 +61,7 @@ class HostVulnItem:
     }
 
     def __init__(self, type=None, port=None, title=None, sa_id=None, vuln_id=None, severity=None, topic=None, description=None, solution=None, fix_advisory=None, fix_cmd=None, cve_list=None, ref_link_list=None, component_list=None, vul_detect_result=None, cvss_score=None, cvss_version=None, cvss_vector=None, is_ignore=None):
-        """HostVulnItem
+        r"""HostVulnItem
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class HostVulnItem:
 
     @property
     def type(self):
-        """Gets the type of this HostVulnItem.
+        r"""Gets the type of this HostVulnItem.
 
         漏洞类型
 
@@ -180,7 +180,7 @@ class HostVulnItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HostVulnItem.
+        r"""Sets the type of this HostVulnItem.
 
         漏洞类型
 
@@ -191,7 +191,7 @@ class HostVulnItem:
 
     @property
     def port(self):
-        """Gets the port of this HostVulnItem.
+        r"""Gets the port of this HostVulnItem.
 
         扫描端口号
 
@@ -202,7 +202,7 @@ class HostVulnItem:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HostVulnItem.
+        r"""Sets the port of this HostVulnItem.
 
         扫描端口号
 
@@ -213,7 +213,7 @@ class HostVulnItem:
 
     @property
     def title(self):
-        """Gets the title of this HostVulnItem.
+        r"""Gets the title of this HostVulnItem.
 
         漏洞标题
 
@@ -224,7 +224,7 @@ class HostVulnItem:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this HostVulnItem.
+        r"""Sets the title of this HostVulnItem.
 
         漏洞标题
 
@@ -235,7 +235,7 @@ class HostVulnItem:
 
     @property
     def sa_id(self):
-        """Gets the sa_id of this HostVulnItem.
+        r"""Gets the sa_id of this HostVulnItem.
 
         漏洞公告ID
 
@@ -246,7 +246,7 @@ class HostVulnItem:
 
     @sa_id.setter
     def sa_id(self, sa_id):
-        """Sets the sa_id of this HostVulnItem.
+        r"""Sets the sa_id of this HostVulnItem.
 
         漏洞公告ID
 
@@ -257,7 +257,7 @@ class HostVulnItem:
 
     @property
     def vuln_id(self):
-        """Gets the vuln_id of this HostVulnItem.
+        r"""Gets the vuln_id of this HostVulnItem.
 
         漏洞ID
 
@@ -268,7 +268,7 @@ class HostVulnItem:
 
     @vuln_id.setter
     def vuln_id(self, vuln_id):
-        """Sets the vuln_id of this HostVulnItem.
+        r"""Sets the vuln_id of this HostVulnItem.
 
         漏洞ID
 
@@ -279,7 +279,7 @@ class HostVulnItem:
 
     @property
     def severity(self):
-        """Gets the severity of this HostVulnItem.
+        r"""Gets the severity of this HostVulnItem.
 
         漏洞风险等级:   * high - 高风险   * medium - 中风险   * low - 低风险   * hint - 提示 
 
@@ -290,7 +290,7 @@ class HostVulnItem:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this HostVulnItem.
+        r"""Sets the severity of this HostVulnItem.
 
         漏洞风险等级:   * high - 高风险   * medium - 中风险   * low - 低风险   * hint - 提示 
 
@@ -301,7 +301,7 @@ class HostVulnItem:
 
     @property
     def topic(self):
-        """Gets the topic of this HostVulnItem.
+        r"""Gets the topic of this HostVulnItem.
 
         漏洞摘要
 
@@ -312,7 +312,7 @@ class HostVulnItem:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this HostVulnItem.
+        r"""Sets the topic of this HostVulnItem.
 
         漏洞摘要
 
@@ -323,7 +323,7 @@ class HostVulnItem:
 
     @property
     def description(self):
-        """Gets the description of this HostVulnItem.
+        r"""Gets the description of this HostVulnItem.
 
         漏洞描述
 
@@ -334,7 +334,7 @@ class HostVulnItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HostVulnItem.
+        r"""Sets the description of this HostVulnItem.
 
         漏洞描述
 
@@ -345,7 +345,7 @@ class HostVulnItem:
 
     @property
     def solution(self):
-        """Gets the solution of this HostVulnItem.
+        r"""Gets the solution of this HostVulnItem.
 
         漏洞提示建议
 
@@ -356,7 +356,7 @@ class HostVulnItem:
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this HostVulnItem.
+        r"""Sets the solution of this HostVulnItem.
 
         漏洞提示建议
 
@@ -367,7 +367,7 @@ class HostVulnItem:
 
     @property
     def fix_advisory(self):
-        """Gets the fix_advisory of this HostVulnItem.
+        r"""Gets the fix_advisory of this HostVulnItem.
 
         漏洞修复建议
 
@@ -378,7 +378,7 @@ class HostVulnItem:
 
     @fix_advisory.setter
     def fix_advisory(self, fix_advisory):
-        """Sets the fix_advisory of this HostVulnItem.
+        r"""Sets the fix_advisory of this HostVulnItem.
 
         漏洞修复建议
 
@@ -389,7 +389,7 @@ class HostVulnItem:
 
     @property
     def fix_cmd(self):
-        """Gets the fix_cmd of this HostVulnItem.
+        r"""Gets the fix_cmd of this HostVulnItem.
 
         漏洞修复指令
 
@@ -400,7 +400,7 @@ class HostVulnItem:
 
     @fix_cmd.setter
     def fix_cmd(self, fix_cmd):
-        """Sets the fix_cmd of this HostVulnItem.
+        r"""Sets the fix_cmd of this HostVulnItem.
 
         漏洞修复指令
 
@@ -411,7 +411,7 @@ class HostVulnItem:
 
     @property
     def cve_list(self):
-        """Gets the cve_list of this HostVulnItem.
+        r"""Gets the cve_list of this HostVulnItem.
 
         CVE漏洞列表
 
@@ -422,7 +422,7 @@ class HostVulnItem:
 
     @cve_list.setter
     def cve_list(self, cve_list):
-        """Sets the cve_list of this HostVulnItem.
+        r"""Sets the cve_list of this HostVulnItem.
 
         CVE漏洞列表
 
@@ -433,7 +433,7 @@ class HostVulnItem:
 
     @property
     def ref_link_list(self):
-        """Gets the ref_link_list of this HostVulnItem.
+        r"""Gets the ref_link_list of this HostVulnItem.
 
         参考信息链接列表
 
@@ -444,7 +444,7 @@ class HostVulnItem:
 
     @ref_link_list.setter
     def ref_link_list(self, ref_link_list):
-        """Sets the ref_link_list of this HostVulnItem.
+        r"""Sets the ref_link_list of this HostVulnItem.
 
         参考信息链接列表
 
@@ -455,7 +455,7 @@ class HostVulnItem:
 
     @property
     def component_list(self):
-        """Gets the component_list of this HostVulnItem.
+        r"""Gets the component_list of this HostVulnItem.
 
         内容列表
 
@@ -466,7 +466,7 @@ class HostVulnItem:
 
     @component_list.setter
     def component_list(self, component_list):
-        """Sets the component_list of this HostVulnItem.
+        r"""Sets the component_list of this HostVulnItem.
 
         内容列表
 
@@ -477,7 +477,7 @@ class HostVulnItem:
 
     @property
     def vul_detect_result(self):
-        """Gets the vul_detect_result of this HostVulnItem.
+        r"""Gets the vul_detect_result of this HostVulnItem.
 
         检查结果
 
@@ -488,7 +488,7 @@ class HostVulnItem:
 
     @vul_detect_result.setter
     def vul_detect_result(self, vul_detect_result):
-        """Sets the vul_detect_result of this HostVulnItem.
+        r"""Sets the vul_detect_result of this HostVulnItem.
 
         检查结果
 
@@ -499,7 +499,7 @@ class HostVulnItem:
 
     @property
     def cvss_score(self):
-        """Gets the cvss_score of this HostVulnItem.
+        r"""Gets the cvss_score of this HostVulnItem.
 
         CVSS分数信息
 
@@ -510,7 +510,7 @@ class HostVulnItem:
 
     @cvss_score.setter
     def cvss_score(self, cvss_score):
-        """Sets the cvss_score of this HostVulnItem.
+        r"""Sets the cvss_score of this HostVulnItem.
 
         CVSS分数信息
 
@@ -521,7 +521,7 @@ class HostVulnItem:
 
     @property
     def cvss_version(self):
-        """Gets the cvss_version of this HostVulnItem.
+        r"""Gets the cvss_version of this HostVulnItem.
 
         CVSS版本信息
 
@@ -532,7 +532,7 @@ class HostVulnItem:
 
     @cvss_version.setter
     def cvss_version(self, cvss_version):
-        """Sets the cvss_version of this HostVulnItem.
+        r"""Sets the cvss_version of this HostVulnItem.
 
         CVSS版本信息
 
@@ -543,7 +543,7 @@ class HostVulnItem:
 
     @property
     def cvss_vector(self):
-        """Gets the cvss_vector of this HostVulnItem.
+        r"""Gets the cvss_vector of this HostVulnItem.
 
         CVSS向量信息
 
@@ -554,7 +554,7 @@ class HostVulnItem:
 
     @cvss_vector.setter
     def cvss_vector(self, cvss_vector):
-        """Sets the cvss_vector of this HostVulnItem.
+        r"""Sets the cvss_vector of this HostVulnItem.
 
         CVSS向量信息
 
@@ -565,7 +565,7 @@ class HostVulnItem:
 
     @property
     def is_ignore(self):
-        """Gets the is_ignore of this HostVulnItem.
+        r"""Gets the is_ignore of this HostVulnItem.
 
         是否误报
 
@@ -576,7 +576,7 @@ class HostVulnItem:
 
     @is_ignore.setter
     def is_ignore(self, is_ignore):
-        """Sets the is_ignore of this HostVulnItem.
+        r"""Sets the is_ignore of this HostVulnItem.
 
         是否误报
 

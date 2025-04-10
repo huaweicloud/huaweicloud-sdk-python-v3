@@ -35,7 +35,7 @@ class Point:
     }
 
     def __init__(self, time=None, total=None, attack=None, basic=None, cc=None, custom_custom=None):
-        """Point
+        r"""Point
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Point:
 
     @property
     def time(self):
-        """Gets the time of this Point.
+        r"""Gets the time of this Point.
 
         时间戳
 
@@ -89,7 +89,7 @@ class Point:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Point.
+        r"""Sets the time of this Point.
 
         时间戳
 
@@ -100,7 +100,7 @@ class Point:
 
     @property
     def total(self):
-        """Gets the total of this Point.
+        r"""Gets the total of this Point.
 
         请求总量
 
@@ -111,7 +111,7 @@ class Point:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this Point.
+        r"""Sets the total of this Point.
 
         请求总量
 
@@ -122,7 +122,7 @@ class Point:
 
     @property
     def attack(self):
-        """Gets the attack of this Point.
+        r"""Gets the attack of this Point.
 
         攻击总量
 
@@ -133,7 +133,7 @@ class Point:
 
     @attack.setter
     def attack(self, attack):
-        """Sets the attack of this Point.
+        r"""Sets the attack of this Point.
 
         攻击总量
 
@@ -144,7 +144,7 @@ class Point:
 
     @property
     def basic(self):
-        """Gets the basic of this Point.
+        r"""Gets the basic of this Point.
 
         web基础防护
 
@@ -155,7 +155,7 @@ class Point:
 
     @basic.setter
     def basic(self, basic):
-        """Sets the basic of this Point.
+        r"""Sets the basic of this Point.
 
         web基础防护
 
@@ -166,7 +166,7 @@ class Point:
 
     @property
     def cc(self):
-        """Gets the cc of this Point.
+        r"""Gets the cc of this Point.
 
         频率控制
 
@@ -177,7 +177,7 @@ class Point:
 
     @cc.setter
     def cc(self, cc):
-        """Sets the cc of this Point.
+        r"""Sets the cc of this Point.
 
         频率控制
 
@@ -188,7 +188,7 @@ class Point:
 
     @property
     def custom_custom(self):
-        """Gets the custom_custom of this Point.
+        r"""Gets the custom_custom of this Point.
 
         精准防护
 
@@ -199,7 +199,7 @@ class Point:
 
     @custom_custom.setter
     def custom_custom(self, custom_custom):
-        """Sets the custom_custom of this Point.
+        r"""Sets the custom_custom of this Point.
 
         精准防护
 

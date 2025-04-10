@@ -29,7 +29,7 @@ class UpdateArchiveRuleRequest:
     }
 
     def __init__(self, analyzer_id=None, archive_rule_id=None, body=None):
-        """UpdateArchiveRuleRequest
+        r"""UpdateArchiveRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateArchiveRuleRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this UpdateArchiveRuleRequest.
+        r"""Gets the analyzer_id of this UpdateArchiveRuleRequest.
 
         分析器的唯一标识符。
 
@@ -66,7 +66,7 @@ class UpdateArchiveRuleRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this UpdateArchiveRuleRequest.
+        r"""Sets the analyzer_id of this UpdateArchiveRuleRequest.
 
         分析器的唯一标识符。
 
@@ -77,7 +77,7 @@ class UpdateArchiveRuleRequest:
 
     @property
     def archive_rule_id(self):
-        """Gets the archive_rule_id of this UpdateArchiveRuleRequest.
+        r"""Gets the archive_rule_id of this UpdateArchiveRuleRequest.
 
         存档规则的唯一标识符。
 
@@ -88,7 +88,7 @@ class UpdateArchiveRuleRequest:
 
     @archive_rule_id.setter
     def archive_rule_id(self, archive_rule_id):
-        """Sets the archive_rule_id of this UpdateArchiveRuleRequest.
+        r"""Sets the archive_rule_id of this UpdateArchiveRuleRequest.
 
         存档规则的唯一标识符。
 
@@ -99,7 +99,7 @@ class UpdateArchiveRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateArchiveRuleRequest.
+        r"""Gets the body of this UpdateArchiveRuleRequest.
 
         :return: The body of this UpdateArchiveRuleRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateArchiveRuleReqBody`
@@ -108,7 +108,7 @@ class UpdateArchiveRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateArchiveRuleRequest.
+        r"""Sets the body of this UpdateArchiveRuleRequest.
 
         :param body: The body of this UpdateArchiveRuleRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateArchiveRuleReqBody`

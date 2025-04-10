@@ -24,7 +24,7 @@ class SetCohostResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetCohostResponse
+        r"""SetCohostResponse
 
         The model defined in huaweicloud sdk
 

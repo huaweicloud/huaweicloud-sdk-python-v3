@@ -29,7 +29,7 @@ class UpdateDpd:
     }
 
     def __init__(self, interval=None, timeout=None, msg=None):
-        """UpdateDpd
+        r"""UpdateDpd
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateDpd:
 
     @property
     def interval(self):
-        """Gets the interval of this UpdateDpd.
+        r"""Gets the interval of this UpdateDpd.
 
         对等体存活检测空闲时间
 
@@ -68,7 +68,7 @@ class UpdateDpd:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this UpdateDpd.
+        r"""Sets the interval of this UpdateDpd.
 
         对等体存活检测空闲时间
 
@@ -79,7 +79,7 @@ class UpdateDpd:
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateDpd.
+        r"""Gets the timeout of this UpdateDpd.
 
         对等体存活检测报文重传间隔
 
@@ -90,7 +90,7 @@ class UpdateDpd:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateDpd.
+        r"""Sets the timeout of this UpdateDpd.
 
         对等体存活检测报文重传间隔
 
@@ -101,7 +101,7 @@ class UpdateDpd:
 
     @property
     def msg(self):
-        """Gets the msg of this UpdateDpd.
+        r"""Gets the msg of this UpdateDpd.
 
         对等体存活检测报文格式
 
@@ -112,7 +112,7 @@ class UpdateDpd:
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this UpdateDpd.
+        r"""Sets the msg of this UpdateDpd.
 
         对等体存活检测报文格式
 

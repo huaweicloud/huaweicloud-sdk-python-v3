@@ -37,7 +37,7 @@ class InstanceCreation:
     }
 
     def __init__(self, name=None, desc=None, diagram=None, image=None, template_id=None, variables=None, instance_id=None):
-        """InstanceCreation
+        r"""InstanceCreation
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceCreation:
 
     @property
     def name(self):
-        """Gets the name of this InstanceCreation.
+        r"""Gets the name of this InstanceCreation.
 
         实例名称，必填
 
@@ -96,7 +96,7 @@ class InstanceCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceCreation.
+        r"""Sets the name of this InstanceCreation.
 
         实例名称，必填
 
@@ -107,7 +107,7 @@ class InstanceCreation:
 
     @property
     def desc(self):
-        """Gets the desc of this InstanceCreation.
+        r"""Gets the desc of this InstanceCreation.
 
         实例描述，非必填
 
@@ -118,7 +118,7 @@ class InstanceCreation:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this InstanceCreation.
+        r"""Sets the desc of this InstanceCreation.
 
         实例描述，非必填
 
@@ -129,7 +129,7 @@ class InstanceCreation:
 
     @property
     def diagram(self):
-        """Gets the diagram of this InstanceCreation.
+        r"""Gets the diagram of this InstanceCreation.
 
         架构部署图，通过设计器创建时必填
 
@@ -140,7 +140,7 @@ class InstanceCreation:
 
     @diagram.setter
     def diagram(self, diagram):
-        """Sets the diagram of this InstanceCreation.
+        r"""Sets the diagram of this InstanceCreation.
 
         架构部署图，通过设计器创建时必填
 
@@ -151,7 +151,7 @@ class InstanceCreation:
 
     @property
     def image(self):
-        """Gets the image of this InstanceCreation.
+        r"""Gets the image of this InstanceCreation.
 
         设计器架构图base64编码,通过设计器创建或更新实例时可选
 
@@ -162,7 +162,7 @@ class InstanceCreation:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this InstanceCreation.
+        r"""Sets the image of this InstanceCreation.
 
         设计器架构图base64编码,通过设计器创建或更新实例时可选
 
@@ -173,7 +173,7 @@ class InstanceCreation:
 
     @property
     def template_id(self):
-        """Gets the template_id of this InstanceCreation.
+        r"""Gets the template_id of this InstanceCreation.
 
         预置模板id，通过模板创建时必填
 
@@ -184,7 +184,7 @@ class InstanceCreation:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this InstanceCreation.
+        r"""Sets the template_id of this InstanceCreation.
 
         预置模板id，通过模板创建时必填
 
@@ -195,7 +195,7 @@ class InstanceCreation:
 
     @property
     def variables(self):
-        """Gets the variables of this InstanceCreation.
+        r"""Gets the variables of this InstanceCreation.
 
         :return: The variables of this InstanceCreation.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceCreationVariables`
@@ -204,7 +204,7 @@ class InstanceCreation:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this InstanceCreation.
+        r"""Sets the variables of this InstanceCreation.
 
         :param variables: The variables of this InstanceCreation.
         :type variables: :class:`huaweicloudsdkservicestage.v2.InstanceCreationVariables`
@@ -213,7 +213,7 @@ class InstanceCreation:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceCreation.
+        r"""Gets the instance_id of this InstanceCreation.
 
         实例id,更新时必填
 
@@ -224,7 +224,7 @@ class InstanceCreation:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceCreation.
+        r"""Sets the instance_id of this InstanceCreation.
 
         实例id,更新时必填
 

@@ -30,7 +30,7 @@ class ShowStatisticCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowStatisticCommitResponse
+        r"""ShowStatisticCommitResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowStatisticCommitResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowStatisticCommitResponse.
+        r"""Gets the error of this ShowStatisticCommitResponse.
 
         :return: The error of this ShowStatisticCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowStatisticCommitResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowStatisticCommitResponse.
+        r"""Sets the error of this ShowStatisticCommitResponse.
 
         :param error: The error of this ShowStatisticCommitResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowStatisticCommitResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowStatisticCommitResponse.
+        r"""Gets the result of this ShowStatisticCommitResponse.
 
         :return: The result of this ShowStatisticCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`
@@ -85,7 +85,7 @@ class ShowStatisticCommitResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowStatisticCommitResponse.
+        r"""Sets the result of this ShowStatisticCommitResponse.
 
         :param result: The result of this ShowStatisticCommitResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`
@@ -94,7 +94,7 @@ class ShowStatisticCommitResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowStatisticCommitResponse.
+        r"""Gets the status of this ShowStatisticCommitResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowStatisticCommitResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowStatisticCommitResponse.
+        r"""Sets the status of this ShowStatisticCommitResponse.
 
         响应状态
 

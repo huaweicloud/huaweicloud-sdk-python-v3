@@ -35,7 +35,7 @@ class SubTaskAssociatedWithTask:
     }
 
     def __init__(self, id=None, name=None, progress=None, start_date=None, end_date=None, process_trace=None):
-        """SubTaskAssociatedWithTask
+        r"""SubTaskAssociatedWithTask
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SubTaskAssociatedWithTask:
 
     @property
     def id(self):
-        """Gets the id of this SubTaskAssociatedWithTask.
+        r"""Gets the id of this SubTaskAssociatedWithTask.
 
         子任务ID
 
@@ -89,7 +89,7 @@ class SubTaskAssociatedWithTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubTaskAssociatedWithTask.
+        r"""Sets the id of this SubTaskAssociatedWithTask.
 
         子任务ID
 
@@ -100,7 +100,7 @@ class SubTaskAssociatedWithTask:
 
     @property
     def name(self):
-        """Gets the name of this SubTaskAssociatedWithTask.
+        r"""Gets the name of this SubTaskAssociatedWithTask.
 
         子任务名称
 
@@ -111,7 +111,7 @@ class SubTaskAssociatedWithTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubTaskAssociatedWithTask.
+        r"""Sets the name of this SubTaskAssociatedWithTask.
 
         子任务名称
 
@@ -122,7 +122,7 @@ class SubTaskAssociatedWithTask:
 
     @property
     def progress(self):
-        """Gets the progress of this SubTaskAssociatedWithTask.
+        r"""Gets the progress of this SubTaskAssociatedWithTask.
 
         子任务的进度，取值为0-100之间的整数
 
@@ -133,7 +133,7 @@ class SubTaskAssociatedWithTask:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this SubTaskAssociatedWithTask.
+        r"""Sets the progress of this SubTaskAssociatedWithTask.
 
         子任务的进度，取值为0-100之间的整数
 
@@ -144,7 +144,7 @@ class SubTaskAssociatedWithTask:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SubTaskAssociatedWithTask.
+        r"""Gets the start_date of this SubTaskAssociatedWithTask.
 
         子任务开始时间
 
@@ -155,7 +155,7 @@ class SubTaskAssociatedWithTask:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SubTaskAssociatedWithTask.
+        r"""Sets the start_date of this SubTaskAssociatedWithTask.
 
         子任务开始时间
 
@@ -166,7 +166,7 @@ class SubTaskAssociatedWithTask:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SubTaskAssociatedWithTask.
+        r"""Gets the end_date of this SubTaskAssociatedWithTask.
 
         子任务结束时间（如果子任务还没有结束，则为空）
 
@@ -177,7 +177,7 @@ class SubTaskAssociatedWithTask:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SubTaskAssociatedWithTask.
+        r"""Sets the end_date of this SubTaskAssociatedWithTask.
 
         子任务结束时间（如果子任务还没有结束，则为空）
 
@@ -188,7 +188,7 @@ class SubTaskAssociatedWithTask:
 
     @property
     def process_trace(self):
-        """Gets the process_trace of this SubTaskAssociatedWithTask.
+        r"""Gets the process_trace of this SubTaskAssociatedWithTask.
 
         迁移或同步时，具体的迁移详情
 
@@ -199,7 +199,7 @@ class SubTaskAssociatedWithTask:
 
     @process_trace.setter
     def process_trace(self, process_trace):
-        """Sets the process_trace of this SubTaskAssociatedWithTask.
+        r"""Sets the process_trace of this SubTaskAssociatedWithTask.
 
         迁移或同步时，具体的迁移详情
 

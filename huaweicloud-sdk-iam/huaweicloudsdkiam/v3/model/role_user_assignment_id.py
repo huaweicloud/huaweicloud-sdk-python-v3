@@ -25,7 +25,7 @@ class RoleUserAssignmentId:
     }
 
     def __init__(self, id=None):
-        """RoleUserAssignmentId
+        r"""RoleUserAssignmentId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RoleUserAssignmentId:
 
     @property
     def id(self):
-        """Gets the id of this RoleUserAssignmentId.
+        r"""Gets the id of this RoleUserAssignmentId.
 
         IAM用户ID。
 
@@ -54,7 +54,7 @@ class RoleUserAssignmentId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RoleUserAssignmentId.
+        r"""Sets the id of this RoleUserAssignmentId.
 
         IAM用户ID。
 

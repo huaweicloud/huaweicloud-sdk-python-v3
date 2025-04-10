@@ -28,7 +28,7 @@ class ListHostVulsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListHostVulsResponse
+        r"""ListHostVulsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHostVulsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListHostVulsResponse.
+        r"""Gets the total_num of this ListHostVulsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListHostVulsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListHostVulsResponse.
+        r"""Sets the total_num of this ListHostVulsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListHostVulsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListHostVulsResponse.
+        r"""Gets the data_list of this ListHostVulsResponse.
 
         服务器上的漏洞列表
 
@@ -84,7 +84,7 @@ class ListHostVulsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListHostVulsResponse.
+        r"""Sets the data_list of this ListHostVulsResponse.
 
         服务器上的漏洞列表
 

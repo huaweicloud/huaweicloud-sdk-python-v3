@@ -49,7 +49,7 @@ class ConnectGatewayResponse:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, address_family=None, status=None, access_site=None, bgp_asn=None, current_geip_count=None, created_time=None, updated_time=None, gcb_id=None, gateway_site=None):
-        """ConnectGatewayResponse
+        r"""ConnectGatewayResponse
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ConnectGatewayResponse:
 
     @property
     def id(self):
-        """Gets the id of this ConnectGatewayResponse.
+        r"""Gets the id of this ConnectGatewayResponse.
 
         唯一ID
 
@@ -138,7 +138,7 @@ class ConnectGatewayResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectGatewayResponse.
+        r"""Sets the id of this ConnectGatewayResponse.
 
         唯一ID
 
@@ -149,7 +149,7 @@ class ConnectGatewayResponse:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ConnectGatewayResponse.
+        r"""Gets the tenant_id of this ConnectGatewayResponse.
 
         租户项目ID
 
@@ -160,7 +160,7 @@ class ConnectGatewayResponse:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ConnectGatewayResponse.
+        r"""Sets the tenant_id of this ConnectGatewayResponse.
 
         租户项目ID
 
@@ -171,7 +171,7 @@ class ConnectGatewayResponse:
 
     @property
     def name(self):
-        """Gets the name of this ConnectGatewayResponse.
+        r"""Gets the name of this ConnectGatewayResponse.
 
         网关名字
 
@@ -182,7 +182,7 @@ class ConnectGatewayResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectGatewayResponse.
+        r"""Sets the name of this ConnectGatewayResponse.
 
         网关名字
 
@@ -193,7 +193,7 @@ class ConnectGatewayResponse:
 
     @property
     def description(self):
-        """Gets the description of this ConnectGatewayResponse.
+        r"""Gets the description of this ConnectGatewayResponse.
 
         描述信息
 
@@ -204,7 +204,7 @@ class ConnectGatewayResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectGatewayResponse.
+        r"""Sets the description of this ConnectGatewayResponse.
 
         描述信息
 
@@ -215,7 +215,7 @@ class ConnectGatewayResponse:
 
     @property
     def address_family(self):
-        """Gets the address_family of this ConnectGatewayResponse.
+        r"""Gets the address_family of this ConnectGatewayResponse.
 
         地址族信息 - ipv4: 仅支持ipv4模式 - dual: 支持ipv4 和 ipv6 模式
 
@@ -226,7 +226,7 @@ class ConnectGatewayResponse:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this ConnectGatewayResponse.
+        r"""Sets the address_family of this ConnectGatewayResponse.
 
         地址族信息 - ipv4: 仅支持ipv4模式 - dual: 支持ipv4 和 ipv6 模式
 
@@ -237,7 +237,7 @@ class ConnectGatewayResponse:
 
     @property
     def status(self):
-        """Gets the status of this ConnectGatewayResponse.
+        r"""Gets the status of this ConnectGatewayResponse.
 
         网关状态 - DOWN 未使用或关联设备状态为DOWN - ACTIVE 正常 - ERROR 异常
 
@@ -248,7 +248,7 @@ class ConnectGatewayResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectGatewayResponse.
+        r"""Sets the status of this ConnectGatewayResponse.
 
         网关状态 - DOWN 未使用或关联设备状态为DOWN - ACTIVE 正常 - ERROR 异常
 
@@ -259,7 +259,7 @@ class ConnectGatewayResponse:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ConnectGatewayResponse.
+        r"""Gets the access_site of this ConnectGatewayResponse.
 
         网关站点值
 
@@ -270,7 +270,7 @@ class ConnectGatewayResponse:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ConnectGatewayResponse.
+        r"""Sets the access_site of this ConnectGatewayResponse.
 
         网关站点值
 
@@ -281,7 +281,7 @@ class ConnectGatewayResponse:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this ConnectGatewayResponse.
+        r"""Gets the bgp_asn of this ConnectGatewayResponse.
 
         BGP类型AS号
 
@@ -292,7 +292,7 @@ class ConnectGatewayResponse:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this ConnectGatewayResponse.
+        r"""Sets the bgp_asn of this ConnectGatewayResponse.
 
         BGP类型AS号
 
@@ -303,7 +303,7 @@ class ConnectGatewayResponse:
 
     @property
     def current_geip_count(self):
-        """Gets the current_geip_count of this ConnectGatewayResponse.
+        r"""Gets the current_geip_count of this ConnectGatewayResponse.
 
         当前绑定的global eip数量
 
@@ -314,7 +314,7 @@ class ConnectGatewayResponse:
 
     @current_geip_count.setter
     def current_geip_count(self, current_geip_count):
-        """Sets the current_geip_count of this ConnectGatewayResponse.
+        r"""Sets the current_geip_count of this ConnectGatewayResponse.
 
         当前绑定的global eip数量
 
@@ -325,7 +325,7 @@ class ConnectGatewayResponse:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ConnectGatewayResponse.
+        r"""Gets the created_time of this ConnectGatewayResponse.
 
         创建时间
 
@@ -336,7 +336,7 @@ class ConnectGatewayResponse:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ConnectGatewayResponse.
+        r"""Sets the created_time of this ConnectGatewayResponse.
 
         创建时间
 
@@ -347,7 +347,7 @@ class ConnectGatewayResponse:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ConnectGatewayResponse.
+        r"""Gets the updated_time of this ConnectGatewayResponse.
 
         更新时间
 
@@ -358,7 +358,7 @@ class ConnectGatewayResponse:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ConnectGatewayResponse.
+        r"""Sets the updated_time of this ConnectGatewayResponse.
 
         更新时间
 
@@ -369,7 +369,7 @@ class ConnectGatewayResponse:
 
     @property
     def gcb_id(self):
-        """Gets the gcb_id of this ConnectGatewayResponse.
+        r"""Gets the gcb_id of this ConnectGatewayResponse.
 
         带宽包id
 
@@ -380,7 +380,7 @@ class ConnectGatewayResponse:
 
     @gcb_id.setter
     def gcb_id(self, gcb_id):
-        """Sets the gcb_id of this ConnectGatewayResponse.
+        r"""Sets the gcb_id of this ConnectGatewayResponse.
 
         带宽包id
 
@@ -391,7 +391,7 @@ class ConnectGatewayResponse:
 
     @property
     def gateway_site(self):
-        """Gets the gateway_site of this ConnectGatewayResponse.
+        r"""Gets the gateway_site of this ConnectGatewayResponse.
 
         网关位置
 
@@ -402,7 +402,7 @@ class ConnectGatewayResponse:
 
     @gateway_site.setter
     def gateway_site(self, gateway_site):
-        """Sets the gateway_site of this ConnectGatewayResponse.
+        r"""Sets the gateway_site of this ConnectGatewayResponse.
 
         网关位置
 

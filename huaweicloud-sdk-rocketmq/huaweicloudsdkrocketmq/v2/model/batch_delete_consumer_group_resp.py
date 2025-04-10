@@ -25,7 +25,7 @@ class BatchDeleteConsumerGroupResp:
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteConsumerGroupResp
+        r"""BatchDeleteConsumerGroupResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteConsumerGroupResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteConsumerGroupResp.
+        r"""Gets the job_id of this BatchDeleteConsumerGroupResp.
 
         删除消费组的任务ID
 
@@ -54,7 +54,7 @@ class BatchDeleteConsumerGroupResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteConsumerGroupResp.
+        r"""Sets the job_id of this BatchDeleteConsumerGroupResp.
 
         删除消费组的任务ID
 

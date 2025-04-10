@@ -33,7 +33,7 @@ class CongestionInfo:
     }
 
     def __init__(self, level=None, length=None, start_point=None, end_point=None, congestion_lanes_info=None):
-        """CongestionInfo
+        r"""CongestionInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CongestionInfo:
 
     @property
     def level(self):
-        """Gets the level of this CongestionInfo.
+        r"""Gets the level of this CongestionInfo.
 
         **参数说明**：拥堵级别。  **取值范围**：  - 1：拥堵级别低，速度[25, 30) 单位：km/h  - 2：拥堵级别中，速度[15，25) 单位：km/h  - 3：拥堵级别高，速度[0, 15) 单位：km/h
 
@@ -82,7 +82,7 @@ class CongestionInfo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this CongestionInfo.
+        r"""Sets the level of this CongestionInfo.
 
         **参数说明**：拥堵级别。  **取值范围**：  - 1：拥堵级别低，速度[25, 30) 单位：km/h  - 2：拥堵级别中，速度[15，25) 单位：km/h  - 3：拥堵级别高，速度[0, 15) 单位：km/h
 
@@ -93,7 +93,7 @@ class CongestionInfo:
 
     @property
     def length(self):
-        """Gets the length of this CongestionInfo.
+        r"""Gets the length of this CongestionInfo.
 
         **参数说明**：拥堵长度，单位为米（m）。
 
@@ -104,7 +104,7 @@ class CongestionInfo:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this CongestionInfo.
+        r"""Sets the length of this CongestionInfo.
 
         **参数说明**：拥堵长度，单位为米（m）。
 
@@ -115,7 +115,7 @@ class CongestionInfo:
 
     @property
     def start_point(self):
-        """Gets the start_point of this CongestionInfo.
+        r"""Gets the start_point of this CongestionInfo.
 
         :return: The start_point of this CongestionInfo.
         :rtype: :class:`huaweicloudsdkdris.v1.Position3D`
@@ -124,7 +124,7 @@ class CongestionInfo:
 
     @start_point.setter
     def start_point(self, start_point):
-        """Sets the start_point of this CongestionInfo.
+        r"""Sets the start_point of this CongestionInfo.
 
         :param start_point: The start_point of this CongestionInfo.
         :type start_point: :class:`huaweicloudsdkdris.v1.Position3D`
@@ -133,7 +133,7 @@ class CongestionInfo:
 
     @property
     def end_point(self):
-        """Gets the end_point of this CongestionInfo.
+        r"""Gets the end_point of this CongestionInfo.
 
         :return: The end_point of this CongestionInfo.
         :rtype: :class:`huaweicloudsdkdris.v1.Position3D`
@@ -142,7 +142,7 @@ class CongestionInfo:
 
     @end_point.setter
     def end_point(self, end_point):
-        """Sets the end_point of this CongestionInfo.
+        r"""Sets the end_point of this CongestionInfo.
 
         :param end_point: The end_point of this CongestionInfo.
         :type end_point: :class:`huaweicloudsdkdris.v1.Position3D`
@@ -151,7 +151,7 @@ class CongestionInfo:
 
     @property
     def congestion_lanes_info(self):
-        """Gets the congestion_lanes_info of this CongestionInfo.
+        r"""Gets the congestion_lanes_info of this CongestionInfo.
 
         **参数说明**：车道拥堵信息。
 
@@ -162,7 +162,7 @@ class CongestionInfo:
 
     @congestion_lanes_info.setter
     def congestion_lanes_info(self, congestion_lanes_info):
-        """Sets the congestion_lanes_info of this CongestionInfo.
+        r"""Sets the congestion_lanes_info of this CongestionInfo.
 
         **参数说明**：车道拥堵信息。
 

@@ -32,7 +32,7 @@ class CreateBindingResponse(SdkResponse):
     }
 
     def __init__(self, source=None, destination_type=None, destination=None, routing_key=None):
-        """CreateBindingResponse
+        r"""CreateBindingResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateBindingResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this CreateBindingResponse.
+        r"""Gets the source of this CreateBindingResponse.
 
         绑定对象
 
@@ -76,7 +76,7 @@ class CreateBindingResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateBindingResponse.
+        r"""Sets the source of this CreateBindingResponse.
 
         绑定对象
 
@@ -87,7 +87,7 @@ class CreateBindingResponse(SdkResponse):
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this CreateBindingResponse.
+        r"""Gets the destination_type of this CreateBindingResponse.
 
         绑定Exchange或者Queue
 
@@ -98,7 +98,7 @@ class CreateBindingResponse(SdkResponse):
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this CreateBindingResponse.
+        r"""Sets the destination_type of this CreateBindingResponse.
 
         绑定Exchange或者Queue
 
@@ -109,7 +109,7 @@ class CreateBindingResponse(SdkResponse):
 
     @property
     def destination(self):
-        """Gets the destination of this CreateBindingResponse.
+        r"""Gets the destination of this CreateBindingResponse.
 
         要投递的Exchange或Queue名称
 
@@ -120,7 +120,7 @@ class CreateBindingResponse(SdkResponse):
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CreateBindingResponse.
+        r"""Sets the destination of this CreateBindingResponse.
 
         要投递的Exchange或Queue名称
 
@@ -131,7 +131,7 @@ class CreateBindingResponse(SdkResponse):
 
     @property
     def routing_key(self):
-        """Gets the routing_key of this CreateBindingResponse.
+        r"""Gets the routing_key of this CreateBindingResponse.
 
         绑定键值，用于告知Exchange应该将消息投递到哪些Queue中
 
@@ -142,7 +142,7 @@ class CreateBindingResponse(SdkResponse):
 
     @routing_key.setter
     def routing_key(self, routing_key):
-        """Sets the routing_key of this CreateBindingResponse.
+        r"""Sets the routing_key of this CreateBindingResponse.
 
         绑定键值，用于告知Exchange应该将消息投递到哪些Queue中
 

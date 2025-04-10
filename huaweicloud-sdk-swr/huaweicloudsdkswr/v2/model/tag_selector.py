@@ -27,7 +27,7 @@ class TagSelector:
     }
 
     def __init__(self, kind=None, pattern=None):
-        """TagSelector
+        r"""TagSelector
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagSelector:
 
     @property
     def kind(self):
-        """Gets the kind of this TagSelector.
+        r"""Gets the kind of this TagSelector.
 
         匹配规则，label、regexp
 
@@ -59,7 +59,7 @@ class TagSelector:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this TagSelector.
+        r"""Sets the kind of this TagSelector.
 
         匹配规则，label、regexp
 
@@ -70,7 +70,7 @@ class TagSelector:
 
     @property
     def pattern(self):
-        """Gets the pattern of this TagSelector.
+        r"""Gets the pattern of this TagSelector.
 
         kind是label时，设置为镜像版本,kind是regexp时，设置为正则表达式
 
@@ -81,7 +81,7 @@ class TagSelector:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this TagSelector.
+        r"""Sets the pattern of this TagSelector.
 
         kind是label时，设置为镜像版本,kind是regexp时，设置为正则表达式
 

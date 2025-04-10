@@ -33,7 +33,7 @@ class InstanceBackupPolicy:
     }
 
     def __init__(self, backup_policy_id=None, created_at=None, updated_at=None, policy=None, tenant_id=None):
-        """InstanceBackupPolicy
+        r"""InstanceBackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceBackupPolicy:
 
     @property
     def backup_policy_id(self):
-        """Gets the backup_policy_id of this InstanceBackupPolicy.
+        r"""Gets the backup_policy_id of this InstanceBackupPolicy.
 
         备份策略ID
 
@@ -82,7 +82,7 @@ class InstanceBackupPolicy:
 
     @backup_policy_id.setter
     def backup_policy_id(self, backup_policy_id):
-        """Sets the backup_policy_id of this InstanceBackupPolicy.
+        r"""Sets the backup_policy_id of this InstanceBackupPolicy.
 
         备份策略ID
 
@@ -93,7 +93,7 @@ class InstanceBackupPolicy:
 
     @property
     def created_at(self):
-        """Gets the created_at of this InstanceBackupPolicy.
+        r"""Gets the created_at of this InstanceBackupPolicy.
 
         创建时间。格式为：2022-04-11T09:45:24.790Z
 
@@ -104,7 +104,7 @@ class InstanceBackupPolicy:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this InstanceBackupPolicy.
+        r"""Sets the created_at of this InstanceBackupPolicy.
 
         创建时间。格式为：2022-04-11T09:45:24.790Z
 
@@ -115,7 +115,7 @@ class InstanceBackupPolicy:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this InstanceBackupPolicy.
+        r"""Gets the updated_at of this InstanceBackupPolicy.
 
         更新时间。格式为：2022-04-12T02:22:03.269Z
 
@@ -126,7 +126,7 @@ class InstanceBackupPolicy:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this InstanceBackupPolicy.
+        r"""Sets the updated_at of this InstanceBackupPolicy.
 
         更新时间。格式为：2022-04-12T02:22:03.269Z
 
@@ -137,7 +137,7 @@ class InstanceBackupPolicy:
 
     @property
     def policy(self):
-        """Gets the policy of this InstanceBackupPolicy.
+        r"""Gets the policy of this InstanceBackupPolicy.
 
         :return: The policy of this InstanceBackupPolicy.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
@@ -146,7 +146,7 @@ class InstanceBackupPolicy:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this InstanceBackupPolicy.
+        r"""Sets the policy of this InstanceBackupPolicy.
 
         :param policy: The policy of this InstanceBackupPolicy.
         :type policy: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
@@ -155,7 +155,7 @@ class InstanceBackupPolicy:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this InstanceBackupPolicy.
+        r"""Gets the tenant_id of this InstanceBackupPolicy.
 
         租户ID
 
@@ -166,7 +166,7 @@ class InstanceBackupPolicy:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this InstanceBackupPolicy.
+        r"""Sets the tenant_id of this InstanceBackupPolicy.
 
         租户ID
 

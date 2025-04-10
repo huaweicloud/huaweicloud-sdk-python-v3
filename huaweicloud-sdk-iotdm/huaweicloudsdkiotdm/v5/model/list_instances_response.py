@@ -30,7 +30,7 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, marker=None, instances=None):
-        """ListInstancesResponse
+        r"""ListInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInstancesResponse.
+        r"""Gets the count of this ListInstancesResponse.
 
         设备接入实例的总数
 
@@ -69,7 +69,7 @@ class ListInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInstancesResponse.
+        r"""Sets the count of this ListInstancesResponse.
 
         设备接入实例的总数
 
@@ -80,7 +80,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListInstancesResponse.
+        r"""Gets the marker of this ListInstancesResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用
 
@@ -91,7 +91,7 @@ class ListInstancesResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListInstancesResponse.
+        r"""Sets the marker of this ListInstancesResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用
 
@@ -102,7 +102,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListInstancesResponse.
+        r"""Gets the instances of this ListInstancesResponse.
 
         设备接入实例的详情列表
 
@@ -113,7 +113,7 @@ class ListInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListInstancesResponse.
+        r"""Sets the instances of this ListInstancesResponse.
 
         设备接入实例的详情列表
 

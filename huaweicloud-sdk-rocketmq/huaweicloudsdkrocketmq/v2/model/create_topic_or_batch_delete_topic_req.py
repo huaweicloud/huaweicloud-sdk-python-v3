@@ -37,7 +37,7 @@ class CreateTopicOrBatchDeleteTopicReq:
     }
 
     def __init__(self, name=None, brokers=None, queue_num=None, queues=None, permission=None, message_type=None, topics=None):
-        """CreateTopicOrBatchDeleteTopicReq
+        r"""CreateTopicOrBatchDeleteTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the name of this CreateTopicOrBatchDeleteTopicReq.
 
         主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -96,7 +96,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the name of this CreateTopicOrBatchDeleteTopicReq.
 
         主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -107,7 +107,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def brokers(self):
-        """Gets the brokers of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the brokers of this CreateTopicOrBatchDeleteTopicReq.
 
         关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -118,7 +118,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the brokers of this CreateTopicOrBatchDeleteTopicReq.
 
         关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -129,7 +129,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def queue_num(self):
-        """Gets the queue_num of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the queue_num of this CreateTopicOrBatchDeleteTopicReq.
 
         队列数，范围1~50。
 
@@ -140,7 +140,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @queue_num.setter
     def queue_num(self, queue_num):
-        """Sets the queue_num of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the queue_num of this CreateTopicOrBatchDeleteTopicReq.
 
         队列数，范围1~50。
 
@@ -151,7 +151,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def queues(self):
-        """Gets the queues of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the queues of this CreateTopicOrBatchDeleteTopicReq.
 
         队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -162,7 +162,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the queues of this CreateTopicOrBatchDeleteTopicReq.
 
         队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -173,7 +173,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def permission(self):
-        """Gets the permission of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the permission of this CreateTopicOrBatchDeleteTopicReq.
 
         权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
 
@@ -184,7 +184,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the permission of this CreateTopicOrBatchDeleteTopicReq.
 
         权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
 
@@ -195,7 +195,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def message_type(self):
-        """Gets the message_type of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the message_type of this CreateTopicOrBatchDeleteTopicReq.
 
         消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
 
@@ -206,7 +206,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the message_type of this CreateTopicOrBatchDeleteTopicReq.
 
         消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
 
@@ -217,7 +217,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @property
     def topics(self):
-        """Gets the topics of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Gets the topics of this CreateTopicOrBatchDeleteTopicReq.
 
         主题列表，当批量删除主题时使用。
 
@@ -228,7 +228,7 @@ class CreateTopicOrBatchDeleteTopicReq:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this CreateTopicOrBatchDeleteTopicReq.
+        r"""Sets the topics of this CreateTopicOrBatchDeleteTopicReq.
 
         主题列表，当批量删除主题时使用。
 

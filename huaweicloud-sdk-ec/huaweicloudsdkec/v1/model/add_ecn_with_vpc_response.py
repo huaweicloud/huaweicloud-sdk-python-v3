@@ -40,7 +40,7 @@ class AddEcnWithVpcResponse(SdkResponse):
     }
 
     def __init__(self, id=None, vpc_id=None, subnet_id=None, local_subnet_list=None, remote_subnet_list=None, region_id=None, status=None, created_at=None):
-        """AddEcnWithVpcResponse
+        r"""AddEcnWithVpcResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddEcnWithVpcResponse.
+        r"""Gets the id of this AddEcnWithVpcResponse.
 
         企业连接网络关联虚拟私有云ID
 
@@ -104,7 +104,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddEcnWithVpcResponse.
+        r"""Sets the id of this AddEcnWithVpcResponse.
 
         企业连接网络关联虚拟私有云ID
 
@@ -115,7 +115,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AddEcnWithVpcResponse.
+        r"""Gets the vpc_id of this AddEcnWithVpcResponse.
 
         虚拟私有云ID
 
@@ -126,7 +126,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AddEcnWithVpcResponse.
+        r"""Sets the vpc_id of this AddEcnWithVpcResponse.
 
         虚拟私有云ID
 
@@ -137,7 +137,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AddEcnWithVpcResponse.
+        r"""Gets the subnet_id of this AddEcnWithVpcResponse.
 
         子网ID
 
@@ -148,7 +148,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AddEcnWithVpcResponse.
+        r"""Sets the subnet_id of this AddEcnWithVpcResponse.
 
         子网ID
 
@@ -159,7 +159,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def local_subnet_list(self):
-        """Gets the local_subnet_list of this AddEcnWithVpcResponse.
+        r"""Gets the local_subnet_list of this AddEcnWithVpcResponse.
 
         本端子网列表
 
@@ -170,7 +170,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @local_subnet_list.setter
     def local_subnet_list(self, local_subnet_list):
-        """Sets the local_subnet_list of this AddEcnWithVpcResponse.
+        r"""Sets the local_subnet_list of this AddEcnWithVpcResponse.
 
         本端子网列表
 
@@ -181,7 +181,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def remote_subnet_list(self):
-        """Gets the remote_subnet_list of this AddEcnWithVpcResponse.
+        r"""Gets the remote_subnet_list of this AddEcnWithVpcResponse.
 
         对端子网列表
 
@@ -192,7 +192,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @remote_subnet_list.setter
     def remote_subnet_list(self, remote_subnet_list):
-        """Sets the remote_subnet_list of this AddEcnWithVpcResponse.
+        r"""Sets the remote_subnet_list of this AddEcnWithVpcResponse.
 
         对端子网列表
 
@@ -203,7 +203,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this AddEcnWithVpcResponse.
+        r"""Gets the region_id of this AddEcnWithVpcResponse.
 
         区域ID
 
@@ -214,7 +214,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AddEcnWithVpcResponse.
+        r"""Sets the region_id of this AddEcnWithVpcResponse.
 
         区域ID
 
@@ -225,7 +225,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddEcnWithVpcResponse.
+        r"""Gets the status of this AddEcnWithVpcResponse.
 
         状态
 
@@ -236,7 +236,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddEcnWithVpcResponse.
+        r"""Sets the status of this AddEcnWithVpcResponse.
 
         状态
 
@@ -247,7 +247,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AddEcnWithVpcResponse.
+        r"""Gets the created_at of this AddEcnWithVpcResponse.
 
         创建时间
 
@@ -258,7 +258,7 @@ class AddEcnWithVpcResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AddEcnWithVpcResponse.
+        r"""Sets the created_at of this AddEcnWithVpcResponse.
 
         创建时间
 

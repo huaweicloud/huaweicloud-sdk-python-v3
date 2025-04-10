@@ -31,7 +31,7 @@ class PolicyUpdate:
     }
 
     def __init__(self, enabled=None, name=None, operation_definition=None, trigger=None):
-        """PolicyUpdate
+        r"""PolicyUpdate
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PolicyUpdate:
 
     @property
     def enabled(self):
-        """Gets the enabled of this PolicyUpdate.
+        r"""Gets the enabled of this PolicyUpdate.
 
         是否启用策略
 
@@ -75,7 +75,7 @@ class PolicyUpdate:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this PolicyUpdate.
+        r"""Sets the enabled of this PolicyUpdate.
 
         是否启用策略
 
@@ -86,7 +86,7 @@ class PolicyUpdate:
 
     @property
     def name(self):
-        """Gets the name of this PolicyUpdate.
+        r"""Gets the name of this PolicyUpdate.
 
         策略名称
 
@@ -97,7 +97,7 @@ class PolicyUpdate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyUpdate.
+        r"""Sets the name of this PolicyUpdate.
 
         策略名称
 
@@ -108,7 +108,7 @@ class PolicyUpdate:
 
     @property
     def operation_definition(self):
-        """Gets the operation_definition of this PolicyUpdate.
+        r"""Gets the operation_definition of this PolicyUpdate.
 
         :return: The operation_definition of this PolicyUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -117,7 +117,7 @@ class PolicyUpdate:
 
     @operation_definition.setter
     def operation_definition(self, operation_definition):
-        """Sets the operation_definition of this PolicyUpdate.
+        r"""Sets the operation_definition of this PolicyUpdate.
 
         :param operation_definition: The operation_definition of this PolicyUpdate.
         :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -126,7 +126,7 @@ class PolicyUpdate:
 
     @property
     def trigger(self):
-        """Gets the trigger of this PolicyUpdate.
+        r"""Gets the trigger of this PolicyUpdate.
 
         :return: The trigger of this PolicyUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
@@ -135,7 +135,7 @@ class PolicyUpdate:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this PolicyUpdate.
+        r"""Sets the trigger of this PolicyUpdate.
 
         :param trigger: The trigger of this PolicyUpdate.
         :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`

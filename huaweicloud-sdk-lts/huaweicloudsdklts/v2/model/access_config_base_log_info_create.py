@@ -27,7 +27,7 @@ class AccessConfigBaseLogInfoCreate:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """AccessConfigBaseLogInfoCreate
+        r"""AccessConfigBaseLogInfoCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AccessConfigBaseLogInfoCreate:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this AccessConfigBaseLogInfoCreate.
+        r"""Gets the log_group_id of this AccessConfigBaseLogInfoCreate.
 
         日志组ID
 
@@ -59,7 +59,7 @@ class AccessConfigBaseLogInfoCreate:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this AccessConfigBaseLogInfoCreate.
+        r"""Sets the log_group_id of this AccessConfigBaseLogInfoCreate.
 
         日志组ID
 
@@ -70,7 +70,7 @@ class AccessConfigBaseLogInfoCreate:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this AccessConfigBaseLogInfoCreate.
+        r"""Gets the log_stream_id of this AccessConfigBaseLogInfoCreate.
 
         日志流ID
 
@@ -81,7 +81,7 @@ class AccessConfigBaseLogInfoCreate:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this AccessConfigBaseLogInfoCreate.
+        r"""Sets the log_stream_id of this AccessConfigBaseLogInfoCreate.
 
         日志流ID
 

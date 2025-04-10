@@ -27,7 +27,7 @@ class NotifiedHistoriesResult:
     }
 
     def __init__(self, event_sn=None, notifications=None):
-        """NotifiedHistoriesResult
+        r"""NotifiedHistoriesResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NotifiedHistoriesResult:
 
     @property
     def event_sn(self):
-        """Gets the event_sn of this NotifiedHistoriesResult.
+        r"""Gets the event_sn of this NotifiedHistoriesResult.
 
         告警流水号
 
@@ -61,7 +61,7 @@ class NotifiedHistoriesResult:
 
     @event_sn.setter
     def event_sn(self, event_sn):
-        """Sets the event_sn of this NotifiedHistoriesResult.
+        r"""Sets the event_sn of this NotifiedHistoriesResult.
 
         告警流水号
 
@@ -72,7 +72,7 @@ class NotifiedHistoriesResult:
 
     @property
     def notifications(self):
-        """Gets the notifications of this NotifiedHistoriesResult.
+        r"""Gets the notifications of this NotifiedHistoriesResult.
 
         通知结果
 
@@ -83,7 +83,7 @@ class NotifiedHistoriesResult:
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this NotifiedHistoriesResult.
+        r"""Sets the notifications of this NotifiedHistoriesResult.
 
         通知结果
 

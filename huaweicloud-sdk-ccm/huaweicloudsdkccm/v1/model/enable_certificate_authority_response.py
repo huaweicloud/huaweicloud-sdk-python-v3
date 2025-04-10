@@ -24,7 +24,7 @@ class EnableCertificateAuthorityResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableCertificateAuthorityResponse
+        r"""EnableCertificateAuthorityResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class CoveredIPVO:
     }
 
     def __init__(self, ip=None, covered_ip=None):
-        """CoveredIPVO
+        r"""CoveredIPVO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CoveredIPVO:
 
     @property
     def ip(self):
-        """Gets the ip of this CoveredIPVO.
+        r"""Gets the ip of this CoveredIPVO.
 
         ip地址
 
@@ -61,7 +61,7 @@ class CoveredIPVO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CoveredIPVO.
+        r"""Sets the ip of this CoveredIPVO.
 
         ip地址
 
@@ -72,7 +72,7 @@ class CoveredIPVO:
 
     @property
     def covered_ip(self):
-        """Gets the covered_ip of this CoveredIPVO.
+        r"""Gets the covered_ip of this CoveredIPVO.
 
         覆盖ip地址。
 
@@ -83,7 +83,7 @@ class CoveredIPVO:
 
     @covered_ip.setter
     def covered_ip(self, covered_ip):
-        """Sets the covered_ip of this CoveredIPVO.
+        r"""Sets the covered_ip of this CoveredIPVO.
 
         覆盖ip地址。
 

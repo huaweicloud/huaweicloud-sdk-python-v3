@@ -33,7 +33,7 @@ class PermissionSetMemberCreateDTO:
     }
 
     def __init__(self, member_type=None, member_id=None, member_name=None, workspace=None, auto_sync=None):
-        """PermissionSetMemberCreateDTO
+        r"""PermissionSetMemberCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PermissionSetMemberCreateDTO:
 
     @property
     def member_type(self):
-        """Gets the member_type of this PermissionSetMemberCreateDTO.
+        r"""Gets the member_type of this PermissionSetMemberCreateDTO.
 
         成员类型, 用户/用户组/工作空间角色, USER, USER_GROUP, WORKSPACE_ROLE
 
@@ -82,7 +82,7 @@ class PermissionSetMemberCreateDTO:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this PermissionSetMemberCreateDTO.
+        r"""Sets the member_type of this PermissionSetMemberCreateDTO.
 
         成员类型, 用户/用户组/工作空间角色, USER, USER_GROUP, WORKSPACE_ROLE
 
@@ -93,7 +93,7 @@ class PermissionSetMemberCreateDTO:
 
     @property
     def member_id(self):
-        """Gets the member_id of this PermissionSetMemberCreateDTO.
+        r"""Gets the member_id of this PermissionSetMemberCreateDTO.
 
         成员id
 
@@ -104,7 +104,7 @@ class PermissionSetMemberCreateDTO:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this PermissionSetMemberCreateDTO.
+        r"""Sets the member_id of this PermissionSetMemberCreateDTO.
 
         成员id
 
@@ -115,7 +115,7 @@ class PermissionSetMemberCreateDTO:
 
     @property
     def member_name(self):
-        """Gets the member_name of this PermissionSetMemberCreateDTO.
+        r"""Gets the member_name of this PermissionSetMemberCreateDTO.
 
         成员名称
 
@@ -126,7 +126,7 @@ class PermissionSetMemberCreateDTO:
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this PermissionSetMemberCreateDTO.
+        r"""Sets the member_name of this PermissionSetMemberCreateDTO.
 
         成员名称
 
@@ -137,7 +137,7 @@ class PermissionSetMemberCreateDTO:
 
     @property
     def workspace(self):
-        """Gets the workspace of this PermissionSetMemberCreateDTO.
+        r"""Gets the workspace of this PermissionSetMemberCreateDTO.
 
         工作空间
 
@@ -148,7 +148,7 @@ class PermissionSetMemberCreateDTO:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this PermissionSetMemberCreateDTO.
+        r"""Sets the workspace of this PermissionSetMemberCreateDTO.
 
         工作空间
 
@@ -159,7 +159,7 @@ class PermissionSetMemberCreateDTO:
 
     @property
     def auto_sync(self):
-        """Gets the auto_sync of this PermissionSetMemberCreateDTO.
+        r"""Gets the auto_sync of this PermissionSetMemberCreateDTO.
 
         是否自动触发同步, 默认false
 
@@ -170,7 +170,7 @@ class PermissionSetMemberCreateDTO:
 
     @auto_sync.setter
     def auto_sync(self, auto_sync):
-        """Sets the auto_sync of this PermissionSetMemberCreateDTO.
+        r"""Sets the auto_sync of this PermissionSetMemberCreateDTO.
 
         是否自动触发同步, 默认false
 

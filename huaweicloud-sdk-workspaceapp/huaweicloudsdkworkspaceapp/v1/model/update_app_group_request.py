@@ -27,7 +27,7 @@ class UpdateAppGroupRequest:
     }
 
     def __init__(self, app_group_id=None, body=None):
-        """UpdateAppGroupRequest
+        r"""UpdateAppGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAppGroupRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this UpdateAppGroupRequest.
+        r"""Gets the app_group_id of this UpdateAppGroupRequest.
 
         应用组ID。
 
@@ -60,7 +60,7 @@ class UpdateAppGroupRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this UpdateAppGroupRequest.
+        r"""Sets the app_group_id of this UpdateAppGroupRequest.
 
         应用组ID。
 
@@ -71,7 +71,7 @@ class UpdateAppGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppGroupRequest.
+        r"""Gets the body of this UpdateAppGroupRequest.
 
         :return: The body of this UpdateAppGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppGroupReq`
@@ -80,7 +80,7 @@ class UpdateAppGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppGroupRequest.
+        r"""Sets the body of this UpdateAppGroupRequest.
 
         :param body: The body of this UpdateAppGroupRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppGroupReq`

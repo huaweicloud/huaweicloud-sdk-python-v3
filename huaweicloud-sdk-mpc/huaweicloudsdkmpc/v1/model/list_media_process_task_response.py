@@ -30,7 +30,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListMediaProcessTaskResponse
+        r"""ListMediaProcessTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
 
     @property
     def task_array(self):
-        """Gets the task_array of this ListMediaProcessTaskResponse.
+        r"""Gets the task_array of this ListMediaProcessTaskResponse.
 
         任务列表
 
@@ -69,7 +69,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
 
     @task_array.setter
     def task_array(self, task_array):
-        """Sets the task_array of this ListMediaProcessTaskResponse.
+        r"""Sets the task_array of this ListMediaProcessTaskResponse.
 
         任务列表
 
@@ -80,7 +80,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListMediaProcessTaskResponse.
+        r"""Gets the is_truncated of this ListMediaProcessTaskResponse.
 
         是否截断
 
@@ -91,7 +91,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListMediaProcessTaskResponse.
+        r"""Sets the is_truncated of this ListMediaProcessTaskResponse.
 
         是否截断
 
@@ -102,7 +102,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMediaProcessTaskResponse.
+        r"""Gets the total of this ListMediaProcessTaskResponse.
 
         任务总数
 
@@ -113,7 +113,7 @@ class ListMediaProcessTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMediaProcessTaskResponse.
+        r"""Sets the total of this ListMediaProcessTaskResponse.
 
         任务总数
 

@@ -33,7 +33,7 @@ class RegisterPortRequestBody:
     }
 
     def __init__(self, port=None, port_type=None, sign=None, sign_check=None, authorization_files=None):
-        """RegisterPortRequestBody
+        r"""RegisterPortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class RegisterPortRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this RegisterPortRequestBody.
+        r"""Gets the port of this RegisterPortRequestBody.
 
         通道号。 - port_type=5时 ，长度必须为5 - port_type=1或3，长度在21位内 
 
@@ -77,7 +77,7 @@ class RegisterPortRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RegisterPortRequestBody.
+        r"""Sets the port of this RegisterPortRequestBody.
 
         通道号。 - port_type=5时 ，长度必须为5 - port_type=1或3，长度在21位内 
 
@@ -88,7 +88,7 @@ class RegisterPortRequestBody:
 
     @property
     def port_type(self):
-        """Gets the port_type of this RegisterPortRequestBody.
+        r"""Gets the port_type of this RegisterPortRequestBody.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段 
 
@@ -99,7 +99,7 @@ class RegisterPortRequestBody:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this RegisterPortRequestBody.
+        r"""Sets the port_type of this RegisterPortRequestBody.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段 
 
@@ -110,7 +110,7 @@ class RegisterPortRequestBody:
 
     @property
     def sign(self):
-        """Gets the sign of this RegisterPortRequestBody.
+        r"""Gets the sign of this RegisterPortRequestBody.
 
         签名列表，最大长度为5。单个签名长度为2-18。
 
@@ -121,7 +121,7 @@ class RegisterPortRequestBody:
 
     @sign.setter
     def sign(self, sign):
-        """Sets the sign of this RegisterPortRequestBody.
+        r"""Sets the sign of this RegisterPortRequestBody.
 
         签名列表，最大长度为5。单个签名长度为2-18。
 
@@ -132,7 +132,7 @@ class RegisterPortRequestBody:
 
     @property
     def sign_check(self):
-        """Gets the sign_check of this RegisterPortRequestBody.
+        r"""Gets the sign_check of this RegisterPortRequestBody.
 
         是否需要校验。  - 0：不校验  - 1：校验签名  > 当port_type为3或者5时，sign_check必须为1。 
 
@@ -143,7 +143,7 @@ class RegisterPortRequestBody:
 
     @sign_check.setter
     def sign_check(self, sign_check):
-        """Sets the sign_check of this RegisterPortRequestBody.
+        r"""Sets the sign_check of this RegisterPortRequestBody.
 
         是否需要校验。  - 0：不校验  - 1：校验签名  > 当port_type为3或者5时，sign_check必须为1。 
 
@@ -154,7 +154,7 @@ class RegisterPortRequestBody:
 
     @property
     def authorization_files(self):
-        """Gets the authorization_files of this RegisterPortRequestBody.
+        r"""Gets the authorization_files of this RegisterPortRequestBody.
 
         授权证明图片资源，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 > 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
 
@@ -165,7 +165,7 @@ class RegisterPortRequestBody:
 
     @authorization_files.setter
     def authorization_files(self, authorization_files):
-        """Sets the authorization_files of this RegisterPortRequestBody.
+        r"""Sets the authorization_files of this RegisterPortRequestBody.
 
         授权证明图片资源，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持5张。参数格式为：*资源ID:资源URL*，样例：3d214a61672846f88ad77597f935cccc:AimSauploadService/272957b708ac4891a6d5282ccd2175cccc.png。 > 资源ID与资源URL对应上传智能信息服务号图片资源API返回的resource_id和resource_url。
 

@@ -27,7 +27,7 @@ class UpdateProgramRequestDTO:
     }
 
     def __init__(self, program_name=None, program_item_list=None):
-        """UpdateProgramRequestDTO
+        r"""UpdateProgramRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateProgramRequestDTO:
 
     @property
     def program_name(self):
-        """Gets the program_name of this UpdateProgramRequestDTO.
+        r"""Gets the program_name of this UpdateProgramRequestDTO.
 
         节目名称。
 
@@ -60,7 +60,7 @@ class UpdateProgramRequestDTO:
 
     @program_name.setter
     def program_name(self, program_name):
-        """Sets the program_name of this UpdateProgramRequestDTO.
+        r"""Sets the program_name of this UpdateProgramRequestDTO.
 
         节目名称。
 
@@ -71,7 +71,7 @@ class UpdateProgramRequestDTO:
 
     @property
     def program_item_list(self):
-        """Gets the program_item_list of this UpdateProgramRequestDTO.
+        r"""Gets the program_item_list of this UpdateProgramRequestDTO.
 
         节目素材列表。
 
@@ -82,7 +82,7 @@ class UpdateProgramRequestDTO:
 
     @program_item_list.setter
     def program_item_list(self, program_item_list):
-        """Sets the program_item_list of this UpdateProgramRequestDTO.
+        r"""Sets the program_item_list of this UpdateProgramRequestDTO.
 
         节目素材列表。
 

@@ -28,7 +28,7 @@ class ListPublicIpsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, publicips=None):
-        """ListPublicIpsResponse
+        r"""ListPublicIpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPublicIpsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPublicIpsResponse.
+        r"""Gets the count of this ListPublicIpsResponse.
 
         弹性公网IP数目。
 
@@ -62,7 +62,7 @@ class ListPublicIpsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPublicIpsResponse.
+        r"""Sets the count of this ListPublicIpsResponse.
 
         弹性公网IP数目。
 
@@ -73,7 +73,7 @@ class ListPublicIpsResponse(SdkResponse):
 
     @property
     def publicips(self):
-        """Gets the publicips of this ListPublicIpsResponse.
+        r"""Gets the publicips of this ListPublicIpsResponse.
 
         弹性公网IP数组对象。
 
@@ -84,7 +84,7 @@ class ListPublicIpsResponse(SdkResponse):
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this ListPublicIpsResponse.
+        r"""Sets the publicips of this ListPublicIpsResponse.
 
         弹性公网IP数组对象。
 

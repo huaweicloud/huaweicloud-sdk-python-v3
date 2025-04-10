@@ -25,7 +25,7 @@ class CreateQualityEnhanceTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateQualityEnhanceTemplateRequest
+        r"""CreateQualityEnhanceTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateQualityEnhanceTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQualityEnhanceTemplateRequest.
+        r"""Gets the body of this CreateQualityEnhanceTemplateRequest.
 
         :return: The body of this CreateQualityEnhanceTemplateRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
@@ -52,7 +52,7 @@ class CreateQualityEnhanceTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQualityEnhanceTemplateRequest.
+        r"""Sets the body of this CreateQualityEnhanceTemplateRequest.
 
         :param body: The body of this CreateQualityEnhanceTemplateRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`

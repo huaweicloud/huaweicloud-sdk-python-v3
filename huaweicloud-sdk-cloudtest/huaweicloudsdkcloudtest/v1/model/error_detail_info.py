@@ -25,7 +25,7 @@ class ErrorDetailInfo:
     }
 
     def __init__(self, failed=None):
-        """ErrorDetailInfo
+        r"""ErrorDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ErrorDetailInfo:
 
     @property
     def failed(self):
-        """Gets the failed of this ErrorDetailInfo.
+        r"""Gets the failed of this ErrorDetailInfo.
 
         批量操作失败的资源的详情信息
 
@@ -54,7 +54,7 @@ class ErrorDetailInfo:
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this ErrorDetailInfo.
+        r"""Sets the failed of this ErrorDetailInfo.
 
         批量操作失败的资源的详情信息
 

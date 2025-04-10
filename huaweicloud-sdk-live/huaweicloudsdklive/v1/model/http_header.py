@@ -27,7 +27,7 @@ class HttpHeader:
     }
 
     def __init__(self, key=None, value=None):
-        """HttpHeader
+        r"""HttpHeader
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HttpHeader:
 
     @property
     def key(self):
-        """Gets the key of this HttpHeader.
+        r"""Gets the key of this HttpHeader.
 
         请求头中key字段名
 
@@ -59,7 +59,7 @@ class HttpHeader:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this HttpHeader.
+        r"""Sets the key of this HttpHeader.
 
         请求头中key字段名
 
@@ -70,7 +70,7 @@ class HttpHeader:
 
     @property
     def value(self):
-        """Gets the value of this HttpHeader.
+        r"""Gets the value of this HttpHeader.
 
         请求头中key对应的value值
 
@@ -81,7 +81,7 @@ class HttpHeader:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this HttpHeader.
+        r"""Sets the value of this HttpHeader.
 
         请求头中key对应的value值
 

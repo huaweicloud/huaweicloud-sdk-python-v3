@@ -29,7 +29,7 @@ class ShowDomainSetDetailRequest:
     }
 
     def __init__(self, fw_instance_id=None, domain_set_id=None, enterprise_project_id=None):
-        """ShowDomainSetDetailRequest
+        r"""ShowDomainSetDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDomainSetDetailRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ShowDomainSetDetailRequest.
+        r"""Gets the fw_instance_id of this ShowDomainSetDetailRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -66,7 +66,7 @@ class ShowDomainSetDetailRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ShowDomainSetDetailRequest.
+        r"""Sets the fw_instance_id of this ShowDomainSetDetailRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -77,7 +77,7 @@ class ShowDomainSetDetailRequest:
 
     @property
     def domain_set_id(self):
-        """Gets the domain_set_id of this ShowDomainSetDetailRequest.
+        r"""Gets the domain_set_id of this ShowDomainSetDetailRequest.
 
         域名组ID，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获取
 
@@ -88,7 +88,7 @@ class ShowDomainSetDetailRequest:
 
     @domain_set_id.setter
     def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this ShowDomainSetDetailRequest.
+        r"""Sets the domain_set_id of this ShowDomainSetDetailRequest.
 
         域名组ID，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获取
 
@@ -99,7 +99,7 @@ class ShowDomainSetDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainSetDetailRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainSetDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -110,7 +110,7 @@ class ShowDomainSetDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainSetDetailRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainSetDetailRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

@@ -27,7 +27,7 @@ class ListSpecIssueStayTimesResponseBodyData:
     }
 
     def __init__(self, id=None, stay_time=None):
-        """ListSpecIssueStayTimesResponseBodyData
+        r"""ListSpecIssueStayTimesResponseBodyData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSpecIssueStayTimesResponseBodyData:
 
     @property
     def id(self):
-        """Gets the id of this ListSpecIssueStayTimesResponseBodyData.
+        r"""Gets the id of this ListSpecIssueStayTimesResponseBodyData.
 
         工作项id字符串
 
@@ -61,7 +61,7 @@ class ListSpecIssueStayTimesResponseBodyData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSpecIssueStayTimesResponseBodyData.
+        r"""Sets the id of this ListSpecIssueStayTimesResponseBodyData.
 
         工作项id字符串
 
@@ -72,7 +72,7 @@ class ListSpecIssueStayTimesResponseBodyData:
 
     @property
     def stay_time(self):
-        """Gets the stay_time of this ListSpecIssueStayTimesResponseBodyData.
+        r"""Gets the stay_time of this ListSpecIssueStayTimesResponseBodyData.
 
         停留时间（单位：秒）
 
@@ -83,7 +83,7 @@ class ListSpecIssueStayTimesResponseBodyData:
 
     @stay_time.setter
     def stay_time(self, stay_time):
-        """Sets the stay_time of this ListSpecIssueStayTimesResponseBodyData.
+        r"""Sets the stay_time of this ListSpecIssueStayTimesResponseBodyData.
 
         停留时间（单位：秒）
 

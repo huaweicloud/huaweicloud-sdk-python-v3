@@ -39,7 +39,7 @@ class ParameterConfig:
     }
 
     def __init__(self, name=None, value=None, default_value=None, value_range=None, is_need_restart=None, description=None, created_at=None, updated_at=None):
-        """ParameterConfig
+        r"""ParameterConfig
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ParameterConfig:
 
     @property
     def name(self):
-        """Gets the name of this ParameterConfig.
+        r"""Gets the name of this ParameterConfig.
 
         参数名称
 
@@ -97,7 +97,7 @@ class ParameterConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParameterConfig.
+        r"""Sets the name of this ParameterConfig.
 
         参数名称
 
@@ -108,7 +108,7 @@ class ParameterConfig:
 
     @property
     def value(self):
-        """Gets the value of this ParameterConfig.
+        r"""Gets the value of this ParameterConfig.
 
         参数值
 
@@ -119,7 +119,7 @@ class ParameterConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ParameterConfig.
+        r"""Sets the value of this ParameterConfig.
 
         参数值
 
@@ -130,7 +130,7 @@ class ParameterConfig:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ParameterConfig.
+        r"""Gets the default_value of this ParameterConfig.
 
         参数默认值
 
@@ -141,7 +141,7 @@ class ParameterConfig:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ParameterConfig.
+        r"""Sets the default_value of this ParameterConfig.
 
         参数默认值
 
@@ -152,7 +152,7 @@ class ParameterConfig:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ParameterConfig.
+        r"""Gets the value_range of this ParameterConfig.
 
         参数值范围，如Integer取值0-1、Boolean取值true|false等。
 
@@ -163,7 +163,7 @@ class ParameterConfig:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ParameterConfig.
+        r"""Sets the value_range of this ParameterConfig.
 
         参数值范围，如Integer取值0-1、Boolean取值true|false等。
 
@@ -174,7 +174,7 @@ class ParameterConfig:
 
     @property
     def is_need_restart(self):
-        """Gets the is_need_restart of this ParameterConfig.
+        r"""Gets the is_need_restart of this ParameterConfig.
 
         是否需要重启。默认为true, “false”表示否。“true”表示是。
 
@@ -185,7 +185,7 @@ class ParameterConfig:
 
     @is_need_restart.setter
     def is_need_restart(self, is_need_restart):
-        """Sets the is_need_restart of this ParameterConfig.
+        r"""Sets the is_need_restart of this ParameterConfig.
 
         是否需要重启。默认为true, “false”表示否。“true”表示是。
 
@@ -196,7 +196,7 @@ class ParameterConfig:
 
     @property
     def description(self):
-        """Gets the description of this ParameterConfig.
+        r"""Gets the description of this ParameterConfig.
 
         参数描述。
 
@@ -207,7 +207,7 @@ class ParameterConfig:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ParameterConfig.
+        r"""Sets the description of this ParameterConfig.
 
         参数描述。
 
@@ -218,7 +218,7 @@ class ParameterConfig:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ParameterConfig.
+        r"""Gets the created_at of this ParameterConfig.
 
         创建时间，例如：2023-01-20T07:18:26Z
 
@@ -229,7 +229,7 @@ class ParameterConfig:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ParameterConfig.
+        r"""Sets the created_at of this ParameterConfig.
 
         创建时间，例如：2023-01-20T07:18:26Z
 
@@ -240,7 +240,7 @@ class ParameterConfig:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ParameterConfig.
+        r"""Gets the updated_at of this ParameterConfig.
 
         更新时间，例如：2023-03-01T09:42:02Z
 
@@ -251,7 +251,7 @@ class ParameterConfig:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ParameterConfig.
+        r"""Sets the updated_at of this ParameterConfig.
 
         更新时间，例如：2023-03-01T09:42:02Z
 

@@ -27,7 +27,7 @@ class UpdateIncreBackupPolicy1Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateIncreBackupPolicy1Request
+        r"""UpdateIncreBackupPolicy1Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateIncreBackupPolicy1Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateIncreBackupPolicy1Request.
+        r"""Gets the instance_id of this UpdateIncreBackupPolicy1Request.
 
         instance id
 
@@ -60,7 +60,7 @@ class UpdateIncreBackupPolicy1Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateIncreBackupPolicy1Request.
+        r"""Sets the instance_id of this UpdateIncreBackupPolicy1Request.
 
         instance id
 
@@ -71,7 +71,7 @@ class UpdateIncreBackupPolicy1Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIncreBackupPolicy1Request.
+        r"""Gets the body of this UpdateIncreBackupPolicy1Request.
 
         :return: The body of this UpdateIncreBackupPolicy1Request.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateIncreBackupPolicy1RequestBody`
@@ -80,7 +80,7 @@ class UpdateIncreBackupPolicy1Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIncreBackupPolicy1Request.
+        r"""Sets the body of this UpdateIncreBackupPolicy1Request.
 
         :param body: The body of this UpdateIncreBackupPolicy1Request.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateIncreBackupPolicy1RequestBody`

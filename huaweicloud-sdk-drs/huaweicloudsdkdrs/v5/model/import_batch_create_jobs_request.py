@@ -27,7 +27,7 @@ class ImportBatchCreateJobsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ImportBatchCreateJobsRequest
+        r"""ImportBatchCreateJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImportBatchCreateJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ImportBatchCreateJobsRequest.
+        r"""Gets the x_language of this ImportBatchCreateJobsRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class ImportBatchCreateJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ImportBatchCreateJobsRequest.
+        r"""Sets the x_language of this ImportBatchCreateJobsRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class ImportBatchCreateJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportBatchCreateJobsRequest.
+        r"""Gets the body of this ImportBatchCreateJobsRequest.
 
         :return: The body of this ImportBatchCreateJobsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.ImportBatchCreateJobsRequestBody`
@@ -81,7 +81,7 @@ class ImportBatchCreateJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportBatchCreateJobsRequest.
+        r"""Sets the body of this ImportBatchCreateJobsRequest.
 
         :param body: The body of this ImportBatchCreateJobsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.ImportBatchCreateJobsRequestBody`

@@ -25,7 +25,7 @@ class ShowElbDetailRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowElbDetailRequest
+        r"""ShowElbDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowElbDetailRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowElbDetailRequest.
+        r"""Gets the cluster_id of this ShowElbDetailRequest.
 
         指定待查询的集群ID。
 
@@ -53,7 +53,7 @@ class ShowElbDetailRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowElbDetailRequest.
+        r"""Sets the cluster_id of this ShowElbDetailRequest.
 
         指定待查询的集群ID。
 

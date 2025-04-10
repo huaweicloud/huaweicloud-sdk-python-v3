@@ -29,7 +29,7 @@ class ShowIaConfigRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, config_id=None):
-        """ShowIaConfigRequest
+        r"""ShowIaConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowIaConfigRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowIaConfigRequest.
+        r"""Gets the node_id of this ShowIaConfigRequest.
 
         边缘节点ID
 
@@ -65,7 +65,7 @@ class ShowIaConfigRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowIaConfigRequest.
+        r"""Sets the node_id of this ShowIaConfigRequest.
 
         边缘节点ID
 
@@ -76,7 +76,7 @@ class ShowIaConfigRequest:
 
     @property
     def ia_id(self):
-        """Gets the ia_id of this ShowIaConfigRequest.
+        r"""Gets the ia_id of this ShowIaConfigRequest.
 
         边侧第三方应用的模块ID
 
@@ -87,7 +87,7 @@ class ShowIaConfigRequest:
 
     @ia_id.setter
     def ia_id(self, ia_id):
-        """Sets the ia_id of this ShowIaConfigRequest.
+        r"""Sets the ia_id of this ShowIaConfigRequest.
 
         边侧第三方应用的模块ID
 
@@ -98,7 +98,7 @@ class ShowIaConfigRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ShowIaConfigRequest.
+        r"""Gets the config_id of this ShowIaConfigRequest.
 
         配置ID
 
@@ -109,7 +109,7 @@ class ShowIaConfigRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ShowIaConfigRequest.
+        r"""Sets the config_id of this ShowIaConfigRequest.
 
         配置ID
 

@@ -28,7 +28,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ExpandReplicasetNodeResponse
+        r"""ExpandReplicasetNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExpandReplicasetNodeResponse.
+        r"""Gets the job_id of this ExpandReplicasetNodeResponse.
 
         任务ID，仅按需实例返回该参数。
 
@@ -62,7 +62,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExpandReplicasetNodeResponse.
+        r"""Sets the job_id of this ExpandReplicasetNodeResponse.
 
         任务ID，仅按需实例返回该参数。
 
@@ -73,7 +73,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandReplicasetNodeResponse.
+        r"""Gets the order_id of this ExpandReplicasetNodeResponse.
 
         订单ID，仅包周期实例返回该参数。
 
@@ -84,7 +84,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandReplicasetNodeResponse.
+        r"""Sets the order_id of this ExpandReplicasetNodeResponse.
 
         订单ID，仅包周期实例返回该参数。
 

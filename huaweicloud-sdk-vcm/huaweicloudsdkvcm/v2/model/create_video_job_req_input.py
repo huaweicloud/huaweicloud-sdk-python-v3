@@ -29,7 +29,7 @@ class CreateVideoJobReqInput:
     }
 
     def __init__(self, type=None, data=None, vcn=None):
-        """CreateVideoJobReqInput
+        r"""CreateVideoJobReqInput
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateVideoJobReqInput:
 
     @property
     def type(self):
-        """Gets the type of this CreateVideoJobReqInput.
+        r"""Gets the type of this CreateVideoJobReqInput.
 
         视频数据的输入类型：  obs：表示从华为云OBS中读取视频数据。 url：表示从指定的URL地址中读取视频数据。 edgecamera：表示从指定的边缘摄像头读取数据。 vis：从视频接入服务中读取视频数据。 edgerestful：表示从客户自定义的流媒体服务器读取数据。 vcn ：表示从华为云VCN中读取视频数据。 
 
@@ -66,7 +66,7 @@ class CreateVideoJobReqInput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateVideoJobReqInput.
+        r"""Sets the type of this CreateVideoJobReqInput.
 
         视频数据的输入类型：  obs：表示从华为云OBS中读取视频数据。 url：表示从指定的URL地址中读取视频数据。 edgecamera：表示从指定的边缘摄像头读取数据。 vis：从视频接入服务中读取视频数据。 edgerestful：表示从客户自定义的流媒体服务器读取数据。 vcn ：表示从华为云VCN中读取视频数据。 
 
@@ -77,7 +77,7 @@ class CreateVideoJobReqInput:
 
     @property
     def data(self):
-        """Gets the data of this CreateVideoJobReqInput.
+        r"""Gets the data of this CreateVideoJobReqInput.
 
         数据输入内容
 
@@ -88,7 +88,7 @@ class CreateVideoJobReqInput:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateVideoJobReqInput.
+        r"""Sets the data of this CreateVideoJobReqInput.
 
         数据输入内容
 
@@ -99,7 +99,7 @@ class CreateVideoJobReqInput:
 
     @property
     def vcn(self):
-        """Gets the vcn of this CreateVideoJobReqInput.
+        r"""Gets the vcn of this CreateVideoJobReqInput.
 
         :return: The vcn of this CreateVideoJobReqInput.
         :rtype: :class:`huaweicloudsdkvcm.v2.InputVcn`
@@ -108,7 +108,7 @@ class CreateVideoJobReqInput:
 
     @vcn.setter
     def vcn(self, vcn):
-        """Sets the vcn of this CreateVideoJobReqInput.
+        r"""Sets the vcn of this CreateVideoJobReqInput.
 
         :param vcn: The vcn of this CreateVideoJobReqInput.
         :type vcn: :class:`huaweicloudsdkvcm.v2.InputVcn`

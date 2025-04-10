@@ -25,7 +25,7 @@ class DeleteNaRequest:
     }
 
     def __init__(self, na_id=None):
-        """DeleteNaRequest
+        r"""DeleteNaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteNaRequest:
 
     @property
     def na_id(self):
-        """Gets the na_id of this DeleteNaRequest.
+        r"""Gets the na_id of this DeleteNaRequest.
 
         北向数据接收端点ID
 
@@ -53,7 +53,7 @@ class DeleteNaRequest:
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this DeleteNaRequest.
+        r"""Sets the na_id of this DeleteNaRequest.
 
         北向数据接收端点ID
 

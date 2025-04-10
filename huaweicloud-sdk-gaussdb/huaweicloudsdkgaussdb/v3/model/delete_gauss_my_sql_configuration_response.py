@@ -28,7 +28,7 @@ class DeleteGaussMySqlConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration_id=None, configuration_name=None):
-        """DeleteGaussMySqlConfigurationResponse
+        r"""DeleteGaussMySqlConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this DeleteGaussMySqlConfigurationResponse.
+        r"""Gets the configuration_id of this DeleteGaussMySqlConfigurationResponse.
 
         参数模板ID。
 
@@ -62,7 +62,7 @@ class DeleteGaussMySqlConfigurationResponse(SdkResponse):
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this DeleteGaussMySqlConfigurationResponse.
+        r"""Sets the configuration_id of this DeleteGaussMySqlConfigurationResponse.
 
         参数模板ID。
 
@@ -73,7 +73,7 @@ class DeleteGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def configuration_name(self):
-        """Gets the configuration_name of this DeleteGaussMySqlConfigurationResponse.
+        r"""Gets the configuration_name of this DeleteGaussMySqlConfigurationResponse.
 
         参数模板名称。
 
@@ -84,7 +84,7 @@ class DeleteGaussMySqlConfigurationResponse(SdkResponse):
 
     @configuration_name.setter
     def configuration_name(self, configuration_name):
-        """Sets the configuration_name of this DeleteGaussMySqlConfigurationResponse.
+        r"""Sets the configuration_name of this DeleteGaussMySqlConfigurationResponse.
 
         参数模板名称。
 

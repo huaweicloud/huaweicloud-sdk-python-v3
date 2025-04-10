@@ -29,7 +29,7 @@ class InstanceActionParameters:
     }
 
     def __init__(self, replica=None, hosts=None, version=None):
-        """InstanceActionParameters
+        r"""InstanceActionParameters
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceActionParameters:
 
     @property
     def replica(self):
-        """Gets the replica of this InstanceActionParameters.
+        r"""Gets the replica of this InstanceActionParameters.
 
         实例数，在scale操作时提供。
 
@@ -68,7 +68,7 @@ class InstanceActionParameters:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this InstanceActionParameters.
+        r"""Sets the replica of this InstanceActionParameters.
 
         实例数，在scale操作时提供。
 
@@ -79,7 +79,7 @@ class InstanceActionParameters:
 
     @property
     def hosts(self):
-        """Gets the hosts of this InstanceActionParameters.
+        r"""Gets the hosts of this InstanceActionParameters.
 
         ECS ID列表，指定虚机扩容时部署的ECS主机。
 
@@ -90,7 +90,7 @@ class InstanceActionParameters:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this InstanceActionParameters.
+        r"""Sets the hosts of this InstanceActionParameters.
 
         ECS ID列表，指定虚机扩容时部署的ECS主机。
 
@@ -101,7 +101,7 @@ class InstanceActionParameters:
 
     @property
     def version(self):
-        """Gets the version of this InstanceActionParameters.
+        r"""Gets the version of this InstanceActionParameters.
 
         版本号，在rollback操作时提供，通过查询快照接口获取。
 
@@ -112,7 +112,7 @@ class InstanceActionParameters:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceActionParameters.
+        r"""Sets the version of this InstanceActionParameters.
 
         版本号，在rollback操作时提供，通过查询快照接口获取。
 

@@ -28,7 +28,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
     }
 
     def __init__(self, mode=None, pockets=None):
-        """RecognizeDrugReceptorPocketResponse
+        r"""RecognizeDrugReceptorPocketResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this RecognizeDrugReceptorPocketResponse.
+        r"""Gets the mode of this RecognizeDrugReceptorPocketResponse.
 
         :return: The mode of this RecognizeDrugReceptorPocketResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
@@ -60,7 +60,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RecognizeDrugReceptorPocketResponse.
+        r"""Sets the mode of this RecognizeDrugReceptorPocketResponse.
 
         :param mode: The mode of this RecognizeDrugReceptorPocketResponse.
         :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
@@ -69,7 +69,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
 
     @property
     def pockets(self):
-        """Gets the pockets of this RecognizeDrugReceptorPocketResponse.
+        r"""Gets the pockets of this RecognizeDrugReceptorPocketResponse.
 
         口袋列表
 
@@ -80,7 +80,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
 
     @pockets.setter
     def pockets(self, pockets):
-        """Sets the pockets of this RecognizeDrugReceptorPocketResponse.
+        r"""Sets the pockets of this RecognizeDrugReceptorPocketResponse.
 
         口袋列表
 

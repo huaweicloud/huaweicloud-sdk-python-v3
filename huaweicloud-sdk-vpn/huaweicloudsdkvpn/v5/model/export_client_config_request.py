@@ -27,7 +27,7 @@ class ExportClientConfigRequest:
     }
 
     def __init__(self, vpn_server_id=None, body=None):
-        """ExportClientConfigRequest
+        r"""ExportClientConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportClientConfigRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ExportClientConfigRequest.
+        r"""Gets the vpn_server_id of this ExportClientConfigRequest.
 
         VPN服务端 ID
 
@@ -60,7 +60,7 @@ class ExportClientConfigRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ExportClientConfigRequest.
+        r"""Sets the vpn_server_id of this ExportClientConfigRequest.
 
         VPN服务端 ID
 
@@ -71,7 +71,7 @@ class ExportClientConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportClientConfigRequest.
+        r"""Gets the body of this ExportClientConfigRequest.
 
         :return: The body of this ExportClientConfigRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.ExportClientConfigRequestBody`
@@ -80,7 +80,7 @@ class ExportClientConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportClientConfigRequest.
+        r"""Sets the body of this ExportClientConfigRequest.
 
         :param body: The body of this ExportClientConfigRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.ExportClientConfigRequestBody`

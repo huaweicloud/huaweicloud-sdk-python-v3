@@ -43,7 +43,7 @@ class MainJob:
     }
 
     def __init__(self, status=None, begin_time=None, end_time=None, job_id=None, job_type=None, error_code=None, error_msg=None, project_id=None, resource_id=None, sub_jobs=None):
-        """MainJob
+        r"""MainJob
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class MainJob:
 
     @property
     def status(self):
-        """Gets the status of this MainJob.
+        r"""Gets the status of this MainJob.
 
         任务状态
 
@@ -117,7 +117,7 @@ class MainJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MainJob.
+        r"""Sets the status of this MainJob.
 
         任务状态
 
@@ -128,7 +128,7 @@ class MainJob:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this MainJob.
+        r"""Gets the begin_time of this MainJob.
 
         任务开始时间
 
@@ -139,7 +139,7 @@ class MainJob:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this MainJob.
+        r"""Sets the begin_time of this MainJob.
 
         任务开始时间
 
@@ -150,7 +150,7 @@ class MainJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MainJob.
+        r"""Gets the end_time of this MainJob.
 
         任务结束时间
 
@@ -161,7 +161,7 @@ class MainJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MainJob.
+        r"""Sets the end_time of this MainJob.
 
         任务结束时间
 
@@ -172,7 +172,7 @@ class MainJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this MainJob.
+        r"""Gets the job_id of this MainJob.
 
         任务ID
 
@@ -183,7 +183,7 @@ class MainJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this MainJob.
+        r"""Sets the job_id of this MainJob.
 
         任务ID
 
@@ -194,7 +194,7 @@ class MainJob:
 
     @property
     def job_type(self):
-        """Gets the job_type of this MainJob.
+        r"""Gets the job_type of this MainJob.
 
         任务类型
 
@@ -205,7 +205,7 @@ class MainJob:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this MainJob.
+        r"""Sets the job_type of this MainJob.
 
         任务类型
 
@@ -216,7 +216,7 @@ class MainJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this MainJob.
+        r"""Gets the error_code of this MainJob.
 
         任务的错误码
 
@@ -227,7 +227,7 @@ class MainJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this MainJob.
+        r"""Sets the error_code of this MainJob.
 
         任务的错误码
 
@@ -238,7 +238,7 @@ class MainJob:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this MainJob.
+        r"""Gets the error_msg of this MainJob.
 
         任务的错误信息
 
@@ -249,7 +249,7 @@ class MainJob:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this MainJob.
+        r"""Sets the error_msg of this MainJob.
 
         任务的错误信息
 
@@ -260,7 +260,7 @@ class MainJob:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MainJob.
+        r"""Gets the project_id of this MainJob.
 
         项目ID
 
@@ -271,7 +271,7 @@ class MainJob:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MainJob.
+        r"""Sets the project_id of this MainJob.
 
         项目ID
 
@@ -282,7 +282,7 @@ class MainJob:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this MainJob.
+        r"""Gets the resource_id of this MainJob.
 
         参数解释：资源ID。
 
@@ -293,7 +293,7 @@ class MainJob:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this MainJob.
+        r"""Sets the resource_id of this MainJob.
 
         参数解释：资源ID。
 
@@ -304,7 +304,7 @@ class MainJob:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this MainJob.
+        r"""Gets the sub_jobs of this MainJob.
 
         子任务列表
 
@@ -315,7 +315,7 @@ class MainJob:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this MainJob.
+        r"""Sets the sub_jobs of this MainJob.
 
         子任务列表
 

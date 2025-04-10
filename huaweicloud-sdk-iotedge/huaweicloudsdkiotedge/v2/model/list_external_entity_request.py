@@ -29,7 +29,7 @@ class ListExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, offset=None, limit=None):
-        """ListExternalEntityRequest
+        r"""ListExternalEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListExternalEntityRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ListExternalEntityRequest.
+        r"""Gets the edge_node_id of this ListExternalEntityRequest.
 
         边缘节点ID
 
@@ -67,7 +67,7 @@ class ListExternalEntityRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ListExternalEntityRequest.
+        r"""Sets the edge_node_id of this ListExternalEntityRequest.
 
         边缘节点ID
 
@@ -78,7 +78,7 @@ class ListExternalEntityRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListExternalEntityRequest.
+        r"""Gets the offset of this ListExternalEntityRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -89,7 +89,7 @@ class ListExternalEntityRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListExternalEntityRequest.
+        r"""Sets the offset of this ListExternalEntityRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -100,7 +100,7 @@ class ListExternalEntityRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListExternalEntityRequest.
+        r"""Gets the limit of this ListExternalEntityRequest.
 
         每页记录数，取值范围为非负整数，默认值为10
 
@@ -111,7 +111,7 @@ class ListExternalEntityRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListExternalEntityRequest.
+        r"""Sets the limit of this ListExternalEntityRequest.
 
         每页记录数，取值范围为非负整数，默认值为10
 

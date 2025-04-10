@@ -24,7 +24,7 @@ class BatchDeleteVhostsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteVhostsResponse
+        r"""BatchDeleteVhostsResponse
 
         The model defined in huaweicloud sdk
 

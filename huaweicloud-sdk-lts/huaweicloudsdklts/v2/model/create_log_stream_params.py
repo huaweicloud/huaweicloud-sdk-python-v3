@@ -33,7 +33,7 @@ class CreateLogStreamParams:
     }
 
     def __init__(self, log_stream_name=None, ttl_in_days=None, tags=None, log_stream_name_alias=None, enterprise_project_name=None):
-        """CreateLogStreamParams
+        r"""CreateLogStreamParams
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateLogStreamParams:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this CreateLogStreamParams.
+        r"""Gets the log_stream_name of this CreateLogStreamParams.
 
         需要创建的日志流名称。
 
@@ -81,7 +81,7 @@ class CreateLogStreamParams:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this CreateLogStreamParams.
+        r"""Sets the log_stream_name of this CreateLogStreamParams.
 
         需要创建的日志流名称。
 
@@ -92,7 +92,7 @@ class CreateLogStreamParams:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this CreateLogStreamParams.
+        r"""Gets the ttl_in_days of this CreateLogStreamParams.
 
         日志存储时间 说明： 该参数仅对华东-上海一、华北-北京四、华南-广州用户开放。
 
@@ -103,7 +103,7 @@ class CreateLogStreamParams:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this CreateLogStreamParams.
+        r"""Sets the ttl_in_days of this CreateLogStreamParams.
 
         日志存储时间 说明： 该参数仅对华东-上海一、华北-北京四、华南-广州用户开放。
 
@@ -114,7 +114,7 @@ class CreateLogStreamParams:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateLogStreamParams.
+        r"""Gets the tags of this CreateLogStreamParams.
 
         标签字段信息
 
@@ -125,7 +125,7 @@ class CreateLogStreamParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateLogStreamParams.
+        r"""Sets the tags of this CreateLogStreamParams.
 
         标签字段信息
 
@@ -136,7 +136,7 @@ class CreateLogStreamParams:
 
     @property
     def log_stream_name_alias(self):
-        """Gets the log_stream_name_alias of this CreateLogStreamParams.
+        r"""Gets the log_stream_name_alias of this CreateLogStreamParams.
 
         日志流名称别名
 
@@ -147,7 +147,7 @@ class CreateLogStreamParams:
 
     @log_stream_name_alias.setter
     def log_stream_name_alias(self, log_stream_name_alias):
-        """Sets the log_stream_name_alias of this CreateLogStreamParams.
+        r"""Sets the log_stream_name_alias of this CreateLogStreamParams.
 
         日志流名称别名
 
@@ -158,7 +158,7 @@ class CreateLogStreamParams:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this CreateLogStreamParams.
+        r"""Gets the enterprise_project_name of this CreateLogStreamParams.
 
         企业项目名称 >只能由中文、英文字母、数字、下划线、中划线组成，且不能使用任何大小写形式的“default”； 描述不超过512个字符。
 
@@ -169,7 +169,7 @@ class CreateLogStreamParams:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this CreateLogStreamParams.
+        r"""Sets the enterprise_project_name of this CreateLogStreamParams.
 
         企业项目名称 >只能由中文、英文字母、数字、下划线、中划线组成，且不能使用任何大小写形式的“default”； 描述不超过512个字符。
 

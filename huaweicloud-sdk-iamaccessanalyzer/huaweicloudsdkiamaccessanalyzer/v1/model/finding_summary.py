@@ -55,7 +55,7 @@ class FindingSummary:
     }
 
     def __init__(self, action=None, analyzed_at=None, condition=None, created_at=None, finding_type=None, id=None, is_public=None, principal=None, resource=None, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_type=None, sources=None, status=None, updated_at=None):
-        """FindingSummary
+        r"""FindingSummary
 
         The model defined in huaweicloud sdk
 
@@ -139,7 +139,7 @@ class FindingSummary:
 
     @property
     def action(self):
-        """Gets the action of this FindingSummary.
+        r"""Gets the action of this FindingSummary.
 
         允许外部主体使用的操作。
 
@@ -150,7 +150,7 @@ class FindingSummary:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this FindingSummary.
+        r"""Sets the action of this FindingSummary.
 
         允许外部主体使用的操作。
 
@@ -161,7 +161,7 @@ class FindingSummary:
 
     @property
     def analyzed_at(self):
-        """Gets the analyzed_at of this FindingSummary.
+        r"""Gets the analyzed_at of this FindingSummary.
 
         分析资源的时间。
 
@@ -172,7 +172,7 @@ class FindingSummary:
 
     @analyzed_at.setter
     def analyzed_at(self, analyzed_at):
-        """Sets the analyzed_at of this FindingSummary.
+        r"""Sets the analyzed_at of this FindingSummary.
 
         分析资源的时间。
 
@@ -183,7 +183,7 @@ class FindingSummary:
 
     @property
     def condition(self):
-        """Gets the condition of this FindingSummary.
+        r"""Gets the condition of this FindingSummary.
 
         分析的策略语句中导致访问分析结果的条件。
 
@@ -194,7 +194,7 @@ class FindingSummary:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this FindingSummary.
+        r"""Sets the condition of this FindingSummary.
 
         分析的策略语句中导致访问分析结果的条件。
 
@@ -205,7 +205,7 @@ class FindingSummary:
 
     @property
     def created_at(self):
-        """Gets the created_at of this FindingSummary.
+        r"""Gets the created_at of this FindingSummary.
 
         生成访问分析结果的时间。
 
@@ -216,7 +216,7 @@ class FindingSummary:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FindingSummary.
+        r"""Sets the created_at of this FindingSummary.
 
         生成访问分析结果的时间。
 
@@ -227,7 +227,7 @@ class FindingSummary:
 
     @property
     def finding_type(self):
-        """Gets the finding_type of this FindingSummary.
+        r"""Gets the finding_type of this FindingSummary.
 
         :return: The finding_type of this FindingSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
@@ -236,7 +236,7 @@ class FindingSummary:
 
     @finding_type.setter
     def finding_type(self, finding_type):
-        """Sets the finding_type of this FindingSummary.
+        r"""Sets the finding_type of this FindingSummary.
 
         :param finding_type: The finding_type of this FindingSummary.
         :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
@@ -245,7 +245,7 @@ class FindingSummary:
 
     @property
     def id(self):
-        """Gets the id of this FindingSummary.
+        r"""Gets the id of this FindingSummary.
 
         访问分析结果的唯一标识符。
 
@@ -256,7 +256,7 @@ class FindingSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FindingSummary.
+        r"""Sets the id of this FindingSummary.
 
         访问分析结果的唯一标识符。
 
@@ -267,7 +267,7 @@ class FindingSummary:
 
     @property
     def is_public(self):
-        """Gets the is_public of this FindingSummary.
+        r"""Gets the is_public of this FindingSummary.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -278,7 +278,7 @@ class FindingSummary:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this FindingSummary.
+        r"""Sets the is_public of this FindingSummary.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -289,7 +289,7 @@ class FindingSummary:
 
     @property
     def principal(self):
-        """Gets the principal of this FindingSummary.
+        r"""Gets the principal of this FindingSummary.
 
         :return: The principal of this FindingSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -298,7 +298,7 @@ class FindingSummary:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this FindingSummary.
+        r"""Sets the principal of this FindingSummary.
 
         :param principal: The principal of this FindingSummary.
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -307,7 +307,7 @@ class FindingSummary:
 
     @property
     def resource(self):
-        """Gets the resource of this FindingSummary.
+        r"""Gets the resource of this FindingSummary.
 
         资源的唯一资源标识符。
 
@@ -318,7 +318,7 @@ class FindingSummary:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this FindingSummary.
+        r"""Sets the resource of this FindingSummary.
 
         资源的唯一资源标识符。
 
@@ -329,7 +329,7 @@ class FindingSummary:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FindingSummary.
+        r"""Gets the resource_id of this FindingSummary.
 
         资源的唯一标识符。
 
@@ -340,7 +340,7 @@ class FindingSummary:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FindingSummary.
+        r"""Sets the resource_id of this FindingSummary.
 
         资源的唯一标识符。
 
@@ -351,7 +351,7 @@ class FindingSummary:
 
     @property
     def resource_owner_account(self):
-        """Gets the resource_owner_account of this FindingSummary.
+        r"""Gets the resource_owner_account of this FindingSummary.
 
         拥有资源的账号ID。
 
@@ -362,7 +362,7 @@ class FindingSummary:
 
     @resource_owner_account.setter
     def resource_owner_account(self, resource_owner_account):
-        """Sets the resource_owner_account of this FindingSummary.
+        r"""Sets the resource_owner_account of this FindingSummary.
 
         拥有资源的账号ID。
 
@@ -373,7 +373,7 @@ class FindingSummary:
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this FindingSummary.
+        r"""Gets the resource_project_id of this FindingSummary.
 
         资源所属的项目标识符
 
@@ -384,7 +384,7 @@ class FindingSummary:
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this FindingSummary.
+        r"""Sets the resource_project_id of this FindingSummary.
 
         资源所属的项目标识符
 
@@ -395,7 +395,7 @@ class FindingSummary:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FindingSummary.
+        r"""Gets the resource_type of this FindingSummary.
 
         :return: The resource_type of this FindingSummary.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
@@ -404,7 +404,7 @@ class FindingSummary:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FindingSummary.
+        r"""Sets the resource_type of this FindingSummary.
 
         :param resource_type: The resource_type of this FindingSummary.
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
@@ -413,7 +413,7 @@ class FindingSummary:
 
     @property
     def sources(self):
-        """Gets the sources of this FindingSummary.
+        r"""Gets the sources of this FindingSummary.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -424,7 +424,7 @@ class FindingSummary:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this FindingSummary.
+        r"""Sets the sources of this FindingSummary.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -435,7 +435,7 @@ class FindingSummary:
 
     @property
     def status(self):
-        """Gets the status of this FindingSummary.
+        r"""Gets the status of this FindingSummary.
 
         访问分析结果当前状态。
 
@@ -446,7 +446,7 @@ class FindingSummary:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FindingSummary.
+        r"""Sets the status of this FindingSummary.
 
         访问分析结果当前状态。
 
@@ -457,7 +457,7 @@ class FindingSummary:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FindingSummary.
+        r"""Gets the updated_at of this FindingSummary.
 
         更新访问分析结果的时间。
 
@@ -468,7 +468,7 @@ class FindingSummary:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FindingSummary.
+        r"""Sets the updated_at of this FindingSummary.
 
         更新访问分析结果的时间。
 

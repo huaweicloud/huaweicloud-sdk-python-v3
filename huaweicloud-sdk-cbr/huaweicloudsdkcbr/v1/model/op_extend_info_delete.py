@@ -27,7 +27,7 @@ class OpExtendInfoDelete:
     }
 
     def __init__(self, backup_id=None, backup_name=None):
-        """OpExtendInfoDelete
+        r"""OpExtendInfoDelete
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpExtendInfoDelete:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this OpExtendInfoDelete.
+        r"""Gets the backup_id of this OpExtendInfoDelete.
 
         备份副本ID
 
@@ -59,7 +59,7 @@ class OpExtendInfoDelete:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this OpExtendInfoDelete.
+        r"""Sets the backup_id of this OpExtendInfoDelete.
 
         备份副本ID
 
@@ -70,7 +70,7 @@ class OpExtendInfoDelete:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this OpExtendInfoDelete.
+        r"""Gets the backup_name of this OpExtendInfoDelete.
 
         备份名称
 
@@ -81,7 +81,7 @@ class OpExtendInfoDelete:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this OpExtendInfoDelete.
+        r"""Sets the backup_name of this OpExtendInfoDelete.
 
         备份名称
 

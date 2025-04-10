@@ -27,7 +27,7 @@ class TagsInfo:
     }
 
     def __init__(self, key=None, value=None):
-        """TagsInfo
+        r"""TagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagsInfo:
 
     @property
     def key(self):
-        """Gets the key of this TagsInfo.
+        r"""Gets the key of this TagsInfo.
 
         功能说明：键。同一资源的key值不能重复。
 
@@ -61,7 +61,7 @@ class TagsInfo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagsInfo.
+        r"""Sets the key of this TagsInfo.
 
         功能说明：键。同一资源的key值不能重复。
 
@@ -72,7 +72,7 @@ class TagsInfo:
 
     @property
     def value(self):
-        """Gets the value of this TagsInfo.
+        r"""Gets the value of this TagsInfo.
 
         功能说明：值列表。
 
@@ -83,7 +83,7 @@ class TagsInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagsInfo.
+        r"""Sets the value of this TagsInfo.
 
         功能说明：值列表。
 

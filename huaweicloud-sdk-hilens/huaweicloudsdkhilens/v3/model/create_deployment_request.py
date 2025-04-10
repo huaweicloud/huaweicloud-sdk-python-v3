@@ -29,7 +29,7 @@ class CreateDeploymentRequest:
     }
 
     def __init__(self, provider=None, x_expired_time=None, body=None):
-        """CreateDeploymentRequest
+        r"""CreateDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateDeploymentRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this CreateDeploymentRequest.
+        r"""Gets the provider of this CreateDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据
 
@@ -68,7 +68,7 @@ class CreateDeploymentRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this CreateDeploymentRequest.
+        r"""Sets the provider of this CreateDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据
 
@@ -79,7 +79,7 @@ class CreateDeploymentRequest:
 
     @property
     def x_expired_time(self):
-        """Gets the x_expired_time of this CreateDeploymentRequest.
+        r"""Gets the x_expired_time of this CreateDeploymentRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 
@@ -90,7 +90,7 @@ class CreateDeploymentRequest:
 
     @x_expired_time.setter
     def x_expired_time(self, x_expired_time):
-        """Sets the x_expired_time of this CreateDeploymentRequest.
+        r"""Sets the x_expired_time of this CreateDeploymentRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 
@@ -101,7 +101,7 @@ class CreateDeploymentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeploymentRequest.
+        r"""Gets the body of this CreateDeploymentRequest.
 
         :return: The body of this CreateDeploymentRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentCreateRequest`
@@ -110,7 +110,7 @@ class CreateDeploymentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeploymentRequest.
+        r"""Sets the body of this CreateDeploymentRequest.
 
         :param body: The body of this CreateDeploymentRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.DeploymentCreateRequest`

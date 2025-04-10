@@ -33,7 +33,7 @@ class ListHtapFlavorRequest:
     }
 
     def __init__(self, engine_name=None, availability_zone_mode=None, spec_code=None, x_language=None, version_name=None):
-        """ListHtapFlavorRequest
+        r"""ListHtapFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListHtapFlavorRequest:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListHtapFlavorRequest.
+        r"""Gets the engine_name of this ListHtapFlavorRequest.
 
         HTAP引擎名。 取值范围： - star-rocks - click-house
 
@@ -81,7 +81,7 @@ class ListHtapFlavorRequest:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListHtapFlavorRequest.
+        r"""Sets the engine_name of this ListHtapFlavorRequest.
 
         HTAP引擎名。 取值范围： - star-rocks - click-house
 
@@ -92,7 +92,7 @@ class ListHtapFlavorRequest:
 
     @property
     def availability_zone_mode(self):
-        """Gets the availability_zone_mode of this ListHtapFlavorRequest.
+        r"""Gets the availability_zone_mode of this ListHtapFlavorRequest.
 
         可用区模式，当前仅支持single。
 
@@ -103,7 +103,7 @@ class ListHtapFlavorRequest:
 
     @availability_zone_mode.setter
     def availability_zone_mode(self, availability_zone_mode):
-        """Sets the availability_zone_mode of this ListHtapFlavorRequest.
+        r"""Sets the availability_zone_mode of this ListHtapFlavorRequest.
 
         可用区模式，当前仅支持single。
 
@@ -114,7 +114,7 @@ class ListHtapFlavorRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListHtapFlavorRequest.
+        r"""Gets the spec_code of this ListHtapFlavorRequest.
 
         规格码，提供后仅查询指定规格码规格信息。
 
@@ -125,7 +125,7 @@ class ListHtapFlavorRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListHtapFlavorRequest.
+        r"""Sets the spec_code of this ListHtapFlavorRequest.
 
         规格码，提供后仅查询指定规格码规格信息。
 
@@ -136,7 +136,7 @@ class ListHtapFlavorRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHtapFlavorRequest.
+        r"""Gets the x_language of this ListHtapFlavorRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -147,7 +147,7 @@ class ListHtapFlavorRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHtapFlavorRequest.
+        r"""Sets the x_language of this ListHtapFlavorRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -158,7 +158,7 @@ class ListHtapFlavorRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ListHtapFlavorRequest.
+        r"""Gets the version_name of this ListHtapFlavorRequest.
 
         数据库版本号，不填默认3.1.6.0。
 
@@ -169,7 +169,7 @@ class ListHtapFlavorRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ListHtapFlavorRequest.
+        r"""Sets the version_name of this ListHtapFlavorRequest.
 
         数据库版本号，不填默认3.1.6.0。
 

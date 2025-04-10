@@ -29,7 +29,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListUsersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListUsersRequest.
+        r"""Gets the instance_id of this ListUsersRequest.
 
         DDM实例ID。
 
@@ -67,7 +67,7 @@ class ListUsersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListUsersRequest.
+        r"""Sets the instance_id of this ListUsersRequest.
 
         DDM实例ID。
 
@@ -78,7 +78,7 @@ class ListUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsersRequest.
+        r"""Gets the offset of this ListUsersRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -89,7 +89,7 @@ class ListUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsersRequest.
+        r"""Sets the offset of this ListUsersRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -100,7 +100,7 @@ class ListUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersRequest.
+        r"""Gets the limit of this ListUsersRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
@@ -111,7 +111,7 @@ class ListUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersRequest.
+        r"""Sets the limit of this ListUsersRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 

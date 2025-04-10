@@ -31,7 +31,7 @@ class MigrationRabbitExchangeMetadata:
     }
 
     def __init__(self, vhost=None, name=None, type=None, durable=None):
-        """MigrationRabbitExchangeMetadata
+        r"""MigrationRabbitExchangeMetadata
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MigrationRabbitExchangeMetadata:
 
     @property
     def vhost(self):
-        """Gets the vhost of this MigrationRabbitExchangeMetadata.
+        r"""Gets the vhost of this MigrationRabbitExchangeMetadata.
 
         vhost名称。
 
@@ -75,7 +75,7 @@ class MigrationRabbitExchangeMetadata:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this MigrationRabbitExchangeMetadata.
+        r"""Sets the vhost of this MigrationRabbitExchangeMetadata.
 
         vhost名称。
 
@@ -86,7 +86,7 @@ class MigrationRabbitExchangeMetadata:
 
     @property
     def name(self):
-        """Gets the name of this MigrationRabbitExchangeMetadata.
+        r"""Gets the name of this MigrationRabbitExchangeMetadata.
 
         交换机名称。
 
@@ -97,7 +97,7 @@ class MigrationRabbitExchangeMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MigrationRabbitExchangeMetadata.
+        r"""Sets the name of this MigrationRabbitExchangeMetadata.
 
         交换机名称。
 
@@ -108,7 +108,7 @@ class MigrationRabbitExchangeMetadata:
 
     @property
     def type(self):
-        """Gets the type of this MigrationRabbitExchangeMetadata.
+        r"""Gets the type of this MigrationRabbitExchangeMetadata.
 
         交换机类型。
 
@@ -119,7 +119,7 @@ class MigrationRabbitExchangeMetadata:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MigrationRabbitExchangeMetadata.
+        r"""Sets the type of this MigrationRabbitExchangeMetadata.
 
         交换机类型。
 
@@ -130,7 +130,7 @@ class MigrationRabbitExchangeMetadata:
 
     @property
     def durable(self):
-        """Gets the durable of this MigrationRabbitExchangeMetadata.
+        r"""Gets the durable of this MigrationRabbitExchangeMetadata.
 
         是否持久化。
 
@@ -141,7 +141,7 @@ class MigrationRabbitExchangeMetadata:
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this MigrationRabbitExchangeMetadata.
+        r"""Sets the durable of this MigrationRabbitExchangeMetadata.
 
         是否持久化。
 

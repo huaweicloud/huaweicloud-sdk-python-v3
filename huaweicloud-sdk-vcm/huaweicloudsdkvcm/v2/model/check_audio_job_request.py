@@ -25,7 +25,7 @@ class CheckAudioJobRequest:
     }
 
     def __init__(self, task_id=None):
-        """CheckAudioJobRequest
+        r"""CheckAudioJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckAudioJobRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CheckAudioJobRequest.
+        r"""Gets the task_id of this CheckAudioJobRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class CheckAudioJobRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CheckAudioJobRequest.
+        r"""Sets the task_id of this CheckAudioJobRequest.
 
         任务ID
 

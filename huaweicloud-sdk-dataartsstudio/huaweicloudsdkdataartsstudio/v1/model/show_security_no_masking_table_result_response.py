@@ -28,7 +28,7 @@ class ShowSecurityNoMaskingTableResultResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tables=None):
-        """ShowSecurityNoMaskingTableResultResponse
+        r"""ShowSecurityNoMaskingTableResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSecurityNoMaskingTableResultResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowSecurityNoMaskingTableResultResponse.
+        r"""Gets the total of this ShowSecurityNoMaskingTableResultResponse.
 
         表总数
 
@@ -62,7 +62,7 @@ class ShowSecurityNoMaskingTableResultResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowSecurityNoMaskingTableResultResponse.
+        r"""Sets the total of this ShowSecurityNoMaskingTableResultResponse.
 
         表总数
 
@@ -73,7 +73,7 @@ class ShowSecurityNoMaskingTableResultResponse(SdkResponse):
 
     @property
     def tables(self):
-        """Gets the tables of this ShowSecurityNoMaskingTableResultResponse.
+        r"""Gets the tables of this ShowSecurityNoMaskingTableResultResponse.
 
         查询的表集合
 
@@ -84,7 +84,7 @@ class ShowSecurityNoMaskingTableResultResponse(SdkResponse):
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ShowSecurityNoMaskingTableResultResponse.
+        r"""Sets the tables of this ShowSecurityNoMaskingTableResultResponse.
 
         查询的表集合
 

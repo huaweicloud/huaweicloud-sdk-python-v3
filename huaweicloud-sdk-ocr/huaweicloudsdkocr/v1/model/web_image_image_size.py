@@ -27,7 +27,7 @@ class WebImageImageSize:
     }
 
     def __init__(self, height=None, width=None):
-        """WebImageImageSize
+        r"""WebImageImageSize
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WebImageImageSize:
 
     @property
     def height(self):
-        """Gets the height of this WebImageImageSize.
+        r"""Gets the height of this WebImageImageSize.
 
         传入image_size时的返回，为图像高度。 
 
@@ -61,7 +61,7 @@ class WebImageImageSize:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this WebImageImageSize.
+        r"""Sets the height of this WebImageImageSize.
 
         传入image_size时的返回，为图像高度。 
 
@@ -72,7 +72,7 @@ class WebImageImageSize:
 
     @property
     def width(self):
-        """Gets the width of this WebImageImageSize.
+        r"""Gets the width of this WebImageImageSize.
 
         传入image_size时的返回，为图像宽度。 
 
@@ -83,7 +83,7 @@ class WebImageImageSize:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this WebImageImageSize.
+        r"""Sets the width of this WebImageImageSize.
 
         传入image_size时的返回，为图像宽度。 
 

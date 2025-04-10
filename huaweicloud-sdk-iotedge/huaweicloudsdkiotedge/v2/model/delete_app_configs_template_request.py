@@ -25,7 +25,7 @@ class DeleteAppConfigsTemplateRequest:
     }
 
     def __init__(self, tpl_id=None):
-        """DeleteAppConfigsTemplateRequest
+        r"""DeleteAppConfigsTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAppConfigsTemplateRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this DeleteAppConfigsTemplateRequest.
+        r"""Gets the tpl_id of this DeleteAppConfigsTemplateRequest.
 
         模板id，节点下唯一。
 
@@ -53,7 +53,7 @@ class DeleteAppConfigsTemplateRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this DeleteAppConfigsTemplateRequest.
+        r"""Sets the tpl_id of this DeleteAppConfigsTemplateRequest.
 
         模板id，节点下唯一。
 

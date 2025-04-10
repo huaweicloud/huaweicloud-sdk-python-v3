@@ -30,7 +30,7 @@ class RunSqlConversionResponse(SdkResponse):
     }
 
     def __init__(self, is_support_conversion=None, converted_sql_statement=None, unsupported_items=None):
-        """RunSqlConversionResponse
+        r"""RunSqlConversionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunSqlConversionResponse(SdkResponse):
 
     @property
     def is_support_conversion(self):
-        """Gets the is_support_conversion of this RunSqlConversionResponse.
+        r"""Gets the is_support_conversion of this RunSqlConversionResponse.
 
         是否支持SQL语句转换。
 
@@ -69,7 +69,7 @@ class RunSqlConversionResponse(SdkResponse):
 
     @is_support_conversion.setter
     def is_support_conversion(self, is_support_conversion):
-        """Sets the is_support_conversion of this RunSqlConversionResponse.
+        r"""Sets the is_support_conversion of this RunSqlConversionResponse.
 
         是否支持SQL语句转换。
 
@@ -80,7 +80,7 @@ class RunSqlConversionResponse(SdkResponse):
 
     @property
     def converted_sql_statement(self):
-        """Gets the converted_sql_statement of this RunSqlConversionResponse.
+        r"""Gets the converted_sql_statement of this RunSqlConversionResponse.
 
         转换后的SQL语句。
 
@@ -91,7 +91,7 @@ class RunSqlConversionResponse(SdkResponse):
 
     @converted_sql_statement.setter
     def converted_sql_statement(self, converted_sql_statement):
-        """Sets the converted_sql_statement of this RunSqlConversionResponse.
+        r"""Sets the converted_sql_statement of this RunSqlConversionResponse.
 
         转换后的SQL语句。
 
@@ -102,7 +102,7 @@ class RunSqlConversionResponse(SdkResponse):
 
     @property
     def unsupported_items(self):
-        """Gets the unsupported_items of this RunSqlConversionResponse.
+        r"""Gets the unsupported_items of this RunSqlConversionResponse.
 
         不支持SQL语句转换的详情。
 
@@ -113,7 +113,7 @@ class RunSqlConversionResponse(SdkResponse):
 
     @unsupported_items.setter
     def unsupported_items(self, unsupported_items):
-        """Sets the unsupported_items of this RunSqlConversionResponse.
+        r"""Sets the unsupported_items of this RunSqlConversionResponse.
 
         不支持SQL语句转换的详情。
 

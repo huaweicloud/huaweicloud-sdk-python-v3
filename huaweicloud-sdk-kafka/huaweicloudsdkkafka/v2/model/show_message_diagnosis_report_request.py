@@ -27,7 +27,7 @@ class ShowMessageDiagnosisReportRequest:
     }
 
     def __init__(self, instance_id=None, report_id=None):
-        """ShowMessageDiagnosisReportRequest
+        r"""ShowMessageDiagnosisReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMessageDiagnosisReportRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowMessageDiagnosisReportRequest.
+        r"""Gets the instance_id of this ShowMessageDiagnosisReportRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowMessageDiagnosisReportRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowMessageDiagnosisReportRequest.
+        r"""Sets the instance_id of this ShowMessageDiagnosisReportRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowMessageDiagnosisReportRequest:
 
     @property
     def report_id(self):
-        """Gets the report_id of this ShowMessageDiagnosisReportRequest.
+        r"""Gets the report_id of this ShowMessageDiagnosisReportRequest.
 
         消息积压诊断报告ID
 
@@ -81,7 +81,7 @@ class ShowMessageDiagnosisReportRequest:
 
     @report_id.setter
     def report_id(self, report_id):
-        """Sets the report_id of this ShowMessageDiagnosisReportRequest.
+        r"""Sets the report_id of this ShowMessageDiagnosisReportRequest.
 
         消息积压诊断报告ID
 

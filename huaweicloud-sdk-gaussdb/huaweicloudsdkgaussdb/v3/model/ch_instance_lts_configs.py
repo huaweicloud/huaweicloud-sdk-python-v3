@@ -27,7 +27,7 @@ class ChInstanceLtsConfigs:
     }
 
     def __init__(self, lts_configs=None, instance=None):
-        """ChInstanceLtsConfigs
+        r"""ChInstanceLtsConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChInstanceLtsConfigs:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this ChInstanceLtsConfigs.
+        r"""Gets the lts_configs of this ChInstanceLtsConfigs.
 
         实例LTS配置信息。
 
@@ -61,7 +61,7 @@ class ChInstanceLtsConfigs:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this ChInstanceLtsConfigs.
+        r"""Sets the lts_configs of this ChInstanceLtsConfigs.
 
         实例LTS配置信息。
 
@@ -72,7 +72,7 @@ class ChInstanceLtsConfigs:
 
     @property
     def instance(self):
-        """Gets the instance of this ChInstanceLtsConfigs.
+        r"""Gets the instance of this ChInstanceLtsConfigs.
 
         :return: The instance of this ChInstanceLtsConfigs.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChInstanceLtsConfigsInstance`
@@ -81,7 +81,7 @@ class ChInstanceLtsConfigs:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ChInstanceLtsConfigs.
+        r"""Sets the instance of this ChInstanceLtsConfigs.
 
         :param instance: The instance of this ChInstanceLtsConfigs.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.ChInstanceLtsConfigsInstance`

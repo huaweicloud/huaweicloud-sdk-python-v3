@@ -28,7 +28,7 @@ class ShowLogicalProcessesResponse(SdkResponse):
     }
 
     def __init__(self, logical_processes=None, total_count=None):
-        """ShowLogicalProcessesResponse
+        r"""ShowLogicalProcessesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowLogicalProcessesResponse(SdkResponse):
 
     @property
     def logical_processes(self):
-        """Gets the logical_processes of this ShowLogicalProcessesResponse.
+        r"""Gets the logical_processes of this ShowLogicalProcessesResponse.
 
         逻辑会话列表
 
@@ -62,7 +62,7 @@ class ShowLogicalProcessesResponse(SdkResponse):
 
     @logical_processes.setter
     def logical_processes(self, logical_processes):
-        """Sets the logical_processes of this ShowLogicalProcessesResponse.
+        r"""Sets the logical_processes of this ShowLogicalProcessesResponse.
 
         逻辑会话列表
 
@@ -73,7 +73,7 @@ class ShowLogicalProcessesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowLogicalProcessesResponse.
+        r"""Gets the total_count of this ShowLogicalProcessesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowLogicalProcessesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowLogicalProcessesResponse.
+        r"""Sets the total_count of this ShowLogicalProcessesResponse.
 
         总数
 

@@ -51,7 +51,7 @@ class RuleAddressDtoForRequest:
     }
 
     def __init__(self, type=None, address_type=None, address=None, address_set_id=None, address_set_name=None, domain_address_name=None, region_list_json=None, region_list=None, domain_set_id=None, domain_set_name=None, ip_address=None, address_set_type=None, predefined_group=None, address_group=None):
-        """RuleAddressDtoForRequest
+        r"""RuleAddressDtoForRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def type(self):
-        """Gets the type of this RuleAddressDtoForRequest.
+        r"""Gets the type of this RuleAddressDtoForRequest.
 
         输入类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-网络型，7域名组-应用型。
 
@@ -144,7 +144,7 @@ class RuleAddressDtoForRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleAddressDtoForRequest.
+        r"""Sets the type of this RuleAddressDtoForRequest.
 
         输入类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-网络型，7域名组-应用型。
 
@@ -155,7 +155,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this RuleAddressDtoForRequest.
+        r"""Gets the address_type of this RuleAddressDtoForRequest.
 
         地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
 
@@ -166,7 +166,7 @@ class RuleAddressDtoForRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this RuleAddressDtoForRequest.
+        r"""Sets the address_type of this RuleAddressDtoForRequest.
 
         地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
 
@@ -177,7 +177,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def address(self):
-        """Gets the address of this RuleAddressDtoForRequest.
+        r"""Gets the address of this RuleAddressDtoForRequest.
 
         IP地址信息，当type为0手动输入类型时不能为空
 
@@ -188,7 +188,7 @@ class RuleAddressDtoForRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this RuleAddressDtoForRequest.
+        r"""Sets the address of this RuleAddressDtoForRequest.
 
         IP地址信息，当type为0手动输入类型时不能为空
 
@@ -199,7 +199,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def address_set_id(self):
-        """Gets the address_set_id of this RuleAddressDtoForRequest.
+        r"""Gets the address_set_id of this RuleAddressDtoForRequest.
 
         关联IP地址组ID，当type为1关联IP地址组类型时不能为空，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -210,7 +210,7 @@ class RuleAddressDtoForRequest:
 
     @address_set_id.setter
     def address_set_id(self, address_set_id):
-        """Sets the address_set_id of this RuleAddressDtoForRequest.
+        r"""Sets the address_set_id of this RuleAddressDtoForRequest.
 
         关联IP地址组ID，当type为1关联IP地址组类型时不能为空，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -221,7 +221,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def address_set_name(self):
-        """Gets the address_set_name of this RuleAddressDtoForRequest.
+        r"""Gets the address_set_name of this RuleAddressDtoForRequest.
 
         关联IP地址组名称，当type为1关联IP地址组类型时不能为空，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
@@ -232,7 +232,7 @@ class RuleAddressDtoForRequest:
 
     @address_set_name.setter
     def address_set_name(self, address_set_name):
-        """Sets the address_set_name of this RuleAddressDtoForRequest.
+        r"""Sets the address_set_name of this RuleAddressDtoForRequest.
 
         关联IP地址组名称，当type为1关联IP地址组类型时不能为空，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
@@ -243,7 +243,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def domain_address_name(self):
-        """Gets the domain_address_name of this RuleAddressDtoForRequest.
+        r"""Gets the domain_address_name of this RuleAddressDtoForRequest.
 
         type为2（域名）和7（应用域名组）具体内容根据type中7修改后的类型名称
 
@@ -254,7 +254,7 @@ class RuleAddressDtoForRequest:
 
     @domain_address_name.setter
     def domain_address_name(self, domain_address_name):
-        """Sets the domain_address_name of this RuleAddressDtoForRequest.
+        r"""Sets the domain_address_name of this RuleAddressDtoForRequest.
 
         type为2（域名）和7（应用域名组）具体内容根据type中7修改后的类型名称
 
@@ -265,7 +265,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def region_list_json(self):
-        """Gets the region_list_json of this RuleAddressDtoForRequest.
+        r"""Gets the region_list_json of this RuleAddressDtoForRequest.
 
         规则地域列表json值
 
@@ -276,7 +276,7 @@ class RuleAddressDtoForRequest:
 
     @region_list_json.setter
     def region_list_json(self, region_list_json):
-        """Sets the region_list_json of this RuleAddressDtoForRequest.
+        r"""Sets the region_list_json of this RuleAddressDtoForRequest.
 
         规则地域列表json值
 
@@ -287,7 +287,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def region_list(self):
-        """Gets the region_list of this RuleAddressDtoForRequest.
+        r"""Gets the region_list of this RuleAddressDtoForRequest.
 
         规则地域列表
 
@@ -298,7 +298,7 @@ class RuleAddressDtoForRequest:
 
     @region_list.setter
     def region_list(self, region_list):
-        """Sets the region_list of this RuleAddressDtoForRequest.
+        r"""Sets the region_list of this RuleAddressDtoForRequest.
 
         规则地域列表
 
@@ -309,7 +309,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def domain_set_id(self):
-        """Gets the domain_set_id of this RuleAddressDtoForRequest.
+        r"""Gets the domain_set_id of this RuleAddressDtoForRequest.
 
         域名组id，type为4（域名组）或7（域名组-应用型）时不能为空。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -320,7 +320,7 @@ class RuleAddressDtoForRequest:
 
     @domain_set_id.setter
     def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this RuleAddressDtoForRequest.
+        r"""Sets the domain_set_id of this RuleAddressDtoForRequest.
 
         域名组id，type为4（域名组）或7（域名组-应用型）时不能为空。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -331,7 +331,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def domain_set_name(self):
-        """Gets the domain_set_name of this RuleAddressDtoForRequest.
+        r"""Gets the domain_set_name of this RuleAddressDtoForRequest.
 
         域名组名称，type为4（域名组）或7（域名组-应用型）时不能为空。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
@@ -342,7 +342,7 @@ class RuleAddressDtoForRequest:
 
     @domain_set_name.setter
     def domain_set_name(self, domain_set_name):
-        """Sets the domain_set_name of this RuleAddressDtoForRequest.
+        r"""Sets the domain_set_name of this RuleAddressDtoForRequest.
 
         域名组名称，type为4（域名组）或7（域名组-应用型）时不能为空。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
@@ -353,7 +353,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this RuleAddressDtoForRequest.
+        r"""Gets the ip_address of this RuleAddressDtoForRequest.
 
         IP地址列表，当type为5（多对象）时不能为空。
 
@@ -364,7 +364,7 @@ class RuleAddressDtoForRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this RuleAddressDtoForRequest.
+        r"""Sets the ip_address of this RuleAddressDtoForRequest.
 
         IP地址列表，当type为5（多对象）时不能为空。
 
@@ -375,7 +375,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def address_set_type(self):
-        """Gets the address_set_type of this RuleAddressDtoForRequest.
+        r"""Gets the address_set_type of this RuleAddressDtoForRequest.
 
         地址组类型，当type为1（关联IP地址组）时不能为空。0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -386,7 +386,7 @@ class RuleAddressDtoForRequest:
 
     @address_set_type.setter
     def address_set_type(self, address_set_type):
-        """Sets the address_set_type of this RuleAddressDtoForRequest.
+        r"""Sets the address_set_type of this RuleAddressDtoForRequest.
 
         地址组类型，当type为1（关联IP地址组）时不能为空。0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -397,7 +397,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def predefined_group(self):
-        """Gets the predefined_group of this RuleAddressDtoForRequest.
+        r"""Gets the predefined_group of this RuleAddressDtoForRequest.
 
         预定义地址组id列表，当type为5（多对象）时不能为空。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为1预定义地址组。
 
@@ -408,7 +408,7 @@ class RuleAddressDtoForRequest:
 
     @predefined_group.setter
     def predefined_group(self, predefined_group):
-        """Sets the predefined_group of this RuleAddressDtoForRequest.
+        r"""Sets the predefined_group of this RuleAddressDtoForRequest.
 
         预定义地址组id列表，当type为5（多对象）时不能为空。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为1预定义地址组。
 
@@ -419,7 +419,7 @@ class RuleAddressDtoForRequest:
 
     @property
     def address_group(self):
-        """Gets the address_group of this RuleAddressDtoForRequest.
+        r"""Gets the address_group of this RuleAddressDtoForRequest.
 
         地址组id列表，当type为5（多对象）时不能为空。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为0自定义地址组。
 
@@ -430,7 +430,7 @@ class RuleAddressDtoForRequest:
 
     @address_group.setter
     def address_group(self, address_group):
-        """Sets the address_group of this RuleAddressDtoForRequest.
+        r"""Sets the address_group of this RuleAddressDtoForRequest.
 
         地址组id列表，当type为5（多对象）时不能为空。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为0自定义地址组。
 

@@ -33,7 +33,7 @@ class ListMyActionTemplateRequest:
     }
 
     def __init__(self, prefix=None, status=None, category=None, offset=None, limit=None):
-        """ListMyActionTemplateRequest
+        r"""ListMyActionTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListMyActionTemplateRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListMyActionTemplateRequest.
+        r"""Gets the prefix of this ListMyActionTemplateRequest.
 
         模板前缀。
 
@@ -82,7 +82,7 @@ class ListMyActionTemplateRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListMyActionTemplateRequest.
+        r"""Sets the prefix of this ListMyActionTemplateRequest.
 
         模板前缀。
 
@@ -93,7 +93,7 @@ class ListMyActionTemplateRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListMyActionTemplateRequest.
+        r"""Gets the status of this ListMyActionTemplateRequest.
 
         第三方算子模板的注册状态。包括init_created, submit_approve, approved_nok, approved_ok, deprecate_approve, deprecated。init_created：已创建，submit_approve：提交审核，approved_nok：审核未通过，approved_ok：审核通过，deprecate_approve：提交禁用审核，deprecated：已禁用。
 
@@ -104,7 +104,7 @@ class ListMyActionTemplateRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMyActionTemplateRequest.
+        r"""Sets the status of this ListMyActionTemplateRequest.
 
         第三方算子模板的注册状态。包括init_created, submit_approve, approved_nok, approved_ok, deprecate_approve, deprecated。init_created：已创建，submit_approve：提交审核，approved_nok：审核未通过，approved_ok：审核通过，deprecate_approve：提交禁用审核，deprecated：已禁用。
 
@@ -115,7 +115,7 @@ class ListMyActionTemplateRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListMyActionTemplateRequest.
+        r"""Gets the category of this ListMyActionTemplateRequest.
 
         第三方算子模板的分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -126,7 +126,7 @@ class ListMyActionTemplateRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListMyActionTemplateRequest.
+        r"""Sets the category of this ListMyActionTemplateRequest.
 
         第三方算子模板的分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -137,7 +137,7 @@ class ListMyActionTemplateRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMyActionTemplateRequest.
+        r"""Gets the offset of this ListMyActionTemplateRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -148,7 +148,7 @@ class ListMyActionTemplateRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMyActionTemplateRequest.
+        r"""Sets the offset of this ListMyActionTemplateRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -159,7 +159,7 @@ class ListMyActionTemplateRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMyActionTemplateRequest.
+        r"""Gets the limit of this ListMyActionTemplateRequest.
 
         分页查询，每页显示的条目数量。
 
@@ -170,7 +170,7 @@ class ListMyActionTemplateRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMyActionTemplateRequest.
+        r"""Sets the limit of this ListMyActionTemplateRequest.
 
         分页查询，每页显示的条目数量。
 

@@ -29,7 +29,7 @@ class PrecheckFailSubJobVO:
     }
 
     def __init__(self, id=None, name=None, check_result=None):
-        """PrecheckFailSubJobVO
+        r"""PrecheckFailSubJobVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PrecheckFailSubJobVO:
 
     @property
     def id(self):
-        """Gets the id of this PrecheckFailSubJobVO.
+        r"""Gets the id of this PrecheckFailSubJobVO.
 
         预检查失败子任务id。
 
@@ -68,7 +68,7 @@ class PrecheckFailSubJobVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrecheckFailSubJobVO.
+        r"""Sets the id of this PrecheckFailSubJobVO.
 
         预检查失败子任务id。
 
@@ -79,7 +79,7 @@ class PrecheckFailSubJobVO:
 
     @property
     def name(self):
-        """Gets the name of this PrecheckFailSubJobVO.
+        r"""Gets the name of this PrecheckFailSubJobVO.
 
         预检查失败子任务名称。
 
@@ -90,7 +90,7 @@ class PrecheckFailSubJobVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PrecheckFailSubJobVO.
+        r"""Sets the name of this PrecheckFailSubJobVO.
 
         预检查失败子任务名称。
 
@@ -101,7 +101,7 @@ class PrecheckFailSubJobVO:
 
     @property
     def check_result(self):
-        """Gets the check_result of this PrecheckFailSubJobVO.
+        r"""Gets the check_result of this PrecheckFailSubJobVO.
 
         检查结果。
 
@@ -112,7 +112,7 @@ class PrecheckFailSubJobVO:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this PrecheckFailSubJobVO.
+        r"""Sets the check_result of this PrecheckFailSubJobVO.
 
         检查结果。
 

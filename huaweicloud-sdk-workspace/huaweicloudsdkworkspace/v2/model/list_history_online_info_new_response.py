@@ -26,7 +26,7 @@ class ListHistoryOnlineInfoNewResponse(SdkResponse):
     }
 
     def __init__(self, time_counts=None):
-        """ListHistoryOnlineInfoNewResponse
+        r"""ListHistoryOnlineInfoNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHistoryOnlineInfoNewResponse(SdkResponse):
 
     @property
     def time_counts(self):
-        """Gets the time_counts of this ListHistoryOnlineInfoNewResponse.
+        r"""Gets the time_counts of this ListHistoryOnlineInfoNewResponse.
 
         返回前端历史登录信息。查询的时间和计数之间用冒号分隔。查询的时间，按Day查询或时间段在同一天时，按小时计数，其他场景为按天计数。
 
@@ -55,7 +55,7 @@ class ListHistoryOnlineInfoNewResponse(SdkResponse):
 
     @time_counts.setter
     def time_counts(self, time_counts):
-        """Sets the time_counts of this ListHistoryOnlineInfoNewResponse.
+        r"""Sets the time_counts of this ListHistoryOnlineInfoNewResponse.
 
         返回前端历史登录信息。查询的时间和计数之间用冒号分隔。查询的时间，按Day查询或时间段在同一天时，按小时计数，其他场景为按天计数。
 

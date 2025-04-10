@@ -27,7 +27,7 @@ class ResourceMultiCountResponseData:
     }
 
     def __init__(self, resource_type=None, count=None):
-        """ResourceMultiCountResponseData
+        r"""ResourceMultiCountResponseData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceMultiCountResponseData:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceMultiCountResponseData.
+        r"""Gets the resource_type of this ResourceMultiCountResponseData.
 
         资源类型
 
@@ -61,7 +61,7 @@ class ResourceMultiCountResponseData:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceMultiCountResponseData.
+        r"""Sets the resource_type of this ResourceMultiCountResponseData.
 
         资源类型
 
@@ -72,7 +72,7 @@ class ResourceMultiCountResponseData:
 
     @property
     def count(self):
-        """Gets the count of this ResourceMultiCountResponseData.
+        r"""Gets the count of this ResourceMultiCountResponseData.
 
         资源数量
 
@@ -83,7 +83,7 @@ class ResourceMultiCountResponseData:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ResourceMultiCountResponseData.
+        r"""Sets the count of this ResourceMultiCountResponseData.
 
         资源数量
 

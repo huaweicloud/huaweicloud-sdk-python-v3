@@ -27,7 +27,7 @@ class ShowServiceDetailRequest:
     }
 
     def __init__(self, service_id=None, ief_instance_id=None):
-        """ShowServiceDetailRequest
+        r"""ShowServiceDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowServiceDetailRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowServiceDetailRequest.
+        r"""Gets the service_id of this ShowServiceDetailRequest.
 
         服务ID
 
@@ -59,7 +59,7 @@ class ShowServiceDetailRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowServiceDetailRequest.
+        r"""Sets the service_id of this ShowServiceDetailRequest.
 
         服务ID
 
@@ -70,7 +70,7 @@ class ShowServiceDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowServiceDetailRequest.
+        r"""Gets the ief_instance_id of this ShowServiceDetailRequest.
 
         铂金版实例ID
 
@@ -81,7 +81,7 @@ class ShowServiceDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowServiceDetailRequest.
+        r"""Sets the ief_instance_id of this ShowServiceDetailRequest.
 
         铂金版实例ID
 

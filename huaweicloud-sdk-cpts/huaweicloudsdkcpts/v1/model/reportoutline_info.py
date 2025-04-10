@@ -77,7 +77,7 @@ class ReportoutlineInfo:
     }
 
     def __init__(self, avg_response_time=None, branch_id=None, branch_name=None, case_retry=None, complete_num=None, duration=None, end_time=None, executed_num=None, iteration_uri=None, kpi_case_count=None, kpi_case_execute_count=None, kpi_case_pass_count=None, max_users=None, pass_num=None, stage=None, stage_name=None, start_time=None, success_rate=None, task_status=None, total_num=None, tps=None, version_uri=None, project_id=None, service_id=None, progress_state=None, create_by=None, status_value=None):
-        """ReportoutlineInfo
+        r"""ReportoutlineInfo
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class ReportoutlineInfo:
 
     @property
     def avg_response_time(self):
-        """Gets the avg_response_time of this ReportoutlineInfo.
+        r"""Gets the avg_response_time of this ReportoutlineInfo.
 
         平均响应时间
 
@@ -236,7 +236,7 @@ class ReportoutlineInfo:
 
     @avg_response_time.setter
     def avg_response_time(self, avg_response_time):
-        """Sets the avg_response_time of this ReportoutlineInfo.
+        r"""Sets the avg_response_time of this ReportoutlineInfo.
 
         平均响应时间
 
@@ -247,7 +247,7 @@ class ReportoutlineInfo:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this ReportoutlineInfo.
+        r"""Gets the branch_id of this ReportoutlineInfo.
 
         分支id
 
@@ -258,7 +258,7 @@ class ReportoutlineInfo:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this ReportoutlineInfo.
+        r"""Sets the branch_id of this ReportoutlineInfo.
 
         分支id
 
@@ -269,7 +269,7 @@ class ReportoutlineInfo:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this ReportoutlineInfo.
+        r"""Gets the branch_name of this ReportoutlineInfo.
 
         分支名称
 
@@ -280,7 +280,7 @@ class ReportoutlineInfo:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this ReportoutlineInfo.
+        r"""Sets the branch_name of this ReportoutlineInfo.
 
         分支名称
 
@@ -291,7 +291,7 @@ class ReportoutlineInfo:
 
     @property
     def case_retry(self):
-        """Gets the case_retry of this ReportoutlineInfo.
+        r"""Gets the case_retry of this ReportoutlineInfo.
 
         用例重试次数
 
@@ -302,7 +302,7 @@ class ReportoutlineInfo:
 
     @case_retry.setter
     def case_retry(self, case_retry):
-        """Sets the case_retry of this ReportoutlineInfo.
+        r"""Sets the case_retry of this ReportoutlineInfo.
 
         用例重试次数
 
@@ -313,7 +313,7 @@ class ReportoutlineInfo:
 
     @property
     def complete_num(self):
-        """Gets the complete_num of this ReportoutlineInfo.
+        r"""Gets the complete_num of this ReportoutlineInfo.
 
         已完成的用例数
 
@@ -324,7 +324,7 @@ class ReportoutlineInfo:
 
     @complete_num.setter
     def complete_num(self, complete_num):
-        """Sets the complete_num of this ReportoutlineInfo.
+        r"""Sets the complete_num of this ReportoutlineInfo.
 
         已完成的用例数
 
@@ -335,7 +335,7 @@ class ReportoutlineInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this ReportoutlineInfo.
+        r"""Gets the duration of this ReportoutlineInfo.
 
         持续时间
 
@@ -346,7 +346,7 @@ class ReportoutlineInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ReportoutlineInfo.
+        r"""Sets the duration of this ReportoutlineInfo.
 
         持续时间
 
@@ -357,7 +357,7 @@ class ReportoutlineInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ReportoutlineInfo.
+        r"""Gets the end_time of this ReportoutlineInfo.
 
         结束时间
 
@@ -368,7 +368,7 @@ class ReportoutlineInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ReportoutlineInfo.
+        r"""Sets the end_time of this ReportoutlineInfo.
 
         结束时间
 
@@ -379,7 +379,7 @@ class ReportoutlineInfo:
 
     @property
     def executed_num(self):
-        """Gets the executed_num of this ReportoutlineInfo.
+        r"""Gets the executed_num of this ReportoutlineInfo.
 
         已执行用例数
 
@@ -390,7 +390,7 @@ class ReportoutlineInfo:
 
     @executed_num.setter
     def executed_num(self, executed_num):
-        """Sets the executed_num of this ReportoutlineInfo.
+        r"""Sets the executed_num of this ReportoutlineInfo.
 
         已执行用例数
 
@@ -401,7 +401,7 @@ class ReportoutlineInfo:
 
     @property
     def iteration_uri(self):
-        """Gets the iteration_uri of this ReportoutlineInfo.
+        r"""Gets the iteration_uri of this ReportoutlineInfo.
 
         迭代id
 
@@ -412,7 +412,7 @@ class ReportoutlineInfo:
 
     @iteration_uri.setter
     def iteration_uri(self, iteration_uri):
-        """Sets the iteration_uri of this ReportoutlineInfo.
+        r"""Sets the iteration_uri of this ReportoutlineInfo.
 
         迭代id
 
@@ -423,7 +423,7 @@ class ReportoutlineInfo:
 
     @property
     def kpi_case_count(self):
-        """Gets the kpi_case_count of this ReportoutlineInfo.
+        r"""Gets the kpi_case_count of this ReportoutlineInfo.
 
         kpi用例数
 
@@ -434,7 +434,7 @@ class ReportoutlineInfo:
 
     @kpi_case_count.setter
     def kpi_case_count(self, kpi_case_count):
-        """Sets the kpi_case_count of this ReportoutlineInfo.
+        r"""Sets the kpi_case_count of this ReportoutlineInfo.
 
         kpi用例数
 
@@ -445,7 +445,7 @@ class ReportoutlineInfo:
 
     @property
     def kpi_case_execute_count(self):
-        """Gets the kpi_case_execute_count of this ReportoutlineInfo.
+        r"""Gets the kpi_case_execute_count of this ReportoutlineInfo.
 
         kpi用例执行次数
 
@@ -456,7 +456,7 @@ class ReportoutlineInfo:
 
     @kpi_case_execute_count.setter
     def kpi_case_execute_count(self, kpi_case_execute_count):
-        """Sets the kpi_case_execute_count of this ReportoutlineInfo.
+        r"""Sets the kpi_case_execute_count of this ReportoutlineInfo.
 
         kpi用例执行次数
 
@@ -467,7 +467,7 @@ class ReportoutlineInfo:
 
     @property
     def kpi_case_pass_count(self):
-        """Gets the kpi_case_pass_count of this ReportoutlineInfo.
+        r"""Gets the kpi_case_pass_count of this ReportoutlineInfo.
 
         kpi用例通过次数
 
@@ -478,7 +478,7 @@ class ReportoutlineInfo:
 
     @kpi_case_pass_count.setter
     def kpi_case_pass_count(self, kpi_case_pass_count):
-        """Sets the kpi_case_pass_count of this ReportoutlineInfo.
+        r"""Sets the kpi_case_pass_count of this ReportoutlineInfo.
 
         kpi用例通过次数
 
@@ -489,7 +489,7 @@ class ReportoutlineInfo:
 
     @property
     def max_users(self):
-        """Gets the max_users of this ReportoutlineInfo.
+        r"""Gets the max_users of this ReportoutlineInfo.
 
         最大并发数
 
@@ -500,7 +500,7 @@ class ReportoutlineInfo:
 
     @max_users.setter
     def max_users(self, max_users):
-        """Sets the max_users of this ReportoutlineInfo.
+        r"""Sets the max_users of this ReportoutlineInfo.
 
         最大并发数
 
@@ -511,7 +511,7 @@ class ReportoutlineInfo:
 
     @property
     def pass_num(self):
-        """Gets the pass_num of this ReportoutlineInfo.
+        r"""Gets the pass_num of this ReportoutlineInfo.
 
         结果为pass的用例数
 
@@ -522,7 +522,7 @@ class ReportoutlineInfo:
 
     @pass_num.setter
     def pass_num(self, pass_num):
-        """Sets the pass_num of this ReportoutlineInfo.
+        r"""Sets the pass_num of this ReportoutlineInfo.
 
         结果为pass的用例数
 
@@ -533,7 +533,7 @@ class ReportoutlineInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this ReportoutlineInfo.
+        r"""Gets the stage of this ReportoutlineInfo.
 
         阶段id
 
@@ -544,7 +544,7 @@ class ReportoutlineInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this ReportoutlineInfo.
+        r"""Sets the stage of this ReportoutlineInfo.
 
         阶段id
 
@@ -555,7 +555,7 @@ class ReportoutlineInfo:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this ReportoutlineInfo.
+        r"""Gets the stage_name of this ReportoutlineInfo.
 
         阶段名称
 
@@ -566,7 +566,7 @@ class ReportoutlineInfo:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this ReportoutlineInfo.
+        r"""Sets the stage_name of this ReportoutlineInfo.
 
         阶段名称
 
@@ -577,7 +577,7 @@ class ReportoutlineInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ReportoutlineInfo.
+        r"""Gets the start_time of this ReportoutlineInfo.
 
         开始时间
 
@@ -588,7 +588,7 @@ class ReportoutlineInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ReportoutlineInfo.
+        r"""Sets the start_time of this ReportoutlineInfo.
 
         开始时间
 
@@ -599,7 +599,7 @@ class ReportoutlineInfo:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this ReportoutlineInfo.
+        r"""Gets the success_rate of this ReportoutlineInfo.
 
         成功率
 
@@ -610,7 +610,7 @@ class ReportoutlineInfo:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this ReportoutlineInfo.
+        r"""Sets the success_rate of this ReportoutlineInfo.
 
         成功率
 
@@ -621,7 +621,7 @@ class ReportoutlineInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this ReportoutlineInfo.
+        r"""Gets the task_status of this ReportoutlineInfo.
 
         任务状态
 
@@ -632,7 +632,7 @@ class ReportoutlineInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ReportoutlineInfo.
+        r"""Sets the task_status of this ReportoutlineInfo.
 
         任务状态
 
@@ -643,7 +643,7 @@ class ReportoutlineInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this ReportoutlineInfo.
+        r"""Gets the total_num of this ReportoutlineInfo.
 
         总用例数
 
@@ -654,7 +654,7 @@ class ReportoutlineInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ReportoutlineInfo.
+        r"""Sets the total_num of this ReportoutlineInfo.
 
         总用例数
 
@@ -665,7 +665,7 @@ class ReportoutlineInfo:
 
     @property
     def tps(self):
-        """Gets the tps of this ReportoutlineInfo.
+        r"""Gets the tps of this ReportoutlineInfo.
 
         性能tps指标
 
@@ -676,7 +676,7 @@ class ReportoutlineInfo:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this ReportoutlineInfo.
+        r"""Sets the tps of this ReportoutlineInfo.
 
         性能tps指标
 
@@ -687,7 +687,7 @@ class ReportoutlineInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this ReportoutlineInfo.
+        r"""Gets the version_uri of this ReportoutlineInfo.
 
         分支uri
 
@@ -698,7 +698,7 @@ class ReportoutlineInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this ReportoutlineInfo.
+        r"""Sets the version_uri of this ReportoutlineInfo.
 
         分支uri
 
@@ -709,7 +709,7 @@ class ReportoutlineInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ReportoutlineInfo.
+        r"""Gets the project_id of this ReportoutlineInfo.
 
         工程id
 
@@ -720,7 +720,7 @@ class ReportoutlineInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ReportoutlineInfo.
+        r"""Sets the project_id of this ReportoutlineInfo.
 
         工程id
 
@@ -731,7 +731,7 @@ class ReportoutlineInfo:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ReportoutlineInfo.
+        r"""Gets the service_id of this ReportoutlineInfo.
 
         服务id
 
@@ -742,7 +742,7 @@ class ReportoutlineInfo:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ReportoutlineInfo.
+        r"""Sets the service_id of this ReportoutlineInfo.
 
         服务id
 
@@ -753,7 +753,7 @@ class ReportoutlineInfo:
 
     @property
     def progress_state(self):
-        """Gets the progress_state of this ReportoutlineInfo.
+        r"""Gets the progress_state of this ReportoutlineInfo.
 
         内部版本字段，已弃用，待删除
 
@@ -764,7 +764,7 @@ class ReportoutlineInfo:
 
     @progress_state.setter
     def progress_state(self, progress_state):
-        """Sets the progress_state of this ReportoutlineInfo.
+        r"""Sets the progress_state of this ReportoutlineInfo.
 
         内部版本字段，已弃用，待删除
 
@@ -775,7 +775,7 @@ class ReportoutlineInfo:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ReportoutlineInfo.
+        r"""Gets the create_by of this ReportoutlineInfo.
 
         报告执行人
 
@@ -786,7 +786,7 @@ class ReportoutlineInfo:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ReportoutlineInfo.
+        r"""Sets the create_by of this ReportoutlineInfo.
 
         报告执行人
 
@@ -797,7 +797,7 @@ class ReportoutlineInfo:
 
     @property
     def status_value(self):
-        """Gets the status_value of this ReportoutlineInfo.
+        r"""Gets the status_value of this ReportoutlineInfo.
 
         内部版本字段，已弃用，待删除
 
@@ -808,7 +808,7 @@ class ReportoutlineInfo:
 
     @status_value.setter
     def status_value(self, status_value):
-        """Sets the status_value of this ReportoutlineInfo.
+        r"""Sets the status_value of this ReportoutlineInfo.
 
         内部版本字段，已弃用，待删除
 

@@ -30,7 +30,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None, x_request_id=None):
-        """ListInternetBandwidthCountFilterTagsResponse
+        r"""ListInternetBandwidthCountFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListInternetBandwidthCountFilterTagsResponse.
+        r"""Gets the request_id of this ListInternetBandwidthCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListInternetBandwidthCountFilterTagsResponse.
+        r"""Sets the request_id of this ListInternetBandwidthCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInternetBandwidthCountFilterTagsResponse.
+        r"""Gets the total_count of this ListInternetBandwidthCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -91,7 +91,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInternetBandwidthCountFilterTagsResponse.
+        r"""Sets the total_count of this ListInternetBandwidthCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -102,7 +102,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListInternetBandwidthCountFilterTagsResponse.
+        r"""Gets the x_request_id of this ListInternetBandwidthCountFilterTagsResponse.
 
         :return: The x_request_id of this ListInternetBandwidthCountFilterTagsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListInternetBandwidthCountFilterTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListInternetBandwidthCountFilterTagsResponse.
+        r"""Sets the x_request_id of this ListInternetBandwidthCountFilterTagsResponse.
 
         :param x_request_id: The x_request_id of this ListInternetBandwidthCountFilterTagsResponse.
         :type x_request_id: str

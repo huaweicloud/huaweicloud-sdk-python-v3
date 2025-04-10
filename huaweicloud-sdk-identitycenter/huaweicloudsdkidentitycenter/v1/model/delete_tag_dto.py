@@ -27,7 +27,7 @@ class DeleteTagDto:
     }
 
     def __init__(self, key=None, value=None):
-        """DeleteTagDto
+        r"""DeleteTagDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteTagDto:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTagDto.
+        r"""Gets the key of this DeleteTagDto.
 
         标签的键
 
@@ -60,7 +60,7 @@ class DeleteTagDto:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTagDto.
+        r"""Sets the key of this DeleteTagDto.
 
         标签的键
 
@@ -71,7 +71,7 @@ class DeleteTagDto:
 
     @property
     def value(self):
-        """Gets the value of this DeleteTagDto.
+        r"""Gets the value of this DeleteTagDto.
 
         标签的值，可以为空字符串，但不能为null
 
@@ -82,7 +82,7 @@ class DeleteTagDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeleteTagDto.
+        r"""Sets the value of this DeleteTagDto.
 
         标签的值，可以为空字符串，但不能为null
 

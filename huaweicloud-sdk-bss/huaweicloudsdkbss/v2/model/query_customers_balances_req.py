@@ -27,7 +27,7 @@ class QueryCustomersBalancesReq:
     }
 
     def __init__(self, customer_infos=None, indirect_partner_id=None):
-        """QueryCustomersBalancesReq
+        r"""QueryCustomersBalancesReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class QueryCustomersBalancesReq:
 
     @property
     def customer_infos(self):
-        """Gets the customer_infos of this QueryCustomersBalancesReq.
+        r"""Gets the customer_infos of this QueryCustomersBalancesReq.
 
         客户信息列表。 具体请参见表1。
 
@@ -60,7 +60,7 @@ class QueryCustomersBalancesReq:
 
     @customer_infos.setter
     def customer_infos(self, customer_infos):
-        """Sets the customer_infos of this QueryCustomersBalancesReq.
+        r"""Sets the customer_infos of this QueryCustomersBalancesReq.
 
         客户信息列表。 具体请参见表1。
 
@@ -71,7 +71,7 @@ class QueryCustomersBalancesReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryCustomersBalancesReq.
+        r"""Gets the indirect_partner_id of this QueryCustomersBalancesReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  华为云总经销商（一级经销商）查询云经销商（二级经销商）子客户的账户余额时，需要携带该参数。除此之外，此参数不做处理。
 
@@ -82,7 +82,7 @@ class QueryCustomersBalancesReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryCustomersBalancesReq.
+        r"""Sets the indirect_partner_id of this QueryCustomersBalancesReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  华为云总经销商（一级经销商）查询云经销商（二级经销商）子客户的账户余额时，需要携带该参数。除此之外，此参数不做处理。
 

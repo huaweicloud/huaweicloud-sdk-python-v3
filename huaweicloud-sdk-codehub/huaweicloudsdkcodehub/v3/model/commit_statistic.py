@@ -27,7 +27,7 @@ class CommitStatistic:
     }
 
     def __init__(self, additions=None, deletions=None):
-        """CommitStatistic
+        r"""CommitStatistic
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CommitStatistic:
 
     @property
     def additions(self):
-        """Gets the additions of this CommitStatistic.
+        r"""Gets the additions of this CommitStatistic.
 
         增加的行数
 
@@ -61,7 +61,7 @@ class CommitStatistic:
 
     @additions.setter
     def additions(self, additions):
-        """Sets the additions of this CommitStatistic.
+        r"""Sets the additions of this CommitStatistic.
 
         增加的行数
 
@@ -72,7 +72,7 @@ class CommitStatistic:
 
     @property
     def deletions(self):
-        """Gets the deletions of this CommitStatistic.
+        r"""Gets the deletions of this CommitStatistic.
 
         删除的行数
 
@@ -83,7 +83,7 @@ class CommitStatistic:
 
     @deletions.setter
     def deletions(self, deletions):
-        """Sets the deletions of this CommitStatistic.
+        r"""Sets the deletions of this CommitStatistic.
 
         删除的行数
 

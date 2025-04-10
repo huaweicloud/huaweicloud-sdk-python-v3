@@ -27,7 +27,7 @@ class ResourceAttribute:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceAttribute
+        r"""ResourceAttribute
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceAttribute:
 
     @property
     def key(self):
-        """Gets the key of this ResourceAttribute.
+        r"""Gets the key of this ResourceAttribute.
 
         资源属性的键
 
@@ -61,7 +61,7 @@ class ResourceAttribute:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceAttribute.
+        r"""Sets the key of this ResourceAttribute.
 
         资源属性的键
 
@@ -72,7 +72,7 @@ class ResourceAttribute:
 
     @property
     def value(self):
-        """Gets the value of this ResourceAttribute.
+        r"""Gets the value of this ResourceAttribute.
 
         资源属性的值
 
@@ -83,7 +83,7 @@ class ResourceAttribute:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceAttribute.
+        r"""Sets the value of this ResourceAttribute.
 
         资源属性的值
 

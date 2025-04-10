@@ -35,7 +35,7 @@ class ListAimMsgAppRequest:
     }
 
     def __init__(self, offset=None, limit=None, app_name=None, status=None, begin_time=None, end_time=None):
-        """ListAimMsgAppRequest
+        r"""ListAimMsgAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListAimMsgAppRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimMsgAppRequest.
+        r"""Gets the offset of this ListAimMsgAppRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -89,7 +89,7 @@ class ListAimMsgAppRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimMsgAppRequest.
+        r"""Sets the offset of this ListAimMsgAppRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -100,7 +100,7 @@ class ListAimMsgAppRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimMsgAppRequest.
+        r"""Gets the limit of this ListAimMsgAppRequest.
 
         每页显示的条目数量。
 
@@ -111,7 +111,7 @@ class ListAimMsgAppRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimMsgAppRequest.
+        r"""Sets the limit of this ListAimMsgAppRequest.
 
         每页显示的条目数量。
 
@@ -122,7 +122,7 @@ class ListAimMsgAppRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAimMsgAppRequest.
+        r"""Gets the app_name of this ListAimMsgAppRequest.
 
         应用名称。
 
@@ -133,7 +133,7 @@ class ListAimMsgAppRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAimMsgAppRequest.
+        r"""Sets the app_name of this ListAimMsgAppRequest.
 
         应用名称。
 
@@ -144,7 +144,7 @@ class ListAimMsgAppRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAimMsgAppRequest.
+        r"""Gets the status of this ListAimMsgAppRequest.
 
         应用状态。
 
@@ -155,7 +155,7 @@ class ListAimMsgAppRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAimMsgAppRequest.
+        r"""Sets the status of this ListAimMsgAppRequest.
 
         应用状态。
 
@@ -166,7 +166,7 @@ class ListAimMsgAppRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimMsgAppRequest.
+        r"""Gets the begin_time of this ListAimMsgAppRequest.
 
         创建时间筛选-开始时间。格式为：2019-10-12T07:20:50Z。
 
@@ -177,7 +177,7 @@ class ListAimMsgAppRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimMsgAppRequest.
+        r"""Sets the begin_time of this ListAimMsgAppRequest.
 
         创建时间筛选-开始时间。格式为：2019-10-12T07:20:50Z。
 
@@ -188,7 +188,7 @@ class ListAimMsgAppRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimMsgAppRequest.
+        r"""Gets the end_time of this ListAimMsgAppRequest.
 
         创建时间筛选-结束时间。格式为：2019-10-12T07:20:50Z。
 
@@ -199,7 +199,7 @@ class ListAimMsgAppRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimMsgAppRequest.
+        r"""Sets the end_time of this ListAimMsgAppRequest.
 
         创建时间筛选-结束时间。格式为：2019-10-12T07:20:50Z。
 

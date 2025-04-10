@@ -33,7 +33,7 @@ class CreateTemplate:
     }
 
     def __init__(self, name=None, is_servicestage=None, desc=None, obs_url=None, tags=None):
-        """CreateTemplate
+        r"""CreateTemplate
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateTemplate:
 
     @property
     def name(self):
-        """Gets the name of this CreateTemplate.
+        r"""Gets the name of this CreateTemplate.
 
         模板名称,必填
 
@@ -80,7 +80,7 @@ class CreateTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTemplate.
+        r"""Sets the name of this CreateTemplate.
 
         模板名称,必填
 
@@ -91,7 +91,7 @@ class CreateTemplate:
 
     @property
     def is_servicestage(self):
-        """Gets the is_servicestage of this CreateTemplate.
+        r"""Gets the is_servicestage of this CreateTemplate.
 
         应用是否托管到servicestage,1是托管,0是不托管,非必填
 
@@ -102,7 +102,7 @@ class CreateTemplate:
 
     @is_servicestage.setter
     def is_servicestage(self, is_servicestage):
-        """Sets the is_servicestage of this CreateTemplate.
+        r"""Sets the is_servicestage of this CreateTemplate.
 
         应用是否托管到servicestage,1是托管,0是不托管,非必填
 
@@ -113,7 +113,7 @@ class CreateTemplate:
 
     @property
     def desc(self):
-        """Gets the desc of this CreateTemplate.
+        r"""Gets the desc of this CreateTemplate.
 
         描述信息,非必填
 
@@ -124,7 +124,7 @@ class CreateTemplate:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this CreateTemplate.
+        r"""Sets the desc of this CreateTemplate.
 
         描述信息,非必填
 
@@ -135,7 +135,7 @@ class CreateTemplate:
 
     @property
     def obs_url(self):
-        """Gets the obs_url of this CreateTemplate.
+        r"""Gets the obs_url of this CreateTemplate.
 
         模板在桶中的url,必填
 
@@ -146,7 +146,7 @@ class CreateTemplate:
 
     @obs_url.setter
     def obs_url(self, obs_url):
-        """Sets the obs_url of this CreateTemplate.
+        r"""Sets the obs_url of this CreateTemplate.
 
         模板在桶中的url,必填
 
@@ -157,7 +157,7 @@ class CreateTemplate:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTemplate.
+        r"""Gets the tags of this CreateTemplate.
 
         模板标签,非必填
 
@@ -168,7 +168,7 @@ class CreateTemplate:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTemplate.
+        r"""Sets the tags of this CreateTemplate.
 
         模板标签,非必填
 

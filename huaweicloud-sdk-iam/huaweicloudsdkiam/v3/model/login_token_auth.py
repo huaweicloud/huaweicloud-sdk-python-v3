@@ -25,7 +25,7 @@ class LoginTokenAuth:
     }
 
     def __init__(self, securitytoken=None):
-        """LoginTokenAuth
+        r"""LoginTokenAuth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LoginTokenAuth:
 
     @property
     def securitytoken(self):
-        """Gets the securitytoken of this LoginTokenAuth.
+        r"""Gets the securitytoken of this LoginTokenAuth.
 
         :return: The securitytoken of this LoginTokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenSecurityToken`
@@ -51,7 +51,7 @@ class LoginTokenAuth:
 
     @securitytoken.setter
     def securitytoken(self, securitytoken):
-        """Sets the securitytoken of this LoginTokenAuth.
+        r"""Sets the securitytoken of this LoginTokenAuth.
 
         :param securitytoken: The securitytoken of this LoginTokenAuth.
         :type securitytoken: :class:`huaweicloudsdkiam.v3.LoginTokenSecurityToken`

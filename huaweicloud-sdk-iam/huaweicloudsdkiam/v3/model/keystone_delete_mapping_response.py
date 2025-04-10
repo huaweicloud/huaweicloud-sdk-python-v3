@@ -24,7 +24,7 @@ class KeystoneDeleteMappingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneDeleteMappingResponse
+        r"""KeystoneDeleteMappingResponse
 
         The model defined in huaweicloud sdk
 

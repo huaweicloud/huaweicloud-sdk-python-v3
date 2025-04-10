@@ -24,7 +24,7 @@ class RetryTaskGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RetryTaskGroupResponse
+        r"""RetryTaskGroupResponse
 
         The model defined in huaweicloud sdk
 

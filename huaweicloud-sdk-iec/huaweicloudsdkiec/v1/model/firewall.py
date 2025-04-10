@@ -43,7 +43,7 @@ class Firewall:
     }
 
     def __init__(self, id=None, name=None, admin_state_up=None, status=None, description=None, domain_id=None, egress_firewall_policy=None, egress_firewall_rule_count=None, ingress_firewall_policy=None, ingress_firewall_rule_count=None):
-        """Firewall
+        r"""Firewall
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Firewall:
 
     @property
     def id(self):
-        """Gets the id of this Firewall.
+        r"""Gets the id of this Firewall.
 
         网络ACL ID
 
@@ -117,7 +117,7 @@ class Firewall:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Firewall.
+        r"""Sets the id of this Firewall.
 
         网络ACL ID
 
@@ -128,7 +128,7 @@ class Firewall:
 
     @property
     def name(self):
-        """Gets the name of this Firewall.
+        r"""Gets the name of this Firewall.
 
         网络ACL名称。
 
@@ -139,7 +139,7 @@ class Firewall:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Firewall.
+        r"""Sets the name of this Firewall.
 
         网络ACL名称。
 
@@ -150,7 +150,7 @@ class Firewall:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this Firewall.
+        r"""Gets the admin_state_up of this Firewall.
 
         网络ACL使能开关。  取值范围：true（开启），false（关闭）。默认为true
 
@@ -161,7 +161,7 @@ class Firewall:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this Firewall.
+        r"""Sets the admin_state_up of this Firewall.
 
         网络ACL使能开关。  取值范围：true（开启），false（关闭）。默认为true
 
@@ -172,7 +172,7 @@ class Firewall:
 
     @property
     def status(self):
-        """Gets the status of this Firewall.
+        r"""Gets the status of this Firewall.
 
         网络ACL状态。  取值范围：INACTIVE
 
@@ -183,7 +183,7 @@ class Firewall:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Firewall.
+        r"""Sets the status of this Firewall.
 
         网络ACL状态。  取值范围：INACTIVE
 
@@ -194,7 +194,7 @@ class Firewall:
 
     @property
     def description(self):
-        """Gets the description of this Firewall.
+        r"""Gets the description of this Firewall.
 
         网络ACL描述。
 
@@ -205,7 +205,7 @@ class Firewall:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Firewall.
+        r"""Sets the description of this Firewall.
 
         网络ACL描述。
 
@@ -216,7 +216,7 @@ class Firewall:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Firewall.
+        r"""Gets the domain_id of this Firewall.
 
         租户domainID
 
@@ -227,7 +227,7 @@ class Firewall:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Firewall.
+        r"""Sets the domain_id of this Firewall.
 
         租户domainID
 
@@ -238,7 +238,7 @@ class Firewall:
 
     @property
     def egress_firewall_policy(self):
-        """Gets the egress_firewall_policy of this Firewall.
+        r"""Gets the egress_firewall_policy of this Firewall.
 
         :return: The egress_firewall_policy of this Firewall.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -247,7 +247,7 @@ class Firewall:
 
     @egress_firewall_policy.setter
     def egress_firewall_policy(self, egress_firewall_policy):
-        """Sets the egress_firewall_policy of this Firewall.
+        r"""Sets the egress_firewall_policy of this Firewall.
 
         :param egress_firewall_policy: The egress_firewall_policy of this Firewall.
         :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -256,7 +256,7 @@ class Firewall:
 
     @property
     def egress_firewall_rule_count(self):
-        """Gets the egress_firewall_rule_count of this Firewall.
+        r"""Gets the egress_firewall_rule_count of this Firewall.
 
         出方向网络ACL规则个数。
 
@@ -267,7 +267,7 @@ class Firewall:
 
     @egress_firewall_rule_count.setter
     def egress_firewall_rule_count(self, egress_firewall_rule_count):
-        """Sets the egress_firewall_rule_count of this Firewall.
+        r"""Sets the egress_firewall_rule_count of this Firewall.
 
         出方向网络ACL规则个数。
 
@@ -278,7 +278,7 @@ class Firewall:
 
     @property
     def ingress_firewall_policy(self):
-        """Gets the ingress_firewall_policy of this Firewall.
+        r"""Gets the ingress_firewall_policy of this Firewall.
 
         :return: The ingress_firewall_policy of this Firewall.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -287,7 +287,7 @@ class Firewall:
 
     @ingress_firewall_policy.setter
     def ingress_firewall_policy(self, ingress_firewall_policy):
-        """Sets the ingress_firewall_policy of this Firewall.
+        r"""Sets the ingress_firewall_policy of this Firewall.
 
         :param ingress_firewall_policy: The ingress_firewall_policy of this Firewall.
         :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -296,7 +296,7 @@ class Firewall:
 
     @property
     def ingress_firewall_rule_count(self):
-        """Gets the ingress_firewall_rule_count of this Firewall.
+        r"""Gets the ingress_firewall_rule_count of this Firewall.
 
         入方向网络ACL规则个数。
 
@@ -307,7 +307,7 @@ class Firewall:
 
     @ingress_firewall_rule_count.setter
     def ingress_firewall_rule_count(self, ingress_firewall_rule_count):
-        """Sets the ingress_firewall_rule_count of this Firewall.
+        r"""Sets the ingress_firewall_rule_count of this Firewall.
 
         入方向网络ACL规则个数。
 

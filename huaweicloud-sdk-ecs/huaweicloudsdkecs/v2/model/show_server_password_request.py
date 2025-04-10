@@ -25,7 +25,7 @@ class ShowServerPasswordRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowServerPasswordRequest
+        r"""ShowServerPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerPasswordRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowServerPasswordRequest.
+        r"""Gets the server_id of this ShowServerPasswordRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ShowServerPasswordRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowServerPasswordRequest.
+        r"""Sets the server_id of this ShowServerPasswordRequest.
 
         云服务器ID。
 

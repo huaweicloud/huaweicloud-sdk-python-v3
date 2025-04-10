@@ -29,7 +29,7 @@ class ImportGraphReqParallelEdge:
     }
 
     def __init__(self, action=None, ignore_label=None, sort_key_column=None):
-        """ImportGraphReqParallelEdge
+        r"""ImportGraphReqParallelEdge
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ImportGraphReqParallelEdge:
 
     @property
     def action(self):
-        """Gets the action of this ImportGraphReqParallelEdge.
+        r"""Gets the action of this ImportGraphReqParallelEdge.
 
         处理方式，取值为allow，ignore和override，默认为allow。  - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。 图规格为（一千亿边）的图暂不支持该参数。
 
@@ -68,7 +68,7 @@ class ImportGraphReqParallelEdge:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ImportGraphReqParallelEdge.
+        r"""Sets the action of this ImportGraphReqParallelEdge.
 
         处理方式，取值为allow，ignore和override，默认为allow。  - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。 图规格为（一千亿边）的图暂不支持该参数。
 
@@ -79,7 +79,7 @@ class ImportGraphReqParallelEdge:
 
     @property
     def ignore_label(self):
-        """Gets the ignore_label of this ImportGraphReqParallelEdge.
+        r"""Gets the ignore_label of this ImportGraphReqParallelEdge.
 
         重复边的定义，是否忽略Label。取值为true或者false，默认取true。  - true 表示重复边定义不包含Label，即用<源点，终点>标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用<源点，终点，Label>标记一条边。 图规格为（一千亿边）的图暂不支持该参数。
 
@@ -90,7 +90,7 @@ class ImportGraphReqParallelEdge:
 
     @ignore_label.setter
     def ignore_label(self, ignore_label):
-        """Sets the ignore_label of this ImportGraphReqParallelEdge.
+        r"""Sets the ignore_label of this ImportGraphReqParallelEdge.
 
         重复边的定义，是否忽略Label。取值为true或者false，默认取true。  - true 表示重复边定义不包含Label，即用<源点，终点>标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用<源点，终点，Label>标记一条边。 图规格为（一千亿边）的图暂不支持该参数。
 
@@ -101,7 +101,7 @@ class ImportGraphReqParallelEdge:
 
     @property
     def sort_key_column(self):
-        """Gets the sort_key_column of this ImportGraphReqParallelEdge.
+        r"""Gets the sort_key_column of this ImportGraphReqParallelEdge.
 
         sortKey在边文件中的位置，当前仅支持\"lastColumn\"，边文件中无sortKey时，不传此参数。
 
@@ -112,7 +112,7 @@ class ImportGraphReqParallelEdge:
 
     @sort_key_column.setter
     def sort_key_column(self, sort_key_column):
-        """Sets the sort_key_column of this ImportGraphReqParallelEdge.
+        r"""Sets the sort_key_column of this ImportGraphReqParallelEdge.
 
         sortKey在边文件中的位置，当前仅支持\"lastColumn\"，边文件中无sortKey时，不传此参数。
 

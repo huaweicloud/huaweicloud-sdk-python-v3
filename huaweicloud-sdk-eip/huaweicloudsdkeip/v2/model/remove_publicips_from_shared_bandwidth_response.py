@@ -24,7 +24,7 @@ class RemovePublicipsFromSharedBandwidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RemovePublicipsFromSharedBandwidthResponse
+        r"""RemovePublicipsFromSharedBandwidthResponse
 
         The model defined in huaweicloud sdk
 

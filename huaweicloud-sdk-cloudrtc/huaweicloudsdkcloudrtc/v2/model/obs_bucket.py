@@ -31,7 +31,7 @@ class ObsBucket:
     }
 
     def __init__(self, bucket=None, location=None, creation_date=None, is_authorized=None):
-        """ObsBucket
+        r"""ObsBucket
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ObsBucket:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsBucket.
+        r"""Gets the bucket of this ObsBucket.
 
         OBS的bucket名称
 
@@ -71,7 +71,7 @@ class ObsBucket:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsBucket.
+        r"""Sets the bucket of this ObsBucket.
 
         OBS的bucket名称
 
@@ -82,7 +82,7 @@ class ObsBucket:
 
     @property
     def location(self):
-        """Gets the location of this ObsBucket.
+        r"""Gets the location of this ObsBucket.
 
         OBS的bucket所在region
 
@@ -93,7 +93,7 @@ class ObsBucket:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ObsBucket.
+        r"""Sets the location of this ObsBucket.
 
         OBS的bucket所在region
 
@@ -104,7 +104,7 @@ class ObsBucket:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this ObsBucket.
+        r"""Gets the creation_date of this ObsBucket.
 
         创建时间，格式如：2020/07/16 15:11:55 GMT+08:00
 
@@ -115,7 +115,7 @@ class ObsBucket:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this ObsBucket.
+        r"""Sets the creation_date of this ObsBucket.
 
         创建时间，格式如：2020/07/16 15:11:55 GMT+08:00
 
@@ -126,7 +126,7 @@ class ObsBucket:
 
     @property
     def is_authorized(self):
-        """Gets the is_authorized of this ObsBucket.
+        r"""Gets the is_authorized of this ObsBucket.
 
         鉴权
 
@@ -137,7 +137,7 @@ class ObsBucket:
 
     @is_authorized.setter
     def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this ObsBucket.
+        r"""Sets the is_authorized of this ObsBucket.
 
         鉴权
 

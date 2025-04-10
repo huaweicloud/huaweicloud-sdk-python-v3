@@ -25,7 +25,7 @@ class BatchDeleteJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchDeleteJobReq
+        r"""BatchDeleteJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteJobReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchDeleteJobReq.
+        r"""Gets the jobs of this BatchDeleteJobReq.
 
         批量结束与删除任务请求列表
 
@@ -53,7 +53,7 @@ class BatchDeleteJobReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchDeleteJobReq.
+        r"""Sets the jobs of this BatchDeleteJobReq.
 
         批量结束与删除任务请求列表
 

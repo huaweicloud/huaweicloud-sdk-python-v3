@@ -29,7 +29,7 @@ class PageOffSet:
     }
 
     def __init__(self, offset=None, limit=None, total=None):
-        """PageOffSet
+        r"""PageOffSet
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PageOffSet:
 
     @property
     def offset(self):
-        """Gets the offset of this PageOffSet.
+        r"""Gets the offset of this PageOffSet.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -68,7 +68,7 @@ class PageOffSet:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this PageOffSet.
+        r"""Sets the offset of this PageOffSet.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -79,7 +79,7 @@ class PageOffSet:
 
     @property
     def limit(self):
-        """Gets the limit of this PageOffSet.
+        r"""Gets the limit of this PageOffSet.
 
         每页显示的条目数量。
 
@@ -90,7 +90,7 @@ class PageOffSet:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this PageOffSet.
+        r"""Sets the limit of this PageOffSet.
 
         每页显示的条目数量。
 
@@ -101,7 +101,7 @@ class PageOffSet:
 
     @property
     def total(self):
-        """Gets the total of this PageOffSet.
+        r"""Gets the total of this PageOffSet.
 
         总量。
 
@@ -112,7 +112,7 @@ class PageOffSet:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PageOffSet.
+        r"""Sets the total of this PageOffSet.
 
         总量。
 

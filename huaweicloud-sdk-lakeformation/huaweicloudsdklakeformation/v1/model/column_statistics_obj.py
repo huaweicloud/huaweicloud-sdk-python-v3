@@ -43,7 +43,7 @@ class ColumnStatisticsObj:
     }
 
     def __init__(self, column_name=None, column_type=None, data_type=None, binary_statistics_data=None, long_statistics_data=None, decimal_statistics_data=None, string_statistics_data=None, double_statistics_data=None, date_statistics_data=None, boolean_statistics_data=None):
-        """ColumnStatisticsObj
+        r"""ColumnStatisticsObj
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ColumnStatisticsObj:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ColumnStatisticsObj.
+        r"""Gets the column_name of this ColumnStatisticsObj.
 
         数据列名
 
@@ -114,7 +114,7 @@ class ColumnStatisticsObj:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ColumnStatisticsObj.
+        r"""Sets the column_name of this ColumnStatisticsObj.
 
         数据列名
 
@@ -125,7 +125,7 @@ class ColumnStatisticsObj:
 
     @property
     def column_type(self):
-        """Gets the column_type of this ColumnStatisticsObj.
+        r"""Gets the column_type of this ColumnStatisticsObj.
 
         数据类型，字段类型包括array bigint binary boolean char date decimal double float int interval map set smallint string struct timestamp tinyint union varchar
 
@@ -136,7 +136,7 @@ class ColumnStatisticsObj:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this ColumnStatisticsObj.
+        r"""Sets the column_type of this ColumnStatisticsObj.
 
         数据类型，字段类型包括array bigint binary boolean char date decimal double float int interval map set smallint string struct timestamp tinyint union varchar
 
@@ -147,7 +147,7 @@ class ColumnStatisticsObj:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ColumnStatisticsObj.
+        r"""Gets the data_type of this ColumnStatisticsObj.
 
         统计信息类型
 
@@ -158,7 +158,7 @@ class ColumnStatisticsObj:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ColumnStatisticsObj.
+        r"""Sets the data_type of this ColumnStatisticsObj.
 
         统计信息类型
 
@@ -169,7 +169,7 @@ class ColumnStatisticsObj:
 
     @property
     def binary_statistics_data(self):
-        """Gets the binary_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the binary_statistics_data of this ColumnStatisticsObj.
 
         :return: The binary_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.BinaryColumnStatisticsData`
@@ -178,7 +178,7 @@ class ColumnStatisticsObj:
 
     @binary_statistics_data.setter
     def binary_statistics_data(self, binary_statistics_data):
-        """Sets the binary_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the binary_statistics_data of this ColumnStatisticsObj.
 
         :param binary_statistics_data: The binary_statistics_data of this ColumnStatisticsObj.
         :type binary_statistics_data: :class:`huaweicloudsdklakeformation.v1.BinaryColumnStatisticsData`
@@ -187,7 +187,7 @@ class ColumnStatisticsObj:
 
     @property
     def long_statistics_data(self):
-        """Gets the long_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the long_statistics_data of this ColumnStatisticsObj.
 
         :return: The long_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.LongColumnStatisticsData`
@@ -196,7 +196,7 @@ class ColumnStatisticsObj:
 
     @long_statistics_data.setter
     def long_statistics_data(self, long_statistics_data):
-        """Sets the long_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the long_statistics_data of this ColumnStatisticsObj.
 
         :param long_statistics_data: The long_statistics_data of this ColumnStatisticsObj.
         :type long_statistics_data: :class:`huaweicloudsdklakeformation.v1.LongColumnStatisticsData`
@@ -205,7 +205,7 @@ class ColumnStatisticsObj:
 
     @property
     def decimal_statistics_data(self):
-        """Gets the decimal_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the decimal_statistics_data of this ColumnStatisticsObj.
 
         :return: The decimal_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.DecimalColumnStatisticsData`
@@ -214,7 +214,7 @@ class ColumnStatisticsObj:
 
     @decimal_statistics_data.setter
     def decimal_statistics_data(self, decimal_statistics_data):
-        """Sets the decimal_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the decimal_statistics_data of this ColumnStatisticsObj.
 
         :param decimal_statistics_data: The decimal_statistics_data of this ColumnStatisticsObj.
         :type decimal_statistics_data: :class:`huaweicloudsdklakeformation.v1.DecimalColumnStatisticsData`
@@ -223,7 +223,7 @@ class ColumnStatisticsObj:
 
     @property
     def string_statistics_data(self):
-        """Gets the string_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the string_statistics_data of this ColumnStatisticsObj.
 
         :return: The string_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.StringColumnStatisticsData`
@@ -232,7 +232,7 @@ class ColumnStatisticsObj:
 
     @string_statistics_data.setter
     def string_statistics_data(self, string_statistics_data):
-        """Sets the string_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the string_statistics_data of this ColumnStatisticsObj.
 
         :param string_statistics_data: The string_statistics_data of this ColumnStatisticsObj.
         :type string_statistics_data: :class:`huaweicloudsdklakeformation.v1.StringColumnStatisticsData`
@@ -241,7 +241,7 @@ class ColumnStatisticsObj:
 
     @property
     def double_statistics_data(self):
-        """Gets the double_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the double_statistics_data of this ColumnStatisticsObj.
 
         :return: The double_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.DoubleColumnStatisticsData`
@@ -250,7 +250,7 @@ class ColumnStatisticsObj:
 
     @double_statistics_data.setter
     def double_statistics_data(self, double_statistics_data):
-        """Sets the double_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the double_statistics_data of this ColumnStatisticsObj.
 
         :param double_statistics_data: The double_statistics_data of this ColumnStatisticsObj.
         :type double_statistics_data: :class:`huaweicloudsdklakeformation.v1.DoubleColumnStatisticsData`
@@ -259,7 +259,7 @@ class ColumnStatisticsObj:
 
     @property
     def date_statistics_data(self):
-        """Gets the date_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the date_statistics_data of this ColumnStatisticsObj.
 
         :return: The date_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.DateColumnStatisticsData`
@@ -268,7 +268,7 @@ class ColumnStatisticsObj:
 
     @date_statistics_data.setter
     def date_statistics_data(self, date_statistics_data):
-        """Sets the date_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the date_statistics_data of this ColumnStatisticsObj.
 
         :param date_statistics_data: The date_statistics_data of this ColumnStatisticsObj.
         :type date_statistics_data: :class:`huaweicloudsdklakeformation.v1.DateColumnStatisticsData`
@@ -277,7 +277,7 @@ class ColumnStatisticsObj:
 
     @property
     def boolean_statistics_data(self):
-        """Gets the boolean_statistics_data of this ColumnStatisticsObj.
+        r"""Gets the boolean_statistics_data of this ColumnStatisticsObj.
 
         :return: The boolean_statistics_data of this ColumnStatisticsObj.
         :rtype: :class:`huaweicloudsdklakeformation.v1.BooleanColumnStatisticsData`
@@ -286,7 +286,7 @@ class ColumnStatisticsObj:
 
     @boolean_statistics_data.setter
     def boolean_statistics_data(self, boolean_statistics_data):
-        """Sets the boolean_statistics_data of this ColumnStatisticsObj.
+        r"""Sets the boolean_statistics_data of this ColumnStatisticsObj.
 
         :param boolean_statistics_data: The boolean_statistics_data of this ColumnStatisticsObj.
         :type boolean_statistics_data: :class:`huaweicloudsdklakeformation.v1.BooleanColumnStatisticsData`

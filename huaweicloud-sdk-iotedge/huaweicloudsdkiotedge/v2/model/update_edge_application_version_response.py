@@ -50,7 +50,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, name=None, version=None, sdk_version=None, description=None, deploy_type=None, deploy_multi_instance=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
-        """UpdateEdgeApplicationVersionResponse
+        r"""UpdateEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the edge_app_id of this UpdateEdgeApplicationVersionResponse.
 
         应用ID
 
@@ -139,7 +139,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the edge_app_id of this UpdateEdgeApplicationVersionResponse.
 
         应用ID
 
@@ -150,7 +150,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the name of this UpdateEdgeApplicationVersionResponse.
 
         应用名称
 
@@ -161,7 +161,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the name of this UpdateEdgeApplicationVersionResponse.
 
         应用名称
 
@@ -172,7 +172,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the version of this UpdateEdgeApplicationVersionResponse.
 
         应用名称
 
@@ -183,7 +183,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the version of this UpdateEdgeApplicationVersionResponse.
 
         应用名称
 
@@ -194,7 +194,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def sdk_version(self):
-        """Gets the sdk_version of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the sdk_version of this UpdateEdgeApplicationVersionResponse.
 
         应用集成的边缘SDK版本
 
@@ -205,7 +205,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @sdk_version.setter
     def sdk_version(self, sdk_version):
-        """Sets the sdk_version of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the sdk_version of this UpdateEdgeApplicationVersionResponse.
 
         应用集成的边缘SDK版本
 
@@ -216,7 +216,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the description of this UpdateEdgeApplicationVersionResponse.
 
         应用描述
 
@@ -227,7 +227,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the description of this UpdateEdgeApplicationVersionResponse.
 
         应用描述
 
@@ -238,7 +238,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the deploy_type of this UpdateEdgeApplicationVersionResponse.
 
         部署类型docker|process
 
@@ -249,7 +249,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the deploy_type of this UpdateEdgeApplicationVersionResponse.
 
         部署类型docker|process
 
@@ -260,7 +260,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def deploy_multi_instance(self):
-        """Gets the deploy_multi_instance of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the deploy_multi_instance of this UpdateEdgeApplicationVersionResponse.
 
         是否允许部署多实例
 
@@ -271,7 +271,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @deploy_multi_instance.setter
     def deploy_multi_instance(self, deploy_multi_instance):
-        """Sets the deploy_multi_instance of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the deploy_multi_instance of this UpdateEdgeApplicationVersionResponse.
 
         是否允许部署多实例
 
@@ -282,7 +282,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the create_time of this UpdateEdgeApplicationVersionResponse.
 
         创建时间
 
@@ -293,7 +293,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the create_time of this UpdateEdgeApplicationVersionResponse.
 
         创建时间
 
@@ -304,7 +304,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the update_time of this UpdateEdgeApplicationVersionResponse.
 
         最后一次修改时间
 
@@ -315,7 +315,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the update_time of this UpdateEdgeApplicationVersionResponse.
 
         最后一次修改时间
 
@@ -326,7 +326,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the state of this UpdateEdgeApplicationVersionResponse.
 
         应用版本状态
 
@@ -337,7 +337,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the state of this UpdateEdgeApplicationVersionResponse.
 
         应用版本状态
 
@@ -348,7 +348,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def arch(self):
-        """Gets the arch of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the arch of this UpdateEdgeApplicationVersionResponse.
 
         架构
 
@@ -359,7 +359,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the arch of this UpdateEdgeApplicationVersionResponse.
 
         架构
 
@@ -370,7 +370,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the publish_time of this UpdateEdgeApplicationVersionResponse.
 
         发布时间
 
@@ -381,7 +381,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the publish_time of this UpdateEdgeApplicationVersionResponse.
 
         发布时间
 
@@ -392,7 +392,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @property
     def off_shelf_time(self):
-        """Gets the off_shelf_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Gets the off_shelf_time of this UpdateEdgeApplicationVersionResponse.
 
         下线时间
 
@@ -403,7 +403,7 @@ class UpdateEdgeApplicationVersionResponse(SdkResponse):
 
     @off_shelf_time.setter
     def off_shelf_time(self, off_shelf_time):
-        """Sets the off_shelf_time of this UpdateEdgeApplicationVersionResponse.
+        r"""Sets the off_shelf_time of this UpdateEdgeApplicationVersionResponse.
 
         下线时间
 

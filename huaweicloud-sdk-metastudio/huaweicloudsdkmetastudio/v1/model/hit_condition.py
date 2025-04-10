@@ -29,7 +29,7 @@ class HitCondition:
     }
 
     def __init__(self, relation=None, priority=None, tags=None):
-        """HitCondition
+        r"""HitCondition
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HitCondition:
 
     @property
     def relation(self):
-        """Gets the relation of this HitCondition.
+        r"""Gets the relation of this HitCondition.
 
         **参数解释**： 条件关系。对于多个条件的逻辑运算关系。 **约束限制**： 不涉及。 **取值范围**： * AND：表示多个条件同时满足。 * OR：表示多个条件满足其一即可。 * RESERVED：兜底回复不会去判断其他命中条件。  **默认取值**： 不涉及。
 
@@ -68,7 +68,7 @@ class HitCondition:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this HitCondition.
+        r"""Sets the relation of this HitCondition.
 
         **参数解释**： 条件关系。对于多个条件的逻辑运算关系。 **约束限制**： 不涉及。 **取值范围**： * AND：表示多个条件同时满足。 * OR：表示多个条件满足其一即可。 * RESERVED：兜底回复不会去判断其他命中条件。  **默认取值**： 不涉及。
 
@@ -79,7 +79,7 @@ class HitCondition:
 
     @property
     def priority(self):
-        """Gets the priority of this HitCondition.
+        r"""Gets the priority of this HitCondition.
 
         **参数解释**： 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值 **约束限制**： 不涉及
 
@@ -90,7 +90,7 @@ class HitCondition:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this HitCondition.
+        r"""Sets the priority of this HitCondition.
 
         **参数解释**： 优先级，数值越低优先级越高；取值0-999，默认值为500，为可选值 **约束限制**： 不涉及
 
@@ -101,7 +101,7 @@ class HitCondition:
 
     @property
     def tags(self):
-        """Gets the tags of this HitCondition.
+        r"""Gets the tags of this HitCondition.
 
         匹配关系配置
 
@@ -112,7 +112,7 @@ class HitCondition:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this HitCondition.
+        r"""Sets the tags of this HitCondition.
 
         匹配关系配置
 

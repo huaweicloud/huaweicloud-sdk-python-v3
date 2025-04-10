@@ -27,7 +27,7 @@ class BatchCreateTagsRequest:
     }
 
     def __init__(self, stream_id=None, body=None):
-        """BatchCreateTagsRequest
+        r"""BatchCreateTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateTagsRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this BatchCreateTagsRequest.
+        r"""Gets the stream_id of this BatchCreateTagsRequest.
 
         通道ID。
 
@@ -60,7 +60,7 @@ class BatchCreateTagsRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this BatchCreateTagsRequest.
+        r"""Sets the stream_id of this BatchCreateTagsRequest.
 
         通道ID。
 
@@ -71,7 +71,7 @@ class BatchCreateTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateTagsRequest.
+        r"""Gets the body of this BatchCreateTagsRequest.
 
         :return: The body of this BatchCreateTagsRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.BatchCreateTagsReq`
@@ -80,7 +80,7 @@ class BatchCreateTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateTagsRequest.
+        r"""Sets the body of this BatchCreateTagsRequest.
 
         :param body: The body of this BatchCreateTagsRequest.
         :type body: :class:`huaweicloudsdkdis.v2.BatchCreateTagsReq`

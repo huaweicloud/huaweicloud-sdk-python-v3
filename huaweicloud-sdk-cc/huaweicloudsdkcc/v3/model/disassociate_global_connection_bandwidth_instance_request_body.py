@@ -25,7 +25,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequestBody:
     }
 
     def __init__(self, gcbandwidths=None):
-        """DisassociateGlobalConnectionBandwidthInstanceRequestBody
+        r"""DisassociateGlobalConnectionBandwidthInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequestBody:
 
     @property
     def gcbandwidths(self):
-        """Gets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceRequestBody.
+        r"""Gets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceRequestBody.
 
         全域互联带宽解绑实例详细信息。
 
@@ -53,7 +53,7 @@ class DisassociateGlobalConnectionBandwidthInstanceRequestBody:
 
     @gcbandwidths.setter
     def gcbandwidths(self, gcbandwidths):
-        """Sets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceRequestBody.
+        r"""Sets the gcbandwidths of this DisassociateGlobalConnectionBandwidthInstanceRequestBody.
 
         全域互联带宽解绑实例详细信息。
 

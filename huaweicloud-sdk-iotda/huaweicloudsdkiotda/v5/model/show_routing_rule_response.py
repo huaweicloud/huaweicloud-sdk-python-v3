@@ -42,7 +42,7 @@ class ShowRoutingRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None, active=None):
-        """ShowRoutingRuleResponse
+        r"""ShowRoutingRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowRoutingRuleResponse.
+        r"""Gets the rule_id of this ShowRoutingRuleResponse.
 
         规则触发条件ID，用于唯一标识一个规则触发条件，在创建规则条件时由物联网平台分配获得。
 
@@ -111,7 +111,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowRoutingRuleResponse.
+        r"""Sets the rule_id of this ShowRoutingRuleResponse.
 
         规则触发条件ID，用于唯一标识一个规则触发条件，在创建规则条件时由物联网平台分配获得。
 
@@ -122,7 +122,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ShowRoutingRuleResponse.
+        r"""Gets the rule_name of this ShowRoutingRuleResponse.
 
         用户自定义的规则名称。
 
@@ -133,7 +133,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ShowRoutingRuleResponse.
+        r"""Sets the rule_name of this ShowRoutingRuleResponse.
 
         用户自定义的规则名称。
 
@@ -144,7 +144,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowRoutingRuleResponse.
+        r"""Gets the description of this ShowRoutingRuleResponse.
 
         用户自定义的规则描述。
 
@@ -155,7 +155,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowRoutingRuleResponse.
+        r"""Sets the description of this ShowRoutingRuleResponse.
 
         用户自定义的规则描述。
 
@@ -166,7 +166,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def subject(self):
-        """Gets the subject of this ShowRoutingRuleResponse.
+        r"""Gets the subject of this ShowRoutingRuleResponse.
 
         :return: The subject of this ShowRoutingRuleResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
@@ -175,7 +175,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ShowRoutingRuleResponse.
+        r"""Sets the subject of this ShowRoutingRuleResponse.
 
         :param subject: The subject of this ShowRoutingRuleResponse.
         :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
@@ -184,7 +184,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowRoutingRuleResponse.
+        r"""Gets the app_type of this ShowRoutingRuleResponse.
 
         租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。
 
@@ -195,7 +195,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowRoutingRuleResponse.
+        r"""Sets the app_type of this ShowRoutingRuleResponse.
 
         租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。
 
@@ -206,7 +206,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowRoutingRuleResponse.
+        r"""Gets the app_id of this ShowRoutingRuleResponse.
 
         资源空间ID
 
@@ -217,7 +217,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowRoutingRuleResponse.
+        r"""Sets the app_id of this ShowRoutingRuleResponse.
 
         资源空间ID
 
@@ -228,7 +228,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def select(self):
-        """Gets the select of this ShowRoutingRuleResponse.
+        r"""Gets the select of this ShowRoutingRuleResponse.
 
         用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
@@ -239,7 +239,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @select.setter
     def select(self, select):
-        """Sets the select of this ShowRoutingRuleResponse.
+        r"""Sets the select of this ShowRoutingRuleResponse.
 
         用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
@@ -250,7 +250,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def where(self):
-        """Gets the where of this ShowRoutingRuleResponse.
+        r"""Gets the where of this ShowRoutingRuleResponse.
 
         用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
@@ -261,7 +261,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @where.setter
     def where(self, where):
-        """Sets the where of this ShowRoutingRuleResponse.
+        r"""Sets the where of this ShowRoutingRuleResponse.
 
         用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用。
 
@@ -272,7 +272,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @property
     def active(self):
-        """Gets the active of this ShowRoutingRuleResponse.
+        r"""Gets the active of this ShowRoutingRuleResponse.
 
         规则条件的状态是否为激活。
 
@@ -283,7 +283,7 @@ class ShowRoutingRuleResponse(SdkResponse):
 
     @active.setter
     def active(self, active):
-        """Sets the active of this ShowRoutingRuleResponse.
+        r"""Sets the active of this ShowRoutingRuleResponse.
 
         规则条件的状态是否为激活。
 

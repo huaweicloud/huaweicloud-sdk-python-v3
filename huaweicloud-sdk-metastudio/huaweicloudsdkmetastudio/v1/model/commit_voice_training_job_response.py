@@ -24,7 +24,7 @@ class CommitVoiceTrainingJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CommitVoiceTrainingJobResponse
+        r"""CommitVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
 

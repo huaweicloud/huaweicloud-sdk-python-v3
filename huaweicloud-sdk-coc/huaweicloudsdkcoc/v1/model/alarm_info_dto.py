@@ -73,7 +73,7 @@ class AlarmInfoDTO:
     }
 
     def __init__(self, id=None, name=None, importance=None, come_from=None, come_from_en=None, transfer_rule=None, transfer_rule_name=None, app=None, status=None, owner=None, owner_name=None, owner_alias=None, converge_count=None, associate_event_id=None, domain_id=None, creator=None, creator_name=None, create_time=None, update_time=None, remarks=None, region=None, task_type=None, associated_task_type=None, associated_task_id=None, associated_task_name=None):
-        """AlarmInfoDTO
+        r"""AlarmInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class AlarmInfoDTO:
 
     @property
     def id(self):
-        """Gets the id of this AlarmInfoDTO.
+        r"""Gets the id of this AlarmInfoDTO.
 
         唯一标识ID
 
@@ -222,7 +222,7 @@ class AlarmInfoDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlarmInfoDTO.
+        r"""Sets the id of this AlarmInfoDTO.
 
         唯一标识ID
 
@@ -233,7 +233,7 @@ class AlarmInfoDTO:
 
     @property
     def name(self):
-        """Gets the name of this AlarmInfoDTO.
+        r"""Gets the name of this AlarmInfoDTO.
 
         名称
 
@@ -244,7 +244,7 @@ class AlarmInfoDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmInfoDTO.
+        r"""Sets the name of this AlarmInfoDTO.
 
         名称
 
@@ -255,7 +255,7 @@ class AlarmInfoDTO:
 
     @property
     def importance(self):
-        """Gets the importance of this AlarmInfoDTO.
+        r"""Gets the importance of this AlarmInfoDTO.
 
         严重类型，urgent（紧急）、major（重要）、minor（次要）、warn（提示）
 
@@ -266,7 +266,7 @@ class AlarmInfoDTO:
 
     @importance.setter
     def importance(self, importance):
-        """Sets the importance of this AlarmInfoDTO.
+        r"""Sets the importance of this AlarmInfoDTO.
 
         严重类型，urgent（紧急）、major（重要）、minor（次要）、warn（提示）
 
@@ -277,7 +277,7 @@ class AlarmInfoDTO:
 
     @property
     def come_from(self):
-        """Gets the come_from of this AlarmInfoDTO.
+        r"""Gets the come_from of this AlarmInfoDTO.
 
         数据源
 
@@ -288,7 +288,7 @@ class AlarmInfoDTO:
 
     @come_from.setter
     def come_from(self, come_from):
-        """Sets the come_from of this AlarmInfoDTO.
+        r"""Sets the come_from of this AlarmInfoDTO.
 
         数据源
 
@@ -299,7 +299,7 @@ class AlarmInfoDTO:
 
     @property
     def come_from_en(self):
-        """Gets the come_from_en of this AlarmInfoDTO.
+        r"""Gets the come_from_en of this AlarmInfoDTO.
 
         数据源英文名
 
@@ -310,7 +310,7 @@ class AlarmInfoDTO:
 
     @come_from_en.setter
     def come_from_en(self, come_from_en):
-        """Sets the come_from_en of this AlarmInfoDTO.
+        r"""Sets the come_from_en of this AlarmInfoDTO.
 
         数据源英文名
 
@@ -321,7 +321,7 @@ class AlarmInfoDTO:
 
     @property
     def transfer_rule(self):
-        """Gets the transfer_rule of this AlarmInfoDTO.
+        r"""Gets the transfer_rule of this AlarmInfoDTO.
 
         流转规则id
 
@@ -332,7 +332,7 @@ class AlarmInfoDTO:
 
     @transfer_rule.setter
     def transfer_rule(self, transfer_rule):
-        """Sets the transfer_rule of this AlarmInfoDTO.
+        r"""Sets the transfer_rule of this AlarmInfoDTO.
 
         流转规则id
 
@@ -343,7 +343,7 @@ class AlarmInfoDTO:
 
     @property
     def transfer_rule_name(self):
-        """Gets the transfer_rule_name of this AlarmInfoDTO.
+        r"""Gets the transfer_rule_name of this AlarmInfoDTO.
 
         流转规则名
 
@@ -354,7 +354,7 @@ class AlarmInfoDTO:
 
     @transfer_rule_name.setter
     def transfer_rule_name(self, transfer_rule_name):
-        """Sets the transfer_rule_name of this AlarmInfoDTO.
+        r"""Sets the transfer_rule_name of this AlarmInfoDTO.
 
         流转规则名
 
@@ -365,7 +365,7 @@ class AlarmInfoDTO:
 
     @property
     def app(self):
-        """Gets the app of this AlarmInfoDTO.
+        r"""Gets the app of this AlarmInfoDTO.
 
         应用
 
@@ -376,7 +376,7 @@ class AlarmInfoDTO:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this AlarmInfoDTO.
+        r"""Sets the app of this AlarmInfoDTO.
 
         应用
 
@@ -387,7 +387,7 @@ class AlarmInfoDTO:
 
     @property
     def status(self):
-        """Gets the status of this AlarmInfoDTO.
+        r"""Gets the status of this AlarmInfoDTO.
 
         状态，告警中alarming，已解决resolved
 
@@ -398,7 +398,7 @@ class AlarmInfoDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmInfoDTO.
+        r"""Sets the status of this AlarmInfoDTO.
 
         状态，告警中alarming，已解决resolved
 
@@ -409,7 +409,7 @@ class AlarmInfoDTO:
 
     @property
     def owner(self):
-        """Gets the owner of this AlarmInfoDTO.
+        r"""Gets the owner of this AlarmInfoDTO.
 
         责任人id
 
@@ -420,7 +420,7 @@ class AlarmInfoDTO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AlarmInfoDTO.
+        r"""Sets the owner of this AlarmInfoDTO.
 
         责任人id
 
@@ -431,7 +431,7 @@ class AlarmInfoDTO:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this AlarmInfoDTO.
+        r"""Gets the owner_name of this AlarmInfoDTO.
 
         责任人姓名
 
@@ -442,7 +442,7 @@ class AlarmInfoDTO:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this AlarmInfoDTO.
+        r"""Sets the owner_name of this AlarmInfoDTO.
 
         责任人姓名
 
@@ -453,7 +453,7 @@ class AlarmInfoDTO:
 
     @property
     def owner_alias(self):
-        """Gets the owner_alias of this AlarmInfoDTO.
+        r"""Gets the owner_alias of this AlarmInfoDTO.
 
         责任人别名
 
@@ -464,7 +464,7 @@ class AlarmInfoDTO:
 
     @owner_alias.setter
     def owner_alias(self, owner_alias):
-        """Sets the owner_alias of this AlarmInfoDTO.
+        r"""Sets the owner_alias of this AlarmInfoDTO.
 
         责任人别名
 
@@ -475,7 +475,7 @@ class AlarmInfoDTO:
 
     @property
     def converge_count(self):
-        """Gets the converge_count of this AlarmInfoDTO.
+        r"""Gets the converge_count of this AlarmInfoDTO.
 
         收敛量
 
@@ -486,7 +486,7 @@ class AlarmInfoDTO:
 
     @converge_count.setter
     def converge_count(self, converge_count):
-        """Sets the converge_count of this AlarmInfoDTO.
+        r"""Sets the converge_count of this AlarmInfoDTO.
 
         收敛量
 
@@ -497,7 +497,7 @@ class AlarmInfoDTO:
 
     @property
     def associate_event_id(self):
-        """Gets the associate_event_id of this AlarmInfoDTO.
+        r"""Gets the associate_event_id of this AlarmInfoDTO.
 
         关联事件id
 
@@ -508,7 +508,7 @@ class AlarmInfoDTO:
 
     @associate_event_id.setter
     def associate_event_id(self, associate_event_id):
-        """Sets the associate_event_id of this AlarmInfoDTO.
+        r"""Sets the associate_event_id of this AlarmInfoDTO.
 
         关联事件id
 
@@ -519,7 +519,7 @@ class AlarmInfoDTO:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AlarmInfoDTO.
+        r"""Gets the domain_id of this AlarmInfoDTO.
 
         租户账号
 
@@ -530,7 +530,7 @@ class AlarmInfoDTO:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AlarmInfoDTO.
+        r"""Sets the domain_id of this AlarmInfoDTO.
 
         租户账号
 
@@ -541,7 +541,7 @@ class AlarmInfoDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this AlarmInfoDTO.
+        r"""Gets the creator of this AlarmInfoDTO.
 
         创建人id
 
@@ -552,7 +552,7 @@ class AlarmInfoDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this AlarmInfoDTO.
+        r"""Sets the creator of this AlarmInfoDTO.
 
         创建人id
 
@@ -563,7 +563,7 @@ class AlarmInfoDTO:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this AlarmInfoDTO.
+        r"""Gets the creator_name of this AlarmInfoDTO.
 
         创建人姓名
 
@@ -574,7 +574,7 @@ class AlarmInfoDTO:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this AlarmInfoDTO.
+        r"""Sets the creator_name of this AlarmInfoDTO.
 
         创建人姓名
 
@@ -585,7 +585,7 @@ class AlarmInfoDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlarmInfoDTO.
+        r"""Gets the create_time of this AlarmInfoDTO.
 
         创建时间
 
@@ -596,7 +596,7 @@ class AlarmInfoDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlarmInfoDTO.
+        r"""Sets the create_time of this AlarmInfoDTO.
 
         创建时间
 
@@ -607,7 +607,7 @@ class AlarmInfoDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlarmInfoDTO.
+        r"""Gets the update_time of this AlarmInfoDTO.
 
         更新时间
 
@@ -618,7 +618,7 @@ class AlarmInfoDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlarmInfoDTO.
+        r"""Sets the update_time of this AlarmInfoDTO.
 
         更新时间
 
@@ -629,7 +629,7 @@ class AlarmInfoDTO:
 
     @property
     def remarks(self):
-        """Gets the remarks of this AlarmInfoDTO.
+        r"""Gets the remarks of this AlarmInfoDTO.
 
         备注
 
@@ -640,7 +640,7 @@ class AlarmInfoDTO:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this AlarmInfoDTO.
+        r"""Sets the remarks of this AlarmInfoDTO.
 
         备注
 
@@ -651,7 +651,7 @@ class AlarmInfoDTO:
 
     @property
     def region(self):
-        """Gets the region of this AlarmInfoDTO.
+        r"""Gets the region of this AlarmInfoDTO.
 
         区域regionId
 
@@ -662,7 +662,7 @@ class AlarmInfoDTO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AlarmInfoDTO.
+        r"""Sets the region of this AlarmInfoDTO.
 
         区域regionId
 
@@ -673,7 +673,7 @@ class AlarmInfoDTO:
 
     @property
     def task_type(self):
-        """Gets the task_type of this AlarmInfoDTO.
+        r"""Gets the task_type of this AlarmInfoDTO.
 
         任务类型 ：SCRIPT脚本，RUNBOOK作业
 
@@ -684,7 +684,7 @@ class AlarmInfoDTO:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this AlarmInfoDTO.
+        r"""Sets the task_type of this AlarmInfoDTO.
 
         任务类型 ：SCRIPT脚本，RUNBOOK作业
 
@@ -695,7 +695,7 @@ class AlarmInfoDTO:
 
     @property
     def associated_task_type(self):
-        """Gets the associated_task_type of this AlarmInfoDTO.
+        r"""Gets the associated_task_type of this AlarmInfoDTO.
 
         任务类型分类 CUSTOMIZATION自定义，COMMUNAL公共
 
@@ -706,7 +706,7 @@ class AlarmInfoDTO:
 
     @associated_task_type.setter
     def associated_task_type(self, associated_task_type):
-        """Sets the associated_task_type of this AlarmInfoDTO.
+        r"""Sets the associated_task_type of this AlarmInfoDTO.
 
         任务类型分类 CUSTOMIZATION自定义，COMMUNAL公共
 
@@ -717,7 +717,7 @@ class AlarmInfoDTO:
 
     @property
     def associated_task_id(self):
-        """Gets the associated_task_id of this AlarmInfoDTO.
+        r"""Gets the associated_task_id of this AlarmInfoDTO.
 
         脚本或作业id
 
@@ -728,7 +728,7 @@ class AlarmInfoDTO:
 
     @associated_task_id.setter
     def associated_task_id(self, associated_task_id):
-        """Sets the associated_task_id of this AlarmInfoDTO.
+        r"""Sets the associated_task_id of this AlarmInfoDTO.
 
         脚本或作业id
 
@@ -739,7 +739,7 @@ class AlarmInfoDTO:
 
     @property
     def associated_task_name(self):
-        """Gets the associated_task_name of this AlarmInfoDTO.
+        r"""Gets the associated_task_name of this AlarmInfoDTO.
 
         脚本或作业名称
 
@@ -750,7 +750,7 @@ class AlarmInfoDTO:
 
     @associated_task_name.setter
     def associated_task_name(self, associated_task_name):
-        """Sets the associated_task_name of this AlarmInfoDTO.
+        r"""Sets the associated_task_name of this AlarmInfoDTO.
 
         脚本或作业名称
 

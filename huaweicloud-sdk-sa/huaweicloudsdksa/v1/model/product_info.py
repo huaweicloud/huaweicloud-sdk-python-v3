@@ -33,7 +33,7 @@ class ProductInfo:
     }
 
     def __init__(self, domain_id=None, project_id=None, region=None, company_name=None, product_name=None):
-        """ProductInfo
+        r"""ProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ProductInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ProductInfo.
+        r"""Gets the domain_id of this ProductInfo.
 
         数据源产品所属账号的ID。
 
@@ -77,7 +77,7 @@ class ProductInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ProductInfo.
+        r"""Sets the domain_id of this ProductInfo.
 
         数据源产品所属账号的ID。
 
@@ -88,7 +88,7 @@ class ProductInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ProductInfo.
+        r"""Gets the project_id of this ProductInfo.
 
         数据源产品所属项目的ID。
 
@@ -99,7 +99,7 @@ class ProductInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ProductInfo.
+        r"""Sets the project_id of this ProductInfo.
 
         数据源产品所属项目的ID。
 
@@ -110,7 +110,7 @@ class ProductInfo:
 
     @property
     def region(self):
-        """Gets the region of this ProductInfo.
+        r"""Gets the region of this ProductInfo.
 
         数据源产品所在区域。
 
@@ -121,7 +121,7 @@ class ProductInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ProductInfo.
+        r"""Sets the region of this ProductInfo.
 
         数据源产品所在区域。
 
@@ -132,7 +132,7 @@ class ProductInfo:
 
     @property
     def company_name(self):
-        """Gets the company_name of this ProductInfo.
+        r"""Gets the company_name of this ProductInfo.
 
         数据源产品所属公司的名称。
 
@@ -143,7 +143,7 @@ class ProductInfo:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this ProductInfo.
+        r"""Sets the company_name of this ProductInfo.
 
         数据源产品所属公司的名称。
 
@@ -154,7 +154,7 @@ class ProductInfo:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ProductInfo.
+        r"""Gets the product_name of this ProductInfo.
 
         数据源产品的名称。
 
@@ -165,7 +165,7 @@ class ProductInfo:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ProductInfo.
+        r"""Sets the product_name of this ProductInfo.
 
         数据源产品的名称。
 

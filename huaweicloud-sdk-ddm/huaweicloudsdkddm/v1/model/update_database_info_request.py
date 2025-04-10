@@ -25,7 +25,7 @@ class UpdateDatabaseInfoRequest:
     }
 
     def __init__(self, instance_id=None):
-        """UpdateDatabaseInfoRequest
+        r"""UpdateDatabaseInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDatabaseInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDatabaseInfoRequest.
+        r"""Gets the instance_id of this UpdateDatabaseInfoRequest.
 
         DDM实例ID
 
@@ -53,7 +53,7 @@ class UpdateDatabaseInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDatabaseInfoRequest.
+        r"""Sets the instance_id of this UpdateDatabaseInfoRequest.
 
         DDM实例ID
 

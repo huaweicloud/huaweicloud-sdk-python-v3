@@ -27,7 +27,7 @@ class ImageBatchSyncReqUrls:
     }
 
     def __init__(self, url=None, data_id=None):
-        """ImageBatchSyncReqUrls
+        r"""ImageBatchSyncReqUrls
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ImageBatchSyncReqUrls:
 
     @property
     def url(self):
-        """Gets the url of this ImageBatchSyncReqUrls.
+        r"""Gets the url of this ImageBatchSyncReqUrls.
 
         图片url，目前支持：公网HTTP/HTTPS URL。
 
@@ -59,7 +59,7 @@ class ImageBatchSyncReqUrls:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ImageBatchSyncReqUrls.
+        r"""Sets the url of this ImageBatchSyncReqUrls.
 
         图片url，目前支持：公网HTTP/HTTPS URL。
 
@@ -70,7 +70,7 @@ class ImageBatchSyncReqUrls:
 
     @property
     def data_id(self):
-        """Gets the data_id of this ImageBatchSyncReqUrls.
+        r"""Gets the data_id of this ImageBatchSyncReqUrls.
 
         图片唯一标识。同一次请求中不可重复，由大小写英文字母、数字、下划线（_）、中划线（-）组成，不超过30个字符。
 
@@ -81,7 +81,7 @@ class ImageBatchSyncReqUrls:
 
     @data_id.setter
     def data_id(self, data_id):
-        """Sets the data_id of this ImageBatchSyncReqUrls.
+        r"""Sets the data_id of this ImageBatchSyncReqUrls.
 
         图片唯一标识。同一次请求中不可重复，由大小写英文字母、数字、下划线（_）、中划线（-）组成，不超过30个字符。
 

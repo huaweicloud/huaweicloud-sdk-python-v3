@@ -35,7 +35,7 @@ class LoadbalancerInStatusResp:
     }
 
     def __init__(self, name=None, id=None, listeners=None, pools=None, operating_status=None, provisioning_status=None):
-        """LoadbalancerInStatusResp
+        r"""LoadbalancerInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class LoadbalancerInStatusResp:
 
     @property
     def name(self):
-        """Gets the name of this LoadbalancerInStatusResp.
+        r"""Gets the name of this LoadbalancerInStatusResp.
 
         负载均衡器名称
 
@@ -83,7 +83,7 @@ class LoadbalancerInStatusResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadbalancerInStatusResp.
+        r"""Sets the name of this LoadbalancerInStatusResp.
 
         负载均衡器名称
 
@@ -94,7 +94,7 @@ class LoadbalancerInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this LoadbalancerInStatusResp.
+        r"""Gets the id of this LoadbalancerInStatusResp.
 
         负载均衡器ID
 
@@ -105,7 +105,7 @@ class LoadbalancerInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadbalancerInStatusResp.
+        r"""Sets the id of this LoadbalancerInStatusResp.
 
         负载均衡器ID
 
@@ -116,7 +116,7 @@ class LoadbalancerInStatusResp:
 
     @property
     def listeners(self):
-        """Gets the listeners of this LoadbalancerInStatusResp.
+        r"""Gets the listeners of this LoadbalancerInStatusResp.
 
         负载均衡器关联的监听器列表
 
@@ -127,7 +127,7 @@ class LoadbalancerInStatusResp:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this LoadbalancerInStatusResp.
+        r"""Sets the listeners of this LoadbalancerInStatusResp.
 
         负载均衡器关联的监听器列表
 
@@ -138,7 +138,7 @@ class LoadbalancerInStatusResp:
 
     @property
     def pools(self):
-        """Gets the pools of this LoadbalancerInStatusResp.
+        r"""Gets the pools of this LoadbalancerInStatusResp.
 
         负载均衡器关联的后端云服务器组列表
 
@@ -149,7 +149,7 @@ class LoadbalancerInStatusResp:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this LoadbalancerInStatusResp.
+        r"""Sets the pools of this LoadbalancerInStatusResp.
 
         负载均衡器关联的后端云服务器组列表
 
@@ -160,7 +160,7 @@ class LoadbalancerInStatusResp:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this LoadbalancerInStatusResp.
+        r"""Gets the operating_status of this LoadbalancerInStatusResp.
 
         负载均衡器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
@@ -171,7 +171,7 @@ class LoadbalancerInStatusResp:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this LoadbalancerInStatusResp.
+        r"""Sets the operating_status of this LoadbalancerInStatusResp.
 
         负载均衡器的操作状态；该字段为预留字段，暂未启用。默认为ONLINE。
 
@@ -182,7 +182,7 @@ class LoadbalancerInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadbalancerInStatusResp.
+        r"""Gets the provisioning_status of this LoadbalancerInStatusResp.
 
         负载均衡器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -193,7 +193,7 @@ class LoadbalancerInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadbalancerInStatusResp.
+        r"""Sets the provisioning_status of this LoadbalancerInStatusResp.
 
         负载均衡器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 

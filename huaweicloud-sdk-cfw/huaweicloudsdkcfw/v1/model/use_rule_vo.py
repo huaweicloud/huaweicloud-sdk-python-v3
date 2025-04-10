@@ -27,7 +27,7 @@ class UseRuleVO:
     }
 
     def __init__(self, id=None, name=None):
-        """UseRuleVO
+        r"""UseRuleVO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UseRuleVO:
 
     @property
     def id(self):
-        """Gets the id of this UseRuleVO.
+        r"""Gets the id of this UseRuleVO.
 
         规则id
 
@@ -61,7 +61,7 @@ class UseRuleVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UseRuleVO.
+        r"""Sets the id of this UseRuleVO.
 
         规则id
 
@@ -72,7 +72,7 @@ class UseRuleVO:
 
     @property
     def name(self):
-        """Gets the name of this UseRuleVO.
+        r"""Gets the name of this UseRuleVO.
 
         规则名称
 
@@ -83,7 +83,7 @@ class UseRuleVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UseRuleVO.
+        r"""Sets the name of this UseRuleVO.
 
         规则名称
 

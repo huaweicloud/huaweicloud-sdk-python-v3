@@ -29,7 +29,7 @@ class CloseProtectionInfoRequestInfo:
     }
 
     def __init__(self, host_id_list=None, agent_id_list=None, close_protection_type=None):
-        """CloseProtectionInfoRequestInfo
+        r"""CloseProtectionInfoRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CloseProtectionInfoRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this CloseProtectionInfoRequestInfo.
+        r"""Gets the host_id_list of this CloseProtectionInfoRequestInfo.
 
         需要关闭勒索防护的主机ID列表
 
@@ -65,7 +65,7 @@ class CloseProtectionInfoRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this CloseProtectionInfoRequestInfo.
+        r"""Sets the host_id_list of this CloseProtectionInfoRequestInfo.
 
         需要关闭勒索防护的主机ID列表
 
@@ -76,7 +76,7 @@ class CloseProtectionInfoRequestInfo:
 
     @property
     def agent_id_list(self):
-        """Gets the agent_id_list of this CloseProtectionInfoRequestInfo.
+        r"""Gets the agent_id_list of this CloseProtectionInfoRequestInfo.
 
         需要关闭勒索防护的agentID列表
 
@@ -87,7 +87,7 @@ class CloseProtectionInfoRequestInfo:
 
     @agent_id_list.setter
     def agent_id_list(self, agent_id_list):
-        """Sets the agent_id_list of this CloseProtectionInfoRequestInfo.
+        r"""Sets the agent_id_list of this CloseProtectionInfoRequestInfo.
 
         需要关闭勒索防护的agentID列表
 
@@ -98,7 +98,7 @@ class CloseProtectionInfoRequestInfo:
 
     @property
     def close_protection_type(self):
-        """Gets the close_protection_type of this CloseProtectionInfoRequestInfo.
+        r"""Gets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
         关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
 
@@ -109,7 +109,7 @@ class CloseProtectionInfoRequestInfo:
 
     @close_protection_type.setter
     def close_protection_type(self, close_protection_type):
-        """Sets the close_protection_type of this CloseProtectionInfoRequestInfo.
+        r"""Sets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
         关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
 

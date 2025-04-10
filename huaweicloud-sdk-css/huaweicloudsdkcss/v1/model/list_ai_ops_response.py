@@ -28,7 +28,7 @@ class ListAiOpsResponse(SdkResponse):
     }
 
     def __init__(self, total_size=None, aiops_list=None):
-        """ListAiOpsResponse
+        r"""ListAiOpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAiOpsResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ListAiOpsResponse.
+        r"""Gets the total_size of this ListAiOpsResponse.
 
         检测任务个数。
 
@@ -62,7 +62,7 @@ class ListAiOpsResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ListAiOpsResponse.
+        r"""Sets the total_size of this ListAiOpsResponse.
 
         检测任务个数。
 
@@ -73,7 +73,7 @@ class ListAiOpsResponse(SdkResponse):
 
     @property
     def aiops_list(self):
-        """Gets the aiops_list of this ListAiOpsResponse.
+        r"""Gets the aiops_list of this ListAiOpsResponse.
 
         创建一个集群检测任务。
 
@@ -84,7 +84,7 @@ class ListAiOpsResponse(SdkResponse):
 
     @aiops_list.setter
     def aiops_list(self, aiops_list):
-        """Sets the aiops_list of this ListAiOpsResponse.
+        r"""Sets the aiops_list of this ListAiOpsResponse.
 
         创建一个集群检测任务。
 

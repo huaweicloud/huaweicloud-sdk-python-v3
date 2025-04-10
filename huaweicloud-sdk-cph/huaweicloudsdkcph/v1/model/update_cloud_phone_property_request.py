@@ -25,7 +25,7 @@ class UpdateCloudPhonePropertyRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateCloudPhonePropertyRequest
+        r"""UpdateCloudPhonePropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateCloudPhonePropertyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCloudPhonePropertyRequest.
+        r"""Gets the body of this UpdateCloudPhonePropertyRequest.
 
         :return: The body of this UpdateCloudPhonePropertyRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequestBody`
@@ -52,7 +52,7 @@ class UpdateCloudPhonePropertyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCloudPhonePropertyRequest.
+        r"""Sets the body of this UpdateCloudPhonePropertyRequest.
 
         :param body: The body of this UpdateCloudPhonePropertyRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequestBody`

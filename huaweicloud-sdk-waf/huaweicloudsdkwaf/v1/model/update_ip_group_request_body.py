@@ -29,7 +29,7 @@ class UpdateIpGroupRequestBody:
     }
 
     def __init__(self, name=None, ips=None, description=None):
-        """UpdateIpGroupRequestBody
+        r"""UpdateIpGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateIpGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIpGroupRequestBody.
+        r"""Gets the name of this UpdateIpGroupRequestBody.
 
         地址组名称
 
@@ -66,7 +66,7 @@ class UpdateIpGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIpGroupRequestBody.
+        r"""Sets the name of this UpdateIpGroupRequestBody.
 
         地址组名称
 
@@ -77,7 +77,7 @@ class UpdateIpGroupRequestBody:
 
     @property
     def ips(self):
-        """Gets the ips of this UpdateIpGroupRequestBody.
+        r"""Gets the ips of this UpdateIpGroupRequestBody.
 
         以逗号分隔的ip或ip段
 
@@ -88,7 +88,7 @@ class UpdateIpGroupRequestBody:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this UpdateIpGroupRequestBody.
+        r"""Sets the ips of this UpdateIpGroupRequestBody.
 
         以逗号分隔的ip或ip段
 
@@ -99,7 +99,7 @@ class UpdateIpGroupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIpGroupRequestBody.
+        r"""Gets the description of this UpdateIpGroupRequestBody.
 
         地址组描述
 
@@ -110,7 +110,7 @@ class UpdateIpGroupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIpGroupRequestBody.
+        r"""Sets the description of this UpdateIpGroupRequestBody.
 
         地址组描述
 

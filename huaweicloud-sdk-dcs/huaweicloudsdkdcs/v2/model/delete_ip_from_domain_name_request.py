@@ -29,7 +29,7 @@ class DeleteIpFromDomainNameRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, node_id=None):
-        """DeleteIpFromDomainNameRequest
+        r"""DeleteIpFromDomainNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteIpFromDomainNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteIpFromDomainNameRequest.
+        r"""Gets the instance_id of this DeleteIpFromDomainNameRequest.
 
         实例ID。
 
@@ -65,7 +65,7 @@ class DeleteIpFromDomainNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteIpFromDomainNameRequest.
+        r"""Sets the instance_id of this DeleteIpFromDomainNameRequest.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class DeleteIpFromDomainNameRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteIpFromDomainNameRequest.
+        r"""Gets the group_id of this DeleteIpFromDomainNameRequest.
 
         分片ID。
 
@@ -87,7 +87,7 @@ class DeleteIpFromDomainNameRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteIpFromDomainNameRequest.
+        r"""Sets the group_id of this DeleteIpFromDomainNameRequest.
 
         分片ID。
 
@@ -98,7 +98,7 @@ class DeleteIpFromDomainNameRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteIpFromDomainNameRequest.
+        r"""Gets the node_id of this DeleteIpFromDomainNameRequest.
 
         节点ID。
 
@@ -109,7 +109,7 @@ class DeleteIpFromDomainNameRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteIpFromDomainNameRequest.
+        r"""Sets the node_id of this DeleteIpFromDomainNameRequest.
 
         节点ID。
 

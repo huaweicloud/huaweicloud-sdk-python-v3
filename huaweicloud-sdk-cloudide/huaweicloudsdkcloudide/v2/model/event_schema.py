@@ -31,7 +31,7 @@ class EventSchema:
     }
 
     def __init__(self, component=None, verb=None, object=None, data=None):
-        """EventSchema
+        r"""EventSchema
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class EventSchema:
 
     @property
     def component(self):
-        """Gets the component of this EventSchema.
+        r"""Gets the component of this EventSchema.
 
         the component of the codearts snap
 
@@ -74,7 +74,7 @@ class EventSchema:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this EventSchema.
+        r"""Sets the component of this EventSchema.
 
         the component of the codearts snap
 
@@ -85,7 +85,7 @@ class EventSchema:
 
     @property
     def verb(self):
-        """Gets the verb of this EventSchema.
+        r"""Gets the verb of this EventSchema.
 
         the verb of the action
 
@@ -96,7 +96,7 @@ class EventSchema:
 
     @verb.setter
     def verb(self, verb):
-        """Sets the verb of this EventSchema.
+        r"""Sets the verb of this EventSchema.
 
         the verb of the action
 
@@ -107,7 +107,7 @@ class EventSchema:
 
     @property
     def object(self):
-        """Gets the object of this EventSchema.
+        r"""Gets the object of this EventSchema.
 
         the the object of the verb
 
@@ -118,7 +118,7 @@ class EventSchema:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this EventSchema.
+        r"""Sets the object of this EventSchema.
 
         the the object of the verb
 
@@ -129,7 +129,7 @@ class EventSchema:
 
     @property
     def data(self):
-        """Gets the data of this EventSchema.
+        r"""Gets the data of this EventSchema.
 
         the data of the event
 
@@ -140,7 +140,7 @@ class EventSchema:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this EventSchema.
+        r"""Sets the data of this EventSchema.
 
         the data of the event
 

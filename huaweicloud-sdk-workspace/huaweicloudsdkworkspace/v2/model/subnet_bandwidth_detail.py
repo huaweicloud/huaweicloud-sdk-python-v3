@@ -49,7 +49,7 @@ class SubnetBandwidthDetail:
     }
 
     def __init__(self, bandwidth_id=None, bandwidth_name=None, charge_mode=None, size=None, vpc_id=None, vpc_name=None, subnet_id=None, subnet_name=None, enterprise_project_id=None, created_at=None, order_id=None, status=None, control_mode=None):
-        """SubnetBandwidthDetail
+        r"""SubnetBandwidthDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class SubnetBandwidthDetail:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this SubnetBandwidthDetail.
+        r"""Gets the bandwidth_id of this SubnetBandwidthDetail.
 
         云办公带宽id。
 
@@ -138,7 +138,7 @@ class SubnetBandwidthDetail:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this SubnetBandwidthDetail.
+        r"""Sets the bandwidth_id of this SubnetBandwidthDetail.
 
         云办公带宽id。
 
@@ -149,7 +149,7 @@ class SubnetBandwidthDetail:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this SubnetBandwidthDetail.
+        r"""Gets the bandwidth_name of this SubnetBandwidthDetail.
 
         云办公带宽名称。
 
@@ -160,7 +160,7 @@ class SubnetBandwidthDetail:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this SubnetBandwidthDetail.
+        r"""Sets the bandwidth_name of this SubnetBandwidthDetail.
 
         云办公带宽名称。
 
@@ -171,7 +171,7 @@ class SubnetBandwidthDetail:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this SubnetBandwidthDetail.
+        r"""Gets the charge_mode of this SubnetBandwidthDetail.
 
         云办公带宽计费方式。
 
@@ -182,7 +182,7 @@ class SubnetBandwidthDetail:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this SubnetBandwidthDetail.
+        r"""Sets the charge_mode of this SubnetBandwidthDetail.
 
         云办公带宽计费方式。
 
@@ -193,7 +193,7 @@ class SubnetBandwidthDetail:
 
     @property
     def size(self):
-        """Gets the size of this SubnetBandwidthDetail.
+        r"""Gets the size of this SubnetBandwidthDetail.
 
         云办公带宽大小。
 
@@ -204,7 +204,7 @@ class SubnetBandwidthDetail:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SubnetBandwidthDetail.
+        r"""Sets the size of this SubnetBandwidthDetail.
 
         云办公带宽大小。
 
@@ -215,7 +215,7 @@ class SubnetBandwidthDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SubnetBandwidthDetail.
+        r"""Gets the vpc_id of this SubnetBandwidthDetail.
 
         VPC ID。
 
@@ -226,7 +226,7 @@ class SubnetBandwidthDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SubnetBandwidthDetail.
+        r"""Sets the vpc_id of this SubnetBandwidthDetail.
 
         VPC ID。
 
@@ -237,7 +237,7 @@ class SubnetBandwidthDetail:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this SubnetBandwidthDetail.
+        r"""Gets the vpc_name of this SubnetBandwidthDetail.
 
         VPC名称。
 
@@ -248,7 +248,7 @@ class SubnetBandwidthDetail:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this SubnetBandwidthDetail.
+        r"""Sets the vpc_name of this SubnetBandwidthDetail.
 
         VPC名称。
 
@@ -259,7 +259,7 @@ class SubnetBandwidthDetail:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this SubnetBandwidthDetail.
+        r"""Gets the subnet_id of this SubnetBandwidthDetail.
 
         子网 ID。
 
@@ -270,7 +270,7 @@ class SubnetBandwidthDetail:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this SubnetBandwidthDetail.
+        r"""Sets the subnet_id of this SubnetBandwidthDetail.
 
         子网 ID。
 
@@ -281,7 +281,7 @@ class SubnetBandwidthDetail:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this SubnetBandwidthDetail.
+        r"""Gets the subnet_name of this SubnetBandwidthDetail.
 
         子网名称。
 
@@ -292,7 +292,7 @@ class SubnetBandwidthDetail:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this SubnetBandwidthDetail.
+        r"""Sets the subnet_name of this SubnetBandwidthDetail.
 
         子网名称。
 
@@ -303,7 +303,7 @@ class SubnetBandwidthDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SubnetBandwidthDetail.
+        r"""Gets the enterprise_project_id of this SubnetBandwidthDetail.
 
         企业项目ID。
 
@@ -314,7 +314,7 @@ class SubnetBandwidthDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SubnetBandwidthDetail.
+        r"""Sets the enterprise_project_id of this SubnetBandwidthDetail.
 
         企业项目ID。
 
@@ -325,7 +325,7 @@ class SubnetBandwidthDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SubnetBandwidthDetail.
+        r"""Gets the created_at of this SubnetBandwidthDetail.
 
         创建时间。
 
@@ -336,7 +336,7 @@ class SubnetBandwidthDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SubnetBandwidthDetail.
+        r"""Sets the created_at of this SubnetBandwidthDetail.
 
         创建时间。
 
@@ -347,7 +347,7 @@ class SubnetBandwidthDetail:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SubnetBandwidthDetail.
+        r"""Gets the order_id of this SubnetBandwidthDetail.
 
         订单id。
 
@@ -358,7 +358,7 @@ class SubnetBandwidthDetail:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SubnetBandwidthDetail.
+        r"""Sets the order_id of this SubnetBandwidthDetail.
 
         订单id。
 
@@ -369,7 +369,7 @@ class SubnetBandwidthDetail:
 
     @property
     def status(self):
-        """Gets the status of this SubnetBandwidthDetail.
+        r"""Gets the status of this SubnetBandwidthDetail.
 
         状态。 - CREATING：创建中。 - ACTIVE：使用中。 - INACTIVE：已停用。 - UPDATING：更新中。 - DELETING：删除中。
 
@@ -380,7 +380,7 @@ class SubnetBandwidthDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubnetBandwidthDetail.
+        r"""Sets the status of this SubnetBandwidthDetail.
 
         状态。 - CREATING：创建中。 - ACTIVE：使用中。 - INACTIVE：已停用。 - UPDATING：更新中。 - DELETING：删除中。
 
@@ -391,7 +391,7 @@ class SubnetBandwidthDetail:
 
     @property
     def control_mode(self):
-        """Gets the control_mode of this SubnetBandwidthDetail.
+        r"""Gets the control_mode of this SubnetBandwidthDetail.
 
         状态。 - BLACK：黑名单管控模式。 - WHITE：白名单管控模式。
 
@@ -402,7 +402,7 @@ class SubnetBandwidthDetail:
 
     @control_mode.setter
     def control_mode(self, control_mode):
-        """Sets the control_mode of this SubnetBandwidthDetail.
+        r"""Sets the control_mode of this SubnetBandwidthDetail.
 
         状态。 - BLACK：黑名单管控模式。 - WHITE：白名单管控模式。
 

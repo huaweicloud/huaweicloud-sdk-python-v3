@@ -33,7 +33,7 @@ class TransformMetricsRequest:
     }
 
     def __init__(self, time_span=None, tags=None, property_filter=None, metrics=None, limit=None):
-        """TransformMetricsRequest
+        r"""TransformMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class TransformMetricsRequest:
 
     @property
     def time_span(self):
-        """Gets the time_span of this TransformMetricsRequest.
+        r"""Gets the time_span of this TransformMetricsRequest.
 
         :return: The time_span of this TransformMetricsRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
@@ -79,7 +79,7 @@ class TransformMetricsRequest:
 
     @time_span.setter
     def time_span(self, time_span):
-        """Sets the time_span of this TransformMetricsRequest.
+        r"""Sets the time_span of this TransformMetricsRequest.
 
         :param time_span: The time_span of this TransformMetricsRequest.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
@@ -88,7 +88,7 @@ class TransformMetricsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this TransformMetricsRequest.
+        r"""Gets the tags of this TransformMetricsRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -99,7 +99,7 @@ class TransformMetricsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TransformMetricsRequest.
+        r"""Sets the tags of this TransformMetricsRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -110,7 +110,7 @@ class TransformMetricsRequest:
 
     @property
     def property_filter(self):
-        """Gets the property_filter of this TransformMetricsRequest.
+        r"""Gets the property_filter of this TransformMetricsRequest.
 
         属性过滤器，最多5个
 
@@ -121,7 +121,7 @@ class TransformMetricsRequest:
 
     @property_filter.setter
     def property_filter(self, property_filter):
-        """Sets the property_filter of this TransformMetricsRequest.
+        r"""Sets the property_filter of this TransformMetricsRequest.
 
         属性过滤器，最多5个
 
@@ -132,7 +132,7 @@ class TransformMetricsRequest:
 
     @property
     def metrics(self):
-        """Gets the metrics of this TransformMetricsRequest.
+        r"""Gets the metrics of this TransformMetricsRequest.
 
         转换查询指标列表，对资产属性进行转换查询得到指标
 
@@ -143,7 +143,7 @@ class TransformMetricsRequest:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this TransformMetricsRequest.
+        r"""Sets the metrics of this TransformMetricsRequest.
 
         转换查询指标列表，对资产属性进行转换查询得到指标
 
@@ -154,7 +154,7 @@ class TransformMetricsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this TransformMetricsRequest.
+        r"""Gets the limit of this TransformMetricsRequest.
 
         返回值个数限制，最多2000个
 
@@ -165,7 +165,7 @@ class TransformMetricsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this TransformMetricsRequest.
+        r"""Sets the limit of this TransformMetricsRequest.
 
         返回值个数限制，最多2000个
 

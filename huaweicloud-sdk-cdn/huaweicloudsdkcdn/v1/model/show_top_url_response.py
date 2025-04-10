@@ -28,7 +28,7 @@ class ShowTopUrlResponse(SdkResponse):
     }
 
     def __init__(self, service_area=None, top_url_summary=None):
-        """ShowTopUrlResponse
+        r"""ShowTopUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTopUrlResponse(SdkResponse):
 
     @property
     def service_area(self):
-        """Gets the service_area of this ShowTopUrlResponse.
+        r"""Gets the service_area of this ShowTopUrlResponse.
 
         服务区域。
 
@@ -62,7 +62,7 @@ class ShowTopUrlResponse(SdkResponse):
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ShowTopUrlResponse.
+        r"""Sets the service_area of this ShowTopUrlResponse.
 
         服务区域。
 
@@ -73,7 +73,7 @@ class ShowTopUrlResponse(SdkResponse):
 
     @property
     def top_url_summary(self):
-        """Gets the top_url_summary of this ShowTopUrlResponse.
+        r"""Gets the top_url_summary of this ShowTopUrlResponse.
 
         详情数据对象。
 
@@ -84,7 +84,7 @@ class ShowTopUrlResponse(SdkResponse):
 
     @top_url_summary.setter
     def top_url_summary(self, top_url_summary):
-        """Sets the top_url_summary of this ShowTopUrlResponse.
+        r"""Sets the top_url_summary of this ShowTopUrlResponse.
 
         详情数据对象。
 

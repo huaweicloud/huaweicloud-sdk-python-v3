@@ -27,7 +27,7 @@ class CheckIsDuplicateAppNameRequest:
     }
 
     def __init__(self, name=None, project_id=None):
-        """CheckIsDuplicateAppNameRequest
+        r"""CheckIsDuplicateAppNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckIsDuplicateAppNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this CheckIsDuplicateAppNameRequest.
+        r"""Gets the name of this CheckIsDuplicateAppNameRequest.
 
         应用名称
 
@@ -59,7 +59,7 @@ class CheckIsDuplicateAppNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckIsDuplicateAppNameRequest.
+        r"""Sets the name of this CheckIsDuplicateAppNameRequest.
 
         应用名称
 
@@ -70,7 +70,7 @@ class CheckIsDuplicateAppNameRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckIsDuplicateAppNameRequest.
+        r"""Gets the project_id of this CheckIsDuplicateAppNameRequest.
 
         项目id
 
@@ -81,7 +81,7 @@ class CheckIsDuplicateAppNameRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckIsDuplicateAppNameRequest.
+        r"""Sets the project_id of this CheckIsDuplicateAppNameRequest.
 
         项目id
 

@@ -24,7 +24,7 @@ class UpdateBandwidthPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateBandwidthPolicyResponse
+        r"""UpdateBandwidthPolicyResponse
 
         The model defined in huaweicloud sdk
 

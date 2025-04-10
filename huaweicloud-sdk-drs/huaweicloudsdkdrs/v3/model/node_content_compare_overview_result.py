@@ -29,7 +29,7 @@ class NodeContentCompareOverviewResult:
     }
 
     def __init__(self, source_db=None, target_db=None, status=None):
-        """NodeContentCompareOverviewResult
+        r"""NodeContentCompareOverviewResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NodeContentCompareOverviewResult:
 
     @property
     def source_db(self):
-        """Gets the source_db of this NodeContentCompareOverviewResult.
+        r"""Gets the source_db of this NodeContentCompareOverviewResult.
 
         源库名称。
 
@@ -68,7 +68,7 @@ class NodeContentCompareOverviewResult:
 
     @source_db.setter
     def source_db(self, source_db):
-        """Sets the source_db of this NodeContentCompareOverviewResult.
+        r"""Sets the source_db of this NodeContentCompareOverviewResult.
 
         源库名称。
 
@@ -79,7 +79,7 @@ class NodeContentCompareOverviewResult:
 
     @property
     def target_db(self):
-        """Gets the target_db of this NodeContentCompareOverviewResult.
+        r"""Gets the target_db of this NodeContentCompareOverviewResult.
 
         目标库名称。
 
@@ -90,7 +90,7 @@ class NodeContentCompareOverviewResult:
 
     @target_db.setter
     def target_db(self, target_db):
-        """Sets the target_db of this NodeContentCompareOverviewResult.
+        r"""Sets the target_db of this NodeContentCompareOverviewResult.
 
         目标库名称。
 
@@ -101,7 +101,7 @@ class NodeContentCompareOverviewResult:
 
     @property
     def status(self):
-        """Gets the status of this NodeContentCompareOverviewResult.
+        r"""Gets the status of this NodeContentCompareOverviewResult.
 
         对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
 
@@ -112,7 +112,7 @@ class NodeContentCompareOverviewResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeContentCompareOverviewResult.
+        r"""Sets the status of this NodeContentCompareOverviewResult.
 
         对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
 

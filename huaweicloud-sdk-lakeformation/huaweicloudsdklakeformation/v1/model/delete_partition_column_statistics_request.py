@@ -35,7 +35,7 @@ class DeletePartitionColumnStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, partition_values=None, column_name=None):
-        """DeletePartitionColumnStatisticsRequest
+        r"""DeletePartitionColumnStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePartitionColumnStatisticsRequest.
+        r"""Gets the instance_id of this DeletePartitionColumnStatisticsRequest.
 
         实例ID
 
@@ -84,7 +84,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePartitionColumnStatisticsRequest.
+        r"""Sets the instance_id of this DeletePartitionColumnStatisticsRequest.
 
         实例ID
 
@@ -95,7 +95,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Gets the catalog_name of this DeletePartitionColumnStatisticsRequest.
 
         catalog名字
 
@@ -106,7 +106,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Sets the catalog_name of this DeletePartitionColumnStatisticsRequest.
 
         catalog名字
 
@@ -117,7 +117,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Gets the database_name of this DeletePartitionColumnStatisticsRequest.
 
         数据库名字
 
@@ -128,7 +128,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Sets the database_name of this DeletePartitionColumnStatisticsRequest.
 
         数据库名字
 
@@ -139,7 +139,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Gets the table_name of this DeletePartitionColumnStatisticsRequest.
 
         表名称
 
@@ -150,7 +150,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Sets the table_name of this DeletePartitionColumnStatisticsRequest.
 
         表名称
 
@@ -161,7 +161,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this DeletePartitionColumnStatisticsRequest.
+        r"""Gets the partition_values of this DeletePartitionColumnStatisticsRequest.
 
         分区的值列表
 
@@ -172,7 +172,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this DeletePartitionColumnStatisticsRequest.
+        r"""Sets the partition_values of this DeletePartitionColumnStatisticsRequest.
 
         分区的值列表
 
@@ -183,7 +183,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Gets the column_name of this DeletePartitionColumnStatisticsRequest.
 
         列名
 
@@ -194,7 +194,7 @@ class DeletePartitionColumnStatisticsRequest:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DeletePartitionColumnStatisticsRequest.
+        r"""Sets the column_name of this DeletePartitionColumnStatisticsRequest.
 
         列名
 

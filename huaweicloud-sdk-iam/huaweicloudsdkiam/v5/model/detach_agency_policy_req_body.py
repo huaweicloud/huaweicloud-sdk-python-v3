@@ -25,7 +25,7 @@ class DetachAgencyPolicyReqBody:
     }
 
     def __init__(self, agency_id=None):
-        """DetachAgencyPolicyReqBody
+        r"""DetachAgencyPolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetachAgencyPolicyReqBody:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this DetachAgencyPolicyReqBody.
+        r"""Gets the agency_id of this DetachAgencyPolicyReqBody.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class DetachAgencyPolicyReqBody:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this DetachAgencyPolicyReqBody.
+        r"""Sets the agency_id of this DetachAgencyPolicyReqBody.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

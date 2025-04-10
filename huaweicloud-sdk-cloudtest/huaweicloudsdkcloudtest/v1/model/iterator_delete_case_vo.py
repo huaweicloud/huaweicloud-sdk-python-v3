@@ -27,7 +27,7 @@ class IteratorDeleteCaseVo:
     }
 
     def __init__(self, id=None, name=None):
-        """IteratorDeleteCaseVo
+        r"""IteratorDeleteCaseVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IteratorDeleteCaseVo:
 
     @property
     def id(self):
-        """Gets the id of this IteratorDeleteCaseVo.
+        r"""Gets the id of this IteratorDeleteCaseVo.
 
         操作的id, 由projectUuid + - + iteratorUri + - + caseId 组成
 
@@ -61,7 +61,7 @@ class IteratorDeleteCaseVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IteratorDeleteCaseVo.
+        r"""Sets the id of this IteratorDeleteCaseVo.
 
         操作的id, 由projectUuid + - + iteratorUri + - + caseId 组成
 
@@ -72,7 +72,7 @@ class IteratorDeleteCaseVo:
 
     @property
     def name(self):
-        """Gets the name of this IteratorDeleteCaseVo.
+        r"""Gets the name of this IteratorDeleteCaseVo.
 
         操作名称
 
@@ -83,7 +83,7 @@ class IteratorDeleteCaseVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IteratorDeleteCaseVo.
+        r"""Sets the name of this IteratorDeleteCaseVo.
 
         操作名称
 

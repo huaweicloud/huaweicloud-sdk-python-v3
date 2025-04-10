@@ -27,7 +27,7 @@ class CreateAndDeletePrivilegeReq:
     }
 
     def __init__(self, operation=None, privilege=None):
-        """CreateAndDeletePrivilegeReq
+        r"""CreateAndDeletePrivilegeReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAndDeletePrivilegeReq:
 
     @property
     def operation(self):
-        """Gets the operation of this CreateAndDeletePrivilegeReq.
+        r"""Gets the operation of this CreateAndDeletePrivilegeReq.
 
         执行的操作(create|delete)
 
@@ -60,7 +60,7 @@ class CreateAndDeletePrivilegeReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this CreateAndDeletePrivilegeReq.
+        r"""Sets the operation of this CreateAndDeletePrivilegeReq.
 
         执行的操作(create|delete)
 
@@ -71,7 +71,7 @@ class CreateAndDeletePrivilegeReq:
 
     @property
     def privilege(self):
-        """Gets the privilege of this CreateAndDeletePrivilegeReq.
+        r"""Gets the privilege of this CreateAndDeletePrivilegeReq.
 
         权限标识
 
@@ -82,7 +82,7 @@ class CreateAndDeletePrivilegeReq:
 
     @privilege.setter
     def privilege(self, privilege):
-        """Sets the privilege of this CreateAndDeletePrivilegeReq.
+        r"""Sets the privilege of this CreateAndDeletePrivilegeReq.
 
         权限标识
 

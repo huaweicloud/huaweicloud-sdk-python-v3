@@ -34,7 +34,7 @@ class KpsAsyncClient(Client):
         return client_builder
 
     def associate_keypair_async(self, request):
-        """绑定SSH密钥对
+        r"""绑定SSH密钥对
 
         给指定的虚拟机绑定（替换或重置，替换需提供虚拟机已配置的SSH密钥对私钥；重置不需要提供虚拟机的SSH密钥对私钥）新的SSH密钥对。
         
@@ -99,7 +99,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def batch_associate_keypair_async(self, request):
-        """批量绑定SSH密钥对
+        r"""批量绑定SSH密钥对
 
         给指定的虚拟机批量绑定新的SSH密钥对。
         
@@ -164,7 +164,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def batch_export_private_key_async(self, request):
-        """批量导出密钥对私钥
+        r"""批量导出密钥对私钥
 
         批量导出密钥对私钥，单次最多导出10条数据
         
@@ -229,7 +229,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def batch_import_keypair_async(self, request):
-        """批量导入SSH密钥对
+        r"""批量导入SSH密钥对
 
         批量导入SSH密钥对,单次批量导入不得超过10条记录。
         
@@ -294,7 +294,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def clear_private_key_async(self, request):
-        """清除私钥
+        r"""清除私钥
 
         清除SSH密钥对私钥。
         
@@ -359,7 +359,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def create_keypair_async(self, request):
-        """创建和导入SSH密钥对
+        r"""创建和导入SSH密钥对
 
         创建和导入SSH密钥对
         
@@ -424,7 +424,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def delete_all_failed_task_async(self, request):
-        """删除所有失败的任务
+        r"""删除所有失败的任务
 
         删除操作失败的任务信息。
         
@@ -487,7 +487,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def delete_failed_task_async(self, request):
-        """删除失败的任务
+        r"""删除失败的任务
 
         删除失败的任务。
         
@@ -552,7 +552,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def delete_keypair_async(self, request):
-        """删除SSH密钥对
+        r"""删除SSH密钥对
 
         删除SSH密钥对。
         
@@ -617,7 +617,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def disassociate_keypair_async(self, request):
-        """解绑SSH密钥对
+        r"""解绑SSH密钥对
 
         给指定的虚拟机解除绑定SSH密钥对并恢复SSH密码登录。
         
@@ -682,7 +682,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def export_private_key_async(self, request):
-        """导出私钥
+        r"""导出私钥
 
         导出指定密钥对的私钥。
         
@@ -747,7 +747,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def import_private_key_async(self, request):
-        """导入私钥
+        r"""导入私钥
 
         导入私钥到指定密钥对。
         
@@ -812,7 +812,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def list_failed_task_async(self, request):
-        """查询失败的任务信息
+        r"""查询失败的任务信息
 
         查询绑定、解绑等操作失败的任务信息。
         
@@ -879,7 +879,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def list_keypair_detail_async(self, request):
-        """查询SSH密钥对详细信息
+        r"""查询SSH密钥对详细信息
 
         查询SSH密钥对详细信息
         
@@ -944,7 +944,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def list_keypair_task_async(self, request):
-        """查询任务信息
+        r"""查询任务信息
 
         根据SSH密钥对接口返回的task_id，查询SSH密钥对当前任务的执行状态。
         
@@ -1009,7 +1009,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def list_keypairs_async(self, request):
-        """查询SSH密钥对列表
+        r"""查询SSH密钥对列表
 
         查询SSH密钥对列表
         
@@ -1076,7 +1076,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def list_running_task_async(self, request):
-        """查询正在处理的任务信息
+        r"""查询正在处理的任务信息
 
         查询正在处理的任务信息。
         
@@ -1143,7 +1143,7 @@ class KpsAsyncClient(Client):
         return http_info
 
     def update_keypair_description_async(self, request):
-        """更新SSH密钥对描述
+        r"""更新SSH密钥对描述
 
         更新SSH密钥对描述。
         

@@ -37,7 +37,7 @@ class ListAllAppRequestBody:
     }
 
     def __init__(self, project_id=None, page=None, size=None, sort_name=None, sort_by=None, states=None, group_id=None):
-        """ListAllAppRequestBody
+        r"""ListAllAppRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListAllAppRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAllAppRequestBody.
+        r"""Gets the project_id of this ListAllAppRequestBody.
 
         项目id
 
@@ -93,7 +93,7 @@ class ListAllAppRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAllAppRequestBody.
+        r"""Sets the project_id of this ListAllAppRequestBody.
 
         项目id
 
@@ -104,7 +104,7 @@ class ListAllAppRequestBody:
 
     @property
     def page(self):
-        """Gets the page of this ListAllAppRequestBody.
+        r"""Gets the page of this ListAllAppRequestBody.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -115,7 +115,7 @@ class ListAllAppRequestBody:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListAllAppRequestBody.
+        r"""Sets the page of this ListAllAppRequestBody.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -126,7 +126,7 @@ class ListAllAppRequestBody:
 
     @property
     def size(self):
-        """Gets the size of this ListAllAppRequestBody.
+        r"""Gets the size of this ListAllAppRequestBody.
 
         每页显示的条目数量，size小于等于100
 
@@ -137,7 +137,7 @@ class ListAllAppRequestBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAllAppRequestBody.
+        r"""Sets the size of this ListAllAppRequestBody.
 
         每页显示的条目数量，size小于等于100
 
@@ -148,7 +148,7 @@ class ListAllAppRequestBody:
 
     @property
     def sort_name(self):
-        """Gets the sort_name of this ListAllAppRequestBody.
+        r"""Gets the sort_name of this ListAllAppRequestBody.
 
         排序字段的名称，当前仅支持name和startTime
 
@@ -159,7 +159,7 @@ class ListAllAppRequestBody:
 
     @sort_name.setter
     def sort_name(self, sort_name):
-        """Sets the sort_name of this ListAllAppRequestBody.
+        r"""Sets the sort_name of this ListAllAppRequestBody.
 
         排序字段的名称，当前仅支持name和startTime
 
@@ -170,7 +170,7 @@ class ListAllAppRequestBody:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListAllAppRequestBody.
+        r"""Gets the sort_by of this ListAllAppRequestBody.
 
         排序顺序，正序（ASC）或者逆序（DESC)
 
@@ -181,7 +181,7 @@ class ListAllAppRequestBody:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListAllAppRequestBody.
+        r"""Sets the sort_by of this ListAllAppRequestBody.
 
         排序顺序，正序（ASC）或者逆序（DESC)
 
@@ -192,7 +192,7 @@ class ListAllAppRequestBody:
 
     @property
     def states(self):
-        """Gets the states of this ListAllAppRequestBody.
+        r"""Gets the states of this ListAllAppRequestBody.
 
         应用状态列表，支持查询以下状态： abort: 部署中止 failed: 部署失败 not_started: 取消执行 pending: 排队中 running: 正在部署 succeeded: 部署成功 timeout: 部署超时 not_executed: 未执行 
 
@@ -203,7 +203,7 @@ class ListAllAppRequestBody:
 
     @states.setter
     def states(self, states):
-        """Sets the states of this ListAllAppRequestBody.
+        r"""Sets the states of this ListAllAppRequestBody.
 
         应用状态列表，支持查询以下状态： abort: 部署中止 failed: 部署失败 not_started: 取消执行 pending: 排队中 running: 正在部署 succeeded: 部署成功 timeout: 部署超时 not_executed: 未执行 
 
@@ -214,7 +214,7 @@ class ListAllAppRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListAllAppRequestBody.
+        r"""Gets the group_id of this ListAllAppRequestBody.
 
         应用的分组id，传入no_grouped为查询未分组的应用
 
@@ -225,7 +225,7 @@ class ListAllAppRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListAllAppRequestBody.
+        r"""Sets the group_id of this ListAllAppRequestBody.
 
         应用的分组id，传入no_grouped为查询未分组的应用
 

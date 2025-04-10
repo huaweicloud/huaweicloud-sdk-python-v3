@@ -35,7 +35,7 @@ class UpdateRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None, data_parsing_status=None, sql_field=None, sql_where=None):
-        """UpdateRuleRequestBody
+        r"""UpdateRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRuleRequestBody.
+        r"""Gets the name of this UpdateRuleRequestBody.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -89,7 +89,7 @@ class UpdateRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRuleRequestBody.
+        r"""Sets the name of this UpdateRuleRequestBody.
 
         规则名称，支持英文大小写，数字，下划线和中划线,长度1-64
 
@@ -100,7 +100,7 @@ class UpdateRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRuleRequestBody.
+        r"""Gets the description of this UpdateRuleRequestBody.
 
         描述，长度0-200
 
@@ -111,7 +111,7 @@ class UpdateRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRuleRequestBody.
+        r"""Sets the description of this UpdateRuleRequestBody.
 
         描述，长度0-200
 
@@ -122,7 +122,7 @@ class UpdateRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateRuleRequestBody.
+        r"""Gets the status of this UpdateRuleRequestBody.
 
         规则状态 0-启用 1-停用，不填写时默认为0-启用
 
@@ -133,7 +133,7 @@ class UpdateRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateRuleRequestBody.
+        r"""Sets the status of this UpdateRuleRequestBody.
 
         规则状态 0-启用 1-停用，不填写时默认为0-启用
 
@@ -144,7 +144,7 @@ class UpdateRuleRequestBody:
 
     @property
     def data_parsing_status(self):
-        """Gets the data_parsing_status of this UpdateRuleRequestBody.
+        r"""Gets the data_parsing_status of this UpdateRuleRequestBody.
 
         数据解析状态，0-启用 1-停用，不填写时默认为1-禁用
 
@@ -155,7 +155,7 @@ class UpdateRuleRequestBody:
 
     @data_parsing_status.setter
     def data_parsing_status(self, data_parsing_status):
-        """Sets the data_parsing_status of this UpdateRuleRequestBody.
+        r"""Sets the data_parsing_status of this UpdateRuleRequestBody.
 
         数据解析状态，0-启用 1-停用，不填写时默认为1-禁用
 
@@ -166,7 +166,7 @@ class UpdateRuleRequestBody:
 
     @property
     def sql_field(self):
-        """Gets the sql_field of this UpdateRuleRequestBody.
+        r"""Gets the sql_field of this UpdateRuleRequestBody.
 
         SQL查询字段
 
@@ -177,7 +177,7 @@ class UpdateRuleRequestBody:
 
     @sql_field.setter
     def sql_field(self, sql_field):
-        """Sets the sql_field of this UpdateRuleRequestBody.
+        r"""Sets the sql_field of this UpdateRuleRequestBody.
 
         SQL查询字段
 
@@ -188,7 +188,7 @@ class UpdateRuleRequestBody:
 
     @property
     def sql_where(self):
-        """Gets the sql_where of this UpdateRuleRequestBody.
+        r"""Gets the sql_where of this UpdateRuleRequestBody.
 
         SQL查询条件
 
@@ -199,7 +199,7 @@ class UpdateRuleRequestBody:
 
     @sql_where.setter
     def sql_where(self, sql_where):
-        """Sets the sql_where of this UpdateRuleRequestBody.
+        r"""Sets the sql_where of this UpdateRuleRequestBody.
 
         SQL查询条件
 

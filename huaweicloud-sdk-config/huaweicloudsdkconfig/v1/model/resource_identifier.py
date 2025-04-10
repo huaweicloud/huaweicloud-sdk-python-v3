@@ -35,7 +35,7 @@ class ResourceIdentifier:
     }
 
     def __init__(self, resource_id=None, resource_name=None, provider=None, type=None, source_account_id=None, region_id=None):
-        """ResourceIdentifier
+        r"""ResourceIdentifier
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ResourceIdentifier:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceIdentifier.
+        r"""Gets the resource_id of this ResourceIdentifier.
 
         资源ID。
 
@@ -84,7 +84,7 @@ class ResourceIdentifier:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceIdentifier.
+        r"""Sets the resource_id of this ResourceIdentifier.
 
         资源ID。
 
@@ -95,7 +95,7 @@ class ResourceIdentifier:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceIdentifier.
+        r"""Gets the resource_name of this ResourceIdentifier.
 
         资源名称。
 
@@ -106,7 +106,7 @@ class ResourceIdentifier:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceIdentifier.
+        r"""Sets the resource_name of this ResourceIdentifier.
 
         资源名称。
 
@@ -117,7 +117,7 @@ class ResourceIdentifier:
 
     @property
     def provider(self):
-        """Gets the provider of this ResourceIdentifier.
+        r"""Gets the provider of this ResourceIdentifier.
 
         云服务类型。
 
@@ -128,7 +128,7 @@ class ResourceIdentifier:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ResourceIdentifier.
+        r"""Sets the provider of this ResourceIdentifier.
 
         云服务类型。
 
@@ -139,7 +139,7 @@ class ResourceIdentifier:
 
     @property
     def type(self):
-        """Gets the type of this ResourceIdentifier.
+        r"""Gets the type of this ResourceIdentifier.
 
         资源类型。
 
@@ -150,7 +150,7 @@ class ResourceIdentifier:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceIdentifier.
+        r"""Sets the type of this ResourceIdentifier.
 
         资源类型。
 
@@ -161,7 +161,7 @@ class ResourceIdentifier:
 
     @property
     def source_account_id(self):
-        """Gets the source_account_id of this ResourceIdentifier.
+        r"""Gets the source_account_id of this ResourceIdentifier.
 
         源帐号ID。
 
@@ -172,7 +172,7 @@ class ResourceIdentifier:
 
     @source_account_id.setter
     def source_account_id(self, source_account_id):
-        """Sets the source_account_id of this ResourceIdentifier.
+        r"""Sets the source_account_id of this ResourceIdentifier.
 
         源帐号ID。
 
@@ -183,7 +183,7 @@ class ResourceIdentifier:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceIdentifier.
+        r"""Gets the region_id of this ResourceIdentifier.
 
         资源所属区域。
 
@@ -194,7 +194,7 @@ class ResourceIdentifier:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceIdentifier.
+        r"""Sets the region_id of this ResourceIdentifier.
 
         资源所属区域。
 

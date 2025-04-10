@@ -30,7 +30,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, data_points=None, metric_name=None, resource_id=None):
-        """ShowResourceMetricDataResponse
+        r"""ShowResourceMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
 
     @property
     def data_points(self):
-        """Gets the data_points of this ShowResourceMetricDataResponse.
+        r"""Gets the data_points of this ShowResourceMetricDataResponse.
 
         监控数据列表
 
@@ -69,7 +69,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this ShowResourceMetricDataResponse.
+        r"""Sets the data_points of this ShowResourceMetricDataResponse.
 
         监控数据列表
 
@@ -80,7 +80,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ShowResourceMetricDataResponse.
+        r"""Gets the metric_name of this ShowResourceMetricDataResponse.
 
         监控指标名称
 
@@ -91,7 +91,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowResourceMetricDataResponse.
+        r"""Sets the metric_name of this ShowResourceMetricDataResponse.
 
         监控指标名称
 
@@ -102,7 +102,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceMetricDataResponse.
+        r"""Gets the resource_id of this ShowResourceMetricDataResponse.
 
         监控资源id
 
@@ -113,7 +113,7 @@ class ShowResourceMetricDataResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceMetricDataResponse.
+        r"""Sets the resource_id of this ShowResourceMetricDataResponse.
 
         监控资源id
 

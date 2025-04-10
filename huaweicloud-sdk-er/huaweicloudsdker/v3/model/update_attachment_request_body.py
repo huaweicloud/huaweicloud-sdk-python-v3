@@ -25,7 +25,7 @@ class UpdateAttachmentRequestBody:
     }
 
     def __init__(self, attachment=None):
-        """UpdateAttachmentRequestBody
+        r"""UpdateAttachmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAttachmentRequestBody:
 
     @property
     def attachment(self):
-        """Gets the attachment of this UpdateAttachmentRequestBody.
+        r"""Gets the attachment of this UpdateAttachmentRequestBody.
 
         :return: The attachment of this UpdateAttachmentRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.UpdateAttachmentBody`
@@ -52,7 +52,7 @@ class UpdateAttachmentRequestBody:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this UpdateAttachmentRequestBody.
+        r"""Sets the attachment of this UpdateAttachmentRequestBody.
 
         :param attachment: The attachment of this UpdateAttachmentRequestBody.
         :type attachment: :class:`huaweicloudsdker.v3.UpdateAttachmentBody`

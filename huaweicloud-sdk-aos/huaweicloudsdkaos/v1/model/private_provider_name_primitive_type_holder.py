@@ -25,7 +25,7 @@ class PrivateProviderNamePrimitiveTypeHolder:
     }
 
     def __init__(self, provider_name=None):
-        """PrivateProviderNamePrimitiveTypeHolder
+        r"""PrivateProviderNamePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PrivateProviderNamePrimitiveTypeHolder:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this PrivateProviderNamePrimitiveTypeHolder.
+        r"""Gets the provider_name of this PrivateProviderNamePrimitiveTypeHolder.
 
         私有provider（private-provider）的名称。此名字在domain_id+region下应唯一，可以使用小写英文、数字、中划线。仅支持以小写英文、数字开头结尾。  按照HCL最佳实践，该名称推荐为在模板中定义的provider的本地名称（local_name）。  创建私有Provider（CreatePrivateProvider）API 还会以 “huawei.com/private-provider”为固定前缀，并以“huawei.com/private-provider/{provider_name}”的形式返回provider_source字段。关于provider_name和provider_source字段在模板中的使用细节，详见创建私有Provider的API描述。
 
@@ -53,7 +53,7 @@ class PrivateProviderNamePrimitiveTypeHolder:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this PrivateProviderNamePrimitiveTypeHolder.
+        r"""Sets the provider_name of this PrivateProviderNamePrimitiveTypeHolder.
 
         私有provider（private-provider）的名称。此名字在domain_id+region下应唯一，可以使用小写英文、数字、中划线。仅支持以小写英文、数字开头结尾。  按照HCL最佳实践，该名称推荐为在模板中定义的provider的本地名称（local_name）。  创建私有Provider（CreatePrivateProvider）API 还会以 “huawei.com/private-provider”为固定前缀，并以“huawei.com/private-provider/{provider_name}”的形式返回provider_source字段。关于provider_name和provider_source字段在模板中的使用细节，详见创建私有Provider的API描述。
 

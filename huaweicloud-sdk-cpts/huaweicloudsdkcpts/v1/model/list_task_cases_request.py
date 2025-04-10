@@ -27,7 +27,7 @@ class ListTaskCasesRequest:
     }
 
     def __init__(self, test_suit_id=None, task_id=None):
-        """ListTaskCasesRequest
+        r"""ListTaskCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListTaskCasesRequest:
 
     @property
     def test_suit_id(self):
-        """Gets the test_suit_id of this ListTaskCasesRequest.
+        r"""Gets the test_suit_id of this ListTaskCasesRequest.
 
         工程id
 
@@ -59,7 +59,7 @@ class ListTaskCasesRequest:
 
     @test_suit_id.setter
     def test_suit_id(self, test_suit_id):
-        """Sets the test_suit_id of this ListTaskCasesRequest.
+        r"""Sets the test_suit_id of this ListTaskCasesRequest.
 
         工程id
 
@@ -70,7 +70,7 @@ class ListTaskCasesRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTaskCasesRequest.
+        r"""Gets the task_id of this ListTaskCasesRequest.
 
         任务id
 
@@ -81,7 +81,7 @@ class ListTaskCasesRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTaskCasesRequest.
+        r"""Sets the task_id of this ListTaskCasesRequest.
 
         任务id
 

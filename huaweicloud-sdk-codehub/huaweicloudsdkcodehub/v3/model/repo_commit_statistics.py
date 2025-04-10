@@ -35,7 +35,7 @@ class RepoCommitStatistics:
     }
 
     def __init__(self, all_branch_commits_count=None, codelines=None, count=None, event=None, statistics=None, total=None):
-        """RepoCommitStatistics
+        r"""RepoCommitStatistics
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RepoCommitStatistics:
 
     @property
     def all_branch_commits_count(self):
-        """Gets the all_branch_commits_count of this RepoCommitStatistics.
+        r"""Gets the all_branch_commits_count of this RepoCommitStatistics.
 
         仓库总提交次数
 
@@ -89,7 +89,7 @@ class RepoCommitStatistics:
 
     @all_branch_commits_count.setter
     def all_branch_commits_count(self, all_branch_commits_count):
-        """Sets the all_branch_commits_count of this RepoCommitStatistics.
+        r"""Sets the all_branch_commits_count of this RepoCommitStatistics.
 
         仓库总提交次数
 
@@ -100,7 +100,7 @@ class RepoCommitStatistics:
 
     @property
     def codelines(self):
-        """Gets the codelines of this RepoCommitStatistics.
+        r"""Gets the codelines of this RepoCommitStatistics.
 
         近15日每日代码提交行数
 
@@ -111,7 +111,7 @@ class RepoCommitStatistics:
 
     @codelines.setter
     def codelines(self, codelines):
-        """Sets the codelines of this RepoCommitStatistics.
+        r"""Sets the codelines of this RepoCommitStatistics.
 
         近15日每日代码提交行数
 
@@ -122,7 +122,7 @@ class RepoCommitStatistics:
 
     @property
     def count(self):
-        """Gets the count of this RepoCommitStatistics.
+        r"""Gets the count of this RepoCommitStatistics.
 
         对应分支仓库总提交次数
 
@@ -133,7 +133,7 @@ class RepoCommitStatistics:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this RepoCommitStatistics.
+        r"""Sets the count of this RepoCommitStatistics.
 
         对应分支仓库总提交次数
 
@@ -144,7 +144,7 @@ class RepoCommitStatistics:
 
     @property
     def event(self):
-        """Gets the event of this RepoCommitStatistics.
+        r"""Gets the event of this RepoCommitStatistics.
 
         :return: The event of this RepoCommitStatistics.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`
@@ -153,7 +153,7 @@ class RepoCommitStatistics:
 
     @event.setter
     def event(self, event):
-        """Sets the event of this RepoCommitStatistics.
+        r"""Sets the event of this RepoCommitStatistics.
 
         :param event: The event of this RepoCommitStatistics.
         :type event: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`
@@ -162,7 +162,7 @@ class RepoCommitStatistics:
 
     @property
     def statistics(self):
-        """Gets the statistics of this RepoCommitStatistics.
+        r"""Gets the statistics of this RepoCommitStatistics.
 
         仓库统计列表
 
@@ -173,7 +173,7 @@ class RepoCommitStatistics:
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this RepoCommitStatistics.
+        r"""Sets the statistics of this RepoCommitStatistics.
 
         仓库统计列表
 
@@ -184,7 +184,7 @@ class RepoCommitStatistics:
 
     @property
     def total(self):
-        """Gets the total of this RepoCommitStatistics.
+        r"""Gets the total of this RepoCommitStatistics.
 
         仓库统计次数
 
@@ -195,7 +195,7 @@ class RepoCommitStatistics:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RepoCommitStatistics.
+        r"""Sets the total of this RepoCommitStatistics.
 
         仓库统计次数
 

@@ -25,7 +25,7 @@ class ListPolicyEventsRequest:
     }
 
     def __init__(self, id=None):
-        """ListPolicyEventsRequest
+        r"""ListPolicyEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPolicyEventsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPolicyEventsRequest.
+        r"""Gets the id of this ListPolicyEventsRequest.
 
         策略id
 
@@ -53,7 +53,7 @@ class ListPolicyEventsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPolicyEventsRequest.
+        r"""Sets the id of this ListPolicyEventsRequest.
 
         策略id
 

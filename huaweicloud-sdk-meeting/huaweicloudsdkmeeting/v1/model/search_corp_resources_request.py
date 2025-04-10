@@ -47,7 +47,7 @@ class SearchCorpResourcesRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, start_expire_date=None, end_expire_date=None, type=None, vmr_mode=None, type_id=None, order_id=None, status=None):
-        """SearchCorpResourcesRequest
+        r"""SearchCorpResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchCorpResourcesRequest.
+        r"""Gets the x_request_id of this SearchCorpResourcesRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -131,7 +131,7 @@ class SearchCorpResourcesRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchCorpResourcesRequest.
+        r"""Sets the x_request_id of this SearchCorpResourcesRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -142,7 +142,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchCorpResourcesRequest.
+        r"""Gets the accept_language of this SearchCorpResourcesRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -153,7 +153,7 @@ class SearchCorpResourcesRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchCorpResourcesRequest.
+        r"""Sets the accept_language of this SearchCorpResourcesRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -164,7 +164,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpResourcesRequest.
+        r"""Gets the offset of this SearchCorpResourcesRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -175,7 +175,7 @@ class SearchCorpResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpResourcesRequest.
+        r"""Sets the offset of this SearchCorpResourcesRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -186,7 +186,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpResourcesRequest.
+        r"""Gets the limit of this SearchCorpResourcesRequest.
 
         查询数量。 默认值：10。 
 
@@ -197,7 +197,7 @@ class SearchCorpResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpResourcesRequest.
+        r"""Sets the limit of this SearchCorpResourcesRequest.
 
         查询数量。 默认值：10。 
 
@@ -208,7 +208,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchCorpResourcesRequest.
+        r"""Gets the search_key of this SearchCorpResourcesRequest.
 
         搜索条件，支持resourceId模糊查询。
 
@@ -219,7 +219,7 @@ class SearchCorpResourcesRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchCorpResourcesRequest.
+        r"""Sets the search_key of this SearchCorpResourcesRequest.
 
         搜索条件，支持resourceId模糊查询。
 
@@ -230,7 +230,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def start_expire_date(self):
-        """Gets the start_expire_date of this SearchCorpResourcesRequest.
+        r"""Gets the start_expire_date of this SearchCorpResourcesRequest.
 
         查询过期时间在该时间戳之后的资源项。
 
@@ -241,7 +241,7 @@ class SearchCorpResourcesRequest:
 
     @start_expire_date.setter
     def start_expire_date(self, start_expire_date):
-        """Sets the start_expire_date of this SearchCorpResourcesRequest.
+        r"""Sets the start_expire_date of this SearchCorpResourcesRequest.
 
         查询过期时间在该时间戳之后的资源项。
 
@@ -252,7 +252,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def end_expire_date(self):
-        """Gets the end_expire_date of this SearchCorpResourcesRequest.
+        r"""Gets the end_expire_date of this SearchCorpResourcesRequest.
 
         查询过期时间在该时间戳之前的资源项。
 
@@ -263,7 +263,7 @@ class SearchCorpResourcesRequest:
 
     @end_expire_date.setter
     def end_expire_date(self, end_expire_date):
-        """Sets the end_expire_date of this SearchCorpResourcesRequest.
+        r"""Sets the end_expire_date of this SearchCorpResourcesRequest.
 
         查询过期时间在该时间戳之前的资源项。
 
@@ -274,7 +274,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this SearchCorpResourcesRequest.
+        r"""Gets the type of this SearchCorpResourcesRequest.
 
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 > 查询网络研讨会资源时type字段为VMR。 
 
@@ -285,7 +285,7 @@ class SearchCorpResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SearchCorpResourcesRequest.
+        r"""Sets the type of this SearchCorpResourcesRequest.
 
         资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 > 查询网络研讨会资源时type字段为VMR。 
 
@@ -296,7 +296,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def vmr_mode(self):
-        """Gets the vmr_mode of this SearchCorpResourcesRequest.
+        r"""Gets the vmr_mode of this SearchCorpResourcesRequest.
 
         VMR模式，type为VMR时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
 
@@ -307,7 +307,7 @@ class SearchCorpResourcesRequest:
 
     @vmr_mode.setter
     def vmr_mode(self, vmr_mode):
-        """Sets the vmr_mode of this SearchCorpResourcesRequest.
+        r"""Sets the vmr_mode of this SearchCorpResourcesRequest.
 
         VMR模式，type为VMR时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
 
@@ -318,7 +318,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def type_id(self):
-        """Gets the type_id of this SearchCorpResourcesRequest.
+        r"""Gets the type_id of this SearchCorpResourcesRequest.
 
         资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
@@ -329,7 +329,7 @@ class SearchCorpResourcesRequest:
 
     @type_id.setter
     def type_id(self, type_id):
-        """Sets the type_id of this SearchCorpResourcesRequest.
+        r"""Sets the type_id of this SearchCorpResourcesRequest.
 
         资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
@@ -340,7 +340,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SearchCorpResourcesRequest.
+        r"""Gets the order_id of this SearchCorpResourcesRequest.
 
         订单Id。
 
@@ -351,7 +351,7 @@ class SearchCorpResourcesRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SearchCorpResourcesRequest.
+        r"""Sets the order_id of this SearchCorpResourcesRequest.
 
         订单Id。
 
@@ -362,7 +362,7 @@ class SearchCorpResourcesRequest:
 
     @property
     def status(self):
-        """Gets the status of this SearchCorpResourcesRequest.
+        r"""Gets the status of this SearchCorpResourcesRequest.
 
         订单状态。 - 0：正常 - 1：到期 - 2：停用 
 
@@ -373,7 +373,7 @@ class SearchCorpResourcesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchCorpResourcesRequest.
+        r"""Sets the status of this SearchCorpResourcesRequest.
 
         订单状态。 - 0：正常 - 1：到期 - 2：停用 
 

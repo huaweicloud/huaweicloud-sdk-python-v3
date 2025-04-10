@@ -35,7 +35,7 @@ class TableLineage:
     }
 
     def __init__(self, name=None, input_tables=None, output_tables=None, source_connection_id=None, target_connection_id=None, column_lineages=None):
-        """TableLineage
+        r"""TableLineage
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TableLineage:
 
     @property
     def name(self):
-        """Gets the name of this TableLineage.
+        r"""Gets the name of this TableLineage.
 
         作业算子名称
 
@@ -85,7 +85,7 @@ class TableLineage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TableLineage.
+        r"""Sets the name of this TableLineage.
 
         作业算子名称
 
@@ -96,7 +96,7 @@ class TableLineage:
 
     @property
     def input_tables(self):
-        """Gets the input_tables of this TableLineage.
+        r"""Gets the input_tables of this TableLineage.
 
         上游血缘表列表，列表大小：1至100
 
@@ -107,7 +107,7 @@ class TableLineage:
 
     @input_tables.setter
     def input_tables(self, input_tables):
-        """Sets the input_tables of this TableLineage.
+        r"""Sets the input_tables of this TableLineage.
 
         上游血缘表列表，列表大小：1至100
 
@@ -118,7 +118,7 @@ class TableLineage:
 
     @property
     def output_tables(self):
-        """Gets the output_tables of this TableLineage.
+        r"""Gets the output_tables of this TableLineage.
 
         下游血缘表列表，列表大小：1至100
 
@@ -129,7 +129,7 @@ class TableLineage:
 
     @output_tables.setter
     def output_tables(self, output_tables):
-        """Sets the output_tables of this TableLineage.
+        r"""Sets the output_tables of this TableLineage.
 
         下游血缘表列表，列表大小：1至100
 
@@ -140,7 +140,7 @@ class TableLineage:
 
     @property
     def source_connection_id(self):
-        """Gets the source_connection_id of this TableLineage.
+        r"""Gets the source_connection_id of this TableLineage.
 
         源数据连接id
 
@@ -151,7 +151,7 @@ class TableLineage:
 
     @source_connection_id.setter
     def source_connection_id(self, source_connection_id):
-        """Sets the source_connection_id of this TableLineage.
+        r"""Sets the source_connection_id of this TableLineage.
 
         源数据连接id
 
@@ -162,7 +162,7 @@ class TableLineage:
 
     @property
     def target_connection_id(self):
-        """Gets the target_connection_id of this TableLineage.
+        r"""Gets the target_connection_id of this TableLineage.
 
         目标数据连接id
 
@@ -173,7 +173,7 @@ class TableLineage:
 
     @target_connection_id.setter
     def target_connection_id(self, target_connection_id):
-        """Sets the target_connection_id of this TableLineage.
+        r"""Sets the target_connection_id of this TableLineage.
 
         目标数据连接id
 
@@ -184,7 +184,7 @@ class TableLineage:
 
     @property
     def column_lineages(self):
-        """Gets the column_lineages of this TableLineage.
+        r"""Gets the column_lineages of this TableLineage.
 
         字段血缘列表，列表大小：0至100
 
@@ -195,7 +195,7 @@ class TableLineage:
 
     @column_lineages.setter
     def column_lineages(self, column_lineages):
-        """Sets the column_lineages of this TableLineage.
+        r"""Sets the column_lineages of this TableLineage.
 
         字段血缘列表，列表大小：0至100
 

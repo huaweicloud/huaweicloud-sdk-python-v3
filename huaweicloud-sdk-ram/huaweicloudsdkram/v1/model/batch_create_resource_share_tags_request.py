@@ -30,7 +30,7 @@ class BatchCreateResourceShareTagsRequest:
     }
 
     def __init__(self, resource_share_id=None, x_security_token=None, body=None):
-        """BatchCreateResourceShareTagsRequest
+        r"""BatchCreateResourceShareTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchCreateResourceShareTagsRequest:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this BatchCreateResourceShareTagsRequest.
+        r"""Gets the resource_share_id of this BatchCreateResourceShareTagsRequest.
 
         资源共享实例的ID。
 
@@ -68,7 +68,7 @@ class BatchCreateResourceShareTagsRequest:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this BatchCreateResourceShareTagsRequest.
+        r"""Sets the resource_share_id of this BatchCreateResourceShareTagsRequest.
 
         资源共享实例的ID。
 
@@ -79,7 +79,7 @@ class BatchCreateResourceShareTagsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this BatchCreateResourceShareTagsRequest.
+        r"""Gets the x_security_token of this BatchCreateResourceShareTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -90,7 +90,7 @@ class BatchCreateResourceShareTagsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this BatchCreateResourceShareTagsRequest.
+        r"""Sets the x_security_token of this BatchCreateResourceShareTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -101,7 +101,7 @@ class BatchCreateResourceShareTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateResourceShareTagsRequest.
+        r"""Gets the body of this BatchCreateResourceShareTagsRequest.
 
         :return: The body of this BatchCreateResourceShareTagsRequest.
         :rtype: :class:`huaweicloudsdkram.v1.TagResourceReqBody`
@@ -110,7 +110,7 @@ class BatchCreateResourceShareTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateResourceShareTagsRequest.
+        r"""Sets the body of this BatchCreateResourceShareTagsRequest.
 
         :param body: The body of this BatchCreateResourceShareTagsRequest.
         :type body: :class:`huaweicloudsdkram.v1.TagResourceReqBody`

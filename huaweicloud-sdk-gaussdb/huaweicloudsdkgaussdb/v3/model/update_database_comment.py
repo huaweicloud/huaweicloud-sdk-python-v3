@@ -27,7 +27,7 @@ class UpdateDatabaseComment:
     }
 
     def __init__(self, name=None, comment=None):
-        """UpdateDatabaseComment
+        r"""UpdateDatabaseComment
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateDatabaseComment:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDatabaseComment.
+        r"""Gets the name of this UpdateDatabaseComment.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class UpdateDatabaseComment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDatabaseComment.
+        r"""Sets the name of this UpdateDatabaseComment.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class UpdateDatabaseComment:
 
     @property
     def comment(self):
-        """Gets the comment of this UpdateDatabaseComment.
+        r"""Gets the comment of this UpdateDatabaseComment.
 
         数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。
 
@@ -81,7 +81,7 @@ class UpdateDatabaseComment:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UpdateDatabaseComment.
+        r"""Sets the comment of this UpdateDatabaseComment.
 
         数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。
 

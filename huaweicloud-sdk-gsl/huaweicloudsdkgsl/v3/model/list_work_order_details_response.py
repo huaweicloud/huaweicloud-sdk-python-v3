@@ -32,7 +32,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, work_order_details=None):
-        """ListWorkOrderDetailsResponse
+        r"""ListWorkOrderDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkOrderDetailsResponse.
+        r"""Gets the limit of this ListWorkOrderDetailsResponse.
 
         每页的记录数
 
@@ -76,7 +76,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkOrderDetailsResponse.
+        r"""Sets the limit of this ListWorkOrderDetailsResponse.
 
         每页的记录数
 
@@ -87,7 +87,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkOrderDetailsResponse.
+        r"""Gets the offset of this ListWorkOrderDetailsResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -98,7 +98,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkOrderDetailsResponse.
+        r"""Sets the offset of this ListWorkOrderDetailsResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -109,7 +109,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkOrderDetailsResponse.
+        r"""Gets the count of this ListWorkOrderDetailsResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkOrderDetailsResponse.
+        r"""Sets the count of this ListWorkOrderDetailsResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @property
     def work_order_details(self):
-        """Gets the work_order_details of this ListWorkOrderDetailsResponse.
+        r"""Gets the work_order_details of this ListWorkOrderDetailsResponse.
 
         业务受理明细列表
 
@@ -142,7 +142,7 @@ class ListWorkOrderDetailsResponse(SdkResponse):
 
     @work_order_details.setter
     def work_order_details(self, work_order_details):
-        """Sets the work_order_details of this ListWorkOrderDetailsResponse.
+        r"""Sets the work_order_details of this ListWorkOrderDetailsResponse.
 
         业务受理明细列表
 

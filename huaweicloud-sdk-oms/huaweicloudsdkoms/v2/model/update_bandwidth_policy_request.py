@@ -27,7 +27,7 @@ class UpdateBandwidthPolicyRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateBandwidthPolicyRequest
+        r"""UpdateBandwidthPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBandwidthPolicyRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateBandwidthPolicyRequest.
+        r"""Gets the task_id of this UpdateBandwidthPolicyRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class UpdateBandwidthPolicyRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateBandwidthPolicyRequest.
+        r"""Sets the task_id of this UpdateBandwidthPolicyRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class UpdateBandwidthPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBandwidthPolicyRequest.
+        r"""Gets the body of this UpdateBandwidthPolicyRequest.
 
         :return: The body of this UpdateBandwidthPolicyRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyReq`
@@ -80,7 +80,7 @@ class UpdateBandwidthPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBandwidthPolicyRequest.
+        r"""Sets the body of this UpdateBandwidthPolicyRequest.
 
         :param body: The body of this UpdateBandwidthPolicyRequest.
         :type body: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyReq`

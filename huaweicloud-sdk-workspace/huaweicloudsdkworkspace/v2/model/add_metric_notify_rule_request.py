@@ -25,7 +25,7 @@ class AddMetricNotifyRuleRequest:
     }
 
     def __init__(self, body=None):
-        """AddMetricNotifyRuleRequest
+        r"""AddMetricNotifyRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddMetricNotifyRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddMetricNotifyRuleRequest.
+        r"""Gets the body of this AddMetricNotifyRuleRequest.
 
         :return: The body of this AddMetricNotifyRuleRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddMetricNotifyRuleReq`
@@ -52,7 +52,7 @@ class AddMetricNotifyRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddMetricNotifyRuleRequest.
+        r"""Sets the body of this AddMetricNotifyRuleRequest.
 
         :param body: The body of this AddMetricNotifyRuleRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AddMetricNotifyRuleReq`

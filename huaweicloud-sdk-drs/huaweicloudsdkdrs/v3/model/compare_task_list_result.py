@@ -31,7 +31,7 @@ class CompareTaskListResult:
     }
 
     def __init__(self, compare_task_list=None, compare_task_list_count=None, error_msg=None, error_code=None):
-        """CompareTaskListResult
+        r"""CompareTaskListResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CompareTaskListResult:
 
     @property
     def compare_task_list(self):
-        """Gets the compare_task_list of this CompareTaskListResult.
+        r"""Gets the compare_task_list of this CompareTaskListResult.
 
         对比任务列表。
 
@@ -75,7 +75,7 @@ class CompareTaskListResult:
 
     @compare_task_list.setter
     def compare_task_list(self, compare_task_list):
-        """Sets the compare_task_list of this CompareTaskListResult.
+        r"""Sets the compare_task_list of this CompareTaskListResult.
 
         对比任务列表。
 
@@ -86,7 +86,7 @@ class CompareTaskListResult:
 
     @property
     def compare_task_list_count(self):
-        """Gets the compare_task_list_count of this CompareTaskListResult.
+        r"""Gets the compare_task_list_count of this CompareTaskListResult.
 
         对比任务列表总数。
 
@@ -97,7 +97,7 @@ class CompareTaskListResult:
 
     @compare_task_list_count.setter
     def compare_task_list_count(self, compare_task_list_count):
-        """Sets the compare_task_list_count of this CompareTaskListResult.
+        r"""Sets the compare_task_list_count of this CompareTaskListResult.
 
         对比任务列表总数。
 
@@ -108,7 +108,7 @@ class CompareTaskListResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CompareTaskListResult.
+        r"""Gets the error_msg of this CompareTaskListResult.
 
         错误信息
 
@@ -119,7 +119,7 @@ class CompareTaskListResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CompareTaskListResult.
+        r"""Sets the error_msg of this CompareTaskListResult.
 
         错误信息
 
@@ -130,7 +130,7 @@ class CompareTaskListResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CompareTaskListResult.
+        r"""Gets the error_code of this CompareTaskListResult.
 
         错误码。
 
@@ -141,7 +141,7 @@ class CompareTaskListResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CompareTaskListResult.
+        r"""Sets the error_code of this CompareTaskListResult.
 
         错误码。
 

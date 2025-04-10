@@ -29,7 +29,7 @@ class DebugApiV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, body=None):
-        """DebugApiV2Request
+        r"""DebugApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DebugApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DebugApiV2Request.
+        r"""Gets the instance_id of this DebugApiV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class DebugApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DebugApiV2Request.
+        r"""Sets the instance_id of this DebugApiV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class DebugApiV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this DebugApiV2Request.
+        r"""Gets the api_id of this DebugApiV2Request.
 
         API的编号
 
@@ -88,7 +88,7 @@ class DebugApiV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this DebugApiV2Request.
+        r"""Sets the api_id of this DebugApiV2Request.
 
         API的编号
 
@@ -99,7 +99,7 @@ class DebugApiV2Request:
 
     @property
     def body(self):
-        """Gets the body of this DebugApiV2Request.
+        r"""Gets the body of this DebugApiV2Request.
 
         :return: The body of this DebugApiV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiDebugInfo`
@@ -108,7 +108,7 @@ class DebugApiV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DebugApiV2Request.
+        r"""Sets the body of this DebugApiV2Request.
 
         :param body: The body of this DebugApiV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.ApiDebugInfo`

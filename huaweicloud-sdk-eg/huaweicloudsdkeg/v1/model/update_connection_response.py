@@ -52,7 +52,7 @@ class UpdateConnectionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, error_info=None, vpc_id=None, subnet_id=None, agency=None, flavor=None, type=None, kafka_detail=None, created_time=None, updated_time=None, x_request_id=None):
-        """UpdateConnectionResponse
+        r"""UpdateConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateConnectionResponse.
+        r"""Gets the id of this UpdateConnectionResponse.
 
         事件源ID
 
@@ -146,7 +146,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateConnectionResponse.
+        r"""Sets the id of this UpdateConnectionResponse.
 
         事件源ID
 
@@ -157,7 +157,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateConnectionResponse.
+        r"""Gets the name of this UpdateConnectionResponse.
 
         目标连接名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -168,7 +168,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConnectionResponse.
+        r"""Sets the name of this UpdateConnectionResponse.
 
         目标连接名称，租户下唯一，由小写字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -179,7 +179,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateConnectionResponse.
+        r"""Gets the description of this UpdateConnectionResponse.
 
         目标连接描述
 
@@ -190,7 +190,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateConnectionResponse.
+        r"""Sets the description of this UpdateConnectionResponse.
 
         目标连接描述
 
@@ -201,7 +201,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateConnectionResponse.
+        r"""Gets the status of this UpdateConnectionResponse.
 
         目标连接状态
 
@@ -212,7 +212,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateConnectionResponse.
+        r"""Sets the status of this UpdateConnectionResponse.
 
         目标连接状态
 
@@ -223,7 +223,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this UpdateConnectionResponse.
+        r"""Gets the error_info of this UpdateConnectionResponse.
 
         :return: The error_info of this UpdateConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -232,7 +232,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this UpdateConnectionResponse.
+        r"""Sets the error_info of this UpdateConnectionResponse.
 
         :param error_info: The error_info of this UpdateConnectionResponse.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -241,7 +241,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this UpdateConnectionResponse.
+        r"""Gets the vpc_id of this UpdateConnectionResponse.
 
         待连接的VPC ID
 
@@ -252,7 +252,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this UpdateConnectionResponse.
+        r"""Sets the vpc_id of this UpdateConnectionResponse.
 
         待连接的VPC ID
 
@@ -263,7 +263,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this UpdateConnectionResponse.
+        r"""Gets the subnet_id of this UpdateConnectionResponse.
 
         待连接的子网ID
 
@@ -274,7 +274,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this UpdateConnectionResponse.
+        r"""Sets the subnet_id of this UpdateConnectionResponse.
 
         待连接的子网ID
 
@@ -285,7 +285,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def agency(self):
-        """Gets the agency of this UpdateConnectionResponse.
+        r"""Gets the agency of this UpdateConnectionResponse.
 
         私网目标连接使用的用户委托名称
 
@@ -296,7 +296,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpdateConnectionResponse.
+        r"""Sets the agency of this UpdateConnectionResponse.
 
         私网目标连接使用的用户委托名称
 
@@ -307,7 +307,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this UpdateConnectionResponse.
+        r"""Gets the flavor of this UpdateConnectionResponse.
 
         :return: The flavor of this UpdateConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -316,7 +316,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this UpdateConnectionResponse.
+        r"""Sets the flavor of this UpdateConnectionResponse.
 
         :param flavor: The flavor of this UpdateConnectionResponse.
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -325,7 +325,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateConnectionResponse.
+        r"""Gets the type of this UpdateConnectionResponse.
 
         :return: The type of this UpdateConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -334,7 +334,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateConnectionResponse.
+        r"""Sets the type of this UpdateConnectionResponse.
 
         :param type: The type of this UpdateConnectionResponse.
         :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -343,7 +343,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def kafka_detail(self):
-        """Gets the kafka_detail of this UpdateConnectionResponse.
+        r"""Gets the kafka_detail of this UpdateConnectionResponse.
 
         :return: The kafka_detail of this UpdateConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -352,7 +352,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @kafka_detail.setter
     def kafka_detail(self, kafka_detail):
-        """Sets the kafka_detail of this UpdateConnectionResponse.
+        r"""Sets the kafka_detail of this UpdateConnectionResponse.
 
         :param kafka_detail: The kafka_detail of this UpdateConnectionResponse.
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -361,7 +361,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateConnectionResponse.
+        r"""Gets the created_time of this UpdateConnectionResponse.
 
         创建UTC时间
 
@@ -372,7 +372,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateConnectionResponse.
+        r"""Sets the created_time of this UpdateConnectionResponse.
 
         创建UTC时间
 
@@ -383,7 +383,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this UpdateConnectionResponse.
+        r"""Gets the updated_time of this UpdateConnectionResponse.
 
         更新UTC时间
 
@@ -394,7 +394,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this UpdateConnectionResponse.
+        r"""Sets the updated_time of this UpdateConnectionResponse.
 
         更新UTC时间
 
@@ -405,7 +405,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateConnectionResponse.
+        r"""Gets the x_request_id of this UpdateConnectionResponse.
 
         :return: The x_request_id of this UpdateConnectionResponse.
         :rtype: str
@@ -414,7 +414,7 @@ class UpdateConnectionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateConnectionResponse.
+        r"""Sets the x_request_id of this UpdateConnectionResponse.
 
         :param x_request_id: The x_request_id of this UpdateConnectionResponse.
         :type x_request_id: str

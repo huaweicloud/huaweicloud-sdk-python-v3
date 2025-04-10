@@ -35,7 +35,7 @@ class SearchFaceByFileRequestBody:
     }
 
     def __init__(self, image_file=None, top_n=None, threshold=None, sort=None, filter=None, return_fields=None):
-        """SearchFaceByFileRequestBody
+        r"""SearchFaceByFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SearchFaceByFileRequestBody:
 
     @property
     def image_file(self):
-        """Gets the image_file of this SearchFaceByFileRequestBody.
+        r"""Gets the image_file of this SearchFaceByFileRequestBody.
 
         本地图片文件，图片不能超过8MB,建议小于1MB。上传文件时，请求格式为multipart。  必选，与image_url、image_base64、face_id四选一。
 
@@ -88,7 +88,7 @@ class SearchFaceByFileRequestBody:
 
     @image_file.setter
     def image_file(self, image_file):
-        """Sets the image_file of this SearchFaceByFileRequestBody.
+        r"""Sets the image_file of this SearchFaceByFileRequestBody.
 
         本地图片文件，图片不能超过8MB,建议小于1MB。上传文件时，请求格式为multipart。  必选，与image_url、image_base64、face_id四选一。
 
@@ -99,7 +99,7 @@ class SearchFaceByFileRequestBody:
 
     @property
     def top_n(self):
-        """Gets the top_n of this SearchFaceByFileRequestBody.
+        r"""Gets the top_n of this SearchFaceByFileRequestBody.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -110,7 +110,7 @@ class SearchFaceByFileRequestBody:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this SearchFaceByFileRequestBody.
+        r"""Sets the top_n of this SearchFaceByFileRequestBody.
 
         返回查询到的最相似的N张人脸，N默认为10。
 
@@ -121,7 +121,7 @@ class SearchFaceByFileRequestBody:
 
     @property
     def threshold(self):
-        """Gets the threshold of this SearchFaceByFileRequestBody.
+        r"""Gets the threshold of this SearchFaceByFileRequestBody.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -132,7 +132,7 @@ class SearchFaceByFileRequestBody:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this SearchFaceByFileRequestBody.
+        r"""Sets the threshold of this SearchFaceByFileRequestBody.
 
         人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
 
@@ -143,7 +143,7 @@ class SearchFaceByFileRequestBody:
 
     @property
     def sort(self):
-        """Gets the sort of this SearchFaceByFileRequestBody.
+        r"""Gets the sort of this SearchFaceByFileRequestBody.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
@@ -154,7 +154,7 @@ class SearchFaceByFileRequestBody:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this SearchFaceByFileRequestBody.
+        r"""Sets the sort of this SearchFaceByFileRequestBody.
 
         [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
@@ -165,7 +165,7 @@ class SearchFaceByFileRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this SearchFaceByFileRequestBody.
+        r"""Gets the filter of this SearchFaceByFileRequestBody.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -176,7 +176,7 @@ class SearchFaceByFileRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this SearchFaceByFileRequestBody.
+        r"""Sets the filter of this SearchFaceByFileRequestBody.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -187,7 +187,7 @@ class SearchFaceByFileRequestBody:
 
     @property
     def return_fields(self):
-        """Gets the return_fields of this SearchFaceByFileRequestBody.
+        r"""Gets the return_fields of this SearchFaceByFileRequestBody.
 
         指定返回的自定义字段。
 
@@ -198,7 +198,7 @@ class SearchFaceByFileRequestBody:
 
     @return_fields.setter
     def return_fields(self, return_fields):
-        """Sets the return_fields of this SearchFaceByFileRequestBody.
+        r"""Sets the return_fields of this SearchFaceByFileRequestBody.
 
         指定返回的自定义字段。
 

@@ -24,7 +24,7 @@ class EnableMfaDeviceV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """EnableMfaDeviceV5Response
+        r"""EnableMfaDeviceV5Response
 
         The model defined in huaweicloud sdk
 

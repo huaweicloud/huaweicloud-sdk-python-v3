@@ -29,7 +29,7 @@ class UpdateDeploymentRequest:
     }
 
     def __init__(self, ief_instance_id=None, deployment_id=None, body=None):
-        """UpdateDeploymentRequest
+        r"""UpdateDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDeploymentRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateDeploymentRequest.
+        r"""Gets the ief_instance_id of this UpdateDeploymentRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateDeploymentRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateDeploymentRequest.
+        r"""Sets the ief_instance_id of this UpdateDeploymentRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this UpdateDeploymentRequest.
+        r"""Gets the deployment_id of this UpdateDeploymentRequest.
 
         应用部署ID
 
@@ -89,7 +89,7 @@ class UpdateDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this UpdateDeploymentRequest.
+        r"""Sets the deployment_id of this UpdateDeploymentRequest.
 
         应用部署ID
 
@@ -100,7 +100,7 @@ class UpdateDeploymentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeploymentRequest.
+        r"""Gets the body of this UpdateDeploymentRequest.
 
         :return: The body of this UpdateDeploymentRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeployment`
@@ -109,7 +109,7 @@ class UpdateDeploymentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeploymentRequest.
+        r"""Sets the body of this UpdateDeploymentRequest.
 
         :param body: The body of this UpdateDeploymentRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdateDeployment`

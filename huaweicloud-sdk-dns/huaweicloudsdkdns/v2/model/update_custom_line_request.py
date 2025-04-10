@@ -27,7 +27,7 @@ class UpdateCustomLineRequest:
     }
 
     def __init__(self, line_id=None, body=None):
-        """UpdateCustomLineRequest
+        r"""UpdateCustomLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCustomLineRequest:
 
     @property
     def line_id(self):
-        """Gets the line_id of this UpdateCustomLineRequest.
+        r"""Gets the line_id of this UpdateCustomLineRequest.
 
         自定义线路id
 
@@ -60,7 +60,7 @@ class UpdateCustomLineRequest:
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this UpdateCustomLineRequest.
+        r"""Sets the line_id of this UpdateCustomLineRequest.
 
         自定义线路id
 
@@ -71,7 +71,7 @@ class UpdateCustomLineRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCustomLineRequest.
+        r"""Gets the body of this UpdateCustomLineRequest.
 
         :return: The body of this UpdateCustomLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequestBody`
@@ -80,7 +80,7 @@ class UpdateCustomLineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCustomLineRequest.
+        r"""Sets the body of this UpdateCustomLineRequest.
 
         :param body: The body of this UpdateCustomLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequestBody`

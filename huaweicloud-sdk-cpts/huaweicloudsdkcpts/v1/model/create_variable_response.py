@@ -30,7 +30,7 @@ class CreateVariableResponse(SdkResponse):
     }
 
     def __init__(self, code=None, json=None, message=None):
-        """CreateVariableResponse
+        r"""CreateVariableResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVariableResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateVariableResponse.
+        r"""Gets the code of this CreateVariableResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class CreateVariableResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateVariableResponse.
+        r"""Sets the code of this CreateVariableResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class CreateVariableResponse(SdkResponse):
 
     @property
     def json(self):
-        """Gets the json of this CreateVariableResponse.
+        r"""Gets the json of this CreateVariableResponse.
 
         :return: The json of this CreateVariableResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`
@@ -89,7 +89,7 @@ class CreateVariableResponse(SdkResponse):
 
     @json.setter
     def json(self, json):
-        """Sets the json of this CreateVariableResponse.
+        r"""Sets the json of this CreateVariableResponse.
 
         :param json: The json of this CreateVariableResponse.
         :type json: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`
@@ -98,7 +98,7 @@ class CreateVariableResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateVariableResponse.
+        r"""Gets the message of this CreateVariableResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class CreateVariableResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateVariableResponse.
+        r"""Sets the message of this CreateVariableResponse.
 
         响应消息
 

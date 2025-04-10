@@ -35,7 +35,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
     }
 
     def __init__(self, runtime=None, replica=None, build=None, source=None, resource_limit=None, image_url=None):
-        """CreateComponentWithConfigurationRequestBodySpec
+        r"""CreateComponentWithConfigurationRequestBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @property
     def runtime(self):
-        """Gets the runtime of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Gets the runtime of this CreateComponentWithConfigurationRequestBodySpec.
 
         语言/运行时。
 
@@ -85,7 +85,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Sets the runtime of this CreateComponentWithConfigurationRequestBodySpec.
 
         语言/运行时。
 
@@ -96,7 +96,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @property
     def replica(self):
-        """Gets the replica of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Gets the replica of this CreateComponentWithConfigurationRequestBodySpec.
 
         实例个数。
 
@@ -107,7 +107,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Sets the replica of this CreateComponentWithConfigurationRequestBodySpec.
 
         实例个数。
 
@@ -118,7 +118,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @property
     def build(self):
-        """Gets the build of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Gets the build of this CreateComponentWithConfigurationRequestBodySpec.
 
         :return: The build of this CreateComponentWithConfigurationRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
@@ -127,7 +127,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Sets the build of this CreateComponentWithConfigurationRequestBodySpec.
 
         :param build: The build of this CreateComponentWithConfigurationRequestBodySpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -136,7 +136,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @property
     def source(self):
-        """Gets the source of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Gets the source of this CreateComponentWithConfigurationRequestBodySpec.
 
         :return: The source of this CreateComponentWithConfigurationRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
@@ -145,7 +145,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Sets the source of this CreateComponentWithConfigurationRequestBodySpec.
 
         :param source: The source of this CreateComponentWithConfigurationRequestBodySpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -154,7 +154,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @property
     def resource_limit(self):
-        """Gets the resource_limit of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Gets the resource_limit of this CreateComponentWithConfigurationRequestBodySpec.
 
         :return: The resource_limit of this CreateComponentWithConfigurationRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -163,7 +163,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @resource_limit.setter
     def resource_limit(self, resource_limit):
-        """Sets the resource_limit of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Sets the resource_limit of this CreateComponentWithConfigurationRequestBodySpec.
 
         :param resource_limit: The resource_limit of this CreateComponentWithConfigurationRequestBodySpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -172,7 +172,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @property
     def image_url(self):
-        """Gets the image_url of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Gets the image_url of this CreateComponentWithConfigurationRequestBodySpec.
 
         镜像地址。
 
@@ -183,7 +183,7 @@ class CreateComponentWithConfigurationRequestBodySpec:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this CreateComponentWithConfigurationRequestBodySpec.
+        r"""Sets the image_url of this CreateComponentWithConfigurationRequestBodySpec.
 
         镜像地址。
 

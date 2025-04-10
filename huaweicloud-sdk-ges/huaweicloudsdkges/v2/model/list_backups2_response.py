@@ -28,7 +28,7 @@ class ListBackups2Response(SdkResponse):
     }
 
     def __init__(self, backup_count=None, backup_list=None):
-        """ListBackups2Response
+        r"""ListBackups2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBackups2Response(SdkResponse):
 
     @property
     def backup_count(self):
-        """Gets the backup_count of this ListBackups2Response.
+        r"""Gets the backup_count of this ListBackups2Response.
 
         备份总个数。请求失败时，字段为空。
 
@@ -62,7 +62,7 @@ class ListBackups2Response(SdkResponse):
 
     @backup_count.setter
     def backup_count(self, backup_count):
-        """Sets the backup_count of this ListBackups2Response.
+        r"""Sets the backup_count of this ListBackups2Response.
 
         备份总个数。请求失败时，字段为空。
 
@@ -73,7 +73,7 @@ class ListBackups2Response(SdkResponse):
 
     @property
     def backup_list(self):
-        """Gets the backup_list of this ListBackups2Response.
+        r"""Gets the backup_list of this ListBackups2Response.
 
         当前Project ID下的所有图的备份列表。请求失败时，字段为空。
 
@@ -84,7 +84,7 @@ class ListBackups2Response(SdkResponse):
 
     @backup_list.setter
     def backup_list(self, backup_list):
-        """Sets the backup_list of this ListBackups2Response.
+        r"""Sets the backup_list of this ListBackups2Response.
 
         当前Project ID下的所有图的备份列表。请求失败时，字段为空。
 

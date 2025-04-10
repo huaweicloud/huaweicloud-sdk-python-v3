@@ -31,7 +31,7 @@ class CreatePipelineByTemplateIdRequest:
     }
 
     def __init__(self, project_id=None, template_id=None, component_id=None, body=None):
-        """CreatePipelineByTemplateIdRequest
+        r"""CreatePipelineByTemplateIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePipelineByTemplateIdRequest.
+        r"""Gets the project_id of this CreatePipelineByTemplateIdRequest.
 
         项目ID
 
@@ -73,7 +73,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePipelineByTemplateIdRequest.
+        r"""Sets the project_id of this CreatePipelineByTemplateIdRequest.
 
         项目ID
 
@@ -84,7 +84,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreatePipelineByTemplateIdRequest.
+        r"""Gets the template_id of this CreatePipelineByTemplateIdRequest.
 
         模板ID
 
@@ -95,7 +95,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreatePipelineByTemplateIdRequest.
+        r"""Sets the template_id of this CreatePipelineByTemplateIdRequest.
 
         模板ID
 
@@ -106,7 +106,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this CreatePipelineByTemplateIdRequest.
+        r"""Gets the component_id of this CreatePipelineByTemplateIdRequest.
 
         微服务ID
 
@@ -117,7 +117,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this CreatePipelineByTemplateIdRequest.
+        r"""Sets the component_id of this CreatePipelineByTemplateIdRequest.
 
         微服务ID
 
@@ -128,7 +128,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePipelineByTemplateIdRequest.
+        r"""Gets the body of this CreatePipelineByTemplateIdRequest.
 
         :return: The body of this CreatePipelineByTemplateIdRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTO`
@@ -137,7 +137,7 @@ class CreatePipelineByTemplateIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePipelineByTemplateIdRequest.
+        r"""Sets the body of this CreatePipelineByTemplateIdRequest.
 
         :param body: The body of this CreatePipelineByTemplateIdRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTO`

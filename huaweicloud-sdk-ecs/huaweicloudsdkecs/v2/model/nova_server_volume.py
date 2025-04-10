@@ -27,7 +27,7 @@ class NovaServerVolume:
     }
 
     def __init__(self, id=None, delete_on_termination=None):
-        """NovaServerVolume
+        r"""NovaServerVolume
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaServerVolume:
 
     @property
     def id(self):
-        """Gets the id of this NovaServerVolume.
+        r"""Gets the id of this NovaServerVolume.
 
         云磁盘ID。
 
@@ -60,7 +60,7 @@ class NovaServerVolume:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaServerVolume.
+        r"""Sets the id of this NovaServerVolume.
 
         云磁盘ID。
 
@@ -71,7 +71,7 @@ class NovaServerVolume:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this NovaServerVolume.
+        r"""Gets the delete_on_termination of this NovaServerVolume.
 
         一个标志，指示在删除服务器时是否删除附加的卷。、  默认情况下，这是False  微版本2.3后支持
 
@@ -82,7 +82,7 @@ class NovaServerVolume:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this NovaServerVolume.
+        r"""Sets the delete_on_termination of this NovaServerVolume.
 
         一个标志，指示在删除服务器时是否删除附加的卷。、  默认情况下，这是False  微版本2.3后支持
 

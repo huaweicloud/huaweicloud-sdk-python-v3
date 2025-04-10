@@ -29,7 +29,7 @@ class CreateReportRequest:
     }
 
     def __init__(self, project_id=None, version_id=None, body=None):
-        """CreateReportRequest
+        r"""CreateReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateReportRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateReportRequest.
+        r"""Gets the project_id of this CreateReportRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class CreateReportRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateReportRequest.
+        r"""Sets the project_id of this CreateReportRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class CreateReportRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreateReportRequest.
+        r"""Gets the version_id of this CreateReportRequest.
 
         版本uri
 
@@ -88,7 +88,7 @@ class CreateReportRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreateReportRequest.
+        r"""Sets the version_id of this CreateReportRequest.
 
         版本uri
 
@@ -99,7 +99,7 @@ class CreateReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateReportRequest.
+        r"""Gets the body of this CreateReportRequest.
 
         :return: The body of this CreateReportRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.OprReportInfo`
@@ -108,7 +108,7 @@ class CreateReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateReportRequest.
+        r"""Sets the body of this CreateReportRequest.
 
         :param body: The body of this CreateReportRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.OprReportInfo`

@@ -25,7 +25,7 @@ class AutopilotAuthentication:
     }
 
     def __init__(self, mode=None):
-        """AutopilotAuthentication
+        r"""AutopilotAuthentication
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AutopilotAuthentication:
 
     @property
     def mode(self):
-        """Gets the mode of this AutopilotAuthentication.
+        r"""Gets the mode of this AutopilotAuthentication.
 
         集群认证模式。默认取值为“rbac”。
 
@@ -54,7 +54,7 @@ class AutopilotAuthentication:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AutopilotAuthentication.
+        r"""Sets the mode of this AutopilotAuthentication.
 
         集群认证模式。默认取值为“rbac”。
 

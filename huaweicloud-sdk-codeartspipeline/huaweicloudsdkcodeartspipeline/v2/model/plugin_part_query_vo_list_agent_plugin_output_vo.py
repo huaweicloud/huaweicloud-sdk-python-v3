@@ -29,7 +29,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
     }
 
     def __init__(self, plugin_name=None, display_name=None, data=None):
-        """PluginPartQueryVOListAgentPluginOutputVO
+        r"""PluginPartQueryVOListAgentPluginOutputVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVO.
+        r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVO.
 
         插件名
 
@@ -68,7 +68,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVO.
+        r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVO.
 
         插件名
 
@@ -79,7 +79,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PluginPartQueryVOListAgentPluginOutputVO.
+        r"""Gets the display_name of this PluginPartQueryVOListAgentPluginOutputVO.
 
         展示名
 
@@ -90,7 +90,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PluginPartQueryVOListAgentPluginOutputVO.
+        r"""Sets the display_name of this PluginPartQueryVOListAgentPluginOutputVO.
 
         展示名
 
@@ -101,7 +101,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
 
     @property
     def data(self):
-        """Gets the data of this PluginPartQueryVOListAgentPluginOutputVO.
+        r"""Gets the data of this PluginPartQueryVOListAgentPluginOutputVO.
 
         结果集
 
@@ -112,7 +112,7 @@ class PluginPartQueryVOListAgentPluginOutputVO:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PluginPartQueryVOListAgentPluginOutputVO.
+        r"""Sets the data of this PluginPartQueryVOListAgentPluginOutputVO.
 
         结果集
 

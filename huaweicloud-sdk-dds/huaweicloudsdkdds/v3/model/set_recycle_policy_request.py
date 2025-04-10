@@ -25,7 +25,7 @@ class SetRecyclePolicyRequest:
     }
 
     def __init__(self, body=None):
-        """SetRecyclePolicyRequest
+        r"""SetRecyclePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetRecyclePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetRecyclePolicyRequest.
+        r"""Gets the body of this SetRecyclePolicyRequest.
 
         :return: The body of this SetRecyclePolicyRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`
@@ -52,7 +52,7 @@ class SetRecyclePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetRecyclePolicyRequest.
+        r"""Sets the body of this SetRecyclePolicyRequest.
 
         :param body: The body of this SetRecyclePolicyRequest.
         :type body: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`

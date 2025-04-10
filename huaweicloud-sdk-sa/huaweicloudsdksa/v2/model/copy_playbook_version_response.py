@@ -32,7 +32,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """CopyPlaybookVersionResponse
+        r"""CopyPlaybookVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CopyPlaybookVersionResponse.
+        r"""Gets the code of this CopyPlaybookVersionResponse.
 
         Error code
 
@@ -76,7 +76,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CopyPlaybookVersionResponse.
+        r"""Sets the code of this CopyPlaybookVersionResponse.
 
         Error code
 
@@ -87,7 +87,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CopyPlaybookVersionResponse.
+        r"""Gets the message of this CopyPlaybookVersionResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CopyPlaybookVersionResponse.
+        r"""Sets the message of this CopyPlaybookVersionResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CopyPlaybookVersionResponse.
+        r"""Gets the data of this CopyPlaybookVersionResponse.
 
         :return: The data of this CopyPlaybookVersionResponse.
         :rtype: :class:`huaweicloudsdksa.v2.PlaybookVersionInfo`
@@ -118,7 +118,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CopyPlaybookVersionResponse.
+        r"""Sets the data of this CopyPlaybookVersionResponse.
 
         :param data: The data of this CopyPlaybookVersionResponse.
         :type data: :class:`huaweicloudsdksa.v2.PlaybookVersionInfo`
@@ -127,7 +127,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CopyPlaybookVersionResponse.
+        r"""Gets the x_request_id of this CopyPlaybookVersionResponse.
 
         :return: The x_request_id of this CopyPlaybookVersionResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class CopyPlaybookVersionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CopyPlaybookVersionResponse.
+        r"""Sets the x_request_id of this CopyPlaybookVersionResponse.
 
         :param x_request_id: The x_request_id of this CopyPlaybookVersionResponse.
         :type x_request_id: str

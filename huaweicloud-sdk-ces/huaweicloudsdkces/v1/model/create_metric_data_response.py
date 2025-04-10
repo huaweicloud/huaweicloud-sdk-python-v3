@@ -24,7 +24,7 @@ class CreateMetricDataResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateMetricDataResponse
+        r"""CreateMetricDataResponse
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, strategy_id=None, body=None):
-        """UpdateSpecialThrottlingConfigurationV2Request
+        r"""UpdateSpecialThrottlingConfigurationV2Request
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -72,7 +72,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -83,7 +83,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
         流控策略的编号
 
@@ -94,7 +94,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
         流控策略的编号
 
@@ -105,7 +105,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @property
     def strategy_id(self):
-        """Gets the strategy_id of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the strategy_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
         特殊配置的编号
 
@@ -116,7 +116,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @strategy_id.setter
     def strategy_id(self, strategy_id):
-        """Sets the strategy_id of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the strategy_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
         特殊配置的编号
 
@@ -127,7 +127,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Gets the body of this UpdateSpecialThrottlingConfigurationV2Request.
 
         :return: The body of this UpdateSpecialThrottlingConfigurationV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.ThrottleSpecialUpdate`
@@ -136,7 +136,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSpecialThrottlingConfigurationV2Request.
+        r"""Sets the body of this UpdateSpecialThrottlingConfigurationV2Request.
 
         :param body: The body of this UpdateSpecialThrottlingConfigurationV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.ThrottleSpecialUpdate`

@@ -28,7 +28,7 @@ class ShowStreamPortraitResponse(SdkResponse):
     }
 
     def __init__(self, stream_portraits=None, x_request_id=None):
-        """ShowStreamPortraitResponse
+        r"""ShowStreamPortraitResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStreamPortraitResponse(SdkResponse):
 
     @property
     def stream_portraits(self):
-        """Gets the stream_portraits of this ShowStreamPortraitResponse.
+        r"""Gets the stream_portraits of this ShowStreamPortraitResponse.
 
         播放画像信息列表。
 
@@ -62,7 +62,7 @@ class ShowStreamPortraitResponse(SdkResponse):
 
     @stream_portraits.setter
     def stream_portraits(self, stream_portraits):
-        """Sets the stream_portraits of this ShowStreamPortraitResponse.
+        r"""Sets the stream_portraits of this ShowStreamPortraitResponse.
 
         播放画像信息列表。
 
@@ -73,7 +73,7 @@ class ShowStreamPortraitResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowStreamPortraitResponse.
+        r"""Gets the x_request_id of this ShowStreamPortraitResponse.
 
         :return: The x_request_id of this ShowStreamPortraitResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowStreamPortraitResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowStreamPortraitResponse.
+        r"""Sets the x_request_id of this ShowStreamPortraitResponse.
 
         :param x_request_id: The x_request_id of this ShowStreamPortraitResponse.
         :type x_request_id: str

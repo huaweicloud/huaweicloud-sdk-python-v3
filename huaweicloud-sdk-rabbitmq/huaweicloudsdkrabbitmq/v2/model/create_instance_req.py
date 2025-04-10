@@ -69,7 +69,7 @@ class CreateInstanceReq:
     }
 
     def __init__(self, name=None, description=None, engine=None, engine_version=None, enable_acl=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
-        """CreateInstanceReq
+        r"""CreateInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -187,7 +187,7 @@ class CreateInstanceReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceReq.
+        r"""Gets the name of this CreateInstanceReq.
 
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -198,7 +198,7 @@ class CreateInstanceReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceReq.
+        r"""Sets the name of this CreateInstanceReq.
 
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -209,7 +209,7 @@ class CreateInstanceReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateInstanceReq.
+        r"""Gets the description of this CreateInstanceReq.
 
         实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
@@ -220,7 +220,7 @@ class CreateInstanceReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateInstanceReq.
+        r"""Sets the description of this CreateInstanceReq.
 
         实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
@@ -231,7 +231,7 @@ class CreateInstanceReq:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateInstanceReq.
+        r"""Gets the engine of this CreateInstanceReq.
 
         消息引擎：rabbitmq。
 
@@ -242,7 +242,7 @@ class CreateInstanceReq:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateInstanceReq.
+        r"""Sets the engine of this CreateInstanceReq.
 
         消息引擎：rabbitmq。
 
@@ -253,7 +253,7 @@ class CreateInstanceReq:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this CreateInstanceReq.
+        r"""Gets the engine_version of this CreateInstanceReq.
 
         消息引擎的版本。   - RabbitMQ版本有：3.8.35[、AMQP-0-9-1](tag:hws,hws_hk)[和3.7.17](tag:tm,hk_tm,hk_sbc,sbc)。 
 
@@ -264,7 +264,7 @@ class CreateInstanceReq:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this CreateInstanceReq.
+        r"""Sets the engine_version of this CreateInstanceReq.
 
         消息引擎的版本。   - RabbitMQ版本有：3.8.35[、AMQP-0-9-1](tag:hws,hws_hk)[和3.7.17](tag:tm,hk_tm,hk_sbc,sbc)。 
 
@@ -275,7 +275,7 @@ class CreateInstanceReq:
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this CreateInstanceReq.
+        r"""Gets the enable_acl of this CreateInstanceReq.
 
         ACL访问控制（仅AMQP版本支持此参数）
 
@@ -286,7 +286,7 @@ class CreateInstanceReq:
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this CreateInstanceReq.
+        r"""Sets the enable_acl of this CreateInstanceReq.
 
         ACL访问控制（仅AMQP版本支持此参数）
 
@@ -297,7 +297,7 @@ class CreateInstanceReq:
 
     @property
     def storage_space(self):
-        """Gets the storage_space of this CreateInstanceReq.
+        r"""Gets the storage_space of this CreateInstanceReq.
 
         消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
 
@@ -308,7 +308,7 @@ class CreateInstanceReq:
 
     @storage_space.setter
     def storage_space(self, storage_space):
-        """Sets the storage_space of this CreateInstanceReq.
+        r"""Sets the storage_space of this CreateInstanceReq.
 
         消息存储空间，单位GB。   [- 单机RabbitMQ实例的存储空间的取值范围100GB~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 单机RabbitMQ实例的存储空间的取值范围100GB~30000GB。](tag:hcs)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB*节点数~90000GB、200GB*节点数~90000GB、300GB*节点数~90000GB。](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,sbc)    [- 集群RabbitMQ实例的存储空间的取值范围为100GB乘以代理数~30000GB乘以代理数。](tag:hcs) 
 
@@ -319,7 +319,7 @@ class CreateInstanceReq:
 
     @property
     def access_user(self):
-        """Gets the access_user of this CreateInstanceReq.
+        r"""Gets the access_user of this CreateInstanceReq.
 
         认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -330,7 +330,7 @@ class CreateInstanceReq:
 
     @access_user.setter
     def access_user(self, access_user):
-        """Sets the access_user of this CreateInstanceReq.
+        r"""Sets the access_user of this CreateInstanceReq.
 
         认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -341,7 +341,7 @@ class CreateInstanceReq:
 
     @property
     def password(self):
-        """Gets the password of this CreateInstanceReq.
+        r"""Gets the password of this CreateInstanceReq.
 
         实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
@@ -352,7 +352,7 @@ class CreateInstanceReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateInstanceReq.
+        r"""Sets the password of this CreateInstanceReq.
 
         实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
@@ -363,7 +363,7 @@ class CreateInstanceReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceReq.
+        r"""Gets the vpc_id of this CreateInstanceReq.
 
         租户VPC ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
@@ -374,7 +374,7 @@ class CreateInstanceReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceReq.
+        r"""Sets the vpc_id of this CreateInstanceReq.
 
         租户VPC ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
@@ -385,7 +385,7 @@ class CreateInstanceReq:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceReq.
+        r"""Gets the security_group_id of this CreateInstanceReq.
 
         租户安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
@@ -396,7 +396,7 @@ class CreateInstanceReq:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceReq.
+        r"""Sets the security_group_id of this CreateInstanceReq.
 
         租户安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
@@ -407,7 +407,7 @@ class CreateInstanceReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceReq.
+        r"""Gets the subnet_id of this CreateInstanceReq.
 
         子网ID。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
@@ -418,7 +418,7 @@ class CreateInstanceReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceReq.
+        r"""Sets the subnet_id of this CreateInstanceReq.
 
         子网ID。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
@@ -429,7 +429,7 @@ class CreateInstanceReq:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this CreateInstanceReq.
+        r"""Gets the available_zones of this CreateInstanceReq.
 
         创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。
 
@@ -440,7 +440,7 @@ class CreateInstanceReq:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this CreateInstanceReq.
+        r"""Sets the available_zones of this CreateInstanceReq.
 
         创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。
 
@@ -451,7 +451,7 @@ class CreateInstanceReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateInstanceReq.
+        r"""Gets the product_id of this CreateInstanceReq.
 
         产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
@@ -462,7 +462,7 @@ class CreateInstanceReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateInstanceReq.
+        r"""Sets the product_id of this CreateInstanceReq.
 
         产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
@@ -473,7 +473,7 @@ class CreateInstanceReq:
 
     @property
     def broker_num(self):
-        """Gets the broker_num of this CreateInstanceReq.
+        r"""Gets the broker_num of this CreateInstanceReq.
 
         代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
 
@@ -484,7 +484,7 @@ class CreateInstanceReq:
 
     @broker_num.setter
     def broker_num(self, broker_num):
-        """Sets the broker_num of this CreateInstanceReq.
+        r"""Sets the broker_num of this CreateInstanceReq.
 
         代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
 
@@ -495,7 +495,7 @@ class CreateInstanceReq:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this CreateInstanceReq.
+        r"""Gets the maintain_begin of this CreateInstanceReq.
 
         维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
 
@@ -506,7 +506,7 @@ class CreateInstanceReq:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this CreateInstanceReq.
+        r"""Sets the maintain_begin of this CreateInstanceReq.
 
         维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
 
@@ -517,7 +517,7 @@ class CreateInstanceReq:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this CreateInstanceReq.
+        r"""Gets the maintain_end of this CreateInstanceReq.
 
         维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
 
@@ -528,7 +528,7 @@ class CreateInstanceReq:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this CreateInstanceReq.
+        r"""Sets the maintain_end of this CreateInstanceReq.
 
         维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
 
@@ -539,7 +539,7 @@ class CreateInstanceReq:
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this CreateInstanceReq.
+        r"""Gets the enable_publicip of this CreateInstanceReq.
 
         RabbitMQ实例是否开启公网访问功能。 - true：开启 - false：不开启
 
@@ -550,7 +550,7 @@ class CreateInstanceReq:
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this CreateInstanceReq.
+        r"""Sets the enable_publicip of this CreateInstanceReq.
 
         RabbitMQ实例是否开启公网访问功能。 - true：开启 - false：不开启
 
@@ -561,7 +561,7 @@ class CreateInstanceReq:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this CreateInstanceReq.
+        r"""Gets the publicip_id of this CreateInstanceReq.
 
         RabbitMQ实例绑定的弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -572,7 +572,7 @@ class CreateInstanceReq:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this CreateInstanceReq.
+        r"""Sets the publicip_id of this CreateInstanceReq.
 
         RabbitMQ实例绑定的弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -583,7 +583,7 @@ class CreateInstanceReq:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this CreateInstanceReq.
+        r"""Gets the ssl_enable of this CreateInstanceReq.
 
         是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
 
@@ -594,7 +594,7 @@ class CreateInstanceReq:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this CreateInstanceReq.
+        r"""Sets the ssl_enable of this CreateInstanceReq.
 
         是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
 
@@ -605,7 +605,7 @@ class CreateInstanceReq:
 
     @property
     def storage_spec_code(self):
-        """Gets the storage_spec_code of this CreateInstanceReq.
+        r"""Gets the storage_spec_code of this CreateInstanceReq.
 
         存储IO规格。  [如何选择磁盘类型请参考[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。](tag:hws) [如何选择磁盘类型请参考[磁盘类型及性能介绍](https://support.huaweicloud.com/intl/zh-cn/productdesc-evs/zh-cn_topic_0014580744.html)。](tag:hws_hk) [如何选择磁盘类型请参考[磁盘类型及性能介绍](https://support.huaweicloud.com/eu/productdesc-evs/en-us_topic_0014580744.html)。](tag:hws_eu)  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   [- dms.physical.storage.high.dss.v2(专属云)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)   [- dms.physical.storage.ultra.dss.v2(专属云)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)
 
@@ -616,7 +616,7 @@ class CreateInstanceReq:
 
     @storage_spec_code.setter
     def storage_spec_code(self, storage_spec_code):
-        """Sets the storage_spec_code of this CreateInstanceReq.
+        r"""Sets the storage_spec_code of this CreateInstanceReq.
 
         存储IO规格。  [如何选择磁盘类型请参考[磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。](tag:hws) [如何选择磁盘类型请参考[磁盘类型及性能介绍](https://support.huaweicloud.com/intl/zh-cn/productdesc-evs/zh-cn_topic_0014580744.html)。](tag:hws_hk) [如何选择磁盘类型请参考[磁盘类型及性能介绍](https://support.huaweicloud.com/eu/productdesc-evs/en-us_topic_0014580744.html)。](tag:hws_eu)  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   [- dms.physical.storage.high.dss.v2(专属云)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)   [- dms.physical.storage.ultra.dss.v2(专属云)](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)
 
@@ -627,7 +627,7 @@ class CreateInstanceReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceReq.
+        r"""Gets the enterprise_project_id of this CreateInstanceReq.
 
         企业项目ID。若为企业项目账号，该参数必填。
 
@@ -638,7 +638,7 @@ class CreateInstanceReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceReq.
+        r"""Sets the enterprise_project_id of this CreateInstanceReq.
 
         企业项目ID。若为企业项目账号，该参数必填。
 
@@ -649,7 +649,7 @@ class CreateInstanceReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstanceReq.
+        r"""Gets the tags of this CreateInstanceReq.
 
         标签列表。
 
@@ -660,7 +660,7 @@ class CreateInstanceReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstanceReq.
+        r"""Sets the tags of this CreateInstanceReq.
 
         标签列表。
 
@@ -671,7 +671,7 @@ class CreateInstanceReq:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this CreateInstanceReq.
+        r"""Gets the bss_param of this CreateInstanceReq.
 
         :return: The bss_param of this CreateInstanceReq.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BssParam`
@@ -680,7 +680,7 @@ class CreateInstanceReq:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this CreateInstanceReq.
+        r"""Sets the bss_param of this CreateInstanceReq.
 
         :param bss_param: The bss_param of this CreateInstanceReq.
         :type bss_param: :class:`huaweicloudsdkrabbitmq.v2.BssParam`

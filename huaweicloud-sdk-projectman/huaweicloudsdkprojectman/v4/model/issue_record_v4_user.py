@@ -31,7 +31,7 @@ class IssueRecordV4User:
     }
 
     def __init__(self, user_num_id=None, user_name=None, nick_name=None, user_id=None):
-        """IssueRecordV4User
+        r"""IssueRecordV4User
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IssueRecordV4User:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this IssueRecordV4User.
+        r"""Gets the user_num_id of this IssueRecordV4User.
 
         用户数字id
 
@@ -75,7 +75,7 @@ class IssueRecordV4User:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this IssueRecordV4User.
+        r"""Sets the user_num_id of this IssueRecordV4User.
 
         用户数字id
 
@@ -86,7 +86,7 @@ class IssueRecordV4User:
 
     @property
     def user_name(self):
-        """Gets the user_name of this IssueRecordV4User.
+        r"""Gets the user_name of this IssueRecordV4User.
 
         登录名
 
@@ -97,7 +97,7 @@ class IssueRecordV4User:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this IssueRecordV4User.
+        r"""Sets the user_name of this IssueRecordV4User.
 
         登录名
 
@@ -108,7 +108,7 @@ class IssueRecordV4User:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this IssueRecordV4User.
+        r"""Gets the nick_name of this IssueRecordV4User.
 
         昵称
 
@@ -119,7 +119,7 @@ class IssueRecordV4User:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this IssueRecordV4User.
+        r"""Sets the nick_name of this IssueRecordV4User.
 
         昵称
 
@@ -130,7 +130,7 @@ class IssueRecordV4User:
 
     @property
     def user_id(self):
-        """Gets the user_id of this IssueRecordV4User.
+        r"""Gets the user_id of this IssueRecordV4User.
 
         用户32位的uuid
 
@@ -141,7 +141,7 @@ class IssueRecordV4User:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this IssueRecordV4User.
+        r"""Sets the user_id of this IssueRecordV4User.
 
         用户32位的uuid
 

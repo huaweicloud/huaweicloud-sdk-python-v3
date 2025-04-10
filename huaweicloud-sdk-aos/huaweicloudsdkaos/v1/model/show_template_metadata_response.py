@@ -34,7 +34,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, template_name=None, template_description=None, create_time=None, update_time=None):
-        """ShowTemplateMetadataResponse
+        r"""ShowTemplateMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateMetadataResponse.
+        r"""Gets the template_id of this ShowTemplateMetadataResponse.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -79,7 +79,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateMetadataResponse.
+        r"""Sets the template_id of this ShowTemplateMetadataResponse.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -90,7 +90,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowTemplateMetadataResponse.
+        r"""Gets the template_name of this ShowTemplateMetadataResponse.
 
         用户希望创建的模板名称
 
@@ -101,7 +101,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowTemplateMetadataResponse.
+        r"""Sets the template_name of this ShowTemplateMetadataResponse.
 
         用户希望创建的模板名称
 
@@ -112,7 +112,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @property
     def template_description(self):
-        """Gets the template_description of this ShowTemplateMetadataResponse.
+        r"""Gets the template_description of this ShowTemplateMetadataResponse.
 
         模板的描述。可用于客户识别自己的模板
 
@@ -123,7 +123,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this ShowTemplateMetadataResponse.
+        r"""Sets the template_description of this ShowTemplateMetadataResponse.
 
         模板的描述。可用于客户识别自己的模板
 
@@ -134,7 +134,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTemplateMetadataResponse.
+        r"""Gets the create_time of this ShowTemplateMetadataResponse.
 
         模板的生成时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -145,7 +145,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTemplateMetadataResponse.
+        r"""Sets the create_time of this ShowTemplateMetadataResponse.
 
         模板的生成时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -156,7 +156,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowTemplateMetadataResponse.
+        r"""Gets the update_time of this ShowTemplateMetadataResponse.
 
         模板的更新时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -167,7 +167,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowTemplateMetadataResponse.
+        r"""Sets the update_time of this ShowTemplateMetadataResponse.
 
         模板的更新时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 

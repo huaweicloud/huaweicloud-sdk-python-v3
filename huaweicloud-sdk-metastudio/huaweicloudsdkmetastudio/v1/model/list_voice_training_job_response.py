@@ -28,7 +28,7 @@ class ListVoiceTrainingJobResponse(SdkResponse):
     }
 
     def __init__(self, count=None, jobs=None):
-        """ListVoiceTrainingJobResponse
+        r"""ListVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVoiceTrainingJobResponse.
+        r"""Gets the count of this ListVoiceTrainingJobResponse.
 
         满足查询要求的任务总数。
 
@@ -62,7 +62,7 @@ class ListVoiceTrainingJobResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVoiceTrainingJobResponse.
+        r"""Sets the count of this ListVoiceTrainingJobResponse.
 
         满足查询要求的任务总数。
 
@@ -73,7 +73,7 @@ class ListVoiceTrainingJobResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListVoiceTrainingJobResponse.
+        r"""Gets the jobs of this ListVoiceTrainingJobResponse.
 
         分身数字人模型训练任务列表。
 
@@ -84,7 +84,7 @@ class ListVoiceTrainingJobResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListVoiceTrainingJobResponse.
+        r"""Sets the jobs of this ListVoiceTrainingJobResponse.
 
         分身数字人模型训练任务列表。
 

@@ -27,7 +27,7 @@ class CreateDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateDataRequest
+        r"""CreateDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateDataRequest.
+        r"""Gets the eihealth_project_id of this CreateDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateDataRequest.
+        r"""Sets the eihealth_project_id of this CreateDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDataRequest.
+        r"""Gets the body of this CreateDataRequest.
 
         :return: The body of this CreateDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDataReq`
@@ -80,7 +80,7 @@ class CreateDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDataRequest.
+        r"""Sets the body of this CreateDataRequest.
 
         :param body: The body of this CreateDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateDataReq`

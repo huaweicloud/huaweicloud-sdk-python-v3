@@ -27,7 +27,7 @@ class SimCardFlowPerDayRsp:
     }
 
     def __init__(self, date=None, sim_flow=None):
-        """SimCardFlowPerDayRsp
+        r"""SimCardFlowPerDayRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SimCardFlowPerDayRsp:
 
     @property
     def date(self):
-        """Gets the date of this SimCardFlowPerDayRsp.
+        r"""Gets the date of this SimCardFlowPerDayRsp.
 
         日期
 
@@ -61,7 +61,7 @@ class SimCardFlowPerDayRsp:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SimCardFlowPerDayRsp.
+        r"""Sets the date of this SimCardFlowPerDayRsp.
 
         日期
 
@@ -72,7 +72,7 @@ class SimCardFlowPerDayRsp:
 
     @property
     def sim_flow(self):
-        """Gets the sim_flow of this SimCardFlowPerDayRsp.
+        r"""Gets the sim_flow of this SimCardFlowPerDayRsp.
 
         :return: The sim_flow of this SimCardFlowPerDayRsp.
         :rtype: list[:class:`huaweicloudsdkgsl.v3.SimCardFlowItem`]
@@ -81,7 +81,7 @@ class SimCardFlowPerDayRsp:
 
     @sim_flow.setter
     def sim_flow(self, sim_flow):
-        """Sets the sim_flow of this SimCardFlowPerDayRsp.
+        r"""Sets the sim_flow of this SimCardFlowPerDayRsp.
 
         :param sim_flow: The sim_flow of this SimCardFlowPerDayRsp.
         :type sim_flow: list[:class:`huaweicloudsdkgsl.v3.SimCardFlowItem`]

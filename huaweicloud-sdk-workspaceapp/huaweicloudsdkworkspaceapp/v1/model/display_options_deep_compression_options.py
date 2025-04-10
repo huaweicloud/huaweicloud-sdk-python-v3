@@ -25,7 +25,7 @@ class DisplayOptionsDeepCompressionOptions:
     }
 
     def __init__(self, deep_compression_level=None):
-        """DisplayOptionsDeepCompressionOptions
+        r"""DisplayOptionsDeepCompressionOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisplayOptionsDeepCompressionOptions:
 
     @property
     def deep_compression_level(self):
-        """Gets the deep_compression_level of this DisplayOptionsDeepCompressionOptions.
+        r"""Gets the deep_compression_level of this DisplayOptionsDeepCompressionOptions.
 
         深度压缩级别。取值为： 压缩级别0：Compression grade 0 压缩级别1：Compression grade 1 压缩级别2：Compression grade 2 压缩级别3：Compression grade 3 压缩级别4：Compression grade 4 压缩级别5：Compression grade 5 压缩级别6：Compression grade 6 压缩级别7：Compression grade 7 压缩级别8：Compression grade 8 压缩级别9：Compression grade 9
 
@@ -54,7 +54,7 @@ class DisplayOptionsDeepCompressionOptions:
 
     @deep_compression_level.setter
     def deep_compression_level(self, deep_compression_level):
-        """Sets the deep_compression_level of this DisplayOptionsDeepCompressionOptions.
+        r"""Sets the deep_compression_level of this DisplayOptionsDeepCompressionOptions.
 
         深度压缩级别。取值为： 压缩级别0：Compression grade 0 压缩级别1：Compression grade 1 压缩级别2：Compression grade 2 压缩级别3：Compression grade 3 压缩级别4：Compression grade 4 压缩级别5：Compression grade 5 压缩级别6：Compression grade 6 压缩级别7：Compression grade 7 压缩级别8：Compression grade 8 压缩级别9：Compression grade 9
 

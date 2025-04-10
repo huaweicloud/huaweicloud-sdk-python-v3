@@ -23,7 +23,7 @@ class LastAnalyzedResourceUrn:
     }
 
     def __init__(self):
-        """LastAnalyzedResourceUrn
+        r"""LastAnalyzedResourceUrn
 
         The model defined in huaweicloud sdk
 

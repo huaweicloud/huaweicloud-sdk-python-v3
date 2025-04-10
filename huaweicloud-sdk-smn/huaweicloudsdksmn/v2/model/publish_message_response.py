@@ -28,7 +28,7 @@ class PublishMessageResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, message_id=None):
-        """PublishMessageResponse
+        r"""PublishMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class PublishMessageResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this PublishMessageResponse.
+        r"""Gets the request_id of this PublishMessageResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class PublishMessageResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this PublishMessageResponse.
+        r"""Sets the request_id of this PublishMessageResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class PublishMessageResponse(SdkResponse):
 
     @property
     def message_id(self):
-        """Gets the message_id of this PublishMessageResponse.
+        r"""Gets the message_id of this PublishMessageResponse.
 
         唯一的消息ID。
 
@@ -84,7 +84,7 @@ class PublishMessageResponse(SdkResponse):
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this PublishMessageResponse.
+        r"""Sets the message_id of this PublishMessageResponse.
 
         唯一的消息ID。
 

@@ -29,7 +29,7 @@ class SmartDocumentRecognizerKVWordsBlock:
     }
 
     def __init__(self, words=None, location=None, type=None):
-        """SmartDocumentRecognizerKVWordsBlock
+        r"""SmartDocumentRecognizerKVWordsBlock
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmartDocumentRecognizerKVWordsBlock:
 
     @property
     def words(self):
-        """Gets the words of this SmartDocumentRecognizerKVWordsBlock.
+        r"""Gets the words of this SmartDocumentRecognizerKVWordsBlock.
 
         文字块识别结果。       
 
@@ -68,7 +68,7 @@ class SmartDocumentRecognizerKVWordsBlock:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this SmartDocumentRecognizerKVWordsBlock.
+        r"""Sets the words of this SmartDocumentRecognizerKVWordsBlock.
 
         文字块识别结果。       
 
@@ -79,7 +79,7 @@ class SmartDocumentRecognizerKVWordsBlock:
 
     @property
     def location(self):
-        """Gets the location of this SmartDocumentRecognizerKVWordsBlock.
+        r"""Gets the location of this SmartDocumentRecognizerKVWordsBlock.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -90,7 +90,7 @@ class SmartDocumentRecognizerKVWordsBlock:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this SmartDocumentRecognizerKVWordsBlock.
+        r"""Sets the location of this SmartDocumentRecognizerKVWordsBlock.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -101,7 +101,7 @@ class SmartDocumentRecognizerKVWordsBlock:
 
     @property
     def type(self):
-        """Gets the type of this SmartDocumentRecognizerKVWordsBlock.
+        r"""Gets the type of this SmartDocumentRecognizerKVWordsBlock.
 
         类型。 
 
@@ -112,7 +112,7 @@ class SmartDocumentRecognizerKVWordsBlock:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SmartDocumentRecognizerKVWordsBlock.
+        r"""Sets the type of this SmartDocumentRecognizerKVWordsBlock.
 
         类型。 
 

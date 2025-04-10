@@ -25,7 +25,7 @@ class ListRenewRateOnPeriodRequest:
     }
 
     def __init__(self, body=None):
-        """ListRenewRateOnPeriodRequest
+        r"""ListRenewRateOnPeriodRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListRenewRateOnPeriodRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListRenewRateOnPeriodRequest.
+        r"""Gets the body of this ListRenewRateOnPeriodRequest.
 
         :return: The body of this ListRenewRateOnPeriodRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ListRenewRateOnPeriodReq`
@@ -52,7 +52,7 @@ class ListRenewRateOnPeriodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRenewRateOnPeriodRequest.
+        r"""Sets the body of this ListRenewRateOnPeriodRequest.
 
         :param body: The body of this ListRenewRateOnPeriodRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ListRenewRateOnPeriodReq`

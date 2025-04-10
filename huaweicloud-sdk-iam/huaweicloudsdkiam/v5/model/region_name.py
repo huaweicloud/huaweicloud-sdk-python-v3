@@ -23,7 +23,7 @@ class RegionName:
     }
 
     def __init__(self):
-        """RegionName
+        r"""RegionName
 
         The model defined in huaweicloud sdk
 

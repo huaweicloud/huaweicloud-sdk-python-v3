@@ -25,7 +25,7 @@ class RecoveryCondition:
     }
 
     def __init__(self, recovery_timeframe=None):
-        """RecoveryCondition
+        r"""RecoveryCondition
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RecoveryCondition:
 
     @property
     def recovery_timeframe(self):
-        """Gets the recovery_timeframe of this RecoveryCondition.
+        r"""Gets the recovery_timeframe of this RecoveryCondition.
 
         告警恢复周期的个数。
 
@@ -54,7 +54,7 @@ class RecoveryCondition:
 
     @recovery_timeframe.setter
     def recovery_timeframe(self, recovery_timeframe):
-        """Sets the recovery_timeframe of this RecoveryCondition.
+        r"""Sets the recovery_timeframe of this RecoveryCondition.
 
         告警恢复周期的个数。
 

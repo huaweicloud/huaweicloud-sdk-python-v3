@@ -26,7 +26,7 @@ class StartStopNetResponse(SdkResponse):
     }
 
     def __init__(self, work_order_id=None):
-        """StartStopNetResponse
+        r"""StartStopNetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartStopNetResponse(SdkResponse):
 
     @property
     def work_order_id(self):
-        """Gets the work_order_id of this StartStopNetResponse.
+        r"""Gets the work_order_id of this StartStopNetResponse.
 
         业务受理单号
 
@@ -55,7 +55,7 @@ class StartStopNetResponse(SdkResponse):
 
     @work_order_id.setter
     def work_order_id(self, work_order_id):
-        """Sets the work_order_id of this StartStopNetResponse.
+        r"""Sets the work_order_id of this StartStopNetResponse.
 
         业务受理单号
 

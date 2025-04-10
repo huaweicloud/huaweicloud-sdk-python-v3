@@ -36,7 +36,7 @@ class ExecuteSqlResponse(SdkResponse):
     }
 
     def __init__(self, id=None, message=None, statement=None, status=None, result_location=None, content=None):
-        """ExecuteSqlResponse
+        r"""ExecuteSqlResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteSqlResponse.
+        r"""Gets the id of this ExecuteSqlResponse.
 
         SQL的执行id。执行select、show和desc语句时才会生成id，其他操作id为空
 
@@ -90,7 +90,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteSqlResponse.
+        r"""Sets the id of this ExecuteSqlResponse.
 
         SQL的执行id。执行select、show和desc语句时才会生成id，其他操作id为空
 
@@ -101,7 +101,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ExecuteSqlResponse.
+        r"""Gets the message of this ExecuteSqlResponse.
 
         错误信息。
 
@@ -112,7 +112,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ExecuteSqlResponse.
+        r"""Sets the message of this ExecuteSqlResponse.
 
         错误信息。
 
@@ -123,7 +123,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @property
     def statement(self):
-        """Gets the statement of this ExecuteSqlResponse.
+        r"""Gets the statement of this ExecuteSqlResponse.
 
         执行的SQL语句。
 
@@ -134,7 +134,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this ExecuteSqlResponse.
+        r"""Sets the statement of this ExecuteSqlResponse.
 
         执行的SQL语句。
 
@@ -145,7 +145,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ExecuteSqlResponse.
+        r"""Gets the status of this ExecuteSqlResponse.
 
         SQL的执行状态。 - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
 
@@ -156,7 +156,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExecuteSqlResponse.
+        r"""Sets the status of this ExecuteSqlResponse.
 
         SQL的执行状态。 - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
 
@@ -167,7 +167,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @property
     def result_location(self):
-        """Gets the result_location of this ExecuteSqlResponse.
+        r"""Gets the result_location of this ExecuteSqlResponse.
 
         SQL查询语句的最终结果归档路径。 说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
 
@@ -178,7 +178,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @result_location.setter
     def result_location(self, result_location):
-        """Sets the result_location of this ExecuteSqlResponse.
+        r"""Sets the result_location of this ExecuteSqlResponse.
 
         SQL查询语句的最终结果归档路径。 说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
 
@@ -189,7 +189,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ExecuteSqlResponse.
+        r"""Gets the content of this ExecuteSqlResponse.
 
         SQL的执行结果。 说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
 
@@ -200,7 +200,7 @@ class ExecuteSqlResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ExecuteSqlResponse.
+        r"""Sets the content of this ExecuteSqlResponse.
 
         SQL的执行结果。 说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
 

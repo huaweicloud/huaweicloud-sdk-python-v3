@@ -32,7 +32,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, training_data_uploading_url=None, segment_uploading_url=None, authorization_letter_uploading_url=None):
-        """CreateTrainingMiddleJobResponse
+        r"""CreateTrainingMiddleJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateTrainingMiddleJobResponse.
+        r"""Gets the job_id of this CreateTrainingMiddleJobResponse.
 
         任务id。
 
@@ -76,7 +76,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateTrainingMiddleJobResponse.
+        r"""Sets the job_id of this CreateTrainingMiddleJobResponse.
 
         任务id。
 
@@ -87,7 +87,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @property
     def training_data_uploading_url(self):
-        """Gets the training_data_uploading_url of this CreateTrainingMiddleJobResponse.
+        r"""Gets the training_data_uploading_url of this CreateTrainingMiddleJobResponse.
 
         上传训练数据的地址。训练数据需打包成zip文件后，上传至该url。  create_type取值为package时设置。 > 通过该obs地址上传时，需设置content-type为application/zip。
 
@@ -98,7 +98,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @training_data_uploading_url.setter
     def training_data_uploading_url(self, training_data_uploading_url):
-        """Sets the training_data_uploading_url of this CreateTrainingMiddleJobResponse.
+        r"""Sets the training_data_uploading_url of this CreateTrainingMiddleJobResponse.
 
         上传训练数据的地址。训练数据需打包成zip文件后，上传至该url。  create_type取值为package时设置。 > 通过该obs地址上传时，需设置content-type为application/zip。
 
@@ -109,7 +109,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @property
     def segment_uploading_url(self):
-        """Gets the segment_uploading_url of this CreateTrainingMiddleJobResponse.
+        r"""Gets the segment_uploading_url of this CreateTrainingMiddleJobResponse.
 
         :return: The segment_uploading_url of this CreateTrainingMiddleJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobRspSegmentUploadingUrl`
@@ -118,7 +118,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @segment_uploading_url.setter
     def segment_uploading_url(self, segment_uploading_url):
-        """Sets the segment_uploading_url of this CreateTrainingMiddleJobResponse.
+        r"""Sets the segment_uploading_url of this CreateTrainingMiddleJobResponse.
 
         :param segment_uploading_url: The segment_uploading_url of this CreateTrainingMiddleJobResponse.
         :type segment_uploading_url: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobRspSegmentUploadingUrl`
@@ -127,7 +127,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @property
     def authorization_letter_uploading_url(self):
-        """Gets the authorization_letter_uploading_url of this CreateTrainingMiddleJobResponse.
+        r"""Gets the authorization_letter_uploading_url of this CreateTrainingMiddleJobResponse.
 
         授权书的上传地址。
 
@@ -138,7 +138,7 @@ class CreateTrainingMiddleJobResponse(SdkResponse):
 
     @authorization_letter_uploading_url.setter
     def authorization_letter_uploading_url(self, authorization_letter_uploading_url):
-        """Sets the authorization_letter_uploading_url of this CreateTrainingMiddleJobResponse.
+        r"""Sets the authorization_letter_uploading_url of this CreateTrainingMiddleJobResponse.
 
         授权书的上传地址。
 

@@ -27,7 +27,7 @@ class ClusterLogConfigLogConfigs:
     }
 
     def __init__(self, name=None, enable=None):
-        """ClusterLogConfigLogConfigs
+        r"""ClusterLogConfigLogConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterLogConfigLogConfigs:
 
     @property
     def name(self):
-        """Gets the name of this ClusterLogConfigLogConfigs.
+        r"""Gets the name of this ClusterLogConfigLogConfigs.
 
         日志类型
 
@@ -61,7 +61,7 @@ class ClusterLogConfigLogConfigs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterLogConfigLogConfigs.
+        r"""Sets the name of this ClusterLogConfigLogConfigs.
 
         日志类型
 
@@ -72,7 +72,7 @@ class ClusterLogConfigLogConfigs:
 
     @property
     def enable(self):
-        """Gets the enable of this ClusterLogConfigLogConfigs.
+        r"""Gets the enable of this ClusterLogConfigLogConfigs.
 
         是否采集
 
@@ -83,7 +83,7 @@ class ClusterLogConfigLogConfigs:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ClusterLogConfigLogConfigs.
+        r"""Sets the enable of this ClusterLogConfigLogConfigs.
 
         是否采集
 

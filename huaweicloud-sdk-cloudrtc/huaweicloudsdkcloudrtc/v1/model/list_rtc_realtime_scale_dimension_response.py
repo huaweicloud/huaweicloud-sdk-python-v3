@@ -28,7 +28,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, x_request_id=None):
-        """ListRtcRealtimeScaleDimensionResponse
+        r"""ListRtcRealtimeScaleDimensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ListRtcRealtimeScaleDimensionResponse.
+        r"""Gets the dimensions of this ListRtcRealtimeScaleDimensionResponse.
 
         维度分布信息
 
@@ -62,7 +62,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ListRtcRealtimeScaleDimensionResponse.
+        r"""Sets the dimensions of this ListRtcRealtimeScaleDimensionResponse.
 
         维度分布信息
 
@@ -73,7 +73,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcRealtimeScaleDimensionResponse.
+        r"""Gets the x_request_id of this ListRtcRealtimeScaleDimensionResponse.
 
         :return: The x_request_id of this ListRtcRealtimeScaleDimensionResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRtcRealtimeScaleDimensionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcRealtimeScaleDimensionResponse.
+        r"""Sets the x_request_id of this ListRtcRealtimeScaleDimensionResponse.
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeScaleDimensionResponse.
         :type x_request_id: str

@@ -31,7 +31,7 @@ class CreateDataImage:
     }
 
     def __init__(self, name=None, volume_id=None, description=None, tags=None):
-        """CreateDataImage
+        r"""CreateDataImage
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateDataImage:
 
     @property
     def name(self):
-        """Gets the name of this CreateDataImage.
+        r"""Gets the name of this CreateDataImage.
 
         数据盘镜像名称。
 
@@ -73,7 +73,7 @@ class CreateDataImage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDataImage.
+        r"""Sets the name of this CreateDataImage.
 
         数据盘镜像名称。
 
@@ -84,7 +84,7 @@ class CreateDataImage:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this CreateDataImage.
+        r"""Gets the volume_id of this CreateDataImage.
 
         数据盘ID。
 
@@ -95,7 +95,7 @@ class CreateDataImage:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this CreateDataImage.
+        r"""Sets the volume_id of this CreateDataImage.
 
         数据盘ID。
 
@@ -106,7 +106,7 @@ class CreateDataImage:
 
     @property
     def description(self):
-        """Gets the description of this CreateDataImage.
+        r"""Gets the description of this CreateDataImage.
 
         数据盘描述。
 
@@ -117,7 +117,7 @@ class CreateDataImage:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDataImage.
+        r"""Sets the description of this CreateDataImage.
 
         数据盘描述。
 
@@ -128,7 +128,7 @@ class CreateDataImage:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDataImage.
+        r"""Gets the tags of this CreateDataImage.
 
         数据盘镜像标签。
 
@@ -139,7 +139,7 @@ class CreateDataImage:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDataImage.
+        r"""Sets the tags of this CreateDataImage.
 
         数据盘镜像标签。
 

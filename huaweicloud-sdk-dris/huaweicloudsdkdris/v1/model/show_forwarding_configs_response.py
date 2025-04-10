@@ -28,7 +28,7 @@ class ShowForwardingConfigsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, forwarding_configs=None):
-        """ShowForwardingConfigsResponse
+        r"""ShowForwardingConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowForwardingConfigsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowForwardingConfigsResponse.
+        r"""Gets the count of this ShowForwardingConfigsResponse.
 
         **参数说明**：满足查询条件的记录总数。
 
@@ -62,7 +62,7 @@ class ShowForwardingConfigsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowForwardingConfigsResponse.
+        r"""Sets the count of this ShowForwardingConfigsResponse.
 
         **参数说明**：满足查询条件的记录总数。
 
@@ -73,7 +73,7 @@ class ShowForwardingConfigsResponse(SdkResponse):
 
     @property
     def forwarding_configs(self):
-        """Gets the forwarding_configs of this ShowForwardingConfigsResponse.
+        r"""Gets the forwarding_configs of this ShowForwardingConfigsResponse.
 
         **参数说明**：转发配置的列表。
 
@@ -84,7 +84,7 @@ class ShowForwardingConfigsResponse(SdkResponse):
 
     @forwarding_configs.setter
     def forwarding_configs(self, forwarding_configs):
-        """Sets the forwarding_configs of this ShowForwardingConfigsResponse.
+        r"""Sets the forwarding_configs of this ShowForwardingConfigsResponse.
 
         **参数说明**：转发配置的列表。
 

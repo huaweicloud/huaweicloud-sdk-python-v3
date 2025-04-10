@@ -47,7 +47,7 @@ class EndpointDetail:
     }
 
     def __init__(self, id=None, resource_id=None, endpoint_group_id=None, resource_type=None, status=None, weight=None, health_state=None, created_at=None, updated_at=None, domain_id=None, ip_address=None, frozen_info=None):
-        """EndpointDetail
+        r"""EndpointDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class EndpointDetail:
 
     @property
     def id(self):
-        """Gets the id of this EndpointDetail.
+        r"""Gets the id of this EndpointDetail.
 
         终端节点ID。
 
@@ -131,7 +131,7 @@ class EndpointDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointDetail.
+        r"""Sets the id of this EndpointDetail.
 
         终端节点ID。
 
@@ -142,7 +142,7 @@ class EndpointDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this EndpointDetail.
+        r"""Gets the resource_id of this EndpointDetail.
 
         对应后端资源ID。
 
@@ -153,7 +153,7 @@ class EndpointDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this EndpointDetail.
+        r"""Sets the resource_id of this EndpointDetail.
 
         对应后端资源ID。
 
@@ -164,7 +164,7 @@ class EndpointDetail:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this EndpointDetail.
+        r"""Gets the endpoint_group_id of this EndpointDetail.
 
         终端节点组ID。
 
@@ -175,7 +175,7 @@ class EndpointDetail:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this EndpointDetail.
+        r"""Sets the endpoint_group_id of this EndpointDetail.
 
         终端节点组ID。
 
@@ -186,7 +186,7 @@ class EndpointDetail:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this EndpointDetail.
+        r"""Gets the resource_type of this EndpointDetail.
 
         :return: The resource_type of this EndpointDetail.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointType`
@@ -195,7 +195,7 @@ class EndpointDetail:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this EndpointDetail.
+        r"""Sets the resource_type of this EndpointDetail.
 
         :param resource_type: The resource_type of this EndpointDetail.
         :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
@@ -204,7 +204,7 @@ class EndpointDetail:
 
     @property
     def status(self):
-        """Gets the status of this EndpointDetail.
+        r"""Gets the status of this EndpointDetail.
 
         :return: The status of this EndpointDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -213,7 +213,7 @@ class EndpointDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EndpointDetail.
+        r"""Sets the status of this EndpointDetail.
 
         :param status: The status of this EndpointDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -222,7 +222,7 @@ class EndpointDetail:
 
     @property
     def weight(self):
-        """Gets the weight of this EndpointDetail.
+        r"""Gets the weight of this EndpointDetail.
 
         终端节点权重。
 
@@ -233,7 +233,7 @@ class EndpointDetail:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this EndpointDetail.
+        r"""Sets the weight of this EndpointDetail.
 
         终端节点权重。
 
@@ -244,7 +244,7 @@ class EndpointDetail:
 
     @property
     def health_state(self):
-        """Gets the health_state of this EndpointDetail.
+        r"""Gets the health_state of this EndpointDetail.
 
         终端的健康状态，取值： - INITIAL：初始 - HEALTHY：正常 - UNHEALTHY：异常 - NO_MONITOR：未监控
 
@@ -255,7 +255,7 @@ class EndpointDetail:
 
     @health_state.setter
     def health_state(self, health_state):
-        """Sets the health_state of this EndpointDetail.
+        r"""Sets the health_state of this EndpointDetail.
 
         终端的健康状态，取值： - INITIAL：初始 - HEALTHY：正常 - UNHEALTHY：异常 - NO_MONITOR：未监控
 
@@ -266,7 +266,7 @@ class EndpointDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointDetail.
+        r"""Gets the created_at of this EndpointDetail.
 
         创建时间。
 
@@ -277,7 +277,7 @@ class EndpointDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointDetail.
+        r"""Sets the created_at of this EndpointDetail.
 
         创建时间。
 
@@ -288,7 +288,7 @@ class EndpointDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EndpointDetail.
+        r"""Gets the updated_at of this EndpointDetail.
 
         更新时间。
 
@@ -299,7 +299,7 @@ class EndpointDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EndpointDetail.
+        r"""Sets the updated_at of this EndpointDetail.
 
         更新时间。
 
@@ -310,7 +310,7 @@ class EndpointDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EndpointDetail.
+        r"""Gets the domain_id of this EndpointDetail.
 
         租户ID。
 
@@ -321,7 +321,7 @@ class EndpointDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EndpointDetail.
+        r"""Sets the domain_id of this EndpointDetail.
 
         租户ID。
 
@@ -332,7 +332,7 @@ class EndpointDetail:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this EndpointDetail.
+        r"""Gets the ip_address of this EndpointDetail.
 
         IP地址。
 
@@ -343,7 +343,7 @@ class EndpointDetail:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this EndpointDetail.
+        r"""Sets the ip_address of this EndpointDetail.
 
         IP地址。
 
@@ -354,7 +354,7 @@ class EndpointDetail:
 
     @property
     def frozen_info(self):
-        """Gets the frozen_info of this EndpointDetail.
+        r"""Gets the frozen_info of this EndpointDetail.
 
         :return: The frozen_info of this EndpointDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
@@ -363,7 +363,7 @@ class EndpointDetail:
 
     @frozen_info.setter
     def frozen_info(self, frozen_info):
-        """Sets the frozen_info of this EndpointDetail.
+        r"""Sets the frozen_info of this EndpointDetail.
 
         :param frozen_info: The frozen_info of this EndpointDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

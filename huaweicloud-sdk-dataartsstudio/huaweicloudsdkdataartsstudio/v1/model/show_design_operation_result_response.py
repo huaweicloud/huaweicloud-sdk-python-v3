@@ -26,7 +26,7 @@ class ShowDesignOperationResultResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowDesignOperationResultResponse
+        r"""ShowDesignOperationResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDesignOperationResultResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowDesignOperationResultResponse.
+        r"""Gets the data of this ShowDesignOperationResultResponse.
 
         :return: The data of this ShowDesignOperationResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`
@@ -53,7 +53,7 @@ class ShowDesignOperationResultResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowDesignOperationResultResponse.
+        r"""Sets the data of this ShowDesignOperationResultResponse.
 
         :param data: The data of this ShowDesignOperationResultResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`

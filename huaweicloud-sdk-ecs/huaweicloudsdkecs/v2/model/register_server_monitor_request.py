@@ -27,7 +27,7 @@ class RegisterServerMonitorRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """RegisterServerMonitorRequest
+        r"""RegisterServerMonitorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RegisterServerMonitorRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this RegisterServerMonitorRequest.
+        r"""Gets the server_id of this RegisterServerMonitorRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class RegisterServerMonitorRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this RegisterServerMonitorRequest.
+        r"""Sets the server_id of this RegisterServerMonitorRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class RegisterServerMonitorRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterServerMonitorRequest.
+        r"""Gets the body of this RegisterServerMonitorRequest.
 
         :return: The body of this RegisterServerMonitorRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequestBody`
@@ -80,7 +80,7 @@ class RegisterServerMonitorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterServerMonitorRequest.
+        r"""Sets the body of this RegisterServerMonitorRequest.
 
         :param body: The body of this RegisterServerMonitorRequest.
         :type body: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequestBody`

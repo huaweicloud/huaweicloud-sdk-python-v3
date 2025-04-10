@@ -35,7 +35,7 @@ class ListPipelineRunsPageStageStatusList:
     }
 
     def __init__(self, name=None, sequence=None, status=None, start_time=None, end_time=None, id=None):
-        """ListPipelineRunsPageStageStatusList
+        r"""ListPipelineRunsPageStageStatusList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @property
     def name(self):
-        """Gets the name of this ListPipelineRunsPageStageStatusList.
+        r"""Gets the name of this ListPipelineRunsPageStageStatusList.
 
         阶段名称
 
@@ -89,7 +89,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPipelineRunsPageStageStatusList.
+        r"""Sets the name of this ListPipelineRunsPageStageStatusList.
 
         阶段名称
 
@@ -100,7 +100,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @property
     def sequence(self):
-        """Gets the sequence of this ListPipelineRunsPageStageStatusList.
+        r"""Gets the sequence of this ListPipelineRunsPageStageStatusList.
 
         序列号
 
@@ -111,7 +111,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this ListPipelineRunsPageStageStatusList.
+        r"""Sets the sequence of this ListPipelineRunsPageStageStatusList.
 
         序列号
 
@@ -122,7 +122,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @property
     def status(self):
-        """Gets the status of this ListPipelineRunsPageStageStatusList.
+        r"""Gets the status of this ListPipelineRunsPageStageStatusList.
 
         状态
 
@@ -133,7 +133,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPipelineRunsPageStageStatusList.
+        r"""Sets the status of this ListPipelineRunsPageStageStatusList.
 
         状态
 
@@ -144,7 +144,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPipelineRunsPageStageStatusList.
+        r"""Gets the start_time of this ListPipelineRunsPageStageStatusList.
 
         开始时间
 
@@ -155,7 +155,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPipelineRunsPageStageStatusList.
+        r"""Sets the start_time of this ListPipelineRunsPageStageStatusList.
 
         开始时间
 
@@ -166,7 +166,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPipelineRunsPageStageStatusList.
+        r"""Gets the end_time of this ListPipelineRunsPageStageStatusList.
 
         结束时间
 
@@ -177,7 +177,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPipelineRunsPageStageStatusList.
+        r"""Sets the end_time of this ListPipelineRunsPageStageStatusList.
 
         结束时间
 
@@ -188,7 +188,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @property
     def id(self):
-        """Gets the id of this ListPipelineRunsPageStageStatusList.
+        r"""Gets the id of this ListPipelineRunsPageStageStatusList.
 
         阶段ID
 
@@ -199,7 +199,7 @@ class ListPipelineRunsPageStageStatusList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPipelineRunsPageStageStatusList.
+        r"""Sets the id of this ListPipelineRunsPageStageStatusList.
 
         阶段ID
 

@@ -29,7 +29,7 @@ class UpdateServiceRequest:
     }
 
     def __init__(self, service_id=None, ief_instance_id=None, body=None):
-        """UpdateServiceRequest
+        r"""UpdateServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateServiceRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateServiceRequest.
+        r"""Gets the service_id of this UpdateServiceRequest.
 
         服务ID
 
@@ -66,7 +66,7 @@ class UpdateServiceRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateServiceRequest.
+        r"""Sets the service_id of this UpdateServiceRequest.
 
         服务ID
 
@@ -77,7 +77,7 @@ class UpdateServiceRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateServiceRequest.
+        r"""Gets the ief_instance_id of this UpdateServiceRequest.
 
         铂金版实例ID
 
@@ -88,7 +88,7 @@ class UpdateServiceRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateServiceRequest.
+        r"""Sets the ief_instance_id of this UpdateServiceRequest.
 
         铂金版实例ID
 
@@ -99,7 +99,7 @@ class UpdateServiceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServiceRequest.
+        r"""Gets the body of this UpdateServiceRequest.
 
         :return: The body of this UpdateServiceRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Service`
@@ -108,7 +108,7 @@ class UpdateServiceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServiceRequest.
+        r"""Sets the body of this UpdateServiceRequest.
 
         :param body: The body of this UpdateServiceRequest.
         :type body: :class:`huaweicloudsdkief.v1.Service`

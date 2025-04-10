@@ -34,7 +34,7 @@ class MasAsyncClient(Client):
         return client_builder
 
     def show_name_space_list_async(self, request):
-        """查询命名空间列表
+        r"""查询命名空间列表
 
         
         Please refer to HUAWEI cloud API Explorer for details.

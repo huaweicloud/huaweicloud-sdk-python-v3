@@ -29,7 +29,7 @@ class VersionModelCompareVersionVO:
     }
 
     def __init__(self, basic_version=None, correlation_version=None, id=None):
-        """VersionModelCompareVersionVO
+        r"""VersionModelCompareVersionVO
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class VersionModelCompareVersionVO:
 
     @property
     def basic_version(self):
-        """Gets the basic_version of this VersionModelCompareVersionVO.
+        r"""Gets the basic_version of this VersionModelCompareVersionVO.
 
         **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -65,7 +65,7 @@ class VersionModelCompareVersionVO:
 
     @basic_version.setter
     def basic_version(self, basic_version):
-        """Sets the basic_version of this VersionModelCompareVersionVO.
+        r"""Sets the basic_version of this VersionModelCompareVersionVO.
 
         **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -76,7 +76,7 @@ class VersionModelCompareVersionVO:
 
     @property
     def correlation_version(self):
-        """Gets the correlation_version of this VersionModelCompareVersionVO.
+        r"""Gets the correlation_version of this VersionModelCompareVersionVO.
 
         **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -87,7 +87,7 @@ class VersionModelCompareVersionVO:
 
     @correlation_version.setter
     def correlation_version(self, correlation_version):
-        """Sets the correlation_version of this VersionModelCompareVersionVO.
+        r"""Sets the correlation_version of this VersionModelCompareVersionVO.
 
         **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -98,7 +98,7 @@ class VersionModelCompareVersionVO:
 
     @property
     def id(self):
-        """Gets the id of this VersionModelCompareVersionVO.
+        r"""Gets the id of this VersionModelCompareVersionVO.
 
         **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -109,7 +109,7 @@ class VersionModelCompareVersionVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionModelCompareVersionVO.
+        r"""Sets the id of this VersionModelCompareVersionVO.
 
         **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

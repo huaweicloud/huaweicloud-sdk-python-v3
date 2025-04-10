@@ -28,7 +28,7 @@ class DownloadKieResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None, data=None):
-        """DownloadKieResponse
+        r"""DownloadKieResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DownloadKieResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this DownloadKieResponse.
+        r"""Gets the metadata of this DownloadKieResponse.
 
         :return: The metadata of this DownloadKieResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.DownloadKieResponseBodyMetadata`
@@ -60,7 +60,7 @@ class DownloadKieResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DownloadKieResponse.
+        r"""Sets the metadata of this DownloadKieResponse.
 
         :param metadata: The metadata of this DownloadKieResponse.
         :type metadata: :class:`huaweicloudsdkcse.v1.DownloadKieResponseBodyMetadata`
@@ -69,7 +69,7 @@ class DownloadKieResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DownloadKieResponse.
+        r"""Gets the data of this DownloadKieResponse.
 
         导出的配置项列表。
 
@@ -80,7 +80,7 @@ class DownloadKieResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DownloadKieResponse.
+        r"""Sets the data of this DownloadKieResponse.
 
         导出的配置项列表。
 

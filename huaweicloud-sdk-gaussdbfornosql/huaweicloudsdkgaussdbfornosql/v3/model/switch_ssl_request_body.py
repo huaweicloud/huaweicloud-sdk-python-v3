@@ -25,7 +25,7 @@ class SwitchSslRequestBody:
     }
 
     def __init__(self, ssl_option=None):
-        """SwitchSslRequestBody
+        r"""SwitchSslRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchSslRequestBody:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this SwitchSslRequestBody.
+        r"""Gets the ssl_option of this SwitchSslRequestBody.
 
         ss开关选项。 -“on”，表示NoSQL实例默认开启SSL连接。 -“off”，表示NoSQL实例默认不启用SSL连接。
 
@@ -53,7 +53,7 @@ class SwitchSslRequestBody:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this SwitchSslRequestBody.
+        r"""Sets the ssl_option of this SwitchSslRequestBody.
 
         ss开关选项。 -“on”，表示NoSQL实例默认开启SSL连接。 -“off”，表示NoSQL实例默认不启用SSL连接。
 

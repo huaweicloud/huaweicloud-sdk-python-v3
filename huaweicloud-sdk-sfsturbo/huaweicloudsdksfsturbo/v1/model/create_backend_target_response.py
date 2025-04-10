@@ -38,7 +38,7 @@ class CreateBackendTargetResponse(SdkResponse):
     }
 
     def __init__(self, target_id=None, creation_time=None, failure_details=None, file_system_path=None, lifecycle=None, obs=None, x_request_id=None):
-        """CreateBackendTargetResponse
+        r"""CreateBackendTargetResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def target_id(self):
-        """Gets the target_id of this CreateBackendTargetResponse.
+        r"""Gets the target_id of this CreateBackendTargetResponse.
 
         绑定关系id
 
@@ -97,7 +97,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this CreateBackendTargetResponse.
+        r"""Sets the target_id of this CreateBackendTargetResponse.
 
         绑定关系id
 
@@ -108,7 +108,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this CreateBackendTargetResponse.
+        r"""Gets the creation_time of this CreateBackendTargetResponse.
 
         绑定关系创建时间
 
@@ -119,7 +119,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this CreateBackendTargetResponse.
+        r"""Sets the creation_time of this CreateBackendTargetResponse.
 
         绑定关系创建时间
 
@@ -130,7 +130,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def failure_details(self):
-        """Gets the failure_details of this CreateBackendTargetResponse.
+        r"""Gets the failure_details of this CreateBackendTargetResponse.
 
         :return: The failure_details of this CreateBackendTargetResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
@@ -139,7 +139,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @failure_details.setter
     def failure_details(self, failure_details):
-        """Sets the failure_details of this CreateBackendTargetResponse.
+        r"""Sets the failure_details of this CreateBackendTargetResponse.
 
         :param failure_details: The failure_details of this CreateBackendTargetResponse.
         :type failure_details: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
@@ -148,7 +148,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def file_system_path(self):
-        """Gets the file_system_path of this CreateBackendTargetResponse.
+        r"""Gets the file_system_path of this CreateBackendTargetResponse.
 
         联动目录名称
 
@@ -159,7 +159,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @file_system_path.setter
     def file_system_path(self, file_system_path):
-        """Sets the file_system_path of this CreateBackendTargetResponse.
+        r"""Sets the file_system_path of this CreateBackendTargetResponse.
 
         联动目录名称
 
@@ -170,7 +170,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this CreateBackendTargetResponse.
+        r"""Gets the lifecycle of this CreateBackendTargetResponse.
 
         绑定状态。  如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。  如果返回状态为AVAILABLE，代表绑定后端存储成功。  如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。 
 
@@ -181,7 +181,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this CreateBackendTargetResponse.
+        r"""Sets the lifecycle of this CreateBackendTargetResponse.
 
         绑定状态。  如果返回状态为CREATING，您需要通过获取后端存储详细信息接口去轮询绑定完成状态。  如果返回状态为AVAILABLE，代表绑定后端存储成功。  如果返回状态MISCONFIGURED，代表绑定后端存储失败。DELETING 状态暂不支持。 
 
@@ -192,7 +192,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def obs(self):
-        """Gets the obs of this CreateBackendTargetResponse.
+        r"""Gets the obs of this CreateBackendTargetResponse.
 
         :return: The obs of this CreateBackendTargetResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -201,7 +201,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this CreateBackendTargetResponse.
+        r"""Sets the obs of this CreateBackendTargetResponse.
 
         :param obs: The obs of this CreateBackendTargetResponse.
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -210,7 +210,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateBackendTargetResponse.
+        r"""Gets the x_request_id of this CreateBackendTargetResponse.
 
         :return: The x_request_id of this CreateBackendTargetResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateBackendTargetResponse.
+        r"""Sets the x_request_id of this CreateBackendTargetResponse.
 
         :param x_request_id: The x_request_id of this CreateBackendTargetResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class DisassociateVaultPolicyRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """DisassociateVaultPolicyRequest
+        r"""DisassociateVaultPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateVaultPolicyRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this DisassociateVaultPolicyRequest.
+        r"""Gets the vault_id of this DisassociateVaultPolicyRequest.
 
         存储库ID
 
@@ -60,7 +60,7 @@ class DisassociateVaultPolicyRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this DisassociateVaultPolicyRequest.
+        r"""Sets the vault_id of this DisassociateVaultPolicyRequest.
 
         存储库ID
 
@@ -71,7 +71,7 @@ class DisassociateVaultPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateVaultPolicyRequest.
+        r"""Gets the body of this DisassociateVaultPolicyRequest.
 
         :return: The body of this DisassociateVaultPolicyRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultDissociate`
@@ -80,7 +80,7 @@ class DisassociateVaultPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateVaultPolicyRequest.
+        r"""Sets the body of this DisassociateVaultPolicyRequest.
 
         :param body: The body of this DisassociateVaultPolicyRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultDissociate`

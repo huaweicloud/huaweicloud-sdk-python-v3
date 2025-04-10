@@ -29,7 +29,7 @@ class Constraint:
     }
 
     def __init__(self, type=None, value=None, errormsg=None):
-        """Constraint
+        r"""Constraint
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Constraint:
 
     @property
     def type(self):
-        """Gets the type of this Constraint.
+        r"""Gets the type of this Constraint.
 
         校验规则类型
 
@@ -65,7 +65,7 @@ class Constraint:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Constraint.
+        r"""Sets the type of this Constraint.
 
         校验规则类型
 
@@ -76,7 +76,7 @@ class Constraint:
 
     @property
     def value(self):
-        """Gets the value of this Constraint.
+        r"""Gets the value of this Constraint.
 
         校验规则
 
@@ -87,7 +87,7 @@ class Constraint:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Constraint.
+        r"""Sets the value of this Constraint.
 
         校验规则
 
@@ -98,7 +98,7 @@ class Constraint:
 
     @property
     def errormsg(self):
-        """Gets the errormsg of this Constraint.
+        r"""Gets the errormsg of this Constraint.
 
         校验失败描述
 
@@ -109,7 +109,7 @@ class Constraint:
 
     @errormsg.setter
     def errormsg(self, errormsg):
-        """Sets the errormsg of this Constraint.
+        r"""Sets the errormsg of this Constraint.
 
         校验失败描述
 

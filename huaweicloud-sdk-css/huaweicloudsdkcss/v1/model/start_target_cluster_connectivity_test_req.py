@@ -25,7 +25,7 @@ class StartTargetClusterConnectivityTestReq:
     }
 
     def __init__(self, target_cluster_id=None):
-        """StartTargetClusterConnectivityTestReq
+        r"""StartTargetClusterConnectivityTestReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartTargetClusterConnectivityTestReq:
 
     @property
     def target_cluster_id(self):
-        """Gets the target_cluster_id of this StartTargetClusterConnectivityTestReq.
+        r"""Gets the target_cluster_id of this StartTargetClusterConnectivityTestReq.
 
         目标集群ID
 
@@ -53,7 +53,7 @@ class StartTargetClusterConnectivityTestReq:
 
     @target_cluster_id.setter
     def target_cluster_id(self, target_cluster_id):
-        """Sets the target_cluster_id of this StartTargetClusterConnectivityTestReq.
+        r"""Sets the target_cluster_id of this StartTargetClusterConnectivityTestReq.
 
         目标集群ID
 

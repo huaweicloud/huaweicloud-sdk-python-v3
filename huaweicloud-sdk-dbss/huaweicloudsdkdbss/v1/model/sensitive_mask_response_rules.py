@@ -37,7 +37,7 @@ class SensitiveMaskResponseRules:
     }
 
     def __init__(self, id=None, name=None, type=None, regex=None, mask_value=None, status=None, operate_time=None):
-        """SensitiveMaskResponseRules
+        r"""SensitiveMaskResponseRules
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def id(self):
-        """Gets the id of this SensitiveMaskResponseRules.
+        r"""Gets the id of this SensitiveMaskResponseRules.
 
         规则ID
 
@@ -96,7 +96,7 @@ class SensitiveMaskResponseRules:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SensitiveMaskResponseRules.
+        r"""Sets the id of this SensitiveMaskResponseRules.
 
         规则ID
 
@@ -107,7 +107,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def name(self):
-        """Gets the name of this SensitiveMaskResponseRules.
+        r"""Gets the name of this SensitiveMaskResponseRules.
 
         规则名称
 
@@ -118,7 +118,7 @@ class SensitiveMaskResponseRules:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SensitiveMaskResponseRules.
+        r"""Sets the name of this SensitiveMaskResponseRules.
 
         规则名称
 
@@ -129,7 +129,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def type(self):
-        """Gets the type of this SensitiveMaskResponseRules.
+        r"""Gets the type of this SensitiveMaskResponseRules.
 
         规则类型
 
@@ -140,7 +140,7 @@ class SensitiveMaskResponseRules:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SensitiveMaskResponseRules.
+        r"""Sets the type of this SensitiveMaskResponseRules.
 
         规则类型
 
@@ -151,7 +151,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def regex(self):
-        """Gets the regex of this SensitiveMaskResponseRules.
+        r"""Gets the regex of this SensitiveMaskResponseRules.
 
         规则正则表达式
 
@@ -162,7 +162,7 @@ class SensitiveMaskResponseRules:
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this SensitiveMaskResponseRules.
+        r"""Sets the regex of this SensitiveMaskResponseRules.
 
         规则正则表达式
 
@@ -173,7 +173,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def mask_value(self):
-        """Gets the mask_value of this SensitiveMaskResponseRules.
+        r"""Gets the mask_value of this SensitiveMaskResponseRules.
 
         替换值
 
@@ -184,7 +184,7 @@ class SensitiveMaskResponseRules:
 
     @mask_value.setter
     def mask_value(self, mask_value):
-        """Sets the mask_value of this SensitiveMaskResponseRules.
+        r"""Sets the mask_value of this SensitiveMaskResponseRules.
 
         替换值
 
@@ -195,7 +195,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def status(self):
-        """Gets the status of this SensitiveMaskResponseRules.
+        r"""Gets the status of this SensitiveMaskResponseRules.
 
         规则状态
 
@@ -206,7 +206,7 @@ class SensitiveMaskResponseRules:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SensitiveMaskResponseRules.
+        r"""Sets the status of this SensitiveMaskResponseRules.
 
         规则状态
 
@@ -217,7 +217,7 @@ class SensitiveMaskResponseRules:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this SensitiveMaskResponseRules.
+        r"""Gets the operate_time of this SensitiveMaskResponseRules.
 
         操作时间
 
@@ -228,7 +228,7 @@ class SensitiveMaskResponseRules:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this SensitiveMaskResponseRules.
+        r"""Sets the operate_time of this SensitiveMaskResponseRules.
 
         操作时间
 

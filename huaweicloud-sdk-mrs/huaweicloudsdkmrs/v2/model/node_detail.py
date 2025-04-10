@@ -43,7 +43,7 @@ class NodeDetail:
     }
 
     def __init__(self, running_status=None, cpu_usage=None, memory_usage=None, disk_usage=None, total_memory=None, available_memory=None, total_hard_disk_space=None, available_hard_disk_space=None, network_read=None, network_write=None):
-        """NodeDetail
+        r"""NodeDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NodeDetail:
 
     @property
     def running_status(self):
-        """Gets the running_status of this NodeDetail.
+        r"""Gets the running_status of this NodeDetail.
 
         运行状态。
 
@@ -117,7 +117,7 @@ class NodeDetail:
 
     @running_status.setter
     def running_status(self, running_status):
-        """Sets the running_status of this NodeDetail.
+        r"""Sets the running_status of this NodeDetail.
 
         运行状态。
 
@@ -128,7 +128,7 @@ class NodeDetail:
 
     @property
     def cpu_usage(self):
-        """Gets the cpu_usage of this NodeDetail.
+        r"""Gets the cpu_usage of this NodeDetail.
 
         CPU使用率。
 
@@ -139,7 +139,7 @@ class NodeDetail:
 
     @cpu_usage.setter
     def cpu_usage(self, cpu_usage):
-        """Sets the cpu_usage of this NodeDetail.
+        r"""Sets the cpu_usage of this NodeDetail.
 
         CPU使用率。
 
@@ -150,7 +150,7 @@ class NodeDetail:
 
     @property
     def memory_usage(self):
-        """Gets the memory_usage of this NodeDetail.
+        r"""Gets the memory_usage of this NodeDetail.
 
         内存使用率。
 
@@ -161,7 +161,7 @@ class NodeDetail:
 
     @memory_usage.setter
     def memory_usage(self, memory_usage):
-        """Sets the memory_usage of this NodeDetail.
+        r"""Sets the memory_usage of this NodeDetail.
 
         内存使用率。
 
@@ -172,7 +172,7 @@ class NodeDetail:
 
     @property
     def disk_usage(self):
-        """Gets the disk_usage of this NodeDetail.
+        r"""Gets the disk_usage of this NodeDetail.
 
         硬盘使用率。
 
@@ -183,7 +183,7 @@ class NodeDetail:
 
     @disk_usage.setter
     def disk_usage(self, disk_usage):
-        """Sets the disk_usage of this NodeDetail.
+        r"""Sets the disk_usage of this NodeDetail.
 
         硬盘使用率。
 
@@ -194,7 +194,7 @@ class NodeDetail:
 
     @property
     def total_memory(self):
-        """Gets the total_memory of this NodeDetail.
+        r"""Gets the total_memory of this NodeDetail.
 
         总内存。单位MB。
 
@@ -205,7 +205,7 @@ class NodeDetail:
 
     @total_memory.setter
     def total_memory(self, total_memory):
-        """Sets the total_memory of this NodeDetail.
+        r"""Sets the total_memory of this NodeDetail.
 
         总内存。单位MB。
 
@@ -216,7 +216,7 @@ class NodeDetail:
 
     @property
     def available_memory(self):
-        """Gets the available_memory of this NodeDetail.
+        r"""Gets the available_memory of this NodeDetail.
 
         可用内存。单位MB。
 
@@ -227,7 +227,7 @@ class NodeDetail:
 
     @available_memory.setter
     def available_memory(self, available_memory):
-        """Sets the available_memory of this NodeDetail.
+        r"""Sets the available_memory of this NodeDetail.
 
         可用内存。单位MB。
 
@@ -238,7 +238,7 @@ class NodeDetail:
 
     @property
     def total_hard_disk_space(self):
-        """Gets the total_hard_disk_space of this NodeDetail.
+        r"""Gets the total_hard_disk_space of this NodeDetail.
 
         总硬盘空间。单位GB。
 
@@ -249,7 +249,7 @@ class NodeDetail:
 
     @total_hard_disk_space.setter
     def total_hard_disk_space(self, total_hard_disk_space):
-        """Sets the total_hard_disk_space of this NodeDetail.
+        r"""Sets the total_hard_disk_space of this NodeDetail.
 
         总硬盘空间。单位GB。
 
@@ -260,7 +260,7 @@ class NodeDetail:
 
     @property
     def available_hard_disk_space(self):
-        """Gets the available_hard_disk_space of this NodeDetail.
+        r"""Gets the available_hard_disk_space of this NodeDetail.
 
         可用硬盘空间。单位GB。
 
@@ -271,7 +271,7 @@ class NodeDetail:
 
     @available_hard_disk_space.setter
     def available_hard_disk_space(self, available_hard_disk_space):
-        """Sets the available_hard_disk_space of this NodeDetail.
+        r"""Sets the available_hard_disk_space of this NodeDetail.
 
         可用硬盘空间。单位GB。
 
@@ -282,7 +282,7 @@ class NodeDetail:
 
     @property
     def network_read(self):
-        """Gets the network_read of this NodeDetail.
+        r"""Gets the network_read of this NodeDetail.
 
         网络读取速度。单位Byte/s。
 
@@ -293,7 +293,7 @@ class NodeDetail:
 
     @network_read.setter
     def network_read(self, network_read):
-        """Sets the network_read of this NodeDetail.
+        r"""Sets the network_read of this NodeDetail.
 
         网络读取速度。单位Byte/s。
 
@@ -304,7 +304,7 @@ class NodeDetail:
 
     @property
     def network_write(self):
-        """Gets the network_write of this NodeDetail.
+        r"""Gets the network_write of this NodeDetail.
 
         网络写入速度。单位Byte/s。
 
@@ -315,7 +315,7 @@ class NodeDetail:
 
     @network_write.setter
     def network_write(self, network_write):
-        """Sets the network_write of this NodeDetail.
+        r"""Sets the network_write of this NodeDetail.
 
         网络写入速度。单位Byte/s。
 

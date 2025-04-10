@@ -43,7 +43,7 @@ class ProductDetailInfo:
     }
 
     def __init__(self, product_id=None, name=None, description=None, tags=None, cover=None, text_list=None, asset_list=None, create_time=None, update_time=None, state=None):
-        """ProductDetailInfo
+        r"""ProductDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ProductDetailInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductDetailInfo.
+        r"""Gets the product_id of this ProductDetailInfo.
 
         商品ID
 
@@ -117,7 +117,7 @@ class ProductDetailInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductDetailInfo.
+        r"""Sets the product_id of this ProductDetailInfo.
 
         商品ID
 
@@ -128,7 +128,7 @@ class ProductDetailInfo:
 
     @property
     def name(self):
-        """Gets the name of this ProductDetailInfo.
+        r"""Gets the name of this ProductDetailInfo.
 
         商品名称
 
@@ -139,7 +139,7 @@ class ProductDetailInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProductDetailInfo.
+        r"""Sets the name of this ProductDetailInfo.
 
         商品名称
 
@@ -150,7 +150,7 @@ class ProductDetailInfo:
 
     @property
     def description(self):
-        """Gets the description of this ProductDetailInfo.
+        r"""Gets the description of this ProductDetailInfo.
 
         商品描述
 
@@ -161,7 +161,7 @@ class ProductDetailInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProductDetailInfo.
+        r"""Sets the description of this ProductDetailInfo.
 
         商品描述
 
@@ -172,7 +172,7 @@ class ProductDetailInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this ProductDetailInfo.
+        r"""Gets the tags of this ProductDetailInfo.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -183,7 +183,7 @@ class ProductDetailInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProductDetailInfo.
+        r"""Sets the tags of this ProductDetailInfo.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -194,7 +194,7 @@ class ProductDetailInfo:
 
     @property
     def cover(self):
-        """Gets the cover of this ProductDetailInfo.
+        r"""Gets the cover of this ProductDetailInfo.
 
         :return: The cover of this ProductDetailInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductCoverDetailInfo`
@@ -203,7 +203,7 @@ class ProductDetailInfo:
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this ProductDetailInfo.
+        r"""Sets the cover of this ProductDetailInfo.
 
         :param cover: The cover of this ProductDetailInfo.
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverDetailInfo`
@@ -212,7 +212,7 @@ class ProductDetailInfo:
 
     @property
     def text_list(self):
-        """Gets the text_list of this ProductDetailInfo.
+        r"""Gets the text_list of this ProductDetailInfo.
 
         文本列表
 
@@ -223,7 +223,7 @@ class ProductDetailInfo:
 
     @text_list.setter
     def text_list(self, text_list):
-        """Sets the text_list of this ProductDetailInfo.
+        r"""Sets the text_list of this ProductDetailInfo.
 
         文本列表
 
@@ -234,7 +234,7 @@ class ProductDetailInfo:
 
     @property
     def asset_list(self):
-        """Gets the asset_list of this ProductDetailInfo.
+        r"""Gets the asset_list of this ProductDetailInfo.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -245,7 +245,7 @@ class ProductDetailInfo:
 
     @asset_list.setter
     def asset_list(self, asset_list):
-        """Sets the asset_list of this ProductDetailInfo.
+        r"""Sets the asset_list of this ProductDetailInfo.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -256,7 +256,7 @@ class ProductDetailInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProductDetailInfo.
+        r"""Gets the create_time of this ProductDetailInfo.
 
         商品创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -267,7 +267,7 @@ class ProductDetailInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProductDetailInfo.
+        r"""Sets the create_time of this ProductDetailInfo.
 
         商品创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -278,7 +278,7 @@ class ProductDetailInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProductDetailInfo.
+        r"""Gets the update_time of this ProductDetailInfo.
 
         商品更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -289,7 +289,7 @@ class ProductDetailInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProductDetailInfo.
+        r"""Sets the update_time of this ProductDetailInfo.
 
         商品更新时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -300,7 +300,7 @@ class ProductDetailInfo:
 
     @property
     def state(self):
-        """Gets the state of this ProductDetailInfo.
+        r"""Gets the state of this ProductDetailInfo.
 
         商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活 * BLOCK: 被冻结，商品不可用 * DELETED：已删除
 
@@ -311,7 +311,7 @@ class ProductDetailInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ProductDetailInfo.
+        r"""Sets the state of this ProductDetailInfo.
 
         商品状态枚举 * ACTIVED：已激活 * UNACTIVED：未激活 * BLOCK: 被冻结，商品不可用 * DELETED：已删除
 

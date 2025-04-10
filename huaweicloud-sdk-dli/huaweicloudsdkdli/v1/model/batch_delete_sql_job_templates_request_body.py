@@ -25,7 +25,7 @@ class BatchDeleteSqlJobTemplatesRequestBody:
     }
 
     def __init__(self, sql_ids=None):
-        """BatchDeleteSqlJobTemplatesRequestBody
+        r"""BatchDeleteSqlJobTemplatesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteSqlJobTemplatesRequestBody:
 
     @property
     def sql_ids(self):
-        """Gets the sql_ids of this BatchDeleteSqlJobTemplatesRequestBody.
+        r"""Gets the sql_ids of this BatchDeleteSqlJobTemplatesRequestBody.
 
         待删除的sql模板ID列表。
 
@@ -53,7 +53,7 @@ class BatchDeleteSqlJobTemplatesRequestBody:
 
     @sql_ids.setter
     def sql_ids(self, sql_ids):
-        """Sets the sql_ids of this BatchDeleteSqlJobTemplatesRequestBody.
+        r"""Sets the sql_ids of this BatchDeleteSqlJobTemplatesRequestBody.
 
         待删除的sql模板ID列表。
 

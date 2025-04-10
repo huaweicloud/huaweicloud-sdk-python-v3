@@ -25,7 +25,7 @@ class ReturnedKvItem:
     }
 
     def __init__(self, kv_doc=None):
-        """ReturnedKvItem
+        r"""ReturnedKvItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReturnedKvItem:
 
     @property
     def kv_doc(self):
-        """Gets the kv_doc of this ReturnedKvItem.
+        r"""Gets the kv_doc of this ReturnedKvItem.
 
         对kv_doc有效。
 
@@ -54,7 +54,7 @@ class ReturnedKvItem:
 
     @kv_doc.setter
     def kv_doc(self, kv_doc):
-        """Sets the kv_doc of this ReturnedKvItem.
+        r"""Sets the kv_doc of this ReturnedKvItem.
 
         对kv_doc有效。
 

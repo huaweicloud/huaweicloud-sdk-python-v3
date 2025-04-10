@@ -31,7 +31,7 @@ class ApiActionInfo:
     }
 
     def __init__(self, action=None, env_id=None, api_id=None, remark=None):
-        """ApiActionInfo
+        r"""ApiActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ApiActionInfo:
 
     @property
     def action(self):
-        """Gets the action of this ApiActionInfo.
+        r"""Gets the action of this ApiActionInfo.
 
         需要进行的操作。 - online：发布 - offline：下线
 
@@ -72,7 +72,7 @@ class ApiActionInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ApiActionInfo.
+        r"""Sets the action of this ApiActionInfo.
 
         需要进行的操作。 - online：发布 - offline：下线
 
@@ -83,7 +83,7 @@ class ApiActionInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiActionInfo.
+        r"""Gets the env_id of this ApiActionInfo.
 
         环境的编号，即：API需要发布到哪个环境
 
@@ -94,7 +94,7 @@ class ApiActionInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiActionInfo.
+        r"""Sets the env_id of this ApiActionInfo.
 
         环境的编号，即：API需要发布到哪个环境
 
@@ -105,7 +105,7 @@ class ApiActionInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiActionInfo.
+        r"""Gets the api_id of this ApiActionInfo.
 
         API的编号，即：需要进行发布或下线的API的编号
 
@@ -116,7 +116,7 @@ class ApiActionInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiActionInfo.
+        r"""Sets the api_id of this ApiActionInfo.
 
         API的编号，即：需要进行发布或下线的API的编号
 
@@ -127,7 +127,7 @@ class ApiActionInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiActionInfo.
+        r"""Gets the remark of this ApiActionInfo.
 
         对发布动作的简述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -138,7 +138,7 @@ class ApiActionInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiActionInfo.
+        r"""Sets the remark of this ApiActionInfo.
 
         对发布动作的简述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 

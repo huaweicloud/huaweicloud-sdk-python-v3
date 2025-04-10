@@ -29,7 +29,7 @@ class DsExportResultVOData:
     }
 
     def __init__(self, status=None, group=None, rate=None):
-        """DsExportResultVOData
+        r"""DsExportResultVOData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DsExportResultVOData:
 
     @property
     def status(self):
-        """Gets the status of this DsExportResultVOData.
+        r"""Gets the status of this DsExportResultVOData.
 
         标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。 枚举值：   - importing: 导出中   - fail: 导出失败   - success: 导出成功 
 
@@ -68,7 +68,7 @@ class DsExportResultVOData:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DsExportResultVOData.
+        r"""Sets the status of this DsExportResultVOData.
 
         标识本次导出的唯一值，用于查询导入结果。importing(导出中)、fail(导出失败)、success(导出成功)。 枚举值：   - importing: 导出中   - fail: 导出失败   - success: 导出成功 
 
@@ -79,7 +79,7 @@ class DsExportResultVOData:
 
     @property
     def group(self):
-        """Gets the group of this DsExportResultVOData.
+        r"""Gets the group of this DsExportResultVOData.
 
         :return: The group of this DsExportResultVOData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -88,7 +88,7 @@ class DsExportResultVOData:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this DsExportResultVOData.
+        r"""Sets the group of this DsExportResultVOData.
 
         :param group: The group of this DsExportResultVOData.
         :type group: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -97,7 +97,7 @@ class DsExportResultVOData:
 
     @property
     def rate(self):
-        """Gets the rate of this DsExportResultVOData.
+        r"""Gets the rate of this DsExportResultVOData.
 
         当前进度。
 
@@ -108,7 +108,7 @@ class DsExportResultVOData:
 
     @rate.setter
     def rate(self, rate):
-        """Sets the rate of this DsExportResultVOData.
+        r"""Sets the rate of this DsExportResultVOData.
 
         当前进度。
 

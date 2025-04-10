@@ -31,7 +31,7 @@ class ContentDiffDetailVO:
     }
 
     def __init__(self, source_key_value=None, target_key_value=None, source_select_sql=None, target_select_sql=None):
-        """ContentDiffDetailVO
+        r"""ContentDiffDetailVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ContentDiffDetailVO:
 
     @property
     def source_key_value(self):
-        """Gets the source_key_value of this ContentDiffDetailVO.
+        r"""Gets the source_key_value of this ContentDiffDetailVO.
 
         源库KEY值。
 
@@ -75,7 +75,7 @@ class ContentDiffDetailVO:
 
     @source_key_value.setter
     def source_key_value(self, source_key_value):
-        """Sets the source_key_value of this ContentDiffDetailVO.
+        r"""Sets the source_key_value of this ContentDiffDetailVO.
 
         源库KEY值。
 
@@ -86,7 +86,7 @@ class ContentDiffDetailVO:
 
     @property
     def target_key_value(self):
-        """Gets the target_key_value of this ContentDiffDetailVO.
+        r"""Gets the target_key_value of this ContentDiffDetailVO.
 
         目标库KEY值。
 
@@ -97,7 +97,7 @@ class ContentDiffDetailVO:
 
     @target_key_value.setter
     def target_key_value(self, target_key_value):
-        """Sets the target_key_value of this ContentDiffDetailVO.
+        r"""Sets the target_key_value of this ContentDiffDetailVO.
 
         目标库KEY值。
 
@@ -108,7 +108,7 @@ class ContentDiffDetailVO:
 
     @property
     def source_select_sql(self):
-        """Gets the source_select_sql of this ContentDiffDetailVO.
+        r"""Gets the source_select_sql of this ContentDiffDetailVO.
 
         查询源库SQL。
 
@@ -119,7 +119,7 @@ class ContentDiffDetailVO:
 
     @source_select_sql.setter
     def source_select_sql(self, source_select_sql):
-        """Sets the source_select_sql of this ContentDiffDetailVO.
+        r"""Sets the source_select_sql of this ContentDiffDetailVO.
 
         查询源库SQL。
 
@@ -130,7 +130,7 @@ class ContentDiffDetailVO:
 
     @property
     def target_select_sql(self):
-        """Gets the target_select_sql of this ContentDiffDetailVO.
+        r"""Gets the target_select_sql of this ContentDiffDetailVO.
 
         查询目标库SQL。
 
@@ -141,7 +141,7 @@ class ContentDiffDetailVO:
 
     @target_select_sql.setter
     def target_select_sql(self, target_select_sql):
-        """Sets the target_select_sql of this ContentDiffDetailVO.
+        r"""Sets the target_select_sql of this ContentDiffDetailVO.
 
         查询目标库SQL。
 

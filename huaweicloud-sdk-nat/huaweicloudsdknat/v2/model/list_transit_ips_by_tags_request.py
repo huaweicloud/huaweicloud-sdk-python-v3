@@ -25,7 +25,7 @@ class ListTransitIpsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListTransitIpsByTagsRequest
+        r"""ListTransitIpsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTransitIpsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTransitIpsByTagsRequest.
+        r"""Gets the body of this ListTransitIpsByTagsRequest.
 
         :return: The body of this ListTransitIpsByTagsRequest.
         :rtype: :class:`huaweicloudsdknat.v2.ListTagResourceInstancesRequestBody`
@@ -52,7 +52,7 @@ class ListTransitIpsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTransitIpsByTagsRequest.
+        r"""Sets the body of this ListTransitIpsByTagsRequest.
 
         :param body: The body of this ListTransitIpsByTagsRequest.
         :type body: :class:`huaweicloudsdknat.v2.ListTagResourceInstancesRequestBody`

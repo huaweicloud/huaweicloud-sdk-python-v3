@@ -35,7 +35,7 @@ class BatchChangeServerImageReq:
     }
 
     def __init__(self, server_ids=None, image_id=None, image_type=None, os_type=None, image_product_id=None, update_access_agent=None):
-        """BatchChangeServerImageReq
+        r"""BatchChangeServerImageReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class BatchChangeServerImageReq:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this BatchChangeServerImageReq.
+        r"""Gets the server_ids of this BatchChangeServerImageReq.
 
         应用服务器id集合。
 
@@ -86,7 +86,7 @@ class BatchChangeServerImageReq:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this BatchChangeServerImageReq.
+        r"""Sets the server_ids of this BatchChangeServerImageReq.
 
         应用服务器id集合。
 
@@ -97,7 +97,7 @@ class BatchChangeServerImageReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this BatchChangeServerImageReq.
+        r"""Gets the image_id of this BatchChangeServerImageReq.
 
         镜像id，要求与服务器原有镜像id不相同。
 
@@ -108,7 +108,7 @@ class BatchChangeServerImageReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this BatchChangeServerImageReq.
+        r"""Sets the image_id of this BatchChangeServerImageReq.
 
         镜像id，要求与服务器原有镜像id不相同。
 
@@ -119,7 +119,7 @@ class BatchChangeServerImageReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this BatchChangeServerImageReq.
+        r"""Gets the image_type of this BatchChangeServerImageReq.
 
         :return: The image_type of this BatchChangeServerImageReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -128,7 +128,7 @@ class BatchChangeServerImageReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this BatchChangeServerImageReq.
+        r"""Sets the image_type of this BatchChangeServerImageReq.
 
         :param image_type: The image_type of this BatchChangeServerImageReq.
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -137,7 +137,7 @@ class BatchChangeServerImageReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this BatchChangeServerImageReq.
+        r"""Gets the os_type of this BatchChangeServerImageReq.
 
         :return: The os_type of this BatchChangeServerImageReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -146,7 +146,7 @@ class BatchChangeServerImageReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this BatchChangeServerImageReq.
+        r"""Sets the os_type of this BatchChangeServerImageReq.
 
         :param os_type: The os_type of this BatchChangeServerImageReq.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -155,7 +155,7 @@ class BatchChangeServerImageReq:
 
     @property
     def image_product_id(self):
-        """Gets the image_product_id of this BatchChangeServerImageReq.
+        r"""Gets the image_product_id of this BatchChangeServerImageReq.
 
         镜像的产品id，当镜像是市场镜像时候，该字段必传。
 
@@ -166,7 +166,7 @@ class BatchChangeServerImageReq:
 
     @image_product_id.setter
     def image_product_id(self, image_product_id):
-        """Sets the image_product_id of this BatchChangeServerImageReq.
+        r"""Sets the image_product_id of this BatchChangeServerImageReq.
 
         镜像的产品id，当镜像是市场镜像时候，该字段必传。
 
@@ -177,7 +177,7 @@ class BatchChangeServerImageReq:
 
     @property
     def update_access_agent(self):
-        """Gets the update_access_agent of this BatchChangeServerImageReq.
+        r"""Gets the update_access_agent of this BatchChangeServerImageReq.
 
         是否自动升级hda版本。
 
@@ -188,7 +188,7 @@ class BatchChangeServerImageReq:
 
     @update_access_agent.setter
     def update_access_agent(self, update_access_agent):
-        """Sets the update_access_agent of this BatchChangeServerImageReq.
+        r"""Sets the update_access_agent of this BatchChangeServerImageReq.
 
         是否自动升级hda版本。
 

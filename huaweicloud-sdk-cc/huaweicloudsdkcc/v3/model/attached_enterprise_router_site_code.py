@@ -25,7 +25,7 @@ class AttachedEnterpriseRouterSiteCode:
     }
 
     def __init__(self, attached_er_table_site_code=None):
-        """AttachedEnterpriseRouterSiteCode
+        r"""AttachedEnterpriseRouterSiteCode
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachedEnterpriseRouterSiteCode:
 
     @property
     def attached_er_table_site_code(self):
-        """Gets the attached_er_table_site_code of this AttachedEnterpriseRouterSiteCode.
+        r"""Gets the attached_er_table_site_code of this AttachedEnterpriseRouterSiteCode.
 
         被挂载的企业路由器的站点编码。
 
@@ -53,7 +53,7 @@ class AttachedEnterpriseRouterSiteCode:
 
     @attached_er_table_site_code.setter
     def attached_er_table_site_code(self, attached_er_table_site_code):
-        """Sets the attached_er_table_site_code of this AttachedEnterpriseRouterSiteCode.
+        r"""Sets the attached_er_table_site_code of this AttachedEnterpriseRouterSiteCode.
 
         被挂载的企业路由器的站点编码。
 

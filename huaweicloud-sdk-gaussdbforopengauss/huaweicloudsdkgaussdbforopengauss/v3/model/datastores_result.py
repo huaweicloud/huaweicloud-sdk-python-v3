@@ -27,7 +27,7 @@ class DatastoresResult:
     }
 
     def __init__(self, supported_versions=None, instance_mode=None):
-        """DatastoresResult
+        r"""DatastoresResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatastoresResult:
 
     @property
     def supported_versions(self):
-        """Gets the supported_versions of this DatastoresResult.
+        r"""Gets the supported_versions of this DatastoresResult.
 
         部署形态支持的引擎版本列表
 
@@ -59,7 +59,7 @@ class DatastoresResult:
 
     @supported_versions.setter
     def supported_versions(self, supported_versions):
-        """Sets the supported_versions of this DatastoresResult.
+        r"""Sets the supported_versions of this DatastoresResult.
 
         部署形态支持的引擎版本列表
 
@@ -70,7 +70,7 @@ class DatastoresResult:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this DatastoresResult.
+        r"""Gets the instance_mode of this DatastoresResult.
 
         部署形态
 
@@ -81,7 +81,7 @@ class DatastoresResult:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this DatastoresResult.
+        r"""Sets the instance_mode of this DatastoresResult.
 
         部署形态
 

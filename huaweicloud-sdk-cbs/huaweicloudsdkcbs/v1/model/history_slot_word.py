@@ -27,7 +27,7 @@ class HistorySlotWord:
     }
 
     def __init__(self, word=None, norm_word=None):
-        """HistorySlotWord
+        r"""HistorySlotWord
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HistorySlotWord:
 
     @property
     def word(self):
-        """Gets the word of this HistorySlotWord.
+        r"""Gets the word of this HistorySlotWord.
 
         词
 
@@ -59,7 +59,7 @@ class HistorySlotWord:
 
     @word.setter
     def word(self, word):
-        """Sets the word of this HistorySlotWord.
+        r"""Sets the word of this HistorySlotWord.
 
         词
 
@@ -70,7 +70,7 @@ class HistorySlotWord:
 
     @property
     def norm_word(self):
-        """Gets the norm_word of this HistorySlotWord.
+        r"""Gets the norm_word of this HistorySlotWord.
 
         归一化后的词
 
@@ -81,7 +81,7 @@ class HistorySlotWord:
 
     @norm_word.setter
     def norm_word(self, norm_word):
-        """Sets the norm_word of this HistorySlotWord.
+        r"""Sets the norm_word of this HistorySlotWord.
 
         归一化后的词
 

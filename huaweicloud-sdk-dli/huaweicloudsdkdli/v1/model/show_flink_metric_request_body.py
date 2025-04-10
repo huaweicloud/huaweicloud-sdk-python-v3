@@ -25,7 +25,7 @@ class ShowFlinkMetricRequestBody:
     }
 
     def __init__(self, job_ids=None):
-        """ShowFlinkMetricRequestBody
+        r"""ShowFlinkMetricRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlinkMetricRequestBody:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this ShowFlinkMetricRequestBody.
+        r"""Gets the job_ids of this ShowFlinkMetricRequestBody.
 
         作业ID列表。
 
@@ -53,7 +53,7 @@ class ShowFlinkMetricRequestBody:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this ShowFlinkMetricRequestBody.
+        r"""Sets the job_ids of this ShowFlinkMetricRequestBody.
 
         作业ID列表。
 

@@ -33,7 +33,7 @@ class ListEncodeServersRequest:
     }
 
     def __init__(self, offset=None, limit=None, type=None, status=None, server_id=None):
-        """ListEncodeServersRequest
+        r"""ListEncodeServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListEncodeServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEncodeServersRequest.
+        r"""Gets the offset of this ListEncodeServersRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -82,7 +82,7 @@ class ListEncodeServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEncodeServersRequest.
+        r"""Sets the offset of this ListEncodeServersRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -93,7 +93,7 @@ class ListEncodeServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEncodeServersRequest.
+        r"""Gets the limit of this ListEncodeServersRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -104,7 +104,7 @@ class ListEncodeServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEncodeServersRequest.
+        r"""Sets the limit of this ListEncodeServersRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -115,7 +115,7 @@ class ListEncodeServersRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListEncodeServersRequest.
+        r"""Gets the type of this ListEncodeServersRequest.
 
         编码服务类型。 - 0：服务器 - 1：容器
 
@@ -126,7 +126,7 @@ class ListEncodeServersRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEncodeServersRequest.
+        r"""Sets the type of this ListEncodeServersRequest.
 
         编码服务类型。 - 0：服务器 - 1：容器
 
@@ -137,7 +137,7 @@ class ListEncodeServersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEncodeServersRequest.
+        r"""Gets the status of this ListEncodeServersRequest.
 
         状态列表。 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
 
@@ -148,7 +148,7 @@ class ListEncodeServersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEncodeServersRequest.
+        r"""Sets the status of this ListEncodeServersRequest.
 
         状态列表。 - 1：运行中 - 2：异常 - 3：重启中 - 4：冻结 - 5：关机 - 100、1014、0：创建中
 
@@ -159,7 +159,7 @@ class ListEncodeServersRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListEncodeServersRequest.
+        r"""Gets the server_id of this ListEncodeServersRequest.
 
         云手机服务器的唯一标识。
 
@@ -170,7 +170,7 @@ class ListEncodeServersRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListEncodeServersRequest.
+        r"""Sets the server_id of this ListEncodeServersRequest.
 
         云手机服务器的唯一标识。
 

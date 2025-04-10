@@ -88,7 +88,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, is_send_fg_body_base64=None, id=None, group_name=None, run_env_name=None, run_env_id=None, publish_id=None, sl_domain=None, sl_domains=None, req_params=None):
-        """ListApiRuntimeDefinitionV2Response
+        r"""ListApiRuntimeDefinitionV2Response
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the name of this ListApiRuntimeDefinitionV2Response.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -264,7 +264,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the name of this ListApiRuntimeDefinitionV2Response.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -275,7 +275,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the type of this ListApiRuntimeDefinitionV2Response.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -286,7 +286,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the type of this ListApiRuntimeDefinitionV2Response.
 
         API类型 - 1：公有API - 2：私有API
 
@@ -297,7 +297,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the version of this ListApiRuntimeDefinitionV2Response.
 
         API的版本
 
@@ -308,7 +308,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the version of this ListApiRuntimeDefinitionV2Response.
 
         API的版本
 
@@ -319,7 +319,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the req_protocol of this ListApiRuntimeDefinitionV2Response.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
@@ -330,7 +330,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the req_protocol of this ListApiRuntimeDefinitionV2Response.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS - GRPCS
 
@@ -341,7 +341,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def req_method(self):
-        """Gets the req_method of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the req_method of this ListApiRuntimeDefinitionV2Response.
 
         API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
@@ -352,7 +352,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the req_method of this ListApiRuntimeDefinitionV2Response.
 
         API的请求方式，当API的请求协议为GRPC类型协议时请求方式固定为POST。
 
@@ -363,7 +363,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the req_uri of this ListApiRuntimeDefinitionV2Response.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
@@ -374,7 +374,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the req_uri of this ListApiRuntimeDefinitionV2Response.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  > 需要服从URI规范。
 
@@ -385,7 +385,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the auth_type of this ListApiRuntimeDefinitionV2Response.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入
 
@@ -396,7 +396,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the auth_type of this ListApiRuntimeDefinitionV2Response.
 
         API的认证方式 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证，当auth_type取值为AUTHORIZER时，authorizer_id字段必须传入
 
@@ -407,7 +407,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def auth_opt(self):
-        """Gets the auth_opt of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the auth_opt of this ListApiRuntimeDefinitionV2Response.
 
         :return: The auth_opt of this ListApiRuntimeDefinitionV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -416,7 +416,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @auth_opt.setter
     def auth_opt(self, auth_opt):
-        """Sets the auth_opt of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the auth_opt of this ListApiRuntimeDefinitionV2Response.
 
         :param auth_opt: The auth_opt of this ListApiRuntimeDefinitionV2Response.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -425,7 +425,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def cors(self):
-        """Gets the cors of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the cors of this ListApiRuntimeDefinitionV2Response.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -436,7 +436,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the cors of this ListApiRuntimeDefinitionV2Response.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -447,7 +447,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the match_mode of this ListApiRuntimeDefinitionV2Response.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -458,7 +458,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the match_mode of this ListApiRuntimeDefinitionV2Response.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -469,7 +469,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def backend_type(self):
-        """Gets the backend_type of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the backend_type of this ListApiRuntimeDefinitionV2Response.
 
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
@@ -480,7 +480,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @backend_type.setter
     def backend_type(self, backend_type):
-        """Sets the backend_type of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the backend_type of this ListApiRuntimeDefinitionV2Response.
 
         后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
 
@@ -491,7 +491,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the remark of this ListApiRuntimeDefinitionV2Response.
 
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -502,7 +502,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the remark of this ListApiRuntimeDefinitionV2Response.
 
         API描述。字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -513,7 +513,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the group_id of this ListApiRuntimeDefinitionV2Response.
 
         API所属的分组编号
 
@@ -524,7 +524,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the group_id of this ListApiRuntimeDefinitionV2Response.
 
         API所属的分组编号
 
@@ -535,7 +535,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def body_remark(self):
-        """Gets the body_remark of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the body_remark of this ListApiRuntimeDefinitionV2Response.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -546,7 +546,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @body_remark.setter
     def body_remark(self, body_remark):
-        """Sets the body_remark of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the body_remark of this ListApiRuntimeDefinitionV2Response.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -557,7 +557,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def result_normal_sample(self):
-        """Gets the result_normal_sample of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the result_normal_sample of this ListApiRuntimeDefinitionV2Response.
 
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -568,7 +568,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @result_normal_sample.setter
     def result_normal_sample(self, result_normal_sample):
-        """Sets the result_normal_sample of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the result_normal_sample of this ListApiRuntimeDefinitionV2Response.
 
         正常响应示例，描述API的正常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -579,7 +579,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def result_failure_sample(self):
-        """Gets the result_failure_sample of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the result_failure_sample of this ListApiRuntimeDefinitionV2Response.
 
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -590,7 +590,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @result_failure_sample.setter
     def result_failure_sample(self, result_failure_sample):
-        """Sets the result_failure_sample of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the result_failure_sample of this ListApiRuntimeDefinitionV2Response.
 
         失败返回示例，描述API的异常返回信息。字符长度不超过20480 > 中文字符必须为UTF-8或者unicode编码。  当API的请求协议为GRPC类型时不支持配置。
 
@@ -601,7 +601,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the authorizer_id of this ListApiRuntimeDefinitionV2Response.
 
         前端自定义认证对象的ID
 
@@ -612,7 +612,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the authorizer_id of this ListApiRuntimeDefinitionV2Response.
 
         前端自定义认证对象的ID
 
@@ -623,7 +623,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the tags of this ListApiRuntimeDefinitionV2Response.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -634,7 +634,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the tags of this ListApiRuntimeDefinitionV2Response.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -645,7 +645,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def response_id(self):
-        """Gets the response_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the response_id of this ListApiRuntimeDefinitionV2Response.
 
         分组自定义响应ID
 
@@ -656,7 +656,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the response_id of this ListApiRuntimeDefinitionV2Response.
 
         分组自定义响应ID
 
@@ -667,7 +667,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the roma_app_id of this ListApiRuntimeDefinitionV2Response.
 
         集成应用ID  暂不支持
 
@@ -678,7 +678,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the roma_app_id of this ListApiRuntimeDefinitionV2Response.
 
         集成应用ID  暂不支持
 
@@ -689,7 +689,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the domain_name of this ListApiRuntimeDefinitionV2Response.
 
         API绑定的自定义域名  暂不支持
 
@@ -700,7 +700,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the domain_name of this ListApiRuntimeDefinitionV2Response.
 
         API绑定的自定义域名  暂不支持
 
@@ -711,7 +711,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def tag(self):
-        """Gets the tag of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the tag of this ListApiRuntimeDefinitionV2Response.
 
         标签  待废弃，优先使用tags字段
 
@@ -722,7 +722,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the tag of this ListApiRuntimeDefinitionV2Response.
 
         标签  待废弃，优先使用tags字段
 
@@ -733,7 +733,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the content_type of this ListApiRuntimeDefinitionV2Response.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -744,7 +744,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the content_type of this ListApiRuntimeDefinitionV2Response.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -755,7 +755,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def is_send_fg_body_base64(self):
-        """Gets the is_send_fg_body_base64 of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the is_send_fg_body_base64 of this ListApiRuntimeDefinitionV2Response.
 
         是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
 
@@ -766,7 +766,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @is_send_fg_body_base64.setter
     def is_send_fg_body_base64(self, is_send_fg_body_base64):
-        """Sets the is_send_fg_body_base64 of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the is_send_fg_body_base64 of this ListApiRuntimeDefinitionV2Response.
 
         是否对与FunctionGraph交互场景的body进行Base64编码。仅当content_type为application/json时，可以不对body进行Base64编码。 应用场景： - 自定义认证 - 绑定断路器插件，且断路器后端降级策略为函数后端 - API后端类型为函数工作流
 
@@ -777,7 +777,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the id of this ListApiRuntimeDefinitionV2Response.
 
         API编号
 
@@ -788,7 +788,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the id of this ListApiRuntimeDefinitionV2Response.
 
         API编号
 
@@ -799,7 +799,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the group_name of this ListApiRuntimeDefinitionV2Response.
 
         API所属分组的名称
 
@@ -810,7 +810,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the group_name of this ListApiRuntimeDefinitionV2Response.
 
         API所属分组的名称
 
@@ -821,7 +821,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def run_env_name(self):
-        """Gets the run_env_name of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the run_env_name of this ListApiRuntimeDefinitionV2Response.
 
         发布的环境名
 
@@ -832,7 +832,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @run_env_name.setter
     def run_env_name(self, run_env_name):
-        """Sets the run_env_name of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the run_env_name of this ListApiRuntimeDefinitionV2Response.
 
         发布的环境名
 
@@ -843,7 +843,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def run_env_id(self):
-        """Gets the run_env_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the run_env_id of this ListApiRuntimeDefinitionV2Response.
 
         发布的环境id
 
@@ -854,7 +854,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @run_env_id.setter
     def run_env_id(self, run_env_id):
-        """Sets the run_env_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the run_env_id of this ListApiRuntimeDefinitionV2Response.
 
         发布的环境id
 
@@ -865,7 +865,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the publish_id of this ListApiRuntimeDefinitionV2Response.
 
         发布记录的编号
 
@@ -876,7 +876,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the publish_id of this ListApiRuntimeDefinitionV2Response.
 
         发布记录的编号
 
@@ -887,7 +887,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def sl_domain(self):
-        """Gets the sl_domain of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the sl_domain of this ListApiRuntimeDefinitionV2Response.
 
         分组的二级域名
 
@@ -898,7 +898,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @sl_domain.setter
     def sl_domain(self, sl_domain):
-        """Sets the sl_domain of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the sl_domain of this ListApiRuntimeDefinitionV2Response.
 
         分组的二级域名
 
@@ -909,7 +909,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def sl_domains(self):
-        """Gets the sl_domains of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the sl_domains of this ListApiRuntimeDefinitionV2Response.
 
         系统默认分配的子域名列表
 
@@ -920,7 +920,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @sl_domains.setter
     def sl_domains(self, sl_domains):
-        """Sets the sl_domains of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the sl_domains of this ListApiRuntimeDefinitionV2Response.
 
         系统默认分配的子域名列表
 
@@ -931,7 +931,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @property
     def req_params(self):
-        """Gets the req_params of this ListApiRuntimeDefinitionV2Response.
+        r"""Gets the req_params of this ListApiRuntimeDefinitionV2Response.
 
         API的请求参数列表
 
@@ -942,7 +942,7 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
 
     @req_params.setter
     def req_params(self, req_params):
-        """Sets the req_params of this ListApiRuntimeDefinitionV2Response.
+        r"""Sets the req_params of this ListApiRuntimeDefinitionV2Response.
 
         API的请求参数列表
 

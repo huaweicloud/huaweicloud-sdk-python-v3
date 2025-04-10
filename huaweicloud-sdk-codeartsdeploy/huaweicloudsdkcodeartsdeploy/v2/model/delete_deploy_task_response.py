@@ -26,7 +26,7 @@ class DeleteDeployTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """DeleteDeployTaskResponse
+        r"""DeleteDeployTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDeployTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteDeployTaskResponse.
+        r"""Gets the task_id of this DeleteDeployTaskResponse.
 
         部署任务id
 
@@ -55,7 +55,7 @@ class DeleteDeployTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteDeployTaskResponse.
+        r"""Sets the task_id of this DeleteDeployTaskResponse.
 
         部署任务id
 

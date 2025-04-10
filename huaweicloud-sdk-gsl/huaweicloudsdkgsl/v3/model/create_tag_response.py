@@ -30,7 +30,7 @@ class CreateTagResponse(SdkResponse):
     }
 
     def __init__(self, id=None, tag_name=None, status=None):
-        """CreateTagResponse
+        r"""CreateTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateTagResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTagResponse.
+        r"""Gets the id of this CreateTagResponse.
 
         标签标识
 
@@ -69,7 +69,7 @@ class CreateTagResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTagResponse.
+        r"""Sets the id of this CreateTagResponse.
 
         标签标识
 
@@ -80,7 +80,7 @@ class CreateTagResponse(SdkResponse):
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this CreateTagResponse.
+        r"""Gets the tag_name of this CreateTagResponse.
 
         标签名称
 
@@ -91,7 +91,7 @@ class CreateTagResponse(SdkResponse):
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this CreateTagResponse.
+        r"""Sets the tag_name of this CreateTagResponse.
 
         标签名称
 
@@ -102,7 +102,7 @@ class CreateTagResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateTagResponse.
+        r"""Gets the status of this CreateTagResponse.
 
         标签状态，0未使用，1使用中。
 
@@ -113,7 +113,7 @@ class CreateTagResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateTagResponse.
+        r"""Sets the status of this CreateTagResponse.
 
         标签状态，0未使用，1使用中。
 

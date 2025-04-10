@@ -27,7 +27,7 @@ class DeleteAppIconRequest:
     }
 
     def __init__(self, app_group_id=None, app_id=None):
-        """DeleteAppIconRequest
+        r"""DeleteAppIconRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAppIconRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this DeleteAppIconRequest.
+        r"""Gets the app_group_id of this DeleteAppIconRequest.
 
         应用组ID。
 
@@ -59,7 +59,7 @@ class DeleteAppIconRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this DeleteAppIconRequest.
+        r"""Sets the app_group_id of this DeleteAppIconRequest.
 
         应用组ID。
 
@@ -70,7 +70,7 @@ class DeleteAppIconRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteAppIconRequest.
+        r"""Gets the app_id of this DeleteAppIconRequest.
 
         应用ID。
 
@@ -81,7 +81,7 @@ class DeleteAppIconRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteAppIconRequest.
+        r"""Sets the app_id of this DeleteAppIconRequest.
 
         应用ID。
 

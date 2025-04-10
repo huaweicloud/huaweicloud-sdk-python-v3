@@ -27,7 +27,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None, body=None):
-        """RemovePublicipsFromSharedBandwidthRequest
+        r"""RemovePublicipsFromSharedBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this RemovePublicipsFromSharedBandwidthRequest.
+        r"""Gets the bandwidth_id of this RemovePublicipsFromSharedBandwidthRequest.
 
         带宽唯一标识
 
@@ -60,7 +60,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this RemovePublicipsFromSharedBandwidthRequest.
+        r"""Sets the bandwidth_id of this RemovePublicipsFromSharedBandwidthRequest.
 
         带宽唯一标识
 
@@ -71,7 +71,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemovePublicipsFromSharedBandwidthRequest.
+        r"""Gets the body of this RemovePublicipsFromSharedBandwidthRequest.
 
         :return: The body of this RemovePublicipsFromSharedBandwidthRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`
@@ -80,7 +80,7 @@ class RemovePublicipsFromSharedBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemovePublicipsFromSharedBandwidthRequest.
+        r"""Sets the body of this RemovePublicipsFromSharedBandwidthRequest.
 
         :param body: The body of this RemovePublicipsFromSharedBandwidthRequest.
         :type body: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`

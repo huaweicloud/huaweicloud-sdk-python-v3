@@ -53,7 +53,7 @@ class DataProfileRO:
     }
 
     def __init__(self, dw_id=None, db_type=None, database_name=None, table_name=None, table_id=None, column_names=None, fields_name=None, queue=None, unique=None, time_profile=None, sample=None, job_id=None, cancel=None, auto_stop=None, obsconfig=None):
-        """DataProfileRO
+        r"""DataProfileRO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class DataProfileRO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this DataProfileRO.
+        r"""Gets the dw_id of this DataProfileRO.
 
         连接id
 
@@ -152,7 +152,7 @@ class DataProfileRO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this DataProfileRO.
+        r"""Sets the dw_id of this DataProfileRO.
 
         连接id
 
@@ -163,7 +163,7 @@ class DataProfileRO:
 
     @property
     def db_type(self):
-        """Gets the db_type of this DataProfileRO.
+        r"""Gets the db_type of this DataProfileRO.
 
         数据源类型
 
@@ -174,7 +174,7 @@ class DataProfileRO:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this DataProfileRO.
+        r"""Sets the db_type of this DataProfileRO.
 
         数据源类型
 
@@ -185,7 +185,7 @@ class DataProfileRO:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DataProfileRO.
+        r"""Gets the database_name of this DataProfileRO.
 
         数据库名称
 
@@ -196,7 +196,7 @@ class DataProfileRO:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DataProfileRO.
+        r"""Sets the database_name of this DataProfileRO.
 
         数据库名称
 
@@ -207,7 +207,7 @@ class DataProfileRO:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DataProfileRO.
+        r"""Gets the table_name of this DataProfileRO.
 
         表名称
 
@@ -218,7 +218,7 @@ class DataProfileRO:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DataProfileRO.
+        r"""Sets the table_name of this DataProfileRO.
 
         表名称
 
@@ -229,7 +229,7 @@ class DataProfileRO:
 
     @property
     def table_id(self):
-        """Gets the table_id of this DataProfileRO.
+        r"""Gets the table_id of this DataProfileRO.
 
         表ID
 
@@ -240,7 +240,7 @@ class DataProfileRO:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DataProfileRO.
+        r"""Sets the table_id of this DataProfileRO.
 
         表ID
 
@@ -251,7 +251,7 @@ class DataProfileRO:
 
     @property
     def column_names(self):
-        """Gets the column_names of this DataProfileRO.
+        r"""Gets the column_names of this DataProfileRO.
 
         待更新概要字段列表
 
@@ -262,7 +262,7 @@ class DataProfileRO:
 
     @column_names.setter
     def column_names(self, column_names):
-        """Sets the column_names of this DataProfileRO.
+        r"""Sets the column_names of this DataProfileRO.
 
         待更新概要字段列表
 
@@ -273,7 +273,7 @@ class DataProfileRO:
 
     @property
     def fields_name(self):
-        """Gets the fields_name of this DataProfileRO.
+        r"""Gets the fields_name of this DataProfileRO.
 
         字段名称列表
 
@@ -284,7 +284,7 @@ class DataProfileRO:
 
     @fields_name.setter
     def fields_name(self, fields_name):
-        """Sets the fields_name of this DataProfileRO.
+        r"""Sets the fields_name of this DataProfileRO.
 
         字段名称列表
 
@@ -295,7 +295,7 @@ class DataProfileRO:
 
     @property
     def queue(self):
-        """Gets the queue of this DataProfileRO.
+        r"""Gets the queue of this DataProfileRO.
 
         执行更新语句队列
 
@@ -306,7 +306,7 @@ class DataProfileRO:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this DataProfileRO.
+        r"""Sets the queue of this DataProfileRO.
 
         执行更新语句队列
 
@@ -317,7 +317,7 @@ class DataProfileRO:
 
     @property
     def unique(self):
-        """Gets the unique of this DataProfileRO.
+        r"""Gets the unique of this DataProfileRO.
 
         是否采集唯一值
 
@@ -328,7 +328,7 @@ class DataProfileRO:
 
     @unique.setter
     def unique(self, unique):
-        """Sets the unique of this DataProfileRO.
+        r"""Sets the unique of this DataProfileRO.
 
         是否采集唯一值
 
@@ -339,7 +339,7 @@ class DataProfileRO:
 
     @property
     def time_profile(self):
-        """Gets the time_profile of this DataProfileRO.
+        r"""Gets the time_profile of this DataProfileRO.
 
         时间档案
 
@@ -350,7 +350,7 @@ class DataProfileRO:
 
     @time_profile.setter
     def time_profile(self, time_profile):
-        """Sets the time_profile of this DataProfileRO.
+        r"""Sets the time_profile of this DataProfileRO.
 
         时间档案
 
@@ -361,7 +361,7 @@ class DataProfileRO:
 
     @property
     def sample(self):
-        """Gets the sample of this DataProfileRO.
+        r"""Gets the sample of this DataProfileRO.
 
         数据采样方式
 
@@ -372,7 +372,7 @@ class DataProfileRO:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this DataProfileRO.
+        r"""Sets the sample of this DataProfileRO.
 
         数据采样方式
 
@@ -383,7 +383,7 @@ class DataProfileRO:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DataProfileRO.
+        r"""Gets the job_id of this DataProfileRO.
 
         作业id
 
@@ -394,7 +394,7 @@ class DataProfileRO:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DataProfileRO.
+        r"""Sets the job_id of this DataProfileRO.
 
         作业id
 
@@ -405,7 +405,7 @@ class DataProfileRO:
 
     @property
     def cancel(self):
-        """Gets the cancel of this DataProfileRO.
+        r"""Gets the cancel of this DataProfileRO.
 
         是否取消
 
@@ -416,7 +416,7 @@ class DataProfileRO:
 
     @cancel.setter
     def cancel(self, cancel):
-        """Sets the cancel of this DataProfileRO.
+        r"""Sets the cancel of this DataProfileRO.
 
         是否取消
 
@@ -427,7 +427,7 @@ class DataProfileRO:
 
     @property
     def auto_stop(self):
-        """Gets the auto_stop of this DataProfileRO.
+        r"""Gets the auto_stop of this DataProfileRO.
 
         是否自动停止
 
@@ -438,7 +438,7 @@ class DataProfileRO:
 
     @auto_stop.setter
     def auto_stop(self, auto_stop):
-        """Sets the auto_stop of this DataProfileRO.
+        r"""Sets the auto_stop of this DataProfileRO.
 
         是否自动停止
 
@@ -449,7 +449,7 @@ class DataProfileRO:
 
     @property
     def obsconfig(self):
-        """Gets the obsconfig of this DataProfileRO.
+        r"""Gets the obsconfig of this DataProfileRO.
 
         :return: The obsconfig of this DataProfileRO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OBSCommonConfig`
@@ -458,7 +458,7 @@ class DataProfileRO:
 
     @obsconfig.setter
     def obsconfig(self, obsconfig):
-        """Sets the obsconfig of this DataProfileRO.
+        r"""Sets the obsconfig of this DataProfileRO.
 
         :param obsconfig: The obsconfig of this DataProfileRO.
         :type obsconfig: :class:`huaweicloudsdkdataartsstudio.v1.OBSCommonConfig`

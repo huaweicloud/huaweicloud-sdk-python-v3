@@ -27,7 +27,7 @@ class QueryAuthorizedNodeDTO:
     }
 
     def __init__(self, node_id=None, authorized_time=None):
-        """QueryAuthorizedNodeDTO
+        r"""QueryAuthorizedNodeDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryAuthorizedNodeDTO:
 
     @property
     def node_id(self):
-        """Gets the node_id of this QueryAuthorizedNodeDTO.
+        r"""Gets the node_id of this QueryAuthorizedNodeDTO.
 
         边缘节点ID
 
@@ -61,7 +61,7 @@ class QueryAuthorizedNodeDTO:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this QueryAuthorizedNodeDTO.
+        r"""Sets the node_id of this QueryAuthorizedNodeDTO.
 
         边缘节点ID
 
@@ -72,7 +72,7 @@ class QueryAuthorizedNodeDTO:
 
     @property
     def authorized_time(self):
-        """Gets the authorized_time of this QueryAuthorizedNodeDTO.
+        r"""Gets the authorized_time of this QueryAuthorizedNodeDTO.
 
         授权时间
 
@@ -83,7 +83,7 @@ class QueryAuthorizedNodeDTO:
 
     @authorized_time.setter
     def authorized_time(self, authorized_time):
-        """Sets the authorized_time of this QueryAuthorizedNodeDTO.
+        r"""Sets the authorized_time of this QueryAuthorizedNodeDTO.
 
         授权时间
 

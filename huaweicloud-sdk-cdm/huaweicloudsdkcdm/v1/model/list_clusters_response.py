@@ -26,7 +26,7 @@ class ListClustersResponse(SdkResponse):
     }
 
     def __init__(self, clusters=None):
-        """ListClustersResponse
+        r"""ListClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClustersResponse(SdkResponse):
 
     @property
     def clusters(self):
-        """Gets the clusters of this ListClustersResponse.
+        r"""Gets the clusters of this ListClustersResponse.
 
         集群列表，请参见clusters参数说明
 
@@ -55,7 +55,7 @@ class ListClustersResponse(SdkResponse):
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this ListClustersResponse.
+        r"""Sets the clusters of this ListClustersResponse.
 
         集群列表，请参见clusters参数说明
 

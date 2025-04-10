@@ -39,7 +39,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
     }
 
     def __init__(self, name=None, description=None, geip_pool_name=None, access_site=None, mask=None, internet_bandwidth=None, tags=None, enterprise_project_id=None):
-        """CreateGlobalEipSegmentRequestBodyGlobalEipSegment
+        r"""CreateGlobalEipSegmentRequestBodyGlobalEipSegment
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def name(self):
-        """Gets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -100,7 +100,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -111,7 +111,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def description(self):
-        """Gets the description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -122,7 +122,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the description of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -133,7 +133,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the geip_pool_name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         全域弹性公网IP池子名称
 
@@ -144,7 +144,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the geip_pool_name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         全域弹性公网IP池子名称
 
@@ -155,7 +155,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def access_site(self):
-        """Gets the access_site of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the access_site of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         接入点信息
 
@@ -166,7 +166,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the access_site of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         接入点信息
 
@@ -177,7 +177,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def mask(self):
-        """Gets the mask of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the mask of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         掩码长度。取值范围由GET /v3/{domain_id}/global-eip-segments/support-masks接口提供
 
@@ -188,7 +188,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @mask.setter
     def mask(self, mask):
-        """Sets the mask of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the mask of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         掩码长度。取值范围由GET /v3/{domain_id}/global-eip-segments/support-masks接口提供
 
@@ -199,7 +199,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def internet_bandwidth(self):
-        """Gets the internet_bandwidth of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the internet_bandwidth of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         :return: The internet_bandwidth of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth`
@@ -208,7 +208,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @internet_bandwidth.setter
     def internet_bandwidth(self, internet_bandwidth):
-        """Sets the internet_bandwidth of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the internet_bandwidth of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         :param internet_bandwidth: The internet_bandwidth of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
         :type internet_bandwidth: :class:`huaweicloudsdkgeip.v3.CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth`
@@ -217,7 +217,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         全域弹性公网IP段标签
 
@@ -228,7 +228,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         全域弹性公网IP段标签
 
@@ -239,7 +239,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Gets the enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -250,7 +250,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegment:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
+        r"""Sets the enterprise_project_id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegment.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 

@@ -35,7 +35,7 @@ class PermissionSetProvisioningStatusDto:
     }
 
     def __init__(self, account_id=None, created_date=None, failure_reason=None, permission_set_id=None, request_id=None, status=None):
-        """PermissionSetProvisioningStatusDto
+        r"""PermissionSetProvisioningStatusDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PermissionSetProvisioningStatusDto:
 
     @property
     def account_id(self):
-        """Gets the account_id of this PermissionSetProvisioningStatusDto.
+        r"""Gets the account_id of this PermissionSetProvisioningStatusDto.
 
         账号的唯一身份标识
 
@@ -89,7 +89,7 @@ class PermissionSetProvisioningStatusDto:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this PermissionSetProvisioningStatusDto.
+        r"""Sets the account_id of this PermissionSetProvisioningStatusDto.
 
         账号的唯一身份标识
 
@@ -100,7 +100,7 @@ class PermissionSetProvisioningStatusDto:
 
     @property
     def created_date(self):
-        """Gets the created_date of this PermissionSetProvisioningStatusDto.
+        r"""Gets the created_date of this PermissionSetProvisioningStatusDto.
 
         权限集创建日期
 
@@ -111,7 +111,7 @@ class PermissionSetProvisioningStatusDto:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this PermissionSetProvisioningStatusDto.
+        r"""Sets the created_date of this PermissionSetProvisioningStatusDto.
 
         权限集创建日期
 
@@ -122,7 +122,7 @@ class PermissionSetProvisioningStatusDto:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this PermissionSetProvisioningStatusDto.
+        r"""Gets the failure_reason of this PermissionSetProvisioningStatusDto.
 
         失败原因
 
@@ -133,7 +133,7 @@ class PermissionSetProvisioningStatusDto:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this PermissionSetProvisioningStatusDto.
+        r"""Sets the failure_reason of this PermissionSetProvisioningStatusDto.
 
         失败原因
 
@@ -144,7 +144,7 @@ class PermissionSetProvisioningStatusDto:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PermissionSetProvisioningStatusDto.
+        r"""Gets the permission_set_id of this PermissionSetProvisioningStatusDto.
 
         权限集唯一标识
 
@@ -155,7 +155,7 @@ class PermissionSetProvisioningStatusDto:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PermissionSetProvisioningStatusDto.
+        r"""Sets the permission_set_id of this PermissionSetProvisioningStatusDto.
 
         权限集唯一标识
 
@@ -166,7 +166,7 @@ class PermissionSetProvisioningStatusDto:
 
     @property
     def request_id(self):
-        """Gets the request_id of this PermissionSetProvisioningStatusDto.
+        r"""Gets the request_id of this PermissionSetProvisioningStatusDto.
 
         请求唯一标识
 
@@ -177,7 +177,7 @@ class PermissionSetProvisioningStatusDto:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this PermissionSetProvisioningStatusDto.
+        r"""Sets the request_id of this PermissionSetProvisioningStatusDto.
 
         请求唯一标识
 
@@ -188,7 +188,7 @@ class PermissionSetProvisioningStatusDto:
 
     @property
     def status(self):
-        """Gets the status of this PermissionSetProvisioningStatusDto.
+        r"""Gets the status of this PermissionSetProvisioningStatusDto.
 
         权限集授权状态
 
@@ -199,7 +199,7 @@ class PermissionSetProvisioningStatusDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PermissionSetProvisioningStatusDto.
+        r"""Sets the status of this PermissionSetProvisioningStatusDto.
 
         权限集授权状态
 

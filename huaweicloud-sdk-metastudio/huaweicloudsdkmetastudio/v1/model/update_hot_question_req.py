@@ -25,7 +25,7 @@ class UpdateHotQuestionReq:
     }
 
     def __init__(self, hot_question=None):
-        """UpdateHotQuestionReq
+        r"""UpdateHotQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateHotQuestionReq:
 
     @property
     def hot_question(self):
-        """Gets the hot_question of this UpdateHotQuestionReq.
+        r"""Gets the hot_question of this UpdateHotQuestionReq.
 
         热点问题。
 
@@ -54,7 +54,7 @@ class UpdateHotQuestionReq:
 
     @hot_question.setter
     def hot_question(self, hot_question):
-        """Sets the hot_question of this UpdateHotQuestionReq.
+        r"""Sets the hot_question of this UpdateHotQuestionReq.
 
         热点问题。
 

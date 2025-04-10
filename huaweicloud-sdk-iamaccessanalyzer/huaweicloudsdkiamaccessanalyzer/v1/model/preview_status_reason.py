@@ -25,7 +25,7 @@ class PreviewStatusReason:
     }
 
     def __init__(self, code=None):
-        """PreviewStatusReason
+        r"""PreviewStatusReason
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PreviewStatusReason:
 
     @property
     def code(self):
-        """Gets the code of this PreviewStatusReason.
+        r"""Gets the code of this PreviewStatusReason.
 
         访问预览当前状态的原因。
 
@@ -53,7 +53,7 @@ class PreviewStatusReason:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this PreviewStatusReason.
+        r"""Sets the code of this PreviewStatusReason.
 
         访问预览当前状态的原因。
 

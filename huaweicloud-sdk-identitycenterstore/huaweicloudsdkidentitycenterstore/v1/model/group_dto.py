@@ -43,7 +43,7 @@ class GroupDto:
     }
 
     def __init__(self, description=None, display_name=None, external_id=None, external_ids=None, group_id=None, identity_store_id=None, created_at=None, created_by=None, updated_at=None, updated_by=None):
-        """GroupDto
+        r"""GroupDto
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class GroupDto:
 
     @property
     def description(self):
-        """Gets the description of this GroupDto.
+        r"""Gets the description of this GroupDto.
 
         包含用户组描述的字符串
 
@@ -115,7 +115,7 @@ class GroupDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GroupDto.
+        r"""Sets the description of this GroupDto.
 
         包含用户组描述的字符串
 
@@ -126,7 +126,7 @@ class GroupDto:
 
     @property
     def display_name(self):
-        """Gets the display_name of this GroupDto.
+        r"""Gets the display_name of this GroupDto.
 
         包含用户组显示名称的字符串
 
@@ -137,7 +137,7 @@ class GroupDto:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this GroupDto.
+        r"""Sets the display_name of this GroupDto.
 
         包含用户组显示名称的字符串
 
@@ -148,7 +148,7 @@ class GroupDto:
 
     @property
     def external_id(self):
-        """Gets the external_id of this GroupDto.
+        r"""Gets the external_id of this GroupDto.
 
         外部身份源分配给此资源的标识符
 
@@ -159,7 +159,7 @@ class GroupDto:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this GroupDto.
+        r"""Sets the external_id of this GroupDto.
 
         外部身份源分配给此资源的标识符
 
@@ -170,7 +170,7 @@ class GroupDto:
 
     @property
     def external_ids(self):
-        """Gets the external_ids of this GroupDto.
+        r"""Gets the external_ids of this GroupDto.
 
         包含外部身份提供商颁发给此资源的标识符的对象列表
 
@@ -181,7 +181,7 @@ class GroupDto:
 
     @external_ids.setter
     def external_ids(self, external_ids):
-        """Sets the external_ids of this GroupDto.
+        r"""Sets the external_ids of this GroupDto.
 
         包含外部身份提供商颁发给此资源的标识符的对象列表
 
@@ -192,7 +192,7 @@ class GroupDto:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GroupDto.
+        r"""Gets the group_id of this GroupDto.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -203,7 +203,7 @@ class GroupDto:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GroupDto.
+        r"""Sets the group_id of this GroupDto.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -214,7 +214,7 @@ class GroupDto:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this GroupDto.
+        r"""Gets the identity_store_id of this GroupDto.
 
         身份源的全局唯一标识符（ID）
 
@@ -225,7 +225,7 @@ class GroupDto:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this GroupDto.
+        r"""Sets the identity_store_id of this GroupDto.
 
         身份源的全局唯一标识符（ID）
 
@@ -236,7 +236,7 @@ class GroupDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GroupDto.
+        r"""Gets the created_at of this GroupDto.
 
         创建时的时间戳
 
@@ -247,7 +247,7 @@ class GroupDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GroupDto.
+        r"""Sets the created_at of this GroupDto.
 
         创建时的时间戳
 
@@ -258,7 +258,7 @@ class GroupDto:
 
     @property
     def created_by(self):
-        """Gets the created_by of this GroupDto.
+        r"""Gets the created_by of this GroupDto.
 
         创建者
 
@@ -269,7 +269,7 @@ class GroupDto:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this GroupDto.
+        r"""Sets the created_by of this GroupDto.
 
         创建者
 
@@ -280,7 +280,7 @@ class GroupDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GroupDto.
+        r"""Gets the updated_at of this GroupDto.
 
         更新时的时间戳
 
@@ -291,7 +291,7 @@ class GroupDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GroupDto.
+        r"""Sets the updated_at of this GroupDto.
 
         更新时的时间戳
 
@@ -302,7 +302,7 @@ class GroupDto:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this GroupDto.
+        r"""Gets the updated_by of this GroupDto.
 
         更新者
 
@@ -313,7 +313,7 @@ class GroupDto:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this GroupDto.
+        r"""Sets the updated_by of this GroupDto.
 
         更新者
 

@@ -30,7 +30,7 @@ class DeleteTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error=None, status=None):
-        """DeleteTemplatesResponse
+        r"""DeleteTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteTemplatesResponse.
+        r"""Gets the result of this DeleteTemplatesResponse.
 
         查询模板结果
 
@@ -69,7 +69,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteTemplatesResponse.
+        r"""Sets the result of this DeleteTemplatesResponse.
 
         查询模板结果
 
@@ -80,7 +80,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteTemplatesResponse.
+        r"""Gets the error of this DeleteTemplatesResponse.
 
         返回错误信息
 
@@ -91,7 +91,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteTemplatesResponse.
+        r"""Sets the error of this DeleteTemplatesResponse.
 
         返回错误信息
 
@@ -102,7 +102,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteTemplatesResponse.
+        r"""Gets the status of this DeleteTemplatesResponse.
 
         返回状态信息
 
@@ -113,7 +113,7 @@ class DeleteTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteTemplatesResponse.
+        r"""Sets the status of this DeleteTemplatesResponse.
 
         返回状态信息
 

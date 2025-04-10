@@ -26,7 +26,7 @@ class ShowHighRiskCommandsResponse(SdkResponse):
     }
 
     def __init__(self, commands=None):
-        """ShowHighRiskCommandsResponse
+        r"""ShowHighRiskCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowHighRiskCommandsResponse(SdkResponse):
 
     @property
     def commands(self):
-        """Gets the commands of this ShowHighRiskCommandsResponse.
+        r"""Gets the commands of this ShowHighRiskCommandsResponse.
 
         高危命令与对应重命名命令。
 
@@ -55,7 +55,7 @@ class ShowHighRiskCommandsResponse(SdkResponse):
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this ShowHighRiskCommandsResponse.
+        r"""Sets the commands of this ShowHighRiskCommandsResponse.
 
         高危命令与对应重命名命令。
 

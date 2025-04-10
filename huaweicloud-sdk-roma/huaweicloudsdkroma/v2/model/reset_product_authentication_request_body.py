@@ -27,7 +27,7 @@ class ResetProductAuthenticationRequestBody:
     }
 
     def __init__(self, user_name=None, password=None):
-        """ResetProductAuthenticationRequestBody
+        r"""ResetProductAuthenticationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResetProductAuthenticationRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ResetProductAuthenticationRequestBody.
+        r"""Gets the user_name of this ResetProductAuthenticationRequestBody.
 
         产品用户名，支持英文大小写、英文符号(-)及数字，长度限制10-50位，传参空，用户名不被重置
 
@@ -61,7 +61,7 @@ class ResetProductAuthenticationRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ResetProductAuthenticationRequestBody.
+        r"""Sets the user_name of this ResetProductAuthenticationRequestBody.
 
         产品用户名，支持英文大小写、英文符号(-)及数字，长度限制10-50位，传参空，用户名不被重置
 
@@ -72,7 +72,7 @@ class ResetProductAuthenticationRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this ResetProductAuthenticationRequestBody.
+        r"""Gets the password of this ResetProductAuthenticationRequestBody.
 
         产品密码，包含数字、英文字母大小写、特殊字符(-~!@#$%^&*()-_=+|[{}];:<>/?)，长度10-80位，传参空，密码不被重置。当用户名与密码都为空时，密码重置，由系统生成。
 
@@ -83,7 +83,7 @@ class ResetProductAuthenticationRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ResetProductAuthenticationRequestBody.
+        r"""Sets the password of this ResetProductAuthenticationRequestBody.
 
         产品密码，包含数字、英文字母大小写、特殊字符(-~!@#$%^&*()-_=+|[{}];:<>/?)，长度10-80位，传参空，密码不被重置。当用户名与密码都为空时，密码重置，由系统生成。
 

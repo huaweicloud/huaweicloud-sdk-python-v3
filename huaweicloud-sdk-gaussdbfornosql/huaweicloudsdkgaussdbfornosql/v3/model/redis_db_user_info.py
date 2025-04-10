@@ -31,7 +31,7 @@ class RedisDbUserInfo:
     }
 
     def __init__(self, name=None, type=None, privilege=None, databases=None):
-        """RedisDbUserInfo
+        r"""RedisDbUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class RedisDbUserInfo:
 
     @property
     def name(self):
-        """Gets the name of this RedisDbUserInfo.
+        r"""Gets the name of this RedisDbUserInfo.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -71,7 +71,7 @@ class RedisDbUserInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RedisDbUserInfo.
+        r"""Sets the name of this RedisDbUserInfo.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -82,7 +82,7 @@ class RedisDbUserInfo:
 
     @property
     def type(self):
-        """Gets the type of this RedisDbUserInfo.
+        r"""Gets the type of this RedisDbUserInfo.
 
         账号类型。  - rwuser：管理员用户 - acluser：普通用户
 
@@ -93,7 +93,7 @@ class RedisDbUserInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RedisDbUserInfo.
+        r"""Sets the type of this RedisDbUserInfo.
 
         账号类型。  - rwuser：管理员用户 - acluser：普通用户
 
@@ -104,7 +104,7 @@ class RedisDbUserInfo:
 
     @property
     def privilege(self):
-        """Gets the privilege of this RedisDbUserInfo.
+        r"""Gets the privilege of this RedisDbUserInfo.
 
         账号权限。  - 取值\"ReadOnly\"：账号为只读权限； - 取值\"ReadWrite\"：账号为读写权限。
 
@@ -115,7 +115,7 @@ class RedisDbUserInfo:
 
     @privilege.setter
     def privilege(self, privilege):
-        """Sets the privilege of this RedisDbUserInfo.
+        r"""Sets the privilege of this RedisDbUserInfo.
 
         账号权限。  - 取值\"ReadOnly\"：账号为只读权限； - 取值\"ReadWrite\"：账号为读写权限。
 
@@ -126,7 +126,7 @@ class RedisDbUserInfo:
 
     @property
     def databases(self):
-        """Gets the databases of this RedisDbUserInfo.
+        r"""Gets the databases of this RedisDbUserInfo.
 
         账号已授权的数据库名称列表。
 
@@ -137,7 +137,7 @@ class RedisDbUserInfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this RedisDbUserInfo.
+        r"""Sets the databases of this RedisDbUserInfo.
 
         账号已授权的数据库名称列表。
 

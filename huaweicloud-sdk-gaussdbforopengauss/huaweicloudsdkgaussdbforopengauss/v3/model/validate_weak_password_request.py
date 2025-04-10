@@ -27,7 +27,7 @@ class ValidateWeakPasswordRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ValidateWeakPasswordRequest
+        r"""ValidateWeakPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValidateWeakPasswordRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ValidateWeakPasswordRequest.
+        r"""Gets the x_language of this ValidateWeakPasswordRequest.
 
         语言。默认值：en-us。
 
@@ -61,7 +61,7 @@ class ValidateWeakPasswordRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ValidateWeakPasswordRequest.
+        r"""Sets the x_language of this ValidateWeakPasswordRequest.
 
         语言。默认值：en-us。
 
@@ -72,7 +72,7 @@ class ValidateWeakPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateWeakPasswordRequest.
+        r"""Gets the body of this ValidateWeakPasswordRequest.
 
         :return: The body of this ValidateWeakPasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.WeakPasswordRequestBody`
@@ -81,7 +81,7 @@ class ValidateWeakPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateWeakPasswordRequest.
+        r"""Sets the body of this ValidateWeakPasswordRequest.
 
         :param body: The body of this ValidateWeakPasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.WeakPasswordRequestBody`

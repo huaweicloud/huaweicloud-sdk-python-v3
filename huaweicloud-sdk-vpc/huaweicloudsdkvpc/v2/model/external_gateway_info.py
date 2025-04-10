@@ -27,7 +27,7 @@ class ExternalGatewayInfo:
     }
 
     def __init__(self, enable_snat=None, network_id=None):
-        """ExternalGatewayInfo
+        r"""ExternalGatewayInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExternalGatewayInfo:
 
     @property
     def enable_snat(self):
-        """Gets the enable_snat of this ExternalGatewayInfo.
+        r"""Gets the enable_snat of this ExternalGatewayInfo.
 
         功能说明：是否启用SNAT 取值范围：true、false；默认为false。
 
@@ -61,7 +61,7 @@ class ExternalGatewayInfo:
 
     @enable_snat.setter
     def enable_snat(self, enable_snat):
-        """Sets the enable_snat of this ExternalGatewayInfo.
+        r"""Sets the enable_snat of this ExternalGatewayInfo.
 
         功能说明：是否启用SNAT 取值范围：true、false；默认为false。
 
@@ -72,7 +72,7 @@ class ExternalGatewayInfo:
 
     @property
     def network_id(self):
-        """Gets the network_id of this ExternalGatewayInfo.
+        r"""Gets the network_id of this ExternalGatewayInfo.
 
         外部网络的ID。
 
@@ -83,7 +83,7 @@ class ExternalGatewayInfo:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this ExternalGatewayInfo.
+        r"""Sets the network_id of this ExternalGatewayInfo.
 
         外部网络的ID。
 

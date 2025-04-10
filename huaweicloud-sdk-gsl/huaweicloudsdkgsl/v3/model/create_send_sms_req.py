@@ -33,7 +33,7 @@ class CreateSendSmsReq:
     }
 
     def __init__(self, template_id=None, sms_content=None, cids=None, order_id=None, file_temp_id=None):
-        """CreateSendSmsReq
+        r"""CreateSendSmsReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateSendSmsReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateSendSmsReq.
+        r"""Gets the template_id of this CreateSendSmsReq.
 
         模板id
 
@@ -81,7 +81,7 @@ class CreateSendSmsReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateSendSmsReq.
+        r"""Sets the template_id of this CreateSendSmsReq.
 
         模板id
 
@@ -92,7 +92,7 @@ class CreateSendSmsReq:
 
     @property
     def sms_content(self):
-        """Gets the sms_content of this CreateSendSmsReq.
+        r"""Gets the sms_content of this CreateSendSmsReq.
 
         短信内容
 
@@ -103,7 +103,7 @@ class CreateSendSmsReq:
 
     @sms_content.setter
     def sms_content(self, sms_content):
-        """Sets the sms_content of this CreateSendSmsReq.
+        r"""Sets the sms_content of this CreateSendSmsReq.
 
         短信内容
 
@@ -114,7 +114,7 @@ class CreateSendSmsReq:
 
     @property
     def cids(self):
-        """Gets the cids of this CreateSendSmsReq.
+        r"""Gets the cids of this CreateSendSmsReq.
 
         容器ID
 
@@ -125,7 +125,7 @@ class CreateSendSmsReq:
 
     @cids.setter
     def cids(self, cids):
-        """Sets the cids of this CreateSendSmsReq.
+        r"""Sets the cids of this CreateSendSmsReq.
 
         容器ID
 
@@ -136,7 +136,7 @@ class CreateSendSmsReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateSendSmsReq.
+        r"""Gets the order_id of this CreateSendSmsReq.
 
         批次号
 
@@ -147,7 +147,7 @@ class CreateSendSmsReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateSendSmsReq.
+        r"""Sets the order_id of this CreateSendSmsReq.
 
         批次号
 
@@ -158,7 +158,7 @@ class CreateSendSmsReq:
 
     @property
     def file_temp_id(self):
-        """Gets the file_temp_id of this CreateSendSmsReq.
+        r"""Gets the file_temp_id of this CreateSendSmsReq.
 
         临时文件ID
 
@@ -169,7 +169,7 @@ class CreateSendSmsReq:
 
     @file_temp_id.setter
     def file_temp_id(self, file_temp_id):
-        """Sets the file_temp_id of this CreateSendSmsReq.
+        r"""Sets the file_temp_id of this CreateSendSmsReq.
 
         临时文件ID
 

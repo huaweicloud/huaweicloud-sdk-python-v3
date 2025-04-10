@@ -28,7 +28,7 @@ class ListInterfacesResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, page_info=None):
-        """ListInterfacesResponse
+        r"""ListInterfacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInterfacesResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListInterfacesResponse.
+        r"""Gets the policies of this ListInterfacesResponse.
 
         lakecat策略信息
 
@@ -62,7 +62,7 @@ class ListInterfacesResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListInterfacesResponse.
+        r"""Sets the policies of this ListInterfacesResponse.
 
         lakecat策略信息
 
@@ -73,7 +73,7 @@ class ListInterfacesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListInterfacesResponse.
+        r"""Gets the page_info of this ListInterfacesResponse.
 
         :return: The page_info of this ListInterfacesResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -82,7 +82,7 @@ class ListInterfacesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListInterfacesResponse.
+        r"""Sets the page_info of this ListInterfacesResponse.
 
         :param page_info: The page_info of this ListInterfacesResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

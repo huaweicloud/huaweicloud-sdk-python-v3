@@ -25,7 +25,7 @@ class ShowIkThesaurusRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowIkThesaurusRequest
+        r"""ShowIkThesaurusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowIkThesaurusRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowIkThesaurusRequest.
+        r"""Gets the cluster_id of this ShowIkThesaurusRequest.
 
         指定需查询词库状态的集群ID。
 
@@ -53,7 +53,7 @@ class ShowIkThesaurusRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowIkThesaurusRequest.
+        r"""Sets the cluster_id of this ShowIkThesaurusRequest.
 
         指定需查询词库状态的集群ID。
 

@@ -33,7 +33,7 @@ class AgreeTenantAuthorizationV2Req:
     }
 
     def __init__(self, auth_detail_list=None, auth_effective_time=None, auth_expire_time=None, group_id=None, agency_id=None):
-        """AgreeTenantAuthorizationV2Req
+        r"""AgreeTenantAuthorizationV2Req
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @property
     def auth_detail_list(self):
-        """Gets the auth_detail_list of this AgreeTenantAuthorizationV2Req.
+        r"""Gets the auth_detail_list of this AgreeTenantAuthorizationV2Req.
 
         授权详情列表
 
@@ -82,7 +82,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @auth_detail_list.setter
     def auth_detail_list(self, auth_detail_list):
-        """Sets the auth_detail_list of this AgreeTenantAuthorizationV2Req.
+        r"""Sets the auth_detail_list of this AgreeTenantAuthorizationV2Req.
 
         授权详情列表
 
@@ -93,7 +93,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @property
     def auth_effective_time(self):
-        """Gets the auth_effective_time of this AgreeTenantAuthorizationV2Req.
+        r"""Gets the auth_effective_time of this AgreeTenantAuthorizationV2Req.
 
         授权生效时间
 
@@ -104,7 +104,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @auth_effective_time.setter
     def auth_effective_time(self, auth_effective_time):
-        """Sets the auth_effective_time of this AgreeTenantAuthorizationV2Req.
+        r"""Sets the auth_effective_time of this AgreeTenantAuthorizationV2Req.
 
         授权生效时间
 
@@ -115,7 +115,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @property
     def auth_expire_time(self):
-        """Gets the auth_expire_time of this AgreeTenantAuthorizationV2Req.
+        r"""Gets the auth_expire_time of this AgreeTenantAuthorizationV2Req.
 
         授权到期时间
 
@@ -126,7 +126,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @auth_expire_time.setter
     def auth_expire_time(self, auth_expire_time):
-        """Sets the auth_expire_time of this AgreeTenantAuthorizationV2Req.
+        r"""Sets the auth_expire_time of this AgreeTenantAuthorizationV2Req.
 
         授权到期时间
 
@@ -137,7 +137,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this AgreeTenantAuthorizationV2Req.
+        r"""Gets the group_id of this AgreeTenantAuthorizationV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -148,7 +148,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this AgreeTenantAuthorizationV2Req.
+        r"""Sets the group_id of this AgreeTenantAuthorizationV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -159,7 +159,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this AgreeTenantAuthorizationV2Req.
+        r"""Gets the agency_id of this AgreeTenantAuthorizationV2Req.
 
         委托id
 
@@ -170,7 +170,7 @@ class AgreeTenantAuthorizationV2Req:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this AgreeTenantAuthorizationV2Req.
+        r"""Sets the agency_id of this AgreeTenantAuthorizationV2Req.
 
         委托id
 

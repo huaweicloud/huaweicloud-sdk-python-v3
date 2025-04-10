@@ -31,7 +31,7 @@ class CommonDestinationDescriptor:
     }
 
     def __init__(self, task_name=None, agency_name=None, deliver_time_interval=None, consumer_strategy=None):
-        """CommonDestinationDescriptor
+        r"""CommonDestinationDescriptor
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CommonDestinationDescriptor:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CommonDestinationDescriptor.
+        r"""Gets the task_name of this CommonDestinationDescriptor.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -72,7 +72,7 @@ class CommonDestinationDescriptor:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CommonDestinationDescriptor.
+        r"""Sets the task_name of this CommonDestinationDescriptor.
 
         转储任务的名称。  任务名称由英文字母、数字、中划线和下划线组成。长度为1～64个字符。
 
@@ -83,7 +83,7 @@ class CommonDestinationDescriptor:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CommonDestinationDescriptor.
+        r"""Gets the agency_name of this CommonDestinationDescriptor.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -94,7 +94,7 @@ class CommonDestinationDescriptor:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CommonDestinationDescriptor.
+        r"""Sets the agency_name of this CommonDestinationDescriptor.
 
         在统一身份认证服务(IAM)中创建委托的名称，DIS需要获取IAM委托信息去访问您指定的资源。创建委托的参数设置如下： - 委托类型：云服务 - 云服务：DIS - 持续时间：永久 - “所属区域”为“全局服务”，“项目”为“对象存储服务”对应的“策略”包含“Tenant Administrator”。 如果已经创建过委托，可以使用IAM服务提供的查询委托列表接口，获取有效可用的委托名称。 取值范围：长度不超过64位，且不可配置为空。  如果有在Console控制台使用转储任务，会提示自动创建委托，自动创建的委托名称为：dis_admin_agency
 
@@ -105,7 +105,7 @@ class CommonDestinationDescriptor:
 
     @property
     def deliver_time_interval(self):
-        """Gets the deliver_time_interval of this CommonDestinationDescriptor.
+        r"""Gets the deliver_time_interval of this CommonDestinationDescriptor.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -116,7 +116,7 @@ class CommonDestinationDescriptor:
 
     @deliver_time_interval.setter
     def deliver_time_interval(self, deliver_time_interval):
-        """Sets the deliver_time_interval of this CommonDestinationDescriptor.
+        r"""Sets the deliver_time_interval of this CommonDestinationDescriptor.
 
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。  单位：秒
 
@@ -127,7 +127,7 @@ class CommonDestinationDescriptor:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this CommonDestinationDescriptor.
+        r"""Gets the consumer_strategy of this CommonDestinationDescriptor.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 
@@ -138,7 +138,7 @@ class CommonDestinationDescriptor:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this CommonDestinationDescriptor.
+        r"""Sets the consumer_strategy of this CommonDestinationDescriptor.
 
         偏移量。  - LATEST：最大偏移量，即获取最新的数据。 - TRIM_HORIZON：最小偏移量，即读取最早的数据。
 

@@ -29,7 +29,7 @@ class CreateDcPointRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, body=None):
-        """CreateDcPointRequest
+        r"""CreateDcPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDcPointRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateDcPointRequest.
+        r"""Gets the edge_node_id of this CreateDcPointRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class CreateDcPointRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateDcPointRequest.
+        r"""Sets the edge_node_id of this CreateDcPointRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class CreateDcPointRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this CreateDcPointRequest.
+        r"""Gets the ds_id of this CreateDcPointRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -88,7 +88,7 @@ class CreateDcPointRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this CreateDcPointRequest.
+        r"""Sets the ds_id of this CreateDcPointRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -99,7 +99,7 @@ class CreateDcPointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDcPointRequest.
+        r"""Gets the body of this CreateDcPointRequest.
 
         :return: The body of this CreateDcPointRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDcPointReqDTO`
@@ -108,7 +108,7 @@ class CreateDcPointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDcPointRequest.
+        r"""Sets the body of this CreateDcPointRequest.
 
         :param body: The body of this CreateDcPointRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateDcPointReqDTO`

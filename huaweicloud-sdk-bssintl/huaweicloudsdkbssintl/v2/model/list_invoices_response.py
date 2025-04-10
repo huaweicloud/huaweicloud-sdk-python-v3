@@ -28,7 +28,7 @@ class ListInvoicesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, invoices=None):
-        """ListInvoicesResponse
+        r"""ListInvoicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInvoicesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInvoicesResponse.
+        r"""Gets the count of this ListInvoicesResponse.
 
         记录数，只有成功的时候才返回这个字段
 
@@ -62,7 +62,7 @@ class ListInvoicesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInvoicesResponse.
+        r"""Sets the count of this ListInvoicesResponse.
 
         记录数，只有成功的时候才返回这个字段
 
@@ -73,7 +73,7 @@ class ListInvoicesResponse(SdkResponse):
 
     @property
     def invoices(self):
-        """Gets the invoices of this ListInvoicesResponse.
+        r"""Gets the invoices of this ListInvoicesResponse.
 
         发票信息列表，参见表2。
 
@@ -84,7 +84,7 @@ class ListInvoicesResponse(SdkResponse):
 
     @invoices.setter
     def invoices(self, invoices):
-        """Sets the invoices of this ListInvoicesResponse.
+        r"""Sets the invoices of this ListInvoicesResponse.
 
         发票信息列表，参见表2。
 

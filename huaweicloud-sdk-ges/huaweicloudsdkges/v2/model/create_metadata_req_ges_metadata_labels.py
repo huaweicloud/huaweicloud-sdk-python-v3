@@ -27,7 +27,7 @@ class CreateMetadataReqGesMetadataLabels:
     }
 
     def __init__(self, name=None, properties=None):
-        """CreateMetadataReqGesMetadataLabels
+        r"""CreateMetadataReqGesMetadataLabels
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateMetadataReqGesMetadataLabels:
 
     @property
     def name(self):
-        """Gets the name of this CreateMetadataReqGesMetadataLabels.
+        r"""Gets the name of this CreateMetadataReqGesMetadataLabels.
 
         label名称
 
@@ -61,7 +61,7 @@ class CreateMetadataReqGesMetadataLabels:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMetadataReqGesMetadataLabels.
+        r"""Sets the name of this CreateMetadataReqGesMetadataLabels.
 
         label名称
 
@@ -72,7 +72,7 @@ class CreateMetadataReqGesMetadataLabels:
 
     @property
     def properties(self):
-        """Gets the properties of this CreateMetadataReqGesMetadataLabels.
+        r"""Gets the properties of this CreateMetadataReqGesMetadataLabels.
 
         label属性map
 
@@ -83,7 +83,7 @@ class CreateMetadataReqGesMetadataLabels:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this CreateMetadataReqGesMetadataLabels.
+        r"""Sets the properties of this CreateMetadataReqGesMetadataLabels.
 
         label属性map
 

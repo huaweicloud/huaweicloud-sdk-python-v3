@@ -27,7 +27,7 @@ class AimPersonalTemplatePage:
     }
 
     def __init__(self, page_order=None, contents=None):
-        """AimPersonalTemplatePage
+        r"""AimPersonalTemplatePage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AimPersonalTemplatePage:
 
     @property
     def page_order(self):
-        """Gets the page_order of this AimPersonalTemplatePage.
+        r"""Gets the page_order of this AimPersonalTemplatePage.
 
         分页显示，指示当前展示第几页，从1开始，最大支持10页。
 
@@ -59,7 +59,7 @@ class AimPersonalTemplatePage:
 
     @page_order.setter
     def page_order(self, page_order):
-        """Sets the page_order of this AimPersonalTemplatePage.
+        r"""Sets the page_order of this AimPersonalTemplatePage.
 
         分页显示，指示当前展示第几页，从1开始，最大支持10页。
 
@@ -70,7 +70,7 @@ class AimPersonalTemplatePage:
 
     @property
     def contents(self):
-        """Gets the contents of this AimPersonalTemplatePage.
+        r"""Gets the contents of this AimPersonalTemplatePage.
 
         该page下的协议内容。
 
@@ -81,7 +81,7 @@ class AimPersonalTemplatePage:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this AimPersonalTemplatePage.
+        r"""Sets the contents of this AimPersonalTemplatePage.
 
         该page下的协议内容。
 

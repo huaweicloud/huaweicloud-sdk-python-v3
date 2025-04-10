@@ -25,7 +25,7 @@ class ShowAnalyzerRequest:
     }
 
     def __init__(self, analyzer_id=None):
-        """ShowAnalyzerRequest
+        r"""ShowAnalyzerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAnalyzerRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ShowAnalyzerRequest.
+        r"""Gets the analyzer_id of this ShowAnalyzerRequest.
 
         分析器的唯一标识符。
 
@@ -53,7 +53,7 @@ class ShowAnalyzerRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ShowAnalyzerRequest.
+        r"""Sets the analyzer_id of this ShowAnalyzerRequest.
 
         分析器的唯一标识符。
 

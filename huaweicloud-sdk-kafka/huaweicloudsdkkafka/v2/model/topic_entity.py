@@ -47,7 +47,7 @@ class TopicEntity:
     }
 
     def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None, external_configs=None, topic_type=None, topic_other_configs=None, topic_desc=None, created_at=None):
-        """TopicEntity
+        r"""TopicEntity
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TopicEntity:
 
     @property
     def policies_only(self):
-        """Gets the policies_only of this TopicEntity.
+        r"""Gets the policies_only of this TopicEntity.
 
         是否为默认策略。
 
@@ -131,7 +131,7 @@ class TopicEntity:
 
     @policies_only.setter
     def policies_only(self, policies_only):
-        """Sets the policies_only of this TopicEntity.
+        r"""Sets the policies_only of this TopicEntity.
 
         是否为默认策略。
 
@@ -142,7 +142,7 @@ class TopicEntity:
 
     @property
     def name(self):
-        """Gets the name of this TopicEntity.
+        r"""Gets the name of this TopicEntity.
 
         topic名称。
 
@@ -153,7 +153,7 @@ class TopicEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TopicEntity.
+        r"""Sets the name of this TopicEntity.
 
         topic名称。
 
@@ -164,7 +164,7 @@ class TopicEntity:
 
     @property
     def replication(self):
-        """Gets the replication of this TopicEntity.
+        r"""Gets the replication of this TopicEntity.
 
         副本数，配置数据的可靠性。
 
@@ -175,7 +175,7 @@ class TopicEntity:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this TopicEntity.
+        r"""Sets the replication of this TopicEntity.
 
         副本数，配置数据的可靠性。
 
@@ -186,7 +186,7 @@ class TopicEntity:
 
     @property
     def partition(self):
-        """Gets the partition of this TopicEntity.
+        r"""Gets the partition of this TopicEntity.
 
         topic分区数，设置消费的并发数。
 
@@ -197,7 +197,7 @@ class TopicEntity:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this TopicEntity.
+        r"""Sets the partition of this TopicEntity.
 
         topic分区数，设置消费的并发数。
 
@@ -208,7 +208,7 @@ class TopicEntity:
 
     @property
     def retention_time(self):
-        """Gets the retention_time of this TopicEntity.
+        r"""Gets the retention_time of this TopicEntity.
 
         消息老化时间。
 
@@ -219,7 +219,7 @@ class TopicEntity:
 
     @retention_time.setter
     def retention_time(self, retention_time):
-        """Sets the retention_time of this TopicEntity.
+        r"""Sets the retention_time of this TopicEntity.
 
         消息老化时间。
 
@@ -230,7 +230,7 @@ class TopicEntity:
 
     @property
     def sync_replication(self):
-        """Gets the sync_replication of this TopicEntity.
+        r"""Gets the sync_replication of this TopicEntity.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
 
@@ -241,7 +241,7 @@ class TopicEntity:
 
     @sync_replication.setter
     def sync_replication(self, sync_replication):
-        """Sets the sync_replication of this TopicEntity.
+        r"""Sets the sync_replication of this TopicEntity.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
 
@@ -252,7 +252,7 @@ class TopicEntity:
 
     @property
     def sync_message_flush(self):
-        """Gets the sync_message_flush of this TopicEntity.
+        r"""Gets the sync_message_flush of this TopicEntity.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -263,7 +263,7 @@ class TopicEntity:
 
     @sync_message_flush.setter
     def sync_message_flush(self, sync_message_flush):
-        """Sets the sync_message_flush of this TopicEntity.
+        r"""Sets the sync_message_flush of this TopicEntity.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -274,7 +274,7 @@ class TopicEntity:
 
     @property
     def external_configs(self):
-        """Gets the external_configs of this TopicEntity.
+        r"""Gets the external_configs of this TopicEntity.
 
         扩展配置。
 
@@ -285,7 +285,7 @@ class TopicEntity:
 
     @external_configs.setter
     def external_configs(self, external_configs):
-        """Sets the external_configs of this TopicEntity.
+        r"""Sets the external_configs of this TopicEntity.
 
         扩展配置。
 
@@ -296,7 +296,7 @@ class TopicEntity:
 
     @property
     def topic_type(self):
-        """Gets the topic_type of this TopicEntity.
+        r"""Gets the topic_type of this TopicEntity.
 
         topic类型(0:普通Topic 1:系统(内部)Topic)。
 
@@ -307,7 +307,7 @@ class TopicEntity:
 
     @topic_type.setter
     def topic_type(self, topic_type):
-        """Sets the topic_type of this TopicEntity.
+        r"""Sets the topic_type of this TopicEntity.
 
         topic类型(0:普通Topic 1:系统(内部)Topic)。
 
@@ -318,7 +318,7 @@ class TopicEntity:
 
     @property
     def topic_other_configs(self):
-        """Gets the topic_other_configs of this TopicEntity.
+        r"""Gets the topic_other_configs of this TopicEntity.
 
         topic其他配置
 
@@ -329,7 +329,7 @@ class TopicEntity:
 
     @topic_other_configs.setter
     def topic_other_configs(self, topic_other_configs):
-        """Sets the topic_other_configs of this TopicEntity.
+        r"""Sets the topic_other_configs of this TopicEntity.
 
         topic其他配置
 
@@ -340,7 +340,7 @@ class TopicEntity:
 
     @property
     def topic_desc(self):
-        """Gets the topic_desc of this TopicEntity.
+        r"""Gets the topic_desc of this TopicEntity.
 
         topic描述
 
@@ -351,7 +351,7 @@ class TopicEntity:
 
     @topic_desc.setter
     def topic_desc(self, topic_desc):
-        """Sets the topic_desc of this TopicEntity.
+        r"""Sets the topic_desc of this TopicEntity.
 
         topic描述
 
@@ -362,7 +362,7 @@ class TopicEntity:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TopicEntity.
+        r"""Gets the created_at of this TopicEntity.
 
         topic创建时间
 
@@ -373,7 +373,7 @@ class TopicEntity:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TopicEntity.
+        r"""Sets the created_at of this TopicEntity.
 
         topic创建时间
 

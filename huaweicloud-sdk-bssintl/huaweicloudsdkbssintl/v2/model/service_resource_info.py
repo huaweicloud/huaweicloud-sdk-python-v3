@@ -25,7 +25,7 @@ class ServiceResourceInfo:
     }
 
     def __init__(self, basic_info=None):
-        """ServiceResourceInfo
+        r"""ServiceResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ServiceResourceInfo:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ServiceResourceInfo.
+        r"""Gets the basic_info of this ServiceResourceInfo.
 
         :return: The basic_info of this ServiceResourceInfo.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`
@@ -52,7 +52,7 @@ class ServiceResourceInfo:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ServiceResourceInfo.
+        r"""Sets the basic_info of this ServiceResourceInfo.
 
         :param basic_info: The basic_info of this ServiceResourceInfo.
         :type basic_info: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`

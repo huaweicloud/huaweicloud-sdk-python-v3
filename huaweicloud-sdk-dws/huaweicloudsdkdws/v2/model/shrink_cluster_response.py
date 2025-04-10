@@ -26,7 +26,7 @@ class ShrinkClusterResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ShrinkClusterResponse
+        r"""ShrinkClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShrinkClusterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShrinkClusterResponse.
+        r"""Gets the job_id of this ShrinkClusterResponse.
 
         缩容job_id。
 
@@ -55,7 +55,7 @@ class ShrinkClusterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShrinkClusterResponse.
+        r"""Sets the job_id of this ShrinkClusterResponse.
 
         缩容job_id。
 

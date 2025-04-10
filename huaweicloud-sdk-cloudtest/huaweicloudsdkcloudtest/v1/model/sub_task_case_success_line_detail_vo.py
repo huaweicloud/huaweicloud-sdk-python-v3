@@ -31,7 +31,7 @@ class SubTaskCaseSuccessLineDetailVo:
     }
 
     def __init__(self, date=None, pass_rate=None, task_id=None, task_name=None):
-        """SubTaskCaseSuccessLineDetailVo
+        r"""SubTaskCaseSuccessLineDetailVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @property
     def date(self):
-        """Gets the date of this SubTaskCaseSuccessLineDetailVo.
+        r"""Gets the date of this SubTaskCaseSuccessLineDetailVo.
 
         统计时间
 
@@ -75,7 +75,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SubTaskCaseSuccessLineDetailVo.
+        r"""Sets the date of this SubTaskCaseSuccessLineDetailVo.
 
         统计时间
 
@@ -86,7 +86,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @property
     def pass_rate(self):
-        """Gets the pass_rate of this SubTaskCaseSuccessLineDetailVo.
+        r"""Gets the pass_rate of this SubTaskCaseSuccessLineDetailVo.
 
         成功率
 
@@ -97,7 +97,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @pass_rate.setter
     def pass_rate(self, pass_rate):
-        """Sets the pass_rate of this SubTaskCaseSuccessLineDetailVo.
+        r"""Sets the pass_rate of this SubTaskCaseSuccessLineDetailVo.
 
         成功率
 
@@ -108,7 +108,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this SubTaskCaseSuccessLineDetailVo.
+        r"""Gets the task_id of this SubTaskCaseSuccessLineDetailVo.
 
         任务id
 
@@ -119,7 +119,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this SubTaskCaseSuccessLineDetailVo.
+        r"""Sets the task_id of this SubTaskCaseSuccessLineDetailVo.
 
         任务id
 
@@ -130,7 +130,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this SubTaskCaseSuccessLineDetailVo.
+        r"""Gets the task_name of this SubTaskCaseSuccessLineDetailVo.
 
         任务名称
 
@@ -141,7 +141,7 @@ class SubTaskCaseSuccessLineDetailVo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this SubTaskCaseSuccessLineDetailVo.
+        r"""Sets the task_name of this SubTaskCaseSuccessLineDetailVo.
 
         任务名称
 

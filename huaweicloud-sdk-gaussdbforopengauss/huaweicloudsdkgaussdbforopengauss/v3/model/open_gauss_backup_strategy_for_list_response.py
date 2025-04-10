@@ -27,7 +27,7 @@ class OpenGaussBackupStrategyForListResponse:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """OpenGaussBackupStrategyForListResponse
+        r"""OpenGaussBackupStrategyForListResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenGaussBackupStrategyForListResponse:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenGaussBackupStrategyForListResponse.
+        r"""Gets the start_time of this OpenGaussBackupStrategyForListResponse.
 
         备份时间段。自动备份将在该时间段内触发。  当前时间指UTC时间。
 
@@ -59,7 +59,7 @@ class OpenGaussBackupStrategyForListResponse:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenGaussBackupStrategyForListResponse.
+        r"""Sets the start_time of this OpenGaussBackupStrategyForListResponse.
 
         备份时间段。自动备份将在该时间段内触发。  当前时间指UTC时间。
 
@@ -70,7 +70,7 @@ class OpenGaussBackupStrategyForListResponse:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this OpenGaussBackupStrategyForListResponse.
+        r"""Gets the keep_days of this OpenGaussBackupStrategyForListResponse.
 
         已生成的备份文件可以保存的天数。  取值范围：1～732。
 
@@ -81,7 +81,7 @@ class OpenGaussBackupStrategyForListResponse:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this OpenGaussBackupStrategyForListResponse.
+        r"""Sets the keep_days of this OpenGaussBackupStrategyForListResponse.
 
         已生成的备份文件可以保存的天数。  取值范围：1～732。
 

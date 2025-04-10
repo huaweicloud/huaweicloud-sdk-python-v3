@@ -27,7 +27,7 @@ class ShowAssetNewRequest:
     }
 
     def __init__(self, asset_id=None, type=None):
-        """ShowAssetNewRequest
+        r"""ShowAssetNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAssetNewRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetNewRequest.
+        r"""Gets the asset_id of this ShowAssetNewRequest.
 
         资产ID
 
@@ -59,7 +59,7 @@ class ShowAssetNewRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetNewRequest.
+        r"""Sets the asset_id of this ShowAssetNewRequest.
 
         资产ID
 
@@ -70,7 +70,7 @@ class ShowAssetNewRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowAssetNewRequest.
+        r"""Gets the type of this ShowAssetNewRequest.
 
         SKETCH：草稿态；RELEASE：发布态
 
@@ -81,7 +81,7 @@ class ShowAssetNewRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAssetNewRequest.
+        r"""Sets the type of this ShowAssetNewRequest.
 
         SKETCH：草稿态；RELEASE：发布态
 

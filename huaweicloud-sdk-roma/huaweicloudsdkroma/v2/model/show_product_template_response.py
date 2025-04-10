@@ -40,7 +40,7 @@ class ShowProductTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
-        """ShowProductTemplateResponse
+        r"""ShowProductTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowProductTemplateResponse.
+        r"""Gets the id of this ShowProductTemplateResponse.
 
         产品模板ID
 
@@ -104,7 +104,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProductTemplateResponse.
+        r"""Sets the id of this ShowProductTemplateResponse.
 
         产品模板ID
 
@@ -115,7 +115,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowProductTemplateResponse.
+        r"""Gets the name of this ShowProductTemplateResponse.
 
         产品模板名称
 
@@ -126,7 +126,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProductTemplateResponse.
+        r"""Sets the name of this ShowProductTemplateResponse.
 
         产品模板名称
 
@@ -137,7 +137,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowProductTemplateResponse.
+        r"""Gets the description of this ShowProductTemplateResponse.
 
         产品模板描述
 
@@ -148,7 +148,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProductTemplateResponse.
+        r"""Sets the description of this ShowProductTemplateResponse.
 
         产品模板描述
 
@@ -159,7 +159,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowProductTemplateResponse.
+        r"""Gets the status of this ShowProductTemplateResponse.
 
         产品模板状态 0-启用 1-停用
 
@@ -170,7 +170,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowProductTemplateResponse.
+        r"""Sets the status of this ShowProductTemplateResponse.
 
         产品模板状态 0-启用 1-停用
 
@@ -181,7 +181,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def created_user(self):
-        """Gets the created_user of this ShowProductTemplateResponse.
+        r"""Gets the created_user of this ShowProductTemplateResponse.
 
         :return: The created_user of this ShowProductTemplateResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -190,7 +190,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this ShowProductTemplateResponse.
+        r"""Sets the created_user of this ShowProductTemplateResponse.
 
         :param created_user: The created_user of this ShowProductTemplateResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -199,7 +199,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this ShowProductTemplateResponse.
+        r"""Gets the last_updated_user of this ShowProductTemplateResponse.
 
         :return: The last_updated_user of this ShowProductTemplateResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -208,7 +208,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this ShowProductTemplateResponse.
+        r"""Sets the last_updated_user of this ShowProductTemplateResponse.
 
         :param last_updated_user: The last_updated_user of this ShowProductTemplateResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -217,7 +217,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this ShowProductTemplateResponse.
+        r"""Gets the created_datetime of this ShowProductTemplateResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -228,7 +228,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this ShowProductTemplateResponse.
+        r"""Sets the created_datetime of this ShowProductTemplateResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -239,7 +239,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this ShowProductTemplateResponse.
+        r"""Gets the last_updated_datetime of this ShowProductTemplateResponse.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -250,7 +250,7 @@ class ShowProductTemplateResponse(SdkResponse):
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this ShowProductTemplateResponse.
+        r"""Sets the last_updated_datetime of this ShowProductTemplateResponse.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 

@@ -25,7 +25,7 @@ class UnlockPortRequestBody:
     }
 
     def __init__(self, id=None):
-        """UnlockPortRequestBody
+        r"""UnlockPortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnlockPortRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UnlockPortRequestBody.
+        r"""Gets the id of this UnlockPortRequestBody.
 
         主键ID，取查询通道号绑定信息列表返回的ID字段。
 
@@ -53,7 +53,7 @@ class UnlockPortRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnlockPortRequestBody.
+        r"""Sets the id of this UnlockPortRequestBody.
 
         主键ID，取查询通道号绑定信息列表返回的ID字段。
 

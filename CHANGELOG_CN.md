@@ -1,3 +1,360 @@
+# 3.1.143 2025-04-10
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowUserPrivileges`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudPond
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateEdgeSite**
+    - 请求参数变更
+      - `+ edge_site.project_id`
+  - **ListRacks**
+    - 响应参数变更
+      - `+ racks.market_options.strategies`
+  - **ShowRack**
+    - 响应参数变更
+      - `+ rack.market_options.strategies`
+  - **ListStoragePools**
+    - 响应参数变更
+      - `+ storage_pools.market_options.strategies`
+  - **ShowStoragePool**
+    - 响应参数变更
+      - `+ storage_pool.market_options.strategies`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecurityMemberTablePermission`
+    - `ListSecurityMemberPermission`
+    - `UpdateSecurityMemberPermissionExpireTime`
+    - `ListSecurityUserTablePermission`
+    - `BatchApproveSecurityApplications`
+    - `BatchRejectSecurityApplications`
+    - `ListSecurityTableApprovers`
+    - `ApplySecurityTableAuthority`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResetParamGroupTemplate**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **OfflineNodes**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowRedisBigKeys**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListConfigurations**
+    - 请求参数变更
+      - `+ datastore_name`
+      - `+ mode`
+  - **CreateConfiguration**
+    - 响应参数变更
+      - `+ configuration.mode`
+  - **ListConfigurationTemplates**
+    - 请求参数变更
+      - `+ datastore_name`
+      - `+ mode`
+  - **ShowConfigurationDetail**
+    - 响应参数变更
+      - `+ mode`
+  - **ListNosqlTaskList**
+    - 响应参数变更
+      - `* total_count: int32 -> string`
+      - `- schedules.job_id`
+      - `- schedules.job_name`
+      - `- schedules.job_status`
+      - `- schedules.instance_id`
+      - `- schedules.instance_name`
+      - `- schedules.instance_status`
+      - `- schedules.datastore_type`
+      - `- schedules.create_time`
+      - `- schedules.start_time`
+      - `- schedules.end_time`
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ ipv6_enabled`
+      - `+ lb_access_control_settings`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListDisasterRecoveryRecord`
+    - `ResetDrConfig`
+    - `ShowCrossCloudDisasterInstanceMonitor`
+    - `CreateCrossCloudConstructDisaster`
+    - `ShowCrossCloudDisasterRelations`
+    - `ExecuteCrossCloudDisasterRecoveryFailover`
+    - `ExecuteCrossCloudReleaseDisaster`
+    - `ExecuteCrossCloudDisasterSwitchover`
+    - `ExecuteCrossCloudDisasterRestore`
+    - `ExecuteCrossCloudDisasterStartSimulation`
+    - `ExecuteCrossCloudDisasterEndSimulation`
+    - `ExecuteCrossCloudDisasterDataCacheStart`
+    - `ExecuteCrossCloudDisasterDataCacheEnd`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListOperationLogsByVaultName`
+    - `ListBackupVaults`
+    - `ListRansomwareProtectionNodes`
+    - `ShowSingleBackupPolicyInfo`
+    - `ListPolicies`
+    - `ShowRaspServerDetail`
+    - `ShowRaspProtectStatistics`
+    - `ListRaspEvents`
+    - `ShowAppRaspSwitchStatus`
+    - `ListProtectionServers`
+    - `ListRaspPolicies`
+    - `ListCheckFeatureRule`
+    - `ShowRaspPolicyDetail`
+    - `SetTwoFactorLoginConfig`
+    - `ListTwoFactorLoginHost`
+    - `ListLoginCommonLocation`
+    - `ListLoginCommonIp`
+    - `ListLoginWhiteIp`
+    - `ListLoginWhiteList`
+    - `AddLoginWhiteList`
+    - `RemoveLoginWhiteList`
+    - `ListSystemUserWhiteList`
+    - `UpdateSystemUserWhiteList`
+    - `AddSystemUserWhiteList`
+    - `RemoveSystemUserWhiteList`
+    - `ListAntiVirusResult`
+    - `ExportAntiVirusResult`
+    - `HandleAntiVirusResult`
+    - `ListAntiVirusHost`
+    - `ListAntiVirusTask`
+    - `CreateAntiVirusTask`
+    - `ListAntiVirusPolicy`
+    - `ChangeAntivirusPolicy`
+    - `CreateAntiVirusPolicy`
+    - `ShowAntivirusStatistic`
+    - `ListAntivirusHandleHistory`
+    - `DeleteAntivirusPolicy`
+    - `ShowDecoyPortPolicyDetails`
+    - `ModifyDecoyPortPolicy`
+    - `DeleteDecoyPortPolicy`
+    - `CreateDecoyPortPolicy`
+    - `ListDecoyPortPolicy`
+    - `SwitchDecoyPortHostPolicy`
+    - `DeleteDecoyPortHostPolicy`
+    - `ListVulHandleHistory`
+    - `ListEventHandleHistory`
+    - `AddProtectionPolicy`
+    - `DeleteProtectionPolicy`
+    - `RemoveAlarmWhiteList`
+    - `DeleteIsolatedFile`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportVuls**
+    - 请求参数变更
+      - `+ vul_id_list`
+      - `+ host_id_list`
+  - **ListPortStatistics**
+    - 请求参数变更
+      - `+ status`
+  - **ListPorts**
+    - 请求参数变更
+      - `+ status`
+  - **ListProtectionServer**
+    - 响应参数变更
+      - `+ data_list.project_id`
+      - `+ data_list.enterprise_project_id`
+  - **ListPasswordComplexity**
+    - 请求参数变更
+      - `+ result_type`
+  - **ListContainerNodes**
+    - 响应参数变更
+      - `+ data_list.protect_degradation`
+      - `+ data_list.degradation_reason`
+  - **ListHostStatus**
+    - 请求参数变更
+      - `+ vpc_id`
+      - `+ has_vul`
+      - `+ has_baseline`
+      - `+ sort_key`
+      - `+ sort_dir`
+      - `+ get_common_login_locations`
+      - `+ install_mode`
+      - `+ binding_key`
+      - `+ protect_interrupt`
+      - `+ incluster`
+      - `+ protect_degradation`
+    - 响应参数变更
+      - `+ data_list.os_name`
+      - `+ data_list.os_version`
+      - `+ data_list.kernel_version`
+      - `+ data_list.protect_degradation`
+      - `+ data_list.host_sources`
+      - `+ data_list.interrupt_reason`
+      - `+ data_list.degradation_reason`
+      - `+ data_list.key_name`
+      - `+ data_list.auto_open_version`
+      - `+ data_list.install_progress`
+      - `+ data_list.vpc_id`
+      - `+ data_list.common_login_area_codes`
+      - `+ data_list.cluster_name`
+      - `+ data_list.cluster_id`
+  - **ListImageLocal**
+    - 响应参数变更
+      - `+ data_list.non_scan_reason`
+  - **ListImageRiskConfigs**
+    - 请求参数变更
+      - `+ image_id`
+  - **ListImageRiskConfigRules**
+    - 请求参数变更
+      - `+ image_id`
+  - **ShowImageCheckRuleDetail**
+    - 请求参数变更
+      - `+ image_id`
+  - **ListVulScanTask**
+    - 响应参数变更
+      - `+ data_list.estimated_time`
+  - **ListVulScanTaskHost**
+    - 响应参数变更
+      - `+ data_list.vul_scan_details`
+  - **ListWtpProtectHost**
+    - 请求参数变更
+      - `+ wtp_status`
+    - 响应参数变更
+      - `+ data_list.asset_value`
+      - `+ data_list.os_name`
+      - `+ data_list.os_version`
+      - `+ data_list.host_status`
+      - `+ data_list.protect_dir_num`
+      - `+ data_list.remote_backbup_info`
+  - **UpdateProtectionPolicy**
+    - 请求参数变更
+      - `+ ai_protection_status`
+  - **ListWeakPasswordUsers**
+    - 响应参数变更
+      - `+ data_list.update_time`
+      - `+ data_list.weak_pwd_accounts.desensitized_weak_passwords`
+      - `+ data_list.weak_pwd_accounts.suggestion`
+  - **ChangeCheckRuleAction**
+    - 请求参数变更
+      - `+ check_cce`
+  - **ListAlarmWhiteList**
+    - 响应参数变更
+      - `+ remain_num`
+      - `+ limit_num`
+  - **ListPolicyGroup**
+    - 请求参数变更
+      - `+ group_id`
+  - **ListSecurityEvents**
+    - 请求参数变更
+      - `+ auto_block`
+  - **ListIsolatedFile**
+    - 请求参数变更
+      - `+ isolation_status`
+      - `+ last_days`
+      - `+ begin_time`
+      - `+ end_time`
+    - 响应参数变更
+      - `+ data_list.agent_event_info.recent_time`
+      - `+ data_list.agent_event_info.memo`
+      - `+ data_list.agent_event_info.operate_accept_list`
+      - `+ data_list.agent_event_info.operate_detail_list`
+      - `+ data_list.agent_event_info.forensic_info`
+      - `+ data_list.agent_event_info.resource_info`
+      - `+ data_list.agent_event_info.geo_info`
+      - `+ data_list.agent_event_info.network_info`
+      - `+ data_list.agent_event_info.app_info`
+      - `+ data_list.agent_event_info.system_info`
+      - `+ data_list.agent_event_info.malware_info`
+      - `+ data_list.agent_event_info.extend_info`
+      - `+ data_list.agent_event_info.att_ck`
+      - `+ data_list.agent_event_info.event_details`
+      - `+ data_list.agent_event_info.confidence`
+      - `+ data_list.agent_event_info.process_info_list`
+      - `+ data_list.agent_event_info.user_info_list`
+      - `+ data_list.agent_event_info.file_info_list`
+      - `+ data_list.agent_event_info.registry_info_list`
+      - `+ data_list.agent_event_info.cluster_info`
+      - `+ data_list.agent_event_info.tag_list`
+      - `+ data_list.agent_event_info.cluster_id`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainConsoleAclPolicy**
+    - 响应参数变更
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+  - **UpdateDomainConsoleAclPolicy**
+    - 请求参数变更
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyOption> -> object<ConsoleAclPolicyOption>`
+    - 响应参数变更
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPremiumHost**
+    - 响应参数变更
+      - `+ items.pool_ids`
+      - `+ items.loadbalancer_id`
+      - `+ items.protocol_port`
+
 # 3.1.142 2025-04-03
 
 ### HuaweiCloud SDK Core

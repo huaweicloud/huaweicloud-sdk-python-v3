@@ -59,7 +59,7 @@ class MysqlInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, mode=None, configuration_id=None, port=None, backup_strategy=None, enterprise_project_id=None, region=None, availability_zone_mode=None, master_availability_zone=None, vpc_id=None, security_group_id=None, subnet_id=None, flavor_ref=None, charge_info=None, volume=None):
-        """MysqlInstanceResponse
+        r"""MysqlInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -160,7 +160,7 @@ class MysqlInstanceResponse:
 
     @property
     def id(self):
-        """Gets the id of this MysqlInstanceResponse.
+        r"""Gets the id of this MysqlInstanceResponse.
 
         实例ID。
 
@@ -171,7 +171,7 @@ class MysqlInstanceResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlInstanceResponse.
+        r"""Sets the id of this MysqlInstanceResponse.
 
         实例ID。
 
@@ -182,7 +182,7 @@ class MysqlInstanceResponse:
 
     @property
     def name(self):
-        """Gets the name of this MysqlInstanceResponse.
+        r"""Gets the name of this MysqlInstanceResponse.
 
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。  取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线, 不能包含其它的特殊字符。
 
@@ -193,7 +193,7 @@ class MysqlInstanceResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlInstanceResponse.
+        r"""Sets the name of this MysqlInstanceResponse.
 
         实例名称。用于表示实例的名称，同一租户下，同类型的实例名称可相同。  取值范围：4~64个字符之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线, 不能包含其它的特殊字符。
 
@@ -204,7 +204,7 @@ class MysqlInstanceResponse:
 
     @property
     def status(self):
-        """Gets the status of this MysqlInstanceResponse.
+        r"""Gets the status of this MysqlInstanceResponse.
 
         实例状态。
 
@@ -215,7 +215,7 @@ class MysqlInstanceResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlInstanceResponse.
+        r"""Sets the status of this MysqlInstanceResponse.
 
         实例状态。
 
@@ -226,7 +226,7 @@ class MysqlInstanceResponse:
 
     @property
     def datastore(self):
-        """Gets the datastore of this MysqlInstanceResponse.
+        r"""Gets the datastore of this MysqlInstanceResponse.
 
         :return: The datastore of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInRes`
@@ -235,7 +235,7 @@ class MysqlInstanceResponse:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this MysqlInstanceResponse.
+        r"""Sets the datastore of this MysqlInstanceResponse.
 
         :param datastore: The datastore of this MysqlInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInRes`
@@ -244,7 +244,7 @@ class MysqlInstanceResponse:
 
     @property
     def mode(self):
-        """Gets the mode of this MysqlInstanceResponse.
+        r"""Gets the mode of this MysqlInstanceResponse.
 
         实例类型，仅支持Cluster。
 
@@ -255,7 +255,7 @@ class MysqlInstanceResponse:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this MysqlInstanceResponse.
+        r"""Sets the mode of this MysqlInstanceResponse.
 
         实例类型，仅支持Cluster。
 
@@ -266,7 +266,7 @@ class MysqlInstanceResponse:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this MysqlInstanceResponse.
+        r"""Gets the configuration_id of this MysqlInstanceResponse.
 
         参数组ID。
 
@@ -277,7 +277,7 @@ class MysqlInstanceResponse:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this MysqlInstanceResponse.
+        r"""Sets the configuration_id of this MysqlInstanceResponse.
 
         参数组ID。
 
@@ -288,7 +288,7 @@ class MysqlInstanceResponse:
 
     @property
     def port(self):
-        """Gets the port of this MysqlInstanceResponse.
+        r"""Gets the port of this MysqlInstanceResponse.
 
         数据库端口信息。
 
@@ -299,7 +299,7 @@ class MysqlInstanceResponse:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MysqlInstanceResponse.
+        r"""Sets the port of this MysqlInstanceResponse.
 
         数据库端口信息。
 
@@ -310,7 +310,7 @@ class MysqlInstanceResponse:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this MysqlInstanceResponse.
+        r"""Gets the backup_strategy of this MysqlInstanceResponse.
 
         :return: The backup_strategy of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -319,7 +319,7 @@ class MysqlInstanceResponse:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this MysqlInstanceResponse.
+        r"""Sets the backup_strategy of this MysqlInstanceResponse.
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -328,7 +328,7 @@ class MysqlInstanceResponse:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MysqlInstanceResponse.
+        r"""Gets the enterprise_project_id of this MysqlInstanceResponse.
 
         企业项目ID。
 
@@ -339,7 +339,7 @@ class MysqlInstanceResponse:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MysqlInstanceResponse.
+        r"""Sets the enterprise_project_id of this MysqlInstanceResponse.
 
         企业项目ID。
 
@@ -350,7 +350,7 @@ class MysqlInstanceResponse:
 
     @property
     def region(self):
-        """Gets the region of this MysqlInstanceResponse.
+        r"""Gets the region of this MysqlInstanceResponse.
 
         区域ID，与请求参数相同。
 
@@ -361,7 +361,7 @@ class MysqlInstanceResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MysqlInstanceResponse.
+        r"""Sets the region of this MysqlInstanceResponse.
 
         区域ID，与请求参数相同。
 
@@ -372,7 +372,7 @@ class MysqlInstanceResponse:
 
     @property
     def availability_zone_mode(self):
-        """Gets the availability_zone_mode of this MysqlInstanceResponse.
+        r"""Gets the availability_zone_mode of this MysqlInstanceResponse.
 
         可用区模式，与请求参数相同。
 
@@ -383,7 +383,7 @@ class MysqlInstanceResponse:
 
     @availability_zone_mode.setter
     def availability_zone_mode(self, availability_zone_mode):
-        """Sets the availability_zone_mode of this MysqlInstanceResponse.
+        r"""Sets the availability_zone_mode of this MysqlInstanceResponse.
 
         可用区模式，与请求参数相同。
 
@@ -394,7 +394,7 @@ class MysqlInstanceResponse:
 
     @property
     def master_availability_zone(self):
-        """Gets the master_availability_zone of this MysqlInstanceResponse.
+        r"""Gets the master_availability_zone of this MysqlInstanceResponse.
 
         主可用区ID。
 
@@ -405,7 +405,7 @@ class MysqlInstanceResponse:
 
     @master_availability_zone.setter
     def master_availability_zone(self, master_availability_zone):
-        """Sets the master_availability_zone of this MysqlInstanceResponse.
+        r"""Sets the master_availability_zone of this MysqlInstanceResponse.
 
         主可用区ID。
 
@@ -416,7 +416,7 @@ class MysqlInstanceResponse:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this MysqlInstanceResponse.
+        r"""Gets the vpc_id of this MysqlInstanceResponse.
 
         虚拟私有云ID，与请求参数相同。
 
@@ -427,7 +427,7 @@ class MysqlInstanceResponse:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this MysqlInstanceResponse.
+        r"""Sets the vpc_id of this MysqlInstanceResponse.
 
         虚拟私有云ID，与请求参数相同。
 
@@ -438,7 +438,7 @@ class MysqlInstanceResponse:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this MysqlInstanceResponse.
+        r"""Gets the security_group_id of this MysqlInstanceResponse.
 
         安全组ID，与请求参数相同。
 
@@ -449,7 +449,7 @@ class MysqlInstanceResponse:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this MysqlInstanceResponse.
+        r"""Sets the security_group_id of this MysqlInstanceResponse.
 
         安全组ID，与请求参数相同。
 
@@ -460,7 +460,7 @@ class MysqlInstanceResponse:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this MysqlInstanceResponse.
+        r"""Gets the subnet_id of this MysqlInstanceResponse.
 
         子网ID，与请求参数相同。
 
@@ -471,7 +471,7 @@ class MysqlInstanceResponse:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this MysqlInstanceResponse.
+        r"""Sets the subnet_id of this MysqlInstanceResponse.
 
         子网ID，与请求参数相同。
 
@@ -482,7 +482,7 @@ class MysqlInstanceResponse:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this MysqlInstanceResponse.
+        r"""Gets the flavor_ref of this MysqlInstanceResponse.
 
         规格码，与请求参数相同。
 
@@ -493,7 +493,7 @@ class MysqlInstanceResponse:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this MysqlInstanceResponse.
+        r"""Sets the flavor_ref of this MysqlInstanceResponse.
 
         规格码，与请求参数相同。
 
@@ -504,7 +504,7 @@ class MysqlInstanceResponse:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this MysqlInstanceResponse.
+        r"""Gets the charge_info of this MysqlInstanceResponse.
 
         :return: The charge_info of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
@@ -513,7 +513,7 @@ class MysqlInstanceResponse:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this MysqlInstanceResponse.
+        r"""Sets the charge_info of this MysqlInstanceResponse.
 
         :param charge_info: The charge_info of this MysqlInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
@@ -522,7 +522,7 @@ class MysqlInstanceResponse:
 
     @property
     def volume(self):
-        """Gets the volume of this MysqlInstanceResponse.
+        r"""Gets the volume of this MysqlInstanceResponse.
 
         :return: The volume of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeResp`
@@ -531,7 +531,7 @@ class MysqlInstanceResponse:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this MysqlInstanceResponse.
+        r"""Sets the volume of this MysqlInstanceResponse.
 
         :param volume: The volume of this MysqlInstanceResponse.
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeResp`

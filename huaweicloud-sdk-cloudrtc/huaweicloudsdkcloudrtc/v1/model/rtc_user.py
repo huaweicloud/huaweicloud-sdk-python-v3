@@ -53,7 +53,7 @@ class RtcUser:
     }
 
     def __init__(self, domain=None, app=None, room_id=None, uid=None, session=None, state=None, nick_name=None, ip=None, region=None, isp=None, device_model=None, platform=None, sdk=None, join_time=None, leave_time=None):
-        """RtcUser
+        r"""RtcUser
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class RtcUser:
 
     @property
     def domain(self):
-        """Gets the domain of this RtcUser.
+        r"""Gets the domain of this RtcUser.
 
         域名
 
@@ -152,7 +152,7 @@ class RtcUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this RtcUser.
+        r"""Sets the domain of this RtcUser.
 
         域名
 
@@ -163,7 +163,7 @@ class RtcUser:
 
     @property
     def app(self):
-        """Gets the app of this RtcUser.
+        r"""Gets the app of this RtcUser.
 
         应用标识
 
@@ -174,7 +174,7 @@ class RtcUser:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this RtcUser.
+        r"""Sets the app of this RtcUser.
 
         应用标识
 
@@ -185,7 +185,7 @@ class RtcUser:
 
     @property
     def room_id(self):
-        """Gets the room_id of this RtcUser.
+        r"""Gets the room_id of this RtcUser.
 
         房间ID
 
@@ -196,7 +196,7 @@ class RtcUser:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this RtcUser.
+        r"""Sets the room_id of this RtcUser.
 
         房间ID
 
@@ -207,7 +207,7 @@ class RtcUser:
 
     @property
     def uid(self):
-        """Gets the uid of this RtcUser.
+        r"""Gets the uid of this RtcUser.
 
         用户id
 
@@ -218,7 +218,7 @@ class RtcUser:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this RtcUser.
+        r"""Sets the uid of this RtcUser.
 
         用户id
 
@@ -229,7 +229,7 @@ class RtcUser:
 
     @property
     def session(self):
-        """Gets the session of this RtcUser.
+        r"""Gets the session of this RtcUser.
 
         会话id
 
@@ -240,7 +240,7 @@ class RtcUser:
 
     @session.setter
     def session(self, session):
-        """Sets the session of this RtcUser.
+        r"""Sets the session of this RtcUser.
 
         会话id
 
@@ -251,7 +251,7 @@ class RtcUser:
 
     @property
     def state(self):
-        """Gets the state of this RtcUser.
+        r"""Gets the state of this RtcUser.
 
         用户状态   - FAIL： 加入失败   - ONLINE：在线   - OFFLINE：离开 
 
@@ -262,7 +262,7 @@ class RtcUser:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RtcUser.
+        r"""Sets the state of this RtcUser.
 
         用户状态   - FAIL： 加入失败   - ONLINE：在线   - OFFLINE：离开 
 
@@ -273,7 +273,7 @@ class RtcUser:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this RtcUser.
+        r"""Gets the nick_name of this RtcUser.
 
         用户昵称
 
@@ -284,7 +284,7 @@ class RtcUser:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this RtcUser.
+        r"""Sets the nick_name of this RtcUser.
 
         用户昵称
 
@@ -295,7 +295,7 @@ class RtcUser:
 
     @property
     def ip(self):
-        """Gets the ip of this RtcUser.
+        r"""Gets the ip of this RtcUser.
 
         用户接入IP
 
@@ -306,7 +306,7 @@ class RtcUser:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this RtcUser.
+        r"""Sets the ip of this RtcUser.
 
         用户接入IP
 
@@ -317,7 +317,7 @@ class RtcUser:
 
     @property
     def region(self):
-        """Gets the region of this RtcUser.
+        r"""Gets the region of this RtcUser.
 
         用户接入IP所在省份
 
@@ -328,7 +328,7 @@ class RtcUser:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RtcUser.
+        r"""Sets the region of this RtcUser.
 
         用户接入IP所在省份
 
@@ -339,7 +339,7 @@ class RtcUser:
 
     @property
     def isp(self):
-        """Gets the isp of this RtcUser.
+        r"""Gets the isp of this RtcUser.
 
         用户接入IP所在运营商
 
@@ -350,7 +350,7 @@ class RtcUser:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this RtcUser.
+        r"""Sets the isp of this RtcUser.
 
         用户接入IP所在运营商
 
@@ -361,7 +361,7 @@ class RtcUser:
 
     @property
     def device_model(self):
-        """Gets the device_model of this RtcUser.
+        r"""Gets the device_model of this RtcUser.
 
         用户设备型号
 
@@ -372,7 +372,7 @@ class RtcUser:
 
     @device_model.setter
     def device_model(self, device_model):
-        """Sets the device_model of this RtcUser.
+        r"""Sets the device_model of this RtcUser.
 
         用户设备型号
 
@@ -383,7 +383,7 @@ class RtcUser:
 
     @property
     def platform(self):
-        """Gets the platform of this RtcUser.
+        r"""Gets the platform of this RtcUser.
 
         用户设备平台
 
@@ -394,7 +394,7 @@ class RtcUser:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this RtcUser.
+        r"""Sets the platform of this RtcUser.
 
         用户设备平台
 
@@ -405,7 +405,7 @@ class RtcUser:
 
     @property
     def sdk(self):
-        """Gets the sdk of this RtcUser.
+        r"""Gets the sdk of this RtcUser.
 
         用户sdk版本
 
@@ -416,7 +416,7 @@ class RtcUser:
 
     @sdk.setter
     def sdk(self, sdk):
-        """Sets the sdk of this RtcUser.
+        r"""Sets the sdk of this RtcUser.
 
         用户sdk版本
 
@@ -427,7 +427,7 @@ class RtcUser:
 
     @property
     def join_time(self):
-        """Gets the join_time of this RtcUser.
+        r"""Gets the join_time of this RtcUser.
 
         用户加入房间时间。格式为：YYYY-MM-DDThh:mm:ssZ 
 
@@ -438,7 +438,7 @@ class RtcUser:
 
     @join_time.setter
     def join_time(self, join_time):
-        """Sets the join_time of this RtcUser.
+        r"""Sets the join_time of this RtcUser.
 
         用户加入房间时间。格式为：YYYY-MM-DDThh:mm:ssZ 
 
@@ -449,7 +449,7 @@ class RtcUser:
 
     @property
     def leave_time(self):
-        """Gets the leave_time of this RtcUser.
+        r"""Gets the leave_time of this RtcUser.
 
         用户离开房间时间。格式为：YYYY-MM-DDThh:mm:ssZ，若用户未离开，则返回 “-” 
 
@@ -460,7 +460,7 @@ class RtcUser:
 
     @leave_time.setter
     def leave_time(self, leave_time):
-        """Sets the leave_time of this RtcUser.
+        r"""Sets the leave_time of this RtcUser.
 
         用户离开房间时间。格式为：YYYY-MM-DDThh:mm:ssZ，若用户未离开，则返回 “-” 
 

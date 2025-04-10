@@ -27,7 +27,7 @@ class SrFlavorResizeReq:
     }
 
     def __init__(self, fe_flavor_id=None, be_flavor_id=None):
-        """SrFlavorResizeReq
+        r"""SrFlavorResizeReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SrFlavorResizeReq:
 
     @property
     def fe_flavor_id(self):
-        """Gets the fe_flavor_id of this SrFlavorResizeReq.
+        r"""Gets the fe_flavor_id of this SrFlavorResizeReq.
 
         FE节点CPU、内存规格ID。填空或者不填视为规格ID与原规格ID保持一致。
 
@@ -61,7 +61,7 @@ class SrFlavorResizeReq:
 
     @fe_flavor_id.setter
     def fe_flavor_id(self, fe_flavor_id):
-        """Sets the fe_flavor_id of this SrFlavorResizeReq.
+        r"""Sets the fe_flavor_id of this SrFlavorResizeReq.
 
         FE节点CPU、内存规格ID。填空或者不填视为规格ID与原规格ID保持一致。
 
@@ -72,7 +72,7 @@ class SrFlavorResizeReq:
 
     @property
     def be_flavor_id(self):
-        """Gets the be_flavor_id of this SrFlavorResizeReq.
+        r"""Gets the be_flavor_id of this SrFlavorResizeReq.
 
         BE节点CPU、内存规格ID。填空或者不填视为规格ID与原规格ID保持一致。
 
@@ -83,7 +83,7 @@ class SrFlavorResizeReq:
 
     @be_flavor_id.setter
     def be_flavor_id(self, be_flavor_id):
-        """Sets the be_flavor_id of this SrFlavorResizeReq.
+        r"""Sets the be_flavor_id of this SrFlavorResizeReq.
 
         BE节点CPU、内存规格ID。填空或者不填视为规格ID与原规格ID保持一致。
 

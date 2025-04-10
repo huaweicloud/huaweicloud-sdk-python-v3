@@ -29,7 +29,7 @@ class ProtectObjectVO:
     }
 
     def __init__(self, object_id=None, object_name=None, type=None):
-        """ProtectObjectVO
+        r"""ProtectObjectVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ProtectObjectVO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ProtectObjectVO.
+        r"""Gets the object_id of this ProtectObjectVO.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。
 
@@ -68,7 +68,7 @@ class ProtectObjectVO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ProtectObjectVO.
+        r"""Sets the object_id of this ProtectObjectVO.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。
 
@@ -79,7 +79,7 @@ class ProtectObjectVO:
 
     @property
     def object_name(self):
-        """Gets the object_name of this ProtectObjectVO.
+        r"""Gets the object_name of this ProtectObjectVO.
 
         防护对象名称
 
@@ -90,7 +90,7 @@ class ProtectObjectVO:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this ProtectObjectVO.
+        r"""Sets the object_name of this ProtectObjectVO.
 
         防护对象名称
 
@@ -101,7 +101,7 @@ class ProtectObjectVO:
 
     @property
     def type(self):
-        """Gets the type of this ProtectObjectVO.
+        r"""Gets the type of this ProtectObjectVO.
 
         防护对象类型：0 南北向，1 东西向护对象类型
 
@@ -112,7 +112,7 @@ class ProtectObjectVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProtectObjectVO.
+        r"""Sets the type of this ProtectObjectVO.
 
         防护对象类型：0 南北向，1 东西向护对象类型
 

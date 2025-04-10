@@ -34,7 +34,7 @@ class CloudTableClient(Client):
         return client_builder
 
     def create_cluster(self, request):
-        """创建CloudTable集群
+        r"""创建CloudTable集群
 
         创建一个CloudTable集群。
         使用接口前，您需要先获取如下资源信息。
@@ -106,7 +106,7 @@ class CloudTableClient(Client):
         return http_info
 
     def delete_cluster(self, request):
-        """删除CloudTable指定集群
+        r"""删除CloudTable指定集群
 
         集群ID为集群唯一标识，根据集群ID删除指定集群。
         如下状态的集群不允许删除：
@@ -176,7 +176,7 @@ class CloudTableClient(Client):
         return http_info
 
     def enable_component(self, request):
-        """开启opentsdb组件
+        r"""开启opentsdb组件
 
         开启opentsdb组件
         
@@ -247,7 +247,7 @@ class CloudTableClient(Client):
         return http_info
 
     def expand_cluster_component(self, request):
-        """扩容组件
+        r"""扩容组件
 
         扩容指定类型的集群节点
         
@@ -316,7 +316,7 @@ class CloudTableClient(Client):
         return http_info
 
     def list_clusters(self, request):
-        """查询CloudTable集群列表
+        r"""查询CloudTable集群列表
 
         查看用户创建的集群列表信息。
         
@@ -383,7 +383,7 @@ class CloudTableClient(Client):
         return http_info
 
     def reboot_cloud_table_cluster(self, request):
-        """重启集群的api入口
+        r"""重启集群的api入口
 
         重启集群的api入口
         
@@ -452,7 +452,7 @@ class CloudTableClient(Client):
         return http_info
 
     def show_cluster_detail(self, request):
-        """查询CloudTable集群详情
+        r"""查询CloudTable集群详情
 
         通过集群ID唯一标识一个集群，根据集群ID查询特定CloudTable集群的详情信息。
         
@@ -519,7 +519,7 @@ class CloudTableClient(Client):
         return http_info
 
     def show_cluster_setting(self, request):
-        """查询集群配置
+        r"""查询集群配置
 
         查询集群配置
         
@@ -586,7 +586,7 @@ class CloudTableClient(Client):
         return http_info
 
     def update_cluster_setting(self, request):
-        """修改集群配置
+        r"""修改集群配置
 
         修改集群配置
         
@@ -655,7 +655,7 @@ class CloudTableClient(Client):
         return http_info
 
     def create_cloud_table_cluster(self, request):
-        """创建CloudTable集群
+        r"""创建CloudTable集群
 
         创建一个CloudTable集群。
         使用接口前，您需要先获取如下资源信息。

@@ -51,7 +51,7 @@ class ExtendsParamV2:
     }
 
     def __init__(self, tips=None, required=None, length=None, language=None, param_key=None, param_name=None, param_type=None, param_desc=None, default_value=None, max_value=None, min_value=None, select_item=None, is_show=None, is_sensitive=None):
-        """ExtendsParamV2
+        r"""ExtendsParamV2
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ExtendsParamV2:
 
     @property
     def tips(self):
-        """Gets the tips of this ExtendsParamV2.
+        r"""Gets the tips of this ExtendsParamV2.
 
         提示
 
@@ -145,7 +145,7 @@ class ExtendsParamV2:
 
     @tips.setter
     def tips(self, tips):
-        """Sets the tips of this ExtendsParamV2.
+        r"""Sets the tips of this ExtendsParamV2.
 
         提示
 
@@ -156,7 +156,7 @@ class ExtendsParamV2:
 
     @property
     def required(self):
-        """Gets the required of this ExtendsParamV2.
+        r"""Gets the required of this ExtendsParamV2.
 
         是否必填
 
@@ -167,7 +167,7 @@ class ExtendsParamV2:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ExtendsParamV2.
+        r"""Sets the required of this ExtendsParamV2.
 
         是否必填
 
@@ -178,7 +178,7 @@ class ExtendsParamV2:
 
     @property
     def length(self):
-        """Gets the length of this ExtendsParamV2.
+        r"""Gets the length of this ExtendsParamV2.
 
         限制长度
 
@@ -189,7 +189,7 @@ class ExtendsParamV2:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this ExtendsParamV2.
+        r"""Sets the length of this ExtendsParamV2.
 
         限制长度
 
@@ -200,7 +200,7 @@ class ExtendsParamV2:
 
     @property
     def language(self):
-        """Gets the language of this ExtendsParamV2.
+        r"""Gets the language of this ExtendsParamV2.
 
         语言
 
@@ -211,7 +211,7 @@ class ExtendsParamV2:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ExtendsParamV2.
+        r"""Sets the language of this ExtendsParamV2.
 
         语言
 
@@ -222,7 +222,7 @@ class ExtendsParamV2:
 
     @property
     def param_key(self):
-        """Gets the param_key of this ExtendsParamV2.
+        r"""Gets the param_key of this ExtendsParamV2.
 
         参数标识
 
@@ -233,7 +233,7 @@ class ExtendsParamV2:
 
     @param_key.setter
     def param_key(self, param_key):
-        """Sets the param_key of this ExtendsParamV2.
+        r"""Sets the param_key of this ExtendsParamV2.
 
         参数标识
 
@@ -244,7 +244,7 @@ class ExtendsParamV2:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ExtendsParamV2.
+        r"""Gets the param_name of this ExtendsParamV2.
 
         参数名称
 
@@ -255,7 +255,7 @@ class ExtendsParamV2:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ExtendsParamV2.
+        r"""Sets the param_name of this ExtendsParamV2.
 
         参数名称
 
@@ -266,7 +266,7 @@ class ExtendsParamV2:
 
     @property
     def param_type(self):
-        """Gets the param_type of this ExtendsParamV2.
+        r"""Gets the param_type of this ExtendsParamV2.
 
         参数类型
 
@@ -277,7 +277,7 @@ class ExtendsParamV2:
 
     @param_type.setter
     def param_type(self, param_type):
-        """Sets the param_type of this ExtendsParamV2.
+        r"""Sets the param_type of this ExtendsParamV2.
 
         参数类型
 
@@ -288,7 +288,7 @@ class ExtendsParamV2:
 
     @property
     def param_desc(self):
-        """Gets the param_desc of this ExtendsParamV2.
+        r"""Gets the param_desc of this ExtendsParamV2.
 
         参数描述
 
@@ -299,7 +299,7 @@ class ExtendsParamV2:
 
     @param_desc.setter
     def param_desc(self, param_desc):
-        """Sets the param_desc of this ExtendsParamV2.
+        r"""Sets the param_desc of this ExtendsParamV2.
 
         参数描述
 
@@ -310,7 +310,7 @@ class ExtendsParamV2:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ExtendsParamV2.
+        r"""Gets the default_value of this ExtendsParamV2.
 
         默认值
 
@@ -321,7 +321,7 @@ class ExtendsParamV2:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ExtendsParamV2.
+        r"""Sets the default_value of this ExtendsParamV2.
 
         默认值
 
@@ -332,7 +332,7 @@ class ExtendsParamV2:
 
     @property
     def max_value(self):
-        """Gets the max_value of this ExtendsParamV2.
+        r"""Gets the max_value of this ExtendsParamV2.
 
         最大值
 
@@ -343,7 +343,7 @@ class ExtendsParamV2:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this ExtendsParamV2.
+        r"""Sets the max_value of this ExtendsParamV2.
 
         最大值
 
@@ -354,7 +354,7 @@ class ExtendsParamV2:
 
     @property
     def min_value(self):
-        """Gets the min_value of this ExtendsParamV2.
+        r"""Gets the min_value of this ExtendsParamV2.
 
         最小值
 
@@ -365,7 +365,7 @@ class ExtendsParamV2:
 
     @min_value.setter
     def min_value(self, min_value):
-        """Sets the min_value of this ExtendsParamV2.
+        r"""Sets the min_value of this ExtendsParamV2.
 
         最小值
 
@@ -376,7 +376,7 @@ class ExtendsParamV2:
 
     @property
     def select_item(self):
-        """Gets the select_item of this ExtendsParamV2.
+        r"""Gets the select_item of this ExtendsParamV2.
 
         选项值
 
@@ -387,7 +387,7 @@ class ExtendsParamV2:
 
     @select_item.setter
     def select_item(self, select_item):
-        """Sets the select_item of this ExtendsParamV2.
+        r"""Sets the select_item of this ExtendsParamV2.
 
         选项值
 
@@ -398,7 +398,7 @@ class ExtendsParamV2:
 
     @property
     def is_show(self):
-        """Gets the is_show of this ExtendsParamV2.
+        r"""Gets the is_show of this ExtendsParamV2.
 
         是否展示
 
@@ -409,7 +409,7 @@ class ExtendsParamV2:
 
     @is_show.setter
     def is_show(self, is_show):
-        """Sets the is_show of this ExtendsParamV2.
+        r"""Sets the is_show of this ExtendsParamV2.
 
         是否展示
 
@@ -420,7 +420,7 @@ class ExtendsParamV2:
 
     @property
     def is_sensitive(self):
-        """Gets the is_sensitive of this ExtendsParamV2.
+        r"""Gets the is_sensitive of this ExtendsParamV2.
 
         是否敏感
 
@@ -431,7 +431,7 @@ class ExtendsParamV2:
 
     @is_sensitive.setter
     def is_sensitive(self, is_sensitive):
-        """Sets the is_sensitive of this ExtendsParamV2.
+        r"""Sets the is_sensitive of this ExtendsParamV2.
 
         是否敏感
 

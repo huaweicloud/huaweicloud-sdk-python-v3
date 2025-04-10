@@ -27,7 +27,7 @@ class UpdateServerNameRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateServerNameRequest
+        r"""UpdateServerNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateServerNameRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateServerNameRequest.
+        r"""Gets the source_id of this UpdateServerNameRequest.
 
         源端服务器在主机迁移服务中的ID
 
@@ -60,7 +60,7 @@ class UpdateServerNameRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateServerNameRequest.
+        r"""Sets the source_id of this UpdateServerNameRequest.
 
         源端服务器在主机迁移服务中的ID
 
@@ -71,7 +71,7 @@ class UpdateServerNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerNameRequest.
+        r"""Gets the body of this UpdateServerNameRequest.
 
         :return: The body of this UpdateServerNameRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PutSourceServerBody`
@@ -80,7 +80,7 @@ class UpdateServerNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerNameRequest.
+        r"""Sets the body of this UpdateServerNameRequest.
 
         :param body: The body of this UpdateServerNameRequest.
         :type body: :class:`huaweicloudsdksms.v3.PutSourceServerBody`

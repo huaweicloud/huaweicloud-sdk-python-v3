@@ -29,7 +29,7 @@ class ListApiRuntimeDefinitionV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, env_id=None):
-        """ListApiRuntimeDefinitionV2Request
+        r"""ListApiRuntimeDefinitionV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListApiRuntimeDefinitionV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApiRuntimeDefinitionV2Request.
+        r"""Gets the instance_id of this ListApiRuntimeDefinitionV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ListApiRuntimeDefinitionV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApiRuntimeDefinitionV2Request.
+        r"""Sets the instance_id of this ListApiRuntimeDefinitionV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ListApiRuntimeDefinitionV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListApiRuntimeDefinitionV2Request.
+        r"""Gets the api_id of this ListApiRuntimeDefinitionV2Request.
 
         API的编号
 
@@ -88,7 +88,7 @@ class ListApiRuntimeDefinitionV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListApiRuntimeDefinitionV2Request.
+        r"""Sets the api_id of this ListApiRuntimeDefinitionV2Request.
 
         API的编号
 
@@ -99,7 +99,7 @@ class ListApiRuntimeDefinitionV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListApiRuntimeDefinitionV2Request.
+        r"""Gets the env_id of this ListApiRuntimeDefinitionV2Request.
 
         API的发布环境编号
 
@@ -110,7 +110,7 @@ class ListApiRuntimeDefinitionV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListApiRuntimeDefinitionV2Request.
+        r"""Sets the env_id of this ListApiRuntimeDefinitionV2Request.
 
         API的发布环境编号
 

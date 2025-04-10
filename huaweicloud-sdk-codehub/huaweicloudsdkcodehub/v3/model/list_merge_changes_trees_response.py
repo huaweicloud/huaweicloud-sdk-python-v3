@@ -30,7 +30,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListMergeChangesTreesResponse
+        r"""ListMergeChangesTreesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListMergeChangesTreesResponse.
+        r"""Gets the error of this ListMergeChangesTreesResponse.
 
         :return: The error of this ListMergeChangesTreesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListMergeChangesTreesResponse.
+        r"""Sets the error of this ListMergeChangesTreesResponse.
 
         :param error: The error of this ListMergeChangesTreesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListMergeChangesTreesResponse.
+        r"""Gets the result of this ListMergeChangesTreesResponse.
 
         :return: The result of this ListMergeChangesTreesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeChangesTreesDto`
@@ -85,7 +85,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListMergeChangesTreesResponse.
+        r"""Sets the result of this ListMergeChangesTreesResponse.
 
         :param result: The result of this ListMergeChangesTreesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.MergeChangesTreesDto`
@@ -94,7 +94,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListMergeChangesTreesResponse.
+        r"""Gets the status of this ListMergeChangesTreesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListMergeChangesTreesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMergeChangesTreesResponse.
+        r"""Sets the status of this ListMergeChangesTreesResponse.
 
         响应状态
 

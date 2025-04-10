@@ -25,7 +25,7 @@ class CloudConnectionId:
     }
 
     def __init__(self, cloud_connection_id=None):
-        """CloudConnectionId
+        r"""CloudConnectionId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CloudConnectionId:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CloudConnectionId.
+        r"""Gets the cloud_connection_id of this CloudConnectionId.
 
         云连接实例ID。
 
@@ -53,7 +53,7 @@ class CloudConnectionId:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CloudConnectionId.
+        r"""Sets the cloud_connection_id of this CloudConnectionId.
 
         云连接实例ID。
 

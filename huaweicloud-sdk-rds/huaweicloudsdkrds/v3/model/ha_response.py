@@ -25,7 +25,7 @@ class HaResponse:
     }
 
     def __init__(self, replication_mode=None):
-        """HaResponse
+        r"""HaResponse
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HaResponse:
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this HaResponse.
+        r"""Gets the replication_mode of this HaResponse.
 
         备机同步参数。实例主备模式为Ha时有效。 取值： - MySQL为“async”或“semisync”。 - PostgreSQL为“async”或“sync”。 - Microsoft SQL Server为“sync”。
 
@@ -53,7 +53,7 @@ class HaResponse:
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this HaResponse.
+        r"""Sets the replication_mode of this HaResponse.
 
         备机同步参数。实例主备模式为Ha时有效。 取值： - MySQL为“async”或“semisync”。 - PostgreSQL为“async”或“sync”。 - Microsoft SQL Server为“sync”。
 

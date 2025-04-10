@@ -35,7 +35,7 @@ class Versions:
     }
 
     def __init__(self, id=None, links=None, min_version=None, status=None, version=None, updated=None):
-        """Versions
+        r"""Versions
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Versions:
 
     @property
     def id(self):
-        """Gets the id of this Versions.
+        r"""Gets the id of this Versions.
 
         API版本ID
 
@@ -89,7 +89,7 @@ class Versions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Versions.
+        r"""Sets the id of this Versions.
 
         API版本ID
 
@@ -100,7 +100,7 @@ class Versions:
 
     @property
     def links(self):
-        """Gets the links of this Versions.
+        r"""Gets the links of this Versions.
 
         API的url地址
 
@@ -111,7 +111,7 @@ class Versions:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Versions.
+        r"""Sets the links of this Versions.
 
         API的url地址
 
@@ -122,7 +122,7 @@ class Versions:
 
     @property
     def min_version(self):
-        """Gets the min_version of this Versions.
+        r"""Gets the min_version of this Versions.
 
         API支持的最小微版本号
 
@@ -133,7 +133,7 @@ class Versions:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this Versions.
+        r"""Sets the min_version of this Versions.
 
         API支持的最小微版本号
 
@@ -144,7 +144,7 @@ class Versions:
 
     @property
     def status(self):
-        """Gets the status of this Versions.
+        r"""Gets the status of this Versions.
 
         这个是API版本的状态。可以是：CURRENT这是使用的API的首选版本；SUPPORTED：这是一个较老的，但仍然支持的API版本；DEPRECATED：一个被废弃的API版本，该版本将被删除
 
@@ -155,7 +155,7 @@ class Versions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Versions.
+        r"""Sets the status of this Versions.
 
         这个是API版本的状态。可以是：CURRENT这是使用的API的首选版本；SUPPORTED：这是一个较老的，但仍然支持的API版本；DEPRECATED：一个被废弃的API版本，该版本将被删除
 
@@ -166,7 +166,7 @@ class Versions:
 
     @property
     def version(self):
-        """Gets the version of this Versions.
+        r"""Gets the version of this Versions.
 
         API支持的最大微版本号
 
@@ -177,7 +177,7 @@ class Versions:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Versions.
+        r"""Sets the version of this Versions.
 
         API支持的最大微版本号
 
@@ -188,7 +188,7 @@ class Versions:
 
     @property
     def updated(self):
-        """Gets the updated of this Versions.
+        r"""Gets the updated of this Versions.
 
         API版本发布时间
 
@@ -199,7 +199,7 @@ class Versions:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this Versions.
+        r"""Sets the updated of this Versions.
 
         API版本发布时间
 

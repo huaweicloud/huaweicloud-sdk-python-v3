@@ -32,7 +32,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, gdgw_routetables=None, total_count=None, page_info=None):
-        """ListGdgwRouteTablesResponse
+        r"""ListGdgwRouteTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGdgwRouteTablesResponse.
+        r"""Gets the request_id of this ListGdgwRouteTablesResponse.
 
         请求id
 
@@ -76,7 +76,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGdgwRouteTablesResponse.
+        r"""Sets the request_id of this ListGdgwRouteTablesResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @property
     def gdgw_routetables(self):
-        """Gets the gdgw_routetables of this ListGdgwRouteTablesResponse.
+        r"""Gets the gdgw_routetables of this ListGdgwRouteTablesResponse.
 
         全域接入网关路由表
 
@@ -98,7 +98,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @gdgw_routetables.setter
     def gdgw_routetables(self, gdgw_routetables):
-        """Sets the gdgw_routetables of this ListGdgwRouteTablesResponse.
+        r"""Sets the gdgw_routetables of this ListGdgwRouteTablesResponse.
 
         全域接入网关路由表
 
@@ -109,7 +109,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGdgwRouteTablesResponse.
+        r"""Gets the total_count of this ListGdgwRouteTablesResponse.
 
         总记录数。
 
@@ -120,7 +120,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGdgwRouteTablesResponse.
+        r"""Sets the total_count of this ListGdgwRouteTablesResponse.
 
         总记录数。
 
@@ -131,7 +131,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGdgwRouteTablesResponse.
+        r"""Gets the page_info of this ListGdgwRouteTablesResponse.
 
         :return: The page_info of this ListGdgwRouteTablesResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -140,7 +140,7 @@ class ListGdgwRouteTablesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGdgwRouteTablesResponse.
+        r"""Sets the page_info of this ListGdgwRouteTablesResponse.
 
         :param page_info: The page_info of this ListGdgwRouteTablesResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

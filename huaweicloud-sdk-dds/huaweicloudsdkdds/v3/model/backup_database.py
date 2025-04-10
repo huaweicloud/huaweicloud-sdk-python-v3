@@ -27,7 +27,7 @@ class BackupDatabase:
     }
 
     def __init__(self, type=None, version=None):
-        """BackupDatabase
+        r"""BackupDatabase
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BackupDatabase:
 
     @property
     def type(self):
-        """Gets the type of this BackupDatabase.
+        r"""Gets the type of this BackupDatabase.
 
         数据库引擎。 取值：DDS-Community。
 
@@ -59,7 +59,7 @@ class BackupDatabase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupDatabase.
+        r"""Sets the type of this BackupDatabase.
 
         数据库引擎。 取值：DDS-Community。
 
@@ -70,7 +70,7 @@ class BackupDatabase:
 
     @property
     def version(self):
-        """Gets the version of this BackupDatabase.
+        r"""Gets the version of this BackupDatabase.
 
         数据库版本。取值：“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
 
@@ -81,7 +81,7 @@ class BackupDatabase:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BackupDatabase.
+        r"""Sets the version of this BackupDatabase.
 
         数据库版本。取值：“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
 

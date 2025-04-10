@@ -29,7 +29,7 @@ class CreateGovPolicy:
     }
 
     def __init__(self, name=None, selector=None, spec=None):
-        """CreateGovPolicy
+        r"""CreateGovPolicy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateGovPolicy:
 
     @property
     def name(self):
-        """Gets the name of this CreateGovPolicy.
+        r"""Gets the name of this CreateGovPolicy.
 
         治理策略名称
 
@@ -68,7 +68,7 @@ class CreateGovPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGovPolicy.
+        r"""Sets the name of this CreateGovPolicy.
 
         治理策略名称
 
@@ -79,7 +79,7 @@ class CreateGovPolicy:
 
     @property
     def selector(self):
-        """Gets the selector of this CreateGovPolicy.
+        r"""Gets the selector of this CreateGovPolicy.
 
         :return: The selector of this CreateGovPolicy.
         :rtype: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -88,7 +88,7 @@ class CreateGovPolicy:
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this CreateGovPolicy.
+        r"""Sets the selector of this CreateGovPolicy.
 
         :param selector: The selector of this CreateGovPolicy.
         :type selector: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -97,7 +97,7 @@ class CreateGovPolicy:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateGovPolicy.
+        r"""Gets the spec of this CreateGovPolicy.
 
         治理策略定义内容
 
@@ -108,7 +108,7 @@ class CreateGovPolicy:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateGovPolicy.
+        r"""Sets the spec of this CreateGovPolicy.
 
         治理策略定义内容
 

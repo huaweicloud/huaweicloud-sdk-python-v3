@@ -27,7 +27,7 @@ class BatchCreateOrDeleteInstanceTagsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteInstanceTagsRequest
+        r"""BatchCreateOrDeleteInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateOrDeleteInstanceTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCreateOrDeleteInstanceTagsRequest.
+        r"""Gets the instance_id of this BatchCreateOrDeleteInstanceTagsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class BatchCreateOrDeleteInstanceTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCreateOrDeleteInstanceTagsRequest.
+        r"""Sets the instance_id of this BatchCreateOrDeleteInstanceTagsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class BatchCreateOrDeleteInstanceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateOrDeleteInstanceTagsRequest.
+        r"""Gets the body of this BatchCreateOrDeleteInstanceTagsRequest.
 
         :return: The body of this BatchCreateOrDeleteInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.TmsUpdatePublicReq`
@@ -80,7 +80,7 @@ class BatchCreateOrDeleteInstanceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateOrDeleteInstanceTagsRequest.
+        r"""Sets the body of this BatchCreateOrDeleteInstanceTagsRequest.
 
         :param body: The body of this BatchCreateOrDeleteInstanceTagsRequest.
         :type body: :class:`huaweicloudsdkapig.v2.TmsUpdatePublicReq`

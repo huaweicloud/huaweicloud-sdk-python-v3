@@ -37,7 +37,7 @@ class ListQualityTemplatesRequest:
     }
 
     def __init__(self, category_id=None, name=None, system_template=None, creator=None, limit=None, offset=None, workspace=None):
-        """ListQualityTemplatesRequest
+        r"""ListQualityTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def category_id(self):
-        """Gets the category_id of this ListQualityTemplatesRequest.
+        r"""Gets the category_id of this ListQualityTemplatesRequest.
 
         category id
 
@@ -95,7 +95,7 @@ class ListQualityTemplatesRequest:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ListQualityTemplatesRequest.
+        r"""Sets the category_id of this ListQualityTemplatesRequest.
 
         category id
 
@@ -106,7 +106,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListQualityTemplatesRequest.
+        r"""Gets the name of this ListQualityTemplatesRequest.
 
         name
 
@@ -117,7 +117,7 @@ class ListQualityTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListQualityTemplatesRequest.
+        r"""Sets the name of this ListQualityTemplatesRequest.
 
         name
 
@@ -128,7 +128,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def system_template(self):
-        """Gets the system_template of this ListQualityTemplatesRequest.
+        r"""Gets the system_template of this ListQualityTemplatesRequest.
 
         是否只查询系统模板
 
@@ -139,7 +139,7 @@ class ListQualityTemplatesRequest:
 
     @system_template.setter
     def system_template(self, system_template):
-        """Sets the system_template of this ListQualityTemplatesRequest.
+        r"""Sets the system_template of this ListQualityTemplatesRequest.
 
         是否只查询系统模板
 
@@ -150,7 +150,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListQualityTemplatesRequest.
+        r"""Gets the creator of this ListQualityTemplatesRequest.
 
         创建者
 
@@ -161,7 +161,7 @@ class ListQualityTemplatesRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListQualityTemplatesRequest.
+        r"""Sets the creator of this ListQualityTemplatesRequest.
 
         创建者
 
@@ -172,7 +172,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListQualityTemplatesRequest.
+        r"""Gets the limit of this ListQualityTemplatesRequest.
 
         分页时每页的条数,最大值为100
 
@@ -183,7 +183,7 @@ class ListQualityTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListQualityTemplatesRequest.
+        r"""Sets the limit of this ListQualityTemplatesRequest.
 
         分页时每页的条数,最大值为100
 
@@ -194,7 +194,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListQualityTemplatesRequest.
+        r"""Gets the offset of this ListQualityTemplatesRequest.
 
         分页偏移量
 
@@ -205,7 +205,7 @@ class ListQualityTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListQualityTemplatesRequest.
+        r"""Sets the offset of this ListQualityTemplatesRequest.
 
         分页偏移量
 
@@ -216,7 +216,7 @@ class ListQualityTemplatesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListQualityTemplatesRequest.
+        r"""Gets the workspace of this ListQualityTemplatesRequest.
 
         DataArts Studio工作空间ID
 
@@ -227,7 +227,7 @@ class ListQualityTemplatesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListQualityTemplatesRequest.
+        r"""Sets the workspace of this ListQualityTemplatesRequest.
 
         DataArts Studio工作空间ID
 

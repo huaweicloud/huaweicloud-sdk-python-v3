@@ -43,7 +43,7 @@ class OpenTag:
     }
 
     def __init__(self, name=None, description=None, tag_id=None, create_time=None, update_time=None, create_user=None, domain_id=None, instance_id=None, project_id=None, create_user_id=None):
-        """OpenTag
+        r"""OpenTag
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class OpenTag:
 
     @property
     def name(self):
-        """Gets the name of this OpenTag.
+        r"""Gets the name of this OpenTag.
 
         :return: The name of this OpenTag.
         :rtype: str
@@ -112,7 +112,7 @@ class OpenTag:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OpenTag.
+        r"""Sets the name of this OpenTag.
 
         :param name: The name of this OpenTag.
         :type name: str
@@ -121,7 +121,7 @@ class OpenTag:
 
     @property
     def description(self):
-        """Gets the description of this OpenTag.
+        r"""Gets the description of this OpenTag.
 
         :return: The description of this OpenTag.
         :rtype: str
@@ -130,7 +130,7 @@ class OpenTag:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenTag.
+        r"""Sets the description of this OpenTag.
 
         :param description: The description of this OpenTag.
         :type description: str
@@ -139,7 +139,7 @@ class OpenTag:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this OpenTag.
+        r"""Gets the tag_id of this OpenTag.
 
         :return: The tag_id of this OpenTag.
         :rtype: str
@@ -148,7 +148,7 @@ class OpenTag:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this OpenTag.
+        r"""Sets the tag_id of this OpenTag.
 
         :param tag_id: The tag_id of this OpenTag.
         :type tag_id: str
@@ -157,7 +157,7 @@ class OpenTag:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OpenTag.
+        r"""Gets the create_time of this OpenTag.
 
         :return: The create_time of this OpenTag.
         :rtype: int
@@ -166,7 +166,7 @@ class OpenTag:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OpenTag.
+        r"""Sets the create_time of this OpenTag.
 
         :param create_time: The create_time of this OpenTag.
         :type create_time: int
@@ -175,7 +175,7 @@ class OpenTag:
 
     @property
     def update_time(self):
-        """Gets the update_time of this OpenTag.
+        r"""Gets the update_time of this OpenTag.
 
         :return: The update_time of this OpenTag.
         :rtype: int
@@ -184,7 +184,7 @@ class OpenTag:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this OpenTag.
+        r"""Sets the update_time of this OpenTag.
 
         :param update_time: The update_time of this OpenTag.
         :type update_time: int
@@ -193,7 +193,7 @@ class OpenTag:
 
     @property
     def create_user(self):
-        """Gets the create_user of this OpenTag.
+        r"""Gets the create_user of this OpenTag.
 
         :return: The create_user of this OpenTag.
         :rtype: str
@@ -202,7 +202,7 @@ class OpenTag:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this OpenTag.
+        r"""Sets the create_user of this OpenTag.
 
         :param create_user: The create_user of this OpenTag.
         :type create_user: str
@@ -211,7 +211,7 @@ class OpenTag:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this OpenTag.
+        r"""Gets the domain_id of this OpenTag.
 
         :return: The domain_id of this OpenTag.
         :rtype: str
@@ -220,7 +220,7 @@ class OpenTag:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this OpenTag.
+        r"""Sets the domain_id of this OpenTag.
 
         :param domain_id: The domain_id of this OpenTag.
         :type domain_id: str
@@ -229,7 +229,7 @@ class OpenTag:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this OpenTag.
+        r"""Gets the instance_id of this OpenTag.
 
         :return: The instance_id of this OpenTag.
         :rtype: str
@@ -238,7 +238,7 @@ class OpenTag:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this OpenTag.
+        r"""Sets the instance_id of this OpenTag.
 
         :param instance_id: The instance_id of this OpenTag.
         :type instance_id: str
@@ -247,7 +247,7 @@ class OpenTag:
 
     @property
     def project_id(self):
-        """Gets the project_id of this OpenTag.
+        r"""Gets the project_id of this OpenTag.
 
         :return: The project_id of this OpenTag.
         :rtype: str
@@ -256,7 +256,7 @@ class OpenTag:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this OpenTag.
+        r"""Sets the project_id of this OpenTag.
 
         :param project_id: The project_id of this OpenTag.
         :type project_id: str
@@ -265,7 +265,7 @@ class OpenTag:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this OpenTag.
+        r"""Gets the create_user_id of this OpenTag.
 
         :return: The create_user_id of this OpenTag.
         :rtype: str
@@ -274,7 +274,7 @@ class OpenTag:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this OpenTag.
+        r"""Sets the create_user_id of this OpenTag.
 
         :param create_user_id: The create_user_id of this OpenTag.
         :type create_user_id: str

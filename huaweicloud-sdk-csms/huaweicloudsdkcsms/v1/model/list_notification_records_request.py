@@ -23,7 +23,7 @@ class ListNotificationRecordsRequest:
     }
 
     def __init__(self):
-        """ListNotificationRecordsRequest
+        r"""ListNotificationRecordsRequest
 
         The model defined in huaweicloud sdk
 

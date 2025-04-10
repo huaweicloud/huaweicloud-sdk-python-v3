@@ -37,7 +37,7 @@ class SubDetail:
     }
 
     def __init__(self, substep_name=None, detail=None, status=None, message=None, start_time=None, end_time=None, serial_num=None):
-        """SubDetail
+        r"""SubDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SubDetail:
 
     @property
     def substep_name(self):
-        """Gets the substep_name of this SubDetail.
+        r"""Gets the substep_name of this SubDetail.
 
         子操作名
 
@@ -96,7 +96,7 @@ class SubDetail:
 
     @substep_name.setter
     def substep_name(self, substep_name):
-        """Sets the substep_name of this SubDetail.
+        r"""Sets the substep_name of this SubDetail.
 
         子操作名
 
@@ -107,7 +107,7 @@ class SubDetail:
 
     @property
     def detail(self):
-        """Gets the detail of this SubDetail.
+        r"""Gets the detail of this SubDetail.
 
         子操作详情
 
@@ -118,7 +118,7 @@ class SubDetail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SubDetail.
+        r"""Sets the detail of this SubDetail.
 
         子操作详情
 
@@ -129,7 +129,7 @@ class SubDetail:
 
     @property
     def status(self):
-        """Gets the status of this SubDetail.
+        r"""Gets the status of this SubDetail.
 
         子操作状态
 
@@ -140,7 +140,7 @@ class SubDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubDetail.
+        r"""Sets the status of this SubDetail.
 
         子操作状态
 
@@ -151,7 +151,7 @@ class SubDetail:
 
     @property
     def message(self):
-        """Gets the message of this SubDetail.
+        r"""Gets the message of this SubDetail.
 
         子操作过程信息记录
 
@@ -162,7 +162,7 @@ class SubDetail:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SubDetail.
+        r"""Sets the message of this SubDetail.
 
         子操作过程信息记录
 
@@ -173,7 +173,7 @@ class SubDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SubDetail.
+        r"""Gets the start_time of this SubDetail.
 
         开始时间
 
@@ -184,7 +184,7 @@ class SubDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SubDetail.
+        r"""Sets the start_time of this SubDetail.
 
         开始时间
 
@@ -195,7 +195,7 @@ class SubDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SubDetail.
+        r"""Gets the end_time of this SubDetail.
 
         结束时间
 
@@ -206,7 +206,7 @@ class SubDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SubDetail.
+        r"""Sets the end_time of this SubDetail.
 
         结束时间
 
@@ -217,7 +217,7 @@ class SubDetail:
 
     @property
     def serial_num(self):
-        """Gets the serial_num of this SubDetail.
+        r"""Gets the serial_num of this SubDetail.
 
         序列号
 
@@ -228,7 +228,7 @@ class SubDetail:
 
     @serial_num.setter
     def serial_num(self, serial_num):
-        """Sets the serial_num of this SubDetail.
+        r"""Sets the serial_num of this SubDetail.
 
         序列号
 

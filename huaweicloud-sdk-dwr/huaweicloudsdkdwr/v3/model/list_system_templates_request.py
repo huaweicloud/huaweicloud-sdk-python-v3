@@ -31,7 +31,7 @@ class ListSystemTemplatesRequest:
     }
 
     def __init__(self, prefix=None, category=None, offset=None, limit=None):
-        """ListSystemTemplatesRequest
+        r"""ListSystemTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListSystemTemplatesRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListSystemTemplatesRequest.
+        r"""Gets the prefix of this ListSystemTemplatesRequest.
 
         模板前缀。
 
@@ -75,7 +75,7 @@ class ListSystemTemplatesRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListSystemTemplatesRequest.
+        r"""Sets the prefix of this ListSystemTemplatesRequest.
 
         模板前缀。
 
@@ -86,7 +86,7 @@ class ListSystemTemplatesRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListSystemTemplatesRequest.
+        r"""Gets the category of this ListSystemTemplatesRequest.
 
         算子模板的分类。
 
@@ -97,7 +97,7 @@ class ListSystemTemplatesRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListSystemTemplatesRequest.
+        r"""Sets the category of this ListSystemTemplatesRequest.
 
         算子模板的分类。
 
@@ -108,7 +108,7 @@ class ListSystemTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSystemTemplatesRequest.
+        r"""Gets the offset of this ListSystemTemplatesRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -119,7 +119,7 @@ class ListSystemTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSystemTemplatesRequest.
+        r"""Sets the offset of this ListSystemTemplatesRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -130,7 +130,7 @@ class ListSystemTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSystemTemplatesRequest.
+        r"""Gets the limit of this ListSystemTemplatesRequest.
 
         请求返回的最大记录条数。limit取值最小1，最大1000，不设置则取默认值10。
 
@@ -141,7 +141,7 @@ class ListSystemTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSystemTemplatesRequest.
+        r"""Sets the limit of this ListSystemTemplatesRequest.
 
         请求返回的最大记录条数。limit取值最小1，最大1000，不设置则取默认值10。
 

@@ -24,7 +24,7 @@ class AddToPersonalSpaceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddToPersonalSpaceResponse
+        r"""AddToPersonalSpaceResponse
 
         The model defined in huaweicloud sdk
 

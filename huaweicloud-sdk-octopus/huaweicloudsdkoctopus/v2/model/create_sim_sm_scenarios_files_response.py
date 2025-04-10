@@ -44,7 +44,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
     }
 
     def __init__(self, url=None, sha256=None, created_at=None, updated_at=None, post=None, put_url=None, get_url=None, expire=None, ready=None, filename=None):
-        """CreateSimSmScenariosFilesResponse
+        r"""CreateSimSmScenariosFilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the url of this CreateSimSmScenariosFilesResponse.
 
         地址
 
@@ -118,7 +118,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the url of this CreateSimSmScenariosFilesResponse.
 
         地址
 
@@ -129,7 +129,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def sha256(self):
-        """Gets the sha256 of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the sha256 of this CreateSimSmScenariosFilesResponse.
 
         文件sha256值
 
@@ -140,7 +140,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the sha256 of this CreateSimSmScenariosFilesResponse.
 
         文件sha256值
 
@@ -151,7 +151,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the created_at of this CreateSimSmScenariosFilesResponse.
 
         创建时间
 
@@ -162,7 +162,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the created_at of this CreateSimSmScenariosFilesResponse.
 
         创建时间
 
@@ -173,7 +173,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the updated_at of this CreateSimSmScenariosFilesResponse.
 
         更新时间
 
@@ -184,7 +184,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the updated_at of this CreateSimSmScenariosFilesResponse.
 
         更新时间
 
@@ -195,7 +195,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def post(self):
-        """Gets the post of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the post of this CreateSimSmScenariosFilesResponse.
 
         POST地址
 
@@ -206,7 +206,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @post.setter
     def post(self, post):
-        """Sets the post of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the post of this CreateSimSmScenariosFilesResponse.
 
         POST地址
 
@@ -217,7 +217,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def put_url(self):
-        """Gets the put_url of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the put_url of this CreateSimSmScenariosFilesResponse.
 
         PUT地址
 
@@ -228,7 +228,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @put_url.setter
     def put_url(self, put_url):
-        """Sets the put_url of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the put_url of this CreateSimSmScenariosFilesResponse.
 
         PUT地址
 
@@ -239,7 +239,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def get_url(self):
-        """Gets the get_url of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the get_url of this CreateSimSmScenariosFilesResponse.
 
         GET地址
 
@@ -250,7 +250,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @get_url.setter
     def get_url(self, get_url):
-        """Sets the get_url of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the get_url of this CreateSimSmScenariosFilesResponse.
 
         GET地址
 
@@ -261,7 +261,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def expire(self):
-        """Gets the expire of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the expire of this CreateSimSmScenariosFilesResponse.
 
         默认失效时间为600秒.
 
@@ -272,7 +272,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @expire.setter
     def expire(self, expire):
-        """Sets the expire of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the expire of this CreateSimSmScenariosFilesResponse.
 
         默认失效时间为600秒.
 
@@ -283,7 +283,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def ready(self):
-        """Gets the ready of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the ready of this CreateSimSmScenariosFilesResponse.
 
         状态
 
@@ -294,7 +294,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @ready.setter
     def ready(self, ready):
-        """Sets the ready of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the ready of this CreateSimSmScenariosFilesResponse.
 
         状态
 
@@ -305,7 +305,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @property
     def filename(self):
-        """Gets the filename of this CreateSimSmScenariosFilesResponse.
+        r"""Gets the filename of this CreateSimSmScenariosFilesResponse.
 
         文件名
 
@@ -316,7 +316,7 @@ class CreateSimSmScenariosFilesResponse(SdkResponse):
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this CreateSimSmScenariosFilesResponse.
+        r"""Sets the filename of this CreateSimSmScenariosFilesResponse.
 
         文件名
 

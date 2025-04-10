@@ -44,7 +44,7 @@ class UpdateScheduleResponse(SdkResponse):
     }
 
     def __init__(self, schedule_id=None, node_id=None, name=None, cycle_type=None, enabled=None, start_time=None, end_time=None, priority=None, daily=None, tasks=None):
-        """UpdateScheduleResponse
+        r"""UpdateScheduleResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def schedule_id(self):
-        """Gets the schedule_id of this UpdateScheduleResponse.
+        r"""Gets the schedule_id of this UpdateScheduleResponse.
 
         调度计划id，租户下唯一
 
@@ -118,7 +118,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @schedule_id.setter
     def schedule_id(self, schedule_id):
-        """Sets the schedule_id of this UpdateScheduleResponse.
+        r"""Sets the schedule_id of this UpdateScheduleResponse.
 
         调度计划id，租户下唯一
 
@@ -129,7 +129,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateScheduleResponse.
+        r"""Gets the node_id of this UpdateScheduleResponse.
 
         节点id
 
@@ -140,7 +140,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateScheduleResponse.
+        r"""Sets the node_id of this UpdateScheduleResponse.
 
         节点id
 
@@ -151,7 +151,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateScheduleResponse.
+        r"""Gets the name of this UpdateScheduleResponse.
 
         调度计划名称
 
@@ -162,7 +162,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateScheduleResponse.
+        r"""Sets the name of this UpdateScheduleResponse.
 
         调度计划名称
 
@@ -173,7 +173,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def cycle_type(self):
-        """Gets the cycle_type of this UpdateScheduleResponse.
+        r"""Gets the cycle_type of this UpdateScheduleResponse.
 
         调度计划的循环类型
 
@@ -184,7 +184,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @cycle_type.setter
     def cycle_type(self, cycle_type):
-        """Sets the cycle_type of this UpdateScheduleResponse.
+        r"""Sets the cycle_type of this UpdateScheduleResponse.
 
         调度计划的循环类型
 
@@ -195,7 +195,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateScheduleResponse.
+        r"""Gets the enabled of this UpdateScheduleResponse.
 
         调度计划是否生效
 
@@ -206,7 +206,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateScheduleResponse.
+        r"""Sets the enabled of this UpdateScheduleResponse.
 
         调度计划是否生效
 
@@ -217,7 +217,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateScheduleResponse.
+        r"""Gets the start_time of this UpdateScheduleResponse.
 
         调度计划起始时间，毫秒级别的时间戳
 
@@ -228,7 +228,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateScheduleResponse.
+        r"""Sets the start_time of this UpdateScheduleResponse.
 
         调度计划起始时间，毫秒级别的时间戳
 
@@ -239,7 +239,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateScheduleResponse.
+        r"""Gets the end_time of this UpdateScheduleResponse.
 
         调度计划结束时间，毫秒级别的时间戳
 
@@ -250,7 +250,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateScheduleResponse.
+        r"""Sets the end_time of this UpdateScheduleResponse.
 
         调度计划结束时间，毫秒级别的时间戳
 
@@ -261,7 +261,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateScheduleResponse.
+        r"""Gets the priority of this UpdateScheduleResponse.
 
         调度计划优先级, 1-16
 
@@ -272,7 +272,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateScheduleResponse.
+        r"""Sets the priority of this UpdateScheduleResponse.
 
         调度计划优先级, 1-16
 
@@ -283,7 +283,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def daily(self):
-        """Gets the daily of this UpdateScheduleResponse.
+        r"""Gets the daily of this UpdateScheduleResponse.
 
         :return: The daily of this UpdateScheduleResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DailyDto`
@@ -292,7 +292,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @daily.setter
     def daily(self, daily):
-        """Sets the daily of this UpdateScheduleResponse.
+        r"""Sets the daily of this UpdateScheduleResponse.
 
         :param daily: The daily of this UpdateScheduleResponse.
         :type daily: :class:`huaweicloudsdkiotedge.v2.DailyDto`
@@ -301,7 +301,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this UpdateScheduleResponse.
+        r"""Gets the tasks of this UpdateScheduleResponse.
 
         调度任务信息
 
@@ -312,7 +312,7 @@ class UpdateScheduleResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this UpdateScheduleResponse.
+        r"""Sets the tasks of this UpdateScheduleResponse.
 
         调度任务信息
 

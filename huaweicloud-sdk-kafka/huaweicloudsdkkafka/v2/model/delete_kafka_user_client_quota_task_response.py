@@ -26,7 +26,7 @@ class DeleteKafkaUserClientQuotaTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteKafkaUserClientQuotaTaskResponse
+        r"""DeleteKafkaUserClientQuotaTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteKafkaUserClientQuotaTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteKafkaUserClientQuotaTaskResponse.
+        r"""Gets the job_id of this DeleteKafkaUserClientQuotaTaskResponse.
 
         删除流控配置的任务ID
 
@@ -55,7 +55,7 @@ class DeleteKafkaUserClientQuotaTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteKafkaUserClientQuotaTaskResponse.
+        r"""Sets the job_id of this DeleteKafkaUserClientQuotaTaskResponse.
 
         删除流控配置的任务ID
 

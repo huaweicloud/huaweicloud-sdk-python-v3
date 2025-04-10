@@ -29,7 +29,7 @@ class UpdateIaConfigRequestDTO:
     }
 
     def __init__(self, name=None, value=None, description=None):
-        """UpdateIaConfigRequestDTO
+        r"""UpdateIaConfigRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateIaConfigRequestDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIaConfigRequestDTO.
+        r"""Gets the name of this UpdateIaConfigRequestDTO.
 
         配置项名称
 
@@ -66,7 +66,7 @@ class UpdateIaConfigRequestDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIaConfigRequestDTO.
+        r"""Sets the name of this UpdateIaConfigRequestDTO.
 
         配置项名称
 
@@ -77,7 +77,7 @@ class UpdateIaConfigRequestDTO:
 
     @property
     def value(self):
-        """Gets the value of this UpdateIaConfigRequestDTO.
+        r"""Gets the value of this UpdateIaConfigRequestDTO.
 
         配置项详情，长度2MB以内
 
@@ -88,7 +88,7 @@ class UpdateIaConfigRequestDTO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateIaConfigRequestDTO.
+        r"""Sets the value of this UpdateIaConfigRequestDTO.
 
         配置项详情，长度2MB以内
 
@@ -99,7 +99,7 @@ class UpdateIaConfigRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIaConfigRequestDTO.
+        r"""Gets the description of this UpdateIaConfigRequestDTO.
 
         配置项描述
 
@@ -110,7 +110,7 @@ class UpdateIaConfigRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIaConfigRequestDTO.
+        r"""Sets the description of this UpdateIaConfigRequestDTO.
 
         配置项描述
 

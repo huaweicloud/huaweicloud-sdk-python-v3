@@ -27,7 +27,7 @@ class ListImageTagRequest:
     }
 
     def __init__(self, eihealth_project_id=None, image_id=None):
-        """ListImageTagRequest
+        r"""ListImageTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListImageTagRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListImageTagRequest.
+        r"""Gets the eihealth_project_id of this ListImageTagRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ListImageTagRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListImageTagRequest.
+        r"""Sets the eihealth_project_id of this ListImageTagRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ListImageTagRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImageTagRequest.
+        r"""Gets the image_id of this ListImageTagRequest.
 
         镜像id
 
@@ -81,7 +81,7 @@ class ListImageTagRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImageTagRequest.
+        r"""Sets the image_id of this ListImageTagRequest.
 
         镜像id
 

@@ -34,7 +34,7 @@ class ShowTemplateFileResponse(SdkResponse):
     }
 
     def __init__(self, content=None, encoding=None, file_name=None, file_path=None, file_type=None):
-        """ShowTemplateFileResponse
+        r"""ShowTemplateFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowTemplateFileResponse.
+        r"""Gets the content of this ShowTemplateFileResponse.
 
         文件内容（返回的文件内容为encoding指定的编码格式编码后的内容）。
 
@@ -83,7 +83,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowTemplateFileResponse.
+        r"""Sets the content of this ShowTemplateFileResponse.
 
         文件内容（返回的文件内容为encoding指定的编码格式编码后的内容）。
 
@@ -94,7 +94,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @property
     def encoding(self):
-        """Gets the encoding of this ShowTemplateFileResponse.
+        r"""Gets the encoding of this ShowTemplateFileResponse.
 
         内容编码格式(固定base64)。
 
@@ -105,7 +105,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this ShowTemplateFileResponse.
+        r"""Sets the encoding of this ShowTemplateFileResponse.
 
         内容编码格式(固定base64)。
 
@@ -116,7 +116,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this ShowTemplateFileResponse.
+        r"""Gets the file_name of this ShowTemplateFileResponse.
 
         文件名。
 
@@ -127,7 +127,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ShowTemplateFileResponse.
+        r"""Sets the file_name of this ShowTemplateFileResponse.
 
         文件名。
 
@@ -138,7 +138,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @property
     def file_path(self):
-        """Gets the file_path of this ShowTemplateFileResponse.
+        r"""Gets the file_path of this ShowTemplateFileResponse.
 
         文件相对路径。
 
@@ -149,7 +149,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ShowTemplateFileResponse.
+        r"""Sets the file_path of this ShowTemplateFileResponse.
 
         文件相对路径。
 
@@ -160,7 +160,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @property
     def file_type(self):
-        """Gets the file_type of this ShowTemplateFileResponse.
+        r"""Gets the file_type of this ShowTemplateFileResponse.
 
         文件类型。
 
@@ -171,7 +171,7 @@ class ShowTemplateFileResponse(SdkResponse):
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ShowTemplateFileResponse.
+        r"""Sets the file_type of this ShowTemplateFileResponse.
 
         文件类型。
 

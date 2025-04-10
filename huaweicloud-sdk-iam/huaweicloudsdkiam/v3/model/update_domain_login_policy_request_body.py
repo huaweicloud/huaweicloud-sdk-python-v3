@@ -25,7 +25,7 @@ class UpdateDomainLoginPolicyRequestBody:
     }
 
     def __init__(self, login_policy=None):
-        """UpdateDomainLoginPolicyRequestBody
+        r"""UpdateDomainLoginPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDomainLoginPolicyRequestBody:
 
     @property
     def login_policy(self):
-        """Gets the login_policy of this UpdateDomainLoginPolicyRequestBody.
+        r"""Gets the login_policy of this UpdateDomainLoginPolicyRequestBody.
 
         :return: The login_policy of this UpdateDomainLoginPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginPolicyOption`
@@ -51,7 +51,7 @@ class UpdateDomainLoginPolicyRequestBody:
 
     @login_policy.setter
     def login_policy(self, login_policy):
-        """Sets the login_policy of this UpdateDomainLoginPolicyRequestBody.
+        r"""Sets the login_policy of this UpdateDomainLoginPolicyRequestBody.
 
         :param login_policy: The login_policy of this UpdateDomainLoginPolicyRequestBody.
         :type login_policy: :class:`huaweicloudsdkiam.v3.LoginPolicyOption`

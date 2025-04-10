@@ -28,7 +28,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, total=None):
-        """ListSqlInjectionRulesResponse
+        r"""ListSqlInjectionRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListSqlInjectionRulesResponse.
+        r"""Gets the rules of this ListSqlInjectionRulesResponse.
 
         SQL规则列表
 
@@ -62,7 +62,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListSqlInjectionRulesResponse.
+        r"""Sets the rules of this ListSqlInjectionRulesResponse.
 
         SQL规则列表
 
@@ -73,7 +73,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSqlInjectionRulesResponse.
+        r"""Gets the total of this ListSqlInjectionRulesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListSqlInjectionRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSqlInjectionRulesResponse.
+        r"""Sets the total of this ListSqlInjectionRulesResponse.
 
         总数
 

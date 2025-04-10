@@ -28,7 +28,7 @@ class CreateDomainMappingResponse(SdkResponse):
     }
 
     def __init__(self, pull_domain=None, push_domain=None):
-        """CreateDomainMappingResponse
+        r"""CreateDomainMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDomainMappingResponse(SdkResponse):
 
     @property
     def pull_domain(self):
-        """Gets the pull_domain of this CreateDomainMappingResponse.
+        r"""Gets the pull_domain of this CreateDomainMappingResponse.
 
         直播播放域名
 
@@ -62,7 +62,7 @@ class CreateDomainMappingResponse(SdkResponse):
 
     @pull_domain.setter
     def pull_domain(self, pull_domain):
-        """Sets the pull_domain of this CreateDomainMappingResponse.
+        r"""Sets the pull_domain of this CreateDomainMappingResponse.
 
         直播播放域名
 
@@ -73,7 +73,7 @@ class CreateDomainMappingResponse(SdkResponse):
 
     @property
     def push_domain(self):
-        """Gets the push_domain of this CreateDomainMappingResponse.
+        r"""Gets the push_domain of this CreateDomainMappingResponse.
 
         直播播放域名关联的推流域名
 
@@ -84,7 +84,7 @@ class CreateDomainMappingResponse(SdkResponse):
 
     @push_domain.setter
     def push_domain(self, push_domain):
-        """Sets the push_domain of this CreateDomainMappingResponse.
+        r"""Sets the push_domain of this CreateDomainMappingResponse.
 
         直播播放域名关联的推流域名
 

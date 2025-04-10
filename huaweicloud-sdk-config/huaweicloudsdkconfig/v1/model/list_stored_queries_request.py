@@ -29,7 +29,7 @@ class ListStoredQueriesRequest:
     }
 
     def __init__(self, limit=None, marker=None, name=None):
-        """ListStoredQueriesRequest
+        r"""ListStoredQueriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListStoredQueriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStoredQueriesRequest.
+        r"""Gets the limit of this ListStoredQueriesRequest.
 
         最大的返回数量
 
@@ -68,7 +68,7 @@ class ListStoredQueriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStoredQueriesRequest.
+        r"""Sets the limit of this ListStoredQueriesRequest.
 
         最大的返回数量
 
@@ -79,7 +79,7 @@ class ListStoredQueriesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListStoredQueriesRequest.
+        r"""Gets the marker of this ListStoredQueriesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -90,7 +90,7 @@ class ListStoredQueriesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListStoredQueriesRequest.
+        r"""Sets the marker of this ListStoredQueriesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -101,7 +101,7 @@ class ListStoredQueriesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListStoredQueriesRequest.
+        r"""Gets the name of this ListStoredQueriesRequest.
 
         ResourceQL 名字
 
@@ -112,7 +112,7 @@ class ListStoredQueriesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListStoredQueriesRequest.
+        r"""Sets the name of this ListStoredQueriesRequest.
 
         ResourceQL 名字
 

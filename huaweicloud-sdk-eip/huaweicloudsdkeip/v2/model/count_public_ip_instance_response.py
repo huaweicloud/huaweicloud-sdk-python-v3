@@ -26,7 +26,7 @@ class CountPublicIpInstanceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CountPublicIpInstanceResponse
+        r"""CountPublicIpInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountPublicIpInstanceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CountPublicIpInstanceResponse.
+        r"""Gets the body of this CountPublicIpInstanceResponse.
 
         :return: The body of this CountPublicIpInstanceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CountPublicIpInstanceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountPublicIpInstanceResponse.
+        r"""Sets the body of this CountPublicIpInstanceResponse.
 
         :param body: The body of this CountPublicIpInstanceResponse.
         :type body: str

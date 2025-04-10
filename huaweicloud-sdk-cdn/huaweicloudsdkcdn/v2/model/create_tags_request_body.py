@@ -27,7 +27,7 @@ class CreateTagsRequestBody:
     }
 
     def __init__(self, resource_id=None, tags=None):
-        """CreateTagsRequestBody
+        r"""CreateTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateTagsRequestBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateTagsRequestBody.
+        r"""Gets the resource_id of this CreateTagsRequestBody.
 
         资源id。  > 域名ID
 
@@ -59,7 +59,7 @@ class CreateTagsRequestBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateTagsRequestBody.
+        r"""Sets the resource_id of this CreateTagsRequestBody.
 
         资源id。  > 域名ID
 
@@ -70,7 +70,7 @@ class CreateTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTagsRequestBody.
+        r"""Gets the tags of this CreateTagsRequestBody.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class CreateTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTagsRequestBody.
+        r"""Sets the tags of this CreateTagsRequestBody.
 
         标签列表。
 

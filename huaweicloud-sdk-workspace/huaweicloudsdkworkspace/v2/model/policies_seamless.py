@@ -27,7 +27,7 @@ class PoliciesSeamless:
     }
 
     def __init__(self, seamless_enable=None, options=None):
-        """PoliciesSeamless
+        r"""PoliciesSeamless
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesSeamless:
 
     @property
     def seamless_enable(self):
-        """Gets the seamless_enable of this PoliciesSeamless.
+        r"""Gets the seamless_enable of this PoliciesSeamless.
 
         是否开启通用音视频开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesSeamless:
 
     @seamless_enable.setter
     def seamless_enable(self, seamless_enable):
-        """Sets the seamless_enable of this PoliciesSeamless.
+        r"""Sets the seamless_enable of this PoliciesSeamless.
 
         是否开启通用音视频开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesSeamless:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesSeamless.
+        r"""Gets the options of this PoliciesSeamless.
 
         :return: The options of this PoliciesSeamless.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesSeamlessOptions`
@@ -81,7 +81,7 @@ class PoliciesSeamless:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesSeamless.
+        r"""Sets the options of this PoliciesSeamless.
 
         :param options: The options of this PoliciesSeamless.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesSeamlessOptions`

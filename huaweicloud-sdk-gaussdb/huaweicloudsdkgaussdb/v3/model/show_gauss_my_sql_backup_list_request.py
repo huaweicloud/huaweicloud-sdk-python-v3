@@ -43,7 +43,7 @@ class ShowGaussMySqlBackupListRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None, name=None, instance_name=None):
-        """ShowGaussMySqlBackupListRequest
+        r"""ShowGaussMySqlBackupListRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the x_language of this ShowGaussMySqlBackupListRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -117,7 +117,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the x_language of this ShowGaussMySqlBackupListRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -128,7 +128,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the instance_id of this ShowGaussMySqlBackupListRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -139,7 +139,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the instance_id of this ShowGaussMySqlBackupListRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -150,7 +150,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the backup_id of this ShowGaussMySqlBackupListRequest.
 
         备份ID。
 
@@ -161,7 +161,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the backup_id of this ShowGaussMySqlBackupListRequest.
 
         备份ID。
 
@@ -172,7 +172,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the backup_type of this ShowGaussMySqlBackupListRequest.
 
         备份类型。  取值范围： - auto：自动全量备份。 - manual：手动全量备份。
 
@@ -183,7 +183,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the backup_type of this ShowGaussMySqlBackupListRequest.
 
         备份类型。  取值范围： - auto：自动全量备份。 - manual：手动全量备份。
 
@@ -194,7 +194,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the offset of this ShowGaussMySqlBackupListRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -205,7 +205,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the offset of this ShowGaussMySqlBackupListRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -216,7 +216,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the limit of this ShowGaussMySqlBackupListRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -227,7 +227,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the limit of this ShowGaussMySqlBackupListRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -238,7 +238,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the begin_time of this ShowGaussMySqlBackupListRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -249,7 +249,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the begin_time of this ShowGaussMySqlBackupListRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -260,7 +260,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the end_time of this ShowGaussMySqlBackupListRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -271,7 +271,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the end_time of this ShowGaussMySqlBackupListRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -282,7 +282,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the name of this ShowGaussMySqlBackupListRequest.
 
         备份名称。
 
@@ -293,7 +293,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the name of this ShowGaussMySqlBackupListRequest.
 
         备份名称。
 
@@ -304,7 +304,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShowGaussMySqlBackupListRequest.
+        r"""Gets the instance_name of this ShowGaussMySqlBackupListRequest.
 
         实例名称。
 
@@ -315,7 +315,7 @@ class ShowGaussMySqlBackupListRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShowGaussMySqlBackupListRequest.
+        r"""Sets the instance_name of this ShowGaussMySqlBackupListRequest.
 
         实例名称。
 

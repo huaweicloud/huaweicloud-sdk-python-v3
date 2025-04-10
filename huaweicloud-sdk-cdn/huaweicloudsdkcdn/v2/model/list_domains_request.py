@@ -41,7 +41,7 @@ class ListDomainsRequest:
     }
 
     def __init__(self, domain_name=None, business_type=None, domain_status=None, service_area=None, page_size=None, page_number=None, show_tags=None, exact_match=None, enterprise_project_id=None):
-        """ListDomainsRequest
+        r"""ListDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListDomainsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListDomainsRequest.
+        r"""Gets the domain_name of this ListDomainsRequest.
 
         加速域名，采用模糊匹配的方式。（长度限制为1-255字符）。
 
@@ -110,7 +110,7 @@ class ListDomainsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListDomainsRequest.
+        r"""Sets the domain_name of this ListDomainsRequest.
 
         加速域名，采用模糊匹配的方式。（长度限制为1-255字符）。
 
@@ -121,7 +121,7 @@ class ListDomainsRequest:
 
     @property
     def business_type(self):
-        """Gets the business_type of this ListDomainsRequest.
+        r"""Gets the business_type of this ListDomainsRequest.
 
         加速域名的业务类型。取值： - web（网站加速） - download（文件下载加速） - video（点播加速） - wholeSite（全站加速）
 
@@ -132,7 +132,7 @@ class ListDomainsRequest:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this ListDomainsRequest.
+        r"""Sets the business_type of this ListDomainsRequest.
 
         加速域名的业务类型。取值： - web（网站加速） - download（文件下载加速） - video（点播加速） - wholeSite（全站加速）
 
@@ -143,7 +143,7 @@ class ListDomainsRequest:
 
     @property
     def domain_status(self):
-        """Gets the domain_status of this ListDomainsRequest.
+        r"""Gets the domain_status of this ListDomainsRequest.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -154,7 +154,7 @@ class ListDomainsRequest:
 
     @domain_status.setter
     def domain_status(self, domain_status):
-        """Sets the domain_status of this ListDomainsRequest.
+        r"""Sets the domain_status of this ListDomainsRequest.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -165,7 +165,7 @@ class ListDomainsRequest:
 
     @property
     def service_area(self):
-        """Gets the service_area of this ListDomainsRequest.
+        r"""Gets the service_area of this ListDomainsRequest.
 
         华为云CDN提供的加速服务范围，包含： - mainland_china 中国大陆 - outside_mainland_china 中国大陆境外 - global 全球。
 
@@ -176,7 +176,7 @@ class ListDomainsRequest:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ListDomainsRequest.
+        r"""Sets the service_area of this ListDomainsRequest.
 
         华为云CDN提供的加速服务范围，包含： - mainland_china 中国大陆 - outside_mainland_china 中国大陆境外 - global 全球。
 
@@ -187,7 +187,7 @@ class ListDomainsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListDomainsRequest.
+        r"""Gets the page_size of this ListDomainsRequest.
 
         每页加速域名的数量，取值范围1-10000，默认值为30。
 
@@ -198,7 +198,7 @@ class ListDomainsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListDomainsRequest.
+        r"""Sets the page_size of this ListDomainsRequest.
 
         每页加速域名的数量，取值范围1-10000，默认值为30。
 
@@ -209,7 +209,7 @@ class ListDomainsRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ListDomainsRequest.
+        r"""Gets the page_number of this ListDomainsRequest.
 
         查询的页码，即：从哪一页开始查询，取值范围1-65535，默认值为1。
 
@@ -220,7 +220,7 @@ class ListDomainsRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ListDomainsRequest.
+        r"""Sets the page_number of this ListDomainsRequest.
 
         查询的页码，即：从哪一页开始查询，取值范围1-65535，默认值为1。
 
@@ -231,7 +231,7 @@ class ListDomainsRequest:
 
     @property
     def show_tags(self):
-        """Gets the show_tags of this ListDomainsRequest.
+        r"""Gets the show_tags of this ListDomainsRequest.
 
         展示标签标识 true：展示 false：不展示。
 
@@ -242,7 +242,7 @@ class ListDomainsRequest:
 
     @show_tags.setter
     def show_tags(self, show_tags):
-        """Sets the show_tags of this ListDomainsRequest.
+        r"""Sets the show_tags of this ListDomainsRequest.
 
         展示标签标识 true：展示 false：不展示。
 
@@ -253,7 +253,7 @@ class ListDomainsRequest:
 
     @property
     def exact_match(self):
-        """Gets the exact_match of this ListDomainsRequest.
+        r"""Gets the exact_match of this ListDomainsRequest.
 
         精准匹配 true：开启 false：关闭。
 
@@ -264,7 +264,7 @@ class ListDomainsRequest:
 
     @exact_match.setter
     def exact_match(self, exact_match):
-        """Sets the exact_match of this ListDomainsRequest.
+        r"""Sets the exact_match of this ListDomainsRequest.
 
         精准匹配 true：开启 false：关闭。
 
@@ -275,7 +275,7 @@ class ListDomainsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDomainsRequest.
+        r"""Gets the enterprise_project_id of this ListDomainsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -286,7 +286,7 @@ class ListDomainsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDomainsRequest.
+        r"""Sets the enterprise_project_id of this ListDomainsRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 

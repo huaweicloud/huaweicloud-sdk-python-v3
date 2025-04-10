@@ -27,7 +27,7 @@ class UpdateSnapshotRequest:
     }
 
     def __init__(self, snapshot_id=None, body=None):
-        """UpdateSnapshotRequest
+        r"""UpdateSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSnapshotRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this UpdateSnapshotRequest.
+        r"""Gets the snapshot_id of this UpdateSnapshotRequest.
 
         快照ID
 
@@ -60,7 +60,7 @@ class UpdateSnapshotRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this UpdateSnapshotRequest.
+        r"""Sets the snapshot_id of this UpdateSnapshotRequest.
 
         快照ID
 
@@ -71,7 +71,7 @@ class UpdateSnapshotRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSnapshotRequest.
+        r"""Gets the body of this UpdateSnapshotRequest.
 
         :return: The body of this UpdateSnapshotRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateSnapshotRequestBody`
@@ -80,7 +80,7 @@ class UpdateSnapshotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSnapshotRequest.
+        r"""Sets the body of this UpdateSnapshotRequest.
 
         :param body: The body of this UpdateSnapshotRequest.
         :type body: :class:`huaweicloudsdkevs.v2.UpdateSnapshotRequestBody`

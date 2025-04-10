@@ -29,7 +29,7 @@ class OriginRequestHeader:
     }
 
     def __init__(self, name=None, value=None, action=None):
-        """OriginRequestHeader
+        r"""OriginRequestHeader
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class OriginRequestHeader:
 
     @property
     def name(self):
-        """Gets the name of this OriginRequestHeader.
+        r"""Gets the name of this OriginRequestHeader.
 
         设置回源请求头参数。格式要求：由数字，大小写字母，中划线-组成，只能以字母开头。
 
@@ -66,7 +66,7 @@ class OriginRequestHeader:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OriginRequestHeader.
+        r"""Sets the name of this OriginRequestHeader.
 
         设置回源请求头参数。格式要求：由数字，大小写字母，中划线-组成，只能以字母开头。
 
@@ -77,7 +77,7 @@ class OriginRequestHeader:
 
     @property
     def value(self):
-        """Gets the value of this OriginRequestHeader.
+        r"""Gets the value of this OriginRequestHeader.
 
         设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
 
@@ -88,7 +88,7 @@ class OriginRequestHeader:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OriginRequestHeader.
+        r"""Sets the value of this OriginRequestHeader.
 
         设置回源请求头参数的值。当为删除动作时，可不填。格式要求：长度1~512。不支持中文，不支持变量配置，如：$client_ip,$remote_port等。
 
@@ -99,7 +99,7 @@ class OriginRequestHeader:
 
     @property
     def action(self):
-        """Gets the action of this OriginRequestHeader.
+        r"""Gets the action of this OriginRequestHeader.
 
         回源请求头设置类型。delete：删除，set：设置。同一个请求头字段只允许删除或者设置。设置：若原始回源请求中不存在该字段，先执行新增再执行设置。
 
@@ -110,7 +110,7 @@ class OriginRequestHeader:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this OriginRequestHeader.
+        r"""Sets the action of this OriginRequestHeader.
 
         回源请求头设置类型。delete：删除，set：设置。同一个请求头字段只允许删除或者设置。设置：若原始回源请求中不存在该字段，先执行新增再执行设置。
 

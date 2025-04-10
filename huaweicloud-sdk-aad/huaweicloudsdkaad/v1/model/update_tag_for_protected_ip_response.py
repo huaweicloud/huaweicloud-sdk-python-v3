@@ -24,7 +24,7 @@ class UpdateTagForProtectedIpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTagForProtectedIpResponse
+        r"""UpdateTagForProtectedIpResponse
 
         The model defined in huaweicloud sdk
 

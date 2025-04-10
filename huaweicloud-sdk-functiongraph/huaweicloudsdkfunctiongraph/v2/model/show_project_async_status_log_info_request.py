@@ -23,7 +23,7 @@ class ShowProjectAsyncStatusLogInfoRequest:
     }
 
     def __init__(self):
-        """ShowProjectAsyncStatusLogInfoRequest
+        r"""ShowProjectAsyncStatusLogInfoRequest
 
         The model defined in huaweicloud sdk
 

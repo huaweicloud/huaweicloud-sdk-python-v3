@@ -30,7 +30,7 @@ class ListPublishTemplateResponse(SdkResponse):
     }
 
     def __init__(self, url=None, auth_sign_key=None, call_back_area=None):
-        """ListPublishTemplateResponse
+        r"""ListPublishTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPublishTemplateResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ListPublishTemplateResponse.
+        r"""Gets the url of this ListPublishTemplateResponse.
 
         回调地址
 
@@ -69,7 +69,7 @@ class ListPublishTemplateResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ListPublishTemplateResponse.
+        r"""Sets the url of this ListPublishTemplateResponse.
 
         回调地址
 
@@ -80,7 +80,7 @@ class ListPublishTemplateResponse(SdkResponse):
 
     @property
     def auth_sign_key(self):
-        """Gets the auth_sign_key of this ListPublishTemplateResponse.
+        r"""Gets the auth_sign_key of this ListPublishTemplateResponse.
 
         鉴权密钥
 
@@ -91,7 +91,7 @@ class ListPublishTemplateResponse(SdkResponse):
 
     @auth_sign_key.setter
     def auth_sign_key(self, auth_sign_key):
-        """Sets the auth_sign_key of this ListPublishTemplateResponse.
+        r"""Sets the auth_sign_key of this ListPublishTemplateResponse.
 
         鉴权密钥
 
@@ -102,7 +102,7 @@ class ListPublishTemplateResponse(SdkResponse):
 
     @property
     def call_back_area(self):
-        """Gets the call_back_area of this ListPublishTemplateResponse.
+        r"""Gets the call_back_area of this ListPublishTemplateResponse.
 
         接收回调通知服务器所在区域。 包含如下取值： - mainland_china：中国大陆区域。 - outside_mainland_china：中国大陆以外区域。
 
@@ -113,7 +113,7 @@ class ListPublishTemplateResponse(SdkResponse):
 
     @call_back_area.setter
     def call_back_area(self, call_back_area):
-        """Sets the call_back_area of this ListPublishTemplateResponse.
+        r"""Sets the call_back_area of this ListPublishTemplateResponse.
 
         接收回调通知服务器所在区域。 包含如下取值： - mainland_china：中国大陆区域。 - outside_mainland_china：中国大陆以外区域。
 

@@ -29,7 +29,7 @@ class DeleteDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, database_name=None):
-        """DeleteDatabaseRequest
+        r"""DeleteDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDatabaseRequest.
+        r"""Gets the instance_id of this DeleteDatabaseRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class DeleteDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDatabaseRequest.
+        r"""Sets the instance_id of this DeleteDatabaseRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class DeleteDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteDatabaseRequest.
+        r"""Gets the x_language of this DeleteDatabaseRequest.
 
         语言。默认值：en-us。
 
@@ -88,7 +88,7 @@ class DeleteDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteDatabaseRequest.
+        r"""Sets the x_language of this DeleteDatabaseRequest.
 
         语言。默认值：en-us。
 
@@ -99,7 +99,7 @@ class DeleteDatabaseRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteDatabaseRequest.
+        r"""Gets the database_name of this DeleteDatabaseRequest.
 
         数据库库名称。
 
@@ -110,7 +110,7 @@ class DeleteDatabaseRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteDatabaseRequest.
+        r"""Sets the database_name of this DeleteDatabaseRequest.
 
         数据库库名称。
 

@@ -25,7 +25,8 @@ class VulScanTaskInfo:
         'status': 'str',
         'scanning_host_num': 'int',
         'success_host_num': 'int',
-        'failed_host_num': 'int'
+        'failed_host_num': 'int',
+        'estimated_time': 'int'
     }
 
     attribute_map = {
@@ -37,11 +38,12 @@ class VulScanTaskInfo:
         'status': 'status',
         'scanning_host_num': 'scanning_host_num',
         'success_host_num': 'success_host_num',
-        'failed_host_num': 'failed_host_num'
+        'failed_host_num': 'failed_host_num',
+        'estimated_time': 'estimated_time'
     }
 
-    def __init__(self, id=None, scan_type=None, start_time=None, end_time=None, scan_vul_types=None, status=None, scanning_host_num=None, success_host_num=None, failed_host_num=None):
-        """VulScanTaskInfo
+    def __init__(self, id=None, scan_type=None, start_time=None, end_time=None, scan_vul_types=None, status=None, scanning_host_num=None, success_host_num=None, failed_host_num=None, estimated_time=None):
+        r"""VulScanTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,6 +65,8 @@ class VulScanTaskInfo:
         :type success_host_num: int
         :param failed_host_num: 该任务已扫描失败的主机数量
         :type failed_host_num: int
+        :param estimated_time: 预计完成时间
+        :type estimated_time: int
         """
         
         
@@ -76,6 +80,7 @@ class VulScanTaskInfo:
         self._scanning_host_num = None
         self._success_host_num = None
         self._failed_host_num = None
+        self._estimated_time = None
         self.discriminator = None
 
         if id is not None:
@@ -96,10 +101,12 @@ class VulScanTaskInfo:
             self.success_host_num = success_host_num
         if failed_host_num is not None:
             self.failed_host_num = failed_host_num
+        if estimated_time is not None:
+            self.estimated_time = estimated_time
 
     @property
     def id(self):
-        """Gets the id of this VulScanTaskInfo.
+        r"""Gets the id of this VulScanTaskInfo.
 
         任务ID
 
@@ -110,7 +117,7 @@ class VulScanTaskInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VulScanTaskInfo.
+        r"""Sets the id of this VulScanTaskInfo.
 
         任务ID
 
@@ -121,7 +128,7 @@ class VulScanTaskInfo:
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this VulScanTaskInfo.
+        r"""Gets the scan_type of this VulScanTaskInfo.
 
         扫描任务的类型，包含如下：   -manual : 手动扫描任务   -schedule : 定时扫描任务
 
@@ -132,7 +139,7 @@ class VulScanTaskInfo:
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this VulScanTaskInfo.
+        r"""Sets the scan_type of this VulScanTaskInfo.
 
         扫描任务的类型，包含如下：   -manual : 手动扫描任务   -schedule : 定时扫描任务
 
@@ -143,7 +150,7 @@ class VulScanTaskInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this VulScanTaskInfo.
+        r"""Gets the start_time of this VulScanTaskInfo.
 
         扫描任务开始的时间
 
@@ -154,7 +161,7 @@ class VulScanTaskInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this VulScanTaskInfo.
+        r"""Sets the start_time of this VulScanTaskInfo.
 
         扫描任务开始的时间
 
@@ -165,7 +172,7 @@ class VulScanTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this VulScanTaskInfo.
+        r"""Gets the end_time of this VulScanTaskInfo.
 
         扫描任务结束的时间
 
@@ -176,7 +183,7 @@ class VulScanTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this VulScanTaskInfo.
+        r"""Sets the end_time of this VulScanTaskInfo.
 
         扫描任务结束的时间
 
@@ -187,7 +194,7 @@ class VulScanTaskInfo:
 
     @property
     def scan_vul_types(self):
-        """Gets the scan_vul_types of this VulScanTaskInfo.
+        r"""Gets the scan_vul_types of this VulScanTaskInfo.
 
         该任务扫描的漏洞类型列表
 
@@ -198,7 +205,7 @@ class VulScanTaskInfo:
 
     @scan_vul_types.setter
     def scan_vul_types(self, scan_vul_types):
-        """Sets the scan_vul_types of this VulScanTaskInfo.
+        r"""Sets the scan_vul_types of this VulScanTaskInfo.
 
         该任务扫描的漏洞类型列表
 
@@ -209,7 +216,7 @@ class VulScanTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this VulScanTaskInfo.
+        r"""Gets the status of this VulScanTaskInfo.
 
         扫描任务的执行状态，包含如下：   -running : 扫描中   -finished : 扫描完成
 
@@ -220,7 +227,7 @@ class VulScanTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VulScanTaskInfo.
+        r"""Sets the status of this VulScanTaskInfo.
 
         扫描任务的执行状态，包含如下：   -running : 扫描中   -finished : 扫描完成
 
@@ -231,7 +238,7 @@ class VulScanTaskInfo:
 
     @property
     def scanning_host_num(self):
-        """Gets the scanning_host_num of this VulScanTaskInfo.
+        r"""Gets the scanning_host_num of this VulScanTaskInfo.
 
         该任务处于扫描中状态的主机数量
 
@@ -242,7 +249,7 @@ class VulScanTaskInfo:
 
     @scanning_host_num.setter
     def scanning_host_num(self, scanning_host_num):
-        """Sets the scanning_host_num of this VulScanTaskInfo.
+        r"""Sets the scanning_host_num of this VulScanTaskInfo.
 
         该任务处于扫描中状态的主机数量
 
@@ -253,7 +260,7 @@ class VulScanTaskInfo:
 
     @property
     def success_host_num(self):
-        """Gets the success_host_num of this VulScanTaskInfo.
+        r"""Gets the success_host_num of this VulScanTaskInfo.
 
         该任务已扫描成功的主机数量
 
@@ -264,7 +271,7 @@ class VulScanTaskInfo:
 
     @success_host_num.setter
     def success_host_num(self, success_host_num):
-        """Sets the success_host_num of this VulScanTaskInfo.
+        r"""Sets the success_host_num of this VulScanTaskInfo.
 
         该任务已扫描成功的主机数量
 
@@ -275,7 +282,7 @@ class VulScanTaskInfo:
 
     @property
     def failed_host_num(self):
-        """Gets the failed_host_num of this VulScanTaskInfo.
+        r"""Gets the failed_host_num of this VulScanTaskInfo.
 
         该任务已扫描失败的主机数量
 
@@ -286,7 +293,7 @@ class VulScanTaskInfo:
 
     @failed_host_num.setter
     def failed_host_num(self, failed_host_num):
-        """Sets the failed_host_num of this VulScanTaskInfo.
+        r"""Sets the failed_host_num of this VulScanTaskInfo.
 
         该任务已扫描失败的主机数量
 
@@ -294,6 +301,28 @@ class VulScanTaskInfo:
         :type failed_host_num: int
         """
         self._failed_host_num = failed_host_num
+
+    @property
+    def estimated_time(self):
+        r"""Gets the estimated_time of this VulScanTaskInfo.
+
+        预计完成时间
+
+        :return: The estimated_time of this VulScanTaskInfo.
+        :rtype: int
+        """
+        return self._estimated_time
+
+    @estimated_time.setter
+    def estimated_time(self, estimated_time):
+        r"""Sets the estimated_time of this VulScanTaskInfo.
+
+        预计完成时间
+
+        :param estimated_time: The estimated_time of this VulScanTaskInfo.
+        :type estimated_time: int
+        """
+        self._estimated_time = estimated_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

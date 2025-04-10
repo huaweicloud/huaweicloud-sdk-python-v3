@@ -37,7 +37,7 @@ class TopoLine:
     }
 
     def __init__(self, from_node=None, to_node=None, direction=None, collector=None, target_env_id=None, hints=None, filter_value=None):
-        """TopoLine
+        r"""TopoLine
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TopoLine:
 
     @property
     def from_node(self):
-        """Gets the from_node of this TopoLine.
+        r"""Gets the from_node of this TopoLine.
 
         开始节点。
 
@@ -96,7 +96,7 @@ class TopoLine:
 
     @from_node.setter
     def from_node(self, from_node):
-        """Sets the from_node of this TopoLine.
+        r"""Sets the from_node of this TopoLine.
 
         开始节点。
 
@@ -107,7 +107,7 @@ class TopoLine:
 
     @property
     def to_node(self):
-        """Gets the to_node of this TopoLine.
+        r"""Gets the to_node of this TopoLine.
 
         结束节点。
 
@@ -118,7 +118,7 @@ class TopoLine:
 
     @to_node.setter
     def to_node(self, to_node):
-        """Sets the to_node of this TopoLine.
+        r"""Sets the to_node of this TopoLine.
 
         结束节点。
 
@@ -129,7 +129,7 @@ class TopoLine:
 
     @property
     def direction(self):
-        """Gets the direction of this TopoLine.
+        r"""Gets the direction of this TopoLine.
 
         指向。
 
@@ -140,7 +140,7 @@ class TopoLine:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this TopoLine.
+        r"""Sets the direction of this TopoLine.
 
         指向。
 
@@ -151,7 +151,7 @@ class TopoLine:
 
     @property
     def collector(self):
-        """Gets the collector of this TopoLine.
+        r"""Gets the collector of this TopoLine.
 
         采集器名称。
 
@@ -162,7 +162,7 @@ class TopoLine:
 
     @collector.setter
     def collector(self, collector):
-        """Sets the collector of this TopoLine.
+        r"""Sets the collector of this TopoLine.
 
         采集器名称。
 
@@ -173,7 +173,7 @@ class TopoLine:
 
     @property
     def target_env_id(self):
-        """Gets the target_env_id of this TopoLine.
+        r"""Gets the target_env_id of this TopoLine.
 
         环境id。
 
@@ -184,7 +184,7 @@ class TopoLine:
 
     @target_env_id.setter
     def target_env_id(self, target_env_id):
-        """Sets the target_env_id of this TopoLine.
+        r"""Sets the target_env_id of this TopoLine.
 
         环境id。
 
@@ -195,7 +195,7 @@ class TopoLine:
 
     @property
     def hints(self):
-        """Gets the hints of this TopoLine.
+        r"""Gets the hints of this TopoLine.
 
         线条上的提示信息。
 
@@ -206,7 +206,7 @@ class TopoLine:
 
     @hints.setter
     def hints(self, hints):
-        """Sets the hints of this TopoLine.
+        r"""Sets the hints of this TopoLine.
 
         线条上的提示信息。
 
@@ -217,7 +217,7 @@ class TopoLine:
 
     @property
     def filter_value(self):
-        """Gets the filter_value of this TopoLine.
+        r"""Gets the filter_value of this TopoLine.
 
         过滤值。
 
@@ -228,7 +228,7 @@ class TopoLine:
 
     @filter_value.setter
     def filter_value(self, filter_value):
-        """Sets the filter_value of this TopoLine.
+        r"""Sets the filter_value of this TopoLine.
 
         过滤值。
 

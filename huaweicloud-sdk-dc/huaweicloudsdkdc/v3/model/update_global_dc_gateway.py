@@ -29,7 +29,7 @@ class UpdateGlobalDcGateway:
     }
 
     def __init__(self, name=None, description=None, address_family=None):
-        """UpdateGlobalDcGateway
+        r"""UpdateGlobalDcGateway
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateGlobalDcGateway:
 
     @property
     def name(self):
-        """Gets the name of this UpdateGlobalDcGateway.
+        r"""Gets the name of this UpdateGlobalDcGateway.
 
         global-dc-gateway名字。
 
@@ -68,7 +68,7 @@ class UpdateGlobalDcGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateGlobalDcGateway.
+        r"""Sets the name of this UpdateGlobalDcGateway.
 
         global-dc-gateway名字。
 
@@ -79,7 +79,7 @@ class UpdateGlobalDcGateway:
 
     @property
     def description(self):
-        """Gets the description of this UpdateGlobalDcGateway.
+        r"""Gets the description of this UpdateGlobalDcGateway.
 
         描述信息。
 
@@ -90,7 +90,7 @@ class UpdateGlobalDcGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateGlobalDcGateway.
+        r"""Sets the description of this UpdateGlobalDcGateway.
 
         描述信息。
 
@@ -101,7 +101,7 @@ class UpdateGlobalDcGateway:
 
     @property
     def address_family(self):
-        """Gets the address_family of this UpdateGlobalDcGateway.
+        r"""Gets the address_family of this UpdateGlobalDcGateway.
 
         global-dc-gateway的地址族
 
@@ -112,7 +112,7 @@ class UpdateGlobalDcGateway:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this UpdateGlobalDcGateway.
+        r"""Sets the address_family of this UpdateGlobalDcGateway.
 
         global-dc-gateway的地址族
 

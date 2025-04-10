@@ -32,7 +32,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, identity_store_id=None, member_id=None, membership_id=None):
-        """DescribeGroupMembershipResponse
+        r"""DescribeGroupMembershipResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this DescribeGroupMembershipResponse.
+        r"""Gets the group_id of this DescribeGroupMembershipResponse.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -76,7 +76,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DescribeGroupMembershipResponse.
+        r"""Sets the group_id of this DescribeGroupMembershipResponse.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -87,7 +87,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this DescribeGroupMembershipResponse.
+        r"""Gets the identity_store_id of this DescribeGroupMembershipResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -98,7 +98,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this DescribeGroupMembershipResponse.
+        r"""Sets the identity_store_id of this DescribeGroupMembershipResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -109,7 +109,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @property
     def member_id(self):
-        """Gets the member_id of this DescribeGroupMembershipResponse.
+        r"""Gets the member_id of this DescribeGroupMembershipResponse.
 
         :return: The member_id of this DescribeGroupMembershipResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -118,7 +118,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this DescribeGroupMembershipResponse.
+        r"""Sets the member_id of this DescribeGroupMembershipResponse.
 
         :param member_id: The member_id of this DescribeGroupMembershipResponse.
         :type member_id: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -127,7 +127,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @property
     def membership_id(self):
-        """Gets the membership_id of this DescribeGroupMembershipResponse.
+        r"""Gets the membership_id of this DescribeGroupMembershipResponse.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 
@@ -138,7 +138,7 @@ class DescribeGroupMembershipResponse(SdkResponse):
 
     @membership_id.setter
     def membership_id(self, membership_id):
-        """Sets the membership_id of this DescribeGroupMembershipResponse.
+        r"""Sets the membership_id of this DescribeGroupMembershipResponse.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 

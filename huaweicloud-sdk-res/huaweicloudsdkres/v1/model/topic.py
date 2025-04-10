@@ -27,7 +27,7 @@ class Topic:
     }
 
     def __init__(self, name=None, id=None):
-        """Topic
+        r"""Topic
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Topic:
 
     @property
     def name(self):
-        """Gets the name of this Topic.
+        r"""Gets the name of this Topic.
 
         名称。
 
@@ -61,7 +61,7 @@ class Topic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Topic.
+        r"""Sets the name of this Topic.
 
         名称。
 
@@ -72,7 +72,7 @@ class Topic:
 
     @property
     def id(self):
-        """Gets the id of this Topic.
+        r"""Gets the id of this Topic.
 
         id。
 
@@ -83,7 +83,7 @@ class Topic:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Topic.
+        r"""Sets the id of this Topic.
 
         id。
 

@@ -25,7 +25,7 @@ class ShowOauth2TokenRequest:
     }
 
     def __init__(self, body=None):
-        """ShowOauth2TokenRequest
+        r"""ShowOauth2TokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowOauth2TokenRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowOauth2TokenRequest.
+        r"""Gets the body of this ShowOauth2TokenRequest.
 
         :return: The body of this ShowOauth2TokenRequest.
         :rtype: :class:`huaweicloudsdkorgid.v1.ShowOauth2TokenRequestBody`
@@ -52,7 +52,7 @@ class ShowOauth2TokenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowOauth2TokenRequest.
+        r"""Sets the body of this ShowOauth2TokenRequest.
 
         :param body: The body of this ShowOauth2TokenRequest.
         :type body: :class:`huaweicloudsdkorgid.v1.ShowOauth2TokenRequestBody`

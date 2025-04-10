@@ -36,7 +36,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
     }
 
     def __init__(self, stat_type=None, group_by=None, stat_num=None, values=None, start_time=None, end_time=None):
-        """ShowHttpAttackDistributionStatsResponse
+        r"""ShowHttpAttackDistributionStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowHttpAttackDistributionStatsResponse.
+        r"""Gets the stat_type of this ShowHttpAttackDistributionStatsResponse.
 
         安全统计指标类型。
 
@@ -90,7 +90,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowHttpAttackDistributionStatsResponse.
+        r"""Sets the stat_type of this ShowHttpAttackDistributionStatsResponse.
 
         安全统计指标类型。
 
@@ -101,7 +101,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowHttpAttackDistributionStatsResponse.
+        r"""Gets the group_by of this ShowHttpAttackDistributionStatsResponse.
 
         分组统计维度
 
@@ -112,7 +112,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowHttpAttackDistributionStatsResponse.
+        r"""Sets the group_by of this ShowHttpAttackDistributionStatsResponse.
 
         分组统计维度
 
@@ -123,7 +123,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @property
     def stat_num(self):
-        """Gets the stat_num of this ShowHttpAttackDistributionStatsResponse.
+        r"""Gets the stat_num of this ShowHttpAttackDistributionStatsResponse.
 
         统计数量
 
@@ -134,7 +134,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @stat_num.setter
     def stat_num(self, stat_num):
-        """Sets the stat_num of this ShowHttpAttackDistributionStatsResponse.
+        r"""Sets the stat_num of this ShowHttpAttackDistributionStatsResponse.
 
         统计数量
 
@@ -145,7 +145,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowHttpAttackDistributionStatsResponse.
+        r"""Gets the values of this ShowHttpAttackDistributionStatsResponse.
 
         统计数组
 
@@ -156,7 +156,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowHttpAttackDistributionStatsResponse.
+        r"""Sets the values of this ShowHttpAttackDistributionStatsResponse.
 
         统计数组
 
@@ -167,7 +167,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHttpAttackDistributionStatsResponse.
+        r"""Gets the start_time of this ShowHttpAttackDistributionStatsResponse.
 
         开始时间
 
@@ -178,7 +178,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHttpAttackDistributionStatsResponse.
+        r"""Sets the start_time of this ShowHttpAttackDistributionStatsResponse.
 
         开始时间
 
@@ -189,7 +189,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHttpAttackDistributionStatsResponse.
+        r"""Gets the end_time of this ShowHttpAttackDistributionStatsResponse.
 
         结束时间
 
@@ -200,7 +200,7 @@ class ShowHttpAttackDistributionStatsResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHttpAttackDistributionStatsResponse.
+        r"""Sets the end_time of this ShowHttpAttackDistributionStatsResponse.
 
         结束时间
 

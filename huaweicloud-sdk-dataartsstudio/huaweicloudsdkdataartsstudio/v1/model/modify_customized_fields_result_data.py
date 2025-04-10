@@ -25,7 +25,7 @@ class ModifyCustomizedFieldsResultData:
     }
 
     def __init__(self, value=None):
-        """ModifyCustomizedFieldsResultData
+        r"""ModifyCustomizedFieldsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyCustomizedFieldsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ModifyCustomizedFieldsResultData.
+        r"""Gets the value of this ModifyCustomizedFieldsResultData.
 
         数据连接信息数组
 
@@ -54,7 +54,7 @@ class ModifyCustomizedFieldsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ModifyCustomizedFieldsResultData.
+        r"""Sets the value of this ModifyCustomizedFieldsResultData.
 
         数据连接信息数组
 

@@ -27,7 +27,7 @@ class ListTagsByResourceTypeRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_type=None):
-        """ListTagsByResourceTypeRequest
+        r"""ListTagsByResourceTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTagsByResourceTypeRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListTagsByResourceTypeRequest.
+        r"""Gets the ief_instance_id of this ListTagsByResourceTypeRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ListTagsByResourceTypeRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListTagsByResourceTypeRequest.
+        r"""Sets the ief_instance_id of this ListTagsByResourceTypeRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ListTagsByResourceTypeRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagsByResourceTypeRequest.
+        r"""Gets the resource_type of this ListTagsByResourceTypeRequest.
 
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
@@ -82,7 +82,7 @@ class ListTagsByResourceTypeRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagsByResourceTypeRequest.
+        r"""Sets the resource_type of this ListTagsByResourceTypeRequest.
 
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 

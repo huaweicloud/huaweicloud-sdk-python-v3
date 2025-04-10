@@ -33,7 +33,7 @@ class BatchUpdatePartitionRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, body=None):
-        """BatchUpdatePartitionRequest
+        r"""BatchUpdatePartitionRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class BatchUpdatePartitionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchUpdatePartitionRequest.
+        r"""Gets the instance_id of this BatchUpdatePartitionRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class BatchUpdatePartitionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchUpdatePartitionRequest.
+        r"""Sets the instance_id of this BatchUpdatePartitionRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class BatchUpdatePartitionRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this BatchUpdatePartitionRequest.
+        r"""Gets the catalog_name of this BatchUpdatePartitionRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class BatchUpdatePartitionRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this BatchUpdatePartitionRequest.
+        r"""Sets the catalog_name of this BatchUpdatePartitionRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class BatchUpdatePartitionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this BatchUpdatePartitionRequest.
+        r"""Gets the database_name of this BatchUpdatePartitionRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class BatchUpdatePartitionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this BatchUpdatePartitionRequest.
+        r"""Sets the database_name of this BatchUpdatePartitionRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class BatchUpdatePartitionRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this BatchUpdatePartitionRequest.
+        r"""Gets the table_name of this BatchUpdatePartitionRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class BatchUpdatePartitionRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this BatchUpdatePartitionRequest.
+        r"""Sets the table_name of this BatchUpdatePartitionRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class BatchUpdatePartitionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdatePartitionRequest.
+        r"""Gets the body of this BatchUpdatePartitionRequest.
 
         :return: The body of this BatchUpdatePartitionRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.AlterPartitionsInput`
@@ -164,7 +164,7 @@ class BatchUpdatePartitionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdatePartitionRequest.
+        r"""Sets the body of this BatchUpdatePartitionRequest.
 
         :param body: The body of this BatchUpdatePartitionRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.AlterPartitionsInput`

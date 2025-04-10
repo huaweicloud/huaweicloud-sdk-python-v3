@@ -35,7 +35,7 @@ class ColumnsList:
     }
 
     def __init__(self, comment=None, column_name=None, column_type=None, seq_number=None, primary=None, partition_col=None):
-        """ColumnsList
+        r"""ColumnsList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ColumnsList:
 
     @property
     def comment(self):
-        """Gets the comment of this ColumnsList.
+        r"""Gets the comment of this ColumnsList.
 
         字段注解
 
@@ -89,7 +89,7 @@ class ColumnsList:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this ColumnsList.
+        r"""Sets the comment of this ColumnsList.
 
         字段注解
 
@@ -100,7 +100,7 @@ class ColumnsList:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ColumnsList.
+        r"""Gets the column_name of this ColumnsList.
 
         字段名称
 
@@ -111,7 +111,7 @@ class ColumnsList:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ColumnsList.
+        r"""Sets the column_name of this ColumnsList.
 
         字段名称
 
@@ -122,7 +122,7 @@ class ColumnsList:
 
     @property
     def column_type(self):
-        """Gets the column_type of this ColumnsList.
+        r"""Gets the column_type of this ColumnsList.
 
         字段类型
 
@@ -133,7 +133,7 @@ class ColumnsList:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this ColumnsList.
+        r"""Sets the column_type of this ColumnsList.
 
         字段类型
 
@@ -144,7 +144,7 @@ class ColumnsList:
 
     @property
     def seq_number(self):
-        """Gets the seq_number of this ColumnsList.
+        r"""Gets the seq_number of this ColumnsList.
 
         字段的顺序
 
@@ -155,7 +155,7 @@ class ColumnsList:
 
     @seq_number.setter
     def seq_number(self, seq_number):
-        """Sets the seq_number of this ColumnsList.
+        r"""Sets the seq_number of this ColumnsList.
 
         字段的顺序
 
@@ -166,7 +166,7 @@ class ColumnsList:
 
     @property
     def primary(self):
-        """Gets the primary of this ColumnsList.
+        r"""Gets the primary of this ColumnsList.
 
         字段是否为主键
 
@@ -177,7 +177,7 @@ class ColumnsList:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this ColumnsList.
+        r"""Sets the primary of this ColumnsList.
 
         字段是否为主键
 
@@ -188,7 +188,7 @@ class ColumnsList:
 
     @property
     def partition_col(self):
-        """Gets the partition_col of this ColumnsList.
+        r"""Gets the partition_col of this ColumnsList.
 
         是否对字段进行分割
 
@@ -199,7 +199,7 @@ class ColumnsList:
 
     @partition_col.setter
     def partition_col(self, partition_col):
-        """Sets the partition_col of this ColumnsList.
+        r"""Sets the partition_col of this ColumnsList.
 
         是否对字段进行分割
 

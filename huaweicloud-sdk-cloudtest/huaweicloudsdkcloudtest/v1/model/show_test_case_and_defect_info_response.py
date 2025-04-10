@@ -28,7 +28,7 @@ class ShowTestCaseAndDefectInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, values=None):
-        """ShowTestCaseAndDefectInfoResponse
+        r"""ShowTestCaseAndDefectInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTestCaseAndDefectInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTestCaseAndDefectInfoResponse.
+        r"""Gets the total of this ShowTestCaseAndDefectInfoResponse.
 
         起始记录数大于实际总条数时，值为0。
 
@@ -62,7 +62,7 @@ class ShowTestCaseAndDefectInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTestCaseAndDefectInfoResponse.
+        r"""Sets the total of this ShowTestCaseAndDefectInfoResponse.
 
         起始记录数大于实际总条数时，值为0。
 
@@ -73,7 +73,7 @@ class ShowTestCaseAndDefectInfoResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowTestCaseAndDefectInfoResponse.
+        r"""Gets the values of this ShowTestCaseAndDefectInfoResponse.
 
         查询用户用例关联缺陷的统计信息
 
@@ -84,7 +84,7 @@ class ShowTestCaseAndDefectInfoResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowTestCaseAndDefectInfoResponse.
+        r"""Sets the values of this ShowTestCaseAndDefectInfoResponse.
 
         查询用户用例关联缺陷的统计信息
 

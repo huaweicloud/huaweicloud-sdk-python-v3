@@ -26,7 +26,7 @@ class ShowDdmJobResultResponse(SdkResponse):
     }
 
     def __init__(self, job=None):
-        """ShowDdmJobResultResponse
+        r"""ShowDdmJobResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDdmJobResultResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this ShowDdmJobResultResponse.
+        r"""Gets the job of this ShowDdmJobResultResponse.
 
         :return: The job of this ShowDdmJobResultResponse.
         :rtype: :class:`huaweicloudsdkddm.v1.JobInfo`
@@ -53,7 +53,7 @@ class ShowDdmJobResultResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this ShowDdmJobResultResponse.
+        r"""Sets the job of this ShowDdmJobResultResponse.
 
         :param job: The job of this ShowDdmJobResultResponse.
         :type job: :class:`huaweicloudsdkddm.v1.JobInfo`

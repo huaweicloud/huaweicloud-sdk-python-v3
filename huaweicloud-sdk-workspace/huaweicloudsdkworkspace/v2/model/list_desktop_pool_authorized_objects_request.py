@@ -29,7 +29,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
     }
 
     def __init__(self, pool_id=None, offset=None, limit=None):
-        """ListDesktopPoolAuthorizedObjectsRequest
+        r"""ListDesktopPoolAuthorizedObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ListDesktopPoolAuthorizedObjectsRequest.
+        r"""Gets the pool_id of this ListDesktopPoolAuthorizedObjectsRequest.
 
         桌面池ID。
 
@@ -67,7 +67,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ListDesktopPoolAuthorizedObjectsRequest.
+        r"""Sets the pool_id of this ListDesktopPoolAuthorizedObjectsRequest.
 
         桌面池ID。
 
@@ -78,7 +78,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopPoolAuthorizedObjectsRequest.
+        r"""Gets the offset of this ListDesktopPoolAuthorizedObjectsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -89,7 +89,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopPoolAuthorizedObjectsRequest.
+        r"""Sets the offset of this ListDesktopPoolAuthorizedObjectsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -100,7 +100,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopPoolAuthorizedObjectsRequest.
+        r"""Gets the limit of this ListDesktopPoolAuthorizedObjectsRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
 
@@ -111,7 +111,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopPoolAuthorizedObjectsRequest.
+        r"""Sets the limit of this ListDesktopPoolAuthorizedObjectsRequest.
 
         用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
 

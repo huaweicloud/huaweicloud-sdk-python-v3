@@ -25,7 +25,7 @@ class RestHandsUpReqBody:
     }
 
     def __init__(self, hands_state=None):
-        """RestHandsUpReqBody
+        r"""RestHandsUpReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestHandsUpReqBody:
 
     @property
     def hands_state(self):
-        """Gets the hands_state of this RestHandsUpReqBody.
+        r"""Gets the hands_state of this RestHandsUpReqBody.
 
         - 0: 放下手 - 1: 举手
 
@@ -53,7 +53,7 @@ class RestHandsUpReqBody:
 
     @hands_state.setter
     def hands_state(self, hands_state):
-        """Sets the hands_state of this RestHandsUpReqBody.
+        r"""Sets the hands_state of this RestHandsUpReqBody.
 
         - 0: 放下手 - 1: 举手
 

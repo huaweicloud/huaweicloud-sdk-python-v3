@@ -35,7 +35,7 @@ class Flavor:
     }
 
     def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, az_status=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class Flavor:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this Flavor.
+        r"""Gets the engine_name of this Flavor.
 
         引擎名称。
 
@@ -83,7 +83,7 @@ class Flavor:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this Flavor.
+        r"""Sets the engine_name of this Flavor.
 
         引擎名称。
 
@@ -94,7 +94,7 @@ class Flavor:
 
     @property
     def type(self):
-        """Gets the type of this Flavor.
+        r"""Gets the type of this Flavor.
 
         节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
 
@@ -105,7 +105,7 @@ class Flavor:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Flavor.
+        r"""Sets the type of this Flavor.
 
         节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
 
@@ -116,7 +116,7 @@ class Flavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this Flavor.
+        r"""Gets the vcpus of this Flavor.
 
         CPU核数。
 
@@ -127,7 +127,7 @@ class Flavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this Flavor.
+        r"""Sets the vcpus of this Flavor.
 
         CPU核数。
 
@@ -138,7 +138,7 @@ class Flavor:
 
     @property
     def ram(self):
-        """Gets the ram of this Flavor.
+        r"""Gets the ram of this Flavor.
 
         内存大小，单位为兆字节。
 
@@ -149,7 +149,7 @@ class Flavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this Flavor.
+        r"""Sets the ram of this Flavor.
 
         内存大小，单位为兆字节。
 
@@ -160,7 +160,7 @@ class Flavor:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this Flavor.
+        r"""Gets the spec_code of this Flavor.
 
         资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
@@ -171,7 +171,7 @@ class Flavor:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this Flavor.
+        r"""Sets the spec_code of this Flavor.
 
         资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
@@ -182,7 +182,7 @@ class Flavor:
 
     @property
     def az_status(self):
-        """Gets the az_status of this Flavor.
+        r"""Gets the az_status of this Flavor.
 
         '支持该规格的可用区ID。' 示例：[\"cn-east-2a\",\"cn-east-2b\",\"cn-east-2c\"]。
 
@@ -193,7 +193,7 @@ class Flavor:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this Flavor.
+        r"""Sets the az_status of this Flavor.
 
         '支持该规格的可用区ID。' 示例：[\"cn-east-2a\",\"cn-east-2b\",\"cn-east-2c\"]。
 

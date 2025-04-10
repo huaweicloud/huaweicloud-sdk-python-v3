@@ -31,7 +31,7 @@ class SingleFieldExpression:
     }
 
     def __init__(self, field=None, func=None, value=None, value_array=None):
-        """SingleFieldExpression
+        r"""SingleFieldExpression
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SingleFieldExpression:
 
     @property
     def field(self):
-        """Gets the field of this SingleFieldExpression.
+        r"""Gets the field of this SingleFieldExpression.
 
         条件字段。
 
@@ -73,7 +73,7 @@ class SingleFieldExpression:
 
     @field.setter
     def field(self, field):
-        """Sets the field of this SingleFieldExpression.
+        r"""Sets the field of this SingleFieldExpression.
 
         条件字段。
 
@@ -84,7 +84,7 @@ class SingleFieldExpression:
 
     @property
     def func(self):
-        """Gets the func of this SingleFieldExpression.
+        r"""Gets the func of this SingleFieldExpression.
 
         条件函数，取值如\"$gt\", $lt\",\"$gte\", $lte\" \"$eq\", \"$ne\", \"$prefix\", \"$exists\"。
 
@@ -95,7 +95,7 @@ class SingleFieldExpression:
 
     @func.setter
     def func(self, func):
-        """Sets the func of this SingleFieldExpression.
+        r"""Sets the func of this SingleFieldExpression.
 
         条件函数，取值如\"$gt\", $lt\",\"$gte\", $lte\" \"$eq\", \"$ne\", \"$prefix\", \"$exists\"。
 
@@ -106,7 +106,7 @@ class SingleFieldExpression:
 
     @property
     def value(self):
-        """Gets the value of this SingleFieldExpression.
+        r"""Gets the value of this SingleFieldExpression.
 
         value和value_array二选一。 - value条件值，适用于除\"$in\", \"$nin\"外的func。 - 字段名无意义，可以传空，也可以传字段名。 - $exists值为true/false。 > $prefix操作只适用于string和binary类型。
 
@@ -117,7 +117,7 @@ class SingleFieldExpression:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SingleFieldExpression.
+        r"""Sets the value of this SingleFieldExpression.
 
         value和value_array二选一。 - value条件值，适用于除\"$in\", \"$nin\"外的func。 - 字段名无意义，可以传空，也可以传字段名。 - $exists值为true/false。 > $prefix操作只适用于string和binary类型。
 
@@ -128,7 +128,7 @@ class SingleFieldExpression:
 
     @property
     def value_array(self):
-        """Gets the value_array of this SingleFieldExpression.
+        r"""Gets the value_array of this SingleFieldExpression.
 
         \"value\"和\"value_array\"二选一。 - \"value_array\" 条件值列表, 值用于\"$in\", \"$nin\"。
 
@@ -139,7 +139,7 @@ class SingleFieldExpression:
 
     @value_array.setter
     def value_array(self, value_array):
-        """Sets the value_array of this SingleFieldExpression.
+        r"""Sets the value_array of this SingleFieldExpression.
 
         \"value\"和\"value_array\"二选一。 - \"value_array\" 条件值列表, 值用于\"$in\", \"$nin\"。
 

@@ -27,7 +27,7 @@ class IdAndStatus:
     }
 
     def __init__(self, id=None, status=None):
-        """IdAndStatus
+        r"""IdAndStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IdAndStatus:
 
     @property
     def id(self):
-        """Gets the id of this IdAndStatus.
+        r"""Gets the id of this IdAndStatus.
 
         **参数说明**：摄像头、雷达或RSU的ID。
 
@@ -61,7 +61,7 @@ class IdAndStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IdAndStatus.
+        r"""Sets the id of this IdAndStatus.
 
         **参数说明**：摄像头、雷达或RSU的ID。
 
@@ -72,7 +72,7 @@ class IdAndStatus:
 
     @property
     def status(self):
-        """Gets the status of this IdAndStatus.
+        r"""Gets the status of this IdAndStatus.
 
         **参数说明**：摄像头、雷达或RSU的状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化
 
@@ -83,7 +83,7 @@ class IdAndStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IdAndStatus.
+        r"""Sets the status of this IdAndStatus.
 
         **参数说明**：摄像头、雷达或RSU的状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化
 

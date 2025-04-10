@@ -28,7 +28,7 @@ class ListApplicationEndpointAttributesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, attributes=None):
-        """ListApplicationEndpointAttributesResponse
+        r"""ListApplicationEndpointAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListApplicationEndpointAttributesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListApplicationEndpointAttributesResponse.
+        r"""Gets the request_id of this ListApplicationEndpointAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ListApplicationEndpointAttributesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListApplicationEndpointAttributesResponse.
+        r"""Sets the request_id of this ListApplicationEndpointAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ListApplicationEndpointAttributesResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this ListApplicationEndpointAttributesResponse.
+        r"""Gets the attributes of this ListApplicationEndpointAttributesResponse.
 
         :return: The attributes of this ListApplicationEndpointAttributesResponse.
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesResponseBodyAttributes`
@@ -82,7 +82,7 @@ class ListApplicationEndpointAttributesResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ListApplicationEndpointAttributesResponse.
+        r"""Sets the attributes of this ListApplicationEndpointAttributesResponse.
 
         :param attributes: The attributes of this ListApplicationEndpointAttributesResponse.
         :type attributes: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesResponseBodyAttributes`

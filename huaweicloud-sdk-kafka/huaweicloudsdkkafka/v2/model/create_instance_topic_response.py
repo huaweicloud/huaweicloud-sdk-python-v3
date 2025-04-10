@@ -26,7 +26,7 @@ class CreateInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self, name=None):
-        """CreateInstanceTopicResponse
+        r"""CreateInstanceTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateInstanceTopicResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceTopicResponse.
+        r"""Gets the name of this CreateInstanceTopicResponse.
 
         topic名称。
 
@@ -55,7 +55,7 @@ class CreateInstanceTopicResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceTopicResponse.
+        r"""Sets the name of this CreateInstanceTopicResponse.
 
         topic名称。
 

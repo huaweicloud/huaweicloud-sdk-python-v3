@@ -26,7 +26,7 @@ class ShowTraceEventsResponse(SdkResponse):
     }
 
     def __init__(self, span_event_list=None):
-        """ShowTraceEventsResponse
+        r"""ShowTraceEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTraceEventsResponse(SdkResponse):
 
     @property
     def span_event_list(self):
-        """Gets the span_event_list of this ShowTraceEventsResponse.
+        r"""Gets the span_event_list of this ShowTraceEventsResponse.
 
         span event信息列表。
 
@@ -55,7 +55,7 @@ class ShowTraceEventsResponse(SdkResponse):
 
     @span_event_list.setter
     def span_event_list(self, span_event_list):
-        """Sets the span_event_list of this ShowTraceEventsResponse.
+        r"""Sets the span_event_list of this ShowTraceEventsResponse.
 
         span event信息列表。
 

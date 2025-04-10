@@ -31,7 +31,7 @@ class Features:
     }
 
     def __init__(self, support_acl=None, support_transparent_client_ip=None, support_ssl=None, support_audit_log=None):
-        """Features
+        r"""Features
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Features:
 
     @property
     def support_acl(self):
-        """Gets the support_acl of this Features.
+        r"""Gets the support_acl of this Features.
 
         是否支持acl - true：是 - false：否 
 
@@ -75,7 +75,7 @@ class Features:
 
     @support_acl.setter
     def support_acl(self, support_acl):
-        """Sets the support_acl of this Features.
+        r"""Sets the support_acl of this Features.
 
         是否支持acl - true：是 - false：否 
 
@@ -86,7 +86,7 @@ class Features:
 
     @property
     def support_transparent_client_ip(self):
-        """Gets the support_transparent_client_ip of this Features.
+        r"""Gets the support_transparent_client_ip of this Features.
 
         实例是否支持客户端ip透传 - true：是 - false：否 
 
@@ -97,7 +97,7 @@ class Features:
 
     @support_transparent_client_ip.setter
     def support_transparent_client_ip(self, support_transparent_client_ip):
-        """Sets the support_transparent_client_ip of this Features.
+        r"""Sets the support_transparent_client_ip of this Features.
 
         实例是否支持客户端ip透传 - true：是 - false：否 
 
@@ -108,7 +108,7 @@ class Features:
 
     @property
     def support_ssl(self):
-        """Gets the support_ssl of this Features.
+        r"""Gets the support_ssl of this Features.
 
         是否支持SSL - true：是 - false：否 
 
@@ -119,7 +119,7 @@ class Features:
 
     @support_ssl.setter
     def support_ssl(self, support_ssl):
-        """Sets the support_ssl of this Features.
+        r"""Sets the support_ssl of this Features.
 
         是否支持SSL - true：是 - false：否 
 
@@ -130,7 +130,7 @@ class Features:
 
     @property
     def support_audit_log(self):
-        """Gets the support_audit_log of this Features.
+        r"""Gets the support_audit_log of this Features.
 
         是否支持审计日志 - true: 是 - false: 否 
 
@@ -141,7 +141,7 @@ class Features:
 
     @support_audit_log.setter
     def support_audit_log(self, support_audit_log):
-        """Sets the support_audit_log of this Features.
+        r"""Sets the support_audit_log of this Features.
 
         是否支持审计日志 - true: 是 - false: 否 
 

@@ -27,7 +27,7 @@ class TopReferSummary:
     }
 
     def __init__(self, refer=None, value=None):
-        """TopReferSummary
+        r"""TopReferSummary
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TopReferSummary:
 
     @property
     def refer(self):
-        """Gets the refer of this TopReferSummary.
+        r"""Gets the refer of this TopReferSummary.
 
         referer值。
 
@@ -61,7 +61,7 @@ class TopReferSummary:
 
     @refer.setter
     def refer(self, refer):
-        """Sets the refer of this TopReferSummary.
+        r"""Sets the refer of this TopReferSummary.
 
         referer值。
 
@@ -72,7 +72,7 @@ class TopReferSummary:
 
     @property
     def value(self):
-        """Gets the value of this TopReferSummary.
+        r"""Gets the value of this TopReferSummary.
 
         对应查询类型的值。（流量单位：Byte）
 
@@ -83,7 +83,7 @@ class TopReferSummary:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TopReferSummary.
+        r"""Sets the value of this TopReferSummary.
 
         对应查询类型的值。（流量单位：Byte）
 

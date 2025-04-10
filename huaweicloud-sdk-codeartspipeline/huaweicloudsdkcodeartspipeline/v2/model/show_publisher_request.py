@@ -27,7 +27,7 @@ class ShowPublisherRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """ShowPublisherRequest
+        r"""ShowPublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPublisherRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowPublisherRequest.
+        r"""Gets the domain_id of this ShowPublisherRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class ShowPublisherRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowPublisherRequest.
+        r"""Sets the domain_id of this ShowPublisherRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ShowPublisherRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPublisherRequest.
+        r"""Gets the body of this ShowPublisherRequest.
 
         :return: The body of this ShowPublisherRequest.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class ShowPublisherRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPublisherRequest.
+        r"""Sets the body of this ShowPublisherRequest.
 
         :param body: The body of this ShowPublisherRequest.
         :type body: list[str]

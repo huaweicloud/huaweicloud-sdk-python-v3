@@ -26,7 +26,7 @@ class BatchRestorePostgreSqlTablesResponse(SdkResponse):
     }
 
     def __init__(self, restore_result=None):
-        """BatchRestorePostgreSqlTablesResponse
+        r"""BatchRestorePostgreSqlTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchRestorePostgreSqlTablesResponse(SdkResponse):
 
     @property
     def restore_result(self):
-        """Gets the restore_result of this BatchRestorePostgreSqlTablesResponse.
+        r"""Gets the restore_result of this BatchRestorePostgreSqlTablesResponse.
 
         表信息
 
@@ -55,7 +55,7 @@ class BatchRestorePostgreSqlTablesResponse(SdkResponse):
 
     @restore_result.setter
     def restore_result(self, restore_result):
-        """Sets the restore_result of this BatchRestorePostgreSqlTablesResponse.
+        r"""Sets the restore_result of this BatchRestorePostgreSqlTablesResponse.
 
         表信息
 

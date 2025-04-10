@@ -30,7 +30,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ShowDevicesInGroupResponse
+        r"""ShowDevicesInGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowDevicesInGroupResponse.
+        r"""Gets the total of this ShowDevicesInGroupResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowDevicesInGroupResponse.
+        r"""Sets the total of this ShowDevicesInGroupResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowDevicesInGroupResponse.
+        r"""Gets the size of this ShowDevicesInGroupResponse.
 
         本次返回数量
 
@@ -91,7 +91,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowDevicesInGroupResponse.
+        r"""Sets the size of this ShowDevicesInGroupResponse.
 
         本次返回数量
 
@@ -102,7 +102,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowDevicesInGroupResponse.
+        r"""Gets the items of this ShowDevicesInGroupResponse.
 
         组内设备清单
 
@@ -113,7 +113,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowDevicesInGroupResponse.
+        r"""Sets the items of this ShowDevicesInGroupResponse.
 
         组内设备清单
 

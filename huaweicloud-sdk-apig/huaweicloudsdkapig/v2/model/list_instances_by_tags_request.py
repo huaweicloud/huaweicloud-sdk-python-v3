@@ -29,7 +29,7 @@ class ListInstancesByTagsRequest:
     }
 
     def __init__(self, offset=None, limit=None, body=None):
-        """ListInstancesByTagsRequest
+        r"""ListInstancesByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListInstancesByTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesByTagsRequest.
+        r"""Gets the offset of this ListInstancesByTagsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -68,7 +68,7 @@ class ListInstancesByTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesByTagsRequest.
+        r"""Sets the offset of this ListInstancesByTagsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -79,7 +79,7 @@ class ListInstancesByTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesByTagsRequest.
+        r"""Gets the limit of this ListInstancesByTagsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -90,7 +90,7 @@ class ListInstancesByTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesByTagsRequest.
+        r"""Sets the limit of this ListInstancesByTagsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -101,7 +101,7 @@ class ListInstancesByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstancesByTagsRequest.
+        r"""Gets the body of this ListInstancesByTagsRequest.
 
         :return: The body of this ListInstancesByTagsRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.TmsQueryReq`
@@ -110,7 +110,7 @@ class ListInstancesByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstancesByTagsRequest.
+        r"""Sets the body of this ListInstancesByTagsRequest.
 
         :param body: The body of this ListInstancesByTagsRequest.
         :type body: :class:`huaweicloudsdkapig.v2.TmsQueryReq`

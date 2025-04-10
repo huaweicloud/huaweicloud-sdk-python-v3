@@ -31,7 +31,7 @@ class BatchAssignAppAuthorizationsReq:
     }
 
     def __init__(self, app_ids=None, authorization_type=None, users=None, del_users=None):
-        """BatchAssignAppAuthorizationsReq
+        r"""BatchAssignAppAuthorizationsReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @property
     def app_ids(self):
-        """Gets the app_ids of this BatchAssignAppAuthorizationsReq.
+        r"""Gets the app_ids of this BatchAssignAppAuthorizationsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
@@ -73,7 +73,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @app_ids.setter
     def app_ids(self, app_ids):
-        """Sets the app_ids of this BatchAssignAppAuthorizationsReq.
+        r"""Sets the app_ids of this BatchAssignAppAuthorizationsReq.
 
         批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
@@ -84,7 +84,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this BatchAssignAppAuthorizationsReq.
+        r"""Gets the authorization_type of this BatchAssignAppAuthorizationsReq.
 
         :return: The authorization_type of this BatchAssignAppAuthorizationsReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -93,7 +93,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this BatchAssignAppAuthorizationsReq.
+        r"""Sets the authorization_type of this BatchAssignAppAuthorizationsReq.
 
         :param authorization_type: The authorization_type of this BatchAssignAppAuthorizationsReq.
         :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -102,7 +102,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @property
     def users(self):
-        """Gets the users of this BatchAssignAppAuthorizationsReq.
+        r"""Gets the users of this BatchAssignAppAuthorizationsReq.
 
         新增授权用户列表，一次请求数量区间 [0, 100]。
 
@@ -113,7 +113,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchAssignAppAuthorizationsReq.
+        r"""Sets the users of this BatchAssignAppAuthorizationsReq.
 
         新增授权用户列表，一次请求数量区间 [0, 100]。
 
@@ -124,7 +124,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @property
     def del_users(self):
-        """Gets the del_users of this BatchAssignAppAuthorizationsReq.
+        r"""Gets the del_users of this BatchAssignAppAuthorizationsReq.
 
         取消授权用户列表，一次请求数量区间 [0, 100]。
 
@@ -135,7 +135,7 @@ class BatchAssignAppAuthorizationsReq:
 
     @del_users.setter
     def del_users(self, del_users):
-        """Sets the del_users of this BatchAssignAppAuthorizationsReq.
+        r"""Sets the del_users of this BatchAssignAppAuthorizationsReq.
 
         取消授权用户列表，一次请求数量区间 [0, 100]。
 

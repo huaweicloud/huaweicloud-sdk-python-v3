@@ -27,7 +27,7 @@ class EnvironmentViewLabels:
     }
 
     def __init__(self, key=None, value=None):
-        """EnvironmentViewLabels
+        r"""EnvironmentViewLabels
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EnvironmentViewLabels:
 
     @property
     def key(self):
-        """Gets the key of this EnvironmentViewLabels.
+        r"""Gets the key of this EnvironmentViewLabels.
 
         :return: The key of this EnvironmentViewLabels.
         :rtype: str
@@ -59,7 +59,7 @@ class EnvironmentViewLabels:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this EnvironmentViewLabels.
+        r"""Sets the key of this EnvironmentViewLabels.
 
         :param key: The key of this EnvironmentViewLabels.
         :type key: str
@@ -68,7 +68,7 @@ class EnvironmentViewLabels:
 
     @property
     def value(self):
-        """Gets the value of this EnvironmentViewLabels.
+        r"""Gets the value of this EnvironmentViewLabels.
 
         :return: The value of this EnvironmentViewLabels.
         :rtype: str
@@ -77,7 +77,7 @@ class EnvironmentViewLabels:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnvironmentViewLabels.
+        r"""Sets the value of this EnvironmentViewLabels.
 
         :param value: The value of this EnvironmentViewLabels.
         :type value: str

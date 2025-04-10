@@ -37,7 +37,7 @@ class KafkaConnectionDetail:
     }
 
     def __init__(self, instance_id=None, addr=None, security_protocol=None, enable_sasl_ssl=None, user_name=None, password=None, acks=None):
-        """KafkaConnectionDetail
+        r"""KafkaConnectionDetail
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class KafkaConnectionDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this KafkaConnectionDetail.
+        r"""Gets the instance_id of this KafkaConnectionDetail.
 
         kafka实例id。
 
@@ -93,7 +93,7 @@ class KafkaConnectionDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this KafkaConnectionDetail.
+        r"""Sets the instance_id of this KafkaConnectionDetail.
 
         kafka实例id。
 
@@ -104,7 +104,7 @@ class KafkaConnectionDetail:
 
     @property
     def addr(self):
-        """Gets the addr of this KafkaConnectionDetail.
+        r"""Gets the addr of this KafkaConnectionDetail.
 
         kafka连接地址。
 
@@ -115,7 +115,7 @@ class KafkaConnectionDetail:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this KafkaConnectionDetail.
+        r"""Sets the addr of this KafkaConnectionDetail.
 
         kafka连接地址。
 
@@ -126,7 +126,7 @@ class KafkaConnectionDetail:
 
     @property
     def security_protocol(self):
-        """Gets the security_protocol of this KafkaConnectionDetail.
+        r"""Gets the security_protocol of this KafkaConnectionDetail.
 
         安全协议。
 
@@ -137,7 +137,7 @@ class KafkaConnectionDetail:
 
     @security_protocol.setter
     def security_protocol(self, security_protocol):
-        """Sets the security_protocol of this KafkaConnectionDetail.
+        r"""Sets the security_protocol of this KafkaConnectionDetail.
 
         安全协议。
 
@@ -148,7 +148,7 @@ class KafkaConnectionDetail:
 
     @property
     def enable_sasl_ssl(self):
-        """Gets the enable_sasl_ssl of this KafkaConnectionDetail.
+        r"""Gets the enable_sasl_ssl of this KafkaConnectionDetail.
 
         kafka实例是否开启了SASL_SSL。
 
@@ -159,7 +159,7 @@ class KafkaConnectionDetail:
 
     @enable_sasl_ssl.setter
     def enable_sasl_ssl(self, enable_sasl_ssl):
-        """Sets the enable_sasl_ssl of this KafkaConnectionDetail.
+        r"""Sets the enable_sasl_ssl of this KafkaConnectionDetail.
 
         kafka实例是否开启了SASL_SSL。
 
@@ -170,7 +170,7 @@ class KafkaConnectionDetail:
 
     @property
     def user_name(self):
-        """Gets the user_name of this KafkaConnectionDetail.
+        r"""Gets the user_name of this KafkaConnectionDetail.
 
         kafka实例用户名。实例开启了SASL_SSL时必填
 
@@ -181,7 +181,7 @@ class KafkaConnectionDetail:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this KafkaConnectionDetail.
+        r"""Sets the user_name of this KafkaConnectionDetail.
 
         kafka实例用户名。实例开启了SASL_SSL时必填
 
@@ -192,7 +192,7 @@ class KafkaConnectionDetail:
 
     @property
     def password(self):
-        """Gets the password of this KafkaConnectionDetail.
+        r"""Gets the password of this KafkaConnectionDetail.
 
         kafka实例密码。实例开启了SASL_SSL时必填
 
@@ -203,7 +203,7 @@ class KafkaConnectionDetail:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this KafkaConnectionDetail.
+        r"""Sets the password of this KafkaConnectionDetail.
 
         kafka实例密码。实例开启了SASL_SSL时必填
 
@@ -214,7 +214,7 @@ class KafkaConnectionDetail:
 
     @property
     def acks(self):
-        """Gets the acks of this KafkaConnectionDetail.
+        r"""Gets the acks of this KafkaConnectionDetail.
 
         收到Server端确认信号个数，表示procuder需要收到多少个这样的确认信号，算消息发送成功。acks参数代表了数据备份的可用性。支持选项： acks=0：表示producer不需要等待任何确认收到的信息，副本将立即加到socket buffer并认为已经发送。没有任何保障可以保证此种情况下server已经成功接收数据，同时重试配置不会发生作用（因为客户端不知道是否失败）回馈的offset会总是设置为-1。 acks=1：这意味着至少要等待leader已经成功将数据写入本地log，但是并没有等待所有follower是否成功写入。如果follower没有成功备份数据，而此时leader又无法提供服务，则消息会丢失。 acks=all：这意味着leader需要等待ISR中所有备份都成功写入日志，只有任何一个备份存活，数据都不会丢失。min.insync.replicas指定必须确认写入才能被认为成功的副本的最小数量。
 
@@ -225,7 +225,7 @@ class KafkaConnectionDetail:
 
     @acks.setter
     def acks(self, acks):
-        """Sets the acks of this KafkaConnectionDetail.
+        r"""Sets the acks of this KafkaConnectionDetail.
 
         收到Server端确认信号个数，表示procuder需要收到多少个这样的确认信号，算消息发送成功。acks参数代表了数据备份的可用性。支持选项： acks=0：表示producer不需要等待任何确认收到的信息，副本将立即加到socket buffer并认为已经发送。没有任何保障可以保证此种情况下server已经成功接收数据，同时重试配置不会发生作用（因为客户端不知道是否失败）回馈的offset会总是设置为-1。 acks=1：这意味着至少要等待leader已经成功将数据写入本地log，但是并没有等待所有follower是否成功写入。如果follower没有成功备份数据，而此时leader又无法提供服务，则消息会丢失。 acks=all：这意味着leader需要等待ISR中所有备份都成功写入日志，只有任何一个备份存活，数据都不会丢失。min.insync.replicas指定必须确认写入才能被认为成功的副本的最小数量。
 

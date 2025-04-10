@@ -29,7 +29,7 @@ class RunSurfacePointsReq:
     }
 
     def __init__(self, x_coord_list=None, y_coord_list=None, z_coord_list=None):
-        """RunSurfacePointsReq
+        r"""RunSurfacePointsReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RunSurfacePointsReq:
 
     @property
     def x_coord_list(self):
-        """Gets the x_coord_list of this RunSurfacePointsReq.
+        r"""Gets the x_coord_list of this RunSurfacePointsReq.
 
         x坐标集
 
@@ -65,7 +65,7 @@ class RunSurfacePointsReq:
 
     @x_coord_list.setter
     def x_coord_list(self, x_coord_list):
-        """Sets the x_coord_list of this RunSurfacePointsReq.
+        r"""Sets the x_coord_list of this RunSurfacePointsReq.
 
         x坐标集
 
@@ -76,7 +76,7 @@ class RunSurfacePointsReq:
 
     @property
     def y_coord_list(self):
-        """Gets the y_coord_list of this RunSurfacePointsReq.
+        r"""Gets the y_coord_list of this RunSurfacePointsReq.
 
         y坐标集
 
@@ -87,7 +87,7 @@ class RunSurfacePointsReq:
 
     @y_coord_list.setter
     def y_coord_list(self, y_coord_list):
-        """Sets the y_coord_list of this RunSurfacePointsReq.
+        r"""Sets the y_coord_list of this RunSurfacePointsReq.
 
         y坐标集
 
@@ -98,7 +98,7 @@ class RunSurfacePointsReq:
 
     @property
     def z_coord_list(self):
-        """Gets the z_coord_list of this RunSurfacePointsReq.
+        r"""Gets the z_coord_list of this RunSurfacePointsReq.
 
         z坐标集
 
@@ -109,7 +109,7 @@ class RunSurfacePointsReq:
 
     @z_coord_list.setter
     def z_coord_list(self, z_coord_list):
-        """Sets the z_coord_list of this RunSurfacePointsReq.
+        r"""Sets the z_coord_list of this RunSurfacePointsReq.
 
         z坐标集
 

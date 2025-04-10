@@ -27,7 +27,7 @@ class DesktopUsedInfo:
     }
 
     def __init__(self, date=None, use_time=None):
-        """DesktopUsedInfo
+        r"""DesktopUsedInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DesktopUsedInfo:
 
     @property
     def date(self):
-        """Gets the date of this DesktopUsedInfo.
+        r"""Gets the date of this DesktopUsedInfo.
 
         日期，格式：yyyy-MM-dd（UTC时间）。
 
@@ -61,7 +61,7 @@ class DesktopUsedInfo:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DesktopUsedInfo.
+        r"""Sets the date of this DesktopUsedInfo.
 
         日期，格式：yyyy-MM-dd（UTC时间）。
 
@@ -72,7 +72,7 @@ class DesktopUsedInfo:
 
     @property
     def use_time(self):
-        """Gets the use_time of this DesktopUsedInfo.
+        r"""Gets the use_time of this DesktopUsedInfo.
 
         总共在线时间单位:小时数（h）,精确到两位小数，如：1.32。
 
@@ -83,7 +83,7 @@ class DesktopUsedInfo:
 
     @use_time.setter
     def use_time(self, use_time):
-        """Sets the use_time of this DesktopUsedInfo.
+        r"""Sets the use_time of this DesktopUsedInfo.
 
         总共在线时间单位:小时数（h）,精确到两位小数，如：1.32。
 

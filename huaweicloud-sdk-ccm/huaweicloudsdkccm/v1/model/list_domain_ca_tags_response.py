@@ -26,7 +26,7 @@ class ListDomainCaTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListDomainCaTagsResponse
+        r"""ListDomainCaTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDomainCaTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListDomainCaTagsResponse.
+        r"""Gets the tags of this ListDomainCaTagsResponse.
 
         标签列表。
 
@@ -55,7 +55,7 @@ class ListDomainCaTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListDomainCaTagsResponse.
+        r"""Sets the tags of this ListDomainCaTagsResponse.
 
         标签列表。
 

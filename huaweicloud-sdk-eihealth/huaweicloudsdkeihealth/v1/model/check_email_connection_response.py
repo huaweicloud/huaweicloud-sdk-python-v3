@@ -24,7 +24,7 @@ class CheckEmailConnectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckEmailConnectionResponse
+        r"""CheckEmailConnectionResponse
 
         The model defined in huaweicloud sdk
 

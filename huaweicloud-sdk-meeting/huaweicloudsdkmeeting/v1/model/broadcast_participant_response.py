@@ -24,7 +24,7 @@ class BroadcastParticipantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BroadcastParticipantResponse
+        r"""BroadcastParticipantResponse
 
         The model defined in huaweicloud sdk
 

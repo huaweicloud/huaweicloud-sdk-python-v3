@@ -39,7 +39,7 @@ class AskQuestionReq:
     }
 
     def __init__(self, question=None, domains=None, top=None, session_id=None, source_qa_pair_id=None, operate_type=None, threshold_enable=None, product_type_id=None):
-        """AskQuestionReq
+        r"""AskQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class AskQuestionReq:
 
     @property
     def question(self):
-        """Gets the question of this AskQuestionReq.
+        r"""Gets the question of this AskQuestionReq.
 
         用户输入问题
 
@@ -101,7 +101,7 @@ class AskQuestionReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this AskQuestionReq.
+        r"""Sets the question of this AskQuestionReq.
 
         用户输入问题
 
@@ -112,7 +112,7 @@ class AskQuestionReq:
 
     @property
     def domains(self):
-        """Gets the domains of this AskQuestionReq.
+        r"""Gets the domains of this AskQuestionReq.
 
         主题列表
 
@@ -123,7 +123,7 @@ class AskQuestionReq:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this AskQuestionReq.
+        r"""Sets the domains of this AskQuestionReq.
 
         主题列表
 
@@ -134,7 +134,7 @@ class AskQuestionReq:
 
     @property
     def top(self):
-        """Gets the top of this AskQuestionReq.
+        r"""Gets the top of this AskQuestionReq.
 
         返回匹配度最高的数据条数
 
@@ -145,7 +145,7 @@ class AskQuestionReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this AskQuestionReq.
+        r"""Sets the top of this AskQuestionReq.
 
         返回匹配度最高的数据条数
 
@@ -156,7 +156,7 @@ class AskQuestionReq:
 
     @property
     def session_id(self):
-        """Gets the session_id of this AskQuestionReq.
+        r"""Gets the session_id of this AskQuestionReq.
 
         会话ID
 
@@ -167,7 +167,7 @@ class AskQuestionReq:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this AskQuestionReq.
+        r"""Sets the session_id of this AskQuestionReq.
 
         会话ID
 
@@ -178,7 +178,7 @@ class AskQuestionReq:
 
     @property
     def source_qa_pair_id(self):
-        """Gets the source_qa_pair_id of this AskQuestionReq.
+        r"""Gets the source_qa_pair_id of this AskQuestionReq.
 
         语料ID
 
@@ -189,7 +189,7 @@ class AskQuestionReq:
 
     @source_qa_pair_id.setter
     def source_qa_pair_id(self, source_qa_pair_id):
-        """Sets the source_qa_pair_id of this AskQuestionReq.
+        r"""Sets the source_qa_pair_id of this AskQuestionReq.
 
         语料ID
 
@@ -200,7 +200,7 @@ class AskQuestionReq:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this AskQuestionReq.
+        r"""Gets the operate_type of this AskQuestionReq.
 
         操作类型:0-手动输入，1-单击热点问题，2-单击猜你想问，3-单击推荐问题，4-单击问题提示
 
@@ -211,7 +211,7 @@ class AskQuestionReq:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this AskQuestionReq.
+        r"""Sets the operate_type of this AskQuestionReq.
 
         操作类型:0-手动输入，1-单击热点问题，2-单击猜你想问，3-单击推荐问题，4-单击问题提示
 
@@ -222,7 +222,7 @@ class AskQuestionReq:
 
     @property
     def threshold_enable(self):
-        """Gets the threshold_enable of this AskQuestionReq.
+        r"""Gets the threshold_enable of this AskQuestionReq.
 
         是否启用内部阈值开关
 
@@ -233,7 +233,7 @@ class AskQuestionReq:
 
     @threshold_enable.setter
     def threshold_enable(self, threshold_enable):
-        """Sets the threshold_enable of this AskQuestionReq.
+        r"""Sets the threshold_enable of this AskQuestionReq.
 
         是否启用内部阈值开关
 
@@ -244,7 +244,7 @@ class AskQuestionReq:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this AskQuestionReq.
+        r"""Gets the product_type_id of this AskQuestionReq.
 
         产品类型id
 
@@ -255,7 +255,7 @@ class AskQuestionReq:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this AskQuestionReq.
+        r"""Sets the product_type_id of this AskQuestionReq.
 
         产品类型id
 

@@ -24,7 +24,7 @@ class ResizeClusterWithExistedNodesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResizeClusterWithExistedNodesResponse
+        r"""ResizeClusterWithExistedNodesResponse
 
         The model defined in huaweicloud sdk
 

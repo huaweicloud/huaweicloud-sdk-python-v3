@@ -27,7 +27,7 @@ class SimpleFlavor:
     }
 
     def __init__(self, id=None, links=None):
-        """SimpleFlavor
+        r"""SimpleFlavor
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SimpleFlavor:
 
     @property
     def id(self):
-        """Gets the id of this SimpleFlavor.
+        r"""Gets the id of this SimpleFlavor.
 
         云服务器规格的ID。
 
@@ -59,7 +59,7 @@ class SimpleFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimpleFlavor.
+        r"""Sets the id of this SimpleFlavor.
 
         云服务器规格的ID。
 
@@ -70,7 +70,7 @@ class SimpleFlavor:
 
     @property
     def links(self):
-        """Gets the links of this SimpleFlavor.
+        r"""Gets the links of this SimpleFlavor.
 
         规格相关快捷链接地址。
 
@@ -81,7 +81,7 @@ class SimpleFlavor:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this SimpleFlavor.
+        r"""Sets the links of this SimpleFlavor.
 
         规格相关快捷链接地址。
 

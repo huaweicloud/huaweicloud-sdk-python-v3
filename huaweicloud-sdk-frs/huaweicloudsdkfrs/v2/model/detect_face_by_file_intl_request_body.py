@@ -25,7 +25,7 @@ class DetectFaceByFileIntlRequestBody:
     }
 
     def __init__(self, image_file=None):
-        """DetectFaceByFileIntlRequestBody
+        r"""DetectFaceByFileIntlRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetectFaceByFileIntlRequestBody:
 
     @property
     def image_file(self):
-        """Gets the image_file of this DetectFaceByFileIntlRequestBody.
+        r"""Gets the image_file of this DetectFaceByFileIntlRequestBody.
 
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 
@@ -53,7 +53,7 @@ class DetectFaceByFileIntlRequestBody:
 
     @image_file.setter
     def image_file(self, image_file):
-        """Sets the image_file of this DetectFaceByFileIntlRequestBody.
+        r"""Sets the image_file of this DetectFaceByFileIntlRequestBody.
 
         本地图片文件，图片不能超过8MB。上传文件时，请求格式为multipart。
 

@@ -35,7 +35,7 @@ class ListGovernancePolicyByPolicyIdRequest:
     }
 
     def __init__(self, content_type=None, x_engine_id=None, x_enterprise_project_id=None, x_environment=None, kind=None, policy_id=None):
-        """ListGovernancePolicyByPolicyIdRequest
+        r"""ListGovernancePolicyByPolicyIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Gets the content_type of this ListGovernancePolicyByPolicyIdRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -84,7 +84,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Sets the content_type of this ListGovernancePolicyByPolicyIdRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -95,7 +95,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Gets the x_engine_id of this ListGovernancePolicyByPolicyIdRequest.
 
         微服务引擎的实例ID
 
@@ -106,7 +106,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Sets the x_engine_id of this ListGovernancePolicyByPolicyIdRequest.
 
         微服务引擎的实例ID
 
@@ -117,7 +117,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Gets the x_enterprise_project_id of this ListGovernancePolicyByPolicyIdRequest.
 
         企业项目ID
 
@@ -128,7 +128,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Sets the x_enterprise_project_id of this ListGovernancePolicyByPolicyIdRequest.
 
         企业项目ID
 
@@ -139,7 +139,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @property
     def x_environment(self):
-        """Gets the x_environment of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Gets the x_environment of this ListGovernancePolicyByPolicyIdRequest.
 
         所属环境
 
@@ -150,7 +150,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @x_environment.setter
     def x_environment(self, x_environment):
-        """Sets the x_environment of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Sets the x_environment of this ListGovernancePolicyByPolicyIdRequest.
 
         所属环境
 
@@ -161,7 +161,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @property
     def kind(self):
-        """Gets the kind of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Gets the kind of this ListGovernancePolicyByPolicyIdRequest.
 
         治理策略类型
 
@@ -172,7 +172,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Sets the kind of this ListGovernancePolicyByPolicyIdRequest.
 
         治理策略类型
 
@@ -183,7 +183,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Gets the policy_id of this ListGovernancePolicyByPolicyIdRequest.
 
         治理策略id
 
@@ -194,7 +194,7 @@ class ListGovernancePolicyByPolicyIdRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListGovernancePolicyByPolicyIdRequest.
+        r"""Sets the policy_id of this ListGovernancePolicyByPolicyIdRequest.
 
         治理策略id
 

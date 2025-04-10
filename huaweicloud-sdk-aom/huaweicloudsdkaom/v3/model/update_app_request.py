@@ -27,7 +27,7 @@ class UpdateAppRequest:
     }
 
     def __init__(self, application_id=None, body=None):
-        """UpdateAppRequest
+        r"""UpdateAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAppRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateAppRequest.
+        r"""Gets the application_id of this UpdateAppRequest.
 
         应用id
 
@@ -60,7 +60,7 @@ class UpdateAppRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateAppRequest.
+        r"""Sets the application_id of this UpdateAppRequest.
 
         应用id
 
@@ -71,7 +71,7 @@ class UpdateAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppRequest.
+        r"""Gets the body of this UpdateAppRequest.
 
         :return: The body of this UpdateAppRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.BizAppParam`
@@ -80,7 +80,7 @@ class UpdateAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppRequest.
+        r"""Sets the body of this UpdateAppRequest.
 
         :param body: The body of this UpdateAppRequest.
         :type body: :class:`huaweicloudsdkaom.v3.BizAppParam`

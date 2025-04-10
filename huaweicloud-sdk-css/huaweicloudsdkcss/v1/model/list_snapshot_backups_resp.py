@@ -67,7 +67,7 @@ class ListSnapshotBackupsResp:
     }
 
     def __init__(self, created=None, datastore=None, description=None, id=None, cluster_id=None, cluster_name=None, name=None, status=None, updated=None, backup_type=None, backup_method=None, backup_expected_start_time=None, backup_keep_day=None, backup_period=None, indices=None, total_shards=None, failed_shards=None, version=None, restore_status=None, start_time=None, end_time=None, bucket_name=None):
-        """ListSnapshotBackupsResp
+        r"""ListSnapshotBackupsResp
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def created(self):
-        """Gets the created of this ListSnapshotBackupsResp.
+        r"""Gets the created of this ListSnapshotBackupsResp.
 
         快照创建时间。
 
@@ -201,7 +201,7 @@ class ListSnapshotBackupsResp:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListSnapshotBackupsResp.
+        r"""Sets the created of this ListSnapshotBackupsResp.
 
         快照创建时间。
 
@@ -212,7 +212,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ListSnapshotBackupsResp.
+        r"""Gets the datastore of this ListSnapshotBackupsResp.
 
         :return: The datastore of this ListSnapshotBackupsResp.
         :rtype: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`
@@ -221,7 +221,7 @@ class ListSnapshotBackupsResp:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ListSnapshotBackupsResp.
+        r"""Sets the datastore of this ListSnapshotBackupsResp.
 
         :param datastore: The datastore of this ListSnapshotBackupsResp.
         :type datastore: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`
@@ -230,7 +230,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def description(self):
-        """Gets the description of this ListSnapshotBackupsResp.
+        r"""Gets the description of this ListSnapshotBackupsResp.
 
         快照描述信息。
 
@@ -241,7 +241,7 @@ class ListSnapshotBackupsResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListSnapshotBackupsResp.
+        r"""Sets the description of this ListSnapshotBackupsResp.
 
         快照描述信息。
 
@@ -252,7 +252,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def id(self):
-        """Gets the id of this ListSnapshotBackupsResp.
+        r"""Gets the id of this ListSnapshotBackupsResp.
 
         快照ID。
 
@@ -263,7 +263,7 @@ class ListSnapshotBackupsResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSnapshotBackupsResp.
+        r"""Sets the id of this ListSnapshotBackupsResp.
 
         快照ID。
 
@@ -274,7 +274,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSnapshotBackupsResp.
+        r"""Gets the cluster_id of this ListSnapshotBackupsResp.
 
         集群ID。
 
@@ -285,7 +285,7 @@ class ListSnapshotBackupsResp:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSnapshotBackupsResp.
+        r"""Sets the cluster_id of this ListSnapshotBackupsResp.
 
         集群ID。
 
@@ -296,7 +296,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ListSnapshotBackupsResp.
+        r"""Gets the cluster_name of this ListSnapshotBackupsResp.
 
         集群名字。
 
@@ -307,7 +307,7 @@ class ListSnapshotBackupsResp:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ListSnapshotBackupsResp.
+        r"""Sets the cluster_name of this ListSnapshotBackupsResp.
 
         集群名字。
 
@@ -318,7 +318,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def name(self):
-        """Gets the name of this ListSnapshotBackupsResp.
+        r"""Gets the name of this ListSnapshotBackupsResp.
 
         快照名称。
 
@@ -329,7 +329,7 @@ class ListSnapshotBackupsResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSnapshotBackupsResp.
+        r"""Sets the name of this ListSnapshotBackupsResp.
 
         快照名称。
 
@@ -340,7 +340,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def status(self):
-        """Gets the status of this ListSnapshotBackupsResp.
+        r"""Gets the status of this ListSnapshotBackupsResp.
 
         快照状态。
 
@@ -351,7 +351,7 @@ class ListSnapshotBackupsResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSnapshotBackupsResp.
+        r"""Sets the status of this ListSnapshotBackupsResp.
 
         快照状态。
 
@@ -362,7 +362,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def updated(self):
-        """Gets the updated of this ListSnapshotBackupsResp.
+        r"""Gets the updated of this ListSnapshotBackupsResp.
 
         快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
@@ -373,7 +373,7 @@ class ListSnapshotBackupsResp:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListSnapshotBackupsResp.
+        r"""Sets the updated of this ListSnapshotBackupsResp.
 
         快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
@@ -384,7 +384,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this ListSnapshotBackupsResp.
+        r"""Gets the backup_type of this ListSnapshotBackupsResp.
 
         快照创建类型： - 0：表示自动创建。 - 1：表示手动创建。
 
@@ -395,7 +395,7 @@ class ListSnapshotBackupsResp:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this ListSnapshotBackupsResp.
+        r"""Sets the backup_type of this ListSnapshotBackupsResp.
 
         快照创建类型： - 0：表示自动创建。 - 1：表示手动创建。
 
@@ -406,7 +406,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def backup_method(self):
-        """Gets the backup_method of this ListSnapshotBackupsResp.
+        r"""Gets the backup_method of this ListSnapshotBackupsResp.
 
         创建快照方式。
 
@@ -417,7 +417,7 @@ class ListSnapshotBackupsResp:
 
     @backup_method.setter
     def backup_method(self, backup_method):
-        """Sets the backup_method of this ListSnapshotBackupsResp.
+        r"""Sets the backup_method of this ListSnapshotBackupsResp.
 
         创建快照方式。
 
@@ -428,7 +428,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def backup_expected_start_time(self):
-        """Gets the backup_expected_start_time of this ListSnapshotBackupsResp.
+        r"""Gets the backup_expected_start_time of this ListSnapshotBackupsResp.
 
         快照开始执行时间。
 
@@ -439,7 +439,7 @@ class ListSnapshotBackupsResp:
 
     @backup_expected_start_time.setter
     def backup_expected_start_time(self, backup_expected_start_time):
-        """Sets the backup_expected_start_time of this ListSnapshotBackupsResp.
+        r"""Sets the backup_expected_start_time of this ListSnapshotBackupsResp.
 
         快照开始执行时间。
 
@@ -450,7 +450,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def backup_keep_day(self):
-        """Gets the backup_keep_day of this ListSnapshotBackupsResp.
+        r"""Gets the backup_keep_day of this ListSnapshotBackupsResp.
 
         快照保留时间。
 
@@ -461,7 +461,7 @@ class ListSnapshotBackupsResp:
 
     @backup_keep_day.setter
     def backup_keep_day(self, backup_keep_day):
-        """Sets the backup_keep_day of this ListSnapshotBackupsResp.
+        r"""Sets the backup_keep_day of this ListSnapshotBackupsResp.
 
         快照保留时间。
 
@@ -472,7 +472,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def backup_period(self):
-        """Gets the backup_period of this ListSnapshotBackupsResp.
+        r"""Gets the backup_period of this ListSnapshotBackupsResp.
 
         快照每天执行的时间点。
 
@@ -483,7 +483,7 @@ class ListSnapshotBackupsResp:
 
     @backup_period.setter
     def backup_period(self, backup_period):
-        """Sets the backup_period of this ListSnapshotBackupsResp.
+        r"""Sets the backup_period of this ListSnapshotBackupsResp.
 
         快照每天执行的时间点。
 
@@ -494,7 +494,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def indices(self):
-        """Gets the indices of this ListSnapshotBackupsResp.
+        r"""Gets the indices of this ListSnapshotBackupsResp.
 
         要备份的索引。
 
@@ -505,7 +505,7 @@ class ListSnapshotBackupsResp:
 
     @indices.setter
     def indices(self, indices):
-        """Sets the indices of this ListSnapshotBackupsResp.
+        r"""Sets the indices of this ListSnapshotBackupsResp.
 
         要备份的索引。
 
@@ -516,7 +516,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def total_shards(self):
-        """Gets the total_shards of this ListSnapshotBackupsResp.
+        r"""Gets the total_shards of this ListSnapshotBackupsResp.
 
         要备份的索引的总shard数。
 
@@ -527,7 +527,7 @@ class ListSnapshotBackupsResp:
 
     @total_shards.setter
     def total_shards(self, total_shards):
-        """Sets the total_shards of this ListSnapshotBackupsResp.
+        r"""Sets the total_shards of this ListSnapshotBackupsResp.
 
         要备份的索引的总shard数。
 
@@ -538,7 +538,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def failed_shards(self):
-        """Gets the failed_shards of this ListSnapshotBackupsResp.
+        r"""Gets the failed_shards of this ListSnapshotBackupsResp.
 
         备份失败的shard数。
 
@@ -549,7 +549,7 @@ class ListSnapshotBackupsResp:
 
     @failed_shards.setter
     def failed_shards(self, failed_shards):
-        """Sets the failed_shards of this ListSnapshotBackupsResp.
+        r"""Sets the failed_shards of this ListSnapshotBackupsResp.
 
         备份失败的shard数。
 
@@ -560,7 +560,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def version(self):
-        """Gets the version of this ListSnapshotBackupsResp.
+        r"""Gets the version of this ListSnapshotBackupsResp.
 
         快照的版本。
 
@@ -571,7 +571,7 @@ class ListSnapshotBackupsResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListSnapshotBackupsResp.
+        r"""Sets the version of this ListSnapshotBackupsResp.
 
         快照的版本。
 
@@ -582,7 +582,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def restore_status(self):
-        """Gets the restore_status of this ListSnapshotBackupsResp.
+        r"""Gets the restore_status of this ListSnapshotBackupsResp.
 
         快照恢复的状态。
 
@@ -593,7 +593,7 @@ class ListSnapshotBackupsResp:
 
     @restore_status.setter
     def restore_status(self, restore_status):
-        """Sets the restore_status of this ListSnapshotBackupsResp.
+        r"""Sets the restore_status of this ListSnapshotBackupsResp.
 
         快照恢复的状态。
 
@@ -604,7 +604,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSnapshotBackupsResp.
+        r"""Gets the start_time of this ListSnapshotBackupsResp.
 
         快照开始执行的时间戳。
 
@@ -615,7 +615,7 @@ class ListSnapshotBackupsResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSnapshotBackupsResp.
+        r"""Sets the start_time of this ListSnapshotBackupsResp.
 
         快照开始执行的时间戳。
 
@@ -626,7 +626,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSnapshotBackupsResp.
+        r"""Gets the end_time of this ListSnapshotBackupsResp.
 
         快照执行结束的时间戳。
 
@@ -637,7 +637,7 @@ class ListSnapshotBackupsResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSnapshotBackupsResp.
+        r"""Sets the end_time of this ListSnapshotBackupsResp.
 
         快照执行结束的时间戳。
 
@@ -648,7 +648,7 @@ class ListSnapshotBackupsResp:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ListSnapshotBackupsResp.
+        r"""Gets the bucket_name of this ListSnapshotBackupsResp.
 
         保存快照数据的桶名。
 
@@ -659,7 +659,7 @@ class ListSnapshotBackupsResp:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ListSnapshotBackupsResp.
+        r"""Sets the bucket_name of this ListSnapshotBackupsResp.
 
         保存快照数据的桶名。
 

@@ -35,7 +35,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
     }
 
     def __init__(self, column_content=None, column_name=None, column_comment=None, table_comment=None, table_name=None, database_name=None):
-        """DataClassificationCombineRuleCheckDTOCombineInputData
+        r"""DataClassificationCombineRuleCheckDTOCombineInputData
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @property
     def column_content(self):
-        """Gets the column_content of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Gets the column_content of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         字段内容模拟数据
 
@@ -89,7 +89,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @column_content.setter
     def column_content(self, column_content):
-        """Sets the column_content of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Sets the column_content of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         字段内容模拟数据
 
@@ -100,7 +100,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Gets the column_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         列名模拟数据
 
@@ -111,7 +111,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Sets the column_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         列名模拟数据
 
@@ -122,7 +122,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @property
     def column_comment(self):
-        """Gets the column_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Gets the column_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         列注释模拟数据
 
@@ -133,7 +133,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @column_comment.setter
     def column_comment(self, column_comment):
-        """Sets the column_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Sets the column_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         列注释模拟数据
 
@@ -144,7 +144,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @property
     def table_comment(self):
-        """Gets the table_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Gets the table_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         表注释模拟数据
 
@@ -155,7 +155,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @table_comment.setter
     def table_comment(self, table_comment):
-        """Sets the table_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Sets the table_comment of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         表注释模拟数据
 
@@ -166,7 +166,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Gets the table_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         表名模拟数据
 
@@ -177,7 +177,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Sets the table_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         表名模拟数据
 
@@ -188,7 +188,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Gets the database_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         库名模拟数据
 
@@ -199,7 +199,7 @@ class DataClassificationCombineRuleCheckDTOCombineInputData:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
+        r"""Sets the database_name of this DataClassificationCombineRuleCheckDTOCombineInputData.
 
         库名模拟数据
 

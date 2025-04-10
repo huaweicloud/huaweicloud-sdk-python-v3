@@ -29,7 +29,7 @@ class QueryMetricItemOptionParam:
     }
 
     def __init__(self, dimensions=None, metric_name=None, namespace=None):
-        """QueryMetricItemOptionParam
+        r"""QueryMetricItemOptionParam
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class QueryMetricItemOptionParam:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this QueryMetricItemOptionParam.
+        r"""Gets the dimensions of this QueryMetricItemOptionParam.
 
         指标维度列表。
 
@@ -67,7 +67,7 @@ class QueryMetricItemOptionParam:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this QueryMetricItemOptionParam.
+        r"""Sets the dimensions of this QueryMetricItemOptionParam.
 
         指标维度列表。
 
@@ -78,7 +78,7 @@ class QueryMetricItemOptionParam:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this QueryMetricItemOptionParam.
+        r"""Gets the metric_name of this QueryMetricItemOptionParam.
 
         指标名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等。cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义指标名称。
 
@@ -89,7 +89,7 @@ class QueryMetricItemOptionParam:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this QueryMetricItemOptionParam.
+        r"""Sets the metric_name of this QueryMetricItemOptionParam.
 
         指标名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等。cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义指标名称。
 
@@ -100,7 +100,7 @@ class QueryMetricItemOptionParam:
 
     @property
     def namespace(self):
-        """Gets the namespace of this QueryMetricItemOptionParam.
+        r"""Gets the namespace of this QueryMetricItemOptionParam.
 
         指标命名空间。取值范围：PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间，PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间，PAAS.SLA：SLA指标的命名空间，PAAS.AGGR：集群指标的命名空间，CUSTOMMETRICS：默认的自定义指标的命名空间。
 
@@ -111,7 +111,7 @@ class QueryMetricItemOptionParam:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this QueryMetricItemOptionParam.
+        r"""Sets the namespace of this QueryMetricItemOptionParam.
 
         指标命名空间。取值范围：PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间，PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间，PAAS.SLA：SLA指标的命名空间，PAAS.AGGR：集群指标的命名空间，CUSTOMMETRICS：默认的自定义指标的命名空间。
 

@@ -56,7 +56,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, created_time=None, updated_time=None, host_count=None, project_name=None, name=None, region_name=None, project_id=None, os=None, auto_connection_test_switch=None, slave_cluster_id=None, nick_name=None, created_by=None, updated_by=None, description=None, permission=None):
-        """ShowDeploymentGroupDetailResponse
+        r"""ShowDeploymentGroupDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the group_id of this ShowDeploymentGroupDetailResponse.
 
         主机集群id
 
@@ -160,7 +160,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the group_id of this ShowDeploymentGroupDetailResponse.
 
         主机集群id
 
@@ -171,7 +171,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the created_time of this ShowDeploymentGroupDetailResponse.
 
         创建时间
 
@@ -182,7 +182,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the created_time of this ShowDeploymentGroupDetailResponse.
 
         创建时间
 
@@ -193,7 +193,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the updated_time of this ShowDeploymentGroupDetailResponse.
 
         修改时间
 
@@ -204,7 +204,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the updated_time of this ShowDeploymentGroupDetailResponse.
 
         修改时间
 
@@ -215,7 +215,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def host_count(self):
-        """Gets the host_count of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the host_count of this ShowDeploymentGroupDetailResponse.
 
         集群内主机数量，一个主机集群内最多可添加200台主机
 
@@ -226,7 +226,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @host_count.setter
     def host_count(self, host_count):
-        """Sets the host_count of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the host_count of this ShowDeploymentGroupDetailResponse.
 
         集群内主机数量，一个主机集群内最多可添加200台主机
 
@@ -237,7 +237,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the project_name of this ShowDeploymentGroupDetailResponse.
 
         项目名称
 
@@ -248,7 +248,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the project_name of this ShowDeploymentGroupDetailResponse.
 
         项目名称
 
@@ -259,7 +259,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the name of this ShowDeploymentGroupDetailResponse.
 
         主机集群名
 
@@ -270,7 +270,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the name of this ShowDeploymentGroupDetailResponse.
 
         主机集群名
 
@@ -281,7 +281,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def region_name(self):
-        """Gets the region_name of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the region_name of this ShowDeploymentGroupDetailResponse.
 
         局点信息
 
@@ -292,7 +292,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the region_name of this ShowDeploymentGroupDetailResponse.
 
         局点信息
 
@@ -303,7 +303,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the project_id of this ShowDeploymentGroupDetailResponse.
 
         项目id
 
@@ -314,7 +314,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the project_id of this ShowDeploymentGroupDetailResponse.
 
         项目id
 
@@ -325,7 +325,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def os(self):
-        """Gets the os of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the os of this ShowDeploymentGroupDetailResponse.
 
         操作系统：windows|linux
 
@@ -336,7 +336,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the os of this ShowDeploymentGroupDetailResponse.
 
         操作系统：windows|linux
 
@@ -347,7 +347,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def auto_connection_test_switch(self):
-        """Gets the auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
 
         自动测试功能已下架，该字段已失效
 
@@ -358,7 +358,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @auto_connection_test_switch.setter
     def auto_connection_test_switch(self, auto_connection_test_switch):
-        """Sets the auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
 
         自动测试功能已下架，该字段已失效
 
@@ -369,7 +369,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the slave_cluster_id of this ShowDeploymentGroupDetailResponse.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -380,7 +380,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the slave_cluster_id of this ShowDeploymentGroupDetailResponse.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -391,7 +391,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the nick_name of this ShowDeploymentGroupDetailResponse.
 
         用户昵称
 
@@ -402,7 +402,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the nick_name of this ShowDeploymentGroupDetailResponse.
 
         用户昵称
 
@@ -413,7 +413,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the created_by of this ShowDeploymentGroupDetailResponse.
 
         :return: The created_by of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -422,7 +422,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the created_by of this ShowDeploymentGroupDetailResponse.
 
         :param created_by: The created_by of this ShowDeploymentGroupDetailResponse.
         :type created_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -431,7 +431,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the updated_by of this ShowDeploymentGroupDetailResponse.
 
         :return: The updated_by of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -440,7 +440,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the updated_by of this ShowDeploymentGroupDetailResponse.
 
         :param updated_by: The updated_by of this ShowDeploymentGroupDetailResponse.
         :type updated_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -449,7 +449,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the description of this ShowDeploymentGroupDetailResponse.
 
         描述
 
@@ -460,7 +460,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the description of this ShowDeploymentGroupDetailResponse.
 
         描述
 
@@ -471,7 +471,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @property
     def permission(self):
-        """Gets the permission of this ShowDeploymentGroupDetailResponse.
+        r"""Gets the permission of this ShowDeploymentGroupDetailResponse.
 
         :return: The permission of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionGroupDetail`
@@ -480,7 +480,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ShowDeploymentGroupDetailResponse.
+        r"""Sets the permission of this ShowDeploymentGroupDetailResponse.
 
         :param permission: The permission of this ShowDeploymentGroupDetailResponse.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionGroupDetail`

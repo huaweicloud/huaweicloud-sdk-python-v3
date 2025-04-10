@@ -35,10 +35,23 @@ class CceExceptionHandler(ExceptionHandler):
 
         data = json.loads(response.content)
         sdk_error.error_code = data.get("error_code")
-        sdk_error.error_msg = data.get("error_msg", "")
+        if sdk_error.error_code is None:
+            sdk_error.error_code = data.get("errorCode")
+
+        sdk_error.error_msg = data.get("error_msg")
+        if sdk_error.error_msg is None:
+            sdk_error.error_msg = data.get("errorMessage")
+
         message = data.get("message")
-        if message and sdk_error.error_msg != message:
-            sdk_error.error_msg += ", " + message
+        if message is not None and sdk_error.error_msg != message:
+            if sdk_error.error_msg is None:
+                sdk_error.error_msg = message
+            else:
+                sdk_error.error_msg += ", " + message
+
+        auth_msg = data.get("encoded_authorization_message")
+        if auth_msg is not None:
+            sdk_error.encoded_auth_msg = auth_msg
 
         raise ClientRequestException(response.status_code, sdk_error) if response.status_code < 500 \
             else ServerResponseException(response.status_code, sdk_error)

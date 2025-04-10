@@ -28,7 +28,10 @@ class SimplePremiumWafHost:
         'access_status': 'int',
         'web_tag': 'str',
         'hostid': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'pool_ids': 'list[str]',
+        'loadbalancer_id': 'str',
+        'protocol_port': 'str'
     }
 
     attribute_map = {
@@ -43,11 +46,14 @@ class SimplePremiumWafHost:
         'access_status': 'access_status',
         'web_tag': 'web_tag',
         'hostid': 'hostid',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'pool_ids': 'pool_ids',
+        'loadbalancer_id': 'loadbalancer_id',
+        'protocol_port': 'protocol_port'
     }
 
-    def __init__(self, id=None, hostname=None, extend=None, region=None, flag=None, description=None, policyid=None, protect_status=None, access_status=None, web_tag=None, hostid=None, enterprise_project_id=None):
-        """SimplePremiumWafHost
+    def __init__(self, id=None, hostname=None, extend=None, region=None, flag=None, description=None, policyid=None, protect_status=None, access_status=None, web_tag=None, hostid=None, enterprise_project_id=None, pool_ids=None, loadbalancer_id=None, protocol_port=None):
+        r"""SimplePremiumWafHost
 
         The model defined in huaweicloud sdk
 
@@ -75,6 +81,12 @@ class SimplePremiumWafHost:
         :type hostid: str
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
+        :param pool_ids: 云模式elb接入域名返回此字段，表示域名所属独享引擎组
+        :type pool_ids: list[str]
+        :param loadbalancer_id: 云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
+        :type loadbalancer_id: str
+        :param protocol_port: 云模式elb接入域名返回此字段，表示业务端口
+        :type protocol_port: str
         """
         
         
@@ -91,6 +103,9 @@ class SimplePremiumWafHost:
         self._web_tag = None
         self._hostid = None
         self._enterprise_project_id = None
+        self._pool_ids = None
+        self._loadbalancer_id = None
+        self._protocol_port = None
         self.discriminator = None
 
         if id is not None:
@@ -117,10 +132,16 @@ class SimplePremiumWafHost:
             self.hostid = hostid
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if pool_ids is not None:
+            self.pool_ids = pool_ids
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
 
     @property
     def id(self):
-        """Gets the id of this SimplePremiumWafHost.
+        r"""Gets the id of this SimplePremiumWafHost.
 
         域名id
 
@@ -131,7 +152,7 @@ class SimplePremiumWafHost:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimplePremiumWafHost.
+        r"""Sets the id of this SimplePremiumWafHost.
 
         域名id
 
@@ -142,7 +163,7 @@ class SimplePremiumWafHost:
 
     @property
     def hostname(self):
-        """Gets the hostname of this SimplePremiumWafHost.
+        r"""Gets the hostname of this SimplePremiumWafHost.
 
         域名
 
@@ -153,7 +174,7 @@ class SimplePremiumWafHost:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this SimplePremiumWafHost.
+        r"""Sets the hostname of this SimplePremiumWafHost.
 
         域名
 
@@ -164,7 +185,7 @@ class SimplePremiumWafHost:
 
     @property
     def extend(self):
-        """Gets the extend of this SimplePremiumWafHost.
+        r"""Gets the extend of this SimplePremiumWafHost.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -175,7 +196,7 @@ class SimplePremiumWafHost:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this SimplePremiumWafHost.
+        r"""Sets the extend of this SimplePremiumWafHost.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -186,7 +207,7 @@ class SimplePremiumWafHost:
 
     @property
     def region(self):
-        """Gets the region of this SimplePremiumWafHost.
+        r"""Gets the region of this SimplePremiumWafHost.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -197,7 +218,7 @@ class SimplePremiumWafHost:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SimplePremiumWafHost.
+        r"""Sets the region of this SimplePremiumWafHost.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -208,7 +229,7 @@ class SimplePremiumWafHost:
 
     @property
     def flag(self):
-        """Gets the flag of this SimplePremiumWafHost.
+        r"""Gets the flag of this SimplePremiumWafHost.
 
         :return: The flag of this SimplePremiumWafHost.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -217,7 +238,7 @@ class SimplePremiumWafHost:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this SimplePremiumWafHost.
+        r"""Sets the flag of this SimplePremiumWafHost.
 
         :param flag: The flag of this SimplePremiumWafHost.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -226,7 +247,7 @@ class SimplePremiumWafHost:
 
     @property
     def description(self):
-        """Gets the description of this SimplePremiumWafHost.
+        r"""Gets the description of this SimplePremiumWafHost.
 
         域名描述
 
@@ -237,7 +258,7 @@ class SimplePremiumWafHost:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SimplePremiumWafHost.
+        r"""Sets the description of this SimplePremiumWafHost.
 
         域名描述
 
@@ -248,7 +269,7 @@ class SimplePremiumWafHost:
 
     @property
     def policyid(self):
-        """Gets the policyid of this SimplePremiumWafHost.
+        r"""Gets the policyid of this SimplePremiumWafHost.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -259,7 +280,7 @@ class SimplePremiumWafHost:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this SimplePremiumWafHost.
+        r"""Sets the policyid of this SimplePremiumWafHost.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -270,7 +291,7 @@ class SimplePremiumWafHost:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this SimplePremiumWafHost.
+        r"""Gets the protect_status of this SimplePremiumWafHost.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -281,7 +302,7 @@ class SimplePremiumWafHost:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this SimplePremiumWafHost.
+        r"""Sets the protect_status of this SimplePremiumWafHost.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -292,7 +313,7 @@ class SimplePremiumWafHost:
 
     @property
     def access_status(self):
-        """Gets the access_status of this SimplePremiumWafHost.
+        r"""Gets the access_status of this SimplePremiumWafHost.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -303,7 +324,7 @@ class SimplePremiumWafHost:
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this SimplePremiumWafHost.
+        r"""Sets the access_status of this SimplePremiumWafHost.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -314,7 +335,7 @@ class SimplePremiumWafHost:
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this SimplePremiumWafHost.
+        r"""Gets the web_tag of this SimplePremiumWafHost.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -325,7 +346,7 @@ class SimplePremiumWafHost:
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this SimplePremiumWafHost.
+        r"""Sets the web_tag of this SimplePremiumWafHost.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -336,7 +357,7 @@ class SimplePremiumWafHost:
 
     @property
     def hostid(self):
-        """Gets the hostid of this SimplePremiumWafHost.
+        r"""Gets the hostid of this SimplePremiumWafHost.
 
         域名id，和id的值是一样的，属于冗余字段
 
@@ -347,7 +368,7 @@ class SimplePremiumWafHost:
 
     @hostid.setter
     def hostid(self, hostid):
-        """Sets the hostid of this SimplePremiumWafHost.
+        r"""Sets the hostid of this SimplePremiumWafHost.
 
         域名id，和id的值是一样的，属于冗余字段
 
@@ -358,7 +379,7 @@ class SimplePremiumWafHost:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SimplePremiumWafHost.
+        r"""Gets the enterprise_project_id of this SimplePremiumWafHost.
 
         企业项目id
 
@@ -369,7 +390,7 @@ class SimplePremiumWafHost:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SimplePremiumWafHost.
+        r"""Sets the enterprise_project_id of this SimplePremiumWafHost.
 
         企业项目id
 
@@ -377,6 +398,72 @@ class SimplePremiumWafHost:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def pool_ids(self):
+        r"""Gets the pool_ids of this SimplePremiumWafHost.
+
+        云模式elb接入域名返回此字段，表示域名所属独享引擎组
+
+        :return: The pool_ids of this SimplePremiumWafHost.
+        :rtype: list[str]
+        """
+        return self._pool_ids
+
+    @pool_ids.setter
+    def pool_ids(self, pool_ids):
+        r"""Sets the pool_ids of this SimplePremiumWafHost.
+
+        云模式elb接入域名返回此字段，表示域名所属独享引擎组
+
+        :param pool_ids: The pool_ids of this SimplePremiumWafHost.
+        :type pool_ids: list[str]
+        """
+        self._pool_ids = pool_ids
+
+    @property
+    def loadbalancer_id(self):
+        r"""Gets the loadbalancer_id of this SimplePremiumWafHost.
+
+        云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
+
+        :return: The loadbalancer_id of this SimplePremiumWafHost.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        r"""Sets the loadbalancer_id of this SimplePremiumWafHost.
+
+        云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
+
+        :param loadbalancer_id: The loadbalancer_id of this SimplePremiumWafHost.
+        :type loadbalancer_id: str
+        """
+        self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def protocol_port(self):
+        r"""Gets the protocol_port of this SimplePremiumWafHost.
+
+        云模式elb接入域名返回此字段，表示业务端口
+
+        :return: The protocol_port of this SimplePremiumWafHost.
+        :rtype: str
+        """
+        return self._protocol_port
+
+    @protocol_port.setter
+    def protocol_port(self, protocol_port):
+        r"""Sets the protocol_port of this SimplePremiumWafHost.
+
+        云模式elb接入域名返回此字段，表示业务端口
+
+        :param protocol_port: The protocol_port of this SimplePremiumWafHost.
+        :type protocol_port: str
+        """
+        self._protocol_port = protocol_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

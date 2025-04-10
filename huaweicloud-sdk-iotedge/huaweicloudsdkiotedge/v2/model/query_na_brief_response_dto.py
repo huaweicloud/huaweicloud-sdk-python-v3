@@ -35,7 +35,7 @@ class QueryNaBriefResponseDTO:
     }
 
     def __init__(self, na_id=None, name=None, description=None, endpoint=None, create_time=None, update_time=None):
-        """QueryNaBriefResponseDTO
+        r"""QueryNaBriefResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryNaBriefResponseDTO:
 
     @property
     def na_id(self):
-        """Gets the na_id of this QueryNaBriefResponseDTO.
+        r"""Gets the na_id of this QueryNaBriefResponseDTO.
 
         NA系统ID，提供给其他系统访问的唯一标识
 
@@ -89,7 +89,7 @@ class QueryNaBriefResponseDTO:
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this QueryNaBriefResponseDTO.
+        r"""Sets the na_id of this QueryNaBriefResponseDTO.
 
         NA系统ID，提供给其他系统访问的唯一标识
 
@@ -100,7 +100,7 @@ class QueryNaBriefResponseDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryNaBriefResponseDTO.
+        r"""Gets the name of this QueryNaBriefResponseDTO.
 
         NA系统名称
 
@@ -111,7 +111,7 @@ class QueryNaBriefResponseDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryNaBriefResponseDTO.
+        r"""Sets the name of this QueryNaBriefResponseDTO.
 
         NA系统名称
 
@@ -122,7 +122,7 @@ class QueryNaBriefResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryNaBriefResponseDTO.
+        r"""Gets the description of this QueryNaBriefResponseDTO.
 
         北向NA系统描述
 
@@ -133,7 +133,7 @@ class QueryNaBriefResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryNaBriefResponseDTO.
+        r"""Sets the description of this QueryNaBriefResponseDTO.
 
         北向NA系统描述
 
@@ -144,7 +144,7 @@ class QueryNaBriefResponseDTO:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this QueryNaBriefResponseDTO.
+        r"""Gets the endpoint of this QueryNaBriefResponseDTO.
 
         访问URL地址
 
@@ -155,7 +155,7 @@ class QueryNaBriefResponseDTO:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this QueryNaBriefResponseDTO.
+        r"""Sets the endpoint of this QueryNaBriefResponseDTO.
 
         访问URL地址
 
@@ -166,7 +166,7 @@ class QueryNaBriefResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryNaBriefResponseDTO.
+        r"""Gets the create_time of this QueryNaBriefResponseDTO.
 
         创建时间
 
@@ -177,7 +177,7 @@ class QueryNaBriefResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryNaBriefResponseDTO.
+        r"""Sets the create_time of this QueryNaBriefResponseDTO.
 
         创建时间
 
@@ -188,7 +188,7 @@ class QueryNaBriefResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryNaBriefResponseDTO.
+        r"""Gets the update_time of this QueryNaBriefResponseDTO.
 
         更新时间
 
@@ -199,7 +199,7 @@ class QueryNaBriefResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryNaBriefResponseDTO.
+        r"""Sets the update_time of this QueryNaBriefResponseDTO.
 
         更新时间
 

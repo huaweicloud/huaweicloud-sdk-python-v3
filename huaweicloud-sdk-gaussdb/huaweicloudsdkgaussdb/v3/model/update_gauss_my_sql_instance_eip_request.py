@@ -29,7 +29,7 @@ class UpdateGaussMySqlInstanceEipRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlInstanceEipRequest
+        r"""UpdateGaussMySqlInstanceEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlInstanceEipRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlInstanceEipRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlInstanceEipRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlInstanceEipRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlInstanceEipRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlInstanceEipRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlInstanceEipRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlInstanceEipRequest.
+        r"""Gets the instance_id of this UpdateGaussMySqlInstanceEipRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlInstanceEipRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlInstanceEipRequest.
+        r"""Sets the instance_id of this UpdateGaussMySqlInstanceEipRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlInstanceEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlInstanceEipRequest.
+        r"""Gets the body of this UpdateGaussMySqlInstanceEipRequest.
 
         :return: The body of this UpdateGaussMySqlInstanceEipRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyBindEipRequest`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlInstanceEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlInstanceEipRequest.
+        r"""Sets the body of this UpdateGaussMySqlInstanceEipRequest.
 
         :param body: The body of this UpdateGaussMySqlInstanceEipRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyBindEipRequest`

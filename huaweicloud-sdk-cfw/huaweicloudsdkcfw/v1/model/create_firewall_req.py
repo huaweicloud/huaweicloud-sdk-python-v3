@@ -33,7 +33,7 @@ class CreateFirewallReq:
     }
 
     def __init__(self, name=None, enterprise_project_id=None, tags=None, flavor=None, charge_info=None):
-        """CreateFirewallReq
+        r"""CreateFirewallReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateFirewallReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateFirewallReq.
+        r"""Gets the name of this CreateFirewallReq.
 
         防火墙名称
 
@@ -79,7 +79,7 @@ class CreateFirewallReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFirewallReq.
+        r"""Sets the name of this CreateFirewallReq.
 
         防火墙名称
 
@@ -90,7 +90,7 @@ class CreateFirewallReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateFirewallReq.
+        r"""Gets the enterprise_project_id of this CreateFirewallReq.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -101,7 +101,7 @@ class CreateFirewallReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateFirewallReq.
+        r"""Sets the enterprise_project_id of this CreateFirewallReq.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -112,7 +112,7 @@ class CreateFirewallReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateFirewallReq.
+        r"""Gets the tags of this CreateFirewallReq.
 
         服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
 
@@ -123,7 +123,7 @@ class CreateFirewallReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateFirewallReq.
+        r"""Sets the tags of this CreateFirewallReq.
 
         服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
 
@@ -134,7 +134,7 @@ class CreateFirewallReq:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateFirewallReq.
+        r"""Gets the flavor of this CreateFirewallReq.
 
         :return: The flavor of this CreateFirewallReq.
         :rtype: :class:`huaweicloudsdkcfw.v1.CreateFirewallReqFlavor`
@@ -143,7 +143,7 @@ class CreateFirewallReq:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateFirewallReq.
+        r"""Sets the flavor of this CreateFirewallReq.
 
         :param flavor: The flavor of this CreateFirewallReq.
         :type flavor: :class:`huaweicloudsdkcfw.v1.CreateFirewallReqFlavor`
@@ -152,7 +152,7 @@ class CreateFirewallReq:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateFirewallReq.
+        r"""Gets the charge_info of this CreateFirewallReq.
 
         :return: The charge_info of this CreateFirewallReq.
         :rtype: :class:`huaweicloudsdkcfw.v1.CreateFirewallReqChargeInfo`
@@ -161,7 +161,7 @@ class CreateFirewallReq:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateFirewallReq.
+        r"""Sets the charge_info of this CreateFirewallReq.
 
         :param charge_info: The charge_info of this CreateFirewallReq.
         :type charge_info: :class:`huaweicloudsdkcfw.v1.CreateFirewallReqChargeInfo`

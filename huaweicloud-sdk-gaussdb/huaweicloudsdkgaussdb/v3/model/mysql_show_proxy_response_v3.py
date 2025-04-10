@@ -29,7 +29,7 @@ class MysqlShowProxyResponseV3:
     }
 
     def __init__(self, proxy=None, master_node=None, readonly_nodes=None):
-        """MysqlShowProxyResponseV3
+        r"""MysqlShowProxyResponseV3
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MysqlShowProxyResponseV3:
 
     @property
     def proxy(self):
-        """Gets the proxy of this MysqlShowProxyResponseV3.
+        r"""Gets the proxy of this MysqlShowProxyResponseV3.
 
         :return: The proxy of this MysqlShowProxyResponseV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyV3`
@@ -66,7 +66,7 @@ class MysqlShowProxyResponseV3:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this MysqlShowProxyResponseV3.
+        r"""Sets the proxy of this MysqlShowProxyResponseV3.
 
         :param proxy: The proxy of this MysqlShowProxyResponseV3.
         :type proxy: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyV3`
@@ -75,7 +75,7 @@ class MysqlShowProxyResponseV3:
 
     @property
     def master_node(self):
-        """Gets the master_node of this MysqlShowProxyResponseV3.
+        r"""Gets the master_node of this MysqlShowProxyResponseV3.
 
         :return: The master_node of this MysqlShowProxyResponseV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`
@@ -84,7 +84,7 @@ class MysqlShowProxyResponseV3:
 
     @master_node.setter
     def master_node(self, master_node):
-        """Sets the master_node of this MysqlShowProxyResponseV3.
+        r"""Sets the master_node of this MysqlShowProxyResponseV3.
 
         :param master_node: The master_node of this MysqlShowProxyResponseV3.
         :type master_node: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`
@@ -93,7 +93,7 @@ class MysqlShowProxyResponseV3:
 
     @property
     def readonly_nodes(self):
-        """Gets the readonly_nodes of this MysqlShowProxyResponseV3.
+        r"""Gets the readonly_nodes of this MysqlShowProxyResponseV3.
 
         只读节点信息。
 
@@ -104,7 +104,7 @@ class MysqlShowProxyResponseV3:
 
     @readonly_nodes.setter
     def readonly_nodes(self, readonly_nodes):
-        """Sets the readonly_nodes of this MysqlShowProxyResponseV3.
+        r"""Sets the readonly_nodes of this MysqlShowProxyResponseV3.
 
         只读节点信息。
 

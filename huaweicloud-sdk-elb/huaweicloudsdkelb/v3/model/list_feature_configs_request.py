@@ -25,7 +25,7 @@ class ListFeatureConfigsRequest:
     }
 
     def __init__(self, feature=None):
-        """ListFeatureConfigsRequest
+        r"""ListFeatureConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListFeatureConfigsRequest:
 
     @property
     def feature(self):
-        """Gets the feature of this ListFeatureConfigsRequest.
+        r"""Gets the feature of this ListFeatureConfigsRequest.
 
         参数解释：特性名称。
 
@@ -54,7 +54,7 @@ class ListFeatureConfigsRequest:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this ListFeatureConfigsRequest.
+        r"""Sets the feature of this ListFeatureConfigsRequest.
 
         参数解释：特性名称。
 

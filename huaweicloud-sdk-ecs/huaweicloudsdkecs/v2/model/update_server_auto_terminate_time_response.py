@@ -24,7 +24,7 @@ class UpdateServerAutoTerminateTimeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateServerAutoTerminateTimeResponse
+        r"""UpdateServerAutoTerminateTimeResponse
 
         The model defined in huaweicloud sdk
 

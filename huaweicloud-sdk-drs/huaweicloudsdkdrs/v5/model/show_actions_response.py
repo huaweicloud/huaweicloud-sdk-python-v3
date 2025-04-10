@@ -26,7 +26,7 @@ class ShowActionsResponse(SdkResponse):
     }
 
     def __init__(self, job_action=None):
-        """ShowActionsResponse
+        r"""ShowActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowActionsResponse(SdkResponse):
 
     @property
     def job_action(self):
-        """Gets the job_action of this ShowActionsResponse.
+        r"""Gets the job_action of this ShowActionsResponse.
 
         :return: The job_action of this ShowActionsResponse.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobActions`
@@ -53,7 +53,7 @@ class ShowActionsResponse(SdkResponse):
 
     @job_action.setter
     def job_action(self, job_action):
-        """Sets the job_action of this ShowActionsResponse.
+        r"""Sets the job_action of this ShowActionsResponse.
 
         :param job_action: The job_action of this ShowActionsResponse.
         :type job_action: :class:`huaweicloudsdkdrs.v5.JobActions`

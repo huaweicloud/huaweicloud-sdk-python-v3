@@ -31,7 +31,7 @@ class ChangeInstanceRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, body=None):
-        """ChangeInstanceRequest
+        r"""ChangeInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ChangeInstanceRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ChangeInstanceRequest.
+        r"""Gets the application_id of this ChangeInstanceRequest.
 
         应用ID。
 
@@ -72,7 +72,7 @@ class ChangeInstanceRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ChangeInstanceRequest.
+        r"""Sets the application_id of this ChangeInstanceRequest.
 
         应用ID。
 
@@ -83,7 +83,7 @@ class ChangeInstanceRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ChangeInstanceRequest.
+        r"""Gets the component_id of this ChangeInstanceRequest.
 
         组件ID。
 
@@ -94,7 +94,7 @@ class ChangeInstanceRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ChangeInstanceRequest.
+        r"""Sets the component_id of this ChangeInstanceRequest.
 
         组件ID。
 
@@ -105,7 +105,7 @@ class ChangeInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeInstanceRequest.
+        r"""Gets the instance_id of this ChangeInstanceRequest.
 
         组件实例ID。
 
@@ -116,7 +116,7 @@ class ChangeInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeInstanceRequest.
+        r"""Sets the instance_id of this ChangeInstanceRequest.
 
         组件实例ID。
 
@@ -127,7 +127,7 @@ class ChangeInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeInstanceRequest.
+        r"""Gets the body of this ChangeInstanceRequest.
 
         :return: The body of this ChangeInstanceRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceModify`
@@ -136,7 +136,7 @@ class ChangeInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeInstanceRequest.
+        r"""Sets the body of this ChangeInstanceRequest.
 
         :param body: The body of this ChangeInstanceRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.InstanceModify`

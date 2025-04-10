@@ -27,7 +27,7 @@ class ListRoutesRequest:
     }
 
     def __init__(self, edge_node_id=None, parsed=None):
-        """ListRoutesRequest
+        r"""ListRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListRoutesRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ListRoutesRequest.
+        r"""Gets the edge_node_id of this ListRoutesRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class ListRoutesRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ListRoutesRequest.
+        r"""Sets the edge_node_id of this ListRoutesRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class ListRoutesRequest:
 
     @property
     def parsed(self):
-        """Gets the parsed of this ListRoutesRequest.
+        r"""Gets the parsed of this ListRoutesRequest.
 
         是否解析路由
 
@@ -82,7 +82,7 @@ class ListRoutesRequest:
 
     @parsed.setter
     def parsed(self, parsed):
-        """Sets the parsed of this ListRoutesRequest.
+        r"""Sets the parsed of this ListRoutesRequest.
 
         是否解析路由
 

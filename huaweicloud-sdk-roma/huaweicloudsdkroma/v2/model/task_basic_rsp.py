@@ -57,7 +57,7 @@ class TaskBasicRsp:
     }
 
     def __init__(self, task_id=None, task_name=None, task_type=None, status=None, project_id=None, source_datasource_id=None, target_datasource_id=None, source_datasource_name=None, target_datasource_name=None, source_app_id=None, target_app_id=None, source_app_name=None, target_app_name=None, created_date=None, last_modified_date=None, description=None, task_tag=None):
-        """TaskBasicRsp
+        r"""TaskBasicRsp
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class TaskBasicRsp:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskBasicRsp.
+        r"""Gets the task_id of this TaskBasicRsp.
 
         任务ID, 可为空
 
@@ -166,7 +166,7 @@ class TaskBasicRsp:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskBasicRsp.
+        r"""Sets the task_id of this TaskBasicRsp.
 
         任务ID, 可为空
 
@@ -177,7 +177,7 @@ class TaskBasicRsp:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskBasicRsp.
+        r"""Gets the task_name of this TaskBasicRsp.
 
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
@@ -188,7 +188,7 @@ class TaskBasicRsp:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskBasicRsp.
+        r"""Sets the task_name of this TaskBasicRsp.
 
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
@@ -199,7 +199,7 @@ class TaskBasicRsp:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TaskBasicRsp.
+        r"""Gets the task_type of this TaskBasicRsp.
 
         任务类型 - realtime (实时) - timing (定时)
 
@@ -210,7 +210,7 @@ class TaskBasicRsp:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TaskBasicRsp.
+        r"""Sets the task_type of this TaskBasicRsp.
 
         任务类型 - realtime (实时) - timing (定时)
 
@@ -221,7 +221,7 @@ class TaskBasicRsp:
 
     @property
     def status(self):
-        """Gets the status of this TaskBasicRsp.
+        r"""Gets the status of this TaskBasicRsp.
 
         任务状态, - stop (0停止\\未启动) - running (1运行中)
 
@@ -232,7 +232,7 @@ class TaskBasicRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskBasicRsp.
+        r"""Sets the status of this TaskBasicRsp.
 
         任务状态, - stop (0停止\\未启动) - running (1运行中)
 
@@ -243,7 +243,7 @@ class TaskBasicRsp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TaskBasicRsp.
+        r"""Gets the project_id of this TaskBasicRsp.
 
         项目ID
 
@@ -254,7 +254,7 @@ class TaskBasicRsp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TaskBasicRsp.
+        r"""Sets the project_id of this TaskBasicRsp.
 
         项目ID
 
@@ -265,7 +265,7 @@ class TaskBasicRsp:
 
     @property
     def source_datasource_id(self):
-        """Gets the source_datasource_id of this TaskBasicRsp.
+        r"""Gets the source_datasource_id of this TaskBasicRsp.
 
         源端数据源ID
 
@@ -276,7 +276,7 @@ class TaskBasicRsp:
 
     @source_datasource_id.setter
     def source_datasource_id(self, source_datasource_id):
-        """Sets the source_datasource_id of this TaskBasicRsp.
+        r"""Sets the source_datasource_id of this TaskBasicRsp.
 
         源端数据源ID
 
@@ -287,7 +287,7 @@ class TaskBasicRsp:
 
     @property
     def target_datasource_id(self):
-        """Gets the target_datasource_id of this TaskBasicRsp.
+        r"""Gets the target_datasource_id of this TaskBasicRsp.
 
         目标端数据源ID
 
@@ -298,7 +298,7 @@ class TaskBasicRsp:
 
     @target_datasource_id.setter
     def target_datasource_id(self, target_datasource_id):
-        """Sets the target_datasource_id of this TaskBasicRsp.
+        r"""Sets the target_datasource_id of this TaskBasicRsp.
 
         目标端数据源ID
 
@@ -309,7 +309,7 @@ class TaskBasicRsp:
 
     @property
     def source_datasource_name(self):
-        """Gets the source_datasource_name of this TaskBasicRsp.
+        r"""Gets the source_datasource_name of this TaskBasicRsp.
 
         源端数据源的名称
 
@@ -320,7 +320,7 @@ class TaskBasicRsp:
 
     @source_datasource_name.setter
     def source_datasource_name(self, source_datasource_name):
-        """Sets the source_datasource_name of this TaskBasicRsp.
+        r"""Sets the source_datasource_name of this TaskBasicRsp.
 
         源端数据源的名称
 
@@ -331,7 +331,7 @@ class TaskBasicRsp:
 
     @property
     def target_datasource_name(self):
-        """Gets the target_datasource_name of this TaskBasicRsp.
+        r"""Gets the target_datasource_name of this TaskBasicRsp.
 
         目标端数据源的名称
 
@@ -342,7 +342,7 @@ class TaskBasicRsp:
 
     @target_datasource_name.setter
     def target_datasource_name(self, target_datasource_name):
-        """Sets the target_datasource_name of this TaskBasicRsp.
+        r"""Sets the target_datasource_name of this TaskBasicRsp.
 
         目标端数据源的名称
 
@@ -353,7 +353,7 @@ class TaskBasicRsp:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this TaskBasicRsp.
+        r"""Gets the source_app_id of this TaskBasicRsp.
 
         源端数据源所属集成应用ID
 
@@ -364,7 +364,7 @@ class TaskBasicRsp:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this TaskBasicRsp.
+        r"""Sets the source_app_id of this TaskBasicRsp.
 
         源端数据源所属集成应用ID
 
@@ -375,7 +375,7 @@ class TaskBasicRsp:
 
     @property
     def target_app_id(self):
-        """Gets the target_app_id of this TaskBasicRsp.
+        r"""Gets the target_app_id of this TaskBasicRsp.
 
         目标端数据源所属集成应用ID
 
@@ -386,7 +386,7 @@ class TaskBasicRsp:
 
     @target_app_id.setter
     def target_app_id(self, target_app_id):
-        """Sets the target_app_id of this TaskBasicRsp.
+        r"""Sets the target_app_id of this TaskBasicRsp.
 
         目标端数据源所属集成应用ID
 
@@ -397,7 +397,7 @@ class TaskBasicRsp:
 
     @property
     def source_app_name(self):
-        """Gets the source_app_name of this TaskBasicRsp.
+        r"""Gets the source_app_name of this TaskBasicRsp.
 
         源端数据源所属集成应用名称
 
@@ -408,7 +408,7 @@ class TaskBasicRsp:
 
     @source_app_name.setter
     def source_app_name(self, source_app_name):
-        """Sets the source_app_name of this TaskBasicRsp.
+        r"""Sets the source_app_name of this TaskBasicRsp.
 
         源端数据源所属集成应用名称
 
@@ -419,7 +419,7 @@ class TaskBasicRsp:
 
     @property
     def target_app_name(self):
-        """Gets the target_app_name of this TaskBasicRsp.
+        r"""Gets the target_app_name of this TaskBasicRsp.
 
         目标端数据源所属集成应用名称
 
@@ -430,7 +430,7 @@ class TaskBasicRsp:
 
     @target_app_name.setter
     def target_app_name(self, target_app_name):
-        """Sets the target_app_name of this TaskBasicRsp.
+        r"""Sets the target_app_name of this TaskBasicRsp.
 
         目标端数据源所属集成应用名称
 
@@ -441,7 +441,7 @@ class TaskBasicRsp:
 
     @property
     def created_date(self):
-        """Gets the created_date of this TaskBasicRsp.
+        r"""Gets the created_date of this TaskBasicRsp.
 
         创建时间
 
@@ -452,7 +452,7 @@ class TaskBasicRsp:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this TaskBasicRsp.
+        r"""Sets the created_date of this TaskBasicRsp.
 
         创建时间
 
@@ -463,7 +463,7 @@ class TaskBasicRsp:
 
     @property
     def last_modified_date(self):
-        """Gets the last_modified_date of this TaskBasicRsp.
+        r"""Gets the last_modified_date of this TaskBasicRsp.
 
         最近一次的修改时间
 
@@ -474,7 +474,7 @@ class TaskBasicRsp:
 
     @last_modified_date.setter
     def last_modified_date(self, last_modified_date):
-        """Sets the last_modified_date of this TaskBasicRsp.
+        r"""Sets the last_modified_date of this TaskBasicRsp.
 
         最近一次的修改时间
 
@@ -485,7 +485,7 @@ class TaskBasicRsp:
 
     @property
     def description(self):
-        """Gets the description of this TaskBasicRsp.
+        r"""Gets the description of this TaskBasicRsp.
 
         描述信息
 
@@ -496,7 +496,7 @@ class TaskBasicRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskBasicRsp.
+        r"""Sets the description of this TaskBasicRsp.
 
         描述信息
 
@@ -507,7 +507,7 @@ class TaskBasicRsp:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this TaskBasicRsp.
+        r"""Gets the task_tag of this TaskBasicRsp.
 
         任务标签,只能包含字母、数字、中划线、下划线
 
@@ -518,7 +518,7 @@ class TaskBasicRsp:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this TaskBasicRsp.
+        r"""Sets the task_tag of this TaskBasicRsp.
 
         任务标签,只能包含字母、数字、中划线、下划线
 

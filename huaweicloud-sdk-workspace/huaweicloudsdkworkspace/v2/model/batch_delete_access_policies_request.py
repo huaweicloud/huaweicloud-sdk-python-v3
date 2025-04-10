@@ -25,7 +25,7 @@ class BatchDeleteAccessPoliciesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteAccessPoliciesRequest
+        r"""BatchDeleteAccessPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteAccessPoliciesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteAccessPoliciesRequest.
+        r"""Gets the body of this BatchDeleteAccessPoliciesRequest.
 
         :return: The body of this BatchDeleteAccessPoliciesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAccessPoliciesReq`
@@ -52,7 +52,7 @@ class BatchDeleteAccessPoliciesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteAccessPoliciesRequest.
+        r"""Sets the body of this BatchDeleteAccessPoliciesRequest.
 
         :param body: The body of this BatchDeleteAccessPoliciesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAccessPoliciesReq`

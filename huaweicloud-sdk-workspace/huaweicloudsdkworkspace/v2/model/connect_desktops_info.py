@@ -31,7 +31,7 @@ class ConnectDesktopsInfo:
     }
 
     def __init__(self, desktop_id=None, desktop_name=None, connect_status=None, attach_users=None):
-        """ConnectDesktopsInfo
+        r"""ConnectDesktopsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConnectDesktopsInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ConnectDesktopsInfo.
+        r"""Gets the desktop_id of this ConnectDesktopsInfo.
 
         桌面id。
 
@@ -75,7 +75,7 @@ class ConnectDesktopsInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ConnectDesktopsInfo.
+        r"""Sets the desktop_id of this ConnectDesktopsInfo.
 
         桌面id。
 
@@ -86,7 +86,7 @@ class ConnectDesktopsInfo:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ConnectDesktopsInfo.
+        r"""Gets the desktop_name of this ConnectDesktopsInfo.
 
         桌面名称。
 
@@ -97,7 +97,7 @@ class ConnectDesktopsInfo:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ConnectDesktopsInfo.
+        r"""Sets the desktop_name of this ConnectDesktopsInfo.
 
         桌面名称。
 
@@ -108,7 +108,7 @@ class ConnectDesktopsInfo:
 
     @property
     def connect_status(self):
-        """Gets the connect_status of this ConnectDesktopsInfo.
+        r"""Gets the connect_status of this ConnectDesktopsInfo.
 
         桌面的连接状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功连接，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -119,7 +119,7 @@ class ConnectDesktopsInfo:
 
     @connect_status.setter
     def connect_status(self, connect_status):
-        """Sets the connect_status of this ConnectDesktopsInfo.
+        r"""Sets the connect_status of this ConnectDesktopsInfo.
 
         桌面的连接状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功连接，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -130,7 +130,7 @@ class ConnectDesktopsInfo:
 
     @property
     def attach_users(self):
-        """Gets the attach_users of this ConnectDesktopsInfo.
+        r"""Gets the attach_users of this ConnectDesktopsInfo.
 
         桌面已分配的用户或用户组信息列表。
 
@@ -141,7 +141,7 @@ class ConnectDesktopsInfo:
 
     @attach_users.setter
     def attach_users(self, attach_users):
-        """Sets the attach_users of this ConnectDesktopsInfo.
+        r"""Sets the attach_users of this ConnectDesktopsInfo.
 
         桌面已分配的用户或用户组信息列表。
 

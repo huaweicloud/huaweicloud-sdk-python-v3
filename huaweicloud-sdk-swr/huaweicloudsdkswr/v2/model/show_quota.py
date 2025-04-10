@@ -31,7 +31,7 @@ class ShowQuota:
     }
 
     def __init__(self, quota_limit=None, quota_key=None, unit=None, used=None):
-        """ShowQuota
+        r"""ShowQuota
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowQuota:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this ShowQuota.
+        r"""Gets the quota_limit of this ShowQuota.
 
         配额限制
 
@@ -71,7 +71,7 @@ class ShowQuota:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this ShowQuota.
+        r"""Sets the quota_limit of this ShowQuota.
 
         配额限制
 
@@ -82,7 +82,7 @@ class ShowQuota:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this ShowQuota.
+        r"""Gets the quota_key of this ShowQuota.
 
         配额类型
 
@@ -93,7 +93,7 @@ class ShowQuota:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this ShowQuota.
+        r"""Sets the quota_key of this ShowQuota.
 
         配额类型
 
@@ -104,7 +104,7 @@ class ShowQuota:
 
     @property
     def unit(self):
-        """Gets the unit of this ShowQuota.
+        r"""Gets the unit of this ShowQuota.
 
         单位 
 
@@ -115,7 +115,7 @@ class ShowQuota:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ShowQuota.
+        r"""Sets the unit of this ShowQuota.
 
         单位 
 
@@ -126,7 +126,7 @@ class ShowQuota:
 
     @property
     def used(self):
-        """Gets the used of this ShowQuota.
+        r"""Gets the used of this ShowQuota.
 
         已用配额
 
@@ -137,7 +137,7 @@ class ShowQuota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowQuota.
+        r"""Sets the used of this ShowQuota.
 
         已用配额
 

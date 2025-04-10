@@ -45,7 +45,7 @@ class IndicatorDetail:
     }
 
     def __init__(self, id=None, name=None, dataclass_id=None, type=None, data_object=None, workspace_id=None, project_id=None, layout_id=None, dataclass=None, create_time=None, update_time=None):
-        """IndicatorDetail
+        r"""IndicatorDetail
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class IndicatorDetail:
 
     @property
     def id(self):
-        """Gets the id of this IndicatorDetail.
+        r"""Gets the id of this IndicatorDetail.
 
         指标ID
 
@@ -123,7 +123,7 @@ class IndicatorDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IndicatorDetail.
+        r"""Sets the id of this IndicatorDetail.
 
         指标ID
 
@@ -134,7 +134,7 @@ class IndicatorDetail:
 
     @property
     def name(self):
-        """Gets the name of this IndicatorDetail.
+        r"""Gets the name of this IndicatorDetail.
 
         指标名称
 
@@ -145,7 +145,7 @@ class IndicatorDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IndicatorDetail.
+        r"""Sets the name of this IndicatorDetail.
 
         指标名称
 
@@ -156,7 +156,7 @@ class IndicatorDetail:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this IndicatorDetail.
+        r"""Gets the dataclass_id of this IndicatorDetail.
 
         数据类ID
 
@@ -167,7 +167,7 @@ class IndicatorDetail:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this IndicatorDetail.
+        r"""Sets the dataclass_id of this IndicatorDetail.
 
         数据类ID
 
@@ -178,7 +178,7 @@ class IndicatorDetail:
 
     @property
     def type(self):
-        """Gets the type of this IndicatorDetail.
+        r"""Gets the type of this IndicatorDetail.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -189,7 +189,7 @@ class IndicatorDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IndicatorDetail.
+        r"""Sets the type of this IndicatorDetail.
 
         类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
 
@@ -200,7 +200,7 @@ class IndicatorDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this IndicatorDetail.
+        r"""Gets the data_object of this IndicatorDetail.
 
         :return: The data_object of this IndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.IndicatorDataObjectDetail`
@@ -209,7 +209,7 @@ class IndicatorDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this IndicatorDetail.
+        r"""Sets the data_object of this IndicatorDetail.
 
         :param data_object: The data_object of this IndicatorDetail.
         :type data_object: :class:`huaweicloudsdksa.v2.IndicatorDataObjectDetail`
@@ -218,7 +218,7 @@ class IndicatorDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this IndicatorDetail.
+        r"""Gets the workspace_id of this IndicatorDetail.
 
         workspace id
 
@@ -229,7 +229,7 @@ class IndicatorDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this IndicatorDetail.
+        r"""Sets the workspace_id of this IndicatorDetail.
 
         workspace id
 
@@ -240,7 +240,7 @@ class IndicatorDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IndicatorDetail.
+        r"""Gets the project_id of this IndicatorDetail.
 
         Project id value
 
@@ -251,7 +251,7 @@ class IndicatorDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IndicatorDetail.
+        r"""Sets the project_id of this IndicatorDetail.
 
         Project id value
 
@@ -262,7 +262,7 @@ class IndicatorDetail:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this IndicatorDetail.
+        r"""Gets the layout_id of this IndicatorDetail.
 
         布局ID
 
@@ -273,7 +273,7 @@ class IndicatorDetail:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this IndicatorDetail.
+        r"""Sets the layout_id of this IndicatorDetail.
 
         布局ID
 
@@ -284,7 +284,7 @@ class IndicatorDetail:
 
     @property
     def dataclass(self):
-        """Gets the dataclass of this IndicatorDetail.
+        r"""Gets the dataclass of this IndicatorDetail.
 
         :return: The dataclass of this IndicatorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.DataClassRefPojo`
@@ -293,7 +293,7 @@ class IndicatorDetail:
 
     @dataclass.setter
     def dataclass(self, dataclass):
-        """Sets the dataclass of this IndicatorDetail.
+        r"""Sets the dataclass of this IndicatorDetail.
 
         :param dataclass: The dataclass of this IndicatorDetail.
         :type dataclass: :class:`huaweicloudsdksa.v2.DataClassRefPojo`
@@ -302,7 +302,7 @@ class IndicatorDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IndicatorDetail.
+        r"""Gets the create_time of this IndicatorDetail.
 
         Create time
 
@@ -313,7 +313,7 @@ class IndicatorDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IndicatorDetail.
+        r"""Sets the create_time of this IndicatorDetail.
 
         Create time
 
@@ -324,7 +324,7 @@ class IndicatorDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this IndicatorDetail.
+        r"""Gets the update_time of this IndicatorDetail.
 
         Update time
 
@@ -335,7 +335,7 @@ class IndicatorDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this IndicatorDetail.
+        r"""Sets the update_time of this IndicatorDetail.
 
         Update time
 

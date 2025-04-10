@@ -26,7 +26,7 @@ class ListYmlsJobResponse(SdkResponse):
     }
 
     def __init__(self, config_list=None):
-        """ListYmlsJobResponse
+        r"""ListYmlsJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListYmlsJobResponse(SdkResponse):
 
     @property
     def config_list(self):
-        """Gets the config_list of this ListYmlsJobResponse.
+        r"""Gets the config_list of this ListYmlsJobResponse.
 
         历史修改配置列表。
 
@@ -55,7 +55,7 @@ class ListYmlsJobResponse(SdkResponse):
 
     @config_list.setter
     def config_list(self, config_list):
-        """Sets the config_list of this ListYmlsJobResponse.
+        r"""Sets the config_list of this ListYmlsJobResponse.
 
         历史修改配置列表。
 

@@ -27,7 +27,7 @@ class DeleteSnapshotConfigRequest:
     }
 
     def __init__(self, domain=None, app_name=None):
-        """DeleteSnapshotConfigRequest
+        r"""DeleteSnapshotConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSnapshotConfigRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteSnapshotConfigRequest.
+        r"""Gets the domain of this DeleteSnapshotConfigRequest.
 
         直播流播放域名
 
@@ -59,7 +59,7 @@ class DeleteSnapshotConfigRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteSnapshotConfigRequest.
+        r"""Sets the domain of this DeleteSnapshotConfigRequest.
 
         直播流播放域名
 
@@ -70,7 +70,7 @@ class DeleteSnapshotConfigRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DeleteSnapshotConfigRequest.
+        r"""Gets the app_name of this DeleteSnapshotConfigRequest.
 
         应用名称
 
@@ -81,7 +81,7 @@ class DeleteSnapshotConfigRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DeleteSnapshotConfigRequest.
+        r"""Sets the app_name of this DeleteSnapshotConfigRequest.
 
         应用名称
 

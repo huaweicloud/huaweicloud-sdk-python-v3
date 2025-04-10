@@ -31,7 +31,7 @@ class CheckDisasterNameRequest:
     }
 
     def __init__(self, dr_name=None, type=None, standby_region=None, standby_project_id=None):
-        """CheckDisasterNameRequest
+        r"""CheckDisasterNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CheckDisasterNameRequest:
 
     @property
     def dr_name(self):
-        """Gets the dr_name of this CheckDisasterNameRequest.
+        r"""Gets the dr_name of this CheckDisasterNameRequest.
 
         容灾名称
 
@@ -74,7 +74,7 @@ class CheckDisasterNameRequest:
 
     @dr_name.setter
     def dr_name(self, dr_name):
-        """Sets the dr_name of this CheckDisasterNameRequest.
+        r"""Sets the dr_name of this CheckDisasterNameRequest.
 
         容灾名称
 
@@ -85,7 +85,7 @@ class CheckDisasterNameRequest:
 
     @property
     def type(self):
-        """Gets the type of this CheckDisasterNameRequest.
+        r"""Gets the type of this CheckDisasterNameRequest.
 
         容灾类型
 
@@ -96,7 +96,7 @@ class CheckDisasterNameRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CheckDisasterNameRequest.
+        r"""Sets the type of this CheckDisasterNameRequest.
 
         容灾类型
 
@@ -107,7 +107,7 @@ class CheckDisasterNameRequest:
 
     @property
     def standby_region(self):
-        """Gets the standby_region of this CheckDisasterNameRequest.
+        r"""Gets the standby_region of this CheckDisasterNameRequest.
 
         备集群所在region
 
@@ -118,7 +118,7 @@ class CheckDisasterNameRequest:
 
     @standby_region.setter
     def standby_region(self, standby_region):
-        """Sets the standby_region of this CheckDisasterNameRequest.
+        r"""Sets the standby_region of this CheckDisasterNameRequest.
 
         备集群所在region
 
@@ -129,7 +129,7 @@ class CheckDisasterNameRequest:
 
     @property
     def standby_project_id(self):
-        """Gets the standby_project_id of this CheckDisasterNameRequest.
+        r"""Gets the standby_project_id of this CheckDisasterNameRequest.
 
         备集群所在项目ID
 
@@ -140,7 +140,7 @@ class CheckDisasterNameRequest:
 
     @standby_project_id.setter
     def standby_project_id(self, standby_project_id):
-        """Sets the standby_project_id of this CheckDisasterNameRequest.
+        r"""Sets the standby_project_id of this CheckDisasterNameRequest.
 
         备集群所在项目ID
 

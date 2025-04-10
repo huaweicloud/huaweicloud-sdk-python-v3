@@ -34,7 +34,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
     }
 
     def __init__(self, defect=None, case_pass_rate=None, case_completion_rate=None, project_type=None, issue_cover_rate=None):
-        """ShowProjectDataDashboardResponse
+        r"""ShowProjectDataDashboardResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @property
     def defect(self):
-        """Gets the defect of this ShowProjectDataDashboardResponse.
+        r"""Gets the defect of this ShowProjectDataDashboardResponse.
 
         :return: The defect of this ShowProjectDataDashboardResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DefectVo`
@@ -81,7 +81,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @defect.setter
     def defect(self, defect):
-        """Sets the defect of this ShowProjectDataDashboardResponse.
+        r"""Sets the defect of this ShowProjectDataDashboardResponse.
 
         :param defect: The defect of this ShowProjectDataDashboardResponse.
         :type defect: :class:`huaweicloudsdkcloudtest.v1.DefectVo`
@@ -90,7 +90,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @property
     def case_pass_rate(self):
-        """Gets the case_pass_rate of this ShowProjectDataDashboardResponse.
+        r"""Gets the case_pass_rate of this ShowProjectDataDashboardResponse.
 
         :return: The case_pass_rate of this ShowProjectDataDashboardResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CasePassRateVo`
@@ -99,7 +99,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @case_pass_rate.setter
     def case_pass_rate(self, case_pass_rate):
-        """Sets the case_pass_rate of this ShowProjectDataDashboardResponse.
+        r"""Sets the case_pass_rate of this ShowProjectDataDashboardResponse.
 
         :param case_pass_rate: The case_pass_rate of this ShowProjectDataDashboardResponse.
         :type case_pass_rate: :class:`huaweicloudsdkcloudtest.v1.CasePassRateVo`
@@ -108,7 +108,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @property
     def case_completion_rate(self):
-        """Gets the case_completion_rate of this ShowProjectDataDashboardResponse.
+        r"""Gets the case_completion_rate of this ShowProjectDataDashboardResponse.
 
         :return: The case_completion_rate of this ShowProjectDataDashboardResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CaseCompletionRateVo`
@@ -117,7 +117,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @case_completion_rate.setter
     def case_completion_rate(self, case_completion_rate):
-        """Sets the case_completion_rate of this ShowProjectDataDashboardResponse.
+        r"""Sets the case_completion_rate of this ShowProjectDataDashboardResponse.
 
         :param case_completion_rate: The case_completion_rate of this ShowProjectDataDashboardResponse.
         :type case_completion_rate: :class:`huaweicloudsdkcloudtest.v1.CaseCompletionRateVo`
@@ -126,7 +126,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @property
     def project_type(self):
-        """Gets the project_type of this ShowProjectDataDashboardResponse.
+        r"""Gets the project_type of this ShowProjectDataDashboardResponse.
 
         项目类型
 
@@ -137,7 +137,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this ShowProjectDataDashboardResponse.
+        r"""Sets the project_type of this ShowProjectDataDashboardResponse.
 
         项目类型
 
@@ -148,7 +148,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @property
     def issue_cover_rate(self):
-        """Gets the issue_cover_rate of this ShowProjectDataDashboardResponse.
+        r"""Gets the issue_cover_rate of this ShowProjectDataDashboardResponse.
 
         :return: The issue_cover_rate of this ShowProjectDataDashboardResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IssueCoverRateVo`
@@ -157,7 +157,7 @@ class ShowProjectDataDashboardResponse(SdkResponse):
 
     @issue_cover_rate.setter
     def issue_cover_rate(self, issue_cover_rate):
-        """Sets the issue_cover_rate of this ShowProjectDataDashboardResponse.
+        r"""Sets the issue_cover_rate of this ShowProjectDataDashboardResponse.
 
         :param issue_cover_rate: The issue_cover_rate of this ShowProjectDataDashboardResponse.
         :type issue_cover_rate: :class:`huaweicloudsdkcloudtest.v1.IssueCoverRateVo`

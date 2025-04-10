@@ -27,7 +27,7 @@ class ResourceAttachedManagedPolicyDto:
     }
 
     def __init__(self, role_id=None, role_name=None):
-        """ResourceAttachedManagedPolicyDto
+        r"""ResourceAttachedManagedPolicyDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceAttachedManagedPolicyDto:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ResourceAttachedManagedPolicyDto.
+        r"""Gets the role_id of this ResourceAttachedManagedPolicyDto.
 
         IAM系统策略唯一标识
 
@@ -61,7 +61,7 @@ class ResourceAttachedManagedPolicyDto:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ResourceAttachedManagedPolicyDto.
+        r"""Sets the role_id of this ResourceAttachedManagedPolicyDto.
 
         IAM系统策略唯一标识
 
@@ -72,7 +72,7 @@ class ResourceAttachedManagedPolicyDto:
 
     @property
     def role_name(self):
-        """Gets the role_name of this ResourceAttachedManagedPolicyDto.
+        r"""Gets the role_name of this ResourceAttachedManagedPolicyDto.
 
         IAM系统策略名称
 
@@ -83,7 +83,7 @@ class ResourceAttachedManagedPolicyDto:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this ResourceAttachedManagedPolicyDto.
+        r"""Sets the role_name of this ResourceAttachedManagedPolicyDto.
 
         IAM系统策略名称
 

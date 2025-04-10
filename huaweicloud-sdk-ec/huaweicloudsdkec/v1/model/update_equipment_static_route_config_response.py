@@ -36,7 +36,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
     }
 
     def __init__(self, prefix=None, next_hop=None, interface_name=None, priority=None, track_nqa=None, post_to_cloud=None):
-        """UpdateEquipmentStaticRouteConfigResponse
+        r"""UpdateEquipmentStaticRouteConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @property
     def prefix(self):
-        """Gets the prefix of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Gets the prefix of this UpdateEquipmentStaticRouteConfigResponse.
 
         目标网络
 
@@ -90,7 +90,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Sets the prefix of this UpdateEquipmentStaticRouteConfigResponse.
 
         目标网络
 
@@ -101,7 +101,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @property
     def next_hop(self):
-        """Gets the next_hop of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Gets the next_hop of this UpdateEquipmentStaticRouteConfigResponse.
 
         下一跳地址
 
@@ -112,7 +112,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @next_hop.setter
     def next_hop(self, next_hop):
-        """Sets the next_hop of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Sets the next_hop of this UpdateEquipmentStaticRouteConfigResponse.
 
         下一跳地址
 
@@ -123,7 +123,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Gets the interface_name of this UpdateEquipmentStaticRouteConfigResponse.
 
         接口名字
 
@@ -134,7 +134,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Sets the interface_name of this UpdateEquipmentStaticRouteConfigResponse.
 
         接口名字
 
@@ -145,7 +145,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Gets the priority of this UpdateEquipmentStaticRouteConfigResponse.
 
         优先级
 
@@ -156,7 +156,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Sets the priority of this UpdateEquipmentStaticRouteConfigResponse.
 
         优先级
 
@@ -167,7 +167,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @property
     def track_nqa(self):
-        """Gets the track_nqa of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Gets the track_nqa of this UpdateEquipmentStaticRouteConfigResponse.
 
         自动检测
 
@@ -178,7 +178,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @track_nqa.setter
     def track_nqa(self, track_nqa):
-        """Sets the track_nqa of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Sets the track_nqa of this UpdateEquipmentStaticRouteConfigResponse.
 
         自动检测
 
@@ -189,7 +189,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @property
     def post_to_cloud(self):
-        """Gets the post_to_cloud of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Gets the post_to_cloud of this UpdateEquipmentStaticRouteConfigResponse.
 
         发布到企业连接网络
 
@@ -200,7 +200,7 @@ class UpdateEquipmentStaticRouteConfigResponse(SdkResponse):
 
     @post_to_cloud.setter
     def post_to_cloud(self, post_to_cloud):
-        """Sets the post_to_cloud of this UpdateEquipmentStaticRouteConfigResponse.
+        r"""Sets the post_to_cloud of this UpdateEquipmentStaticRouteConfigResponse.
 
         发布到企业连接网络
 

@@ -31,7 +31,7 @@ class PluginEntity:
     }
 
     def __init__(self, running=None, enable=None, name=None, version=None):
-        """PluginEntity
+        r"""PluginEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PluginEntity:
 
     @property
     def running(self):
-        """Gets the running of this PluginEntity.
+        r"""Gets the running of this PluginEntity.
 
         是否运行。
 
@@ -75,7 +75,7 @@ class PluginEntity:
 
     @running.setter
     def running(self, running):
-        """Sets the running of this PluginEntity.
+        r"""Sets the running of this PluginEntity.
 
         是否运行。
 
@@ -86,7 +86,7 @@ class PluginEntity:
 
     @property
     def enable(self):
-        """Gets the enable of this PluginEntity.
+        r"""Gets the enable of this PluginEntity.
 
         是否启用。
 
@@ -97,7 +97,7 @@ class PluginEntity:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this PluginEntity.
+        r"""Sets the enable of this PluginEntity.
 
         是否启用。
 
@@ -108,7 +108,7 @@ class PluginEntity:
 
     @property
     def name(self):
-        """Gets the name of this PluginEntity.
+        r"""Gets the name of this PluginEntity.
 
         插件名称。
 
@@ -119,7 +119,7 @@ class PluginEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PluginEntity.
+        r"""Sets the name of this PluginEntity.
 
         插件名称。
 
@@ -130,7 +130,7 @@ class PluginEntity:
 
     @property
     def version(self):
-        """Gets the version of this PluginEntity.
+        r"""Gets the version of this PluginEntity.
 
         插件版本。
 
@@ -141,7 +141,7 @@ class PluginEntity:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PluginEntity.
+        r"""Sets the version of this PluginEntity.
 
         插件版本。
 

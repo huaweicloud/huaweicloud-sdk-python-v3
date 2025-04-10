@@ -33,7 +33,7 @@ class CreateOtTemplatesReqDTO:
     }
 
     def __init__(self, tpl_id=None, name=None, description=None, datasource_meta=None, point_meta=None):
-        """CreateOtTemplatesReqDTO
+        r"""CreateOtTemplatesReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreateOtTemplatesReqDTO:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateOtTemplatesReqDTO.
+        r"""Gets the tpl_id of this CreateOtTemplatesReqDTO.
 
         模板id
 
@@ -77,7 +77,7 @@ class CreateOtTemplatesReqDTO:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateOtTemplatesReqDTO.
+        r"""Sets the tpl_id of this CreateOtTemplatesReqDTO.
 
         模板id
 
@@ -88,7 +88,7 @@ class CreateOtTemplatesReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateOtTemplatesReqDTO.
+        r"""Gets the name of this CreateOtTemplatesReqDTO.
 
         模板名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -99,7 +99,7 @@ class CreateOtTemplatesReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateOtTemplatesReqDTO.
+        r"""Sets the name of this CreateOtTemplatesReqDTO.
 
         模板名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -110,7 +110,7 @@ class CreateOtTemplatesReqDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateOtTemplatesReqDTO.
+        r"""Gets the description of this CreateOtTemplatesReqDTO.
 
         描述
 
@@ -121,7 +121,7 @@ class CreateOtTemplatesReqDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateOtTemplatesReqDTO.
+        r"""Sets the description of this CreateOtTemplatesReqDTO.
 
         描述
 
@@ -132,7 +132,7 @@ class CreateOtTemplatesReqDTO:
 
     @property
     def datasource_meta(self):
-        """Gets the datasource_meta of this CreateOtTemplatesReqDTO.
+        r"""Gets the datasource_meta of this CreateOtTemplatesReqDTO.
 
         数据源元数据
 
@@ -143,7 +143,7 @@ class CreateOtTemplatesReqDTO:
 
     @datasource_meta.setter
     def datasource_meta(self, datasource_meta):
-        """Sets the datasource_meta of this CreateOtTemplatesReqDTO.
+        r"""Sets the datasource_meta of this CreateOtTemplatesReqDTO.
 
         数据源元数据
 
@@ -154,7 +154,7 @@ class CreateOtTemplatesReqDTO:
 
     @property
     def point_meta(self):
-        """Gets the point_meta of this CreateOtTemplatesReqDTO.
+        r"""Gets the point_meta of this CreateOtTemplatesReqDTO.
 
         点位表元数据
 
@@ -165,7 +165,7 @@ class CreateOtTemplatesReqDTO:
 
     @point_meta.setter
     def point_meta(self, point_meta):
-        """Sets the point_meta of this CreateOtTemplatesReqDTO.
+        r"""Sets the point_meta of this CreateOtTemplatesReqDTO.
 
         点位表元数据
 

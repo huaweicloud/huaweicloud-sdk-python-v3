@@ -25,7 +25,7 @@ class PoliciesClientAutocloseMonitorOptions:
     }
 
     def __init__(self, autoclose_monitor_wait_time=None):
-        """PoliciesClientAutocloseMonitorOptions
+        r"""PoliciesClientAutocloseMonitorOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesClientAutocloseMonitorOptions:
 
     @property
     def autoclose_monitor_wait_time(self):
-        """Gets the autoclose_monitor_wait_time of this PoliciesClientAutocloseMonitorOptions.
+        r"""Gets the autoclose_monitor_wait_time of this PoliciesClientAutocloseMonitorOptions.
 
         自动关闭显示器等待时间。取值范围为[10-600000]。默认：300。
 
@@ -54,7 +54,7 @@ class PoliciesClientAutocloseMonitorOptions:
 
     @autoclose_monitor_wait_time.setter
     def autoclose_monitor_wait_time(self, autoclose_monitor_wait_time):
-        """Sets the autoclose_monitor_wait_time of this PoliciesClientAutocloseMonitorOptions.
+        r"""Sets the autoclose_monitor_wait_time of this PoliciesClientAutocloseMonitorOptions.
 
         自动关闭显示器等待时间。取值范围为[10-600000]。默认：300。
 

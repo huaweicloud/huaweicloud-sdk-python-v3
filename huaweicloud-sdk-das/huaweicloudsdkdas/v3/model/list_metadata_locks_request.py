@@ -35,7 +35,7 @@ class ListMetadataLocksRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, thread_id=None, database=None, table=None, x_language=None):
-        """ListMetadataLocksRequest
+        r"""ListMetadataLocksRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListMetadataLocksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMetadataLocksRequest.
+        r"""Gets the instance_id of this ListMetadataLocksRequest.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ListMetadataLocksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMetadataLocksRequest.
+        r"""Sets the instance_id of this ListMetadataLocksRequest.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ListMetadataLocksRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this ListMetadataLocksRequest.
+        r"""Gets the db_user_id of this ListMetadataLocksRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -109,7 +109,7 @@ class ListMetadataLocksRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this ListMetadataLocksRequest.
+        r"""Sets the db_user_id of this ListMetadataLocksRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -120,7 +120,7 @@ class ListMetadataLocksRequest:
 
     @property
     def thread_id(self):
-        """Gets the thread_id of this ListMetadataLocksRequest.
+        r"""Gets the thread_id of this ListMetadataLocksRequest.
 
         会话ID
 
@@ -131,7 +131,7 @@ class ListMetadataLocksRequest:
 
     @thread_id.setter
     def thread_id(self, thread_id):
-        """Sets the thread_id of this ListMetadataLocksRequest.
+        r"""Sets the thread_id of this ListMetadataLocksRequest.
 
         会话ID
 
@@ -142,7 +142,7 @@ class ListMetadataLocksRequest:
 
     @property
     def database(self):
-        """Gets the database of this ListMetadataLocksRequest.
+        r"""Gets the database of this ListMetadataLocksRequest.
 
         数据库名称
 
@@ -153,7 +153,7 @@ class ListMetadataLocksRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ListMetadataLocksRequest.
+        r"""Sets the database of this ListMetadataLocksRequest.
 
         数据库名称
 
@@ -164,7 +164,7 @@ class ListMetadataLocksRequest:
 
     @property
     def table(self):
-        """Gets the table of this ListMetadataLocksRequest.
+        r"""Gets the table of this ListMetadataLocksRequest.
 
         表名
 
@@ -175,7 +175,7 @@ class ListMetadataLocksRequest:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ListMetadataLocksRequest.
+        r"""Sets the table of this ListMetadataLocksRequest.
 
         表名
 
@@ -186,7 +186,7 @@ class ListMetadataLocksRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListMetadataLocksRequest.
+        r"""Gets the x_language of this ListMetadataLocksRequest.
 
         语言
 
@@ -197,7 +197,7 @@ class ListMetadataLocksRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListMetadataLocksRequest.
+        r"""Sets the x_language of this ListMetadataLocksRequest.
 
         语言
 

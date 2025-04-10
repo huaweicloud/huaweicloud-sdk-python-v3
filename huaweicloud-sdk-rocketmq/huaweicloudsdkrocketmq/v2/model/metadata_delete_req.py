@@ -25,7 +25,7 @@ class MetadataDeleteReq:
     }
 
     def __init__(self, task_ids=None):
-        """MetadataDeleteReq
+        r"""MetadataDeleteReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MetadataDeleteReq:
 
     @property
     def task_ids(self):
-        """Gets the task_ids of this MetadataDeleteReq.
+        r"""Gets the task_ids of this MetadataDeleteReq.
 
         需要删除的任务列表。
 
@@ -53,7 +53,7 @@ class MetadataDeleteReq:
 
     @task_ids.setter
     def task_ids(self, task_ids):
-        """Sets the task_ids of this MetadataDeleteReq.
+        r"""Sets the task_ids of this MetadataDeleteReq.
 
         需要删除的任务列表。
 

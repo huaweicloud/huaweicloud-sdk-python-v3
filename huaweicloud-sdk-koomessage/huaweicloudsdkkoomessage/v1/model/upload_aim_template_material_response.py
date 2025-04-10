@@ -30,7 +30,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """UploadAimTemplateMaterialResponse
+        r"""UploadAimTemplateMaterialResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UploadAimTemplateMaterialResponse.
+        r"""Gets the status of this UploadAimTemplateMaterialResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadAimTemplateMaterialResponse.
+        r"""Sets the status of this UploadAimTemplateMaterialResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UploadAimTemplateMaterialResponse.
+        r"""Gets the message of this UploadAimTemplateMaterialResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UploadAimTemplateMaterialResponse.
+        r"""Sets the message of this UploadAimTemplateMaterialResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UploadAimTemplateMaterialResponse.
+        r"""Gets the data of this UploadAimTemplateMaterialResponse.
 
         :return: The data of this UploadAimTemplateMaterialResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadAimTemplateMaterialResponseMode`
@@ -111,7 +111,7 @@ class UploadAimTemplateMaterialResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UploadAimTemplateMaterialResponse.
+        r"""Sets the data of this UploadAimTemplateMaterialResponse.
 
         :param data: The data of this UploadAimTemplateMaterialResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.UploadAimTemplateMaterialResponseMode`

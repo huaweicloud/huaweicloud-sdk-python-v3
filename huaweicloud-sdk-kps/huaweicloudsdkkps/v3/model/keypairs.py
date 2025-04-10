@@ -25,7 +25,7 @@ class Keypairs:
     }
 
     def __init__(self, keypair=None):
-        """Keypairs
+        r"""Keypairs
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Keypairs:
 
     @property
     def keypair(self):
-        """Gets the keypair of this Keypairs.
+        r"""Gets the keypair of this Keypairs.
 
         :return: The keypair of this Keypairs.
         :rtype: :class:`huaweicloudsdkkps.v3.Keypair`
@@ -51,7 +51,7 @@ class Keypairs:
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this Keypairs.
+        r"""Sets the keypair of this Keypairs.
 
         :param keypair: The keypair of this Keypairs.
         :type keypair: :class:`huaweicloudsdkkps.v3.Keypair`

@@ -31,7 +31,7 @@ class ApplyConfigurationResponseApplyResults:
     }
 
     def __init__(self, instance_id=None, instance_name=None, restart_required=None, success=None):
-        """ApplyConfigurationResponseApplyResults
+        r"""ApplyConfigurationResponseApplyResults
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApplyConfigurationResponseApplyResults.
+        r"""Gets the instance_id of this ApplyConfigurationResponseApplyResults.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApplyConfigurationResponseApplyResults.
+        r"""Sets the instance_id of this ApplyConfigurationResponseApplyResults.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ApplyConfigurationResponseApplyResults.
+        r"""Gets the instance_name of this ApplyConfigurationResponseApplyResults.
 
         实例名称。
 
@@ -93,7 +93,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ApplyConfigurationResponseApplyResults.
+        r"""Sets the instance_name of this ApplyConfigurationResponseApplyResults.
 
         实例名称。
 
@@ -104,7 +104,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this ApplyConfigurationResponseApplyResults.
+        r"""Gets the restart_required of this ApplyConfigurationResponseApplyResults.
 
         实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
 
@@ -115,7 +115,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this ApplyConfigurationResponseApplyResults.
+        r"""Sets the restart_required of this ApplyConfigurationResponseApplyResults.
 
         实例是否需要重启。  - “true”需要重启。 - “false”不需要重启。
 
@@ -126,7 +126,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @property
     def success(self):
-        """Gets the success of this ApplyConfigurationResponseApplyResults.
+        r"""Gets the success of this ApplyConfigurationResponseApplyResults.
 
         参数模板是否应用成功。  - “true”表示参数模板应用成功。 - “false”表示参数模板应用失败。
 
@@ -137,7 +137,7 @@ class ApplyConfigurationResponseApplyResults:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ApplyConfigurationResponseApplyResults.
+        r"""Sets the success of this ApplyConfigurationResponseApplyResults.
 
         参数模板是否应用成功。  - “true”表示参数模板应用成功。 - “false”表示参数模板应用失败。
 

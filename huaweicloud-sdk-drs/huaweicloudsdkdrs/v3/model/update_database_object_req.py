@@ -31,7 +31,7 @@ class UpdateDatabaseObjectReq:
     }
 
     def __init__(self, job_id=None, selected=None, sync_database=None, job=None):
-        """UpdateDatabaseObjectReq
+        r"""UpdateDatabaseObjectReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateDatabaseObjectReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateDatabaseObjectReq.
+        r"""Gets the job_id of this UpdateDatabaseObjectReq.
 
         任务ID
 
@@ -74,7 +74,7 @@ class UpdateDatabaseObjectReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateDatabaseObjectReq.
+        r"""Sets the job_id of this UpdateDatabaseObjectReq.
 
         任务ID
 
@@ -85,7 +85,7 @@ class UpdateDatabaseObjectReq:
 
     @property
     def selected(self):
-        """Gets the selected of this UpdateDatabaseObjectReq.
+        r"""Gets the selected of this UpdateDatabaseObjectReq.
 
         是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
 
@@ -96,7 +96,7 @@ class UpdateDatabaseObjectReq:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this UpdateDatabaseObjectReq.
+        r"""Sets the selected of this UpdateDatabaseObjectReq.
 
         是否进行对象选择，是：自定义迁移对象，否：全部迁移，不填默认为否。
 
@@ -107,7 +107,7 @@ class UpdateDatabaseObjectReq:
 
     @property
     def sync_database(self):
-        """Gets the sync_database of this UpdateDatabaseObjectReq.
+        r"""Gets the sync_database of this UpdateDatabaseObjectReq.
 
         是否库级同步
 
@@ -118,7 +118,7 @@ class UpdateDatabaseObjectReq:
 
     @sync_database.setter
     def sync_database(self, sync_database):
-        """Sets the sync_database of this UpdateDatabaseObjectReq.
+        r"""Sets the sync_database of this UpdateDatabaseObjectReq.
 
         是否库级同步
 
@@ -129,7 +129,7 @@ class UpdateDatabaseObjectReq:
 
     @property
     def job(self):
-        """Gets the job of this UpdateDatabaseObjectReq.
+        r"""Gets the job of this UpdateDatabaseObjectReq.
 
         数据对象选择信息，selected为true时必填。
 
@@ -140,7 +140,7 @@ class UpdateDatabaseObjectReq:
 
     @job.setter
     def job(self, job):
-        """Sets the job of this UpdateDatabaseObjectReq.
+        r"""Sets the job of this UpdateDatabaseObjectReq.
 
         数据对象选择信息，selected为true时必填。
 

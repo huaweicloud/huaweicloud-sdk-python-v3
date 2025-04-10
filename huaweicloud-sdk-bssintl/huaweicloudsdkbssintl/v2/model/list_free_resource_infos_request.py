@@ -27,7 +27,7 @@ class ListFreeResourceInfosRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListFreeResourceInfosRequest
+        r"""ListFreeResourceInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFreeResourceInfosRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListFreeResourceInfosRequest.
+        r"""Gets the x_language of this ListFreeResourceInfosRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -61,7 +61,7 @@ class ListFreeResourceInfosRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListFreeResourceInfosRequest.
+        r"""Sets the x_language of this ListFreeResourceInfosRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -72,7 +72,7 @@ class ListFreeResourceInfosRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListFreeResourceInfosRequest.
+        r"""Gets the body of this ListFreeResourceInfosRequest.
 
         :return: The body of this ListFreeResourceInfosRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosReq`
@@ -81,7 +81,7 @@ class ListFreeResourceInfosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFreeResourceInfosRequest.
+        r"""Sets the body of this ListFreeResourceInfosRequest.
 
         :param body: The body of this ListFreeResourceInfosRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosReq`

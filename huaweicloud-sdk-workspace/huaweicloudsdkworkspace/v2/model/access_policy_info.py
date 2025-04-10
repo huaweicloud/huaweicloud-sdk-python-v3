@@ -33,7 +33,7 @@ class AccessPolicyInfo:
     }
 
     def __init__(self, policy_name=None, blacklist_type=None, access_control_type=None, ip_list=None, ip_total_count=None):
-        """AccessPolicyInfo
+        r"""AccessPolicyInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AccessPolicyInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this AccessPolicyInfo.
+        r"""Gets the policy_name of this AccessPolicyInfo.
 
         策略名
 
@@ -82,7 +82,7 @@ class AccessPolicyInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this AccessPolicyInfo.
+        r"""Sets the policy_name of this AccessPolicyInfo.
 
         策略名
 
@@ -93,7 +93,7 @@ class AccessPolicyInfo:
 
     @property
     def blacklist_type(self):
-        """Gets the blacklist_type of this AccessPolicyInfo.
+        r"""Gets the blacklist_type of this AccessPolicyInfo.
 
         黑名单类型，当前黑名单只支持互联网。 * INTERNET： 互联网
 
@@ -104,7 +104,7 @@ class AccessPolicyInfo:
 
     @blacklist_type.setter
     def blacklist_type(self, blacklist_type):
-        """Sets the blacklist_type of this AccessPolicyInfo.
+        r"""Sets the blacklist_type of this AccessPolicyInfo.
 
         黑名单类型，当前黑名单只支持互联网。 * INTERNET： 互联网
 
@@ -115,7 +115,7 @@ class AccessPolicyInfo:
 
     @property
     def access_control_type(self):
-        """Gets the access_control_type of this AccessPolicyInfo.
+        r"""Gets the access_control_type of this AccessPolicyInfo.
 
         访问控制类型。默认为接入类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
 
@@ -126,7 +126,7 @@ class AccessPolicyInfo:
 
     @access_control_type.setter
     def access_control_type(self, access_control_type):
-        """Sets the access_control_type of this AccessPolicyInfo.
+        r"""Sets the access_control_type of this AccessPolicyInfo.
 
         访问控制类型。默认为接入类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
 
@@ -137,7 +137,7 @@ class AccessPolicyInfo:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this AccessPolicyInfo.
+        r"""Gets the ip_list of this AccessPolicyInfo.
 
         策略的ip列表。
 
@@ -148,7 +148,7 @@ class AccessPolicyInfo:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this AccessPolicyInfo.
+        r"""Sets the ip_list of this AccessPolicyInfo.
 
         策略的ip列表。
 
@@ -159,7 +159,7 @@ class AccessPolicyInfo:
 
     @property
     def ip_total_count(self):
-        """Gets the ip_total_count of this AccessPolicyInfo.
+        r"""Gets the ip_total_count of this AccessPolicyInfo.
 
         策略总数。
 
@@ -170,7 +170,7 @@ class AccessPolicyInfo:
 
     @ip_total_count.setter
     def ip_total_count(self, ip_total_count):
-        """Sets the ip_total_count of this AccessPolicyInfo.
+        r"""Sets the ip_total_count of this AccessPolicyInfo.
 
         策略总数。
 

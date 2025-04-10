@@ -27,7 +27,7 @@ class CreateLabelPageRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateLabelPageRequest
+        r"""CreateLabelPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLabelPageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateLabelPageRequest.
+        r"""Gets the eihealth_project_id of this CreateLabelPageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateLabelPageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateLabelPageRequest.
+        r"""Sets the eihealth_project_id of this CreateLabelPageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateLabelPageRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLabelPageRequest.
+        r"""Gets the body of this CreateLabelPageRequest.
 
         :return: The body of this CreateLabelPageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageReq`
@@ -80,7 +80,7 @@ class CreateLabelPageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLabelPageRequest.
+        r"""Sets the body of this CreateLabelPageRequest.
 
         :param body: The body of this CreateLabelPageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageReq`

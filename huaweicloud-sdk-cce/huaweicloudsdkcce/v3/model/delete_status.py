@@ -33,7 +33,7 @@ class DeleteStatus:
     }
 
     def __init__(self, previous_total=None, current_total=None, updated=None, added=None, deleted=None):
-        """DeleteStatus
+        r"""DeleteStatus
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DeleteStatus:
 
     @property
     def previous_total(self):
-        """Gets the previous_total of this DeleteStatus.
+        r"""Gets the previous_total of this DeleteStatus.
 
         集群删除时已经存在的集群资源记录总数
 
@@ -82,7 +82,7 @@ class DeleteStatus:
 
     @previous_total.setter
     def previous_total(self, previous_total):
-        """Sets the previous_total of this DeleteStatus.
+        r"""Sets the previous_total of this DeleteStatus.
 
         集群删除时已经存在的集群资源记录总数
 
@@ -93,7 +93,7 @@ class DeleteStatus:
 
     @property
     def current_total(self):
-        """Gets the current_total of this DeleteStatus.
+        r"""Gets the current_total of this DeleteStatus.
 
         基于当前集群资源记录信息，生成实际最新资源记录总数
 
@@ -104,7 +104,7 @@ class DeleteStatus:
 
     @current_total.setter
     def current_total(self, current_total):
-        """Sets the current_total of this DeleteStatus.
+        r"""Sets the current_total of this DeleteStatus.
 
         基于当前集群资源记录信息，生成实际最新资源记录总数
 
@@ -115,7 +115,7 @@ class DeleteStatus:
 
     @property
     def updated(self):
-        """Gets the updated of this DeleteStatus.
+        r"""Gets the updated of this DeleteStatus.
 
         集群删除时更新的资源记录总数
 
@@ -126,7 +126,7 @@ class DeleteStatus:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this DeleteStatus.
+        r"""Sets the updated of this DeleteStatus.
 
         集群删除时更新的资源记录总数
 
@@ -137,7 +137,7 @@ class DeleteStatus:
 
     @property
     def added(self):
-        """Gets the added of this DeleteStatus.
+        r"""Gets the added of this DeleteStatus.
 
         集群删除时更新的资源记录总数
 
@@ -148,7 +148,7 @@ class DeleteStatus:
 
     @added.setter
     def added(self, added):
-        """Sets the added of this DeleteStatus.
+        r"""Sets the added of this DeleteStatus.
 
         集群删除时更新的资源记录总数
 
@@ -159,7 +159,7 @@ class DeleteStatus:
 
     @property
     def deleted(self):
-        """Gets the deleted of this DeleteStatus.
+        r"""Gets the deleted of this DeleteStatus.
 
         集群删除时删除的资源记录总数
 
@@ -170,7 +170,7 @@ class DeleteStatus:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this DeleteStatus.
+        r"""Sets the deleted of this DeleteStatus.
 
         集群删除时删除的资源记录总数
 

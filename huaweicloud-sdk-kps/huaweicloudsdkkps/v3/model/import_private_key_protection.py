@@ -27,7 +27,7 @@ class ImportPrivateKeyProtection:
     }
 
     def __init__(self, private_key=None, encryption=None):
-        """ImportPrivateKeyProtection
+        r"""ImportPrivateKeyProtection
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ImportPrivateKeyProtection:
 
     @property
     def private_key(self):
-        """Gets the private_key of this ImportPrivateKeyProtection.
+        r"""Gets the private_key of this ImportPrivateKeyProtection.
 
         导入SSH密钥对的私钥。
 
@@ -59,7 +59,7 @@ class ImportPrivateKeyProtection:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ImportPrivateKeyProtection.
+        r"""Sets the private_key of this ImportPrivateKeyProtection.
 
         导入SSH密钥对的私钥。
 
@@ -70,7 +70,7 @@ class ImportPrivateKeyProtection:
 
     @property
     def encryption(self):
-        """Gets the encryption of this ImportPrivateKeyProtection.
+        r"""Gets the encryption of this ImportPrivateKeyProtection.
 
         :return: The encryption of this ImportPrivateKeyProtection.
         :rtype: :class:`huaweicloudsdkkps.v3.Encryption`
@@ -79,7 +79,7 @@ class ImportPrivateKeyProtection:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this ImportPrivateKeyProtection.
+        r"""Sets the encryption of this ImportPrivateKeyProtection.
 
         :param encryption: The encryption of this ImportPrivateKeyProtection.
         :type encryption: :class:`huaweicloudsdkkps.v3.Encryption`

@@ -25,7 +25,7 @@ class CreateEncryptTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEncryptTaskRequest
+        r"""CreateEncryptTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEncryptTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEncryptTaskRequest.
+        r"""Gets the body of this CreateEncryptTaskRequest.
 
         :return: The body of this CreateEncryptTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEncryptReq`
@@ -52,7 +52,7 @@ class CreateEncryptTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEncryptTaskRequest.
+        r"""Sets the body of this CreateEncryptTaskRequest.
 
         :param body: The body of this CreateEncryptTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateEncryptReq`

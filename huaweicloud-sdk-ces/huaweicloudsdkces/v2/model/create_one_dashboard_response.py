@@ -26,7 +26,7 @@ class CreateOneDashboardResponse(SdkResponse):
     }
 
     def __init__(self, dashboard_id=None):
-        """CreateOneDashboardResponse
+        r"""CreateOneDashboardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateOneDashboardResponse(SdkResponse):
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this CreateOneDashboardResponse.
+        r"""Gets the dashboard_id of this CreateOneDashboardResponse.
 
         监控看板id
 
@@ -55,7 +55,7 @@ class CreateOneDashboardResponse(SdkResponse):
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this CreateOneDashboardResponse.
+        r"""Sets the dashboard_id of this CreateOneDashboardResponse.
 
         监控看板id
 

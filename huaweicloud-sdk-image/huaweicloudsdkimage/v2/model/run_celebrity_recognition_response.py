@@ -26,7 +26,7 @@ class RunCelebrityRecognitionResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunCelebrityRecognitionResponse
+        r"""RunCelebrityRecognitionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunCelebrityRecognitionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunCelebrityRecognitionResponse.
+        r"""Gets the result of this RunCelebrityRecognitionResponse.
 
         调用成功时表示调用结果。  调用失败时无此字段。 
 
@@ -55,7 +55,7 @@ class RunCelebrityRecognitionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunCelebrityRecognitionResponse.
+        r"""Sets the result of this RunCelebrityRecognitionResponse.
 
         调用成功时表示调用结果。  调用失败时无此字段。 
 

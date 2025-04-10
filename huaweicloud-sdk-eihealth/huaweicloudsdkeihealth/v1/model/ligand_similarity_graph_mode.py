@@ -27,7 +27,7 @@ class LigandSimilarityGraphMode:
     }
 
     def __init__(self):
-        """LigandSimilarityGraphMode
+        r"""LigandSimilarityGraphMode
 
         The model defined in huaweicloud sdk
 

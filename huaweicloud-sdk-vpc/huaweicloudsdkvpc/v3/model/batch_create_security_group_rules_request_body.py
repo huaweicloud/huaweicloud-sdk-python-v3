@@ -29,7 +29,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
     }
 
     def __init__(self, security_group_rules=None, ignore_duplicate=None, dry_run=None):
-        """BatchCreateSecurityGroupRulesRequestBody
+        r"""BatchCreateSecurityGroupRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this BatchCreateSecurityGroupRulesRequestBody.
+        r"""Gets the security_group_rules of this BatchCreateSecurityGroupRulesRequestBody.
 
         待创建的安全组规则列表
 
@@ -67,7 +67,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this BatchCreateSecurityGroupRulesRequestBody.
+        r"""Sets the security_group_rules of this BatchCreateSecurityGroupRulesRequestBody.
 
         待创建的安全组规则列表
 
@@ -78,7 +78,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
 
     @property
     def ignore_duplicate(self):
-        """Gets the ignore_duplicate of this BatchCreateSecurityGroupRulesRequestBody.
+        r"""Gets the ignore_duplicate of this BatchCreateSecurityGroupRulesRequestBody.
 
         创建时是否忽略重复的安全组规则 默认为false
 
@@ -89,7 +89,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
 
     @ignore_duplicate.setter
     def ignore_duplicate(self, ignore_duplicate):
-        """Sets the ignore_duplicate of this BatchCreateSecurityGroupRulesRequestBody.
+        r"""Sets the ignore_duplicate of this BatchCreateSecurityGroupRulesRequestBody.
 
         创建时是否忽略重复的安全组规则 默认为false
 
@@ -100,7 +100,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this BatchCreateSecurityGroupRulesRequestBody.
+        r"""Gets the dry_run of this BatchCreateSecurityGroupRulesRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建安全组规则。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建安全组规则。
 
@@ -111,7 +111,7 @@ class BatchCreateSecurityGroupRulesRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this BatchCreateSecurityGroupRulesRequestBody.
+        r"""Sets the dry_run of this BatchCreateSecurityGroupRulesRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建安全组规则。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建安全组规则。
 

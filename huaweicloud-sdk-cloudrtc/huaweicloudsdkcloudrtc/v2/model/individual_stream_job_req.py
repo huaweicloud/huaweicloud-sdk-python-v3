@@ -37,7 +37,7 @@ class IndividualStreamJobReq:
     }
 
     def __init__(self, room_id=None, user_id=None, is_record_audio=None, video_type=None, select_stream_type=None, max_idle_time=None, record_param=None):
-        """IndividualStreamJobReq
+        r"""IndividualStreamJobReq
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class IndividualStreamJobReq:
 
     @property
     def room_id(self):
-        """Gets the room_id of this IndividualStreamJobReq.
+        r"""Gets the room_id of this IndividualStreamJobReq.
 
         房间id
 
@@ -94,7 +94,7 @@ class IndividualStreamJobReq:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this IndividualStreamJobReq.
+        r"""Sets the room_id of this IndividualStreamJobReq.
 
         房间id
 
@@ -105,7 +105,7 @@ class IndividualStreamJobReq:
 
     @property
     def user_id(self):
-        """Gets the user_id of this IndividualStreamJobReq.
+        r"""Gets the user_id of this IndividualStreamJobReq.
 
         选看的用户id，单个录制任务内保证唯一
 
@@ -116,7 +116,7 @@ class IndividualStreamJobReq:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this IndividualStreamJobReq.
+        r"""Sets the user_id of this IndividualStreamJobReq.
 
         选看的用户id，单个录制任务内保证唯一
 
@@ -127,7 +127,7 @@ class IndividualStreamJobReq:
 
     @property
     def is_record_audio(self):
-        """Gets the is_record_audio of this IndividualStreamJobReq.
+        r"""Gets the is_record_audio of this IndividualStreamJobReq.
 
          是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
 
@@ -138,7 +138,7 @@ class IndividualStreamJobReq:
 
     @is_record_audio.setter
     def is_record_audio(self, is_record_audio):
-        """Sets the is_record_audio of this IndividualStreamJobReq.
+        r"""Sets the is_record_audio of this IndividualStreamJobReq.
 
          是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
 
@@ -149,7 +149,7 @@ class IndividualStreamJobReq:
 
     @property
     def video_type(self):
-        """Gets the video_type of this IndividualStreamJobReq.
+        r"""Gets the video_type of this IndividualStreamJobReq.
 
         标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
@@ -160,7 +160,7 @@ class IndividualStreamJobReq:
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this IndividualStreamJobReq.
+        r"""Sets the video_type of this IndividualStreamJobReq.
 
         标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
@@ -171,7 +171,7 @@ class IndividualStreamJobReq:
 
     @property
     def select_stream_type(self):
-        """Gets the select_stream_type of this IndividualStreamJobReq.
+        r"""Gets the select_stream_type of this IndividualStreamJobReq.
 
         指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
 
@@ -182,7 +182,7 @@ class IndividualStreamJobReq:
 
     @select_stream_type.setter
     def select_stream_type(self, select_stream_type):
-        """Sets the select_stream_type of this IndividualStreamJobReq.
+        r"""Sets the select_stream_type of this IndividualStreamJobReq.
 
         指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
 
@@ -193,7 +193,7 @@ class IndividualStreamJobReq:
 
     @property
     def max_idle_time(self):
-        """Gets the max_idle_time of this IndividualStreamJobReq.
+        r"""Gets the max_idle_time of this IndividualStreamJobReq.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -204,7 +204,7 @@ class IndividualStreamJobReq:
 
     @max_idle_time.setter
     def max_idle_time(self, max_idle_time):
-        """Sets the max_idle_time of this IndividualStreamJobReq.
+        r"""Sets the max_idle_time of this IndividualStreamJobReq.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -215,7 +215,7 @@ class IndividualStreamJobReq:
 
     @property
     def record_param(self):
-        """Gets the record_param of this IndividualStreamJobReq.
+        r"""Gets the record_param of this IndividualStreamJobReq.
 
         :return: The record_param of this IndividualStreamJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -224,7 +224,7 @@ class IndividualStreamJobReq:
 
     @record_param.setter
     def record_param(self, record_param):
-        """Sets the record_param of this IndividualStreamJobReq.
+        r"""Sets the record_param of this IndividualStreamJobReq.
 
         :param record_param: The record_param of this IndividualStreamJobReq.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`

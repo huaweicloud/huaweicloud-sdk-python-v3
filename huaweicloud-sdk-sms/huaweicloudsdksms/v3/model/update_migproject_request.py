@@ -27,7 +27,7 @@ class UpdateMigprojectRequest:
     }
 
     def __init__(self, mig_project_id=None, body=None):
-        """UpdateMigprojectRequest
+        r"""UpdateMigprojectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMigprojectRequest:
 
     @property
     def mig_project_id(self):
-        """Gets the mig_project_id of this UpdateMigprojectRequest.
+        r"""Gets the mig_project_id of this UpdateMigprojectRequest.
 
         迁移项目ID
 
@@ -60,7 +60,7 @@ class UpdateMigprojectRequest:
 
     @mig_project_id.setter
     def mig_project_id(self, mig_project_id):
-        """Sets the mig_project_id of this UpdateMigprojectRequest.
+        r"""Sets the mig_project_id of this UpdateMigprojectRequest.
 
         迁移项目ID
 
@@ -71,7 +71,7 @@ class UpdateMigprojectRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMigprojectRequest.
+        r"""Gets the body of this UpdateMigprojectRequest.
 
         :return: The body of this UpdateMigprojectRequest.
         :rtype: :class:`huaweicloudsdksms.v3.MigProject`
@@ -80,7 +80,7 @@ class UpdateMigprojectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMigprojectRequest.
+        r"""Sets the body of this UpdateMigprojectRequest.
 
         :param body: The body of this UpdateMigprojectRequest.
         :type body: :class:`huaweicloudsdksms.v3.MigProject`

@@ -27,7 +27,7 @@ class CbsFlowEntry:
     }
 
     def __init__(self, qa_flow_id=None, start_node_id=None):
-        """CbsFlowEntry
+        r"""CbsFlowEntry
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CbsFlowEntry:
 
     @property
     def qa_flow_id(self):
-        """Gets the qa_flow_id of this CbsFlowEntry.
+        r"""Gets the qa_flow_id of this CbsFlowEntry.
 
         问题流程id
 
@@ -61,7 +61,7 @@ class CbsFlowEntry:
 
     @qa_flow_id.setter
     def qa_flow_id(self, qa_flow_id):
-        """Sets the qa_flow_id of this CbsFlowEntry.
+        r"""Sets the qa_flow_id of this CbsFlowEntry.
 
         问题流程id
 
@@ -72,7 +72,7 @@ class CbsFlowEntry:
 
     @property
     def start_node_id(self):
-        """Gets the start_node_id of this CbsFlowEntry.
+        r"""Gets the start_node_id of this CbsFlowEntry.
 
         开始节点id
 
@@ -83,7 +83,7 @@ class CbsFlowEntry:
 
     @start_node_id.setter
     def start_node_id(self, start_node_id):
-        """Sets the start_node_id of this CbsFlowEntry.
+        r"""Sets the start_node_id of this CbsFlowEntry.
 
         开始节点id
 

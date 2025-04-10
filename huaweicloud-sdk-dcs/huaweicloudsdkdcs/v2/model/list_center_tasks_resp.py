@@ -47,7 +47,7 @@ class ListCenterTasksResp:
     }
 
     def __init__(self, id=None, name=None, details=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None, error_code=None, enable_show=None, job_id=None):
-        """ListCenterTasksResp
+        r"""ListCenterTasksResp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListCenterTasksResp:
 
     @property
     def id(self):
-        """Gets the id of this ListCenterTasksResp.
+        r"""Gets the id of this ListCenterTasksResp.
 
         后台任务ID
 
@@ -131,7 +131,7 @@ class ListCenterTasksResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCenterTasksResp.
+        r"""Sets the id of this ListCenterTasksResp.
 
         后台任务ID
 
@@ -142,7 +142,7 @@ class ListCenterTasksResp:
 
     @property
     def name(self):
-        """Gets the name of this ListCenterTasksResp.
+        r"""Gets the name of this ListCenterTasksResp.
 
         后台任务名，目前支持以下取值：  EXTEND：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP  masterStandbySwapJob: 主备切换任务  modify：修改密码 
 
@@ -153,7 +153,7 @@ class ListCenterTasksResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCenterTasksResp.
+        r"""Sets the name of this ListCenterTasksResp.
 
         后台任务名，目前支持以下取值：  EXTEND：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP  masterStandbySwapJob: 主备切换任务  modify：修改密码 
 
@@ -164,7 +164,7 @@ class ListCenterTasksResp:
 
     @property
     def details(self):
-        """Gets the details of this ListCenterTasksResp.
+        r"""Gets the details of this ListCenterTasksResp.
 
         :return: The details of this ListCenterTasksResp.
         :rtype: :class:`huaweicloudsdkdcs.v2.DetailsBody`
@@ -173,7 +173,7 @@ class ListCenterTasksResp:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this ListCenterTasksResp.
+        r"""Sets the details of this ListCenterTasksResp.
 
         :param details: The details of this ListCenterTasksResp.
         :type details: :class:`huaweicloudsdkdcs.v2.DetailsBody`
@@ -182,7 +182,7 @@ class ListCenterTasksResp:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListCenterTasksResp.
+        r"""Gets the user_name of this ListCenterTasksResp.
 
         用户名
 
@@ -193,7 +193,7 @@ class ListCenterTasksResp:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListCenterTasksResp.
+        r"""Sets the user_name of this ListCenterTasksResp.
 
         用户名
 
@@ -204,7 +204,7 @@ class ListCenterTasksResp:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListCenterTasksResp.
+        r"""Gets the user_id of this ListCenterTasksResp.
 
         用户ID
 
@@ -215,7 +215,7 @@ class ListCenterTasksResp:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListCenterTasksResp.
+        r"""Sets the user_id of this ListCenterTasksResp.
 
         用户ID
 
@@ -226,7 +226,7 @@ class ListCenterTasksResp:
 
     @property
     def params(self):
-        """Gets the params of this ListCenterTasksResp.
+        r"""Gets the params of this ListCenterTasksResp.
 
         任务相关参数
 
@@ -237,7 +237,7 @@ class ListCenterTasksResp:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ListCenterTasksResp.
+        r"""Sets the params of this ListCenterTasksResp.
 
         任务相关参数
 
@@ -248,7 +248,7 @@ class ListCenterTasksResp:
 
     @property
     def status(self):
-        """Gets the status of this ListCenterTasksResp.
+        r"""Gets the status of this ListCenterTasksResp.
 
         任务状态
 
@@ -259,7 +259,7 @@ class ListCenterTasksResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCenterTasksResp.
+        r"""Sets the status of this ListCenterTasksResp.
 
         任务状态
 
@@ -270,7 +270,7 @@ class ListCenterTasksResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListCenterTasksResp.
+        r"""Gets the created_at of this ListCenterTasksResp.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -281,7 +281,7 @@ class ListCenterTasksResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListCenterTasksResp.
+        r"""Sets the created_at of this ListCenterTasksResp.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -292,7 +292,7 @@ class ListCenterTasksResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListCenterTasksResp.
+        r"""Gets the updated_at of this ListCenterTasksResp.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -303,7 +303,7 @@ class ListCenterTasksResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListCenterTasksResp.
+        r"""Sets the updated_at of this ListCenterTasksResp.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -314,7 +314,7 @@ class ListCenterTasksResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListCenterTasksResp.
+        r"""Gets the error_code of this ListCenterTasksResp.
 
         错误代码
 
@@ -325,7 +325,7 @@ class ListCenterTasksResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListCenterTasksResp.
+        r"""Sets the error_code of this ListCenterTasksResp.
 
         错误代码
 
@@ -336,7 +336,7 @@ class ListCenterTasksResp:
 
     @property
     def enable_show(self):
-        """Gets the enable_show of this ListCenterTasksResp.
+        r"""Gets the enable_show of this ListCenterTasksResp.
 
         是否有详细任务进展，可以展开查看
 
@@ -347,7 +347,7 @@ class ListCenterTasksResp:
 
     @enable_show.setter
     def enable_show(self, enable_show):
-        """Sets the enable_show of this ListCenterTasksResp.
+        r"""Sets the enable_show of this ListCenterTasksResp.
 
         是否有详细任务进展，可以展开查看
 
@@ -358,7 +358,7 @@ class ListCenterTasksResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListCenterTasksResp.
+        r"""Gets the job_id of this ListCenterTasksResp.
 
         任务ID
 
@@ -369,7 +369,7 @@ class ListCenterTasksResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListCenterTasksResp.
+        r"""Sets the job_id of this ListCenterTasksResp.
 
         任务ID
 

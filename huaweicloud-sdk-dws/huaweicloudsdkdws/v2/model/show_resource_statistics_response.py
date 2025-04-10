@@ -28,7 +28,7 @@ class ShowResourceStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, cluster_statistics=None, node_statistics=None):
-        """ShowResourceStatisticsResponse
+        r"""ShowResourceStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowResourceStatisticsResponse(SdkResponse):
 
     @property
     def cluster_statistics(self):
-        """Gets the cluster_statistics of this ShowResourceStatisticsResponse.
+        r"""Gets the cluster_statistics of this ShowResourceStatisticsResponse.
 
         :return: The cluster_statistics of this ShowResourceStatisticsResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.StatusStatistics`
@@ -60,7 +60,7 @@ class ShowResourceStatisticsResponse(SdkResponse):
 
     @cluster_statistics.setter
     def cluster_statistics(self, cluster_statistics):
-        """Sets the cluster_statistics of this ShowResourceStatisticsResponse.
+        r"""Sets the cluster_statistics of this ShowResourceStatisticsResponse.
 
         :param cluster_statistics: The cluster_statistics of this ShowResourceStatisticsResponse.
         :type cluster_statistics: :class:`huaweicloudsdkdws.v2.StatusStatistics`
@@ -69,7 +69,7 @@ class ShowResourceStatisticsResponse(SdkResponse):
 
     @property
     def node_statistics(self):
-        """Gets the node_statistics of this ShowResourceStatisticsResponse.
+        r"""Gets the node_statistics of this ShowResourceStatisticsResponse.
 
         :return: The node_statistics of this ShowResourceStatisticsResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.StatusStatistics`
@@ -78,7 +78,7 @@ class ShowResourceStatisticsResponse(SdkResponse):
 
     @node_statistics.setter
     def node_statistics(self, node_statistics):
-        """Sets the node_statistics of this ShowResourceStatisticsResponse.
+        r"""Sets the node_statistics of this ShowResourceStatisticsResponse.
 
         :param node_statistics: The node_statistics of this ShowResourceStatisticsResponse.
         :type node_statistics: :class:`huaweicloudsdkdws.v2.StatusStatistics`

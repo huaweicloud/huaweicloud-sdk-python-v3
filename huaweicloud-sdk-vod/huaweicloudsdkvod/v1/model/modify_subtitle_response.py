@@ -26,7 +26,7 @@ class ModifySubtitleResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None):
-        """ModifySubtitleResponse
+        r"""ModifySubtitleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifySubtitleResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ModifySubtitleResponse.
+        r"""Gets the asset_id of this ModifySubtitleResponse.
 
         媒资ID。
 
@@ -55,7 +55,7 @@ class ModifySubtitleResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ModifySubtitleResponse.
+        r"""Sets the asset_id of this ModifySubtitleResponse.
 
         媒资ID。
 

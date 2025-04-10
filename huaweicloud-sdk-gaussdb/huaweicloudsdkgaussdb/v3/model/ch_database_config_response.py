@@ -27,7 +27,7 @@ class ChDatabaseConfigResponse:
     }
 
     def __init__(self, database_name=None, db_config_check_results=None):
-        """ChDatabaseConfigResponse
+        r"""ChDatabaseConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChDatabaseConfigResponse:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ChDatabaseConfigResponse.
+        r"""Gets the database_name of this ChDatabaseConfigResponse.
 
         源数据库名称。
 
@@ -59,7 +59,7 @@ class ChDatabaseConfigResponse:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ChDatabaseConfigResponse.
+        r"""Sets the database_name of this ChDatabaseConfigResponse.
 
         源数据库名称。
 
@@ -70,7 +70,7 @@ class ChDatabaseConfigResponse:
 
     @property
     def db_config_check_results(self):
-        """Gets the db_config_check_results of this ChDatabaseConfigResponse.
+        r"""Gets the db_config_check_results of this ChDatabaseConfigResponse.
 
         源数据库配置检查结果。
 
@@ -81,7 +81,7 @@ class ChDatabaseConfigResponse:
 
     @db_config_check_results.setter
     def db_config_check_results(self, db_config_check_results):
-        """Sets the db_config_check_results of this ChDatabaseConfigResponse.
+        r"""Sets the db_config_check_results of this ChDatabaseConfigResponse.
 
         源数据库配置检查结果。
 

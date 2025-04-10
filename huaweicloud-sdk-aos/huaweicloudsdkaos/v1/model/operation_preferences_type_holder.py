@@ -25,7 +25,7 @@ class OperationPreferencesTypeHolder:
     }
 
     def __init__(self, operation_preferences=None):
-        """OperationPreferencesTypeHolder
+        r"""OperationPreferencesTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OperationPreferencesTypeHolder:
 
     @property
     def operation_preferences(self):
-        """Gets the operation_preferences of this OperationPreferencesTypeHolder.
+        r"""Gets the operation_preferences of this OperationPreferencesTypeHolder.
 
         :return: The operation_preferences of this OperationPreferencesTypeHolder.
         :rtype: :class:`huaweicloudsdkaos.v1.OperationPreferences`
@@ -52,7 +52,7 @@ class OperationPreferencesTypeHolder:
 
     @operation_preferences.setter
     def operation_preferences(self, operation_preferences):
-        """Sets the operation_preferences of this OperationPreferencesTypeHolder.
+        r"""Sets the operation_preferences of this OperationPreferencesTypeHolder.
 
         :param operation_preferences: The operation_preferences of this OperationPreferencesTypeHolder.
         :type operation_preferences: :class:`huaweicloudsdkaos.v1.OperationPreferences`

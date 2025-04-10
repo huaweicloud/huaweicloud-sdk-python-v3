@@ -25,7 +25,7 @@ class RetryJobsRequest:
     }
 
     def __init__(self, body=None):
-        """RetryJobsRequest
+        r"""RetryJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RetryJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this RetryJobsRequest.
+        r"""Gets the body of this RetryJobsRequest.
 
         :return: The body of this RetryJobsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchOperateJobsReq`
@@ -52,7 +52,7 @@ class RetryJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RetryJobsRequest.
+        r"""Sets the body of this RetryJobsRequest.
 
         :param body: The body of this RetryJobsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchOperateJobsReq`

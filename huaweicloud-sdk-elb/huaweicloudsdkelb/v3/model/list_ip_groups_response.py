@@ -30,7 +30,7 @@ class ListIpGroupsResponse(SdkResponse):
     }
 
     def __init__(self, ipgroups=None, request_id=None, page_info=None):
-        """ListIpGroupsResponse
+        r"""ListIpGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @property
     def ipgroups(self):
-        """Gets the ipgroups of this ListIpGroupsResponse.
+        r"""Gets the ipgroups of this ListIpGroupsResponse.
 
         参数解释：IP地址组列表返回对象。
 
@@ -69,7 +69,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @ipgroups.setter
     def ipgroups(self, ipgroups):
-        """Sets the ipgroups of this ListIpGroupsResponse.
+        r"""Sets the ipgroups of this ListIpGroupsResponse.
 
         参数解释：IP地址组列表返回对象。
 
@@ -80,7 +80,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListIpGroupsResponse.
+        r"""Gets the request_id of this ListIpGroupsResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -91,7 +91,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListIpGroupsResponse.
+        r"""Sets the request_id of this ListIpGroupsResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -102,7 +102,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListIpGroupsResponse.
+        r"""Gets the page_info of this ListIpGroupsResponse.
 
         :return: The page_info of this ListIpGroupsResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListIpGroupsResponse.
+        r"""Sets the page_info of this ListIpGroupsResponse.
 
         :param page_info: The page_info of this ListIpGroupsResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`

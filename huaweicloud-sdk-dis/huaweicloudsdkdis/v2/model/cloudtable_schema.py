@@ -27,7 +27,7 @@ class CloudtableSchema:
     }
 
     def __init__(self, row_key=None, columns=None):
-        """CloudtableSchema
+        r"""CloudtableSchema
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CloudtableSchema:
 
     @property
     def row_key(self):
-        """Gets the row_key of this CloudtableSchema.
+        r"""Gets the row_key of this CloudtableSchema.
 
         CloudTable集群HBase数据rowkey的Schema配置，用于将通道内的JSON数据生成HBase数据的rowkey。  取值范围：1～64。
 
@@ -59,7 +59,7 @@ class CloudtableSchema:
 
     @row_key.setter
     def row_key(self, row_key):
-        """Sets the row_key of this CloudtableSchema.
+        r"""Sets the row_key of this CloudtableSchema.
 
         CloudTable集群HBase数据rowkey的Schema配置，用于将通道内的JSON数据生成HBase数据的rowkey。  取值范围：1～64。
 
@@ -70,7 +70,7 @@ class CloudtableSchema:
 
     @property
     def columns(self):
-        """Gets the columns of this CloudtableSchema.
+        r"""Gets the columns of this CloudtableSchema.
 
         CloudTable集群HBase数据列的Schema配置，用于将通道内的JSON数据生成HBase数据的列。  取值范围：1～4096。
 
@@ -81,7 +81,7 @@ class CloudtableSchema:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this CloudtableSchema.
+        r"""Sets the columns of this CloudtableSchema.
 
         CloudTable集群HBase数据列的Schema配置，用于将通道内的JSON数据生成HBase数据的列。  取值范围：1～4096。
 

@@ -27,7 +27,7 @@ class ShowBuiltInPolicyDefinitionRequest:
     }
 
     def __init__(self, policy_definition_id=None, x_language=None):
-        """ShowBuiltInPolicyDefinitionRequest
+        r"""ShowBuiltInPolicyDefinitionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBuiltInPolicyDefinitionRequest:
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this ShowBuiltInPolicyDefinitionRequest.
+        r"""Gets the policy_definition_id of this ShowBuiltInPolicyDefinitionRequest.
 
         策略ID
 
@@ -60,7 +60,7 @@ class ShowBuiltInPolicyDefinitionRequest:
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this ShowBuiltInPolicyDefinitionRequest.
+        r"""Sets the policy_definition_id of this ShowBuiltInPolicyDefinitionRequest.
 
         策略ID
 
@@ -71,7 +71,7 @@ class ShowBuiltInPolicyDefinitionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowBuiltInPolicyDefinitionRequest.
+        r"""Gets the x_language of this ShowBuiltInPolicyDefinitionRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
@@ -82,7 +82,7 @@ class ShowBuiltInPolicyDefinitionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowBuiltInPolicyDefinitionRequest.
+        r"""Sets the x_language of this ShowBuiltInPolicyDefinitionRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 

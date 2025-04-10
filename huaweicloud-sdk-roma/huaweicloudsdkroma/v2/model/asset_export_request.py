@@ -27,7 +27,7 @@ class AssetExportRequest:
     }
 
     def __init__(self, apps=None, tasks=None):
-        """AssetExportRequest
+        r"""AssetExportRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssetExportRequest:
 
     @property
     def apps(self):
-        """Gets the apps of this AssetExportRequest.
+        r"""Gets the apps of this AssetExportRequest.
 
         应用列表
 
@@ -60,7 +60,7 @@ class AssetExportRequest:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this AssetExportRequest.
+        r"""Sets the apps of this AssetExportRequest.
 
         应用列表
 
@@ -71,7 +71,7 @@ class AssetExportRequest:
 
     @property
     def tasks(self):
-        """Gets the tasks of this AssetExportRequest.
+        r"""Gets the tasks of this AssetExportRequest.
 
         任务列表
 
@@ -82,7 +82,7 @@ class AssetExportRequest:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this AssetExportRequest.
+        r"""Sets the tasks of this AssetExportRequest.
 
         任务列表
 

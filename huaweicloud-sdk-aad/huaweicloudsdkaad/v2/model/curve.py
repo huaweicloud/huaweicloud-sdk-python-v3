@@ -29,7 +29,7 @@ class Curve:
     }
 
     def __init__(self, _in=None, out=None, time=None):
-        """Curve
+        r"""Curve
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Curve:
 
     @property
     def _in(self):
-        """Gets the _in of this Curve.
+        r"""Gets the _in of this Curve.
 
         入带宽
 
@@ -68,7 +68,7 @@ class Curve:
 
     @_in.setter
     def _in(self, _in):
-        """Sets the _in of this Curve.
+        r"""Sets the _in of this Curve.
 
         入带宽
 
@@ -79,7 +79,7 @@ class Curve:
 
     @property
     def out(self):
-        """Gets the out of this Curve.
+        r"""Gets the out of this Curve.
 
         出带宽
 
@@ -90,7 +90,7 @@ class Curve:
 
     @out.setter
     def out(self, out):
-        """Sets the out of this Curve.
+        r"""Sets the out of this Curve.
 
         出带宽
 
@@ -101,7 +101,7 @@ class Curve:
 
     @property
     def time(self):
-        """Gets the time of this Curve.
+        r"""Gets the time of this Curve.
 
         时间戳
 
@@ -112,7 +112,7 @@ class Curve:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Curve.
+        r"""Sets the time of this Curve.
 
         时间戳
 

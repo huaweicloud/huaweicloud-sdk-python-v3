@@ -33,7 +33,7 @@ class LabelPageListDto:
     }
 
     def __init__(self, id=None, name=None, feature=None, labels=None, creator=None):
-        """LabelPageListDto
+        r"""LabelPageListDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LabelPageListDto:
 
     @property
     def id(self):
-        """Gets the id of this LabelPageListDto.
+        r"""Gets the id of this LabelPageListDto.
 
         标签页面id
 
@@ -82,7 +82,7 @@ class LabelPageListDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LabelPageListDto.
+        r"""Sets the id of this LabelPageListDto.
 
         标签页面id
 
@@ -93,7 +93,7 @@ class LabelPageListDto:
 
     @property
     def name(self):
-        """Gets the name of this LabelPageListDto.
+        r"""Gets the name of this LabelPageListDto.
 
         标签页面标题
 
@@ -104,7 +104,7 @@ class LabelPageListDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LabelPageListDto.
+        r"""Sets the name of this LabelPageListDto.
 
         标签页面标题
 
@@ -115,7 +115,7 @@ class LabelPageListDto:
 
     @property
     def feature(self):
-        """Gets the feature of this LabelPageListDto.
+        r"""Gets the feature of this LabelPageListDto.
 
         标签页面类型
 
@@ -126,7 +126,7 @@ class LabelPageListDto:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this LabelPageListDto.
+        r"""Sets the feature of this LabelPageListDto.
 
         标签页面类型
 
@@ -137,7 +137,7 @@ class LabelPageListDto:
 
     @property
     def labels(self):
-        """Gets the labels of this LabelPageListDto.
+        r"""Gets the labels of this LabelPageListDto.
 
         标签页面包含的标签
 
@@ -148,7 +148,7 @@ class LabelPageListDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this LabelPageListDto.
+        r"""Sets the labels of this LabelPageListDto.
 
         标签页面包含的标签
 
@@ -159,7 +159,7 @@ class LabelPageListDto:
 
     @property
     def creator(self):
-        """Gets the creator of this LabelPageListDto.
+        r"""Gets the creator of this LabelPageListDto.
 
         标签页面创建者
 
@@ -170,7 +170,7 @@ class LabelPageListDto:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this LabelPageListDto.
+        r"""Sets the creator of this LabelPageListDto.
 
         标签页面创建者
 

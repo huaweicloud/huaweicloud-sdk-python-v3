@@ -28,7 +28,7 @@ class ListClickHouseDataBaseResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None):
-        """ListClickHouseDataBaseResponse
+        r"""ListClickHouseDataBaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListClickHouseDataBaseResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListClickHouseDataBaseResponse.
+        r"""Gets the databases of this ListClickHouseDataBaseResponse.
 
         数据库列表。
 
@@ -62,7 +62,7 @@ class ListClickHouseDataBaseResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListClickHouseDataBaseResponse.
+        r"""Sets the databases of this ListClickHouseDataBaseResponse.
 
         数据库列表。
 
@@ -73,7 +73,7 @@ class ListClickHouseDataBaseResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListClickHouseDataBaseResponse.
+        r"""Gets the total_count of this ListClickHouseDataBaseResponse.
 
         数据库总数。
 
@@ -84,7 +84,7 @@ class ListClickHouseDataBaseResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListClickHouseDataBaseResponse.
+        r"""Sets the total_count of this ListClickHouseDataBaseResponse.
 
         数据库总数。
 

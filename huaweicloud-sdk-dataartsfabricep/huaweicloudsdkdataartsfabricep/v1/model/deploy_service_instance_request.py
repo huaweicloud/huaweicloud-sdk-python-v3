@@ -27,7 +27,7 @@ class DeployServiceInstanceRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """DeployServiceInstanceRequest
+        r"""DeployServiceInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeployServiceInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeployServiceInstanceRequest.
+        r"""Gets the workspace_id of this DeployServiceInstanceRequest.
 
         Workspace的ID
 
@@ -60,7 +60,7 @@ class DeployServiceInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeployServiceInstanceRequest.
+        r"""Sets the workspace_id of this DeployServiceInstanceRequest.
 
         Workspace的ID
 
@@ -71,7 +71,7 @@ class DeployServiceInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeployServiceInstanceRequest.
+        r"""Gets the body of this DeployServiceInstanceRequest.
 
         :return: The body of this DeployServiceInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceInstanceInput`
@@ -80,7 +80,7 @@ class DeployServiceInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeployServiceInstanceRequest.
+        r"""Sets the body of this DeployServiceInstanceRequest.
 
         :param body: The body of this DeployServiceInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceInstanceInput`

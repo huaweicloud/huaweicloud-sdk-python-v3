@@ -31,7 +31,7 @@ class SubscribeAppReq:
     }
 
     def __init__(self, asset_id=None, asset_version=None, destination_app_name=None, destination_app_version=None):
-        """SubscribeAppReq
+        r"""SubscribeAppReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SubscribeAppReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this SubscribeAppReq.
+        r"""Gets the asset_id of this SubscribeAppReq.
 
         资产id。长度1-128，只能包含字母、数字、下划线和中划线
 
@@ -71,7 +71,7 @@ class SubscribeAppReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this SubscribeAppReq.
+        r"""Sets the asset_id of this SubscribeAppReq.
 
         资产id。长度1-128，只能包含字母、数字、下划线和中划线
 
@@ -82,7 +82,7 @@ class SubscribeAppReq:
 
     @property
     def asset_version(self):
-        """Gets the asset_version of this SubscribeAppReq.
+        r"""Gets the asset_version of this SubscribeAppReq.
 
         资产版本。长度1-128，字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线
 
@@ -93,7 +93,7 @@ class SubscribeAppReq:
 
     @asset_version.setter
     def asset_version(self, asset_version):
-        """Sets the asset_version of this SubscribeAppReq.
+        r"""Sets the asset_version of this SubscribeAppReq.
 
         资产版本。长度1-128，字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线
 
@@ -104,7 +104,7 @@ class SubscribeAppReq:
 
     @property
     def destination_app_name(self):
-        """Gets the destination_app_name of this SubscribeAppReq.
+        r"""Gets the destination_app_name of this SubscribeAppReq.
 
         目标应用名称 取值范围：长度为[1,56]，以大小写字母开头，允许出现中划线(-)、下划线(_)、小写字母和数字，且必须以大小写字母或数字结尾。
 
@@ -115,7 +115,7 @@ class SubscribeAppReq:
 
     @destination_app_name.setter
     def destination_app_name(self, destination_app_name):
-        """Sets the destination_app_name of this SubscribeAppReq.
+        r"""Sets the destination_app_name of this SubscribeAppReq.
 
         目标应用名称 取值范围：长度为[1,56]，以大小写字母开头，允许出现中划线(-)、下划线(_)、小写字母和数字，且必须以大小写字母或数字结尾。
 
@@ -126,7 +126,7 @@ class SubscribeAppReq:
 
     @property
     def destination_app_version(self):
-        """Gets the destination_app_version of this SubscribeAppReq.
+        r"""Gets the destination_app_version of this SubscribeAppReq.
 
         目标应用版本。取值范围：长度[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 
@@ -137,7 +137,7 @@ class SubscribeAppReq:
 
     @destination_app_version.setter
     def destination_app_version(self, destination_app_version):
-        """Sets the destination_app_version of this SubscribeAppReq.
+        r"""Sets the destination_app_version of this SubscribeAppReq.
 
         目标应用版本。取值范围：长度[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 

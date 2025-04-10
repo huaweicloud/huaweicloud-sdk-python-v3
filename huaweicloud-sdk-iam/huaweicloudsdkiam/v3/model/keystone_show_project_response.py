@@ -26,7 +26,7 @@ class KeystoneShowProjectResponse(SdkResponse):
     }
 
     def __init__(self, project=None):
-        """KeystoneShowProjectResponse
+        r"""KeystoneShowProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowProjectResponse(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this KeystoneShowProjectResponse.
+        r"""Gets the project of this KeystoneShowProjectResponse.
 
         :return: The project of this KeystoneShowProjectResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ProjectResult`
@@ -53,7 +53,7 @@ class KeystoneShowProjectResponse(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this KeystoneShowProjectResponse.
+        r"""Sets the project of this KeystoneShowProjectResponse.
 
         :param project: The project of this KeystoneShowProjectResponse.
         :type project: :class:`huaweicloudsdkiam.v3.ProjectResult`

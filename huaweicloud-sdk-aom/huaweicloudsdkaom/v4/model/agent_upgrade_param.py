@@ -27,7 +27,7 @@ class AgentUpgradeParam:
     }
 
     def __init__(self, version=None, agent_list=None):
-        """AgentUpgradeParam
+        r"""AgentUpgradeParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgentUpgradeParam:
 
     @property
     def version(self):
-        """Gets the version of this AgentUpgradeParam.
+        r"""Gets the version of this AgentUpgradeParam.
 
         UniAgent升级的版本号。
 
@@ -59,7 +59,7 @@ class AgentUpgradeParam:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AgentUpgradeParam.
+        r"""Sets the version of this AgentUpgradeParam.
 
         UniAgent升级的版本号。
 
@@ -70,7 +70,7 @@ class AgentUpgradeParam:
 
     @property
     def agent_list(self):
-        """Gets the agent_list of this AgentUpgradeParam.
+        r"""Gets the agent_list of this AgentUpgradeParam.
 
         UniAgent主机列表信息。
 
@@ -81,7 +81,7 @@ class AgentUpgradeParam:
 
     @agent_list.setter
     def agent_list(self, agent_list):
-        """Sets the agent_list of this AgentUpgradeParam.
+        r"""Sets the agent_list of this AgentUpgradeParam.
 
         UniAgent主机列表信息。
 

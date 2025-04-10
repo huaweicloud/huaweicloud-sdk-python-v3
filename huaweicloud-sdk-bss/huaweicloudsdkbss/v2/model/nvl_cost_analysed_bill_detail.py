@@ -115,7 +115,7 @@ class NvlCostAnalysedBillDetail:
     }
 
     def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, effective_tag_pairs=None, cost_unit_pairs=None):
-        """NvlCostAnalysedBillDetail
+        r"""NvlCostAnalysedBillDetail
 
         The model defined in huaweicloud sdk
 
@@ -358,7 +358,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def shared_month(self):
-        """Gets the shared_month of this NvlCostAnalysedBillDetail.
+        r"""Gets the shared_month of this NvlCostAnalysedBillDetail.
 
         查询分摊成本的月份。 格式为YYYY-MM，按照东八区时间截取。
 
@@ -369,7 +369,7 @@ class NvlCostAnalysedBillDetail:
 
     @shared_month.setter
     def shared_month(self, shared_month):
-        """Sets the shared_month of this NvlCostAnalysedBillDetail.
+        r"""Sets the shared_month of this NvlCostAnalysedBillDetail.
 
         查询分摊成本的月份。 格式为YYYY-MM，按照东八区时间截取。
 
@@ -380,7 +380,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this NvlCostAnalysedBillDetail.
+        r"""Gets the bill_cycle of this NvlCostAnalysedBillDetail.
 
         账期。 格式：YYYY-MM。按照东八区时间截取。
 
@@ -391,7 +391,7 @@ class NvlCostAnalysedBillDetail:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this NvlCostAnalysedBillDetail.
+        r"""Sets the bill_cycle of this NvlCostAnalysedBillDetail.
 
         账期。 格式：YYYY-MM。按照东八区时间截取。
 
@@ -402,7 +402,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this NvlCostAnalysedBillDetail.
+        r"""Gets the bill_type of this NvlCostAnalysedBillDetail.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
@@ -413,7 +413,7 @@ class NvlCostAnalysedBillDetail:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this NvlCostAnalysedBillDetail.
+        r"""Sets the bill_type of this NvlCostAnalysedBillDetail.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
@@ -424,7 +424,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the customer_id of this NvlCostAnalysedBillDetail.
 
         消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID。如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
 
@@ -435,7 +435,7 @@ class NvlCostAnalysedBillDetail:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the customer_id of this NvlCostAnalysedBillDetail.
 
         消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID。如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
 
@@ -446,7 +446,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def region_code(self):
-        """Gets the region_code of this NvlCostAnalysedBillDetail.
+        r"""Gets the region_code of this NvlCostAnalysedBillDetail.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -457,7 +457,7 @@ class NvlCostAnalysedBillDetail:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this NvlCostAnalysedBillDetail.
+        r"""Sets the region_code of this NvlCostAnalysedBillDetail.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -468,7 +468,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def region_name(self):
-        """Gets the region_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the region_name of this NvlCostAnalysedBillDetail.
 
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -479,7 +479,7 @@ class NvlCostAnalysedBillDetail:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the region_name of this NvlCostAnalysedBillDetail.
 
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -490,7 +490,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this NvlCostAnalysedBillDetail.
+        r"""Gets the service_type_code of this NvlCostAnalysedBillDetail.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -501,7 +501,7 @@ class NvlCostAnalysedBillDetail:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this NvlCostAnalysedBillDetail.
+        r"""Sets the service_type_code of this NvlCostAnalysedBillDetail.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -512,7 +512,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this NvlCostAnalysedBillDetail.
+        r"""Gets the resource_type_code of this NvlCostAnalysedBillDetail.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -523,7 +523,7 @@ class NvlCostAnalysedBillDetail:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this NvlCostAnalysedBillDetail.
+        r"""Sets the resource_type_code of this NvlCostAnalysedBillDetail.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -534,7 +534,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the service_type_name of this NvlCostAnalysedBillDetail.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -545,7 +545,7 @@ class NvlCostAnalysedBillDetail:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the service_type_name of this NvlCostAnalysedBillDetail.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -556,7 +556,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the resource_type_name of this NvlCostAnalysedBillDetail.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -567,7 +567,7 @@ class NvlCostAnalysedBillDetail:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the resource_type_name of this NvlCostAnalysedBillDetail.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -578,7 +578,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this NvlCostAnalysedBillDetail.
+        r"""Gets the effective_time of this NvlCostAnalysedBillDetail.
 
         费用对应的资源使用的开始时间，按需有效，包年/包月该字段保留。
 
@@ -589,7 +589,7 @@ class NvlCostAnalysedBillDetail:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this NvlCostAnalysedBillDetail.
+        r"""Sets the effective_time of this NvlCostAnalysedBillDetail.
 
         费用对应的资源使用的开始时间，按需有效，包年/包月该字段保留。
 
@@ -600,7 +600,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this NvlCostAnalysedBillDetail.
+        r"""Gets the expire_time of this NvlCostAnalysedBillDetail.
 
         费用对应的资源使用的结束时间，按需有效，包年/包月该字段保留。
 
@@ -611,7 +611,7 @@ class NvlCostAnalysedBillDetail:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this NvlCostAnalysedBillDetail.
+        r"""Sets the expire_time of this NvlCostAnalysedBillDetail.
 
         费用对应的资源使用的结束时间，按需有效，包年/包月该字段保留。
 
@@ -622,7 +622,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the resource_id of this NvlCostAnalysedBillDetail.
 
         资源ID。
 
@@ -633,7 +633,7 @@ class NvlCostAnalysedBillDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the resource_id of this NvlCostAnalysedBillDetail.
 
         资源ID。
 
@@ -644,7 +644,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the resource_name of this NvlCostAnalysedBillDetail.
 
         资源名称。
 
@@ -655,7 +655,7 @@ class NvlCostAnalysedBillDetail:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the resource_name of this NvlCostAnalysedBillDetail.
 
         资源名称。
 
@@ -666,7 +666,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def resource_tag(self):
-        """Gets the resource_tag of this NvlCostAnalysedBillDetail.
+        r"""Gets the resource_tag of this NvlCostAnalysedBillDetail.
 
         资源标签。
 
@@ -677,7 +677,7 @@ class NvlCostAnalysedBillDetail:
 
     @resource_tag.setter
     def resource_tag(self, resource_tag):
-        """Sets the resource_tag of this NvlCostAnalysedBillDetail.
+        r"""Sets the resource_tag of this NvlCostAnalysedBillDetail.
 
         资源标签。
 
@@ -688,7 +688,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this NvlCostAnalysedBillDetail.
+        r"""Gets the product_spec_desc of this NvlCostAnalysedBillDetail.
 
         产品的规格描述。
 
@@ -699,7 +699,7 @@ class NvlCostAnalysedBillDetail:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this NvlCostAnalysedBillDetail.
+        r"""Sets the product_spec_desc of this NvlCostAnalysedBillDetail.
 
         产品的规格描述。
 
@@ -710,7 +710,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the enterprise_project_id of this NvlCostAnalysedBillDetail.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -721,7 +721,7 @@ class NvlCostAnalysedBillDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the enterprise_project_id of this NvlCostAnalysedBillDetail.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -732,7 +732,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the enterprise_project_name of this NvlCostAnalysedBillDetail.
 
         企业项目的名称。
 
@@ -743,7 +743,7 @@ class NvlCostAnalysedBillDetail:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the enterprise_project_name of this NvlCostAnalysedBillDetail.
 
         企业项目的名称。
 
@@ -754,7 +754,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this NvlCostAnalysedBillDetail.
+        r"""Gets the charging_mode of this NvlCostAnalysedBillDetail.
 
         计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
@@ -765,7 +765,7 @@ class NvlCostAnalysedBillDetail:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this NvlCostAnalysedBillDetail.
+        r"""Sets the charging_mode of this NvlCostAnalysedBillDetail.
 
         计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
@@ -776,7 +776,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def order_id(self):
-        """Gets the order_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the order_id of this NvlCostAnalysedBillDetail.
 
         订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
@@ -787,7 +787,7 @@ class NvlCostAnalysedBillDetail:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the order_id of this NvlCostAnalysedBillDetail.
 
         订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
@@ -798,7 +798,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def period_type(self):
-        """Gets the period_type of this NvlCostAnalysedBillDetail.
+        r"""Gets the period_type of this NvlCostAnalysedBillDetail.
 
         周期类型。 19：年20：月24：天25：小时5：一次性
 
@@ -809,7 +809,7 @@ class NvlCostAnalysedBillDetail:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this NvlCostAnalysedBillDetail.
+        r"""Sets the period_type of this NvlCostAnalysedBillDetail.
 
         周期类型。 19：年20：月24：天25：小时5：一次性
 
@@ -820,7 +820,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def usage_type(self):
-        """Gets the usage_type of this NvlCostAnalysedBillDetail.
+        r"""Gets the usage_type of this NvlCostAnalysedBillDetail.
 
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
@@ -831,7 +831,7 @@ class NvlCostAnalysedBillDetail:
 
     @usage_type.setter
     def usage_type(self, usage_type):
-        """Sets the usage_type of this NvlCostAnalysedBillDetail.
+        r"""Sets the usage_type of this NvlCostAnalysedBillDetail.
 
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
@@ -842,7 +842,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def usage(self):
-        """Gets the usage of this NvlCostAnalysedBillDetail.
+        r"""Gets the usage of this NvlCostAnalysedBillDetail.
 
         资源的使用量。
 
@@ -853,7 +853,7 @@ class NvlCostAnalysedBillDetail:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this NvlCostAnalysedBillDetail.
+        r"""Sets the usage of this NvlCostAnalysedBillDetail.
 
         资源的使用量。
 
@@ -864,7 +864,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the usage_measure_id of this NvlCostAnalysedBillDetail.
 
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -875,7 +875,7 @@ class NvlCostAnalysedBillDetail:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the usage_measure_id of this NvlCostAnalysedBillDetail.
 
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -886,7 +886,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def free_resource_usage(self):
-        """Gets the free_resource_usage of this NvlCostAnalysedBillDetail.
+        r"""Gets the free_resource_usage of this NvlCostAnalysedBillDetail.
 
         套餐内使用量。
 
@@ -897,7 +897,7 @@ class NvlCostAnalysedBillDetail:
 
     @free_resource_usage.setter
     def free_resource_usage(self, free_resource_usage):
-        """Sets the free_resource_usage of this NvlCostAnalysedBillDetail.
+        r"""Sets the free_resource_usage of this NvlCostAnalysedBillDetail.
 
         套餐内使用量。
 
@@ -908,7 +908,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def free_resource_measure_id(self):
-        """Gets the free_resource_measure_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the free_resource_measure_id of this NvlCostAnalysedBillDetail.
 
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -919,7 +919,7 @@ class NvlCostAnalysedBillDetail:
 
     @free_resource_measure_id.setter
     def free_resource_measure_id(self, free_resource_measure_id):
-        """Sets the free_resource_measure_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the free_resource_measure_id of this NvlCostAnalysedBillDetail.
 
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -930,7 +930,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def ri_usage(self):
-        """Gets the ri_usage of this NvlCostAnalysedBillDetail.
+        r"""Gets the ri_usage of this NvlCostAnalysedBillDetail.
 
         预留实例使用量。
 
@@ -941,7 +941,7 @@ class NvlCostAnalysedBillDetail:
 
     @ri_usage.setter
     def ri_usage(self, ri_usage):
-        """Sets the ri_usage of this NvlCostAnalysedBillDetail.
+        r"""Sets the ri_usage of this NvlCostAnalysedBillDetail.
 
         预留实例使用量。
 
@@ -952,7 +952,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def ri_usage_measure_id(self):
-        """Gets the ri_usage_measure_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the ri_usage_measure_id of this NvlCostAnalysedBillDetail.
 
         预留实例使用量单位。
 
@@ -963,7 +963,7 @@ class NvlCostAnalysedBillDetail:
 
     @ri_usage_measure_id.setter
     def ri_usage_measure_id(self, ri_usage_measure_id):
-        """Sets the ri_usage_measure_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the ri_usage_measure_id of this NvlCostAnalysedBillDetail.
 
         预留实例使用量单位。
 
@@ -974,7 +974,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the consume_amount of this NvlCostAnalysedBillDetail.
 
         消费金额（应付金额）。 消费金额=期初已分摊金额+当月分摊金额+期末未分摊金额
 
@@ -985,7 +985,7 @@ class NvlCostAnalysedBillDetail:
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the consume_amount of this NvlCostAnalysedBillDetail.
 
         消费金额（应付金额）。 消费金额=期初已分摊金额+当月分摊金额+期末未分摊金额
 
@@ -996,7 +996,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def past_months_amortized_amount(self):
-        """Gets the past_months_amortized_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the past_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
         期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
@@ -1007,7 +1007,7 @@ class NvlCostAnalysedBillDetail:
 
     @past_months_amortized_amount.setter
     def past_months_amortized_amount(self, past_months_amortized_amount):
-        """Sets the past_months_amortized_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the past_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
         期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
@@ -1018,7 +1018,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def current_month_amortized_amount(self):
-        """Gets the current_month_amortized_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the current_month_amortized_amount of this NvlCostAnalysedBillDetail.
 
         当月分摊金额。 当月分摊金额=现金分摊金额+信用额度分摊金额+代金券分摊金额+现金券分摊金额+储值卡分摊金额+奖励金分摊金额
 
@@ -1029,7 +1029,7 @@ class NvlCostAnalysedBillDetail:
 
     @current_month_amortized_amount.setter
     def current_month_amortized_amount(self, current_month_amortized_amount):
-        """Sets the current_month_amortized_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the current_month_amortized_amount of this NvlCostAnalysedBillDetail.
 
         当月分摊金额。 当月分摊金额=现金分摊金额+信用额度分摊金额+代金券分摊金额+现金券分摊金额+储值卡分摊金额+奖励金分摊金额
 
@@ -1040,7 +1040,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def future_months_amortized_amount(self):
-        """Gets the future_months_amortized_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the future_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
         期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
@@ -1051,7 +1051,7 @@ class NvlCostAnalysedBillDetail:
 
     @future_months_amortized_amount.setter
     def future_months_amortized_amount(self, future_months_amortized_amount):
-        """Sets the future_months_amortized_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the future_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
         期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
@@ -1062,7 +1062,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def amortized_cash_amount(self):
-        """Gets the amortized_cash_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the amortized_cash_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的现金金额。
 
@@ -1073,7 +1073,7 @@ class NvlCostAnalysedBillDetail:
 
     @amortized_cash_amount.setter
     def amortized_cash_amount(self, amortized_cash_amount):
-        """Sets the amortized_cash_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the amortized_cash_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的现金金额。
 
@@ -1084,7 +1084,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def amortized_credit_amount(self):
-        """Gets the amortized_credit_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the amortized_credit_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的信用额度分摊金额。
 
@@ -1095,7 +1095,7 @@ class NvlCostAnalysedBillDetail:
 
     @amortized_credit_amount.setter
     def amortized_credit_amount(self, amortized_credit_amount):
-        """Sets the amortized_credit_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the amortized_credit_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的信用额度分摊金额。
 
@@ -1106,7 +1106,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def amortized_coupon_amount(self):
-        """Gets the amortized_coupon_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the amortized_coupon_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的代金券分摊金额。
 
@@ -1117,7 +1117,7 @@ class NvlCostAnalysedBillDetail:
 
     @amortized_coupon_amount.setter
     def amortized_coupon_amount(self, amortized_coupon_amount):
-        """Sets the amortized_coupon_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the amortized_coupon_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的代金券分摊金额。
 
@@ -1128,7 +1128,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def amortized_flexipurchase_coupon_amount(self):
-        """Gets the amortized_flexipurchase_coupon_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the amortized_flexipurchase_coupon_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的现金券分摊金额。
 
@@ -1139,7 +1139,7 @@ class NvlCostAnalysedBillDetail:
 
     @amortized_flexipurchase_coupon_amount.setter
     def amortized_flexipurchase_coupon_amount(self, amortized_flexipurchase_coupon_amount):
-        """Sets the amortized_flexipurchase_coupon_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the amortized_flexipurchase_coupon_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的现金券分摊金额。
 
@@ -1150,7 +1150,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def amortized_stored_value_card_amount(self):
-        """Gets the amortized_stored_value_card_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the amortized_stored_value_card_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的储值卡分摊金额。
 
@@ -1161,7 +1161,7 @@ class NvlCostAnalysedBillDetail:
 
     @amortized_stored_value_card_amount.setter
     def amortized_stored_value_card_amount(self, amortized_stored_value_card_amount):
-        """Sets the amortized_stored_value_card_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the amortized_stored_value_card_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的储值卡分摊金额。
 
@@ -1172,7 +1172,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def amortized_bonus_amount(self):
-        """Gets the amortized_bonus_amount of this NvlCostAnalysedBillDetail.
+        r"""Gets the amortized_bonus_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的奖励金分摊金额（用于现网未清干净的奖励金）。
 
@@ -1183,7 +1183,7 @@ class NvlCostAnalysedBillDetail:
 
     @amortized_bonus_amount.setter
     def amortized_bonus_amount(self, amortized_bonus_amount):
-        """Sets the amortized_bonus_amount of this NvlCostAnalysedBillDetail.
+        r"""Sets the amortized_bonus_amount of this NvlCostAnalysedBillDetail.
 
         月度成本分摊时，当月已分摊金额中包含的奖励金分摊金额（用于现网未清干净的奖励金）。
 
@@ -1194,7 +1194,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def sub_service_type_code(self):
-        """Gets the sub_service_type_code of this NvlCostAnalysedBillDetail.
+        r"""Gets the sub_service_type_code of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的云服务类型编码。
 
@@ -1205,7 +1205,7 @@ class NvlCostAnalysedBillDetail:
 
     @sub_service_type_code.setter
     def sub_service_type_code(self, sub_service_type_code):
-        """Sets the sub_service_type_code of this NvlCostAnalysedBillDetail.
+        r"""Sets the sub_service_type_code of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的云服务类型编码。
 
@@ -1216,7 +1216,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def sub_service_type_name(self):
-        """Gets the sub_service_type_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the sub_service_type_name of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的云服务类型名称。
 
@@ -1227,7 +1227,7 @@ class NvlCostAnalysedBillDetail:
 
     @sub_service_type_name.setter
     def sub_service_type_name(self, sub_service_type_name):
-        """Sets the sub_service_type_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the sub_service_type_name of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的云服务类型名称。
 
@@ -1238,7 +1238,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def sub_resource_type_code(self):
-        """Gets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
+        r"""Gets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源类型编码。
 
@@ -1249,7 +1249,7 @@ class NvlCostAnalysedBillDetail:
 
     @sub_resource_type_code.setter
     def sub_resource_type_code(self, sub_resource_type_code):
-        """Sets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
+        r"""Sets the sub_resource_type_code of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源类型编码。
 
@@ -1260,7 +1260,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def sub_resource_type_name(self):
-        """Gets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源类型名称。
 
@@ -1271,7 +1271,7 @@ class NvlCostAnalysedBillDetail:
 
     @sub_resource_type_name.setter
     def sub_resource_type_name(self, sub_resource_type_name):
-        """Sets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the sub_resource_type_name of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源类型名称。
 
@@ -1282,7 +1282,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def sub_resource_id(self):
-        """Gets the sub_resource_id of this NvlCostAnalysedBillDetail.
+        r"""Gets the sub_resource_id of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1293,7 +1293,7 @@ class NvlCostAnalysedBillDetail:
 
     @sub_resource_id.setter
     def sub_resource_id(self, sub_resource_id):
-        """Sets the sub_resource_id of this NvlCostAnalysedBillDetail.
+        r"""Sets the sub_resource_id of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源ID，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1304,7 +1304,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def sub_resource_name(self):
-        """Gets the sub_resource_name of this NvlCostAnalysedBillDetail.
+        r"""Gets the sub_resource_name of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1315,7 +1315,7 @@ class NvlCostAnalysedBillDetail:
 
     @sub_resource_name.setter
     def sub_resource_name(self, sub_resource_name):
-        """Sets the sub_resource_name of this NvlCostAnalysedBillDetail.
+        r"""Sets the sub_resource_name of this NvlCostAnalysedBillDetail.
 
         整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
 
@@ -1326,7 +1326,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def effective_tag_pairs(self):
-        """Gets the effective_tag_pairs of this NvlCostAnalysedBillDetail.
+        r"""Gets the effective_tag_pairs of this NvlCostAnalysedBillDetail.
 
         成本标签。
 
@@ -1337,7 +1337,7 @@ class NvlCostAnalysedBillDetail:
 
     @effective_tag_pairs.setter
     def effective_tag_pairs(self, effective_tag_pairs):
-        """Sets the effective_tag_pairs of this NvlCostAnalysedBillDetail.
+        r"""Sets the effective_tag_pairs of this NvlCostAnalysedBillDetail.
 
         成本标签。
 
@@ -1348,7 +1348,7 @@ class NvlCostAnalysedBillDetail:
 
     @property
     def cost_unit_pairs(self):
-        """Gets the cost_unit_pairs of this NvlCostAnalysedBillDetail.
+        r"""Gets the cost_unit_pairs of this NvlCostAnalysedBillDetail.
 
         成本单元。
 
@@ -1359,7 +1359,7 @@ class NvlCostAnalysedBillDetail:
 
     @cost_unit_pairs.setter
     def cost_unit_pairs(self, cost_unit_pairs):
-        """Sets the cost_unit_pairs of this NvlCostAnalysedBillDetail.
+        r"""Sets the cost_unit_pairs of this NvlCostAnalysedBillDetail.
 
         成本单元。
 

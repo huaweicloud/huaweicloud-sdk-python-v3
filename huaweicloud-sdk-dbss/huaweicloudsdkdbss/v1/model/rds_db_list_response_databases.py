@@ -43,7 +43,7 @@ class RdsDbListResponseDatabases:
     }
 
     def __init__(self, id=None, db_name=None, status=None, port=None, ip=None, instance_name=None, type=None, version=None, is_supported=None, enterprise_id=None):
-        """RdsDbListResponseDatabases
+        r"""RdsDbListResponseDatabases
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def id(self):
-        """Gets the id of this RdsDbListResponseDatabases.
+        r"""Gets the id of this RdsDbListResponseDatabases.
 
         ID
 
@@ -109,7 +109,7 @@ class RdsDbListResponseDatabases:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RdsDbListResponseDatabases.
+        r"""Sets the id of this RdsDbListResponseDatabases.
 
         ID
 
@@ -120,7 +120,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def db_name(self):
-        """Gets the db_name of this RdsDbListResponseDatabases.
+        r"""Gets the db_name of this RdsDbListResponseDatabases.
 
         数据库名称
 
@@ -131,7 +131,7 @@ class RdsDbListResponseDatabases:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this RdsDbListResponseDatabases.
+        r"""Sets the db_name of this RdsDbListResponseDatabases.
 
         数据库名称
 
@@ -142,7 +142,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def status(self):
-        """Gets the status of this RdsDbListResponseDatabases.
+        r"""Gets the status of this RdsDbListResponseDatabases.
 
         实例状态。 - BUILD：表示实例正在创建。 - ACTIVE：表示实例正常。 - FAILED：表示实例异常。 - FROZEN：表示实例冻结。 - MODIFYING：表示实例正在扩容。 - REBOOTING：表示实例正在重启。 - RESTORING：表示实例正在恢复。 - MODIFYING INSTANCE TYPE：表示实例正在转主备。 - SWITCHOVER：表示实例正在主备切换。 - MIGRATING：表示实例正在迁移。 - BACKING UP：表示实例正在进行备份。 - MODIFYING DATABASE PORT：表示实例正在修改数据库端口。 - STORAGE FULL：表示实例磁盘空间满。
 
@@ -153,7 +153,7 @@ class RdsDbListResponseDatabases:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RdsDbListResponseDatabases.
+        r"""Sets the status of this RdsDbListResponseDatabases.
 
         实例状态。 - BUILD：表示实例正在创建。 - ACTIVE：表示实例正常。 - FAILED：表示实例异常。 - FROZEN：表示实例冻结。 - MODIFYING：表示实例正在扩容。 - REBOOTING：表示实例正在重启。 - RESTORING：表示实例正在恢复。 - MODIFYING INSTANCE TYPE：表示实例正在转主备。 - SWITCHOVER：表示实例正在主备切换。 - MIGRATING：表示实例正在迁移。 - BACKING UP：表示实例正在进行备份。 - MODIFYING DATABASE PORT：表示实例正在修改数据库端口。 - STORAGE FULL：表示实例磁盘空间满。
 
@@ -164,7 +164,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def port(self):
-        """Gets the port of this RdsDbListResponseDatabases.
+        r"""Gets the port of this RdsDbListResponseDatabases.
 
         数据库端口
 
@@ -175,7 +175,7 @@ class RdsDbListResponseDatabases:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RdsDbListResponseDatabases.
+        r"""Sets the port of this RdsDbListResponseDatabases.
 
         数据库端口
 
@@ -186,7 +186,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def ip(self):
-        """Gets the ip of this RdsDbListResponseDatabases.
+        r"""Gets the ip of this RdsDbListResponseDatabases.
 
         数据库IP
 
@@ -197,7 +197,7 @@ class RdsDbListResponseDatabases:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this RdsDbListResponseDatabases.
+        r"""Sets the ip of this RdsDbListResponseDatabases.
 
         数据库IP
 
@@ -208,7 +208,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this RdsDbListResponseDatabases.
+        r"""Gets the instance_name of this RdsDbListResponseDatabases.
 
         rds实例名称
 
@@ -219,7 +219,7 @@ class RdsDbListResponseDatabases:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this RdsDbListResponseDatabases.
+        r"""Sets the instance_name of this RdsDbListResponseDatabases.
 
         rds实例名称
 
@@ -230,7 +230,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def type(self):
-        """Gets the type of this RdsDbListResponseDatabases.
+        r"""Gets the type of this RdsDbListResponseDatabases.
 
         数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
 
@@ -241,7 +241,7 @@ class RdsDbListResponseDatabases:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RdsDbListResponseDatabases.
+        r"""Sets the type of this RdsDbListResponseDatabases.
 
         数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
 
@@ -252,7 +252,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def version(self):
-        """Gets the version of this RdsDbListResponseDatabases.
+        r"""Gets the version of this RdsDbListResponseDatabases.
 
         版本
 
@@ -263,7 +263,7 @@ class RdsDbListResponseDatabases:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RdsDbListResponseDatabases.
+        r"""Sets the version of this RdsDbListResponseDatabases.
 
         版本
 
@@ -274,7 +274,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def is_supported(self):
-        """Gets the is_supported of this RdsDbListResponseDatabases.
+        r"""Gets the is_supported of this RdsDbListResponseDatabases.
 
         是否支持免agent审计
 
@@ -285,7 +285,7 @@ class RdsDbListResponseDatabases:
 
     @is_supported.setter
     def is_supported(self, is_supported):
-        """Sets the is_supported of this RdsDbListResponseDatabases.
+        r"""Sets the is_supported of this RdsDbListResponseDatabases.
 
         是否支持免agent审计
 
@@ -296,7 +296,7 @@ class RdsDbListResponseDatabases:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this RdsDbListResponseDatabases.
+        r"""Gets the enterprise_id of this RdsDbListResponseDatabases.
 
         企业项目ID
 
@@ -307,7 +307,7 @@ class RdsDbListResponseDatabases:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this RdsDbListResponseDatabases.
+        r"""Sets the enterprise_id of this RdsDbListResponseDatabases.
 
         企业项目ID
 

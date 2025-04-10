@@ -29,7 +29,7 @@ class EnvironmentPermissionV2Body:
     }
 
     def __init__(self, role_id=None, permission_name=None, permission_value=None):
-        """EnvironmentPermissionV2Body
+        r"""EnvironmentPermissionV2Body
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EnvironmentPermissionV2Body:
 
     @property
     def role_id(self):
-        """Gets the role_id of this EnvironmentPermissionV2Body.
+        r"""Gets the role_id of this EnvironmentPermissionV2Body.
 
         角色id
 
@@ -68,7 +68,7 @@ class EnvironmentPermissionV2Body:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this EnvironmentPermissionV2Body.
+        r"""Sets the role_id of this EnvironmentPermissionV2Body.
 
         角色id
 
@@ -79,7 +79,7 @@ class EnvironmentPermissionV2Body:
 
     @property
     def permission_name(self):
-        """Gets the permission_name of this EnvironmentPermissionV2Body.
+        r"""Gets the permission_name of this EnvironmentPermissionV2Body.
 
         权限名称，can_view：查看权限；can_edit：编辑权限；can_delete：删除权限；can_deploy：部署权限；can_manage：权限管理权限
 
@@ -90,7 +90,7 @@ class EnvironmentPermissionV2Body:
 
     @permission_name.setter
     def permission_name(self, permission_name):
-        """Sets the permission_name of this EnvironmentPermissionV2Body.
+        r"""Sets the permission_name of this EnvironmentPermissionV2Body.
 
         权限名称，can_view：查看权限；can_edit：编辑权限；can_delete：删除权限；can_deploy：部署权限；can_manage：权限管理权限
 
@@ -101,7 +101,7 @@ class EnvironmentPermissionV2Body:
 
     @property
     def permission_value(self):
-        """Gets the permission_value of this EnvironmentPermissionV2Body.
+        r"""Gets the permission_value of this EnvironmentPermissionV2Body.
 
         true 有权限，false 无权限
 
@@ -112,7 +112,7 @@ class EnvironmentPermissionV2Body:
 
     @permission_value.setter
     def permission_value(self, permission_value):
-        """Sets the permission_value of this EnvironmentPermissionV2Body.
+        r"""Sets the permission_value of this EnvironmentPermissionV2Body.
 
         true 有权限，false 无权限
 

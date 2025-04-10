@@ -29,7 +29,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """UpdateSecurityDataClassificationRuleGroupRequest
+        r"""UpdateSecurityDataClassificationRuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityDataClassificationRuleGroupRequest.
+        r"""Gets the workspace of this UpdateSecurityDataClassificationRuleGroupRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityDataClassificationRuleGroupRequest.
+        r"""Sets the workspace of this UpdateSecurityDataClassificationRuleGroupRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSecurityDataClassificationRuleGroupRequest.
+        r"""Gets the id of this UpdateSecurityDataClassificationRuleGroupRequest.
 
         需要查询的规则组ID
 
@@ -88,7 +88,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSecurityDataClassificationRuleGroupRequest.
+        r"""Sets the id of this UpdateSecurityDataClassificationRuleGroupRequest.
 
         需要查询的规则组ID
 
@@ -99,7 +99,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityDataClassificationRuleGroupRequest.
+        r"""Gets the body of this UpdateSecurityDataClassificationRuleGroupRequest.
 
         :return: The body of this UpdateSecurityDataClassificationRuleGroupRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationGroupUpdateDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityDataClassificationRuleGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityDataClassificationRuleGroupRequest.
+        r"""Sets the body of this UpdateSecurityDataClassificationRuleGroupRequest.
 
         :param body: The body of this UpdateSecurityDataClassificationRuleGroupRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationGroupUpdateDTO`

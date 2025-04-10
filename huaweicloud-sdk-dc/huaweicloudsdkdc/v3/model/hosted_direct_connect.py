@@ -57,7 +57,7 @@ class HostedDirectConnect:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, bandwidth=None, location=None, peer_location=None, hosting_id=None, provider=None, admin_state_up=None, vlan=None, status=None, apply_time=None, create_time=None, provider_status=None, port_type=None, type=None):
-        """HostedDirectConnect
+        r"""HostedDirectConnect
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class HostedDirectConnect:
 
     @property
     def id(self):
-        """Gets the id of this HostedDirectConnect.
+        r"""Gets the id of this HostedDirectConnect.
 
         托管专线ID
 
@@ -166,7 +166,7 @@ class HostedDirectConnect:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HostedDirectConnect.
+        r"""Sets the id of this HostedDirectConnect.
 
         托管专线ID
 
@@ -177,7 +177,7 @@ class HostedDirectConnect:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this HostedDirectConnect.
+        r"""Gets the tenant_id of this HostedDirectConnect.
 
         实例所属项目ID。
 
@@ -188,7 +188,7 @@ class HostedDirectConnect:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this HostedDirectConnect.
+        r"""Sets the tenant_id of this HostedDirectConnect.
 
         实例所属项目ID。
 
@@ -199,7 +199,7 @@ class HostedDirectConnect:
 
     @property
     def name(self):
-        """Gets the name of this HostedDirectConnect.
+        r"""Gets the name of this HostedDirectConnect.
 
         托管专线名字
 
@@ -210,7 +210,7 @@ class HostedDirectConnect:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HostedDirectConnect.
+        r"""Sets the name of this HostedDirectConnect.
 
         托管专线名字
 
@@ -221,7 +221,7 @@ class HostedDirectConnect:
 
     @property
     def description(self):
-        """Gets the description of this HostedDirectConnect.
+        r"""Gets the description of this HostedDirectConnect.
 
         托管专线的描述信息
 
@@ -232,7 +232,7 @@ class HostedDirectConnect:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HostedDirectConnect.
+        r"""Sets the description of this HostedDirectConnect.
 
         托管专线的描述信息
 
@@ -243,7 +243,7 @@ class HostedDirectConnect:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this HostedDirectConnect.
+        r"""Gets the bandwidth of this HostedDirectConnect.
 
         托管专线接入带宽，单位Mbps。
 
@@ -254,7 +254,7 @@ class HostedDirectConnect:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this HostedDirectConnect.
+        r"""Sets the bandwidth of this HostedDirectConnect.
 
         托管专线接入带宽，单位Mbps。
 
@@ -265,7 +265,7 @@ class HostedDirectConnect:
 
     @property
     def location(self):
-        """Gets the location of this HostedDirectConnect.
+        r"""Gets the location of this HostedDirectConnect.
 
         专线的接入位置信息
 
@@ -276,7 +276,7 @@ class HostedDirectConnect:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this HostedDirectConnect.
+        r"""Sets the location of this HostedDirectConnect.
 
         专线的接入位置信息
 
@@ -287,7 +287,7 @@ class HostedDirectConnect:
 
     @property
     def peer_location(self):
-        """Gets the peer_location of this HostedDirectConnect.
+        r"""Gets the peer_location of this HostedDirectConnect.
 
         托管专线对端所在的物理位置，省/市/街道或IDC名字。
 
@@ -298,7 +298,7 @@ class HostedDirectConnect:
 
     @peer_location.setter
     def peer_location(self, peer_location):
-        """Sets the peer_location of this HostedDirectConnect.
+        r"""Sets the peer_location of this HostedDirectConnect.
 
         托管专线对端所在的物理位置，省/市/街道或IDC名字。
 
@@ -309,7 +309,7 @@ class HostedDirectConnect:
 
     @property
     def hosting_id(self):
-        """Gets the hosting_id of this HostedDirectConnect.
+        r"""Gets the hosting_id of this HostedDirectConnect.
 
         hosted物理专线对应的hosting物理专线的ID
 
@@ -320,7 +320,7 @@ class HostedDirectConnect:
 
     @hosting_id.setter
     def hosting_id(self, hosting_id):
-        """Sets the hosting_id of this HostedDirectConnect.
+        r"""Sets the hosting_id of this HostedDirectConnect.
 
         hosted物理专线对应的hosting物理专线的ID
 
@@ -331,7 +331,7 @@ class HostedDirectConnect:
 
     @property
     def provider(self):
-        """Gets the provider of this HostedDirectConnect.
+        r"""Gets the provider of this HostedDirectConnect.
 
         专线线路的提供商
 
@@ -342,7 +342,7 @@ class HostedDirectConnect:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this HostedDirectConnect.
+        r"""Sets the provider of this HostedDirectConnect.
 
         专线线路的提供商
 
@@ -353,7 +353,7 @@ class HostedDirectConnect:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this HostedDirectConnect.
+        r"""Gets the admin_state_up of this HostedDirectConnect.
 
         管理状态：true或false
 
@@ -364,7 +364,7 @@ class HostedDirectConnect:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this HostedDirectConnect.
+        r"""Sets the admin_state_up of this HostedDirectConnect.
 
         管理状态：true或false
 
@@ -375,7 +375,7 @@ class HostedDirectConnect:
 
     @property
     def vlan(self):
-        """Gets the vlan of this HostedDirectConnect.
+        r"""Gets the vlan of this HostedDirectConnect.
 
         hosted物理专线预分配的vlan。
 
@@ -386,7 +386,7 @@ class HostedDirectConnect:
 
     @vlan.setter
     def vlan(self, vlan):
-        """Sets the vlan of this HostedDirectConnect.
+        r"""Sets the vlan of this HostedDirectConnect.
 
         hosted物理专线预分配的vlan。
 
@@ -397,7 +397,7 @@ class HostedDirectConnect:
 
     @property
     def status(self):
-        """Gets the status of this HostedDirectConnect.
+        r"""Gets the status of this HostedDirectConnect.
 
         操作状态，合法值是： BUILD：已开通 ACTIVE：托管专线正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：托管专线异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
 
@@ -408,7 +408,7 @@ class HostedDirectConnect:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HostedDirectConnect.
+        r"""Sets the status of this HostedDirectConnect.
 
         操作状态，合法值是： BUILD：已开通 ACTIVE：托管专线正常 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 ERROR：托管专线异常 PENDING_DELETE：删除中 PENDING_UPDATE：更新中 PENDING_CREATE：创建中
 
@@ -419,7 +419,7 @@ class HostedDirectConnect:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this HostedDirectConnect.
+        r"""Gets the apply_time of this HostedDirectConnect.
 
         托管专线申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -430,7 +430,7 @@ class HostedDirectConnect:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this HostedDirectConnect.
+        r"""Sets the apply_time of this HostedDirectConnect.
 
         托管专线申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -441,7 +441,7 @@ class HostedDirectConnect:
 
     @property
     def create_time(self):
-        """Gets the create_time of this HostedDirectConnect.
+        r"""Gets the create_time of this HostedDirectConnect.
 
         托管专线创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -452,7 +452,7 @@ class HostedDirectConnect:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this HostedDirectConnect.
+        r"""Sets the create_time of this HostedDirectConnect.
 
         托管专线创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -463,7 +463,7 @@ class HostedDirectConnect:
 
     @property
     def provider_status(self):
-        """Gets the provider_status of this HostedDirectConnect.
+        r"""Gets the provider_status of this HostedDirectConnect.
 
         托管专线的运营商操作状态，合法值是：ACTIVE， DOWN
 
@@ -474,7 +474,7 @@ class HostedDirectConnect:
 
     @provider_status.setter
     def provider_status(self, provider_status):
-        """Sets the provider_status of this HostedDirectConnect.
+        r"""Sets the provider_status of this HostedDirectConnect.
 
         托管专线的运营商操作状态，合法值是：ACTIVE， DOWN
 
@@ -485,7 +485,7 @@ class HostedDirectConnect:
 
     @property
     def port_type(self):
-        """Gets the port_type of this HostedDirectConnect.
+        r"""Gets the port_type of this HostedDirectConnect.
 
         托管专线接入接口的类型，支持1G 10G 40G 100G
 
@@ -496,7 +496,7 @@ class HostedDirectConnect:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this HostedDirectConnect.
+        r"""Sets the port_type of this HostedDirectConnect.
 
         托管专线接入接口的类型，支持1G 10G 40G 100G
 
@@ -507,7 +507,7 @@ class HostedDirectConnect:
 
     @property
     def type(self):
-        """Gets the type of this HostedDirectConnect.
+        r"""Gets the type of this HostedDirectConnect.
 
         托管专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
@@ -518,7 +518,7 @@ class HostedDirectConnect:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HostedDirectConnect.
+        r"""Sets the type of this HostedDirectConnect.
 
         托管专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 

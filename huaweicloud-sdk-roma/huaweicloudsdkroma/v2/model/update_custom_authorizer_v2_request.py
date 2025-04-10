@@ -29,7 +29,7 @@ class UpdateCustomAuthorizerV2Request:
     }
 
     def __init__(self, instance_id=None, authorizer_id=None, body=None):
-        """UpdateCustomAuthorizerV2Request
+        r"""UpdateCustomAuthorizerV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateCustomAuthorizerV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateCustomAuthorizerV2Request.
+        r"""Gets the instance_id of this UpdateCustomAuthorizerV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateCustomAuthorizerV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateCustomAuthorizerV2Request.
+        r"""Sets the instance_id of this UpdateCustomAuthorizerV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateCustomAuthorizerV2Request:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this UpdateCustomAuthorizerV2Request.
+        r"""Gets the authorizer_id of this UpdateCustomAuthorizerV2Request.
 
         自定义认证的编号
 
@@ -88,7 +88,7 @@ class UpdateCustomAuthorizerV2Request:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this UpdateCustomAuthorizerV2Request.
+        r"""Sets the authorizer_id of this UpdateCustomAuthorizerV2Request.
 
         自定义认证的编号
 
@@ -99,7 +99,7 @@ class UpdateCustomAuthorizerV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCustomAuthorizerV2Request.
+        r"""Gets the body of this UpdateCustomAuthorizerV2Request.
 
         :return: The body of this UpdateCustomAuthorizerV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthorizerCreate`
@@ -108,7 +108,7 @@ class UpdateCustomAuthorizerV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCustomAuthorizerV2Request.
+        r"""Sets the body of this UpdateCustomAuthorizerV2Request.
 
         :param body: The body of this UpdateCustomAuthorizerV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.AuthorizerCreate`

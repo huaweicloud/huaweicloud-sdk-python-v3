@@ -31,7 +31,7 @@ class HealthReportAnalysisResult:
     }
 
     def __init__(self, risk_code=None, risk_level=None, risk_content=None, reasons=None):
-        """HealthReportAnalysisResult
+        r"""HealthReportAnalysisResult
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class HealthReportAnalysisResult:
 
     @property
     def risk_code(self):
-        """Gets the risk_code of this HealthReportAnalysisResult.
+        r"""Gets the risk_code of this HealthReportAnalysisResult.
 
         风险点编码。
 
@@ -71,7 +71,7 @@ class HealthReportAnalysisResult:
 
     @risk_code.setter
     def risk_code(self, risk_code):
-        """Sets the risk_code of this HealthReportAnalysisResult.
+        r"""Sets the risk_code of this HealthReportAnalysisResult.
 
         风险点编码。
 
@@ -82,7 +82,7 @@ class HealthReportAnalysisResult:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this HealthReportAnalysisResult.
+        r"""Gets the risk_level of this HealthReportAnalysisResult.
 
         风险点级别。
 
@@ -93,7 +93,7 @@ class HealthReportAnalysisResult:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this HealthReportAnalysisResult.
+        r"""Sets the risk_level of this HealthReportAnalysisResult.
 
         风险点级别。
 
@@ -104,7 +104,7 @@ class HealthReportAnalysisResult:
 
     @property
     def risk_content(self):
-        """Gets the risk_content of this HealthReportAnalysisResult.
+        r"""Gets the risk_content of this HealthReportAnalysisResult.
 
         风险点内容。
 
@@ -115,7 +115,7 @@ class HealthReportAnalysisResult:
 
     @risk_content.setter
     def risk_content(self, risk_content):
-        """Sets the risk_content of this HealthReportAnalysisResult.
+        r"""Sets the risk_content of this HealthReportAnalysisResult.
 
         风险点内容。
 
@@ -126,7 +126,7 @@ class HealthReportAnalysisResult:
 
     @property
     def reasons(self):
-        """Gets the reasons of this HealthReportAnalysisResult.
+        r"""Gets the reasons of this HealthReportAnalysisResult.
 
         可能原因列表。
 
@@ -137,7 +137,7 @@ class HealthReportAnalysisResult:
 
     @reasons.setter
     def reasons(self, reasons):
-        """Sets the reasons of this HealthReportAnalysisResult.
+        r"""Sets the reasons of this HealthReportAnalysisResult.
 
         可能原因列表。
 

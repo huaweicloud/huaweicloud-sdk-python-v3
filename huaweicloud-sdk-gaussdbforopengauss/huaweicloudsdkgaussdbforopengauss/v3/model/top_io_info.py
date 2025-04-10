@@ -45,7 +45,7 @@ class TopIoInfo:
     }
 
     def __init__(self, thread_id=None, thread_type=None, disk_read_rate=None, disk_write_rate=None, session_id=None, unique_sql_id=None, database_name=None, client_ip=None, user_name=None, state=None, sql_start=None):
-        """TopIoInfo
+        r"""TopIoInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TopIoInfo:
 
     @property
     def thread_id(self):
-        """Gets the thread_id of this TopIoInfo.
+        r"""Gets the thread_id of this TopIoInfo.
 
         线程ID
 
@@ -124,7 +124,7 @@ class TopIoInfo:
 
     @thread_id.setter
     def thread_id(self, thread_id):
-        """Sets the thread_id of this TopIoInfo.
+        r"""Sets the thread_id of this TopIoInfo.
 
         线程ID
 
@@ -135,7 +135,7 @@ class TopIoInfo:
 
     @property
     def thread_type(self):
-        """Gets the thread_type of this TopIoInfo.
+        r"""Gets the thread_type of this TopIoInfo.
 
         线程分类标识，取值：业务（worker）和后台（background）。需将GUC参数\"enable_thread_pool\"设置为on
 
@@ -146,7 +146,7 @@ class TopIoInfo:
 
     @thread_type.setter
     def thread_type(self, thread_type):
-        """Sets the thread_type of this TopIoInfo.
+        r"""Sets the thread_type of this TopIoInfo.
 
         线程分类标识，取值：业务（worker）和后台（background）。需将GUC参数\"enable_thread_pool\"设置为on
 
@@ -157,7 +157,7 @@ class TopIoInfo:
 
     @property
     def disk_read_rate(self):
-        """Gets the disk_read_rate of this TopIoInfo.
+        r"""Gets the disk_read_rate of this TopIoInfo.
 
         从磁盘读取数据速率, 单位：KB/s
 
@@ -168,7 +168,7 @@ class TopIoInfo:
 
     @disk_read_rate.setter
     def disk_read_rate(self, disk_read_rate):
-        """Sets the disk_read_rate of this TopIoInfo.
+        r"""Sets the disk_read_rate of this TopIoInfo.
 
         从磁盘读取数据速率, 单位：KB/s
 
@@ -179,7 +179,7 @@ class TopIoInfo:
 
     @property
     def disk_write_rate(self):
-        """Gets the disk_write_rate of this TopIoInfo.
+        r"""Gets the disk_write_rate of this TopIoInfo.
 
         写入磁盘数据速率, 单位：KB/s
 
@@ -190,7 +190,7 @@ class TopIoInfo:
 
     @disk_write_rate.setter
     def disk_write_rate(self, disk_write_rate):
-        """Sets the disk_write_rate of this TopIoInfo.
+        r"""Sets the disk_write_rate of this TopIoInfo.
 
         写入磁盘数据速率, 单位：KB/s
 
@@ -201,7 +201,7 @@ class TopIoInfo:
 
     @property
     def session_id(self):
-        """Gets the session_id of this TopIoInfo.
+        r"""Gets the session_id of this TopIoInfo.
 
         会话ID
 
@@ -212,7 +212,7 @@ class TopIoInfo:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this TopIoInfo.
+        r"""Sets the session_id of this TopIoInfo.
 
         会话ID
 
@@ -223,7 +223,7 @@ class TopIoInfo:
 
     @property
     def unique_sql_id(self):
-        """Gets the unique_sql_id of this TopIoInfo.
+        r"""Gets the unique_sql_id of this TopIoInfo.
 
         SQL ID
 
@@ -234,7 +234,7 @@ class TopIoInfo:
 
     @unique_sql_id.setter
     def unique_sql_id(self, unique_sql_id):
-        """Sets the unique_sql_id of this TopIoInfo.
+        r"""Sets the unique_sql_id of this TopIoInfo.
 
         SQL ID
 
@@ -245,7 +245,7 @@ class TopIoInfo:
 
     @property
     def database_name(self):
-        """Gets the database_name of this TopIoInfo.
+        r"""Gets the database_name of this TopIoInfo.
 
         数据库
 
@@ -256,7 +256,7 @@ class TopIoInfo:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this TopIoInfo.
+        r"""Sets the database_name of this TopIoInfo.
 
         数据库
 
@@ -267,7 +267,7 @@ class TopIoInfo:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this TopIoInfo.
+        r"""Gets the client_ip of this TopIoInfo.
 
         客户端IP
 
@@ -278,7 +278,7 @@ class TopIoInfo:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this TopIoInfo.
+        r"""Sets the client_ip of this TopIoInfo.
 
         客户端IP
 
@@ -289,7 +289,7 @@ class TopIoInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this TopIoInfo.
+        r"""Gets the user_name of this TopIoInfo.
 
         用户名
 
@@ -300,7 +300,7 @@ class TopIoInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this TopIoInfo.
+        r"""Sets the user_name of this TopIoInfo.
 
         用户名
 
@@ -311,7 +311,7 @@ class TopIoInfo:
 
     @property
     def state(self):
-        """Gets the state of this TopIoInfo.
+        r"""Gets the state of this TopIoInfo.
 
         状态
 
@@ -322,7 +322,7 @@ class TopIoInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TopIoInfo.
+        r"""Sets the state of this TopIoInfo.
 
         状态
 
@@ -333,7 +333,7 @@ class TopIoInfo:
 
     @property
     def sql_start(self):
-        """Gets the sql_start of this TopIoInfo.
+        r"""Gets the sql_start of this TopIoInfo.
 
         语句开始时间
 
@@ -344,7 +344,7 @@ class TopIoInfo:
 
     @sql_start.setter
     def sql_start(self, sql_start):
-        """Sets the sql_start of this TopIoInfo.
+        r"""Sets the sql_start of this TopIoInfo.
 
         语句开始时间
 

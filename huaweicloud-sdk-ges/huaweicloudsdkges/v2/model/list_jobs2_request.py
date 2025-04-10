@@ -35,7 +35,7 @@ class ListJobs2Request:
     }
 
     def __init__(self, end_time=None, graph_name=None, limit=None, offset=None, start_time=None, status=None):
-        """ListJobs2Request
+        r"""ListJobs2Request
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListJobs2Request:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobs2Request.
+        r"""Gets the end_time of this ListJobs2Request.
 
         任务结束日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
 
@@ -89,7 +89,7 @@ class ListJobs2Request:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobs2Request.
+        r"""Sets the end_time of this ListJobs2Request.
 
         任务结束日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
 
@@ -100,7 +100,7 @@ class ListJobs2Request:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this ListJobs2Request.
+        r"""Gets the graph_name of this ListJobs2Request.
 
         关联的图名称。
 
@@ -111,7 +111,7 @@ class ListJobs2Request:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this ListJobs2Request.
+        r"""Sets the graph_name of this ListJobs2Request.
 
         关联的图名称。
 
@@ -122,7 +122,7 @@ class ListJobs2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobs2Request.
+        r"""Gets the limit of this ListJobs2Request.
 
         每页资源数量的最大值，默认为10。
 
@@ -133,7 +133,7 @@ class ListJobs2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobs2Request.
+        r"""Sets the limit of this ListJobs2Request.
 
         每页资源数量的最大值，默认为10。
 
@@ -144,7 +144,7 @@ class ListJobs2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobs2Request.
+        r"""Gets the offset of this ListJobs2Request.
 
         本次请求的起始位置，默认为0。
 
@@ -155,7 +155,7 @@ class ListJobs2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobs2Request.
+        r"""Sets the offset of this ListJobs2Request.
 
         本次请求的起始位置，默认为0。
 
@@ -166,7 +166,7 @@ class ListJobs2Request:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListJobs2Request.
+        r"""Gets the start_time of this ListJobs2Request.
 
         任务开始日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
 
@@ -177,7 +177,7 @@ class ListJobs2Request:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListJobs2Request.
+        r"""Sets the start_time of this ListJobs2Request.
 
         任务开始日期，当前只支持日期，不支持时间。格式为：yyyy-MM-dd，比如2019-03-27。
 
@@ -188,7 +188,7 @@ class ListJobs2Request:
 
     @property
     def status(self):
-        """Gets the status of this ListJobs2Request.
+        r"""Gets the status of this ListJobs2Request.
 
         任务状态。取值为：  - running - waiting - success - failed
 
@@ -199,7 +199,7 @@ class ListJobs2Request:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobs2Request.
+        r"""Sets the status of this ListJobs2Request.
 
         任务状态。取值为：  - running - waiting - success - failed
 

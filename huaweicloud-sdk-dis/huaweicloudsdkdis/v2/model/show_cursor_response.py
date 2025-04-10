@@ -26,7 +26,7 @@ class ShowCursorResponse(SdkResponse):
     }
 
     def __init__(self, partition_cursor=None):
-        """ShowCursorResponse
+        r"""ShowCursorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCursorResponse(SdkResponse):
 
     @property
     def partition_cursor(self):
-        """Gets the partition_cursor of this ShowCursorResponse.
+        r"""Gets the partition_cursor of this ShowCursorResponse.
 
         数据游标。  取值范围：1~512个字符。  说明：  数据游标有效期为5分钟。
 
@@ -55,7 +55,7 @@ class ShowCursorResponse(SdkResponse):
 
     @partition_cursor.setter
     def partition_cursor(self, partition_cursor):
-        """Sets the partition_cursor of this ShowCursorResponse.
+        r"""Sets the partition_cursor of this ShowCursorResponse.
 
         数据游标。  取值范围：1~512个字符。  说明：  数据游标有效期为5分钟。
 

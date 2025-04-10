@@ -26,7 +26,7 @@ class AddSubscriptionFromSubscriptionUserResponse(SdkResponse):
     }
 
     def __init__(self, subscriptions_result=None):
-        """AddSubscriptionFromSubscriptionUserResponse
+        r"""AddSubscriptionFromSubscriptionUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddSubscriptionFromSubscriptionUserResponse(SdkResponse):
 
     @property
     def subscriptions_result(self):
-        """Gets the subscriptions_result of this AddSubscriptionFromSubscriptionUserResponse.
+        r"""Gets the subscriptions_result of this AddSubscriptionFromSubscriptionUserResponse.
 
         添加订阅返回结果。
 
@@ -55,7 +55,7 @@ class AddSubscriptionFromSubscriptionUserResponse(SdkResponse):
 
     @subscriptions_result.setter
     def subscriptions_result(self, subscriptions_result):
-        """Sets the subscriptions_result of this AddSubscriptionFromSubscriptionUserResponse.
+        r"""Sets the subscriptions_result of this AddSubscriptionFromSubscriptionUserResponse.
 
         添加订阅返回结果。
 

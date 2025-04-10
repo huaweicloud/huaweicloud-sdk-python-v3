@@ -45,13 +45,13 @@ class ListHostProtectHistoryInfoRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, host_id=None, start_time=None, end_time=None, limit=None, offset=None, host_name=None, host_ip=None, file_path=None, file_operation=None):
-        """ListHostProtectHistoryInfoRequest
+        r"""ListHostProtectHistoryInfoRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_id: Host Id，为空时查所有主机
         :type host_id: str
@@ -108,7 +108,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the region of this ListHostProtectHistoryInfoRequest.
 
         Region Id
 
@@ -119,7 +119,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the region of this ListHostProtectHistoryInfoRequest.
 
         Region Id
 
@@ -130,9 +130,9 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the enterprise_project_id of this ListHostProtectHistoryInfoRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListHostProtectHistoryInfoRequest.
         :rtype: str
@@ -141,9 +141,9 @@ class ListHostProtectHistoryInfoRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the enterprise_project_id of this ListHostProtectHistoryInfoRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostProtectHistoryInfoRequest.
         :type enterprise_project_id: str
@@ -152,7 +152,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the host_id of this ListHostProtectHistoryInfoRequest.
 
         Host Id，为空时查所有主机
 
@@ -163,7 +163,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the host_id of this ListHostProtectHistoryInfoRequest.
 
         Host Id，为空时查所有主机
 
@@ -174,7 +174,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the start_time of this ListHostProtectHistoryInfoRequest.
 
         起始时间(ms)
 
@@ -185,7 +185,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the start_time of this ListHostProtectHistoryInfoRequest.
 
         起始时间(ms)
 
@@ -196,7 +196,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the end_time of this ListHostProtectHistoryInfoRequest.
 
         终止时间(ms)
 
@@ -207,7 +207,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the end_time of this ListHostProtectHistoryInfoRequest.
 
         终止时间(ms)
 
@@ -218,7 +218,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the limit of this ListHostProtectHistoryInfoRequest.
 
         limit
 
@@ -229,7 +229,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the limit of this ListHostProtectHistoryInfoRequest.
 
         limit
 
@@ -240,7 +240,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the offset of this ListHostProtectHistoryInfoRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -251,7 +251,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the offset of this ListHostProtectHistoryInfoRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -262,7 +262,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the host_name of this ListHostProtectHistoryInfoRequest.
 
         服务器名称
 
@@ -273,7 +273,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the host_name of this ListHostProtectHistoryInfoRequest.
 
         服务器名称
 
@@ -284,7 +284,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the host_ip of this ListHostProtectHistoryInfoRequest.
 
         服务器ip
 
@@ -295,7 +295,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the host_ip of this ListHostProtectHistoryInfoRequest.
 
         服务器ip
 
@@ -306,7 +306,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the file_path of this ListHostProtectHistoryInfoRequest.
 
         防护文件
 
@@ -317,7 +317,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the file_path of this ListHostProtectHistoryInfoRequest.
 
         防护文件
 
@@ -328,7 +328,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @property
     def file_operation(self):
-        """Gets the file_operation of this ListHostProtectHistoryInfoRequest.
+        r"""Gets the file_operation of this ListHostProtectHistoryInfoRequest.
 
         文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性
 
@@ -339,7 +339,7 @@ class ListHostProtectHistoryInfoRequest:
 
     @file_operation.setter
     def file_operation(self, file_operation):
-        """Sets the file_operation of this ListHostProtectHistoryInfoRequest.
+        r"""Sets the file_operation of this ListHostProtectHistoryInfoRequest.
 
         文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性
 

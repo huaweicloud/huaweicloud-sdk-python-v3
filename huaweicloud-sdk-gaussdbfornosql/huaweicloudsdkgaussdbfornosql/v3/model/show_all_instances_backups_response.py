@@ -28,7 +28,7 @@ class ShowAllInstancesBackupsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, backups=None):
-        """ShowAllInstancesBackupsResponse
+        r"""ShowAllInstancesBackupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAllInstancesBackupsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowAllInstancesBackupsResponse.
+        r"""Gets the total_count of this ShowAllInstancesBackupsResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ShowAllInstancesBackupsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowAllInstancesBackupsResponse.
+        r"""Sets the total_count of this ShowAllInstancesBackupsResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ShowAllInstancesBackupsResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ShowAllInstancesBackupsResponse.
+        r"""Gets the backups of this ShowAllInstancesBackupsResponse.
 
         备份列表信息。
 
@@ -84,7 +84,7 @@ class ShowAllInstancesBackupsResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ShowAllInstancesBackupsResponse.
+        r"""Sets the backups of this ShowAllInstancesBackupsResponse.
 
         备份列表信息。
 

@@ -27,7 +27,7 @@ class BatchPushCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """BatchPushCertificateRequest
+        r"""BatchPushCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchPushCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this BatchPushCertificateRequest.
+        r"""Gets the certificate_id of this BatchPushCertificateRequest.
 
         证书id。
 
@@ -60,7 +60,7 @@ class BatchPushCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this BatchPushCertificateRequest.
+        r"""Sets the certificate_id of this BatchPushCertificateRequest.
 
         证书id。
 
@@ -71,7 +71,7 @@ class BatchPushCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchPushCertificateRequest.
+        r"""Gets the body of this BatchPushCertificateRequest.
 
         :return: The body of this BatchPushCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.BatchPushCertificateRequestBody`
@@ -80,7 +80,7 @@ class BatchPushCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchPushCertificateRequest.
+        r"""Sets the body of this BatchPushCertificateRequest.
 
         :param body: The body of this BatchPushCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.BatchPushCertificateRequestBody`

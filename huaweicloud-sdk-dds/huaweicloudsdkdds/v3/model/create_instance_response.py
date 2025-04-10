@@ -70,7 +70,7 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, disk_encryption_id=None, mode=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None, tags=None, order_id=None, charge_info=None):
-        """CreateInstanceResponse
+        r"""CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateInstanceResponse.
+        r"""Gets the id of this CreateInstanceResponse.
 
         实例ID。
 
@@ -209,7 +209,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInstanceResponse.
+        r"""Sets the id of this CreateInstanceResponse.
 
         实例ID。
 
@@ -220,7 +220,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateInstanceResponse.
+        r"""Gets the datastore of this CreateInstanceResponse.
 
         :return: The datastore of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.Datastore`
@@ -229,7 +229,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateInstanceResponse.
+        r"""Sets the datastore of this CreateInstanceResponse.
 
         :param datastore: The datastore of this CreateInstanceResponse.
         :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
@@ -238,7 +238,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceResponse.
+        r"""Gets the name of this CreateInstanceResponse.
 
         实例名称，与请求参数相同。
 
@@ -249,7 +249,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceResponse.
+        r"""Sets the name of this CreateInstanceResponse.
 
         实例名称，与请求参数相同。
 
@@ -260,7 +260,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this CreateInstanceResponse.
+        r"""Gets the created of this CreateInstanceResponse.
 
         创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
 
@@ -271,7 +271,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CreateInstanceResponse.
+        r"""Sets the created of this CreateInstanceResponse.
 
         创建时间为本地时间，格式为“yyyy-mm-dd hh:mm:ss”。
 
@@ -282,7 +282,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateInstanceResponse.
+        r"""Gets the status of this CreateInstanceResponse.
 
         实例状态，取值为“creating”。
 
@@ -293,7 +293,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateInstanceResponse.
+        r"""Sets the status of this CreateInstanceResponse.
 
         实例状态，取值为“creating”。
 
@@ -304,7 +304,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this CreateInstanceResponse.
+        r"""Gets the region of this CreateInstanceResponse.
 
         区域ID，与请求参数相同。
 
@@ -315,7 +315,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstanceResponse.
+        r"""Sets the region of this CreateInstanceResponse.
 
         区域ID，与请求参数相同。
 
@@ -326,7 +326,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateInstanceResponse.
+        r"""Gets the availability_zone of this CreateInstanceResponse.
 
         可用区ID，与请求参数相同。
 
@@ -337,7 +337,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateInstanceResponse.
+        r"""Sets the availability_zone of this CreateInstanceResponse.
 
         可用区ID，与请求参数相同。
 
@@ -348,7 +348,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceResponse.
+        r"""Gets the vpc_id of this CreateInstanceResponse.
 
         虚拟私有云ID，与请求参数相同。
 
@@ -359,7 +359,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceResponse.
+        r"""Sets the vpc_id of this CreateInstanceResponse.
 
         虚拟私有云ID，与请求参数相同。
 
@@ -370,7 +370,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceResponse.
+        r"""Gets the subnet_id of this CreateInstanceResponse.
 
         子网ID，与请求参数相同。
 
@@ -381,7 +381,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceResponse.
+        r"""Sets the subnet_id of this CreateInstanceResponse.
 
         子网ID，与请求参数相同。
 
@@ -392,7 +392,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceResponse.
+        r"""Gets the security_group_id of this CreateInstanceResponse.
 
         实例所属的安全组ID，与请求参数相同。
 
@@ -403,7 +403,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceResponse.
+        r"""Sets the security_group_id of this CreateInstanceResponse.
 
         实例所属的安全组ID，与请求参数相同。
 
@@ -414,7 +414,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this CreateInstanceResponse.
+        r"""Gets the port of this CreateInstanceResponse.
 
         数据库访问端口。
 
@@ -425,7 +425,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateInstanceResponse.
+        r"""Sets the port of this CreateInstanceResponse.
 
         数据库访问端口。
 
@@ -436,7 +436,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this CreateInstanceResponse.
+        r"""Gets the disk_encryption_id of this CreateInstanceResponse.
 
         磁盘加密的密钥ID，与请求参数相同。
 
@@ -447,7 +447,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this CreateInstanceResponse.
+        r"""Sets the disk_encryption_id of this CreateInstanceResponse.
 
         磁盘加密的密钥ID，与请求参数相同。
 
@@ -458,7 +458,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this CreateInstanceResponse.
+        r"""Gets the mode of this CreateInstanceResponse.
 
         实例类型，与请求参数相同。
 
@@ -469,7 +469,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateInstanceResponse.
+        r"""Sets the mode of this CreateInstanceResponse.
 
         实例类型，与请求参数相同。
 
@@ -480,7 +480,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this CreateInstanceResponse.
+        r"""Gets the configurations of this CreateInstanceResponse.
 
         参数组配置信息。
 
@@ -491,7 +491,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this CreateInstanceResponse.
+        r"""Sets the configurations of this CreateInstanceResponse.
 
         参数组配置信息。
 
@@ -502,7 +502,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateInstanceResponse.
+        r"""Gets the flavor of this CreateInstanceResponse.
 
         实例规格详情，与请求参数相同。
 
@@ -513,7 +513,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateInstanceResponse.
+        r"""Sets the flavor of this CreateInstanceResponse.
 
         实例规格详情，与请求参数相同。
 
@@ -524,7 +524,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this CreateInstanceResponse.
+        r"""Gets the backup_strategy of this CreateInstanceResponse.
 
         :return: The backup_strategy of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -533,7 +533,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this CreateInstanceResponse.
+        r"""Sets the backup_strategy of this CreateInstanceResponse.
 
         :param backup_strategy: The backup_strategy of this CreateInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -542,7 +542,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceResponse.
+        r"""Gets the enterprise_project_id of this CreateInstanceResponse.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -553,7 +553,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceResponse.
+        r"""Sets the enterprise_project_id of this CreateInstanceResponse.
 
         企业项目ID。取值为“0”，表示为default企业项目。
 
@@ -564,7 +564,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this CreateInstanceResponse.
+        r"""Gets the ssl_option of this CreateInstanceResponse.
 
         SSL开关选项，与请求参数相同。
 
@@ -575,7 +575,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this CreateInstanceResponse.
+        r"""Sets the ssl_option of this CreateInstanceResponse.
 
         SSL开关选项，与请求参数相同。
 
@@ -586,7 +586,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this CreateInstanceResponse.
+        r"""Gets the dss_pool_id of this CreateInstanceResponse.
 
         专属存储池ID。
 
@@ -597,7 +597,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this CreateInstanceResponse.
+        r"""Sets the dss_pool_id of this CreateInstanceResponse.
 
         专属存储池ID。
 
@@ -608,7 +608,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateInstanceResponse.
+        r"""Gets the job_id of this CreateInstanceResponse.
 
         创建实例的工作流ID。
 
@@ -619,7 +619,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateInstanceResponse.
+        r"""Sets the job_id of this CreateInstanceResponse.
 
         创建实例的工作流ID。
 
@@ -630,7 +630,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstanceResponse.
+        r"""Gets the tags of this CreateInstanceResponse.
 
         标签列表，与请求参数相同。
 
@@ -641,7 +641,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstanceResponse.
+        r"""Sets the tags of this CreateInstanceResponse.
 
         标签列表，与请求参数相同。
 
@@ -652,7 +652,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateInstanceResponse.
+        r"""Gets the order_id of this CreateInstanceResponse.
 
         创建实例的订单ID，仅创建包年包月实例时返回该参数。
 
@@ -663,7 +663,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateInstanceResponse.
+        r"""Sets the order_id of this CreateInstanceResponse.
 
         创建实例的订单ID，仅创建包年包月实例时返回该参数。
 
@@ -674,7 +674,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateInstanceResponse.
+        r"""Gets the charge_info of this CreateInstanceResponse.
 
         :return: The charge_info of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
@@ -683,7 +683,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateInstanceResponse.
+        r"""Sets the charge_info of this CreateInstanceResponse.
 
         :param charge_info: The charge_info of this CreateInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`

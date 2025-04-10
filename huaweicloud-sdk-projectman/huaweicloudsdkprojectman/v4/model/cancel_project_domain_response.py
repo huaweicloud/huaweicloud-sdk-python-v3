@@ -24,7 +24,7 @@ class CancelProjectDomainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelProjectDomainResponse
+        r"""CancelProjectDomainResponse
 
         The model defined in huaweicloud sdk
 

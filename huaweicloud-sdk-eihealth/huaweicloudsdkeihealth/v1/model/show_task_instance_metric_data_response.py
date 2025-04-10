@@ -26,7 +26,7 @@ class ShowTaskInstanceMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, data_points=None):
-        """ShowTaskInstanceMetricDataResponse
+        r"""ShowTaskInstanceMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTaskInstanceMetricDataResponse(SdkResponse):
 
     @property
     def data_points(self):
-        """Gets the data_points of this ShowTaskInstanceMetricDataResponse.
+        r"""Gets the data_points of this ShowTaskInstanceMetricDataResponse.
 
         监控数据列表
 
@@ -55,7 +55,7 @@ class ShowTaskInstanceMetricDataResponse(SdkResponse):
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this ShowTaskInstanceMetricDataResponse.
+        r"""Sets the data_points of this ShowTaskInstanceMetricDataResponse.
 
         监控数据列表
 

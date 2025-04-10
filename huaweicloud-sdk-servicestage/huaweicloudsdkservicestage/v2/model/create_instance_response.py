@@ -28,7 +28,7 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, job_id=None):
-        """CreateInstanceResponse
+        r"""CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateInstanceResponse.
+        r"""Gets the instance_id of this CreateInstanceResponse.
 
         应用组件实例ID。
 
@@ -62,7 +62,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateInstanceResponse.
+        r"""Sets the instance_id of this CreateInstanceResponse.
 
         应用组件实例ID。
 
@@ -73,7 +73,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateInstanceResponse.
+        r"""Gets the job_id of this CreateInstanceResponse.
 
         Job ID，用于查询创建任务信息。
 
@@ -84,7 +84,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateInstanceResponse.
+        r"""Sets the job_id of this CreateInstanceResponse.
 
         Job ID，用于查询创建任务信息。
 

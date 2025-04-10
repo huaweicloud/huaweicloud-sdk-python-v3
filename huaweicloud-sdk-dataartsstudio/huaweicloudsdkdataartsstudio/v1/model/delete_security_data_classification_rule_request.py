@@ -27,7 +27,7 @@ class DeleteSecurityDataClassificationRuleRequest:
     }
 
     def __init__(self, workspace=None, id=None):
-        """DeleteSecurityDataClassificationRuleRequest
+        r"""DeleteSecurityDataClassificationRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecurityDataClassificationRuleRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteSecurityDataClassificationRuleRequest.
+        r"""Gets the workspace of this DeleteSecurityDataClassificationRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DeleteSecurityDataClassificationRuleRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteSecurityDataClassificationRuleRequest.
+        r"""Sets the workspace of this DeleteSecurityDataClassificationRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DeleteSecurityDataClassificationRuleRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSecurityDataClassificationRuleRequest.
+        r"""Gets the id of this DeleteSecurityDataClassificationRuleRequest.
 
         需要删除的规则id
 
@@ -81,7 +81,7 @@ class DeleteSecurityDataClassificationRuleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSecurityDataClassificationRuleRequest.
+        r"""Sets the id of this DeleteSecurityDataClassificationRuleRequest.
 
         需要删除的规则id
 

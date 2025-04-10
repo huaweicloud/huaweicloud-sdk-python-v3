@@ -38,7 +38,7 @@ class DescribeTableResponse(SdkResponse):
     }
 
     def __init__(self, table_name=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, run_time_info=None, ttl_specification=None, sse_specification=None):
-        """DescribeTableResponse
+        r"""DescribeTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this DescribeTableResponse.
+        r"""Gets the table_name of this DescribeTableResponse.
 
         表名。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -97,7 +97,7 @@ class DescribeTableResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DescribeTableResponse.
+        r"""Sets the table_name of this DescribeTableResponse.
 
         表名。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -108,7 +108,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def primary_key_schema(self):
-        """Gets the primary_key_schema of this DescribeTableResponse.
+        r"""Gets the primary_key_schema of this DescribeTableResponse.
 
         :return: The primary_key_schema of this DescribeTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.PrimaryKeySchema`
@@ -117,7 +117,7 @@ class DescribeTableResponse(SdkResponse):
 
     @primary_key_schema.setter
     def primary_key_schema(self, primary_key_schema):
-        """Sets the primary_key_schema of this DescribeTableResponse.
+        r"""Sets the primary_key_schema of this DescribeTableResponse.
 
         :param primary_key_schema: The primary_key_schema of this DescribeTableResponse.
         :type primary_key_schema: :class:`huaweicloudsdkkvs.v1.PrimaryKeySchema`
@@ -126,7 +126,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def local_secondary_index_schema(self):
-        """Gets the local_secondary_index_schema of this DescribeTableResponse.
+        r"""Gets the local_secondary_index_schema of this DescribeTableResponse.
 
         本地二级索引模板，可以多个。
 
@@ -137,7 +137,7 @@ class DescribeTableResponse(SdkResponse):
 
     @local_secondary_index_schema.setter
     def local_secondary_index_schema(self, local_secondary_index_schema):
-        """Sets the local_secondary_index_schema of this DescribeTableResponse.
+        r"""Sets the local_secondary_index_schema of this DescribeTableResponse.
 
         本地二级索引模板，可以多个。
 
@@ -148,7 +148,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def global_secondary_index_schema(self):
-        """Gets the global_secondary_index_schema of this DescribeTableResponse.
+        r"""Gets the global_secondary_index_schema of this DescribeTableResponse.
 
         全局二级索引模板。
 
@@ -159,7 +159,7 @@ class DescribeTableResponse(SdkResponse):
 
     @global_secondary_index_schema.setter
     def global_secondary_index_schema(self, global_secondary_index_schema):
-        """Sets the global_secondary_index_schema of this DescribeTableResponse.
+        r"""Sets the global_secondary_index_schema of this DescribeTableResponse.
 
         全局二级索引模板。
 
@@ -170,7 +170,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def run_time_info(self):
-        """Gets the run_time_info of this DescribeTableResponse.
+        r"""Gets the run_time_info of this DescribeTableResponse.
 
         :return: The run_time_info of this DescribeTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.RunTimeInfo`
@@ -179,7 +179,7 @@ class DescribeTableResponse(SdkResponse):
 
     @run_time_info.setter
     def run_time_info(self, run_time_info):
-        """Sets the run_time_info of this DescribeTableResponse.
+        r"""Sets the run_time_info of this DescribeTableResponse.
 
         :param run_time_info: The run_time_info of this DescribeTableResponse.
         :type run_time_info: :class:`huaweicloudsdkkvs.v1.RunTimeInfo`
@@ -188,7 +188,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def ttl_specification(self):
-        """Gets the ttl_specification of this DescribeTableResponse.
+        r"""Gets the ttl_specification of this DescribeTableResponse.
 
         :return: The ttl_specification of this DescribeTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
@@ -197,7 +197,7 @@ class DescribeTableResponse(SdkResponse):
 
     @ttl_specification.setter
     def ttl_specification(self, ttl_specification):
-        """Sets the ttl_specification of this DescribeTableResponse.
+        r"""Sets the ttl_specification of this DescribeTableResponse.
 
         :param ttl_specification: The ttl_specification of this DescribeTableResponse.
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
@@ -206,7 +206,7 @@ class DescribeTableResponse(SdkResponse):
 
     @property
     def sse_specification(self):
-        """Gets the sse_specification of this DescribeTableResponse.
+        r"""Gets the sse_specification of this DescribeTableResponse.
 
         :return: The sse_specification of this DescribeTableResponse.
         :rtype: :class:`huaweicloudsdkkvs.v1.SseSpecification`
@@ -215,7 +215,7 @@ class DescribeTableResponse(SdkResponse):
 
     @sse_specification.setter
     def sse_specification(self, sse_specification):
-        """Sets the sse_specification of this DescribeTableResponse.
+        r"""Sets the sse_specification of this DescribeTableResponse.
 
         :param sse_specification: The sse_specification of this DescribeTableResponse.
         :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`

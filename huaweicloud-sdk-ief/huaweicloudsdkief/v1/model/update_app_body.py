@@ -25,7 +25,7 @@ class UpdateAppBody:
     }
 
     def __init__(self, app=None):
-        """UpdateAppBody
+        r"""UpdateAppBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAppBody:
 
     @property
     def app(self):
-        """Gets the app of this UpdateAppBody.
+        r"""Gets the app of this UpdateAppBody.
 
         :return: The app of this UpdateAppBody.
         :rtype: :class:`huaweicloudsdkief.v1.AppUpdate`
@@ -51,7 +51,7 @@ class UpdateAppBody:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this UpdateAppBody.
+        r"""Sets the app of this UpdateAppBody.
 
         :param app: The app of this UpdateAppBody.
         :type app: :class:`huaweicloudsdkief.v1.AppUpdate`

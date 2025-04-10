@@ -27,7 +27,7 @@ class ListGraphsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListGraphsRequest
+        r"""ListGraphsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListGraphsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGraphsRequest.
+        r"""Gets the offset of this ListGraphsRequest.
 
         本次请求的起始位置，默认为0。
 
@@ -61,7 +61,7 @@ class ListGraphsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGraphsRequest.
+        r"""Sets the offset of this ListGraphsRequest.
 
         本次请求的起始位置，默认为0。
 
@@ -72,7 +72,7 @@ class ListGraphsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGraphsRequest.
+        r"""Gets the limit of this ListGraphsRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -83,7 +83,7 @@ class ListGraphsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGraphsRequest.
+        r"""Sets the limit of this ListGraphsRequest.
 
         每页资源数量的最大值，默认为10。
 

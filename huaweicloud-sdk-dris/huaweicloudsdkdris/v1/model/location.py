@@ -27,7 +27,7 @@ class Location:
     }
 
     def __init__(self, lat=None, lon=None):
-        """Location
+        r"""Location
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Location:
 
     @property
     def lat(self):
-        """Gets the lat of this Location.
+        r"""Gets the lat of this Location.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -61,7 +61,7 @@ class Location:
 
     @lat.setter
     def lat(self, lat):
-        """Sets the lat of this Location.
+        r"""Sets the lat of this Location.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -72,7 +72,7 @@ class Location:
 
     @property
     def lon(self):
-        """Gets the lon of this Location.
+        r"""Gets the lon of this Location.
 
         **参数说明**：定义经度数值。东经为正，西经为负。单位°，精度小数点后7位。
 
@@ -83,7 +83,7 @@ class Location:
 
     @lon.setter
     def lon(self, lon):
-        """Sets the lon of this Location.
+        r"""Sets the lon of this Location.
 
         **参数说明**：定义经度数值。东经为正，西经为负。单位°，精度小数点后7位。
 

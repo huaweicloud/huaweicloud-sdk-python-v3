@@ -31,7 +31,7 @@ class SelfDefinedFieldVO:
     }
 
     def __init__(self, fd_name_ch=None, fd_name_en=None, not_null=None, fd_value=None):
-        """SelfDefinedFieldVO
+        r"""SelfDefinedFieldVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SelfDefinedFieldVO:
 
     @property
     def fd_name_ch(self):
-        """Gets the fd_name_ch of this SelfDefinedFieldVO.
+        r"""Gets the fd_name_ch of this SelfDefinedFieldVO.
 
         自定义项中文名。
 
@@ -75,7 +75,7 @@ class SelfDefinedFieldVO:
 
     @fd_name_ch.setter
     def fd_name_ch(self, fd_name_ch):
-        """Sets the fd_name_ch of this SelfDefinedFieldVO.
+        r"""Sets the fd_name_ch of this SelfDefinedFieldVO.
 
         自定义项中文名。
 
@@ -86,7 +86,7 @@ class SelfDefinedFieldVO:
 
     @property
     def fd_name_en(self):
-        """Gets the fd_name_en of this SelfDefinedFieldVO.
+        r"""Gets the fd_name_en of this SelfDefinedFieldVO.
 
         自定义项英文名。
 
@@ -97,7 +97,7 @@ class SelfDefinedFieldVO:
 
     @fd_name_en.setter
     def fd_name_en(self, fd_name_en):
-        """Sets the fd_name_en of this SelfDefinedFieldVO.
+        r"""Sets the fd_name_en of this SelfDefinedFieldVO.
 
         自定义项英文名。
 
@@ -108,7 +108,7 @@ class SelfDefinedFieldVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this SelfDefinedFieldVO.
+        r"""Gets the not_null of this SelfDefinedFieldVO.
 
         是否必填。
 
@@ -119,7 +119,7 @@ class SelfDefinedFieldVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this SelfDefinedFieldVO.
+        r"""Sets the not_null of this SelfDefinedFieldVO.
 
         是否必填。
 
@@ -130,7 +130,7 @@ class SelfDefinedFieldVO:
 
     @property
     def fd_value(self):
-        """Gets the fd_value of this SelfDefinedFieldVO.
+        r"""Gets the fd_value of this SelfDefinedFieldVO.
 
         属性值。
 
@@ -141,7 +141,7 @@ class SelfDefinedFieldVO:
 
     @fd_value.setter
     def fd_value(self, fd_value):
-        """Sets the fd_value of this SelfDefinedFieldVO.
+        r"""Sets the fd_value of this SelfDefinedFieldVO.
 
         属性值。
 

@@ -30,7 +30,7 @@ class DeleteGraphResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, error_message=None, error_code=None):
-        """DeleteGraphResponse
+        r"""DeleteGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteGraphResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteGraphResponse.
+        r"""Gets the job_id of this DeleteGraphResponse.
 
         删除图任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
@@ -69,7 +69,7 @@ class DeleteGraphResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteGraphResponse.
+        r"""Sets the job_id of this DeleteGraphResponse.
 
         删除图任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
@@ -80,7 +80,7 @@ class DeleteGraphResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this DeleteGraphResponse.
+        r"""Gets the error_message of this DeleteGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -91,7 +91,7 @@ class DeleteGraphResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DeleteGraphResponse.
+        r"""Sets the error_message of this DeleteGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -102,7 +102,7 @@ class DeleteGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteGraphResponse.
+        r"""Gets the error_code of this DeleteGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -113,7 +113,7 @@ class DeleteGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteGraphResponse.
+        r"""Sets the error_code of this DeleteGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 

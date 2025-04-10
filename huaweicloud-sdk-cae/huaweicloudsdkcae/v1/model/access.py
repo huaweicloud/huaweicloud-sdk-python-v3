@@ -27,7 +27,7 @@ class Access:
     }
 
     def __init__(self, address=None, type=None):
-        """Access
+        r"""Access
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Access:
 
     @property
     def address(self):
-        """Gets the address of this Access.
+        r"""Gets the address of this Access.
 
         访问地址。
 
@@ -61,7 +61,7 @@ class Access:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this Access.
+        r"""Sets the address of this Access.
 
         访问地址。
 
@@ -72,7 +72,7 @@ class Access:
 
     @property
     def type(self):
-        """Gets the type of this Access.
+        r"""Gets the type of this Access.
 
         访问方式类型。
 
@@ -83,7 +83,7 @@ class Access:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Access.
+        r"""Sets the type of this Access.
 
         访问方式类型。
 

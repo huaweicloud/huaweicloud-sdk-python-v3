@@ -31,7 +31,7 @@ class LogicalClusterVolume:
     }
 
     def __init__(self, logical_cluster_name=None, usage=None, total=None, percent=None):
-        """LogicalClusterVolume
+        r"""LogicalClusterVolume
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LogicalClusterVolume:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this LogicalClusterVolume.
+        r"""Gets the logical_cluster_name of this LogicalClusterVolume.
 
         逻辑集群名称
 
@@ -75,7 +75,7 @@ class LogicalClusterVolume:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this LogicalClusterVolume.
+        r"""Sets the logical_cluster_name of this LogicalClusterVolume.
 
         逻辑集群名称
 
@@ -86,7 +86,7 @@ class LogicalClusterVolume:
 
     @property
     def usage(self):
-        """Gets the usage of this LogicalClusterVolume.
+        r"""Gets the usage of this LogicalClusterVolume.
 
         磁盘使用量
 
@@ -97,7 +97,7 @@ class LogicalClusterVolume:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this LogicalClusterVolume.
+        r"""Sets the usage of this LogicalClusterVolume.
 
         磁盘使用量
 
@@ -108,7 +108,7 @@ class LogicalClusterVolume:
 
     @property
     def total(self):
-        """Gets the total of this LogicalClusterVolume.
+        r"""Gets the total of this LogicalClusterVolume.
 
         磁盘总量
 
@@ -119,7 +119,7 @@ class LogicalClusterVolume:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this LogicalClusterVolume.
+        r"""Sets the total of this LogicalClusterVolume.
 
         磁盘总量
 
@@ -130,7 +130,7 @@ class LogicalClusterVolume:
 
     @property
     def percent(self):
-        """Gets the percent of this LogicalClusterVolume.
+        r"""Gets the percent of this LogicalClusterVolume.
 
         磁盘使用比例
 
@@ -141,7 +141,7 @@ class LogicalClusterVolume:
 
     @percent.setter
     def percent(self, percent):
-        """Sets the percent of this LogicalClusterVolume.
+        r"""Sets the percent of this LogicalClusterVolume.
 
         磁盘使用比例
 

@@ -27,7 +27,7 @@ class UpdateDataConnectorRequest:
     }
 
     def __init__(self, connector_id=None, body=None):
-        """UpdateDataConnectorRequest
+        r"""UpdateDataConnectorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDataConnectorRequest:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this UpdateDataConnectorRequest.
+        r"""Gets the connector_id of this UpdateDataConnectorRequest.
 
         数据连接id
 
@@ -60,7 +60,7 @@ class UpdateDataConnectorRequest:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this UpdateDataConnectorRequest.
+        r"""Sets the connector_id of this UpdateDataConnectorRequest.
 
         数据连接id
 
@@ -71,7 +71,7 @@ class UpdateDataConnectorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataConnectorRequest.
+        r"""Gets the body of this UpdateDataConnectorRequest.
 
         :return: The body of this UpdateDataConnectorRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.DataConnectorReq`
@@ -80,7 +80,7 @@ class UpdateDataConnectorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataConnectorRequest.
+        r"""Sets the body of this UpdateDataConnectorRequest.
 
         :param body: The body of this UpdateDataConnectorRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.DataConnectorReq`

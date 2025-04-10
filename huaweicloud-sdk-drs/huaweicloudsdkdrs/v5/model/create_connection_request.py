@@ -27,7 +27,7 @@ class CreateConnectionRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateConnectionRequest
+        r"""CreateConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateConnectionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateConnectionRequest.
+        r"""Gets the x_language of this CreateConnectionRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class CreateConnectionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateConnectionRequest.
+        r"""Sets the x_language of this CreateConnectionRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class CreateConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectionRequest.
+        r"""Gets the body of this CreateConnectionRequest.
 
         :return: The body of this CreateConnectionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.CreateConnectionReq`
@@ -81,7 +81,7 @@ class CreateConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectionRequest.
+        r"""Sets the body of this CreateConnectionRequest.
 
         :param body: The body of this CreateConnectionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.CreateConnectionReq`

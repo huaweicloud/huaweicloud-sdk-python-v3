@@ -31,7 +31,7 @@ class ListTagValuesRequest:
     }
 
     def __init__(self, region_id=None, limit=None, marker=None, key=None):
-        """ListTagValuesRequest
+        r"""ListTagValuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListTagValuesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListTagValuesRequest.
+        r"""Gets the region_id of this ListTagValuesRequest.
 
         区域ID
 
@@ -74,7 +74,7 @@ class ListTagValuesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListTagValuesRequest.
+        r"""Sets the region_id of this ListTagValuesRequest.
 
         区域ID
 
@@ -85,7 +85,7 @@ class ListTagValuesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagValuesRequest.
+        r"""Gets the limit of this ListTagValuesRequest.
 
         查询记录数。 最小为1，最大为200，未输入时默认为200。
 
@@ -96,7 +96,7 @@ class ListTagValuesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagValuesRequest.
+        r"""Sets the limit of this ListTagValuesRequest.
 
         查询记录数。 最小为1，最大为200，未输入时默认为200。
 
@@ -107,7 +107,7 @@ class ListTagValuesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTagValuesRequest.
+        r"""Gets the marker of this ListTagValuesRequest.
 
         分页位置标识（索引）。 从marker指定索引的下一条数据开始查询。 说明： 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数，当返回的next_marker为空时表示查询到最后一页。
 
@@ -118,7 +118,7 @@ class ListTagValuesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTagValuesRequest.
+        r"""Sets the marker of this ListTagValuesRequest.
 
         分页位置标识（索引）。 从marker指定索引的下一条数据开始查询。 说明： 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数，当返回的next_marker为空时表示查询到最后一页。
 
@@ -129,7 +129,7 @@ class ListTagValuesRequest:
 
     @property
     def key(self):
-        """Gets the key of this ListTagValuesRequest.
+        r"""Gets the key of this ListTagValuesRequest.
 
         标签键
 
@@ -140,7 +140,7 @@ class ListTagValuesRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListTagValuesRequest.
+        r"""Sets the key of this ListTagValuesRequest.
 
         标签键
 

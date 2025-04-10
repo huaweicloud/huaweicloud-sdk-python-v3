@@ -29,7 +29,7 @@ class UpdateEnvironmentPermissionRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None, body=None):
-        """UpdateEnvironmentPermissionRequest
+        r"""UpdateEnvironmentPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEnvironmentPermissionRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateEnvironmentPermissionRequest.
+        r"""Gets the application_id of this UpdateEnvironmentPermissionRequest.
 
         应用id
 
@@ -66,7 +66,7 @@ class UpdateEnvironmentPermissionRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateEnvironmentPermissionRequest.
+        r"""Sets the application_id of this UpdateEnvironmentPermissionRequest.
 
         应用id
 
@@ -77,7 +77,7 @@ class UpdateEnvironmentPermissionRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this UpdateEnvironmentPermissionRequest.
+        r"""Gets the environment_id of this UpdateEnvironmentPermissionRequest.
 
         环境id
 
@@ -88,7 +88,7 @@ class UpdateEnvironmentPermissionRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this UpdateEnvironmentPermissionRequest.
+        r"""Sets the environment_id of this UpdateEnvironmentPermissionRequest.
 
         环境id
 
@@ -99,7 +99,7 @@ class UpdateEnvironmentPermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnvironmentPermissionRequest.
+        r"""Gets the body of this UpdateEnvironmentPermissionRequest.
 
         :return: The body of this UpdateEnvironmentPermissionRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentPermissionV2Body`
@@ -108,7 +108,7 @@ class UpdateEnvironmentPermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnvironmentPermissionRequest.
+        r"""Sets the body of this UpdateEnvironmentPermissionRequest.
 
         :param body: The body of this UpdateEnvironmentPermissionRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentPermissionV2Body`

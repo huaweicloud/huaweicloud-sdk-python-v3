@@ -50,7 +50,7 @@ class ShowIterationV4Response(SdkResponse):
     }
 
     def __init__(self, begin_time=None, charts=None, closed_total=None, created_time=None, end_time=None, have_task=None, iteration_id=None, name=None, opened_total=None, progress=None, total=None, updated_time=None, status=None):
-        """ShowIterationV4Response
+        r"""ShowIterationV4Response
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowIterationV4Response.
+        r"""Gets the begin_time of this ShowIterationV4Response.
 
         迭代结束时间，年-月-日
 
@@ -139,7 +139,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowIterationV4Response.
+        r"""Sets the begin_time of this ShowIterationV4Response.
 
         迭代结束时间，年-月-日
 
@@ -150,7 +150,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def charts(self):
-        """Gets the charts of this ShowIterationV4Response.
+        r"""Gets the charts of this ShowIterationV4Response.
 
         燃尽图
 
@@ -161,7 +161,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @charts.setter
     def charts(self, charts):
-        """Sets the charts of this ShowIterationV4Response.
+        r"""Sets the charts of this ShowIterationV4Response.
 
         燃尽图
 
@@ -172,7 +172,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def closed_total(self):
-        """Gets the closed_total of this ShowIterationV4Response.
+        r"""Gets the closed_total of this ShowIterationV4Response.
 
         已关闭的工单数
 
@@ -183,7 +183,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @closed_total.setter
     def closed_total(self, closed_total):
-        """Sets the closed_total of this ShowIterationV4Response.
+        r"""Sets the closed_total of this ShowIterationV4Response.
 
         已关闭的工单数
 
@@ -194,7 +194,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowIterationV4Response.
+        r"""Gets the created_time of this ShowIterationV4Response.
 
         迭代创建时间
 
@@ -205,7 +205,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowIterationV4Response.
+        r"""Sets the created_time of this ShowIterationV4Response.
 
         迭代创建时间
 
@@ -216,7 +216,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowIterationV4Response.
+        r"""Gets the end_time of this ShowIterationV4Response.
 
         迭代开始时间，年-月-日
 
@@ -227,7 +227,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowIterationV4Response.
+        r"""Sets the end_time of this ShowIterationV4Response.
 
         迭代开始时间，年-月-日
 
@@ -238,7 +238,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def have_task(self):
-        """Gets the have_task of this ShowIterationV4Response.
+        r"""Gets the have_task of this ShowIterationV4Response.
 
         是否有task
 
@@ -249,7 +249,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @have_task.setter
     def have_task(self, have_task):
-        """Sets the have_task of this ShowIterationV4Response.
+        r"""Sets the have_task of this ShowIterationV4Response.
 
         是否有task
 
@@ -260,7 +260,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this ShowIterationV4Response.
+        r"""Gets the iteration_id of this ShowIterationV4Response.
 
         迭代id
 
@@ -271,7 +271,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this ShowIterationV4Response.
+        r"""Sets the iteration_id of this ShowIterationV4Response.
 
         迭代id
 
@@ -282,7 +282,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowIterationV4Response.
+        r"""Gets the name of this ShowIterationV4Response.
 
         迭代标题
 
@@ -293,7 +293,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowIterationV4Response.
+        r"""Sets the name of this ShowIterationV4Response.
 
         迭代标题
 
@@ -304,7 +304,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def opened_total(self):
-        """Gets the opened_total of this ShowIterationV4Response.
+        r"""Gets the opened_total of this ShowIterationV4Response.
 
         开启的工单数
 
@@ -315,7 +315,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @opened_total.setter
     def opened_total(self, opened_total):
-        """Sets the opened_total of this ShowIterationV4Response.
+        r"""Sets the opened_total of this ShowIterationV4Response.
 
         开启的工单数
 
@@ -326,7 +326,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowIterationV4Response.
+        r"""Gets the progress of this ShowIterationV4Response.
 
         工作进展
 
@@ -337,7 +337,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowIterationV4Response.
+        r"""Sets the progress of this ShowIterationV4Response.
 
         工作进展
 
@@ -348,7 +348,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowIterationV4Response.
+        r"""Gets the total of this ShowIterationV4Response.
 
         工单总数
 
@@ -359,7 +359,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowIterationV4Response.
+        r"""Sets the total of this ShowIterationV4Response.
 
         工单总数
 
@@ -370,7 +370,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowIterationV4Response.
+        r"""Gets the updated_time of this ShowIterationV4Response.
 
         迭代更新时间
 
@@ -381,7 +381,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowIterationV4Response.
+        r"""Sets the updated_time of this ShowIterationV4Response.
 
         迭代更新时间
 
@@ -392,7 +392,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowIterationV4Response.
+        r"""Gets the status of this ShowIterationV4Response.
 
         迭代的状态,0 未开始，1 进行中，2 结束
 
@@ -403,7 +403,7 @@ class ShowIterationV4Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowIterationV4Response.
+        r"""Sets the status of this ShowIterationV4Response.
 
         迭代的状态,0 未开始，1 进行中，2 结束
 

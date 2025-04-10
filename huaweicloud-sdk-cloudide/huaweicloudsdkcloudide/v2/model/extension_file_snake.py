@@ -27,7 +27,7 @@ class ExtensionFileSnake:
     }
 
     def __init__(self, asset_type=None, source=None):
-        """ExtensionFileSnake
+        r"""ExtensionFileSnake
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtensionFileSnake:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this ExtensionFileSnake.
+        r"""Gets the asset_type of this ExtensionFileSnake.
 
         资源类型
 
@@ -61,7 +61,7 @@ class ExtensionFileSnake:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this ExtensionFileSnake.
+        r"""Sets the asset_type of this ExtensionFileSnake.
 
         资源类型
 
@@ -72,7 +72,7 @@ class ExtensionFileSnake:
 
     @property
     def source(self):
-        """Gets the source of this ExtensionFileSnake.
+        r"""Gets the source of this ExtensionFileSnake.
 
         资源地址
 
@@ -83,7 +83,7 @@ class ExtensionFileSnake:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ExtensionFileSnake.
+        r"""Sets the source of this ExtensionFileSnake.
 
         资源地址
 

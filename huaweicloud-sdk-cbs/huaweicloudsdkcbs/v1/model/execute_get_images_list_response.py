@@ -34,7 +34,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
     }
 
     def __init__(self, quota=None, total=None, offset=None, count=None, images=None):
-        """ExecuteGetImagesListResponse
+        r"""ExecuteGetImagesListResponse
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ExecuteGetImagesListResponse.
+        r"""Gets the quota of this ExecuteGetImagesListResponse.
 
         配额
 
@@ -78,7 +78,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ExecuteGetImagesListResponse.
+        r"""Sets the quota of this ExecuteGetImagesListResponse.
 
         配额
 
@@ -89,7 +89,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ExecuteGetImagesListResponse.
+        r"""Gets the total of this ExecuteGetImagesListResponse.
 
         总数
 
@@ -100,7 +100,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ExecuteGetImagesListResponse.
+        r"""Sets the total of this ExecuteGetImagesListResponse.
 
         总数
 
@@ -111,7 +111,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetImagesListResponse.
+        r"""Gets the offset of this ExecuteGetImagesListResponse.
 
         偏移
 
@@ -122,7 +122,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetImagesListResponse.
+        r"""Sets the offset of this ExecuteGetImagesListResponse.
 
         偏移
 
@@ -133,7 +133,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ExecuteGetImagesListResponse.
+        r"""Gets the count of this ExecuteGetImagesListResponse.
 
         返回数量
 
@@ -144,7 +144,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ExecuteGetImagesListResponse.
+        r"""Sets the count of this ExecuteGetImagesListResponse.
 
         返回数量
 
@@ -155,7 +155,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @property
     def images(self):
-        """Gets the images of this ExecuteGetImagesListResponse.
+        r"""Gets the images of this ExecuteGetImagesListResponse.
 
         图片列表
 
@@ -166,7 +166,7 @@ class ExecuteGetImagesListResponse(SdkResponse):
 
     @images.setter
     def images(self, images):
-        """Sets the images of this ExecuteGetImagesListResponse.
+        r"""Sets the images of this ExecuteGetImagesListResponse.
 
         图片列表
 

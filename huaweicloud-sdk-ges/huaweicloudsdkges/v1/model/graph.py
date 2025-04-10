@@ -51,7 +51,7 @@ class Graph:
     }
 
     def __init__(self, name=None, graph_size_type_index=None, arch=None, data_source=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, enable_rbac=None, enable_full_text_index=None):
-        """Graph
+        r"""Graph
 
         The model defined in huaweicloud sdk
 
@@ -129,7 +129,7 @@ class Graph:
 
     @property
     def name(self):
-        """Gets the name of this Graph.
+        r"""Gets the name of this Graph.
 
         图名称（输入长度在4位到50位之间，必须以字母开头，可以包含字母、数字或者下划线，不能包含其他的特殊字符）。
 
@@ -140,7 +140,7 @@ class Graph:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Graph.
+        r"""Sets the name of this Graph.
 
         图名称（输入长度在4位到50位之间，必须以字母开头，可以包含字母、数字或者下划线，不能包含其他的特殊字符）。
 
@@ -151,7 +151,7 @@ class Graph:
 
     @property
     def graph_size_type_index(self):
-        """Gets the graph_size_type_index of this Graph.
+        r"""Gets the graph_size_type_index of this Graph.
 
         图规模类型索引。 - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 401：十亿增强边
 
@@ -162,7 +162,7 @@ class Graph:
 
     @graph_size_type_index.setter
     def graph_size_type_index(self, graph_size_type_index):
-        """Sets the graph_size_type_index of this Graph.
+        r"""Sets the graph_size_type_index of this Graph.
 
         图规模类型索引。 - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 401：十亿增强边
 
@@ -173,7 +173,7 @@ class Graph:
 
     @property
     def arch(self):
-        """Gets the arch of this Graph.
+        r"""Gets the arch of this Graph.
 
         图实例CPU架构类型，取值为x86_64和aarch64。默认取x86_64。 - x86_64：X64 64位架构。 - aarch64：ARM 64位架构。
 
@@ -184,7 +184,7 @@ class Graph:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this Graph.
+        r"""Sets the arch of this Graph.
 
         图实例CPU架构类型，取值为x86_64和aarch64。默认取x86_64。 - x86_64：X64 64位架构。 - aarch64：ARM 64位架构。
 
@@ -195,7 +195,7 @@ class Graph:
 
     @property
     def data_source(self):
-        """Gets the data_source of this Graph.
+        r"""Gets the data_source of this Graph.
 
         :return: The data_source of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.DataSource`
@@ -204,7 +204,7 @@ class Graph:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this Graph.
+        r"""Sets the data_source of this Graph.
 
         :param data_source: The data_source of this Graph.
         :type data_source: :class:`huaweicloudsdkges.v1.DataSource`
@@ -213,7 +213,7 @@ class Graph:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Graph.
+        r"""Gets the vpc_id of this Graph.
 
           虚拟私有云ID。
 
@@ -224,7 +224,7 @@ class Graph:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Graph.
+        r"""Sets the vpc_id of this Graph.
 
           虚拟私有云ID。
 
@@ -235,7 +235,7 @@ class Graph:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Graph.
+        r"""Gets the subnet_id of this Graph.
 
         指定虚拟私有云下的子网ID。
 
@@ -246,7 +246,7 @@ class Graph:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Graph.
+        r"""Sets the subnet_id of this Graph.
 
         指定虚拟私有云下的子网ID。
 
@@ -257,7 +257,7 @@ class Graph:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this Graph.
+        r"""Gets the security_group_id of this Graph.
 
         安全组ID。
 
@@ -268,7 +268,7 @@ class Graph:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this Graph.
+        r"""Sets the security_group_id of this Graph.
 
         安全组ID。
 
@@ -279,7 +279,7 @@ class Graph:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this Graph.
+        r"""Gets the public_ip of this Graph.
 
         :return: The public_ip of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.PublicIp`
@@ -288,7 +288,7 @@ class Graph:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this Graph.
+        r"""Sets the public_ip of this Graph.
 
         :param public_ip: The public_ip of this Graph.
         :type public_ip: :class:`huaweicloudsdkges.v1.PublicIp`
@@ -297,7 +297,7 @@ class Graph:
 
     @property
     def enable_multi_az(self):
-        """Gets the enable_multi_az of this Graph.
+        r"""Gets the enable_multi_az of this Graph.
 
         创建的图是否支持跨可用区（AZ），默认值是false，如果设置为true，系统将会把图中的ECS建在两个可用区中。  如果创建图时，不加该参数，则会将图中的ECS都建在一个可用区中。
 
@@ -308,7 +308,7 @@ class Graph:
 
     @enable_multi_az.setter
     def enable_multi_az(self, enable_multi_az):
-        """Sets the enable_multi_az of this Graph.
+        r"""Sets the enable_multi_az of this Graph.
 
         创建的图是否支持跨可用区（AZ），默认值是false，如果设置为true，系统将会把图中的ECS建在两个可用区中。  如果创建图时，不加该参数，则会将图中的ECS都建在一个可用区中。
 
@@ -319,7 +319,7 @@ class Graph:
 
     @property
     def encryption(self):
-        """Gets the encryption of this Graph.
+        r"""Gets the encryption of this Graph.
 
         :return: The encryption of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.EncryptionReq`
@@ -328,7 +328,7 @@ class Graph:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this Graph.
+        r"""Sets the encryption of this Graph.
 
         :param encryption: The encryption of this Graph.
         :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`
@@ -337,7 +337,7 @@ class Graph:
 
     @property
     def lts_operation_trace(self):
-        """Gets the lts_operation_trace of this Graph.
+        r"""Gets the lts_operation_trace of this Graph.
 
         :return: The lts_operation_trace of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`
@@ -346,7 +346,7 @@ class Graph:
 
     @lts_operation_trace.setter
     def lts_operation_trace(self, lts_operation_trace):
-        """Sets the lts_operation_trace of this Graph.
+        r"""Sets the lts_operation_trace of this Graph.
 
         :param lts_operation_trace: The lts_operation_trace of this Graph.
         :type lts_operation_trace: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`
@@ -355,7 +355,7 @@ class Graph:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this Graph.
+        r"""Gets the sys_tags of this Graph.
 
         企业项目信息，如果未指定则不开启，默认不开启。
 
@@ -366,7 +366,7 @@ class Graph:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this Graph.
+        r"""Sets the sys_tags of this Graph.
 
         企业项目信息，如果未指定则不开启，默认不开启。
 
@@ -377,7 +377,7 @@ class Graph:
 
     @property
     def enable_rbac(self):
-        """Gets the enable_rbac of this Graph.
+        r"""Gets the enable_rbac of this Graph.
 
         创建的图是否启用细粒度权限控制，默认不启用，值为false。如果设置为true，创建的图所有用户都没有权限，需要调用业务面细粒度权限控制API进行授权操作才可以访问图。
 
@@ -388,7 +388,7 @@ class Graph:
 
     @enable_rbac.setter
     def enable_rbac(self, enable_rbac):
-        """Sets the enable_rbac of this Graph.
+        r"""Sets the enable_rbac of this Graph.
 
         创建的图是否启用细粒度权限控制，默认不启用，值为false。如果设置为true，创建的图所有用户都没有权限，需要调用业务面细粒度权限控制API进行授权操作才可以访问图。
 
@@ -399,7 +399,7 @@ class Graph:
 
     @property
     def enable_full_text_index(self):
-        """Gets the enable_full_text_index of this Graph.
+        r"""Gets the enable_full_text_index of this Graph.
 
         创建的图是否开启全文索引控制，默认不启用，值为false。如果设置为true，十亿增强版-规格版图支持全文索引，创建图时会创建云搜索服务集群。 >开启全文索引功能。如果CSS服务已经部署，图实例会自动创建CSS集群，图创建时间较长。如果CSS服务没有部署则图创建失败。
 
@@ -410,7 +410,7 @@ class Graph:
 
     @enable_full_text_index.setter
     def enable_full_text_index(self, enable_full_text_index):
-        """Sets the enable_full_text_index of this Graph.
+        r"""Sets the enable_full_text_index of this Graph.
 
         创建的图是否开启全文索引控制，默认不启用，值为false。如果设置为true，十亿增强版-规格版图支持全文索引，创建图时会创建云搜索服务集群。 >开启全文索引功能。如果CSS服务已经部署，图实例会自动创建CSS集群，图创建时间较长。如果CSS服务没有部署则图创建失败。
 

@@ -27,7 +27,7 @@ class ImageJobResourceInfo:
     }
 
     def __init__(self, resource_id=None, resource_name=None):
-        """ImageJobResourceInfo
+        r"""ImageJobResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageJobResourceInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ImageJobResourceInfo.
+        r"""Gets the resource_id of this ImageJobResourceInfo.
 
         资源ID
 
@@ -61,7 +61,7 @@ class ImageJobResourceInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ImageJobResourceInfo.
+        r"""Sets the resource_id of this ImageJobResourceInfo.
 
         资源ID
 
@@ -72,7 +72,7 @@ class ImageJobResourceInfo:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ImageJobResourceInfo.
+        r"""Gets the resource_name of this ImageJobResourceInfo.
 
         产物名称，或者被操作资源名称
 
@@ -83,7 +83,7 @@ class ImageJobResourceInfo:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ImageJobResourceInfo.
+        r"""Sets the resource_name of this ImageJobResourceInfo.
 
         产物名称，或者被操作资源名称
 

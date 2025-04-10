@@ -28,7 +28,7 @@ class ListOrganizationalUnitsResponse(SdkResponse):
     }
 
     def __init__(self, organizational_units=None, page_info=None):
-        """ListOrganizationalUnitsResponse
+        r"""ListOrganizationalUnitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOrganizationalUnitsResponse(SdkResponse):
 
     @property
     def organizational_units(self):
-        """Gets the organizational_units of this ListOrganizationalUnitsResponse.
+        r"""Gets the organizational_units of this ListOrganizationalUnitsResponse.
 
         组织单元列表。
 
@@ -62,7 +62,7 @@ class ListOrganizationalUnitsResponse(SdkResponse):
 
     @organizational_units.setter
     def organizational_units(self, organizational_units):
-        """Sets the organizational_units of this ListOrganizationalUnitsResponse.
+        r"""Sets the organizational_units of this ListOrganizationalUnitsResponse.
 
         组织单元列表。
 
@@ -73,7 +73,7 @@ class ListOrganizationalUnitsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListOrganizationalUnitsResponse.
+        r"""Gets the page_info of this ListOrganizationalUnitsResponse.
 
         :return: The page_info of this ListOrganizationalUnitsResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListOrganizationalUnitsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListOrganizationalUnitsResponse.
+        r"""Sets the page_info of this ListOrganizationalUnitsResponse.
 
         :param page_info: The page_info of this ListOrganizationalUnitsResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

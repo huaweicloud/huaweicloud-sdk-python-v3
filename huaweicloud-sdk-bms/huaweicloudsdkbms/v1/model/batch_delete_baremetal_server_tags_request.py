@@ -27,7 +27,7 @@ class BatchDeleteBaremetalServerTagsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchDeleteBaremetalServerTagsRequest
+        r"""BatchDeleteBaremetalServerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteBaremetalServerTagsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchDeleteBaremetalServerTagsRequest.
+        r"""Gets the server_id of this BatchDeleteBaremetalServerTagsRequest.
 
         :return: The server_id of this BatchDeleteBaremetalServerTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class BatchDeleteBaremetalServerTagsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchDeleteBaremetalServerTagsRequest.
+        r"""Sets the server_id of this BatchDeleteBaremetalServerTagsRequest.
 
         :param server_id: The server_id of this BatchDeleteBaremetalServerTagsRequest.
         :type server_id: str
@@ -67,7 +67,7 @@ class BatchDeleteBaremetalServerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteBaremetalServerTagsRequest.
+        r"""Gets the body of this BatchDeleteBaremetalServerTagsRequest.
 
         :return: The body of this BatchDeleteBaremetalServerTagsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequestBody`
@@ -76,7 +76,7 @@ class BatchDeleteBaremetalServerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteBaremetalServerTagsRequest.
+        r"""Sets the body of this BatchDeleteBaremetalServerTagsRequest.
 
         :param body: The body of this BatchDeleteBaremetalServerTagsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequestBody`

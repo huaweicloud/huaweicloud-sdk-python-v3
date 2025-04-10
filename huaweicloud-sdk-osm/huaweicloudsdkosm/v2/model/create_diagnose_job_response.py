@@ -30,7 +30,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, job_id=None):
-        """CreateDiagnoseJobResponse
+        r"""CreateDiagnoseJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateDiagnoseJobResponse.
+        r"""Gets the error_code of this CreateDiagnoseJobResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateDiagnoseJobResponse.
+        r"""Sets the error_code of this CreateDiagnoseJobResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateDiagnoseJobResponse.
+        r"""Gets the error_msg of this CreateDiagnoseJobResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateDiagnoseJobResponse.
+        r"""Sets the error_msg of this CreateDiagnoseJobResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDiagnoseJobResponse.
+        r"""Gets the job_id of this CreateDiagnoseJobResponse.
 
         工具任务ID 
 
@@ -113,7 +113,7 @@ class CreateDiagnoseJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDiagnoseJobResponse.
+        r"""Sets the job_id of this CreateDiagnoseJobResponse.
 
         工具任务ID 
 

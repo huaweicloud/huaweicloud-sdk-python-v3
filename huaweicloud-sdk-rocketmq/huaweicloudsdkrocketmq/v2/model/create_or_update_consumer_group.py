@@ -37,7 +37,7 @@ class CreateOrUpdateConsumerGroup:
     }
 
     def __init__(self, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
-        """CreateOrUpdateConsumerGroup
+        r"""CreateOrUpdateConsumerGroup
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def name(self):
-        """Gets the name of this CreateOrUpdateConsumerGroup.
+        r"""Gets the name of this CreateOrUpdateConsumerGroup.
 
         消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -96,7 +96,7 @@ class CreateOrUpdateConsumerGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateOrUpdateConsumerGroup.
+        r"""Sets the name of this CreateOrUpdateConsumerGroup.
 
         消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -107,7 +107,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def brokers(self):
-        """Gets the brokers of this CreateOrUpdateConsumerGroup.
+        r"""Gets the brokers of this CreateOrUpdateConsumerGroup.
 
         关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -118,7 +118,7 @@ class CreateOrUpdateConsumerGroup:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this CreateOrUpdateConsumerGroup.
+        r"""Sets the brokers of this CreateOrUpdateConsumerGroup.
 
         关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -129,7 +129,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def broadcast(self):
-        """Gets the broadcast of this CreateOrUpdateConsumerGroup.
+        r"""Gets the broadcast of this CreateOrUpdateConsumerGroup.
 
         是否广播。
 
@@ -140,7 +140,7 @@ class CreateOrUpdateConsumerGroup:
 
     @broadcast.setter
     def broadcast(self, broadcast):
-        """Sets the broadcast of this CreateOrUpdateConsumerGroup.
+        r"""Sets the broadcast of this CreateOrUpdateConsumerGroup.
 
         是否广播。
 
@@ -151,7 +151,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def retry_max_time(self):
-        """Gets the retry_max_time of this CreateOrUpdateConsumerGroup.
+        r"""Gets the retry_max_time of this CreateOrUpdateConsumerGroup.
 
         最大重试次数，取值范围为1~16。
 
@@ -162,7 +162,7 @@ class CreateOrUpdateConsumerGroup:
 
     @retry_max_time.setter
     def retry_max_time(self, retry_max_time):
-        """Sets the retry_max_time of this CreateOrUpdateConsumerGroup.
+        r"""Sets the retry_max_time of this CreateOrUpdateConsumerGroup.
 
         最大重试次数，取值范围为1~16。
 
@@ -173,7 +173,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateOrUpdateConsumerGroup.
+        r"""Gets the enabled of this CreateOrUpdateConsumerGroup.
 
         是否可以消费。
 
@@ -184,7 +184,7 @@ class CreateOrUpdateConsumerGroup:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateOrUpdateConsumerGroup.
+        r"""Sets the enabled of this CreateOrUpdateConsumerGroup.
 
         是否可以消费。
 
@@ -195,7 +195,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def consume_orderly(self):
-        """Gets the consume_orderly of this CreateOrUpdateConsumerGroup.
+        r"""Gets the consume_orderly of this CreateOrUpdateConsumerGroup.
 
         是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
@@ -206,7 +206,7 @@ class CreateOrUpdateConsumerGroup:
 
     @consume_orderly.setter
     def consume_orderly(self, consume_orderly):
-        """Sets the consume_orderly of this CreateOrUpdateConsumerGroup.
+        r"""Sets the consume_orderly of this CreateOrUpdateConsumerGroup.
 
         是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
 
@@ -217,7 +217,7 @@ class CreateOrUpdateConsumerGroup:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this CreateOrUpdateConsumerGroup.
+        r"""Gets the group_desc of this CreateOrUpdateConsumerGroup.
 
         消费组描述，长度0~200个字符。
 
@@ -228,7 +228,7 @@ class CreateOrUpdateConsumerGroup:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this CreateOrUpdateConsumerGroup.
+        r"""Sets the group_desc of this CreateOrUpdateConsumerGroup.
 
         消费组描述，长度0~200个字符。
 

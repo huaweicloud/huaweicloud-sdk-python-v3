@@ -27,7 +27,7 @@ class PublishAppMessageRequest:
     }
 
     def __init__(self, endpoint_urn=None, body=None):
-        """PublishAppMessageRequest
+        r"""PublishAppMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PublishAppMessageRequest:
 
     @property
     def endpoint_urn(self):
-        """Gets the endpoint_urn of this PublishAppMessageRequest.
+        r"""Gets the endpoint_urn of this PublishAppMessageRequest.
 
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识
 
@@ -60,7 +60,7 @@ class PublishAppMessageRequest:
 
     @endpoint_urn.setter
     def endpoint_urn(self, endpoint_urn):
-        """Sets the endpoint_urn of this PublishAppMessageRequest.
+        r"""Sets the endpoint_urn of this PublishAppMessageRequest.
 
         Endpoint的唯一资源标识，可通过[查询Application的Endpoint列表](smn_api_58004.xml)获取该标识
 
@@ -71,7 +71,7 @@ class PublishAppMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishAppMessageRequest.
+        r"""Gets the body of this PublishAppMessageRequest.
 
         :return: The body of this PublishAppMessageRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`
@@ -80,7 +80,7 @@ class PublishAppMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishAppMessageRequest.
+        r"""Sets the body of this PublishAppMessageRequest.
 
         :param body: The body of this PublishAppMessageRequest.
         :type body: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`

@@ -25,7 +25,7 @@ class ApiVersion:
     }
 
     def __init__(self, version_id=None):
-        """ApiVersion
+        r"""ApiVersion
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApiVersion:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ApiVersion.
+        r"""Gets the version_id of this ApiVersion.
 
         API版本的编号
 
@@ -54,7 +54,7 @@ class ApiVersion:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ApiVersion.
+        r"""Sets the version_id of this ApiVersion.
 
         API版本的编号
 

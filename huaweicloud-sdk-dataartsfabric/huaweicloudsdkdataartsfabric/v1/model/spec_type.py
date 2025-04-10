@@ -30,7 +30,7 @@ class SpecType:
     }
 
     def __init__(self):
-        """SpecType
+        r"""SpecType
 
         The model defined in huaweicloud sdk
 

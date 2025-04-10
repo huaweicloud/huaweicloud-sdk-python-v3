@@ -29,7 +29,7 @@ class PolicyTemplate:
     }
 
     def __init__(self, policy_group_name=None, description=None, policies=None):
-        """PolicyTemplate
+        r"""PolicyTemplate
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PolicyTemplate:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this PolicyTemplate.
+        r"""Gets the policy_group_name of this PolicyTemplate.
 
         策略组名称，名称需要满足如下规则： 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成。 2. 字符长度范围1-55。
 
@@ -66,7 +66,7 @@ class PolicyTemplate:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this PolicyTemplate.
+        r"""Sets the policy_group_name of this PolicyTemplate.
 
         策略组名称，名称需要满足如下规则： 1. 不能有空格和.开头，可以由中文、数字、英文大小写组成。 2. 字符长度范围1-55。
 
@@ -77,7 +77,7 @@ class PolicyTemplate:
 
     @property
     def description(self):
-        """Gets the description of this PolicyTemplate.
+        r"""Gets the description of this PolicyTemplate.
 
         描述。
 
@@ -88,7 +88,7 @@ class PolicyTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyTemplate.
+        r"""Sets the description of this PolicyTemplate.
 
         描述。
 
@@ -99,7 +99,7 @@ class PolicyTemplate:
 
     @property
     def policies(self):
-        """Gets the policies of this PolicyTemplate.
+        r"""Gets the policies of this PolicyTemplate.
 
         :return: The policies of this PolicyTemplate.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -108,7 +108,7 @@ class PolicyTemplate:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PolicyTemplate.
+        r"""Sets the policies of this PolicyTemplate.
 
         :param policies: The policies of this PolicyTemplate.
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`

@@ -26,7 +26,7 @@ class UpdateUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self, user_id=None):
-        """UpdateUserPasswordResponse
+        r"""UpdateUserPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateUserPasswordResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateUserPasswordResponse.
+        r"""Gets the user_id of this UpdateUserPasswordResponse.
 
         用户id。
 
@@ -55,7 +55,7 @@ class UpdateUserPasswordResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateUserPasswordResponse.
+        r"""Sets the user_id of this UpdateUserPasswordResponse.
 
         用户id。
 

@@ -25,7 +25,7 @@ class DeleteVocabularyRequest:
     }
 
     def __init__(self, vocabulary_id=None):
-        """DeleteVocabularyRequest
+        r"""DeleteVocabularyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVocabularyRequest:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this DeleteVocabularyRequest.
+        r"""Gets the vocabulary_id of this DeleteVocabularyRequest.
 
         热词表id。
 
@@ -53,7 +53,7 @@ class DeleteVocabularyRequest:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this DeleteVocabularyRequest.
+        r"""Sets the vocabulary_id of this DeleteVocabularyRequest.
 
         热词表id。
 

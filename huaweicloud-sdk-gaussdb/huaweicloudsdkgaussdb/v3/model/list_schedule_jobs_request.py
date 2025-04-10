@@ -39,7 +39,7 @@ class ListScheduleJobsRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, status=None, start_time=None, end_time=None, job_id=None, job_name=None):
-        """ListScheduleJobsRequest
+        r"""ListScheduleJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListScheduleJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListScheduleJobsRequest.
+        r"""Gets the x_language of this ListScheduleJobsRequest.
 
         语言。
 
@@ -103,7 +103,7 @@ class ListScheduleJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListScheduleJobsRequest.
+        r"""Sets the x_language of this ListScheduleJobsRequest.
 
         语言。
 
@@ -114,7 +114,7 @@ class ListScheduleJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduleJobsRequest.
+        r"""Gets the offset of this ListScheduleJobsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
 
@@ -125,7 +125,7 @@ class ListScheduleJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduleJobsRequest.
+        r"""Sets the offset of this ListScheduleJobsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为1，必须为数字，不能为负数。
 
@@ -136,7 +136,7 @@ class ListScheduleJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduleJobsRequest.
+        r"""Gets the limit of this ListScheduleJobsRequest.
 
         查询记录数。默认为10
 
@@ -147,7 +147,7 @@ class ListScheduleJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduleJobsRequest.
+        r"""Sets the limit of this ListScheduleJobsRequest.
 
         查询记录数。默认为10
 
@@ -158,7 +158,7 @@ class ListScheduleJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScheduleJobsRequest.
+        r"""Gets the status of this ListScheduleJobsRequest.
 
         任务执行状态。 取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。 - 值为“Pending”，表示任务未执行。
 
@@ -169,7 +169,7 @@ class ListScheduleJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScheduleJobsRequest.
+        r"""Sets the status of this ListScheduleJobsRequest.
 
         任务执行状态。 取值： - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。 - 值为“Pending”，表示任务未执行。
 
@@ -180,7 +180,7 @@ class ListScheduleJobsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScheduleJobsRequest.
+        r"""Gets the start_time of this ListScheduleJobsRequest.
 
         起始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -191,7 +191,7 @@ class ListScheduleJobsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScheduleJobsRequest.
+        r"""Sets the start_time of this ListScheduleJobsRequest.
 
         起始时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -202,7 +202,7 @@ class ListScheduleJobsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScheduleJobsRequest.
+        r"""Gets the end_time of this ListScheduleJobsRequest.
 
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -213,7 +213,7 @@ class ListScheduleJobsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScheduleJobsRequest.
+        r"""Sets the end_time of this ListScheduleJobsRequest.
 
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -224,7 +224,7 @@ class ListScheduleJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListScheduleJobsRequest.
+        r"""Gets the job_id of this ListScheduleJobsRequest.
 
         任务ID。
 
@@ -235,7 +235,7 @@ class ListScheduleJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListScheduleJobsRequest.
+        r"""Sets the job_id of this ListScheduleJobsRequest.
 
         任务ID。
 
@@ -246,7 +246,7 @@ class ListScheduleJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListScheduleJobsRequest.
+        r"""Gets the job_name of this ListScheduleJobsRequest.
 
         任务调度类型。
 
@@ -257,7 +257,7 @@ class ListScheduleJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListScheduleJobsRequest.
+        r"""Sets the job_name of this ListScheduleJobsRequest.
 
         任务调度类型。
 

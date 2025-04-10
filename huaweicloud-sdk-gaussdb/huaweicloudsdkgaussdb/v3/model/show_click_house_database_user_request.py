@@ -33,7 +33,7 @@ class ShowClickHouseDatabaseUserRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, limit=None, offset=None, user_name=None):
-        """ShowClickHouseDatabaseUserRequest
+        r"""ShowClickHouseDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowClickHouseDatabaseUserRequest.
+        r"""Gets the instance_id of this ShowClickHouseDatabaseUserRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -81,7 +81,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowClickHouseDatabaseUserRequest.
+        r"""Sets the instance_id of this ShowClickHouseDatabaseUserRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -92,7 +92,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowClickHouseDatabaseUserRequest.
+        r"""Gets the x_language of this ShowClickHouseDatabaseUserRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -103,7 +103,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowClickHouseDatabaseUserRequest.
+        r"""Sets the x_language of this ShowClickHouseDatabaseUserRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -114,7 +114,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowClickHouseDatabaseUserRequest.
+        r"""Gets the limit of this ShowClickHouseDatabaseUserRequest.
 
         查询记录数，默认10。不能为负数，最小值为1，最大值为100。
 
@@ -125,7 +125,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowClickHouseDatabaseUserRequest.
+        r"""Sets the limit of this ShowClickHouseDatabaseUserRequest.
 
         查询记录数，默认10。不能为负数，最小值为1，最大值为100。
 
@@ -136,7 +136,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowClickHouseDatabaseUserRequest.
+        r"""Gets the offset of this ShowClickHouseDatabaseUserRequest.
 
         索引位置，偏移量。默认0。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -147,7 +147,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowClickHouseDatabaseUserRequest.
+        r"""Sets the offset of this ShowClickHouseDatabaseUserRequest.
 
         索引位置，偏移量。默认0。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -158,7 +158,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowClickHouseDatabaseUserRequest.
+        r"""Gets the user_name of this ShowClickHouseDatabaseUserRequest.
 
         数据库账户。
 
@@ -169,7 +169,7 @@ class ShowClickHouseDatabaseUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowClickHouseDatabaseUserRequest.
+        r"""Sets the user_name of this ShowClickHouseDatabaseUserRequest.
 
         数据库账户。
 

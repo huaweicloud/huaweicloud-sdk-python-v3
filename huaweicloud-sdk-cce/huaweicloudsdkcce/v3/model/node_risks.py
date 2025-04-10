@@ -25,7 +25,7 @@ class NodeRisks:
     }
 
     def __init__(self, node_id=None):
-        """NodeRisks
+        r"""NodeRisks
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeRisks:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeRisks.
+        r"""Gets the node_id of this NodeRisks.
 
         用户节点ID
 
@@ -54,7 +54,7 @@ class NodeRisks:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeRisks.
+        r"""Sets the node_id of this NodeRisks.
 
         用户节点ID
 

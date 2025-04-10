@@ -25,7 +25,7 @@ class CopyApplicationRequest:
     }
 
     def __init__(self, app_id=None):
-        """CopyApplicationRequest
+        r"""CopyApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CopyApplicationRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CopyApplicationRequest.
+        r"""Gets the app_id of this CopyApplicationRequest.
 
         应用id
 
@@ -53,7 +53,7 @@ class CopyApplicationRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CopyApplicationRequest.
+        r"""Sets the app_id of this CopyApplicationRequest.
 
         应用id
 

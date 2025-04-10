@@ -29,7 +29,7 @@ class UpdateResWorkspaceRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, body=None):
-        """UpdateResWorkspaceRequest
+        r"""UpdateResWorkspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateResWorkspaceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateResWorkspaceRequest.
+        r"""Gets the content_type of this UpdateResWorkspaceRequest.
 
         内容类型，取值为application/json。
 
@@ -66,7 +66,7 @@ class UpdateResWorkspaceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateResWorkspaceRequest.
+        r"""Sets the content_type of this UpdateResWorkspaceRequest.
 
         内容类型，取值为application/json。
 
@@ -77,7 +77,7 @@ class UpdateResWorkspaceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateResWorkspaceRequest.
+        r"""Gets the workspace_id of this UpdateResWorkspaceRequest.
 
         工作空间id。
 
@@ -88,7 +88,7 @@ class UpdateResWorkspaceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateResWorkspaceRequest.
+        r"""Sets the workspace_id of this UpdateResWorkspaceRequest.
 
         工作空间id。
 
@@ -99,7 +99,7 @@ class UpdateResWorkspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResWorkspaceRequest.
+        r"""Gets the body of this UpdateResWorkspaceRequest.
 
         :return: The body of this UpdateResWorkspaceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequestBody`
@@ -108,7 +108,7 @@ class UpdateResWorkspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResWorkspaceRequest.
+        r"""Sets the body of this UpdateResWorkspaceRequest.
 
         :param body: The body of this UpdateResWorkspaceRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequestBody`

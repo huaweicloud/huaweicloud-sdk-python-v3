@@ -29,7 +29,7 @@ class RunJobRequestBody:
     }
 
     def __init__(self, job_id=None, parameter=None, scm=None):
-        """RunJobRequestBody
+        r"""RunJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunJobRequestBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunJobRequestBody.
+        r"""Gets the job_id of this RunJobRequestBody.
 
         构建任务ID；编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串
 
@@ -67,7 +67,7 @@ class RunJobRequestBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunJobRequestBody.
+        r"""Sets the job_id of this RunJobRequestBody.
 
         构建任务ID；编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串
 
@@ -78,7 +78,7 @@ class RunJobRequestBody:
 
     @property
     def parameter(self):
-        """Gets the parameter of this RunJobRequestBody.
+        r"""Gets the parameter of this RunJobRequestBody.
 
         自定义参数
 
@@ -89,7 +89,7 @@ class RunJobRequestBody:
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this RunJobRequestBody.
+        r"""Sets the parameter of this RunJobRequestBody.
 
         自定义参数
 
@@ -100,7 +100,7 @@ class RunJobRequestBody:
 
     @property
     def scm(self):
-        """Gets the scm of this RunJobRequestBody.
+        r"""Gets the scm of this RunJobRequestBody.
 
         :return: The scm of this RunJobRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.Scm`
@@ -109,7 +109,7 @@ class RunJobRequestBody:
 
     @scm.setter
     def scm(self, scm):
-        """Sets the scm of this RunJobRequestBody.
+        r"""Sets the scm of this RunJobRequestBody.
 
         :param scm: The scm of this RunJobRequestBody.
         :type scm: :class:`huaweicloudsdkcodeartsbuild.v3.Scm`

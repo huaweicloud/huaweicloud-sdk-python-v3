@@ -42,7 +42,7 @@ class ShowClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, description=None, version=None, state=None, os=None, arch=None, create_time=None, update_time=None):
-        """ShowClusterResponse
+        r"""ShowClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterResponse.
+        r"""Gets the cluster_id of this ShowClusterResponse.
 
         集群ID
 
@@ -111,7 +111,7 @@ class ShowClusterResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterResponse.
+        r"""Sets the cluster_id of this ShowClusterResponse.
 
         集群ID
 
@@ -122,7 +122,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowClusterResponse.
+        r"""Gets the cluster_name of this ShowClusterResponse.
 
         集群名称
 
@@ -133,7 +133,7 @@ class ShowClusterResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowClusterResponse.
+        r"""Sets the cluster_name of this ShowClusterResponse.
 
         集群名称
 
@@ -144,7 +144,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowClusterResponse.
+        r"""Gets the description of this ShowClusterResponse.
 
         集群描述
 
@@ -155,7 +155,7 @@ class ShowClusterResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowClusterResponse.
+        r"""Sets the description of this ShowClusterResponse.
 
         集群描述
 
@@ -166,7 +166,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowClusterResponse.
+        r"""Gets the version of this ShowClusterResponse.
 
         边缘集群版本
 
@@ -177,7 +177,7 @@ class ShowClusterResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowClusterResponse.
+        r"""Sets the version of this ShowClusterResponse.
 
         边缘集群版本
 
@@ -188,7 +188,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowClusterResponse.
+        r"""Gets the state of this ShowClusterResponse.
 
         边缘集群状态
 
@@ -199,7 +199,7 @@ class ShowClusterResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowClusterResponse.
+        r"""Sets the state of this ShowClusterResponse.
 
         边缘集群状态
 
@@ -210,7 +210,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def os(self):
-        """Gets the os of this ShowClusterResponse.
+        r"""Gets the os of this ShowClusterResponse.
 
         操作系统
 
@@ -221,7 +221,7 @@ class ShowClusterResponse(SdkResponse):
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ShowClusterResponse.
+        r"""Sets the os of this ShowClusterResponse.
 
         操作系统
 
@@ -232,7 +232,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def arch(self):
-        """Gets the arch of this ShowClusterResponse.
+        r"""Gets the arch of this ShowClusterResponse.
 
         集群架构
 
@@ -243,7 +243,7 @@ class ShowClusterResponse(SdkResponse):
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ShowClusterResponse.
+        r"""Sets the arch of this ShowClusterResponse.
 
         集群架构
 
@@ -254,7 +254,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowClusterResponse.
+        r"""Gets the create_time of this ShowClusterResponse.
 
         创建时间
 
@@ -265,7 +265,7 @@ class ShowClusterResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowClusterResponse.
+        r"""Sets the create_time of this ShowClusterResponse.
 
         创建时间
 
@@ -276,7 +276,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowClusterResponse.
+        r"""Gets the update_time of this ShowClusterResponse.
 
         最后一次修改时间
 
@@ -287,7 +287,7 @@ class ShowClusterResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowClusterResponse.
+        r"""Sets the update_time of this ShowClusterResponse.
 
         最后一次修改时间
 

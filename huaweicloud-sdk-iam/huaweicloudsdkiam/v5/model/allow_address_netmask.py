@@ -27,7 +27,7 @@ class AllowAddressNetmask:
     }
 
     def __init__(self, address_netmask=None, description=None):
-        """AllowAddressNetmask
+        r"""AllowAddressNetmask
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AllowAddressNetmask:
 
     @property
     def address_netmask(self):
-        """Gets the address_netmask of this AllowAddressNetmask.
+        r"""Gets the address_netmask of this AllowAddressNetmask.
 
         IP地址或网段，例如\"192.168.0.1/24\"。
 
@@ -60,7 +60,7 @@ class AllowAddressNetmask:
 
     @address_netmask.setter
     def address_netmask(self, address_netmask):
-        """Sets the address_netmask of this AllowAddressNetmask.
+        r"""Sets the address_netmask of this AllowAddressNetmask.
 
         IP地址或网段，例如\"192.168.0.1/24\"。
 
@@ -71,7 +71,7 @@ class AllowAddressNetmask:
 
     @property
     def description(self):
-        """Gets the description of this AllowAddressNetmask.
+        r"""Gets the description of this AllowAddressNetmask.
 
         描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -82,7 +82,7 @@ class AllowAddressNetmask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AllowAddressNetmask.
+        r"""Sets the description of this AllowAddressNetmask.
 
         描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 

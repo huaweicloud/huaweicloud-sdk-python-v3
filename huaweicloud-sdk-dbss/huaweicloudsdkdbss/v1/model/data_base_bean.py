@@ -25,7 +25,7 @@ class DataBaseBean:
     }
 
     def __init__(self, database=None):
-        """DataBaseBean
+        r"""DataBaseBean
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DataBaseBean:
 
     @property
     def database(self):
-        """Gets the database of this DataBaseBean.
+        r"""Gets the database of this DataBaseBean.
 
         :return: The database of this DataBaseBean.
         :rtype: :class:`huaweicloudsdkdbss.v1.DataBase`
@@ -51,7 +51,7 @@ class DataBaseBean:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DataBaseBean.
+        r"""Sets the database of this DataBaseBean.
 
         :param database: The database of this DataBaseBean.
         :type database: :class:`huaweicloudsdkdbss.v1.DataBase`

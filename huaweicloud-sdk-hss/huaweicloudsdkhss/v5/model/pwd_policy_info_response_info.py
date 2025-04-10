@@ -45,7 +45,7 @@ class PwdPolicyInfoResponseInfo:
     }
 
     def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, min_length=None, uppercase_letter=None, lowercase_letter=None, number=None, special_character=None, suggestion=None):
-        """PwdPolicyInfoResponseInfo
+        r"""PwdPolicyInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this PwdPolicyInfoResponseInfo.
+        r"""Gets the host_id of this PwdPolicyInfoResponseInfo.
 
         主机id
 
@@ -124,7 +124,7 @@ class PwdPolicyInfoResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this PwdPolicyInfoResponseInfo.
+        r"""Sets the host_id of this PwdPolicyInfoResponseInfo.
 
         主机id
 
@@ -135,7 +135,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this PwdPolicyInfoResponseInfo.
+        r"""Gets the host_name of this PwdPolicyInfoResponseInfo.
 
         服务器名称
 
@@ -146,7 +146,7 @@ class PwdPolicyInfoResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this PwdPolicyInfoResponseInfo.
+        r"""Sets the host_name of this PwdPolicyInfoResponseInfo.
 
         服务器名称
 
@@ -157,7 +157,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this PwdPolicyInfoResponseInfo.
+        r"""Gets the host_ip of this PwdPolicyInfoResponseInfo.
 
         服务器IP（私有IP），为兼容用户使用，不删除此字段
 
@@ -168,7 +168,7 @@ class PwdPolicyInfoResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this PwdPolicyInfoResponseInfo.
+        r"""Sets the host_ip of this PwdPolicyInfoResponseInfo.
 
         服务器IP（私有IP），为兼容用户使用，不删除此字段
 
@@ -179,7 +179,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this PwdPolicyInfoResponseInfo.
+        r"""Gets the private_ip of this PwdPolicyInfoResponseInfo.
 
         服务器私有IP
 
@@ -190,7 +190,7 @@ class PwdPolicyInfoResponseInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this PwdPolicyInfoResponseInfo.
+        r"""Sets the private_ip of this PwdPolicyInfoResponseInfo.
 
         服务器私有IP
 
@@ -201,7 +201,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this PwdPolicyInfoResponseInfo.
+        r"""Gets the public_ip of this PwdPolicyInfoResponseInfo.
 
         服务器公网IP
 
@@ -212,7 +212,7 @@ class PwdPolicyInfoResponseInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this PwdPolicyInfoResponseInfo.
+        r"""Sets the public_ip of this PwdPolicyInfoResponseInfo.
 
         服务器公网IP
 
@@ -223,7 +223,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def min_length(self):
-        """Gets the min_length of this PwdPolicyInfoResponseInfo.
+        r"""Gets the min_length of this PwdPolicyInfoResponseInfo.
 
         口令最小长度的设置是否符合要求，符合为true，不符合为false
 
@@ -234,7 +234,7 @@ class PwdPolicyInfoResponseInfo:
 
     @min_length.setter
     def min_length(self, min_length):
-        """Sets the min_length of this PwdPolicyInfoResponseInfo.
+        r"""Sets the min_length of this PwdPolicyInfoResponseInfo.
 
         口令最小长度的设置是否符合要求，符合为true，不符合为false
 
@@ -245,7 +245,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def uppercase_letter(self):
-        """Gets the uppercase_letter of this PwdPolicyInfoResponseInfo.
+        r"""Gets the uppercase_letter of this PwdPolicyInfoResponseInfo.
 
         大写字母的设置是否符合要求，符合为true，不符合为false
 
@@ -256,7 +256,7 @@ class PwdPolicyInfoResponseInfo:
 
     @uppercase_letter.setter
     def uppercase_letter(self, uppercase_letter):
-        """Sets the uppercase_letter of this PwdPolicyInfoResponseInfo.
+        r"""Sets the uppercase_letter of this PwdPolicyInfoResponseInfo.
 
         大写字母的设置是否符合要求，符合为true，不符合为false
 
@@ -267,7 +267,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def lowercase_letter(self):
-        """Gets the lowercase_letter of this PwdPolicyInfoResponseInfo.
+        r"""Gets the lowercase_letter of this PwdPolicyInfoResponseInfo.
 
         小写字母的设置是否符合要求，符合为true，不符合为false
 
@@ -278,7 +278,7 @@ class PwdPolicyInfoResponseInfo:
 
     @lowercase_letter.setter
     def lowercase_letter(self, lowercase_letter):
-        """Sets the lowercase_letter of this PwdPolicyInfoResponseInfo.
+        r"""Sets the lowercase_letter of this PwdPolicyInfoResponseInfo.
 
         小写字母的设置是否符合要求，符合为true，不符合为false
 
@@ -289,7 +289,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def number(self):
-        """Gets the number of this PwdPolicyInfoResponseInfo.
+        r"""Gets the number of this PwdPolicyInfoResponseInfo.
 
         数字的设置是否符合要求，符合为true，不符合为false
 
@@ -300,7 +300,7 @@ class PwdPolicyInfoResponseInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this PwdPolicyInfoResponseInfo.
+        r"""Sets the number of this PwdPolicyInfoResponseInfo.
 
         数字的设置是否符合要求，符合为true，不符合为false
 
@@ -311,7 +311,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def special_character(self):
-        """Gets the special_character of this PwdPolicyInfoResponseInfo.
+        r"""Gets the special_character of this PwdPolicyInfoResponseInfo.
 
         特殊字符的设置是否符合要求，符合为true，不符合为false
 
@@ -322,7 +322,7 @@ class PwdPolicyInfoResponseInfo:
 
     @special_character.setter
     def special_character(self, special_character):
-        """Sets the special_character of this PwdPolicyInfoResponseInfo.
+        r"""Sets the special_character of this PwdPolicyInfoResponseInfo.
 
         特殊字符的设置是否符合要求，符合为true，不符合为false
 
@@ -333,7 +333,7 @@ class PwdPolicyInfoResponseInfo:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this PwdPolicyInfoResponseInfo.
+        r"""Gets the suggestion of this PwdPolicyInfoResponseInfo.
 
         修改建议
 
@@ -344,7 +344,7 @@ class PwdPolicyInfoResponseInfo:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this PwdPolicyInfoResponseInfo.
+        r"""Sets the suggestion of this PwdPolicyInfoResponseInfo.
 
         修改建议
 

@@ -29,7 +29,7 @@ class RetypeVolume:
     }
 
     def __init__(self, new_type=None, iops=None, throughput=None):
-        """RetypeVolume
+        r"""RetypeVolume
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RetypeVolume:
 
     @property
     def new_type(self):
-        """Gets the new_type of this RetypeVolume.
+        r"""Gets the new_type of this RetypeVolume.
 
         变更至指定的云硬盘类型
 
@@ -67,7 +67,7 @@ class RetypeVolume:
 
     @new_type.setter
     def new_type(self, new_type):
-        """Sets the new_type of this RetypeVolume.
+        r"""Sets the new_type of this RetypeVolume.
 
         变更至指定的云硬盘类型
 
@@ -78,7 +78,7 @@ class RetypeVolume:
 
     @property
     def iops(self):
-        """Gets the iops of this RetypeVolume.
+        r"""Gets the iops of this RetypeVolume.
 
         云硬盘iops大小。
 
@@ -89,7 +89,7 @@ class RetypeVolume:
 
     @iops.setter
     def iops(self, iops):
-        """Sets the iops of this RetypeVolume.
+        r"""Sets the iops of this RetypeVolume.
 
         云硬盘iops大小。
 
@@ -100,7 +100,7 @@ class RetypeVolume:
 
     @property
     def throughput(self):
-        """Gets the throughput of this RetypeVolume.
+        r"""Gets the throughput of this RetypeVolume.
 
         云硬盘的吞吐量大小。
 
@@ -111,7 +111,7 @@ class RetypeVolume:
 
     @throughput.setter
     def throughput(self, throughput):
-        """Sets the throughput of this RetypeVolume.
+        r"""Sets the throughput of this RetypeVolume.
 
         云硬盘的吞吐量大小。
 

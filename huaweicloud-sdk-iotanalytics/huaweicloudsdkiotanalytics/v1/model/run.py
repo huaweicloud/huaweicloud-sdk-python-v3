@@ -43,7 +43,7 @@ class Run:
     }
 
     def __init__(self, run_id=None, job_id=None, job_name=None, job_type=None, start_time=None, duration=None, status=None, is_schedule_job=None, computing_resource_name=None, sql_job=None):
-        """Run
+        r"""Run
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class Run:
 
     @property
     def run_id(self):
-        """Gets the run_id of this Run.
+        r"""Gets the run_id of this Run.
 
         作业运行ID。
 
@@ -111,7 +111,7 @@ class Run:
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this Run.
+        r"""Sets the run_id of this Run.
 
         作业运行ID。
 
@@ -122,7 +122,7 @@ class Run:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Run.
+        r"""Gets the job_id of this Run.
 
         作业ID。
 
@@ -133,7 +133,7 @@ class Run:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Run.
+        r"""Sets the job_id of this Run.
 
         作业ID。
 
@@ -144,7 +144,7 @@ class Run:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Run.
+        r"""Gets the job_name of this Run.
 
         作业名称。
 
@@ -155,7 +155,7 @@ class Run:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Run.
+        r"""Sets the job_name of this Run.
 
         作业名称。
 
@@ -166,7 +166,7 @@ class Run:
 
     @property
     def job_type(self):
-        """Gets the job_type of this Run.
+        r"""Gets the job_type of this Run.
 
         作业类型。
 
@@ -177,7 +177,7 @@ class Run:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this Run.
+        r"""Sets the job_type of this Run.
 
         作业类型。
 
@@ -188,7 +188,7 @@ class Run:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Run.
+        r"""Gets the start_time of this Run.
 
         作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -199,7 +199,7 @@ class Run:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Run.
+        r"""Sets the start_time of this Run.
 
         作业开始的时间。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -210,7 +210,7 @@ class Run:
 
     @property
     def duration(self):
-        """Gets the duration of this Run.
+        r"""Gets the duration of this Run.
 
         作业运行时长，单位毫秒。
 
@@ -221,7 +221,7 @@ class Run:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this Run.
+        r"""Sets the duration of this Run.
 
         作业运行时长，单位毫秒。
 
@@ -232,7 +232,7 @@ class Run:
 
     @property
     def status(self):
-        """Gets the status of this Run.
+        r"""Gets the status of this Run.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -243,7 +243,7 @@ class Run:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Run.
+        r"""Sets the status of this Run.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -254,7 +254,7 @@ class Run:
 
     @property
     def is_schedule_job(self):
-        """Gets the is_schedule_job of this Run.
+        r"""Gets the is_schedule_job of this Run.
 
         是否定时作业。
 
@@ -265,7 +265,7 @@ class Run:
 
     @is_schedule_job.setter
     def is_schedule_job(self, is_schedule_job):
-        """Sets the is_schedule_job of this Run.
+        r"""Sets the is_schedule_job of this Run.
 
         是否定时作业。
 
@@ -276,7 +276,7 @@ class Run:
 
     @property
     def computing_resource_name(self):
-        """Gets the computing_resource_name of this Run.
+        r"""Gets the computing_resource_name of this Run.
 
         计算资源名称。
 
@@ -287,7 +287,7 @@ class Run:
 
     @computing_resource_name.setter
     def computing_resource_name(self, computing_resource_name):
-        """Sets the computing_resource_name of this Run.
+        r"""Sets the computing_resource_name of this Run.
 
         计算资源名称。
 
@@ -298,7 +298,7 @@ class Run:
 
     @property
     def sql_job(self):
-        """Gets the sql_job of this Run.
+        r"""Gets the sql_job of this Run.
 
         :return: The sql_job of this Run.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRun`
@@ -307,7 +307,7 @@ class Run:
 
     @sql_job.setter
     def sql_job(self, sql_job):
-        """Sets the sql_job of this Run.
+        r"""Sets the sql_job of this Run.
 
         :param sql_job: The sql_job of this Run.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRun`

@@ -26,7 +26,7 @@ class KeystoneListVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """KeystoneListVersionsResponse
+        r"""KeystoneListVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneListVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this KeystoneListVersionsResponse.
+        r"""Gets the versions of this KeystoneListVersionsResponse.
 
         :return: The versions of this KeystoneListVersionsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Versions`
@@ -53,7 +53,7 @@ class KeystoneListVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this KeystoneListVersionsResponse.
+        r"""Sets the versions of this KeystoneListVersionsResponse.
 
         :param versions: The versions of this KeystoneListVersionsResponse.
         :type versions: :class:`huaweicloudsdkiam.v3.Versions`

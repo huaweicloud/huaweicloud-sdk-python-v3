@@ -35,7 +35,7 @@ class CreateDatabaseReq2:
     }
 
     def __init__(self, name=None, description=None, css_id=None, file=None, columns=None, shareable=None):
-        """CreateDatabaseReq2
+        r"""CreateDatabaseReq2
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateDatabaseReq2:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseReq2.
+        r"""Gets the name of this CreateDatabaseReq2.
 
         数据库名称，长度为5-32个字符，首位需以小写英文字母开头，仅可以使用小写字母、数字、下划线“_”和中划线“-”
 
@@ -85,7 +85,7 @@ class CreateDatabaseReq2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseReq2.
+        r"""Sets the name of this CreateDatabaseReq2.
 
         数据库名称，长度为5-32个字符，首位需以小写英文字母开头，仅可以使用小写字母、数字、下划线“_”和中划线“-”
 
@@ -96,7 +96,7 @@ class CreateDatabaseReq2:
 
     @property
     def description(self):
-        """Gets the description of this CreateDatabaseReq2.
+        r"""Gets the description of this CreateDatabaseReq2.
 
         数据库描述
 
@@ -107,7 +107,7 @@ class CreateDatabaseReq2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDatabaseReq2.
+        r"""Sets the description of this CreateDatabaseReq2.
 
         数据库描述
 
@@ -118,7 +118,7 @@ class CreateDatabaseReq2:
 
     @property
     def css_id(self):
-        """Gets the css_id of this CreateDatabaseReq2.
+        r"""Gets the css_id of this CreateDatabaseReq2.
 
         css集群id
 
@@ -129,7 +129,7 @@ class CreateDatabaseReq2:
 
     @css_id.setter
     def css_id(self, css_id):
-        """Sets the css_id of this CreateDatabaseReq2.
+        r"""Sets the css_id of this CreateDatabaseReq2.
 
         css集群id
 
@@ -140,7 +140,7 @@ class CreateDatabaseReq2:
 
     @property
     def file(self):
-        """Gets the file of this CreateDatabaseReq2.
+        r"""Gets the file of this CreateDatabaseReq2.
 
         :return: The file of this CreateDatabaseReq2.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseFile`
@@ -149,7 +149,7 @@ class CreateDatabaseReq2:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateDatabaseReq2.
+        r"""Sets the file of this CreateDatabaseReq2.
 
         :param file: The file of this CreateDatabaseReq2.
         :type file: :class:`huaweicloudsdkeihealth.v1.DatabaseFile`
@@ -158,7 +158,7 @@ class CreateDatabaseReq2:
 
     @property
     def columns(self):
-        """Gets the columns of this CreateDatabaseReq2.
+        r"""Gets the columns of this CreateDatabaseReq2.
 
         数据文件列名
 
@@ -169,7 +169,7 @@ class CreateDatabaseReq2:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this CreateDatabaseReq2.
+        r"""Sets the columns of this CreateDatabaseReq2.
 
         数据文件列名
 
@@ -180,7 +180,7 @@ class CreateDatabaseReq2:
 
     @property
     def shareable(self):
-        """Gets the shareable of this CreateDatabaseReq2.
+        r"""Gets the shareable of this CreateDatabaseReq2.
 
         是否打开组织共享
 
@@ -191,7 +191,7 @@ class CreateDatabaseReq2:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this CreateDatabaseReq2.
+        r"""Sets the shareable of this CreateDatabaseReq2.
 
         是否打开组织共享
 

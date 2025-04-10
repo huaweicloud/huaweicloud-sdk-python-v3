@@ -29,7 +29,7 @@ class ListAiOpsRequest:
     }
 
     def __init__(self, cluster_id=None, limit=None, start=None):
-        """ListAiOpsRequest
+        r"""ListAiOpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAiOpsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAiOpsRequest.
+        r"""Gets the cluster_id of this ListAiOpsRequest.
 
         指定待查询的集群ID。
 
@@ -67,7 +67,7 @@ class ListAiOpsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAiOpsRequest.
+        r"""Sets the cluster_id of this ListAiOpsRequest.
 
         指定待查询的集群ID。
 
@@ -78,7 +78,7 @@ class ListAiOpsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAiOpsRequest.
+        r"""Gets the limit of this ListAiOpsRequest.
 
         分页参数，列表当前分页的数量限制。
 
@@ -89,7 +89,7 @@ class ListAiOpsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAiOpsRequest.
+        r"""Sets the limit of this ListAiOpsRequest.
 
         分页参数，列表当前分页的数量限制。
 
@@ -100,7 +100,7 @@ class ListAiOpsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListAiOpsRequest.
+        r"""Gets the start of this ListAiOpsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -111,7 +111,7 @@ class ListAiOpsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListAiOpsRequest.
+        r"""Sets the start of this ListAiOpsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 

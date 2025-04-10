@@ -33,7 +33,7 @@ class ImportCatalogsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, action_id=None, skip_exist=None, body=None):
-        """ImportCatalogsRequest
+        r"""ImportCatalogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ImportCatalogsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportCatalogsRequest.
+        r"""Gets the workspace of this ImportCatalogsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ImportCatalogsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportCatalogsRequest.
+        r"""Sets the workspace of this ImportCatalogsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ImportCatalogsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ImportCatalogsRequest.
+        r"""Gets the x_project_id of this ImportCatalogsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -102,7 +102,7 @@ class ImportCatalogsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ImportCatalogsRequest.
+        r"""Sets the x_project_id of this ImportCatalogsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -113,7 +113,7 @@ class ImportCatalogsRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ImportCatalogsRequest.
+        r"""Gets the action_id of this ImportCatalogsRequest.
 
         需要执行的动作。 枚举值：   - start-import: 开始导入 
 
@@ -124,7 +124,7 @@ class ImportCatalogsRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ImportCatalogsRequest.
+        r"""Sets the action_id of this ImportCatalogsRequest.
 
         需要执行的动作。 枚举值：   - start-import: 开始导入 
 
@@ -135,7 +135,7 @@ class ImportCatalogsRequest:
 
     @property
     def skip_exist(self):
-        """Gets the skip_exist of this ImportCatalogsRequest.
+        r"""Gets the skip_exist of this ImportCatalogsRequest.
 
         是否需要覆盖更新已有的主题。
 
@@ -146,7 +146,7 @@ class ImportCatalogsRequest:
 
     @skip_exist.setter
     def skip_exist(self, skip_exist):
-        """Sets the skip_exist of this ImportCatalogsRequest.
+        r"""Sets the skip_exist of this ImportCatalogsRequest.
 
         是否需要覆盖更新已有的主题。
 
@@ -157,7 +157,7 @@ class ImportCatalogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportCatalogsRequest.
+        r"""Gets the body of this ImportCatalogsRequest.
 
         :return: The body of this ImportCatalogsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportCatalogsRequestBody`
@@ -166,7 +166,7 @@ class ImportCatalogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportCatalogsRequest.
+        r"""Sets the body of this ImportCatalogsRequest.
 
         :param body: The body of this ImportCatalogsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ImportCatalogsRequestBody`

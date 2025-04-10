@@ -27,7 +27,7 @@ class CreateOrUpdateSecretDetail:
     }
 
     def __init__(self, name=None, version_id=None):
-        """CreateOrUpdateSecretDetail
+        r"""CreateOrUpdateSecretDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateOrUpdateSecretDetail:
 
     @property
     def name(self):
-        """Gets the name of this CreateOrUpdateSecretDetail.
+        r"""Gets the name of this CreateOrUpdateSecretDetail.
 
         凭证名字。
 
@@ -59,7 +59,7 @@ class CreateOrUpdateSecretDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateOrUpdateSecretDetail.
+        r"""Sets the name of this CreateOrUpdateSecretDetail.
 
         凭证名字。
 
@@ -70,7 +70,7 @@ class CreateOrUpdateSecretDetail:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreateOrUpdateSecretDetail.
+        r"""Gets the version_id of this CreateOrUpdateSecretDetail.
 
         当前使用的凭证版本号。
 
@@ -81,7 +81,7 @@ class CreateOrUpdateSecretDetail:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreateOrUpdateSecretDetail.
+        r"""Sets the version_id of this CreateOrUpdateSecretDetail.
 
         当前使用的凭证版本号。
 

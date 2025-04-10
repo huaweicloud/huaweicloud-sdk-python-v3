@@ -29,7 +29,7 @@ class SmnTargetDetail:
     }
 
     def __init__(self, urn=None, agency_name=None, subject_transform=None):
-        """SmnTargetDetail
+        r"""SmnTargetDetail
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SmnTargetDetail:
 
     @property
     def urn(self):
-        """Gets the urn of this SmnTargetDetail.
+        r"""Gets the urn of this SmnTargetDetail.
 
         主题urn
 
@@ -66,7 +66,7 @@ class SmnTargetDetail:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this SmnTargetDetail.
+        r"""Sets the urn of this SmnTargetDetail.
 
         主题urn
 
@@ -77,7 +77,7 @@ class SmnTargetDetail:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this SmnTargetDetail.
+        r"""Gets the agency_name of this SmnTargetDetail.
 
         委托名称
 
@@ -88,7 +88,7 @@ class SmnTargetDetail:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this SmnTargetDetail.
+        r"""Sets the agency_name of this SmnTargetDetail.
 
         委托名称
 
@@ -99,7 +99,7 @@ class SmnTargetDetail:
 
     @property
     def subject_transform(self):
-        """Gets the subject_transform of this SmnTargetDetail.
+        r"""Gets the subject_transform of this SmnTargetDetail.
 
         :return: The subject_transform of this SmnTargetDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.SmnTargetDetailSubjectTransform`
@@ -108,7 +108,7 @@ class SmnTargetDetail:
 
     @subject_transform.setter
     def subject_transform(self, subject_transform):
-        """Sets the subject_transform of this SmnTargetDetail.
+        r"""Sets the subject_transform of this SmnTargetDetail.
 
         :param subject_transform: The subject_transform of this SmnTargetDetail.
         :type subject_transform: :class:`huaweicloudsdkeg.v1.SmnTargetDetailSubjectTransform`

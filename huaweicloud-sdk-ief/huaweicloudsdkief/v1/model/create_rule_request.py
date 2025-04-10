@@ -27,7 +27,7 @@ class CreateRuleRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateRuleRequest
+        r"""CreateRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateRuleRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateRuleRequest.
+        r"""Gets the ief_instance_id of this CreateRuleRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateRuleRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateRuleRequest.
+        r"""Sets the ief_instance_id of this CreateRuleRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRuleRequest.
+        r"""Gets the body of this CreateRuleRequest.
 
         :return: The body of this CreateRuleRequest.
         :rtype: :class:`huaweicloudsdkief.v1.RuleDetail`
@@ -81,7 +81,7 @@ class CreateRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRuleRequest.
+        r"""Sets the body of this CreateRuleRequest.
 
         :param body: The body of this CreateRuleRequest.
         :type body: :class:`huaweicloudsdkief.v1.RuleDetail`

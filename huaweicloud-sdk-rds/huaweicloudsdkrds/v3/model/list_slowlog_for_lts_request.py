@@ -29,7 +29,7 @@ class ListSlowlogForLtsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ListSlowlogForLtsRequest
+        r"""ListSlowlogForLtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSlowlogForLtsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSlowlogForLtsRequest.
+        r"""Gets the instance_id of this ListSlowlogForLtsRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListSlowlogForLtsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSlowlogForLtsRequest.
+        r"""Sets the instance_id of this ListSlowlogForLtsRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListSlowlogForLtsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSlowlogForLtsRequest.
+        r"""Gets the x_language of this ListSlowlogForLtsRequest.
 
         语言。默认en-us。
 
@@ -89,7 +89,7 @@ class ListSlowlogForLtsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSlowlogForLtsRequest.
+        r"""Sets the x_language of this ListSlowlogForLtsRequest.
 
         语言。默认en-us。
 
@@ -100,7 +100,7 @@ class ListSlowlogForLtsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSlowlogForLtsRequest.
+        r"""Gets the body of this ListSlowlogForLtsRequest.
 
         :return: The body of this ListSlowlogForLtsRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SlowlogForLtsRequest`
@@ -109,7 +109,7 @@ class ListSlowlogForLtsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSlowlogForLtsRequest.
+        r"""Sets the body of this ListSlowlogForLtsRequest.
 
         :param body: The body of this ListSlowlogForLtsRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SlowlogForLtsRequest`

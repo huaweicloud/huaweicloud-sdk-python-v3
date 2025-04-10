@@ -31,7 +31,7 @@ class Metric:
     }
 
     def __init__(self, sources=None, sinks=None, total_read_rate=None, total_write_rate=None):
-        """Metric
+        r"""Metric
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Metric:
 
     @property
     def sources(self):
-        """Gets the sources of this Metric.
+        r"""Gets the sources of this Metric.
 
         所有输入流。
 
@@ -75,7 +75,7 @@ class Metric:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this Metric.
+        r"""Sets the sources of this Metric.
 
         所有输入流。
 
@@ -86,7 +86,7 @@ class Metric:
 
     @property
     def sinks(self):
-        """Gets the sinks of this Metric.
+        r"""Gets the sinks of this Metric.
 
         所有输出流。
 
@@ -97,7 +97,7 @@ class Metric:
 
     @sinks.setter
     def sinks(self, sinks):
-        """Sets the sinks of this Metric.
+        r"""Sets the sinks of this Metric.
 
         所有输出流。
 
@@ -108,7 +108,7 @@ class Metric:
 
     @property
     def total_read_rate(self):
-        """Gets the total_read_rate of this Metric.
+        r"""Gets the total_read_rate of this Metric.
 
         总输入速率
 
@@ -119,7 +119,7 @@ class Metric:
 
     @total_read_rate.setter
     def total_read_rate(self, total_read_rate):
-        """Sets the total_read_rate of this Metric.
+        r"""Sets the total_read_rate of this Metric.
 
         总输入速率
 
@@ -130,7 +130,7 @@ class Metric:
 
     @property
     def total_write_rate(self):
-        """Gets the total_write_rate of this Metric.
+        r"""Gets the total_write_rate of this Metric.
 
         总输出速率
 
@@ -141,7 +141,7 @@ class Metric:
 
     @total_write_rate.setter
     def total_write_rate(self, total_write_rate):
-        """Sets the total_write_rate of this Metric.
+        r"""Sets the total_write_rate of this Metric.
 
         总输出速率
 

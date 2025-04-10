@@ -29,7 +29,7 @@ class UpdateClientCaRequest:
     }
 
     def __init__(self, vpn_server_id=None, client_ca_certificate_id=None, body=None):
-        """UpdateClientCaRequest
+        r"""UpdateClientCaRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateClientCaRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this UpdateClientCaRequest.
+        r"""Gets the vpn_server_id of this UpdateClientCaRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class UpdateClientCaRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this UpdateClientCaRequest.
+        r"""Sets the vpn_server_id of this UpdateClientCaRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class UpdateClientCaRequest:
 
     @property
     def client_ca_certificate_id(self):
-        """Gets the client_ca_certificate_id of this UpdateClientCaRequest.
+        r"""Gets the client_ca_certificate_id of this UpdateClientCaRequest.
 
         客户端 CA 证书 ID
 
@@ -88,7 +88,7 @@ class UpdateClientCaRequest:
 
     @client_ca_certificate_id.setter
     def client_ca_certificate_id(self, client_ca_certificate_id):
-        """Sets the client_ca_certificate_id of this UpdateClientCaRequest.
+        r"""Sets the client_ca_certificate_id of this UpdateClientCaRequest.
 
         客户端 CA 证书 ID
 
@@ -99,7 +99,7 @@ class UpdateClientCaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClientCaRequest.
+        r"""Gets the body of this UpdateClientCaRequest.
 
         :return: The body of this UpdateClientCaRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateClientCaCertificateRequestBody`
@@ -108,7 +108,7 @@ class UpdateClientCaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClientCaRequest.
+        r"""Sets the body of this UpdateClientCaRequest.
 
         :param body: The body of this UpdateClientCaRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateClientCaCertificateRequestBody`

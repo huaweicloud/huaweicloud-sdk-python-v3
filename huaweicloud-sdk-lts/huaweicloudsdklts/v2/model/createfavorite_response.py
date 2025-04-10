@@ -44,7 +44,7 @@ class CreatefavoriteResponse(SdkResponse):
     }
 
     def __init__(self, create_time=None, eps_id=None, favorite_resource_id=None, favorite_resource_type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, project_id=None, is_global=None):
-        """CreatefavoriteResponse
+        r"""CreatefavoriteResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreatefavoriteResponse.
+        r"""Gets the create_time of this CreatefavoriteResponse.
 
         创建时间
 
@@ -118,7 +118,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreatefavoriteResponse.
+        r"""Sets the create_time of this CreatefavoriteResponse.
 
         创建时间
 
@@ -129,7 +129,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this CreatefavoriteResponse.
+        r"""Gets the eps_id of this CreatefavoriteResponse.
 
         企业项目id
 
@@ -140,7 +140,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this CreatefavoriteResponse.
+        r"""Sets the eps_id of this CreatefavoriteResponse.
 
         企业项目id
 
@@ -151,7 +151,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def favorite_resource_id(self):
-        """Gets the favorite_resource_id of this CreatefavoriteResponse.
+        r"""Gets the favorite_resource_id of this CreatefavoriteResponse.
 
         收藏资源id
 
@@ -162,7 +162,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @favorite_resource_id.setter
     def favorite_resource_id(self, favorite_resource_id):
-        """Sets the favorite_resource_id of this CreatefavoriteResponse.
+        r"""Sets the favorite_resource_id of this CreatefavoriteResponse.
 
         收藏资源id
 
@@ -173,7 +173,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def favorite_resource_type(self):
-        """Gets the favorite_resource_type of this CreatefavoriteResponse.
+        r"""Gets the favorite_resource_type of this CreatefavoriteResponse.
 
         收藏资源类型
 
@@ -184,7 +184,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @favorite_resource_type.setter
     def favorite_resource_type(self, favorite_resource_type):
-        """Sets the favorite_resource_type of this CreatefavoriteResponse.
+        r"""Sets the favorite_resource_type of this CreatefavoriteResponse.
 
         收藏资源类型
 
@@ -195,7 +195,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreatefavoriteResponse.
+        r"""Gets the log_group_id of this CreatefavoriteResponse.
 
         日志组id
 
@@ -206,7 +206,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreatefavoriteResponse.
+        r"""Sets the log_group_id of this CreatefavoriteResponse.
 
         日志组id
 
@@ -217,7 +217,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this CreatefavoriteResponse.
+        r"""Gets the log_group_name of this CreatefavoriteResponse.
 
         日志组名称
 
@@ -228,7 +228,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this CreatefavoriteResponse.
+        r"""Sets the log_group_name of this CreatefavoriteResponse.
 
         日志组名称
 
@@ -239,7 +239,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this CreatefavoriteResponse.
+        r"""Gets the log_stream_id of this CreatefavoriteResponse.
 
         日志流id
 
@@ -250,7 +250,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this CreatefavoriteResponse.
+        r"""Sets the log_stream_id of this CreatefavoriteResponse.
 
         日志流id
 
@@ -261,7 +261,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this CreatefavoriteResponse.
+        r"""Gets the log_stream_name of this CreatefavoriteResponse.
 
         日志流名称
 
@@ -272,7 +272,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this CreatefavoriteResponse.
+        r"""Sets the log_stream_name of this CreatefavoriteResponse.
 
         日志流名称
 
@@ -283,7 +283,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatefavoriteResponse.
+        r"""Gets the project_id of this CreatefavoriteResponse.
 
         项目id
 
@@ -294,7 +294,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatefavoriteResponse.
+        r"""Sets the project_id of this CreatefavoriteResponse.
 
         项目id
 
@@ -305,7 +305,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @property
     def is_global(self):
-        """Gets the is_global of this CreatefavoriteResponse.
+        r"""Gets the is_global of this CreatefavoriteResponse.
 
         是否开启日志收藏
 
@@ -316,7 +316,7 @@ class CreatefavoriteResponse(SdkResponse):
 
     @is_global.setter
     def is_global(self, is_global):
-        """Sets the is_global of this CreatefavoriteResponse.
+        r"""Sets the is_global of this CreatefavoriteResponse.
 
         是否开启日志收藏
 

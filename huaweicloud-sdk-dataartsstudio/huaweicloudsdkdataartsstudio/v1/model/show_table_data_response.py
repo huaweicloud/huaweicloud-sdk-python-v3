@@ -28,7 +28,7 @@ class ShowTableDataResponse(SdkResponse):
     }
 
     def __init__(self, rows=None, schema=None):
-        """ShowTableDataResponse
+        r"""ShowTableDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTableDataResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this ShowTableDataResponse.
+        r"""Gets the rows of this ShowTableDataResponse.
 
         表中数据信息列表
 
@@ -62,7 +62,7 @@ class ShowTableDataResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this ShowTableDataResponse.
+        r"""Sets the rows of this ShowTableDataResponse.
 
         表中数据信息列表
 
@@ -73,7 +73,7 @@ class ShowTableDataResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this ShowTableDataResponse.
+        r"""Gets the schema of this ShowTableDataResponse.
 
         字段信息列表
 
@@ -84,7 +84,7 @@ class ShowTableDataResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowTableDataResponse.
+        r"""Sets the schema of this ShowTableDataResponse.
 
         字段信息列表
 

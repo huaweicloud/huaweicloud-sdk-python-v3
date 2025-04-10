@@ -25,7 +25,7 @@ class CreateMbTasksReportRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMbTasksReportRequest
+        r"""CreateMbTasksReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMbTasksReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMbTasksReportRequest.
+        r"""Gets the body of this CreateMbTasksReportRequest.
 
         :return: The body of this CreateMbTasksReportRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`
@@ -52,7 +52,7 @@ class CreateMbTasksReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMbTasksReportRequest.
+        r"""Sets the body of this CreateMbTasksReportRequest.
 
         :param body: The body of this CreateMbTasksReportRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`

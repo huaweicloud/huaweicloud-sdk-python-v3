@@ -29,7 +29,7 @@ class MigrateCompositeHostsRequestBody:
     }
 
     def __init__(self, host_ids=None, policy_id=None, certificate_id=None):
-        """MigrateCompositeHostsRequestBody
+        r"""MigrateCompositeHostsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MigrateCompositeHostsRequestBody:
 
     @property
     def host_ids(self):
-        """Gets the host_ids of this MigrateCompositeHostsRequestBody.
+        r"""Gets the host_ids of this MigrateCompositeHostsRequestBody.
 
         host_id列表
 
@@ -66,7 +66,7 @@ class MigrateCompositeHostsRequestBody:
 
     @host_ids.setter
     def host_ids(self, host_ids):
-        """Sets the host_ids of this MigrateCompositeHostsRequestBody.
+        r"""Sets the host_ids of this MigrateCompositeHostsRequestBody.
 
         host_id列表
 
@@ -77,7 +77,7 @@ class MigrateCompositeHostsRequestBody:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this MigrateCompositeHostsRequestBody.
+        r"""Gets the policy_id of this MigrateCompositeHostsRequestBody.
 
         策略ID（目标企业项目下的策略ID）
 
@@ -88,7 +88,7 @@ class MigrateCompositeHostsRequestBody:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this MigrateCompositeHostsRequestBody.
+        r"""Sets the policy_id of this MigrateCompositeHostsRequestBody.
 
         策略ID（目标企业项目下的策略ID）
 
@@ -99,7 +99,7 @@ class MigrateCompositeHostsRequestBody:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this MigrateCompositeHostsRequestBody.
+        r"""Gets the certificate_id of this MigrateCompositeHostsRequestBody.
 
         证书ID（目标企业项目下的证书ID）
 
@@ -110,7 +110,7 @@ class MigrateCompositeHostsRequestBody:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this MigrateCompositeHostsRequestBody.
+        r"""Sets the certificate_id of this MigrateCompositeHostsRequestBody.
 
         证书ID（目标企业项目下的证书ID）
 

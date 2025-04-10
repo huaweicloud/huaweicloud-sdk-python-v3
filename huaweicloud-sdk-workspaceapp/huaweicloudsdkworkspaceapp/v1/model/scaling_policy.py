@@ -31,7 +31,7 @@ class ScalingPolicy:
     }
 
     def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None):
-        """ScalingPolicy
+        r"""ScalingPolicy
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ScalingPolicy:
 
     @property
     def enable(self):
-        """Gets the enable of this ScalingPolicy.
+        r"""Gets the enable of this ScalingPolicy.
 
         是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
@@ -72,7 +72,7 @@ class ScalingPolicy:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ScalingPolicy.
+        r"""Sets the enable of this ScalingPolicy.
 
         是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
@@ -83,7 +83,7 @@ class ScalingPolicy:
 
     @property
     def max_scaling_amount(self):
-        """Gets the max_scaling_amount of this ScalingPolicy.
+        r"""Gets the max_scaling_amount of this ScalingPolicy.
 
         最大扩容数量。
 
@@ -94,7 +94,7 @@ class ScalingPolicy:
 
     @max_scaling_amount.setter
     def max_scaling_amount(self, max_scaling_amount):
-        """Sets the max_scaling_amount of this ScalingPolicy.
+        r"""Sets the max_scaling_amount of this ScalingPolicy.
 
         最大扩容数量。
 
@@ -105,7 +105,7 @@ class ScalingPolicy:
 
     @property
     def single_expansion_count(self):
-        """Gets the single_expansion_count of this ScalingPolicy.
+        r"""Gets the single_expansion_count of this ScalingPolicy.
 
         单次扩容数量。
 
@@ -116,7 +116,7 @@ class ScalingPolicy:
 
     @single_expansion_count.setter
     def single_expansion_count(self, single_expansion_count):
-        """Sets the single_expansion_count of this ScalingPolicy.
+        r"""Sets the single_expansion_count of this ScalingPolicy.
 
         单次扩容数量。
 
@@ -127,7 +127,7 @@ class ScalingPolicy:
 
     @property
     def scaling_policy_by_session(self):
-        """Gets the scaling_policy_by_session of this ScalingPolicy.
+        r"""Gets the scaling_policy_by_session of this ScalingPolicy.
 
         :return: The scaling_policy_by_session of this ScalingPolicy.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
@@ -136,7 +136,7 @@ class ScalingPolicy:
 
     @scaling_policy_by_session.setter
     def scaling_policy_by_session(self, scaling_policy_by_session):
-        """Sets the scaling_policy_by_session of this ScalingPolicy.
+        r"""Sets the scaling_policy_by_session of this ScalingPolicy.
 
         :param scaling_policy_by_session: The scaling_policy_by_session of this ScalingPolicy.
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`

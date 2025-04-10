@@ -28,7 +28,7 @@ class ListAgenciesV5Response(SdkResponse):
     }
 
     def __init__(self, agencies=None, page_info=None):
-        """ListAgenciesV5Response
+        r"""ListAgenciesV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAgenciesV5Response(SdkResponse):
 
     @property
     def agencies(self):
-        """Gets the agencies of this ListAgenciesV5Response.
+        r"""Gets the agencies of this ListAgenciesV5Response.
 
         委托及信任委托列表。
 
@@ -62,7 +62,7 @@ class ListAgenciesV5Response(SdkResponse):
 
     @agencies.setter
     def agencies(self, agencies):
-        """Sets the agencies of this ListAgenciesV5Response.
+        r"""Sets the agencies of this ListAgenciesV5Response.
 
         委托及信任委托列表。
 
@@ -73,7 +73,7 @@ class ListAgenciesV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAgenciesV5Response.
+        r"""Gets the page_info of this ListAgenciesV5Response.
 
         :return: The page_info of this ListAgenciesV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListAgenciesV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAgenciesV5Response.
+        r"""Sets the page_info of this ListAgenciesV5Response.
 
         :param page_info: The page_info of this ListAgenciesV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

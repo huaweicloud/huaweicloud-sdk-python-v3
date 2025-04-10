@@ -26,7 +26,7 @@ class CreateInstanceByEngineResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """CreateInstanceByEngineResponse
+        r"""CreateInstanceByEngineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateInstanceByEngineResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateInstanceByEngineResponse.
+        r"""Gets the instance_id of this CreateInstanceByEngineResponse.
 
         实例ID。
 
@@ -55,7 +55,7 @@ class CreateInstanceByEngineResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateInstanceByEngineResponse.
+        r"""Sets the instance_id of this CreateInstanceByEngineResponse.
 
         实例ID。
 

@@ -35,7 +35,7 @@ class ClusterDisasterRecovery:
     }
 
     def __init__(self, primary_cluster=None, standby_cluster=None, latest_barrier_time=None, last_recovery_spend=None, recovery_point_object=None, recovery_time_object=None):
-        """ClusterDisasterRecovery
+        r"""ClusterDisasterRecovery
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ClusterDisasterRecovery:
 
     @property
     def primary_cluster(self):
-        """Gets the primary_cluster of this ClusterDisasterRecovery.
+        r"""Gets the primary_cluster of this ClusterDisasterRecovery.
 
         :return: The primary_cluster of this ClusterDisasterRecovery.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterRecoveryProgress`
@@ -87,7 +87,7 @@ class ClusterDisasterRecovery:
 
     @primary_cluster.setter
     def primary_cluster(self, primary_cluster):
-        """Sets the primary_cluster of this ClusterDisasterRecovery.
+        r"""Sets the primary_cluster of this ClusterDisasterRecovery.
 
         :param primary_cluster: The primary_cluster of this ClusterDisasterRecovery.
         :type primary_cluster: :class:`huaweicloudsdkdws.v2.ClusterRecoveryProgress`
@@ -96,7 +96,7 @@ class ClusterDisasterRecovery:
 
     @property
     def standby_cluster(self):
-        """Gets the standby_cluster of this ClusterDisasterRecovery.
+        r"""Gets the standby_cluster of this ClusterDisasterRecovery.
 
         :return: The standby_cluster of this ClusterDisasterRecovery.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterRecoveryProgress`
@@ -105,7 +105,7 @@ class ClusterDisasterRecovery:
 
     @standby_cluster.setter
     def standby_cluster(self, standby_cluster):
-        """Sets the standby_cluster of this ClusterDisasterRecovery.
+        r"""Sets the standby_cluster of this ClusterDisasterRecovery.
 
         :param standby_cluster: The standby_cluster of this ClusterDisasterRecovery.
         :type standby_cluster: :class:`huaweicloudsdkdws.v2.ClusterRecoveryProgress`
@@ -114,7 +114,7 @@ class ClusterDisasterRecovery:
 
     @property
     def latest_barrier_time(self):
-        """Gets the latest_barrier_time of this ClusterDisasterRecovery.
+        r"""Gets the latest_barrier_time of this ClusterDisasterRecovery.
 
         latest_barrier_time
 
@@ -125,7 +125,7 @@ class ClusterDisasterRecovery:
 
     @latest_barrier_time.setter
     def latest_barrier_time(self, latest_barrier_time):
-        """Sets the latest_barrier_time of this ClusterDisasterRecovery.
+        r"""Sets the latest_barrier_time of this ClusterDisasterRecovery.
 
         latest_barrier_time
 
@@ -136,7 +136,7 @@ class ClusterDisasterRecovery:
 
     @property
     def last_recovery_spend(self):
-        """Gets the last_recovery_spend of this ClusterDisasterRecovery.
+        r"""Gets the last_recovery_spend of this ClusterDisasterRecovery.
 
         last_recovery_spend
 
@@ -147,7 +147,7 @@ class ClusterDisasterRecovery:
 
     @last_recovery_spend.setter
     def last_recovery_spend(self, last_recovery_spend):
-        """Sets the last_recovery_spend of this ClusterDisasterRecovery.
+        r"""Sets the last_recovery_spend of this ClusterDisasterRecovery.
 
         last_recovery_spend
 
@@ -158,7 +158,7 @@ class ClusterDisasterRecovery:
 
     @property
     def recovery_point_object(self):
-        """Gets the recovery_point_object of this ClusterDisasterRecovery.
+        r"""Gets the recovery_point_object of this ClusterDisasterRecovery.
 
         recovery_point_object
 
@@ -169,7 +169,7 @@ class ClusterDisasterRecovery:
 
     @recovery_point_object.setter
     def recovery_point_object(self, recovery_point_object):
-        """Sets the recovery_point_object of this ClusterDisasterRecovery.
+        r"""Sets the recovery_point_object of this ClusterDisasterRecovery.
 
         recovery_point_object
 
@@ -180,7 +180,7 @@ class ClusterDisasterRecovery:
 
     @property
     def recovery_time_object(self):
-        """Gets the recovery_time_object of this ClusterDisasterRecovery.
+        r"""Gets the recovery_time_object of this ClusterDisasterRecovery.
 
         recovery_time_object
 
@@ -191,7 +191,7 @@ class ClusterDisasterRecovery:
 
     @recovery_time_object.setter
     def recovery_time_object(self, recovery_time_object):
-        """Sets the recovery_time_object of this ClusterDisasterRecovery.
+        r"""Sets the recovery_time_object of this ClusterDisasterRecovery.
 
         recovery_time_object
 

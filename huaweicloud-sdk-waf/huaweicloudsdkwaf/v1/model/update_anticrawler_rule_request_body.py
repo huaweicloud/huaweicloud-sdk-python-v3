@@ -31,7 +31,7 @@ class UpdateAnticrawlerRuleRequestBody:
     }
 
     def __init__(self, conditions=None, name=None, type=None, priority=None):
-        """UpdateAnticrawlerRuleRequestBody
+        r"""UpdateAnticrawlerRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateAnticrawlerRuleRequestBody.
+        r"""Gets the conditions of this UpdateAnticrawlerRuleRequestBody.
 
         匹配条件列表
 
@@ -71,7 +71,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateAnticrawlerRuleRequestBody.
+        r"""Sets the conditions of this UpdateAnticrawlerRuleRequestBody.
 
         匹配条件列表
 
@@ -82,7 +82,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAnticrawlerRuleRequestBody.
+        r"""Gets the name of this UpdateAnticrawlerRuleRequestBody.
 
         规则名称
 
@@ -93,7 +93,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAnticrawlerRuleRequestBody.
+        r"""Sets the name of this UpdateAnticrawlerRuleRequestBody.
 
         规则名称
 
@@ -104,7 +104,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this UpdateAnticrawlerRuleRequestBody.
+        r"""Gets the type of this UpdateAnticrawlerRuleRequestBody.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -115,7 +115,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateAnticrawlerRuleRequestBody.
+        r"""Sets the type of this UpdateAnticrawlerRuleRequestBody.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -126,7 +126,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateAnticrawlerRuleRequestBody.
+        r"""Gets the priority of this UpdateAnticrawlerRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -137,7 +137,7 @@ class UpdateAnticrawlerRuleRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateAnticrawlerRuleRequestBody.
+        r"""Sets the priority of this UpdateAnticrawlerRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 

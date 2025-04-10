@@ -33,7 +33,7 @@ class Key:
     }
 
     def __init__(self, can_push=None, created_at=None, key=None, key_id=None, key_title=None):
-        """Key
+        r"""Key
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Key:
 
     @property
     def can_push(self):
-        """Gets the can_push of this Key.
+        r"""Gets the can_push of this Key.
 
         是否允许推送
 
@@ -82,7 +82,7 @@ class Key:
 
     @can_push.setter
     def can_push(self, can_push):
-        """Sets the can_push of this Key.
+        r"""Sets the can_push of this Key.
 
         是否允许推送
 
@@ -93,7 +93,7 @@ class Key:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Key.
+        r"""Gets the created_at of this Key.
 
         部署密钥新建时间
 
@@ -104,7 +104,7 @@ class Key:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Key.
+        r"""Sets the created_at of this Key.
 
         部署密钥新建时间
 
@@ -115,7 +115,7 @@ class Key:
 
     @property
     def key(self):
-        """Gets the key of this Key.
+        r"""Gets the key of this Key.
 
         部署密钥
 
@@ -126,7 +126,7 @@ class Key:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Key.
+        r"""Sets the key of this Key.
 
         部署密钥
 
@@ -137,7 +137,7 @@ class Key:
 
     @property
     def key_id(self):
-        """Gets the key_id of this Key.
+        r"""Gets the key_id of this Key.
 
         部署密钥id
 
@@ -148,7 +148,7 @@ class Key:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this Key.
+        r"""Sets the key_id of this Key.
 
         部署密钥id
 
@@ -159,7 +159,7 @@ class Key:
 
     @property
     def key_title(self):
-        """Gets the key_title of this Key.
+        r"""Gets the key_title of this Key.
 
         部署密钥名称
 
@@ -170,7 +170,7 @@ class Key:
 
     @key_title.setter
     def key_title(self, key_title):
-        """Sets the key_title of this Key.
+        r"""Sets the key_title of this Key.
 
         部署密钥名称
 

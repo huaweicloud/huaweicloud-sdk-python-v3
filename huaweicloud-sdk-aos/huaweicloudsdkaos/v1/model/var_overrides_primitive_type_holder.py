@@ -25,7 +25,7 @@ class VarOverridesPrimitiveTypeHolder:
     }
 
     def __init__(self, var_overrides=None):
-        """VarOverridesPrimitiveTypeHolder
+        r"""VarOverridesPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VarOverridesPrimitiveTypeHolder:
 
     @property
     def var_overrides(self):
-        """Gets the var_overrides of this VarOverridesPrimitiveTypeHolder.
+        r"""Gets the var_overrides of this VarOverridesPrimitiveTypeHolder.
 
         :return: The var_overrides of this VarOverridesPrimitiveTypeHolder.
         :rtype: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`
@@ -52,7 +52,7 @@ class VarOverridesPrimitiveTypeHolder:
 
     @var_overrides.setter
     def var_overrides(self, var_overrides):
-        """Sets the var_overrides of this VarOverridesPrimitiveTypeHolder.
+        r"""Sets the var_overrides of this VarOverridesPrimitiveTypeHolder.
 
         :param var_overrides: The var_overrides of this VarOverridesPrimitiveTypeHolder.
         :type var_overrides: :class:`huaweicloudsdkaos.v1.VarOverridesPrimitiveTypeHolderVarOverrides`

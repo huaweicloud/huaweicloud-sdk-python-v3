@@ -24,7 +24,7 @@ class HibernateClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """HibernateClusterResponse
+        r"""HibernateClusterResponse
 
         The model defined in huaweicloud sdk
 

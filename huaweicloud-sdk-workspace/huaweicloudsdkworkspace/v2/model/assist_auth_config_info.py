@@ -27,7 +27,7 @@ class AssistAuthConfigInfo:
     }
 
     def __init__(self, auth_type=None, otp_config_info=None):
-        """AssistAuthConfigInfo
+        r"""AssistAuthConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssistAuthConfigInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this AssistAuthConfigInfo.
+        r"""Gets the auth_type of this AssistAuthConfigInfo.
 
         当前激活的辅助认证类型。
 
@@ -61,7 +61,7 @@ class AssistAuthConfigInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this AssistAuthConfigInfo.
+        r"""Sets the auth_type of this AssistAuthConfigInfo.
 
         当前激活的辅助认证类型。
 
@@ -72,7 +72,7 @@ class AssistAuthConfigInfo:
 
     @property
     def otp_config_info(self):
-        """Gets the otp_config_info of this AssistAuthConfigInfo.
+        r"""Gets the otp_config_info of this AssistAuthConfigInfo.
 
         :return: The otp_config_info of this AssistAuthConfigInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
@@ -81,7 +81,7 @@ class AssistAuthConfigInfo:
 
     @otp_config_info.setter
     def otp_config_info(self, otp_config_info):
-        """Sets the otp_config_info of this AssistAuthConfigInfo.
+        r"""Sets the otp_config_info of this AssistAuthConfigInfo.
 
         :param otp_config_info: The otp_config_info of this AssistAuthConfigInfo.
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`

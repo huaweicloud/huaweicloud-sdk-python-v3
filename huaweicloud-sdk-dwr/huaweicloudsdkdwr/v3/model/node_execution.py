@@ -37,7 +37,7 @@ class NodeExecution:
     }
 
     def __init__(self, status=None, input=None, output=None, begin_time=None, end_time=None, error_message=None, request_id=None):
-        """NodeExecution
+        r"""NodeExecution
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NodeExecution:
 
     @property
     def status(self):
-        """Gets the status of this NodeExecution.
+        r"""Gets the status of this NodeExecution.
 
         流程节点执行状态  最小长度：1  最大长度：32  枚举值：  success  fail  running  timeout  cancel
 
@@ -96,7 +96,7 @@ class NodeExecution:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeExecution.
+        r"""Sets the status of this NodeExecution.
 
         流程节点执行状态  最小长度：1  最大长度：32  枚举值：  success  fail  running  timeout  cancel
 
@@ -107,7 +107,7 @@ class NodeExecution:
 
     @property
     def input(self):
-        """Gets the input of this NodeExecution.
+        r"""Gets the input of this NodeExecution.
 
         函数执行时的入参
 
@@ -118,7 +118,7 @@ class NodeExecution:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this NodeExecution.
+        r"""Sets the input of this NodeExecution.
 
         函数执行时的入参
 
@@ -129,7 +129,7 @@ class NodeExecution:
 
     @property
     def output(self):
-        """Gets the output of this NodeExecution.
+        r"""Gets the output of this NodeExecution.
 
         函数执行结果
 
@@ -140,7 +140,7 @@ class NodeExecution:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this NodeExecution.
+        r"""Sets the output of this NodeExecution.
 
         函数执行结果
 
@@ -151,7 +151,7 @@ class NodeExecution:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this NodeExecution.
+        r"""Gets the begin_time of this NodeExecution.
 
         节点启动时间，UTC毫秒时间戳格式  最小值：0  最大值：99999999999999999
 
@@ -162,7 +162,7 @@ class NodeExecution:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this NodeExecution.
+        r"""Sets the begin_time of this NodeExecution.
 
         节点启动时间，UTC毫秒时间戳格式  最小值：0  最大值：99999999999999999
 
@@ -173,7 +173,7 @@ class NodeExecution:
 
     @property
     def end_time(self):
-        """Gets the end_time of this NodeExecution.
+        r"""Gets the end_time of this NodeExecution.
 
         节点结束时间，UTC毫秒时间戳格式  最小值：0  最大值：99999999999999999
 
@@ -184,7 +184,7 @@ class NodeExecution:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this NodeExecution.
+        r"""Sets the end_time of this NodeExecution.
 
         节点结束时间，UTC毫秒时间戳格式  最小值：0  最大值：99999999999999999
 
@@ -195,7 +195,7 @@ class NodeExecution:
 
     @property
     def error_message(self):
-        """Gets the error_message of this NodeExecution.
+        r"""Gets the error_message of this NodeExecution.
 
         节点错误信息，仅在节点出错时非空
 
@@ -206,7 +206,7 @@ class NodeExecution:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this NodeExecution.
+        r"""Sets the error_message of this NodeExecution.
 
         节点错误信息，仅在节点出错时非空
 
@@ -217,7 +217,7 @@ class NodeExecution:
 
     @property
     def request_id(self):
-        """Gets the request_id of this NodeExecution.
+        r"""Gets the request_id of this NodeExecution.
 
         流程节点请求ID
 
@@ -228,7 +228,7 @@ class NodeExecution:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this NodeExecution.
+        r"""Sets the request_id of this NodeExecution.
 
         流程节点请求ID
 

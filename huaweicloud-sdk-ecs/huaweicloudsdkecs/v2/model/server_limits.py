@@ -75,7 +75,7 @@ class ServerLimits:
     }
 
     def __init__(self, max_image_meta=None, max_personality=None, max_personality_size=None, max_security_group_rules=None, max_security_groups=None, max_server_group_members=None, max_server_groups=None, max_server_meta=None, max_total_cores=None, max_total_floating_ips=None, max_total_instances=None, max_total_keypairs=None, max_total_ram_size=None, total_cores_used=None, total_floating_ips_used=None, total_instances_used=None, total_ram_used=None, total_security_groups_used=None, total_server_groups_used=None, max_total_spot_instances=None, max_total_spot_cores=None, max_total_spot_ram_size=None, total_spot_instances_used=None, total_spot_cores_used=None, total_spot_ram_used=None, limit_by_flavor=None):
-        """ServerLimits
+        r"""ServerLimits
 
         The model defined in huaweicloud sdk
 
@@ -199,7 +199,7 @@ class ServerLimits:
 
     @property
     def max_image_meta(self):
-        """Gets the max_image_meta of this ServerLimits.
+        r"""Gets the max_image_meta of this ServerLimits.
 
         镜像元数据最大的长度。
 
@@ -210,7 +210,7 @@ class ServerLimits:
 
     @max_image_meta.setter
     def max_image_meta(self, max_image_meta):
-        """Sets the max_image_meta of this ServerLimits.
+        r"""Sets the max_image_meta of this ServerLimits.
 
         镜像元数据最大的长度。
 
@@ -221,7 +221,7 @@ class ServerLimits:
 
     @property
     def max_personality(self):
-        """Gets the max_personality of this ServerLimits.
+        r"""Gets the max_personality of this ServerLimits.
 
         可注入文件的最大个数。
 
@@ -232,7 +232,7 @@ class ServerLimits:
 
     @max_personality.setter
     def max_personality(self, max_personality):
-        """Sets the max_personality of this ServerLimits.
+        r"""Sets the max_personality of this ServerLimits.
 
         可注入文件的最大个数。
 
@@ -243,7 +243,7 @@ class ServerLimits:
 
     @property
     def max_personality_size(self):
-        """Gets the max_personality_size of this ServerLimits.
+        r"""Gets the max_personality_size of this ServerLimits.
 
         注入文件内容的最大长度（单位：Byte）。
 
@@ -254,7 +254,7 @@ class ServerLimits:
 
     @max_personality_size.setter
     def max_personality_size(self, max_personality_size):
-        """Sets the max_personality_size of this ServerLimits.
+        r"""Sets the max_personality_size of this ServerLimits.
 
         注入文件内容的最大长度（单位：Byte）。
 
@@ -265,7 +265,7 @@ class ServerLimits:
 
     @property
     def max_security_group_rules(self):
-        """Gets the max_security_group_rules of this ServerLimits.
+        r"""Gets the max_security_group_rules of this ServerLimits.
 
         安全组中安全组规则最大的配置个数。   > 说明：  - 具体配额限制请以VPC配额限制为准。
 
@@ -276,7 +276,7 @@ class ServerLimits:
 
     @max_security_group_rules.setter
     def max_security_group_rules(self, max_security_group_rules):
-        """Sets the max_security_group_rules of this ServerLimits.
+        r"""Sets the max_security_group_rules of this ServerLimits.
 
         安全组中安全组规则最大的配置个数。   > 说明：  - 具体配额限制请以VPC配额限制为准。
 
@@ -287,7 +287,7 @@ class ServerLimits:
 
     @property
     def max_security_groups(self):
-        """Gets the max_security_groups of this ServerLimits.
+        r"""Gets the max_security_groups of this ServerLimits.
 
         安全组最大使用个数。  > 说明：  - 具体配额限制请以VPC配额限制为准。
 
@@ -298,7 +298,7 @@ class ServerLimits:
 
     @max_security_groups.setter
     def max_security_groups(self, max_security_groups):
-        """Sets the max_security_groups of this ServerLimits.
+        r"""Sets the max_security_groups of this ServerLimits.
 
         安全组最大使用个数。  > 说明：  - 具体配额限制请以VPC配额限制为准。
 
@@ -309,7 +309,7 @@ class ServerLimits:
 
     @property
     def max_server_group_members(self):
-        """Gets the max_server_group_members of this ServerLimits.
+        r"""Gets the max_server_group_members of this ServerLimits.
 
         服务器组中的最大虚拟机数。
 
@@ -320,7 +320,7 @@ class ServerLimits:
 
     @max_server_group_members.setter
     def max_server_group_members(self, max_server_group_members):
-        """Sets the max_server_group_members of this ServerLimits.
+        r"""Sets the max_server_group_members of this ServerLimits.
 
         服务器组中的最大虚拟机数。
 
@@ -331,7 +331,7 @@ class ServerLimits:
 
     @property
     def max_server_groups(self):
-        """Gets the max_server_groups of this ServerLimits.
+        r"""Gets the max_server_groups of this ServerLimits.
 
         服务器组的最大个数。
 
@@ -342,7 +342,7 @@ class ServerLimits:
 
     @max_server_groups.setter
     def max_server_groups(self, max_server_groups):
-        """Sets the max_server_groups of this ServerLimits.
+        r"""Sets the max_server_groups of this ServerLimits.
 
         服务器组的最大个数。
 
@@ -353,7 +353,7 @@ class ServerLimits:
 
     @property
     def max_server_meta(self):
-        """Gets the max_server_meta of this ServerLimits.
+        r"""Gets the max_server_meta of this ServerLimits.
 
         可输入元数据的最大长度。
 
@@ -364,7 +364,7 @@ class ServerLimits:
 
     @max_server_meta.setter
     def max_server_meta(self, max_server_meta):
-        """Sets the max_server_meta of this ServerLimits.
+        r"""Sets the max_server_meta of this ServerLimits.
 
         可输入元数据的最大长度。
 
@@ -375,7 +375,7 @@ class ServerLimits:
 
     @property
     def max_total_cores(self):
-        """Gets the max_total_cores of this ServerLimits.
+        r"""Gets the max_total_cores of this ServerLimits.
 
         CPU核数最大申请数量。
 
@@ -386,7 +386,7 @@ class ServerLimits:
 
     @max_total_cores.setter
     def max_total_cores(self, max_total_cores):
-        """Sets the max_total_cores of this ServerLimits.
+        r"""Sets the max_total_cores of this ServerLimits.
 
         CPU核数最大申请数量。
 
@@ -397,7 +397,7 @@ class ServerLimits:
 
     @property
     def max_total_floating_ips(self):
-        """Gets the max_total_floating_ips of this ServerLimits.
+        r"""Gets the max_total_floating_ips of this ServerLimits.
 
         最大的浮动IP使用个数。
 
@@ -408,7 +408,7 @@ class ServerLimits:
 
     @max_total_floating_ips.setter
     def max_total_floating_ips(self, max_total_floating_ips):
-        """Sets the max_total_floating_ips of this ServerLimits.
+        r"""Sets the max_total_floating_ips of this ServerLimits.
 
         最大的浮动IP使用个数。
 
@@ -419,7 +419,7 @@ class ServerLimits:
 
     @property
     def max_total_instances(self):
-        """Gets the max_total_instances of this ServerLimits.
+        r"""Gets the max_total_instances of this ServerLimits.
 
         云服务器最大申请数量。
 
@@ -430,7 +430,7 @@ class ServerLimits:
 
     @max_total_instances.setter
     def max_total_instances(self, max_total_instances):
-        """Sets the max_total_instances of this ServerLimits.
+        r"""Sets the max_total_instances of this ServerLimits.
 
         云服务器最大申请数量。
 
@@ -441,7 +441,7 @@ class ServerLimits:
 
     @property
     def max_total_keypairs(self):
-        """Gets the max_total_keypairs of this ServerLimits.
+        r"""Gets the max_total_keypairs of this ServerLimits.
 
         可以申请的SSH密钥对最大数量。
 
@@ -452,7 +452,7 @@ class ServerLimits:
 
     @max_total_keypairs.setter
     def max_total_keypairs(self, max_total_keypairs):
-        """Sets the max_total_keypairs of this ServerLimits.
+        r"""Sets the max_total_keypairs of this ServerLimits.
 
         可以申请的SSH密钥对最大数量。
 
@@ -463,7 +463,7 @@ class ServerLimits:
 
     @property
     def max_total_ram_size(self):
-        """Gets the max_total_ram_size of this ServerLimits.
+        r"""Gets the max_total_ram_size of this ServerLimits.
 
         内存最大申请容量（单位：MB）。
 
@@ -474,7 +474,7 @@ class ServerLimits:
 
     @max_total_ram_size.setter
     def max_total_ram_size(self, max_total_ram_size):
-        """Sets the max_total_ram_size of this ServerLimits.
+        r"""Sets the max_total_ram_size of this ServerLimits.
 
         内存最大申请容量（单位：MB）。
 
@@ -485,7 +485,7 @@ class ServerLimits:
 
     @property
     def total_cores_used(self):
-        """Gets the total_cores_used of this ServerLimits.
+        r"""Gets the total_cores_used of this ServerLimits.
 
         当前已使用CPU核数。
 
@@ -496,7 +496,7 @@ class ServerLimits:
 
     @total_cores_used.setter
     def total_cores_used(self, total_cores_used):
-        """Sets the total_cores_used of this ServerLimits.
+        r"""Sets the total_cores_used of this ServerLimits.
 
         当前已使用CPU核数。
 
@@ -507,7 +507,7 @@ class ServerLimits:
 
     @property
     def total_floating_ips_used(self):
-        """Gets the total_floating_ips_used of this ServerLimits.
+        r"""Gets the total_floating_ips_used of this ServerLimits.
 
         当前浮动IP使用个数。
 
@@ -518,7 +518,7 @@ class ServerLimits:
 
     @total_floating_ips_used.setter
     def total_floating_ips_used(self, total_floating_ips_used):
-        """Sets the total_floating_ips_used of this ServerLimits.
+        r"""Sets the total_floating_ips_used of this ServerLimits.
 
         当前浮动IP使用个数。
 
@@ -529,7 +529,7 @@ class ServerLimits:
 
     @property
     def total_instances_used(self):
-        """Gets the total_instances_used of this ServerLimits.
+        r"""Gets the total_instances_used of this ServerLimits.
 
         当前云服务器使用个数。
 
@@ -540,7 +540,7 @@ class ServerLimits:
 
     @total_instances_used.setter
     def total_instances_used(self, total_instances_used):
-        """Sets the total_instances_used of this ServerLimits.
+        r"""Sets the total_instances_used of this ServerLimits.
 
         当前云服务器使用个数。
 
@@ -551,7 +551,7 @@ class ServerLimits:
 
     @property
     def total_ram_used(self):
-        """Gets the total_ram_used of this ServerLimits.
+        r"""Gets the total_ram_used of this ServerLimits.
 
         当前内存使用容量（单位：MB）。
 
@@ -562,7 +562,7 @@ class ServerLimits:
 
     @total_ram_used.setter
     def total_ram_used(self, total_ram_used):
-        """Sets the total_ram_used of this ServerLimits.
+        r"""Sets the total_ram_used of this ServerLimits.
 
         当前内存使用容量（单位：MB）。
 
@@ -573,7 +573,7 @@ class ServerLimits:
 
     @property
     def total_security_groups_used(self):
-        """Gets the total_security_groups_used of this ServerLimits.
+        r"""Gets the total_security_groups_used of this ServerLimits.
 
         当前安全组使用个数。
 
@@ -584,7 +584,7 @@ class ServerLimits:
 
     @total_security_groups_used.setter
     def total_security_groups_used(self, total_security_groups_used):
-        """Sets the total_security_groups_used of this ServerLimits.
+        r"""Sets the total_security_groups_used of this ServerLimits.
 
         当前安全组使用个数。
 
@@ -595,7 +595,7 @@ class ServerLimits:
 
     @property
     def total_server_groups_used(self):
-        """Gets the total_server_groups_used of this ServerLimits.
+        r"""Gets the total_server_groups_used of this ServerLimits.
 
         已使用的服务器组个数。
 
@@ -606,7 +606,7 @@ class ServerLimits:
 
     @total_server_groups_used.setter
     def total_server_groups_used(self, total_server_groups_used):
-        """Sets the total_server_groups_used of this ServerLimits.
+        r"""Sets the total_server_groups_used of this ServerLimits.
 
         已使用的服务器组个数。
 
@@ -617,7 +617,7 @@ class ServerLimits:
 
     @property
     def max_total_spot_instances(self):
-        """Gets the max_total_spot_instances of this ServerLimits.
+        r"""Gets the max_total_spot_instances of this ServerLimits.
 
         竞价实例的最大申请数量。
 
@@ -628,7 +628,7 @@ class ServerLimits:
 
     @max_total_spot_instances.setter
     def max_total_spot_instances(self, max_total_spot_instances):
-        """Sets the max_total_spot_instances of this ServerLimits.
+        r"""Sets the max_total_spot_instances of this ServerLimits.
 
         竞价实例的最大申请数量。
 
@@ -639,7 +639,7 @@ class ServerLimits:
 
     @property
     def max_total_spot_cores(self):
-        """Gets the max_total_spot_cores of this ServerLimits.
+        r"""Gets the max_total_spot_cores of this ServerLimits.
 
         竞价实例的CPU核数最大申请数量。
 
@@ -650,7 +650,7 @@ class ServerLimits:
 
     @max_total_spot_cores.setter
     def max_total_spot_cores(self, max_total_spot_cores):
-        """Sets the max_total_spot_cores of this ServerLimits.
+        r"""Sets the max_total_spot_cores of this ServerLimits.
 
         竞价实例的CPU核数最大申请数量。
 
@@ -661,7 +661,7 @@ class ServerLimits:
 
     @property
     def max_total_spot_ram_size(self):
-        """Gets the max_total_spot_ram_size of this ServerLimits.
+        r"""Gets the max_total_spot_ram_size of this ServerLimits.
 
         竞价实例的内存最大申请容量（单位：MB）。
 
@@ -672,7 +672,7 @@ class ServerLimits:
 
     @max_total_spot_ram_size.setter
     def max_total_spot_ram_size(self, max_total_spot_ram_size):
-        """Sets the max_total_spot_ram_size of this ServerLimits.
+        r"""Sets the max_total_spot_ram_size of this ServerLimits.
 
         竞价实例的内存最大申请容量（单位：MB）。
 
@@ -683,7 +683,7 @@ class ServerLimits:
 
     @property
     def total_spot_instances_used(self):
-        """Gets the total_spot_instances_used of this ServerLimits.
+        r"""Gets the total_spot_instances_used of this ServerLimits.
 
         当前竞价实例的使用个数。
 
@@ -694,7 +694,7 @@ class ServerLimits:
 
     @total_spot_instances_used.setter
     def total_spot_instances_used(self, total_spot_instances_used):
-        """Sets the total_spot_instances_used of this ServerLimits.
+        r"""Sets the total_spot_instances_used of this ServerLimits.
 
         当前竞价实例的使用个数。
 
@@ -705,7 +705,7 @@ class ServerLimits:
 
     @property
     def total_spot_cores_used(self):
-        """Gets the total_spot_cores_used of this ServerLimits.
+        r"""Gets the total_spot_cores_used of this ServerLimits.
 
         当前竞价实例已使用的CPU核数。
 
@@ -716,7 +716,7 @@ class ServerLimits:
 
     @total_spot_cores_used.setter
     def total_spot_cores_used(self, total_spot_cores_used):
-        """Sets the total_spot_cores_used of this ServerLimits.
+        r"""Sets the total_spot_cores_used of this ServerLimits.
 
         当前竞价实例已使用的CPU核数。
 
@@ -727,7 +727,7 @@ class ServerLimits:
 
     @property
     def total_spot_ram_used(self):
-        """Gets the total_spot_ram_used of this ServerLimits.
+        r"""Gets the total_spot_ram_used of this ServerLimits.
 
         当前竞价实例的内存使用容量（单位：MB）。
 
@@ -738,7 +738,7 @@ class ServerLimits:
 
     @total_spot_ram_used.setter
     def total_spot_ram_used(self, total_spot_ram_used):
-        """Sets the total_spot_ram_used of this ServerLimits.
+        r"""Sets the total_spot_ram_used of this ServerLimits.
 
         当前竞价实例的内存使用容量（单位：MB）。
 
@@ -749,7 +749,7 @@ class ServerLimits:
 
     @property
     def limit_by_flavor(self):
-        """Gets the limit_by_flavor of this ServerLimits.
+        r"""Gets the limit_by_flavor of this ServerLimits.
 
         使用该flavor可以申请的弹性云服务器数量。  值为“-1”时，表示无数量限制。
 
@@ -760,7 +760,7 @@ class ServerLimits:
 
     @limit_by_flavor.setter
     def limit_by_flavor(self, limit_by_flavor):
-        """Sets the limit_by_flavor of this ServerLimits.
+        r"""Sets the limit_by_flavor of this ServerLimits.
 
         使用该flavor可以申请的弹性云服务器数量。  值为“-1”时，表示无数量限制。
 

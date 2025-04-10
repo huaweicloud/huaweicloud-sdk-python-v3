@@ -24,7 +24,7 @@ class PushEventsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PushEventsResponse
+        r"""PushEventsResponse
 
         The model defined in huaweicloud sdk
 

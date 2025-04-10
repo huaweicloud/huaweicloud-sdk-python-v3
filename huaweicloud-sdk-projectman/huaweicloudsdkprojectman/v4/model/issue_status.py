@@ -33,7 +33,7 @@ class IssueStatus:
     }
 
     def __init__(self, id=None, status_id=None, name=None, tracker_ids=None, status_attribute=None):
-        """IssueStatus
+        r"""IssueStatus
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IssueStatus:
 
     @property
     def id(self):
-        """Gets the id of this IssueStatus.
+        r"""Gets the id of this IssueStatus.
 
         状态uuid
 
@@ -82,7 +82,7 @@ class IssueStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueStatus.
+        r"""Sets the id of this IssueStatus.
 
         状态uuid
 
@@ -93,7 +93,7 @@ class IssueStatus:
 
     @property
     def status_id(self):
-        """Gets the status_id of this IssueStatus.
+        r"""Gets the status_id of this IssueStatus.
 
         状态数字id
 
@@ -104,7 +104,7 @@ class IssueStatus:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this IssueStatus.
+        r"""Sets the status_id of this IssueStatus.
 
         状态数字id
 
@@ -115,7 +115,7 @@ class IssueStatus:
 
     @property
     def name(self):
-        """Gets the name of this IssueStatus.
+        r"""Gets the name of this IssueStatus.
 
         状态名称
 
@@ -126,7 +126,7 @@ class IssueStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueStatus.
+        r"""Sets the name of this IssueStatus.
 
         状态名称
 
@@ -137,7 +137,7 @@ class IssueStatus:
 
     @property
     def tracker_ids(self):
-        """Gets the tracker_ids of this IssueStatus.
+        r"""Gets the tracker_ids of this IssueStatus.
 
         关联的工作项类型列表
 
@@ -148,7 +148,7 @@ class IssueStatus:
 
     @tracker_ids.setter
     def tracker_ids(self, tracker_ids):
-        """Sets the tracker_ids of this IssueStatus.
+        r"""Sets the tracker_ids of this IssueStatus.
 
         关联的工作项类型列表
 
@@ -159,7 +159,7 @@ class IssueStatus:
 
     @property
     def status_attribute(self):
-        """Gets the status_attribute of this IssueStatus.
+        r"""Gets the status_attribute of this IssueStatus.
 
         :return: The status_attribute of this IssueStatus.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusAttribute`
@@ -168,7 +168,7 @@ class IssueStatus:
 
     @status_attribute.setter
     def status_attribute(self, status_attribute):
-        """Sets the status_attribute of this IssueStatus.
+        r"""Sets the status_attribute of this IssueStatus.
 
         :param status_attribute: The status_attribute of this IssueStatus.
         :type status_attribute: :class:`huaweicloudsdkprojectman.v4.StatusAttribute`

@@ -37,7 +37,7 @@ class EnvironmentCheck:
     }
 
     def __init__(self, id=None, params=None, name=None, result=None, error_code=None, error_or_warn=None, error_params=None):
-        """EnvironmentCheck
+        r"""EnvironmentCheck
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class EnvironmentCheck:
 
     @property
     def id(self):
-        """Gets the id of this EnvironmentCheck.
+        r"""Gets the id of this EnvironmentCheck.
 
         该检查项的ID
 
@@ -93,7 +93,7 @@ class EnvironmentCheck:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvironmentCheck.
+        r"""Sets the id of this EnvironmentCheck.
 
         该检查项的ID
 
@@ -104,7 +104,7 @@ class EnvironmentCheck:
 
     @property
     def params(self):
-        """Gets the params of this EnvironmentCheck.
+        r"""Gets the params of this EnvironmentCheck.
 
         参数
 
@@ -115,7 +115,7 @@ class EnvironmentCheck:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this EnvironmentCheck.
+        r"""Sets the params of this EnvironmentCheck.
 
         参数
 
@@ -126,7 +126,7 @@ class EnvironmentCheck:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentCheck.
+        r"""Gets the name of this EnvironmentCheck.
 
         检查项名称
 
@@ -137,7 +137,7 @@ class EnvironmentCheck:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentCheck.
+        r"""Sets the name of this EnvironmentCheck.
 
         检查项名称
 
@@ -148,7 +148,7 @@ class EnvironmentCheck:
 
     @property
     def result(self):
-        """Gets the result of this EnvironmentCheck.
+        r"""Gets the result of this EnvironmentCheck.
 
         检查结果 OK：检查通过 WARN：警告 ERROR:检查不通过
 
@@ -159,7 +159,7 @@ class EnvironmentCheck:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this EnvironmentCheck.
+        r"""Sets the result of this EnvironmentCheck.
 
         检查结果 OK：检查通过 WARN：警告 ERROR:检查不通过
 
@@ -170,7 +170,7 @@ class EnvironmentCheck:
 
     @property
     def error_code(self):
-        """Gets the error_code of this EnvironmentCheck.
+        r"""Gets the error_code of this EnvironmentCheck.
 
         检查不通过的错误码
 
@@ -181,7 +181,7 @@ class EnvironmentCheck:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this EnvironmentCheck.
+        r"""Sets the error_code of this EnvironmentCheck.
 
         检查不通过的错误码
 
@@ -192,7 +192,7 @@ class EnvironmentCheck:
 
     @property
     def error_or_warn(self):
-        """Gets the error_or_warn of this EnvironmentCheck.
+        r"""Gets the error_or_warn of this EnvironmentCheck.
 
         检查的错误或者警告
 
@@ -203,7 +203,7 @@ class EnvironmentCheck:
 
     @error_or_warn.setter
     def error_or_warn(self, error_or_warn):
-        """Sets the error_or_warn of this EnvironmentCheck.
+        r"""Sets the error_or_warn of this EnvironmentCheck.
 
         检查的错误或者警告
 
@@ -214,7 +214,7 @@ class EnvironmentCheck:
 
     @property
     def error_params(self):
-        """Gets the error_params of this EnvironmentCheck.
+        r"""Gets the error_params of this EnvironmentCheck.
 
         检查不通过的错误参数
 
@@ -225,7 +225,7 @@ class EnvironmentCheck:
 
     @error_params.setter
     def error_params(self, error_params):
-        """Sets the error_params of this EnvironmentCheck.
+        r"""Sets the error_params of this EnvironmentCheck.
 
         检查不通过的错误参数
 

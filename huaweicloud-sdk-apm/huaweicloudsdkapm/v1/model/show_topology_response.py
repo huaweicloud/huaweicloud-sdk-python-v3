@@ -30,7 +30,7 @@ class ShowTopologyResponse(SdkResponse):
     }
 
     def __init__(self, global_trace_id=None, line_list=None, node_list=None):
-        """ShowTopologyResponse
+        r"""ShowTopologyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTopologyResponse(SdkResponse):
 
     @property
     def global_trace_id(self):
-        """Gets the global_trace_id of this ShowTopologyResponse.
+        r"""Gets the global_trace_id of this ShowTopologyResponse.
 
         全局traceId。
 
@@ -69,7 +69,7 @@ class ShowTopologyResponse(SdkResponse):
 
     @global_trace_id.setter
     def global_trace_id(self, global_trace_id):
-        """Sets the global_trace_id of this ShowTopologyResponse.
+        r"""Sets the global_trace_id of this ShowTopologyResponse.
 
         全局traceId。
 
@@ -80,7 +80,7 @@ class ShowTopologyResponse(SdkResponse):
 
     @property
     def line_list(self):
-        """Gets the line_list of this ShowTopologyResponse.
+        r"""Gets the line_list of this ShowTopologyResponse.
 
         组件之间调用指向线列表。
 
@@ -91,7 +91,7 @@ class ShowTopologyResponse(SdkResponse):
 
     @line_list.setter
     def line_list(self, line_list):
-        """Sets the line_list of this ShowTopologyResponse.
+        r"""Sets the line_list of this ShowTopologyResponse.
 
         组件之间调用指向线列表。
 
@@ -102,7 +102,7 @@ class ShowTopologyResponse(SdkResponse):
 
     @property
     def node_list(self):
-        """Gets the node_list of this ShowTopologyResponse.
+        r"""Gets the node_list of this ShowTopologyResponse.
 
         组件节点列表。
 
@@ -113,7 +113,7 @@ class ShowTopologyResponse(SdkResponse):
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ShowTopologyResponse.
+        r"""Sets the node_list of this ShowTopologyResponse.
 
         组件节点列表。
 

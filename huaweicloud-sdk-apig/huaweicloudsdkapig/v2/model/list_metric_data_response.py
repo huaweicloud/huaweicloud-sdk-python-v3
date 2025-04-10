@@ -26,7 +26,7 @@ class ListMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, datapoints=None):
-        """ListMetricDataResponse
+        r"""ListMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMetricDataResponse(SdkResponse):
 
     @property
     def datapoints(self):
-        """Gets the datapoints of this ListMetricDataResponse.
+        r"""Gets the datapoints of this ListMetricDataResponse.
 
         指标数据列表
 
@@ -55,7 +55,7 @@ class ListMetricDataResponse(SdkResponse):
 
     @datapoints.setter
     def datapoints(self, datapoints):
-        """Sets the datapoints of this ListMetricDataResponse.
+        r"""Sets the datapoints of this ListMetricDataResponse.
 
         指标数据列表
 

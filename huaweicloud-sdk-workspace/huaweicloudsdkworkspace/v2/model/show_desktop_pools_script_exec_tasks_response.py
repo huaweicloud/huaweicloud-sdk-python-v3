@@ -28,7 +28,7 @@ class ShowDesktopPoolsScriptExecTasksResponse(SdkResponse):
     }
 
     def __init__(self, script_execution_tasks=None, total_count=None):
-        """ShowDesktopPoolsScriptExecTasksResponse
+        r"""ShowDesktopPoolsScriptExecTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDesktopPoolsScriptExecTasksResponse(SdkResponse):
 
     @property
     def script_execution_tasks(self):
-        """Gets the script_execution_tasks of this ShowDesktopPoolsScriptExecTasksResponse.
+        r"""Gets the script_execution_tasks of this ShowDesktopPoolsScriptExecTasksResponse.
 
         脚本执行任务列表。
 
@@ -62,7 +62,7 @@ class ShowDesktopPoolsScriptExecTasksResponse(SdkResponse):
 
     @script_execution_tasks.setter
     def script_execution_tasks(self, script_execution_tasks):
-        """Sets the script_execution_tasks of this ShowDesktopPoolsScriptExecTasksResponse.
+        r"""Sets the script_execution_tasks of this ShowDesktopPoolsScriptExecTasksResponse.
 
         脚本执行任务列表。
 
@@ -73,7 +73,7 @@ class ShowDesktopPoolsScriptExecTasksResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowDesktopPoolsScriptExecTasksResponse.
+        r"""Gets the total_count of this ShowDesktopPoolsScriptExecTasksResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ShowDesktopPoolsScriptExecTasksResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowDesktopPoolsScriptExecTasksResponse.
+        r"""Sets the total_count of this ShowDesktopPoolsScriptExecTasksResponse.
 
         总数。
 

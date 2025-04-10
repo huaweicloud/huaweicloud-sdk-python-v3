@@ -27,7 +27,7 @@ class DownloadApplicationCodeRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """DownloadApplicationCodeRequest
+        r"""DownloadApplicationCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DownloadApplicationCodeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadApplicationCodeRequest.
+        r"""Gets the x_language of this DownloadApplicationCodeRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -60,7 +60,7 @@ class DownloadApplicationCodeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadApplicationCodeRequest.
+        r"""Sets the x_language of this DownloadApplicationCodeRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -71,7 +71,7 @@ class DownloadApplicationCodeRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DownloadApplicationCodeRequest.
+        r"""Gets the job_id of this DownloadApplicationCodeRequest.
 
         任务id。
 
@@ -82,7 +82,7 @@ class DownloadApplicationCodeRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DownloadApplicationCodeRequest.
+        r"""Sets the job_id of this DownloadApplicationCodeRequest.
 
         任务id。
 

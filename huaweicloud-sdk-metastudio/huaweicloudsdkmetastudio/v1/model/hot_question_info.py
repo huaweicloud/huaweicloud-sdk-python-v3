@@ -35,7 +35,7 @@ class HotQuestionInfo:
     }
 
     def __init__(self, hot_question_id=None, hot_question=None, language=None, robot_id=None, create_time=None, update_time=None):
-        """HotQuestionInfo
+        r"""HotQuestionInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HotQuestionInfo:
 
     @property
     def hot_question_id(self):
-        """Gets the hot_question_id of this HotQuestionInfo.
+        r"""Gets the hot_question_id of this HotQuestionInfo.
 
         热点问题ID。
 
@@ -89,7 +89,7 @@ class HotQuestionInfo:
 
     @hot_question_id.setter
     def hot_question_id(self, hot_question_id):
-        """Sets the hot_question_id of this HotQuestionInfo.
+        r"""Sets the hot_question_id of this HotQuestionInfo.
 
         热点问题ID。
 
@@ -100,7 +100,7 @@ class HotQuestionInfo:
 
     @property
     def hot_question(self):
-        """Gets the hot_question of this HotQuestionInfo.
+        r"""Gets the hot_question of this HotQuestionInfo.
 
         热点问题。
 
@@ -111,7 +111,7 @@ class HotQuestionInfo:
 
     @hot_question.setter
     def hot_question(self, hot_question):
-        """Sets the hot_question of this HotQuestionInfo.
+        r"""Sets the hot_question of this HotQuestionInfo.
 
         热点问题。
 
@@ -122,7 +122,7 @@ class HotQuestionInfo:
 
     @property
     def language(self):
-        """Gets the language of this HotQuestionInfo.
+        r"""Gets the language of this HotQuestionInfo.
 
         :return: The language of this HotQuestionInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -131,7 +131,7 @@ class HotQuestionInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this HotQuestionInfo.
+        r"""Sets the language of this HotQuestionInfo.
 
         :param language: The language of this HotQuestionInfo.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -140,7 +140,7 @@ class HotQuestionInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this HotQuestionInfo.
+        r"""Gets the robot_id of this HotQuestionInfo.
 
         机器人ID。
 
@@ -151,7 +151,7 @@ class HotQuestionInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this HotQuestionInfo.
+        r"""Sets the robot_id of this HotQuestionInfo.
 
         机器人ID。
 
@@ -162,7 +162,7 @@ class HotQuestionInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this HotQuestionInfo.
+        r"""Gets the create_time of this HotQuestionInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -173,7 +173,7 @@ class HotQuestionInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this HotQuestionInfo.
+        r"""Sets the create_time of this HotQuestionInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -184,7 +184,7 @@ class HotQuestionInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this HotQuestionInfo.
+        r"""Gets the update_time of this HotQuestionInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -195,7 +195,7 @@ class HotQuestionInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this HotQuestionInfo.
+        r"""Sets the update_time of this HotQuestionInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

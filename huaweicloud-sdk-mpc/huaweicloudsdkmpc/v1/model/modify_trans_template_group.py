@@ -35,7 +35,7 @@ class ModifyTransTemplateGroup:
     }
 
     def __init__(self, group_id=None, name=None, videos=None, audio=None, video_common=None, common=None):
-        """ModifyTransTemplateGroup
+        r"""ModifyTransTemplateGroup
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ModifyTransTemplateGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ModifyTransTemplateGroup.
+        r"""Gets the group_id of this ModifyTransTemplateGroup.
 
         模板组ID 
 
@@ -88,7 +88,7 @@ class ModifyTransTemplateGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ModifyTransTemplateGroup.
+        r"""Sets the group_id of this ModifyTransTemplateGroup.
 
         模板组ID 
 
@@ -99,7 +99,7 @@ class ModifyTransTemplateGroup:
 
     @property
     def name(self):
-        """Gets the name of this ModifyTransTemplateGroup.
+        r"""Gets the name of this ModifyTransTemplateGroup.
 
         模板组名称 
 
@@ -110,7 +110,7 @@ class ModifyTransTemplateGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyTransTemplateGroup.
+        r"""Sets the name of this ModifyTransTemplateGroup.
 
         模板组名称 
 
@@ -121,7 +121,7 @@ class ModifyTransTemplateGroup:
 
     @property
     def videos(self):
-        """Gets the videos of this ModifyTransTemplateGroup.
+        r"""Gets the videos of this ModifyTransTemplateGroup.
 
         视频信息列表 
 
@@ -132,7 +132,7 @@ class ModifyTransTemplateGroup:
 
     @videos.setter
     def videos(self, videos):
-        """Sets the videos of this ModifyTransTemplateGroup.
+        r"""Sets the videos of this ModifyTransTemplateGroup.
 
         视频信息列表 
 
@@ -143,7 +143,7 @@ class ModifyTransTemplateGroup:
 
     @property
     def audio(self):
-        """Gets the audio of this ModifyTransTemplateGroup.
+        r"""Gets the audio of this ModifyTransTemplateGroup.
 
         :return: The audio of this ModifyTransTemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -152,7 +152,7 @@ class ModifyTransTemplateGroup:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this ModifyTransTemplateGroup.
+        r"""Sets the audio of this ModifyTransTemplateGroup.
 
         :param audio: The audio of this ModifyTransTemplateGroup.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -161,7 +161,7 @@ class ModifyTransTemplateGroup:
 
     @property
     def video_common(self):
-        """Gets the video_common of this ModifyTransTemplateGroup.
+        r"""Gets the video_common of this ModifyTransTemplateGroup.
 
         :return: The video_common of this ModifyTransTemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -170,7 +170,7 @@ class ModifyTransTemplateGroup:
 
     @video_common.setter
     def video_common(self, video_common):
-        """Sets the video_common of this ModifyTransTemplateGroup.
+        r"""Sets the video_common of this ModifyTransTemplateGroup.
 
         :param video_common: The video_common of this ModifyTransTemplateGroup.
         :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -179,7 +179,7 @@ class ModifyTransTemplateGroup:
 
     @property
     def common(self):
-        """Gets the common of this ModifyTransTemplateGroup.
+        r"""Gets the common of this ModifyTransTemplateGroup.
 
         :return: The common of this ModifyTransTemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
@@ -188,7 +188,7 @@ class ModifyTransTemplateGroup:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this ModifyTransTemplateGroup.
+        r"""Sets the common of this ModifyTransTemplateGroup.
 
         :param common: The common of this ModifyTransTemplateGroup.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

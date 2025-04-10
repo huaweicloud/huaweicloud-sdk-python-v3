@@ -36,7 +36,7 @@ class RunTextTranslationResponse(SdkResponse):
     }
 
     def __init__(self, src_text=None, translated_text=None, _from=None, to=None, error_code=None, error_msg=None):
-        """RunTextTranslationResponse
+        r"""RunTextTranslationResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @property
     def src_text(self):
-        """Gets the src_text of this RunTextTranslationResponse.
+        r"""Gets the src_text of this RunTextTranslationResponse.
 
         翻译原文，编码格式为UTF-8。调用失败时无此字段。
 
@@ -90,7 +90,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @src_text.setter
     def src_text(self, src_text):
-        """Sets the src_text of this RunTextTranslationResponse.
+        r"""Sets the src_text of this RunTextTranslationResponse.
 
         翻译原文，编码格式为UTF-8。调用失败时无此字段。
 
@@ -101,7 +101,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @property
     def translated_text(self):
-        """Gets the translated_text of this RunTextTranslationResponse.
+        r"""Gets the translated_text of this RunTextTranslationResponse.
 
         翻译译文，编码格式为UTF-8。调用失败时无此字段。
 
@@ -112,7 +112,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @translated_text.setter
     def translated_text(self, translated_text):
-        """Sets the translated_text of this RunTextTranslationResponse.
+        r"""Sets the translated_text of this RunTextTranslationResponse.
 
         翻译译文，编码格式为UTF-8。调用失败时无此字段。
 
@@ -123,7 +123,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @property
     def _from(self):
-        """Gets the _from of this RunTextTranslationResponse.
+        r"""Gets the _from of this RunTextTranslationResponse.
 
         调用成功时表示源语种（源语种输入为auto时，显示语种识别结果），编码格式为UTF-8。调用失败时无此字段。
 
@@ -134,7 +134,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this RunTextTranslationResponse.
+        r"""Sets the _from of this RunTextTranslationResponse.
 
         调用成功时表示源语种（源语种输入为auto时，显示语种识别结果），编码格式为UTF-8。调用失败时无此字段。
 
@@ -145,7 +145,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @property
     def to(self):
-        """Gets the to of this RunTextTranslationResponse.
+        r"""Gets the to of this RunTextTranslationResponse.
 
         调用成功时表示目标语种，编码格式为UTF-8。调用失败时无此字段。
 
@@ -156,7 +156,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @to.setter
     def to(self, to):
-        """Sets the to of this RunTextTranslationResponse.
+        r"""Sets the to of this RunTextTranslationResponse.
 
         调用成功时表示目标语种，编码格式为UTF-8。调用失败时无此字段。
 
@@ -167,7 +167,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunTextTranslationResponse.
+        r"""Gets the error_code of this RunTextTranslationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -178,7 +178,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunTextTranslationResponse.
+        r"""Sets the error_code of this RunTextTranslationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -189,7 +189,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunTextTranslationResponse.
+        r"""Gets the error_msg of this RunTextTranslationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -200,7 +200,7 @@ class RunTextTranslationResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunTextTranslationResponse.
+        r"""Sets the error_msg of this RunTextTranslationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

@@ -36,7 +36,7 @@ class CreateAppResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, description=None, app_type=None, provider_type=None, create_time=None, update_time=None):
-        """CreateAppResponse
+        r"""CreateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppResponse.
+        r"""Gets the app_id of this CreateAppResponse.
 
         应用模板ID
 
@@ -90,7 +90,7 @@ class CreateAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppResponse.
+        r"""Sets the app_id of this CreateAppResponse.
 
         应用模板ID
 
@@ -101,7 +101,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateAppResponse.
+        r"""Gets the description of this CreateAppResponse.
 
         应用描述
 
@@ -112,7 +112,7 @@ class CreateAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAppResponse.
+        r"""Sets the description of this CreateAppResponse.
 
         应用描述
 
@@ -123,7 +123,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateAppResponse.
+        r"""Gets the app_type of this CreateAppResponse.
 
         应用类型
 
@@ -134,7 +134,7 @@ class CreateAppResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateAppResponse.
+        r"""Sets the app_type of this CreateAppResponse.
 
         应用类型
 
@@ -145,7 +145,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this CreateAppResponse.
+        r"""Gets the provider_type of this CreateAppResponse.
 
         应用来源
 
@@ -156,7 +156,7 @@ class CreateAppResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this CreateAppResponse.
+        r"""Sets the provider_type of this CreateAppResponse.
 
         应用来源
 
@@ -167,7 +167,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateAppResponse.
+        r"""Gets the create_time of this CreateAppResponse.
 
         创建时间
 
@@ -178,7 +178,7 @@ class CreateAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateAppResponse.
+        r"""Sets the create_time of this CreateAppResponse.
 
         创建时间
 
@@ -189,7 +189,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateAppResponse.
+        r"""Gets the update_time of this CreateAppResponse.
 
         最后一次修改时间
 
@@ -200,7 +200,7 @@ class CreateAppResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateAppResponse.
+        r"""Sets the update_time of this CreateAppResponse.
 
         最后一次修改时间
 

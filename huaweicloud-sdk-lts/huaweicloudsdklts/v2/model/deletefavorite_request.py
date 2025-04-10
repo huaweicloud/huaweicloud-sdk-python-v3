@@ -25,7 +25,7 @@ class DeletefavoriteRequest:
     }
 
     def __init__(self, fav_res_id=None):
-        """DeletefavoriteRequest
+        r"""DeletefavoriteRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletefavoriteRequest:
 
     @property
     def fav_res_id(self):
-        """Gets the fav_res_id of this DeletefavoriteRequest.
+        r"""Gets the fav_res_id of this DeletefavoriteRequest.
 
         收藏资源id
 
@@ -53,7 +53,7 @@ class DeletefavoriteRequest:
 
     @fav_res_id.setter
     def fav_res_id(self, fav_res_id):
-        """Sets the fav_res_id of this DeletefavoriteRequest.
+        r"""Sets the fav_res_id of this DeletefavoriteRequest.
 
         收藏资源id
 

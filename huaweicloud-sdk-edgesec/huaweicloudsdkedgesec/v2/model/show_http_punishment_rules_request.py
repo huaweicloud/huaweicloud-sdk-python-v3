@@ -29,7 +29,7 @@ class ShowHttpPunishmentRulesRequest:
     }
 
     def __init__(self, policy_id=None, page=None, pagesize=None):
-        """ShowHttpPunishmentRulesRequest
+        r"""ShowHttpPunishmentRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowHttpPunishmentRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpPunishmentRulesRequest.
+        r"""Gets the policy_id of this ShowHttpPunishmentRulesRequest.
 
         策略id
 
@@ -67,7 +67,7 @@ class ShowHttpPunishmentRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpPunishmentRulesRequest.
+        r"""Sets the policy_id of this ShowHttpPunishmentRulesRequest.
 
         策略id
 
@@ -78,7 +78,7 @@ class ShowHttpPunishmentRulesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpPunishmentRulesRequest.
+        r"""Gets the page of this ShowHttpPunishmentRulesRequest.
 
         分页查询参数，第page页
 
@@ -89,7 +89,7 @@ class ShowHttpPunishmentRulesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpPunishmentRulesRequest.
+        r"""Sets the page of this ShowHttpPunishmentRulesRequest.
 
         分页查询参数，第page页
 
@@ -100,7 +100,7 @@ class ShowHttpPunishmentRulesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpPunishmentRulesRequest.
+        r"""Gets the pagesize of this ShowHttpPunishmentRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -111,7 +111,7 @@ class ShowHttpPunishmentRulesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpPunishmentRulesRequest.
+        r"""Sets the pagesize of this ShowHttpPunishmentRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 

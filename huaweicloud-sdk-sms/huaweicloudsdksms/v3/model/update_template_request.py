@@ -27,7 +27,7 @@ class UpdateTemplateRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateTemplateRequest
+        r"""UpdateTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTemplateRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTemplateRequest.
+        r"""Gets the id of this UpdateTemplateRequest.
 
         需要修改信息的模板的ID
 
@@ -60,7 +60,7 @@ class UpdateTemplateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTemplateRequest.
+        r"""Sets the id of this UpdateTemplateRequest.
 
         需要修改信息的模板的ID
 
@@ -71,7 +71,7 @@ class UpdateTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTemplateRequest.
+        r"""Gets the body of this UpdateTemplateRequest.
 
         :return: The body of this UpdateTemplateRequest.
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTemplateReq`
@@ -80,7 +80,7 @@ class UpdateTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTemplateRequest.
+        r"""Sets the body of this UpdateTemplateRequest.
 
         :param body: The body of this UpdateTemplateRequest.
         :type body: :class:`huaweicloudsdksms.v3.UpdateTemplateReq`

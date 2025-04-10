@@ -28,7 +28,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeTrainTicketResponse
+        r"""RecognizeTrainTicketResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeTrainTicketResponse.
+        r"""Gets the result of this RecognizeTrainTicketResponse.
 
         :return: The result of this RecognizeTrainTicketResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TrainTicketResult`
@@ -60,7 +60,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeTrainTicketResponse.
+        r"""Sets the result of this RecognizeTrainTicketResponse.
 
         :param result: The result of this RecognizeTrainTicketResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TrainTicketResult`
@@ -69,7 +69,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeTrainTicketResponse.
+        r"""Gets the x_request_id of this RecognizeTrainTicketResponse.
 
         :return: The x_request_id of this RecognizeTrainTicketResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeTrainTicketResponse.
+        r"""Sets the x_request_id of this RecognizeTrainTicketResponse.
 
         :param x_request_id: The x_request_id of this RecognizeTrainTicketResponse.
         :type x_request_id: str

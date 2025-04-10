@@ -27,7 +27,7 @@ class UploadStepImgRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UploadStepImgRequest
+        r"""UploadStepImgRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UploadStepImgRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UploadStepImgRequest.
+        r"""Gets the project_id of this UploadStepImgRequest.
 
         项目id
 
@@ -60,7 +60,7 @@ class UploadStepImgRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UploadStepImgRequest.
+        r"""Sets the project_id of this UploadStepImgRequest.
 
         项目id
 
@@ -71,7 +71,7 @@ class UploadStepImgRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadStepImgRequest.
+        r"""Gets the body of this UploadStepImgRequest.
 
         :return: The body of this UploadStepImgRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UploadStepImgRequestBody`
@@ -80,7 +80,7 @@ class UploadStepImgRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadStepImgRequest.
+        r"""Sets the body of this UploadStepImgRequest.
 
         :param body: The body of this UploadStepImgRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.UploadStepImgRequestBody`

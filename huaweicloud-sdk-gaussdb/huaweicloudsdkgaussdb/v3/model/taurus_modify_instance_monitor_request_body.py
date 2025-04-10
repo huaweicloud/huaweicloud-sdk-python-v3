@@ -27,7 +27,7 @@ class TaurusModifyInstanceMonitorRequestBody:
     }
 
     def __init__(self, monitor_switch=None, period=None):
-        """TaurusModifyInstanceMonitorRequestBody
+        r"""TaurusModifyInstanceMonitorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TaurusModifyInstanceMonitorRequestBody:
 
     @property
     def monitor_switch(self):
-        """Gets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
+        r"""Gets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
 
         实例秒级监控开关。  - true：开启 - false：关闭
 
@@ -60,7 +60,7 @@ class TaurusModifyInstanceMonitorRequestBody:
 
     @monitor_switch.setter
     def monitor_switch(self, monitor_switch):
-        """Sets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
+        r"""Sets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
 
         实例秒级监控开关。  - true：开启 - false：关闭
 
@@ -71,7 +71,7 @@ class TaurusModifyInstanceMonitorRequestBody:
 
     @property
     def period(self):
-        """Gets the period of this TaurusModifyInstanceMonitorRequestBody.
+        r"""Gets the period of this TaurusModifyInstanceMonitorRequestBody.
 
         采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。取值：  - 1：采集周期为1s。 - 5：采集周期为5s。
 
@@ -82,7 +82,7 @@ class TaurusModifyInstanceMonitorRequestBody:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this TaurusModifyInstanceMonitorRequestBody.
+        r"""Sets the period of this TaurusModifyInstanceMonitorRequestBody.
 
         采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。取值：  - 1：采集周期为1s。 - 5：采集周期为5s。
 

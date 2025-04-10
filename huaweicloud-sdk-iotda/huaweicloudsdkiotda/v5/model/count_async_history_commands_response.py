@@ -26,7 +26,7 @@ class CountAsyncHistoryCommandsResponse(SdkResponse):
     }
 
     def __init__(self, count=None):
-        """CountAsyncHistoryCommandsResponse
+        r"""CountAsyncHistoryCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountAsyncHistoryCommandsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this CountAsyncHistoryCommandsResponse.
+        r"""Gets the count of this CountAsyncHistoryCommandsResponse.
 
         满足查询条件的记录总数。
 
@@ -55,7 +55,7 @@ class CountAsyncHistoryCommandsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CountAsyncHistoryCommandsResponse.
+        r"""Sets the count of this CountAsyncHistoryCommandsResponse.
 
         满足查询条件的记录总数。
 

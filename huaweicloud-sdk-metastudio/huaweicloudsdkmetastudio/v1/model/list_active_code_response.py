@@ -34,7 +34,7 @@ class ListActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None, x_request_id=None):
-        """ListActiveCodeResponse
+        r"""ListActiveCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListActiveCodeResponse.
+        r"""Gets the offset of this ListActiveCodeResponse.
 
         与第一条数据的偏移量
 
@@ -83,7 +83,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListActiveCodeResponse.
+        r"""Sets the offset of this ListActiveCodeResponse.
 
         与第一条数据的偏移量
 
@@ -94,7 +94,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListActiveCodeResponse.
+        r"""Gets the limit of this ListActiveCodeResponse.
 
         页面大小
 
@@ -105,7 +105,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListActiveCodeResponse.
+        r"""Sets the limit of this ListActiveCodeResponse.
 
         页面大小
 
@@ -116,7 +116,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListActiveCodeResponse.
+        r"""Gets the count of this ListActiveCodeResponse.
 
         总数量
 
@@ -127,7 +127,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListActiveCodeResponse.
+        r"""Sets the count of this ListActiveCodeResponse.
 
         总数量
 
@@ -138,7 +138,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListActiveCodeResponse.
+        r"""Gets the data of this ListActiveCodeResponse.
 
         激活码信息
 
@@ -149,7 +149,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListActiveCodeResponse.
+        r"""Sets the data of this ListActiveCodeResponse.
 
         激活码信息
 
@@ -160,7 +160,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListActiveCodeResponse.
+        r"""Gets the x_request_id of this ListActiveCodeResponse.
 
         :return: The x_request_id of this ListActiveCodeResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListActiveCodeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListActiveCodeResponse.
+        r"""Sets the x_request_id of this ListActiveCodeResponse.
 
         :param x_request_id: The x_request_id of this ListActiveCodeResponse.
         :type x_request_id: str

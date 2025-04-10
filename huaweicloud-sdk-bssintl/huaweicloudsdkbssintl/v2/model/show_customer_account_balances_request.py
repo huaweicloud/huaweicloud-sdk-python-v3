@@ -23,7 +23,7 @@ class ShowCustomerAccountBalancesRequest:
     }
 
     def __init__(self):
-        """ShowCustomerAccountBalancesRequest
+        r"""ShowCustomerAccountBalancesRequest
 
         The model defined in huaweicloud sdk
 

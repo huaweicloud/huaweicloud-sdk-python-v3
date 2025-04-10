@@ -28,7 +28,7 @@ class CreateAadDomainResponse(SdkResponse):
     }
 
     def __init__(self, cname=None, domain_id=None):
-        """CreateAadDomainResponse
+        r"""CreateAadDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAadDomainResponse(SdkResponse):
 
     @property
     def cname(self):
-        """Gets the cname of this CreateAadDomainResponse.
+        r"""Gets the cname of this CreateAadDomainResponse.
 
         高防提供的CNAME地址
 
@@ -62,7 +62,7 @@ class CreateAadDomainResponse(SdkResponse):
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this CreateAadDomainResponse.
+        r"""Sets the cname of this CreateAadDomainResponse.
 
         高防提供的CNAME地址
 
@@ -73,7 +73,7 @@ class CreateAadDomainResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateAadDomainResponse.
+        r"""Gets the domain_id of this CreateAadDomainResponse.
 
         域名id
 
@@ -84,7 +84,7 @@ class CreateAadDomainResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateAadDomainResponse.
+        r"""Sets the domain_id of this CreateAadDomainResponse.
 
         域名id
 

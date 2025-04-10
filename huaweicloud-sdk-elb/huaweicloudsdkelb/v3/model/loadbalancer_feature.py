@@ -29,7 +29,7 @@ class LoadbalancerFeature:
     }
 
     def __init__(self, feature=None, type=None, value=None):
-        """LoadbalancerFeature
+        r"""LoadbalancerFeature
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LoadbalancerFeature:
 
     @property
     def feature(self):
-        """Gets the feature of this LoadbalancerFeature.
+        r"""Gets the feature of this LoadbalancerFeature.
 
         参数解释：特性名称。
 
@@ -65,7 +65,7 @@ class LoadbalancerFeature:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this LoadbalancerFeature.
+        r"""Sets the feature of this LoadbalancerFeature.
 
         参数解释：特性名称。
 
@@ -76,7 +76,7 @@ class LoadbalancerFeature:
 
     @property
     def type(self):
-        """Gets the type of this LoadbalancerFeature.
+        r"""Gets the type of this LoadbalancerFeature.
 
         参数解释：特性值(value字段)的类型，如：INT，表示整型。
 
@@ -87,7 +87,7 @@ class LoadbalancerFeature:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LoadbalancerFeature.
+        r"""Sets the type of this LoadbalancerFeature.
 
         参数解释：特性值(value字段)的类型，如：INT，表示整型。
 
@@ -98,7 +98,7 @@ class LoadbalancerFeature:
 
     @property
     def value(self):
-        """Gets the value of this LoadbalancerFeature.
+        r"""Gets the value of this LoadbalancerFeature.
 
         参数解释：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。
 
@@ -109,7 +109,7 @@ class LoadbalancerFeature:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this LoadbalancerFeature.
+        r"""Sets the value of this LoadbalancerFeature.
 
         参数解释：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。
 

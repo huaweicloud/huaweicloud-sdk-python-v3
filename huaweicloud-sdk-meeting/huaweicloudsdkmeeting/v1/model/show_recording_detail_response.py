@@ -48,7 +48,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     }
 
     def __init__(self, conf_uuid=None, conf_id=None, url=None, rcd_time=None, rcd_size=None, subject=None, scheduser_name=None, start_time=None, is_decode_finish=None, decode_end_time=None, available=None, record_auth_type=None):
-        """ShowRecordingDetailResponse
+        r"""ShowRecordingDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this ShowRecordingDetailResponse.
+        r"""Gets the conf_uuid of this ShowRecordingDetailResponse.
 
         会议UUID。
 
@@ -132,7 +132,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this ShowRecordingDetailResponse.
+        r"""Sets the conf_uuid of this ShowRecordingDetailResponse.
 
         会议UUID。
 
@@ -143,7 +143,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def conf_id(self):
-        """Gets the conf_id of this ShowRecordingDetailResponse.
+        r"""Gets the conf_id of this ShowRecordingDetailResponse.
 
         会议ID。
 
@@ -154,7 +154,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @conf_id.setter
     def conf_id(self, conf_id):
-        """Sets the conf_id of this ShowRecordingDetailResponse.
+        r"""Sets the conf_id of this ShowRecordingDetailResponse.
 
         会议ID。
 
@@ -165,7 +165,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowRecordingDetailResponse.
+        r"""Gets the url of this ShowRecordingDetailResponse.
 
         录播观看地址。
 
@@ -176,7 +176,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowRecordingDetailResponse.
+        r"""Sets the url of this ShowRecordingDetailResponse.
 
         录播观看地址。
 
@@ -187,7 +187,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def rcd_time(self):
-        """Gets the rcd_time of this ShowRecordingDetailResponse.
+        r"""Gets the rcd_time of this ShowRecordingDetailResponse.
 
         录制时长（单位秒）。
 
@@ -198,7 +198,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @rcd_time.setter
     def rcd_time(self, rcd_time):
-        """Sets the rcd_time of this ShowRecordingDetailResponse.
+        r"""Sets the rcd_time of this ShowRecordingDetailResponse.
 
         录制时长（单位秒）。
 
@@ -209,7 +209,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def rcd_size(self):
-        """Gets the rcd_size of this ShowRecordingDetailResponse.
+        r"""Gets the rcd_size of this ShowRecordingDetailResponse.
 
         录制文件大小（MB）。
 
@@ -220,7 +220,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @rcd_size.setter
     def rcd_size(self, rcd_size):
-        """Sets the rcd_size of this ShowRecordingDetailResponse.
+        r"""Sets the rcd_size of this ShowRecordingDetailResponse.
 
         录制文件大小（MB）。
 
@@ -231,7 +231,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def subject(self):
-        """Gets the subject of this ShowRecordingDetailResponse.
+        r"""Gets the subject of this ShowRecordingDetailResponse.
 
         会议主题。
 
@@ -242,7 +242,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ShowRecordingDetailResponse.
+        r"""Sets the subject of this ShowRecordingDetailResponse.
 
         会议主题。
 
@@ -253,7 +253,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def scheduser_name(self):
-        """Gets the scheduser_name of this ShowRecordingDetailResponse.
+        r"""Gets the scheduser_name of this ShowRecordingDetailResponse.
 
         会议预订者名称。
 
@@ -264,7 +264,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @scheduser_name.setter
     def scheduser_name(self, scheduser_name):
-        """Sets the scheduser_name of this ShowRecordingDetailResponse.
+        r"""Sets the scheduser_name of this ShowRecordingDetailResponse.
 
         会议预订者名称。
 
@@ -275,7 +275,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowRecordingDetailResponse.
+        r"""Gets the start_time of this ShowRecordingDetailResponse.
 
         会议开始时间。
 
@@ -286,7 +286,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowRecordingDetailResponse.
+        r"""Sets the start_time of this ShowRecordingDetailResponse.
 
         会议开始时间。
 
@@ -297,7 +297,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def is_decode_finish(self):
-        """Gets the is_decode_finish of this ShowRecordingDetailResponse.
+        r"""Gets the is_decode_finish of this ShowRecordingDetailResponse.
 
         录制文件是否转码完成。
 
@@ -308,7 +308,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @is_decode_finish.setter
     def is_decode_finish(self, is_decode_finish):
-        """Sets the is_decode_finish of this ShowRecordingDetailResponse.
+        r"""Sets the is_decode_finish of this ShowRecordingDetailResponse.
 
         录制文件是否转码完成。
 
@@ -319,7 +319,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def decode_end_time(self):
-        """Gets the decode_end_time of this ShowRecordingDetailResponse.
+        r"""Gets the decode_end_time of this ShowRecordingDetailResponse.
 
         录制文件预计转码完成时间。
 
@@ -330,7 +330,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @decode_end_time.setter
     def decode_end_time(self, decode_end_time):
-        """Sets the decode_end_time of this ShowRecordingDetailResponse.
+        r"""Sets the decode_end_time of this ShowRecordingDetailResponse.
 
         录制文件预计转码完成时间。
 
@@ -341,7 +341,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def available(self):
-        """Gets the available of this ShowRecordingDetailResponse.
+        r"""Gets the available of this ShowRecordingDetailResponse.
 
         录播文件是否可观看。
 
@@ -352,7 +352,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @available.setter
     def available(self, available):
-        """Sets the available of this ShowRecordingDetailResponse.
+        r"""Sets the available of this ShowRecordingDetailResponse.
 
         录播文件是否可观看。
 
@@ -363,7 +363,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @property
     def record_auth_type(self):
-        """Gets the record_auth_type of this ShowRecordingDetailResponse.
+        r"""Gets the record_auth_type of this ShowRecordingDetailResponse.
 
         观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
 
@@ -374,7 +374,7 @@ class ShowRecordingDetailResponse(SdkResponse):
 
     @record_auth_type.setter
     def record_auth_type(self, record_auth_type):
-        """Sets the record_auth_type of this ShowRecordingDetailResponse.
+        r"""Sets the record_auth_type of this ShowRecordingDetailResponse.
 
         观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
 

@@ -57,7 +57,7 @@ class TrainingJobBasicInfo:
     }
 
     def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, is_only_human_model=None):
-        """TrainingJobBasicInfo
+        r"""TrainingJobBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class TrainingJobBasicInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this TrainingJobBasicInfo.
+        r"""Gets the job_id of this TrainingJobBasicInfo.
 
         任务ID。
 
@@ -163,7 +163,7 @@ class TrainingJobBasicInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this TrainingJobBasicInfo.
+        r"""Sets the job_id of this TrainingJobBasicInfo.
 
         任务ID。
 
@@ -174,7 +174,7 @@ class TrainingJobBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this TrainingJobBasicInfo.
+        r"""Gets the name of this TrainingJobBasicInfo.
 
         分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
 
@@ -185,7 +185,7 @@ class TrainingJobBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TrainingJobBasicInfo.
+        r"""Sets the name of this TrainingJobBasicInfo.
 
         分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
 
@@ -196,7 +196,7 @@ class TrainingJobBasicInfo:
 
     @property
     def state(self):
-        """Gets the state of this TrainingJobBasicInfo.
+        r"""Gets the state of this TrainingJobBasicInfo.
 
         任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
 
@@ -207,7 +207,7 @@ class TrainingJobBasicInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TrainingJobBasicInfo.
+        r"""Sets the state of this TrainingJobBasicInfo.
 
         任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
 
@@ -218,7 +218,7 @@ class TrainingJobBasicInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this TrainingJobBasicInfo.
+        r"""Gets the asset_id of this TrainingJobBasicInfo.
 
         模型资产ID。
 
@@ -229,7 +229,7 @@ class TrainingJobBasicInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this TrainingJobBasicInfo.
+        r"""Sets the asset_id of this TrainingJobBasicInfo.
 
         模型资产ID。
 
@@ -240,7 +240,7 @@ class TrainingJobBasicInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TrainingJobBasicInfo.
+        r"""Gets the project_id of this TrainingJobBasicInfo.
 
         模型资产所属项目ID。
 
@@ -251,7 +251,7 @@ class TrainingJobBasicInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TrainingJobBasicInfo.
+        r"""Sets the project_id of this TrainingJobBasicInfo.
 
         模型资产所属项目ID。
 
@@ -262,7 +262,7 @@ class TrainingJobBasicInfo:
 
     @property
     def cover_download_url(self):
-        """Gets the cover_download_url of this TrainingJobBasicInfo.
+        r"""Gets the cover_download_url of this TrainingJobBasicInfo.
 
         分身数字人模型封面下载URL。URL有效期24小时。
 
@@ -273,7 +273,7 @@ class TrainingJobBasicInfo:
 
     @cover_download_url.setter
     def cover_download_url(self, cover_download_url):
-        """Sets the cover_download_url of this TrainingJobBasicInfo.
+        r"""Sets the cover_download_url of this TrainingJobBasicInfo.
 
         分身数字人模型封面下载URL。URL有效期24小时。
 
@@ -284,7 +284,7 @@ class TrainingJobBasicInfo:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this TrainingJobBasicInfo.
+        r"""Gets the last_update_time of this TrainingJobBasicInfo.
 
         用户最近一次更新任务的时间（包括租户创建或者重新提交），格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -295,7 +295,7 @@ class TrainingJobBasicInfo:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this TrainingJobBasicInfo.
+        r"""Sets the last_update_time of this TrainingJobBasicInfo.
 
         用户最近一次更新任务的时间（包括租户创建或者重新提交），格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -306,7 +306,7 @@ class TrainingJobBasicInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TrainingJobBasicInfo.
+        r"""Gets the create_time of this TrainingJobBasicInfo.
 
         创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -317,7 +317,7 @@ class TrainingJobBasicInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TrainingJobBasicInfo.
+        r"""Sets the create_time of this TrainingJobBasicInfo.
 
         创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -328,7 +328,7 @@ class TrainingJobBasicInfo:
 
     @property
     def contact(self):
-        """Gets the contact of this TrainingJobBasicInfo.
+        r"""Gets the contact of this TrainingJobBasicInfo.
 
         分身数字人训练任务创建者的手机号。
 
@@ -339,7 +339,7 @@ class TrainingJobBasicInfo:
 
     @contact.setter
     def contact(self, contact):
-        """Sets the contact of this TrainingJobBasicInfo.
+        r"""Sets the contact of this TrainingJobBasicInfo.
 
         分身数字人训练任务创建者的手机号。
 
@@ -350,7 +350,7 @@ class TrainingJobBasicInfo:
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this TrainingJobBasicInfo.
+        r"""Gets the batch_name of this TrainingJobBasicInfo.
 
         分身数字人训练任务的批次名称。
 
@@ -361,7 +361,7 @@ class TrainingJobBasicInfo:
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this TrainingJobBasicInfo.
+        r"""Sets the batch_name of this TrainingJobBasicInfo.
 
         分身数字人训练任务的批次名称。
 
@@ -372,7 +372,7 @@ class TrainingJobBasicInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this TrainingJobBasicInfo.
+        r"""Gets the tags of this TrainingJobBasicInfo.
 
         分身数字人训练任务标签。
 
@@ -383,7 +383,7 @@ class TrainingJobBasicInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TrainingJobBasicInfo.
+        r"""Sets the tags of this TrainingJobBasicInfo.
 
         分身数字人训练任务标签。
 
@@ -394,7 +394,7 @@ class TrainingJobBasicInfo:
 
     @property
     def model_version(self):
-        """Gets the model_version of this TrainingJobBasicInfo.
+        r"""Gets the model_version of this TrainingJobBasicInfo.
 
         分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
@@ -405,7 +405,7 @@ class TrainingJobBasicInfo:
 
     @model_version.setter
     def model_version(self, model_version):
-        """Sets the model_version of this TrainingJobBasicInfo.
+        r"""Sets the model_version of this TrainingJobBasicInfo.
 
         分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
@@ -416,7 +416,7 @@ class TrainingJobBasicInfo:
 
     @property
     def matting_type(self):
-        """Gets the matting_type of this TrainingJobBasicInfo.
+        r"""Gets the matting_type of this TrainingJobBasicInfo.
 
         抠图类型。默认是AI。 * AI：AI抠图 * MANUAL：人工抠图
 
@@ -427,7 +427,7 @@ class TrainingJobBasicInfo:
 
     @matting_type.setter
     def matting_type(self, matting_type):
-        """Sets the matting_type of this TrainingJobBasicInfo.
+        r"""Sets the matting_type of this TrainingJobBasicInfo.
 
         抠图类型。默认是AI。 * AI：AI抠图 * MANUAL：人工抠图
 
@@ -438,7 +438,7 @@ class TrainingJobBasicInfo:
 
     @property
     def model_resolution(self):
-        """Gets the model_resolution of this TrainingJobBasicInfo.
+        r"""Gets the model_resolution of this TrainingJobBasicInfo.
 
         分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
@@ -449,7 +449,7 @@ class TrainingJobBasicInfo:
 
     @model_resolution.setter
     def model_resolution(self, model_resolution):
-        """Sets the model_resolution of this TrainingJobBasicInfo.
+        r"""Sets the model_resolution of this TrainingJobBasicInfo.
 
         分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
@@ -460,7 +460,7 @@ class TrainingJobBasicInfo:
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this TrainingJobBasicInfo.
+        r"""Gets the app_user_id of this TrainingJobBasicInfo.
 
         自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
 
@@ -471,7 +471,7 @@ class TrainingJobBasicInfo:
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this TrainingJobBasicInfo.
+        r"""Sets the app_user_id of this TrainingJobBasicInfo.
 
         自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
 
@@ -482,7 +482,7 @@ class TrainingJobBasicInfo:
 
     @property
     def is_flexus(self):
-        """Gets the is_flexus of this TrainingJobBasicInfo.
+        r"""Gets the is_flexus of this TrainingJobBasicInfo.
 
         是否是基础版的形象训练
 
@@ -493,7 +493,7 @@ class TrainingJobBasicInfo:
 
     @is_flexus.setter
     def is_flexus(self, is_flexus):
-        """Sets the is_flexus of this TrainingJobBasicInfo.
+        r"""Sets the is_flexus of this TrainingJobBasicInfo.
 
         是否是基础版的形象训练
 
@@ -504,7 +504,7 @@ class TrainingJobBasicInfo:
 
     @property
     def is_only_human_model(self):
-        """Gets the is_only_human_model of this TrainingJobBasicInfo.
+        r"""Gets the is_only_human_model of this TrainingJobBasicInfo.
 
         是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
 
@@ -515,7 +515,7 @@ class TrainingJobBasicInfo:
 
     @is_only_human_model.setter
     def is_only_human_model(self, is_only_human_model):
-        """Sets the is_only_human_model of this TrainingJobBasicInfo.
+        r"""Sets the is_only_human_model of this TrainingJobBasicInfo.
 
         是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
 

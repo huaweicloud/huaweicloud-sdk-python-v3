@@ -26,7 +26,7 @@ class UnfreezePubResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UnfreezePubResponse
+        r"""UnfreezePubResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnfreezePubResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UnfreezePubResponse.
+        r"""Gets the data of this UnfreezePubResponse.
 
         :return: The data of this UnfreezePubResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UnfreezePubResponseModel`
@@ -53,7 +53,7 @@ class UnfreezePubResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UnfreezePubResponse.
+        r"""Sets the data of this UnfreezePubResponse.
 
         :param data: The data of this UnfreezePubResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.UnfreezePubResponseModel`

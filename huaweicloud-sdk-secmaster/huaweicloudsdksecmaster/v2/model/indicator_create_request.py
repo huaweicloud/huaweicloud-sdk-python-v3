@@ -25,7 +25,7 @@ class IndicatorCreateRequest:
     }
 
     def __init__(self, data_object=None):
-        """IndicatorCreateRequest
+        r"""IndicatorCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class IndicatorCreateRequest:
 
     @property
     def data_object(self):
-        """Gets the data_object of this IndicatorCreateRequest.
+        r"""Gets the data_object of this IndicatorCreateRequest.
 
         :return: The data_object of this IndicatorCreateRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetail`
@@ -51,7 +51,7 @@ class IndicatorCreateRequest:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this IndicatorCreateRequest.
+        r"""Sets the data_object of this IndicatorCreateRequest.
 
         :param data_object: The data_object of this IndicatorCreateRequest.
         :type data_object: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetail`

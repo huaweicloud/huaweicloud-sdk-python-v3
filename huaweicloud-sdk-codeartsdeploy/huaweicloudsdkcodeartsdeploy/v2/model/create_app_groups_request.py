@@ -27,7 +27,7 @@ class CreateAppGroupsRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateAppGroupsRequest
+        r"""CreateAppGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAppGroupsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAppGroupsRequest.
+        r"""Gets the project_id of this CreateAppGroupsRequest.
 
         项目Id
 
@@ -60,7 +60,7 @@ class CreateAppGroupsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAppGroupsRequest.
+        r"""Sets the project_id of this CreateAppGroupsRequest.
 
         项目Id
 
@@ -71,7 +71,7 @@ class CreateAppGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppGroupsRequest.
+        r"""Gets the body of this CreateAppGroupsRequest.
 
         :return: The body of this CreateAppGroupsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateAppGroupsRequestBody`
@@ -80,7 +80,7 @@ class CreateAppGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppGroupsRequest.
+        r"""Sets the body of this CreateAppGroupsRequest.
 
         :param body: The body of this CreateAppGroupsRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateAppGroupsRequestBody`

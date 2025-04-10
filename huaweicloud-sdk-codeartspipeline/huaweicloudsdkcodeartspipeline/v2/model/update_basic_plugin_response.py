@@ -26,7 +26,7 @@ class UpdateBasicPluginResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateBasicPluginResponse
+        r"""UpdateBasicPluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBasicPluginResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateBasicPluginResponse.
+        r"""Gets the body of this UpdateBasicPluginResponse.
 
         :return: The body of this UpdateBasicPluginResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateBasicPluginResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBasicPluginResponse.
+        r"""Sets the body of this UpdateBasicPluginResponse.
 
         :param body: The body of this UpdateBasicPluginResponse.
         :type body: str

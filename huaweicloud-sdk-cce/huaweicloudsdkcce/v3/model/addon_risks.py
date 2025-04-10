@@ -27,7 +27,7 @@ class AddonRisks:
     }
 
     def __init__(self, addon_template_name=None, alias=None):
-        """AddonRisks
+        r"""AddonRisks
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddonRisks:
 
     @property
     def addon_template_name(self):
-        """Gets the addon_template_name of this AddonRisks.
+        r"""Gets the addon_template_name of this AddonRisks.
 
         插件模板名称
 
@@ -61,7 +61,7 @@ class AddonRisks:
 
     @addon_template_name.setter
     def addon_template_name(self, addon_template_name):
-        """Sets the addon_template_name of this AddonRisks.
+        r"""Sets the addon_template_name of this AddonRisks.
 
         插件模板名称
 
@@ -72,7 +72,7 @@ class AddonRisks:
 
     @property
     def alias(self):
-        """Gets the alias of this AddonRisks.
+        r"""Gets the alias of this AddonRisks.
 
         插件别名
 
@@ -83,7 +83,7 @@ class AddonRisks:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AddonRisks.
+        r"""Sets the alias of this AddonRisks.
 
         插件别名
 

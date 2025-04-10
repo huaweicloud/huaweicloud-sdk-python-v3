@@ -25,7 +25,7 @@ class ListTableByNameInput:
     }
 
     def __init__(self, table_names=None):
-        """ListTableByNameInput
+        r"""ListTableByNameInput
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTableByNameInput:
 
     @property
     def table_names(self):
-        """Gets the table_names of this ListTableByNameInput.
+        r"""Gets the table_names of this ListTableByNameInput.
 
         被查询表的名字列表
 
@@ -53,7 +53,7 @@ class ListTableByNameInput:
 
     @table_names.setter
     def table_names(self, table_names):
-        """Sets the table_names of this ListTableByNameInput.
+        r"""Sets the table_names of this ListTableByNameInput.
 
         被查询表的名字列表
 

@@ -35,7 +35,7 @@ class BigkeysBody:
     }
 
     def __init__(self, name=None, type=None, shard=None, db=None, size=None, unit=None):
-        """BigkeysBody
+        r"""BigkeysBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BigkeysBody:
 
     @property
     def name(self):
-        """Gets the name of this BigkeysBody.
+        r"""Gets the name of this BigkeysBody.
 
         key名称
 
@@ -89,7 +89,7 @@ class BigkeysBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BigkeysBody.
+        r"""Sets the name of this BigkeysBody.
 
         key名称
 
@@ -100,7 +100,7 @@ class BigkeysBody:
 
     @property
     def type(self):
-        """Gets the type of this BigkeysBody.
+        r"""Gets the type of this BigkeysBody.
 
         key类型
 
@@ -111,7 +111,7 @@ class BigkeysBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BigkeysBody.
+        r"""Sets the type of this BigkeysBody.
 
         key类型
 
@@ -122,7 +122,7 @@ class BigkeysBody:
 
     @property
     def shard(self):
-        """Gets the shard of this BigkeysBody.
+        r"""Gets the shard of this BigkeysBody.
 
         大key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
@@ -133,7 +133,7 @@ class BigkeysBody:
 
     @shard.setter
     def shard(self, shard):
-        """Sets the shard of this BigkeysBody.
+        r"""Sets the shard of this BigkeysBody.
 
         大key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
@@ -144,7 +144,7 @@ class BigkeysBody:
 
     @property
     def db(self):
-        """Gets the db of this BigkeysBody.
+        r"""Gets the db of this BigkeysBody.
 
         大key所在的db
 
@@ -155,7 +155,7 @@ class BigkeysBody:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this BigkeysBody.
+        r"""Sets the db of this BigkeysBody.
 
         大key所在的db
 
@@ -166,7 +166,7 @@ class BigkeysBody:
 
     @property
     def size(self):
-        """Gets the size of this BigkeysBody.
+        r"""Gets the size of this BigkeysBody.
 
         key的value大小。
 
@@ -177,7 +177,7 @@ class BigkeysBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BigkeysBody.
+        r"""Sets the size of this BigkeysBody.
 
         key的value大小。
 
@@ -188,7 +188,7 @@ class BigkeysBody:
 
     @property
     def unit(self):
-        """Gets the unit of this BigkeysBody.
+        r"""Gets the unit of this BigkeysBody.
 
         key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
 
@@ -199,7 +199,7 @@ class BigkeysBody:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this BigkeysBody.
+        r"""Sets the unit of this BigkeysBody.
 
         key大小的单位。type为string时，单位是：byte；type为list/set/zset/hash时，单位是：count
 

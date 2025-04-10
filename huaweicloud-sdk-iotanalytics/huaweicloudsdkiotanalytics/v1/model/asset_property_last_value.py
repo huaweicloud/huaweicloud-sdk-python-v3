@@ -29,7 +29,7 @@ class AssetPropertyLastValue:
     }
 
     def __init__(self, property_name=None, value=None, timestamp=None):
-        """AssetPropertyLastValue
+        r"""AssetPropertyLastValue
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AssetPropertyLastValue:
 
     @property
     def property_name(self):
-        """Gets the property_name of this AssetPropertyLastValue.
+        r"""Gets the property_name of this AssetPropertyLastValue.
 
         资产属性名称
 
@@ -68,7 +68,7 @@ class AssetPropertyLastValue:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this AssetPropertyLastValue.
+        r"""Sets the property_name of this AssetPropertyLastValue.
 
         资产属性名称
 
@@ -79,7 +79,7 @@ class AssetPropertyLastValue:
 
     @property
     def value(self):
-        """Gets the value of this AssetPropertyLastValue.
+        r"""Gets the value of this AssetPropertyLastValue.
 
         资产属性值
 
@@ -90,7 +90,7 @@ class AssetPropertyLastValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AssetPropertyLastValue.
+        r"""Sets the value of this AssetPropertyLastValue.
 
         资产属性值
 
@@ -101,7 +101,7 @@ class AssetPropertyLastValue:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this AssetPropertyLastValue.
+        r"""Gets the timestamp of this AssetPropertyLastValue.
 
         资产属性值最后更新时间
 
@@ -112,7 +112,7 @@ class AssetPropertyLastValue:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this AssetPropertyLastValue.
+        r"""Sets the timestamp of this AssetPropertyLastValue.
 
         资产属性值最后更新时间
 

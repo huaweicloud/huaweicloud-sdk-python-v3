@@ -39,7 +39,7 @@ class CreateCustomRuleRequestBody:
     }
 
     def __init__(self, time=None, start=None, terminal=None, description=None, conditions=None, action=None, priority=None, name=None):
-        """CreateCustomRuleRequestBody
+        r"""CreateCustomRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def time(self):
-        """Gets the time of this CreateCustomRuleRequestBody.
+        r"""Gets the time of this CreateCustomRuleRequestBody.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -98,7 +98,7 @@ class CreateCustomRuleRequestBody:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this CreateCustomRuleRequestBody.
+        r"""Sets the time of this CreateCustomRuleRequestBody.
 
         精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
 
@@ -109,7 +109,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def start(self):
-        """Gets the start of this CreateCustomRuleRequestBody.
+        r"""Gets the start of this CreateCustomRuleRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -120,7 +120,7 @@ class CreateCustomRuleRequestBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this CreateCustomRuleRequestBody.
+        r"""Sets the start of this CreateCustomRuleRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -131,7 +131,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this CreateCustomRuleRequestBody.
+        r"""Gets the terminal of this CreateCustomRuleRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -142,7 +142,7 @@ class CreateCustomRuleRequestBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this CreateCustomRuleRequestBody.
+        r"""Sets the terminal of this CreateCustomRuleRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才需要填写该参数。
 
@@ -153,7 +153,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateCustomRuleRequestBody.
+        r"""Gets the description of this CreateCustomRuleRequestBody.
 
         规则描述
 
@@ -164,7 +164,7 @@ class CreateCustomRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCustomRuleRequestBody.
+        r"""Sets the description of this CreateCustomRuleRequestBody.
 
         规则描述
 
@@ -175,7 +175,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateCustomRuleRequestBody.
+        r"""Gets the conditions of this CreateCustomRuleRequestBody.
 
         匹配条件列表
 
@@ -186,7 +186,7 @@ class CreateCustomRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateCustomRuleRequestBody.
+        r"""Sets the conditions of this CreateCustomRuleRequestBody.
 
         匹配条件列表
 
@@ -197,7 +197,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CreateCustomRuleRequestBody.
+        r"""Gets the action of this CreateCustomRuleRequestBody.
 
         :return: The action of this CreateCustomRuleRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -206,7 +206,7 @@ class CreateCustomRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateCustomRuleRequestBody.
+        r"""Sets the action of this CreateCustomRuleRequestBody.
 
         :param action: The action of this CreateCustomRuleRequestBody.
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
@@ -215,7 +215,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateCustomRuleRequestBody.
+        r"""Gets the priority of this CreateCustomRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -226,7 +226,7 @@ class CreateCustomRuleRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateCustomRuleRequestBody.
+        r"""Sets the priority of this CreateCustomRuleRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -237,7 +237,7 @@ class CreateCustomRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomRuleRequestBody.
+        r"""Gets the name of this CreateCustomRuleRequestBody.
 
         规则名称
 
@@ -248,7 +248,7 @@ class CreateCustomRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomRuleRequestBody.
+        r"""Sets the name of this CreateCustomRuleRequestBody.
 
         规则名称
 

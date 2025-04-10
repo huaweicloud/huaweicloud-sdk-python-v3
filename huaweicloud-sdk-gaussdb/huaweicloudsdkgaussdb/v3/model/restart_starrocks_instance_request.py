@@ -27,7 +27,7 @@ class RestartStarrocksInstanceRequest:
     }
 
     def __init__(self, starrocks_instance_id=None, x_language=None):
-        """RestartStarrocksInstanceRequest
+        r"""RestartStarrocksInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestartStarrocksInstanceRequest:
 
     @property
     def starrocks_instance_id(self):
-        """Gets the starrocks_instance_id of this RestartStarrocksInstanceRequest.
+        r"""Gets the starrocks_instance_id of this RestartStarrocksInstanceRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -60,7 +60,7 @@ class RestartStarrocksInstanceRequest:
 
     @starrocks_instance_id.setter
     def starrocks_instance_id(self, starrocks_instance_id):
-        """Sets the starrocks_instance_id of this RestartStarrocksInstanceRequest.
+        r"""Sets the starrocks_instance_id of this RestartStarrocksInstanceRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class RestartStarrocksInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestartStarrocksInstanceRequest.
+        r"""Gets the x_language of this RestartStarrocksInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -82,7 +82,7 @@ class RestartStarrocksInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestartStarrocksInstanceRequest.
+        r"""Sets the x_language of this RestartStarrocksInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

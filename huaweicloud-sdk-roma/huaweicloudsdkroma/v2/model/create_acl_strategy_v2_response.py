@@ -36,7 +36,7 @@ class CreateAclStrategyV2Response(SdkResponse):
     }
 
     def __init__(self, acl_name=None, acl_type=None, acl_value=None, entity_type=None, id=None, update_time=None):
-        """CreateAclStrategyV2Response
+        r"""CreateAclStrategyV2Response
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @property
     def acl_name(self):
-        """Gets the acl_name of this CreateAclStrategyV2Response.
+        r"""Gets the acl_name of this CreateAclStrategyV2Response.
 
         名称
 
@@ -90,7 +90,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @acl_name.setter
     def acl_name(self, acl_name):
-        """Sets the acl_name of this CreateAclStrategyV2Response.
+        r"""Sets the acl_name of this CreateAclStrategyV2Response.
 
         名称
 
@@ -101,7 +101,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @property
     def acl_type(self):
-        """Gets the acl_type of this CreateAclStrategyV2Response.
+        r"""Gets the acl_type of this CreateAclStrategyV2Response.
 
         类型: - PERMIT（白名单类型） - DENY（黑名单类型）
 
@@ -112,7 +112,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @acl_type.setter
     def acl_type(self, acl_type):
-        """Sets the acl_type of this CreateAclStrategyV2Response.
+        r"""Sets the acl_type of this CreateAclStrategyV2Response.
 
         类型: - PERMIT（白名单类型） - DENY（黑名单类型）
 
@@ -123,7 +123,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @property
     def acl_value(self):
-        """Gets the acl_value of this CreateAclStrategyV2Response.
+        r"""Gets the acl_value of this CreateAclStrategyV2Response.
 
         ACL策略值
 
@@ -134,7 +134,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @acl_value.setter
     def acl_value(self, acl_value):
-        """Sets the acl_value of this CreateAclStrategyV2Response.
+        r"""Sets the acl_value of this CreateAclStrategyV2Response.
 
         ACL策略值
 
@@ -145,7 +145,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this CreateAclStrategyV2Response.
+        r"""Gets the entity_type of this CreateAclStrategyV2Response.
 
         对象类型： - IP - DOMAIN [Site自治版不支持DOMAIN类型。](tag:Site)
 
@@ -156,7 +156,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this CreateAclStrategyV2Response.
+        r"""Sets the entity_type of this CreateAclStrategyV2Response.
 
         对象类型： - IP - DOMAIN [Site自治版不支持DOMAIN类型。](tag:Site)
 
@@ -167,7 +167,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAclStrategyV2Response.
+        r"""Gets the id of this CreateAclStrategyV2Response.
 
         编号
 
@@ -178,7 +178,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAclStrategyV2Response.
+        r"""Sets the id of this CreateAclStrategyV2Response.
 
         编号
 
@@ -189,7 +189,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateAclStrategyV2Response.
+        r"""Gets the update_time of this CreateAclStrategyV2Response.
 
         更新时间
 
@@ -200,7 +200,7 @@ class CreateAclStrategyV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateAclStrategyV2Response.
+        r"""Sets the update_time of this CreateAclStrategyV2Response.
 
         更新时间
 

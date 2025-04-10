@@ -51,7 +51,7 @@ class TestPlanDetail:
     }
 
     def __init__(self, plan_id=None, name=None, start_date=None, end_date=None, finish_date=None, project_id=None, current_stage=None, expire_day=None, creator=None, owner=None, design_stage=None, execute_stage=None, report_stage=None, iteration=None):
-        """TestPlanDetail
+        r"""TestPlanDetail
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class TestPlanDetail:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestPlanDetail.
+        r"""Gets the plan_id of this TestPlanDetail.
 
         测试计划id
 
@@ -145,7 +145,7 @@ class TestPlanDetail:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestPlanDetail.
+        r"""Sets the plan_id of this TestPlanDetail.
 
         测试计划id
 
@@ -156,7 +156,7 @@ class TestPlanDetail:
 
     @property
     def name(self):
-        """Gets the name of this TestPlanDetail.
+        r"""Gets the name of this TestPlanDetail.
 
         测试计划名称
 
@@ -167,7 +167,7 @@ class TestPlanDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestPlanDetail.
+        r"""Sets the name of this TestPlanDetail.
 
         测试计划名称
 
@@ -178,7 +178,7 @@ class TestPlanDetail:
 
     @property
     def start_date(self):
-        """Gets the start_date of this TestPlanDetail.
+        r"""Gets the start_date of this TestPlanDetail.
 
         测试计划开始时间
 
@@ -189,7 +189,7 @@ class TestPlanDetail:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this TestPlanDetail.
+        r"""Sets the start_date of this TestPlanDetail.
 
         测试计划开始时间
 
@@ -200,7 +200,7 @@ class TestPlanDetail:
 
     @property
     def end_date(self):
-        """Gets the end_date of this TestPlanDetail.
+        r"""Gets the end_date of this TestPlanDetail.
 
         测试计划截止时间
 
@@ -211,7 +211,7 @@ class TestPlanDetail:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this TestPlanDetail.
+        r"""Sets the end_date of this TestPlanDetail.
 
         测试计划截止时间
 
@@ -222,7 +222,7 @@ class TestPlanDetail:
 
     @property
     def finish_date(self):
-        """Gets the finish_date of this TestPlanDetail.
+        r"""Gets the finish_date of this TestPlanDetail.
 
         测试计划实际完成时间（测试计划实际完成指测试计划下所有测试用例处于完成状态）
 
@@ -233,7 +233,7 @@ class TestPlanDetail:
 
     @finish_date.setter
     def finish_date(self, finish_date):
-        """Sets the finish_date of this TestPlanDetail.
+        r"""Sets the finish_date of this TestPlanDetail.
 
         测试计划实际完成时间（测试计划实际完成指测试计划下所有测试用例处于完成状态）
 
@@ -244,7 +244,7 @@ class TestPlanDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TestPlanDetail.
+        r"""Gets the project_id of this TestPlanDetail.
 
         项目id
 
@@ -255,7 +255,7 @@ class TestPlanDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TestPlanDetail.
+        r"""Sets the project_id of this TestPlanDetail.
 
         项目id
 
@@ -266,7 +266,7 @@ class TestPlanDetail:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this TestPlanDetail.
+        r"""Gets the current_stage of this TestPlanDetail.
 
         当前测试计划所处的阶段
 
@@ -277,7 +277,7 @@ class TestPlanDetail:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this TestPlanDetail.
+        r"""Sets the current_stage of this TestPlanDetail.
 
         当前测试计划所处的阶段
 
@@ -288,7 +288,7 @@ class TestPlanDetail:
 
     @property
     def expire_day(self):
-        """Gets the expire_day of this TestPlanDetail.
+        r"""Gets the expire_day of this TestPlanDetail.
 
         获取超期时间,正值表示已超期
 
@@ -299,7 +299,7 @@ class TestPlanDetail:
 
     @expire_day.setter
     def expire_day(self, expire_day):
-        """Sets the expire_day of this TestPlanDetail.
+        r"""Sets the expire_day of this TestPlanDetail.
 
         获取超期时间,正值表示已超期
 
@@ -310,7 +310,7 @@ class TestPlanDetail:
 
     @property
     def creator(self):
-        """Gets the creator of this TestPlanDetail.
+        r"""Gets the creator of this TestPlanDetail.
 
         :return: The creator of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
@@ -319,7 +319,7 @@ class TestPlanDetail:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TestPlanDetail.
+        r"""Sets the creator of this TestPlanDetail.
 
         :param creator: The creator of this TestPlanDetail.
         :type creator: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
@@ -328,7 +328,7 @@ class TestPlanDetail:
 
     @property
     def owner(self):
-        """Gets the owner of this TestPlanDetail.
+        r"""Gets the owner of this TestPlanDetail.
 
         :return: The owner of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
@@ -337,7 +337,7 @@ class TestPlanDetail:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestPlanDetail.
+        r"""Sets the owner of this TestPlanDetail.
 
         :param owner: The owner of this TestPlanDetail.
         :type owner: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
@@ -346,7 +346,7 @@ class TestPlanDetail:
 
     @property
     def design_stage(self):
-        """Gets the design_stage of this TestPlanDetail.
+        r"""Gets the design_stage of this TestPlanDetail.
 
         :return: The design_stage of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
@@ -355,7 +355,7 @@ class TestPlanDetail:
 
     @design_stage.setter
     def design_stage(self, design_stage):
-        """Sets the design_stage of this TestPlanDetail.
+        r"""Sets the design_stage of this TestPlanDetail.
 
         :param design_stage: The design_stage of this TestPlanDetail.
         :type design_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
@@ -364,7 +364,7 @@ class TestPlanDetail:
 
     @property
     def execute_stage(self):
-        """Gets the execute_stage of this TestPlanDetail.
+        r"""Gets the execute_stage of this TestPlanDetail.
 
         :return: The execute_stage of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
@@ -373,7 +373,7 @@ class TestPlanDetail:
 
     @execute_stage.setter
     def execute_stage(self, execute_stage):
-        """Sets the execute_stage of this TestPlanDetail.
+        r"""Sets the execute_stage of this TestPlanDetail.
 
         :param execute_stage: The execute_stage of this TestPlanDetail.
         :type execute_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
@@ -382,7 +382,7 @@ class TestPlanDetail:
 
     @property
     def report_stage(self):
-        """Gets the report_stage of this TestPlanDetail.
+        r"""Gets the report_stage of this TestPlanDetail.
 
         :return: The report_stage of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
@@ -391,7 +391,7 @@ class TestPlanDetail:
 
     @report_stage.setter
     def report_stage(self, report_stage):
-        """Sets the report_stage of this TestPlanDetail.
+        r"""Sets the report_stage of this TestPlanDetail.
 
         :param report_stage: The report_stage of this TestPlanDetail.
         :type report_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
@@ -400,7 +400,7 @@ class TestPlanDetail:
 
     @property
     def iteration(self):
-        """Gets the iteration of this TestPlanDetail.
+        r"""Gets the iteration of this TestPlanDetail.
 
         :return: The iteration of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -409,7 +409,7 @@ class TestPlanDetail:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this TestPlanDetail.
+        r"""Sets the iteration of this TestPlanDetail.
 
         :param iteration: The iteration of this TestPlanDetail.
         :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`

@@ -27,7 +27,7 @@ class Tags:
     }
 
     def __init__(self, key=None, values=None):
-        """Tags
+        r"""Tags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Tags:
 
     @property
     def key(self):
-        """Gets the key of this Tags.
+        r"""Gets the key of this Tags.
 
         标签键，不能为空，最大长度127个unicode字符。
 
@@ -59,7 +59,7 @@ class Tags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tags.
+        r"""Sets the key of this Tags.
 
         标签键，不能为空，最大长度127个unicode字符。
 
@@ -70,7 +70,7 @@ class Tags:
 
     @property
     def values(self):
-        """Gets the values of this Tags.
+        r"""Gets the values of this Tags.
 
         值列表，每个值最大长度255个unicode字符。
 
@@ -81,7 +81,7 @@ class Tags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this Tags.
+        r"""Sets the values of this Tags.
 
         值列表，每个值最大长度255个unicode字符。
 

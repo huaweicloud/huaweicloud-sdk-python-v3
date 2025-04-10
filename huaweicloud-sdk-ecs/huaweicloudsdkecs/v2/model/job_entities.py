@@ -31,7 +31,7 @@ class JobEntities:
     }
 
     def __init__(self, server_id=None, nic_id=None, sub_jobs=None, sub_jobs_total=None):
-        """JobEntities
+        r"""JobEntities
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class JobEntities:
 
     @property
     def server_id(self):
-        """Gets the server_id of this JobEntities.
+        r"""Gets the server_id of this JobEntities.
 
         云服务器相关操作显示server_id。
 
@@ -75,7 +75,7 @@ class JobEntities:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this JobEntities.
+        r"""Sets the server_id of this JobEntities.
 
         云服务器相关操作显示server_id。
 
@@ -86,7 +86,7 @@ class JobEntities:
 
     @property
     def nic_id(self):
-        """Gets the nic_id of this JobEntities.
+        r"""Gets the nic_id of this JobEntities.
 
         网卡相关操作显示nic_id。
 
@@ -97,7 +97,7 @@ class JobEntities:
 
     @nic_id.setter
     def nic_id(self, nic_id):
-        """Sets the nic_id of this JobEntities.
+        r"""Sets the nic_id of this JobEntities.
 
         网卡相关操作显示nic_id。
 
@@ -108,7 +108,7 @@ class JobEntities:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this JobEntities.
+        r"""Gets the sub_jobs of this JobEntities.
 
         每个子任务的执行信息。
 
@@ -119,7 +119,7 @@ class JobEntities:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this JobEntities.
+        r"""Sets the sub_jobs of this JobEntities.
 
         每个子任务的执行信息。
 
@@ -130,7 +130,7 @@ class JobEntities:
 
     @property
     def sub_jobs_total(self):
-        """Gets the sub_jobs_total of this JobEntities.
+        r"""Gets the sub_jobs_total of this JobEntities.
 
         子任务数量。
 
@@ -141,7 +141,7 @@ class JobEntities:
 
     @sub_jobs_total.setter
     def sub_jobs_total(self, sub_jobs_total):
-        """Sets the sub_jobs_total of this JobEntities.
+        r"""Sets the sub_jobs_total of this JobEntities.
 
         子任务数量。
 

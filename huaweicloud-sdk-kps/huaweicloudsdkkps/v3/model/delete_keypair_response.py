@@ -24,7 +24,7 @@ class DeleteKeypairResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteKeypairResponse
+        r"""DeleteKeypairResponse
 
         The model defined in huaweicloud sdk
 

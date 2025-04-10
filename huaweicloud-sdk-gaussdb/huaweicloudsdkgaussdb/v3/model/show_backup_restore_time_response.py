@@ -26,7 +26,7 @@ class ShowBackupRestoreTimeResponse(SdkResponse):
     }
 
     def __init__(self, restore_times=None):
-        """ShowBackupRestoreTimeResponse
+        r"""ShowBackupRestoreTimeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBackupRestoreTimeResponse(SdkResponse):
 
     @property
     def restore_times(self):
-        """Gets the restore_times of this ShowBackupRestoreTimeResponse.
+        r"""Gets the restore_times of this ShowBackupRestoreTimeResponse.
 
         可恢复时间段列表。
 
@@ -55,7 +55,7 @@ class ShowBackupRestoreTimeResponse(SdkResponse):
 
     @restore_times.setter
     def restore_times(self, restore_times):
-        """Sets the restore_times of this ShowBackupRestoreTimeResponse.
+        r"""Sets the restore_times of this ShowBackupRestoreTimeResponse.
 
         可恢复时间段列表。
 

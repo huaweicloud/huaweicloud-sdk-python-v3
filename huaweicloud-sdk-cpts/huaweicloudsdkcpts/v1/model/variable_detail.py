@@ -39,7 +39,7 @@ class VariableDetail:
     }
 
     def __init__(self, file_size=None, id=None, is_quoted=None, name=None, variable=None, variable_type=None, variable_mode=None, share_mode=None):
-        """VariableDetail
+        r"""VariableDetail
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VariableDetail:
 
     @property
     def file_size(self):
-        """Gets the file_size of this VariableDetail.
+        r"""Gets the file_size of this VariableDetail.
 
         文件大小
 
@@ -103,7 +103,7 @@ class VariableDetail:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this VariableDetail.
+        r"""Sets the file_size of this VariableDetail.
 
         文件大小
 
@@ -114,7 +114,7 @@ class VariableDetail:
 
     @property
     def id(self):
-        """Gets the id of this VariableDetail.
+        r"""Gets the id of this VariableDetail.
 
         变量id
 
@@ -125,7 +125,7 @@ class VariableDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VariableDetail.
+        r"""Sets the id of this VariableDetail.
 
         变量id
 
@@ -136,7 +136,7 @@ class VariableDetail:
 
     @property
     def is_quoted(self):
-        """Gets the is_quoted of this VariableDetail.
+        r"""Gets the is_quoted of this VariableDetail.
 
         是否被引用
 
@@ -147,7 +147,7 @@ class VariableDetail:
 
     @is_quoted.setter
     def is_quoted(self, is_quoted):
-        """Sets the is_quoted of this VariableDetail.
+        r"""Sets the is_quoted of this VariableDetail.
 
         是否被引用
 
@@ -158,7 +158,7 @@ class VariableDetail:
 
     @property
     def name(self):
-        """Gets the name of this VariableDetail.
+        r"""Gets the name of this VariableDetail.
 
         变量名称
 
@@ -169,7 +169,7 @@ class VariableDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VariableDetail.
+        r"""Sets the name of this VariableDetail.
 
         变量名称
 
@@ -180,7 +180,7 @@ class VariableDetail:
 
     @property
     def variable(self):
-        """Gets the variable of this VariableDetail.
+        r"""Gets the variable of this VariableDetail.
 
         变量值
 
@@ -191,7 +191,7 @@ class VariableDetail:
 
     @variable.setter
     def variable(self, variable):
-        """Sets the variable of this VariableDetail.
+        r"""Sets the variable of this VariableDetail.
 
         变量值
 
@@ -202,7 +202,7 @@ class VariableDetail:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this VariableDetail.
+        r"""Gets the variable_type of this VariableDetail.
 
         变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)）
 
@@ -213,7 +213,7 @@ class VariableDetail:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this VariableDetail.
+        r"""Sets the variable_type of this VariableDetail.
 
         变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)）
 
@@ -224,7 +224,7 @@ class VariableDetail:
 
     @property
     def variable_mode(self):
-        """Gets the variable_mode of this VariableDetail.
+        r"""Gets the variable_mode of this VariableDetail.
 
         变量读取模式，0：顺序模式；1：随机模式
 
@@ -235,7 +235,7 @@ class VariableDetail:
 
     @variable_mode.setter
     def variable_mode(self, variable_mode):
-        """Sets the variable_mode of this VariableDetail.
+        r"""Sets the variable_mode of this VariableDetail.
 
         变量读取模式，0：顺序模式；1：随机模式
 
@@ -246,7 +246,7 @@ class VariableDetail:
 
     @property
     def share_mode(self):
-        """Gets the share_mode of this VariableDetail.
+        r"""Gets the share_mode of this VariableDetail.
 
         变量共享模式，0：用例模式；1：并发模式
 
@@ -257,7 +257,7 @@ class VariableDetail:
 
     @share_mode.setter
     def share_mode(self, share_mode):
-        """Sets the share_mode of this VariableDetail.
+        r"""Sets the share_mode of this VariableDetail.
 
         变量共享模式，0：用例模式；1：并发模式
 

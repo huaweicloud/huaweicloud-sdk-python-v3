@@ -35,7 +35,7 @@ class CpiTaskData:
     }
 
     def __init__(self, header=None, fasta=None, smiles_list=None, threshold=None, num_results=None, custom_props=None):
-        """CpiTaskData
+        r"""CpiTaskData
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CpiTaskData:
 
     @property
     def header(self):
-        """Gets the header of this CpiTaskData.
+        r"""Gets the header of this CpiTaskData.
 
         蛋白质FASTA标题
 
@@ -87,7 +87,7 @@ class CpiTaskData:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this CpiTaskData.
+        r"""Sets the header of this CpiTaskData.
 
         蛋白质FASTA标题
 
@@ -98,7 +98,7 @@ class CpiTaskData:
 
     @property
     def fasta(self):
-        """Gets the fasta of this CpiTaskData.
+        r"""Gets the fasta of this CpiTaskData.
 
         蛋白质FASTA序列
 
@@ -109,7 +109,7 @@ class CpiTaskData:
 
     @fasta.setter
     def fasta(self, fasta):
-        """Sets the fasta of this CpiTaskData.
+        r"""Sets the fasta of this CpiTaskData.
 
         蛋白质FASTA序列
 
@@ -120,7 +120,7 @@ class CpiTaskData:
 
     @property
     def smiles_list(self):
-        """Gets the smiles_list of this CpiTaskData.
+        r"""Gets the smiles_list of this CpiTaskData.
 
         分子SMILES表达式列表
 
@@ -131,7 +131,7 @@ class CpiTaskData:
 
     @smiles_list.setter
     def smiles_list(self, smiles_list):
-        """Sets the smiles_list of this CpiTaskData.
+        r"""Sets the smiles_list of this CpiTaskData.
 
         分子SMILES表达式列表
 
@@ -142,7 +142,7 @@ class CpiTaskData:
 
     @property
     def threshold(self):
-        """Gets the threshold of this CpiTaskData.
+        r"""Gets the threshold of this CpiTaskData.
 
         打分阈值，分值必须大于该阈值才会返回
 
@@ -153,7 +153,7 @@ class CpiTaskData:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this CpiTaskData.
+        r"""Sets the threshold of this CpiTaskData.
 
         打分阈值，分值必须大于该阈值才会返回
 
@@ -164,7 +164,7 @@ class CpiTaskData:
 
     @property
     def num_results(self):
-        """Gets the num_results of this CpiTaskData.
+        r"""Gets the num_results of this CpiTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -175,7 +175,7 @@ class CpiTaskData:
 
     @num_results.setter
     def num_results(self, num_results):
-        """Sets the num_results of this CpiTaskData.
+        r"""Sets the num_results of this CpiTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -186,7 +186,7 @@ class CpiTaskData:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this CpiTaskData.
+        r"""Gets the custom_props of this CpiTaskData.
 
         用户已开启的自定义属性集合
 
@@ -197,7 +197,7 @@ class CpiTaskData:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this CpiTaskData.
+        r"""Sets the custom_props of this CpiTaskData.
 
         用户已开启的自定义属性集合
 

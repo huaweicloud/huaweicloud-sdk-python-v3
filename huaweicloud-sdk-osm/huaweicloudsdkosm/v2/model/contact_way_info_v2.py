@@ -41,7 +41,7 @@ class ContactWayInfoV2:
     }
 
     def __init__(self, name=None, mobile=None, mail=None, area=None, address=None, id_type=None, company_name=None, id_files=None, other_way=None):
-        """ContactWayInfoV2
+        r"""ContactWayInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class ContactWayInfoV2:
 
     @property
     def name(self):
-        """Gets the name of this ContactWayInfoV2.
+        r"""Gets the name of this ContactWayInfoV2.
 
         姓名或名称
 
@@ -106,7 +106,7 @@ class ContactWayInfoV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ContactWayInfoV2.
+        r"""Sets the name of this ContactWayInfoV2.
 
         姓名或名称
 
@@ -117,7 +117,7 @@ class ContactWayInfoV2:
 
     @property
     def mobile(self):
-        """Gets the mobile of this ContactWayInfoV2.
+        r"""Gets the mobile of this ContactWayInfoV2.
 
         联系电话
 
@@ -128,7 +128,7 @@ class ContactWayInfoV2:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this ContactWayInfoV2.
+        r"""Sets the mobile of this ContactWayInfoV2.
 
         联系电话
 
@@ -139,7 +139,7 @@ class ContactWayInfoV2:
 
     @property
     def mail(self):
-        """Gets the mail of this ContactWayInfoV2.
+        r"""Gets the mail of this ContactWayInfoV2.
 
         联系邮箱
 
@@ -150,7 +150,7 @@ class ContactWayInfoV2:
 
     @mail.setter
     def mail(self, mail):
-        """Sets the mail of this ContactWayInfoV2.
+        r"""Sets the mail of this ContactWayInfoV2.
 
         联系邮箱
 
@@ -161,7 +161,7 @@ class ContactWayInfoV2:
 
     @property
     def area(self):
-        """Gets the area of this ContactWayInfoV2.
+        r"""Gets the area of this ContactWayInfoV2.
 
         国家/地区
 
@@ -172,7 +172,7 @@ class ContactWayInfoV2:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this ContactWayInfoV2.
+        r"""Sets the area of this ContactWayInfoV2.
 
         国家/地区
 
@@ -183,7 +183,7 @@ class ContactWayInfoV2:
 
     @property
     def address(self):
-        """Gets the address of this ContactWayInfoV2.
+        r"""Gets the address of this ContactWayInfoV2.
 
         地址
 
@@ -194,7 +194,7 @@ class ContactWayInfoV2:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ContactWayInfoV2.
+        r"""Sets the address of this ContactWayInfoV2.
 
         地址
 
@@ -205,7 +205,7 @@ class ContactWayInfoV2:
 
     @property
     def id_type(self):
-        """Gets the id_type of this ContactWayInfoV2.
+        r"""Gets the id_type of this ContactWayInfoV2.
 
         身份。企业 10；个人 20；授权代理人 21；律师 22；知识产权所有人 23
 
@@ -216,7 +216,7 @@ class ContactWayInfoV2:
 
     @id_type.setter
     def id_type(self, id_type):
-        """Sets the id_type of this ContactWayInfoV2.
+        r"""Sets the id_type of this ContactWayInfoV2.
 
         身份。企业 10；个人 20；授权代理人 21；律师 22；知识产权所有人 23
 
@@ -227,7 +227,7 @@ class ContactWayInfoV2:
 
     @property
     def company_name(self):
-        """Gets the company_name of this ContactWayInfoV2.
+        r"""Gets the company_name of this ContactWayInfoV2.
 
         公司名称
 
@@ -238,7 +238,7 @@ class ContactWayInfoV2:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this ContactWayInfoV2.
+        r"""Sets the company_name of this ContactWayInfoV2.
 
         公司名称
 
@@ -249,7 +249,7 @@ class ContactWayInfoV2:
 
     @property
     def id_files(self):
-        """Gets the id_files of this ContactWayInfoV2.
+        r"""Gets the id_files of this ContactWayInfoV2.
 
         身份证明附件列表，至少1个，最多3个
 
@@ -260,7 +260,7 @@ class ContactWayInfoV2:
 
     @id_files.setter
     def id_files(self, id_files):
-        """Sets the id_files of this ContactWayInfoV2.
+        r"""Sets the id_files of this ContactWayInfoV2.
 
         身份证明附件列表，至少1个，最多3个
 
@@ -271,7 +271,7 @@ class ContactWayInfoV2:
 
     @property
     def other_way(self):
-        """Gets the other_way of this ContactWayInfoV2.
+        r"""Gets the other_way of this ContactWayInfoV2.
 
         其他联系方式
 
@@ -282,7 +282,7 @@ class ContactWayInfoV2:
 
     @other_way.setter
     def other_way(self, other_way):
-        """Sets the other_way of this ContactWayInfoV2.
+        r"""Sets the other_way of this ContactWayInfoV2.
 
         其他联系方式
 

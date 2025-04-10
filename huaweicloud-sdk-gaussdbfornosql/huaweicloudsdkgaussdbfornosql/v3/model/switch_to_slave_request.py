@@ -25,7 +25,7 @@ class SwitchToSlaveRequest:
     }
 
     def __init__(self, instance_id=None):
-        """SwitchToSlaveRequest
+        r"""SwitchToSlaveRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchToSlaveRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchToSlaveRequest.
+        r"""Gets the instance_id of this SwitchToSlaveRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class SwitchToSlaveRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchToSlaveRequest.
+        r"""Sets the instance_id of this SwitchToSlaveRequest.
 
         实例ID。
 

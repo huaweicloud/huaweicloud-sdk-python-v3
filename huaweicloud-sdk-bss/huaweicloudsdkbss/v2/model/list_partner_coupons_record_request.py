@@ -45,7 +45,7 @@ class ListPartnerCouponsRecordRequest:
     }
 
     def __init__(self, operation_types=None, quota_id=None, quota_type=None, coupon_ids=None, customer_id=None, operation_time_begin=None, operation_time_end=None, result=None, offset=None, limit=None, indirect_partner_id=None):
-        """ListPartnerCouponsRecordRequest
+        r"""ListPartnerCouponsRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def operation_types(self):
-        """Gets the operation_types of this ListPartnerCouponsRecordRequest.
+        r"""Gets the operation_types of this ListPartnerCouponsRecordRequest.
 
         操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
 
@@ -124,7 +124,7 @@ class ListPartnerCouponsRecordRequest:
 
     @operation_types.setter
     def operation_types(self, operation_types):
-        """Sets the operation_types of this ListPartnerCouponsRecordRequest.
+        r"""Sets the operation_types of this ListPartnerCouponsRecordRequest.
 
         操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
 
@@ -135,7 +135,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this ListPartnerCouponsRecordRequest.
+        r"""Gets the quota_id of this ListPartnerCouponsRecordRequest.
 
         额度ID。请从“查询优惠券额度”接口的响应参数中获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
@@ -146,7 +146,7 @@ class ListPartnerCouponsRecordRequest:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this ListPartnerCouponsRecordRequest.
+        r"""Sets the quota_id of this ListPartnerCouponsRecordRequest.
 
         额度ID。请从“查询优惠券额度”接口的响应参数中获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
@@ -157,7 +157,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this ListPartnerCouponsRecordRequest.
+        r"""Gets the quota_type of this ListPartnerCouponsRecordRequest.
 
         额度类型。0：代金券额度1：现金券额度此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
@@ -168,7 +168,7 @@ class ListPartnerCouponsRecordRequest:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this ListPartnerCouponsRecordRequest.
+        r"""Sets the quota_type of this ListPartnerCouponsRecordRequest.
 
         额度类型。0：代金券额度1：现金券额度此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
@@ -179,7 +179,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def coupon_ids(self):
-        """Gets the coupon_ids of this ListPartnerCouponsRecordRequest.
+        r"""Gets the coupon_ids of this ListPartnerCouponsRecordRequest.
 
         代金券ID列表。请从“发放优惠券”接口的响应参数中获取。此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
 
@@ -190,7 +190,7 @@ class ListPartnerCouponsRecordRequest:
 
     @coupon_ids.setter
     def coupon_ids(self, coupon_ids):
-        """Sets the coupon_ids of this ListPartnerCouponsRecordRequest.
+        r"""Sets the coupon_ids of this ListPartnerCouponsRecordRequest.
 
         代金券ID列表。请从“发放优惠券”接口的响应参数中获取。此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
 
@@ -201,7 +201,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ListPartnerCouponsRecordRequest.
+        r"""Gets the customer_id of this ListPartnerCouponsRecordRequest.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
@@ -212,7 +212,7 @@ class ListPartnerCouponsRecordRequest:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ListPartnerCouponsRecordRequest.
+        r"""Sets the customer_id of this ListPartnerCouponsRecordRequest.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
@@ -223,7 +223,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def operation_time_begin(self):
-        """Gets the operation_time_begin of this ListPartnerCouponsRecordRequest.
+        r"""Gets the operation_time_begin of this ListPartnerCouponsRecordRequest.
 
         操作时间（开始）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间大于这个时间的记录。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串和携带值为null。
 
@@ -234,7 +234,7 @@ class ListPartnerCouponsRecordRequest:
 
     @operation_time_begin.setter
     def operation_time_begin(self, operation_time_begin):
-        """Sets the operation_time_begin of this ListPartnerCouponsRecordRequest.
+        r"""Sets the operation_time_begin of this ListPartnerCouponsRecordRequest.
 
         操作时间（开始）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间大于这个时间的记录。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串和携带值为null。
 
@@ -245,7 +245,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def operation_time_end(self):
-        """Gets the operation_time_end of this ListPartnerCouponsRecordRequest.
+        r"""Gets the operation_time_end of this ListPartnerCouponsRecordRequest.
 
         操作时间（结束）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间小于这个时间的记录。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串和携带值为null。
 
@@ -256,7 +256,7 @@ class ListPartnerCouponsRecordRequest:
 
     @operation_time_end.setter
     def operation_time_end(self, operation_time_end):
-        """Sets the operation_time_end of this ListPartnerCouponsRecordRequest.
+        r"""Sets the operation_time_end of this ListPartnerCouponsRecordRequest.
 
         操作时间（结束）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间小于这个时间的记录。此参数不携带或携带值为空时，不作为筛选条件；不支持携带值为空串和携带值为null。
 
@@ -267,7 +267,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def result(self):
-        """Gets the result of this ListPartnerCouponsRecordRequest.
+        r"""Gets the result of this ListPartnerCouponsRecordRequest.
 
         操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为非枚举值时，不作为筛选条件。
 
@@ -278,7 +278,7 @@ class ListPartnerCouponsRecordRequest:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListPartnerCouponsRecordRequest.
+        r"""Sets the result of this ListPartnerCouponsRecordRequest.
 
         操作结果。0：成功-1：失败（非0的记录）此参数不携带或携带值为非枚举值时，不作为筛选条件。
 
@@ -289,7 +289,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPartnerCouponsRecordRequest.
+        r"""Gets the offset of this ListPartnerCouponsRecordRequest.
 
         偏移量，从0开始。默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -300,7 +300,7 @@ class ListPartnerCouponsRecordRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPartnerCouponsRecordRequest.
+        r"""Sets the offset of this ListPartnerCouponsRecordRequest.
 
         偏移量，从0开始。默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -311,7 +311,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPartnerCouponsRecordRequest.
+        r"""Gets the limit of this ListPartnerCouponsRecordRequest.
 
         每页记录数。默认值为10。此参数不携带或携带值为空或携带值为null时，取默认值10；不支持携带值为空串。
 
@@ -322,7 +322,7 @@ class ListPartnerCouponsRecordRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPartnerCouponsRecordRequest.
+        r"""Sets the limit of this ListPartnerCouponsRecordRequest.
 
         每页记录数。默认值为10。此参数不携带或携带值为空或携带值为null时，取默认值10；不支持携带值为空串。
 
@@ -333,7 +333,7 @@ class ListPartnerCouponsRecordRequest:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
+        r"""Gets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
@@ -344,7 +344,7 @@ class ListPartnerCouponsRecordRequest:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
+        r"""Sets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 

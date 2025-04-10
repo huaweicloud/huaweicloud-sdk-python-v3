@@ -67,7 +67,7 @@ class CatalogAttributeVO:
     }
 
     def __init__(self, path=None, qualified_name=None, level=None, name=None, name_eng=None, alias=None, description=None, data_owner=None, owner=None, data_owner_list=None, create_time=None, create_by=None, update_time=None, update_by=None, parent=None, parent_id=None, l1=None, l2=None, l3=None, ordinal=None, tenant_id=None, self_defined_fields=None):
-        """CatalogAttributeVO
+        r"""CatalogAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -182,7 +182,7 @@ class CatalogAttributeVO:
 
     @property
     def path(self):
-        """Gets the path of this CatalogAttributeVO.
+        r"""Gets the path of this CatalogAttributeVO.
 
         路径。用“/”作为分隔，如：运营领域/云学院/云学院培训方案。
 
@@ -193,7 +193,7 @@ class CatalogAttributeVO:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this CatalogAttributeVO.
+        r"""Sets the path of this CatalogAttributeVO.
 
         路径。用“/”作为分隔，如：运营领域/云学院/云学院培训方案。
 
@@ -204,7 +204,7 @@ class CatalogAttributeVO:
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this CatalogAttributeVO.
+        r"""Gets the qualified_name of this CatalogAttributeVO.
 
         资产名称。
 
@@ -215,7 +215,7 @@ class CatalogAttributeVO:
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this CatalogAttributeVO.
+        r"""Sets the qualified_name of this CatalogAttributeVO.
 
         资产名称。
 
@@ -226,7 +226,7 @@ class CatalogAttributeVO:
 
     @property
     def level(self):
-        """Gets the level of this CatalogAttributeVO.
+        r"""Gets the level of this CatalogAttributeVO.
 
         主题所属层级。
 
@@ -237,7 +237,7 @@ class CatalogAttributeVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this CatalogAttributeVO.
+        r"""Sets the level of this CatalogAttributeVO.
 
         主题所属层级。
 
@@ -248,7 +248,7 @@ class CatalogAttributeVO:
 
     @property
     def name(self):
-        """Gets the name of this CatalogAttributeVO.
+        r"""Gets the name of this CatalogAttributeVO.
 
         名称。
 
@@ -259,7 +259,7 @@ class CatalogAttributeVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CatalogAttributeVO.
+        r"""Sets the name of this CatalogAttributeVO.
 
         名称。
 
@@ -270,7 +270,7 @@ class CatalogAttributeVO:
 
     @property
     def name_eng(self):
-        """Gets the name_eng of this CatalogAttributeVO.
+        r"""Gets the name_eng of this CatalogAttributeVO.
 
         英文名称。
 
@@ -281,7 +281,7 @@ class CatalogAttributeVO:
 
     @name_eng.setter
     def name_eng(self, name_eng):
-        """Sets the name_eng of this CatalogAttributeVO.
+        r"""Sets the name_eng of this CatalogAttributeVO.
 
         英文名称。
 
@@ -292,7 +292,7 @@ class CatalogAttributeVO:
 
     @property
     def alias(self):
-        """Gets the alias of this CatalogAttributeVO.
+        r"""Gets the alias of this CatalogAttributeVO.
 
         别名。
 
@@ -303,7 +303,7 @@ class CatalogAttributeVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CatalogAttributeVO.
+        r"""Sets the alias of this CatalogAttributeVO.
 
         别名。
 
@@ -314,7 +314,7 @@ class CatalogAttributeVO:
 
     @property
     def description(self):
-        """Gets the description of this CatalogAttributeVO.
+        r"""Gets the description of this CatalogAttributeVO.
 
         描述。
 
@@ -325,7 +325,7 @@ class CatalogAttributeVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CatalogAttributeVO.
+        r"""Sets the description of this CatalogAttributeVO.
 
         描述。
 
@@ -336,7 +336,7 @@ class CatalogAttributeVO:
 
     @property
     def data_owner(self):
-        """Gets the data_owner of this CatalogAttributeVO.
+        r"""Gets the data_owner of this CatalogAttributeVO.
 
         数据主体。
 
@@ -347,7 +347,7 @@ class CatalogAttributeVO:
 
     @data_owner.setter
     def data_owner(self, data_owner):
-        """Sets the data_owner of this CatalogAttributeVO.
+        r"""Sets the data_owner of this CatalogAttributeVO.
 
         数据主体。
 
@@ -358,7 +358,7 @@ class CatalogAttributeVO:
 
     @property
     def owner(self):
-        """Gets the owner of this CatalogAttributeVO.
+        r"""Gets the owner of this CatalogAttributeVO.
 
         责任人。
 
@@ -369,7 +369,7 @@ class CatalogAttributeVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CatalogAttributeVO.
+        r"""Sets the owner of this CatalogAttributeVO.
 
         责任人。
 
@@ -380,7 +380,7 @@ class CatalogAttributeVO:
 
     @property
     def data_owner_list(self):
-        """Gets the data_owner_list of this CatalogAttributeVO.
+        r"""Gets the data_owner_list of this CatalogAttributeVO.
 
         数据主体列表。
 
@@ -391,7 +391,7 @@ class CatalogAttributeVO:
 
     @data_owner_list.setter
     def data_owner_list(self, data_owner_list):
-        """Sets the data_owner_list of this CatalogAttributeVO.
+        r"""Sets the data_owner_list of this CatalogAttributeVO.
 
         数据主体列表。
 
@@ -402,7 +402,7 @@ class CatalogAttributeVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CatalogAttributeVO.
+        r"""Gets the create_time of this CatalogAttributeVO.
 
         创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -413,7 +413,7 @@ class CatalogAttributeVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CatalogAttributeVO.
+        r"""Sets the create_time of this CatalogAttributeVO.
 
         创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -424,7 +424,7 @@ class CatalogAttributeVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this CatalogAttributeVO.
+        r"""Gets the create_by of this CatalogAttributeVO.
 
         创建人。
 
@@ -435,7 +435,7 @@ class CatalogAttributeVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this CatalogAttributeVO.
+        r"""Sets the create_by of this CatalogAttributeVO.
 
         创建人。
 
@@ -446,7 +446,7 @@ class CatalogAttributeVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CatalogAttributeVO.
+        r"""Gets the update_time of this CatalogAttributeVO.
 
         更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -457,7 +457,7 @@ class CatalogAttributeVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CatalogAttributeVO.
+        r"""Sets the update_time of this CatalogAttributeVO.
 
         更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -468,7 +468,7 @@ class CatalogAttributeVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this CatalogAttributeVO.
+        r"""Gets the update_by of this CatalogAttributeVO.
 
         更新人。
 
@@ -479,7 +479,7 @@ class CatalogAttributeVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this CatalogAttributeVO.
+        r"""Sets the update_by of this CatalogAttributeVO.
 
         更新人。
 
@@ -490,7 +490,7 @@ class CatalogAttributeVO:
 
     @property
     def parent(self):
-        """Gets the parent of this CatalogAttributeVO.
+        r"""Gets the parent of this CatalogAttributeVO.
 
         :return: The parent of this CatalogAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVOParent`
@@ -499,7 +499,7 @@ class CatalogAttributeVO:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this CatalogAttributeVO.
+        r"""Sets the parent of this CatalogAttributeVO.
 
         :param parent: The parent of this CatalogAttributeVO.
         :type parent: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVOParent`
@@ -508,7 +508,7 @@ class CatalogAttributeVO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CatalogAttributeVO.
+        r"""Gets the parent_id of this CatalogAttributeVO.
 
         父节点ID。
 
@@ -519,7 +519,7 @@ class CatalogAttributeVO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CatalogAttributeVO.
+        r"""Sets the parent_id of this CatalogAttributeVO.
 
         父节点ID。
 
@@ -530,7 +530,7 @@ class CatalogAttributeVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this CatalogAttributeVO.
+        r"""Gets the l1 of this CatalogAttributeVO.
 
         是否为L1层。主题域分组。
 
@@ -541,7 +541,7 @@ class CatalogAttributeVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this CatalogAttributeVO.
+        r"""Sets the l1 of this CatalogAttributeVO.
 
         是否为L1层。主题域分组。
 
@@ -552,7 +552,7 @@ class CatalogAttributeVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this CatalogAttributeVO.
+        r"""Gets the l2 of this CatalogAttributeVO.
 
         是否为L2层。主题域。
 
@@ -563,7 +563,7 @@ class CatalogAttributeVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this CatalogAttributeVO.
+        r"""Sets the l2 of this CatalogAttributeVO.
 
         是否为L2层。主题域。
 
@@ -574,7 +574,7 @@ class CatalogAttributeVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this CatalogAttributeVO.
+        r"""Gets the l3 of this CatalogAttributeVO.
 
         是否为L3层。业务对象。
 
@@ -585,7 +585,7 @@ class CatalogAttributeVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this CatalogAttributeVO.
+        r"""Sets the l3 of this CatalogAttributeVO.
 
         是否为L3层。业务对象。
 
@@ -596,7 +596,7 @@ class CatalogAttributeVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this CatalogAttributeVO.
+        r"""Gets the ordinal of this CatalogAttributeVO.
 
         顺序编号。主题返回时根据此编号由小到大排序。
 
@@ -607,7 +607,7 @@ class CatalogAttributeVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this CatalogAttributeVO.
+        r"""Sets the ordinal of this CatalogAttributeVO.
 
         顺序编号。主题返回时根据此编号由小到大排序。
 
@@ -618,7 +618,7 @@ class CatalogAttributeVO:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CatalogAttributeVO.
+        r"""Gets the tenant_id of this CatalogAttributeVO.
 
         租户ID。获取方式参考此接口的路径参数“project_id”获取。
 
@@ -629,7 +629,7 @@ class CatalogAttributeVO:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CatalogAttributeVO.
+        r"""Sets the tenant_id of this CatalogAttributeVO.
 
         租户ID。获取方式参考此接口的路径参数“project_id”获取。
 
@@ -640,7 +640,7 @@ class CatalogAttributeVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this CatalogAttributeVO.
+        r"""Gets the self_defined_fields of this CatalogAttributeVO.
 
         自定义项。主题的自定义属性项。
 
@@ -651,7 +651,7 @@ class CatalogAttributeVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this CatalogAttributeVO.
+        r"""Sets the self_defined_fields of this CatalogAttributeVO.
 
         自定义项。主题的自定义属性项。
 

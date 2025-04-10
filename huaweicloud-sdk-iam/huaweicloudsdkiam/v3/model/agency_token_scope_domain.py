@@ -27,7 +27,7 @@ class AgencyTokenScopeDomain:
     }
 
     def __init__(self, id=None, name=None):
-        """AgencyTokenScopeDomain
+        r"""AgencyTokenScopeDomain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AgencyTokenScopeDomain:
 
     @property
     def id(self):
-        """Gets the id of this AgencyTokenScopeDomain.
+        r"""Gets the id of this AgencyTokenScopeDomain.
 
         委托方A的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -61,7 +61,7 @@ class AgencyTokenScopeDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyTokenScopeDomain.
+        r"""Sets the id of this AgencyTokenScopeDomain.
 
         委托方A的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -72,7 +72,7 @@ class AgencyTokenScopeDomain:
 
     @property
     def name(self):
-        """Gets the name of this AgencyTokenScopeDomain.
+        r"""Gets the name of this AgencyTokenScopeDomain.
 
         委托方A的账号名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -83,7 +83,7 @@ class AgencyTokenScopeDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyTokenScopeDomain.
+        r"""Sets the name of this AgencyTokenScopeDomain.
 
         委托方A的账号名，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

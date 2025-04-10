@@ -28,7 +28,7 @@ class ShowDeviceShadowResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, shadow=None):
-        """ShowDeviceShadowResponse
+        r"""ShowDeviceShadowResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDeviceShadowResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowDeviceShadowResponse.
+        r"""Gets the device_id of this ShowDeviceShadowResponse.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -62,7 +62,7 @@ class ShowDeviceShadowResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowDeviceShadowResponse.
+        r"""Sets the device_id of this ShowDeviceShadowResponse.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -73,7 +73,7 @@ class ShowDeviceShadowResponse(SdkResponse):
 
     @property
     def shadow(self):
-        """Gets the shadow of this ShowDeviceShadowResponse.
+        r"""Gets the shadow of this ShowDeviceShadowResponse.
 
         设备影子数据结构体。
 
@@ -84,7 +84,7 @@ class ShowDeviceShadowResponse(SdkResponse):
 
     @shadow.setter
     def shadow(self, shadow):
-        """Sets the shadow of this ShowDeviceShadowResponse.
+        r"""Sets the shadow of this ShowDeviceShadowResponse.
 
         设备影子数据结构体。
 

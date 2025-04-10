@@ -27,7 +27,7 @@ class ActionInfo:
     }
 
     def __init__(self, category=None, detail=None):
-        """ActionInfo
+        r"""ActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ActionInfo:
 
     @property
     def category(self):
-        """Gets the category of this ActionInfo.
+        r"""Gets the category of this ActionInfo.
 
         动作类型：block:阻断,captcha:人机验证;log: 仅记录;dynamic_block:动态阻断
 
@@ -61,7 +61,7 @@ class ActionInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ActionInfo.
+        r"""Sets the category of this ActionInfo.
 
         动作类型：block:阻断,captcha:人机验证;log: 仅记录;dynamic_block:动态阻断
 
@@ -72,7 +72,7 @@ class ActionInfo:
 
     @property
     def detail(self):
-        """Gets the detail of this ActionInfo.
+        r"""Gets the detail of this ActionInfo.
 
         :return: The detail of this ActionInfo.
         :rtype: :class:`huaweicloudsdkaad.v2.DetailInfo`
@@ -81,7 +81,7 @@ class ActionInfo:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ActionInfo.
+        r"""Sets the detail of this ActionInfo.
 
         :param detail: The detail of this ActionInfo.
         :type detail: :class:`huaweicloudsdkaad.v2.DetailInfo`

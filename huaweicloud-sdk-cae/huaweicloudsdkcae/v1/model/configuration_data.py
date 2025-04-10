@@ -27,7 +27,7 @@ class ConfigurationData:
     }
 
     def __init__(self, spec=None, metadata=None):
-        """ConfigurationData
+        r"""ConfigurationData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfigurationData:
 
     @property
     def spec(self):
-        """Gets the spec of this ConfigurationData.
+        r"""Gets the spec of this ConfigurationData.
 
         :return: The spec of this ConfigurationData.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpec`
@@ -59,7 +59,7 @@ class ConfigurationData:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ConfigurationData.
+        r"""Sets the spec of this ConfigurationData.
 
         :param spec: The spec of this ConfigurationData.
         :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpec`
@@ -68,7 +68,7 @@ class ConfigurationData:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ConfigurationData.
+        r"""Gets the metadata of this ConfigurationData.
 
         :return: The metadata of this ConfigurationData.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationDataMetadata`
@@ -77,7 +77,7 @@ class ConfigurationData:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ConfigurationData.
+        r"""Sets the metadata of this ConfigurationData.
 
         :param metadata: The metadata of this ConfigurationData.
         :type metadata: :class:`huaweicloudsdkcae.v1.ConfigurationDataMetadata`

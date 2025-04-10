@@ -31,7 +31,7 @@ class ListTestCasesRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, execution_type_id=None, version_id=None):
-        """ListTestCasesRequestBody
+        r"""ListTestCasesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListTestCasesRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTestCasesRequestBody.
+        r"""Gets the offset of this ListTestCasesRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -73,7 +73,7 @@ class ListTestCasesRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTestCasesRequestBody.
+        r"""Sets the offset of this ListTestCasesRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -84,7 +84,7 @@ class ListTestCasesRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTestCasesRequestBody.
+        r"""Gets the limit of this ListTestCasesRequestBody.
 
         每页显示的条目数量，最大支持200条
 
@@ -95,7 +95,7 @@ class ListTestCasesRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTestCasesRequestBody.
+        r"""Sets the limit of this ListTestCasesRequestBody.
 
         每页显示的条目数量，最大支持200条
 
@@ -106,7 +106,7 @@ class ListTestCasesRequestBody:
 
     @property
     def execution_type_id(self):
-        """Gets the execution_type_id of this ListTestCasesRequestBody.
+        r"""Gets the execution_type_id of this ListTestCasesRequestBody.
 
         用例测试执行方式ID
 
@@ -117,7 +117,7 @@ class ListTestCasesRequestBody:
 
     @execution_type_id.setter
     def execution_type_id(self, execution_type_id):
-        """Sets the execution_type_id of this ListTestCasesRequestBody.
+        r"""Sets the execution_type_id of this ListTestCasesRequestBody.
 
         用例测试执行方式ID
 
@@ -128,7 +128,7 @@ class ListTestCasesRequestBody:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListTestCasesRequestBody.
+        r"""Gets the version_id of this ListTestCasesRequestBody.
 
         分支/测试计划ID，长度11-34位字符（字母和数字）。
 
@@ -139,7 +139,7 @@ class ListTestCasesRequestBody:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListTestCasesRequestBody.
+        r"""Sets the version_id of this ListTestCasesRequestBody.
 
         分支/测试计划ID，长度11-34位字符（字母和数字）。
 

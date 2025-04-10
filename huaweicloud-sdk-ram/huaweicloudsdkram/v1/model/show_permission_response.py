@@ -26,7 +26,7 @@ class ShowPermissionResponse(SdkResponse):
     }
 
     def __init__(self, permission=None):
-        """ShowPermissionResponse
+        r"""ShowPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPermissionResponse(SdkResponse):
 
     @property
     def permission(self):
-        """Gets the permission of this ShowPermissionResponse.
+        r"""Gets the permission of this ShowPermissionResponse.
 
         :return: The permission of this ShowPermissionResponse.
         :rtype: :class:`huaweicloudsdkram.v1.Permission`
@@ -53,7 +53,7 @@ class ShowPermissionResponse(SdkResponse):
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ShowPermissionResponse.
+        r"""Sets the permission of this ShowPermissionResponse.
 
         :param permission: The permission of this ShowPermissionResponse.
         :type permission: :class:`huaweicloudsdkram.v1.Permission`

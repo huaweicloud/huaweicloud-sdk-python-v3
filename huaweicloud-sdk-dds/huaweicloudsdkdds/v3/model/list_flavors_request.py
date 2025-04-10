@@ -27,7 +27,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, region=None, engine_name=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFlavorsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListFlavorsRequest.
+        r"""Gets the region of this ListFlavorsRequest.
 
         实例所在区域。
 
@@ -61,7 +61,7 @@ class ListFlavorsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListFlavorsRequest.
+        r"""Sets the region of this ListFlavorsRequest.
 
         实例所在区域。
 
@@ -72,7 +72,7 @@ class ListFlavorsRequest:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListFlavorsRequest.
+        r"""Gets the engine_name of this ListFlavorsRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 
@@ -83,7 +83,7 @@ class ListFlavorsRequest:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListFlavorsRequest.
+        r"""Sets the engine_name of this ListFlavorsRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 

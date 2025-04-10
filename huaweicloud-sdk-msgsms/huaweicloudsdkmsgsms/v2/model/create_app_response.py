@@ -32,7 +32,7 @@ class CreateAppResponse(SdkResponse):
     }
 
     def __init__(self, app_key=None, app_name=None, id=None, app_secret=None):
-        """CreateAppResponse
+        r"""CreateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this CreateAppResponse.
+        r"""Gets the app_key of this CreateAppResponse.
 
         应用KEY
 
@@ -76,7 +76,7 @@ class CreateAppResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this CreateAppResponse.
+        r"""Sets the app_key of this CreateAppResponse.
 
         应用KEY
 
@@ -87,7 +87,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this CreateAppResponse.
+        r"""Gets the app_name of this CreateAppResponse.
 
         应用名称
 
@@ -98,7 +98,7 @@ class CreateAppResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CreateAppResponse.
+        r"""Sets the app_name of this CreateAppResponse.
 
         应用名称
 
@@ -109,7 +109,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAppResponse.
+        r"""Gets the id of this CreateAppResponse.
 
         应用主键ID
 
@@ -120,7 +120,7 @@ class CreateAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAppResponse.
+        r"""Sets the id of this CreateAppResponse.
 
         应用主键ID
 
@@ -131,7 +131,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this CreateAppResponse.
+        r"""Gets the app_secret of this CreateAppResponse.
 
         Application Secret，应用密钥
 
@@ -142,7 +142,7 @@ class CreateAppResponse(SdkResponse):
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this CreateAppResponse.
+        r"""Sets the app_secret of this CreateAppResponse.
 
         Application Secret，应用密钥
 

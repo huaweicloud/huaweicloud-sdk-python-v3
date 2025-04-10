@@ -25,7 +25,7 @@ class HistoryCommandPage:
     }
 
     def __init__(self, marker=None):
-        """HistoryCommandPage
+        r"""HistoryCommandPage
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HistoryCommandPage:
 
     @property
     def marker(self):
-        """Gets the marker of this HistoryCommandPage.
+        r"""Gets the marker of this HistoryCommandPage.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -54,7 +54,7 @@ class HistoryCommandPage:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this HistoryCommandPage.
+        r"""Sets the marker of this HistoryCommandPage.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 

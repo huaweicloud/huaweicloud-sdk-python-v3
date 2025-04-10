@@ -37,7 +37,7 @@ class ListMemberGroupsRequest:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, offset=None, limit=None, dict_code=None, member_group_name=None, precise_search=None):
-        """ListMemberGroupsRequest
+        r"""ListMemberGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListMemberGroupsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMemberGroupsRequest.
+        r"""Gets the instance_id of this ListMemberGroupsRequest.
 
         实例ID
 
@@ -94,7 +94,7 @@ class ListMemberGroupsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMemberGroupsRequest.
+        r"""Sets the instance_id of this ListMemberGroupsRequest.
 
         实例ID
 
@@ -105,7 +105,7 @@ class ListMemberGroupsRequest:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this ListMemberGroupsRequest.
+        r"""Gets the vpc_channel_id of this ListMemberGroupsRequest.
 
         VPC通道的编号
 
@@ -116,7 +116,7 @@ class ListMemberGroupsRequest:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this ListMemberGroupsRequest.
+        r"""Sets the vpc_channel_id of this ListMemberGroupsRequest.
 
         VPC通道的编号
 
@@ -127,7 +127,7 @@ class ListMemberGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMemberGroupsRequest.
+        r"""Gets the offset of this ListMemberGroupsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -138,7 +138,7 @@ class ListMemberGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMemberGroupsRequest.
+        r"""Sets the offset of this ListMemberGroupsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -149,7 +149,7 @@ class ListMemberGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMemberGroupsRequest.
+        r"""Gets the limit of this ListMemberGroupsRequest.
 
         每页显示的条目数量
 
@@ -160,7 +160,7 @@ class ListMemberGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMemberGroupsRequest.
+        r"""Sets the limit of this ListMemberGroupsRequest.
 
         每页显示的条目数量
 
@@ -171,7 +171,7 @@ class ListMemberGroupsRequest:
 
     @property
     def dict_code(self):
-        """Gets the dict_code of this ListMemberGroupsRequest.
+        r"""Gets the dict_code of this ListMemberGroupsRequest.
 
         字典编码。  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -182,7 +182,7 @@ class ListMemberGroupsRequest:
 
     @dict_code.setter
     def dict_code(self, dict_code):
-        """Sets the dict_code of this ListMemberGroupsRequest.
+        r"""Sets the dict_code of this ListMemberGroupsRequest.
 
         字典编码。  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -193,7 +193,7 @@ class ListMemberGroupsRequest:
 
     @property
     def member_group_name(self):
-        """Gets the member_group_name of this ListMemberGroupsRequest.
+        r"""Gets the member_group_name of this ListMemberGroupsRequest.
 
         VPC通道后端云服务组的名称
 
@@ -204,7 +204,7 @@ class ListMemberGroupsRequest:
 
     @member_group_name.setter
     def member_group_name(self, member_group_name):
-        """Sets the member_group_name of this ListMemberGroupsRequest.
+        r"""Sets the member_group_name of this ListMemberGroupsRequest.
 
         VPC通道后端云服务组的名称
 
@@ -215,7 +215,7 @@ class ListMemberGroupsRequest:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListMemberGroupsRequest.
+        r"""Gets the precise_search of this ListMemberGroupsRequest.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  当前支持member_group_name。
 
@@ -226,7 +226,7 @@ class ListMemberGroupsRequest:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListMemberGroupsRequest.
+        r"""Sets the precise_search of this ListMemberGroupsRequest.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  当前支持member_group_name。
 

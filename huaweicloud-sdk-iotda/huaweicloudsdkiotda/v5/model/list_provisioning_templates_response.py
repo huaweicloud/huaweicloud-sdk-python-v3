@@ -28,7 +28,7 @@ class ListProvisioningTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, page=None):
-        """ListProvisioningTemplatesResponse
+        r"""ListProvisioningTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProvisioningTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListProvisioningTemplatesResponse.
+        r"""Gets the templates of this ListProvisioningTemplatesResponse.
 
         **参数说明**：预调配模板详情。
 
@@ -62,7 +62,7 @@ class ListProvisioningTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListProvisioningTemplatesResponse.
+        r"""Sets the templates of this ListProvisioningTemplatesResponse.
 
         **参数说明**：预调配模板详情。
 
@@ -73,7 +73,7 @@ class ListProvisioningTemplatesResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListProvisioningTemplatesResponse.
+        r"""Gets the page of this ListProvisioningTemplatesResponse.
 
         :return: The page of this ListProvisioningTemplatesResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListProvisioningTemplatesResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListProvisioningTemplatesResponse.
+        r"""Sets the page of this ListProvisioningTemplatesResponse.
 
         :param page: The page of this ListProvisioningTemplatesResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

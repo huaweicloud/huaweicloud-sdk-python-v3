@@ -28,7 +28,7 @@ class ListEdgeNodesResponse(SdkResponse):
     }
 
     def __init__(self, nodes=None, count=None):
-        """ListEdgeNodesResponse
+        r"""ListEdgeNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListEdgeNodesResponse.
+        r"""Gets the nodes of this ListEdgeNodesResponse.
 
         边缘节点列表
 
@@ -62,7 +62,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListEdgeNodesResponse.
+        r"""Sets the nodes of this ListEdgeNodesResponse.
 
         边缘节点列表
 
@@ -73,7 +73,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEdgeNodesResponse.
+        r"""Gets the count of this ListEdgeNodesResponse.
 
         满足条件的边缘节点个数
 
@@ -84,7 +84,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEdgeNodesResponse.
+        r"""Sets the count of this ListEdgeNodesResponse.
 
         满足条件的边缘节点个数
 

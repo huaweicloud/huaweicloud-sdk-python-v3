@@ -25,7 +25,7 @@ class ShowDisasterDetailRequest:
     }
 
     def __init__(self, disaster_recovery_id=None):
-        """ShowDisasterDetailRequest
+        r"""ShowDisasterDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDisasterDetailRequest:
 
     @property
     def disaster_recovery_id(self):
-        """Gets the disaster_recovery_id of this ShowDisasterDetailRequest.
+        r"""Gets the disaster_recovery_id of this ShowDisasterDetailRequest.
 
         容灾ID
 
@@ -53,7 +53,7 @@ class ShowDisasterDetailRequest:
 
     @disaster_recovery_id.setter
     def disaster_recovery_id(self, disaster_recovery_id):
-        """Sets the disaster_recovery_id of this ShowDisasterDetailRequest.
+        r"""Sets the disaster_recovery_id of this ShowDisasterDetailRequest.
 
         容灾ID
 

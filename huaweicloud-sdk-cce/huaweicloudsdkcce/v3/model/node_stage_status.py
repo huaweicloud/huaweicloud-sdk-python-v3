@@ -27,7 +27,7 @@ class NodeStageStatus:
     }
 
     def __init__(self, node_info=None, items_status=None):
-        """NodeStageStatus
+        r"""NodeStageStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeStageStatus:
 
     @property
     def node_info(self):
-        """Gets the node_info of this NodeStageStatus.
+        r"""Gets the node_info of this NodeStageStatus.
 
         :return: The node_info of this NodeStageStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeInfo`
@@ -59,7 +59,7 @@ class NodeStageStatus:
 
     @node_info.setter
     def node_info(self, node_info):
-        """Sets the node_info of this NodeStageStatus.
+        r"""Sets the node_info of this NodeStageStatus.
 
         :param node_info: The node_info of this NodeStageStatus.
         :type node_info: :class:`huaweicloudsdkcce.v3.NodeInfo`
@@ -68,7 +68,7 @@ class NodeStageStatus:
 
     @property
     def items_status(self):
-        """Gets the items_status of this NodeStageStatus.
+        r"""Gets the items_status of this NodeStageStatus.
 
         检查项状态集合
 
@@ -79,7 +79,7 @@ class NodeStageStatus:
 
     @items_status.setter
     def items_status(self, items_status):
-        """Sets the items_status of this NodeStageStatus.
+        r"""Sets the items_status of this NodeStageStatus.
 
         检查项状态集合
 

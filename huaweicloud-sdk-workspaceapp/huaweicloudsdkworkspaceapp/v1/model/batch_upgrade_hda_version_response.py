@@ -24,7 +24,7 @@ class BatchUpgradeHdaVersionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUpgradeHdaVersionResponse
+        r"""BatchUpgradeHdaVersionResponse
 
         The model defined in huaweicloud sdk
 

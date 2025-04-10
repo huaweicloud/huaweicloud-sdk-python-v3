@@ -35,11 +35,11 @@ class ShowRiskConfigDetailRequest:
     }
 
     def __init__(self, enterprise_project_id=None, check_name=None, standard=None, host_id=None, limit=None, offset=None):
-        """ShowRiskConfigDetailRequest
+        r"""ShowRiskConfigDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
@@ -76,9 +76,9 @@ class ShowRiskConfigDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowRiskConfigDetailRequest.
+        r"""Gets the enterprise_project_id of this ShowRiskConfigDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowRiskConfigDetailRequest.
         :rtype: str
@@ -87,9 +87,9 @@ class ShowRiskConfigDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowRiskConfigDetailRequest.
+        r"""Sets the enterprise_project_id of this ShowRiskConfigDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowRiskConfigDetailRequest.
         :type enterprise_project_id: str
@@ -98,7 +98,7 @@ class ShowRiskConfigDetailRequest:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ShowRiskConfigDetailRequest.
+        r"""Gets the check_name of this ShowRiskConfigDetailRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -109,7 +109,7 @@ class ShowRiskConfigDetailRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ShowRiskConfigDetailRequest.
+        r"""Sets the check_name of this ShowRiskConfigDetailRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -120,7 +120,7 @@ class ShowRiskConfigDetailRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ShowRiskConfigDetailRequest.
+        r"""Gets the standard of this ShowRiskConfigDetailRequest.
 
         标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
@@ -131,7 +131,7 @@ class ShowRiskConfigDetailRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ShowRiskConfigDetailRequest.
+        r"""Sets the standard of this ShowRiskConfigDetailRequest.
 
         标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
@@ -142,7 +142,7 @@ class ShowRiskConfigDetailRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowRiskConfigDetailRequest.
+        r"""Gets the host_id of this ShowRiskConfigDetailRequest.
 
         主机ID，不赋值时，查租户所有主机
 
@@ -153,7 +153,7 @@ class ShowRiskConfigDetailRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowRiskConfigDetailRequest.
+        r"""Sets the host_id of this ShowRiskConfigDetailRequest.
 
         主机ID，不赋值时，查租户所有主机
 
@@ -164,7 +164,7 @@ class ShowRiskConfigDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRiskConfigDetailRequest.
+        r"""Gets the limit of this ShowRiskConfigDetailRequest.
 
         每页数量
 
@@ -175,7 +175,7 @@ class ShowRiskConfigDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRiskConfigDetailRequest.
+        r"""Sets the limit of this ShowRiskConfigDetailRequest.
 
         每页数量
 
@@ -186,7 +186,7 @@ class ShowRiskConfigDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRiskConfigDetailRequest.
+        r"""Gets the offset of this ShowRiskConfigDetailRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -197,7 +197,7 @@ class ShowRiskConfigDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRiskConfigDetailRequest.
+        r"""Sets the offset of this ShowRiskConfigDetailRequest.
 
         偏移量：指定返回记录的开始位置
 

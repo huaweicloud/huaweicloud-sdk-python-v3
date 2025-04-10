@@ -27,7 +27,7 @@ class CloudImageRegionInfo:
     }
 
     def __init__(self, region_id=None, image_id=None):
-        """CloudImageRegionInfo
+        r"""CloudImageRegionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CloudImageRegionInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CloudImageRegionInfo.
+        r"""Gets the region_id of this CloudImageRegionInfo.
 
         区域ID
 
@@ -61,7 +61,7 @@ class CloudImageRegionInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CloudImageRegionInfo.
+        r"""Sets the region_id of this CloudImageRegionInfo.
 
         区域ID
 
@@ -72,7 +72,7 @@ class CloudImageRegionInfo:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CloudImageRegionInfo.
+        r"""Gets the image_id of this CloudImageRegionInfo.
 
         镜像ID
 
@@ -83,7 +83,7 @@ class CloudImageRegionInfo:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CloudImageRegionInfo.
+        r"""Sets the image_id of this CloudImageRegionInfo.
 
         镜像ID
 

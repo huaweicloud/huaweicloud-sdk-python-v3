@@ -31,7 +31,7 @@ class ShowQaPairDetailRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, qa_pair_id=None):
-        """ShowQaPairDetailRequest
+        r"""ShowQaPairDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowQaPairDetailRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ShowQaPairDetailRequest.
+        r"""Gets the x_service_key of this ShowQaPairDetailRequest.
 
         调用智能客服服务标志。
 
@@ -73,7 +73,7 @@ class ShowQaPairDetailRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ShowQaPairDetailRequest.
+        r"""Sets the x_service_key of this ShowQaPairDetailRequest.
 
         调用智能客服服务标志。
 
@@ -84,7 +84,7 @@ class ShowQaPairDetailRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowQaPairDetailRequest.
+        r"""Gets the x_site of this ShowQaPairDetailRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -95,7 +95,7 @@ class ShowQaPairDetailRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowQaPairDetailRequest.
+        r"""Sets the x_site of this ShowQaPairDetailRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -106,7 +106,7 @@ class ShowQaPairDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowQaPairDetailRequest.
+        r"""Gets the x_language of this ShowQaPairDetailRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -117,7 +117,7 @@ class ShowQaPairDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowQaPairDetailRequest.
+        r"""Sets the x_language of this ShowQaPairDetailRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -128,7 +128,7 @@ class ShowQaPairDetailRequest:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this ShowQaPairDetailRequest.
+        r"""Gets the qa_pair_id of this ShowQaPairDetailRequest.
 
         语料Id
 
@@ -139,7 +139,7 @@ class ShowQaPairDetailRequest:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this ShowQaPairDetailRequest.
+        r"""Sets the qa_pair_id of this ShowQaPairDetailRequest.
 
         语料Id
 

@@ -33,7 +33,7 @@ class ListWorkspacesRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, id=None, enterprise_project_id=None):
-        """ListWorkspacesRequest
+        r"""ListWorkspacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListWorkspacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkspacesRequest.
+        r"""Gets the offset of this ListWorkspacesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -81,7 +81,7 @@ class ListWorkspacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkspacesRequest.
+        r"""Sets the offset of this ListWorkspacesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -92,7 +92,7 @@ class ListWorkspacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkspacesRequest.
+        r"""Gets the limit of this ListWorkspacesRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -103,7 +103,7 @@ class ListWorkspacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkspacesRequest.
+        r"""Sets the limit of this ListWorkspacesRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -114,7 +114,7 @@ class ListWorkspacesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListWorkspacesRequest.
+        r"""Gets the name of this ListWorkspacesRequest.
 
         使用名称进行检索，支持模糊查询。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
 
@@ -125,7 +125,7 @@ class ListWorkspacesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListWorkspacesRequest.
+        r"""Sets the name of this ListWorkspacesRequest.
 
         使用名称进行检索，支持模糊查询。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
 
@@ -136,7 +136,7 @@ class ListWorkspacesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListWorkspacesRequest.
+        r"""Gets the id of this ListWorkspacesRequest.
 
         工作空间Id
 
@@ -147,7 +147,7 @@ class ListWorkspacesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListWorkspacesRequest.
+        r"""Sets the id of this ListWorkspacesRequest.
 
         工作空间Id
 
@@ -158,7 +158,7 @@ class ListWorkspacesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListWorkspacesRequest.
+        r"""Gets the enterprise_project_id of this ListWorkspacesRequest.
 
         企业项目ID。由用户输入，只能包含字母、数字、下划线和中划线，且长度为1到36个字符。默认为all_granted_eps
 
@@ -169,7 +169,7 @@ class ListWorkspacesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListWorkspacesRequest.
+        r"""Sets the enterprise_project_id of this ListWorkspacesRequest.
 
         企业项目ID。由用户输入，只能包含字母、数字、下划线和中划线，且长度为1到36个字符。默认为all_granted_eps
 

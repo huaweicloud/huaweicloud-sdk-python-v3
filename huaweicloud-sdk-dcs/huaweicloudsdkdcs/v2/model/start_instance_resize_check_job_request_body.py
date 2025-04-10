@@ -27,7 +27,7 @@ class StartInstanceResizeCheckJobRequestBody:
     }
 
     def __init__(self, new_capacity=None, spec_code=None):
-        """StartInstanceResizeCheckJobRequestBody
+        r"""StartInstanceResizeCheckJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StartInstanceResizeCheckJobRequestBody:
 
     @property
     def new_capacity(self):
-        """Gets the new_capacity of this StartInstanceResizeCheckJobRequestBody.
+        r"""Gets the new_capacity of this StartInstanceResizeCheckJobRequestBody.
 
         新规格的容量，单位GB
 
@@ -61,7 +61,7 @@ class StartInstanceResizeCheckJobRequestBody:
 
     @new_capacity.setter
     def new_capacity(self, new_capacity):
-        """Sets the new_capacity of this StartInstanceResizeCheckJobRequestBody.
+        r"""Sets the new_capacity of this StartInstanceResizeCheckJobRequestBody.
 
         新规格的容量，单位GB
 
@@ -72,7 +72,7 @@ class StartInstanceResizeCheckJobRequestBody:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this StartInstanceResizeCheckJobRequestBody.
+        r"""Gets the spec_code of this StartInstanceResizeCheckJobRequestBody.
 
         新的规格编码
 
@@ -83,7 +83,7 @@ class StartInstanceResizeCheckJobRequestBody:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this StartInstanceResizeCheckJobRequestBody.
+        r"""Sets the spec_code of this StartInstanceResizeCheckJobRequestBody.
 
         新的规格编码
 

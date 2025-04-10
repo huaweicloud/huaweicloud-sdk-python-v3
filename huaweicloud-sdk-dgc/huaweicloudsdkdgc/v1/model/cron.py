@@ -37,7 +37,7 @@ class Cron:
     }
 
     def __init__(self, start_time=None, end_time=None, expression=None, expression_time_zone=None, depend_pre_period=None, interval_type=None, depend_jobs=None):
-        """Cron
+        r"""Cron
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class Cron:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Cron.
+        r"""Gets the start_time of this Cron.
 
         调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区
 
@@ -94,7 +94,7 @@ class Cron:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Cron.
+        r"""Sets the start_time of this Cron.
 
         调度开始时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区
 
@@ -105,7 +105,7 @@ class Cron:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Cron.
+        r"""Gets the end_time of this Cron.
 
         调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去
 
@@ -116,7 +116,7 @@ class Cron:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Cron.
+        r"""Sets the end_time of this Cron.
 
         调度结束时间，采用ISO 8601时间表示方法，格式为yyyy-MM-dd'T'HH:mm:ssZ，例如2018-10-22T23:59:59+08表示的时间为2018年10月22日23时59分59秒，在正8区，即北京时区。如果结束时间不配置，作业会按照调度周期一直执行下去
 
@@ -127,7 +127,7 @@ class Cron:
 
     @property
     def expression(self):
-        """Gets the expression of this Cron.
+        r"""Gets the expression of this Cron.
 
         Cron表达式，格式为\"<秒> <分> <时> <天> <月> <星期>\"
 
@@ -138,7 +138,7 @@ class Cron:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this Cron.
+        r"""Sets the expression of this Cron.
 
         Cron表达式，格式为\"<秒> <分> <时> <天> <月> <星期>\"
 
@@ -149,7 +149,7 @@ class Cron:
 
     @property
     def expression_time_zone(self):
-        """Gets the expression_time_zone of this Cron.
+        r"""Gets the expression_time_zone of this Cron.
 
         Cron表达式对应的时区信息，例如GMT+8
 
@@ -160,7 +160,7 @@ class Cron:
 
     @expression_time_zone.setter
     def expression_time_zone(self, expression_time_zone):
-        """Sets the expression_time_zone of this Cron.
+        r"""Sets the expression_time_zone of this Cron.
 
         Cron表达式对应的时区信息，例如GMT+8
 
@@ -171,7 +171,7 @@ class Cron:
 
     @property
     def depend_pre_period(self):
-        """Gets the depend_pre_period of this Cron.
+        r"""Gets the depend_pre_period of this Cron.
 
         是否依赖本作业上一个运行周期任务的执行结果
 
@@ -182,7 +182,7 @@ class Cron:
 
     @depend_pre_period.setter
     def depend_pre_period(self, depend_pre_period):
-        """Sets the depend_pre_period of this Cron.
+        r"""Sets the depend_pre_period of this Cron.
 
         是否依赖本作业上一个运行周期任务的执行结果
 
@@ -193,7 +193,7 @@ class Cron:
 
     @property
     def interval_type(self):
-        """Gets the interval_type of this Cron.
+        r"""Gets the interval_type of this Cron.
 
         调度间隔类型： - minutes：分钟 - hours：小时 - days：天 - weeks： 周 - months：月 - seasons： 季 - years：年
 
@@ -204,7 +204,7 @@ class Cron:
 
     @interval_type.setter
     def interval_type(self, interval_type):
-        """Sets the interval_type of this Cron.
+        r"""Sets the interval_type of this Cron.
 
         调度间隔类型： - minutes：分钟 - hours：小时 - days：天 - weeks： 周 - months：月 - seasons： 季 - years：年
 
@@ -215,7 +215,7 @@ class Cron:
 
     @property
     def depend_jobs(self):
-        """Gets the depend_jobs of this Cron.
+        r"""Gets the depend_jobs of this Cron.
 
         :return: The depend_jobs of this Cron.
         :rtype: :class:`huaweicloudsdkdgc.v1.DependJob`
@@ -224,7 +224,7 @@ class Cron:
 
     @depend_jobs.setter
     def depend_jobs(self, depend_jobs):
-        """Sets the depend_jobs of this Cron.
+        r"""Sets the depend_jobs of this Cron.
 
         :param depend_jobs: The depend_jobs of this Cron.
         :type depend_jobs: :class:`huaweicloudsdkdgc.v1.DependJob`

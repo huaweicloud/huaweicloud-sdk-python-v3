@@ -45,7 +45,7 @@ class AntivirusResultDetailInfo:
     }
 
     def __init__(self, result_id=None, malware_name=None, file_path=None, file_hash=None, file_size=None, file_owner=None, file_attr=None, file_ctime=None, file_mtime=None, update_time=None, agent_id=None):
-        """AntivirusResultDetailInfo
+        r"""AntivirusResultDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def result_id(self):
-        """Gets the result_id of this AntivirusResultDetailInfo.
+        r"""Gets the result_id of this AntivirusResultDetailInfo.
 
         病毒查杀结果ID
 
@@ -124,7 +124,7 @@ class AntivirusResultDetailInfo:
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this AntivirusResultDetailInfo.
+        r"""Sets the result_id of this AntivirusResultDetailInfo.
 
         病毒查杀结果ID
 
@@ -135,7 +135,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def malware_name(self):
-        """Gets the malware_name of this AntivirusResultDetailInfo.
+        r"""Gets the malware_name of this AntivirusResultDetailInfo.
 
         病毒名称
 
@@ -146,7 +146,7 @@ class AntivirusResultDetailInfo:
 
     @malware_name.setter
     def malware_name(self, malware_name):
-        """Sets the malware_name of this AntivirusResultDetailInfo.
+        r"""Sets the malware_name of this AntivirusResultDetailInfo.
 
         病毒名称
 
@@ -157,7 +157,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this AntivirusResultDetailInfo.
+        r"""Gets the file_path of this AntivirusResultDetailInfo.
 
         文件路径
 
@@ -168,7 +168,7 @@ class AntivirusResultDetailInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this AntivirusResultDetailInfo.
+        r"""Sets the file_path of this AntivirusResultDetailInfo.
 
         文件路径
 
@@ -179,7 +179,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this AntivirusResultDetailInfo.
+        r"""Gets the file_hash of this AntivirusResultDetailInfo.
 
         文件哈希
 
@@ -190,7 +190,7 @@ class AntivirusResultDetailInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this AntivirusResultDetailInfo.
+        r"""Sets the file_hash of this AntivirusResultDetailInfo.
 
         文件哈希
 
@@ -201,7 +201,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this AntivirusResultDetailInfo.
+        r"""Gets the file_size of this AntivirusResultDetailInfo.
 
         文件大小
 
@@ -212,7 +212,7 @@ class AntivirusResultDetailInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this AntivirusResultDetailInfo.
+        r"""Sets the file_size of this AntivirusResultDetailInfo.
 
         文件大小
 
@@ -223,7 +223,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_owner(self):
-        """Gets the file_owner of this AntivirusResultDetailInfo.
+        r"""Gets the file_owner of this AntivirusResultDetailInfo.
 
         文件属主
 
@@ -234,7 +234,7 @@ class AntivirusResultDetailInfo:
 
     @file_owner.setter
     def file_owner(self, file_owner):
-        """Sets the file_owner of this AntivirusResultDetailInfo.
+        r"""Sets the file_owner of this AntivirusResultDetailInfo.
 
         文件属主
 
@@ -245,7 +245,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this AntivirusResultDetailInfo.
+        r"""Gets the file_attr of this AntivirusResultDetailInfo.
 
         文件属性
 
@@ -256,7 +256,7 @@ class AntivirusResultDetailInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this AntivirusResultDetailInfo.
+        r"""Sets the file_attr of this AntivirusResultDetailInfo.
 
         文件属性
 
@@ -267,7 +267,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_ctime(self):
-        """Gets the file_ctime of this AntivirusResultDetailInfo.
+        r"""Gets the file_ctime of this AntivirusResultDetailInfo.
 
         文件创建时间
 
@@ -278,7 +278,7 @@ class AntivirusResultDetailInfo:
 
     @file_ctime.setter
     def file_ctime(self, file_ctime):
-        """Sets the file_ctime of this AntivirusResultDetailInfo.
+        r"""Sets the file_ctime of this AntivirusResultDetailInfo.
 
         文件创建时间
 
@@ -289,7 +289,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def file_mtime(self):
-        """Gets the file_mtime of this AntivirusResultDetailInfo.
+        r"""Gets the file_mtime of this AntivirusResultDetailInfo.
 
         文件更新时间
 
@@ -300,7 +300,7 @@ class AntivirusResultDetailInfo:
 
     @file_mtime.setter
     def file_mtime(self, file_mtime):
-        """Sets the file_mtime of this AntivirusResultDetailInfo.
+        r"""Sets the file_mtime of this AntivirusResultDetailInfo.
 
         文件更新时间
 
@@ -311,7 +311,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AntivirusResultDetailInfo.
+        r"""Gets the update_time of this AntivirusResultDetailInfo.
 
         更新时间，毫秒
 
@@ -322,7 +322,7 @@ class AntivirusResultDetailInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AntivirusResultDetailInfo.
+        r"""Sets the update_time of this AntivirusResultDetailInfo.
 
         更新时间，毫秒
 
@@ -333,7 +333,7 @@ class AntivirusResultDetailInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AntivirusResultDetailInfo.
+        r"""Gets the agent_id of this AntivirusResultDetailInfo.
 
         Agent ID
 
@@ -344,7 +344,7 @@ class AntivirusResultDetailInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AntivirusResultDetailInfo.
+        r"""Sets the agent_id of this AntivirusResultDetailInfo.
 
         Agent ID
 

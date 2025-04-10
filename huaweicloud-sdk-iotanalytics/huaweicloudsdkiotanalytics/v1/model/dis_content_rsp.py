@@ -31,7 +31,7 @@ class DisContentRsp:
     }
 
     def __init__(self, stream_name=None, ak=None, sk=None, project_id=None):
-        """DisContentRsp
+        r"""DisContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DisContentRsp:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DisContentRsp.
+        r"""Gets the stream_name of this DisContentRsp.
 
         通道名称
 
@@ -75,7 +75,7 @@ class DisContentRsp:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DisContentRsp.
+        r"""Sets the stream_name of this DisContentRsp.
 
         通道名称
 
@@ -86,7 +86,7 @@ class DisContentRsp:
 
     @property
     def ak(self):
-        """Gets the ak of this DisContentRsp.
+        r"""Gets the ak of this DisContentRsp.
 
         租户的AK
 
@@ -97,7 +97,7 @@ class DisContentRsp:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this DisContentRsp.
+        r"""Sets the ak of this DisContentRsp.
 
         租户的AK
 
@@ -108,7 +108,7 @@ class DisContentRsp:
 
     @property
     def sk(self):
-        """Gets the sk of this DisContentRsp.
+        r"""Gets the sk of this DisContentRsp.
 
         租户的SK
 
@@ -119,7 +119,7 @@ class DisContentRsp:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this DisContentRsp.
+        r"""Sets the sk of this DisContentRsp.
 
         租户的SK
 
@@ -130,7 +130,7 @@ class DisContentRsp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DisContentRsp.
+        r"""Gets the project_id of this DisContentRsp.
 
         项目id
 
@@ -141,7 +141,7 @@ class DisContentRsp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DisContentRsp.
+        r"""Sets the project_id of this DisContentRsp.
 
         项目id
 

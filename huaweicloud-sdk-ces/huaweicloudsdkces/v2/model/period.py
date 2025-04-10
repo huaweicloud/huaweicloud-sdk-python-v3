@@ -32,7 +32,7 @@ class Period:
     }
 
     def __init__(self):
-        """Period
+        r"""Period
 
         The model defined in huaweicloud sdk
 

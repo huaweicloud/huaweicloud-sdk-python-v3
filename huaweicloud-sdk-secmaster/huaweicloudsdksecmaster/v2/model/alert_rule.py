@@ -57,7 +57,7 @@ class AlertRule:
     }
 
     def __init__(self, rule_id=None, pipe_id=None, pipe_name=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None, rule_name=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None):
-        """AlertRule
+        r"""AlertRule
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class AlertRule:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this AlertRule.
+        r"""Gets the rule_id of this AlertRule.
 
         告警规则 ID。Alert rule ID.
 
@@ -156,7 +156,7 @@ class AlertRule:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this AlertRule.
+        r"""Sets the rule_id of this AlertRule.
 
         告警规则 ID。Alert rule ID.
 
@@ -167,7 +167,7 @@ class AlertRule:
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this AlertRule.
+        r"""Gets the pipe_id of this AlertRule.
 
         数据管道 ID。Pipe ID.
 
@@ -178,7 +178,7 @@ class AlertRule:
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this AlertRule.
+        r"""Sets the pipe_id of this AlertRule.
 
         数据管道 ID。Pipe ID.
 
@@ -189,7 +189,7 @@ class AlertRule:
 
     @property
     def pipe_name(self):
-        """Gets the pipe_name of this AlertRule.
+        r"""Gets the pipe_name of this AlertRule.
 
         数据管道名称。Pipe name.
 
@@ -200,7 +200,7 @@ class AlertRule:
 
     @pipe_name.setter
     def pipe_name(self, pipe_name):
-        """Sets the pipe_name of this AlertRule.
+        r"""Sets the pipe_name of this AlertRule.
 
         数据管道名称。Pipe name.
 
@@ -211,7 +211,7 @@ class AlertRule:
 
     @property
     def create_by(self):
-        """Gets the create_by of this AlertRule.
+        r"""Gets the create_by of this AlertRule.
 
         创建人。Create by.
 
@@ -222,7 +222,7 @@ class AlertRule:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this AlertRule.
+        r"""Sets the create_by of this AlertRule.
 
         创建人。Create by.
 
@@ -233,7 +233,7 @@ class AlertRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlertRule.
+        r"""Gets the create_time of this AlertRule.
 
         创建时间。Create time.
 
@@ -244,7 +244,7 @@ class AlertRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlertRule.
+        r"""Sets the create_time of this AlertRule.
 
         创建时间。Create time.
 
@@ -255,7 +255,7 @@ class AlertRule:
 
     @property
     def update_by(self):
-        """Gets the update_by of this AlertRule.
+        r"""Gets the update_by of this AlertRule.
 
         更新人。Update by.
 
@@ -266,7 +266,7 @@ class AlertRule:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this AlertRule.
+        r"""Sets the update_by of this AlertRule.
 
         更新人。Update by.
 
@@ -277,7 +277,7 @@ class AlertRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlertRule.
+        r"""Gets the update_time of this AlertRule.
 
         更新时间。Update time.
 
@@ -288,7 +288,7 @@ class AlertRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlertRule.
+        r"""Sets the update_time of this AlertRule.
 
         更新时间。Update time.
 
@@ -299,7 +299,7 @@ class AlertRule:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this AlertRule.
+        r"""Gets the delete_time of this AlertRule.
 
         删除时间。Delete time.
 
@@ -310,7 +310,7 @@ class AlertRule:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this AlertRule.
+        r"""Sets the delete_time of this AlertRule.
 
         删除时间。Delete time.
 
@@ -321,7 +321,7 @@ class AlertRule:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this AlertRule.
+        r"""Gets the rule_name of this AlertRule.
 
         告警规则名称。Alert rule name.
 
@@ -332,7 +332,7 @@ class AlertRule:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this AlertRule.
+        r"""Sets the rule_name of this AlertRule.
 
         告警规则名称。Alert rule name.
 
@@ -343,7 +343,7 @@ class AlertRule:
 
     @property
     def query(self):
-        """Gets the query of this AlertRule.
+        r"""Gets the query of this AlertRule.
 
         查询语句。Query.
 
@@ -354,7 +354,7 @@ class AlertRule:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this AlertRule.
+        r"""Sets the query of this AlertRule.
 
         查询语句。Query.
 
@@ -365,7 +365,7 @@ class AlertRule:
 
     @property
     def query_type(self):
-        """Gets the query_type of this AlertRule.
+        r"""Gets the query_type of this AlertRule.
 
         查询语法，SQL。Query type. SQL.
 
@@ -376,7 +376,7 @@ class AlertRule:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this AlertRule.
+        r"""Sets the query_type of this AlertRule.
 
         查询语法，SQL。Query type. SQL.
 
@@ -387,7 +387,7 @@ class AlertRule:
 
     @property
     def status(self):
-        """Gets the status of this AlertRule.
+        r"""Gets the status of this AlertRule.
 
         启用状态，启用、停用。Status, enabled, disabled.
 
@@ -398,7 +398,7 @@ class AlertRule:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlertRule.
+        r"""Sets the status of this AlertRule.
 
         启用状态，启用、停用。Status, enabled, disabled.
 
@@ -409,7 +409,7 @@ class AlertRule:
 
     @property
     def severity(self):
-        """Gets the severity of this AlertRule.
+        r"""Gets the severity of this AlertRule.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -420,7 +420,7 @@ class AlertRule:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this AlertRule.
+        r"""Sets the severity of this AlertRule.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -431,7 +431,7 @@ class AlertRule:
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this AlertRule.
+        r"""Gets the custom_properties of this AlertRule.
 
         自定义扩展信息。Custom properties.
 
@@ -442,7 +442,7 @@ class AlertRule:
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this AlertRule.
+        r"""Sets the custom_properties of this AlertRule.
 
         自定义扩展信息。Custom properties.
 
@@ -453,7 +453,7 @@ class AlertRule:
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this AlertRule.
+        r"""Gets the event_grouping of this AlertRule.
 
         告警分组。Event grouping.
 
@@ -464,7 +464,7 @@ class AlertRule:
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this AlertRule.
+        r"""Sets the event_grouping of this AlertRule.
 
         告警分组。Event grouping.
 
@@ -475,7 +475,7 @@ class AlertRule:
 
     @property
     def schedule(self):
-        """Gets the schedule of this AlertRule.
+        r"""Gets the schedule of this AlertRule.
 
         :return: The schedule of this AlertRule.
         :rtype: :class:`huaweicloudsdksecmaster.v2.Schedule`
@@ -484,7 +484,7 @@ class AlertRule:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this AlertRule.
+        r"""Sets the schedule of this AlertRule.
 
         :param schedule: The schedule of this AlertRule.
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
@@ -493,7 +493,7 @@ class AlertRule:
 
     @property
     def triggers(self):
-        """Gets the triggers of this AlertRule.
+        r"""Gets the triggers of this AlertRule.
 
         告警触发规则。Alert triggers.
 
@@ -504,7 +504,7 @@ class AlertRule:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this AlertRule.
+        r"""Sets the triggers of this AlertRule.
 
         告警触发规则。Alert triggers.
 

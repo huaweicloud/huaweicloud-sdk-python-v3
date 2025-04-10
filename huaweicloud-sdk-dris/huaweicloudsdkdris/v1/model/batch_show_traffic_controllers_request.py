@@ -35,7 +35,7 @@ class BatchShowTrafficControllersRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, traffic_controller_id=None, esn=None, status=None):
-        """BatchShowTrafficControllersRequest
+        r"""BatchShowTrafficControllersRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BatchShowTrafficControllersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowTrafficControllersRequest.
+        r"""Gets the instance_id of this BatchShowTrafficControllersRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -89,7 +89,7 @@ class BatchShowTrafficControllersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowTrafficControllersRequest.
+        r"""Sets the instance_id of this BatchShowTrafficControllersRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -100,7 +100,7 @@ class BatchShowTrafficControllersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowTrafficControllersRequest.
+        r"""Gets the offset of this BatchShowTrafficControllersRequest.
 
         **参数说明**：分页查询时的页码， offset大于等于0，默认取值为0
 
@@ -111,7 +111,7 @@ class BatchShowTrafficControllersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowTrafficControllersRequest.
+        r"""Sets the offset of this BatchShowTrafficControllersRequest.
 
         **参数说明**：分页查询时的页码， offset大于等于0，默认取值为0
 
@@ -122,7 +122,7 @@ class BatchShowTrafficControllersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowTrafficControllersRequest.
+        r"""Gets the limit of this BatchShowTrafficControllersRequest.
 
         **参数说明**：分页查询时每页显示的记录数，默认值为10，取值范围为0-20的整数。
 
@@ -133,7 +133,7 @@ class BatchShowTrafficControllersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowTrafficControllersRequest.
+        r"""Sets the limit of this BatchShowTrafficControllersRequest.
 
         **参数说明**：分页查询时每页显示的记录数，默认值为10，取值范围为0-20的整数。
 
@@ -144,7 +144,7 @@ class BatchShowTrafficControllersRequest:
 
     @property
     def traffic_controller_id(self):
-        """Gets the traffic_controller_id of this BatchShowTrafficControllersRequest.
+        r"""Gets the traffic_controller_id of this BatchShowTrafficControllersRequest.
 
         **参数说明**：信号机设备ID，全局唯一。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -155,7 +155,7 @@ class BatchShowTrafficControllersRequest:
 
     @traffic_controller_id.setter
     def traffic_controller_id(self, traffic_controller_id):
-        """Sets the traffic_controller_id of this BatchShowTrafficControllersRequest.
+        r"""Sets the traffic_controller_id of this BatchShowTrafficControllersRequest.
 
         **参数说明**：信号机设备ID，全局唯一。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -166,7 +166,7 @@ class BatchShowTrafficControllersRequest:
 
     @property
     def esn(self):
-        """Gets the esn of this BatchShowTrafficControllersRequest.
+        r"""Gets the esn of this BatchShowTrafficControllersRequest.
 
         **参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -177,7 +177,7 @@ class BatchShowTrafficControllersRequest:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this BatchShowTrafficControllersRequest.
+        r"""Sets the esn of this BatchShowTrafficControllersRequest.
 
         **参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -188,7 +188,7 @@ class BatchShowTrafficControllersRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchShowTrafficControllersRequest.
+        r"""Gets the status of this BatchShowTrafficControllersRequest.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化 
 
@@ -199,7 +199,7 @@ class BatchShowTrafficControllersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchShowTrafficControllersRequest.
+        r"""Sets the status of this BatchShowTrafficControllersRequest.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化 
 

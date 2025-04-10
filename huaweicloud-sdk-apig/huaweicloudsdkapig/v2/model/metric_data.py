@@ -37,7 +37,7 @@ class MetricData:
     }
 
     def __init__(self, average=None, max=None, min=None, sum=None, variance=None, timestamp=None, unit=None):
-        """MetricData
+        r"""MetricData
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class MetricData:
 
     @property
     def average(self):
-        """Gets the average of this MetricData.
+        r"""Gets the average of this MetricData.
 
         聚合周期内指标数据的平均值，仅当请求参数filter字段值为average时支持。
 
@@ -96,7 +96,7 @@ class MetricData:
 
     @average.setter
     def average(self, average):
-        """Sets the average of this MetricData.
+        r"""Sets the average of this MetricData.
 
         聚合周期内指标数据的平均值，仅当请求参数filter字段值为average时支持。
 
@@ -107,7 +107,7 @@ class MetricData:
 
     @property
     def max(self):
-        """Gets the max of this MetricData.
+        r"""Gets the max of this MetricData.
 
         聚合周期内指标数据的最大值，仅当请求参数filter字段值为max时支持。
 
@@ -118,7 +118,7 @@ class MetricData:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this MetricData.
+        r"""Sets the max of this MetricData.
 
         聚合周期内指标数据的最大值，仅当请求参数filter字段值为max时支持。
 
@@ -129,7 +129,7 @@ class MetricData:
 
     @property
     def min(self):
-        """Gets the min of this MetricData.
+        r"""Gets the min of this MetricData.
 
         聚合周期内指标数据的最小值，仅当请求参数filter字段值为min时支持。
 
@@ -140,7 +140,7 @@ class MetricData:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this MetricData.
+        r"""Sets the min of this MetricData.
 
         聚合周期内指标数据的最小值，仅当请求参数filter字段值为min时支持。
 
@@ -151,7 +151,7 @@ class MetricData:
 
     @property
     def sum(self):
-        """Gets the sum of this MetricData.
+        r"""Gets the sum of this MetricData.
 
         聚合周期内指标数据的求和值，仅当请求参数filter字段值为sum时支持。
 
@@ -162,7 +162,7 @@ class MetricData:
 
     @sum.setter
     def sum(self, sum):
-        """Sets the sum of this MetricData.
+        r"""Sets the sum of this MetricData.
 
         聚合周期内指标数据的求和值，仅当请求参数filter字段值为sum时支持。
 
@@ -173,7 +173,7 @@ class MetricData:
 
     @property
     def variance(self):
-        """Gets the variance of this MetricData.
+        r"""Gets the variance of this MetricData.
 
         聚合周期内指标数据的方差，仅当请求参数filter字段值为variance时支持。
 
@@ -184,7 +184,7 @@ class MetricData:
 
     @variance.setter
     def variance(self, variance):
-        """Sets the variance of this MetricData.
+        r"""Sets the variance of this MetricData.
 
         聚合周期内指标数据的方差，仅当请求参数filter字段值为variance时支持。
 
@@ -195,7 +195,7 @@ class MetricData:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this MetricData.
+        r"""Gets the timestamp of this MetricData.
 
         指标采集时间，UNIX时间戳，单位毫秒。
 
@@ -206,7 +206,7 @@ class MetricData:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this MetricData.
+        r"""Sets the timestamp of this MetricData.
 
         指标采集时间，UNIX时间戳，单位毫秒。
 
@@ -217,7 +217,7 @@ class MetricData:
 
     @property
     def unit(self):
-        """Gets the unit of this MetricData.
+        r"""Gets the unit of this MetricData.
 
         指标单位。
 
@@ -228,7 +228,7 @@ class MetricData:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this MetricData.
+        r"""Sets the unit of this MetricData.
 
         指标单位。
 

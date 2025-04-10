@@ -51,7 +51,7 @@ class EngineCreateReqFlavorType:
     }
 
     def __init__(self, node_flavor=None, flavor=None, available_prefix=None, available_cpu_memory=None, spec_type=None, linear=None, license_amount=None, node_limit=None, id=None, micro_gateway_flavor=None, disable=None, spec=None, cloud_service_type=None, currentflavor=None):
-        """EngineCreateReqFlavorType
+        r"""EngineCreateReqFlavorType
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def node_flavor(self):
-        """Gets the node_flavor of this EngineCreateReqFlavorType.
+        r"""Gets the node_flavor of this EngineCreateReqFlavorType.
 
         网关节点规格
 
@@ -145,7 +145,7 @@ class EngineCreateReqFlavorType:
 
     @node_flavor.setter
     def node_flavor(self, node_flavor):
-        """Sets the node_flavor of this EngineCreateReqFlavorType.
+        r"""Sets the node_flavor of this EngineCreateReqFlavorType.
 
         网关节点规格
 
@@ -156,7 +156,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def flavor(self):
-        """Gets the flavor of this EngineCreateReqFlavorType.
+        r"""Gets the flavor of this EngineCreateReqFlavorType.
 
         网关规格
 
@@ -167,7 +167,7 @@ class EngineCreateReqFlavorType:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this EngineCreateReqFlavorType.
+        r"""Sets the flavor of this EngineCreateReqFlavorType.
 
         网关规格
 
@@ -178,7 +178,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def available_prefix(self):
-        """Gets the available_prefix of this EngineCreateReqFlavorType.
+        r"""Gets the available_prefix of this EngineCreateReqFlavorType.
 
         可用区前缀
 
@@ -189,7 +189,7 @@ class EngineCreateReqFlavorType:
 
     @available_prefix.setter
     def available_prefix(self, available_prefix):
-        """Sets the available_prefix of this EngineCreateReqFlavorType.
+        r"""Sets the available_prefix of this EngineCreateReqFlavorType.
 
         可用区前缀
 
@@ -200,7 +200,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def available_cpu_memory(self):
-        """Gets the available_cpu_memory of this EngineCreateReqFlavorType.
+        r"""Gets the available_cpu_memory of this EngineCreateReqFlavorType.
 
         可用区CPU内存
 
@@ -211,7 +211,7 @@ class EngineCreateReqFlavorType:
 
     @available_cpu_memory.setter
     def available_cpu_memory(self, available_cpu_memory):
-        """Sets the available_cpu_memory of this EngineCreateReqFlavorType.
+        r"""Sets the available_cpu_memory of this EngineCreateReqFlavorType.
 
         可用区CPU内存
 
@@ -222,7 +222,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def spec_type(self):
-        """Gets the spec_type of this EngineCreateReqFlavorType.
+        r"""Gets the spec_type of this EngineCreateReqFlavorType.
 
         引擎类型
 
@@ -233,7 +233,7 @@ class EngineCreateReqFlavorType:
 
     @spec_type.setter
     def spec_type(self, spec_type):
-        """Sets the spec_type of this EngineCreateReqFlavorType.
+        r"""Sets the spec_type of this EngineCreateReqFlavorType.
 
         引擎类型
 
@@ -244,7 +244,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def linear(self):
-        """Gets the linear of this EngineCreateReqFlavorType.
+        r"""Gets the linear of this EngineCreateReqFlavorType.
 
         是否为线性
 
@@ -255,7 +255,7 @@ class EngineCreateReqFlavorType:
 
     @linear.setter
     def linear(self, linear):
-        """Sets the linear of this EngineCreateReqFlavorType.
+        r"""Sets the linear of this EngineCreateReqFlavorType.
 
         是否为线性
 
@@ -266,7 +266,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def license_amount(self):
-        """Gets the license_amount of this EngineCreateReqFlavorType.
+        r"""Gets the license_amount of this EngineCreateReqFlavorType.
 
         网关证书规模
 
@@ -277,7 +277,7 @@ class EngineCreateReqFlavorType:
 
     @license_amount.setter
     def license_amount(self, license_amount):
-        """Sets the license_amount of this EngineCreateReqFlavorType.
+        r"""Sets the license_amount of this EngineCreateReqFlavorType.
 
         网关证书规模
 
@@ -288,7 +288,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def node_limit(self):
-        """Gets the node_limit of this EngineCreateReqFlavorType.
+        r"""Gets the node_limit of this EngineCreateReqFlavorType.
 
         网关节点数限制
 
@@ -299,7 +299,7 @@ class EngineCreateReqFlavorType:
 
     @node_limit.setter
     def node_limit(self, node_limit):
-        """Sets the node_limit of this EngineCreateReqFlavorType.
+        r"""Sets the node_limit of this EngineCreateReqFlavorType.
 
         网关节点数限制
 
@@ -310,7 +310,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def id(self):
-        """Gets the id of this EngineCreateReqFlavorType.
+        r"""Gets the id of this EngineCreateReqFlavorType.
 
         网关规格id
 
@@ -321,7 +321,7 @@ class EngineCreateReqFlavorType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EngineCreateReqFlavorType.
+        r"""Sets the id of this EngineCreateReqFlavorType.
 
         网关规格id
 
@@ -332,7 +332,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def micro_gateway_flavor(self):
-        """Gets the micro_gateway_flavor of this EngineCreateReqFlavorType.
+        r"""Gets the micro_gateway_flavor of this EngineCreateReqFlavorType.
 
         网关规格
 
@@ -343,7 +343,7 @@ class EngineCreateReqFlavorType:
 
     @micro_gateway_flavor.setter
     def micro_gateway_flavor(self, micro_gateway_flavor):
-        """Sets the micro_gateway_flavor of this EngineCreateReqFlavorType.
+        r"""Sets the micro_gateway_flavor of this EngineCreateReqFlavorType.
 
         网关规格
 
@@ -354,7 +354,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def disable(self):
-        """Gets the disable of this EngineCreateReqFlavorType.
+        r"""Gets the disable of this EngineCreateReqFlavorType.
 
         网关是否禁用
 
@@ -365,7 +365,7 @@ class EngineCreateReqFlavorType:
 
     @disable.setter
     def disable(self, disable):
-        """Sets the disable of this EngineCreateReqFlavorType.
+        r"""Sets the disable of this EngineCreateReqFlavorType.
 
         网关是否禁用
 
@@ -376,7 +376,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def spec(self):
-        """Gets the spec of this EngineCreateReqFlavorType.
+        r"""Gets the spec of this EngineCreateReqFlavorType.
 
         网关节点类型
 
@@ -387,7 +387,7 @@ class EngineCreateReqFlavorType:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this EngineCreateReqFlavorType.
+        r"""Sets the spec of this EngineCreateReqFlavorType.
 
         网关节点类型
 
@@ -398,7 +398,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this EngineCreateReqFlavorType.
+        r"""Gets the cloud_service_type of this EngineCreateReqFlavorType.
 
         云服务类型
 
@@ -409,7 +409,7 @@ class EngineCreateReqFlavorType:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this EngineCreateReqFlavorType.
+        r"""Sets the cloud_service_type of this EngineCreateReqFlavorType.
 
         云服务类型
 
@@ -420,7 +420,7 @@ class EngineCreateReqFlavorType:
 
     @property
     def currentflavor(self):
-        """Gets the currentflavor of this EngineCreateReqFlavorType.
+        r"""Gets the currentflavor of this EngineCreateReqFlavorType.
 
         当前规格
 
@@ -431,7 +431,7 @@ class EngineCreateReqFlavorType:
 
     @currentflavor.setter
     def currentflavor(self, currentflavor):
-        """Sets the currentflavor of this EngineCreateReqFlavorType.
+        r"""Sets the currentflavor of this EngineCreateReqFlavorType.
 
         当前规格
 

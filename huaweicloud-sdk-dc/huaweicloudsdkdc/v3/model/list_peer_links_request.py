@@ -45,7 +45,7 @@ class ListPeerLinksRequest:
     }
 
     def __init__(self, global_dc_gateway_id=None, limit=None, offset=None, marker=None, page_reverse=None, fields=None, ext_fields=None, sort_key=None, sort_dir=None, id=None, name=None):
-        """ListPeerLinksRequest
+        r"""ListPeerLinksRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class ListPeerLinksRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ListPeerLinksRequest.
+        r"""Gets the global_dc_gateway_id of this ListPeerLinksRequest.
 
         全域接入网关ID
 
@@ -123,7 +123,7 @@ class ListPeerLinksRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ListPeerLinksRequest.
+        r"""Sets the global_dc_gateway_id of this ListPeerLinksRequest.
 
         全域接入网关ID
 
@@ -134,7 +134,7 @@ class ListPeerLinksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPeerLinksRequest.
+        r"""Gets the limit of this ListPeerLinksRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -145,7 +145,7 @@ class ListPeerLinksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPeerLinksRequest.
+        r"""Sets the limit of this ListPeerLinksRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -156,7 +156,7 @@ class ListPeerLinksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPeerLinksRequest.
+        r"""Gets the offset of this ListPeerLinksRequest.
 
         分页偏移量
 
@@ -167,7 +167,7 @@ class ListPeerLinksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPeerLinksRequest.
+        r"""Sets the offset of this ListPeerLinksRequest.
 
         分页偏移量
 
@@ -178,7 +178,7 @@ class ListPeerLinksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPeerLinksRequest.
+        r"""Gets the marker of this ListPeerLinksRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -189,7 +189,7 @@ class ListPeerLinksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPeerLinksRequest.
+        r"""Sets the marker of this ListPeerLinksRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -200,7 +200,7 @@ class ListPeerLinksRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListPeerLinksRequest.
+        r"""Gets the page_reverse of this ListPeerLinksRequest.
 
         分页参数
 
@@ -211,7 +211,7 @@ class ListPeerLinksRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPeerLinksRequest.
+        r"""Sets the page_reverse of this ListPeerLinksRequest.
 
         分页参数
 
@@ -222,7 +222,7 @@ class ListPeerLinksRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListPeerLinksRequest.
+        r"""Gets the fields of this ListPeerLinksRequest.
 
         显示字段列表
 
@@ -233,7 +233,7 @@ class ListPeerLinksRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListPeerLinksRequest.
+        r"""Sets the fields of this ListPeerLinksRequest.
 
         显示字段列表
 
@@ -244,7 +244,7 @@ class ListPeerLinksRequest:
 
     @property
     def ext_fields(self):
-        """Gets the ext_fields of this ListPeerLinksRequest.
+        r"""Gets the ext_fields of this ListPeerLinksRequest.
 
         show response ext-fields
 
@@ -255,7 +255,7 @@ class ListPeerLinksRequest:
 
     @ext_fields.setter
     def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ListPeerLinksRequest.
+        r"""Sets the ext_fields of this ListPeerLinksRequest.
 
         show response ext-fields
 
@@ -266,7 +266,7 @@ class ListPeerLinksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPeerLinksRequest.
+        r"""Gets the sort_key of this ListPeerLinksRequest.
 
         排序字段。
 
@@ -277,7 +277,7 @@ class ListPeerLinksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPeerLinksRequest.
+        r"""Sets the sort_key of this ListPeerLinksRequest.
 
         排序字段。
 
@@ -288,7 +288,7 @@ class ListPeerLinksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPeerLinksRequest.
+        r"""Gets the sort_dir of this ListPeerLinksRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -299,7 +299,7 @@ class ListPeerLinksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPeerLinksRequest.
+        r"""Sets the sort_dir of this ListPeerLinksRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -310,7 +310,7 @@ class ListPeerLinksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPeerLinksRequest.
+        r"""Gets the id of this ListPeerLinksRequest.
 
         根据资源ID过滤实例
 
@@ -321,7 +321,7 @@ class ListPeerLinksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPeerLinksRequest.
+        r"""Sets the id of this ListPeerLinksRequest.
 
         根据资源ID过滤实例
 
@@ -332,7 +332,7 @@ class ListPeerLinksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPeerLinksRequest.
+        r"""Gets the name of this ListPeerLinksRequest.
 
         根据名字过滤查询，可查询多个名字。
 
@@ -343,7 +343,7 @@ class ListPeerLinksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPeerLinksRequest.
+        r"""Sets the name of this ListPeerLinksRequest.
 
         根据名字过滤查询，可查询多个名字。
 

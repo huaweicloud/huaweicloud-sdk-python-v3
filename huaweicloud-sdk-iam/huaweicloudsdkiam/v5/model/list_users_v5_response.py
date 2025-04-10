@@ -28,7 +28,7 @@ class ListUsersV5Response(SdkResponse):
     }
 
     def __init__(self, users=None, page_info=None):
-        """ListUsersV5Response
+        r"""ListUsersV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUsersV5Response(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListUsersV5Response.
+        r"""Gets the users of this ListUsersV5Response.
 
         IAM用户列表。
 
@@ -62,7 +62,7 @@ class ListUsersV5Response(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListUsersV5Response.
+        r"""Sets the users of this ListUsersV5Response.
 
         IAM用户列表。
 
@@ -73,7 +73,7 @@ class ListUsersV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListUsersV5Response.
+        r"""Gets the page_info of this ListUsersV5Response.
 
         :return: The page_info of this ListUsersV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListUsersV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListUsersV5Response.
+        r"""Sets the page_info of this ListUsersV5Response.
 
         :param page_info: The page_info of this ListUsersV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

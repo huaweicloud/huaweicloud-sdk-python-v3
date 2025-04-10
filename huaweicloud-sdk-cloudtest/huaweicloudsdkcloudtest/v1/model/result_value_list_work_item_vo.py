@@ -25,7 +25,7 @@ class ResultValueListWorkItemVo:
     }
 
     def __init__(self, value=None):
-        """ResultValueListWorkItemVo
+        r"""ResultValueListWorkItemVo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResultValueListWorkItemVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueListWorkItemVo.
+        r"""Gets the value of this ResultValueListWorkItemVo.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -54,7 +54,7 @@ class ResultValueListWorkItemVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueListWorkItemVo.
+        r"""Sets the value of this ResultValueListWorkItemVo.
 
         实际的数据类型：单个对象，集合 或 NULL
 

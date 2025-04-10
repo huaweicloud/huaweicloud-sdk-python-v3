@@ -29,7 +29,7 @@ class PortBindingDomainInfo:
     }
 
     def __init__(self, group_id=None, group_name=None, domain_name=None):
-        """PortBindingDomainInfo
+        r"""PortBindingDomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PortBindingDomainInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this PortBindingDomainInfo.
+        r"""Gets the group_id of this PortBindingDomainInfo.
 
         入方向端口绑定的API分组编号。
 
@@ -68,7 +68,7 @@ class PortBindingDomainInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this PortBindingDomainInfo.
+        r"""Sets the group_id of this PortBindingDomainInfo.
 
         入方向端口绑定的API分组编号。
 
@@ -79,7 +79,7 @@ class PortBindingDomainInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PortBindingDomainInfo.
+        r"""Gets the group_name of this PortBindingDomainInfo.
 
         入方向端口绑定的API分组名称。
 
@@ -90,7 +90,7 @@ class PortBindingDomainInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PortBindingDomainInfo.
+        r"""Sets the group_name of this PortBindingDomainInfo.
 
         入方向端口绑定的API分组名称。
 
@@ -101,7 +101,7 @@ class PortBindingDomainInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this PortBindingDomainInfo.
+        r"""Gets the domain_name of this PortBindingDomainInfo.
 
         入方向端口绑定的域名。
 
@@ -112,7 +112,7 @@ class PortBindingDomainInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this PortBindingDomainInfo.
+        r"""Sets the domain_name of this PortBindingDomainInfo.
 
         入方向端口绑定的域名。
 

@@ -29,7 +29,7 @@ class ResourceSharesByTagsReqBody:
     }
 
     def __init__(self, without_any_tag=None, tags=None, matches=None):
-        """ResourceSharesByTagsReqBody
+        r"""ResourceSharesByTagsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourceSharesByTagsReqBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ResourceSharesByTagsReqBody.
+        r"""Gets the without_any_tag of this ResourceSharesByTagsReqBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源。
 
@@ -68,7 +68,7 @@ class ResourceSharesByTagsReqBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ResourceSharesByTagsReqBody.
+        r"""Sets the without_any_tag of this ResourceSharesByTagsReqBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源。
 
@@ -79,7 +79,7 @@ class ResourceSharesByTagsReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceSharesByTagsReqBody.
+        r"""Gets the tags of this ResourceSharesByTagsReqBody.
 
         包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是\"与\"的关系，key-value结构中value是\"或\"的关系。无tag过滤条件时返回全量数据。
 
@@ -90,7 +90,7 @@ class ResourceSharesByTagsReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceSharesByTagsReqBody.
+        r"""Sets the tags of this ResourceSharesByTagsReqBody.
 
         包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是\"与\"的关系，key-value结构中value是\"或\"的关系。无tag过滤条件时返回全量数据。
 
@@ -101,7 +101,7 @@ class ResourceSharesByTagsReqBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ResourceSharesByTagsReqBody.
+        r"""Gets the matches of this ResourceSharesByTagsReqBody.
 
         资源共享实例绑定标签列表的匹配字段。
 
@@ -112,7 +112,7 @@ class ResourceSharesByTagsReqBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ResourceSharesByTagsReqBody.
+        r"""Sets the matches of this ResourceSharesByTagsReqBody.
 
         资源共享实例绑定标签列表的匹配字段。
 

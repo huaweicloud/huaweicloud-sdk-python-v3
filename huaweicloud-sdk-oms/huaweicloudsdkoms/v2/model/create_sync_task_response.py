@@ -26,7 +26,7 @@ class CreateSyncTaskResponse(SdkResponse):
     }
 
     def __init__(self, sync_task_id=None):
-        """CreateSyncTaskResponse
+        r"""CreateSyncTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSyncTaskResponse(SdkResponse):
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this CreateSyncTaskResponse.
+        r"""Gets the sync_task_id of this CreateSyncTaskResponse.
 
         同步任务ID
 
@@ -55,7 +55,7 @@ class CreateSyncTaskResponse(SdkResponse):
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this CreateSyncTaskResponse.
+        r"""Sets the sync_task_id of this CreateSyncTaskResponse.
 
         同步任务ID
 

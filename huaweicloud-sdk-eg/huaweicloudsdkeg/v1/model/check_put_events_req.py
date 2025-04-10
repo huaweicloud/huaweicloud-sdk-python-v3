@@ -25,7 +25,7 @@ class CheckPutEventsReq:
     }
 
     def __init__(self, sources=None):
-        """CheckPutEventsReq
+        r"""CheckPutEventsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckPutEventsReq:
 
     @property
     def sources(self):
-        """Gets the sources of this CheckPutEventsReq.
+        r"""Gets the sources of this CheckPutEventsReq.
 
         :return: The sources of this CheckPutEventsReq.
         :rtype: list[:class:`huaweicloudsdkeg.v1.CheckPutEventsReqSources`]
@@ -52,7 +52,7 @@ class CheckPutEventsReq:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this CheckPutEventsReq.
+        r"""Sets the sources of this CheckPutEventsReq.
 
         :param sources: The sources of this CheckPutEventsReq.
         :type sources: list[:class:`huaweicloudsdkeg.v1.CheckPutEventsReqSources`]

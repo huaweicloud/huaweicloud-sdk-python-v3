@@ -27,7 +27,7 @@ class AccessControlAttributeDto:
     }
 
     def __init__(self, key=None, value=None):
-        """AccessControlAttributeDto
+        r"""AccessControlAttributeDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AccessControlAttributeDto:
 
     @property
     def key(self):
-        """Gets the key of this AccessControlAttributeDto.
+        r"""Gets the key of this AccessControlAttributeDto.
 
         与您的身份源中的身份关联的属性的名称
 
@@ -59,7 +59,7 @@ class AccessControlAttributeDto:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AccessControlAttributeDto.
+        r"""Sets the key of this AccessControlAttributeDto.
 
         与您的身份源中的身份关联的属性的名称
 
@@ -70,7 +70,7 @@ class AccessControlAttributeDto:
 
     @property
     def value(self):
-        """Gets the value of this AccessControlAttributeDto.
+        r"""Gets the value of this AccessControlAttributeDto.
 
         :return: The value of this AccessControlAttributeDto.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.AccessControlAttributeValueDto`
@@ -79,7 +79,7 @@ class AccessControlAttributeDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AccessControlAttributeDto.
+        r"""Sets the value of this AccessControlAttributeDto.
 
         :param value: The value of this AccessControlAttributeDto.
         :type value: :class:`huaweicloudsdkidentitycenter.v1.AccessControlAttributeValueDto`

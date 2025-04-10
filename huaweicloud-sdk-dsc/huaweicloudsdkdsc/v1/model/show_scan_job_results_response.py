@@ -36,7 +36,7 @@ class ShowScanJobResultsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, type=None, db_scan_result=None, obs_scan_result=None, es_scan_result=None):
-        """ShowScanJobResultsResponse
+        r"""ShowScanJobResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowScanJobResultsResponse.
+        r"""Gets the job_id of this ShowScanJobResultsResponse.
 
         任务ID
 
@@ -90,7 +90,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowScanJobResultsResponse.
+        r"""Sets the job_id of this ShowScanJobResultsResponse.
 
         任务ID
 
@@ -101,7 +101,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowScanJobResultsResponse.
+        r"""Gets the job_name of this ShowScanJobResultsResponse.
 
         任务名
 
@@ -112,7 +112,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowScanJobResultsResponse.
+        r"""Sets the job_name of this ShowScanJobResultsResponse.
 
         任务名
 
@@ -123,7 +123,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowScanJobResultsResponse.
+        r"""Gets the type of this ShowScanJobResultsResponse.
 
         查询资产类型
 
@@ -134,7 +134,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowScanJobResultsResponse.
+        r"""Sets the type of this ShowScanJobResultsResponse.
 
         查询资产类型
 
@@ -145,7 +145,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @property
     def db_scan_result(self):
-        """Gets the db_scan_result of this ShowScanJobResultsResponse.
+        r"""Gets the db_scan_result of this ShowScanJobResultsResponse.
 
         :return: The db_scan_result of this ShowScanJobResultsResponse.
         :rtype: :class:`huaweicloudsdkdsc.v1.DbScanResult`
@@ -154,7 +154,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @db_scan_result.setter
     def db_scan_result(self, db_scan_result):
-        """Sets the db_scan_result of this ShowScanJobResultsResponse.
+        r"""Sets the db_scan_result of this ShowScanJobResultsResponse.
 
         :param db_scan_result: The db_scan_result of this ShowScanJobResultsResponse.
         :type db_scan_result: :class:`huaweicloudsdkdsc.v1.DbScanResult`
@@ -163,7 +163,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @property
     def obs_scan_result(self):
-        """Gets the obs_scan_result of this ShowScanJobResultsResponse.
+        r"""Gets the obs_scan_result of this ShowScanJobResultsResponse.
 
         :return: The obs_scan_result of this ShowScanJobResultsResponse.
         :rtype: :class:`huaweicloudsdkdsc.v1.ObsScanResult`
@@ -172,7 +172,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @obs_scan_result.setter
     def obs_scan_result(self, obs_scan_result):
-        """Sets the obs_scan_result of this ShowScanJobResultsResponse.
+        r"""Sets the obs_scan_result of this ShowScanJobResultsResponse.
 
         :param obs_scan_result: The obs_scan_result of this ShowScanJobResultsResponse.
         :type obs_scan_result: :class:`huaweicloudsdkdsc.v1.ObsScanResult`
@@ -181,7 +181,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @property
     def es_scan_result(self):
-        """Gets the es_scan_result of this ShowScanJobResultsResponse.
+        r"""Gets the es_scan_result of this ShowScanJobResultsResponse.
 
         :return: The es_scan_result of this ShowScanJobResultsResponse.
         :rtype: :class:`huaweicloudsdkdsc.v1.EsScanResult`
@@ -190,7 +190,7 @@ class ShowScanJobResultsResponse(SdkResponse):
 
     @es_scan_result.setter
     def es_scan_result(self, es_scan_result):
-        """Sets the es_scan_result of this ShowScanJobResultsResponse.
+        r"""Sets the es_scan_result of this ShowScanJobResultsResponse.
 
         :param es_scan_result: The es_scan_result of this ShowScanJobResultsResponse.
         :type es_scan_result: :class:`huaweicloudsdkdsc.v1.EsScanResult`

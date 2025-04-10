@@ -25,7 +25,7 @@ class BatchDetachInstancesReq:
     }
 
     def __init__(self, desktops=None):
-        """BatchDetachInstancesReq
+        r"""BatchDetachInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDetachInstancesReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this BatchDetachInstancesReq.
+        r"""Gets the desktops of this BatchDetachInstancesReq.
 
         解绑的桌面信息列表。
 
@@ -54,7 +54,7 @@ class BatchDetachInstancesReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this BatchDetachInstancesReq.
+        r"""Sets the desktops of this BatchDetachInstancesReq.
 
         解绑的桌面信息列表。
 

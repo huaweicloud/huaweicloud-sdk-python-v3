@@ -35,7 +35,7 @@ class VersionObject:
     }
 
     def __init__(self, status=None, id=None, updated=None, version=None, min_version=None, links=None):
-        """VersionObject
+        r"""VersionObject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VersionObject:
 
     @property
     def status(self):
-        """Gets the status of this VersionObject.
+        r"""Gets the status of this VersionObject.
 
         版本状态。   - CURRENT：表示该版本为主推版本。   - SUPPORT：表示为老版本，但是现在还在继续支持。   -DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -89,7 +89,7 @@ class VersionObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionObject.
+        r"""Sets the status of this VersionObject.
 
         版本状态。   - CURRENT：表示该版本为主推版本。   - SUPPORT：表示为老版本，但是现在还在继续支持。   -DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -100,7 +100,7 @@ class VersionObject:
 
     @property
     def id(self):
-        """Gets the id of this VersionObject.
+        r"""Gets the id of this VersionObject.
 
         版本ID。 - v1：当前主推版本
 
@@ -111,7 +111,7 @@ class VersionObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionObject.
+        r"""Sets the id of this VersionObject.
 
         版本ID。 - v1：当前主推版本
 
@@ -122,7 +122,7 @@ class VersionObject:
 
     @property
     def updated(self):
-        """Gets the updated of this VersionObject.
+        r"""Gets the updated of this VersionObject.
 
         版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
@@ -133,7 +133,7 @@ class VersionObject:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this VersionObject.
+        r"""Sets the updated of this VersionObject.
 
         版本发布时间。采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
@@ -144,7 +144,7 @@ class VersionObject:
 
     @property
     def version(self):
-        """Gets the version of this VersionObject.
+        r"""Gets the version of this VersionObject.
 
         支持的版本号。
 
@@ -155,7 +155,7 @@ class VersionObject:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionObject.
+        r"""Sets the version of this VersionObject.
 
         支持的版本号。
 
@@ -166,7 +166,7 @@ class VersionObject:
 
     @property
     def min_version(self):
-        """Gets the min_version of this VersionObject.
+        r"""Gets the min_version of this VersionObject.
 
         支持的微版本号。若该版本API不支持微版本，则为空。
 
@@ -177,7 +177,7 @@ class VersionObject:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this VersionObject.
+        r"""Sets the min_version of this VersionObject.
 
         支持的微版本号。若该版本API不支持微版本，则为空。
 
@@ -188,7 +188,7 @@ class VersionObject:
 
     @property
     def links(self):
-        """Gets the links of this VersionObject.
+        r"""Gets the links of this VersionObject.
 
         API的URL地址
 
@@ -199,7 +199,7 @@ class VersionObject:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VersionObject.
+        r"""Sets the links of this VersionObject.
 
         API的URL地址
 

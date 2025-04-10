@@ -32,7 +32,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_status=None, task_type=None, task_result=None):
-        """ShowAsyncTaskResultResponse
+        r"""ShowAsyncTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowAsyncTaskResultResponse.
+        r"""Gets the task_id of this ShowAsyncTaskResultResponse.
 
         任务id
 
@@ -76,7 +76,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowAsyncTaskResultResponse.
+        r"""Sets the task_id of this ShowAsyncTaskResultResponse.
 
         任务id
 
@@ -87,7 +87,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowAsyncTaskResultResponse.
+        r"""Gets the task_status of this ShowAsyncTaskResultResponse.
 
         任务状态。waiting等待处理，processing处理中，succeed成功，failed失败。
 
@@ -98,7 +98,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowAsyncTaskResultResponse.
+        r"""Sets the task_status of this ShowAsyncTaskResultResponse.
 
         任务状态。waiting等待处理，processing处理中，succeed成功，failed失败。
 
@@ -109,7 +109,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowAsyncTaskResultResponse.
+        r"""Gets the task_type of this ShowAsyncTaskResultResponse.
 
         任务类型。 import_api为异步导入api，export_api为异步导出api。
 
@@ -120,7 +120,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowAsyncTaskResultResponse.
+        r"""Sets the task_type of this ShowAsyncTaskResultResponse.
 
         任务类型。 import_api为异步导入api，export_api为异步导出api。
 
@@ -131,7 +131,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @property
     def task_result(self):
-        """Gets the task_result of this ShowAsyncTaskResultResponse.
+        r"""Gets the task_result of this ShowAsyncTaskResultResponse.
 
         任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。其中success数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。failure数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。swagger结构体包括2个字段，swagger文档编号id、导入结果说明result。ignore数组元素包括API请求方法method、API请求路径path。 当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。
 
@@ -142,7 +142,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
     @task_result.setter
     def task_result(self, task_result):
-        """Sets the task_result of this ShowAsyncTaskResultResponse.
+        r"""Sets the task_result of this ShowAsyncTaskResultResponse.
 
         任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。其中success数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。failure数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。swagger结构体包括2个字段，swagger文档编号id、导入结果说明result。ignore数组元素包括API请求方法method、API请求路径path。 当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。
 

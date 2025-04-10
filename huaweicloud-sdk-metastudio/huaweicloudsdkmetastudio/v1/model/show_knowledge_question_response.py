@@ -36,7 +36,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
     }
 
     def __init__(self, question_id=None, question=None, intent_id=None, create_time=None, update_time=None, x_request_id=None):
-        """ShowKnowledgeQuestionResponse
+        r"""ShowKnowledgeQuestionResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def question_id(self):
-        """Gets the question_id of this ShowKnowledgeQuestionResponse.
+        r"""Gets the question_id of this ShowKnowledgeQuestionResponse.
 
         问法ID。
 
@@ -90,7 +90,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @question_id.setter
     def question_id(self, question_id):
-        """Sets the question_id of this ShowKnowledgeQuestionResponse.
+        r"""Sets the question_id of this ShowKnowledgeQuestionResponse.
 
         问法ID。
 
@@ -101,7 +101,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def question(self):
-        """Gets the question of this ShowKnowledgeQuestionResponse.
+        r"""Gets the question of this ShowKnowledgeQuestionResponse.
 
         问法。
 
@@ -112,7 +112,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @question.setter
     def question(self, question):
-        """Sets the question of this ShowKnowledgeQuestionResponse.
+        r"""Sets the question of this ShowKnowledgeQuestionResponse.
 
         问法。
 
@@ -123,7 +123,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this ShowKnowledgeQuestionResponse.
+        r"""Gets the intent_id of this ShowKnowledgeQuestionResponse.
 
         意图ID。
 
@@ -134,7 +134,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this ShowKnowledgeQuestionResponse.
+        r"""Sets the intent_id of this ShowKnowledgeQuestionResponse.
 
         意图ID。
 
@@ -145,7 +145,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowKnowledgeQuestionResponse.
+        r"""Gets the create_time of this ShowKnowledgeQuestionResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -156,7 +156,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowKnowledgeQuestionResponse.
+        r"""Sets the create_time of this ShowKnowledgeQuestionResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -167,7 +167,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowKnowledgeQuestionResponse.
+        r"""Gets the update_time of this ShowKnowledgeQuestionResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -178,7 +178,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowKnowledgeQuestionResponse.
+        r"""Sets the update_time of this ShowKnowledgeQuestionResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -189,7 +189,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowKnowledgeQuestionResponse.
+        r"""Gets the x_request_id of this ShowKnowledgeQuestionResponse.
 
         :return: The x_request_id of this ShowKnowledgeQuestionResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowKnowledgeQuestionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowKnowledgeQuestionResponse.
+        r"""Sets the x_request_id of this ShowKnowledgeQuestionResponse.
 
         :param x_request_id: The x_request_id of this ShowKnowledgeQuestionResponse.
         :type x_request_id: str

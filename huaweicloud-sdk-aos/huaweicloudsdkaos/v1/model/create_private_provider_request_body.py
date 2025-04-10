@@ -37,7 +37,7 @@ class CreatePrivateProviderRequestBody:
     }
 
     def __init__(self, provider_name=None, provider_description=None, provider_version=None, version_description=None, function_graph_urn=None, provider_agency_urn=None, provider_agency_name=None):
-        """CreatePrivateProviderRequestBody
+        r"""CreatePrivateProviderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this CreatePrivateProviderRequestBody.
+        r"""Gets the provider_name of this CreatePrivateProviderRequestBody.
 
         私有provider（private-provider）的名称。此名字在domain_id+region下应唯一，可以使用小写英文、数字、中划线。仅支持以小写英文、数字开头结尾。  按照HCL最佳实践，该名称推荐为在模板中定义的provider的本地名称（local_name）。  创建私有Provider（CreatePrivateProvider）API 还会以 “huawei.com/private-provider”为固定前缀，并以“huawei.com/private-provider/{provider_name}”的形式返回provider_source字段。关于provider_name和provider_source字段在模板中的使用细节，详见创建私有Provider的API描述。
 
@@ -95,7 +95,7 @@ class CreatePrivateProviderRequestBody:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this CreatePrivateProviderRequestBody.
+        r"""Sets the provider_name of this CreatePrivateProviderRequestBody.
 
         私有provider（private-provider）的名称。此名字在domain_id+region下应唯一，可以使用小写英文、数字、中划线。仅支持以小写英文、数字开头结尾。  按照HCL最佳实践，该名称推荐为在模板中定义的provider的本地名称（local_name）。  创建私有Provider（CreatePrivateProvider）API 还会以 “huawei.com/private-provider”为固定前缀，并以“huawei.com/private-provider/{provider_name}”的形式返回provider_source字段。关于provider_name和provider_source字段在模板中的使用细节，详见创建私有Provider的API描述。
 
@@ -106,7 +106,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def provider_description(self):
-        """Gets the provider_description of this CreatePrivateProviderRequestBody.
+        r"""Gets the provider_description of this CreatePrivateProviderRequestBody.
 
         私有provider（private-provider）的描述。可用于客户识别被管理的私有provider。
 
@@ -117,7 +117,7 @@ class CreatePrivateProviderRequestBody:
 
     @provider_description.setter
     def provider_description(self, provider_description):
-        """Sets the provider_description of this CreatePrivateProviderRequestBody.
+        r"""Sets the provider_description of this CreatePrivateProviderRequestBody.
 
         私有provider（private-provider）的描述。可用于客户识别被管理的私有provider。
 
@@ -128,7 +128,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def provider_version(self):
-        """Gets the provider_version of this CreatePrivateProviderRequestBody.
+        r"""Gets the provider_version of this CreatePrivateProviderRequestBody.
 
         provider的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -139,7 +139,7 @@ class CreatePrivateProviderRequestBody:
 
     @provider_version.setter
     def provider_version(self, provider_version):
-        """Sets the provider_version of this CreatePrivateProviderRequestBody.
+        r"""Sets the provider_version of this CreatePrivateProviderRequestBody.
 
         provider的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -150,7 +150,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def version_description(self):
-        """Gets the version_description of this CreatePrivateProviderRequestBody.
+        r"""Gets the version_description of this CreatePrivateProviderRequestBody.
 
         私有provider版本（provider version）的描述。可用于客户识别并管理私有provider的版本。注意：provider版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建
 
@@ -161,7 +161,7 @@ class CreatePrivateProviderRequestBody:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this CreatePrivateProviderRequestBody.
+        r"""Sets the version_description of this CreatePrivateProviderRequestBody.
 
         私有provider版本（provider version）的描述。可用于客户识别并管理私有provider的版本。注意：provider版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建
 
@@ -172,7 +172,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def function_graph_urn(self):
-        """Gets the function_graph_urn of this CreatePrivateProviderRequestBody.
+        r"""Gets the function_graph_urn of this CreatePrivateProviderRequestBody.
 
         FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
 
@@ -183,7 +183,7 @@ class CreatePrivateProviderRequestBody:
 
     @function_graph_urn.setter
     def function_graph_urn(self, function_graph_urn):
-        """Sets the function_graph_urn of this CreatePrivateProviderRequestBody.
+        r"""Sets the function_graph_urn of this CreatePrivateProviderRequestBody.
 
         FunctionGraph方法的统一资源标识，用于唯一标识的FunctionGraph方法。当前只支持和RFS同region的function_graph_urn，如果给予了关于其他region的，会报错400。  关于该参数的详细解释，请参考官方文档：https://support.huaweicloud.com/api-functiongraph/functiongraph_06_0102.html
 
@@ -194,7 +194,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def provider_agency_urn(self):
-        """Gets the provider_agency_urn of this CreatePrivateProviderRequestBody.
+        r"""Gets the provider_agency_urn of this CreatePrivateProviderRequestBody.
 
         自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
 
@@ -205,7 +205,7 @@ class CreatePrivateProviderRequestBody:
 
     @provider_agency_urn.setter
     def provider_agency_urn(self, provider_agency_urn):
-        """Sets the provider_agency_urn of this CreatePrivateProviderRequestBody.
+        r"""Sets the provider_agency_urn of this CreatePrivateProviderRequestBody.
 
         自定义provider所绑定的IAM委托URN，provider_agency_name和provider_agency_urn最多只能提供一个。
 
@@ -216,7 +216,7 @@ class CreatePrivateProviderRequestBody:
 
     @property
     def provider_agency_name(self):
-        """Gets the provider_agency_name of this CreatePrivateProviderRequestBody.
+        r"""Gets the provider_agency_name of this CreatePrivateProviderRequestBody.
 
         自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
 
@@ -227,7 +227,7 @@ class CreatePrivateProviderRequestBody:
 
     @provider_agency_name.setter
     def provider_agency_name(self, provider_agency_name):
-        """Sets the provider_agency_name of this CreatePrivateProviderRequestBody.
+        r"""Sets the provider_agency_name of this CreatePrivateProviderRequestBody.
 
         自定义provider所绑定的IAM委托名称，provider_agency_name和provider_agency_urn最多只能提供一个。
 

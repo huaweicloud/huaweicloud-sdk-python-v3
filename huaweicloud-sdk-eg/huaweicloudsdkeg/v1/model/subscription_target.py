@@ -47,7 +47,7 @@ class SubscriptionTarget:
     }
 
     def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, eg_detail=None, apigw_detail=None, retry_times=None, transform=None, dead_letter_queue=None):
-        """SubscriptionTarget
+        r"""SubscriptionTarget
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class SubscriptionTarget:
 
     @property
     def id(self):
-        """Gets the id of this SubscriptionTarget.
+        r"""Gets the id of this SubscriptionTarget.
 
         订阅目标ID，需保证全局唯一，由小写字母、数字、中划线组成，必须字母或数字开头。 更新订阅场景时，指定ID的订阅目标存在时则进行更新，否则进行创建； 创建订阅目标场景时，指定ID作为待创建的订阅目标对象ID，未指定时由系统自动生成。 更新订阅目标时，此字段忽略；
 
@@ -128,7 +128,7 @@ class SubscriptionTarget:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubscriptionTarget.
+        r"""Sets the id of this SubscriptionTarget.
 
         订阅目标ID，需保证全局唯一，由小写字母、数字、中划线组成，必须字母或数字开头。 更新订阅场景时，指定ID的订阅目标存在时则进行更新，否则进行创建； 创建订阅目标场景时，指定ID作为待创建的订阅目标对象ID，未指定时由系统自动生成。 更新订阅目标时，此字段忽略；
 
@@ -139,7 +139,7 @@ class SubscriptionTarget:
 
     @property
     def name(self):
-        """Gets the name of this SubscriptionTarget.
+        r"""Gets the name of this SubscriptionTarget.
 
         订阅的事件目标名称
 
@@ -150,7 +150,7 @@ class SubscriptionTarget:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubscriptionTarget.
+        r"""Sets the name of this SubscriptionTarget.
 
         订阅的事件目标名称
 
@@ -161,7 +161,7 @@ class SubscriptionTarget:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this SubscriptionTarget.
+        r"""Gets the provider_type of this SubscriptionTarget.
 
         订阅的事件目标的提供方类型
 
@@ -172,7 +172,7 @@ class SubscriptionTarget:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this SubscriptionTarget.
+        r"""Sets the provider_type of this SubscriptionTarget.
 
         订阅的事件目标的提供方类型
 
@@ -183,7 +183,7 @@ class SubscriptionTarget:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this SubscriptionTarget.
+        r"""Gets the connection_id of this SubscriptionTarget.
 
         订阅的事件目标使用的目标链接ID
 
@@ -194,7 +194,7 @@ class SubscriptionTarget:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this SubscriptionTarget.
+        r"""Sets the connection_id of this SubscriptionTarget.
 
         订阅的事件目标使用的目标链接ID
 
@@ -205,7 +205,7 @@ class SubscriptionTarget:
 
     @property
     def detail(self):
-        """Gets the detail of this SubscriptionTarget.
+        r"""Gets the detail of this SubscriptionTarget.
 
         订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数(urn、invoke_type、agency_name)、函数流（workflow_id、agency_name）、webhook（url）订阅目标必填，其中函数、函数流委托名称必填
 
@@ -216,7 +216,7 @@ class SubscriptionTarget:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SubscriptionTarget.
+        r"""Sets the detail of this SubscriptionTarget.
 
         订阅的事件目标参数列表，该字段序列化后总长度不超过1024字节，函数(urn、invoke_type、agency_name)、函数流（workflow_id、agency_name）、webhook（url）订阅目标必填，其中函数、函数流委托名称必填
 
@@ -227,7 +227,7 @@ class SubscriptionTarget:
 
     @property
     def kafka_detail(self):
-        """Gets the kafka_detail of this SubscriptionTarget.
+        r"""Gets the kafka_detail of this SubscriptionTarget.
 
         :return: The kafka_detail of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
@@ -236,7 +236,7 @@ class SubscriptionTarget:
 
     @kafka_detail.setter
     def kafka_detail(self, kafka_detail):
-        """Sets the kafka_detail of this SubscriptionTarget.
+        r"""Sets the kafka_detail of this SubscriptionTarget.
 
         :param kafka_detail: The kafka_detail of this SubscriptionTarget.
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
@@ -245,7 +245,7 @@ class SubscriptionTarget:
 
     @property
     def smn_detail(self):
-        """Gets the smn_detail of this SubscriptionTarget.
+        r"""Gets the smn_detail of this SubscriptionTarget.
 
         :return: The smn_detail of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
@@ -254,7 +254,7 @@ class SubscriptionTarget:
 
     @smn_detail.setter
     def smn_detail(self, smn_detail):
-        """Sets the smn_detail of this SubscriptionTarget.
+        r"""Sets the smn_detail of this SubscriptionTarget.
 
         :param smn_detail: The smn_detail of this SubscriptionTarget.
         :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
@@ -263,7 +263,7 @@ class SubscriptionTarget:
 
     @property
     def eg_detail(self):
-        """Gets the eg_detail of this SubscriptionTarget.
+        r"""Gets the eg_detail of this SubscriptionTarget.
 
         :return: The eg_detail of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
@@ -272,7 +272,7 @@ class SubscriptionTarget:
 
     @eg_detail.setter
     def eg_detail(self, eg_detail):
-        """Sets the eg_detail of this SubscriptionTarget.
+        r"""Sets the eg_detail of this SubscriptionTarget.
 
         :param eg_detail: The eg_detail of this SubscriptionTarget.
         :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
@@ -281,7 +281,7 @@ class SubscriptionTarget:
 
     @property
     def apigw_detail(self):
-        """Gets the apigw_detail of this SubscriptionTarget.
+        r"""Gets the apigw_detail of this SubscriptionTarget.
 
         :return: The apigw_detail of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
@@ -290,7 +290,7 @@ class SubscriptionTarget:
 
     @apigw_detail.setter
     def apigw_detail(self, apigw_detail):
-        """Sets the apigw_detail of this SubscriptionTarget.
+        r"""Sets the apigw_detail of this SubscriptionTarget.
 
         :param apigw_detail: The apigw_detail of this SubscriptionTarget.
         :type apigw_detail: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
@@ -299,7 +299,7 @@ class SubscriptionTarget:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this SubscriptionTarget.
+        r"""Gets the retry_times of this SubscriptionTarget.
 
         重试次数
 
@@ -310,7 +310,7 @@ class SubscriptionTarget:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this SubscriptionTarget.
+        r"""Sets the retry_times of this SubscriptionTarget.
 
         重试次数
 
@@ -321,7 +321,7 @@ class SubscriptionTarget:
 
     @property
     def transform(self):
-        """Gets the transform of this SubscriptionTarget.
+        r"""Gets the transform of this SubscriptionTarget.
 
         :return: The transform of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.TransForm`
@@ -330,7 +330,7 @@ class SubscriptionTarget:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this SubscriptionTarget.
+        r"""Sets the transform of this SubscriptionTarget.
 
         :param transform: The transform of this SubscriptionTarget.
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
@@ -339,7 +339,7 @@ class SubscriptionTarget:
 
     @property
     def dead_letter_queue(self):
-        """Gets the dead_letter_queue of this SubscriptionTarget.
+        r"""Gets the dead_letter_queue of this SubscriptionTarget.
 
         :return: The dead_letter_queue of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
@@ -348,7 +348,7 @@ class SubscriptionTarget:
 
     @dead_letter_queue.setter
     def dead_letter_queue(self, dead_letter_queue):
-        """Sets the dead_letter_queue of this SubscriptionTarget.
+        r"""Sets the dead_letter_queue of this SubscriptionTarget.
 
         :param dead_letter_queue: The dead_letter_queue of this SubscriptionTarget.
         :type dead_letter_queue: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`

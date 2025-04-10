@@ -25,7 +25,7 @@ class UntagResourceReqBody:
     }
 
     def __init__(self, tag_keys=None):
-        """UntagResourceReqBody
+        r"""UntagResourceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UntagResourceReqBody:
 
     @property
     def tag_keys(self):
-        """Gets the tag_keys of this UntagResourceReqBody.
+        r"""Gets the tag_keys of this UntagResourceReqBody.
 
         :return: The tag_keys of this UntagResourceReqBody.
         :rtype: list[str]
@@ -51,7 +51,7 @@ class UntagResourceReqBody:
 
     @tag_keys.setter
     def tag_keys(self, tag_keys):
-        """Sets the tag_keys of this UntagResourceReqBody.
+        r"""Sets the tag_keys of this UntagResourceReqBody.
 
         :param tag_keys: The tag_keys of this UntagResourceReqBody.
         :type tag_keys: list[str]

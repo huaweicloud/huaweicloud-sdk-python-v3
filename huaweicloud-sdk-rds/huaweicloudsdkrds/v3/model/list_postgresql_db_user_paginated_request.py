@@ -31,7 +31,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
-        """ListPostgresqlDbUserPaginatedRequest
+        r"""ListPostgresqlDbUserPaginatedRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Gets the x_language of this ListPostgresqlDbUserPaginatedRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Sets the x_language of this ListPostgresqlDbUserPaginatedRequest.
 
         语言
 
@@ -83,7 +83,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Gets the instance_id of this ListPostgresqlDbUserPaginatedRequest.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Sets the instance_id of this ListPostgresqlDbUserPaginatedRequest.
 
         实例ID。
 
@@ -105,7 +105,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Gets the page of this ListPostgresqlDbUserPaginatedRequest.
 
         分页页码，从1开始。
 
@@ -116,7 +116,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Sets the page of this ListPostgresqlDbUserPaginatedRequest.
 
         分页页码，从1开始。
 
@@ -127,7 +127,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Gets the limit of this ListPostgresqlDbUserPaginatedRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -138,7 +138,7 @@ class ListPostgresqlDbUserPaginatedRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPostgresqlDbUserPaginatedRequest.
+        r"""Sets the limit of this ListPostgresqlDbUserPaginatedRequest.
 
         每页数据条数。取值范围[1, 100]。
 

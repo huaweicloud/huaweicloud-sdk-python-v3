@@ -31,7 +31,7 @@ class ListConsumerGroupOfTopicRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, limit=None, offset=None):
-        """ListConsumerGroupOfTopicRequest
+        r"""ListConsumerGroupOfTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConsumerGroupOfTopicRequest.
+        r"""Gets the instance_id of this ListConsumerGroupOfTopicRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConsumerGroupOfTopicRequest.
+        r"""Sets the instance_id of this ListConsumerGroupOfTopicRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ListConsumerGroupOfTopicRequest.
+        r"""Gets the topic of this ListConsumerGroupOfTopicRequest.
 
         主题名称。
 
@@ -95,7 +95,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ListConsumerGroupOfTopicRequest.
+        r"""Sets the topic of this ListConsumerGroupOfTopicRequest.
 
         主题名称。
 
@@ -106,7 +106,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConsumerGroupOfTopicRequest.
+        r"""Gets the limit of this ListConsumerGroupOfTopicRequest.
 
         当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
@@ -117,7 +117,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConsumerGroupOfTopicRequest.
+        r"""Sets the limit of this ListConsumerGroupOfTopicRequest.
 
         当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
@@ -128,7 +128,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConsumerGroupOfTopicRequest.
+        r"""Gets the offset of this ListConsumerGroupOfTopicRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -139,7 +139,7 @@ class ListConsumerGroupOfTopicRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConsumerGroupOfTopicRequest.
+        r"""Sets the offset of this ListConsumerGroupOfTopicRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 

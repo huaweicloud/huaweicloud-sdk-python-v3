@@ -31,7 +31,7 @@ class CreateCallbackWorkflowRequest:
     }
 
     def __init__(self, workflow_id=None, x_workflow_run_id=None, x_workflow_state_id=None, body=None):
-        """CreateCallbackWorkflowRequest
+        r"""CreateCallbackWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateCallbackWorkflowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this CreateCallbackWorkflowRequest.
+        r"""Gets the workflow_id of this CreateCallbackWorkflowRequest.
 
         函数工作流ID
 
@@ -72,7 +72,7 @@ class CreateCallbackWorkflowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this CreateCallbackWorkflowRequest.
+        r"""Sets the workflow_id of this CreateCallbackWorkflowRequest.
 
         函数工作流ID
 
@@ -83,7 +83,7 @@ class CreateCallbackWorkflowRequest:
 
     @property
     def x_workflow_run_id(self):
-        """Gets the x_workflow_run_id of this CreateCallbackWorkflowRequest.
+        r"""Gets the x_workflow_run_id of this CreateCallbackWorkflowRequest.
 
         workflow run id
 
@@ -94,7 +94,7 @@ class CreateCallbackWorkflowRequest:
 
     @x_workflow_run_id.setter
     def x_workflow_run_id(self, x_workflow_run_id):
-        """Sets the x_workflow_run_id of this CreateCallbackWorkflowRequest.
+        r"""Sets the x_workflow_run_id of this CreateCallbackWorkflowRequest.
 
         workflow run id
 
@@ -105,7 +105,7 @@ class CreateCallbackWorkflowRequest:
 
     @property
     def x_workflow_state_id(self):
-        """Gets the x_workflow_state_id of this CreateCallbackWorkflowRequest.
+        r"""Gets the x_workflow_state_id of this CreateCallbackWorkflowRequest.
 
         workflow state id
 
@@ -116,7 +116,7 @@ class CreateCallbackWorkflowRequest:
 
     @x_workflow_state_id.setter
     def x_workflow_state_id(self, x_workflow_state_id):
-        """Sets the x_workflow_state_id of this CreateCallbackWorkflowRequest.
+        r"""Sets the x_workflow_state_id of this CreateCallbackWorkflowRequest.
 
         workflow state id
 
@@ -127,7 +127,7 @@ class CreateCallbackWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCallbackWorkflowRequest.
+        r"""Gets the body of this CreateCallbackWorkflowRequest.
 
         :return: The body of this CreateCallbackWorkflowRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CallbackWorkflowRequestBody`
@@ -136,7 +136,7 @@ class CreateCallbackWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCallbackWorkflowRequest.
+        r"""Sets the body of this CreateCallbackWorkflowRequest.
 
         :param body: The body of this CreateCallbackWorkflowRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CallbackWorkflowRequestBody`

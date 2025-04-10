@@ -29,7 +29,7 @@ class UpdateAppIdRequestBody:
     }
 
     def __init__(self, app_name=None, description=None, status=None):
-        """UpdateAppIdRequestBody
+        r"""UpdateAppIdRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAppIdRequestBody:
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateAppIdRequestBody.
+        r"""Gets the app_name of this UpdateAppIdRequestBody.
 
         企业应用名称
 
@@ -68,7 +68,7 @@ class UpdateAppIdRequestBody:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateAppIdRequestBody.
+        r"""Sets the app_name of this UpdateAppIdRequestBody.
 
         企业应用名称
 
@@ -79,7 +79,7 @@ class UpdateAppIdRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppIdRequestBody.
+        r"""Gets the description of this UpdateAppIdRequestBody.
 
         企业应用描述
 
@@ -90,7 +90,7 @@ class UpdateAppIdRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppIdRequestBody.
+        r"""Sets the description of this UpdateAppIdRequestBody.
 
         企业应用描述
 
@@ -101,7 +101,7 @@ class UpdateAppIdRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateAppIdRequestBody.
+        r"""Gets the status of this UpdateAppIdRequestBody.
 
         企业应用状态  * 0：正常  * 1：停用 
 
@@ -112,7 +112,7 @@ class UpdateAppIdRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAppIdRequestBody.
+        r"""Sets the status of this UpdateAppIdRequestBody.
 
         企业应用状态  * 0：正常  * 1：停用 
 

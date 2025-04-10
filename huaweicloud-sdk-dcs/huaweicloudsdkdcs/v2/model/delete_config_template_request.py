@@ -25,7 +25,7 @@ class DeleteConfigTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteConfigTemplateRequest
+        r"""DeleteConfigTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConfigTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteConfigTemplateRequest.
+        r"""Gets the template_id of this DeleteConfigTemplateRequest.
 
         模板ID
 
@@ -53,7 +53,7 @@ class DeleteConfigTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteConfigTemplateRequest.
+        r"""Sets the template_id of this DeleteConfigTemplateRequest.
 
         模板ID
 

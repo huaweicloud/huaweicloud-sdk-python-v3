@@ -27,7 +27,7 @@ class UpdateUserByDomainRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateUserByDomainRequest
+        r"""UpdateUserByDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateUserByDomainRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateUserByDomainRequest.
+        r"""Gets the user_id of this UpdateUserByDomainRequest.
 
         用户id
 
@@ -60,7 +60,7 @@ class UpdateUserByDomainRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateUserByDomainRequest.
+        r"""Sets the user_id of this UpdateUserByDomainRequest.
 
         用户id
 
@@ -71,7 +71,7 @@ class UpdateUserByDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserByDomainRequest.
+        r"""Gets the body of this UpdateUserByDomainRequest.
 
         :return: The body of this UpdateUserByDomainRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainReq`
@@ -80,7 +80,7 @@ class UpdateUserByDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserByDomainRequest.
+        r"""Sets the body of this UpdateUserByDomainRequest.
 
         :param body: The body of this UpdateUserByDomainRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainReq`

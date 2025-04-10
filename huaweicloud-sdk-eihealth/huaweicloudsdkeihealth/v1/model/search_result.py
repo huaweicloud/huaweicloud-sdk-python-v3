@@ -35,7 +35,7 @@ class SearchResult:
     }
 
     def __init__(self, smiles=None, databases=None, top_n=None, prop_names=None, query=None, result=None):
-        """SearchResult
+        r"""SearchResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class SearchResult:
 
     @property
     def smiles(self):
-        """Gets the smiles of this SearchResult.
+        r"""Gets the smiles of this SearchResult.
 
         分子SMILES表达式
 
@@ -83,7 +83,7 @@ class SearchResult:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this SearchResult.
+        r"""Sets the smiles of this SearchResult.
 
         分子SMILES表达式
 
@@ -94,7 +94,7 @@ class SearchResult:
 
     @property
     def databases(self):
-        """Gets the databases of this SearchResult.
+        r"""Gets the databases of this SearchResult.
 
         搜索使用到的数据库集合
 
@@ -105,7 +105,7 @@ class SearchResult:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this SearchResult.
+        r"""Sets the databases of this SearchResult.
 
         搜索使用到的数据库集合
 
@@ -116,7 +116,7 @@ class SearchResult:
 
     @property
     def top_n(self):
-        """Gets the top_n of this SearchResult.
+        r"""Gets the top_n of this SearchResult.
 
         期望返回的条目数
 
@@ -127,7 +127,7 @@ class SearchResult:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this SearchResult.
+        r"""Sets the top_n of this SearchResult.
 
         期望返回的条目数
 
@@ -138,7 +138,7 @@ class SearchResult:
 
     @property
     def prop_names(self):
-        """Gets the prop_names of this SearchResult.
+        r"""Gets the prop_names of this SearchResult.
 
         分子ADMET属性名列表
 
@@ -149,7 +149,7 @@ class SearchResult:
 
     @prop_names.setter
     def prop_names(self, prop_names):
-        """Sets the prop_names of this SearchResult.
+        r"""Sets the prop_names of this SearchResult.
 
         分子ADMET属性名列表
 
@@ -160,7 +160,7 @@ class SearchResult:
 
     @property
     def query(self):
-        """Gets the query of this SearchResult.
+        r"""Gets the query of this SearchResult.
 
         :return: The query of this SearchResult.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PlainMoleculeItem`
@@ -169,7 +169,7 @@ class SearchResult:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this SearchResult.
+        r"""Sets the query of this SearchResult.
 
         :param query: The query of this SearchResult.
         :type query: :class:`huaweicloudsdkeihealth.v1.PlainMoleculeItem`
@@ -178,7 +178,7 @@ class SearchResult:
 
     @property
     def result(self):
-        """Gets the result of this SearchResult.
+        r"""Gets the result of this SearchResult.
 
         查询结果列表
 
@@ -189,7 +189,7 @@ class SearchResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SearchResult.
+        r"""Sets the result of this SearchResult.
 
         查询结果列表
 

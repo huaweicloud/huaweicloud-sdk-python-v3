@@ -29,7 +29,7 @@ class CoverageResp:
     }
 
     def __init__(self, coverage_policy=None, coverage_level=None, coverage_sites=None):
-        """CoverageResp
+        r"""CoverageResp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CoverageResp:
 
     @property
     def coverage_policy(self):
-        """Gets the coverage_policy of this CoverageResp.
+        r"""Gets the coverage_policy of this CoverageResp.
 
         区域调度策略，只支持centralize/discrete。  - centralize：代表城市集中策略，指定该策略，边缘业务创建时会保证将所有实例都发放在同一个站点。 - discrete：代表城市分散，指定该策略，边缘业务创建时，尽量保证所有实例都分散发放在不同站点。
 
@@ -65,7 +65,7 @@ class CoverageResp:
 
     @coverage_policy.setter
     def coverage_policy(self, coverage_policy):
-        """Sets the coverage_policy of this CoverageResp.
+        r"""Sets the coverage_policy of this CoverageResp.
 
         区域调度策略，只支持centralize/discrete。  - centralize：代表城市集中策略，指定该策略，边缘业务创建时会保证将所有实例都发放在同一个站点。 - discrete：代表城市分散，指定该策略，边缘业务创建时，尽量保证所有实例都分散发放在不同站点。
 
@@ -76,7 +76,7 @@ class CoverageResp:
 
     @property
     def coverage_level(self):
-        """Gets the coverage_level of this CoverageResp.
+        r"""Gets the coverage_level of this CoverageResp.
 
         区域分布层级，只支持area/prov/city/site。  - area:大区，用户的资源会在指定大区下发放。 - prov:省份，用户的资源会在指定省份下发放。 - city:城市，用户的资源会在指定城市下发放。 - site:站点级别。  约束：  站点层级，coverage_policy上仅支持'centralize'，coverage_sites中'site'字段仅支持使用ID(站点ID，通过“查询边缘站点列表”获取)，不支持name。
 
@@ -87,7 +87,7 @@ class CoverageResp:
 
     @coverage_level.setter
     def coverage_level(self, coverage_level):
-        """Sets the coverage_level of this CoverageResp.
+        r"""Sets the coverage_level of this CoverageResp.
 
         区域分布层级，只支持area/prov/city/site。  - area:大区，用户的资源会在指定大区下发放。 - prov:省份，用户的资源会在指定省份下发放。 - city:城市，用户的资源会在指定城市下发放。 - site:站点级别。  约束：  站点层级，coverage_policy上仅支持'centralize'，coverage_sites中'site'字段仅支持使用ID(站点ID，通过“查询边缘站点列表”获取)，不支持name。
 
@@ -98,7 +98,7 @@ class CoverageResp:
 
     @property
     def coverage_sites(self):
-        """Gets the coverage_sites of this CoverageResp.
+        r"""Gets the coverage_sites of this CoverageResp.
 
         区域及购买数量列表。
 
@@ -109,7 +109,7 @@ class CoverageResp:
 
     @coverage_sites.setter
     def coverage_sites(self, coverage_sites):
-        """Sets the coverage_sites of this CoverageResp.
+        r"""Sets the coverage_sites of this CoverageResp.
 
         区域及购买数量列表。
 

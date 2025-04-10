@@ -41,7 +41,7 @@ class JobInfo:
     }
 
     def __init__(self, id=None, name=None, instance_id=None, instance_name=None, status=None, progress=None, fail_reason=None, created_at=None, ended_at=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class JobInfo:
 
     @property
     def id(self):
-        """Gets the id of this JobInfo.
+        r"""Gets the id of this JobInfo.
 
         任务ID。
 
@@ -101,7 +101,7 @@ class JobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobInfo.
+        r"""Sets the id of this JobInfo.
 
         任务ID。
 
@@ -112,7 +112,7 @@ class JobInfo:
 
     @property
     def name(self):
-        """Gets the name of this JobInfo.
+        r"""Gets the name of this JobInfo.
 
         任务名称。
 
@@ -123,7 +123,7 @@ class JobInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobInfo.
+        r"""Sets the name of this JobInfo.
 
         任务名称。
 
@@ -134,7 +134,7 @@ class JobInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this JobInfo.
+        r"""Gets the instance_id of this JobInfo.
 
         实例ID。
 
@@ -145,7 +145,7 @@ class JobInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this JobInfo.
+        r"""Sets the instance_id of this JobInfo.
 
         实例ID。
 
@@ -156,7 +156,7 @@ class JobInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this JobInfo.
+        r"""Gets the instance_name of this JobInfo.
 
         实例名称。
 
@@ -167,7 +167,7 @@ class JobInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this JobInfo.
+        r"""Sets the instance_name of this JobInfo.
 
         实例名称。
 
@@ -178,7 +178,7 @@ class JobInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobInfo.
+        r"""Gets the status of this JobInfo.
 
         任务状态。取值为“Running”为执行中； 取值为“Completed”为完成； 取值为“Failed” 为失败。
 
@@ -189,7 +189,7 @@ class JobInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobInfo.
+        r"""Sets the status of this JobInfo.
 
         任务状态。取值为“Running”为执行中； 取值为“Completed”为完成； 取值为“Failed” 为失败。
 
@@ -200,7 +200,7 @@ class JobInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this JobInfo.
+        r"""Gets the progress of this JobInfo.
 
         任务执行进度。 说明 执行中状态才返回执行进度，例如“60%”，表示任务执行进度为60%，否则返回“”。 任务执行进度。
 
@@ -211,7 +211,7 @@ class JobInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobInfo.
+        r"""Sets the progress of this JobInfo.
 
         任务执行进度。 说明 执行中状态才返回执行进度，例如“60%”，表示任务执行进度为60%，否则返回“”。 任务执行进度。
 
@@ -222,7 +222,7 @@ class JobInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this JobInfo.
+        r"""Gets the fail_reason of this JobInfo.
 
         任务执行失败时的错误信息。
 
@@ -233,7 +233,7 @@ class JobInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this JobInfo.
+        r"""Sets the fail_reason of this JobInfo.
 
         任务执行失败时的错误信息。
 
@@ -244,7 +244,7 @@ class JobInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this JobInfo.
+        r"""Gets the created_at of this JobInfo.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -255,7 +255,7 @@ class JobInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this JobInfo.
+        r"""Sets the created_at of this JobInfo.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -266,7 +266,7 @@ class JobInfo:
 
     @property
     def ended_at(self):
-        """Gets the ended_at of this JobInfo.
+        r"""Gets the ended_at of this JobInfo.
 
         结束时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -277,7 +277,7 @@ class JobInfo:
 
     @ended_at.setter
     def ended_at(self, ended_at):
-        """Sets the ended_at of this JobInfo.
+        r"""Sets the ended_at of this JobInfo.
 
         结束时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

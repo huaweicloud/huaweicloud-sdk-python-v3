@@ -45,7 +45,7 @@ class ListPipelinesPagePipelines:
     }
 
     def __init__(self, pipeline_id=None, name=None, project_id=None, project_name=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None):
-        """ListPipelinesPagePipelines
+        r"""ListPipelinesPagePipelines
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ListPipelinesPagePipelines.
+        r"""Gets the pipeline_id of this ListPipelinesPagePipelines.
 
         流水线ID
 
@@ -124,7 +124,7 @@ class ListPipelinesPagePipelines:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ListPipelinesPagePipelines.
+        r"""Sets the pipeline_id of this ListPipelinesPagePipelines.
 
         流水线ID
 
@@ -135,7 +135,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def name(self):
-        """Gets the name of this ListPipelinesPagePipelines.
+        r"""Gets the name of this ListPipelinesPagePipelines.
 
         流水线名称
 
@@ -146,7 +146,7 @@ class ListPipelinesPagePipelines:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPipelinesPagePipelines.
+        r"""Sets the name of this ListPipelinesPagePipelines.
 
         流水线名称
 
@@ -157,7 +157,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPipelinesPagePipelines.
+        r"""Gets the project_id of this ListPipelinesPagePipelines.
 
         项目ID
 
@@ -168,7 +168,7 @@ class ListPipelinesPagePipelines:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPipelinesPagePipelines.
+        r"""Sets the project_id of this ListPipelinesPagePipelines.
 
         项目ID
 
@@ -179,7 +179,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ListPipelinesPagePipelines.
+        r"""Gets the project_name of this ListPipelinesPagePipelines.
 
         项目名称
 
@@ -190,7 +190,7 @@ class ListPipelinesPagePipelines:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ListPipelinesPagePipelines.
+        r"""Sets the project_name of this ListPipelinesPagePipelines.
 
         项目名称
 
@@ -201,7 +201,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ListPipelinesPagePipelines.
+        r"""Gets the component_id of this ListPipelinesPagePipelines.
 
         组件ID
 
@@ -212,7 +212,7 @@ class ListPipelinesPagePipelines:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ListPipelinesPagePipelines.
+        r"""Sets the component_id of this ListPipelinesPagePipelines.
 
         组件ID
 
@@ -223,7 +223,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this ListPipelinesPagePipelines.
+        r"""Gets the is_publish of this ListPipelinesPagePipelines.
 
         是否为变更流水线
 
@@ -234,7 +234,7 @@ class ListPipelinesPagePipelines:
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this ListPipelinesPagePipelines.
+        r"""Sets the is_publish of this ListPipelinesPagePipelines.
 
         是否为变更流水线
 
@@ -245,7 +245,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def is_collect(self):
-        """Gets the is_collect of this ListPipelinesPagePipelines.
+        r"""Gets the is_collect of this ListPipelinesPagePipelines.
 
         是否收藏此流水线
 
@@ -256,7 +256,7 @@ class ListPipelinesPagePipelines:
 
     @is_collect.setter
     def is_collect(self, is_collect):
-        """Sets the is_collect of this ListPipelinesPagePipelines.
+        r"""Sets the is_collect of this ListPipelinesPagePipelines.
 
         是否收藏此流水线
 
@@ -267,7 +267,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this ListPipelinesPagePipelines.
+        r"""Gets the manifest_version of this ListPipelinesPagePipelines.
 
         流水线版本
 
@@ -278,7 +278,7 @@ class ListPipelinesPagePipelines:
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this ListPipelinesPagePipelines.
+        r"""Sets the manifest_version of this ListPipelinesPagePipelines.
 
         流水线版本
 
@@ -289,7 +289,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListPipelinesPagePipelines.
+        r"""Gets the create_time of this ListPipelinesPagePipelines.
 
         创建时间
 
@@ -300,7 +300,7 @@ class ListPipelinesPagePipelines:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListPipelinesPagePipelines.
+        r"""Sets the create_time of this ListPipelinesPagePipelines.
 
         创建时间
 
@@ -311,7 +311,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def latest_run(self):
-        """Gets the latest_run of this ListPipelinesPagePipelines.
+        r"""Gets the latest_run of this ListPipelinesPagePipelines.
 
         :return: The latest_run of this ListPipelinesPagePipelines.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRun`
@@ -320,7 +320,7 @@ class ListPipelinesPagePipelines:
 
     @latest_run.setter
     def latest_run(self, latest_run):
-        """Sets the latest_run of this ListPipelinesPagePipelines.
+        r"""Sets the latest_run of this ListPipelinesPagePipelines.
 
         :param latest_run: The latest_run of this ListPipelinesPagePipelines.
         :type latest_run: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRun`
@@ -329,7 +329,7 @@ class ListPipelinesPagePipelines:
 
     @property
     def convert_sign(self):
-        """Gets the convert_sign of this ListPipelinesPagePipelines.
+        r"""Gets the convert_sign of this ListPipelinesPagePipelines.
 
         旧版转新版标识
 
@@ -340,7 +340,7 @@ class ListPipelinesPagePipelines:
 
     @convert_sign.setter
     def convert_sign(self, convert_sign):
-        """Sets the convert_sign of this ListPipelinesPagePipelines.
+        r"""Sets the convert_sign of this ListPipelinesPagePipelines.
 
         旧版转新版标识
 

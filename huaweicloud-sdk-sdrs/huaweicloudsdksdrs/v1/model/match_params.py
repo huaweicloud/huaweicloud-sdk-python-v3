@@ -27,7 +27,7 @@ class MatchParams:
     }
 
     def __init__(self, key=None, value=None):
-        """MatchParams
+        r"""MatchParams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MatchParams:
 
     @property
     def key(self):
-        """Gets the key of this MatchParams.
+        r"""Gets the key of this MatchParams.
 
         键。目前限定为resource_name，后续扩展。
 
@@ -59,7 +59,7 @@ class MatchParams:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MatchParams.
+        r"""Sets the key of this MatchParams.
 
         键。目前限定为resource_name，后续扩展。
 
@@ -70,7 +70,7 @@ class MatchParams:
 
     @property
     def value(self):
-        """Gets the value of this MatchParams.
+        r"""Gets the value of this MatchParams.
 
         值。每个值最大长度255个unicode字符。
 
@@ -81,7 +81,7 @@ class MatchParams:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MatchParams.
+        r"""Sets the value of this MatchParams.
 
         值。每个值最大长度255个unicode字符。
 

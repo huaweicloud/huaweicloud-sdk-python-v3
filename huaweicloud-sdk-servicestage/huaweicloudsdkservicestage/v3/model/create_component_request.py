@@ -27,7 +27,7 @@ class CreateComponentRequest:
     }
 
     def __init__(self, application_id=None, body=None):
-        """CreateComponentRequest
+        r"""CreateComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateComponentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateComponentRequest.
+        r"""Gets the application_id of this CreateComponentRequest.
 
         应用id
 
@@ -60,7 +60,7 @@ class CreateComponentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateComponentRequest.
+        r"""Sets the application_id of this CreateComponentRequest.
 
         应用id
 
@@ -71,7 +71,7 @@ class CreateComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateComponentRequest.
+        r"""Gets the body of this CreateComponentRequest.
 
         :return: The body of this CreateComponentRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCreate`
@@ -80,7 +80,7 @@ class CreateComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateComponentRequest.
+        r"""Sets the body of this CreateComponentRequest.
 
         :param body: The body of this CreateComponentRequest.
         :type body: :class:`huaweicloudsdkservicestage.v3.ComponentCreate`

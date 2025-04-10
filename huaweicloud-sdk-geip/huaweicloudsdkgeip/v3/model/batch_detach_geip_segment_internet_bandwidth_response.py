@@ -28,7 +28,7 @@ class BatchDetachGeipSegmentInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, x_request_id=None):
-        """BatchDetachGeipSegmentInternetBandwidthResponse
+        r"""BatchDetachGeipSegmentInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDetachGeipSegmentInternetBandwidthResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
+        r"""Gets the job_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
 
         异步任务，返回的任务ID
 
@@ -62,7 +62,7 @@ class BatchDetachGeipSegmentInternetBandwidthResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
+        r"""Sets the job_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
 
         异步任务，返回的任务ID
 
@@ -73,7 +73,7 @@ class BatchDetachGeipSegmentInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
+        r"""Gets the x_request_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
 
         :return: The x_request_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchDetachGeipSegmentInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
+        r"""Sets the x_request_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this BatchDetachGeipSegmentInternetBandwidthResponse.
         :type x_request_id: str

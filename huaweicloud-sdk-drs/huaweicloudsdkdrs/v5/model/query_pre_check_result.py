@@ -35,7 +35,7 @@ class QueryPreCheckResult:
     }
 
     def __init__(self, result=None, process=None, total_passed_rate=None, rds_instance_id=None, job_direction=None, precheck_results=None):
-        """QueryPreCheckResult
+        r"""QueryPreCheckResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryPreCheckResult:
 
     @property
     def result(self):
-        """Gets the result of this QueryPreCheckResult.
+        r"""Gets the result of this QueryPreCheckResult.
 
         返回的预检查结果是否通过。
 
@@ -89,7 +89,7 @@ class QueryPreCheckResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this QueryPreCheckResult.
+        r"""Sets the result of this QueryPreCheckResult.
 
         返回的预检查结果是否通过。
 
@@ -100,7 +100,7 @@ class QueryPreCheckResult:
 
     @property
     def process(self):
-        """Gets the process of this QueryPreCheckResult.
+        r"""Gets the process of this QueryPreCheckResult.
 
         预检查进度百分比。
 
@@ -111,7 +111,7 @@ class QueryPreCheckResult:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this QueryPreCheckResult.
+        r"""Sets the process of this QueryPreCheckResult.
 
         预检查进度百分比。
 
@@ -122,7 +122,7 @@ class QueryPreCheckResult:
 
     @property
     def total_passed_rate(self):
-        """Gets the total_passed_rate of this QueryPreCheckResult.
+        r"""Gets the total_passed_rate of this QueryPreCheckResult.
 
         预检查通过百分比。
 
@@ -133,7 +133,7 @@ class QueryPreCheckResult:
 
     @total_passed_rate.setter
     def total_passed_rate(self, total_passed_rate):
-        """Sets the total_passed_rate of this QueryPreCheckResult.
+        r"""Sets the total_passed_rate of this QueryPreCheckResult.
 
         预检查通过百分比。
 
@@ -144,7 +144,7 @@ class QueryPreCheckResult:
 
     @property
     def rds_instance_id(self):
-        """Gets the rds_instance_id of this QueryPreCheckResult.
+        r"""Gets the rds_instance_id of this QueryPreCheckResult.
 
         数据库实例ID。
 
@@ -155,7 +155,7 @@ class QueryPreCheckResult:
 
     @rds_instance_id.setter
     def rds_instance_id(self, rds_instance_id):
-        """Sets the rds_instance_id of this QueryPreCheckResult.
+        r"""Sets the rds_instance_id of this QueryPreCheckResult.
 
         数据库实例ID。
 
@@ -166,7 +166,7 @@ class QueryPreCheckResult:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this QueryPreCheckResult.
+        r"""Gets the job_direction of this QueryPreCheckResult.
 
         迁移方向。
 
@@ -177,7 +177,7 @@ class QueryPreCheckResult:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this QueryPreCheckResult.
+        r"""Sets the job_direction of this QueryPreCheckResult.
 
         迁移方向。
 
@@ -188,7 +188,7 @@ class QueryPreCheckResult:
 
     @property
     def precheck_results(self):
-        """Gets the precheck_results of this QueryPreCheckResult.
+        r"""Gets the precheck_results of this QueryPreCheckResult.
 
         预检查各项结果。
 
@@ -199,7 +199,7 @@ class QueryPreCheckResult:
 
     @precheck_results.setter
     def precheck_results(self, precheck_results):
-        """Sets the precheck_results of this QueryPreCheckResult.
+        r"""Sets the precheck_results of this QueryPreCheckResult.
 
         预检查各项结果。
 

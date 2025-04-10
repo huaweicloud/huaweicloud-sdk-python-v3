@@ -27,7 +27,7 @@ class ListCceCompliantRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListCceCompliantRequest
+        r"""ListCceCompliantRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCceCompliantRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCceCompliantRequest.
+        r"""Gets the offset of this ListCceCompliantRequest.
 
         偏移量
 
@@ -61,7 +61,7 @@ class ListCceCompliantRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCceCompliantRequest.
+        r"""Sets the offset of this ListCceCompliantRequest.
 
         偏移量
 
@@ -72,7 +72,7 @@ class ListCceCompliantRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCceCompliantRequest.
+        r"""Gets the limit of this ListCceCompliantRequest.
 
         每页限制
 
@@ -83,7 +83,7 @@ class ListCceCompliantRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCceCompliantRequest.
+        r"""Sets the limit of this ListCceCompliantRequest.
 
         每页限制
 

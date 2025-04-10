@@ -27,7 +27,7 @@ class LimitValue:
     }
 
     def __init__(self, value1=None, value2=None):
-        """LimitValue
+        r"""LimitValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LimitValue:
 
     @property
     def value1(self):
-        """Gets the value1 of this LimitValue.
+        r"""Gets the value1 of this LimitValue.
 
         属性值1。
 
@@ -61,7 +61,7 @@ class LimitValue:
 
     @value1.setter
     def value1(self, value1):
-        """Sets the value1 of this LimitValue.
+        r"""Sets the value1 of this LimitValue.
 
         属性值1。
 
@@ -72,7 +72,7 @@ class LimitValue:
 
     @property
     def value2(self):
-        """Gets the value2 of this LimitValue.
+        r"""Gets the value2 of this LimitValue.
 
         属性值2。
 
@@ -83,7 +83,7 @@ class LimitValue:
 
     @value2.setter
     def value2(self, value2):
-        """Sets the value2 of this LimitValue.
+        r"""Sets the value2 of this LimitValue.
 
         属性值2。
 

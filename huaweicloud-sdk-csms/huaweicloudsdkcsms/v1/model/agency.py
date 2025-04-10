@@ -29,7 +29,7 @@ class Agency:
     }
 
     def __init__(self, agency_name=None, agency_id=None, error_msg=None):
-        """Agency
+        r"""Agency
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Agency:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this Agency.
+        r"""Gets the agency_name of this Agency.
 
         委托名称。
 
@@ -67,7 +67,7 @@ class Agency:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this Agency.
+        r"""Sets the agency_name of this Agency.
 
         委托名称。
 
@@ -78,7 +78,7 @@ class Agency:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this Agency.
+        r"""Gets the agency_id of this Agency.
 
         委托ID。
 
@@ -89,7 +89,7 @@ class Agency:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this Agency.
+        r"""Sets the agency_id of this Agency.
 
         委托ID。
 
@@ -100,7 +100,7 @@ class Agency:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this Agency.
+        r"""Gets the error_msg of this Agency.
 
         异常信息。当委托创建失败时，返回的异常信息。
 
@@ -111,7 +111,7 @@ class Agency:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this Agency.
+        r"""Sets the error_msg of this Agency.
 
         异常信息。当委托创建失败时，返回的异常信息。
 

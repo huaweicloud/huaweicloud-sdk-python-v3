@@ -25,7 +25,7 @@ class StopPublicWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopPublicWhitelistRequest
+        r"""StopPublicWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopPublicWhitelistRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopPublicWhitelistRequest.
+        r"""Gets the cluster_id of this StopPublicWhitelistRequest.
 
         指定关闭公网访问控制白名单集群ID。
 
@@ -53,7 +53,7 @@ class StopPublicWhitelistRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopPublicWhitelistRequest.
+        r"""Sets the cluster_id of this StopPublicWhitelistRequest.
 
         指定关闭公网访问控制白名单集群ID。
 

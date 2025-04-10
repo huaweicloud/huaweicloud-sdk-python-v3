@@ -25,7 +25,7 @@ class UpdateJobReq:
     }
 
     def __init__(self, tasks=None):
-        """UpdateJobReq
+        r"""UpdateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateJobReq:
 
     @property
     def tasks(self):
-        """Gets the tasks of this UpdateJobReq.
+        r"""Gets the tasks of this UpdateJobReq.
 
         步骤的参数修改信息
 
@@ -53,7 +53,7 @@ class UpdateJobReq:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this UpdateJobReq.
+        r"""Sets the tasks of this UpdateJobReq.
 
         步骤的参数修改信息
 

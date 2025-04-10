@@ -27,7 +27,7 @@ class AddBridge:
     }
 
     def __init__(self, bridge_name=None, bridge_id=None):
-        """AddBridge
+        r"""AddBridge
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddBridge:
 
     @property
     def bridge_name(self):
-        """Gets the bridge_name of this AddBridge.
+        r"""Gets the bridge_name of this AddBridge.
 
         网桥名称。**取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -60,7 +60,7 @@ class AddBridge:
 
     @bridge_name.setter
     def bridge_name(self, bridge_name):
-        """Sets the bridge_name of this AddBridge.
+        r"""Sets the bridge_name of this AddBridge.
 
         网桥名称。**取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -71,7 +71,7 @@ class AddBridge:
 
     @property
     def bridge_id(self):
-        """Gets the bridge_id of this AddBridge.
+        r"""Gets the bridge_id of this AddBridge.
 
         网桥ID。**取值范围**：长度不超过36，只允许字母、数字、_-字符的组合。
 
@@ -82,7 +82,7 @@ class AddBridge:
 
     @bridge_id.setter
     def bridge_id(self, bridge_id):
-        """Sets the bridge_id of this AddBridge.
+        r"""Sets the bridge_id of this AddBridge.
 
         网桥ID。**取值范围**：长度不超过36，只允许字母、数字、_-字符的组合。
 

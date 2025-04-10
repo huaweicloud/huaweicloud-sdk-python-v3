@@ -25,7 +25,7 @@ class AddSshKeyRequest:
     }
 
     def __init__(self, body=None):
-        """AddSshKeyRequest
+        r"""AddSshKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddSshKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSshKeyRequest.
+        r"""Gets the body of this AddSshKeyRequest.
 
         :return: The body of this AddSshKeyRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequestBody`
@@ -52,7 +52,7 @@ class AddSshKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSshKeyRequest.
+        r"""Sets the body of this AddSshKeyRequest.
 
         :param body: The body of this AddSshKeyRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequestBody`

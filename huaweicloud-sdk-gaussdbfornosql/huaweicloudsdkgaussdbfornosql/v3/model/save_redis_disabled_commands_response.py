@@ -24,7 +24,7 @@ class SaveRedisDisabledCommandsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SaveRedisDisabledCommandsResponse
+        r"""SaveRedisDisabledCommandsResponse
 
         The model defined in huaweicloud sdk
 

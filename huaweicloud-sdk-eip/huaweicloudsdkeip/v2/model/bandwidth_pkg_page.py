@@ -27,7 +27,7 @@ class BandwidthPkgPage:
     }
 
     def __init__(self, href=None, rel=None):
-        """BandwidthPkgPage
+        r"""BandwidthPkgPage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BandwidthPkgPage:
 
     @property
     def href(self):
-        """Gets the href of this BandwidthPkgPage.
+        r"""Gets the href of this BandwidthPkgPage.
 
         - 链接
 
@@ -59,7 +59,7 @@ class BandwidthPkgPage:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this BandwidthPkgPage.
+        r"""Sets the href of this BandwidthPkgPage.
 
         - 链接
 
@@ -70,7 +70,7 @@ class BandwidthPkgPage:
 
     @property
     def rel(self):
-        """Gets the rel of this BandwidthPkgPage.
+        r"""Gets the rel of this BandwidthPkgPage.
 
         - 翻页标志
 
@@ -81,7 +81,7 @@ class BandwidthPkgPage:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this BandwidthPkgPage.
+        r"""Sets the rel of this BandwidthPkgPage.
 
         - 翻页标志
 

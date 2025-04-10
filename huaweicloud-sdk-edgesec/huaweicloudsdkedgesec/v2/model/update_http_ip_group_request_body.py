@@ -29,7 +29,7 @@ class UpdateHttpIpGroupRequestBody:
     }
 
     def __init__(self, name=None, ips=None, description=None):
-        """UpdateHttpIpGroupRequestBody
+        r"""UpdateHttpIpGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateHttpIpGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpIpGroupRequestBody.
+        r"""Gets the name of this UpdateHttpIpGroupRequestBody.
 
         IP地址组名称
 
@@ -66,7 +66,7 @@ class UpdateHttpIpGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpIpGroupRequestBody.
+        r"""Sets the name of this UpdateHttpIpGroupRequestBody.
 
         IP地址组名称
 
@@ -77,7 +77,7 @@ class UpdateHttpIpGroupRequestBody:
 
     @property
     def ips(self):
-        """Gets the ips of this UpdateHttpIpGroupRequestBody.
+        r"""Gets the ips of this UpdateHttpIpGroupRequestBody.
 
         IP地址/地址段
 
@@ -88,7 +88,7 @@ class UpdateHttpIpGroupRequestBody:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this UpdateHttpIpGroupRequestBody.
+        r"""Sets the ips of this UpdateHttpIpGroupRequestBody.
 
         IP地址/地址段
 
@@ -99,7 +99,7 @@ class UpdateHttpIpGroupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpIpGroupRequestBody.
+        r"""Gets the description of this UpdateHttpIpGroupRequestBody.
 
         IP地址组备注，最长512字符
 
@@ -110,7 +110,7 @@ class UpdateHttpIpGroupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpIpGroupRequestBody.
+        r"""Sets the description of this UpdateHttpIpGroupRequestBody.
 
         IP地址组备注，最长512字符
 

@@ -45,7 +45,7 @@ class ThumbnailPara:
     }
 
     def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, dots_ms=None, output_filename=None, format=None, width=None, height=None, max_length=None):
-        """ThumbnailPara
+        r"""ThumbnailPara
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ThumbnailPara:
 
     @property
     def type(self):
-        """Gets the type of this ThumbnailPara.
+        r"""Gets the type of this ThumbnailPara.
 
         采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。 - \"DOTS_MS\"：同步截图指定时间点毫秒值。  默认值：\"TIME\" 
 
@@ -124,7 +124,7 @@ class ThumbnailPara:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ThumbnailPara.
+        r"""Sets the type of this ThumbnailPara.
 
         采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。 - \"DOTS_MS\"：同步截图指定时间点毫秒值。  默认值：\"TIME\" 
 
@@ -135,7 +135,7 @@ class ThumbnailPara:
 
     @property
     def time(self):
-        """Gets the time of this ThumbnailPara.
+        r"""Gets the time of this ThumbnailPara.
 
         采样截图的时间间隔值。  默认值：12。  单位：秒 
 
@@ -146,7 +146,7 @@ class ThumbnailPara:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ThumbnailPara.
+        r"""Sets the time of this ThumbnailPara.
 
         采样截图的时间间隔值。  默认值：12。  单位：秒 
 
@@ -157,7 +157,7 @@ class ThumbnailPara:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ThumbnailPara.
+        r"""Gets the start_time of this ThumbnailPara.
 
         采样类型为“TIME”模式的开始时间，和“time”配合使用。  默认值：0。  单位：秒。 
 
@@ -168,7 +168,7 @@ class ThumbnailPara:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ThumbnailPara.
+        r"""Sets the start_time of this ThumbnailPara.
 
         采样类型为“TIME”模式的开始时间，和“time”配合使用。  默认值：0。  单位：秒。 
 
@@ -179,7 +179,7 @@ class ThumbnailPara:
 
     @property
     def duration(self):
-        """Gets the duration of this ThumbnailPara.
+        r"""Gets the duration of this ThumbnailPara.
 
         采样类型为“TIME”模式的持续时间，和“time”、“start_time”配合使用，表示从视频文件的第“start_time”开始，持续时间为“duration”，每间隔“time”生成一张截图。 取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值： ToEND。  单位：秒。 > “duration”必须大于等0，若设置为0，则截图持续时间从“start_time”到视频结束。 
 
@@ -190,7 +190,7 @@ class ThumbnailPara:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ThumbnailPara.
+        r"""Sets the duration of this ThumbnailPara.
 
         采样类型为“TIME”模式的持续时间，和“time”、“start_time”配合使用，表示从视频文件的第“start_time”开始，持续时间为“duration”，每间隔“time”生成一张截图。 取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值： ToEND。  单位：秒。 > “duration”必须大于等0，若设置为0，则截图持续时间从“start_time”到视频结束。 
 
@@ -201,7 +201,7 @@ class ThumbnailPara:
 
     @property
     def dots(self):
-        """Gets the dots of this ThumbnailPara.
+        r"""Gets the dots of this ThumbnailPara.
 
         指定时间截图时的时间点数组，最多支持10个。 
 
@@ -212,7 +212,7 @@ class ThumbnailPara:
 
     @dots.setter
     def dots(self, dots):
-        """Sets the dots of this ThumbnailPara.
+        r"""Sets the dots of this ThumbnailPara.
 
         指定时间截图时的时间点数组，最多支持10个。 
 
@@ -223,7 +223,7 @@ class ThumbnailPara:
 
     @property
     def dots_ms(self):
-        """Gets the dots_ms of this ThumbnailPara.
+        r"""Gets the dots_ms of this ThumbnailPara.
 
         同步截图下，指定时间截图的时间点数组，单位毫秒  例如输入[1000]，截取视频第1000毫秒位置的图像帧，仅支持一个时间点 
 
@@ -234,7 +234,7 @@ class ThumbnailPara:
 
     @dots_ms.setter
     def dots_ms(self, dots_ms):
-        """Sets the dots_ms of this ThumbnailPara.
+        r"""Sets the dots_ms of this ThumbnailPara.
 
         同步截图下，指定时间截图的时间点数组，单位毫秒  例如输入[1000]，截取视频第1000毫秒位置的图像帧，仅支持一个时间点 
 
@@ -245,7 +245,7 @@ class ThumbnailPara:
 
     @property
     def output_filename(self):
-        """Gets the output_filename of this ThumbnailPara.
+        r"""Gets the output_filename of this ThumbnailPara.
 
         截图输出文件名。  - 如果只抽一张图（即：按DOTS方式，指定1个时间点）则按该指定文件名输出图片。  - 如果抽多张图（即：按DOTS方式指定多个时间点或按TIME间隔截图）则输出图片名在该指定文件名基础上在增加时间点（示例：output_filename_10.jpg）。  - 如果指定了压缩抽帧图片生成tar包，则tar包按该指定文件名输出。 
 
@@ -256,7 +256,7 @@ class ThumbnailPara:
 
     @output_filename.setter
     def output_filename(self, output_filename):
-        """Sets the output_filename of this ThumbnailPara.
+        r"""Sets the output_filename of this ThumbnailPara.
 
         截图输出文件名。  - 如果只抽一张图（即：按DOTS方式，指定1个时间点）则按该指定文件名输出图片。  - 如果抽多张图（即：按DOTS方式指定多个时间点或按TIME间隔截图）则输出图片名在该指定文件名基础上在增加时间点（示例：output_filename_10.jpg）。  - 如果指定了压缩抽帧图片生成tar包，则tar包按该指定文件名输出。 
 
@@ -267,7 +267,7 @@ class ThumbnailPara:
 
     @property
     def format(self):
-        """Gets the format of this ThumbnailPara.
+        r"""Gets the format of this ThumbnailPara.
 
         截图文件格式。  取值如下：  1：表示jpg格式 
 
@@ -278,7 +278,7 @@ class ThumbnailPara:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ThumbnailPara.
+        r"""Sets the format of this ThumbnailPara.
 
         截图文件格式。  取值如下：  1：表示jpg格式 
 
@@ -289,7 +289,7 @@ class ThumbnailPara:
 
     @property
     def width(self):
-        """Gets the width of this ThumbnailPara.
+        r"""Gets the width of this ThumbnailPara.
 
         图片宽度  取值范围：(96,3840]  单位：px 
 
@@ -300,7 +300,7 @@ class ThumbnailPara:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this ThumbnailPara.
+        r"""Sets the width of this ThumbnailPara.
 
         图片宽度  取值范围：(96,3840]  单位：px 
 
@@ -311,7 +311,7 @@ class ThumbnailPara:
 
     @property
     def height(self):
-        """Gets the height of this ThumbnailPara.
+        r"""Gets the height of this ThumbnailPara.
 
         图片高度  取值范围：(96,2160]  单位：px 
 
@@ -322,7 +322,7 @@ class ThumbnailPara:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this ThumbnailPara.
+        r"""Sets the height of this ThumbnailPara.
 
         图片高度  取值范围：(96,2160]  单位：px 
 
@@ -333,7 +333,7 @@ class ThumbnailPara:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ThumbnailPara.
+        r"""Gets the max_length of this ThumbnailPara.
 
         截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。   取值范围：[240,3840]  默认值：480  单位：像素  > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。  > 若该参数和width/height都未选择，则按源片源宽高输出截图 
 
@@ -344,7 +344,7 @@ class ThumbnailPara:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ThumbnailPara.
+        r"""Sets the max_length of this ThumbnailPara.
 
         截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。   取值范围：[240,3840]  默认值：480  单位：像素  > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。  > 若该参数和width/height都未选择，则按源片源宽高输出截图 
 

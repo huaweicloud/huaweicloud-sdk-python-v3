@@ -29,7 +29,7 @@ class VideoSaturation:
     }
 
     def __init__(self, name=None, execution_order=None, saturation=None):
-        """VideoSaturation
+        r"""VideoSaturation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VideoSaturation:
 
     @property
     def name(self):
-        """Gets the name of this VideoSaturation.
+        r"""Gets the name of this VideoSaturation.
 
         饱和度算法名称\"“hw-saturation\"。 
 
@@ -68,7 +68,7 @@ class VideoSaturation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VideoSaturation.
+        r"""Sets the name of this VideoSaturation.
 
         饱和度算法名称\"“hw-saturation\"。 
 
@@ -79,7 +79,7 @@ class VideoSaturation:
 
     @property
     def execution_order(self):
-        """Gets the execution_order of this VideoSaturation.
+        r"""Gets the execution_order of this VideoSaturation.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -90,7 +90,7 @@ class VideoSaturation:
 
     @execution_order.setter
     def execution_order(self, execution_order):
-        """Sets the execution_order of this VideoSaturation.
+        r"""Sets the execution_order of this VideoSaturation.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -101,7 +101,7 @@ class VideoSaturation:
 
     @property
     def saturation(self):
-        """Gets the saturation of this VideoSaturation.
+        r"""Gets the saturation of this VideoSaturation.
 
         饱和度调节的程度， 值越大， 饱和度越高。 
 
@@ -112,7 +112,7 @@ class VideoSaturation:
 
     @saturation.setter
     def saturation(self, saturation):
-        """Sets the saturation of this VideoSaturation.
+        r"""Sets the saturation of this VideoSaturation.
 
         饱和度调节的程度， 值越大， 饱和度越高。 
 

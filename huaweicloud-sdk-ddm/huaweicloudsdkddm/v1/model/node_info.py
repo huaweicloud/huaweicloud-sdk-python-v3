@@ -27,7 +27,7 @@ class NodeInfo:
     }
 
     def __init__(self, available_zone=None, subnet_id=None):
-        """NodeInfo
+        r"""NodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeInfo:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this NodeInfo.
+        r"""Gets the available_zone of this NodeInfo.
 
         节点可用区
 
@@ -59,7 +59,7 @@ class NodeInfo:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this NodeInfo.
+        r"""Sets the available_zone of this NodeInfo.
 
         节点可用区
 
@@ -70,7 +70,7 @@ class NodeInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NodeInfo.
+        r"""Gets the subnet_id of this NodeInfo.
 
         子网ID
 
@@ -81,7 +81,7 @@ class NodeInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NodeInfo.
+        r"""Sets the subnet_id of this NodeInfo.
 
         子网ID
 

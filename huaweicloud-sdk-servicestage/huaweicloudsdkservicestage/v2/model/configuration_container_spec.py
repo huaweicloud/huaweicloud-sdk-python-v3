@@ -27,7 +27,7 @@ class ConfigurationContainerSpec:
     }
 
     def __init__(self, containers=None, type=None):
-        """ConfigurationContainerSpec
+        r"""ConfigurationContainerSpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfigurationContainerSpec:
 
     @property
     def containers(self):
-        """Gets the containers of this ConfigurationContainerSpec.
+        r"""Gets the containers of this ConfigurationContainerSpec.
 
         容器信息
 
@@ -61,7 +61,7 @@ class ConfigurationContainerSpec:
 
     @containers.setter
     def containers(self, containers):
-        """Sets the containers of this ConfigurationContainerSpec.
+        r"""Sets the containers of this ConfigurationContainerSpec.
 
         容器信息
 
@@ -72,7 +72,7 @@ class ConfigurationContainerSpec:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationContainerSpec.
+        r"""Gets the type of this ConfigurationContainerSpec.
 
         工作负载类型。
 
@@ -83,7 +83,7 @@ class ConfigurationContainerSpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationContainerSpec.
+        r"""Sets the type of this ConfigurationContainerSpec.
 
         工作负载类型。
 

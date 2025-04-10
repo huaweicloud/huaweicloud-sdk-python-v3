@@ -37,7 +37,7 @@ class ShowRepositoryByCloudIdeRequest:
     }
 
     def __init__(self, x_language=None, repository_id=None, repository_ssh_url=None, region_id=None, space_prefix=None, is_open_last=None, is_free=None):
-        """ShowRepositoryByCloudIdeRequest
+        r"""ShowRepositoryByCloudIdeRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the x_language of this ShowRepositoryByCloudIdeRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -94,7 +94,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the x_language of this ShowRepositoryByCloudIdeRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -105,7 +105,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the repository_id of this ShowRepositoryByCloudIdeRequest.
 
         仓库id。
 
@@ -116,7 +116,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the repository_id of this ShowRepositoryByCloudIdeRequest.
 
         仓库id。
 
@@ -127,7 +127,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def repository_ssh_url(self):
-        """Gets the repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
 
         仓库下载地址。
 
@@ -138,7 +138,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @repository_ssh_url.setter
     def repository_ssh_url(self, repository_ssh_url):
-        """Sets the repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
 
         仓库下载地址。
 
@@ -149,7 +149,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the region_id of this ShowRepositoryByCloudIdeRequest.
 
         区域ID，目前仅支持北京四：cn-north-4及北京一：cn-north-1。
 
@@ -160,7 +160,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the region_id of this ShowRepositoryByCloudIdeRequest.
 
         区域ID，目前仅支持北京四：cn-north-4及北京一：cn-north-1。
 
@@ -171,7 +171,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def space_prefix(self):
-        """Gets the space_prefix of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the space_prefix of this ShowRepositoryByCloudIdeRequest.
 
         工作空间名称前缀，仅在is_open_last为false时生效，由用户自定义，支持大小写字母、中文、_、-，长度1-256。
 
@@ -182,7 +182,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @space_prefix.setter
     def space_prefix(self, space_prefix):
-        """Sets the space_prefix of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the space_prefix of this ShowRepositoryByCloudIdeRequest.
 
         工作空间名称前缀，仅在is_open_last为false时生效，由用户自定义，支持大小写字母、中文、_、-，长度1-256。
 
@@ -193,7 +193,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def is_open_last(self):
-        """Gets the is_open_last of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the is_open_last of this ShowRepositoryByCloudIdeRequest.
 
         是否打开上一次的工作空间，true表示打开上一次工作空间，如果没有上一次工作空间会返回空，false代表打开一个全新的工作空间。
 
@@ -204,7 +204,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @is_open_last.setter
     def is_open_last(self, is_open_last):
-        """Sets the is_open_last of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the is_open_last of this ShowRepositoryByCloudIdeRequest.
 
         是否打开上一次的工作空间，true表示打开上一次工作空间，如果没有上一次工作空间会返回空，false代表打开一个全新的工作空间。
 
@@ -215,7 +215,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @property
     def is_free(self):
-        """Gets the is_free of this ShowRepositoryByCloudIdeRequest.
+        r"""Gets the is_free of this ShowRepositoryByCloudIdeRequest.
 
         是否创建 CloudIDE 免费实例链接，true表示创建一个 CloudIDE 免费实例链接，false表示创建一个 CloudIDE 收费实例链接。
 
@@ -226,7 +226,7 @@ class ShowRepositoryByCloudIdeRequest:
 
     @is_free.setter
     def is_free(self, is_free):
-        """Sets the is_free of this ShowRepositoryByCloudIdeRequest.
+        r"""Sets the is_free of this ShowRepositoryByCloudIdeRequest.
 
         是否创建 CloudIDE 免费实例链接，true表示创建一个 CloudIDE 免费实例链接，false表示创建一个 CloudIDE 收费实例链接。
 

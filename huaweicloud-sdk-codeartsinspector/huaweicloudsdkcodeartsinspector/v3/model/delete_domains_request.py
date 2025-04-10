@@ -25,7 +25,7 @@ class DeleteDomainsRequest:
     }
 
     def __init__(self, domain_name=None):
-        """DeleteDomainsRequest
+        r"""DeleteDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDomainsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DeleteDomainsRequest.
+        r"""Gets the domain_name of this DeleteDomainsRequest.
 
         网站域名
 
@@ -53,7 +53,7 @@ class DeleteDomainsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DeleteDomainsRequest.
+        r"""Sets the domain_name of this DeleteDomainsRequest.
 
         网站域名
 

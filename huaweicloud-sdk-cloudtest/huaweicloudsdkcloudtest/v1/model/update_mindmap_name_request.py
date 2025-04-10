@@ -29,7 +29,7 @@ class UpdateMindmapNameRequest:
     }
 
     def __init__(self, project_id=None, id=None, name=None):
-        """UpdateMindmapNameRequest
+        r"""UpdateMindmapNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateMindmapNameRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateMindmapNameRequest.
+        r"""Gets the project_id of this UpdateMindmapNameRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -65,7 +65,7 @@ class UpdateMindmapNameRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateMindmapNameRequest.
+        r"""Sets the project_id of this UpdateMindmapNameRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -76,7 +76,7 @@ class UpdateMindmapNameRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateMindmapNameRequest.
+        r"""Gets the id of this UpdateMindmapNameRequest.
 
         脑图ID
 
@@ -87,7 +87,7 @@ class UpdateMindmapNameRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateMindmapNameRequest.
+        r"""Sets the id of this UpdateMindmapNameRequest.
 
         脑图ID
 
@@ -98,7 +98,7 @@ class UpdateMindmapNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this UpdateMindmapNameRequest.
+        r"""Gets the name of this UpdateMindmapNameRequest.
 
         脑图名称
 
@@ -109,7 +109,7 @@ class UpdateMindmapNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateMindmapNameRequest.
+        r"""Sets the name of this UpdateMindmapNameRequest.
 
         脑图名称
 

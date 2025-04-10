@@ -25,7 +25,7 @@ class ListenerRef:
     }
 
     def __init__(self, id=None):
-        """ListenerRef
+        r"""ListenerRef
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListenerRef:
 
     @property
     def id(self):
-        """Gets the id of this ListenerRef.
+        r"""Gets the id of this ListenerRef.
 
         参数解释：监听器ID。
 
@@ -53,7 +53,7 @@ class ListenerRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListenerRef.
+        r"""Sets the id of this ListenerRef.
 
         参数解释：监听器ID。
 

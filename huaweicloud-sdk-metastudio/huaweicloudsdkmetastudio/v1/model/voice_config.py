@@ -31,7 +31,7 @@ class VoiceConfig:
     }
 
     def __init__(self, voice_asset_id=None, speed=None, pitch=None, volume=None):
-        """VoiceConfig
+        r"""VoiceConfig
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class VoiceConfig:
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this VoiceConfig.
+        r"""Gets the voice_asset_id of this VoiceConfig.
 
         **参数解释**： 音色资产ID，可以从资产库中查询。 音色ID的查询操作，详见[查询预置音色ID](metastudio_02_0054.xml)。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -74,7 +74,7 @@ class VoiceConfig:
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this VoiceConfig.
+        r"""Sets the voice_asset_id of this VoiceConfig.
 
         **参数解释**： 音色资产ID，可以从资产库中查询。 音色ID的查询操作，详见[查询预置音色ID](metastudio_02_0054.xml)。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -85,7 +85,7 @@ class VoiceConfig:
 
     @property
     def speed(self):
-        """Gets the speed of this VoiceConfig.
+        r"""Gets the speed of this VoiceConfig.
 
         **参数解释**： 语速。50表示0.5倍语速，100表示正常语速，200表示2倍语速。 当取值为“100”时，表示一个成年人的正常语速，约为250字/分钟。  **约束限制**： 不涉及。
 
@@ -96,7 +96,7 @@ class VoiceConfig:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this VoiceConfig.
+        r"""Sets the speed of this VoiceConfig.
 
         **参数解释**： 语速。50表示0.5倍语速，100表示正常语速，200表示2倍语速。 当取值为“100”时，表示一个成年人的正常语速，约为250字/分钟。  **约束限制**： 不涉及。
 
@@ -107,7 +107,7 @@ class VoiceConfig:
 
     @property
     def pitch(self):
-        """Gets the pitch of this VoiceConfig.
+        r"""Gets the pitch of this VoiceConfig.
 
         **参数解释**： 音高。 **约束限制**： 不涉及。
 
@@ -118,7 +118,7 @@ class VoiceConfig:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this VoiceConfig.
+        r"""Sets the pitch of this VoiceConfig.
 
         **参数解释**： 音高。 **约束限制**： 不涉及。
 
@@ -129,7 +129,7 @@ class VoiceConfig:
 
     @property
     def volume(self):
-        """Gets the volume of this VoiceConfig.
+        r"""Gets the volume of this VoiceConfig.
 
         **参数解释**： 音量。 **约束限制**： 不涉及。
 
@@ -140,7 +140,7 @@ class VoiceConfig:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this VoiceConfig.
+        r"""Sets the volume of this VoiceConfig.
 
         **参数解释**： 音量。 **约束限制**： 不涉及。
 

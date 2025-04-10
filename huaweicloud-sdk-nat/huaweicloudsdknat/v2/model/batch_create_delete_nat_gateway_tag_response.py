@@ -24,7 +24,7 @@ class BatchCreateDeleteNatGatewayTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateDeleteNatGatewayTagResponse
+        r"""BatchCreateDeleteNatGatewayTagResponse
 
         The model defined in huaweicloud sdk
 

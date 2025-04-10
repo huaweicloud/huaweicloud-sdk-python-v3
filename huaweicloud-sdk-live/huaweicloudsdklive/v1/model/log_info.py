@@ -33,7 +33,7 @@ class LogInfo:
     }
 
     def __init__(self, name=None, url=None, size=None, start_time=None, end_time=None):
-        """LogInfo
+        r"""LogInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class LogInfo:
 
     @property
     def name(self):
-        """Gets the name of this LogInfo.
+        r"""Gets the name of this LogInfo.
 
         日志文件名，打包文件名格式：{Domain}_{logStartTimeStamp}.log.gz
 
@@ -77,7 +77,7 @@ class LogInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LogInfo.
+        r"""Sets the name of this LogInfo.
 
         日志文件名，打包文件名格式：{Domain}_{logStartTimeStamp}.log.gz
 
@@ -88,7 +88,7 @@ class LogInfo:
 
     @property
     def url(self):
-        """Gets the url of this LogInfo.
+        r"""Gets the url of this LogInfo.
 
         日志下载链接
 
@@ -99,7 +99,7 @@ class LogInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this LogInfo.
+        r"""Sets the url of this LogInfo.
 
         日志下载链接
 
@@ -110,7 +110,7 @@ class LogInfo:
 
     @property
     def size(self):
-        """Gets the size of this LogInfo.
+        r"""Gets the size of this LogInfo.
 
         日志文件大小
 
@@ -121,7 +121,7 @@ class LogInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LogInfo.
+        r"""Sets the size of this LogInfo.
 
         日志文件大小
 
@@ -132,7 +132,7 @@ class LogInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this LogInfo.
+        r"""Gets the start_time of this LogInfo.
 
         日志文件中日志开始时间，北京时间
 
@@ -143,7 +143,7 @@ class LogInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this LogInfo.
+        r"""Sets the start_time of this LogInfo.
 
         日志文件中日志开始时间，北京时间
 
@@ -154,7 +154,7 @@ class LogInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this LogInfo.
+        r"""Gets the end_time of this LogInfo.
 
         日志文件中日志结束时间，北京时间
 
@@ -165,7 +165,7 @@ class LogInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this LogInfo.
+        r"""Sets the end_time of this LogInfo.
 
         日志文件中日志结束时间，北京时间
 

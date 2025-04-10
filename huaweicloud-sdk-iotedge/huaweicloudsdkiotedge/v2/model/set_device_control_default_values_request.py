@@ -27,7 +27,7 @@ class SetDeviceControlDefaultValuesRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """SetDeviceControlDefaultValuesRequest
+        r"""SetDeviceControlDefaultValuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetDeviceControlDefaultValuesRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this SetDeviceControlDefaultValuesRequest.
+        r"""Gets the edge_node_id of this SetDeviceControlDefaultValuesRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class SetDeviceControlDefaultValuesRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this SetDeviceControlDefaultValuesRequest.
+        r"""Sets the edge_node_id of this SetDeviceControlDefaultValuesRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class SetDeviceControlDefaultValuesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetDeviceControlDefaultValuesRequest.
+        r"""Gets the body of this SetDeviceControlDefaultValuesRequest.
 
         :return: The body of this SetDeviceControlDefaultValuesRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceControlDefaultValuesReqDTO`
@@ -80,7 +80,7 @@ class SetDeviceControlDefaultValuesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetDeviceControlDefaultValuesRequest.
+        r"""Sets the body of this SetDeviceControlDefaultValuesRequest.
 
         :param body: The body of this SetDeviceControlDefaultValuesRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.DeviceControlDefaultValuesReqDTO`

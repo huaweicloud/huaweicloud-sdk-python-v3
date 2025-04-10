@@ -26,7 +26,7 @@ class UpdateEquipmentEsnResponse(SdkResponse):
     }
 
     def __init__(self, esn=None):
-        """UpdateEquipmentEsnResponse
+        r"""UpdateEquipmentEsnResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEquipmentEsnResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this UpdateEquipmentEsnResponse.
+        r"""Gets the esn of this UpdateEquipmentEsnResponse.
 
         esn
 
@@ -55,7 +55,7 @@ class UpdateEquipmentEsnResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this UpdateEquipmentEsnResponse.
+        r"""Sets the esn of this UpdateEquipmentEsnResponse.
 
         esn
 

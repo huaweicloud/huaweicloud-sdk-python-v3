@@ -33,7 +33,7 @@ class StorageMetadata:
     }
 
     def __init__(self, storage_handle=None, storage_class=None, name=None, region=None, export_location=None):
-        """StorageMetadata
+        r"""StorageMetadata
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class StorageMetadata:
 
     @property
     def storage_handle(self):
-        """Gets the storage_handle of this StorageMetadata.
+        r"""Gets the storage_handle of this StorageMetadata.
 
         SFS文件系统名称。
 
@@ -80,7 +80,7 @@ class StorageMetadata:
 
     @storage_handle.setter
     def storage_handle(self, storage_handle):
-        """Sets the storage_handle of this StorageMetadata.
+        r"""Sets the storage_handle of this StorageMetadata.
 
         SFS文件系统名称。
 
@@ -91,7 +91,7 @@ class StorageMetadata:
 
     @property
     def storage_class(self):
-        """Gets the storage_class of this StorageMetadata.
+        r"""Gets the storage_class of this StorageMetadata.
 
         存储类型： * `sfs` - sfs3.0存储。
 
@@ -102,7 +102,7 @@ class StorageMetadata:
 
     @storage_class.setter
     def storage_class(self, storage_class):
-        """Sets the storage_class of this StorageMetadata.
+        r"""Sets the storage_class of this StorageMetadata.
 
         存储类型： * `sfs` - sfs3.0存储。
 
@@ -113,7 +113,7 @@ class StorageMetadata:
 
     @property
     def name(self):
-        """Gets the name of this StorageMetadata.
+        r"""Gets the name of this StorageMetadata.
 
         名称。
 
@@ -124,7 +124,7 @@ class StorageMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StorageMetadata.
+        r"""Sets the name of this StorageMetadata.
 
         名称。
 
@@ -135,7 +135,7 @@ class StorageMetadata:
 
     @property
     def region(self):
-        """Gets the region of this StorageMetadata.
+        r"""Gets the region of this StorageMetadata.
 
         所在区域。
 
@@ -146,7 +146,7 @@ class StorageMetadata:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this StorageMetadata.
+        r"""Sets the region of this StorageMetadata.
 
         所在区域。
 
@@ -157,7 +157,7 @@ class StorageMetadata:
 
     @property
     def export_location(self):
-        """Gets the export_location of this StorageMetadata.
+        r"""Gets the export_location of this StorageMetadata.
 
         访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port。
 
@@ -168,7 +168,7 @@ class StorageMetadata:
 
     @export_location.setter
     def export_location(self, export_location):
-        """Sets the export_location of this StorageMetadata.
+        r"""Sets the export_location of this StorageMetadata.
 
         访问地址:protocol://[bucket-name].sfs3.[region-name].myhuaweicloud.com:port。
 

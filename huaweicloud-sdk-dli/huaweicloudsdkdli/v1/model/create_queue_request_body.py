@@ -47,7 +47,7 @@ class CreateQueueRequestBody:
     }
 
     def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None, elastic_resource_pool_name=None):
-        """CreateQueueRequestBody
+        r"""CreateQueueRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateQueueRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this CreateQueueRequestBody.
+        r"""Gets the queue_name of this CreateQueueRequestBody.
 
         新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。\\n说明： \\n队列名称不区分大小写，系统会自动转换为小写。
 
@@ -129,7 +129,7 @@ class CreateQueueRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this CreateQueueRequestBody.
+        r"""Sets the queue_name of this CreateQueueRequestBody.
 
         新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。\\n说明： \\n队列名称不区分大小写，系统会自动转换为小写。
 
@@ -140,7 +140,7 @@ class CreateQueueRequestBody:
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this CreateQueueRequestBody.
+        r"""Gets the queue_type of this CreateQueueRequestBody.
 
         队列的类型,。有如下两种类型： sql general 如果不指定，默认为sql。
 
@@ -151,7 +151,7 @@ class CreateQueueRequestBody:
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this CreateQueueRequestBody.
+        r"""Sets the queue_type of this CreateQueueRequestBody.
 
         队列的类型,。有如下两种类型： sql general 如果不指定，默认为sql。
 
@@ -162,7 +162,7 @@ class CreateQueueRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateQueueRequestBody.
+        r"""Gets the description of this CreateQueueRequestBody.
 
         队列的描述信息。
 
@@ -173,7 +173,7 @@ class CreateQueueRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateQueueRequestBody.
+        r"""Sets the description of this CreateQueueRequestBody.
 
         队列的描述信息。
 
@@ -184,7 +184,7 @@ class CreateQueueRequestBody:
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this CreateQueueRequestBody.
+        r"""Gets the cu_count of this CreateQueueRequestBody.
 
         队列的实际CU。
 
@@ -195,7 +195,7 @@ class CreateQueueRequestBody:
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this CreateQueueRequestBody.
+        r"""Sets the cu_count of this CreateQueueRequestBody.
 
         队列的实际CU。
 
@@ -206,7 +206,7 @@ class CreateQueueRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateQueueRequestBody.
+        r"""Gets the charging_mode of this CreateQueueRequestBody.
 
         队列的收费模式。只能设置为“1”，表示按照CU时收费。
 
@@ -217,7 +217,7 @@ class CreateQueueRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateQueueRequestBody.
+        r"""Sets the charging_mode of this CreateQueueRequestBody.
 
         队列的收费模式。只能设置为“1”，表示按照CU时收费。
 
@@ -228,7 +228,7 @@ class CreateQueueRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateQueueRequestBody.
+        r"""Gets the enterprise_project_id of this CreateQueueRequestBody.
 
         企业项目ID，“0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -239,7 +239,7 @@ class CreateQueueRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateQueueRequestBody.
+        r"""Sets the enterprise_project_id of this CreateQueueRequestBody.
 
         企业项目ID，“0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -250,7 +250,7 @@ class CreateQueueRequestBody:
 
     @property
     def platform(self):
-        """Gets the platform of this CreateQueueRequestBody.
+        r"""Gets the platform of this CreateQueueRequestBody.
 
         队列计算资源的cpu架构。
 
@@ -261,7 +261,7 @@ class CreateQueueRequestBody:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this CreateQueueRequestBody.
+        r"""Sets the platform of this CreateQueueRequestBody.
 
         队列计算资源的cpu架构。
 
@@ -272,7 +272,7 @@ class CreateQueueRequestBody:
 
     @property
     def resource_mode(self):
-        """Gets the resource_mode of this CreateQueueRequestBody.
+        r"""Gets the resource_mode of this CreateQueueRequestBody.
 
         队列资源模式。支持以下两种类型：0：共享资源模式1：专属资源模式
 
@@ -283,7 +283,7 @@ class CreateQueueRequestBody:
 
     @resource_mode.setter
     def resource_mode(self, resource_mode):
-        """Sets the resource_mode of this CreateQueueRequestBody.
+        r"""Sets the resource_mode of this CreateQueueRequestBody.
 
         队列资源模式。支持以下两种类型：0：共享资源模式1：专属资源模式
 
@@ -294,7 +294,7 @@ class CreateQueueRequestBody:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateQueueRequestBody.
+        r"""Gets the labels of this CreateQueueRequestBody.
 
         创建队列的标签信息，目前包括队列是否跨AZ的标签信息（Json字符串），且只支持值为“2”，即创建一个计算资源分布在2个可用区的双AZ队列
 
@@ -305,7 +305,7 @@ class CreateQueueRequestBody:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateQueueRequestBody.
+        r"""Sets the labels of this CreateQueueRequestBody.
 
         创建队列的标签信息，目前包括队列是否跨AZ的标签信息（Json字符串），且只支持值为“2”，即创建一个计算资源分布在2个可用区的双AZ队列
 
@@ -316,7 +316,7 @@ class CreateQueueRequestBody:
 
     @property
     def feature(self):
-        """Gets the feature of this CreateQueueRequestBody.
+        r"""Gets the feature of this CreateQueueRequestBody.
 
         队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
 
@@ -327,7 +327,7 @@ class CreateQueueRequestBody:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this CreateQueueRequestBody.
+        r"""Sets the feature of this CreateQueueRequestBody.
 
         队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
 
@@ -338,7 +338,7 @@ class CreateQueueRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateQueueRequestBody.
+        r"""Gets the tags of this CreateQueueRequestBody.
 
         标签
 
@@ -349,7 +349,7 @@ class CreateQueueRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateQueueRequestBody.
+        r"""Sets the tags of this CreateQueueRequestBody.
 
         标签
 
@@ -360,7 +360,7 @@ class CreateQueueRequestBody:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this CreateQueueRequestBody.
+        r"""Gets the elastic_resource_pool_name of this CreateQueueRequestBody.
 
         新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
 
@@ -371,7 +371,7 @@ class CreateQueueRequestBody:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this CreateQueueRequestBody.
+        r"""Sets the elastic_resource_pool_name of this CreateQueueRequestBody.
 
         新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
 

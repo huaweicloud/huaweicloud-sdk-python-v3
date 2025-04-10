@@ -27,7 +27,7 @@ class ListCatalogsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListCatalogsRequest
+        r"""ListCatalogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCatalogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCatalogsRequest.
+        r"""Gets the offset of this ListCatalogsRequest.
 
         偏移量
 
@@ -61,7 +61,7 @@ class ListCatalogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCatalogsRequest.
+        r"""Sets the offset of this ListCatalogsRequest.
 
         偏移量
 
@@ -72,7 +72,7 @@ class ListCatalogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCatalogsRequest.
+        r"""Gets the limit of this ListCatalogsRequest.
 
         分页的单页数量。
 
@@ -83,7 +83,7 @@ class ListCatalogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCatalogsRequest.
+        r"""Sets the limit of this ListCatalogsRequest.
 
         分页的单页数量。
 

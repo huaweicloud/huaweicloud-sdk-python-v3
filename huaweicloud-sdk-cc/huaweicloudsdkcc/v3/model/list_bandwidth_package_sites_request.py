@@ -29,7 +29,7 @@ class ListBandwidthPackageSitesRequest:
     }
 
     def __init__(self, site_code=None, region_id=None, name=None):
-        """ListBandwidthPackageSitesRequest
+        r"""ListBandwidthPackageSitesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListBandwidthPackageSitesRequest:
 
     @property
     def site_code(self):
-        """Gets the site_code of this ListBandwidthPackageSitesRequest.
+        r"""Gets the site_code of this ListBandwidthPackageSitesRequest.
 
         根据站点编码进行查询
 
@@ -68,7 +68,7 @@ class ListBandwidthPackageSitesRequest:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this ListBandwidthPackageSitesRequest.
+        r"""Sets the site_code of this ListBandwidthPackageSitesRequest.
 
         根据站点编码进行查询
 
@@ -79,7 +79,7 @@ class ListBandwidthPackageSitesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListBandwidthPackageSitesRequest.
+        r"""Gets the region_id of this ListBandwidthPackageSitesRequest.
 
         根据区域ID进行查询
 
@@ -90,7 +90,7 @@ class ListBandwidthPackageSitesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListBandwidthPackageSitesRequest.
+        r"""Sets the region_id of this ListBandwidthPackageSitesRequest.
 
         根据区域ID进行查询
 
@@ -101,7 +101,7 @@ class ListBandwidthPackageSitesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListBandwidthPackageSitesRequest.
+        r"""Gets the name of this ListBandwidthPackageSitesRequest.
 
         根据名称模糊查询
 
@@ -112,7 +112,7 @@ class ListBandwidthPackageSitesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListBandwidthPackageSitesRequest.
+        r"""Sets the name of this ListBandwidthPackageSitesRequest.
 
         根据名称模糊查询
 

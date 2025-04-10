@@ -31,7 +31,7 @@ class ItemSource:
     }
 
     def __init__(self, desc=None, custom_tags=None, custom_num_tags=None, keywords=None):
-        """ItemSource
+        r"""ItemSource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ItemSource:
 
     @property
     def desc(self):
-        """Gets the desc of this ItemSource.
+        r"""Gets the desc of this ItemSource.
 
         数据描述信息。
 
@@ -75,7 +75,7 @@ class ItemSource:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ItemSource.
+        r"""Sets the desc of this ItemSource.
 
         数据描述信息。
 
@@ -86,7 +86,7 @@ class ItemSource:
 
     @property
     def custom_tags(self):
-        """Gets the custom_tags of this ItemSource.
+        r"""Gets the custom_tags of this ItemSource.
 
         数据自定义字符标签。
 
@@ -97,7 +97,7 @@ class ItemSource:
 
     @custom_tags.setter
     def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this ItemSource.
+        r"""Sets the custom_tags of this ItemSource.
 
         数据自定义字符标签。
 
@@ -108,7 +108,7 @@ class ItemSource:
 
     @property
     def custom_num_tags(self):
-        """Gets the custom_num_tags of this ItemSource.
+        r"""Gets the custom_num_tags of this ItemSource.
 
         数据自定义数值标签。
 
@@ -119,7 +119,7 @@ class ItemSource:
 
     @custom_num_tags.setter
     def custom_num_tags(self, custom_num_tags):
-        """Sets the custom_num_tags of this ItemSource.
+        r"""Sets the custom_num_tags of this ItemSource.
 
         数据自定义数值标签。
 
@@ -130,7 +130,7 @@ class ItemSource:
 
     @property
     def keywords(self):
-        """Gets the keywords of this ItemSource.
+        r"""Gets the keywords of this ItemSource.
 
         数据关键词列表。
 
@@ -141,7 +141,7 @@ class ItemSource:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this ItemSource.
+        r"""Sets the keywords of this ItemSource.
 
         数据关键词列表。
 

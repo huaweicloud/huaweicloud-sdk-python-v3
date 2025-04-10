@@ -52,7 +52,7 @@ class CreateRecordSetResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
-        """CreateRecordSetResponse
+        r"""CreateRecordSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateRecordSetResponse.
+        r"""Gets the id of this CreateRecordSetResponse.
 
         Record Set的ID。
 
@@ -146,7 +146,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRecordSetResponse.
+        r"""Sets the id of this CreateRecordSetResponse.
 
         Record Set的ID。
 
@@ -157,7 +157,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateRecordSetResponse.
+        r"""Gets the name of this CreateRecordSetResponse.
 
         Record Set的名称。
 
@@ -168,7 +168,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRecordSetResponse.
+        r"""Sets the name of this CreateRecordSetResponse.
 
         Record Set的名称。
 
@@ -179,7 +179,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateRecordSetResponse.
+        r"""Gets the description of this CreateRecordSetResponse.
 
         Record Set的描述信息。
 
@@ -190,7 +190,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRecordSetResponse.
+        r"""Sets the description of this CreateRecordSetResponse.
 
         Record Set的描述信息。
 
@@ -201,7 +201,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this CreateRecordSetResponse.
+        r"""Gets the zone_id of this CreateRecordSetResponse.
 
         托管该记录的zone_id。
 
@@ -212,7 +212,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this CreateRecordSetResponse.
+        r"""Sets the zone_id of this CreateRecordSetResponse.
 
         托管该记录的zone_id。
 
@@ -223,7 +223,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this CreateRecordSetResponse.
+        r"""Gets the zone_name of this CreateRecordSetResponse.
 
         托管该记录的zone_name。
 
@@ -234,7 +234,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this CreateRecordSetResponse.
+        r"""Sets the zone_name of this CreateRecordSetResponse.
 
         托管该记录的zone_name。
 
@@ -245,7 +245,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateRecordSetResponse.
+        r"""Gets the type of this CreateRecordSetResponse.
 
         记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
@@ -256,7 +256,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRecordSetResponse.
+        r"""Sets the type of this CreateRecordSetResponse.
 
         记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
@@ -267,7 +267,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreateRecordSetResponse.
+        r"""Gets the ttl of this CreateRecordSetResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
 
@@ -278,7 +278,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreateRecordSetResponse.
+        r"""Sets the ttl of this CreateRecordSetResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
 
@@ -289,7 +289,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this CreateRecordSetResponse.
+        r"""Gets the records of this CreateRecordSetResponse.
 
         域名解析后的值。
 
@@ -300,7 +300,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this CreateRecordSetResponse.
+        r"""Sets the records of this CreateRecordSetResponse.
 
         域名解析后的值。
 
@@ -311,7 +311,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this CreateRecordSetResponse.
+        r"""Gets the create_at of this CreateRecordSetResponse.
 
         创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
 
@@ -322,7 +322,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this CreateRecordSetResponse.
+        r"""Sets the create_at of this CreateRecordSetResponse.
 
         创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
 
@@ -333,7 +333,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def update_at(self):
-        """Gets the update_at of this CreateRecordSetResponse.
+        r"""Gets the update_at of this CreateRecordSetResponse.
 
         更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
 
@@ -344,7 +344,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this CreateRecordSetResponse.
+        r"""Sets the update_at of this CreateRecordSetResponse.
 
         更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS
 
@@ -355,7 +355,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRecordSetResponse.
+        r"""Gets the status of this CreateRecordSetResponse.
 
         资源状态。
 
@@ -366,7 +366,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRecordSetResponse.
+        r"""Sets the status of this CreateRecordSetResponse.
 
         资源状态。
 
@@ -377,7 +377,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def default(self):
-        """Gets the default of this CreateRecordSetResponse.
+        r"""Gets the default of this CreateRecordSetResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -388,7 +388,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @default.setter
     def default(self, default):
-        """Sets the default of this CreateRecordSetResponse.
+        r"""Sets the default of this CreateRecordSetResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -399,7 +399,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateRecordSetResponse.
+        r"""Gets the project_id of this CreateRecordSetResponse.
 
         该Record Set所属的项目ID。
 
@@ -410,7 +410,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateRecordSetResponse.
+        r"""Sets the project_id of this CreateRecordSetResponse.
 
         该Record Set所属的项目ID。
 
@@ -421,7 +421,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this CreateRecordSetResponse.
+        r"""Gets the links of this CreateRecordSetResponse.
 
         :return: The links of this CreateRecordSetResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -430,7 +430,7 @@ class CreateRecordSetResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CreateRecordSetResponse.
+        r"""Sets the links of this CreateRecordSetResponse.
 
         :param links: The links of this CreateRecordSetResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

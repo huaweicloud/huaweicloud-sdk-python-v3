@@ -25,7 +25,7 @@ class ListCloudPhoneServerModelsRequest:
     }
 
     def __init__(self, product_type=None):
-        """ListCloudPhoneServerModelsRequest
+        r"""ListCloudPhoneServerModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCloudPhoneServerModelsRequest:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ListCloudPhoneServerModelsRequest.
+        r"""Gets the product_type of this ListCloudPhoneServerModelsRequest.
 
         产品类型。 - 0：云手机 - 1：云手游
 
@@ -54,7 +54,7 @@ class ListCloudPhoneServerModelsRequest:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ListCloudPhoneServerModelsRequest.
+        r"""Sets the product_type of this ListCloudPhoneServerModelsRequest.
 
         产品类型。 - 0：云手机 - 1：云手游
 

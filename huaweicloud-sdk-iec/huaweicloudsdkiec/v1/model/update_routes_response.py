@@ -26,7 +26,7 @@ class UpdateRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None):
-        """UpdateRoutesResponse
+        r"""UpdateRoutesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateRoutesResponse(SdkResponse):
 
     @property
     def routes(self):
-        """Gets the routes of this UpdateRoutesResponse.
+        r"""Gets the routes of this UpdateRoutesResponse.
 
         路由列表
 
@@ -55,7 +55,7 @@ class UpdateRoutesResponse(SdkResponse):
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this UpdateRoutesResponse.
+        r"""Sets the routes of this UpdateRoutesResponse.
 
         路由列表
 

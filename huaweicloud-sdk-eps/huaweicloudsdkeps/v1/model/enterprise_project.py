@@ -29,7 +29,7 @@ class EnterpriseProject:
     }
 
     def __init__(self, name=None, description=None, type=None):
-        """EnterpriseProject
+        r"""EnterpriseProject
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class EnterpriseProject:
 
     @property
     def name(self):
-        """Gets the name of this EnterpriseProject.
+        r"""Gets the name of this EnterpriseProject.
 
         只能由中文字符、英文字母（a~zA~Z）、数字（0~9）、下划线（_）、中划线（-）组成，且长度为[1-64]个字符。名称不能为大小写混合的default，且在租户账号内唯一。
 
@@ -67,7 +67,7 @@ class EnterpriseProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnterpriseProject.
+        r"""Sets the name of this EnterpriseProject.
 
         只能由中文字符、英文字母（a~zA~Z）、数字（0~9）、下划线（_）、中划线（-）组成，且长度为[1-64]个字符。名称不能为大小写混合的default，且在租户账号内唯一。
 
@@ -78,7 +78,7 @@ class EnterpriseProject:
 
     @property
     def description(self):
-        """Gets the description of this EnterpriseProject.
+        r"""Gets the description of this EnterpriseProject.
 
         最大长度512个字符。
 
@@ -89,7 +89,7 @@ class EnterpriseProject:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnterpriseProject.
+        r"""Sets the description of this EnterpriseProject.
 
         最大长度512个字符。
 
@@ -100,7 +100,7 @@ class EnterpriseProject:
 
     @property
     def type(self):
-        """Gets the type of this EnterpriseProject.
+        r"""Gets the type of this EnterpriseProject.
 
         企业项目类型
 
@@ -111,7 +111,7 @@ class EnterpriseProject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EnterpriseProject.
+        r"""Sets the type of this EnterpriseProject.
 
         企业项目类型
 

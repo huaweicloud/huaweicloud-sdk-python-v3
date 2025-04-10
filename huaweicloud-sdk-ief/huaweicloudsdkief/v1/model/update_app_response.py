@@ -26,7 +26,7 @@ class UpdateAppResponse(SdkResponse):
     }
 
     def __init__(self, app=None):
-        """UpdateAppResponse
+        r"""UpdateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAppResponse(SdkResponse):
 
     @property
     def app(self):
-        """Gets the app of this UpdateAppResponse.
+        r"""Gets the app of this UpdateAppResponse.
 
         :return: The app of this UpdateAppResponse.
         :rtype: :class:`huaweicloudsdkief.v1.AppResp`
@@ -53,7 +53,7 @@ class UpdateAppResponse(SdkResponse):
 
     @app.setter
     def app(self, app):
-        """Sets the app of this UpdateAppResponse.
+        r"""Sets the app of this UpdateAppResponse.
 
         :param app: The app of this UpdateAppResponse.
         :type app: :class:`huaweicloudsdkief.v1.AppResp`

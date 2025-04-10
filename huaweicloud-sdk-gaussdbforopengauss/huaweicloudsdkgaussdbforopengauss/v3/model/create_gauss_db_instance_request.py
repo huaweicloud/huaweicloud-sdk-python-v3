@@ -29,7 +29,7 @@ class CreateGaussDbInstanceRequest:
     }
 
     def __init__(self, x_language=None, subscription_agency=None, body=None):
-        """CreateGaussDbInstanceRequest
+        r"""CreateGaussDbInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateGaussDbInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateGaussDbInstanceRequest.
+        r"""Gets the x_language of this CreateGaussDbInstanceRequest.
 
         语言
 
@@ -68,7 +68,7 @@ class CreateGaussDbInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateGaussDbInstanceRequest.
+        r"""Sets the x_language of this CreateGaussDbInstanceRequest.
 
         语言
 
@@ -79,7 +79,7 @@ class CreateGaussDbInstanceRequest:
 
     @property
     def subscription_agency(self):
-        """Gets the subscription_agency of this CreateGaussDbInstanceRequest.
+        r"""Gets the subscription_agency of this CreateGaussDbInstanceRequest.
 
         委托urn。使用RAM共享的KMS秘钥创建包周期实例时必填,格式iam::{account_id}:agency:{agency_name}。
 
@@ -90,7 +90,7 @@ class CreateGaussDbInstanceRequest:
 
     @subscription_agency.setter
     def subscription_agency(self, subscription_agency):
-        """Sets the subscription_agency of this CreateGaussDbInstanceRequest.
+        r"""Sets the subscription_agency of this CreateGaussDbInstanceRequest.
 
         委托urn。使用RAM共享的KMS秘钥创建包周期实例时必填,格式iam::{account_id}:agency:{agency_name}。
 
@@ -101,7 +101,7 @@ class CreateGaussDbInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGaussDbInstanceRequest.
+        r"""Gets the body of this CreateGaussDbInstanceRequest.
 
         :return: The body of this CreateGaussDbInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceRequestBody`
@@ -110,7 +110,7 @@ class CreateGaussDbInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGaussDbInstanceRequest.
+        r"""Sets the body of this CreateGaussDbInstanceRequest.
 
         :param body: The body of this CreateGaussDbInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceRequestBody`

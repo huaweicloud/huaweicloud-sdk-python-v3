@@ -27,7 +27,7 @@ class CreateTrainingMiddleJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateTrainingMiddleJobRequest
+        r"""CreateTrainingMiddleJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTrainingMiddleJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateTrainingMiddleJobRequest.
+        r"""Gets the x_app_user_id of this CreateTrainingMiddleJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateTrainingMiddleJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateTrainingMiddleJobRequest.
+        r"""Sets the x_app_user_id of this CreateTrainingMiddleJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateTrainingMiddleJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTrainingMiddleJobRequest.
+        r"""Gets the body of this CreateTrainingMiddleJobRequest.
 
         :return: The body of this CreateTrainingMiddleJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobReq`
@@ -81,7 +81,7 @@ class CreateTrainingMiddleJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTrainingMiddleJobRequest.
+        r"""Sets the body of this CreateTrainingMiddleJobRequest.
 
         :param body: The body of this CreateTrainingMiddleJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateTrainingJobReq`

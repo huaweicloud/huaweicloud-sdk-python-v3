@@ -29,7 +29,7 @@ class FlavorLists:
     }
 
     def __init__(self, master=None, core=None, task=None):
-        """FlavorLists
+        r"""FlavorLists
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlavorLists:
 
     @property
     def master(self):
-        """Gets the master of this FlavorLists.
+        r"""Gets the master of this FlavorLists.
 
         master节点支持的规格列表
 
@@ -68,7 +68,7 @@ class FlavorLists:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this FlavorLists.
+        r"""Sets the master of this FlavorLists.
 
         master节点支持的规格列表
 
@@ -79,7 +79,7 @@ class FlavorLists:
 
     @property
     def core(self):
-        """Gets the core of this FlavorLists.
+        r"""Gets the core of this FlavorLists.
 
         core节点支持的规格列表
 
@@ -90,7 +90,7 @@ class FlavorLists:
 
     @core.setter
     def core(self, core):
-        """Sets the core of this FlavorLists.
+        r"""Sets the core of this FlavorLists.
 
         core节点支持的规格列表
 
@@ -101,7 +101,7 @@ class FlavorLists:
 
     @property
     def task(self):
-        """Gets the task of this FlavorLists.
+        r"""Gets the task of this FlavorLists.
 
         task节点支持的规格列表
 
@@ -112,7 +112,7 @@ class FlavorLists:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this FlavorLists.
+        r"""Sets the task of this FlavorLists.
 
         task节点支持的规格列表
 

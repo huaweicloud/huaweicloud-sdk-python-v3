@@ -28,7 +28,7 @@ class SearchFaceByFileResponse(SdkResponse):
     }
 
     def __init__(self, faces=None, x_request_id=None):
-        """SearchFaceByFileResponse
+        r"""SearchFaceByFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchFaceByFileResponse(SdkResponse):
 
     @property
     def faces(self):
-        """Gets the faces of this SearchFaceByFileResponse.
+        r"""Gets the faces of this SearchFaceByFileResponse.
 
         [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。调用失败时无此字段。](tag:hc) [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0019.html)。调用失败时无此字段。](tag:hk)
 
@@ -62,7 +62,7 @@ class SearchFaceByFileResponse(SdkResponse):
 
     @faces.setter
     def faces(self, faces):
-        """Sets the faces of this SearchFaceByFileResponse.
+        r"""Sets the faces of this SearchFaceByFileResponse.
 
         [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。调用失败时无此字段。](tag:hc) [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0019.html)。调用失败时无此字段。](tag:hk)
 
@@ -73,7 +73,7 @@ class SearchFaceByFileResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchFaceByFileResponse.
+        r"""Gets the x_request_id of this SearchFaceByFileResponse.
 
         :return: The x_request_id of this SearchFaceByFileResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class SearchFaceByFileResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchFaceByFileResponse.
+        r"""Sets the x_request_id of this SearchFaceByFileResponse.
 
         :param x_request_id: The x_request_id of this SearchFaceByFileResponse.
         :type x_request_id: str

@@ -28,7 +28,7 @@ class SearchResourceSharesRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """SearchResourceSharesRequest
+        r"""SearchResourceSharesRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchResourceSharesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this SearchResourceSharesRequest.
+        r"""Gets the x_security_token of this SearchResourceSharesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -62,7 +62,7 @@ class SearchResourceSharesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this SearchResourceSharesRequest.
+        r"""Sets the x_security_token of this SearchResourceSharesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -73,7 +73,7 @@ class SearchResourceSharesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchResourceSharesRequest.
+        r"""Gets the body of this SearchResourceSharesRequest.
 
         :return: The body of this SearchResourceSharesRequest.
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceSharesReqBody`
@@ -82,7 +82,7 @@ class SearchResourceSharesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchResourceSharesRequest.
+        r"""Sets the body of this SearchResourceSharesRequest.
 
         :param body: The body of this SearchResourceSharesRequest.
         :type body: :class:`huaweicloudsdkram.v1.SearchResourceSharesReqBody`

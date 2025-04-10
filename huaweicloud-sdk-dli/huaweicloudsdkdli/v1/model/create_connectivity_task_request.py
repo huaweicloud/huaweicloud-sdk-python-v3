@@ -27,7 +27,7 @@ class CreateConnectivityTaskRequest:
     }
 
     def __init__(self, queue_name=None, body=None):
-        """CreateConnectivityTaskRequest
+        r"""CreateConnectivityTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateConnectivityTaskRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this CreateConnectivityTaskRequest.
+        r"""Gets the queue_name of this CreateConnectivityTaskRequest.
 
         队列名称
 
@@ -60,7 +60,7 @@ class CreateConnectivityTaskRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this CreateConnectivityTaskRequest.
+        r"""Sets the queue_name of this CreateConnectivityTaskRequest.
 
         队列名称
 
@@ -71,7 +71,7 @@ class CreateConnectivityTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectivityTaskRequest.
+        r"""Gets the body of this CreateConnectivityTaskRequest.
 
         :return: The body of this CreateConnectivityTaskRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateConnectivityTaskRequestBody`
@@ -80,7 +80,7 @@ class CreateConnectivityTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectivityTaskRequest.
+        r"""Sets the body of this CreateConnectivityTaskRequest.
 
         :param body: The body of this CreateConnectivityTaskRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateConnectivityTaskRequestBody`

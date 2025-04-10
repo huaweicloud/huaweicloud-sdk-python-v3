@@ -28,7 +28,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
     }
 
     def __init__(self, desktops=None, total_count=None):
-        """ListDesktopsConnectStatusResponse
+        r"""ListDesktopsConnectStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
 
     @property
     def desktops(self):
-        """Gets the desktops of this ListDesktopsConnectStatusResponse.
+        r"""Gets the desktops of this ListDesktopsConnectStatusResponse.
 
         桌面连接信息列表。
 
@@ -62,7 +62,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this ListDesktopsConnectStatusResponse.
+        r"""Sets the desktops of this ListDesktopsConnectStatusResponse.
 
         桌面连接信息列表。
 
@@ -73,7 +73,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopsConnectStatusResponse.
+        r"""Gets the total_count of this ListDesktopsConnectStatusResponse.
 
         桌面总数。
 
@@ -84,7 +84,7 @@ class ListDesktopsConnectStatusResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopsConnectStatusResponse.
+        r"""Sets the total_count of this ListDesktopsConnectStatusResponse.
 
         桌面总数。
 

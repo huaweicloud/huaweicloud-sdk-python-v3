@@ -26,7 +26,7 @@ class CreatePrivacyAgreementsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreatePrivacyAgreementsResponse
+        r"""CreatePrivacyAgreementsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePrivacyAgreementsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivacyAgreementsResponse.
+        r"""Gets the body of this CreatePrivacyAgreementsResponse.
 
         请求成功
 
@@ -55,7 +55,7 @@ class CreatePrivacyAgreementsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivacyAgreementsResponse.
+        r"""Sets the body of this CreatePrivacyAgreementsResponse.
 
         请求成功
 

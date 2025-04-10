@@ -27,7 +27,7 @@ class ListAllProjectsPermissionsForAgencyRequest:
     }
 
     def __init__(self, agency_id=None, domain_id=None):
-        """ListAllProjectsPermissionsForAgencyRequest
+        r"""ListAllProjectsPermissionsForAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListAllProjectsPermissionsForAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this ListAllProjectsPermissionsForAgencyRequest.
+        r"""Gets the agency_id of this ListAllProjectsPermissionsForAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -59,7 +59,7 @@ class ListAllProjectsPermissionsForAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this ListAllProjectsPermissionsForAgencyRequest.
+        r"""Sets the agency_id of this ListAllProjectsPermissionsForAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -70,7 +70,7 @@ class ListAllProjectsPermissionsForAgencyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListAllProjectsPermissionsForAgencyRequest.
+        r"""Gets the domain_id of this ListAllProjectsPermissionsForAgencyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -81,7 +81,7 @@ class ListAllProjectsPermissionsForAgencyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListAllProjectsPermissionsForAgencyRequest.
+        r"""Sets the domain_id of this ListAllProjectsPermissionsForAgencyRequest.
 
         账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

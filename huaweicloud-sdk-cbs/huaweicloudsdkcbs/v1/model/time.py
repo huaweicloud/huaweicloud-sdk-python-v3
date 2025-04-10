@@ -27,7 +27,7 @@ class Time:
     }
 
     def __init__(self, create_time=None, update_time=None):
-        """Time
+        r"""Time
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Time:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Time.
+        r"""Gets the create_time of this Time.
 
         创建时间
 
@@ -59,7 +59,7 @@ class Time:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Time.
+        r"""Sets the create_time of this Time.
 
         创建时间
 
@@ -70,7 +70,7 @@ class Time:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Time.
+        r"""Gets the update_time of this Time.
 
         更新时间
 
@@ -81,7 +81,7 @@ class Time:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Time.
+        r"""Sets the update_time of this Time.
 
         更新时间
 

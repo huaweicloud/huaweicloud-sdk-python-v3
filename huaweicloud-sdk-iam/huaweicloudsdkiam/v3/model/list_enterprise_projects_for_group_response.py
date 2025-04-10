@@ -26,7 +26,7 @@ class ListEnterpriseProjectsForGroupResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_projects=None):
-        """ListEnterpriseProjectsForGroupResponse
+        r"""ListEnterpriseProjectsForGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEnterpriseProjectsForGroupResponse(SdkResponse):
 
     @property
     def enterprise_projects(self):
-        """Gets the enterprise_projects of this ListEnterpriseProjectsForGroupResponse.
+        r"""Gets the enterprise_projects of this ListEnterpriseProjectsForGroupResponse.
 
         企业项目信息。
 
@@ -55,7 +55,7 @@ class ListEnterpriseProjectsForGroupResponse(SdkResponse):
 
     @enterprise_projects.setter
     def enterprise_projects(self, enterprise_projects):
-        """Sets the enterprise_projects of this ListEnterpriseProjectsForGroupResponse.
+        r"""Sets the enterprise_projects of this ListEnterpriseProjectsForGroupResponse.
 
         企业项目信息。
 

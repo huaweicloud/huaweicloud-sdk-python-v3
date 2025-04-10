@@ -27,7 +27,7 @@ class UploadIssueImgRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UploadIssueImgRequest
+        r"""UploadIssueImgRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UploadIssueImgRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UploadIssueImgRequest.
+        r"""Gets the project_id of this UploadIssueImgRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class UploadIssueImgRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UploadIssueImgRequest.
+        r"""Sets the project_id of this UploadIssueImgRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class UploadIssueImgRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadIssueImgRequest.
+        r"""Gets the body of this UploadIssueImgRequest.
 
         :return: The body of this UploadIssueImgRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequestBody`
@@ -80,7 +80,7 @@ class UploadIssueImgRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadIssueImgRequest.
+        r"""Sets the body of this UploadIssueImgRequest.
 
         :param body: The body of this UploadIssueImgRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequestBody`

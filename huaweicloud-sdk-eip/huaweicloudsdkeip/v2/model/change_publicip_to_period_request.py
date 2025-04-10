@@ -25,7 +25,7 @@ class ChangePublicipToPeriodRequest:
     }
 
     def __init__(self, body=None):
-        """ChangePublicipToPeriodRequest
+        r"""ChangePublicipToPeriodRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangePublicipToPeriodRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangePublicipToPeriodRequest.
+        r"""Gets the body of this ChangePublicipToPeriodRequest.
 
         :return: The body of this ChangePublicipToPeriodRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.ChangeToPeriodReq`
@@ -52,7 +52,7 @@ class ChangePublicipToPeriodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangePublicipToPeriodRequest.
+        r"""Sets the body of this ChangePublicipToPeriodRequest.
 
         :param body: The body of this ChangePublicipToPeriodRequest.
         :type body: :class:`huaweicloudsdkeip.v2.ChangeToPeriodReq`

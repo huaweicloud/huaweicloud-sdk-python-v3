@@ -27,7 +27,7 @@ class DeleteNextflowWorkflowRequest:
     }
 
     def __init__(self, eihealth_project_id=None, workflow_id=None):
-        """DeleteNextflowWorkflowRequest
+        r"""DeleteNextflowWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNextflowWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteNextflowWorkflowRequest.
+        r"""Gets the eihealth_project_id of this DeleteNextflowWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class DeleteNextflowWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteNextflowWorkflowRequest.
+        r"""Sets the eihealth_project_id of this DeleteNextflowWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class DeleteNextflowWorkflowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this DeleteNextflowWorkflowRequest.
+        r"""Gets the workflow_id of this DeleteNextflowWorkflowRequest.
 
         流程id
 
@@ -81,7 +81,7 @@ class DeleteNextflowWorkflowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this DeleteNextflowWorkflowRequest.
+        r"""Sets the workflow_id of this DeleteNextflowWorkflowRequest.
 
         流程id
 

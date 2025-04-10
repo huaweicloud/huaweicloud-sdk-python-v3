@@ -37,7 +37,7 @@ class PoliciesPeripherals:
     }
 
     def __init__(self, usb_custom_policy_debug=None, usb_port_redirection=None, device_redirection=None, usb_device_common=None, serial_port_redirection=None, parallel_port_redirection=None, driver_interface_redirection=None):
-        """PoliciesPeripherals
+        r"""PoliciesPeripherals
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PoliciesPeripherals:
 
     @property
     def usb_custom_policy_debug(self):
-        """Gets the usb_custom_policy_debug of this PoliciesPeripherals.
+        r"""Gets the usb_custom_policy_debug of this PoliciesPeripherals.
 
         设备调试策略。
 
@@ -96,7 +96,7 @@ class PoliciesPeripherals:
 
     @usb_custom_policy_debug.setter
     def usb_custom_policy_debug(self, usb_custom_policy_debug):
-        """Sets the usb_custom_policy_debug of this PoliciesPeripherals.
+        r"""Sets the usb_custom_policy_debug of this PoliciesPeripherals.
 
         设备调试策略。
 
@@ -107,7 +107,7 @@ class PoliciesPeripherals:
 
     @property
     def usb_port_redirection(self):
-        """Gets the usb_port_redirection of this PoliciesPeripherals.
+        r"""Gets the usb_port_redirection of this PoliciesPeripherals.
 
         :return: The usb_port_redirection of this PoliciesPeripherals.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsUsbPortRedirection`
@@ -116,7 +116,7 @@ class PoliciesPeripherals:
 
     @usb_port_redirection.setter
     def usb_port_redirection(self, usb_port_redirection):
-        """Sets the usb_port_redirection of this PoliciesPeripherals.
+        r"""Sets the usb_port_redirection of this PoliciesPeripherals.
 
         :param usb_port_redirection: The usb_port_redirection of this PoliciesPeripherals.
         :type usb_port_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsUsbPortRedirection`
@@ -125,7 +125,7 @@ class PoliciesPeripherals:
 
     @property
     def device_redirection(self):
-        """Gets the device_redirection of this PoliciesPeripherals.
+        r"""Gets the device_redirection of this PoliciesPeripherals.
 
         :return: The device_redirection of this PoliciesPeripherals.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDeviceRedirection`
@@ -134,7 +134,7 @@ class PoliciesPeripherals:
 
     @device_redirection.setter
     def device_redirection(self, device_redirection):
-        """Sets the device_redirection of this PoliciesPeripherals.
+        r"""Sets the device_redirection of this PoliciesPeripherals.
 
         :param device_redirection: The device_redirection of this PoliciesPeripherals.
         :type device_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDeviceRedirection`
@@ -143,7 +143,7 @@ class PoliciesPeripherals:
 
     @property
     def usb_device_common(self):
-        """Gets the usb_device_common of this PoliciesPeripherals.
+        r"""Gets the usb_device_common of this PoliciesPeripherals.
 
         :return: The usb_device_common of this PoliciesPeripherals.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsUsbDeviceCommon`
@@ -152,7 +152,7 @@ class PoliciesPeripherals:
 
     @usb_device_common.setter
     def usb_device_common(self, usb_device_common):
-        """Sets the usb_device_common of this PoliciesPeripherals.
+        r"""Sets the usb_device_common of this PoliciesPeripherals.
 
         :param usb_device_common: The usb_device_common of this PoliciesPeripherals.
         :type usb_device_common: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsUsbDeviceCommon`
@@ -161,7 +161,7 @@ class PoliciesPeripherals:
 
     @property
     def serial_port_redirection(self):
-        """Gets the serial_port_redirection of this PoliciesPeripherals.
+        r"""Gets the serial_port_redirection of this PoliciesPeripherals.
 
         :return: The serial_port_redirection of this PoliciesPeripherals.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsSerialPortRedirection`
@@ -170,7 +170,7 @@ class PoliciesPeripherals:
 
     @serial_port_redirection.setter
     def serial_port_redirection(self, serial_port_redirection):
-        """Sets the serial_port_redirection of this PoliciesPeripherals.
+        r"""Sets the serial_port_redirection of this PoliciesPeripherals.
 
         :param serial_port_redirection: The serial_port_redirection of this PoliciesPeripherals.
         :type serial_port_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsSerialPortRedirection`
@@ -179,7 +179,7 @@ class PoliciesPeripherals:
 
     @property
     def parallel_port_redirection(self):
-        """Gets the parallel_port_redirection of this PoliciesPeripherals.
+        r"""Gets the parallel_port_redirection of this PoliciesPeripherals.
 
         :return: The parallel_port_redirection of this PoliciesPeripherals.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsParallelPortRedirection`
@@ -188,7 +188,7 @@ class PoliciesPeripherals:
 
     @parallel_port_redirection.setter
     def parallel_port_redirection(self, parallel_port_redirection):
-        """Sets the parallel_port_redirection of this PoliciesPeripherals.
+        r"""Sets the parallel_port_redirection of this PoliciesPeripherals.
 
         :param parallel_port_redirection: The parallel_port_redirection of this PoliciesPeripherals.
         :type parallel_port_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsParallelPortRedirection`
@@ -197,7 +197,7 @@ class PoliciesPeripherals:
 
     @property
     def driver_interface_redirection(self):
-        """Gets the driver_interface_redirection of this PoliciesPeripherals.
+        r"""Gets the driver_interface_redirection of this PoliciesPeripherals.
 
         :return: The driver_interface_redirection of this PoliciesPeripherals.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDriverInterfaceRedirection`
@@ -206,7 +206,7 @@ class PoliciesPeripherals:
 
     @driver_interface_redirection.setter
     def driver_interface_redirection(self, driver_interface_redirection):
-        """Sets the driver_interface_redirection of this PoliciesPeripherals.
+        r"""Sets the driver_interface_redirection of this PoliciesPeripherals.
 
         :param driver_interface_redirection: The driver_interface_redirection of this PoliciesPeripherals.
         :type driver_interface_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesPeripheralsDriverInterfaceRedirection`

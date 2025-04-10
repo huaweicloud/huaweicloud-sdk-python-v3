@@ -33,7 +33,7 @@ class UpdateEndpointRequestBody:
     }
 
     def __init__(self, name=None, description=None, reserved_resource=None, ray_resource=None, cap=None):
-        """UpdateEndpointRequestBody
+        r"""UpdateEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateEndpointRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateEndpointRequestBody.
+        r"""Gets the name of this UpdateEndpointRequestBody.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -82,7 +82,7 @@ class UpdateEndpointRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEndpointRequestBody.
+        r"""Sets the name of this UpdateEndpointRequestBody.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -93,7 +93,7 @@ class UpdateEndpointRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEndpointRequestBody.
+        r"""Gets the description of this UpdateEndpointRequestBody.
 
         描述信息
 
@@ -104,7 +104,7 @@ class UpdateEndpointRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEndpointRequestBody.
+        r"""Sets the description of this UpdateEndpointRequestBody.
 
         描述信息
 
@@ -115,7 +115,7 @@ class UpdateEndpointRequestBody:
 
     @property
     def reserved_resource(self):
-        """Gets the reserved_resource of this UpdateEndpointRequestBody.
+        r"""Gets the reserved_resource of this UpdateEndpointRequestBody.
 
         :return: The reserved_resource of this UpdateEndpointRequestBody.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -124,7 +124,7 @@ class UpdateEndpointRequestBody:
 
     @reserved_resource.setter
     def reserved_resource(self, reserved_resource):
-        """Sets the reserved_resource of this UpdateEndpointRequestBody.
+        r"""Sets the reserved_resource of this UpdateEndpointRequestBody.
 
         :param reserved_resource: The reserved_resource of this UpdateEndpointRequestBody.
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -133,7 +133,7 @@ class UpdateEndpointRequestBody:
 
     @property
     def ray_resource(self):
-        """Gets the ray_resource of this UpdateEndpointRequestBody.
+        r"""Gets the ray_resource of this UpdateEndpointRequestBody.
 
         :return: The ray_resource of this UpdateEndpointRequestBody.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInput`
@@ -142,7 +142,7 @@ class UpdateEndpointRequestBody:
 
     @ray_resource.setter
     def ray_resource(self, ray_resource):
-        """Sets the ray_resource of this UpdateEndpointRequestBody.
+        r"""Sets the ray_resource of this UpdateEndpointRequestBody.
 
         :param ray_resource: The ray_resource of this UpdateEndpointRequestBody.
         :type ray_resource: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInput`
@@ -151,7 +151,7 @@ class UpdateEndpointRequestBody:
 
     @property
     def cap(self):
-        """Gets the cap of this UpdateEndpointRequestBody.
+        r"""Gets the cap of this UpdateEndpointRequestBody.
 
         :return: The cap of this UpdateEndpointRequestBody.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -160,7 +160,7 @@ class UpdateEndpointRequestBody:
 
     @cap.setter
     def cap(self, cap):
-        """Sets the cap of this UpdateEndpointRequestBody.
+        r"""Sets the cap of this UpdateEndpointRequestBody.
 
         :param cap: The cap of this UpdateEndpointRequestBody.
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`

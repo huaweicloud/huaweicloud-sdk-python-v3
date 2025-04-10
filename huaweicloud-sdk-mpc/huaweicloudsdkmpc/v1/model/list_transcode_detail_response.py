@@ -26,7 +26,7 @@ class ListTranscodeDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None):
-        """ListTranscodeDetailResponse
+        r"""ListTranscodeDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTranscodeDetailResponse(SdkResponse):
 
     @property
     def task_array(self):
-        """Gets the task_array of this ListTranscodeDetailResponse.
+        r"""Gets the task_array of this ListTranscodeDetailResponse.
 
         转码详情任务组
 
@@ -55,7 +55,7 @@ class ListTranscodeDetailResponse(SdkResponse):
 
     @task_array.setter
     def task_array(self, task_array):
-        """Sets the task_array of this ListTranscodeDetailResponse.
+        r"""Sets the task_array of this ListTranscodeDetailResponse.
 
         转码详情任务组
 

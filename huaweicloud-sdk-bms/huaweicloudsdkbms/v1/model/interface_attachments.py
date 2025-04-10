@@ -37,7 +37,7 @@ class InterfaceAttachments:
     }
 
     def __init__(self, port_state=None, fixed_ips=None, net_id=None, port_id=None, mac_addr=None, driver_mode=None, pci_address=None):
-        """InterfaceAttachments
+        r"""InterfaceAttachments
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InterfaceAttachments:
 
     @property
     def port_state(self):
-        """Gets the port_state of this InterfaceAttachments.
+        r"""Gets the port_state of this InterfaceAttachments.
 
         网卡端口状态。取值为：ACTIVE、BUILD、DOWN
 
@@ -96,7 +96,7 @@ class InterfaceAttachments:
 
     @port_state.setter
     def port_state(self, port_state):
-        """Sets the port_state of this InterfaceAttachments.
+        r"""Sets the port_state of this InterfaceAttachments.
 
         网卡端口状态。取值为：ACTIVE、BUILD、DOWN
 
@@ -107,7 +107,7 @@ class InterfaceAttachments:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this InterfaceAttachments.
+        r"""Gets the fixed_ips of this InterfaceAttachments.
 
         网卡私网IP信息列表，详情请参见表3 fixed_ips字段数据结构说明。
 
@@ -118,7 +118,7 @@ class InterfaceAttachments:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this InterfaceAttachments.
+        r"""Sets the fixed_ips of this InterfaceAttachments.
 
         网卡私网IP信息列表，详情请参见表3 fixed_ips字段数据结构说明。
 
@@ -129,7 +129,7 @@ class InterfaceAttachments:
 
     @property
     def net_id(self):
-        """Gets the net_id of this InterfaceAttachments.
+        r"""Gets the net_id of this InterfaceAttachments.
 
         网卡端口所属子网的网络ID（network_id）。
 
@@ -140,7 +140,7 @@ class InterfaceAttachments:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this InterfaceAttachments.
+        r"""Sets the net_id of this InterfaceAttachments.
 
         网卡端口所属子网的网络ID（network_id）。
 
@@ -151,7 +151,7 @@ class InterfaceAttachments:
 
     @property
     def port_id(self):
-        """Gets the port_id of this InterfaceAttachments.
+        r"""Gets the port_id of this InterfaceAttachments.
 
         网卡端口ID。
 
@@ -162,7 +162,7 @@ class InterfaceAttachments:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this InterfaceAttachments.
+        r"""Sets the port_id of this InterfaceAttachments.
 
         网卡端口ID。
 
@@ -173,7 +173,7 @@ class InterfaceAttachments:
 
     @property
     def mac_addr(self):
-        """Gets the mac_addr of this InterfaceAttachments.
+        r"""Gets the mac_addr of this InterfaceAttachments.
 
         网卡Mac地址信息
 
@@ -184,7 +184,7 @@ class InterfaceAttachments:
 
     @mac_addr.setter
     def mac_addr(self, mac_addr):
-        """Sets the mac_addr of this InterfaceAttachments.
+        r"""Sets the mac_addr of this InterfaceAttachments.
 
         网卡Mac地址信息
 
@@ -195,7 +195,7 @@ class InterfaceAttachments:
 
     @property
     def driver_mode(self):
-        """Gets the driver_mode of this InterfaceAttachments.
+        r"""Gets the driver_mode of this InterfaceAttachments.
 
         从guest os中，网卡的驱动类型
 
@@ -206,7 +206,7 @@ class InterfaceAttachments:
 
     @driver_mode.setter
     def driver_mode(self, driver_mode):
-        """Sets the driver_mode of this InterfaceAttachments.
+        r"""Sets the driver_mode of this InterfaceAttachments.
 
         从guest os中，网卡的驱动类型
 
@@ -217,7 +217,7 @@ class InterfaceAttachments:
 
     @property
     def pci_address(self):
-        """Gets the pci_address of this InterfaceAttachments.
+        r"""Gets the pci_address of this InterfaceAttachments.
 
         弹性网卡在Linux GuestOS里的BDF号
 
@@ -228,7 +228,7 @@ class InterfaceAttachments:
 
     @pci_address.setter
     def pci_address(self, pci_address):
-        """Sets the pci_address of this InterfaceAttachments.
+        r"""Sets the pci_address of this InterfaceAttachments.
 
         弹性网卡在Linux GuestOS里的BDF号
 

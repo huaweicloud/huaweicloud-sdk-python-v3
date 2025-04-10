@@ -27,7 +27,7 @@ class BatchEnableAppRequest:
     }
 
     def __init__(self, app_group_id=None, body=None):
-        """BatchEnableAppRequest
+        r"""BatchEnableAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchEnableAppRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this BatchEnableAppRequest.
+        r"""Gets the app_group_id of this BatchEnableAppRequest.
 
         应用组ID。
 
@@ -60,7 +60,7 @@ class BatchEnableAppRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this BatchEnableAppRequest.
+        r"""Sets the app_group_id of this BatchEnableAppRequest.
 
         应用组ID。
 
@@ -71,7 +71,7 @@ class BatchEnableAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchEnableAppRequest.
+        r"""Gets the body of this BatchEnableAppRequest.
 
         :return: The body of this BatchEnableAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchUpdateAppReq`
@@ -80,7 +80,7 @@ class BatchEnableAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchEnableAppRequest.
+        r"""Sets the body of this BatchEnableAppRequest.
 
         :param body: The body of this BatchEnableAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchUpdateAppReq`

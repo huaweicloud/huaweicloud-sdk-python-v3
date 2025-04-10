@@ -29,7 +29,7 @@ class PipelineStageResp:
     }
 
     def __init__(self, display_name=None, status=None, result=None):
-        """PipelineStageResp
+        r"""PipelineStageResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PipelineStageResp:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PipelineStageResp.
+        r"""Gets the display_name of this PipelineStageResp.
 
         阶段名称
 
@@ -68,7 +68,7 @@ class PipelineStageResp:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PipelineStageResp.
+        r"""Sets the display_name of this PipelineStageResp.
 
         阶段名称
 
@@ -79,7 +79,7 @@ class PipelineStageResp:
 
     @property
     def status(self):
-        """Gets the status of this PipelineStageResp.
+        r"""Gets the status of this PipelineStageResp.
 
         阶段状态
 
@@ -90,7 +90,7 @@ class PipelineStageResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineStageResp.
+        r"""Sets the status of this PipelineStageResp.
 
         阶段状态
 
@@ -101,7 +101,7 @@ class PipelineStageResp:
 
     @property
     def result(self):
-        """Gets the result of this PipelineStageResp.
+        r"""Gets the result of this PipelineStageResp.
 
         阶段执行结果
 
@@ -112,7 +112,7 @@ class PipelineStageResp:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this PipelineStageResp.
+        r"""Sets the result of this PipelineStageResp.
 
         阶段执行结果
 

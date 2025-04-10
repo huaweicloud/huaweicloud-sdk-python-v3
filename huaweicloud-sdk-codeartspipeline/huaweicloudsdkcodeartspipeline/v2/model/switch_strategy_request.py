@@ -29,7 +29,7 @@ class SwitchStrategyRequest:
     }
 
     def __init__(self, rule_set_id=None, domain_id=None, body=None):
-        """SwitchStrategyRequest
+        r"""SwitchStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SwitchStrategyRequest:
 
     @property
     def rule_set_id(self):
-        """Gets the rule_set_id of this SwitchStrategyRequest.
+        r"""Gets the rule_set_id of this SwitchStrategyRequest.
 
         策略ID
 
@@ -66,7 +66,7 @@ class SwitchStrategyRequest:
 
     @rule_set_id.setter
     def rule_set_id(self, rule_set_id):
-        """Sets the rule_set_id of this SwitchStrategyRequest.
+        r"""Sets the rule_set_id of this SwitchStrategyRequest.
 
         策略ID
 
@@ -77,7 +77,7 @@ class SwitchStrategyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SwitchStrategyRequest.
+        r"""Gets the domain_id of this SwitchStrategyRequest.
 
         租户ID
 
@@ -88,7 +88,7 @@ class SwitchStrategyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SwitchStrategyRequest.
+        r"""Sets the domain_id of this SwitchStrategyRequest.
 
         租户ID
 
@@ -99,7 +99,7 @@ class SwitchStrategyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchStrategyRequest.
+        r"""Gets the body of this SwitchStrategyRequest.
 
         :return: The body of this SwitchStrategyRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleSetStatusReq`
@@ -108,7 +108,7 @@ class SwitchStrategyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchStrategyRequest.
+        r"""Sets the body of this SwitchStrategyRequest.
 
         :param body: The body of this SwitchStrategyRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleSetStatusReq`

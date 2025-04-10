@@ -27,7 +27,7 @@ class RealTimeConfInfo:
     }
 
     def __init__(self, chair_id=None, co_hosts=None):
-        """RealTimeConfInfo
+        r"""RealTimeConfInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RealTimeConfInfo:
 
     @property
     def chair_id(self):
-        """Gets the chair_id of this RealTimeConfInfo.
+        r"""Gets the chair_id of this RealTimeConfInfo.
 
         主持人与会者标识。
 
@@ -61,7 +61,7 @@ class RealTimeConfInfo:
 
     @chair_id.setter
     def chair_id(self, chair_id):
-        """Sets the chair_id of this RealTimeConfInfo.
+        r"""Sets the chair_id of this RealTimeConfInfo.
 
         主持人与会者标识。
 
@@ -72,7 +72,7 @@ class RealTimeConfInfo:
 
     @property
     def co_hosts(self):
-        """Gets the co_hosts of this RealTimeConfInfo.
+        r"""Gets the co_hosts of this RealTimeConfInfo.
 
         联席主持人会场id。
 
@@ -83,7 +83,7 @@ class RealTimeConfInfo:
 
     @co_hosts.setter
     def co_hosts(self, co_hosts):
-        """Sets the co_hosts of this RealTimeConfInfo.
+        r"""Sets the co_hosts of this RealTimeConfInfo.
 
         联席主持人会场id。
 

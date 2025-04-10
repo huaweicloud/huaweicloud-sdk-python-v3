@@ -30,7 +30,7 @@ class ListTranscodeDataResponse(SdkResponse):
     }
 
     def __init__(self, transcode_data_list=None, summary_list=None, x_request_id=None):
-        """ListTranscodeDataResponse
+        r"""ListTranscodeDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
     @property
     def transcode_data_list(self):
-        """Gets the transcode_data_list of this ListTranscodeDataResponse.
+        r"""Gets the transcode_data_list of this ListTranscodeDataResponse.
 
         采样数据列表。
 
@@ -69,7 +69,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
     @transcode_data_list.setter
     def transcode_data_list(self, transcode_data_list):
-        """Sets the transcode_data_list of this ListTranscodeDataResponse.
+        r"""Sets the transcode_data_list of this ListTranscodeDataResponse.
 
         采样数据列表。
 
@@ -80,7 +80,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
     @property
     def summary_list(self):
-        """Gets the summary_list of this ListTranscodeDataResponse.
+        r"""Gets the summary_list of this ListTranscodeDataResponse.
 
         指定时间区间内各转码规格转码时长总和。
 
@@ -91,7 +91,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
     @summary_list.setter
     def summary_list(self, summary_list):
-        """Sets the summary_list of this ListTranscodeDataResponse.
+        r"""Sets the summary_list of this ListTranscodeDataResponse.
 
         指定时间区间内各转码规格转码时长总和。
 
@@ -102,7 +102,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTranscodeDataResponse.
+        r"""Gets the x_request_id of this ListTranscodeDataResponse.
 
         :return: The x_request_id of this ListTranscodeDataResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListTranscodeDataResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTranscodeDataResponse.
+        r"""Sets the x_request_id of this ListTranscodeDataResponse.
 
         :param x_request_id: The x_request_id of this ListTranscodeDataResponse.
         :type x_request_id: str

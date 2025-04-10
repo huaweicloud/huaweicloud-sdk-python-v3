@@ -27,7 +27,7 @@ class ActionOnComponentBuild:
     }
 
     def __init__(self, archive=None, parameters=None):
-        """ActionOnComponentBuild
+        r"""ActionOnComponentBuild
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ActionOnComponentBuild:
 
     @property
     def archive(self):
-        """Gets the archive of this ActionOnComponentBuild.
+        r"""Gets the archive of this ActionOnComponentBuild.
 
         :return: The archive of this ActionOnComponentBuild.
         :rtype: :class:`huaweicloudsdkcae.v1.Archive`
@@ -59,7 +59,7 @@ class ActionOnComponentBuild:
 
     @archive.setter
     def archive(self, archive):
-        """Sets the archive of this ActionOnComponentBuild.
+        r"""Sets the archive of this ActionOnComponentBuild.
 
         :param archive: The archive of this ActionOnComponentBuild.
         :type archive: :class:`huaweicloudsdkcae.v1.Archive`
@@ -68,7 +68,7 @@ class ActionOnComponentBuild:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ActionOnComponentBuild.
+        r"""Gets the parameters of this ActionOnComponentBuild.
 
         构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容 - artifact_name: 针对java多模块构建，指定构建后运行的产物，以\".jar\"结尾。
 
@@ -79,7 +79,7 @@ class ActionOnComponentBuild:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ActionOnComponentBuild.
+        r"""Sets the parameters of this ActionOnComponentBuild.
 
         构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容 - artifact_name: 针对java多模块构建，指定构建后运行的产物，以\".jar\"结尾。
 

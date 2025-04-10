@@ -24,7 +24,7 @@ class AuthorizeDataConnectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AuthorizeDataConnectionResponse
+        r"""AuthorizeDataConnectionResponse
 
         The model defined in huaweicloud sdk
 

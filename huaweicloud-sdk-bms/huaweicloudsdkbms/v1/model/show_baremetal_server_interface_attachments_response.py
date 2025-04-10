@@ -26,7 +26,7 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, interface_attachments=None):
-        """ShowBaremetalServerInterfaceAttachmentsResponse
+        r"""ShowBaremetalServerInterfaceAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
 
     @property
     def interface_attachments(self):
-        """Gets the interface_attachments of this ShowBaremetalServerInterfaceAttachmentsResponse.
+        r"""Gets the interface_attachments of this ShowBaremetalServerInterfaceAttachmentsResponse.
 
         裸金属服务器网卡信息列表，详情请参见表2 interfaceAttachments字段数据结构说明。
 
@@ -55,7 +55,7 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
 
     @interface_attachments.setter
     def interface_attachments(self, interface_attachments):
-        """Sets the interface_attachments of this ShowBaremetalServerInterfaceAttachmentsResponse.
+        r"""Sets the interface_attachments of this ShowBaremetalServerInterfaceAttachmentsResponse.
 
         裸金属服务器网卡信息列表，详情请参见表2 interfaceAttachments字段数据结构说明。
 

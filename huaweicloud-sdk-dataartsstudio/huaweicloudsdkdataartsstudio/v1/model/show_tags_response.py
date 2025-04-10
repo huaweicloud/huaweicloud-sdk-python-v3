@@ -36,7 +36,7 @@ class ShowTagsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, quota=None, tags=None, total=None):
-        """ShowTagsResponse
+        r"""ShowTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowTagsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTagsResponse.
+        r"""Gets the limit of this ShowTagsResponse.
 
         每页大小
 
@@ -90,7 +90,7 @@ class ShowTagsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTagsResponse.
+        r"""Sets the limit of this ShowTagsResponse.
 
         每页大小
 
@@ -101,7 +101,7 @@ class ShowTagsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTagsResponse.
+        r"""Gets the offset of this ShowTagsResponse.
 
         页码
 
@@ -112,7 +112,7 @@ class ShowTagsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTagsResponse.
+        r"""Sets the offset of this ShowTagsResponse.
 
         页码
 
@@ -123,7 +123,7 @@ class ShowTagsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowTagsResponse.
+        r"""Gets the count of this ShowTagsResponse.
 
         查询出来的条数
 
@@ -134,7 +134,7 @@ class ShowTagsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowTagsResponse.
+        r"""Sets the count of this ShowTagsResponse.
 
         查询出来的条数
 
@@ -145,7 +145,7 @@ class ShowTagsResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ShowTagsResponse.
+        r"""Gets the quota of this ShowTagsResponse.
 
         可创建标签数量配额额
 
@@ -156,7 +156,7 @@ class ShowTagsResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ShowTagsResponse.
+        r"""Sets the quota of this ShowTagsResponse.
 
         可创建标签数量配额额
 
@@ -167,7 +167,7 @@ class ShowTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowTagsResponse.
+        r"""Gets the tags of this ShowTagsResponse.
 
         标签实体
 
@@ -178,7 +178,7 @@ class ShowTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowTagsResponse.
+        r"""Sets the tags of this ShowTagsResponse.
 
         标签实体
 
@@ -189,7 +189,7 @@ class ShowTagsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTagsResponse.
+        r"""Gets the total of this ShowTagsResponse.
 
         已创建的标签总条数
 
@@ -200,7 +200,7 @@ class ShowTagsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTagsResponse.
+        r"""Sets the total of this ShowTagsResponse.
 
         已创建的标签总条数
 

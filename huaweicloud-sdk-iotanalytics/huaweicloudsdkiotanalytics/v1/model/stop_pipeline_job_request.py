@@ -27,7 +27,7 @@ class StopPipelineJobRequest:
     }
 
     def __init__(self, pipeline_id=None, trigger_savepoint=None):
-        """StopPipelineJobRequest
+        r"""StopPipelineJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopPipelineJobRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StopPipelineJobRequest.
+        r"""Gets the pipeline_id of this StopPipelineJobRequest.
 
         管道ID
 
@@ -60,7 +60,7 @@ class StopPipelineJobRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StopPipelineJobRequest.
+        r"""Sets the pipeline_id of this StopPipelineJobRequest.
 
         管道ID
 
@@ -71,7 +71,7 @@ class StopPipelineJobRequest:
 
     @property
     def trigger_savepoint(self):
-        """Gets the trigger_savepoint of this StopPipelineJobRequest.
+        r"""Gets the trigger_savepoint of this StopPipelineJobRequest.
 
         停止管道作业触发savepoint
 
@@ -82,7 +82,7 @@ class StopPipelineJobRequest:
 
     @trigger_savepoint.setter
     def trigger_savepoint(self, trigger_savepoint):
-        """Sets the trigger_savepoint of this StopPipelineJobRequest.
+        r"""Sets the trigger_savepoint of this StopPipelineJobRequest.
 
         停止管道作业触发savepoint
 

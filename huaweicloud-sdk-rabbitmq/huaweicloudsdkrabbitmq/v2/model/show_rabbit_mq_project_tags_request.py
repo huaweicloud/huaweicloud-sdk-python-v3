@@ -23,7 +23,7 @@ class ShowRabbitMqProjectTagsRequest:
     }
 
     def __init__(self):
-        """ShowRabbitMqProjectTagsRequest
+        r"""ShowRabbitMqProjectTagsRequest
 
         The model defined in huaweicloud sdk
 

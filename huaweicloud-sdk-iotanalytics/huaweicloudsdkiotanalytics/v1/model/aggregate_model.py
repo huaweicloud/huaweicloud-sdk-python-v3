@@ -33,7 +33,7 @@ class AggregateModel:
     }
 
     def __init__(self, inputs=None, expression=None, schedule=None, output_property=None, outputs=None):
-        """AggregateModel
+        r"""AggregateModel
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class AggregateModel:
 
     @property
     def inputs(self):
-        """Gets the inputs of this AggregateModel.
+        r"""Gets the inputs of this AggregateModel.
 
         输入参数，最多支持10个
 
@@ -79,7 +79,7 @@ class AggregateModel:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this AggregateModel.
+        r"""Sets the inputs of this AggregateModel.
 
         输入参数，最多支持10个
 
@@ -90,7 +90,7 @@ class AggregateModel:
 
     @property
     def expression(self):
-        """Gets the expression of this AggregateModel.
+        r"""Gets the expression of this AggregateModel.
 
         :return: The expression of this AggregateModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Expression`
@@ -99,7 +99,7 @@ class AggregateModel:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this AggregateModel.
+        r"""Sets the expression of this AggregateModel.
 
         :param expression: The expression of this AggregateModel.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
@@ -108,7 +108,7 @@ class AggregateModel:
 
     @property
     def schedule(self):
-        """Gets the schedule of this AggregateModel.
+        r"""Gets the schedule of this AggregateModel.
 
         :return: The schedule of this AggregateModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
@@ -117,7 +117,7 @@ class AggregateModel:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this AggregateModel.
+        r"""Sets the schedule of this AggregateModel.
 
         :param schedule: The schedule of this AggregateModel.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
@@ -126,7 +126,7 @@ class AggregateModel:
 
     @property
     def output_property(self):
-        """Gets the output_property of this AggregateModel.
+        r"""Gets the output_property of this AggregateModel.
 
         输出属性名(分析任务单输出场景，配合expression的formula使用)
 
@@ -137,7 +137,7 @@ class AggregateModel:
 
     @output_property.setter
     def output_property(self, output_property):
-        """Sets the output_property of this AggregateModel.
+        r"""Sets the output_property of this AggregateModel.
 
         输出属性名(分析任务单输出场景，配合expression的formula使用)
 
@@ -148,7 +148,7 @@ class AggregateModel:
 
     @property
     def outputs(self):
-        """Gets the outputs of this AggregateModel.
+        r"""Gets the outputs of this AggregateModel.
 
         输出属性，最多支持10个
 
@@ -159,7 +159,7 @@ class AggregateModel:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this AggregateModel.
+        r"""Sets the outputs of this AggregateModel.
 
         输出属性，最多支持10个
 

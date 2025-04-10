@@ -24,7 +24,7 @@ class BatchCreateVolumeTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateVolumeTagsResponse
+        r"""BatchCreateVolumeTagsResponse
 
         The model defined in huaweicloud sdk
 

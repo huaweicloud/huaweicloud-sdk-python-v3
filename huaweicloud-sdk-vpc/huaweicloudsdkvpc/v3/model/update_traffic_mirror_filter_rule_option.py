@@ -41,7 +41,7 @@ class UpdateTrafficMirrorFilterRuleOption:
     }
 
     def __init__(self, description=None, protocol=None, ethertype=None, source_cidr_block=None, destination_cidr_block=None, source_port_range=None, destination_port_range=None, priority=None, action=None):
-        """UpdateTrafficMirrorFilterRuleOption
+        r"""UpdateTrafficMirrorFilterRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the description of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：流量镜像筛选规则的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -110,7 +110,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the description of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：流量镜像筛选规则的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -121,7 +121,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the protocol of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的协议类型 取值范围：TCP、UDP、ICMP、ICMPV6、ALL
 
@@ -132,7 +132,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the protocol of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的协议类型 取值范围：TCP、UDP、ICMP、ICMPV6、ALL
 
@@ -143,7 +143,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the ethertype of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的地址协议版本 取值范围：IPv4，IPv6
 
@@ -154,7 +154,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the ethertype of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的地址协议版本 取值范围：IPv4，IPv6
 
@@ -165,7 +165,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def source_cidr_block(self):
-        """Gets the source_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the source_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的源网段
 
@@ -176,7 +176,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @source_cidr_block.setter
     def source_cidr_block(self, source_cidr_block):
-        """Sets the source_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the source_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的源网段
 
@@ -187,7 +187,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def destination_cidr_block(self):
-        """Gets the destination_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the destination_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的目的网段
 
@@ -198,7 +198,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @destination_cidr_block.setter
     def destination_cidr_block(self, destination_cidr_block):
-        """Sets the destination_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the destination_cidr_block of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像流量的目的网段
 
@@ -209,7 +209,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def source_port_range(self):
-        """Gets the source_port_range of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the source_port_range of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：流量源端口范围 取值范围：1~65535 格式：80-200
 
@@ -220,7 +220,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @source_port_range.setter
     def source_port_range(self, source_port_range):
-        """Sets the source_port_range of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the source_port_range of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：流量源端口范围 取值范围：1~65535 格式：80-200
 
@@ -231,7 +231,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def destination_port_range(self):
-        """Gets the destination_port_range of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the destination_port_range of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：流量目的端口范围 取值范围：1~65535 格式：80-200
 
@@ -242,7 +242,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @destination_port_range.setter
     def destination_port_range(self, destination_port_range):
-        """Sets the destination_port_range of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the destination_port_range of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：流量目的端口范围 取值范围：1~65535 格式：80-200
 
@@ -253,7 +253,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the priority of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像规则优先级 取值范围：1~65535，数字越小，优先级越高
 
@@ -264,7 +264,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the priority of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像规则优先级 取值范围：1~65535，数字越小，优先级越高
 
@@ -275,7 +275,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @property
     def action(self):
-        """Gets the action of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Gets the action of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像策略 取值范围：accept（采集）、reject（不采集）
 
@@ -286,7 +286,7 @@ class UpdateTrafficMirrorFilterRuleOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateTrafficMirrorFilterRuleOption.
+        r"""Sets the action of this UpdateTrafficMirrorFilterRuleOption.
 
         功能说明：镜像策略 取值范围：accept（采集）、reject（不采集）
 

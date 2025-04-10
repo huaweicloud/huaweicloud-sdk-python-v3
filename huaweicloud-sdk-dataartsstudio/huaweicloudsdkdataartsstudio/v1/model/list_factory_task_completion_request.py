@@ -27,7 +27,7 @@ class ListFactoryTaskCompletionRequest:
     }
 
     def __init__(self, workspace=None, type=None):
-        """ListFactoryTaskCompletionRequest
+        r"""ListFactoryTaskCompletionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFactoryTaskCompletionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListFactoryTaskCompletionRequest.
+        r"""Gets the workspace of this ListFactoryTaskCompletionRequest.
 
         工作空间ID
 
@@ -61,7 +61,7 @@ class ListFactoryTaskCompletionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListFactoryTaskCompletionRequest.
+        r"""Sets the workspace of this ListFactoryTaskCompletionRequest.
 
         工作空间ID
 
@@ -72,7 +72,7 @@ class ListFactoryTaskCompletionRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListFactoryTaskCompletionRequest.
+        r"""Gets the type of this ListFactoryTaskCompletionRequest.
 
         查询任务的类型，默认为all，查询所有任务。 类型有：Dummy、CDM Job、MRS Hive SQL、MRS Spark SQL、MRS Impala SQL、DLI SQL、DLI Spark、Python、DWS SQL、Shell、MRS ClickHouse、MRS HetuEngine
 
@@ -83,7 +83,7 @@ class ListFactoryTaskCompletionRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListFactoryTaskCompletionRequest.
+        r"""Sets the type of this ListFactoryTaskCompletionRequest.
 
         查询任务的类型，默认为all，查询所有任务。 类型有：Dummy、CDM Job、MRS Hive SQL、MRS Spark SQL、MRS Impala SQL、DLI SQL、DLI Spark、Python、DWS SQL、Shell、MRS ClickHouse、MRS HetuEngine
 

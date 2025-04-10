@@ -28,7 +28,7 @@ class ListAggregationAuthorizationsResponse(SdkResponse):
     }
 
     def __init__(self, aggregation_authorizations=None, page_info=None):
-        """ListAggregationAuthorizationsResponse
+        r"""ListAggregationAuthorizationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAggregationAuthorizationsResponse(SdkResponse):
 
     @property
     def aggregation_authorizations(self):
-        """Gets the aggregation_authorizations of this ListAggregationAuthorizationsResponse.
+        r"""Gets the aggregation_authorizations of this ListAggregationAuthorizationsResponse.
 
         授权过的资源聚合器帐号列表。
 
@@ -62,7 +62,7 @@ class ListAggregationAuthorizationsResponse(SdkResponse):
 
     @aggregation_authorizations.setter
     def aggregation_authorizations(self, aggregation_authorizations):
-        """Sets the aggregation_authorizations of this ListAggregationAuthorizationsResponse.
+        r"""Sets the aggregation_authorizations of this ListAggregationAuthorizationsResponse.
 
         授权过的资源聚合器帐号列表。
 
@@ -73,7 +73,7 @@ class ListAggregationAuthorizationsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAggregationAuthorizationsResponse.
+        r"""Gets the page_info of this ListAggregationAuthorizationsResponse.
 
         :return: The page_info of this ListAggregationAuthorizationsResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListAggregationAuthorizationsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAggregationAuthorizationsResponse.
+        r"""Sets the page_info of this ListAggregationAuthorizationsResponse.
 
         :param page_info: The page_info of this ListAggregationAuthorizationsResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

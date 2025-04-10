@@ -28,7 +28,7 @@ class UpdatePeerLinkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, peer_link=None):
-        """UpdatePeerLinkResponse
+        r"""UpdatePeerLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdatePeerLinkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdatePeerLinkResponse.
+        r"""Gets the request_id of this UpdatePeerLinkResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class UpdatePeerLinkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdatePeerLinkResponse.
+        r"""Sets the request_id of this UpdatePeerLinkResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class UpdatePeerLinkResponse(SdkResponse):
 
     @property
     def peer_link(self):
-        """Gets the peer_link of this UpdatePeerLinkResponse.
+        r"""Gets the peer_link of this UpdatePeerLinkResponse.
 
         :return: The peer_link of this UpdatePeerLinkResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.ExternalUpdatePeerLink`
@@ -82,7 +82,7 @@ class UpdatePeerLinkResponse(SdkResponse):
 
     @peer_link.setter
     def peer_link(self, peer_link):
-        """Sets the peer_link of this UpdatePeerLinkResponse.
+        r"""Sets the peer_link of this UpdatePeerLinkResponse.
 
         :param peer_link: The peer_link of this UpdatePeerLinkResponse.
         :type peer_link: :class:`huaweicloudsdkdc.v3.ExternalUpdatePeerLink`

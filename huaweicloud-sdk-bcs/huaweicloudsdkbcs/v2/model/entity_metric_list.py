@@ -27,7 +27,7 @@ class EntityMetricList:
     }
 
     def __init__(self, dimensions=None, values=None):
-        """EntityMetricList
+        r"""EntityMetricList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EntityMetricList:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this EntityMetricList.
+        r"""Gets the dimensions of this EntityMetricList.
 
         指标对象列表。
 
@@ -61,7 +61,7 @@ class EntityMetricList:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this EntityMetricList.
+        r"""Sets the dimensions of this EntityMetricList.
 
         指标对象列表。
 
@@ -72,7 +72,7 @@ class EntityMetricList:
 
     @property
     def values(self):
-        """Gets the values of this EntityMetricList.
+        r"""Gets the values of this EntityMetricList.
 
         监控数据列表项目。
 
@@ -83,7 +83,7 @@ class EntityMetricList:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this EntityMetricList.
+        r"""Sets the values of this EntityMetricList.
 
         监控数据列表项目。
 

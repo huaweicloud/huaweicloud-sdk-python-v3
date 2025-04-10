@@ -27,7 +27,7 @@ class UpgradeEdgeNodeRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None):
-        """UpgradeEdgeNodeRequest
+        r"""UpgradeEdgeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeEdgeNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpgradeEdgeNodeRequest.
+        r"""Gets the node_id of this UpgradeEdgeNodeRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class UpgradeEdgeNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpgradeEdgeNodeRequest.
+        r"""Sets the node_id of this UpgradeEdgeNodeRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class UpgradeEdgeNodeRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpgradeEdgeNodeRequest.
+        r"""Gets the ief_instance_id of this UpgradeEdgeNodeRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class UpgradeEdgeNodeRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpgradeEdgeNodeRequest.
+        r"""Sets the ief_instance_id of this UpgradeEdgeNodeRequest.
 
         铂金版实例ID，专业版实例为空值
 

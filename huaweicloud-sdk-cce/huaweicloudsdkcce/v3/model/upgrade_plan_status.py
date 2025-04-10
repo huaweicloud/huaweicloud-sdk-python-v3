@@ -25,7 +25,7 @@ class UpgradePlanStatus:
     }
 
     def __init__(self, phase=None):
-        """UpgradePlanStatus
+        r"""UpgradePlanStatus
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpgradePlanStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this UpgradePlanStatus.
+        r"""Gets the phase of this UpgradePlanStatus.
 
         自动升级计划状态 
 
@@ -53,7 +53,7 @@ class UpgradePlanStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this UpgradePlanStatus.
+        r"""Sets the phase of this UpgradePlanStatus.
 
         自动升级计划状态 
 

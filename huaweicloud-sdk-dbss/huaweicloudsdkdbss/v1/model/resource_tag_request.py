@@ -27,7 +27,7 @@ class ResourceTagRequest:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ResourceTagRequest
+        r"""ResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceTagRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceTagRequest.
+        r"""Gets the tags of this ResourceTagRequest.
 
         标签列表 租户权限时该字段必选，op_service权限时和sys_tags二选一
 
@@ -61,7 +61,7 @@ class ResourceTagRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceTagRequest.
+        r"""Sets the tags of this ResourceTagRequest.
 
         标签列表 租户权限时该字段必选，op_service权限时和sys_tags二选一
 
@@ -72,7 +72,7 @@ class ResourceTagRequest:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ResourceTagRequest.
+        r"""Gets the sys_tags of this ResourceTagRequest.
 
         系统标签列表 op_service权限可以访问，和tags二选一。 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id value是UUID或0,value为0表示默认企业项目
 
@@ -83,7 +83,7 @@ class ResourceTagRequest:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ResourceTagRequest.
+        r"""Sets the sys_tags of this ResourceTagRequest.
 
         系统标签列表 op_service权限可以访问，和tags二选一。 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id value是UUID或0,value为0表示默认企业项目
 

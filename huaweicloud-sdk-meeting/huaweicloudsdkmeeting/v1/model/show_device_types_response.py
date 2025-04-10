@@ -26,7 +26,7 @@ class ShowDeviceTypesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowDeviceTypesResponse
+        r"""ShowDeviceTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDeviceTypesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowDeviceTypesResponse.
+        r"""Gets the body of this ShowDeviceTypesResponse.
 
         查询到的终端类型列表
 
@@ -55,7 +55,7 @@ class ShowDeviceTypesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDeviceTypesResponse.
+        r"""Sets the body of this ShowDeviceTypesResponse.
 
         查询到的终端类型列表
 

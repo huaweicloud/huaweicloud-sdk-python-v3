@@ -49,7 +49,7 @@ class MpeMetaData:
     }
 
     def __init__(self, pack_type=None, duration=None, video_size=None, width=None, height=None, bit_rate=None, audio_bit_rate=None, frame_rate=None, codec_name=None, audio_codec_name=None, channels=None, sample=None, is_audio=None):
-        """MpeMetaData
+        r"""MpeMetaData
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class MpeMetaData:
 
     @property
     def pack_type(self):
-        """Gets the pack_type of this MpeMetaData.
+        r"""Gets the pack_type of this MpeMetaData.
 
         封装类型。
 
@@ -138,7 +138,7 @@ class MpeMetaData:
 
     @pack_type.setter
     def pack_type(self, pack_type):
-        """Sets the pack_type of this MpeMetaData.
+        r"""Sets the pack_type of this MpeMetaData.
 
         封装类型。
 
@@ -149,7 +149,7 @@ class MpeMetaData:
 
     @property
     def duration(self):
-        """Gets the duration of this MpeMetaData.
+        r"""Gets the duration of this MpeMetaData.
 
         视频时长。
 
@@ -160,7 +160,7 @@ class MpeMetaData:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this MpeMetaData.
+        r"""Sets the duration of this MpeMetaData.
 
         视频时长。
 
@@ -171,7 +171,7 @@ class MpeMetaData:
 
     @property
     def video_size(self):
-        """Gets the video_size of this MpeMetaData.
+        r"""Gets the video_size of this MpeMetaData.
 
         视频大小。
 
@@ -182,7 +182,7 @@ class MpeMetaData:
 
     @video_size.setter
     def video_size(self, video_size):
-        """Sets the video_size of this MpeMetaData.
+        r"""Sets the video_size of this MpeMetaData.
 
         视频大小。
 
@@ -193,7 +193,7 @@ class MpeMetaData:
 
     @property
     def width(self):
-        """Gets the width of this MpeMetaData.
+        r"""Gets the width of this MpeMetaData.
 
         视频宽度。
 
@@ -204,7 +204,7 @@ class MpeMetaData:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this MpeMetaData.
+        r"""Sets the width of this MpeMetaData.
 
         视频宽度。
 
@@ -215,7 +215,7 @@ class MpeMetaData:
 
     @property
     def height(self):
-        """Gets the height of this MpeMetaData.
+        r"""Gets the height of this MpeMetaData.
 
         视频高度。
 
@@ -226,7 +226,7 @@ class MpeMetaData:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MpeMetaData.
+        r"""Sets the height of this MpeMetaData.
 
         视频高度。
 
@@ -237,7 +237,7 @@ class MpeMetaData:
 
     @property
     def bit_rate(self):
-        """Gets the bit_rate of this MpeMetaData.
+        r"""Gets the bit_rate of this MpeMetaData.
 
         码率。
 
@@ -248,7 +248,7 @@ class MpeMetaData:
 
     @bit_rate.setter
     def bit_rate(self, bit_rate):
-        """Sets the bit_rate of this MpeMetaData.
+        r"""Sets the bit_rate of this MpeMetaData.
 
         码率。
 
@@ -259,7 +259,7 @@ class MpeMetaData:
 
     @property
     def audio_bit_rate(self):
-        """Gets the audio_bit_rate of this MpeMetaData.
+        r"""Gets the audio_bit_rate of this MpeMetaData.
 
         音频码率。
 
@@ -270,7 +270,7 @@ class MpeMetaData:
 
     @audio_bit_rate.setter
     def audio_bit_rate(self, audio_bit_rate):
-        """Sets the audio_bit_rate of this MpeMetaData.
+        r"""Sets the audio_bit_rate of this MpeMetaData.
 
         音频码率。
 
@@ -281,7 +281,7 @@ class MpeMetaData:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this MpeMetaData.
+        r"""Gets the frame_rate of this MpeMetaData.
 
         帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
@@ -292,7 +292,7 @@ class MpeMetaData:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this MpeMetaData.
+        r"""Sets the frame_rate of this MpeMetaData.
 
         帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
@@ -303,7 +303,7 @@ class MpeMetaData:
 
     @property
     def codec_name(self):
-        """Gets the codec_name of this MpeMetaData.
+        r"""Gets the codec_name of this MpeMetaData.
 
         编码类型名称。
 
@@ -314,7 +314,7 @@ class MpeMetaData:
 
     @codec_name.setter
     def codec_name(self, codec_name):
-        """Sets the codec_name of this MpeMetaData.
+        r"""Sets the codec_name of this MpeMetaData.
 
         编码类型名称。
 
@@ -325,7 +325,7 @@ class MpeMetaData:
 
     @property
     def audio_codec_name(self):
-        """Gets the audio_codec_name of this MpeMetaData.
+        r"""Gets the audio_codec_name of this MpeMetaData.
 
         音频编码类型。
 
@@ -336,7 +336,7 @@ class MpeMetaData:
 
     @audio_codec_name.setter
     def audio_codec_name(self, audio_codec_name):
-        """Sets the audio_codec_name of this MpeMetaData.
+        r"""Sets the audio_codec_name of this MpeMetaData.
 
         音频编码类型。
 
@@ -347,7 +347,7 @@ class MpeMetaData:
 
     @property
     def channels(self):
-        """Gets the channels of this MpeMetaData.
+        r"""Gets the channels of this MpeMetaData.
 
         声道数。
 
@@ -358,7 +358,7 @@ class MpeMetaData:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this MpeMetaData.
+        r"""Sets the channels of this MpeMetaData.
 
         声道数。
 
@@ -369,7 +369,7 @@ class MpeMetaData:
 
     @property
     def sample(self):
-        """Gets the sample of this MpeMetaData.
+        r"""Gets the sample of this MpeMetaData.
 
         采样率。
 
@@ -380,7 +380,7 @@ class MpeMetaData:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this MpeMetaData.
+        r"""Sets the sample of this MpeMetaData.
 
         采样率。
 
@@ -391,7 +391,7 @@ class MpeMetaData:
 
     @property
     def is_audio(self):
-        """Gets the is_audio of this MpeMetaData.
+        r"""Gets the is_audio of this MpeMetaData.
 
         是否音频。
 
@@ -402,7 +402,7 @@ class MpeMetaData:
 
     @is_audio.setter
     def is_audio(self, is_audio):
-        """Sets the is_audio of this MpeMetaData.
+        r"""Sets the is_audio of this MpeMetaData.
 
         是否音频。
 

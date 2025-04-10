@@ -29,7 +29,7 @@ class CreateInstanceConnectionRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CreateInstanceConnectionRequest
+        r"""CreateInstanceConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateInstanceConnectionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateInstanceConnectionRequest.
+        r"""Gets the instance_id of this CreateInstanceConnectionRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class CreateInstanceConnectionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateInstanceConnectionRequest.
+        r"""Sets the instance_id of this CreateInstanceConnectionRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class CreateInstanceConnectionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateInstanceConnectionRequest.
+        r"""Gets the x_language of this CreateInstanceConnectionRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class CreateInstanceConnectionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateInstanceConnectionRequest.
+        r"""Sets the x_language of this CreateInstanceConnectionRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class CreateInstanceConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceConnectionRequest.
+        r"""Gets the body of this CreateInstanceConnectionRequest.
 
         :return: The body of this CreateInstanceConnectionRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateInstanceConnectionReq`
@@ -109,7 +109,7 @@ class CreateInstanceConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceConnectionRequest.
+        r"""Sets the body of this CreateInstanceConnectionRequest.
 
         :param body: The body of this CreateInstanceConnectionRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateInstanceConnectionReq`

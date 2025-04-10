@@ -36,7 +36,7 @@ class ListAccountAssignmentsRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, limit=None, marker=None, account_id=None, permission_set_id=None):
-        """ListAccountAssignmentsRequest
+        r"""ListAccountAssignmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListAccountAssignmentsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListAccountAssignmentsRequest.
+        r"""Gets the x_security_token of this ListAccountAssignmentsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -88,7 +88,7 @@ class ListAccountAssignmentsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListAccountAssignmentsRequest.
+        r"""Sets the x_security_token of this ListAccountAssignmentsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -99,7 +99,7 @@ class ListAccountAssignmentsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAccountAssignmentsRequest.
+        r"""Gets the instance_id of this ListAccountAssignmentsRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -110,7 +110,7 @@ class ListAccountAssignmentsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAccountAssignmentsRequest.
+        r"""Sets the instance_id of this ListAccountAssignmentsRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -121,7 +121,7 @@ class ListAccountAssignmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountAssignmentsRequest.
+        r"""Gets the limit of this ListAccountAssignmentsRequest.
 
         每个请求返回的最大结果数
 
@@ -132,7 +132,7 @@ class ListAccountAssignmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountAssignmentsRequest.
+        r"""Sets the limit of this ListAccountAssignmentsRequest.
 
         每个请求返回的最大结果数
 
@@ -143,7 +143,7 @@ class ListAccountAssignmentsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccountAssignmentsRequest.
+        r"""Gets the marker of this ListAccountAssignmentsRequest.
 
         分页标记
 
@@ -154,7 +154,7 @@ class ListAccountAssignmentsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccountAssignmentsRequest.
+        r"""Sets the marker of this ListAccountAssignmentsRequest.
 
         分页标记
 
@@ -165,7 +165,7 @@ class ListAccountAssignmentsRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ListAccountAssignmentsRequest.
+        r"""Gets the account_id of this ListAccountAssignmentsRequest.
 
         账号的唯一身份标识
 
@@ -176,7 +176,7 @@ class ListAccountAssignmentsRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ListAccountAssignmentsRequest.
+        r"""Sets the account_id of this ListAccountAssignmentsRequest.
 
         账号的唯一身份标识
 
@@ -187,7 +187,7 @@ class ListAccountAssignmentsRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this ListAccountAssignmentsRequest.
+        r"""Gets the permission_set_id of this ListAccountAssignmentsRequest.
 
         指定权限集的唯一身份标识.
 
@@ -198,7 +198,7 @@ class ListAccountAssignmentsRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this ListAccountAssignmentsRequest.
+        r"""Sets the permission_set_id of this ListAccountAssignmentsRequest.
 
         指定权限集的唯一身份标识.
 

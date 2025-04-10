@@ -34,7 +34,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """DeleteAutopilotClusterResponse
+        r"""DeleteAutopilotClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this DeleteAutopilotClusterResponse.
+        r"""Gets the kind of this DeleteAutopilotClusterResponse.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -83,7 +83,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this DeleteAutopilotClusterResponse.
+        r"""Sets the kind of this DeleteAutopilotClusterResponse.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -94,7 +94,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this DeleteAutopilotClusterResponse.
+        r"""Gets the api_version of this DeleteAutopilotClusterResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -105,7 +105,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this DeleteAutopilotClusterResponse.
+        r"""Sets the api_version of this DeleteAutopilotClusterResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -116,7 +116,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this DeleteAutopilotClusterResponse.
+        r"""Gets the metadata of this DeleteAutopilotClusterResponse.
 
         :return: The metadata of this DeleteAutopilotClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadata`
@@ -125,7 +125,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DeleteAutopilotClusterResponse.
+        r"""Sets the metadata of this DeleteAutopilotClusterResponse.
 
         :param metadata: The metadata of this DeleteAutopilotClusterResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadata`
@@ -134,7 +134,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this DeleteAutopilotClusterResponse.
+        r"""Gets the spec of this DeleteAutopilotClusterResponse.
 
         :return: The spec of this DeleteAutopilotClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterSpec`
@@ -143,7 +143,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this DeleteAutopilotClusterResponse.
+        r"""Sets the spec of this DeleteAutopilotClusterResponse.
 
         :param spec: The spec of this DeleteAutopilotClusterResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.AutopilotClusterSpec`
@@ -152,7 +152,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteAutopilotClusterResponse.
+        r"""Gets the status of this DeleteAutopilotClusterResponse.
 
         :return: The status of this DeleteAutopilotClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterStatus`
@@ -161,7 +161,7 @@ class DeleteAutopilotClusterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteAutopilotClusterResponse.
+        r"""Sets the status of this DeleteAutopilotClusterResponse.
 
         :param status: The status of this DeleteAutopilotClusterResponse.
         :type status: :class:`huaweicloudsdkcce.v3.AutopilotClusterStatus`

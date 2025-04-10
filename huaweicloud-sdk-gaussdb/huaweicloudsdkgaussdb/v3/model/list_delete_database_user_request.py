@@ -27,7 +27,7 @@ class ListDeleteDatabaseUserRequest:
     }
 
     def __init__(self, name=None, host=None):
-        """ListDeleteDatabaseUserRequest
+        r"""ListDeleteDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListDeleteDatabaseUserRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDeleteDatabaseUserRequest.
+        r"""Gets the name of this ListDeleteDatabaseUserRequest.
 
         数据库用户名。
 
@@ -59,7 +59,7 @@ class ListDeleteDatabaseUserRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDeleteDatabaseUserRequest.
+        r"""Sets the name of this ListDeleteDatabaseUserRequest.
 
         数据库用户名。
 
@@ -70,7 +70,7 @@ class ListDeleteDatabaseUserRequest:
 
     @property
     def host(self):
-        """Gets the host of this ListDeleteDatabaseUserRequest.
+        r"""Gets the host of this ListDeleteDatabaseUserRequest.
 
         主机地址
 
@@ -81,7 +81,7 @@ class ListDeleteDatabaseUserRequest:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ListDeleteDatabaseUserRequest.
+        r"""Sets the host of this ListDeleteDatabaseUserRequest.
 
         主机地址
 

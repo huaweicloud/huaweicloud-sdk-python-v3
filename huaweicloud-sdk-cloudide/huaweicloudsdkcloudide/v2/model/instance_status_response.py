@@ -27,7 +27,7 @@ class InstanceStatusResponse:
     }
 
     def __init__(self, server_url=None, status=None):
-        """InstanceStatusResponse
+        r"""InstanceStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceStatusResponse:
 
     @property
     def server_url(self):
-        """Gets the server_url of this InstanceStatusResponse.
+        r"""Gets the server_url of this InstanceStatusResponse.
 
         服务链接
 
@@ -61,7 +61,7 @@ class InstanceStatusResponse:
 
     @server_url.setter
     def server_url(self, server_url):
-        """Sets the server_url of this InstanceStatusResponse.
+        r"""Sets the server_url of this InstanceStatusResponse.
 
         服务链接
 
@@ -72,7 +72,7 @@ class InstanceStatusResponse:
 
     @property
     def status(self):
-        """Gets the status of this InstanceStatusResponse.
+        r"""Gets the status of this InstanceStatusResponse.
 
         实例状态。 - DELETED 已删除 - DELETE_FAILED 删除失败 - DELETING 删除中 - READY 热实例就绪状态 - RUNNING 正在运行 - STARTING 正在启动 - STOPPED 已停止 - STOPPING 停止中 - UPDATE 更新Schdule信息 - WAITING 热实例创建初始态
 
@@ -83,7 +83,7 @@ class InstanceStatusResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceStatusResponse.
+        r"""Sets the status of this InstanceStatusResponse.
 
         实例状态。 - DELETED 已删除 - DELETE_FAILED 删除失败 - DELETING 删除中 - READY 热实例就绪状态 - RUNNING 正在运行 - STARTING 正在启动 - STOPPED 已停止 - STOPPING 停止中 - UPDATE 更新Schdule信息 - WAITING 热实例创建初始态
 

@@ -29,7 +29,7 @@ class ResourceDemand:
     }
 
     def __init__(self, spec_code=None, min=None, max=None):
-        """ResourceDemand
+        r"""ResourceDemand
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ResourceDemand:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ResourceDemand.
+        r"""Gets the spec_code of this ResourceDemand.
 
         资源规格，从规格列表查询获取。
 
@@ -65,7 +65,7 @@ class ResourceDemand:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ResourceDemand.
+        r"""Sets the spec_code of this ResourceDemand.
 
         资源规格，从规格列表查询获取。
 
@@ -76,7 +76,7 @@ class ResourceDemand:
 
     @property
     def min(self):
-        """Gets the min of this ResourceDemand.
+        r"""Gets the min of this ResourceDemand.
 
         最小数
 
@@ -87,7 +87,7 @@ class ResourceDemand:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ResourceDemand.
+        r"""Sets the min of this ResourceDemand.
 
         最小数
 
@@ -98,7 +98,7 @@ class ResourceDemand:
 
     @property
     def max(self):
-        """Gets the max of this ResourceDemand.
+        r"""Gets the max of this ResourceDemand.
 
         最大数
 
@@ -109,7 +109,7 @@ class ResourceDemand:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ResourceDemand.
+        r"""Sets the max of this ResourceDemand.
 
         最大数
 

@@ -29,7 +29,7 @@ class UpdateDeviceRequest:
     }
 
     def __init__(self, edge_node_id=None, device_id=None, body=None):
-        """UpdateDeviceRequest
+        r"""UpdateDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDeviceRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateDeviceRequest.
+        r"""Gets the edge_node_id of this UpdateDeviceRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class UpdateDeviceRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateDeviceRequest.
+        r"""Sets the edge_node_id of this UpdateDeviceRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class UpdateDeviceRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateDeviceRequest.
+        r"""Gets the device_id of this UpdateDeviceRequest.
 
         设备ID
 
@@ -88,7 +88,7 @@ class UpdateDeviceRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateDeviceRequest.
+        r"""Sets the device_id of this UpdateDeviceRequest.
 
         设备ID
 
@@ -99,7 +99,7 @@ class UpdateDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceRequest.
+        r"""Gets the body of this UpdateDeviceRequest.
 
         :return: The body of this UpdateDeviceRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDesireds`
@@ -108,7 +108,7 @@ class UpdateDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceRequest.
+        r"""Sets the body of this UpdateDeviceRequest.
 
         :param body: The body of this UpdateDeviceRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateDesireds`

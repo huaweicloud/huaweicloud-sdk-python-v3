@@ -27,7 +27,7 @@ class PostgreSQLRestoreTable:
     }
 
     def __init__(self, old_name=None, new_name=None):
-        """PostgreSQLRestoreTable
+        r"""PostgreSQLRestoreTable
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PostgreSQLRestoreTable:
 
     @property
     def old_name(self):
-        """Gets the old_name of this PostgreSQLRestoreTable.
+        r"""Gets the old_name of this PostgreSQLRestoreTable.
 
         恢复前表名
 
@@ -61,7 +61,7 @@ class PostgreSQLRestoreTable:
 
     @old_name.setter
     def old_name(self, old_name):
-        """Sets the old_name of this PostgreSQLRestoreTable.
+        r"""Sets the old_name of this PostgreSQLRestoreTable.
 
         恢复前表名
 
@@ -72,7 +72,7 @@ class PostgreSQLRestoreTable:
 
     @property
     def new_name(self):
-        """Gets the new_name of this PostgreSQLRestoreTable.
+        r"""Gets the new_name of this PostgreSQLRestoreTable.
 
         恢复后表名
 
@@ -83,7 +83,7 @@ class PostgreSQLRestoreTable:
 
     @new_name.setter
     def new_name(self, new_name):
-        """Sets the new_name of this PostgreSQLRestoreTable.
+        r"""Sets the new_name of this PostgreSQLRestoreTable.
 
         恢复后表名
 

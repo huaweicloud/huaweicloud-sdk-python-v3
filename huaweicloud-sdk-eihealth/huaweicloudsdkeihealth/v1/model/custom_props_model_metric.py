@@ -27,7 +27,7 @@ class CustomPropsModelMetric:
     }
 
     def __init__(self, name=None, value=None):
-        """CustomPropsModelMetric
+        r"""CustomPropsModelMetric
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CustomPropsModelMetric:
 
     @property
     def name(self):
-        """Gets the name of this CustomPropsModelMetric.
+        r"""Gets the name of this CustomPropsModelMetric.
 
         评估指标的名称
 
@@ -61,7 +61,7 @@ class CustomPropsModelMetric:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomPropsModelMetric.
+        r"""Sets the name of this CustomPropsModelMetric.
 
         评估指标的名称
 
@@ -72,7 +72,7 @@ class CustomPropsModelMetric:
 
     @property
     def value(self):
-        """Gets the value of this CustomPropsModelMetric.
+        r"""Gets the value of this CustomPropsModelMetric.
 
         评估指标的评估结果
 
@@ -83,7 +83,7 @@ class CustomPropsModelMetric:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomPropsModelMetric.
+        r"""Sets the value of this CustomPropsModelMetric.
 
         评估指标的评估结果
 

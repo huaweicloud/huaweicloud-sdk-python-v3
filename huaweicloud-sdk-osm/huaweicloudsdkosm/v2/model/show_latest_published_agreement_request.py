@@ -31,7 +31,7 @@ class ShowLatestPublishedAgreementRequest:
     }
 
     def __init__(self, agreement_type=None, x_site=None, x_language=None, x_time_zone=None):
-        """ShowLatestPublishedAgreementRequest
+        r"""ShowLatestPublishedAgreementRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @property
     def agreement_type(self):
-        """Gets the agreement_type of this ShowLatestPublishedAgreementRequest.
+        r"""Gets the agreement_type of this ShowLatestPublishedAgreementRequest.
 
         协议类型，0 新建工单-普通用户，1 新建工单-ISV用户，2 授权
 
@@ -75,7 +75,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @agreement_type.setter
     def agreement_type(self, agreement_type):
-        """Sets the agreement_type of this ShowLatestPublishedAgreementRequest.
+        r"""Sets the agreement_type of this ShowLatestPublishedAgreementRequest.
 
         协议类型，0 新建工单-普通用户，1 新建工单-ISV用户，2 授权
 
@@ -86,7 +86,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowLatestPublishedAgreementRequest.
+        r"""Gets the x_site of this ShowLatestPublishedAgreementRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -97,7 +97,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowLatestPublishedAgreementRequest.
+        r"""Sets the x_site of this ShowLatestPublishedAgreementRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -108,7 +108,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowLatestPublishedAgreementRequest.
+        r"""Gets the x_language of this ShowLatestPublishedAgreementRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -119,7 +119,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowLatestPublishedAgreementRequest.
+        r"""Sets the x_language of this ShowLatestPublishedAgreementRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -130,7 +130,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ShowLatestPublishedAgreementRequest.
+        r"""Gets the x_time_zone of this ShowLatestPublishedAgreementRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -141,7 +141,7 @@ class ShowLatestPublishedAgreementRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ShowLatestPublishedAgreementRequest.
+        r"""Sets the x_time_zone of this ShowLatestPublishedAgreementRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

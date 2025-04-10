@@ -27,7 +27,7 @@ class PolicyTemplate:
     }
 
     def __init__(self, ike_policy=None, ipsec_policy=None):
-        """PolicyTemplate
+        r"""PolicyTemplate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyTemplate:
 
     @property
     def ike_policy(self):
-        """Gets the ike_policy of this PolicyTemplate.
+        r"""Gets the ike_policy of this PolicyTemplate.
 
         :return: The ike_policy of this PolicyTemplate.
         :rtype: :class:`huaweicloudsdkvpn.v5.VgwIkePolicy`
@@ -59,7 +59,7 @@ class PolicyTemplate:
 
     @ike_policy.setter
     def ike_policy(self, ike_policy):
-        """Sets the ike_policy of this PolicyTemplate.
+        r"""Sets the ike_policy of this PolicyTemplate.
 
         :param ike_policy: The ike_policy of this PolicyTemplate.
         :type ike_policy: :class:`huaweicloudsdkvpn.v5.VgwIkePolicy`
@@ -68,7 +68,7 @@ class PolicyTemplate:
 
     @property
     def ipsec_policy(self):
-        """Gets the ipsec_policy of this PolicyTemplate.
+        r"""Gets the ipsec_policy of this PolicyTemplate.
 
         :return: The ipsec_policy of this PolicyTemplate.
         :rtype: :class:`huaweicloudsdkvpn.v5.VgwIpsecPolicy`
@@ -77,7 +77,7 @@ class PolicyTemplate:
 
     @ipsec_policy.setter
     def ipsec_policy(self, ipsec_policy):
-        """Sets the ipsec_policy of this PolicyTemplate.
+        r"""Sets the ipsec_policy of this PolicyTemplate.
 
         :param ipsec_policy: The ipsec_policy of this PolicyTemplate.
         :type ipsec_policy: :class:`huaweicloudsdkvpn.v5.VgwIpsecPolicy`

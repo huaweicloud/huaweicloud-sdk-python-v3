@@ -29,7 +29,7 @@ class ImUnreadV2:
     }
 
     def __init__(self, status=None, incident_id=None, unread_num=None):
-        """ImUnreadV2
+        r"""ImUnreadV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ImUnreadV2:
 
     @property
     def status(self):
-        """Gets the status of this ImUnreadV2.
+        r"""Gets the status of this ImUnreadV2.
 
         状态
 
@@ -68,7 +68,7 @@ class ImUnreadV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImUnreadV2.
+        r"""Sets the status of this ImUnreadV2.
 
         状态
 
@@ -79,7 +79,7 @@ class ImUnreadV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ImUnreadV2.
+        r"""Gets the incident_id of this ImUnreadV2.
 
         工单id
 
@@ -90,7 +90,7 @@ class ImUnreadV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ImUnreadV2.
+        r"""Sets the incident_id of this ImUnreadV2.
 
         工单id
 
@@ -101,7 +101,7 @@ class ImUnreadV2:
 
     @property
     def unread_num(self):
-        """Gets the unread_num of this ImUnreadV2.
+        r"""Gets the unread_num of this ImUnreadV2.
 
         未读数量
 
@@ -112,7 +112,7 @@ class ImUnreadV2:
 
     @unread_num.setter
     def unread_num(self, unread_num):
-        """Sets the unread_num of this ImUnreadV2.
+        r"""Sets the unread_num of this ImUnreadV2.
 
         未读数量
 

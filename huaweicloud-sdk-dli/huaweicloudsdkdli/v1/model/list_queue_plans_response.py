@@ -30,7 +30,7 @@ class ListQueuePlansResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, plans=None):
-        """ListQueuePlansResponse
+        r"""ListQueuePlansResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListQueuePlansResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListQueuePlansResponse.
+        r"""Gets the is_success of this ListQueuePlansResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ListQueuePlansResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListQueuePlansResponse.
+        r"""Sets the is_success of this ListQueuePlansResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ListQueuePlansResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListQueuePlansResponse.
+        r"""Gets the message of this ListQueuePlansResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class ListQueuePlansResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListQueuePlansResponse.
+        r"""Sets the message of this ListQueuePlansResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class ListQueuePlansResponse(SdkResponse):
 
     @property
     def plans(self):
-        """Gets the plans of this ListQueuePlansResponse.
+        r"""Gets the plans of this ListQueuePlansResponse.
 
         定时扩缩容信息
 
@@ -113,7 +113,7 @@ class ListQueuePlansResponse(SdkResponse):
 
     @plans.setter
     def plans(self, plans):
-        """Sets the plans of this ListQueuePlansResponse.
+        r"""Sets the plans of this ListQueuePlansResponse.
 
         定时扩缩容信息
 

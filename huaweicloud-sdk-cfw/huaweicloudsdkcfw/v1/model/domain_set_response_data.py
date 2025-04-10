@@ -27,7 +27,7 @@ class DomainSetResponseData:
     }
 
     def __init__(self, id=None, name=None):
-        """DomainSetResponseData
+        r"""DomainSetResponseData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DomainSetResponseData:
 
     @property
     def id(self):
-        """Gets the id of this DomainSetResponseData.
+        r"""Gets the id of this DomainSetResponseData.
 
         域名组id
 
@@ -61,7 +61,7 @@ class DomainSetResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DomainSetResponseData.
+        r"""Sets the id of this DomainSetResponseData.
 
         域名组id
 
@@ -72,7 +72,7 @@ class DomainSetResponseData:
 
     @property
     def name(self):
-        """Gets the name of this DomainSetResponseData.
+        r"""Gets the name of this DomainSetResponseData.
 
         域名组名称
 
@@ -83,7 +83,7 @@ class DomainSetResponseData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DomainSetResponseData.
+        r"""Sets the name of this DomainSetResponseData.
 
         域名组名称
 

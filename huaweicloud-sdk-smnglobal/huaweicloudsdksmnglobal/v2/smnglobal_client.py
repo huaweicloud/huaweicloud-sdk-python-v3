@@ -34,7 +34,7 @@ class SmnglobalClient(Client):
         return client_builder
 
     def create_subscription_user(self, request):
-        """添加订阅用户
+        r"""添加订阅用户
 
         添加订阅用户。如果订阅用户的状态为未确认，则会向订阅用户发送一条确认订阅消息。订阅用户点击订阅链接确认订阅后，则订阅用户的状态变更为已确认，同时会向订阅用户发送一条取消订阅消息，便于订阅用户随时可以取消订阅。订阅用户点击取消订阅链接后，则订阅用户的状态变更为已取消，同时会向订阅用户发送一条重新订阅消息，便于订阅用户可以重新订阅。
         
@@ -99,7 +99,7 @@ class SmnglobalClient(Client):
         return http_info
 
     def delete_subscription_user(self, request):
-        """删除订阅用户
+        r"""删除订阅用户
 
         删除订阅用户。
         
@@ -164,7 +164,7 @@ class SmnglobalClient(Client):
         return http_info
 
     def list_subscription_user(self, request):
-        """查询订阅用户列表
+        r"""查询订阅用户列表
 
         查询订阅用户列表。
         
@@ -239,7 +239,7 @@ class SmnglobalClient(Client):
         return http_info
 
     def update_subscription_user(self, request):
-        """更新订阅用户
+        r"""更新订阅用户
 
         更新订阅用户。
         

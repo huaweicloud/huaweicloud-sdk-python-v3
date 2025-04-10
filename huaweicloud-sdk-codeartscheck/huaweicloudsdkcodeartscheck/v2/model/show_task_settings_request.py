@@ -31,7 +31,7 @@ class ShowTaskSettingsRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, offset=None, limit=None):
-        """ShowTaskSettingsRequest
+        r"""ShowTaskSettingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowTaskSettingsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTaskSettingsRequest.
+        r"""Gets the project_id of this ShowTaskSettingsRequest.
 
         项目ID
 
@@ -73,7 +73,7 @@ class ShowTaskSettingsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTaskSettingsRequest.
+        r"""Sets the project_id of this ShowTaskSettingsRequest.
 
         项目ID
 
@@ -84,7 +84,7 @@ class ShowTaskSettingsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskSettingsRequest.
+        r"""Gets the task_id of this ShowTaskSettingsRequest.
 
         任务ID
 
@@ -95,7 +95,7 @@ class ShowTaskSettingsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskSettingsRequest.
+        r"""Sets the task_id of this ShowTaskSettingsRequest.
 
         任务ID
 
@@ -106,7 +106,7 @@ class ShowTaskSettingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTaskSettingsRequest.
+        r"""Gets the offset of this ShowTaskSettingsRequest.
 
         分页索引，偏移量，非必填
 
@@ -117,7 +117,7 @@ class ShowTaskSettingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTaskSettingsRequest.
+        r"""Sets the offset of this ShowTaskSettingsRequest.
 
         分页索引，偏移量，非必填
 
@@ -128,7 +128,7 @@ class ShowTaskSettingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTaskSettingsRequest.
+        r"""Gets the limit of this ShowTaskSettingsRequest.
 
         每页显示的数量，非必填
 
@@ -139,7 +139,7 @@ class ShowTaskSettingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTaskSettingsRequest.
+        r"""Sets the limit of this ShowTaskSettingsRequest.
 
         每页显示的数量，非必填
 

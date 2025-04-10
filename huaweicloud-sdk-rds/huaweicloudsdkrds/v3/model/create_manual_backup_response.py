@@ -26,7 +26,7 @@ class CreateManualBackupResponse(SdkResponse):
     }
 
     def __init__(self, backup=None):
-        """CreateManualBackupResponse
+        r"""CreateManualBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateManualBackupResponse(SdkResponse):
 
     @property
     def backup(self):
-        """Gets the backup of this CreateManualBackupResponse.
+        r"""Gets the backup of this CreateManualBackupResponse.
 
         :return: The backup of this CreateManualBackupResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupInfo`
@@ -53,7 +53,7 @@ class CreateManualBackupResponse(SdkResponse):
 
     @backup.setter
     def backup(self, backup):
-        """Sets the backup of this CreateManualBackupResponse.
+        r"""Sets the backup of this CreateManualBackupResponse.
 
         :param backup: The backup of this CreateManualBackupResponse.
         :type backup: :class:`huaweicloudsdkrds.v3.BackupInfo`

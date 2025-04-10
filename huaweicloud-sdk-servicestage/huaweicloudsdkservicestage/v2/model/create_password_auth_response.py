@@ -26,7 +26,7 @@ class CreatePasswordAuthResponse(SdkResponse):
     }
 
     def __init__(self, authorization=None):
-        """CreatePasswordAuthResponse
+        r"""CreatePasswordAuthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePasswordAuthResponse(SdkResponse):
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreatePasswordAuthResponse.
+        r"""Gets the authorization of this CreatePasswordAuthResponse.
 
         :return: The authorization of this CreatePasswordAuthResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`
@@ -53,7 +53,7 @@ class CreatePasswordAuthResponse(SdkResponse):
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreatePasswordAuthResponse.
+        r"""Sets the authorization of this CreatePasswordAuthResponse.
 
         :param authorization: The authorization of this CreatePasswordAuthResponse.
         :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`

@@ -30,7 +30,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, task_id=None):
-        """CreateConnectivityTaskResponse
+        r"""CreateConnectivityTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateConnectivityTaskResponse.
+        r"""Gets the is_success of this CreateConnectivityTaskResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -69,7 +69,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateConnectivityTaskResponse.
+        r"""Sets the is_success of this CreateConnectivityTaskResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -80,7 +80,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateConnectivityTaskResponse.
+        r"""Gets the message of this CreateConnectivityTaskResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateConnectivityTaskResponse.
+        r"""Sets the message of this CreateConnectivityTaskResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateConnectivityTaskResponse.
+        r"""Gets the task_id of this CreateConnectivityTaskResponse.
 
         请求id
 
@@ -113,7 +113,7 @@ class CreateConnectivityTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateConnectivityTaskResponse.
+        r"""Sets the task_id of this CreateConnectivityTaskResponse.
 
         请求id
 

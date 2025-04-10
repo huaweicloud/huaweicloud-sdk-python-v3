@@ -29,7 +29,7 @@ class ShowAlertRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, alert_id=None):
-        """ShowAlertRequest
+        r"""ShowAlertRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowAlertRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAlertRequest.
+        r"""Gets the project_id of this ShowAlertRequest.
 
         ID of project
 
@@ -65,7 +65,7 @@ class ShowAlertRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAlertRequest.
+        r"""Sets the project_id of this ShowAlertRequest.
 
         ID of project
 
@@ -76,7 +76,7 @@ class ShowAlertRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowAlertRequest.
+        r"""Gets the workspace_id of this ShowAlertRequest.
 
         ID of workspace
 
@@ -87,7 +87,7 @@ class ShowAlertRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowAlertRequest.
+        r"""Sets the workspace_id of this ShowAlertRequest.
 
         ID of workspace
 
@@ -98,7 +98,7 @@ class ShowAlertRequest:
 
     @property
     def alert_id(self):
-        """Gets the alert_id of this ShowAlertRequest.
+        r"""Gets the alert_id of this ShowAlertRequest.
 
         告警ID
 
@@ -109,7 +109,7 @@ class ShowAlertRequest:
 
     @alert_id.setter
     def alert_id(self, alert_id):
-        """Sets the alert_id of this ShowAlertRequest.
+        r"""Sets the alert_id of this ShowAlertRequest.
 
         告警ID
 

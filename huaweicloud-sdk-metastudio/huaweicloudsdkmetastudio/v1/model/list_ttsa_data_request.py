@@ -27,7 +27,7 @@ class ListTtsaDataRequest:
     }
 
     def __init__(self, job_id=None, offset=None):
-        """ListTtsaDataRequest
+        r"""ListTtsaDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTtsaDataRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListTtsaDataRequest.
+        r"""Gets the job_id of this ListTtsaDataRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class ListTtsaDataRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListTtsaDataRequest.
+        r"""Sets the job_id of this ListTtsaDataRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class ListTtsaDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTtsaDataRequest.
+        r"""Gets the offset of this ListTtsaDataRequest.
 
         偏移量，表示生成内容时间偏移，目前每次返回2秒内容。
 
@@ -82,7 +82,7 @@ class ListTtsaDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTtsaDataRequest.
+        r"""Sets the offset of this ListTtsaDataRequest.
 
         偏移量，表示生成内容时间偏移，目前每次返回2秒内容。
 

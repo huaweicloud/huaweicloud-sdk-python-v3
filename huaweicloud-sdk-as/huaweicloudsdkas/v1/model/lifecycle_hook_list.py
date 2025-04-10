@@ -39,7 +39,7 @@ class LifecycleHookList:
     }
 
     def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):
-        """LifecycleHookList
+        r"""LifecycleHookList
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class LifecycleHookList:
 
     @property
     def lifecycle_hook_name(self):
-        """Gets the lifecycle_hook_name of this LifecycleHookList.
+        r"""Gets the lifecycle_hook_name of this LifecycleHookList.
 
         生命周期挂钩名称。
 
@@ -103,7 +103,7 @@ class LifecycleHookList:
 
     @lifecycle_hook_name.setter
     def lifecycle_hook_name(self, lifecycle_hook_name):
-        """Sets the lifecycle_hook_name of this LifecycleHookList.
+        r"""Sets the lifecycle_hook_name of this LifecycleHookList.
 
         生命周期挂钩名称。
 
@@ -114,7 +114,7 @@ class LifecycleHookList:
 
     @property
     def lifecycle_hook_type(self):
-        """Gets the lifecycle_hook_type of this LifecycleHookList.
+        r"""Gets the lifecycle_hook_type of this LifecycleHookList.
 
         生命周期挂钩类型。INSTANCE_TERMINATING；INSTANCE_LAUNCHING。
 
@@ -125,7 +125,7 @@ class LifecycleHookList:
 
     @lifecycle_hook_type.setter
     def lifecycle_hook_type(self, lifecycle_hook_type):
-        """Sets the lifecycle_hook_type of this LifecycleHookList.
+        r"""Sets the lifecycle_hook_type of this LifecycleHookList.
 
         生命周期挂钩类型。INSTANCE_TERMINATING；INSTANCE_LAUNCHING。
 
@@ -136,7 +136,7 @@ class LifecycleHookList:
 
     @property
     def default_result(self):
-        """Gets the default_result of this LifecycleHookList.
+        r"""Gets the default_result of this LifecycleHookList.
 
         生命周期挂钩默认回调操作。ABANDON;CONTINUE。
 
@@ -147,7 +147,7 @@ class LifecycleHookList:
 
     @default_result.setter
     def default_result(self, default_result):
-        """Sets the default_result of this LifecycleHookList.
+        r"""Sets the default_result of this LifecycleHookList.
 
         生命周期挂钩默认回调操作。ABANDON;CONTINUE。
 
@@ -158,7 +158,7 @@ class LifecycleHookList:
 
     @property
     def default_timeout(self):
-        """Gets the default_timeout of this LifecycleHookList.
+        r"""Gets the default_timeout of this LifecycleHookList.
 
         生命周期挂钩超时时间，单位秒。
 
@@ -169,7 +169,7 @@ class LifecycleHookList:
 
     @default_timeout.setter
     def default_timeout(self, default_timeout):
-        """Sets the default_timeout of this LifecycleHookList.
+        r"""Sets the default_timeout of this LifecycleHookList.
 
         生命周期挂钩超时时间，单位秒。
 
@@ -180,7 +180,7 @@ class LifecycleHookList:
 
     @property
     def notification_topic_urn(self):
-        """Gets the notification_topic_urn of this LifecycleHookList.
+        r"""Gets the notification_topic_urn of this LifecycleHookList.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -191,7 +191,7 @@ class LifecycleHookList:
 
     @notification_topic_urn.setter
     def notification_topic_urn(self, notification_topic_urn):
-        """Sets the notification_topic_urn of this LifecycleHookList.
+        r"""Sets the notification_topic_urn of this LifecycleHookList.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -202,7 +202,7 @@ class LifecycleHookList:
 
     @property
     def notification_topic_name(self):
-        """Gets the notification_topic_name of this LifecycleHookList.
+        r"""Gets the notification_topic_name of this LifecycleHookList.
 
         SMN服务中Topic的资源名称。
 
@@ -213,7 +213,7 @@ class LifecycleHookList:
 
     @notification_topic_name.setter
     def notification_topic_name(self, notification_topic_name):
-        """Sets the notification_topic_name of this LifecycleHookList.
+        r"""Sets the notification_topic_name of this LifecycleHookList.
 
         SMN服务中Topic的资源名称。
 
@@ -224,7 +224,7 @@ class LifecycleHookList:
 
     @property
     def notification_metadata(self):
-        """Gets the notification_metadata of this LifecycleHookList.
+        r"""Gets the notification_metadata of this LifecycleHookList.
 
         自定义通知消息。
 
@@ -235,7 +235,7 @@ class LifecycleHookList:
 
     @notification_metadata.setter
     def notification_metadata(self, notification_metadata):
-        """Sets the notification_metadata of this LifecycleHookList.
+        r"""Sets the notification_metadata of this LifecycleHookList.
 
         自定义通知消息。
 
@@ -246,7 +246,7 @@ class LifecycleHookList:
 
     @property
     def create_time(self):
-        """Gets the create_time of this LifecycleHookList.
+        r"""Gets the create_time of this LifecycleHookList.
 
         创建生命周期挂钩时间，遵循UTC时间。
 
@@ -257,7 +257,7 @@ class LifecycleHookList:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this LifecycleHookList.
+        r"""Sets the create_time of this LifecycleHookList.
 
         创建生命周期挂钩时间，遵循UTC时间。
 

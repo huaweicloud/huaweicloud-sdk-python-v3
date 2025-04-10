@@ -26,7 +26,7 @@ class CreateSnapshotPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateSnapshotPolicyResponse
+        r"""CreateSnapshotPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSnapshotPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateSnapshotPolicyResponse.
+        r"""Gets the body of this CreateSnapshotPolicyResponse.
 
         :return: The body of this CreateSnapshotPolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateSnapshotPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSnapshotPolicyResponse.
+        r"""Sets the body of this CreateSnapshotPolicyResponse.
 
         :param body: The body of this CreateSnapshotPolicyResponse.
         :type body: str

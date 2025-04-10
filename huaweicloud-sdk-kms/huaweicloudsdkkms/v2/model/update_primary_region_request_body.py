@@ -27,7 +27,7 @@ class UpdatePrimaryRegionRequestBody:
     }
 
     def __init__(self, key_id=None, primary_region=None):
-        """UpdatePrimaryRegionRequestBody
+        r"""UpdatePrimaryRegionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdatePrimaryRegionRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this UpdatePrimaryRegionRequestBody.
+        r"""Gets the key_id of this UpdatePrimaryRegionRequestBody.
 
         待复制的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -59,7 +59,7 @@ class UpdatePrimaryRegionRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this UpdatePrimaryRegionRequestBody.
+        r"""Sets the key_id of this UpdatePrimaryRegionRequestBody.
 
         待复制的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -70,7 +70,7 @@ class UpdatePrimaryRegionRequestBody:
 
     @property
     def primary_region(self):
-        """Gets the primary_region of this UpdatePrimaryRegionRequestBody.
+        r"""Gets the primary_region of this UpdatePrimaryRegionRequestBody.
 
         指定密钥所属新的主区域的区域编码。如cn-north-4。
 
@@ -81,7 +81,7 @@ class UpdatePrimaryRegionRequestBody:
 
     @primary_region.setter
     def primary_region(self, primary_region):
-        """Sets the primary_region of this UpdatePrimaryRegionRequestBody.
+        r"""Sets the primary_region of this UpdatePrimaryRegionRequestBody.
 
         指定密钥所属新的主区域的区域编码。如cn-north-4。
 

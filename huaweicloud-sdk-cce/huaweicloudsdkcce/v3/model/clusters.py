@@ -27,7 +27,7 @@ class Clusters:
     }
 
     def __init__(self, name=None, cluster=None):
-        """Clusters
+        r"""Clusters
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Clusters:
 
     @property
     def name(self):
-        """Gets the name of this Clusters.
+        r"""Gets the name of this Clusters.
 
         集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
 
@@ -61,7 +61,7 @@ class Clusters:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Clusters.
+        r"""Sets the name of this Clusters.
 
         集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
 
@@ -72,7 +72,7 @@ class Clusters:
 
     @property
     def cluster(self):
-        """Gets the cluster of this Clusters.
+        r"""Gets the cluster of this Clusters.
 
         :return: The cluster of this Clusters.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterCert`
@@ -81,7 +81,7 @@ class Clusters:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this Clusters.
+        r"""Sets the cluster of this Clusters.
 
         :param cluster: The cluster of this Clusters.
         :type cluster: :class:`huaweicloudsdkcce.v3.ClusterCert`

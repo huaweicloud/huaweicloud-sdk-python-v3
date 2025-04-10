@@ -26,7 +26,7 @@ class DeleteConnectorResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteConnectorResponse
+        r"""DeleteConnectorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteConnectorResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteConnectorResponse.
+        r"""Gets the job_id of this DeleteConnectorResponse.
 
         返回异步执行删除任务的job id。
 
@@ -55,7 +55,7 @@ class DeleteConnectorResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteConnectorResponse.
+        r"""Sets the job_id of this DeleteConnectorResponse.
 
         返回异步执行删除任务的job id。
 

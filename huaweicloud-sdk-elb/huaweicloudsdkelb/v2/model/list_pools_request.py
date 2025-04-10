@@ -49,7 +49,7 @@ class ListPoolsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, healthmonitor_id=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, member_address=None, member_device_id=None, enterprise_project_id=None):
-        """ListPoolsRequest
+        r"""ListPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPoolsRequest.
+        r"""Gets the limit of this ListPoolsRequest.
 
         分页查询中每页的后端服务器组个数
 
@@ -138,7 +138,7 @@ class ListPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPoolsRequest.
+        r"""Sets the limit of this ListPoolsRequest.
 
         分页查询中每页的后端服务器组个数
 
@@ -149,7 +149,7 @@ class ListPoolsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPoolsRequest.
+        r"""Gets the marker of this ListPoolsRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器组的id。不指定时表示查询第一页。
 
@@ -160,7 +160,7 @@ class ListPoolsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPoolsRequest.
+        r"""Sets the marker of this ListPoolsRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器组的id。不指定时表示查询第一页。
 
@@ -171,7 +171,7 @@ class ListPoolsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListPoolsRequest.
+        r"""Gets the page_reverse of this ListPoolsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -182,7 +182,7 @@ class ListPoolsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPoolsRequest.
+        r"""Sets the page_reverse of this ListPoolsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -193,7 +193,7 @@ class ListPoolsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPoolsRequest.
+        r"""Gets the id of this ListPoolsRequest.
 
         后端云服务器组ID。
 
@@ -204,7 +204,7 @@ class ListPoolsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPoolsRequest.
+        r"""Sets the id of this ListPoolsRequest.
 
         后端云服务器组ID。
 
@@ -215,7 +215,7 @@ class ListPoolsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPoolsRequest.
+        r"""Gets the name of this ListPoolsRequest.
 
         后端云服务器组名称。
 
@@ -226,7 +226,7 @@ class ListPoolsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPoolsRequest.
+        r"""Sets the name of this ListPoolsRequest.
 
         后端云服务器组名称。
 
@@ -237,7 +237,7 @@ class ListPoolsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPoolsRequest.
+        r"""Gets the description of this ListPoolsRequest.
 
         后端云服务器组的描述信息。
 
@@ -248,7 +248,7 @@ class ListPoolsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPoolsRequest.
+        r"""Sets the description of this ListPoolsRequest.
 
         后端云服务器组的描述信息。
 
@@ -259,7 +259,7 @@ class ListPoolsRequest:
 
     @property
     def healthmonitor_id(self):
-        """Gets the healthmonitor_id of this ListPoolsRequest.
+        r"""Gets the healthmonitor_id of this ListPoolsRequest.
 
         后端云服务器组关联的健康检查的ID。
 
@@ -270,7 +270,7 @@ class ListPoolsRequest:
 
     @healthmonitor_id.setter
     def healthmonitor_id(self, healthmonitor_id):
-        """Sets the healthmonitor_id of this ListPoolsRequest.
+        r"""Sets the healthmonitor_id of this ListPoolsRequest.
 
         后端云服务器组关联的健康检查的ID。
 
@@ -281,7 +281,7 @@ class ListPoolsRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListPoolsRequest.
+        r"""Gets the loadbalancer_id of this ListPoolsRequest.
 
         后端云服务器组关联的负载均衡器ID。
 
@@ -292,7 +292,7 @@ class ListPoolsRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListPoolsRequest.
+        r"""Sets the loadbalancer_id of this ListPoolsRequest.
 
         后端云服务器组关联的负载均衡器ID。
 
@@ -303,7 +303,7 @@ class ListPoolsRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListPoolsRequest.
+        r"""Gets the protocol of this ListPoolsRequest.
 
         后端云服务器组的后端协议。支持TCP、UDP和HTTP。
 
@@ -314,7 +314,7 @@ class ListPoolsRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListPoolsRequest.
+        r"""Sets the protocol of this ListPoolsRequest.
 
         后端云服务器组的后端协议。支持TCP、UDP和HTTP。
 
@@ -325,7 +325,7 @@ class ListPoolsRequest:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this ListPoolsRequest.
+        r"""Gets the lb_algorithm of this ListPoolsRequest.
 
         后端云服务器组的负载均衡算法。取值范围：ROUND_ROBIN：加权轮询算法。LEAST_CONNECTIONS：加权最少连接算法。SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -336,7 +336,7 @@ class ListPoolsRequest:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this ListPoolsRequest.
+        r"""Sets the lb_algorithm of this ListPoolsRequest.
 
         后端云服务器组的负载均衡算法。取值范围：ROUND_ROBIN：加权轮询算法。LEAST_CONNECTIONS：加权最少连接算法。SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -347,7 +347,7 @@ class ListPoolsRequest:
 
     @property
     def member_address(self):
-        """Gets the member_address of this ListPoolsRequest.
+        r"""Gets the member_address of this ListPoolsRequest.
 
         后端云服务器组关联的后端云服务器IP。
 
@@ -358,7 +358,7 @@ class ListPoolsRequest:
 
     @member_address.setter
     def member_address(self, member_address):
-        """Sets the member_address of this ListPoolsRequest.
+        r"""Sets the member_address of this ListPoolsRequest.
 
         后端云服务器组关联的后端云服务器IP。
 
@@ -369,7 +369,7 @@ class ListPoolsRequest:
 
     @property
     def member_device_id(self):
-        """Gets the member_device_id of this ListPoolsRequest.
+        r"""Gets the member_device_id of this ListPoolsRequest.
 
         后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
 
@@ -380,7 +380,7 @@ class ListPoolsRequest:
 
     @member_device_id.setter
     def member_device_id(self, member_device_id):
-        """Sets the member_device_id of this ListPoolsRequest.
+        r"""Sets the member_device_id of this ListPoolsRequest.
 
         后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
 
@@ -391,7 +391,7 @@ class ListPoolsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPoolsRequest.
+        r"""Gets the enterprise_project_id of this ListPoolsRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -402,7 +402,7 @@ class ListPoolsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPoolsRequest.
+        r"""Sets the enterprise_project_id of this ListPoolsRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 

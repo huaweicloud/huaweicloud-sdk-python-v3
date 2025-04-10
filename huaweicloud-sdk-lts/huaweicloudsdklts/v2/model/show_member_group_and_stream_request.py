@@ -25,7 +25,7 @@ class ShowMemberGroupAndStreamRequest:
     }
 
     def __init__(self, member_account_id=None):
-        """ShowMemberGroupAndStreamRequest
+        r"""ShowMemberGroupAndStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMemberGroupAndStreamRequest:
 
     @property
     def member_account_id(self):
-        """Gets the member_account_id of this ShowMemberGroupAndStreamRequest.
+        r"""Gets the member_account_id of this ShowMemberGroupAndStreamRequest.
 
         成员账号ID
 
@@ -53,7 +53,7 @@ class ShowMemberGroupAndStreamRequest:
 
     @member_account_id.setter
     def member_account_id(self, member_account_id):
-        """Sets the member_account_id of this ShowMemberGroupAndStreamRequest.
+        r"""Sets the member_account_id of this ShowMemberGroupAndStreamRequest.
 
         成员账号ID
 

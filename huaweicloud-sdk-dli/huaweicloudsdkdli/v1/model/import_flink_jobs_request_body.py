@@ -27,7 +27,7 @@ class ImportFlinkJobsRequestBody:
     }
 
     def __init__(self, zip_file=None, is_cover=None):
-        """ImportFlinkJobsRequestBody
+        r"""ImportFlinkJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportFlinkJobsRequestBody:
 
     @property
     def zip_file(self):
-        """Gets the zip_file of this ImportFlinkJobsRequestBody.
+        r"""Gets the zip_file of this ImportFlinkJobsRequestBody.
 
         OBS上导入作业zip文件路径，支持填写目录，导入目录下所有zip文件。
 
@@ -60,7 +60,7 @@ class ImportFlinkJobsRequestBody:
 
     @zip_file.setter
     def zip_file(self, zip_file):
-        """Sets the zip_file of this ImportFlinkJobsRequestBody.
+        r"""Sets the zip_file of this ImportFlinkJobsRequestBody.
 
         OBS上导入作业zip文件路径，支持填写目录，导入目录下所有zip文件。
 
@@ -71,7 +71,7 @@ class ImportFlinkJobsRequestBody:
 
     @property
     def is_cover(self):
-        """Gets the is_cover of this ImportFlinkJobsRequestBody.
+        r"""Gets the is_cover of this ImportFlinkJobsRequestBody.
 
         若导入作业中存在与服务已有作业同名情况，是否将服务中已有作业覆盖。
 
@@ -82,7 +82,7 @@ class ImportFlinkJobsRequestBody:
 
     @is_cover.setter
     def is_cover(self, is_cover):
-        """Sets the is_cover of this ImportFlinkJobsRequestBody.
+        r"""Sets the is_cover of this ImportFlinkJobsRequestBody.
 
         若导入作业中存在与服务已有作业同名情况，是否将服务中已有作业覆盖。
 

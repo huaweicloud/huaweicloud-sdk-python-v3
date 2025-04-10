@@ -49,7 +49,7 @@ class LogicalClusterInfo:
     }
 
     def __init__(self, logical_cluster_id=None, logical_cluster_name=None, cluster_rings=None, status=None, first_logical_cluster=None, action_info=None, edit_enable=None, restart_enable=None, delete_enable=None, add_to_elastic=None, mode=None, waiting_for_killing=None, cluster_type=None):
-        """LogicalClusterInfo
+        r"""LogicalClusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class LogicalClusterInfo:
 
     @property
     def logical_cluster_id(self):
-        """Gets the logical_cluster_id of this LogicalClusterInfo.
+        r"""Gets the logical_cluster_id of this LogicalClusterInfo.
 
         逻辑集群ID
 
@@ -138,7 +138,7 @@ class LogicalClusterInfo:
 
     @logical_cluster_id.setter
     def logical_cluster_id(self, logical_cluster_id):
-        """Sets the logical_cluster_id of this LogicalClusterInfo.
+        r"""Sets the logical_cluster_id of this LogicalClusterInfo.
 
         逻辑集群ID
 
@@ -149,7 +149,7 @@ class LogicalClusterInfo:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this LogicalClusterInfo.
+        r"""Gets the logical_cluster_name of this LogicalClusterInfo.
 
         逻辑集群名称
 
@@ -160,7 +160,7 @@ class LogicalClusterInfo:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this LogicalClusterInfo.
+        r"""Sets the logical_cluster_name of this LogicalClusterInfo.
 
         逻辑集群名称
 
@@ -171,7 +171,7 @@ class LogicalClusterInfo:
 
     @property
     def cluster_rings(self):
-        """Gets the cluster_rings of this LogicalClusterInfo.
+        r"""Gets the cluster_rings of this LogicalClusterInfo.
 
         逻辑集群主机信息
 
@@ -182,7 +182,7 @@ class LogicalClusterInfo:
 
     @cluster_rings.setter
     def cluster_rings(self, cluster_rings):
-        """Sets the cluster_rings of this LogicalClusterInfo.
+        r"""Sets the cluster_rings of this LogicalClusterInfo.
 
         逻辑集群主机信息
 
@@ -193,7 +193,7 @@ class LogicalClusterInfo:
 
     @property
     def status(self):
-        """Gets the status of this LogicalClusterInfo.
+        r"""Gets the status of this LogicalClusterInfo.
 
         逻辑集群状态
 
@@ -204,7 +204,7 @@ class LogicalClusterInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LogicalClusterInfo.
+        r"""Sets the status of this LogicalClusterInfo.
 
         逻辑集群状态
 
@@ -215,7 +215,7 @@ class LogicalClusterInfo:
 
     @property
     def first_logical_cluster(self):
-        """Gets the first_logical_cluster of this LogicalClusterInfo.
+        r"""Gets the first_logical_cluster of this LogicalClusterInfo.
 
         是否为第一个逻辑集群。第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图
 
@@ -226,7 +226,7 @@ class LogicalClusterInfo:
 
     @first_logical_cluster.setter
     def first_logical_cluster(self, first_logical_cluster):
-        """Sets the first_logical_cluster of this LogicalClusterInfo.
+        r"""Sets the first_logical_cluster of this LogicalClusterInfo.
 
         是否为第一个逻辑集群。第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图
 
@@ -237,7 +237,7 @@ class LogicalClusterInfo:
 
     @property
     def action_info(self):
-        """Gets the action_info of this LogicalClusterInfo.
+        r"""Gets the action_info of this LogicalClusterInfo.
 
         :return: The action_info of this LogicalClusterInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.ActionInfo`
@@ -246,7 +246,7 @@ class LogicalClusterInfo:
 
     @action_info.setter
     def action_info(self, action_info):
-        """Sets the action_info of this LogicalClusterInfo.
+        r"""Sets the action_info of this LogicalClusterInfo.
 
         :param action_info: The action_info of this LogicalClusterInfo.
         :type action_info: :class:`huaweicloudsdkdws.v2.ActionInfo`
@@ -255,7 +255,7 @@ class LogicalClusterInfo:
 
     @property
     def edit_enable(self):
-        """Gets the edit_enable of this LogicalClusterInfo.
+        r"""Gets the edit_enable of this LogicalClusterInfo.
 
         是否允许编辑
 
@@ -266,7 +266,7 @@ class LogicalClusterInfo:
 
     @edit_enable.setter
     def edit_enable(self, edit_enable):
-        """Sets the edit_enable of this LogicalClusterInfo.
+        r"""Sets the edit_enable of this LogicalClusterInfo.
 
         是否允许编辑
 
@@ -277,7 +277,7 @@ class LogicalClusterInfo:
 
     @property
     def restart_enable(self):
-        """Gets the restart_enable of this LogicalClusterInfo.
+        r"""Gets the restart_enable of this LogicalClusterInfo.
 
         是否允许重启
 
@@ -288,7 +288,7 @@ class LogicalClusterInfo:
 
     @restart_enable.setter
     def restart_enable(self, restart_enable):
-        """Sets the restart_enable of this LogicalClusterInfo.
+        r"""Sets the restart_enable of this LogicalClusterInfo.
 
         是否允许重启
 
@@ -299,7 +299,7 @@ class LogicalClusterInfo:
 
     @property
     def delete_enable(self):
-        """Gets the delete_enable of this LogicalClusterInfo.
+        r"""Gets the delete_enable of this LogicalClusterInfo.
 
         是否允许删除
 
@@ -310,7 +310,7 @@ class LogicalClusterInfo:
 
     @delete_enable.setter
     def delete_enable(self, delete_enable):
-        """Sets the delete_enable of this LogicalClusterInfo.
+        r"""Sets the delete_enable of this LogicalClusterInfo.
 
         是否允许删除
 
@@ -321,7 +321,7 @@ class LogicalClusterInfo:
 
     @property
     def add_to_elastic(self):
-        """Gets the add_to_elastic of this LogicalClusterInfo.
+        r"""Gets the add_to_elastic of this LogicalClusterInfo.
 
         是否允许弹性伸缩
 
@@ -332,7 +332,7 @@ class LogicalClusterInfo:
 
     @add_to_elastic.setter
     def add_to_elastic(self, add_to_elastic):
-        """Sets the add_to_elastic of this LogicalClusterInfo.
+        r"""Sets the add_to_elastic of this LogicalClusterInfo.
 
         是否允许弹性伸缩
 
@@ -343,7 +343,7 @@ class LogicalClusterInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this LogicalClusterInfo.
+        r"""Gets the mode of this LogicalClusterInfo.
 
         逻辑集群模式
 
@@ -354,7 +354,7 @@ class LogicalClusterInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this LogicalClusterInfo.
+        r"""Sets the mode of this LogicalClusterInfo.
 
         逻辑集群模式
 
@@ -365,7 +365,7 @@ class LogicalClusterInfo:
 
     @property
     def waiting_for_killing(self):
-        """Gets the waiting_for_killing of this LogicalClusterInfo.
+        r"""Gets the waiting_for_killing of this LogicalClusterInfo.
 
         等待被销毁
 
@@ -376,7 +376,7 @@ class LogicalClusterInfo:
 
     @waiting_for_killing.setter
     def waiting_for_killing(self, waiting_for_killing):
-        """Sets the waiting_for_killing of this LogicalClusterInfo.
+        r"""Sets the waiting_for_killing of this LogicalClusterInfo.
 
         等待被销毁
 
@@ -387,7 +387,7 @@ class LogicalClusterInfo:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this LogicalClusterInfo.
+        r"""Gets the cluster_type of this LogicalClusterInfo.
 
         集群类型
 
@@ -398,7 +398,7 @@ class LogicalClusterInfo:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this LogicalClusterInfo.
+        r"""Sets the cluster_type of this LogicalClusterInfo.
 
         集群类型
 

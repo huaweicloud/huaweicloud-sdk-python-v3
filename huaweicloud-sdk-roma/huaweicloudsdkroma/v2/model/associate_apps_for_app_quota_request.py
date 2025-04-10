@@ -29,7 +29,7 @@ class AssociateAppsForAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, body=None):
-        """AssociateAppsForAppQuotaRequest
+        r"""AssociateAppsForAppQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AssociateAppsForAppQuotaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AssociateAppsForAppQuotaRequest.
+        r"""Gets the instance_id of this AssociateAppsForAppQuotaRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class AssociateAppsForAppQuotaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AssociateAppsForAppQuotaRequest.
+        r"""Sets the instance_id of this AssociateAppsForAppQuotaRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class AssociateAppsForAppQuotaRequest:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this AssociateAppsForAppQuotaRequest.
+        r"""Gets the app_quota_id of this AssociateAppsForAppQuotaRequest.
 
         客户端配额编号
 
@@ -88,7 +88,7 @@ class AssociateAppsForAppQuotaRequest:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this AssociateAppsForAppQuotaRequest.
+        r"""Sets the app_quota_id of this AssociateAppsForAppQuotaRequest.
 
         客户端配额编号
 
@@ -99,7 +99,7 @@ class AssociateAppsForAppQuotaRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateAppsForAppQuotaRequest.
+        r"""Gets the body of this AssociateAppsForAppQuotaRequest.
 
         :return: The body of this AssociateAppsForAppQuotaRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppQuotaBindingApp`
@@ -108,7 +108,7 @@ class AssociateAppsForAppQuotaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateAppsForAppQuotaRequest.
+        r"""Sets the body of this AssociateAppsForAppQuotaRequest.
 
         :param body: The body of this AssociateAppsForAppQuotaRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateAppQuotaBindingApp`

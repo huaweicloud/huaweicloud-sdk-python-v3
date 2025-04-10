@@ -41,7 +41,7 @@ class CreateInstanceOrder:
     }
 
     def __init__(self, instance_key=None, cloud_service_type=None, region_id=None, charging_mode=None, period_type=None, period_num=None, product_infos=None, is_auto_renew=None, subscription_num=None):
-        """CreateInstanceOrder
+        r"""CreateInstanceOrder
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CreateInstanceOrder:
 
     @property
     def instance_key(self):
-        """Gets the instance_key of this CreateInstanceOrder.
+        r"""Gets the instance_key of this CreateInstanceOrder.
 
         云堡垒机实例key。
 
@@ -102,7 +102,7 @@ class CreateInstanceOrder:
 
     @instance_key.setter
     def instance_key(self, instance_key):
-        """Sets the instance_key of this CreateInstanceOrder.
+        r"""Sets the instance_key of this CreateInstanceOrder.
 
         云堡垒机实例key。
 
@@ -113,7 +113,7 @@ class CreateInstanceOrder:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this CreateInstanceOrder.
+        r"""Gets the cloud_service_type of this CreateInstanceOrder.
 
         云服务类型，默认填写“hws.service.type.cbh”。
 
@@ -124,7 +124,7 @@ class CreateInstanceOrder:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this CreateInstanceOrder.
+        r"""Sets the cloud_service_type of this CreateInstanceOrder.
 
         云服务类型，默认填写“hws.service.type.cbh”。
 
@@ -135,7 +135,7 @@ class CreateInstanceOrder:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateInstanceOrder.
+        r"""Gets the region_id of this CreateInstanceOrder.
 
         云堡垒机实例局点ID。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -146,7 +146,7 @@ class CreateInstanceOrder:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateInstanceOrder.
+        r"""Sets the region_id of this CreateInstanceOrder.
 
         云堡垒机实例局点ID。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -157,7 +157,7 @@ class CreateInstanceOrder:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateInstanceOrder.
+        r"""Gets the charging_mode of this CreateInstanceOrder.
 
         计费模式。 - 0 包周期计费。
 
@@ -168,7 +168,7 @@ class CreateInstanceOrder:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateInstanceOrder.
+        r"""Sets the charging_mode of this CreateInstanceOrder.
 
         计费模式。 - 0 包周期计费。
 
@@ -179,7 +179,7 @@ class CreateInstanceOrder:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateInstanceOrder.
+        r"""Gets the period_type of this CreateInstanceOrder.
 
         订购周期类型。 - 2：月 - 3：年
 
@@ -190,7 +190,7 @@ class CreateInstanceOrder:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateInstanceOrder.
+        r"""Sets the period_type of this CreateInstanceOrder.
 
         订购周期类型。 - 2：月 - 3：年
 
@@ -201,7 +201,7 @@ class CreateInstanceOrder:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateInstanceOrder.
+        r"""Gets the period_num of this CreateInstanceOrder.
 
         订购周期数。 - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10]
 
@@ -212,7 +212,7 @@ class CreateInstanceOrder:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateInstanceOrder.
+        r"""Sets the period_num of this CreateInstanceOrder.
 
         订购周期数。 - period_type=2（周期类型为月），取值范围[1，9] - periodType=3（周期类型为年），取值范围[1，10]
 
@@ -223,7 +223,7 @@ class CreateInstanceOrder:
 
     @property
     def product_infos(self):
-        """Gets the product_infos of this CreateInstanceOrder.
+        r"""Gets the product_infos of this CreateInstanceOrder.
 
         产品信息
 
@@ -234,7 +234,7 @@ class CreateInstanceOrder:
 
     @product_infos.setter
     def product_infos(self, product_infos):
-        """Sets the product_infos of this CreateInstanceOrder.
+        r"""Sets the product_infos of this CreateInstanceOrder.
 
         产品信息
 
@@ -245,7 +245,7 @@ class CreateInstanceOrder:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateInstanceOrder.
+        r"""Gets the is_auto_renew of this CreateInstanceOrder.
 
         是否自动续订。 - 1，自动续订 - 0，不自动续订（默认）
 
@@ -256,7 +256,7 @@ class CreateInstanceOrder:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateInstanceOrder.
+        r"""Sets the is_auto_renew of this CreateInstanceOrder.
 
         是否自动续订。 - 1，自动续订 - 0，不自动续订（默认）
 
@@ -267,7 +267,7 @@ class CreateInstanceOrder:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this CreateInstanceOrder.
+        r"""Gets the subscription_num of this CreateInstanceOrder.
 
         订购数量。当前仅支持订购1个，填写默认值1。
 
@@ -278,7 +278,7 @@ class CreateInstanceOrder:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this CreateInstanceOrder.
+        r"""Sets the subscription_num of this CreateInstanceOrder.
 
         订购数量。当前仅支持订购1个，填写默认值1。
 

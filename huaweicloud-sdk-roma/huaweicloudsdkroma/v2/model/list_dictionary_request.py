@@ -35,7 +35,7 @@ class ListDictionaryRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, parent_code=None, code=None, name=None):
-        """ListDictionaryRequest
+        r"""ListDictionaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListDictionaryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDictionaryRequest.
+        r"""Gets the instance_id of this ListDictionaryRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListDictionaryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDictionaryRequest.
+        r"""Sets the instance_id of this ListDictionaryRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListDictionaryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDictionaryRequest.
+        r"""Gets the offset of this ListDictionaryRequest.
 
         偏移量，大于等于0
 
@@ -110,7 +110,7 @@ class ListDictionaryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDictionaryRequest.
+        r"""Sets the offset of this ListDictionaryRequest.
 
         偏移量，大于等于0
 
@@ -121,7 +121,7 @@ class ListDictionaryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDictionaryRequest.
+        r"""Gets the limit of this ListDictionaryRequest.
 
         每页显示的条目数量
 
@@ -132,7 +132,7 @@ class ListDictionaryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDictionaryRequest.
+        r"""Sets the limit of this ListDictionaryRequest.
 
         每页显示的条目数量
 
@@ -143,7 +143,7 @@ class ListDictionaryRequest:
 
     @property
     def parent_code(self):
-        """Gets the parent_code of this ListDictionaryRequest.
+        r"""Gets the parent_code of this ListDictionaryRequest.
 
         指定父字典编码，返回子字典列表信息，未指定时查询顶级字典列表信息
 
@@ -154,7 +154,7 @@ class ListDictionaryRequest:
 
     @parent_code.setter
     def parent_code(self, parent_code):
-        """Sets the parent_code of this ListDictionaryRequest.
+        r"""Sets the parent_code of this ListDictionaryRequest.
 
         指定父字典编码，返回子字典列表信息，未指定时查询顶级字典列表信息
 
@@ -165,7 +165,7 @@ class ListDictionaryRequest:
 
     @property
     def code(self):
-        """Gets the code of this ListDictionaryRequest.
+        r"""Gets the code of this ListDictionaryRequest.
 
         通过code进行模糊匹配查询
 
@@ -176,7 +176,7 @@ class ListDictionaryRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListDictionaryRequest.
+        r"""Sets the code of this ListDictionaryRequest.
 
         通过code进行模糊匹配查询
 
@@ -187,7 +187,7 @@ class ListDictionaryRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDictionaryRequest.
+        r"""Gets the name of this ListDictionaryRequest.
 
         通过name进行模糊匹配查询
 
@@ -198,7 +198,7 @@ class ListDictionaryRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDictionaryRequest.
+        r"""Sets the name of this ListDictionaryRequest.
 
         通过name进行模糊匹配查询
 

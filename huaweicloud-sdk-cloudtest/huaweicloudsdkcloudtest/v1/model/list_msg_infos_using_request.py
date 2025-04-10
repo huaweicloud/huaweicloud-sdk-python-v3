@@ -27,7 +27,7 @@ class ListMsgInfosUsingRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """ListMsgInfosUsingRequest
+        r"""ListMsgInfosUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListMsgInfosUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListMsgInfosUsingRequest.
+        r"""Gets the service_id of this ListMsgInfosUsingRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ListMsgInfosUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListMsgInfosUsingRequest.
+        r"""Sets the service_id of this ListMsgInfosUsingRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ListMsgInfosUsingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListMsgInfosUsingRequest.
+        r"""Gets the body of this ListMsgInfosUsingRequest.
 
         :return: The body of this ListMsgInfosUsingRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.MsgInfoQuery`
@@ -80,7 +80,7 @@ class ListMsgInfosUsingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMsgInfosUsingRequest.
+        r"""Sets the body of this ListMsgInfosUsingRequest.
 
         :param body: The body of this ListMsgInfosUsingRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.MsgInfoQuery`

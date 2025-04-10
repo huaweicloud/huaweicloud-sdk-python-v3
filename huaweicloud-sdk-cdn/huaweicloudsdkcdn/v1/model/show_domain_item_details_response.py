@@ -26,7 +26,7 @@ class ShowDomainItemDetailsResponse(SdkResponse):
     }
 
     def __init__(self, domain_item_details=None):
-        """ShowDomainItemDetailsResponse
+        r"""ShowDomainItemDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainItemDetailsResponse(SdkResponse):
 
     @property
     def domain_item_details(self):
-        """Gets the domain_item_details of this ShowDomainItemDetailsResponse.
+        r"""Gets the domain_item_details of this ShowDomainItemDetailsResponse.
 
         :return: The domain_item_details of this ShowDomainItemDetailsResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`
@@ -53,7 +53,7 @@ class ShowDomainItemDetailsResponse(SdkResponse):
 
     @domain_item_details.setter
     def domain_item_details(self, domain_item_details):
-        """Sets the domain_item_details of this ShowDomainItemDetailsResponse.
+        r"""Sets the domain_item_details of this ShowDomainItemDetailsResponse.
 
         :param domain_item_details: The domain_item_details of this ShowDomainItemDetailsResponse.
         :type domain_item_details: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`

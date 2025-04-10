@@ -27,7 +27,7 @@ class AddResourceTagsRequestBodyTag:
     }
 
     def __init__(self, key=None, value=None):
-        """AddResourceTagsRequestBodyTag
+        r"""AddResourceTagsRequestBodyTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddResourceTagsRequestBodyTag:
 
     @property
     def key(self):
-        """Gets the key of this AddResourceTagsRequestBodyTag.
+        r"""Gets the key of this AddResourceTagsRequestBodyTag.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -59,7 +59,7 @@ class AddResourceTagsRequestBodyTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AddResourceTagsRequestBodyTag.
+        r"""Sets the key of this AddResourceTagsRequestBodyTag.
 
         标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
@@ -70,7 +70,7 @@ class AddResourceTagsRequestBodyTag:
 
     @property
     def value(self):
-        """Gets the value of this AddResourceTagsRequestBodyTag.
+        r"""Gets the value of this AddResourceTagsRequestBodyTag.
 
         标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 
@@ -81,7 +81,7 @@ class AddResourceTagsRequestBodyTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AddResourceTagsRequestBodyTag.
+        r"""Sets the value of this AddResourceTagsRequestBodyTag.
 
         标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 

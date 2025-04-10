@@ -47,7 +47,7 @@ class CreateTaskRequestV2:
     }
 
     def __init__(self, check_type=None, git_url=None, git_branch=None, language=None, rule_sets=None, task_type=None, username=None, access_token=None, endpoint_id=None, inc_config=None, enable_fossbot=None, resource_pool_id=None):
-        """CreateTaskRequestV2
+        r"""CreateTaskRequestV2
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class CreateTaskRequestV2:
 
     @property
     def check_type(self):
-        """Gets the check_type of this CreateTaskRequestV2.
+        r"""Gets the check_type of this CreateTaskRequestV2.
 
         检查类型，数组格式，默认为source
 
@@ -128,7 +128,7 @@ class CreateTaskRequestV2:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this CreateTaskRequestV2.
+        r"""Sets the check_type of this CreateTaskRequestV2.
 
         检查类型，数组格式，默认为source
 
@@ -139,7 +139,7 @@ class CreateTaskRequestV2:
 
     @property
     def git_url(self):
-        """Gets the git_url of this CreateTaskRequestV2.
+        r"""Gets the git_url of this CreateTaskRequestV2.
 
         仓库地址
 
@@ -150,7 +150,7 @@ class CreateTaskRequestV2:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this CreateTaskRequestV2.
+        r"""Sets the git_url of this CreateTaskRequestV2.
 
         仓库地址
 
@@ -161,7 +161,7 @@ class CreateTaskRequestV2:
 
     @property
     def git_branch(self):
-        """Gets the git_branch of this CreateTaskRequestV2.
+        r"""Gets the git_branch of this CreateTaskRequestV2.
 
         仓库分支
 
@@ -172,7 +172,7 @@ class CreateTaskRequestV2:
 
     @git_branch.setter
     def git_branch(self, git_branch):
-        """Sets the git_branch of this CreateTaskRequestV2.
+        r"""Sets the git_branch of this CreateTaskRequestV2.
 
         仓库分支
 
@@ -183,7 +183,7 @@ class CreateTaskRequestV2:
 
     @property
     def language(self):
-        """Gets the language of this CreateTaskRequestV2.
+        r"""Gets the language of this CreateTaskRequestV2.
 
         检查语言，数组格式，支持cpp,java,js,python,php,css,html,go,typescript,csharp
 
@@ -194,7 +194,7 @@ class CreateTaskRequestV2:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateTaskRequestV2.
+        r"""Sets the language of this CreateTaskRequestV2.
 
         检查语言，数组格式，支持cpp,java,js,python,php,css,html,go,typescript,csharp
 
@@ -205,7 +205,7 @@ class CreateTaskRequestV2:
 
     @property
     def rule_sets(self):
-        """Gets the rule_sets of this CreateTaskRequestV2.
+        r"""Gets the rule_sets of this CreateTaskRequestV2.
 
         指定规则集
 
@@ -216,7 +216,7 @@ class CreateTaskRequestV2:
 
     @rule_sets.setter
     def rule_sets(self, rule_sets):
-        """Sets the rule_sets of this CreateTaskRequestV2.
+        r"""Sets the rule_sets of this CreateTaskRequestV2.
 
         指定规则集
 
@@ -227,7 +227,7 @@ class CreateTaskRequestV2:
 
     @property
     def task_type(self):
-        """Gets the task_type of this CreateTaskRequestV2.
+        r"""Gets the task_type of this CreateTaskRequestV2.
 
         检查类型，支持full/inc两种类型，full表示全量检查，inc表示mr检查
 
@@ -238,7 +238,7 @@ class CreateTaskRequestV2:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this CreateTaskRequestV2.
+        r"""Sets the task_type of this CreateTaskRequestV2.
 
         检查类型，支持full/inc两种类型，full表示全量检查，inc表示mr检查
 
@@ -249,7 +249,7 @@ class CreateTaskRequestV2:
 
     @property
     def username(self):
-        """Gets the username of this CreateTaskRequestV2.
+        r"""Gets the username of this CreateTaskRequestV2.
 
         仓库有权限的用户名
 
@@ -260,7 +260,7 @@ class CreateTaskRequestV2:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this CreateTaskRequestV2.
+        r"""Sets the username of this CreateTaskRequestV2.
 
         仓库有权限的用户名
 
@@ -271,7 +271,7 @@ class CreateTaskRequestV2:
 
     @property
     def access_token(self):
-        """Gets the access_token of this CreateTaskRequestV2.
+        r"""Gets the access_token of this CreateTaskRequestV2.
 
         仓库有权限的用户token
 
@@ -282,7 +282,7 @@ class CreateTaskRequestV2:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this CreateTaskRequestV2.
+        r"""Sets the access_token of this CreateTaskRequestV2.
 
         仓库有权限的用户token
 
@@ -293,7 +293,7 @@ class CreateTaskRequestV2:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this CreateTaskRequestV2.
+        r"""Gets the endpoint_id of this CreateTaskRequestV2.
 
         仓库有权限的用户endpointId
 
@@ -304,7 +304,7 @@ class CreateTaskRequestV2:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this CreateTaskRequestV2.
+        r"""Sets the endpoint_id of this CreateTaskRequestV2.
 
         仓库有权限的用户endpointId
 
@@ -315,7 +315,7 @@ class CreateTaskRequestV2:
 
     @property
     def inc_config(self):
-        """Gets the inc_config of this CreateTaskRequestV2.
+        r"""Gets the inc_config of this CreateTaskRequestV2.
 
         :return: The inc_config of this CreateTaskRequestV2.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.IncConfigV2`
@@ -324,7 +324,7 @@ class CreateTaskRequestV2:
 
     @inc_config.setter
     def inc_config(self, inc_config):
-        """Sets the inc_config of this CreateTaskRequestV2.
+        r"""Sets the inc_config of this CreateTaskRequestV2.
 
         :param inc_config: The inc_config of this CreateTaskRequestV2.
         :type inc_config: :class:`huaweicloudsdkcodeartscheck.v2.IncConfigV2`
@@ -333,7 +333,7 @@ class CreateTaskRequestV2:
 
     @property
     def enable_fossbot(self):
-        """Gets the enable_fossbot of this CreateTaskRequestV2.
+        r"""Gets the enable_fossbot of this CreateTaskRequestV2.
 
         是否打开fossbot检查,默认不开
 
@@ -344,7 +344,7 @@ class CreateTaskRequestV2:
 
     @enable_fossbot.setter
     def enable_fossbot(self, enable_fossbot):
-        """Sets the enable_fossbot of this CreateTaskRequestV2.
+        r"""Sets the enable_fossbot of this CreateTaskRequestV2.
 
         是否打开fossbot检查,默认不开
 
@@ -355,7 +355,7 @@ class CreateTaskRequestV2:
 
     @property
     def resource_pool_id(self):
-        """Gets the resource_pool_id of this CreateTaskRequestV2.
+        r"""Gets the resource_pool_id of this CreateTaskRequestV2.
 
         资源池id，可以从资源池管理页面获取
 
@@ -366,7 +366,7 @@ class CreateTaskRequestV2:
 
     @resource_pool_id.setter
     def resource_pool_id(self, resource_pool_id):
-        """Sets the resource_pool_id of this CreateTaskRequestV2.
+        r"""Sets the resource_pool_id of this CreateTaskRequestV2.
 
         资源池id，可以从资源池管理页面获取
 

@@ -43,7 +43,7 @@ class ApplyInternetReq:
     }
 
     def __init__(self, nat_spec=None, eip_charge_mode=None, bandwidth_size=None, eip_type=None, vpc_id=None, subnet_id=None, enterprise_project_id=None, nat_id=None, nat_name=None, eip_name=None):
-        """ApplyInternetReq
+        r"""ApplyInternetReq
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class ApplyInternetReq:
 
     @property
     def nat_spec(self):
-        """Gets the nat_spec of this ApplyInternetReq.
+        r"""Gets the nat_spec of this ApplyInternetReq.
 
         公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型
 
@@ -112,7 +112,7 @@ class ApplyInternetReq:
 
     @nat_spec.setter
     def nat_spec(self, nat_spec):
-        """Sets the nat_spec of this ApplyInternetReq.
+        r"""Sets the nat_spec of this ApplyInternetReq.
 
         公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型
 
@@ -123,7 +123,7 @@ class ApplyInternetReq:
 
     @property
     def eip_charge_mode(self):
-        """Gets the eip_charge_mode of this ApplyInternetReq.
+        r"""Gets the eip_charge_mode of this ApplyInternetReq.
 
         traffic（按流量计费），bandwidth（按带宽计费）
 
@@ -134,7 +134,7 @@ class ApplyInternetReq:
 
     @eip_charge_mode.setter
     def eip_charge_mode(self, eip_charge_mode):
-        """Sets the eip_charge_mode of this ApplyInternetReq.
+        r"""Sets the eip_charge_mode of this ApplyInternetReq.
 
         traffic（按流量计费），bandwidth（按带宽计费）
 
@@ -145,7 +145,7 @@ class ApplyInternetReq:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ApplyInternetReq.
+        r"""Gets the bandwidth_size of this ApplyInternetReq.
 
         带宽大小
 
@@ -156,7 +156,7 @@ class ApplyInternetReq:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ApplyInternetReq.
+        r"""Sets the bandwidth_size of this ApplyInternetReq.
 
         带宽大小
 
@@ -167,7 +167,7 @@ class ApplyInternetReq:
 
     @property
     def eip_type(self):
-        """Gets the eip_type of this ApplyInternetReq.
+        r"""Gets the eip_type of this ApplyInternetReq.
 
         EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp
 
@@ -178,7 +178,7 @@ class ApplyInternetReq:
 
     @eip_type.setter
     def eip_type(self, eip_type):
-        """Sets the eip_type of this ApplyInternetReq.
+        r"""Sets the eip_type of this ApplyInternetReq.
 
         EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp
 
@@ -189,7 +189,7 @@ class ApplyInternetReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ApplyInternetReq.
+        r"""Gets the vpc_id of this ApplyInternetReq.
 
         vpc的id
 
@@ -200,7 +200,7 @@ class ApplyInternetReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ApplyInternetReq.
+        r"""Sets the vpc_id of this ApplyInternetReq.
 
         vpc的id
 
@@ -211,7 +211,7 @@ class ApplyInternetReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ApplyInternetReq.
+        r"""Gets the subnet_id of this ApplyInternetReq.
 
         子网的id
 
@@ -222,7 +222,7 @@ class ApplyInternetReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ApplyInternetReq.
+        r"""Sets the subnet_id of this ApplyInternetReq.
 
         子网的id
 
@@ -233,7 +233,7 @@ class ApplyInternetReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplyInternetReq.
+        r"""Gets the enterprise_project_id of this ApplyInternetReq.
 
         企业项目ID，默认\"0\"
 
@@ -244,7 +244,7 @@ class ApplyInternetReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplyInternetReq.
+        r"""Sets the enterprise_project_id of this ApplyInternetReq.
 
         企业项目ID，默认\"0\"
 
@@ -255,7 +255,7 @@ class ApplyInternetReq:
 
     @property
     def nat_id(self):
-        """Gets the nat_id of this ApplyInternetReq.
+        r"""Gets the nat_id of this ApplyInternetReq.
 
         nat的id，有传则使用该NAT，否则新建
 
@@ -266,7 +266,7 @@ class ApplyInternetReq:
 
     @nat_id.setter
     def nat_id(self, nat_id):
-        """Sets the nat_id of this ApplyInternetReq.
+        r"""Sets the nat_id of this ApplyInternetReq.
 
         nat的id，有传则使用该NAT，否则新建
 
@@ -277,7 +277,7 @@ class ApplyInternetReq:
 
     @property
     def nat_name(self):
-        """Gets the nat_name of this ApplyInternetReq.
+        r"""Gets the nat_name of this ApplyInternetReq.
 
         nat名称，默认值：nat-workspace
 
@@ -288,7 +288,7 @@ class ApplyInternetReq:
 
     @nat_name.setter
     def nat_name(self, nat_name):
-        """Sets the nat_name of this ApplyInternetReq.
+        r"""Sets the nat_name of this ApplyInternetReq.
 
         nat名称，默认值：nat-workspace
 
@@ -299,7 +299,7 @@ class ApplyInternetReq:
 
     @property
     def eip_name(self):
-        """Gets the eip_name of this ApplyInternetReq.
+        r"""Gets the eip_name of this ApplyInternetReq.
 
         eip名称，默认值：eip-workspace
 
@@ -310,7 +310,7 @@ class ApplyInternetReq:
 
     @eip_name.setter
     def eip_name(self, eip_name):
-        """Sets the eip_name of this ApplyInternetReq.
+        r"""Sets the eip_name of this ApplyInternetReq.
 
         eip名称，默认值：eip-workspace
 

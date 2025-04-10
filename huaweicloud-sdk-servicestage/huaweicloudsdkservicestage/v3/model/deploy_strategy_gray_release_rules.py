@@ -31,7 +31,7 @@ class DeployStrategyGrayReleaseRules:
     }
 
     def __init__(self, type=None, key=None, value=None, condition=None):
-        """DeployStrategyGrayReleaseRules
+        r"""DeployStrategyGrayReleaseRules
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeployStrategyGrayReleaseRules:
 
     @property
     def type(self):
-        """Gets the type of this DeployStrategyGrayReleaseRules.
+        r"""Gets the type of this DeployStrategyGrayReleaseRules.
 
         匹配类型
 
@@ -71,7 +71,7 @@ class DeployStrategyGrayReleaseRules:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeployStrategyGrayReleaseRules.
+        r"""Sets the type of this DeployStrategyGrayReleaseRules.
 
         匹配类型
 
@@ -82,7 +82,7 @@ class DeployStrategyGrayReleaseRules:
 
     @property
     def key(self):
-        """Gets the key of this DeployStrategyGrayReleaseRules.
+        r"""Gets the key of this DeployStrategyGrayReleaseRules.
 
         参数名称
 
@@ -93,7 +93,7 @@ class DeployStrategyGrayReleaseRules:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeployStrategyGrayReleaseRules.
+        r"""Sets the key of this DeployStrategyGrayReleaseRules.
 
         参数名称
 
@@ -104,7 +104,7 @@ class DeployStrategyGrayReleaseRules:
 
     @property
     def value(self):
-        """Gets the value of this DeployStrategyGrayReleaseRules.
+        r"""Gets the value of this DeployStrategyGrayReleaseRules.
 
         条件值
 
@@ -115,7 +115,7 @@ class DeployStrategyGrayReleaseRules:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeployStrategyGrayReleaseRules.
+        r"""Sets the value of this DeployStrategyGrayReleaseRules.
 
         条件值
 
@@ -126,7 +126,7 @@ class DeployStrategyGrayReleaseRules:
 
     @property
     def condition(self):
-        """Gets the condition of this DeployStrategyGrayReleaseRules.
+        r"""Gets the condition of this DeployStrategyGrayReleaseRules.
 
         equal相等，match匹配，in枚举
 
@@ -137,7 +137,7 @@ class DeployStrategyGrayReleaseRules:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this DeployStrategyGrayReleaseRules.
+        r"""Sets the condition of this DeployStrategyGrayReleaseRules.
 
         equal相等，match匹配，in枚举
 

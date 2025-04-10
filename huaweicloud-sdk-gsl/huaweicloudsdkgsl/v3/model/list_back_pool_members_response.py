@@ -32,7 +32,7 @@ class ListBackPoolMembersResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, pool_members=None):
-        """ListBackPoolMembersResponse
+        r"""ListBackPoolMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackPoolMembersResponse.
+        r"""Gets the limit of this ListBackPoolMembersResponse.
 
         每页记录数
 
@@ -76,7 +76,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackPoolMembersResponse.
+        r"""Sets the limit of this ListBackPoolMembersResponse.
 
         每页记录数
 
@@ -87,7 +87,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackPoolMembersResponse.
+        r"""Gets the offset of this ListBackPoolMembersResponse.
 
         页码
 
@@ -98,7 +98,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackPoolMembersResponse.
+        r"""Sets the offset of this ListBackPoolMembersResponse.
 
         页码
 
@@ -109,7 +109,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBackPoolMembersResponse.
+        r"""Gets the count of this ListBackPoolMembersResponse.
 
         当前流量池的成员总数
 
@@ -120,7 +120,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBackPoolMembersResponse.
+        r"""Sets the count of this ListBackPoolMembersResponse.
 
         当前流量池的成员总数
 
@@ -131,7 +131,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @property
     def pool_members(self):
-        """Gets the pool_members of this ListBackPoolMembersResponse.
+        r"""Gets the pool_members of this ListBackPoolMembersResponse.
 
         查询出来的流量池成员记录列表
 
@@ -142,7 +142,7 @@ class ListBackPoolMembersResponse(SdkResponse):
 
     @pool_members.setter
     def pool_members(self, pool_members):
-        """Sets the pool_members of this ListBackPoolMembersResponse.
+        r"""Sets the pool_members of this ListBackPoolMembersResponse.
 
         查询出来的流量池成员记录列表
 

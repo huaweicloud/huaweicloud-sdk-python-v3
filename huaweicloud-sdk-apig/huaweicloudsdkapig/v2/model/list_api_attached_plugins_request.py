@@ -41,7 +41,7 @@ class ListApiAttachedPluginsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, api_id=None, env_id=None, plugin_name=None, plugin_id=None, env_name=None, plugin_type=None):
-        """ListApiAttachedPluginsRequest
+        r"""ListApiAttachedPluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApiAttachedPluginsRequest.
+        r"""Gets the instance_id of this ListApiAttachedPluginsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -108,7 +108,7 @@ class ListApiAttachedPluginsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApiAttachedPluginsRequest.
+        r"""Sets the instance_id of this ListApiAttachedPluginsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -119,7 +119,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApiAttachedPluginsRequest.
+        r"""Gets the offset of this ListApiAttachedPluginsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -130,7 +130,7 @@ class ListApiAttachedPluginsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApiAttachedPluginsRequest.
+        r"""Sets the offset of this ListApiAttachedPluginsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -141,7 +141,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApiAttachedPluginsRequest.
+        r"""Gets the limit of this ListApiAttachedPluginsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -152,7 +152,7 @@ class ListApiAttachedPluginsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApiAttachedPluginsRequest.
+        r"""Sets the limit of this ListApiAttachedPluginsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -163,7 +163,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListApiAttachedPluginsRequest.
+        r"""Gets the api_id of this ListApiAttachedPluginsRequest.
 
         API编号
 
@@ -174,7 +174,7 @@ class ListApiAttachedPluginsRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListApiAttachedPluginsRequest.
+        r"""Sets the api_id of this ListApiAttachedPluginsRequest.
 
         API编号
 
@@ -185,7 +185,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListApiAttachedPluginsRequest.
+        r"""Gets the env_id of this ListApiAttachedPluginsRequest.
 
         发布的环境编号
 
@@ -196,7 +196,7 @@ class ListApiAttachedPluginsRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListApiAttachedPluginsRequest.
+        r"""Sets the env_id of this ListApiAttachedPluginsRequest.
 
         发布的环境编号
 
@@ -207,7 +207,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ListApiAttachedPluginsRequest.
+        r"""Gets the plugin_name of this ListApiAttachedPluginsRequest.
 
         插件名称
 
@@ -218,7 +218,7 @@ class ListApiAttachedPluginsRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ListApiAttachedPluginsRequest.
+        r"""Sets the plugin_name of this ListApiAttachedPluginsRequest.
 
         插件名称
 
@@ -229,7 +229,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this ListApiAttachedPluginsRequest.
+        r"""Gets the plugin_id of this ListApiAttachedPluginsRequest.
 
         插件编号
 
@@ -240,7 +240,7 @@ class ListApiAttachedPluginsRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this ListApiAttachedPluginsRequest.
+        r"""Sets the plugin_id of this ListApiAttachedPluginsRequest.
 
         插件编号
 
@@ -251,7 +251,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ListApiAttachedPluginsRequest.
+        r"""Gets the env_name of this ListApiAttachedPluginsRequest.
 
         环境名称
 
@@ -262,7 +262,7 @@ class ListApiAttachedPluginsRequest:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ListApiAttachedPluginsRequest.
+        r"""Sets the env_name of this ListApiAttachedPluginsRequest.
 
         环境名称
 
@@ -273,7 +273,7 @@ class ListApiAttachedPluginsRequest:
 
     @property
     def plugin_type(self):
-        """Gets the plugin_type of this ListApiAttachedPluginsRequest.
+        r"""Gets the plugin_type of this ListApiAttachedPluginsRequest.
 
         插件类型
 
@@ -284,7 +284,7 @@ class ListApiAttachedPluginsRequest:
 
     @plugin_type.setter
     def plugin_type(self, plugin_type):
-        """Sets the plugin_type of this ListApiAttachedPluginsRequest.
+        r"""Sets the plugin_type of this ListApiAttachedPluginsRequest.
 
         插件类型
 

@@ -27,7 +27,7 @@ class FinancialStatementResultImageSize:
     }
 
     def __init__(self, height=None, width=None):
-        """FinancialStatementResultImageSize
+        r"""FinancialStatementResultImageSize
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FinancialStatementResultImageSize:
 
     @property
     def height(self):
-        """Gets the height of this FinancialStatementResultImageSize.
+        r"""Gets the height of this FinancialStatementResultImageSize.
 
         矫正后图像的高。 
 
@@ -61,7 +61,7 @@ class FinancialStatementResultImageSize:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this FinancialStatementResultImageSize.
+        r"""Sets the height of this FinancialStatementResultImageSize.
 
         矫正后图像的高。 
 
@@ -72,7 +72,7 @@ class FinancialStatementResultImageSize:
 
     @property
     def width(self):
-        """Gets the width of this FinancialStatementResultImageSize.
+        r"""Gets the width of this FinancialStatementResultImageSize.
 
         矫正后图像的宽。 
 
@@ -83,7 +83,7 @@ class FinancialStatementResultImageSize:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this FinancialStatementResultImageSize.
+        r"""Sets the width of this FinancialStatementResultImageSize.
 
         矫正后图像的宽。 
 

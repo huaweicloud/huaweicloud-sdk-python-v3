@@ -65,7 +65,7 @@ class MetadataCollectionTask:
     }
 
     def __init__(self, id=None, name=None, description=None, user_id=None, create_time=None, project_id=None, dir_id=None, schedule_config=None, parameter_config=None, update_time=None, user_name=None, path=None, last_run_time=None, start_time=None, end_time=None, next_run_time=None, duty_person=None, update_type=None, data_source_type=None, task_config=None, data_source_workspace_id=None):
-        """MetadataCollectionTask
+        r"""MetadataCollectionTask
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class MetadataCollectionTask:
 
     @property
     def id(self):
-        """Gets the id of this MetadataCollectionTask.
+        r"""Gets the id of this MetadataCollectionTask.
 
         任务id
 
@@ -188,7 +188,7 @@ class MetadataCollectionTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MetadataCollectionTask.
+        r"""Sets the id of this MetadataCollectionTask.
 
         任务id
 
@@ -199,7 +199,7 @@ class MetadataCollectionTask:
 
     @property
     def name(self):
-        """Gets the name of this MetadataCollectionTask.
+        r"""Gets the name of this MetadataCollectionTask.
 
         任务名称
 
@@ -210,7 +210,7 @@ class MetadataCollectionTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetadataCollectionTask.
+        r"""Sets the name of this MetadataCollectionTask.
 
         任务名称
 
@@ -221,7 +221,7 @@ class MetadataCollectionTask:
 
     @property
     def description(self):
-        """Gets the description of this MetadataCollectionTask.
+        r"""Gets the description of this MetadataCollectionTask.
 
         任务描述
 
@@ -232,7 +232,7 @@ class MetadataCollectionTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MetadataCollectionTask.
+        r"""Sets the description of this MetadataCollectionTask.
 
         任务描述
 
@@ -243,7 +243,7 @@ class MetadataCollectionTask:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MetadataCollectionTask.
+        r"""Gets the user_id of this MetadataCollectionTask.
 
         用户id
 
@@ -254,7 +254,7 @@ class MetadataCollectionTask:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MetadataCollectionTask.
+        r"""Sets the user_id of this MetadataCollectionTask.
 
         用户id
 
@@ -265,7 +265,7 @@ class MetadataCollectionTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MetadataCollectionTask.
+        r"""Gets the create_time of this MetadataCollectionTask.
 
         创建时间
 
@@ -276,7 +276,7 @@ class MetadataCollectionTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MetadataCollectionTask.
+        r"""Sets the create_time of this MetadataCollectionTask.
 
         创建时间
 
@@ -287,7 +287,7 @@ class MetadataCollectionTask:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MetadataCollectionTask.
+        r"""Gets the project_id of this MetadataCollectionTask.
 
         产品id
 
@@ -298,7 +298,7 @@ class MetadataCollectionTask:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MetadataCollectionTask.
+        r"""Sets the project_id of this MetadataCollectionTask.
 
         产品id
 
@@ -309,7 +309,7 @@ class MetadataCollectionTask:
 
     @property
     def dir_id(self):
-        """Gets the dir_id of this MetadataCollectionTask.
+        r"""Gets the dir_id of this MetadataCollectionTask.
 
         目录id
 
@@ -320,7 +320,7 @@ class MetadataCollectionTask:
 
     @dir_id.setter
     def dir_id(self, dir_id):
-        """Sets the dir_id of this MetadataCollectionTask.
+        r"""Sets the dir_id of this MetadataCollectionTask.
 
         目录id
 
@@ -331,7 +331,7 @@ class MetadataCollectionTask:
 
     @property
     def schedule_config(self):
-        """Gets the schedule_config of this MetadataCollectionTask.
+        r"""Gets the schedule_config of this MetadataCollectionTask.
 
         :return: The schedule_config of this MetadataCollectionTask.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SchedulerInfo`
@@ -340,7 +340,7 @@ class MetadataCollectionTask:
 
     @schedule_config.setter
     def schedule_config(self, schedule_config):
-        """Sets the schedule_config of this MetadataCollectionTask.
+        r"""Sets the schedule_config of this MetadataCollectionTask.
 
         :param schedule_config: The schedule_config of this MetadataCollectionTask.
         :type schedule_config: :class:`huaweicloudsdkdataartsstudio.v1.SchedulerInfo`
@@ -349,7 +349,7 @@ class MetadataCollectionTask:
 
     @property
     def parameter_config(self):
-        """Gets the parameter_config of this MetadataCollectionTask.
+        r"""Gets the parameter_config of this MetadataCollectionTask.
 
         自定义元数据信息
 
@@ -360,7 +360,7 @@ class MetadataCollectionTask:
 
     @parameter_config.setter
     def parameter_config(self, parameter_config):
-        """Sets the parameter_config of this MetadataCollectionTask.
+        r"""Sets the parameter_config of this MetadataCollectionTask.
 
         自定义元数据信息
 
@@ -371,7 +371,7 @@ class MetadataCollectionTask:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MetadataCollectionTask.
+        r"""Gets the update_time of this MetadataCollectionTask.
 
         修改时间
 
@@ -382,7 +382,7 @@ class MetadataCollectionTask:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MetadataCollectionTask.
+        r"""Sets the update_time of this MetadataCollectionTask.
 
         修改时间
 
@@ -393,7 +393,7 @@ class MetadataCollectionTask:
 
     @property
     def user_name(self):
-        """Gets the user_name of this MetadataCollectionTask.
+        r"""Gets the user_name of this MetadataCollectionTask.
 
         用户名
 
@@ -404,7 +404,7 @@ class MetadataCollectionTask:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this MetadataCollectionTask.
+        r"""Sets the user_name of this MetadataCollectionTask.
 
         用户名
 
@@ -415,7 +415,7 @@ class MetadataCollectionTask:
 
     @property
     def path(self):
-        """Gets the path of this MetadataCollectionTask.
+        r"""Gets the path of this MetadataCollectionTask.
 
         路径
 
@@ -426,7 +426,7 @@ class MetadataCollectionTask:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this MetadataCollectionTask.
+        r"""Sets the path of this MetadataCollectionTask.
 
         路径
 
@@ -437,7 +437,7 @@ class MetadataCollectionTask:
 
     @property
     def last_run_time(self):
-        """Gets the last_run_time of this MetadataCollectionTask.
+        r"""Gets the last_run_time of this MetadataCollectionTask.
 
         最后一次执行时间
 
@@ -448,7 +448,7 @@ class MetadataCollectionTask:
 
     @last_run_time.setter
     def last_run_time(self, last_run_time):
-        """Sets the last_run_time of this MetadataCollectionTask.
+        r"""Sets the last_run_time of this MetadataCollectionTask.
 
         最后一次执行时间
 
@@ -459,7 +459,7 @@ class MetadataCollectionTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MetadataCollectionTask.
+        r"""Gets the start_time of this MetadataCollectionTask.
 
         开始时间
 
@@ -470,7 +470,7 @@ class MetadataCollectionTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MetadataCollectionTask.
+        r"""Sets the start_time of this MetadataCollectionTask.
 
         开始时间
 
@@ -481,7 +481,7 @@ class MetadataCollectionTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MetadataCollectionTask.
+        r"""Gets the end_time of this MetadataCollectionTask.
 
         结束时间
 
@@ -492,7 +492,7 @@ class MetadataCollectionTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MetadataCollectionTask.
+        r"""Sets the end_time of this MetadataCollectionTask.
 
         结束时间
 
@@ -503,7 +503,7 @@ class MetadataCollectionTask:
 
     @property
     def next_run_time(self):
-        """Gets the next_run_time of this MetadataCollectionTask.
+        r"""Gets the next_run_time of this MetadataCollectionTask.
 
         下一次执行时间
 
@@ -514,7 +514,7 @@ class MetadataCollectionTask:
 
     @next_run_time.setter
     def next_run_time(self, next_run_time):
-        """Sets the next_run_time of this MetadataCollectionTask.
+        r"""Sets the next_run_time of this MetadataCollectionTask.
 
         下一次执行时间
 
@@ -525,7 +525,7 @@ class MetadataCollectionTask:
 
     @property
     def duty_person(self):
-        """Gets the duty_person of this MetadataCollectionTask.
+        r"""Gets the duty_person of this MetadataCollectionTask.
 
         责任人
 
@@ -536,7 +536,7 @@ class MetadataCollectionTask:
 
     @duty_person.setter
     def duty_person(self, duty_person):
-        """Sets the duty_person of this MetadataCollectionTask.
+        r"""Sets the duty_person of this MetadataCollectionTask.
 
         责任人
 
@@ -547,7 +547,7 @@ class MetadataCollectionTask:
 
     @property
     def update_type(self):
-        """Gets the update_type of this MetadataCollectionTask.
+        r"""Gets the update_type of this MetadataCollectionTask.
 
         修改类型
 
@@ -558,7 +558,7 @@ class MetadataCollectionTask:
 
     @update_type.setter
     def update_type(self, update_type):
-        """Sets the update_type of this MetadataCollectionTask.
+        r"""Sets the update_type of this MetadataCollectionTask.
 
         修改类型
 
@@ -569,7 +569,7 @@ class MetadataCollectionTask:
 
     @property
     def data_source_type(self):
-        """Gets the data_source_type of this MetadataCollectionTask.
+        r"""Gets the data_source_type of this MetadataCollectionTask.
 
         数据来源类型
 
@@ -580,7 +580,7 @@ class MetadataCollectionTask:
 
     @data_source_type.setter
     def data_source_type(self, data_source_type):
-        """Sets the data_source_type of this MetadataCollectionTask.
+        r"""Sets the data_source_type of this MetadataCollectionTask.
 
         数据来源类型
 
@@ -591,7 +591,7 @@ class MetadataCollectionTask:
 
     @property
     def task_config(self):
-        """Gets the task_config of this MetadataCollectionTask.
+        r"""Gets the task_config of this MetadataCollectionTask.
 
         任务信息Map<String, Object>
 
@@ -602,7 +602,7 @@ class MetadataCollectionTask:
 
     @task_config.setter
     def task_config(self, task_config):
-        """Sets the task_config of this MetadataCollectionTask.
+        r"""Sets the task_config of this MetadataCollectionTask.
 
         任务信息Map<String, Object>
 
@@ -613,7 +613,7 @@ class MetadataCollectionTask:
 
     @property
     def data_source_workspace_id(self):
-        """Gets the data_source_workspace_id of this MetadataCollectionTask.
+        r"""Gets the data_source_workspace_id of this MetadataCollectionTask.
 
         数据来源工作空间id
 
@@ -624,7 +624,7 @@ class MetadataCollectionTask:
 
     @data_source_workspace_id.setter
     def data_source_workspace_id(self, data_source_workspace_id):
-        """Sets the data_source_workspace_id of this MetadataCollectionTask.
+        r"""Sets the data_source_workspace_id of this MetadataCollectionTask.
 
         数据来源工作空间id
 

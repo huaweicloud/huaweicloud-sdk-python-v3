@@ -37,7 +37,7 @@ class StrongConstraintDto:
     }
 
     def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None, interaction=None):
-        """StrongConstraintDto
+        r"""StrongConstraintDto
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class StrongConstraintDto:
 
     @property
     def id(self):
-        """Gets the id of this StrongConstraintDto.
+        r"""Gets the id of this StrongConstraintDto.
 
         自定义模型id，仅强约束为模型时填写
 
@@ -95,7 +95,7 @@ class StrongConstraintDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StrongConstraintDto.
+        r"""Sets the id of this StrongConstraintDto.
 
         自定义模型id，仅强约束为模型时填写
 
@@ -106,7 +106,7 @@ class StrongConstraintDto:
 
     @property
     def name(self):
-        """Gets the name of this StrongConstraintDto.
+        r"""Gets the name of this StrongConstraintDto.
 
         属性名称
 
@@ -117,7 +117,7 @@ class StrongConstraintDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StrongConstraintDto.
+        r"""Sets the name of this StrongConstraintDto.
 
         属性名称
 
@@ -128,7 +128,7 @@ class StrongConstraintDto:
 
     @property
     def type(self):
-        """Gets the type of this StrongConstraintDto.
+        r"""Gets the type of this StrongConstraintDto.
 
         :return: The type of this StrongConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StrongConstraintType`
@@ -137,7 +137,7 @@ class StrongConstraintDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StrongConstraintDto.
+        r"""Sets the type of this StrongConstraintDto.
 
         :param type: The type of this StrongConstraintDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.StrongConstraintType`
@@ -146,7 +146,7 @@ class StrongConstraintDto:
 
     @property
     def bool(self):
-        """Gets the bool of this StrongConstraintDto.
+        r"""Gets the bool of this StrongConstraintDto.
 
         属性约束类型bool的参数
 
@@ -157,7 +157,7 @@ class StrongConstraintDto:
 
     @bool.setter
     def bool(self, bool):
-        """Sets the bool of this StrongConstraintDto.
+        r"""Sets the bool of this StrongConstraintDto.
 
         属性约束类型bool的参数
 
@@ -168,7 +168,7 @@ class StrongConstraintDto:
 
     @property
     def range(self):
-        """Gets the range of this StrongConstraintDto.
+        r"""Gets the range of this StrongConstraintDto.
 
         属性约束类型range的参数
 
@@ -179,7 +179,7 @@ class StrongConstraintDto:
 
     @range.setter
     def range(self, range):
-        """Sets the range of this StrongConstraintDto.
+        r"""Sets the range of this StrongConstraintDto.
 
         属性约束类型range的参数
 
@@ -190,7 +190,7 @@ class StrongConstraintDto:
 
     @property
     def struct(self):
-        """Gets the struct of this StrongConstraintDto.
+        r"""Gets the struct of this StrongConstraintDto.
 
         :return: The struct of this StrongConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
@@ -199,7 +199,7 @@ class StrongConstraintDto:
 
     @struct.setter
     def struct(self, struct):
-        """Sets the struct of this StrongConstraintDto.
+        r"""Sets the struct of this StrongConstraintDto.
 
         :param struct: The struct of this StrongConstraintDto.
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
@@ -208,7 +208,7 @@ class StrongConstraintDto:
 
     @property
     def interaction(self):
-        """Gets the interaction of this StrongConstraintDto.
+        r"""Gets the interaction of this StrongConstraintDto.
 
         :return: The interaction of this StrongConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
@@ -217,7 +217,7 @@ class StrongConstraintDto:
 
     @interaction.setter
     def interaction(self, interaction):
-        """Sets the interaction of this StrongConstraintDto.
+        r"""Sets the interaction of this StrongConstraintDto.
 
         :param interaction: The interaction of this StrongConstraintDto.
         :type interaction: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`

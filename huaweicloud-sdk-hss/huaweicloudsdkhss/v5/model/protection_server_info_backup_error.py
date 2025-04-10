@@ -27,7 +27,7 @@ class ProtectionServerInfoBackupError:
     }
 
     def __init__(self, error_code=None, error_description=None):
-        """ProtectionServerInfoBackupError
+        r"""ProtectionServerInfoBackupError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProtectionServerInfoBackupError:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ProtectionServerInfoBackupError.
+        r"""Gets the error_code of this ProtectionServerInfoBackupError.
 
         错误编码，包含如下2种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
 
@@ -61,7 +61,7 @@ class ProtectionServerInfoBackupError:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ProtectionServerInfoBackupError.
+        r"""Sets the error_code of this ProtectionServerInfoBackupError.
 
         错误编码，包含如下2种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
 
@@ -72,7 +72,7 @@ class ProtectionServerInfoBackupError:
 
     @property
     def error_description(self):
-        """Gets the error_description of this ProtectionServerInfoBackupError.
+        r"""Gets the error_description of this ProtectionServerInfoBackupError.
 
         错误描述
 
@@ -83,7 +83,7 @@ class ProtectionServerInfoBackupError:
 
     @error_description.setter
     def error_description(self, error_description):
-        """Sets the error_description of this ProtectionServerInfoBackupError.
+        r"""Sets the error_description of this ProtectionServerInfoBackupError.
 
         错误描述
 

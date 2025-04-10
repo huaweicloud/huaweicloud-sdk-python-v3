@@ -41,7 +41,7 @@ class ShowOnlineMeetingDetailRequest:
     }
 
     def __init__(self, conference_id=None, offset=None, limit=None, search_key=None, user_uuid=None, x_type=None, x_query_type=None, x_authorization_type=None, x_site_id=None):
-        """ShowOnlineMeetingDetailRequest
+        r"""ShowOnlineMeetingDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the conference_id of this ShowOnlineMeetingDetailRequest.
 
         会议ID。 > 会议ID。创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -109,7 +109,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the conference_id of this ShowOnlineMeetingDetailRequest.
 
         会议ID。 > 会议ID。创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -120,7 +120,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the offset of this ShowOnlineMeetingDetailRequest.
 
         查询偏移量。默认为0。针对PageParticipant中的与会者分页。
 
@@ -131,7 +131,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the offset of this ShowOnlineMeetingDetailRequest.
 
         查询偏移量。默认为0。针对PageParticipant中的与会者分页。
 
@@ -142,7 +142,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the limit of this ShowOnlineMeetingDetailRequest.
 
         查询数量。默认值20。
 
@@ -153,7 +153,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the limit of this ShowOnlineMeetingDetailRequest.
 
         查询数量。默认值20。
 
@@ -164,7 +164,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the search_key of this ShowOnlineMeetingDetailRequest.
 
         查询条件。长度限制为1-128个字符。
 
@@ -175,7 +175,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the search_key of this ShowOnlineMeetingDetailRequest.
 
         查询条件。长度限制为1-128个字符。
 
@@ -186,7 +186,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the user_uuid of this ShowOnlineMeetingDetailRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -197,7 +197,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the user_uuid of this ShowOnlineMeetingDetailRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -208,7 +208,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def x_type(self):
-        """Gets the x_type of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the x_type of this ShowOnlineMeetingDetailRequest.
 
         默认值为0。 - 0: 不区分终端和与会人 - 1: 分页查询区分终端和与会人，结果合并返回 - 2: 单独查询终端和与会人，结果单独返回
 
@@ -219,7 +219,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @x_type.setter
     def x_type(self, x_type):
-        """Sets the x_type of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the x_type of this ShowOnlineMeetingDetailRequest.
 
         默认值为0。 - 0: 不区分终端和与会人 - 1: 分页查询区分终端和与会人，结果合并返回 - 2: 单独查询终端和与会人，结果单独返回
 
@@ -230,7 +230,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def x_query_type(self):
-        """Gets the x_query_type of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the x_query_type of this ShowOnlineMeetingDetailRequest.
 
         当X-Type为2时，该字段有效。默认值为0。 - 0: 查询与会人 - 1: 查询终端
 
@@ -241,7 +241,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @x_query_type.setter
     def x_query_type(self, x_query_type):
-        """Sets the x_query_type of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the x_query_type of this ShowOnlineMeetingDetailRequest.
 
         当X-Type为2时，该字段有效。默认值为0。 - 0: 查询与会人 - 1: 查询终端
 
@@ -252,7 +252,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the x_authorization_type of this ShowOnlineMeetingDetailRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -263,7 +263,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the x_authorization_type of this ShowOnlineMeetingDetailRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -274,7 +274,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this ShowOnlineMeetingDetailRequest.
+        r"""Gets the x_site_id of this ShowOnlineMeetingDetailRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -285,7 +285,7 @@ class ShowOnlineMeetingDetailRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this ShowOnlineMeetingDetailRequest.
+        r"""Sets the x_site_id of this ShowOnlineMeetingDetailRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

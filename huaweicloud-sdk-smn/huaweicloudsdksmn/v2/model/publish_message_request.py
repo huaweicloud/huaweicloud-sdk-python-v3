@@ -27,7 +27,7 @@ class PublishMessageRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """PublishMessageRequest
+        r"""PublishMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PublishMessageRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this PublishMessageRequest.
+        r"""Gets the topic_urn of this PublishMessageRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class PublishMessageRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this PublishMessageRequest.
+        r"""Sets the topic_urn of this PublishMessageRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class PublishMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishMessageRequest.
+        r"""Gets the body of this PublishMessageRequest.
 
         :return: The body of this PublishMessageRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.PublishMessageRequestBody`
@@ -80,7 +80,7 @@ class PublishMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishMessageRequest.
+        r"""Sets the body of this PublishMessageRequest.
 
         :param body: The body of this PublishMessageRequest.
         :type body: :class:`huaweicloudsdksmn.v2.PublishMessageRequestBody`

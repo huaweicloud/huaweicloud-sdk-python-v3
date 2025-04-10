@@ -33,7 +33,7 @@ class RejectManualReviewRequest:
     }
 
     def __init__(self, job_run_id=None, step_run_id=None, project_id=None, pipeline_id=None, pipeline_run_id=None):
-        """RejectManualReviewRequest
+        r"""RejectManualReviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class RejectManualReviewRequest:
 
     @property
     def job_run_id(self):
-        """Gets the job_run_id of this RejectManualReviewRequest.
+        r"""Gets the job_run_id of this RejectManualReviewRequest.
 
         流水线任务ID
 
@@ -77,7 +77,7 @@ class RejectManualReviewRequest:
 
     @job_run_id.setter
     def job_run_id(self, job_run_id):
-        """Sets the job_run_id of this RejectManualReviewRequest.
+        r"""Sets the job_run_id of this RejectManualReviewRequest.
 
         流水线任务ID
 
@@ -88,7 +88,7 @@ class RejectManualReviewRequest:
 
     @property
     def step_run_id(self):
-        """Gets the step_run_id of this RejectManualReviewRequest.
+        r"""Gets the step_run_id of this RejectManualReviewRequest.
 
         流水线步骤ID
 
@@ -99,7 +99,7 @@ class RejectManualReviewRequest:
 
     @step_run_id.setter
     def step_run_id(self, step_run_id):
-        """Sets the step_run_id of this RejectManualReviewRequest.
+        r"""Sets the step_run_id of this RejectManualReviewRequest.
 
         流水线步骤ID
 
@@ -110,7 +110,7 @@ class RejectManualReviewRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RejectManualReviewRequest.
+        r"""Gets the project_id of this RejectManualReviewRequest.
 
         项目ID
 
@@ -121,7 +121,7 @@ class RejectManualReviewRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RejectManualReviewRequest.
+        r"""Sets the project_id of this RejectManualReviewRequest.
 
         项目ID
 
@@ -132,7 +132,7 @@ class RejectManualReviewRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this RejectManualReviewRequest.
+        r"""Gets the pipeline_id of this RejectManualReviewRequest.
 
         流水线ID
 
@@ -143,7 +143,7 @@ class RejectManualReviewRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this RejectManualReviewRequest.
+        r"""Sets the pipeline_id of this RejectManualReviewRequest.
 
         流水线ID
 
@@ -154,7 +154,7 @@ class RejectManualReviewRequest:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this RejectManualReviewRequest.
+        r"""Gets the pipeline_run_id of this RejectManualReviewRequest.
 
         流水线运行实例ID
 
@@ -165,7 +165,7 @@ class RejectManualReviewRequest:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this RejectManualReviewRequest.
+        r"""Sets the pipeline_run_id of this RejectManualReviewRequest.
 
         流水线运行实例ID
 

@@ -25,7 +25,7 @@ class TaskBaseBody:
     }
 
     def __init__(self, id=None):
-        """TaskBaseBody
+        r"""TaskBaseBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskBaseBody:
 
     @property
     def id(self):
-        """Gets the id of this TaskBaseBody.
+        r"""Gets the id of this TaskBaseBody.
 
         创建的部署任务id
 
@@ -54,7 +54,7 @@ class TaskBaseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskBaseBody.
+        r"""Sets the id of this TaskBaseBody.
 
         创建的部署任务id
 

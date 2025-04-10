@@ -47,7 +47,7 @@ class Table:
     }
 
     def __init__(self, create_time=None, data_type=None, data_location=None, last_access_time=None, location=None, owner=None, table_name=None, table_size=None, table_type=None, partition_columns=None, page_size=None, current_page=None):
-        """Table
+        r"""Table
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Table:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Table.
+        r"""Gets the create_time of this Table.
 
         表创建时间。是单位为“毫秒”的时间戳。
 
@@ -124,7 +124,7 @@ class Table:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Table.
+        r"""Sets the create_time of this Table.
 
         表创建时间。是单位为“毫秒”的时间戳。
 
@@ -135,7 +135,7 @@ class Table:
 
     @property
     def data_type(self):
-        """Gets the data_type of this Table.
+        r"""Gets the data_type of this Table.
 
         所列OBS表数据的类型，目前支持：parquet、ORC、CSV、JSON、Carbon、Avro格式。只有OBS表有该参数，其他表没有该参数。
 
@@ -146,7 +146,7 @@ class Table:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this Table.
+        r"""Sets the data_type of this Table.
 
         所列OBS表数据的类型，目前支持：parquet、ORC、CSV、JSON、Carbon、Avro格式。只有OBS表有该参数，其他表没有该参数。
 
@@ -157,7 +157,7 @@ class Table:
 
     @property
     def data_location(self):
-        """Gets the data_location of this Table.
+        r"""Gets the data_location of this Table.
 
         数据存储位置，分为MANAGED，EXTERNAL和VIEW，其中EXTERNAL包括OBS表、CLoudTable表。
 
@@ -168,7 +168,7 @@ class Table:
 
     @data_location.setter
     def data_location(self, data_location):
-        """Sets the data_location of this Table.
+        r"""Sets the data_location of this Table.
 
         数据存储位置，分为MANAGED，EXTERNAL和VIEW，其中EXTERNAL包括OBS表、CLoudTable表。
 
@@ -179,7 +179,7 @@ class Table:
 
     @property
     def last_access_time(self):
-        """Gets the last_access_time of this Table.
+        r"""Gets the last_access_time of this Table.
 
         最近更新时间。是单位为“毫秒”的时间戳。
 
@@ -190,7 +190,7 @@ class Table:
 
     @last_access_time.setter
     def last_access_time(self, last_access_time):
-        """Sets the last_access_time of this Table.
+        r"""Sets the last_access_time of this Table.
 
         最近更新时间。是单位为“毫秒”的时间戳。
 
@@ -201,7 +201,7 @@ class Table:
 
     @property
     def location(self):
-        """Gets the location of this Table.
+        r"""Gets the location of this Table.
 
         OBS表上的存储路径。
 
@@ -212,7 +212,7 @@ class Table:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this Table.
+        r"""Sets the location of this Table.
 
         OBS表上的存储路径。
 
@@ -223,7 +223,7 @@ class Table:
 
     @property
     def owner(self):
-        """Gets the owner of this Table.
+        r"""Gets the owner of this Table.
 
         表创建者。
 
@@ -234,7 +234,7 @@ class Table:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Table.
+        r"""Sets the owner of this Table.
 
         表创建者。
 
@@ -245,7 +245,7 @@ class Table:
 
     @property
     def table_name(self):
-        """Gets the table_name of this Table.
+        r"""Gets the table_name of this Table.
 
         表名称。
 
@@ -256,7 +256,7 @@ class Table:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this Table.
+        r"""Sets the table_name of this Table.
 
         表名称。
 
@@ -267,7 +267,7 @@ class Table:
 
     @property
     def table_size(self):
-        """Gets the table_size of this Table.
+        r"""Gets the table_size of this Table.
 
         DLI表的大小。非DLI表该参数值为0。
 
@@ -278,7 +278,7 @@ class Table:
 
     @table_size.setter
     def table_size(self, table_size):
-        """Sets the table_size of this Table.
+        r"""Sets the table_size of this Table.
 
         DLI表的大小。非DLI表该参数值为0。
 
@@ -289,7 +289,7 @@ class Table:
 
     @property
     def table_type(self):
-        """Gets the table_type of this Table.
+        r"""Gets the table_type of this Table.
 
         表类型： OBS表为EXTERNAL DLI表为MANAGED View为VIEW
 
@@ -300,7 +300,7 @@ class Table:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this Table.
+        r"""Sets the table_type of this Table.
 
         表类型： OBS表为EXTERNAL DLI表为MANAGED View为VIEW
 
@@ -311,7 +311,7 @@ class Table:
 
     @property
     def partition_columns(self):
-        """Gets the partition_columns of this Table.
+        r"""Gets the partition_columns of this Table.
 
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
@@ -322,7 +322,7 @@ class Table:
 
     @partition_columns.setter
     def partition_columns(self, partition_columns):
-        """Sets the partition_columns of this Table.
+        r"""Sets the partition_columns of this Table.
 
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
@@ -333,7 +333,7 @@ class Table:
 
     @property
     def page_size(self):
-        """Gets the page_size of this Table.
+        r"""Gets the page_size of this Table.
 
         分页大小，最小为1，最大为100。
 
@@ -344,7 +344,7 @@ class Table:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this Table.
+        r"""Sets the page_size of this Table.
 
         分页大小，最小为1，最大为100。
 
@@ -355,7 +355,7 @@ class Table:
 
     @property
     def current_page(self):
-        """Gets the current_page of this Table.
+        r"""Gets the current_page of this Table.
 
         当前页码，最小为1。
 
@@ -366,7 +366,7 @@ class Table:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this Table.
+        r"""Sets the current_page of this Table.
 
         当前页码，最小为1。
 

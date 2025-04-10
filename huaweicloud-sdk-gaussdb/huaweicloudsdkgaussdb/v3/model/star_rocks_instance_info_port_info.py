@@ -25,7 +25,7 @@ class StarRocksInstanceInfoPortInfo:
     }
 
     def __init__(self, mysql_port=None):
-        """StarRocksInstanceInfoPortInfo
+        r"""StarRocksInstanceInfoPortInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StarRocksInstanceInfoPortInfo:
 
     @property
     def mysql_port(self):
-        """Gets the mysql_port of this StarRocksInstanceInfoPortInfo.
+        r"""Gets the mysql_port of this StarRocksInstanceInfoPortInfo.
 
         MySQL端口号。默认3306。
 
@@ -54,7 +54,7 @@ class StarRocksInstanceInfoPortInfo:
 
     @mysql_port.setter
     def mysql_port(self, mysql_port):
-        """Sets the mysql_port of this StarRocksInstanceInfoPortInfo.
+        r"""Sets the mysql_port of this StarRocksInstanceInfoPortInfo.
 
         MySQL端口号。默认3306。
 

@@ -35,7 +35,7 @@ class ListHostGroupBaseInfosRequest:
     }
 
     def __init__(self, application_id=None, project_uuid=None, os=None, page_index=None, page_size=None, name=None):
-        """ListHostGroupBaseInfosRequest
+        r"""ListHostGroupBaseInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListHostGroupBaseInfosRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListHostGroupBaseInfosRequest.
+        r"""Gets the application_id of this ListHostGroupBaseInfosRequest.
 
         应用id
 
@@ -87,7 +87,7 @@ class ListHostGroupBaseInfosRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListHostGroupBaseInfosRequest.
+        r"""Sets the application_id of this ListHostGroupBaseInfosRequest.
 
         应用id
 
@@ -98,7 +98,7 @@ class ListHostGroupBaseInfosRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ListHostGroupBaseInfosRequest.
+        r"""Gets the project_uuid of this ListHostGroupBaseInfosRequest.
 
         项目id
 
@@ -109,7 +109,7 @@ class ListHostGroupBaseInfosRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ListHostGroupBaseInfosRequest.
+        r"""Sets the project_uuid of this ListHostGroupBaseInfosRequest.
 
         项目id
 
@@ -120,7 +120,7 @@ class ListHostGroupBaseInfosRequest:
 
     @property
     def os(self):
-        """Gets the os of this ListHostGroupBaseInfosRequest.
+        r"""Gets the os of this ListHostGroupBaseInfosRequest.
 
         操作系统：windows|linux
 
@@ -131,7 +131,7 @@ class ListHostGroupBaseInfosRequest:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ListHostGroupBaseInfosRequest.
+        r"""Sets the os of this ListHostGroupBaseInfosRequest.
 
         操作系统：windows|linux
 
@@ -142,7 +142,7 @@ class ListHostGroupBaseInfosRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListHostGroupBaseInfosRequest.
+        r"""Gets the page_index of this ListHostGroupBaseInfosRequest.
 
         分页页码
 
@@ -153,7 +153,7 @@ class ListHostGroupBaseInfosRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListHostGroupBaseInfosRequest.
+        r"""Sets the page_index of this ListHostGroupBaseInfosRequest.
 
         分页页码
 
@@ -164,7 +164,7 @@ class ListHostGroupBaseInfosRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListHostGroupBaseInfosRequest.
+        r"""Gets the page_size of this ListHostGroupBaseInfosRequest.
 
         分页查询每页条数
 
@@ -175,7 +175,7 @@ class ListHostGroupBaseInfosRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListHostGroupBaseInfosRequest.
+        r"""Sets the page_size of this ListHostGroupBaseInfosRequest.
 
         分页查询每页条数
 
@@ -186,7 +186,7 @@ class ListHostGroupBaseInfosRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHostGroupBaseInfosRequest.
+        r"""Gets the name of this ListHostGroupBaseInfosRequest.
 
         按主机集群名称搜索关键字
 
@@ -197,7 +197,7 @@ class ListHostGroupBaseInfosRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHostGroupBaseInfosRequest.
+        r"""Sets the name of this ListHostGroupBaseInfosRequest.
 
         按主机集群名称搜索关键字
 

@@ -24,7 +24,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeSecurityGroupResponse
+        r"""ChangeSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 

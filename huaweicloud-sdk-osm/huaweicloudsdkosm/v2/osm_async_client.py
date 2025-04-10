@@ -34,7 +34,7 @@ class OsmAsyncClient(Client):
         return client_builder
 
     def check_hosts_async(self, request):
-        """验证授权主机
+        r"""验证授权主机
 
         验证授权主机密码是否正确
         
@@ -107,7 +107,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def check_need_verify_async(self, request):
-        """是否需要验证
+        r"""是否需要验证
 
         是否需要验证
         
@@ -182,7 +182,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def check_verify_codes_async(self, request):
-        """验证联系方式
+        r"""验证联系方式
 
         验证联系方式
         
@@ -253,7 +253,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def confirm_authorizations_async(self, request):
-        """确认授权
+        r"""确认授权
 
         确认授权
         
@@ -326,7 +326,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_ask_question_async(self, request):
-        """语料提问
+        r"""语料提问
 
         基于语料的一次问答
         
@@ -397,7 +397,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_case_extends_param_async(self, request):
-        """提交工单扩展参数
+        r"""提交工单扩展参数
 
         提交工单扩展参数
         
@@ -470,7 +470,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_case_labels_async(self, request):
-        """添加工单关联标签接口
+        r"""添加工单关联标签接口
 
         添加工单关联标签接口
         
@@ -544,7 +544,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_cases_async(self, request):
-        """创建工单
+        r"""创建工单
 
         创建工单
         
@@ -619,7 +619,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_diagnose_feedback_async(self, request):
-        """用户反馈是否有帮助
+        r"""用户反馈是否有帮助
 
         用户反馈是否有帮助
         
@@ -684,7 +684,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_diagnose_job_async(self, request):
-        """开始一键诊断
+        r"""开始一键诊断
 
         开始一键诊断
         
@@ -749,7 +749,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_evaluate_async(self, request):
-        """问答满意度评价
+        r"""问答满意度评价
 
         一次问答完毕后, 针对这一次问答提交满意度评价
         
@@ -824,7 +824,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_feedback_async(self, request):
-        """创建举报反馈
+        r"""创建举报反馈
 
         创建举报反馈
         
@@ -889,7 +889,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_labels_async(self, request):
-        """创建标签
+        r"""创建标签
 
         创建标签
         
@@ -960,7 +960,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_messages_async(self, request):
-        """提交留言
+        r"""提交留言
 
         提交留言
         
@@ -1033,7 +1033,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_privileges_async(self, request):
-        """创建授权
+        r"""创建授权
 
         创建授权
         
@@ -1104,7 +1104,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_qa_ask_async(self, request):
-        """新问答接口
+        r"""新问答接口
 
         支持多轮流程问答接口
         
@@ -1175,7 +1175,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_qa_feedbacks_async(self, request):
-        """反馈评价
+        r"""反馈评价
 
         提交/取消反馈评价
         
@@ -1248,7 +1248,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_question_in_session_async(self, request):
-        """提问（在制定的会话中）
+        r"""提问（在制定的会话中）
 
         提问（在制定的会话中）
         
@@ -1321,7 +1321,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_relations_async(self, request):
-        """创建关联
+        r"""创建关联
 
         创建关联，一个工单最多支持3个关联
         
@@ -1394,7 +1394,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_scores_async(self, request):
-        """提交评分
+        r"""提交评分
 
         提交评分
         
@@ -1467,7 +1467,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def create_session_async(self, request):
-        """创建问答会话
+        r"""创建问答会话
 
         用于创建问答会话, 创建会话后可开始问答
         
@@ -1536,7 +1536,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def delete_accessories_async(self, request):
-        """删除附件
+        r"""删除附件
 
         删除附件
         
@@ -1607,7 +1607,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def delete_case_labels_async(self, request):
-        """删除工单关联标签接口
+        r"""删除工单关联标签接口
 
         删除指定工单关联标签接口
         
@@ -1681,7 +1681,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def delete_labels_async(self, request):
-        """删除标签
+        r"""删除标签
 
         删除标签，同时会删除工单与标签关联关系
         
@@ -1752,7 +1752,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def delete_relation_async(self, request):
-        """删除关联
+        r"""删除关联
 
         删除关联
         
@@ -1825,7 +1825,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def download_accessories_async(self, request):
-        """下载附件
+        r"""下载附件
 
         下载附件
         
@@ -1898,7 +1898,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def download_cases_async(self, request):
-        """工单导出
+        r"""工单导出
 
         工单导出
         
@@ -1994,7 +1994,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def download_images_async(self, request):
-        """图片展示
+        r"""图片展示
 
         返回图片内容，用于页面直接展示
         
@@ -2067,7 +2067,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_accessory_access_urls_async(self, request):
-        """租户批量获取下载链接
+        r"""租户批量获取下载链接
 
         租户批量获取下载链接
         
@@ -2141,7 +2141,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_agencies_async(self, request):
-        """查询委托
+        r"""查询委托
 
         查询委托
         
@@ -2210,7 +2210,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_area_codes_async(self, request):
-        """查询国家码
+        r"""查询国家码
 
         查询国家码，用于提交工单页面填写联系方式使用
         
@@ -2279,7 +2279,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_articles_async(self, request):
-        """查询案例
+        r"""查询案例
 
         查询满足指定条件的案例列表
         
@@ -2352,7 +2352,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_authorizations_async(self, request):
-        """查看授权列表
+        r"""查看授权列表
 
         查询授权列表
         
@@ -2435,7 +2435,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_categories_async(self, request):
-        """查询工单类目列表
+        r"""查询工单类目列表
 
         查询工单类目列表
         
@@ -2504,7 +2504,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_cc_emails_async(self, request):
-        """查询工单抄送邮箱
+        r"""查询工单抄送邮箱
 
         查询工单抄送邮箱
         
@@ -2573,7 +2573,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_counts_async(self, request):
-        """统计各状态工单数量
+        r"""统计各状态工单数量
 
         统计各状态工单数量
         
@@ -2644,7 +2644,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_labels_async(self, request):
-        """查询工单关联标签接口
+        r"""查询工单关联标签接口
 
         查询工单关联标签接口
         
@@ -2715,7 +2715,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_limits_async(self, request):
-        """查询工单限制，比如抄送邮箱个数等
+        r"""查询工单限制，比如抄送邮箱个数等
 
         查询工单限制，比如抄送邮箱个数等
         
@@ -2784,7 +2784,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_operate_logs_async(self, request):
-        """查询工单操作日志
+        r"""查询工单操作日志
 
         查询工单操作日志
         
@@ -2861,7 +2861,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_quotas_async(self, request):
-        """查询工单配额
+        r"""查询工单配额
 
         查询工单配额
         
@@ -2934,7 +2934,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_case_templates_async(self, request):
-        """查询问题类型对应模板
+        r"""查询问题类型对应模板
 
         查询问题类型对应模板
         
@@ -3005,7 +3005,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_cases_async(self, request):
-        """查询工单列表接口
+        r"""查询工单列表接口
 
         查询工单列表接口
         
@@ -3102,7 +3102,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_customers_regions_async(self, request):
-        """查询用户关联的region
+        r"""查询用户关联的region
 
         查询用户关联的region
         
@@ -3171,7 +3171,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_diagnose_items_async(self, request):
-        """根据itemIds查询指定的诊断检查项执行结果
+        r"""根据itemIds查询指定的诊断检查项执行结果
 
         根据itemIds查询指定的诊断检查项执行结果
         
@@ -3236,7 +3236,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_diagnose_job_async(self, request):
-        """查询诊断任务执行结果
+        r"""查询诊断任务执行结果
 
         查询诊断任务执行结果
         
@@ -3301,7 +3301,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_diagnose_records_async(self, request):
-        """查询诊断历史记录列表
+        r"""查询诊断历史记录列表
 
         查询诊断历史记录列表
         
@@ -3370,7 +3370,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_diagnose_resources_async(self, request):
-        """获取资源信息
+        r"""获取资源信息
 
         获取资源信息
         
@@ -3435,7 +3435,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_extends_params_async(self, request):
-        """查询附加参数
+        r"""查询附加参数
 
         提单时，根据不同的产品或者问题类型，会存在不同的一些附加参数填写
         
@@ -3510,7 +3510,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_feedback_option_async(self, request):
-        """查询反馈选项
+        r"""查询反馈选项
 
         查询符合条件的反馈选项
         
@@ -3583,7 +3583,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_has_verified_contacts_async(self, request):
-        """查询已验证的列表
+        r"""查询已验证的列表
 
         查询已验证的列表
         
@@ -3670,7 +3670,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_history_operate_logs_async(self, request):
-        """查询堡垒机历史操作记录
+        r"""查询堡垒机历史操作记录
 
         查询堡垒机历史操作记录
         
@@ -3753,7 +3753,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_history_sessions_async(self, request):
-        """查询堡垒机历史会话列表
+        r"""查询堡垒机历史会话列表
 
         查询堡垒机历史会话列
         
@@ -3832,7 +3832,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_labels_async(self, request):
-        """查询标签
+        r"""查询标签
 
         查询标签
         
@@ -3909,7 +3909,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_messages_async(self, request):
-        """查询留言
+        r"""查询留言
 
         查询留言
         
@@ -3986,7 +3986,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_more_instant_messages_async(self, request):
-        """查询更多留言
+        r"""查询更多留言
 
         查询更多留言
         
@@ -4065,7 +4065,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_new_instant_messages_async(self, request):
-        """轮询查询即时消息
+        r"""轮询查询即时消息
 
         轮询查询即时消息接口
         
@@ -4141,7 +4141,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_notices_async(self, request):
-        """查询公告
+        r"""查询公告
 
         查询满足指定条件的公告列表
         
@@ -4212,7 +4212,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_order_incident_async(self, request):
-        """工单列表
+        r"""工单列表
 
         工单列表
         
@@ -4309,7 +4309,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_privileges_async(self, request):
-        """查询工单权限
+        r"""查询工单权限
 
         查询工单权限
         
@@ -4380,7 +4380,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_problem_types_async(self, request):
-        """查询问题类型列表
+        r"""查询问题类型列表
 
         提交工单时，选择产品类型之后选择对应的问题列表
         
@@ -4451,7 +4451,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_product_categories_async(self, request):
-        """查询产品类型列表
+        r"""查询产品类型列表
 
         查询产品类型列表
         
@@ -4522,7 +4522,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_recommend_words_async(self, request):
-        """查询推荐热词
+        r"""查询推荐热词
 
         查询指定条件的推荐热词
         
@@ -4597,7 +4597,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_regions_async(self, request):
-        """查询区域列表
+        r"""查询区域列表
 
         查询区域列表
         
@@ -4666,7 +4666,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_relation_async(self, request):
-        """查询关联工单
+        r"""查询关联工单
 
         查询工单的关联，返回关联工单的简要信息
         
@@ -4737,7 +4737,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_satisfaction_dimensions_async(self, request):
-        """工单满意度分类列表
+        r"""工单满意度分类列表
 
         工单满意度分类列表
         
@@ -4806,7 +4806,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_severities_async(self, request):
-        """查询问题严重性列表
+        r"""查询问题严重性列表
 
         查询问题严重性列表
         
@@ -4879,7 +4879,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_sub_customers_async(self, request):
-        """查询子用户信息
+        r"""查询子用户信息
 
         查询子用户信息
         
@@ -4952,7 +4952,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_tools_async(self, request):
-        """查询工具
+        r"""查询工具
 
         查询满足指定条件的工具列表
         
@@ -5023,7 +5023,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_transport_histories_async(self, request):
-        """查询堡垒机文件传输记录
+        r"""查询堡垒机文件传输记录
 
         查询堡垒机文件传输记录
         
@@ -5106,7 +5106,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def list_unread_new_instant_messages_async(self, request):
-        """查询未读消息
+        r"""查询未读消息
 
         查询未读消息
         
@@ -5180,7 +5180,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def revoke_message_async(self, request):
-        """撤回留言
+        r"""撤回留言
 
         撤回留言
         
@@ -5253,7 +5253,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def send_verify_codes_async(self, request):
-        """获取验证码
+        r"""获取验证码
 
         获取验证码
         
@@ -5324,7 +5324,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_accessory_limits_async(self, request):
-        """附件限制
+        r"""附件限制
 
         查询附件的一下限制，比如大小，数量，文件类型
         
@@ -5393,7 +5393,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_associated_questions_async(self, request):
-        """查询联想问题
+        r"""查询联想问题
 
         根据当前输入, 联想相关的问题
         
@@ -5464,7 +5464,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_authorization_detail_async(self, request):
-        """查询授权详情
+        r"""查询授权详情
 
         查询授权详情
         
@@ -5537,7 +5537,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_case_detail_async(self, request):
-        """查询工单详情
+        r"""查询工单详情
 
         查询工单详情
         
@@ -5610,7 +5610,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_case_extends_param_async(self, request):
-        """查询工单扩展参数
+        r"""查询工单扩展参数
 
         查询工单扩展参数
         
@@ -5683,7 +5683,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_case_status_async(self, request):
-        """查询某个工单状态
+        r"""查询某个工单状态
 
         查询某个工单状态
         
@@ -5754,7 +5754,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_configuration_async(self, request):
-        """查询配置
+        r"""查询配置
 
         查询配置
         
@@ -5819,7 +5819,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_customer_privilege_policy_async(self, request):
-        """查询提单权限
+        r"""查询提单权限
 
         查询是否开启提单权限限制，主账号可以操作开启，开启之后子账号默认无法提单
         
@@ -5888,7 +5888,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_download_accessory_url_async(self, request):
-        """附件下载地址
+        r"""附件下载地址
 
         附件下载地址
         
@@ -5959,7 +5959,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_latest_published_agreement_async(self, request):
-        """查看最新发布版本协议详情
+        r"""查看最新发布版本协议详情
 
         查看最新发布版本协议详情
         
@@ -6030,7 +6030,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_login_type_async(self, request):
-        """查询登录类型
+        r"""查询登录类型
 
         查询登录类型
         
@@ -6097,7 +6097,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_partners_cases_privilege_async(self, request):
-        """查询伙伴工单权限
+        r"""查询伙伴工单权限
 
         查询伙伴工单权限
         
@@ -6166,7 +6166,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_partners_service_info_async(self, request):
-        """查询关联伙伴服务信息
+        r"""查询关联伙伴服务信息
 
         查询关联伙伴服务信息
         
@@ -6239,7 +6239,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_qa_pair_detail_async(self, request):
-        """查询语料详情
+        r"""查询语料详情
 
         查询指定语料的详情
         
@@ -6310,7 +6310,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_qa_pairs_async(self, request):
-        """查询语料
+        r"""查询语料
 
         查询满足指定条件的语料列表
         
@@ -6383,7 +6383,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_signed_latest_published_agreement_async(self, request):
-        """查询用户是否签署最新协议
+        r"""查询用户是否签署最新协议
 
         查询用户是否签署最新协议
         
@@ -6454,7 +6454,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def show_theme_async(self, request):
-        """产品类型转为主题
+        r"""产品类型转为主题
 
         产品类型转为主题
         
@@ -6529,7 +6529,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def sign_published_agreement_async(self, request):
-        """签署协议
+        r"""签署协议
 
         签署协议
         
@@ -6602,7 +6602,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def update_authorizations_async(self, request):
-        """拒绝|撤销授权
+        r"""拒绝|撤销授权
 
         拒绝|撤销授权
         
@@ -6677,7 +6677,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def update_case_contact_info_async(self, request):
-        """修改联系方式
+        r"""修改联系方式
 
         修改联系方式
         
@@ -6750,7 +6750,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def update_cases_async(self, request):
-        """工单操作
+        r"""工单操作
 
         工单操作
         
@@ -6825,7 +6825,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def update_labels_async(self, request):
-        """修改标签
+        r"""修改标签
 
         修改标签
         
@@ -6898,7 +6898,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def update_new_instant_messages_read_async(self, request):
-        """设置消息已读
+        r"""设置消息已读
 
         设置消息已读
         
@@ -6971,7 +6971,7 @@ class OsmAsyncClient(Client):
         return http_info
 
     def upload_json_accessories_async(self, request):
-        """上传附件
+        r"""上传附件
 
         上传附件给SDK使用，上传附件需要满足\&quot;附件限制\&quot;返回的关于大小等限制
         

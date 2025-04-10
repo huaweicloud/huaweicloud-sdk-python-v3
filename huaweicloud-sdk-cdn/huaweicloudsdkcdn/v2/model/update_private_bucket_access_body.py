@@ -25,7 +25,7 @@ class UpdatePrivateBucketAccessBody:
     }
 
     def __init__(self, status=None):
-        """UpdatePrivateBucketAccessBody
+        r"""UpdatePrivateBucketAccessBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePrivateBucketAccessBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdatePrivateBucketAccessBody.
+        r"""Gets the status of this UpdatePrivateBucketAccessBody.
 
         桶开启关闭状态（true：开启；false：关闭）
 
@@ -54,7 +54,7 @@ class UpdatePrivateBucketAccessBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePrivateBucketAccessBody.
+        r"""Sets the status of this UpdatePrivateBucketAccessBody.
 
         桶开启关闭状态（true：开启；false：关闭）
 

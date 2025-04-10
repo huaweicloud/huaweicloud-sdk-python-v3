@@ -25,7 +25,7 @@ class ShowSysprepInfoRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """ShowSysprepInfoRequest
+        r"""ShowSysprepInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSysprepInfoRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ShowSysprepInfoRequest.
+        r"""Gets the desktop_id of this ShowSysprepInfoRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class ShowSysprepInfoRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ShowSysprepInfoRequest.
+        r"""Sets the desktop_id of this ShowSysprepInfoRequest.
 
         桌面ID。
 

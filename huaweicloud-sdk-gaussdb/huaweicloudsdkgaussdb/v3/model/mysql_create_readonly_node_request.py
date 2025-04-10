@@ -29,7 +29,7 @@ class MysqlCreateReadonlyNodeRequest:
     }
 
     def __init__(self, priorities=None, is_auto_pay=None, availability_zones=None):
-        """MysqlCreateReadonlyNodeRequest
+        r"""MysqlCreateReadonlyNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class MysqlCreateReadonlyNodeRequest:
 
     @property
     def priorities(self):
-        """Gets the priorities of this MysqlCreateReadonlyNodeRequest.
+        r"""Gets the priorities of this MysqlCreateReadonlyNodeRequest.
 
         指定创建的只读节点故障倒换优先级。  故障倒换优先级的取值范围为1~16，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的只读节点上，优先级相同的只读节点选为主节点的概率相同。最多支持9个只读节点设置故障倒换优先级，超过9个的只读节点优先级默认为-1，表示不会参与倒换。可通过修改节点的故障倒换优先级来进行调整。
 
@@ -67,7 +67,7 @@ class MysqlCreateReadonlyNodeRequest:
 
     @priorities.setter
     def priorities(self, priorities):
-        """Sets the priorities of this MysqlCreateReadonlyNodeRequest.
+        r"""Sets the priorities of this MysqlCreateReadonlyNodeRequest.
 
         指定创建的只读节点故障倒换优先级。  故障倒换优先级的取值范围为1~16，数字越小，优先级越大，即故障倒换时，主节点会优先倒换到优先级高的只读节点上，优先级相同的只读节点选为主节点的概率相同。最多支持9个只读节点设置故障倒换优先级，超过9个的只读节点优先级默认为-1，表示不会参与倒换。可通过修改节点的故障倒换优先级来进行调整。
 
@@ -78,7 +78,7 @@ class MysqlCreateReadonlyNodeRequest:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this MysqlCreateReadonlyNodeRequest.
+        r"""Gets the is_auto_pay of this MysqlCreateReadonlyNodeRequest.
 
         创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付，默认该方式。 - false，为手动支付。
 
@@ -89,7 +89,7 @@ class MysqlCreateReadonlyNodeRequest:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this MysqlCreateReadonlyNodeRequest.
+        r"""Sets the is_auto_pay of this MysqlCreateReadonlyNodeRequest.
 
         创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付，默认该方式。 - false，为手动支付。
 
@@ -100,7 +100,7 @@ class MysqlCreateReadonlyNodeRequest:
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this MysqlCreateReadonlyNodeRequest.
+        r"""Gets the availability_zones of this MysqlCreateReadonlyNodeRequest.
 
         可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
 
@@ -111,7 +111,7 @@ class MysqlCreateReadonlyNodeRequest:
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this MysqlCreateReadonlyNodeRequest.
+        r"""Sets the availability_zones of this MysqlCreateReadonlyNodeRequest.
 
         可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
 

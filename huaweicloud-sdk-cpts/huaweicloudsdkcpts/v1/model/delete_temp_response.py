@@ -28,7 +28,7 @@ class DeleteTempResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None):
-        """DeleteTempResponse
+        r"""DeleteTempResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteTempResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteTempResponse.
+        r"""Gets the code of this DeleteTempResponse.
 
         响应码
 
@@ -62,7 +62,7 @@ class DeleteTempResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteTempResponse.
+        r"""Sets the code of this DeleteTempResponse.
 
         响应码
 
@@ -73,7 +73,7 @@ class DeleteTempResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteTempResponse.
+        r"""Gets the message of this DeleteTempResponse.
 
         响应消息
 
@@ -84,7 +84,7 @@ class DeleteTempResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteTempResponse.
+        r"""Sets the message of this DeleteTempResponse.
 
         响应消息
 

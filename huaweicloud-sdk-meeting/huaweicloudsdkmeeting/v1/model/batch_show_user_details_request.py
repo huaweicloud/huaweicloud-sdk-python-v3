@@ -31,7 +31,7 @@ class BatchShowUserDetailsRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, id_type=None, body=None):
-        """BatchShowUserDetailsRequest
+        r"""BatchShowUserDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchShowUserDetailsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchShowUserDetailsRequest.
+        r"""Gets the x_request_id of this BatchShowUserDetailsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -75,7 +75,7 @@ class BatchShowUserDetailsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchShowUserDetailsRequest.
+        r"""Sets the x_request_id of this BatchShowUserDetailsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -86,7 +86,7 @@ class BatchShowUserDetailsRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this BatchShowUserDetailsRequest.
+        r"""Gets the accept_language of this BatchShowUserDetailsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -97,7 +97,7 @@ class BatchShowUserDetailsRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this BatchShowUserDetailsRequest.
+        r"""Sets the accept_language of this BatchShowUserDetailsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -108,7 +108,7 @@ class BatchShowUserDetailsRequest:
 
     @property
     def id_type(self):
-        """Gets the id_type of this BatchShowUserDetailsRequest.
+        r"""Gets the id_type of this BatchShowUserDetailsRequest.
 
         查询类型。默认是USER_ID。 * USER_ID：表示根据华为云会议用户ID查询用户详情 * THIRD_ACCOUNT：表示根据第三方账号查询用户详情 
 
@@ -119,7 +119,7 @@ class BatchShowUserDetailsRequest:
 
     @id_type.setter
     def id_type(self, id_type):
-        """Sets the id_type of this BatchShowUserDetailsRequest.
+        r"""Sets the id_type of this BatchShowUserDetailsRequest.
 
         查询类型。默认是USER_ID。 * USER_ID：表示根据华为云会议用户ID查询用户详情 * THIRD_ACCOUNT：表示根据第三方账号查询用户详情 
 
@@ -130,7 +130,7 @@ class BatchShowUserDetailsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchShowUserDetailsRequest.
+        r"""Gets the body of this BatchShowUserDetailsRequest.
 
         :return: The body of this BatchShowUserDetailsRequest.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ShowUserRequestDTO`]
@@ -139,7 +139,7 @@ class BatchShowUserDetailsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowUserDetailsRequest.
+        r"""Sets the body of this BatchShowUserDetailsRequest.
 
         :param body: The body of this BatchShowUserDetailsRequest.
         :type body: list[:class:`huaweicloudsdkmeeting.v1.ShowUserRequestDTO`]

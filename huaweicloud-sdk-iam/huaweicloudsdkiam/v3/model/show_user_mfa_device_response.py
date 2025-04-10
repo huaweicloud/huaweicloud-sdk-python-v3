@@ -26,7 +26,7 @@ class ShowUserMfaDeviceResponse(SdkResponse):
     }
 
     def __init__(self, virtual_mfa_device=None):
-        """ShowUserMfaDeviceResponse
+        r"""ShowUserMfaDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowUserMfaDeviceResponse(SdkResponse):
 
     @property
     def virtual_mfa_device(self):
-        """Gets the virtual_mfa_device of this ShowUserMfaDeviceResponse.
+        r"""Gets the virtual_mfa_device of this ShowUserMfaDeviceResponse.
 
         :return: The virtual_mfa_device of this ShowUserMfaDeviceResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaDeviceResult`
@@ -53,7 +53,7 @@ class ShowUserMfaDeviceResponse(SdkResponse):
 
     @virtual_mfa_device.setter
     def virtual_mfa_device(self, virtual_mfa_device):
-        """Sets the virtual_mfa_device of this ShowUserMfaDeviceResponse.
+        r"""Sets the virtual_mfa_device of this ShowUserMfaDeviceResponse.
 
         :param virtual_mfa_device: The virtual_mfa_device of this ShowUserMfaDeviceResponse.
         :type virtual_mfa_device: :class:`huaweicloudsdkiam.v3.MfaDeviceResult`

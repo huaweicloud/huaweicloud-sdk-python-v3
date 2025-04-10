@@ -31,7 +31,7 @@ class DeleteResOnlineInstanceRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, job_id=None):
-        """DeleteResOnlineInstanceRequest
+        r"""DeleteResOnlineInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeleteResOnlineInstanceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteResOnlineInstanceRequest.
+        r"""Gets the content_type of this DeleteResOnlineInstanceRequest.
 
         内容类型，取值为application/json。
 
@@ -71,7 +71,7 @@ class DeleteResOnlineInstanceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteResOnlineInstanceRequest.
+        r"""Sets the content_type of this DeleteResOnlineInstanceRequest.
 
         内容类型，取值为application/json。
 
@@ -82,7 +82,7 @@ class DeleteResOnlineInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteResOnlineInstanceRequest.
+        r"""Gets the workspace_id of this DeleteResOnlineInstanceRequest.
 
         工作空间id。
 
@@ -93,7 +93,7 @@ class DeleteResOnlineInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteResOnlineInstanceRequest.
+        r"""Sets the workspace_id of this DeleteResOnlineInstanceRequest.
 
         工作空间id。
 
@@ -104,7 +104,7 @@ class DeleteResOnlineInstanceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResOnlineInstanceRequest.
+        r"""Gets the resource_id of this DeleteResOnlineInstanceRequest.
 
         资源id（数据源id或场景id）。
 
@@ -115,7 +115,7 @@ class DeleteResOnlineInstanceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResOnlineInstanceRequest.
+        r"""Sets the resource_id of this DeleteResOnlineInstanceRequest.
 
         资源id（数据源id或场景id）。
 
@@ -126,7 +126,7 @@ class DeleteResOnlineInstanceRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteResOnlineInstanceRequest.
+        r"""Gets the job_id of this DeleteResOnlineInstanceRequest.
 
         作业id。
 
@@ -137,7 +137,7 @@ class DeleteResOnlineInstanceRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteResOnlineInstanceRequest.
+        r"""Sets the job_id of this DeleteResOnlineInstanceRequest.
 
         作业id。
 

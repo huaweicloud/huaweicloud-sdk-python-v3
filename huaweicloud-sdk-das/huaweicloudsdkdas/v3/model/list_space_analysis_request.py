@@ -39,7 +39,7 @@ class ListSpaceAnalysisRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, object_type=None, database_id=None, offset=None, limit=None, show_instance_info=None, datastore_type=None):
-        """ListSpaceAnalysisRequest
+        r"""ListSpaceAnalysisRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSpaceAnalysisRequest.
+        r"""Gets the instance_id of this ListSpaceAnalysisRequest.
 
         实例ID
 
@@ -100,7 +100,7 @@ class ListSpaceAnalysisRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSpaceAnalysisRequest.
+        r"""Sets the instance_id of this ListSpaceAnalysisRequest.
 
         实例ID
 
@@ -111,7 +111,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSpaceAnalysisRequest.
+        r"""Gets the x_language of this ListSpaceAnalysisRequest.
 
         语言
 
@@ -122,7 +122,7 @@ class ListSpaceAnalysisRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSpaceAnalysisRequest.
+        r"""Sets the x_language of this ListSpaceAnalysisRequest.
 
         语言
 
@@ -133,7 +133,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ListSpaceAnalysisRequest.
+        r"""Gets the object_type of this ListSpaceAnalysisRequest.
 
         对象类型
 
@@ -144,7 +144,7 @@ class ListSpaceAnalysisRequest:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ListSpaceAnalysisRequest.
+        r"""Sets the object_type of this ListSpaceAnalysisRequest.
 
         对象类型
 
@@ -155,7 +155,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this ListSpaceAnalysisRequest.
+        r"""Gets the database_id of this ListSpaceAnalysisRequest.
 
         数据库ID
 
@@ -166,7 +166,7 @@ class ListSpaceAnalysisRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this ListSpaceAnalysisRequest.
+        r"""Sets the database_id of this ListSpaceAnalysisRequest.
 
         数据库ID
 
@@ -177,7 +177,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSpaceAnalysisRequest.
+        r"""Gets the offset of this ListSpaceAnalysisRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。offset必须是limit的整数倍。
 
@@ -188,7 +188,7 @@ class ListSpaceAnalysisRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSpaceAnalysisRequest.
+        r"""Sets the offset of this ListSpaceAnalysisRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。offset必须是limit的整数倍。
 
@@ -199,7 +199,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSpaceAnalysisRequest.
+        r"""Gets the limit of this ListSpaceAnalysisRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -210,7 +210,7 @@ class ListSpaceAnalysisRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSpaceAnalysisRequest.
+        r"""Sets the limit of this ListSpaceAnalysisRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -221,7 +221,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def show_instance_info(self):
-        """Gets the show_instance_info of this ListSpaceAnalysisRequest.
+        r"""Gets the show_instance_info of this ListSpaceAnalysisRequest.
 
         是否返回实例级别数据，取值：true或者false
 
@@ -232,7 +232,7 @@ class ListSpaceAnalysisRequest:
 
     @show_instance_info.setter
     def show_instance_info(self, show_instance_info):
-        """Sets the show_instance_info of this ListSpaceAnalysisRequest.
+        r"""Sets the show_instance_info of this ListSpaceAnalysisRequest.
 
         是否返回实例级别数据，取值：true或者false
 
@@ -243,7 +243,7 @@ class ListSpaceAnalysisRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListSpaceAnalysisRequest.
+        r"""Gets the datastore_type of this ListSpaceAnalysisRequest.
 
         引擎类型
 
@@ -254,7 +254,7 @@ class ListSpaceAnalysisRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListSpaceAnalysisRequest.
+        r"""Sets the datastore_type of this ListSpaceAnalysisRequest.
 
         引擎类型
 

@@ -29,7 +29,7 @@ class IpsRuleChangeDto:
     }
 
     def __init__(self, ips_ids=None, object_id=None, status=None):
-        """IpsRuleChangeDto
+        r"""IpsRuleChangeDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IpsRuleChangeDto:
 
     @property
     def ips_ids(self):
-        """Gets the ips_ids of this IpsRuleChangeDto.
+        r"""Gets the ips_ids of this IpsRuleChangeDto.
 
         ips的id列表
 
@@ -68,7 +68,7 @@ class IpsRuleChangeDto:
 
     @ips_ids.setter
     def ips_ids(self, ips_ids):
-        """Sets the ips_ids of this IpsRuleChangeDto.
+        r"""Sets the ips_ids of this IpsRuleChangeDto.
 
         ips的id列表
 
@@ -79,7 +79,7 @@ class IpsRuleChangeDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this IpsRuleChangeDto.
+        r"""Gets the object_id of this IpsRuleChangeDto.
 
         防护对象id
 
@@ -90,7 +90,7 @@ class IpsRuleChangeDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this IpsRuleChangeDto.
+        r"""Sets the object_id of this IpsRuleChangeDto.
 
         防护对象id
 
@@ -101,7 +101,7 @@ class IpsRuleChangeDto:
 
     @property
     def status(self):
-        """Gets the status of this IpsRuleChangeDto.
+        r"""Gets the status of this IpsRuleChangeDto.
 
         ips规则状态
 
@@ -112,7 +112,7 @@ class IpsRuleChangeDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IpsRuleChangeDto.
+        r"""Sets the status of this IpsRuleChangeDto.
 
         ips规则状态
 

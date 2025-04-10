@@ -25,7 +25,7 @@ class CreateMetadataReqGesMetadata:
     }
 
     def __init__(self, labels=None):
-        """CreateMetadataReqGesMetadata
+        r"""CreateMetadataReqGesMetadata
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMetadataReqGesMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateMetadataReqGesMetadata.
+        r"""Gets the labels of this CreateMetadataReqGesMetadata.
 
         label列表
 
@@ -53,7 +53,7 @@ class CreateMetadataReqGesMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateMetadataReqGesMetadata.
+        r"""Sets the labels of this CreateMetadataReqGesMetadata.
 
         label列表
 

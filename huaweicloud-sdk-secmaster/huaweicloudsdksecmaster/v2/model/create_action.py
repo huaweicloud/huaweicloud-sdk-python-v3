@@ -33,7 +33,7 @@ class CreateAction:
     }
 
     def __init__(self, name=None, description=None, action_type=None, action_id=None, sort_order=None):
-        """CreateAction
+        r"""CreateAction
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateAction:
 
     @property
     def name(self):
-        """Gets the name of this CreateAction.
+        r"""Gets the name of this CreateAction.
 
         名称
 
@@ -80,7 +80,7 @@ class CreateAction:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAction.
+        r"""Sets the name of this CreateAction.
 
         名称
 
@@ -91,7 +91,7 @@ class CreateAction:
 
     @property
     def description(self):
-        """Gets the description of this CreateAction.
+        r"""Gets the description of this CreateAction.
 
         描述
 
@@ -102,7 +102,7 @@ class CreateAction:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAction.
+        r"""Sets the description of this CreateAction.
 
         描述
 
@@ -113,7 +113,7 @@ class CreateAction:
 
     @property
     def action_type(self):
-        """Gets the action_type of this CreateAction.
+        r"""Gets the action_type of this CreateAction.
 
         类型，默认AOP_WORKFLOW.
 
@@ -124,7 +124,7 @@ class CreateAction:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this CreateAction.
+        r"""Sets the action_type of this CreateAction.
 
         类型，默认AOP_WORKFLOW.
 
@@ -135,7 +135,7 @@ class CreateAction:
 
     @property
     def action_id(self):
-        """Gets the action_id of this CreateAction.
+        r"""Gets the action_id of this CreateAction.
 
         剧本动作ID
 
@@ -146,7 +146,7 @@ class CreateAction:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this CreateAction.
+        r"""Sets the action_id of this CreateAction.
 
         剧本动作ID
 
@@ -157,7 +157,7 @@ class CreateAction:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this CreateAction.
+        r"""Gets the sort_order of this CreateAction.
 
         排序方式
 
@@ -168,7 +168,7 @@ class CreateAction:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this CreateAction.
+        r"""Sets the sort_order of this CreateAction.
 
         排序方式
 

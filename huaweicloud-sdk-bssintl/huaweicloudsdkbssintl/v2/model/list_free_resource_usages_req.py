@@ -25,7 +25,7 @@ class ListFreeResourceUsagesReq:
     }
 
     def __init__(self, free_resource_ids=None):
-        """ListFreeResourceUsagesReq
+        r"""ListFreeResourceUsagesReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListFreeResourceUsagesReq:
 
     @property
     def free_resource_ids(self):
-        """Gets the free_resource_ids of this ListFreeResourceUsagesReq.
+        r"""Gets the free_resource_ids of this ListFreeResourceUsagesReq.
 
         资源项ID列表，每个最大64字节。 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自查询资源包列表接口的响应。
 
@@ -53,7 +53,7 @@ class ListFreeResourceUsagesReq:
 
     @free_resource_ids.setter
     def free_resource_ids(self, free_resource_ids):
-        """Sets the free_resource_ids of this ListFreeResourceUsagesReq.
+        r"""Sets the free_resource_ids of this ListFreeResourceUsagesReq.
 
         资源项ID列表，每个最大64字节。 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自查询资源包列表接口的响应。
 

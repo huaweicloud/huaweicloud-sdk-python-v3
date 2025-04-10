@@ -25,7 +25,7 @@ class UpdateBandwidthPackageRequestBody:
     }
 
     def __init__(self, bandwidth_package=None):
-        """UpdateBandwidthPackageRequestBody
+        r"""UpdateBandwidthPackageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBandwidthPackageRequestBody:
 
     @property
     def bandwidth_package(self):
-        """Gets the bandwidth_package of this UpdateBandwidthPackageRequestBody.
+        r"""Gets the bandwidth_package of this UpdateBandwidthPackageRequestBody.
 
         :return: The bandwidth_package of this UpdateBandwidthPackageRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackage`
@@ -51,7 +51,7 @@ class UpdateBandwidthPackageRequestBody:
 
     @bandwidth_package.setter
     def bandwidth_package(self, bandwidth_package):
-        """Sets the bandwidth_package of this UpdateBandwidthPackageRequestBody.
+        r"""Sets the bandwidth_package of this UpdateBandwidthPackageRequestBody.
 
         :param bandwidth_package: The bandwidth_package of this UpdateBandwidthPackageRequestBody.
         :type bandwidth_package: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackage`

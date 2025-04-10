@@ -39,7 +39,7 @@ class AgentImportParamNew:
     }
 
     def __init__(self, password=None, agent_id=None, inner_ip=None, port=None, account=None, os_type=None, vpc_id=None, coc_cmdb_id=None):
-        """AgentImportParamNew
+        r"""AgentImportParamNew
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class AgentImportParamNew:
 
     @property
     def password(self):
-        """Gets the password of this AgentImportParamNew.
+        r"""Gets the password of this AgentImportParamNew.
 
         机器登录密码。
 
@@ -98,7 +98,7 @@ class AgentImportParamNew:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this AgentImportParamNew.
+        r"""Sets the password of this AgentImportParamNew.
 
         机器登录密码。
 
@@ -109,7 +109,7 @@ class AgentImportParamNew:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AgentImportParamNew.
+        r"""Gets the agent_id of this AgentImportParamNew.
 
         agent唯一值，重复导入时需要传递。
 
@@ -120,7 +120,7 @@ class AgentImportParamNew:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AgentImportParamNew.
+        r"""Sets the agent_id of this AgentImportParamNew.
 
         agent唯一值，重复导入时需要传递。
 
@@ -131,7 +131,7 @@ class AgentImportParamNew:
 
     @property
     def inner_ip(self):
-        """Gets the inner_ip of this AgentImportParamNew.
+        r"""Gets the inner_ip of this AgentImportParamNew.
 
         机器IP。
 
@@ -142,7 +142,7 @@ class AgentImportParamNew:
 
     @inner_ip.setter
     def inner_ip(self, inner_ip):
-        """Sets the inner_ip of this AgentImportParamNew.
+        r"""Sets the inner_ip of this AgentImportParamNew.
 
         机器IP。
 
@@ -153,7 +153,7 @@ class AgentImportParamNew:
 
     @property
     def port(self):
-        """Gets the port of this AgentImportParamNew.
+        r"""Gets the port of this AgentImportParamNew.
 
         机器登录端口，默认22。
 
@@ -164,7 +164,7 @@ class AgentImportParamNew:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AgentImportParamNew.
+        r"""Sets the port of this AgentImportParamNew.
 
         机器登录端口，默认22。
 
@@ -175,7 +175,7 @@ class AgentImportParamNew:
 
     @property
     def account(self):
-        """Gets the account of this AgentImportParamNew.
+        r"""Gets the account of this AgentImportParamNew.
 
         机器ssh账号。
 
@@ -186,7 +186,7 @@ class AgentImportParamNew:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AgentImportParamNew.
+        r"""Sets the account of this AgentImportParamNew.
 
         机器ssh账号。
 
@@ -197,7 +197,7 @@ class AgentImportParamNew:
 
     @property
     def os_type(self):
-        """Gets the os_type of this AgentImportParamNew.
+        r"""Gets the os_type of this AgentImportParamNew.
 
         机器操作系统类型。
 
@@ -208,7 +208,7 @@ class AgentImportParamNew:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this AgentImportParamNew.
+        r"""Sets the os_type of this AgentImportParamNew.
 
         机器操作系统类型。
 
@@ -219,7 +219,7 @@ class AgentImportParamNew:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AgentImportParamNew.
+        r"""Gets the vpc_id of this AgentImportParamNew.
 
         机器所属VPC ID。
 
@@ -230,7 +230,7 @@ class AgentImportParamNew:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AgentImportParamNew.
+        r"""Sets the vpc_id of this AgentImportParamNew.
 
         机器所属VPC ID。
 
@@ -241,7 +241,7 @@ class AgentImportParamNew:
 
     @property
     def coc_cmdb_id(self):
-        """Gets the coc_cmdb_id of this AgentImportParamNew.
+        r"""Gets the coc_cmdb_id of this AgentImportParamNew.
 
         外来唯一标识，COC用。
 
@@ -252,7 +252,7 @@ class AgentImportParamNew:
 
     @coc_cmdb_id.setter
     def coc_cmdb_id(self, coc_cmdb_id):
-        """Sets the coc_cmdb_id of this AgentImportParamNew.
+        r"""Sets the coc_cmdb_id of this AgentImportParamNew.
 
         外来唯一标识，COC用。
 

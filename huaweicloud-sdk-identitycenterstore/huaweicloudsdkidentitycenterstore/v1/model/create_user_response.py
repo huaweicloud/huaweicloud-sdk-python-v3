@@ -31,7 +31,7 @@ class CreateUserResponse(SdkResponse):
     }
 
     def __init__(self, identity_store_id=None, user_id=None, password=None):
-        """CreateUserResponse
+        r"""CreateUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -59,7 +59,7 @@ class CreateUserResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this CreateUserResponse.
+        r"""Gets the identity_store_id of this CreateUserResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -70,7 +70,7 @@ class CreateUserResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this CreateUserResponse.
+        r"""Sets the identity_store_id of this CreateUserResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -81,7 +81,7 @@ class CreateUserResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateUserResponse.
+        r"""Gets the user_id of this CreateUserResponse.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -92,7 +92,7 @@ class CreateUserResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateUserResponse.
+        r"""Sets the user_id of this CreateUserResponse.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -103,7 +103,7 @@ class CreateUserResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this CreateUserResponse.
+        r"""Gets the password of this CreateUserResponse.
 
         用于初始化密码的一次性密码
 
@@ -114,7 +114,7 @@ class CreateUserResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateUserResponse.
+        r"""Sets the password of this CreateUserResponse.
 
         用于初始化密码的一次性密码
 

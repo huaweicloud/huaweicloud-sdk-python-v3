@@ -27,7 +27,7 @@ class ShowIpInfoRequest:
     }
 
     def __init__(self, enterprise_project_id=None, ips=None):
-        """ShowIpInfoRequest
+        r"""ShowIpInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowIpInfoRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowIpInfoRequest.
+        r"""Gets the enterprise_project_id of this ShowIpInfoRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -60,7 +60,7 @@ class ShowIpInfoRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowIpInfoRequest.
+        r"""Sets the enterprise_project_id of this ShowIpInfoRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -71,7 +71,7 @@ class ShowIpInfoRequest:
 
     @property
     def ips(self):
-        """Gets the ips of this ShowIpInfoRequest.
+        r"""Gets the ips of this ShowIpInfoRequest.
 
         IP地址列表，以“，”分割，最多20个。
 
@@ -82,7 +82,7 @@ class ShowIpInfoRequest:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this ShowIpInfoRequest.
+        r"""Sets the ips of this ShowIpInfoRequest.
 
         IP地址列表，以“，”分割，最多20个。
 

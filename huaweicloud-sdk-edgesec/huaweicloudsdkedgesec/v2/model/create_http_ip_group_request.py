@@ -25,7 +25,7 @@ class CreateHttpIpGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateHttpIpGroupRequest
+        r"""CreateHttpIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateHttpIpGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpIpGroupRequest.
+        r"""Gets the body of this CreateHttpIpGroupRequest.
 
         :return: The body of this CreateHttpIpGroupRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpIpGroupRequestBody`
@@ -52,7 +52,7 @@ class CreateHttpIpGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpIpGroupRequest.
+        r"""Sets the body of this CreateHttpIpGroupRequest.
 
         :param body: The body of this CreateHttpIpGroupRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpIpGroupRequestBody`

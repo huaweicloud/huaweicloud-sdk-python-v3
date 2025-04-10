@@ -54,7 +54,7 @@ class ShowRecordSetResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None, bundle=None):
-        """ShowRecordSetResponse
+        r"""ShowRecordSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowRecordSetResponse.
+        r"""Gets the id of this ShowRecordSetResponse.
 
         Record Set的ID。
 
@@ -153,7 +153,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRecordSetResponse.
+        r"""Sets the id of this ShowRecordSetResponse.
 
         Record Set的ID。
 
@@ -164,7 +164,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowRecordSetResponse.
+        r"""Gets the name of this ShowRecordSetResponse.
 
         Record Set的名称。
 
@@ -175,7 +175,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowRecordSetResponse.
+        r"""Sets the name of this ShowRecordSetResponse.
 
         Record Set的名称。
 
@@ -186,7 +186,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowRecordSetResponse.
+        r"""Gets the description of this ShowRecordSetResponse.
 
         Record Set的描述信息。
 
@@ -197,7 +197,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowRecordSetResponse.
+        r"""Sets the description of this ShowRecordSetResponse.
 
         Record Set的描述信息。
 
@@ -208,7 +208,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ShowRecordSetResponse.
+        r"""Gets the zone_id of this ShowRecordSetResponse.
 
         托管该记录的zone_id。
 
@@ -219,7 +219,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ShowRecordSetResponse.
+        r"""Sets the zone_id of this ShowRecordSetResponse.
 
         托管该记录的zone_id。
 
@@ -230,7 +230,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this ShowRecordSetResponse.
+        r"""Gets the zone_name of this ShowRecordSetResponse.
 
         托管该记录的zone_name。
 
@@ -241,7 +241,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this ShowRecordSetResponse.
+        r"""Sets the zone_name of this ShowRecordSetResponse.
 
         托管该记录的zone_name。
 
@@ -252,7 +252,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowRecordSetResponse.
+        r"""Gets the type of this ShowRecordSetResponse.
 
         记录类型。
 
@@ -263,7 +263,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowRecordSetResponse.
+        r"""Sets the type of this ShowRecordSetResponse.
 
         记录类型。
 
@@ -274,7 +274,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this ShowRecordSetResponse.
+        r"""Gets the ttl of this ShowRecordSetResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -285,7 +285,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ShowRecordSetResponse.
+        r"""Sets the ttl of this ShowRecordSetResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -296,7 +296,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ShowRecordSetResponse.
+        r"""Gets the records of this ShowRecordSetResponse.
 
         域名解析后的值。
 
@@ -307,7 +307,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowRecordSetResponse.
+        r"""Sets the records of this ShowRecordSetResponse.
 
         域名解析后的值。
 
@@ -318,7 +318,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this ShowRecordSetResponse.
+        r"""Gets the create_at of this ShowRecordSetResponse.
 
         创建时间。
 
@@ -329,7 +329,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ShowRecordSetResponse.
+        r"""Sets the create_at of this ShowRecordSetResponse.
 
         创建时间。
 
@@ -340,7 +340,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def update_at(self):
-        """Gets the update_at of this ShowRecordSetResponse.
+        r"""Gets the update_at of this ShowRecordSetResponse.
 
         更新时间。
 
@@ -351,7 +351,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ShowRecordSetResponse.
+        r"""Sets the update_at of this ShowRecordSetResponse.
 
         更新时间。
 
@@ -362,7 +362,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRecordSetResponse.
+        r"""Gets the status of this ShowRecordSetResponse.
 
         资源状态。
 
@@ -373,7 +373,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRecordSetResponse.
+        r"""Sets the status of this ShowRecordSetResponse.
 
         资源状态。
 
@@ -384,7 +384,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def default(self):
-        """Gets the default of this ShowRecordSetResponse.
+        r"""Gets the default of this ShowRecordSetResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -395,7 +395,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ShowRecordSetResponse.
+        r"""Sets the default of this ShowRecordSetResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -406,7 +406,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowRecordSetResponse.
+        r"""Gets the project_id of this ShowRecordSetResponse.
 
         该Record Set所属的项目ID。
 
@@ -417,7 +417,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowRecordSetResponse.
+        r"""Sets the project_id of this ShowRecordSetResponse.
 
         该Record Set所属的项目ID。
 
@@ -428,7 +428,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowRecordSetResponse.
+        r"""Gets the links of this ShowRecordSetResponse.
 
         :return: The links of this ShowRecordSetResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -437,7 +437,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowRecordSetResponse.
+        r"""Sets the links of this ShowRecordSetResponse.
 
         :param links: The links of this ShowRecordSetResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -446,7 +446,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @property
     def bundle(self):
-        """Gets the bundle of this ShowRecordSetResponse.
+        r"""Gets the bundle of this ShowRecordSetResponse.
 
         规格，默认规格，保留字段。
 
@@ -457,7 +457,7 @@ class ShowRecordSetResponse(SdkResponse):
 
     @bundle.setter
     def bundle(self, bundle):
-        """Sets the bundle of this ShowRecordSetResponse.
+        r"""Sets the bundle of this ShowRecordSetResponse.
 
         规格，默认规格，保留字段。
 

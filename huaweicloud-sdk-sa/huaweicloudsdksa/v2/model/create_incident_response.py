@@ -32,7 +32,7 @@ class CreateIncidentResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """CreateIncidentResponse
+        r"""CreateIncidentResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateIncidentResponse.
+        r"""Gets the code of this CreateIncidentResponse.
 
         Id value
 
@@ -76,7 +76,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateIncidentResponse.
+        r"""Sets the code of this CreateIncidentResponse.
 
         Id value
 
@@ -87,7 +87,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateIncidentResponse.
+        r"""Gets the message of this CreateIncidentResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateIncidentResponse.
+        r"""Sets the message of this CreateIncidentResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateIncidentResponse.
+        r"""Gets the data of this CreateIncidentResponse.
 
         :return: The data of this CreateIncidentResponse.
         :rtype: :class:`huaweicloudsdksa.v2.IncidentDetail`
@@ -118,7 +118,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateIncidentResponse.
+        r"""Sets the data of this CreateIncidentResponse.
 
         :param data: The data of this CreateIncidentResponse.
         :type data: :class:`huaweicloudsdksa.v2.IncidentDetail`
@@ -127,7 +127,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateIncidentResponse.
+        r"""Gets the x_request_id of this CreateIncidentResponse.
 
         :return: The x_request_id of this CreateIncidentResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class CreateIncidentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateIncidentResponse.
+        r"""Sets the x_request_id of this CreateIncidentResponse.
 
         :param x_request_id: The x_request_id of this CreateIncidentResponse.
         :type x_request_id: str

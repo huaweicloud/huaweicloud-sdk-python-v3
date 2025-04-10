@@ -25,7 +25,7 @@ class UploadLogRequestBody:
     }
 
     def __init__(self, log_bucket=None):
-        """UploadLogRequestBody
+        r"""UploadLogRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadLogRequestBody:
 
     @property
     def log_bucket(self):
-        """Gets the log_bucket of this UploadLogRequestBody.
+        r"""Gets the log_bucket of this UploadLogRequestBody.
 
         指定桶名称
 
@@ -53,7 +53,7 @@ class UploadLogRequestBody:
 
     @log_bucket.setter
     def log_bucket(self, log_bucket):
-        """Sets the log_bucket of this UploadLogRequestBody.
+        r"""Sets the log_bucket of this UploadLogRequestBody.
 
         指定桶名称
 

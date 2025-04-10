@@ -27,7 +27,7 @@ class ChatAnswers:
     }
 
     def __init__(self, answer=None, score=None):
-        """ChatAnswers
+        r"""ChatAnswers
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChatAnswers:
 
     @property
     def answer(self):
-        """Gets the answer of this ChatAnswers.
+        r"""Gets the answer of this ChatAnswers.
 
         答案。
 
@@ -60,7 +60,7 @@ class ChatAnswers:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this ChatAnswers.
+        r"""Sets the answer of this ChatAnswers.
 
         答案。
 
@@ -71,7 +71,7 @@ class ChatAnswers:
 
     @property
     def score(self):
-        """Gets the score of this ChatAnswers.
+        r"""Gets the score of this ChatAnswers.
 
         闲聊的置信度，范围:0.0~1.0  0.0表示兜底回复
 
@@ -82,7 +82,7 @@ class ChatAnswers:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this ChatAnswers.
+        r"""Sets the score of this ChatAnswers.
 
         闲聊的置信度，范围:0.0~1.0  0.0表示兜底回复
 

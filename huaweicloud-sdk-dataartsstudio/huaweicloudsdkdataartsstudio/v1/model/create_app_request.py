@@ -29,7 +29,7 @@ class CreateAppRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """CreateAppRequest
+        r"""CreateAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateAppRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateAppRequest.
+        r"""Gets the workspace of this CreateAppRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class CreateAppRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateAppRequest.
+        r"""Sets the workspace of this CreateAppRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class CreateAppRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this CreateAppRequest.
+        r"""Gets the dlm_type of this CreateAppRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class CreateAppRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this CreateAppRequest.
+        r"""Sets the dlm_type of this CreateAppRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class CreateAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppRequest.
+        r"""Gets the body of this CreateAppRequest.
 
         :return: The body of this CreateAppRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AppRequestDTO`
@@ -109,7 +109,7 @@ class CreateAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppRequest.
+        r"""Sets the body of this CreateAppRequest.
 
         :param body: The body of this CreateAppRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.AppRequestDTO`

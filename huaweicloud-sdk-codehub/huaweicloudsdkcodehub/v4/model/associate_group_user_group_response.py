@@ -28,7 +28,7 @@ class AssociateGroupUserGroupResponse(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None):
-        """AssociateGroupUserGroupResponse
+        r"""AssociateGroupUserGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AssociateGroupUserGroupResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this AssociateGroupUserGroupResponse.
+        r"""Gets the success of this AssociateGroupUserGroupResponse.
 
         关联成功成员列表
 
@@ -62,7 +62,7 @@ class AssociateGroupUserGroupResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this AssociateGroupUserGroupResponse.
+        r"""Sets the success of this AssociateGroupUserGroupResponse.
 
         关联成功成员列表
 
@@ -73,7 +73,7 @@ class AssociateGroupUserGroupResponse(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this AssociateGroupUserGroupResponse.
+        r"""Gets the failure of this AssociateGroupUserGroupResponse.
 
         关联失败成员列表
 
@@ -84,7 +84,7 @@ class AssociateGroupUserGroupResponse(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this AssociateGroupUserGroupResponse.
+        r"""Sets the failure of this AssociateGroupUserGroupResponse.
 
         关联失败成员列表
 

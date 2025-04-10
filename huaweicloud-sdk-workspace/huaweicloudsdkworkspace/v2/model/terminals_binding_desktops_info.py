@@ -31,7 +31,7 @@ class TerminalsBindingDesktopsInfo:
     }
 
     def __init__(self, id=None, mac=None, desktop_name=None, description=None):
-        """TerminalsBindingDesktopsInfo
+        r"""TerminalsBindingDesktopsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TerminalsBindingDesktopsInfo:
 
     @property
     def id(self):
-        """Gets the id of this TerminalsBindingDesktopsInfo.
+        r"""Gets the id of this TerminalsBindingDesktopsInfo.
 
         MAC绑定策略ID
 
@@ -75,7 +75,7 @@ class TerminalsBindingDesktopsInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TerminalsBindingDesktopsInfo.
+        r"""Sets the id of this TerminalsBindingDesktopsInfo.
 
         MAC绑定策略ID
 
@@ -86,7 +86,7 @@ class TerminalsBindingDesktopsInfo:
 
     @property
     def mac(self):
-        """Gets the mac of this TerminalsBindingDesktopsInfo.
+        r"""Gets the mac of this TerminalsBindingDesktopsInfo.
 
         终端MAC地址
 
@@ -97,7 +97,7 @@ class TerminalsBindingDesktopsInfo:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this TerminalsBindingDesktopsInfo.
+        r"""Sets the mac of this TerminalsBindingDesktopsInfo.
 
         终端MAC地址
 
@@ -108,7 +108,7 @@ class TerminalsBindingDesktopsInfo:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this TerminalsBindingDesktopsInfo.
+        r"""Gets the desktop_name of this TerminalsBindingDesktopsInfo.
 
         虚拟机名称
 
@@ -119,7 +119,7 @@ class TerminalsBindingDesktopsInfo:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this TerminalsBindingDesktopsInfo.
+        r"""Sets the desktop_name of this TerminalsBindingDesktopsInfo.
 
         虚拟机名称
 
@@ -130,7 +130,7 @@ class TerminalsBindingDesktopsInfo:
 
     @property
     def description(self):
-        """Gets the description of this TerminalsBindingDesktopsInfo.
+        r"""Gets the description of this TerminalsBindingDesktopsInfo.
 
         描述
 
@@ -141,7 +141,7 @@ class TerminalsBindingDesktopsInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TerminalsBindingDesktopsInfo.
+        r"""Sets the description of this TerminalsBindingDesktopsInfo.
 
         描述
 

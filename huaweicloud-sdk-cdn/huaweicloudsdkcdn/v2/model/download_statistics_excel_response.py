@@ -24,7 +24,7 @@ class DownloadStatisticsExcelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DownloadStatisticsExcelResponse
+        r"""DownloadStatisticsExcelResponse
 
         The model defined in huaweicloud sdk
 

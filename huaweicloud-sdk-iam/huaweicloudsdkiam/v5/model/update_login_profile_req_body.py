@@ -27,7 +27,7 @@ class UpdateLoginProfileReqBody:
     }
 
     def __init__(self, password=None, password_reset_required=None):
-        """UpdateLoginProfileReqBody
+        r"""UpdateLoginProfileReqBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateLoginProfileReqBody:
 
     @property
     def password(self):
-        """Gets the password of this UpdateLoginProfileReqBody.
+        r"""Gets the password of this UpdateLoginProfileReqBody.
 
         IAM用户的密码。
 
@@ -61,7 +61,7 @@ class UpdateLoginProfileReqBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UpdateLoginProfileReqBody.
+        r"""Sets the password of this UpdateLoginProfileReqBody.
 
         IAM用户的密码。
 
@@ -72,7 +72,7 @@ class UpdateLoginProfileReqBody:
 
     @property
     def password_reset_required(self):
-        """Gets the password_reset_required of this UpdateLoginProfileReqBody.
+        r"""Gets the password_reset_required of this UpdateLoginProfileReqBody.
 
         IAM用户下次登录时是否需要修改密码。
 
@@ -83,7 +83,7 @@ class UpdateLoginProfileReqBody:
 
     @password_reset_required.setter
     def password_reset_required(self, password_reset_required):
-        """Sets the password_reset_required of this UpdateLoginProfileReqBody.
+        r"""Sets the password_reset_required of this UpdateLoginProfileReqBody.
 
         IAM用户下次登录时是否需要修改密码。
 

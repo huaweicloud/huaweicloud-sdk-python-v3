@@ -32,7 +32,7 @@ class ListEnvironmentsResponse(SdkResponse):
     }
 
     def __init__(self, environments=None, offset=None, limit=None, total_count=None):
-        """ListEnvironmentsResponse
+        r"""ListEnvironmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def environments(self):
-        """Gets the environments of this ListEnvironmentsResponse.
+        r"""Gets the environments of this ListEnvironmentsResponse.
 
         环境分组列表
 
@@ -76,7 +76,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @environments.setter
     def environments(self, environments):
-        """Sets the environments of this ListEnvironmentsResponse.
+        r"""Sets the environments of this ListEnvironmentsResponse.
 
         环境分组列表
 
@@ -87,7 +87,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnvironmentsResponse.
+        r"""Gets the offset of this ListEnvironmentsResponse.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -98,7 +98,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnvironmentsResponse.
+        r"""Sets the offset of this ListEnvironmentsResponse.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -109,7 +109,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnvironmentsResponse.
+        r"""Gets the limit of this ListEnvironmentsResponse.
 
         每页显示的条目数量,最大支持200条
 
@@ -120,7 +120,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnvironmentsResponse.
+        r"""Sets the limit of this ListEnvironmentsResponse.
 
         每页显示的条目数量,最大支持200条
 
@@ -131,7 +131,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEnvironmentsResponse.
+        r"""Gets the total_count of this ListEnvironmentsResponse.
 
         环境分组总条数
 
@@ -142,7 +142,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEnvironmentsResponse.
+        r"""Sets the total_count of this ListEnvironmentsResponse.
 
         环境分组总条数
 

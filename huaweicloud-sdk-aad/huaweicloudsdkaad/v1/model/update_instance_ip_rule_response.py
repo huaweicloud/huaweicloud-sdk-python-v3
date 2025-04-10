@@ -24,7 +24,7 @@ class UpdateInstanceIpRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateInstanceIpRuleResponse
+        r"""UpdateInstanceIpRuleResponse
 
         The model defined in huaweicloud sdk
 

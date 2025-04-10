@@ -25,7 +25,7 @@ class UploadAppRequest:
     }
 
     def __init__(self, body=None):
-        """UploadAppRequest
+        r"""UploadAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadAppRequest.
+        r"""Gets the body of this UploadAppRequest.
 
         :return: The body of this UploadAppRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UploadAppReq`
@@ -52,7 +52,7 @@ class UploadAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadAppRequest.
+        r"""Sets the body of this UploadAppRequest.
 
         :param body: The body of this UploadAppRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UploadAppReq`

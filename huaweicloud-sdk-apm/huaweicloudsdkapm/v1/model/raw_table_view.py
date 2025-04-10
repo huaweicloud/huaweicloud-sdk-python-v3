@@ -47,7 +47,7 @@ class RawTableView:
     }
 
     def __init__(self, view_type=None, collector_name=None, metric_set=None, title=None, table_direction=None, group_by=None, filter=None, field_item_list=None, span=None, span_field=None, order_by=None, latest=None):
-        """RawTableView
+        r"""RawTableView
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class RawTableView:
 
     @property
     def view_type(self):
-        """Gets the view_type of this RawTableView.
+        r"""Gets the view_type of this RawTableView.
 
         视图类型。
 
@@ -122,7 +122,7 @@ class RawTableView:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this RawTableView.
+        r"""Sets the view_type of this RawTableView.
 
         视图类型。
 
@@ -133,7 +133,7 @@ class RawTableView:
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this RawTableView.
+        r"""Gets the collector_name of this RawTableView.
 
         采集器名称。
 
@@ -144,7 +144,7 @@ class RawTableView:
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this RawTableView.
+        r"""Sets the collector_name of this RawTableView.
 
         采集器名称。
 
@@ -155,7 +155,7 @@ class RawTableView:
 
     @property
     def metric_set(self):
-        """Gets the metric_set of this RawTableView.
+        r"""Gets the metric_set of this RawTableView.
 
         视图对应的指标集的名称。
 
@@ -166,7 +166,7 @@ class RawTableView:
 
     @metric_set.setter
     def metric_set(self, metric_set):
-        """Sets the metric_set of this RawTableView.
+        r"""Sets the metric_set of this RawTableView.
 
         视图对应的指标集的名称。
 
@@ -177,7 +177,7 @@ class RawTableView:
 
     @property
     def title(self):
-        """Gets the title of this RawTableView.
+        r"""Gets the title of this RawTableView.
 
         图标所需展示的标题。
 
@@ -188,7 +188,7 @@ class RawTableView:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this RawTableView.
+        r"""Sets the title of this RawTableView.
 
         图标所需展示的标题。
 
@@ -199,7 +199,7 @@ class RawTableView:
 
     @property
     def table_direction(self):
-        """Gets the table_direction of this RawTableView.
+        r"""Gets the table_direction of this RawTableView.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -210,7 +210,7 @@ class RawTableView:
 
     @table_direction.setter
     def table_direction(self, table_direction):
-        """Sets the table_direction of this RawTableView.
+        r"""Sets the table_direction of this RawTableView.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -221,7 +221,7 @@ class RawTableView:
 
     @property
     def group_by(self):
-        """Gets the group_by of this RawTableView.
+        r"""Gets the group_by of this RawTableView.
 
         分组规则。
 
@@ -232,7 +232,7 @@ class RawTableView:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this RawTableView.
+        r"""Sets the group_by of this RawTableView.
 
         分组规则。
 
@@ -243,7 +243,7 @@ class RawTableView:
 
     @property
     def filter(self):
-        """Gets the filter of this RawTableView.
+        r"""Gets the filter of this RawTableView.
 
         过滤列表模型。
 
@@ -254,7 +254,7 @@ class RawTableView:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this RawTableView.
+        r"""Sets the filter of this RawTableView.
 
         过滤列表模型。
 
@@ -265,7 +265,7 @@ class RawTableView:
 
     @property
     def field_item_list(self):
-        """Gets the field_item_list of this RawTableView.
+        r"""Gets the field_item_list of this RawTableView.
 
         所需展示的字段列表模型集合。
 
@@ -276,7 +276,7 @@ class RawTableView:
 
     @field_item_list.setter
     def field_item_list(self, field_item_list):
-        """Sets the field_item_list of this RawTableView.
+        r"""Sets the field_item_list of this RawTableView.
 
         所需展示的字段列表模型集合。
 
@@ -287,7 +287,7 @@ class RawTableView:
 
     @property
     def span(self):
-        """Gets the span of this RawTableView.
+        r"""Gets the span of this RawTableView.
 
         跨度。
 
@@ -298,7 +298,7 @@ class RawTableView:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this RawTableView.
+        r"""Sets the span of this RawTableView.
 
         跨度。
 
@@ -309,7 +309,7 @@ class RawTableView:
 
     @property
     def span_field(self):
-        """Gets the span_field of this RawTableView.
+        r"""Gets the span_field of this RawTableView.
 
         跨度字段。
 
@@ -320,7 +320,7 @@ class RawTableView:
 
     @span_field.setter
     def span_field(self, span_field):
-        """Sets the span_field of this RawTableView.
+        r"""Sets the span_field of this RawTableView.
 
         跨度字段。
 
@@ -331,7 +331,7 @@ class RawTableView:
 
     @property
     def order_by(self):
-        """Gets the order_by of this RawTableView.
+        r"""Gets the order_by of this RawTableView.
 
         排序规则。
 
@@ -342,7 +342,7 @@ class RawTableView:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this RawTableView.
+        r"""Sets the order_by of this RawTableView.
 
         排序规则。
 
@@ -353,7 +353,7 @@ class RawTableView:
 
     @property
     def latest(self):
-        """Gets the latest of this RawTableView.
+        r"""Gets the latest of this RawTableView.
 
         是否只展示最近一笔数据。
 
@@ -364,7 +364,7 @@ class RawTableView:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this RawTableView.
+        r"""Sets the latest of this RawTableView.
 
         是否只展示最近一笔数据。
 

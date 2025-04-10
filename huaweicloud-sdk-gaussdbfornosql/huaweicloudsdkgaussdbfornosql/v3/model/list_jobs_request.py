@@ -37,7 +37,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, id=None, start_time=None, end_time=None, status=None, name=None, offset=None, limit=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListJobsRequest:
         :type end_time: str
         :param status: 任务状态： 取值为“Running”为执行中； 取值为“Completed”为完成； 取值为“Failed” 为失败。
         :type status: str
-        :param name: 任务名称。对应取值如下： - \&quot;CreateInstance\&quot;：创建实例 - \&quot;RestoreNewInstance\&quot;：恢复到新实例 - \&quot;EnlargeInstance\&quot;：扩容实例 - \&quot;ReduceInstance\&quot;：缩容实例 - \&quot;RestartInstance\&quot;：重启实例 - \&quot;RestartNode\&quot;：重启节点 - \&quot;EnlargeInstanceVolume\&quot;：扩容实例磁盘 - \&quot;ReduceInstanceVolume\&quot;：缩容实例磁盘 - \&quot;ResizeInstance\&quot;：规格变更实例 - \&quot;UpgradeDbVersion\&quot;：升级数据库版本 - \&quot;BindPublicIP\&quot;：绑定公网IP - \&quot;UnbindPublicIP\&quot;：解绑公网IP - \&quot;DeleteInstance\&quot;：删除实例 - \&quot;EnlargeInstanceColdVolume\&quot;：扩容实例冷存储 - \&quot;AddInstanceColdVolume\&quot;：增加实例冷存储 - \&quot;ModifySecurityGroup\&quot;：修改安全组 - \&quot;ModifyCcmCert\&quot;：修改CCM证书 - \&quot;ModifyPort\&quot;：修改端口 - \&quot;ConstructDisasterRecovery\&quot;：构造容灾关系 - \&quot;DeConstructDisasterRecovery\&quot;：解除容灾关系 - \&quot;SwitchOverDisasterRecovery\&quot;：切换容灾关系 - \&quot;BuildBiActiveInstance\&quot;：构建双活实例 - \&quot;ReleaseBiActiveInstance\&quot;：解除双活实例关系 - \&quot;BackupInstance\&quot;：备份实例
+        :param name: 任务名称。对应取值如下： - \&quot;CreateInstance\&quot;：创建实例 - \&quot;RestoreNewInstance\&quot;：恢复到新实例 - \&quot;EnlargeInstance\&quot;：扩容实例 - \&quot;ReduceInstance\&quot;：缩容实例 - \&quot;RestartInstance\&quot;：重启实例 - \&quot;RestartNode\&quot;：重启节点 - \&quot;EnlargeInstanceVolume\&quot;：扩容实例磁盘 - \&quot;ReduceInstanceVolume\&quot;：缩容实例磁盘 - \&quot;ResizeInstance\&quot;：规格变更实例 - \&quot;UpgradeDbVersion\&quot;：升级数据库版本 - \&quot;BindPublicIP\&quot;：绑定公网IP - \&quot;UnbindPublicIP\&quot;：解绑公网IP - \&quot;DeleteInstance\&quot;：删除实例 - \&quot;EnlargeInstanceColdVolume\&quot;：扩容实例冷存储 - \&quot;AddInstanceColdVolume\&quot;：增加实例冷存储 - \&quot;ModifySecurityGroup\&quot;：修改安全组  - \&quot;ModifyPort\&quot;：修改端口 - \&quot;ConstructDisasterRecovery\&quot;：构造容灾关系 - \&quot;DeConstructDisasterRecovery\&quot;：解除容灾关系 - \&quot;SwitchOverDisasterRecovery\&quot;：切换容灾关系 - \&quot;BuildBiActiveInstance\&quot;：构建双活实例 - \&quot;ReleaseBiActiveInstance\&quot;：解除双活实例关系 - \&quot;BackupInstance\&quot;：备份实例
         :type name: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
@@ -85,7 +85,7 @@ class ListJobsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListJobsRequest.
+        r"""Gets the id of this ListJobsRequest.
 
         任务ID。
 
@@ -96,7 +96,7 @@ class ListJobsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListJobsRequest.
+        r"""Sets the id of this ListJobsRequest.
 
         任务ID。
 
@@ -107,7 +107,7 @@ class ListJobsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListJobsRequest.
+        r"""Gets the start_time of this ListJobsRequest.
 
         查询开始时间，默认当前时间往前30天，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始，Z指时区偏移量
 
@@ -118,7 +118,7 @@ class ListJobsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListJobsRequest.
+        r"""Sets the start_time of this ListJobsRequest.
 
         查询开始时间，默认当前时间往前30天，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始，Z指时区偏移量
 
@@ -129,7 +129,7 @@ class ListJobsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobsRequest.
+        r"""Gets the end_time of this ListJobsRequest.
 
         查询结束时间，默认当前时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。 其中，T指某个时间的开始，Z指时区偏移量。
 
@@ -140,7 +140,7 @@ class ListJobsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobsRequest.
+        r"""Sets the end_time of this ListJobsRequest.
 
         查询结束时间，默认当前时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。 其中，T指某个时间的开始，Z指时区偏移量。
 
@@ -151,7 +151,7 @@ class ListJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobsRequest.
+        r"""Gets the status of this ListJobsRequest.
 
         任务状态： 取值为“Running”为执行中； 取值为“Completed”为完成； 取值为“Failed” 为失败。
 
@@ -162,7 +162,7 @@ class ListJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobsRequest.
+        r"""Sets the status of this ListJobsRequest.
 
         任务状态： 取值为“Running”为执行中； 取值为“Completed”为完成； 取值为“Failed” 为失败。
 
@@ -173,9 +173,9 @@ class ListJobsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListJobsRequest.
+        r"""Gets the name of this ListJobsRequest.
 
-        任务名称。对应取值如下： - \"CreateInstance\"：创建实例 - \"RestoreNewInstance\"：恢复到新实例 - \"EnlargeInstance\"：扩容实例 - \"ReduceInstance\"：缩容实例 - \"RestartInstance\"：重启实例 - \"RestartNode\"：重启节点 - \"EnlargeInstanceVolume\"：扩容实例磁盘 - \"ReduceInstanceVolume\"：缩容实例磁盘 - \"ResizeInstance\"：规格变更实例 - \"UpgradeDbVersion\"：升级数据库版本 - \"BindPublicIP\"：绑定公网IP - \"UnbindPublicIP\"：解绑公网IP - \"DeleteInstance\"：删除实例 - \"EnlargeInstanceColdVolume\"：扩容实例冷存储 - \"AddInstanceColdVolume\"：增加实例冷存储 - \"ModifySecurityGroup\"：修改安全组 - \"ModifyCcmCert\"：修改CCM证书 - \"ModifyPort\"：修改端口 - \"ConstructDisasterRecovery\"：构造容灾关系 - \"DeConstructDisasterRecovery\"：解除容灾关系 - \"SwitchOverDisasterRecovery\"：切换容灾关系 - \"BuildBiActiveInstance\"：构建双活实例 - \"ReleaseBiActiveInstance\"：解除双活实例关系 - \"BackupInstance\"：备份实例
+        任务名称。对应取值如下： - \"CreateInstance\"：创建实例 - \"RestoreNewInstance\"：恢复到新实例 - \"EnlargeInstance\"：扩容实例 - \"ReduceInstance\"：缩容实例 - \"RestartInstance\"：重启实例 - \"RestartNode\"：重启节点 - \"EnlargeInstanceVolume\"：扩容实例磁盘 - \"ReduceInstanceVolume\"：缩容实例磁盘 - \"ResizeInstance\"：规格变更实例 - \"UpgradeDbVersion\"：升级数据库版本 - \"BindPublicIP\"：绑定公网IP - \"UnbindPublicIP\"：解绑公网IP - \"DeleteInstance\"：删除实例 - \"EnlargeInstanceColdVolume\"：扩容实例冷存储 - \"AddInstanceColdVolume\"：增加实例冷存储 - \"ModifySecurityGroup\"：修改安全组  - \"ModifyPort\"：修改端口 - \"ConstructDisasterRecovery\"：构造容灾关系 - \"DeConstructDisasterRecovery\"：解除容灾关系 - \"SwitchOverDisasterRecovery\"：切换容灾关系 - \"BuildBiActiveInstance\"：构建双活实例 - \"ReleaseBiActiveInstance\"：解除双活实例关系 - \"BackupInstance\"：备份实例
 
         :return: The name of this ListJobsRequest.
         :rtype: str
@@ -184,9 +184,9 @@ class ListJobsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListJobsRequest.
+        r"""Sets the name of this ListJobsRequest.
 
-        任务名称。对应取值如下： - \"CreateInstance\"：创建实例 - \"RestoreNewInstance\"：恢复到新实例 - \"EnlargeInstance\"：扩容实例 - \"ReduceInstance\"：缩容实例 - \"RestartInstance\"：重启实例 - \"RestartNode\"：重启节点 - \"EnlargeInstanceVolume\"：扩容实例磁盘 - \"ReduceInstanceVolume\"：缩容实例磁盘 - \"ResizeInstance\"：规格变更实例 - \"UpgradeDbVersion\"：升级数据库版本 - \"BindPublicIP\"：绑定公网IP - \"UnbindPublicIP\"：解绑公网IP - \"DeleteInstance\"：删除实例 - \"EnlargeInstanceColdVolume\"：扩容实例冷存储 - \"AddInstanceColdVolume\"：增加实例冷存储 - \"ModifySecurityGroup\"：修改安全组 - \"ModifyCcmCert\"：修改CCM证书 - \"ModifyPort\"：修改端口 - \"ConstructDisasterRecovery\"：构造容灾关系 - \"DeConstructDisasterRecovery\"：解除容灾关系 - \"SwitchOverDisasterRecovery\"：切换容灾关系 - \"BuildBiActiveInstance\"：构建双活实例 - \"ReleaseBiActiveInstance\"：解除双活实例关系 - \"BackupInstance\"：备份实例
+        任务名称。对应取值如下： - \"CreateInstance\"：创建实例 - \"RestoreNewInstance\"：恢复到新实例 - \"EnlargeInstance\"：扩容实例 - \"ReduceInstance\"：缩容实例 - \"RestartInstance\"：重启实例 - \"RestartNode\"：重启节点 - \"EnlargeInstanceVolume\"：扩容实例磁盘 - \"ReduceInstanceVolume\"：缩容实例磁盘 - \"ResizeInstance\"：规格变更实例 - \"UpgradeDbVersion\"：升级数据库版本 - \"BindPublicIP\"：绑定公网IP - \"UnbindPublicIP\"：解绑公网IP - \"DeleteInstance\"：删除实例 - \"EnlargeInstanceColdVolume\"：扩容实例冷存储 - \"AddInstanceColdVolume\"：增加实例冷存储 - \"ModifySecurityGroup\"：修改安全组  - \"ModifyPort\"：修改端口 - \"ConstructDisasterRecovery\"：构造容灾关系 - \"DeConstructDisasterRecovery\"：解除容灾关系 - \"SwitchOverDisasterRecovery\"：切换容灾关系 - \"BuildBiActiveInstance\"：构建双活实例 - \"ReleaseBiActiveInstance\"：解除双活实例关系 - \"BackupInstance\"：备份实例
 
         :param name: The name of this ListJobsRequest.
         :type name: str
@@ -195,7 +195,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -206,7 +206,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -217,7 +217,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         查询记录数。取值 10 20 50 ，默认为50。
 
@@ -228,7 +228,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         查询记录数。取值 10 20 50 ，默认为50。
 

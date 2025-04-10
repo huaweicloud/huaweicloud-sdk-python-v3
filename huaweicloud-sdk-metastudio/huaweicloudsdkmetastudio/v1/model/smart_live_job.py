@@ -65,7 +65,7 @@ class SmartLiveJob:
     }
 
     def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None, used_resource_type=None):
-        """SmartLiveJob
+        r"""SmartLiveJob
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class SmartLiveJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SmartLiveJob.
+        r"""Gets the job_id of this SmartLiveJob.
 
         数字人直播任务ID。
 
@@ -194,7 +194,7 @@ class SmartLiveJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SmartLiveJob.
+        r"""Sets the job_id of this SmartLiveJob.
 
         数字人直播任务ID。
 
@@ -205,7 +205,7 @@ class SmartLiveJob:
 
     @property
     def room_id(self):
-        """Gets the room_id of this SmartLiveJob.
+        r"""Gets the room_id of this SmartLiveJob.
 
         直播间ID
 
@@ -216,7 +216,7 @@ class SmartLiveJob:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this SmartLiveJob.
+        r"""Sets the room_id of this SmartLiveJob.
 
         直播间ID
 
@@ -227,7 +227,7 @@ class SmartLiveJob:
 
     @property
     def room_name(self):
-        """Gets the room_name of this SmartLiveJob.
+        r"""Gets the room_name of this SmartLiveJob.
 
         直播间名称
 
@@ -238,7 +238,7 @@ class SmartLiveJob:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this SmartLiveJob.
+        r"""Sets the room_name of this SmartLiveJob.
 
         直播间名称
 
@@ -249,7 +249,7 @@ class SmartLiveJob:
 
     @property
     def state(self):
-        """Gets the state of this SmartLiveJob.
+        r"""Gets the state of this SmartLiveJob.
 
         数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
 
@@ -260,7 +260,7 @@ class SmartLiveJob:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SmartLiveJob.
+        r"""Sets the state of this SmartLiveJob.
 
         数字人直播任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * BLOCKED: 封禁
 
@@ -271,7 +271,7 @@ class SmartLiveJob:
 
     @property
     def duration(self):
-        """Gets the duration of this SmartLiveJob.
+        r"""Gets the duration of this SmartLiveJob.
 
         **参数解释**： 数字人直播时长，单位秒。
 
@@ -282,7 +282,7 @@ class SmartLiveJob:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SmartLiveJob.
+        r"""Sets the duration of this SmartLiveJob.
 
         **参数解释**： 数字人直播时长，单位秒。
 
@@ -293,7 +293,7 @@ class SmartLiveJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SmartLiveJob.
+        r"""Gets the start_time of this SmartLiveJob.
 
         数字人直播任务开始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -304,7 +304,7 @@ class SmartLiveJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SmartLiveJob.
+        r"""Sets the start_time of this SmartLiveJob.
 
         数字人直播任务开始时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -315,7 +315,7 @@ class SmartLiveJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SmartLiveJob.
+        r"""Gets the end_time of this SmartLiveJob.
 
         数字人直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -326,7 +326,7 @@ class SmartLiveJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SmartLiveJob.
+        r"""Sets the end_time of this SmartLiveJob.
 
         数字人直播任务结束时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -337,7 +337,7 @@ class SmartLiveJob:
 
     @property
     def error_info(self):
-        """Gets the error_info of this SmartLiveJob.
+        r"""Gets the error_info of this SmartLiveJob.
 
         :return: The error_info of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -346,7 +346,7 @@ class SmartLiveJob:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this SmartLiveJob.
+        r"""Sets the error_info of this SmartLiveJob.
 
         :param error_info: The error_info of this SmartLiveJob.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -355,7 +355,7 @@ class SmartLiveJob:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmartLiveJob.
+        r"""Gets the create_time of this SmartLiveJob.
 
         数字人直播任务创建时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -366,7 +366,7 @@ class SmartLiveJob:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmartLiveJob.
+        r"""Sets the create_time of this SmartLiveJob.
 
         数字人直播任务创建时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -377,7 +377,7 @@ class SmartLiveJob:
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this SmartLiveJob.
+        r"""Gets the lastupdate_time of this SmartLiveJob.
 
         数字人直播任务最后更新时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -388,7 +388,7 @@ class SmartLiveJob:
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this SmartLiveJob.
+        r"""Sets the lastupdate_time of this SmartLiveJob.
 
         数字人直播任务最后更新时间。格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -399,7 +399,7 @@ class SmartLiveJob:
 
     @property
     def rtc_room_info(self):
-        """Gets the rtc_room_info of this SmartLiveJob.
+        r"""Gets the rtc_room_info of this SmartLiveJob.
 
         :return: The rtc_room_info of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -408,7 +408,7 @@ class SmartLiveJob:
 
     @rtc_room_info.setter
     def rtc_room_info(self, rtc_room_info):
-        """Sets the rtc_room_info of this SmartLiveJob.
+        r"""Sets the rtc_room_info of this SmartLiveJob.
 
         :param rtc_room_info: The rtc_room_info of this SmartLiveJob.
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -417,7 +417,7 @@ class SmartLiveJob:
 
     @property
     def live_event_report_url(self):
-        """Gets the live_event_report_url of this SmartLiveJob.
+        r"""Gets the live_event_report_url of this SmartLiveJob.
 
         直播事件上报地址。用户将自行获取的直播间事件上报到此地址，用于触发智能互动，自动回复话术。
 
@@ -428,7 +428,7 @@ class SmartLiveJob:
 
     @live_event_report_url.setter
     def live_event_report_url(self, live_event_report_url):
-        """Sets the live_event_report_url of this SmartLiveJob.
+        r"""Sets the live_event_report_url of this SmartLiveJob.
 
         直播事件上报地址。用户将自行获取的直播间事件上报到此地址，用于触发智能互动，自动回复话术。
 
@@ -439,7 +439,7 @@ class SmartLiveJob:
 
     @property
     def live_event_callback_config(self):
-        """Gets the live_event_callback_config of this SmartLiveJob.
+        r"""Gets the live_event_callback_config of this SmartLiveJob.
 
         :return: The live_event_callback_config of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -448,7 +448,7 @@ class SmartLiveJob:
 
     @live_event_callback_config.setter
     def live_event_callback_config(self, live_event_callback_config):
-        """Sets the live_event_callback_config of this SmartLiveJob.
+        r"""Sets the live_event_callback_config of this SmartLiveJob.
 
         :param live_event_callback_config: The live_event_callback_config of this SmartLiveJob.
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -457,7 +457,7 @@ class SmartLiveJob:
 
     @property
     def rtc_callback_config(self):
-        """Gets the rtc_callback_config of this SmartLiveJob.
+        r"""Gets the rtc_callback_config of this SmartLiveJob.
 
         :return: The rtc_callback_config of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -466,7 +466,7 @@ class SmartLiveJob:
 
     @rtc_callback_config.setter
     def rtc_callback_config(self, rtc_callback_config):
-        """Sets the rtc_callback_config of this SmartLiveJob.
+        r"""Sets the rtc_callback_config of this SmartLiveJob.
 
         :param rtc_callback_config: The rtc_callback_config of this SmartLiveJob.
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -475,7 +475,7 @@ class SmartLiveJob:
 
     @property
     def stream_duration(self):
-        """Gets the stream_duration of this SmartLiveJob.
+        r"""Gets the stream_duration of this SmartLiveJob.
 
         **参数解释**： 数字人直播推流时长，单位秒。
 
@@ -486,7 +486,7 @@ class SmartLiveJob:
 
     @stream_duration.setter
     def stream_duration(self, stream_duration):
-        """Sets the stream_duration of this SmartLiveJob.
+        r"""Sets the stream_duration of this SmartLiveJob.
 
         **参数解释**： 数字人直播推流时长，单位秒。
 
@@ -497,7 +497,7 @@ class SmartLiveJob:
 
     @property
     def block_reason(self):
-        """Gets the block_reason of this SmartLiveJob.
+        r"""Gets the block_reason of this SmartLiveJob.
 
         封禁信息
 
@@ -508,7 +508,7 @@ class SmartLiveJob:
 
     @block_reason.setter
     def block_reason(self, block_reason):
-        """Sets the block_reason of this SmartLiveJob.
+        r"""Sets the block_reason of this SmartLiveJob.
 
         封禁信息
 
@@ -519,7 +519,7 @@ class SmartLiveJob:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this SmartLiveJob.
+        r"""Gets the cover_url of this SmartLiveJob.
 
         直播间封面图URL
 
@@ -530,7 +530,7 @@ class SmartLiveJob:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this SmartLiveJob.
+        r"""Sets the cover_url of this SmartLiveJob.
 
         直播间封面图URL
 
@@ -541,7 +541,7 @@ class SmartLiveJob:
 
     @property
     def co_streamer_config(self):
-        """Gets the co_streamer_config of this SmartLiveJob.
+        r"""Gets the co_streamer_config of this SmartLiveJob.
 
         :return: The co_streamer_config of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -550,7 +550,7 @@ class SmartLiveJob:
 
     @co_streamer_config.setter
     def co_streamer_config(self, co_streamer_config):
-        """Sets the co_streamer_config of this SmartLiveJob.
+        r"""Sets the co_streamer_config of this SmartLiveJob.
 
         :param co_streamer_config: The co_streamer_config of this SmartLiveJob.
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -559,7 +559,7 @@ class SmartLiveJob:
 
     @property
     def live_job_log(self):
-        """Gets the live_job_log of this SmartLiveJob.
+        r"""Gets the live_job_log of this SmartLiveJob.
 
         :return: The live_job_log of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
@@ -568,7 +568,7 @@ class SmartLiveJob:
 
     @live_job_log.setter
     def live_job_log(self, live_job_log):
-        """Sets the live_job_log of this SmartLiveJob.
+        r"""Sets the live_job_log of this SmartLiveJob.
 
         :param live_job_log: The live_job_log of this SmartLiveJob.
         :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
@@ -577,7 +577,7 @@ class SmartLiveJob:
 
     @property
     def relation_live_platform_info(self):
-        """Gets the relation_live_platform_info of this SmartLiveJob.
+        r"""Gets the relation_live_platform_info of this SmartLiveJob.
 
         :return: The relation_live_platform_info of this SmartLiveJob.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
@@ -586,7 +586,7 @@ class SmartLiveJob:
 
     @relation_live_platform_info.setter
     def relation_live_platform_info(self, relation_live_platform_info):
-        """Sets the relation_live_platform_info of this SmartLiveJob.
+        r"""Sets the relation_live_platform_info of this SmartLiveJob.
 
         :param relation_live_platform_info: The relation_live_platform_info of this SmartLiveJob.
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
@@ -595,7 +595,7 @@ class SmartLiveJob:
 
     @property
     def used_resource_type(self):
-        """Gets the used_resource_type of this SmartLiveJob.
+        r"""Gets the used_resource_type of this SmartLiveJob.
 
         使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
 
@@ -606,7 +606,7 @@ class SmartLiveJob:
 
     @used_resource_type.setter
     def used_resource_type(self, used_resource_type):
-        """Sets the used_resource_type of this SmartLiveJob.
+        r"""Sets the used_resource_type of this SmartLiveJob.
 
         使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
 

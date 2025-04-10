@@ -31,7 +31,7 @@ class RetryTaskResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """RetryTaskResp
+        r"""RetryTaskResp
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RetryTaskResp:
 
     @property
     def id(self):
-        """Gets the id of this RetryTaskResp.
+        r"""Gets the id of this RetryTaskResp.
 
         任务id
 
@@ -73,7 +73,7 @@ class RetryTaskResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RetryTaskResp.
+        r"""Sets the id of this RetryTaskResp.
 
         任务id
 
@@ -84,7 +84,7 @@ class RetryTaskResp:
 
     @property
     def status(self):
-        """Gets the status of this RetryTaskResp.
+        r"""Gets the status of this RetryTaskResp.
 
         状态
 
@@ -95,7 +95,7 @@ class RetryTaskResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RetryTaskResp.
+        r"""Sets the status of this RetryTaskResp.
 
         状态
 
@@ -106,7 +106,7 @@ class RetryTaskResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this RetryTaskResp.
+        r"""Gets the error_code of this RetryTaskResp.
 
         错误码
 
@@ -117,7 +117,7 @@ class RetryTaskResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RetryTaskResp.
+        r"""Sets the error_code of this RetryTaskResp.
 
         错误码
 
@@ -128,7 +128,7 @@ class RetryTaskResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RetryTaskResp.
+        r"""Gets the error_msg of this RetryTaskResp.
 
         错误信息
 
@@ -139,7 +139,7 @@ class RetryTaskResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RetryTaskResp.
+        r"""Sets the error_msg of this RetryTaskResp.
 
         错误信息
 

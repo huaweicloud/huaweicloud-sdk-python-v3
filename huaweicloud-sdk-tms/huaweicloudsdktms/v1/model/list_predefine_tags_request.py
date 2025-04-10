@@ -35,7 +35,7 @@ class ListPredefineTagsRequest:
     }
 
     def __init__(self, key=None, value=None, limit=None, marker=None, order_field=None, order_method=None):
-        """ListPredefineTagsRequest
+        r"""ListPredefineTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListPredefineTagsRequest:
 
     @property
     def key(self):
-        """Gets the key of this ListPredefineTagsRequest.
+        r"""Gets the key of this ListPredefineTagsRequest.
 
         键，支持模糊查询，不区分大小写，如果包含“non-URL-safe”的字符，需要进行“urlencoded”。
 
@@ -89,7 +89,7 @@ class ListPredefineTagsRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListPredefineTagsRequest.
+        r"""Sets the key of this ListPredefineTagsRequest.
 
         键，支持模糊查询，不区分大小写，如果包含“non-URL-safe”的字符，需要进行“urlencoded”。
 
@@ -100,7 +100,7 @@ class ListPredefineTagsRequest:
 
     @property
     def value(self):
-        """Gets the value of this ListPredefineTagsRequest.
+        r"""Gets the value of this ListPredefineTagsRequest.
 
         值，支持模糊查询，不区分大小写，如果包含“non-URL-safe”的字符，需要进行“urlencoded”。
 
@@ -111,7 +111,7 @@ class ListPredefineTagsRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListPredefineTagsRequest.
+        r"""Sets the value of this ListPredefineTagsRequest.
 
         值，支持模糊查询，不区分大小写，如果包含“non-URL-safe”的字符，需要进行“urlencoded”。
 
@@ -122,7 +122,7 @@ class ListPredefineTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPredefineTagsRequest.
+        r"""Gets the limit of this ListPredefineTagsRequest.
 
         查询记录数。 最小为1，最大为1000，未输入时默认为10，为0时不限制查询数据条数。
 
@@ -133,7 +133,7 @@ class ListPredefineTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPredefineTagsRequest.
+        r"""Sets the limit of this ListPredefineTagsRequest.
 
         查询记录数。 最小为1，最大为1000，未输入时默认为10，为0时不限制查询数据条数。
 
@@ -144,7 +144,7 @@ class ListPredefineTagsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPredefineTagsRequest.
+        r"""Gets the marker of this ListPredefineTagsRequest.
 
         分页位置标识（索引）。 从marker指定索引的下一条数据开始查询。 说明： 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数，当返回的tags为空列表时表示查询到最后一页。
 
@@ -155,7 +155,7 @@ class ListPredefineTagsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPredefineTagsRequest.
+        r"""Sets the marker of this ListPredefineTagsRequest.
 
         分页位置标识（索引）。 从marker指定索引的下一条数据开始查询。 说明： 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数，当返回的tags为空列表时表示查询到最后一页。
 
@@ -166,7 +166,7 @@ class ListPredefineTagsRequest:
 
     @property
     def order_field(self):
-        """Gets the order_field of this ListPredefineTagsRequest.
+        r"""Gets the order_field of this ListPredefineTagsRequest.
 
         排序字段： 可输入的值包含（区分大小写）：update_time（更新时间）、key（键）、value（值）。 只能选择以上排序字段中的一个，并按照排序方法字段order_method进行排序，如果不传则默认值为：update_time。 如以下： 若该字段为update_time，则剩余两个默认字段排序为key升序，value升序。 若该字段如为key，则剩余两个默认字段排序为update_time降序，value升序。 若该字段如为value，则剩余两个默认字段排序为update_time降序，key升序。 若该字段不传，默认字段为update_time，则剩余两个默认字段排序为key升序，value升序。
 
@@ -177,7 +177,7 @@ class ListPredefineTagsRequest:
 
     @order_field.setter
     def order_field(self, order_field):
-        """Sets the order_field of this ListPredefineTagsRequest.
+        r"""Sets the order_field of this ListPredefineTagsRequest.
 
         排序字段： 可输入的值包含（区分大小写）：update_time（更新时间）、key（键）、value（值）。 只能选择以上排序字段中的一个，并按照排序方法字段order_method进行排序，如果不传则默认值为：update_time。 如以下： 若该字段为update_time，则剩余两个默认字段排序为key升序，value升序。 若该字段如为key，则剩余两个默认字段排序为update_time降序，value升序。 若该字段如为value，则剩余两个默认字段排序为update_time降序，key升序。 若该字段不传，默认字段为update_time，则剩余两个默认字段排序为key升序，value升序。
 
@@ -188,7 +188,7 @@ class ListPredefineTagsRequest:
 
     @property
     def order_method(self):
-        """Gets the order_method of this ListPredefineTagsRequest.
+        r"""Gets the order_method of this ListPredefineTagsRequest.
 
         order_field字段的排序方法。 可输入的值包含（区分大小写）： asc（升序） desc（降序） 只能选择以上值的其中之一。 不传则默认值为：desc
 
@@ -199,7 +199,7 @@ class ListPredefineTagsRequest:
 
     @order_method.setter
     def order_method(self, order_method):
-        """Sets the order_method of this ListPredefineTagsRequest.
+        r"""Sets the order_method of this ListPredefineTagsRequest.
 
         order_field字段的排序方法。 可输入的值包含（区分大小写）： asc（升序） desc（降序） 只能选择以上值的其中之一。 不传则默认值为：desc
 

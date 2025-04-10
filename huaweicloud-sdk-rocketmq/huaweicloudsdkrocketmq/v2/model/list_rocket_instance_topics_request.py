@@ -29,7 +29,7 @@ class ListRocketInstanceTopicsRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None):
-        """ListRocketInstanceTopicsRequest
+        r"""ListRocketInstanceTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListRocketInstanceTopicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRocketInstanceTopicsRequest.
+        r"""Gets the instance_id of this ListRocketInstanceTopicsRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListRocketInstanceTopicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRocketInstanceTopicsRequest.
+        r"""Sets the instance_id of this ListRocketInstanceTopicsRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListRocketInstanceTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRocketInstanceTopicsRequest.
+        r"""Gets the limit of this ListRocketInstanceTopicsRequest.
 
         查询数量，取值范围为1~50。
 
@@ -89,7 +89,7 @@ class ListRocketInstanceTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRocketInstanceTopicsRequest.
+        r"""Sets the limit of this ListRocketInstanceTopicsRequest.
 
         查询数量，取值范围为1~50。
 
@@ -100,7 +100,7 @@ class ListRocketInstanceTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRocketInstanceTopicsRequest.
+        r"""Gets the offset of this ListRocketInstanceTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -111,7 +111,7 @@ class ListRocketInstanceTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRocketInstanceTopicsRequest.
+        r"""Sets the offset of this ListRocketInstanceTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

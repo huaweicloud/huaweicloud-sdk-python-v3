@@ -63,7 +63,7 @@ class ProductInfo:
     }
 
     def __init__(self, product_id=None, flavor_id=None, type=None, cpu=None, memory=None, descriptions=None, charge_mode=None, architecture=None, cpu_desc=None, is_gpu=None, package_type=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, status=None, sub_product_list=None):
-        """ProductInfo
+        r"""ProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductInfo.
+        r"""Gets the product_id of this ProductInfo.
 
         产品ID。
 
@@ -187,7 +187,7 @@ class ProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductInfo.
+        r"""Sets the product_id of this ProductInfo.
 
         产品ID。
 
@@ -198,7 +198,7 @@ class ProductInfo:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ProductInfo.
+        r"""Gets the flavor_id of this ProductInfo.
 
         产品规格ID。
 
@@ -209,7 +209,7 @@ class ProductInfo:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ProductInfo.
+        r"""Sets the flavor_id of this ProductInfo.
 
         产品规格ID。
 
@@ -220,7 +220,7 @@ class ProductInfo:
 
     @property
     def type(self):
-        """Gets the type of this ProductInfo.
+        r"""Gets the type of this ProductInfo.
 
         产品类型。  - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
 
@@ -231,7 +231,7 @@ class ProductInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProductInfo.
+        r"""Sets the type of this ProductInfo.
 
         产品类型。  - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
 
@@ -242,7 +242,7 @@ class ProductInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ProductInfo.
+        r"""Gets the cpu of this ProductInfo.
 
         CPU
 
@@ -253,7 +253,7 @@ class ProductInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ProductInfo.
+        r"""Sets the cpu of this ProductInfo.
 
         CPU
 
@@ -264,7 +264,7 @@ class ProductInfo:
 
     @property
     def memory(self):
-        """Gets the memory of this ProductInfo.
+        r"""Gets the memory of this ProductInfo.
 
         内存。
 
@@ -275,7 +275,7 @@ class ProductInfo:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ProductInfo.
+        r"""Sets the memory of this ProductInfo.
 
         内存。
 
@@ -286,7 +286,7 @@ class ProductInfo:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this ProductInfo.
+        r"""Gets the descriptions of this ProductInfo.
 
         产品描述。
 
@@ -297,7 +297,7 @@ class ProductInfo:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this ProductInfo.
+        r"""Sets the descriptions of this ProductInfo.
 
         产品描述。
 
@@ -308,7 +308,7 @@ class ProductInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ProductInfo.
+        r"""Gets the charge_mode of this ProductInfo.
 
         周期套餐标识，0表示包周期，1表示按需。
 
@@ -319,7 +319,7 @@ class ProductInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ProductInfo.
+        r"""Sets the charge_mode of this ProductInfo.
 
         周期套餐标识，0表示包周期，1表示按需。
 
@@ -330,7 +330,7 @@ class ProductInfo:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ProductInfo.
+        r"""Gets the architecture of this ProductInfo.
 
         产品架构。
 
@@ -341,7 +341,7 @@ class ProductInfo:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ProductInfo.
+        r"""Sets the architecture of this ProductInfo.
 
         产品架构。
 
@@ -352,7 +352,7 @@ class ProductInfo:
 
     @property
     def cpu_desc(self):
-        """Gets the cpu_desc of this ProductInfo.
+        r"""Gets the cpu_desc of this ProductInfo.
 
         CPU描述。
 
@@ -363,7 +363,7 @@ class ProductInfo:
 
     @cpu_desc.setter
     def cpu_desc(self, cpu_desc):
-        """Sets the cpu_desc of this ProductInfo.
+        r"""Sets the cpu_desc of this ProductInfo.
 
         CPU描述。
 
@@ -374,7 +374,7 @@ class ProductInfo:
 
     @property
     def is_gpu(self):
-        """Gets the is_gpu of this ProductInfo.
+        r"""Gets the is_gpu of this ProductInfo.
 
         是否是GPU类型的规格。
 
@@ -385,7 +385,7 @@ class ProductInfo:
 
     @is_gpu.setter
     def is_gpu(self, is_gpu):
-        """Sets the is_gpu of this ProductInfo.
+        r"""Sets the is_gpu of this ProductInfo.
 
         是否是GPU类型的规格。
 
@@ -396,7 +396,7 @@ class ProductInfo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ProductInfo.
+        r"""Gets the package_type of this ProductInfo.
 
         套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
 
@@ -407,7 +407,7 @@ class ProductInfo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ProductInfo.
+        r"""Sets the package_type of this ProductInfo.
 
         套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
 
@@ -418,7 +418,7 @@ class ProductInfo:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this ProductInfo.
+        r"""Gets the system_disk_type of this ProductInfo.
 
         系统盘类型。
 
@@ -429,7 +429,7 @@ class ProductInfo:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this ProductInfo.
+        r"""Sets the system_disk_type of this ProductInfo.
 
         系统盘类型。
 
@@ -440,7 +440,7 @@ class ProductInfo:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this ProductInfo.
+        r"""Gets the system_disk_size of this ProductInfo.
 
         系统盘大小。
 
@@ -451,7 +451,7 @@ class ProductInfo:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this ProductInfo.
+        r"""Sets the system_disk_size of this ProductInfo.
 
         系统盘大小。
 
@@ -462,7 +462,7 @@ class ProductInfo:
 
     @property
     def gpu_desc(self):
-        """Gets the gpu_desc of this ProductInfo.
+        r"""Gets the gpu_desc of this ProductInfo.
 
         GPU描述。
 
@@ -473,7 +473,7 @@ class ProductInfo:
 
     @gpu_desc.setter
     def gpu_desc(self, gpu_desc):
-        """Sets the gpu_desc of this ProductInfo.
+        r"""Sets the gpu_desc of this ProductInfo.
 
         GPU描述。
 
@@ -484,7 +484,7 @@ class ProductInfo:
 
     @property
     def contain_data_disk(self):
-        """Gets the contain_data_disk of this ProductInfo.
+        r"""Gets the contain_data_disk of this ProductInfo.
 
         套餐计费是否包含了数据盘,off-不包含
 
@@ -495,7 +495,7 @@ class ProductInfo:
 
     @contain_data_disk.setter
     def contain_data_disk(self, contain_data_disk):
-        """Sets the contain_data_disk of this ProductInfo.
+        r"""Sets the contain_data_disk of this ProductInfo.
 
         套餐计费是否包含了数据盘,off-不包含
 
@@ -506,7 +506,7 @@ class ProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfo.
+        r"""Gets the resource_type of this ProductInfo.
 
         资源类型。
 
@@ -517,7 +517,7 @@ class ProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfo.
+        r"""Sets the resource_type of this ProductInfo.
 
         资源类型。
 
@@ -528,7 +528,7 @@ class ProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfo.
+        r"""Gets the cloud_service_type of this ProductInfo.
 
         云服务类型。
 
@@ -539,7 +539,7 @@ class ProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfo.
+        r"""Sets the cloud_service_type of this ProductInfo.
 
         云服务类型。
 
@@ -550,7 +550,7 @@ class ProductInfo:
 
     @property
     def volume_product_type(self):
-        """Gets the volume_product_type of this ProductInfo.
+        r"""Gets the volume_product_type of this ProductInfo.
 
         磁盘产品类型。
 
@@ -561,7 +561,7 @@ class ProductInfo:
 
     @volume_product_type.setter
     def volume_product_type(self, volume_product_type):
-        """Sets the volume_product_type of this ProductInfo.
+        r"""Sets the volume_product_type of this ProductInfo.
 
         磁盘产品类型。
 
@@ -572,7 +572,7 @@ class ProductInfo:
 
     @property
     def status(self):
-        """Gets the status of this ProductInfo.
+        r"""Gets the status of this ProductInfo.
 
         默认在售状态，normal代表正常，sellout代表售空，abandon代表下线。
 
@@ -583,7 +583,7 @@ class ProductInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProductInfo.
+        r"""Sets the status of this ProductInfo.
 
         默认在售状态，normal代表正常，sellout代表售空，abandon代表下线。
 
@@ -594,7 +594,7 @@ class ProductInfo:
 
     @property
     def sub_product_list(self):
-        """Gets the sub_product_list of this ProductInfo.
+        r"""Gets the sub_product_list of this ProductInfo.
 
         专属主机的子产品。
 
@@ -605,7 +605,7 @@ class ProductInfo:
 
     @sub_product_list.setter
     def sub_product_list(self, sub_product_list):
-        """Sets the sub_product_list of this ProductInfo.
+        r"""Sets the sub_product_list of this ProductInfo.
 
         专属主机的子产品。
 

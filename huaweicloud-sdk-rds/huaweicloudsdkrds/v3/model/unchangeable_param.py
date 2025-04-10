@@ -25,7 +25,7 @@ class UnchangeableParam:
     }
 
     def __init__(self, lower_case_table_names=None):
-        """UnchangeableParam
+        r"""UnchangeableParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnchangeableParam:
 
     @property
     def lower_case_table_names(self):
-        """Gets the lower_case_table_names of this UnchangeableParam.
+        r"""Gets the lower_case_table_names of this UnchangeableParam.
 
         表名大小写是否敏感，默认值是“1”，当前仅MySQL 8.0支持。 取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
 
@@ -54,7 +54,7 @@ class UnchangeableParam:
 
     @lower_case_table_names.setter
     def lower_case_table_names(self, lower_case_table_names):
-        """Sets the lower_case_table_names of this UnchangeableParam.
+        r"""Sets the lower_case_table_names of this UnchangeableParam.
 
         表名大小写是否敏感，默认值是“1”，当前仅MySQL 8.0支持。 取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
 

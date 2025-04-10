@@ -27,7 +27,7 @@ class ParamGroupCopyRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """ParamGroupCopyRequestBody
+        r"""ParamGroupCopyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ParamGroupCopyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this ParamGroupCopyRequestBody.
+        r"""Gets the name of this ParamGroupCopyRequestBody.
 
         复制后的参数模板名称。
 
@@ -60,7 +60,7 @@ class ParamGroupCopyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParamGroupCopyRequestBody.
+        r"""Sets the name of this ParamGroupCopyRequestBody.
 
         复制后的参数模板名称。
 
@@ -71,7 +71,7 @@ class ParamGroupCopyRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this ParamGroupCopyRequestBody.
+        r"""Gets the description of this ParamGroupCopyRequestBody.
 
         参数模板描述。
 
@@ -82,7 +82,7 @@ class ParamGroupCopyRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ParamGroupCopyRequestBody.
+        r"""Sets the description of this ParamGroupCopyRequestBody.
 
         参数模板描述。
 

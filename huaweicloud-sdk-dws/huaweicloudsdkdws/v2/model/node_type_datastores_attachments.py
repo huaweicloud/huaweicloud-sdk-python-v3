@@ -27,7 +27,7 @@ class NodeTypeDatastoresAttachments:
     }
 
     def __init__(self, min_cn=None, max_cn=None):
-        """NodeTypeDatastoresAttachments
+        r"""NodeTypeDatastoresAttachments
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeTypeDatastoresAttachments:
 
     @property
     def min_cn(self):
-        """Gets the min_cn of this NodeTypeDatastoresAttachments.
+        r"""Gets the min_cn of this NodeTypeDatastoresAttachments.
 
         内核版本支持的最小CN。
 
@@ -59,7 +59,7 @@ class NodeTypeDatastoresAttachments:
 
     @min_cn.setter
     def min_cn(self, min_cn):
-        """Sets the min_cn of this NodeTypeDatastoresAttachments.
+        r"""Sets the min_cn of this NodeTypeDatastoresAttachments.
 
         内核版本支持的最小CN。
 
@@ -70,7 +70,7 @@ class NodeTypeDatastoresAttachments:
 
     @property
     def max_cn(self):
-        """Gets the max_cn of this NodeTypeDatastoresAttachments.
+        r"""Gets the max_cn of this NodeTypeDatastoresAttachments.
 
         内核版本支持的最大CN。
 
@@ -81,7 +81,7 @@ class NodeTypeDatastoresAttachments:
 
     @max_cn.setter
     def max_cn(self, max_cn):
-        """Sets the max_cn of this NodeTypeDatastoresAttachments.
+        r"""Sets the max_cn of this NodeTypeDatastoresAttachments.
 
         内核版本支持的最大CN。
 

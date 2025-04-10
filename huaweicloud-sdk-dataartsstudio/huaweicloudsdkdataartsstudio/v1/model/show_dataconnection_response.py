@@ -50,7 +50,7 @@ class ShowDataconnectionResponse(SdkResponse):
     }
 
     def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, qualified_name=None, dw_id=None, create_user=None, create_time=None, dw_catagory=None, description=None, update_type=None):
-        """ShowDataconnectionResponse
+        r"""ShowDataconnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this ShowDataconnectionResponse.
+        r"""Gets the dw_name of this ShowDataconnectionResponse.
 
         数据连接名称
 
@@ -139,7 +139,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this ShowDataconnectionResponse.
+        r"""Sets the dw_name of this ShowDataconnectionResponse.
 
         数据连接名称
 
@@ -150,7 +150,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this ShowDataconnectionResponse.
+        r"""Gets the dw_type of this ShowDataconnectionResponse.
 
         数据连接类型
 
@@ -161,7 +161,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this ShowDataconnectionResponse.
+        r"""Sets the dw_type of this ShowDataconnectionResponse.
 
         数据连接类型
 
@@ -172,7 +172,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def dw_config(self):
-        """Gets the dw_config of this ShowDataconnectionResponse.
+        r"""Gets the dw_config of this ShowDataconnectionResponse.
 
         连接动态变化配置项，每种连接略有区别，建议在界面进行调试
 
@@ -183,7 +183,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @dw_config.setter
     def dw_config(self, dw_config):
-        """Sets the dw_config of this ShowDataconnectionResponse.
+        r"""Sets the dw_config of this ShowDataconnectionResponse.
 
         连接动态变化配置项，每种连接略有区别，建议在界面进行调试
 
@@ -194,7 +194,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ShowDataconnectionResponse.
+        r"""Gets the agent_id of this ShowDataconnectionResponse.
 
         代理id
 
@@ -205,7 +205,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ShowDataconnectionResponse.
+        r"""Sets the agent_id of this ShowDataconnectionResponse.
 
         代理id
 
@@ -216,7 +216,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this ShowDataconnectionResponse.
+        r"""Gets the agent_name of this ShowDataconnectionResponse.
 
         代理名称
 
@@ -227,7 +227,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this ShowDataconnectionResponse.
+        r"""Sets the agent_name of this ShowDataconnectionResponse.
 
         代理名称
 
@@ -238,7 +238,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def env_type(self):
-        """Gets the env_type of this ShowDataconnectionResponse.
+        r"""Gets the env_type of this ShowDataconnectionResponse.
 
         0：开发模式 1：生产模式。默认为0
 
@@ -249,7 +249,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this ShowDataconnectionResponse.
+        r"""Sets the env_type of this ShowDataconnectionResponse.
 
         0：开发模式 1：生产模式。默认为0
 
@@ -260,7 +260,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this ShowDataconnectionResponse.
+        r"""Gets the qualified_name of this ShowDataconnectionResponse.
 
         数据连接限定名称
 
@@ -271,7 +271,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this ShowDataconnectionResponse.
+        r"""Sets the qualified_name of this ShowDataconnectionResponse.
 
         数据连接限定名称
 
@@ -282,7 +282,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this ShowDataconnectionResponse.
+        r"""Gets the dw_id of this ShowDataconnectionResponse.
 
         数据连接id
 
@@ -293,7 +293,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this ShowDataconnectionResponse.
+        r"""Sets the dw_id of this ShowDataconnectionResponse.
 
         数据连接id
 
@@ -304,7 +304,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowDataconnectionResponse.
+        r"""Gets the create_user of this ShowDataconnectionResponse.
 
         数据连接创建者
 
@@ -315,7 +315,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowDataconnectionResponse.
+        r"""Sets the create_user of this ShowDataconnectionResponse.
 
         数据连接创建者
 
@@ -326,7 +326,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDataconnectionResponse.
+        r"""Gets the create_time of this ShowDataconnectionResponse.
 
         数据连接创建时间，时间戳
 
@@ -337,7 +337,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDataconnectionResponse.
+        r"""Sets the create_time of this ShowDataconnectionResponse.
 
         数据连接创建时间，时间戳
 
@@ -348,7 +348,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def dw_catagory(self):
-        """Gets the dw_catagory of this ShowDataconnectionResponse.
+        r"""Gets the dw_catagory of this ShowDataconnectionResponse.
 
         数据连接类别
 
@@ -359,7 +359,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @dw_catagory.setter
     def dw_catagory(self, dw_catagory):
-        """Sets the dw_catagory of this ShowDataconnectionResponse.
+        r"""Sets the dw_catagory of this ShowDataconnectionResponse.
 
         数据连接类别
 
@@ -370,7 +370,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDataconnectionResponse.
+        r"""Gets the description of this ShowDataconnectionResponse.
 
         连接描述信息
 
@@ -381,7 +381,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDataconnectionResponse.
+        r"""Sets the description of this ShowDataconnectionResponse.
 
         连接描述信息
 
@@ -392,7 +392,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @property
     def update_type(self):
-        """Gets the update_type of this ShowDataconnectionResponse.
+        r"""Gets the update_type of this ShowDataconnectionResponse.
 
         0：创建 1：更新。默认为0
 
@@ -403,7 +403,7 @@ class ShowDataconnectionResponse(SdkResponse):
 
     @update_type.setter
     def update_type(self, update_type):
-        """Sets the update_type of this ShowDataconnectionResponse.
+        r"""Sets the update_type of this ShowDataconnectionResponse.
 
         0：创建 1：更新。默认为0
 

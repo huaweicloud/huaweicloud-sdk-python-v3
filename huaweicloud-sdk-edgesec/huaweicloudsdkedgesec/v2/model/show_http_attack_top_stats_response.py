@@ -34,7 +34,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
     }
 
     def __init__(self, stat_type=None, group_by=None, values=None, start_time=None, end_time=None):
-        """ShowHttpAttackTopStatsResponse
+        r"""ShowHttpAttackTopStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowHttpAttackTopStatsResponse.
+        r"""Gets the stat_type of this ShowHttpAttackTopStatsResponse.
 
         指标类型
 
@@ -83,7 +83,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowHttpAttackTopStatsResponse.
+        r"""Sets the stat_type of this ShowHttpAttackTopStatsResponse.
 
         指标类型
 
@@ -94,7 +94,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowHttpAttackTopStatsResponse.
+        r"""Gets the group_by of this ShowHttpAttackTopStatsResponse.
 
         分组类型
 
@@ -105,7 +105,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowHttpAttackTopStatsResponse.
+        r"""Sets the group_by of this ShowHttpAttackTopStatsResponse.
 
         分组类型
 
@@ -116,7 +116,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowHttpAttackTopStatsResponse.
+        r"""Gets the values of this ShowHttpAttackTopStatsResponse.
 
         :return: The values of this ShowHttpAttackTopStatsResponse.
         :rtype: list[:class:`huaweicloudsdkedgesec.v2.CommonStatItem`]
@@ -125,7 +125,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowHttpAttackTopStatsResponse.
+        r"""Sets the values of this ShowHttpAttackTopStatsResponse.
 
         :param values: The values of this ShowHttpAttackTopStatsResponse.
         :type values: list[:class:`huaweicloudsdkedgesec.v2.CommonStatItem`]
@@ -134,7 +134,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHttpAttackTopStatsResponse.
+        r"""Gets the start_time of this ShowHttpAttackTopStatsResponse.
 
         开始时间
 
@@ -145,7 +145,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHttpAttackTopStatsResponse.
+        r"""Sets the start_time of this ShowHttpAttackTopStatsResponse.
 
         开始时间
 
@@ -156,7 +156,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHttpAttackTopStatsResponse.
+        r"""Gets the end_time of this ShowHttpAttackTopStatsResponse.
 
         结束时间
 
@@ -167,7 +167,7 @@ class ShowHttpAttackTopStatsResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHttpAttackTopStatsResponse.
+        r"""Sets the end_time of this ShowHttpAttackTopStatsResponse.
 
         结束时间
 

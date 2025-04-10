@@ -83,7 +83,7 @@ class Policy:
     }
 
     def __init__(self, allow_exceptions=None, conditions=None, create_time=None, created_by=None, data_mask_policy_items=None, deny_exceptions=None, deny_policy_items=None, description=None, guid=None, id=None, is_audit_enabled=None, is_default_policy=None, is_deny_all_else=None, is_enabled=None, name=None, options=None, policy_items=None, policy_labels=None, policy_priority=None, policy_type=None, resource_signature=None, resources=None, row_filter_policy_items=None, service=None, service_type=None, update_time=None, updated_by=None, validity_schedules=None, version=None, zone_name=None):
-        """Policy
+        r"""Policy
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class Policy:
 
     @property
     def allow_exceptions(self):
-        """Gets the allow_exceptions of this Policy.
+        r"""Gets the allow_exceptions of this Policy.
 
         排除的允许策略
 
@@ -257,7 +257,7 @@ class Policy:
 
     @allow_exceptions.setter
     def allow_exceptions(self, allow_exceptions):
-        """Sets the allow_exceptions of this Policy.
+        r"""Sets the allow_exceptions of this Policy.
 
         排除的允许策略
 
@@ -268,7 +268,7 @@ class Policy:
 
     @property
     def conditions(self):
-        """Gets the conditions of this Policy.
+        r"""Gets the conditions of this Policy.
 
         条件属性
 
@@ -279,7 +279,7 @@ class Policy:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this Policy.
+        r"""Sets the conditions of this Policy.
 
         条件属性
 
@@ -290,7 +290,7 @@ class Policy:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Policy.
+        r"""Gets the create_time of this Policy.
 
         创建时间
 
@@ -301,7 +301,7 @@ class Policy:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Policy.
+        r"""Sets the create_time of this Policy.
 
         创建时间
 
@@ -312,7 +312,7 @@ class Policy:
 
     @property
     def created_by(self):
-        """Gets the created_by of this Policy.
+        r"""Gets the created_by of this Policy.
 
         创建者
 
@@ -323,7 +323,7 @@ class Policy:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this Policy.
+        r"""Sets the created_by of this Policy.
 
         创建者
 
@@ -334,7 +334,7 @@ class Policy:
 
     @property
     def data_mask_policy_items(self):
-        """Gets the data_mask_policy_items of this Policy.
+        r"""Gets the data_mask_policy_items of this Policy.
 
         类掩码策略条目
 
@@ -345,7 +345,7 @@ class Policy:
 
     @data_mask_policy_items.setter
     def data_mask_policy_items(self, data_mask_policy_items):
-        """Sets the data_mask_policy_items of this Policy.
+        r"""Sets the data_mask_policy_items of this Policy.
 
         类掩码策略条目
 
@@ -356,7 +356,7 @@ class Policy:
 
     @property
     def deny_exceptions(self):
-        """Gets the deny_exceptions of this Policy.
+        r"""Gets the deny_exceptions of this Policy.
 
         拒绝排除策略
 
@@ -367,7 +367,7 @@ class Policy:
 
     @deny_exceptions.setter
     def deny_exceptions(self, deny_exceptions):
-        """Sets the deny_exceptions of this Policy.
+        r"""Sets the deny_exceptions of this Policy.
 
         拒绝排除策略
 
@@ -378,7 +378,7 @@ class Policy:
 
     @property
     def deny_policy_items(self):
-        """Gets the deny_policy_items of this Policy.
+        r"""Gets the deny_policy_items of this Policy.
 
         拒绝策略
 
@@ -389,7 +389,7 @@ class Policy:
 
     @deny_policy_items.setter
     def deny_policy_items(self, deny_policy_items):
-        """Sets the deny_policy_items of this Policy.
+        r"""Sets the deny_policy_items of this Policy.
 
         拒绝策略
 
@@ -400,7 +400,7 @@ class Policy:
 
     @property
     def description(self):
-        """Gets the description of this Policy.
+        r"""Gets the description of this Policy.
 
         描述
 
@@ -411,7 +411,7 @@ class Policy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Policy.
+        r"""Sets the description of this Policy.
 
         描述
 
@@ -422,7 +422,7 @@ class Policy:
 
     @property
     def guid(self):
-        """Gets the guid of this Policy.
+        r"""Gets the guid of this Policy.
 
         唯一guid
 
@@ -433,7 +433,7 @@ class Policy:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this Policy.
+        r"""Sets the guid of this Policy.
 
         唯一guid
 
@@ -444,7 +444,7 @@ class Policy:
 
     @property
     def id(self):
-        """Gets the id of this Policy.
+        r"""Gets the id of this Policy.
 
         主键
 
@@ -455,7 +455,7 @@ class Policy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Policy.
+        r"""Sets the id of this Policy.
 
         主键
 
@@ -466,7 +466,7 @@ class Policy:
 
     @property
     def is_audit_enabled(self):
-        """Gets the is_audit_enabled of this Policy.
+        r"""Gets the is_audit_enabled of this Policy.
 
         是否支持审计
 
@@ -477,7 +477,7 @@ class Policy:
 
     @is_audit_enabled.setter
     def is_audit_enabled(self, is_audit_enabled):
-        """Sets the is_audit_enabled of this Policy.
+        r"""Sets the is_audit_enabled of this Policy.
 
         是否支持审计
 
@@ -488,7 +488,7 @@ class Policy:
 
     @property
     def is_default_policy(self):
-        """Gets the is_default_policy of this Policy.
+        r"""Gets the is_default_policy of this Policy.
 
         是否默认策略
 
@@ -499,7 +499,7 @@ class Policy:
 
     @is_default_policy.setter
     def is_default_policy(self, is_default_policy):
-        """Sets the is_default_policy of this Policy.
+        r"""Sets the is_default_policy of this Policy.
 
         是否默认策略
 
@@ -510,7 +510,7 @@ class Policy:
 
     @property
     def is_deny_all_else(self):
-        """Gets the is_deny_all_else of this Policy.
+        r"""Gets the is_deny_all_else of this Policy.
 
         是否拒绝所有
 
@@ -521,7 +521,7 @@ class Policy:
 
     @is_deny_all_else.setter
     def is_deny_all_else(self, is_deny_all_else):
-        """Sets the is_deny_all_else of this Policy.
+        r"""Sets the is_deny_all_else of this Policy.
 
         是否拒绝所有
 
@@ -532,7 +532,7 @@ class Policy:
 
     @property
     def is_enabled(self):
-        """Gets the is_enabled of this Policy.
+        r"""Gets the is_enabled of this Policy.
 
         是否启动
 
@@ -543,7 +543,7 @@ class Policy:
 
     @is_enabled.setter
     def is_enabled(self, is_enabled):
-        """Sets the is_enabled of this Policy.
+        r"""Sets the is_enabled of this Policy.
 
         是否启动
 
@@ -554,7 +554,7 @@ class Policy:
 
     @property
     def name(self):
-        """Gets the name of this Policy.
+        r"""Gets the name of this Policy.
 
         名
 
@@ -565,7 +565,7 @@ class Policy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Policy.
+        r"""Sets the name of this Policy.
 
         名
 
@@ -576,7 +576,7 @@ class Policy:
 
     @property
     def options(self):
-        """Gets the options of this Policy.
+        r"""Gets the options of this Policy.
 
         选项
 
@@ -587,7 +587,7 @@ class Policy:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this Policy.
+        r"""Sets the options of this Policy.
 
         选项
 
@@ -598,7 +598,7 @@ class Policy:
 
     @property
     def policy_items(self):
-        """Gets the policy_items of this Policy.
+        r"""Gets the policy_items of this Policy.
 
         策略信息数组
 
@@ -609,7 +609,7 @@ class Policy:
 
     @policy_items.setter
     def policy_items(self, policy_items):
-        """Sets the policy_items of this Policy.
+        r"""Sets the policy_items of this Policy.
 
         策略信息数组
 
@@ -620,7 +620,7 @@ class Policy:
 
     @property
     def policy_labels(self):
-        """Gets the policy_labels of this Policy.
+        r"""Gets the policy_labels of this Policy.
 
         策略便签
 
@@ -631,7 +631,7 @@ class Policy:
 
     @policy_labels.setter
     def policy_labels(self, policy_labels):
-        """Sets the policy_labels of this Policy.
+        r"""Sets the policy_labels of this Policy.
 
         策略便签
 
@@ -642,7 +642,7 @@ class Policy:
 
     @property
     def policy_priority(self):
-        """Gets the policy_priority of this Policy.
+        r"""Gets the policy_priority of this Policy.
 
         策略优先级
 
@@ -653,7 +653,7 @@ class Policy:
 
     @policy_priority.setter
     def policy_priority(self, policy_priority):
-        """Sets the policy_priority of this Policy.
+        r"""Sets the policy_priority of this Policy.
 
         策略优先级
 
@@ -664,7 +664,7 @@ class Policy:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this Policy.
+        r"""Gets the policy_type of this Policy.
 
         策略类型
 
@@ -675,7 +675,7 @@ class Policy:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this Policy.
+        r"""Sets the policy_type of this Policy.
 
         策略类型
 
@@ -686,7 +686,7 @@ class Policy:
 
     @property
     def resource_signature(self):
-        """Gets the resource_signature of this Policy.
+        r"""Gets the resource_signature of this Policy.
 
         资源签名
 
@@ -697,7 +697,7 @@ class Policy:
 
     @resource_signature.setter
     def resource_signature(self, resource_signature):
-        """Sets the resource_signature of this Policy.
+        r"""Sets the resource_signature of this Policy.
 
         资源签名
 
@@ -708,7 +708,7 @@ class Policy:
 
     @property
     def resources(self):
-        """Gets the resources of this Policy.
+        r"""Gets the resources of this Policy.
 
         资源
 
@@ -719,7 +719,7 @@ class Policy:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this Policy.
+        r"""Sets the resources of this Policy.
 
         资源
 
@@ -730,7 +730,7 @@ class Policy:
 
     @property
     def row_filter_policy_items(self):
-        """Gets the row_filter_policy_items of this Policy.
+        r"""Gets the row_filter_policy_items of this Policy.
 
         行过滤策略条目
 
@@ -741,7 +741,7 @@ class Policy:
 
     @row_filter_policy_items.setter
     def row_filter_policy_items(self, row_filter_policy_items):
-        """Sets the row_filter_policy_items of this Policy.
+        r"""Sets the row_filter_policy_items of this Policy.
 
         行过滤策略条目
 
@@ -752,7 +752,7 @@ class Policy:
 
     @property
     def service(self):
-        """Gets the service of this Policy.
+        r"""Gets the service of this Policy.
 
         服务
 
@@ -763,7 +763,7 @@ class Policy:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this Policy.
+        r"""Sets the service of this Policy.
 
         服务
 
@@ -774,7 +774,7 @@ class Policy:
 
     @property
     def service_type(self):
-        """Gets the service_type of this Policy.
+        r"""Gets the service_type of this Policy.
 
         服务类型
 
@@ -785,7 +785,7 @@ class Policy:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this Policy.
+        r"""Sets the service_type of this Policy.
 
         服务类型
 
@@ -796,7 +796,7 @@ class Policy:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Policy.
+        r"""Gets the update_time of this Policy.
 
         更新时间
 
@@ -807,7 +807,7 @@ class Policy:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Policy.
+        r"""Sets the update_time of this Policy.
 
         更新时间
 
@@ -818,7 +818,7 @@ class Policy:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this Policy.
+        r"""Gets the updated_by of this Policy.
 
         更新者
 
@@ -829,7 +829,7 @@ class Policy:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this Policy.
+        r"""Sets the updated_by of this Policy.
 
         更新者
 
@@ -840,7 +840,7 @@ class Policy:
 
     @property
     def validity_schedules(self):
-        """Gets the validity_schedules of this Policy.
+        r"""Gets the validity_schedules of this Policy.
 
         验证周期
 
@@ -851,7 +851,7 @@ class Policy:
 
     @validity_schedules.setter
     def validity_schedules(self, validity_schedules):
-        """Sets the validity_schedules of this Policy.
+        r"""Sets the validity_schedules of this Policy.
 
         验证周期
 
@@ -862,7 +862,7 @@ class Policy:
 
     @property
     def version(self):
-        """Gets the version of this Policy.
+        r"""Gets the version of this Policy.
 
         版本
 
@@ -873,7 +873,7 @@ class Policy:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Policy.
+        r"""Sets the version of this Policy.
 
         版本
 
@@ -884,7 +884,7 @@ class Policy:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this Policy.
+        r"""Gets the zone_name of this Policy.
 
         域
 
@@ -895,7 +895,7 @@ class Policy:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this Policy.
+        r"""Sets the zone_name of this Policy.
 
         域
 

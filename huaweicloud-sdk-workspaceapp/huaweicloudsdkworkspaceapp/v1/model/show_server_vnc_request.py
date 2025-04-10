@@ -25,7 +25,7 @@ class ShowServerVncRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowServerVncRequest
+        r"""ShowServerVncRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerVncRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowServerVncRequest.
+        r"""Gets the server_id of this ShowServerVncRequest.
 
         服务器唯一标识。
 
@@ -53,7 +53,7 @@ class ShowServerVncRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowServerVncRequest.
+        r"""Sets the server_id of this ShowServerVncRequest.
 
         服务器唯一标识。
 

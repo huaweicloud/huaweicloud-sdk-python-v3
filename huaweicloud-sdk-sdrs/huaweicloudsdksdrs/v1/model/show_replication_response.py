@@ -26,7 +26,7 @@ class ShowReplicationResponse(SdkResponse):
     }
 
     def __init__(self, replication=None):
-        """ShowReplicationResponse
+        r"""ShowReplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowReplicationResponse(SdkResponse):
 
     @property
     def replication(self):
-        """Gets the replication of this ShowReplicationResponse.
+        r"""Gets the replication of this ShowReplicationResponse.
 
         :return: The replication of this ShowReplicationResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowReplicationParams`
@@ -53,7 +53,7 @@ class ShowReplicationResponse(SdkResponse):
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this ShowReplicationResponse.
+        r"""Sets the replication of this ShowReplicationResponse.
 
         :param replication: The replication of this ShowReplicationResponse.
         :type replication: :class:`huaweicloudsdksdrs.v1.ShowReplicationParams`

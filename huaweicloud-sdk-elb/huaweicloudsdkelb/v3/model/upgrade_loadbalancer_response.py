@@ -28,7 +28,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, job_id=None):
-        """UpgradeLoadbalancerResponse
+        r"""UpgradeLoadbalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpgradeLoadbalancerResponse.
+        r"""Gets the request_id of this UpgradeLoadbalancerResponse.
 
         请求ID。 注：自动生成 。
 
@@ -62,7 +62,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpgradeLoadbalancerResponse.
+        r"""Sets the request_id of this UpgradeLoadbalancerResponse.
 
         请求ID。 注：自动生成 。
 
@@ -73,7 +73,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpgradeLoadbalancerResponse.
+        r"""Gets the job_id of this UpgradeLoadbalancerResponse.
 
         升级的任务ID。
 
@@ -84,7 +84,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpgradeLoadbalancerResponse.
+        r"""Sets the job_id of this UpgradeLoadbalancerResponse.
 
         升级的任务ID。
 

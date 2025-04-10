@@ -37,7 +37,7 @@ class ListMonitorIndicatorDataRequest:
     }
 
     def __init__(self, _from=None, to=None, function=None, period=None, indicator_name=None, dim0=None, dim1=None):
-        """ListMonitorIndicatorDataRequest
+        r"""ListMonitorIndicatorDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListMonitorIndicatorDataRequest.
+        r"""Gets the _from of this ListMonitorIndicatorDataRequest.
 
         开始时间。
 
@@ -92,7 +92,7 @@ class ListMonitorIndicatorDataRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListMonitorIndicatorDataRequest.
+        r"""Sets the _from of this ListMonitorIndicatorDataRequest.
 
         开始时间。
 
@@ -103,7 +103,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListMonitorIndicatorDataRequest.
+        r"""Gets the to of this ListMonitorIndicatorDataRequest.
 
         结束时间。
 
@@ -114,7 +114,7 @@ class ListMonitorIndicatorDataRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListMonitorIndicatorDataRequest.
+        r"""Sets the to of this ListMonitorIndicatorDataRequest.
 
         结束时间。
 
@@ -125,7 +125,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def function(self):
-        """Gets the function of this ListMonitorIndicatorDataRequest.
+        r"""Gets the function of this ListMonitorIndicatorDataRequest.
 
         取值方法。
 
@@ -136,7 +136,7 @@ class ListMonitorIndicatorDataRequest:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this ListMonitorIndicatorDataRequest.
+        r"""Sets the function of this ListMonitorIndicatorDataRequest.
 
         取值方法。
 
@@ -147,7 +147,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListMonitorIndicatorDataRequest.
+        r"""Gets the period of this ListMonitorIndicatorDataRequest.
 
         取值周期。
 
@@ -158,7 +158,7 @@ class ListMonitorIndicatorDataRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListMonitorIndicatorDataRequest.
+        r"""Sets the period of this ListMonitorIndicatorDataRequest.
 
         取值周期。
 
@@ -169,7 +169,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def indicator_name(self):
-        """Gets the indicator_name of this ListMonitorIndicatorDataRequest.
+        r"""Gets the indicator_name of this ListMonitorIndicatorDataRequest.
 
         指标名称。
 
@@ -180,7 +180,7 @@ class ListMonitorIndicatorDataRequest:
 
     @indicator_name.setter
     def indicator_name(self, indicator_name):
-        """Sets the indicator_name of this ListMonitorIndicatorDataRequest.
+        r"""Sets the indicator_name of this ListMonitorIndicatorDataRequest.
 
         指标名称。
 
@@ -191,7 +191,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def dim0(self):
-        """Gets the dim0 of this ListMonitorIndicatorDataRequest.
+        r"""Gets the dim0 of this ListMonitorIndicatorDataRequest.
 
         第一层级。
 
@@ -202,7 +202,7 @@ class ListMonitorIndicatorDataRequest:
 
     @dim0.setter
     def dim0(self, dim0):
-        """Sets the dim0 of this ListMonitorIndicatorDataRequest.
+        r"""Sets the dim0 of this ListMonitorIndicatorDataRequest.
 
         第一层级。
 
@@ -213,7 +213,7 @@ class ListMonitorIndicatorDataRequest:
 
     @property
     def dim1(self):
-        """Gets the dim1 of this ListMonitorIndicatorDataRequest.
+        r"""Gets the dim1 of this ListMonitorIndicatorDataRequest.
 
         第二层级。
 
@@ -224,7 +224,7 @@ class ListMonitorIndicatorDataRequest:
 
     @dim1.setter
     def dim1(self, dim1):
-        """Sets the dim1 of this ListMonitorIndicatorDataRequest.
+        r"""Sets the dim1 of this ListMonitorIndicatorDataRequest.
 
         第二层级。
 

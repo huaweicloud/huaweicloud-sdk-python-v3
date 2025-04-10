@@ -29,7 +29,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None, body=None):
-        """BatchCreateSecurityPermissionSetPermissionsRequest
+        r"""BatchCreateSecurityPermissionSetPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this BatchCreateSecurityPermissionSetPermissionsRequest.
+        r"""Gets the permission_set_id of this BatchCreateSecurityPermissionSetPermissionsRequest.
 
         权限集id
 
@@ -66,7 +66,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this BatchCreateSecurityPermissionSetPermissionsRequest.
+        r"""Sets the permission_set_id of this BatchCreateSecurityPermissionSetPermissionsRequest.
 
         权限集id
 
@@ -77,7 +77,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchCreateSecurityPermissionSetPermissionsRequest.
+        r"""Gets the workspace of this BatchCreateSecurityPermissionSetPermissionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchCreateSecurityPermissionSetPermissionsRequest.
+        r"""Sets the workspace of this BatchCreateSecurityPermissionSetPermissionsRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateSecurityPermissionSetPermissionsRequest.
+        r"""Gets the body of this BatchCreateSecurityPermissionSetPermissionsRequest.
 
         :return: The body of this BatchCreateSecurityPermissionSetPermissionsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionCreateDTO`
@@ -108,7 +108,7 @@ class BatchCreateSecurityPermissionSetPermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateSecurityPermissionSetPermissionsRequest.
+        r"""Sets the body of this BatchCreateSecurityPermissionSetPermissionsRequest.
 
         :param body: The body of this BatchCreateSecurityPermissionSetPermissionsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetPermissionCreateDTO`

@@ -38,7 +38,7 @@ class SetMessageEmailConfigReq:
     }
 
     def __init__(self, server=None, subject_prefix=None, user_name=None, password=None, email=None, language=None):
-        """SetMessageEmailConfigReq
+        r"""SetMessageEmailConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class SetMessageEmailConfigReq:
 
     @property
     def server(self):
-        """Gets the server of this SetMessageEmailConfigReq.
+        r"""Gets the server of this SetMessageEmailConfigReq.
 
         服务器地址
 
@@ -87,7 +87,7 @@ class SetMessageEmailConfigReq:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this SetMessageEmailConfigReq.
+        r"""Sets the server of this SetMessageEmailConfigReq.
 
         服务器地址
 
@@ -98,7 +98,7 @@ class SetMessageEmailConfigReq:
 
     @property
     def subject_prefix(self):
-        """Gets the subject_prefix of this SetMessageEmailConfigReq.
+        r"""Gets the subject_prefix of this SetMessageEmailConfigReq.
 
         展示名
 
@@ -109,7 +109,7 @@ class SetMessageEmailConfigReq:
 
     @subject_prefix.setter
     def subject_prefix(self, subject_prefix):
-        """Sets the subject_prefix of this SetMessageEmailConfigReq.
+        r"""Sets the subject_prefix of this SetMessageEmailConfigReq.
 
         展示名
 
@@ -120,7 +120,7 @@ class SetMessageEmailConfigReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SetMessageEmailConfigReq.
+        r"""Gets the user_name of this SetMessageEmailConfigReq.
 
         用户名
 
@@ -131,7 +131,7 @@ class SetMessageEmailConfigReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SetMessageEmailConfigReq.
+        r"""Sets the user_name of this SetMessageEmailConfigReq.
 
         用户名
 
@@ -142,7 +142,7 @@ class SetMessageEmailConfigReq:
 
     @property
     def password(self):
-        """Gets the password of this SetMessageEmailConfigReq.
+        r"""Gets the password of this SetMessageEmailConfigReq.
 
         密码
 
@@ -153,7 +153,7 @@ class SetMessageEmailConfigReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this SetMessageEmailConfigReq.
+        r"""Sets the password of this SetMessageEmailConfigReq.
 
         密码
 
@@ -164,7 +164,7 @@ class SetMessageEmailConfigReq:
 
     @property
     def email(self):
-        """Gets the email of this SetMessageEmailConfigReq.
+        r"""Gets the email of this SetMessageEmailConfigReq.
 
         邮箱
 
@@ -175,7 +175,7 @@ class SetMessageEmailConfigReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this SetMessageEmailConfigReq.
+        r"""Sets the email of this SetMessageEmailConfigReq.
 
         邮箱
 
@@ -186,7 +186,7 @@ class SetMessageEmailConfigReq:
 
     @property
     def language(self):
-        """Gets the language of this SetMessageEmailConfigReq.
+        r"""Gets the language of this SetMessageEmailConfigReq.
 
         :return: The language of this SetMessageEmailConfigReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
@@ -195,7 +195,7 @@ class SetMessageEmailConfigReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SetMessageEmailConfigReq.
+        r"""Sets the language of this SetMessageEmailConfigReq.
 
         :param language: The language of this SetMessageEmailConfigReq.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

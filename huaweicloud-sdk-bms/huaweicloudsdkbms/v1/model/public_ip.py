@@ -27,7 +27,7 @@ class PublicIp:
     }
 
     def __init__(self, id=None, eip=None):
-        """PublicIp
+        r"""PublicIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublicIp:
 
     @property
     def id(self):
-        """Gets the id of this PublicIp.
+        r"""Gets the id of this PublicIp.
 
         创建裸金属服务器分配已有弹性公网IP时，分配的弹性公网IP的ID，UUID格式。弹性公网IP的ID可以从网络控制台或者参考《虚拟私有云API参考》的“查询弹性公网IP列表”章节获取。约束：只能分配状态（status）为DOWN的弹性公网IP。批量创建裸金属服务器时，不能使用已有弹性公网IP，即不支持此参数。
 
@@ -61,7 +61,7 @@ class PublicIp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicIp.
+        r"""Sets the id of this PublicIp.
 
         创建裸金属服务器分配已有弹性公网IP时，分配的弹性公网IP的ID，UUID格式。弹性公网IP的ID可以从网络控制台或者参考《虚拟私有云API参考》的“查询弹性公网IP列表”章节获取。约束：只能分配状态（status）为DOWN的弹性公网IP。批量创建裸金属服务器时，不能使用已有弹性公网IP，即不支持此参数。
 
@@ -72,7 +72,7 @@ class PublicIp:
 
     @property
     def eip(self):
-        """Gets the eip of this PublicIp.
+        r"""Gets the eip of this PublicIp.
 
         :return: The eip of this PublicIp.
         :rtype: :class:`huaweicloudsdkbms.v1.Eip`
@@ -81,7 +81,7 @@ class PublicIp:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this PublicIp.
+        r"""Sets the eip of this PublicIp.
 
         :param eip: The eip of this PublicIp.
         :type eip: :class:`huaweicloudsdkbms.v1.Eip`

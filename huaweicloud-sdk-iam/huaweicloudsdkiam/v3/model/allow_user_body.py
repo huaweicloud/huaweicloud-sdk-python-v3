@@ -31,7 +31,7 @@ class AllowUserBody:
     }
 
     def __init__(self, manage_accesskey=None, manage_email=None, manage_mobile=None, manage_password=None):
-        """AllowUserBody
+        r"""AllowUserBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AllowUserBody:
 
     @property
     def manage_accesskey(self):
-        """Gets the manage_accesskey of this AllowUserBody.
+        r"""Gets the manage_accesskey of this AllowUserBody.
 
         是否允许子用户自行管理AK，取值范围true或false。
 
@@ -75,7 +75,7 @@ class AllowUserBody:
 
     @manage_accesskey.setter
     def manage_accesskey(self, manage_accesskey):
-        """Sets the manage_accesskey of this AllowUserBody.
+        r"""Sets the manage_accesskey of this AllowUserBody.
 
         是否允许子用户自行管理AK，取值范围true或false。
 
@@ -86,7 +86,7 @@ class AllowUserBody:
 
     @property
     def manage_email(self):
-        """Gets the manage_email of this AllowUserBody.
+        r"""Gets the manage_email of this AllowUserBody.
 
         是否允许子用户自己修改邮箱，取值范围true或false。
 
@@ -97,7 +97,7 @@ class AllowUserBody:
 
     @manage_email.setter
     def manage_email(self, manage_email):
-        """Sets the manage_email of this AllowUserBody.
+        r"""Sets the manage_email of this AllowUserBody.
 
         是否允许子用户自己修改邮箱，取值范围true或false。
 
@@ -108,7 +108,7 @@ class AllowUserBody:
 
     @property
     def manage_mobile(self):
-        """Gets the manage_mobile of this AllowUserBody.
+        r"""Gets the manage_mobile of this AllowUserBody.
 
         是否允许子用户自己修改电话，取值范围true或false。
 
@@ -119,7 +119,7 @@ class AllowUserBody:
 
     @manage_mobile.setter
     def manage_mobile(self, manage_mobile):
-        """Sets the manage_mobile of this AllowUserBody.
+        r"""Sets the manage_mobile of this AllowUserBody.
 
         是否允许子用户自己修改电话，取值范围true或false。
 
@@ -130,7 +130,7 @@ class AllowUserBody:
 
     @property
     def manage_password(self):
-        """Gets the manage_password of this AllowUserBody.
+        r"""Gets the manage_password of this AllowUserBody.
 
         是否允许子用户自己修改密码，取值范围true或false。
 
@@ -141,7 +141,7 @@ class AllowUserBody:
 
     @manage_password.setter
     def manage_password(self, manage_password):
-        """Sets the manage_password of this AllowUserBody.
+        r"""Sets the manage_password of this AllowUserBody.
 
         是否允许子用户自己修改密码，取值范围true或false。
 

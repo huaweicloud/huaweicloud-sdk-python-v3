@@ -27,7 +27,7 @@ class ShowAuditRuleRiskRequest:
     }
 
     def __init__(self, instance_id=None, risk_id=None):
-        """ShowAuditRuleRiskRequest
+        r"""ShowAuditRuleRiskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAuditRuleRiskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAuditRuleRiskRequest.
+        r"""Gets the instance_id of this ShowAuditRuleRiskRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -59,7 +59,7 @@ class ShowAuditRuleRiskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAuditRuleRiskRequest.
+        r"""Sets the instance_id of this ShowAuditRuleRiskRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -70,7 +70,7 @@ class ShowAuditRuleRiskRequest:
 
     @property
     def risk_id(self):
-        """Gets the risk_id of this ShowAuditRuleRiskRequest.
+        r"""Gets the risk_id of this ShowAuditRuleRiskRequest.
 
         风险规则ID。可在查询风险规则策略接口的ID字段获取。
 
@@ -81,7 +81,7 @@ class ShowAuditRuleRiskRequest:
 
     @risk_id.setter
     def risk_id(self, risk_id):
-        """Sets the risk_id of this ShowAuditRuleRiskRequest.
+        r"""Sets the risk_id of this ShowAuditRuleRiskRequest.
 
         风险规则ID。可在查询风险规则策略接口的ID字段获取。
 

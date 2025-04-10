@@ -35,7 +35,7 @@ class ListWorkflowInstanceRequest:
     }
 
     def __init__(self, limit=None, graph_name=None, start_time=None, end_time=None, status=None, offset=None):
-        """ListWorkflowInstanceRequest
+        r"""ListWorkflowInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListWorkflowInstanceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkflowInstanceRequest.
+        r"""Gets the limit of this ListWorkflowInstanceRequest.
 
         请求返回的最大记录条数。分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
 
@@ -88,7 +88,7 @@ class ListWorkflowInstanceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkflowInstanceRequest.
+        r"""Sets the limit of this ListWorkflowInstanceRequest.
 
         请求返回的最大记录条数。分页查询，每页显示的条目数量，最大数量200，超过200后只返回200
 
@@ -99,7 +99,7 @@ class ListWorkflowInstanceRequest:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this ListWorkflowInstanceRequest.
+        r"""Gets the graph_name of this ListWorkflowInstanceRequest.
 
         工作流名称。
 
@@ -110,7 +110,7 @@ class ListWorkflowInstanceRequest:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this ListWorkflowInstanceRequest.
+        r"""Sets the graph_name of this ListWorkflowInstanceRequest.
 
         工作流名称。
 
@@ -121,7 +121,7 @@ class ListWorkflowInstanceRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListWorkflowInstanceRequest.
+        r"""Gets the start_time of this ListWorkflowInstanceRequest.
 
         查询开始时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间。若起始时间未填写，以终止时间前推3天为起始时间
 
@@ -132,7 +132,7 @@ class ListWorkflowInstanceRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListWorkflowInstanceRequest.
+        r"""Sets the start_time of this ListWorkflowInstanceRequest.
 
         查询开始时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间。若起始时间未填写，以终止时间前推3天为起始时间
 
@@ -143,7 +143,7 @@ class ListWorkflowInstanceRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListWorkflowInstanceRequest.
+        r"""Gets the end_time of this ListWorkflowInstanceRequest.
 
         查询终止时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间。若终止时间未填写，以起始时间后退3天未终止时间。若均未填写，默认查询最近3天数据。
 
@@ -154,7 +154,7 @@ class ListWorkflowInstanceRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListWorkflowInstanceRequest.
+        r"""Sets the end_time of this ListWorkflowInstanceRequest.
 
         查询终止时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间。若终止时间未填写，以起始时间后退3天未终止时间。若均未填写，默认查询最近3天数据。
 
@@ -165,7 +165,7 @@ class ListWorkflowInstanceRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListWorkflowInstanceRequest.
+        r"""Gets the status of this ListWorkflowInstanceRequest.
 
         需要过滤的流程实例状态  最小长度：0  最大长度：64  枚举值：  success  fail  running  timeout  cancel
 
@@ -176,7 +176,7 @@ class ListWorkflowInstanceRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListWorkflowInstanceRequest.
+        r"""Sets the status of this ListWorkflowInstanceRequest.
 
         需要过滤的流程实例状态  最小长度：0  最大长度：64  枚举值：  success  fail  running  timeout  cancel
 
@@ -187,7 +187,7 @@ class ListWorkflowInstanceRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkflowInstanceRequest.
+        r"""Gets the offset of this ListWorkflowInstanceRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -198,7 +198,7 @@ class ListWorkflowInstanceRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkflowInstanceRequest.
+        r"""Sets the offset of this ListWorkflowInstanceRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 

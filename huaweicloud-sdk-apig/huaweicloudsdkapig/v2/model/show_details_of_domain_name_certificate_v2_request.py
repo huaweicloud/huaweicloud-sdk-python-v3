@@ -31,7 +31,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, domain_id=None, certificate_id=None):
-        """ShowDetailsOfDomainNameCertificateV2Request
+        r"""ShowDetailsOfDomainNameCertificateV2Request
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -82,7 +82,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Gets the group_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         分组的编号
 
@@ -93,7 +93,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Sets the group_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         分组的编号
 
@@ -104,7 +104,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Gets the domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         域名的编号
 
@@ -115,7 +115,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Sets the domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         域名的编号
 
@@ -126,7 +126,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Gets the certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         证书的编号
 
@@ -137,7 +137,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
+        r"""Sets the certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
         证书的编号
 

@@ -31,7 +31,7 @@ class ListProductsRequest:
     }
 
     def __init__(self, ief_instance_id=None, limit=None, offset=None, sort=None):
-        """ListProductsRequest
+        r"""ListProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListProductsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListProductsRequest.
+        r"""Gets the ief_instance_id of this ListProductsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -75,7 +75,7 @@ class ListProductsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListProductsRequest.
+        r"""Sets the ief_instance_id of this ListProductsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -86,7 +86,7 @@ class ListProductsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProductsRequest.
+        r"""Gets the limit of this ListProductsRequest.
 
         查询返回记录的数量限制
 
@@ -97,7 +97,7 @@ class ListProductsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProductsRequest.
+        r"""Sets the limit of this ListProductsRequest.
 
         查询返回记录的数量限制
 
@@ -108,7 +108,7 @@ class ListProductsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProductsRequest.
+        r"""Gets the offset of this ListProductsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -119,7 +119,7 @@ class ListProductsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProductsRequest.
+        r"""Sets the offset of this ListProductsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -130,7 +130,7 @@ class ListProductsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListProductsRequest.
+        r"""Gets the sort of this ListProductsRequest.
 
         显示的条目排列顺序，使用:分隔参考值和顺序， 如sort=created_at%3Adesc表示根据创建时间逆序排列
 
@@ -141,7 +141,7 @@ class ListProductsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListProductsRequest.
+        r"""Sets the sort of this ListProductsRequest.
 
         显示的条目排列顺序，使用:分隔参考值和顺序， 如sort=created_at%3Adesc表示根据创建时间逆序排列
 

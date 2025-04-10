@@ -27,7 +27,7 @@ class ListRunningTaskRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListRunningTaskRequest
+        r"""ListRunningTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListRunningTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRunningTaskRequest.
+        r"""Gets the limit of this ListRunningTaskRequest.
 
         每页显示的条目数量。默认值1000。
 
@@ -61,7 +61,7 @@ class ListRunningTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRunningTaskRequest.
+        r"""Sets the limit of this ListRunningTaskRequest.
 
         每页显示的条目数量。默认值1000。
 
@@ -72,7 +72,7 @@ class ListRunningTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRunningTaskRequest.
+        r"""Gets the offset of this ListRunningTaskRequest.
 
         首个展示的正在处理任务信息的偏移量
 
@@ -83,7 +83,7 @@ class ListRunningTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRunningTaskRequest.
+        r"""Sets the offset of this ListRunningTaskRequest.
 
         首个展示的正在处理任务信息的偏移量
 

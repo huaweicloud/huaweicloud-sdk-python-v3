@@ -28,7 +28,7 @@ class CancelKeyDeletionResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, key_state=None):
-        """CancelKeyDeletionResponse
+        r"""CancelKeyDeletionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CancelKeyDeletionResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this CancelKeyDeletionResponse.
+        r"""Gets the key_id of this CancelKeyDeletionResponse.
 
         密钥ID
 
@@ -62,7 +62,7 @@ class CancelKeyDeletionResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CancelKeyDeletionResponse.
+        r"""Sets the key_id of this CancelKeyDeletionResponse.
 
         密钥ID
 
@@ -73,7 +73,7 @@ class CancelKeyDeletionResponse(SdkResponse):
 
     @property
     def key_state(self):
-        """Gets the key_state of this CancelKeyDeletionResponse.
+        r"""Gets the key_state of this CancelKeyDeletionResponse.
 
         密钥状态： - 2为启用状态 - 3为禁用状态 - 4为计划删除状态 - 5为等待导入状态 - 7为冻结状态
 
@@ -84,7 +84,7 @@ class CancelKeyDeletionResponse(SdkResponse):
 
     @key_state.setter
     def key_state(self, key_state):
-        """Sets the key_state of this CancelKeyDeletionResponse.
+        r"""Sets the key_state of this CancelKeyDeletionResponse.
 
         密钥状态： - 2为启用状态 - 3为禁用状态 - 4为计划删除状态 - 5为等待导入状态 - 7为冻结状态
 

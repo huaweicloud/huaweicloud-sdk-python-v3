@@ -29,7 +29,7 @@ class ListAccessPoliciesRequest:
     }
 
     def __init__(self, access_control_type=None, limit=None, offset=None):
-        """ListAccessPoliciesRequest
+        r"""ListAccessPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAccessPoliciesRequest:
 
     @property
     def access_control_type(self):
-        """Gets the access_control_type of this ListAccessPoliciesRequest.
+        r"""Gets the access_control_type of this ListAccessPoliciesRequest.
 
         接入策略控制类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
 
@@ -68,7 +68,7 @@ class ListAccessPoliciesRequest:
 
     @access_control_type.setter
     def access_control_type(self, access_control_type):
-        """Sets the access_control_type of this ListAccessPoliciesRequest.
+        r"""Sets the access_control_type of this ListAccessPoliciesRequest.
 
         接入策略控制类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
 
@@ -79,7 +79,7 @@ class ListAccessPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccessPoliciesRequest.
+        r"""Gets the limit of this ListAccessPoliciesRequest.
 
         每页数量,范围0-100,默认100。
 
@@ -90,7 +90,7 @@ class ListAccessPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccessPoliciesRequest.
+        r"""Sets the limit of this ListAccessPoliciesRequest.
 
         每页数量,范围0-100,默认100。
 
@@ -101,7 +101,7 @@ class ListAccessPoliciesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAccessPoliciesRequest.
+        r"""Gets the offset of this ListAccessPoliciesRequest.
 
         偏移量,范围0-99,默认0。
 
@@ -112,7 +112,7 @@ class ListAccessPoliciesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAccessPoliciesRequest.
+        r"""Sets the offset of this ListAccessPoliciesRequest.
 
         偏移量,范围0-99,默认0。
 

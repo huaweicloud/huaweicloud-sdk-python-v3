@@ -30,7 +30,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
     }
 
     def __init__(self, count=None, user_coupons=None, coupon_max_use_quantity=None):
-        """ListOrderCouponsByOrderIdResponse
+        r"""ListOrderCouponsByOrderIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListOrderCouponsByOrderIdResponse.
+        r"""Gets the count of this ListOrderCouponsByOrderIdResponse.
 
         查询总数。
 
@@ -69,7 +69,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListOrderCouponsByOrderIdResponse.
+        r"""Sets the count of this ListOrderCouponsByOrderIdResponse.
 
         查询总数。
 
@@ -80,7 +80,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     @property
     def user_coupons(self):
-        """Gets the user_coupons of this ListOrderCouponsByOrderIdResponse.
+        r"""Gets the user_coupons of this ListOrderCouponsByOrderIdResponse.
 
         可用的优惠券列表。 具体请参见表2。
 
@@ -91,7 +91,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     @user_coupons.setter
     def user_coupons(self, user_coupons):
-        """Sets the user_coupons of this ListOrderCouponsByOrderIdResponse.
+        r"""Sets the user_coupons of this ListOrderCouponsByOrderIdResponse.
 
         可用的优惠券列表。 具体请参见表2。
 
@@ -102,7 +102,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     @property
     def coupon_max_use_quantity(self):
-        """Gets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
+        r"""Gets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
 
         优惠券使用的最大数量。 具体请参见表4。
 
@@ -113,7 +113,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     @coupon_max_use_quantity.setter
     def coupon_max_use_quantity(self, coupon_max_use_quantity):
-        """Sets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
+        r"""Sets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
 
         优惠券使用的最大数量。 具体请参见表4。
 

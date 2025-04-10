@@ -25,7 +25,7 @@ class BatchDeleteNoticeRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteNoticeRequest
+        r"""BatchDeleteNoticeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteNoticeRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteNoticeRequest.
+        r"""Gets the body of this BatchDeleteNoticeRequest.
 
         :return: The body of this BatchDeleteNoticeRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteNoticeReq`
@@ -52,7 +52,7 @@ class BatchDeleteNoticeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteNoticeRequest.
+        r"""Sets the body of this BatchDeleteNoticeRequest.
 
         :param body: The body of this BatchDeleteNoticeRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchDeleteNoticeReq`

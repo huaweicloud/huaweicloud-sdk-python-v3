@@ -25,7 +25,7 @@ class FreezeSubCustomersRequest:
     }
 
     def __init__(self, body=None):
-        """FreezeSubCustomersRequest
+        r"""FreezeSubCustomersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FreezeSubCustomersRequest:
 
     @property
     def body(self):
-        """Gets the body of this FreezeSubCustomersRequest.
+        r"""Gets the body of this FreezeSubCustomersRequest.
 
         :return: The body of this FreezeSubCustomersRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.FreezeSubCustomersReq`
@@ -52,7 +52,7 @@ class FreezeSubCustomersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this FreezeSubCustomersRequest.
+        r"""Sets the body of this FreezeSubCustomersRequest.
 
         :param body: The body of this FreezeSubCustomersRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.FreezeSubCustomersReq`

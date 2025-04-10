@@ -26,7 +26,7 @@ class ResizeStarRocksFlavorResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ResizeStarRocksFlavorResponse
+        r"""ResizeStarRocksFlavorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResizeStarRocksFlavorResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeStarRocksFlavorResponse.
+        r"""Gets the job_id of this ResizeStarRocksFlavorResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class ResizeStarRocksFlavorResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeStarRocksFlavorResponse.
+        r"""Sets the job_id of this ResizeStarRocksFlavorResponse.
 
         工作流ID。
 

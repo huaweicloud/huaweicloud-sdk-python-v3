@@ -43,7 +43,7 @@ class ListAddressSetsRequest:
     }
 
     def __init__(self, object_id=None, key_word=None, limit=None, offset=None, address=None, address_type=None, enterprise_project_id=None, fw_instance_id=None, query_address_set_type=None, address_set_type=None):
-        """ListAddressSetsRequest
+        r"""ListAddressSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ListAddressSetsRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListAddressSetsRequest.
+        r"""Gets the object_id of this ListAddressSetsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -114,7 +114,7 @@ class ListAddressSetsRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListAddressSetsRequest.
+        r"""Sets the object_id of this ListAddressSetsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -125,7 +125,7 @@ class ListAddressSetsRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListAddressSetsRequest.
+        r"""Gets the key_word of this ListAddressSetsRequest.
 
         关键字，包括地址组名称或描述的一部分
 
@@ -136,7 +136,7 @@ class ListAddressSetsRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListAddressSetsRequest.
+        r"""Sets the key_word of this ListAddressSetsRequest.
 
         关键字，包括地址组名称或描述的一部分
 
@@ -147,7 +147,7 @@ class ListAddressSetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAddressSetsRequest.
+        r"""Gets the limit of this ListAddressSetsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -158,7 +158,7 @@ class ListAddressSetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAddressSetsRequest.
+        r"""Sets the limit of this ListAddressSetsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -169,7 +169,7 @@ class ListAddressSetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAddressSetsRequest.
+        r"""Gets the offset of this ListAddressSetsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -180,7 +180,7 @@ class ListAddressSetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAddressSetsRequest.
+        r"""Sets the offset of this ListAddressSetsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -191,7 +191,7 @@ class ListAddressSetsRequest:
 
     @property
     def address(self):
-        """Gets the address of this ListAddressSetsRequest.
+        r"""Gets the address of this ListAddressSetsRequest.
 
         ip地址
 
@@ -202,7 +202,7 @@ class ListAddressSetsRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListAddressSetsRequest.
+        r"""Sets the address of this ListAddressSetsRequest.
 
         ip地址
 
@@ -213,7 +213,7 @@ class ListAddressSetsRequest:
 
     @property
     def address_type(self):
-        """Gets the address_type of this ListAddressSetsRequest.
+        r"""Gets the address_type of this ListAddressSetsRequest.
 
         地址类型0 ipv4，1 ipv6
 
@@ -224,7 +224,7 @@ class ListAddressSetsRequest:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this ListAddressSetsRequest.
+        r"""Sets the address_type of this ListAddressSetsRequest.
 
         地址类型0 ipv4，1 ipv6
 
@@ -235,7 +235,7 @@ class ListAddressSetsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAddressSetsRequest.
+        r"""Gets the enterprise_project_id of this ListAddressSetsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -246,7 +246,7 @@ class ListAddressSetsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAddressSetsRequest.
+        r"""Sets the enterprise_project_id of this ListAddressSetsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -257,7 +257,7 @@ class ListAddressSetsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListAddressSetsRequest.
+        r"""Gets the fw_instance_id of this ListAddressSetsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -268,7 +268,7 @@ class ListAddressSetsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListAddressSetsRequest.
+        r"""Sets the fw_instance_id of this ListAddressSetsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -279,7 +279,7 @@ class ListAddressSetsRequest:
 
     @property
     def query_address_set_type(self):
-        """Gets the query_address_set_type of this ListAddressSetsRequest.
+        r"""Gets the query_address_set_type of this ListAddressSetsRequest.
 
         查询地址组类型，0表示自定义地址组，1表示预定义地址组，当address_set_type不为0时，query_address_set_type为1时才可以生效。
 
@@ -290,7 +290,7 @@ class ListAddressSetsRequest:
 
     @query_address_set_type.setter
     def query_address_set_type(self, query_address_set_type):
-        """Sets the query_address_set_type of this ListAddressSetsRequest.
+        r"""Sets the query_address_set_type of this ListAddressSetsRequest.
 
         查询地址组类型，0表示自定义地址组，1表示预定义地址组，当address_set_type不为0时，query_address_set_type为1时才可以生效。
 
@@ -301,7 +301,7 @@ class ListAddressSetsRequest:
 
     @property
     def address_set_type(self):
-        """Gets the address_set_type of this ListAddressSetsRequest.
+        r"""Gets the address_set_type of this ListAddressSetsRequest.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -312,7 +312,7 @@ class ListAddressSetsRequest:
 
     @address_set_type.setter
     def address_set_type(self, address_set_type):
-        """Sets the address_set_type of this ListAddressSetsRequest.
+        r"""Sets the address_set_type of this ListAddressSetsRequest.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 

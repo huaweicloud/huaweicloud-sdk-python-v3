@@ -25,7 +25,7 @@ class SetPrimaryVideoThumbnailRequest:
     }
 
     def __init__(self, body=None):
-        """SetPrimaryVideoThumbnailRequest
+        r"""SetPrimaryVideoThumbnailRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetPrimaryVideoThumbnailRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetPrimaryVideoThumbnailRequest.
+        r"""Gets the body of this SetPrimaryVideoThumbnailRequest.
 
         :return: The body of this SetPrimaryVideoThumbnailRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SetPrimaryVideoThumbnailRequestBody`
@@ -52,7 +52,7 @@ class SetPrimaryVideoThumbnailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetPrimaryVideoThumbnailRequest.
+        r"""Sets the body of this SetPrimaryVideoThumbnailRequest.
 
         :param body: The body of this SetPrimaryVideoThumbnailRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.SetPrimaryVideoThumbnailRequestBody`

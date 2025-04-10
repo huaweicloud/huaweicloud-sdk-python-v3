@@ -27,7 +27,7 @@ class BatchUpdateNoticeReq:
     }
 
     def __init__(self, notice_ids=None, operation=None):
-        """BatchUpdateNoticeReq
+        r"""BatchUpdateNoticeReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchUpdateNoticeReq:
 
     @property
     def notice_ids(self):
-        """Gets the notice_ids of this BatchUpdateNoticeReq.
+        r"""Gets the notice_ids of this BatchUpdateNoticeReq.
 
         批量更新通知消息id列表
 
@@ -59,7 +59,7 @@ class BatchUpdateNoticeReq:
 
     @notice_ids.setter
     def notice_ids(self, notice_ids):
-        """Sets the notice_ids of this BatchUpdateNoticeReq.
+        r"""Sets the notice_ids of this BatchUpdateNoticeReq.
 
         批量更新通知消息id列表
 
@@ -70,7 +70,7 @@ class BatchUpdateNoticeReq:
 
     @property
     def operation(self):
-        """Gets the operation of this BatchUpdateNoticeReq.
+        r"""Gets the operation of this BatchUpdateNoticeReq.
 
         :return: The operation of this BatchUpdateNoticeReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NoticeOperation`
@@ -79,7 +79,7 @@ class BatchUpdateNoticeReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this BatchUpdateNoticeReq.
+        r"""Sets the operation of this BatchUpdateNoticeReq.
 
         :param operation: The operation of this BatchUpdateNoticeReq.
         :type operation: :class:`huaweicloudsdkeihealth.v1.NoticeOperation`

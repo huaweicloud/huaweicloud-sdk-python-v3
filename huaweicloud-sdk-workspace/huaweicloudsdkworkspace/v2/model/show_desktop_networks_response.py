@@ -26,7 +26,7 @@ class ShowDesktopNetworksResponse(SdkResponse):
     }
 
     def __init__(self, networks=None):
-        """ShowDesktopNetworksResponse
+        r"""ShowDesktopNetworksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDesktopNetworksResponse(SdkResponse):
 
     @property
     def networks(self):
-        """Gets the networks of this ShowDesktopNetworksResponse.
+        r"""Gets the networks of this ShowDesktopNetworksResponse.
 
         桌面网络信息列表
 
@@ -55,7 +55,7 @@ class ShowDesktopNetworksResponse(SdkResponse):
 
     @networks.setter
     def networks(self, networks):
-        """Sets the networks of this ShowDesktopNetworksResponse.
+        r"""Sets the networks of this ShowDesktopNetworksResponse.
 
         桌面网络信息列表
 

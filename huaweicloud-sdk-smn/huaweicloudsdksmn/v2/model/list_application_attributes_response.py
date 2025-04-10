@@ -30,7 +30,7 @@ class ListApplicationAttributesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, application_id=None, attributes=None):
-        """ListApplicationAttributesResponse
+        r"""ListApplicationAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListApplicationAttributesResponse.
+        r"""Gets the request_id of this ListApplicationAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListApplicationAttributesResponse.
+        r"""Sets the request_id of this ListApplicationAttributesResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListApplicationAttributesResponse.
+        r"""Gets the application_id of this ListApplicationAttributesResponse.
 
         Application的唯一标识ID。
 
@@ -91,7 +91,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListApplicationAttributesResponse.
+        r"""Sets the application_id of this ListApplicationAttributesResponse.
 
         Application的唯一标识ID。
 
@@ -102,7 +102,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this ListApplicationAttributesResponse.
+        r"""Gets the attributes of this ListApplicationAttributesResponse.
 
         :return: The attributes of this ListApplicationAttributesResponse.
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponseBodyAttributes`
@@ -111,7 +111,7 @@ class ListApplicationAttributesResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this ListApplicationAttributesResponse.
+        r"""Sets the attributes of this ListApplicationAttributesResponse.
 
         :param attributes: The attributes of this ListApplicationAttributesResponse.
         :type attributes: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponseBodyAttributes`

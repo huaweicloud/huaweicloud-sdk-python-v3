@@ -23,7 +23,7 @@ class AccessPreviewId:
     }
 
     def __init__(self):
-        """AccessPreviewId
+        r"""AccessPreviewId
 
         The model defined in huaweicloud sdk
 

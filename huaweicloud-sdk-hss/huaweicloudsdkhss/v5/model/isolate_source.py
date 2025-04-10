@@ -23,7 +23,7 @@ class IsolateSource:
     }
 
     def __init__(self):
-        """IsolateSource
+        r"""IsolateSource
 
         The model defined in huaweicloud sdk
 

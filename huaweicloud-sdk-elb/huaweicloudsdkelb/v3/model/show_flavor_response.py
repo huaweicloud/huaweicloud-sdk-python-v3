@@ -28,7 +28,7 @@ class ShowFlavorResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, flavor=None):
-        """ShowFlavorResponse
+        r"""ShowFlavorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFlavorResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowFlavorResponse.
+        r"""Gets the request_id of this ShowFlavorResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class ShowFlavorResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowFlavorResponse.
+        r"""Sets the request_id of this ShowFlavorResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class ShowFlavorResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowFlavorResponse.
+        r"""Gets the flavor of this ShowFlavorResponse.
 
         :return: The flavor of this ShowFlavorResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Flavor`
@@ -82,7 +82,7 @@ class ShowFlavorResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowFlavorResponse.
+        r"""Sets the flavor of this ShowFlavorResponse.
 
         :param flavor: The flavor of this ShowFlavorResponse.
         :type flavor: :class:`huaweicloudsdkelb.v3.Flavor`

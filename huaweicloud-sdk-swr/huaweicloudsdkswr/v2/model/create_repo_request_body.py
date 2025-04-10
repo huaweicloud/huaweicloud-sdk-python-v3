@@ -31,7 +31,7 @@ class CreateRepoRequestBody:
     }
 
     def __init__(self, repository=None, is_public=None, category=None, description=None):
-        """CreateRepoRequestBody
+        r"""CreateRepoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateRepoRequestBody:
 
     @property
     def repository(self):
-        """Gets the repository of this CreateRepoRequestBody.
+        r"""Gets the repository of this CreateRepoRequestBody.
 
         镜像仓库名称。小写字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线（其中下划线最多允许连续两个，小数点、斜杠、下划线、中划线不能直接相连），小写字母或数字结尾，1-128个字符。
 
@@ -73,7 +73,7 @@ class CreateRepoRequestBody:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this CreateRepoRequestBody.
+        r"""Sets the repository of this CreateRepoRequestBody.
 
         镜像仓库名称。小写字母或数字开头，后面跟小写字母、数字、小数点、斜杠、下划线或中划线（其中下划线最多允许连续两个，小数点、斜杠、下划线、中划线不能直接相连），小写字母或数字结尾，1-128个字符。
 
@@ -84,7 +84,7 @@ class CreateRepoRequestBody:
 
     @property
     def is_public(self):
-        """Gets the is_public of this CreateRepoRequestBody.
+        r"""Gets the is_public of this CreateRepoRequestBody.
 
         是否为公共仓库，可选值为true或false。
 
@@ -95,7 +95,7 @@ class CreateRepoRequestBody:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this CreateRepoRequestBody.
+        r"""Sets the is_public of this CreateRepoRequestBody.
 
         是否为公共仓库，可选值为true或false。
 
@@ -106,7 +106,7 @@ class CreateRepoRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this CreateRepoRequestBody.
+        r"""Gets the category of this CreateRepoRequestBody.
 
         仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
@@ -117,7 +117,7 @@ class CreateRepoRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateRepoRequestBody.
+        r"""Sets the category of this CreateRepoRequestBody.
 
         仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
@@ -128,7 +128,7 @@ class CreateRepoRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateRepoRequestBody.
+        r"""Gets the description of this CreateRepoRequestBody.
 
         镜像仓库的描述信息。
 
@@ -139,7 +139,7 @@ class CreateRepoRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRepoRequestBody.
+        r"""Sets the description of this CreateRepoRequestBody.
 
         镜像仓库的描述信息。
 

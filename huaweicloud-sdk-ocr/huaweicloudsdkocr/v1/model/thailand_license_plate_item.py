@@ -31,7 +31,7 @@ class ThailandLicensePlateItem:
     }
 
     def __init__(self, plate_number=None, plate_location=None, confidence=None, province=None):
-        """ThailandLicensePlateItem
+        r"""ThailandLicensePlateItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ThailandLicensePlateItem:
 
     @property
     def plate_number(self):
-        """Gets the plate_number of this ThailandLicensePlateItem.
+        r"""Gets the plate_number of this ThailandLicensePlateItem.
 
         车牌内容。 
 
@@ -75,7 +75,7 @@ class ThailandLicensePlateItem:
 
     @plate_number.setter
     def plate_number(self, plate_number):
-        """Sets the plate_number of this ThailandLicensePlateItem.
+        r"""Sets the plate_number of this ThailandLicensePlateItem.
 
         车牌内容。 
 
@@ -86,7 +86,7 @@ class ThailandLicensePlateItem:
 
     @property
     def plate_location(self):
-        """Gets the plate_location of this ThailandLicensePlateItem.
+        r"""Gets the plate_location of this ThailandLicensePlateItem.
 
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -97,7 +97,7 @@ class ThailandLicensePlateItem:
 
     @plate_location.setter
     def plate_location(self, plate_location):
-        """Sets the plate_location of this ThailandLicensePlateItem.
+        r"""Sets the plate_location of this ThailandLicensePlateItem.
 
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -108,7 +108,7 @@ class ThailandLicensePlateItem:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ThailandLicensePlateItem.
+        r"""Gets the confidence of this ThailandLicensePlateItem.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -119,7 +119,7 @@ class ThailandLicensePlateItem:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ThailandLicensePlateItem.
+        r"""Sets the confidence of this ThailandLicensePlateItem.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -130,7 +130,7 @@ class ThailandLicensePlateItem:
 
     @property
     def province(self):
-        """Gets the province of this ThailandLicensePlateItem.
+        r"""Gets the province of this ThailandLicensePlateItem.
 
         车牌所属府 
 
@@ -141,7 +141,7 @@ class ThailandLicensePlateItem:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this ThailandLicensePlateItem.
+        r"""Sets the province of this ThailandLicensePlateItem.
 
         车牌所属府 
 
